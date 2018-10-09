@@ -1,1 +1,3 @@
-# kat_aceAdvMedical
+ACE Airway Injuries Addon
+
+License under licence.txt

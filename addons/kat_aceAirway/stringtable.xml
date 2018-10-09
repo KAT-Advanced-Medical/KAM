@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="aceAirway">
+      <Key ID="STR_kat_aceAirway_SETTING_ENABLE">
+          <English>ACE-Airway injuries activated?</English>
+          <German>Ace-Atemwegverletzungen aktiviert?</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_SETTING_TIMER">
+          <English>Airway Injuries Death Timer</English>
+          <German>Atemwegsverletzungstimer</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Airway_already">
+          <English>There is already a airway Management</English>
+          <German>Atemwegsmanagement wurde bereits durchgeführt</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Airway_NA">
+          <English>Airwaymanagement not avaiable</English>
+          <German>Atemwegsmanagement nicht möglich</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Larynx_Display">
+          <English>Larynxtubus</English>
+          <German>Larynxtubus</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Larynx_Desc_Short">
+          <English>The Larynxtubus is a helper for airway management</English>
+          <German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Larynx_Desc_Use">
+          <English>The Larynxtubus is a helper for airway management</English>
+          <German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Guedel_Display">
+          <English>Guedeltubus</English>
+          <German>Guedeltubus</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Guedel_Desc_Short">
+          <English>The Guedeltubus is a helper for airway management</English>
+          <German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Guedel_Desc_Use">
+          <English>The Guedeltubus is a helper for airway management</English>
+          <German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Accuvac_Desc_Use">
+          <English>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</English>
+          <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Accuvac_Desc_Short">
+          <English>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</English>
+          <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_SETTING_ENABLE">
+          <English>ACE Airway injuries enabled?</English>
+          <German>ACE Atemwegsverletzungen aktiviert?</German>
+      </Key>
+		</Package>
+</Project>
