@@ -18,25 +18,26 @@
 
 params ["_unit", "_selectionName", "_amountOfDamage"];
 
-if (false) exitWith {}; // TO-DO CBA getVariable
+diag_log text format ["Unit: %1", _unit];
+diag_log text "handleDamage_airway";
 
-if !(_selectionName isEqualTo "head") exitWith {};
+//if !(missionNamespace getVariable "kat_aceAirway_enable") exitWith {};
 
-[{
-  if (_unit getVariable ["ace_medical_inReviveState", false]) then {
-    if (_amountOfDamage > 0.5) then {
-      if (random(1) >= 0.8) then {
-        if !(_unit getVariable["ace_medical_airwayCollapsed", false]) then {
-          _unit setVariable ["ace_medical_airwayCollapsed", true, true];
-          [_unit, serverTime, "C"] call kat_aceAirway_fnc_handleDie;
-        };
+if !(_selectionName in ["head", "neck", "face_hub", "body"]) exitWith {diag_log text format ["%1", _selectionName];};
+
+//if (_unit getVariable ["ace_medical_inReviveState", false]) then {
+  if (_amountOfDamage > 0.5) then {
+    if (true) then { //random(1) >= 0.8
+      if !(_unit getVariable ["ace_medical_airwayCollapsed", false]) then {
+        _unit setVariable ["ace_medical_airwayCollapsed", true, true];
       };
-    if (random[0, 50, 100] isEqualTo 1) then {
+    };
+    if (true) then { //random[0, 50, 100] isEqualTo 1
       if !(_unit getVariable["ace_medical_airwayOccluded", false]) then {
         _unit setVariable ["ace_medical_airwayOccluded", true, true];
-        [_unit, serverTime, "O"] call kat_aceAirway_fnc_handleDie;
       };
     };
   };
-};
-}, [], 2] call CBA_fnc_waitAndExecute;
+//};
+
+diag_log text "Nicht vollständig";

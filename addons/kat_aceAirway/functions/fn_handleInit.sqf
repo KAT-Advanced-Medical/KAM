@@ -4,6 +4,7 @@
  *
  * Arguments:
  * 0: The Unit <OBJECT>
+ * 1: The Group <GROUP>
  *
  * Return Value:
  * None
@@ -14,8 +15,12 @@
  * Public: No
  */
 
+diag_log text format ["Unit: %1", _this select 0];
+diag_log text "handleInit";
+
 params ["_unit"];
-_unit addEventHandler ["HandleDamage", {_this call kat_aceAirway_handleDamage_airway}];
-_unit addEventHandler ["Respawn", {_this call kat_aceAirway_handleRespawn}];
-_unit addEventHandler ["Killed", {_this call kat_aceAirway_handleKilled}];
-[_unit] call kat_aceAirway_fnc_init;
+
+_unit addEventHandler ["HandleDamage", {_this call kat_aceAirway_fnc_handleDamage_airway;}];
+_unit addEventHandler ["Respawn", {_this call kat_aceAirway_fnc_handleDie;}];
+_unit addEventHandler ["Killed", {_this call kat_aceAirway_fnc_handleDie;}];
+_unit call kat_aceAirway_fnc_init;

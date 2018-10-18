@@ -14,16 +14,6 @@
  * Public: No
  */
 
-params ["_unit", "_time", "_type"];
-
-switch (_type) do {
-    case "O": {
-      [{(serverTime >= (_timeNew = serverTime + kat_aceAirway_deathTimer) && (true isEqualTo (_unit getVariable ["ace_medical_inReviveState", false]))}, {[_unit, true, false] call ace_medical_fnc_setDead;}, [], XX]  call CBA_fnc_waitUntilAndExecute; //Statement // Timeout Variable für ace medical revie Time
-    };
-    case "C": {
-
-    };
-    default {
-      false;
-    };
-};
+params ["_unit"];
+if (!local _unit) exitWith {};
+_unit call kat_aceAirway_fnc_init;

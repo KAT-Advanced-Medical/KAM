@@ -4,31 +4,29 @@
  *
  * Arguments:
  * 0: The patient <OBJECT>
- * 1: Treatment classname <STRING>
+ * 1: Item used classname <STRING>
  *
  *
  * Return Value:
- * Succesful treatment started <BOOL>
+ * True
  *
  * Example:
- * [bob, "classname"] call kat_aceAirway_fnc_treatmentAdvanced_bandageLocal
+ * [bob, "classname"] call kat_aceAirway_fnc_treatmentAdvanced_guedelLocal
  *
  * Public: No
  */
 
-params ["_target", "_className", "_selectionName", ["_specificClass", -1]];
+diag_log text "treatmentAdvanced_airway_true";
 
-if (_target getVariable [QGVAR(inReviveState), false]) then {
-  _target setVariable [QGVAR(airwayCollapsed), false];
+params ["_target", "_Item"];
+
+if (_target getVariable ["ace_medical_inReviveState", false]) then {
+  _target setVariable ["kat_aceAirway_airway", true, true];
+  _target setVariable ["kat_aceAirway_airway_item", "guedel"];
 };
 
-private _part = [_selectionName] call FUNC(selectionNameToNumber);
+_target setVariable ["ace_medical_airwayCollapsed", false];
 
-// Place a management on the bodypart
-private _airway = _target getVariable [QGVAR(airwayg), false];
-_airway set [_part];
-_target setVariable [QGVAR(airwayg), _airway, true];
-
-[_target, _className] call FUNC(addToTriageCard);
+[_target, _Item] call ace_medical_fnc_addToTriageCard;
 
 true;

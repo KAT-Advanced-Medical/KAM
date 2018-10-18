@@ -14,30 +14,26 @@
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [medic, patient, "Selectionname", "larynx", "larynx", -1] call kat_aceAirway_fnc_treatmentAdvanced_larynx
+ * [medic, patient] call kat_aceAirway_fnc_treatmentAdvanced_accuvac
  *
  * Public: Yes
  */
 
-params ["_caller", "_target", "_selectionName"];
+diag_log text format ["Medic: %1", _this select 0];
+diag_log text format ["Patient: %1", _this select 1];
+diag_log text "Accuvac";
 
-private _part = [_selectionName] call FUNC(selectionNameToNumber);
-if (!_part == 0) exitWith {
-    [QEGVAR(common,displayTextStructured), ["Not allowed"], [_caller]] call CBA_fnc_targetEvent;
-    false;
-};
+params ["_caller", "_target"];
 
-private _airway = _target getVariable [QGVAR(airwayOccluded), false];
-if (!_airway) exitWith {
-   _output = localize LSTRING(Status_Airway_NotNeeded);
-   [QEGVAR(common,displayTextStructured), [_output, 1.5, _caller], [_caller]] call CBA_fnc_targetEvent;
-   false;
+if !(_target getVariable ["ace_medical_airwayOccluded", false]) exitWith {
+  _output = localize "STR_kat_aceAirway_Accuvac_NA";
+  [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
 };
 
 if (local _target) then {
-    [QGVAR(treatmentAdvanced_AccuvacLocal), [_target, _selectionName]] call CBA_fnc_localEvent;
+  ["treatmentAccuvac", [_target, "Accuvac"]] call CBA_fnc_localEvent;
 } else {
-    [QGVAR(treatmentAdvanced_AccuvacLocal), [_target, _selectionName], _target] call CBA_fnc_targetEvent;
+  ["treatmentAccuvac", [_target, "Accuvac"], _target] call CBA_fnc_targetEvent;
 };
 
 true;

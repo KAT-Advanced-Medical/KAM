@@ -11,15 +11,19 @@
  * True
  *
  * Example:
- * [bob, "classname"] call kat_aceAirway_fnc_treatmentlarynxLocal
+ * [bob, "classname"] call kat_aceAirway_fnc_treatmentAdvanced_larynxLocal
  *
  * Public: No
  */
 
-params ["_target", "_selectionName"];
+params ["_target", "_item"];
 
-if (_target getVariable [QGVAR(inReviveState), false]) then {
-  _target setVariable [QGVAR(airwayOccluded), false];
+if (_target getVariable ["ace_medical_inReviveState", false]) then {
+  if (_target getVariable ["ace_medical_airwayOccluded", false]) then {
+    _target setVariable ["ace_medical_airwayOccluded", false];
+  };
 };
+
+[_target, _Item] call ace_medical_fnc_addToTriageCard;
 
 true;
