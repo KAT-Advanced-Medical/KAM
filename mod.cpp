@@ -1,0 +1,14 @@
+name = "KAT - ACE Airway Extension";
+dir = "@kat_aceAdvMedical";
+picture = "larynx.paa";
+actionName = "Website";
+action = "https://github.com/Katalam/kat_aceAdvMedical";
+logo = "larynx.paa";
+logoOver = "larynx.paa";
+tooltip = "KAT-ACE Airway";
+tooltipOwned = "KAT-ACE Airway";
+overview = "folgt";
+author = "Katalam";
+overviewPicture = "larynx.paa";
+overviewText = "KAT-ACE Airway";
+overviewFootnote = "";

@@ -8,7 +8,7 @@ Feature Overview
 - aceAirway
   - [ ] Airwaymanagement for unconscious patients
     - [ ] Head overstretching
-    - [ ] Intubation
+    - [x] Intubation
     - [ ] Aspiration
     - [ ] table lateral position
 - aceBreathing
