@@ -15,9 +15,6 @@
  * Public: No
  */
 
-diag_log text format ["Unit: %1", _this select 0];
-diag_log text "handleInit";
-
 params ["_unit"];
 
 _unit addEventHandler ["HandleDamage", {_this call kat_aceAirway_fnc_handleDamage_airway;}];

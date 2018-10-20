@@ -1,6 +1,6 @@
 /*
  * Author: Katalam
- * Handling the deathtimer for airway injuries
+ * Handling the respawn for any reason for airway injuries
  *
  * Arguments:
  * 0: Unit That Was Hit <OBJECT>
@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [bob, time, "O"] call kat_aceAirway_fnc_handleDie;
+ * [bob] call kat_aceAirway_fnc_handleDie;
  *
  * Public: No
  */

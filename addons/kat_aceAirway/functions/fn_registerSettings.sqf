@@ -33,7 +33,7 @@
 	"LIST",
 	localize "STR_kat_aceAirway_SETTING_TIMER",
 	CBA_SETTINGS_CAT,
-	[[150, 300, 450, 600], ["150 s", "300 s", "450 s", "600s"], 1],
+	[[10, 300, 450, 600], ["10 s", "300 s", "450 s", "600s"], 0],
 	true
 ] call CBA_Settings_fnc_init;
 

@@ -51,6 +51,7 @@ class CfgFunctions {
         class handleDamage_airway{};
         class handleDie{};
         class handleInit{};
+        class handleTimer{};
         class init{};
         class registerSettings{};
         class treatmentAdvanced_accuvac{};
@@ -58,10 +59,17 @@ class CfgFunctions {
         class treatmentAdvanced_airway{};
         class treatmentAdvanced_guedelLocal{};
         class treatmentAdvanced_larynxLocal{};
-        class treatmentAdvanced_overstretchHead_cancel{};
         class treatmentAdvanced_overstretchHead{};
 		};
 	};
+  class kat_aceMedical_Menu {
+    tag = "ace_medical";
+    class ace_medical {
+      class displayPatientInformation {
+        file = "kat_aceAirway\functions\fn_displayPatientInformation.sqf";
+      };
+    };
+  };
 };
 
 class Extended_PreInit_EventHandlers {
@@ -93,6 +101,7 @@ class cfgWeapons {
       displayName= "$STR_kat_aceAirway_Larynx_Display";
       descriptionShort = "$STR_kat_aceAirway_Larynx_Desc_Short";
       descriptionUse = "$STR_kat_aceAirway_Larynx_Desc_Use";
+      picture = "\kat_aceAirway\images\larynx_normal.paa";
       class ItemInfo: CBA_MiscItem_ItemInfo {
           mass = 1;
       };
@@ -103,6 +112,7 @@ class cfgWeapons {
       displayName= "$STR_kat_aceAirway_Guedel_Display";
       descriptionShort =  "$STR_kat_aceAirway_Guedel_Desc_Short";
       descriptionUse = "$STR_kat_aceAirway_Guedel_Desc_Use";
+      picture = "\kat_aceAirway\images\guedel_normal.paa";
       class ItemInfo: CBA_MiscItem_ItemInfo {
           mass = 1;
       };
@@ -113,6 +123,7 @@ class cfgWeapons {
       displayName= "Accuvac";
       descriptionShort = "$STR_kat_aceAirway_Accuvac_Desc_Short";
       descriptionUse = "$STR_kat_aceAirway_Accuvac_Desc_Use";
+      picture = "\kat_aceAirway\images\accuvac_normal.paa";
       class ItemInfo: CBA_MiscItem_ItemInfo {
           mass = 7;
       };
@@ -153,11 +164,24 @@ class cfgVehicles {
       };
   };
 
+  class NATO_Box_Base;
+	class ACE_medicalSupplyCrate: NATO_Box_Base {
+		class TransportItems;
+	};
+	class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
+		class TransportItems: TransportItems {
+			MACRO_ADDITEM(ACE_larynx,15);
+      MACRO_ADDITEM(ACE_guedel,15);
+      MACRO_ADDITEM(ACE_accuvac,1);
+		};
+	};
+
 class Man;
 	class CAManBase: Man {
 		class ACE_Actions {
 			class ACE_Head {
-        class Larynxtubus {
+        class FieldDressing;
+        class Larynxtubus: fieldDressing {
           displayName = "$STR_kat_aceAirway_Larynx_Display";
           displayNameProgress = $STR_kat_aceAirway_action_placing;
           treatmentLocations[] = {"All"};
@@ -165,21 +189,33 @@ class Man;
           requiredMedic = 1;
           items[] = {"ACE_larynx"};
           category = "airway";
+          patientStateCondition = 0;
           condition = "!([_target] call ace_common_fnc_isAwake)";
           statement = "[_player, _target, 'head', 'larynx'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
-          //icon = "\kat_aceAdvMedical\addons\kat_aceAirway\images\larynx.paa";
+          icon = "\kat_aceAirway\images\larynx.paa";
         };
         class Guedeltubus: larynxtubus {
           displayName = "$STR_kat_aceAirway_Guedel_Display";
           requiredMedic = 0;
           items[] = {"ACE_guedel"};
           statement = "[_player, _target, 'head', 'guedel'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
-          //icon = "\kat_aceAdvMedical\addons\kat_aceAirway\images\guedel.paa";
+          icon = "\kat_aceAirway\images\guedel.paa";
         };
         class Accuvac: larynxtubus {
           displayName = "Accuvac";
           items[] = {"ACE_accuvac"};
           statement = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_accuvac";
+          icon = "\kat_aceAirway\images\accuvac.paa";
+        };
+        class Overstretch: larynxtubus {
+          displayName = "$STR_kat_aceAirway_overstretch";
+          displayNameProgress = $STR_kat_aceAirway_overstretching;
+          treatmentTime = 2;
+          requiredMedic = 0;
+          items[] = {};
+          icon = "";
+          condition = "!([_target] call ace_common_fnc_isAwake) && ((_target getVariable ""kat_aceAirway_overstretch"") isEqualTo false)";
+          statement = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_overstretchHead";
         };
         class CheckPulse;
         class CheckAirway: checkPulse {
@@ -191,11 +227,6 @@ class Man;
           items[] = {};
           condition = "!([_target] call ace_common_fnc_isAwake)";
           statement = "[_player, _target] call kat_aceAirway_fnc_checkAirway";
-        };
-        class Overstretch {
-          displayName = "$STR_kat_aceAirway_overstretch";
-          condition = "!([(_this select 1)] call ace_common_fnc_isAwake)";
-          statement = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_overstretchHead";
         };
 			};
 			class ACE_MainActions {
@@ -209,22 +240,33 @@ class Man;
               requiredMedic = 1;
               items[] = {"ACE_larynx"};
               category = "airway";
+              patientStateCondition = 0;
               condition = "!([_target] call ace_common_fnc_isAwake)";
               statement = "[_player, _target, 'head', 'larynx'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
-              //icon = "\kat_aceAdvMedical\addons\kat_aceAirway\images\larynx.paa";
+              icon = "\kat_aceAirway\images\larynx.paa";
             };
             class Guedeltubus: larynxtubus {
               displayName = "$STR_kat_aceAirway_Guedel_Display";
               requiredMedic = 0;
               items[] = {"ACE_guedel"};
               statement = "[_player, _target, 'head', 'guedel'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
-              //icon = "\kat_aceAdvMedical\addons\kat_aceAirway\images\guedel.paa";
+              icon = "\kat_aceAirway\images\guedel.paa";
             };
             class Accuvac: larynxtubus {
               displayName = "Accuvac";
               statement = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_accuvac";
               items[] = {"ACE_accuvac"};
-              //icon = "\kat_aceAdvMedical\addons\kat_aceAirway\images\accuvac.paa";
+              icon = "\kat_aceAirway\images\accuvac.paa";
+            };
+            class Overstretch: larynxtubus {
+              displayName = "$STR_kat_aceAirway_overstretch";
+              displayNameProgress = $STR_kat_aceAirway_overstretching;
+              treatmentTime = 2;
+              requiredMedic = 0;
+              items[] = {};
+              icon = "";
+              condition = "!([_target] call ace_common_fnc_isAwake) && ((_target getVariable ""kat_aceAirway_overstretch"") isEqualTo false)";
+              statement = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_overstretchHead";
             };
             class CheckPulse;
             class CheckAirway: checkPulse {
@@ -236,11 +278,6 @@ class Man;
               items[] = {};
               condition = "!([_target] call ace_common_fnc_isAwake)";
               statement = "[_player, _target] call kat_aceAirway_fnc_checkAirway";
-            };
-            class Overstretch {
-              displayName = "$STR_kat_aceAirway_overstretch";
-              condition = "!([(_this select 1)] call ace_common_fnc_isAwake)";
-              statement = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_overstretchHead";
             };
 				   };
          };
@@ -263,18 +300,28 @@ class ACE_Medical_Actions {
         patientStateCondition = 0;
         callbackSuccess = "[_player, _target, 'head', 'larynx'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
     };
-    class Guedeltubus: Larynxtubus {
+    class Guedeltubus: larynxtubus {
       displayName = $STR_kat_aceAirway_Guedel_Display;
       items[] = {"ACE_guedel"};
       condition = "!([_target] call ace_common_fnc_isAwake)";
       callbackSuccess = "[_player, _target, 'head', 'guedel'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
     };
-    class Accuvac: Larynxtubus {
+    class Accuvac: larynxtubus {
       displayName = "Accuvac";
       treatmentTime = 10;
       items[] = {"ACE_accuvac"};
       condition = "!([_target] call ace_common_fnc_isAwake)";
       callbackSuccess = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_accuvac";
+    };
+    class Overstretch: larynxtubus {
+      displayName = "$STR_kat_aceAirway_overstretch";
+      displayNameProgress = $STR_kat_aceAirway_overstretching;
+      treatmentTime = 2;
+      requiredMedic = 0;
+      items[] = {};
+      patientStateCondition = 0;
+      condition = "!([_target] call ace_common_fnc_isAwake) && ((_target getVariable ""kat_aceAirway_overstretch"") isEqualTo false)";
+      callbackSuccess = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_overstretchHead";
     };
     class CheckPulse;
     class CheckAirway: checkPulse {
@@ -286,16 +333,6 @@ class ACE_Medical_Actions {
       condition = "!([_target] call ace_common_fnc_isAwake)";
       patientStateCondition = 0;
       callbackSuccess = "[_player, _target] call kat_aceAirway_fnc_checkAirway";
-    };
-    class Overstretch {
-      displayName = "$STR_kat_aceAirway_overstretch";
-      displayNameProgress = $STR_kat_aceAirway_action_checking;
-      treatmentTime = 1;
-      allowedSelections[] = {"head"};
-      items[] = {};
-      condition = "!([_target] call ace_common_fnc_isAwake)";
-      patientStateCondition = 0;
-      callbackSuccess = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_overstretchHead";
     };
 	};
 };

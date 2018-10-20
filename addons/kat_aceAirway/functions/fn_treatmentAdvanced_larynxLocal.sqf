@@ -16,10 +16,6 @@
  * Public: No
  */
 
-diag_log text format ["Medic: %1", _this select 0];
-diag_log text format ["Patient: %1", _this select 1];
-diag_log text "treatmentAdvanced_larynxLocal";
-
 params ["_target", "_Item"];
 
 if (_target getVariable ["ace_medical_inReviveState", false]) then {
@@ -30,5 +26,6 @@ if (_target getVariable ["ace_medical_inReviveState", false]) then {
 _target setVariable ["ace_medical_airwayCollapsed", false];
 
 [_target, _Item] call ace_medical_fnc_addToTriageCard;
+[_target, "activity", localize "STR_kat_aceAirway_activity", [[_caller, false, true] call ace_common_fnc_getName, localize "STR_kat_aceAirway_Larynx_Display"]] call ace_medical_fnc_addToLog;
 
 true;

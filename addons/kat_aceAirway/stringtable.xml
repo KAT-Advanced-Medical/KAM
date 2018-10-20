@@ -14,12 +14,48 @@
           <German>Atemwegsverletzungstimer</German>
       </Key>
       <Key ID="STR_kat_aceAirway_checkAirway">
-          <English>Controlling airways</English>
+          <English>Check airways</English>
           <German>Überprüfe Atemwege</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_checkAirway_log">
+          <English>%1 checked airways: %2 %3</English>
+          <German>%1 überprüfte Atemwege: %2 %3</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Occluded">
+          <English>Occluded</English>
+          <German>Verstopft</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_Collapsed">
+          <English>Collapsed</English>
+          <German>Verlegt</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_N">
+          <English>Not</English>
+          <German>Nicht</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_message_Collapsed_no">
+          <English>No Airwaymanagement needed</English>
+          <German>Kein Atemwegsmanagement erforderlich</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_message_Occluded_no">
+          <English>No Vacuum needed</English>
+          <German>Absaugen nicht notwendig</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_message_Collapsed_yes">
+          <English>Airwaymanagement needed</English>
+          <German>Atemwegsmanagement erforderlich</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_message_Occluded_yes">
+          <English>Vacuum needed</English>
+          <German>Absaugen notwendig</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Airway_already">
           <English>There is already a airway Management</English>
           <German>Atemwegsmanagement wurde bereits durchgeführt</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_activity">
+          <English>%1 put a: %2</English>
+          <German>%1 setze einen: %2</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Airway_NA">
           <English>Airwaymanagement not available</English>
@@ -27,6 +63,10 @@
       </Key>
       <Key ID="STR_kat_aceAirway_overstretch">
           <English>Head overstretch</English>
+          <German>Kopf überstrecken</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_overstretching">
+          <English>Head overstretching</English>
           <German>Kopf überstrecken</German>
       </Key>
       <Key ID="STR_kat_aceAirway_overstretch_cancel">
@@ -50,7 +90,7 @@
           <German>Setzen</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Larynx_Display">
-          <English>Larynxtubus</English>
+          <English>Larynxtube</English>
           <German>Larynxtubus</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Larynx_Desc_Short">
@@ -62,7 +102,7 @@
           <German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Guedel_Display">
-          <English>Guedeltubus</English>
+          <English>Guedeltube</English>
           <German>Guedeltubus</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Guedel_Desc_Short">

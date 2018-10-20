@@ -18,10 +18,8 @@
 
 params ["_target", "_item"];
 
-if (_target getVariable ["ace_medical_inReviveState", false]) then {
-  if (_target getVariable ["ace_medical_airwayOccluded", false]) then {
-    _target setVariable ["ace_medical_airwayOccluded", false];
-  };
+if (_target getVariable ["ace_medical_airwayOccluded", false]) then {
+  _target setVariable ["ace_medical_airwayOccluded", false];
 };
 
 [_target, _Item] call ace_medical_fnc_addToTriageCard;

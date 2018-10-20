@@ -18,12 +18,9 @@
 
 params ["_unit", "_selectionName", "_amountOfDamage"];
 
-diag_log text format ["Unit: %1", _unit];
-diag_log text "handleDamage_airway";
-
 //if !(missionNamespace getVariable "kat_aceAirway_enable") exitWith {};
 
-if !(_selectionName in ["head", "neck", "face_hub", "body"]) exitWith {diag_log text format ["%1", _selectionName];};
+if !(_selectionName in ["head", "neck", "face_hub", "body"]) exitWith {};
 
 //if (_unit getVariable ["ace_medical_inReviveState", false]) then {
   if (_amountOfDamage > 0.5) then {
@@ -39,5 +36,3 @@ if !(_selectionName in ["head", "neck", "face_hub", "body"]) exitWith {diag_log 
     };
   };
 //};
-
-diag_log text "Nicht vollständig";

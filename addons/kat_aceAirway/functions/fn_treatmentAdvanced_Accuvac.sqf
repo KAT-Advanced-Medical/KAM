@@ -19,10 +19,6 @@
  * Public: Yes
  */
 
-diag_log text format ["Medic: %1", _this select 0];
-diag_log text format ["Patient: %1", _this select 1];
-diag_log text "Accuvac";
-
 params ["_caller", "_target"];
 
 if !(_target getVariable ["ace_medical_airwayOccluded", false]) exitWith {
