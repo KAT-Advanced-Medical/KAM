@@ -32,6 +32,7 @@ if (_target getVariable ["ace_medical_airwayOccluded", false]) then {
   _yesornoOccluded = "";
   _target setVariable ["ace_medical_triageLevel", 3];
 };
+if !((_target getVariable ["ace_medical_airwayOccluded", false]) && (_target getVariable ["ace_medical_airwayCollapsed", false])) then {_target setVariable ["ace_medical_triageLevel", 0]};
 _message = format ["%1, %2", _messageairwayCollapsed, _messageairwayOccluded];
 [_message, 2, _player] call ace_common_fnc_displayTextStructured;
 

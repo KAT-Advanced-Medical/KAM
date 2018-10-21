@@ -7,8 +7,6 @@
  * 1: The patient <OBJECT>
  * 2: SelectionName <STRING>
  * 3: Treatment classname <STRING>
- * 4: Item <STRING>
- * 5: specific Spot <NUMBER> (default: -1)
  *
  * Return Value:
  * Succesful treatment started <BOOL>
@@ -45,7 +43,7 @@ switch (_className) do {
     };
   };
   case "guedel": {
-    if !(random 100 < 5) exitWith {
+    if (random 100 < 5) exitWith {
       _output = localize "STR_kat_aceAirway_Airway_NA";
       [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
     };

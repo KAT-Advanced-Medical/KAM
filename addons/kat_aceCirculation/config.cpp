@@ -1,18 +1,19 @@
 #include "BIS_AddonInfo.hpp"
 class CfgPatches
 {
-    class kat_aceBreathing
+    class kat_aceCirculation
     {
         units[] = {
-			"kat_aceBreathing_guedelItem"
+			"kat_aceAirway_guedelItem"
 		};
         weapons[] = {
-      "kat_aceBreathing_guedel"
+      "kat_aceAirway_guedel"
 		};
         requiredVersion = 1.80;
         requiredAddons[] = {
 			"ace_medical",
       "kat_aceAirway",
+      "kat_aceBreathing",
       "cba_settings"
 		};
 		version = "0.5";
@@ -28,8 +29,8 @@ class CfgPatches
 };
 
 class CfgFunctions {
-	class kat_aceBreathing {
-    file = "kat_aceBreathing\functions";
+	class kat_aceAirway {
+    file = "kat_aceCirculation\functions";
 		class functions {
         class checkAirway{};
 		};
@@ -37,20 +38,20 @@ class CfgFunctions {
 };
 
 class Extended_PreInit_EventHandlers {
-	class kat_aceBreathing_preInit {
-		init = "call kat_aceBreathing_fnc_registerSettings";
+	class kat_aceCirculation_preInit {
+		init = "call kat_aceCirculation_fnc_registerSettings";
 	};
 };
 class Extended_Init_EventHandlers {
     class CAManBase {
-        class kat_aceBreathing_init {
-            init = "_this call kat_aceBreathing_fnc_handleInit";
+        class kat_aceCirculation_init {
+            init = "_this call kat_aceCirculation_fnc_handleInit";
         };
     };
 };
 class Extended_PostInit_EventHandlers {
-  class kat_aceBreathing_postInit {
-    init = "call kat_aceBreathing_fnc_events";
+  class kat_aceCirculation_postInit {
+    init = "call kat_aceCirculation_fnc_events";
   };
 };
 

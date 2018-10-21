@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="aceDisability">
+      <Key ID="STR_kat_aceDisability_SETTING_ENABLE">
+        <English>ACE-Disability activated?</English>
+        <German>ACE-Neurologisch aktivieren?</German>
+      </Key>
+      <Key ID="STR_kat_aceDisability_Action_Display">
+        <English>Cut of clothes</English>
+        <German>Ausziehen</German>
+      </Key>
+      <Key ID="STR_kat_aceDisability_Action_Message">
+        <English>You cutted the uniform</English>
+        <German>Du hast seine Kleidung entfernt</German>
+      </Key>
+		</Package>
+</Project>

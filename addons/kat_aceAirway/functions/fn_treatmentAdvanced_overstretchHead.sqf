@@ -32,7 +32,7 @@ if !(_target getVariable ["ace_medical_airwayCollapsed", false]) exitWith {
 _target setVariable ["kat_aceAirway_overstretch", true];
 
 _output = localize "STR_kat_aceAirway_overstretch_info";
-[_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
+[_output, 2, _player] call ace_common_fnc_displayTextStructured;
 
 [{
   params ["_player", "_target"];

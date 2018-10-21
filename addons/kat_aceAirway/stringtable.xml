@@ -77,6 +77,18 @@
           <English>Don't run away you're saving a life!</English>
           <German>Renne nicht weg, du rettest ein Leben</German>
       </Key>
+      <Key ID="STR_kat_aceAirway_turnaround_info">
+          <English>You tried to remove the vomit</English>
+          <German>Du probierst das Erbrochene zu entfernen</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_turnaround">
+          <English>Head turning</English>
+          <German>Kopf umdrehen</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_turnaround_action">
+          <English>Turning the head</English>
+          <German>Kopf umdrehen</German>
+      </Key>
       <Key ID="STR_kat_aceAirway_Accuvac_NA">
           <English>Vacuum not needed</English>
           <German>Absaugen nicht notwendig</German>

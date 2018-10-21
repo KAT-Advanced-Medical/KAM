@@ -7,9 +7,9 @@ Feature Overview
 
 - aceAirway
   - [ ] Airwaymanagement for unconscious patients
-    - [ ] Head overstretching
+    - [x] Head overstretching
     - [x] Intubation
-    - [ ] Aspiration
+    - [x] Aspiration
     - [ ] table lateral position
 - aceBreathing
   - [ ] Assistant Breathing
@@ -19,7 +19,7 @@ Feature Overview
   - [ ] Drugs with access
   - [ ] Syringe pump
 - aceDisability
-  - [ ] Cut of clothes
+  - [x] Cut of clothes
 - aceExposure
 - aceMisc
   - [ ] Cervical collar

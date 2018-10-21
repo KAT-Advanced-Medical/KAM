@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="aceDisability">
+      <Key ID="STR_kat_aceCirculation_SETTING_ENABLE">
+        <English>ACE-Circulation activated?</English>
+        <German>ACE-Kreislauf aktivieren?</German>
+      </Key>
+		</Package>
+</Project>

@@ -20,7 +20,7 @@
 
 ["ace_unconscious", {
   params ["_unit", "_state"];
-  if (_state == true) then {
+  if (_state) then {
   _unit call kat_aceAirway_fnc_init;
   } else {
     if (_unit getVariable ["ace_medical_airwayCollapsed", false] || _unit getVariable ["ace_medical_airwayOccluded", false]) then {
