@@ -11,7 +11,7 @@
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [medic, patient, "Selectionname", "larynx"] call kat_aceAirway_fnc_treatmentAdvanced_airway
+ * [medic, patient, "larynx"] call kat_aceAirway_fnc_treatmentAdvanced_airway
  *
  * Public: Yes
  */
@@ -25,19 +25,19 @@ if (_target getVariable ["kat_aceAirway_airway", false]) exitWith {
 };
 
 private _removeItem = "ACE_guedel";
-if (_className isEqualTo "larynx") then {_removeItem = "ACE_larynx"};
+if (_className isEqualTo "Larynxtubus") then {_removeItem = "ACE_larynx"};
 
 [_caller, _target, _removeItem] call ace_medical_fnc_useItem;
 
 switch (_className) do {
-  case "larynx": {
+  case "Larynxtubus": {
     if (local _target) then {
       ["treatmentLarynx", [_target, _removeItem]] call CBA_fnc_localEvent;
     } else {
       ["treatmentLarynx", [_target, _removeItem], _target] call CBA_fnc_targetEvent;
     };
   };
-  case "guedel": {
+  case "Guedeltubus": {
     if (random 100 < 5) exitWith {
       _output = localize "STR_kat_aceAirway_Airway_NA";
       [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;

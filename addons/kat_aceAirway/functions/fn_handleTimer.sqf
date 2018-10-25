@@ -33,6 +33,4 @@ if !(_unit getVariable ["ACE_isUnconscious", false]) exitWith {};
     [_idPFH] call CBA_fnc_removePerFrameHandler;
     _unit call ace_medical_fnc_setDead;
   };
-  _a = (_unit getVariable "ace_medical_airwayStatus") - 0.1;
-  _unit setVariable ["ace_medical_airwayStatus", _a];
 }, 1, [_unit, CBA_missionTime]] call CBA_fnc_addPerFrameHandler;

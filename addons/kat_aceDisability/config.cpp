@@ -66,69 +66,52 @@ class Man;
 		class ACE_Actions {
 			class ACE_Torso {
         class FieldDressing;
-        class CutOfClothes: fieldDressing {
+        class CutOfClothes {
           displayName = "$STR_kat_aceDisability_Action_Display";
-          displayNameProgress = $STR_kat_aceDisability_Action_Display;
-          treatmentLocations[] = {"All"};
-          treatmentTime = 15;
-          requiredMedic = 0;
-          items[] = {};
+          distance = 2.0;
+          condition = "[_player, _target, 'body', 'CutOfClothes'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'body', 'CutOfClothes'] call ace_medical_fnc_treatment";
+          exceptions[] = {""};
+          showDisabled = 0;
           icon = "";
-          category = "advanced";
-          patientStateCondition = 0;
-          condition = "[_target] call kat_aceDisability_fnc_condition_clothes";
-          statement = "[_player, _target] call kat_aceDisability_fnc_treatmentAdvanced_clothes";
         };
 			};
     class ACE_Head {
-        class FieldDressing;
-        class tracheaCut: fieldDressing {
+        class tracheaCut {
           displayName = "$STR_kat_aceDisability_Action_tracheaCut_Display";
-          displayNameProgress = $STR_kat_aceDisability_Action_tracheaCut_Action;
-          treatmentTime = 60;
-          treatmentLocations[] = {"All"};
-          requiredMedic = 2;
-          items[] = {"ACE_surgicalKit"};
-          category = "airway";
-          patientStateCondition = 0;
-          condition = "!([_target] call ace_common_fnc_isAwake) && _target getVariable [""kat_aceDisability_checked"",false] && kat_aceAirway_enable && kat_aceDisability_enable";
-          statement = "[_player, _target, 'ACE_surgicalKit'] call kat_aceDisability_fnc_treatmentAdvanced_bee";
+          distance = 2.0;
+          condition = "[_player, _target, 'head', 'tracheaCut'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'head', 'tracheaCut'] call ace_medical_fnc_treatment";
+          exceptions[] = {""};
+          showDisabled = 0;
           icon = "";
         };
     };
 			class ACE_MainActions {
 				class Medical {
-					class ACE_Torso {
+          class ACE_Torso {
+            class FieldDressing;
             class CutOfClothes {
               displayName = "$STR_kat_aceDisability_Action_Display";
-              displayNameProgress = $STR_kat_aceDisability_Action_Display;
-              treatmentLocations[] = {"All"};
-              treatmentTime = 15;
-              requiredMedic = 0;
-              items[] = {};
+              distance = 2.0;
+              condition = "[_player, _target, 'body', 'CutOfClothes'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'body', 'CutOfClothes'] call ace_medical_fnc_treatment";
+              exceptions[] = {""};
+              showDisabled = 0;
               icon = "";
-              category = "advanced";
-              patientStateCondition = 0;
-              condition = "[_target] call kat_aceDisability_fnc_condition_clothes";
-              statement = "[_player, _target] call kat_aceDisability_fnc_treatmentAdvanced_clothes";
             };
-				  };
-         class ACE_Head {
-             class FieldDressing;
-             class tracheaCut: fieldDressing {
-               displayName = "$STR_kat_aceDisability_Action_tracheaCut_Display";
-               displayNameProgress = $STR_kat_aceDisability_Action_tracheaCut_Action;
-               treatmentTime = 60;
-               treatmentLocations[] = {"All"};
-               requiredMedic = 2;
-               items[] = {"ACE_surgicalKit"};
-               category = "airway";
-               patientStateCondition = 0;
-               condition = "!([_target] call ace_common_fnc_isAwake) && _target getVariable [""kat_aceDisability_checked"",false] && kat_aceAirway_enable && kat_aceDisability_enable";
-               statement = "[_player, _target, 'ACE_surgicalKit'] call kat_aceDisability_fnc_treatmentAdvanced_bee";
-               icon = "";
-             };
-           };
+    			};
+        class ACE_Head {
+            class tracheaCut {
+              displayName = "$STR_kat_aceDisability_Action_tracheaCut_Display";
+              distance = 2.0;
+              condition = "[_player, _target, 'head', 'tracheaCut'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'head', 'tracheaCut'] call ace_medical_fnc_treatment";
+              exceptions[] = {""};
+              showDisabled = 0;
+              icon = "";
+            };
+          };
          };
        };
      };
@@ -137,20 +120,32 @@ class Man;
 
 class ACE_Medical_Actions {
 	class Advanced {
-    class FieldDressing;
-    class CutOfClothes: fieldDressing {
+    class CutOfClothes {
         displayName = "$STR_kat_aceDisability_Action_Display";
         displayNameProgress = $STR_kat_aceDisability_Action_Display;
-        treatmentTime = 15;
-        allowedSelections[] = {"body"};
-        items[] = {};
         category = "advanced";
+        treatmentLocations[] = {"All"};
+        allowedSelections[] = {"body"};
+        allowSelfTreatment = 0;
+        requiredMedic = 1;
+        treatmentTime = 15;
+        items[] = {};
         condition = "!([_target] call ace_common_fnc_isAwake)";
-        //condition = "[_target] call kat_aceDisability_fnc_condition_clothes";
         patientStateCondition = 0;
         callbackSuccess = "[_player, _target] call kat_aceDisability_fnc_treatmentAdvanced_clothes";
+        callbackFailure = "";
+        callbackProgress = "";
+        itemConsumed = 0;
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationCaller = "AinvPknlMstpSlayWrflDnon_medicOther";
+        animationCallerProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+        animationCallerSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+        animationCallerSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        litter[] = {};
     };
-    class tracheaCut: fieldDressing {
+    class tracheaCut: CutOfClothes {
       displayName = "$STR_kat_aceDisability_Action_tracheaCut_Display";
       displayNameProgress = $STR_kat_aceDisability_Action_tracheaCut_Action;
       treatmentTime = 60;
@@ -158,8 +153,6 @@ class ACE_Medical_Actions {
       requiredMedic = 2;
       items[] = {"ACE_surgicalKit"};
       category = "airway";
-      patientStateCondition = 0;
-      condition = "!([_target] call ace_common_fnc_isAwake)";
       //condition = "!([_target] call ace_common_fnc_isAwake) && _target getVariable [""kat_aceDisability_checked"",false] && kat_aceAirway_enable && kat_aceDisability_enable";
       callbackSuccess = "[_player, _target, 'ACE_surgicalKit'] call kat_aceDisability_fnc_treatmentAdvanced_bee";
     };

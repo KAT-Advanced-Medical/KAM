@@ -133,5 +133,13 @@
           <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
           <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
       </Key>
+      <Key ID="STR_kat_aceAirway_intubating">
+          <English>Intubating</English>
+          <German>Intubieren</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_vacuum">
+          <English>Medical scution</English>
+          <German>Medizinisches Absaugen</German>
+      </Key>
 		</Package>
 </Project>
