@@ -17,23 +17,24 @@
 
 params ["_player", "_target"];
 
-_objects = nearestObjects [_target, ["Helicopter", "Plane", "Tank", "Car", "ReammoBox_F"], 15, true];
-_object_1 = _objects select 0;
-_object_2 = _objects select 1;
+_a = getMagazineCargo uniformContainer _target; // gets uniform cargo
+_d = getItemCargo uniformContainer _target; // different between items and magazines
 
-//_weight = loadUniform _target; // weight from the uniform
+_a params ["_itemsMagazine", "_countsMagazine"];
+_d params ["_itemsItem", "_countsItem"];
 
-_items = uniformItems _target;
+_items = _itemsMagazine + _itemsItem; // adds both arrays
+_counts = _countsMagazine + _countsItem;
+
+_groundHolder = createVehicle ["WeaponHolderSimulated", _target, [], 0.5, "CAN_COLLIDE"];
+
 {
-  if (_object canAdd _x) then {
-    _object_1 addItemCargoGlobal [_x, 1];
-  } else {
-    _object_2 addItemCargoGlobal [_x, 1];
-  };
+  _b = _items select _forEachIndex;
+  _c = _counts select _forEachIndex;
+  _groundHolder addItemCargoGlobal [_b, _c];
 } forEach _items;
-// performance is a problem, a uniform container don't contain many items in most cases. If i check it for each item it will be freaking bad and not a good coding.
-// solution is to get the weight of all and then check the vehicle cargo. Maybe it works but there is no function for that.
-// maybe in his vest
+
+_target setVariable ["kat_aceDisability_checked", true];
 
 if (local _target) then {
   ["treatmentClothes", [_player, _target]] call CBA_fnc_localEvent;

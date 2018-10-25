@@ -30,3 +30,4 @@
 }] call CBA_fnc_addEventHandler;
 
 ["deathTimer", {_this call kat_aceAirway_fnc_handleTimer}] call CBA_fnc_addEventHandler;
+["ace_medical_treatmentAdvanced_fullHealLocal", {_this call kat_aceAirway_fnc_init;}] call CBA_fnc_addEventHandler;

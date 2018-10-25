@@ -2,8 +2,28 @@
 <Project name="kat">
     <Package name="aceBreathing">
       <Key ID="STR_kat_aceBreathing_SETTING_ENABLE">
-          <English>ACE-Breathing injuries activated?</English>
+          <English>ACE-Breathing activated?</English>
           <German>ACE-Atmung aktiviert?</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_Pulsoximeter_Display">
+          <English>Pulsoximeter</English>
+          <German>Pulsoximeter</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_Pulsoximeter_Desc_Short">
+          <English>Pulsoximeter</English>
+          <German>Pulsoximeter</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_Pulsoximeter_Desc_Use">
+          <English>Pulsoximeter</English>
+          <German>Pulsoximeter</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_placing">
+          <English>Placing</English>
+          <German>Anlegen</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_pulsoxi_NA">
+          <English>Pulsoximeter already connected</English>
+          <German>Pulsoximeter bereits vorhanden</German>
       </Key>
 		</Package>
 </Project>

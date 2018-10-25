@@ -5,8 +5,7 @@
  * Arguments:
  * 0: The medic <OBJECT>
  * 1: The patient <OBJECT>
- * 2: SelectionName <STRING>
- * 3: Treatment classname <STRING>
+ * 2: Treatment classname <STRING>
  *
  * Return Value:
  * Succesful treatment started <BOOL>
@@ -17,16 +16,12 @@
  * Public: Yes
  */
 
-params ["_caller", "_target", "_selectionName", "_className"];
+params ["_caller", "_target", "_className"];
 
 if (_target getVariable ["kat_aceAirway_airway", false]) exitWith {
    _output = localize "STR_kat_aceAirway_Airway_already";
    [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
    false;
-};
-if (_target getVariable ["ace_medical_inReviveState", false]) exitWith {
-  _output = localize "STR_kat_aceAirway_Airway_NA";
-  [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
 };
 
 private _removeItem = "ACE_guedel";

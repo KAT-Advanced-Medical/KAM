@@ -1,18 +1,18 @@
 #include "BIS_AddonInfo.hpp"
+#include "gui.hpp"
 class CfgPatches
 {
     class kat_aceBreathing
     {
         units[] = {
-			"kat_aceBreathing_guedelItem"
+			"kat_aceBreathing_pulsoximeterItem"
 		};
         weapons[] = {
-      "kat_aceBreathing_guedel"
+      "kat_aceBreathing_pulsoximeter"
 		};
         requiredVersion = 1.80;
         requiredAddons[] = {
 			"ace_medical",
-      "kat_aceAirway",
       "cba_settings"
 		};
 		version = "0.5";
@@ -31,7 +31,12 @@ class CfgFunctions {
 	class kat_aceBreathing {
     file = "kat_aceBreathing\functions";
 		class functions {
-        class checkAirway{};
+        class events{};
+        class handleInit{};
+        class init{};
+        class openMenu{};
+        class registerSettings{};
+        class treatmentAdvanced_pulsoximeter{};
 		};
 	};
 };
@@ -59,13 +64,13 @@ class cfgWeapons {
 	class ACE_ItemCore;
 	class CBA_MiscItem_ItemInfo;
 
-  class ACE_larynx: ACE_ItemCore {
+  class Kat_Pulsoximeter: ACE_ItemCore {
       scope=2;
       author = "Katalam";
-      displayName= "$STR_kat_aceAirway_Larynx_Display";
-      descriptionShort = "$STR_kat_aceAirway_Larynx_Desc_Short";
-      descriptionUse = "$STR_kat_aceAirway_Larynx_Desc_Use";
-      picture = "\kat_aceAirway\images\larynx_normal.paa";
+      displayName= "$STR_kat_aceBreathing_Pulsoximeter_Display";
+      descriptionShort = "$STR_kat_aceBreathing_Pulsoximeter_Desc_Short";
+      descriptionUse = "$STR_kat_aceBreathing_Pulsoximeter_Desc_Use";
+      picture = "\kat_aceBreathing\images\Pulsoximeter_normal.paa";
       class ItemInfo: CBA_MiscItem_ItemInfo {
           mass = 1;
       };
@@ -75,53 +80,92 @@ class cfgWeapons {
 class cfgVehicles {
 	class Item_Base_F;
 
-  class ACE_larynxItem: Item_Base_F {
+  class Kat_PulsoximeterItem: Item_Base_F {
       scope = 2;
       scopeCurator = 2;
-      displayName= "$STR_kat_aceAirway_Larynx_Display";
+      displayName= "$STR_kat_aceBreathing_Pulsoximeter_Display";
       author = "Katalam";
       vehicleClass = "Items";
       class TransportItems {
-          MACRO_ADDITEM(ACE_larynx,1);
+          MACRO_ADDITEM(Kat_Pulsoximeter,1);
       };
+  };
+
+  class NATO_Box_Base;
+  class ACE_medicalSupplyCrate: NATO_Box_Base {
+    class TransportItems;
+  };
+  class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
+    class TransportItems: TransportItems {
+      MACRO_ADDITEM(Kat_Pulsoximeter,3);
+    };
   };
 
 class Man;
 	class CAManBase: Man {
 		class ACE_Actions {
-			class ACE_Head {
+			class ACE_ArmLeft {
         class FieldDressing;
-        class Larynxtubus: fieldDressing {
-          displayName = "$STR_kat_aceAirway_Larynx_Display";
-          displayNameProgress = $STR_kat_aceAirway_action_placing;
+        class Pulsoximeter: fieldDressing {
+          displayName = "$STR_kat_aceBreathing_Pulsoximeter_Display";
+          displayNameProgress = $STR_kat_aceBreathing_placing;
           treatmentLocations[] = {"All"};
-          treatmentTime = 5;
-          requiredMedic = 1;
-          items[] = {"ACE_larynx"};
-          category = "airway";
+          treatmentTime = 2;
+          requiredMedic = 0;
+          items[] = {"Kat_Pulsoximeter"};
           patientStateCondition = 0;
-          condition = "!([_target] call ace_common_fnc_isAwake)";
-          statement = "[_player, _target, 'head', 'larynx'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
-          icon = "\kat_aceAirway\images\larynx.paa";
+          condition = "kat_aceBreathing_enable";
+          statement = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pulsoximeter";
+          icon = "";
         };
 			};
+      class ACE_ArmRight {
+        class FieldDressing;
+        class Pulsoximeter: fieldDressing {
+          displayName = "$STR_kat_aceBreathing_Pulsoximeter_Display";
+          displayNameProgress = $STR_kat_aceBreathing_placing;
+          treatmentLocations[] = {"All"};
+          treatmentTime = 2;
+          requiredMedic = 0;
+          items[] = {"Kat_Pulsoximeter"};
+          patientStateCondition = 0;
+          condition = "kat_aceBreathing_enable";
+          statement = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pulsoximeter";
+          icon = "";
+        };
+      };
 			class ACE_MainActions {
 				class Medical {
-					class ACE_Head {
-            class Larynxtubus {
-              displayName = "$STR_kat_aceAirway_Larynx_Display";
-              displayNameProgress = $STR_kat_aceAirway_action_placing;
+					class ACE_ArmLeft {
+            class Pulsoximeter {
+              displayName = "$STR_kat_aceBreathing_Pulsoximeter_Display";
+              displayNameProgress = $STR_kat_aceBreathing_placing;
               treatmentLocations[] = {"All"};
-              treatmentTime = 5;
-              requiredMedic = 1;
-              items[] = {"ACE_larynx"};
-              category = "airway";
+              treatmentTime = 2;
+              requiredMedic = 0;
+              items[] = {"Kat_Pulsoximeter"};
+              itemConsumed = 0;
               patientStateCondition = 0;
-              condition = "!([_target] call ace_common_fnc_isAwake)";
-              statement = "[_player, _target, 'head', 'larynx'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
-              icon = "\kat_aceAirway\images\larynx.paa";
+              condition = "kat_aceBreathing_enable";
+              statement = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pulsoximeter";
+              icon = "";
             };
 				   };
+         class ACE_ArmRight {
+            class Pulsoximeter {
+              displayName = "$STR_kat_aceBreathing_Pulsoximeter_Display";
+              displayNameProgress = $STR_kat_aceBreathing_placing;
+              treatmentLocations[] = {"All"};
+              treatmentTime = 2;
+              requiredMedic = 0;
+              items[] = {"Kat_Pulsoximeter"};
+              itemConsumed = 0;
+              patientStateCondition = 0;
+              condition = "kat_aceBreathing_enable";
+              statement = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pulsoximeter";
+              icon = "";
+            };
+          };
          };
        };
      };
@@ -131,16 +175,16 @@ class Man;
 class ACE_Medical_Actions {
 	class Advanced {
     class fieldDressing;
-    class Larynxtubus: fieldDressing {
-        displayName = "$STR_kat_aceAirway_Larynx_Display";
-        displayNameProgress = $STR_kat_aceAirway_action_placing;
-        treatmentTime = 5;
-        allowedSelections[] = {"head"};
-        items[] = {"ACE_larynx"};
-        category = "airway";
-        condition = "!([_target] call ace_common_fnc_isAwake)";
+    class Pulsoximeter: fieldDressing {
+        displayName = "$STR_kat_aceBreathing_Pulsoximeter_Display";
+        displayNameProgress = $STR_kat_aceBreathing_placing;
+        treatmentTime = 2;
+        allowedSelections[] = {"hand_l", "hand_r"};
+        items[] = {"Kat_Pulsoximeter"};
+        category = "advanced";
+        condition = "kat_aceBreathing_enable";
         patientStateCondition = 0;
-        callbackSuccess = "[_player, _target, 'head', 'larynx'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
+        callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pulsoximeter";
     };
 	};
 };

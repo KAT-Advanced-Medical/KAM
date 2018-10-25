@@ -6,7 +6,7 @@
  * 0: _target <OBJECT>
  *
  * Return Value:
- * True or false
+ * 0: True or false <BOOLEAN>
  *
  * Example:
  * call kat_aceDisability_fnc_condition_clothes;

@@ -20,7 +20,7 @@ params ["_player", "_target"];
 
 if !(_target getVariable ["ace_medical_airwayOccluded", false]) exitWith {
    _output = localize "STR_kat_aceAirway_Airway_NA";
-   [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
+   [_output, 2, _caller] call ace_common_fnc_displayTextStructured;
    false;
 };
 
