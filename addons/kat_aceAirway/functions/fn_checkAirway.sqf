@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [bob1, bob2] call kat_aceAirway_fnc_checkAirway;
+ * [player, cursorTarget] call kat_aceAirway_fnc_checkAirway;
  *
  * Public: No
  */

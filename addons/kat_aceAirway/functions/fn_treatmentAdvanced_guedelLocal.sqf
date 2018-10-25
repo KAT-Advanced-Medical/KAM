@@ -18,8 +18,10 @@
 
 params ["_target", "_Item"];
 
+diag_log text "Glocal";
+
 _target setVariable ["kat_aceAirway_airway", true, true];
-_target setVariable ["kat_aceAirway_airway_item", "guedel"];
+_target setVariable ["kat_aceAirway_airway_item", "Guedel"];
 
 _target setVariable ["ace_medical_airwayCollapsed", false];
 

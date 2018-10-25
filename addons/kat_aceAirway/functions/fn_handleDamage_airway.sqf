@@ -18,7 +18,7 @@
 
 params ["_unit", "_selectionName", "_amountOfDamage"];
 
-//if !(kat_aceAirway_enable) exitWith {};
+if !(kat_aceAirway_enable) exitWith {};
 
 if !(_selectionName in ["head", "neck", "face_hub", "body"]) exitWith {};
 

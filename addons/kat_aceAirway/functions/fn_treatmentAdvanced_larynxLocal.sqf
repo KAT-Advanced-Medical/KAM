@@ -18,6 +18,8 @@
 
 params ["_target", "_Item"];
 
+diag_log text "Llocal";
+
 _target setVariable ["kat_aceAirway_airway", true, true];
 _target setVariable ["kat_aceAirway_airway_item", "larynx"];
 
