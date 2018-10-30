@@ -314,7 +314,7 @@ class ACE_Medical_Actions {
         requiredMedic = 1;
         treatmentTime = 5;
         items[] = {"ACE_larynx"};
-        condition = "!([_target] call ace_common_fnc_isAwake)";
+        condition = "!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable ['kat_aceAirway_enable',true])";
         patientStateCondition = 0;
         callbackSuccess = "[_player, _target, 'Larynxtubus'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
         callbackFailure = "";
@@ -348,7 +348,7 @@ class ACE_Medical_Actions {
       treatmentTime = 2;
       requiredMedic = 0;
       items[] = {};
-      condition = "!([_target] call ace_common_fnc_isAwake) && !(_target getVariable ""kat_aceAirway_overstretch"")";
+      condition = "!([_target] call ace_common_fnc_isAwake) && !(_target getVariable ""kat_aceAirway_overstretch"") && (missionNamespace getVariable ['kat_aceAirway_enable',true])";
       callbackSuccess = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_overstretchHead";
     };
     class TurnAround: larynxtubus {
@@ -367,7 +367,7 @@ class ACE_Medical_Actions {
       allowedSelections[] = {"head"};
       allowSelfTreatment = 0;
       callbackSuccess = "[_player, _target] call kat_aceAirway_fnc_checkAirway";
-      condition = "!([_target] call ace_common_fnc_isAwake)";
+      condition = "!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable ['kat_aceAirway_enable',true])";
     };
 	};
 };

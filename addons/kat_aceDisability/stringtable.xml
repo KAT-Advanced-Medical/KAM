@@ -29,5 +29,21 @@
         <English>Cutting</English>
         <German>Schnipp Schnapp</German>
       </Key>
+      <Key ID="STR_kat_aceDisability_Module_Create_Bee">
+        <English>Create Bees</English>
+        <German>Erstelle Bienen</German>
+      </Key>
+      <Key ID="STR_kat_aceDisability_Done">
+        <English>You finished the operation</English>
+        <German>Erfolgreicher Luftröhrenschnitt</German>
+      </Key>
+      <Key ID="STR_kat_aceDisability_cut_log">
+        <English>%1 cutted the Uniform and found: %2</English>
+        <German>%1 schnitt die Uniform auf und fand: %2</German>
+      </Key>
+      <Key ID="STR_kat_aceDisability_feelingbad">
+        <English>You're feeling sick</English>
+        <German>Du fühlst dich nicht gut</German>
+      </Key>
 		</Package>
 </Project>

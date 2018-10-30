@@ -20,15 +20,15 @@ params ["_unit", "_selectionName", "_amountOfDamage"];
 
 if !(kat_aceAirway_enable) exitWith {};
 
-if !(_selectionName in ["head", "neck", "face_hub", "body"]) exitWith {};
+//if !(_selectionName in ["head", "neck", "face_hub", "body"]) exitWith {};
 
 if (_amountOfDamage > 0.5) then {
-  if (true) then { //random(1) >= 0.8
+  if (random(100) <= kat_aceAirway_probability_collapsed) then {
     if !(_unit getVariable ["ace_medical_airwayCollapsed", false]) then {
       _unit setVariable ["ace_medical_airwayCollapsed", true, true];
     };
   };
-  if (true) then { //random[0, 50, 100] isEqualTo 1
+  if (random(100) <= kat_aceAirway_probability_occluded) then {
     if !(_unit getVariable["ace_medical_airwayOccluded", false]) then {
       _unit setVariable ["ace_medical_airwayOccluded", true, true];
     };

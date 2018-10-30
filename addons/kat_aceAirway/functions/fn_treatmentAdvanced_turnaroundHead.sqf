@@ -30,5 +30,5 @@ _output = localize "STR_kat_aceAirway_turnaround_info";
 [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 
 if (random 100 < 35) then {
-  _target setVariable ["ace_medical_airwayOccluded", false];
+  _target setVariable ["ace_medical_airwayOccluded", false, true];
 };

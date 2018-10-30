@@ -30,12 +30,31 @@
 //aceAirway Injuries Death Timer
 [
 	"kat_aceAirway_deathTimer",
-	"LIST",
+	"SLIDER",
 	localize "STR_kat_aceAirway_SETTING_TIMER",
 	CBA_SETTINGS_CAT,
-	[[150, 300, 450, 600], ["150 s", "300 s", "450 s", "600s"], 0],
+	[0, 1800, 300, 0],
 	true
 ] call CBA_Settings_fnc_init;
 
+//aceAirway Injuries probability collapsed
+[
+	"kat_aceAirway_probability_collapsed",
+	"SLIDER",
+	localize "STR_kat_aceAirway_SETTING_collapsed",
+	CBA_SETTINGS_CAT,
+	[0, 100, 100, 0],
+	true
+] call CBA_Settings_fnc_init;
+
+//aceAirway Injuries probability occluded
+[
+	"kat_aceAirway_probability_occluded",
+	"SLIDER",
+	localize "STR_kat_aceAirway_SETTING_occluded",
+	CBA_SETTINGS_CAT,
+	[0, 100, 100, 0],
+	true
+] call CBA_Settings_fnc_init;
 
 nil;

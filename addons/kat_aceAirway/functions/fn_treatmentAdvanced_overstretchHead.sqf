@@ -29,7 +29,7 @@ if !(_target getVariable ["ace_medical_airwayCollapsed", false]) exitWith {
    false;
 };
 
-_target setVariable ["kat_aceAirway_overstretch", true];
+_target setVariable ["kat_aceAirway_overstretch", true, true];
 
 _output = localize "STR_kat_aceAirway_overstretch_info";
 [_output, 2, _player] call ace_common_fnc_displayTextStructured;
@@ -39,12 +39,12 @@ _output = localize "STR_kat_aceAirway_overstretch_info";
   (_target distance2D _player) > 5;
 }, {
   params ["_player", "_target"];
-  _target setVariable ["kat_aceAirway_overstretch", false];
+  _target setVariable ["kat_aceAirway_overstretch", false, true];
   _output = localize "STR_kat_aceAirway_overstretch_cancel";
   [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 }, [_player, _target], 120, {
   params ["_player", "_target"];
-  _target setVariable ["kat_aceAirway_overstretch", false];
+  _target setVariable ["kat_aceAirway_overstretch", false, true];
   _output = localize "STR_kat_aceAirway_overstretch_cancel";
   [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 }] call CBA_fnc_waitUntilAndExecute;

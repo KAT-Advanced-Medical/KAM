@@ -20,12 +20,11 @@
 
 ["ace_unconscious", {
   params ["_unit", "_state"];
-  if (_state) then {
-  _unit call kat_aceAirway_fnc_init;
-  } else {
-    if (_unit getVariable ["ace_medical_airwayCollapsed", false] || _unit getVariable ["ace_medical_airwayOccluded", false]) then {
-      [_unit, CBA_missionTime, kat_aceAirway_deathTimer] call kat_aceAirway_fnc_handleTimer;
-    };
+  if !(_state) exitWith {
+    _unit call kat_aceAirway_fnc_init;
+  };
+  if (_unit getVariable ["ace_medical_airwayCollapsed", false] || _unit getVariable ["ace_medical_airwayOccluded", false]) then {
+    [_unit, CBA_missionTime, kat_aceAirway_deathTimer] call kat_aceAirway_fnc_handleTimer;
   };
 }] call CBA_fnc_addEventHandler;
 

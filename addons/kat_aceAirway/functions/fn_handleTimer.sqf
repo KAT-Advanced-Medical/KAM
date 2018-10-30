@@ -20,17 +20,15 @@ if !(local _unit) then {
   ["deathTimer", ["_unit", CBA_missionTime, kat_aceAirway_deathTimer], _unit] call CBA_fnc_targetEvent;
 };
 
-if !(_unit getVariable ["ACE_isUnconscious", false]) exitWith {};
-
 [{
   params ["_args", "_idPFH"];
   _args params ["_unit", "_startTime"];
   _alive = _unit getVariable ["ACE_isUnconscious", false];
-  if (_alive || _unit getVariable ["kat_aceAirway_airway", false]) then {
+  if (_alive || _unit getVariable ["kat_aceAirway_airway", false]) exitWith {
     [_idPFH] call CBA_fnc_removePerFrameHandler;
   };
   if ((CBA_missionTime - _startTime >= kat_aceAirway_deathTimer) && (!(_unit getVariable ["kat_aceAirway_airway", false]) && !(_unit getVariable ["kat_aceAirway_overstretch", false]))) exitWith {
     [_idPFH] call CBA_fnc_removePerFrameHandler;
-    _unit call ace_medical_fnc_setDead;
+    [_unit, true] call ace_medical_fnc_setDead;
   };
 }, 1, [_unit, CBA_missionTime]] call CBA_fnc_addPerFrameHandler;

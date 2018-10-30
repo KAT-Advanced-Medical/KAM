@@ -46,6 +46,10 @@ if (_target getVariable ["kat_aceAirway_airway", false] && _selectionN isEqualTo
       _genericMessages pushback [localize _text, [0.1, 1, 1, 1]];
     };
 };
+
+if (_target getVariable ["kat_aceAirway_overstretch", false] && _selectionN isEqualTo 0) then {
+  _genericMessages pushback [localize "STR_kat_aceAirway_overstretched", [0.1, 1, 1, 1]];
+};
 // END of EDIT
 
 if (_target getVariable ["ace_medical_hasPain", false]) then {

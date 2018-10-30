@@ -26,21 +26,23 @@ if (_target getVariable ["kat_aceAirway_airway", false]) exitWith {
 
 switch (_className) do {
   case "Larynxtubus": {
+    _Item = localize "STR_kat_aceAirway_Larynx_Display";
     if (local _target) then {
-      ["treatmentLarynx", [_target, _removeItem]] call CBA_fnc_localEvent;
+      ["treatmentLarynx", [_target, _Item]] call CBA_fnc_localEvent;
     } else {
-      ["treatmentLarynx", [_target, _removeItem], _target] call CBA_fnc_targetEvent;
+      ["treatmentLarynx", [_target, _Item], _target] call CBA_fnc_targetEvent;
     };
   };
   case "Guedeltubus": {
+    _Item = localize "STR_kat_aceAirway_Guedel_Display";
     if (random 100 < 5) exitWith {
       _output = localize "STR_kat_aceAirway_Airway_NA";
       [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
     };
     if (local _target) then {
-      ["treatmentGuedel", [_target, _removeItem]] call CBA_fnc_localEvent;
+      ["treatmentGuedel", [_target, _Item]] call CBA_fnc_localEvent;
     } else {
-      ["treatmentGuedel", [_target, _removeItem], _target] call CBA_fnc_targetEvent;
+      ["treatmentGuedel", [_target, _Item], _target] call CBA_fnc_targetEvent;
     };
   };
   default {};

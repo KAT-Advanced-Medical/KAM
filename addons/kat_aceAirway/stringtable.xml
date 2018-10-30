@@ -13,6 +13,14 @@
           <English>Airway Injuries Death Timer</English>
           <German>Atemwegsverletzungstimer</German>
       </Key>
+      <Key ID="STR_kat_aceAirway_SETTING_collapsed">
+          <English>Probability for airway collapsing</English>
+          <German>Atemwegsverletzungswahrscheinlichkeit</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_SETTING_occluded">
+          <English>Probability for airway occluding</English>
+          <German>Atemwegsverlegungswahrscheinlichkeit</German>
+      </Key>
       <Key ID="STR_kat_aceAirway_checkAirway">
           <English>Check airways</English>
           <German>Überprüfe Atemwege</German>
@@ -64,6 +72,10 @@
       <Key ID="STR_kat_aceAirway_overstretch">
           <English>Head overstretch</English>
           <German>Kopf überstrecken</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_overstretched">
+          <English>Head overstretched</English>
+          <German>Kopf überstreckt</German>
       </Key>
       <Key ID="STR_kat_aceAirway_overstretching">
           <English>Head overstretching</English>
