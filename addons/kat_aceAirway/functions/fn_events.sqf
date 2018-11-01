@@ -29,4 +29,9 @@
 }] call CBA_fnc_addEventHandler;
 
 ["deathTimer", {_this call kat_aceAirway_fnc_handleTimer}] call CBA_fnc_addEventHandler;
-["ace_medical_treatmentAdvanced_fullHealLocal", {_this call kat_aceAirway_fnc_init;}] call CBA_fnc_addEventHandler;
+["ace_treatmentSucceded",{
+ 	params ["_caller", "_target", "_selectionName", "_className"];
+ 	if (toUpper _className isEqualTo "PERSONALAIDKIT" && local _target) exitWith {
+ 		_target call kat_aceAirway_fnc_init;
+ 	};
+ }] call CBA_fnc_addEventHandler;

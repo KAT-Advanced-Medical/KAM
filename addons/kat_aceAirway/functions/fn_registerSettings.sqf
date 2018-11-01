@@ -43,7 +43,7 @@
 	"SLIDER",
 	localize "STR_kat_aceAirway_SETTING_collapsed",
 	CBA_SETTINGS_CAT,
-	[0, 100, 100, 0],
+	[0, 100, 20, 0],
 	true
 ] call CBA_Settings_fnc_init;
 
@@ -53,7 +53,7 @@
 	"SLIDER",
 	localize "STR_kat_aceAirway_SETTING_occluded",
 	CBA_SETTINGS_CAT,
-	[0, 100, 100, 0],
+	[0, 100, 30, 0],
 	true
 ] call CBA_Settings_fnc_init;
 

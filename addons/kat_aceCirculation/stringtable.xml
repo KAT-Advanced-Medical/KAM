@@ -1,9 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="kat">
-    <Package name="aceDisability">
+    <Package name="aceCirculation">
       <Key ID="STR_kat_aceCirculation_SETTING_ENABLE">
         <English>ACE-Circulation activated?</English>
         <German>ACE-Kreislauf aktivieren?</German>
+      </Key>
+      <Key ID="STR_kat_aceCirculation_SETTING_loadout">
+        <English>Different loadoutname</English>
+        <German>Anderer Loadoutname</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_BloodIV_O">
+        <English>Blood IV (1000ml) BT: 0</English>
+        <German>Blut IV (1000ml) BG: 0</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_BloodIV_A">
+        <English>Blood IV (1000ml) BT: A</English>
+        <German>Blut IV (1000ml) BG: A</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_BloodIV_B">
+        <English>Blood IV (1000ml) BT: B</English>
+        <German>Blut IV (1000ml) BG: B</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_BloodIV_AB">
+        <English>Blood IV (1000ml) BT: AB</English>
+        <German>Blut IV (1000ml) BG: AB</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_BloodIV_O">
+        <English>Give Blood IV (1000ml) BT: 0</English>
+        <German>Bluttransfusion IV (1000ml) BG: 0</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_BloodIV_A">
+        <English>Give Blood IV (1000ml) BT: A</English>
+        <German>Bluttransfusion IV (1000ml) BG: A</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_BloodIV_B">
+        <English>Give Blood IV (1000ml) BT: B</English>
+        <German>Bluttransfusion IV (1000ml) BG: B</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_BloodIV_AB">
+        <English>Give Blood IV (1000ml) BT: AB</English>
+        <German>Bluttransfusion IV (1000ml) BG: AB</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_500_BloodIV_O">
+        <English>Give Blood IV (500ml) BT: 0</English>
+        <German>Bluttransfusion IV (500ml) BG: 0</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_500_BloodIV_A">
+        <English>Give Blood IV (500ml) BT: A</English>
+        <German>Bluttransfusion IV (500ml) BG: A</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_500_BloodIV_B">
+        <English>Give Blood IV (500ml) BT: B</English>
+        <German>Bluttransfusion IV (500ml) BG: B</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_500_BloodIV_AB">
+        <English>Give Blood IV (500ml) BT: AB</English>
+        <German>Bluttransfusion IV (500ml) BG: AB</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_250_BloodIV_O">
+        <English>Give Blood IV (250ml) BT: 0</English>
+        <German>Bluttransfusion IV (250ml) BG: 0</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_250_BloodIV_A">
+        <English>Give Blood IV (250ml) BT: A</English>
+        <German>Bluttransfusion IV (250ml) BG: A</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_250_BloodIV_B">
+        <English>Give Blood IV (250ml) BT: B</English>
+        <German>Bluttransfusion IV (250ml) BG: B</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Action_250_BloodIV_AB">
+        <English>Give Blood IV (250ml) BT: AB</English>
+        <German>Bluttransfusion IV (250ml) BG: AB</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_PainKiller_Display">
+        <English>Painkiller</English>
+        <German>Schmerzmittel</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_PainKiller_DescShort">
+        <English>Used to suppress pain</English>
+        <German>Schmerzbekämpfer</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_PainKiller_DescUse">
+        <English>An analgesic used to combat lightly to moderate pain experiences.</English>
+        <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Inject_PainKiller">
+        <English>Use Painkillers</English>
+        <German>Benutze Schmerzmittel</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Injecting">
+        <English>Injecting</English>
+        <German>Injiziere</German>
       </Key>
 		</Package>
 </Project>

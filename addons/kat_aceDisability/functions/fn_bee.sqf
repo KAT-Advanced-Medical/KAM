@@ -14,12 +14,14 @@
  * Public: No
  */
 
+diag_log _this;
+
 params ["_unit"];
 
 _unit setVariable ["kat_aceDisability_allergicalreaction", true, true];
 _unit setVariable ["kat_aceAirway_swollen", true, true];
 _message = localize "STR_kat_aceDisability_feelingbad";
-[_message, 1.5, _player] call ace_common_fnc_displayTextStructured;
+[_message, 1.5, _unit] call ace_common_fnc_displayTextStructured;
 [{[_this select 0, true] call ace_medical_fnc_setUnconscious}, [_unit], 10] call CBA_fnc_waitAndExecute;
 
 /*

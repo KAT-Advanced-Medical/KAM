@@ -9,6 +9,8 @@ class CfgPatches
         requiredAddons[] = {
         "ace_medical",
         "cba_settings",
+        "A3_Modules_F",
+        "A3_Modules_F_Curator"
 		};
 		version = "0.5";
 		versionStr = "0.5";
@@ -18,9 +20,10 @@ class CfgPatches
 };
 
 class CfgFactionClasses {
-	class NO_CATEGORY;
-	class kat_aceDisability: NO_CATEGORY {
+	class kat_aceDisability_base {
 		displayName = "KAT";
+    priority = 2;
+    side = 7;
 	};
 };
 
@@ -35,6 +38,7 @@ class CfgFunctions {
 		class functions {
         class bee{};
         class createBee{};
+        class dummy{};
         class events{};
         class handleInit{};
         class init{};
@@ -124,59 +128,49 @@ class Man;
      };
    };
 
-   class Logic;
-   class Module_F: Logic  {
-     class AttributesBase {
-       class Default;
-       class Edit; // Default edit box (i.e., text input field)
-       class Combo; // Default combo box (i.e., drop-down menu)
-       class Checkbox; // Default checkbox (returned value is Bool)
-       class CheckboxNumber; // Default checkbox (returned value is Number)
-       class ModuleDescription; // Module description
-       class Units; // Selection of units on which the module is applied
-     };
-     // Description base classes, for more information see below
-     class ModuleDescription  {
-       class AnyBrain;
-     };
-   };
-   class kat_CreateBees: Module_F {
-     // Standard object definitions
-     scope = 2; // Editor visibility; 2 will show it in the menu, 1 will hide it.
-     scopeCurator = 2;
-     displayName = "Create Bees"; // Name displayed in the menu
-     icon = ""; // Map icon. Delete this entry to use the default icon
-     category = "kat_aceDisability";
+class Logic;
+class Module_F: Logic {
+  class EventHandlers;
+  class ModuleDescription;
+    class AttributesBase {
+      class Default;
+      class Edit;
+      class Combo;
+      class Checkbox;
+      class CheckboxNumber;
+      class ModuleDescription;
+      class Units;
+        expression = "_this setVariable ['%s',_value];";
+    };
+};
+class kat_aceDisability_moduleBase: Module_F {
+  author = "Katalam";
+  displayName = "Test";
+  category = kat_aceDisability_base;
+  function = "kat_aceDisability_fnc_dummy";
+  functionPriority = 1;
+  isGlobal = 1;
+  isTriggerActivated = 0;
+  scope = 1;
+  scopeCurator = 2;
+};
+class kat_aceDisability_moduleBase3den: Module_F {
+  author = "Katalam";
+  displayName = "Base Module";
+  category = kat_aceDisability_base;
+  function = "kat_aceDisability_fnc_dummy";
+  functionPriority = 1;
+  isGlobal = 1;
+  isTriggerActivated = 1;
+  isDisposable = 0;
+  scope = 2;
+  scopeCurator = 1;
+};
 
-     // Name of function triggered once conditions are met
-     function = "kat_aceDisability_fnc_createBee";
-     // Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
-     functionPriority = 1;
-     // 0 for server only execution, 1 for global execution, 2 for persistent global execution
-     isGlobal = 1;
-     // 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work)
-     isDisposable = 1;
-     // // 1 to run init function in Eden Editor as well
-     is3DEN = 0;
-
-     // Menu displayed when the module is placed or double-clicked on by Zeus
-     curatorInfoType = "RscDisplayAttributeModuleNuke";
-
-     // Module description. Must inherit from base class, otherwise pre-defined entities won't be available
-     class ModuleDescription: ModuleDescription {
-       description = "Short module description"; // Short description, will be formatted as structured text
-       sync[] = {"LocationArea_F"}; // Array of synced entities (can contain base classes)
-
-       class LocationArea_F {
-         description[] = { // Multi-line descriptions are supported
-           "First line",
-           "Second line"
-         };
-         position = 1; // Position is taken into effect
-         direction = 1; // Direction is taken into effect
-       };
-     };
-   }; // Close Module
+class kat_aceDisability_moduleBee: kat_aceDisability_moduleBase {
+  displayName = "Create Bees";
+  function = "kat_aceDisability_fnc_bee";
+};
 
    class NATO_Box_Base;
  	 class ACE_medicalSupplyCrate: NATO_Box_Base {
@@ -223,7 +217,7 @@ class ACE_Medical_Actions {
       treatmentTime = 60;
       allowedSelections[] = {"head"};
       requiredMedic = 2;
-      items[] = {"ACE_surgicalKit", "ACE_epinephrine"};
+      items[] = {"ACE_surgicalKit"};
       condition = "!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable ['kat_aceDisability_enable',true]) && _target getVariable ['kat_aceDisability_checked', false]";
       category = "airway";
       callbackSuccess = "[_player, _target] call kat_aceDisability_fnc_treatmentAdvanced_bee";

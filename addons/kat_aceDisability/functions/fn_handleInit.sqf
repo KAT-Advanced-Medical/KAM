@@ -16,6 +16,7 @@
 
 params ["_unit"];
 
+// is this even functional?
 _unit addEventHandler ["EpeContactStart", {
 	params ["_object1", "_object2", "_selection1", "_selection2", "_force"];
   if (_object2 isEqualTo "HoneyBee") then {

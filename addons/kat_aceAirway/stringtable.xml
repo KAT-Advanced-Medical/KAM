@@ -29,6 +29,10 @@
           <English>%1 checked airways: %2 %3</English>
           <German>%1 überprüfte Atemwege: %2 %3</German>
       </Key>
+      <Key ID="STR_kat_aceAirway_airway_log">
+          <English>%1 intubated with %2</English>
+          <German>%1 intubierte mit %2</German>
+      </Key>
       <Key ID="STR_kat_aceAirway_Occluded">
           <English>Occluded</English>
           <German>Verstopft</German>
