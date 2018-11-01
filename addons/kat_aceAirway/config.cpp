@@ -4,22 +4,22 @@ class CfgPatches
     class kat_aceAirway
     {
         units[] = {
-			"kat_aceAirway_guedelItem",
-      "kat_aceAirway_larynxItem",
-      "kat_aceAirway_accuvacItem"
+			"KAT_guedelItem",
+      "KAT_larynxItem",
+      "KAT_accuvacItem"
 		};
         weapons[] = {
-      "kat_aceAirway_guedel",
-      "kat_aceAirway_larynx",
-      "kat_aceAirway_accuvac"
+      "KAT_guedel",
+      "KAT_larynx",
+      "KAT_accuvac"
 		};
         requiredVersion = 1.80;
         requiredAddons[] = {
 			"ace_medical"
 			,"cba_settings"
 		};
-		version = "0.9";
-		versionStr = "0.9";
+		version = "0.9.1";
+		versionStr = "0.9.1";
 		author = "[SeL] Katalam";
 		authorUrl = "http://spezialeinheit-luchs.de/";
     };
@@ -97,7 +97,7 @@ class cfgWeapons {
 	class ACE_ItemCore;
 	class CBA_MiscItem_ItemInfo;
 
-  class ACE_larynx: ACE_ItemCore {
+  class KAT_larynx: ACE_ItemCore {
       scope=2;
       author = "Katalam";
       displayName= "$STR_kat_aceAirway_Larynx_Display";
@@ -108,7 +108,7 @@ class cfgWeapons {
           mass = 1;
       };
   };
-  class ACE_guedel: ACE_ItemCore {
+  class KAT_guedel: ACE_ItemCore {
       scope=2;
       author = "Katalam";
       displayName= "$STR_kat_aceAirway_Guedel_Display";
@@ -119,7 +119,7 @@ class cfgWeapons {
           mass = 1;
       };
   };
-  class ACE_accuvac: ACE_ItemCore {
+  class KAT_accuvac: ACE_ItemCore {
       scope=2;
       author = "Katalam";
       displayName= "Accuvac";
@@ -135,34 +135,34 @@ class cfgWeapons {
 class cfgVehicles {
 	class Item_Base_F;
 
-  class ACE_larynxItem: Item_Base_F {
+  class KAT_larynxItem: Item_Base_F {
       scope = 2;
       scopeCurator = 2;
       displayName= "$STR_kat_aceAirway_Larynx_Display";
       author = "Katalam";
       vehicleClass = "Items";
       class TransportItems {
-          MACRO_ADDITEM(ACE_larynx,1);
+          MACRO_ADDITEM(KAT_larynx,1);
       };
   };
-  class ACE_guedelItem: Item_Base_F {
+  class KAT_guedelItem: Item_Base_F {
       scope = 2;
       scopeCurator = 2;
       displayName= "$STR_kat_aceAirway_Guedel_Display";
       author = "Katalam";
       vehicleClass = "Items";
       class TransportItems {
-          MACRO_ADDITEM(ACE_guedel,1);
+          MACRO_ADDITEM(KAT_guedel,1);
       };
   };
-  class ACE_accuvacItem: Item_Base_F {
+  class KAT_accuvacItem: Item_Base_F {
       scope = 2;
       scopeCurator = 2;
       displayName= "Accuvac";
       author = "Katalam";
       vehicleClass = "Items";
       class TransportItems {
-          MACRO_ADDITEM(ACE_accuvac,1);
+          MACRO_ADDITEM(KAT_accuvac,1);
       };
   };
 
@@ -172,9 +172,9 @@ class cfgVehicles {
 	};
 	class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
 		class TransportItems: TransportItems {
-			MACRO_ADDITEM(ACE_larynx,15);
-      MACRO_ADDITEM(ACE_guedel,15);
-      MACRO_ADDITEM(ACE_accuvac,1);
+			MACRO_ADDITEM(KAT_larynx,15);
+      MACRO_ADDITEM(KAT_guedel,15);
+      MACRO_ADDITEM(KAT_accuvac,1);
 		};
 	};
 
@@ -314,7 +314,7 @@ class ACE_Medical_Actions {
         allowSelfTreatment = 0;
         requiredMedic = 1;
         treatmentTime = 5;
-        items[] = {"ACE_larynx"};
+        items[] = {"KAT_larynx"};
         condition = "!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable ['kat_aceAirway_enable',true])";
         patientStateCondition = 0;
         callbackSuccess = "[_player, _target, 'Larynxtubus'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
@@ -333,13 +333,13 @@ class ACE_Medical_Actions {
     class Guedeltubus: larynxtubus {
       displayName = $STR_kat_aceAirway_Guedel_Display;
       requiredMedic = 0;
-      items[] = {"ACE_guedel"};
+      items[] = {"KAT_guedel"};
       callbackSuccess = "[_player, _target, 'Guedeltubus'] call kat_aceAirway_fnc_treatmentAdvanced_airway";
     };
     class Accuvac: larynxtubus {
       displayName = "Accuvac";
       treatmentTime = 10;
-      items[] = {"ACE_accuvac"};
+      items[] = {"KAT_accuvac"};
       itemConsumed = 0;
       callbackSuccess = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_accuvac";
     };

@@ -29,7 +29,7 @@ if (_amountOfDamage > 0.5) then {
     };
   };
   if (random(100) <= kat_aceAirway_probability_occluded) then {
-    if !(_unit getVariable["ace_medical_airwayOccluded", false]) then {
+    if !(_unit getVariable ["ace_medical_airwayOccluded", false] && (_unit getVariable ["kat_aceAirway_airway_item", ""] isEqualTo "larynx")) then {
       _unit setVariable ["ace_medical_airwayOccluded", true, true];
     };
   };
