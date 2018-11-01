@@ -57,6 +57,7 @@ class CfgFunctions {
         class treatmentAdvanced_accuvac{};
         class treatmentAdvanced_accuvacLocal{};
         class treatmentAdvanced_airway{};
+        class treatmentAdvanced_airwayLocal{};
         class treatmentAdvanced_guedelLocal{};
         class treatmentAdvanced_larynxLocal{};
         class treatmentAdvanced_overstretchHead{};

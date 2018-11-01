@@ -17,7 +17,7 @@
  */
 
 params ["_caller", "_target", "_className"];
-
+/*
 if (_target getVariable ["kat_aceAirway_airway", false]) exitWith {
    _output = localize "STR_kat_aceAirway_Airway_already";
    [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
@@ -46,6 +46,13 @@ switch (_className) do {
     };
   };
   default {};
+};
+*/
+
+if (local _target) then {
+  ["treatmentAirway", [_caller, _target, _Item]] call CBA_fnc_localEvent;
+} else {
+  ["treatmentAirway", [_caller, _target, _Item], _target] call CBA_fnc_targetEvent;
 };
 
 true;

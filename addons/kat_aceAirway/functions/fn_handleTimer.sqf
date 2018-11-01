@@ -14,10 +14,10 @@
  * Public: No
  */
 
-params ["_unit", "_time", "_timeWithoutAir"];
+params [["_unit", objNull, [objNull]], "_time"];
 
-if !(local _unit) then {
-  ["deathTimer", ["_unit", CBA_missionTime, kat_aceAirway_deathTimer], _unit] call CBA_fnc_targetEvent;
+if (!local _unit) then {
+  ["deathTimer", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
 
 [{
