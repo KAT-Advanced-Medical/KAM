@@ -3,25 +3,23 @@ ACE Airway Injuries Addon
 License under LICENSE
 
 Feature Overview
+
 *most of them are just planned*
 
 - aceAirway
-  - [ ] Airwaymanagement for unconscious patients
+  - [x] Airwaymanagement for unconscious patients
     - [x] Head overstretching
     - [x] Intubation
     - [x] Aspiration
-    - [ ] table lateral position
 - aceBreathing
-  - [ ] Assistant Breathing
-  - [ ] Bottle of Oxygen
+  - [ ] Oxygen saturation
 - aceCirculation
-  - [ ] Blood Groups
-  - [ ] Drugs with access
-  - [ ] Syringe pump
+  - [x] Blood Groups
+  - [ ] Drugs with access?
 - aceDisability
   - [x] Cut of clothes
+  - [ ] Allergical reactions
 - aceExposure
+  - [ ] Heat-preserving
 - aceMisc
-  - [ ] Cervical collar
-  - [ ] Spineboard
-  - [ ] Big Backpack
+  - [ ] Big Backpack?

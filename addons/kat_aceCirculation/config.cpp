@@ -4,10 +4,10 @@ class CfgPatches
     class kat_aceCirculation
     {
         units[] = {
-			"ACE_painKillerItem"
+			"KAT_PainkillersItem"
 		};
         weapons[] = {
-      "ACE_painKiller"
+      "KAT_Painkillers"
 		};
         requiredVersion = 1.80;
         requiredAddons[] = {
@@ -86,14 +86,14 @@ class cfgWeapons {
   class ACE_bloodIV_AB: ACE_bloodIV {
     displayName = $STR_KAT_aceCirculation_BloodIV_AB;
   };
-  class ACE_painKiller: ACE_ItemCore {
+  class KAT_Painkillers: ACE_ItemCore {
     scope = 2;
     author = "Katalam";
-    displayName = $STR_KAT_aceCirculation_PainKiller_Display;
+    displayName = $STR_KAT_aceCirculation_Painkillers_Display;
     picture = "\z\ace\addons\medical\ui\items\adenosine_x_ca.paa";
     model = "\z\ace\addons\medical\data\adenosine.p3d";
-    descriptionShort = $STR_KAT_aceCirculation_PainKiller_DescShort;
-    descriptionUse = $STR_KAT_aceCirculation_PainKiller_DescUse;
+    descriptionShort = $STR_KAT_aceCirculation_Painkillers_DescShort;
+    descriptionUse = $STR_KAT_aceCirculation_Painkillers_DescUse;
     class ItemInfo: CBA_MiscItem_ItemInfo {
         mass = 1;
     };
@@ -103,15 +103,15 @@ class cfgWeapons {
 class cfgVehicles {
 	class Item_Base_F;
 
-  class ACE_painKillerItem: Item_Base_F {
+  class KAT_PainkillersItem: Item_Base_F {
       scope = 2;
       scopeCurator = 2;
-      displayName= "$STR_KAT_aceCirculation_PainKiller_Display";
+      displayName= "$STR_KAT_aceCirculation_Painkillers_Display";
       author = "Katalam";
       vehicleClass = "Items";
-      //editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_PainKillers_F.jpg";
+      //editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Painkillers_F.jpg";
       class TransportItems {
-          MACRO_ADDITEM(ACE_painKiller,1);
+          MACRO_ADDITEM(KAT_Painkillers,1);
       };
   };
 
@@ -121,7 +121,7 @@ class cfgVehicles {
 	};
 	class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
 		class TransportItems: TransportItems {
-			MACRO_ADDITEM(ACE_painKiller,20);
+			MACRO_ADDITEM(KAT_Painkillers,20);
 		};
 	};
 
@@ -149,10 +149,10 @@ class Man;
       class ACE_ArmLeft {
         class FieldDressing;
         class Morphine;
-        class Painkiller: Morphine {
-          displayName = $STR_KAT_aceCirculation_Inject_PainKiller;
-          condition = "[_player, _target, 'hand_l', 'Painkiller'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_l', 'Painkiller'] call ace_medical_fnc_treatment";
+        class Painkillers: Morphine {
+          displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
+          condition = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_treatment";
         };
         class BloodIV;
         class BloodIV_O: BloodIV {
@@ -179,10 +179,10 @@ class Man;
       class ACE_ArmRight {
         class FieldDressing;
         class Morphine;
-        class Painkiller: Morphine {
-          displayName = $STR_KAT_aceCirculation_Inject_PainKiller;
-          condition = "[_player, _target, 'hand_r', 'Painkiller'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_r', 'Painkiller'] call ace_medical_fnc_treatment";
+        class Painkillers: Morphine {
+          displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
+          condition = "[_player, _target, 'hand_r', 'Painkillers'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'hand_r', 'Painkillers'] call ace_medical_fnc_treatment";
         };
         class BloodIV;
         class BloodIV_O: BloodIV {
@@ -209,10 +209,10 @@ class Man;
       class ACE_LegLeft {
         class FieldDressing;
         class Morphine;
-        class Painkiller: Morphine {
-          displayName = $STR_KAT_aceCirculation_Inject_PainKiller;
-          condition = "[_player, _target, 'leg_l', 'Painkiller'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_l', 'Painkiller'] call ace_medical_fnc_treatment";
+        class Painkillers: Morphine {
+          displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
+          condition = "[_player, _target, 'leg_l', 'Painkillers'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'leg_l', 'Painkillers'] call ace_medical_fnc_treatment";
         };
         class BloodIV;
         class BloodIV_O: BloodIV {
@@ -239,10 +239,10 @@ class Man;
       class ACE_LegRight {
         class FieldDressing;
         class Morphine;
-        class Painkiller: Morphine {
-          displayName = $STR_KAT_aceCirculation_Inject_PainKiller;
-          condition = "[_player, _target, 'leg_r', 'Painkiller'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_r', 'Painkiller'] call ace_medical_fnc_treatment";
+        class Painkillers: Morphine {
+          displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
+          condition = "[_player, _target, 'leg_r', 'Painkillers'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'leg_r', 'Painkillers'] call ace_medical_fnc_treatment";
         };
         class BloodIV;
         class BloodIV_O: BloodIV {
@@ -285,10 +285,10 @@ class ACE_Medical_Actions {
 	class Advanced {
     class FieldDressing;
     class Morphine;
-    class Painkiller: Morphine {
-      displayName = $STR_KAT_aceCirculation_Inject_PainKiller;
+    class Painkillers: Morphine {
+      displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
       displayNameProgress = $STR_KAT_aceCirculation_Injecting;
-      items[] = {"ACE_painKiller"};
+      items[] = {"KAT_Painkillers"};
     };
     class CheckPulse;
     class CheckDogtags: checkPulse {
@@ -385,16 +385,6 @@ class ACE_Medical_Actions {
         hrIncreaseLow[] = {2, 5, 15};
         hrIncreaseNormal[] = {10, 15, 20};
         hrIncreaseHigh[] = {5, 20, 10};
-      };
-      class Painkiller {
-        painReduce = 5;
-        timeInSystem = 600;
-        maxDose = 10;
-        inCompatableMedication[] = {};
-        viscosityChange = 0;
-        hrIncreaseLow[] = {-1, -2, 35};
-        hrIncreaseNormal[] = {-1, -3, 35};
-        hrIncreaseHigh[] = {-1, -4, 50};
       };
     };
   };

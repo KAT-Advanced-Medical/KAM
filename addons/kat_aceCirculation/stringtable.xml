@@ -73,19 +73,19 @@
         <English>Give Blood IV (250ml) BT: AB</English>
         <German>Bluttransfusion IV (250ml) BG: AB</German>
       </Key>
-      <Key ID="STR_KAT_aceCirculation_PainKiller_Display">
-        <English>Painkiller</English>
+      <Key ID="STR_KAT_aceCirculation_Painkillers_Display">
+        <English>Painkillers</English>
         <German>Schmerzmittel</German>
       </Key>
-      <Key ID="STR_KAT_aceCirculation_PainKiller_DescShort">
+      <Key ID="STR_KAT_aceCirculation_Painkillers_DescShort">
         <English>Used to suppress pain</English>
         <German>Schmerzbekämpfer</German>
       </Key>
-      <Key ID="STR_KAT_aceCirculation_PainKiller_DescUse">
+      <Key ID="STR_KAT_aceCirculation_Painkillers_DescUse">
         <English>An analgesic used to combat lightly to moderate pain experiences.</English>
         <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
       </Key>
-      <Key ID="STR_KAT_aceCirculation_Inject_PainKiller">
+      <Key ID="STR_KAT_aceCirculation_Inject_Painkillers">
         <English>Use Painkillers</English>
         <German>Benutze Schmerzmittel</German>
       </Key>
