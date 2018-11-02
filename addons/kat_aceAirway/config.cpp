@@ -362,7 +362,7 @@ class ACE_Medical_Actions {
     class CheckAirway: checkPulse {
       displayName = "$STR_kat_aceAirway_checkAirway";
       displayNameProgress = $STR_kat_aceAirway_action_checking;
-      treatmentTime = 10;
+      treatmentTime = 5;
       allowedSelections[] = {"head"};
       allowSelfTreatment = 0;
       callbackSuccess = "[_player, _target] call kat_aceAirway_fnc_checkAirway";

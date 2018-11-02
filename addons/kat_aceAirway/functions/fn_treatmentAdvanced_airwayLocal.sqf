@@ -42,7 +42,7 @@ switch (_className) do {
   };
   default {};
 };
-
+[_target, _Item] call ace_medical_fnc_addToTriageCard;
 [_target, "quick_view", localize "STR_kat_aceAirway_airway_log", [[_player] call ace_common_fnc_getName, _Item]] call ace_medical_fnc_addToLog;
 
 true;

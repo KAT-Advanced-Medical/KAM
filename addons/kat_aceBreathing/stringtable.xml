@@ -5,25 +5,33 @@
           <English>ACE-Breathing activated?</English>
           <German>ACE-Atmung aktiviert?</German>
       </Key>
-      <Key ID="STR_kat_aceBreathing_Pulsoximeter_Display">
-          <English>Pulsoximeter</English>
-          <German>Pulsoximeter</German>
+      <Key ID="STR_kat_aceBreathing_Pulsoxymeter_Display">
+          <English>Pulsoxymeter</English>
+          <German>Pulsoxymeter</German>
       </Key>
-      <Key ID="STR_kat_aceBreathing_Pulsoximeter_Desc_Short">
-          <English>Pulsoximeter</English>
-          <German>Pulsoximeter</German>
+      <Key ID="STR_kat_aceBreathing_Pulsoxymeter_Desc_Short">
+          <English>Pulsoxymeter</English>
+          <German>Pulsoxymeter</German>
       </Key>
-      <Key ID="STR_kat_aceBreathing_Pulsoximeter_Desc_Use">
-          <English>Pulsoximeter</English>
-          <German>Pulsoximeter</German>
+      <Key ID="STR_kat_aceBreathing_Pulsoxymeter_Desc_Use">
+          <English>Pulsoxymeter</English>
+          <German>Pulsoxymeter</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_placing">
           <English>Placing</English>
           <German>Anlegen</German>
       </Key>
-      <Key ID="STR_kat_aceBreathing_pulsoxi_NA">
-          <English>Pulsoximeter already connected</English>
-          <German>Pulsoximeter bereits vorhanden</German>
+      <Key ID="STR_kat_aceBreathing_pulsoxy_NA">
+          <English>Pulsoxymeter already connected</English>
+          <German>Pulsoxymeter bereits vorhanden</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_pulsoxy_Log">
+          <English>Pulsoxymeter: Heart Rate: %1</English>
+          <German>Pulsoxymeter: Puls: %1</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_pulsoxy_Log_2">
+          <English>%1 connected Pulsoxymeter</English>
+          <German>%1 hat Pulsoxymeter angelegt</German>
       </Key>
 		</Package>
 </Project>

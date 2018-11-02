@@ -1,11 +1,11 @@
 ////////////////////////////////////////////////////////////////////////////
 //////           This HPP was created by Shinji`s GUI tool            //////
 ////////////////////////////////////////////////////////////////////////////
-class kat_aceBreathing_pulsoximeter_menu {
+class kat_aceBreathing_pulsoxymeter_menu {
     idd = 1000;
-    name = "kat_aceBreathing_pulsoximeter_menu";
-    onLoad = "uiNamespace setVariable ['kat_aceBreathing_pulsoximeter_menu', _this select 0];";
-    onUnLoad = "uiNamespace setVariable ['kat_aceBreathing_pulsoximeter_menu', nil];";
+    name = "kat_aceBreathing_pulsoxymeter_menu";
+    onLoad = "uiNamespace setVariable ['kat_aceBreathing_pulsoxymeter_menu', _this select 0];";
+    onUnLoad = "uiNamespace setVariable ['kat_aceBreathing_pulsoxymeter_menu', nil];";
     movingEnable = false;
     enableSimulation = true;
 
@@ -25,7 +25,7 @@ class kat_aceBreathing_pulsoximeter_menu {
         class RscPicture;
         class Picturebox_1100 {
             idc = 1100;
-            text = "images\gui_pulsoxi.png";
+            text = "images\gui_pulsoxy.png";
             x = 0.334756 * safezoneW + safezoneX;
             y = 0.369382 * safezoneH + safezoneY;
             w = 0.3625 * safezoneW;

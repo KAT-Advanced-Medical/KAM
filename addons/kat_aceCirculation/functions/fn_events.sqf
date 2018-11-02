@@ -26,11 +26,3 @@ private _checkTagAction = [
 
 ["ACE_bodyBagObject", 0, ["ACE_MainActions"], _checkTagAction] call EFUNC(interact_menu,addActionToClass);
 */
-
-kat_aceCirculation_effectPainCA = {
-    private _effect = ppEffectCreate [chromAberration, 4205];
-    _effect ppEffectForceInNVG true;
-    _effect ppEffectAdjust [0, 0, false];
-    _effect ppEffectCommit 0;
-    _effect;
-};

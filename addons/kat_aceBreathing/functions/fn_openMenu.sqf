@@ -1,6 +1,6 @@
 /*
  * Author: Katalam
- * Open the pulsoximeter for the medic
+ * Open the pulsoxymeter for the medic
  *
  * Arguments:
  * 0: Target <OBJECT>
@@ -19,7 +19,7 @@ params ["_interactionTarget"];
 if (dialog || {isNull _interactionTarget}) exitWith {
     disableSerialization;
 
-    private _display = uiNamespace getVariable "kat_aceBreathing_pulsoximeter_menu";
+    private _display = uiNamespace getVariable "kat_aceBreathing_pulsoxymeter_menu";
     if (!isNil "_display") then {
         closeDialog 1000;
     };
@@ -27,6 +27,6 @@ if (dialog || {isNull _interactionTarget}) exitWith {
 
 // GVAR(INTERACTION_TARGET) = _interactionTarget; ?
 
-createDialog "kat_aceBreathing_pulsoximeter_menu";
+createDialog "kat_aceBreathing_pulsoxymeter_menu";
 
 true;
