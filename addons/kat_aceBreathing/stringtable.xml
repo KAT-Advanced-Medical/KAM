@@ -9,6 +9,10 @@
           <English>Pulsoxymeter</English>
           <German>Pulsoxymeter</German>
       </Key>
+      <Key ID="STR_kat_aceBreathing_Pulsoxymeter_Display_Remove">
+          <English>Remove Pulsoxymeter</English>
+          <German>Entferne Pulsoxymeter</German>
+      </Key>
       <Key ID="STR_kat_aceBreathing_Pulsoxymeter_Desc_Short">
           <English>Pulsoxymeter</English>
           <German>Pulsoxymeter</German>
@@ -20,6 +24,10 @@
       <Key ID="STR_kat_aceBreathing_placing">
           <English>Placing</English>
           <German>Anlegen</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_remove">
+          <English>Removing</English>
+          <German>Entferne</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_pulsoxy_NA">
           <English>Pulsoxymeter already connected</English>

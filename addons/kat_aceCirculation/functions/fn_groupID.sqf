@@ -16,11 +16,11 @@
 
 params ["_unit"];
 
-_groupID = groupId (group _unit);
+private _groupID = groupId (group _unit);
 
 if (_unit getVariable ["kat_aceCirculation_loadout", nil] isEqualType "") exitWith {
-_loadout = _unit getVariable "kat_aceCirculation_loadout";
+private _loadout = _unit getVariable "kat_aceCirculation_loadout";
   format ["%1: %2", _groupID, _loadout];
 };
-_loadout = getText (configFile >> "cfgVehicles" >> typeOf _unit >> "displayName");
+private _loadout = getText (configFile >> "cfgVehicles" >> typeOf _unit >> "displayName");
 format ["%1: %2", _groupID, _loadout];

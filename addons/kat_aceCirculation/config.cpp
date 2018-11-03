@@ -109,7 +109,6 @@ class cfgVehicles {
       displayName= "$STR_KAT_aceCirculation_Painkillers_Display";
       author = "Katalam";
       vehicleClass = "Items";
-      //editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Painkillers_F.jpg";
       class TransportItems {
           MACRO_ADDITEM(KAT_Painkillers,1);
       };
