@@ -9,12 +9,11 @@
  * None
  *
  * Example:
- * [bob] call kat_aceBreathing_fnc_init
+ * [cursorTarget] call kat_aceExposure_fnc_init
  *
  * Public: No
  */
 
 params ["_unit"];
 
-_unit setVariable ["kat_aceBreathing_pulsoxymeter", false, true];
-//_unit setVariable ["ace_medical_airwayStatus", 100, true];
+_unit setVariable ["kat_aceExposure_X", "X", true];

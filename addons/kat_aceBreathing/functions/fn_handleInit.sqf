@@ -16,4 +16,5 @@
 
 params ["_unit"];
 
+[{_unit getVariable ["ace_medical_airwayStatus", 100] > 70}] call ace_medical_fnc_addUnconsciousCondition;
 _unit call kat_aceBreathing_fnc_init;

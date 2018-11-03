@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_unit", "_selectionName", "_amountOfDamage"];
+params ["_unit", "", "_amountOfDamage"];
 
 if !(kat_aceAirway_enable) exitWith {};
 

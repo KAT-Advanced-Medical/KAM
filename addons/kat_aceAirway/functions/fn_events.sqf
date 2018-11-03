@@ -14,6 +14,8 @@
  * Public: No
  */
 
+if !(kat_aceAirway_enable) exitWith {};
+
 ["treatmentLarynx", {_this call kat_aceAirway_fnc_treatmentAdvanced_larynxLocal}] call CBA_fnc_addEventHandler;
 ["treatmentAirway", {_this call kat_aceAirway_fnc_treatmentAdvanced_airwayLocal}] call CBA_fnc_addEventHandler;
 ["treatmentGuedel", {_this call kat_aceAirway_fnc_treatmentAdvanced_guedelLocal}] call CBA_fnc_addEventHandler;
@@ -29,9 +31,9 @@
   };
 }] call CBA_fnc_addEventHandler;
 
-["deathTimer", {_this call kat_aceAirway_fnc_handleTimer}] call CBA_fnc_addEventHandler;
+["deathTimerA", {_this call kat_aceAirway_fnc_handleTimer}] call CBA_fnc_addEventHandler;
 ["ace_treatmentSucceded",{
- 	params ["_caller", "_target", "_selectionName", "_className"];
+ 	params ["", "_target", "", "_className"];
  	if (toUpper _className isEqualTo "PERSONALAIDKIT" && local _target) exitWith {
  		_target call kat_aceAirway_fnc_init;
  	};

@@ -34,8 +34,8 @@
           <German>Pulsoxymeter bereits vorhanden</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_pulsoxy_Log">
-          <English>Pulsoxymeter: Heart Rate: %1</English>
-          <German>Pulsoxymeter: Puls: %1</German>
+          <English>Pulsoxymeter: Heart Rate: %1 SpO2: %2 &percnt;</English>
+          <German>Pulsoxymeter: Puls: %1 SpO2: %2 &percnt;</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_pulsoxy_Log_2">
           <English>%1 connected Pulsoxymeter</English>

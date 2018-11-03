@@ -257,16 +257,6 @@ class Man;
           statement = "[_player, _target, 'leg_r', 'BloodIV_AB'] call ace_medical_fnc_treatment";
         };
       };
-/*      class ACE_SelfActions {
-          class ACE_Equipment {
-              class ACE_CheckDogtags {
-                  displayName = "$STR_ACE_Dogtags_checkItem";
-                  condition = "true";
-                  statement = "[_player, _target] call ace_dogtags_fnc_checkDogtag";
-                  exceptions[] = {"isNotSwimming"};
-              };
-          };
-      };*/
      };
    };
 };

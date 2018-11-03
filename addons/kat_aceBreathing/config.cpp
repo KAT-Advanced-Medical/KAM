@@ -12,6 +12,7 @@ class CfgPatches
         requiredVersion = 1.80;
         requiredAddons[] = {
 			"ace_medical",
+      "kat_aceAirway",
       "cba_settings"
 		};
 		version = "0.5";
@@ -33,8 +34,9 @@ class CfgFunctions {
         class canPulsoxymeter{};
         class events{};
         class handleInit{};
+        class handleTimer{};
+        class handleTimerAlive{};
         class init{};
-        class openMenu{};
         class registerSettings{};
         class treatmentAdvanced_pulsoxymeter{};
         class treatmentAdvanced_pulsoxymeterLocal{};
@@ -199,7 +201,7 @@ class ACE_Medical_Actions {
     class Pulsoxymeter {
         displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display;
         displayNameProgress = $STR_kat_aceBreathing_placing;
-        category = "advanced";
+        category = "examine";
         treatmentLocations[] = {"All"};
         allowedSelections[] = {"hand_l", "hand_r"};
         allowSelfTreatment = 0;
@@ -211,7 +213,7 @@ class ACE_Medical_Actions {
         callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pulsoxymeter";
         callbackFailure = "";
         callbackProgress = "";
-        itemConsumed = 0;
+        itemConsumed = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
@@ -224,7 +226,7 @@ class ACE_Medical_Actions {
     class RemovePulsoxymeter {
         displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display_Remove;
         displayNameProgress = $STR_kat_aceBreathing_remove;
-        category = "advanced";
+        category = "examine";
         treatmentLocations[] = {"All"};
         allowedSelections[] = {"hand_l", "hand_r"};
         allowSelfTreatment = 0;

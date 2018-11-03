@@ -17,6 +17,5 @@
 
 params ["_target"];
 
-if !(missionNamespace getVariable 'kat_aceBreathing_enable') exitWith {false};
 if (_target getVariable ["kat_aceBreathing_pulsoxymeter", false]) exitWith {true};
 false;
