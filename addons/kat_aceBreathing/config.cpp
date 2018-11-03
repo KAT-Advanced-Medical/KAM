@@ -1,5 +1,4 @@
 #include "BIS_AddonInfo.hpp"
-#include "gui.hpp"
 class CfgPatches
 {
     class kat_aceBreathing
