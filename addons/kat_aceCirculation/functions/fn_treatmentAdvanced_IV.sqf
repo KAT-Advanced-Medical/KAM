@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [player, 'Blood_IV_A'] call kat_aceCirculation_fnc_treatmentAdvanced_IV
+ * [cursorTarget, 'Blood_IV_A'] call kat_aceCirculation_fnc_treatmentAdvanced_IV
  *
  * Public: No
  */

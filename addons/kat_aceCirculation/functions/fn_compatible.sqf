@@ -17,7 +17,7 @@
 
 params ["_unit", "_className"];
 
-_bloodType = _unit getVariable ["kat_aceCirculation_bloodtype", "O"];
-_compatibility = getArray (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "IV" >> _className >> "compatibility");
+private _bloodType = _unit getVariable ["kat_aceCirculation_bloodtype", "O"];
+private _compatibility = getArray (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "IV" >> _className >> "compatibility");
 if (_bloodType in _compatibility) exitWith {true};
 false;

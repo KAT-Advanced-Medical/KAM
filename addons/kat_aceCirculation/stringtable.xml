@@ -93,5 +93,13 @@
         <English>Injecting</English>
         <German>Injiziere</German>
       </Key>
+      <Key ID="STR_KAT_aceCirculation_DogTag">
+        <English>Check Dogtags</English>
+        <German>Überprüfe Hundemarke</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_DogTag_Action">
+        <English>Checking</English>
+        <German>Überprüfe</German>
+      </Key>
 		</Package>
 </Project>

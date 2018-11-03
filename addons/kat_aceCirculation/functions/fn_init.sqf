@@ -19,7 +19,7 @@ params ["_unit"];
 //#define BLOOD_TYPES ["O POS", "O NEG", "A POS", "A NEG", "B POS", "B NEG", "AB POS", "AB NEG"]
 #define BLOOD_TYPES ["O", "A", "B", "AB"]
 
-_type = BLOOD_TYPES select random(3);
+private _type = BLOOD_TYPES select random(3);
 
 _unit setVariable ["kat_aceCirculation_bloodtype", _type, true];
 _unit setVariable ["kat_aceCirculation_IV_counts", 0, true];

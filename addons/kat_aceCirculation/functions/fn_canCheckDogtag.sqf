@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["", "_target"];
 
 if (isNull _target) exitWith {false};
 

@@ -12,6 +12,7 @@ class CfgPatches
         requiredVersion = 1.80;
         requiredAddons[] = {
 			"ace_medical",
+      "ace_dogtags",
       "cba_settings"
 		};
 		version = "0.5";
@@ -31,11 +32,14 @@ class CfgFunctions {
     file = "kat_aceCirculation\functions";
 		class functions {
         class bloodType{};
+        class compatible{};
         class events{};
         class groupID{};
         class handleInit{};
+        class handleTreatment{};
         class init{};
         class registerSettings{};
+        class treatmentAdvanced_IV{};
 		};
 	};
   class kat_aceDogtag {
@@ -128,23 +132,11 @@ class Man;
 	class CAManBase: Man {
 		class ACE_Actions {
       class ACE_Dogtag {
-          displayName = "$STR_ACE_Dogtags_itemName";
-          condition = "[_player,_target] call ace_dogtags_fnc_canTakeDogtag";
-          statement = "";
-          exceptions[] = {"isNotSwimming", "isNotInside"};
-          showDisabled = 0;
-          distance = 1.75;
-          //icon = QPATHTOF(data\dogtag_icon_ca.paa);
-          selection = "neck";
-          class ACE_CheckDogtag {
-            displayName = "$STR_ACE_Dogtags_checkDogtag";
-            condition = "[_player,_target] call ace_dogtags_fnc_canTakeDogtag";
-            statement = "[_player,_target] call ace_dogtags_fnc_checkDogtag";
-            exceptions[] = {"isNotSwimming", "isNotInside"};
-            showDisabled = 0;
-            //icon = QPATHTOF(data\dogtag_icon_ca.paa);
-          };
-			};
+        condition = "[_player, _target] call ace_dogtags_fnc_canCheckDogtag";
+      };
+      class ACE_Head {
+        class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
+      };
       class ACE_ArmLeft {
         class FieldDressing;
         class Morphine;
@@ -265,17 +257,16 @@ class Man;
           statement = "[_player, _target, 'leg_r', 'BloodIV_AB'] call ace_medical_fnc_treatment";
         };
       };
-      class ACE_SelfActions {
+/*      class ACE_SelfActions {
           class ACE_Equipment {
               class ACE_CheckDogtags {
                   displayName = "$STR_ACE_Dogtags_checkItem";
                   condition = "true";
-                  statement = "";
-                  exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
-                  insertChildren = "_player call ace_dogtags_fnc_addDogtagActions";
+                  statement = "[_player, _target] call ace_dogtags_fnc_checkDogtag";
+                  exceptions[] = {"isNotSwimming"};
               };
           };
-      };
+      };*/
      };
    };
 };
@@ -291,14 +282,17 @@ class ACE_Medical_Actions {
     };
     class CheckPulse;
     class CheckDogtags: checkPulse {
-      displayName = "Check Dogtags";
-      displayNameProgress = "Checking";
+      displayName = $STR_KAT_aceCirculation_DogTag;
+      displayNameProgress = $STR_KAT_aceCirculation_DogTag_Action;
       treatmentTime = 2;
       allowedSelections[] = {"body"};
       allowSelfTreatment = 1;
       callbackSuccess = "[_player, _target] call ace_dogtags_fnc_checkDogtag";
       condition = "true";
     };
+    //class CheckBloodPressure {
+    //  allowedSelections[] = {"hand_l", "hand_r"};
+    //};
     class BloodIV;
     class BloodIV_O: BloodIV {
       displayName = $STR_KAT_aceCirculation_Action_BloodIV_O
