@@ -99,11 +99,11 @@
       </Key>
       <Key ID="STR_kat_aceAirway_turnaround">
           <English>Head turning</English>
-          <German>Kopf umdrehen</German>
+          <German>Kopf zur Seite drehen</German>
       </Key>
       <Key ID="STR_kat_aceAirway_turnaround_action">
           <English>Turning the head</English>
-          <German>Kopf umdrehen</German>
+          <German>Kopf zur Seite drehen</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Accuvac_NA">
           <English>Vacuum not needed</English>
