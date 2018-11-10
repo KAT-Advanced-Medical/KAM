@@ -31,18 +31,15 @@ if ((random 100 < 5) && (_className isEqualTo "Guedeltubus")) exitWith {
 _target setVariable ["kat_aceAirway_airway", true, true];
 _target setVariable ["ace_medical_airwayCollapsed", false, true];
 
-switch (_className) do {
-  case "Larynxtubus": {
-    private _Item = localize "STR_kat_aceAirway_Larynx_Display";
-    _target setVariable ["kat_aceAirway_airway_item", "larynx", true];
-  };
-  case "Guedeltubus": {
-    private _Item = localize "STR_kat_aceAirway_Guedel_Display";
-    _target setVariable ["kat_aceAirway_airway_item", "guedel", true];
-  };
-  default {};
+private _item = localize "STR_kat_aceAirway_Larynx_Display";
+_target setVariable ["kat_aceAirway_airway_item", "larynx", true];
+
+if (_className isEqualTo "Guedeltubus") then {
+  _item = localize "STR_kat_aceAirway_Guedel_Display";
+  _target setVariable ["kat_aceAirway_airway_item", "guedel", true];
 };
-[_target, _Item] call ace_medical_fnc_addToTriageCard;
-[_target, "quick_view", localize "STR_kat_aceAirway_airway_log", [[_player] call ace_common_fnc_getName, _Item]] call ace_medical_fnc_addToLog;
+
+[_target, _item] call ace_medical_fnc_addToTriageCard;
+[_target, "quick_view", localize "STR_kat_aceAirway_airway_log", [[_caller] call ace_common_fnc_getName, _item]] call ace_medical_fnc_addToLog;
 
 true;
