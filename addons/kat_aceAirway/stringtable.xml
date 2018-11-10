@@ -157,5 +157,13 @@
           <English>Medical scution</English>
           <German>Medizinisches Absaugen</German>
       </Key>
+      <Key ID="STR_kat_aceAirway_hint_name">
+          <English>Treatment</English>
+          <German>Behandlung</German>
+      </Key>
+      <Key ID="STR_kat_aceAirway_hint_desc">
+          <English>When a patient enters the unconscious state, there are two things that can happen. First of all the airway can collapse. In medical sense this mean, the airway can be blocked from your tongue muscle, 'cause of the missing muscle tone. For example in real life, this will happen to nearly every unconscious person lying on the back. The second thing that can happen is the the airway occluded state. When a patient is lying on the back and the body puke, it will not leave the mouth space. It will stay in there and can block the airway too. The right treatment here, is to remove this vomit. In real life, this will happen sometimes, not quiet often.</English>
+          <German>Wenn eine Person bewusstlos wird, gibt es zwei Dinge die passieren können. Erstens die Atemwege können verlegt sein. Durch de nnicht mehr vorhandenen Muskeltonus kann der zungengrund den Luftweg blockieren. Im echten Leben kann man davon ausgehen das wenn ein Patient bewusstlos ist und auf dem Rücken liegt, das er eine Atemwegsverlegung hat. Zweitens, es ist möglich das der Patient erbricht und dann blockieren flüssige und feste Stoffe die Atemwege und dann sind diese "verstopft". Im echten Leben passiert das nicht besonders häufig</German>
+      </Key>
 		</Package>
 </Project>
