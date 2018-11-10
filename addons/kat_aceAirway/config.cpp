@@ -42,6 +42,15 @@ class CfgMods {
     };
 };
 
+class CfgSounds {
+  sounds[] = {};
+  class KAT_Puke {
+      name = "KAT_Puke";
+      sound[] = {"kat_aceAirway\sounds\Puking.wav", db + 2, 1, 15};
+      titles[]	= {};
+  };
+};
+
 class CfgFunctions {
 	class kat_aceAirway {
     file = "kat_aceAirway\functions";
