@@ -19,12 +19,12 @@
 params ["_caller", "_target", "_className"];
 
 if (_target getVariable ["kat_aceAirway_airway", false]) exitWith {
-   _output = localize "STR_kat_aceAirway_Airway_already";
+   private _output = localize "STR_kat_aceAirway_Airway_already";
    [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
    false;
 };
 if ((random 100 < 5) && (_className isEqualTo "Guedeltubus")) exitWith {
-  _output = localize "STR_kat_aceAirway_Airway_NA";
+  private _output = localize "STR_kat_aceAirway_Airway_NA";
   [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
 };
 
@@ -33,11 +33,11 @@ _target setVariable ["ace_medical_airwayCollapsed", false, true];
 
 switch (_className) do {
   case "Larynxtubus": {
-    _Item = localize "STR_kat_aceAirway_Larynx_Display";
+    private _Item = localize "STR_kat_aceAirway_Larynx_Display";
     _target setVariable ["kat_aceAirway_airway_item", "larynx", true];
   };
   case "Guedeltubus": {
-    _Item = localize "STR_kat_aceAirway_Guedel_Display";
+    private _Item = localize "STR_kat_aceAirway_Guedel_Display";
     _target setVariable ["kat_aceAirway_airway_item", "guedel", true];
   };
   default {};

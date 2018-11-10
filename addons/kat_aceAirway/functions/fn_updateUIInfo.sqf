@@ -40,9 +40,9 @@ if ((_target getVariable ["ace_medical_tourniquets", [0, 0, 0, 0, 0, 0]] select 
 
 // EDIT by Katalam
 if (_target getVariable ["kat_aceAirway_airway", false] && _selectionN isEqualTo 0) then {
-    _a = _target getVariable ["kat_aceAirway_airway_item", ""];
+    private _a = _target getVariable ["kat_aceAirway_airway_item", ""];
     if !(_a isEqualTo "") then {
-      _text = format ["STR_kat_aceAirway_%1_Display", _a];
+      private _text = format ["STR_kat_aceAirway_%1_Display", _a];
       _genericMessages pushback [localize _text, [0.1, 1, 1, 1]];
     };
 };
