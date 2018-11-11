@@ -79,6 +79,7 @@ class CfgFunctions {
         class handleDamage_airway{};
         class handleDie{};
         class handleInit{};
+        class handlePuking{};
         class handleTimer{};
         class init{};
         class registerSettings{};

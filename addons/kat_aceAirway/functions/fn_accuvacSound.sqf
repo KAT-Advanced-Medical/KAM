@@ -1,6 +1,6 @@
 /*
  * Author: Katalam
- * Plays a sound
+ * Plays a sound 2 times on the target position.
  *
  * Arguments:
  * 0: Unit <OBJECT>

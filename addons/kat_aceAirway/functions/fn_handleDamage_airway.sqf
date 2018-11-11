@@ -28,10 +28,4 @@ if (_amountOfDamage > 0.5) then {
       _unit setVariable ["ace_medical_airwayCollapsed", true, true];
     };
   };
-  if (random(100) <= kat_aceAirway_probability_occluded) then {
-    if !(_unit getVariable ["ace_medical_airwayOccluded", false] && (_unit getVariable ["kat_aceAirway_airway_item", ""] isEqualTo "larynx")) then {
-      _unit setVariable ["ace_medical_airwayOccluded", true, true];
-      playsound3D ["kat_aceAirway\sounds\Puking.wav", _unit, false, getPosASL _unit, 8, 1, 15];
-    };
-  };
 };
