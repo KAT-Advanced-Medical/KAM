@@ -23,3 +23,5 @@ private _type = BLOOD_TYPES select random(3);
 
 _unit setVariable ["kat_aceCirculation_bloodtype", _type, true];
 _unit setVariable ["kat_aceCirculation_IV_counts", 0, true];
+_unit setVariable ["kat_aceCirculation_X", false, true];
+_unit setVariable ["kat_aceCirculation_use", false, true];

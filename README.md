@@ -13,6 +13,9 @@ Feature Overview
   - [ ] Oxygen saturation
 - aceCirculation
   - [x] Blood Groups
+  - [X] Painkillers as autoinjector
+  - [ ] Painkillers
+  - [X] Bigger AED with monitoring
   - [ ] Drugs with access?
 - aceDisability
   - [x] Cut of clothes

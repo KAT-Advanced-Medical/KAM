@@ -13,10 +13,11 @@ class CfgPatches
         requiredAddons[] = {
 			"ace_medical",
       "ace_dogtags",
+      "adv_aceCPR",
       "cba_settings"
 		};
-		version = "0.5";
-		versionStr = "0.5";
+		version = "0.6";
+		versionStr = "0.6";
 		author = "[SeL] Katalam";
 		authorUrl = "http://spezialeinheit-luchs.de/";
     };
@@ -40,6 +41,7 @@ class CfgFunctions {
         class init{};
         class registerSettings{};
         class treatmentAdvanced_IV{};
+        class treatmentAdvanced_X{};
 		};
 	};
   class kat_aceDogtag {
@@ -78,6 +80,7 @@ class cfgWeapons {
 	class ACE_ItemCore;
 	class CBA_MiscItem_ItemInfo;
   class ACE_bloodIV;
+  class adv_aceCPR_AED;
   class ACE_bloodIV_O: ACE_bloodIV {
     displayName = $STR_KAT_aceCirculation_BloodIV_O;
   };
@@ -102,11 +105,21 @@ class cfgWeapons {
         mass = 1;
     };
   };
+  class KAT_X_AED: adv_aceCPR_AED {
+    scope = 2;
+    displayName = $STR_KAT_aceCirculation_X_Display;
+    picture = "\kat_acecirculation\images\x-series.paa";
+    model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
+    descriptionShort = $STR_KAT_aceCirculation_X_Desc;
+    descriptionUse = $STR_KAT_aceCirculation_X_Desc;
+    class ItemInfo: CBA_MiscItem_ItemInfo {
+      mass = 40;
+    };
+  };
 };
 
 class cfgVehicles {
 	class Item_Base_F;
-
   class KAT_PainkillersItem: Item_Base_F {
       scope = 2;
       scopeCurator = 2;
@@ -117,6 +130,16 @@ class cfgVehicles {
           MACRO_ADDITEM(KAT_Painkillers,1);
       };
   };
+  class adv_aceCPR_AEDItem;
+  class KAT_X_AEDItem: adv_aceCPR_AEDItem {
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "$STR_KAT_aceCirculation_X_Display";
+    author = "[SeL] Katalam";
+    class TransportItems {
+        MACRO_ADDITEM(KAT_X_AED,1);
+    };
+	};
 
   class NATO_Box_Base;
 	class ACE_medicalSupplyCrate: NATO_Box_Base {
@@ -125,6 +148,7 @@ class cfgVehicles {
 	class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
 		class TransportItems: TransportItems {
 			MACRO_ADDITEM(KAT_Painkillers,20);
+      MACRO_ADDITEM(KAT_X_AED,1);
 		};
 	};
 
@@ -136,6 +160,23 @@ class Man;
       };
       class ACE_Head {
         class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
+      };
+      class ACE_Torso {
+  			class CPR;
+  			class KAT_X_AED: CPR {
+  				displayName = $STR_KAT_aceCirculation_X_Action_Use;
+  				condition = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_canTreatCached";
+  				statement = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_treatment";
+  				exceptions[] = {""};
+  				icon = "\adv_aceCPR\ui\defib_action.paa";
+  			};
+        class KAT_R_X_AED: CPR {
+          displayName = $STR_KAT_aceCirculation_X_Action_Remove;
+          condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_treatment";
+          exceptions[] = {""};
+          icon = "\adv_aceCPR\ui\defib_action.paa";
+        };
       };
       class ACE_ArmLeft {
         class FieldDressing;
@@ -257,8 +298,152 @@ class Man;
           statement = "[_player, _target, 'leg_r', 'BloodIV_AB'] call ace_medical_fnc_treatment";
         };
       };
-     };
-   };
+      class ACE_MainActions {
+        class Medical {
+          class ACE_Head {
+            class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
+          };
+          class ACE_Torso {
+      			class CPR;
+            class KAT_X_AED: CPR {
+      				displayName = $STR_KAT_aceCirculation_X_Action_Use;
+      				condition = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_canTreatCached";
+      				statement = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_treatment";
+      				exceptions[] = {""};
+      				icon = "\adv_aceCPR\ui\defib_action.paa";
+      			};
+            class KAT_R_X_AED: CPR {
+              displayName = $STR_KAT_aceCirculation_X_Action_Remove;
+              condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_treatment";
+              exceptions[] = {""};
+              icon = "\adv_aceCPR\ui\defib_action.paa";
+            };
+          };
+          class ACE_ArmLeft {
+            class FieldDressing;
+            class Morphine;
+            class Painkillers: Morphine {
+              displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
+              condition = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV;
+            class BloodIV_O: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
+              condition = "[_player, _target, 'hand_l', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_l', 'BloodIV_O'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_A: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
+              condition = "[_player, _target, 'hand_l', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_l', 'BloodIV_A'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_B: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
+              condition = "[_player, _target, 'hand_l', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_l', 'BloodIV_B'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_AB: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
+              condition = "[_player, _target, 'hand_l', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_l', 'BloodIV_AB'] call ace_medical_fnc_treatment";
+            };
+          };
+          class ACE_ArmRight {
+            class FieldDressing;
+            class Morphine;
+            class Painkillers: Morphine {
+              displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
+              condition = "[_player, _target, 'hand_r', 'Painkillers'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_r', 'Painkillers'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV;
+            class BloodIV_O: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
+              condition = "[_player, _target, 'hand_r', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_r', 'BloodIV_O'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_A: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
+              condition = "[_player, _target, 'hand_r', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_r', 'BloodIV_A'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_B: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
+              condition = "[_player, _target, 'hand_r', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_r', 'BloodIV_B'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_AB: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
+              condition = "[_player, _target, 'hand_r', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_r', 'BloodIV_AB'] call ace_medical_fnc_treatment";
+            };
+          };
+          class ACE_LegLeft {
+            class FieldDressing;
+            class Morphine;
+            class Painkillers: Morphine {
+              displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
+              condition = "[_player, _target, 'leg_l', 'Painkillers'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'leg_l', 'Painkillers'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV;
+            class BloodIV_O: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
+              condition = "[_player, _target, 'leg_l', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'leg_l', 'BloodIV_O'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_A: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
+              condition = "[_player, _target, 'leg_l', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'leg_l', 'BloodIV_A'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_B: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
+              condition = "[_player, _target, 'leg_l', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'leg_l', 'BloodIV_B'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_AB: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
+              condition = "[_player, _target, 'leg_l', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'leg_l', 'BloodIV_AB'] call ace_medical_fnc_treatment";
+            };
+          };
+          class ACE_LegRight {
+            class FieldDressing;
+            class Morphine;
+            class Painkillers: Morphine {
+              displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
+              condition = "[_player, _target, 'leg_r', 'Painkillers'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'leg_r', 'Painkillers'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV;
+            class BloodIV_O: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
+              condition = "[_player, _target, 'leg_r', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'leg_r', 'BloodIV_O'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_A: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
+              condition = "[_player, _target, 'leg_r', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'leg_r', 'BloodIV_A'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_B: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
+              condition = "[_player, _target, 'leg_r', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'leg_r', 'BloodIV_B'] call ace_medical_fnc_treatment";
+            };
+            class BloodIV_AB: BloodIV {
+              displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
+              condition = "[_player, _target, 'leg_r', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'leg_r', 'BloodIV_AB'] call ace_medical_fnc_treatment";
+            };
+          };
+        };
+      };
+    };
+  };
 };
 
 class ACE_Medical_Actions {
@@ -280,9 +465,6 @@ class ACE_Medical_Actions {
       callbackSuccess = "[_player, _target] call ace_dogtags_fnc_checkDogtag";
       condition = "true";
     };
-    //class CheckBloodPressure {
-    //  allowedSelections[] = {"hand_l", "hand_r"};
-    //};
     class BloodIV;
     class BloodIV_O: BloodIV {
       displayName = $STR_KAT_aceCirculation_Action_BloodIV_O
@@ -303,6 +485,27 @@ class ACE_Medical_Actions {
       displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB
       items[] = {"ACE_bloodIV_AB"};
       callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
+    };
+    class CPR;
+    class Defibrillator: CPR {
+      items[] = {{"adv_aceCPR_AED", "KAT_X_AED"}};
+    };
+    class X_Defibrillator: CPR {
+      displayName = $STR_KAT_aceCirculation_X_Action_Use;
+      displayNameProgress = $STR_KAT_aceCirculation_X_Action_Progress;
+      items[] = {"KAT_X_AED"};
+      condition = "!(_player getVariable ['kat_aceCirculation_use',false]) && missionNamespace getVariable ['kat_aceCirculation_enable',true]";
+      treatmentTime = 2;
+      requiredMedic = 1;
+      callbackSuccess = "[_player, _target] call kat_aceCirculation_fnc_treatmentAdvanced_X";
+      animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
+    };
+    class Remove_X_Defibrillator: X_Defibrillator {
+      displayName = $STR_KAT_aceCirculation_X_Action_Remove;
+      items[] = {};
+      condition = "_target getVariable ['kat_aceCirculation_X', true]";
+      treatmentTime = 2;
+      callbackSuccess = "_target setVariable ['kat_aceCirculation_X', false, true]; _player setVariable ['kat_aceCirculation_use', false, true]";
     };
 	};
   class Treatment {

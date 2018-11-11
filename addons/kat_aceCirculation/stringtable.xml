@@ -101,5 +101,29 @@
         <English>Checking</English>
         <German>Überprüfe</German>
       </Key>
+      <Key ID="STR_KAT_aceCirculation_X_already">
+        <English>Already one connected</English>
+        <German>Bereits einer verbunden</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_X_Display">
+        <English>AED X-Series</English>
+        <German>AED X-Series</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_X_Desc">
+        <English>Used to monitor vital values and to resuscitate persons</English>
+        <German>Überwacht Vitalwerte und kann Personen wiederbeleben</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_X_Action_Use">
+        <English>Monitor vitals</English>
+        <German>Überwache Werte</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_X_Action_Remove">
+        <English>Remove monitoring</English>
+        <German>Entferne Überwachung</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_X_Action_Progress">
+        <English>Connecting</English>
+        <German>Anschließen</German>
+      </Key>
 		</Package>
 </Project>
