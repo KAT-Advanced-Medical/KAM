@@ -4,8 +4,6 @@ License under LICENSE
 
 Feature Overview
 
-*most of them are just planned*
-
 - aceAirway
   - [x] Airwaymanagement for unconscious patients
     - [x] Head overstretching

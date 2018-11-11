@@ -364,11 +364,11 @@ class ACE_Medical_Actions {
     };
     class Accuvac: larynxtubus {
       displayName = "Accuvac";
-      treatmentTime = 10;
+      treatmentTime = 12;
       items[] = {"KAT_accuvac"};
       itemConsumed = 0;
       callbackSuccess = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_accuvac";
-      callbackProgress = "[_player, _target] call kat_aceAirway_fnc_accuvacSound";
+      callbackProgress = "_this call kat_aceAirway_fnc_accuvacSound";
     };
     class Overstretch: larynxtubus {
       displayName = "$STR_kat_aceAirway_overstretch";
