@@ -40,3 +40,18 @@ _player setVariable ["kat_aceCirculation_use", true, true];
 	};
 	[_target, "quick_view", _string, [_target getVariable ["ace_medical_heartRate", 80], (_target getVariable ["ace_medical_bloodPressure", [80,120]] select 1), (_target getVariable ["ace_medical_bloodPressure", [80,120]] select 0)]] call ace_medical_fnc_addToLog;
 }, 1, [_string, _target]] call CBA_fnc_addPerFrameHandler;
+
+[{
+  params ["_player", "_target"];
+  (_target distance2D _player) > 50;
+}, {
+  params ["_player", "_target"];
+  _target setVariable ["kat_aceCirculation_X", false, true];
+  private _output = localize "STR_KAT_aceCirculation_X_Action_Remove";
+  [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
+}, [_player, _target], 300, {
+  params ["_player", "_target"];
+  _target setVariable ["kat_aceCirculation_X", false, true];
+  private _output = localize "STR_KAT_aceCirculation_X_Action_Remove";
+  [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
+}] call CBA_fnc_waitUntilAndExecute;

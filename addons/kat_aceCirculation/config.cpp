@@ -168,14 +168,14 @@ class Man;
   				condition = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_canTreatCached";
   				statement = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_treatment";
   				exceptions[] = {""};
-  				icon = "\adv_aceCPR\ui\defib_action.paa";
+  				icon = "kat_aceCirculation\images\X_Series-Device_W.paa";
   			};
         class KAT_R_X_AED: CPR {
           displayName = $STR_KAT_aceCirculation_X_Action_Remove;
           condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_treatment";
           exceptions[] = {""};
-          icon = "\adv_aceCPR\ui\defib_action.paa";
+          icon = "kat_aceCirculation\images\X_Series-Device_W.paa";
         };
       };
       class ACE_ArmLeft {
@@ -310,14 +310,14 @@ class Man;
       				condition = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_canTreatCached";
       				statement = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_treatment";
       				exceptions[] = {""};
-      				icon = "\adv_aceCPR\ui\defib_action.paa";
+      				icon = "kat_aceCirculation\images\X_Series-Device_W.paa";
       			};
             class KAT_R_X_AED: CPR {
               displayName = $STR_KAT_aceCirculation_X_Action_Remove;
               condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_canTreatCached";
               statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_treatment";
               exceptions[] = {""};
-              icon = "\adv_aceCPR\ui\defib_action.paa";
+              icon = "kat_aceCirculation\images\X_Series-Device_W.paa";
             };
           };
           class ACE_ArmLeft {
