@@ -32,6 +32,10 @@ if (_target getVariable ["kat_aceCirculation_X", false]) exitWith {
 _target setVariable ["kat_aceCirculation_X", true, true];
 _player setVariable ["kat_aceCirculation_use", true, true];
 
+if (_target getVariable ["ace_medical_heartRate", 80] > 0) then {
+  playsound3D ["kat_aceCirculation\sounds\noshock.wav", _target, false, getPosASL _target, 8, 1, 15];
+};
+
 [{
   params ["_args", "_idPFH"];
   _args params ["_string", "_target"];
@@ -55,3 +59,19 @@ _player setVariable ["kat_aceCirculation_use", true, true];
   private _output = localize "STR_KAT_aceCirculation_X_Action_Remove";
   [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 }] call CBA_fnc_waitUntilAndExecute;
+
+[_target] spawn {
+  params ["_target"];
+  while {_target getVariable ["kat_aceCirculation_X", false]} do {
+    private _hr = _target getVariable ["ace_medical_heartRate", 80];
+    if (_hr <= 0) then {
+      playsound3D ["kat_aceCirculation\sounds\noheartrate.wav", _target, false, getPosASL _target, 5, 1, 15];
+      sleep 1.48;
+    } else {
+      private _sleep = 60 / _hr;
+      playsound3D ["kat_aceCirculation\sounds\heartrate.wav", _target, false, getPosASL _target, 8, 1, 15];
+      sleep 0.25;
+      sleep _sleep;
+    };
+  };
+};
