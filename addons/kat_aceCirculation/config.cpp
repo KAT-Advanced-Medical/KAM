@@ -75,6 +75,24 @@ class Extended_PostInit_EventHandlers {
   };
 };
 
+class CfgSounds {
+  sounds[] = {};
+  class KAT_HeartRate {
+      name = "KAT_HeartRate";
+      sound[] = {"kat_aceCirculation\sounds\heartrate.wav", db + 2, 1, 15};
+      titles[]	= {};
+  };
+  class KAT_NoHeartRate {
+      name = "KAT_NoHeartRate";
+      sound[] = {"kat_aceCirculation\sounds\noheartrate.wav", db + 2, 1, 15};
+      titles[]	= {};
+  };
+  class KAT_NoShock {
+      name = "KAT_NoShock";
+      sound[] = {"kat_aceCirculation\sounds\noshock.wav", db + 2, 1, 15};
+      titles[]	= {};
+  };
+};
 
 class cfgWeapons {
 	class ACE_ItemCore;
@@ -186,27 +204,7 @@ class Man;
           condition = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_treatment";
         };
-        class BloodIV;
-        class BloodIV_O: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
-          condition = "[_player, _target, 'hand_l', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_l', 'BloodIV_O'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_A: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
-          condition = "[_player, _target, 'hand_l', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_l', 'BloodIV_A'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_B: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
-          condition = "[_player, _target, 'hand_l', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_l', 'BloodIV_B'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_AB: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
-          condition = "[_player, _target, 'hand_l', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_l', 'BloodIV_AB'] call ace_medical_fnc_treatment";
-        };
+        #include "Blood_ArmL.hpp"
       };
       class ACE_ArmRight {
         class FieldDressing;
@@ -216,27 +214,7 @@ class Man;
           condition = "[_player, _target, 'hand_r', 'Painkillers'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'hand_r', 'Painkillers'] call ace_medical_fnc_treatment";
         };
-        class BloodIV;
-        class BloodIV_O: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
-          condition = "[_player, _target, 'hand_r', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_r', 'BloodIV_O'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_A: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
-          condition = "[_player, _target, 'hand_r', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_r', 'BloodIV_A'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_B: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
-          condition = "[_player, _target, 'hand_r', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_r', 'BloodIV_B'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_AB: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
-          condition = "[_player, _target, 'hand_r', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_r', 'BloodIV_AB'] call ace_medical_fnc_treatment";
-        };
+        #include "Blood_ArmR.hpp"
       };
       class ACE_LegLeft {
         class FieldDressing;
@@ -246,27 +224,7 @@ class Man;
           condition = "[_player, _target, 'leg_l', 'Painkillers'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'leg_l', 'Painkillers'] call ace_medical_fnc_treatment";
         };
-        class BloodIV;
-        class BloodIV_O: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
-          condition = "[_player, _target, 'leg_l', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_l', 'BloodIV_O'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_A: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
-          condition = "[_player, _target, 'leg_l', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_l', 'BloodIV_A'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_B: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
-          condition = "[_player, _target, 'leg_l', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_l', 'BloodIV_B'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_AB: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
-          condition = "[_player, _target, 'leg_l', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_l', 'BloodIV_AB'] call ace_medical_fnc_treatment";
-        };
+        #include "Blood_LegL.hpp"
       };
       class ACE_LegRight {
         class FieldDressing;
@@ -276,27 +234,7 @@ class Man;
           condition = "[_player, _target, 'leg_r', 'Painkillers'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'leg_r', 'Painkillers'] call ace_medical_fnc_treatment";
         };
-        class BloodIV;
-        class BloodIV_O: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
-          condition = "[_player, _target, 'leg_r', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_r', 'BloodIV_O'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_A: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
-          condition = "[_player, _target, 'leg_r', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_r', 'BloodIV_A'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_B: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
-          condition = "[_player, _target, 'leg_r', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_r', 'BloodIV_B'] call ace_medical_fnc_treatment";
-        };
-        class BloodIV_AB: BloodIV {
-          displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
-          condition = "[_player, _target, 'leg_r', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_r', 'BloodIV_AB'] call ace_medical_fnc_treatment";
-        };
+        #include "Blood_LegR.hpp"
       };
       class ACE_MainActions {
         class Medical {
@@ -328,27 +266,7 @@ class Man;
               condition = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_canTreatCached";
               statement = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_treatment";
             };
-            class BloodIV;
-            class BloodIV_O: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
-              condition = "[_player, _target, 'hand_l', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_l', 'BloodIV_O'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_A: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
-              condition = "[_player, _target, 'hand_l', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_l', 'BloodIV_A'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_B: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
-              condition = "[_player, _target, 'hand_l', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_l', 'BloodIV_B'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_AB: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
-              condition = "[_player, _target, 'hand_l', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_l', 'BloodIV_AB'] call ace_medical_fnc_treatment";
-            };
+            #include "Blood_ArmL.hpp"
           };
           class ACE_ArmRight {
             class FieldDressing;
@@ -358,27 +276,7 @@ class Man;
               condition = "[_player, _target, 'hand_r', 'Painkillers'] call ace_medical_fnc_canTreatCached";
               statement = "[_player, _target, 'hand_r', 'Painkillers'] call ace_medical_fnc_treatment";
             };
-            class BloodIV;
-            class BloodIV_O: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
-              condition = "[_player, _target, 'hand_r', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_r', 'BloodIV_O'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_A: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
-              condition = "[_player, _target, 'hand_r', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_r', 'BloodIV_A'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_B: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
-              condition = "[_player, _target, 'hand_r', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_r', 'BloodIV_B'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_AB: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
-              condition = "[_player, _target, 'hand_r', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_r', 'BloodIV_AB'] call ace_medical_fnc_treatment";
-            };
+            #include "Blood_ArmR.hpp"
           };
           class ACE_LegLeft {
             class FieldDressing;
@@ -388,27 +286,7 @@ class Man;
               condition = "[_player, _target, 'leg_l', 'Painkillers'] call ace_medical_fnc_canTreatCached";
               statement = "[_player, _target, 'leg_l', 'Painkillers'] call ace_medical_fnc_treatment";
             };
-            class BloodIV;
-            class BloodIV_O: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
-              condition = "[_player, _target, 'leg_l', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'leg_l', 'BloodIV_O'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_A: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
-              condition = "[_player, _target, 'leg_l', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'leg_l', 'BloodIV_A'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_B: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
-              condition = "[_player, _target, 'leg_l', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'leg_l', 'BloodIV_B'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_AB: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
-              condition = "[_player, _target, 'leg_l', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'leg_l', 'BloodIV_AB'] call ace_medical_fnc_treatment";
-            };
+            #include "Blood_LegL.hpp"
           };
           class ACE_LegRight {
             class FieldDressing;
@@ -418,27 +296,7 @@ class Man;
               condition = "[_player, _target, 'leg_r', 'Painkillers'] call ace_medical_fnc_canTreatCached";
               statement = "[_player, _target, 'leg_r', 'Painkillers'] call ace_medical_fnc_treatment";
             };
-            class BloodIV;
-            class BloodIV_O: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
-              condition = "[_player, _target, 'leg_r', 'BloodIV_O'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'leg_r', 'BloodIV_O'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_A: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
-              condition = "[_player, _target, 'leg_r', 'BloodIV_A'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'leg_r', 'BloodIV_A'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_B: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
-              condition = "[_player, _target, 'leg_r', 'BloodIV_B'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'leg_r', 'BloodIV_B'] call ace_medical_fnc_treatment";
-            };
-            class BloodIV_AB: BloodIV {
-              displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
-              condition = "[_player, _target, 'leg_r', 'BloodIV_AB'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'leg_r', 'BloodIV_AB'] call ace_medical_fnc_treatment";
-            };
+            #include "Blood_LegR.hpp"
           };
         };
       };
@@ -497,6 +355,7 @@ class ACE_Medical_Actions {
       condition = "!(_player getVariable ['kat_aceCirculation_use',false]) && missionNamespace getVariable ['kat_aceCirculation_enable',true]";
       treatmentTime = 2;
       requiredMedic = 1;
+      callbackProgress = "";
       callbackSuccess = "[_player, _target] call kat_aceCirculation_fnc_treatmentAdvanced_X";
       animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
     };
@@ -505,6 +364,7 @@ class ACE_Medical_Actions {
       items[] = {};
       condition = "_target getVariable ['kat_aceCirculation_X', true]";
       treatmentTime = 2;
+      callbackProgress = "";
       callbackSuccess = "_target setVariable ['kat_aceCirculation_X', false, true]; _player setVariable ['kat_aceCirculation_use', false, true]";
     };
 	};
