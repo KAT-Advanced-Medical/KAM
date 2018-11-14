@@ -40,6 +40,7 @@ class CfgFunctions {
         class handleTreatment{};
         class init{};
         class registerSettings{};
+        class removeEffect_IV{};
         class treatmentAdvanced_IV{};
         class treatmentAdvanced_X{};
 		};

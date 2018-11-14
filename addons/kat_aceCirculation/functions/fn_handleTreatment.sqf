@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget, 'hand_l', 'BloodIV_O', _items] call kat_aceCirculation_fnc_handleTreatment
+ * [cursorTarget, player, 'hand_l', 'BloodIV_A', 'BloodIV A'] call kat_aceCirculation_fnc_handleTreatment
  *
  * Public: No
  */

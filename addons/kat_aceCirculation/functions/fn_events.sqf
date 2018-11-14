@@ -15,6 +15,7 @@
  */
 
 ["treatmentIVfalse", {_this call kat_aceCirculation_fnc_treatmentAdvanced_IV}] call CBA_fnc_addEventHandler;
+["IVreset", {_this call kat_aceCirculation_fnc_removeEffect_IV}] call CBA_fnc_addEventHandler;
 /*
 private _checkTagAction = [
     "ACE_CheckDogtagSelf",
