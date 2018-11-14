@@ -6,8 +6,8 @@
           <German>ACE-Atmung aktiviert?</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_Pulsoxymeter_Display">
-          <English>Pulsoxymeter</English>
-          <German>Pulsoxymeter</German>
+          <English>Use Pulsoxymeter</English>
+          <German>benutze Pulsoxymeter</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_Pulsoxymeter_Display_Remove">
           <English>Remove Pulsoxymeter</English>
@@ -34,8 +34,8 @@
           <German>Pulsoxymeter bereits vorhanden</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_pulsoxy_Log">
-          <English>Pulsoxymeter: Heart Rate: %1 SpO2: %2 &percnt;</English>
-          <German>Pulsoxymeter: Puls: %1 SpO2: %2 &percnt;</German>
+          <English>Pulsoxymeter: HR: %1 SpO2: %2</English>
+          <German>Pulsoxymeter: HR: %1 SpO2: %2</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_pulsoxy_Log_2">
           <English>%1 connected Pulsoxymeter</English>

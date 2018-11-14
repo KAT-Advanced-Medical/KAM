@@ -9,9 +9,9 @@
  * None
  *
  * Example:
- * call kat_aceCirculation_fnc_events;
+ * call kat_aceExposure_fnc_events;
  *
  * Public: No
  */
 
-["treatmentIVfalse", {_this call kat_aceCirculation_fnc_treatmentAdvanced_IV}] call CBA_fnc_addEventHandler;
+["", {_this call kat_aceExposure_fnc_}] call CBA_fnc_addEventHandler;
