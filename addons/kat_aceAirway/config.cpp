@@ -192,6 +192,11 @@ class cfgVehicles {
           MACRO_ADDITEM(KAT_accuvac,1);
       };
   };
+  class BloodSplatter_01_Small_Old_F;
+  class KAT_Vomit: BloodSplatter_01_Small_Old_F {
+    displayName = $STR_kat_aceAirway_Vomit_Display;
+    hiddenSelectionsTextures[] = {"kat_aceAirway\images\vomit.paa"};
+  };
 
   class NATO_Box_Base;
 	class ACE_medicalSupplyCrate: NATO_Box_Base {
