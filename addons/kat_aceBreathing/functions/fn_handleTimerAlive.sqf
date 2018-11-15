@@ -29,8 +29,8 @@ if (!local _unit) then {
   if (_unit getVariable ["ace_medical_airwayStatus", 100] isEqualTo 100) exitWith {
     [_idPFH] call CBA_fnc_removePerFrameHandler;
   };
-  if (CBA_missionTime - _startTime > 60) then {
-    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) + 1;
+  if (CBA_missionTime - _startTime > 100) then {
+    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) + 1; // You have 110 sec to get back to 100 % saturation is you waked up at 70.
     _unit setVariable ["ace_medical_airwayStatus", _newValue, true];
   } else {
     private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) + 0.2;

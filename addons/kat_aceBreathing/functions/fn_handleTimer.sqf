@@ -35,8 +35,8 @@ if (!local _unit) then {
     [_idPFH] call CBA_fnc_removePerFrameHandler;
     [_unit, true] call ace_medical_fnc_setDead;
   };
-  if (CBA_missionTime - _startTime > 60) then {
-    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) - 1;
+  if (CBA_missionTime - _startTime > 100) then {
+    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) - 1; //You will have 110 sec to be forced in unconscious state
     _unit setVariable ["ace_medical_airwayStatus", _newValue, true];
   } else {
     private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) - 0.2;
