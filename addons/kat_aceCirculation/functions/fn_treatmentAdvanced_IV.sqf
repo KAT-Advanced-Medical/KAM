@@ -14,10 +14,6 @@
  * Public: No
  */
 
-/*
-High pulse / hr
-*/
-
 params ["_unit", "_className"];
 
 if !(local _unit) exitWith {["treatmentIVfalse", [_unit, _className], _unit] call CBA_fnc_targetEvent};

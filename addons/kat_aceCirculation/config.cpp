@@ -364,6 +364,24 @@ class Man;
           };
         };
       };
+      class ACE_Equipment {
+        class removeSound {
+          displayName = "$STR_KAT_aceCirculation_X_Action_removeSound";
+          condition = "'KAT_X_AED' in (items _player) && (_player getVariable 'kat_aceCirculation_X_sound')";
+          statement = "_player setVariable ['kat_aceCirculation_X_sound', false, true]";
+          showDisabled = 0;
+          exceptions[] = {"isNotInside", "isNotSitting"};
+          icon = "";
+        };
+        class addSound {
+          displayName = "$STR_KAT_aceCirculation_X_Action_addSound";
+          condition = "'KAT_X_AED' in (items _player) && !(_player getVariable 'kat_aceCirculation_X_sound')";
+          statement = "_player setVariable ['kat_aceCirculation_X_sound', true, true]";
+          showDisabled = 0;
+          exceptions[] = {"isNotInside", "isNotSitting"};
+          icon = "";
+        };
+      };
     };
   };
 };
@@ -416,7 +434,7 @@ class ACE_Medical_Actions {
       displayName = $STR_KAT_aceCirculation_X_Action_Use;
       displayNameProgress = $STR_KAT_aceCirculation_X_Action_Progress;
       items[] = {"KAT_X_AED"};
-      condition = "!(_player getVariable ['kat_aceCirculation_use',false]) && missionNamespace getVariable ['kat_aceCirculation_enable',true]";
+      condition = "!(_player getVariable ['kat_aceCirculation_use',false])";
       treatmentTime = 2;
       requiredMedic = 1;
       callbackProgress = "";

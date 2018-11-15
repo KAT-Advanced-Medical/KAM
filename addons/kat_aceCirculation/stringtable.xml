@@ -133,6 +133,14 @@
         <English>Connecting</English>
         <German>Anschließen</German>
       </Key>
+      <Key ID="STR_KAT_aceCirculation_X_Action_removeSound">
+        <English>Turn down volume of AED X</English>
+        <German>X-AED stumm schalten</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_X_Action_addSound">
+        <English>Turn up volume of AED X</English>
+        <German>X-AED laut schalten</German>
+      </Key>
       <Key ID="STR_KAT_aceCirculation_Pain_empty">
         <English>%1 is now empty</English>
         <German>%1 ist nun leer</German>
