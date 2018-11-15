@@ -89,6 +89,14 @@
         <English>Inject Painkillers</English>
         <German>Injiziere Schmerzmittel</German>
       </Key>
+      <Key ID="STR_KAT_aceCirculation_Painkillers_Box_Display">
+        <English>Painkillers</English>
+        <German>Schmerzmittel</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Inject_Box_Painkillers">
+        <English>Use Painkillers</English>
+        <German>Schlucke Schmerzmittel</German>
+      </Key>
       <Key ID="STR_KAT_aceCirculation_Injecting">
         <English>Injecting</English>
         <German>Injiziere</German>
@@ -124,6 +132,10 @@
       <Key ID="STR_KAT_aceCirculation_X_Action_Progress">
         <English>Connecting</English>
         <German>Anschließen</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_Pain_empty">
+        <English>%1 is now empty</English>
+        <German>%1 ist nun leer</German>
       </Key>
 		</Package>
 </Project>

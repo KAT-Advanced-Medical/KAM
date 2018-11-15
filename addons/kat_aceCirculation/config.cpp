@@ -41,6 +41,7 @@ class CfgFunctions {
         class init{};
         class registerSettings{};
         class removeEffect_IV{};
+        class removeItemfromMag{};
         class treatmentAdvanced_IV{};
         class treatmentAdvanced_X{};
 		};
@@ -137,6 +138,26 @@ class cfgWeapons {
   };
 };
 
+class cfgMagazines {
+  class CA_Magazine;
+  class KAT_PainkillersBoxPill: CA_Magazine {
+    author = "Katalam";
+    scope = 2;
+
+    displayName = "$STR_KAT_aceCirculation_Painkillers_Box_Display";
+    descriptionShort = "$STR_KAT_aceCirculation_Painkillers_DescShort";
+    model = "\A3\Structures_F_EPA\Items\Medical\PainKillers_F.p3d";
+    picture = "\kat_acecirculation\images\icon_painkillers.paa";
+
+    ammo = "";
+    count = 10;
+    initSpeed = 0;
+    tracersEvery = 0;
+    lastRoundsTracer = 0;
+    mass = 1;
+  };
+};
+
 class cfgVehicles {
 	class Item_Base_F;
   class KAT_PainkillersItem: Item_Base_F {
@@ -147,6 +168,17 @@ class cfgVehicles {
       vehicleClass = "Items";
       class TransportItems {
           MACRO_ADDITEM(KAT_Painkillers,1);
+      };
+  };
+  class WeaponHolder_Single_limited_item_F;
+  class KAT_PainkillersBoxItem: WeaponHolder_Single_limited_item_F {
+      scope = 2;
+      scopeCurator = 2;
+      displayName= "$STR_KAT_aceCirculation_Painkillers_Box_Display";
+      author = "Katalam";
+      vehicleClass = "Magazines";
+      class TransportItems {
+          MACRO_ADDITEM(KAT_PainkillersBoxPill,1);
       };
   };
   class adv_aceCPR_AEDItem;
@@ -167,6 +199,7 @@ class cfgVehicles {
 	class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
 		class TransportItems: TransportItems {
 			MACRO_ADDITEM(KAT_Painkillers,20);
+      MACRO_ADDITEM(KAT_PainkillersBoxPill,5);
       MACRO_ADDITEM(KAT_X_AED,1);
 		};
 	};
@@ -179,6 +212,14 @@ class Man;
       };
       class ACE_Head {
         class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
+        class PainkillersBox {
+          displayName = "$STR_KAT_aceCirculation_Inject_Box_Painkillers";
+          condition = "'KAT_PainkillersBoxPill' in (magazines _player)";
+          statement = "['KAT_PainkillersBoxPill', _player, _target, 'head', 'Painkillers'] call kat_aceCirculation_fnc_removeItemfromMag";
+          showDisabled = 0;
+          exceptions[] = {"isNotInside", "isNotSitting"};
+          icon = "kat_aceCirculation\images\icon_painkillers_action.paa";
+        };
       };
       class ACE_Torso {
   			class CPR;
@@ -241,6 +282,14 @@ class Man;
         class Medical {
           class ACE_Head {
             class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
+            class PainkillersBox {
+              displayName = "$STR_KAT_aceCirculation_Inject_Box_Painkillers";
+              condition = "'KAT_PainkillersBoxPill' in (magazines _player)";
+              statement = "['KAT_PainkillersBoxPill', _player, _target, 'head', 'Painkillers'] call kat_aceCirculation_fnc_removeItemfromMag";
+              showDisabled = 0;
+              exceptions[] = {"isNotInside", "isNotSitting"};
+              icon = "kat_aceCirculation\images\icon_painkillers_action.paa";
+            };
           };
           class ACE_Torso {
       			class CPR;
@@ -298,6 +347,20 @@ class Man;
               statement = "[_player, _target, 'leg_r', 'Painkillers'] call ace_medical_fnc_treatment";
             };
             #include "Blood_LegR.hpp"
+          };
+        };
+      };
+    };
+    class ACE_SelfActions {
+      class Medical {
+        class ACE_Head {
+          class PainkillersBox {
+            displayName = "$STR_KAT_aceCirculation_Inject_Box_Painkillers";
+            condition = "'KAT_PainkillersBoxPill' in (magazines _player)";
+            statement = "['KAT_PainkillersBoxPill', _player, _target, 'head', 'Painkillers'] call kat_aceCirculation_fnc_removeItemfromMag";
+            showDisabled = 0;
+            exceptions[] = {"isNotInside", "isNotSitting"};
+            icon = "kat_aceCirculation\images\icon_painkillers_action.paa";
           };
         };
       };
