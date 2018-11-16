@@ -21,6 +21,10 @@
           <English>Probability for airway occluding</English>
           <German>Atemwegsverlegungswahrscheinlichkeit</German>
       </Key>
+      <Key ID="STR_kat_aceAirway_SETTING_puking_sound">
+          <English>Activate the puking sound?</English>
+          <German>Erbrechengeräusch abspielen?</German>
+      </Key>
       <Key ID="STR_kat_aceAirway_checkAirway">
           <English>Check airways</English>
           <German>Überprüfe Atemwege</German>

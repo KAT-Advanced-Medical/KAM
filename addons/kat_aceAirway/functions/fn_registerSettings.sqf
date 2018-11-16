@@ -26,7 +26,7 @@ It will stay in there and can block the airway too. The right treatment here, is
 In real life, this will happen sometimes, not quiet often.
 */
 
-//Enable aceAirway injuries
+// Enable aceAirway injuries
 [
 	"kat_aceAirway_enable",
 	"CHECKBOX",
@@ -37,7 +37,7 @@ In real life, this will happen sometimes, not quiet often.
 ] call CBA_Settings_fnc_init;
 
 
-//aceAirway Injuries Death Timer
+// aceAirway Injuries Death Timer
 [
 	"kat_aceAirway_deathTimer",
 	"SLIDER",
@@ -47,7 +47,7 @@ In real life, this will happen sometimes, not quiet often.
 	true
 ] call CBA_Settings_fnc_init;
 
-//aceAirway Injuries probability collapsed
+// aceAirway Injuries probability collapsed
 [
 	"kat_aceAirway_probability_collapsed",
 	"SLIDER",
@@ -57,13 +57,24 @@ In real life, this will happen sometimes, not quiet often.
 	true
 ] call CBA_Settings_fnc_init;
 
-//aceAirway Injuries probability occluded
+// aceAirway Injuries probability occluded
 [
 	"kat_aceAirway_probability_occluded",
 	"SLIDER",
 	localize "STR_kat_aceAirway_SETTING_occluded",
 	CBA_SETTINGS_CAT,
 	[0, 100, 30, 0],
+	true
+] call CBA_Settings_fnc_init;
+
+// aceAirway puking sound yes or no?
+// somebody told me that the sound which is played then someone is puking is super annoying and now you can remove it easily
+[
+	"kat_aceAirway_checkbox_puking_sound",
+	"CHECKBOX",
+	localize "STR_kat_aceAirway_SETTING_puking_sound",
+	CBA_SETTINGS_CAT,
+	[true],
 	true
 ] call CBA_Settings_fnc_init;
 

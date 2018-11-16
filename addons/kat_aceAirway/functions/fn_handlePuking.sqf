@@ -26,7 +26,9 @@ params ["_unit"];
 	if (random(100) <= kat_aceAirway_probability_occluded) then {
 		if !(_unit getVariable ["ace_medical_airwayOccluded", false]) then {
 			_unit setVariable ["ace_medical_airwayOccluded", true, true];
-			playsound3D ["kat_aceAirway\sounds\Puking.wav", _unit, false, getPosASL _unit, 8, 1, 15];
+      if (kat_aceAirway_checkbox_puking_sound) then {
+        playsound3D ["kat_aceAirway\sounds\Puking.wav", _unit, false, getPosASL _unit, 8, 1, 15];
+      };
 		};
 	};
 }, 60, [_unit]] call CBA_fnc_addPerFrameHandler;
