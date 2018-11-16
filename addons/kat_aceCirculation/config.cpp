@@ -395,6 +395,13 @@ class ACE_Medical_Actions {
       displayNameProgress = $STR_KAT_aceCirculation_Injecting;
       items[] = {"KAT_Painkillers"};
     };
+    class KAT_PainkillersBoxPill: Morphine {
+      displayName = $STR_KAT_aceCirculation_Inject_Box_Painkillers;
+      displayNameProgress = $STR_KAT_aceCirculation_Injecting;
+      allowedSelections[] = {"head"};
+      items[] = {};
+      condition = "'KAT_PainkillersBoxPill' in (magazines _player)";
+    };
     class CheckPulse;
     class CheckDogtags: checkPulse {
       displayName = $STR_KAT_aceCirculation_DogTag;

@@ -27,4 +27,5 @@ if ((_oldMag select 1) > 1) then {
 	[format [localize "STR_KAT_aceCirculation_Pain_empty", getText (configFile >> "CfgMagazines" >> _mag >> "displayName")], 2.5, _player] call ace_common_fnc_displayTextStructured;
 };
 
+[_target, localize "STR_KAT_aceCirculation_Painkillers_Box_Display"] call ace_medical_fnc_addToTriageCard;
 [_player, _target, _selectionName, _className, ['Painkillers']] call ace_medical_fnc_treatmentAdvanced_medication;
