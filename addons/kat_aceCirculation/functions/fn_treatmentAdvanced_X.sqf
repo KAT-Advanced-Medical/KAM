@@ -17,13 +17,6 @@
 
 params ["_player", "_target"];
 
-private _string = "HR: %1 BP: %2/%3";
-/*
-if (kat_aceBreathing_enable && kat_aceExposure_enable) then {
-	_string = "HR: %1 BP: %2/%3 SpO2: %4 T: %5";
-};
-*/
-
 if (_target getVariable ["kat_aceCirculation_X", false]) exitWith {
   private _output = localize "STR_KAT_aceCirculation_X_already";
   [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
@@ -37,13 +30,14 @@ if (_target getVariable ["ace_medical_heartRate", 80] > 0) then {
 };
 
 // medical menu log
+private _string = "HR: %1 BP: %2/%3";
 [{
   params ["_args", "_idPFH"];
   _args params ["_string", "_target"];
 	if !(_target getVariable ["kat_aceCirculation_X", false]) exitWith {
 		[_idPFH] call CBA_fnc_removePerFrameHandler;
 	};
-	[_target, "quick_view", _string, [_target getVariable ["ace_medical_heartRate", 80], (_target getVariable ["ace_medical_bloodPressure", [80,120]] select 1), (_target getVariable ["ace_medical_bloodPressure", [80,120]] select 0)]] call ace_medical_fnc_addToLog;
+	[_target, "quick_view", _string, [round (_target getVariable ["ace_medical_heartRate", 80]), (round (_target getVariable ["ace_medical_bloodPressure", [80,120]] select 1)), (round (_target getVariable ["ace_medical_bloodPressure", [80,120]] select 0))]] call ace_medical_fnc_addToLog;
 }, 1, [_string, _target]] call CBA_fnc_addPerFrameHandler;
 
 // 300 sec is maximum for monitoring, then you have to connect it again. It's more something that you can't forget to remove it.
@@ -62,24 +56,18 @@ if (_target getVariable ["ace_medical_heartRate", 80] > 0) then {
   [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 }] call CBA_fnc_waitUntilAndExecute;
 
-// an argument for the heart rate sound
-private _soundPath1 = "";
-private _soundPath2 = "";
-if (_player getVariable ["kat_aceCirculation_X_sound", true]) then {
-  _soundPath1 = "kat_aceCirculation\sounds\noheartrate.wav";
-  _soundPath2 = "kat_aceCirculation\sounds\heartrate.wav";
-};
-
 // the heart rate sound
-[_target, _soundPath1, _soundPath2] spawn {
-  params ["_target", "_soundPath1", "_soundPath2"];
+[_target, _player] spawn {
+  params ["_target", "_player"];
   while {_target getVariable ["kat_aceCirculation_X", false]} do {
     private _hr = _target getVariable ["ace_medical_heartRate", 80];
     if (_hr <= 0) then {
+      private _soundPath1 = _player getVariable ["kat_aceCirculation_X_sound1", "kat_aceCirculation\sounds\noheartrate.wav"];
       playsound3D [_soundPath1, _target, false, getPosASL _target, 5, 1, 15];
       sleep 1.48;
     } else {
       private _sleep = 60 / _hr;
+      private _soundPath2 = _player getVariable ["kat_aceCirculation_X_sound2", "kat_aceCirculation\sounds\heartrate.wav"];
       playsound3D [_soundPath2, _target, false, getPosASL _target, 8, 1, 15];
       sleep 0.25;
       sleep _sleep;

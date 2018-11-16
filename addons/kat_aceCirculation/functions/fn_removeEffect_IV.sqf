@@ -9,14 +9,14 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_aceCirculation_fnc_treatmentAdvanced_IV
+ * [player] call kat_aceCirculation_fnc_resetEffect_IV
  *
  * Public: No
  */
 
-params ["_unit", "_className"];
+params ["_unit"];
 
-if !(local _unit) exitWith {["IVreset", [_unit, _className], _unit] call CBA_fnc_targetEvent};
+if !(local _unit) exitWith {["IVreset", [_unit], _unit] call CBA_fnc_targetEvent};
 
 private _effect = ppEffectCreate ["chromAberration", 5000];
 _effect ppEffectEnable true;

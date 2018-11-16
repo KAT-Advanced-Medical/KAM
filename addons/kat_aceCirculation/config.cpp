@@ -367,16 +367,16 @@ class Man;
       class ACE_Equipment {
         class removeSound {
           displayName = "$STR_KAT_aceCirculation_X_Action_removeSound";
-          condition = "'KAT_X_AED' in (items _player) && (_player getVariable 'kat_aceCirculation_X_sound')";
-          statement = "_player setVariable ['kat_aceCirculation_X_sound', false, true]";
+          condition = "'KAT_X_AED' in (items _player) && !((_player getVariable 'kat_aceCirculation_X_sound1') isEqualTo '')";
+          statement = "_player setVariable ['kat_aceCirculation_X_sound1', '', true]; _player setVariable ['kat_aceCirculation_X_sound2', '', true];";
           showDisabled = 0;
           exceptions[] = {"isNotInside", "isNotSitting"};
           icon = "";
         };
         class addSound {
           displayName = "$STR_KAT_aceCirculation_X_Action_addSound";
-          condition = "'KAT_X_AED' in (items _player) && !(_player getVariable 'kat_aceCirculation_X_sound')";
-          statement = "_player setVariable ['kat_aceCirculation_X_sound', true, true]";
+          condition = "'KAT_X_AED' in (items _player) && ((_player getVariable 'kat_aceCirculation_X_sound1') isEqualTo '')";
+          statement = "_player setVariable ['kat_aceCirculation_X_sound1', 'kat_aceCirculation\sounds\noheartrate.wav', true]; _player setVariable ['kat_aceCirculation_X_sound2', 'kat_aceCirculation\sounds\heartrate.wav', true];";
           showDisabled = 0;
           exceptions[] = {"isNotInside", "isNotSitting"};
           icon = "";
