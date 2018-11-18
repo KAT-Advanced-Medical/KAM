@@ -49,11 +49,15 @@ private _string = "HR: %1 BP: %2/%3";
   _target setVariable ["kat_aceCirculation_X", false, true];
   private _output = localize "STR_KAT_aceCirculation_X_Action_Remove";
   [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
+  _target setVariable ['kat_aceCirculation_X', false, true];
+  _player setVariable ['kat_aceCirculation_use', false, true];
 }, [_player, _target], 300, {
   params ["_player", "_target"];
   _target setVariable ["kat_aceCirculation_X", false, true];
   private _output = localize "STR_KAT_aceCirculation_X_Action_Remove";
   [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
+  _target setVariable ['kat_aceCirculation_X', false, true];
+  _player setVariable ['kat_aceCirculation_use', false, true];
 }] call CBA_fnc_waitUntilAndExecute;
 
 // the heart rate sound
