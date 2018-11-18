@@ -14,7 +14,7 @@ Feature Overview
 - aceCirculation
   - [x] Blood Groups
   - [X] Painkillers as autoinjector
-  - [ ] Painkillers
+  - [x] Painkillers
   - [X] Bigger AED with monitoring
   - [ ] Drugs with access?
 - aceDisability

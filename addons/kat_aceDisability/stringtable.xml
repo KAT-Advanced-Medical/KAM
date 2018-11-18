@@ -37,6 +37,14 @@
         <English>You finished the operation</English>
         <German>Erfolgreicher Luftröhrenschnitt</German>
       </Key>
+      <Key ID="STR_kat_aceDisability_Done_log">
+        <English>%1 finished the operation</English>
+        <German>%1 führte einen Luftröhrenschnitt durch</German>
+      </Key>
+      <Key ID="STR_kat_aceDisability_Done_log2">
+        <English>Tracheacut</English>
+        <German>Luftröhrenschnitt</German>
+      </Key>
       <Key ID="STR_kat_aceDisability_cut_log">
         <English>%1 cutted the Uniform and found: %2</English>
         <German>%1 schnitt die Uniform auf und fand: %2</German>

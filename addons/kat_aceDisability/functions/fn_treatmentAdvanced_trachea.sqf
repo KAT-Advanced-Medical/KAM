@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_aceDisability_fnc_treatmentAdvanced_bee;
+ * [player, cursorTarget] call kat_aceDisability_fnc_treatmentAdvanced_trachea;
  *
  * Public: No
  */
@@ -17,7 +17,7 @@
 params ["_unit", "_target"];
 
 if (local _target) then {
-  ["treatmentBees", [_unit, _target]] call CBA_fnc_localEvent;
+  ["treatmentTrachea", [_unit, _target]] call CBA_fnc_localEvent;
 } else {
-  ["treatmentBees", [_unit, _target], _target] call CBA_fnc_targetEvent;
+  ["treatmentTrachea", [_unit, _target], _target] call CBA_fnc_targetEvent;
 };

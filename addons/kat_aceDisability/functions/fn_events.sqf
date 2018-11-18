@@ -15,4 +15,4 @@
  */
 
 ["treatmentClothes", {_this call kat_aceDisability_fnc_treatmentAdvanced_clothesLocal}] call CBA_fnc_addEventHandler;
-["treatmentBees", {_this call kat_aceDisability_fnc_treatmentAdvanced_beeLocal}] call CBA_fnc_addEventHandler;
+["treatmentTrachea", {_this call kat_aceDisability_fnc_treatmentAdvanced_beeLocal}] call CBA_fnc_addEventHandler;

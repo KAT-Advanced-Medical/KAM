@@ -16,6 +16,8 @@
 
 params ["_unit"];
 
+if !(kat_aceAirway_enable) exitWith {};
+
 [{
   params ["_args", "_idPFH"];
   _args params ["_unit"];

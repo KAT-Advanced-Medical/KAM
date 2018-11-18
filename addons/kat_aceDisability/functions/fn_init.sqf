@@ -16,5 +16,5 @@
 
 params ["_unit"];
 
-_unit setVariable ["kat_aceDisability_allergicalreaction", false];
-_unit setVariable ["kat_aceDisability_checked", false];
+_unit setVariable ["kat_aceDisability_allergicalreaction", [], true];
+_unit setVariable ["kat_aceDisability_checked", false, true];

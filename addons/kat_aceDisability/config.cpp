@@ -36,17 +36,16 @@ class CfgFunctions {
 	class kat_aceDisability {
     file = "kat_aceDisability\functions";
 		class functions {
-        class bee{};
+        class allergicalReaction{};
         class createBee{};
-        class dummy{};
         class events{};
         class handleInit{};
         class init{};
         class registerSettings{};
-        class treatmentAdvanced_bee{};
-        class treatmentAdvanced_beeLocal{};
         class treatmentAdvanced_clothes{};
         class treatmentAdvanced_clothesLocal{};
+        class treatmentAdvanced_trachea{};
+        class treatmentAdvanced_tracheaLocal{};
 		};
 	};
 };
