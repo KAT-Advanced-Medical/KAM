@@ -1,26 +1,27 @@
 /*
-	Author: Katalam, Fynn
-
-	Spawns a group of animals which will circle the spawn area.
-
-	Argument(s):
-	0: Spawn position <OBJECT, STRING, POSITION>
-	1: Radius <NUMBER>
-	2: Number of animals <NUMBER>
-	3: Spawn height <NUMBER>
-	4: Animal Classname <STRING>, optional
-
-	Return Value:
-	Spawned animals <ARRAY>
-
-*/
-
-// To-Do: functionality check and commentary at the beginning
+ * Author: Fynn, Katalam
+ * Spawns a group of animals which will circle the spawn area.
+ *
+ * Arguments:
+ * 0: Spawn position <OBJECT, STRING, POSITION>
+ * 1: Radius <NUMBER>
+ * 2: Number of animals <NUMBER>
+ * 3: Spawn height <NUMBER>
+ * 4: Animal Classname <STRING>, optional
+ *
+ * Return Value:
+ * 0: Spawned animals <ARRAY>
+ *
+ * Example:
+ * [player, 2, 25, 45, "HoneyBee"] call kat_aceDisability_fnc_createBee;
+ *
+ * Public: No
+ */
 
 params [
 	["_centre", [0,0,0], [[], objnull, ""]],
-	["_radius", 50, [0]],
-	["_count", 5, [0]],
+	["_radius", 10, [0]],
+	["_count", 10, [0]],
 	["_height", 30 + random 10, [0]],
 	["_animal", "HoneyBee", [""]]
 ];
@@ -49,8 +50,8 @@ for "_i" from 1 to _count do {
 	_newAnimal setVariable ["BIS_fnc_animalBehaviour_disable", true];
 
 	// FSM for animal to circle the spawn area
-	[_animal, _wp0, _wp1, _wp2, _wp3, _radius] execfsm "A3\Functions_F\Environment\fn_crows.fsm";
-	_animalList pushBack _animal;
+	[_newAnimal, _wp0, _wp1, _wp2, _wp3, (_radius * 2)] execfsm "A3\Functions_F\Environment\fn_crows.fsm";
+	_animalList pushBack _newAnimal;
 };
 
 _animalList;
