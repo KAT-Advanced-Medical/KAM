@@ -37,7 +37,7 @@ _effect ppEffectAdjust [
  [0.6, 0.6, 0.2, 0],
  [-1, -1, 0, 1, 0, 0, 0]
 ];
-_effect ppEffectCommit 120;
+_effect ppEffectCommit 30;
 
 // set allergical reaction variable with pp effect and boolean swollen
 _unit setVariable ["kat_aceDisability_allergicalreaction", [_className, _effect], true];
@@ -47,7 +47,7 @@ if !(_unit getVariable ["kat_aceAirway_swollen", false]) then {
 
 // hearrate adjustment for the allergical reaction
 [_unit, 50, 10, {}] call ace_medical_fnc_addHeartRateAdjustment;
-[{[_this select 0, true] call ace_medical_fnc_setUnconscious}, [_unit], 10] call CBA_fnc_waitAndExecute;
+//[{[_this select 0, true] call ace_medical_fnc_setUnconscious}, [_unit], 30] call CBA_fnc_waitAndExecute;
 
 
 true;

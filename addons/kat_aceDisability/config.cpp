@@ -219,7 +219,7 @@ class ACE_Medical_Actions {
       items[] = {"ACE_surgicalKit"};
       condition = "!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable ['kat_aceDisability_enable',true]) && _target getVariable ['kat_aceDisability_checked', false]";
       category = "airway";
-      callbackSuccess = "[_player, _target] call kat_aceDisability_fnc_treatmentAdvanced_bee";
+      callbackSuccess = "[_player, _target] call kat_aceDisability_fnc_treatmentAdvanced_trachea";
     };
 	};
 };
