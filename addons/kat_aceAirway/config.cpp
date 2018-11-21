@@ -160,8 +160,8 @@ class cfgWeapons {
 };
 
 class cfgVehicles {
+  
 	class Item_Base_F;
-
   class KAT_larynxItem: Item_Base_F {
       scope = 2;
       scopeCurator = 2;

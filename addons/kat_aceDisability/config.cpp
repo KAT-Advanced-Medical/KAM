@@ -174,13 +174,12 @@ class kat_aceDisability_moduleBee: kat_aceDisability_moduleBase {
    class NATO_Box_Base;
  	 class ACE_medicalSupplyCrate: NATO_Box_Base {
  		class TransportItems;
- 	};
+ 	 };
  	class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
  		class TransportItems: TransportItems {
  			MACRO_ADDITEM(U_B_CombatUniform_mcam_tshirt,5);
  		};
  	};
-
 }; // Close CfgVehicles
 
 class ACE_Medical_Actions {

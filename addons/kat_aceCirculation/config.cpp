@@ -4,10 +4,18 @@ class CfgPatches
     class kat_aceCirculation
     {
         units[] = {
-			"KAT_PainkillersItem"
+			"KAT_PainkillersItem",
+      "KAT_PainkillersBoxItem",
+      "KAT_X_AEDItem"
 		};
         weapons[] = {
-      "KAT_Painkillers"
+      "KAT_Painkillers",
+      "KAT_bloodIV_O",
+      "KAT_bloodIV_A",
+      "KAT_bloodIV_B",
+      "KAT_bloodIV_AB",
+      "KAT_Painkillers",
+      "KAT_X_AED"
 		};
         requiredVersion = 1.80;
         requiredAddons[] = {
@@ -101,16 +109,16 @@ class cfgWeapons {
 	class CBA_MiscItem_ItemInfo;
   class ACE_bloodIV;
   class adv_aceCPR_AED;
-  class ACE_bloodIV_O: ACE_bloodIV {
+  class KAT_bloodIV_O: ACE_bloodIV {
     displayName = $STR_KAT_aceCirculation_BloodIV_O;
   };
-  class ACE_bloodIV_A: ACE_bloodIV {
+  class KAT_bloodIV_A: ACE_bloodIV {
     displayName = $STR_KAT_aceCirculation_BloodIV_A;
   };
-  class ACE_bloodIV_B: ACE_bloodIV {
+  class KAT_bloodIV_B: ACE_bloodIV {
     displayName = $STR_KAT_aceCirculation_BloodIV_B;
   };
-  class ACE_bloodIV_AB: ACE_bloodIV {
+  class KAT_bloodIV_AB: ACE_bloodIV {
     displayName = $STR_KAT_aceCirculation_BloodIV_AB;
   };
   class KAT_Painkillers: ACE_ItemCore {
@@ -415,22 +423,22 @@ class ACE_Medical_Actions {
     class BloodIV;
     class BloodIV_O: BloodIV {
       displayName = $STR_KAT_aceCirculation_Action_BloodIV_O
-      items[] = {"ACE_bloodIV_O"};
+      items[] = {"KAT_bloodIV_O"};
       callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
     };
     class BloodIV_A: BloodIV {
       displayName = $STR_KAT_aceCirculation_Action_BloodIV_A
-      items[] = {"ACE_bloodIV_A"};
+      items[] = {"KAT_bloodIV_A"};
       callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
     };
     class BloodIV_B: BloodIV {
       displayName = $STR_KAT_aceCirculation_Action_BloodIV_B
-      items[] = {"ACE_bloodIV_B"};
+      items[] = {"KAT_bloodIV_B"};
       callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
     };
     class BloodIV_AB: BloodIV {
       displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB
-      items[] = {"ACE_bloodIV_AB"};
+      items[] = {"KAT_bloodIV_AB"};
       callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
     };
     class CPR;
