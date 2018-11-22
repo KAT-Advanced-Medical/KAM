@@ -15,7 +15,7 @@
  */
 
 params ["_player"];
-//[abc,NATO_LMG_1,"leg_r","SalineIV_Stand"]
+
 private _object = nearestObjects [_player, ["Land_IntravenStand_01_1bag_F", "Land_IntravenStand_01_2bags_F"], 10, false];
 if (_object isEqualType []) then {
 	_object = _object select 0;

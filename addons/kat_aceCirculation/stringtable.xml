@@ -101,6 +101,10 @@
         <English>Injecting</English>
         <German>Injiziere</German>
       </Key>
+      <Key ID="STR_KAT_aceCirculation_Using">
+        <English>Using</English>
+        <German>Schlucke</German>
+      </Key>
       <Key ID="STR_KAT_aceCirculation_DogTag">
         <English>Check Dogtags</English>
         <German>Überprüfe Hundemarke</German>
