@@ -160,7 +160,7 @@ class cfgWeapons {
 };
 
 class cfgVehicles {
-  
+
 	class Item_Base_F;
   class KAT_larynxItem: Item_Base_F {
       scope = 2;
@@ -382,7 +382,7 @@ class ACE_Medical_Actions {
       treatmentTime = 2;
       requiredMedic = 0;
       items[] = {};
-      condition = "!([_target] call ace_common_fnc_isAwake) && !(_target getVariable ""kat_aceAirway_overstretch"") && (missionNamespace getVariable ['kat_aceAirway_enable',true])";
+      condition = "!([_target] call ace_common_fnc_isAwake) && !(_target getVariable ['kat_aceAirway_overstretch', false]) && (missionNamespace getVariable ['kat_aceAirway_enable',true])";
       callbackSuccess = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_overstretchHead";
     };
     class TurnAround: larynxtubus {
