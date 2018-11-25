@@ -19,8 +19,9 @@ Feature Overview
   - [ ] Drugs with access?
 - aceDisability
   - [x] Cut of clothes
-  - [ ] Allergical reactions
+  - [X] Allergical reactions
 - aceExposure
   - [ ] Heat-preserving
 - aceMisc
   - [ ] Big Backpack?
+  - [X] Workable IV stand
