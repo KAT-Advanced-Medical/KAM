@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * ['KAT_PainkillersBox', player, cursorTarget, 'head', 'Painkillers'] call kat_aceCirculation_fnc_removeItemfromMag;
+ * ['KAT_Painkillers', player, cursorTarget, 'head', 'Painkillers'] call kat_aceCirculation_fnc_removeItemfromMag;
  *
  * Public: No
  */

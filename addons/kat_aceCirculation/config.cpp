@@ -5,7 +5,6 @@ class CfgPatches
     {
         units[] = {
 			"KAT_PainkillersItem",
-      "KAT_PainkillersBoxItem",
       "KAT_X_AEDItem"
 		};
         weapons[] = {
@@ -14,7 +13,6 @@ class CfgPatches
       "KAT_bloodIV_A",
       "KAT_bloodIV_B",
       "KAT_bloodIV_AB",
-      "KAT_Painkillers",
       "KAT_X_AED"
 		};
         requiredVersion = 1.80;
@@ -35,6 +33,11 @@ class CfgPatches
     name = #ITEM; \
     count = COUNT; \
 };
+
+#define MACRO_ADDMAGAZINE(MAGAZINE,COUNT) class _xx_##MAGAZINE { \
+    magazine = #MAGAZINE; \
+    count = COUNT; \
+}
 
 class CfgFunctions {
 	class kat_aceCirculation {
@@ -122,27 +125,11 @@ class cfgWeapons {
     displayName = $STR_KAT_aceCirculation_BloodIV_AB;
   };
   class KAT_Painkillers: ACE_ItemCore {
-    scope = 2;
-    author = "Katalam";
-    displayName = $STR_KAT_aceCirculation_Painkillers_Display;
-    picture = "\z\ace\addons\medical\ui\items\adenosine_x_ca.paa";
-    model = "\z\ace\addons\medical\data\adenosine.p3d";
-    descriptionShort = $STR_KAT_aceCirculation_Painkillers_DescShort;
-    descriptionUse = $STR_KAT_aceCirculation_Painkillers_DescUse;
-    class ItemInfo: CBA_MiscItem_ItemInfo {
-        mass = 1;
-    };
-  };
-  class KAT_PainkillersBox: ACE_ItemCore {
-    scope = 1; // no mistake, just a placeholder, cause ACE can't handle magazines. DO NOT USE
+    scope = 1; // no mistake, just a placeholder, cause ACE can't handle magazines. DO NOT USE!
     author = "Katalam";
     displayName = "$STR_KAT_aceCirculation_Painkillers_Box_Display";
-    model = "\A3\Structures_F_EPA\Items\Medical\PainKillers_F.p3d";
-    picture = "\kat_acecirculation\images\icon_painkillers.paa";
-    descriptionShort = "$STR_KAT_aceCirculation_Painkillers_DescShort";
-    descriptionUse = "$STR_KAT_aceCirculation_Painkillers_DescShort";
     class ItemInfo: CBA_MiscItem_ItemInfo {
-        mass = 1;
+        mass = 0;
     };
   };
   class KAT_X_AED: adv_aceCPR_AED {
@@ -160,13 +147,13 @@ class cfgWeapons {
 
 class cfgMagazines {
   class CA_Magazine;
-  class KAT_PainkillersBox: CA_Magazine {
+  class KAT_Painkillers: CA_Magazine {
     author = "Katalam";
     scope = 2;
 
     displayName = "$STR_KAT_aceCirculation_Painkillers_Box_Display";
     descriptionShort = "$STR_KAT_aceCirculation_Painkillers_DescShort";
-    model = "\A3\Structures_F_EPA\Items\Medical\PainKillers_F.p3d";
+    model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
     picture = "\kat_acecirculation\images\icon_painkillers.paa";
 
     ammo = "";
@@ -179,26 +166,15 @@ class cfgMagazines {
 };
 
 class cfgVehicles {
-	class Item_Base_F;
-  class KAT_PainkillersItem: Item_Base_F {
-      scope = 2;
-      scopeCurator = 2;
-      displayName= "$STR_KAT_aceCirculation_Painkillers_Display";
-      author = "Katalam";
-      vehicleClass = "Items";
-      class TransportItems {
-        MACRO_ADDITEM(KAT_Painkillers,1);
-      };
-  };
   class WeaponHolder_Single_limited_item_F;
-  class KAT_PainkillersBoxItem: WeaponHolder_Single_limited_item_F {
+  class KAT_PainkillersItem: WeaponHolder_Single_limited_item_F {
       scope = 2;
       scopeCurator = 2;
       displayName= "$STR_KAT_aceCirculation_Painkillers_Box_Display";
       author = "Katalam";
       vehicleClass = "Magazines";
       class TransportItems {
-          MACRO_ADDITEM(KAT_PainkillersBox,1);
+          MACRO_ADDITEM(KAT_Painkillers,1);
       };
   };
   class adv_aceCPR_AEDItem;
@@ -215,16 +191,15 @@ class cfgVehicles {
   class NATO_Box_Base;
 	class ACE_medicalSupplyCrate: NATO_Box_Base {
 		class TransportItems;
-    //class TransportMagazines;
+    class TransportMagazines;
 	};
 	class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
 		class TransportItems: TransportItems {
-			MACRO_ADDITEM(KAT_Painkillers,20);
       MACRO_ADDITEM(KAT_X_AED,1);
 		};
-    //class TransportMagazines: TransportMagazines {
-      //MACRO_ADDITEM(KAT_PainkillersBox,5);
-    //};
+    class TransportMagazines: TransportMagazines {
+      MACRO_ADDMAGAZINE(KAT_Painkillers,10);
+    };
 	};
 
 class Man;
@@ -237,8 +212,8 @@ class Man;
         class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
         class Painkillers {
           displayName = "$STR_KAT_aceCirculation_Inject_Box_Painkillers";
-          condition = "('KAT_PainkillersBox' in (magazines _player) || 'KAT_PainkillersBox' in (magazines _target))";
-          statement = "[_player, _target, 'head', 'PainkillersBox'] call ace_medical_fnc_treatment";
+          condition = "('KAT_Painkillers' in (magazines _player) || 'KAT_Painkillers' in (magazines _target))";
+          statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_fnc_treatment";
           showDisabled = 0;
           exceptions[] = {"isNotSitting"};
           icon = "kat_aceCirculation\images\icon_painkillers_action.paa";
@@ -262,43 +237,15 @@ class Man;
         };
       };
       class ACE_ArmLeft {
-        class FieldDressing;
-        class Morphine;
-        class Painkillers: Morphine {
-          displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
-          condition = "[_player, _target, 'hand_l', 'PainKillers'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_l', 'PainKillers'] call ace_medical_fnc_treatment";
-        };
         #include "Blood_ArmL.hpp"
       };
       class ACE_ArmRight {
-        class FieldDressing;
-        class Morphine;
-        class Painkillers: Morphine {
-          displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
-          condition = "[_player, _target, 'hand_r', 'PainKillers'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_r', 'PainKillers'] call ace_medical_fnc_treatment";
-        };
         #include "Blood_ArmR.hpp"
       };
       class ACE_LegLeft {
-        class FieldDressing;
-        class Morphine;
-        class Painkillers: Morphine {
-          displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
-          condition = "[_player, _target, 'leg_l', 'PainKillers'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_l', 'PainKillers'] call ace_medical_fnc_treatment";
-        };
         #include "Blood_LegL.hpp"
       };
       class ACE_LegRight {
-        class FieldDressing;
-        class Morphine;
-        class Painkillers: Morphine {
-          displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
-          condition = "[_player, _target, 'leg_r', 'PainKillers'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'leg_r', 'PainKillers'] call ace_medical_fnc_treatment";
-        };
         #include "Blood_LegR.hpp"
       };
       class ACE_MainActions {
@@ -307,8 +254,8 @@ class Man;
             class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
             class Painkillers {
               displayName = "$STR_KAT_aceCirculation_Inject_Box_Painkillers";
-              condition = "('KAT_PainkillersBox' in (magazines _player) || 'KAT_PainkillersBox' in (magazines _target))";
-              statement = "[_player, _target, 'head', 'PainkillersBox'] call ace_medical_fnc_treatment";
+              condition = "('KAT_Painkillers' in (magazines _player) || 'KAT_Painkillers' in (magazines _target))";
+              statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_fnc_treatment";
               showDisabled = 0;
               exceptions[] = {"isNotSitting"};
               icon = "kat_aceCirculation\images\icon_painkillers_action.paa";
@@ -332,43 +279,15 @@ class Man;
             };
           };
           class ACE_ArmLeft {
-            class FieldDressing;
-            class Morphine;
-            class Painkillers: Morphine {
-              displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
-              condition = "[_player, _target, 'hand_l', 'PainKillers'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_l', 'PainKillers'] call ace_medical_fnc_treatment";
-            };
             #include "Blood_ArmL.hpp"
           };
           class ACE_ArmRight {
-            class FieldDressing;
-            class Morphine;
-            class Painkillers: Morphine {
-              displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
-              condition = "[_player, _target, 'hand_r', 'Painkillers'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_r', 'Painkillers'] call ace_medical_fnc_treatment";
-            };
             #include "Blood_ArmR.hpp"
           };
           class ACE_LegLeft {
-            class FieldDressing;
-            class Morphine;
-            class Painkillers: Morphine {
-              displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
-              condition = "[_player, _target, 'leg_l', 'PainKillers'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'leg_l', 'PainKillers'] call ace_medical_fnc_treatment";
-            };
             #include "Blood_LegL.hpp"
           };
           class ACE_LegRight {
-            class FieldDressing;
-            class Morphine;
-            class Painkillers: Morphine {
-              displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
-              condition = "[_player, _target, 'leg_r', 'PainKillers'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'leg_r', 'PainKillers'] call ace_medical_fnc_treatment";
-            };
             #include "Blood_LegR.hpp"
           };
         };
@@ -377,10 +296,11 @@ class Man;
     class ACE_SelfActions {
       class Medical {
         class ACE_Head {
+          class CheckBloodPressure {};
           class Painkillers {
             displayName = "$STR_KAT_aceCirculation_Inject_Box_Painkillers";
-            condition = "'KAT_PainkillersBox' in (magazines _player)";
-            statement = "[_player, _target, 'head', 'PainkillersBox'] call ace_medical_fnc_treatment";
+            condition = "'KAT_Painkillers' in (magazines _player)";
+            statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_fnc_treatment";
             showDisabled = 0;
             exceptions[] = {"isNotInside", "isNotSitting"};
             icon = "kat_aceCirculation\images\icon_painkillers_action.paa";
@@ -414,17 +334,12 @@ class ACE_Medical_Actions {
     class FieldDressing;
     class Morphine;
     class Painkillers: Morphine {
-      displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
-      displayNameProgress = $STR_KAT_aceCirculation_Injecting;
-      items[] = {"KAT_Painkillers"};
-    };
-    class PainkillersBox: Morphine {
       displayName = $STR_KAT_aceCirculation_Inject_Box_Painkillers;
       displayNameProgress = $STR_KAT_aceCirculation_Using;
       allowedSelections[] = {"head"};
       items[] = {};
-      callbackSuccess = "['KAT_PainkillersBox', _player, _target, _selectionName, 'PainKillers'] call kat_aceCirculation_fnc_removeItemfromMag";
-      condition = "'KAT_PainkillersBox' in (magazines _player)";
+      callbackSuccess = "['KAT_Painkillers', _player, _target, _selectionName, 'Painkillers'] call kat_aceCirculation_fnc_removeItemfromMag";
+      condition = "('KAT_Painkillers' in (magazines _player) || 'KAT_Painkillers' in (magazines _target))";
     };
     class CheckPulse;
     class CheckDogtags: checkPulse {
@@ -436,24 +351,27 @@ class ACE_Medical_Actions {
       callbackSuccess = "[_player, _target] call ace_dogtags_fnc_checkDogtag";
       condition = "true";
     };
+    class CheckBloodPressure: CheckPulse { // Remove the ability to check blood pressure at the head
+      allowedSelections[] = {"hand_l", "hand_r", "leg_l", "leg_r"};
+    };
     class BloodIV;
     class BloodIV_O: BloodIV {
-      displayName = $STR_KAT_aceCirculation_Action_BloodIV_O
+      displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
       items[] = {"KAT_bloodIV_O"};
       callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
     };
     class BloodIV_A: BloodIV {
-      displayName = $STR_KAT_aceCirculation_Action_BloodIV_A
+      displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
       items[] = {"KAT_bloodIV_A"};
       callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
     };
     class BloodIV_B: BloodIV {
-      displayName = $STR_KAT_aceCirculation_Action_BloodIV_B
+      displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
       items[] = {"KAT_bloodIV_B"};
       callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
     };
     class BloodIV_AB: BloodIV {
-      displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB
+      displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
       items[] = {"KAT_bloodIV_AB"};
       callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
     };
@@ -539,7 +457,6 @@ class ACE_Medical_Actions {
     };
     class Medication {
       class Atropine {
-        //{minIncrease, maxIncrease, seconds}
         //change for effect from Atropine. Anomalie here, if you give more it will push your heart rate
         hrIncreaseLow[] = {2, 5, 15};
         hrIncreaseNormal[] = {10, 15, 20};
