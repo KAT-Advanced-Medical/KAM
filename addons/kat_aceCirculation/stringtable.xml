@@ -73,10 +73,6 @@
         <English>Give Blood IV (250ml) BT: AB</English>
         <German>Bluttransfusion IV (250ml) BG: AB</German>
       </Key>
-      <Key ID="STR_KAT_aceCirculation_Painkillers_Display">
-        <English>Tramabeta</English>
-        <German>Tramabeta</German>
-      </Key>
       <Key ID="STR_KAT_aceCirculation_Painkillers_DescShort">
         <English>Used to suppress pain</English>
         <German>Schmerzbekämpfer</German>
@@ -85,10 +81,6 @@
         <English>An analgesic used to combat lightly to moderate pain experiences.</English>
         <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
       </Key>
-      <Key ID="STR_KAT_aceCirculation_Inject_Painkillers">
-        <English>Inject Tramabeta</English>
-        <German>Injiziere Tramabeta</German>
-      </Key>
       <Key ID="STR_KAT_aceCirculation_Painkillers_Box_Display">
         <English>Painkillers</English>
         <German>Schmerzmittel</German>
@@ -96,10 +88,6 @@
       <Key ID="STR_KAT_aceCirculation_Inject_Box_Painkillers">
         <English>Use Painkillers</English>
         <German>Schlucke Schmerzmittel</German>
-      </Key>
-      <Key ID="STR_KAT_aceCirculation_Injecting">
-        <English>Injecting</English>
-        <German>Injiziere</German>
       </Key>
       <Key ID="STR_KAT_aceCirculation_Using">
         <English>Using</English>
