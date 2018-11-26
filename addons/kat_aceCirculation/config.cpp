@@ -124,6 +124,32 @@ class cfgWeapons {
   class KAT_bloodIV_AB: ACE_bloodIV {
     displayName = $STR_KAT_aceCirculation_BloodIV_AB;
   };
+  class ACE_bloodIV_500;
+  class KAT_bloodIV_O_500: ACE_bloodIV_500 {
+    displayName = "$STR_KAT_aceCirculation_BloodIV_O_500";
+  };
+  class KAT_bloodIV_A_500: ACE_bloodIV_500 {
+    displayName = "$STR_KAT_aceCirculation_BloodIV_A_500";
+  };
+  class KAT_bloodIV_B_500: ACE_bloodIV_500 {
+    displayName = "$STR_KAT_aceCirculation_BloodIV_B_500";
+  };
+  class KAT_bloodIV_AB_500: ACE_bloodIV_500 {
+    displayName = "$STR_KAT_aceCirculation_BloodIV_AB_500";
+  };
+  class ACE_bloodIV_250;
+  class KAT_bloodIV_O_250: ACE_bloodIV_250 {
+    displayName = "$STR_KAT_aceCirculation_BloodIV_O_250";
+  };
+  class KAT_bloodIV_A_250: ACE_bloodIV_250 {
+    displayName = "$STR_KAT_aceCirculation_BloodIV_A_250";
+  };
+  class KAT_bloodIV_B_250: ACE_bloodIV_250 {
+    displayName = "$STR_KAT_aceCirculation_BloodIV_B_250";
+  };
+  class KAT_bloodIV_AB_250: ACE_bloodIV_250 {
+    displayName = "$STR_KAT_aceCirculation_BloodIV_AB_250";
+  };
   class KAT_Painkillers: ACE_ItemCore {
     scope = 1; // no mistake, just a placeholder, cause ACE can't handle magazines. DO NOT USE!
     author = "Katalam";
@@ -346,7 +372,7 @@ class ACE_Medical_Actions {
       displayName = $STR_KAT_aceCirculation_DogTag;
       displayNameProgress = $STR_KAT_aceCirculation_DogTag_Action;
       treatmentTime = 2;
-      allowedSelections[] = {"body"};
+      allowedSelections[] = {"head"};
       allowSelfTreatment = 1;
       callbackSuccess = "[_player, _target] call ace_dogtags_fnc_checkDogtag";
       condition = "true";
@@ -354,27 +380,7 @@ class ACE_Medical_Actions {
     class CheckBloodPressure: CheckPulse { // Remove the ability to check blood pressure at the head
       allowedSelections[] = {"hand_l", "hand_r", "leg_l", "leg_r"};
     };
-    class BloodIV;
-    class BloodIV_O: BloodIV {
-      displayName = $STR_KAT_aceCirculation_Action_BloodIV_O;
-      items[] = {"KAT_bloodIV_O"};
-      callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
-    };
-    class BloodIV_A: BloodIV {
-      displayName = $STR_KAT_aceCirculation_Action_BloodIV_A;
-      items[] = {"KAT_bloodIV_A"};
-      callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
-    };
-    class BloodIV_B: BloodIV {
-      displayName = $STR_KAT_aceCirculation_Action_BloodIV_B;
-      items[] = {"KAT_bloodIV_B"};
-      callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
-    };
-    class BloodIV_AB: BloodIV {
-      displayName = $STR_KAT_aceCirculation_Action_BloodIV_AB;
-      items[] = {"KAT_bloodIV_AB"};
-      callbackSuccess = "_this call kat_aceCirculation_fnc_handleTreatment";
-    };
+    #include "Blood_Medical.hpp"
     class CPR;
     class Defibrillator: CPR {
       items[] = {{"adv_aceCPR_AED", "KAT_X_AED"}};
@@ -399,6 +405,8 @@ class ACE_Medical_Actions {
       callbackSuccess = "_target setVariable ['kat_aceCirculation_X', false, true]; _player setVariable ['kat_aceCirculation_use', false, true]";
     };
 	};
+};
+class ACE_Medical_Advanced {
   class Treatment {
     class IV {
       class BloodIV;
@@ -420,37 +428,37 @@ class ACE_Medical_Actions {
       };
 
       class BloodIV_500;
-      class BloodIV_500_O: BloodIV_500 {
+      class BloodIV_O_500: BloodIV_500 {
         bloodType = "O";
         compatibility[] = {"O", "A", "B", "AB"};
       };
-      class BloodIV_500_A: BloodIV_500 {
+      class BloodIV_A_500: BloodIV_500 {
         bloodType = "A";
         compatibility[] = {"A", "AB"};
       };
-      class BloodIV_500_B: BloodIV_500 {
+      class BloodIV_B_500: BloodIV_500 {
         bloodType = "B";
         compatibility[] = {"B", "AB"};
       };
-      class BloodIV_500_AB: BloodIV_500 {
+      class BloodIV_AB_500: BloodIV_500 {
         bloodType = "AB";
         compatibility[] = {"AB"};
       };
 
       class BloodIV_250;
-      class BloodIV_250_O: BloodIV_250 {
+      class BloodIV_O_250: BloodIV_250 {
         bloodType = "O";
         compatibility[] = {"O", "A", "B", "AB"};
       };
-      class BloodIV_250_A: BloodIV_250 {
+      class BloodIV_A_250: BloodIV_250 {
         bloodType = "A";
         compatibility[] = {"A", "AB"};
       };
-      class BloodIV_250_B: BloodIV_250 {
+      class BloodIV_B_250: BloodIV_250 {
         bloodType = "B";
         compatibility[] = {"B", "AB"};
       };
-      class BloodIV_250_AB: BloodIV_250 {
+      class BloodIV_AB_250: BloodIV_250 {
         bloodType = "AB";
         compatibility[] = {"AB"};
       };
