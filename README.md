@@ -19,7 +19,7 @@ Features
   - [ ] Oxygen saturation
 - aceCirculation
   - [x] Blood Groups
-  - [x]Painkillers as autoinjector
+  - [x] Painkillers as autoinjector
   - [x] Painkillers
   - [x] Bigger AED with monitoring
   - [ ] Drugs with access?
