@@ -1,8 +1,14 @@
-ACE Airway Injuries Addon
+aceAdvMedical
+====
+**Adds several new medical aspects to the ace medical addon**<br/>
+*Created by Katalam*
 
-License under LICENSE
+Thanks to
+---------
++ [Kellerkompanie](http://kellerkompanie.com/)
 
-Feature Overview
+Features
+--------
 
 - aceAirway
   - [x] Airwaymanagement for unconscious patients
@@ -13,15 +19,37 @@ Feature Overview
   - [ ] Oxygen saturation
 - aceCirculation
   - [x] Blood Groups
-  - [X] Painkillers as autoinjector
+  - [x]Painkillers as autoinjector
   - [x] Painkillers
-  - [X] Bigger AED with monitoring
+  - [x] Bigger AED with monitoring
   - [ ] Drugs with access?
 - aceDisability
   - [x] Cut of clothes
-  - [X] Allergical reactions
+  - [x] Allergical reactions
 - aceExposure
   - [ ] Heat-preserving
 - aceMisc
   - [ ] Big Backpack?
-  - [X] Workable IV stand
+  - [x] Workable IV stand
+
+Known Issues
+------------
++ [Issues](https://github.com/Katalam/kat_aceAdvMedical/issues)
+
+Required
+--------
++ [CBA_A3 1.20 or later](http://www.armaholic.com/page.php?id=18767)
++ [ACE3 1.80 or later](https://ace3mod.com/)
+
+Youtube
+--------
++ [Airway](abc)
++ [Breathing](abc)
++ [Circulation](abc)
++ [Disability](abc)
++ [Exposure](abc)
++ [Misc](abc)
+
+Class Names
+--------
++ [click here](abc)
