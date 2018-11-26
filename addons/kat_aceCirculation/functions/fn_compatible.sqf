@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_aceCirculation_fnc_compatible
+ * [cursorTarget, 'BloodIV_AB'] call kat_aceCirculation_fnc_compatible
  *
  * Public: No
  */
