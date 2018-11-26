@@ -16,5 +16,7 @@
 
 params ["_player"];
 
+if !(kat_aceMisc_enable) exitWith {false};
+
 if ([_player] call ace_medical_fnc_isMedic && "ACE_salineIV" in items _player) exitWith {true};
 false;

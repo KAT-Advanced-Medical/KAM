@@ -147,8 +147,7 @@ class ACE_Medical_Actions {
     class SalineIV;
     class SalineIV_Stand: SalineIV {
       requiredMedic = 0;
-      condition = "kat_aceMisc_fnc_conditionIV"
-      //condition = "[_player] call kat_aceMisc_fnc_conditionIV";
+      condition = "kat_aceMisc_fnc_conditionIV";
       items[] = {};
       callbackSuccess = "[_player, _target, _selectionName, 'SalineIV', ['SalineIV']] call kat_aceMisc_fnc_treatmentIV";
       itemConsumed = 0;

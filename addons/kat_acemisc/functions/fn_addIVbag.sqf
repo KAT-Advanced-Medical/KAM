@@ -4,12 +4,13 @@
  *
  * Arguments:
  * 0: _target <OBJECT>
+ * 1: _player <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * call kat_aceMisc_fnc_addIVbag;
+ * [cursorTarget, player] call kat_aceMisc_fnc_addIVbag;
  *
  * Public: No
  */
