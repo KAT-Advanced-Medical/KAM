@@ -4,25 +4,28 @@
  *
  * Arguments:
  * 0: Unit That Was Hit <OBJECT>
+ * 1: Time <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [bob] call kat_aceAirway_fnc_handleTimer;
+ * [player, CBA_missionTime] call kat_aceAirway_fnc_handleTimer;
  *
  * Public: No
  */
 
 params [["_unit", objNull, [objNull]], "_time"];
 
-if (!local _unit) then {
+if (!local _unit) exitWith {
   ["deathTimerA", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
 
 if (kat_aceBreathing_enable) exitWith {
   ["deathTimerB", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
+
+if !(kat_aceAirway_enable) exitWith {};
 
 [{
   params ["_args", "_idPFH"];
