@@ -38,19 +38,20 @@ private _groundHolder = createVehicle ["WeaponHolderSimulated", _target, [], 0.5
 // condition for trachea cut, ther will be NO trachea cut without a complete body check
 _target setVariable ["kat_aceDisability_checked", true, true];
 
-// medical menu output
-private _message = "STR_kat_aceDisability_Action_Message_1_nothing";
-if (_target getVariable ["kat_aceDisability_allergicalreaction", false]) then {
-  _message = "STR_kat_aceDisability_Action_Message_1_bee";
-};
-[_target, "quick_view", localize "STR_kat_aceDisability_cut_log", [[_player] call ace_common_fnc_getName, localize _message]] call ace_medical_fnc_addToLog;
-
 // message output
 private _string = "STR_kat_aceDisability_Action_Message_1_nothing";
-if (_target getVariable "kat_aceDisability_allergicalreaction") then {
-  _string = "STR_kat_aceDisability_Action_Message_1_bee";
+switch ((_target getVariable "kat_aceDisability_allergicalreaction") select 0) do {
+  case "HoneyBee": {
+    _string = "STR_kat_aceDisability_Action_Message_1_bee";
+  };
+  default {};
 };
-_message = format [localize "STR_kat_aceDisability_Action_Message", localize _string];
+
+// medical menu output
+[_target, "quick_view", localize "STR_kat_aceDisability_cut_log", [[_player] call ace_common_fnc_getName, localize _string]] call ace_medical_fnc_addToLog;
+
+// player hint
+private _message = format [localize "STR_kat_aceDisability_Action_Message", localize _string];
 [_message, 2, _player] call ace_common_fnc_displayTextStructured;
 
 // remove uniform is there is one
