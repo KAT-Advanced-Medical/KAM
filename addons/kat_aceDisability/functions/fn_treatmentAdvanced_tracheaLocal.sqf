@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [bob] call kat_aceDisability_fnc_treatmentAdvanced_tracheaLocal;
+ * [player, cursorTarget] call kat_aceDisability_fnc_treatmentAdvanced_tracheaLocal;
  *
  * Public: No
  */

@@ -9,6 +9,14 @@
         <English>Cut of clothes</English>
         <German>Ausziehen</German>
       </Key>
+      <Key ID="STR_kat_aceDisability_Action_Display_fasttraumasearch">
+        <English>Fast trauma search</English>
+        <German>Schnelle Trauma Untersuchung</German>
+      </Key>
+      <Key ID="STR_kat_aceDisability_Action_Progress_fasttraumasearch">
+        <English>Examine</English>
+        <German>Untersuche</German>
+      </Key>
       <Key ID="STR_kat_aceDisability_Action_Message">
         <English>You cutted the uniform and found %1</English>
         <German>Du hast seine Kleidung entfernt und findest %1</German>

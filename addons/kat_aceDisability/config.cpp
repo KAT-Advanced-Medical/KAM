@@ -77,12 +77,20 @@ class Man;
 	class CAManBase: Man {
 		class ACE_Actions {
 			class ACE_Torso {
-        class FieldDressing;
         class CutOfClothes {
           displayName = "$STR_kat_aceDisability_Action_Display";
           distance = 2.0;
           condition = "[_player, _target, 'body', 'CutOfClothes'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'body', 'CutOfClothes'] call ace_medical_fnc_treatment";
+          exceptions[] = {""};
+          showDisabled = 0;
+          icon = "";
+        };
+        class fasttraumasearch {
+          displayName = "$STR_kat_aceDisability_Action_Display_fasttraumasearch";
+          distance = 2.0;
+          condition = "[_player, _target, 'body', 'fasttraumasearch'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'body', 'fasttraumasearch'] call ace_medical_fnc_treatment";
           exceptions[] = {""};
           showDisabled = 0;
           icon = "";
@@ -102,12 +110,20 @@ class Man;
 			class ACE_MainActions {
 				class Medical {
           class ACE_Torso {
-            class FieldDressing;
             class CutOfClothes {
               displayName = "$STR_kat_aceDisability_Action_Display";
               distance = 2.0;
               condition = "[_player, _target, 'body', 'CutOfClothes'] call ace_medical_fnc_canTreatCached";
               statement = "[_player, _target, 'body', 'CutOfClothes'] call ace_medical_fnc_treatment";
+              exceptions[] = {""};
+              showDisabled = 0;
+              icon = "";
+            };
+            class fasttraumasearch {
+              displayName = "$STR_kat_aceDisability_Action_Display_fasttraumasearch";
+              distance = 2.0;
+              condition = "[_player, _target, 'body', 'fasttraumasearch'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'body', 'fasttraumasearch'] call ace_medical_fnc_treatment";
               exceptions[] = {""};
               showDisabled = 0;
               icon = "";
@@ -202,7 +218,7 @@ class ACE_Medical_Actions {
         requiredMedic = 1;
         treatmentTime = 15;
         items[] = {};
-        condition = "!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable ['kat_aceDisability_enable',true])";
+        condition = "!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable ['kat_aceDisability_enable',true]) && !(uniform _target isEqualTo '')";
         patientStateCondition = 0;
         callbackSuccess = "[_player, _target] call kat_aceDisability_fnc_treatmentAdvanced_clothes";
         callbackFailure = "";
@@ -216,6 +232,12 @@ class ACE_Medical_Actions {
         animationCallerSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
         animationCallerSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
+    };
+    class fasttraumasearch: CutOfClothes {
+      displayName = "$STR_kat_aceDisability_Action_Display_fasttraumasearch";
+      displayNameProgress = $STR_kat_aceDisability_Action_Progress_fasttraumasearch;
+      condition = "!([_target] call ace_common_fnc_isAwake) && (missionNamespace getVariable ['kat_aceDisability_enable',true]) && (uniform _target isEqualTo '')";
+      callbackSuccess = "[_player, _target] call kat_aceDisability_fnc_treatmentAdvanced_clothes";
     };
     class tracheaCut: CutOfClothes {
       displayName = "$STR_kat_aceDisability_Action_tracheaCut_Display";
