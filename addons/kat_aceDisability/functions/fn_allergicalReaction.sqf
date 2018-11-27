@@ -26,8 +26,10 @@ private _message = localize "STR_kat_aceDisability_feelingbad";
 
 // visual effect for the player
 private _effect = objNull;
+private _classNameEffect = objNull;
 switch (random 2) do {
   case 0: {
+    _classNameEffect = "ColorCorrections";
     _effect = ppEffectCreate ["ColorCorrections", 5100];
     _effect ppEffectEnable true;
     _effect ppEffectForceInNVG true;
@@ -43,6 +45,7 @@ switch (random 2) do {
     _effect ppEffectCommit 30;
   };
   case 1: {
+    _classNameEffect = "WetDistortion";
     _effect = ppEffectCreate ["WetDistortion", 300];
     _effect ppEffectEnable true;
     _effect ppEffectForceInNVG true;
@@ -69,7 +72,7 @@ switch (random 2) do {
 };
 
 // set allergical reaction variable with pp effect and boolean swollen
-_unit setVariable ["kat_aceDisability_allergicalreaction", [_className, _effect], true];
+_unit setVariable ["kat_aceDisability_allergicalreaction", [_className, _effect, _classNameEffect], true];
 if !(_unit getVariable ["kat_aceAirway_swollen", false]) then {
 	_unit setVariable ["kat_aceAirway_swollen", _swollen, true];
 };

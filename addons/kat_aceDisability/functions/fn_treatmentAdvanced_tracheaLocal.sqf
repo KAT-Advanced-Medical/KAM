@@ -32,15 +32,30 @@ private _output = localize "STR_kat_aceDisability_Done";
 
 // destroy pp effect in 30 sec smoothly
 private _allergical = _target getVariable ["kat_aceDisability_allergicalreaction", []];
-_allergical params ["", "_ppeffect"];
-_ppeffect ppEffectAdjust [
- 1,
- 1,
- 0,
- [0, 0, 0, 0],
- [1, 1, 1, 1],
- [0.6, 0.6, 0.2, 0],
- [-1, -1, 0, 1, 0, 0, 0]
-];
-_ppeffect ppEffectCommit 30;
+_allergical params ["", "_ppeffect", "_classNameEffect"];
+
+switch (_classNameEffect) do {
+  case "ColorCorrections": {
+    _ppeffect ppEffectAdjust [
+     1,
+     1,
+     0,
+     [0, 0, 0, 0],
+     [1, 1, 1, 1],
+     [0.6, 0.6, 0.2, 0],
+     [-1, -1, 0, 1, 0, 0, 0]
+    ];
+    _ppeffect ppEffectCommit 30;
+  };
+  case "WetDistortion": {
+    _ppeffect ppEffectAdjust [
+      1,
+      0, 0,
+      4.10, 3.70, 2.50, 1.85,
+      0.0054, 0.0041, 0.05, 0.0070,
+      1, 1, 1, 1
+    ];
+  };
+  default {};
+};
 [{ppEffectDestroy _this}, [_ppeffect], 30] call CBA_fnc_waitAndExecute;
