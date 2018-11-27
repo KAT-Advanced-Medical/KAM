@@ -3,7 +3,7 @@ class CfgPatches
 {
     class kat_aceDisability
     {
-        units[] = {"kat_aceDisability_ModuleBee"};
+        units[] = {"kat_aceDisability_ModuleBee", "kat_aceDisability_ModuleAllergical"};
         weapons[] = {};
         requiredVersion = 1.80;
         requiredAddons[] = {
@@ -41,6 +41,8 @@ class CfgFunctions {
         class events{};
         class handleInit{};
         class init{};
+        class moduleAllergical{};
+        class moduleBee{};
         class registerSettings{};
         class treatmentAdvanced_clothes{};
         class treatmentAdvanced_clothesLocal{};
@@ -139,14 +141,13 @@ class Module_F: Logic {
       class CheckboxNumber;
       class ModuleDescription;
       class Units;
-        expression = "_this setVariable ['%s',_value];";
     };
 };
 class kat_aceDisability_moduleBase: Module_F {
   author = "Katalam";
   displayName = "Test";
   category = kat_aceDisability_base;
-  function = "kat_aceDisability_fnc_dummy";
+  function = "";
   functionPriority = 1;
   isGlobal = 1;
   isTriggerActivated = 0;
@@ -157,7 +158,7 @@ class kat_aceDisability_moduleBase3den: Module_F {
   author = "Katalam";
   displayName = "Base Module";
   category = kat_aceDisability_base;
-  function = "kat_aceDisability_fnc_dummy";
+  function = "";
   functionPriority = 1;
   isGlobal = 1;
   isTriggerActivated = 1;
@@ -168,7 +169,14 @@ class kat_aceDisability_moduleBase3den: Module_F {
 
 class kat_aceDisability_moduleBee: kat_aceDisability_moduleBase {
   displayName = "Create Bees";
-  function = "kat_aceDisability_fnc_bee";
+  function = "kat_aceDisability_fnc_moduleBee";
+  curatorCanAttach = 1;
+};
+
+class kat_aceDisability_moduleAllergical: kat_aceDisability_moduleBase {
+  displayName = "Spawn allergical reaction";
+  function = "kat_aceDisability_fnc_moduleAllergical";
+  curatorCanAttach = 1;
 };
 
    class NATO_Box_Base;

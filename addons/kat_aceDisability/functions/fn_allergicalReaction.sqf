@@ -25,19 +25,48 @@ private _message = localize "STR_kat_aceDisability_feelingbad";
 [_message, 1.5, _unit] call ace_common_fnc_displayTextStructured;
 
 // visual effect for the player
-private _effect = ppEffectCreate ["ColorCorrections", 5100];
-_effect ppEffectEnable true;
-_effect ppEffectForceInNVG true;
-_effect ppEffectAdjust [
- 1,
- 1,
- 0,
- [0, 0, 0, 0],
- [1, 1, 1, 0],
- [0.6, 0.6, 0.2, 0],
- [-1, -1, 0, 1, 0, 0, 0]
-];
-_effect ppEffectCommit 30;
+private _effect = objNull;
+switch (random 2) do {
+  case 0: {
+    _effect = ppEffectCreate ["ColorCorrections", 5100];
+    _effect ppEffectEnable true;
+    _effect ppEffectForceInNVG true;
+    _effect ppEffectAdjust [
+      1,
+      1,
+      0,
+      [0, 0, 0, 0],
+      [1, 1, 1, 0],
+      [0.6, 0.6, 0.2, 0],
+      [-1, -1, 0, 1, 0, 0, 0]
+    ];
+    _effect ppEffectCommit 30;
+  };
+  case 1: {
+    _effect = ppEffectCreate ["WetDistortion", 300];
+    _effect ppEffectEnable true;
+    _effect ppEffectForceInNVG true;
+    _effect ppEffectAdjust [
+      1,
+      0,
+      1,
+      4.10,
+      3.70,
+      2.50,
+      1.85,
+      0.0054,
+      0.0041,
+      0.05,
+      0.0070,
+      1,
+      1,
+      1,
+      1
+    ];
+    _effect ppEffectCommit 30;
+    };
+    default {};
+};
 
 // set allergical reaction variable with pp effect and boolean swollen
 _unit setVariable ["kat_aceDisability_allergicalreaction", [_className, _effect], true];
