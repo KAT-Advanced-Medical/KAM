@@ -3,7 +3,10 @@ class CfgPatches
 {
     class kat_aceDisability
     {
-        units[] = {"kat_aceDisability_ModuleBee", "kat_aceDisability_ModuleAllergical"};
+        units[] = {
+          "kat_aceDisability_ModuleBee",
+          "kat_aceDisability_ModuleAllergical"
+        };
         weapons[] = {};
         requiredVersion = 1.80;
         requiredAddons[] = {

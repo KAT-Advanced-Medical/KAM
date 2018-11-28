@@ -28,7 +28,7 @@ params ["_target", "_player"];
 		// exit if _target isn't a valid IV stand
 		if !([_className, 0, 17] call BIS_fnc_trimString isEqualTo "Land_IntravenStand") exitWith {};
 
-		// get some paramaters
+		// get some parameters
 		private _newObjectClass = "";
 		if (_className isEqualTo "Land_IntravenStand_01_empty_F") then {
 			_newObjectClass = "Land_IntravenStand_01_1bag_F";
