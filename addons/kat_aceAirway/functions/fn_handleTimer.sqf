@@ -1,9 +1,9 @@
 /*
  * Author: Katalam
- * Handling death timer for airway injuries
+ * Death time handler for airway damage
  *
  * Arguments:
- * 0: Unit That Was Hit <OBJECT>
+ * 0: Unit <OBJECT>
  * 1: Time <NUMBER>
  *
  * Return Value:

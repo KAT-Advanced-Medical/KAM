@@ -1,17 +1,17 @@
 /*
  * Author: Katalam
- * Handling of the airway injuries.
+ * Handler for airway damage.
  *
  * Arguments:
- * 0: Unit That Was Hit <OBJECT>
- * 1: Name Of Hit Selection <STRING>
+ * 0: Unit <OBJECT>
+ * 1: Hit Selection <STRING>
  * 2: Amount Of Damage <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [bob, "leg", 2] call kat_aceAirway_fnc_handleDamage_airway
+ * [player, "leg_l", 2] call kat_aceAirway_fnc_handleDamage_airway;
  *
  * Public: No
  */

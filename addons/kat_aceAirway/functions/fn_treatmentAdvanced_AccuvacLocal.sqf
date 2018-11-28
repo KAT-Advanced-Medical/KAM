@@ -1,17 +1,16 @@
 /*
  * Author: Katalam
- * Handles the airway management of a patient.
+ * Airway Management for occluding local
  *
  * Arguments:
- * 0: The patient <OBJECT>
- * 1: Item used classname <STRING>
- *
+ * 0: Patient <OBJECT>
+ * 1: Item classname <STRING>
  *
  * Return Value:
- * True
+ * Succesful treatment <BOOL>
  *
  * Example:
- * [bob, "classname"] call kat_aceAirway_fnc_treatmentAdvanced_larynxLocal
+ * [player, "Accuvac"] call kat_aceAirway_fnc_treatmentAdvanced_accuvacLocal;
  *
  * Public: No
  */

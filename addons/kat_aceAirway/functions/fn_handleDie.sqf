@@ -1,9 +1,9 @@
 /*
  * Author: Katalam
- * Handling the respawn for any reason for airway injuries
+ * Handling the respawn for any reason for airway damage
  *
  * Arguments:
- * 0: Unit That Was Hit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * None

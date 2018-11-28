@@ -3,13 +3,13 @@
  * Called when a unit enters the unconscious state. Will add a FrameHandler for puking while unconscious.
  *
  * Arguments:
- * 0: The Unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [cursorTarget] call kat_aceAirway_fnc_handlePuking;
+ * [player] call kat_aceAirway_fnc_handlePuking;
  *
  * Public: No
  */

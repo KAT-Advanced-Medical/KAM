@@ -1,19 +1,19 @@
 /*
  * Author: Katalam
- * Airway Management
+ * Airway Management for collapsing local
  *
  * Arguments:
- * 0: The medic <OBJECT>
- * 1: The patient <OBJECT>
+ * 0: Medic <OBJECT>
+ * 1: Patient <OBJECT>
  * 2: Treatment classname <STRING>
  *
  * Return Value:
- * Succesful treatment started <BOOL>
+ * Succesful treatment <BOOL>
  *
  * Example:
- * [medic, patient, "Larynxtubus"] call kat_aceAirway_fnc_treatmentAdvanced_airwayLocal
+ * [player, cursorTarget, "Larynxtubus"] call kat_aceAirway_fnc_treatmentAdvanced_airwayLocal;
  *
- * Public: Yes
+ * Public: No
  */
 
 params ["_caller", "_target", "_className"];

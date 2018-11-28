@@ -3,15 +3,14 @@
  * Overstretch the head of the patient for airway management without items
  *
  * Arguments:
- * 0: The soldier <OBJECT>
- * 1: The patient <OBJECT>
- *
+ * 0: Soldier <OBJECT>
+ * 1: Patient <OBJECT>
  *
  * Return Value:
- * True
+ * Succesful treatment <BOOL>
  *
  * Example:
- * [bob1, bob2] call kat_aceAirway_fnc_treatmentAdvanced_overstretchHead
+ * [player, cursorTarget] call kat_aceAirway_fnc_treatmentAdvanced_overstretchHead;
  *
  * Public: No
  */
@@ -48,3 +47,5 @@ private _output = localize "STR_kat_aceAirway_overstretch_info";
   _output = localize "STR_kat_aceAirway_overstretch_cancel";
   [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 }] call CBA_fnc_waitUntilAndExecute;
+
+true;

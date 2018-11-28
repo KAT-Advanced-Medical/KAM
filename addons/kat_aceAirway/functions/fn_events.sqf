@@ -1,6 +1,6 @@
 /*
  * Author: Katalam
- * CBA Events function
+ * CBA Events function - Post Init
  *
  * Arguments:
  * None

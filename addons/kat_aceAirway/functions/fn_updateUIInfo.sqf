@@ -1,16 +1,16 @@
 /*
- * Author: Glowbal
+ * Author: Glowbal Edit: Katalam
  * Update all UI information in the medical menu
  *
  * Arguments:
- * 0: target <OBJECT>
- * 1: display <DISPLAY>
+ * 0: Target <OBJECT>
+ * 1: Display <DISPLAY>
  *
  * Return Value:
  * None
  *
  * Example:
- * [some_player, some_display] call ace_medical_menu_fnc_updateUIInfo
+ * [player, some_display] call ace_medical_menu_fnc_updateUIInfo;
  *
  * Public: No
  */

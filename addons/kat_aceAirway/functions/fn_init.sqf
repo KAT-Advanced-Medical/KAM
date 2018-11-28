@@ -3,13 +3,13 @@
  * Initializes unit variables.
  *
  * Arguments:
- * 0: The Unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [bob] call kat_aceAirway_fnc_init
+ * [player] call kat_aceAirway_fnc_init;
  *
  * Public: No
  */

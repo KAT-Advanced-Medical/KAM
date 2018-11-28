@@ -1,17 +1,16 @@
 /*
  * Author: Katalam
- * turns the head of the patient for airway management without items
+ * Turns the head of the patient for airway management without items
  *
  * Arguments:
- * 0: The soldier <OBJECT>
- * 1: The patient <OBJECT>
- *
+ * 0: Soldier <OBJECT>
+ * 1: Patient <OBJECT>
  *
  * Return Value:
- * True
+ * Succesful treatment <BOOL>
  *
  * Example:
- * [bob1, bob2] call kat_aceAirway_fnc_treatmentAdvanced_turnaroundHead
+ * [player, cursorTarget] call kat_aceAirway_fnc_treatmentAdvanced_turnaroundHead;
  *
  * Public: No
  */
@@ -24,7 +23,7 @@ if !(_target getVariable ["ace_medical_airwayOccluded", false]) exitWith {
    false;
 };
 
-// head turning animation?
+// TO-DO: head turning animation
 
 private _output = localize "STR_kat_aceAirway_turnaround_info";
 [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
@@ -32,3 +31,5 @@ private _output = localize "STR_kat_aceAirway_turnaround_info";
 if (random 100 < 35) then {
   _target setVariable ["ace_medical_airwayOccluded", false, true];
 };
+
+true;

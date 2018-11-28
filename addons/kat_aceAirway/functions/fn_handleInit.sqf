@@ -1,16 +1,15 @@
 /*
  * Author: Katalam
- * Called when a unit is initialized via XEH_init
+ * Unit Init Handler
  *
  * Arguments:
- * 0: The Unit <OBJECT>
- * 1: The Group <GROUP>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [bob] call kat_aceAirway_fnc_handleInit;
+ * [player] call kat_aceAirway_fnc_handleInit;
  *
  * Public: No
  */

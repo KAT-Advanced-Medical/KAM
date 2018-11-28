@@ -1,20 +1,16 @@
 /*
  * Author: Katalam
- * Airway Management
+ * Airway Management for occluding
  *
  * Arguments:
- * 0: The medic <OBJECT>
- * 1: The patient <OBJECT>
- * 2: SelectionName <STRING>
- * 3: Treatment classname <STRING>
- * 4: Item <STRING>
- * 5: specific Spot <NUMBER> (default: -1)
+ * 0: Medic <OBJECT>
+ * 1: Patient <OBJECT>
  *
  * Return Value:
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [medic, patient] call kat_aceAirway_fnc_treatmentAdvanced_accuvac
+ * [player, cursorTarget] call kat_aceAirway_fnc_treatmentAdvanced_accuvac;
  *
  * Public: Yes
  */
