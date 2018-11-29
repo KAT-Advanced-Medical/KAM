@@ -5,21 +5,29 @@
           <English>ACE-Breathing activated?</English>
           <German>ACE-Atmung aktiviert?</German>
       </Key>
-      <Key ID="STR_kat_aceBreathing_Pulsoxymeter_Display">
-          <English>Use Pulsoxymeter</English>
-          <German>benutze Pulsoxymeter</German>
+      <Key ID="STR_kat_aceBreathing_SETTING_Value_Before">
+          <English>Value to add or remove to the SpO2 before 100 sec</English>
+          <German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird vor 100 s</German>
       </Key>
-      <Key ID="STR_kat_aceBreathing_Pulsoxymeter_Display_Remove">
-          <English>Remove Pulsoxymeter</English>
-          <German>Entferne Pulsoxymeter</German>
+      <Key ID="STR_kat_aceBreathing_SETTING_Value_After">
+        <English>Value to add or remove to the SpO2 after 100 sec</English>
+        <German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird nach 100 s</German>
       </Key>
-      <Key ID="STR_kat_aceBreathing_Pulsoxymeter_Desc_Short">
-          <English>Pulsoxymeter</English>
-          <German>Pulsoxymeter</German>
+      <Key ID="STR_kat_aceBreathing_Pulseoximeter_Display">
+          <English>Use Pulseoximeter</English>
+          <German>benutze Pulseoximeter</German>
       </Key>
-      <Key ID="STR_kat_aceBreathing_Pulsoxymeter_Desc_Use">
-          <English>Pulsoxymeter</English>
-          <German>Pulsoxymeter</German>
+      <Key ID="STR_kat_aceBreathing_Pulseoximeter_Display_Remove">
+          <English>Remove Pulseoximeter</English>
+          <German>Entferne Pulseoximeter</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_Pulseoximeter_Desc_Short">
+          <English>Pulseoximeter</English>
+          <German>Pulseoximeter</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_Pulseoximeter_Desc_Use">
+          <English>Pulseoximeter</English>
+          <German>Pulseoximeter</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_placing">
           <English>Placing</English>
@@ -30,16 +38,16 @@
           <German>Entferne</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_pulsoxy_NA">
-          <English>Pulsoxymeter already connected</English>
-          <German>Pulsoxymeter bereits vorhanden</German>
+          <English>Pulseoximeter already connected</English>
+          <German>Pulseoximeter bereits vorhanden</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_pulsoxy_Log">
-          <English>Pulsoxymeter: HR: %1 SpO2: %2</English>
-          <German>Pulsoxymeter: HR: %1 SpO2: %2</German>
+          <English>Pulseoximeter: HR: %1 SpO2: %2</English>
+          <German>Pulseoximeter: HR: %1 SpO2: %2</German>
       </Key>
       <Key ID="STR_kat_aceBreathing_pulsoxy_Log_2">
-          <English>%1 connected Pulsoxymeter</English>
-          <German>%1 hat Pulsoxymeter angelegt</German>
+          <English>%1 connected Pulseoximeter</English>
+          <German>%1 hat Pulseoximeter angelegt</German>
       </Key>
 		</Package>
 </Project>

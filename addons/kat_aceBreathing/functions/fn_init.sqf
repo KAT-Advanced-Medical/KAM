@@ -16,5 +16,5 @@
 
 params ["_unit"];
 
-_unit setVariable ["kat_aceBreathing_pulsoxymeter", false, true];
+_unit setVariable ["kat_aceBreathing_pulseoximeter", false, true];
 //_unit setVariable ["ace_medical_airwayStatus", 100, true];

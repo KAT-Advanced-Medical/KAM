@@ -26,20 +26,21 @@ if (!local _unit) then {
 [{
   params ["_args", "_idPFH"];
   _args params ["_unit", "_startTime"];
-  private _alive = _unit getVariable ["ACE_isUnconscious", false];
-  if (_alive || _unit getVariable ["ace_medical_occluded", false] || _unit getVariable ["ace_medical_collapsed", false]) exitWith {
+  private _alive = [_unit] call ace_common_fnc_isAwake;
+  if (_alive || !(_unit getVariable ["ace_medical_airwayOccluded", false] || _unit getVariable ["ace_medical_airwayCollapsed", false])) exitWith {
     [_idPFH] call CBA_fnc_removePerFrameHandler;
     ["aliveTimerB", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
   };
-  if (_unit getVariable ["ace_medical_airwayStatus", 100] isEqualTo 0) exitWith {
+  if (_unit getVariable ["kat_aceAirway_overstretch", false] && !(_unit getVariable ["ace_medical_airwayOccluded", false])) exitWith {};
+  if (_unit getVariable ["ace_medical_airwayStatus", 100] <= 5) exitWith {
     [_idPFH] call CBA_fnc_removePerFrameHandler;
     [_unit, true] call ace_medical_fnc_setDead;
   };
   if (CBA_missionTime - _startTime > 100) then {
-    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) - 1; //You will have 110 sec to be forced in unconscious state
+    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) - kat_aceBreathing_spo2_after_value; //You will have 110 sec to be forced in unconscious state with 1 and 0.2
     _unit setVariable ["ace_medical_airwayStatus", _newValue, true];
   } else {
-    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) - 0.2;
+    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) - kat_aceBreathing_spo2_before_value;
     _unit setVariable ["ace_medical_airwayStatus", _newValue, true];
   };
 }, 1, [_unit, _time]] call CBA_fnc_addPerFrameHandler;

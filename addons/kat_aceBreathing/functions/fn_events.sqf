@@ -14,7 +14,7 @@
  * Public: No
  */
 
-["treatmentPulsoxymeter", {_this call kat_aceBreathing_fnc_treatmentAdvanced_pulsoxymeterLocal}] call CBA_fnc_addEventHandler;
+["treatmentPulseoximeter", {_this call kat_aceBreathing_fnc_treatmentAdvanced_pulseoximeterLocal}] call CBA_fnc_addEventHandler;
 ["deathTimerB", {_this call kat_aceBreathing_fnc_handleTimer}] call CBA_fnc_addEventHandler;
 ["aliveTimerB", {_this call kat_aceBreathing_fnc_handleTimerAlive}] call CBA_fnc_addEventHandler;
 

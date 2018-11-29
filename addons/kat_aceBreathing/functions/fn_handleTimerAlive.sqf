@@ -30,10 +30,10 @@ if (!local _unit) then {
     [_idPFH] call CBA_fnc_removePerFrameHandler;
   };
   if (CBA_missionTime - _startTime > 100) then {
-    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) + 1; // You have 110 sec to get back to 100 % saturation is you waked up at 70.
+    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) + kat_aceBreathing_spo2_after_value; // You have 110 sec to get back to 100 % saturation if you waked up at 70 with 1 and 0.2
     _unit setVariable ["ace_medical_airwayStatus", _newValue, true];
   } else {
-    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) + 0.2;
+    private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) + kat_aceBreathing_spo2_before_value;
     _unit setVariable ["ace_medical_airwayStatus", _newValue, true];
   };
 }, 1, [_unit, _time]] call CBA_fnc_addPerFrameHandler;

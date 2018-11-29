@@ -4,10 +4,10 @@ class CfgPatches
     class kat_aceBreathing
     {
         units[] = {
-			"KAT_PulsoxymeterItem"
+			"KAT_PulseoximeterItem"
 		};
         weapons[] = {
-      "KAT_Pulsoxymeter"
+      "KAT_Pulseoximeter"
 		};
         requiredVersion = 1.80;
         requiredAddons[] = {
@@ -31,16 +31,16 @@ class CfgFunctions {
 	class kat_aceBreathing {
     file = "kat_aceBreathing\functions";
 		class functions {
-        class canPulsoxymeter{};
+        class canPulseoximeter{};
         class events{};
         class handleInit{};
         class handleTimer{};
         class handleTimerAlive{};
         class init{};
         class registerSettings{};
-        class treatmentAdvanced_pulsoxymeter{};
-        class treatmentAdvanced_pulsoxymeterLocal{};
-        class treatmentAdvanced_removePulsoxymeter{};
+        class treatmentAdvanced_pulseoximeter{};
+        class treatmentAdvanced_pulseoximeterLocal{};
+        class treatmentAdvanced_removePulseoximeter{};
 		};
 	};
 };
@@ -68,13 +68,13 @@ class cfgWeapons {
 	class ACE_ItemCore;
 	class CBA_MiscItem_ItemInfo;
 
-  class KAT_Pulsoxymeter: ACE_ItemCore {
+  class KAT_Pulseoximeter: ACE_ItemCore {
       scope = 2;
       author = "Katalam";
-      displayName= "$STR_kat_aceBreathing_Pulsoxymeter_Display";
-      descriptionShort = "$STR_kat_aceBreathing_Pulsoxymeter_Desc_Short";
-      descriptionUse = "$STR_kat_aceBreathing_Pulsoxymeter_Desc_Use";
-      picture = "\kat_aceBreathing\images\Pulsoxymeter_normal.paa";
+      displayName= "$STR_kat_aceBreathing_Pulseoximeter_Desc_Short";
+      descriptionShort = "$STR_kat_aceBreathing_Pulseoximeter_Desc_Short";
+      descriptionUse = "$STR_kat_aceBreathing_Pulseoximeter_Desc_Use";
+      picture = "\kat_aceBreathing\images\Pulseoximeter_normal.paa";
       class ItemInfo: CBA_MiscItem_ItemInfo {
           mass = 1;
       };
@@ -84,14 +84,14 @@ class cfgWeapons {
 class cfgVehicles {
 	class Item_Base_F;
 
-  class KAT_PulsoxymeterItem: Item_Base_F {
+  class KAT_PulseoximeterItem: Item_Base_F {
       scope = 2;
       scopeCurator = 2;
-      displayName= "$STR_kat_aceBreathing_Pulsoxymeter_Display";
+      displayName= "$STR_kat_aceBreathing_Pulseoximeter_Desc_Short";
       author = "Katalam";
       vehicleClass = "Items";
       class TransportItems {
-          MACRO_ADDITEM(KAT_Pulsoxymeter,1);
+          MACRO_ADDITEM(KAT_Pulseoximeter,1);
       };
   };
 
@@ -101,7 +101,7 @@ class cfgVehicles {
   };
   class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
     class TransportItems: TransportItems {
-      MACRO_ADDITEM(KAT_Pulsoxymeter,3);
+      MACRO_ADDITEM(KAT_Pulseoximeter,3);
     };
   };
 
@@ -109,40 +109,40 @@ class Man;
 	class CAManBase: Man {
 		class ACE_Actions {
 			class ACE_ArmLeft {
-        class Pulsoxymeter {
-          displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display;
+        class Pulseoximeter {
+          displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
           distance = 2.0;
-          condition = "[_player, _target, 'hand_l', 'Pulsoxymeter'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_l', 'Pulsoxymeter'] call ace_medical_fnc_treatment";
+          condition = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_treatment";
           exceptions[] = {""};
           showDisabled = 0;
           icon = "";
         };
-        class RemovePulsoxymeter {
-          displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display_Remove;
+        class RemovePulseoximeter {
+          displayName = $STR_kat_aceBreathing_Pulseoximeter_Display_Remove;
           distance = 2.0;
-          condition = "[_player, _target, 'hand_l', 'RemovePulsoxymeter'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_l', 'RemovePulsoxymeter'] call ace_medical_fnc_treatment";
+          condition = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";
           exceptions[] = {""};
           showDisabled = 0;
           icon = "";
         };
 			};
       class ACE_ArmRight {
-        class Pulsoxymeter {
-          displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display;
+        class Pulseoximeter {
+          displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
           distance = 2.0;
-          condition = "[_player, _target, 'hand_r', 'Pulsoxymeter'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_r', 'Pulsoxymeter'] call ace_medical_fnc_treatment";
+          condition = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_treatment";
           exceptions[] = {""};
           showDisabled = 0;
           icon = "";
         };
-        class RemovePulsoxymeter {
-          displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display_Remove;
+        class RemovePulseoximeter {
+          displayName = $STR_kat_aceBreathing_Pulseoximeter_Display_Remove;
           distance = 2.0;
-          condition = "[_player, _target, 'hand_r', 'RemovePulsoxymeter'] call ace_medical_fnc_canTreatCached";
-          statement = "[_player, _target, 'hand_r', 'RemovePulsoxymeter'] call ace_medical_fnc_treatment";
+          condition = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
+          statement = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";
           exceptions[] = {""};
           showDisabled = 0;
           icon = "";
@@ -151,40 +151,40 @@ class Man;
 			class ACE_MainActions {
 				class Medical {
 					class ACE_ArmLeft {
-            class Pulsoxymeter {
-              displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display;
+            class Pulseoximeter {
+              displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
               distance = 2.0;
-              condition = "[_player, _target, 'hand_l', 'Pulsoxymeter'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_l', 'Pulsoxymeter'] call ace_medical_fnc_treatment";
+              condition = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_treatment";
               exceptions[] = {""};
               showDisabled = 0;
               icon = "";
             };
-            class RemovePulsoxymeter {
-              displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display_Remove;
+            class RemovePulseoximeter {
+              displayName = $STR_kat_aceBreathing_Pulseoximeter_Display_Remove;
               distance = 2.0;
-              condition = "[_player, _target, 'hand_l', 'RemovePulsoxymeter'] call ace_medical_fnc_canTreatCached";
-              statement = "[_player, _target, 'hand_l', 'RemovePulsoxymeter'] call ace_medical_fnc_treatment";
+              condition = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
+              statement = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";
               exceptions[] = {""};
               showDisabled = 0;
               icon = "";
             };
 				   };
          class ACE_ArmRight {
-           class Pulsoxymeter {
-             displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display;
+           class Pulseoximeter {
+             displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
              distance = 2.0;
-             condition = "[_player, _target, 'hand_r', 'Pulsoxymeter'] call ace_medical_fnc_canTreatCached";
-             statement = "[_player, _target, 'hand_r', 'Pulsoxymeter'] call ace_medical_fnc_treatment";
+             condition = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
+             statement = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_treatment";
              exceptions[] = {""};
              showDisabled = 0;
              icon = "";
            };
-           class RemovePulsoxymeter {
-             displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display_Remove;
+           class RemovePulseoximeter {
+             displayName = $STR_kat_aceBreathing_Pulseoximeter_Display_Remove;
              distance = 2.0;
-             condition = "[_player, _target, 'hand_r', 'RemovePulsoxymeter'] call ace_medical_fnc_canTreatCached";
-             statement = "[_player, _target, 'hand_r', 'RemovePulsoxymeter'] call ace_medical_fnc_treatment";
+             condition = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
+             statement = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";
              exceptions[] = {""};
              showDisabled = 0;
              icon = "";
@@ -198,8 +198,8 @@ class Man;
 
 class ACE_Medical_Actions {
 	class Advanced {
-    class Pulsoxymeter {
-        displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display;
+    class Pulseoximeter {
+        displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
         displayNameProgress = $STR_kat_aceBreathing_placing;
         category = "examine";
         treatmentLocations[] = {"All"};
@@ -207,10 +207,10 @@ class ACE_Medical_Actions {
         allowSelfTreatment = 0;
         requiredMedic = 1;
         treatmentTime = 2;
-        items[] = {"KAT_Pulsoxymeter"};
+        items[] = {"KAT_Pulseoximeter"};
         condition = "missionNamespace getVariable 'kat_aceBreathing_enable'";
         patientStateCondition = 0;
-        callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pulsoxymeter";
+        callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pulseoximeter";
         callbackFailure = "";
         callbackProgress = "";
         itemConsumed = 1;
@@ -223,8 +223,8 @@ class ACE_Medical_Actions {
         animationCallerSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
-    class RemovePulsoxymeter {
-        displayName = $STR_kat_aceBreathing_Pulsoxymeter_Display_Remove;
+    class RemovePulseoximeter {
+        displayName = $STR_kat_aceBreathing_Pulseoximeter_Display_Remove;
         displayNameProgress = $STR_kat_aceBreathing_remove;
         category = "examine";
         treatmentLocations[] = {"All"};
@@ -233,9 +233,9 @@ class ACE_Medical_Actions {
         requiredMedic = 1;
         treatmentTime = 2;
         items[] = {};
-        condition = "[_target] call kat_aceBreathing_fnc_canPulsoxymeter";
+        condition = "[_target] call kat_aceBreathing_fnc_canPulseoximeter";
         patientStateCondition = 0;
-        callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_removePulsoxymeter";
+        callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_removePulseoximeter";
         callbackFailure = "";
         callbackProgress = "";
         itemConsumed = 0;
