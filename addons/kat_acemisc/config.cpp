@@ -113,6 +113,7 @@ class Man;
       class ACE_ArmLeft {
         class SalineIV;
         class SalineIV_Stand: SalineIV {
+          displayName = "$STR_kat_aceMisc_Display_IVStand";
           condition = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
         };
@@ -120,6 +121,7 @@ class Man;
       class ACE_ArmRight {
         class SalineIV;
         class SalineIV_Stand: SalineIV {
+          displayName = "$STR_kat_aceMisc_Display_IVStand";
           condition = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
         };
@@ -127,6 +129,7 @@ class Man;
       class ACE_LegLeft {
         class SalineIV;
         class SalineIV_Stand: SalineIV {
+          displayName = "$STR_kat_aceMisc_Display_IVStand";
           condition = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
         };
@@ -134,6 +137,7 @@ class Man;
       class ACE_LegRight {
         class SalineIV;
         class SalineIV_Stand: SalineIV {
+          displayName = "$STR_kat_aceMisc_Display_IVStand";
           condition = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
         };
@@ -146,6 +150,7 @@ class ACE_Medical_Actions {
 	class Advanced {
     class SalineIV;
     class SalineIV_Stand: SalineIV {
+      displayName = "$STR_kat_aceMisc_Display_IVStand";
       requiredMedic = 0;
       condition = "kat_aceMisc_fnc_conditionIV";
       items[] = {};

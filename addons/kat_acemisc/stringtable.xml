@@ -13,5 +13,9 @@
         <English>Attach IV</English>
         <German>IV anhängen</German>
       </Key>
+      <Key ID="STR_kat_aceMisc_Display_IVStand">
+        <English>Stand: Saline IV (1000ml)</English>
+        <German>Ständer: Saline IV (1000ml)</German>
+      </Key>
 		</Package>
 </Project>
