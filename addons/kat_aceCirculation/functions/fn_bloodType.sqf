@@ -6,10 +6,10 @@
  * 0: unit <OBJECT>
  *
  * Return Value:
- * 0: A spezific blood type <STRING>
+ * 0: Blood type <STRING>
  *
  * Example:
- * [cursorTarget] call kat_aceCirculation_fnc_bloodType
+ * [cursorTarget] call kat_aceCirculation_fnc_bloodType;
  *
  * Public: No
  */

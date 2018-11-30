@@ -1,12 +1,12 @@
 /*
  * Author: Katalam
- * Handle the IV for the patient with blood types. Have to be local to avoid effect on all clients
+ * Handle the IV for the patient with blood types. Have to be local to avoid effect on all clients.
  *
  * Arguments:
- * 0: unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
- * None
+ * 0: Successful <BOOLEAN>
  *
  * Example:
  * [cursorTarget, 'Blood_IV_A'] call kat_aceCirculation_fnc_treatmentAdvanced_IV
@@ -17,6 +17,7 @@
 params ["_unit", "_className"];
 
 if !(local _unit) exitWith {["treatmentIVfalse", [_unit, _className], _unit] call CBA_fnc_targetEvent};
+private _return = false;
 
 private _counts = _unit getVariable ["kat_aceCirculation_IV_counts", 0];
 if (_counts isEqualTo 0) then {_counts = 1};
@@ -36,3 +37,6 @@ private _hradjust = _volume / 25;
 //todo tod?
 private _a = (_unit getVariable ["kat_aceCirculation_IV_counts", 0]) + 1;
 _unit setVariable ["kat_aceCirculation_IV_counts", _a, true];
+
+_return = true;
+_return;

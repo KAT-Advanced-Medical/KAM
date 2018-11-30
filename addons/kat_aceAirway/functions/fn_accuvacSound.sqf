@@ -30,8 +30,5 @@ if !(_caller getVariable ["kat_aceAirway_sound",false]) then {
 	};
 };
 
-//return
-//private _return = if !([_target] call ace_common_fnc_isAwake) then {true} else {false};
 private _return = true;
-
 _return;

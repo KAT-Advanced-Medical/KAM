@@ -3,13 +3,13 @@
  * Initializes unit variables.
  *
  * Arguments:
- * 0: The Unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [cursorTarget] call kat_aceCirculation_fnc_init
+ * [player] call kat_aceCirculation_fnc_init;
  *
  * Public: No
  */
@@ -25,4 +25,7 @@ _unit setVariable ["kat_aceCirculation_X", false, true];
 _unit setVariable ['kat_aceCirculation_X_sound1', "kat_aceCirculation\sounds\noheartrate.wav", true];
 _unit setVariable ['kat_aceCirculation_X_sound2', "kat_aceCirculation\sounds\heartrate.wav", true];
 _unit setVariable ["kat_aceCirculation_use", false, true];
-//kat_aceCirculation_loadout
+/*
+ * kat_aceCirculation_loadout
+ * You can add your unit class in the variable above and it will show up at the dog tag. If you don't it will take the localized displayName of the unit.
+ */

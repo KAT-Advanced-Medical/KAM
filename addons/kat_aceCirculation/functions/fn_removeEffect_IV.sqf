@@ -1,15 +1,15 @@
 /*
  * Author: Katalam
- * Remove the effect for the patient.
+ * Remove the false blood effect for the patient.
  *
  * Arguments:
- * 0: unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player] call kat_aceCirculation_fnc_removeEffect_IV
+ * [player] call kat_aceCirculation_fnc_removeEffect_IV;
  *
  * Public: No
  */

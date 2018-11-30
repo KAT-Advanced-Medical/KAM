@@ -13,6 +13,14 @@ class CfgPatches
       "KAT_bloodIV_A",
       "KAT_bloodIV_B",
       "KAT_bloodIV_AB",
+      "KAT_bloodIV_O_500",
+      "KAT_bloodIV_A_500",
+      "KAT_bloodIV_B_500",
+      "KAT_bloodIV_AB_500",
+      "KAT_bloodIV_O_250",
+      "KAT_bloodIV_A_250",
+      "KAT_bloodIV_B_250",
+      "KAT_bloodIV_AB_250",
       "KAT_X_AED"
 		};
         requiredVersion = 1.80;
@@ -22,8 +30,8 @@ class CfgPatches
       "adv_aceCPR",
       "cba_settings"
 		};
-		version = "0.6";
-		versionStr = "0.6";
+		version = "0.7";
+		versionStr = "0.7";
 		author = "[SeL] Katalam";
 		authorUrl = "http://spezialeinheit-luchs.de/";
     };
@@ -259,7 +267,7 @@ class Man;
           condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_treatment";
           exceptions[] = {""};
-          icon = "kat_aceCirculation\images\X_Series-Device_W.paa";
+          icon = "kat_aceCirculation\images\X_Series-Device_W.paa"; // this is ugly xD should be changed
         };
       };
       class ACE_ArmLeft {
@@ -471,10 +479,12 @@ class ACE_Medical_Advanced {
         hrIncreaseHigh[] = {5, 20, 10};
       };
       class Painkillers {
+        // copied from ACE. Just a reminder
         painReduce = 0.7;
         timeInSystem = 120;
         maxDose = 10;
         inCompatableMedication[] = {};
+        // will push your blood pressure and leave your heart rate
         viscosityChange = 5;
       };
     };

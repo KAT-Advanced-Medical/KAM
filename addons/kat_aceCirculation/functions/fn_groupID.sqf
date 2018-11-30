@@ -1,15 +1,16 @@
 /*
  * Author: Katalam
  * Returns the groupname for a given unit.
+ * And unit class.
  *
  * Arguments:
- * 0: unit <OBJECT>
+ * 0: Player <OBJECT>
  *
  * Return Value:
- * 0: Groupname <STRING>
+ * 0: Groupname: unit class <STRING>
  *
  * Example:
- * [cursorTarget] call kat_aceCirculation_fnc_groupID
+ * [cursorTarget] call kat_aceCirculation_fnc_groupID;
  *
  * Public: No
  */

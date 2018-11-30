@@ -3,14 +3,14 @@
  * Handle the compatibility for blood and patient.
  *
  * Arguments:
- * 0: unit <OBJECT>
- * 1: className <STRING>
+ * 0: Player <OBJECT>
+ * 1: Class Name <STRING>
  *
  * Return Value:
- * None
+ * Compatible <BOOLEAN>
  *
  * Example:
- * [cursorTarget, 'BloodIV_AB'] call kat_aceCirculation_fnc_compatible
+ * [cursorTarget, 'BloodIV_AB'] call kat_aceCirculation_fnc_compatible;
  *
  * Public: No
  */

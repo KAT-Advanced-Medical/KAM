@@ -3,33 +3,37 @@
  * Handle the X Series Defi for the patient.
  *
  * Arguments:
- * 0: unit <OBJECT>
- * 1: target <OBJECT>
+ * 0: Unit <OBJECT>
+ * 1: Target <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_aceCirculation_fnc_treatmentAdvanced_X
+ * [player, cursorTarget] call kat_aceCirculation_fnc_treatmentAdvanced_X;
  *
  * Public: No
  */
 
 params ["_player", "_target"];
 
+// if there is already a connected x-series exitWith a hint
 if (_target getVariable ["kat_aceCirculation_X", false]) exitWith {
   private _output = localize "STR_KAT_aceCirculation_X_already";
   [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 };
 
+// connect the x-series
 _target setVariable ["kat_aceCirculation_X", true, true];
 _player setVariable ["kat_aceCirculation_use", true, true];
 
+// shock advise. If there is a heart rate. No shock.
 if (_target getVariable ["ace_medical_heartRate", 80] > 0) then {
   playsound3D ["kat_aceCirculation\sounds\noshock.wav", _target, false, getPosASL _target, 8, 1, 15];
 };
 
 // medical menu log
+// logs every second the heart rate and the blood pressure.
 private _string = "HR: %1 BP: %2/%3";
 [{
   params ["_args", "_idPFH"];
@@ -41,6 +45,7 @@ private _string = "HR: %1 BP: %2/%3";
 }, 1, [_string, _target]] call CBA_fnc_addPerFrameHandler;
 
 // 300 sec is maximum for monitoring, then you have to connect it again. It's more something that you can't forget to remove it.
+// disconnect the x-series
 [{
   params ["_player", "_target"];
   (_target distance2D _player) > 50;
@@ -60,7 +65,7 @@ private _string = "HR: %1 BP: %2/%3";
   _player setVariable ['kat_aceCirculation_use', false, true];
 }] call CBA_fnc_waitUntilAndExecute;
 
-// the heart rate sound
+// spawns the heart rate beep.
 [_target, _player] spawn {
   params ["_target", "_player"];
   while {_target getVariable ["kat_aceCirculation_X", false]} do {

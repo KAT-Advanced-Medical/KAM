@@ -1,16 +1,15 @@
 /*
  * Author: Katalam
- * Called when a unit is initialized via XEH_init
+ * Handle the unit init.
  *
  * Arguments:
- * 0: The Unit <OBJECT>
- * 1: The Group <GROUP>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [cursorTarget] call kat_aceCirculation_fnc_handleInit;
+ * [player] call kat_aceCirculation_fnc_handleInit;
  *
  * Public: No
  */
