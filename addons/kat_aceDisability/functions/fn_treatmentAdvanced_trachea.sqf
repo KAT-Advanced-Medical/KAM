@@ -1,9 +1,9 @@
 /*
  * Author: Katalam
- * Function for treatment of the alergical reaction to a bee thing
+ * Function for treatment of the allergical reaction to a bee.
  *
  * Arguments:
- * 0: _target <OBJECT>
+ * 0: Target <OBJECT>
  *
  * Return Value:
  * None

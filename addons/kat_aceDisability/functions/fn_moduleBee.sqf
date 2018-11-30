@@ -1,6 +1,6 @@
 /*
  * Author: Katalam
- * Module Handler for bee creating
+ * Module Handler for bee creating.
  *
  * Arguments:
  * Logic <LOGIC>
@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * call kat_aceDisability_fnc_moduleBee;
+ * [_logic] call kat_aceDisability_fnc_moduleBee;
  *
  * Public: No
  */

@@ -1,6 +1,6 @@
 /*
  * Author: Katalam
- * Module Handler for allergical reaction
+ * Module Handler for allergical reaction.
  *
  * Arguments:
  * Logic <LOGIC>
@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * call kat_aceDisability_fnc_moduleAllergical;
+ * [_logic] call kat_aceDisability_fnc_moduleAllergical;
  *
  * Public: No
  */

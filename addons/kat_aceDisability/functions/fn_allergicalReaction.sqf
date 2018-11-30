@@ -3,15 +3,15 @@
  * Function for the allergical reaction.
  *
  * Arguments:
- * 0: _target <OBJECT>
- * 1: _className <STRING>
- * 2: _swollen <BOOLEAN>
+ * 0: Target <OBJECT>
+ * 1: ClassName <STRING>
+ * 2: Swollen <BOOLEAN>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, "HoneyBee", true] call kat_aceDisability_fnc_allergicalReaction
+ * [player, "HoneyBee", true] call kat_aceDisability_fnc_allergicalReaction;
  *
  * Public: No
  */

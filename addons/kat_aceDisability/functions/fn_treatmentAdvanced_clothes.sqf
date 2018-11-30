@@ -3,14 +3,14 @@
  * Handles remove clothes function
  *
  * Arguments:
- * 0: The medic <OBJECT>
- * 1: The patient <OBJECT>
+ * 0: Medic <OBJECT>
+ * 1: Patient <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * call kat_aceDisability_fnc_treatmentAdvanced_clothes;
+ * [player, cursorTarget] call kat_aceDisability_fnc_treatmentAdvanced_clothes;
  *
  * Public: No
  */

@@ -3,13 +3,13 @@
  * Handles the initialisation.
  *
  * Arguments:
- * 0: The Unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [bob] call kat_aceDisability_fnc_handleInit;
+ * [player] call kat_aceDisability_fnc_handleInit;
  *
  * Public: No
  */

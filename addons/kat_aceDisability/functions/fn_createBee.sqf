@@ -4,9 +4,9 @@
  *
  * Arguments:
  * 0: Spawn position <OBJECT, STRING, POSITION>
- * 1: Radius <NUMBER>
- * 2: Number of animals <NUMBER>
- * 3: Spawn height <NUMBER>
+ * 1: Radius <NUMBER>, optional
+ * 2: Number of animals <NUMBER>, optional
+ * 3: Spawn height <NUMBER>, optional
  * 4: Animal Classname <STRING>, optional
  *
  * Return Value:
@@ -14,6 +14,7 @@
  *
  * Example:
  * [player, 2, 25, 45, "HoneyBee"] call kat_aceDisability_fnc_createBee;
+ * [player] call kat_aceDisability_fnc_createBee;
  *
  * Public: No
  */
