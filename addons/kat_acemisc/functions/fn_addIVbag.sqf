@@ -3,8 +3,8 @@
  * Adds a IV bag for the medicine IV stands.
  *
  * Arguments:
- * 0: _target <OBJECT>
- * 1: _player <OBJECT>
+ * 0: Target <OBJECT>
+ * 1: Player <OBJECT>
  *
  * Return Value:
  * None

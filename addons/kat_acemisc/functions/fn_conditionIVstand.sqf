@@ -3,10 +3,10 @@
  * Condition check for the medicine IV stands to add a bag.
  *
  * Arguments:
- * 0: _player <OBJECT>
+ * 0: Player <OBJECT>
  *
  * Return Value:
- * None
+ * Cann add IV bag <BOOLEAN>
  *
  * Example:
  * [player] call kat_aceMisc_fnc_conditionIVstand;

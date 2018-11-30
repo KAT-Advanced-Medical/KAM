@@ -3,7 +3,7 @@
  * Treatment handle function to remove a bag.
  *
  * Arguments:
- * 0: _player <OBJECT>
+ * 0: Player <OBJECT>
  *
  * Return Value:
  * None

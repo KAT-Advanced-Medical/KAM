@@ -3,10 +3,10 @@
  * Condition check for the medicine IV stands to remove a bag.
  *
  * Arguments:
- * 0: _player <OBJECT>
+ * 0: Player <OBJECT>
  *
  * Return Value:
- * None
+ * Allowed to remove a IV bag <BOOLEAN>
  *
  * Example:
  * [player] call kat_aceMisc_fnc_conditionIV;

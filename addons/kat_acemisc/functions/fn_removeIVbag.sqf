@@ -3,13 +3,13 @@
  * Removes a IV bag for the medicine IV stands.
  *
  * Arguments:
- * 0: _player <OBJECT>
+ * 0: Player <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * call kat_aceMisc_fnc_removeIVbag;
+ * [player] call kat_aceMisc_fnc_removeIVbag;
  *
  * Public: No
  */

@@ -1,9 +1,9 @@
 /*
  * Author: Katalam
- * Called when a unit is initialized via XEH_init
+ * Handle unit init.
  *
  * Arguments:
- * 0: The Unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * None
