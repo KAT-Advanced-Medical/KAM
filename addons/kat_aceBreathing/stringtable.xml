@@ -49,5 +49,23 @@
           <English>%1 connected Pulseoximeter</English>
           <German>%1 hat Pulseoximeter angelegt</German>
       </Key>
+      <Key ID="STR_kat_aceBreathing_hint_name">
+          <English>Breathing</English>
+          <German>Atmung</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_hint_desc">
+          <English>Breathing
+          %1sufficiently ventilated?
+          %1SpO2 over 70% -> Yes
+          %1SpO2 under 70% -> No -> ass. Breathing</English>
+          <German>Atmung - Breathing
+          %1Ausreichend belüftet?
+          %1SpO2 über 70% -> Ja
+          %1SpO2 unter 70% -> Nein -> ass. Beatmung</German>
+      </Key>
+      <Key ID="STR_kat_aceBreathing_hint_tip">
+          <English>If you saved the airway with a larynxtube skip this</English>
+          <German>Falls du die Atemwege mit einem Laryntubus sicherst überspring diesen Schritt</German>
+      </Key>
 		</Package>
 </Project>
