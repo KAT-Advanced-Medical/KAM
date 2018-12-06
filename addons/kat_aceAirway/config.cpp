@@ -125,7 +125,7 @@ class cfgWeapons {
 	class CBA_MiscItem_ItemInfo;
 
   class KAT_larynx: ACE_ItemCore {
-      scope=2;
+      scope = 2;
       author = "Katalam";
       displayName= "$STR_kat_aceAirway_Larynx_Display";
       descriptionShort = "$STR_kat_aceAirway_Larynx_Desc_Short";
@@ -136,7 +136,7 @@ class cfgWeapons {
       };
   };
   class KAT_guedel: ACE_ItemCore {
-      scope=2;
+      scope = 2;
       author = "Katalam";
       displayName= "$STR_kat_aceAirway_Guedel_Display";
       descriptionShort =  "$STR_kat_aceAirway_Guedel_Desc_Short";
@@ -147,7 +147,7 @@ class cfgWeapons {
       };
   };
   class KAT_accuvac: ACE_ItemCore {
-      scope=2;
+      scope = 2;
       author = "Katalam";
       displayName= "Accuvac";
       descriptionShort = "$STR_kat_aceAirway_Accuvac_Desc_Short";
