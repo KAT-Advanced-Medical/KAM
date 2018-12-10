@@ -18,8 +18,8 @@ class CfgPatches
 			"ace_medical"
 			,"cba_settings"
 		};
-		version = "0.9.3";
-		versionStr = "0.9.3";
+		version = "0.9.4";
+		versionStr = "0.9.4";
 		author = "[SeL] Katalam";
 		authorUrl = "http://spezialeinheit-luchs.de/";
     };
