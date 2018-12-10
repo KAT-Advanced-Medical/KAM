@@ -20,7 +20,7 @@ params [["_unit", objNull, [objNull]], "_time"];
 if !(kat_aceBreathing_enable) exitWith {};
 
 if (!local _unit) then {
- ["deathTimerB", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
+ ["deathTimerBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
 
 [{
