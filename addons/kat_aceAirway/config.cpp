@@ -76,7 +76,7 @@ class CfgFunctions {
         class accuvacSound{};
         class checkAirway{};
         class events{};
-        class handleDamage_airway{};
+        class handleAirway{};
         class handleDie{};
         class handleInit{};
         class handlePuking{};
