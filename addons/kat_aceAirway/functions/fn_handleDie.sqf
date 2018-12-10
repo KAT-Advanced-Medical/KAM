@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [bob] call kat_aceAirway_fnc_handleDie;
+ * [player] call kat_aceAirway_fnc_handleDie;
  *
  * Public: No
  */

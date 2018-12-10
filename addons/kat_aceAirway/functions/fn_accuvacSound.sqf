@@ -30,5 +30,4 @@ if !(_caller getVariable ["kat_aceAirway_sound",false]) then {
 	};
 };
 
-private _return = true;
-_return;
+true;
