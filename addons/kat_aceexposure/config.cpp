@@ -64,7 +64,7 @@ class Man;
         class FieldDressing;
         class Morphine;
         class Painkillers: Morphine {
-          displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
+          displayName = $STR_KAT_aceCirculation_Inject_Box_Painkillers;
           condition = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_treatment";
         };
