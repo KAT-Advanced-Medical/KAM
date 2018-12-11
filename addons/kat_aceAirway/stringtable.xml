@@ -30,8 +30,8 @@
           <German>Überprüfe Atemwege</German>
       </Key>
       <Key ID="STR_kat_aceAirway_checkAirway_log">
-          <English>%1 checked airways: %2 %3</English>
-          <German>%1 überprüfte Atemwege: %2 %3</German>
+          <English>%1 checked airways: %2 %3, %4 %5</English>
+          <German>%1 überprüfte Atemwege: %2 %3, %4 %5</German>
       </Key>
       <Key ID="STR_kat_aceAirway_airway_log">
           <English>%1 intubated with %2</English>
