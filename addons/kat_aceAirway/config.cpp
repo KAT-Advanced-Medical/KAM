@@ -99,6 +99,14 @@ class CfgFunctions {
       };
     };
   };
+  class kat_aceMedical {
+    tag = "ace_medical";
+    class ace_medical {
+      class displayPatientInformation {
+        file = "kat_aceAirway\functions\fn_displayPatientInformation.sqf";
+      };
+    };
+  };
 };
 
 class Extended_PreInit_EventHandlers {
