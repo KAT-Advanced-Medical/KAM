@@ -37,15 +37,15 @@
           <English>Removing</English>
           <German>Entferne</German>
       </Key>
-      <Key ID="STR_kat_aceBreathing_pulsoxy_NA">
+      <Key ID="STR_kat_aceBreathing_pulseoxi_NA">
           <English>Pulseoximeter already connected</English>
           <German>Pulseoximeter bereits vorhanden</German>
       </Key>
-      <Key ID="STR_kat_aceBreathing_pulsoxy_Log">
+      <Key ID="STR_kat_aceBreathing_pulseoxi_Log">
           <English>Pulseoximeter: HR: %1 SpO2: %2</English>
           <German>Pulseoximeter: HR: %1 SpO2: %2</German>
       </Key>
-      <Key ID="STR_kat_aceBreathing_pulsoxy_Log_2">
+      <Key ID="STR_kat_aceBreathing_pulseoxi_Log_2">
           <English>%1 connected Pulseoximeter</English>
           <German>%1 hat Pulseoximeter angelegt</German>
       </Key>
