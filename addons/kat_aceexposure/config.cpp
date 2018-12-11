@@ -55,7 +55,7 @@ class Extended_PostInit_EventHandlers {
     init = "call kat_aceExposure_fnc_events";
   };
 };
-
+/*
 class cfgVehicles {
 class Man;
 	class CAManBase: Man {
@@ -64,7 +64,7 @@ class Man;
         class FieldDressing;
         class Morphine;
         class Painkillers: Morphine {
-          displayName = $STR_KAT_aceCirculation_Inject_Painkillers;
+          displayName = $STR_KAT_aceCirculation_Inject_Box_Painkillers;
           condition = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_canTreatCached";
           statement = "[_player, _target, 'hand_l', 'Painkillers'] call ace_medical_fnc_treatment";
         };
@@ -104,3 +104,4 @@ class ACE_Medical_Actions {
     };
 	};
 };
+*/
