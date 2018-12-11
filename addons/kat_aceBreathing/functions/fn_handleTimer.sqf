@@ -26,10 +26,8 @@ if (!local _unit) then {
 [{
   params ["_args", "_idPFH"];
   _args params ["_unit", "_startTime"];
-  private _alive = [_unit] call ace_common_fnc_isAwake;
-  if (_alive || !(_unit getVariable ["ace_medical_airwayOccluded", false] || _unit getVariable ["ace_medical_airwayCollapsed", false])) exitWith {
+  if ([_unit] call ace_common_fnc_isAwake || _unit getVariable ["kat_aceAirway_airway", false]) exitWith {
     [_idPFH] call CBA_fnc_removePerFrameHandler;
-    ["aliveTimerB", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
   };
   if (_unit getVariable ["kat_aceAirway_overstretch", false] && !(_unit getVariable ["ace_medical_airwayOccluded", false])) exitWith {};
   if (_unit getVariable ["ace_medical_airwayStatus", 100] <= 5) exitWith {
