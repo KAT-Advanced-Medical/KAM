@@ -54,7 +54,7 @@
           <German>Kein Atemwegsmanagement erforderlich</German>
       </Key>
       <Key ID="STR_kat_aceAirway_message_Occluded_no">
-          <English>No Vacuum needed</English>
+          <English>No medical suction needed</English>
           <German>Absaugen nicht notwendig</German>
       </Key>
       <Key ID="STR_kat_aceAirway_message_Collapsed_yes">
@@ -62,7 +62,7 @@
           <German>Atemwegsmanagement erforderlich</German>
       </Key>
       <Key ID="STR_kat_aceAirway_message_Occluded_yes">
-          <English>Vacuum needed</English>
+          <English>Medical suction needed</English>
           <German>Absaugen notwendig</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Airway_already">
