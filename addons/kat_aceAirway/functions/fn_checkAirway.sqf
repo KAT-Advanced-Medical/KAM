@@ -18,9 +18,9 @@
 params ["_player", "_target"];
 
 private _messageairwayCollapsed = localize "STR_kat_aceAirway_message_Collapsed_no";
-private _messageairwayOccluded = localize"STR_kat_aceAirway_message_Occluded_no";
-private _yesornoCollapsed = localize "STR_kat_aceAirway_N";
-private _yesornoOccluded = localize "STR_kat_aceAirway_N";
+private _messageairwayOccluded = localize "STR_kat_aceAirway_message_Occluded_no";
+private _yesornoCollapsed = "STR_kat_aceAirway_N";
+private _yesornoOccluded = "STR_kat_aceAirway_N";
 
 if (_target getVariable ["ace_medical_airwayCollapsed", false]) then {
   _messageairwayCollapsed = localize "STR_kat_aceAirway_message_Collapsed_yes";
@@ -36,4 +36,4 @@ if !(_target getVariable ["ace_medical_airwayOccluded", false] && _target getVar
 private _message = format ["%1, %2", _messageairwayCollapsed, _messageairwayOccluded];
 [_message, 2, _player] call ace_common_fnc_displayTextStructured;
 
-[_target, "quick_view", localize "STR_kat_aceAirway_checkAirway_log", [[_player] call ace_common_fnc_getName, _yesornoCollapsed, localize "STR_kat_aceAirway_Collapsed", _yesornoOccluded, localize "STR_kat_aceAirway_Occluded"]] call ace_medical_fnc_addToLog;
+[_target, "quick_view", "STR_kat_aceAirway_checkAirway_log", [[_player] call ace_common_fnc_getName, _yesornoCollapsed, "STR_kat_aceAirway_Collapsed", _yesornoOccluded, "STR_kat_aceAirway_Occluded"]] call ace_medical_fnc_addToLog;
