@@ -169,5 +169,17 @@
         <English>%1 is now empty</English>
         <German>%1 ist nun leer</German>
       </Key>
+      <Key ID="STR_KAT_aceCirculation_bloodbank">
+        <English>Blood bank</English>
+        <German>Blutbank</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_coolBattery">
+        <English>Cool battery</English>
+        <German>Kühlakku</German>
+      </Key>
+      <Key ID="STR_KAT_aceCirculation_desc">
+        <English>Cool battery</English>
+        <German>Kühlakku</German>
+      </Key>
 		</Package>
 </Project>
