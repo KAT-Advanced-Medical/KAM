@@ -40,6 +40,7 @@ if (_className isEqualTo "Guedeltubus") then {
 };
 
 [_target, _item] call ace_medical_fnc_addToTriageCard;
+[_target, "activity", "STR_kat_aceAirway_airway_log", [[_caller] call ace_common_fnc_getName, _item]] call ace_medical_fnc_addToLog;
 [_target, "activity_view", "STR_kat_aceAirway_airway_log", [[_caller] call ace_common_fnc_getName, _item]] call ace_medical_fnc_addToLog;
 
 true;
