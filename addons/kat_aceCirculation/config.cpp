@@ -182,10 +182,10 @@ class cfgWeapons {
     scope = 2;
     author = "Katalam";
     displayName = "$STR_KAT_aceCirculation_coolBattery";
-    picture = "\kat_acecirculation\images\x-series.paa"; // TO-DO
+    picture = "\kat_acecirculation\images\coolBattery.paa";
     model = "\A3\Structures_F_EPA\Items\Medical\WaterPurificationTablets_F.p3d";
-    descriptionShort = $STR_KAT_aceCirculation_desc; // TO-DO
-    descriptionUse = $STR_KAT_aceCirculation_desc;
+    descriptionShort = $STR_KAT_aceCirculation_coolBattery_desc;
+    descriptionUse = $STR_KAT_aceCirculation_coolBattery_desc;
     class ItemInfo: CBA_MiscItem_ItemInfo {
       mass = 2;
     };

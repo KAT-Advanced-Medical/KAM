@@ -177,9 +177,9 @@
         <English>Cool battery</English>
         <German>Kühlakku</German>
       </Key>
-      <Key ID="STR_KAT_aceCirculation_desc">
-        <English>Cool battery</English>
-        <German>Kühlakku</German>
+      <Key ID="STR_KAT_aceCirculation_coolBattery_desc">
+        <English>Used to cool blood</English>
+        <German>Benutzt um Blut zu kühlen</German>
       </Key>
 		</Package>
 </Project>
