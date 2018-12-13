@@ -3,7 +3,7 @@ aceAdvMedical
 **Adds several new medical aspects to the ace medical addon**<br/>
 *Created by Katalam*
 
-Thanks to
+Big thanks to
 ---------
 + [Kellerkompanie](http://kellerkompanie.com/)
 
@@ -16,7 +16,7 @@ Features
     - [x] Intubation
     - [x] Aspiration
 - aceBreathing
-  - [ ] Oxygen saturation
+  - [x] Oxygen saturation
 - aceCirculation
   - [x] Blood Groups
   - [x] Painkillers
