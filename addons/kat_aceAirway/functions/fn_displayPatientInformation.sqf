@@ -22,7 +22,7 @@ if (ace_medical_level < 2) exitWith {};
 
 params ["_target", ["_show", true], ["_selectionN", 0]];
 
-ace_medical_currentSelectedSelectionN = [0, _selectionN] select (_selectionN isEqualType 0);
+ace_medical_currentSelectedSelectionN = [0, _selectionN] select (if (isNil {_selectionN}) then {false} else {(_selectionN) isEqualType 0});
 ace_medical_displayPatientInformationTarget = [ObjNull, _target] select _show;
 
 if (_show) then {
