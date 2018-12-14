@@ -26,7 +26,7 @@
           <German>Erbrechengeräusch abspielen?</German>
       </Key>
       <Key ID="STR_kat_aceAirway_checkAirway">
-          <English>Check airways</English>
+          <English>Check Airways</English>
           <German>Überprüfe Atemwege</German>
       </Key>
       <Key ID="STR_kat_aceAirway_checkAirway_log">
@@ -66,7 +66,7 @@
           <German>Absaugen notwendig</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Airway_already">
-          <English>There is already a airway Management</English>
+          <English>There is already a airway management</English>
           <German>Atemwegsmanagement wurde bereits durchgeführt</German>
       </Key>
       <Key ID="STR_kat_aceAirway_activity">
@@ -95,7 +95,7 @@
       </Key>
       <Key ID="STR_kat_aceAirway_overstretch_info">
           <English>Don't run away you're saving a life!</English>
-          <German>Renne nicht weg, du rettest ein Leben</German>
+          <German>Renne nicht weg, du rettest ein Leben!</German>
       </Key>
       <Key ID="STR_kat_aceAirway_turnaround_info">
           <English>You tried to remove the vomit</English>
@@ -110,7 +110,7 @@
           <German>Kopf zur Seite drehen</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Accuvac_NA">
-          <English>Vacuum not needed</English>
+          <English>Medical suction not needed</English>
           <German>Absaugen nicht notwendig</German>
       </Key>
       <Key ID="STR_kat_aceAirway_action_checking">
@@ -126,11 +126,11 @@
           <German>Larynxtubus</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Larynx_Desc_Short">
-          <English>The Larynxtubus is a helper for airway management</English>
+          <English>The Larynxtubus is used to save the airways</English>
           <German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Larynx_Desc_Use">
-          <English>The Larynxtube is a helper for airway management</English>
+          <English>The Larynxtube is used to save the airways</English>
           <German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Guedel_Display">
@@ -138,11 +138,11 @@
           <German>Guedeltubus</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Guedel_Desc_Short">
-          <English>The Guedeltube is a helper for airway management</English>
+          <English>The Guedeltube is used to save the airways</English>
           <German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Guedel_Desc_Use">
-          <English>The Guedeltubus is a helper for airway management</English>
+          <English>The Guedeltubus is used to save the airways</English>
           <German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
       </Key>
       <Key ID="STR_kat_aceAirway_Accuvac_Desc_Use">
