@@ -21,7 +21,7 @@ if (!local _unit) exitWith {
   ["deathTimerAirway", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
 
-if (kat_aceBreathing_enable) exitWith {
+if (kat_aceBreathing_enable) exitWith { // You can use a different death timer from kat_aceBreathing
   ["deathTimerBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
 

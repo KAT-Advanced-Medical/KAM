@@ -21,6 +21,6 @@ params ["_unit"];
 _unit setVariable ["kat_aceAirway_airway", false, true];
 _unit setVariable ["kat_aceAirway_airway_item", "", true];
 _unit setVariable ["kat_aceAirway_overstretch", false, true];
-_unit setVariable ["kat_aceAirway_swollen", false, true];
+_unit setVariable ["kat_aceAirway_swollen", false, true]; // useful for kat_aceDisability
 _unit setVariable ["kat_aceAirway_sound", false, true];
 _unit setVariable ["kat_aceAirway_startTime", 0, true];
