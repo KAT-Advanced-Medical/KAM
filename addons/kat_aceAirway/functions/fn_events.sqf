@@ -22,18 +22,18 @@ if !(kat_aceAirway_enable) exitWith {};
 ["treatmentAccuvac", {_this call kat_aceAirway_fnc_treatmentAdvanced_accuvacLocal}] call CBA_fnc_addEventHandler;
 
 ["ace_unconscious", {
-  params ["_unit", "_state"];
-  if !(_state) exitWith {
-    _unit call kat_aceAirway_fnc_init;
-  };
-  [_unit] call kat_aceAirway_fnc_handleAirway;
-  [_unit] call kat_aceAirway_fnc_handlePuking;
+    params ["_unit", "_state"];
+    if !(_state) exitWith {
+        _unit call kat_aceAirway_fnc_init;
+    };
+    [_unit] call kat_aceAirway_fnc_handleAirway;
+    [_unit] call kat_aceAirway_fnc_handlePuking;
 }] call CBA_fnc_addEventHandler;
 
 ["deathTimerAirway", {_this call kat_aceAirway_fnc_handleTimer}] call CBA_fnc_addEventHandler;
 ["ace_treatmentSucceded",{
- 	params ["", "_target", "", "_className"];
- 	if (toUpper _className isEqualTo "PERSONALAIDKIT" && local _target) exitWith {
- 		_target call kat_aceAirway_fnc_init;
- 	};
+    params ["", "_target", "", "_className"];
+    if (toUpper _className isEqualTo "PERSONALAIDKIT" && local _target) exitWith {
+    	_target call kat_aceAirway_fnc_init;
+    };
  }] call CBA_fnc_addEventHandler;

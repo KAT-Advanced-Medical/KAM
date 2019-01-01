@@ -19,9 +19,9 @@
 params ["_caller", "_target", "_className"];
 
 if (local _target) then {
-  ["treatmentAirway", [_caller, _target, _className]] call CBA_fnc_localEvent;
+    ["treatmentAirway", [_caller, _target, _className]] call CBA_fnc_localEvent;
 } else {
-  ["treatmentAirway", [_caller, _target, _className], _target] call CBA_fnc_targetEvent;
+    ["treatmentAirway", [_caller, _target, _className], _target] call CBA_fnc_targetEvent;
 };
 
 true;

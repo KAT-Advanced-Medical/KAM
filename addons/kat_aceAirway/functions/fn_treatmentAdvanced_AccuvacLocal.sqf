@@ -18,7 +18,7 @@
 params ["_target", "_item"];
 
 if (_target getVariable ["ace_medical_airwayOccluded", false]) then {
-  _target setVariable ["ace_medical_airwayOccluded", false, true];
+    _target setVariable ["ace_medical_airwayOccluded", false, true];
 };
 
 [_target, _Item] call ace_medical_fnc_addToTriageCard;

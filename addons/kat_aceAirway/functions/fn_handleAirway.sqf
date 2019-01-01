@@ -23,8 +23,8 @@ if !(kat_aceAirway_enable) exitWith {};
 
 
 if (random(100) <= kat_aceAirway_probability_collapsed) then {
-  if !(_unit getVariable ["ace_medical_airwayCollapsed", false]) then {
-    _unit setVariable ["ace_medical_airwayCollapsed", true, true];
-    [_unit, CBA_missionTime] call kat_aceAirway_fnc_handleTimer;
-  };
+    if !(_unit getVariable ["ace_medical_airwayCollapsed", false]) then {
+        _unit setVariable ["ace_medical_airwayCollapsed", true, true];
+        [_unit, CBA_missionTime] call kat_aceAirway_fnc_handleTimer;
+    };
 };

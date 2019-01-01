@@ -23,14 +23,14 @@ private _yesornoCollapsed = "STR_kat_aceAirway_N";
 private _yesornoOccluded = "STR_kat_aceAirway_N";
 
 if (_target getVariable ["ace_medical_airwayCollapsed", false]) then {
-  _messageairwayCollapsed = localize "STR_kat_aceAirway_message_Collapsed_yes";
-  _yesornoCollapsed = "";
-  _target setVariable ["ace_medical_triageLevel", 3];
+    _messageairwayCollapsed = localize "STR_kat_aceAirway_message_Collapsed_yes";
+    _yesornoCollapsed = "";
+    _target setVariable ["ace_medical_triageLevel", 3];
 };
 if (_target getVariable ["ace_medical_airwayOccluded", false]) then {
-  _messageairwayOccluded = localize "STR_kat_aceAirway_message_Occluded_yes";
-  _yesornoOccluded = "";
-  _target setVariable ["ace_medical_triageLevel", 3];
+    _messageairwayOccluded = localize "STR_kat_aceAirway_message_Occluded_yes";
+    _yesornoOccluded = "";
+    _target setVariable ["ace_medical_triageLevel", 3];
 };
 if !(_target getVariable ["ace_medical_airwayOccluded", false] && _target getVariable ["ace_medical_airwayCollapsed", false]) then {_target setVariable ["ace_medical_triageLevel", 0]};
 private _message = format ["%1, %2", _messageairwayCollapsed, _messageairwayOccluded];

@@ -19,13 +19,13 @@
 params ["_caller", "_target", "_className"];
 
 if (_target getVariable ["kat_aceAirway_airway", false]) exitWith {
-   private _output = localize "STR_kat_aceAirway_Airway_already";
-   [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
-   false;
+    private _output = localize "STR_kat_aceAirway_Airway_already";
+    [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
+    false;
 };
 if ((random 100 < 5) && (_className isEqualTo "Guedeltubus")) exitWith {
-  private _output = localize "STR_kat_aceAirway_Airway_NA";
-  [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
+    private _output = localize "STR_kat_aceAirway_Airway_NA";
+    [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
 };
 
 _target setVariable ["kat_aceAirway_airway", true, true];
@@ -35,8 +35,8 @@ private _item = "STR_kat_aceAirway_Larynx_Display";
 _target setVariable ["kat_aceAirway_airway_item", "larynx", true];
 
 if (_className isEqualTo "Guedeltubus") then {
-  _item = "STR_kat_aceAirway_Guedel_Display";
-  _target setVariable ["kat_aceAirway_airway_item", "guedel", true];
+    _item = "STR_kat_aceAirway_Guedel_Display";
+    _target setVariable ["kat_aceAirway_airway_item", "guedel", true];
 };
 
 [_target, _item] call ace_medical_fnc_addToTriageCard;
