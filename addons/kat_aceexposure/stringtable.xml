@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project name="kat">
-    <Package name="aceExposure">
-      <Key ID="STR_kat_aceExposure_SETTING_ENABLE">
-        <English>ACE-Exposure activated?</English>
-        <German>ACE-Umgebung aktivieren?</German>
-      </Key>
-		</Package>
+	<Package name="aceExposure">
+		<Key ID="STR_kat_aceExposure_SETTING_ENABLE">
+			<English>ACE-Exposure activated?</English>
+			<German>ACE-Umgebung aktivieren?</German>
+			<Polish>ACE-Otoczenie aktywowane?</Polish>
+		</Key>
+	</Package>
 </Project>

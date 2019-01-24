@@ -1,177 +1,230 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project name="kat">
-    <Package name="aceAirway">
-      <Key ID="STR_kat_URL">
-          <English>https://github.com/Katalam/kat_aceAdvMedical</English>
-          <German>https://github.com/Katalam/kat_aceAdvMedical</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_SETTING_ENABLE">
-          <English>ACE-Airway injuries activated?</English>
-          <German>ACE-Atemwegverletzungen aktiviert?</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_SETTING_TIMER">
-          <English>Airway Injuries Death Timer</English>
-          <German>Atemwegsverletzungstimer</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_SETTING_collapsed">
-          <English>Probability for airway collapsing</English>
-          <German>Atemwegsverletzungswahrscheinlichkeit</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_SETTING_occluded">
-          <English>Probability for airway occluding</English>
-          <German>Atemwegsverlegungswahrscheinlichkeit</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_SETTING_puking_sound">
-          <English>Activate the puking sound?</English>
-          <German>Erbrechengeräusch abspielen?</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_checkAirway">
-          <English>Check Airways</English>
-          <German>Überprüfe Atemwege</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_checkAirway_log">
-          <English>%1 checked airways: %2 %3, %4 %5</English>
-          <German>%1 überprüfte Atemwege: %2 %3, %4 %5</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_airway_log">
-          <English>%1 intubated with %2</English>
-          <German>%1 intubierte mit %2</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Occluded">
-          <English>Occluded</English>
-          <German>Verstopft</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Collapsed">
-          <English>Collapsed</English>
-          <German>Verlegt</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_N">
-          <English>Not</English>
-          <German>Nicht</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_message_Collapsed_no">
-          <English>No Airwaymanagement needed</English>
-          <German>Kein Atemwegsmanagement erforderlich</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_message_Occluded_no">
-          <English>No medical suction needed</English>
-          <German>Absaugen nicht notwendig</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_message_Collapsed_yes">
-          <English>Airwaymanagement needed</English>
-          <German>Atemwegsmanagement erforderlich</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_message_Occluded_yes">
-          <English>Medical suction needed</English>
-          <German>Absaugen notwendig</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Airway_already">
-          <English>There is already a airway management</English>
-          <German>Atemwegsmanagement wurde bereits durchgeführt</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_activity">
-          <English>%1 put a: %2</English>
-          <German>%1 setze einen: %2</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Airway_NA">
-          <English>Airwaymanagement not available</English>
-          <German>Atemwegsmanagement nicht möglich</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_overstretch">
-          <English>Head overstretch</English>
-          <German>Kopf überstrecken</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_overstretched">
-          <English>Head overstretched</English>
-          <German>Kopf überstreckt</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_overstretching">
-          <English>Head overstretching</English>
-          <German>Kopf überstrecken</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_overstretch_cancel">
-          <English>Head overstretch canceled</English>
-          <German>Kopf überstrecken abgebrochen</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_overstretch_info">
-          <English>Don't run away you're saving a life!</English>
-          <German>Renne nicht weg, du rettest ein Leben!</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_turnaround_info">
-          <English>You tried to remove the vomit</English>
-          <German>Du probierst das Erbrochene zu entfernen</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_turnaround">
-          <English>Head turning</English>
-          <German>Kopf zur Seite drehen</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_turnaround_action">
-          <English>Turning the head</English>
-          <German>Kopf zur Seite drehen</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Accuvac_NA">
-          <English>Medical suction not needed</English>
-          <German>Absaugen nicht notwendig</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_action_checking">
-          <English>Checking Airway</English>
-          <German>Atemwege Kontrollieren</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_action_placing">
-          <English>Placing</English>
-          <German>Setzen</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Larynx_Display">
-          <English>Larynxtube</English>
-          <German>Larynxtubus</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Larynx_Desc_Short">
-          <English>The Larynxtubus is used to save the airways</English>
-          <German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Larynx_Desc_Use">
-          <English>The Larynxtube is used to save the airways</English>
-          <German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Guedel_Display">
-          <English>Guedeltube</English>
-          <German>Guedeltubus</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Guedel_Desc_Short">
-          <English>The Guedeltube is used to save the airways</English>
-          <German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Guedel_Desc_Use">
-          <English>The Guedeltubus is used to save the airways</English>
-          <German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Accuvac_Desc_Use">
-          <English>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</English>
-          <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Accuvac_Desc_Short">
-          <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
-          <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_intubating">
-          <English>Intubating</English>
-          <German>Intubieren</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_vacuum">
-          <English>Medical suction</English>
-          <German>Medizinisches Absaugen</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_hint_name">
-          <English>Treatment</English>
-          <German>Behandlung</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_hint_desc">
-          <English>When a patient enters the unconscious state, there are two things that can happen. First of all the airway can collapse. In medical sense this mean, the airway can be blocked from your tongue muscle, 'cause of the missing muscle tone. For example in real life, this will happen to nearly every unconscious person lying on the back. The second thing that can happen is the the airway occluded state. When a patient is lying on the back and the body puke, it will not leave the mouth space. It will stay in there and can block the airway too. The right treatment here, is to remove this vomit. In real life, this will happen sometimes, not quiet often.</English>
-          <German>Wenn eine Person bewusstlos wird, gibt es zwei Dinge die passieren können. Erstens die Atemwege können verlegt sein. Durch de nnicht mehr vorhandenen Muskeltonus kann der zungengrund den Luftweg blockieren. Im echten Leben kann man davon ausgehen das wenn ein Patient bewusstlos ist und auf dem Rücken liegt, das er eine Atemwegsverlegung hat. Zweitens, es ist möglich das der Patient erbricht und dann blockieren flüssige und feste Stoffe die Atemwege und dann sind diese "verstopft". Im echten Leben passiert das nicht besonders häufig</German>
-      </Key>
-      <Key ID="STR_kat_aceAirway_Vomit_Display">
-          <English>Vomit (Small)</English>
-          <German>Erbrochenes (Klein)</German>
-      </Key>
-		</Package>
+	<Package name="aceAirway">
+		<Key ID="STR_kat_URL">
+			<English>https://github.com/Katalam/kat_aceAdvMedical</English>
+			<German>https://github.com/Katalam/kat_aceAdvMedical</German>
+			<Polish>https://github.com/Katalam/kat_aceAdvMedical</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_SETTING_ENABLE">
+			<English>ACE-Airway injuries activated?</English>
+			<German>ACE-Atemwegverletzungen aktiviert?</German>
+			<Polish>ACE- Urazy dróg oddechowych aktywowane?</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_SETTING_TIMER">
+			<English>Airway Injuries Death Timer</English>
+			<German>Atemwegsverletzungstimer</German>
+			<Polish>Urazy dróg oddechowych 
+czas do śmierci</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_SETTING_collapsed">
+			<English>Probability for airway collapsing</English>
+			<German>Atemwegsverletzungswahrscheinlichkeit</German>
+			<Polish>Szansa na zapadnięcie się dróg oddechowych</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_SETTING_occluded">
+			<English>Probability for airway occluding</English>
+			<German>Atemwegsverlegungswahrscheinlichkeit</German>
+			<Polish>Szansa na niedrożność dróg oddechowych</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_SETTING_puking_sound">
+			<English>Activate the puking sound?</English>
+			<German>Erbrechengeräusch abspielen?</German>
+			<Polish>Aktywować dźwięk wymiotowania?</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_checkAirway">
+			<English>Check Airways</English>
+			<German>Überprüfe Atemwege</German>
+			<Polish>Sprawdź drogi oddechowe</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_checkAirway_log">
+			<English>%1 checked airways: %2 %3, %4 %5</English>
+			<German>%1 überprüfte Atemwege: %2 %3, %4 %5</German>
+			<Polish>%1 sprawdzone drogi oddechowe: %2 %3, %4 %5</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_airway_log">
+			<English>%1 intubated with %2</English>
+			<German>%1 intubierte mit %2</German>
+			<Polish>%1 intubowany z %2</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Occluded">
+			<English>Occluded</English>
+			<German>Verstopft</German>
+			<Polish>Zablokowany</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Collapsed">
+			<English>Collapsed</English>
+			<German>Verlegt</German>
+			<Polish>Zapadnięte</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_N">
+			<English>Not</English>
+			<German>Nicht</German>
+			<Polish>Nie</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_message_Collapsed_no">
+			<English>No Airwaymanagement needed</English>
+			<German>Kein Atemwegsmanagement erforderlich</German>
+			<Polish>Nie ma potrzeby udrażniania
+ dróg oddechowych</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_message_Occluded_no">
+			<English>No medical suction needed</English>
+			<German>Absaugen nicht notwendig</German>
+			<Polish>Brak konieczności odsysania</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_message_Collapsed_yes">
+			<English>Airwaymanagement needed</English>
+			<German>Atemwegsmanagement erforderlich</German>
+			<Polish>Potrzebne udrażnianie 
+dróg oddechowych</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_message_Occluded_yes">
+			<English>Medical suction needed</English>
+			<German>Absaugen notwendig</German>
+			<Polish>Potrzebne odsysanie</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Airway_already">
+			<English>There is already a airway management</English>
+			<German>Atemwegsmanagement wurde bereits durchgeführt</German>
+			<Polish>Drogi oddechowe są udrażniane</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_activity">
+			<English>%1 put a: %2</English>
+			<German>%1 setze einen: %2</German>
+			<Polish>%1 umieścił: %2</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Airway_NA">
+			<English>Airwaymanagement not available</English>
+			<German>Atemwegsmanagement nicht möglich</German>
+			<Polish>Udrażnianie dróg oddechowych
+ jest niedostępne</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_overstretch">
+			<English>Head overstretch</English>
+			<German>Kopf überstrecken</German>
+			<Polish>Odchylenie głowy</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_overstretched">
+			<English>Head overstretched</English>
+			<German>Kopf überstreckt</German>
+			<Polish>Głowa odchylona</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_overstretching">
+			<English>Head overstretching</English>
+			<German>Kopf überstrecken</German>
+			<Polish>Odchylanie głowy</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_overstretch_cancel">
+			<English>Head overstretch canceled</English>
+			<German>Kopf überstrecken abgebrochen</German>
+			<Polish>Przerwano odchylanie głowy</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_overstretch_info">
+			<English>Don't run away you're saving a life!</English>
+			<German>Renne nicht weg, du rettest ein Leben!</German>
+			<Polish>Nie uciekaj, ratujesz życie!</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_turnaround_info">
+			<English>You tried to remove the vomit</English>
+			<German>Du probierst das Erbrochene zu entfernen</German>
+			<Polish>Próbowałeś usunąć wymiociny</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_turnaround">
+			<English>Head turning</English>
+			<German>Kopf zur Seite drehen</German>
+			<Polish>Głowa się obraca</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_turnaround_action">
+			<English>Turning the head</English>
+			<German>Kopf zur Seite drehen</German>
+			<Polish>Obracanie głowy</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Accuvac_NA">
+			<English>Medical suction not needed</English>
+			<German>Absaugen nicht notwendig</German>
+			<Polish>Odsysanie nie jest potrzebne</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_action_checking">
+			<English>Checking Airway</English>
+			<German>Atemwege Kontrollieren</German>
+			<Polish>Sprawdzanie dróg oddechowych</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_action_placing">
+			<English>Placing</English>
+			<German>Setzen</German>
+			<Polish>Kładzenie</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Larynx_Display">
+			<English>Larynxtube</English>
+			<German>Larynxtubus</German>
+			<Polish>Rurka krtaniowa</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Larynx_Desc_Short">
+			<English>The Larynxtubus is used to save the airways</English>
+			<German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
+			<Polish>Rurka krtaniowa służy do
+ ratowania dróg oddechowych</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Larynx_Desc_Use">
+			<English>The Larynxtube is used to save the airways</English>
+			<German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
+			<Polish>Rurka krtaniowa służy do 
+ratowania dróg oddechowych</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Guedel_Display">
+			<English>Guedeltube</English>
+			<German>Guedeltubus</German>
+			<Polish>Rurka ustno-gardłowa</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Guedel_Desc_Short">
+			<English>The Guedeltube is used to save the airways</English>
+			<German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
+			<Polish>Rurka ustno-gardłowa 
+zabezpiecza drogi oddechowe</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Guedel_Desc_Use">
+			<English>The Guedeltubus is used to save the airways</English>
+			<German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
+			<Polish>Rurka ustno-gardłowa służy do podtrzymywania 
+języka przed blokowaniem dróg oddechowych</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Accuvac_Desc_Use">
+			<English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
+			<German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
+			<Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Accuvac_Desc_Short">
+			<English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
+			<German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
+			<Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_intubating">
+			<English>Intubating</English>
+			<German>Intubieren</German>
+			<Polish>Intubowanie</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_vacuum">
+			<English>Medical suction</English>
+			<German>Medizinisches Absaugen</German>
+			<Polish>Odsysanie medyczne</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_hint_name">
+			<English>Treatment</English>
+			<German>Behandlung</German>
+			<Polish>Leczenie</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_hint_desc">
+			<English>When a patient enters the unconscious state, there are two things that can happen. First of all the airway can collapse. In medical sense this mean, the airway can be blocked from your tongue muscle, 'cause of the missing muscle tone. For example in real life, this will happen to nearly every unconscious person lying on the back. The second thing that can happen is the the airway occluded state. When a patient is lying on the back and the body puke, it will not leave the mouth space. It will stay in there and can block the airway too. The right treatment here, is to remove this vomit. In real life, this will happen sometimes, not quiet often.</English>
+			<German>Wenn eine Person bewusstlos wird, gibt es zwei Dinge die passieren können. Erstens die Atemwege können verlegt sein. Durch de nnicht mehr vorhandenen Muskeltonus kann der zungengrund den Luftweg blockieren. Im echten Leben kann man davon ausgehen das wenn ein Patient bewusstlos ist und auf dem Rücken liegt, das er eine Atemwegsverlegung hat. Zweitens, es ist möglich das der Patient erbricht und dann blockieren flüssige und feste Stoffe die Atemwege und dann sind diese "verstopft". Im echten Leben passiert das nicht besonders häufig</German>
+			<Polish>Kiedy pacjent staję się nieprzytomny, mogą stać się dwie rzeczy. Pierwszą jest zapadnięcie się dróg oddechowych. Z medycznego punktu widzenia drogi oddechowe mogą być zablokowane przez język.
+Na przykład w prawdziwym życiu zdarzy się to praktycznie w każdym przypadku osoby nieprzytomnej leżącej na plecach. Drugą rzeczą która może się zdarzyć to niedrożność dróg oddechowych. Kiedy pacjent leży na plecach i ciało będzie wymiotowało/odkrztuszało to zawartość nie opuści buzi. Zostanie tam i będzie mogło blokować drogi oddechowe. Odpowiednim leczniem jest tu usunięcie wymiocin. W prawdziwym życiu też może się to zdarzyć ale nie jest to częste.
+</Polish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_Vomit_Display">
+			<English>Vomit (Small)</English>
+			<German>Erbrochenes (Klein)</German>
+			<Polish>Wymiociny(małe)</Polish>
+		</Key>
+	</Package>
 </Project>
