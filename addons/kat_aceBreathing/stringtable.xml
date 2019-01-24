@@ -1,71 +1,92 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project name="kat">
-    <Package name="aceBreathing">
-      <Key ID="STR_kat_aceBreathing_SETTING_ENABLE">
-          <English>ACE-Breathing activated?</English>
-          <German>ACE-Atmung aktiviert?</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_SETTING_Value_Before">
-          <English>Value to add or remove to the SpO2 before 100 sec</English>
-          <German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird vor 100 s</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_SETTING_Value_After">
-        <English>Value to add or remove to the SpO2 after 100 sec</English>
-        <German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird nach 100 s</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_Pulseoximeter_Display">
-          <English>Use Pulseoximeter</English>
-          <German>benutze Pulseoximeter</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_Pulseoximeter_Display_Remove">
-          <English>Remove Pulseoximeter</English>
-          <German>Entferne Pulseoximeter</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_Pulseoximeter_Desc_Short">
-          <English>Pulseoximeter</English>
-          <German>Pulseoximeter</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_Pulseoximeter_Desc_Use">
-          <English>Pulseoximeter</English>
-          <German>Pulseoximeter</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_placing">
-          <English>Placing</English>
-          <German>Anlegen</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_remove">
-          <English>Removing</English>
-          <German>Entferne</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_pulseoxi_NA">
-          <English>Pulseoximeter already connected</English>
-          <German>Pulseoximeter bereits vorhanden</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_pulseoxi_Log">
-          <English>Pulseoximeter: HR: %1 SpO2: %2</English>
-          <German>Pulseoximeter: HR: %1 SpO2: %2</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_pulseoxi_Log_2">
-          <English>%1 connected Pulseoximeter</English>
-          <German>%1 hat Pulseoximeter angelegt</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_hint_name">
-          <English>Breathing</English>
-          <German>Atmung</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_hint_desc">
-          <English>Breathing
+	<Package name="aceBreathing">
+		<Key ID="STR_kat_aceBreathing_SETTING_ENABLE">
+			<English>ACE-Breathing activated?</English>
+			<German>ACE-Atmung aktiviert?</German>
+			<Polish>ACE-Oddychanie aktywowane?</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_SETTING_Value_Before">
+			<English>Value to add or remove to the SpO2 before 100 sec</English>
+			<German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird vor 100 s</German>
+			<Polish>Wartość do dodania lub odjęcia do SpO2 przed 100 sek</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_SETTING_Value_After">
+			<English>Value to add or remove to the SpO2 after 100 sec</English>
+			<German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird nach 100 s</German>
+			<Polish>Wartość do dodania lub odjęcia do SpO2 po 100 sek</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_Pulseoximeter_Display">
+			<English>Use Pulseoximeter</English>
+			<German>benutze Pulseoximeter</German>
+			<Polish>Użyj Pulsoksymetru</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_Pulseoximeter_Display_Remove">
+			<English>Remove Pulseoximeter</English>
+			<German>Entferne Pulseoximeter</German>
+			<Polish>Usuń Pulsoksymetr</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_Pulseoximeter_Desc_Short">
+			<English>Pulseoximeter</English>
+			<German>Pulseoximeter</German>
+			<Polish>Pulsoksymetr</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_Pulseoximeter_Desc_Use">
+			<English>Pulseoximeter</English>
+			<German>Pulseoximeter</German>
+			<Polish>Pulsoksymetr</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_placing">
+			<English>Placing</English>
+			<German>Anlegen</German>
+			<Polish>Kładzenie</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_remove">
+			<English>Removing</English>
+			<German>Entferne</German>
+			<Polish>Usuwanie</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_pulseoxi_NA">
+			<English>Pulseoximeter already connected</English>
+			<German>Pulseoximeter bereits vorhanden</German>
+			<Polish>Pulsoksymetr jest już podłączony</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_pulseoxi_Log">
+			<English>Pulseoximeter: HR: %1 SpO2: %2</English>
+			<German>Pulseoximeter: HR: %1 SpO2: %2</German>
+			<Polish>Pulsoksymetr: HR: %1 SpO2: %2</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_pulseoxi_Log_2">
+			<English>%1 connected Pulseoximeter</English>
+			<German>%1 hat Pulseoximeter angelegt</German>
+			<Polish>%1 połączony Pulsoksymetr</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_hint_name">
+			<English>Breathing</English>
+			<German>Atmung</German>
+			<Polish>Oddychanie</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_hint_desc">
+			<English>Breathing
           %1sufficiently ventilated?
-          %1SpO2 over 70% -> Yes
-          %1SpO2 under 70% -> No -> ass. Breathing</English>
-          <German>Atmung - Breathing
+          %1SpO2 over 70% -&gt; Yes
+          %1SpO2 under 70% -&gt; No -&gt; ass. Breathing</English>
+			<German>Atmung - Breathing
           %1Ausreichend belüftet?
-          %1SpO2 über 70% -> Ja
-          %1SpO2 unter 70% -> Nein -> ass. Beatmung</German>
-      </Key>
-      <Key ID="STR_kat_aceBreathing_hint_tip">
-          <English>If you saved the airway with a larynxtube skip this</English>
-          <German>Falls du die Atemwege mit einem Laryntubus sicherst überspring diesen Schritt</German>
-      </Key>
-		</Package>
+          %1SpO2 über 70% -&gt; Ja
+          %1SpO2 unter 70% -&gt; Nein -&gt; ass. Beatmung</German>
+			<Polish>Oddychanie
+
+          
+%1dostatecznie wentylowany ?
+                      %1SpO2 powyżej 70% -&gt; Tak
+          %1SpO2
+ poniżej 70% -&gt; Nie -&gt; ass. oddychanie</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_hint_tip">
+			<English>If you saved the airway with a larynxtube skip this</English>
+			<German>Falls du die Atemwege mit einem Laryntubus sicherst überspring diesen Schritt</German>
+			<Polish>Jeżeli udrożniłeś drogi oddechowe przy pomocy rurki krtaniowej, omiń to.</Polish>
+		</Key>
+	</Package>
 </Project>

@@ -1,21 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project name="kat">
-    <Package name="aceExposure">
-      <Key ID="STR_kat_aceMisc_SETTING_ENABLE">
-        <English>ACE-Misc activated?</English>
-        <German>ACE-Sonstiges aktivieren?</German>
-      </Key>
-      <Key ID="STR_kat_aceMisc_Action_add_IV">
-        <English>Attaching IV</English>
-        <German>IV wird angehangen</German>
-      </Key>
-      <Key ID="STR_kat_aceMisc_Action_add_IV_Display">
-        <English>Attach IV</English>
-        <German>IV anhängen</German>
-      </Key>
-      <Key ID="STR_kat_aceMisc_Display_IVStand">
-        <English>Stand: Saline IV (1000ml)</English>
-        <German>Ständer: Saline IV (1000ml)</German>
-      </Key>
-		</Package>
+	<Package name="aceExposure">
+		<Key ID="STR_kat_aceMisc_SETTING_ENABLE">
+			<English>ACE-Misc activated?</English>
+			<German>ACE-Sonstiges aktivieren?</German>
+			<Polish>ACE-Inne aktywowane?</Polish>
+		</Key>
+		<Key ID="STR_kat_aceMisc_Action_add_IV">
+			<English>Attaching IV</English>
+			<German>IV wird angehangen</German>
+			<Polish>Zakładanie IV</Polish>
+		</Key>
+		<Key ID="STR_kat_aceMisc_Action_add_IV_Display">
+			<English>Attach IV</English>
+			<German>IV anhängen</German>
+			<Polish>Załóż IV</Polish>
+		</Key>
+		<Key ID="STR_kat_aceMisc_Display_IVStand">
+			<English>Stand: Saline IV (1000ml)</English>
+			<German>Ständer: Saline IV (1000ml)</German>
+			<Polish>Stojak: Sól fizjologiczna IV (1000ml)</Polish>
+		</Key>
+	</Package>
 </Project>
