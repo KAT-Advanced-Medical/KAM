@@ -4,8 +4,8 @@
  * Main function
  *
  * Arguments:
- * 0: The medic <OBJECT>
- * 1: The patient <OBJECT>
+ * 0: Medic <OBJECT>
+ * 1: Patient <OBJECT>
  *
  * Return Value:
  * None
