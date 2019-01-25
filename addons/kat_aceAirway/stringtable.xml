@@ -14,7 +14,7 @@
 		<Key ID="STR_kat_aceAirway_SETTING_TIMER">
 			<English>Airway Injuries Death Timer</English>
 			<German>Atemwegsverletzungstimer</German>
-			<Polish>Urazy dróg oddechowych 
+			<Polish>Urazy dróg oddechowych
 czas do śmierci</Polish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_collapsed">
@@ -65,8 +65,7 @@ czas do śmierci</Polish>
 		<Key ID="STR_kat_aceAirway_message_Collapsed_no">
 			<English>No Airwaymanagement needed</English>
 			<German>Kein Atemwegsmanagement erforderlich</German>
-			<Polish>Nie ma potrzeby udrażniania
- dróg oddechowych</Polish>
+			<Polish>Nie ma potrzeby udrażniania dróg oddechowych</Polish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_message_Occluded_no">
 			<English>No medical suction needed</English>
@@ -76,8 +75,7 @@ czas do śmierci</Polish>
 		<Key ID="STR_kat_aceAirway_message_Collapsed_yes">
 			<English>Airwaymanagement needed</English>
 			<German>Atemwegsmanagement erforderlich</German>
-			<Polish>Potrzebne udrażnianie 
-dróg oddechowych</Polish>
+			<Polish>Potrzebne udrażnianie dróg oddechowych</Polish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_message_Occluded_yes">
 			<English>Medical suction needed</English>
@@ -161,16 +159,14 @@ dróg oddechowych</Polish>
 			<Polish>Rurka krtaniowa</Polish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Larynx_Desc_Short">
-			<English>The Larynxtubus is used to save the airways</English>
+			<English>The larynxtube is used to save the airways</English>
 			<German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
-			<Polish>Rurka krtaniowa służy do
- ratowania dróg oddechowych</Polish>
+			<Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Larynx_Desc_Use">
-			<English>The Larynxtube is used to save the airways</English>
+			<English>The larynxtube is used to save the airways</English>
 			<German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
-			<Polish>Rurka krtaniowa służy do 
-ratowania dróg oddechowych</Polish>
+			<Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Guedel_Display">
 			<English>Guedeltube</English>
@@ -180,14 +176,12 @@ ratowania dróg oddechowych</Polish>
 		<Key ID="STR_kat_aceAirway_Guedel_Desc_Short">
 			<English>The Guedeltube is used to save the airways</English>
 			<German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
-			<Polish>Rurka ustno-gardłowa 
-zabezpiecza drogi oddechowe</Polish>
+			<Polish>Rurka ustno-gardłowa zabezpiecza drogi oddechowe</Polish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Guedel_Desc_Use">
-			<English>The Guedeltubus is used to save the airways</English>
+			<English>The guedeltube is used to save the airways</English>
 			<German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
-			<Polish>Rurka ustno-gardłowa służy do podtrzymywania 
-języka przed blokowaniem dróg oddechowych</Polish>
+			<Polish>Rurka ustno-gardłowa służy do podtrzymywania języka przed blokowaniem dróg oddechowych</Polish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Accuvac_Desc_Use">
 			<English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
@@ -217,9 +211,7 @@ języka przed blokowaniem dróg oddechowych</Polish>
 		<Key ID="STR_kat_aceAirway_hint_desc">
 			<English>When a patient enters the unconscious state, there are two things that can happen. First of all the airway can collapse. In medical sense this mean, the airway can be blocked from your tongue muscle, 'cause of the missing muscle tone. For example in real life, this will happen to nearly every unconscious person lying on the back. The second thing that can happen is the the airway occluded state. When a patient is lying on the back and the body puke, it will not leave the mouth space. It will stay in there and can block the airway too. The right treatment here, is to remove this vomit. In real life, this will happen sometimes, not quiet often.</English>
 			<German>Wenn eine Person bewusstlos wird, gibt es zwei Dinge die passieren können. Erstens die Atemwege können verlegt sein. Durch de nnicht mehr vorhandenen Muskeltonus kann der zungengrund den Luftweg blockieren. Im echten Leben kann man davon ausgehen das wenn ein Patient bewusstlos ist und auf dem Rücken liegt, das er eine Atemwegsverlegung hat. Zweitens, es ist möglich das der Patient erbricht und dann blockieren flüssige und feste Stoffe die Atemwege und dann sind diese "verstopft". Im echten Leben passiert das nicht besonders häufig</German>
-			<Polish>Kiedy pacjent staję się nieprzytomny, mogą stać się dwie rzeczy. Pierwszą jest zapadnięcie się dróg oddechowych. Z medycznego punktu widzenia drogi oddechowe mogą być zablokowane przez język.
-Na przykład w prawdziwym życiu zdarzy się to praktycznie w każdym przypadku osoby nieprzytomnej leżącej na plecach. Drugą rzeczą która może się zdarzyć to niedrożność dróg oddechowych. Kiedy pacjent leży na plecach i ciało będzie wymiotowało/odkrztuszało to zawartość nie opuści buzi. Zostanie tam i będzie mogło blokować drogi oddechowe. Odpowiednim leczniem jest tu usunięcie wymiocin. W prawdziwym życiu też może się to zdarzyć ale nie jest to częste.
-</Polish>
+			<Polish>Kiedy pacjent staję się nieprzytomny, mogą stać się dwie rzeczy. Pierwszą jest zapadnięcie się dróg oddechowych. Z medycznego punktu widzenia drogi oddechowe mogą być zablokowane przez język. Na przykład w prawdziwym życiu zdarzy się to praktycznie w każdym przypadku osoby nieprzytomnej leżącej na plecach. Drugą rzeczą która może się zdarzyć to niedrożność dróg oddechowych. Kiedy pacjent leży na plecach i ciało będzie wymiotowało/odkrztuszało to zawartość nie opuści buzi. Zostanie tam i będzie mogło blokować drogi oddechowe. Odpowiednim leczniem jest tu usunięcie wymiocin. W prawdziwym życiu też może się to zdarzyć ale nie jest to częste.</Polish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Vomit_Display">
 			<English>Vomit (Small)</English>
