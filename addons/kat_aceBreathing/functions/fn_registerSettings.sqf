@@ -46,4 +46,15 @@
 	true
 ] call CBA_Settings_fnc_init;
 
+// aceBreathing probability for a pneumothorax
+// a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
+[
+	"kat_aceBreathing_pneumothorax",
+	"SLIDER",
+	localize "STR_kat_aceBreathing_SETTING_pneumothorax",
+	CBA_SETTINGS_CAT,
+	[0, 100, 5, 0],
+	true
+] call CBA_Settings_fnc_init;
+
 nil;

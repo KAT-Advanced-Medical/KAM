@@ -44,10 +44,13 @@ class CfgFunctions {
             class canPulseoximeter{};
             class events{};
             class handleInit{};
+            class handlePulmoHit{};
             class handleTimer{};
             class handleTimerAlive{};
             class init{};
             class registerSettings{};
+            class treatmentAdvanced_pneumothorax{};
+            class treatmentAdvanced_pneumothoraxLocal{};
             class treatmentAdvanced_pulseoximeter{};
             class treatmentAdvanced_pulseoximeterLocal{};
             class treatmentAdvanced_removePulseoximeter{};
@@ -118,6 +121,17 @@ class cfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_Actions {
+            class ACE_Torso {
+                class Pneumothorax {
+                    displayName = $STR_kat_aceBreathing_pneumothorax_display;
+                    distance = 2.0;
+                    condition = "[_player, _target, 'body', 'Pneumothorax'] call ace_medical_fnc_canTreatCached";
+                    statement = "[_player, _target, 'body', 'Pneumothorax'] call ace_medical_fnc_treatment";
+                    exceptions[] = {""};
+                    showDisabled = 0;
+                    icon = "";
+                };
+            };
             class ACE_ArmLeft {
                 class Pulseoximeter {
                     displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
@@ -160,6 +174,17 @@ class cfgVehicles {
             };
             class ACE_MainActions {
                 class Medical {
+                    class ACE_Torso {
+                        class Pneumothorax {
+                            displayName = $STR_kat_aceBreathing_pneumothorax_display;
+                            distance = 2.0;
+                            condition = "[_player, _target, 'body', 'Pneumothorax'] call ace_medical_fnc_canTreatCached";
+                            statement = "[_player, _target, 'body', 'Pneumothorax'] call ace_medical_fnc_treatment";
+                            exceptions[] = {""};
+                            showDisabled = 0;
+                            icon = "";
+                        };
+                    };
                     class ACE_ArmLeft {
                         class Pulseoximeter {
                             displayName = $STR_kat_aceBreathing_Pulseoximeter_Display;
@@ -246,6 +271,31 @@ class ACE_Medical_Actions {
             condition = "[_target] call kat_aceBreathing_fnc_canPulseoximeter";
             patientStateCondition = 0;
             callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_removePulseoximeter";
+            callbackFailure = "";
+            callbackProgress = "";
+            itemConsumed = 0;
+            animationPatient = "";
+            animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+            animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+            animationCaller = "AinvPknlMstpSlayWrflDnon_medicOther";
+            animationCallerProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+            animationCallerSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+            animationCallerSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+            litter[] = {};
+        };
+        class Pneumothorax {
+            displayName = $STR_kat_aceBreathing_pneumothorax_display;
+            displayNameProgress = $STR_kat_aceBreathing_treating;
+            category = "advanced";
+            treatmentLocations[] = {"All"};
+            allowedSelections[] = {"body"};
+            allowSelfTreatment = 0;
+            requiredMedic = 2;
+            treatmentTime = 30;
+            items[] = {"ACE_surgicalKit"};
+            condition = "_target getVariable ['kat_aceBreathing_pulmo', false]";
+            patientStateCondition = 0;
+            callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pneumothorax";
             callbackFailure = "";
             callbackProgress = "";
             itemConsumed = 0;

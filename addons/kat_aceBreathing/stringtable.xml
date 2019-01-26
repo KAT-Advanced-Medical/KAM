@@ -16,6 +16,10 @@
 			<German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird nach 100 s</German>
 			<Polish>Wartość do dodania lub odjęcia do SpO2 po 100 sek</Polish>
 		</Key>
+		<Key ID="STR_kat_aceBreathing_SETTING_pneumothorax">
+			<English>Probability for a pneumothorax</English>
+			<German>Wahrscheinlichkeit für einen Pneumothorax</German>
+		</Key>
 		<Key ID="STR_kat_aceBreathing_Pulseoximeter_Display">
 			<English>Use Pulseoximeter</English>
 			<German>benutze Pulseoximeter</German>
@@ -68,25 +72,34 @@
 		</Key>
 		<Key ID="STR_kat_aceBreathing_hint_desc">
 			<English>Breathing
-          %1sufficiently ventilated?
-          %1SpO2 over 70% -&gt; Yes
-          %1SpO2 under 70% -&gt; No -&gt; ass. Breathing</English>
+				%1sufficiently ventilated?
+				%1SpO2 over 70% -&gt; Yes
+				%1SpO2 under 70% -&gt; No -&gt; ass. Breathing</English>
 			<German>Atmung - Breathing
-          %1Ausreichend belüftet?
-          %1SpO2 über 70% -&gt; Ja
-          %1SpO2 unter 70% -&gt; Nein -&gt; ass. Beatmung</German>
+				%1Ausreichend belüftet?
+				%1SpO2 über 70% -&gt; Ja
+				%1SpO2 unter 70% -&gt; Nein -&gt; ass. Beatmung</German>
 			<Polish>Oddychanie
-
-          
-%1dostatecznie wentylowany ?
-                      %1SpO2 powyżej 70% -&gt; Tak
-          %1SpO2
- poniżej 70% -&gt; Nie -&gt; ass. oddychanie</Polish>
+				%1dostatecznie wentylowany ?
+				%1SpO2 powyżej 70% -&gt; Tak
+				%1SpO2 poniżej 70% -&gt; Nie -&gt; ass. oddychanie</Polish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_hint_tip">
 			<English>If you saved the airway with a larynxtube skip this</English>
 			<German>Falls du die Atemwege mit einem Laryntubus sicherst überspring diesen Schritt</German>
 			<Polish>Jeżeli udrożniłeś drogi oddechowe przy pomocy rurki krtaniowej, omiń to.</Polish>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_pneumothorax">
+			<English>%1 treated a pneumothorax</English>
+			<German>%1 behandelte einen Pneumothorax</German>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_pneumothorax_display">
+			<English>Treat Pneumothorax</English>
+			<German>Pneumothorax behandeln</German>
+		</Key>
+		<Key ID="STR_kat_aceBreathing_treating">
+			<English>Treating</English>
+			<German>Behandle</German>
 		</Key>
 	</Package>
 </Project>

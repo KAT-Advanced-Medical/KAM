@@ -17,4 +17,5 @@
 params ["_unit"];
 
 _unit setVariable ["kat_aceBreathing_pulseoximeter", false, true];
-// ace_medical_airwayStatus
+_unit setVariable ["kat_aceBreathing_pulmo", false, true];
+// ace_medical_airwayStatus - oxygen saturation
