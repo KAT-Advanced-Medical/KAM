@@ -5,21 +5,25 @@
 			<English>ACE-Misc activated?</English>
 			<German>ACE-Sonstiges aktivieren?</German>
 			<Polish>ACE-Inne aktywowane?</Polish>
+			<Spanish>¿Activar ACE-Misceláneos?</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceMisc_Action_add_IV">
 			<English>Attaching IV</English>
 			<German>IV wird angehangen</German>
 			<Polish>Zakładanie IV</Polish>
+			<Spanish>Administrando IV</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceMisc_Action_add_IV_Display">
 			<English>Attach IV</English>
 			<German>IV anhängen</German>
 			<Polish>Załóż IV</Polish>
+			<Spanish>Adminsitrar IV</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceMisc_Display_IVStand">
 			<English>Stand: Saline IV (1000ml)</English>
 			<German>Ständer: Saline IV (1000ml)</German>
 			<Polish>Stojak: Sól fizjologiczna IV (1000ml)</Polish>
+			<Spanish>Soporte: Salino IV (1000ml)</Spanish>
 		</Key>
 	</Package>
 </Project>

@@ -5,70 +5,84 @@
 			<English>ACE-Breathing activated?</English>
 			<German>ACE-Atmung aktiviert?</German>
 			<Polish>ACE-Oddychanie aktywowane?</Polish>
+			<Spanish>¿Activar ACE-Respiración?</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_SETTING_Value_Before">
 			<English>Value to add or remove to the SpO2 before 100 sec</English>
 			<German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird vor 100 s</German>
 			<Polish>Wartość do dodania lub odjęcia do SpO2 przed 100 sek</Polish>
+			<Spanish>Valor para agregar o quitar al SpO2 antes de 100 segundos</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_SETTING_Value_After">
 			<English>Value to add or remove to the SpO2 after 100 sec</English>
 			<German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird nach 100 s</German>
 			<Polish>Wartość do dodania lub odjęcia do SpO2 po 100 sek</Polish>
+			<Spanish>Valor para agregar o quitar al SpO2 después de 100 segundos</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_SETTING_pneumothorax">
 			<English>Probability for a pneumothorax</English>
 			<German>Wahrscheinlichkeit für einen Pneumothorax</German>
+			<Spanish>Probabilidad de un pneumotórax</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_Pulseoximeter_Display">
 			<English>Use Pulseoximeter</English>
 			<German>benutze Pulseoximeter</German>
 			<Polish>Użyj Pulsoksymetru</Polish>
+			<Spanish>Usar oxímetro de pulso</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_Pulseoximeter_Display_Remove">
 			<English>Remove Pulseoximeter</English>
 			<German>Entferne Pulseoximeter</German>
 			<Polish>Usuń Pulsoksymetr</Polish>
+			<Spanish>Quitar oxímetro de pulso</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_Pulseoximeter_Desc_Short">
 			<English>Pulseoximeter</English>
 			<German>Pulseoximeter</German>
 			<Polish>Pulsoksymetr</Polish>
+			<Spanish>Oxímetro de pulso</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_Pulseoximeter_Desc_Use">
 			<English>Pulseoximeter</English>
 			<German>Pulseoximeter</German>
 			<Polish>Pulsoksymetr</Polish>
+			<Spanish>Oxímetro de pulso</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_placing">
 			<English>Placing</English>
 			<German>Anlegen</German>
 			<Polish>Kładzenie</Polish>
+			<Spanish>Colocando</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_remove">
 			<English>Removing</English>
 			<German>Entferne</German>
 			<Polish>Usuwanie</Polish>
+			<Spanish>Quitando</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_pulseoxi_NA">
 			<English>Pulseoximeter already connected</English>
 			<German>Pulseoximeter bereits vorhanden</German>
 			<Polish>Pulsoksymetr jest już podłączony</Polish>
+			<Spanish>El oxímetro de pulso ya está conectado</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_pulseoxi_Log">
 			<English>Pulseoximeter: HR: %1 SpO2: %2</English>
 			<German>Pulseoximeter: HR: %1 SpO2: %2</German>
 			<Polish>Pulsoksymetr: HR: %1 SpO2: %2</Polish>
+			<Spanish>Oxímetro de pulso: HR: %1 SpO2: %2</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_pulseoxi_Log_2">
 			<English>%1 connected Pulseoximeter</English>
 			<German>%1 hat Pulseoximeter angelegt</German>
 			<Polish>%1 połączony Pulsoksymetr</Polish>
+			<Spanish>%1 conectado al Oxímetro de pulso</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_hint_name">
 			<English>Breathing</English>
 			<German>Atmung</German>
 			<Polish>Oddychanie</Polish>
+			<Spanish>Respiracióm</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_hint_desc">
 			<English>Breathing
@@ -83,23 +97,31 @@
 				%1dostatecznie wentylowany ?
 				%1SpO2 powyżej 70% -&gt; Tak
 				%1SpO2 poniżej 70% -&gt; Nie -&gt; ass. oddychanie</Polish>
+			<Spanish>Respiración
+				%1¿Suficientemente ventilado?
+				%1SpO2 sobre 70% -&gt; Si
+				%1SpO2 bajo 70% -&gt; No -&gt; ass. Respiración</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_hint_tip">
 			<English>If you saved the airway with a larynxtube skip this</English>
 			<German>Falls du die Atemwege mit einem Laryntubus sicherst überspring diesen Schritt</German>
 			<Polish>Jeżeli udrożniłeś drogi oddechowe przy pomocy rurki krtaniowej, omiń to.</Polish>
+			<Spanish>Si trataste las vías aéreas con un tubo laríngeo, omite esto</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_pneumothorax">
 			<English>%1 treated a pneumothorax</English>
 			<German>%1 behandelte einen Pneumothorax</German>
+			<Spanish>%1 tratado un pneumotórax</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_pneumothorax_display">
 			<English>Treat Pneumothorax</English>
 			<German>Pneumothorax behandeln</German>
+			<Spanish>Tratar Pneumotórax</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_treating">
 			<English>Treating</English>
 			<German>Behandle</German>
+			<Spanish>Tratando</Spanish>
 		</Key>
 	</Package>
 </Project>
