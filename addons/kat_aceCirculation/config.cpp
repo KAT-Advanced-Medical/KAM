@@ -512,9 +512,9 @@ class ACE_Medical_Advanced {
         class Medication {
             class Atropine {
                 //change for effect from Atropine. Anomalie here, if you give more it will push your heart rate
-                hrIncreaseLow[] = {2, 5, 15};
-                hrIncreaseNormal[] = {10, 15, 20};
-                hrIncreaseHigh[] = {5, 20, 10};
+                hrIncreaseLow[] = {15, 20, 20};
+                hrIncreaseNormal[] = {10, 15, 15};
+                hrIncreaseHigh[] = {5, 10, 10};
             };
             class Painkillers {
                 // copied from ACE. Just a reminder
