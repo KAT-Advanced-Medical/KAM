@@ -11,14 +11,14 @@
 			<English>ACE-Airway injuries activated?</English>
 			<German>ACE-Atemwegverletzungen aktiviert?</German>
 			<Polish>ACE- Urazy dróg oddechowych aktywowane?</Polish>
-			<Spanish>¿Activar ACE-Lesiones respiratorias?</Spanish>
+			<Spanish>¿Activar ACE-Apoyo ventilatorio?</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_TIMER">
 			<English>Airway Injuries Death Timer</English>
 			<German>Atemwegsverletzungstimer</German>
 			<Polish>Urazy dróg oddechowych
 czas do śmierci</Polish>
-			<Spanish>Tiempo de muerte para lesiones respiratorias</Spanish>
+			<Spanish>Tiempo de muerte para Apoyo ventilatorio</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_collapsed">
 			<English>Probability for airway collapsing</English>
@@ -30,7 +30,7 @@ czas do śmierci</Polish>
 			<English>Probability for airway occluding</English>
 			<German>Atemwegsverlegungswahrscheinlichkeit</German>
 			<Polish>Szansa na niedrożność dróg oddechowych</Polish>
-			<Spanish>Probabilidad de oclusión de las vías aéreas</Spanish>
+			<Spanish>Probabilidad de obstrucción de las vías aéreas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_puking_sound">
 			<English>Activate the puking sound?</English>
@@ -60,7 +60,7 @@ czas do śmierci</Polish>
 			<English>Occluded</English>
 			<German>Verstopft</German>
 			<Polish>Zablokowany</Polish>
-			<Spanish>Ocluída</Spanish>
+			<Spanish>Obstruída</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Collapsed">
 			<English>Collapsed</English>
@@ -78,7 +78,7 @@ czas do śmierci</Polish>
 			<English>No Airwaymanagement needed</English>
 			<German>Kein Atemwegsmanagement erforderlich</German>
 			<Polish>Nie ma potrzeby udrażniania dróg oddechowych</Polish>
-			<Spanish>No se necesita gestión de vías aéreas</Spanish>
+			<Spanish>No se necesita manejo de vías aéreas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_message_Occluded_no">
 			<English>No medical suction needed</English>
@@ -90,7 +90,7 @@ czas do śmierci</Polish>
 			<English>Airwaymanagement needed</English>
 			<German>Atemwegsmanagement erforderlich</German>
 			<Polish>Potrzebne udrażnianie dróg oddechowych</Polish>
-			<Spanish>Requiere gestión de vías aéreas</Spanish>
+			<Spanish>Requiere manejo de vías aéreas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_message_Occluded_yes">
 			<English>Medical suction needed</English>
@@ -102,7 +102,7 @@ czas do śmierci</Polish>
 			<English>There is already a airway management</English>
 			<German>Atemwegsmanagement wurde bereits durchgeführt</German>
 			<Polish>Drogi oddechowe są udrażniane</Polish>
-			<Spanish>La gestión de vías aéreas ya se ha llevado a cabo</Spanish>
+			<Spanish>El manejo de vías aéreas ya se ha llevado a cabo</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_activity">
 			<English>%1 put a: %2</English>
@@ -115,7 +115,7 @@ czas do śmierci</Polish>
 			<German>Atemwegsmanagement nicht möglich</German>
 			<Polish>Udrażnianie dróg oddechowych
  jest niedostępne</Polish>
-			<Spanish>La gestión de vías aéreas no está disponible</Spanish>
+			<Spanish>La manejo de vías aéreas no está disponible</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_overstretch">
 			<English>Head overstretch</English>
@@ -253,7 +253,7 @@ czas do śmierci</Polish>
 			<English>When a patient enters the unconscious state, there are two things that can happen. First of all the airway can collapse. In medical sense this mean, the airway can be blocked from your tongue muscle, 'cause of the missing muscle tone. For example in real life, this will happen to nearly every unconscious person lying on the back. The second thing that can happen is the the airway occluded state. When a patient is lying on the back and the body puke, it will not leave the mouth space. It will stay in there and can block the airway too. The right treatment here, is to remove this vomit. In real life, this will happen sometimes, not quiet often.</English>
 			<German>Wenn eine Person bewusstlos wird, gibt es zwei Dinge die passieren können. Erstens die Atemwege können verlegt sein. Durch de nnicht mehr vorhandenen Muskeltonus kann der zungengrund den Luftweg blockieren. Im echten Leben kann man davon ausgehen das wenn ein Patient bewusstlos ist und auf dem Rücken liegt, das er eine Atemwegsverlegung hat. Zweitens, es ist möglich das der Patient erbricht und dann blockieren flüssige und feste Stoffe die Atemwege und dann sind diese "verstopft". Im echten Leben passiert das nicht besonders häufig</German>
 			<Polish>Kiedy pacjent staję się nieprzytomny, mogą stać się dwie rzeczy. Pierwszą jest zapadnięcie się dróg oddechowych. Z medycznego punktu widzenia drogi oddechowe mogą być zablokowane przez język. Na przykład w prawdziwym życiu zdarzy się to praktycznie w każdym przypadku osoby nieprzytomnej leżącej na plecach. Drugą rzeczą która może się zdarzyć to niedrożność dróg oddechowych. Kiedy pacjent leży na plecach i ciało będzie wymiotowało/odkrztuszało to zawartość nie opuści buzi. Zostanie tam i będzie mogło blokować drogi oddechowe. Odpowiednim leczniem jest tu usunięcie wymiocin. W prawdziwym życiu też może się to zdarzyć ale nie jest to częste.</Polish>
-			<Spanish>Cuando un paciente entre en estado de inconciencia, hay dos posibles escenarios. Primero que todo, las vías aéreas pueden colapsar. En términos médicos, esto significa que las vías aéreas pueden bloquearse con el músculo de la lengua por la falta de tono muscular (tensión). Por ejemplo, en la vida real, esto le pasará a casi cualquier persona inconciente que esté sobre su espalda. Lo segundo que puede pasar es una oclusión de las vías aéreas. Cuando un paciente está sobre su espalda y éste vomita, el vómito no abandonará el área de la boca, permanecerá ahí y esto puede bloquear las vías aéreas también. El correcto tratamiento sería remover el vómito. En la vida real esto último ocurrirá a veces, no tan frecuentemente.</Spanish>
+			<Spanish>Cuando un paciente entre en estado de inconciencia, hay dos posibles escenarios. Primero que todo, las vías aéreas pueden colapsar. En términos médicos, esto significa que las vías aéreas pueden bloquearse con el músculo de la lengua por la falta de tono muscular (tensión). Por ejemplo, en la vida real, esto le pasará a casi cualquier persona inconciente que esté sobre su espalda. Lo segundo que puede pasar es una obstrucción de las vías aéreas. Cuando un paciente está sobre su espalda y éste vomita, el vómito no abandonará el área de la boca, permanecerá ahí y esto puede bloquear las vías aéreas también. El correcto tratamiento sería remover el vómito. En la vida real esto último ocurrirá a veces, no tan frecuentemente.</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Vomit_Display">
 			<English>Vomit (Small)</English>
