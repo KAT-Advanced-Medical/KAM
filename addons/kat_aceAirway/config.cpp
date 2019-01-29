@@ -42,9 +42,9 @@ class CfgMods {
 
 class CfgSounds {
   sounds[] = {};
-  class KAT_Puke {
-      name = "KAT_Puke";
-      sound[] = {"kat_aceAirway\sounds\Puking.wav", db + 2, 1, 15};
+  class KAT_Puke_1 {
+      name = "KAT_Puke_1";
+      sound[] = {"kat_aceAirway\sounds\Puking_1.wav", db + 2, 1, 15};
       titles[]	= {};
   };
   class KAT_Puke_2 {
