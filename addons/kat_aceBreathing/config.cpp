@@ -14,8 +14,8 @@ class CfgPatches {
             "kat_aceCirculation",
             "cba_settings"
         };
-        version = "0.5";
-        versionStr = "0.5";
+        version = "0.9";
+        versionStr = "0.9";
         author = "[SeL] Katalam";
         authorUrl = "http://spezialeinheit-luchs.de/";
     };
@@ -42,7 +42,6 @@ class CfgFunctions {
     class kat_aceBreathing {
         file = "kat_aceBreathing\functions";
         class functions {
-            class canPulseoximeter{};
             class events{};
             class handleInit{};
             class handlePulmoHit{};
@@ -269,7 +268,7 @@ class ACE_Medical_Actions {
             requiredMedic = 1;
             treatmentTime = 2;
             items[] = {};
-            condition = "[_target] call kat_aceBreathing_fnc_canPulseoximeter";
+            condition = "_target getVariable ['kat_aceBreathing_pulseoximeter', false]";
             patientStateCondition = 0;
             callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_removePulseoximeter";
             callbackFailure = "";

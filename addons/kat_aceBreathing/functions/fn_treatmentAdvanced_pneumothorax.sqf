@@ -19,7 +19,7 @@
 params ["_player", "_target"];
 
 if (local _target) then {
-  ["treatmentPneumothorax", [_player, _target]] call CBA_fnc_localEvent;
+    ["treatmentPneumothorax", [_player, _target]] call CBA_fnc_localEvent;
 } else {
-  ["treatmentPneumothorax", [_player, _target], _target] call CBA_fnc_targetEvent;
+    ["treatmentPneumothorax", [_player, _target], _target] call CBA_fnc_targetEvent;
 };

@@ -7,6 +7,10 @@
 			<Polish>ACE-Oddychanie aktywowane?</Polish>
 			<Spanish>¿Activar ACE-Respiración?</Spanish>
 		</Key>
+		<Key ID="kat_aceBreathing_SETTING_death_timer_enable">
+			<English>AAlternative death timer for airway injuries?</English>
+			<German>Alternativen Todestimer für Atemwegsverlegungen nutzen?</German>
+		</Key>
 		<Key ID="STR_kat_aceBreathing_SETTING_Value_Before">
 			<English>Value to add or remove to the SpO2 before 100 sec</English>
 			<German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird vor 100 s</German>

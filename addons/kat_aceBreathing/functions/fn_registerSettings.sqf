@@ -26,6 +26,16 @@
 	true
 ] call CBA_Settings_fnc_init;
 
+//Enable aceBreathing death timer for airway injuries
+[
+	"kat_aceBreathing_death_timer_enable",
+	"CHECKBOX",
+	localize "kat_aceBreathing_SETTING_death_timer_enable",
+	CBA_SETTINGS_CAT,
+	[true],
+	true
+] call CBA_Settings_fnc_init;
+
 // aceBreathing SpO2 add & remove value before 100 sec
 [
 	"kat_aceBreathing_spo2_before_value",

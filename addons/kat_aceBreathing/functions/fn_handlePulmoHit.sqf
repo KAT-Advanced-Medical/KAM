@@ -18,6 +18,7 @@
 params ["_unit", "_selection", "_damage", "_projectile"];
 
 if !(kat_aceBreathing_enable) exitWith {};
+if (kat_aceBreathing_pneumothorax == 0) exitWith {};
 if !(_selection isEqualTo "body") exitWith {};
 if (_damage < 0.7) exitWith {};
 if !(_projectile isKindOF "BulletBase") exitWith {};

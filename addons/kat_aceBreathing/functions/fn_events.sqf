@@ -20,11 +20,11 @@
 ["aliveTimerBreathing", {_this call kat_aceBreathing_fnc_handleTimerAlive}] call CBA_fnc_addEventHandler;
 
 ["ace_unconscious", {
-  params ["_unit", "_state"];
-  if !(_state) exitWith {
-    [_unit, CBA_missionTime] call kat_aceBreathing_fnc_handleTimerAlive;
-  };
-  if (_unit getVariable ["ace_medical_airwayCollapsed", false] || _unit getVariable ["ace_medical_airwayOccluded", false]) then {
-    [_unit, CBA_missionTime] call kat_aceBreathing_fnc_handleTimer;
-  };
+    params ["_unit", "_state"];
+    if !(_state) exitWith {
+        [_unit, CBA_missionTime] call kat_aceBreathing_fnc_handleTimerAlive;
+    };
+    if (_unit getVariable ["ace_medical_airwayCollapsed", false] || _unit getVariable ["ace_medical_airwayOccluded", false]) then {
+        [_unit, CBA_missionTime] call kat_aceBreathing_fnc_handleTimer;
+    };
 }] call CBA_fnc_addEventHandler;
