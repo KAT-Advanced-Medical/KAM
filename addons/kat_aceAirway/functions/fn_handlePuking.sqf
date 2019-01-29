@@ -29,7 +29,7 @@ if !(kat_aceAirway_enable) exitWith {};
         if !(_unit getVariable ["ace_medical_airwayOccluded", false]) then {
             _unit setVariable ["ace_medical_airwayOccluded", true, true];
             if (kat_aceAirway_checkbox_puking_sound) then {
-                playsound3D ["kat_aceAirway\sounds\Puking.wav", _unit, false, getPosASL _unit, 8, 1, 15];
+                playsound3D [selectRandom["kat_aceAirway\sounds\Puking_1.wav", "kat_aceAirway\sounds\Puking_2.wav", "kat_aceAirway\sounds\Puking_3.wav"], _unit, false, getPosASL _unit, 8, 1, 15];
             };
         };
     };
