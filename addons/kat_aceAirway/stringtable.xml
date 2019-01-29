@@ -11,14 +11,14 @@
 			<English>ACE-Airway injuries activated?</English>
 			<German>ACE-Atemwegverletzungen aktiviert?</German>
 			<Polish>ACE- Urazy dróg oddechowych aktywowane?</Polish>
-			<Spanish>¿Activar ACE-Apoyo ventilatorio?</Spanish>
+			<Spanish>¿Activar ACE-Lesiones Respiratorias?</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_TIMER">
 			<English>Airway Injuries Death Timer</English>
 			<German>Atemwegsverletzungstimer</German>
 			<Polish>Urazy dróg oddechowych
 czas do śmierci</Polish>
-			<Spanish>Tiempo de muerte para Apoyo ventilatorio</Spanish>
+			<Spanish>Tiempo de muerte para Lesiones Respiratorias</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_collapsed">
 			<English>Probability for airway collapsing</English>
