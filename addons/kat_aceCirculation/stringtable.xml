@@ -16,15 +16,13 @@
 		<Key ID="STR_KAT_aceCirculation_BloodIV_O">
 			<English>Blood IV (1000ml) BT: 0</English>
 			<German>Blut IV (1000ml) BG: 0</German>
-			<Polish>Krew IV (1000ml)
-GK: 0</Polish>
+			<Polish>Krew IV (1000ml) GK: 0</Polish>
 			<Spanish>Sangre IV (1000ml) GS: 0</Spanish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_BloodIV_A">
 			<English>Blood IV (1000ml) BT: A</English>
 			<German>Blut IV (1000ml) BG: A</German>
-			<Polish>Krew IV (1000ml)
-GK: A</Polish>
+			<Polish>Krew IV (1000ml) GK: A</Polish>
 			<Spanish>Sangre IV (1000ml) GS: A</Spanish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_BloodIV_B">
@@ -262,7 +260,7 @@ GK: A</Polish>
 			<Spanish>Banco de sangre</Spanish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_coolBattery">
-			<English>Cool battery</English>
+			<English>Freeze battery</English>
 			<German>Kühlakku</German>
 			<Polish>Schłodź baterie</Polish>
 			<Spanish>Unidad refrigerante</Spanish>
