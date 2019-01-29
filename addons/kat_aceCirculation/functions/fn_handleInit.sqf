@@ -16,5 +16,4 @@
 
 params ["_unit"];
 
-//_unit addEventHandler ["HandleDamage", {_this call kat_aceAirway_fnc_handleDamage_airway;}];
 _unit call kat_aceCirculation_fnc_init;

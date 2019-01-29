@@ -7,6 +7,10 @@
 			<Polish>ACE-Cyrkulacja aktywowane?</Polish>
 			<Spanish>¿Activar ACE-Circulación?</Spanish>
 		</Key>
+		<Key ID="STR_kat_aceCirculation_SETTING_variableHR_ENABLE">
+			<English>Metabolism Dependent heartrate?</English>
+			<German>Stoffwechselabhängiger Puls?</German>
+		</Key>
 		<Key ID="STR_kat_aceCirculation_SETTING_loadout">
 			<English>Different loadoutname</English>
 			<German>Anderer Loadoutname</German>
