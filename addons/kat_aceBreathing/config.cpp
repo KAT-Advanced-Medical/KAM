@@ -11,6 +11,7 @@ class CfgPatches {
         requiredAddons[] = {
             "ace_medical",
             "kat_aceAirway",
+            "kat_aceCirculation",
             "cba_settings"
         };
         version = "0.5";

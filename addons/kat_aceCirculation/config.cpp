@@ -53,12 +53,14 @@ class CfgFunctions {
             class compatible{};
             class events{};
             class groupID{};
+            class handleHR{};
             class handleInit{};
             class handleTreatment{};
             class init{};
             class registerSettings{};
             class removeEffect_IV{};
             class removeItemfromMag{};
+            class removeLog{};
             class treatmentAdvanced_IV{};
             class treatmentAdvanced_X{};
         };
