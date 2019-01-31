@@ -16,8 +16,7 @@
 		<Key ID="STR_kat_aceAirway_SETTING_TIMER">
 			<English>Airway Injuries Death Timer</English>
 			<German>Atemwegsverletzungstimer</German>
-			<Polish>Urazy dróg oddechowych
-czas do śmierci</Polish>
+			<Polish>Urazy dróg oddechowych czas do śmierci</Polish>
 			<Spanish>Tiempo de muerte para Lesiones Respiratorias</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_collapsed">
@@ -113,8 +112,7 @@ czas do śmierci</Polish>
 		<Key ID="STR_kat_aceAirway_Airway_NA">
 			<English>Airwaymanagement not available</English>
 			<German>Atemwegsmanagement nicht möglich</German>
-			<Polish>Udrażnianie dróg oddechowych
- jest niedostępne</Polish>
+			<Polish>Udrażnianie dróg oddechowych jest niedostępne</Polish>
 			<Spanish>El manejo de vías aéreas no está disponible</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_overstretch">

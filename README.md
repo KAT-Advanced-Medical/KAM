@@ -73,4 +73,4 @@ Please, use my [Issue Tracker](https://github.com/Katalam/kat_aceAdvMedical/issu
 
 ## License
 
-KAM is licensed under the GNU General Public License ([GPLv2](https://github.com/acemod/ACE3/blob/master/LICENSE)).
+KAM is licensed under the GNU General Public License ([GPLv2](https://github.com/Katalam/kat_aceAdvMedical/blob/master/LICENSE)).
