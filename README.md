@@ -4,10 +4,7 @@
 
 <p align="center">
     <a href="https://github.com/Katalam/kat_aceAdvMedical/releases/latest">
-        <img src="https://img.shields.io/badge/Version-3.12.5-blue.svg?style=flat-square" alt="KAM Version">
-    </a>
-    <a href="https://github.com/Katalam/kat_aceAdvMedical/issues">
-        <img src="https://img.shields.io/github/issues-raw/acemod/ACE3.svg?style=flat-square&label=Issues" alt="KAM Issues">
+        <img src="https://img.shields.io/badge/Version-0.9.5-blue.svg?style=flat-square" alt="KAM Version">
     </a>
     <a href="https://github.com/Katalam/kat_aceAdvMedical/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-GPLv2-red.svg?style=flat-square" alt="KAM License">
@@ -15,8 +12,7 @@
 </p>
 
 
-====<br/>
-**Adds several new medical aspects to the ace medical addon**<br/>
+**The ACE Advanced Medical System is nice, but we can do it better, even on a more realistic way and bring it on another level with these addons.**<br/>
 *Created by Katalam*
 
 Big thanks to
