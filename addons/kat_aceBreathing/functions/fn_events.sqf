@@ -24,7 +24,7 @@
     if !(_state) exitWith {
         [_unit, CBA_missionTime] call kat_aceBreathing_fnc_handleTimerAlive;
     };
-    if (_unit getVariable ["ace_medical_airwayCollapsed", false] || _unit getVariable ["ace_medical_airwayOccluded", false]) then {
+    if (_unit getVariable ["ace_medical_airwayCollapsed", false] || _unit getVariable ["ace_medical_airwayOccluded", false] && kat_aceBreathing_death_timer_enable) then {
         [_unit, CBA_missionTime] call kat_aceBreathing_fnc_handleTimer;
     };
 }] call CBA_fnc_addEventHandler;
