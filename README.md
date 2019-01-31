@@ -1,5 +1,5 @@
 <p align="center">
-    KAT - Advanced Medical
+    <img src="https://raw.githubusercontent.com/Katalam/kat_aceAdvMedical/master/logo.jpg">
 </p>
 
 <p align="center">
@@ -24,25 +24,24 @@ Big thanks to
 + [Kellerkompanie](http://kellerkompanie.com/)
 
 ## Core features
---------
 
-- aceAirway
+- Airway
   - [x] Airwaymanagement for unconscious patients
     - [x] Head overstretching
     - [x] Intubation
     - [x] Aspiration
-- aceBreathing
+- Breathing
   - [x] Oxygen saturation
-- aceCirculation
+- Circulation
   - [x] Blood Groups
   - [x] Painkillers
   - [x] Bigger AED with monitoring
-- aceDisability
+- Disability
   - [x] Cut of clothes
   - [x] Allergical reactions
-- aceExposure
+- Exposure
   - [ ] Heat-preserving
-- aceMisc
+- Misc
   - [ ] Big Backpack?
   - [x] Workable IV stand
 
