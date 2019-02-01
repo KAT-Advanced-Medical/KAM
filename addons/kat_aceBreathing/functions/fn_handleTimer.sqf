@@ -26,6 +26,9 @@ if (!local _unit) then {
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit", "_startTime"];
+    if !(alive _unit) exitWith {
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+    };
     if (([_unit] call ace_common_fnc_isAwake || _unit getVariable ["kat_aceAirway_airway", false]) && !(_unit getVariable ["kat_aceBreathing_pulmo", false])) exitWith {
         [_unit, CBA_missionTime] call kat_aceBreathing_fnc_handleTimerAlive;
         [_idPFH] call CBA_fnc_removePerFrameHandler;
