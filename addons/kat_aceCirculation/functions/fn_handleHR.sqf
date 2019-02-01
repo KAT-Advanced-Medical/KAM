@@ -14,7 +14,7 @@
  *
  * Public: No
  */
-/*
+
 private _currentWork = 18.83;
 private _currentSpeed = (vectorMagnitude (velocity ACE_PLAYER)) min 6;
 
@@ -27,28 +27,29 @@ if ((vehicle ACE_PLAYER == ACE_PLAYER) && {_currentSpeed > 0.1} && {isTouchingGr
     _currentWork = _currentWork max 18.83;
 };
 private _currentWorkInMin = _currentWork * 60 / 1000;
+// joule/s goes to kJ/min
 _currentWorkInMin = _currentWorkInMin max 8.9;
+// if you stand your normal metabolic cost is like 8.9 kJ/min
 private _oxygen = 6 * _currentWorkInMin / 2826;
+// 2826 kJ is the ouput from 6 o2 atoms
 private _oxygenInl = _oxygen * 22.4;
+// normal material quantity in liter calculation of gas is 22.4
 
 private _bloodAmount = _oxygenInl * 1000 / 18 * 100;
+// 100 ml blood can transport 18 ml oxygen
 if (_currentWorkInMin < 30) then {
 	_bloodAmount = _oxygenInl * 10000; // 1000 / 10 * 100
+	// 100 ml blood can transport 10 ml oxygen if your current work is too small
 };
 private _heartRate = _bloodAmount / 1000 / 0.07;
+// ml in l and then stroke volume is 70 ml
 
-private _new = (_heartRate - (ACE_PLAYER getVariable ["ace_medical_heartRate", 80])) min 170;
+private _oldHR = ACE_PLAYER getVariable ["ace_medical_heartRate", 80];
+private _new = (_heartRate - _oldHR) min 150;
 
-if (local ACE_PLAYER) then {
-	[ACE_PLAYER, _new, 1, {diag_log "handleUnitVital"}] call ace_medical_fnc_addHeartRateAdjustment;
-    diag_log formatText ["local addHeartRate %1 %2", _new, ACE_PLAYER];
-} else {
-	[[ACE_PLAYER, _new, 1, {diag_log "handleUnitVital"}], ace_medical_fnc_addHeartRateAdjustment] remoteExec ["call", ACE_PLAYER];
-    diag_log formatText ["!local addHeartRate %1 %2", _new, ACE_PLAYER];
-};
+[ACE_PLAYER, _new, 2] call ace_medical_fnc_addHeartRateAdjustment;
+[kat_aceCirculation_fnc_handleHR, [], 2] call CBA_fnc_waitAndExecute;
 
-[kat_aceCirculation_fnc_handleHR, [], 3] call CBA_fnc_waitAndExecute;
-*/
 //-----------------------------------------------------------------------------
 
 //TODO: Replace the ace_medical_fnc_addHeartRateAdjustment. It can't handle so much data

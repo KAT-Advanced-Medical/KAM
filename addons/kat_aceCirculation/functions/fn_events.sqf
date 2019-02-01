@@ -19,6 +19,6 @@
 /*
 ["ace_settingsInitialized", {
     if !(kat_aceCirculation_variableHR_enable) exitWith {};
-    [kat_aceCirculation_fnc_handleHR, [], 3] call CBA_fnc_waitAndExecute;
+    [kat_aceCirculation_fnc_handleHR, [], 10] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_addEventHandler;
 */
