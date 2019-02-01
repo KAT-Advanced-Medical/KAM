@@ -26,7 +26,8 @@ if (!local _unit) then {
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit", "_startTime"];
-    if (_unit getVariable ["ace_medical_airwayStatus", 100] isEqualTo 100) exitWith {
+    if (_unit getVariable ["ace_medical_airwayStatus", 100] >= 100) exitWith {
+        _unit setVariable ["ace_medical_airwayStatus", 100, true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
     if (CBA_missionTime - _startTime > 100) then {
