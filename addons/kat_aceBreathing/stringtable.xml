@@ -8,7 +8,7 @@
 			<Spanish>¿Activar ACE-Respiración?</Spanish>
 		</Key>
 		<Key ID="kat_aceBreathing_SETTING_death_timer_enable">
-			<English>AAlternative death timer for airway injuries?</English>
+			<English>Alternative death timer for airway injuries?</English>
 			<German>Alternativen Todestimer für Atemwegsverlegungen nutzen?</German>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_SETTING_Value_Before">
