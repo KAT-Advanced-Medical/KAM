@@ -37,6 +37,10 @@
 			<Polish>Aktywować dźwięk wymiotowania?</Polish>
 			<Spanish>¿Activar el sonido de vómito?</Spanish>
 		</Key>
+		<Key ID="STR_kat_aceAirway_SETTING_exit">
+			<English>Punch string</English>
+			<German>Punch string</German>
+		</Key>
 		<Key ID="STR_kat_aceAirway_checkAirway">
 			<English>Check Airways</English>
 			<German>Überprüfe Atemwege</German>

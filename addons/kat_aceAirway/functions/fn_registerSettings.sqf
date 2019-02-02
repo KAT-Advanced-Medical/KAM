@@ -78,4 +78,13 @@ In real life, this will happen sometimes, not quiet often.
 	true
 ] call CBA_Settings_fnc_init;
 
+[
+	"kat_aceAirway_string_exit",
+	"LIST",
+	localize "STR_kat_aceAirway_SETTING_exit",
+	CBA_SETTINGS_CAT,
+	[["", "keko_wasPunched"], ["", "keko_wasPunched"], 0],
+	true
+] call CBA_Settings_fnc_init;
+
 nil;

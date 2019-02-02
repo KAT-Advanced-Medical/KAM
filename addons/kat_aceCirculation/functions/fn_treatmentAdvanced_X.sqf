@@ -43,7 +43,7 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
 	};
 
     [_target, "quick_view", _string] call kat_aceCirculation_fnc_removeLog;
-    [_target, "quick_view", _string, [round (_target getVariable ["ace_medical_heartRate", 80]), (round (_target getVariable ["ace_medical_bloodPressure", [80,120]] select 1)),
+    [_target, "quick_view", _string, [round (_target getVariable ["ace_medical_heartRate", 0]), (round (_target getVariable ["ace_medical_bloodPressure", [0,0]] select 1)),
         (round (_target getVariable ["ace_medical_bloodPressure", [80,120]] select 0)), (round (_target getVariable ["ace_medical_airwayStatus", 100]))]] call ace_medical_fnc_addToLog;
 
 }, 1, [_string, _target]] call CBA_fnc_addPerFrameHandler;
