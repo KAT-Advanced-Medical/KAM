@@ -26,14 +26,4 @@
 	true
 ] call CBA_Settings_fnc_init;
 
-//Enable aceCirculation things
-[
-	"kat_aceCirculation_variableHR_enable",
-	"CHECKBOX",
-	localize "STR_kat_aceCirculation_SETTING_variableHR_ENABLE",
-	CBA_SETTINGS_CAT,
-	[true],
-	true
-] call CBA_Settings_fnc_init;
-
 nil;
