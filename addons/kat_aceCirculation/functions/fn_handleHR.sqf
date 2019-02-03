@@ -14,7 +14,7 @@
  *
  * Public: No
  */
-
+/*
 private _currentWork = 18.83;
 private _currentSpeed = (vectorMagnitude (velocity ACE_PLAYER)) min 6;
 
@@ -49,7 +49,7 @@ private _new = (_heartRate - _oldHR) min 150;
 
 [ACE_PLAYER, _new, 2] call ace_medical_fnc_addHeartRateAdjustment;
 [kat_aceCirculation_fnc_handleHR, [], 2] call CBA_fnc_waitAndExecute;
-
+*/
 //-----------------------------------------------------------------------------
 
 //TODO: Replace the ace_medical_fnc_addHeartRateAdjustment. It can't handle so much data

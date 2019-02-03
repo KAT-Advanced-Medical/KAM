@@ -15,11 +15,11 @@
  *
  * Public: No
  */
-
+/*
 params ["_player", "_target"];
+
 
 _target setVariable ["kat_aceBreathing_pulmo", false, true];
 
-
-
 [_target, "activity", "STR_kat_aceBreathing_pneumothorax", [[_player] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
+*/

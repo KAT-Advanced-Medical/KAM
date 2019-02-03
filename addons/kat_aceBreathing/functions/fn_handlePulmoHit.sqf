@@ -14,7 +14,7 @@
  *
  * Public: No
  */
-
+/*
 params ["_unit", "_selection", "_damage", "_projectile"];
 
 if !(kat_aceBreathing_enable) exitWith {};
@@ -29,3 +29,4 @@ if (random (100) < kat_aceBreathing_pneumothorax) then {
 	[_unit, CBA_missionTime] call kat_aceBreathing_fnc_handleTimer;
 	_unit setVariable ["kat_aceBreathing_pulmo", true, true];
 };
+*/

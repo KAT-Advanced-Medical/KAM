@@ -25,7 +25,7 @@
 	[true],
 	true
 ] call CBA_Settings_fnc_init;
-
+/*
 //Enable aceCirculation things
 [
 	"kat_aceCirculation_variableHR_enable",
@@ -35,5 +35,5 @@
 	[true],
 	true
 ] call CBA_Settings_fnc_init;
-
+*/
 nil;

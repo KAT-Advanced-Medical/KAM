@@ -15,7 +15,7 @@
  *
  * Public: No
  */
-
+/*
 params ["_player", "_target"];
 
 if (local _target) then {
@@ -23,3 +23,4 @@ if (local _target) then {
 } else {
     ["treatmentPneumothorax", [_player, _target], _target] call CBA_fnc_targetEvent;
 };
+*/
