@@ -21,7 +21,7 @@ if !(_caller getVariable ["kat_aceAirway_sound",false]) then {
 	_caller setVariable ["kat_aceAirway_sound",true];
 	(_this select 0) spawn {
 		params ["_caller", "_target"];
-		playsound3D ["kat_aceAirway\sounds\Suction.wav", _target, false, getPosASL _target, 8, 1, 15];
+		playsound3D ["kat_aceAirway\sounds\Suction.wav", _target, false, getPosASL _target, 6, 1, 15];
 		_caller setVariable ["kat_aceAirway_sound",false];
 	};
 };
