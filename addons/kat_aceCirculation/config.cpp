@@ -53,7 +53,6 @@ class CfgFunctions {
             class compatible{};
             class events{};
             class groupID{};
-            class handleHR{};
             class handleInit{};
             class handleTreatment{};
             class init{};
