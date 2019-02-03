@@ -1,4 +1,4 @@
-name = "KAT - ACE Extension";
+name = "KAT - Advanced Medical";
 dir = "@kat_aceAdvMedical";
 picture = "larynx.paa";
 actionName = "Github";
