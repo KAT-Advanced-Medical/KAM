@@ -56,7 +56,7 @@ class CfgSounds {
       name = "KAT_Puke_3";
       sound[] = {"kat_aceAirway\sounds\Puking_3.wav", db + 2, 1, 15};
       titles[] = {};
-  }; 
+  };
   class KAT_Suction {
       name = "KAT_Suction";
       sound[] = {"kat_aceAirway\sounds\Suction.wav", db + 2, 1, 15};
@@ -148,7 +148,7 @@ class cfgWeapons {
         descriptionUse = "$STR_kat_aceAirway_Larynx_Desc_Use";
         picture = "\kat_aceAirway\images\larynx_normal.paa";
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
+            mass = 0.5;
         };
     };
     class KAT_guedel: ACE_ItemCore {
@@ -159,7 +159,7 @@ class cfgWeapons {
         descriptionUse = "$STR_kat_aceAirway_Guedel_Desc_Use";
         picture = "\kat_aceAirway\images\guedel_normal.paa";
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
+            mass = 0.5;
         };
     };
     class KAT_accuvac: ACE_ItemCore {
