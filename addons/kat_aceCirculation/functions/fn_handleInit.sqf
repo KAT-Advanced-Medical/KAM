@@ -17,4 +17,4 @@
 params ["_unit"];
 
 _unit call kat_aceCirculation_fnc_init;
-//[_unit] call ace_medical_fnc_addVitalLoop;
+[_unit] call ace_medical_fnc_addVitalLoop;

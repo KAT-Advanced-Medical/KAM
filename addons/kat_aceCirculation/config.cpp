@@ -57,7 +57,6 @@ class CfgFunctions {
             class handleInit{};
             class handleTreatment{};
             class init{};
-            class interactionX{};
             class registerSettings{};
             class removeEffect_IV{};
             class removeItemfromMag{};
@@ -276,67 +275,6 @@ class cfgVehicles {
 class Man;
     class CAManBase: Man {
         class ACE_Actions {
-            /*class KAT_C1 {
-                displayName = "C1";
-                condition = "true";
-                exceptions[] = {};
-                statement = "true";
-                position = "-0.15, 0.1, 1.3";
-                class KAT_C1_TEST {
-                    displayName = "test";
-                    distance = 1.50;
-                    condition = "true";
-                    statement = "true";
-                    icon = "";
-                    exceptions[] = {"isNotSwimming"};
-                };
-            };
-            class KAT_TEST {
-                displayName = "CTest";
-                selection = "spine2";
-                distance = 1.50;
-                condition = "true";
-                statement = "";
-                exceptions[] = {"isNotSwimming"};
-                class test2 {
-                    displayName = "test";
-                    distance = 1.50;
-                    condition = "true";
-                    statement = "true";
-                    icon = "";
-                    exceptions[] = {"isNotSwimming"};
-                };
-            };
-            class KAT_C2 {
-                displayName = "C2";
-                condition = "true";
-                exceptions[] = {};
-                statement = "";
-                icon = "";
-                //position = "{[0, 0.2, 1.3]}";
-                class test {
-                    displayName = "C3";
-                    condition = "true";
-                    exceptions[] = {};
-                    statement = "true";
-                    icon = "";
-                };
-            };
-            class KAT_C3 {
-                displayName = "C3";
-                condition = "true";
-                exceptions[] = {};
-                statement = "";
-                icon = "";
-                //position[] = {-0.1, 0.2, 1.3};
-                class test {
-                    displayName = "C3";
-                    condition = "true";
-                    exceptions[] = {};
-                    statement = "true";
-                    icon = "";
-                };
-            };*/
             class ACE_Dogtag {
                 condition = "[_player, _target] call ace_dogtags_fnc_canCheckDogtag";
             };
