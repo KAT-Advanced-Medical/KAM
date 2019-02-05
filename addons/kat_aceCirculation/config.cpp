@@ -586,7 +586,7 @@ class ACE_Medical_Advanced {
             };
             class Painkillers {
                 // copied from ACE. Just a reminder
-                painReduce = 0.7;
+                painReduce = 1.2;
                 timeInSystem = 120;
                 maxDose = 10;
                 inCompatableMedication[] = {};
