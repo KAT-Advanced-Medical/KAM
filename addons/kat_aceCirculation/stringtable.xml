@@ -263,17 +263,5 @@
 			<Polish>Bank krwi</Polish>
 			<Spanish>Banco de sangre</Spanish>
 		</Key>
-		<Key ID="STR_KAT_aceCirculation_coolBattery">
-			<English>Freeze battery</English>
-			<German>Kühlakku</German>
-			<Polish>Schłodź baterie</Polish>
-			<Spanish>Unidad refrigerante</Spanish>
-		</Key>
-		<Key ID="STR_KAT_aceCirculation_coolBattery_desc">
-			<English>Used to cool blood</English>
-			<German>Benutzt um Blut zu kühlen</German>
-			<Polish>Używany do chłodzenia krwi</Polish>
-			<Spanish>Usado para refrigerar sangre</Spanish>
-		</Key>
 	</Package>
 </Project>
