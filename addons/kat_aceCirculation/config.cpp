@@ -28,8 +28,8 @@ class CfgPatches {
             "adv_aceCPR",
             "cba_settings"
         };
-        version = "0.7";
-        versionStr = "0.7";
+        version = "0.9";
+        versionStr = "0.9";
         author = "[SeL] Katalam";
         authorUrl = "http://spezialeinheit-luchs.de/";
     };

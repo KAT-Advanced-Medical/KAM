@@ -12,8 +12,8 @@ class CfgPatches {
             "ace_medical",
             "cba_settings"
         };
-        version = "0.5";
-        versionStr = "0.5";
+        version = "1.0";
+        versionStr = "1.0";
         author = "[SeL] Katalam";
         authorUrl = "http://spezialeinheit-luchs.de/";
     };
@@ -151,7 +151,7 @@ class cfgVehicles {
 class ACE_Medical_Actions {
     class Advanced {
         class SalineIV;
-        
+
         class SalineIV_Stand: SalineIV {
             displayName = "$STR_kat_aceMisc_Display_IVStand";
             requiredMedic = 0;
