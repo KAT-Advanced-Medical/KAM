@@ -27,10 +27,22 @@ if (_target getVariable ["kat_aceCirculation_X", false]) exitWith {
 _target setVariable ["kat_aceCirculation_X", true, true];
 _player setVariable ["kat_aceCirculation_use", true, true];
 
-// shock advise. If there is a heart rate. No shock.
-if (_target getVariable ["ace_medical_heartRate", 80] > 0) then {
-    playsound3D ["kat_aceCirculation\sounds\noshock.wav", _target, false, getPosASL _target, 8, 1, 15];
+// analyse sound feedback
+playsound3D ["kat_aceCirculation\sounds\analyse.wav", _target, false, getPosASL _target, 5, 1, 15];
+
+// wait for the analyse and give the advise
+if (_target getVariable ["ace_medical_heartRate", 0] == 0) then {
+    [{
+        params ["_target"];
+        playsound3D ["kat_aceCirculation\sounds\shock.wav", _target, false, getPosASL _target, 6, 1, 15];
+    }, [_target], 2] call CBA_fnc_waitAndExecute;
+} else {
+    [{
+        params ["_target"];
+        playsound3D ["kat_aceCirculation\sounds\noshock.wav", _target, false, getPosASL _target, 6, 1, 15];
+    }, [_target], 2] call CBA_fnc_waitAndExecute;
 };
+
 
 // medical menu log
 // logs every second the heart rate and the blood pressure.
@@ -52,7 +64,7 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
 // disconnect the x-series
 [{
     params ["_player", "_target"];
-    (_target distance2D _player) > 50;
+    (_target distance2D _player) > 30;
 }, {
     params ["_player", "_target"];
     _target setVariable ["kat_aceCirculation_X", false, true];
@@ -76,12 +88,12 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
         private _hr = _target getVariable ["ace_medical_heartRate", 80];
         if (_hr <= 0) then {
             private _soundPath1 = _player getVariable ["kat_aceCirculation_X_sound1", "kat_aceCirculation\sounds\noheartrate.wav"];
-            playsound3D [_soundPath1, _target, false, getPosASL _target, 5, 1, 15];
-            sleep 1.48;
+            playsound3D [_soundPath1, _target, false, getPosASL _target, 2, 1, 15];
+            sleep 1.478;
         } else {
             private _sleep = 60 / _hr;
             private _soundPath2 = _player getVariable ["kat_aceCirculation_X_sound2", "kat_aceCirculation\sounds\heartrate.wav"];
-            playsound3D [_soundPath2, _target, false, getPosASL _target, 8, 1, 15];
+            playsound3D [_soundPath2, _target, false, getPosASL _target, 5, 1, 15];
             sleep 0.25;
             sleep _sleep;
         };

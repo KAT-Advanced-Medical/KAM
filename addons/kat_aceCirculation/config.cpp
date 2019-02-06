@@ -49,6 +49,7 @@ class CfgFunctions {
     class kat_aceCirculation {
         file = "kat_aceCirculation\functions";
         class functions {
+            class AED_sound{};
             class bloodType{};
             class compatible{};
             class events{};
@@ -484,6 +485,8 @@ class ACE_Medical_Actions {
 
         class Defibrillator: CPR {
             items[] = {{"adv_aceCPR_AED", "KAT_X_AED"}};
+            treatmentTime = 10;
+            callbackProgress = "call kat_acecirculation_fnc_AED_sound";
         };
         class X_Defibrillator: CPR {
             displayName = $STR_KAT_aceCirculation_X_Action_Use;
