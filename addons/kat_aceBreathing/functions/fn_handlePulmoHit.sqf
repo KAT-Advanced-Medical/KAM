@@ -23,7 +23,7 @@ if !(_selection isEqualTo "body") exitWith {};
 if (_damage < 0.7) exitWith {};
 if !(_projectile isKindOF "BulletBase") exitWith {};
 
-if (random (100) < kat_aceBreathing_pneumothorax) then {
+if (random (100) <= kat_aceBreathing_pneumothorax) then {
 	// add breathing sound
 	[_unit, 0.3] call ace_medical_fnc_adjustPainLevel;
 	[_unit, CBA_missionTime] call kat_aceBreathing_fnc_handleTimer;
