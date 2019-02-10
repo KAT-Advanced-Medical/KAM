@@ -32,4 +32,8 @@ if ((_oldMag select 1) > 1) then {
 
 playsound3D ["kat_aceCirculation\sounds\take_painkillers.wav", _player, false, getPosASL _player, 8, 1, 15];
 
+if (isText (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "Medication" >> _className >> "itemClassName")) then {
+	_mag = getText (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "Medication" >> _className >> "itemClassName");
+};
+
 [_player, _target, _selectionName, _className, [_mag]] call ace_medical_fnc_treatmentAdvanced_medication;
