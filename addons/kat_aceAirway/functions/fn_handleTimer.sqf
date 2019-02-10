@@ -17,15 +17,15 @@
 
 params [["_unit", objNull, [objNull]], "_time"];
 
+if !(kat_aceAirway_enable) exitWith {};
+
 if (!local _unit) exitWith {
     ["deathTimerAirway", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
-
-if (kat_aceBreathing_death_timer_enable) exitWith { // You can use a different death timer from kat_aceBreathing
+if (kat_aceBreathing_enable) then {
     ["deathTimerBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
-
-if !(kat_aceAirway_enable) exitWith {};
+if (kat_aceBreathing_death_timer_enable) exitWith {};
 
 [{
     params ["_args", "_idPFH"];
