@@ -14,11 +14,15 @@
  * Public: No
  */
 
-params ["_caller", "_target", "_selectionName", "_className", "_items"];
-
+params ["_player", "_target", "_selectionName", "_className", "_items"];
+//[abc,abcd,"hand_r","BloodIV_A",["KAT_bloodIV_A"]]
 private _return = false;
-[_caller, _target, _selectionName, _className, _items] call ace_medical_fnc_treatmentIV;
+
+[_player, _target, _selectionName, _className, _items] call ace_medical_fnc_treatmentIV;
+
 if ([_target, _className] call kat_aceCirculation_fnc_compatible) exitWith {};
-[_target, _className] call kat_aceCirculation_fnc_treatmentAdvanced_IV;
+
+[_className, _target] call kat_aceCirculation_fnc_treatmentAdvanced_IV;
+
 _return = true;
 _return;

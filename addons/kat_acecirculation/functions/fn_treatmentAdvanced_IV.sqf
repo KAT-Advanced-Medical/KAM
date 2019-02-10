@@ -9,34 +9,18 @@
  * 0: Successful <BOOLEAN>
  *
  * Example:
- * [cursorTarget, 'Blood_IV_A'] call kat_aceCirculation_fnc_treatmentAdvanced_IV
+ * ['Blood_IV_A', cursorTarget] call kat_aceCirculation_fnc_treatmentAdvanced_IV
  *
  * Public: No
  */
 
-params ["_unit", "_className"];
-
-if !(local _unit) exitWith {["treatmentIVfalse", [_unit, _className], _unit] call CBA_fnc_targetEvent};
-private _return = false;
-
-private _counts = _unit getVariable ["kat_aceCirculation_IV_counts", 0];
-if (_counts isEqualTo 0) then {_counts = 1};
-private _ppEffect = (0.01 * _counts);
-
-private _effect = ppEffectCreate ["chromAberration", 5000];
-_effect ppEffectEnable true;
-_effect ppEffectForceInNVG true;
-_effect ppEffectAdjust [_ppEffect, _ppEffect, false];
-_effect ppEffectCommit 0.01;
+params ["_className", "_target"];
 
 //unit, adjustment, time
 private _volume = getNumber (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "IV" >> _className >> "volume");
 private _hradjust = _volume / 25;
-[_unit, _hradjust, 60] call ace_medical_fnc_addHeartRateAdjustment;
+[_target, _hradjust, 60] call ace_medical_fnc_addHeartRateAdjustment;
 
 //todo tod?
-private _a = (_unit getVariable ["kat_aceCirculation_IV_counts", 0]) + 1;
-_unit setVariable ["kat_aceCirculation_IV_counts", _a, true];
-
-_return = true;
-_return;
+private _a = (_target getVariable ["kat_aceCirculation_IV_counts", 0]) + 1;
+_target setVariable ["kat_aceCirculation_IV_counts", _a, true];
