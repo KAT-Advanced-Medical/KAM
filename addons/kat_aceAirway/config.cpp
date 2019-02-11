@@ -386,7 +386,7 @@ class ACE_Medical_Actions {
         };
         class Accuvac: larynxtubus {
             displayName = "Accuvac";
-            treatmentTime = 12;
+            treatmentTime = 8;
             items[] = {"KAT_accuvac"};
             itemConsumed = 0;
             callbackSuccess = "[_player, _target] call kat_aceAirway_fnc_treatmentAdvanced_accuvac";
