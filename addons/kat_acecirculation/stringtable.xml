@@ -264,11 +264,11 @@
 			<Spanish>Banco de sangre</Spanish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_open_crosspanel">
-			<English>Open blood groups table</English>
+			<English>Open blood groups cheat sheet</English>
 			<German>Öffne Blutgruppentabelle</German>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_crosspanel">
-			<English>Blood groups table</English>
+			<English>Blood groups cheat sheet</English>
 			<German>Blutgruppentabelle</German>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_desc_crosspanel">
