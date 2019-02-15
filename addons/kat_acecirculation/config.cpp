@@ -261,6 +261,7 @@ class cfgVehicles {
     class KAT_medicalSupplyCrate: ACE_medicalSupplyCrate {
         displayName = $STR_KAT_aceCirculation_bloodbank;
         class TransportItems: TransportItems {
+            MACRO_ADDITEM(KAT_CrossPanel,5);
             MACRO_ADDITEM(KAT_bloodIV_O,5);
             MACRO_ADDITEM(KAT_bloodIV_A,10);
             MACRO_ADDITEM(KAT_bloodIV_B,10);
