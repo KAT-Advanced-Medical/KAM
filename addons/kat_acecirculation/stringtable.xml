@@ -268,8 +268,8 @@
 			<German>Öffne Kreuztafel</German>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_crosspanel">
-			<English>Crosspanel</English>
-			<German>Kreuztafel</German>
+			<English>Blood groups table</English>
+			<German>Blutgruppentabelle</German>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_desc_crosspanel">
 			<English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
