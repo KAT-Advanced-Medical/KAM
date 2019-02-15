@@ -258,14 +258,14 @@
 			<Spanish>%1 está vacío ahora</Spanish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_bloodbank">
-			<English>Blood bank</English>
-			<German>Blutbank</German>
+			<English>Medical Blood bank</English>
+			<German>Medizinische Blutbank</German>
 			<Polish>Bank krwi</Polish>
 			<Spanish>Banco de sangre</Spanish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_open_crosspanel">
-			<English>Open crosspanel</English>
-			<German>Öffne Kreuztafel</German>
+			<English>Open blood groups table</English>
+			<German>Öffne Blutgruppentabelle</German>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_crosspanel">
 			<English>Blood groups table</English>
