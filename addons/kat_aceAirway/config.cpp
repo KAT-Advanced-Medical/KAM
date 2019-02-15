@@ -18,7 +18,7 @@ class CfgPatches {
         };
         version = "0.9.4";
         versionStr = "0.9.4";
-        author = "[SeL] Katalam";
+        author = "Katalam";
         authorUrl = "http://spezialeinheit-luchs.de/";
     };
 };

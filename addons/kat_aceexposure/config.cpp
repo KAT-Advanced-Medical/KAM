@@ -14,7 +14,7 @@ class kat_aceExposure {
         };
         version = "0.5";
         versionStr = "0.5";
-        author = "[SeL] Katalam";
+        author = "Katalam";
         authorUrl = "http://spezialeinheit-luchs.de/";
     };
 };
