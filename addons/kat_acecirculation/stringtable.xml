@@ -263,5 +263,17 @@
 			<Polish>Bank krwi</Polish>
 			<Spanish>Banco de sangre</Spanish>
 		</Key>
+		<Key ID="STR_KAT_aceCirculation_open_crosspanel">
+			<English>Open crosspanel</English>
+			<German>Öffne Kreuztafel</German>
+		</Key>
+		<Key ID="STR_KAT_aceCirculation_crosspanel">
+			<English>Crosspanel</English>
+			<German>Kreuztafel</German>
+		</Key>
+		<Key ID="STR_KAT_aceCirculation_desc_crosspanel">
+			<English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
+			<German>Eine falsche Kombination von Spender- und Empfängerblut kann sogar tödliche Folgen haben.</German>
+		</Key>
 	</Package>
 </Project>

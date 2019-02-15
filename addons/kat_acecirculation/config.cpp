@@ -187,8 +187,8 @@ class cfgWeapons {
     class KAT_CrossPanel: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
-        displayName = "CrossPanel";
-        descriptionShort = "CrossPanel";
+        displayName = "$STR_KAT_aceCirculation_crosspanel";
+        descriptionShort = "$STR_KAT_aceCirculation_desc_crosspanel";
         picture = "\kat_acecirculation\images\crosspanel.paa";
         icon = "";
         mapSize = 0.034;
@@ -399,8 +399,8 @@ class Man;
                     icon = "";
                 };
                 class openCrossPanel {
-                    displayName = "open";
-                    condition = "('KAT_CrossPanel' in (uniformItems ACE_player)) || ('KAT_CrossPanel' in (vestItems ACE_player))";
+                    displayName = "$STR_KAT_aceCirculation_open_crosspanel";
+                    condition = "('KAT_CrossPanel' in (uniformItems _player)) || ('KAT_CrossPanel' in (vestItems _player))";
                     statement = "createDialog 'KAT_CrossPanel_Dialog'";
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
