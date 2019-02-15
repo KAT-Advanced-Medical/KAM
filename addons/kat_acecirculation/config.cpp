@@ -31,8 +31,8 @@ class CfgPatches {
             "adv_aceCPR",
             "cba_settings"
         };
-        version = "0.9.5";
-        versionStr = "0.9.5";
+        version = "0.9.6";
+        versionStr = "0.9.6";
         author = "Katalam";
         authorUrl = "http://spezialeinheit-luchs.de/";
     };
