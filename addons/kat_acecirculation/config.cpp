@@ -30,7 +30,7 @@ class CfgPatches {
         };
         version = "0.9.5";
         versionStr = "0.9.5";
-        author = "[SeL] Katalam";
+        author = "Katalam";
         authorUrl = "http://spezialeinheit-luchs.de/";
     };
 };
@@ -230,7 +230,7 @@ class cfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "$STR_KAT_aceCirculation_X_Display";
-        author = "[SeL] Katalam";
+        author = "Katalam";
         class TransportItems {
             MACRO_ADDITEM(KAT_X_AED,1);
         };
