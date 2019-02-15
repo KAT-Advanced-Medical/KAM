@@ -42,6 +42,9 @@ if !(_unit getVariable ["ace_medical_airwayCollapsed", false] || _unit getVariab
             [_unit, true] call ace_medical_fnc_setDead;
         };
     };
+    if (_unit getVariable ["ace_medical_airwayStatus", 100] <= 1) exitWith {
+        _unit setVariable ["ace_medical_airwayStatus", 0, true];
+    };
     if (CBA_missionTime - _startTime > 100) then {
         private _newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) - kat_aceBreathing_spo2_after_value; //You will have 110 sec to be forced in unconscious state with 1 and 0.2
         _unit setVariable ["ace_medical_airwayStatus", _newValue, true];
