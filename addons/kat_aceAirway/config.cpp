@@ -4,7 +4,8 @@ class CfgPatches {
         units[] = {
             "KAT_guedelItem",
             "KAT_larynxItem",
-            "KAT_accuvacItem"
+            "KAT_accuvacItem",
+            "KAT_Vomit"
         };
         weapons[] = {
             "KAT_guedel",

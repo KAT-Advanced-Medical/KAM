@@ -2,8 +2,9 @@
 class CfgPatches {
     class kat_aceCirculation {
         units[] = {
-            "KAT_Painkiller_Item",
-            "KAT_X_AEDItem"
+            "KAT_PainkillerItem",
+            "KAT_X_AEDItem",
+            "KAT_medicalSupplyCrate"
         };
         weapons[] = {
             "KAT_Painkiller",
@@ -19,7 +20,9 @@ class CfgPatches {
             "KAT_bloodIV_A_250",
             "KAT_bloodIV_B_250",
             "KAT_bloodIV_AB_250",
-            "KAT_X_AED"
+            "KAT_Painkiller_Item",
+            "KAT_X_AED",
+            "KAT_CrossPanel"
         };
         requiredVersion = 1.80;
         requiredAddons[] = {
