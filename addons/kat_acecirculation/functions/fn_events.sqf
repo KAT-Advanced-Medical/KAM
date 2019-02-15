@@ -18,6 +18,9 @@
 ["IVreset", {_this call kat_aceCirculation_fnc_removeEffect_IV}] call CBA_fnc_addEventHandler;
 
 if (hasInterface) then {
+
+	KAT_CrossPanelOpened = false;
+
 	private _fnc_createEffect = {
 	    params ["_type", "_layer", "_default"];
 
