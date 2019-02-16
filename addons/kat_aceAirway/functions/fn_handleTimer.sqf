@@ -23,7 +23,7 @@ if (!local _unit) exitWith {
     ["deathTimerAirway", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
 if (kat_aceBreathing_enable) then {
-    ["deathTimerBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
+    ["handleBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
 if (kat_aceBreathing_death_timer_enable) exitWith {};
 
