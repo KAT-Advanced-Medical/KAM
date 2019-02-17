@@ -429,6 +429,7 @@ class ACE_Medical_Actions {
             items[] = {};
             callbackSuccess = "['KAT_Painkiller', _player, _target, _selectionName, 'Painkillers'] call kat_aceCirculation_fnc_removeItemfromMag";
             condition = "('KAT_Painkiller' in (magazines _player) || 'KAT_Painkiller' in (magazines _target))";
+            litter[] = {};
         };
         class CheckDogtags: checkPulse {
             displayName = $STR_KAT_aceCirculation_DogTag;
@@ -484,15 +485,15 @@ class ACE_Medical_Advanced {
             };
             class BloodIV_A: BloodIV {
                 bloodType = "A";
-                compatibility[] = {"A", "AB"};
+                compatibility[] = {"O", "A", "AB"};
             };
             class BloodIV_B: BloodIV {
                 bloodType = "B";
-                compatibility[] = {"B", "AB"};
+                compatibility[] = {"O", "B", "AB"};
             };
             class BloodIV_AB: BloodIV {
                 bloodType = "AB";
-                compatibility[] = {"AB"};
+                compatibility[] = {"O", "AB"};
             };
 
             class BloodIV_O_500: BloodIV_500 {
@@ -501,15 +502,15 @@ class ACE_Medical_Advanced {
             };
             class BloodIV_A_500: BloodIV_500 {
                 bloodType = "A";
-                compatibility[] = {"A", "AB"};
+                compatibility[] = {"O", "A", "AB"};
             };
             class BloodIV_B_500: BloodIV_500 {
                 bloodType = "B";
-                compatibility[] = {"B", "AB"};
+                compatibility[] = {"O", "B", "AB"};
             };
             class BloodIV_AB_500: BloodIV_500 {
                 bloodType = "AB";
-                compatibility[] = {"AB"};
+                compatibility[] = {"O", "AB"};
             };
 
             class BloodIV_O_250: BloodIV_250 {
@@ -518,15 +519,15 @@ class ACE_Medical_Advanced {
             };
             class BloodIV_A_250: BloodIV_250 {
                 bloodType = "A";
-                compatibility[] = {"A", "AB"};
+                compatibility[] = {"O", "A", "AB"};
             };
             class BloodIV_B_250: BloodIV_250 {
                 bloodType = "B";
-                compatibility[] = {"B", "AB"};
+                compatibility[] = {"O", "B", "AB"};
             };
             class BloodIV_AB_250: BloodIV_250 {
                 bloodType = "AB";
-                compatibility[] = {"AB"};
+                compatibility[] = {"O", "AB"};
             };
         };
         class Medication {
