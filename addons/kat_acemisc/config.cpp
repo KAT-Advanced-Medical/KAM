@@ -39,6 +39,16 @@ class CfgFunctions {
             class treatmentIV{};
         };
     };
+    /*
+    class kat_aceInteraction {
+        tag = "ace_interaction";
+        class ace_interaction {
+            class addPassengerActions {
+                file = "kat_aceMisc\functions\fn_addPassengerActions.sqf";
+            };
+        };
+    };
+    */
 };
 
 class Extended_PreInit_EventHandlers {
