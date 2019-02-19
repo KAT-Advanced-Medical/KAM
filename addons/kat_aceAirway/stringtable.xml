@@ -25,6 +25,10 @@
 			<Polish>Szansa na zapadnięcie się dróg oddechowych</Polish>
 			<Spanish>Probabilidad de colapso en vías aéreas</Spanish>
 		</Key>
+		<Key ID="STR_kat_aceAirway_SETTING_obstruction">
+			<English>Probability for a obstruction airway</English>
+			<German>Atemwegsverlegungswahrscheinlichkeit</German>
+		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_occluded">
 			<English>Probability for airway occluding</English>
 			<German>Atemwegsverlegungswahrscheinlichkeit</German>
@@ -67,9 +71,13 @@
 		</Key>
 		<Key ID="STR_kat_aceAirway_Collapsed">
 			<English>Collapsed</English>
-			<German>Verlegt</German>
+			<German>Kollabiert</German>
 			<Polish>Zapadnięte</Polish>
 			<Spanish>Colapsada</Spanish>
+		</Key>
+		<Key ID="STR_kat_aceAirway_obstruction">
+			<English>Obstruction</English>
+			<German>Verlegt</German>
 		</Key>
 		<Key ID="STR_kat_aceAirway_N">
 			<English>Not</English>
@@ -77,7 +85,7 @@
 			<Polish>Nie</Polish>
 			<Spanish>No</Spanish>
 		</Key>
-		<Key ID="STR_kat_aceAirway_message_Collapsed_no">
+		<Key ID="STR_kat_aceAirway_message_obstruction_no">
 			<English>No Airwaymanagement needed</English>
 			<German>Kein Atemwegsmanagement erforderlich</German>
 			<Polish>Nie ma potrzeby udrażniania dróg oddechowych</Polish>
@@ -89,7 +97,7 @@
 			<Polish>Brak konieczności odsysania</Polish>
 			<Spanish>No se necesita succión médica</Spanish>
 		</Key>
-		<Key ID="STR_kat_aceAirway_message_Collapsed_yes">
+		<Key ID="STR_kat_aceAirway_message_obstruction_yes">
 			<English>Airwaymanagement needed</English>
 			<German>Atemwegsmanagement erforderlich</German>
 			<Polish>Potrzebne udrażnianie dróg oddechowych</Polish>
@@ -186,37 +194,37 @@
 			<Spanish>Colocando</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Larynx_Display">
-			<English>Larynxtube</English>
+			<English>Larynx Tube</English>
 			<German>Larynxtubus</German>
 			<Polish>Rurka krtaniowa</Polish>
 			<Spanish>Tubo laríngeo</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Larynx_Desc_Short">
-			<English>The larynxtube is used to save the airways</English>
+			<English>The Larynx Tube is used to save the airways</English>
 			<German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
 			<Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
 			<Spanish>El tubo laríngeo se usa para salvar las vías aéreas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Larynx_Desc_Use">
-			<English>The larynxtube is used to save the airways</English>
+			<English>The Larynx Tube is used to save the airways</English>
 			<German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
 			<Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
 			<Spanish>El tubo laríngeo se usa para salvar las vías aéreas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Guedel_Display">
-			<English>Guedeltube</English>
+			<English>Guedel Tube</English>
 			<German>Guedeltubus</German>
 			<Polish>Rurka ustno-gardłowa</Polish>
 			<Spanish>Cánula de Guedel</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Guedel_Desc_Short">
-			<English>The Guedeltube is used to save the airways</English>
+			<English>The Guedel Tube is used to save the airways</English>
 			<German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
 			<Polish>Rurka ustno-gardłowa zabezpiecza drogi oddechowe</Polish>
 			<Spanish>La cánula de Guedel se usa para salvar las vías aéreas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Guedel_Desc_Use">
-			<English>The guedeltube is used to save the airways</English>
+			<English>The Guedel Tube is used to save the airways</English>
 			<German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
 			<Polish>Rurka ustno-gardłowa służy do podtrzymywania języka przed blokowaniem dróg oddechowych</Polish>
 			<Spanish>La cánula de Guedel se usa para salvar las vías aéreas</Spanish>
