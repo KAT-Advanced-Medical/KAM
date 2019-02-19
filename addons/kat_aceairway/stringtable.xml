@@ -134,19 +134,19 @@
 			<Spanish>Hiperextensión de cabeza</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_overstretched">
-			<English>Head overstretched</English>
+			<English>Hyperextend Head</English>
 			<German>Kopf überstreckt</German>
 			<Polish>Głowa odchylona</Polish>
 			<Spanish>Cabeza hiperextendida</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_overstretching">
-			<English>Head overstretching</English>
+			<English>Extending</English>
 			<German>Kopf überstrecken</German>
 			<Polish>Odchylanie głowy</Polish>
 			<Spanish>Hiperextendiendo cabeza</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_overstretch_cancel">
-			<English>Head overstretch canceled</English>
+			<English>Hyperextend Head canceled</English>
 			<German>Kopf überstrecken abgebrochen</German>
 			<Polish>Przerwano odchylanie głowy</Polish>
 			<Spanish>Hiperextensión cancelada</Spanish>
