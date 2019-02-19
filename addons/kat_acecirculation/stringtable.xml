@@ -275,5 +275,9 @@
 			<English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
 			<German>Eine falsche Kombination von Spender- und Empfängerblut kann sogar tödliche Folgen haben.</German>
 		</Key>
+		<Key ID="STR_KAT_aceCirculation_client_bt">
+			<English>Blood type</English>
+			<German>Blutgruppe</German>
+		</Key>
 	</Package>
 </Project>

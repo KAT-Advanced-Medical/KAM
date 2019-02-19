@@ -26,4 +26,14 @@
 	true
 ] call CBA_Settings_fnc_init;
 
+//Enable aceCirculation things
+[
+	"kat_aceCirculation_bloodgroup",
+	"LIST",
+	localize "STR_kat_aceCirculation_SETTING_ENABLE",
+	CBA_SETTINGS_CAT,
+	[["A", "B", "C", "0"], ["A", "B", "C", "0"], 0],
+	2
+] call CBA_Settings_fnc_init;
+
 nil;
