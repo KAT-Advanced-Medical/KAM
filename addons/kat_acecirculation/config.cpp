@@ -485,15 +485,15 @@ class ACE_Medical_Advanced {
             };
             class BloodIV_A: BloodIV {
                 bloodType = "A";
-                compatibility[] = {"O", "A", "AB"};
+                compatibility[] = {"A", "AB"};
             };
             class BloodIV_B: BloodIV {
                 bloodType = "B";
-                compatibility[] = {"O", "B", "AB"};
+                compatibility[] = {"B", "AB"};
             };
             class BloodIV_AB: BloodIV {
                 bloodType = "AB";
-                compatibility[] = {"O", "AB"};
+                compatibility[] = {"AB"};
             };
 
             class BloodIV_O_500: BloodIV_500 {
@@ -502,15 +502,15 @@ class ACE_Medical_Advanced {
             };
             class BloodIV_A_500: BloodIV_500 {
                 bloodType = "A";
-                compatibility[] = {"O", "A", "AB"};
+                compatibility[] = {"A", "AB"};
             };
             class BloodIV_B_500: BloodIV_500 {
                 bloodType = "B";
-                compatibility[] = {"O", "B", "AB"};
+                compatibility[] = {"B", "AB"};
             };
             class BloodIV_AB_500: BloodIV_500 {
                 bloodType = "AB";
-                compatibility[] = {"O", "AB"};
+                compatibility[] = {"AB"};
             };
 
             class BloodIV_O_250: BloodIV_250 {
@@ -519,15 +519,15 @@ class ACE_Medical_Advanced {
             };
             class BloodIV_A_250: BloodIV_250 {
                 bloodType = "A";
-                compatibility[] = {"O", "A", "AB"};
+                compatibility[] = {"A", "AB"};
             };
             class BloodIV_B_250: BloodIV_250 {
                 bloodType = "B";
-                compatibility[] = {"O", "B", "AB"};
+                compatibility[] = {"B", "AB"};
             };
             class BloodIV_AB_250: BloodIV_250 {
                 bloodType = "AB";
-                compatibility[] = {"O", "AB"};
+                compatibility[] = {"AB"};
             };
         };
         class Medication {
