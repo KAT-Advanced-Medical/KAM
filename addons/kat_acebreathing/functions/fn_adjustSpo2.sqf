@@ -1,16 +1,17 @@
 /*
  * Author: Katalam
- * Handling death timer for breathing
+ * Add or remove oxygen saturation with given value
  *
  * Arguments:
- * 0: Unit That Was Hit <OBJECT>
- * 1: Time <NUMBER>
+ * 0: Unit <OBJECT>
+ * 1: Value <NUMBER>
+ * 2: Add or remove <BOOLEAN>
  *
  * Return Value:
  * None
  *
  * Example:
- * [cursorTarget, CBA_missionTime] call kat_aceBreathing_fnc_handleTimer;
+ * [cursorTarget, 5, true] call kat_aceBreathing_fnc_adjustSp02;
  *
  * Public: No
  */

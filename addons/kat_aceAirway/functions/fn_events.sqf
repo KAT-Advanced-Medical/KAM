@@ -28,7 +28,7 @@ if !(kat_aceAirway_enable) exitWith {};
     };
     if (_unit getVariable [kat_aceAirway_string_exit, false]) exitWith {};
     if (kat_aceBreathing_enable) then {
-        ["deathTimerBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
+        ["handleBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
     };
     [_unit] call kat_aceAirway_fnc_handleAirway;
     [_unit] call kat_aceAirway_fnc_handlePuking;
