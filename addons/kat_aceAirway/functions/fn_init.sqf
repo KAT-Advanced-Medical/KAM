@@ -18,6 +18,7 @@ params ["_unit"];
 
 // ace_medical_airwayCollapsed
 // ace_medical_airwayOccluded
+_unit setVariable ["kat_aceAirway_obstruction", false, true];
 _unit setVariable ["kat_aceAirway_airway", false, true];
 _unit setVariable ["kat_aceAirway_airway_item", "", true];
 _unit setVariable ["kat_aceAirway_overstretch", false, true];

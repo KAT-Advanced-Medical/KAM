@@ -42,7 +42,7 @@ if (kat_aceBreathing_death_timer_enable) exitWith {};
         _unit setVariable ["kat_aceAirway_startTime", (_startTime + 2), false];
     };
     if (CBA_missionTime - _startTime >= kat_aceAirway_deathTimer &&
-        (_unit getVariable ["ace_medical_airwayCollapsed", false] || _unit getVariable ["ace_medical_airwayOccluded", false])) then {
+        (_unit getVariable ["kat_aceAirway_obstruction", false] || _unit getVariable ["ace_medical_airwayOccluded", false])) then {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_aceAirway_startTime", 0, false];
         [_unit, true] call ace_medical_fnc_setDead;

@@ -29,7 +29,7 @@ if ((random 100 < 5) && (_className isEqualTo "Guedeltubus")) exitWith {
 };
 
 _target setVariable ["kat_aceAirway_airway", true, true];
-_target setVariable ["ace_medical_airwayCollapsed", false, true];
+_target setVariable ["kat_aceAirway_obstruction", false, true];
 
 private _item = "STR_kat_aceAirway_Larynx_Display";
 _target setVariable ["kat_aceAirway_airway_item", "larynx", true];

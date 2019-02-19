@@ -47,11 +47,11 @@ In real life, this will happen sometimes, not quiet often.
 	true
 ] call CBA_Settings_fnc_init;
 
-// aceAirway Injuries probability collapsed
+// aceAirway Injuries probability obstruction
 [
-	"kat_aceAirway_probability_collapsed",
+	"kat_aceAirway_probability_obstruction",
 	"SLIDER",
-	localize "STR_kat_aceAirway_SETTING_collapsed",
+	localize "STR_kat_aceAirway_SETTING_obstruction",
 	CBA_SETTINGS_CAT,
 	[0, 100, 20, 0],
 	true
