@@ -2,10 +2,12 @@
 class CfgPatches {
     class kat_aceBreathing {
         units[] = {
-            "KAT_PulseoximeterItem"
+            "KAT_PulseoximeterItem",
+            "KAT_ChestSealItem"
         };
         weapons[] = {
-            "KAT_Pulseoximeter"
+            "KAT_Pulseoximeter",
+            "KAT_ChestSeal"
         };
         requiredVersion = 1.80;
         requiredAddons[] = {
@@ -14,8 +16,8 @@ class CfgPatches {
             "kat_aceCirculation",
             "cba_settings"
         };
-        version = "0.9.1";
-        versionStr = "0.9.1";
+        version = "0.9.5";
+        versionStr = "0.9.5";
         author = "Katalam";
         authorUrl = "http://spezialeinheit-luchs.de/";
     };
@@ -49,8 +51,8 @@ class CfgFunctions {
             class handleTimerAlive{};
             class init{};
             class registerSettings{};
-            class treatmentAdvanced_pneumothorax{};
-            class treatmentAdvanced_pneumothoraxLocal{};
+            class treatmentAdvanced_chestSeal{};
+            class treatmentAdvanced_chestSealLocal{};
             class treatmentAdvanced_pulseoximeter{};
             class treatmentAdvanced_pulseoximeterLocal{};
             class treatmentAdvanced_removePulseoximeter{};
@@ -92,6 +94,17 @@ class cfgWeapons {
             mass = 1;
         };
     };
+    class KAT_ChestSeal: ACE_ItemCore {
+        scope = 2;
+        author = "Katalam";
+        displayName= "$STR_kat_aceBreathing_chestseal_display";
+        descriptionShort = "$STR_kat_aceBreathing_chestseal_desc";
+        descriptionUse = "$STR_kat_aceBreathing_chestseal_desc";
+        picture = "\kat_aceBreathing\images\chest-seal.paa";
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
 };
 
 class cfgVehicles {
@@ -108,6 +121,17 @@ class cfgVehicles {
         };
     };
 
+    class KAT_ChestSealItem: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName= "$STR_kat_aceBreathing_chestseal_display";
+        author = "Katalam";
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(KAT_ChestSeal,1);
+        };
+    };
+
     class NATO_Box_Base;
         class ACE_medicalSupplyCrate: NATO_Box_Base {
             class TransportItems;
@@ -115,6 +139,7 @@ class cfgVehicles {
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems: TransportItems {
             MACRO_ADDITEM(KAT_Pulseoximeter,3);
+            MACRO_ADDITEM(KAT_ChestSeal,25);
         };
     };
 
@@ -122,11 +147,11 @@ class cfgVehicles {
     class CAManBase: Man {
         class ACE_Actions {
             class ACE_Torso {
-                class Pneumothorax {
+                class ChestSeal {
                     displayName = $STR_kat_aceBreathing_pneumothorax_display;
                     distance = 2.0;
-                    condition = "[_player, _target, 'body', 'Pneumothorax'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'body', 'Pneumothorax'] call ace_medical_fnc_treatment";
+                    condition = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_canTreatCached";
+                    statement = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_treatment";
                     exceptions[] = {""};
                     showDisabled = 0;
                     icon = "";
@@ -175,11 +200,11 @@ class cfgVehicles {
             class ACE_MainActions {
                 class Medical {
                     class ACE_Torso {
-                        class Pneumothorax {
+                        class ChestSeal {
                             displayName = $STR_kat_aceBreathing_pneumothorax_display;
                             distance = 2.0;
-                            condition = "[_player, _target, 'body', 'Pneumothorax'] call ace_medical_fnc_canTreatCached";
-                            statement = "[_player, _target, 'body', 'Pneumothorax'] call ace_medical_fnc_treatment";
+                            condition = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_canTreatCached";
+                            statement = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_treatment";
                             exceptions[] = {""};
                             showDisabled = 0;
                             icon = "";
@@ -283,7 +308,7 @@ class ACE_Medical_Actions {
             animationCallerSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
             litter[] = {};
         };
-        class Pneumothorax {
+        class ChestSeal {
             displayName = $STR_kat_aceBreathing_pneumothorax_display;
             displayNameProgress = $STR_kat_aceBreathing_treating;
             category = "advanced";
@@ -291,14 +316,14 @@ class ACE_Medical_Actions {
             allowedSelections[] = {"body"};
             allowSelfTreatment = 0;
             requiredMedic = 2;
-            treatmentTime = 30;
-            items[] = {"ACE_surgicalKit"};
+            treatmentTime = 10;
+            items[] = {"KAT_ChestSeal"};
             condition = "_target getVariable ['kat_aceBreathing_pulmo', false]";
             patientStateCondition = 0;
-            callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_pneumothorax";
+            callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_chestSeal";
             callbackFailure = "";
             callbackProgress = "";
-            itemConsumed = 0;
+            itemConsumed = 1;
             animationPatient = "";
             animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
             animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};

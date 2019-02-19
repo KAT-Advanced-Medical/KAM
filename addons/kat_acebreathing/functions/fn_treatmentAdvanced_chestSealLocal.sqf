@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_aceBreathing_fnc_treatmentAdvanced_pneumothoraxLocal;
+ * [player, cursorTarget] call kat_aceBreathing_fnc_treatmentAdvanced_chestSealLocal;
  *
  * Public: No
  */

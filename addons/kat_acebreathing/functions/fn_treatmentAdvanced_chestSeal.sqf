@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * call kat_aceBreathing_fnc_treatmentAdvanced_pneumothorax;
+ * call kat_aceBreathing_fnc_treatmentAdvanced_chestSeal;
  *
  * Public: No
  */
@@ -19,7 +19,7 @@
 params ["_player", "_target"];
 
 if (local _target) then {
-    ["treatmentPneumothorax", [_player, _target]] call CBA_fnc_localEvent;
+    ["treatmentChestSeal", [_player, _target]] call CBA_fnc_localEvent;
 } else {
-    ["treatmentPneumothorax", [_player, _target], _target] call CBA_fnc_targetEvent;
+    ["treatmentChestSeal", [_player, _target], _target] call CBA_fnc_targetEvent;
 };
