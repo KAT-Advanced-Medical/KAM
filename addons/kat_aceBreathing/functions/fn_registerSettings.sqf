@@ -36,9 +36,9 @@
 	true
 ] call CBA_Settings_fnc_init;
 
-// aceBreathing SpO2 add & remove value before 100 sec
+// aceBreathing SpO2 add & remove value small
 [
-	"kat_aceBreathing_spo2_before_value",
+	"kat_aceBreathing_spo2_small_value",
 	"SLIDER",
 	localize "STR_kat_aceBreathing_SETTING_Value_Before",
 	CBA_SETTINGS_CAT,
@@ -46,9 +46,9 @@
 	true
 ] call CBA_Settings_fnc_init;
 
-// aceBreathing SpO2 add % remove value after 100 sec
+// aceBreathing SpO2 add % remove value big
 [
-	"kat_aceBreathing_spo2_after_value",
+	"kat_aceBreathing_spo2_big_value",
 	"SLIDER",
 	localize "STR_kat_aceBreathing_SETTING_Value_After",
 	CBA_SETTINGS_CAT,

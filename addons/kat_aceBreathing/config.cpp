@@ -44,7 +44,9 @@ class CfgFunctions {
     class kat_aceBreathing {
         file = "kat_aceBreathing\functions";
         class functions {
+            class adjustSpo2{};
             class events{};
+            class handleBreathing{};
             class handleInit{};
             class handlePulmoHit{};
             class handleTimer{};

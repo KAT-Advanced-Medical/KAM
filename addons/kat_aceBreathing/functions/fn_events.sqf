@@ -18,3 +18,4 @@
 ["treatmentChestSeal", {_this call kat_aceBreathing_fnc_treatmentAdvanced_chestSealLocal}] call CBA_fnc_addEventHandler;
 ["deathTimerBreathing", {_this call kat_aceBreathing_fnc_handleTimer}] call CBA_fnc_addEventHandler;
 ["aliveTimerBreathing", {_this call kat_aceBreathing_fnc_handleTimerAlive}] call CBA_fnc_addEventHandler;
+["handleBreathing", {_this call kat_aceBreathing_fnc_handleBreathing}] call CBA_fnc_addEventHandler;
