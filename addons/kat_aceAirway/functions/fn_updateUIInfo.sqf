@@ -70,6 +70,12 @@ if (_totalIvVolume >= 1) then {
 private _damaged = [false, false, false, false, false, false];
 private _selectionBloodLoss = [0, 0, 0, 0, 0, 0];
 
+// EDIT by Katalam
+if (_target getVariable ["ace_medical_airwayCollapsed", false] && _selectionN isEqualTo 1) then {
+    _genericMessages pushback [localize "STR_kat_aceBreathing_pneumothorax_mm", [1,1,1,1]];
+};
+// END of EDIT
+
 private _allInjuryTexts = [];
 if ((ace_medical_level >= 2) && {[_target] call ace_medical_fnc_hasMedicalEnabled}) then {
     private _openWounds = _target getVariable ["ace_medical_openWounds", []];

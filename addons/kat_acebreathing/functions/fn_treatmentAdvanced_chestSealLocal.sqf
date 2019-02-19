@@ -18,7 +18,7 @@
 
 params ["_player", "_target"];
 
-_target setVariable ["kat_aceBreathing_pulmo", false, true];
+_target setVariable ["ace_medical_airwayCollapsed", false, true];
 
 
 

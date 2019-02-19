@@ -49,8 +49,6 @@ class CfgFunctions {
             class handleBreathing{};
             class handleInit{};
             class handlePulmoHit{};
-            class handleTimer{};
-            class handleTimerAlive{};
             class init{};
             class registerSettings{};
             class treatmentAdvanced_chestSeal{};
@@ -318,9 +316,9 @@ class ACE_Medical_Actions {
             allowedSelections[] = {"body"};
             allowSelfTreatment = 0;
             requiredMedic = 2;
-            treatmentTime = 10;
+            treatmentTime = 7;
             items[] = {"KAT_ChestSeal"};
-            condition = "_target getVariable ['kat_aceBreathing_pulmo', false]";
+            condition = "_target getVariable ['ace_medical_airwayCollapsed', false]";
             patientStateCondition = 0;
             callbackSuccess = "[_player, _target] call kat_aceBreathing_fnc_treatmentAdvanced_chestSeal";
             callbackFailure = "";
