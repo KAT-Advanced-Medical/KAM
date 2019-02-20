@@ -19,7 +19,7 @@ class CfgPatches {
         version = "0.9.5";
         versionStr = "0.9.5";
         author = "Katalam";
-        authorUrl = "http://spezialeinheit-luchs.de/";
+        authorUrl = "https://github.com/Katalam/kat_aceAdvMedical";
     };
 };
 

@@ -15,7 +15,7 @@ class kat_aceExposure {
         version = "0.5";
         versionStr = "0.5";
         author = "Katalam";
-        authorUrl = "http://spezialeinheit-luchs.de/";
+        authorUrl = "https://github.com/Katalam/kat_aceAdvMedical";
     };
 };
 
