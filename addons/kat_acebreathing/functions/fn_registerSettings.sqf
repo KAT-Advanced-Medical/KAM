@@ -42,7 +42,7 @@
 	"SLIDER",
 	localize "STR_kat_aceBreathing_SETTING_Value_Before",
 	CBA_SETTINGS_CAT,
-	[0, 5, 0.05, 2],
+	[0, 100, 2, 0],
 	true
 ] call CBA_Settings_fnc_init;
 
@@ -52,7 +52,7 @@
 	"SLIDER",
 	localize "STR_kat_aceBreathing_SETTING_Value_After",
 	CBA_SETTINGS_CAT,
-	[0, 5, 0.2, 2],
+	[0, 100, 5, 0],
 	true
 ] call CBA_Settings_fnc_init;
 

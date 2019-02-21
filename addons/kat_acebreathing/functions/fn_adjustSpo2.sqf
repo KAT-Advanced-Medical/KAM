@@ -8,7 +8,7 @@
  * 2: Add or remove <BOOLEAN>
  *
  * Return Value:
- * None
+ * 0: New value <NUMBER>
  *
  * Example:
  * [cursorTarget, 5, true] call kat_aceBreathing_fnc_adjustSp02;
@@ -19,12 +19,18 @@
 params [["_unit", objNull, [objNull]], ["_value", 0, [0]], ["_add", true, [true]]];
 
 private _newValue = 0;
+private _oldValue = _unit getVariable ["ace_medical_airwayStatus", 100];
+_value = _value / 100;
+if (_oldValue <= 65) exitWith {
+	_unit setVariable ["ace_medical_airwayStatus", 65, true];
+	65;
+};
 
 if (_add) then {
-	_newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) + _value;
+	_newValue = _oldValue + _value;
 	_unit setVariable ["ace_medical_airwayStatus", _newValue, true];
 } else {
-	_newValue = (_unit getVariable ["ace_medical_airwayStatus", 100]) - _value;
+	_newValue = _oldValue - _value;
 	_unit setVariable ["ace_medical_airwayStatus", _newValue, true];
 };
 
