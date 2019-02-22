@@ -10,6 +10,7 @@
 		<Key ID="kat_aceBreathing_SETTING_death_timer_enable">
 			<English>Alternative death timer for airway injuries?</English>
 			<German>Alternativen Todestimer für Atemwegsverlegungen nutzen?</German>
+			<Polish>Alternatywny licznik do śmierci dla urazów dróg oddechowych?</Polish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_SETTING_Value_Before">
 			<English>Value to add or remove to the Sp02 before 100 sec</English>
@@ -27,6 +28,7 @@
 			<English>Probability for a pneumothorax</English>
 			<German>Wahrscheinlichkeit für einen Pneumothorax</German>
 			<Spanish>Probabilidad de un pneumotórax</Spanish>
+			<Polish>Szansa na odme opłucnową</Polish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_Pulseoximeter_Display">
 			<English>Attach Pulse Oximeter</English>
@@ -116,27 +118,33 @@
 			<English>%1 treated a pneumothorax</English>
 			<German>%1 behandelte einen Pneumothorax</German>
 			<Spanish>%1 tratado un pneumotórax</Spanish>
+			<Polish>%1 leczenia odmy opłucnowej</Polish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_pneumothorax_display">
 			<English>Chest Seal</English>
 			<German>Chest Seal</German>
+			<Polish>Chest Seal</Polish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_pneumothorax_mm">
 			<English>1x Pneumothorax</English>
 			<German>1x Pneumothorax</German>
+			<Polish>1x Odma Opłucnowa</Polish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_treating">
 			<English>Treating</English>
 			<German>Behandle</German>
 			<Spanish>Tratando</Spanish>
+			<Polish>Leczenie</Polish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_chestseal_display">
 			<English>Chest Seal</English>
 			<German>Chest Seal</German>
+			<Polish>Chest Seal</Polish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_chestseal_desc">
 			<English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
 			<German>Chest Seal ist so konzipiert, dass offene Brustwunden in den meisten Fällen behandelt, versiegelt und wieder verschlossen werden.</German>
+			<Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach.</Polish>
 		</Key>
 	</Package>
 </Project>
