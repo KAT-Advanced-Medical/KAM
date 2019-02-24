@@ -30,7 +30,7 @@
 [
 	"kat_aceCirculation_bloodgroup",
 	"LIST",
-	localize "STR_kat_aceCirculation_SETTING_ENABLE",
+	localize "STR_KAT_aceCirculation_client_bt",
 	CBA_SETTINGS_CAT,
 	[["A", "B", "C", "0"], ["A", "B", "C", "0"], 0],
 	2
