@@ -27,13 +27,20 @@
 ] call CBA_Settings_fnc_init;
 
 //Enable aceCirculation things
+
+private _type = round random(3);
+
 [
 	"kat_aceCirculation_bloodgroup",
 	"LIST",
 	localize "STR_KAT_aceCirculation_client_bt",
 	CBA_SETTINGS_CAT,
-	[["A", "B", "C", "0"], ["A", "B", "C", "0"], 0],
-	2
+	[["A", "B", "C", "0"], ["A", "B", "C", "0"], _type],
+	2,
+	{
+		player setVariable ["kat_aceCirculation_bloodtype", _this, true];
+		player setVariable ["ace_dogtags_dogtagData", nil, true];
+	}
 ] call CBA_Settings_fnc_init;
 
 nil;
