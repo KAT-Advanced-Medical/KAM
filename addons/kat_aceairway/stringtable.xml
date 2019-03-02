@@ -28,6 +28,7 @@
 		<Key ID="STR_kat_aceAirway_SETTING_obstruction">
 			<English>Probability for a obstruction airway</English>
 			<German>Atemwegsverlegungswahrscheinlichkeit</German>
+			<Polish>Szansa na zator dróg oddechowych</Polish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_occluded">
 			<English>Probability for airway occluding</English>
@@ -78,6 +79,7 @@
 		<Key ID="STR_kat_aceAirway_obstruction">
 			<English>Obstruction</English>
 			<German>Verlegt</German>
+			<Polish>Zator</Polish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_N">
 			<English>Not</English>
@@ -148,7 +150,7 @@
 		<Key ID="STR_kat_aceAirway_overstretch_cancel">
 			<English>Hyperextend Head canceled</English>
 			<German>Kopf überstrecken abgebrochen</German>
-			<Polish>Przerwano odchylanie głowy</Polish>
+			<Polish>Przestałeś odchylać głowę</Polish>
 			<Spanish>Hiperextensión cancelada</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_overstretch_info">

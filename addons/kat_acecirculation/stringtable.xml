@@ -4,12 +4,13 @@
 		<Key ID="STR_kat_aceCirculation_SETTING_ENABLE">
 			<English>ACE-Circulation activated?</English>
 			<German>ACE-Kreislauf aktivieren?</German>
-			<Polish>ACE-Cyrkulacja aktywowane?</Polish>
+			<Polish>ACE-Cyrkulacja aktywowana?</Polish>
 			<Spanish>¿Activar ACE-Circulación?</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceCirculation_SETTING_variableHR_ENABLE">
 			<English>Metabolism Dependent heartrate?</English>
 			<German>Stoffwechselabhängiger Puls?</German>
+			<Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
 		</Key>
 		<Key ID="STR_kat_aceCirculation_SETTING_loadout">
 			<English>Different loadoutname</English>
@@ -266,18 +267,22 @@
 		<Key ID="STR_KAT_aceCirculation_open_crosspanel">
 			<English>Open blood groups cheat sheet</English>
 			<German>Öffne Blutgruppentabelle</German>
+			<Polish>Otwórz tabele grup krwi</Polish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_crosspanel">
 			<English>Blood groups cheat sheet</English>
 			<German>Blutgruppentabelle</German>
+			<Polish>Tabela grup krwi</Polish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_desc_crosspanel">
 			<English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
 			<German>Eine falsche Kombination von Spender- und Empfängerblut kann sogar tödliche Folgen haben.</German>
+			<Polish>Zła kombinacja krwi dawcy i biorcy może mieć śmiertelne konsekwencje.</Polish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_client_bt">
 			<English>Blood type</English>
 			<German>Blutgruppe</German>
+			<Polish>Grupa krwi</Polish>
 		</Key>
 	</Package>
 </Project>
