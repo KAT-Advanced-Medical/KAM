@@ -21,16 +21,13 @@ params [["_unit", objNull, [objNull]], ["_value", 0, [0]], ["_add", true, [true]
 private _newValue = 0;
 private _oldValue = _unit getVariable ["ace_medical_airwayStatus", 100];
 _value = _value / 100;
-if (_oldValue <= 65) exitWith {
-	_unit setVariable ["ace_medical_airwayStatus", 65, true];
-	65;
-};
 
 if (_add) then {
 	_newValue = _oldValue + _value;
 	_unit setVariable ["ace_medical_airwayStatus", _newValue, true];
 } else {
 	_newValue = _oldValue - _value;
+	if (_newValue < 65) then {_newValue = 65};
 	_unit setVariable ["ace_medical_airwayStatus", _newValue, true];
 };
 
