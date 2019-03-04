@@ -18,7 +18,12 @@
 
 params ["_caller", "_target", "_className"];
 
-if (_target getVariable ["kat_aceAirway_airway", false]) exitWith {
+if (_target getVariable ["kat_aceAirway_airway_item", ""] isEqualTo "larynx") exitWith {
+    private _output = localize "STR_kat_aceAirway_Airway_already";
+    [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
+    false;
+};
+if (_target getVariable ["kat_aceAirway_airway_item", ""] isEqualTo "guedel" && (_className isEqualTo "Guedeltubus")) exitWith {
     private _output = localize "STR_kat_aceAirway_Airway_already";
     [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
     false;
