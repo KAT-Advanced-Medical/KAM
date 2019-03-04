@@ -73,4 +73,8 @@ Please, use my [Issue Tracker](https://github.com/Katalam/kat_aceAdvMedical/issu
 
 ## License
 
-KAM is licensed under the GNU General Public License ([GPLv2](https://github.com/Katalam/kat_aceAdvMedical/blob/master/LICENSE)).
+<a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >
+ <img src="http://www.bistudio.com/license-icons/small/APL-SA.png" >
+ <br>
+ This work is licensed under a Arma Public License Share Alike
+</a>
