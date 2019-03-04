@@ -6,6 +6,5 @@ This addon - as a whole - is allowed to be copied, distributed or modified as pe
 
 Additional terms apply for using this addon:
 You may not use this addon or parts or derivatives of it for any commercial purposes, including monetized game servers.
-This addon or parts or derivatives of it may not be used in any derivative of Life gamemode.
 
 Different licences may apply to parts of this addon if it's not copied or distributed as a whole.
