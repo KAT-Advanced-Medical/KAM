@@ -6,9 +6,6 @@
     <a href="https://github.com/Katalam/kat_aceAdvMedical/releases/latest">
         <img src="https://img.shields.io/badge/Version-0.9.9-blue.svg?style=flat-square" alt="KAM Version">
     </a>
-    <a href="https://github.com/Katalam/kat_aceAdvMedical/blob/master/LICENSE">
-        <img src="https://img.shields.io/badge/License-GPLv2-red.svg?style=flat-square" alt="KAM License">
-    </a>
 </p>
 
 
