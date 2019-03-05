@@ -32,7 +32,7 @@
 		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_occluded">
 			<English>Probability for airway occluding</English>
-			<German>Atemwegsverlegungswahrscheinlichkeit</German>
+			<German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes</German>
 			<Polish>Szansa na niedrożność dróg oddechowych</Polish>
 			<Spanish>Probabilidad de obstrucción de las vías aéreas</Spanish>
 		</Key>
@@ -59,7 +59,7 @@
 			<Spanish>%1 comprobó las vías aéreas: %2 %3, %4 %5</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_airway_log">
-			<English>%1 intubated with %2</English>
+			<English>%1 inserted a %2</English>
 			<German>%1 intubierte mit %2</German>
 			<Polish>%1 intubowany z %2</Polish>
 			<Spanish>%1 intubado con %2</Spanish>
@@ -196,19 +196,19 @@
 			<Spanish>Colocando</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Larynx_Display">
-			<English>Larynx Tube</English>
+			<English>King LT</English>
 			<German>Larynxtubus</German>
 			<Polish>Rurka krtaniowa</Polish>
 			<Spanish>Tubo laríngeo</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Larynx_Desc_Short">
-			<English>The Larynx Tube is used to save the airways</English>
+			<English>The King LT is used to save the airways</English>
 			<German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
 			<Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
 			<Spanish>El tubo laríngeo se usa para salvar las vías aéreas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Larynx_Desc_Use">
-			<English>The Larynx Tube is used to save the airways</English>
+			<English>The King LT is used to save the airways</English>
 			<German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
 			<Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
 			<Spanish>El tubo laríngeo se usa para salvar las vías aéreas</Spanish>
