@@ -18,7 +18,7 @@ params ["_className", "_target"];
 
 //unit, adjustment, time
 private _volume = getNumber (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "IV" >> _className >> "volume");
-private _hradjust = _volume / 25;
+private _hradjust = _volume / 10;
 [_target, _hradjust, 60] call ace_medical_fnc_addHeartRateAdjustment;
 
 //todo tod?
