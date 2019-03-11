@@ -29,11 +29,14 @@ class CfgFunctions {
         file = "kat_aceMisc\functions";
         class functions {
             class addIVbag{};
+            class bandageRandomWound{};
             class conditionIV;
             class conditionIVstand{};
             class events{};
+            class getNumOpenWounds{};
             class handleInit{};
             class init{};
+            class limitWounds{};
             class registerSettings{};
             class removeIVbag{};
             class treatmentIV{};
@@ -118,9 +121,17 @@ class cfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_Actions {
+            class ACE_Torso {
+                class FieldDressing;
+                class LimitWounds {
+                    displayName = "$STR_kat_aceMisc_LIMITWOUNDS_Display";
+                    condition = "[_player, _target, 'hand_l', 'LimitWounds'] call ace_medical_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_l', 'LimitWounds'] call ace_medical_fnc_treatment";
+                    icon = "";
+                };
+            };
             class ACE_ArmLeft {
                 class SalineIV;
-
                 class SalineIV_Stand: SalineIV {
                     displayName = "$STR_kat_aceMisc_Display_IVStand";
                     condition = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
@@ -129,7 +140,6 @@ class cfgVehicles {
             };
             class ACE_ArmRight {
                 class SalineIV;
-
                 class SalineIV_Stand: SalineIV {
                     displayName = "$STR_kat_aceMisc_Display_IVStand";
                     condition = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
@@ -138,7 +148,6 @@ class cfgVehicles {
             };
             class ACE_LegLeft {
                 class SalineIV;
-
                 class SalineIV_Stand: SalineIV {
                     displayName = "$STR_kat_aceMisc_Display_IVStand";
                     condition = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
@@ -147,7 +156,6 @@ class cfgVehicles {
             };
             class ACE_LegRight {
                 class SalineIV;
-
                 class SalineIV_Stand: SalineIV {
                     displayName = "$STR_kat_aceMisc_Display_IVStand";
                     condition = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
@@ -161,7 +169,6 @@ class cfgVehicles {
 class ACE_Medical_Actions {
     class Advanced {
         class SalineIV;
-
         class SalineIV_Stand: SalineIV {
             displayName = "$STR_kat_aceMisc_Display_IVStand";
             requiredMedic = 0;
@@ -169,6 +176,15 @@ class ACE_Medical_Actions {
             items[] = {};
             callbackSuccess = "[_player, _target, _selectionName, 'SalineIV', ['SalineIV']] call kat_aceMisc_fnc_treatmentIV";
             itemConsumed = 0;
+        };
+        class PersonalAidKit;
+        class LimitWounds: PersonalAidKit {
+            displayName = $STR_kat_aceMisc_LIMITWOUNDS_Display;
+            displayNameProgress = $STR_kat_aceMisc_LIMITWOUNDS_Display;
+            patientStateCondition = "kat_aceMisc_limitWounds_condition";
+            condition = "[_target] call kat_aceMisc_fnc_getNumOpenWounds > 5 && (missionNamespace getVariable ['kat_aceMisc_limitWounds_enable', true])";
+            treatmentTime = 8;
+            callbackSuccess = "[_target] call kat_aceMisc_fnc_limitWounds";
         };
     };
 };

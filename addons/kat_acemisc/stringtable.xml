@@ -25,5 +25,17 @@
 			<Polish>Stojak: Sól fizjologiczna IV (1000ml)</Polish>
 			<Spanish>Soporte: Salino IV (1000ml)</Spanish>
 		</Key>
+		<Key ID="STR_kat_aceMisc_SETTING_LIMITWOUNDS_ENABLE">
+			<English>Enable limited wounds</English>
+			<German>Aktiviere limitierte Wunden</German>
+		</Key>
+		<Key ID="STR_kat_aceMisc_LIMITWOUNDS_Display">
+			<English>Bandage wounds</English>
+			<German>Behandle Wunden</German>
+		</Key>
+		<Key ID="STR_kat_aceMisc_Condition_limitWounds_Display">
+			<English>Use condition limit wounds</English>
+			<German>Bendingung für limitierte Wunden</German>
+		</Key>
 	</Package>
 </Project>
