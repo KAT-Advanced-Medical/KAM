@@ -39,5 +39,6 @@ if !(kat_aceAirway_enable) exitWith {};
     params ["", "_target", "", "_className"];
     if (toUpper _className isEqualTo "PERSONALAIDKIT" && local _target) exitWith {
     	_target call kat_aceAirway_fnc_init;
+        _target setVariable ["kat_aceCirculation_IV_counts", 0, true];
     };
  }] call CBA_fnc_addEventHandler;
