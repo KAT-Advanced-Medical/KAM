@@ -30,16 +30,14 @@ private _actions = [];
             "A3\ui_f\data\IGUI\RscIngameUI\RscUnitInfo\role_gunner_ca.paa",
             "A3\ui_f\data\IGUI\RscIngameUI\RscUnitInfo\role_commander_ca.paa"
         ] select (([driver _vehicle, gunner _vehicle, commander _vehicle] find _unit) + 1);
-/*
+
 		private _triage = _unit getVariable ["ace_medical_triageLevel", 0];
 		if (_triage > 1 && _triage < 4) then {
-			_icon = ["", ""] select (_triage - 2);
-            //\z\ace\addons\medical\UI\icons\medical_crossRed.paa
-            //\z\ace\addons\medical\UI\icons\medical_crossYellow.paa
+			_icon = ["\z\ace\addons\medical\UI\icons\medical_crossYellow.paa", "\z\ace\addons\medical\UI\icons\medical_crossRed"] select (_triage - 2);
 		};
-*/
+
         if (_unit getVariable ["ace_captives_isHandcuffed", false]) then {
-            _icon = "\z\ace\addons\captives\UI\icons\handcuff_ca.paa";
+            _icon = "\z\ace\addons\captives\UI\handcuff_ca.paa";
         };
 
         _actions pushBack [
