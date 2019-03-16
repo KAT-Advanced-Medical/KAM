@@ -159,6 +159,7 @@ class cfgWeapons {
         descriptionShort =  "$STR_kat_aceAirway_Guedel_Desc_Short";
         descriptionUse = "$STR_kat_aceAirway_Guedel_Desc_Use";
         picture = "\kat_aceAirway\images\guedel_normal.paa";
+        model = "\kat_aceAirway\guedel\guedel.p3d";
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         };
