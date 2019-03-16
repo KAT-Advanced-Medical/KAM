@@ -180,7 +180,7 @@ class cfgWeapons {
         author = "Katalam";
         displayName = $STR_KAT_aceCirculation_X_Display;
         picture = "\kat_acecirculation\images\x-series.paa";
-        model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
+        model = "\kat_aceCirculation\aedx\aedx.p3d";
         descriptionShort = $STR_KAT_aceCirculation_X_Desc;
         descriptionUse = $STR_KAT_aceCirculation_X_Desc;
         class ItemInfo: CBA_MiscItem_ItemInfo {
