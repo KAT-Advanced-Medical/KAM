@@ -136,7 +136,6 @@ class Extended_PostInit_EventHandlers {
     };
 };
 
-
 class cfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
@@ -148,6 +147,7 @@ class cfgWeapons {
         descriptionShort = "$STR_kat_aceAirway_Larynx_Desc_Short";
         descriptionUse = "$STR_kat_aceAirway_Larynx_Desc_Use";
         picture = "\kat_aceAirway\images\larynx_normal.paa";
+        model = "\kat_aceAirway\larynx_tube\tube.p3d";
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         };
