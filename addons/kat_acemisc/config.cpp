@@ -394,20 +394,20 @@ class ACE_Medical_Actions {
         class SalineIV_Stand: SalineIV {
             displayName = "$STR_kat_aceMisc_Display_IVStand";
             requiredMedic = 0;
-            condition = "[_player, 1000] call kat_aceMisc_fnc_conditionIV";
+            condition = "params ['_player'];[_player, 1000] call kat_aceMisc_fnc_conditionIV"; // no idea why here is a params needed
             items[] = {};
-            callbackSuccess = "[_player, _target, _selectionName, 'SalineIV'] call kat_aceMisc_fnc_treatmentIV";
+            callbackSuccess = "[_player, _target, _selectionName, 'SalineIV', ['ACE_salineIV']] call kat_aceMisc_fnc_treatmentIV";
             itemConsumed = 0;
         };
         class SalineIV_Stand_500: SalineIV_Stand {
             displayName = "$STR_kat_aceMisc_Display_IVStand_500";
-            condition = "[_player, 500] call kat_aceMisc_fnc_conditionIV";
-            callbackSuccess = "[_player, _target, _selectionName, 'SalineIV_500'] call kat_aceMisc_fnc_treatmentIV";
+            condition = "params ['_player'];[_player, 500] call kat_aceMisc_fnc_conditionIV";
+            callbackSuccess = "[_player, _target, _selectionName, 'SalineIV_500', ['ACE_salineIV_500']] call kat_aceMisc_fnc_treatmentIV";
         };
         class SalineIV_Stand_250: SalineIV_Stand {
             displayName = "$STR_kat_aceMisc_Display_IVStand_250";
-            condition = "[_player, 250] call kat_aceMisc_fnc_conditionIV";
-            callbackSuccess = "[_player, _target, _selectionName, 'SalineIV_250'] call kat_aceMisc_fnc_treatmentIV";
+            condition = "params ['_player'];[_player, 250] call kat_aceMisc_fnc_conditionIV";
+            callbackSuccess = "[_player, _target, _selectionName, 'SalineIV_250', ['ACE_salineIV_250']] call kat_aceMisc_fnc_treatmentIV";
         };
         class PersonalAidKit;
         class LimitWounds: PersonalAidKit {

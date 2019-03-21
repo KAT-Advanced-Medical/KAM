@@ -14,7 +14,7 @@
  * Public: No
  */
 
-params ["_player", "_target", "_selectionName", "_className"];
+params ["_player", "_target", "_selectionName", "_className", "_item"];
 
 private _value = 0;
 
@@ -30,4 +30,4 @@ switch (_className) do {
 	};
 };
 [_player, _value] call kat_aceMisc_fnc_removeIVbag;
-[_player, _target, _selectionName, _className] call ace_medical_fnc_treatmentIV;
+[_player, _target, _selectionName, _className, _item] call ace_medical_fnc_treatmentIV;

@@ -23,8 +23,9 @@ params [
 if !(kat_aceMisc_enable) exitWith {false};
 
 private _object = nearestObjects [_player, ['Land_IntravenStand_01_1bag_F', 'Land_IntravenStand_01_2bags_F'], 10, false];
-_object = _object select {_ml in (_x getVariable ["kat_aceMisc_stand", []])};
-_object = _object select 0;
 if (isNil "_object") exitWith {false};
+_object = _object select {_ml in (_x getVariable ["kat_aceMisc_stand", []])};
+if (isNil "_object") exitWith {false};
+_object = _object select 0;
 if (_object distance _player <= 10) exitWith {true};
 false;
