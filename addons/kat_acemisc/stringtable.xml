@@ -52,10 +52,12 @@
 		<Key ID="STR_kat_aceMisc_SETTING_LIMITWOUNDS_ENABLE">
 			<English>Enable limited wounds</English>
 			<German>Aktiviere limitierte Wunden</German>
+			<Spanish>Activar heridas limitadas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceMisc_LIMITWOUNDS_Display">
 			<English>Bandage wounds</English>
 			<German>Behandle Wunden</German>
+			<Spanish>Activar</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceMisc_Condition_limitWounds_Display">
 			<English>Use condition limit wounds</English>
@@ -64,10 +66,12 @@
 		<Key ID="STR_kat_aceMisc_disassemble_stretcher_display">
 			<English>Disassemble stretcher</English>
 			<German>Trage einklappen</German>
+			<Spanish>Desarmar camilla</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceMisc_disassemble_attach_display">
 			<English>Attach to</English>
 			<German>Anhängen an</German>
+			<Spanish>Unir camilla a</Spanish>
 		</Key>
 	</Package>
 </Project>

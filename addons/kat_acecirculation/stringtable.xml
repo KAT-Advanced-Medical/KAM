@@ -11,6 +11,7 @@
 			<English>Metabolism Dependent heartrate?</English>
 			<German>Stoffwechselabhängiger Puls?</German>
 			<Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
+			<Spanish>¿Pulso cardíaco depende de metabolismo?</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceCirculation_SETTING_loadout">
 			<English>Different loadoutname</English>
@@ -268,21 +269,25 @@
 			<English>Open blood groups cheat sheet</English>
 			<German>Öffne Blutgruppentabelle</German>
 			<Polish>Otwórz tabele grup krwi</Polish>
+			<Spanish>Abrir tabla de compatibilidad sanguínea</Spanish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_crosspanel">
 			<English>Blood groups cheat sheet</English>
 			<German>Blutgruppentabelle</German>
 			<Polish>Tabela grup krwi</Polish>
+			<Spanish>Tabla de grupos sanguíneos</Spanish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_desc_crosspanel">
 			<English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
 			<German>Eine falsche Kombination von Spender- und Empfängerblut kann sogar tödliche Folgen haben.</German>
 			<Polish>Zła kombinacja krwi dawcy i biorcy może mieć śmiertelne konsekwencje.</Polish>
+			<Spanish>Una mala combinación de donante y receptor puede traer consecuencias fatales.</Spanish>
 		</Key>
 		<Key ID="STR_KAT_aceCirculation_client_bt">
 			<English>Blood type</English>
 			<German>Blutgruppe</German>
 			<Polish>Grupa krwi</Polish>
+			<Spanish>Grupo sanguíneo</Spanish>
 		</Key>
 	</Package>
 </Project>
