@@ -87,6 +87,21 @@ class Extended_Init_EventHandlers {
             init = "_this call kat_aceMisc_fnc_handleInit";
         };
     };
+    class Land_IntravenStand_01_empty_F {
+        class kat_aceMisc_init_0bag {
+            init = "(_this select 0) setVariable ['kat_aceMisc_stand', [], true]";
+        };
+    };
+    class Land_IntravenStand_01_1bag_F {
+        class kat_aceMisc_init_1bag {
+            init = "(_this select 0) setVariable ['kat_aceMisc_stand', [1000], true]";
+        };
+    };
+    class Land_IntravenStand_01_2bags_F {
+        class kat_aceMisc_init_2bag {
+            init = "(_this select 0) setVariable ['kat_aceMisc_stand', [1000, 1000], true]";
+        };
+    };
 };
 class Extended_PostInit_EventHandlers {
     class kat_aceMisc_postInit {
@@ -304,6 +319,16 @@ class cfgVehicles {
                     condition = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
                     statement = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
                 };
+                class SalineIV_Stand_500: SalineIV {
+                    displayName = "$STR_kat_aceMisc_Display_IVStand_500";
+                    condition = "[_player, _target, 'hand_l', 'SalineIV_Stand_500'] call ace_medical_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_l', 'SalineIV_Stand_500'] call ace_medical_fnc_treatment";
+                };
+                class SalineIV_Stand_250: SalineIV {
+                    displayName = "$STR_kat_aceMisc_Display_IVStand_250";
+                    condition = "[_player, _target, 'hand_l', 'SalineIV_Stand_250'] call ace_medical_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_l', 'SalineIV_Stand_250'] call ace_medical_fnc_treatment";
+                };
             };
             class ACE_ArmRight {
                 class SalineIV;
@@ -311,6 +336,16 @@ class cfgVehicles {
                     displayName = "$STR_kat_aceMisc_Display_IVStand";
                     condition = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
                     statement = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
+                };
+                class SalineIV_Stand_500: SalineIV {
+                    displayName = "$STR_kat_aceMisc_Display_IVStand_500";
+                    condition = "[_player, _target, 'hand_r', 'SalineIV_Stand_500'] call ace_medical_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_r', 'SalineIV_Stand_500'] call ace_medical_fnc_treatment";
+                };
+                class SalineIV_Stand_250: SalineIV {
+                    displayName = "$STR_kat_aceMisc_Display_IVStand_250";
+                    condition = "[_player, _target, 'hand_r', 'SalineIV_Stand_250'] call ace_medical_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_r', 'SalineIV_Stand_250'] call ace_medical_fnc_treatment";
                 };
             };
             class ACE_LegLeft {
@@ -320,6 +355,16 @@ class cfgVehicles {
                     condition = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
                     statement = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
                 };
+                class SalineIV_Stand_500: SalineIV {
+                    displayName = "$STR_kat_aceMisc_Display_IVStand_500";
+                    condition = "[_player, _target, 'leg_l', 'SalineIV_Stand_500'] call ace_medical_fnc_canTreatCached";
+                    statement = "[_player, _target, 'leg_l', 'SalineIV_Stand_500'] call ace_medical_fnc_treatment";
+                };
+                class SalineIV_Stand_250: SalineIV {
+                    displayName = "$STR_kat_aceMisc_Display_IVStand_250";
+                    condition = "[_player, _target, 'leg_l', 'SalineIV_Stand_250'] call ace_medical_fnc_canTreatCached";
+                    statement = "[_player, _target, 'leg_l', 'SalineIV_Stand_250'] call ace_medical_fnc_treatment";
+                };
             };
             class ACE_LegRight {
                 class SalineIV;
@@ -327,6 +372,16 @@ class cfgVehicles {
                     displayName = "$STR_kat_aceMisc_Display_IVStand";
                     condition = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
                     statement = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
+                };
+                class SalineIV_Stand_500: SalineIV {
+                    displayName = "$STR_kat_aceMisc_Display_IVStand_500";
+                    condition = "[_player, _target, 'leg_r', 'SalineIV_Stand_500'] call ace_medical_fnc_canTreatCached";
+                    statement = "[_player, _target, 'leg_r', 'SalineIV_Stand_500'] call ace_medical_fnc_treatment";
+                };
+                class SalineIV_Stand_250: SalineIV {
+                    displayName = "$STR_kat_aceMisc_Display_IVStand_250";
+                    condition = "[_player, _target, 'leg_r', 'SalineIV_Stand_250'] call ace_medical_fnc_canTreatCached";
+                    statement = "[_player, _target, 'leg_r', 'SalineIV_Stand_250'] call ace_medical_fnc_treatment";
                 };
             };
         };
@@ -339,10 +394,20 @@ class ACE_Medical_Actions {
         class SalineIV_Stand: SalineIV {
             displayName = "$STR_kat_aceMisc_Display_IVStand";
             requiredMedic = 0;
-            condition = "kat_aceMisc_fnc_conditionIV";
+            condition = "[_player, 1000] call kat_aceMisc_fnc_conditionIV";
             items[] = {};
-            callbackSuccess = "[_player, _target, _selectionName, 'SalineIV', ['SalineIV']] call kat_aceMisc_fnc_treatmentIV";
+            callbackSuccess = "[_player, _target, _selectionName, 'SalineIV'] call kat_aceMisc_fnc_treatmentIV";
             itemConsumed = 0;
+        };
+        class SalineIV_Stand_500: SalineIV_Stand {
+            displayName = "$STR_kat_aceMisc_Display_IVStand_500";
+            condition = "[_player, 500] call kat_aceMisc_fnc_conditionIV";
+            callbackSuccess = "[_player, _target, _selectionName, 'SalineIV_500'] call kat_aceMisc_fnc_treatmentIV";
+        };
+        class SalineIV_Stand_250: SalineIV_Stand {
+            displayName = "$STR_kat_aceMisc_Display_IVStand_250";
+            condition = "[_player, 250] call kat_aceMisc_fnc_conditionIV";
+            callbackSuccess = "[_player, _target, _selectionName, 'SalineIV_250'] call kat_aceMisc_fnc_treatmentIV";
         };
         class PersonalAidKit;
         class LimitWounds: PersonalAidKit {

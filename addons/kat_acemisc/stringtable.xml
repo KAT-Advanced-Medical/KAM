@@ -14,16 +14,40 @@
 			<Spanish>Administrando IV</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceMisc_Action_add_IV_Display">
-			<English>Attach IV</English>
-			<German>IV anhängen</German>
-			<Polish>Załóż IV</Polish>
-			<Spanish>Adminsitrar IV</Spanish>
+			<English>Attach IV (1000ml)</English>
+			<German>IV anhängen (1000ml)</German>
+			<Polish>Załóż IV (1000ml)</Polish>
+			<Spanish>Adminsitrar IV (1000ml)</Spanish>
+		</Key>
+		<Key ID="STR_kat_aceMisc_Action_add_IV_Display_500">
+			<English>Attach IV (500ml)</English>
+			<German>IV anhängen (500ml)</German>
+			<Polish>Załóż IV (500ml)</Polish>
+			<Spanish>Adminsitrar IV (500ml)</Spanish>
+		</Key>
+		<Key ID="STR_kat_aceMisc_Action_add_IV_Display_250">
+			<English>Attach IV (250ml)</English>
+			<German>IV anhängen (250ml)</German>
+			<Polish>Załóż IV (250ml)</Polish>
+			<Spanish>Adminsitrar IV (250ml)</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceMisc_Display_IVStand">
 			<English>Stand: Saline IV (1000ml)</English>
 			<German>Ständer: Saline IV (1000ml)</German>
 			<Polish>Stojak: Sól fizjologiczna IV (1000ml)</Polish>
 			<Spanish>Soporte: Salino IV (1000ml)</Spanish>
+		</Key>
+		<Key ID="STR_kat_aceMisc_Display_IVStand_500">
+			<English>Stand: Saline IV (500ml)</English>
+			<German>Ständer: Saline IV (500ml)</German>
+			<Polish>Stojak: Sól fizjologiczna IV (500ml)</Polish>
+			<Spanish>Soporte: Salino IV (500ml)</Spanish>
+		</Key>
+		<Key ID="STR_kat_aceMisc_Display_IVStand_250">
+			<English>Stand: Saline IV (250ml)</English>
+			<German>Ständer: Saline IV (250ml)</German>
+			<Polish>Stojak: Sól fizjologiczna IV (250ml)</Polish>
+			<Spanish>Soporte: Salino IV (250ml)</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceMisc_SETTING_LIMITWOUNDS_ENABLE">
 			<English>Enable limited wounds</English>

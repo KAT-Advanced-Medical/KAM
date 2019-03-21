@@ -14,9 +14,12 @@
  * Public: No
  */
 
-params ["_player"];
+ params [
+ 	["_player", objNull, [objNull]],
+ 	["_classname", "ACE_salineIV", [""]]
+ ];
 
 if !(kat_aceMisc_enable) exitWith {false};
 
-if ([_player] call ace_medical_fnc_isMedic && "ACE_salineIV" in items _player) exitWith {true};
+if ([_player] call ace_medical_fnc_isMedic && _classname in items _player) exitWith {true};
 false;
