@@ -95,6 +95,7 @@ class Extended_PostInit_EventHandlers {
 };
 
 class cfgVehicles {
+    #include "vehicle_stretcher.hpp"
     class Land_IntravenStand_01_base_F;
 
     class Land_IntravenStand_01_empty_F: Land_IntravenStand_01_base_F {
