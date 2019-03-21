@@ -49,9 +49,9 @@ class CfgFunctions {
         file = "kat_aceMisc\functions";
         class functions {
             class addIVbag{};
+            class attachStretcher{};
             class bandageRandomWound{};
-            class carry_litter{};
-            class conditionIV;
+            class conditionIV{};
             class conditionIVstand{};
             class events{};
             class getNumOpenWounds{};
@@ -149,7 +149,7 @@ class cfgVehicles {
             primary = 1;
             dissasembleTo[] = {};
         };
-        author = "vurtual";
+        author = "Katalam";
         scope = 2;
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_DismantledWeapons";
@@ -265,7 +265,7 @@ class cfgVehicles {
     };
     class Land_Stretcher_01_base_F;
     class Land_Stretcher_01_olive_F: Land_Stretcher_01_base_F {
-        ace_cargo_canLoad = 0;
+        ace_cargo_canLoad = 1;
         ace_Cargo_hasCargo = 0;
         ace_dragging_canDrag = 1;
         ace_dragging_canCarry = 1;

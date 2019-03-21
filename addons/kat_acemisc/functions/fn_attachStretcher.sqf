@@ -1,0 +1,55 @@
+/*
+ * Author: Katalam
+ * Children action for attaching stretcher
+ *
+ * Arguments:
+ * 0: Stretcher <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [cursorTarget] call kat_aceMisc_fnc_attachStretcher;
+ *
+ * Public: No
+ */
+
+params [["_target", objNull, [objNull]]];
+
+if !(isNull attachedTo _target) exitWith {};
+private _vehicles = nearestObjects [_target, ["Car", "Helicopter"], 20];
+private _actions = [];
+
+{
+	private _type = typeOf _x;
+	private _name = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
+	private _uniqueName = format ["KAT_%1", _type];
+	if (isArray (configFile >> "CfgVehicles" >> _type >> "stretcherPos")) then {
+		_actions pushBack [
+			[
+				_uniqueName,
+				_name,
+				"",
+				{
+					params ["_target", "", "_parameter"];
+					private _pos = getArray (configFile >> "CfgVehicles" >> typeOf (_parameter select 0) >> "stretcherPos");
+					private _vector = getArray (configFile >> "CfgVehicles" >> typeOf (_parameter select 0) >> "stretcherVector");
+					_target attachTo [(_parameter select 0), _pos];
+					_target setVectorDirAndUp _vector;
+					diag_log _target;
+					diag_log _parameter;
+				},
+				{true},
+				{},
+				[_x]
+			] call ace_interact_menu_fnc_createAction,
+			[],
+			_target
+		];
+		true;
+	} else {
+		false;
+	};
+} count _vehicles;
+
+_actions;

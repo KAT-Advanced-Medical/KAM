@@ -37,5 +37,13 @@
 			<English>Use condition limit wounds</English>
 			<German>Bendingung für limitierte Wunden</German>
 		</Key>
+		<Key ID="STR_kat_aceMisc_disassemble_stretcher_display">
+			<English>Disassemble stretcher</English>
+			<German>Trage einklappen</German>
+		</Key>
+		<Key ID="STR_kat_aceMisc_disassemble_attach_display">
+			<English>Attach to</English>
+			<German>Anhängen an</German>
+		</Key>
 	</Package>
 </Project>
