@@ -35,7 +35,7 @@ private _type = round random(3);
 	"LIST",
 	localize "STR_KAT_aceCirculation_client_bt",
 	CBA_SETTINGS_CAT,
-	[["A", "B", "AB", "0"], ["A", "B", "AB", "0"], _type],
+	[["A", "B", "AB", "O"], ["A", "B", "AB", "O"], _type],
 	2,
 	{
 		player setVariable ["kat_aceCirculation_bloodtype", _this, true];
