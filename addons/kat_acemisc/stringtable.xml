@@ -57,11 +57,12 @@
 		<Key ID="STR_kat_aceMisc_LIMITWOUNDS_Display">
 			<English>Bandage wounds</English>
 			<German>Behandle Wunden</German>
-			<Spanish>Activar</Spanish>
+			<Spanish>Activar vendaje de heridas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceMisc_Condition_limitWounds_Display">
 			<English>Use condition limit wounds</English>
 			<German>Bendingung für limitierte Wunden</German>
+			<Spanish>Usar condición de límite de heridas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceMisc_disassemble_stretcher_display">
 			<English>Disassemble stretcher</English>
