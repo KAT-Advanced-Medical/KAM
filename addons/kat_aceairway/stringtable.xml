@@ -29,12 +29,13 @@
 			<English>Probability for a obstruction airway</English>
 			<German>Atemwegsverlegungswahrscheinlichkeit</German>
 			<Polish>Szansa na zator dróg oddechowych</Polish>
+			<Spanish>Probabilidad de obstrucción en vías aéreas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_occluded">
 			<English>Probability for airway occluding</English>
 			<German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes</German>
 			<Polish>Szansa na niedrożność dróg oddechowych</Polish>
-			<Spanish>Probabilidad de obstrucción de las vías aéreas</Spanish>
+			<Spanish>Probabilidad de oclusión de las vías aéreas</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_SETTING_puking_sound">
 			<English>Activate the puking sound?</English>
@@ -62,13 +63,13 @@
 			<English>%1 inserted a %2</English>
 			<German>%1 intubierte mit %2</German>
 			<Polish>%1 intubowany z %2</Polish>
-			<Spanish>%1 intubado con %2</Spanish>
+			<Spanish>%1 insertó un %2</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Occluded">
 			<English>Occluded</English>
 			<German>Verstopft</German>
 			<Polish>Zablokowany</Polish>
-			<Spanish>Obstruída</Spanish>
+			<Spanish>Ocluída</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_Collapsed">
 			<English>Collapsed</English>
@@ -80,6 +81,7 @@
 			<English>Obstruction</English>
 			<German>Verlegt</German>
 			<Polish>Zator</Polish>
+			<Spanish>Obstruída</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceAirway_N">
 			<English>Not</English>

@@ -11,6 +11,7 @@
 			<English>Alternative death timer for airway injuries?</English>
 			<German>Alternativen Todestimer für Atemwegsverlegungen nutzen?</German>
 			<Polish>Alternatywny licznik do śmierci dla urazów dróg oddechowych?</Polish>
+			<Spanish>¿Activar tiempo de muerte alternativo para lesiones respiratorias?</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_SETTING_Value_Before">
 			<English>Value to add or remove to the Sp02 before 100 sec</English>
@@ -119,16 +120,19 @@
 			<German>%1 behandelte einen Pneumothorax</German>
 			<Spanish>%1 tratado un pneumotórax</Spanish>
 			<Polish>%1 leczenia odmy opłucnowej</Polish>
+			<Spanish>%1 trató un pneumotórax</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_pneumothorax_display">
 			<English>Chest Seal</English>
 			<German>Chest Seal</German>
 			<Polish>Chest Seal</Polish>
+			<Spanish>Chest Seal</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_pneumothorax_mm">
 			<English>1x Pneumothorax</English>
 			<German>1x Pneumothorax</German>
 			<Polish>1x Odma Opłucnowa</Polish>
+			<Spanish>1x Pneumotórax</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_treating">
 			<English>Treating</English>
@@ -140,11 +144,13 @@
 			<English>Chest Seal</English>
 			<German>Chest Seal</German>
 			<Polish>Chest Seal</Polish>
+			<Spanish>chest Seal</Spanish>
 		</Key>
 		<Key ID="STR_kat_aceBreathing_chestseal_desc">
 			<English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
 			<German>Chest Seal ist so konzipiert, dass offene Brustwunden in den meisten Fällen behandelt, versiegelt und wieder verschlossen werden.</German>
 			<Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach.</Polish>
+			<Spanish>El Chest Seal está diseñado para tratar, sellar y resellar heridas de pecho abierto en la mayoría de los casos.</Spanish>
 		</Key>
 	</Package>
 </Project>
