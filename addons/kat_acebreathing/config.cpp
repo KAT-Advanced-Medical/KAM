@@ -90,6 +90,7 @@ class cfgWeapons {
         descriptionShort = "$STR_kat_aceBreathing_Pulseoximeter_Desc_Short";
         descriptionUse = "$STR_kat_aceBreathing_Pulseoximeter_Desc_Use";
         picture = "\kat_aceBreathing\images\Pulseoximeter_normal.paa";
+        model = "\kat_aceBreathing\pulseox\pulseox.p3d";
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };

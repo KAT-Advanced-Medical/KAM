@@ -171,6 +171,7 @@ class cfgWeapons {
         descriptionShort = "$STR_kat_aceAirway_Accuvac_Desc_Short";
         descriptionUse = "$STR_kat_aceAirway_Accuvac_Desc_Use";
         picture = "\kat_aceAirway\images\accuvac_normal.paa";
+        model = "\kat_aceAirway\accuvac\accuvac.p3d";
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 7;
         };
