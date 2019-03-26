@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Removes a pulseoximeter for a patient and adds Item to the caller
@@ -10,18 +11,18 @@
  * None
  *
  * Example:
- * call kat_aceBreathing_fnc_treatmentAdvanced_removePulseoximeter;
+ * call kat_acebreathing_fnc_treatmentAdvanced_removePulseoximeter;
  *
  * Public: No
  */
 
 params ["_player", "_target"];
 
-_target setVariable ["kat_aceBreathing_pulseoximeter", false, true];
+_target setVariable [QGVAR(pulseoximeter), false, true];
 
-if (_player canAdd "KAT_Pulseoximeter") then {
-    _player addItem "KAT_Pulseoximeter";
+if (_player canAdd "kat_Pulseoximeter") then {
+    _player addItem "kat_Pulseoximeter";
 } else {
     private _groundHolder = createVehicle ["WeaponHolderSimulated", _target, [], 0.5, "CAN_COLLIDE"];
-    _groundHolder addItemCargoGlobal ["KAT_Pulseoximeter", 1];
+    _groundHolder addItemCargoGlobal ["kat_Pulseoximeter", 1];
 };

@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Add or remove oxygen saturation with given value
@@ -11,7 +12,7 @@
  * 0: New value <NUMBER>
  *
  * Example:
- * [cursorTarget, 5, true] call kat_aceBreathing_fnc_adjustSp02;
+ * [cursorTarget, 5, true] call kat_acebreathing_fnc_adjustSp02;
  *
  * Public: No
  */

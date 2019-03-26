@@ -1,26 +1,18 @@
-/*
- * Author: Katalam
- * CBA Settings function
- *
- * Arguments:
- * None
- *
- * Return Value:
- * None
- *
- * Example:
- * call kat_aceBreathing_fnc_registerSettings;
- *
- * Public: No
- */
+#include "script_component.hpp"
 
-#define CBA_SETTINGS_CAT "KAT - ACE Breathing"
+ADDON = false;
+
+PREP_RECOMPILE_START;
+#include "XEH_PREP.hpp"
+PREP_RECOMPILE_END;
+
+#define CBA_SETTINGS_CAT "KAT - ADV Medical: Breathing"
 
 //Enable aceBreathing
 [
-    "kat_aceBreathing_enable",
+    QGVAR(enable),
     "CHECKBOX",
-    localize "STR_kat_aceBreathing_SETTING_ENABLE",
+    localize LSTRING(SETTING_ENABLE),
     CBA_SETTINGS_CAT,
     [true],
     true
@@ -28,9 +20,9 @@
 
 //Enable aceBreathing death timer for airway injuries
 [
-    "kat_aceBreathing_death_timer_enable",
+    QGVAR(death_timer_enable),
     "CHECKBOX",
-    localize "kat_aceBreathing_SETTING_death_timer_enable",
+    localize LSTRING(SETTING_death_timer_enable),
     CBA_SETTINGS_CAT,
     [false],
     true
@@ -38,9 +30,9 @@
 
 // aceBreathing SpO2 add & remove value small
 [
-    "kat_aceBreathing_spo2_small_value",
+    QGVAR(spo2_small_value),
     "SLIDER",
-    localize "STR_kat_aceBreathing_SETTING_Value_Before",
+    localize LSTRING(SETTING_Value_Before),
     CBA_SETTINGS_CAT,
     [0, 100, 2, 0],
     true
@@ -48,9 +40,9 @@
 
 // aceBreathing SpO2 add % remove value big
 [
-    "kat_aceBreathing_spo2_big_value",
+    QGVAR(spo2_big_value),
     "SLIDER",
-    localize "STR_kat_aceBreathing_SETTING_Value_After",
+    localize LSTRING(SETTING_Value_After),
     CBA_SETTINGS_CAT,
     [0, 100, 5, 0],
     true
@@ -59,12 +51,12 @@
 // aceBreathing probability for a pneumothorax
 // a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
 [
-    "kat_aceBreathing_pneumothorax",
+    QGVAR(pneumothorax),
     "SLIDER",
-    localize "STR_kat_aceBreathing_SETTING_pneumothorax",
+    localize LSTRING(SETTING_pneumothorax),
     CBA_SETTINGS_CAT,
     [0, 100, 0, 0],
     true
 ] call CBA_Settings_fnc_init;
 
-nil;
+ADDON = true;

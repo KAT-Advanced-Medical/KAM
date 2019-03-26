@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Called when a unit is damaged.
@@ -10,22 +11,22 @@
  * None
  *
  * Example:
- * [cursorTarget, "body", 1, ""] call kat_aceBreathing_fnc_handlePulmoHit;
+ * [cursorTarget, "body", 1, ""] call kat_acebreathing_fnc_handlePulmoHit;
  *
  * Public: No
  */
 
 params ["_unit", "_selection", "_damage", "_projectile"];
 
-if !(kat_aceBreathing_enable) exitWith {};
-if (kat_aceBreathing_pneumothorax == 0) exitWith {};
+if !(GVAR(enable)) exitWith {};
+if (GVAR(pneumothorax) == 0) exitWith {};
 if !(_selection isEqualTo "body") exitWith {};
 if (_damage < 0.7) exitWith {};
 if !(_projectile isKindOF "BulletBase") exitWith {};
 
-if (random (100) <= kat_aceBreathing_pneumothorax) then {
+if (random (100) <= GVAR(pneumothorax)) then {
     // add breathing sound
     [_unit, 0.5] call ace_medical_fnc_adjustPainLevel;
-    [_unit, CBA_missionTime] call kat_aceBreathing_fnc_handleBreathing;
+    [_unit, CBA_missionTime] call FUNC(handleBreathing);
     _unit setVariable ["ace_medical_airwayCollapsed", true, true];
 };

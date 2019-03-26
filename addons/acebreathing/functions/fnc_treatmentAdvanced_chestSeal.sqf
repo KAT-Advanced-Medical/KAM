@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Treatment for a pulmo injury
@@ -11,7 +12,7 @@
  * None
  *
  * Example:
- * call kat_aceBreathing_fnc_treatmentAdvanced_chestSeal;
+ * call kat_acebreathing_fnc_treatmentAdvanced_chestSeal;
  *
  * Public: No
  */

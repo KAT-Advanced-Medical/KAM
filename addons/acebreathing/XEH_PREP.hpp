@@ -1,0 +1,9 @@
+PREP(adjustSpo2);
+PREP(handleBreathing);
+PREP(handlePulmoHit);
+PREP(init);
+PREP(treatmentAdvanced_chestSeal);
+PREP(treatmentAdvanced_chestSealLocal);
+PREP(treatmentAdvanced_pulseoximeter);
+PREP(treatmentAdvanced_pulseoximeterLocal);
+PREP(treatmentAdvanced_removePulseoximeter);

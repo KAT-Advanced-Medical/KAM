@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * docks a pulseoximeter on the patient
@@ -11,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_aceBreathing_fnc_treatmentAdvanced_chestSealLocal;
+ * [player, cursorTarget] call kat_acebreathing_fnc_treatmentAdvanced_chestSealLocal;
  *
  * Public: No
  */
@@ -22,4 +23,4 @@ _target setVariable ["ace_medical_airwayCollapsed", false, true];
 
 
 
-[_target, "activity", "STR_kat_aceBreathing_pneumothorax", [[_player] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
+[_target, "activity", LSTRING(pneumothorax), [[_player] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
