@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Adds a IV bag for the medicine IV stands.
@@ -10,7 +11,7 @@
  * None
  *
  * Example:
- * [cursorTarget, player] call kat_aceMisc_fnc_addIVbag;
+ * [cursorTarget, player] call kat_acemisc_fnc_addIVbag;
  *
  * Public: No
  */
@@ -35,14 +36,14 @@ params ["_target", "_player", "_newML"];
             _newObjectClass = "Land_IntravenStand_01_1bag_F";
         } else {
             _newObjectClass = "Land_IntravenStand_01_2bags_F";
-            _value = _target getVariable ["kat_aceMisc_stand", []];
+            _value = _target getVariable [QGVAR(stand), []];
         };
 
         // creates new object at [0,0,0]
         private _newObject = createVehicle [_newObjectClass, [0,0,0], [], 0, "CAN_COLLIDE"];
 
         _value pushBack _newML;
-        _newObject setVariable ["kat_aceMisc_stand", _value, true];
+        _newObject setVariable [QGVAR(stand), _value, true];
 
         // replace the old with the new object
         private _oldPos = getPos _target;
@@ -67,4 +68,4 @@ params ["_target", "_player", "_newML"];
 
         // use item
         [_player, _player, _classNameItem] call ace_medical_fnc_useItem;
-    }, {}, localize "STR_kat_aceMisc_Action_add_IV"] call ace_common_fnc_progressBar;
+    }, {}, localize LSTRING(Action_add_IV)] call ace_common_fnc_progressBar;

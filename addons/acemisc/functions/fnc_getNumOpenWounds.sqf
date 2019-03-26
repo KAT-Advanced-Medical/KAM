@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Schwaggot EDIT: Katalam
  * Will count the open unbandaged wounds for given player.
@@ -9,7 +10,7 @@
  * 0: Open unbandaged wounds <NUMBER>
  *
  * Example:
- * [cursorTarget] call kat_aceMisc_fnc_getNumOpenWounds;
+ * [cursorTarget] call kat_acemisc_fnc_getNumOpenWounds;
  *
  * Public: No
  */

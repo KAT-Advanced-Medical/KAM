@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: esteldunedain Edit by Katalam
  * Create one action per passenger.

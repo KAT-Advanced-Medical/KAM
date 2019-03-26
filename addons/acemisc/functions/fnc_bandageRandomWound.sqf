@@ -1,5 +1,6 @@
+#include "script_component.hpp"
 /*
- * Author: Schwaggot EDIT: Katalam
+ * Author: Katalam EDIT: Katalam
  * Will bandage random wounds for given player
  *
  * Arguments:
@@ -9,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_aceMisc_fnc_bandageRandomWound;
+ * [cursorTarget] call kat_acemisc_fnc_bandageRandomWound;
  *
  * Public: No
  */

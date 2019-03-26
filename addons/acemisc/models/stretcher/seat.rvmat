@@ -8,7 +8,7 @@ PixelShaderID = "NormalMapSpecularMap";
 VertexShaderID = "NormalMap";
 
 class Stage1 {
-    texture = "kat_aceMisc\images\seat_nohq.paa";
+    texture = "x\kat_aceAdvMedical\addons\acemisc\models\stretcher\seat_nohq.paa";
     uvSource = "tex";
 
     class uvTransform {
@@ -20,7 +20,7 @@ class Stage1 {
 };
 
 class Stage2 {
-    texture = "kat_aceMisc\images\seat_smdi.paa";
+    texture = "x\kat_aceAdvMedical\addons\acemisc\models\stretcher\seat_smdi.paa";
     uvSource = "tex";
 
     class uvTransform {

@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Schwaggot EDIT: Katalam
  * Will limit the wounds for the given player for realistic treatment.
@@ -9,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_aceMisc_fnc_limitWounds;
+ * [cursorTarget] call kat_acemisc_fnc_limitWounds;
  *
  * Public: Yes
  */
@@ -22,11 +23,11 @@ switch (true) do {
     case (!alive _unit): {};
     default {
         // Get the open wounds for this unit
-        private _numOpenWounds = [_unit] call kat_aceMisc_fnc_getNumOpenWounds;
+        private _numOpenWounds = [_unit] call FUNC(getNumOpenWounds);
 
         while {_numOpenWounds > 5} do {
-            [_unit] call kat_aceMisc_fnc_bandageRandomWound;
-            _numOpenWounds = [_unit] call kat_aceMisc_fnc_getNumOpenWounds;
+            [_unit] call FUNC(bandageRandomWound);
+            _numOpenWounds = [_unit] call FUNC(getNumOpenWounds);
         };
     };
 };

@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Init function for stretcher
@@ -9,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_aceMisc_fnc_stretcher;
+ * [cursorTarget] call kat_acemisc_fnc_stretcher;
  *
  * Public: No
  */
@@ -21,9 +22,9 @@ if !(_object isKindOf "kat_stretcher") exitWith {false};
 [_object] call ace_dragging_fnc_initObject;
 
 [_object, 0, ["ACE_MainActions"],
-    ["kat_aceMisc_disassemble", localize "STR_kat_aceMisc_disassemble_stretcher_display", "", {
+    [QGVAR(disassemble), localize LSTRING(disassemble_stretcher_display), "", {
         params [["_object", objNull, [objNull]]];
-        "kat_stretcher_bag" createVehicle (getPos _object);
+        "kat_stretcherBag" createVehicle (getPos _object); // TODO create at exact position
         deleteVehicle _object;
     }, {
         params [["_object", objNull, [objNull]]];
@@ -33,8 +34,7 @@ if !(_object isKindOf "kat_stretcher") exitWith {false};
 ] call ace_interact_menu_fnc_addActionToObject;
 
 [_object, 0, ["ACE_MainActions"],
-    ["kat_aceMisc_attach", localize "STR_kat_aceMisc_disassemble_attach_display", "", {}, {true}, {[_target] call kat_aceMisc_fnc_attachStretcher}] call ace_interact_menu_fnc_createAction
+    [QGVAR(attach), localize LSTRING(disassemble_attach_display), "", {}, {true}, {[_target] call FUNC(attachStretcher)}] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
-
 
 true

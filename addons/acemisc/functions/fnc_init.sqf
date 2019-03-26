@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Initializes unit variables.
@@ -9,11 +10,9 @@
  * None
  *
  * Example:
- * [player] call kat_aceMisc_fnc_init;
+ * [player] call kat_acemisc_fnc_init;
  *
  * Public: No
  */
 
 params ["_unit"];
-
-//_unit setVariable ["kat_aceMisc_X", "X", true];

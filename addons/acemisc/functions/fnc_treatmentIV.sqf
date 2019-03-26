@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Treatment handle function to remove a bag.
@@ -9,7 +10,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget, 'hand_r', 'SalineIV'] call kat_aceMisc_fnc_treatmentIV;
+ * [player, cursorTarget, 'hand_r', 'SalineIV'] call kat_acemisc_fnc_treatmentIV;
  *
  * Public: No
  */
@@ -29,5 +30,5 @@ switch (_className) do {
         _value = 250;
     };
 };
-[_player, _value] call kat_aceMisc_fnc_removeIVbag;
+[_player, _value] call FUNC(removeIVbag);
 [_player, _target, _selectionName, _className, _item] call ace_medical_fnc_treatmentIV;

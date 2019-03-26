@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Condition check for the medicine IV stands to add a bag.
@@ -9,7 +10,7 @@
  * Cann add IV bag <BOOLEAN>
  *
  * Example:
- * [player] call kat_aceMisc_fnc_conditionIVstand;
+ * [player] call kat_acemisc_fnc_conditionIVstand;
  *
  * Public: No
  */
@@ -19,7 +20,7 @@
      ["_classname", "ACE_salineIV", [""]]
  ];
 
-if !(kat_aceMisc_enable) exitWith {false};
+if !(GVAR(enable)) exitWith {false};
 
 if ([_player] call ace_medical_fnc_isMedic && _classname in items _player) exitWith {true};
 false;
