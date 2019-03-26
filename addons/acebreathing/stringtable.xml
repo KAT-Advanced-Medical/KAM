@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="aceBreathing">
+        <Key ID="STR_kat_aceBreathing_SETTING_ENABLE">
+            <English>ACE-Breathing activated?</English>
+            <German>ACE-Atmung aktiviert?</German>
+            <Polish>ACE-Oddychanie aktywowane?</Polish>
+            <Spanish>¿Activar ACE-Respiración?</Spanish>
+        </Key>
+        <Key ID="kat_aceBreathing_SETTING_death_timer_enable">
+            <English>Alternative death timer for airway injuries?</English>
+            <German>Alternativen Todestimer für Atemwegsverlegungen nutzen?</German>
+            <Polish>Alternatywny licznik do śmierci dla urazów dróg oddechowych?</Polish>
+            <Spanish>¿Activar tiempo de muerte alternativo para lesiones respiratorias?</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_SETTING_Value_Before">
+            <English>Value to add or remove to the Sp02 before 100 sec</English>
+            <German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird vor 100 s</German>
+            <Polish>Wartość do dodania lub odjęcia do Sp02 przed 100 sek</Polish>
+            <Spanish>Valor para agregar o quitar al Sp02 antes de 100 segundos</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_SETTING_Value_After">
+            <English>Value to add or remove to the Sp02 after 100 sec</English>
+            <German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird nach 100 s</German>
+            <Polish>Wartość do dodania lub odjęcia do Sp02 po 100 sek</Polish>
+            <Spanish>Valor para agregar o quitar al Sp02 después de 100 segundos</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_SETTING_pneumothorax">
+            <English>Probability for a pneumothorax</English>
+            <German>Wahrscheinlichkeit für einen Pneumothorax</German>
+            <Spanish>Probabilidad de un pneumotórax</Spanish>
+            <Polish>Szansa na odme opłucnową</Polish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_Pulseoximeter_Display">
+            <English>Attach Pulse Oximeter</English>
+            <German>Benutze Pulseoximeter</German>
+            <Polish>Użyj Pulsoksymetru</Polish>
+            <Spanish>Usar oxímetro de pulso</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_Pulseoximeter_Display_Remove">
+            <English>Remove Pulse Oximeter</English>
+            <German>Entferne Pulseoximeter</German>
+            <Polish>Usuń Pulsoksymetr</Polish>
+            <Spanish>Quitar oxímetro de pulso</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_Pulseoximeter_Desc_Short">
+            <English>Pulse Oximeter</English>
+            <German>Pulseoximeter</German>
+            <Polish>Pulsoksymetr</Polish>
+            <Spanish>Oxímetro de pulso</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_Pulseoximeter_Desc_Use">
+            <English>Pulse Oximeter</English>
+            <German>Pulseoximeter</German>
+            <Polish>Pulsoksymetr</Polish>
+            <Spanish>Oxímetro de pulso</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_placing">
+            <English>Placing</English>
+            <German>Anlegen</German>
+            <Polish>Kładzenie</Polish>
+            <Spanish>Colocando</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_remove">
+            <English>Removing</English>
+            <German>Entferne</German>
+            <Polish>Usuwanie</Polish>
+            <Spanish>Quitando</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_pulseoxi_NA">
+            <English>Pulse Oximeter already connected</English>
+            <German>Pulseoximeter bereits vorhanden</German>
+            <Polish>Pulsoksymetr jest już podłączony</Polish>
+            <Spanish>El oxímetro de pulso ya está conectado</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_pulseoxi_Log">
+            <English>Pulse Oximeter: HR: %1 Sp02: %2</English>
+            <German>Pulseoximeter: HR: %1 SpO2: %2</German>
+            <Polish>Pulsoksymetr: HR: %1 Sp02: %2</Polish>
+            <Spanish>Oxímetro de pulso: HR: %1 Sp02: %2</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_pulseoxi_Log_2">
+            <English>%1 connected Pulseoximeter</English>
+            <German>%1 hat Pulseoximeter angelegt</German>
+            <Polish>%1 połączony Pulsoksymetr</Polish>
+            <Spanish>%1 conectado al Oxímetro de pulso</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_hint_name">
+            <English>Breathing</English>
+            <German>Atmung</German>
+            <Polish>Oddychanie</Polish>
+            <Spanish>Respiracióm</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_hint_desc">
+            <English>Breathing
+                %1sufficiently ventilated?
+                %1Sp02 over 70% -&gt; Yes
+                %1Sp02 under 70% -&gt; No -&gt; ass. Breathing</English>
+            <German>Atmung - Breathing
+                %1Ausreichend belüftet?
+                %1SpO2 über 70% -&gt; Ja
+                %1SpO2 unter 70% -&gt; Nein -&gt; ass. Beatmung</German>
+            <Polish>Oddychanie
+                %1dostatecznie wentylowany ?
+                %1Sp02 powyżej 70% -&gt; Tak
+                %1Sp02 poniżej 70% -&gt; Nie -&gt; ass. oddychanie</Polish>
+            <Spanish>Respiración
+                %1¿Suficientemente ventilado?
+                %1Sp02 sobre 70% -&gt; Si
+                %1Sp02 bajo 70% -&gt; No -&gt; ass. Respiración</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_hint_tip">
+            <English>If you saved the airway with a larynxtube skip this</English>
+            <German>Falls du die Atemwege mit einem Laryntubus sicherst überspring diesen Schritt</German>
+            <Polish>Jeżeli udrożniłeś drogi oddechowe przy pomocy rurki krtaniowej, omiń to.</Polish>
+            <Spanish>Si trataste las vías aéreas con un tubo laríngeo, omite esto</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_pneumothorax">
+            <English>%1 treated a pneumothorax</English>
+            <German>%1 behandelte einen Pneumothorax</German>
+            <Spanish>%1 tratado un pneumotórax</Spanish>
+            <Polish>%1 leczenia odmy opłucnowej</Polish>
+            <Spanish>%1 trató un pneumotórax</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_pneumothorax_display">
+            <English>Chest Seal</English>
+            <German>Chest Seal</German>
+            <Polish>Chest Seal</Polish>
+            <Spanish>Chest Seal</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_pneumothorax_mm">
+            <English>1x Pneumothorax</English>
+            <German>1x Pneumothorax</German>
+            <Polish>1x Odma Opłucnowa</Polish>
+            <Spanish>1x Pneumotórax</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_treating">
+            <English>Treating</English>
+            <German>Behandle</German>
+            <Spanish>Tratando</Spanish>
+            <Polish>Leczenie</Polish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_chestseal_display">
+            <English>Chest Seal</English>
+            <German>Chest Seal</German>
+            <Polish>Chest Seal</Polish>
+            <Spanish>chest Seal</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceBreathing_chestseal_desc">
+            <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
+            <German>Chest Seal ist so konzipiert, dass offene Brustwunden in den meisten Fällen behandelt, versiegelt und wieder verschlossen werden.</German>
+            <Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach.</Polish>
+            <Spanish>El Chest Seal está diseñado para tratar, sellar y resellar heridas de pecho abierto en la mayoría de los casos.</Spanish>
+        </Key>
+    </Package>
+</Project>

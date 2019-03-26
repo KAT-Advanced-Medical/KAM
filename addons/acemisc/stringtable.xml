@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="aceExposure">
+        <Key ID="STR_kat_aceMisc_SETTING_ENABLE">
+            <English>ACE-Misc activated?</English>
+            <German>ACE-Sonstiges aktivieren?</German>
+            <Polish>ACE-Inne aktywowane?</Polish>
+            <Spanish>¿Activar ACE-Misceláneos?</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_Action_add_IV">
+            <English>Attaching IV</English>
+            <German>IV wird angehangen</German>
+            <Polish>Zakładanie IV</Polish>
+            <Spanish>Administrando IV</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_Action_add_IV_Display">
+            <English>Attach IV (1000ml)</English>
+            <German>IV anhängen (1000ml)</German>
+            <Polish>Załóż IV (1000ml)</Polish>
+            <Spanish>Adminsitrar IV (1000ml)</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_Action_add_IV_Display_500">
+            <English>Attach IV (500ml)</English>
+            <German>IV anhängen (500ml)</German>
+            <Polish>Załóż IV (500ml)</Polish>
+            <Spanish>Adminsitrar IV (500ml)</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_Action_add_IV_Display_250">
+            <English>Attach IV (250ml)</English>
+            <German>IV anhängen (250ml)</German>
+            <Polish>Załóż IV (250ml)</Polish>
+            <Spanish>Adminsitrar IV (250ml)</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_Display_IVStand">
+            <English>Stand: Saline IV (1000ml)</English>
+            <German>Ständer: Saline IV (1000ml)</German>
+            <Polish>Stojak: Sól fizjologiczna IV (1000ml)</Polish>
+            <Spanish>Soporte: Salino IV (1000ml)</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_Display_IVStand_500">
+            <English>Stand: Saline IV (500ml)</English>
+            <German>Ständer: Saline IV (500ml)</German>
+            <Polish>Stojak: Sól fizjologiczna IV (500ml)</Polish>
+            <Spanish>Soporte: Salino IV (500ml)</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_Display_IVStand_250">
+            <English>Stand: Saline IV (250ml)</English>
+            <German>Ständer: Saline IV (250ml)</German>
+            <Polish>Stojak: Sól fizjologiczna IV (250ml)</Polish>
+            <Spanish>Soporte: Salino IV (250ml)</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_SETTING_LIMITWOUNDS_ENABLE">
+            <English>Enable limited wounds</English>
+            <German>Aktiviere limitierte Wunden</German>
+            <Spanish>Activar heridas limitadas</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_LIMITWOUNDS_Display">
+            <English>Bandage wounds</English>
+            <German>Behandle Wunden</German>
+            <Spanish>Activar vendaje de heridas</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_Condition_limitWounds_Display">
+            <English>Use condition limit wounds</English>
+            <German>Bendingung für limitierte Wunden</German>
+            <Spanish>Usar condición de límite de heridas</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_disassemble_stretcher_display">
+            <English>Disassemble stretcher</English>
+            <German>Trage einklappen</German>
+            <Spanish>Desarmar camilla</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceMisc_disassemble_attach_display">
+            <English>Attach to</English>
+            <German>Anhängen an</German>
+            <Spanish>Unir camilla a</Spanish>
+        </Key>
+    </Package>
+</Project>
