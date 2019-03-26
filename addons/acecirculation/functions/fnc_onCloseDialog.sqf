@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Close the cross panel dialog.
@@ -14,5 +15,5 @@
  * Public: No
  */
 
-uiNamespace setVariable ['CrossPanel_Display', nil];
-KAT_CrossPanelOpened = false;
+uiNamespace setVariable [QGVAR(CrossPanel_Display), nil];
+GVAR(CrossPanelOpened) = false;

@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Reports a blood type depending on the unit.
@@ -9,11 +10,11 @@
  * 0: Blood type <STRING>
  *
  * Example:
- * [cursorTarget] call kat_aceCirculation_fnc_bloodType;
+ * [cursorTarget] call kat_acecirculation_fnc_bloodType;
  *
  * Public: No
  */
 
 params ["_target"];
 
-_target getVariable ["kat_aceCirculation_bloodtype", "O"];
+_target getVariable [QGVAR(bloodtype), "O"];

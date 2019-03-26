@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Remove the false blood effect for the patient.
@@ -9,11 +10,11 @@
  * None
  *
  * Example:
- * [player] call kat_aceCirculation_fnc_removeEffect_IV;
+ * [player] call kat_acecirculation_fnc_removeEffect_IV;
  *
  * Public: No
  */
 
 params ["_unit"];
 
-_unit setVariable ["kat_aceCirculation_IV_counts", 0, true];
+_unit setVariable [QGVAR(IV_counts), 0, true];

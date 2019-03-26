@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Removes a 'bullet' from a magazine.
@@ -13,7 +14,7 @@
  * None
  *
  * Example:
- * ['KAT_Painkillers', player, cursorTarget, 'head', 'Painkillers'] call kat_aceCirculation_fnc_removeItemfromMag;
+ * ['kat_Painkiller', player, cursorTarget, 'head', 'Painkillers'] call kat_acecirculation_fnc_removeItemfromMag;
  *
  * Public: No
  */
@@ -27,10 +28,10 @@ private _oldMag = _matchesMags select 0;
 if ((_oldMag select 1) > 1) then {
     _player addMagazine [_mag, (_oldMag select 1) - 1];
 } else {
-    [format [localize "STR_KAT_aceCirculation_Pain_empty", getText (configFile >> "CfgMagazines" >> _mag >> "displayName")], 2.5, _player] call ace_common_fnc_displayTextStructured;
+    [format [localize LSTRING(Pain_empty), getText (configFile >> "CfgMagazines" >> _mag >> "displayName")], 2.5, _player] call ace_common_fnc_displayTextStructured;
 };
 
-playsound3D ["kat_aceCirculation\sounds\take_painkillers.wav", _player, false, getPosASL _player, 8, 1, 15];
+playsound3D [QPATHTOF(sounds\take_painkillers.wav), _player, false, getPosASL _player, 8, 1, 15];
 
 if (isText (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "Medication" >> _className >> "itemClassName")) then {
     _mag = getText (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "Medication" >> _className >> "itemClassName");

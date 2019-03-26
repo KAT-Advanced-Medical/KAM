@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Katalam
  * Remove a given log from the ace medical menu.
@@ -11,7 +12,7 @@
  * None
  *
  * Example:
- * [cursorTarget, "quick_view", "STR_kat_aceBreathing_pulseoxi_Log"] call kat_aceCirculation_fnc_removeLog;
+ * [cursorTarget, "quick_view", "STR_kat_acebreathing_pulseoxi_Log"] call kat_acecirculation_fnc_removeLog;
  *
  * Public: No
  */
