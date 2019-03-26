@@ -13,7 +13,7 @@ import winreg
 
 ######## GLOBALS #########
 MAINDIR = "x"
-PROJECTDIR = "kat"
+PROJECTDIR = "kat_aceAdvMedical"
 ##########################
 
 def main():
