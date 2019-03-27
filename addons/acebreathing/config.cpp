@@ -16,8 +16,8 @@ class CfgPatches {
         requiredAddons[] = {
             "ace_medical",
             "kat_main",
-            "kat_airway",
-            "kat_circulation",
+            "kat_aceairway",
+            "kat_acecirculation",
             "cba_settings"
         };
         author = "Katalam";
