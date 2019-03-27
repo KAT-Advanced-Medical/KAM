@@ -47,7 +47,7 @@ if (!local _unit) then {
 
     private _o2 = _unit getVariable [QGVAR(o2), false];
     private _occluded = _unit getVariable ["ace_medical_airwayOccluded", false];
-    private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
+    private _obstruction = _unit getVariable [QEGVAR(aceairway,obstruction), false];
 
     if (_collapsed) exitWith {
         [_unit, GVAR(spo2_big_value), false] call FUNC(adjustSpo2);
@@ -64,8 +64,8 @@ if (!local _unit) then {
         };
     };
 
-    private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
-    private _airwaySafed = _unit getVariable [QEGVAR(airway,airway), false];
+    private _overstretch = _unit getVariable [QEGVAR(aceairway,overstretch), false];
+    private _airwaySafed = _unit getVariable [QEGVAR(aceairway,airway), false];
 
     switch (true) do {
         case (_overstretch && !_occluded): {

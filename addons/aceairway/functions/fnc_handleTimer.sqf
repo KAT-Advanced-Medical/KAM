@@ -23,10 +23,10 @@ if !(GVAR(enable)) exitWith {};
 if (!local _unit) exitWith {
     ["deathTimerAirway", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
-if (EGVAR(breathing,enable)) then {
+if (EGVAR(acebreathing,enable)) then {
     ["handleBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
-if (EGVAR(breathing,death_timer_enable)) exitWith {};
+if (EGVAR(acebreathing,death_timer_enable)) exitWith {};
 
 [{
     params ["_args", "_idPFH"];

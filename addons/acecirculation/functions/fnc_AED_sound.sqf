@@ -6,8 +6,8 @@ ADV-aceCPR - by Belbo - edited by Katalam (new syntax and different sound)
 params ["_args"];
 _args params ["_caller", "_target"];
 
-if !(_caller getVariable [QEGVAR(cpr,soundplayed), false]) then {
-    _caller setVariable [QEGVAR(cpr,soundplayed), true];
+if !(_caller getVariable ["adv_aceCPR_var_soundplayed", false]) then {
+    _caller setVariable ["adv_aceCPR_var_soundplayed", true];
     _args spawn {
         params ["_caller", "_target"];
         // 8 seconds treatment time
@@ -18,7 +18,7 @@ if !(_caller getVariable [QEGVAR(cpr,soundplayed), false]) then {
         playsound3D [QPATHTOF(sounds\bump.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 0.8 seconds
         sleep 1; // 10.2 seconds
         playsound3D [QPATHTOF(sounds\checkpulse.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 1.1 seconds
-        _caller setVariable [QEGVAR(cpr,soundplayed), false];
+        _caller setVariable ["adv_aceCPR_var_soundplayed", false];
     };
 };
 

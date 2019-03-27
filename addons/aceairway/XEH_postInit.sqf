@@ -13,7 +13,7 @@ if !(GVAR(enable)) exitWith {};
         _unit call FUNC(init);
     };
     if (_unit getVariable [GVAR(string_exit), false]) exitWith {};
-    if (EGVAR(breathing,enable)) then {
+    if (EGVAR(acebreathing,enable)) then {
         ["handleBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
     };
     [_unit] call FUNC(handleAirway);
@@ -25,6 +25,6 @@ if !(GVAR(enable)) exitWith {};
     params ["", "_target", "", "_className"];
     if (toUpper _className isEqualTo "PERSONALAIDKIT" && local _target) exitWith {
         _target call FUNC(init);
-        _target setVariable [QEGVAR(circulation,IV_counts), 0, true];
+        _target setVariable [QEGVAR(acecirculation,IV_counts), 0, true];
     };
  }] call CBA_fnc_addEventHandler;
