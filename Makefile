@@ -1,7 +1,7 @@
 VERSION = $(shell cat "VERSION")
-PREFIX = keko
-BIN = @keko
-ZIP = keko
+PREFIX = kat
+BIN = @kat_aceAdvMedical
+ZIP = kat_aceAdvMedical
 FLAGS = -i include -w unquoted-string -w redefinition-wo-undef
 VERSION_FILES = README.md mod.cpp
 
@@ -82,7 +82,7 @@ push: commit
 release: clean version commit
 	@"$(MAKE)" $(MAKEFLAGS) signatures
 	@echo "  ZIP  $(ZIP)_$(VERSION_S).zip"
-	@cp mod.cpp README.md logo_keko_ca.paa $(BIN)
+	@cp mod.cpp README.md larynx.paa $(BIN)
 	@zip -qr $(ZIP)_$(VERSION_S).zip $(BIN)
 
 clean:
