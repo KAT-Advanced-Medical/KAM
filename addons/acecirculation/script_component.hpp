@@ -1,4 +1,4 @@
-#define COMPONENT circulation
+#define COMPONENT acecirculation
 #define COMPONENT_BEAUTIFIED Circulation
 #include "\x\kat_aceAdvMedical\addons\main\script_mod.hpp"
 
