@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-    texture="x\kat_aceAdvMedical\addons\acemisc\models\stretcher\stretcher_nohq.tga";
+    texture="x\kat\addons\acemisc\models\stretcher\stretcher_nohq.tga";
     uvSource="tex";
     class uvTransform
     {
@@ -80,7 +80,7 @@ class Stage6
 };
 class Stage7
 {
-    texture="x\kat_aceAdvMedical\addons\acemisc\models\stretcher\env_land_co.tga";
+    texture="x\kat\addons\acemisc\models\stretcher\env_land_co.tga";
     uvSource="tex";
     class uvTransform
     {

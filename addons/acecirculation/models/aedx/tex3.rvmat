@@ -1,6 +1,6 @@
 class StageTI
 {
-    texture="x\kat_aceAdvMedical\addons\acecirculation\models\aedx\tex3_TI_ca.paa";
+    texture="x\kat\addons\acecirculation\models\aedx\tex3_TI_ca.paa";
 };
 ambient[]={1.000000,1.000000,1.000000,1.000000};
 diffuse[]={1.000000,1.000000,1.000000,1.000000};
@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-    texture="x\kat_aceAdvMedical\addons\acecirculation\models\aedx\tex3_nohq.paa";
+    texture="x\kat\addons\acecirculation\models\aedx\tex3_nohq.paa";
     uvSource="tex";
     class uvTransform
     {
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-    texture="x\kat_aceAdvMedical\addons\acecirculation\models\aedx\tex3_AS.paa";
+    texture="x\kat\addons\acecirculation\models\aedx\tex3_AS.paa";
     uvSource="tex";
     class uvTransform
     {
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-    texture="x\kat_aceAdvMedical\addons\acecirculation\models\aedx\tex3_smdi.paa";
+    texture="x\kat\addons\acecirculation\models\aedx\tex3_smdi.paa";
     uvSource="tex";
     class uvTransform
     {

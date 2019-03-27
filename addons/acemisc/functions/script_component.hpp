@@ -1,1 +1,1 @@
-#include "\x\kat_aceAdvMedical\addons\acemisc\script_component.hpp"
+#include "\x\kat\addons\acemisc\script_component.hpp"

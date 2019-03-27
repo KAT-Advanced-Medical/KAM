@@ -1,6 +1,6 @@
 class StageTI
 {
-    texture="x\kat_aceAdvMedical\addons\aceairway\models\accuvac\equip_TI_ca.paa";
+    texture="x\kat\addons\aceairway\models\accuvac\equip_TI_ca.paa";
 };
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-    texture="x\kat_aceAdvMedical\addons\aceairway\models\accuvac\equip_d_nohq.paa";
+    texture="x\kat\addons\aceairway\models\accuvac\equip_d_nohq.paa";
     uvSource="tex";
     class uvTransform
     {
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-    texture="x\kat_aceAdvMedical\addons\aceairway\models\accuvac\equip_smdi.paa";
+    texture="x\kat\addons\aceairway\models\accuvac\equip_smdi.paa";
     uvSource="tex";
     class uvTransform
     {

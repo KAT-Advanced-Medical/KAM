@@ -1,1 +1,1 @@
-#include "\x\kat_aceAdvMedical\addons\acebreathing\script_component.hpp"
+#include "\x\kat\addons\acebreathing\script_component.hpp"
