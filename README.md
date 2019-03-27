@@ -69,7 +69,7 @@ The build process is base on the [ACE3 build process](https://ace3mod.com/wiki/d
 + correctly setup project drive (P: drive)
 + download/clone kat_aceAdvMedical GitHub repo
 + switch to the tools/ folder and execute ```python setup.py```
-+ you can build by executing build.py from the tools folder
++ you can build by executing ```python build.py``` from the tools folder
 + for testing include your mod by adding ```-mod=x\kat``` as start parameter
 
 For building release builds see [ACE3 reference](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html).
