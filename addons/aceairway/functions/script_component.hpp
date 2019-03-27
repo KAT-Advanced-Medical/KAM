@@ -1,1 +1,1 @@
-#include "\x\kat_advAceMedical\addons\aceairway\script_component.hpp"
+#include "\x\kat\addons\aceairway\script_component.hpp"
