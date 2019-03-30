@@ -6,17 +6,17 @@ class CfgSounds {
         titles[]    = {};
     };
     class GVAR(NoHeartRate) {
-        name = QGVAR(HeartRate);
+        name = QGVAR(NoHeartRate);
         sound[] = {QPATHTOF(sounds\noheartrate.wav), db + 2, 1, 15};
         titles[]    = {};
     };
     class GVAR(NoShock) {
-        name = QGVAR(HeartRate);
+        name = QGVAR(NoShock);
         sound[] = {QPATHTOF(sounds\noshock.wav), db + 2, 1, 15};
         titles[]    = {};
     };
     class GVAR(TakePainKiller) {
-        name = QGVAR(HeartRate);
+        name = QGVAR(TakePainKiller);
         sound[] = {QPATHTOF(sounds\take_painkillers.wav), db + 2, 1, 15};
         titles[]    = {};
     };
