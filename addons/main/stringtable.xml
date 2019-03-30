@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="main">
+        <Key ID="STR_kat_main_URL">
+            <English>https://github.com/Katalam/kat_aceAdvMedical</English>
+            <German>https://github.com/Katalam/kat_aceAdvMedical</German>
+        </Key>
+    </Package>
+</Project>

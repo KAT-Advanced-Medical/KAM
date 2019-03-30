@@ -1,0 +1,12 @@
+PREP(addIVbag);
+PREP(addPassengersActions);
+PREP(attachStretcher);
+PREP(bandageRandomWound);
+PREP(conditionIV);
+PREP(conditionIVstand);
+PREP(getNumOpenWounds);
+PREP(init);
+PREP(limitWounds);
+PREP(removeIVbag);
+PREP(stretcher);
+PREP(treatmentIV);

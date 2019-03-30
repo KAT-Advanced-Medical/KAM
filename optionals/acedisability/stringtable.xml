@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="aceDisability">
+        <Key ID="STR_kat_aceDisability_SETTING_ENABLE">
+            <English>ACE-Disability activated?</English>
+            <German>ACE-Neurologisch aktivieren?</German>
+            <Polish>ACE- Disability</Polish>
+            <Spanish>¿Activar ACE-Discapacidad?</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Action_Display">
+            <English>Cut of clothes</English>
+            <German>Ausziehen</German>
+            <Polish>Przetnij ubrania</Polish>
+            <Spanish>Cortar ropa</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Action_Display_fasttraumasearch">
+            <English>Fast trauma search</English>
+            <German>Schnelle Trauma Untersuchung</German>
+            <Polish>Szybkie badanie urazowe</Polish>
+            <Spanish>Diagnóstico rápido de trauma </Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Action_Progress_fasttraumasearch">
+            <English>Examine</English>
+            <German>Untersuche</German>
+            <Polish>Zbadaj</Polish>
+            <Spanish>Examinar</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Action_Message">
+            <English>You cutted the uniform and found %1</English>
+            <German>Du hast seine Kleidung entfernt und findest %1</German>
+            <Polish>Przeciąłeś mundur i znalazłeś %1</Polish>
+            <Spanish>Cortaste el uniforme y encontraste %1</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Action_Message_1_nothing">
+            <English>nothing</English>
+            <German>nichts</German>
+            <Polish>nic</Polish>
+            <Spanish>nada</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Action_Message_1_bee">
+            <English>a bee sting</English>
+            <German>einen Bienenstich</German>
+            <Polish>Użądlenie osy</Polish>
+            <Spanish>una picadura de abeja</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Action_tracheaCut_Display">
+            <English>Cut the trachea</English>
+            <German>Luftröhrenschnitt</German>
+            <Polish>Przetnij tchawice</Polish>
+            <Spanish>Realizar traqueostomía</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Action_tracheaCut_Action">
+            <English>Cutting</English>
+            <German>Schnipp Schnapp</German>
+            <Polish>Przecinanie</Polish>
+            <Spanish>Cortando</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Module_Create_Bee">
+            <English>Create Bees</English>
+            <German>Erstelle Bienen</German>
+            <Polish>Stwórz osy</Polish>
+            <Spanish>Crear abejas</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Done">
+            <English>You finished the operation</English>
+            <German>Erfolgreicher Luftröhrenschnitt</German>
+            <Polish>Zakończyłeś operacje</Polish>
+            <Spanish>Finalizaste la operación</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Done_log">
+            <English>%1 finished the operation</English>
+            <German>%1 führte einen Luftröhrenschnitt durch</German>
+            <Polish>%1 zakończenia operacji</Polish>
+            <Spanish>%1 acabó la operación</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_Done_log2">
+            <English>Tracheacut</English>
+            <German>Luftröhrenschnitt</German>
+            <Polish>Tracheotomia</Polish>
+            <Spanish>traqueostomía</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_cut_log">
+            <English>%1 cutted the Uniform and found: %2</English>
+            <German>%1 schnitt die Uniform auf und fand: %2</German>
+            <Polish>%1 przecięto mundur i znaleziono: %2</Polish>
+            <Spanish>%1 cortó el uniforme y encontró: %2</Spanish>
+        </Key>
+        <Key ID="STR_kat_aceDisability_feelingbad">
+            <English>You're feeling sick</English>
+            <German>Du fühlst dich nicht gut</German>
+            <Polish>Czujesz się chory</Polish>
+            <Spanish>Te sientes enfermo</Spanish>
+        </Key>
+    </Package>
+</Project>
