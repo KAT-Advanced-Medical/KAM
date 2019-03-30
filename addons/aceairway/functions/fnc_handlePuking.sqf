@@ -30,7 +30,7 @@ if !(GVAR(enable)) exitWith {};
         if !(_unit getVariable ["ace_medical_airwayOccluded", false]) then {
             _unit setVariable ["ace_medical_airwayOccluded", true, true];
             if (GVAR(checkbox_puking_sound)) then {
-                playsound3D [selectRandom [QPATHTOF(sounds\puking1.wav), QPATHTOF(sounds\puking2.wav), QPATHTOF(sounds\puking3.wav)], _unit, false, getPosASL _unit, 8, 1, 15];
+                playsound3D [selectRandom [QPATHTOF_SOUND(sounds\puking1.wav), QPATHTOF_SOUND(sounds\puking2.wav), QPATHTOF_SOUND(sounds\puking3.wav)], _unit, false, getPosASL _unit, 8, 1, 15];
             };
         };
     };

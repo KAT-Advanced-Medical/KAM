@@ -31,7 +31,7 @@ if ((_oldMag select 1) > 1) then {
     [format [localize LSTRING(Pain_empty), getText (configFile >> "CfgMagazines" >> _mag >> "displayName")], 2.5, _player] call ace_common_fnc_displayTextStructured;
 };
 
-playsound3D [QPATHTOF(sounds\take_painkillers.wav), _player, false, getPosASL _player, 8, 1, 15];
+playsound3D [QPATHTOF_SOUND(sounds\take_painkillers.wav), _player, false, getPosASL _player, 8, 1, 15];
 
 if (isText (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "Medication" >> _className >> "itemClassName")) then {
     _mag = getText (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "Medication" >> _className >> "itemClassName");
