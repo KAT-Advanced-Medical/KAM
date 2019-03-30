@@ -728,7 +728,7 @@ def version_stamp_pboprefix(module,commitID):
 
 def main(argv):
     """Build an Arma addon suite in a directory from rules in a make.cfg file."""
-    print_blue("\nmake.py for Arma, modified for Kellerkompanie v{}".format(__version__))
+    print_blue("\nmake.py for Arma, modified for Katalam v{}".format(__version__))
 
     global project_version
     global arma3tools_path
