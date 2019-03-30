@@ -122,4 +122,7 @@
 #define MRAD_TO_DEG(d) ((d) / 17.45329252) // Conversion factor: 9 / (50 * PI)
 #define MOA_TO_RAD(d) ((d) * 0.00029088) // Conversion factor: PI / 10800
 
+#define QPATHTOF_SOUND(var1) QUOTE(PATHTOF2_SYS(PREFIX,COMPONENT,var1))
+#define QQPATHTOF_SOUND(var1) QUOTE(QPATHTOF_SOUND(var1))
+
 #include "script_debug.hpp"

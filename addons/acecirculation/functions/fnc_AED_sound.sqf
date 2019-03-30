@@ -11,13 +11,13 @@ if !(_caller getVariable ["adv_aceCPR_var_soundplayed", false]) then {
     _args spawn {
         params ["_caller", "_target"];
         // 8 seconds treatment time
-        playsound3D [QPATHTOF(sounds\standclear.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 1.2 seconds
+        playsound3D [QPATHTOF_SOUND(sounds\standclear.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 1.2 seconds
         sleep 1.5;
-        playsound3D [QPATHTOF(sounds\powerup.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 7.6 seconds
+        playsound3D [QPATHTOF_SOUND(sounds\powerup.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 7.6 seconds
         sleep 7.7; // 9.2 seconds
-        playsound3D [QPATHTOF(sounds\bump.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 0.8 seconds
+        playsound3D [QPATHTOF_SOUND(sounds\bump.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 0.8 seconds
         sleep 1; // 10.2 seconds
-        playsound3D [QPATHTOF(sounds\checkpulse.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 1.1 seconds
+        playsound3D [QPATHTOF_SOUND(sounds\checkpulse.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 1.1 seconds
         _caller setVariable ["adv_aceCPR_var_soundplayed", false];
     };
 };

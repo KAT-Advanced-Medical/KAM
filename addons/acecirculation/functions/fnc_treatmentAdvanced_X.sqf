@@ -29,18 +29,18 @@ _target setVariable [QGVAR(X), true, true];
 _player setVariable [QGVAR(use), true, true];
 
 // analyse sound feedback
-playsound3D [QPATHTOF(sounds\analyse.wav), _target, false, getPosASL _target, 5, 1, 15];
+playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _target, false, getPosASL _target, 5, 1, 15];
 
 // wait for the analyse and give the advise
 if (_target getVariable ["ace_medical_heartRate", 0] == 0) then {
     [{
         params ["_target"];
-        playsound3D [QPATHTOF(sounds\shock.wav), _target, false, getPosASL _target, 6, 1, 15];
+        playsound3D [QPATHTOF_SOUND(sounds\shock.wav), _target, false, getPosASL _target, 6, 1, 15];
     }, [_target], 2] call CBA_fnc_waitAndExecute;
 } else {
     [{
         params ["_target"];
-        playsound3D [QPATHTOF(sounds\noshock.wav), _target, false, getPosASL _target, 6, 1, 15];
+        playsound3D [QPATHTOF_SOUND(sounds\noshock.wav), _target, false, getPosASL _target, 6, 1, 15];
     }, [_target], 2] call CBA_fnc_waitAndExecute;
 };
 
@@ -88,12 +88,12 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     while {_target getVariable [QGVAR(X), false]} do {
         private _hr = _target getVariable ["ace_medical_heartRate", 80];
         if (_hr <= 0) then {
-            private _soundPath1 = _player getVariable [QGVAR(X_sound1), QPATHTOF(sounds\noheartrate.wav)];
+            private _soundPath1 = _player getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
             playsound3D [_soundPath1, _target, false, getPosASL _target, 2, 1, 15];
             sleep 1.478;
         } else {
             private _sleep = 60 / _hr;
-            private _soundPath2 = _player getVariable [QGVAR(X_sound2), QPATHTOF(sounds\heartrate.wav)];
+            private _soundPath2 = _player getVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav)];
             playsound3D [_soundPath2, _target, false, getPosASL _target, 5, 1, 15];
             sleep 0.25;
             sleep _sleep;

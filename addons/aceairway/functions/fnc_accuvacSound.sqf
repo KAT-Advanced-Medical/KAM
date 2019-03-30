@@ -22,7 +22,7 @@ if !(_caller getVariable [QGVAR(sound), false]) then {
     _caller setVariable [QGVAR(sound), true, true];
     (_this select 0) spawn {
         params ["_caller", "_target"];
-        playsound3D [QPATHTOF(sounds\suction.wav), _target, false, getPosASL _target, 6, 1, 15];
+        playsound3D [QPATHTOF_SOUND(sounds\suction.wav), _target, false, getPosASL _target, 6, 1, 15];
         sleep 7;
         _caller setVariable [QGVAR(sound), false, true];
     };
