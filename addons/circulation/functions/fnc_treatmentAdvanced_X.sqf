@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_acecirculation_fnc_treatmentAdvanced_X;
+ * [player, cursorTarget] call kat_circulation_fnc_treatmentAdvanced_X;
  *
  * Public: No
  */

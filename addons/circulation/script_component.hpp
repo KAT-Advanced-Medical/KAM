@@ -1,5 +1,5 @@
-#define COMPONENT acecirculation
-#define COMPONENT_BEAUTIFIED Circulation
+#define COMPONENT circulation
+#define COMPONENT_BEAUTIFIED KAT - Circulation
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * ['kat_Painkiller', player, cursorTarget, 'head', 'Painkillers'] call kat_acecirculation_fnc_removeItemfromMag;
+ * ['kat_Painkiller', player, cursorTarget, 'head', 'Painkillers'] call kat_circulation_fnc_removeItemfromMag;
  *
  * Public: No
  */

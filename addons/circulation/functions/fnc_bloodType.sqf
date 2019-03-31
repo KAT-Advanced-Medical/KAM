@@ -10,7 +10,7 @@
  * 0: Blood type <STRING>
  *
  * Example:
- * [cursorTarget] call kat_acecirculation_fnc_bloodType;
+ * [cursorTarget] call kat_circulation_fnc_bloodType;
  *
  * Public: No
  */

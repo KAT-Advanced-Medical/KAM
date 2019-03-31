@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_acecirculation_fnc_removeEffect_IV;
+ * [player] call kat_circulation_fnc_removeEffect_IV;
  *
  * Public: No
  */

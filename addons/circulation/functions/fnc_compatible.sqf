@@ -11,7 +11,7 @@
  * Compatible <BOOLEAN>
  *
  * Example:
- * [cursorTarget, 'BloodIV_AB'] call kat_acecirculation_fnc_compatible;
+ * [cursorTarget, 'BloodIV_AB'] call kat_circulation_fnc_compatible;
  *
  * Public: No
  */
