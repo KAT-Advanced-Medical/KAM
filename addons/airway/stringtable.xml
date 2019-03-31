@@ -273,5 +273,55 @@
             <Polish>Wymiociny(małe)</Polish>
             <Spanish>Vómito (Pequeño)</Spanish>
         </Key>
+        <Key ID="STR_kat_airway_npa_display">
+            <English>NasoPharyngeal Airway</English>
+            <German>Wendl-Tubus</German>
+        </Key>
+        <Key ID="STR_kat_airway_npa_desc">
+            <English>An NPA (NasoPharyngeal Airway) is a basic airway adjunct that enters through the nose.</English>
+            <German>Der Wendl-Tubus ist ein über die Nase einzuführender Tubus aus weichem Gummi oder Kunststoff, dessen Spitze im Rachen zum Liegen kommt.</German>
+        </Key>
+        <Key ID="STR_kat_airway_opa_display">
+            <English>OroPharyngeal Airway</English>
+            <German>Guedel-Tubus</German>
+        </Key>
+        <Key ID="STR_kat_airway_opa_desc">
+            <English>An OPA (OroPharyngeal Airway) is a basic airway adjunct that enters through the mouth.</English>
+            <German>Ein Guedel-Tubus ist ein Hilfsmittel zum Freihalten der Atemwege.</German>
+        </Key>
+        <Key ID="STR_kat_airway_end_display">
+            <English>Endotracheal Intubation</English>
+            <German>Endotrachealtubus</German>
+        </Key>
+        <Key ID="STR_kat_airway_end_desc">
+            <English>This is a definitive airway. It is the “best” type of airway that you can get but it is very invasive, usually for unconscious and really badly injured patients.</English>
+            <German>Der Endotrachealtubus ist ein Hilfsmittel zur Sicherung der Atemwege der mittels einer endotrachealen Intubation eingebracht wird.</German>
+        </Key>
+        <Key ID="STR_kat_airway_suction_display">
+            <English>Manual Suction Pump</English>
+            <German>Handsaugpumpe</German>
+        </Key>
+        <Key ID="STR_kat_airway_accuvac_display">
+            <English>Accuvac</English>
+            <German>Accuvac</German>
+        </Key>
+        <Key ID="STR_kat_airway_accuvac_desc">
+            <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
+            <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
+            <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
+            <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas con baterías, lo que le permiten movilidad en una emergencia médica.</Spanish>
+        </Key>
+        <Key ID="STR_kat_airway_airway">
+            <English>Airways</English>
+            <German>Atemwege</German>
+        </Key>
+        <Key ID="STR_kat_airway_headtilt">
+            <English>Head-tilt/chin-lift</English>
+            <German>Kopf überstrecken</German>
+        </Key>
+        <Key ID="STR_kat_airway_assessairway">
+            <English>Assess airway</English>
+            <German>Atemwege überprüfen</German>
+        </Key>
     </Package>
 </Project>

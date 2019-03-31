@@ -1,30 +1,50 @@
 class CfgVehicles {
     class Item_Base_F;
 
-    class kat_larynxItem: Item_Base_F {
+    class kat_npaItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= CSTRING(Larynx_Display);
+        displayName = CSTRING(npa_display);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(kat_larynx,1);
+            MACRO_ADDITEM(kat_npa,1);
         };
     };
-    class kat_guedelItem: Item_Base_F {
+    class kat_opaItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= CSTRING(Guedel_Display);
+        displayName = CSTRING(opa_display);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(kat_guedel,1);
+            MACRO_ADDITEM(kat_opa,1);
+        };
+    };
+    class kat_endItem: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(end_display);
+        author = "Katalam";
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(kat_end,1);
+        };
+    };
+    class kat_suctionItem: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(suction_display);
+        author = "Katalam";
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(kat_suction,1);
         };
     };
     class kat_accuvacItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= "Accuvac";
+        displayName = CSTRING(accuvac_display);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
@@ -43,8 +63,10 @@ class CfgVehicles {
     };
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems: TransportItems {
-            MACRO_ADDITEM(kat_larynx,15);
-            MACRO_ADDITEM(kat_guedel,15);
+            MACRO_ADDITEM(kat_npa,15);
+            MACRO_ADDITEM(kat_opa,15);
+            MACRO_ADDITEM(kat_end,15);
+            MACRO_ADDITEM(kat_suction,5);
             MACRO_ADDITEM(kat_accuvac,1);
         };
     };
@@ -53,46 +75,58 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_Actions {
             class ACE_Head {
-                class intubating {
-                    displayName = CSTRING(intubating);
+                class airway {
+                    displayName = CSTRING(airway);
                     icon = "";
-                    class Larynxtubus {
-                        displayName = CSTRING(Larynx_Display);
+                    class npa {
+                        displayName = CSTRING(npa_display);
                         distance = 2.0;
-                        condition = "[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_canTreatCached";
-                        statement = "[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_treatment";
+                        condition = "[_player, _target, 'head', 'npa'] call ace_medical_fnc_canTreatCached";
+                        statement = "[_player, _target, 'head', 'npa'] call ace_medical_fnc_treatment";
                         exceptions[] = {""};
                         showDisabled = 0;
                         icon = QPATHTOF(ui\larynx.paa);
                     };
-                    class Guedeltubus: Larynxtubus {
-                        displayName = CSTRING(Guedel_Display);
-                        condition = "[_player, _target, 'head', 'Guedeltubus'] call ace_medical_fnc_canTreatCached";
-                        statement = "[_player, _target, 'head', 'Guedeltubus'] call ace_medical_fnc_treatment";
+                    class opa: npa {
+                        displayName = CSTRING(opa_display);
+                        condition = "[_player, _target, 'head', 'opa'] call ace_medical_fnc_canTreatCached";
+                        statement = "[_player, _target, 'head', 'opa'] call ace_medical_fnc_treatment";
                         exceptions[] = {""};
                         icon = QPATHTOF(ui\guedel.paa);
                     };
-                    class Overstretch: Larynxtubus {
-                        displayName = CSTRING(overstretch);
-                        condition = "[_player, _target, 'head', 'Overstretch'] call ace_medical_fnc_canTreatCached";
-                        statement = "[_player, _target, 'head', 'Overstretch'] call ace_medical_fnc_treatment";
+                    class end: npa {
+                        displayName = CSTRING(end_display);
+                        condition = "[_player, _target, 'head', 'end'] call ace_medical_fnc_canTreatCached";
+                        statement = "[_player, _target, 'head', 'end'] call ace_medical_fnc_treatment";
+                        exceptions[] = {""};
+                        icon = QPATHTOF(ui\guedel.paa);
+                    };
+                    class headtilt: npa {
+                        displayName = CSTRING(headtilt);
+                        condition = "[_player, _target, 'head', 'headtilt'] call ace_medical_fnc_canTreatCached";
+                        statement = "[_player, _target, 'head', 'headtilt'] call ace_medical_fnc_treatment";
                         exceptions[] = {""};
                         icon = "";
                     };
-                };
-                class vacuum {
-                    displayName = CSTRING(vacuum);
-                    icon = "";
-                    class Accuvac {
-                        displayName = "Accuvac";
+                    class suction {
+                        displayName = CSTRING(suction_display);
                         distance = 2.0;
-                        condition = "[_player, _target, 'head', 'Accuvac'] call ace_medical_fnc_canTreatCached";
-                        statement = "[_player, _target, 'head', 'Accuvac'] call ace_medical_fnc_treatment";
+                        condition = "[_player, _target, 'head', 'suction'] call ace_medical_fnc_canTreatCached";
+                        statement = "[_player, _target, 'head', 'suction'] call ace_medical_fnc_treatment";
+                        exceptions[] = {""};
+                        showDisabled = 0;
+                        icon = "";
+                    };
+                    class accuvac {
+                        displayName = CSTRING(accuvac_display);
+                        distance = 2.0;
+                        condition = "[_player, _target, 'head', 'accuvac'] call ace_medical_fnc_canTreatCached";
+                        statement = "[_player, _target, 'head', 'accuvac'] call ace_medical_fnc_treatment";
                         exceptions[] = {""};
                         showDisabled = 0;
                         icon = QPATHTOF(ui\accuvac.paa);
                     };
-                    class TurnAround: Accuvac {
+                    class TurnAround: accuvac {
                         displayName = CSTRING(turnaround);
                         condition = "[_player, _target, 'head', 'TurnAround'] call ace_medical_fnc_canTreatCached";
                         statement = "[_player, _target, 'head', 'TurnAround'] call ace_medical_fnc_treatment";
@@ -102,7 +136,7 @@ class CfgVehicles {
                 };
                 class CheckPulse;
                 class CheckAirway: CheckPulse {
-                    displayName = CSTRING(checkAirway);
+                    displayName = CSTRING(assessairway);
                     condition = "[_player, _target, 'head', 'CheckAirway'] call ace_medical_fnc_canTreatCached";
                     statement = "[_player, _target, 'head', 'CheckAirway'] call ace_medical_fnc_treatment";
                     exceptions[] = {""};
@@ -112,46 +146,58 @@ class CfgVehicles {
             class ACE_MainActions {
                 class Medical {
                     class ACE_Head {
-                        class intubating {
-                            displayName = CSTRING(intubating);
+                        class airway {
+                            displayName = CSTRING(airway);
                             icon = "";
-                            class Larynxtubus {
-                                displayName = CSTRING(Larynx_Display);
+                            class npa {
+                                displayName = CSTRING(npa_display);
                                 distance = 2.0;
-                                condition = "[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_canTreatCached";
-                                statement = "[_player, _target, 'head', 'Larynxtubus'] call ace_medical_fnc_treatment";
+                                condition = "[_player, _target, 'head', 'npa'] call ace_medical_fnc_canTreatCached";
+                                statement = "[_player, _target, 'head', 'npa'] call ace_medical_fnc_treatment";
                                 exceptions[] = {""};
                                 showDisabled = 0;
                                 icon = QPATHTOF(ui\larynx.paa);
                             };
-                            class Guedeltubus: Larynxtubus {
-                                displayName = CSTRING(Guedel_Display);
-                                condition = "[_player, _target, 'head', 'Guedeltubus'] call ace_medical_fnc_canTreatCached";
-                                statement = "[_player, _target, 'head', 'Guedeltubus'] call ace_medical_fnc_treatment";
+                            class opa: npa {
+                                displayName = CSTRING(opa_display);
+                                condition = "[_player, _target, 'head', 'opa'] call ace_medical_fnc_canTreatCached";
+                                statement = "[_player, _target, 'head', 'opa'] call ace_medical_fnc_treatment";
                                 exceptions[] = {""};
                                 icon = QPATHTOF(ui\guedel.paa);
                             };
-                            class Overstretch: Larynxtubus {
-                                displayName = CSTRING(overstretch);
-                                condition = "[_player, _target, 'head', 'Overstretch'] call ace_medical_fnc_canTreatCached";
-                                statement = "[_player, _target, 'head', 'Overstretch'] call ace_medical_fnc_treatment";
+                            class end: npa {
+                                displayName = CSTRING(end_display);
+                                condition = "[_player, _target, 'head', 'end'] call ace_medical_fnc_canTreatCached";
+                                statement = "[_player, _target, 'head', 'end'] call ace_medical_fnc_treatment";
+                                exceptions[] = {""};
+                                icon = QPATHTOF(ui\guedel.paa);
+                            };
+                            class headtilt: npa {
+                                displayName = CSTRING(headtilt);
+                                condition = "[_player, _target, 'head', 'headtilt'] call ace_medical_fnc_canTreatCached";
+                                statement = "[_player, _target, 'head', 'headtilt'] call ace_medical_fnc_treatment";
                                 exceptions[] = {""};
                                 icon = "";
                             };
-                        };
-                        class vacuum {
-                            displayName = CSTRING(vacuum);
-                            icon = "";
-                            class Accuvac {
-                                displayName = "Accuvac";
+                            class suction {
+                                displayName = CSTRING(suction_display);
                                 distance = 2.0;
-                                condition = "[_player, _target, 'head', 'Accuvac'] call ace_medical_fnc_canTreatCached";
-                                statement = "[_player, _target, 'head', 'Accuvac'] call ace_medical_fnc_treatment";
+                                condition = "[_player, _target, 'head', 'suction'] call ace_medical_fnc_canTreatCached";
+                                statement = "[_player, _target, 'head', 'suction'] call ace_medical_fnc_treatment";
+                                exceptions[] = {""};
+                                showDisabled = 0;
+                                icon = "";
+                            };
+                            class accuvac {
+                                displayName = CSTRING(accuvac_display);
+                                distance = 2.0;
+                                condition = "[_player, _target, 'head', 'accuvac'] call ace_medical_fnc_canTreatCached";
+                                statement = "[_player, _target, 'head', 'accuvac'] call ace_medical_fnc_treatment";
                                 exceptions[] = {""};
                                 showDisabled = 0;
                                 icon = QPATHTOF(ui\accuvac.paa);
                             };
-                            class TurnAround: Accuvac {
+                            class TurnAround: accuvac {
                                 displayName = CSTRING(turnaround);
                                 condition = "[_player, _target, 'head', 'TurnAround'] call ace_medical_fnc_canTreatCached";
                                 statement = "[_player, _target, 'head', 'TurnAround'] call ace_medical_fnc_treatment";
@@ -161,7 +207,7 @@ class CfgVehicles {
                         };
                         class CheckPulse;
                         class CheckAirway: CheckPulse {
-                            displayName = CSTRING(checkAirway);
+                            displayName = CSTRING(assessairway);
                             condition = "[_player, _target, 'head', 'CheckAirway'] call ace_medical_fnc_canTreatCached";
                             statement = "[_player, _target, 'head', 'CheckAirway'] call ace_medical_fnc_treatment";
                             exceptions[] = {""};

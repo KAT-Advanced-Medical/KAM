@@ -5,14 +5,18 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            kat_guedelItem,
-            kat_larynxItem,
+            kat_opaItem,
+            kat_npaItem,
+            kat_endItem,
+            kat_suctionItem,
             kat_accuvacItem,
             kat_vomit
         };
         weapons[] = {
-            kat_guedel,
-            kat_larynx,
+            kat_opa,
+            kat_npa,
+            kat_end,
+            kat_suction,
             kat_accuvac
         };
         magazines[] = {};
