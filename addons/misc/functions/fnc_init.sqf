@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_acemisc_fnc_init;
+ * [player] call kat_misc_fnc_init;
  *
  * Public: No
  */

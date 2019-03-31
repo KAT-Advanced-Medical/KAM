@@ -1,4 +1,4 @@
-#define COMPONENT acemisc
+#define COMPONENT misc
 #define COMPONENT_BEAUTIFIED KAT - MISC
 #include "\x\kat\addons\main\script_mod.hpp"
 

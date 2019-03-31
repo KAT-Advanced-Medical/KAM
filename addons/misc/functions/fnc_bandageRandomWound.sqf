@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_acemisc_fnc_bandageRandomWound;
+ * [cursorTarget] call kat_misc_fnc_bandageRandomWound;
  *
  * Public: No
  */
