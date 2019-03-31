@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * call kat_acebreathing_fnc_treatmentAdvanced_removePulseoximeter;
+ * call kat_breathing_fnc_treatmentAdvanced_removePulseoximeter;
  *
  * Public: No
  */

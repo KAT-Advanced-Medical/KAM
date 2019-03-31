@@ -1,5 +1,5 @@
-#define COMPONENT acebreathing
-#define COMPONENT_BEAUTIFIED KAT - ACE Breathing
+#define COMPONENT breathing
+#define COMPONENT_BEAUTIFIED KAT - Breathing
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

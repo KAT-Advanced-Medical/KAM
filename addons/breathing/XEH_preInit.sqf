@@ -8,7 +8,7 @@ PREP_RECOMPILE_END;
 
 #define CBA_SETTINGS_CAT "KAT - ADV Medical: Breathing"
 
-//Enable aceBreathing
+//Enable breathing
 [
     QGVAR(enable),
     "CHECKBOX",
@@ -18,7 +18,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Enable aceBreathing death timer for airway injuries
+//Enable breathing death timer for airway injuries
 [
     QGVAR(death_timer_enable),
     "CHECKBOX",
@@ -28,7 +28,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// aceBreathing SpO2 add & remove value small
+// breathing SpO2 add & remove value small
 [
     QGVAR(spo2_small_value),
     "SLIDER",
@@ -38,7 +38,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// aceBreathing SpO2 add % remove value big
+// breathing SpO2 add % remove value big
 [
     QGVAR(spo2_big_value),
     "SLIDER",
@@ -48,7 +48,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// aceBreathing probability for a pneumothorax
+// breathing probability for a pneumothorax
 // a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
 [
     QGVAR(pneumothorax),

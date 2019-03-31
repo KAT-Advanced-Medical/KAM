@@ -12,15 +12,15 @@
  * None
  *
  * Example:
- * call kat_acebreathing_fnc_treatmentAdvanced_pulseoximeter;
+ * [player, cursorTarget] call kat_breathing_fnc_treatmentAdvanced_chestSealLocal;
  *
  * Public: No
  */
 
 params ["_player", "_target"];
 
-if (local _target) then {
-    ["treatmentPulseoximeter", [_player, _target]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentPulseoximeter", [_player, _target], _target] call CBA_fnc_targetEvent;
-};
+_target setVariable ["ace_medical_airwayCollapsed", false, true];
+
+
+
+[_target, "activity", LSTRING(pneumothorax), [[_player] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;

@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_acebreathing_fnc_treatmentAdvanced_pulseoximeterLocal;
+ * [player, cursorTarget] call kat_breathing_fnc_treatmentAdvanced_pulseoximeterLocal;
  *
  * Public: No
  */
@@ -28,7 +28,7 @@ _target setVariable [QGVAR(pulseoximeter), true, true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    [_target, "quick_view", LSTRING(pulseoxi_Log)] call EFUNC(acecirculation,removeLog);
+    [_target, "quick_view", LSTRING(pulseoxi_Log)] call EFUNC(circulation,removeLog);
     [_target, "quick_view", LSTRING(pulseoxi_Log), [round (_target getVariable ["ace_medical_heartRate", 80]),
         round (_target getVariable ["ace_medical_airwayStatus", 100])]] call ace_medical_fnc_addToLog;
 }, 1, [_target]] call CBA_fnc_addPerFrameHandler;

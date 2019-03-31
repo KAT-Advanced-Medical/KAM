@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [bob] call kat_acebreathing_fnc_init
+ * [bob] call kat_breathing_fnc_init
  *
  * Public: No
  */
