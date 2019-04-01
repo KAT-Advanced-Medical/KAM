@@ -2,7 +2,7 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
-    class kat_npa: ACE_ItemCore {
+    class kat_nasopharyngeal: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName = CSTRING(npa_display);
@@ -14,7 +14,7 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class kat_opa: ACE_ItemCore {
+    class kat_oropharyngeal: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName = CSTRING(opa_display);
@@ -26,7 +26,7 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class kat_end: ACE_ItemCore {
+    class kat_endotracheal: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName = CSTRING(end_display);

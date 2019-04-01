@@ -5,17 +5,17 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            kat_opaItem,
-            kat_npaItem,
-            kat_endItem,
+            kat_nasopharyngealItem,
+            kat_oropharyngealItem,
+            kat_endotrachealItem,
             kat_suctionItem,
             kat_accuvacItem,
             kat_vomit
         };
         weapons[] = {
-            kat_opa,
-            kat_npa,
-            kat_end,
+            kat_nasopharyngeal,
+            kat_oropharyngeal,
+            kat_endotracheal,
             kat_suction,
             kat_accuvac
         };
@@ -38,4 +38,4 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
-#include "ACE_Medical_Actions.hpp"
+#include "ACE_Medical_Treatment_Actions.hpp"
