@@ -37,7 +37,6 @@ class ACE_Medical_Treatment_Actions {
     class Accuvac: suction {
         displayName = CSTRING(accuvac_display);
         items[] = {"kat_accuvac"};
-        //callbackProgress = QUOTE(_this call FUNC(accuvacSound));
         sounds[] = {{QPATHTOF_SOUND(sounds\suction.wav), 1, 1, 50}};
     };
     class HeadTilt: Nasopharyngeal {
