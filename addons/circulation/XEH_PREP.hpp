@@ -1,5 +1,4 @@
 //PREP(AED_sound);
-PREP(bloodType);
 PREP(canCheckDogtag);
 PREP(compatible);
 PREP(getDogtagData);
@@ -9,6 +8,5 @@ PREP(init);
 PREP(onCloseDialog);
 PREP(removeEffect_IV);
 PREP(removeItemfromMag);
-PREP(removeLog);
-PREP(treatmentAdvanced_IV);
-PREP(treatmentAdvanced_X);
+PREP(treatmentIV);
+//PREP(treatmentX);

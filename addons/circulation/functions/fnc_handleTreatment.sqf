@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Handle the treatment for the patient cause calling two functions in one action isn't allowed.
+ * Handle the treatment for the patient.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -17,13 +17,12 @@
 
 params ["_player", "_target", "_selectionName", "_className", "_items"];
 
-private _return = false;
+false;
 
-[_player, _target, _selectionName, _className, _items] call ace_medical_fnc_treatmentIV;
+[_player, _target, _selectionName, _className, _items] call ace_medical_treatment_fnc_treatmentIV;
 
 if ([_target, _className] call FUNC(compatible)) exitWith {};
 
-[_className, _target] call FUNC(treatmentAdvanced_IV);
+[_className, _target] call FUNC(treatmentIV);
 
-_return = true;
-_return;
+true;

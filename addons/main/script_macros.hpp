@@ -125,4 +125,7 @@
 #define QPATHTOF_SOUND(var1) QUOTE(PATHTOF2_SYS(PREFIX,COMPONENT,var1))
 #define QQPATHTOF_SOUND(var1) QUOTE(QPATHTOF_SOUND(var1))
 
+// medical things
+#define BLOOD_TYPE(unit) (unit getVariable [QEGVAR(circulation,bloodtype),"O"])
+
 #include "script_debug.hpp"

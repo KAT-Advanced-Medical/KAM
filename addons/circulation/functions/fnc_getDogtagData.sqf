@@ -30,7 +30,7 @@ private _targetName = [_target, false, true] call ace_common_fnc_getName;
 private _dogTagData = [
     _targetName,
     _target call FUNC(groupID), //EDIT changed called function, old: ace_dogtags_fnc_ssn
-    _target call FUNC(bloodType) //EDIT by Katalam switch name to target objective //EDIT 2 changed called function, old: ace_dogtags_fnc_bloodType
+    BLOOD_TYPE(_target) //EDIT by Katalam switch name to target objective //EDIT 2 changed called function, old: ace_dogtags_fnc_bloodType
 ];
 // Store it
 _target setVariable ["ace_dogtags_dogtagData", _dogTagData, true];

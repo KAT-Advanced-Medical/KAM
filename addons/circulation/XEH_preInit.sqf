@@ -11,7 +11,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(enable),
     "CHECKBOX",
-    localize LSTRING(SETTING_ENABLE),
+    localize LSTRING(SETTING_enable),
     CBA_SETTINGS_CAT,
     [true],
     true
@@ -22,7 +22,7 @@ private _type = round random(3);
 [
     QGVAR(bloodgroup),
     "LIST",
-    localize LSTRING(client_bt),
+    localize LSTRING(SETTING_bloodtype),
     CBA_SETTINGS_CAT,
     [["A", "B", "AB", "O"], ["A", "B", "AB", "O"], _type],
     2,

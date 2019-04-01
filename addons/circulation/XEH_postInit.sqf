@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
-["treatmentIVfalse", {_this call FUNC(treatmentAdvanced_IV)}] call CBA_fnc_addEventHandler;
-["IVreset", {_this call FUNC(removeEffect_IV)}] call CBA_fnc_addEventHandler;
+[QGVAR(treatmentIV), FUNC(treatmentIV)] call CBA_fnc_addEventHandler;
+[QGVAR(removeEffect_IV), FUNC(removeEffect_IV)] call CBA_fnc_addEventHandler;
 
 if (hasInterface) then {
 
