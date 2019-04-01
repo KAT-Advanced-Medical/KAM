@@ -1,9 +1,8 @@
 PREP(adjustSpo2);
 PREP(handleBreathing);
-PREP(handlePulmoHit);
+PREP(hasPulseoxiAppliedTo);
 PREP(init);
-PREP(treatmentAdvanced_chestSeal);
-PREP(treatmentAdvanced_chestSealLocal);
-PREP(treatmentAdvanced_pulseoximeter);
-PREP(treatmentAdvanced_pulseoximeterLocal);
-PREP(treatmentAdvanced_removePulseoximeter);
+PREP(removeLog);
+PREP(treatmentPulseOximeter);
+PREP(treatmentPulseOximeterLocal);
+PREP(treatmentPulseOximeterRemove);

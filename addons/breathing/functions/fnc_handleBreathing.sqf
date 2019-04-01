@@ -20,7 +20,7 @@ params [["_unit", objNull, [objNull]]];
 if !(GVAR(enable)) exitWith {};
 
 if (!local _unit) then {
-    ["handleBreathing", [_unit], _unit] call CBA_fnc_targetEvent;
+    [QGVAR(handleBreathing), [_unit], _unit] call CBA_fnc_targetEvent;
 };
 
 [{
@@ -30,8 +30,8 @@ if (!local _unit) then {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    private _collapsed = _unit getVariable ["ace_medical_airwayCollapsed", false];
-    private _status = _unit getVariable ["ace_medical_airwayStatus", 50];
+    private _collapsed = _unit getVariable [QEGVAR(airway,collapsed), false];
+    private _status = _unit getVariable [QGVAR(status), 50];
 
     if ([_unit] call ace_common_fnc_isAwake && !_collapsed) exitWith {
         if (_status >= 100) exitWith {
@@ -46,7 +46,7 @@ if (!local _unit) then {
     };
 
     private _o2 = _unit getVariable [QGVAR(o2), false];
-    private _occluded = _unit getVariable ["ace_medical_airwayOccluded", false];
+    private _occluded = _unit getVariable [QEGVAR(airway,occluded), false];
     private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
 
     if (_collapsed) exitWith {
@@ -64,14 +64,14 @@ if (!local _unit) then {
         };
     };
 
-    private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
-    private _airwaySafed = _unit getVariable [QEGVAR(airway,airway), false];
+    private _headtilt = _unit getVariable [QEGVAR(airway,headtilt), false];
+    private _airwaySafed = (_unit getVariable [QEGVAR(airway,airway), [false, ""]]) select 0;
 
     switch (true) do {
-        case (_overstretch && !_occluded): {
+        case (_headtilt && !_occluded): {
             [_unit, GVAR(spo2_small_value), true] call FUNC(adjustSpo2);
         };
-        case (_overstretch && _o2 && !_occluded): {
+        case (_headtilt && _o2 && !_occluded): {
             [_unit, GVAR(spo2_big_value), true] call FUNC(adjustSpo2);
         };
         case (_airwaySafed && _o2): {

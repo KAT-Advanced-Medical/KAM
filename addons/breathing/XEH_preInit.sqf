@@ -48,15 +48,4 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// breathing probability for a pneumothorax
-// a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
-[
-    QGVAR(pneumothorax),
-    "SLIDER",
-    localize LSTRING(SETTING_pneumothorax),
-    CBA_SETTINGS_CAT,
-    [0, 100, 0, 0],
-    true
-] call CBA_Settings_fnc_init;
-
 ADDON = true;
