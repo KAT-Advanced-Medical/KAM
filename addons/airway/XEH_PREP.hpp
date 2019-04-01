@@ -1,6 +1,5 @@
 PREP(accuvacSound);
 PREP(checkAirway);
-PREP(displayPatientInformation);
 PREP(handleAirway);
 PREP(handleDie);
 PREP(handlePuking);
@@ -12,4 +11,4 @@ PREP(treatmentAdvanced_Accuvac);
 PREP(treatmentAdvanced_AccuvacLocal);
 PREP(treatmentAdvanced_overstretchHead);
 PREP(treatmentAdvanced_turnaroundHead);
-PREP(updateUIInfo);
+PREP(updateInjuryList);
