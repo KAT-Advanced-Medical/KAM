@@ -2,7 +2,7 @@
 
 class CfgVehicles {
     class WeaponHolder_Single_limited_item_F;
-    class adv_aceCPR_AEDItem;
+    //class adv_aceCPR_AEDItem;
     class NATO_Box_Base;
     class ACE_medicalSupplyCrate: NATO_Box_Base {
         class TransportItems;
@@ -33,9 +33,11 @@ class CfgVehicles {
 
 
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
+        /*
         class TransportItems: TransportItems {
             MACRO_ADDITEM(kat_X_AED,1);
         };
+        */
         class TransportMagazines: TransportMagazines {
             MACRO_ADDMAGAZINE(kat_Painkiller,10);
         };
@@ -165,6 +167,7 @@ class CfgVehicles {
                 };
             };
             class ACE_Equipment {
+                /*
                 class removeSound {
                     displayName = CSTRING(X_Action_removeSound);
                     condition = QUOTE('kat_X_AED' in (items _player) && !((_player getVariable QQGVAR(X_sound1)) isEqualTo ''));
@@ -181,6 +184,7 @@ class CfgVehicles {
                     exceptions[] = {"isNotInside", "isNotSitting"};
                     icon = "";
                 };
+                */
                 class openCrossPanel {
                     displayName = CSTRING(open_crosspanel);
                     condition = "('kat_crossPanel' in (uniformItems _player)) || ('kat_crossPanel' in (vestItems _player))";
