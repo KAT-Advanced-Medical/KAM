@@ -39,7 +39,7 @@ class CfgVehicles {
         };
         */
         class TransportMagazines: TransportMagazines {
-            MACRO_ADDMAGAZINE(kat_Painkiller,10);
+            MACRO_ADDMAGAZINE(kat_painkiller,10);
         };
     };
     class kat_medicalSupplyCrate: ACE_medicalSupplyCrate {

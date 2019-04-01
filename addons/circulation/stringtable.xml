@@ -289,5 +289,35 @@
             <Polish>Grupa krwi</Polish>
             <Spanish>Grupo sanguíneo</Spanish>
         </Key>
+        <Key ID="STR_kat_circulation_painkillers_display">
+            <English>Painkillers</English>
+            <German>Schmerzmittel</German>
+            <Polish>Lek przeciwbólowy</Polish>
+            <Spanish>Analgésicos</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_painkillers_desc">
+            <English>An analgesic used to combat lightly to moderate pain experiences.</English>
+            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
+            <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_crosspanel_desc">
+            <English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
+            <German>Eine falsche Kombination von Spender- und Empfängerblut kann sogar tödliche Folgen haben.</German>
+            <Polish>Zła kombinacja krwi dawcy i biorcy może mieć śmiertelne konsekwencje.</Polish>
+            <Spanish>Una mala combinación de donante y receptor puede traer consecuencias fatales.</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_painkillers_inject">
+            <English>Take Painkillers</English>
+            <German>Schlucke Schmerzmittel</German>
+            <Polish>Użyj leku przeciwbólowego</Polish>
+            <Spanish>Usar analgésico</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_painkillers_using">
+            <English>Using</English>
+            <German>Schlucke</German>
+            <Polish>Używanie</Polish>
+            <Spanish>Usando</Spanish>
+        </Key>
     </Package>
 </Project>

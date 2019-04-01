@@ -5,12 +5,12 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            kat_PainkillerItem,
+            kat_painkillerItem,
             //kat_X_AEDItem,
             kat_bloodBankCrate
         };
         weapons[] = {
-            kat_Painkiller,
+            kat_painkiller,
             kat_bloodIV_O,
             kat_bloodIV_A,
             kat_bloodIV_B,
@@ -27,7 +27,9 @@ class CfgPatches {
             //kat_X_AED,
             kat_crossPanel
         };
-        magazines[] = { };
+        magazines[] = {
+            kat_painkiller
+        };
         requiredAddons[] = {
             "ace_medical",
             "ace_dogtags",
