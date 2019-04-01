@@ -21,7 +21,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Endotracheal: Nasopharyngeal {
         displayName = CSTRING(end_display);
-        requiredMedic = 0;
+        requiredMedic = 2;
         items[] = {"kat_endotracheal"};
         callbackSuccess = QFUNC(treatmentAirway);
     };

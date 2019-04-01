@@ -111,23 +111,11 @@
             <Polish>Potrzebne odsysanie</Polish>
             <Spanish>Requiere succión médica</Spanish>
         </Key>
-        <Key ID="STR_kat_airway_Airway_already">
-            <English>There is already a airway management</English>
-            <German>Atemwegsmanagement wurde bereits durchgeführt</German>
-            <Polish>Drogi oddechowe są udrażniane</Polish>
-            <Spanish>El manejo de vías aéreas ya se ha llevado a cabo</Spanish>
-        </Key>
         <Key ID="STR_kat_airway_activity">
             <English>%1 put a: %2</English>
             <German>%1 setze einen: %2</German>
             <Polish>%1 umieścił: %2</Polish>
             <Spanish>%1 puso un: %2</Spanish>
-        </Key>
-        <Key ID="STR_kat_airway_Airway_NA">
-            <English>Airwaymanagement not available</English>
-            <German>Atemwegsmanagement nicht möglich</German>
-            <Polish>Udrażnianie dróg oddechowych jest niedostępne</Polish>
-            <Spanish>El manejo de vías aéreas no está disponible</Spanish>
         </Key>
         <Key ID="STR_kat_airway_overstretch">
             <English>Hyperextending Head</English>
@@ -322,6 +310,24 @@
         <Key ID="STR_kat_airway_assessairway">
             <English>Assess airway</English>
             <German>Atemwege überprüfen</German>
+        </Key>
+        <Key ID="STR_kat_airway_tube_na">
+            <English>Airwaymanagement not available</English>
+            <German>Atemwegsmanagement nicht möglich</German>
+            <Polish>Udrażnianie dróg oddechowych jest niedostępne</Polish>
+            <Spanish>El manejo de vías aéreas no está disponible</Spanish>
+        </Key>
+        <Key ID="STR_kat_airway_tube_already">
+            <English>There is already a airway management</English>
+            <German>Atemwegsmanagement wurde bereits durchgeführt</German>
+            <Polish>Drogi oddechowe są udrażniane</Polish>
+            <Spanish>El manejo de vías aéreas ya se ha llevado a cabo</Spanish>
+        </Key>
+        <Key ID="STR_kat_airway_tube_log">
+            <English>%1 inserted a %2</English>
+            <German>%1 intubierte mit %2</German>
+            <Polish>%1 intubowany z %2</Polish>
+            <Spanish>%1 intubado con %2</Spanish>
         </Key>
     </Package>
 </Project>
