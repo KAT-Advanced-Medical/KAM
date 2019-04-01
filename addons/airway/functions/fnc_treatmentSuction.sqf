@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Airway Management for collapsing
+ * Airway Management for occluding
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -13,17 +13,17 @@
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [player, cursorTarget, "head", "npa"] call kat_airway_fnc_treatment_airway;
+ * [player, cursorTarget] call kat_airway_fnc_treatmentSuction;
  *
- * Public: No
+ * Public: Yes
  */
 
 params ["_caller", "_target", "_bodyPart", "_className"];
 
 if (local _target) then {
-    [QGVAR(treatmentAirwayLocal), [_caller, _target, _bodyPart, _className]] call CBA_fnc_localEvent;
+    [QGVAR(treatmentSuctionLocal), [_caller, _target, _bodyPart, _className]] call CBA_fnc_localEvent;
 } else {
-    [QGVAR(treatmentAirwayLocal), [_caller, _target, _bodyPart, _className], _target] call CBA_fnc_targetEvent;
+    [QGVAR(treatmentSuctionLocal), [_caller, _target, _bodyPart, _className], _target] call CBA_fnc_targetEvent;
 };
 
 true;

@@ -2,7 +2,8 @@
 
 if !(GVAR(enable)) exitWith {};
 
-["treatmentAirway", {_this call FUNC(treatmentAirwayLocal)}] call CBA_fnc_addEventHandler;
+[QGVAR(treatmentAirwayLocal), FUNC(treatmentAirwayLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(treatmentSuctionLocal), FUNC(treatmentSuctionLocal)] call CBA_fnc_addEventHandler;
 
 ["ace_unconscious", {
     params ["_unit", "_state"];

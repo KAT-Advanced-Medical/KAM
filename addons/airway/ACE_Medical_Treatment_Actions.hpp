@@ -32,15 +32,11 @@ class ACE_Medical_Treatment_Actions {
         itemConsumed = 0;
         condition = QFUNC(canSuction);
         callbackSuccess = QFUNC(treatmentSuction);
-        //callbackProgress = QUOTE(_this call FUNC(accuvacSound));
         //sounds[] = {{QPATHTO_R(sounds\suction.wav), 1, 1, 50}};
     };
     class Accuvac: suction {
         displayName = CSTRING(accuvac_display);
-        treatmentTime = 8;
         items[] = {"kat_accuvac"};
-        itemConsumed = 0;
-        callbackSuccess = QFUNC(treatmentSuction);
         //callbackProgress = QUOTE(_this call FUNC(accuvacSound));
         sounds[] = {{QPATHTOF_SOUND(sounds\suction.wav), 1, 1, 50}};
     };
@@ -55,9 +51,9 @@ class ACE_Medical_Treatment_Actions {
     class TurnAround: suction {
         displayName = CSTRING(turnaround);
         displayNameProgress = CSTRING(turnaround_action);
+        treatmentTime = 2.5;
         requiredMedic = 0;
         items[] = {};
-        callbackSuccess = QFUNC(treatmentTurnAround);
     };
     class CheckPulse;
     class CheckAirway: CheckPulse {
