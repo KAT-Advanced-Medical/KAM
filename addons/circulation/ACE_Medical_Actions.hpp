@@ -28,7 +28,7 @@ class ACE_Medical_Actions {
         };
 
         #include "Blood_Medical.hpp"
-
+        /*
         class Defibrillator: CPR {
             items[] = {{"adv_aceCPR_AED", "kat_X_AED"}};
             treatmentTime = 10;
@@ -53,5 +53,6 @@ class ACE_Medical_Actions {
             callbackProgress = "";
             callbackSuccess = QUOTE(_target setVariable [ARR_3(QQGVAR(X), false, true)]; _player setVariable [ARR_3(QQGVAR(use), false, true)]);
         };
+        */
     };
 };

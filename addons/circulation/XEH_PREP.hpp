@@ -1,4 +1,4 @@
-PREP(AED_sound);
+//PREP(AED_sound);
 PREP(bloodType);
 PREP(canCheckDogtag);
 PREP(compatible);

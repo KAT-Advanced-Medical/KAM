@@ -19,6 +19,7 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_Painkiller,1);
         };
     };
+    /*
     class kat_X_AEDItem: adv_aceCPR_AEDItem {
         scope = 2;
         scopeCurator = 2;
@@ -28,7 +29,7 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_X_AED,1);
         };
     };
-
+    */
 
 
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {

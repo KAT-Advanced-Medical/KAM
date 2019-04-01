@@ -6,7 +6,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         units[] = {
             kat_PainkillerItem,
-            kat_X_AEDItem,
+            //kat_X_AEDItem,
             kat_bloodBankCrate
         };
         weapons[] = {
@@ -24,7 +24,7 @@ class CfgPatches {
             kat_bloodIV_B_250,
             kat_bloodIV_AB_250,
             kat_PainkillerItem,
-            kat_X_AED,
+            //kat_X_AED,
             kat_crossPanel
         };
         magazines[] = { };
@@ -32,8 +32,8 @@ class CfgPatches {
             "ace_medical",
             "ace_dogtags",
             "cba_settings",
-            "kat_main",
-            "adv_aceCPR"
+            "kat_main"
+            //"adv_aceCPR"
         };
         author = "Katalam";
         authors[] = {"Katalam"};
