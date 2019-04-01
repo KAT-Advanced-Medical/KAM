@@ -1,18 +1,16 @@
-class ACE_Medical_Actions {
-    class Advanced {
-        class FieldDressing;
+class ACE_Medical_Treatment_Actions {
         class Morphine;
         class CheckPulse;
-        class CPR;
 
         class Painkillers: Morphine {
-            displayName = CSTRING(Inject_Box_Painkillers);
-            displayNameProgress = CSTRING(Using);
+            displayName = CSTRING(painkillers_inject);
+            displayNameProgress = CSTRING(painkillers_using);
             allowedSelections[] = {"head"};
             items[] = {};
             callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _player, _target, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag));
-            condition = QUOTE('kat_Painkiller' in (magazines _player) || 'kat_Painkiller' in (magazines _target));
+            condition = QUOTE(('kat_painkiller' in (magazines _player)) && _player == _target);
             litter[] = {};
+            sounds[] = {{QPATHTOF_SOUND(sounds\take_painkillers.wav), 1, 1, 50}};
         };
         class CheckDogtags: checkPulse {
             displayName = CSTRING(DogTag);
@@ -23,11 +21,8 @@ class ACE_Medical_Actions {
             callbackSuccess = "[_player, _target] call ace_dogtags_fnc_checkDogtag";
             condition = "true";
         };
-        class CheckBloodPressure: CheckPulse { // Remove the ability to check blood pressure at the head
-            allowedSelections[] = {"hand_l", "hand_r", "leg_l", "leg_r"};
-        };
 
-        #include "Blood_Medical.hpp"
+        #include "KAT_Medical_Blood_Type.hpp"
         /*
         class Defibrillator: CPR {
             items[] = {{"adv_aceCPR_AED", "kat_X_AED"}};
@@ -54,5 +49,4 @@ class ACE_Medical_Actions {
             callbackSuccess = QUOTE(_target setVariable [ARR_3(QQGVAR(X), false, true)]; _player setVariable [ARR_3(QQGVAR(use), false, true)]);
         };
         */
-    };
 };

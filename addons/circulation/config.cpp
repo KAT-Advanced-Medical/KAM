@@ -50,6 +50,6 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgVehicles.hpp"
-#include "ACE_Medical_Actions.hpp"
-#include "ACE_Medical_Advanced.hpp"
+#include "ACE_Medical_Treatment_Actions.hpp"
+#include "ACE_Medical_Treatment.hpp"
 #include "ui\CrossPanel_Dialog.hpp"

@@ -1,5 +1,4 @@
-class ACE_Medical_Advanced {
-    class Treatment {
+class ACE_Medical_Treatment {
         class IV {
             class BloodIV;
             class BloodIV_500;
@@ -64,9 +63,8 @@ class ACE_Medical_Advanced {
                 hrIncreaseHigh[] = {5, 10, 10};
             };
             class Painkillers {
-                // copied from ACE. Just a reminder
                 painReduce = 1.2; // increased from 0.7
-                timeInSystem = 120;
+                timeInSystem = 120; // reduced from 600
                 maxDose = 10;
                 inCompatableMedication[] = {};
                 // will push your blood pressure and leave your heart rate
@@ -77,5 +75,4 @@ class ACE_Medical_Advanced {
                 itemClassName = "kat_PainkillerItem";
             };
         };
-    };
 };
