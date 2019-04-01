@@ -5,12 +5,10 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            kat_PulseoximeterItem,
-            kat_chestSealItem
+            kat_pulseoximeterItem
         };
         weapons[] = {
-            kat_Pulseoximeter,
-            kat_chestSeal
+            kat_pulseoximeter
         };
         magazines[] = {};
         requiredAddons[] = {

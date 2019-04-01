@@ -146,5 +146,15 @@
             <German>Chest Seal ist so konzipiert, dass offene Brustwunden in den meisten Fällen behandelt, versiegelt und wieder verschlossen werden.</German>
             <Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach.</Polish>
         </Key>
+        <Key ID="STR_kat_breathing_pulseoximeter_display">
+            <English>Pulse Oximeter</English>
+            <German>Pulseoximeter</German>
+            <Polish>Pulsoksymetr</Polish>
+            <Spanish>Oxímetro de pulso</Spanish>
+        </Key>
+        <Key ID="STR_kat_breathing_pulseoximeter_desc">
+            <English>A pulse oximeter enables straightforward and continuous heart rate and oxygen saturation monitoring.</English>
+            <German>Ein Pulseoximeter ermöglicht eine unkomplizierte und kontinuierliche Überwachung der Herzfrequenz und Sauerstoffsättigung.</German>
+        </Key>
     </Package>
 </Project>
