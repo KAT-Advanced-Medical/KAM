@@ -30,59 +30,17 @@
             <Spanish>Probabilidad de un pneumotórax</Spanish>
             <Polish>Szansa na odme opłucnową</Polish>
         </Key>
-        <Key ID="STR_kat_breathing_Pulseoximeter_Display">
-            <English>Attach Pulse Oximeter</English>
-            <German>Benutze Pulseoximeter</German>
-            <Polish>Użyj Pulsoksymetru</Polish>
-            <Spanish>Usar oxímetro de pulso</Spanish>
-        </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display_Remove">
             <English>Remove Pulse Oximeter</English>
             <German>Entferne Pulseoximeter</German>
             <Polish>Usuń Pulsoksymetr</Polish>
             <Spanish>Quitar oxímetro de pulso</Spanish>
         </Key>
-        <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Short">
-            <English>Pulse Oximeter</English>
-            <German>Pulseoximeter</German>
-            <Polish>Pulsoksymetr</Polish>
-            <Spanish>Oxímetro de pulso</Spanish>
-        </Key>
-        <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Use">
-            <English>Pulse Oximeter</English>
-            <German>Pulseoximeter</German>
-            <Polish>Pulsoksymetr</Polish>
-            <Spanish>Oxímetro de pulso</Spanish>
-        </Key>
-        <Key ID="STR_kat_breathing_placing">
-            <English>Placing</English>
-            <German>Anlegen</German>
-            <Polish>Kładzenie</Polish>
-            <Spanish>Colocando</Spanish>
-        </Key>
-        <Key ID="STR_kat_breathing_remove">
-            <English>Removing</English>
-            <German>Entferne</German>
-            <Polish>Usuwanie</Polish>
-            <Spanish>Quitando</Spanish>
-        </Key>
         <Key ID="STR_kat_breathing_pulseoxi_NA">
             <English>Pulse Oximeter already connected</English>
             <German>Pulseoximeter bereits vorhanden</German>
             <Polish>Pulsoksymetr jest już podłączony</Polish>
             <Spanish>El oxímetro de pulso ya está conectado</Spanish>
-        </Key>
-        <Key ID="STR_kat_breathing_pulseoxi_Log">
-            <English>Pulse Oximeter: HR: %1 Sp02: %2</English>
-            <German>Pulseoximeter: HR: %1 SpO2: %2</German>
-            <Polish>Pulsoksymetr: HR: %1 Sp02: %2</Polish>
-            <Spanish>Oxímetro de pulso: HR: %1 Sp02: %2</Spanish>
-        </Key>
-        <Key ID="STR_kat_breathing_pulseoxi_Log_2">
-            <English>%1 connected Pulseoximeter</English>
-            <German>%1 hat Pulseoximeter angelegt</German>
-            <Polish>%1 połączony Pulsoksymetr</Polish>
-            <Spanish>%1 conectado al Oxímetro de pulso</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_hint_name">
             <English>Breathing</English>
@@ -155,6 +113,36 @@
         <Key ID="STR_kat_breathing_pulseoximeter_desc">
             <English>A pulse oximeter enables straightforward and continuous heart rate and oxygen saturation monitoring.</English>
             <German>Ein Pulseoximeter ermöglicht eine unkomplizierte und kontinuierliche Überwachung der Herzfrequenz und Sauerstoffsättigung.</German>
+        </Key>
+        <Key ID="STR_kat_breathing_pulseoximeter_remove_display">
+            <English>Remove Pulse Oximeter</English>
+            <German>Entferne Pulseoximeter</German>
+            <Polish>Usuń Pulsoksymetr</Polish>
+            <Spanish>Quitar oxímetro de pulso</Spanish>
+        </Key>
+        <Key ID="STR_kat_breathing_placing">
+            <English>Placing</English>
+            <German>Anlegen</German>
+            <Polish>Kładzenie</Polish>
+            <Spanish>Colocando</Spanish>
+        </Key>
+        <Key ID="STR_kat_breathing_remove">
+            <English>Removing</English>
+            <German>Entferne</German>
+            <Polish>Usuwanie</Polish>
+            <Spanish>Quitando</Spanish>
+        </Key>
+        <Key ID="STR_kat_breathing_pulseoxi_log">
+            <English>Pulse Oximeter: HR: %1 Sp02: %2</English>
+            <German>Pulseoximeter: HR: %1 SpO2: %2</German>
+            <Polish>Pulsoksymetr: HR: %1 Sp02: %2</Polish>
+            <Spanish>Oxímetro de pulso: HR: %1 Sp02: %2</Spanish>
+        </Key>
+        <Key ID="STR_kat_breathing_pulseoxi_log_2">
+            <English>%1 connected Pulseoximeter</English>
+            <German>%1 hat Pulseoximeter angelegt</German>
+            <Polish>%1 połączony Pulsoksymetr</Polish>
+            <Spanish>%1 conectado al Oxímetro de pulso</Spanish>
         </Key>
     </Package>
 </Project>
