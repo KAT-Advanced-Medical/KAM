@@ -9,14 +9,14 @@ class CfgVehicles {
         class TransportMagazines;
     };
 
-    class kat_PainkillerItem: WeaponHolder_Single_limited_item_F {
+    class kat_painkillerItem: WeaponHolder_Single_limited_item_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= CSTRING(Painkillers_Box_Display);
+        displayName = CSTRING(painkillers_display);
         author = "Katalam";
         vehicleClass = "Magazines";
         class TransportItems {
-            MACRO_ADDITEM(kat_Painkiller,1);
+            MACRO_ADDITEM(kat_painkiller,1);
         };
     };
     /*
