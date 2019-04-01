@@ -113,9 +113,9 @@ class CfgVehicles {
         transportMaxBackpacks = 0;
         transportMaxMagazines = 64;
         class TransportItems;
-        class CargoTurret;
         class Turrets {
-            class MainTurret: CargoTurret {
+            /*
+            class MainTurret {
                 gunnerAction = "passenger_inside_2";
                 gunnerInAction = "passenger_inside_2"; //fixes standing up in steat
                 memoryPointsGetInGunner = "pos cargo";
@@ -134,6 +134,7 @@ class CfgVehicles {
                 dontCreateAI = 0;
                 ejectDeadGunner = 0;
             };
+            */
         };
         transportSoldier = 1;
         ace_cargo_canLoad = 0;
@@ -164,114 +165,7 @@ class CfgVehicles {
             };
         };
         class EventHandlers {
-            init = QUOTE(_this call FUNC(stretcher));
-        };
-    };
-    class Land_Stretcher_01_base_F;
-    class Land_Stretcher_01_olive_F: Land_Stretcher_01_base_F {
-        ace_cargo_canLoad = 1;
-        ace_Cargo_hasCargo = 0;
-        ace_dragging_canDrag = 1;
-        ace_dragging_canCarry = 1;
-        ace_dragging_dragPosition[] = {0,1.7,0};
-        ace_dragging_carryPosition[] = {0, 1.7, 0};
-        ace_dragging_dragDirection = 0;
-        ace_Carry_carryDirection = 0;
-        ace_cookoff_probability = 0;
-        class VehicleTransport {
-            class Cargo {
-                parachuteClass              = "B_Parachute_02_F";
-                parachuteHeightLimit        = 5;
-                canBeTransported            = 1;
-                dimensions[]                = {"VTV_Cargo_Base", "VTV_Cargo_Corner"};
-            };
-        };
-    };
-
-    class Man;
-    class CAManBase: Man {
-        class ACE_Actions {
-            class ACE_Torso {
-                class FieldDressing;
-                class LimitWounds {
-                    displayName = CSTRING(LIMITWOUNDS_Display);
-                    condition = "[_player, _target, 'hand_l', 'LimitWounds'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_l', 'LimitWounds'] call ace_medical_fnc_treatment";
-                    icon = "";
-                };
-            };
-            class ACE_ArmLeft {
-                class SalineIV;
-                class SalineIV_Stand: SalineIV {
-                    displayName = CSTRING(Display_IVStand);
-                    condition = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
-                };
-                class SalineIV_Stand_500: SalineIV {
-                    displayName = CSTRING(Display_IVStand_500);
-                    condition = "[_player, _target, 'hand_l', 'SalineIV_Stand_500'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_l', 'SalineIV_Stand_500'] call ace_medical_fnc_treatment";
-                };
-                class SalineIV_Stand_250: SalineIV {
-                    displayName = CSTRING(Display_IVStand_250);
-                    condition = "[_player, _target, 'hand_l', 'SalineIV_Stand_250'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_l', 'SalineIV_Stand_250'] call ace_medical_fnc_treatment";
-                };
-            };
-            class ACE_ArmRight {
-                class SalineIV;
-                class SalineIV_Stand: SalineIV {
-                    displayName = CSTRING(Display_IVStand);
-                    condition = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
-                };
-                class SalineIV_Stand_500: SalineIV {
-                    displayName = CSTRING(Display_IVStand_500);
-                    condition = "[_player, _target, 'hand_r', 'SalineIV_Stand_500'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_r', 'SalineIV_Stand_500'] call ace_medical_fnc_treatment";
-                };
-                class SalineIV_Stand_250: SalineIV {
-                    displayName = CSTRING(Display_IVStand_250);
-                    condition = "[_player, _target, 'hand_r', 'SalineIV_Stand_250'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_r', 'SalineIV_Stand_250'] call ace_medical_fnc_treatment";
-                };
-            };
-            class ACE_LegLeft {
-                class SalineIV;
-                class SalineIV_Stand: SalineIV {
-                    displayName = CSTRING(Display_IVStand);
-                    condition = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
-                };
-                class SalineIV_Stand_500: SalineIV {
-                    displayName = CSTRING(Display_IVStand_500);
-                    condition = "[_player, _target, 'leg_l', 'SalineIV_Stand_500'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_l', 'SalineIV_Stand_500'] call ace_medical_fnc_treatment";
-                };
-                class SalineIV_Stand_250: SalineIV {
-                    displayName = CSTRING(Display_IVStand_250);
-                    condition = "[_player, _target, 'leg_l', 'SalineIV_Stand_250'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_l', 'SalineIV_Stand_250'] call ace_medical_fnc_treatment";
-                };
-            };
-            class ACE_LegRight {
-                class SalineIV;
-                class SalineIV_Stand: SalineIV {
-                    displayName = CSTRING(Display_IVStand);
-                    condition = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_fnc_treatment";
-                };
-                class SalineIV_Stand_500: SalineIV {
-                    displayName = CSTRING(Display_IVStand_500);
-                    condition = "[_player, _target, 'leg_r', 'SalineIV_Stand_500'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_r', 'SalineIV_Stand_500'] call ace_medical_fnc_treatment";
-                };
-                class SalineIV_Stand_250: SalineIV {
-                    displayName = CSTRING(Display_IVStand_250);
-                    condition = "[_player, _target, 'leg_r', 'SalineIV_Stand_250'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_r', 'SalineIV_Stand_250'] call ace_medical_fnc_treatment";
-                };
-            };
+            init = QUOTE([_this] call FUNC(stretcher));
         };
     };
 };

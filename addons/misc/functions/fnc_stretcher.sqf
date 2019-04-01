@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params [["_object", objNull, [objNull]]];
+(_this select 0) params ["_object"];
 
 if !(_object isKindOf "kat_stretcher") exitWith {false};
 

@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="kat">
     <Package name="misc">
-        <Key ID="STR_kat_misc_SETTING_ENABLE">
-            <English>ACE-Misc activated?</English>
-            <German>ACE-Sonstiges aktivieren?</German>
-            <Polish>ACE-Inne aktywowane?</Polish>
-            <Spanish>¿Activar ACE-Misceláneos?</Spanish>
-        </Key>
         <Key ID="STR_kat_misc_Action_add_IV">
             <English>Attaching IV</English>
             <German>IV wird angehangen</German>
@@ -68,6 +62,12 @@
         <Key ID="STR_kat_misc_disassemble_attach_display">
             <English>Attach to</English>
             <German>Anhängen an</German>
+        </Key>
+        <Key ID="STR_kat_misc_SETTING_enable">
+            <English>ACE-Misc activated?</English>
+            <German>ACE-Sonstiges aktivieren?</German>
+            <Polish>ACE-Inne aktywowane?</Polish>
+            <Spanish>¿Activar ACE-Misceláneos?</Spanish>
         </Key>
     </Package>
 </Project>

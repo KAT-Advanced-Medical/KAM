@@ -15,7 +15,7 @@
  * Public: Yes
  */
 
-params [["_unit", objNull, [objNull]]];
+params ["", "_unit"];
 if (!local _unit) exitWith {};
 
 switch (true) do {
