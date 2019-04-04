@@ -1,5 +1,6 @@
 PREP(addIVbag);
 PREP(addPassengersActions);
+PREP(assembleStretcher);
 PREP(attachStretcher);
 PREP(bandageRandomWound);
 PREP(conditionIV);

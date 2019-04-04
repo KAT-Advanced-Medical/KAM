@@ -1,5 +1,5 @@
 class CfgVehicles {
-    #include "vehicle_stretcher.hpp"
+    #include "stretcher.hpp"
     class Land_IntravenStand_01_base_F;
 
     class Land_IntravenStand_01_empty_F: Land_IntravenStand_01_base_F {
@@ -166,6 +166,22 @@ class CfgVehicles {
         };
         class EventHandlers {
             init = QUOTE([_this] call FUNC(stretcher));
+        };
+    };
+
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class ACE_Equipment {
+                class assembleStretcher {
+                    displayName = CSTRING(stretcher_assemble);
+                    condition = QUOTE('kat_stretcher' in items (_this select 0));
+                    statement = QUOTE(_this call FUNC(assembleStretcher));
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                    icon = "";
+                };
+            };
         };
     };
 };

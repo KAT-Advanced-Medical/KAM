@@ -22,19 +22,19 @@ if !(_object isKindOf "kat_stretcher") exitWith {false};
 [_object] call ace_dragging_fnc_initObject;
 
 [_object, 0, ["ACE_MainActions"],
-    [QGVAR(disassemble), localize LSTRING(disassemble_stretcher_display), "", {
+    [QGVAR(disassemble), localize LSTRING(stretcher_disassemble), "", {
         params [["_object", objNull, [objNull]]];
-        "kat_stretcherBag" createVehicle (getPos _object); // TODO create at exact position
+        private _weaponHolder = createVehicle ["GroundWeaponHolder_Scripted", getPos _object, [], 0, "CAN_COLLIDE"];
+        _weaponHolder addItemCargoGlobal ["kat_stretcher", 1];
         deleteVehicle _object;
     }, {
         params [["_object", objNull, [objNull]]];
-        if ((count crew _object > 0) || !(isNull attachedTo _object)) exitWith {false};
-        true;
+        !((count crew _object > 0) || !(isNull attachedTo _object))
     }] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 [_object, 0, ["ACE_MainActions"],
-    [QGVAR(attach), localize LSTRING(disassemble_attach_display), "", {}, {true}, {[_target] call FUNC(attachStretcher)}] call ace_interact_menu_fnc_createAction
+    [QGVAR(attach), localize LSTRING(stretcher_attach), "", {}, {true}, {[_target] call FUNC(attachStretcher)}] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 true
