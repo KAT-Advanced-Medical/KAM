@@ -5,42 +5,42 @@ class CfgWeapons {
     //class adv_aceCPR_AED;
 
     class kat_bloodIV_O: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_O);
+        displayName = CSTRING(bloodiv_o);
     };
     class kat_bloodIV_A: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_A);
+        displayName = CSTRING(bloodiv_a);
     };
     class kat_bloodIV_B: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_B);
+        displayName = CSTRING(bloodiv_b);
     };
     class kat_bloodIV_AB: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_AB);
+        displayName = CSTRING(bloodiv_ab);
     };
     class ACE_bloodIV_500;
     class kat_bloodIV_O_500: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_O_500);
+        displayName = CSTRING(bloodiv_500_o);
     };
     class kat_bloodIV_A_500: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_A_500);
+        displayName = CSTRING(bloodiv_500_a);
     };
     class kat_bloodIV_B_500: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_B_500);
+        displayName = CSTRING(bloodiv_500_b);
     };
     class kat_bloodIV_AB_500: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_AB_500);
+        displayName = CSTRING(bloodiv_500_ab);
     };
     class ACE_bloodIV_250;
     class kat_bloodIV_O_250: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_O_250);
+        displayName = CSTRING(bloodiv_250_o);
     };
     class kat_bloodIV_A_250: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_A_250);
+        displayName = CSTRING(bloodiv_250_a);
     };
     class kat_bloodIV_B_250: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_B_250);
+        displayName = CSTRING(bloodiv_250_b);
     };
     class kat_bloodIV_AB_250: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_AB_250);
+        displayName = CSTRING(bloodiv_250_ab);
     };
     class kat_PainkillerItem: ACE_ItemCore {
         scope = 1; // no mistake, just a placeholder, cause ACE can't handle magazines. DO NOT USE!

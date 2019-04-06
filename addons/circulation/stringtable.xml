@@ -13,150 +13,6 @@
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
         </Key>
-        <Key ID="STR_kat_circulation_BloodIV_O">
-            <English>Blood IV (1000ml) BT: 0</English>
-            <German>Blut IV (1000ml) BG: 0</German>
-            <Polish>Krew IV (1000ml) GK: 0</Polish>
-            <Spanish>Sangre IV (1000ml) GS: 0</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_BloodIV_A">
-            <English>Blood IV (1000ml) BT: A</English>
-            <German>Blut IV (1000ml) BG: A</German>
-            <Polish>Krew IV (1000ml) GK: A</Polish>
-            <Spanish>Sangre IV (1000ml) GS: A</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_BloodIV_B">
-            <English>Blood IV (1000ml) BT: B</English>
-            <German>Blut IV (1000ml) BG: B</German>
-            <Polish>Krew IV (1000ml) GK: B</Polish>
-            <Spanish>Sangre IV (1000ml) GS: B</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_BloodIV_AB">
-            <English>Blood IV (1000ml) BT: AB</English>
-            <German>Blut IV (1000ml) BG: AB</German>
-            <Polish>Krew IV (1000ml) GK: AB</Polish>
-            <Spanish>Sangre IV (1000ml) GS: AB</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_BloodIV_O_500">
-            <English>Blood IV (500ml) BT: 0</English>
-            <German>Blut IV (500ml) BG: 0</German>
-            <Polish>Krew IV (500ml) GK: 0</Polish>
-            <Spanish>Sangre IV (500ml) GS: 0</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_BloodIV_A_500">
-            <English>Blood IV (500ml) BT: A</English>
-            <German>Blut IV (500ml) BG: A</German>
-            <Polish>Krew IV (500ml) GK: A</Polish>
-            <Spanish>Sangre IV (500ml) GS: A</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_BloodIV_B_500">
-            <English>Blood IV (500ml) BT: B</English>
-            <German>Blut IV (500ml) BG: B</German>
-            <Polish>Krew IV (500ml) GK: B</Polish>
-            <Spanish>Sangre IV (500ml) GS: B</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_BloodIV_AB_500">
-            <English>Blood IV (500ml) BT: AB</English>
-            <German>Blut IV (500ml) BG: AB</German>
-            <Polish>Krew IV (500ml) GK: AB</Polish>
-            <Spanish>Sangre IV (500ml) GS: AB</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_BloodIV_O_250">
-            <English>Blood IV (250ml) BT: 0</English>
-            <German>Blut IV (250ml) BG: 0</German>
-            <Polish>Krew IV (250ml) GK: 0</Polish>
-            <Spanish>Sangre IV (250ML) GS: 0</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_BloodIV_A_250">
-            <English>Blood IV (250ml) BT: A</English>
-            <German>Blut IV (250ml) BG: A</German>
-            <Polish>Krew IV (250ml) GK: A</Polish>
-            <Spanish>Sangre IV (250ML) GS: A</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_BloodIV_B_250">
-            <English>Blood IV (250ml) BT: B</English>
-            <German>Blut IV (250ml) BG: B</German>
-            <Polish>Krew IV (250ml) GK: B</Polish>
-            <Spanish>Sangre IV (250ML) GS: B</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_BloodIV_AB_250">
-            <English>Blood IV (250ml) BT: AB</English>
-            <German>Blut IV (250ml) BG: AB</German>
-            <Polish>Krew IV (250ml) GK: AB</Polish>
-            <Spanish>Sangre IV (250ML) GS: AB</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_BloodIV_O">
-            <English>Give Blood IV (1000ml) BT: 0</English>
-            <German>Bluttransfusion IV (1000ml) BG: 0</German>
-            <Polish>Podaj Krew IV (1000ml) GK: 0</Polish>
-            <Spanish>Administrar Sangre IV (1000ml) GS: 0</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_BloodIV_A">
-            <English>Give Blood IV (1000ml) BT: A</English>
-            <German>Bluttransfusion IV (1000ml) BG: A</German>
-            <Polish>Podaj Krew IV (1000ml) GK: A</Polish>
-            <Spanish>Administrar Sangre IV (1000ml) GS: A</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_BloodIV_B">
-            <English>Give Blood IV (1000ml) BT: B</English>
-            <German>Bluttransfusion IV (1000ml) BG: B</German>
-            <Polish>Podaj Krew IV (1000ml) GK: B</Polish>
-            <Spanish>Administrar Sangre IV (1000ml) GS: B</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_BloodIV_AB">
-            <English>Give Blood IV (1000ml) BT: AB</English>
-            <German>Bluttransfusion IV (1000ml) BG: AB</German>
-            <Polish>Podaj Krew IV (1000ml) GK: AB</Polish>
-            <Spanish>Administrar Sangre IV (1000ml) GS: AB</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_500_BloodIV_O">
-            <English>Give Blood IV (500ml) BT: 0</English>
-            <German>Bluttransfusion IV (500ml) BG: 0</German>
-            <Polish>Podaj Krew IV (500ml) GK: 0</Polish>
-            <Spanish>Administrar Sangre IV (500ml) GS: 0</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_500_BloodIV_A">
-            <English>Give Blood IV (500ml) BT: A</English>
-            <German>Bluttransfusion IV (500ml) BG: A</German>
-            <Polish>Podaj Krew IV (500ml) GK: A</Polish>
-            <Spanish>Administrar Sangre IV (500ml) GS: A</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_500_BloodIV_B">
-            <English>Give Blood IV (500ml) BT: B</English>
-            <German>Bluttransfusion IV (500ml) BG: B</German>
-            <Polish>Podaj Krew IV (500ml) GK: B</Polish>
-            <Spanish>Administrar Sangre IV (500ml) GS: B</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_500_BloodIV_AB">
-            <English>Give Blood IV (500ml) BT: AB</English>
-            <German>Bluttransfusion IV (500ml) BG: AB</German>
-            <Polish>Podaj Krew IV (500ml) GK: AB</Polish>
-            <Spanish>Administrar Sangre IV (500ml) GS: AB</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_250_BloodIV_O">
-            <English>Give Blood IV (250ml) BT: 0</English>
-            <German>Bluttransfusion IV (250ml) BG: 0</German>
-            <Polish>Podaj Krew IV (250ml) GK: 0</Polish>
-            <Spanish>Administrar Sangre IV (250ml) GS: 0</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_250_BloodIV_A">
-            <English>Give Blood IV (250ml) BT: A</English>
-            <German>Bluttransfusion IV (250ml) BG: A</German>
-            <Polish>Podaj Krew IV (250ml) GK: A</Polish>
-            <Spanish>Administrar Sangre IV (250ml) GS: A</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_250_BloodIV_B">
-            <English>Give Blood IV (250ml) BT: B</English>
-            <German>Bluttransfusion IV (250ml) BG: B</German>
-            <Polish>Podaj Krew IV (250ml) GK: B</Polish>
-            <Spanish>Administrar Sangre IV (250ml) GS: B</Spanish>
-        </Key>
-        <Key ID="STR_kat_circulation_Action_250_BloodIV_AB">
-            <English>Give Blood IV (250ml) BT: AB</English>
-            <German>Bluttransfusion IV (250ml) BG: AB</German>
-            <Polish>Podaj Krew IV (250ml) GK: AB</Polish>
-            <Spanish>Administrar Sangre IV (250ml) GS: AB</Spanish>
-        </Key>
         <Key ID="STR_kat_circulation_Painkillers_DescShort">
             <English>Used to suppress pain</English>
             <German>Schmerzbekämpfer</German>
@@ -288,6 +144,150 @@
             <German>Schlucke</German>
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_o">
+            <English>Blood IV (1000ml) BT: 0</English>
+            <German>Blut IV (1000ml) BG: 0</German>
+            <Polish>Krew IV (1000ml) GK: 0</Polish>
+            <Spanish>Sangre IV (1000ml) GS: 0</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_a">
+            <English>Blood IV (1000ml) BT: A</English>
+            <German>Blut IV (1000ml) BG: A</German>
+            <Polish>Krew IV (1000ml) GK: A</Polish>
+            <Spanish>Sangre IV (1000ml) GS: A</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_b">
+            <English>Blood IV (1000ml) BT: B</English>
+            <German>Blut IV (1000ml) BG: B</German>
+            <Polish>Krew IV (1000ml) GK: B</Polish>
+            <Spanish>Sangre IV (1000ml) GS: B</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_ab">
+            <English>Blood IV (1000ml) BT: AB</English>
+            <German>Blut IV (1000ml) BG: AB</German>
+            <Polish>Krew IV (1000ml) GK: AB</Polish>
+            <Spanish>Sangre IV (1000ml) GS: AB</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_500_o">
+            <English>Blood IV (500ml) BT: 0</English>
+            <German>Blut IV (500ml) BG: 0</German>
+            <Polish>Krew IV (500ml) GK: 0</Polish>
+            <Spanish>Sangre IV (500ml) GS: 0</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_500_a">
+            <English>Blood IV (500ml) BT: A</English>
+            <German>Blut IV (500ml) BG: A</German>
+            <Polish>Krew IV (500ml) GK: A</Polish>
+            <Spanish>Sangre IV (500ml) GS: A</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_500_b">
+            <English>Blood IV (500ml) BT: B</English>
+            <German>Blut IV (500ml) BG: B</German>
+            <Polish>Krew IV (500ml) GK: B</Polish>
+            <Spanish>Sangre IV (500ml) GS: B</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_500_ab">
+            <English>Blood IV (500ml) BT: AB</English>
+            <German>Blut IV (500ml) BG: AB</German>
+            <Polish>Krew IV (500ml) GK: AB</Polish>
+            <Spanish>Sangre IV (500ml) GS: AB</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_250_o">
+            <English>Blood IV (250ml) BT: 0</English>
+            <German>Blut IV (250ml) BG: 0</German>
+            <Polish>Krew IV (250ml) GK: 0</Polish>
+            <Spanish>Sangre IV (250ML) GS: 0</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_250_a">
+            <English>Blood IV (250ml) BT: A</English>
+            <German>Blut IV (250ml) BG: A</German>
+            <Polish>Krew IV (250ml) GK: A</Polish>
+            <Spanish>Sangre IV (250ML) GS: A</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_250_b">
+            <English>Blood IV (250ml) BT: B</English>
+            <German>Blut IV (250ml) BG: B</German>
+            <Polish>Krew IV (250ml) GK: B</Polish>
+            <Spanish>Sangre IV (250ML) GS: B</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_250_ab">
+            <English>Blood IV (250ml) BT: AB</English>
+            <German>Blut IV (250ml) BG: AB</German>
+            <Polish>Krew IV (250ml) GK: AB</Polish>
+            <Spanish>Sangre IV (250ML) GS: AB</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_o_action">
+            <English>Give Blood IV (1000ml) BT: 0</English>
+            <German>Bluttransfusion IV (1000ml) BG: 0</German>
+            <Polish>Podaj Krew IV (1000ml) GK: 0</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: 0</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_a_action">
+            <English>Give Blood IV (1000ml) BT: A</English>
+            <German>Bluttransfusion IV (1000ml) BG: A</German>
+            <Polish>Podaj Krew IV (1000ml) GK: A</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: A</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_b_action">
+            <English>Give Blood IV (1000ml) BT: B</English>
+            <German>Bluttransfusion IV (1000ml) BG: B</German>
+            <Polish>Podaj Krew IV (1000ml) GK: B</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: B</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_ab_action">
+            <English>Give Blood IV (1000ml) BT: AB</English>
+            <German>Bluttransfusion IV (1000ml) BG: AB</German>
+            <Polish>Podaj Krew IV (1000ml) GK: AB</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: AB</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_500_o_action">
+            <English>Give Blood IV (500ml) BT: 0</English>
+            <German>Bluttransfusion IV (500ml) BG: 0</German>
+            <Polish>Podaj Krew IV (500ml) GK: 0</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: 0</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_500_a_action">
+            <English>Give Blood IV (500ml) BT: A</English>
+            <German>Bluttransfusion IV (500ml) BG: A</German>
+            <Polish>Podaj Krew IV (500ml) GK: A</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: A</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_500_b_action">
+            <English>Give Blood IV (500ml) BT: B</English>
+            <German>Bluttransfusion IV (500ml) BG: B</German>
+            <Polish>Podaj Krew IV (500ml) GK: B</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: B</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_500_ab_action">
+            <English>Give Blood IV (500ml) BT: AB</English>
+            <German>Bluttransfusion IV (500ml) BG: AB</German>
+            <Polish>Podaj Krew IV (500ml) GK: AB</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: AB</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_250_o_action">
+            <English>Give Blood IV (250ml) BT: 0</English>
+            <German>Bluttransfusion IV (250ml) BG: 0</German>
+            <Polish>Podaj Krew IV (250ml) GK: 0</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: 0</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_250_a_action">
+            <English>Give Blood IV (250ml) BT: A</English>
+            <German>Bluttransfusion IV (250ml) BG: A</German>
+            <Polish>Podaj Krew IV (250ml) GK: A</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: A</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_250_b_action">
+            <English>Give Blood IV (250ml) BT: B</English>
+            <German>Bluttransfusion IV (250ml) BG: B</German>
+            <Polish>Podaj Krew IV (250ml) GK: B</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: B</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_bloodiv_250_ab_action">
+            <English>Give Blood IV (250ml) BT: AB</English>
+            <German>Bluttransfusion IV (250ml) BG: AB</German>
+            <Polish>Podaj Krew IV (250ml) GK: AB</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: AB</Spanish>
         </Key>
     </Package>
 </Project>
