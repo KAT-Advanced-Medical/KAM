@@ -1,0 +1,25 @@
+theme: jekyll-theme-minimal
+gem "github-pages", group: :jekyll_plugins
+
+title: "KAT - Advanced Medical"
+description: "The ACE Advanced Medical System is nice, but we can do it better, even on a more realistic way and bring it on another level with these addons."
+
+logo: "Arma3_workshop_addon.png"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author_profile: true
+
+# Site Author
+author:
+  name: "Katalam"
+  bio: "Developer"
+  location: "Germany"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Katalam"
