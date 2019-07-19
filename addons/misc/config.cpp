@@ -11,7 +11,7 @@ class CfgPatches {
         weapons[] = { };
         magazines[] = { };
         requiredAddons[] = {
-            "kat_main",
+            "kam_main",
             "ace_medical",
             "cba_settings",
             "A3_Static_F"
