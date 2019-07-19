@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_circulation_fnc_init;
+ * [player] call KAM_circulation_fnc_init;
  *
  * Public: No
  */

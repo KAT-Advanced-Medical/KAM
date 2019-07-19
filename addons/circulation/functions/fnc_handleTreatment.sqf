@@ -10,7 +10,7 @@
  * Successful <BOOLEAN>
  *
  * Example:
- * [player, cursorTarget, 'hand_l', 'BloodIV_A', 'BloodIV_A'] call kat_circulation_fnc_handleTreatment;
+ * [player, cursorTarget, 'hand_l', 'BloodIV_A', 'BloodIV_A'] call KAM_circulation_fnc_handleTreatment;
  *
  * Public: No
  */

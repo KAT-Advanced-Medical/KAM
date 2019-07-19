@@ -11,7 +11,7 @@
  * Compatible <BOOLEAN>
  *
  * Example:
- * [cursorTarget, 'BloodIV_AB'] call kat_circulation_fnc_compatible;
+ * [cursorTarget, 'BloodIV_AB'] call KAM_circulation_fnc_compatible;
  *
  * Public: No
  */
@@ -20,5 +20,4 @@ params ["_unit", "_className"];
 
 private _bloodType = BLOOD_TYPE(_unit);
 private _compatibility = getArray (configFile >> "ACE_Medical_Treatment" >> "IV" >> _className >> "compatibility");
-if (_bloodType in _compatibility) exitWith {true};
-false;
+_bloodType in _compatibility

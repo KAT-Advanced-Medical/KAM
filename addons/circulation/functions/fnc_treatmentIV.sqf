@@ -10,7 +10,7 @@
  * 0: Successful <BOOLEAN>
  *
  * Example:
- * ['Blood_IV_A', cursorTarget] call kat_circulation_fnc_treatmentIV
+ * ['Blood_IV_A', cursorTarget] call KAM_circulation_fnc_treatmentIV
  *
  * Public: No
  */

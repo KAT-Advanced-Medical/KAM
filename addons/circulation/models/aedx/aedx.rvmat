@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-    texture="x\kat\addons\circulation\models\aedx\aedx_nohq.paa";
+    texture="x\KAM\addons\circulation\models\aedx\aedx_nohq.paa";
     uvSource="tex";
     class uvTransform
     {

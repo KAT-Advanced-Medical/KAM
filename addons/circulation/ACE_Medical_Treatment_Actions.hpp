@@ -7,8 +7,8 @@ class ACE_Medical_Treatment_Actions {
             displayNameProgress = CSTRING(painkillers_using);
             allowedSelections[] = {"head"};
             items[] = {};
-            callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _player, _target, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag));
-            condition = QUOTE(('kat_painkiller' in (magazines _player)) && _player == _target);
+            callbackSuccess = QUOTE([ARR_5('KAM_Painkiller', _player, _target, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag));
+            condition = QUOTE(('KAM_painkiller' in (magazines _player)) && _player == _target);
             litter[] = {};
             sounds[] = {{QPATHTOF_SOUND(sounds\take_painkillers.wav), 1, 1, 50}};
         };
@@ -25,7 +25,7 @@ class ACE_Medical_Treatment_Actions {
         #include "KAT_Medical_Blood_Type.hpp"
         /*
         class Defibrillator: CPR {
-            items[] = {{"adv_aceCPR_AED", "kat_X_AED"}};
+            items[] = {{"adv_aceCPR_AED", "KAM_X_AED"}};
             treatmentTime = 10;
             callbackProgress = QUOTE(call FUNC(AED_sound));
         };

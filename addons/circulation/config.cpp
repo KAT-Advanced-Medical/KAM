@@ -5,36 +5,36 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            kat_painkillerItem,
-            //kat_X_AEDItem,
-            kat_bloodBankCrate
+            "KAM_painkillerItem",
+            //"KAM_X_AEDItem",
+            "KAM_bloodBankCrate"
         };
         weapons[] = {
-            kat_painkiller,
-            kat_bloodIV_O,
-            kat_bloodIV_A,
-            kat_bloodIV_B,
-            kat_bloodIV_AB,
-            kat_bloodIV_O_500,
-            kat_bloodIV_A_500,
-            kat_bloodIV_B_500,
-            kat_bloodIV_AB_500,
-            kat_bloodIV_O_250,
-            kat_bloodIV_A_250,
-            kat_bloodIV_B_250,
-            kat_bloodIV_AB_250,
-            kat_PainkillerItem,
-            //kat_X_AED,
-            kat_crossPanel
+            "KAM_painkiller",
+            "KAM_bloodIV_O",
+            "KAM_bloodIV_A",
+            "KAM_bloodIV_B",
+            "KAM_bloodIV_AB",
+            "KAM_bloodIV_O_500",
+            "KAM_bloodIV_A_500",
+            "KAM_bloodIV_B_500",
+            "KAM_bloodIV_AB_500",
+            "KAM_bloodIV_O_250",
+            "KAM_bloodIV_A_250",
+            "KAM_bloodIV_B_250",
+            "KAM_bloodIV_AB_250",
+            "KAM_PainkillerItem",
+            //"KAM_X_AED",
+            "KAM_crossPanel"
         };
         magazines[] = {
-            kat_painkiller
+            "KAM_painkiller"
         };
         requiredAddons[] = {
             "ace_medical",
             "ace_dogtags",
             "cba_settings",
-            "kat_main"
+            "kam_main"
             //"adv_aceCPR"
         };
         author = "Katalam";

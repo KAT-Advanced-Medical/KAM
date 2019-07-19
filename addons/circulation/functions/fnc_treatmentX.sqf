@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_circulation_fnc_treatmentX;
+ * [player, cursorTarget] call KAM_circulation_fnc_treatmentX;
  *
  * Public: No
  */

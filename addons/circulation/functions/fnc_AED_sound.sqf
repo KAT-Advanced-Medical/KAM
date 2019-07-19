@@ -24,6 +24,4 @@ if !(_caller getVariable ["adv_aceCPR_var_soundplayed", false]) then {
 
 //return:
 
-private _return = if !([_target] call ace_common_fnc_isAwake) then {true} else {false};
-
-_return;
+!([_target] call ace_common_fnc_isAwake)

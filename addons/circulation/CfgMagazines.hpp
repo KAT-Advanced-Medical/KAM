@@ -1,7 +1,7 @@
 class CfgMagazines {
     class CA_Magazine;
 
-    class kat_painkiller: CA_Magazine {
+    class KAM_painkiller: CA_Magazine {
         author = "Katalam";
         scope = 2;
 
