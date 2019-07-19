@@ -1,8 +1,8 @@
 name = "KAT - Advanced Medical";
-dir = "@kat_aceAdvMedical";
+dir = "@KAM";
 picture = "larynx.paa";
 actionName = "Github";
-action = "https://github.com/Katalam/kat_aceAdvMedical";
+action = "https://github.com/Katalam/KAM";
 logo = "larynx.paa";
 logoOver = "larynx.paa";
 tooltip = "KAT-ACE Extension";

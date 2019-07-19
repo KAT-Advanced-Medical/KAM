@@ -1,19 +1,19 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Katalam/kat_aceAdvMedical/master/logo.jpg">
+    <img src="https://raw.githubusercontent.com/Katalam/KAM/master/logo.jpg">
 </p>
 
 <p align="center">
-    <a href="https://github.com/Katalam/kat_aceAdvMedical/releases/latest">
+    <a href="https://github.com/Katalam/KAM/releases/latest">
         <img src="https://img.shields.io/badge/Version-1.0.0.0-blue.svg?style=flat-square" alt="KAM Version">
     </a>
-    <a href="https://github.com/Katalam/kat_aceAdvMedical/issues">
-        <img src="https://img.shields.io/github/issues-raw/Katalam/kat_aceAdvMedical.svg?style=flat-square&label=Issues" alt="KAM Issues">
+    <a href="https://github.com/Katalam/KAM/issues">
+        <img src="https://img.shields.io/github/issues-raw/Katalam/KAM.svg?style=flat-square&label=Issues" alt="KAM Issues">
     </a>
-    <a href="https://github.com/Katalam/kat_aceAdvMedical/releases">
-        <img src="https://img.shields.io/github/downloads/Katalam/kat_aceAdvMedical/total.svg?style=flat-square&label=Downloads" alt="KAM Downloads">
+    <a href="https://github.com/Katalam/KAM/releases">
+        <img src="https://img.shields.io/github/downloads/Katalam/KAM/total.svg?style=flat-square&label=Downloads" alt="KAM Downloads">
     </a>
-    <a href="https://circleci.com/gh/Katalam/kat_aceAdvMedical">
-        <img src="https://circleci.com/gh/Katalam/kat_aceAdvMedical.svg?style=svg" alt="KAM Build Status">
+    <a href="https://circleci.com/gh/Katalam/KAM">
+        <img src="https://circleci.com/gh/Katalam/KAM.svg?style=svg" alt="KAM Build Status">
     </a>
 </p>
 
@@ -54,7 +54,7 @@ Big thanks to
 
 Known Issues
 ------------
-+ [Issues](https://github.com/Katalam/kat_aceAdvMedical/issues)
++ [Issues](https://github.com/Katalam/KAM/issues)
 
 Required
 --------
@@ -72,7 +72,7 @@ Youtube
 
 Class Names
 --------
-+ [click here](https://github.com/Katalam/kat_aceAdvMedical/wiki/Class-Names)
++ [click here](https://github.com/Katalam/KAM/wiki/Class-Names)
 
 ## Contributing
 
@@ -81,16 +81,16 @@ You can help out with the ongoing development by looking for potential bugs in m
 ### Building
 The build process is base on the [ACE3 build process](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html), so you can follow the steps there. Basically the following is needed:
 + correctly setup project drive (P: drive)
-+ download/clone kat_aceAdvMedical GitHub repo
++ download/clone KAM GitHub repo
 + switch to the tools/ folder and execute ```python setup.py```
 + you can build by executing ```python build.py``` from the tools folder
-+ for testing include your mod by adding ```-mod=x\kat``` as start parameter
++ for testing include your mod by adding ```-mod=x\KAM``` as start parameter
 
 For building release builds see [ACE3 reference](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html).
 
 ### Submitting issues and requesting features
 
-Please, use my [Issue Tracker](https://github.com/Katalam/kat_aceAdvMedical/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
+Please, use my [Issue Tracker](https://github.com/Katalam/KAM/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
 
 ## License
 

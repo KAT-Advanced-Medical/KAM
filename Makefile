@@ -1,7 +1,7 @@
 VERSION = $(shell cat "VERSION")
-PREFIX = kat
-BIN = @kat_aceAdvMedical
-ZIP = kat_aceAdvMedical
+PREFIX = KAM
+BIN = @KAM
+ZIP = KAM
 FLAGS = -i include -w unquoted-string -w redefinition-wo-undef
 VERSION_FILES = README.md mod.cpp
 
