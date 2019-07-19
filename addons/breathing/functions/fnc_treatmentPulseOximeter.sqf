@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget, "leftarm", "Pulseoximeter"] call kat_breathing_fnc_treatmentAdvanced_pulseoximeter;
+ * [player, cursorTarget, "leftarm", "Pulseoximeter"] call KAM_breathing_fnc_treatmentAdvanced_pulseoximeter;
  *
  * Public: No
  */

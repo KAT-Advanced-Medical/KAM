@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_breathing_fnc_handleBreathing;
+ * [cursorTarget] call KAM_breathing_fnc_handleBreathing;
  *
  * Public: No
  */

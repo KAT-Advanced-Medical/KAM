@@ -11,7 +11,7 @@
  * Has pulse oximeter applied <BOOL>
  *
  * Example:
- * [player, "leftleg"] call kat_breathing_fnc_hasPulseoxiAppliedTo
+ * [player, "leftleg"] call KAM_breathing_fnc_hasPulseoxiAppliedTo
  *
  * Public: No
  */

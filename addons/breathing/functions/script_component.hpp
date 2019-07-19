@@ -1,1 +1,1 @@
-#include "\x\kat\addons\breathing\script_component.hpp"
+#include "\x\KAM\addons\breathing\script_component.hpp"

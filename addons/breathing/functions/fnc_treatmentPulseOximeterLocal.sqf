@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget, "leftarm", "Pulseoximeter"] call kat_breathing_fnc_treatmentAdvanced_pulseoximeterLocal;
+ * [player, cursorTarget, "leftarm", "Pulseoximeter"] call KAM_breathing_fnc_treatmentAdvanced_pulseoximeterLocal;
  *
  * Public: No
  */
@@ -55,7 +55,7 @@ private _spo2 = round (_target getVariable [QGVAR(status), 100]);
     [_target, "quick_view", LSTRING(pulseoxi_log), [_hr, _spo2]] call ace_medical_treatment_fnc_addToLog;
 }, 1, [_target, _selectionName]] call CBA_fnc_addPerFrameHandler;
 
-_className = str formatText ["kat_%1", toLower _className];
+_className = str formatText ["KAM_%1", toLower _className];
 private _item = if (isClass (configFile >> "CfgWeapons" >> _className)) then {
     getText (configFile >> "CfgWeapons" >> _className >> "displayName");
 } else {

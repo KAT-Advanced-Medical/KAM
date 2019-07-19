@@ -5,16 +5,16 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            kat_pulseoximeterItem
+            "KAM_pulseoximeterItem"
         };
         weapons[] = {
-            kat_pulseoximeter
+            "KAM_pulseoximeter"
         };
         magazines[] = {};
         requiredAddons[] = {
             "ace_medical",
-            "kat_main",
-            "kat_airway",
+            "kam_main",
+            "kam_airway",
             "cba_settings"
         };
         author = "Katalam";

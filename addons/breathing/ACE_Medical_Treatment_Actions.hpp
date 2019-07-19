@@ -8,7 +8,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         requiredMedic = 1;
         treatmentTime = 2;
-        items[] = {"kat_pulseoximeter"};
+        items[] = {"KAM_pulseoximeter"};
         callbackSuccess = FUNC(treatmentPulseOximeter);
         condition = QUOTE(!([ARR_2(_target,_bodyPart)] call FUNC(hasPulseOxiAppliedTo)));
         itemConsumed = 1;

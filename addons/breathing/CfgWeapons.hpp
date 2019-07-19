@@ -2,7 +2,7 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
-    class kat_pulseoximeter: ACE_ItemCore {
+    class KAM_pulseoximeter: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName = CSTRING(pulseoximeter_display);

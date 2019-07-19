@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget, "leftarm", "RemovePulseoximeter"] call kat_breathing_fnc_treatmentAdvanced_removePulseoximeter;
+ * [player, cursorTarget, "leftarm", "RemovePulseoximeter"] call KAM_breathing_fnc_treatmentAdvanced_removePulseoximeter;
  *
  * Public: No
  */
@@ -26,13 +26,13 @@ private _pulseOxi = _target getVariable [QGVAR(pulseoximeter), [0,0,0,0,0,0]];
 _pulseOxi set [_index, 1];
 _target setVariable [QGVAR(pulseoximeter), _pulseOxi, true];
 
-if (_caller canAdd "kat_pulseoximeter") then {
-    _caller addItem "kat_pulseoximeter";
+if (_caller canAdd "KAM_pulseoximeter") then {
+    _caller addItem "KAM_pulseoximeter";
 } else {
-    if (_target canAdd "kat_pulseoximeter") then {
-        _target addItem "kat_pulseoximeter";
+    if (_target canAdd "KAM_pulseoximeter") then {
+        _target addItem "KAM_pulseoximeter";
     } else {
         private _groundHolder = createVehicle ["WeaponHolderSimulated", _target, [], 0.5, "CAN_COLLIDE"];
-        _groundHolder addItemCargoGlobal ["kat_pulseoximeter", 1];
+        _groundHolder addItemCargoGlobal ["KAM_pulseoximeter", 1];
     };
 };
