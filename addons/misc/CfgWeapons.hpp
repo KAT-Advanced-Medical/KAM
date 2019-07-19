@@ -2,7 +2,7 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
-    class kat_stretcher: ACE_ItemCore {
+    class KAM_stretcher: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName = CSTRING(stretcher_display);

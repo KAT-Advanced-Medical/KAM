@@ -46,10 +46,10 @@ class CfgVehicles {
     };
 
     class weapon_bag_base;
-    class kat_stretcherBag: weapon_bag_base {
+    class KAM_stretcherBag: weapon_bag_base {
         class assembleInfo {
             displayName = "Stretcher";
-            assembleTo = "kat_stretcher";
+            assembleTo = "KAM_stretcher";
             base = "";
             primary = 1;
             dissasembleTo[] = {};
@@ -63,7 +63,7 @@ class CfgVehicles {
     };
 
     class Tank_F;
-    class kat_stretcher: Tank_F {
+    class KAM_stretcher: Tank_F {
         explosionEffect = "";
         fuelExplosionPower = 0;
         editorForceEmpty = 1;
@@ -86,7 +86,7 @@ class CfgVehicles {
         allowTabLock = 0;
         memoryPointsGetInCargo = "pos cargo";
         memoryPointsGetInCargoDir = "pos cargo dir";
-        cargoAction[] = {"kat_stretcher"};
+        cargoAction[] = {"KAM_stretcher"};
         tf_isolatedAmount = 0;
         numberPhysicalWheels = 0;
         hideProxyInCombat = 0;
@@ -175,7 +175,7 @@ class CfgVehicles {
             class ACE_Equipment {
                 class assembleStretcher {
                     displayName = CSTRING(stretcher_assemble);
-                    condition = QUOTE('kat_stretcher' in items (_this select 0));
+                    condition = QUOTE('KAM_stretcher' in items (_this select 0));
                     statement = QUOTE(_this call FUNC(assembleStretcher));
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};

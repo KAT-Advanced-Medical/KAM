@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
+<Project name="KAM">
     <Package name="misc">
-        <Key ID="STR_kat_misc_Action_add_IV">
+        <Key ID="STR_KAM_misc_Action_add_IV">
             <English>Attaching IV</English>
             <German>IV wird angehangen</German>
             <Polish>Zakładanie IV</Polish>
             <Spanish>Administrando IV</Spanish>
         </Key>
-        <Key ID="STR_kat_misc_Action_add_IV_Display">
+        <Key ID="STR_KAM_misc_Action_add_IV_Display">
             <English>Attach IV (1000ml)</English>
             <German>IV anhängen (1000ml)</German>
             <Polish>Załóż IV (1000ml)</Polish>
             <Spanish>Adminsitrar IV (1000ml)</Spanish>
         </Key>
-        <Key ID="STR_kat_misc_Action_add_IV_Display_500">
+        <Key ID="STR_KAM_misc_Action_add_IV_Display_500">
             <English>Attach IV (500ml)</English>
             <German>IV anhängen (500ml)</German>
             <Polish>Załóż IV (500ml)</Polish>
             <Spanish>Adminsitrar IV (500ml)</Spanish>
         </Key>
-        <Key ID="STR_kat_misc_Action_add_IV_Display_250">
+        <Key ID="STR_KAM_misc_Action_add_IV_Display_250">
             <English>Attach IV (250ml)</English>
             <German>IV anhängen (250ml)</German>
             <Polish>Załóż IV (250ml)</Polish>
             <Spanish>Adminsitrar IV (250ml)</Spanish>
         </Key>
-        <Key ID="STR_kat_misc_Display_IVStand">
+        <Key ID="STR_KAM_misc_Display_IVStand">
             <English>Stand: Saline IV (1000ml)</English>
             <German>Ständer: Saline IV (1000ml)</German>
             <Polish>Stojak: Sól fizjologiczna IV (1000ml)</Polish>
             <Spanish>Soporte: Salino IV (1000ml)</Spanish>
         </Key>
-        <Key ID="STR_kat_misc_Display_IVStand_500">
+        <Key ID="STR_KAM_misc_Display_IVStand_500">
             <English>Stand: Saline IV (500ml)</English>
             <German>Ständer: Saline IV (500ml)</German>
             <Polish>Stojak: Sól fizjologiczna IV (500ml)</Polish>
             <Spanish>Soporte: Salino IV (500ml)</Spanish>
         </Key>
-        <Key ID="STR_kat_misc_Display_IVStand_250">
+        <Key ID="STR_KAM_misc_Display_IVStand_250">
             <English>Stand: Saline IV (250ml)</English>
             <German>Ständer: Saline IV (250ml)</German>
             <Polish>Stojak: Sól fizjologiczna IV (250ml)</Polish>
             <Spanish>Soporte: Salino IV (250ml)</Spanish>
         </Key>
-        <Key ID="STR_kat_misc_SETTING_LIMITWOUNDS_ENABLE">
+        <Key ID="STR_KAM_misc_SETTING_LIMITWOUNDS_ENABLE">
             <English>Enable limited wounds</English>
             <German>Aktiviere limitierte Wunden</German>
         </Key>
-        <Key ID="STR_kat_misc_LIMITWOUNDS_Display">
+        <Key ID="STR_KAM_misc_LIMITWOUNDS_Display">
             <English>Bandage wounds</English>
             <German>Behandle Wunden</German>
         </Key>
-        <Key ID="STR_kat_misc_Condition_limitWounds_Display">
+        <Key ID="STR_KAM_misc_Condition_limitWounds_Display">
             <English>Use condition limit wounds</English>
             <German>Bendingung für limitierte Wunden</German>
         </Key>
-        <Key ID="STR_kat_misc_SETTING_enable">
+        <Key ID="STR_KAM_misc_SETTING_enable">
             <English>ACE-Misc activated?</English>
             <German>ACE-Sonstiges aktivieren?</German>
             <Polish>ACE-Inne aktywowane?</Polish>
             <Spanish>¿Activar ACE-Misceláneos?</Spanish>
         </Key>
-        <Key ID="STR_kat_misc_stretcher_display">
+        <Key ID="STR_KAM_misc_stretcher_display">
             <English>Stretcher</English>
             <German>Trage</German>
         </Key>
-        <Key ID="STR_kat_misc_stretcher_assemble">
+        <Key ID="STR_KAM_misc_stretcher_assemble">
             <English>Assemble stretcher</English>
             <German>Baue Trage auf</German>
         </Key>
-        <Key ID="STR_kat_misc_stretcher_disassemble">
+        <Key ID="STR_KAM_misc_stretcher_disassemble">
             <English>Disassemble stretcher</English>
             <German>Trage einklappen</German>
         </Key>
-        <Key ID="STR_kat_misc_stretcher_attach">
+        <Key ID="STR_KAM_misc_stretcher_attach">
             <English>Attach to</English>
             <German>Anhängen an</German>
         </Key>
-        <Key ID="STR_kat_misc_stretcher_desc">
+        <Key ID="STR_KAM_misc_stretcher_desc">
             <English>A stretcher is an apparatus used for moving patients who require medical care.</English>
             <German>Eine Trage ist ein Gerät, mit dem Patienten bewegt werden, die medizinische Versorgung benötigen.</German>
         </Key>

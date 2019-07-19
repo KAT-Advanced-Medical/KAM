@@ -10,14 +10,14 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_misc_fnc_stretcher;
+ * [cursorTarget] call KAM_misc_fnc_stretcher;
  *
  * Public: No
  */
 
 (_this select 0) params ["_object"];
 
-if !(_object isKindOf "kat_stretcher") exitWith {false};
+if !(_object isKindOf "KAM_stretcher") exitWith {false};
 
 [_object] call ace_dragging_fnc_initObject;
 
@@ -25,7 +25,7 @@ if !(_object isKindOf "kat_stretcher") exitWith {false};
     [QGVAR(disassemble), localize LSTRING(stretcher_disassemble), "", {
         params [["_object", objNull, [objNull]]];
         private _weaponHolder = createVehicle ["GroundWeaponHolder_Scripted", getPos _object, [], 0, "CAN_COLLIDE"];
-        _weaponHolder addItemCargoGlobal ["kat_stretcher", 1];
+        _weaponHolder addItemCargoGlobal ["KAM_stretcher", 1];
         deleteVehicle _object;
     }, {
         params [["_object", objNull, [objNull]]];

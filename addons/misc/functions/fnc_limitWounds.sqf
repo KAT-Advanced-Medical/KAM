@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_misc_fnc_limitWounds;
+ * [cursorTarget] call KAM_misc_fnc_limitWounds;
  *
  * Public: Yes
  */

@@ -1,1 +1,1 @@
-#include "\x\kat\addons\misc\script_component.hpp"
+#include "\x\KAM\addons\misc\script_component.hpp"
