@@ -5,8 +5,8 @@
 // Default versioning level
 #define DEFAULT_VERSIONING_LEVEL 2
 
-#define DGVAR(varName)    if(isNil "KAT_DEBUG_NAMESPACE") then { KAT_DEBUG_NAMESPACE = []; }; if(!(QUOTE(GVAR(varName)) in KAT_DEBUG_NAMESPACE)) then { PUSH(KAT_DEBUG_NAMESPACE, QUOTE(GVAR(varName))); }; GVAR(varName)
-#define DVAR(varName)     if(isNil "KAT_DEBUG_NAMESPACE") then { KAT_DEBUG_NAMESPACE = []; }; if(!(QUOTE(varName) in KAT_DEBUG_NAMESPACE)) then { PUSH(KAT_DEBUG_NAMESPACE, QUOTE(varName)); }; varName
+#define DGVAR(varName)    if(isNil "KAM_DEBUG_NAMESPACE") then { KAM_DEBUG_NAMESPACE = []; }; if(!(QUOTE(GVAR(varName)) in KAM_DEBUG_NAMESPACE)) then { PUSH(KAM_DEBUG_NAMESPACE, QUOTE(GVAR(varName))); }; GVAR(varName)
+#define DVAR(varName)     if(isNil "KAM_DEBUG_NAMESPACE") then { KAM_DEBUG_NAMESPACE = []; }; if(!(QUOTE(varName) in KAM_DEBUG_NAMESPACE)) then { PUSH(KAM_DEBUG_NAMESPACE, QUOTE(varName)); }; varName
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
 #define DEFUNC(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
 
@@ -94,11 +94,11 @@
 
 #define PREP_MODULE(folder) [] call compile preprocessFileLineNumbers QPATHTOF(folder\__PREP__.sqf)
 
-#define KAT_isHC (!hasInterface && !isDedicated)
+#define KAM_isHC (!hasInterface && !isDedicated)
 
 #define IDC_STAMINA_BAR 193
 
-#define KAT_DEPRECATED(arg1,arg2,arg3) WARNING_3("%1 is deprecated. Support will be dropped in version %2. Replaced by: %3",arg1,arg2,arg3)
+#define KAM_DEPRECATED(arg1,arg2,arg3) WARNING_3("%1 is deprecated. Support will be dropped in version %2. Replaced by: %3",arg1,arg2,arg3)
 
 #define PFORMAT_10(MESSAGE,A,B,C,D,E,F,G,H,I,J) \
     format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9, I=%10 J=%11', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H), RETNIL(I), RETNIL(J)]
@@ -128,4 +128,63 @@
 // medical things
 #define BLOOD_TYPE(unit) (unit getVariable [QEGVAR(circulation,bloodtype),"O"])
 
+#define LINKFUNC(var1) {_this call FUNC(var1)}
+
 #include "script_debug.hpp"
+
+#define DEFAULT_BLOOD_VOLUME 6.0 // in liters
+#define DEFAULT_HEART_RATE 80
+#define DEFAULT_PERIPH_RES 100
+#define DEFAULT_TOURNIQUET_VALUES [0,0,0,0,0,0]
+#define DEFAULT_FRACTURE_VALUES [0,0,0,0,0,0]
+
+// - Unit Variables ----------------------------------------------------
+// These variables get stored in object space and used across components
+// Defined here for easy consistency with GETVAR/SETVAR (also a list for reference)
+#define VAR_BLOOD_PRESS       "ace_medical_bloodPressure"
+#define VAR_BLOOD_VOL         "ace_medical_bloodVolume"
+#define VAR_WOUND_BLEEDING    "ace_medical_woundBleeding"
+#define VAR_CRDC_ARRST        "ace_medical_inCardiacArrest"
+#define VAR_HEART_RATE        "ace_medical_heartRate"
+#define VAR_PAIN              "ace_medical_pain"
+#define VAR_PAIN_SUPP         "ace_medical_painSuppress"
+#define VAR_PERIPH_RES        "ace_medical_peripheralResistance"
+#define VAR_UNCON             "ACE_isUnconscious"
+#define VAR_OPEN_WOUNDS       "ace_medical_openWounds"
+#define VAR_BANDAGED_WOUNDS   "ace_medical_bandagedWounds"
+#define VAR_STITCHED_WOUNDS   "ace_medical_stitchedWounds"
+// These variables track gradual adjustments (from medication, etc.)
+#define VAR_MEDICATIONS       "ace_medical_medications"
+// These variables track the current state of status values above
+#define VAR_HEMORRHAGE        "ace_medical_hemorrhage"
+#define VAR_IN_PAIN           "ace_medical_inPain"
+#define VAR_TOURNIQUET        "ace_medical_tourniquets"
+#define VAR_FRACTURES         "ace_medical_fractures"
+
+// - Unit Functions ---------------------------------------------------
+// Retrieval macros for common unit values
+// Defined for easy consistency and speed
+#define GET_BLOOD_VOLUME(unit)      (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
+#define GET_WOUND_BLEEDING(unit)    (unit getVariable [VAR_WOUND_BLEEDING, 0])
+#define GET_HEART_RATE(unit)        (unit getVariable [VAR_HEART_RATE, DEFAULT_HEART_RATE])
+#define GET_HEMORRHAGE(unit)        (unit getVariable [VAR_HEMORRHAGE, 0])
+#define GET_PAIN(unit)              (unit getVariable [VAR_PAIN, 0])
+#define GET_PAIN_SUPPRESS(unit)     (unit getVariable [VAR_PAIN_SUPP, 0])
+#define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
+#define GET_FRACTURES(unit)         (unit getVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES])
+#define IN_CRDC_ARRST(unit)         (unit getVariable [VAR_CRDC_ARRST, false])
+#define IS_BLEEDING(unit)           (GET_WOUND_BLEEDING(unit) > 0)
+#define IS_IN_PAIN(unit)            (unit getVariable [VAR_IN_PAIN, false])
+#define IS_UNCONSCIOUS(unit)        (unit getVariable [VAR_UNCON, false])
+#define GET_OPEN_WOUNDS(unit)       (unit getVariable [VAR_OPEN_WOUNDS, []])
+#define GET_BANDAGED_WOUNDS(unit)   (unit getVariable [VAR_BANDAGED_WOUNDS, []])
+#define GET_STITCHED_WOUNDS(unit)   (unit getVariable [VAR_STITCHED_WOUNDS, []])
+
+// The following function calls are defined here just for consistency
+#define GET_BLOOD_LOSS(unit)        ([unit] call EFUNC(medical_status,getBloodLoss))
+#define GET_BLOOD_PRESSURE(unit)    ([unit] call EFUNC(medical_status,getBloodPressure))
+
+// Derivative unit values commonly used
+#define GET_PAIN_PERCEIVED(unit)    (0 max (GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1)
+
+#define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)

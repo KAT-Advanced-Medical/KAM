@@ -19,13 +19,13 @@ class CfgPatches {
 
 class CfgMods {
     class PREFIX {
-        dir = "@kat_aceAdvMedical";
+        dir = "@KAM";
         name = "KAT - Advanced Medical";
         picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
         hidePicture = "true";
         hideName = "true";
         actionName = "Website";
         action = CSTRING(URL);
-        description = "Issue Tracker: https://github.com/Katalam/kat_aceAdvMedical/issues";
+        description = "Issue Tracker: https://github.com/Katalam/KAM/issues";
     };
 };
