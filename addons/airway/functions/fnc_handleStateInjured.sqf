@@ -10,11 +10,13 @@
  * None
  *
  * Example:
- * [player] call KAM_airwayairway_fnc_handleDie;
+ * [player] call KAM_airway_fnc_handleStateInjured
  *
  * Public: No
  */
 
-params ["_unit"];
+params ["_unit", "_woundedHitPoint", "_receivedDamage", "", "_ammo"];
+
+// If the unit died the loop is finished
+if (!alive _unit) exitWith {};
 if (!local _unit) exitWith {};
-_unit call FUNC(init);

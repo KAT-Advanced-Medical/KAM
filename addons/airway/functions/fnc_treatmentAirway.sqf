@@ -13,7 +13,7 @@
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [player, cursorTarget, "head", "npa"] call kat_airway_fnc_treatment_airway;
+ * [player, cursorTarget, "head", "npa"] call KAM_airway_fnc_treatment_airway;
  *
  * Public: No
  */

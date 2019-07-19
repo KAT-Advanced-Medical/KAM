@@ -10,7 +10,7 @@
  * 3: Treatment class name <STRING>
  *
  * ReturnValue:
- * Can Bandage <BOOL>
+ * Can Suction <BOOL>
  *
  * Public: No
  */

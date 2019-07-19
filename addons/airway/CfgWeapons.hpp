@@ -2,7 +2,7 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
-    class kat_nasopharyngeal: ACE_ItemCore {
+    class KAM_nasopharyngeal: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName = CSTRING(npa_display);
@@ -14,7 +14,7 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class kat_oropharyngeal: ACE_ItemCore {
+    class KAM_oropharyngeal: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName = CSTRING(opa_display);
@@ -26,7 +26,7 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class kat_endotracheal: ACE_ItemCore {
+    class KAM_endotracheal: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName = CSTRING(end_display);
@@ -38,7 +38,7 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class kat_suction: ACE_ItemCore {
+    class KAM_suction: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName = CSTRING(suction_display);
@@ -50,7 +50,7 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class kat_accuvac: ACE_ItemCore {
+    class KAM_accuvac: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
         displayName = CSTRING(accuvac_display);

@@ -5,21 +5,9 @@ if !(GVAR(enable)) exitWith {};
 [QGVAR(treatmentAirwayLocal), FUNC(treatmentAirwayLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(treatmentSuctionLocal), FUNC(treatmentSuctionLocal)] call CBA_fnc_addEventHandler;
 
-["ace_unconscious", {
-    params ["_unit", "_state"];
-    if !(_state) exitWith {
-        _unit call FUNC(init);
-    };
-    if (_unit getVariable [GVAR(string_exit), false]) exitWith {};
-    if (EGVAR(breathing,enable)) then {
-        ["handleBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
-    };
-    [_unit] call FUNC(handleAirway);
-    [_unit] call FUNC(handlePuking);
-}] call CBA_fnc_addEventHandler;
+["ace_medical_woundReceived", LINKFUNC(handleStateInjured)] call CBA_fnc_addEventHandler;
 
-["deathTimerAirway", {_this call FUNC(handleTimer)}] call CBA_fnc_addEventHandler;
-["ace_treatmentSucceded",{
+["ace_medical_treatment_treatmentFullHealLocal",{
     params ["", "_target", "", "_className"];
     if (toUpper _className isEqualTo "PERSONALAIDKIT" && local _target) exitWith {
         _target call FUNC(init);

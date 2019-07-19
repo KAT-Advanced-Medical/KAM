@@ -13,7 +13,7 @@
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentSuction;
+ * [player, cursorTarget] call KAM_airway_fnc_treatmentSuction;
  *
  * Public: Yes
  */

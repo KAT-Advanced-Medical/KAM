@@ -8,7 +8,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         requiredMedic = 1;
         treatmentTime = 5;
-        items[] = {"kat_nasopharyngeal"};
+        items[] = {"kam_nasopharyngeal"};
         condition = QFUNC(canAirway);
         callbackSuccess = QFUNC(treatmentAirway);
         litter[] = {};
@@ -16,19 +16,19 @@ class ACE_Medical_Treatment_Actions {
     class Oropharyngeal: Nasopharyngeal {
         displayName = CSTRING(opa_display);
         requiredMedic = 0;
-        items[] = {"kat_oropharyngeal"};
+        items[] = {"kam_oropharyngeal"};
         callbackSuccess = QFUNC(treatmentAirway);
     };
     class Endotracheal: Nasopharyngeal {
         displayName = CSTRING(end_display);
         requiredMedic = 2;
-        items[] = {"kat_endotracheal"};
+        items[] = {"kam_endotracheal"};
         callbackSuccess = QFUNC(treatmentAirway);
     };
     class Suction: Nasopharyngeal {
         displayName = CSTRING(suction_display);
         treatmentTime = 8;
-        items[] = {"kat_suction"};
+        items[] = {"kam_suction"};
         itemConsumed = 0;
         condition = QFUNC(canSuction);
         callbackSuccess = QFUNC(treatmentSuction);
@@ -36,7 +36,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Accuvac: suction {
         displayName = CSTRING(accuvac_display);
-        items[] = {"kat_accuvac"};
+        items[] = {"kam_accuvac"};
         sounds[] = {{QPATHTOF_SOUND(sounds\suction.wav), 1, 1, 50}};
     };
     class HeadTilt: Nasopharyngeal {

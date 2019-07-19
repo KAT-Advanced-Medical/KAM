@@ -13,16 +13,22 @@
  * Succesful treatment <BOOL>
  *
  * Example:
- * [player, cursorTarget, "head", "Accuvac"] call kat_airway_fnc_treatmentSuctionLocal;
+ * [player, cursorTarget, "head", "Accuvac"] call KAM_airway_fnc_treatmentSuctionLocal;
  *
  * Public: No
  */
 
-params ["", "_target", "", "_className"];
+params ["_caller", "_target", "", "_className"];
 
+if (_className isEqualTo (toLower "turnaround") && {random(100) < 35}) exitWith {
+    private _output = localize LSTRING(turnaround_left);
+    [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
+    false;
+};
+
+_className = str formatText ["KAM_%1", toLower _className];
 _target setVariable [QGVAR(occluded), false, true];
 
-_className = str formatText ["kat_%1", toLower _className];
 private _item = if (isClass (configFile >> "CfgWeapons" >> _className)) then {
     getText (configFile >> "CfgWeapons" >> _className >> "displayName");
 } else {

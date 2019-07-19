@@ -13,16 +13,14 @@
  * Succesful treatment <BOOL>
  *
  * Example:
- * [player, cursorTarget, "head", "npa"] call kat_airway_fnc_treatmentAirwayLocal;
+ * [player, cursorTarget, "head", "npa"] call KAM_airway_fnc_treatmentAirwayLocal;
  *
  * Public: No
  */
 
 params ["_caller", "_target", "", "_className"];
 
-if (_className isEqualTo "TurnAround" && {random(100) < 35}) exitWith {false};
-
-_className = str formatText ["kat_%1", toLower _className];
+_className = str formatText ["KAM_%1", toLower _className];
 _target setVariable [QGVAR(airway), [true, _className], true];
 _target setVariable [QGVAR(obstruction), false, true];
 

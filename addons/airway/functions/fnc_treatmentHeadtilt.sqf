@@ -11,42 +11,23 @@
  * Succesful treatment <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_overstretchHead;
+ * [player, cursorTarget] call KAM_airway_fnc_treatmentAdvanced_overstretchHead;
  *
  * Public: No
  */
 
 params ["_player", "_target"];
 
-if (_target getVariable [QGVAR(overstretch), false]) exitWith {
-    private _output = localize LSTRING(Airway_already);
-    [_output, 2, _player] call ace_common_fnc_displayTextStructured;
-    false;
-};
-if !(_target getVariable [QGVAR(obstruction), false]) exitWith {
-    private _output = localize LSTRING(Airway_NA);
-    [_output, 2, _player] call ace_common_fnc_displayTextStructured;
-    false;
-};
+// to-do animation!
 
-_target setVariable [QGVAR(overstretch), true, true];
+_target setVariable [QGVAR(headtilt), true, true];
 
-private _output = localize LSTRING(overstretch_info);
+private _output = localize LSTRING(headtilt_info);
 [_output, 2, _player] call ace_common_fnc_displayTextStructured;
 
-[{
-    params ["_player", "_target"];
-    (_target distance2D _player) > 5;
-}, {
-    params ["_player", "_target"];
-    _target setVariable [QGVAR(overstretch), false, true];
-    _output = localize LSTRING(overstretch_cancel);
-    [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
-}, [_player, _target], 120, {
-    params ["_player", "_target"];
-    _target setVariable [QGVAR(overstretch), false, true];
-    _output = localize LSTRING(overstretch_cancel);
-    [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
-}] call CBA_fnc_waitUntilAndExecute;
-
 true;
+
+/*
+ * ((eyeDirection player) select 2) < -0.02
+ * Works great
+ */

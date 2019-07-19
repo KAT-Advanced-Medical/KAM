@@ -11,10 +11,17 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_checkAirway;
+ * [player, cursorTarget] call KAM_airway_fnc_checkAirway;
  *
  * Public: No
  */
+
+/*
+“Airway is patent.” // frei
+“Airway is compromised.” // gefährdet
+“Patient appears to be struggling to breathe.” // probleme beim atmen
+“Patient appears to be breathing.” // atmet
+*/
 
 params ["_player", "_target"];
 

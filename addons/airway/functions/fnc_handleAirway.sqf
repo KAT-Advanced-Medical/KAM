@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_airway_fnc_handleAirway;
+ * [player] call KAM_airway_fnc_handleAirway;
  *
  * Public: No
  */
@@ -19,13 +19,31 @@ params ["_unit"];
 
 if !(GVAR(enable)) exitWith {};
 
-//if !(_selectionName in ["head", "neck", "face_hub", "body"]) exitWith {};
-// it doesn't make sense to restrict it on the head. 'Cause unconcious state is the reason and not the damage selection
+// Contusion -> pneumo?
 
+private "_className";
+private _airwayInjuries = 0;
 
-if (random(100) <= GVAR(probability_obstruction)) then {
-    if !(_unit getVariable [QGVAR(obstruction), false]) then {
-        _unit setVariable [QGVAR(obstruction), true, true];
-        [_unit, CBA_missionTime] call FUNC(handleTimer);
+{
+    _x params ["", "_woundClassID", "_bodyPartN"];
+
+    // If any single gun shot wound is here go ahead (or burns)
+    if (_bodyPartN == 0) exitWith {
+        _className = ace_medical_damage_woundsData select _woundClassID select 6;
+        if (toLower _className in ["velocitywound", "contusion"]) then {
+            _airwayInjuries = _airwayInjuries + 1;
+        };
     };
-};
+    false;
+} forEach (_unit getVariable ["ace_medical_openWounds", []]);
+
+if (_airwayInjuries == 0) exitWith {};
+
+[{
+    params ["_unit"];
+    if (((eyeDirection _unit) select 2) < -0.02) then {
+        if !(_unit getVariable [QGVAR(obstruction), false]) then {
+            _unit setVariable [QGVAR(obstruction), true, true];
+        };
+    };
+}, [_unit], 2] call CBA_fnc_waitAndExecute;
