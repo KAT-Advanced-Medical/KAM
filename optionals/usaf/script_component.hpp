@@ -1,6 +1,6 @@
 #define COMPONENT usaf
-#define COMPONENT_BEAUTIFIED KAT USAF
-#include "\x\kat\addons\main\script_mod.hpp"
+#define COMPONENT_BEAUTIFIED USAF
+#include "\x\KAM\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -14,4 +14,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_USAF
 #endif
 
-#include "\x\kat\addons\main\script_macros.hpp"
+#include "\x\KAM\addons\main\script_macros.hpp"

@@ -8,7 +8,7 @@ class CfgPatches {
         weapons[] = { };
         magazines[] = {};
         requiredAddons[] = {
-            "kat_acemisc",
+            "KAM_acemisc",
             "rhs_usaf"
         };
         author = "Katalam";
