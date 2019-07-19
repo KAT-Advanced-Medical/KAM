@@ -2,7 +2,7 @@ class CfgMagazines {
     class CA_Magazine;
 
     class KAM_painkiller: CA_Magazine {
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         scope = 2;
 
         displayName = CSTRING(painkillers_display);

@@ -5,7 +5,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(pulseoximeter_display);
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         vehicleClass = "Items";
         class TransportItems {
             MACRO_ADDITEM(KAM_pulseoximeter,1);

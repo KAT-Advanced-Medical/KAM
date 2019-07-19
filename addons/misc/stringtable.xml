@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAM">
     <Package name="misc">
+        <Key ID="STR_KAM_misc_AUTHOR">
+            <English>Katalam</English>
+            <German>Katalam</German>
+            <Polish>Katalam</Polish>
+            <Spanish>Katalam</Spanish>
+        </Key>
         <Key ID="STR_KAM_misc_Action_add_IV">
             <English>Attaching IV</English>
             <German>IV wird angehangen</German>

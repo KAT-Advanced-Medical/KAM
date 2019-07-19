@@ -25,8 +25,8 @@ class CfgPatches {
             "cba_settings",
             "KAM_main"
         };
-        author = "Katalam";
-        authors[] = {"Katalam"};
+        author = CSTRING(AUTHOR);
+        authors[] = {CSTRING(AUTHOR)};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };

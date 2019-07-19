@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAM">
     <Package name="airway">
-        <Key ID="STR_KAM_URL">
-            <English>https://github.com/Katalam/kat_aceAdvMedical</English>
-            <German>https://github.com/Katalam/kat_aceAdvMedical</German>
-            <Polish>https://github.com/Katalam/kat_aceAdvMedical</Polish>
-            <Spanish>https://github.com/Katalam/kat_aceAdvMedical</Spanish>
+        <Key ID="STR_KAM_airway_AUTHOR">
+            <English>Katalam</English>
+            <German>Katalam</German>
+            <Polish>Katalam</Polish>
+            <Spanish>Katalam</Spanish>
         </Key>
         <Key ID="STR_KAM_airway_SETTING_ENABLE">
             <English>ACE-Airway injuries activated?</English>

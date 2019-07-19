@@ -5,5 +5,11 @@
             <English>https://github.com/Katalam/KAM</English>
             <German>https://github.com/Katalam/KAM</German>
         </Key>
+        <Key ID="STR_KAM_URL">
+            <English>https://github.com/Katalam/KAM</English>
+            <German>https://github.com/Katalam/KAM</German>
+            <Polish>https://github.com/Katalam/KAM</Polish>
+            <Spanish>https://github.com/Katalam/KAM</Spanish>
+        </Key>
     </Package>
 </Project>

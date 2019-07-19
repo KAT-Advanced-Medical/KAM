@@ -5,7 +5,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(npa_display);
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         vehicleClass = "Items";
         class TransportItems {
             MACRO_ADDITEM(KAM_nasopharyngeal,1);
@@ -15,7 +15,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(opa_display);
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         vehicleClass = "Items";
         class TransportItems {
             MACRO_ADDITEM(KAM_oropharyngeal,1);
@@ -25,7 +25,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(end_display);
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         vehicleClass = "Items";
         class TransportItems {
             MACRO_ADDITEM(KAM_endotracheal,1);
@@ -35,7 +35,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(suction_display);
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         vehicleClass = "Items";
         class TransportItems {
             MACRO_ADDITEM(KAM_suction,1);
@@ -45,7 +45,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(accuvac_display);
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         vehicleClass = "Items";
         class TransportItems {
             MACRO_ADDITEM(KAM_accuvac,1);

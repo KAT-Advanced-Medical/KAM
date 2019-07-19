@@ -17,7 +17,7 @@ class CfgPatches {
             "kam_airway",
             "cba_settings"
         };
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         authors[] = {"Katalam"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;

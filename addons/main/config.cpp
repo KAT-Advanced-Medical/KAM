@@ -11,7 +11,7 @@ class CfgPatches {
             "cba_main",
             "ace_main"
         };
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         url = CSTRING(URL);
         VERSION_CONFIG;
     };

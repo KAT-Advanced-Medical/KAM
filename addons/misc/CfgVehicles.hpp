@@ -54,7 +54,7 @@ class CfgVehicles {
             primary = 1;
             dissasembleTo[] = {};
         };
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         scope = 2;
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_DismantledWeapons";

@@ -44,7 +44,7 @@ class CfgWeapons {
     };
     class KAM_PainkillerItem: ACE_ItemCore {
         scope = 1; // no mistake, just a placeholder, cause ACE can't handle magazines. DO NOT USE!
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         displayName = CSTRING(painkillers_display);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0;
@@ -53,7 +53,7 @@ class CfgWeapons {
     /*
     class KAM_X_AED: adv_aceCPR_AED {
         scope = 2;
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         displayName = CSTRING(X_Display);
         picture = QPATHTOF(ui\x-series.paa);
         model = QPATHTOF(models\aedx\aedx.p3d);
@@ -66,7 +66,7 @@ class CfgWeapons {
     */
     class KAM_crossPanel: ACE_ItemCore {
         scope = 2;
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         displayName = CSTRING(crosspanel);
         descriptionShort = CSTRING(crosspanel_desc);
         picture = QPATHTOF(ui\crosspanel.paa);

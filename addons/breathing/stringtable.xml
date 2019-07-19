@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAM">
     <Package name="breathing">
+        <Key ID="STR_KAM_breathing_AUTHOR">
+            <English>Katalam</English>
+            <German>Katalam</German>
+            <Polish>Katalam</Polish>
+            <Spanish>Katalam</Spanish>
+        </Key>
         <Key ID="STR_KAM_breathing_SETTING_ENABLE">
             <English>ACE-Breathing activated?</English>
             <German>ACE-Atmung aktiviert?</German>

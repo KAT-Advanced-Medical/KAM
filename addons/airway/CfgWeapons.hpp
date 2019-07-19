@@ -4,7 +4,7 @@ class CfgWeapons {
 
     class KAM_nasopharyngeal: ACE_ItemCore {
         scope = 2;
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         displayName = CSTRING(npa_display);
         descriptionShort = CSTRING(npa_desc);
         descriptionUse = CSTRING(npa_desc);
@@ -16,7 +16,7 @@ class CfgWeapons {
     };
     class KAM_oropharyngeal: ACE_ItemCore {
         scope = 2;
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         displayName = CSTRING(opa_display);
         descriptionShort = CSTRING(opa_desc);
         descriptionUse = CSTRING(opa_desc);
@@ -28,7 +28,7 @@ class CfgWeapons {
     };
     class KAM_endotracheal: ACE_ItemCore {
         scope = 2;
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         displayName = CSTRING(end_display);
         descriptionShort = CSTRING(end_desc);
         descriptionUse = CSTRING(end_desc);
@@ -40,7 +40,7 @@ class CfgWeapons {
     };
     class KAM_suction: ACE_ItemCore {
         scope = 2;
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         displayName = CSTRING(suction_display);
         //descriptionShort = CSTRING(Accuvac_Desc_Short);
         //descriptionUse = CSTRING(Accuvac_Desc_Use);
@@ -52,7 +52,7 @@ class CfgWeapons {
     };
     class KAM_accuvac: ACE_ItemCore {
         scope = 2;
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         displayName = CSTRING(accuvac_display);
         descriptionShort = CSTRING(accuvac_desc);
         descriptionUse = CSTRING(accuvac_desc);

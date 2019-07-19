@@ -13,7 +13,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(painkillers_display);
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         vehicleClass = "Magazines";
         class TransportItems {
             MACRO_ADDITEM(KAM_painkiller,1);
@@ -24,7 +24,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(X_Display);
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         class TransportItems {
             MACRO_ADDITEM(KAM_X_AED,1);
         };

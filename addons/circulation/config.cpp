@@ -37,7 +37,7 @@ class CfgPatches {
             "kam_main"
             //"adv_aceCPR"
         };
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         authors[] = {"Katalam"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;

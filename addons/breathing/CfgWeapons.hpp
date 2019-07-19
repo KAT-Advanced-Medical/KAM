@@ -4,7 +4,7 @@ class CfgWeapons {
 
     class KAM_pulseoximeter: ACE_ItemCore {
         scope = 2;
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         displayName = CSTRING(pulseoximeter_display);
         descriptionShort = CSTRING(pulseoximeter_desc);
         descriptionUse = CSTRING(pulseoximeter_desc);

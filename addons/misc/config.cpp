@@ -16,7 +16,7 @@ class CfgPatches {
             "cba_settings",
             "A3_Static_F"
         };
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         authors[] = {"Katalam"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;

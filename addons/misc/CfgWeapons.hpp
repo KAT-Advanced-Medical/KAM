@@ -4,7 +4,7 @@ class CfgWeapons {
 
     class KAM_stretcher: ACE_ItemCore {
         scope = 2;
-        author = "Katalam";
+        author = CSTRING(AUTHOR);
         displayName = CSTRING(stretcher_display);
         descriptionShort = CSTRING(stretcher_desc);
         descriptionUse = CSTRING(stretcher_desc);
