@@ -13,7 +13,7 @@ import time
 
 ######## GLOBALS #########
 MAINPREFIX = "x"
-PREFIX = "kat_"
+PREFIX = "KAM_"
 ##########################
 
 def Fract_Sec(s):

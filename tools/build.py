@@ -6,7 +6,7 @@ import subprocess
 
 ######## GLOBALS #########
 MAINPREFIX = "x"
-PREFIX = "kat_"
+PREFIX = "kam_"
 ##########################
 
 def mod_time(path):
