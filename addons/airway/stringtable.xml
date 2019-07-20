@@ -46,6 +46,18 @@
             <English>Punch string</English>
             <German>Punch string</German>
         </Key>
+        <Key ID="STR_KAM_airway_SETTING_npa_requiredLevel">
+            <English>Required medic level for NPA treatment.</English>
+            <German>Regelt wer ein NPA setzen darf.</German>
+        </Key>
+        <Key ID="STR_KAM_airway_SETTING_opa_requiredLevel">
+            <English>Required medic level for OPA treatment.</English>
+            <German>Regelt wer ein OPA setzen darf.</German>
+        </Key>
+        <Key ID="STR_KAM_airway_SETTING_end_requiredLevel">
+            <English>Required medic level for endotracheal treatment.</English>
+            <German>Regelt wer ein Endotrachealtubus setzen darf.</German>
+        </Key>
         <Key ID="STR_KAM_airway_checkAirway">
             <English>Check Airways</English>
             <German>Überprüfe Atemwege</German>

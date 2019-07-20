@@ -23,7 +23,7 @@ class CfgPatches {
         requiredAddons[] = {
             "ace_medical",
             "cba_settings",
-            "KAM_main"
+            "kam_main"
         };
         author = CSTRING(AUTHOR);
         authors[] = {CSTRING(AUTHOR)};
@@ -39,3 +39,4 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "ACE_Medical_Injuries.hpp"

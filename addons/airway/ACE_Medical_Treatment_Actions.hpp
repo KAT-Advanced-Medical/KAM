@@ -6,29 +6,30 @@ class ACE_Medical_Treatment_Actions {
         category = "airway";
         allowedSelections[] = {"head"};
         allowSelfTreatment = 0;
-        requiredMedic = 1;
-        treatmentTime = 5;
-        items[] = {"kam_nasopharyngeal"};
+        requiredMedic = GVAR(npa_requiredLevel);
+        treatmentTime = 8;
+        items[] = {"KAM_nasopharyngeal"};
         condition = QFUNC(canAirway);
         callbackSuccess = QFUNC(treatmentAirway);
         litter[] = {};
     };
     class Oropharyngeal: Nasopharyngeal {
         displayName = CSTRING(opa_display);
-        requiredMedic = 0;
-        items[] = {"kam_oropharyngeal"};
+        requiredMedic = GVAR(opa_requiredLevel);
+        treatmentTime = 2;
+        items[] = {"KAM_oropharyngeal"};
         callbackSuccess = QFUNC(treatmentAirway);
     };
     class Endotracheal: Nasopharyngeal {
         displayName = CSTRING(end_display);
         requiredMedic = 2;
-        items[] = {"kam_endotracheal"};
+        items[] = {"KAM_endotracheal"};
         callbackSuccess = QFUNC(treatmentAirway);
     };
     class Suction: Nasopharyngeal {
         displayName = CSTRING(suction_display);
         treatmentTime = 8;
-        items[] = {"kam_suction"};
+        items[] = {"KAM_suction"};
         itemConsumed = 0;
         condition = QFUNC(canSuction);
         callbackSuccess = QFUNC(treatmentSuction);
@@ -36,7 +37,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Accuvac: suction {
         displayName = CSTRING(accuvac_display);
-        items[] = {"kam_accuvac"};
+        items[] = {"KAM_accuvac"};
         sounds[] = {{QPATHTOF_SOUND(sounds\suction.wav), 1, 1, 50}};
     };
     class HeadTilt: Nasopharyngeal {
@@ -56,8 +57,8 @@ class ACE_Medical_Treatment_Actions {
     };
     class CheckPulse;
     class CheckAirway: CheckPulse {
-        displayName = CSTRING(assessairway);
-        displayNameProgress = CSTRING(action_checking);
+        displayName = CSTRING(assessAirway);
+        displayNameProgress = CSTRING(assessAirway_progress);
         allowedSelections[] = {"head"};
         allowSelfTreatment = 0;
         callbackSuccess = QFUNC(checkAirway);

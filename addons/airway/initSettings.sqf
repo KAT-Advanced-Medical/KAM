@@ -68,3 +68,31 @@ In real life, this will happen sometimes, not quiet often.
     [["", "keko_wasPunched"], ["", "keko_wasPunched"], 0],
     true
 ] call CBA_Settings_fnc_init;
+
+// required medic class
+[
+    QGVAR(npa_requiredLevel),
+    "LIST",
+    localize LSTRING(SETTING_npa_requiredLevel),
+    [CBA_SETTINGS_CAT, QUOTE(COMPONENT_BEAUTIFIED)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(opa_requiredLevel),
+    "LIST",
+    localize LSTRING(SETTING_opa_requiredLevel),
+    [CBA_SETTINGS_CAT, QUOTE(COMPONENT_BEAUTIFIED)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(end_requiredLevel),
+    "LIST",
+    localize LSTRING(SETTING_end_requiredLevel),
+    [CBA_SETTINGS_CAT, QUOTE(COMPONENT_BEAUTIFIED)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
+    true
+] call CBA_Settings_fnc_init;
