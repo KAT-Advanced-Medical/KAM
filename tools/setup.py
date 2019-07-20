@@ -13,7 +13,7 @@ import winreg
 
 ######## GLOBALS #########
 MAINDIR = "x"
-PROJECTDIR = "KAM"
+PROJECTDIR = "kam"
 ##########################
 
 def main():
