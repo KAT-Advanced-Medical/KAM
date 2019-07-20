@@ -291,6 +291,14 @@
             <English>This is a definitive airway. It is the “best” type of airway that you can get but it is very invasive, usually for unconscious and really badly injured patients.</English>
             <German>Der Endotrachealtubus ist ein Hilfsmittel zur Sicherung der Atemwege der mittels einer endotrachealen Intubation eingebracht wird.</German>
         </Key>
+        <Key ID="STR_KAM_airway_removeAirway">
+            <English>Remove medical airway</English>
+            <German>Entferne künstlichen Atemweg</German>
+        </Key>
+        <Key ID="STR_KAM_airway_action_remove">
+            <English>Removing</English>
+            <German>Entferne</German>
+        </Key>
         <Key ID="STR_KAM_airway_suction_display">
             <English>Manual Suction Pump</English>
             <German>Handsaugpumpe</German>
@@ -338,6 +346,10 @@
             <German>%1 intubierte mit %2</German>
             <Polish>%1 intubowany z %2</Polish>
             <Spanish>%1 intubado con %2</Spanish>
+        </Key>
+        <Key ID="STR_KAM_airway_removeTube_log">
+            <English>%1 removed %2</English>
+            <German>%1 entfernte %2</German>
         </Key>
         <Key ID="STR_KAM_airway_turnaround_left">
             <English>There is still something inside</English>

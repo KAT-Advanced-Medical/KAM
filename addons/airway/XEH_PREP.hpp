@@ -1,10 +1,12 @@
 PREP(canAirway);
+PREP(canRemoveAirway);
 PREP(canSuction);
 PREP(checkAirway);
 PREP(handleAirway);
 PREP(handleBlood);
 PREP(handleDie);
 PREP(init);
+PREP(removeAirway);
 PREP(treatmentAirway);
 PREP(treatmentHeadtilt);
 PREP(treatmentSuction);

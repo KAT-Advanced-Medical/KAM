@@ -26,6 +26,15 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"KAM_endotracheal"};
         callbackSuccess = QFUNC(treatmentAirway);
     };
+    class RemoveAirway: Nasopharyngeal {
+        displayName = CSTRING(removeAirway);
+        displayNameProgress = CSTRING(action_remove);
+        requiredMedic = 0;
+        items[] = {};
+        allowSelfTreatment = 1;
+        condition = QFUNC(canRemoveAirway);
+        callbackSuccess = QFUNC(removeAirway);
+    };
     class Suction: Nasopharyngeal {
         displayName = CSTRING(suction_display);
         treatmentTime = 8;

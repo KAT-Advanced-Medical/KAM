@@ -2,6 +2,7 @@
 /*
  * Author: Katalam
  * Checks if airway management is possible.
+ * Endotracheal requires unconscious patient.
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -15,10 +16,17 @@
  * Public: No
  */
 
-params ["", "_patient"];
+params ["", "_target", "", "_className"];
 
 // Exit if airway is disabled
 if !(GVAR(enable)) exitWith {false};
-if ([_patient] call ace_common_fnc_isAwake) exitWith {false};
-if !(_patient getVariable [QGVAR(obstruction), false]) exitWith {false};
-true;
+
+// Exit if the same already exist
+private _classNameStored = _target getVariable [QGVAR(airway), [false, ""]] select 1 select [4]; // item name is stored not treatment className
+if (_classNameStored isEqualTo _className) exitWith {false};
+
+if (_className isEqualTo "Endotracheal") then {
+    if ([_target] call ace_common_fnc_isAwake) exitWith {false};
+};
+
+true

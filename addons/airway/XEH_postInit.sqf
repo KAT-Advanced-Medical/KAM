@@ -2,8 +2,9 @@
 
 if !(GVAR(enable)) exitWith {};
 
-[QGVAR(treatmentAirwayLocal), FUNC(treatmentAirwayLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(treatmentSuctionLocal), FUNC(treatmentSuctionLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(treatmentAirwayLocal), FUNC(treatmentAirway)] call CBA_fnc_addEventHandler;
+[QGVAR(removeAirwayLocal), FUNC(removeAirway)] call CBA_fnc_addEventHandler;
+[QGVAR(treatmentSuctionLocal), FUNC(treatmentSuction)] call CBA_fnc_addEventHandler;
 
 ["ace_medical_woundReceived", LINKFUNC(handleStateInjured)] call CBA_fnc_addEventHandler;
 
