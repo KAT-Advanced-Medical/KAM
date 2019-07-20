@@ -126,6 +126,30 @@
             <Polish>Usuń Pulsoksymetr</Polish>
             <Spanish>Quitar oxímetro de pulso</Spanish>
         </Key>
+        <Key ID="STR_KAM_breathing_bvm_display">
+            <English>Bag Valve Mask</English>
+            <German>Beatmungsbeutel</German>
+        </Key>
+        <Key ID="STR_KAM_breathing_bvm_desc">
+            <English>A device that once manually squeezed, transfers air from the bag to the patient.</English>
+            <German>Der Beatmungsbeutel ist ein Hilfsmittel zur manuellen Beatmung von Patienten.</German>
+        </Key>
+        <Key ID="STR_KAM_breathing_oxygen_display">
+            <English>Oxygen cylinder</English>
+            <German>Sauerstoffflasche</German>
+        </Key>
+        <Key ID="STR_KAM_breathing_oxygen_desc">
+            <English>This oxygen is used to oxygenate the patient, bringing up the levels of oxygen in their blood.</English>
+            <German>Eine mit Sauerstoff befüllte Gasflasche.</German>
+        </Key>
+        <Key ID="STR_KAM_breathing_needle_display">
+            <English>Chest Decompression Needle</English>
+            <German>Brust-Dekompressionsnadel</German>
+        </Key>
+        <Key ID="STR_KAM_breathing_needle_desc">
+            <English>This is for a very specific combat-related and trauma-related condition called a pneumothorax.</English>
+            <German>Dies ist für eine sehr spezielle kampfbedingte und traumatische Erkrankung, die als Pneumothorax bezeichnet wird.</German>
+        </Key>
         <Key ID="STR_KAM_breathing_placing">
             <English>Placing</English>
             <German>Anlegen</German>
