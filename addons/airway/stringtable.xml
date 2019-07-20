@@ -301,9 +301,13 @@
             <English>Head-tilt/chin-lift</English>
             <German>Kopf überstrecken</German>
         </Key>
-        <Key ID="STR_KAM_airway_assessairway">
+        <Key ID="STR_KAM_airway_assessAirway">
             <English>Assess airway</English>
             <German>Atemwege überprüfen</German>
+        </Key>
+        <Key ID="STR_KAM_airway_assessAirway_progress">
+            <English>Evaluating</English>
+            <German>Beurteile</German>
         </Key>
         <Key ID="STR_KAM_airway_tube_na">
             <English>Airwaymanagement not available</English>
