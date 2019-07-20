@@ -8,11 +8,11 @@ class CfgPatches {
         weapons[] = { };
         magazines[] = {};
         requiredAddons[] = {
-            "KAM_acemisc",
+            "kam_misc",
             "rhs_usaf"
         };
-        author = "Katalam";
-        authors[] = {"Katalam"};
+        author = CSTRING(AUTHOR);
+        authors[] = {CSTRING(AUTHOR)};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };

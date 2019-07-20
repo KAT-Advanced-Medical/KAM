@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAM">
+    <Package name="usaf">
+        <Key ID="STR_KAM_usaf_AUTHOR">
+            <English>Katalam</English>
+            <German>Katalam</German>
+            <Polish>Katalam</Polish>
+            <Spanish>Katalam</Spanish>
+        </Key>
+    </Package>
+</Project>
