@@ -6,288 +6,336 @@
             <German>ACE-Kreislauf aktivieren?</German>
             <Polish>ACE-Cyrkulacja aktywowana?</Polish>
             <Spanish>¿Activar ACE-Circulación?</Spanish>
+            <Chinese>啟用ACE-血型循環系統？</Chinese>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_variableHR_ENABLE">
             <English>Metabolism Dependent heartrate?</English>
             <German>Stoffwechselabhängiger Puls?</German>
             <Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
             <Spanish>¿Pulso cardíaco depende de metabolismo?</Spanish>
+            <Chinese>依心率來決定代謝率？</Chinese>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_loadout">
             <English>Different loadoutname</English>
             <German>Anderer Loadoutname</German>
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
+            <Chinese>不同配置名稱</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O">
             <English>Blood IV (1000ml) BT: 0</English>
             <German>Blut IV (1000ml) BG: 0</German>
             <Polish>Krew IV (1000ml) GK: 0</Polish>
             <Spanish>Sangre IV (1000ml) GS: 0</Spanish>
+            <Chinese>O型血液包 (1000ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A">
             <English>Blood IV (1000ml) BT: A</English>
             <German>Blut IV (1000ml) BG: A</German>
             <Polish>Krew IV (1000ml) GK: A</Polish>
             <Spanish>Sangre IV (1000ml) GS: A</Spanish>
+            <Chinese>A型血液包 (1000ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B">
             <English>Blood IV (1000ml) BT: B</English>
             <German>Blut IV (1000ml) BG: B</German>
             <Polish>Krew IV (1000ml) GK: B</Polish>
             <Spanish>Sangre IV (1000ml) GS: B</Spanish>
+            <Chinese>B型血液包 (1000ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB">
             <English>Blood IV (1000ml) BT: AB</English>
             <German>Blut IV (1000ml) BG: AB</German>
             <Polish>Krew IV (1000ml) GK: AB</Polish>
             <Spanish>Sangre IV (1000ml) GS: AB</Spanish>
+            <Chinese>AB型血液包 (1000ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_500">
             <English>Blood IV (500ml) BT: 0</English>
             <German>Blut IV (500ml) BG: 0</German>
             <Polish>Krew IV (500ml) GK: 0</Polish>
             <Spanish>Sangre IV (500ml) GS: 0</Spanish>
+            <Chinese>O型血液包 (500ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_500">
             <English>Blood IV (500ml) BT: A</English>
             <German>Blut IV (500ml) BG: A</German>
             <Polish>Krew IV (500ml) GK: A</Polish>
             <Spanish>Sangre IV (500ml) GS: A</Spanish>
+            <Chinese>A型血液包 (500ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_500">
             <English>Blood IV (500ml) BT: B</English>
             <German>Blut IV (500ml) BG: B</German>
             <Polish>Krew IV (500ml) GK: B</Polish>
             <Spanish>Sangre IV (500ml) GS: B</Spanish>
+            <Chinese>B型血液包 (500ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_500">
             <English>Blood IV (500ml) BT: AB</English>
             <German>Blut IV (500ml) BG: AB</German>
             <Polish>Krew IV (500ml) GK: AB</Polish>
             <Spanish>Sangre IV (500ml) GS: AB</Spanish>
+            <Chinese>AB型血液包 (500ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_250">
             <English>Blood IV (250ml) BT: 0</English>
             <German>Blut IV (250ml) BG: 0</German>
             <Polish>Krew IV (250ml) GK: 0</Polish>
             <Spanish>Sangre IV (250ML) GS: 0</Spanish>
+            <Chinese>O型血液包 (250ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_250">
             <English>Blood IV (250ml) BT: A</English>
             <German>Blut IV (250ml) BG: A</German>
             <Polish>Krew IV (250ml) GK: A</Polish>
             <Spanish>Sangre IV (250ML) GS: A</Spanish>
+            <Chinese>A型血液包 (250ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_250">
             <English>Blood IV (250ml) BT: B</English>
             <German>Blut IV (250ml) BG: B</German>
             <Polish>Krew IV (250ml) GK: B</Polish>
             <Spanish>Sangre IV (250ML) GS: B</Spanish>
+            <Chinese>B型血液包 (250ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_250">
             <English>Blood IV (250ml) BT: AB</English>
             <German>Blut IV (250ml) BG: AB</German>
             <Polish>Krew IV (250ml) GK: AB</Polish>
             <Spanish>Sangre IV (250ML) GS: AB</Spanish>
+            <Chinese>AB型血液包 (250ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_O">
             <English>Give Blood IV (1000ml) BT: 0</English>
             <German>Bluttransfusion IV (1000ml) BG: 0</German>
             <Polish>Podaj Krew IV (1000ml) GK: 0</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: 0</Spanish>
+            <Chinese>輸血液 (O型 1000ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_A">
             <English>Give Blood IV (1000ml) BT: A</English>
             <German>Bluttransfusion IV (1000ml) BG: A</German>
             <Polish>Podaj Krew IV (1000ml) GK: A</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: A</Spanish>
+            <Chinese>輸血液 (A型 1000ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_B">
             <English>Give Blood IV (1000ml) BT: B</English>
             <German>Bluttransfusion IV (1000ml) BG: B</German>
             <Polish>Podaj Krew IV (1000ml) GK: B</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: B</Spanish>
+            <Chinese>輸血液 (B型 1000ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_AB">
             <English>Give Blood IV (1000ml) BT: AB</English>
             <German>Bluttransfusion IV (1000ml) BG: AB</German>
             <Polish>Podaj Krew IV (1000ml) GK: AB</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: AB</Spanish>
+            <Chinese>輸血液 (AB型 1000ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_O">
             <English>Give Blood IV (500ml) BT: 0</English>
             <German>Bluttransfusion IV (500ml) BG: 0</German>
             <Polish>Podaj Krew IV (500ml) GK: 0</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: 0</Spanish>
+            <Chinese>輸血液 (O型 500ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_A">
             <English>Give Blood IV (500ml) BT: A</English>
             <German>Bluttransfusion IV (500ml) BG: A</German>
             <Polish>Podaj Krew IV (500ml) GK: A</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: A</Spanish>
+            <Chinese>輸血液 (A型 500ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_B">
             <English>Give Blood IV (500ml) BT: B</English>
             <German>Bluttransfusion IV (500ml) BG: B</German>
             <Polish>Podaj Krew IV (500ml) GK: B</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: B</Spanish>
+            <Chinese>輸血液 (B型 500ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_AB">
             <English>Give Blood IV (500ml) BT: AB</English>
             <German>Bluttransfusion IV (500ml) BG: AB</German>
             <Polish>Podaj Krew IV (500ml) GK: AB</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: AB</Spanish>
+            <Chinese>輸血液 (AB型 500ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_O">
             <English>Give Blood IV (250ml) BT: 0</English>
             <German>Bluttransfusion IV (250ml) BG: 0</German>
             <Polish>Podaj Krew IV (250ml) GK: 0</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: 0</Spanish>
+            <Chinese>輸血液 (O型 250ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_A">
             <English>Give Blood IV (250ml) BT: A</English>
             <German>Bluttransfusion IV (250ml) BG: A</German>
             <Polish>Podaj Krew IV (250ml) GK: A</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: A</Spanish>
+            <Chinese>輸血液 (A型 250ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_B">
             <English>Give Blood IV (250ml) BT: B</English>
             <German>Bluttransfusion IV (250ml) BG: B</German>
             <Polish>Podaj Krew IV (250ml) GK: B</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: B</Spanish>
+            <Chinese>輸血液 (B型 250ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_AB">
             <English>Give Blood IV (250ml) BT: AB</English>
             <German>Bluttransfusion IV (250ml) BG: AB</German>
             <Polish>Podaj Krew IV (250ml) GK: AB</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: AB</Spanish>
+            <Chinese>輸血液 (AB型 250ml)</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_DescShort">
             <English>Used to suppress pain</English>
             <German>Schmerzbekämpfer</German>
             <Polish>Używany do zwalczania bólu</Polish>
             <Spanish>Usado para suprimir el dolor</Spanish>
+            <Chinese>用於舒緩疼痛</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_DescUse">
             <English>An analgesic used to combat lightly to moderate pain experiences.</English>
             <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
             <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
+            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_Box_Display">
             <English>Painkillers</English>
             <German>Schmerzmittel</German>
             <Polish>Lek przeciwbólowy</Polish>
             <Spanish>Analgésicos</Spanish>
+            <Chinese>止痛藥</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Inject_Box_Painkillers">
             <English>Take Painkillers</English>
             <German>Schlucke Schmerzmittel</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
             <Spanish>Usar analgésico</Spanish>
+            <Chinese>服用止痛藥</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Using">
             <English>Using</English>
             <German>Schlucke</German>
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
+            <Chinese>服用中</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag">
             <English>Check Dogtags</English>
             <German>Überprüfe Hundemarke</German>
             <Polish>Sprawdź nieśmiertelniki</Polish>
             <Spanish>Comprobar placa de identificación</Spanish>
+            <Chinese>檢查兵籍牌</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag_Action">
             <English>Checking</English>
             <German>Überprüfe</German>
             <Polish>Sprawdzanie</Polish>
             <Spanish>Comprobando</Spanish>
+            <Chinese>檢查中</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_X_already">
             <English>Already one connected</English>
             <German>Bereits einer verbunden</German>
             <Polish>Jeden jest już podłączony</Polish>
             <Spanish>Ya hay uno conectado</Spanish>
+            <Chinese>已經有連接一個了</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Display">
             <English>AED X-Series</English>
             <German>AED X-Series</German>
             <Polish>AED X-Series</Polish>
             <Spanish>DEA Serie X</Spanish>
+            <Chinese>自動體外心臟除顫器 X系列</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Desc">
             <English>Used to monitor vital values and to resuscitate persons</English>
             <German>Überwacht Vitalwerte und kann Personen wiederbeleben</German>
             <Polish>Używany do monitorowania parametrów życiowych  i defibrylacji.</Polish>
             <Spanish>Usado para monitorear vitales y resucitar pacientes </Spanish>
+            <Chinese>有著生命跡象檢測器並可以甦醒患者</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Use">
             <English>Monitor vitals</English>
             <German>Überwache Werte</German>
             <Polish>Monitoruj parametry życiowe</Polish>
             <Spanish>Monitorear vitales</Spanish>
+            <Chinese>監控生命跡象</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Remove">
             <English>Remove monitoring</English>
             <German>Entferne Überwachung</German>
             <Polish>Przestań monitorować</Polish>
             <Spanish>Quitar monitoreo</Spanish>
+            <Chinese>移除監控</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Progress">
             <English>Connecting</English>
             <German>Anschließen</German>
             <Polish>Łączenie</Polish>
             <Spanish>Conectando</Spanish>
+            <Chinese>連線中</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_removeSound">
             <English>Turn down volume of AED X</English>
             <German>X-AED stumm schalten</German>
             <Polish>Ścisz AED X</Polish>
             <Spanish>Bajar el volúmen del DEA X</Spanish>
+            <Chinese>降低AED X音量</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_addSound">
             <English>Turn up volume of AED X</English>
             <German>X-AED laut schalten</German>
             <Polish>Podgłośnij AED X</Polish>
             <Spanish>Subir el volúmen del DEA X</Spanish>
+            <Chinese>提高AED X音量</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Pain_empty">
             <English>%1 is now empty</English>
             <German>%1 ist nun leer</German>
             <Polish>%1 jest pusty</Polish>
             <Spanish>%1 está vacío ahora</Spanish>
+            <Chinese>%1 目前用完了</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_bloodbank">
             <English>Medical Blood bank</English>
             <German>Medizinische Blutbank</German>
             <Polish>Bank krwi</Polish>
             <Spanish>Banco de sangre</Spanish>
+            <Chinese>血庫</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_open_crosspanel">
             <English>Open blood groups cheat sheet</English>
             <German>Öffne Blutgruppentabelle</German>
             <Polish>Otwórz tabele grup krwi</Polish>
             <Spanish>Abrir tabla de compatibilidad sanguínea</Spanish>
+            <Chinese>打開血型相容表</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
             <German>Blutgruppentabelle</German>
             <Polish>Tabela grup krwi</Polish>
             <Spanish>Tabla de grupos sanguíneos</Spanish>
+            <Chinese>血型相容表</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_desc_crosspanel">
             <English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
             <German>Eine falsche Kombination von Spender- und Empfängerblut kann sogar tödliche Folgen haben.</German>
             <Polish>Zła kombinacja krwi dawcy i biorcy może mieć śmiertelne konsekwencje.</Polish>
             <Spanish>Una mala combinación de donante y receptor puede traer consecuencias fatales.</Spanish>
+            <Chinese>使用不相容的血包來輸血可能會導致病患死亡</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_client_bt">
             <English>Blood type</English>
             <German>Blutgruppe</German>
             <Polish>Grupa krwi</Polish>
             <Spanish>Grupo sanguíneo</Spanish>
+            <Chinese>血型</Chinese>
         </Key>
     </Package>
 </Project>
