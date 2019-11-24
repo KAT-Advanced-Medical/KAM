@@ -49,26 +49,6 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
-// airway puking sound yes or no?
-// somebody told me that the sound which is played then someone is puking is super annoying and now you can remove it easily
-[
-    QGVAR(checkbox_puking_sound),
-    "CHECKBOX",
-    localize LSTRING(SETTING_puking_sound),
-    [CBA_SETTINGS_CAT, QUOTE(COMPONENT_BEAUTIFIED)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(string_exit),
-    "LIST",
-    localize LSTRING(SETTING_exit),
-    [CBA_SETTINGS_CAT, QUOTE(COMPONENT_BEAUTIFIED)],
-    [["", "keko_wasPunched"], ["", "keko_wasPunched"], 0],
-    true
-] call CBA_Settings_fnc_init;
-
 // required medic class
 [
     QGVAR(npa_requiredLevel),
