@@ -17,6 +17,8 @@
 
 params ["_unit"];
 
+if (!local _unit) exitWith {};
+
 _unit setVariable [QGVAR(obstruction), false, true]; // tonque
 _unit setVariable [QGVAR(occluded), false, true]; // blood
 _unit setVariable [QGVAR(collapsed), false, true]; // pneumothorax
