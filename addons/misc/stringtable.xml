@@ -12,54 +12,64 @@
             <German>IV wird angehangen</German>
             <Polish>Zakładanie IV</Polish>
             <Spanish>Administrando IV</Spanish>
+            <Chinese>注射點滴</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_Action_add_IV_Display">
             <English>Attach IV (1000ml)</English>
             <German>IV anhängen (1000ml)</German>
             <Polish>Załóż IV (1000ml)</Polish>
             <Spanish>Adminsitrar IV (1000ml)</Spanish>
+            <Chinese>注射點滴 (1000ml)</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_Action_add_IV_Display_500">
             <English>Attach IV (500ml)</English>
             <German>IV anhängen (500ml)</German>
             <Polish>Załóż IV (500ml)</Polish>
             <Spanish>Adminsitrar IV (500ml)</Spanish>
+            <Chinese>注射點滴 (500ml)</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_Action_add_IV_Display_250">
             <English>Attach IV (250ml)</English>
             <German>IV anhängen (250ml)</German>
             <Polish>Załóż IV (250ml)</Polish>
             <Spanish>Adminsitrar IV (250ml)</Spanish>
+            <Chinese>注射點滴 (250ml)</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_Display_IVStand">
             <English>Stand: Saline IV (1000ml)</English>
             <German>Ständer: Saline IV (1000ml)</German>
             <Polish>Stojak: Sól fizjologiczna IV (1000ml)</Polish>
             <Spanish>Soporte: Salino IV (1000ml)</Spanish>
+            <Chinese>點滴架：生理食鹽水 (1000ml)</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_Display_IVStand_500">
             <English>Stand: Saline IV (500ml)</English>
             <German>Ständer: Saline IV (500ml)</German>
             <Polish>Stojak: Sól fizjologiczna IV (500ml)</Polish>
             <Spanish>Soporte: Salino IV (500ml)</Spanish>
+            <Chinese>點滴架：生理食鹽水 (500ml)</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_Display_IVStand_250">
             <English>Stand: Saline IV (250ml)</English>
             <German>Ständer: Saline IV (250ml)</German>
             <Polish>Stojak: Sól fizjologiczna IV (250ml)</Polish>
             <Spanish>Soporte: Salino IV (250ml)</Spanish>
+            <Chinese>點滴架：生理食鹽水 (250ml)</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_SETTING_LIMITWOUNDS_ENABLE">
             <English>Enable limited wounds</English>
             <German>Aktiviere limitierte Wunden</German>
+            <Chinese>開啟傷口限制</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_LIMITWOUNDS_Display">
             <English>Bandage wounds</English>
             <German>Behandle Wunden</German>
+            <Chinese>包紮傷口</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_Condition_limitWounds_Display">
             <English>Use condition limit wounds</English>
             <German>Bendingung für limitierte Wunden</German>
+            <Chinese>以條件來限制傷口</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_SETTING_enable">
             <English>ACE-Misc activated?</English>
@@ -78,10 +88,12 @@
         <Key ID="STR_KAM_misc_stretcher_disassemble">
             <English>Disassemble stretcher</English>
             <German>Trage einklappen</German>
+            <Chinese>拆卸式擔架</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_stretcher_attach">
             <English>Attach to</English>
             <German>Anhängen an</German>
+            <Chinese>掛在</Chinese>
         </Key>
         <Key ID="STR_KAM_misc_stretcher_desc">
             <English>A stretcher is an apparatus used for moving patients who require medical care.</English>
