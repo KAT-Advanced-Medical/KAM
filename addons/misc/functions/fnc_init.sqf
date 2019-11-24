@@ -16,3 +16,5 @@
  */
 
 params ["_unit"];
+
+if (!local _unit) exitWith {};

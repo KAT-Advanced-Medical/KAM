@@ -17,6 +17,8 @@
 
 params ["_unit"];
 
+if (!local _unit) exitWith {};
+
 _unit setVariable [QGVAR(status), 100, true];
 _unit setVariable [QGVAR(pulseoximeter), [0,0,0,0,0,0], true];
 _unit setVariable [QGVAR(o2), false, true];

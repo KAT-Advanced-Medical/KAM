@@ -17,6 +17,8 @@
 
 params ["_unit"];
 
+if (!local _unit) exitWith {};
+
 _unit setVariable [QGVAR(IV_counts), 0, true];
 _unit setVariable [QGVAR(X), false, true];
 _unit setVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav), true];
