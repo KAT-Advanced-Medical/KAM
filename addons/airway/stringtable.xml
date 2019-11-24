@@ -268,7 +268,7 @@
             <Spanish>Vómito (Pequeño)</Spanish>
         </Key>
         <Key ID="STR_KAM_airway_npa_display">
-            <English>NasoPharyngeal Airway</English>
+            <English>Nasopharyngeal Airway</English>
             <German>Wendl-Tubus</German>
         </Key>
         <Key ID="STR_KAM_airway_npa_desc">
@@ -276,11 +276,11 @@
             <German>Der Wendl-Tubus ist ein über die Nase einzuführender Tubus aus weichem Gummi oder Kunststoff, dessen Spitze im Rachen zum Liegen kommt.</German>
         </Key>
         <Key ID="STR_KAM_airway_opa_display">
-            <English>OroPharyngeal Airway</English>
+            <English>Oropharyngeal Airway</English>
             <German>Guedel-Tubus</German>
         </Key>
         <Key ID="STR_KAM_airway_opa_desc">
-            <English>An OPA (OroPharyngeal Airway) is a basic airway adjunct that enters through the mouth.</English>
+            <English>An OPA (Oropharyngeal Airway) is a basic airway adjunct that enters through the mouth.</English>
             <German>Ein Guedel-Tubus ist ein Hilfsmittel zum Freihalten der Atemwege.</German>
         </Key>
         <Key ID="STR_KAM_airway_end_display">
