@@ -5,25 +5,25 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            "KAM_nasopharyngealItem",
-            "KAM_oropharyngealItem",
-            "KAM_endotrachealItem",
-            "KAM_suctionItem",
-            "KAM_accuvacItem",
-            "KAM_vomit"
+            QUOTE(KAM_nasopharyngealItem),
+            QUOTE(KAM_oropharyngealItem),
+            QUOTE(KAM_endotrachealItem),
+            QUOTE(KAM_suctionItem),
+            QUOTE(KAM_accuvacItem),
+            QUOTE(KAM_vomit)
         };
         weapons[] = {
-            "KAM_nasopharyngeal",
-            "KAM_oropharyngeal",
-            "KAM_endotracheal",
-            "KAM_suction",
-            "KAM_accuvac"
+            QUOTE(KAM_nasopharyngeal),
+            QUOTE(KAM_oropharyngeal),
+            QUOTE(KAM_endotracheal),
+            QUOTE(KAM_suction),
+            QUOTE(KAM_accuvac)
         };
         magazines[] = {};
         requiredAddons[] = {
-            "ace_medical",
-            "cba_settings",
-            "kam_main"
+            QUOTE(ace_medical),
+            QUOTE(cba_settings),
+            QUOTE(kam_main)
         };
         author = CSTRING(AUTHOR);
         authors[] = {CSTRING(AUTHOR)};

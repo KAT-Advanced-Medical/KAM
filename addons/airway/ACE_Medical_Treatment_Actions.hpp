@@ -32,6 +32,7 @@ class ACE_Medical_Treatment_Actions {
         requiredMedic = 0;
         items[] = {};
         allowSelfTreatment = 1;
+        treatmentTime = 3;
         condition = QFUNC(canRemoveAirway);
         callbackSuccess = QFUNC(removeAirway);
     };
