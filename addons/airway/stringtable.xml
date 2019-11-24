@@ -32,13 +32,14 @@
             <English>Probability for a obstruction airway</English>
             <German>Atemwegsverlegungswahrscheinlichkeit</German>
             <Polish>Szansa na zator dróg oddechowych</Polish>
+            <Spanish>Probabilidad de obstrucción en vías aéreas</Spanish>
             <Chinese>呼吸道阻塞機率</Chinese>
         </Key>
         <Key ID="STR_kat_airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
             <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes</German>
             <Polish>Szansa na niedrożność dróg oddechowych</Polish>
-            <Spanish>Probabilidad de obstrucción de las vías aéreas</Spanish>
+            <Spanish>Probabilidad de oclusión en vías aéreas</Spanish>
             <Chinese>呼吸道閉塞機率</Chinese>
         </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
@@ -77,7 +78,7 @@
             <English>Occluded</English>
             <German>Verstopft</German>
             <Polish>Zablokowany</Polish>
-            <Spanish>Obstruída</Spanish>
+            <Spanish>Ocluída</Spanish>
             <Chinese>閉塞</Chinese>
         </Key>
         <Key ID="STR_kat_airway_Collapsed">
@@ -91,6 +92,7 @@
             <English>Obstruction</English>
             <German>Verlegt</German>
             <Polish>Zator</Polish>
+            <Spanish>Obstruída</Spanish>
             <Chinese>阻塞</Chinese>
         </Key>
         <Key ID="STR_kat_airway_N">
