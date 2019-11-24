@@ -5,20 +5,20 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            "KAM_pulseoximeterItem"
+            QUOTE(KAM_pulseoximeterItem)
         };
         weapons[] = {
-            "KAM_pulseoximeter"
+            QUOTE(KAM_pulseoximeter)
         };
         magazines[] = {};
         requiredAddons[] = {
-            "ace_medical",
-            "kam_main",
-            "kam_airway",
-            "cba_settings"
+            QUOTE(ace_medical),
+            QUOTE(kam_main),
+            QUOTE(kam_airway),
+            QUOTE(cba_settings)
         };
         author = CSTRING(AUTHOR);
-        authors[] = {"Katalam"};
+        authors[] = {CSTRING(AUTHOR)};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };

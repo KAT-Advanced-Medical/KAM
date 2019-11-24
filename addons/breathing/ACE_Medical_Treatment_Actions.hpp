@@ -5,8 +5,8 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(placing);
         category = "examine";
         allowedSelections[] = {"leftarm", "rightarm"};
-        allowSelfTreatment = 0;
-        requiredMedic = 1;
+        allowSelfTreatment = 1;
+        requiredMedic = 0;
         treatmentTime = 2;
         items[] = {"KAM_pulseoximeter"};
         callbackSuccess = FUNC(treatmentPulseOximeter);
