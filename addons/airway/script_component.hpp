@@ -14,4 +14,6 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_AIRWAY
 #endif
 
+#define PROBABILITY_BONES 5
+
 #include "\x\KAM\addons\main\script_macros.hpp"

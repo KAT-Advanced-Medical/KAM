@@ -24,7 +24,7 @@ if !(local _target) exitWith {
     [QGVAR(treatmentAirwayLocal), [_caller, _target, _bodyPart, _className], _target] call CBA_fnc_targetEvent;
 };
 
-_className = str formatText ["KAM_%1", toLower _className];
+_className = format ["KAM_%1", toLower _className];
 _target setVariable [QGVAR(airway), [true, _className], true];
 _target setVariable [QGVAR(obstruction), false, true];
 

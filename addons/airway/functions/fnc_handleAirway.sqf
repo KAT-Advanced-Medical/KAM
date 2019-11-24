@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Handler for airway damage.
+ * Will add a airway injury if possible. Called with the ace_medical_injured cba event.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -19,31 +19,27 @@ params ["_unit"];
 
 if !(GVAR(enable)) exitWith {};
 
-// Contusion -> pneumo?
+private _reasons = _unit call FUNC(possibleAirwayInjury);
+_reasons params ["_possible", "_array"];
+_array params ["_airwayInjuries", "_chestWounds"];
 
-private "_className";
-private _airwayInjuries = 0;
-
-{
-    _x params ["", "_woundClassID", "_bodyPartN"];
-
-    // If any single gun shot wound is here go ahead (or burns)
-    if (_bodyPartN == 0) exitWith {
-        _className = ace_medical_damage_woundsData select _woundClassID select 6;
-        if (toLower _className in ["velocitywound", "contusion"]) then {
-            _airwayInjuries = _airwayInjuries + 1;
+if (_possible) then { // _reasons return in the first value a quick boolean if injurys are possible
+    if (_airwayInjuries > 0) then {
+        _unit call FUNC(bloodHandler);
+    };
+    if (_chestWounds > 0 && {EGVAR(breathing,enable)}) then {
+        if (selectRandom [true, false]) then {
+            // call hemothorax
+        } else {
+            // call pneumothorax
         };
     };
-    false;
-} forEach (_unit getVariable ["ace_medical_openWounds", []]);
+};
 
-if (_airwayInjuries == 0) exitWith {};
+/*
 
-[{
-    params ["_unit"];
-    if (((eyeDirection _unit) select 2) < -0.02) then {
-        if !(_unit getVariable [QGVAR(obstruction), false]) then {
-            _unit setVariable [QGVAR(obstruction), true, true];
-        };
-    };
-}, [_unit], 2] call CBA_fnc_waitAndExecute;
+    Bleeding neck?
+    Blocked airway tonque?
+    pneumo?
+
+*/

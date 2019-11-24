@@ -19,6 +19,5 @@ params ["", "_patient"];
 
 // Exit if airway is disabled
 if !(GVAR(enable)) exitWith {false};
-if ([_patient] call ace_common_fnc_isAwake) exitWith {false};
 if !(_patient getVariable [QGVAR(occluded), false]) exitWith {false};
 true;
