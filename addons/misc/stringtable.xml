@@ -60,26 +60,31 @@
         <Key ID="STR_kat_misc_SETTING_LIMITWOUNDS_ENABLE">
             <English>Enable limited wounds</English>
             <German>Aktiviere limitierte Wunden</German>
+            <Spanish>Habilitar límite de heridas</Spanish>
             <Chinese>開啟傷口限制</Chinese>
         </Key>
         <Key ID="STR_kat_misc_LIMITWOUNDS_Display">
             <English>Bandage wounds</English>
             <German>Behandle Wunden</German>
+            <Spanish>Vendar heridas</Spanish>
             <Chinese>包紮傷口</Chinese>
         </Key>
         <Key ID="STR_kat_misc_Condition_limitWounds_Display">
             <English>Use condition limit wounds</English>
             <German>Bendingung für limitierte Wunden</German>
+            <Spanish>Usar condición para límite de heridas</Spanish>
             <Chinese>以條件來限制傷口</Chinese>
         </Key>
         <Key ID="STR_kat_misc_disassemble_stretcher_display">
             <English>Disassemble stretcher</English>
             <German>Trage einklappen</German>
+            <Spanish>Desarmar camilla</Spanish>
             <Chinese>拆卸式擔架</Chinese>
         </Key>
         <Key ID="STR_kat_misc_disassemble_attach_display">
             <English>Attach to</English>
             <German>Anhängen an</German>
+            <Spanish>Poner en</Spanish>
             <Chinese>掛在</Chinese>
         </Key>
     </Package>
