@@ -18,6 +18,7 @@
             <English>Alternative death timer for airway injuries?</English>
             <German>Alternativen Todestimer für Atemwegsverlegungen nutzen?</German>
             <Polish>Alternatywny licznik do śmierci dla urazów dróg oddechowych?</Polish>
+            <Spanish>¿Tiempo de muerte alternativo para lesiones en vías aéreas?</Spanish>
             <Chinese>額外因呼吸道受傷的死亡倒數？</Chinese>
         </Key>
         <Key ID="STR_KAM_breathing_SETTING_Value_Before">
@@ -102,12 +103,14 @@
             <English>Chest Seal</English>
             <German>Chest Seal</German>
             <Polish>Chest Seal</Polish>
+            <Spanish>Chest Seal</Spanish>
             <Chinese>臨時氣胸密封貼</Chinese>
         </Key>
         <Key ID="STR_KAM_breathing_pneumothorax_mm">
             <English>1x Pneumothorax</English>
             <German>1x Pneumothorax</German>
             <Polish>1x Odma Opłucnowa</Polish>
+            <Spanish>1x PNeumotórax</Spanish>
             <Chinese>1等氣胸</Chinese>
         </Key>
         <Key ID="STR_KAM_breathing_treating">
@@ -121,12 +124,14 @@
             <English>Chest Seal</English>
             <German>Chest Seal</German>
             <Polish>Chest Seal</Polish>
+            <Spanish>Chest Seal</Spanish>
             <Chinese>臨時氣胸密封貼</Chinese>
         </Key>
         <Key ID="STR_KAM_breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
             <German>Chest Seal ist so konzipiert, dass offene Brustwunden in den meisten Fällen behandelt, versiegelt und wieder verschlossen werden.</German>
             <Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach.</Polish>
+            <Spanish>Chest Seal es un parche diseñado para tratar, sellar y resellar heridas de pecho abierto, bajo la mayoría de circustancias.</Spanish>
             <Chinese>臨時氣胸密封貼在大多數情況下用途於治癒、密封或者二度密封因為胸腔受傷破裂導致的氣胸</Chinese>
         </Key>
         <Key ID="STR_KAM_breathing_pulseoximeter_display">
