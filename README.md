@@ -30,6 +30,13 @@ Big thanks to
 ---------
 + [Kellerkompanie](http://kellerkompanie.com/)
 
+## Disclaimer from the Editor Tomcat
+    - This isnt any bugfree and official Version of the KAT System
+    - This Git is for Development use
+    - Everybody can make Pull/Push request
+    - There will be a lot of bugs at the moment
+    - The rewrite will take its time
+
 ## Core features
 
 - Airway
@@ -99,3 +106,4 @@ Please, use my [Issue Tracker](https://github.com/Katalam/kat_aceAdvMedical/issu
  <br>
  This work is licensed under a Arma Public License Share Alike
 </a>
+
