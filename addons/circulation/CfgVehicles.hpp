@@ -69,7 +69,7 @@ class CfgVehicles {
                 class Painkillers {
                     displayName = CSTRING(Inject_Box_Painkillers);
                     condition = QUOTE(('kat_Painkiller' in (magazines _player) || 'kat_Painkiller' in (magazines _target)));
-                    statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_fnc_treatment";
+                    statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_treatment_fnc_treatment";
                     showDisabled = 0;
                     exceptions[] = {"isNotSitting"};
                     icon = QPATHTOF(ui\icon_painkillers_action.paa);
@@ -79,15 +79,15 @@ class CfgVehicles {
                 class CPR;
                 class kat_X_AED: CPR {
                     displayName = CSTRING(X_Action_Use);
-                    condition = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_treatment";
+                    condition = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_treatment_fnc_treatment";
                     exceptions[] = {""};
                     icon = QPATHTOF(ui\X_Series-Device_W.paa);
                 };
                 class GVAR(R_X_AED): CPR {
                     displayName = CSTRING(X_Action_Remove);
-                    condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_treatment";
+                    condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_treatment_fnc_treatment";
                     exceptions[] = {""};
                     icon = QPATHTOF(ui\X_Series-Device_W.paa);
                 };
@@ -111,7 +111,7 @@ class CfgVehicles {
                         class Painkillers {
                             displayName = CSTRING(Inject_Box_Painkillers);
                             condition = QUOTE('kat_Painkiller' in (magazines _player) || 'kat_Painkiller' in (magazines _target));
-                            statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_fnc_treatment";
+                            statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_treatment_fnc_treatment";
                             showDisabled = 0;
                             exceptions[] = {"isNotSitting"};
                             icon = QPATHTOF(ui\icon_painkillers_action.paa);
@@ -121,15 +121,15 @@ class CfgVehicles {
                         class CPR;
                         class kat_X_AED: CPR {
                             displayName = CSTRING(X_Action_Use);
-                            condition = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_canTreatCached";
-                            statement = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_fnc_treatment";
+                            condition = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_treatment_fnc_canTreatCached";
+                            statement = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_treatment_fnc_treatment";
                             exceptions[] = {""};
                             icon = QPATHTOF(ui\X_Series-Device_W.paa);
                         };
                         class GVAR(R_X_AED): CPR {
                             displayName = CSTRING(X_Action_Remove);
-                            condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_canTreatCached";
-                            statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_fnc_treatment";
+                            condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_treatment_fnc_canTreatCached";
+                            statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_treatment_fnc_treatment";
                             exceptions[] = {""};
                             icon = QPATHTOF(ui\X_Series-Device_W.paa);
                         };
@@ -156,7 +156,7 @@ class CfgVehicles {
                     class Painkillers {
                         displayName = CSTRING(Inject_Box_Painkillers);
                         condition = "'kat_Painkiller' in (magazines _player)";
-                        statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_fnc_treatment";
+                        statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_treatment_fnc_treatment";
                         showDisabled = 0;
                         exceptions[] = {"isNotInside", "isNotSitting"};
                         icon = QPATHTOF(ui\icon_painkillers_action.paa);

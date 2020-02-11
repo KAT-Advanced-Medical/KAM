@@ -12,4 +12,4 @@ PREP(treatmentAdvanced_airway);
 PREP(treatmentAdvanced_airwayLocal);
 PREP(treatmentAdvanced_overstretchHead);
 PREP(treatmentAdvanced_turnaroundHead);
-PREP(updateUIInfo);
+PREP(updateInjuryList);

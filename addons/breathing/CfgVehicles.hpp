@@ -41,8 +41,8 @@ class CfgVehicles {
                 class ChestSeal {
                     displayName = CSTRING(pneumothorax_display);
                     distance = 2.0;
-                    condition = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_treatment";
+                    condition = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_treatment_fnc_treatment";
                     exceptions[] = {""};
                     showDisabled = 0;
                     icon = "";
@@ -52,8 +52,8 @@ class CfgVehicles {
                 class Pulseoximeter {
                     displayName = CSTRING(Pulseoximeter_Display);
                     distance = 2.0;
-                    condition = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_treatment";
+                    condition = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_treatment_fnc_treatment";
                     exceptions[] = {""};
                     showDisabled = 0;
                     icon = "";
@@ -61,8 +61,8 @@ class CfgVehicles {
                 class RemovePulseoximeter {
                     displayName = CSTRING(Pulseoximeter_Display_Remove);
                     distance = 2.0;
-                    condition = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";
+                    condition = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_treatment_fnc_treatment";
                     exceptions[] = {""};
                     showDisabled = 0;
                     icon = "";
@@ -72,8 +72,8 @@ class CfgVehicles {
                 class Pulseoximeter {
                     displayName = CSTRING(Pulseoximeter_Display);
                     distance = 2.0;
-                    condition = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_treatment";
+                    condition = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_treatment_fnc_treatment";
                     exceptions[] = {""};
                     showDisabled = 0;
                     icon = "";
@@ -81,8 +81,8 @@ class CfgVehicles {
                 class RemovePulseoximeter {
                     displayName = CSTRING(Pulseoximeter_Display_Remove);
                     distance = 2.0;
-                    condition = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";
+                    condition = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_treatment_fnc_treatment";
                     exceptions[] = {""};
                     showDisabled = 0;
                     icon = "";
@@ -94,8 +94,8 @@ class CfgVehicles {
                         class ChestSeal {
                             displayName = CSTRING(pneumothorax_display);
                             distance = 2.0;
-                            condition = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_canTreatCached";
-                            statement = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_fnc_treatment";
+                            condition = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_treatment_fnc_canTreatCached";
+                            statement = "[_player, _target, 'body', 'ChestSeal'] call ace_medical_treatment_fnc_treatment";
                             exceptions[] = {""};
                             showDisabled = 0;
                             icon = "";
@@ -105,8 +105,8 @@ class CfgVehicles {
                         class Pulseoximeter {
                             displayName = CSTRING(Pulseoximeter_Display);
                             distance = 2.0;
-                            condition = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
-                            statement = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_fnc_treatment";
+                            condition = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_treatment_fnc_canTreatCached";
+                            statement = "[_player, _target, 'hand_l', 'Pulseoximeter'] call ace_medical_treatment_fnc_treatment";
                             exceptions[] = {""};
                             showDisabled = 0;
                             icon = "";
@@ -114,8 +114,8 @@ class CfgVehicles {
                         class RemovePulseoximeter {
                             displayName = CSTRING(Pulseoximeter_Display_Remove);
                             distance = 2.0;
-                            condition = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
-                            statement = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";
+                            condition = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_treatment_fnc_canTreatCached";
+                            statement = "[_player, _target, 'hand_l', 'RemovePulseoximeter'] call ace_medical_treatment_fnc_treatment";
                             exceptions[] = {""};
                             showDisabled = 0;
                             icon = "";
@@ -125,8 +125,8 @@ class CfgVehicles {
                         class Pulseoximeter {
                             displayName = CSTRING(Pulseoximeter_Display);
                             distance = 2.0;
-                            condition = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_canTreatCached";
-                            statement = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_fnc_treatment";
+                            condition = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_treatment_fnc_canTreatCached";
+                            statement = "[_player, _target, 'hand_r', 'Pulseoximeter'] call ace_medical_treatment_fnc_treatment";
                             exceptions[] = {""};
                             showDisabled = 0;
                             icon = "";
@@ -134,8 +134,8 @@ class CfgVehicles {
                         class RemovePulseoximeter {
                             displayName = CSTRING(Pulseoximeter_Display_Remove);
                             distance = 2.0;
-                            condition = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_canTreatCached";
-                            statement = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_fnc_treatment";
+                            condition = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_treatment_fnc_canTreatCached";
+                            statement = "[_player, _target, 'hand_r', 'RemovePulseoximeter'] call ace_medical_treatment_fnc_treatment";
                             exceptions[] = {""};
                             showDisabled = 0;
                             icon = "";

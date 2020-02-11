@@ -26,16 +26,16 @@ private _yesornoOccluded = LSTRING(N);
 if (_target getVariable [QGVAR(obstruction), false]) then {
     _messageairwayobstruction = localize LSTRING(message_obstruction_yes);
     _yesornoobstruction = "";
-    _target setVariable ["ace_medical_triageLevel", 3];
+    _target setVariable [QEGVAR(medical,triageLevel), 3, true];
 };
-if (_target getVariable ["ace_medical_airwayOccluded", false]) then {
+if (_target getVariable ["KAT_medical_airwayOccluded", false]) then {
     _messageairwayOccluded = localize LSTRING(message_Occluded_yes);
     _yesornoOccluded = "";
-    _target setVariable ["ace_medical_triageLevel", 3];
+    _target setVariable [QEGVAR(medical,triageLevel), 3, true];
 };
-if !(_target getVariable ["ace_medical_airwayOccluded", false] && _target getVariable [QGVAR(obstruction), false]) then {_target setVariable ["ace_medical_triageLevel", 0]};
+if !(_target getVariable ["KAT_medical_airwayOccluded", false] && _target getVariable [QGVAR(obstruction), false]) then {_target setVariable [QEGVAR(medical,triageLevel), 0, true]};
 private _message = format ["%1, %2", _messageairwayobstruction, _messageairwayOccluded];
 [_message, 2, _player] call ace_common_fnc_displayTextStructured;
 
-[_target, "activity", LSTRING(checkAirway_log), [[_player] call ace_common_fnc_getName, _yesornoobstruction, LSTRING(obstruction), _yesornoOccluded, LSTRING(Occluded)]] call ace_medical_fnc_addToLog;
-[_target, "quick_view", LSTRING(checkAirway_log), [[_player] call ace_common_fnc_getName, _yesornoobstruction, LSTRING(obstruction), _yesornoOccluded, LSTRING(Occluded)]] call ace_medical_fnc_addToLog;
+[_target, "activity", LSTRING(checkAirway_log), [[_player] call ace_common_fnc_getName, _yesornoobstruction, LSTRING(obstruction), _yesornoOccluded, LSTRING(Occluded)]] call ace_medical_treatment_fnc_addToLog;
+[_target, "quick_view", LSTRING(checkAirway_log), [[_player] call ace_common_fnc_getName, _yesornoobstruction, LSTRING(obstruction), _yesornoOccluded, LSTRING(Occluded)]] call ace_medical_treatment_fnc_addToLog;

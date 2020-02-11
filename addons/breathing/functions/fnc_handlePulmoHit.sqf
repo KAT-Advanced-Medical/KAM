@@ -26,7 +26,7 @@ if !(_projectile isKindOF "BulletBase") exitWith {};
 
 if (random (100) <= GVAR(pneumothorax)) then {
     // add breathing sound
-    [_unit, 0.5] call ace_medical_fnc_adjustPainLevel;
+    [_unit, 0.5] call ace_medical_status_fnc_adjustPainLevel;
     [_unit, CBA_missionTime] call FUNC(handleBreathing);
-    _unit setVariable ["ace_medical_airwayCollapsed", true, true];
+    _unit setVariable ["KAT_medical_airwayCollapsed", true, true];
 };

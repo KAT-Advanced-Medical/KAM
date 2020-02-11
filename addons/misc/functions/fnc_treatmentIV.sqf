@@ -31,4 +31,4 @@ switch (_className) do {
     };
 };
 [_player, _value] call FUNC(removeIVbag);
-[_player, _target, _selectionName, _className, _item] call ace_medical_fnc_treatmentIV;
+[_player, _target, _selectionName, _className, "", _item] call ace_medical_treatment_fnc_ivBag;

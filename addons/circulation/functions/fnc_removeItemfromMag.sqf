@@ -37,4 +37,4 @@ if (isText (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "Medication" 
     _mag = getText (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "Medication" >> _className >> "itemClassName");
 };
 
-[_player, _target, _selectionName, _className, [_mag]] call ace_medical_fnc_treatmentAdvanced_medication;
+[_player, _target, _selectionName, _className, "", [_mag]] call ace_medical_treatment_fnc_medication;

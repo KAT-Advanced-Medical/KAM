@@ -15,3 +15,4 @@
 #endif
 
 #include "\x\kat\addons\main\script_macros.hpp"
+#include "\x\ace\addons\medical_engine\script_macros_medical.hpp"

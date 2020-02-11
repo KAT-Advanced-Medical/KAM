@@ -27,10 +27,10 @@ if !(GVAR(enable)) exitWith {};
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
     if (random(100) <= GVAR(probability_occluded)) then {
-        if !(_unit getVariable ["ace_medical_airwayOccluded", false]) then {
-            _unit setVariable ["ace_medical_airwayOccluded", true, true];
+        if !(_unit getVariable ["KAT_medical_airwayOccluded", false]) then {
+            _unit setVariable ["KAT_medical_airwayOccluded", true, true];
             if (GVAR(checkbox_puking_sound)) then {
-                playsound3D [selectRandom [QPATHTOF_SOUND(sounds\puking1.wav), QPATHTOF_SOUND(sounds\puking2.wav), QPATHTOF_SOUND(sounds\puking3.wav)], _unit, false, getPosASL _unit, 8, 1, 15];
+                playsound3D [selectRandom ["\x\kat\addons\airway\sounds\puking1.wav", "\x\kat\addons\airway\sounds\puking2.wav", "\x\kat\addons\airway\sounds\puking3.wav"], _unit, false, getPosASL _unit, 8, 1, 15];
             };
         };
     };

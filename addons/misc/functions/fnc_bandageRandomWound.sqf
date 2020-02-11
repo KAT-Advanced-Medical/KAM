@@ -76,14 +76,14 @@ private _woundedBodyParts = [];
 if("head" in _woundedBodyParts) then {
     private _i = 0;
     for [{_i = 0}, {_i < _headWounds}, {_i = _i + 1}] do {
-        [_unit, _unit, "head", "Bandage"] call ace_medical_fnc_treatmentAdvanced_bandage;
+        [_unit, _unit, "head", "Bandage"] call ace_medical_treatment_fnc_treatment;
     };
 };
 
 if("body" in _woundedBodyParts) then {
     private _i = 0;
     for [{_i = 0}, {_i < _bodyWounds}, {_i = _i + 1}] do {
-        [_unit, _unit, "body", "Bandage"] call ace_medical_fnc_treatmentAdvanced_bandage;
+        [_unit, _unit, "body", "Bandage"] call ace_medical_treatment_fnc_treatment;
     };
 };
 
@@ -92,5 +92,5 @@ private _sumOpenWounds = _leftArmWounds + _leftLegWounds + _rightArmWounds + _ri
 // if no head or torso wound was closed, choose at random
 if(_sumOpenWounds > 4) then {
     private _selection = selectRandom (_woundedBodyParts - ["head","body"]);
-    [_unit, _unit, _selection, "Bandage"] call ace_medical_fnc_treatmentAdvanced_bandage;
+    [_unit, _unit, _selection, "Bandage"] call ace_medical_treatment_fnc_treatment;
 };

@@ -18,7 +18,7 @@
 
 params ["_caller", "_target"];
 
-if !(_target getVariable ["ace_medical_airwayOccluded", false]) exitWith {
+if !(_target getVariable ["KAT_medical_airwayOccluded", false]) exitWith {
     private _output = localize LSTRING(Accuvac_NA);
     [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
 };

@@ -20,7 +20,7 @@ params ["_className", "_target"];
 //unit, adjustment, time
 private _volume = getNumber (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "IV" >> _className >> "volume");
 private _hradjust = _volume / 10;
-[_target, _hradjust, 60] call ace_medical_fnc_addHeartRateAdjustment;
+[_target, _hradjust, 1, true] call ace_medical_vitals_fnc_updateHeartRate;
 
 //todo tod?
 private _a = (_target getVariable [QGVAR(IV_counts), 0]) + 1;

@@ -19,7 +19,7 @@ params ["_player", "_target", "_selectionName", "_className", "_items"];
 
 private _return = false;
 
-[_player, _target, _selectionName, _className, _items] call ace_medical_fnc_treatmentIV;
+[_player, _target, _selectionName, _className, "", _items] call ace_medical_treatment_fnc_ivBag;
 
 if ([_target, _className] call FUNC(compatible)) exitWith {};
 

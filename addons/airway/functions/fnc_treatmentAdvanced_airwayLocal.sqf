@@ -19,7 +19,7 @@
 
 params ["_caller", "_target", "_className"];
 
-if (_target getVariable ["ace_medical_airwayOccluded", false]) exitWith {
+if (_target getVariable ["KAT_medical_airwayOccluded", false]) exitWith {
     private _output = localize LSTRING(Airway_NA);
     [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
     false;
@@ -52,8 +52,8 @@ if (_className isEqualTo "Guedeltubus") then {
     _target setVariable [QGVAR(airway_item), "guedel", true];
 };
 
-[_target, _item] call ace_medical_fnc_addToTriageCard;
-[_target, "activity", LSTRING(airway_log), [[_caller] call ace_common_fnc_getName, _item]] call ace_medical_fnc_addToLog;
-[_target, "activity_view", LSTRING(airway_log), [[_caller] call ace_common_fnc_getName, _item]] call ace_medical_fnc_addToLog;
+[_target, _item] call ace_medical_treatment_fnc_addToTriageCard;
+[_target, "activity", LSTRING(airway_log), [[_caller] call ace_common_fnc_getName, _item]] call ace_medical_treatment_fnc_addToLog;
+[_target, "activity_view", LSTRING(airway_log), [[_caller] call ace_common_fnc_getName, _item]] call ace_medical_treatment_fnc_addToLog;
 
 true;

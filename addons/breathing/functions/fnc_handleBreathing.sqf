@@ -30,8 +30,8 @@ if (!local _unit) then {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    private _collapsed = _unit getVariable ["ace_medical_airwayCollapsed", false];
-    private _status = _unit getVariable ["ace_medical_airwayStatus", 50];
+    private _collapsed = _unit getVariable ["KAT_medical_airwayCollapsed", false];
+    private _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
 
     if ([_unit] call ace_common_fnc_isAwake && !_collapsed) exitWith {
         if (_status >= 100) exitWith {
@@ -41,12 +41,12 @@ if (!local _unit) then {
     };
 
     if (_status > 100) exitWith {
-        _unit setVariable ["ace_medical_airwayStatus", 100, true];
+        _unit setVariable ["KAT_medical_airwayStatus", 100, true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
     private _o2 = _unit getVariable [QGVAR(o2), false];
-    private _occluded = _unit getVariable ["ace_medical_airwayOccluded", false];
+    private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
     private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
 
     if (_collapsed) exitWith {
@@ -85,7 +85,7 @@ if (!local _unit) then {
         };
     };
 
-    _status = _unit getVariable ["ace_medical_airwayStatus", 50];
+    _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
 
     if (GVAR(death_timer_enable)) then {
         if (_status <= 5) exitWith {

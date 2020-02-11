@@ -30,10 +30,10 @@ _target setVariable [QGVAR(pulseoximeter), true, true];
 
     [_target, "quick_view", LSTRING(pulseoxi_Log)] call EFUNC(circulation,removeLog);
     [_target, "quick_view", LSTRING(pulseoxi_Log), [round (_target getVariable ["ace_medical_heartRate", 80]),
-        round (_target getVariable ["ace_medical_airwayStatus", 100])]] call ace_medical_fnc_addToLog;
+        round (_target getVariable ["KAT_medical_airwayStatus", 100])]] call ace_medical_treatment_fnc_addToLog;
 }, 1, [_target]] call CBA_fnc_addPerFrameHandler;
 
 [_target, "quick_view", LSTRING(pulseoxi_Log), [round (_target getVariable ["ace_medical_heartRate", 80]),
-    round (_target getVariable ["ace_medical_airwayStatus", 100])]] call ace_medical_fnc_addToLog;
-[_target, "activity", LSTRING(pulseoxi_Log_2), [[_player] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
-[_target, "Pulseoximeter"] call ace_medical_fnc_addToTriageCard;
+    round (_target getVariable ["KAT_medical_airwayStatus", 100])]] call ace_medical_treatment_fnc_addToLog;
+[_target, "activity", LSTRING(pulseoxi_Log_2), [[_player] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+[_target, "Pulseoximeter"] call ace_medical_treatment_fnc_addToTriageCard;
