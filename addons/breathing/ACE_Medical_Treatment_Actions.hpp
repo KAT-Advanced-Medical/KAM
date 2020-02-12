@@ -11,7 +11,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_Pulseoximeter"};
         condition = QGVAR(enable);
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(treatmentAdvanced_pulseoximeter));
+        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_pulseoximeter));
         callbackFailure = "";
         callbackProgress = "";
         itemConsumed = 1;
@@ -34,9 +34,9 @@ class ACE_Medical_Treatment_Actions {
         requiredMedic = 1;
         treatmentTime = 2;
         items[] = {};
-        condition = QUOTE(_target getVariable [ARR_2(QQGVAR(pulseoximeter), false)]);
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(pulseoximeter), false)]);
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(treatmentAdvanced_removePulseoximeter));
+        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_removePulseoximeter));
         callbackFailure = "";
         callbackProgress = "";
         itemConsumed = 0;
@@ -59,9 +59,9 @@ class ACE_Medical_Treatment_Actions {
         requiredMedic = 2;
         treatmentTime = 7;
         items[] = {"kat_chestSeal"};
-        condition = "_target getVariable ['KAT_medical_airwayCollapsed', false]";
+        condition = "_patient getVariable ['KAT_medical_airwayCollapsed', false]";
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(treatmentAdvanced_chestSeal));
+        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_chestSeal));
         callbackFailure = "";
         callbackProgress = "";
         itemConsumed = 1;

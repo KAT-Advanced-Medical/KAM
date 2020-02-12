@@ -38,4 +38,4 @@ private _message = format ["%1, %2", _messageairwayobstruction, _messageairwayOc
 [_message, 2, _player] call ace_common_fnc_displayTextStructured;
 
 [_target, "activity", LSTRING(checkAirway_log), [[_player] call ace_common_fnc_getName, _yesornoobstruction, LSTRING(obstruction), _yesornoOccluded, LSTRING(Occluded)]] call ace_medical_treatment_fnc_addToLog;
-[_target, "quick_view", LSTRING(checkAirway_log), [[_player] call ace_common_fnc_getName, _yesornoobstruction, LSTRING(obstruction), _yesornoOccluded, LSTRING(Occluded)]] call ace_medical_treatment_fnc_addToLog;
+//[_target, "quick_view", LSTRING(checkAirway_log), [[_player] call ace_common_fnc_getName, _yesornoobstruction, LSTRING(obstruction), _yesornoOccluded, LSTRING(Occluded)]] call ace_medical_treatment_fnc_addToLog;

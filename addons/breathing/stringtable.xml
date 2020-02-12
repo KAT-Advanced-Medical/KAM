@@ -8,7 +8,7 @@
             <Spanish>¿Activar ACE-Respiración?</Spanish>
             <Chinese>啟用ACE-心肺呼吸系統？</Chinese>
         </Key>
-        <Key ID="kat_breathing_SETTING_death_timer_enable">
+        <Key ID="STR_kat_breathing_SETTING_death_timer_enable">
             <English>Alternative death timer for airway injuries?</English>
             <German>Alternativen Todestimer für Atemwegsverlegungen nutzen?</German>
             <Polish>Alternatywny licznik do śmierci dla urazów dróg oddechowych?</Polish>

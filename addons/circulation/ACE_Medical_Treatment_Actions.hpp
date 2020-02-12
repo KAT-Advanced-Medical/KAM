@@ -9,8 +9,8 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         items[] = {};
-        callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _player, _target, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag));
-        condition = QUOTE('kat_Painkiller' in (magazines _player) || 'kat_Painkiller' in (magazines _target));
+        callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _player, _patient, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag));
+        condition = QUOTE('kat_Painkiller' in (magazines _player) || 'kat_Painkiller' in (magazines _patient));
         litter[] = {};
     };
     class CheckDogtags: checkPulse {
@@ -19,7 +19,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        callbackSuccess = "[_player, _target] call ace_dogtags_fnc_checkDogtag";
+        callbackSuccess = "[_player, _patient] call ace_dogtags_fnc_checkDogtag";
         condition = "true";
     };
     class CheckBloodPressure: CheckPulse { // Remove the ability to check blood pressure at the head
@@ -41,15 +41,15 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         requiredMedic = 1;
         callbackProgress = "";
-        callbackSuccess = QUOTE([ARR_2(_player, _target)] call FUNC(treatmentAdvanced_X));
+        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_X));
         animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
     };
     class Remove_X_Defibrillator: X_Defibrillator {
         displayName = CSTRING(X_Action_Remove);
         items[] = {};
-        condition = QUOTE(_target getVariable [ARR_2(QQGVAR(X), true)]);
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
         treatmentTime = 2;
         callbackProgress = "";
-        callbackSuccess = QUOTE(_target setVariable [ARR_3(QQGVAR(X), false, true)]; _player setVariable [ARR_3(QQGVAR(use), false, true)]);
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(X), false, true)]; _player setVariable [ARR_3(QQGVAR(use), false, true)]);
     };
 };
