@@ -34,33 +34,33 @@ if (isNull _display) then {
             [_pfhID] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _target = _display getVariable [QEGVAR(medical_gui,target), objNull];
-        private _selectionN = _display getVariable [QEGVAR(medical_gui,selectionN), 0];
+        private _target = _display getVariable ["ace_medical_gui_target", objNull];
+        private _selectionN = _display getVariable ["ace_medical_gui_selectionN", 0];
 
         // Close display if target moved too far away (ignore if in same vehicle)
         if (ACE_player distance _target > MAX_DISTANCE && {vehicle _target != vehicle ACE_player}) exitWith {
             [_pfhID] call CBA_fnc_removePerFrameHandler;
             "ace_medical_gui_RscPatientInfo" cutFadeOut 0.3;
-            [[ELSTRING(medical,DistanceToFar), _target call EFUNC(common,getName)], 2] call EFUNC(common,displayTextStructured);
+            [["ace_medical_DistanceToFar", _target call ace_common_fnc_getName], 2] call ace_common_fnc_displayTextStructured;
         };
 
         // Update body image
         private _ctrlBodyImage = _display displayCtrl IDC_BODY_GROUP;
-        [_ctrlBodyImage, _target] call EFUNC(medical_gui,updateBodyImage);
+        [_ctrlBodyImage, _target] call ace_medical_gui_fnc_updateBodyImage;
 
         // Update injury list
         private _ctrlInjuries = _display displayCtrl IDC_INJURIES;
-        [_ctrlInjuries, _target, _selectionN] call EFUNC(medical_gui,updateInjuryList);
+        [_ctrlInjuries, _target, _selectionN] call ace_medical_gui_fnc_updateInjuryList;
 
         // Update activity log
         private _ctrlActivityLog = _display displayCtrl IDC_ACTIVITY;
         private _activityLog = _target getVariable [MED_LOG_VARNAME("activity"), []];
-        [_ctrlActivityLog, _activityLog] call EFUNC(medical_gui,updateLogList);
+        [_ctrlActivityLog, _activityLog] call ace_medical_gui_fnc_updateLogList;
 
         // Update triage status
-        [_display, _target] call EFUNC(medical_gui,updateTriageStatus);
+        [_display, _target] call ace_medical_gui_fnc_updateTriageStatus;
     }, 0, _display] call CBA_fnc_addPerFrameHandler;
 };
 
-_display setVariable [QEGVAR(medical_gui,target), _target];
-_display setVariable [QEGVAR(medical_gui,selectionN), _selectionN];
+_display setVariable ["ace_medical_gui_target", _target];
+_display setVariable ["ace_medical_gui_selectionN", _selectionN];
