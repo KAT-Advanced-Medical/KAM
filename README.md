@@ -65,8 +65,8 @@ Known Issues
 
 Required
 --------
-+ [CBA_A3 1.20 or later](http://www.armaholic.com/page.php?id=18767)
-+ [ACE3 1.80 or later](https://ace3mod.com/)
++ [CBA_A3 3.13 or later](http://www.armaholic.com/page.php?id=18767)
++ [ACE3 3.13.0 or later](https://ace3mod.com/)
 
 Youtube
 --------
