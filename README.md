@@ -31,11 +31,13 @@ Big thanks to
 + [Kellerkompanie](http://kellerkompanie.com/)
 
 ## Disclaimer from the Editor Tomcat
-    - This isnt any bugfree and official Version of the KAT System
+    - This isn’t a bug free or official Version of the KAT System
     - This Git is for Development use
     - Everybody can make Pull/Push request
     - There will be a lot of bugs at the moment
     - The rewrite will take its time
+    - If you want to make suggestions feel free to write them into the Discord Server (link above) or write the suggestions in a DM to @Tomcat#9495
+    - You can look at the current state of suggestions on Trello: <a href="https://trello.com/b/G9ReF3C7/kat-features">Trello</a> 
 
 ## Core features
 
