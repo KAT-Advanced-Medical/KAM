@@ -29,7 +29,7 @@
             <Chinese>呼吸道塌陷機率</Chinese>
         </Key>
         <Key ID="STR_kat_airway_SETTING_obstruction">
-            <English>Probability for a obstruction airway</English>
+            <English>Probability for an obstructed airway</English>
             <German>Atemwegsverlegungswahrscheinlichkeit</German>
             <Polish>Szansa na zator dróg oddechowych</Polish>
             <Spanish>Probabilidad de obstrucción en vías aéreas</Spanish>
@@ -103,7 +103,7 @@
             <Chinese>無</Chinese>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
-            <English>No Airwaymanagement needed</English>
+            <English>No airway management needed</English>
             <German>Kein Atemwegsmanagement erforderlich</German>
             <Polish>Nie ma potrzeby udrażniania dróg oddechowych</Polish>
             <Spanish>No se necesita manejo de vías aéreas</Spanish>
@@ -117,7 +117,7 @@
             <Chinese>不需要醫療抽吸</Chinese>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_yes">
-            <English>Airwaymanagement needed</English>
+            <English>Airway management needed</English>
             <German>Atemwegsmanagement erforderlich</German>
             <Polish>Potrzebne udrażnianie dróg oddechowych</Polish>
             <Spanish>Requiere manejo de vías aéreas</Spanish>
@@ -131,7 +131,7 @@
             <Chinese>需要醫療抽吸</Chinese>
         </Key>
         <Key ID="STR_kat_airway_Airway_already">
-            <English>There is already a airway management</English>
+            <English>Airway management has already been performed</English>
             <German>Atemwegsmanagement wurde bereits durchgeführt</German>
             <Polish>Drogi oddechowe są udrażniane</Polish>
             <Spanish>El manejo de vías aéreas ya se ha llevado a cabo</Spanish>
@@ -145,7 +145,7 @@
             <Chinese>%1 放置一個: %2</Chinese>
         </Key>
         <Key ID="STR_kat_airway_Airway_NA">
-            <English>Airwaymanagement not available</English>
+            <English>Airway management is not available</English>
             <German>Atemwegsmanagement nicht möglich</German>
             <Polish>Udrażnianie dróg oddechowych jest niedostępne</Polish>
             <Spanish>El manejo de vías aéreas no está disponible</Spanish>
@@ -159,7 +159,7 @@
             <Chinese>頭部過度伸張</Chinese>
         </Key>
         <Key ID="STR_kat_airway_overstretched">
-            <English>Hyperextend Head</English>
+            <English>Hyperextended Head</English>
             <German>Kopf überstreckt</German>
             <Polish>Głowa odchylona</Polish>
             <Spanish>Cabeza hiperextendida</Spanish>
@@ -173,14 +173,14 @@
             <Chinese>伸張中</Chinese>
         </Key>
         <Key ID="STR_kat_airway_overstretch_cancel">
-            <English>Hyperextend Head canceled</English>
+            <English>Hyperextending Head canceled</English>
             <German>Kopf überstrecken abgebrochen</German>
             <Polish>Przestałeś odchylać głowę</Polish>
             <Spanish>Hiperextensión cancelada</Spanish>
             <Chinese>已經取消伸張頭部</Chinese>
         </Key>
         <Key ID="STR_kat_airway_overstretch_info">
-            <English>Don't run away you're saving a life!</English>
+            <English>Don't run away, you're saving a life!</English>
             <German>Renne nicht weg, du rettest ein Leben!</German>
             <Polish>Nie uciekaj, ratujesz życie!</Polish>
             <Spanish>¡No huyas, estás salvando una vida!</Spanish>
