@@ -16,8 +16,8 @@ _unit call FUNC(init);
 }, "Spo2_Statemachine"] call CBA_statemachine_fnc_addTransition;
 diag_log "Statemachine is set";*/
 
-private _currentState = [_unit, ace_medical_STATE_MACHINE] call CBA_statemachine_fnc_getCurrentState;
-[_unit, ace_medical_STATE_MACHINE, _currentState, "Unconscious", {}, "MANUAL"] call CBA_statemachine_fnc_manualTransition;
+//private _currentState = [_unit, ace_medical_STATE_MACHINE] call CBA_statemachine_fnc_getCurrentState;
+//[_unit, ace_medical_STATE_MACHINE, _currentState, "Unconscious", {}, "MANUAL"] call CBA_statemachine_fnc_manualTransition;
 
 if (GVAR(pneumothorax) == 0) exitWith {};
 _unit addEventHandler ["HandleDamage", {
