@@ -123,7 +123,11 @@ private _fnc_getWoundDescription = {
         if (_amountOf > 0) then {
             _woundEntries pushBack [call _fnc_getWoundDescription, [1, 1, 1, 1]];
         } else {
-            if !(ace_medical_treatment_advancedBandages && {ace_medical_treatment_woundReopening}) then {
+            // ace_medical_treatment_advancedBandages
+            // Disabled == 0
+            // Enabled == 1
+            // EnabledCanReopen == 2
+            if (ace_medical_treatment_advancedBandages < 2) then {
                 _woundEntries pushBack [format ["[B] %1", call _fnc_getWoundDescription], [0.7, 0.7, 0.7, 1]];
             };
         };

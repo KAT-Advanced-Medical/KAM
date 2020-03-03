@@ -5,7 +5,6 @@ class CfgHints {
             description = CSTRING(hint_desc);
             tip = CSTRING(hint_tip);
             arguments[] = {};
-            image = QPATHTOF(ui\larynx.paa);
         };
     };
 };
