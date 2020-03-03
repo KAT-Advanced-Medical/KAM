@@ -169,8 +169,6 @@ if (_woundEntries isEqualTo []) then {
     _entries append _woundEntries;
 };
 
-diag_log format ["_entries: %1", _entries];
-
 // Add all entries to injury list
 lbClear _ctrl;
 
