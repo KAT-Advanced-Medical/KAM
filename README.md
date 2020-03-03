@@ -1,4 +1,4 @@
-# KAT Medical - Kygan Edition
+# KAT Medical
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/Katalam/kat_aceAdvMedical/master/logo.jpg">
