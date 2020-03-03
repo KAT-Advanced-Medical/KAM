@@ -1,3 +1,4 @@
+=======
 # KAT Medical
 
 <p align="center">
@@ -25,29 +26,27 @@
 </p>
 
 
-**The ACE Advanced Medical System is nice, but we can do it better, even on a more realistic way and bring it on another level with these addons.**
+**The ACE Advanced Medical System is nice, but we can do it better, even on a more realistic way and bring it on another level with these addons.**<br/>
+*Created by Katalam*
 
-Created by Katalam
+Big thanks to
+---------
++ [Kellerkompanie](http://kellerkompanie.com/)
 
-## Big thanks to
-
-- [Kellerkompanie](http://kellerkompanie.com/)
-- [Tomcat-SG](https://github.com/Tomcat-SG)
-
-## Disclaimer from the Editor Tomcat (and Kygan/Conrimaceogain)
-
+## Disclaimer from the Editor Tomcat
+    
 - This isn’t a bug free or official Version of the KAT System
-  - This Git is for Development use
-  - Everybody can make Pull/Push request
-  - There will be a lot of bugs at the moment
-  - The rewrite will take its time
-  - If you want to make suggestions feel free to write them into the Discord Server (link above) or write the suggestions in a DM to @Tomcat#9495
-  - You can look at the current state of suggestions on Trello: https://trello.com/b/G9ReF3C7/kat-features
+    - This Git is for Development use
+    - Everybody can make Pull/Push request
+    - There will be a lot of bugs at the moment
+    - The rewrite will take its time
+    - If you want to make suggestions feel free to write them into the Discord Server (link above) or write the suggestions in a DM to @Tomcat#9495
+    - You can look at the current state of suggestions on Trello: https://trello.com/b/G9ReF3C7/kat-features
 
 ## Core features
 
 - Airway
-  - [x] Airway management for unconscious patients
+  - [x] Airwaymanagement for unconscious patients
     - [x] Head overstretching
     - [x] Intubation
     - [x] Aspiration
@@ -59,48 +58,46 @@ Created by Katalam
   - [x] Bigger AED with monitoring
 - Disability
   - [x] Cut of clothes
-  - [x] Allergic reactions
+  - [x] Allergical reactions
 - Exposure
   - [ ] Heat-preserving
 - Misc
   - [ ] Big Backpack?
   - [x] Workable IV stand
 
-## Known Issues
+Known Issues
+------------
++ [Issues](https://github.com/Katalam/kat_aceAdvMedical/issues)
 
-- [Issues](https://github.com/Katalam/kat_aceAdvMedical/issues)
+Required
+--------
++ [CBA_A3 3.13 or later](http://www.armaholic.com/page.php?id=18767)
++ [ACE3 3.13.0 or later](https://ace3mod.com/)
 
-## Required
+Youtube
+--------
++ [Airway](https://youtu.be/V0csFQ1PLIw)
++ [Breathing](abc)
++ [Circulation](abc)
++ [Disability](abc)
++ [Exposure](abc)
++ [Misc](abc)
 
-- [CBA_A3 3.13 or later](http://www.armaholic.com/page.php?id=18767)
-- [ACE3 3.13.0 or later](https://ace3mod.com/)
-
-## Youtube
-
-- [Airway](https://youtu.be/V0csFQ1PLIw)
-- [Breathing](abc)
-- [Circulation](abc)
-- [Disability](abc)
-- [Exposure](abc)
-- [Misc](abc)
-
-## Class Names
-
-- [click here](https://github.com/Katalam/kat_aceAdvMedical/wiki/Class-Names)
+Class Names
+--------
++ [click here](https://github.com/Katalam/kat_aceAdvMedical/wiki/Class-Names)
 
 ## Contributing
 
 You can help out with the ongoing development by looking for potential bugs in my code base, or by contributing new features. I am always welcome to new pull requests containing bug fixes, refactors and new features.
 
 ### Building
-
 The build process is base on the [ACE3 build process](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html), so you can follow the steps there. Basically the following is needed:
-
-- correctly setup project drive (P: drive)
-- download/clone kat_aceAdvMedical GitHub repo
-- switch to the tools/ folder and execute ```python setup.py```
-- you can build by executing ```python build.py``` from the tools folder
-- for testing include your mod by adding ```-mod=x\kat``` as start parameter
++ correctly setup project drive (P: drive)
++ download/clone kat_aceAdvMedical GitHub repo
++ switch to the tools/ folder and execute ```python setup.py```
++ you can build by executing ```python build.py``` from the tools folder
++ for testing include your mod by adding ```-mod=x\kat``` as start parameter
 
 For building release builds see [ACE3 reference](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html).
 
@@ -115,3 +112,4 @@ Please, use my [Issue Tracker](https://github.com/Katalam/kat_aceAdvMedical/issu
  <br>
  This work is licensed under a Arma Public License Share Alike
 </a>
+
