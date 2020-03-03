@@ -21,7 +21,6 @@
 params ["_target", "_selectionN"];
 
 private _display = uiNamespace getVariable ["ace_medical_gui_RscPatientInfo", displayNull];
-diag_log format ["displayPatientInformation _display: %1", _display];
 
 if (isNull _display) then {
     "ace_medical_gui_RscPatientInfo" cutRsc ["ace_medical_gui_RscPatientInfo", "PLAIN", -1, false];
