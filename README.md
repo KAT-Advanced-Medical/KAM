@@ -1,4 +1,3 @@
-=======
 # KAT Medical
 
 <p align="center">
