@@ -123,7 +123,11 @@ private _fnc_getWoundDescription = {
         if (_amountOf > 0) then {
             _woundEntries pushBack [call _fnc_getWoundDescription, [1, 1, 1, 1]];
         } else {
-            if !(ace_medical_treatment_advancedBandages && {ace_medical_treatment_woundReopening}) then {
+            // ace_medical_treatment_advancedBandages
+            // Disabled == 0
+            // Enabled == 1
+            // EnabledCanReopen == 2
+            if (ace_medical_treatment_advancedBandages < 2) then {
                 _woundEntries pushBack [format ["[B] %1", call _fnc_getWoundDescription], [0.7, 0.7, 0.7, 1]];
             };
         };
@@ -168,8 +172,6 @@ if (_woundEntries isEqualTo []) then {
 } else {
     _entries append _woundEntries;
 };
-
-diag_log format ["_entries: %1", _entries];
 
 // Add all entries to injury list
 lbClear _ctrl;
