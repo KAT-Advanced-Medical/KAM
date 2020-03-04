@@ -19,7 +19,7 @@
 
 params ["_target", "_type", "_message"];
 
-private _logVarName = format ["ace_medical_logFile_%1", _type];
+private _logVarName = format ["ace_medical_log_%1", _type];
 
 private _logs = _target getVariable ["ace_medical_allLogs", []];
 if !(_logVarName in _logs) exitWith {false};
