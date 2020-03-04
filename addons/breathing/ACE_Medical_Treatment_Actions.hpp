@@ -3,7 +3,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Pulseoximeter_Display);
         displayNameProgress = CSTRING(placing);
         category = "examine";
-        treatmentLocations = TREATMENT_LOCATIONS_ALL;
+        treatmentLocations = 0;
         allowedSelections[] = {"LeftArm", "RightArm"};
         allowSelfTreatment = 0;
         requiredMedic = 1;
@@ -28,7 +28,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Pulseoximeter_Display_Remove);
         displayNameProgress = CSTRING(remove);
         category = "examine";
-        treatmentLocations = TREATMENT_LOCATIONS_ALL;
+        treatmentLocations = 0;
         allowedSelections[] = {"LeftArm", "RightArm"};
         allowSelfTreatment = 0;
         requiredMedic = 1;
@@ -53,7 +53,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(pneumothorax_display);
         displayNameProgress = CSTRING(treating);
         category = "advanced";
-        treatmentLocations = TREATMENT_LOCATIONS_ALL;
+        treatmentLocations = 0;
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
         requiredMedic = 2;

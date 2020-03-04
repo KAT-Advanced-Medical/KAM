@@ -3,7 +3,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Larynx_Display);
         displayNameProgress = CSTRING(action_placing);
         category = "airway";
-        treatmentLocations = TREATMENT_LOCATIONS_ALL;
+        treatmentLocations = 0;
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
         requiredMedic = 1;
