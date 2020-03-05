@@ -38,7 +38,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(X_Action_Progress);
         items[] = {"kat_X_AED"};
         condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(use),false)]));
-        treatmentTime = 2;
+        treatmentTime = 5;
         requiredMedic = 1;
         callbackProgress = "";
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_X));
@@ -48,7 +48,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(X_Action_Remove);
         items[] = {};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
-        treatmentTime = 2;
+        treatmentTime = 5;
         callbackProgress = "";
         callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(X), false, true)]; _player setVariable [ARR_3(QQGVAR(use), false, true)]);
     };

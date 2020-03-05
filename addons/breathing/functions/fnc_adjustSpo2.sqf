@@ -28,7 +28,6 @@ if (_add) then {
     _unit setVariable ["KAT_medical_airwayStatus", _newValue, true];
 	if (_newValue > 65 && (_unit getVariable ["ACE_isUnconscious",true])) then {
 		[_unit, false, 0, true] call ace_medical_fnc_setUnconscious;
-		diag_log "Add SPO2"
 	};
 } else {
     _newValue = _oldValue - _value;
@@ -36,7 +35,6 @@ if (_add) then {
     _unit setVariable ["KAT_medical_airwayStatus", _newValue, true];
 	if (_newValue < 65 && (_unit getVariable ["ACE_isUnconscious",true])) then {
 		[_unit, true] call ace_medical_fnc_setUnconscious;
-		diag_log "Remove SPO2"
 	};
 };
 
@@ -45,7 +43,6 @@ if (_newValue <= 1) then {
     _newValue = 0;
 	if (_newValue < 65 && (_unit getVariable ["ACE_isUnconscious",true])) then {
 		[_unit, true] call ace_medical_fnc_setUnconscious;
-		diag_log "SPO2 == 0"
 	};
 };
 

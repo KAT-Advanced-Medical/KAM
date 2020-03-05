@@ -18,18 +18,13 @@
 params ["_player", "_target", "_selectionName", "_className", "_items"];
 
 private _return = false;
+_items = "kat_" + _className;
 
-[_player, _target, _selectionName, _className, "", _items] call ace_medical_treatment_fnc_ivBag;
-
-diag_log format ["_player: %1", _player];
-diag_log format ["_target: %1", _target];
-diag_log format ["_selectionName: %1", _selectionName];
-diag_log format ["_className: %1", _className];
-diag_log format ["_items: %1", _items];
+[_player, _target, _selectionName, _className, objNull, _items] call ace_medical_treatment_fnc_ivBag;
 
 if ([_target, _className] call FUNC(compatible)) exitWith {};
 
 [_className, _target] call FUNC(treatmentAdvanced_IV);
 
 _return = true;
-_return;
+_return
