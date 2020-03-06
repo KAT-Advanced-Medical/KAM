@@ -6,7 +6,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = 0;
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
-        requiredMedic = 1;
+        medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_larynx"};
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
@@ -26,7 +26,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Guedeltubus: larynxtubus {
         displayName = CSTRING(Guedel_Display);
-        requiredMedic = 0;
+        medicRequired = 0;
         items[] = {"kat_guedel"};
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Guedeltubus')] call FUNC(treatmentAdvanced_airway));
     };
@@ -42,7 +42,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(overstretch);
         displayNameProgress = CSTRING(overstretching);
         treatmentTime = 2;
-        requiredMedic = 0;
+        medicRequired = 0;
         items[] = {};
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && !(_patient getVariable [ARR_2(QQGVAR(overstretch), false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_overstretchHead));
@@ -51,7 +51,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(turnaround);
         displayNameProgress = CSTRING(turnaround_action);
         treatmentTime = 5;
-        requiredMedic = 0;
+        medicRequired = 0;
         items[] = {};
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_turnaroundHead));
     };

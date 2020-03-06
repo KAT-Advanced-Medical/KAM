@@ -2,7 +2,7 @@ class ACE_Medical_Treatment_Actions {
     class SalineIV;
     class SalineIV_Stand: SalineIV {
         displayName = CSTRING(Display_IVStand);
-        requiredMedic = 0;
+        medicRequired = 0;
         condition = QUOTE(params ['_player']; [ARR_2(_player, 1000)] call FUNC(conditionIV));
         items[] = {};
         callbackSuccess = QUOTE([ARR_5(_player, _patient, _selectionName, 'SalineIV', ['ACE_salineIV'])] call FUNC(treatmentIV));

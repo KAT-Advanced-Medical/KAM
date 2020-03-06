@@ -119,7 +119,7 @@ class CfgVehicles {
                     };
                     class ACE_Torso {
                         class CPR;
-                        class kat_X_AED: CPR {
+                        class GVAR(X_AED): CPR {
                             displayName = CSTRING(X_Action_Use);
                             condition = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_treatment_fnc_canTreatCached";
                             statement = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_treatment_fnc_treatment";

@@ -9,6 +9,7 @@ PREP(init);
 PREP(onCloseDialog);
 PREP(removeEffect_IV);
 PREP(removeItemfromMag);
+PREP(returnAED_X);
 PREP(removeLog);
 PREP(treatmentAdvanced_IV);
 PREP(treatmentAdvanced_X);
