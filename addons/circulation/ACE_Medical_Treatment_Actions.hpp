@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         items[] = {};
-        callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _player, _patient, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag));
+        callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _player, _patient, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag); [_patient] call FUNC(wrongBloodTreatment););
         condition = QUOTE([ARR_2(_player, 'kat_Painkiller')] call ace_common_fnc_hasMagazine || [ARR_2(_patient, 'kat_Painkiller')] call ace_common_fnc_hasMagazine);
         // condition = "true";
         litter[] = {};

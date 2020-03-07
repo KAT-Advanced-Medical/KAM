@@ -13,3 +13,4 @@ PREP(returnAED_X);
 PREP(removeLog);
 PREP(treatmentAdvanced_IV);
 PREP(treatmentAdvanced_X);
+PREP(wrongBloodTreatment);
