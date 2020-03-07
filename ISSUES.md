@@ -8,3 +8,4 @@
 * ~~Remove log of the pulseoximeter and the AEDx wont work~~
 * There are duplicate 'Take Painkillers' actions visible when you ACE interact with someone's head
 * ~~Some treatment actions aren't appearing in the medical menu such as attach pulseoximeter, attach aedx, give painkillers~~
+* A player can not give a patient pain killers unless the patient has pain killers in their inventory.
