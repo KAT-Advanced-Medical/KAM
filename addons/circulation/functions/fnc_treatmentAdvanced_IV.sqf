@@ -19,9 +19,14 @@ params ["_className", "_target"];
 
 //unit, adjustment, time
 private _volume = getNumber (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "IV" >> _className >> "volume");
-private _hradjust = _volume / 10;
-[_target, _hradjust, 1, true] call ace_medical_vitals_fnc_updateHeartRate;
+
+private _hradjustpositive = (_volume / 4);
+private _hradjust = -(_hradjustpositive);
+
+_target setVariable ["KAT_medical_wrongBloodAdjust", _hradjustpositive, true];
+
+[_target, _className, 150, 300, _hradjust, 0, -10] call ace_medical_status_fnc_addMedicationAdjustment;
 
 //todo tod?
 private _a = (_target getVariable [QGVAR(IV_counts), 0]) + 1;
-_target setVariable [QGVAR(IV_counts), _a, true];
+_target setVariable [QGVAR(IV_counts), _a, true]

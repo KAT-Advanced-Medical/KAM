@@ -43,8 +43,7 @@ if (!local _unit) then {
     if (_status > 100) exitWith {
         _unit setVariable ["KAT_medical_airwayStatus", 100, true];
 		if (_unit getVariable ["ACE_isUnconscious",true]) then {
-			[_unit, false, 0, true] call ace_medical_fnc_setUnconscious;
-			diag_log "HandleBreathing: Unit now not unconscious!"
+			[_unit, false, 0, true] call ace_medical_fnc_setUnconscious
 		};
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
