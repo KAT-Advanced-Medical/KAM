@@ -68,7 +68,7 @@ class CfgVehicles {
                 class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
                 class Painkillers {
                     displayName = CSTRING(Inject_Box_Painkillers);
-                    condition = QUOTE(('kat_Painkiller' in (magazines _player) || 'kat_Painkiller' in (magazines _target)));
+                    condition = QUOTE(([ARR_2(_player, 'kat_Painkiller')] call ace_common_fnc_hasMagazine) || ([ARR_2(_target, 'kat_Painkiller')] call ace_common_fnc_hasMagazine));
                     statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_treatment_fnc_treatment";
                     showDisabled = 0;
                     exceptions[] = {"isNotSitting"};
@@ -110,7 +110,7 @@ class CfgVehicles {
                         class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
                         class Painkillers {
                             displayName = CSTRING(Inject_Box_Painkillers);
-                            condition = QUOTE('kat_Painkiller' in (magazines _player) || 'kat_Painkiller' in (magazines _target));
+                            condition = QUOTE(([ARR_2(_player, 'kat_Painkiller')] call ace_common_fnc_hasMagazine) || ([ARR_2(_target, 'kat_Painkiller')] call ace_common_fnc_hasMagazine));
                             statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_treatment_fnc_treatment";
                             showDisabled = 0;
                             exceptions[] = {"isNotSitting"};
@@ -155,7 +155,7 @@ class CfgVehicles {
                     class CheckBloodPressure {};
                     class Painkillers {
                         displayName = CSTRING(Inject_Box_Painkillers);
-                        condition = "'kat_Painkiller' in (magazines _player)";
+                        condition = QUOTE([ARR_2(_player, 'kat_Painkiller')] call ace_common_fnc_hasMagazine);
                         statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_treatment_fnc_treatment";
                         showDisabled = 0;
                         exceptions[] = {"isNotInside", "isNotSitting"};

@@ -7,4 +7,4 @@
 * ACE is logging that some Actions don't have a treatment time. But they have one.
 * ~~Remove log of the pulseoximeter and the AEDx wont work~~
 * There are duplicate 'Take Painkillers' actions visible when you ACE interact with someone's head
-* Some treatment actions aren't appearing in the medical menu such as - ~~attach pulseoximeter~~, ~~attach aedx~~, give painkillers
+* ~~Some treatment actions aren't appearing in the medical menu such as attach pulseoximeter, attach aedx, give painkillers~~

@@ -10,7 +10,8 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         items[] = {};
         callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _player, _patient, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag));
-        condition = QUOTE('kat_Painkiller' in (magazines _player) || 'kat_Painkiller' in (magazines _patient));
+        condition = QUOTE([ARR_2(_player, 'kat_Painkiller')] call ace_common_fnc_hasMagazine || [ARR_2(_patient, 'kat_Painkiller')] call ace_common_fnc_hasMagazine);
+        // condition = "true";
         litter[] = {};
     };
     class CheckDogtags: checkPulse {
