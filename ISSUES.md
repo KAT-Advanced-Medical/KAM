@@ -1,7 +1,7 @@
 # Known Issues
 
-* If you want to add IV with a Blood group it will not show how much has already been given to the player.
-* If you add IV there is a error Message in cause of setting the IV to the Triage Card
+*~~If you want to add IV with a Blood group it will not show how much has already been given to the player.~~
+* ~~If you add IV there is a error Message in cause of setting the IV to the Triage Card~~
 * ~~SPO2 Value is setting the player into unconscious state~~
 * Something isn't working with stitching (Still requires confirmation of a problem)
 * ACE is logging that some Actions don't have a treatment time. But they have one.
