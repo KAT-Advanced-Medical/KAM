@@ -66,31 +66,6 @@ class CfgVehicles {
             };
             class ACE_Head {
                 class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
-                class Painkillers {
-                    displayName = CSTRING(Inject_Box_Painkillers);
-                    condition = QUOTE(([ARR_2(_player, 'kat_Painkiller')] call ace_common_fnc_hasMagazine) || ([ARR_2(_target, 'kat_Painkiller')] call ace_common_fnc_hasMagazine));
-                    statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_treatment_fnc_treatment";
-                    showDisabled = 0;
-                    exceptions[] = {"isNotSitting"};
-                    icon = QPATHTOF(ui\icon_painkillers_action.paa);
-                };
-            };
-            class ACE_Torso {
-                class CPR;
-                class kat_X_AED: CPR {
-                    displayName = CSTRING(X_Action_Use);
-                    condition = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_treatment_fnc_treatment";
-                    exceptions[] = {""};
-                    icon = QPATHTOF(ui\X_Series-Device_W.paa);
-                };
-                class GVAR(R_X_AED): CPR {
-                    displayName = CSTRING(X_Action_Remove);
-                    condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_treatment_fnc_treatment";
-                    exceptions[] = {""};
-                    icon = QPATHTOF(ui\X_Series-Device_W.paa);
-                };
             };
             class ACE_ArmLeft {
                 #include "Blood_ArmL.hpp"
@@ -104,63 +79,11 @@ class CfgVehicles {
             class ACE_LegRight {
                 #include "Blood_LegR.hpp"
             };
-            class ACE_MainActions {
-                class Medical {
-                    class ACE_Head {
-                        class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
-                        class Painkillers {
-                            displayName = CSTRING(Inject_Box_Painkillers);
-                            condition = QUOTE(([ARR_2(_player, 'kat_Painkiller')] call ace_common_fnc_hasMagazine) || ([ARR_2(_target, 'kat_Painkiller')] call ace_common_fnc_hasMagazine));
-                            statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_treatment_fnc_treatment";
-                            showDisabled = 0;
-                            exceptions[] = {"isNotSitting"};
-                            icon = QPATHTOF(ui\icon_painkillers_action.paa);
-                        };
-                    };
-                    class ACE_Torso {
-                        class CPR;
-                        class GVAR(X_AED): CPR {
-                            displayName = CSTRING(X_Action_Use);
-                            condition = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_treatment_fnc_canTreatCached";
-                            statement = "[_player, _target, 'body', 'X_Defibrillator'] call ace_medical_treatment_fnc_treatment";
-                            exceptions[] = {""};
-                            icon = QPATHTOF(ui\X_Series-Device_W.paa);
-                        };
-                        class GVAR(R_X_AED): CPR {
-                            displayName = CSTRING(X_Action_Remove);
-                            condition = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_treatment_fnc_canTreatCached";
-                            statement = "[_player, _target, 'body', 'Remove_X_Defibrillator'] call ace_medical_treatment_fnc_treatment";
-                            exceptions[] = {""};
-                            icon = QPATHTOF(ui\X_Series-Device_W.paa);
-                        };
-                    };
-                    class ACE_ArmLeft {
-                        #include "Blood_ArmL.hpp"
-                    };
-                    class ACE_ArmRight {
-                        #include "Blood_ArmR.hpp"
-                    };
-                    class ACE_LegLeft {
-                        #include "Blood_LegL.hpp"
-                    };
-                    class ACE_LegRight {
-                        #include "Blood_LegR.hpp"
-                    };
-                };
-            };
         };
         class ACE_SelfActions {
             class Medical {
                 class ACE_Head {
                     class CheckBloodPressure {};
-                    class Painkillers {
-                        displayName = CSTRING(Inject_Box_Painkillers);
-                        condition = QUOTE([ARR_2(_player, 'kat_Painkiller')] call ace_common_fnc_hasMagazine);
-                        statement = "[_player, _target, 'head', 'Painkillers'] call ace_medical_treatment_fnc_treatment";
-                        showDisabled = 0;
-                        exceptions[] = {"isNotInside", "isNotSitting"};
-                        icon = QPATHTOF(ui\icon_painkillers_action.paa);
-                    };
                 };
             };
             class ACE_Equipment {

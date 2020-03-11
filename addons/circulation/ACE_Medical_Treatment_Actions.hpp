@@ -12,6 +12,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _medic, _patient, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag); [_patient] call FUNC(wrongBloodTreatment););
         condition = "[_medic, 'kat_Painkiller'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Painkiller'] call ace_common_fnc_hasMagazine";
         litter[] = {};
+        icon = QPATHTOF(ui\icon_painkillers_action.paa);
     };
     class CheckDogtags: checkPulse {
         displayName = CSTRING(DogTag);
@@ -32,6 +33,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {{"adv_aceCPR_AED", "kat_X_AED"}};
         treatmentTime = 10;
         callbackProgress = QUOTE(call FUNC(AED_sound));
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
     class X_Defibrillator: CPR {
         displayName = CSTRING(X_Action_Use);
@@ -44,6 +46,7 @@ class ACE_Medical_Treatment_Actions {
         callbackProgress = "";
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_X));
         animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
     class Remove_X_Defibrillator: X_Defibrillator {
         displayName = CSTRING(X_Action_Remove);
@@ -52,5 +55,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 5;
         callbackProgress = "";
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(returnAED_X));
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
 };
