@@ -9,9 +9,8 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         items[] = {};
-        callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _player, _patient, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag); [_patient] call FUNC(wrongBloodTreatment););
-        condition = QUOTE([ARR_2(_player, 'kat_Painkiller')] call ace_common_fnc_hasMagazine || [ARR_2(_patient, 'kat_Painkiller')] call ace_common_fnc_hasMagazine);
-        // condition = "true";
+        callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _medic, _patient, _selectionName, 'Painkillers')] call FUNC(removeItemfromMag); [_patient] call FUNC(wrongBloodTreatment););
+        condition = "[_medic, 'kat_Painkiller'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Painkiller'] call ace_common_fnc_hasMagazine";
         litter[] = {};
     };
     class CheckDogtags: checkPulse {
@@ -20,7 +19,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        callbackSuccess = "[_player, _patient] call ace_dogtags_fnc_checkDogtag";
+        callbackSuccess = "[_medic, _patient] call ace_dogtags_fnc_checkDogtag";
         condition = "true";
     };
     class CheckBloodPressure: CheckPulse { // Remove the ability to check blood pressure at the head
@@ -43,7 +42,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         medicRequired = 1;
         callbackProgress = "";
-        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_X));
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_X));
         animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
     };
     class Remove_X_Defibrillator: X_Defibrillator {
@@ -52,6 +51,6 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
         treatmentTime = 5;
         callbackProgress = "";
-        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(returnAED_X));
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(returnAED_X));
     };
 };
