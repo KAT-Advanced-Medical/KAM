@@ -30,9 +30,11 @@ class ACE_Medical_Treatment_Actions {
     #include "Blood_Medical.hpp"
 
     class Defibrillator: CPR {
-        items[] = {{"adv_aceCPR_AED", "kat_X_AED"}};
+        items[] = {};
         treatmentTime = 10;
         callbackProgress = QUOTE(call FUNC(AED_sound));
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [_medic, 'adv_aceCPR_AED'] call ace_common_fnc_hasItem || [_medic, 'kat_X_AED'] call ace_common_fnc_hasItem);
+        medicRequired = 1;
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
     class X_Defibrillator: CPR {
@@ -44,7 +46,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         medicRequired = 1;
         callbackProgress = "";
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_X));
+        callbackSuccess = QFUNC(treatmentAdvanced_X);
         animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
@@ -54,7 +56,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
         treatmentTime = 5;
         callbackProgress = "";
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(returnAED_X));
+        callbackSuccess = QUOTE(([_medic, _patient] call FUNC(returnAED_X)));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
 };

@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["_player", "_target", "_bodyPart", "_classname"];
 
 // if there is already a connected x-series exitWith a hint
 if (_target getVariable [QGVAR(X), false]) exitWith {
@@ -73,6 +73,7 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
     _target setVariable [QGVAR(X), false, true];
     _player setVariable [QGVAR(use), false, true];
+    [_player, _target] call FUNC(returnAED_X);
 }, [_player, _target], 300, {
     params ["_player", "_target"];
     _target setVariable [QGVAR(X), false, true];
@@ -80,6 +81,7 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
     _target setVariable [QGVAR(X), false, true];
     _player setVariable [QGVAR(use), false, true];
+    [_player, _target] call FUNC(returnAED_X);
 }] call CBA_fnc_waitUntilAndExecute;
 
 // spawns the heart rate beep.
