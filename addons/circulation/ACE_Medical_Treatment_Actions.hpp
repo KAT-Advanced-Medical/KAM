@@ -33,7 +33,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         treatmentTime = 10;
         callbackProgress = QUOTE(call FUNC(AED_sound));
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [_medic, 'adv_aceCPR_AED'] call ace_common_fnc_hasItem || [_medic, 'kat_X_AED'] call ace_common_fnc_hasItem);
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || ([_medic, 'adv_aceCPR_AED'] call ace_common_fnc_hasItem) || ([_medic, 'kat_X_AED'] call ace_common_fnc_hasItem));
         medicRequired = 1;
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
