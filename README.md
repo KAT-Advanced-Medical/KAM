@@ -33,6 +33,7 @@ Created by Katalam
 
 - [Kellerkompanie](http://kellerkompanie.com/)
 - [Tomcat-SG](https://github.com/Tomcat-SG)
+- [Kygan/Conrimaceogain](https://github.com/Conrimaceogain)
 
 ## Disclaimer from the Editor Tomcat (and Kygan/Conrimaceogain)
 
@@ -41,8 +42,6 @@ Created by Katalam
   - Everybody can make Pull/Push request
   - There will be a lot of bugs at the moment
   - The rewrite will take its time
-  - If you want to make suggestions feel free to write them into the Discord Server (link above) or write the suggestions in a DM to @Tomcat#9495
-  - You can look at the current state of suggestions on Trello: https://trello.com/b/G9ReF3C7/kat-features
 
 ## Core features
 
@@ -72,8 +71,8 @@ Created by Katalam
 
 ## Required
 
-- [CBA_A3 3.13 or later](http://www.armaholic.com/page.php?id=18767)
-- [ACE3 3.13.0 or later](https://ace3mod.com/)
+- [CBA_A3 3.14 or later](http://www.armaholic.com/page.php?id=18767)
+- [ACE3 3.13.1 or later](https://ace3mod.com/)
 
 ## Youtube
 
