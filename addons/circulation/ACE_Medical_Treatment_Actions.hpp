@@ -56,7 +56,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
         treatmentTime = 5;
         callbackProgress = "";
-        callbackSuccess = QUOTE(([_medic, _patient] call FUNC(returnAED_X)));
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(returnAED_X));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
 };

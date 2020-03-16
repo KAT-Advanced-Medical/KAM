@@ -191,15 +191,6 @@ class CfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_Actions {
-            class ACE_Torso {
-                class FieldDressing;
-                class LimitWounds {
-                    displayName = CSTRING(LIMITWOUNDS_Display);
-                    condition = "[_player, _target, 'hand_l', 'LimitWounds'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_l', 'LimitWounds'] call ace_medical_treatment_fnc_treatment";
-                    icon = "";
-                };
-            };
             class ACE_ArmLeft {
                 class SalineIV;
                 class SalineIV_Stand: SalineIV {

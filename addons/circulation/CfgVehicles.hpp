@@ -61,9 +61,6 @@ class CfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_Actions {
-            class ACE_Dogtag {
-                condition = "[_player, _target] call ace_dogtags_fnc_canCheckDogtag";
-            };
             class ACE_Head {
                 class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
             };
