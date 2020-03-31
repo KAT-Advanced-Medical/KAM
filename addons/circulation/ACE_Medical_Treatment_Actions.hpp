@@ -46,6 +46,8 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         medicRequired = 1;
         callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
         callbackSuccess = QFUNC(treatmentAdvanced_X);
         animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
