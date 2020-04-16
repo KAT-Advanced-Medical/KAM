@@ -21,10 +21,10 @@ params ["_unit", "_selection", "_damage", "_projectile"];
 if !(GVAR(enable)) exitWith {};
 if (GVAR(pneumothorax) == 0) exitWith {};
 if !(_selection isEqualTo "body") exitWith {};
-if (_damage < 0.7) exitWith {};
+if (_damage < 0.4) exitWith {};
 if !(_projectile isKindOF "BulletBase") exitWith {};
 
-if (random (100) <= GVAR(pneumothorax)) then {
+if (random 100 <= GVAR(pneumothorax)) then {
     // add breathing sound
     [_unit, 0.5] call ace_medical_status_fnc_adjustPainLevel;
     [_unit, CBA_missionTime] call FUNC(handleBreathing);
