@@ -35,11 +35,6 @@ if (_target getVariable [QGVAR(airway_item), ""] isEqualTo "guedel" && (_classNa
     [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
     false;
 };
-if ((random 100 < 5) && (_className isEqualTo "Guedeltubus")) exitWith {
-    private _output = localize LSTRING(Airway_NA);
-    [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
-    false;
-};
 
 _target setVariable [QGVAR(airway), true, true];
 _target setVariable [QGVAR(obstruction), false, true];
