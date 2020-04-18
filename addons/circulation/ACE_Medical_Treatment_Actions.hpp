@@ -30,6 +30,7 @@ class ACE_Medical_Treatment_Actions {
     #include "Blood_Medical.hpp"
 
     class Defibrillator: CPR {
+		displayName = CSTRING(Defib_Action_Use);
         items[] = {};
         treatmentTime = 10;
         callbackProgress = QUOTE(call FUNC(AED_sound));
@@ -54,6 +55,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Remove_X_Defibrillator: X_Defibrillator {
         displayName = CSTRING(X_Action_Remove);
+		displayNameProgress = CSTRING(X_Remove_Action_Progress);
         items[] = {};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
         treatmentTime = 5;
