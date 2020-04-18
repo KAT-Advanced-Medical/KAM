@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call ace_medical_treatment_fnc_tourniquetRemove
+ * [player, cursorObject, "LeftLeg"] call kat_circulation_fnc_returnAEDx;
  *
  * Public: No
  */
