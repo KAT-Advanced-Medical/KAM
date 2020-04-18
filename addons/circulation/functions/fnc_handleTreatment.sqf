@@ -15,12 +15,12 @@
  * Public: No
  */
 
-params ["_player", "_target", "_selectionName", "_className", "_items"];
+params ["_player", "_target", "_bodyPart", "_className", "_item"];
 
 private _return = false;
-_items = "kat_" + _className;
+_item = "kat_" + _className;
 
-[_player, _target, _selectionName, _className, objNull, _items] call ace_medical_treatment_fnc_ivBag;
+[_player, _target, _bodyPart, _className, objNull, _item] call ace_medical_treatment_fnc_ivBag;
 
 if ([_target, _className] call FUNC(compatible)) exitWith {};
 

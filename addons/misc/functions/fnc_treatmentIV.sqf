@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_player", "_target", "_selectionName", "_className", "_item"];
+params ["_player", "_target", "_bodyPart", "_className", "_item"];
 
 private _value = 0;
 
@@ -30,5 +30,12 @@ switch (_className) do {
         _value = 250;
     };
 };
+
+diag_log format ["_player: %1", _player];
+diag_log format ["_target: %1", _target];
+diag_log format ["_bodyPart: %1", _bodyPart];
+diag_log format ["_className: %1", _className];
+diag_log format ["_item: %1", _item];
+
 [_player, _value] call FUNC(removeIVbag);
-[_player, _target, _selectionName, _className, "", _item] call ace_medical_treatment_fnc_ivBag;
+[_player, _target, _bodyPart, _className, objNull, _item] call ace_medical_treatment_fnc_ivBag;
