@@ -198,7 +198,7 @@
             <Chinese>用於舒緩疼痛</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_DescUse">
-            <English>An analgesic used to combat lightly to moderate pain experiences.</English>
+            <English>An analgesic used to combat light to moderate pain experiences.</English>
             <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
             <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
@@ -267,6 +267,20 @@
             <Spanish>Monitorear vitales</Spanish>
             <Chinese>監控生命跡象</Chinese>
         </Key>
+		<Key ID="STR_KAT_circulation_Defib_Action_Use">
+            <English>Use AED defibrillator</English>
+            <German>Benutze AED Defibrillator</German>
+            <Polish>Użyj defibrylatora AED</Polish>
+            <Spanish>Utilice el desfibrilador AED</Spanish>
+            <Chinese>使用AED除顫器</Chinese>
+        </Key>
+		<Key ID="STR_KAT_circulation_AED_X_Action_Use">
+            <English>Use AED-X defibrillator</English>
+            <German>Benutze AED-X Defibrillator</German>
+            <Polish>Użyj defibrylatora AED-X</Polish>
+            <Spanish>Utilice el desfibrilador AED-X</Spanish>
+            <Chinese>使用AED-X除顫器</Chinese>
+        </Key>
         <Key ID="STR_KAT_circulation_X_Action_Remove">
             <English>Remove monitoring</English>
             <German>Entferne Überwachung</German>
@@ -280,6 +294,13 @@
             <Polish>Łączenie</Polish>
             <Spanish>Conectando</Spanish>
             <Chinese>連線中</Chinese>
+        </Key>
+		<Key ID="STR_KAT_circulation_X_Remove_Action_Progress">
+            <English>Disconnecting</English>
+            <German>Entfernen</German>
+            <Polish>Rozłączanie</Polish>
+            <Spanish>Desconectando</Spanish>
+            <Chinese>斷開連接</Chinese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_removeSound">
             <English>Turn down volume of AED X</English>
