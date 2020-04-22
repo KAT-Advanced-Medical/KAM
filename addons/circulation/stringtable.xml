@@ -268,6 +268,13 @@
             <Chinese>監控生命跡象</Chinese>
         </Key>
 		<Key ID="STR_KAT_circulation_Defib_Action_Use">
+            <English>Use AED defibrillator</English>
+            <German>Benutze AED Defibrillator</German>
+            <Polish>Użyj defibrylatora AED</Polish>
+            <Spanish>Utilice el desfibrilador AED</Spanish>
+            <Chinese>使用AED除顫器</Chinese>
+        </Key>
+		<Key ID="STR_KAT_circulation_AED_X_Action_Use">
             <English>Use AED-X defibrillator</English>
             <German>Benutze AED-X Defibrillator</German>
             <Polish>Użyj defibrylatora AED-X</Polish>

@@ -32,4 +32,15 @@ private _type = round random(3);
     }
 ] call CBA_Settings_fnc_init;
 
+//Settable list for using AED-X per medical class
+[
+    QGVAR(medLvl_AED_X),
+    "LIST",
+    ["Allow AED-X", "Training level requied to use an AED-X"],
+    CBA_SETTINGS_CAT,
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 2],
+    true
+] call CBA_settings_fnc_init;
+
+
 ADDON = true;

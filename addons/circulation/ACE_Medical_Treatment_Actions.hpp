@@ -29,6 +29,8 @@ class ACE_Medical_Treatment_Actions {
 
     #include "Blood_Medical.hpp"
 
+
+//For AED
     class Defibrillator: CPR {
 		displayName = CSTRING(Defib_Action_Use);
         items[] = {};
@@ -38,29 +40,41 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
-    class X_Defibrillator: CPR {
+ //For remove defib   
+    class Remove_X_Defibrillator: Defibrillator {
+        displayName = CSTRING(X_Action_Remove);
+		displayNameProgress = CSTRING(X_Remove_Action_Progress);
+        items[] = {};
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
+        treatmentTime = 5;
+        medicRequired = 0;
+        callbackProgress = "";
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(returnAED_X));
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+    };
+//For AED-X
+    class Defibrillator_AED_X: CPR {
+		displayName = CSTRING(AED_X_Action_Use);
+        items[] = {"kat_X_AED"};
+        treatmentTime = 10;
+        callbackProgress = QUOTE(call FUNC(AED_sound));
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [ARR_2(_medic, 'adv_aceCPR_AED')] call ace_common_fnc_hasItem || [ARR_2(_medic, 'kat_X_AED')] call ace_common_fnc_hasItem);
+        medicRequired = QGVAR(medLvl_AED_X);
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+    };
+    class X_Defibrillator_AED_X: CPR {
         displayName = CSTRING(X_Action_Use);
         displayNameProgress = CSTRING(X_Action_Progress);
         items[] = {"kat_X_AED"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), false)]));
         treatmentTime = 5;
         consumeItem = 1;
-        medicRequired = 1;
+        medicRequired = QGVAR(medLvl_AED_X);
         callbackProgress = "";
         callbackStart = "";
         callbackFailure = "";
         callbackSuccess = QFUNC(treatmentAdvanced_X);
         animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
-        icon = QPATHTOF(ui\X_Series-Device_W.paa);
-    };
-    class Remove_X_Defibrillator: X_Defibrillator {
-        displayName = CSTRING(X_Action_Remove);
-		displayNameProgress = CSTRING(X_Remove_Action_Progress);
-        items[] = {};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
-        treatmentTime = 5;
-        callbackProgress = "";
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(returnAED_X));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
 };
