@@ -29,8 +29,7 @@ class ACE_Medical_Treatment_Actions {
 
     #include "Blood_Medical.hpp"
 
-
-//For AED
+	//For AED
     class Defibrillator: CPR {
 		displayName = CSTRING(Defib_Action_Use);
         items[] = {};
@@ -40,7 +39,8 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
- //For remove defib   
+	
+	//For remove defib   
     class Remove_X_Defibrillator: Defibrillator {
         displayName = CSTRING(X_Action_Remove);
 		displayNameProgress = CSTRING(X_Remove_Action_Progress);
@@ -52,7 +52,8 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(returnAED_X));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
-//For AED-X
+	
+	//For AED-X
     class Defibrillator_AED_X: CPR {
 		displayName = CSTRING(AED_X_Action_Use);
         items[] = {"kat_X_AED"};
