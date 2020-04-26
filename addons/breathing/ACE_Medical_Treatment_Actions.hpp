@@ -6,7 +6,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = 0;
         allowedSelections[] = {"LeftArm", "RightArm"};
         allowSelfTreatment = 0;
-        medicRequired = 1;
+        medicRequired = QGVAR(medLvl_Pulseoximeter);
         treatmentTime = 2;
         items[] = {"kat_Pulseoximeter"};
         condition = QGVAR(enable);
@@ -31,7 +31,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = 0;
         allowedSelections[] = {"LeftArm", "RightArm"};
         allowSelfTreatment = 0;
-        medicRequired = 1;
+        medicRequired = QGVAR(medLvl_Pulseoximeter);
         treatmentTime = 2;
         items[] = {};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(pulseoximeter), false)]);
@@ -56,7 +56,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = 0;
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
-        medicRequired = 2;
+        medicRequired = QGVAR(medLvl_Chestseal);
         treatmentTime = 7;
         items[] = {"kat_chestSeal"};
         condition = "_patient getVariable ['KAT_medical_airwayCollapsed', false]";

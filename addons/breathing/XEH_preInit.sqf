@@ -59,4 +59,24 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Settable list for using Pulseoximeter per medical class
+[
+    QGVAR(medLvl_Pulseoximeter),
+    "LIST",
+    ["Allow Pulseoximeter", "Training level requied to use a Pulseoximeter"],
+    CBA_SETTINGS_CAT,
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    true
+] call CBA_settings_fnc_init;
+
+//Settable list for using Chestseal per medical class
+[
+    QGVAR(medLvl_Chestseal),
+    "LIST",
+    ["Allow Chestseal", "Training level requied to use a Chestseal"],
+    CBA_SETTINGS_CAT,
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    true
+] call CBA_settings_fnc_init;
+
 ADDON = true;
