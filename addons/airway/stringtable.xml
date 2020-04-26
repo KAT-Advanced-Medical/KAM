@@ -190,7 +190,7 @@
             <English>You tried to remove the vomit</English>
             <German>Du probierst das Erbrochene zu entfernen</German>
             <Polish>Próbowałeś usunąć wymiociny</Polish>
-            <Spanish>Trataste de remover el vómito</Spanish>
+            <Spanish>Trataste de quitar el vómito</Spanish>
             <Chinese>你試圖清除嘔吐物</Chinese>
         </Key>
         <Key ID="STR_kat_airway_turnaround">
@@ -274,14 +274,14 @@
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
             <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
-            <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas con baterías, lo que le permiten movilidad en una emergencia médica.</Spanish>
+            <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>  
         </Key>
         <Key ID="STR_kat_airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
             <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
-            <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas con baterías, lo que le permiten movilidad en una emergencia médica.</Spanish>
+            <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>  
         </Key>
         <Key ID="STR_kat_airway_intubating">
@@ -309,7 +309,7 @@
             <English>When a patient enters the unconscious state, there are two things that can happen. First of all the airway can collapse. In medical sense this mean, the airway can be blocked from your tongue muscle, 'cause of the missing muscle tone. For example in real life, this will happen to nearly every unconscious person lying on the back. The second thing that can happen is the the airway occluded state. When a patient is lying on the back and the body puke, it will not leave the mouth space. It will stay in there and can block the airway too. The right treatment here, is to remove this vomit. In real life, this will happen sometimes, not quiet often.</English>
             <German>Wenn eine Person bewusstlos wird, gibt es zwei Dinge die passieren können. Erstens die Atemwege können verlegt sein. Durch de nnicht mehr vorhandenen Muskeltonus kann der zungengrund den Luftweg blockieren. Im echten Leben kann man davon ausgehen das wenn ein Patient bewusstlos ist und auf dem Rücken liegt, das er eine Atemwegsverlegung hat. Zweitens, es ist möglich das der Patient erbricht und dann blockieren flüssige und feste Stoffe die Atemwege und dann sind diese "verstopft". Im echten Leben passiert das nicht besonders häufig</German>
             <Polish>Kiedy pacjent staję się nieprzytomny, mogą stać się dwie rzeczy. Pierwszą jest zapadnięcie się dróg oddechowych. Z medycznego punktu widzenia drogi oddechowe mogą być zablokowane przez język. Na przykład w prawdziwym życiu zdarzy się to praktycznie w każdym przypadku osoby nieprzytomnej leżącej na plecach. Drugą rzeczą która może się zdarzyć to niedrożność dróg oddechowych. Kiedy pacjent leży na plecach i ciało będzie wymiotowało/odkrztuszało to zawartość nie opuści buzi. Zostanie tam i będzie mogło blokować drogi oddechowe. Odpowiednim leczniem jest tu usunięcie wymiocin. W prawdziwym życiu też może się to zdarzyć ale nie jest to częste.</Polish>
-            <Spanish>Cuando un paciente entre en estado de inconciencia, hay dos posibles escenarios. Primero que todo, las vías aéreas pueden colapsar. En términos médicos, esto significa que las vías aéreas pueden bloquearse con el músculo de la lengua por la falta de tono muscular (tensión). Por ejemplo, en la vida real, esto le pasará a casi cualquier persona inconciente que esté sobre su espalda. Lo segundo que puede pasar es una obstrucción de las vías aéreas. Cuando un paciente está sobre su espalda y éste vomita, el vómito no abandonará el área de la boca, permanecerá ahí y esto puede bloquear las vías aéreas también. El correcto tratamiento sería remover el vómito. En la vida real esto último ocurrirá a veces, no tan frecuentemente.</Spanish>
+            <Spanish>Cuando un paciente entre en estado de inconciencia, hay dos posibles escenarios. Lo primero, las vías aéreas pueden colapsar. En términos médicos, esto significa que las vías aéreas pueden bloquearse con el músculo de la lengua por la falta de tono muscular (tensión). Por ejemplo, en la vida real, esto le pasará a casi cualquier persona inconciente que esté sobre su espalda. Lo segundo que puede pasar es una obstrucción de las vías aéreas. Cuando un paciente está sobre su espalda y éste vomita, el vómito no abandonará el área de la boca, permanecerá ahí y esto puede bloquear las vías aéreas también. El correcto tratamiento sería eliminar el vómito. En la vida real esto último sólo ocurrirá a veces, no muy frecuentemente.</Spanish>
             <Chinese>當患者陷入無意識狀態時，有兩件事情可能會發生。首先呼吸道可能會塌陷，以醫學角度來看，因為舌部肌肉失去張力而導致阻擋住呼吸道。舉個例子，在現實生活中每一個失去意識的人幾乎都會發生這個。再來就是會發生的就是呼吸道閉塞。當病人倒地並嘔吐的時候，會讓嘴部沒有空間，也會導致呼吸道阻塞。有一個治療方法，那就是清除嘔吐物。在現實生活中，這偶爾會發生，但不常見</Chinese>
         </Key>
         <Key ID="STR_kat_airway_Vomit_Display">
