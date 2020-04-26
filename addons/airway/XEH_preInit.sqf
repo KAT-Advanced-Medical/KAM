@@ -79,4 +79,14 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+//Settable list for using Accuvac per medical class
+[
+    QGVAR(medLvl_Accuvac),
+    "LIST",
+    ["Allow Accuvac", "Training level requied to use an Accuvac"],
+    CBA_SETTINGS_CAT,
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    true
+] call CBA_settings_fnc_init;
+
 ADDON = true;

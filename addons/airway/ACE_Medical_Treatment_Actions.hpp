@@ -38,6 +38,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_accuvac"};
 		icon = QPATHTOF(ui\accuvac.paa);
         itemConsumed = 0;
+        medicRequired = QGVAR(medLvl_Accuvac);
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_accuvac));
         callbackProgress = QUOTE(_this call FUNC(accuvacSound));
     };
