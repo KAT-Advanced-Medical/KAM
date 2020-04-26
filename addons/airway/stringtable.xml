@@ -2,10 +2,10 @@
 <Project name="kat">
     <Package name="airway">
         <Key ID="STR_kat_URL">
-            <English>https://github.com/Katalam/kat_aceAdvMedical</English>
-            <German>https://github.com/Katalam/kat_aceAdvMedical</German>
-            <Polish>https://github.com/Katalam/kat_aceAdvMedical</Polish>
-            <Spanish>https://github.com/Katalam/kat_aceAdvMedical</Spanish>
+            <English>https://github.com/Tomcat-SG/KAM</English>
+            <German>https://github.com/Tomcat-SG/KAM</German>
+            <Polish>https://github.com/Tomcat-SG/KAM</Polish>
+            <Spanish>https://github.com/Tomcat-SG/KAM</Spanish>
         </Key>
         <Key ID="STR_kat_airway_SETTING_ENABLE">
             <English>ACE-Airway injuries activated?</English>
