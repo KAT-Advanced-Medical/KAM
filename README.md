@@ -34,6 +34,8 @@ Created by Katalam
 - [Kellerkompanie](http://kellerkompanie.com/)
 - [Tomcat-SG](https://github.com/Tomcat-SG)
 - [Kygan/Conrimaceogain](https://github.com/Conrimaceogain)
+- [YetheSamartaka](https://github.com/YetheSamartaka)
+- [regiregi22](https://github.com/regiregi22)
 
 ## Disclaimer from the Editor Tomcat (and Kygan/Conrimaceogain)
 
