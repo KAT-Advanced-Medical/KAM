@@ -59,6 +59,16 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+// Succes for headturning
+[
+    QGVAR(probability_headturning),
+    "SLIDER",
+    ["Succes probability for head turning","Higher, the better probability of succes"],
+    CBA_SETTINGS_CAT,
+    [1, 100, 50, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 // airway puking sound yes or no?
 // somebody told me that the sound which is played then someone is puking is super annoying and now you can remove it easily
 [
@@ -79,6 +89,26 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+//Settable list for using Larynxtubus per medical class
+[
+    QGVAR(medLvl_Larynxtubus),
+    "LIST",
+    ["Allow Larynxtubus", "Training level requied to use a Larynxtubus - KingLT"],
+    CBA_SETTINGS_CAT,
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    true
+] call CBA_settings_fnc_init;
+
+//Settable list for using Guedeltubus per medical class
+[
+    QGVAR(medLvl_Guedeltubus),
+    "LIST",
+    ["Allow Guedeltubus", "Training level requied to use a Guedeltubus"],
+    CBA_SETTINGS_CAT,
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
 //Settable list for using Accuvac per medical class
 [
     QGVAR(medLvl_Accuvac),
@@ -88,5 +118,55 @@ In real life, this will happen sometimes, not quiet often.
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
     true
 ] call CBA_settings_fnc_init;
+
+// Settable action time for CheckAirway
+[
+    QGVAR(CheckAirway_time),
+    "SLIDER",
+    ["Time to check Airways","How long it will take to to check Airways"],
+    CBA_SETTINGS_CAT,
+    [1, 10, 2, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Settable action time for Head turning
+[
+    QGVAR(TurnAround_time),
+    "SLIDER",
+    ["Time for head turning", "How long it will take to turn head"],
+    CBA_SETTINGS_CAT,
+    [1, 10, 2, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Settable action time for Accuvac
+[
+    QGVAR(Accuvac_time),
+    "SLIDER",
+    ["Time for Accuvac","How long it will take to use Accuvac"],
+    CBA_SETTINGS_CAT,
+    [1, 20, 8, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Settable action time for Larynxtubus
+[
+    QGVAR(Larynxtubus_time),
+    "SLIDER",
+    ["Time for Larynxtubus","How long it will take to use Larynxtubus"],
+    CBA_SETTINGS_CAT,
+    [1, 10, 3, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Settable action time for Guedeltubus
+[
+    QGVAR(Guedeltubus_time),
+    "SLIDER",
+    ["Time for Geudeltubus","How long it will take to use Guedeltubus"],
+    CBA_SETTINGS_CAT,
+    [1, 20, 6, 0],
+    true
+] call CBA_Settings_fnc_init;
 
 ADDON = true;

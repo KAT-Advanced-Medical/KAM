@@ -29,7 +29,7 @@ if !(_target getVariable ["KAT_medical_airwayOccluded", false]) exitWith {
 private _output = localize LSTRING(turnaround_info);
 [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 
-if (random 100 < 35) then {
+if (random 100 < GVAR(probability_headturning)) then {
     _target setVariable ["KAT_medical_airwayOccluded", false, true];
 };
 

@@ -6,8 +6,8 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = 0;
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
-        medicRequired = 1;
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_Larynxtubus);
+        treatmentTime = QGVAR(Larynxtubus_time);
         items[] = {"kat_larynx"};
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
         patientStateCondition = 0;
@@ -27,14 +27,15 @@ class ACE_Medical_Treatment_Actions {
     };
     class Guedeltubus: larynxtubus {
         displayName = CSTRING(Guedel_Display);
-        medicRequired = 0;
+        medicRequired = QGVAR(medLvl_Guedeltubus);
+        treatmentTime = QGVAR(Guedeltubus_time);
         items[] = {"kat_guedel"};
 		icon = QPATHTOF(ui\guedel.paa);
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Guedeltubus')] call FUNC(treatmentAdvanced_airway));
     };
     class Accuvac: larynxtubus {
         displayName = "Accuvac";
-        treatmentTime = 8;
+        treatmentTime = QGVAR(Accuvac_time);
         items[] = {"kat_accuvac"};
 		icon = QPATHTOF(ui\accuvac.paa);
         itemConsumed = 0;
@@ -55,7 +56,7 @@ class ACE_Medical_Treatment_Actions {
     class TurnAround: larynxtubus {
         displayName = CSTRING(turnaround);
         displayNameProgress = CSTRING(turnaround_action);
-        treatmentTime = 5;
+        treatmentTime = QGVAR(TurnAround_time);
         medicRequired = 0;
         items[] = {};
 		icon = "";
@@ -66,7 +67,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(checkAirway);
         displayNameProgress = CSTRING(action_checking);
 		category = "airway";
-        treatmentTime = 5;
+        treatmentTime = QGVAR(CheckAirway_time);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(checkAirway));
