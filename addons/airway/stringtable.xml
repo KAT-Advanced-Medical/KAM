@@ -57,9 +57,9 @@
 			<Czech>Aktivovat zvuk zvracení?</Czech>
         </Key>
         <Key ID="STR_kat_airway_SETTING_exit">
-            <English>Punch string</English>
-            <German>Punch string</German>
-			<Czech>Punch string</Czech>
+            <English>Community called keko had addon for AFK players. They were put unconscious so others could drag them away. That triggered chances for airway problems. This string prevents that from happening when they get unconscious by that AFK addon.</English>
+            <German>Die Community namens Keko hatte ein Addon für AFK-Spieler. Sie wurden bewusstlos gemacht, damit andere sie wegziehen konnten. Das löste Chancen für Atemwegsprobleme aus. Diese Zeichenfolge verhindert, dass dies geschieht, wenn sie von diesem AFK-Addon bewusstlos werden.</German>
+			<Czech>Komunia zvaná keko měla addon pro AFK hráče. Ti byli dáni do bezvědomí, takže je ostatní mohli odtáhnout pryč. To ale vyvolalo problémy, které mohli ohrozit jejich dýchací cesty. Tento string zabrání dýchacím potížím, pokud je hráč tímto AFK addonemm dán do bezvědomí.</Czech>
         </Key>
         <Key ID="STR_kat_airway_checkAirway">
             <English>Check Airways</English>
