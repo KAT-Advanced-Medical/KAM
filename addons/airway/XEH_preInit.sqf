@@ -83,7 +83,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(string_exit),
     "LIST",
-    localize LSTRING(SETTING_exit),
+    ["keko_wasPunched string", localize LSTRING(SETTING_exit)],
     CBA_SETTINGS_CAT,
     [["", "keko_wasPunched"], ["", "keko_wasPunched"], 0],
     true
