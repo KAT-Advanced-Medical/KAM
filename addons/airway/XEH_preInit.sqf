@@ -93,7 +93,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(medLvl_Larynxtubus),
     "LIST",
-    ["Allow Larynxtubus", "Training level requied to use a Larynxtubus - KingLT"],
+    ["Allow Larynxtubus", "Training level required to use a Larynxtubus - KingLT"],
     CBA_SETTINGS_CAT,
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
     true
