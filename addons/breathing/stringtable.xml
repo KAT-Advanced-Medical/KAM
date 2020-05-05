@@ -7,6 +7,7 @@
             <Polish>ACE-Oddychanie aktywowane?</Polish>
             <Spanish>¿Activar ACE-Respiración?</Spanish>
             <Chinese>啟用ACE-心肺呼吸系統？</Chinese>
+			<Czech>ACE-Breathing aktivováno?</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_death_timer_enable">
             <English>Alternative death timer for airway injuries?</English>
@@ -14,6 +15,7 @@
             <Polish>Alternatywny licznik do śmierci dla urazów dróg oddechowych?</Polish>
             <Spanish>¿Tiempo de muerte alternativo para lesiones en vías aéreas?</Spanish>
             <Chinese>額外因呼吸道受傷的死亡倒數？</Chinese>
+			<Czech>Alternativní čas smrti pro zranění dýchacích cest?</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_Before">
             <English>Value to add or remove to the Sp02 before 100 sec</English>
@@ -21,6 +23,7 @@
             <Polish>Wartość do dodania lub odjęcia do Sp02 przed 100 sek</Polish>
             <Spanish>Valor para agregar o quitar al Sp02 antes de 100 segundos</Spanish>
             <Chinese>設定是否在一百秒之前增加或移除血氧飽和度監測器</Chinese>
+			<Czech>Hodnota, která se přidá nebo odebere Sp02 před 100 sekundami</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_After">
             <English>Value to add or remove to the Sp02 after 100 sec</English>
@@ -28,6 +31,7 @@
             <Polish>Wartość do dodania lub odjęcia do Sp02 po 100 sek</Polish>
             <Spanish>Valor para agregar o quitar al Sp02 después de 100 segundos</Spanish>
             <Chinese>設定是否在一百秒之後增加或移除血氧飽和度監測器</Chinese>
+			<Czech>Hodnota, která se přidá nebo odebere Sp02 po 100 sekundami</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -35,6 +39,7 @@
             <Spanish>Probabilidad de un pneumotórax</Spanish>
             <Polish>Szansa na odme opłucnową</Polish>
             <Chinese>氣胸的機率</Chinese>
+			<Czech>Pravděpodobnost pneumotoraxu</Czech>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -42,6 +47,7 @@
             <Polish>Użyj Pulsoksymetru</Polish>
             <Spanish>Usar oxímetro de pulso</Spanish>
             <Chinese>掛載心率監測器</Chinese>
+			<Czech>Připojit Pulzní oxymetr</Czech>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display_Remove">
             <English>Remove Pulse Oximeter</English>
@@ -49,6 +55,7 @@
             <Polish>Usuń Pulsoksymetr</Polish>
             <Spanish>Quitar oxímetro de pulso</Spanish>
             <Chinese>移除心率監測器</Chinese>
+			<Czech>Odstranit Pulzní oxymetr</Czech>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Short">
             <English>Pulse Oximeter</English>
@@ -56,6 +63,7 @@
             <Polish>Pulsoksymetr</Polish>
             <Spanish>Oxímetro de pulso</Spanish>
             <Chinese>心率監測器</Chinese>
+			<Czech>Pulzní oxymetr</Czech>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Use">
             <English>Pulse Oximeter</English>
@@ -63,6 +71,7 @@
             <Polish>Pulsoksymetr</Polish>
             <Spanish>Oxímetro de pulso</Spanish>
             <Chinese>心率監測器</Chinese>
+			<Czech>Pulzní oxymetr</Czech>
         </Key>
         <Key ID="STR_kat_breathing_placing">
             <English>Placing</English>
@@ -70,6 +79,7 @@
             <Polish>Kładzenie</Polish>
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
+			<Czech>Dávám</Czech>
         </Key>
         <Key ID="STR_kat_breathing_remove">
             <English>Removing</English>
@@ -77,6 +87,7 @@
             <Polish>Usuwanie</Polish>
             <Spanish>Quitando</Spanish>
             <Chinese>移除中</Chinese>
+			<Czech>Odstraňuji</Czech>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_NA">
             <English>Pulse Oximeter already connected</English>
@@ -84,6 +95,7 @@
             <Polish>Pulsoksymetr jest już podłączony</Polish>
             <Spanish>El oxímetro de pulso ya está conectado</Spanish>
             <Chinese>心率監測器已經連接了</Chinese>
+			<Czech>Pulzní oxymetr je již připojen</Czech>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log">
             <English>Pulse Oximeter: HR: %1 Sp02: %2</English>
@@ -91,6 +103,7 @@
             <Polish>Pulsoksymetr: HR: %1 Sp02: %2</Polish>
             <Spanish>Oxímetro de pulso: HR: %1 Sp02: %2</Spanish>
             <Chinese>心率監測器: 心率: %1 血氧量: %2</Chinese>
+			<Czech>Pulzní oxymetr: HR: %1 Sp02: %2</Czech>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -98,6 +111,7 @@
             <Polish>%1 połączony Pulsoksymetr</Polish>
             <Spanish>%1 conectado al Oxímetro de pulso</Spanish>
             <Chinese>%1 連接著心率監測器</Chinese>
+			<Czech>%1 připojený Pulzní oxymetr</Czech>
         </Key>
         <Key ID="STR_kat_breathing_hint_name">
             <English>Breathing</English>
@@ -105,6 +119,7 @@
             <Polish>Oddychanie</Polish>
             <Spanish>Respiracióm</Spanish>
             <Chinese>呼吸</Chinese>
+			<Czech>Dýchání</Czech>
         </Key>
         <Key ID="STR_kat_breathing_hint_desc">
             <English>Breathing
@@ -127,6 +142,10 @@
                 %1呼吸道是否暢通？
                 %1Sp02 大於 70% -&gt; 是
                 %1Sp02 低於 70% -&gt; 不是 -&gt; ass. 呼吸道</Chinese>
+				<Czech>Breathing
+                %1Dostatečně ventilovaný?
+                %1Sp02 přes 70% -&gt; Ano
+                %1Sp02 pod 70% -&gt; Ne -&gt; ass. Dýchání</Czech>
         </Key>
         <Key ID="STR_kat_breathing_hint_tip">
             <English>If you saved the airway with a larynxtube skip this</English>
@@ -134,6 +153,7 @@
             <Polish>Jeżeli udrożniłeś drogi oddechowe przy pomocy rurki krtaniowej, omiń to.</Polish>
             <Spanish>Si trataste las vías aéreas con un tubo laríngeo, omite esto</Spanish>
             <Chinese>如果妳已經使用喉管暢通的話那就跳過這個。</Chinese>
+			<Czech>Pokud si zajistil/zachránil dýchací cesty pomocí larynxtube, vynechej to</Czech>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax">
             <English>%1 treated a pneumothorax</English>
@@ -141,6 +161,7 @@
             <Spanish>%1 tratado un pneumotórax</Spanish>
             <Polish>%1 leczenia odmy opłucnowej</Polish>
             <Chinese>%1 已經治癒氣胸</Chinese>
+			<Czech>%1 vyléčen pneumotorax</Czech>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_display">
             <English>Chest Seal</English>
@@ -148,6 +169,7 @@
             <Polish>Chest Seal</Polish>
             <Spanish>Chest Seal</Spanish>
             <Chinese>臨時氣胸密封貼</Chinese>
+			<Czech>Hrudní krytí</Czech>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_mm">
             <English>1x Pneumothorax</English>
@@ -155,6 +177,7 @@
             <Polish>1x Odma Opłucnowa</Polish>
             <Spanish>1x PNeumotórax</Spanish>
             <Chinese>1等氣胸</Chinese>
+			<Czech>1x Pneumotorax</Czech>
         </Key>
         <Key ID="STR_kat_breathing_treating">
             <English>Treating</English>
@@ -162,6 +185,7 @@
             <Spanish>Tratando</Spanish>
             <Polish>Leczenie</Polish>
             <Chinese>治療中</Chinese>
+			<Czech>Léčení</Czech>
         </Key>
         <Key ID="STR_kat_breathing_chestseal_display">
             <English>Chest Seal</English>
@@ -169,6 +193,7 @@
             <Polish>Chest Seal</Polish>
             <Spanish>Chest Seal</Spanish>
             <Chinese>臨時氣胸密封貼</Chinese>
+			<Czech>Hrudní krytí</Czech>
         </Key>
         <Key ID="STR_kat_breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
@@ -176,6 +201,7 @@
             <Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach.</Polish>
             <Spanish>Chest Seal es un parche diseñado para tratar, sellar y resellar heridas de pecho abierto, bajo la mayoría de circustancias.</Spanish>
             <Chinese>臨時氣胸密封貼在大多數情況下用途於治癒、密封或者二度密封因為胸腔受傷破裂導致的氣胸</Chinese>
+			<Czech>Hrudní krytí je navrženo pro léčení, zakrytí a odkrytí otevřených ran na hrudníku ve většině situací.</Czech>
         </Key>
     </Package>
 </Project>

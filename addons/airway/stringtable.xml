@@ -6,6 +6,7 @@
             <German>https://github.com/Tomcat-SG/KAM</German>
             <Polish>https://github.com/Tomcat-SG/KAM</Polish>
             <Spanish>https://github.com/Tomcat-SG/KAM</Spanish>
+			      <Czech>https://github.com/Tomcat-SG/KAM</Czech>
         </Key>
         <Key ID="STR_kat_airway_SETTING_ENABLE">
             <English>ACE-Airway injuries activated?</English>
@@ -13,6 +14,7 @@
             <Polish>ACE- Urazy dróg oddechowych aktywowane?</Polish>
             <Spanish>¿Activar ACE-Lesiones Respiratorias?</Spanish>
             <Chinese>啟用ACE-呼吸道受傷機制?</Chinese>
+			<Czech>ACE - zranění dýchacích cest aktivováno?</Czech>
         </Key>
         <Key ID="STR_kat_airway_SETTING_TIMER">
             <English>Airway Injuries Death Timer</English>
@@ -20,6 +22,7 @@
             <Polish>Urazy dróg oddechowych czas do śmierci</Polish>
             <Spanish>Tiempo de muerte para Lesiones Respiratorias</Spanish>
             <Chinese>因呼吸道受傷的死亡倒數時間</Chinese>
+			<Czech>Časomíra úmrtí na zranění dýchacích cest</Czech>
         </Key>
         <Key ID="STR_kat_airway_SETTING_collapsed">
             <English>Probability for airway collapsing</English>
@@ -27,6 +30,7 @@
             <Polish>Szansa na zapadnięcie się dróg oddechowych</Polish>
             <Spanish>Probabilidad de colapso en vías aéreas</Spanish>
             <Chinese>呼吸道塌陷機率</Chinese>
+			<Czech>Pravděpodobnost zhroucení dýchacích cest</Czech>
         </Key>
         <Key ID="STR_kat_airway_SETTING_obstruction">
             <English>Probability for an obstructed airway</English>
@@ -34,6 +38,7 @@
             <Polish>Szansa na zator dróg oddechowych</Polish>
             <Spanish>Probabilidad de obstrucción en vías aéreas</Spanish>
             <Chinese>呼吸道阻塞機率</Chinese>
+			<Czech>Pravděpodobnost zablokování dýchacích cest</Czech>
         </Key>
         <Key ID="STR_kat_airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
@@ -41,6 +46,7 @@
             <Polish>Szansa na niedrożność dróg oddechowych</Polish>
             <Spanish>Probabilidad de oclusión en vías aéreas</Spanish>
             <Chinese>呼吸道閉塞機率</Chinese>
+			<Czech>Pravděpodobnost uzavření dýchacích cest</Czech>
         </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -48,10 +54,12 @@
             <Polish>Aktywować dźwięk wymiotowania?</Polish>
             <Spanish>¿Activar el sonido de vómito?</Spanish>
             <Chinese>啟用人物嘔吐聲音？</Chinese>
+			<Czech>Aktivovat zvuk zvracení?</Czech>
         </Key>
         <Key ID="STR_kat_airway_SETTING_exit">
-            <English>Punch string</English>
-            <German>Punch string</German>
+            <English>Community called keko had addon for AFK players. They were put unconscious so others could drag them away. That triggered chances for airway problems. This string prevents that from happening when they get unconscious by that AFK addon.</English>
+            <German>Die Community namens Keko hatte ein Addon für AFK-Spieler. Sie wurden bewusstlos gemacht, damit andere sie wegziehen konnten. Das löste Chancen für Atemwegsprobleme aus. Diese Zeichenfolge verhindert, dass dies geschieht, wenn sie von diesem AFK-Addon bewusstlos werden.</German>
+			<Czech>Komunia zvaná keko měla addon pro AFK hráče. Ti byli dáni do bezvědomí, takže je ostatní mohli odtáhnout pryč. To ale vyvolalo problémy, které mohli ohrozit jejich dýchací cesty. Tento string zabrání dýchacím potížím, pokud je hráč tímto AFK addonemm dán do bezvědomí.</Czech>
         </Key>
         <Key ID="STR_kat_airway_checkAirway">
             <English>Check Airways</English>
@@ -59,6 +67,7 @@
             <Polish>Sprawdź drogi oddechowe</Polish>
             <Spanish>Comprobar vías aéreas</Spanish>
             <Chinese>檢查呼吸道</Chinese>
+			<Czech>Zkontrolovat dýchací cesty</Czech>
         </Key>
         <Key ID="STR_kat_airway_checkAirway_log">
             <English>%1 checked airways: %2 %3, %4 %5</English>
@@ -66,6 +75,7 @@
             <Polish>%1 sprawdzone drogi oddechowe: %2 %3, %4 %5</Polish>
             <Spanish>%1 comprobó las vías aéreas: %2 %3, %4 %5</Spanish>
             <Chinese>%1 檢查呼吸道: %2 %3, %4 %5</Chinese>
+			<Czech>Zkontrolovány dýchací cesty: %2 %3, %4 %5 </Czech>
         </Key>
         <Key ID="STR_kat_airway_airway_log">
             <English>%1 inserted a %2</English>
@@ -73,6 +83,7 @@
             <Polish>%1 intubowany z %2</Polish>
             <Spanish>%1 intubado con %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
+			<Czech>%1 vloženo %2</Czech>
         </Key>
         <Key ID="STR_kat_airway_Occluded">
             <English>Occluded</English>
@@ -80,6 +91,7 @@
             <Polish>Zablokowany</Polish>
             <Spanish>Ocluída</Spanish>
             <Chinese>閉塞</Chinese>
+			<Czech>Uzavřeno</Czech>
         </Key>
         <Key ID="STR_kat_airway_Collapsed">
             <English>Collapsed</English>
@@ -87,6 +99,7 @@
             <Polish>Zapadnięte</Polish>
             <Spanish>Colapsada</Spanish>
             <Chinese>塌陷</Chinese>
+			<Czech>Zhrouceno</Czech>
         </Key>
         <Key ID="STR_kat_airway_obstruction">
             <English>Obstruction</English>
@@ -94,6 +107,7 @@
             <Polish>Zator</Polish>
             <Spanish>Obstruída</Spanish>
             <Chinese>阻塞</Chinese>
+			<Czech>Zablokováno</Czech>
         </Key>
         <Key ID="STR_kat_airway_N">
             <English>Not</English>
@@ -101,13 +115,15 @@
             <Polish>Nie</Polish>
             <Spanish>No</Spanish>
             <Chinese>無</Chinese>
+			<Czech>Ne</Czech>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
-            <English>No airway management needed</English>
-            <German>Kein Atemwegsmanagement erforderlich</German>
-            <Polish>Nie ma potrzeby udrażniania dróg oddechowych</Polish>
-            <Spanish>No se necesita manejo de vías aéreas</Spanish>
-            <Chinese>不需要呼吸道控制</Chinese>
+            <English>Airways are clear</English>
+            <German>Atemwege sind frei</German>
+            <Polish>Drogi oddechowe są czyste</Polish>
+            <Spanish>Las vías aéreas están despejadas</Spanish>
+            <Chinese>航線暢通</Chinese>
+			<Czech>Dýchací cesty jsou volné</Czech>
         </Key>
         <Key ID="STR_kat_airway_message_Occluded_no">
             <English>No medical suction needed</English>
@@ -115,6 +131,7 @@
             <Polish>Brak konieczności odsysania</Polish>
             <Spanish>No se necesita succión médica</Spanish>
             <Chinese>不需要醫療抽吸</Chinese>
+			<Czech>Není třeba nic odsát</Czech>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_yes">
             <English>Airway management needed</English>
@@ -122,6 +139,7 @@
             <Polish>Potrzebne udrażnianie dróg oddechowych</Polish>
             <Spanish>Requiere manejo de vías aéreas</Spanish>
             <Chinese>需要呼吸道控制</Chinese>
+			<Czech>Je třeba se postarat o dýchací cesty</Czech>
         </Key>
         <Key ID="STR_kat_airway_message_Occluded_yes">
             <English>Medical suction needed</English>
@@ -129,6 +147,7 @@
             <Polish>Potrzebne odsysanie</Polish>
             <Spanish>Requiere succión médica</Spanish>
             <Chinese>需要醫療抽吸</Chinese>
+			<Czech>Je třeba odsávání</Czech>
         </Key>
         <Key ID="STR_kat_airway_Airway_already">
             <English>Airway management has already been performed</English>
@@ -136,6 +155,7 @@
             <Polish>Drogi oddechowe są udrażniane</Polish>
             <Spanish>El manejo de vías aéreas ya se ha llevado a cabo</Spanish>
             <Chinese>已經做好呼吸道控制</Chinese>
+			<Czech>Péče o dýchací cesty již byla provedena</Czech>
         </Key>
         <Key ID="STR_kat_airway_activity">
             <English>%1 put a: %2</English>
@@ -143,13 +163,15 @@
             <Polish>%1 umieścił: %2</Polish>
             <Spanish>%1 puso un: %2</Spanish>
             <Chinese>%1 放置一個: %2</Chinese>
+			<Czech>%1 vlož: %2</Czech>
         </Key>
         <Key ID="STR_kat_airway_Airway_NA">
-            <English>Airway management is not available</English>
-            <German>Atemwegsmanagement nicht möglich</German>
-            <Polish>Udrażnianie dróg oddechowych jest niedostępne</Polish>
-            <Spanish>El manejo de vías aéreas no está disponible</Spanish>
-            <Chinese>現在無法做呼吸道控制</Chinese>
+            <English>Airways are clear</English>
+            <German>Atemwege sind frei</German>
+            <Polish>Drogi oddechowe są czyste</Polish>
+            <Spanish>Las vías aéreas están despejadas</Spanish>
+            <Chinese>航線暢通</Chinese>
+			<Czech>Dýchací cesty jsou volné</Czech>
         </Key>
         <Key ID="STR_kat_airway_overstretch">
             <English>Hyperextending Head</English>
@@ -157,6 +179,7 @@
             <Polish>Odchylenie głowy</Polish>
             <Spanish>Hiperextensión de cabeza</Spanish>
             <Chinese>頭部過度伸張</Chinese>
+			<Czech>Narovnávám hlavu</Czech>
         </Key>
         <Key ID="STR_kat_airway_overstretched">
             <English>Hyperextended Head</English>
@@ -164,6 +187,7 @@
             <Polish>Głowa odchylona</Polish>
             <Spanish>Cabeza hiperextendida</Spanish>
             <Chinese>伸張頭部</Chinese>
+			<Czech>Hlava narovnána</Czech>
         </Key>
         <Key ID="STR_kat_airway_overstretching">
             <English>Extending</English>
@@ -171,6 +195,7 @@
             <Polish>Odchylanie głowy</Polish>
             <Spanish>Hiperextendiendo cabeza</Spanish>
             <Chinese>伸張中</Chinese>
+			<Czech>Narovnávám</Czech>
         </Key>
         <Key ID="STR_kat_airway_overstretch_cancel">
             <English>Hyperextending Head canceled</English>
@@ -178,6 +203,7 @@
             <Polish>Przestałeś odchylać głowę</Polish>
             <Spanish>Hiperextensión cancelada</Spanish>
             <Chinese>已經取消伸張頭部</Chinese>
+			<Czech>Narovnávání hlavy přerušeno</Czech>
         </Key>
         <Key ID="STR_kat_airway_overstretch_info">
             <English>Don't run away, you're saving a life!</English>
@@ -185,6 +211,7 @@
             <Polish>Nie uciekaj, ratujesz życie!</Polish>
             <Spanish>¡No huyas, estás salvando una vida!</Spanish>
             <Chinese>不要跑，你正在拯救性命！</Chinese>
+			<Czech>Nevzdaluj se od pacienta, zachraňuješ mu život!</Czech>
         </Key>
         <Key ID="STR_kat_airway_turnaround_info">
             <English>You tried to remove the vomit</English>
@@ -192,6 +219,7 @@
             <Polish>Próbowałeś usunąć wymiociny</Polish>
             <Spanish>Trataste de quitar el vómito</Spanish>
             <Chinese>你試圖清除嘔吐物</Chinese>
+			<Czech>Pokusil si se odstranit zvratky</Czech>
         </Key>
         <Key ID="STR_kat_airway_turnaround">
             <English>Head turning</English>
@@ -199,6 +227,7 @@
             <Polish>Głowa się obraca</Polish>
             <Spanish>Girar cabeza</Spanish>
             <Chinese>扶正頭部</Chinese>
+			<Czech>Hlava se otáčí</Czech>
         </Key>
         <Key ID="STR_kat_airway_turnaround_action">
             <English>Turning the head</English>
@@ -206,6 +235,7 @@
             <Polish>Obracanie głowy</Polish>
             <Spanish>Girando la cabeza</Spanish>
             <Chinese>轉動頭部中</Chinese>
+			<Czech>Otáčení hlavou</Czech>
         </Key>
         <Key ID="STR_kat_airway_Accuvac_NA">
             <English>Medical suction not needed</English>
@@ -213,6 +243,7 @@
             <Polish>Odsysanie nie jest potrzebne</Polish>
             <Spanish>No se necesita succión médica</Spanish>
             <Chinese>不需要醫療抽吸</Chinese>
+			<Czech>Sání není třeba</Czech>
         </Key>
         <Key ID="STR_kat_airway_action_checking">
             <English>Checking Airway</English>
@@ -220,6 +251,7 @@
             <Polish>Sprawdzanie dróg oddechowych</Polish>
             <Spanish>Comprobando vías aéreas</Spanish>
             <Chinese>檢查呼吸道</Chinese>
+			<Czech>Kontrola dýchacích cest</Czech>
         </Key>
         <Key ID="STR_kat_airway_action_placing">
             <English>Placing</English>
@@ -227,6 +259,7 @@
             <Polish>Kładzenie</Polish>
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
+			<Czech>Pokládám</Czech>
         </Key>
         <Key ID="STR_kat_airway_Larynx_Display">
             <English>King LT</English>
@@ -234,6 +267,7 @@
             <Polish>Rurka krtaniowa</Polish>
             <Spanish>Tubo laríngeo</Spanish>
             <Chinese>喉管</Chinese>
+			<Czech>King LT</Czech>
         </Key>
         <Key ID="STR_kat_airway_Larynx_Desc_Short">
             <English>The King LT is used to save the airways</English>
@@ -241,6 +275,7 @@
             <Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
             <Spanish>El tubo laríngeo se usa para salvar las vías aéreas</Spanish>
             <Chinese>喉管是用於拯救呼吸道</Chinese>
+			<Czech>King LT je používán na záchranu dýchacích cest</Czech>
         </Key>
         <Key ID="STR_kat_airway_Larynx_Desc_Use">
             <English>The King LT is used to save the airways</English>
@@ -248,6 +283,7 @@
             <Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
             <Spanish>El tubo laríngeo se usa para salvar las vías aéreas</Spanish>
             <Chinese>喉管是用於拯救呼吸道</Chinese>
+			<Czech>King LT je používán na záchranu dýchacích cest</Czech>
         </Key>
         <Key ID="STR_kat_airway_Guedel_Display">
             <English>Guedel Tube</English>
@@ -255,6 +291,7 @@
             <Polish>Rurka ustno-gardłowa</Polish>
             <Spanish>Cánula de Guedel</Spanish>
             <Chinese>抽吸管</Chinese>
+			<Czech>Geudel Tuba</Czech>
         </Key>
         <Key ID="STR_kat_airway_Guedel_Desc_Short">
             <English>The Guedel Tube is used to save the airways</English>
@@ -262,6 +299,7 @@
             <Polish>Rurka ustno-gardłowa zabezpiecza drogi oddechowe</Polish>
             <Spanish>La cánula de Guedel se usa para salvar las vías aéreas</Spanish>
             <Chinese>抽吸管用於拯救呼吸道</Chinese>
+			<Czech>Geudel tuba je používán na záchranu dýchacích cest</Czech>
         </Key>
         <Key ID="STR_kat_airway_Guedel_Desc_Use">
             <English>The Guedel Tube is used to save the airways</English>
@@ -269,6 +307,7 @@
             <Polish>Rurka ustno-gardłowa służy do podtrzymywania języka przed blokowaniem dróg oddechowych</Polish>
             <Spanish>La cánula de Guedel se usa para salvar las vías aéreas</Spanish>
             <Chinese>抽吸管用於拯救呼吸道</Chinese>
+			<Czech>King LT je používán na záchranu dýchacích cest</Czech>
         </Key>
         <Key ID="STR_kat_airway_Accuvac_Desc_Use">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
@@ -276,6 +315,7 @@
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>  
+			<Czech>ACCUVAC je lékařské odsávací zařízení pro odsávání dýchacích cest s pohonem na baterky pro mobilní použití v pohotovostní medicíně.</Czech>
         </Key>
         <Key ID="STR_kat_airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
@@ -283,13 +323,15 @@
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>  
+			<Czech>ACCUVAC je lékařské odsávací zařízení pro odsávání dýchacích cest s pohonem na baterky pro mobilní použití v pohotovostní medicíně.</Czech>
         </Key>
         <Key ID="STR_kat_airway_intubating">
             <English>Intubating</English>
             <German>Intubieren</German>
             <Polish>Intubowanie</Polish>
             <Spanish>Intubando</Spanish>
-            <Chinese>插管</Chinese>  
+            <Chinese>插管</Chinese>
+			<Czech>Intubace</Czech>
         </Key>
         <Key ID="STR_kat_airway_vacuum">
             <English>Medical suction</English>
@@ -297,13 +339,15 @@
             <Polish>Odsysanie medyczne</Polish>
             <Spanish>Succión médica</Spanish>
             <Chinese>醫療抽吸</Chinese> 
+			<Czech>Lékařské odsávání</Czech>
         </Key>
         <Key ID="STR_kat_airway_hint_name">
             <English>Treatment</English>
             <German>Behandlung</German>
             <Polish>Leczenie</Polish>
             <Spanish>Tratamiento</Spanish>
-            <Chinese>治療</Chinese> 
+            <Chinese>治療</Chinese>
+			<Czech>Léčba</Czech>			
         </Key>
         <Key ID="STR_kat_airway_hint_desc">
             <English>When a patient enters the unconscious state, there are two things that can happen. First of all the airway can collapse. In medical sense this mean, the airway can be blocked from your tongue muscle, 'cause of the missing muscle tone. For example in real life, this will happen to nearly every unconscious person lying on the back. The second thing that can happen is the the airway occluded state. When a patient is lying on the back and the body puke, it will not leave the mouth space. It will stay in there and can block the airway too. The right treatment here, is to remove this vomit. In real life, this will happen sometimes, not quiet often.</English>
@@ -311,6 +355,7 @@
             <Polish>Kiedy pacjent staję się nieprzytomny, mogą stać się dwie rzeczy. Pierwszą jest zapadnięcie się dróg oddechowych. Z medycznego punktu widzenia drogi oddechowe mogą być zablokowane przez język. Na przykład w prawdziwym życiu zdarzy się to praktycznie w każdym przypadku osoby nieprzytomnej leżącej na plecach. Drugą rzeczą która może się zdarzyć to niedrożność dróg oddechowych. Kiedy pacjent leży na plecach i ciało będzie wymiotowało/odkrztuszało to zawartość nie opuści buzi. Zostanie tam i będzie mogło blokować drogi oddechowe. Odpowiednim leczniem jest tu usunięcie wymiocin. W prawdziwym życiu też może się to zdarzyć ale nie jest to częste.</Polish>
             <Spanish>Cuando un paciente entre en estado de inconciencia, hay dos posibles escenarios. Lo primero, las vías aéreas pueden colapsar. En términos médicos, esto significa que las vías aéreas pueden bloquearse con el músculo de la lengua por la falta de tono muscular (tensión). Por ejemplo, en la vida real, esto le pasará a casi cualquier persona inconciente que esté sobre su espalda. Lo segundo que puede pasar es una obstrucción de las vías aéreas. Cuando un paciente está sobre su espalda y éste vomita, el vómito no abandonará el área de la boca, permanecerá ahí y esto puede bloquear las vías aéreas también. El correcto tratamiento sería eliminar el vómito. En la vida real esto último sólo ocurrirá a veces, no muy frecuentemente.</Spanish>
             <Chinese>當患者陷入無意識狀態時，有兩件事情可能會發生。首先呼吸道可能會塌陷，以醫學角度來看，因為舌部肌肉失去張力而導致阻擋住呼吸道。舉個例子，在現實生活中每一個失去意識的人幾乎都會發生這個。再來就是會發生的就是呼吸道閉塞。當病人倒地並嘔吐的時候，會讓嘴部沒有空間，也會導致呼吸道阻塞。有一個治療方法，那就是清除嘔吐物。在現實生活中，這偶爾會發生，但不常見</Chinese>
+			<Czech>Když pacient vstoupí do stavu bezvědomí, mohou nastat dvě věci. Nejprve se mohou zhroutit dýchací cesty. V lékařském smyslu to znamená, že dýchací cesty mohou být blokovány vaším jazykovým svalem, protože mu chybí svalový tón. Například v reálném životě se to stane téměř každému, který v bezvědomí leží na zádech. Druhou věcí, která se může stát, je zablokovaný stav dýchacích cest, když pacient leží na zádech a zvrací. Zvratky neopustí prostor v ústech a ty mohou také blokovat dýchací cesty. Pro stabilizaci je třeba zvratky odstranit. Ve skutečném životě se v těchto stavech občas člověk pozvrací, ale nestává se to tak často.</Czech>
         </Key>
         <Key ID="STR_kat_airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -318,6 +363,7 @@
             <Polish>Wymiociny(małe)</Polish>
             <Spanish>Vómito (Pequeño)</Spanish>
             <Chinese>嘔吐物 (少量）</Chinese> 
+			<Czech>Zvratky (Malé)</Czech>
         </Key>
     </Package>
 </Project>

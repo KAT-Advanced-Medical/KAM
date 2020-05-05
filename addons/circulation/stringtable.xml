@@ -7,6 +7,7 @@
             <Polish>ACE-Cyrkulacja aktywowana?</Polish>
             <Spanish>¿Activar ACE-Circulación?</Spanish>
             <Chinese>啟用ACE-血型循環系統？</Chinese>
+			<Czech>ACE-Circulation aktivováno?</Czech>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_variableHR_ENABLE">
             <English>Metabolism Dependent heartrate?</English>
@@ -14,6 +15,7 @@
             <Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
             <Spanish>¿Pulso cardíaco depende de metabolismo?</Spanish>
             <Chinese>依心率來決定代謝率？</Chinese>
+			<Czech>Metabolismus závislý na tepu?</Czech>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_loadout">
             <English>Different loadoutname</English>
@@ -21,6 +23,7 @@
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
             <Chinese>不同配置名稱</Chinese>
+			<Czech>Jiný název vybavení</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O">
             <English>Blood IV (1000ml) BT: 0</English>
@@ -28,6 +31,7 @@
             <Polish>Krew IV (1000ml) GK: 0</Polish>
             <Spanish>Sangre IV (1000ml) GS: 0</Spanish>
             <Chinese>O型血液包 (1000ml)</Chinese>
+			<Czech>Krev IV (1000ml) KS: 0</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A">
             <English>Blood IV (1000ml) BT: A</English>
@@ -35,6 +39,7 @@
             <Polish>Krew IV (1000ml) GK: A</Polish>
             <Spanish>Sangre IV (1000ml) GS: A</Spanish>
             <Chinese>A型血液包 (1000ml)</Chinese>
+			<Czech>Krev IV (1000ml) KS: A</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B">
             <English>Blood IV (1000ml) BT: B</English>
@@ -42,6 +47,7 @@
             <Polish>Krew IV (1000ml) GK: B</Polish>
             <Spanish>Sangre IV (1000ml) GS: B</Spanish>
             <Chinese>B型血液包 (1000ml)</Chinese>
+			<Czech>Krev IV (1000ml) KS: B</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB">
             <English>Blood IV (1000ml) BT: AB</English>
@@ -49,6 +55,7 @@
             <Polish>Krew IV (1000ml) GK: AB</Polish>
             <Spanish>Sangre IV (1000ml) GS: AB</Spanish>
             <Chinese>AB型血液包 (1000ml)</Chinese>
+			<Czech>Krev IV (1000ml) KS: AB</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_500">
             <English>Blood IV (500ml) BT: 0</English>
@@ -56,6 +63,7 @@
             <Polish>Krew IV (500ml) GK: 0</Polish>
             <Spanish>Sangre IV (500ml) GS: 0</Spanish>
             <Chinese>O型血液包 (500ml)</Chinese>
+			<Czech>Krev IV (500ml) KS: 0</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_500">
             <English>Blood IV (500ml) BT: A</English>
@@ -63,6 +71,7 @@
             <Polish>Krew IV (500ml) GK: A</Polish>
             <Spanish>Sangre IV (500ml) GS: A</Spanish>
             <Chinese>A型血液包 (500ml)</Chinese>
+			<Czech>Krev IV (500ml) KS: A</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_500">
             <English>Blood IV (500ml) BT: B</English>
@@ -70,6 +79,7 @@
             <Polish>Krew IV (500ml) GK: B</Polish>
             <Spanish>Sangre IV (500ml) GS: B</Spanish>
             <Chinese>B型血液包 (500ml)</Chinese>
+			<Czech>Krev IV (500ml) KS: B</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_500">
             <English>Blood IV (500ml) BT: AB</English>
@@ -77,6 +87,7 @@
             <Polish>Krew IV (500ml) GK: AB</Polish>
             <Spanish>Sangre IV (500ml) GS: AB</Spanish>
             <Chinese>AB型血液包 (500ml)</Chinese>
+			<Czech>Krev IV (500ml) KS: AB</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_250">
             <English>Blood IV (250ml) BT: 0</English>
@@ -84,6 +95,7 @@
             <Polish>Krew IV (250ml) GK: 0</Polish>
             <Spanish>Sangre IV (250ML) GS: 0</Spanish>
             <Chinese>O型血液包 (250ml)</Chinese>
+			<Czech>Krev IV (250ml) KS: 0</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_250">
             <English>Blood IV (250ml) BT: A</English>
@@ -91,6 +103,7 @@
             <Polish>Krew IV (250ml) GK: A</Polish>
             <Spanish>Sangre IV (250ML) GS: A</Spanish>
             <Chinese>A型血液包 (250ml)</Chinese>
+			<Czech>Krev IV (250ml) KS: A</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_250">
             <English>Blood IV (250ml) BT: B</English>
@@ -98,6 +111,7 @@
             <Polish>Krew IV (250ml) GK: B</Polish>
             <Spanish>Sangre IV (250ML) GS: B</Spanish>
             <Chinese>B型血液包 (250ml)</Chinese>
+			<Czech>Krev IV (250ml) KS: B</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_250">
             <English>Blood IV (250ml) BT: AB</English>
@@ -105,6 +119,7 @@
             <Polish>Krew IV (250ml) GK: AB</Polish>
             <Spanish>Sangre IV (250ML) GS: AB</Spanish>
             <Chinese>AB型血液包 (250ml)</Chinese>
+			<Czech>Krev IV (250ml) KS: AB</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_O">
             <English>Give Blood IV (1000ml) BT: 0</English>
@@ -112,6 +127,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: 0</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: 0</Spanish>
             <Chinese>輸血液 (O型 1000ml)</Chinese>
+			<Czech>Dát Krev IV (1000ml) KS: 0</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_A">
             <English>Give Blood IV (1000ml) BT: A</English>
@@ -119,6 +135,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: A</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: A</Spanish>
             <Chinese>輸血液 (A型 1000ml)</Chinese>
+			<Czech>Dát Krev IV (1000ml) KS: A</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_B">
             <English>Give Blood IV (1000ml) BT: B</English>
@@ -126,6 +143,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: B</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: B</Spanish>
             <Chinese>輸血液 (B型 1000ml)</Chinese>
+			<Czech>Dát Krev IV (1000ml) KS: B</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_AB">
             <English>Give Blood IV (1000ml) BT: AB</English>
@@ -133,6 +151,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: AB</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: AB</Spanish>
             <Chinese>輸血液 (AB型 1000ml)</Chinese>
+			<Czech>Dát Krev IV (1000ml) KS: AB</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_O">
             <English>Give Blood IV (500ml) BT: 0</English>
@@ -140,6 +159,7 @@
             <Polish>Podaj Krew IV (500ml) GK: 0</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: 0</Spanish>
             <Chinese>輸血液 (O型 500ml)</Chinese>
+			<Czech>Dát Krev IV (500ml) KS: 0</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_A">
             <English>Give Blood IV (500ml) BT: A</English>
@@ -147,6 +167,7 @@
             <Polish>Podaj Krew IV (500ml) GK: A</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: A</Spanish>
             <Chinese>輸血液 (A型 500ml)</Chinese>
+			<Czech>Dát Krev IV (500ml) KS: A</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_B">
             <English>Give Blood IV (500ml) BT: B</English>
@@ -154,6 +175,7 @@
             <Polish>Podaj Krew IV (500ml) GK: B</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: B</Spanish>
             <Chinese>輸血液 (B型 500ml)</Chinese>
+			<Czech>Dát Krev IV (500ml) KS: B</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_AB">
             <English>Give Blood IV (500ml) BT: AB</English>
@@ -161,6 +183,7 @@
             <Polish>Podaj Krew IV (500ml) GK: AB</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: AB</Spanish>
             <Chinese>輸血液 (AB型 500ml)</Chinese>
+			<Czech>Dát Krev IV (500ml) KS: AB</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_O">
             <English>Give Blood IV (250ml) BT: 0</English>
@@ -168,6 +191,7 @@
             <Polish>Podaj Krew IV (250ml) GK: 0</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: 0</Spanish>
             <Chinese>輸血液 (O型 250ml)</Chinese>
+			<Czech>Dát Krev IV (250ml) KS: 0</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_A">
             <English>Give Blood IV (250ml) BT: A</English>
@@ -175,6 +199,7 @@
             <Polish>Podaj Krew IV (250ml) GK: A</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: A</Spanish>
             <Chinese>輸血液 (A型 250ml)</Chinese>
+			<Czech>Dát Krev IV (250ml) KS: A</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_B">
             <English>Give Blood IV (250ml) BT: B</English>
@@ -182,6 +207,7 @@
             <Polish>Podaj Krew IV (250ml) GK: B</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: B</Spanish>
             <Chinese>輸血液 (B型 250ml)</Chinese>
+			<Czech>Dát Krev IV (250ml) KS: B</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_AB">
             <English>Give Blood IV (250ml) BT: AB</English>
@@ -189,6 +215,7 @@
             <Polish>Podaj Krew IV (250ml) GK: AB</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: AB</Spanish>
             <Chinese>輸血液 (AB型 250ml)</Chinese>
+			<Czech>Dát Krev IV (250ml) KS: AB</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_DescShort">
             <English>Used to suppress pain</English>
@@ -196,6 +223,7 @@
             <Polish>Używany do zwalczania bólu</Polish>
             <Spanish>Usado para suprimir el dolor</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
+			<Czech>Užíváno na potlačení bolesti</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_DescUse">
             <English>An analgesic used to combat light to moderate pain experiences.</English>
@@ -203,6 +231,7 @@
             <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
             <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
+			<Czech>Analgetikum používané k potlačení lehkých až středně bolestivých zážitků.</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_Box_Display">
             <English>Painkillers</English>
@@ -210,6 +239,7 @@
             <Polish>Lek przeciwbólowy</Polish>
             <Spanish>Analgésicos</Spanish>
             <Chinese>止痛藥</Chinese>
+			<Czech>Prášky proti bolesti</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Inject_Box_Painkillers">
             <English>Take Painkillers</English>
@@ -217,6 +247,7 @@
             <Polish>Użyj leku przeciwbólowego</Polish>
             <Spanish>Usar analgésico</Spanish>
             <Chinese>服用止痛藥</Chinese>
+			<Czech>Vzít si Prášky proti bolesti</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Using">
             <English>Using</English>
@@ -224,6 +255,7 @@
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
             <Chinese>服用中</Chinese>
+			<Czech>Používám</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag">
             <English>Check Dogtags</English>
@@ -231,6 +263,7 @@
             <Polish>Sprawdź nieśmiertelniki</Polish>
             <Spanish>Comprobar placa de identificación</Spanish>
             <Chinese>檢查兵籍牌</Chinese>
+			<Czech>Zkontrolovat psí známky</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag_Action">
             <English>Checking</English>
@@ -238,6 +271,7 @@
             <Polish>Sprawdzanie</Polish>
             <Spanish>Comprobando</Spanish>
             <Chinese>檢查中</Chinese>
+			<Czech>Kontroluji</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_X_already">
             <English>Already one connected</English>
@@ -245,6 +279,7 @@
             <Polish>Jeden jest już podłączony</Polish>
             <Spanish>Ya hay uno conectado</Spanish>
             <Chinese>已經有連接一個了</Chinese>
+			<Czech>Jeden již připojen</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_X_Display">
             <English>AED X-Series</English>
@@ -252,6 +287,7 @@
             <Polish>AED X-Series</Polish>
             <Spanish>DEA Serie X</Spanish>
             <Chinese>自動體外心臟除顫器 X系列</Chinese>
+			<Czech>AED X-Series</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_X_Desc">
             <English>Used to monitor vital values and to resuscitate persons</English>
@@ -259,6 +295,7 @@
             <Polish>Używany do monitorowania parametrów życiowych  i defibrylacji.</Polish>
             <Spanish>Usado para monitorear vitales y resucitar pacientes </Spanish>
             <Chinese>有著生命跡象檢測器並可以甦醒患者</Chinese>
+			<Czech>Používán na monitorování vitálních funkcí a resuscitování</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Use">
             <English>Monitor vitals</English>
@@ -266,6 +303,7 @@
             <Polish>Monitoruj parametry życiowe</Polish>
             <Spanish>Monitorear vitales</Spanish>
             <Chinese>監控生命跡象</Chinese>
+			<Czech>Monitorování vitálních funkcí</Czech>
         </Key>
 		<Key ID="STR_KAT_circulation_Defib_Action_Use">
             <English>Use AED defibrillator</English>
@@ -273,6 +311,7 @@
             <Polish>Użyj defibrylatora AED</Polish>
             <Spanish>Utilice el desfibrilador AED</Spanish>
             <Chinese>使用AED除顫器</Chinese>
+			<Czech>Použít AED defibrilátor</Czech>
         </Key>
 		<Key ID="STR_KAT_circulation_AED_X_Action_Use">
             <English>Use AED-X defibrillator</English>
@@ -280,6 +319,7 @@
             <Polish>Użyj defibrylatora AED-X</Polish>
             <Spanish>Utilice el desfibrilador AED-X</Spanish>
             <Chinese>使用AED-X除顫器</Chinese>
+			<Czech>Použít AED-X defibrilátor</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Remove">
             <English>Remove monitoring</English>
@@ -287,6 +327,7 @@
             <Polish>Przestań monitorować</Polish>
             <Spanish>Quitar monitoreo</Spanish>
             <Chinese>移除監控</Chinese>
+			<Czech>Odstranit monitorování</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Progress">
             <English>Connecting</English>
@@ -294,6 +335,7 @@
             <Polish>Łączenie</Polish>
             <Spanish>Conectando</Spanish>
             <Chinese>連線中</Chinese>
+			<Czech>Připojuji</Czech>
         </Key>
 		<Key ID="STR_KAT_circulation_X_Remove_Action_Progress">
             <English>Disconnecting</English>
@@ -301,6 +343,7 @@
             <Polish>Rozłączanie</Polish>
             <Spanish>Desconectando</Spanish>
             <Chinese>斷開連接</Chinese>
+			<Czech>Odpojuji</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_removeSound">
             <English>Turn down volume of AED X</English>
@@ -308,6 +351,7 @@
             <Polish>Ścisz AED X</Polish>
             <Spanish>Bajar el volúmen del DEA X</Spanish>
             <Chinese>降低AED X音量</Chinese>
+			<Czech>Snížit hlasitost AED-X</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_addSound">
             <English>Turn up volume of AED X</English>
@@ -315,6 +359,7 @@
             <Polish>Podgłośnij AED X</Polish>
             <Spanish>Subir el volúmen del DEA X</Spanish>
             <Chinese>提高AED X音量</Chinese>
+			<Czech>Zvýšit hlasitost AED-X</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_Pain_empty">
             <English>%1 is now empty</English>
@@ -322,6 +367,7 @@
             <Polish>%1 jest pusty</Polish>
             <Spanish>%1 está vacío ahora</Spanish>
             <Chinese>%1 目前用完了</Chinese>
+			<Czech>%1 je prázdná</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_bloodbank">
             <English>Medical Blood bank</English>
@@ -329,6 +375,7 @@
             <Polish>Bank krwi</Polish>
             <Spanish>Banco de sangre</Spanish>
             <Chinese>血庫</Chinese>
+			<Czech>Lékařská krevní banka</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_open_crosspanel">
             <English>Open blood groups cheat sheet</English>
@@ -336,6 +383,7 @@
             <Polish>Otwórz tabele grup krwi</Polish>
             <Spanish>Abrir tabla de compatibilidad sanguínea</Spanish>
             <Chinese>打開血型相容表</Chinese>
+			<Czech>Otevřít tahák krevních skupin</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -343,6 +391,7 @@
             <Polish>Tabela grup krwi</Polish>
             <Spanish>Tabla de grupos sanguíneos</Spanish>
             <Chinese>血型相容表</Chinese>
+			<Czech>tahák krevních skupin</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_desc_crosspanel">
             <English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
@@ -350,6 +399,7 @@
             <Polish>Zła kombinacja krwi dawcy i biorcy może mieć śmiertelne konsekwencje.</Polish>
             <Spanish>Una mala combinación de donante y receptor puede traer consecuencias fatales.</Spanish>
             <Chinese>使用不相容的血包來輸血可能會導致病患死亡</Chinese>
+			<Czech>Špatná kombinace krve dárce a příjemce může mít smrtelné následky.</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_client_bt">
             <English>Blood type</English>
@@ -357,6 +407,7 @@
             <Polish>Grupa krwi</Polish>
             <Spanish>Grupo sanguíneo</Spanish>
             <Chinese>血型</Chinese>
+			<Czech>Krevní skupina</Czech>
         </Key>
     </Package>
 </Project>

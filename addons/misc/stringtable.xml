@@ -7,6 +7,7 @@
             <Polish>ACE-Inne aktywowane?</Polish>
             <Spanish>¿Activar ACE-Misceláneos?</Spanish>
             <Chinese>啟用ACE-雜項?</Chinese>
+			<Czech>ACE-Misc aktivováno?</Czech>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV">
             <English>Attaching IV</English>
@@ -14,6 +15,7 @@
             <Polish>Zakładanie IV</Polish>
             <Spanish>Administrando IV</Spanish>
             <Chinese>注射點滴</Chinese>
+			<Czech>Připojuji IV</Czech>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display">
             <English>Attach IV (1000ml)</English>
@@ -21,6 +23,7 @@
             <Polish>Załóż IV (1000ml)</Polish>
             <Spanish>Administrar IV (1000ml)</Spanish>
             <Chinese>注射點滴 (1000ml)</Chinese>
+			<Czech>Připojuji IV (1000ml)</Czech>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_500">
             <English>Attach IV (500ml)</English>
@@ -28,6 +31,7 @@
             <Polish>Załóż IV (500ml)</Polish>
             <Spanish>Administrar IV (500ml)</Spanish>
             <Chinese>注射點滴 (500ml)</Chinese>
+			<Czech>Připojuji IV (500ml)</Czech>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_250">
             <English>Attach IV (250ml)</English>
@@ -35,6 +39,7 @@
             <Polish>Załóż IV (250ml)</Polish>
             <Spanish>Administrar IV (250ml)</Spanish>
             <Chinese>注射點滴 (250ml)</Chinese>
+			<Czech>Připojuji IV (2500ml)</Czech>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand">
             <English>Stand: Saline IV (1000ml)</English>
@@ -42,6 +47,7 @@
             <Polish>Stojak: Sól fizjologiczna IV (1000ml)</Polish>
             <Spanish>Soporte: Salino IV (1000ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (1000ml)</Chinese>
+			<Czech>Stojan: Solný roztok (1000ml)</Czech>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_500">
             <English>Stand: Saline IV (500ml)</English>
@@ -49,6 +55,7 @@
             <Polish>Stojak: Sól fizjologiczna IV (500ml)</Polish>
             <Spanish>Soporte: Salino IV (500ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (500ml)</Chinese>
+			<Czech>Stojan: Solný roztok (500ml)</Czech>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_250">
             <English>Stand: Saline IV (250ml)</English>
@@ -56,36 +63,42 @@
             <Polish>Stojak: Sól fizjologiczna IV (250ml)</Polish>
             <Spanish>Soporte: Salino IV (250ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (250ml)</Chinese>
+			<Czech>Stojan: Solný roztok (250ml)</Czech>
         </Key>
         <Key ID="STR_kat_misc_SETTING_LIMITWOUNDS_ENABLE">
             <English>Enable limited wounds</English>
             <German>Aktiviere limitierte Wunden</German>
             <Spanish>Habilitar límite de heridas</Spanish>
             <Chinese>開啟傷口限制</Chinese>
+			<Czech>Povolit omezené rány</Czech>
         </Key>
         <Key ID="STR_kat_misc_LIMITWOUNDS_Display">
             <English>Bandage wounds</English>
             <German>Behandle Wunden</German>
             <Spanish>Vendar heridas</Spanish>
             <Chinese>包紮傷口</Chinese>
+			<Czech>Zavázat rány</Czech>
         </Key>
         <Key ID="STR_kat_misc_Condition_limitWounds_Display">
             <English>Use condition limit wounds</English>
             <German>Bendingung für limitierte Wunden</German>
             <Spanish>Usar condición para límite de heridas</Spanish>
             <Chinese>以條件來限制傷口</Chinese>
+			<Czech>Použít podmínku omezených ran</Czech>
         </Key>
         <Key ID="STR_kat_misc_disassemble_stretcher_display">
             <English>Disassemble stretcher</English>
             <German>Trage einklappen</German>
             <Spanish>Desarmar camilla</Spanish>
             <Chinese>拆卸式擔架</Chinese>
+			<Czech>Rozložit nosítka</Czech>
         </Key>
         <Key ID="STR_kat_misc_disassemble_attach_display">
             <English>Attach to</English>
             <German>Anhängen an</German>
             <Spanish>Poner en</Spanish>
             <Chinese>掛在</Chinese>
+			<Czech>Připevnit k</Czech>
         </Key>
     </Package>
 </Project>
