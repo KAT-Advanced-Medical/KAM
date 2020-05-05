@@ -123,7 +123,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(CheckAirway_time),
     "SLIDER",
-    ["Time to check Airways","How long it will take to to check Airways"],
+    ["Time to check Airways","How long it will take to check Airways"],
     CBA_SETTINGS_CAT,
     [1, 10, 2, 0],
     true
