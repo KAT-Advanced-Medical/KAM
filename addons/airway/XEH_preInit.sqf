@@ -103,7 +103,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(medLvl_Guedeltubus),
     "LIST",
-    ["Allow Guedeltubus", "Training level requied to use a Guedeltubus"],
+    ["Allow Guedeltubus", "Training level required to use a Guedeltubus"],
     CBA_SETTINGS_CAT,
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
     true
