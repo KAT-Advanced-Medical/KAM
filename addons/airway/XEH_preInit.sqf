@@ -63,7 +63,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(probability_headturning),
     "SLIDER",
-    ["Succes probability for head turning","Higher, the better probability of succes"],
+    ["Success probability for head turning","Higher, then better probability of success"],
     CBA_SETTINGS_CAT,
     [1, 100, 50, 0],
     true
