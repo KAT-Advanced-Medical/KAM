@@ -62,6 +62,30 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
 }, 1, [_string, _target]] call CBA_fnc_addPerFrameHandler;
 
 
+// Distance limit for AED-X and time limit for monitoring.
+// disconnect the x-series
+[{
+    params ["_player", "_target"];
+    (_target distance2D _player) > QGVAR(distanceLimit_AEDX);
+}, {
+    params ["_player", "_target"];
+    _target setVariable [QGVAR(X), false, true];
+    private _output = localize LSTRING(X_Action_Remove);
+    [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
+    _target setVariable [QGVAR(X), false, true];
+    _player setVariable [QGVAR(use), false, true];
+    [_player, _target] call FUNC(returnAED_X);
+}, [_player, _target], QGVAR(timeLimit_AEDX), {
+    params ["_player", "_target"];
+    _target setVariable [QGVAR(X), false, true];
+    private _output = localize LSTRING(X_Action_Remove);
+    [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
+    _target setVariable [QGVAR(X), false, true];
+    _player setVariable [QGVAR(use), false, true];
+    [_player, _target] call FUNC(returnAED_X);
+}] call CBA_fnc_waitUntilAndExecute;
+
+
 // spawns the heart rate beep.
 [_target, _player] spawn {
     params ["_target", "_player"];
