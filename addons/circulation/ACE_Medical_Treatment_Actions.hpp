@@ -39,10 +39,10 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
 	
-    class Defibrillator_AED_X: CPR {
+    class Defibrillator_AED_X: Defibrillator {
 		displayName = CSTRING(AED_X_Action_Use);
         displayNameProgress = CSTRING(AED_X_Action_Progress);
-        items[] = {"kat_X_AED"};
+        items[] = {};
         treatmentTime = 10;
         callbackProgress = QUOTE(call FUNC(AED_sound));
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [ARR_2(_medic, 'adv_aceCPR_AED')] call ace_common_fnc_hasItem || [ARR_2(_medic, 'kat_X_AED')] call ace_common_fnc_hasItem);
@@ -50,7 +50,7 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
     
-    class X_Defibrillator_AED_X: CPR {
+    class X_Defibrillator_AED_X: Defibrillator_AED_X {
         displayName = CSTRING(X_Action_Use);
         displayNameProgress = CSTRING(X_Action_Progress);
         items[] = {"kat_X_AED"};
@@ -74,6 +74,8 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 5;
         medicRequired = 0;
         callbackProgress = "";
+		callbackStart = "";
+        callbackFailure = "";
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(returnAED_X));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };

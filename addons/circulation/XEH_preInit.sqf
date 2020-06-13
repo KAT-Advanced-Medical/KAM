@@ -44,7 +44,7 @@ private _type = round random(3);
 
 //Distance limit for AED-X
 [
-    QGVAR(distanceLimit_AEDX),
+    GVAR(distanceLimit_AEDX),
     "SLIDER",
     ["Distance limit for AED-X in meters"],
     CBA_SETTINGS_CAT,
@@ -54,7 +54,7 @@ private _type = round random(3);
 
 //Time limit for monitor of AED-X
 [
-    QGVAR(timeLimit_AEDX),
+    GVAR(timeLimit_AEDX),
     "SLIDER",
     ["Time limit for monitor of AED-X in seconds"],
     CBA_SETTINGS_CAT,

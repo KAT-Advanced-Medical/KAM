@@ -66,7 +66,7 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
 // disconnect the x-series
 [{
     params ["_player", "_target"];
-    (_target distance2D _player) > QGVAR(distanceLimit_AEDX);
+    (_target distance2D _player) > GVAR(distanceLimit_AEDX);
 }, {
     params ["_player", "_target"];
     _target setVariable [QGVAR(X), false, true];
@@ -75,7 +75,7 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     _target setVariable [QGVAR(X), false, true];
     _player setVariable [QGVAR(use), false, true];
     [_player, _target] call FUNC(returnAED_X);
-}, [_player, _target], QGVAR(timeLimit_AEDX), {
+}, [_player, _target], GVAR(timeLimit_AEDX), {
     params ["_player", "_target"];
     _target setVariable [QGVAR(X), false, true];
     private _output = localize LSTRING(X_Action_Remove);
