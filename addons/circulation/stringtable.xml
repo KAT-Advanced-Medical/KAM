@@ -329,6 +329,14 @@
             <Chinese>移除監控</Chinese>
 			<Czech>Odstranit monitorování</Czech>
         </Key>
+		<Key ID="STR_KAT_circulation_AED_X_Action_Progress">
+            <English>Using AED-X defibrillator</English>
+            <German>Benutze AED-X Defibrillator</German>
+            <Polish>Używam defibrylatora AED-X</Polish>
+            <Spanish>Yo uso un desfibrilador AED-X</Spanish>
+            <Chinese>我使用AED-X除顫器</Chinese>
+			<Czech>Používám AED-X defibrilátor</Czech>
+        </Key>
         <Key ID="STR_KAT_circulation_X_Action_Progress">
             <English>Connecting</English>
             <German>Anschließen</German>

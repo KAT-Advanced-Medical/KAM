@@ -42,5 +42,26 @@ private _type = round random(3);
     true
 ] call CBA_settings_fnc_init;
 
+//Distance limit for AED-X
+[
+    GVAR(distanceLimit_AEDX),
+    "SLIDER",
+    ["Distance limit for AED-X in meters"],
+    CBA_SETTINGS_CAT,
+    [2, 100, 30, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//Time limit for monitor of AED-X
+[
+    GVAR(timeLimit_AEDX),
+    "SLIDER",
+    ["Time limit for monitor of AED-X in seconds"],
+    CBA_SETTINGS_CAT,
+    [60, 14400, 1800, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+
 
 ADDON = true;
