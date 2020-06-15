@@ -313,6 +313,14 @@
             <Chinese>使用AED除顫器</Chinese>
 			<Czech>Použít AED defibrilátor</Czech>
         </Key>
+		<Key ID="STR_KAT_circulation_AED_PROGRESS">
+			<English>Using the defibrillator...</English>
+			<German>Setze Defibrillator ein...</German>
+            <Chinese>使用除顫器中...</Chinese>
+			<Polish>Używanie Defibrylatora...</Polish>
+			<Spanish>Usando el desfibrilador...</Spanish>
+			<Czech>Používám defibrilátor...</Czech>
+        </Key>
 		<Key ID="STR_KAT_circulation_AED_X_Action_Use">
             <English>Use AED-X defibrillator</English>
             <German>Benutze AED-X Defibrillator</German>
@@ -416,6 +424,62 @@
             <Spanish>Grupo sanguíneo</Spanish>
             <Chinese>血型</Chinese>
 			<Czech>Krevní skupina</Czech>
+        </Key>
+		<Key ID="STR_KAT_circulation_LOCATION_AED">
+            <English>Locations AED</English>
+            <German>Orte für AED</German>
+            <Chinese>AED使用場合</Chinese>
+			<Polish>Miejsca dla AED</Polish>
+			<Spanish>Ubicación del DAE</Spanish>
+			<Czech>Oblasti pro AED</Czech>
+        </Key>
+		<Key ID="STR_KAT_circulation_LOCATION_AED_DESCRIPTION">
+            <English>Where can the AED be used?</English>
+            <German>Wo kann der AED verwendet werden?</German>
+            <Chinese>哪裡可以使用AED?</Chinese>
+			<Polish>Gdzie można wykorzystać AED?</Polish>
+			<Spanish>¿Dónde se puede usar el DAE?</Spanish>
+			<Czech>Kde může být AED použito?</Czech>
+        </Key>
+		<Key ID="STR_KAT_circulation_AED_DISPLAYNAME">
+			<English>Automated External Defibrillator</English>
+			<German>Automatisierter Externer Defibrillator</German>
+			<Chinese>自動體外除顫器</Chinese>
+			<Polish>Automatyczny Zewnętrzny Defibrylator</Polish>
+			<Spanish>Desfibrilador Externo Automático</Spanish>
+			<Czech>Automatický externí defibrilátor</Czech>
+        </Key>
+		<Key ID="STR_KAT_circulation_AED_DESCRIPTION">
+			<English>Use to resuscitate player</English>
+			<German>Stellt Puls wieder her</German>
+            <Chinese>用來甦醒玩家</Chinese>
+			<Polish>Użyj do reanimacji</Polish>
+			<Spanish>Úsalo para resucitar a un jugador</Spanish>
+			<Czech>Použít k resuscitaci hráče</Czech>
+        </Key>
+		<Key ID="STR_ACE_Medical_Treatment_Activity_AED">
+            <English>%1 performed AED</English>
+            <Polish>%1 wykonał cykl AED</Polish>
+            <Czech>%1 provádí AED</Czech>
+            <German>%1 hat ein AED durchgeführt</German>
+            <Spanish>%1 realicó AED</Spanish>
+            <Chinese>%1 已執行心肺復甦術</Chinese>
+        </Key>
+		<Key ID="STR_ACE_Medical_Treatment_Activity_AEDS">
+            <English>%1 performed AED Station</English>
+            <Polish>%1 wykonał cykl AED Station</Polish>
+            <Czech>%1 provádí AED Station</Czech>
+            <German>%1 hat ein AED Station durchgeführt</German>
+            <Spanish>%1 realicó AED Station</Spanish>
+            <Chinese>%1 已執行心肺復甦術</Chinese>
+        </Key>
+		<Key ID="STR_ACE_Medical_Treatment_Activity_AEDX">
+            <English>%1 performed AED-X</English>
+            <Polish>%1 wykonał cykl AED-X</Polish>
+            <Czech>%1 provádí AED-X</Czech>
+            <German>%1 hat ein AED-X durchgeführt</German>
+            <Spanish>%1 realicó AED-X</Spanish>
+            <Chinese>%1 已執行心肺復甦術</Chinese>
         </Key>
     </Package>
 </Project>

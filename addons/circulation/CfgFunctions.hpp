@@ -1,5 +1,5 @@
 class CfgFunctions {
-    class ADDON {
+    class overwrite_dotags {
         tag = "ace_dogtags";
         class ace_dogtags {
             class getDogtagData {
@@ -10,4 +10,12 @@ class CfgFunctions {
             };
         };
     };
+	class overwrite_cprLocal {
+		tag = "ace_medical_treatment";
+		class ace_medical_treatment {
+            class cprLocal {
+                file = QPATHTOF(functions\fnc_cprLocal.sqf);
+            };
+        };
+	};
 };

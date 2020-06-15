@@ -17,6 +17,35 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//location for AED - Defi:
+[
+	QGVAR(useLocation_AED),
+	"LIST",
+	[localize "STR_KAT_circulation_LOCATION_AED",localize "STR_KAT_circulation_LOCATION_AED_DESCRIPTION"],
+	CBA_SETTINGS_CAT,
+	[[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],0],
+	true
+] call CBA_Settings_fnc_init;
+
+//Succes chance for AED-X
+[
+    QGVAR(SuccesCh_AED_X),
+    "SLIDER",
+    ["Succes chance for AED-X"],
+    CBA_SETTINGS_CAT,
+    [1, 100, 85, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//Succes chance for AED
+[
+    QGVAR(SuccesCh_AED),
+    "SLIDER",
+    ["Succes chance for AED"],
+    CBA_SETTINGS_CAT,
+    [1, 100, 80, 0],
+    true
+] call CBA_Settings_fnc_init;
 
 private _type = round random(3);
 [
@@ -44,7 +73,7 @@ private _type = round random(3);
 
 //Distance limit for AED-X
 [
-    GVAR(distanceLimit_AEDX),
+    QGVAR(distanceLimit_AEDX),
     "SLIDER",
     ["Distance limit for AED-X in meters"],
     CBA_SETTINGS_CAT,
@@ -54,14 +83,12 @@ private _type = round random(3);
 
 //Time limit for monitor of AED-X
 [
-    GVAR(timeLimit_AEDX),
+    QGVAR(timeLimit_AEDX),
     "SLIDER",
     ["Time limit for monitor of AED-X in seconds"],
     CBA_SETTINGS_CAT,
     [60, 14400, 1800, 0],
     true
 ] call CBA_Settings_fnc_init;
-
-
 
 ADDON = true;

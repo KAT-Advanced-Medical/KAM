@@ -2,7 +2,6 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
     class ACE_bloodIV;
-    class adv_aceCPR_AED;
 
     class kat_bloodIV_O: ACE_bloodIV {
         displayName = CSTRING(BloodIV_O);
@@ -50,9 +49,20 @@ class CfgWeapons {
             mass = 0;
         };
     };
-    class kat_X_AED: adv_aceCPR_AED {
+	class kat_AED: ACE_ItemCore {
         scope = 2;
-        author = "Katalam";
+		author = "Katalam";
+        displayName = "$STR_KAT_circulation_AED_DISPLAYNAME";
+        picture = QPATHTOF(ui\defib.paa);
+		model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
+        descriptionShort = "$STR_KAT_circulation_AED_DESCRIPTION";
+        descriptionUse = "$STR_KAT_circulation_AED_DESCRIPTION";
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 30;
+        };
+	};
+    class kat_X_AED: kat_AED {
+        scope = 2;
         displayName = CSTRING(X_Display);
         picture = QPATHTOF(ui\x-series.paa);
         model = QPATHTOF(models\aedx\aedx.p3d);
@@ -73,5 +83,5 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;
         };
-    };
+    };	
 };
