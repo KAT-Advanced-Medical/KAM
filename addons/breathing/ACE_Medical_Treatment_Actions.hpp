@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Pulseoximeter);
         treatmentTime = 2;
         items[] = {"kat_Pulseoximeter"};
-        condition = QGVAR(enable);
+        condition = "kat_breathing_enable && !(_patient getVariable ['kat_breathing_pulseoximeter', false])";
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_pulseoximeter));
         callbackFailure = "";

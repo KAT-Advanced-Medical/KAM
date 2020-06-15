@@ -1,6 +1,7 @@
 PREP(AED_sound);
 PREP(AEDStationCondition);
 PREP(AEDSuccess);
+PREP(AEDXCondition);
 PREP(bloodType);
 PREP(canCheckDogtag);
 PREP(compatible);

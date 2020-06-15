@@ -43,6 +43,7 @@ class ACE_Medical_Treatment_Actions {
 		medicRequired = 1;
 	};
 	class Defibrillator_station: Defibrillator {
+		displayName = CSTRING(DefibS_Action_Use);
 		items[] = {};
 		callbackSuccess = "[_medic, _patient, 'AED-Station'] call kat_circulation_fnc_AEDSuccess";
 		condition = "kat_circulation_fnc_AEDStationCondition";
@@ -53,11 +54,12 @@ class ACE_Medical_Treatment_Actions {
     class Defibrillator_AED_X: Defibrillator {
 		displayName = CSTRING(AED_X_Action_Use);
         displayNameProgress = CSTRING(AED_X_Action_Progress);
-        items[] = {"kat_X_AED"};
+        items[] = {};
         treatmentTime = 10;
 		callbackSuccess = "[_medic, _patient, 'AED-X'] call kat_circulation_fnc_AEDSuccess";
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [ARR_2(_medic, 'kat_AED')] call ace_common_fnc_hasItem || [ARR_2(_medic, 'kat_X_AED')] call ace_common_fnc_hasItem);
-        medicRequired = QGVAR(medLvl_AED_X);
+        //condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [ARR_2(_medic, 'kat_AED')] call ace_common_fnc_hasItem || [ARR_2(_medic, 'kat_X_AED')] call ace_common_fnc_hasItem);
+        condition = "kat_circulation_fnc_AEDXCondition";
+		medicRequired = QGVAR(medLvl_AED_X);
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
     
