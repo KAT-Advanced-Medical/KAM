@@ -43,12 +43,12 @@ switch (_reviveObject) do {
 	};
 };
 
-if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AED-X") exitWith {
+if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AED-X" || _reviveObject isEqualTo "AED-Station") exitWith {
 	if (random 100 <= _chance) then {
 		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
 	};
 };
 
-if ((random 1) < ace_medical_treatment_cprSuccessChance) then {
+if ((random 1) < _chance) then {
     ["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
 };

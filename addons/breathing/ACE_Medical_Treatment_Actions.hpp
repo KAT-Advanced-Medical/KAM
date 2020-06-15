@@ -18,10 +18,10 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-        animationCaller = "AinvPknlMstpSlayWrflDnon_medicOther";
-        animationCallerProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
-        animationCallerSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
-        animationCallerSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
+        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
     class RemovePulseoximeter {
@@ -43,10 +43,10 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-        animationCaller = "AinvPknlMstpSlayWrflDnon_medicOther";
-        animationCallerProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
-        animationCallerSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
-        animationCallerSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
+        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
     class ChestSeal {
@@ -68,10 +68,10 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-        animationCaller = "AinvPknlMstpSlayWrflDnon_medicOther";
-        animationCallerProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
-        animationCallerSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
-        animationCallerSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
+        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
 };

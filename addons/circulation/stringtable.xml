@@ -319,7 +319,7 @@
             <Polish>Użyj stacja AED</Polish>
             <Spanish>Utilice el estación AED</Spanish>
             <Chinese>使用AED除顫器</Chinese>
-			<Czech>Použít AED stanice</Czech>
+			<Czech>Použít AED stanici</Czech>
         </Key>
 		<Key ID="STR_KAT_circulation_AED_PROGRESS">
 			<English>Using the defibrillator...</English>

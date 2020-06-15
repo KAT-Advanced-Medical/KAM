@@ -15,6 +15,7 @@ PREP(removeEffect_IV);
 PREP(removeItemfromMag);
 PREP(returnAED_X);
 PREP(removeLog);
+PREP(treatment);
 PREP(treatmentAdvanced_IV);
 PREP(treatmentAdvanced_X);
 PREP(wrongBloodTreatment);

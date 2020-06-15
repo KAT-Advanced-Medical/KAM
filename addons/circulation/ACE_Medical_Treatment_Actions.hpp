@@ -13,6 +13,9 @@ class ACE_Medical_Treatment_Actions {
         condition = "[_medic, 'kat_Painkiller'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Painkiller'] call ace_common_fnc_hasMagazine";
         litter[] = {};
         icon = QPATHTOF(ui\icon_painkillers_action.paa);
+		animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
     class CheckDogtags: CheckPulse {
         displayName = CSTRING(DogTag);
@@ -22,9 +25,15 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         callbackSuccess = "[_medic, _patient] call ace_dogtags_fnc_checkDogtag";
         condition = "true";
+		animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
     class CheckBloodPressure: CheckPulse { // Remove the ability to check blood pressure at the head
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+		animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
 
     #include "Blood_Medical.hpp"
@@ -38,16 +47,18 @@ class ACE_Medical_Treatment_Actions {
 		callbackProgress = "call ace_medical_treatment_fnc_cprProgress; call kat_circulation_fnc_AED_sound;";
 		callbackSuccess = "[_medic, _patient, 'AED'] call kat_circulation_fnc_AEDSuccess";
 		callbackFailure = "call ace_medical_treatment_fnc_cprFailure; _medic setVariable ['kat_soundplayed', false, true];";
-		animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
+		animationMedic = "AinvPknlMstpSnonWnonDr_medic0";
 		treatmentLocations = "GVAR(useLocation_AED)";
 		medicRequired = 1;
+		animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
 	};
 	class Defibrillator_station: Defibrillator {
 		displayName = CSTRING(DefibS_Action_Use);
 		items[] = {};
 		callbackSuccess = "[_medic, _patient, 'AED-Station'] call kat_circulation_fnc_AEDSuccess";
 		condition = "kat_circulation_fnc_AEDStationCondition";
-		animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
 		treatmentLocations = 0;
 	};
 	
@@ -55,7 +66,6 @@ class ACE_Medical_Treatment_Actions {
 		displayName = CSTRING(AED_X_Action_Use);
         displayNameProgress = CSTRING(AED_X_Action_Progress);
         items[] = {};
-        treatmentTime = 10;
 		callbackSuccess = "[_medic, _patient, 'AED-X'] call kat_circulation_fnc_AEDSuccess";
         //condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [ARR_2(_medic, 'kat_AED')] call ace_common_fnc_hasItem || [ARR_2(_medic, 'kat_X_AED')] call ace_common_fnc_hasItem);
         condition = "kat_circulation_fnc_AEDXCondition";
@@ -68,14 +78,12 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(X_Action_Progress);
         items[] = {"kat_X_AED"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), false)]));
-        treatmentTime = 5;
         consumeItem = 1;
         medicRequired = QGVAR(medLvl_AED_X);
         callbackProgress = "";
         callbackStart = "";
         callbackFailure = "";
         callbackSuccess = QFUNC(treatmentAdvanced_X);
-        animationCaller = "AinvPknlMstpSnonWnonDnon_medic3";
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
 

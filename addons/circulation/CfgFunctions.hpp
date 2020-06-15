@@ -16,6 +16,9 @@ class CfgFunctions {
             class cprLocal {
                 file = QPATHTOF(functions\fnc_cprLocal.sqf);
             };
+			class treatment {
+                file = QPATHTOF(functions\fnc_treatment.sqf);
+            };
         };
 	};
 };
