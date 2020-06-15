@@ -46,6 +46,6 @@ if (EGVAR(breathing,death_timer_enable)) exitWith {};
         (_unit getVariable [QGVAR(obstruction), false] || _unit getVariable ["KAT_medical_airwayOccluded", false])) then {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable [QGVAR(startTime), 0, false];
-        [_unit, true] call ace_medical_status_fnc_setDead;
+        [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
     };
 }, 1, [_unit, _time]] call CBA_fnc_addPerFrameHandler;
