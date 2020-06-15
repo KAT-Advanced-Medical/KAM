@@ -36,4 +36,10 @@ if (_add) then {
     _unit setVariable ["KAT_medical_airwayStatus", _newValue, true];
 };
 
+if (_newValue =< 75) then {
+	["ace_medical_CriticalVitals", _unit] call CBA_fnc_localEvent;
+} else {
+	["ace_medical_LoweredVitals", _unit] call CBA_fnc_localEvent;
+};
+
 _newValue
