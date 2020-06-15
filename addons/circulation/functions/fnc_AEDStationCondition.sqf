@@ -21,9 +21,11 @@ params ["_medic", "_patient"];
 private _canCPR = ["",_patient] call ace_medical_treatment_fnc_canCPR;
 private _classNameObjects = [];
 {
-	_className = typeOf _x; 
-	_classNameObjects pushBack _className;
-} forEach nearestObjects [position player, ['Land_Defibrillator_F'], 3]; 
+	if (typeOf _x isEqualTo "kat_AEDItem" || typeOf _x isEqualTo "Land_Defibrillator_F") then {
+		_className = typeOf _x; 
+		_classNameObjects pushBack _className;
+	};
+} forEach nearestObjects [position player, [], 3];
 
 if (!(_classNameObjects isEqualTo []) && {_canCPR}) exitWith {true};
 

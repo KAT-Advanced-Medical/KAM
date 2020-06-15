@@ -409,6 +409,22 @@
             <Chinese>打開血型相容表</Chinese>
 			<Czech>Otevřít tahák krevních skupin</Czech>
         </Key>
+		<Key ID="STR_KAT_circulation_place_AED">
+            <English>Place AED</English>
+            <German>AED platzieren</German>
+            <Polish>Aiejsce AED</Polish>
+            <Spanish>Sitio AED</Spanish>
+            <Chinese>打開血型相容表</Chinese>
+			<Czech>Místo AED</Czech>
+        </Key>
+		<Key ID="STR_KAT_circulation_PickUpAction">
+            <English>Pickup AED</English>
+            <German>AED aufheben</German>
+            <Polish>Odebrać AED</Polish>
+            <Spanish>Recoger AED</Spanish>
+            <Chinese>打開血型相容表</Chinese>
+			<Czech>Vyzvednout AED</Czech>
+        </Key>
         <Key ID="STR_KAT_circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
             <German>Blutgruppentabelle</German>

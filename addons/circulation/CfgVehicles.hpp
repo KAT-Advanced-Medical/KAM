@@ -126,6 +126,22 @@ class CfgVehicles {
                     exceptions[] = {"isNotInside", "isNotSitting"};
                     icon = "";
                 };
+				class placeAED {
+					displayName="$STR_KAT_circulation_place_AED";
+					condition="'kat_AED' in (items ACE_player)";
+					exceptions[]=
+					{
+						"notOnMap",
+						"isNotInside",
+						"isNotHandcuffed",
+						"isNotSurrendering",
+						"isNotSwimming",
+						"isNotOnLadder"
+					};
+					statement="call kat_circulation_fnc_placeAED";
+					icon="";
+					showDisabled=0;
+				};
             };
         };
     };
