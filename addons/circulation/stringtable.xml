@@ -553,5 +553,13 @@
             <Chinese>監視AED-X的時間限制（以秒為單位）</Chinese>
             <Czech>Časový limit pro monitoring pomocí AED-X v sekundách</Czech>
         </Key>
+		<Key ID="STR_KAT_circulation_DEACTIVATE_MONITOR_WHILEAED_X">
+            <English>Deactivate Monitor while using AED-X</English>
+            <Polish>Dezaktywuj monitor podczas korzystania z AED-X</Polish>
+            <German>AED-X Monitor während dem defibrillieren deaktivieren</German>
+            <Spanish>Desactive el monitor mientras usa AED-X</Spanish>
+            <Chinese>使用AED-X時停用顯示器</Chinese>
+            <Czech>Deaktivovat monitoring při použití AED-X</Czech>
+        </Key>
     </Package>
 </Project>

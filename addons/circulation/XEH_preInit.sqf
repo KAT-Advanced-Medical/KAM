@@ -91,4 +91,13 @@ private _type = round random(3);
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(DeactMon_whileAED_X),
+    "CHECKBOX",
+    LLSTRING(DEACTIVATE_MONITOR_WHILEAED_X),
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
