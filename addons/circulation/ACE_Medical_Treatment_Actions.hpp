@@ -44,6 +44,7 @@ class ACE_Medical_Treatment_Actions {
 		icon = QPATHTOF(ui\defib.paa);
 		items[] = {"kat_AED"};
 		treatmentTime = 10;
+		callbackStart = "call ace_medical_treatment_fnc_cprStart;";
 		callbackProgress = "call ace_medical_treatment_fnc_cprProgress; call kat_circulation_fnc_AED_sound;";
 		callbackSuccess = "[_medic, _patient, 'AED'] call kat_circulation_fnc_AEDSuccess";
 		callbackFailure = "call ace_medical_treatment_fnc_cprFailure; _medic setVariable ['kat_soundplayed', false, true];";
