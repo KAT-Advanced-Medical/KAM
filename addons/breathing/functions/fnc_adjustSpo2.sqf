@@ -29,6 +29,7 @@ _value = _value / 100;
 
 if (_add) then {
     _newValue = _oldValue + _value;
+	if (_newValue > 100) then {_newValue = 100};
     _unit setVariable ["KAT_medical_airwayStatus", _newValue, true];
 } else {
     _newValue = _oldValue - _value;
