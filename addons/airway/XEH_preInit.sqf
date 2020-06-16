@@ -63,7 +63,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(probability_headturning),
     "SLIDER",
-    ["Success probability for head turning","Higher, then better probability of success"],
+    [localize LSTRING(SUCCES_HEADTURNING),localize LSTRING(SUCCES_HEADTURNING_DESC)],
     CBA_SETTINGS_CAT,
     [1, 100, 50, 0],
     true
@@ -93,7 +93,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(medLvl_Larynxtubus),
     "LIST",
-    ["Allow Larynxtubus", "Training level required to use a Larynxtubus - KingLT"],
+    [localize LSTRING(ALLOW_LARYNXTUBUS),localize LSTRING(ALLOW_LARYNXTUBUS_DESC)],
     CBA_SETTINGS_CAT,
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
     true
@@ -103,7 +103,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(medLvl_Guedeltubus),
     "LIST",
-    ["Allow Guedeltubus", "Training level required to use a Guedeltubus"],
+    [localize LSTRING(ALLOW_GUEDELTUBUS),localize LSTRING(ALLOW_GUEDELTUBUS_DESC)],
     CBA_SETTINGS_CAT,
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
     true
@@ -113,7 +113,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(medLvl_Accuvac),
     "LIST",
-    ["Allow Accuvac", "Training level requied to use an Accuvac"],
+    [localize LSTRING(ALLOW_ACCUVAC),localize LSTRING(ALLOW_ACCUVAC_DESC)],
     CBA_SETTINGS_CAT,
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
     true
@@ -123,7 +123,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(CheckAirway_time),
     "SLIDER",
-    ["Time to check Airways","How long it will take to check Airways"],
+    [localize LSTRING(TIME_CHECKAIRWAY),localize LSTRING(TIME_CHECKAIRWAY_DESC)],
     CBA_SETTINGS_CAT,
     [1, 10, 2, 0],
     true
@@ -133,7 +133,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(TurnAround_time),
     "SLIDER",
-    ["Time for head turning", "How long it will take to turn head"],
+    [localize LSTRING(TIME_HEADTURNING),localize LSTRING(TIME_HEADTURNING_DESC)],
     CBA_SETTINGS_CAT,
     [1, 10, 2, 0],
     true
@@ -143,7 +143,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(Accuvac_time),
     "SLIDER",
-    ["Time for Accuvac","How long it will take to use Accuvac"],
+    [localize LSTRING(TIME_ACCUVAC),localize LSTRING(TIME_ACCUVAC_DESC)],
     CBA_SETTINGS_CAT,
     [1, 20, 8, 0],
     true
@@ -153,7 +153,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(Larynxtubus_time),
     "SLIDER",
-    ["Time for Larynxtubus","How long it will take to use Larynxtubus"],
+    [localize LSTRING(TIME_LARYNXTUBUS),localize LSTRING(TIME_LARYNXTUBUS_DESC)],
     CBA_SETTINGS_CAT,
     [1, 10, 3, 0],
     true
@@ -163,7 +163,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(Guedeltubus_time),
     "SLIDER",
-    ["Time for Geudeltubus","How long it will take to use Guedeltubus"],
+    [localize LSTRING(TIME_GUEDELTUBUS),localize LSTRING(TIME_GUEDELTUBUS_DESC)],
     CBA_SETTINGS_CAT,
     [1, 20, 6, 0],
     true
