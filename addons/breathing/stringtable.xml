@@ -203,5 +203,37 @@
             <Chinese>臨時氣胸密封貼在大多數情況下用途於治癒、密封或者二度密封因為胸腔受傷破裂導致的氣胸</Chinese>
 			<Czech>Hrudní krytí je navrženo pro léčení, zakrytí a odkrytí otevřených ran na hrudníku ve většině situací.</Czech>
         </Key>
+        <Key ID="STR_kat_breathing_ALLOW_PULSEOXIMETER">
+            <English>Allow Pulseoximeter</English>
+            <German>Pulseoximeter erlauben</German>
+            <Polish>Zezwalaj na pulsoksymetr</Polish>
+            <Spanish>Permitir oxímetro de pulso</Spanish>
+            <Chinese>允許脈搏血氧儀</Chinese>
+			<Czech>Povolit Pulzní oxymetr</Czech>
+        </Key>
+        <Key ID="STR_kat_breathing_TRAININGLEVEL_PULSEOXIMETER">
+            <English>Training level required to use a Pulseoximeter</English>
+            <German>Benötigtes Training Level um ein Pulseoximeter zu nutzen</German>
+            <Polish>Poziom szkolenia wymagany do korzystania z pulsoksymetru</Polish>
+            <Spanish>Nivel de entrenamiento requerido para usar un oxímetro de pulso</Spanish>
+            <Chinese>使用脈搏血氧儀所需的培訓水平</Chinese>
+			<Czech>Úroveň výcviku nutná k použití pulzního oxymetru</Czech>
+        </Key>
+        <Key ID="STR_kat_breathing_ALLOW_CHESTSEAL">
+            <English>Allow Chestseal</English>
+            <German>Chestseal erlauben</German>
+            <Polish>Pozwól Chestseal</Polish>
+            <Spanish>Permitir Chestseal</Spanish>
+            <Chinese>允許胸部</Chinese>
+			<Czech>Povolit hrudní krytí</Czech>
+        </Key>
+        <Key ID="STR_kat_breathing_TRAININGLEVEL_CHESTSEAL">
+            <English>Training level required to use a Chestseal</English>
+            <German>Benötigtes Training Level um ein Chestseal zu nutzen</German>
+            <Polish>Poziom szkolenia wymagany do korzystania z Skrzyni</Polish>
+            <Spanish>Nivel de entrenamiento requerido para usar un Chestseal</Spanish>
+            <Chinese>使用胸膜所需的訓練水平</Chinese>
+			<Czech>Úroveň výcviku nutná k použití hrudního krytí</Czech>
+        </Key>
     </Package>
 </Project>

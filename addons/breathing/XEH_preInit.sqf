@@ -63,7 +63,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(medLvl_Pulseoximeter),
     "LIST",
-    ["Allow Pulseoximeter", "Training level requied to use a Pulseoximeter"],
+    [localize LSTRING(ALLOW_PULSEOXIMETER), localize LSTRING(TRAININGLEVEL_PULSEOXIMETER)],
     CBA_SETTINGS_CAT,
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
     true
@@ -73,7 +73,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(medLvl_Chestseal),
     "LIST",
-    ["Allow Chestseal", "Training level requied to use a Chestseal"],
+    [localize LSTRING(ALLOW_CHESTSEAL), localize LSTRING(TRAININGLEVEL_CHESTSEAL)],
     CBA_SETTINGS_CAT,
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
     true
