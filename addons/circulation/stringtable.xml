@@ -484,26 +484,74 @@
 		<Key ID="STR_ACE_Medical_Treatment_Activity_AED">
             <English>%1 performed AED</English>
             <Polish>%1 wykonał cykl AED</Polish>
-            <Czech>%1 provádí AED</Czech>
             <German>%1 hat ein AED durchgeführt</German>
             <Spanish>%1 realicó AED</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
+            <Czech>%1 provedeno AED</Czech>
         </Key>
 		<Key ID="STR_ACE_Medical_Treatment_Activity_AEDS">
             <English>%1 performed AED Station</English>
             <Polish>%1 wykonał cykl AED Station</Polish>
-            <Czech>%1 provádí AED Station</Czech>
             <German>%1 hat ein AED Station durchgeführt</German>
             <Spanish>%1 realicó AED Station</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
+            <Czech>%1 provedeno AED stanice</Czech>
         </Key>
 		<Key ID="STR_ACE_Medical_Treatment_Activity_AEDX">
             <English>%1 performed AED-X</English>
             <Polish>%1 wykonał cykl AED-X</Polish>
-            <Czech>%1 provádí AED-X</Czech>
             <German>%1 hat ein AED-X durchgeführt</German>
             <Spanish>%1 realicó AED-X</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
+            <Czech>%1 provedeno AED-X</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED_X">
+            <English>Succes chance for AED-X</English>
+            <Polish>Szansa na sukces dla AED-X</Polish>
+            <German>Erfolgsrate für AED-X</German>
+            <Spanish>Posibilidad de éxito para AED-X</Spanish>
+            <Chinese>AED-X成功的機會</Chinese>
+            <Czech>Šance úspěchu pro AED-X</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED">
+            <English>Succes chance for AED</English>
+            <Polish>Szansa na sukces dla AED</Polish>
+            <German>Erfolgsrate für AED</German>
+            <Spanish>Posibilidad de éxito para AED</Spanish>
+            <Chinese>AED成功的機會</Chinese>
+            <Czech>Šance úspěchu pro AED</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_ALLOW_AED_X">
+            <English>Allow AED-X</English>
+            <Polish>Pozwól AED-X</Polish>
+            <German>AED-X erlauben</German>
+            <Spanish>Permitir AED-X</Spanish>
+            <Chinese>允許AED-X</Chinese>
+            <Czech>Povolit AED</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_TRAINING_LEVEL_AED_X">
+            <English>Training level requied to use an AED-X</English>
+            <Polish>Poziom szkolenia wymagany do korzystania z AED-X</Polish>
+            <German>Benötigtes Training Level um den  AED-X zu nutzen</German>
+            <Spanish>Nivel de entrenamiento requerido para usar un AED-X</Spanish>
+            <Chinese>使用AED-X所需的培訓水平</Chinese>
+            <Czech>Úroveň výcviku nutná k použití AED-X</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_DISTANCELIMIT_AED_X">
+            <English>Distance limit for AED-X in meters</English>
+            <Polish>Limit odległości dla AED-X w metrach</Polish>
+            <German>Distanz Grenze für den AED-X in Meter</German>
+            <Spanish>Límite de distancia para AED-X en metros</Spanish>
+            <Chinese>AED-X的距離限制，以米為單位</Chinese>
+            <Czech>Vzdálenostní limit pro AED-X v metrech</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_TIMELIMIT_AED_X">
+            <English>Time limit for monitor of AED-X in seconds</English>
+            <Polish>Limit czasu dla monitora AED-X w sekundach</Polish>
+            <German>Zeitbegrenzung für die Werteüberwachung vom AED-X in Sekunden</German>
+            <Spanish>Límite de tiempo para monitor de AED-X en segundos</Spanish>
+            <Chinese>監視AED-X的時間限制（以秒為單位）</Chinese>
+            <Czech>Časový limit pro monitoring pomocí AED-X v sekundách</Czech>
         </Key>
     </Package>
 </Project>

@@ -12,7 +12,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(enable),
     "CHECKBOX",
-    localize LSTRING(SETTING_ENABLE),
+    LLSTRING(SETTING_ENABLE),
     CBA_SETTINGS_CAT,
     [true],
     true

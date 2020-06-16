@@ -11,7 +11,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(enable),
     "CHECKBOX",
-    localize LSTRING(SETTING_ENABLE),
+    LLSTRING(SETTING_ENABLE),
     CBA_SETTINGS_CAT,
     [true],
     true
@@ -21,7 +21,7 @@ PREP_RECOMPILE_END;
 [
 	QGVAR(useLocation_AED),
 	"LIST",
-	[localize "STR_KAT_circulation_LOCATION_AED",localize "STR_KAT_circulation_LOCATION_AED_DESCRIPTION"],
+	[LLSTRING(LOCATION_AED),LLSTRING(LOCATION_AED_DESCRIPTION)],
 	CBA_SETTINGS_CAT,
 	[[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],0],
 	true
@@ -31,7 +31,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(SuccesCh_AED_X),
     "SLIDER",
-    ["Succes chance for AED-X"],
+    LLSTRING(SUCESSCHANCE_AED_X),
     CBA_SETTINGS_CAT,
     [1, 100, 85, 0],
     true
@@ -41,7 +41,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(SuccesCh_AED),
     "SLIDER",
-    ["Succes chance for AED"],
+    LLSTRING(SUCESSCHANCE_AED),
     CBA_SETTINGS_CAT,
     [1, 100, 80, 0],
     true
@@ -51,7 +51,7 @@ private _type = round random(3);
 [
     QGVAR(bloodgroup),
     "LIST",
-    localize LSTRING(client_bt),
+    LLSTRING(client_bt),
     CBA_SETTINGS_CAT,
     [["A", "B", "AB", "O"], ["A", "B", "AB", "O"], _type],
     2,
@@ -65,7 +65,7 @@ private _type = round random(3);
 [
     QGVAR(medLvl_AED_X),
     "LIST",
-    ["Allow AED-X", "Training level requied to use an AED-X"],
+    [LLSTRING(ALLOW_AED_X),LLSTRING(TRAINING_LEVEL_AED_X)],
     CBA_SETTINGS_CAT,
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 2],
     true
@@ -75,7 +75,7 @@ private _type = round random(3);
 [
     QGVAR(distanceLimit_AEDX),
     "SLIDER",
-    ["Distance limit for AED-X in meters"],
+    LLSTRING(DISTANCELIMIT_AED_X),
     CBA_SETTINGS_CAT,
     [2, 100, 30, 0],
     true
@@ -85,7 +85,7 @@ private _type = round random(3);
 [
     QGVAR(timeLimit_AEDX),
     "SLIDER",
-    ["Time limit for monitor of AED-X in seconds"],
+    LLSTRING(TIMELIMIT_AED_X),
     CBA_SETTINGS_CAT,
     [60, 14400, 1800, 0],
     true
