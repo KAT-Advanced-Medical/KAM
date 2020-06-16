@@ -44,10 +44,10 @@ class ACE_Medical_Treatment_Actions {
 		icon = QPATHTOF(ui\defib.paa);
 		items[] = {"kat_AED"};
 		treatmentTime = 10;
-		callbackStart = "call ace_medical_treatment_fnc_cprStart;";
+		callbackStart = "call ace_medical_treatment_fnc_cprStart; _patient setVariable ['kat_AEDinUse', true, true];";
 		callbackProgress = "call ace_medical_treatment_fnc_cprProgress; call kat_circulation_fnc_AED_sound;";
-		callbackSuccess = "[_medic, _patient, 'AED'] call kat_circulation_fnc_AEDSuccess";
-		callbackFailure = "call ace_medical_treatment_fnc_cprFailure; _medic setVariable ['kat_soundplayed', false, true];";
+		callbackSuccess = "[_medic, _patient, 'AED'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
+		callbackFailure = "call ace_medical_treatment_fnc_cprFailure; _medic setVariable ['kat_soundplayed', false, true]; _patient setVariable ['kat_AEDinUse', false, true];";
 		animationMedic = "AinvPknlMstpSnonWnonDr_medic0";
 		treatmentLocations = "GVAR(useLocation_AED)";
 		medicRequired = 1;
@@ -58,7 +58,7 @@ class ACE_Medical_Treatment_Actions {
 	class Defibrillator_station: Defibrillator {
 		displayName = CSTRING(DefibS_Action_Use);
 		items[] = {};
-		callbackSuccess = "[_medic, _patient, 'AED-Station'] call kat_circulation_fnc_AEDSuccess";
+		callbackSuccess = "[_medic, _patient, 'AED-Station'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
 		condition = "kat_circulation_fnc_AEDStationCondition";
 		treatmentLocations = 0;
 	};
@@ -67,7 +67,7 @@ class ACE_Medical_Treatment_Actions {
 		displayName = CSTRING(AED_X_Action_Use);
         displayNameProgress = CSTRING(AED_X_Action_Progress);
         items[] = {};
-		callbackSuccess = "[_medic, _patient, 'AED-X'] call kat_circulation_fnc_AEDSuccess";
+		callbackSuccess = "[_medic, _patient, 'AED-X'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
         //condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [ARR_2(_medic, 'kat_AED')] call ace_common_fnc_hasItem || [ARR_2(_medic, 'kat_X_AED')] call ace_common_fnc_hasItem);
         condition = "kat_circulation_fnc_AEDXCondition";
 		medicRequired = QGVAR(medLvl_AED_X);
