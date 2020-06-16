@@ -55,7 +55,8 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 	
-	if (GVAR(DeactMon_whileAED_X) && _target getVariable ['kat_AEDinUse', false]) exitWith {diag_log "No Values for your Monitor"};
+	//No Values for your Monitor atm
+	if (GVAR(DeactMon_whileAED_X) && _target getVariable ['kat_AEDinUse', false]) exitWith {};
 	
 	[_target, "quick_view", _string] call kat_circulation_fnc_removeLog;
 	[_target, "quick_view", _string,
@@ -95,7 +96,7 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     params ["_target", "_player"];
     while {_target getVariable [QGVAR(X), false]} do {
 		if (GVAR(DeactMon_whileAED_X) && _target getVariable ['kat_AEDinUse', false]) then {
-			diag_log "No Beep for you";
+		//No Beep for you atm
 		} else {
 			private _hr = _target getVariable ["ace_medical_heartRate", 80];
 			if (_hr <= 0) then {
