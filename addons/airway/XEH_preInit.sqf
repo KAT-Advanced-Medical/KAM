@@ -139,6 +139,16 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+// Settable action time for Head overstretching
+[
+    QGVAR(Overstretch_time),
+    "SLIDER",
+    [LLSTRING(TIME_OVERSTRETCH),LLSTRING(TIME_OVERSTRETCH_DESC)],
+    CBA_SETTINGS_CAT,
+    [1, 10, 2, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 // Settable action time for Accuvac
 [
     QGVAR(Accuvac_time),
