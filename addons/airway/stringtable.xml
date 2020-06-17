@@ -453,6 +453,22 @@
             <Chinese>轉向時間</Chinese> 
 			<Czech>Čas otočení hlavy</Czech>
         </Key>
+		<Key ID="STR_kat_airway_TIME_OVERSTRETCH">
+            <English>Time for overstretch the head</English>
+            <German>Zeit um den Kopf zu überstrecken</German>
+            <Polish>Czas na nadmierne rozciągnięcie głowy</Polish>
+            <Spanish>Hora de estirar demasiado la cabeza</Spanish>
+            <Chinese>过度伸展头部的时间</Chinese> 
+			<Czech>Čas na přetažení hlavy</Czech>
+        </Key>
+		<Key ID="STR_kat_airway_TIME_OVERSTRETCH_DESC">
+            <English>How long it will take to turn head</English>
+            <German>Wie lange es dauert um den Kopf zu überstrecken</German>
+            <Polish>Ile czasu zajmie odwrócenie głowy</Polish>
+            <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
+            <Chinese>转头需要多长时间</Chinese> 
+			<Czech>Jak dlouho bude trvat, než se otočí hlava</Czech>
+        </Key>
         <Key ID="STR_kat_airway_TIME_HEADTURNING_DESC">
             <English>How long it will take to turn head</English>
             <English>Time for head turning</English>
