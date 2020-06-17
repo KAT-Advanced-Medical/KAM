@@ -38,6 +38,7 @@ class CfgPatches {
     };
 };
 
+#include "CfgFunctions.hpp"
 #include "CfgHints.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgWeapons.hpp"

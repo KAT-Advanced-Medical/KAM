@@ -10,7 +10,7 @@ class CfgFunctions {
             };
         };
     };
-	class overwrite_cprLocal {
+	class overwrite_medical_treatment {
 		tag = "ace_medical_treatment";
 		class ace_medical_treatment {
             class cprLocal {
