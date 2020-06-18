@@ -27,6 +27,7 @@ if (_target getVariable [QGVAR(X), false]) exitWith {
 // connect the x-series
 _target setVariable [QGVAR(X), true, true];
 _player setVariable [QGVAR(use), true, true];
+_player setVariable [QGVAR(returnedAED), false, true];
 
 // analyse sound feedback
 playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _target, false, getPosASL _target, 5, 1, 15];
@@ -71,25 +72,17 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
 // disconnect the x-series
 [{
     params ["_player", "_target"];
-    (_target distance2D _player) > GVAR(distanceLimit_AEDX);
+    ((_target distance2D _player) > GVAR(distanceLimit_AEDX)) || _player getVariable [QGVAR(returnedAED), true]
 }, {
     params ["_player", "_target"];
-    _target setVariable [QGVAR(X), false, true];
-    private _output = localize LSTRING(X_Action_Remove);
-    [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
-    _target setVariable [QGVAR(X), false, true];
-    _player setVariable [QGVAR(use), false, true];
+	if (_player getVariable [QGVAR(returnedAED), true]) exitWith {diag_log "returnedAED wurde true und es wurde das Distance/Time Limit übersprungen"};
+	diag_log "Distance Limit achieved on AED-X";
     [_player, _target] call FUNC(returnAED_X);
 }, [_player, _target], GVAR(timeLimit_AEDX), {
     params ["_player", "_target"];
-    _target setVariable [QGVAR(X), false, true];
-    private _output = localize LSTRING(X_Action_Remove);
-    [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
-    _target setVariable [QGVAR(X), false, true];
-    _player setVariable [QGVAR(use), false, true];
+	diag_log "Time Limit achieved on AED-X";
     [_player, _target] call FUNC(returnAED_X);
 }] call CBA_fnc_waitUntilAndExecute;
-
 
 // spawns the heart rate beep.
 [_target, _player] spawn {
