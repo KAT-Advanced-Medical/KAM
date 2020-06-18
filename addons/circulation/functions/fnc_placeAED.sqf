@@ -14,7 +14,7 @@
 
 ACE_player removeItem "kat_AED";
 
-private _AED = createVehicle ["kat_AEDItem", [0, 0, 0], [], 0, "NONE"];
+private _AED = createVehicle ["kat_AEDItem", position ACE_player, [], 0, "NONE"];
 
 [_AED, true, [0, 1, 0]] remoteExecCall ["ace_dragging_fnc_setDraggable", 0, true];
 [_AED, true, [0, 1, 0]] remoteExecCall ["ace_dragging_fnc_setCarryable", 0, true];

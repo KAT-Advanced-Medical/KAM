@@ -145,7 +145,7 @@ In real life, this will happen sometimes, not quiet often.
     "SLIDER",
     [LLSTRING(TIME_OVERSTRETCH),LLSTRING(TIME_OVERSTRETCH_DESC)],
     CBA_SETTINGS_CAT,
-    [1, 10, 2, 0],
+    [1, 10, 3, 0],
     true
 ] call CBA_Settings_fnc_init;
 
