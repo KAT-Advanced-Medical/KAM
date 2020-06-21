@@ -27,6 +27,7 @@ if (_target getVariable [QGVAR(X), false]) exitWith {
 // connect the x-series
 _target setVariable [QGVAR(X), true, true];
 _player setVariable [QGVAR(use), true, true];
+_player setVariable [QGVAR(returnedAED), false, true];
 
 // analyse sound feedback
 playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _target, false, getPosASL _target, 5, 1, 15];
@@ -54,11 +55,16 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     if !(_target getVariable [QGVAR(X), false]) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-
-    [_target, "quick_view", _string] call kat_circulation_fnc_removeLog;
-    [_target, "quick_view", _string, [round (_target getVariable ["ace_medical_heartRate", 0]), (round (_target getVariable ["ace_medical_bloodPressure", [0,0]] select 1)),
-        (round (_target getVariable ["ace_medical_bloodPressure", [80,120]] select 0)), (round (_target getVariable ["KAT_medical_airwayStatus", 100]))]] call ace_medical_treatment_fnc_addToLog;
-
+	
+	//No Values for your Monitor atm
+	if (GVAR(DeactMon_whileAED_X) && _target getVariable ['kat_AEDinUse', false]) exitWith {};
+	
+	[_target, "quick_view", _string] call kat_circulation_fnc_removeLog;
+	[_target, "quick_view", _string,
+	[round (_target getVariable ["ace_medical_heartRate", 0]),
+	(round (_target getVariable ["ace_medical_bloodPressure", [0,0]] select 1)),
+	(round (_target getVariable ["ace_medical_bloodPressure", [80,120]] select 0)),
+	(round (_target getVariable ["KAT_medical_airwayStatus", 100]))]] call ace_medical_treatment_fnc_addToLog;
 }, 1, [_string, _target]] call CBA_fnc_addPerFrameHandler;
 
 
@@ -66,41 +72,37 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
 // disconnect the x-series
 [{
     params ["_player", "_target"];
-    (_target distance2D _player) > GVAR(distanceLimit_AEDX);
+    ((_target distance2D _player) > GVAR(distanceLimit_AEDX)) || _player getVariable [QGVAR(returnedAED), true]
 }, {
     params ["_player", "_target"];
-    _target setVariable [QGVAR(X), false, true];
-    private _output = localize LSTRING(X_Action_Remove);
-    [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
-    _target setVariable [QGVAR(X), false, true];
-    _player setVariable [QGVAR(use), false, true];
+	if (_player getVariable [QGVAR(returnedAED), true]) exitWith {diag_log "returnedAED wurde true und es wurde das Distance/Time Limit übersprungen"};
+	diag_log "Distance Limit achieved on AED-X";
     [_player, _target] call FUNC(returnAED_X);
 }, [_player, _target], GVAR(timeLimit_AEDX), {
     params ["_player", "_target"];
-    _target setVariable [QGVAR(X), false, true];
-    private _output = localize LSTRING(X_Action_Remove);
-    [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
-    _target setVariable [QGVAR(X), false, true];
-    _player setVariable [QGVAR(use), false, true];
+	diag_log "Time Limit achieved on AED-X";
     [_player, _target] call FUNC(returnAED_X);
 }] call CBA_fnc_waitUntilAndExecute;
-
 
 // spawns the heart rate beep.
 [_target, _player] spawn {
     params ["_target", "_player"];
     while {_target getVariable [QGVAR(X), false]} do {
-        private _hr = _target getVariable ["ace_medical_heartRate", 80];
-        if (_hr <= 0) then {
-            private _soundPath1 = _player getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
-            playsound3D [_soundPath1, _target, false, getPosASL _target, 2, 1, 15];
-            sleep 1.478;
-        } else {
-            private _sleep = 60 / _hr;
-            private _soundPath2 = _player getVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav)];
-            playsound3D [_soundPath2, _target, false, getPosASL _target, 5, 1, 15];
-            sleep 0.25;
-            sleep _sleep;
-        };
+		if (GVAR(DeactMon_whileAED_X) && _target getVariable ['kat_AEDinUse', false]) then {
+		//No Beep for you atm
+		} else {
+			private _hr = _target getVariable ["ace_medical_heartRate", 80];
+			if (_hr <= 0) then {
+				private _soundPath1 = _player getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
+				playsound3D [_soundPath1, _target, false, getPosASL _target, 2, 1, 15];
+				sleep 1.478;
+			} else {
+				private _sleep = 60 / _hr;
+				private _soundPath2 = _player getVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav)];
+				playsound3D [_soundPath2, _target, false, getPosASL _target, 5, 1, 15];
+				sleep 0.25;
+				sleep _sleep;
+			};
+		};
     };
 };

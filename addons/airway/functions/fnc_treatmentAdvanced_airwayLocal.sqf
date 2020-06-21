@@ -30,6 +30,7 @@ if (_target getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") exitWith {
     [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
     false;
 };
+
 if (_target getVariable [QGVAR(airway_item), ""] isEqualTo "guedel" && (_className isEqualTo "Guedeltubus")) exitWith {
     private _output = localize LSTRING(Airway_already);
     [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;

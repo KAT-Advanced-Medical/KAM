@@ -12,7 +12,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(enable),
     "CHECKBOX",
-    localize LSTRING(SETTING_ENABLE),
+    LLSTRING(SETTING_ENABLE),
     CBA_SETTINGS_CAT,
     [true],
     true
@@ -22,7 +22,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(death_timer_enable),
     "CHECKBOX",
-    localize LSTRING(SETTING_death_timer_enable),
+    LLSTRING(SETTING_death_timer_enable),
     CBA_SETTINGS_CAT,
     [false],
     true
@@ -32,7 +32,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(spo2_small_value),
     "SLIDER",
-    localize LSTRING(SETTING_Value_Before),
+    LLSTRING(SETTING_Value_Before),
     CBA_SETTINGS_CAT,
     [0, 100, 2, 0],
     true
@@ -42,7 +42,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(spo2_big_value),
     "SLIDER",
-    localize LSTRING(SETTING_Value_After),
+    LLSTRING(SETTING_Value_After),
     CBA_SETTINGS_CAT,
     [0, 100, 5, 0],
     true
@@ -53,7 +53,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(pneumothorax),
     "SLIDER",
-    localize LSTRING(SETTING_pneumothorax),
+    LLSTRING(SETTING_pneumothorax),
     CBA_SETTINGS_CAT,
     [0, 100, 0, 0],
     true
@@ -63,7 +63,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(medLvl_Pulseoximeter),
     "LIST",
-    ["Allow Pulseoximeter", "Training level requied to use a Pulseoximeter"],
+    [LLSTRING(ALLOW_PULSEOXIMETER), LLSTRING(TRAININGLEVEL_PULSEOXIMETER)],
     CBA_SETTINGS_CAT,
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
     true
@@ -73,7 +73,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(medLvl_Chestseal),
     "LIST",
-    ["Allow Chestseal", "Training level requied to use a Chestseal"],
+    [LLSTRING(ALLOW_CHESTSEAL), LLSTRING(TRAININGLEVEL_CHESTSEAL)],
     CBA_SETTINGS_CAT,
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
     true
