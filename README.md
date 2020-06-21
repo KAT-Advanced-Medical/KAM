@@ -73,8 +73,8 @@ Created by Katalam
 
 ## Required
 
-- [CBA_A3 3.14 or later](http://www.armaholic.com/page.php?id=18767)
-- [ACE3 3.13.1 or later](https://ace3mod.com/)
+- [CBA_A3 3.15 or later](http://www.armaholic.com/page.php?id=18767)
+- [ACE3 3.13.2 or later](https://ace3mod.com/)
 
 ## Youtube
 
