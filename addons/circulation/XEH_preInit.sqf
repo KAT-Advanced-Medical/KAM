@@ -100,4 +100,45 @@ private _type = round random(3);
     true
 ] call CBA_Settings_fnc_init;
 
+
+//Enable different CPR chances per medical level
+[
+    QGVAR(enable_CPR_Chances),
+    "CHECKBOX",
+    LLSTRING(SETTING_CPR_CHANCES),
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+//CPR Chance for Doctors
+[
+	QGVAR(CPR_Chance_Doctor),
+	"SLIDER",
+	LLSTRING(SETTING_CPR_CHANCE_DOCTOR),
+	CBA_SETTINGS_CAT,
+	[0,100,40,0],
+	true
+] call CBA_Settings_fnc_init;
+
+//CPR Chance for Regular medics
+[
+	QGVAR(CPR_Chance_RegularMedic),
+	"SLIDER",
+	LLSTRING(SETTING_CPR_CHANCE_REGULARMEDIC),
+	CBA_SETTINGS_CAT,
+	[0,100,30,0],
+	true
+] call CBA_Settings_fnc_init;
+
+//CPR Chance for Default
+[
+	QGVAR(CPR_Chance_Default),
+	"SLIDER",
+	LLSTRING(SETTING_CPR_CHANCE_DEFAULT),
+	CBA_SETTINGS_CAT,
+	[0,100,20,0],
+	true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
