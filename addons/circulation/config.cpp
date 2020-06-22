@@ -42,8 +42,7 @@ class CfgPatches {
             "ace_medical_vitals",
             "ace_dogtags",
             "cba_settings",
-            "kat_main",
-            "adv_aceCPR"
+            "kat_main"
         };
         author = "Katalam";
         authors[] = {"Katalam"};

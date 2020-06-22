@@ -365,5 +365,166 @@
             <Chinese>嘔吐物 (少量）</Chinese> 
 			<Czech>Zvratky (Malé)</Czech>
         </Key>
+        <Key ID="STR_kat_airway_SUCCES_HEADTURNING">
+            <English>Success probability for head-turning</English>
+            <German>Erfolgsrate für Kopf zur Seite drehen</German>
+            <Polish>Prawdopodobieństwo sukcesu w zwróceniu głowy</Polish>
+            <Spanish>Probabilidad de éxito para llamar la atención</Spanish>
+            <Chinese>轉頭成功的可能性</Chinese> 
+			<Czech>Pravděpodobnost úspěchu při otáčení hlavy</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_SUCCES_HEADTURNING_DESC">
+            <English>Higher, the better the probability of success</English>
+            <German>Größer = höhere Chance auf Erfolg</German>
+            <Polish>Im wyższa, tym większe prawdopodobieństwo sukcesu</Polish>
+            <Spanish>Cuanto mayor sea, mayor será la probabilidad de éxito</Spanish>
+            <Chinese>越高，成功的可能性越大</Chinese> 
+			<Czech>Čím vyšší, tím lepší šance</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_ALLOW_LARYNXTUBUS">
+            <English>Allow Larynxtubus</English>
+            <German>Larynxtubus erlauben</German>
+            <Polish>Pozwól Larynxtubus</Polish>
+            <Spanish>Permitir Larynxtubus</Spanish>
+            <Chinese>允許喉頭</Chinese> 
+			<Czech>Povolit Larynx tubu</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_ALLOW_LARYNXTUBUS_DESC">
+            <English>Training level required to use a Larynxtubus - KingLT</English>
+            <German>Benötigtes Training Level um den Larynxtubus - KingLT zu nutzen</German>
+            <Polish>Poziom szkolenia wymagany do korzystania z krtani - KingLT</Polish>
+            <Spanish>Nivel de entrenamiento requerido para usar un Larynxtubus - KingLT</Spanish>
+            <Chinese>使用喉管所需的培訓水平-KingLT</Chinese> 
+			<Czech>Úroveň výcviku potřebná k použití Larynx tuby - King LT</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_ALLOW_GUEDELTUBUS">
+            <English>Allow Guedeltubus</English>
+            <German>Guedeltubus erlauben</German>
+            <Polish>Pozwól Guedeltubus</Polish>
+            <Spanish>Permitir Guedeltubus</Spanish>
+            <Chinese>允許瓜德爾圖布斯</Chinese> 
+			<Czech>Povolit Guedel tubu</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_ALLOW_GUEDELTUBUS_DESC">
+            <English>Training level required to use a Guedeltubus</English>
+            <German>Benötigtes Training Level um den Guedeltubus zu nutzen</German>
+            <Polish>Poziom szkolenia wymagany do korzystania z Guedeltubus</Polish>
+            <Spanish>Nivel de entrenamiento requerido para usar un Guedeltubus</Spanish>
+            <Chinese>使用Guedeltubus所需的培訓水平</Chinese> 
+			<Czech>Úroveň výcviku potřebná k použití Guedel tuby</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_ALLOW_ACCUVAC">
+            <English>Allow Accuvac</English>
+            <German>Accuvac erlauben</German>
+            <Polish>Pozwól Accuvac</Polish>
+            <Spanish>Permitir Accuvac</Spanish>
+            <Chinese>允許Accuvac</Chinese> 
+			<Czech>Povolit Accuvac</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_ALLOW_ACCUVAC_DESC">
+            <English>Training level required to use an Accuvac</English>
+            <German>Benötigtes Training Level um den Accuvac zu nutzen</German>
+            <Polish>Poziom szkolenia wymagany do korzystania z Accuvac</Polish>
+            <Spanish>Nivel de entrenamiento requerido para usar un Accuvac</Spanish>
+            <Chinese>使用Accuvac所需的培訓水平</Chinese> 
+			<Czech>Úroveň výcviku potřebná k použití Accuvacu</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_CHECKAIRWAY">
+            <English>Time to check Airways</English>
+            <German>Zeit um Atemwege zu prüfen</German>
+            <Polish>Czas sprawdzić Airways</Polish>
+            <Spanish>Hora de revisar las vías aéreas</Spanish>
+            <Chinese>是時候檢查航空公司了</Chinese> 
+			<Czech>Čas pro zkontrolování dýchacích cest</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_CHECKAIRWAY_DESC">
+            <English>How long it will take to check Airways</English>
+            <German>Wie lange es dauert um die Atemwege zu prüfen</German>
+            <Polish>Ile czasu zajmie sprawdzenie Airways</Polish>
+            <Spanish>Cuánto tiempo llevará revisar Airways</Spanish>
+            <Chinese>檢查航空公司需要多長時間</Chinese> 
+			<Czech>Jak dlouho zabere zkontrolování dýchacích cest</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_HEADTURNING">
+            <English>Time for head turning</English>
+            <German>Zeit um den Kopf zu drehen</German>
+            <Polish>Czas na odwrócenie głowy</Polish>
+            <Spanish>Hora de girar la cabeza</Spanish>
+            <Chinese>轉向時間</Chinese> 
+			<Czech>Čas otočení hlavy</Czech>
+        </Key>
+		<Key ID="STR_kat_airway_TIME_OVERSTRETCH">
+            <English>Time for overstretch the head</English>
+            <German>Zeit um den Kopf zu überstrecken</German>
+            <Polish>Czas na nadmierne rozciągnięcie głowy</Polish>
+            <Spanish>Hora de estirar demasiado la cabeza</Spanish>
+            <Chinese>过度伸展头部的时间</Chinese> 
+			<Czech>Čas na přetažení hlavy</Czech>
+        </Key>
+		<Key ID="STR_kat_airway_TIME_OVERSTRETCH_DESC">
+            <English>How long it will take to turn head</English>
+            <German>Wie lange es dauert um den Kopf zu überstrecken</German>
+            <Polish>Ile czasu zajmie odwrócenie głowy</Polish>
+            <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
+            <Chinese>转头需要多长时间</Chinese> 
+			<Czech>Jak dlouho bude trvat, než se otočí hlava</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_HEADTURNING_DESC">
+            <English>How long it will take to turn head</English>
+            <English>Time for head turning</English>
+            <German>Wie lange dauert es den Kopf zur Seite zu drehen</German>
+            <Polish>Ile czasu zajmie odwrócenie głowy</Polish>
+            <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
+            <Chinese>轉頭需要多長時間</Chinese> 
+			<Czech>Jak dlouho zabere otočení hlavy</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_ACCUVAC">
+            <English>Time for Accuvac</English>
+            <German>Zeit um den Accuvac zu nutzen</German>
+            <Polish>Czas na Accuvac</Polish>
+            <Spanish>Hora de Accuvac</Spanish>
+            <Chinese>Accuvac時間</Chinese> 
+			<Czech>Čas pro Accuvac </Czech>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_ACCUVAC_DESC">
+            <English>How long it will take to use Accuvac</English>
+            <German>Wie lange dauert es den Accuvac zu nutzen</German>
+            <Polish>Jak długo potrwa korzystanie z Accuvac</Polish>
+            <Spanish>Cuánto tiempo llevará usar Accuvac</Spanish>
+            <Chinese>使用Accuvac需要多長時間</Chinese> 
+			<Czech>Jak dlouho zabere použití Accuvacu</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_LARYNXTUBUS">
+            <English>Time for Larynxtubus</English>
+            <German>Zeit um den Larynxtubus zu nutzen</German>
+            <Polish>Czas na krtani</Polish>
+            <Spanish>Hora de laringubo</Spanish>
+            <Chinese>喉頭時間</Chinese> 
+			<Czech>Čas pro Larynx tubu</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_LARYNXTUBUS_DESC">
+            <English>How long it will take to use Larynxtubus</English>
+            <German>Wie lange dauert es den Laryxtubus zu nutzen</German>
+            <Polish>Ile czasu zajmie stosowanie leku Larynxtubus</Polish>
+            <Spanish>Cuánto tiempo llevará usar Larynxtubus</Spanish>
+            <Chinese>使用喉頭需要多長時間</Chinese> 
+			<Czech>Jak dlouho zabere použití Larynx tuby</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_GUEDELTUBUS">
+            <English>Time for Geudeltubus</English>
+            <German>Zeit um den Geudeltubus zu nutzen</German>
+            <Polish>Czas na Geudeltubusa</Polish>
+            <Spanish>Hora de Geudeltubus</Spanish>
+            <Chinese>Geudeltubus的時間</Chinese> 
+			<Czech>Čas pro Guedel tubu</Czech>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_GUEDELTUBUS_DESC">
+            <English>How long it will take to use Guedeltubus</English>
+            <German>Wie lange dauert es den Guedeltubus zu nutzen</German>
+            <Polish>Jak długo potrwa stosowanie Guedeltubus</Polish>
+            <Spanish>Cuánto tiempo tomará usar Guedeltubus</Spanish>
+            <Chinese>使用Guedeltubus需要多長時間</Chinese> 
+			<Czech>Jak dlouho zabere použití Guedel tuby</Czech>
+        </Key>
     </Package>
 </Project>

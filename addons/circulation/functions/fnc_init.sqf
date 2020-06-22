@@ -22,3 +22,4 @@ _unit setVariable [QGVAR(X), false, true];
 _unit setVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav), true];
 _unit setVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav), true];
 _unit setVariable [QGVAR(use), false, true];
+_unit setVariable [QGVAR(returnedAED), false, true];

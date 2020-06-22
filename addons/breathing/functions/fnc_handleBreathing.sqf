@@ -42,9 +42,6 @@ if (!local _unit) then {
 
     if (_status > 100) exitWith {
         _unit setVariable ["KAT_medical_airwayStatus", 100, true];
-		if (_unit getVariable ["ACE_isUnconscious",true]) then {
-			[_unit, false, 0, true] call ace_medical_fnc_setUnconscious
-		};
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
@@ -93,7 +90,7 @@ if (!local _unit) then {
     if (GVAR(death_timer_enable)) then {
         if (_status <= 5) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
-            [_unit, true] call ace_medical_fnc_setDead;
+            [_unit, "#setDead"] call ace_medical_fnc_setDead;
         };
     };
 }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
