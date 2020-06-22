@@ -561,5 +561,37 @@
             <Chinese>使用AED-X時停用顯示器</Chinese>
             <Czech>Deaktivovat monitoring při použití AED-X</Czech>
         </Key>
+        <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCES">
+            <English>Enable different CPR chances per medical level</English>
+            <Polish>Włącz różne szanse resuscytacji na poziomie medycznym</Polish>
+            <German>Aktiviere verschiedene HLW Erfolgsraten für verschiedene Medic Level</German>
+            <Spanish>Permita diferentes posibilidades de RCP por nivel médico</Spanish>
+            <Chinese>每個醫療級別啟用不同的CPR機會</Chinese>
+            <Czech>Povolit různé šance pro resuscitaci dle úrovně zdravotnického výcviku</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DOCTOR">
+            <English>CPR Chance for Doctors</English>
+            <Polish>Szansa na resuscytację dla lekarzy</Polish>
+            <German>HLW Erfolgsrate für Doktoren</German>
+            <Spanish>Posibilidad de RCP para médicos</Spanish>
+            <Chinese>醫生的CPR機會</Chinese>
+            <Czech>Šance resuscitace pro doktory</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_REGULARMEDIC">
+            <English>CPR Chance for Regular medics</English>
+            <Polish>Szansa resuscytacji dla zwykłych medyków</Polish>
+            <German>HLW Erfolgsrate für normale Medics</German>
+            <Spanish>Posibilidad de RCP para médicos regulares</Spanish>
+            <Chinese>常規醫生的CPR機會</Chinese>
+            <Czech>Šance resuscitace pro regulérní zdravotníky</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DEFAULT">
+            <English>CPR Chance for Default</English>
+            <Polish>Szansa resuscytacji domyślnie</Polish>
+            <German>Standard HLW Erfolgsrate</German>
+            <Spanish>Posibilidad de RCP por incumplimiento</Spanish>
+            <Chinese>預設CPR機會</Chinese>
+            <Czech>Šance resuscitace pro základní</Czech>
+        </Key>
     </Package>
 </Project>
