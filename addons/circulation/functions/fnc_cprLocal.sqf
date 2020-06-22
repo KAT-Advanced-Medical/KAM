@@ -60,25 +60,17 @@ switch (_reviveObject) do {
 	};
 };
 
-diag_log format ["_reviveObject:%1", _reviveObject];
-diag_log format ["_chance:%1", _chance];
-diag_log format ["_random:%1", _random];
-diag_log format ["_randomCPR:%1", _randomCPR];
-
 if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AED-X" || _reviveObject isEqualTo "AED-Station") exitWith {
 	if (_random <= _chance) then {
 		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
-		diag_log "AED was successfull"
 	};
 };
 if !(GVAR(enable_CPR_Chances)) then {
 	if (_randomCPR < _chance) then {
 		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
-		diag_log "CPR normal was successfull"
 	};
 } else {
 	if (_random <= _chance) then {
 		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
-		diag_log "CPR Custom was successfull"
 	};
 };
