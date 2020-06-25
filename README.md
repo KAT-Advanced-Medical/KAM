@@ -14,9 +14,6 @@
     <a href="https://github.com/Katalam/kat_aceAdvMedical/releases">
         <img src="https://img.shields.io/github/downloads/Katalam/kat_aceAdvMedical/total.svg?style=flat-square&label=Downloads" alt="KAM Downloads">
     </a>
-    <a href="https://circleci.com/gh/Katalam/kat_aceAdvMedical">
-        <img src="https://circleci.com/gh/Katalam/kat_aceAdvMedical.svg?style=svg" alt="KAM Build Status">
-    </a>
 </p>
 
 <p align="center">
