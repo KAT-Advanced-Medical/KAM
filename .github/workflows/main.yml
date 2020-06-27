@@ -1,17 +1,1 @@
-# This is a basic workflow to help you get started with Actions
-name: CI
-on:
-  pull_request:
-    branches: 
-      - dev-Tomcat
-      - master
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Discord notification
-      env:
-        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-      uses: Ilshidur/action-discord@0.0.2
-      with:
-        args: "There's a new PR for KAM! ${{ GITHUB_REF }}"
+
