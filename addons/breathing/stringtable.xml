@@ -8,6 +8,7 @@
             <Spanish>¿Activar ACE-Respiración?</Spanish>
             <Chinese>啟用ACE-心肺呼吸系統？</Chinese>
 			<Czech>ACE-Breathing aktivováno?</Czech>
+			<Korean>ACE 심폐호흡기 기능 활성화?</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_death_timer_enable">
             <English>Alternative death timer for airway injuries?</English>
@@ -16,6 +17,7 @@
             <Spanish>¿Tiempo de muerte alternativo para lesiones en vías aéreas?</Spanish>
             <Chinese>額外因呼吸道受傷的死亡倒數？</Chinese>
 			<Czech>Alternativní čas smrti pro zranění dýchacích cest?</Czech>
+			<Korean>호흡기 부상시(막힘) 사망 타이머 별도 적용?</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_Before">
             <English>Value to add or remove to the Sp02 before 100 sec</English>
@@ -24,6 +26,7 @@
             <Spanish>Valor para agregar o quitar al Sp02 antes de 100 segundos</Spanish>
             <Chinese>設定是否在一百秒之前增加或移除血氧飽和度監測器</Chinese>
 			<Czech>Hodnota, která se přidá nebo odebere Sp02 před 100 sekundami</Czech>
+			<Korean>100초후에 산소 포화도에 추가하거나 제거할 값</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_After">
             <English>Value to add or remove to the Sp02 after 100 sec</English>
@@ -32,6 +35,7 @@
             <Spanish>Valor para agregar o quitar al Sp02 después de 100 segundos</Spanish>
             <Chinese>設定是否在一百秒之後增加或移除血氧飽和度監測器</Chinese>
 			<Czech>Hodnota, která se přidá nebo odebere Sp02 po 100 sekundami</Czech>
+			<Korean>100초후에 산소 포화도에 추가하거나 제거할 값</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -40,6 +44,7 @@
             <Polish>Szansa na odme opłucnową</Polish>
             <Chinese>氣胸的機率</Chinese>
 			<Czech>Pravděpodobnost pneumotoraxu</Czech>
+			<Korean>기흉 가능성</Korean>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -48,6 +53,7 @@
             <Spanish>Usar oxímetro de pulso</Spanish>
             <Chinese>掛載心率監測器</Chinese>
 			<Czech>Připojit Pulzní oxymetr</Czech>
+			<Korean>맥박산소측정기 부착</Korean>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display_Remove">
             <English>Remove Pulse Oximeter</English>
@@ -56,6 +62,7 @@
             <Spanish>Quitar oxímetro de pulso</Spanish>
             <Chinese>移除心率監測器</Chinese>
 			<Czech>Odstranit Pulzní oxymetr</Czech>
+			<Korean>맥박산소측정기 제거</Korean>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Short">
             <English>Pulse Oximeter</English>
@@ -64,6 +71,7 @@
             <Spanish>Oxímetro de pulso</Spanish>
             <Chinese>心率監測器</Chinese>
 			<Czech>Pulzní oxymetr</Czech>
+			<Korean>맥박산소측정기</Korean>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Use">
             <English>Pulse Oximeter</English>
@@ -72,6 +80,7 @@
             <Spanish>Oxímetro de pulso</Spanish>
             <Chinese>心率監測器</Chinese>
 			<Czech>Pulzní oxymetr</Czech>
+			<Korean>맥박산소측정기</Korean>
         </Key>
         <Key ID="STR_kat_breathing_placing">
             <English>Placing</English>
@@ -80,6 +89,7 @@
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
 			<Czech>Dávám</Czech>
+			<Korean>배치중</Korean>
         </Key>
         <Key ID="STR_kat_breathing_remove">
             <English>Removing</English>
@@ -88,6 +98,7 @@
             <Spanish>Quitando</Spanish>
             <Chinese>移除中</Chinese>
 			<Czech>Odstraňuji</Czech>
+			<Korean>제거중</Korean>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_NA">
             <English>Pulse Oximeter already connected</English>
@@ -96,6 +107,7 @@
             <Spanish>El oxímetro de pulso ya está conectado</Spanish>
             <Chinese>心率監測器已經連接了</Chinese>
 			<Czech>Pulzní oxymetr je již připojen</Czech>
+			<Korean>맥박산소측정기가 이미 연결되 있음</Korean>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log">
             <English>Pulse Oximeter: HR: %1 Sp02: %2</English>
@@ -104,6 +116,7 @@
             <Spanish>Oxímetro de pulso: HR: %1 Sp02: %2</Spanish>
             <Chinese>心率監測器: 心率: %1 血氧量: %2</Chinese>
 			<Czech>Pulzní oxymetr: HR: %1 Sp02: %2</Czech>
+			<Korean>맥박 산소포화도: HR: %1 Sp02: %2</Korean>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -112,6 +125,7 @@
             <Spanish>%1 conectado al Oxímetro de pulso</Spanish>
             <Chinese>%1 連接著心率監測器</Chinese>
 			<Czech>%1 připojený Pulzní oxymetr</Czech>
+			<Korean>%1 맥박산소측정기 연결</Korean>
         </Key>
         <Key ID="STR_kat_breathing_hint_name">
             <English>Breathing</English>
@@ -120,6 +134,7 @@
             <Spanish>Respiracióm</Spanish>
             <Chinese>呼吸</Chinese>
 			<Czech>Dýchání</Czech>
+			<Korean>호흡</Korean>
         </Key>
         <Key ID="STR_kat_breathing_hint_desc">
             <English>Breathing
@@ -146,6 +161,10 @@
                 %1Dostatečně ventilovaný?
                 %1Sp02 přes 70% -&gt; Ano
                 %1Sp02 pod 70% -&gt; Ne -&gt; ass. Dýchání</Czech>
+			<Korean>Breathing
+                %1충분히 호흡이 되는가?
+                %1Sp02 넘는다 70% -&gt; 네
+                %1Sp02 아래 70% -&gt; 아니요 -&gt; ass. 호흡</korean>	
         </Key>
         <Key ID="STR_kat_breathing_hint_tip">
             <English>If you saved the airway with a larynxtube skip this</English>
@@ -154,6 +173,7 @@
             <Spanish>Si trataste las vías aéreas con un tubo laríngeo, omite esto</Spanish>
             <Chinese>如果妳已經使用喉管暢通的話那就跳過這個。</Chinese>
 			<Czech>Pokud si zajistil/zachránil dýchací cesty pomocí larynxtube, vynechej to</Czech>
+			<Korean>만일 당신이 후두관을 통해 기도를 확보하였다면 넘기십시오</Korean>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax">
             <English>%1 treated a pneumothorax</English>
@@ -162,6 +182,7 @@
             <Polish>%1 leczenia odmy opłucnowej</Polish>
             <Chinese>%1 已經治癒氣胸</Chinese>
 			<Czech>%1 vyléčen pneumotorax</Czech>
+			<Korean>%1 기흉치료</Korean>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_display">
             <English>Chest Seal</English>
@@ -170,6 +191,7 @@
             <Spanish>Chest Seal</Spanish>
             <Chinese>臨時氣胸密封貼</Chinese>
 			<Czech>Hrudní krytí</Czech>
+			<Korean>기흉치료 패드</Korean>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_mm">
             <English>1x Pneumothorax</English>
@@ -178,6 +200,7 @@
             <Spanish>1x PNeumotórax</Spanish>
             <Chinese>1等氣胸</Chinese>
 			<Czech>1x Pneumotorax</Czech>
+			<Korean>1x 기흉</Korean>
         </Key>
         <Key ID="STR_kat_breathing_treating">
             <English>Treating</English>
@@ -186,6 +209,7 @@
             <Polish>Leczenie</Polish>
             <Chinese>治療中</Chinese>
 			<Czech>Léčení</Czech>
+			<Korean>치료중</Korean>
         </Key>
         <Key ID="STR_kat_breathing_chestseal_display">
             <English>Chest Seal</English>
@@ -194,6 +218,7 @@
             <Spanish>Chest Seal</Spanish>
             <Chinese>臨時氣胸密封貼</Chinese>
 			<Czech>Hrudní krytí</Czech>
+			<Korean>기흉치료 패드</Korean>
         </Key>
         <Key ID="STR_kat_breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
@@ -202,6 +227,7 @@
             <Spanish>Chest Seal es un parche diseñado para tratar, sellar y resellar heridas de pecho abierto, bajo la mayoría de circustancias.</Spanish>
             <Chinese>臨時氣胸密封貼在大多數情況下用途於治癒、密封或者二度密封因為胸腔受傷破裂導致的氣胸</Chinese>
 			<Czech>Hrudní krytí je navrženo pro léčení, zakrytí a odkrytí otevřených ran na hrudníku ve většině situací.</Czech>
+			<Korean>기흉치료 패드는 기흉으로 인한 흉강의 파열을 치료 또는 밀봉하는데 사용됨</Korean>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_PULSEOXIMETER">
             <English>Allow Pulseoximeter</English>
@@ -210,6 +236,7 @@
             <Spanish>Permitir oxímetro de pulso</Spanish>
             <Chinese>允許脈搏血氧儀</Chinese>
 			<Czech>Povolit Pulzní oxymetr</Czech>
+			<Korean>맥박산소측정기 허가</Korean>
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_PULSEOXIMETER">
             <English>Training level required to use a Pulseoximeter</English>
@@ -218,6 +245,7 @@
             <Spanish>Nivel de entrenamiento requerido para usar un oxímetro de pulso</Spanish>
             <Chinese>使用脈搏血氧儀所需的培訓水平</Chinese>
 			<Czech>Úroveň výcviku nutná k použití pulzního oxymetru</Czech>
+			<Korean>맥박산소측정기 사용에 필요한 의료레벨 수준</Korean>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_CHESTSEAL">
             <English>Allow Chestseal</English>
@@ -226,6 +254,7 @@
             <Spanish>Permitir Chestseal</Spanish>
             <Chinese>允許胸部</Chinese>
 			<Czech>Povolit hrudní krytí</Czech>
+			<Korean>기흉치료 패드 허가</Korean>
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_CHESTSEAL">
             <English>Training level required to use a Chestseal</English>
@@ -234,6 +263,7 @@
             <Spanish>Nivel de entrenamiento requerido para usar un Chestseal</Spanish>
             <Chinese>使用胸膜所需的訓練水平</Chinese>
 			<Czech>Úroveň výcviku nutná k použití hrudního krytí</Czech>
+			<Korean>기흉치료 패드 사용에 필요한 의료레벨 수준</Korean>
         </Key>
     </Package>
 </Project>
