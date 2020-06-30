@@ -8,6 +8,7 @@
             <Spanish>¿Activar ACE-Misceláneos?</Spanish>
             <Chinese>啟用ACE-雜項?</Chinese>
 			<Czech>ACE-Misc aktivováno?</Czech>
+			<Korean>ACE 음악 활성화?</Korean>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV">
             <English>Attaching IV</English>
@@ -16,6 +17,7 @@
             <Spanish>Administrando IV</Spanish>
             <Chinese>注射點滴</Chinese>
 			<Czech>Připojuji IV</Czech>
+			<Korean>수액 붙이는중</Korean>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display">
             <English>Attach IV (1000ml)</English>
@@ -24,6 +26,7 @@
             <Spanish>Administrar IV (1000ml)</Spanish>
             <Chinese>注射點滴 (1000ml)</Chinese>
 			<Czech>Připojuji IV (1000ml)</Czech>
+			<Korean>수액 붙이기(1000ml)</Korean>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_500">
             <English>Attach IV (500ml)</English>
@@ -32,6 +35,7 @@
             <Spanish>Administrar IV (500ml)</Spanish>
             <Chinese>注射點滴 (500ml)</Chinese>
 			<Czech>Připojuji IV (500ml)</Czech>
+			<Korean>수액 붙이기(500ml)</Korean>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_250">
             <English>Attach IV (250ml)</English>
@@ -40,6 +44,7 @@
             <Spanish>Administrar IV (250ml)</Spanish>
             <Chinese>注射點滴 (250ml)</Chinese>
 			<Czech>Připojuji IV (2500ml)</Czech>
+			<Korean>수액 붙이기(250ml)</Korean>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand">
             <English>Stand: Saline IV (1000ml)</English>
@@ -48,6 +53,7 @@
             <Spanish>Soporte: Salino IV (1000ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (1000ml)</Chinese>
 			<Czech>Stojan: Solný roztok (1000ml)</Czech>
+			<Korean>스탠드: 수액(1000ml)</Korean>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_500">
             <English>Stand: Saline IV (500ml)</English>
@@ -56,6 +62,7 @@
             <Spanish>Soporte: Salino IV (500ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (500ml)</Chinese>
 			<Czech>Stojan: Solný roztok (500ml)</Czech>
+			<Korean>스탠드: 수액(500ml)</Korean>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_250">
             <English>Stand: Saline IV (250ml)</English>
@@ -64,6 +71,7 @@
             <Spanish>Soporte: Salino IV (250ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (250ml)</Chinese>
 			<Czech>Stojan: Solný roztok (250ml)</Czech>
+			<Korean>스탠드: 수액(250ml)</Korean>
         </Key>
         <Key ID="STR_kat_misc_SETTING_LIMITWOUNDS_ENABLE">
             <English>Enable limited wounds</English>
@@ -71,6 +79,7 @@
             <Spanish>Habilitar límite de heridas</Spanish>
             <Chinese>開啟傷口限制</Chinese>
 			<Czech>Povolit omezené rány</Czech>
+			<Korean>제한된 상처 사용</Korean>
         </Key>
         <Key ID="STR_kat_misc_LIMITWOUNDS_Display">
             <English>Bandage wounds</English>
@@ -78,6 +87,7 @@
             <Spanish>Vendar heridas</Spanish>
             <Chinese>包紮傷口</Chinese>
 			<Czech>Zavázat rány</Czech>
+			<Korean>상처들에 여러붕대 감기</Korean>
         </Key>
         <Key ID="STR_kat_misc_Condition_limitWounds_Display">
             <English>Use condition limit wounds</English>
@@ -85,6 +95,7 @@
             <Spanish>Usar condición para límite de heridas</Spanish>
             <Chinese>以條件來限制傷口</Chinese>
 			<Czech>Použít podmínku omezených ran</Czech>
+			<Korean>상태 제한 상처사용</Korean>
         </Key>
         <Key ID="STR_kat_misc_disassemble_stretcher_display">
             <English>Disassemble stretcher</English>
@@ -92,6 +103,7 @@
             <Spanish>Desarmar camilla</Spanish>
             <Chinese>拆卸式擔架</Chinese>
 			<Czech>Rozložit nosítka</Czech>
+			<Korean>분리가능한 들것</Korean>
         </Key>
         <Key ID="STR_kat_misc_disassemble_attach_display">
             <English>Attach to</English>
@@ -99,6 +111,7 @@
             <Spanish>Poner en</Spanish>
             <Chinese>掛在</Chinese>
 			<Czech>Připevnit k</Czech>
+			<Korean>에 부착</Korean>
         </Key>
     </Package>
 </Project>
