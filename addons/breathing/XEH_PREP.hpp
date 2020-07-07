@@ -1,5 +1,6 @@
 PREP(adjustSpo2);
 PREP(fullHealLocal);
+PREP(hasStableVitals);
 PREP(handleBreathing);
 PREP(handlePulmoHit);
 PREP(init);
