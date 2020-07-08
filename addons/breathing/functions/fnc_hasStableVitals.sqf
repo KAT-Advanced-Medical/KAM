@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Ruthberg
  * Edit: YetheSamartaka (corrections by Tomcat) - added condition for Spo2 values
