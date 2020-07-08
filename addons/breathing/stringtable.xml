@@ -265,5 +265,23 @@
 			<Czech>Úroveň výcviku nutná k použití hrudního krytí</Czech>
 			<Korean>기흉치료 패드 사용에 필요한 의료레벨 수준</Korean>
         </Key>
+		<Key ID="STR_kat_breathing_SETTING_STABLE_SPO2">
+            <English>Stable Spo2 value to gain consciousness</English>
+            <German>Stabiler Spo2-Wert, um Bewusstsein zu erlangen</German>
+            <Polish>Stabilna wartość Spo2 w celu uzyskania świadomości</Polish>
+            <Spanish>Valor estable de Spo2 para ganar conciencia</Spanish>
+            <Chinese>穩定的Spo2值以提高意識</Chinese>
+			<Czech>Stabilní hodnota Spo2 pro získání vědomí</Czech>
+			<Korean>의식을 얻기위한 안정적인 Spo2 값</Korean>
+        </Key>
+		<Key ID="STR_kat_breathing_DESCRIPTION_STABLE_SPO2">
+            <English>After reaching more than selected value (default 85), only then patient can get conscious</English>
+            <German>Wenn mehr als der ausgewählte Wert (Standard 85) erreicht ist, kann der Patient erst dann bewusst werden</German>
+            <Polish>Po osiągnięciu wartości większej niż wybrana (domyślnie 85) tylko wtedy pacjent może stać się przytomny</Polish>
+            <Spanish>Después de alcanzar más del valor seleccionado (valor predeterminado 85), solo entonces el paciente puede tomar conciencia</Spanish>
+            <Chinese>達到選定值以上（默認值85）後，患者才能清醒</Chinese>
+			<Czech>Po dosažení více než vybrané hodnoty (výchozí hodnota 85) může pacient získat vědomí</Czech>
+			<Korean>선택한 값 이상 (기본값 85)에 도달하면 환자 만 의식을 가질 수 있습니다</Korean>
+        </Key>
     </Package>
 </Project>

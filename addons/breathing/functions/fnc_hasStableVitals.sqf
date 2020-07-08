@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: Ruthberg, modified by YetheSamartaka
+ * Author: Ruthberg
+ * Edit: YetheSamartaka - added condition for Spo2 values
  * Check if a unit has stable vitals (required to become conscious)
  *
  * Arguments:
@@ -31,8 +32,8 @@ if (_bloodPressureL < 50 || {_bloodPressureH < 60}) exitWith { false };
 private _heartRate = GET_HEART_RATE(_unit);
 if (_heartRate < 40) exitWith { false };
 
-//KAT Breathing - condition for Sp02 value
+//KAT Breathing - condition for Spo2 value
 private _o2 = _unit getVariable ["KAT_medical_airwayStatus", 100];
-if (_o2 < 90) exitWith { false };
+if (_o2 < GVAR(Stable_spo2)) exitWith { false };
 
 true
