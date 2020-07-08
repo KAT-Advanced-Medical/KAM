@@ -34,7 +34,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_Value_Before),
     CBA_SETTINGS_CAT,
-    [0, 100, 2, 0],
+    [0, 100, 4, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -44,7 +44,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_Value_After),
     CBA_SETTINGS_CAT,
-    [0, 100, 5, 0],
+    [0, 100, 10, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -55,7 +55,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_pneumothorax),
     CBA_SETTINGS_CAT,
-    [0, 100, 0, 0],
+    [0, 100, 5, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -78,5 +78,15 @@ PREP_RECOMPILE_END;
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
     true
 ] call CBA_settings_fnc_init;
+
+// breathing SpO2 add % remove value big
+[
+    QGVAR(Stable_spo2),
+    "SLIDER",
+    [LLSTRING(SETTING_STABLE_SPO2), LLSTRING(DESCRIPTION_STABLE_SPO2)],
+    CBA_SETTINGS_CAT,
+    [0, 95, 85, 0],
+    true
+] call CBA_Settings_fnc_init;
 
 ADDON = true;
