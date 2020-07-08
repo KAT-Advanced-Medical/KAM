@@ -1,7 +1,6 @@
-#include "script_component.hpp"
 /*
  * Author: Ruthberg
- * Edit: YetheSamartaka - added condition for Spo2 values
+ * Edit: YetheSamartaka (corrections by Tomcat) - added condition for Spo2 values
  * Check if a unit has stable vitals (required to become conscious)
  *
  * Arguments:
@@ -18,22 +17,22 @@
 
 params ["_unit"];
 
-if (GET_BLOOD_VOLUME(_unit) < BLOOD_VOLUME_CLASS_2_HEMORRHAGE) exitWith { false };
-if IN_CRDC_ARRST(_unit) exitWith { false };
+if ((_unit getVariable ["ace_medical_bloodVolume", 6.0]) < 5.1) exitWith { false };
+if (_unit getVariable ["ace_medical_inCardiacArrest", false]) exitWith { false };
 
-private _cardiacOutput = [_unit] call FUNC(getCardiacOutput);
-private _bloodLoss = GET_BLOOD_LOSS(_unit);
-if (_bloodLoss > (BLOOD_LOSS_KNOCK_OUT_THRESHOLD * _cardiacOutput) / 2) exitWith { false };
+private _cardiacOutput = [_unit] call ace_medical_status_fnc_getCardiacOutput;
+private _bloodLoss = [_unit] call ace_medical_status_fnc_getBloodLoss;
+if (_bloodLoss > (ace_medical_const_bloodLossKnockOutThreshold * _cardiacOutput) / 2) exitWith { false };
 
-private _bloodPressure = GET_BLOOD_PRESSURE(_unit);
+private _bloodPressure = [_unit] call ace_medical_status_fnc_getBloodPressure;
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 if (_bloodPressureL < 50 || {_bloodPressureH < 60}) exitWith { false };
 
-private _heartRate = GET_HEART_RATE(_unit);
+private _heartRate = _unit getVariable ["ace_medical_heartRate", 80];
 if (_heartRate < 40) exitWith { false };
 
 //KAT Breathing - condition for Spo2 value
 private _o2 = _unit getVariable ["KAT_medical_airwayStatus", 100];
-if (_o2 < GVAR(Stable_spo2)) exitWith { false };
+if (_o2 < kat_breathing_Stable_spo2) exitWith { false };
 
 true

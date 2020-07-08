@@ -276,7 +276,7 @@
         </Key>
 		<Key ID="STR_kat_breathing_DESCRIPTION_STABLE_SPO2">
             <English>After reaching more than selected value (default 85), only then patient can get conscious</English>
-            <German>Wenn mehr als der ausgewählte Wert (Standard 85) erreicht ist, kann der Patient erst dann bewusst werden</German>
+            <German>Wenn mehr als der ausgewählte Wert (Standard 85) erreicht ist, kann der Patient erst dann Bewusstsein erlangen</German>
             <Polish>Po osiągnięciu wartości większej niż wybrana (domyślnie 85) tylko wtedy pacjent może stać się przytomny</Polish>
             <Spanish>Después de alcanzar más del valor seleccionado (valor predeterminado 85), solo entonces el paciente puede tomar conciencia</Spanish>
             <Chinese>達到選定值以上（默認值85）後，患者才能清醒</Chinese>
