@@ -89,4 +89,14 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// breathing SpO2 add % remove value big
+[
+    QGVAR(hemopneumothoraxChance),
+    "SLIDER",
+    [LLSTRING(HEMOPNEUMOTHORAX_CHANCE_OPTION), LLSTRING(DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION)],
+    CBA_SETTINGS_CAT,
+    [0, 95, 5, 0, true],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

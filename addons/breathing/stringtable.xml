@@ -283,5 +283,23 @@
 			<Czech>Po dosažení více než vybrané hodnoty (výchozí hodnota 85) může pacient získat vědomí</Czech>
 			<Korean>선택한 값 이상 (기본값 85)에 도달하면 환자 만 의식을 가질 수 있습니다</Korean>
         </Key>
+		<Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
+            <English>Hemopneomothorax Chance</English>
+            <German></German>
+            <Polish></Polish>
+            <Spanish></Spanish>
+            <Chinese></Chinese>
+			<Czech></Czech>
+			<Korean></Korean>
+        </Key>
+		<Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
+            <English>The percentage chance that a patient will suffer from a hemothorax at the same time they are suffering from pneumothorax. Treatment requires the draining of fluids with the use of an ARS Kit.</English>
+            <German></German>
+            <Polish></Polish>
+            <Spanish></Spanish>
+            <Chinese></Chinese>
+			<Czech></Czech>
+			<Korean></Korean>
+        </Key>
     </Package>
 </Project>

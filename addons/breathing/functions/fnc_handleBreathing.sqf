@@ -16,7 +16,7 @@
  */
 
 params [["_unit", objNull, [objNull]]];
-
+diag_log format ["Handling breathing for %1", _unit];
 if !(GVAR(enable)) exitWith {};
 
 if (!local _unit) then {
@@ -29,11 +29,12 @@ if (!local _unit) then {
     if !(alive _unit) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-
+    systemChat "Handling breathing PFH";
     private _collapsed = _unit getVariable ["KAT_medical_airwayCollapsed", false];
+    private _hemothorax = _unit getVariable ["KAT_medical_hemopneumothorax", false];
     private _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
-
-    if ([_unit] call ace_common_fnc_isAwake && !_collapsed) exitWith {
+    diag_log format ["Hemothorax: %1", _hemothorax];
+    if ([_unit] call ace_common_fnc_isAwake && !_collapsed && !_hemothorax) exitWith {
         if (_status >= 100) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
@@ -52,6 +53,10 @@ if (!local _unit) then {
     if (_collapsed) exitWith {
         [_unit, GVAR(spo2_big_value), false] call FUNC(adjustSpo2);
     };
+    if (_hemothorax) exitWith {
+        systemChat "Patient has hemothorax, certainly hard to breathe.";
+        [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
+    }
 
     if (_unit getVariable ["ace_medical_heartRate", 0] > 0) exitWith {
         if (_occluded || _obstruction) exitWith {
