@@ -26,12 +26,10 @@ if !(_projectile isKindOF "BulletBase") exitWith {};
 
 if (random 100 <= GVAR(pneumothorax)) then {
     // add breathing sound
-    systemChat "Oh shit, pneumothorax.";
     [_unit, 0.5] call ace_medical_status_fnc_adjustPainLevel;
-    [_unit, CBA_missionTime] call FUNC(handleBreathing);
+    [_unit] call FUNC(handleBreathing);
     _unit setVariable ["KAT_medical_airwayCollapsed", true, true];
     if (random 100 <= GVAR(hemopneumothoraxChance)) then {
-        systemChat "Oh boy, they're fucked. That's some hemopneumothorax.";
         [_unit, 0.7] call ace_medical_status_fnc_adjustPainLevel;
         _unit setVariable ["KAT_medical_hemopneumothorax", true, true];
     };

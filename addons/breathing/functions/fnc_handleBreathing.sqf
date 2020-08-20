@@ -15,8 +15,8 @@
  * Public: No
  */
 
-params [["_unit", objNull, [objNull]]];
-diag_log format ["Handling breathing for %1", _unit];
+params ["_unit"];
+
 if !(GVAR(enable)) exitWith {};
 
 if (!local _unit) then {
@@ -29,7 +29,7 @@ if (!local _unit) then {
     if !(alive _unit) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-    systemChat "Handling breathing PFH";
+
     private _collapsed = _unit getVariable ["KAT_medical_airwayCollapsed", false];
     private _hemothorax = _unit getVariable ["KAT_medical_hemopneumothorax", false];
     private _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
@@ -41,25 +41,21 @@ if (!local _unit) then {
         [_unit, GVAR(spo2_big_value), true] call FUNC(adjustSpo2);
     };
 
-    if (_status > 100) exitWith {
-        _unit setVariable ["KAT_medical_airwayStatus", 100, true];
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
-    };
-
     private _o2 = _unit getVariable [QGVAR(o2), false];
     private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
     private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
 
-    if (_collapsed) exitWith {
+    if (_collapsed) then {
         [_unit, GVAR(spo2_big_value), false] call FUNC(adjustSpo2);
     };
-    if (_hemothorax) exitWith {
-        systemChat "Patient has hemothorax, certainly hard to breathe.";
+    
+    if (_hemothorax) then {
+        diag_log "Patient has hemothorax, certainly hard to breathe.";
         [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
-    }
+    };
 
-    if (_unit getVariable ["ace_medical_heartRate", 0] > 0) exitWith {
-        if (_occluded || _obstruction) exitWith {
+    if (_unit getVariable ["ace_medical_heartRate", 0] > 0) then {
+        if (_occluded || _obstruction) then {
             [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
         };
         if (_o2) then {
@@ -97,5 +93,10 @@ if (!local _unit) then {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
             [_unit, "#setDead"] call ace_medical_fnc_setDead;
         };
+    };
+
+    if (_status > 100) exitWith {
+        _unit setVariable ["KAT_medical_airwayStatus", 100, true];
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
