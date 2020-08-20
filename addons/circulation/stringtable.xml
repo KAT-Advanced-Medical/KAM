@@ -667,5 +667,23 @@
             <Czech>Šance resuscitace pro základní</Czech>
 			<Korean>일반전투병 CPR 성공확률</Korean>
         </Key>
+        <Key ID="STR_kat_circulation_TIME_TOURNIQUET">
+            <English>Time to use a Tourniquet</English>
+            <German></German>
+            <Polish></Polish>
+            <Spanish></Spanish>
+            <Chinese></Chinese>
+			<Czech></Czech>
+			<Korean></Korean>
+        </Key>
+        <Key ID="STR_kat_circulation_TIME_TOURNIQUET_DESC">
+            <English>The length of time required to apply a tourniquet.</English>
+            <German></German>
+            <Polish></Polish>
+            <Spanish></Spanish>
+            <Chinese></Chinese>
+			<Czech></Czech>
+			<Korean></Korean>
+        </Key>
     </Package>
 </Project>
