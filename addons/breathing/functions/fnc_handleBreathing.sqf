@@ -33,7 +33,6 @@ if (!local _unit) then {
     private _collapsed = _unit getVariable ["KAT_medical_airwayCollapsed", false];
     private _hemothorax = _unit getVariable ["KAT_medical_hemopneumothorax", false];
     private _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
-    diag_log format ["Hemothorax: %1", _hemothorax];
     if ([_unit] call ace_common_fnc_isAwake && !_collapsed && !_hemothorax) exitWith {
         if (_status >= 100) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
@@ -50,7 +49,6 @@ if (!local _unit) then {
     };
     
     if (_hemothorax) then {
-        diag_log "Patient has hemothorax, certainly hard to breathe.";
         [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
     };
 

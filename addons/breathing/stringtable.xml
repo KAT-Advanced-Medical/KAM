@@ -197,10 +197,37 @@
             <English>1x Pneumothorax</English>
             <German>1x Pneumothorax</German>
             <Polish>1x Odma Opłucnowa</Polish>
-            <Spanish>1x PNeumotórax</Spanish>
+            <Spanish>1x Pneumotórax</Spanish>
             <Chinese>1等氣胸</Chinese>
 			<Czech>1x Pneumotorax</Czech>
 			<Korean>1x 기흉</Korean>
+        </Key>
+        <Key ID="STR_kat_breathing_hemopneumothorax_display">
+            <English>Needle Decompression</English>
+            <German>Nadeldekompression</German>
+            <Spanish>Descompresión con aguja</Spanish>
+            <Polish>Dekompresja igły</Polish>
+            <Chinese>针减压</Chinese>
+			<Czech>Jehla dekomprese</Czech>
+			<Korean>바늘 감압</Korean>
+        </Key>
+        <Key ID="STR_kat_breathing_hemopneumothorax">
+            <English>%1 treated a Hemopneumothorax</English>
+            <German>%1 behandelte einen Hemopneumothorax</German>
+            <Spanish>%1 tratado un Hemopneumothorax</Spanish>
+            <Polish>%1 leczono hemopneumothorax</Polish>
+            <Chinese>%1 治疗了血气胸</Chinese>
+			<Czech>%1 léčil hemopneumotorax</Czech>
+			<Korean>%1 혈기 흉 치료</Korean>
+        </Key>
+        <Key ID="STR_kat_breathing_hemopneumothorax_mm">
+            <English>1x Hemothorax</English>
+            <German>1x Hemothorax</German>
+            <Polish>1x Hemothorax</Polish>
+            <Spanish>1x Hemothorax</Spanish>
+            <Chinese>1血气胸</Chinese>
+			<Czech>1x Hemothorax</Czech>
+			<Korean>1x 혈기 흉</Korean>
         </Key>
         <Key ID="STR_kat_breathing_treating">
             <English>Treating</English>
@@ -228,6 +255,24 @@
             <Chinese>臨時氣胸密封貼在大多數情況下用途於治癒、密封或者二度密封因為胸腔受傷破裂導致的氣胸</Chinese>
 			<Czech>Hrudní krytí je navrženo pro léčení, zakrytí a odkrytí otevřených ran na hrudníku ve většině situací.</Czech>
 			<Korean>기흉치료 패드는 기흉으로 인한 흉강의 파열을 치료 또는 밀봉하는데 사용됨</Korean>
+        </Key>
+        <Key ID="STR_kat_breathing_arsKit_display">
+            <English>ARS Needle Decompression Kit</English>
+            <German>ARS Needle Decompression Kit</German>
+            <Polish>ARS Needle Decompression Kit</Polish>
+            <Spanish>ARS Needle Decompression Kit</Spanish>
+            <Chinese>ARS Needle Decompression Kit</Chinese>
+			<Czech>ARS Needle Decompression Kit</Czech>
+			<Korean>ARS Needle Decompression Kit</Korean>
+        </Key>
+        <Key ID="STR_kat_breathing_arsKit_desc">
+            <English>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</English>
+            <German>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</German>
+            <Polish>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</Polish>
+            <Spanish>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</Spanish>
+            <Chinese>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</Chinese>
+			<Czech>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</Czech>
+			<Korean>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</Korean>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_PULSEOXIMETER">
             <English>Allow Pulseoximeter</English>
@@ -294,6 +339,24 @@
         </Key>
 		<Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>The percentage chance that a patient will suffer from a hemothorax at the same time they are suffering from pneumothorax. Treatment requires the draining of fluids with the use of an ARS Kit.</English>
+            <German></German>
+            <Polish></Polish>
+            <Spanish></Spanish>
+            <Chinese></Chinese>
+			<Czech></Czech>
+			<Korean></Korean>
+        </Key>
+		<Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
+            <English>Hemopneumothorax Treament Minimum Level</English>
+            <German></German>
+            <Polish></Polish>
+            <Spanish></Spanish>
+            <Chinese></Chinese>
+			<Czech></Czech>
+			<Korean></Korean>
+        </Key>
+		<Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
+            <English>The minimum medical level required for someone to be able to perform the Needle Decompression treatment action, used to treat Hemopneumothorax.</English>
             <German></German>
             <Polish></Polish>
             <Spanish></Spanish>

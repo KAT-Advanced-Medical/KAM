@@ -1,11 +1,13 @@
 PREP(adjustSpo2);
 PREP(fullHealLocal);
-PREP(hasStableVitals);
 PREP(handleBreathing);
 PREP(handlePulmoHit);
+PREP(hasStableVitals);
 PREP(init);
 PREP(treatmentAdvanced_chestSeal);
 PREP(treatmentAdvanced_chestSealLocal);
+PREP(treatmentAdvanced_hemopneumothorax);
+PREP(treatmentAdvanced_hemopneumothoraxLocal);
 PREP(treatmentAdvanced_pulseoximeter);
 PREP(treatmentAdvanced_pulseoximeterLocal);
 PREP(treatmentAdvanced_removePulseoximeter);

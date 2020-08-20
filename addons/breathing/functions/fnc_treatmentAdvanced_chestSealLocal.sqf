@@ -22,3 +22,7 @@ params ["_player", "_target"];
 _target setVariable ["KAT_medical_airwayCollapsed", false, true];
 
 [_target, "activity", LSTRING(pneumothorax), [[_player] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+
+if (random 100 <= GVAR(hemopneumothoraxChance)) then {
+	_unit setVariable ["KAT_medical_hemopneumothorax", true, true];
+};
