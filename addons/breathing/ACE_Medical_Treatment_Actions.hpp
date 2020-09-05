@@ -74,7 +74,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
-    class NeedleDecompression {
+    class HemopneumothoraxTreatment {
         displayName = CSTRING(hemopneumothorax_display);
         displayNameProgress = CSTRING(treating);
         category = "advanced";
@@ -83,7 +83,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
-        items[] = {"kat_arsKit"};
+        items[] = {"kat_aatKit"};
         condition = "_patient getVariable ['KAT_medical_hemopneumothorax', false] && !(_patient getVariable ['KAT_medical_airwayCollapsed', false])";
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_hemopneumothorax));

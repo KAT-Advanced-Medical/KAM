@@ -9,6 +9,7 @@
             <Chinese>啟用ACE-心肺呼吸系統？</Chinese>
 			<Czech>ACE-Breathing aktivováno?</Czech>
 			<Korean>ACE 심폐호흡기 기능 활성화?</Korean>
+			<French>ACE-Respiration activé?</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_death_timer_enable">
             <English>Alternative death timer for airway injuries?</English>
@@ -18,6 +19,7 @@
             <Chinese>額外因呼吸道受傷的死亡倒數？</Chinese>
 			<Czech>Alternativní čas smrti pro zranění dýchacích cest?</Czech>
 			<Korean>호흡기 부상시(막힘) 사망 타이머 별도 적용?</Korean>
+			<French>Délai mortel alternatif blessures des voies respiratoires</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_Before">
             <English>Value to add or remove to the Sp02 before 100 sec</English>
@@ -27,6 +29,7 @@
             <Chinese>設定是否在一百秒之前增加或移除血氧飽和度監測器</Chinese>
 			<Czech>Hodnota, která se přidá nebo odebere Sp02 před 100 sekundami</Czech>
 			<Korean>100초후에 산소 포화도에 추가하거나 제거할 값</Korean>
+			<French>Valeur à ajouter ou retirer au Sp02 avant 100 sec</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_After">
             <English>Value to add or remove to the Sp02 after 100 sec</English>
@@ -36,6 +39,7 @@
             <Chinese>設定是否在一百秒之後增加或移除血氧飽和度監測器</Chinese>
 			<Czech>Hodnota, která se přidá nebo odebere Sp02 po 100 sekundami</Czech>
 			<Korean>100초후에 산소 포화도에 추가하거나 제거할 값</Korean>
+			<French>Valeur à ajouter ou retirer au Sp02 après 100 sec</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -45,6 +49,7 @@
             <Chinese>氣胸的機率</Chinese>
 			<Czech>Pravděpodobnost pneumotoraxu</Czech>
 			<Korean>기흉 가능성</Korean>
+			<French>Probabilité d'un pneumothorax</French>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -54,6 +59,7 @@
             <Chinese>掛載心率監測器</Chinese>
 			<Czech>Připojit Pulzní oxymetr</Czech>
 			<Korean>맥박산소측정기 부착</Korean>
+			<French>Placer le l'oxymètre de pouls</French>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display_Remove">
             <English>Remove Pulse Oximeter</English>
@@ -63,6 +69,7 @@
             <Chinese>移除心率監測器</Chinese>
 			<Czech>Odstranit Pulzní oxymetr</Czech>
 			<Korean>맥박산소측정기 제거</Korean>
+			<French>Retirer l'oxymètre de pouls</French>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Short">
             <English>Pulse Oximeter</English>
@@ -72,6 +79,7 @@
             <Chinese>心率監測器</Chinese>
 			<Czech>Pulzní oxymetr</Czech>
 			<Korean>맥박산소측정기</Korean>
+			<French>Oxymètre de pouls</French>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Use">
             <English>Pulse Oximeter</English>
@@ -81,6 +89,7 @@
             <Chinese>心率監測器</Chinese>
 			<Czech>Pulzní oxymetr</Czech>
 			<Korean>맥박산소측정기</Korean>
+			<French>Oxymètre de pouls</French>
         </Key>
         <Key ID="STR_kat_breathing_placing">
             <English>Placing</English>
@@ -90,6 +99,7 @@
             <Chinese>放置中</Chinese>
 			<Czech>Dávám</Czech>
 			<Korean>배치중</Korean>
+			<French>Mise en place</French>
         </Key>
         <Key ID="STR_kat_breathing_remove">
             <English>Removing</English>
@@ -99,6 +109,7 @@
             <Chinese>移除中</Chinese>
 			<Czech>Odstraňuji</Czech>
 			<Korean>제거중</Korean>
+			<French>Retirer</French>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_NA">
             <English>Pulse Oximeter already connected</English>
@@ -108,6 +119,7 @@
             <Chinese>心率監測器已經連接了</Chinese>
 			<Czech>Pulzní oxymetr je již připojen</Czech>
 			<Korean>맥박산소측정기가 이미 연결되 있음</Korean>
+			<French>Oxymètre de pouls déjà installé</French>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log">
             <English>Pulse Oximeter: HR: %1 Sp02: %2</English>
@@ -117,6 +129,7 @@
             <Chinese>心率監測器: 心率: %1 血氧量: %2</Chinese>
 			<Czech>Pulzní oxymetr: HR: %1 Sp02: %2</Czech>
 			<Korean>맥박 산소포화도: HR: %1 Sp02: %2</Korean>
+			<French>Oxymètre de pouls: HR: 1% SpO2: 2%</French>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -126,6 +139,7 @@
             <Chinese>%1 連接著心率監測器</Chinese>
 			<Czech>%1 připojený Pulzní oxymetr</Czech>
 			<Korean>%1 맥박산소측정기 연결</Korean>
+			<French>Oxymètre de pouls connecté %1</French>
         </Key>
         <Key ID="STR_kat_breathing_hint_name">
             <English>Breathing</English>
@@ -135,6 +149,7 @@
             <Chinese>呼吸</Chinese>
 			<Czech>Dýchání</Czech>
 			<Korean>호흡</Korean>
+			<French>Respiration</French>
         </Key>
         <Key ID="STR_kat_breathing_hint_desc">
             <English>Breathing
@@ -164,7 +179,11 @@
 			<Korean>Breathing
                 %1충분히 호흡이 되는가?
                 %1Sp02 넘는다 70% -&gt; 네
-                %1Sp02 아래 70% -&gt; 아니요 -&gt; ass. 호흡</korean>	
+                %1Sp02 아래 70% -&gt; 아니요 -&gt; ass. 호흡</korean>
+				<French>Respiration
+				%1 Suffisamment ventilé?
+				%1SpO2 au delà 70% -&gt; Yes
+				%1SpO2 sous 70% -&gt; No -&gt; ass. Respiration</French>
         </Key>
         <Key ID="STR_kat_breathing_hint_tip">
             <English>If you saved the airway with a larynxtube skip this</English>
@@ -174,6 +193,7 @@
             <Chinese>如果妳已經使用喉管暢通的話那就跳過這個。</Chinese>
 			<Czech>Pokud si zajistil/zachránil dýchací cesty pomocí larynxtube, vynechej to</Czech>
 			<Korean>만일 당신이 후두관을 통해 기도를 확보하였다면 넘기십시오</Korean>
+			<French>Si vous avez sauvegardé les voies respiratoires avec un Tube Laryngo passez l'action</French>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax">
             <English>%1 treated a pneumothorax</English>
@@ -183,6 +203,7 @@
             <Chinese>%1 已經治癒氣胸</Chinese>
 			<Czech>%1 vyléčen pneumotorax</Czech>
 			<Korean>%1 기흉치료</Korean>
+			<French>%1 du pneumothorax traité</French>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_display">
             <English>Chest Seal</English>
@@ -192,42 +213,17 @@
             <Chinese>臨時氣胸密封貼</Chinese>
 			<Czech>Hrudní krytí</Czech>
 			<Korean>기흉치료 패드</Korean>
+			<French>Chest Seal</French>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_mm">
             <English>1x Pneumothorax</English>
             <German>1x Pneumothorax</German>
             <Polish>1x Odma Opłucnowa</Polish>
-            <Spanish>1x Pneumotórax</Spanish>
+            <Spanish>1x PNeumotórax</Spanish>
             <Chinese>1等氣胸</Chinese>
 			<Czech>1x Pneumotorax</Czech>
 			<Korean>1x 기흉</Korean>
-        </Key>
-        <Key ID="STR_kat_breathing_hemopneumothorax_display">
-            <English>Needle Decompression</English>
-            <German>Nadeldekompression</German>
-            <Spanish>Descompresión con aguja</Spanish>
-            <Polish>Dekompresja igły</Polish>
-            <Chinese>针减压</Chinese>
-			<Czech>Jehla dekomprese</Czech>
-			<Korean>바늘 감압</Korean>
-        </Key>
-        <Key ID="STR_kat_breathing_hemopneumothorax">
-            <English>%1 treated a Hemopneumothorax</English>
-            <German>%1 behandelte einen Hemopneumothorax</German>
-            <Spanish>%1 tratado un Hemopneumothorax</Spanish>
-            <Polish>%1 leczono hemopneumothorax</Polish>
-            <Chinese>%1 治疗了血气胸</Chinese>
-			<Czech>%1 léčil hemopneumotorax</Czech>
-			<Korean>%1 혈기 흉 치료</Korean>
-        </Key>
-        <Key ID="STR_kat_breathing_hemopneumothorax_mm">
-            <English>1x Hemothorax</English>
-            <German>1x Hemothorax</German>
-            <Polish>1x Hemothorax</Polish>
-            <Spanish>1x Hemothorax</Spanish>
-            <Chinese>1血气胸</Chinese>
-			<Czech>1x Hemothorax</Czech>
-			<Korean>1x 혈기 흉</Korean>
+			<French>1x Pneumothorax</French>
         </Key>
         <Key ID="STR_kat_breathing_treating">
             <English>Treating</English>
@@ -237,6 +233,7 @@
             <Chinese>治療中</Chinese>
 			<Czech>Léčení</Czech>
 			<Korean>치료중</Korean>
+			<French>Traitement</French>
         </Key>
         <Key ID="STR_kat_breathing_chestseal_display">
             <English>Chest Seal</English>
@@ -246,6 +243,7 @@
             <Chinese>臨時氣胸密封貼</Chinese>
 			<Czech>Hrudní krytí</Czech>
 			<Korean>기흉치료 패드</Korean>
+			<French>Chest Seal</French>
         </Key>
         <Key ID="STR_kat_breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
@@ -255,24 +253,7 @@
             <Chinese>臨時氣胸密封貼在大多數情況下用途於治癒、密封或者二度密封因為胸腔受傷破裂導致的氣胸</Chinese>
 			<Czech>Hrudní krytí je navrženo pro léčení, zakrytí a odkrytí otevřených ran na hrudníku ve většině situací.</Czech>
 			<Korean>기흉치료 패드는 기흉으로 인한 흉강의 파열을 치료 또는 밀봉하는데 사용됨</Korean>
-        </Key>
-        <Key ID="STR_kat_breathing_arsKit_display">
-            <English>ARS Needle Decompression Kit</English>
-            <German>ARS Needle Decompression Kit</German>
-            <Polish>ARS Needle Decompression Kit</Polish>
-            <Spanish>ARS Needle Decompression Kit</Spanish>
-            <Chinese>ARS Needle Decompression Kit</Chinese>
-			<Czech>ARS Needle Decompression Kit</Czech>
-			<Korean>ARS Needle Decompression Kit</Korean>
-        </Key>
-        <Key ID="STR_kat_breathing_arsKit_desc">
-            <English>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</English>
-            <German>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</German>
-            <Polish>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</Polish>
-            <Spanish>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</Spanish>
-            <Chinese>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</Chinese>
-			<Czech>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</Czech>
-			<Korean>The ARS Needle Decompression Kit is designed to treat hemopneumothorax</Korean>
+			<French>Le "Chest Seal" est concue pour traiter et refermer une blessure thoracique dans la majorité des cas</French>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_PULSEOXIMETER">
             <English>Allow Pulseoximeter</English>
@@ -282,6 +263,7 @@
             <Chinese>允許脈搏血氧儀</Chinese>
 			<Czech>Povolit Pulzní oxymetr</Czech>
 			<Korean>맥박산소측정기 허가</Korean>
+			<French>Autorise l'Oxymètre de pouls</French>
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_PULSEOXIMETER">
             <English>Training level required to use a Pulseoximeter</English>
@@ -291,6 +273,7 @@
             <Chinese>使用脈搏血氧儀所需的培訓水平</Chinese>
 			<Czech>Úroveň výcviku nutná k použití pulzního oxymetru</Czech>
 			<Korean>맥박산소측정기 사용에 필요한 의료레벨 수준</Korean>
+			<French>Niveau d'entrainent requis pour utiliser un Oxymètre de pouls</French>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_CHESTSEAL">
             <English>Allow Chestseal</English>
@@ -300,6 +283,7 @@
             <Chinese>允許胸部</Chinese>
 			<Czech>Povolit hrudní krytí</Czech>
 			<Korean>기흉치료 패드 허가</Korean>
+			<French>Autorise le "Chest Seal"</French>
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_CHESTSEAL">
             <English>Training level required to use a Chestseal</English>
@@ -309,6 +293,7 @@
             <Chinese>使用胸膜所需的訓練水平</Chinese>
 			<Czech>Úroveň výcviku nutná k použití hrudního krytí</Czech>
 			<Korean>기흉치료 패드 사용에 필요한 의료레벨 수준</Korean>
+			<French>Niveau d'entrainent requis pour utiliser un Chest Seal</French>
         </Key>
 		<Key ID="STR_kat_breathing_SETTING_STABLE_SPO2">
             <English>Stable Spo2 value to gain consciousness</English>
@@ -318,6 +303,7 @@
             <Chinese>穩定的Spo2值以提高意識</Chinese>
 			<Czech>Stabilní hodnota Spo2 pro získání vědomí</Czech>
 			<Korean>의식을 얻기위한 안정적인 Spo2 값</Korean>
+			<French>Stabiliser la valeur de SpO2 pour reprendre conscience</French>
         </Key>
 		<Key ID="STR_kat_breathing_DESCRIPTION_STABLE_SPO2">
             <English>After reaching more than selected value (default 85), only then patient can get conscious</English>
@@ -327,42 +313,97 @@
             <Chinese>達到選定值以上（默認值85）後，患者才能清醒</Chinese>
 			<Czech>Po dosažení více než vybrané hodnoty (výchozí hodnota 85) může pacient získat vědomí</Czech>
 			<Korean>선택한 값 이상 (기본값 85)에 도달하면 환자 만 의식을 가질 수 있습니다</Korean>
+			<French>Après avoir dépassé la valeure requise (default85), le patient pourra reprendre connaissance</French>
+        </Key>
+		        <Key ID="STR_kat_breathing_hemopneumothorax_display">
+            <English>Needle Decompression</English>
+            <German>Entlastungspunktion Nadel</German>
+            <Spanish>Descompresión con aguja</Spanish>
+            <Polish>Dekompresja igły</Polish>
+            <Chinese>针减压</Chinese>
+			<Czech>Dekompresní jehla</Czech>
+			<Korean>바늘 감압</Korean>
+            <French>Aiguille de décompression<French>
+        </Key>
+        <Key ID="STR_kat_breathing_hemopneumothorax">
+            <English>%1 treated a Hemopneumothorax</English>
+            <German>%1 hat einen Hämatopneumothorax behandelt</German>
+            <Spanish>%1 tratado un Hemopneumothorax</Spanish>
+            <Polish>%1 leczono hemopneumothorax</Polish>
+            <Chinese>%1 治疗了血气胸</Chinese>
+			<Czech>%1 léčil hemopneumotorax</Czech>
+			<Korean>%1 혈기 흉 치료</Korean>
+            <French>%1 Hemo-pneumothorax traité<French>
+        </Key>
+        <Key ID="STR_kat_breathing_hemopneumothorax_mm">
+            <English>1x Hemothorax</English>
+            <German>1x Hämatothorax</German>
+            <Polish>1x Hemothorax</Polish>
+            <Spanish>1x Hemothorax</Spanish>
+            <Chinese>1血气胸</Chinese>
+			<Czech>1x Hemotorax</Czech>
+			<Korean>1x 혈기 흉</Korean>
+            <French>1x Hemothorax<French>
+        </Key>
+        <Key ID="STR_kat_breathing_aatKit_display">
+            <English>Advanced Airway Treatment (AAT) Kit</English>
+            <German>ARS Entlastungspunktion Nadel Kit</German>
+            <Polish>AAT Kit</Polish>
+            <Spanish>AAT Kit</Spanish>
+            <Chinese>AAT Kit</Chinese>
+			<Czech>AAT Kit</Czech>
+			<Korean>AAT Kit</Korean>
+            <French> Kit d'aiguille de décompression ARS<French>
+        </Key>
+        <Key ID="STR_kat_breathing_aatKit_desc">
+            <English>The AAT Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
+            <German>Das ARS Entlastungspunktion Nadel Kit ist zum behandeln von einem Hämatopneumothorax</German>
+            <Polish>The AAT Kit is designed to treat hemopneumothorax</Polish>
+            <Spanish>The AAT Kit is designed to treat hemopneumothorax</Spanish>
+            <Chinese>The AAT Kit is designed to treat hemopneumothorax</Chinese>
+			<Czech>The AAT Kit is designed to treat hemopneumothorax</Czech>
+			<Korean>The AAT Kit is designed to treat hemopneumothorax</Korean>
+            <French>Le kit d'aiguille de décompression ARS est utilisé pour traiter des Hemo-pneumothorax<French>
         </Key>
 		<Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemopneomothorax Chance</English>
-            <German></German>
-            <Polish></Polish>
-            <Spanish></Spanish>
-            <Chinese></Chinese>
-			<Czech></Czech>
-			<Korean></Korean>
+            <German>Hämatopneumothorax Chance</German>
+            <Polish>Szansa na hemopneomothorax</Polish>
+            <Spanish>Posibilidad de hemoneomotórax</Spanish>
+            <Chinese>血胸胸機會</Chinese>
+			<Czech>Šance na hemopneumotorax</Czech>
+			<Korean>Hemopneomothorax 기회</Korean>
+            <French>Chance d'avoir un Hemo-pneumothorax<French>
         </Key>
 		<Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>The percentage chance that a patient will suffer from a hemothorax at the same time they are suffering from pneumothorax. Treatment requires the draining of fluids with the use of an ARS Kit.</English>
-            <German></German>
-            <Polish></Polish>
-            <Spanish></Spanish>
-            <Chinese></Chinese>
-			<Czech></Czech>
-			<Korean></Korean>
+            <German>Die prozentuale Chance das ein Patient einen Hämatothorax zur selben Zeit wie ein Pneumothorax bekommt. Die Behandlung benötigt das Geben von Flüssigkeit und das ARS Kit.</German>
+            <Polish>Procentowa szansa, że pacjent będzie cierpieć na hemothorax w tym samym czasie, gdy cierpi na odmę opłucnową. Zabieg wymaga opróżnienia płynów za pomocą zestawu ARS.</Polish>
+            <Spanish>El porcentaje de probabilidad de que un paciente sufra un hemotórax al mismo tiempo que padece un neumotórax. El tratamiento requiere el drenaje de líquidos con el uso de un kit ARS.</Spanish>
+            <Chinese>患者患氣胸的同時患上血胸的機會百分比。 處理需要使用ARS套件排出流體。</Chinese>
+			<Czech>Procentní šance, že pacient bude trpět hemotoraxem současně s pneumotoraxem. Léčba vyžaduje vypouštění tekutin pomocí sady ARS.</Czech>
+			<Korean>환자가 기흉을 앓는 동시에 혈흉을 앓을 확률입니다. 치료에는 ARS 키트를 사용하여 체액을 배출해야합니다.</Korean>
+            <French>Le pourcentage de chance qu'un patient souffriera d'un hemothorax en même temps qu'un pneumothorax. Le traitement necessitera d'évacuer les fluides en utilisant un kit ARS<French>
         </Key>
 		<Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemopneumothorax Treament Minimum Level</English>
-            <German></German>
-            <Polish></Polish>
-            <Spanish></Spanish>
-            <Chinese></Chinese>
-			<Czech></Czech>
-			<Korean></Korean>
+            <German>Hämatopneumothorax minimales Medic Level</German>
+            <Polish>Minimalny poziom leczenia hemopneumothorax</Polish>
+            <Spanish>Nivel mínimo del tratamiento del hemoneumotórax</Spanish>
+            <Chinese>血氣胸治療最低水平</Chinese>
+			<Czech>Minimální úroveň zdravotního výcviku</Czech>
+			<Korean>Hemopneumothorax 치료 최소 수준</Korean>
+            <French>Niveau minimum de soins d'un Hemo-pneumothorax <French>
         </Key>
 		<Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to perform the Needle Decompression treatment action, used to treat Hemopneumothorax.</English>
-            <German></German>
-            <Polish></Polish>
-            <Spanish></Spanish>
-            <Chinese></Chinese>
-			<Czech></Czech>
-			<Korean></Korean>
+            <German>Das minimale Medic Level das benötigt wird um das ARS Kit nutzen zu können. Dieses wird für die Behandlung eines Hämatopneumothorax benutzt.</German>
+            <Polish>Minimalny poziom medyczny wymagany, aby ktoś był w stanie wykonać akcję leczenia dekompresją igłą, stosowaną w leczeniu odmy opłucnowej.</Polish>
+            <Spanish>El nivel médico mínimo requerido para que alguien pueda realizar la acción del tratamiento de descompresión con aguja, que se utiliza para tratar el hemoneumotórax.</Spanish>
+            <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
+			<Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která se používá k léčbě hemopneumotoraxu.</Czech>
+			<Korean>Hemopneumothorax 치료에 사용되는 바늘 감압 치료 조치를 수행 할 수있는 사람에게 필요한 최소 의료 수준입니다.</Korean>
+            <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression ARS.<French>
         </Key>
     </Package>
 </Project>

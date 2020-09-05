@@ -25,12 +25,12 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class kat_arsKit: ACE_ItemCore {
+    class kat_aatKit: ACE_ItemCore {
         scope = 2;
         author = "Kygan";
-        displayName= CSTRING(arsKit_display);
-        descriptionShort = CSTRING(arsKit_desc);
-        descriptionUse = CSTRING(arsKit_desc);
+        displayName= CSTRING(aatKit_display);
+        descriptionShort = CSTRING(aatKit_desc);
+        descriptionUse = CSTRING(aatKit_desc);
         picture = QPATHTOF(ui\auto_injector.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
