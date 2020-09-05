@@ -669,21 +669,21 @@
         </Key>
         <Key ID="STR_kat_circulation_TIME_TOURNIQUET">
             <English>Time to use a Tourniquet</English>
-            <German></German>
-            <Polish></Polish>
-            <Spanish></Spanish>
-            <Chinese></Chinese>
-			<Czech></Czech>
-			<Korean></Korean>
+            <German>Time to use a Tourniquet</German>
+            <Polish>Time to use a Tourniquet</Polish>
+            <Spanish>Time to use a Tourniquet</Spanish>
+            <Chinese>Time to use a Tourniquet</Chinese>
+			<Czech>Time to use a Tourniquet</Czech>
+			<Korean>Time to use a Tourniquet</Korean>
         </Key>
         <Key ID="STR_kat_circulation_TIME_TOURNIQUET_DESC">
             <English>The length of time required to apply a tourniquet.</English>
-            <German></German>
-            <Polish></Polish>
-            <Spanish></Spanish>
-            <Chinese></Chinese>
-			<Czech></Czech>
-			<Korean></Korean>
+            <German>The length of time required to apply a tourniquet.</German>
+            <Polish>The length of time required to apply a tourniquet.</Polish>
+            <Spanish>The length of time required to apply a tourniquet.</Spanish>
+            <Chinese>The length of time required to apply a tourniquet.</Chinese>
+			<Czech>The length of time required to apply a tourniquet.</Czech>
+			<Korean>The length of time required to apply a tourniquet.</Korean>
         </Key>
     </Package>
 </Project>
