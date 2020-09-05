@@ -18,7 +18,7 @@
  */
 
 params ["_player", "_target"];
-systemChat "Treating Hemopneumothorax";
+// systemChat "Treating Hemopneumothorax";
 if (local _target) then {
     ["treatmentHemopneumothorax", [_player, _target]] call CBA_fnc_localEvent;
 } else {
