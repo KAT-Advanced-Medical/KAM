@@ -1,8 +1,13 @@
 class ACE_Medical_Treatment_Actions {
+    class BasicBandage;
     class FieldDressing;
     class Morphine;
     class CheckPulse;
     class CPR;
+
+    class ApplyTourniquet: BasicBandage {
+        treatmentTime = QGVAR(Tourniquet_time);
+    };
 
     class Painkillers: Morphine {
         displayName = CSTRING(Inject_Box_Painkillers);
