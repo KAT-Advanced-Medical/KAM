@@ -346,24 +346,24 @@
             <French>1x Hemothorax</French>
         </Key>
         <Key ID="STR_kat_breathing_aatKit_display">
-            <English>Advanced Airway Treatment (AAT) Kit</English>
-            <German>ARS Entlastungspunktion Nadel Kit</German>
+            <English>AAT Kit</English>
+            <German>AAT Kit</German>
             <Polish>AAT Kit</Polish>
             <Spanish>AAT Kit</Spanish>
             <Chinese>AAT Kit</Chinese>
             <Czech>AAT Kit</Czech>
             <Korean>AAT Kit</Korean>
-            <French> Kit d'aiguille de décompression ARS</French>
+            <French>AAT kit</French>
         </Key>
         <Key ID="STR_kat_breathing_aatKit_desc">
-            <English>The AAT Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
-            <German>Das ARS Entlastungspunktion Nadel Kit ist zum behandeln von einem Hämatopneumothorax</German>
-            <Polish>The AAT Kit is designed to treat hemopneumothorax</Polish>
-            <Spanish>The AAT Kit is designed to treat hemopneumothorax</Spanish>
-            <Chinese>The AAT Kit is designed to treat hemopneumothorax</Chinese>
+            <English>The Advanced Airway Treatment Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
+            <German>Das Erweiterte Atemwegsbehandlung Kit ist ein Einweg-Kit zur Behandlung fortgeschrittener Atemwegserkrankungen wie Hämopneumothorax</German>
+            <Polish>Zaawansowany zestaw do leczenia dróg oddechowych to zestaw jednorazowego użytku przeznaczony do leczenia zaawansowanych chorób dróg oddechowych, takich jak hemopneumothorax</Polish>
+            <Spanish>El kit de tratamiento avanzado de las vías respiratorias es un kit de un solo uso diseñado para tratar afecciones avanzadas de las vías respiratorias, como el hemoneumotórax.</Spanish>
+            <Chinese>高級氣道治療套件是一次性使用的套件，用於治療氣道血氣胸等高級氣道疾病</Chinese>
             <Czech>The AAT Kit is designed to treat hemopneumothorax</Czech>
-            <Korean>The AAT Kit is designed to treat hemopneumothorax</Korean>
-            <French>Le kit d'aiguille de décompression ARS est utilisé pour traiter des Hemo-pneumothorax</French>
+            <Korean>Advanced Airway Treatment Kit는 hemopneumothorax와 같은 고급기도 상태를 치료하도록 설계된 일회용 키트입니다.</Korean>
+            <French>Le kit Kit de Traitement médical d’urgence des voies aériennes est un kit à usage unique, désigné pour traiter les blessures urgentes des voies aériennes comme des hémo-pneumothorax.</French>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemopneomothorax Chance</English>
@@ -376,14 +376,14 @@
             <French>Chance d'avoir un Hemo-pneumothorax</French>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
-            <English>The percentage chance that a patient will suffer from a hemothorax at the same time they are suffering from pneumothorax. Treatment requires the draining of fluids with the use of an ARS Kit.</English>
-            <German>Die prozentuale Chance das ein Patient einen Hämatothorax zur selben Zeit wie ein Pneumothorax bekommt. Die Behandlung benötigt das Geben von Flüssigkeit und das ARS Kit.</German>
-            <Polish>Procentowa szansa, że pacjent będzie cierpieć na hemothorax w tym samym czasie, gdy cierpi na odmę opłucnową. Zabieg wymaga opróżnienia płynów za pomocą zestawu ARS.</Polish>
-            <Spanish>El porcentaje de probabilidad de que un paciente sufra un hemotórax al mismo tiempo que padece un neumotórax. El tratamiento requiere el drenaje de líquidos con el uso de un kit ARS.</Spanish>
-            <Chinese>患者患氣胸的同時患上血胸的機會百分比。 處理需要使用ARS套件排出流體。</Chinese>
-            <Czech>Procentní šance, že pacient bude trpět hemotoraxem současně s pneumotoraxem. Léčba vyžaduje vypouštění tekutin pomocí sady ARS.</Czech>
-            <Korean>환자가 기흉을 앓는 동시에 혈흉을 앓을 확률입니다. 치료에는 ARS 키트를 사용하여 체액을 배출해야합니다.</Korean>
-            <French>Le pourcentage de chance qu'un patient souffriera d'un hemothorax en même temps qu'un pneumothorax. Le traitement necessitera d'évacuer les fluides en utilisant un kit ARS</French>
+            <English>The percentage chance that a patient will suffer from a hemothorax at the same time they are suffering from pneumothorax. Treatment requires the draining of fluids with the use of an AAT Kit.</English>
+            <German>Die prozentuale Chance das ein Patient einen Hämatothorax zur selben Zeit wie ein Pneumothorax bekommt. Die Behandlung benötigt das Geben von Flüssigkeit und das AAT Kit.</German>
+            <Polish>Procentowa szansa, że pacjent będzie cierpieć na hemothorax w tym samym czasie, gdy cierpi na odmę opłucnową. Zabieg wymaga opróżnienia płynów za pomocą zestawu AAT.</Polish>
+            <Spanish>El porcentaje de probabilidad de que un paciente sufra un hemotórax al mismo tiempo que padece un neumotórax. El tratamiento requiere el drenaje de líquidos con el uso de un kit AAT.</Spanish>
+            <Chinese>患者患氣胸的同時患上血胸的機會百分比。 處理需要使用AAT套件排出流體。</Chinese>
+            <Czech>Procentní šance, že pacient bude trpět hemotoraxem současně s pneumotoraxem. Léčba vyžaduje vypouštění tekutin pomocí sady AAT.</Czech>
+            <Korean>환자가 기흉을 앓는 동시에 혈흉을 앓을 확률입니다. 치료에는 AAT 키트를 사용하여 체액을 배출해야합니다.</Korean>
+            <French>Le pourcentage de chance qu'un patient souffriera d'un hemothorax en même temps qu'un pneumothorax. Le traitement necessitera d'évacuer les fluides en utilisant un kit AAT</French>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemopneumothorax Treament Minimum Level</English>
@@ -397,13 +397,13 @@
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to perform the Needle Decompression treatment action, used to treat Hemopneumothorax.</English>
-            <German>Das minimale Medic Level das benötigt wird um das ARS Kit nutzen zu können. Dieses wird für die Behandlung eines Hämatopneumothorax benutzt.</German>
+            <German>Das minimale Medic Level das benötigt wird um das AAT Kit nutzen zu können. Dieses wird für die Behandlung eines Hämatopneumothorax benutzt.</German>
             <Polish>Minimalny poziom medyczny wymagany, aby ktoś był w stanie wykonać akcję leczenia dekompresją igłą, stosowaną w leczeniu odmy opłucnowej.</Polish>
             <Spanish>El nivel médico mínimo requerido para que alguien pueda realizar la acción del tratamiento de descompresión con aguja, que se utiliza para tratar el hemoneumotórax.</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
-            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která se používá k léčbě hemopneumotoraxu.</Czech>
+            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT kitu a používá se k léčbě hemopneumotoraxu.</Czech>
             <Korean>Hemopneumothorax 치료에 사용되는 바늘 감압 치료 조치를 수행 할 수있는 사람에게 필요한 최소 의료 수준입니다.</Korean>
-            <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression ARS.</French>
+            <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression AAT.</French>
         </Key>
     </Package>
 </Project>
