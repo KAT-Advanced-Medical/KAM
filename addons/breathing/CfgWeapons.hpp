@@ -31,7 +31,7 @@ class CfgWeapons {
         displayName= CSTRING(aatKit_display);
         descriptionShort = CSTRING(aatKit_desc);
         descriptionUse = CSTRING(aatKit_desc);
-        picture = QPATHTOF(ui\auto_injector.paa);
+        picture = QPATHTOF(ui\surgical_airway_kit.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };
