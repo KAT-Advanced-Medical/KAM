@@ -316,7 +316,7 @@
             <French>Après avoir dépassé la valeure requise (default85), le patient pourra reprendre connaissance</French>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax_display">
-            <English>Needle Decompression</English>
+            <English>Drain Fluid</English>
             <German>Entlastungspunktion Nadel</German>
             <Spanish>Descompresión con aguja</Spanish>
             <Polish>Dekompresja igły</Polish>
