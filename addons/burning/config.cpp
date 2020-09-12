@@ -25,6 +25,8 @@ class CfgPatches
     };
 };
 
+#include "CfgEventHandlers.hpp"
+
 class cfgWeapons {
 	class ACE_ItemCore;
 	class CBA_MiscItem_ItemInfo;
