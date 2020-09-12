@@ -35,7 +35,7 @@ class cfgWeapons {
 		scope = 2;
 		author = "$STR_kat_burning_Author";
 		model = "\z\ace\addons\medical_treatment\data\QuikClot.p3d";
-		picture = "\burning\ui\sterile_gauze.paa";
+		picture = QPATHTOF(ui\sterile_gauze.paa);
         displayName = "$STR_kat_burning_DisplayName";
         descriptionShort = "$STR_kat_burning_DescShort";
         descriptionUse = "$STR_kat_burning_DescUse";
