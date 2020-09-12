@@ -435,5 +435,25 @@
             <Korean>Hemopneumothorax 치료에 사용되는 바늘 감압 치료 조치를 수행 할 수있는 사람에게 필요한 최소 의료 수준입니다.</Korean>
             <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression AAT.</French>
         </Key>
+        <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
+            <English>Pneumothorax Damage Threshold</English>
+            <German>Das minimale Medic Level das benötigt wird um das AAT Kit nutzen zu können. Dieses wird für die Behandlung eines Hämatopneumothorax benutzt.</German>
+            <Polish>Minimalny poziom medyczny wymagany, aby ktoś był w stanie wykonać akcję leczenia dekompresją igłą, stosowaną w leczeniu odmy opłucnowej.</Polish>
+            <Spanish>El nivel médico mínimo requerido para que alguien pueda realizar la acción del tratamiento de descompresión con aguja, que se utiliza para tratar el hemoneumotórax.</Spanish>
+            <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
+            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT kitu a používá se k léčbě hemopneumotoraxu.</Czech>
+            <Korean>Hemopneumothorax 치료에 사용되는 바늘 감압 치료 조치를 수행 할 수있는 사람에게 필요한 최소 의료 수준입니다.</Korean>
+            <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression AAT.</French>
+        </Key>
+        <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION">
+            <English>The amount of damage in a single impact, on a scale of 0 to 1, that needs to occur before there is a chance of pneumothorax. Lower values means that pneumothorax is more likely to occurr. Setting the value very low, or to zero, may cause unexpected behavior or pneumothorax from unexpected injuries.</English>
+            <German>Das minimale Medic Level das benötigt wird um das AAT Kit nutzen zu können. Dieses wird für die Behandlung eines Hämatopneumothorax benutzt.</German>
+            <Polish>Minimalny poziom medyczny wymagany, aby ktoś był w stanie wykonać akcję leczenia dekompresją igłą, stosowaną w leczeniu odmy opłucnowej.</Polish>
+            <Spanish>El nivel médico mínimo requerido para que alguien pueda realizar la acción del tratamiento de descompresión con aguja, que se utiliza para tratar el hemoneumotórax.</Spanish>
+            <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
+            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT kitu a používá se k léčbě hemopneumotoraxu.</Czech>
+            <Korean>Hemopneumothorax 치료에 사용되는 바늘 감압 치료 조치를 수행 할 수있는 사람에게 필요한 최소 의료 수준입니다.</Korean>
+            <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression AAT.</French>
+        </Key>
     </Package>
 </Project>

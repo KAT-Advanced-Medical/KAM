@@ -109,4 +109,14 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
+//Damage Threshold for Pneumothorax
+[
+    QGVAR(pneumothoraxDamageThreshold),
+    "SLIDER",
+    [LLSTRING(PNEUMOTHORAX_DAMAGE_THRESHOLD), LLSTRING(PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION)],
+    CBA_SETTINGS_CAT,
+    [0, 1, 0.4, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
