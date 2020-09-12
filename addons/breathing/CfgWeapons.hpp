@@ -33,7 +33,7 @@ class CfgWeapons {
         descriptionUse = CSTRING(aatKit_desc);
         picture = QPATHTOF(ui\surgical_airway_kit.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
+            mass = 8;
         };
     };
 };
