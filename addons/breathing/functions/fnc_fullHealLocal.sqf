@@ -50,6 +50,8 @@ _patient setVariable ["KAT_medical_airwayStatus", 100, true];
 _patient setVariable ["KAT_medical_airwayOccluded", false, true];
 _patient setVariable ["KAT_medical_airwayCollapsed", false, true];
 _patient setVariable ["KAT_medical_hemopneumothorax", false, true];
+_patient setVariable ["KAT_medical_tensionpneumothorax", false, true];
+
 
 // Update wound bleeding
 [_patient] call ace_medical_status_fnc_updateWoundBloodLoss;

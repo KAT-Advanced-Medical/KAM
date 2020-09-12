@@ -168,6 +168,10 @@ if (_target getVariable ["KAT_medical_airwayCollapsed", false] && _selectionN is
 if (_target getVariable ["KAT_medical_hemopneumothorax", false] && _selectionN isEqualTo 1) then {
     _woundEntries pushback [localize ELSTRING(breathing,hemopneumothorax_mm), [1,1,1,1]];
 };
+
+if (_target getVariable ["KAT_medical_tensionpneumothorax", false] && _selectionN isEqualTo 1) then {
+    _woundEntries pushback [localize ELSTRING(breathing,tensionpneumothorax_mm), [1,1,1,1]];
+};
 // END of EDIT
 
 // Handle no wound entries

@@ -11,3 +11,5 @@ PREP(treatmentAdvanced_hemopneumothoraxLocal);
 PREP(treatmentAdvanced_pulseoximeter);
 PREP(treatmentAdvanced_pulseoximeterLocal);
 PREP(treatmentAdvanced_removePulseoximeter);
+PREP(treatmentAdvanced_tensionpneumothorax);
+PREP(treatmentAdvanced_tensionpneumothoraxLocal);
