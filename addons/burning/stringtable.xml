@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="burning">
+		<Key ID="STR_kat_burning_DisplayName">
+			<Original>Sterile Bandage</Original>
+			<English>Bandage (Sterile Gauze)</English>
+			<German>Sterile Bandage</German>
+		</Key>
+		<Key ID="STR_kat_burning_DescShort">
+			<Original>Sterile Bandage welche für Brandwunden geeignet ist.</Original>
+			<English>Sterlized Gauze for burns as well as various other wounds.</English>
+			<German>Sterile Bandage welche für Brandwunden geeignet ist.</German>
+		</Key>
+		<Key ID="STR_kat_burning_DescUse">
+			<Original>Bandagieren...</Original>
+			<English>Bandaging...</English>
+			<German>Bandagieren...</German>
+		</Key>
+		<Key ID="STR_kat_burning">
+			<Original>Sterile Bandage</Original>
+			<English>Sterile Gauze</English>
+			<German>Sterile Bandage</German>
+		</Key>
+		<Key ID="STR_kat_burning_Author">
+            <Original>Church | Rapp, Rewrite by Revu | changed by Tomcat</Original>
+            <English>Church | Rapp, Rewrite by Revu | changed by Tomcat</English>
+            <German>Church | Rapp, Rewrite von Revu | editiert von Tomcat</German>
+		</Key>
+        <Key ID="STR_ACE_Medical_Damage_Burn">
+            <Original>Brandwunde</Original>
+            <English>Burn</English>
+            <German>Brandwunde</German>
+		</Key>
+		<Key ID="STR_ACE_Medical_Damage_Burn_Minor">
+            <Original>Kleine Brandwunde</Original>
+            <English>Minor Burn</English>
+            <German>Kleine Brandwunde</German>
+		</Key>
+		<Key ID="STR_ACE_Medical_Damage_Burn_Medium">
+            <Original>Mittlere Brandwunde</Original>
+            <English>Moderate Burn</English>
+            <German>Mittlere Brandwunde</German>
+		</Key>
+		<Key ID="STR_ACE_Medical_Damage_Burn_Large">
+            <Original>Große Brandwunde</Original>
+            <English>Severe Burn</English>
+            <German>Große Brandwunde</German>
+		</Key>
+    </Package>
+</Project>
