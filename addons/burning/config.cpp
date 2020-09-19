@@ -80,7 +80,7 @@ class cfgVehicles {
 class ACE_Medical_Injuries {
 	class wounds {
 		class Burn {
-			causes[] = {"grenade", "explosive", "shell", "backblast", "ropeburn", "burn"};
+			causes[] = {"grenade", "explosive", "shell", "backblast", "ropeburn", "burn", "unknown"};
             bleeding = 0.05;
             pain = 0.65;
             minDamage = 0.15;
