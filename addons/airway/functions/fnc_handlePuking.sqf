@@ -19,12 +19,17 @@ params ["_unit"];
 
 if !(GVAR(enable)) exitWith {};
 
+if (_unit getVariable ["kat_pukeActive", false]) exitWith {};
+_unit setVariable ["kat_pukeActive", true]; //This only runs if it wasn't previously set to true, otherwise we exit on the previous line
+
+
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];
     private _alive = _unit getVariable ["ACE_isUnconscious", false];
     if (!_alive || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "larynx")) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
+		_unit setVariable ["kat_pukeActive", nil]; //Setting it to nil gets rid of this variable completely, so that we don't use up memory
     };
     if (random(100) <= GVAR(probability_occluded)) then {
         if !(_unit getVariable ["KAT_medical_airwayOccluded", false]) then {
