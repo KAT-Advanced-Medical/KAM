@@ -21,6 +21,7 @@ params ["_unit"];
 _unit setVariable ["KAT_medical_airwayStatus", 100, true];
 _unit setVariable ["KAT_medical_airwayOccluded", false, true];
 _unit setVariable ["KAT_medical_airwayCollapsed", false, true];
+_unit setVariable ["KAT_medical_hemopneumothorax", false, true];
 
 _unit setVariable [QGVAR(pulseoximeter), false, true];
 _unit setVariable [QGVAR(o2), false, true];
