@@ -141,4 +141,14 @@ private _type = round random(3);
 	true
 ] call CBA_Settings_fnc_init;
 
+// Settable treatment time for Tourniquet
+[
+    QGVAR(Tourniquet_time),
+    "SLIDER",
+    [LLSTRING(TIME_TOURNIQUET),LLSTRING(TIME_TOURNIQUET_DESC)],
+    CBA_SETTINGS_CAT,
+    [1, 10, 7, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
