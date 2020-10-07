@@ -5,7 +5,7 @@ class ACE_Medical_Treatment_Actions {
         category = "examine";
         treatmentLocations = 0;
         allowedSelections[] = {"LeftArm", "RightArm"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Pulseoximeter);
         treatmentTime = 2;
         items[] = {"kat_Pulseoximeter"};
@@ -30,7 +30,7 @@ class ACE_Medical_Treatment_Actions {
         category = "examine";
         treatmentLocations = 0;
         allowedSelections[] = {"LeftArm", "RightArm"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Pulseoximeter);
         treatmentTime = 2;
         items[] = {};

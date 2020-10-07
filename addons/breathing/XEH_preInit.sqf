@@ -65,7 +65,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(ALLOW_PULSEOXIMETER), LLSTRING(TRAININGLEVEL_PULSEOXIMETER)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 

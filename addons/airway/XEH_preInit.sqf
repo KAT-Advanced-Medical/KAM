@@ -45,7 +45,7 @@ In real life, this will happen sometimes, not quiet often.
     "SLIDER",
     LLSTRING(SETTING_obstruction),
     CBA_SETTINGS_CAT,
-    [0, 100, 10, 0],
+    [0, 100, 15, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -55,7 +55,7 @@ In real life, this will happen sometimes, not quiet often.
     "SLIDER",
     LLSTRING(SETTING_occluded),
     CBA_SETTINGS_CAT,
-    [0, 100, 15, 0],
+    [0, 100, 10, 0],
     true
 ] call CBA_Settings_fnc_init;
 
