@@ -17,10 +17,10 @@
  * Public: No
  */
 
-params ["_player", "_target", "_unit"];
+params ["_player", "_target"];
 
-if (_unit getVariable ["kat_PulseoxiDock_PFH", false]) exitWith {};
-_unit setVariable ["kat_PulseoxiDock_PFH", true];
+if (_target getVariable ["kat_PulseoxiDock_PFH", false]) exitWith {};
+_target setVariable ["kat_PulseoxiDock_PFH", true];
 
 _target setVariable [QGVAR(pulseoximeter), true, true];
 
@@ -29,7 +29,7 @@ _target setVariable [QGVAR(pulseoximeter), true, true];
     _args params ["_target"];
     if !(_target getVariable [QGVAR(pulseoximeter), false]) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
-		_unit setVariable ["kat_PulseoxiDock_PFH", nil];
+		_target setVariable ["kat_PulseoxiDock_PFH", nil];
     };
 
     [_target, "quick_view", "STR_kat_breathing_pulseoxi_Log"] call kat_circulation_fnc_removeLog;

@@ -16,10 +16,10 @@
  * Public: No
  */
 
-params ["_player", "_target", "_bodyPart", "_classname", "_unit"];
+params ["_player", "_target", "_bodyPart", "_classname"];
 
-if (_unit getVariable ["kat_AEDXPatient_PFH", false]) exitWith {};
-_unit setVariable ["kat_AEDXPatient_PFH", true];
+if (_target getVariable ["kat_AEDXPatient_PFH", false]) exitWith {};
+_target setVariable ["kat_AEDXPatient_PFH", true];
 
 // if there is already a connected x-series exitWith a hint
 if (_target getVariable [QGVAR(X), false]) exitWith {
@@ -57,7 +57,7 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     _args params ["_string", "_target"];
     if !(_target getVariable [QGVAR(X), false]) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
-		_unit setVariable ["kat_AEDXPatient_PFH", nil];
+		_target setVariable ["kat_AEDXPatient_PFH", nil];
     };
 	
 	//No Values for your Monitor atm
