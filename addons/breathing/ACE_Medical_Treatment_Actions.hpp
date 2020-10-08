@@ -59,7 +59,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Chestseal);
         treatmentTime = 7;
         items[] = {"kat_chestSeal"};
-        condition = "_patient getVariable ['KAT_medical_airwayCollapsed', false]";
+        condition = "_patient getVariable ['KAT_medical_pneumothorax', false]";
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_chestSeal));
         callbackFailure = "";
@@ -84,7 +84,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
-        condition = "_patient getVariable ['KAT_medical_hemopneumothorax', false] && !(_patient getVariable ['KAT_medical_airwayCollapsed', false])";
+        condition = "_patient getVariable ['KAT_medical_hemopneumothorax', false] && !(_patient getVariable ['KAT_medical_pneumothorax', false])";
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_hemopneumothorax));
         callbackFailure = "";
@@ -109,7 +109,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
-        condition = "_patient getVariable ['KAT_medical_tensionpneumothorax', false] && !(_patient getVariable ['KAT_medical_airwayCollapsed', false])";
+        condition = "_patient getVariable ['KAT_medical_tensionpneumothorax', false] && !(_patient getVariable ['KAT_medical_pneumothorax', false])";
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_tensionpneumothorax));
         callbackFailure = "";

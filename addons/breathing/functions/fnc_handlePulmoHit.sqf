@@ -28,7 +28,7 @@ if (random 100 <= GVAR(pneumothorax)) then {
     // add breathing sound
     [_unit, 0.5] call ace_medical_status_fnc_adjustPainLevel;
     [_unit] call FUNC(handleBreathing);
-    _unit setVariable ["KAT_medical_airwayCollapsed", true, true];
+    _unit setVariable ["KAT_medical_pneumothorax", true, true];
 
     private _hemo = _unit getVariable ["KAT_medical_hemopneumothorax", false];
     private _tension = _unit getVariable ["KAT_medical_tensionpneumothorax", false];
