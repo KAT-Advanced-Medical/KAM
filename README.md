@@ -1,46 +1,47 @@
 # KAT Medical
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Katalam/kat_aceAdvMedical/master/logo.jpg">
+    <img src="https://raw.githubusercontent.com/Tomcat-SG/KAM/master/logo.jpg">
 </p>
 
 <p align="center">
-    <a href="https://github.com/Katalam/kat_aceAdvMedical/releases/latest">
+    <a href="https://github.com/Tomcat-SG/KAM/releases/latest">
         <img src="https://img.shields.io/badge/Version-1.0.0.0-blue.svg?style=flat-square" alt="KAM Version">
     </a>
-    <a href="https://github.com/Katalam/kat_aceAdvMedical/issues">
-        <img src="https://img.shields.io/github/issues-raw/Katalam/kat_aceAdvMedical.svg?style=flat-square&label=Issues" alt="KAM Issues">
+    <a href="https://github.com/Tomcat-SG/KAM/issues">
+        <img src="https://img.shields.io/github/issues-raw/Tomcat-SG/KAM.svg?style=flat-square&label=Issues" alt="KAM Issues">
     </a>
-    <a href="https://github.com/Katalam/kat_aceAdvMedical/releases">
-        <img src="https://img.shields.io/github/downloads/Katalam/kat_aceAdvMedical/total.svg?style=flat-square&label=Downloads" alt="KAM Downloads">
+    <a href="https://github.com/Tomcat-SG/KAM/releases/latest">
+        <img src="https://img.shields.io/github/downloads/Tomcat-SG/KAM/total.svg?style=flat-square&label=Downloads" alt="KAM Downloads">
     </a>
 </p>
 
 <p align="center">
-    <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a>.<br/>
-    Visit me on <a href="https://discord.gg/HbA93HK">Discord</a></strong></sup>
+    <sup><strong>Download latest stable release on <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2020940806">steam</a>.<br/>
+    Visit us on <a href="https://discord.gg/HbA93HK">Discord</a></strong></sup>
 </p>
 
 
 **The ACE Advanced Medical System is nice, but we can do it better, even on a more realistic way and bring it on another level with these addons.**
 
-Created by Katalam
+Originaly created by Katalam, currently maintained by Tomcat, Kygan and YetheSamartaka.
 
 ## Big thanks to
 
+- [Katalam](https://github.com/Katalam)
 - [Kellerkompanie](http://kellerkompanie.com/)
 - [Tomcat-SG](https://github.com/Tomcat-SG)
 - [Kygan/Conrimaceogain](https://github.com/Conrimaceogain)
 - [YetheSamartaka](https://github.com/YetheSamartaka)
 - [regiregi22](https://github.com/regiregi22)
 
-## Disclaimer from the Editor Tomcat (and Kygan/Conrimaceogain)
+## Disclaimer from current Developers
 
-- This isn’t a bug free or official Version of the KAT System
+- This isn’t a bug free or official Version of the KAT System (Official one is here: https://steamcommunity.com/sharedfiles/filedetails/?id=2020940806 )
   - This Git is for Development use
   - Everybody can make Pull/Push request
-  - There will be a lot of bugs at the moment
-  - The rewrite will take its time
+  - As this addon depends on ACE, some of its updates may break KAT, so fix from our side can take some time
+  - New features are still in development
 
 ## Core features
 
@@ -49,31 +50,35 @@ Created by Katalam
     - [x] Head overstretching
     - [x] Intubation
     - [x] Aspiration
+    - [x] Items such as Guedel tube, KingLT and Acuvacc
 - Breathing
   - [x] Oxygen saturation
+  - [x] Pulse-oximeter
+  - [x] Pneumothorax, tension pneumothorax and hemothorax
 - Circulation
   - [x] Blood Groups
   - [x] Painkillers
-  - [x] Bigger AED with monitoring
-- Disability
-  - [x] Cut of clothes
-  - [x] Allergic reactions
+  - [x] Automated external defibrillators
+  - [x] Settable sucess CPR chances per medical level expertise
+- Burns
+  - [ ] Burn injuries
+  - [ ] Burn injuries treatment
 - Exposure
-  - [ ] Heat-preserving
+  - [ ] Heat-preserving?
 - Misc
   - [ ] Big Backpack?
   - [x] Workable IV stand
 
 ## Known Issues
 
-- [Issues](https://github.com/Katalam/kat_aceAdvMedical/issues)
+- [Issues](https://github.com/Tomcat-SG/KAM/issues)
 
 ## Required
 
-- [CBA_A3 3.15 or later](http://www.armaholic.com/page.php?id=18767)
-- [ACE3 3.13.2 or later](https://ace3mod.com/)
+- [CBA_A3 v3.15.0 or later](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
+- [ACE3 3.13.4 or later](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
 
-## Youtube
+## Youtube - Currently outdated
 
 - [Airway](https://youtu.be/V0csFQ1PLIw)
 - [Breathing](abc)
@@ -82,7 +87,7 @@ Created by Katalam
 - [Exposure](abc)
 - [Misc](abc)
 
-## Class Names
+## Class Names - WIP
 
 - [click here](https://github.com/Katalam/kat_aceAdvMedical/wiki/Class-Names)
 
