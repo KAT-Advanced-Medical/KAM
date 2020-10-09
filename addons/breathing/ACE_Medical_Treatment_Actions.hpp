@@ -14,7 +14,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_pulseoximeter));
         callbackFailure = "";
         callbackProgress = "";
-        itemConsumed = 1;
+        consumeItem = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
@@ -39,7 +39,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_removePulseoximeter));
         callbackFailure = "";
         callbackProgress = "";
-        itemConsumed = 0;
+        consumeItem = 0;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
@@ -64,7 +64,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_chestSeal));
         callbackFailure = "";
         callbackProgress = "";
-        itemConsumed = 1;
+        consumeItem = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
@@ -89,7 +89,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_hemopneumothorax));
         callbackFailure = "";
         callbackProgress = "";
-        itemConsumed = 1;
+        consumeItem = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
@@ -114,7 +114,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_tensionpneumothorax));
         callbackFailure = "";
         callbackProgress = "";
-        itemConsumed = 1;
+        consumeItem = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};

@@ -6,7 +6,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE([ARR_2(_medic, 1000)] call FUNC(conditionIV));
         items[] = {};
         callbackSuccess = QUOTE([ARR_5(_medic, _patient, _bodyPart, 'SalineIV', 'ACE_salineIV')] call FUNC(treatmentIV));
-        itemConsumed = 0;
+        consumeItem = 0;
     };
     class SalineIV_Stand_500: SalineIV_Stand {
         displayName = CSTRING(Display_IVStand_500);
