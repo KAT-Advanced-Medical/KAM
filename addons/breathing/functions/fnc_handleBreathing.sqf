@@ -44,6 +44,12 @@ if (!local _unit) then {
         };
         [_unit, GVAR(spo2_big_value), true] call FUNC(adjustSpo2);
     };
+	
+	if (_status > 100) exitWith {
+        _unit setVariable ["KAT_medical_airwayStatus", 100, true];
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+		_unit setVariable ["kat_O2Breathing_PFH", nil];
+    };
 
     private _o2 = _unit getVariable [QGVAR(o2), false];
     private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
@@ -57,8 +63,8 @@ if (!local _unit) then {
         [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
     };
 
-    if (_unit getVariable ["ace_medical_heartRate", 0] > 0) then {
-        if (_occluded || _obstruction) then {
+    if (_unit getVariable ["ace_medical_heartRate", 0] > 0) exitWith {
+        if (_occluded || _obstruction) exitWith {
             [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
         };
         if (_o2) then {
@@ -99,9 +105,4 @@ if (!local _unit) then {
         };
     };
 
-    if (_status > 100) exitWith {
-        _unit setVariable ["KAT_medical_airwayStatus", 100, true];
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
-		_unit setVariable ["kat_O2Breathing_PFH", nil];
-    };
 }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
