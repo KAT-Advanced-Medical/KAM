@@ -32,7 +32,7 @@ class CfgPatches {
             "cba_settings"
         };
         author = "Katalam";
-        authors[] = {"Katalam"};
+        authors[] = {"Katalam", "Kygan"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };

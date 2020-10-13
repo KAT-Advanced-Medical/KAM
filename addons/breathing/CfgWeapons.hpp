@@ -25,4 +25,15 @@ class CfgWeapons {
             mass = 1;
         };
     };
+    class kat_aatKit: ACE_ItemCore {
+        scope = 2;
+        author = "Kygan";
+        displayName= CSTRING(aatKit_display);
+        descriptionShort = CSTRING(aatKit_desc);
+        descriptionUse = CSTRING(aatKit_desc);
+        picture = QPATHTOF(ui\surgical_airway_kit.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 5;
+        };
+    };
 };

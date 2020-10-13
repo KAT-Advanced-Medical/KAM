@@ -14,7 +14,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Larynxtubus')] call FUNC(treatmentAdvanced_airway));
         callbackFailure = "";
         callbackProgress = "";
-        itemConsumed = 1;
+        consumeItem = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
@@ -38,7 +38,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(Accuvac_time);
         items[] = {"kat_accuvac"};
 		icon = QPATHTOF(ui\accuvac.paa);
-        itemConsumed = 0;
+        consumeItem = 0;
         medicRequired = QGVAR(medLvl_Accuvac);
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_accuvac));
         callbackProgress = QUOTE(_this call FUNC(accuvacSound));

@@ -20,6 +20,9 @@ params [["_unit", objNull, [objNull]], "_time"];
 
 if !(GVAR(enable)) exitWith {};
 
+if (_unit getVariable ["kat_DeathTimerC_PFH", false]) exitWith {};
+_unit setVariable ["kat_DeathTimerC_PFH", true];
+
 if (!local _unit) exitWith {
     ["deathTimerAirway", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
 };
@@ -37,6 +40,7 @@ if (EGVAR(breathing,death_timer_enable)) exitWith {};
     };
     if ([_unit] call ace_common_fnc_isAwake || _unit getVariable [QGVAR(airway), false]) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
+		_unit setVariable ["kat_DeathTimerC_PFH", nil];
         _unit setVariable [QGVAR(startTime), 0, false];
     };
     if (_unit getVariable [QGVAR(overstretch), false]) exitWith {
@@ -45,6 +49,7 @@ if (EGVAR(breathing,death_timer_enable)) exitWith {};
     if (CBA_missionTime - _startTime >= GVAR(deathTimer) &&
         (_unit getVariable [QGVAR(obstruction), false] || _unit getVariable ["KAT_medical_airwayOccluded", false])) then {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
+		_unit setVariable ["kat_DeathTimerC_PFH", nil];
         _unit setVariable [QGVAR(startTime), 0, false];
         [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
     };

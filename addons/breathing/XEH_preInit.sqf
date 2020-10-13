@@ -34,7 +34,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_Value_Before),
     CBA_SETTINGS_CAT,
-    [0, 100, 4, 0],
+    [0, 100, 30, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -44,7 +44,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_Value_After),
     CBA_SETTINGS_CAT,
-    [0, 100, 10, 0],
+    [0, 100, 66, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -65,7 +65,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(ALLOW_PULSEOXIMETER), LLSTRING(TRAININGLEVEL_PULSEOXIMETER)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -86,6 +86,36 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_STABLE_SPO2), LLSTRING(DESCRIPTION_STABLE_SPO2)],
     CBA_SETTINGS_CAT,
     [0, 95, 85, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// % Chance of Hemopneumothorax
+[
+    QGVAR(hemopneumothoraxChance),
+    "SLIDER",
+    [LLSTRING(HEMOPNEUMOTHORAX_CHANCE_OPTION), LLSTRING(DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION)],
+    CBA_SETTINGS_CAT,
+    [0, 95, 5, 0, false],
+    true
+] call CBA_Settings_fnc_init;
+
+//Settable list for using Pulseoximeter per medical class
+[
+    QGVAR(medLvl_hemopneumothoraxTreatment),
+    "LIST",
+    [LLSTRING(HEMOPNEUMOTHORAX_TREATMENT_LEVEL), LLSTRING(HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION)],
+    CBA_SETTINGS_CAT,
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    true
+] call CBA_settings_fnc_init;
+
+//Damage Threshold for Pneumothorax
+[
+    QGVAR(pneumothoraxDamageThreshold),
+    "SLIDER",
+    [LLSTRING(PNEUMOTHORAX_DAMAGE_THRESHOLD), LLSTRING(PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION)],
+    CBA_SETTINGS_CAT,
+    [0, 1, 0.4, 1],
     true
 ] call CBA_Settings_fnc_init;
 
