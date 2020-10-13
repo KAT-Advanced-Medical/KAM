@@ -19,7 +19,7 @@
 
 params ["_player", "_target"];
 
-_target setVariable ["KAT_medical_airwayCollapsed", false, true];
+_target setVariable ["KAT_medical_pneumothorax", false, true];
 
 [_target, "activity", LSTRING(pneumothorax), [[_player] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
 
