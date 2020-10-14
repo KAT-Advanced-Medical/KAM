@@ -68,13 +68,13 @@
             <Chinese>啟用人物嘔吐聲音？</Chinese>
 			<Czech>Aktivovat zvuk zvracení?</Czech>
 			<Korean>토하는 사운드 활성화?</Korean> 
-			<French>Activation du son de vomissement?</French>
+			<French>Activation du son des vomissements?</French>
         </Key>
         <Key ID="STR_kat_airway_SETTING_exit">
             <English>Community called keko had addon for AFK players. They were put unconscious so others could drag them away. That triggered chances for airway problems. This string prevents that from happening when they get unconscious by that AFK addon.</English>
             <German>Die Community namens Keko hatte ein Addon für AFK-Spieler. Sie wurden bewusstlos gemacht, damit andere sie wegziehen konnten. Das löste Chancen für Atemwegsprobleme aus. Diese Zeichenfolge verhindert, dass dies geschieht, wenn sie von diesem AFK-Addon bewusstlos werden.</German>
 			<Czech>Komunia zvaná keko měla addon pro AFK hráče. Ti byli dáni do bezvědomí, takže je ostatní mohli odtáhnout pryč. To ale vyvolalo problémy, které mohli ohrozit jejich dýchací cesty. Tento string zabrání dýchacím potížím, pokud je hráč tímto AFK addonemm dán do bezvědomí.</Czech>
-			<French>Le membre de la communauté appelé Keko avait un addon pour les joueurs AFK. Ils étaient passés inconscients et pouvaient être trainés. Ce qui augmentait les chances de problèmes respiratoires. Cette action empêche cela de se produire quand ils deviennent inconscients par cet addon AFK.</French>
+			<French>Le membre de la communauté appelé Keko avait un addon pour les joueurs AFK. Ils étaient passés inconscients et pouvaient être trainés. Ce qui déclenchait les chances de problèmes respiratoires. Cette option empêche cela de se produire quand ils deviennent inconscients par cet addon AFK.</French>
         </Key>
         <Key ID="STR_kat_airway_checkAirway">
             <English>Check Airways</English>
@@ -94,7 +94,7 @@
             <Chinese>%1 檢查呼吸道: %2 %3, %4 %5</Chinese>
 			<Czech>Zkontrolovány dýchací cesty: %2 %3, %4 %5 </Czech>
 			<Korean>%1 기도 확인됨: %2 %3, %4 %5</Korean>
-			<French>%1 voies aériennes vérifiées: %2 %3, %4 %5</French>
+			<French>%1 a vérifié les voies aériennes : %2 %3, %4 %5</French>
         </Key>
         <Key ID="STR_kat_airway_airway_log">
             <English>%1 inserted a %2</English>
@@ -104,7 +104,7 @@
             <Chinese>%1 被插入一個 %2</Chinese>
 			<Czech>%1 vloženo %2</Czech>
 			<Korean>%1 삽입됨 %2</Korean>
-			<French>%1 intubé %2</French>
+			<French>%1 a intubé avec un(e) %2</French>
         </Key>
         <Key ID="STR_kat_airway_Occluded">
             <English>Occluded</English>
@@ -114,7 +114,7 @@
             <Chinese>閉塞</Chinese>
 			<Czech>Uzavřeno</Czech>
 			<Korean>막힘</Korean>
-			<French>Occlusion</French>
+			<French>Occludées</French>
         </Key>
         <Key ID="STR_kat_airway_Collapsed">
             <English>Collapsed</English>
@@ -134,7 +134,7 @@
             <Chinese>阻塞</Chinese>
 			<Czech>Zablokováno</Czech>
 			<Korean>막힘(이물질)</Korean>
-			<French>Obstruction</French>
+			<French>Obstruées</French>
         </Key>
         <Key ID="STR_kat_airway_N">
             <English>Not</English>
@@ -204,7 +204,7 @@
             <Chinese>%1 放置一個: %2</Chinese>
 			<Czech>%1 vlož: %2</Czech>
 			<Korean>%1 넣는중: %2</Korean>
-			<French>%1 put a: %2</French>
+			<French>%1 a placé un(e) : %2</French>
         </Key>
         <Key ID="STR_kat_airway_Airway_NA">
             <English>Airways are clear</English>
@@ -264,7 +264,7 @@
             <Chinese>不要跑，你正在拯救性命！</Chinese>
 			<Czech>Nevzdaluj se od pacienta, zachraňuješ mu život!</Czech>
 			<Korean>도망치지 마세요 생명을 구하고 있어요!</Korean>
-			<French>Ne pars pas, tu es entrain de sauver une vie!</French>
+			<French>Ne partez pas, vous êtes en train de sauver une vie!</French>
 
         </Key>
         <Key ID="STR_kat_airway_turnaround_info">
@@ -275,7 +275,7 @@
             <Chinese>你試圖清除嘔吐物</Chinese>
 			<Czech>Pokusil si se odstranit zvratky</Czech>
 			<Korean>이물질을 제거하려 시도했지만 실패함</Korean>
-			<French>Tu as essayé de retirer le vomis</French>
+			<French>Vous avez essayé de retirer le vomi</French>
         </Key>
         <Key ID="STR_kat_airway_turnaround">
             <English>Head turning</English>
@@ -295,7 +295,7 @@
             <Chinese>轉動頭部中</Chinese>
 			<Czech>Otáčení hlavou</Czech>
 			<Korean>고개 돌리는중</Korean>
-			<French>Tourner la tête</French>
+			<French>Rotation de la tête</French>
         </Key>
         <Key ID="STR_kat_airway_Accuvac_NA">
             <English>Medical suction not needed</English>
@@ -325,7 +325,7 @@
             <Chinese>放置中</Chinese>
 			<Czech>Pokládám</Czech>
 			<Korean>배치</Korean>
-			<French>Mise en place</French>
+			<French>Mise en place d'un(e)</French>
         </Key>
         <Key ID="STR_kat_airway_Larynx_Display">
             <English>King LT</English>
@@ -335,7 +335,7 @@
             <Chinese>喉管</Chinese>
 			<Czech>King LT</Czech>
 			<Korean>기관삽입기</Korean>
-			<French>King LT</French>
+			<French>Tube laryngé</French>
         </Key>
         <Key ID="STR_kat_airway_Larynx_Desc_Short">
             <English>The King LT is used to save the airways</English>
@@ -345,7 +345,7 @@
             <Chinese>喉管是用於拯救呼吸道</Chinese>
 			<Czech>King LT je používán na záchranu dýchacích cest</Czech>
 			<Korean>기관 삽입기는 기도를 확보하기 위해 사용됩니다.</Korean>
-			<French>Le King LT est utilisé pour protéger les voies aériennes</French>
+			<French>Le tube laryngé est utilisé pour protéger les voies aériennes</French>
         </Key>
         <Key ID="STR_kat_airway_Larynx_Desc_Use">
             <English>The King LT is used to save the airways</English>
@@ -355,7 +355,7 @@
             <Chinese>喉管是用於拯救呼吸道</Chinese>
 			<Czech>King LT je používán na záchranu dýchacích cest</Czech>
 			<Korean>기관 삽입기는 기도를 확보하기 위해 사용됩니다.</Korean>
-			<French>Le King LT est utilisé pour protéger les voies aériennes</French>
+			<French>Le tube laryngé est utilisé pour protéger les voies aériennes</French>
         </Key>
         <Key ID="STR_kat_airway_Guedel_Display">
             <English>Guedel Tube</English>
@@ -365,7 +365,7 @@
             <Chinese>抽吸管</Chinese>
 			<Czech>Geudel Tuba</Czech>
 			<Korean>게델튜브</Korean>
-			<French>Guedel Tube</French>
+			<French>Canule de Guedel</French>
         </Key>
         <Key ID="STR_kat_airway_Guedel_Desc_Short">
             <English>The Guedel Tube is used to save the airways</English>
@@ -375,7 +375,7 @@
             <Chinese>抽吸管用於拯救呼吸道</Chinese>
 			<Czech>Geudel tuba je používán na záchranu dýchacích cest</Czech>
 			<Korean>게델튜브는 응급처치현장에서 신속하며 간편하게 기도확보하기 위해 사용됩니다</Korean>
-			<French>Le Guedel Tube est utilisé pour protéger les voies aériennes</French>
+			<French>La canule de Guedel est utilisée pour protéger les voies aériennes</French>
         </Key>
         <Key ID="STR_kat_airway_Guedel_Desc_Use">
             <English>The Guedel Tube is used to save the airways</English>
@@ -385,7 +385,7 @@
             <Chinese>抽吸管用於拯救呼吸道</Chinese>
 			<Czech>King LT je používán na záchranu dýchacích cest</Czech>
 			<Korean>게델튜브는 응급처치현장에서 신속하며 간편하게 기도확보하기 위해 사용됩니다</Korean>
-			<French>Le Guedel Tube est utilisé pour protéger les voies aériennes</French>
+			<French>La canule de Guedel est utilisée pour protéger les voies aériennes</French>
         </Key>
         <Key ID="STR_kat_airway_Accuvac_Desc_Use">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
@@ -445,7 +445,7 @@
             <Chinese>當患者陷入無意識狀態時，有兩件事情可能會發生。首先呼吸道可能會塌陷，以醫學角度來看，因為舌部肌肉失去張力而導致阻擋住呼吸道。舉個例子，在現實生活中每一個失去意識的人幾乎都會發生這個。再來就是會發生的就是呼吸道閉塞。當病人倒地並嘔吐的時候，會讓嘴部沒有空間，也會導致呼吸道阻塞。有一個治療方法，那就是清除嘔吐物。在現實生活中，這偶爾會發生，但不常見</Chinese>
 			<Czech>Když pacient vstoupí do stavu bezvědomí, mohou nastat dvě věci. Nejprve se mohou zhroutit dýchací cesty. V lékařském smyslu to znamená, že dýchací cesty mohou být blokovány vaším jazykovým svalem, protože mu chybí svalový tón. Například v reálném životě se to stane téměř každému, který v bezvědomí leží na zádech. Druhou věcí, která se může stát, je zablokovaný stav dýchacích cest, když pacient leží na zádech a zvrací. Zvratky neopustí prostor v ústech a ty mohou také blokovat dýchací cesty. Pro stabilizaci je třeba zvratky odstranit. Ve skutečném životě se v těchto stavech občas člověk pozvrací, ale nestává se to tak často.</Czech>
 			<Korean>환자가 기절하면 두가지 일이 발생할 수 있음 먼저 기도가 혀 근육의 긴장상실로 기도를 막는다(중력에 의해 내려가고 기도를 막음) 이는 기절환자에게서 거의 대부분 볼 수 있는 증상이다 두번째로 구토를 하여 기도에 내용물리 가득차 기도폐쇠를 유발할 수 있음 이경우 치료법은 구토물을 제거하는것임 다만 두번째 경우는 일반적이지는 않음</Korean>
-			<French>Quand un patient devient inconscient, deux choses peuvent se produire. La première, les voies aériennes peuvent s'affaisser. D'un point de vue médical, les voies aériennes peuvent être bloquées par la langue. Par example IRL, cela se produira quasiment à toute personne inconsciente allongée sur le dos. La deuxième chose qui peut arriver est un état d'occlusion des voies aériennes. Quand un patient est allongé sur le dos et qu'il vomit, il pourra se boucher les voies aériennes. La bonne méthode dans ce cas est de retirer le vomis.</French>
+			<French>Quand un patient devient inconscient, deux choses peuvent se produire. La première, les voies aériennes peuvent s'affaisser. D'un point de vue médical, les voies aériennes peuvent être bloquées par la langue. Par exemple en situation réelle, cela se produira quasiment systématiquement pour toute personne inconsciente allongée sur le dos. La deuxième chose qui peut arriver est un état d'occlusion des voies aériennes. Quand un patient est allongé sur le dos et qu'il vomit, il pourra boucher ses voies aériennes. La bonne méthode dans ce cas est de retirer le vomi.</French>
         </Key>
         <Key ID="STR_kat_airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -485,7 +485,7 @@
             <Chinese>允許喉頭</Chinese> 
 			<Czech>Povolit Larynx tubu</Czech>
 			<Korean>기관 삽입기 허용</Korean>
-			<French>Autorise Larynxtubus - King LT</French>
+			<French>Autoriser le tube laryngé</French>
         </Key>
         <Key ID="STR_kat_airway_ALLOW_LARYNXTUBUS_DESC">
             <English>Training level required to use a Larynxtubus - KingLT</English>
@@ -495,7 +495,7 @@
             <Chinese>使用喉管所需的培訓水平-KingLT</Chinese> 
 			<Czech>Úroveň výcviku potřebná k použití Larynx tuby - King LT</Czech>
 			<Korean>기관삽입기를 사용하기 위해 필요한 의료레벨 수준</Korean>
-			<French>Niveau d'entrainement requis pour utiliser un Tube Laryngo-Trachéal - King LT</French>
+			<French>Niveau d'entrainement requis pour utiliser un tube laryngé</French>
         </Key>
         <Key ID="STR_kat_airway_ALLOW_GUEDELTUBUS">
             <English>Allow Guedeltubus</English>
@@ -505,7 +505,7 @@
             <Chinese>允許瓜德爾圖布斯</Chinese> 
 			<Czech>Povolit Guedel tubu</Czech>
 			<Korean>게델튜브 허용</Korean>
-			<French>Autorise le Guedel Tube</French>
+			<French>Autoriser la canule de Guedel</French>
         </Key>
         <Key ID="STR_kat_airway_ALLOW_GUEDELTUBUS_DESC">
             <English>Training level required to use a Guedeltubus</English>
@@ -515,7 +515,7 @@
             <Chinese>使用Guedeltubus所需的培訓水平</Chinese> 
 			<Czech>Úroveň výcviku potřebná k použití Guedel tuby</Czech>
 			<Korean>게델튜브를 사용하기위한 의료레벨 수준</Korean>
-			<French>Niveau d'entrainement requis pour utiliser un Guedel Tube</French>
+			<French>Niveau d'entrainement requis pour utiliser une canule de Guedel</French>
         </Key>
         <Key ID="STR_kat_airway_ALLOW_ACCUVAC">
             <English>Allow Accuvac</English>
@@ -525,7 +525,7 @@
             <Chinese>允許Accuvac</Chinese> 
 			<Czech>Povolit Accuvac</Czech>
 			<Korean>전기흡인기 허용</Korean>
-			<French>Autorise Accuvac</French>
+			<French>Autoriser l'ACCUVAC</French>
         </Key>
         <Key ID="STR_kat_airway_ALLOW_ACCUVAC_DESC">
             <English>Training level required to use an Accuvac</English>
@@ -535,7 +535,7 @@
             <Chinese>使用Accuvac所需的培訓水平</Chinese> 
 			<Czech>Úroveň výcviku potřebná k použití Accuvacu</Czech>
 			<Korean>전기흡인기를 사용하기위한 의료레벨 수준</Korean>
-			<French>Niveau d'entrainement requis pour utiliser un Accuvac</French>
+			<French>Niveau d'entrainement requis pour utiliser un ACCUVAC</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_CHECKAIRWAY">
             <English>Time to check Airways</English>
@@ -555,7 +555,7 @@
             <Chinese>檢查航空公司需要多長時間</Chinese> 
 			<Czech>Jak dlouho zabere zkontrolování dýchacích cest</Czech>
 			<Korean>기도확인에 얼마나 오레 걸릴것인가</Korean>
-			<French>Combien de temps faudra t-il pour vérifier les voies aériennes</French>
+			<French>Combien de temps faudra-t-il pour vérifier les voies aériennes</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_HEADTURNING">
             <English>Time for head turning</English>
@@ -575,17 +575,17 @@
             <Chinese>过度伸展头部的时间</Chinese> 
 			<Czech>Čas na přetažení hlavy</Czech>
 			<Korean>머리 뒤로 젖히기에 걸리는시간</Korean>
-			<French>Délai pour surélever la tête - Hyperextension</French>
+			<French>Durée pour basculer la tête en arrière - Hyperextension</French>
         </Key>
 		<Key ID="STR_kat_airway_TIME_OVERSTRETCH_DESC">
-            <English>How long it will take to turn head</English>
+            <English>How long it will take to overstretch the head</English>
             <German>Wie lange es dauert um den Kopf zu überstrecken</German>
             <Polish>Ile czasu zajmie odwrócenie głowy</Polish>
             <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
             <Chinese>转头需要多长时间</Chinese> 
 			<Czech>Jak dlouho bude trvat, než se otočí hlava</Czech>
 			<Korean>머리 뒤로 젖히기에 얼마나 오래 걸릴것인가(최대시간 설정)</Korean>
-			<French>Combien de temps faudra t-il pour surélever la tête</French>
+			<French>Combien de temps faudra t-il pour basculer la tête en arrière</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_HEADTURNING_DESC">
             <English>How long it will take to turn head</English>
@@ -606,7 +606,7 @@
             <Chinese>Accuvac時間</Chinese> 
 			<Czech>Čas pro Accuvac </Czech>
 			<Korean>흡인에 걸리는 시간</Korean>
-			<French>Durée d'aspiration avec l'Accuvac</French>
+			<French>Durée d'aspiration avec l'ACCUVAC</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_ACCUVAC_DESC">
             <English>How long it will take to use Accuvac</English>
@@ -616,7 +616,7 @@
             <Chinese>使用Accuvac需要多長時間</Chinese> 
 			<Czech>Jak dlouho zabere použití Accuvacu</Czech>
 			<Korean>흡인에 사용에 얼마나 오래 걸릴것인가</Korean>
-			<French>Combien de temps faudra t-il pour aspirer avec l'Accuvac</French>
+			<French>Combien de temps faudra t-il pour aspirer avec l'ACCUVAC</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_LARYNXTUBUS">
             <English>Time for Larynxtubus</English>
@@ -626,7 +626,7 @@
             <Chinese>喉頭時間</Chinese> 
 			<Czech>Čas pro Larynx tubu</Czech>
 			<Korean>기관삽입기 사용에 걸리는 시간</Korean>
-			<French>Durée d'intubation avec King LT</French>
+			<French>Durée d'intubation avec le tube laryngé</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_LARYNXTUBUS_DESC">
             <English>How long it will take to use Larynxtubus</English>
@@ -636,7 +636,7 @@
             <Chinese>使用喉頭需要多長時間</Chinese> 
 			<Czech>Jak dlouho zabere použití Larynx tuby</Czech>
 			<Korean>기관 삽입기 사용에 얼마나 오래 걸릴것인가</Korean>
-			<French>Combien de temps faudra t-il pour placer un Tube Laryngo-Trachéal - King LT</French>
+			<French>Combien de temps faudra t-il pour placer un tube laryngé</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_GUEDELTUBUS">
             <English>Time for Geudeltubus</English>
@@ -646,7 +646,7 @@
             <Chinese>Geudeltubus的時間</Chinese> 
 			<Czech>Čas pro Guedel tubu</Czech>
 			<Korean>게델튜브 사용에 걸리는 시간</Korean>
-			<French>Durée d'installation du Guedel Tube</French>
+			<French>Durée d'installation de la canule de Guedel</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_GUEDELTUBUS_DESC">
             <English>How long it will take to use Guedeltubus</English>
@@ -656,7 +656,7 @@
             <Chinese>使用Guedeltubus需要多長時間</Chinese> 
 			<Czech>Jak dlouho zabere použití Guedel tuby</Czech>
 			<Korean>게델튜브 사용에 얼마나 오래 걸릴것인가</Korean>
-			<French>Combien de temps faudra t-il pour placer un Guedel Tube</French>
+			<French>Combien de temps faudra t-il pour placer une canule de Guedel</French>
         </Key>
     </Package>
 </Project>

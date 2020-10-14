@@ -88,7 +88,7 @@
             <Chinese>開啟傷口限制</Chinese>
 			<Czech>Povolit omezené rány</Czech>
 			<Korean>제한된 상처 사용</Korean>
-			<French>Active une limite de blessures</French>
+			<French>Activer une limite de blessures</French>
         </Key>
         <Key ID="STR_kat_misc_LIMITWOUNDS_Display">
             <English>Bandage wounds</English>
@@ -97,7 +97,7 @@
             <Chinese>包紮傷口</Chinese>
 			<Czech>Zavázat rány</Czech>
 			<Korean>상처들에 여러붕대 감기</Korean>
-			<French>Panser blessures</French>
+			<French>Panser les blessures</French>
         </Key>
         <Key ID="STR_kat_misc_Condition_limitWounds_Display">
             <English>Use condition limit wounds</English>
