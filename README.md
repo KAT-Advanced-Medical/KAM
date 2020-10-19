@@ -6,7 +6,7 @@
 
 <p align="center">
     <a href="https://github.com/Tomcat-SG/KAM/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.0.0.0-blue.svg?style=flat-square" alt="KAM Version">
+        <img src="https://img.shields.io/badge/Version-2.0-blue.svg?style=flat-square" alt="KAM Version">
     </a>
     <a href="https://github.com/Tomcat-SG/KAM/issues">
         <img src="https://img.shields.io/github/issues-raw/Tomcat-SG/KAM.svg?style=flat-square&label=Issues" alt="KAM Issues">
