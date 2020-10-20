@@ -747,7 +747,7 @@
             <German>Tourniquet Behandlungszeit</German>
             <Spanish>Tiempo de tratamiento del torniquete</Spanish>
             <Chinese>止血带治疗时间</Chinese>
-            <Czech>Doba ošetření škrtidla</Czech>
+            <Czech>Doba ošetření pomocí škrtidla</Czech>
 			<Korean>지혈대 치료 시간</Korean>
 			<French>Durée du traitement du garrot</French>
         </Key>
@@ -757,7 +757,7 @@
             <German>Die benötigte Behandlungszeit für ein Tourniquet</German>
             <Spanish>El tiempo de tratamiento necesario para un torniquete</Spanish>
             <Chinese>止血带所需的治疗时间</Chinese>
-            <Czech>Potřebná doba ošetření škrtidla</Czech>
+            <Czech>Čas potřebný k použití škrtidla</Czech>
 			<Korean>지혈대에 필요한 치료 시간</Korean>
 			<French>Le temps de traitement nécessaire pour un garrot</French>
         </Key>
