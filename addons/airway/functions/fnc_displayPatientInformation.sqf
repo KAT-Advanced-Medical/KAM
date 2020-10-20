@@ -20,9 +20,6 @@
 
 params ["_target", "_selectionN"];
 
-if (_target getVariable ["kat_DPatientInfo_PFH", false]) exitWith {};
-_target setVariable ["kat_DPatientInfo_PFH", true];
-
 private _display = uiNamespace getVariable ["ace_medical_gui_RscPatientInfo", displayNull];
 
 if (isNull _display) then {
@@ -34,7 +31,6 @@ if (isNull _display) then {
 
         if (isNull _display) exitWith {
             [_pfhID] call CBA_fnc_removePerFrameHandler;
-			_target setVariable ["kat_DPatientInfo_PFH", nil];
         };
 
         private _target = _display getVariable ["ace_medical_gui_target", objNull];
@@ -45,7 +41,6 @@ if (isNull _display) then {
             [_pfhID] call CBA_fnc_removePerFrameHandler;
             "ace_medical_gui_RscPatientInfo" cutFadeOut 0.3;
             [["ace_medical_DistanceToFar", _target call ace_common_fnc_getName], 2] call ace_common_fnc_displayTextStructured;
-			_target setVariable ["kat_DPatientInfo_PFH", nil];
         };
 
         // Update body image
