@@ -10,6 +10,7 @@
 			<Czech>ACE-Breathing aktivováno?</Czech>
 			<Korean>ACE 심폐호흡기 기능 활성화?</Korean>
 			<French>ACE-Respiration activé?</French>
+		        <Turkish>ACE-Nefes etkinleştirildi mi?</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_death_timer_enable">
             <English>Alternative death timer for airway injuries?</English>
@@ -20,6 +21,7 @@
 			<Czech>Alternativní čas smrti pro zranění dýchacích cest?</Czech>
 			<Korean>호흡기 부상시(막힘) 사망 타이머 별도 적용?</Korean>
 			<French>Délai mortel alternatif des blessures respiratoires?</French>
+		        <Turkish>Hava yolu yaralanmaları için alternatif ölüm zamanlayıcısı?</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_Before">
             <English>Value to add or remove to the Sp02 before 100 sec</English>
@@ -30,6 +32,7 @@
 			<Czech>Hodnota, která se přidá nebo odebere Sp02 před 100 sekundami</Czech>
 			<Korean>100초후에 산소 포화도에 추가하거나 제거할 값</Korean>
 			<French>Valeur à ajouter ou retirer au Sp02 avant 100 sec</French>
+		        <Turkish>100 saniyeden önce Sp02'ye eklenecek veya kaldırılacak değer</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_After">
             <English>Value to add or remove to the Sp02 after 100 sec</English>
@@ -40,6 +43,7 @@
 			<Czech>Hodnota, která se přidá nebo odebere Sp02 po 100 sekundami</Czech>
 			<Korean>100초후에 산소 포화도에 추가하거나 제거할 값</Korean>
 			<French>Valeur à ajouter ou retirer au Sp02 après 100 sec</French>
+		        <Turkish>100 saniye sonra Sp02'ye eklenecek veya kaldırılacak değer</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -50,6 +54,7 @@
 			<Czech>Pravděpodobnost pneumotoraxu</Czech>
 			<Korean>기흉 가능성</Korean>
 			<French>Probabilité d'un pneumothorax</French>
+		        <Turkish>Pnömotoraks olasılığı</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -60,6 +65,7 @@
 			<Czech>Připojit Pulzní oxymetr</Czech>
 			<Korean>맥박산소측정기 부착</Korean>
 			<French>Placer l'oxymètre de pouls</French>
+		        <TurkishNabız Oksimetresini Takın></Turkish>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display_Remove">
             <English>Remove Pulse Oximeter</English>
@@ -70,6 +76,7 @@
 			<Czech>Odstranit Pulzní oxymetr</Czech>
 			<Korean>맥박산소측정기 제거</Korean>
 			<French>Retirer l'oxymètre de pouls</French>
+		        <Turkish>Nabız Oksimetresini Çıkarın</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Short">
             <English>Pulse Oximeter</English>
@@ -80,6 +87,7 @@
 			<Czech>Pulzní oxymetr</Czech>
 			<Korean>맥박산소측정기</Korean>
 			<French>Oxymètre de pouls</French>
+		        <Turkish>Nabız Oksimetresi</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Use">
             <English>Pulse Oximeter</English>
@@ -90,6 +98,7 @@
 			<Czech>Pulzní oxymetr</Czech>
 			<Korean>맥박산소측정기</Korean>
 			<French>Oxymètre de pouls</French>
+		        <Turkish>Nabız Oksimetresi</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_placing">
             <English>Placing</English>
@@ -100,6 +109,7 @@
 			<Czech>Dávám</Czech>
 			<Korean>배치중</Korean>
 			<French>Mise en place</French>
+		        <Turkish>Yerleştiriliyor</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_remove">
             <English>Removing</English>
@@ -110,6 +120,7 @@
 			<Czech>Odstraňuji</Czech>
 			<Korean>제거중</Korean>
 			<French>Retrait</French>
+			<Turkish>Çıkartılıyor</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_NA">
             <English>Pulse Oximeter already connected</English>
@@ -120,6 +131,7 @@
 			<Czech>Pulzní oxymetr je již připojen</Czech>
 			<Korean>맥박산소측정기가 이미 연결되 있음</Korean>
 			<French>Oxymètre de pouls déjà installé</French>
+			<Turkish>Nabız Oksimetresi zaten bağlı</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log">
             <English>Pulse Oximeter: HR: %1 Sp02: %2</English>
@@ -130,6 +142,7 @@
 			<Czech>Pulzní oxymetr: HR: %1 Sp02: %2</Czech>
 			<Korean>맥박 산소포화도: HR: %1 Sp02: %2</Korean>
 			<French>Oxymètre de pouls: HR: 1% SpO2: 2%</French>
+		        <Turkish>Nabız Oksimetresi: HR:% 1 Sp02:% 2</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -140,6 +153,7 @@
 			<Czech>%1 připojený Pulzní oxymetr</Czech>
 			<Korean>%1 맥박산소측정기 연결</Korean>
 			<French>%1 a connecté l'oxymètre de pouls</French>
+		        <Turkish>% 1 bağlı Nabız Ölçer</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_hint_name">
             <English>Breathing</English>
@@ -150,6 +164,7 @@
 			<Czech>Dýchání</Czech>
 			<Korean>호흡</Korean>
 			<French>Respiration</French>
+		        <Turkish>Nefes Alma</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_hint_desc">
             <English>Breathing
@@ -184,6 +199,10 @@
 				%1suffisamment ventilé?
 				%1SpO2 au delà 70% -&gt; Oui
 				%1SpO2 sous 70% -&gt; Non -&gt; ass. Respiration</French>
+		        <Turkish>Nefes
+                                % 1 yeterince havalandırıldı mı?
+                                % 1Sp02% 70'in üzerinde -> Evet
+                                % 1Sp02% 70'in altında -> Hayır -> eşek. Nefes</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_hint_tip">
             <English>If you saved the airway with a larynxtube skip this</English>
@@ -194,6 +213,7 @@
 			<Czech>Pokud si zajistil/zachránil dýchací cesty pomocí larynxtube, vynechej to</Czech>
 			<Korean>만일 당신이 후두관을 통해 기도를 확보하였다면 넘기십시오</Korean>
 			<French>Si vous avez sauvegardé les voies respiratoires avec un tube laryngé passez l'action</French>
+		        <Turkish>Solunum yolunu bir Laringeal Tüp ile kaydettiyseniz bunu atlayın</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax">
             <English>%1 treated a pneumothorax</English>
@@ -204,6 +224,7 @@
 			<Czech>%1 vyléčen pneumotorax</Czech>
 			<Korean>%1 기흉치료</Korean>
 			<French>%1 a traité un pneumothorax</French>
+		        <Turkish>% 1 pnömotoraksı tedavi etti</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_display">
             <English>Chest Seal</English>
@@ -214,6 +235,7 @@
 			<Czech>Hrudní krytí</Czech>
 			<Korean>기흉치료 패드</Korean>
 			<French>Pansement thoracique</French>
+		        <Turkish>Chest Seal</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_mm">
             <English>1x Pneumothorax</English>
@@ -224,6 +246,7 @@
 			<Czech>1x Pneumotorax</Czech>
 			<Korean>1x 기흉</Korean>
 			<French>1x Pneumothorax</French>
+		        <Turkish>1x Pnömotoraks</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_treating">
             <English>Treating</English>
@@ -234,6 +257,7 @@
 			<Czech>Léčení</Czech>
 			<Korean>치료중</Korean>
 			<French>Traitement</French>
+		        <Turkish>Tedavi Ediliyor</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_chestseal_display">
             <English>Chest Seal</English>
@@ -244,6 +268,7 @@
 			<Czech>Hrudní krytí</Czech>
 			<Korean>기흉치료 패드</Korean>
 			<French>Pansement thoracique</French>
+		        <Turkish>Chest Seal</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
@@ -254,6 +279,7 @@
 			<Czech>Hrudní krytí je navrženo pro léčení, zakrytí a odkrytí otevřených ran na hrudníku ve většině situací.</Czech>
 			<Korean>기흉치료 패드는 기흉으로 인한 흉강의 파열을 치료 또는 밀봉하는데 사용됨</Korean>
 			<French>Le pansement thoracique est conçu pour traiter et refermer une blessure thoracique dans la majorité des cas</French>
+		        <Turkish>Chest Seal, çoğu durumda açık göğüs yaralarını tedavi etmek, kapatmak ve yeniden kapatmak için tasarlanmıştır.</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_PULSEOXIMETER">
             <English>Allow Pulseoximeter</English>
@@ -264,6 +290,7 @@
 			<Czech>Povolit Pulzní oxymetr</Czech>
 			<Korean>맥박산소측정기 허가</Korean>
 			<French>Autoriser l'oxymètre de pouls</French>
+		        <Turkish>Nabız Oksimetresine izin ver</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_PULSEOXIMETER">
             <English>Training level required to use a Pulseoximeter</English>
@@ -274,6 +301,7 @@
 			<Czech>Úroveň výcviku nutná k použití pulzního oxymetru</Czech>
 			<Korean>맥박산소측정기 사용에 필요한 의료레벨 수준</Korean>
 			<French>Niveau d'entrainement requis pour utiliser un oxymètre de pouls</French>
+		        <Turkish>Nabız Oksimetresi kullanmak için gerekli eğitim seviyesi</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_CHESTSEAL">
             <English>Allow Chestseal</English>
@@ -284,6 +312,7 @@
 			<Czech>Povolit hrudní krytí</Czech>
 			<Korean>기흉치료 패드 허가</Korean>
 			<French>Autoriser le pansement thoracique</French>
+		        <Turkish>Chestseal'a izin ver</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_CHESTSEAL">
             <English>Training level required to use a Chestseal</English>
@@ -294,6 +323,7 @@
 			<Czech>Úroveň výcviku nutná k použití hrudního krytí</Czech>
 			<Korean>기흉치료 패드 사용에 필요한 의료레벨 수준</Korean>
 			<French>Niveau d'entrainement requis pour utiliser un pansement thoracique</French>
+		        <Turkish>Chestseal kullanmak için gerekli eğitim seviyesi</Turkish>
         </Key>
 		<Key ID="STR_kat_breathing_SETTING_STABLE_SPO2">
             <English>Stable Spo2 value to gain consciousness</English>
@@ -304,6 +334,7 @@
 			<Czech>Stabilní hodnota Spo2 pro získání vědomí</Czech>
 			<Korean>의식을 얻기위한 안정적인 Spo2 값</Korean>
 			<French>Valeur stable de SpO2 requise pour reprendre conscience</French>
+			<Turkish>Bilinç kazanmak için gerekli Spo2 değeri</Turkish>
         </Key>
 		<Key ID="STR_kat_breathing_DESCRIPTION_STABLE_SPO2">
             <English>After reaching more than selected value (default 85), only then patient can get conscious</English>
@@ -314,6 +345,7 @@
 			<Czech>Po dosažení více než vybrané hodnoty (výchozí hodnota 85) může pacient získat vědomí</Czech>
 			<Korean>선택한 값 이상 (기본값 85)에 도달하면 환자 만 의식을 가질 수 있습니다</Korean>
 			<French>Après avoir dépassé la valeur définie (par défaut 85), le patient pourra reprendre connaissance</French>
+			<Turkish>Seçilen değerden (varsayılan 85) daha fazlasına ulaştıktan sonra, ancak o zaman hasta bilincini geri kazanabilir</Turkish>
         </Key>
 		<Key ID="STR_kat_breathing_hemopneumothorax_display">
             <English>Drain Fluid</English>
@@ -324,6 +356,7 @@
             <Czech>Dekompresní jehla</Czech>
             <Korean>바늘 감압</Korean>
             <French>Aiguille de décompression</French>
+	    <Turkish>Sıvıyı Boşaltın</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax">
             <English>%1 treated a Hemopneumothorax</English>
@@ -334,6 +367,7 @@
             <Czech>%1 léčil hemopneumotorax</Czech>
             <Korean>%1 혈기 흉 치료</Korean>
             <French>%1 Hemo-pneumothorax traité</French>
+	    <Turkish>% 1 Hemopnömotoraksı tedavi etti</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax_mm">
             <English>1x Hemothorax</English>
@@ -344,6 +378,7 @@
             <Czech>1x Hemotorax</Czech>
             <Korean>1x 혈기 흉</Korean>
             <French>1x Hemothorax</French>
+	    <Turkish>1x Hemotoraks</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_display">
             <English>Needle Decompression</English>
@@ -354,6 +389,7 @@
             <Czech>Dekompresní jehla</Czech>
             <Korean>바늘 감압</Korean>
             <French>Aiguille de décompression</French>
+	    <Turkish>İğne Dekompresyonu</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax">
             <English>%1 treated a Tension Pneumothorax</English>
@@ -364,6 +400,7 @@
             <Czech>%1 léčil hemopneumotorax</Czech>
             <Korean>%1 혈기 흉 치료</Korean>
             <French>%1 Hemo-pneumothorax traité</French>
+	    <Turkish>%1 Gerilim Pnömotoraks'ı tedavi edildi</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
@@ -374,6 +411,7 @@
             <Czech>1x Hemotorax</Czech>
             <Korean>1x 혈기 흉</Korean>
             <French>1x Hemothorax</French>
+	    <Turkish>1x Gerilim Pnömotoraks'ı</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_aatKit_display">
             <English>AAT Kit</English>
@@ -384,6 +422,7 @@
             <Czech>AAT Kit</Czech>
             <Korean>AAT Kit</Korean>
             <French>AAT kit</French>
+	    <Turkish>AAT Kiti</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_aatKit_desc">
             <English>The Advanced Airway Treatment Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
@@ -394,6 +433,7 @@
             <Czech>The AAT Kit is designed to treat hemopneumothorax</Czech>
             <Korean>Advanced Airway Treatment Kit는 hemopneumothorax와 같은 고급기도 상태를 치료하도록 설계된 일회용 키트입니다.</Korean>
             <French>Le kit Kit de Traitement médical d’urgence des voies aériennes est un kit à usage unique, désigné pour traiter les blessures urgentes des voies aériennes comme des hémo-pneumothorax.</French>
+	    <Turkish>Gelişmiş Hava Yolu Tedavi Kiti, hemopnömotoraks gibi gelişmiş hava yolu koşullarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemothorax / Tension Pneumothorax Chance</English>
@@ -404,6 +444,7 @@
             <Czech>Šance na hemopneumotorax</Czech>
             <Korean>Hemopneomothorax 기회</Korean>
             <French>Chance d'avoir un Hemo-pneumothorax</French>
+	    <Turkish>Hemotoraks / Gerilim Pnömotoraks Şansı</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>The percentage chance that a patient will suffer from a hemothorax or tension pneumothorax after they are treated for a pneumothorax. Treatment requires the draining of fluids with the use of an AAT Kit.</English>
@@ -414,6 +455,7 @@
             <Czech>Procentní šance, že pacient bude trpět hemotoraxem současně s pneumotoraxem. Léčba vyžaduje vypouštění tekutin pomocí sady AAT.</Czech>
             <Korean>환자가 기흉을 앓는 동시에 혈흉을 앓을 확률입니다. 치료에는 AAT 키트를 사용하여 체액을 배출해야합니다.</Korean>
             <French>Le pourcentage de chance qu'un patient souffriera d'un hemothorax en même temps qu'un pneumothorax. Le traitement necessitera d'évacuer les fluides en utilisant un kit AAT</French>
+	    <Turkish>Bir hastanın pnömotoraks tedavisi gördükten sonra hemotoraks veya tansiyon pnömotorakstan muzdarip olma şansı yüzdesi. Tedavi, sıvıların bir AAT Kiti kullanılarak boşaltılmasını gerektirir.</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemothorax / Tension Pnuemothorax Treament Minimum Level</English>
@@ -424,6 +466,7 @@
             <Czech>Minimální úroveň zdravotního výcviku</Czech>
             <Korean>Hemopneumothorax 치료 최소 수준</Korean>
             <French>Niveau minimum de soins d'un Hemo-pneumothorax </French>
+	    <Turkish>Hemotoraks / Gerilim Pnömotoraks Tedavisi Minimum Seviye</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to perform the Needle Decompression and Drain Fluids treatment actions, used to treat Hemothorax or Tension Pneumothorax.</English>
@@ -434,6 +477,7 @@
             <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT kitu a používá se k léčbě hemopneumotoraxu.</Czech>
             <Korean>Hemopneumothorax 치료에 사용되는 바늘 감압 치료 조치를 수행 할 수있는 사람에게 필요한 최소 의료 수준입니다.</Korean>
             <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression AAT.</French>
+	    <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
             <English>Pneumothorax Damage Threshold</English>
@@ -444,6 +488,7 @@
             <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT kitu a používá se k léčbě hemopneumotoraxu.</Czech>
             <Korean>Hemopneumothorax 치료에 사용되는 바늘 감압 치료 조치를 수행 할 수있는 사람에게 필요한 최소 의료 수준입니다.</Korean>
             <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression AAT.</French>
+	    <Turkish>Pnömotoraks Hasar Eşiği</Turkish>
         </Key>
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION">
             <English>The amount of damage in a single impact, on a scale of 0 to 1, that needs to occur before there is a chance of pneumothorax. Lower values means that pneumothorax is more likely to occurr. Setting the value very low, or to zero, may cause unexpected behavior or pneumothorax from unexpected injuries.</English>
@@ -454,6 +499,7 @@
             <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT kitu a používá se k léčbě hemopneumotoraxu.</Czech>
             <Korean>Hemopneumothorax 치료에 사용되는 바늘 감압 치료 조치를 수행 할 수있는 사람에게 필요한 최소 의료 수준입니다.</Korean>
             <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression AAT.</French>
+	    <Turkish>Pnömotoraks olasılığı olmadan önce meydana gelmesi gereken, 0 ila 1 ölçeğinde tek bir darbede hasar miktarı. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya sıfır olarak ayarlanması, beklenmedik yaralanmalardan kaynaklanan beklenmedik davranışlara veya pnömotoraksa neden olabilir.</Turkish>
 			</Key>
     </Package>
 </Project>
