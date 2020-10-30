@@ -65,7 +65,7 @@
             <Czech>Připojit Pulzní oxymetr</Czech>
             <Korean>맥박산소측정기 부착</Korean>
             <French>Placer l'oxymètre de pouls</French>
-			<TurkishNabız Oksimetresini Takın></Turkish>
+            <Turkish>Nabız Oksimetresini Takın></Turkish>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display_Remove">
             <English>Remove Pulse Oximeter</English>
