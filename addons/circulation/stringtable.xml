@@ -10,6 +10,7 @@
             <Czech>ACE-Circulation aktivováno?</Czech>
             <Korean>ACE 순환계통 시스탬 활성화?</Korean>
             <French>Ace-Circulation activé?</French>
+            <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_variableHR_ENABLE">
             <English>Metabolism Dependent heartrate?</English>
@@ -20,6 +21,7 @@
             <Czech>Metabolismus závislý na tepu?</Czech>
             <Korean>신채대사에 따라 심박수를 결정합니까?</Korean>
             <French>Le pouls dépend du métabolisme?</French>
+            <Turkish>Metabolizmaya Bağımlı kalp hızı?</Turkish>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_loadout">
             <English>Different loadoutname</English>
@@ -30,6 +32,7 @@
             <Czech>Jiný název vybavení</Czech>
             <Korean>다른 구성이름</Korean>
             <French>Nom d'équipement différent</French>
+            <Turkish>Farklı ekipman adı</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O">
             <English>Blood IV (1000ml) BT: 0</English>
@@ -40,6 +43,7 @@
             <Czech>Krev IV (1000ml) KS: 0</Czech>
             <Korean>O형혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: O</French>
+            <Turkish>Kan IV (1000ml) KG: 0</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A">
             <English>Blood IV (1000ml) BT: A</English>
@@ -50,6 +54,7 @@
             <Czech>Krev IV (1000ml) KS: A</Czech>
             <Korean>A형혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: A</French>
+            <Turkish>Kan IV (1000ml) KG: A</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B">
             <English>Blood IV (1000ml) BT: B</English>
@@ -60,6 +65,7 @@
             <Czech>Krev IV (1000ml) KS: B</Czech>
             <Korean>B형혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: B</French>
+            <Turkish>Kan IV (1000ml) KG: B</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB">
             <English>Blood IV (1000ml) BT: AB</English>
@@ -70,6 +76,7 @@
             <Czech>Krev IV (1000ml) KS: AB</Czech>
             <Korean>AB형혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: AB</French>
+            <Turkish>Kan IV (1000ml) KG: AB</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_500">
             <English>Blood IV (500ml) BT: 0</English>
@@ -80,6 +87,7 @@
             <Czech>Krev IV (500ml) KS: 0</Czech>
             <Korean>O형혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: O</French>
+            <Turkish>Kan IV (500ml) KG: 0</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_500">
             <English>Blood IV (500ml) BT: A</English>
@@ -90,6 +98,7 @@
             <Czech>Krev IV (500ml) KS: A</Czech>
             <Korean>A형혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: A</French>
+            <Turkish>Kan IV (500ml) KG: A</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_500">
             <English>Blood IV (500ml) BT: B</English>
@@ -100,6 +109,7 @@
             <Czech>Krev IV (500ml) KS: B</Czech>
             <Korean>B형혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: B</French>
+            <Turkish>Kan IV (500ml) KG: B</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_500">
             <English>Blood IV (500ml) BT: AB</English>
@@ -110,6 +120,7 @@
             <Czech>Krev IV (500ml) KS: AB</Czech>
             <Korean>AB형혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: AB</French>
+            <Turkish>Kan IV (500ml) KG: AB</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_250">
             <English>Blood IV (250ml) BT: 0</English>
@@ -120,6 +131,7 @@
             <Czech>Krev IV (250ml) KS: 0</Czech>
             <Korean>O형혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: O</French>
+            <Turkish>Kan IV (250ml) KG: 0</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_250">
             <English>Blood IV (250ml) BT: A</English>
@@ -130,6 +142,7 @@
             <Czech>Krev IV (250ml) KS: A</Czech>
             <Korean>A형혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: A</French>
+            <Turkish>Kan IV (250ml) KG: A</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_250">
             <English>Blood IV (250ml) BT: B</English>
@@ -140,6 +153,7 @@
             <Czech>Krev IV (250ml) KS: B</Czech>
             <Korean>B형혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: B</French>
+            <Turkish>Kan IV (250ml) KG: B</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_250">
             <English>Blood IV (250ml) BT: AB</English>
@@ -150,6 +164,7 @@
             <Czech>Krev IV (250ml) KS: AB</Czech>
             <Korean>AB형혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: AB</French>
+            <Turkish>Kan IV (250ml) KG: AB</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_O">
             <English>Give Blood IV (1000ml) BT: 0</English>
@@ -160,6 +175,7 @@
             <Czech>Dát Krev IV (1000ml) KS: 0</Czech>
             <Korean>수혈중 O형혈액(1000ml)</Korean>
             <French>Transfusion de sang IV (1000ml) GS: O</French>
+            <Turkish>Kan IV (1000ml) KG: 0 Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_A">
             <English>Give Blood IV (1000ml) BT: A</English>
@@ -170,6 +186,7 @@
             <Czech>Dát Krev IV (1000ml) KS: A</Czech>
             <Korean>수혈중 A형혈액(1000ml)</Korean>
             <French>Transfusion de sang IV (1000ml) GS: A</French>
+            <Turkish>Kan IV (1000ml) KG: A Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_B">
             <English>Give Blood IV (1000ml) BT: B</English>
@@ -180,6 +197,7 @@
             <Czech>Dát Krev IV (1000ml) KS: B</Czech>
             <Korean>수혈중 B형혈액(1000ml)</Korean>
             <French>Transfusion de sang IV (1000ml) GS: B</French>
+            <Turkish>Kan IV (1000ml) KG: B Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_AB">
             <English>Give Blood IV (1000ml) BT: AB</English>
@@ -190,6 +208,7 @@
             <Czech>Dát Krev IV (1000ml) KS: AB</Czech>
             <Korean>수혈중 AB형혈액(1000ml)</Korean>
             <French>Transfusion de sang IV (1000ml) GS: AB</French>
+            <Turkish>Kan IV (1000ml) KG: AB Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_O">
             <English>Give Blood IV (500ml) BT: 0</English>
@@ -200,6 +219,7 @@
             <Czech>Dát Krev IV (500ml) KS: 0</Czech>
             <Korean>수혈중 O형혈액(500ml)</Korean>
             <French>Transfusion de sang IV (500ml) GS: O</French>
+            <Turkish>Kan IV (500ml) KG: 0 Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_A">
             <English>Give Blood IV (500ml) BT: A</English>
@@ -210,6 +230,7 @@
             <Czech>Dát Krev IV (500ml) KS: A</Czech>
             <Korean>수혈중 A형혈액(500ml)</Korean>
             <French>Transfusion de sang IV (500ml) GS: A</French>
+            <Turkish>Kan IV (500ml) KG: A Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_B">
             <English>Give Blood IV (500ml) BT: B</English>
@@ -220,6 +241,7 @@
             <Czech>Dát Krev IV (500ml) KS: B</Czech>
             <Korean>수혈중 B형혈액(500ml)</Korean>
             <French>Transfusion de sang IV (500ml) GS: B</French>
+            <Turkish>Kan IV (500ml) KG: B Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_AB">
             <English>Give Blood IV (500ml) BT: AB</English>
@@ -230,6 +252,7 @@
             <Czech>Dát Krev IV (500ml) KS: AB</Czech>
             <Korean>수혈중 AB형혈액(500ml)</Korean>
             <French>Transfusion de sang IV (500ml) GS: AB</French>
+            <Turkish>Kan IV (500ml) KG: AB Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_O">
             <English>Give Blood IV (250ml) BT: 0</English>
@@ -240,6 +263,7 @@
             <Czech>Dát Krev IV (250ml) KS: 0</Czech>
             <Korean>수혈중 O형혈액(250ml)</Korean>
             <French>Transfusion de sang IV (250ml) GS: O</French>
+            <Turkish>Kan IV (250ml) KG: 0 Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_A">
             <English>Give Blood IV (250ml) BT: A</English>
@@ -250,6 +274,7 @@
             <Czech>Dát Krev IV (250ml) KS: A</Czech>
             <Korean>수혈중 A형혈액(250ml)</Korean>
             <French>Transfusion de sang IV (250ml) GS: A</French>
+            <Turkish>Kan IV (250ml) KG: A Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_B">
             <English>Give Blood IV (250ml) BT: B</English>
@@ -260,6 +285,7 @@
             <Czech>Dát Krev IV (250ml) KS: B</Czech>
             <Korean>수혈중 A형혈액(250ml)</Korean>
             <French>Transfusion de sang IV (250ml) GS: B</French>
+            <Turkish>Kan IV (250ml) KG: B Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_AB">
             <English>Give Blood IV (250ml) BT: AB</English>
@@ -270,6 +296,7 @@
             <Czech>Dát Krev IV (250ml) KS: AB</Czech>
             <Korean>수혈중 AB형혈액(250ml)</Korean>
             <French>Transfusion de sang IV (250ml) GS: AB</French>
+            <Turkish>Kan IV (250ml) KG: AB Ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_DescShort">
             <English>Used to suppress pain</English>
@@ -280,6 +307,7 @@
             <Czech>Užíváno na potlačení bolesti</Czech>
             <Korean>통증완화를 위해 사용합니다</Korean>
             <French>Utilisé pour diminuer la douleur</French>
+            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_DescUse">
             <English>An analgesic used to combat light to moderate pain experiences.</English>
@@ -290,6 +318,7 @@
             <Czech>Analgetikum používané k potlačení lehkých až středně bolestivých zážitků.</Czech>
             <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
             <French>Un analgésique utilisé pour diminuer la douleur.</French>
+            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_Box_Display">
             <English>Painkillers</English>
@@ -300,6 +329,7 @@
             <Czech>Prášky proti bolesti</Czech>
             <Korean>진통제</Korean>
             <French>Analgésiques</French>
+            <Turkish>Ağrı Kesiciler</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Inject_Box_Painkillers">
             <English>Take Painkillers</English>
@@ -310,6 +340,7 @@
             <Czech>Vzít si Prášky proti bolesti</Czech>
             <Korean>진통제 복용</Korean>
             <French>Prendre des analgésiques</French>
+            <Turkish>Ağrı Kesicileri Al</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Using">
             <English>Using</English>
@@ -320,6 +351,7 @@
             <Czech>Používám</Czech>
             <Korean>사용중</Korean>
             <French>Utilisation</French>
+            <Turkish>Kullanılıyor</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag">
             <English>Check Dogtags</English>
@@ -330,6 +362,7 @@
             <Czech>Zkontrolovat psí známky</Czech>
             <Korean>인식표 확인</Korean>
             <French>Vérifier la plaque d'identification</French>
+            <Turkish>Künyeyi Kontrol Et</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag_Action">
             <English>Checking</English>
@@ -340,6 +373,7 @@
             <Czech>Kontroluji</Czech>
             <Korean>확인중</Korean>
             <French>Vérification</French>
+            <Turkish>Kontrol Ediliyor</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_X_already">
             <English>Already one connected</English>
@@ -350,6 +384,7 @@
             <Czech>Jeden již připojen</Czech>
             <Korean>AED-X가 이미 연결되 있습니다</Korean>
             <French>Un déjà connecté</French>
+            <Turkish>Zaten bağlandı</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_X_Display">
             <English>AED X-Series</English>
@@ -360,6 +395,7 @@
             <Czech>AED X-Series</Czech>
             <Korean>바이탈 측정 자동제세동기</Korean>
             <French>AED X-Series</French>
+            <Turkish>AED X-Serisi</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_X_Desc">
             <English>Used to monitor vital values and to resuscitate persons</English>
@@ -370,6 +406,7 @@
             <Czech>Používán na monitorování vitálních funkcí a resuscitování</Czech>
             <Korean>부상병에게 연결하여 바이탈 모니터링과 제세동을 위해 사용함</Korean>
             <French>Utilisé pour monitorer les constantes vitales et ressusciter les patients</French>
+            <Turkish>Hayati değerleri izlemek ve kişileri canlandırmak için kullanılır</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Use">
             <English>Monitor vitals</English>
@@ -380,6 +417,7 @@
             <Czech>Monitorování vitálních funkcí</Czech>
             <Korean>바이탈 측정</Korean>
             <French>Monitorer les constantes vitales</French>
+            <Turkish>Monitor vitals</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Defib_Action_Use">
             <English>Use AED defibrillator</English>
@@ -390,6 +428,7 @@
             <Czech>Použít AED defibrilátor</Czech>
             <Korean>자동제세동기 사용</Korean>
             <French>Utiliser le défibrillateur AED</French>
+            <Turkish>AED defibrilatör kullanın</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_DefibS_Action_Use">
             <English>Use AED Station</English>
@@ -400,6 +439,7 @@
             <Czech>Použít AED stanici</Czech>
             <Korean>자동제세동기 사용</Korean>
             <French>Utiliser la station AED</French>
+            <Turkish>AED İstasyonunu Kullanın</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_AED_PROGRESS">
             <English>Using the defibrillator...</English>
@@ -410,6 +450,7 @@
             <Czech>Používám defibrilátor...</Czech>
             <Korean>자동제세동기 사용중</Korean>
             <French>Utilisation du défibrillateur...</French>
+            <Turkish>Defibrilatör kullanılıyor...</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_Action_Use">
             <English>Use AED-X defibrillator</English>
@@ -420,6 +461,7 @@
             <Czech>Použít AED-X defibrilátor</Czech>
             <Korean>바이탈측정 자동제세동기 사용</Korean>
             <French>Utiliser le défibrillateur AED-X</French>
+            <Turkish>AED-X defibrilatör kullan</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Remove">
             <English>Remove monitoring</English>
@@ -430,6 +472,7 @@
             <Czech>Odstranit monitorování</Czech>
             <Korean>측정장치 제거</Korean>
             <French>Retirer le moniteur</French>
+            <Turkish>İzlemeyi kaldır</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_Action_Progress">
             <English>Using AED-X defibrillator</English>
@@ -440,6 +483,7 @@
             <Czech>Používám AED-X defibrilátor</Czech>
             <Korean>바이탈측정 자동제세동기 사용중</Korean>
             <French>Utilisation du défibrillateur AED-X</French>
+            <Turkish>AED-X defibrilatörü kullanılıyor</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Progress">
             <English>Connecting</English>
@@ -450,6 +494,7 @@
             <Czech>Připojuji</Czech>
             <Korean>연결중</Korean>
             <French>Connexion</French>
+            <Turkish>Bağlanıyor</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_X_Remove_Action_Progress">
             <English>Disconnecting</English>
@@ -460,6 +505,7 @@
             <Czech>Odpojuji</Czech>
             <Korean>때어내는중</Korean>
             <French>Déconnexion</French>
+            <Turkish>Bağlantı Kesiliyor</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_removeSound">
             <English>Turn down volume of AED X</English>
@@ -470,6 +516,7 @@
             <Czech>Snížit hlasitost AED-X</Czech>
             <Korean>바이탈측정 자동제세동기 BP음 끄기</Korean>
             <French>Réduire le volume du AED-X</French>
+            <Turkish>AED X'in sesini kısın</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_addSound">
             <English>Turn up volume of AED X</English>
@@ -480,6 +527,7 @@
             <Czech>Zvýšit hlasitost AED-X</Czech>
             <Korean>바이탈측정 자동제세동기 BP음 켜기</Korean>
             <French>Augmenter le volume du AED-X</French>
+            <Turkish>AED X'in sesini arttırın</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_Pain_empty">
             <English>%1 is now empty</English>
@@ -490,6 +538,7 @@
             <Czech>%1 je prázdná</Czech>
             <Korean>%1 는 현제 비었음</Korean>
             <French>%1 est maintenant vide</French>
+            <Turkish>% 1 artık boş</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_bloodbank">
             <English>Medical Blood bank</English>
@@ -500,6 +549,7 @@
             <Czech>Lékařská krevní banka</Czech>
             <Korean>의료용 혈액은행</Korean>
             <French>Réserve médicale de sang</French>
+            <Turkish>Tıbbi Kan bankası</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_open_crosspanel">
             <English>Open blood groups cheat sheet</English>
@@ -510,6 +560,7 @@
             <Czech>Otevřít tahák krevních skupin</Czech>
             <Korean>혈액형 비교표 열기</Korean>
             <French>Ouvrir la fiche d'indication des groupes sanguins</French>
+            <Turkish>Kan Grubu Tablosunu Açın</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_place_AED">
             <English>Place AED</English>
@@ -520,6 +571,7 @@
             <Czech>Místo AED</Czech>
             <Korean>자동제세동기 설치</Korean>
             <French>Placer l'AED</French>
+            <Turkish>AED'yi yerleştirin</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_PickUpAction">
             <English>Pickup AED</English>
@@ -530,6 +582,7 @@
             <Czech>Vyzvednout AED</Czech>
             <Korean>자동제세동기 줍기</Korean>
             <French>Ramasser l'AED</French>
+            <Turkish>AED'yi Alın</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -540,6 +593,7 @@
             <Czech>tahák krevních skupin</Czech>
             <Korean>혈액형 비교표</Korean>
             <French>Fiche d'indication des groupes sanguins</French>
+            <Turkish>Kan Grubu Tablosu</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_desc_crosspanel">
             <English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
@@ -550,6 +604,7 @@
             <Czech>Špatná kombinace krve dárce a příjemce může mít smrtelné následky.</Czech>
             <Korean>잘못된 혈액형으로 수혈시에는 사망에 이를수도 있습니다</Korean>
             <French>Une mauvaise combinaison sanguine du donneur et du receveur peut avoir des conséquences mortelles</French>
+            <Turkish>Verici ve alıcı kanının yanlış bir kombinasyonu ölümcül sonuçlara bile yol açabilir.</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_client_bt">
             <English>Blood type</English>
@@ -560,6 +615,7 @@
             <Czech>Krevní skupina</Czech>
             <Korean>혈액형</Korean>
             <French>Groupe sanguin</French>
+            <Turkish>Kan Grubu</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -570,6 +626,7 @@
             <Czech>Oblasti pro AED</Czech>
             <Korean>자동제세동기 배치</Korean>
             <French>Lieux de l'AED</French>
+            <Turkish>AED Konumları</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_LOCATION_AED_DESCRIPTION">
             <English>Where can the AED be used?</English>
@@ -580,6 +637,7 @@
             <Czech>Kde může být AED použito?</Czech>
             <Korean>자동제세동기는 어디에서 사용 가능한가요?</Korean>
             <French>Où l'AED peut être utilisé</French>
+            <Turkish>AED nerede kullanılabilir?</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_AED_DISPLAYNAME">
             <English>Automated External Defibrillator</English>
@@ -590,6 +648,7 @@
             <Czech>Automatický externí defibrilátor</Czech>
             <Korean>자동제세동기</Korean>
             <French>Défibrillateur Automatisé Externe</French>
+            <Turkish>Otomatik eksternal defibrilatör</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_AED_DESCRIPTION">
             <English>Use to resuscitate player</English>
@@ -600,6 +659,7 @@
             <Czech>Použít k resuscitaci hráče</Czech>
             <Korean>부상병을 깨우는데 사용됩니다</Korean>
             <French>Utilisé pour ressusciter un joueur</French>
+            <Turkish>Oyuncuyu canlandırmak için kullanın</Turkish>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AED">
             <English>%1 performed AED</English>
@@ -610,6 +670,7 @@
             <Czech>%1 provedeno AED</Czech>
             <Korean>%1 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED</French>
+            <Turkish>%1 AED gerçekleştirdi</Turkish>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDS">
             <English>%1 performed AED Station</English>
@@ -620,6 +681,7 @@
             <Czech>%1 provedeno AED stanice</Czech>
             <Korean>%1 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé une station AED</French>
+            <Turkish>%1 gerçekleştirilen AED İstasyonu</Turkish>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDX">
             <English>%1 performed AED-X</English>
@@ -630,6 +692,7 @@
             <Czech>%1 provedeno AED-X</Czech>
             <Korean>%1 바이탈측정 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED-X</French>
+            <Turkish>% 1 AED-X gerçekleştirdi</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED_X">
             <English>Succes chance for AED-X</English>
@@ -640,6 +703,7 @@
             <Czech>Šance úspěchu pro AED-X</Czech>
             <Korean>바이탈측정 자동제세동기 성공확률</Korean>
             <French>Chances de succès pour l'AED-X</French>
+            <Turkish>AED-X için başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED">
             <English>Succes chance for AED</English>
@@ -650,6 +714,7 @@
             <Czech>Šance úspěchu pro AED</Czech>
             <Korean>자동제세동기 성공확률</Korean>
             <French>Chances de succès pour l'AED</French>
+            <Turkish>AED için başarı şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED_X">
             <English>Allow AED-X</English>
@@ -660,6 +725,7 @@
             <Czech>Povolit AED</Czech>
             <Korean>바이탈측정 자동제세동기 허용</Korean>
             <French>Autoriser l'AED-X</French>
+            <Turkish>AED-X'e izin ver</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_TRAINING_LEVEL_AED_X">
             <English>Training level requied to use an AED-X</English>
@@ -670,6 +736,7 @@
             <Czech>Úroveň výcviku nutná k použití AED-X</Czech>
             <Korean>바이탈측정 자동제세동기 사용에 필요한 의료레벨</Korean>
             <French>Niveau de d'entrainement pour utiliser un AED-X</French>
+            <Turkish>AED-X kullanmak için gerekli eğitim seviyesi</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_DISTANCELIMIT_AED_X">
             <English>Distance limit for AED-X in meters</English>
@@ -680,6 +747,7 @@
             <Czech>Vzdálenostní limit pro AED-X v metrech</Czech>
             <Korean>바이탈측정 자동제세동기 사용가능거리 설정(미터법)</Korean>
             <French>Distance maximum en mètres pour l'AED-X</French>
+            <Turkish>Metre cinsinden AED-X için mesafe sınırı</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_TIMELIMIT_AED_X">
             <English>Time limit for monitor of AED-X in seconds</English>
@@ -690,6 +758,7 @@
             <Czech>Časový limit pro monitoring pomocí AED-X v sekundách</Czech>
             <Korean>바이탈측정 자동제세동기 모니터링 시간제한 (초단위)</Korean>
             <French>Limite de temps pour monitorer l'AED-X en secondes</French>
+            <Turkish>AED-X'in saniye cinsinden izlenmesi için zaman sınırı</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_DEACTIVATE_MONITOR_WHILEAED_X">
             <English>Deactivate Monitor while using AED-X</English>
@@ -700,6 +769,7 @@
             <Czech>Deaktivovat monitoring při použití AED-X</Czech>
             <Korean>바이탈측정 자동제세동기 사용시 모니터 비활성화</Korean>
             <French>Désactiver le moniteur pendant l'utilisation de l'AED-X</French>
+            <Turkish>AED-X kullanırken Monitörü devre dışı bırakın</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -710,6 +780,7 @@
             <Czech>Povolit různé šance pro resuscitaci dle úrovně zdravotnického výcviku</Czech>
             <Korean>의료레벨에 따라 CPR 성공확률을 다르게 하도록 설정</Korean>
             <French>Activer différentes chances de réussite de RCP par niveau médical </French>
+            <Turkish>Tıbbi eğitim seviyesi başına farklı CPR şansı sağlayın</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DOCTOR">
             <English>CPR Chance for Doctors</English>
@@ -720,6 +791,7 @@
             <Czech>Šance resuscitace pro doktory</Czech>
             <Korean>군의관 CPR 성공확률</Korean>
             <French>Chances de RCP pour les Docteurs</French>
+            <Turkish>Doktorlar için CPR Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_REGULARMEDIC">
             <English>CPR Chance for Regular medics</English>
@@ -730,6 +802,7 @@
             <Czech>Šance resuscitace pro regulérní zdravotníky</Czech>
             <Korean>의무병 CPR 성공확률</Korean>
             <French>Chances de RCP pour les médecins</French>
+            <Turkish>İlk yardım uzmanları için CPR Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DEFAULT">
             <English>CPR Chance for Default</English>
@@ -740,6 +813,7 @@
             <Czech>Šance resuscitace pro základní</Czech>
             <Korean>일반전투병 CPR 성공확률</Korean>
             <French>Chances de RCP par défaut</French>
+            <Turkish>Varsayılan CPR Şansı</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_TIME_TOURNIQUET">
             <English>Tourniquet treatment time</English>
@@ -750,6 +824,7 @@
             <Czech>Doba ošetření pomocí škrtidla</Czech>
             <Korean>지혈대 치료 시간</Korean>
             <French>Durée du traitement du garrot</French>
+            <Turkish>Turnike tedavi süresi</Turkish>
         </Key>
         <Key ID="STR_KAT_circulation_TIME_TOURNIQUET_DESC">
             <English>The needed treatment time for a tourniquet</English>
@@ -760,6 +835,7 @@
             <Czech>Čas potřebný k použití škrtidla</Czech>
             <Korean>지혈대에 필요한 치료 시간</Korean>
             <French>Le temps de traitement nécessaire pour un garrot</French>
+            <Turkish>Turnike için gerekli tedavi süresi</Turkish>
         </Key>
     </Package>
 </Project>
