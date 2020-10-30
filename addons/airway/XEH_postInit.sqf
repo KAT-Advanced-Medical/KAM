@@ -12,7 +12,9 @@ if !(GVAR(enable)) exitWith {};
     if !(_state) exitWith {
         _unit call FUNC(init);
     };
-    if (!_alive && (_unit getVariable [GVAR(string_exit), false])) exitWith {};
+	
+    private _alive = alive _unit;
+    if ((!_alive) || (_unit getVariable [GVAR(string_exit), ""] isEqualTo "keko_wasPunched")) exitWith {};
     if (EGVAR(breathing,enable)) then {
         ["handleBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
     };
