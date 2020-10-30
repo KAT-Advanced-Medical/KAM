@@ -37,11 +37,10 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan and YetheSam
 
 ## Disclaimer from current Developers
 
-- This isn’t a bug free or official Version of the KAT System (Official one is here: https://steamcommunity.com/sharedfiles/filedetails/?id=2020940806 )
-  - This Git is for Development use
-  - Everybody can make Pull/Push request
-  - As this addon depends on ACE, some of its updates may break KAT, so fix from our side can take some time
-  - New features are still in development
+- This Git is for Development use, full playable version is also on Steam availible (https://steamcommunity.com/sharedfiles/filedetails/?id=2020940806)
+- Everybody can make Pull/Push request
+- As this addon depends on ACE, some of its updates may break KAT, so fix from our side can take some time
+- New features are still in development
 
 ## Core features
 
@@ -113,8 +112,4 @@ Please, use my [Issue Tracker](https://github.com/Katalam/kat_aceAdvMedical/issu
 
 ## License
 
-<a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >
- <img src="http://www.bistudio.com/license-icons/small/APL-SA.png" >
- <br>
- This work is licensed under a Arma Public License Share Alike
-</a>
+This work is licensed under [GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.html)
