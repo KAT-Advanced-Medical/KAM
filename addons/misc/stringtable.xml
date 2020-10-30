@@ -7,9 +7,9 @@
             <Polish>ACE-Inne aktywowane?</Polish>
             <Spanish>¿Activar ACE-Misceláneos?</Spanish>
             <Chinese>啟用ACE-雜項?</Chinese>
-			<Czech>ACE-Misc aktivováno?</Czech>
-			<Korean>ACE 음악 활성화?</Korean>
-			<French>ACE-Misc activé?</French>
+			      <Czech>ACE-Misc aktivováno?</Czech>
+			      <Korean>ACE 음악 활성화?</Korean>
+			      <French>ACE-Misc activé?</French>
 		        <Turkish>ACE-Misc activated?</Turkish>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV">
@@ -18,9 +18,9 @@
             <Polish>Zakładanie IV</Polish>
             <Spanish>Administrando IV</Spanish>
             <Chinese>注射點滴</Chinese>
-			<Czech>Připojuji IV</Czech>
-			<Korean>수액 붙이는중</Korean>
-			<French>Administrer IV</French>
+		      	<Czech>Připojuji IV</Czech>
+			      <Korean>수액 붙이는중</Korean>
+			      <French>Administrer IV</French>
 		        <Turkish>IV Bağlanıyor</Turkish>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display">
@@ -29,9 +29,9 @@
             <Polish>Załóż IV (1000ml)</Polish>
             <Spanish>Administrar IV (1000ml)</Spanish>
             <Chinese>注射點滴 (1000ml)</Chinese>
-			<Czech>Připojuji IV (1000ml)</Czech>
-			<Korean>수액 붙이기(1000ml)</Korean>
-			<French>Administrer IV (1000ml)</French>
+			      <Czech>Připojuji IV (1000ml)</Czech>
+			      <Korean>수액 붙이기(1000ml)</Korean>
+			      <French>Administrer IV (1000ml)</French>
 		        <Turkish>IV (1000ml) Bağla</Turkish>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_500">
@@ -40,9 +40,9 @@
             <Polish>Załóż IV (500ml)</Polish>
             <Spanish>Administrar IV (500ml)</Spanish>
             <Chinese>注射點滴 (500ml)</Chinese>
-			<Czech>Připojuji IV (500ml)</Czech>
-			<Korean>수액 붙이기(500ml)</Korean>
-			<French>Administrer IV (500ml)</French>
+			      <Czech>Připojuji IV (500ml)</Czech>
+			      <Korean>수액 붙이기(500ml)</Korean>
+			      <French>Administrer IV (500ml)</French>
 		        <Turkish>IV (500ml) Bağla</Turkish>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_250">
@@ -51,9 +51,9 @@
             <Polish>Załóż IV (250ml)</Polish>
             <Spanish>Administrar IV (250ml)</Spanish>
             <Chinese>注射點滴 (250ml)</Chinese>
-			<Czech>Připojuji IV (2500ml)</Czech>
-			<Korean>수액 붙이기(250ml)</Korean>
-			<French>Administrer IV (250ml)</French>
+			      <Czech>Připojuji IV (2500ml)</Czech>
+			      <Korean>수액 붙이기(250ml)</Korean>
+			      <French>Administrer IV (250ml)</French>
 		        <Turkish>IV (250ml) Bağla</Turkish>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand">
@@ -62,9 +62,9 @@
             <Polish>Stojak: Sól fizjologiczna IV (1000ml)</Polish>
             <Spanish>Soporte: Salino IV (1000ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (1000ml)</Chinese>
-			<Czech>Stojan: Solný roztok (1000ml)</Czech>
-			<Korean>스탠드: 수액(1000ml)</Korean>
-			<French>Accrocher: Saline IV (1000ml)</French>
+			      <Czech>Stojan: Solný roztok (1000ml)</Czech>
+		      	<Korean>스탠드: 수액(1000ml)</Korean>
+			      <French>Accrocher: Saline IV (1000ml)</French>
 		        <Turkish>Stant: Seruym IV (1000ml)</Turkish>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_500">
@@ -73,9 +73,9 @@
             <Polish>Stojak: Sól fizjologiczna IV (500ml)</Polish>
             <Spanish>Soporte: Salino IV (500ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (500ml)</Chinese>
-			<Czech>Stojan: Solný roztok (500ml)</Czech>
-			<Korean>스탠드: 수액(500ml)</Korean>
-			<French>Accrocher: Saline IV (500ml)</French>
+			      <Czech>Stojan: Solný roztok (500ml)</Czech>
+		      	<Korean>스탠드: 수액(500ml)</Korean>
+			      <French>Accrocher: Saline IV (500ml)</French>
 		        <Turkish>Stant: Seruym IV (500ml)</Turkish>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_250">
@@ -84,59 +84,64 @@
             <Polish>Stojak: Sól fizjologiczna IV (250ml)</Polish>
             <Spanish>Soporte: Salino IV (250ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (250ml)</Chinese>
-			<Czech>Stojan: Solný roztok (250ml)</Czech>
-			<Korean>스탠드: 수액(250ml)</Korean>
-			<French>Accrocher: Saline IV (250ml)</French>
-		        <Turkish>Stant: Seruym IV (250ml)</Turkish>
+			      <Czech>Stojan: Solný roztok (250ml)</Czech>
+			      <Korean>스탠드: 수액(250ml)</Korean>
+		      	<French>Accrocher: Saline IV (250ml)</French>
+            <Turkish>Stant: Seruym IV (250ml)</Turkish>
         </Key>
         <Key ID="STR_kat_misc_SETTING_LIMITWOUNDS_ENABLE">
             <English>Enable limited wounds</English>
             <German>Aktiviere limitierte Wunden</German>
+            <Polish>Umożliwiają ograniczone rany</Polish>
             <Spanish>Habilitar límite de heridas</Spanish>
             <Chinese>開啟傷口限制</Chinese>
-			<Czech>Povolit omezené rány</Czech>
-			<Korean>제한된 상처 사용</Korean>
-			<French>Activer une limite de blessures</French>
+			      <Czech>Povolit omezené rány</Czech>
+		      	<Korean>제한된 상처 사용</Korean>
+			      <French>Activer une limite de blessures</French>
 		        <Turkish>Sınırlı yaraları etkinleştirin</Turkish>
         </Key>
         <Key ID="STR_kat_misc_LIMITWOUNDS_Display">
             <English>Bandage wounds</English>
             <German>Behandle Wunden</German>
+            <Polish>Rany opatrunkowe</Polish>
             <Spanish>Vendar heridas</Spanish>
             <Chinese>包紮傷口</Chinese>
-			<Czech>Zavázat rány</Czech>
-			<Korean>상처들에 여러붕대 감기</Korean>
-			<French>Panser les blessures</French>
+			      <Czech>Zavázat rány</Czech>
+		      	<Korean>상처들에 여러붕대 감기</Korean>
+			      <French>Panser les blessures</French>
 		        <Turkish>Bandaj yaraları</Turkish>
         </Key>
         <Key ID="STR_kat_misc_Condition_limitWounds_Display">
             <English>Use condition limit wounds</English>
             <German>Bendingung für limitierte Wunden</German>
+            <Polish>Stosować rany ograniczające stan zdrowia</Polish>
             <Spanish>Usar condición para límite de heridas</Spanish>
             <Chinese>以條件來限制傷口</Chinese>
-			<Czech>Použít podmínku omezených ran</Czech>
-			<Korean>상태 제한 상처사용</Korean>
-			<French>Condition d'utilisation pour limite de blessures</French>
+			      <Czech>Použít podmínku omezených ran</Czech>
+		      	<Korean>상태 제한 상처사용</Korean>
+			      <French>Condition d'utilisation pour limite de blessures</French>
 		        <Turkish>Durum sınırı yaralarını kullanın</Turkish>
         </Key>
         <Key ID="STR_kat_misc_disassemble_stretcher_display">
             <English>Disassemble stretcher</English>
             <German>Trage einklappen</German>
+            <Polish>Demontaż noszy</Polish>
             <Spanish>Desarmar camilla</Spanish>
             <Chinese>拆卸式擔架</Chinese>
-			<Czech>Rozložit nosítka</Czech>
-			<Korean>분리가능한 들것</Korean>
-			<French>Désassembler la civière</French>
+			      <Czech>Rozložit nosítka</Czech>
+		       	<Korean>분리가능한 들것</Korean>
+			      <French>Désassembler la civière</French>
 		        <Turkish>Sedyeyi sökün</Turkish>
         </Key>
         <Key ID="STR_kat_misc_disassemble_attach_display">
             <English>Attach to</English>
             <German>Anhängen an</German>
+            <Polish>Przyczep do</Polish>
             <Spanish>Poner en</Spanish>
             <Chinese>掛在</Chinese>
-			<Czech>Připevnit k</Czech>
-			<Korean>에 부착</Korean>
-			<French>Attacher à</French>
+			      <Czech>Připevnit k</Czech>
+			      <Korean>에 부착</Korean>
+			      <French>Attacher à</French>
 		        <Turkish>Şuna Bağla</Turkish>
         </Key>
     </Package>

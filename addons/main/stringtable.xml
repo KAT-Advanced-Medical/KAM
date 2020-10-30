@@ -1,10 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project name="kat">
     <Package name="main">
         <Key ID="STR_kat_main_URL">
             <English>https://github.com/Tomcat-SG/KAM</English>
             <German>https://github.com/Tomcat-SG/KAM</German>
-			<Korean>https://github.com/Tomcat-SG/KAM</Korean>
+	    <Korean>https://github.com/Tomcat-SG/KAM</Korean>
+            <Turkish>https://github.com/Tomcat-SG/KAM</Turkish>
+            <Korean>https://github.com/Tomcat-SG/KAM</Korean>
+            <Polish>https://github.com/Tomcat-SG/KAM</Polish>
+            <French>https://github.com/Tomcat-SG/KAM</French>
+            <Czech>https://github.com/Tomcat-SG/KAM</Czech>
         </Key>
     </Package>
 </Project>
