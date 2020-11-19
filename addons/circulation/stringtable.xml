@@ -891,29 +891,5 @@
             <Turkish>Varsayılan CPR Şansı</Turkish>
             <Italian>Probabilità di RCP per default</Italian>
         </Key>
-        <Key ID="STR_KAT_circulation_TIME_TOURNIQUET">
-            <English>Tourniquet treatment time</English>
-            <Polish>Czas zakładania opasek uciskowych (staz)</Polish>
-            <German>Tourniquet Behandlungszeit</German>
-            <Spanish>Tiempo de tratamiento del torniquete</Spanish>
-            <Chinese>止血带治疗时间</Chinese>
-            <Czech>Doba ošetření pomocí škrtidla</Czech>
-            <Korean>지혈대 치료 시간</Korean>
-            <French>Durée du traitement du garrot</French>
-            <Turkish>Turnike tedavi süresi</Turkish>
-            <Italian>Tempo di utilizzo del laccio emostatico</Italian>
-        </Key>
-        <Key ID="STR_KAT_circulation_TIME_TOURNIQUET_DESC">
-            <English>The needed treatment time for a tourniquet</English>
-            <Polish>Czas potrzebny na  założenie opaski uciskowej (stazy)</Polish>
-            <German>Die benötigte Behandlungszeit für ein Tourniquet</German>
-            <Spanish>El tiempo de tratamiento necesario para un torniquete</Spanish>
-            <Chinese>止血带所需的治疗时间</Chinese>
-            <Czech>Čas potřebný k použití škrtidla</Czech>
-            <Korean>지혈대에 필요한 치료 시간</Korean>
-            <French>Le temps de traitement nécessaire pour un garrot</French>
-            <Turkish>Turnike için gerekli tedavi süresi</Turkish>
-            <Italian>Tempo necessario per utilizzare il laccio emostatico</Italian>
-        </Key>
     </Package>
 </Project>
