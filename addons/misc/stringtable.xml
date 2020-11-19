@@ -11,6 +11,7 @@
             <Korean>ACE 음악 활성화?</Korean>
             <French>ACE-Misc activé?</French>
             <Turkish>ACE-Misc activated?</Turkish>
+            <Italian>Attivare ACE-Misc?</Italian>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV">
             <English>Attaching IV</English>
@@ -22,6 +23,7 @@
             <Korean>수액 붙이는중</Korean>
             <French>Administrer IV</French>
             <Turkish>IV Bağlanıyor</Turkish>
+            <Italian>Somministrando EV</Italian>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display">
             <English>Attach IV (1000ml)</English>
@@ -33,6 +35,7 @@
             <Korean>수액 붙이기(1000ml)</Korean>
             <French>Administrer IV (1000ml)</French>
             <Turkish>IV (1000ml) Bağla</Turkish>
+            <Italian>Somministrare EV (1000ml)</Italian>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_500">
             <English>Attach IV (500ml)</English>
@@ -44,6 +47,7 @@
             <Korean>수액 붙이기(500ml)</Korean>
             <French>Administrer IV (500ml)</French>
             <Turkish>IV (500ml) Bağla</Turkish>
+            <Italian>Somministrare EV (500ml)</Italian>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_250">
             <English>Attach IV (250ml)</English>
@@ -55,6 +59,7 @@
             <Korean>수액 붙이기(250ml)</Korean>
             <French>Administrer IV (250ml)</French>
             <Turkish>IV (250ml) Bağla</Turkish>
+            <Italian>Somministrare EV (250ml)</Italian>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand">
             <English>Stand: Saline IV (1000ml)</English>
@@ -66,6 +71,7 @@
             <Korean>스탠드: 수액(1000ml)</Korean>
             <French>Accrocher: Saline IV (1000ml)</French>
             <Turkish>Stant: Seruym IV (1000ml)</Turkish>
+            <Italian>Supporto: Fisiologica EV (1000ml)</Italian>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_500">
             <English>Stand: Saline IV (500ml)</English>
@@ -77,6 +83,7 @@
             <Korean>스탠드: 수액(500ml)</Korean>
             <French>Accrocher: Saline IV (500ml)</French>
             <Turkish>Stant: Seruym IV (500ml)</Turkish>
+            <Italian>Supporto: Fisiologica EV (500ml)</Italian>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_250">
             <English>Stand: Saline IV (250ml)</English>
@@ -88,6 +95,7 @@
             <Korean>스탠드: 수액(250ml)</Korean>
             <French>Accrocher: Saline IV (250ml)</French>
             <Turkish>Stant: Seruym IV (250ml)</Turkish>
+            <Italian>Supporto: Fisiologica EV (250ml)</Italian>
         </Key>
         <Key ID="STR_kat_misc_SETTING_LIMITWOUNDS_ENABLE">
             <English>Enable limited wounds</English>
@@ -99,6 +107,7 @@
             <Korean>제한된 상처 사용</Korean>
             <French>Activer une limite de blessures</French>
             <Turkish>Sınırlı yaraları etkinleştirin</Turkish>
+            <Italian>Attivare un limite di ferite</Italian>
         </Key>
         <Key ID="STR_kat_misc_LIMITWOUNDS_Display">
             <English>Bandage wounds</English>
@@ -110,6 +119,7 @@
             <Korean>상처들에 여러붕대 감기</Korean>
             <French>Panser les blessures</French>
             <Turkish>Bandaj yaraları</Turkish>
+            <Italian>Bendare le ferite</Italian>
         </Key>
         <Key ID="STR_kat_misc_Condition_limitWounds_Display">
             <English>Use condition limit wounds</English>
@@ -121,6 +131,7 @@
             <Korean>상태 제한 상처사용</Korean>
             <French>Condition d'utilisation pour limite de blessures</French>
             <Turkish>Durum sınırı yaralarını kullanın</Turkish>
+            <Italian>Condizione d'utilizzo per limite delle ferite</Italian>
         </Key>
         <Key ID="STR_kat_misc_disassemble_stretcher_display">
             <English>Disassemble stretcher</English>
@@ -132,6 +143,7 @@
             <Korean>분리가능한 들것</Korean>
             <French>Désassembler la civière</French>
             <Turkish>Sedyeyi sökün</Turkish>
+            <Italian>Disassemblare la barella</Italian>
         </Key>
         <Key ID="STR_kat_misc_disassemble_attach_display">
             <English>Attach to</English>
@@ -143,6 +155,7 @@
             <Korean>에 부착</Korean>
             <French>Attacher à</French>
             <Turkish>Şuna Bağla</Turkish>
+            <Italian>Collega a</Italian>
         </Key>
     </Package>
 </Project>
