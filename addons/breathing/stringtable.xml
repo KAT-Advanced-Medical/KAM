@@ -153,8 +153,8 @@
             <Chinese>心率監測器: 心率: %1 血氧量: %2</Chinese>
             <Czech>Pulzní oxymetr: HR: %1 Sp02: %2</Czech>
             <Korean>맥박 산소포화도: HR: %1 Sp02: %2</Korean>
-            <French>Oxymètre de pouls: HR: 1% SpO2: 2%</French>
-            <Turkish>Nabız Oksimetresi: HR:% 1 Sp02:% 2</Turkish>
+            <French>Oxymètre de pouls: HR: %1 SpO2: %2</French>
+            <Turkish>Nabız Oksimetresi: HR: %1 Sp02: %2</Turkish>
             <Italian>Pulsossimetro: HR: %1 sp02: %2</Italian>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
@@ -166,7 +166,7 @@
             <Czech>%1 připojený Pulzní oxymetr</Czech>
             <Korean>%1 맥박산소측정기 연결</Korean>
             <French>%1 a connecté l'oxymètre de pouls</French>
-            <Turkish>% 1 bağlı Nabız Ölçer</Turkish>
+            <Turkish>%1 bağlı Nabız Ölçer</Turkish>
             <Italian>%1 ha collegato un pulsossimetro</Italian>
         </Key>
         <Key ID="STR_kat_breathing_hint_name">
@@ -215,9 +215,9 @@
 				%1SpO2 au delà 70% -&gt; Oui
 				%1SpO2 sous 70% -&gt; Non -&gt; ass. Respiration</French>
             <Turkish>Nefes
-				% 1 yeterince havalandırıldı mı?
-				% 1Sp02% 70'in üzerinde -> Evet
-				% 1Sp02% 70'in altında -> Hayır -> eşek. Nefes</Turkish>
+				%1yeterince havalandırıldı mı?
+				%1Sp02 70% 'in üzerinde -> Evet
+				%1Sp02 70% 'in altında -> Hayır -> eşek. Nefes</Turkish>
             <Italian>Respirazione
                 %1Sufficientemente ventilato?
                 %1SpO2 sopra 70% -&gt; Si
@@ -244,7 +244,7 @@
             <Czech>%1 vyléčen pneumotorax</Czech>
             <Korean>%1 기흉치료</Korean>
             <French>%1 a traité un pneumothorax</French>
-            <Turkish>% 1 pnömotoraksı tedavi etti</Turkish>
+            <Turkish>%1 pnömotoraksı tedavi etti</Turkish>
             <Italian>%1 ha trattato un pneumotorace</Italian>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_display">
@@ -400,7 +400,7 @@
             <Czech>%1 léčil hemopneumotorax</Czech>
             <Korean>%1 혈기 흉 치료</Korean>
             <French>%1 Hemo-pneumothorax traité</French>
-            <Turkish>% 1 Hemopnömotoraksı tedavi etti</Turkish>
+            <Turkish>%1 Hemopnömotoraksı tedavi etti</Turkish>
             <Italian>%1 ha trattato un emopneumotorace</Italian>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax_mm">
