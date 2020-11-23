@@ -729,7 +729,7 @@
             <German>%1 hat ein AED durchgeführt</German>
             <Spanish>%1 realicó AED</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
-            <Czech>%1 provedeno AED</Czech>
+            <Czech>%1 použito AED</Czech>
             <Korean>%1 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED</French>
             <Turkish>%1 AED gerçekleştirdi</Turkish>
@@ -741,7 +741,7 @@
             <German>%1 hat ein AED Station durchgeführt</German>
             <Spanish>%1 realicó AED Station</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
-            <Czech>%1 provedeno AED stanice</Czech>
+            <Czech>%1 použita AED stanice</Czech>
             <Korean>%1 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé une station AED</French>
             <Turkish>%1 gerçekleştirilen AED İstasyonu</Turkish>
@@ -753,7 +753,7 @@
             <German>%1 hat ein AED-X durchgeführt</German>
             <Spanish>%1 realicó AED-X</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
-            <Czech>%1 provedeno AED-X</Czech>
+            <Czech>%1 použito AED-X</Czech>
             <Korean>%1 바이탈측정 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED-X</French>
             <Turkish>% 1 AED-X gerçekleştirdi</Turkish>
