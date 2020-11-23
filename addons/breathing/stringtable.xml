@@ -154,7 +154,7 @@
             <Czech>Pulzní oxymetr: HR: %1 Sp02: %2</Czech>
             <Korean>맥박 산소포화도: HR: %1 Sp02: %2</Korean>
             <French>Oxymètre de pouls: HR: %1 SpO2: %2</French>
-            <Turkish>Nabız Oksimetresi: HR:%1 Sp02:%2</Turkish>
+            <Turkish>Nabız Oksimetresi: HR: %1 Sp02: %2</Turkish>
             <Italian>Pulsossimetro: HR: %1 sp02: %2</Italian>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
@@ -216,8 +216,8 @@
 				%1SpO2 sous 70% -&gt; Non -&gt; ass. Respiration</French>
             <Turkish>Nefes
 				%1yeterince havalandırıldı mı?
-				%1Sp02% 70'in üzerinde -> Evet
-				%1Sp02% 70'in altında -> Hayır -> eşek. Nefes</Turkish>
+				%1Sp02 70% 'in üzerinde -> Evet
+				%1Sp02 70% 'in altında -> Hayır -> eşek. Nefes</Turkish>
             <Italian>Respirazione
                 %1Sufficientemente ventilato?
                 %1SpO2 sopra 70% -&gt; Si
