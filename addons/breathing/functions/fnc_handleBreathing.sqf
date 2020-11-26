@@ -103,7 +103,7 @@ if (!local _unit) then {
     if (GVAR(death_timer_enable)) then {
         if (_status <= 5) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
-            [_unit, "#setDead"] call ace_medical_fnc_setDead;
+            [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
 			_unit setVariable ["kat_O2Breathing_PFH", nil];
         };
     };
