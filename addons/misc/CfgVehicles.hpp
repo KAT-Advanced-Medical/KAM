@@ -113,28 +113,6 @@ class CfgVehicles {
         transportMaxBackpacks = 0;
         transportMaxMagazines = 64;
         class TransportItems;
-        class CargoTurret;
-        class Turrets {
-            class MainTurret: CargoTurret {
-                gunnerAction = "passenger_inside_2";
-                gunnerInAction = "passenger_inside_2"; //fixes standing up in steat
-                memoryPointsGetInGunner = "pos cargo";
-                memoryPointsGetInGunnerDir = "pos cargo dir";
-                gunnerName = "Armchair Warrior";
-                gunnerCompartments = "Compartment1";
-                proxyIndex = 1;
-                isPersonTurret = 1;
-                forceHideGunner = 1; //fixes being turned out in seat
-                maxElev = 75;
-                minElev = -75;
-                maxTurn = 95;
-                minTurn = -95;
-                stabilizedInAxes = 3;
-                primaryGunner = 1;
-                dontCreateAI = 0;
-                ejectDeadGunner = 0;
-            };
-        };
         transportSoldier = 1;
         ace_cargo_canLoad = 0;
         ace_Cargo_hasCargo = 0;
