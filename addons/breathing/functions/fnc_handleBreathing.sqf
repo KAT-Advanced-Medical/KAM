@@ -54,6 +54,7 @@ if (!local _unit) then {
     private _o2 = _unit getVariable [QGVAR(o2), false];
     private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
     private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
+    private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
 
     if (_pneumothorax) then {
         [_unit, GVAR(spo2_big_value), false] call FUNC(adjustSpo2);
@@ -64,6 +65,9 @@ if (!local _unit) then {
     };
 
     if (_unit getVariable ["ace_medical_heartRate", 0] > 0) exitWith {
+        if (_overstretch && !_occluded) exitWith {
+            [_unit, GVAR(spo2_small_value), true] call FUNC(adjustSpo2);
+        };
         if (_occluded || _obstruction) exitWith {
             [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
         };
@@ -74,7 +78,6 @@ if (!local _unit) then {
         };
     };
 
-    private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
     private _airwaySafed = _unit getVariable [QEGVAR(airway,airway), false];
 
     switch (true) do {
@@ -100,7 +103,7 @@ if (!local _unit) then {
     if (GVAR(death_timer_enable)) then {
         if (_status <= 5) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
-            [_unit, "#setDead"] call ace_medical_fnc_setDead;
+            [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
 			_unit setVariable ["kat_O2Breathing_PFH", nil];
         };
     };
