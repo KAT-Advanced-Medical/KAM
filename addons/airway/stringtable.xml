@@ -794,5 +794,29 @@
             <Turkish>Guedel Tüp'ü kullanmak ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per posizionare una canula di Guedel</Italian>
         </Key>
+		<Key ID="STR_kat_airway_COLORED_LOGS">
+            <English>Colored activitylogs (AED-X/Pulseoximeter)</English>
+            <German>Bunte Activitylogs (AED-X/Pulseoximeter)</German>
+            <Polish>Kolorowe aktywatory (AED-X/Pulseoksymetr)</Polish>
+            <Spanish>Registros de actividad de color (AED-X/Pulseoxímetro)</Spanish>
+            <Chinese>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinese>
+            <Czech>Barevné protokoly aktivit (AED-X / Pulseoximeter)</Czech>
+            <Korean>컬러 활동 기록 (AED-X / 맥박 측정기)</Korean>
+            <French>Blocs d'activité colorés (AED-X/Pulseoximeter)</French>
+            <Turkish>Renkli aktivite günlükleri (AED-X / Pulseoximeter)</Turkish>
+            <Italian>Zoccoli di attività colorati (AED-X/Pulsossimetro)</Italian>
+        </Key>
+		<Key ID="STR_kat_airway_COLORED_LOGS_DESC">
+            <English>Colors the Activitylogs of AED-X or Pulseoximeter red, if any value is critical</English>
+            <German>Färbt die Activitylogs von AED-X oder Pulsoximeter rot, wenn ein Wert kritisch ist</German>
+            <Polish>Zabarwiać aktywatory AED-X lub pulsoksymetr na czerwono, jeśli jakaś wartość jest krytyczna</Polish>
+            <Spanish>Coloca los registros de actividad del AED-X o del Pulsoxímetro en rojo, si algún valor es crítico</Spanish>
+            <Chinese>将AED-X或Pulseoximeter的Activitylogs染成红色，如果任何值是临界值。</Chinese>
+            <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulseoximeter červeně</Czech>
+            <Korean>중요한 값이있는 경우 AED-X 또는 맥박 산소계의 활동 로그를 빨간색으로 표시합니다.</Korean>
+            <French>Colore les Activitylogs de l'AED-X ou du Pulseoximeter en rouge, si une valeur est critique</French>
+            <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
+            <Italian>Colora gli Activitylogs di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
+        </Key>
     </Package>
 </Project>

@@ -28,7 +28,6 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
-
 // airway Injuries Death Timer
 [
     QGVAR(deathTimer),
@@ -176,6 +175,16 @@ In real life, this will happen sometimes, not quiet often.
     [LLSTRING(TIME_GUEDELTUBUS),LLSTRING(TIME_GUEDELTUBUS_DESC)],
     CBA_SETTINGS_CAT,
     [1, 20, 6, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Enable or disable Colored Action Logs
+[
+    QGVAR(Colored_logs),
+    "CHECKBOX",
+    [LLSTRING(COLORED_LOGS),LLSTRING(COLORED_LOGS_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 
