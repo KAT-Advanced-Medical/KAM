@@ -8,6 +8,9 @@ class CfgFunctions {
 			class updateInjuryList {
                 file = QPATHTOF(functions\fnc_updateInjuryList.sqf);
             };
+			class updateLogList {
+                file = QPATHTOF(functions\fnc_updateLogList.sqf);
+            };
         };
     };
 };
