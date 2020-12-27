@@ -112,7 +112,7 @@
         <Key ID="STR_kat_airway_checkAirway_log">
             <English>%1 checked airways: %2 %3, %4 %5</English>
             <German>%1 überprüfte Atemwege: %2 %3, %4 %5</German>
-            <Polish>%1 sprawdzone drogi oddechowe: %2 %3, %4 %5</Polish>
+            <Polish>%1 sprawdził drogi oddechowe: %2 %3, %4 %5</Polish>
             <Spanish>%1 comprobó las vías aéreas: %2 %3, %4 %5</Spanish>
             <Chinese>%1 檢查呼吸道: %2 %3, %4 %5</Chinese>
             <Czech>Zkontrolovány dýchací cesty: %2 %3, %4 %5 </Czech>
@@ -124,7 +124,7 @@
         <Key ID="STR_kat_airway_airway_log">
             <English>%1 inserted a %2</English>
             <German>%1 intubierte mit %2</German>
-            <Polish>%1 intubowany z %2</Polish>
+            <Polish>%1 intubował %2</Polish>
             <Spanish>%1 intubado con %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
             <Czech>%1 vložil %2</Czech>
@@ -312,7 +312,6 @@
             <French>Hyperextension de la tête annulée</French>
             <Turkish>Hyperextension İptal Edildi</Turkish>
             <Italian>Iperestensione della testa annullata</Italian>
-
         </Key>
         <Key ID="STR_kat_airway_overstretch_info">
             <English>Don't run away, you're saving a life!</English>
@@ -794,10 +793,10 @@
             <Turkish>Guedel Tüp'ü kullanmak ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per posizionare una canula di Guedel</Italian>
         </Key>
-		<Key ID="STR_kat_airway_COLORED_LOGS">
+        <Key ID="STR_kat_airway_COLORED_LOGS">
             <English>Colored activitylogs (AED-X/Pulseoximeter)</English>
             <German>Bunte Activitylogs (AED-X/Pulseoximeter)</German>
-            <Polish>Kolorowe aktywatory (AED-X/Pulseoksymetr)</Polish>
+            <Polish>Kolorowe logi aktywności (AED-X/Pulsoksymetr)</Polish>
             <Spanish>Registros de actividad de color (AED-X/Pulseoxímetro)</Spanish>
             <Chinese>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinese>
             <Czech>Barevné protokoly aktivit (AED-X / Pulseoximeter)</Czech>
@@ -806,10 +805,10 @@
             <Turkish>Renkli aktivite günlükleri (AED-X / Pulseoximeter)</Turkish>
             <Italian>Zoccoli di attività colorati (AED-X/Pulsossimetro)</Italian>
         </Key>
-		<Key ID="STR_kat_airway_COLORED_LOGS_DESC">
+        <Key ID="STR_kat_airway_COLORED_LOGS_DESC">
             <English>Colors the Activitylogs of AED-X or Pulseoximeter red, if any value is critical</English>
             <German>Färbt die Activitylogs von AED-X oder Pulsoximeter rot, wenn ein Wert kritisch ist</German>
-            <Polish>Zabarwiać aktywatory AED-X lub pulsoksymetr na czerwono, jeśli jakaś wartość jest krytyczna</Polish>
+            <Polish>Zabarwia logi AED-X lub pulsoksymetru na czerwono, jeśli jakaś wartość jest krytyczna</Polish>
             <Spanish>Coloca los registros de actividad del AED-X o del Pulsoxímetro en rojo, si algún valor es crítico</Spanish>
             <Chinese>将AED-X或Pulseoximeter的Activitylogs染成红色，如果任何值是临界值。</Chinese>
             <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulseoximeter červeně</Czech>
