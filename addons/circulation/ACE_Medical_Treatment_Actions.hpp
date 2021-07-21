@@ -101,4 +101,42 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(returnAED_X));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
+    class Defibrillator_AED_X_vehicle: Defibrillator {
+        displayName = CSTRING(AED_X_Action_Use_Vehicle);
+        displayNameProgress = CSTRING(AED_X_Action_Progress);
+        items[] = {};
+        callbackSuccess = "[_medic, _patient, 'AED-X'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
+        //condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [ARR_2(_medic, 'kat_AED')] call ace_common_fnc_hasItem || [ARR_2(_medic, 'kat_X_AED')] call ace_common_fnc_hasItem);
+        condition = QFUNC(vehicleCheck);
+        medicRequired = QGVAR(medLvl_AED_X);
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+    };
+    
+    class X_Defibrillator_AED_X_vehicle: Defibrillator_AED_X_vehicle {
+        displayName = CSTRING(X_Action_Use_Vehicle);
+        displayNameProgress = CSTRING(X_Action_Progress);
+        items[] = {};
+        condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), false)])) && QFUNC(vehicleCheck);
+        consumeItem = 1;
+        medicRequired = QGVAR(medLvl_AED_X);
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QFUNC(treatmentAdvanced_X);
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+    };
+
+    class Remove_X_Defibrillator_vehicle: Defibrillator_AED_X_vehicle {
+        displayName = CSTRING(X_Action_Remove_Vehicle);
+        displayNameProgress = CSTRING(X_Remove_Action_Progress);
+        items[] = {};
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
+        treatmentTime = 5;
+        medicRequired = 0;
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(returnAED_X));
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+    };
 };
