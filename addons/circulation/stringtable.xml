@@ -459,6 +459,18 @@
             <Turkish>Monitor vitals</Turkish>
             <Italian>Monitorare parametri vitali</Italian>
         </Key>
+        <Key ID="STR_KAT_circulation_X_Action_Use_Vehicle">
+            <English>Vehicle: Monitor vitals</English>
+            <German>Überwache Werte</German>
+            <Polish>Monitoruj parametry życiowe</Polish>
+            <Spanish>Monitorear vitales</Spanish>
+            <Chinese>監控生命跡象</Chinese>
+            <Czech>Monitorování vitálních funkcí</Czech>
+            <Korean>바이탈 측정</Korean>
+            <French>Monitorer les constantes vitales</French>
+            <Turkish>Monitor vitals</Turkish>
+            <Italian>Monitorare parametri vitali</Italian>
+        </Key>
         <Key ID="STR_KAT_circulation_Defib_Action_Use">
             <English>Use AED defibrillator</English>
             <German>Benutze AED Defibrillator</German>
@@ -507,8 +519,32 @@
             <Turkish>AED-X defibrilatör kullan</Turkish>
             <Italian>Usare il defibrillatore DAE-X</Italian>
         </Key>
+        <Key ID="STR_KAT_circulation_AED_X_Action_Use_Vehicle">
+            <English>Vehicle: Use AED-X defibrillator</English>
+            <German>Benutze AED-X Defibrillator</German>
+            <Polish>Użyj defibrylatora AED-X</Polish>
+            <Spanish>Utilice el desfibrilador AED-X</Spanish>
+            <Chinese>使用AED-X除顫器</Chinese>
+            <Czech>Použít AED-X defibrilátor</Czech>
+            <Korean>바이탈측정 자동제세동기 사용</Korean>
+            <French>Utiliser le défibrillateur AED-X</French>
+            <Turkish>AED-X defibrilatör kullan</Turkish>
+            <Italian>Usare il defibrillatore DAE-X</Italian>
+        </Key>
         <Key ID="STR_KAT_circulation_X_Action_Remove">
             <English>Remove monitoring</English>
+            <German>Entferne Überwachung</German>
+            <Polish>Przestań monitorować</Polish>
+            <Spanish>Quitar monitoreo</Spanish>
+            <Chinese>移除監控</Chinese>
+            <Czech>Odstranit monitorování</Czech>
+            <Korean>측정장치 제거</Korean>
+            <French>Retirer le moniteur</French>
+            <Turkish>İzlemeyi kaldır</Turkish>
+            <Italian>Rimuovere il monitoraggio</Italian>
+        </Key>
+        <Key ID="STR_KAT_circulation_X_Action_Remove_Vehicle">
+            <English>Vehicle: Remove monitoring</English>
             <German>Entferne Überwachung</German>
             <Polish>Przestań monitorować</Polish>
             <Spanish>Quitar monitoreo</Spanish>

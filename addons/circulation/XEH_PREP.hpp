@@ -19,4 +19,5 @@ PREP(removeLog);
 PREP(treatment);
 PREP(treatmentAdvanced_IV);
 PREP(treatmentAdvanced_X);
+PREP(vehicleCheck);
 PREP(wrongBloodTreatment);
