@@ -10,3 +10,4 @@ PREP(limitWounds);
 PREP(removeIVbag);
 PREP(stretcher);
 PREP(treatmentIV);
+PREP(heliStretcherAttach);
