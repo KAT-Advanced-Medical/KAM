@@ -157,5 +157,55 @@
             <Turkish>Şuna Bağla</Turkish>
             <Italian>Collega a</Italian>
         </Key>
+        <Key ID="STR_kat_misc_helistretcher_attach">
+            <English>Attach Stretcher</English>
+            <Polish>Przyczep nosze</Polish>
+            <Czech>Připevnit nosítka</Czech>
+        </Key>
+        <Key ID="STR_kat_misc_helistretcher_lower10m">
+            <English>Lower Stretcher By 10m</English>
+            <Polish>Opuść nosze o 10m</Polish>
+            <Czech>Snížit nosítka o 10m</Czech>
+        </Key>
+        <Key ID="STR_kat_misc_helistretcher_raise10m">
+            <English>Raise Stretcher By 10m</English>
+            <Polish>Wciągnij nosze o 10m</Polish>
+            <Czech>Vytáhnout nosítka o 10m</Czech>
+        </Key>
+        <Key ID="STR_kat_misc_helistretcher_raise">
+            <English>Raise Stretcher</English>
+            <Polish>Wciągnij nosze</Polish>
+            <Czech>Vytáhnout nosítka</Czech>
+        </Key>
+        <Key ID="STR_kat_misc_helistretcher_lower">
+            <English>Lower Stretcher</English>
+            <Polish>Opuść nosze</Polish>
+            <Czech>Snížit nosítka</Czech>
+        </Key>
+        <Key ID="STR_kat_misc_helistretcher_flip">
+            <English>Flip Stretcher</English>
+            <Polish>Obróć nosze</Polish>
+            <Czech>Otočit nosítka</Czech>
+        </Key>
+        <Key ID="STR_kat_misc_helistretcher_attention1">
+            <English>The vehicle you are looking at is not a helicopter!</English>
+            <Polish>Pojazd na który patrzysz nie jest śmigłowcem!</Polish>
+            <Czech>Vozidlo na které se díváte není helikoptéra!</Czech>
+        </Key>
+        <Key ID="STR_kat_misc_helistretcher_attention2">
+            <English>You must be within 15m of the helicopter and look at it!</English>
+            <Polish>Musisz być w zasięgu 15m od śmigłowca i patrzeć w jego kierunku!</Polish>
+            <Czech>Musíte být v rámci 15m od helikoptéry a dívat se na ni!</Czech>
+        </Key>
+        <Key ID="STR_kat_misc_Helistretcher_Display">
+            <English>Attachable Helistretcher</English>
+            <Polish>Nosze śmigłowcowe</Polish>
+            <Czech>Připevnitelná helinosítka</Czech>
+        </Key>
+        <Key ID="STR_kat_misc_Helistretcher_Desc">
+            <English>Allows you to attach a stretcher on helicopter(Double click)</English>
+            <Polish>Pozwala podczepić nosze do śmigłowca(Podwójne kliknięcie)</Polish>
+            <Czech>Umožňuje připevnit nosítka na helikoptéru(Dvojtým kliknutím)</Czech>
+        </Key>
     </Package>
 </Project>
