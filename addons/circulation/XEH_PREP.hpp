@@ -20,3 +20,4 @@ PREP(treatment);
 PREP(treatmentAdvanced_IV);
 PREP(treatmentAdvanced_X);
 PREP(wrongBloodTreatment);
+PREP(handleRespawn);
