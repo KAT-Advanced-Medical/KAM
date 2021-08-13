@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
+ * Author: Katalam, modified by YetheSamartaka
  * Handle the X Series Defi for the patient.
  *
  * Arguments:
@@ -97,13 +97,17 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
 		} else {
 			private _hr = _target getVariable ["ace_medical_heartRate", 80];
 			if (_hr <= 0) then {
-				private _soundPath1 = _player getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
-				playsound3D [_soundPath1, _target, false, getPosASL _target, 2, 1, 15];
+				if ((GVAR(AED_BeepsAndCharge)) == true) then {
+					private _soundPath1 = _player getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
+					playsound3D [_soundPath1, _target, false, getPosASL _target, 2, 1, 15];
+				};
 				sleep 1.478;
 			} else {
 				private _sleep = 60 / _hr;
-				private _soundPath2 = _player getVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav)];
-				playsound3D [_soundPath2, _target, false, getPosASL _target, 5, 1, 15];
+				if ((GVAR(AED_BeepsAndCharge)) == true) then {
+					private _soundPath2 = _player getVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav)];
+					playsound3D [_soundPath2, _target, false, getPosASL _target, 5, 1, 15];
+				};
 				sleep 0.25;
 				sleep _sleep;
 			};

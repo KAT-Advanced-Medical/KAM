@@ -35,6 +35,38 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
+    class KAT_DrawBlood500: CheckPulse {
+        displayName = CSTRING(DrawBlood500_Action_Use);
+        displayNameProgress = CSTRING(DrawBlood_Action_Progress);
+        treatmentTime = GVAR(blood_drawTime_500ml);
+        allowedSelections[] = {"LeftArm", "RightArm"};
+        allowSelfTreatment = GVAR(enable_selfBloodDraw);
+		category = "advanced";
+		medicRequired = 0;
+		consumeItem = 1;
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(draw500));
+        condition = QUOTE([ARR_2(_medic, _patient)] call FUNC(canDraw));
+		items[] = {"KAT_Empty_bloodIV_500"};
+		animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+    };
+	class KAT_DrawBlood250: CheckPulse {
+        displayName = CSTRING(DrawBlood250_Action_Use);
+        displayNameProgress = CSTRING(DrawBlood_Action_Progress);
+        treatmentTime = GVAR(blood_drawTime_250ml);
+        allowedSelections[] = {"LeftArm", "RightArm"};
+        allowSelfTreatment = GVAR(enable_selfBloodDraw);
+		category = "advanced";
+		medicRequired = 0;
+		consumeItem = 1;
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(draw250));
+        condition = QUOTE([ARR_2(_medic, _patient)] call FUNC(canDraw));
+		items[] = {"KAT_Empty_bloodIV_250"};
+		animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+    };
 
     #include "Blood_Medical.hpp"
 	

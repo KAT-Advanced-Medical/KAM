@@ -782,20 +782,44 @@
             <Turkish>AED için başarı şansı</Turkish>
             <Italian>Probabilità di successo del DEA</Italian>
         </Key>
+        <Key ID="STR_KAT_circulation_ALLOW_AED">
+            <English>Allow AED</English>
+            <Polish>Ograniczenie użycia AED</Polish>
+            <German>AED erlauben</German>
+            <Spanish>Permitir AED</Spanish>
+            <Chinese>允許AED</Chinese>
+            <Czech>Povolit AED</Czech>
+            <Korean>AED 허용 </Korean>
+            <French>Autoriser l'AED</French>
+            <Turkish>AED'e izin ver</Turkish>
+            <Italian>Permetti il DEA</Italian>
+        </Key>
+        <Key ID="STR_KAT_circulation_TRAINING_LEVEL_AED">
+            <English>Training level required to use an AED</English>
+            <Polish>Poziom wyszkolenia wymagany do korzystania z AED</Polish>
+            <German>Benötigtes Training Level um den  AED zu nutzen</German>
+            <Spanish>Nivel de entrenamiento requerido para usar un AED</Spanish>
+            <Chinese>使用AED所需的培訓水平</Chinese>
+            <Czech>Úroveň výcviku nutná k použití AED</Czech>
+            <Korean>AED 사용에 필요한 교육 수준 </Korean>
+            <French>Niveau de d'entrainement pour utiliser un AED</French>
+            <Turkish>AED kullanmak için gerekli eğitim seviyesi</Turkish>
+            <Italian>Livello d'addestramento richiesto per usare il DEA</Italian>
+        </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED_X">
             <English>Allow AED-X</English>
             <Polish>Ograniczenie użycia AED-X</Polish>
             <German>AED-X erlauben</German>
             <Spanish>Permitir AED-X</Spanish>
             <Chinese>允許AED-X</Chinese>
-            <Czech>Povolit AED</Czech>
+            <Czech>Povolit AED-X</Czech>
             <Korean>바이탈측정 자동제세동기 허용</Korean>
             <French>Autoriser l'AED-X</French>
             <Turkish>AED-X'e izin ver</Turkish>
             <Italian>Permetti il DEA-X</Italian>
         </Key>
         <Key ID="STR_KAT_circulation_TRAINING_LEVEL_AED_X">
-            <English>Training level requied to use an AED-X</English>
+            <English>Training level required to use an AED-X</English>
             <Polish>Poziom wyszkolenia wymagany do korzystania z AED-X</Polish>
             <German>Benötigtes Training Level um den  AED-X zu nutzen</German>
             <Spanish>Nivel de entrenamiento requerido para usar un AED-X</Spanish>
@@ -889,6 +913,61 @@
             <French>Chances de RCP par défaut</French>
             <Turkish>Varsayılan CPR Şansı</Turkish>
             <Italian>Probabilità di RCP per default</Italian>
+        </Key>
+        <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
+            <English>Field Blood Transfusion Kit (500ml)</English>
+            <Polish>Zestaw do pobierania krwi w terenie (500ml)</Polish>
+            <Czech>Polní transfůzní kit (250ml)</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_FieldBloodTK250_Display">
+            <English>Field Blood Transfusion Kit (250ml)</English>
+            <Polish>Zestaw do pobierania krwi w terenie (250ml)</Polish>
+            <Czech>Polní transfůzní kit (250ml)</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_FieldBloodTK_Desc">
+            <English>Allows you to draw blood and use it</English>
+            <Polish>Pozwala pobierać krew i używać jej</Polish>
+            <Czech>Umožňuje odebírat krev a použít ji</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_DrawBlood500_Action_Use">
+            <English>Draw Blood (500ml)</English>
+            <Polish>Pobierz krew (500ml)</Polish>
+            <Czech>Odebrat krev (500ml)</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_DrawBlood250_Action_Use">
+            <English>Draw Blood (250ml)</English>
+            <Polish>Pobierz krew (250ml)</Polish>
+            <Czech>Odebrat krev (250ml)</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_DrawBlood_Action_Progress">
+            <English>Drawing Blood</English>
+            <Polish>Pobieranie krwi</Polish>
+            <Czech>Odebírání krve</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_SELF_BLOOD_DRAW">
+            <English>Enable self blood draw</English>
+            <Polish>Włącz samodzielne pobieranie krwi</Polish>
+            <Czech>Umožnění vlastního odběru krve</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_BLOOD_DRAWTIME_500ML">
+            <English>Drawing time for 500ml Kit</English>
+            <Polish>Czas pobierania 500ml krwi</Polish>
+            <Czech>Odebírací čas pro 500ml Kit</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_BLOOD_DRAWTIME_250ML">
+            <English>Drawing time for 250ml Kit</English>
+            <Polish>Czas pobierania 250ml krwi</Polish>
+            <Czech>Odebírací čas pro 250ml Kit</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge">
+            <English>AED Beep and Charge sound </English>
+            <Polish>Dźwięki defibrylacji AED</Polish>
+            <Czech>Zvuk AED pípání a nabíjení</Czech>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge_DESC">
+            <English>Enables Beep and Charge sound for AED/AED-X</English>
+            <Polish>Włącza dźwięki defibrylacji AED/AED-X</Polish>
+            <Czech>Zvuk AED pípání a nabíjení</Czech>
         </Key>
     </Package>
 </Project>

@@ -21,3 +21,6 @@ PREP(treatmentAdvanced_IV);
 PREP(treatmentAdvanced_X);
 PREP(wrongBloodTreatment);
 PREP(handleRespawn);
+PREP(draw500);
+PREP(draw250);
+PREP(canDraw);
