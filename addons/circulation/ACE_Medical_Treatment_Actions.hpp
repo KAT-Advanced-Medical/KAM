@@ -82,7 +82,7 @@ class ACE_Medical_Treatment_Actions {
 		callbackFailure = "call ace_medical_treatment_fnc_cprFailure; _medic setVariable ['kat_soundplayed', false, true]; _patient setVariable ['kat_AEDinUse', false, true];";
 		animationMedic = "AinvPknlMstpSnonWnonDr_medic0";
 		treatmentLocations = "GVAR(useLocation_AED)";
-		medicRequired = 1;
+		medicRequired = QGVAR(medLvl_AED);
 		animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
