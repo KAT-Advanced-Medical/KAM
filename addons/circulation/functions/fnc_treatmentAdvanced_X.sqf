@@ -97,14 +97,14 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
 		} else {
 			private _hr = _target getVariable ["ace_medical_heartRate", 80];
 			if (_hr <= 0) then {
-				if ((GVAR(AED_BeepsAndCharge)) == true) then {
+				if (GVAR(AED_BeepsAndCharge)) then {
 					private _soundPath1 = _player getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
 					playsound3D [_soundPath1, _target, false, getPosASL _target, 2, 1, 15];
 				};
 				sleep 1.478;
 			} else {
 				private _sleep = 60 / _hr;
-				if ((GVAR(AED_BeepsAndCharge)) == true) then {
+				if (GVAR(AED_BeepsAndCharge)) then {
 					private _soundPath2 = _player getVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav)];
 					playsound3D [_soundPath2, _target, false, getPosASL _target, 5, 1, 15];
 				};
