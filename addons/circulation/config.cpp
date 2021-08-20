@@ -5,27 +5,29 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            kat_PainkillerItem,
-            kat_X_AEDItem,
-            kat_bloodBankCrate
+            "kat_PainkillerItem",
+            "kat_X_AEDItem",
+            "kat_bloodBankCrate",
+            "ACE_medicalSupplyCrate",
+            "ACE_medicalSupplyCrate_advanced"
         };
         weapons[] = {
-            kat_Painkiller,
-            kat_bloodIV_O,
-            kat_bloodIV_A,
-            kat_bloodIV_B,
-            kat_bloodIV_AB,
-            kat_bloodIV_O_500,
-            kat_bloodIV_A_500,
-            kat_bloodIV_B_500,
-            kat_bloodIV_AB_500,
-            kat_bloodIV_O_250,
-            kat_bloodIV_A_250,
-            kat_bloodIV_B_250,
-            kat_bloodIV_AB_250,
-            kat_PainkillerItem,
-            kat_X_AED,
-            kat_crossPanel
+            "kat_Painkiller",
+            "kat_bloodIV_O",
+            "kat_bloodIV_A",
+            "kat_bloodIV_B",
+            "kat_bloodIV_AB",
+            "kat_bloodIV_O_500",
+            "kat_bloodIV_A_500",
+            "kat_bloodIV_B_500",
+            "kat_bloodIV_AB_500",
+            "kat_bloodIV_O_250",
+            "kat_bloodIV_A_250",
+            "kat_bloodIV_B_250",
+            "kat_bloodIV_AB_250",
+            "kat_PainkillerItem",
+            "kat_X_AED",
+            "kat_crossPanel"
         };
         magazines[] = { };
         requiredAddons[] = {
