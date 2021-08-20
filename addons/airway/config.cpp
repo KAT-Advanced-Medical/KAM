@@ -5,15 +5,17 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            kat_guedelItem,
-            kat_larynxItem,
-            kat_accuvacItem,
-            kat_vomit
+            "kat_guedelItem",
+            "kat_larynxItem",
+            "kat_accuvacItem",
+            "kat_vomit",
+            "ACE_medicalSupplyCrate",
+            "ACE_medicalSupplyCrate_advanced"
         };
         weapons[] = {
-            kat_guedel,
-            kat_larynx,
-            kat_accuvac
+            "kat_guedel",
+            "kat_larynx",
+            "kat_accuvac"
         };
         magazines[] = {};
         requiredAddons[] = {
