@@ -61,13 +61,23 @@ private _type = round random(3);
     }
 ] call CBA_Settings_fnc_init;
 
+//Settable list for using AED per medical class
+[
+    QGVAR(medLvl_AED),
+    "LIST",
+    [LLSTRING(ALLOW_AED),LLSTRING(TRAINING_LEVEL_AED)],
+    CBA_SETTINGS_CAT,
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
 //Settable list for using AED-X per medical class
 [
     QGVAR(medLvl_AED_X),
     "LIST",
     [LLSTRING(ALLOW_AED_X),LLSTRING(TRAINING_LEVEL_AED_X)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 2],
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -139,6 +149,46 @@ private _type = round random(3);
 	CBA_SETTINGS_CAT,
 	[0,100,20,0],
 	true
+] call CBA_Settings_fnc_init;
+
+//Enable self blood draw
+[
+    QGVAR(enable_selfBloodDraw),
+    "LIST",
+    LLSTRING(SETTING_SELF_BLOOD_DRAW),
+    CBA_SETTINGS_CAT,
+    [[0, 1], ["STR_ACE_common_No", "STR_ACE_common_Yes"], 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//blood draw time for 500ml kit
+[
+	QGVAR(blood_drawTime_500ml),
+	"SLIDER",
+	LLSTRING(SETTING_BLOOD_DRAWTIME_500ML),
+	CBA_SETTINGS_CAT,
+	[1,600,50,0],
+	true
+] call CBA_Settings_fnc_init;
+
+//blood draw time for 250ml kit
+[
+	QGVAR(blood_drawTime_250ml),
+	"SLIDER",
+	LLSTRING(SETTING_BLOOD_DRAWTIME_250ML),
+	CBA_SETTINGS_CAT,
+	[1,600,25,0],
+	true
+] call CBA_Settings_fnc_init;
+
+//No aggresive AED Sounds (Beeps and charging)
+[
+    QGVAR(AED_BeepsAndCharge),
+    "CHECKBOX",
+    [LLSTRING(SETTING_AED_BeepsAndCharge), LLSTRING(SETTING_AED_BeepsAndCharge_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
+    true
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;

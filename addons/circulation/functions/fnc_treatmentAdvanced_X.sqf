@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
+ * Author: Katalam, modified by YetheSamartaka
  * Handle the X Series Defi for the patient.
  *
  * Arguments:
@@ -88,7 +88,8 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     [_player, _target] call FUNC(returnAED_X);
 }] call CBA_fnc_waitUntilAndExecute;
 
-// spawns the heart rate beep.
+// spawns the heart rate beep if enabled in CBA settings
+if !(GVAR(AED_BeepsAndCharge)) exitWith {};
 [_target, _player] spawn {
     params ["_target", "_player"];
     while {_target getVariable [QGVAR(X), false]} do {
