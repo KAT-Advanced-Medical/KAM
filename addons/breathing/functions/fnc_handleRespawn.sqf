@@ -26,6 +26,7 @@ _unit setVariable ["KAT_medical_airwayOccluded", false, true];
 _unit setVariable ["KAT_medical_pneumothorax", false, true];
 _unit setVariable ["KAT_medical_hemopneumothorax", false, true];
 _unit setVariable ["KAT_medical_tensionpneumothorax", false, true];
+_unit setVariable ["KAT_medical_activeChestSeal", false, true];
 
 _unit setVariable [QGVAR(pulseoximeter), false, true];
 _unit setVariable ["kat_PulseoxiInUse_PFH", nil];

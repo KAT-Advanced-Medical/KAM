@@ -547,5 +547,124 @@
             <Turkish>Pnömotoraks olasılığı olmadan önce meydana gelmesi gereken, 0 ila 1 ölçeğinde tek bir darbede hasar miktarı. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya sıfır olarak ayarlanması, beklenmedik yaralanmalardan kaynaklanan beklenmedik davranışlara veya pnömotoraksa neden olabilir.</Turkish>
             <Italian>Il danno in un singolo impatto, in una scala da 0 a 1, richiesto prima che si abbia la possibilità di uno pneumotorace. Valori più bassi rendono il pneumotorace più frequente. Valori molto bassi, o lo 0, possono causare comportamenti inaspettati o pneumotorace da ogni ferita.</Italian>
         </Key>
+        <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore">
+            <English>Hardcore pneumothorax</English>
+            <Polish>Trudna odma płucna</Polish>
+            <German>AAAA</German>
+            <Spanish>Neumotórax intenso</Spanish>
+            <Chinese>硬核气胸</Chinese>
+            <Czech>Obtížný pneumotorax</Czech>
+            <Korean>하드코어 기흉</Korean>
+            <French>Pneumothorax intense </French>
+            <Turkish>sert pnömotoraks </Turkish>
+            <Italian>Pneumotorace estremo </Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore_DESC">
+            <English>Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might be helpful</English>
+            <Polish>Włącza tryb trudny dla odmy płucnej przez nie pojawianie się w menu medycznym - Stetoskop może być pomocny</Polish>
+            <German>AAAA</German>
+            <Spanish>Habilita la modificación hardcore para el neumotórax al no hacer que aparezca en el menú médico: el estetoscopio podría ser útil</Spanish>
+            <Chinese>通过不让它出现在医疗菜单中来启用气胸的核心模块 - 听诊器可能会有所帮助</Chinese>
+            <Czech>Povoluje obtížný režim pro pneumotorax, který jej nezobrazí ve zdravotnické nabídnce - Stetoskop by mohl být nápomocný</Czech>
+            <Korean>의료 메뉴에 나타나지 않도록 하여 기흉에 대한 하드코어 모드 활성화 - 청진기가 도움이 될 수 있음</Korean>
+            <French>Active le mod hardcore pour le pneumothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile </French>
+            <Turkish>Tıbbi menüde görünmesini sağlamayarak pnömotoraks için hardcore modunu etkinleştirir - Stetoskop yardımcı olabilir </Turkish>
+            <Italian>Abilita la mod hardcore per il pneumotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile </Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_tensionhemothorax_hardcore">
+            <English>Hardcore tension pneumothorax and hemothorax</English>
+            <Polish>Trudna odma prężna i krwiak opłucnej</Polish><German>AAAA</German>
+            <Spanish>Neumotórax a tensión intenso y hemotórax</Spanish>
+            <Chinese>硬核张力性气胸和血胸</Chinese>
+            <Czech>Obtížný tezní pneumothorax a hemotorax</Czech>
+            <Korean>하드코어 긴장성 기흉과 혈흉</Korean>
+            <French>Pneumothorax et hémothorax sous tension hardcore </French>
+            <Turkish>Sert tansiyon pnömotoraks ve hemotoraks</Turkish>
+            <Italian>Pneumotorace da tensione hardcore ed emotorace</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_tensionhemothorax_hardcore_DESC">
+            <English>Enables hardcore mod for tension and hemothorax by not making it appear in medical menu - Stethoscope might be helpful</English>
+            <Polish>Włącza tryb trudny dla odmy prężnej i krwiaka opłucnej przez nie pojawianie się w menu medycznym - Stetoskop może być pomocny</Polish>
+            <German>AAAA</German>
+            <Spanish>Habilita el modo hardcore para la tensión y el hemotórax al no hacer que aparezca en el menú médico: el estetoscopio podría ser útil</Spanish>
+            <Chinese>通过不在医疗菜单中显示来启用紧张和血胸的硬核模块 - 听诊器可能会有所帮助</Chinese>
+            <Czech>Povoluje obtížný režim pro tezní pneumothorax a hemotorax, který jej nezobrazí ve zdravotnické nabídnce - Stetoskop by mohl být nápomocný</Czech>
+            <Korean>의료 메뉴에 나타나지 않도록 하여 긴장 및 혈흉에 대한 하드코어 모드 활성화 - 청진기가 도움이 될 수 있음</Korean>
+            <French>Active le mod hardcore pour la tension et l'hémothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile</French>
+            <Turkish>Medikal menüde görünmeyerek tansiyon ve hemotoraks için hardcore modu etkinleştirir - Stetoskop yardımcı olabilir</Turkish>
+            <Italian>Abilita la mod hardcore per la tensione e l'emotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_Stethoscope_display">
+            <English>Stethoscope</English>
+            <Polish>Stetoskop</Polish>
+            <German>AAAA</German>
+            <Spanish>Estetoscopio</Spanish>
+            <Chinese>听诊器</Chinese>
+            <Czech>Stetoskop</Czech>
+            <Korean>청진기</Korean>
+            <French>Stéthoscope</French>
+            <Turkish>Stetoskop</Turkish>
+            <Italian>Stetoscopio</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_Stethoscope_desc">
+            <English>Allows you to auscultate lung sounds</English>
+            <Polish>Pozwala na osłuchiwanie płuc</Polish>
+            <German>AAAA</German>
+            <Spanish>Le permite auscultar los sonidos pulmonares.</Spanish>
+            <Chinese>可让您听诊肺音</Chinese>
+            <Czech>Umožňuje vyšetřit plíce poslechem</Czech>
+            <Korean>폐음을 청진할 수 있습니다.</Korean>
+            <French>Permet d'ausculter les sons pulmonaires</French>
+            <Turkish>Akciğer seslerini dinlemenizi sağlar</Turkish>
+            <Italian>Consente di auscultare i suoni polmonari </Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_auscultateLung_display">
+            <English>Auscultate Lung Sounds</English>
+            <Polish>Osłuchaj płuca</Polish>
+            <German>AAAA</German>
+            <Spanish>Auscultar sonidos pulmonares</Spanish>
+            <Chinese>听诊肺音</Chinese>
+            <Czech>Vyšetřit plíce poslechem</Czech>
+            <Korean>폐음 청진</Korean>
+            <French>Ausculter les sons pulmonaires</French>
+            <Turkish>Akciğer Seslerini Dinleyin</Turkish>
+            <Italian>Auscultare i suoni polmonari</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_listening_progress">
+            <English>Listening</English>
+            <Polish>Osłuchiwanie</Polish>
+            <German>AAAA</German>
+            <Spanish>Escuchando</Spanish>
+            <Chinese>听力</Chinese>
+            <Czech>Poslouchám</Czech>
+            <Korean>청취</Korean>
+            <French>Écoute</French>
+            <Turkish>Dinleme</Turkish>
+            <Italian>Ascoltando</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_StethoscopeSoundVolume">
+            <English>Stethoscope Sound Volume</English>
+            <Polish>Głośność Stetoskopu</Polish>
+            <German>AAAA</German>
+            <Spanish>Volumen de sonido del estetoscopio</Spanish>
+            <Chinese>听诊器音量</Chinese>
+            <Czech>Hlasitost zvuku Stetoskopu</Czech>
+            <Korean>청진기 사운드 볼륨</Korean>
+            <French>Volume sonore du stéthoscope</French>
+            <Turkish>Stetoskop Ses Seviyesi</Turkish>
+            <Italian>Volume del suono dello stetoscopio</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_DESCRIPTION_StethoscopeSoundVolume">
+            <English>Determines how loud the thorax sounds are when using Stethoscope</English>
+            <Polish>Określa jak głośne są dźwięki klatki piersiowej podczas używania Stetoskopu</Polish>
+            <German>AAAA</German>
+            <Spanish>Determina qué tan fuertes son los sonidos del tórax cuando se usa el estetoscopio</Spanish>
+            <Chinese>确定使用听诊器时胸部声音的响度</Chinese>
+            <Czech>Určuje jak moc jsou torax zvuky hlasité při používání stetoskopu</Czech>
+            <Korean>청진기를 사용할 때 흉부 소리의 크기를 결정합니다.</Korean>
+            <French>Détermine à quel point les sons du thorax sont forts lors de l'utilisation du stéthoscope</French>
+            <Turkish>Stetoskop kullanırken toraks seslerinin ne kadar yüksek olduğunu belirler</Turkish>
+            <Italian>Determina quanto sono forti i suoni del torace quando si utilizza lo stetoscopio</Italian>
+        </Key>
     </Package>
 </Project>

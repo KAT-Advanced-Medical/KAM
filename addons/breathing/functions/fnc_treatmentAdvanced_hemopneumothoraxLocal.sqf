@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Kygan
+ * Author: Kygan, modified by YetheSamartaka
  * Treatment for hemopneumothorax
  * Main function
  *
@@ -18,7 +18,19 @@
  */
 
 params ["_player", "_target"];
-// systemChat "Executing Hemopneumothorax Treatment local";
-_target setVariable ["KAT_medical_hemopneumothorax", false, true];
 
-[_target, "activity", LSTRING(hemopneumothorax), [[_player] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+_target getVariable ["KAT_medical_hemopneumothorax", false];
+
+if (kat_breathing_tensionhemothorax_hardcore == false) then {
+	if ((_target getVariable ["KAT_medical_hemopneumothorax", false]) && (_target getVariable ["KAT_medical_activeChestSeal", false])) then {
+	[_target, "activity", LSTRING(hemopneumothorax), [[_player] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+	};
+};
+
+if (_target getVariable ["KAT_medical_activeChestSeal", false]) then {
+	_target setVariable ["KAT_medical_hemopneumothorax", false, true];	
+};
+
+if ((_target getVariable ["KAT_medical_pneumothorax", false]) && (_target getVariable ["KAT_medical_hemopneumothorax", false]) && (_target getVariable ["KAT_medical_tensionpneumothorax", false]) ) then {
+	_target setVariable ["KAT_medical_activeChestSeal", false, true];	
+};
