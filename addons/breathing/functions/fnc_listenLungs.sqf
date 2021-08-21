@@ -1,11 +1,26 @@
 #include "script_component.hpp"
+/*
+ * Author: Battlekeeper, modified by YetheSamartaka.
+ * Handles listeting to Lungs.
+ *
+ * Arguments:
+ * 0: Medic <OBJECT>
+ * 1: Patient <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * call kat_breathing_fnc_listenLungs;
+ *
+ * Public: No
+ */
+ 
 _medic =  _this select 0;
 _patient = _this select 1;
 
 [_medic,_patient] spawn {
 params ["_medic","_patient"];
-_medic =_medic;
-_patient =  _patient;
 
 sleep 0.001;
 [14, [], {}, {}, "Listening"] call ace_common_fnc_progressBar;

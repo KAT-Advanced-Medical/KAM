@@ -130,7 +130,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(listening_progress);
         treatmentTime = 1;
         allowedSelections[] = {"Body"};
-        allowSelfTreatment = 0
+        allowSelfTreatment = 0;
 		category = "airway";
 		medicRequired = 0;
 		consumeItem = 0;
