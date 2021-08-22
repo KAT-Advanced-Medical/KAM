@@ -60,7 +60,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Chestseal);
         treatmentTime = 7;
         items[] = {"kat_chestSeal"};
-        condition = "";
+        condition = "true";
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_chestSeal));
         callbackFailure = "";
@@ -85,7 +85,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
-        condition = "";
+        condition = "true";
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_hemopneumothorax));
         callbackFailure = "";
@@ -110,7 +110,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
-        condition = "";
+        condition = "true";
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_tensionpneumothorax));
         callbackFailure = "";
@@ -128,17 +128,18 @@ class ACE_Medical_Treatment_Actions {
     class listentolungs: CheckPulse {
         displayName = CSTRING CSTRING(auscultateLung_display);
         displayNameProgress = CSTRING(listening_progress);
-        treatmentTime = 1;
+        treatmentTime = 14;
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
-		category = "airway";
-		medicRequired = 0;
-		consumeItem = 0;
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(listenLungs));
-		callbackProgress = "";
+		    category = "airway";
+		    medicRequired = 0;
+		    consumeItem = 0;
+        callbackStart = QUOTE([ARR_2(_medic, _patient)] spawn FUNC(listenLungs));
+        callbackSuccess = "";
+		    callbackProgress = "";
         condition = "true";
-		items[] = {"kat_stethoscope"};
-		animationPatient = "";
+		    items[] = {"kat_stethoscope"};
+		    animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
