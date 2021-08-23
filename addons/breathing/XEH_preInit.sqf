@@ -119,4 +119,36 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might help
+[
+    QGVAR(pneumothorax_hardcore),
+    "CHECKBOX",
+    [LLSTRING(SETTING_pneumothorax_hardcore), LLSTRING(SETTING_pneumothorax_hardcore_DESC)],
+    CBA_SETTINGS_CAT,
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+// Enables hardcore mod for tension and hemopneumothorax by not making it appear in medical menu - Stethoscope might help
+[
+    QGVAR(tensionhemothorax_hardcore),
+    "CHECKBOX",
+    [LLSTRING(SETTING_tensionhemothorax_hardcore), LLSTRING(SETTING_tensionhemothorax_hardcore_DESC)],
+    CBA_SETTINGS_CAT,
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+// sound volume for Stethoscope
+/*
+[
+    QGVAR(StethoscopeSoundVolume),
+    "SLIDER",
+    [LLSTRING(SETTING_StethoscopeSoundVolume), LLSTRING(DESCRIPTION_StethoscopeSoundVolume)],
+    CBA_SETTINGS_CAT,
+    [1, 4, 1, 0],
+    true
+] call CBA_Settings_fnc_init;
+*/
+
 ADDON = true;

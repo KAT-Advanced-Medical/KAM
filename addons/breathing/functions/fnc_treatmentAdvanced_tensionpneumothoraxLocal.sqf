@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Kygan
+ * Author: Kygan, modified by YetheSamartaka and Tomcat.
  * Treatment for hemopneumothorax
  * Main function
  *
@@ -17,8 +17,22 @@
  * Public: No
  */
 
-params ["_player", "_target"];
-// systemChat "Executing Hemopneumothorax Treatment local";
-_target setVariable ["KAT_medical_tensionpneumothorax", false, true];
+params ["_medic", "_patient"];
 
-[_target, "activity", LSTRING(tensionpneumothorax), [[_player] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+if !(kat_breathing_tensionhemothorax_hardcore) exitWith {
+	if ((_patient getVariable ["KAT_medical_tensionpneumothorax", false]) && {_patient getVariable ["KAT_medical_activeChestSeal", false]}) then {
+		_patient setVariable ["KAT_medical_tensionpneumothorax", false, true];
+		[_patient, "activity", LSTRING(tensionpneumothorax), [[_medic] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+		if (!(_patient getVariable ["KAT_medical_pneumothorax", false]) && {!(_patient getVariable ["KAT_medical_hemopneumothorax", false]) && {!(_patient getVariable ["KAT_medical_tensionpneumothorax", false])}}) then {
+			_patient setVariable ["KAT_medical_activeChestSeal", false, true];
+		};
+	};
+};
+
+if (_patient getVariable ["KAT_medical_activeChestSeal", false]) then {
+	_patient setVariable ["KAT_medical_tensionpneumothorax", false, true];
+};
+
+if (!(_patient getVariable ["KAT_medical_pneumothorax", false]) && {!(_patient getVariable ["KAT_medical_hemopneumothorax", false]) && {!(_patient getVariable ["KAT_medical_tensionpneumothorax", false])}}) then {
+	_patient setVariable ["KAT_medical_activeChestSeal", false, true];
+};

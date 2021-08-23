@@ -5,12 +5,13 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            kat_PulseoximeterItem,
-            kat_chestSealItem
+            "kat_PulseoximeterItem",
+            "kat_chestSealItem"
         };
         weapons[] = {
-            kat_Pulseoximeter,
-            kat_chestSeal
+            "kat_Pulseoximeter",
+            "kat_chestSeal",
+            "kat_stethoscope"
         };
         magazines[] = {};
         requiredAddons[] = {
@@ -44,3 +45,4 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "CfgSounds.hpp"
