@@ -17,8 +17,6 @@
 
 params ["_unit"];
 
-if (!local _unit) exitWith {};
-
 // KAT_medical_airwayStatus - oxygen saturation
 _unit setVariable ["KAT_medical_airwayStatus", 100, true];
 _unit setVariable ["KAT_medical_airwayOccluded", false, true];

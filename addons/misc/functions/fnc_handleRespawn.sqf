@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [alive, body] call kat_airway_fnc_handleRespawn;
+ * [alive, body] call kat_misc_fnc_handleRespawn;
  *
  * Public: No
  */

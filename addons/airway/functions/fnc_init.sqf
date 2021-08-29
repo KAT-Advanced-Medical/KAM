@@ -17,8 +17,6 @@
 
 params ["_unit"];
 
-if (!local _unit) exitWith {};
-
 _unit setVariable [QGVAR(obstruction), false, true];
 _unit setVariable [QGVAR(airway), false, true];
 _unit setVariable [QGVAR(overstretch), false, true];

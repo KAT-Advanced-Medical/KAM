@@ -14,4 +14,3 @@ PREP(treatmentAdvanced_overstretchHead);
 PREP(treatmentAdvanced_turnaroundHead);
 PREP(updateInjuryList);
 PREP(updateLogList);
-PREP(handleRespawn);
