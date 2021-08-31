@@ -11,3 +11,4 @@ PREP(removeIVbag);
 PREP(stretcher);
 PREP(treatmentIV);
 PREP(heliStretcherAttach);
+PREP(handleRespawn);
