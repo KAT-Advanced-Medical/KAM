@@ -18,13 +18,13 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Enable breathing death timer for airway injuries
+// Lethal SpO2 value
 [
-    QGVAR(death_timer_enable),
-    "CHECKBOX",
-    LLSTRING(SETTING_death_timer_enable),
+    QGVAR(SpO2_dieValue),
+    "SLIDER",
+    LLSTRING(SETTING_SpO2_dieValue),
     CBA_SETTINGS_CAT,
-    [false],
+    [5, 95, 65, 0],
     true
 ] call CBA_Settings_fnc_init;
 

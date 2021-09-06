@@ -28,16 +28,6 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
-// airway Injuries Death Timer
-[
-    QGVAR(deathTimer),
-    "SLIDER",
-    LLSTRING(SETTING_TIMER),
-    CBA_SETTINGS_CAT,
-    [0, 1800, 300, 0],
-    true
-] call CBA_Settings_fnc_init;
-
 // airway Injuries probability obstruction
 [
     QGVAR(probability_obstruction),

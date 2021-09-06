@@ -3,7 +3,6 @@ PREP(checkAirway);
 PREP(displayPatientInformation);
 PREP(handleAirway);
 PREP(handlePuking);
-PREP(handleTimer);
 PREP(init);
 PREP(setUnconscious);
 PREP(treatmentAdvanced_Accuvac);

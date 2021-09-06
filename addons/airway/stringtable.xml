@@ -25,18 +25,6 @@
             <Turkish>ACE-Havayolu yaralanmaları aktive edildi mi?</Turkish>
             <Italian>Attivare ACE-Lesioni Respiratorie?</Italian>
         </Key>
-        <Key ID="STR_kat_airway_SETTING_TIMER">
-            <English>Airway Injuries Death Timer</English>
-            <German>Atemwegsverletzungstimer</German>
-            <Polish>Urazy dróg oddechowych - czas do śmierci</Polish>
-            <Spanish>Tiempo de muerte para Lesiones Respiratorias</Spanish>
-            <Chinese>因呼吸道受傷的死亡倒數時間</Chinese>
-            <Czech>Časomíra úmrtí na zranění dýchacích cest</Czech>
-            <Korean>기도부상으로 인한 사망 타이머</Korean>
-            <French>Délai mortel après blessure respiratoire</French>
-            <Turkish>Havayolu yaralanmaları ölüm zamanlayıcısı</Turkish>
-            <Italian>Tempo al decesso per Lesioni Respiratorie</Italian>
-        </Key>
         <Key ID="STR_kat_airway_SETTING_collapsed">
             <English>Probability for airway collapsing</English>
             <German>Atemwegsverletzungswahrscheinlichkeit</German>

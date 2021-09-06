@@ -12,7 +12,7 @@ if !(GVAR(enable)) exitWith {};
     if !(_state) exitWith {
         _unit call FUNC(init);
     };
-	
+
     private _alive = alive _unit;
     if ((!_alive) || (_unit getVariable [GVAR(string_exit), ""] isEqualTo "keko_wasPunched") || KAT_forceWakeup) exitWith {};
     if (EGVAR(breathing,enable)) then {
@@ -22,7 +22,6 @@ if !(GVAR(enable)) exitWith {};
     [_unit] call FUNC(handlePuking);
 }] call CBA_fnc_addEventHandler;
 
-["deathTimerAirway", {_this call FUNC(handleTimer)}] call CBA_fnc_addEventHandler;
 ["ace_treatmentSucceded",{
     params ["", "_target", "", "_className"];
     if (toUpper _className isEqualTo "PERSONALAIDKIT" && local _target) exitWith {

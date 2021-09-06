@@ -44,7 +44,7 @@ if (!local _unit) then {
         };
         [_unit, GVAR(spo2_big_value), true] call FUNC(adjustSpo2);
     };
-	
+
 	if (_status > 100) exitWith {
         _unit setVariable ["KAT_medical_airwayStatus", 100, true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
@@ -59,7 +59,7 @@ if (!local _unit) then {
     if (_pneumothorax) then {
         [_unit, GVAR(spo2_big_value), false] call FUNC(adjustSpo2);
     };
-    
+
     if (_hemothorax) then {
         [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
     };
@@ -100,12 +100,10 @@ if (!local _unit) then {
 
     _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
 
-    if (GVAR(death_timer_enable)) then {
-        if (_status <= 5) exitWith {
-            [_idPFH] call CBA_fnc_removePerFrameHandler;
-            [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
-			_unit setVariable ["kat_O2Breathing_PFH", nil];
-        };
+    if (_status <= GVAR(SpO2_dieValue)) exitWith {
+      [_idPFH] call CBA_fnc_removePerFrameHandler;
+      [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
+	    _unit setVariable ["kat_O2Breathing_PFH", nil];
     };
 
 }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;

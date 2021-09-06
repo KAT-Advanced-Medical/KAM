@@ -13,17 +13,17 @@
             <Turkish>ACE-Nefes etkinleştirildi mi?</Turkish>
             <Italian>Attivare ACE-Respirazione?</Italian>
         </Key>
-        <Key ID="STR_kat_breathing_SETTING_death_timer_enable">
-            <English>Alternative death timer for airway injuries?</English>
-            <German>Alternativen Todestimer für Atemwegsverlegungen nutzen?</German>
-            <Polish>Alternatywny licznik do śmierci dla urazów dróg oddechowych?</Polish>
-            <Spanish>¿Tiempo de muerte alternativo para lesiones en vías aéreas?</Spanish>
-            <Chinese>額外因呼吸道受傷的死亡倒數？</Chinese>
-            <Czech>Alternativní čas smrti pro zranění dýchacích cest?</Czech>
-            <Korean>호흡기 부상시(막힘) 사망 타이머 별도 적용?</Korean>
-            <French>Délai mortel alternatif des blessures respiratoires?</French>
-            <Turkish>Hava yolu yaralanmaları için alternatif ölüm zamanlayıcısı?</Turkish>
-            <Italian>Tempo di decesso alternativo per lesioni alle vie aeree</Italian>
+        <Key ID="STR_kat_breathing_SETTING_SpO2_dieValue">
+            <English>Lethal SpO2 value</English>
+            <German>Tödlicher SpO2 Wert</German>
+            <Polish>Wartość śmiertelna SpO2</Polish>
+            <Spanish>Valor letal de SpO2</Spanish>
+            <Chinese>致命的SpO2值</Chinese>
+            <Czech>Smrtelná hodnota SpO2</Czech>
+            <Korean>치명적인 SpO2 값</Korean>
+            <French>Valeur létale de la SpO2</French>
+            <Turkish>Ölümcül SpO2 değeri</Turkish>
+            <Italian>Valore letale di SpO2</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_Before">
             <English>Value to add or remove to the Sp02 before 100 sec</English>
