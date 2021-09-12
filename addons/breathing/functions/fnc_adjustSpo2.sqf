@@ -25,7 +25,7 @@ params [
 
 private _newValue = 0;
 private _oldValue = _unit getVariable ["KAT_medical_airwayStatus", 100];
-_value = _value / 100;
+_value = _value / 250;
 
 if (_add) then {
     _newValue = _oldValue + _value;
