@@ -37,6 +37,13 @@ if (!local _unit) then {
     private _pneumothorax = _unit getVariable ["KAT_medical_pneumothorax", false];
     private _hemothorax = _unit getVariable ["KAT_medical_hemopneumothorax", false];
     private _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
+
+    if (_status <= GVAR(SpO2_dieValue)) exitWith {
+      [_idPFH] call CBA_fnc_removePerFrameHandler;
+      [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
+      _unit setVariable ["kat_O2Breathing_PFH", nil];
+    };
+
     if ([_unit] call ace_common_fnc_isAwake && !_pneumothorax && !_hemothorax) exitWith {
         if (_status >= 100) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
@@ -96,14 +103,6 @@ if (!local _unit) then {
         default {
             [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
         };
-    };
-
-    _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
-
-    if (_status <= GVAR(SpO2_dieValue)) exitWith {
-      [_idPFH] call CBA_fnc_removePerFrameHandler;
-      [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
-	    _unit setVariable ["kat_O2Breathing_PFH", nil];
     };
 
 }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
