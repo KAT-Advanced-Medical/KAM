@@ -917,7 +917,7 @@
         <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
             <Polish>Zestaw do pobierania krwi w terenie (500ml)</Polish>
-            <German>AAAA</German>
+            <German>Bluttransfusionsset (500ml)</German>
             <Spanish>Kit de transfusión de sangre de campo (500 ml) </Spanish>
             <Chinese>野战输血套件 (500ml) </Chinese>
             <Czech>Polní transfůzní kit (250ml)</Czech>
@@ -929,7 +929,7 @@
         <Key ID="STR_KAT_circulation_FieldBloodTK250_Display">
             <English>Field Blood Transfusion Kit (250ml)</English>
             <Polish>Zestaw do pobierania krwi w terenie (250ml)</Polish>
-            <German>AAAA</German>
+            <German>Bluttransfusionsset (250ml)</German>
             <Spanish>Kit de transfusión de sangre de campo (250 ml) </Spanish>
             <Chinese>野战输血套件 (250ml) </Chinese>
             <Czech>Polní transfůzní kit (250ml)</Czech>
@@ -941,7 +941,7 @@
         <Key ID="STR_KAT_circulation_FieldBloodTK_Desc">
             <English>Allows you to draw blood and use it</English>
             <Polish>Pozwala pobierać krew i używać jej</Polish>
-            <German>AAAA</German>
+            <German>Ermöglicht die Entnahme von Blut und dessen Verwendung</German>
             <Spanish>Te permite sacar sangre y usarla. </Spanish>
             <Chinese>允许你抽血并使用它 </Chinese>
             <Czech>Umožňuje odebírat krev a použít ji</Czech>
@@ -953,7 +953,7 @@
         <Key ID="STR_KAT_circulation_DrawBlood500_Action_Use">
             <English>Draw Blood (500ml)</English>
             <Polish>Pobierz krew (500ml)</Polish>
-            <German>AAAA</German>
+            <German>Blut abnehmen (500ml)</German>
             <Spanish>Extraer sangre (500 ml) </Spanish>
             <Chinese>抽血 (500ml) </Chinese>
             <Czech>Odebrat krev (500ml)</Czech>
@@ -965,7 +965,7 @@
         <Key ID="STR_KAT_circulation_DrawBlood250_Action_Use">
             <English>Draw Blood (250ml)</English>
             <Polish>Pobierz krew (250ml)</Polish>
-            <German>AAAA</German>
+            <German>Blut abnehmen (250ml)</German>
             <Spanish>Extraer sangre (250 ml) </Spanish>
             <Chinese>抽血 (250ml) </Chinese>
             <Czech>Odebrat krev (250ml)</Czech>
@@ -977,7 +977,7 @@
         <Key ID="STR_KAT_circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>
             <Polish>Pobieranie krwi</Polish>
-            <German>AAAA</German>
+            <German>Entnehme Blut</German>
             <Spanish>Dibujando sangre</Spanish>
             <Chinese>抽血 </Chinese>
             <Czech>Odebírání krve</Czech>
@@ -989,7 +989,7 @@
         <Key ID="STR_KAT_circulation_SETTING_SELF_BLOOD_DRAW">
             <English>Enable self blood draw</English>
             <Polish>Włącz samodzielne pobieranie krwi</Polish>
-            <German>AAAA</German>
+            <German>Selbstblutentnahme aktivieren</German>
             <Spanish>Habilitar la extracción de sangre propia</Spanish>
             <Chinese>启用自抽血</Chinese>
             <Czech>Umožnění vlastního odběru krve</Czech>
@@ -1001,7 +1001,7 @@
         <Key ID="STR_KAT_circulation_SETTING_BLOOD_DRAWTIME_500ML">
             <English>Drawing time for 500ml Kit</English>
             <Polish>Czas pobierania 500ml krwi</Polish>
-            <German>AAAA</German>
+            <German>Blutentnahmezeit für 500ml Kit</German>
             <Spanish>Tiempo de dibujo para el kit de 500ml  </Spanish>
             <Chinese>500 毫升套件的绘制时间  </Chinese>
             <Czech>Odebírací čas pro 500ml Kit</Czech>
@@ -1013,7 +1013,7 @@
         <Key ID="STR_KAT_circulation_SETTING_BLOOD_DRAWTIME_250ML">
             <English>Drawing time for 250ml Kit</English>
             <Polish>Czas pobierania 250ml krwi</Polish>
-            <German>AAAA</German>
+            <German>Blutentnahmezeit für 250ml Kit</German>
             <Spanish>Tiempo de dibujo para el kit de 250ml </Spanish>
             <Chinese>250 毫升套件的绘制时间 </Chinese>
             <Czech>Odebírací čas pro 250ml Kit</Czech>
@@ -1023,9 +1023,9 @@
             <Italian>Tempo di disegno per Kit 250ml </Italian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge">
-            <English>AED Beep and Charge sound </English>
+            <English>AED Beep and Charge sound</English>
             <Polish>Dźwięki defibrylacji AED</Polish>
-            <German>AAAA</German>
+            <German>AED Signal- und Ladeton</German>
             <Spanish>Sonido de carga y pitido del DEA </Spanish>
             <Chinese>AED 蜂鸣声和充电声 </Chinese>
             <Czech>Zvuk AED pípání a nabíjení</Czech>
@@ -1037,7 +1037,7 @@
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge_DESC">
             <English>Enables Beep and Charge sound for AED/AED-X</English>
             <Polish>Włącza dźwięki defibrylacji AED/AED-X</Polish>
-            <German>AAAA</German>
+            <German>Aktiviert Signal- und Ladeton für AED/AED-X</German>
             <Spanish>Habilita el sonido de Beep y Charge para AED / AED-X </Spanish>
             <Chinese>为 AED/AED-X 启用蜂鸣和充电声音 </Chinese>
             <Czech>Zvuk AED pípání a nabíjení</Czech>
