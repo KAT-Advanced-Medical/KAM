@@ -38,28 +38,28 @@
             <Italian>Attivare il valore letale di SpO2</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_Before">
-            <English>Value to add or remove to the Sp02 before 100 sec</English>
-            <German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird vor 100 s</German>
-            <Polish>Wartość do dodania lub odjęcia do SpO2 przed upływem 100 sek</Polish>
-            <Spanish>Valor para agregar o quitar al Sp02 antes de 100 segundos</Spanish>
-            <Chinese>設定是否在一百秒之前增加或移除血氧飽和度監測器</Chinese>
-            <Czech>Hodnota, která se přidá nebo odebere Sp02 před 100 sekundami</Czech>
-            <Korean>100초후에 산소 포화도에 추가하거나 제거할 값</Korean>
-            <French>Valeur à ajouter ou retirer au Sp02 avant 100 sec</French>
-            <Turkish>100 saniyeden önce Sp02'ye eklenecek veya kaldırılacak değer</Turkish>
-            <Italian>Valore da aggiungere o rimuovere alla Sp02 prima di 100 secondi</Italian>
+            <English>Small value to add / remove Sp02 (smaller treatment or injuries)</English>
+            <German>Kleiner Wert zum Hinzufügen / Entfernen von Sp02 (kleinere Behandlung oder Verletzungen)</German>
+            <Polish>Mała wartość do dodania / usunięcia Sp02 (mniejsze zabiegi lub urazy)</Polish>
+            <Spanish>Pequeño valor para añadir / quitar Sp02 (tratamiento o lesiones menores)</Spanish>
+            <Chinese>增加/删除Sp02的价值很小（较小的治疗或伤害）。</Chinese>
+            <Czech>Malá hodnota pro přidání / odebrání Sp02 (menší ošetření nebo zranění)</Czech>
+            <Korean>Sp02를 추가/제거하는 작은 값(더 작은 치료 또는 부상)</Korean>
+            <French>Faible valeur à ajouter/supprimer Sp02 (traitement ou blessures de moindre importance)</French>
+            <Turkish>Sp02 eklemek / çıkarmak için küçük değer (daha küçük tedavi veya yaralanmalar)</Turkish>
+            <Italian>Piccolo valore da aggiungere/rimuovere Sp02 (trattamento minore o lesioni)</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_After">
-            <English>Value to add or remove to the Sp02 after 100 sec</English>
-            <German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird nach 100 s</German>
-            <Polish>Wartość do dodania lub odjęcia do SpO2 po upływie 100 sek</Polish>
-            <Spanish>Valor para agregar o quitar al Sp02 después de 100 segundos</Spanish>
-            <Chinese>設定是否在一百秒之後增加或移除血氧飽和度監測器</Chinese>
-            <Czech>Hodnota, která se přidá nebo odebere Sp02 po 100 sekundami</Czech>
-            <Korean>100초후에 산소 포화도에 추가하거나 제거할 값</Korean>
-            <French>Valeur à ajouter ou retirer au Sp02 après 100 sec</French>
-            <Turkish>100 saniye sonra Sp02'ye eklenecek veya kaldırılacak değer</Turkish>
-            <Italian>Valore da aggiungere o rimuovere alla Sp02 dopo i 100 secondi</Italian>
+            <English>Big value to add / remove Sp02 (bigger treatment or injuries)</English>
+            <German>Großer Wert zum Hinzufügen / Entfernen von Sp02 (größere Behandlung oder Verletzungen)</German>
+            <Polish>Duża wartość do dodania / usunięcia Sp02 (większe leczenie lub urazy)</Polish>
+            <Spanish>Gran valor para añadir / eliminar Sp02 (mayor tratamiento o lesiones)</Spanish>
+            <Chinese>大价值的增加/删除Sp02（更大的治疗或伤害）。</Chinese>
+            <Czech>Velká hodnota pro přidání / odstranění Sp02 (větší léčba nebo zranění)</Czech>
+            <Korean>Sp02 추가/제거에 큰 가치(더 큰 치료 또는 부상)</Korean>
+            <French>Grande valeur pour ajouter / supprimer Sp02 (traitement ou blessures plus importantes)</French>
+            <Turkish>Sp02 eklemek / çıkarmak için büyük değer (daha büyük tedavi veya yaralanmalar)</Turkish>
+            <Italian>Grande valore da aggiungere / rimuovere Sp02 (trattamento più grande o lesioni)</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>

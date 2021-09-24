@@ -25,4 +25,3 @@ _unit setVariable ["KAT_medical_hemopneumothorax", false, true];
 _unit setVariable ["KAT_medical_tensionpneumothorax", false, true];
 
 _unit setVariable [QGVAR(pulseoximeter), false, true];
-_unit setVariable [QGVAR(o2), false, true];
