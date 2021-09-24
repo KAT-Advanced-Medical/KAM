@@ -25,6 +25,18 @@
             <Turkish>Ölümcül SpO2 değeri</Turkish>
             <Italian>Valore letale di SpO2</Italian>
         </Key>
+		<Key ID="STR_kat_breathing_SETTING_SpO2_dieActive">
+            <English>Activate lethal SpO2 value</English>
+            <German>Tödlichen SpO2 Wert aktivieren</German>
+            <Polish>Aktywuj śmiertelną wartość SpO2</Polish>
+            <Spanish>Activar valor letal de SpO2</Spanish>
+            <Chinese>激活致命的SpO2值</Chinese>
+            <Czech>Aktivace smrtelné hodnoty SpO2</Czech>
+            <Korean>치명적인 SpO2 값 활성화</Korean>
+            <French>Activer la valeur létale de la SpO2</French>
+            <Turkish>Ölümcül SpO2 değerini etkinleştir</Turkish>
+            <Italian>Attivare il valore letale di SpO2</Italian>
+        </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_Before">
             <English>Value to add or remove to the Sp02 before 100 sec</English>
             <German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird vor 100 s</German>

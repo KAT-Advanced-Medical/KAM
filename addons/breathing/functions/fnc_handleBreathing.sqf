@@ -38,7 +38,7 @@ if (!local _unit) then {
     private _hemothorax = _unit getVariable ["KAT_medical_hemopneumothorax", false];
     private _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
 
-    if (_status <= GVAR(SpO2_dieValue)) exitWith {
+    if ((_status <= GVAR(SpO2_dieValue)) && {GVAR(SpO2_dieActive)}) exitWith {
       [_idPFH] call CBA_fnc_removePerFrameHandler;
       [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
       _unit setVariable ["kat_O2Breathing_PFH", nil];

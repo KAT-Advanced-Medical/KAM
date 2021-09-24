@@ -28,6 +28,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Enables death in cause of SpO2 lethal value
+[
+    QGVAR(SpO2_dieActive),
+    "CHECKBOX",
+	LLSTRING(SETTING_SpO2_dieActive),
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 // breathing SpO2 add & remove value small
 [
     QGVAR(spo2_small_value),
