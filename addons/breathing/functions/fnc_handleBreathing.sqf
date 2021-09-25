@@ -32,7 +32,7 @@ if (!local _unit) then {
 
 	//If _unit is dead, then remove PFH
     if !(alive _unit) exitWith {
-		diag_log "::handleBreathing:: _unit is dead";
+		//diag_log "::handleBreathing:: _unit is dead";
         [_idPFH] call CBA_fnc_removePerFrameHandler;
 		_unit setVariable ["kat_O2Breathing_PFH", nil];
     };
@@ -48,7 +48,7 @@ if (!local _unit) then {
 
 	//if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && {GVAR(SpO2_dieActive)}) exitWith {
-		diag_log "::handleBreathing:: _unit is dead by lethal Value";
+		//diag_log "::handleBreathing:: _unit is dead by lethal Value";
      	[_idPFH] call CBA_fnc_removePerFrameHandler;
       	[_unit, "#setDead"] call ace_medical_status_fnc_setDead;
       	_unit setVariable ["kat_O2Breathing_PFH", nil];
@@ -56,7 +56,7 @@ if (!local _unit) then {
 
 	//if the _unit has SpO2 equal/over 100, then remove the PFH
 	if (_status > 100) exitWith {
-		diag_log "::handleBreathing:: SpO2 over 100";
+		//diag_log "::handleBreathing:: SpO2 over 100";
 		_unit setVariable ["KAT_medical_airwayStatus", 100, true];
 		[_idPFH] call CBA_fnc_removePerFrameHandler;
 		_unit setVariable ["kat_O2Breathing_PFH", nil];
@@ -64,25 +64,25 @@ if (!local _unit) then {
 
 	//if the _unit is awake withouth injuries, then add SpO2
     if ([_unit] call ace_common_fnc_isAwake && !_pneumothorax && !_hemothorax) exitWith {
-		diag_log "::handleBreathing:: no inuries (add)";
+		//diag_log "::handleBreathing:: no inuries (add)";
         [_unit, GVAR(spo2_big_value), true] call FUNC(adjustSpo2);
     };
 
 	//if the _unit has a pneumothorax, then remove a big value of SpO2
     if (_pneumothorax) then {
-		diag_log "::handleBreathing:: _unit has pneumothorax";
+		//diag_log "::handleBreathing:: _unit has pneumothorax";
         [_unit, GVAR(spo2_big_value), false] call FUNC(adjustSpo2);
     };
 
 	//if the _unit has a hemothorax, then remove a big value of SpO2
     if (_hemothorax) then {
-		diag_log "::handleBreathing:: _unit has hemothorax";
+		//diag_log "::handleBreathing:: _unit has hemothorax";
         [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
     };
 
 	//if the _unit has a heartrate bigger than 0, then remove/add x value of SpO2
     if (_unit getVariable ["ace_medical_heartRate", 0] > 0) exitWith {
-		diag_log "::handleBreathing:: HR over 0";
+		//diag_log "::handleBreathing:: HR over 0";
         if (_overstretch && !_occluded) exitWith {
             [_unit, GVAR(spo2_small_value), true] call FUNC(adjustSpo2);
         };
@@ -94,7 +94,7 @@ if (!local _unit) then {
 
 	//if the _unit has no heartrate, then remove/add x value of SpO2
     switch (true) do {
-		diag_log "::handleBreathing:: switch gets executed";
+		//diag_log "::handleBreathing:: switch gets executed";
         case (_overstretch && !_occluded): {
             [_unit, GVAR(spo2_small_value), true] call FUNC(adjustSpo2);
         };
