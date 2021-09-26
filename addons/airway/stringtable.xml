@@ -255,7 +255,7 @@
         </Key>
 		<Key ID="STR_kat_airway_Airway_turnaroundSuccess">
             <English>Occlusion removed</English>
-            <German>Verstopf entfernt</German>
+            <German>Verstopfung entfernt</German>
             <Polish>Zablokowanie usunięte</Polish>
             <Spanish>Oclusión eliminada</Spanish>
             <Chinese>遮擋移除</Chinese>
@@ -267,7 +267,7 @@
         </Key>
 		<Key ID="STR_kat_airway_Airway_NotClearForItem">
             <English>Item could not be used, airways are not clear</English>
-            <German>Artikel konnte nicht verwendet werden, Atemwege sind nicht frei</German>
+            <German>Gegenstand konnte nicht verwendet werden, Atemwege sind nicht frei</German>
             <Polish>Przedmiot nie może zostać użyty, drogi oddechowe nie są czyste</Polish>
             <Spanish>El artículo no se pudo usar, las vías respiratorias no están despejadas</Spanish>
             <Chinese>物品无法使用，气道不明</Chinese>
