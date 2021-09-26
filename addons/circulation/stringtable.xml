@@ -984,7 +984,7 @@
             <Korean>혈액 그리기 </Korean>
             <French>Prélèvement de sang </French>
             <Turkish>Kan Alma </Turkish>
-            <Italian>Disegnare il sangue </Italian>
+            <Italian>Prelevare sangue</Italian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_SELF_BLOOD_DRAW">
             <English>Enable self blood draw</English>
