@@ -25,7 +25,7 @@
             <Turkish>Ölümcül SpO2 değeri</Turkish>
             <Italian>Valore letale di SpO2</Italian>
         </Key>
-		<Key ID="STR_kat_breathing_SETTING_SpO2_dieActive">
+        <Key ID="STR_kat_breathing_SETTING_SpO2_dieActive">
             <English>Activate lethal SpO2 value</English>
             <German>Tödlichen SpO2 Wert aktivieren</German>
             <Polish>Aktywuj śmiertelną wartość SpO2</Polish>
@@ -40,7 +40,7 @@
         <Key ID="STR_kat_breathing_SETTING_Value_Before">
             <English>Small value to add / remove Sp02 (smaller treatment or injuries)</English>
             <German>Kleiner Wert zum Hinzufügen / Entfernen von Sp02 (kleinere Behandlung oder Verletzungen)</German>
-            <Polish>Mała wartość do dodania / usunięcia Sp02 (mniejsze zabiegi lub urazy)</Polish>
+            <Polish>Mała wartość do dodania / usunięcia SpO2 (mniejsze zabiegi lub urazy)</Polish>
             <Spanish>Pequeño valor para añadir / quitar Sp02 (tratamiento o lesiones menores)</Spanish>
             <Chinese>增加/删除Sp02的价值很小（较小的治疗或伤害）。</Chinese>
             <Czech>Malá hodnota pro přidání / odebrání Sp02 (menší ošetření nebo zranění)</Czech>
@@ -52,7 +52,7 @@
         <Key ID="STR_kat_breathing_SETTING_Value_After">
             <English>Big value to add / remove Sp02 (bigger treatment or injuries)</English>
             <German>Großer Wert zum Hinzufügen / Entfernen von Sp02 (größere Behandlung oder Verletzungen)</German>
-            <Polish>Duża wartość do dodania / usunięcia Sp02 (większe leczenie lub urazy)</Polish>
+            <Polish>Duża wartość do dodania / usunięcia SpO2 (większe leczenie lub urazy)</Polish>
             <Spanish>Gran valor para añadir / eliminar Sp02 (mayor tratamiento o lesiones)</Spanish>
             <Chinese>大价值的增加/删除Sp02（更大的治疗或伤害）。</Chinese>
             <Czech>Velká hodnota pro přidání / odstranění Sp02 (větší léčba nebo zranění)</Czech>
@@ -65,7 +65,7 @@
             <English>Probability for a pneumothorax</English>
             <German>Wahrscheinlichkeit für einen Pneumothorax</German>
             <Spanish>Probabilidad de un pneumotórax</Spanish>
-            <Polish>Szansa na odmę opłucną</Polish>
+            <Polish>Szansa na odmę płucną</Polish>
             <Chinese>氣胸的機率</Chinese>
             <Czech>Pravděpodobnost pneumotoraxu</Czech>
             <Korean>기흉 가능성</Korean>
@@ -82,7 +82,7 @@
             <Czech>Připojit Pulzní oxymetr</Czech>
             <Korean>맥박산소측정기 부착</Korean>
             <French>Placer l'oxymètre de pouls</French>
-            <Turkish>Nabız Oksimetresini Takın></Turkish>
+            <Turkish>Nabız Oksimetresini Takın&gt;</Turkish>
             <Italian>Collegare pulsossimetro</Italian>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display_Remove">
@@ -228,8 +228,8 @@
 				        %1SpO2 sous 70% -&gt; Non -&gt; ass. Respiration</French>
             <Turkish>Nefes
 				        %1yeterince havalandırıldı mı?
-				        %1Sp02 70% 'in üzerinde -> Evet
-				        %1Sp02 70% 'in altında -> Hayır -> eşek. Nefes</Turkish>
+				        %1Sp02 70% 'in üzerinde -&gt; Evet
+				        %1Sp02 70% 'in altında -&gt; Hayır -&gt; eşek. Nefes</Turkish>
             <Italian>Respirazione
                 %1Sufficientemente ventilato?
                 %1SpO2 sopra 70% -&gt; Si
@@ -418,7 +418,7 @@
         <Key ID="STR_kat_breathing_hemopneumothorax_mm">
             <English>1x Hemopneumothorax</English>
             <German>1x Hämatopneumothorax</German>
-            <Polish>1x Odma opłucnowa</Polish>
+            <Polish>1x Krwiak opłucnej</Polish>
             <Spanish>1x Hemoneumotórax</Spanish>
             <Chinese>血气胸</Chinese>
             <Czech>1x Hemopneumotorax</Czech>
