@@ -253,6 +253,30 @@
             <Turkish>Havayolları temiz</Turkish>
             <Italian>Le vie aeree sono libere</Italian>
         </Key>
+		<Key ID="STR_kat_airway_Airway_turnaroundSuccess">
+            <English>Occlusion removed</English>
+            <German>Verstopf entfernt</German>
+            <Polish>Zablokowanie usunięte</Polish>
+            <Spanish>Oclusión eliminada</Spanish>
+            <Chinese>遮擋移除</Chinese>
+            <Czech>Uzavření odstraněno</Czech>
+            <Korean>폐색 제거됨</Korean>
+            <French>Occlusion supprimée</French>
+            <Turkish>Tıkanıklık kaldırıldı</Turkish>
+            <Italian>Occlusione rimossa</Italian>
+        </Key>
+		<Key ID="STR_kat_airway_Airway_NotClearForItem">
+            <English>Item could not be used, airways are not clear</English>
+            <German>Artikel konnte nicht verwendet werden, Atemwege sind nicht frei</German>
+            <Polish>Przedmiot nie może zostać użyty, drogi oddechowe nie są czyste</Polish>
+            <Spanish>El artículo no se pudo usar, las vías respiratorias no están despejadas</Spanish>
+            <Chinese>物品无法使用，气道不明</Chinese>
+            <Czech>Předmět nemohl být použit, dýchací cesty nejsou volné</Czech>
+            <Korean>항목을 사용할 수 없음, 기도가 명확하지 않음</Korean>
+            <French>L'article n'a pas pu être utilisé, les voies respiratoires ne sont pas dégagées</French>
+            <Turkish>Öğe kullanılamadı, hava yolları açık değil</Turkish>
+            <Italian>L'articolo non può essere utilizzato, le vie aeree non sono libere</Italian>
+        </Key>
         <Key ID="STR_kat_airway_overstretch">
             <English>Hyperextending Head</English>
             <German>Kopf überstrecken</German>
@@ -314,16 +338,16 @@
             <Italian>Non andartene, stai salvando una vita!</Italian>
         </Key>
         <Key ID="STR_kat_airway_turnaround_info">
-            <English>You tried to remove the vomit</English>
-            <German>Du probierst das Erbrochene zu entfernen</German>
-            <Polish>Próbowałeś usunąć wymiociny</Polish>
-            <Spanish>Trataste de quitar el vómito</Spanish>
-            <Chinese>你試圖清除嘔吐物</Chinese>
-            <Czech>Pokusil si se odstranit zvratky</Czech>
-            <Korean>이물질을 제거하려 시도했지만 실패함</Korean>
-            <French>Vous avez essayé de retirer le vomi</French>
-            <Turkish>Kusmuğu çıkarmaya çalıştın</Turkish>
-            <Italian>Hai provato a rimuovere il vomito</Italian>
+            <English>Head turn performed, airways are still not clear</English>
+            <German>Kopfdrehung durchgeführt, Atemwege sind noch nicht frei</German>
+            <Polish>Obrót głowy wykonany, drogi oddechowe wciąż nie są czyste</Polish>
+            <Spanish>Giro de cabeza realizado, las vías respiratorias aún no están despejadas</Spanish>
+            <Chinese>转头，气道仍不清楚</Chinese>
+            <Czech>Hlavou se otočilo, dýchací cesty stále nejsou volné</Czech>
+            <Korean>머리 회전 수행, 기도는 여전히 명확하지 않음</Korean>
+            <French>Tour de tête effectué, les voies respiratoires ne sont toujours pas dégagées</French>
+            <Turkish>Baş dönüşü yapıldı, hava yolları hala net değil</Turkish>
+            <Italian>Rotazione della testa eseguita, le vie aeree non sono ancora libere</Italian>
         </Key>
         <Key ID="STR_kat_airway_turnaround">
             <English>Head turning</English>
