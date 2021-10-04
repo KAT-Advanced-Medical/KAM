@@ -126,7 +126,7 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
     };
     class listentolungs: CheckPulse {
-        displayName = CSTRING CSTRING(auscultateLung_display);
+        displayName = CSTRING(auscultateLung_display);
         displayNameProgress = CSTRING(listening_progress);
         treatmentTime = 14;
         allowedSelections[] = {"Body"};
