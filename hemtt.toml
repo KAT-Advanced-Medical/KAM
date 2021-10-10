@@ -1,0 +1,7 @@
+name = "KAT - ADV Medical"
+prefix = "kat"
+author = "Katlam"
+template = "cba"
+mainprefix = "x"
+folder_optionals = true
+sig_version = 3
