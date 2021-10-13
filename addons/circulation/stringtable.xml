@@ -12,7 +12,7 @@
             <French>Ace-Circulation activé?</French>
             <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
             <Italian>Attivare ACE-Circolazione?</Italian>
-        </Key>
+        </Key>        
         <Key ID="STR_kat_circulation_SETTING_variableHR_ENABLE">
             <English>Metabolism Dependent heartrate?</English>
             <German>Stoffwechselabhängiger Puls?</German>
@@ -985,6 +985,9 @@
             <French>Prélèvement de sang </French>
             <Turkish>Kan Alma </Turkish>
             <Italian>Prelevare sangue</Italian>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_BLOODGROUPS">
+            <English>Use Bloodgroups for drawing blood?</English>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_SELF_BLOOD_DRAW">
             <English>Enable self blood draw</English>

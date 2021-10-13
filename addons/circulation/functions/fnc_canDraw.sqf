@@ -1,23 +1,37 @@
 /*
- * Author: Battlekeeper, modified by YetheSamartaka
+ * Author: Battlekeeper, modified by YetheSamartaka & Slatery
  * Condition function for the blood drawing
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Volume of Blood to remove <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [medic, medic] call kat_circulation_fnc_canDraw;
+ * [medic, medic, 500] call kat_circulation_fnc_canDraw;
  *
  * Public: No
  */
 
-params ["_medic","_patient"];
+params ["_medic","_patient","_volume"];
 
-_medic = _this select 0;
-_patient = _this select 1;
-if ((_patient getVariable ["ace_medical_bloodVolume", 6.0]) > 2.0) exitWith {true};
+/**
+ * @Slatery - if you're using params, you don't need to use _this select x. It is wasted processing
+ */
+//_medic = _this select 0;
+//_patient = _this select 1;
+
+
+/**
+ * @Slatery - Minimum blood volume changed from 2L to 5L. Healthy patients should not have more than ~500ml drawn, however this isn't really translatable in game too well since this is meant to be in combat so a buffer of 1L total loss instead
+ * Changing to compare what the volume would be post draw to make sure that you don't accidentally kill the patient you're drawing from
+ */
+private _bagItem = format ["ACE_bloodIV_%1", _volume];
+private _bloodVolume = (_patient getVariable ["ace_medical_bloodVolume", 6.0]);
+private _volumeChange = _volume/100;
+private _canAddItem = ((_medic canAddItemToUniform _bagItem) || (_medic canAddItemToVest _bagItem) || (_medic canAddItemToBackpack _bagItem)); // make sure the blood can actually be added to the medic, so you don't just lose blood
+if (((_bloodVolume - _volumeChange) > 5.0) && _canAddItem) exitWith {true};
 false

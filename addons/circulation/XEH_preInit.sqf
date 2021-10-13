@@ -151,6 +151,16 @@ private _type = round random(3);
 	true
 ] call CBA_Settings_fnc_init;
 
+
+[
+    QGVAR(bloodGroups),
+    "CHECKBOX",
+    LLSTRING(SETTING_BLOODGROUPS),
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 //Enable self blood draw
 [
     QGVAR(enable_selfBloodDraw),
