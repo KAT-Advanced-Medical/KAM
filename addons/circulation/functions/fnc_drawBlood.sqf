@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Battlekeeper, modified by YetheSamartaka
  * Refactored by Slatery
@@ -22,11 +23,11 @@ params ["_medic","_patient","_volume"];
 private _modStr = "ACE_";
 private _bloodtypeStr = "";
 private _bagVolumeStr = format ["_%1",_volume];
-private _volumeChange = _volume/100;
+private _volumeChange = _volume/1000;
 private _bloodVolume = (_patient getVariable ["ace_medical_bloodVolume", 6.0]);
 if (GVAR(bloodGroups)) then {
     _modStr = "kat_";
-    _bloodtype = [_patient] call kat_circulation_fnc_bloodType;
+    _bloodtype = [_patient] call FUNC(bloodType);
     _bloodtypeStr = format ["_%1",_bloodtype];
 };
 private _itemStr = format ["%1bloodIV%2%3",_modStr,_bloodtypeStr,_bagVolumeStr];

@@ -1025,6 +1025,9 @@
             <Turkish>250ml Kit için çizim süresi </Turkish>
             <Italian>Tempo di disegno per Kit 250ml </Italian>
         </Key>
+        <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW">
+            <English>Minimum volume of blood allowed to drain a patient to?</English>
+        </Key>
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge">
             <English>AED Beep and Charge sound</English>
             <Polish>Dźwięki defibrylacji AED</Polish>
