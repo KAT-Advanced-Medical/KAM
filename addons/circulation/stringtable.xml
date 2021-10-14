@@ -986,7 +986,7 @@
             <Turkish>Kan Alma </Turkish>
             <Italian>Prelevare sangue</Italian>
         </Key>
-        <Key ID="STR_kat_circulation_SETTING_BLOODGROUPS">
+        <Key ID="STR_kat_circulation_SETTING_DRAW_BLOODGROUPS">
             <English>Use Bloodgroups for drawing blood?</English>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_SELF_BLOOD_DRAW">

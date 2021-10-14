@@ -155,7 +155,7 @@ private _type = round random(3);
 [
     QGVAR(bloodGroups),
     "CHECKBOX",
-    LLSTRING(SETTING_BLOODGROUPS),
+    LLSTRING(SETTING_DRAW_BLOODGROUPS),
     CBA_SETTINGS_CAT,
     [true],
     true
