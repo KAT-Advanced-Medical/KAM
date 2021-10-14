@@ -1,12 +1,12 @@
 /*
  * Author: Battlekeeper, modified by YetheSamartaka
  * Refactored by Slatery
- * Handles drawign 250ml of blood
+ * Handles drawing of blood into a bag
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Volume of Blood to remove <NUMBER>
+ * 2: Volume of Blood to remove (in milliliters) <NUMBER>
  *
  * Return Value:
  * None
@@ -32,4 +32,3 @@ if (GVAR(bloodGroups)) then {
 private _itemStr = format ["%1bloodIV%2%3",_modStr,_bloodtypeStr,_bagVolumeStr];
 _medic addItem _itemStr;
 _patient setVariable ["ace_medical_bloodVolume", _bloodVolume - _volumeChange,true];
-          

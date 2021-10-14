@@ -5,13 +5,13 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Volume of Blood to remove <NUMBER>
+ * 2: Volume of Blood to remove (in milliliters) <NUMBER>
  *
  * Return Value:
- * None
+ * <BOOLEAN>
  *
  * Example:
- * [medic, medic, 500] call kat_circulation_fnc_canDraw;
+ * _allowedToDraw = [medic, medic, 500] call kat_circulation_fnc_canDraw;
  *
  * Public: No
  */
@@ -26,7 +26,7 @@ params ["_medic","_patient","_volume"];
 
 
 /**
- * @Slatery - Minimum blood volume changed from 2L to 5L. Healthy patients should not have more than ~500ml drawn, however this isn't really translatable in game too well since this is meant to be in combat so a buffer of 1L total loss instead
+ * @Slatery - Minimum blood volume changed from 2L to 5L. Healthy patients should not have more than ~500ml drawn, however this isn't really translatable in game too well since this is meant to be in combat, so a buffer of 1L total loss instead
  * Changing to compare what the volume would be post draw to make sure that you don't accidentally kill the patient you're drawing from
  */
 private _bagItem = format ["ACE_bloodIV_%1", _volume];
