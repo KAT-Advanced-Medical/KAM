@@ -31,4 +31,5 @@ if (GVAR(bloodGroups)) then {
 };
 private _itemStr = format ["%1bloodIV%2%3",_modStr,_bloodtypeStr,_bagVolumeStr];
 _medic addItem _itemStr;
-_patient setVariable ["ace_medical_bloodVolume", _bloodVolume - _volumeChange,true];          
+_patient setVariable ["ace_medical_bloodVolume", _bloodVolume - _volumeChange,true];
+          
