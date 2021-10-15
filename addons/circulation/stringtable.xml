@@ -1026,7 +1026,10 @@
             <Italian>Tempo di disegno per Kit 250ml </Italian>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW">
-            <English>Minimum volume of blood allowed to drain a patient to in litres</English>
+            <English>Minimum blood volume for donor (liters)</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW_DESC">
+            <English>Minimum volume of blood allowed to drain a donor to, to ignore this setting set to 0</English>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge">
             <English>AED Beep and Charge sound</English>

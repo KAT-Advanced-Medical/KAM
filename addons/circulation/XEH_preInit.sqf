@@ -195,7 +195,7 @@ private _type = round random(3);
 [
     QGVAR(blood_draw_limit),
     "SLIDER",
-    LLSTRING(SETTING_MINIMUM_SAFE_DRAW),
+    [LLSTRING(SETTING_MINIMUM_SAFE_DRAW),LLSTRING(SETTING_MINIMUM_SAFE_DRAW_DESC)],
     CBA_SETTINGS_CAT,
     [0, 6, 3.6, 1], // 3.6 default matches ACE Class IV hemorrhage 
     true
