@@ -253,7 +253,7 @@
             <Turkish>Havayolları temiz</Turkish>
             <Italian>Le vie aeree sono libere</Italian>
         </Key>
-		<Key ID="STR_kat_airway_Airway_turnaroundSuccess">
+        <Key ID="STR_kat_airway_Airway_turnaroundSuccess">
             <English>Occlusion removed</English>
             <German>Verstopfung entfernt</German>
             <Polish>Zablokowanie usunięte</Polish>
@@ -265,7 +265,7 @@
             <Turkish>Tıkanıklık kaldırıldı</Turkish>
             <Italian>Occlusione rimossa</Italian>
         </Key>
-		<Key ID="STR_kat_airway_Airway_NotClearForItem">
+        <Key ID="STR_kat_airway_Airway_NotClearForItem">
             <English>Item could not be used, airways are not clear</English>
             <German>Gegenstand konnte nicht verwendet werden, Atemwege sind nicht frei</German>
             <Polish>Przedmiot nie może zostać użyty, drogi oddechowe nie są czyste</Polish>
@@ -400,7 +400,7 @@
         <Key ID="STR_kat_airway_action_placing">
             <English>Placing</English>
             <German>Setzen</German>
-            <Polish>Kładzenie</Polish>
+            <Polish>Zakładanie</Polish>
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
             <Czech>Pokládám</Czech>

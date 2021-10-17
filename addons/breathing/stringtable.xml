@@ -76,7 +76,7 @@
         <Key ID="STR_kat_breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
             <German>Benutze Pulsoximeter</German>
-            <Polish>Użyj Pulsoksymetru</Polish>
+            <Polish>Załóż Pulsoksymetr</Polish>
             <Spanish>Usar oxímetro de pulso</Spanish>
             <Chinese>掛載心率監測器</Chinese>
             <Czech>Připojit Pulzní oxymetr</Czech>
@@ -88,7 +88,7 @@
         <Key ID="STR_kat_breathing_Pulseoximeter_Display_Remove">
             <English>Remove Pulse Oximeter</English>
             <German>Entferne Pulsoximeter</German>
-            <Polish>Usuń Pulsoksymetr</Polish>
+            <Polish>Zdejmij Pulsoksymetr</Polish>
             <Spanish>Quitar oxímetro de pulso</Spanish>
             <Chinese>移除心率監測器</Chinese>
             <Czech>Odstranit Pulzní oxymetr</Czech>
@@ -124,7 +124,7 @@
         <Key ID="STR_kat_breathing_placing">
             <English>Placing</English>
             <German>Anlegen</German>
-            <Polish>Kładzenie</Polish>
+            <Polish>Zakładanie</Polish>
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
             <Czech>Dávám</Czech>
@@ -148,7 +148,7 @@
         <Key ID="STR_kat_breathing_pulseoxi_NA">
             <English>Pulse Oximeter already connected</English>
             <German>Pulsoximeter bereits vorhanden</German>
-            <Polish>Pulsoksymetr jest już podłączony</Polish>
+            <Polish>Pulsoksymetr jest już założony</Polish>
             <Spanish>El oxímetro de pulso ya está conectado</Spanish>
             <Chinese>心率監測器已經連接了</Chinese>
             <Czech>Pulzní oxymetr je již připojen</Czech>
@@ -172,7 +172,7 @@
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
             <German>%1 hat Pulsoximeter angelegt</German>
-            <Polish>%1 podłączył Pulsoksymetr</Polish>
+            <Polish>%1 założył Pulsoksymetr</Polish>
             <Spanish>%1 conectado al Oxímetro de pulso</Spanish>
             <Chinese>%1 連接著心率監測器</Chinese>
             <Czech>%1 připojený Pulzní oxymetr</Czech>
@@ -275,7 +275,7 @@
             <English>1x Pneumothorax</English>
             <German>1x Pneumothorax</German>
             <Polish>1x Odma płucna</Polish>
-            <Spanish>1x PNeumotórax</Spanish>
+            <Spanish>1x Pneumotórax</Spanish>
             <Chinese>1等氣胸</Chinese>
             <Czech>1x Pneumotorax</Czech>
             <Korean>1x 기흉</Korean>
@@ -394,12 +394,12 @@
         <Key ID="STR_kat_breathing_hemopneumothorax_display">
             <English>Drain Fluid</English>
             <German>Flüssigkeit ablassen</German>
-            <Spanish>Descompresión con aguja</Spanish>
+            <Spanish>Drenar fluido</Spanish>
             <Polish>Drenaż opłucnej</Polish>
             <Chinese>针减压</Chinese>
             <Czech>Dekompresní jehla</Czech>
             <Korean>바늘 감압</Korean>
-            <French>Aiguille de décompression</French>
+            <French>Aspirer le fluide</French>
             <Turkish>Sıvıyı Boşaltın</Turkish>
             <Italian>Drenare il liquido</Italian>
         </Key>
@@ -611,7 +611,7 @@
             <English>Stethoscope</English>
             <Polish>Stetoskop</Polish>
             <German>Stethoskop</German>
-            <Spanish>Estetoscopio</Spanish>
+            <Spanish>Fonendoscopio</Spanish>
             <Chinese>听诊器</Chinese>
             <Czech>Stetoskop</Czech>
             <Korean>청진기</Korean>
@@ -671,7 +671,7 @@
             <English>Determines how loud the thorax sounds are when using Stethoscope</English>
             <Polish>Określa jak głośne są dźwięki klatki piersiowej podczas używania Stetoskopu</Polish>
             <German>Bestimmt, wie laut die Thoraxgeräusche bei der Verwendung des Stethoskops sind</German>
-            <Spanish>Determina qué tan fuertes son los sonidos del tórax cuando se usa el estetoscopio</Spanish>
+            <Spanish>Determina qué tan fuertes son los sonidos del tórax cuando se usa el fonendoscopio</Spanish>
             <Chinese>确定使用听诊器时胸部声音的响度</Chinese>
             <Czech>Určuje jak moc jsou torax zvuky hlasité při používání stetoskopu</Czech>
             <Korean>청진기를 사용할 때 흉부 소리의 크기를 결정합니다.</Korean>
