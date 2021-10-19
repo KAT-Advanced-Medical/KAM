@@ -39,18 +39,19 @@ if (!local _unit) then {
 	//set up our important vars
     private _pneumothorax = _unit getVariable ["KAT_medical_pneumothorax", false];
     private _hemothorax = _unit getVariable ["KAT_medical_hemopneumothorax", false];
+    private _tension = _unit getVariable ["KAT_medical_tensionpneumothorax", false];
     private _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
-	private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
+    private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
     private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
     private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
-	private _airwaySafed = _unit getVariable [QEGVAR(airway,airway), false];
+    private _airwaySafed = _unit getVariable [QEGVAR(airway,airway), false];
 
 	//if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && {GVAR(SpO2_dieActive)}) exitWith {
      	[_idPFH] call CBA_fnc_removePerFrameHandler;
       	[_unit, "#setDead"] call ace_medical_status_fnc_setDead;
       	_unit setVariable ["kat_O2Breathing_PFH", nil];
-	};
+    };
 
 	//if the _unit has SpO2 equal/over 100, then remove the PFH
 	if (_status > 100) exitWith {
@@ -73,6 +74,11 @@ if (!local _unit) then {
     if (_hemothorax) then {
         [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
     };
+    
+    //if the _unit has tension pneumothorax, then remove a big value of SpO2
+    if (_tension) then {
+        [_unit,GVAR(spo2_big_value), false] call FUNC(adjustSpo2);
+    };
 
 	//if the _unit has a heartrate bigger than 0, then remove/add x value of SpO2
     if (_unit getVariable ["ace_medical_heartRate", 0] > 0) exitWith {
@@ -81,6 +87,9 @@ if (!local _unit) then {
         };
         if (_occluded || _obstruction) exitWith {
             [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
+        };
+	if (_pneumothorax || _hemothorax || _tension) exitWith {
+            [_unit, (GVAR(spo2_big_value)/2), true] call FUNC(adjustSpo2);
         };
         [_unit, GVAR(spo2_big_value), true] call FUNC(adjustSpo2);
     };
