@@ -18,15 +18,15 @@
  */
 
 params [
-	["_medic",objNull,[objNull]],
-	["_patient",objNull,[objNull]],
-	["_reviveObject","CPR",[""]]
+    ["_medic",objNull,[objNull]],
+    ["_patient",objNull,[objNull]],
+    ["_reviveObject","CPR",[""]]
 ];
 
 //pain will be added to all units standing too close to caller or target.
 if (vehicle _patient isEqualTo _patient) then {
-	private _bystanders = ( allUnits select {_x distance _patient < 1.7} ) - [_medic];
-	{ [_x, 0.2] remoteExec ["ace_medical_fnc_adjustPainLevel",_x]; nil; } count _bystanders;
+    private _bystanders = ( allUnits select {_x distance _patient < 1.7} ) - [_medic];
+    { [_x, 0.2] remoteExec ["ace_medical_fnc_adjustPainLevel",_x]; nil; } count _bystanders;
 };
 
 _patient setVariable ["ace_medical_CPR_provider", objNull, true];

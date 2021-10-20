@@ -19,12 +19,12 @@
 params ["_target"];
 
 if (_target != player) then {
-	if (isNil {_target getVariable QGVAR(bloodtype)}) then {
-	private _bloodArray = ["O","O","O","O","A","A","A","B","B","AB"];
-	private _randomBloodType = selectRandom _bloodArray;
-	_target setVariable [QGVAR(bloodtype), _randomBloodType, true];
+    if (isNil {_target getVariable QGVAR(bloodtype)}) then {
+    private _bloodArray = ["O","O","O","O","A","A","A","B","B","AB"];
+    private _randomBloodType = selectRandom _bloodArray;
+    _target setVariable [QGVAR(bloodtype), _randomBloodType, true];
     _target setVariable ["ace_dogtags_dogtagData", nil, true];
-	};
+    };
 };
 
 _target getVariable [QGVAR(bloodtype), "O"];
