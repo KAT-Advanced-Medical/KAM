@@ -56,20 +56,20 @@ _userAndItem params ["_itemUser", "_usedItem"];
 
 // Patient Animation Added from Old Ace
 if (alive _patient) then {
-	private _patientAnim = getText (_config >> "animationPatient");
-	if (_patient getVariable ["ACE_isUnconscious", false]) then {
-		if !(animationState _patient in (getArray (_config >> "animationPatientUnconsciousExcludeOn"))) then {
-			_patientAnim = getText (_config >> "animationPatientUnconscious");
-		};
-	};
+    private _patientAnim = getText (_config >> "animationPatient");
+    if (_patient getVariable ["ACE_isUnconscious", false]) then {
+        if !(animationState _patient in (getArray (_config >> "animationPatientUnconsciousExcludeOn"))) then {
+            _patientAnim = getText (_config >> "animationPatientUnconscious");
+        };
+    };
 
-	if (_medic != _patient && {vehicle _patient == _patient} && {_patientAnim != ""}) then {
-		if (_patient getVariable ["ACE_isUnconscious", false]) then {
-			[_patient, _patientAnim, 2] call ace_common_fnc_doAnimation;
-		} else {
-			[_patient, _patientAnim, 1] call ace_common_fnc_doAnimation;
-		};
-	};
+    if (_medic != _patient && {vehicle _patient == _patient} && {_patientAnim != ""}) then {
+        if (_patient getVariable ["ACE_isUnconscious", false]) then {
+            [_patient, _patientAnim, 2] call ace_common_fnc_doAnimation;
+        } else {
+            [_patient, _patientAnim, 1] call ace_common_fnc_doAnimation;
+        };
+    };
 };
 //Old Ace Ending here
 

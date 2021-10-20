@@ -32,7 +32,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(SpO2_dieActive),
     "CHECKBOX",
-	LLSTRING(SETTING_SpO2_dieActive),
+    LLSTRING(SETTING_SpO2_dieActive),
     CBA_SETTINGS_CAT,
     [true],
     true

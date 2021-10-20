@@ -5,15 +5,15 @@ class CfgFunctions {
             class displayPatientInformation {
                 file = QPATHTOF(functions\fnc_displayPatientInformation.sqf);
             };
-			class updateInjuryList {
+            class updateInjuryList {
                 file = QPATHTOF(functions\fnc_updateInjuryList.sqf);
             };
-			class updateLogList {
+            class updateLogList {
                 file = QPATHTOF(functions\fnc_updateLogList.sqf);
             };
         };
     };
-	class ace_medical {
+    class ace_medical {
         tag = "ace_medical";
         class ace_medical {
             class setUnconscious {
