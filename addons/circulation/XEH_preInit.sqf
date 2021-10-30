@@ -151,6 +151,16 @@ private _type = round random(3);
 	true
 ] call CBA_Settings_fnc_init;
 
+//Blood draw uses blood groups
+[
+    QGVAR(bloodGroups),
+    "CHECKBOX",
+    LLSTRING(SETTING_DRAW_BLOODGROUPS),
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 //Enable self blood draw
 [
     QGVAR(enable_selfBloodDraw),
@@ -181,6 +191,15 @@ private _type = round random(3);
 	true
 ] call CBA_Settings_fnc_init;
 
+//Minimum acceptable blood volume for drawing blood
+[
+    QGVAR(blood_draw_limit),
+    "SLIDER",
+    [LLSTRING(SETTING_MINIMUM_SAFE_DRAW),LLSTRING(SETTING_MINIMUM_SAFE_DRAW_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 6, 3.6, 1], // 3.6 default matches ACE Class IV hemorrhage 
+    true
+] call CBA_Settings_fnc_init;
 //No aggresive AED Sounds (Beeps and charging)
 [
     QGVAR(AED_BeepsAndCharge),

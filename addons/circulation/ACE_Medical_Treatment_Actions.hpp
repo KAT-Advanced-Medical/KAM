@@ -17,6 +17,9 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
+    /**
+    * @Slatery - Does the below function even do anything? Why does this need to be redefined if all that's happening is the function has been overwritten?
+    */
     class CheckDogtags: CheckPulse {
         displayName = CSTRING(DogTag);
         displayNameProgress = CSTRING(DogTag_Action);
@@ -44,8 +47,8 @@ class ACE_Medical_Treatment_Actions {
 		category = "advanced";
 		medicRequired = 0;
 		consumeItem = 1;
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(draw500));
-        condition = QUOTE([ARR_2(_medic, _patient)] call FUNC(canDraw));
+        callbackSuccess = QUOTE([ARR_3(_medic, _patient,500)] call FUNC(drawBlood));
+        condition = QUOTE([ARR_3(_medic, _patient,500)] call FUNC(canDraw));
 		items[] = {"KAT_Empty_bloodIV_500"};
 		animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
@@ -60,8 +63,8 @@ class ACE_Medical_Treatment_Actions {
 		category = "advanced";
 		medicRequired = 0;
 		consumeItem = 1;
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(draw250));
-        condition = QUOTE([ARR_2(_medic, _patient)] call FUNC(canDraw));
+        callbackSuccess = QUOTE([ARR_3(_medic, _patient,250)] call FUNC(drawBlood));
+        condition = QUOTE([ARR_3(_medic, _patient,250)] call FUNC(canDraw));
 		items[] = {"KAT_Empty_bloodIV_250"};
 		animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
