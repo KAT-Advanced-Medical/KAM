@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="zeus">
+        <Key ID="STR_kat_zeus_ModuleManageAirway_Obstruction">
+            <English>Airway obstruction: </English>
+            <German>Atemwegsobstruktion: </German>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_Occlusion">
+            <English>Airway occlusion: </English>
+            <German>Atemwegsverstopfung: </German>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_Pneumothorax">
+            <English>Pneumothorax: </English>
+            <German>Pneumothorax: </German>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_Hemopneumothorax">
+            <English>Hemopneumothorax: </English>
+            <German>Hämopneumothorax: </German>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_Tensionpneumothorax">
+            <English>Tension pneumothorax: </English>
+            <German>Spannungspneumothorax: </German>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_SpO2Value">
+            <English>SpO2 value: </English>
+            <German>SpO2-Wert: </German>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_bloodGroup">
+            <English>Blood type: </English>
+            <German>Blutgruppe: </German>
+        </Key>
+        <Key ID="STR_kat_zeus_manageAirway_Module_displayname">
+            <English>Manage Airways</English>
+            <German>Atemwege verwalten</German>
+        </Key>
+        <Key ID="STR_kat_zeus_bloodType_Module_displayname">
+            <English>Change blood type</English>
+            <German>Blutgruppe ändern</German>
+        </Key>
+        <Key ID="STR_kat_zeus_NothingSelected">
+            <English>Place on a unit.</English>
+            <German>Es wurde nichts ausgewählt.</German>
+        </Key>
+        <Key ID="STR_kat_zeus_OnlyInfantry">
+            <English>Unit must be infantry.</English>
+            <German>Nur bei Infanterie verwendbar.</German>
+        </Key>
+        <Key ID="STR_kat_zeus_MustBeAlive">
+            <English>Unit must be alive.</English>
+            <German>Einheit muss am Leben sein.</German>
+        </Key>
+    </Package>
+</Project>
