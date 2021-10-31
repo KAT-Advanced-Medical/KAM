@@ -73,6 +73,10 @@ private _fnc_onConfirm = {
 	private _bloodtypeSel = lbCurSel (_display displayCtrl 16107);
 	private _bloodtype = ["0","A","B","AB"] select _bloodtypeSel;
 	_unit setVariable [QEGVAR(circulation,bloodtype), _bloodtype, true];
+    private _dogtagData = _unit getVariable "ace_dogtags_dogtagData";
+    if(!isNil "_dogtagData") then {
+        _dogtagData set [2, _bloodtype];
+    };
 };
 
 _display displayAddEventHandler ["unload", _fnc_onUnload];

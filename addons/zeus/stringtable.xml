@@ -26,7 +26,7 @@
             <German>SpO2-Wert: </German>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_bloodGroup">
-            <English>Blood type: </English>
+            <English>Blood group: </English>
             <German>Blutgruppe: </German>
         </Key>
         <Key ID="STR_kat_zeus_manageAirway_Module_displayname">
@@ -34,7 +34,7 @@
             <German>Atemwege verwalten</German>
         </Key>
         <Key ID="STR_kat_zeus_bloodType_Module_displayname">
-            <English>Change blood type</English>
+            <English>Change blood group</English>
             <German>Blutgruppe ändern</German>
         </Key>
         <Key ID="STR_kat_zeus_NothingSelected">
