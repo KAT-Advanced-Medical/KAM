@@ -41,13 +41,13 @@ if (IS_BLEEDING(_target)) then {
 // Give a qualitative description of the blood volume lost
 switch (GET_HEMORRHAGE(_target)) do {
     case 1: {
-        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood1", [1, 0, 0, 1]];
+        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood1", [1, 1, 0, 1]];
     };
     case 2: {
-        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood2", [1, 0, 0, 1]];
+        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood2", [1, 0.67, 0, 1]];
     };
     case 3: {
-        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood3", [1, 0, 0, 1]];
+        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood3", [1, 0.33, 0, 1]];
     };
     case 4: {
         _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood4", [1, 0, 0, 1]];
@@ -65,8 +65,8 @@ switch (GET_FRACTURES(_target) select _selectionN) do {
         _entries pushBack [localize "STR_ACE_medical_gui_Status_Fractured", [1, 0, 0, 1]];
     };
     case -1: {
-        if (ace_medical_fractures == 2) then { // Ignore if the splint has no effect
-            _entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [1, 1, 1, 1]];
+        if (ace_medical_fractures) in [2, 3]) then { // Ignore if the splint has no effect
+			_entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [0.2, 0.2, 1, 1]];	
         };
     };
 };
