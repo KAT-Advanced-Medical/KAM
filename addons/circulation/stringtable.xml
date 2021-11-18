@@ -986,6 +986,9 @@
             <Turkish>Kan Alma </Turkish>
             <Italian>Prelevare sangue</Italian>
         </Key>
+        <Key ID="STR_kat_circulation_SETTING_DRAW_BLOODGROUPS">
+            <English>Use Bloodgroups for drawing blood?</English>
+        </Key>
         <Key ID="STR_KAT_circulation_SETTING_SELF_BLOOD_DRAW">
             <English>Enable self blood draw</English>
             <Polish>Włącz samodzielne pobieranie krwi</Polish>
@@ -1021,6 +1024,12 @@
             <French>Temps de dessin pour le kit 250ml </French>
             <Turkish>250ml Kit için çizim süresi </Turkish>
             <Italian>Tempo di disegno per Kit 250ml </Italian>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW">
+            <English>Minimum blood volume for donor (liters)</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW_DESC">
+            <English>Minimum volume of blood allowed to drain a donor to, to ignore this setting set to 0</English>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge">
             <English>AED Beep and Charge sound</English>
