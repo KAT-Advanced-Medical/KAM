@@ -37,7 +37,7 @@ private _inventory = [];
         } forEach _inventory;
 
         if (_return == true) then {
-            _patient setVariable [QGVAR(AEDvehicle), _x, true];
+            _patient setVariable [QGVAR(AEDvehicleName), _x, true];
             _patient setVariable [QGVAR(vehicleTrue), true, true];
         };
     };

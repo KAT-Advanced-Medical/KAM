@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="aceP">
-    <Package name="circulation">
-        <Key ID="STR_ACEP_circulation_SETTING_ENABLE">
+<Project name="kat">
+    <Package name="pharma">
+        <Key ID="STR_kat_pharma_SETTING_ENABLE">
             <English>ACE-Pharmacy activated?</English>
             <German>ACE-Kreislauf aktivieren?</German>
             <Polish>ACE-Czy zaawansowane krążenie ma być włączone?</Polish>
             <Spanish>¿Activar ACE-Circulación?</Spanish>
             <Chinese>啟用ACE-血型循環系統？</Chinese>
-            <Czech>ACE-Circulation aktivováno?</Czech>
+            <Czech>ACE-pharma aktivováno?</Czech>
             <Korean>ACE 순환계통 시스탬 활성화?</Korean>
-            <French>Ace-Circulation activé?</French>
+            <French>Ace-pharma activé?</French>
             <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
             <Italian>Attivare ACE-Circolazione?</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_NALOXONE_ACTIVE">
+        <Key ID="STR_kat_pharma_NALOXONE_ACTIVE">
             <English>Allow players to use Naloxone?</English>
             <German>Stoffwechselabhängiger Puls?</German>
             <Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
@@ -25,7 +25,7 @@
             <Turkish>Metabolizmaya Bağımlı kalp hızı?</Turkish>
             <Italian>La frequenza cardiaca dipende dal metabolismo?</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_CARBONATE_ACTIVE">
+        <Key ID="STR_kat_pharma_CARBONATE_ACTIVE">
             <English>Allow players to use Ammonium Carbonate?</English>
             <German>Anderer Loadoutname</German>
             <Polish>Inny  loadoutname</Polish>
@@ -37,7 +37,7 @@
             <Turkish>Farklı ekipman adı</Turkish>
             <Italian>Loadoutname diverso</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_TXA_ACTIVE">
+        <Key ID="STR_kat_pharma_TXA_ACTIVE">
             <English>Allow players to use TXA?</English>
             <German>Anderer Loadoutname</German>
             <Polish>Inny  loadoutname</Polish>
@@ -49,7 +49,7 @@
             <Turkish>Farklı ekipman adı</Turkish>
             <Italian>Loadoutname diverso</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_IV_MEDIC">
+        <Key ID="STR_kat_pharma_IV_MEDIC">
             <English>Changes what medical level is required to set IVs/IOs</English>
             <German>Anderer Loadoutname</German>
             <Polish>Inny  loadoutname</Polish>
@@ -61,7 +61,7 @@
             <Turkish>Farklı ekipman adı</Turkish>
             <Italian>Loadoutname diverso</Italian>
         </Key>]
-        <Key ID="STR_ACEP_circulation_IV_DROP">
+        <Key ID="STR_kat_pharma_IV_DROP">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
             <German>Anderer Loadoutname</German>
             <Polish>Inny  loadoutname</Polish>
@@ -73,7 +73,7 @@
             <Turkish>Farklı ekipman adı</Turkish>
             <Italian>Loadoutname diverso</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_IV_REUSE">
+        <Key ID="STR_kat_pharma_IV_REUSE">
             <English>Sets if IV/IO needles are reusable</English>
             <German>Anderer Loadoutname</German>
             <Polish>Inny  loadoutname</Polish>
@@ -85,7 +85,7 @@
             <Turkish>Farklı ekipman adı</Turkish>
             <Italian>Loadoutname diverso</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_PUSH_TIME">
+        <Key ID="STR_kat_pharma_PUSH_TIME">
             <English>Push time for all IV Medications</English>
             <German>Anderer Loadoutname</German>
             <Polish>Inny  loadoutname</Polish>
@@ -97,7 +97,7 @@
             <Turkish>Farklı ekipman adı</Turkish>
             <Italian>Loadoutname diverso</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_IV_TIME">
+        <Key ID="STR_kat_pharma_IV_TIME">
             <English>Time to establish IVs</English>
             <German>Anderer Loadoutname</German>
             <Polish>Inny  loadoutname</Polish>
@@ -109,7 +109,7 @@
             <Turkish>Farklı ekipman adı</Turkish>
             <Italian>Loadoutname diverso</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_IO_TIME">
+        <Key ID="STR_kat_pharma_IO_TIME">
             <English>Time to establish IOs</English>
             <German>Anderer Loadoutname</German>
             <Polish>Inny  loadoutname</Polish>
@@ -121,7 +121,7 @@
             <Turkish>Farklı ekipman adı</Turkish>
             <Italian>Loadoutname diverso</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Painkillers_DescShort">
+        <Key ID="STR_kat_pharma_Painkillers_DescShort">
             <English>Used to suppress pain</English>
             <German>Schmerzbekämpfer</German>
             <Polish>Używany do zwalczania bólu</Polish>
@@ -133,7 +133,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Usato per sopprimere il dolore</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Painkillers_DescUse">
+        <Key ID="STR_kat_pharma_Painkillers_DescUse">
             <English>An analgesic used to combat light to moderate pain experiences.</English>
             <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
@@ -146,7 +146,7 @@
             <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
 
         </Key>
-        <Key ID="STR_ACEP_circulation_Painkillers_Box_Display">
+        <Key ID="STR_kat_pharma_Painkillers_Box_Display">
             <English>Painkillers</English>
             <German>Schmerzmittel</German>
             <Polish>Lek przeciwbólowy</Polish>
@@ -158,7 +158,7 @@
             <Turkish>Ağrı Kesiciler</Turkish>
             <Italian>Antidolorifici</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Inject_Box_Painkillers">
+        <Key ID="STR_kat_pharma_Inject_Box_Painkillers">
             <English>Take Painkillers</English>
             <German>Schlucke Schmerzmittel</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
@@ -170,7 +170,7 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Prendi antidolorifici</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Carbonate_DescShort">
+        <Key ID="STR_kat_pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
             <German>Schmerzbekämpfer</German>
             <Polish>Używane w celu przywrócenia przytomności</Polish>
@@ -182,7 +182,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Usato per riprendere coscienza</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Carbonate_DescUse">
+        <Key ID="STR_kat_pharma_Carbonate_DescUse">
             <English>The primary ingredient in smelling salts, used to restore consciousness in limited situations.</English>
             <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Polish>Głównym składnikiem są sole trzeźwiące, używane do przywrócenia przytomności w określonych okolicznościach</Polish>
@@ -194,7 +194,7 @@
             <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
             <Italian>L'ingrediente principale nei sali, utilizzati per ripristinare la coscienza in situazioni limitate.</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Carbonate_Box_Display">
+        <Key ID="STR_kat_pharma_Carbonate_Box_Display">
             <English>Ammonium Carbonate</English>
             <German>Schmerzmittel</German>
             <Polish>Sole trzeźwiące</Polish>
@@ -206,7 +206,7 @@
             <Turkish>Ağrı Kesiciler</Turkish>
             <Italian>Carbonato d'ammonio</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Take_Carbonate">
+        <Key ID="STR_kat_pharma_Take_Carbonate">
             <English>Use Carbonate</English>
             <German>Schlucke Schmerzmittel</German>
             <Polish>Użyj soli trzeźwiących</Polish>
@@ -218,7 +218,7 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Somministra Carbonato</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Naloxone_DescShort">
+        <Key ID="STR_kat_pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
             <German>Schmerzbekämpfer</German>
             <Polish>Używany do zwalczania przedawkowania opioidów</Polish>
@@ -230,7 +230,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Usato per trattare le overdose da oppiacei</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Naloxone_DescUse">
+        <Key ID="STR_kat_pharma_Naloxone_DescUse">
             <English>An opioid antagonist that can reverse opioid overdoses from medications such as Morphine.</English>
             <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Polish>Antagonista opioidów potrafiący zwalczać przedawkowanie leków takich jak morfina.</Polish>
@@ -242,7 +242,7 @@
             <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
             <Italian>Un antagonista degli oppioidi che può invertire le overdose di oppioidi come la morfina.</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Naloxone_Box_Display">
+        <Key ID="STR_kat_pharma_Naloxone_Box_Display">
             <English>Naloxone</English>
             <German>Schmerzmittel</German>
             <Polish>Nalokson</Polish>
@@ -254,7 +254,7 @@
             <Turkish>Ağrı Kesiciler</Turkish>
             <Italian>Naloxone</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Take_Naloxone">
+        <Key ID="STR_kat_pharma_Take_Naloxone">
             <English>Use Naloxone</English>
             <German>Schlucke Schmerzmittel</German>
             <Polish>Użyj naloksonu</Polish>
@@ -266,7 +266,199 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Somministra Naloxone</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_TXA_DescShort">
+        <Key ID="STR_KAT_pharma_Amiodarone_DescShort">
+            <English>Used to combat cardiac arrest</English>
+            <German>Schmerzbekämpfer</German>
+            <Polish>Używany do zwalczania zatrzymania akcji serca</Polish>
+            <Spanish>Se usa para combatir el paro cardíaco.</Spanish>
+            <Chinese>用於舒緩疼痛</Chinese>
+            <Czech>Používá se k boji proti zástavě srdce</Czech>
+            <Korean>통증완화를 위해 사용합니다</Korean>
+            <French>Utilisé pour lutter contre l'arrêt cardiaque</French>
+            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
+            <Italian>Usato per combattere l'arresto cardiaco</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Amiodarone_DescUse">
+            <English>An anti-arrhythmic used when combatting shockable forms of cardiac arrest.</English>
+            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
+            <Spanish>Antiarrítmico utilizado en la lucha contra las formas desfibrilables de paro cardíaco.</Spanish>
+            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
+            <Czech>Antiarytmikum používané v boji se srdeční zástavou.</Czech>
+            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
+            <French>Un antiarythmique utilisé dans la lutte contre les formes d'arrêt cardiaque défibrillable.</French>
+            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
+            <Italian>Un antiaritmico utilizzato nella lotta contro le forme defibrillabili di arresto cardiaco.</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Amiodarone_Box_Display">
+            <English>Amiodarone</English>
+            <German>Schmerzmittel</German>
+            <Polish>Amiodaron</Polish>
+            <Spanish>Amiodarone</Spanish>
+            <Chinese>止痛藥</Chinese>
+            <Czech>Amiodaron</Czech>
+            <Korean>진통제</Korean>
+            <French>Amiodarone</French>
+            <Turkish>Ağrı Kesiciler</Turkish>
+            <Italian>Amiodarone</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Amiodarone">
+            <English>Push Amiodarone</English>
+            <German>Schlucke Schmerzmittel</German>
+            <Polish>Wstrzyknij amiodaron</Polish>
+            <Spanish>Administrar Amiodarone</Spanish>
+            <Chinese>服用止痛藥</Chinese>
+            <Czech>Zatlačte Amiodarone</Czech>
+            <Korean>진통제 복용</Korean>
+            <French>Administre du Amiodarone</French>
+            <Turkish>Ağrı Kesicileri Al</Turkish>
+            <Italian>Somministra Amiodarome</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Lidocaine_DescShort">
+            <English>Used to combat cardiac arrest</English>
+            <German>Schmerzbekämpfer</German>
+            <Polish>Używany do zwalczania zatrzymania akcji serca</Polish>
+            <Spanish>Se usa para combatir el paro cardíaco.</Spanish>
+            <Chinese>用於舒緩疼痛</Chinese>
+            <Czech>Používá se k boji proti zástavě srdce</Czech>
+            <Korean>통증완화를 위해 사용합니다</Korean>
+            <French>Utilisé pour lutter contre l'arrêt cardiaque</French>
+            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
+            <Italian>Usato per combattere l'arresto cardiaco</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Lidocaine_DescUse">
+            <English>An anti-arrhythmic used when combatting shockable forms of cardiac arrest.</English>
+            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
+            <Spanish>Antiarrítmico utilizado en la lucha contra las formas desfibrilables de paro cardíaco.</Spanish>
+            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
+            <Czech>Antiarytmikum používané v boji se srdeční zástavou.</Czech>
+            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
+            <French>Un antiarythmique utilisé dans la lutte contre les formes d'arrêt cardiaque défibrillable.</French>
+            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
+            <Italian>Un antiaritmico utilizzato nella lotta contro le forme defibrillabili di arresto cardiaco.</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Lidocaine_Box_Display">
+            <English>Lidocaine</English>
+            <German>Schmerzmittel</German>
+            <Polish>Lidokaina</Polish>
+            <Spanish>Lidocaína</Spanish>
+            <Chinese>止痛藥</Chinese>
+            <Czech>Lidokain</Czech>
+            <Korean>진통제</Korean>
+            <French>Lidocaïne</French>
+            <Turkish>Ağrı Kesiciler</Turkish>
+            <Italian>Lidocaina</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Lidocaine">
+            <English>Push Lidocaine</English>
+            <German>Schlucke Schmerzmittel</German>
+            <Polish>Wstrzyknij lidokainę</Polish>
+            <Spanish>Administrar lidocaína</Spanish>
+            <Chinese>服用止痛藥</Chinese>
+            <Czech>Zatlačte Lidocaine</Czech>
+            <Korean>진통제 복용</Korean>
+            <French>Administre de la Lidocaïne</French>
+            <Turkish>Ağrı Kesicileri Al</Turkish>
+            <Italian>Somministra Lidocaina</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Atropine_DescShort">
+            <English>Used to treat bradycardia</English>
+            <German>Schmerzbekämpfer</German>
+            <Polish>Używany do zwalczania bradykardii</Polish>
+            <Spanish>Usado para tratar la bradicardia.</Spanish>
+            <Chinese>用於舒緩疼痛</Chinese>
+            <Czech>Používá se k léčbě bradykardie</Czech>
+            <Korean>통증완화를 위해 사용합니다</Korean>
+            <French>Utilisé pour traiter la bradycardie</French>
+            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
+            <Italian>Usato per trattare la bradicardia</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Atropine_DescUse">
+            <English>Commonly used to treat poisoning, Atropine can also be used to treat bradycardia.</English>
+            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <Polish>Używany do leczenia zatrucia. Atropina może być również używana w celu leczenia bradykardii.</Polish>
+            <Spanish>Usado para tratar intoxicaciones, pero la atropina también se puede usar para tratar la bradicardia.</Spanish>
+            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
+            <Czech>Obvykle se používá k léčbě otravy, Atropin může být také použit k léčbě bradykardie.</Czech>
+            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
+            <French>Couramment utilisée pour traiter les intoxications, l'atropine peut également être utilisée pour traiter de la bradycardie.</French>
+            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
+            <Italian>Comunemente usato per trattare l'avvelenamento, l'atropina può anche essere usata per trattare la bradicardia.</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Atropine_Box_Display">
+            <English>Atropine</English>
+            <German>Schmerzmittel</German>
+            <Polish>Atropina</Polish>
+            <Spanish>Atropina</Spanish>
+            <Chinese>止痛藥</Chinese>
+            <Czech>Atropin</Czech>
+            <Korean>진통제</Korean>
+            <French>Atropine</French>
+            <Turkish>Ağrı Kesiciler</Turkish>
+            <Italian>Atropina</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Atropine">
+            <English>Push Atropine</English>
+            <German>Schlucke Schmerzmittel</German>
+            <Polish>Wstrzyknij atropinę</Polish>
+            <Spanish>Administrar Atropina</Spanish>
+            <Chinese>服用止痛藥</Chinese>
+            <Czech>Zatlačte atropin</Czech>
+            <Korean>진통제 복용</Korean>
+            <French>Administre de l'Atropine</French>
+            <Turkish>Ağrı Kesicileri Al</Turkish>
+            <Italian>Somministra Atropina</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Ondansetron_DescShort">
+            <English>Controls nausea and vomiting</English>
+            <German>Schmerzbekämpfer</German>
+            <Polish>Kontroluje nudności i wymioty</Polish>
+            <Spanish>Controla las náuseas y los vómitos.</Spanish>
+            <Chinese>用於舒緩疼痛</Chinese>
+            <Czech>Ovládá nevolnost a zvracení</Czech>
+            <Korean>통증완화를 위해 사용합니다</Korean>
+            <French>Il contrôle les nausées et les vomissements.</French>
+            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
+            <Italian>Controlla nausea e vomito.</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Ondansetron_DescUse">
+            <English>Used to control nausea and vomiting in a patient.</English>
+            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <Polish>Używany do kontrolowania nudności i wymiotów u pacjenta.</Polish>
+            <Spanish>Usado para controlar las náuseas y los vómitos en una paciente.</Spanish>
+            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
+            <Czech>Používá se k ovládání nevolnosti a zvracení u pacienta.</Czech>
+            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
+            <French>Utilisé pour contrôler les nausées et les vomissements chez un patient.</French>
+            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
+            <Italian>Usato per controllare la nausea e il vomito in un paziente.</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Ondansetron_Box_Display">
+            <English>Ondansetron</English>
+            <German>Schmerzmittel</German>
+            <Polish>Ondansetron</Polish>
+            <Spanish>Ondansetron</Spanish>
+            <Chinese>止痛藥</Chinese>
+            <Czech>Ondansetron</Czech>
+            <Korean>진통제</Korean>
+            <French>Ondansétron</French>
+            <Turkish>Ağrı Kesiciler</Turkish>
+            <Italian>Ondansetron</Italian>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Ondansetron">
+            <English>Push Ondansetron</English>
+            <German>Schlucke Schmerzmittel</German>
+            <Polish>Wstrzyknij Ondansetron</Polish>
+            <Spanish>Administrar Ondansetron</Spanish>
+            <Chinese>服用止痛藥</Chinese>
+            <Czech>Zatlačte Ondansetron</Czech>
+            <Korean>진통제 복용</Korean>
+            <French>Administre du Ondansétron</French>
+            <Turkish>Ağrı Kesicileri Al</Turkish>
+            <Italian>Somministra Ondansetron</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_TXA_DescShort">
             <English>Encourages clot formation</English>
             <German>Schmerzbekämpfer</German>
             <Polish>Wspomaga tworzenie skrzepów</Polish>
@@ -278,7 +470,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Favorisce la coagulazione</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_TXA_DescUse">
+        <Key ID="STR_kat_pharma_TXA_DescUse">
             <English>Used to encourage and stabilize clots in a patient.</English>
             <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Polish>Używany do wspomagania tworzenia skrzepów u pacjenta</Polish>
@@ -290,7 +482,7 @@
             <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
             <Italian>Utilizzato per favorire e stabilizzare la coagulazione nel paziente</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_TXA_Box_Display">
+        <Key ID="STR_kat_pharma_TXA_Box_Display">
             <English>TXA</English>
             <German>Schmerzmittel</German>
             <Polish>TXA</Polish>
@@ -302,7 +494,7 @@
             <Turkish>Ağrı Kesiciler</Turkish>
             <Italian>TXA</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Take_TXA">
+        <Key ID="STR_kat_pharma_Take_TXA">
             <English>Push TXA</English>
             <German>Schlucke Schmerzmittel</German>
             <Polish>Wstrzyknij TXA</Polish>
@@ -314,7 +506,7 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Somministra TXA</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Norep_DescShort">
+        <Key ID="STR_kat_pharma_Norep_DescShort">
             <English>Used to raise blood pressure</English>
             <German>Schmerzbekämpfer</German>
             <Polish>Używany do zwalczania bólu</Polish>
@@ -326,7 +518,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Usato per sopprimere il dolore</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Norep_DescUse">
+        <Key ID="STR_kat_pharma_Norep_DescUse">
             <English>A vasopressor used to increase blood pressure and combat shock.</English>
             <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
@@ -337,9 +529,8 @@
             <French>Un analgésique utilisé pour diminuer la douleur.</French>
             <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
             <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
-
         </Key>
-        <Key ID="STR_ACEP_circulation_Norep_Box_Display">
+        <Key ID="STR_kat_pharma_Norep_Box_Display">
             <English>Norepinephrine</English>
             <German>Schmerzmittel</German>
             <Polish>Lek przeciwbólowy</Polish>
@@ -351,7 +542,7 @@
             <Turkish>Ağrı Kesiciler</Turkish>
             <Italian>Antidolorifici</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Take_Norep">
+        <Key ID="STR_kat_pharma_Take_Norep">
             <English>Push Norepinephrine</English>
             <German>Schlucke Schmerzmittel</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
@@ -363,7 +554,7 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Prendi antidolorifici</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Phenyl_DescShort">
+        <Key ID="STR_kat_pharma_Phenyl_DescShort">
             <English>Used to raise blood pressure</English>
             <German>Schmerzbekämpfer</German>
             <Polish>Używany do zwalczania bólu</Polish>
@@ -375,7 +566,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Usato per sopprimere il dolore</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Phenyl_DescUse">
+        <Key ID="STR_kat_pharma_Phenyl_DescUse">
             <English>A vasopressor used to increase blood pressure and combat shock.</English>
             <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
@@ -386,9 +577,8 @@
             <French>Un analgésique utilisé pour diminuer la douleur.</French>
             <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
             <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
-
         </Key>
-        <Key ID="STR_ACEP_circulation_Phenyl_Box_Display">
+        <Key ID="STR_kat_pharma_Phenyl_Box_Display">
             <English>Phenylephrine</English>
             <German>Schmerzmittel</German>
             <Polish>Lek przeciwbólowy</Polish>
@@ -400,7 +590,7 @@
             <Turkish>Ağrı Kesiciler</Turkish>
             <Italian>Antidolorifici</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Take_Phenyl">
+        <Key ID="STR_kat_pharma_Take_Phenyl">
             <English>Push Phenylephrine</English>
             <German>Schlucke Schmerzmittel</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
@@ -412,7 +602,7 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Prendi antidolorifici</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Nitro_DescShort">
+        <Key ID="STR_kat_pharma_Nitro_DescShort">
             <English>Used to lower blood pressure</English>
             <German>Schmerzbekämpfer</German>
             <Polish>Używany do zwalczania bólu</Polish>
@@ -424,7 +614,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Usato per sopprimere il dolore</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Nitro_DescUse">
+        <Key ID="STR_kat_pharma_Nitro_DescUse">
             <English>A vasodilator used to decrease blood pressure and combat hypertension.</English>
             <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
@@ -435,9 +625,8 @@
             <French>Un analgésique utilisé pour diminuer la douleur.</French>
             <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
             <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
-
         </Key>
-        <Key ID="STR_ACEP_circulation_Nitro_Box_Display">
+        <Key ID="STR_kat_pharma_Nitro_Box_Display">
             <English>Nitroglycerin</English>
             <German>Schmerzmittel</German>
             <Polish>Lek przeciwbólowy</Polish>
@@ -449,7 +638,7 @@
             <Turkish>Ağrı Kesiciler</Turkish>
             <Italian>Antidolorifici</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Take_Nitro">
+        <Key ID="STR_kat_pharma_Take_Nitro">
             <English>Push Nitroglycerin</English>
             <German>Schlucke Schmerzmittel</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
@@ -461,7 +650,7 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Prendi antidolorifici</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Take_Reorient">
+        <Key ID="STR_kat_pharma_Take_Reorient">
             <English>Reorient Patient</English>
             <German>Schlucke Schmerzmittel</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
@@ -473,7 +662,7 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Prendi antidolorifici</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Reorienting">
+        <Key ID="STR_kat_pharma_Reorienting">
             <English>Reorienting</English>
             <German>Schlucke Schmerzmittel</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
@@ -485,7 +674,7 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Prendi antidolorifici</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Using">
+        <Key ID="STR_kat_pharma_Using">
             <English>Using</English>
             <German>Schlucke</German>
             <Polish>Używanie</Polish>
@@ -497,7 +686,7 @@
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Usando</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Pushing">
+        <Key ID="STR_kat_pharma_Pushing">
             <English>Pushing</English>
             <German>Schlucke</German>
             <Polish>Wstrzykiwanie</Polish>
@@ -509,7 +698,7 @@
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Somministrando</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_push_log">
+        <Key ID="STR_kat_pharma_push_log">
             <English>%1 pushed %2</English>
             <German>%1 intubierte mit %2</German>
             <Polish>%1 wstrzyknął %2</Polish>
@@ -521,7 +710,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_inject_log">
+        <Key ID="STR_kat_pharma_inject_log">
             <English>%1 injected %2</English>
             <German>%1 intubierte mit %2</German>
             <Polish>%1 włożył %2</Polish>
@@ -533,7 +722,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_use_log">
+        <Key ID="STR_kat_pharma_use_log">
             <English>%1 used %2</English>
             <German>%1 intubierte mit %2</German>
             <Polish>%1 użył %2</Polish>
@@ -545,7 +734,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_IV_16_Display">
+        <Key ID="STR_kat_pharma_IV_16_Display">
             <English>16g IV</English>
             <German>16g IV</German>
             <Polish>16g IV</Polish>
@@ -557,7 +746,7 @@
             <Turkish>16g IV</Turkish>
             <Italian>16g IV</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_IV_DescShort">
+        <Key ID="STR_kat_pharma_IV_DescShort">
             <English>Intravenous Needle</English>
             <German>Schmerzbekämpfer</German>
             <Polish>Kaniula dożylna</Polish>
@@ -569,7 +758,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Usato per sopprimere il dolore</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_IO_45_Display">
+        <Key ID="STR_kat_pharma_IO_45_Display">
             <English>FAST IO</English>
             <German>FAST IO</German>
             <Polish>FAST IO</Polish>
@@ -581,7 +770,7 @@
             <Turkish>FAST IO</Turkish>
             <Italian>FAST IO</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_IO_DescShort">
+        <Key ID="STR_kat_pharma_IO_DescShort">
             <English>Intraosseous Needle</English>
             <German>Schmerzbekämpfer</German>
             <Polish>Igła doszpikowa</Polish>
@@ -593,7 +782,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Ago cannula intraossea</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_IV_DescUse">
+        <Key ID="STR_kat_pharma_IV_DescUse">
             <English>Used to allow fluids and certain medications to enter the body.</English>
             <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Polish>Używany w celu dostarczenia płynów i pewnych leków do krwioobiegu.</Polish>
@@ -605,7 +794,7 @@
             <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
             <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Apply_IV_16">
+        <Key ID="STR_kat_pharma_Apply_IV_16">
             <English>Establish 16g IV</English>
             <German>Überprüfe</German>
             <Polish>Załóż 16G IV</Polish>
@@ -617,7 +806,7 @@
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Posiziona 16g IV</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Apply_IO_45">
+        <Key ID="STR_kat_pharma_Apply_IO_45">
             <English>Establish FAST IO</English>
             <German>Überprüfe</German>
             <Polish>Załóż 45mm IO</Polish>
@@ -629,7 +818,7 @@
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Posiziona 45mm IO</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Applying_IV">
+        <Key ID="STR_kat_pharma_Applying_IV">
             <English>Establishing IV/IO</English>
             <German>Überprüfe</German>
             <Polish>Zakładanie IV</Polish>
@@ -641,7 +830,7 @@
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Posizionando IV</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Applying_IO">
+        <Key ID="STR_kat_pharma_Applying_IO">
             <English>Establishing IO</English>
             <German>Überprüfe</German>
             <Polish>Zakładanie IO</Polish>
@@ -653,7 +842,7 @@
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Posizionando IO</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_iv_log">
+        <Key ID="STR_kat_pharma_iv_log">
             <English>%1 established a %2</English>
             <German>%1 intubierte mit %2</German>
             <Polish>%1 założył %2</Polish>
@@ -665,7 +854,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha posizionato %2</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Remove_IV">
+        <Key ID="STR_kat_pharma_Remove_IV">
             <English>Remove IV/IO</English>
             <German>Überprüfe</German>
             <Polish>Zdejmij IV/IO</Polish>
@@ -677,7 +866,7 @@
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Rimuovi IV/IO</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_Removing_IV">
+        <Key ID="STR_kat_pharma_Removing_IV">
             <English>Removing</English>
             <German>Überprüfe</German>
             <Polish>Zdejmowanie</Polish>
@@ -689,199 +878,7 @@
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Rimuovendo</Italian>
         </Key>
-        <Key ID="STR_ACEP_circulation_place_AED">
-            <English>Place AED</English>
-            <German>AED platzieren</German>
-            <Polish>Połóż AED</Polish>
-            <Spanish>Sitio AED</Spanish>
-            <Chinese>打開血型相容表</Chinese>
-            <Czech>Místo AED</Czech>
-            <Korean>자동제세동기 설치</Korean>
-            <French>Placer l'AED</French>
-            <Turkish>AED'yi yerleştirin</Turkish>
-            <Italian>Posizionare DEA</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_PickUpAction">
-            <English>Pickup AED</English>
-            <German>AED aufheben</German>
-            <Polish>Podnieś AED</Polish>
-            <Spanish>Recoger AED</Spanish>
-            <Chinese>打開血型相容表</Chinese>
-            <Czech>Vyzvednout AED</Czech>
-            <Korean>자동제세동기 줍기</Korean>
-            <French>Ramasser l'AED</French>
-            <Turkish>AED'yi Alın</Turkish>
-            <Italian>Raccogliere DEA</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_X_already">
-            <English>Already one connected</English>
-            <German>Bereits einer verbunden</German>
-            <Polish>Jeden jest już podłączony</Polish>
-            <Spanish>Ya hay uno conectado</Spanish>
-            <Chinese>已經有連接一個了</Chinese>
-            <Czech>Jeden již připojen</Czech>
-            <Korean>AED-X가 이미 연결되 있습니다</Korean>
-            <French>Un déjà connecté</French>
-            <Turkish>Zaten bağlandı</Turkish>
-            <Italian>Già uno collegato</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_X_Display">
-            <English>AED X-Series</English>
-            <German>AED X-Series</German>
-            <Polish>AED X-Series</Polish>
-            <Spanish>DEA Serie X</Spanish>
-            <Chinese>自動體外心臟除顫器 X系列</Chinese>
-            <Czech>AED X-Series</Czech>
-            <Korean>바이탈 측정 자동제세동기</Korean>
-            <French>AED X-Series</French>
-            <Turkish>AED X-Serisi</Turkish>
-            <Italian>DAE Serie X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_X_Desc">
-            <English>Used to monitor vital values and to resuscitate persons</English>
-            <German>Überwacht Vitalwerte und kann Personen wiederbeleben</German>
-            <Polish>Używany do monitorowania parametrów życiowych  i defibrylacji.</Polish>
-            <Spanish>Usado para monitorear vitales y resucitar pacientes </Spanish>
-            <Chinese>有著生命跡象檢測器並可以甦醒患者</Chinese>
-            <Czech>Používán na monitorování vitálních funkcí a resuscitování</Czech>
-            <Korean>부상병에게 연결하여 바이탈 모니터링과 제세동을 위해 사용함</Korean>
-            <French>Utilisé pour monitorer les constantes vitales et ressusciter les patients</French>
-            <Turkish>Hayati değerleri izlemek ve kişileri canlandırmak için kullanılır</Turkish>
-            <Italian>Usato per monitorare i parametri vitali e rianimare i pazienti</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_X_Action_Use">
-            <English>Monitor vitals</English>
-            <German>Überwache Werte</German>
-            <Polish>Monitoruj parametry życiowe</Polish>
-            <Spanish>Monitorear vitales</Spanish>
-            <Chinese>監控生命跡象</Chinese>
-            <Czech>Monitorování vitálních funkcí</Czech>
-            <Korean>바이탈 측정</Korean>
-            <French>Monitorer les constantes vitales</French>
-            <Turkish>Monitor vitals</Turkish>
-            <Italian>Monitorare parametri vitali</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_Defib_Action_Use">
-            <English>Use AED defibrillator</English>
-            <German>Benutze AED Defibrillator</German>
-            <Polish>Użyj defibrylatora AED</Polish>
-            <Spanish>Utilice el desfibrilador AED</Spanish>
-            <Chinese>使用AED除顫器</Chinese>
-            <Czech>Použít AED defibrilátor</Czech>
-            <Korean>자동제세동기 사용</Korean>
-            <French>Utiliser le défibrillateur AED</French>
-            <Turkish>AED defibrilatör kullanın</Turkish>
-            <Italian>Usare il defibrillatore DAE</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_DefibS_Action_Use">
-            <English>Use AED Station</English>
-            <German>Benutze AED Station</German>
-            <Polish>Użyj stacji AED</Polish>
-            <Spanish>Utilice el estación AED</Spanish>
-            <Chinese>使用AED除顫器</Chinese>
-            <Czech>Použít AED stanici</Czech>
-            <Korean>자동제세동기 사용</Korean>
-            <French>Utiliser la station AED</French>
-            <Turkish>AED İstasyonunu Kullanın</Turkish>
-            <Italian>Usare la stazione DAE</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_AED_PROGRESS">
-            <English>Using the defibrillator...</English>
-            <German>Setze Defibrillator ein...</German>
-            <Chinese>使用除顫器中...</Chinese>
-            <Polish>Używanie Defibrylatora...</Polish>
-            <Spanish>Usando el desfibrilador...</Spanish>
-            <Czech>Používám defibrilátor...</Czech>
-            <Korean>자동제세동기 사용중</Korean>
-            <French>Utilisation du défibrillateur...</French>
-            <Turkish>Defibrilatör kullanılıyor...</Turkish>
-            <Italian>Usando il defibrillatore...</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_AED_X_Action_Use">
-            <English>Use AED-X defibrillator</English>
-            <German>Benutze AED-X Defibrillator</German>
-            <Polish>Użyj defibrylatora AED-X</Polish>
-            <Spanish>Utilice el desfibrilador AED-X</Spanish>
-            <Chinese>使用AED-X除顫器</Chinese>
-            <Czech>Použít AED-X defibrilátor</Czech>
-            <Korean>바이탈측정 자동제세동기 사용</Korean>
-            <French>Utiliser le défibrillateur AED-X</French>
-            <Turkish>AED-X defibrilatör kullan</Turkish>
-            <Italian>Usare il defibrillatore DAE-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_X_Action_Remove">
-            <English>Remove monitoring</English>
-            <German>Entferne Überwachung</German>
-            <Polish>Przestań monitorować</Polish>
-            <Spanish>Quitar monitoreo</Spanish>
-            <Chinese>移除監控</Chinese>
-            <Czech>Odstranit monitorování</Czech>
-            <Korean>측정장치 제거</Korean>
-            <French>Retirer le moniteur</French>
-            <Turkish>İzlemeyi kaldır</Turkish>
-            <Italian>Rimuovere il monitoraggio</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_AED_X_Action_Progress">
-            <English>Using AED-X defibrillator</English>
-            <German>Benutze AED-X Defibrillator</German>
-            <Polish>Korzystanie z defibrylatora AED-X</Polish>
-            <Spanish>Yo uso un desfibrilador AED-X</Spanish>
-            <Chinese>我使用AED-X除顫器</Chinese>
-            <Czech>Používám AED-X defibrilátor</Czech>
-            <Korean>바이탈측정 자동제세동기 사용중</Korean>
-            <French>Utilisation du défibrillateur AED-X</French>
-            <Turkish>AED-X defibrilatörü kullanılıyor</Turkish>
-            <Italian>Usando il defibrillatore DAE-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_X_Action_Progress">
-            <English>Connecting</English>
-            <German>Anschließen</German>
-            <Polish>Łączenie</Polish>
-            <Spanish>Conectando</Spanish>
-            <Chinese>連線中</Chinese>
-            <Czech>Připojuji</Czech>
-            <Korean>연결중</Korean>
-            <French>Connexion</French>
-            <Turkish>Bağlanıyor</Turkish>
-            <Italian>Collegando</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_X_Remove_Action_Progress">
-            <English>Disconnecting</English>
-            <German>Entfernen</German>
-            <Polish>Rozłączanie</Polish>
-            <Spanish>Desconectando</Spanish>
-            <Chinese>斷開連接</Chinese>
-            <Czech>Odpojuji</Czech>
-            <Korean>때어내는중</Korean>
-            <French>Déconnexion</French>
-            <Turkish>Bağlantı Kesiliyor</Turkish>
-            <Italian>Scollegando</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_X_Action_removeSound">
-            <English>Turn down volume of AED X</English>
-            <German>X-AED stumm schalten</German>
-            <Polish>Wycisz dźwięki AED X</Polish>
-            <Spanish>Bajar el volúmen del DEA X</Spanish>
-            <Chinese>降低AED X音量</Chinese>
-            <Czech>Snížit hlasitost AED-X</Czech>
-            <Korean>바이탈측정 자동제세동기 BP음 끄기</Korean>
-            <French>Réduire le volume du AED-X</French>
-            <Turkish>AED X'in sesini kısın</Turkish>
-            <Italian>Ridurre il volume del DAE-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_X_Action_addSound">
-            <English>Turn up volume of AED X</English>
-            <German>X-AED laut schalten</German>
-            <Polish>Włącz dźwięki AED X</Polish>
-            <Spanish>Subir el volúmen del DEA X</Spanish>
-            <Chinese>提高AED X音量</Chinese>
-            <Czech>Zvýšit hlasitost AED-X</Czech>
-            <Korean>바이탈측정 자동제세동기 BP음 켜기</Korean>
-            <French>Augmenter le volume du AED-X</French>
-            <Turkish>AED X'in sesini arttırın</Turkish>
-            <Italian>Aumentare il volume del DAE-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_Pain_empty">
+        <Key ID="STR_kat_pharma_Pain_empty">
             <English>%1 is now empty</English>
             <German>%1 ist nun leer</German>
             <Polish>%1 jest pusty</Polish>
@@ -892,294 +889,6 @@
             <French>%1 est maintenant vide</French>
             <Turkish>% 1 artık boş</Turkish>
             <Italian>è vuota</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_LOCATION_AED">
-            <English>Locations AED</English>
-            <German>Orte für AED</German>
-            <Chinese>AED使用場合</Chinese>
-            <Polish>Miejsca użycia AED</Polish>
-            <Spanish>Ubicación del DAE</Spanish>
-            <Czech>Oblasti pro AED</Czech>
-            <Korean>자동제세동기 배치</Korean>
-            <French>Lieux de l'AED</French>
-            <Turkish>AED Konumları</Turkish>
-            <Italian>Posizione del DEA</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_LOCATION_AED_DESCRIPTION">
-            <English>Where can the AED be used?</English>
-            <German>Wo kann der AED verwendet werden?</German>
-            <Chinese>哪裡可以使用AED?</Chinese>
-            <Polish>Gdzie można użyć AED?</Polish>
-            <Spanish>¿Dónde se puede usar el DAE?</Spanish>
-            <Czech>Kde může být AED použito?</Czech>
-            <Korean>자동제세동기는 어디에서 사용 가능한가요?</Korean>
-            <French>Où l'AED peut être utilisé</French>
-            <Turkish>AED nerede kullanılabilir?</Turkish>
-            <Italian>Dove può essere utilizzato il DEA</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_AED_DISPLAYNAME">
-            <English>AED</English>
-            <German>Automatisierter Externer Defibrillator</German>
-            <Chinese>自動體外除顫器</Chinese>
-            <Polish>Automatyczny Zewnętrzny Defibrylator</Polish>
-            <Spanish>Desfibrilador Externo Automático</Spanish>
-            <Czech>Automatický externí defibrilátor</Czech>
-            <Korean>자동제세동기</Korean>
-            <French>Défibrillateur Automatisé Externe</French>
-            <Turkish>Otomatik eksternal defibrilatör</Turkish>
-            <Italian>Defibrillatore Automatico Esterno</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_AED_DESCRIPTION">
-            <English>Use to resuscitate player</English>
-            <German>Stellt Puls wieder her</German>
-            <Chinese>用來甦醒玩家</Chinese>
-            <Polish>Użyj do reanimacji</Polish>
-            <Spanish>Úsalo para resucitar a un jugador</Spanish>
-            <Czech>Použít k resuscitaci hráče</Czech>
-            <Korean>부상병을 깨우는데 사용됩니다</Korean>
-            <French>Utilisé pour ressusciter un joueur</French>
-            <Turkish>Oyuncuyu canlandırmak için kullanın</Turkish>
-            <Italian>Utilizzato per resuscitare un giocatore</Italian>
-        </Key>
-        <Key ID="STR_ACEP_Medical_Treatment_Activity_AED">
-            <English>%1 performed AED</English>
-            <Polish>%1 wykonał cykl AED</Polish>
-            <German>%1 hat ein AED durchgeführt</German>
-            <Spanish>%1 realicó AED</Spanish>
-            <Chinese>%1 已執行心肺復甦術</Chinese>
-            <Czech>%1 použito AED</Czech>
-            <Korean>%1 자동제세동기가 사용되었습니다</Korean>
-            <French>%1 a utilisé un AED</French>
-            <Turkish>%1 AED gerçekleştirdi</Turkish>
-            <Italian>ha utilizzato un DEA</Italian>
-        </Key>
-        <Key ID="STR_ACEP_Medical_Treatment_Activity_AEDS">
-            <English>%1 performed AED Station</English>
-            <Polish>%1 wykonał cykl AED Station</Polish>
-            <German>%1 hat ein AED Station durchgeführt</German>
-            <Spanish>%1 realicó AED Station</Spanish>
-            <Chinese>%1 已執行心肺復甦術</Chinese>
-            <Czech>%1 použita AED stanice</Czech>
-            <Korean>%1 자동제세동기가 사용되었습니다</Korean>
-            <French>%1 a utilisé une station AED</French>
-            <Turkish>%1 gerçekleştirilen AED İstasyonu</Turkish>
-            <Italian>ha utilizzato una stazione DEA</Italian>
-        </Key>
-        <Key ID="STR_ACEP_Medical_Treatment_Activity_AEDX">
-            <English>%1 performed AED-X</English>
-            <Polish>%1 wykonał cykl AED-X</Polish>
-            <German>%1 hat ein AED-X durchgeführt</German>
-            <Spanish>%1 realicó AED-X</Spanish>
-            <Chinese>%1 已執行心肺復甦術</Chinese>
-            <Czech>%1 použito AED-X</Czech>
-            <Korean>%1 바이탈측정 자동제세동기가 사용되었습니다</Korean>
-            <French>%1 a utilisé un AED-X</French>
-            <Turkish>% 1 AED-X gerçekleştirdi</Turkish>
-            <Italian>ha utilizzato un DEA-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_SUCESSCHANCE_AED_X">
-            <English>Succes chance for AED-X</English>
-            <Polish>Szansa na udaną defybrilację dla AED-X</Polish>
-            <German>Erfolgsrate für AED-X</German>
-            <Spanish>Posibilidad de éxito para AED-X</Spanish>
-            <Chinese>AED-X成功的機會</Chinese>
-            <Czech>Šance úspěchu pro AED-X</Czech>
-            <Korean>바이탈측정 자동제세동기 성공확률</Korean>
-            <French>Chances de succès pour l'AED-X</French>
-            <Turkish>AED-X için başarı şansı</Turkish>
-            <Italian>Probabilità di successo del DEA-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_SUCESSCHANCE_AED">
-            <English>Succes chance for AED</English>
-            <Polish>Szansa na udaną defybrilację dla AED</Polish>
-            <German>Erfolgsrate für AED</German>
-            <Spanish>Posibilidad de éxito para AED</Spanish>
-            <Chinese>AED成功的機會</Chinese>
-            <Czech>Šance úspěchu pro AED</Czech>
-            <Korean>자동제세동기 성공확률</Korean>
-            <French>Chances de succès pour l'AED</French>
-            <Turkish>AED için başarı şansı</Turkish>
-            <Italian>Probabilità di successo del DEA</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_ALLOW_AED_X">
-            <English>Allow AED-X</English>
-            <Polish>Ograniczenie użycia AED-X</Polish>
-            <German>AED-X erlauben</German>
-            <Spanish>Permitir AED-X</Spanish>
-            <Chinese>允許AED-X</Chinese>
-            <Czech>Povolit AED</Czech>
-            <Korean>바이탈측정 자동제세동기 허용</Korean>
-            <French>Autoriser l'AED-X</French>
-            <Turkish>AED-X'e izin ver</Turkish>
-            <Italian>Permetti il DEA-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_TRAINING_LEVEL_AED_X">
-            <English>Training level requied to use an AED-X</English>
-            <Polish>Poziom wyszkolenia wymagany do korzystania z AED-X</Polish>
-            <German>Benötigtes Training Level um den  AED-X zu nutzen</German>
-            <Spanish>Nivel de entrenamiento requerido para usar un AED-X</Spanish>
-            <Chinese>使用AED-X所需的培訓水平</Chinese>
-            <Czech>Úroveň výcviku nutná k použití AED-X</Czech>
-            <Korean>바이탈측정 자동제세동기 사용에 필요한 의료레벨</Korean>
-            <French>Niveau de d'entrainement pour utiliser un AED-X</French>
-            <Turkish>AED-X kullanmak için gerekli eğitim seviyesi</Turkish>
-            <Italian>Livello d'addestramento richiesto per usare il DEA-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_DISTANCELIMIT_AED_X">
-            <English>Distance limit for AED-X in meters</English>
-            <Polish>Limit odległości dla AED-X w metrach</Polish>
-            <German>Distanz Grenze für den AED-X in Meter</German>
-            <Spanish>Límite de distancia para AED-X en metros</Spanish>
-            <Chinese>AED-X的距離限制，以米為單位</Chinese>
-            <Czech>Vzdálenostní limit pro AED-X v metrech</Czech>
-            <Korean>바이탈측정 자동제세동기 사용가능거리 설정(미터법)</Korean>
-            <French>Distance maximum en mètres pour l'AED-X</French>
-            <Turkish>Metre cinsinden AED-X için mesafe sınırı</Turkish>
-            <Italian>Distanza massima in metri per il DEA-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_TIMELIMIT_AED_X">
-            <English>Time limit for monitor of AED-X in seconds</English>
-            <Polish>Limit czasu dla monitora AED-X w sekundach</Polish>
-            <German>Zeitbegrenzung für die Werteüberwachung vom AED-X in Sekunden</German>
-            <Spanish>Límite de tiempo para monitor de AED-X en segundos</Spanish>
-            <Chinese>監視AED-X的時間限制（以秒為單位）</Chinese>
-            <Czech>Časový limit pro monitoring pomocí AED-X v sekundách</Czech>
-            <Korean>바이탈측정 자동제세동기 모니터링 시간제한 (초단위)</Korean>
-            <French>Limite de temps pour monitorer l'AED-X en secondes</French>
-            <Turkish>AED-X'in saniye cinsinden izlenmesi için zaman sınırı</Turkish>
-            <Italian>Limite di tempo in secondi per il monitoraggio del DEA-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_DEACTIVATE_MONITOR_WHILEAED_X">
-            <English>Deactivate Monitor while using AED-X</English>
-            <Polish>Dezaktywuj monitor podczas korzystania z AED-X</Polish>
-            <German>AED-X Monitor während dem defibrillieren deaktivieren</German>
-            <Spanish>Desactive el monitor mientras usa AED-X</Spanish>
-            <Chinese>使用AED-X時停用顯示器</Chinese>
-            <Czech>Deaktivovat monitoring při použití AED-X</Czech>
-            <Korean>바이탈측정 자동제세동기 사용시 모니터 비활성화</Korean>
-            <French>Désactiver le moniteur pendant l'utilisation de l'AED-X</French>
-            <Turkish>AED-X kullanırken Monitörü devre dışı bırakın</Turkish>
-            <Italian>Disattivare il monitoraggio durante l'utilizzo del DEA-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_SETTING_CPR_CHANCES">
-            <English>Enable different CPR chances per medical level</English>
-            <Polish>Włącz różne szanse resuscytacji, zależne od wyszkolenia medycznego</Polish>
-            <German>Aktiviere verschiedene HLW Erfolgsraten für verschiedene Medic Level</German>
-            <Spanish>Permita diferentes posibilidades de RCP por nivel médico</Spanish>
-            <Chinese>每個醫療級別啟用不同的CPR機會</Chinese>
-            <Czech>Povolit různé šance pro resuscitaci dle úrovně zdravotnického výcviku</Czech>
-            <Korean>의료레벨에 따라 CPR 성공확률을 다르게 하도록 설정</Korean>
-            <French>Activer différentes chances de réussite de RCP par niveau médical </French>
-            <Turkish>Tıbbi eğitim seviyesi başına farklı CPR şansı sağlayın</Turkish>
-            <Italian>Attivare diverse possibilità di riuscita della RCP per livello medico</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_SETTING_CPR_CHANCE_DOCTOR">
-            <English>CPR Chance for Doctors</English>
-            <Polish>Szansa na udaną resuscytację dla doktorów</Polish>
-            <German>HLW Erfolgsrate für Doktoren</German>
-            <Spanish>Posibilidad de RCP para médicos</Spanish>
-            <Chinese>醫生的CPR機會</Chinese>
-            <Czech>Šance resuscitace pro doktory</Czech>
-            <Korean>군의관 CPR 성공확률</Korean>
-            <French>Chances de RCP pour les Docteurs</French>
-            <Turkish>Doktorlar için CPR Şansı</Turkish>
-            <Italian>Probabilità di RCP per i dottori</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_SETTING_CPR_CHANCE_REGULARMEDIC">
-            <English>CPR Chance for Regular medics</English>
-            <Polish>Szansa na udaną resuscytację dla zwykłych medyków</Polish>
-            <German>HLW Erfolgsrate für normale Medics</German>
-            <Spanish>Posibilidad de RCP para médicos regulares</Spanish>
-            <Chinese>常規醫生的CPR機會</Chinese>
-            <Czech>Šance resuscitace pro regulérní zdravotníky</Czech>
-            <Korean>의무병 CPR 성공확률</Korean>
-            <French>Chances de RCP pour les médecins</French>
-            <Turkish>İlk yardım uzmanları için CPR Şansı</Turkish>
-            <Italian>Probabilità di RCP per i medici</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_SETTING_CPR_CHANCE_DEFAULT">
-            <English>CPR Chance for Default</English>
-            <Polish>Szansa resuscytacji domyślnie</Polish>
-            <German>Standard HLW Erfolgsrate</German>
-            <Spanish>Posibilidad de RCP por incumplimiento</Spanish>
-            <Chinese>預設CPR機會</Chinese>
-            <Czech>Šance resuscitace pro základní</Czech>
-            <Korean>일반전투병 CPR 성공확률</Korean>
-            <French>Chances de RCP par défaut</French>
-            <Turkish>Varsayılan CPR Şansı</Turkish>
-            <Italian>Probabilità di RCP per default</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_Vehicle_Action_Use">
-            <English>Vehicle: Use AED-X</English>
-            <German>Überwache Werte</German>
-            <Polish>Monitoruj parametry życiowe</Polish>
-            <Spanish>Monitorear vitales</Spanish>
-            <Chinese>監控生命跡象</Chinese>
-            <Czech>Monitorování vitálních funkcí</Czech>
-            <Korean>바이탈 측정</Korean>
-            <French>Monitorer les constantes vitales</French>
-            <Turkish>Monitor vitals</Turkish>
-            <Italian>Monitorare parametri vitali</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_AED_Vehicle_Action_Use">
-            <English>Vehicle: Monitor vitals</English>
-            <German>Benutze AED-X Defibrillator</German>
-            <Polish>Użyj defibrylatora AED-X</Polish>
-            <Spanish>Utilice el desfibrilador AED-X</Spanish>
-            <Chinese>使用AED-X除顫器</Chinese>
-            <Czech>Použít AED-X defibrilátor</Czech>
-            <Korean>바이탈측정 자동제세동기 사용</Korean>
-            <French>Utiliser le défibrillateur AED-X</French>
-            <Turkish>AED-X defibrilatör kullan</Turkish>
-            <Italian>Usare il defibrillatore DAE-X</Italian>
-        </Key>
-        <Key ID="STR_ACEP_circulation_Vehicle_Action_Remove">
-            <English>Vehicle: Remove monitoring</English>
-            <German>Entferne Überwachung</German>
-            <Polish>Przestań monitorować</Polish>
-            <Spanish>Quitar monitoreo</Spanish>
-            <Chinese>移除監控</Chinese>
-            <Czech>Odstranit monitorování</Czech>
-            <Korean>측정장치 제거</Korean>
-            <French>Retirer le moniteur</French>
-            <Turkish>İzlemeyi kaldır</Turkish>
-            <Italian>Rimuovere il monitoraggio</Italian>
-        </Key>
-        <Key ID="STR_ACE_Medical_Treatment_Activity_AED">
-            <English>%1 performed AED</English>
-            <Polish>%1 wykonał cykl AED</Polish>
-            <German>%1 hat ein AED durchgeführt</German>
-            <Spanish>%1 realicó AED</Spanish>
-            <Chinese>%1 已執行心肺復甦術</Chinese>
-            <Czech>%1 použito AED</Czech>
-            <Korean>%1 자동제세동기가 사용되었습니다</Korean>
-            <French>%1 a utilisé un AED</French>
-            <Turkish>%1 AED gerçekleştirdi</Turkish>
-            <Italian>ha utilizzato un DEA</Italian>
-        </Key>
-        <Key ID="STR_ACE_Medical_Treatment_Activity_AEDS">
-            <English>%1 performed AED Station</English>
-            <Polish>%1 wykonał cykl AED Station</Polish>
-            <German>%1 hat ein AED Station durchgeführt</German>
-            <Spanish>%1 realicó AED Station</Spanish>
-            <Chinese>%1 已執行心肺復甦術</Chinese>
-            <Czech>%1 použita AED stanice</Czech>
-            <Korean>%1 자동제세동기가 사용되었습니다</Korean>
-            <French>%1 a utilisé une station AED</French>
-            <Turkish>%1 gerçekleştirilen AED İstasyonu</Turkish>
-            <Italian>ha utilizzato una stazione DEA</Italian>
-        </Key>
-        <Key ID="STR_ACE_Medical_Treatment_Activity_AEDX">
-            <English>%1 performed AED-X</English>
-            <Polish>%1 wykonał cykl AED-X</Polish>
-            <German>%1 hat ein AED-X durchgeführt</German>
-            <Spanish>%1 realicó AED-X</Spanish>
-            <Chinese>%1 已執行心肺復甦術</Chinese>
-            <Czech>%1 použito AED-X</Czech>
-            <Korean>%1 바이탈측정 자동제세동기가 사용되었습니다</Korean>
-            <French>%1 a utilisé un AED-X</French>
-            <Turkish>% 1 AED-X gerçekleştirdi</Turkish>
-            <Italian>ha utilizzato un DEA-X</Italian>
         </Key>
     </Package>
 </Project>

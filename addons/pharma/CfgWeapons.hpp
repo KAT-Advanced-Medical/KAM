@@ -18,29 +18,6 @@ class CfgWeapons {
             mass = 0;
         };
     };
-    class kat_AED: ACE_ItemCore {
-        scope = 2;
-        author = "Katalam";
-        displayName = CSTRING(AED_DISPLAYNAME);
-        picture = QPATHTOF(ui\defib.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
-        descriptionShort = "$STR_ACEP_circulation_AED_DESCRIPTION";
-        descriptionUse = "$STR_ACEP_circulation_AED_DESCRIPTION";
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 30;
-        };
-    };
-    class kat_X_AED: kat_AED {
-        scope = 2;
-        displayName = CSTRING(X_Display);
-        picture = QPATHTOF(ui\x-series.paa);
-        model = QPATHTOF(models\aedx\aedx.p3d);
-        descriptionShort = CSTRING(X_Desc);
-        descriptionUse = CSTRING(X_Desc);
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 100;
-        };
-    };
     class kat_IV_16: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(IV_16_Display);
@@ -147,17 +124,6 @@ class CfgWeapons {
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Atropine_DescShort);
         descriptionUse = CSTRING(Atropine_DescUse);
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.5;
-        }; 
-    };
-    class kat_ondansetron: ACE_ItemCore {
-        scope = 2;
-        displayName = CSTRING(Ondansetron_Box_Display);
-        picture = QPATHTOF(ui\icon_Ondansetron.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Ondansetron_DescShort);
-        descriptionUse = CSTRING(Ondansetron_DescUse);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 

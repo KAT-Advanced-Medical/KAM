@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: 2LT.Mazinski
- * Local action for carbonate
+ * Local action for reorientation
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -12,7 +12,7 @@
  * Succesful treatment <BOOL>
  *`
  * Example:
- * [player, "Carbonate"] call aceP_airway_fnc_treatmentAdvanced_CarbonateLocal;
+ * [player, "Carbonate"] call kat_airway_fnc_treatmentAdvanced_CarbonateLocal;
  *
  * Public: No
  */

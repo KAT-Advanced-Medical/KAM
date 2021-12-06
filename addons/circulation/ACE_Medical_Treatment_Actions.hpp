@@ -17,9 +17,6 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
-    /**
-    * @Slatery - Does the below function even do anything? Why does this need to be redefined if all that's happening is the function has been overwritten?
-    */
     class CheckDogtags: CheckPulse {
         displayName = CSTRING(DogTag);
         displayNameProgress = CSTRING(DogTag_Action);
@@ -32,7 +29,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
-    class CheckBloodPressure: CheckPulse { // Remove the ability to check blood pressure at the head
+    class CheckBloodPressure: CheckPulse { 
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
 		animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
@@ -73,42 +70,40 @@ class ACE_Medical_Treatment_Actions {
 
     #include "Blood_Medical.hpp"
 	
-	class Defibrillator: CPR {
-		displayName = CSTRING(Defib_Action_Use);
-		displayNameProgress = "$STR_KAT_circulation_AED_PROGRESS";
-		icon = QPATHTOF(ui\defib.paa);
-		items[] = {"kat_AED"};
-		treatmentTime = 10;
-		callbackStart = "call ace_medical_treatment_fnc_cprStart; _patient setVariable ['kat_AEDinUse', true, true];";
-		callbackProgress = "call ace_medical_treatment_fnc_cprProgress; call kat_circulation_fnc_AED_sound;";
-		callbackSuccess = "[_medic, _patient, 'AED'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
-		callbackFailure = "call ace_medical_treatment_fnc_cprFailure; _medic setVariable ['kat_soundplayed', false, true]; _patient setVariable ['kat_AEDinUse', false, true];";
-		animationMedic = "AinvPknlMstpSnonWnonDr_medic0";
-		treatmentLocations = "GVAR(useLocation_AED)";
-		medicRequired = QGVAR(medLvl_AED);
-		animationPatient = "";
+    class Defibrillator: CPR {
+        displayName = CSTRING(Defib_Action_Use);
+        displayNameProgress = "$STR_KAT_circulation_AED_PROGRESS";
+        icon = QPATHTOF(ui\defib.paa);
+        items[] = {"kat_AED"};
+        treatmentTime = 10;
+        callbackStart = "call ace_medical_treatment_fnc_cprStart; _patient setVariable ['kat_AEDinUse', true, true];";
+        callbackProgress = "call ace_medical_treatment_fnc_cprProgress; call kat_circulation_fnc_AED_sound;";
+        callbackSuccess = "[_medic, _patient, 'AED'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
+        callbackFailure = "call ace_medical_treatment_fnc_cprFailure; _medic setVariable ['kat_soundplayed', false, true]; _patient setVariable ['kat_AEDinUse', false, true];";
+        animationMedic = "AinvPknlMstpSnonWnonDr_medic0";
+        treatmentLocations = "GVAR(useLocation_AED)";
+        medicRequired = QGVAR(medLvl_AED);
+        animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-	};
-	class Defibrillator_station: Defibrillator {
-		displayName = CSTRING(DefibS_Action_Use);
-		items[] = {};
-		callbackSuccess = "[_medic, _patient, 'AED-Station'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
-		condition = "kat_circulation_fnc_AEDStationCondition";
-		treatmentLocations = 0;
-	};
-	
+    };
+    class Defibrillator_station: Defibrillator {
+        displayName = CSTRING(DefibS_Action_Use);
+        items[] = {};
+        callbackSuccess = "[_medic, _patient, 'AED-Station'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
+        condition = "kat_circulation_fnc_AEDStationCondition";
+        treatmentLocations = 0;
+    };
     class Defibrillator_AED_X: Defibrillator {
-		displayName = CSTRING(AED_X_Action_Use);
+        displayName = CSTRING(AED_X_Action_Use);
         displayNameProgress = CSTRING(AED_X_Action_Progress);
         items[] = {};
-		callbackSuccess = "[_medic, _patient, 'AED-X'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
+        callbackSuccess = "[_medic, _patient, 'AED-X'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
         //condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [ARR_2(_medic, 'kat_AED')] call ace_common_fnc_hasItem || [ARR_2(_medic, 'kat_X_AED')] call ace_common_fnc_hasItem);
         condition = "kat_circulation_fnc_AEDXCondition";
-		medicRequired = QGVAR(medLvl_AED_X);
+        medicRequired = QGVAR(medLvl_AED_X);
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
-    
     class X_Defibrillator_AED_X: Defibrillator_AED_X {
         displayName = CSTRING(X_Action_Use);
         displayNameProgress = CSTRING(X_Action_Progress);
@@ -122,18 +117,53 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_X);
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
-
     class Remove_X_Defibrillator: Defibrillator_AED_X {
         displayName = CSTRING(X_Action_Remove);
-		displayNameProgress = CSTRING(X_Remove_Action_Progress);
+        displayNameProgress = CSTRING(X_Remove_Action_Progress);
         items[] = {};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]) && QUOTE(!(_patient getVariable [ARR_2(QQGVAR(vehicleTrue), false)]));
         treatmentTime = 5;
         medicRequired = 0;
         callbackProgress = "";
-		callbackStart = "";
+        callbackStart = "";
         callbackFailure = "";
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(returnAED_X));
+        callbackSuccess = QUOTE([ARR_3(_medic, _patient, true)] call FUNC(returnAED_X));
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+    };
+    class Defibrillator_AED_X_vehicle: Defibrillator {
+        displayName = "Vehicle: Use AED-X";
+        displayNameProgress = CSTRING(AED_X_Action_Progress);
+        items[] = {};
+        callbackSuccess = "[_medic, _patient, 'AED-X'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
+        //condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [ARR_2(_medic, 'kat_AED')] call ace_common_fnc_hasItem || [ARR_2(_medic, 'kat_X_AED')] call ace_common_fnc_hasItem);
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(vehicleTrue), true)]) && QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
+        medicRequired = QGVAR(medLvl_AED_X);
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+    };
+    class X_Defibrillator_AED_X_vehicle: Defibrillator_AED_X_vehicle {
+        displayName = "Vehicle: Attach AED-X";
+        displayNameProgress = CSTRING(X_Action_Progress);
+        items[] = {};
+        condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), false)])) && QFUNC(vehicleCheck);
+        consumeItem = 1;
+        medicRequired = QGVAR(medLvl_AED_X);
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QFUNC(treatmentAdvanced_X_Vehicle);
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+    };
+    class Remove_X_Defibrillator_vehicle: Defibrillator_AED_X_vehicle {
+        displayName = "Vehicle: Remove AED-X";
+        displayNameProgress = CSTRING(X_Remove_Action_Progress);
+        items[] = {};
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(vehicleTrue), true)]) && QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
+        treatmentTime = 5;
+        medicRequired = 0;
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QUOTE([ARR_3(_medic, _patient, false)] call FUNC(returnAED_X));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
 };

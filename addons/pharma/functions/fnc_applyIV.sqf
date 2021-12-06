@@ -49,7 +49,7 @@ if (_usedItem == "kat_IV_16") then {
 
 [{
     private _patient = _this select 0;
-    [_patient, _patient] call acep_circulation_fnc_retrieveIV;
+    [_patient, _patient] call FUNC(retrieveIV);
 }, [_patient], GVAR(IVdrop)] call CBA_fnc_waitAndExecute;
 
 [{

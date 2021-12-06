@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, "TXA"] call aceP_circulation_fnc_treatmentAdvanced_TXALocal;
+ * [player, "TXA"] call kat_circulation_fnc_treatmentAdvanced_TXALocal;
  *
  * Public: No
  */

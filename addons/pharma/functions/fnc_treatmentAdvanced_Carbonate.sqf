@@ -18,7 +18,7 @@
 
 params ["_medic", "_patient", "_medication"];
 
-["kat_Carbonate", _medic, _patient, "head", "Carbonate"] call acep_circulation_fnc_removeItemfromMag;
+["kat_Carbonate", _medic, _patient, "head", "Carbonate"] call FUNC(removeItemfromMag);
 
 if (local _patient) then {
     ["treatmentCarbonate", [_medic, _patient, _medication]] call CBA_fnc_localEvent;

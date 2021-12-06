@@ -1,4 +1,5 @@
 PREP(AED_sound);
+PREP(AEDanalyze);
 PREP(AEDStationCondition);
 PREP(AEDSuccess);
 PREP(AEDXCondition);
@@ -19,6 +20,8 @@ PREP(removeLog);
 PREP(treatment);
 PREP(treatmentAdvanced_IV);
 PREP(treatmentAdvanced_X);
+PREP(treatmentAdvanced_X_Vehicle);
+PREP(vehicleCheck);
 PREP(wrongBloodTreatment);
 PREP(drawBlood);
 PREP(canDraw);

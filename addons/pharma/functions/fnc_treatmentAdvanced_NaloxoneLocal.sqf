@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, "Naloxone"] call aceP_circulation_fnc_treatmentAdvanced_NaloxoneLocal;
+ * [player, "Naloxone"] call kat_circulation_fnc_treatmentAdvanced_NaloxoneLocal;
  *
  * Public: No
  */

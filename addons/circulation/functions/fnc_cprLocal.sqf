@@ -24,9 +24,51 @@ params [
 	["_reviveObject","CPR",[""]]
 ];
 
+private _bloodLoss = _patient getVariable ["ace_medical_bloodVolume", 6.0];
+private _medicationArray = _patient getVariable ["ace_medical_medications", []];
+
 private _chance = 0;
 private _random = random 100;
+private _randomAmi = random 4;
 private _randomCPR = random 1;
+private _epiBoost = 0;
+private _amiBoost = 0;
+private _lidoBoost = 0;
+private _asystole = _patient getVariable [QGVAR(asystole), 0];
+private _CPRcount = _patient getVariable [QGVAR(CPRcount), 0];
+
+if (_asystole == 0) then {
+	if (_bloodLoss <= 2.8) then {
+		_patient setVariable [QGVAR(asystole), 2, true];
+		_asystole = _patient getVariable [QGVAR(asystole), 2];
+	} else {
+		_patient setVariable [QGVAR(asystole), 1, true];
+		_asystole = _patient getVariable [QGVAR(asystole), 1];
+	};
+};
+
+{
+    _x params ["_medication"];
+
+    switch(_medication) do
+    {
+	    case "Epinephrine": 
+	    {
+	    _epiBoost = 1;
+	    };
+	    case "Amiodarone": 
+	    {
+	    _amiBoost = _amiBoost + (random [8,14,20]);
+	    	if (_randomAmi >= 2) then {
+	    	    [_patient, "BRADYCARDIA", 120, 1200, -15, 0, 0] call ace_medical_status_fnc_addMedicationAdjustment;
+	    	};
+	    };
+	    case "Lidocane": 
+	    {
+	    _lidoBoost = _lidoBoost + 8;
+	    };
+	};
+} forEach (_patient getVariable ["ace_medical_medications", []]);
 
 switch (_reviveObject) do {
 	case "CPR": {
@@ -61,16 +103,33 @@ switch (_reviveObject) do {
 };
 
 if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AED-X" || _reviveObject isEqualTo "AED-Station") exitWith {
-	if (_random <= _chance) then {
+	_chance = _chance + (_amiBoost + _lidoBoost * _epiBoost);
+	if (_random <= _chance && _asystole <= 1) then {
 		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
+		_patient setVariable [QGVAR(asystole), 0, true];
 	};
 };
 if !(GVAR(enable_CPR_Chances)) then {
-	if (_randomCPR < _chance) then {
+	if (_random < _chance) then {
 		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
 	};
 } else {
+	diag_log "MANUAL CPR";
+
+	if (_epiBoost == 1) then {
+		_chance = _chance + (2 ^ _CPRcount);
+		_CPRcount = _CPRcount + 1;
+		_patient setVariable [QGVAR(CPRcount), _CPRcount, true];
+	};
+
 	if (_random <= _chance) then {
-		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
+		if (_randomAmi > 1) then {
+			_patient setVariable [QGVAR(asystole), 1, true];
+			_patient setVariable [QGVAR(CPRcount), 2, true];
+		} else {
+			["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
+			_patient setVariable [QGVAR(asystole), 0, true];
+			_patient setVariable [QGVAR(CPRcount), 2, true];
+		};
 	};
 };
