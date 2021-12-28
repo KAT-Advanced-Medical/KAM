@@ -144,7 +144,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = "Vehicle: Attach AED-X";
         displayNameProgress = CSTRING(X_Action_Progress);
         items[] = {};
-        condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), false)])) && QFUNC(vehicleCheck);
+        condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), false)]) && FUNC(vehicleCheck));
         consumeItem = 1;
         medicRequired = QGVAR(medLvl_AED_X);
         callbackProgress = "";
