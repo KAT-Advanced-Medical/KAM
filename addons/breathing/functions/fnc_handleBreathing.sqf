@@ -32,7 +32,6 @@ if (!local _unit) then {
     if !(alive _unit) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_O2Breathing_PFH", nil];
-        _unit setVariable ["KAT_medical_airwayStatus", 100, true];
     };
 
     private _pneumothorax = _unit getVariable ["KAT_medical_pneumothorax", false];
@@ -41,7 +40,7 @@ if (!local _unit) then {
     private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
     private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
     private _output = 0;
-    private _finalOutput;
+    private _finalOutput = 0;
 
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && {GVAR(SpO2_dieActive)}) exitWith {
@@ -58,24 +57,23 @@ if (!local _unit) then {
     };
 
     if !([_unit] call ace_common_fnc_isAwake) exitWith {
-        if (_occluded == true) then {
+        if (_occluded) then {
             _output = _output - 0.5;
         } else {
             _output = _output + 0.25;
         };
 
-        if (_obstruction == true) then {
+        if (_obstruction) then {
             _output = _output - 0.5;
         } else {
             _output = _output + 0.25;
         };
 
-        if (_pneumothorax == true || _hemothorax == true) then {
-            _output = -0.5;
+        if (_pneumothorax || _hemothorax) then {
+            _output = - 0.5;
         };
 
         _finalOutput = _status + _output;
-        _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
 
         if (_finalOutput > 100) then {
             _finalOutput = 100;
@@ -89,22 +87,18 @@ if (!local _unit) then {
     };
 
     if ([_unit] call ace_common_fnc_isAwake) exitWith {
-        switch (true) do {
-            case (true): {
-                _output = output + 0.5;
-            };
-            case (_pneumothorax == true || _hemothorax == true): {
-                _output = _output - 1;
-            };
+
+        if (_pneumothorax || _hemothorax) then {
+            _output = _output - 0.5;
         };
 
         _finalOutput = _status + _output;
-        _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
 
         if (_finalOutput < 5) then {
             _finalOutput = 5;
         };
+		
+		_unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
     };
 
 }, 3, [_unit]] call CBA_fnc_addPerFrameHandler;
-
