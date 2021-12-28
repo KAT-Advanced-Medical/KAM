@@ -202,7 +202,7 @@ private _site = _target getVariable [QEGVAR(pharma,IVsite), 0];
 
 if ((_placed == true) && (_site == _selectionN)) then {
     if (_site > 1) then {
-        private _a = "IV_16";
+        private _text = format ["STR_kat_pharma_%1_Display", "IV_16"];
         private _text = format ["STR_kat_pharma_%1_Display", _a];
         _woundEntries pushback [localize _text, [0.3, 0.3, 0.5, 1]];
     } else {
