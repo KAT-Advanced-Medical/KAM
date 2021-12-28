@@ -21,7 +21,7 @@ params ["_medic", "_patient"];
 private _bloodLoss = _patient getVariable ["ace_medical_bloodVolume", 6.0];
 private _asystole = _patient getVariable [QGVAR(asystole), 0];
 
-if (_asystole == 0) then {
+if (_asystole isEqualTo 0) then {
 	if (_bloodLoss <= 2.8) then {
 		_patient setVariable [QGVAR(asystole), 2, true];
 	} else {
