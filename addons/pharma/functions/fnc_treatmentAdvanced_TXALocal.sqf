@@ -41,7 +41,7 @@ params ["_target", "_item"];
 
     private _alive = alive _target;
 
-    if ((!_alive) || (_TXA == false)) exitWith {
+    if ((!_alive) || (!_TXA)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler; 
     };
 
