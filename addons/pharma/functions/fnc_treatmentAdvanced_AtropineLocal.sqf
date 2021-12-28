@@ -1,17 +1,17 @@
 #include "script_component.hpp"
 /*
- * Author: 2LT.Mazinski
- * Locates and Removes 1x Morphine after the administration of Naloxone.
+ * Author: Mazinski.H
+ * Locates and Removes Bradycardia Effect.
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Medication <STRING>
  *
  * Return Value:
- * None
+ * <BOOLEAN>
  *
  * Example:
- * [player, "Atropine"] call kat_circulation_fnc_treatmentAdvanced_NaloxoneLocal;
+ * [player, "Atropine"] call kat_pharma_fnc_treatmentAdvanced_AtropineLocal;
  *
  * Public: No
  */
@@ -21,7 +21,7 @@ params ["_target", "_item"];
 {
     _x params ["_medication"];
 
-    if (_medication == "BRADYCARDIA") exitWith {
+    if (_medication isEqualTo "BRADYCARDIA") exitWith {
         _medicationArray deleteAt (_medicationArray find _x);
     };
 } forEach (_medicationArray);

@@ -14,7 +14,6 @@ PREP(init);
 PREP(onCloseDialog);
 PREP(placeAED);
 PREP(removeEffect_IV);
-PREP(removeItemfromMag);
 PREP(returnAED_X);
 PREP(removeLog);
 PREP(treatment);

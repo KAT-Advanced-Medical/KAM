@@ -1,17 +1,17 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
- * Handle the X Series Defi for the patient.
+ * Author: Mazinski.H
+ * Analyzes the patient's heart rhythm
  *
  * Arguments:
  * 0: Unit <OBJECT>
  * 1: Target <OBJECT>
  *
  * Return Value:
- * None
+ * <BOOLEAN>
  *
  * Example:
- * [player, cursorTarget] call kat_circulation_fnc_treatmentAdvanced_X;
+ * [player, cursorTarget] call kat_circulation_fnc_AED_analyze;
  *
  * Public: No
  */

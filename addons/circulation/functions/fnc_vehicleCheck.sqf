@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg", "", objNull, "kat_IV_20"] call kat_circulation_fnc_applyIV;
+ * [player, cursorObject, "LeftLeg", "", objNull, "kat_IV_20"] call kat_circulation_fnc_vehicleCheck;
  *
  * Public: No
  */
@@ -31,12 +31,12 @@ private _inventory = [];
 
     if (_x isKindOf "LandVehicle" || _x isKindOf "Helicopter") then {
         {
-            if (_x == "kat_X_AED") then {
+            if (_x isEqualTo "kat_X_AED") then {
                 _return = true;
             };
         } forEach _inventory;
 
-        if (_return == true) then {
+        if (_return) then {
             _patient setVariable [QGVAR(AEDvehicleName), _x, true];
             _patient setVariable [QGVAR(vehicleTrue), true, true];
         };

@@ -4,19 +4,6 @@ class ACE_Medical_Treatment_Actions {
     class CheckPulse;
     class CPR;
 
-    class Painkillers: Morphine {
-        displayName = CSTRING(Inject_Box_Painkillers);
-        displayNameProgress = CSTRING(Using);
-        allowedSelections[] = {"Head"};
-        items[] = {};
-        callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _medic, _patient, _bodyPart, 'Painkillers')] call FUNC(removeItemfromMag); [_patient] call FUNC(wrongBloodTreatment););
-        condition = "[_medic, 'kat_Painkiller'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Painkiller'] call ace_common_fnc_hasMagazine";
-        litter[] = {};
-        icon = QPATHTOF(ui\icon_painkillers_action.paa);
-		animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-    };
     class CheckDogtags: CheckPulse {
         displayName = CSTRING(DogTag);
         displayNameProgress = CSTRING(DogTag_Action);

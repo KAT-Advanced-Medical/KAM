@@ -410,54 +410,6 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Somministra Atropina</Italian>
         </Key>
-        <Key ID="STR_KAT_pharma_Ondansetron_DescShort">
-            <English>Controls nausea and vomiting</English>
-            <German>Schmerzbekämpfer</German>
-            <Polish>Kontroluje nudności i wymioty</Polish>
-            <Spanish>Controla las náuseas y los vómitos.</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Ovládá nevolnost a zvracení</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Il contrôle les nausées et les vomissements.</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Controlla nausea e vomito.</Italian>
-        </Key>
-        <Key ID="STR_KAT_pharma_Ondansetron_DescUse">
-            <English>Used to control nausea and vomiting in a patient.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
-            <Polish>Używany do kontrolowania nudności i wymiotów u pacjenta.</Polish>
-            <Spanish>Usado para controlar las náuseas y los vómitos en una paciente.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Používá se k ovládání nevolnosti a zvracení u pacienta.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>Utilisé pour contrôler les nausées et les vomissements chez un patient.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Usato per controllare la nausea e il vomito in un paziente.</Italian>
-        </Key>
-        <Key ID="STR_KAT_pharma_Ondansetron_Box_Display">
-            <English>Ondansetron</English>
-            <German>Schmerzmittel</German>
-            <Polish>Ondansetron</Polish>
-            <Spanish>Ondansetron</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Ondansetron</Czech>
-            <Korean>진통제</Korean>
-            <French>Ondansétron</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>Ondansetron</Italian>
-        </Key>
-        <Key ID="STR_KAT_pharma_Take_Ondansetron">
-            <English>Push Ondansetron</English>
-            <German>Schlucke Schmerzmittel</German>
-            <Polish>Wstrzyknij Ondansetron</Polish>
-            <Spanish>Administrar Ondansetron</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Zatlačte Ondansetron</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Administre du Ondansétron</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Somministra Ondansetron</Italian>
-        </Key>
         <Key ID="STR_kat_pharma_TXA_DescShort">
             <English>Encourages clot formation</English>
             <German>Schmerzbekämpfer</German>

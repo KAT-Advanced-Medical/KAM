@@ -35,7 +35,7 @@ _player setVariable [QGVAR(returnedAED), false, true];
 private _bloodLoss = _target getVariable ["ace_medical_bloodVolume", 6.0];
 private _asystole = _target getVariable [QGVAR(asystole), 0];
 
-if (_asystole == 0) then {
+if (_asystole isEqualTo 0) then {
     if (_bloodLoss <= 2.8) then {
         _target setVariable [QGVAR(asystole), 2, true];
     } else {
@@ -47,7 +47,7 @@ if (_asystole == 0) then {
 playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _target, false, getPosASL _target, 5, 1, 15];
 
 // wait for the analyse and give the advise
-if ((_target getVariable ["ace_medical_heartRate", 0] == 0) && (_target getVariable [QGVAR(asystole), 0] < 2)) then {
+if ((_target getVariable ["ace_medical_heartRate", 0] == 0) && {_target getVariable [QGVAR(asystole), 0] < 2}) then {
     [{
         params ["_target"];
         playsound3D [QPATHTOF_SOUND(sounds\shock.wav), _target, false, getPosASL _target, 6, 1, 15];

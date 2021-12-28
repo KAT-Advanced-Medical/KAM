@@ -325,55 +325,6 @@
             <Turkish>Kan IV (250ml) KG: AB Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: AB</Italian>
         </Key>
-        <Key ID="STR_KAT_circulation_Painkillers_DescShort">
-            <English>Used to suppress pain</English>
-            <German>Schmerzbekämpfer</German>
-            <Polish>Używany do zwalczania bólu</Polish>
-            <Spanish>Usado para suprimir el dolor</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Užíváno na potlačení bolesti</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Utilisé pour diminuer la douleur</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Usato per sopprimere il dolore</Italian>
-        </Key>
-        <Key ID="STR_KAT_circulation_Painkillers_DescUse">
-            <English>An analgesic used to combat light to moderate pain experiences.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
-            <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
-            <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Analgetikum používané k potlačení lehkých až středně bolestivých zážitků.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>Un analgésique utilisé pour diminuer la douleur.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
-
-        </Key>
-        <Key ID="STR_KAT_circulation_Painkillers_Box_Display">
-            <English>Painkillers</English>
-            <German>Schmerzmittel</German>
-            <Polish>Lek przeciwbólowy</Polish>
-            <Spanish>Analgésicos</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Prášky proti bolesti</Czech>
-            <Korean>진통제</Korean>
-            <French>Analgésiques</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>Antidolorifici</Italian>
-        </Key>
-        <Key ID="STR_KAT_circulation_Inject_Box_Painkillers">
-            <English>Take Painkillers</English>
-            <German>Schlucke Schmerzmittel</German>
-            <Polish>Użyj leku przeciwbólowego</Polish>
-            <Spanish>Usar analgésico</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Vzít si Prášky proti bolesti</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Prendre des analgésiques</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Prendi antidolorifici</Italian>
-        </Key>
         <Key ID="STR_KAT_circulation_Using">
             <English>Using</English>
             <German>Schlucke</German>

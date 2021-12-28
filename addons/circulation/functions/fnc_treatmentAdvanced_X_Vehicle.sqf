@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Handle the X Series Defi for the patient.
+ * Handle the X Series Defi for the patient in a Vehicle.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_circulation_fnc_treatmentAdvanced_X;
+ * [player, cursorTarget] call kat_circulation_fnc_treatmentAdvanced_X_Vehicle;
  *
  * Public: No
  */
@@ -36,7 +36,7 @@ _target setVariable [QGVAR(X), true, true];
 playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _target, false, getPosASL _target, 5, 1, 15];
 
 // wait for the analyse and give the advise
-if (_target getVariable ["ace_medical_heartRate", 0] == 0) then {
+if (_target getVariable ["ace_medical_heartRate", 0] isEqualTo 0) then {
     [{
         params ["_target"];
         playsound3D [QPATHTOF_SOUND(sounds\shock.wav), _target, false, getPosASL _target, 6, 1, 15];

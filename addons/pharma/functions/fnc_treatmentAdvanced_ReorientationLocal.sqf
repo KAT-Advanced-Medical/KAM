@@ -1,18 +1,17 @@
 #include "script_component.hpp"
 /*
- * Author: 2LT.Mazinski
- * Local action for reorientation
+ * Author: Mazinski.H
+ * Checks for Reorientation Wakeup values to restore consciousness
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Item classname <STRING>
  *
  * Return Value:
  * Succesful treatment <BOOL>
  *`
  * Example:
- * [player, "Carbonate"] call kat_airway_fnc_treatmentAdvanced_CarbonateLocal;
+ * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_ReorientationLocal;
  *
  * Public: No
  */

@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
- * Airway Management for occluding
+ * Author: Mazinski.H
+ * Begins Reorientation Treatment
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -11,9 +11,9 @@
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_accuvac;
+ * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_Reorientation;
  *
- * Public: Yes
+ * Public: No
  */
 
 params ["_medic", "_patient"];
