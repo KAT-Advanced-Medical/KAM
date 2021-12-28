@@ -136,7 +136,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         callbackSuccess = "[_medic, _patient, 'AED-X'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
         //condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [ARR_2(_medic, 'kat_AED')] call ace_common_fnc_hasItem || [ARR_2(_medic, 'kat_X_AED')] call ace_common_fnc_hasItem);
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(vehicleTrue), true)]) && QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]);
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(vehicleTrue), true)]) && (_patient getVariable [ARR_2(QQGVAR(X), true)]));
         medicRequired = QGVAR(medLvl_AED_X);
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
