@@ -32,7 +32,7 @@ if (_asystole isEqualTo 0) then {
 playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _patient, false, getPosASL _patient, 5, 1, 15];
 
 // wait for the analyse and give the advise
-if (_patient getVariable ["ace_medical_heartRate", 0] == 0 && _asystole <= 1) then {
+if (_patient getVariable ["ace_medical_heartRate", 0] isEqualTo 0 && {_asystole <= 1}) then {
     [{
         params ["_patient"];
         playsound3D [QPATHTOF_SOUND(sounds\shock.wav), _patient, false, getPosASL _patient, 6, 1, 15];
