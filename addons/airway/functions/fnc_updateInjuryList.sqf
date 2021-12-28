@@ -207,7 +207,6 @@ if ((_placed == true) && (_site == _selectionN)) then {
         _woundEntries pushback [localize _text, [0.3, 0.3, 0.5, 1]];
     } else {
         private _text = format ["STR_kat_pharma_%1_Display", "IO_45"];
-        private _text = format ["STR_kat_pharma_%1_Display", _a];
         _woundEntries pushback [localize _text, [0.3, 0.3, 0.5, 1]];
     };
 };
