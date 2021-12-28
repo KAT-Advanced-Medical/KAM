@@ -51,7 +51,7 @@ params ["_target", "_item"];
     {
         _x params ["_id", "_bodyPart", "_amount"];
 
-        if (_once == false && _id != 20 && _amount > 0) exitWith {
+        if (!_once && (_id != 20) && (_amount > 0)) exitWith {
             private _part = ALL_BODY_PARTS select _bodyPart;
             ["ace_medical_treatment_bandageLocal", [_target, _part, "QuikClot"], _target] call CBA_fnc_targetEvent;
 
