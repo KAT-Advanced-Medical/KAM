@@ -121,7 +121,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(X_Action_Remove);
         displayNameProgress = CSTRING(X_Remove_Action_Progress);
         items[] = {};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]) && QUOTE(!(_patient getVariable [ARR_2(QQGVAR(vehicleTrue), false)]));
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)] && !(_patient getVariable [ARR_2(QQGVAR(vehicleTrue), false)]));
         treatmentTime = 5;
         medicRequired = 0;
         callbackProgress = "";
