@@ -47,6 +47,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Advanced Rhythms
+[
+    QGVAR(AdvRhythm),
+    "CHECKBOX",
+    LLSTRING(RHYTHM_ENABLE),
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 private _type = round random(3);
 [
     QGVAR(bloodgroup),

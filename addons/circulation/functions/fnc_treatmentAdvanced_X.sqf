@@ -38,10 +38,19 @@ private _asystole = _target getVariable [QGVAR(asystole), 0];
 if (_asystole isEqualTo 0) then {
     if (_bloodLoss <= 2.8) then {
         _target setVariable [QGVAR(asystole), 2, true];
+        _asystole = _patient getVariable [QGVAR(asystole), 2];
+
     } else {
         _target setVariable [QGVAR(asystole), 1, true];
+        _asystole = _patient getVariable [QGVAR(asystole), 1];
     };
 };
+
+if ((GVAR(AdvRhythm) == false) then {
+    _patient setVariable [QGVAR(asystole), 1, true];
+    _asystole = _patient getVariable [QGVAR(asystole), 1];
+};
+
 
 // analyse sound feedback
 playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _target, false, getPosASL _target, 5, 1, 15];
