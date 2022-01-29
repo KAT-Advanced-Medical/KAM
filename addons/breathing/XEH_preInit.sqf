@@ -40,21 +40,11 @@ PREP_RECOMPILE_END;
 
 // breathing SpO2 add & remove value small
 [
-    QGVAR(spo2_small_value),
+    QGVAR(SpO2_Multiply),
     "SLIDER",
-    LLSTRING(SETTING_Value_Before),
+    LLSTRING(SETTING_Multiply),
     CBA_SETTINGS_CAT,
-    [0, 100, 33, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-// breathing SpO2 add % remove value big
-[
-    QGVAR(spo2_big_value),
-    "SLIDER",
-    LLSTRING(SETTING_Value_After),
-    CBA_SETTINGS_CAT,
-    [0, 100, 66, 0],
+    [0, 3, 1, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -88,16 +78,6 @@ PREP_RECOMPILE_END;
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
     true
 ] call CBA_settings_fnc_init;
-
-// breathing SpO2 add % remove value big
-[
-    QGVAR(Stable_spo2),
-    "SLIDER",
-    [LLSTRING(SETTING_STABLE_SPO2), LLSTRING(DESCRIPTION_STABLE_SPO2)],
-    CBA_SETTINGS_CAT,
-    [0, 95, 85, 0],
-    true
-] call CBA_Settings_fnc_init;
 
 // % Chance of Hemopneumothorax
 [

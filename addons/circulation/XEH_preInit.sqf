@@ -17,6 +17,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Advanced Rhythms
+[
+    QGVAR(AdvRhythm),
+    "CHECKBOX",
+    LLSTRING(RHYTHM_ENABLE),
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 //location for AED - Defi:
 [
 	QGVAR(useLocation_AED),
@@ -44,16 +54,6 @@ PREP_RECOMPILE_END;
     LLSTRING(SUCESSCHANCE_AED),
     CBA_SETTINGS_CAT,
     [1, 100, 80, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-//Advanced Rhythms
-[
-    QGVAR(AdvRhythm),
-    "CHECKBOX",
-    LLSTRING(RHYTHM_ENABLE),
-    CBA_SETTINGS_CAT,
-    [true],
     true
 ] call CBA_Settings_fnc_init;
 

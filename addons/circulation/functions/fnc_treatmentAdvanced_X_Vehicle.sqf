@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Handle the X Series Defi for the patient in a Vehicle.
+ * Handle the X Series Defi for the patient in a vehicle.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -31,6 +31,26 @@ if (_target getVariable [QGVAR(X), false]) exitWith {
 
 // connect the x-series
 _target setVariable [QGVAR(X), true, true];
+
+private _bloodLoss = _target getVariable ["ace_medical_bloodVolume", 6.0];
+private _asystole = _target getVariable [QGVAR(asystole), 0];
+
+if (_asystole isEqualTo 0) then {
+    if (_bloodLoss <= 2.8) then {
+        _target setVariable [QGVAR(asystole), 2, true];
+        _asystole = _target getVariable [QGVAR(asystole), 2];
+
+    } else {
+        _target setVariable [QGVAR(asystole), 1, true];
+        _asystole = _target getVariable [QGVAR(asystole), 1];
+    };
+};
+
+if !(GVAR(AdvRhythm)) then {
+    _target setVariable [QGVAR(asystole), 1, true];
+    _asystole = _target getVariable [QGVAR(asystole), 1];
+};
+
 
 // analyse sound feedback
 playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _target, false, getPosASL _target, 5, 1, 15];

@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Glowbal, Mazinski.H
+ * Author: Glowbal
  * Edit: Tomcat
  * Overwrites the cprLocal of ACE to add the success chance for AED and AED-X
  *
@@ -37,20 +37,22 @@ private _lidoBoost = 0;
 private _asystole = _patient getVariable [QGVAR(asystole), 0];
 private _CPRcount = _patient getVariable [QGVAR(CPRcount), 0];
 
-if (_asystole == 0) then {
-	if (_bloodLoss <= 2.8) then {
-		_patient setVariable [QGVAR(asystole), 2, true];
-		_asystole = _patient getVariable [QGVAR(asystole), 2];
-	} else {
-		_patient setVariable [QGVAR(asystole), 1, true];
-		_asystole = _patient getVariable [QGVAR(asystole), 1];
-	};
+if (_asystole isEqualTo 0) then {
+    if (_bloodLoss <= 2.8) then {
+        _patient setVariable [QGVAR(asystole), 2, true];
+        _asystole = _patient getVariable [QGVAR(asystole), 2];
+
+    } else {
+        _patient setVariable [QGVAR(asystole), 1, true];
+        _asystole = _patient getVariable [QGVAR(asystole), 1];
+    };
 };
 
-if ((GVAR(AdvRhythm) == false) then {
-	_patient setVariable [QGVAR(asystole), 1, true];
-	_asystole = _patient getVariable [QGVAR(asystole), 1];
+if !(GVAR(AdvRhythm)) then {
+    _patient setVariable [QGVAR(asystole), 1, true];
+    _asystole = _patient getVariable [QGVAR(asystole), 1];
 };
+
 
 {
     _x params ["_medication"];
@@ -109,7 +111,7 @@ switch (_reviveObject) do {
 
 if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AED-X" || _reviveObject isEqualTo "AED-Station") exitWith {
 	_chance = _chance + (_amiBoost + _lidoBoost * _epiBoost);
-	if (_random <= _chance && {_asystole <= 1}) then {
+	if (_random <= _chance && _asystole <= 1) then {
 		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
 		_patient setVariable [QGVAR(asystole), 0, true];
 	};
@@ -119,7 +121,9 @@ if !(GVAR(enable_CPR_Chances)) then {
 		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
 	};
 } else {
-	if (_epiBoost isEqualTo 1) then {
+	diag_log "MANUAL CPR";
+
+	if (_epiBoost == 1) then {
 		_chance = _chance + (2 ^ _CPRcount);
 		_CPRcount = _CPRcount + 1;
 		_patient setVariable [QGVAR(CPRcount), _CPRcount, true];

@@ -37,8 +37,8 @@
             <Turkish>Ölümcül SpO2 değerini etkinleştir</Turkish>
             <Italian>Attivare il valore letale di SpO2</Italian>
         </Key>
-        <Key ID="STR_kat_breathing_SETTING_Value_Before">
-            <English>Small value to add / remove Sp02 (smaller treatment or injuries)</English>
+        <Key ID="STR_kat_breathing_SETTING_Multiply">
+            <English>Multiplier for all SpO2 values.</English>
             <German>Kleiner Wert zum Hinzufügen / Entfernen von Sp02 (kleinere Behandlung oder Verletzungen)</German>
             <Polish>Mała wartość do dodania / usunięcia SpO2 (mniejsze zabiegi lub urazy)</Polish>
             <Spanish>Pequeño valor para añadir / quitar Sp02 (tratamiento o lesiones menores)</Spanish>
@@ -48,18 +48,6 @@
             <French>Faible valeur à ajouter/supprimer Sp02 (traitement ou blessures de moindre importance)</French>
             <Turkish>Sp02 eklemek / çıkarmak için küçük değer (daha küçük tedavi veya yaralanmalar)</Turkish>
             <Italian>Piccolo valore da aggiungere/rimuovere Sp02 (trattamento minore o lesioni)</Italian>
-        </Key>
-        <Key ID="STR_kat_breathing_SETTING_Value_After">
-            <English>Big value to add / remove Sp02 (bigger treatment or injuries)</English>
-            <German>Großer Wert zum Hinzufügen / Entfernen von Sp02 (größere Behandlung oder Verletzungen)</German>
-            <Polish>Duża wartość do dodania / usunięcia SpO2 (większe leczenie lub urazy)</Polish>
-            <Spanish>Gran valor para añadir / eliminar Sp02 (mayor tratamiento o lesiones)</Spanish>
-            <Chinese>大价值的增加/删除Sp02（更大的治疗或伤害）。</Chinese>
-            <Czech>Velká hodnota pro přidání / odstranění Sp02 (větší léčba nebo zranění)</Czech>
-            <Korean>Sp02 추가/제거에 큰 가치(더 큰 치료 또는 부상)</Korean>
-            <French>Grande valeur pour ajouter / supprimer Sp02 (traitement ou blessures plus importantes)</French>
-            <Turkish>Sp02 eklemek / çıkarmak için büyük değer (daha büyük tedavi veya yaralanmalar)</Turkish>
-            <Italian>Grande valore da aggiungere / rimuovere Sp02 (trattamento più grande o lesioni)</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
