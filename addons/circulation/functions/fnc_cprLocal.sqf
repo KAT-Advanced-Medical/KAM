@@ -121,9 +121,8 @@ if !(GVAR(enable_CPR_Chances)) then {
 		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
 	};
 } else {
-	diag_log "MANUAL CPR";
 
-	if (_epiBoost == 1) then {
+	if (_epiBoost isEqualTo 1) then {
 		_chance = _chance + (2 ^ _CPRcount);
 		_CPRcount = _CPRcount + 1;
 		_patient setVariable [QGVAR(CPRcount), _CPRcount, true];

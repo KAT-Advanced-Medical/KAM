@@ -15,15 +15,6 @@
         </Key>
         <Key ID="STR_kat_circulation_RHYTHM_ENABLE">
             <English>Advanced Rhythm activated?</English>
-            <German>ACE-Kreislauf aktivieren?</German>
-            <Polish>ACE-Czy zaawansowane krążenie ma być włączone?</Polish>
-            <Spanish>¿Activar ACE-Circulación?</Spanish>
-            <Chinese>啟用ACE-血型循環系統？</Chinese>
-            <Czech>ACE-Circulation aktivováno?</Czech>
-            <Korean>ACE 순환계통 시스탬 활성화?</Korean>
-            <French>Ace-Circulation activé?</French>
-            <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
-            <Italian>Attivare ACE-Circolazione?</Italian>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_variableHR_ENABLE">
             <English>Metabolism Dependent heartrate?</English>
@@ -349,6 +340,9 @@
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Usando</Italian>
         </Key>
+        <Key ID="STR_kat_circulation_Rhythm">
+            <English>Check Rhythm</English>
+        </Key>
         <Key ID="STR_KAT_circulation_DogTag">
             <English>Check Dogtags</English>
             <German>Überprüfe Hundemarke</German>
@@ -480,6 +474,15 @@
             <French>Retirer le moniteur</French>
             <Turkish>İzlemeyi kaldır</Turkish>
             <Italian>Rimuovere il monitoraggio</Italian>
+        </Key>
+        <Key ID="STR_kat_circulation_Vehicle_AED_X_Action_Use">
+            <English>Vehicle: Use AED-X</English>
+        </Key>
+        <Key ID="STR_kat_circulation_Vehicle_X_Action_Use">
+            <English>Vehicle: Attach AED-X</English>
+        </Key>
+        <Key ID="STR_kat_circulation_Vehicle_X_Action_Remove">
+            <English>Vehicle: Remove AED-X</English>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_Action_Progress">
             <English>Using AED-X defibrillator</English>

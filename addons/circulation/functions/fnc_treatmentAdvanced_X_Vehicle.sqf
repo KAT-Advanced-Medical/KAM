@@ -56,7 +56,7 @@ if !(GVAR(AdvRhythm)) then {
 playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _target, false, getPosASL _target, 5, 1, 15];
 
 // wait for the analyse and give the advise
-if (_target getVariable ["ace_medical_heartRate", 0] isEqualTo 0) then {
+if ((_target getVariable ["ace_medical_heartRate", 0] isEqualTo 0) && {_target getVariable [QGVAR(asystole), 0] < 2}) then {
     [{
         params ["_target"];
         playsound3D [QPATHTOF_SOUND(sounds\shock.wav), _target, false, getPosASL _target, 6, 1, 15];
@@ -100,11 +100,9 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     ((_target distance2D _vehicle) > GVAR(distanceLimit_AEDX))
 }, {
     params ["_vehicle", "_target"];
-    diag_log "Distance Limit achieved on AED-X";
     [_vehicle, _target, false] call FUNC(returnAED_X);
 }, [_vehicle, _target], GVAR(timeLimit_AEDX), {
     params ["_vehicle", "_target"];
-    diag_log "Time Limit achieved on AED-X";
     [_vehicle, _target, false] call FUNC(returnAED_X);
 }] call CBA_fnc_waitUntilAndExecute;
 

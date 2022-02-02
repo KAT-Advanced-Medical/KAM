@@ -37,7 +37,7 @@ if (!local _unit) then {
 
     private _pneumothorax = _unit getVariable ["KAT_medical_pneumothorax", false];
     private _hemothorax = _unit getVariable ["KAT_medical_hemopneumothorax", false];
-    private _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
+    private _status = _unit getVariable ["KAT_medical_airwayStatus", 100];
     private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
     private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
     private _heartRate = _unit getVariable ["ace_medical_heartRate", 0];
@@ -60,24 +60,18 @@ if (!local _unit) then {
     };
 
     if !([_unit] call ace_common_fnc_isAwake) exitWith {
-        if (_occluded == true) then {
-            _output = _output - (0.5 * _multiplier);
+        if (_occluded == true || _obstruction == true) then {
+            _output = _output - (0.75 * _multiplier);
         } else {
-            _output = _output + (0.25 * _multiplier);
-        };
-
-        if (_obstruction == true) then {
-            _output = _output - (0.5 * _multiplier);
-        } else {
-            _output = _output + (0.25 * _multiplier);
+            _output = _output + (0.5 * _multiplier);
         };
 
         if (_pneumothorax == true || _hemothorax == true) then {
-            _output = -0.5 * _multiplier;
+            _output = _output - (0.75 * _multiplier);
         };
 
         if (_heartRate <= 40) then {
-            _output = -0.75 * _multiplier;
+            _output = _output - (0.5 * _multiplier);
         };
 
         _finalOutput = _status + _output;
@@ -86,8 +80,8 @@ if (!local _unit) then {
             _finalOutput = 100;
         };
 
-        if (_finalOutput < 5) then {
-            _finalOutput = 5;
+        if (_finalOutput < 1) then {
+            _finalOutput = 1;
         };
 
         _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
@@ -105,8 +99,8 @@ if (!local _unit) then {
 
         _finalOutput = _status + _output;
 
-        if (_finalOutput < 5) then {
-            _finalOutput = 5;
+        if (_finalOutput < 1) then {
+            _finalOutput = 1;
         };
 
         _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];

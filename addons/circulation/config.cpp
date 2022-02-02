@@ -9,7 +9,6 @@ class CfgPatches {
             "kat_bloodBankCrate"
         };
         weapons[] = {
-            "kat_Painkiller",
             "kat_bloodIV_O",
             "kat_bloodIV_A",
             "kat_bloodIV_B",

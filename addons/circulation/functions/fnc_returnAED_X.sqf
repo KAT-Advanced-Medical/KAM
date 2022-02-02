@@ -20,9 +20,6 @@
 params ["_player", "_patient", "_AEDreturn"];
 private _output = localize LSTRING(X_Action_Remove);
 
-diag_log "RETURN AED";
-diag_log _AEDreturn;
-
 _patient setVariable [QGVAR(X), false, true];
 
 if (_patient getVariable ["ace_medical_heartRate", 0] >= 40) then {

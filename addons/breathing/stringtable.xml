@@ -39,15 +39,6 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Multiply">
             <English>Multiplier for all SpO2 values.</English>
-            <German>Kleiner Wert zum Hinzufügen / Entfernen von Sp02 (kleinere Behandlung oder Verletzungen)</German>
-            <Polish>Mała wartość do dodania / usunięcia SpO2 (mniejsze zabiegi lub urazy)</Polish>
-            <Spanish>Pequeño valor para añadir / quitar Sp02 (tratamiento o lesiones menores)</Spanish>
-            <Chinese>增加/删除Sp02的价值很小（较小的治疗或伤害）。</Chinese>
-            <Czech>Malá hodnota pro přidání / odebrání Sp02 (menší ošetření nebo zranění)</Czech>
-            <Korean>Sp02를 추가/제거하는 작은 값(더 작은 치료 또는 부상)</Korean>
-            <French>Faible valeur à ajouter/supprimer Sp02 (traitement ou blessures de moindre importance)</French>
-            <Turkish>Sp02 eklemek / çıkarmak için küçük değer (daha küçük tedavi veya yaralanmalar)</Turkish>
-            <Italian>Piccolo valore da aggiungere/rimuovere Sp02 (trattamento minore o lesioni)</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
