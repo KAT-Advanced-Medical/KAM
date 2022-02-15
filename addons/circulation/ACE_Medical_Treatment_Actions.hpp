@@ -28,8 +28,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Body"};
         treatmentTime = 2;
         items[] = {};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)]) || "kat_circulation_fnc_AEDStationCondition";
-        patientStateCondition = 0;
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), false)]);
         callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDanalyze));
         callbackSuccess = "";
         animationPatient = "";

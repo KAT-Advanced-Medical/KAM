@@ -71,7 +71,7 @@ if (!local _unit) then {
         };
 
         if (_heartRate <= 40) then {
-            _output = _output - (0.5 * _multiplier);
+            _output = -0.75 * _multiplier;
         };
 
         _finalOutput = _status + _output;
