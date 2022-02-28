@@ -38,13 +38,33 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// breathing SpO2 add & remove value small
+// breathing SpO2 add value
 [
-    QGVAR(SpO2_Multiply),
+    QGVAR(SpO2_MultiplyPositive),
     "SLIDER",
-    LLSTRING(SETTING_Multiply),
+    LLSTRING(SETTING_MultiplyPositive),
     CBA_SETTINGS_CAT,
-    [0, 3, 1, 1],
+    [0, 10, 1, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// breathing SpO2 remove value
+[
+    QGVAR(SpO2_MultiplyNegative),
+    "SLIDER",
+    LLSTRING(SETTING_MultiplyNegative),
+    CBA_SETTINGS_CAT,
+    [0, 10, 1, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// SpO2 value for stability determination
+[
+    QGVAR(Stable_spo2),
+    "SLIDER",
+    [LLSTRING(SETTING_STABLE_SPO2), LLSTRING(DESCRIPTION_STABLE_SPO2)],
+    CBA_SETTINGS_CAT,
+    [0, 95, 85, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -78,6 +98,16 @@ PREP_RECOMPILE_END;
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
     true
 ] call CBA_settings_fnc_init;
+
+//Allow ChestSeal SelfTreatment
+[
+    QGVAR(enable_selfChestseal),
+    "LIST",
+    LLSTRING(SETTING_SELF_CHESTSEAL),
+    CBA_SETTINGS_CAT,
+    [[0, 1], ["STR_ACE_common_No", "STR_ACE_common_Yes"], 1],
+    true
+] call CBA_Settings_fnc_init;
 
 // % Chance of Hemopneumothorax
 [

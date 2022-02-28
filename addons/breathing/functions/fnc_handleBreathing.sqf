@@ -42,8 +42,10 @@ if (!local _unit) then {
     private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
     private _heartRate = _unit getVariable ["ace_medical_heartRate", 0];
     private _output = 0;
-    private _finalOutput;
+    private _finalOutput = 0;
     private _multiplier = GVAR(SpO2_Multiply);
+    private _multiplierPositive = GVAR(SpO2_MultiplyPositive);
+    private _multiplierNegative = GVAR(SpO2_MultiplyNegative);
 
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && {GVAR(SpO2_dieActive)}) exitWith {
@@ -61,17 +63,17 @@ if (!local _unit) then {
 
     if !([_unit] call ace_common_fnc_isAwake) exitWith {
         if (_occluded == true || _obstruction == true) then {
-            _output = _output - (0.75 * _multiplier);
+            _output = _output - (0.75 * _multiplierNegative);
         } else {
-            _output = _output + (0.5 * _multiplier);
+            _output = _output + (0.5 * _multiplierPositive);
         };
 
         if (_pneumothorax == true || _hemothorax == true) then {
-            _output = _output - (0.75 * _multiplier);
+            _output = _output - (0.75 * _multiplierNegative);
         };
 
         if (_heartRate <= 40) then {
-            _output = -0.75 * _multiplier;
+            _output = -0.75 * _multiplierNegative;
         };
 
         _finalOutput = _status + _output;
@@ -89,11 +91,11 @@ if (!local _unit) then {
 
     if ([_unit] call ace_common_fnc_isAwake) exitWith {
         switch (true) do {
-            case (true): {
-                _output = output + (0.5 * _multiplier);
-            };
             case (_pneumothorax == true || _hemothorax == true): {
-                _output = _output - (1 * _multiplier);
+                _output = _output - (0.75 * _multiplierNegative);
+            };
+            case (true): {
+                _output = _output + (1 * _multiplierPositive);
             };
         };
 

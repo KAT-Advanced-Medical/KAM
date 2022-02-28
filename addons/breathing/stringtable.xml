@@ -37,8 +37,11 @@
             <Turkish>Ölümcül SpO2 değerini etkinleştir</Turkish>
             <Italian>Attivare il valore letale di SpO2</Italian>
         </Key>
-        <Key ID="STR_kat_breathing_SETTING_Multiply">
-            <English>Multiplier for all SpO2 values.</English>
+        <Key ID="STR_kat_breathing_SETTING_MultiplyPositive">
+            <English>SpO2 positive multiplier</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_MultiplyNegative">
+            <English>SpO2 negative multiplier</English>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -345,6 +348,9 @@
             <French>Niveau d'entrainement requis pour utiliser un pansement thoracique</French>
             <Turkish>Chest Seal kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento rischiesto per utilizzare il Chest Seal</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_SELF_CHESTSEAL">
+            <English>Allow Chest Seal self treatment</English>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
