@@ -43,7 +43,6 @@ if (!local _unit) then {
     private _heartRate = _unit getVariable ["ace_medical_heartRate", 0];
     private _output = 0;
     private _finalOutput = 0;
-    private _multiplier = GVAR(SpO2_Multiply);
     private _multiplierPositive = GVAR(SpO2_MultiplyPositive);
     private _multiplierNegative = GVAR(SpO2_MultiplyNegative);
 
