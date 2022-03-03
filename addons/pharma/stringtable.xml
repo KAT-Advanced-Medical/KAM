@@ -842,5 +842,8 @@
             <Turkish>% 1 artık boş</Turkish>
             <Italian>è vuota</Italian>
         </Key>
+		<Key ID="STR_kat_pharma_Reorient_successChance">
+            <English>Reorient success Chance</English>
+        </Key>
     </Package>
 </Project>
