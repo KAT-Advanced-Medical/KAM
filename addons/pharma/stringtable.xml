@@ -15,7 +15,7 @@
         </Key>
         <Key ID="STR_kat_pharma_NALOXONE_ACTIVE">
             <English>Allow players to use Naloxone?</English>
-            <German>Stoffwechselabhängiger Puls?</German>
+            <German>Dürfen Spieler Naloxon nutzen?</German>
             <Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
             <Spanish>¿Pulso cardíaco depende de metabolismo?</Spanish>
             <Chinese>依心率來決定代謝率？</Chinese>
@@ -27,7 +27,7 @@
         </Key>
         <Key ID="STR_kat_pharma_CARBONATE_ACTIVE">
             <English>Allow players to use Ammonium Carbonate?</English>
-            <German>Anderer Loadoutname</German>
+            <German>Dürfen Spieler Ammoniumcarbonat verwenden</German>
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
             <Chinese>不同配置名稱</Chinese>
@@ -39,7 +39,7 @@
         </Key>
         <Key ID="STR_kat_pharma_TXA_ACTIVE">
             <English>Allow players to use TXA?</English>
-            <German>Anderer Loadoutname</German>
+            <German>Erlaube Spieler TXA zu nutzen</German>
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
             <Chinese>不同配置名稱</Chinese>
@@ -51,7 +51,7 @@
         </Key>
         <Key ID="STR_kat_pharma_IV_MEDIC">
             <English>Changes what medical level is required to set IVs/IOs</English>
-            <German>Anderer Loadoutname</German>
+            <German>Setzt, welche Medizineinhat IV oder IO setzen darf</German>
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
             <Chinese>不同配置名稱</Chinese>
@@ -63,7 +63,7 @@
         </Key>]
         <Key ID="STR_kat_pharma_IV_DROP">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
-            <German>Anderer Loadoutname</German>
+            <German>Ändert die Zeit, nach welcher IV oder IO vom Patienten abfallen</German>
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
             <Chinese>不同配置名稱</Chinese>
@@ -75,7 +75,7 @@
         </Key>
         <Key ID="STR_kat_pharma_IV_REUSE">
             <English>Sets if IV/IO needles are reusable</English>
-            <German>Anderer Loadoutname</German>
+            <German>Setzt, ob IV oder IO Nadeln wiederverwendbar sind</German>
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
             <Chinese>不同配置名稱</Chinese>
@@ -87,7 +87,7 @@
         </Key>
         <Key ID="STR_kat_pharma_PUSH_TIME">
             <English>Push time for all IV Medications</English>
-            <German>Anderer Loadoutname</German>
+            <German>Zeit zum setzen aller IV Medikation</German>
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
             <Chinese>不同配置名稱</Chinese>
@@ -99,7 +99,7 @@
         </Key>
         <Key ID="STR_kat_pharma_IV_TIME">
             <English>Time to establish IVs</English>
-            <German>Anderer Loadoutname</German>
+            <German>Zeit zum herstellen einer IV Medikation</German>
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
             <Chinese>不同配置名稱</Chinese>
@@ -111,7 +111,7 @@
         </Key>
         <Key ID="STR_kat_pharma_IO_TIME">
             <English>Time to establish IOs</English>
-            <German>Anderer Loadoutname</German>
+            <German>Zeit eine IO Medikation herzustellen</German>
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
             <Chinese>不同配置名稱</Chinese>
@@ -172,7 +172,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
-            <German>Schmerzbekämpfer</German>
+            <German>Genutzt zum wiederherstellen des Bewusstseins</German>
             <Polish>Używane w celu przywrócenia przytomności</Polish>
             <Spanish>Solía ​​recuperar la conciencia</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -184,7 +184,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_DescUse">
             <English>The primary ingredient in smelling salts, used to restore consciousness in limited situations.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <German>Der Hauptbestandteil von Riechsalzen, die in begrenzten Situationen zur Wiederherstellung des Bewusstseins verwendet werden.</German>
             <Polish>Głównym składnikiem są sole trzeźwiące, używane do przywrócenia przytomności w określonych okolicznościach</Polish>
             <Spanish>El ingrediente principal de las sales, utilizado para restaurar la conciencia en situaciones limitadas.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
@@ -196,7 +196,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_Box_Display">
             <English>Ammonium Carbonate</English>
-            <German>Schmerzmittel</German>
+            <German>Ammoniumcarbonat</German>
             <Polish>Sole trzeźwiące</Polish>
             <Spanish>Carbonato de amonio</Spanish>
             <Chinese>止痛藥</Chinese>
@@ -208,7 +208,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Take_Carbonate">
             <English>Use Carbonate</English>
-            <German>Schlucke Schmerzmittel</German>
+            <German>Benutze Ammoniumcarbonat</German>
             <Polish>Użyj soli trzeźwiących</Polish>
             <Spanish>Administrar carbonato</Spanish>
             <Chinese>服用止痛藥</Chinese>
@@ -220,7 +220,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
-            <German>Schmerzbekämpfer</German>
+            <German>Wird zum behandeln von Opioid Überdosen verwendet</German>
             <Polish>Używany do zwalczania przedawkowania opioidów</Polish>
             <Spanish>Se utiliza para tratar las sobredosis de opiáceos.</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -232,7 +232,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Naloxone_DescUse">
             <English>An opioid antagonist that can reverse opioid overdoses from medications such as Morphine.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <German>Ein Opioid-Antagonist, der Opioid-Überdosierungen durch Medikamente wie Morphin rückgängig machen kann.</German>
             <Polish>Antagonista opioidów potrafiący zwalczać przedawkowanie leków takich jak morfina.</Polish>
             <Spanish>Un antagonista opioide que puede revertir las sobredosis de opioides como la morfina.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
@@ -244,7 +244,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Naloxone_Box_Display">
             <English>Naloxone</English>
-            <German>Schmerzmittel</German>
+            <German>Naloxon</German>
             <Polish>Nalokson</Polish>
             <Spanish>Naloxone</Spanish>
             <Chinese>止痛藥</Chinese>
@@ -256,7 +256,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Take_Naloxone">
             <English>Use Naloxone</English>
-            <German>Schlucke Schmerzmittel</German>
+            <German>Benutze Naloxon</German>
             <Polish>Użyj naloksonu</Polish>
             <Spanish>Administrar Naloxone</Spanish>
             <Chinese>服用止痛藥</Chinese>
@@ -268,7 +268,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Amiodarone_DescShort">
             <English>Used to combat cardiac arrest</English>
-            <German>Schmerzbekämpfer</German>
+            <German>Wird verwendet, um Herzstillstand zu bekämpfen</German>
             <Polish>Używany do zwalczania zatrzymania akcji serca</Polish>
             <Spanish>Se usa para combatir el paro cardíaco.</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -280,7 +280,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Amiodarone_DescUse">
             <English>An anti-arrhythmic used when combatting shockable forms of cardiac arrest.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <German>Ein Antiarrhythmikum zur Bekämpfung von schockbaren Formen des Herzstillstands.</German>
             <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
             <Spanish>Antiarrítmico utilizado en la lucha contra las formas desfibrilables de paro cardíaco.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
@@ -292,7 +292,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Amiodarone_Box_Display">
             <English>Amiodarone</English>
-            <German>Schmerzmittel</German>
+            <German>Amiodaron</German>
             <Polish>Amiodaron</Polish>
             <Spanish>Amiodarone</Spanish>
             <Chinese>止痛藥</Chinese>
@@ -304,7 +304,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Take_Amiodarone">
             <English>Push Amiodarone</English>
-            <German>Schlucke Schmerzmittel</German>
+            <German>Injiziere Amiodarone</German>
             <Polish>Wstrzyknij amiodaron</Polish>
             <Spanish>Administrar Amiodarone</Spanish>
             <Chinese>服用止痛藥</Chinese>
@@ -316,7 +316,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_DescShort">
             <English>Used to combat cardiac arrest</English>
-            <German>Schmerzbekämpfer</German>
+            <German>Wird verwendet, um Herzstillstand zu bekämpfen</German>
             <Polish>Używany do zwalczania zatrzymania akcji serca</Polish>
             <Spanish>Se usa para combatir el paro cardíaco.</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -328,7 +328,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_DescUse">
             <English>An anti-arrhythmic used when combatting shockable forms of cardiac arrest.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <German>Ein Antiarrhythmikum zur Bekämpfung von schockbaren Formen des Herzstillstands.</German>
             <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
             <Spanish>Antiarrítmico utilizado en la lucha contra las formas desfibrilables de paro cardíaco.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
@@ -340,7 +340,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_Box_Display">
             <English>Lidocaine</English>
-            <German>Schmerzmittel</German>
+            <German>Lidocain</German>
             <Polish>Lidokaina</Polish>
             <Spanish>Lidocaína</Spanish>
             <Chinese>止痛藥</Chinese>
@@ -352,7 +352,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Take_Lidocaine">
             <English>Push Lidocaine</English>
-            <German>Schlucke Schmerzmittel</German>
+            <German>Injiziere Lidocain</German>
             <Polish>Wstrzyknij lidokainę</Polish>
             <Spanish>Administrar lidocaína</Spanish>
             <Chinese>服用止痛藥</Chinese>
@@ -364,7 +364,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Atropine_DescShort">
             <English>Used to treat bradycardia</English>
-            <German>Schmerzbekämpfer</German>
+            <German>Wird zur Behandlung von Bradykardie verwendet.</German>
             <Polish>Używany do zwalczania bradykardii</Polish>
             <Spanish>Usado para tratar la bradicardia.</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -376,7 +376,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Atropine_DescUse">
             <English>Commonly used to treat poisoning, Atropine can also be used to treat bradycardia.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <German>Atropin wird häufig zur Behandlung von Vergiftungen verwendet und kann auch zur Behandlung von Bradykardie verwendet werden.</German>
             <Polish>Używany do leczenia zatrucia. Atropina może być również używana w celu leczenia bradykardii.</Polish>
             <Spanish>Usado para tratar intoxicaciones, pero la atropina también se puede usar para tratar la bradicardia.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
@@ -388,7 +388,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Atropine_Box_Display">
             <English>Atropine</English>
-            <German>Schmerzmittel</German>
+            <German>Atropin</German>
             <Polish>Atropina</Polish>
             <Spanish>Atropina</Spanish>
             <Chinese>止痛藥</Chinese>
@@ -400,7 +400,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_Take_Atropine">
             <English>Push Atropine</English>
-            <German>Schlucke Schmerzmittel</German>
+            <German>Injiziere Atropin</German>
             <Polish>Wstrzyknij atropinę</Polish>
             <Spanish>Administrar Atropina</Spanish>
             <Chinese>服用止痛藥</Chinese>
@@ -412,7 +412,7 @@
         </Key>
         <Key ID="STR_kat_pharma_TXA_DescShort">
             <English>Encourages clot formation</English>
-            <German>Schmerzbekämpfer</German>
+            <German>Fördert die Gerinnselbildung</German>
             <Polish>Wspomaga tworzenie skrzepów</Polish>
             <Spanish>Favorece la coagulación</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -424,7 +424,7 @@
         </Key>
         <Key ID="STR_kat_pharma_TXA_DescUse">
             <English>Used to encourage and stabilize clots in a patient.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <German>Wird verwendet, um Blutgerinnsel bei einem Patienten zu fördern und zu stabilisieren.</German>
             <Polish>Używany do wspomagania tworzenia skrzepów u pacjenta</Polish>
             <Spanish>Usado para promover y estabilizar la coagulación en el paciente.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
@@ -436,7 +436,7 @@
         </Key>
         <Key ID="STR_kat_pharma_TXA_Box_Display">
             <English>TXA</English>
-            <German>Schmerzmittel</German>
+            <German>TXA</German>
             <Polish>TXA</Polish>
             <Spanish>TXA</Spanish>
             <Chinese>止痛藥</Chinese>
@@ -448,7 +448,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Take_TXA">
             <English>Push TXA</English>
-            <German>Schlucke Schmerzmittel</German>
+            <German>Injiziere TXA</German>
             <Polish>Wstrzyknij TXA</Polish>
             <Spanish>Administrar TXA</Spanish>
             <Chinese>服用止痛藥</Chinese>
@@ -460,7 +460,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Norep_DescShort">
             <English>Used to raise blood pressure</English>
-            <German>Schmerzbekämpfer</German>
+            <German>Wird zum anheben des Blutdruckes benutzt</German>
             <Polish>Używany do zwalczania bólu</Polish>
             <Spanish>Usado para suprimir el dolor</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -471,8 +471,8 @@
             <Italian>Usato per sopprimere il dolore</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Norep_DescUse">
-            <English>A vasopressor used to increase blood pressure and combat shock.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <English>Ein Vasopressor, der zur Erhöhung des Blutdrucks und zur Schockbekämpfung eingesetzt wird.</English>
+            <German>Ein Vasopressor um den Blutdruck zu heben.</German>
             <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
             <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
@@ -484,7 +484,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Norep_Box_Display">
             <English>Norepinephrine</English>
-            <German>Schmerzmittel</German>
+            <German>Noradrenalin</German>
             <Polish>Lek przeciwbólowy</Polish>
             <Spanish>Analgésicos</Spanish>
             <Chinese>止痛藥</Chinese>
@@ -496,7 +496,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Take_Norep">
             <English>Push Norepinephrine</English>
-            <German>Schlucke Schmerzmittel</German>
+            <German>Injiziere Noradrenalin</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
             <Spanish>Usar analgésico</Spanish>
             <Chinese>服用止痛藥</Chinese>
@@ -508,7 +508,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Phenyl_DescShort">
             <English>Used to raise blood pressure</English>
-            <German>Schmerzbekämpfer</German>
+            <German>Wird zur Erhöhung des Blutdrucks verwendet</German>
             <Polish>Używany do zwalczania bólu</Polish>
             <Spanish>Usado para suprimir el dolor</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -520,7 +520,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Phenyl_DescUse">
             <English>A vasopressor used to increase blood pressure and combat shock.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <German>Ein Vasopressor, der zur Erhöhung des Blutdrucks und zur Schockbekämpfung eingesetzt wird.</German>
             <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
             <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
@@ -532,7 +532,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Phenyl_Box_Display">
             <English>Phenylephrine</English>
-            <German>Schmerzmittel</German>
+            <German>Phenylephrin</German>
             <Polish>Lek przeciwbólowy</Polish>
             <Spanish>Analgésicos</Spanish>
             <Chinese>止痛藥</Chinese>
@@ -544,7 +544,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Take_Phenyl">
             <English>Push Phenylephrine</English>
-            <German>Schlucke Schmerzmittel</German>
+            <German>Injiziere Phenylephrin</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
             <Spanish>Usar analgésico</Spanish>
             <Chinese>服用止痛藥</Chinese>
@@ -556,7 +556,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Nitro_DescShort">
             <English>Used to lower blood pressure</English>
-            <German>Schmerzbekämpfer</German>
+            <German>Zur Senkung des Blutdrucks</German>
             <Polish>Używany do zwalczania bólu</Polish>
             <Spanish>Usado para suprimir el dolor</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -568,7 +568,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Nitro_DescUse">
             <English>A vasodilator used to decrease blood pressure and combat hypertension.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <German>Ein gefäßerweiternder Wirkstoff zur Senkung des Blutdrucks und zur Bekämpfung von Bluthochdruck.</German>
             <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
             <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
@@ -580,7 +580,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Nitro_Box_Display">
             <English>Nitroglycerin</English>
-            <German>Schmerzmittel</German>
+            <German>Nitroglycerin</German>
             <Polish>Lek przeciwbólowy</Polish>
             <Spanish>Analgésicos</Spanish>
             <Chinese>止痛藥</Chinese>
@@ -592,7 +592,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Take_Nitro">
             <English>Push Nitroglycerin</English>
-            <German>Schlucke Schmerzmittel</German>
+            <German>Injiziere Nitroglycerin</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
             <Spanish>Usar analgésico</Spanish>
             <Chinese>服用止痛藥</Chinese>
@@ -604,7 +604,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Take_Reorient">
             <English>Reorient Patient</English>
-            <German>Schlucke Schmerzmittel</German>
+            <German>Patient neu orientieren</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
             <Spanish>Usar analgésico</Spanish>
             <Chinese>服用止痛藥</Chinese>
@@ -616,7 +616,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Reorienting">
             <English>Reorienting</English>
-            <German>Schlucke Schmerzmittel</German>
+            <German>Neuorientieren</German>
             <Polish>Użyj leku przeciwbólowego</Polish>
             <Spanish>Usar analgésico</Spanish>
             <Chinese>服用止痛藥</Chinese>
@@ -628,7 +628,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Using">
             <English>Using</English>
-            <German>Schlucke</German>
+            <German>Benutzen</German>
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
             <Chinese>服用中</Chinese>
@@ -640,7 +640,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Pushing">
             <English>Pushing</English>
-            <German>Schlucke</German>
+            <German>Injizieren</German>
             <Polish>Wstrzykiwanie</Polish>
             <Spanish>Empujando</Spanish>
             <Chinese>服用中</Chinese>
@@ -652,7 +652,7 @@
         </Key>
         <Key ID="STR_kat_pharma_push_log">
             <English>%1 pushed %2</English>
-            <German>%1 intubierte mit %2</German>
+            <German>%1 injezierte mit %2</German>
             <Polish>%1 wstrzyknął %2</Polish>
             <Spanish>%1 administró %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -664,7 +664,7 @@
         </Key>
         <Key ID="STR_kat_pharma_inject_log">
             <English>%1 injected %2</English>
-            <German>%1 intubierte mit %2</German>
+            <German>%1 injezierte mit %2</German>
             <Polish>%1 włożył %2</Polish>
             <Spanish>%1 inyectó %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -676,7 +676,7 @@
         </Key>
         <Key ID="STR_kat_pharma_use_log">
             <English>%1 used %2</English>
-            <German>%1 intubierte mit %2</German>
+            <German>%1 benutzte mit %2</German>
             <Polish>%1 użył %2</Polish>
             <Spanish>%1 usado %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -700,7 +700,7 @@
         </Key>
         <Key ID="STR_kat_pharma_IV_DescShort">
             <English>Intravenous Needle</English>
-            <German>Schmerzbekämpfer</German>
+            <German>Intravenöse Kanüle</German>
             <Polish>Kaniula dożylna</Polish>
             <Spanish>Usado para suprimir el dolor</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -724,7 +724,7 @@
         </Key>
         <Key ID="STR_kat_pharma_IO_DescShort">
             <English>Intraosseous Needle</English>
-            <German>Schmerzbekämpfer</German>
+            <German>Intraossäre Kanüle</German>
             <Polish>Igła doszpikowa</Polish>
             <Spanish>Aguja intraósea</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -736,7 +736,7 @@
         </Key>
         <Key ID="STR_kat_pharma_IV_DescUse">
             <English>Used to allow fluids and certain medications to enter the body.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <German>Wird verwendet, damit Flüssigkeiten und bestimmte Medikamente in den Körper gelangen können.</German>
             <Polish>Używany w celu dostarczenia płynów i pewnych leków do krwioobiegu.</Polish>
             <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
@@ -748,7 +748,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Apply_IV_16">
             <English>Establish 16g IV</English>
-            <German>Überprüfe</German>
+            <German>16g IV einrichten</German>
             <Polish>Załóż 16G IV</Polish>
             <Spanish>Coloque 16g IV</Spanish>
             <Chinese>檢查中</Chinese>
@@ -760,7 +760,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Apply_IO_45">
             <English>Establish FAST IO</English>
-            <German>Überprüfe</German>
+            <German>45mm IO einrichten</German>
             <Polish>Załóż 45mm IO</Polish>
             <Spanish>Coloque 45mm IO</Spanish>
             <Chinese>檢查中</Chinese>
@@ -772,7 +772,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Applying_IV">
             <English>Establishing IV/IO</English>
-            <German>Überprüfe</German>
+            <German>Einrichtung der IV/IO</German>
             <Polish>Zakładanie IV</Polish>
             <Spanish>Colocando IV</Spanish>
             <Chinese>檢查中</Chinese>
@@ -784,7 +784,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Applying_IO">
             <English>Establishing IO</English>
-            <German>Überprüfe</German>
+            <German>Einrichtung der IO</German>
             <Polish>Zakładanie IO</Polish>
             <Spanish>Colocando IO</Spanish>
             <Chinese>檢查中</Chinese>
@@ -796,7 +796,7 @@
         </Key>
         <Key ID="STR_kat_pharma_iv_log">
             <English>%1 established a %2</English>
-            <German>%1 intubierte mit %2</German>
+            <German>%1 stellte IV mit %2 her</German>
             <Polish>%1 założył %2</Polish>
             <Spanish>%1 coloqueado %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -808,7 +808,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Remove_IV">
             <English>Remove IV/IO</English>
-            <German>Überprüfe</German>
+            <German>Entferne IV/IO</German>
             <Polish>Zdejmij IV/IO</Polish>
             <Spanish>Quitar IV / IO</Spanish>
             <Chinese>檢查中</Chinese>
@@ -820,7 +820,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Removing_IV">
             <English>Removing</English>
-            <German>Überprüfe</German>
+            <German>Entferne</German>
             <Polish>Zdejmowanie</Polish>
             <Spanish>Quitando</Spanish>
             <Chinese>檢查中</Chinese>
@@ -842,7 +842,7 @@
             <Turkish>% 1 artık boş</Turkish>
             <Italian>è vuota</Italian>
         </Key>
-		<Key ID="STR_kat_pharma_Reorient_successChance">
+        <Key ID="STR_kat_pharma_Reorient_successChance">
             <English>Reorient success Chance</English>
         </Key>
     </Package>
