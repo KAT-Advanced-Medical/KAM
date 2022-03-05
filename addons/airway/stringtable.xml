@@ -98,16 +98,16 @@
             <Italian>Controllare vie aeree</Italian>
         </Key>
         <Key ID="STR_kat_airway_checkAirway_log">
-            <English>%1 checked airways: %2 %3, %4 %5</English>
-            <German>%1 überprüfte Atemwege: %2 %3, %4 %5</German>
-            <Polish>%1 sprawdził drogi oddechowe: %2 %3, %4 %5</Polish>
-            <Spanish>%1 comprobó las vías aéreas: %2 %3, %4 %5</Spanish>
-            <Chinese>%1 檢查呼吸道: %2 %3, %4 %5</Chinese>
-            <Czech>Zkontrolovány dýchací cesty: %2 %3, %4 %5 </Czech>
-            <Korean>%1 기도 확인됨: %2 %3, %4 %5</Korean>
-            <French>%1 a vérifié les voies aériennes : %2 %3, %4 %5</French>
-            <Turkish>%1 kontrol edilmiş havayolları: %2 %3, %4 %5</Turkish>
-            <Italian>%1 ha controllato le vie aeree: %2 %3 %4 %5</Italian>
+            <English>%1 checked airways: %2, %3</English>
+            <German>%1 überprüfte Atemwege: %2, %3</German>
+            <Polish>%1 sprawdził drogi oddechowe: %2, %3</Polish>
+            <Spanish>%1 comprobó las vías aéreas: %2, %2</Spanish>
+            <Chinese>%1 檢查呼吸道: %2, %3</Chinese>
+            <Czech>Zkontrolovány dýchací cesty: %2, %3</Czech>
+            <Korean>%1 기도 확인됨: %2, %3</Korean>
+            <French>%1 a vérifié les voies aériennes : %2, %3</French>
+            <Turkish>%1 kontrol edilmiş havayolları: %2, %3</Turkish>
+            <Italian>%1 ha controllato le vie aeree: %2, %3</Italian>
         </Key>
         <Key ID="STR_kat_airway_airway_log">
             <English>%1 inserted a %2</English>
@@ -124,7 +124,7 @@
         <Key ID="STR_kat_airway_Occluded">
             <English>Occluded</English>
             <German>Verstopft</German>
-            <Polish>Zablokowane</Polish>
+            <Polish>Zator</Polish>
             <Spanish>Ocluída</Spanish>
             <Chinese>閉塞</Chinese>
             <Czech>Uzavřeno</Czech>
@@ -148,7 +148,7 @@
         <Key ID="STR_kat_airway_obstruction">
             <English>Obstruction</English>
             <German>Verlegt</German>
-            <Polish>Zator</Polish>
+            <Polish>Niedrożne</Polish>
             <Spanish>Obstruída</Spanish>
             <Chinese>阻塞</Chinese>
             <Czech>Zablokováno</Czech>
@@ -828,6 +828,30 @@
             <French>Colore les Activitylogs de l'AED-X ou du Pulseoximeter en rouge, si une valeur est critique</French>
             <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
             <Italian>Colora gli Activitylogs di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
+        </Key>
+        <Key ID="STR_kat_airway_noObstruction">
+            <English>Not obstruction</English>
+            <German>Nicht verlegt</German>
+            <Polish>Drożne</Polish>
+            <Spanish>No obstruída</Spanish>
+            <Chinese>無 阻塞</Chinese>
+            <Czech>Není zablokováno</Czech>
+            <Korean>아니다 막힘(이물질)</Korean>
+            <French>Non obstruées</French>
+            <Turkish>Değil Kapanma</Turkish>
+            <Italian>No ostruita</Italian>
+        </Key>
+        <Key ID="STR_kat_airway_noOccluded">
+            <English>Not occluded</English>
+            <German>Nicht verstopft</German>
+            <Polish>Brak zatoru</Polish>
+            <Spanish>No ocluída</Spanish>
+            <Chinese>無 閉塞</Chinese>
+            <Czech>Není uzavřeno</Czech>
+            <Korean>아니다 막힘</Korean>
+            <French>Non occludées</French>
+            <Turkish>Değil Tıkalı</Turkish>
+            <Italian>No occlusa</Italian>
         </Key>
     </Package>
 </Project>
