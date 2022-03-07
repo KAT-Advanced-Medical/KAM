@@ -24,7 +24,7 @@
 
 **The ACE Advanced Medical System is nice, but we can do it better, even on a more realistic way and bring it on another level with these addons.**
 
-Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamartaka and Battlekeeper.
+Originaly created by Katalam, currently maintained by Tomcat, Kygan and YetheSamartaka.
 
 ## Big thanks to
 
@@ -33,7 +33,6 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamart
 - [Tomcat-SG](https://github.com/Tomcat-SG)
 - [Kygan/Conrimaceogain](https://github.com/Conrimaceogain)
 - [YetheSamartaka](https://github.com/YetheSamartaka)
-- [Battlekeeper](https://github.com/Battlekeeper)
 - [regiregi22](https://github.com/regiregi22)
 
 ## Disclaimer from current Developers
@@ -109,7 +108,7 @@ For building release builds see [ACE3 reference](https://ace3mod.com/wiki/develo
 
 ### Submitting issues and requesting features
 
-Please, use our [Issue Tracker](https://github.com/Tomcat-SG/KAM/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
+Please, use my [Issue Tracker](https://github.com/Katalam/kat_aceAdvMedical/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
 
 ## License
 

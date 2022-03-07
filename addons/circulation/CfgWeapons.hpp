@@ -41,30 +41,6 @@ class CfgWeapons {
     class kat_bloodIV_AB_250: ACE_bloodIV_250 {
         displayName = CSTRING(BloodIV_AB_250);
     };
-    class KAT_Empty_bloodIV_500: ACE_bloodIV
-	{
-        displayName = CSTRING(FieldBloodTK500_Display);
-        descriptionShort = CSTRING(FieldBloodTK_Desc);
-        descriptionUse = CSTRING(FieldBloodTK_Desc);
-		picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
-		author = "Battlekeeper";
-        hiddenSelectionsTextures[] = {QPATHTOF(ui\IVBag_blood_500ml_empty_ca.paa)};
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 2;
-        };
-    };
-	class KAT_Empty_bloodIV_250: ACE_bloodIV
-	{
-        displayName = CSTRING(FieldBloodTK250_Display);
-        descriptionShort = CSTRING(FieldBloodTK_Desc);
-        descriptionUse = CSTRING(FieldBloodTK_Desc);
-		picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
-		author = "Battlekeeper";
-        hiddenSelectionsTextures[] = {QPATHTOF(ui\IVBag_blood_500ml_empty_ca.paa)};
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
     class kat_PainkillerItem: ACE_ItemCore {
         scope = 1; // no mistake, just a placeholder, cause ACE can't handle magazines. DO NOT USE!
         author = "Katalam";
@@ -107,5 +83,5 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;
         };
-    };
+    };	
 };

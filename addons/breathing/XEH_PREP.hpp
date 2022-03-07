@@ -13,4 +13,3 @@ PREP(treatmentAdvanced_pulseoximeterLocal);
 PREP(treatmentAdvanced_removePulseoximeter);
 PREP(treatmentAdvanced_tensionpneumothorax);
 PREP(treatmentAdvanced_tensionpneumothoraxLocal);
-PREP(listenLungs);

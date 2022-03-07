@@ -26,5 +26,6 @@ if !(GVAR(enable)) exitWith {};
 if (random(100) <= GVAR(probability_obstruction)) then {
     if !(_unit getVariable [QGVAR(obstruction), false]) then {
         _unit setVariable [QGVAR(obstruction), true, true];
+        [_unit, CBA_missionTime] call FUNC(handleTimer);
     };
 };

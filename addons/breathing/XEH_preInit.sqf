@@ -18,23 +18,13 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Lethal SpO2 value
+//Enable breathing death timer for airway injuries
 [
-    QGVAR(SpO2_dieValue),
-    "SLIDER",
-    LLSTRING(SETTING_SpO2_dieValue),
-    CBA_SETTINGS_CAT,
-    [5, 95, 65, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-// Enables death in cause of SpO2 lethal value
-[
-    QGVAR(SpO2_dieActive),
+    QGVAR(death_timer_enable),
     "CHECKBOX",
-	LLSTRING(SETTING_SpO2_dieActive),
+    LLSTRING(SETTING_death_timer_enable),
     CBA_SETTINGS_CAT,
-    [true],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -44,7 +34,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_Value_Before),
     CBA_SETTINGS_CAT,
-    [0, 100, 33, 0],
+    [0, 100, 30, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -128,37 +118,5 @@ PREP_RECOMPILE_END;
     [0, 1, 0.4, 1],
     true
 ] call CBA_Settings_fnc_init;
-
-// Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might help
-[
-    QGVAR(pneumothorax_hardcore),
-    "CHECKBOX",
-    [LLSTRING(SETTING_pneumothorax_hardcore), LLSTRING(SETTING_pneumothorax_hardcore_DESC)],
-    CBA_SETTINGS_CAT,
-    [false],
-    true
-] call CBA_Settings_fnc_init;
-
-// Enables hardcore mod for tension and hemopneumothorax by not making it appear in medical menu - Stethoscope might help
-[
-    QGVAR(tensionhemothorax_hardcore),
-    "CHECKBOX",
-    [LLSTRING(SETTING_tensionhemothorax_hardcore), LLSTRING(SETTING_tensionhemothorax_hardcore_DESC)],
-    CBA_SETTINGS_CAT,
-    [false],
-    true
-] call CBA_Settings_fnc_init;
-
-// sound volume for Stethoscope
-/*
-[
-    QGVAR(StethoscopeSoundVolume),
-    "SLIDER",
-    [LLSTRING(SETTING_StethoscopeSoundVolume), LLSTRING(DESCRIPTION_StethoscopeSoundVolume)],
-    CBA_SETTINGS_CAT,
-    [1, 4, 1, 0],
-    true
-] call CBA_Settings_fnc_init;
-*/
 
 ADDON = true;

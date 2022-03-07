@@ -9,7 +9,6 @@
 Tomcat (https://github.com/Tomcat-SG)
 Kygan (https://github.com/Conrimaceogain)
 YetheSamartaka (https://github.com/YetheSamartaka)
-Battlekeeper (https://github.com/Battlekeeper)
 
 
 # ORIGINAL AUTHOR

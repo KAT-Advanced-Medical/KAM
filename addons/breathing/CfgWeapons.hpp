@@ -4,8 +4,6 @@ class CfgWeapons {
 
     class kat_Pulseoximeter: ACE_ItemCore {
         scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
         author = "Katalam";
         displayName= CSTRING(Pulseoximeter_Desc_Short);
         descriptionShort = CSTRING(Pulseoximeter_Desc_Short);
@@ -18,8 +16,6 @@ class CfgWeapons {
     };
     class kat_chestSeal: ACE_ItemCore {
         scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
         author = "Katalam";
         displayName= CSTRING(chestseal_display);
         descriptionShort = CSTRING(chestseal_desc);
@@ -31,26 +27,11 @@ class CfgWeapons {
     };
     class kat_aatKit: ACE_ItemCore {
         scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
         author = "Kygan";
         displayName= CSTRING(aatKit_display);
         descriptionShort = CSTRING(aatKit_desc);
         descriptionUse = CSTRING(aatKit_desc);
         picture = QPATHTOF(ui\surgical_airway_kit.paa);
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 5;
-        };
-    };
-    class kat_stethoscope: ACE_ItemCore	{
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        author = "Battlekeeper";
-        displayName= CSTRING(Stethoscope_display);
-        descriptionShort= CSTRING(Stethoscope_desc);
-        descriptionUse= CSTRING(Stethoscope_desc);
-		picture = QPATHTOF(ui\steth.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 5;
         };

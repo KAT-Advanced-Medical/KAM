@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam, modified by YetheSamartaka
+ * Author: Katalam
  * Handle the X Series Defi for the patient.
  *
  * Arguments:
@@ -59,10 +59,10 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
         [_idPFH] call CBA_fnc_removePerFrameHandler;
 		_target setVariable ["kat_AEDXPatient_PFH", nil];
     };
-
+	
 	//No Values for your Monitor atm
 	if (GVAR(DeactMon_whileAED_X) && _target getVariable ['kat_AEDinUse', false]) exitWith {};
-
+	
 	[_target, "quick_view", _string] call kat_circulation_fnc_removeLog;
 	[_target, "quick_view", _string,
 	[round (_target getVariable ["ace_medical_heartRate", 0]),
@@ -79,7 +79,7 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     ((_target distance2D _player) > GVAR(distanceLimit_AEDX)) || _player getVariable [QGVAR(returnedAED), true]
 }, {
     params ["_player", "_target"];
-	if (_player getVariable [QGVAR(returnedAED), true]) exitWith {};
+	if (_player getVariable [QGVAR(returnedAED), true]) exitWith {diag_log "returnedAED wurde true und es wurde das Distance/Time Limit übersprungen"};
 	diag_log "Distance Limit achieved on AED-X";
     [_player, _target] call FUNC(returnAED_X);
 }, [_player, _target], GVAR(timeLimit_AEDX), {
@@ -88,8 +88,7 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     [_player, _target] call FUNC(returnAED_X);
 }] call CBA_fnc_waitUntilAndExecute;
 
-// spawns the heart rate beep if enabled in CBA settings
-if !(GVAR(AED_BeepsAndCharge)) exitWith {};
+// spawns the heart rate beep.
 [_target, _player] spawn {
     params ["_target", "_player"];
     while {_target getVariable [QGVAR(X), false]} do {

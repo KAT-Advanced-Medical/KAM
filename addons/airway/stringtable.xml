@@ -25,6 +25,18 @@
             <Turkish>ACE-Havayolu yaralanmaları aktive edildi mi?</Turkish>
             <Italian>Attivare ACE-Lesioni Respiratorie?</Italian>
         </Key>
+        <Key ID="STR_kat_airway_SETTING_TIMER">
+            <English>Airway Injuries Death Timer</English>
+            <German>Atemwegsverletzungstimer</German>
+            <Polish>Urazy dróg oddechowych - czas do śmierci</Polish>
+            <Spanish>Tiempo de muerte para Lesiones Respiratorias</Spanish>
+            <Chinese>因呼吸道受傷的死亡倒數時間</Chinese>
+            <Czech>Časomíra úmrtí na zranění dýchacích cest</Czech>
+            <Korean>기도부상으로 인한 사망 타이머</Korean>
+            <French>Délai mortel après blessure respiratoire</French>
+            <Turkish>Havayolu yaralanmaları ölüm zamanlayıcısı</Turkish>
+            <Italian>Tempo al decesso per Lesioni Respiratorie</Italian>
+        </Key>
         <Key ID="STR_kat_airway_SETTING_collapsed">
             <English>Probability for airway collapsing</English>
             <German>Atemwegsverletzungswahrscheinlichkeit</German>
@@ -100,7 +112,7 @@
         <Key ID="STR_kat_airway_checkAirway_log">
             <English>%1 checked airways: %2 %3, %4 %5</English>
             <German>%1 überprüfte Atemwege: %2 %3, %4 %5</German>
-            <Polish>%1 sprawdził drogi oddechowe: %2 %3, %4 %5</Polish>
+            <Polish>%1 sprawdzone drogi oddechowe: %2 %3, %4 %5</Polish>
             <Spanish>%1 comprobó las vías aéreas: %2 %3, %4 %5</Spanish>
             <Chinese>%1 檢查呼吸道: %2 %3, %4 %5</Chinese>
             <Czech>Zkontrolovány dýchací cesty: %2 %3, %4 %5 </Czech>
@@ -112,7 +124,7 @@
         <Key ID="STR_kat_airway_airway_log">
             <English>%1 inserted a %2</English>
             <German>%1 intubierte mit %2</German>
-            <Polish>%1 intubował %2</Polish>
+            <Polish>%1 intubowany z %2</Polish>
             <Spanish>%1 intubado con %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
             <Czech>%1 vložil %2</Czech>
@@ -253,30 +265,6 @@
             <Turkish>Havayolları temiz</Turkish>
             <Italian>Le vie aeree sono libere</Italian>
         </Key>
-        <Key ID="STR_kat_airway_Airway_turnaroundSuccess">
-            <English>Occlusion removed</English>
-            <German>Verstopfung entfernt</German>
-            <Polish>Zablokowanie usunięte</Polish>
-            <Spanish>Oclusión eliminada</Spanish>
-            <Chinese>遮擋移除</Chinese>
-            <Czech>Uzavření odstraněno</Czech>
-            <Korean>폐색 제거됨</Korean>
-            <French>Occlusion supprimée</French>
-            <Turkish>Tıkanıklık kaldırıldı</Turkish>
-            <Italian>Occlusione rimossa</Italian>
-        </Key>
-        <Key ID="STR_kat_airway_Airway_NotClearForItem">
-            <English>Item could not be used, airways are not clear</English>
-            <German>Gegenstand konnte nicht verwendet werden, Atemwege sind nicht frei</German>
-            <Polish>Przedmiot nie może zostać użyty, drogi oddechowe nie są czyste</Polish>
-            <Spanish>El artículo no se pudo usar, las vías respiratorias no están despejadas</Spanish>
-            <Chinese>物品无法使用，气道不明</Chinese>
-            <Czech>Předmět nemohl být použit, dýchací cesty nejsou volné</Czech>
-            <Korean>항목을 사용할 수 없음, 기도가 명확하지 않음</Korean>
-            <French>L'article n'a pas pu être utilisé, les voies respiratoires ne sont pas dégagées</French>
-            <Turkish>Öğe kullanılamadı, hava yolları açık değil</Turkish>
-            <Italian>L'articolo non può essere utilizzato, le vie aeree non sono libere</Italian>
-        </Key>
         <Key ID="STR_kat_airway_overstretch">
             <English>Hyperextending Head</English>
             <German>Kopf überstrecken</German>
@@ -324,6 +312,7 @@
             <French>Hyperextension de la tête annulée</French>
             <Turkish>Hyperextension İptal Edildi</Turkish>
             <Italian>Iperestensione della testa annullata</Italian>
+
         </Key>
         <Key ID="STR_kat_airway_overstretch_info">
             <English>Don't run away, you're saving a life!</English>
@@ -338,16 +327,16 @@
             <Italian>Non andartene, stai salvando una vita!</Italian>
         </Key>
         <Key ID="STR_kat_airway_turnaround_info">
-            <English>Head turn performed, airways are still not clear</English>
-            <German>Kopfdrehung durchgeführt, Atemwege sind noch nicht frei</German>
-            <Polish>Obrót głowy wykonany, drogi oddechowe wciąż nie są czyste</Polish>
-            <Spanish>Giro de cabeza realizado, las vías respiratorias aún no están despejadas</Spanish>
-            <Chinese>转头，气道仍不清楚</Chinese>
-            <Czech>Hlavou se otočilo, dýchací cesty stále nejsou volné</Czech>
-            <Korean>머리 회전 수행, 기도는 여전히 명확하지 않음</Korean>
-            <French>Tour de tête effectué, les voies respiratoires ne sont toujours pas dégagées</French>
-            <Turkish>Baş dönüşü yapıldı, hava yolları hala net değil</Turkish>
-            <Italian>Rotazione della testa eseguita, le vie aeree non sono ancora libere</Italian>
+            <English>You tried to remove the vomit</English>
+            <German>Du probierst das Erbrochene zu entfernen</German>
+            <Polish>Próbowałeś usunąć wymiociny</Polish>
+            <Spanish>Trataste de quitar el vómito</Spanish>
+            <Chinese>你試圖清除嘔吐物</Chinese>
+            <Czech>Pokusil si se odstranit zvratky</Czech>
+            <Korean>이물질을 제거하려 시도했지만 실패함</Korean>
+            <French>Vous avez essayé de retirer le vomi</French>
+            <Turkish>Kusmuğu çıkarmaya çalıştın</Turkish>
+            <Italian>Hai provato a rimuovere il vomito</Italian>
         </Key>
         <Key ID="STR_kat_airway_turnaround">
             <English>Head turning</English>
@@ -400,7 +389,7 @@
         <Key ID="STR_kat_airway_action_placing">
             <English>Placing</English>
             <German>Setzen</German>
-            <Polish>Zakładanie</Polish>
+            <Polish>Kładzenie</Polish>
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
             <Czech>Pokládám</Czech>
@@ -804,30 +793,6 @@
             <French>Combien de temps faudra t-il pour placer une canule de Guedel</French>
             <Turkish>Guedel Tüp'ü kullanmak ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per posizionare una canula di Guedel</Italian>
-        </Key>
-        <Key ID="STR_kat_airway_COLORED_LOGS">
-            <English>Colored activitylogs (AED-X/Pulseoximeter)</English>
-            <German>Bunte Activitylogs (AED-X/Pulseoximeter)</German>
-            <Polish>Kolorowe logi aktywności (AED-X/Pulsoksymetr)</Polish>
-            <Spanish>Registros de actividad de color (AED-X/Pulseoxímetro)</Spanish>
-            <Chinese>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinese>
-            <Czech>Barevné protokoly aktivit (AED-X / Pulseoximeter)</Czech>
-            <Korean>컬러 활동 기록 (AED-X / 맥박 측정기)</Korean>
-            <French>Blocs d'activité colorés (AED-X/Pulseoximeter)</French>
-            <Turkish>Renkli aktivite günlükleri (AED-X / Pulseoximeter)</Turkish>
-            <Italian>Zoccoli di attività colorati (AED-X/Pulsossimetro)</Italian>
-        </Key>
-        <Key ID="STR_kat_airway_COLORED_LOGS_DESC">
-            <English>Colors the Activitylogs of AED-X or Pulseoximeter red, if any value is critical</English>
-            <German>Färbt die Activitylogs von AED-X oder Pulsoximeter rot, wenn ein Wert kritisch ist</German>
-            <Polish>Zabarwia logi AED-X lub pulsoksymetru na czerwono, jeśli jakaś wartość jest krytyczna</Polish>
-            <Spanish>Coloca los registros de actividad del AED-X o del Pulsoxímetro en rojo, si algún valor es crítico</Spanish>
-            <Chinese>将AED-X或Pulseoximeter的Activitylogs染成红色，如果任何值是临界值。</Chinese>
-            <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulseoximeter červeně</Czech>
-            <Korean>중요한 값이있는 경우 AED-X 또는 맥박 산소계의 활동 로그를 빨간색으로 표시합니다.</Korean>
-            <French>Colore les Activitylogs de l'AED-X ou du Pulseoximeter en rouge, si une valeur est critique</French>
-            <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
-            <Italian>Colora gli Activitylogs di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
         </Key>
     </Package>
 </Project>

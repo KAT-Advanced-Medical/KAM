@@ -25,16 +25,15 @@ params [
 
 private _newValue = 0;
 private _oldValue = _unit getVariable ["KAT_medical_airwayStatus", 100];
+_value = _value / 100;
 
 if (_add) then {
-	_value = _value / 50;
     _newValue = _oldValue + _value;
-	if (_newValue > 100) then {_newValue = 100.3};
+	if (_newValue > 100) then {_newValue = 100};
     _unit setVariable ["KAT_medical_airwayStatus", _newValue, true];
 } else {
-	_value = _value / 100;
     _newValue = _oldValue - _value;
-	if (_newValue <= 0) then {_newValue = 0};
+    if (_newValue < 65) then {_newValue = 65};
     _unit setVariable ["KAT_medical_airwayStatus", _newValue, true];
 };
 
