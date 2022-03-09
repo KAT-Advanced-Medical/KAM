@@ -39,7 +39,7 @@ class GVAR(RscChangeBloodType): RscDisplayAttributes {
                     x = 0;
                     y = 0;
                     w = W_PART(26);
-                    h = H_PART(1.2); 
+                    h = H_PART(2.2); 
                     class controls {
                         class Title1: RscText { 
                             idc = -1;
@@ -74,8 +74,22 @@ class GVAR(RscChangeBloodType): RscDisplayAttributes {
 								};
 							};
 						};
+                        class Title6: Title1 {
+                            idc = -1;
+                            text = CSTRING(ModuleManageAirway_bloodVolume);
+                            toolTip = "";
+                            y = H_PART(1.1);
+                        };
+                        class BloodValue: RscXSliderH {
+                            idc = 26423;
+                            x = W_PART(10.1);
+                            y = H_PART(1.1);
+                            w = W_PART(15.9);
+                            h = H_PART(1);
+                        };
                     };
                 };
+    
             };
         };
         class ButtonOK: ButtonOK {};

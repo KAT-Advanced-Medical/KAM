@@ -50,6 +50,25 @@ private _fnc_onUnload = {
     deleteVehicle _logic;
 };
 
+
+private _fnc_sliderMove = {
+    params ["_slider","_curBloodVol"];
+    private _idc = ctrlIDC _slider;
+	private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
+	private _unit = attachedTo _logic;
+    private _curVal = _unit getVariable ["ace_medical_bloodVolume", 6.0];
+    _slider ctrlSetTooltip format ["%1%3 (was %2%3)", sliderPosition _slider, _curVal, "L"];
+};
+
+private _slider = _display displayCtrl 26423;
+_slider sliderSetRange [0, 6];
+_slider sliderSetSpeed [1,0.5];
+private _curBloodVol = _unit getVariable ["ace_medical_bloodVolume", 6.0];
+_slider sliderSetPosition (_curBloodVol);
+_slider ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove];
+[_slider,_curBloodVol] call _fnc_sliderMove;
+
+
 private _playerBloodyType = _unit getVariable [QEGVAR(circulation,bloodtype), "O"];
 private _select = switch (_playerBloodyType) do 
 {
@@ -77,6 +96,10 @@ private _fnc_onConfirm = {
     if(!isNil "_dogtagData") then {
         _dogtagData set [2, _bloodtype];
     };
+
+    private _curBloodVol = _unit getVariable ["ace_medical_bloodVolume", 6.0];
+    private _sliderValue = sliderPosition (_display displayCtrl 26423);
+	_unit setVariable ["ace_medical_bloodVolume", _sliderValue, true];
 };
 
 _display displayAddEventHandler ["unload", _fnc_onUnload];

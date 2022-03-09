@@ -29,13 +29,17 @@
             <English>Blood group: </English>
             <German>Blutgruppe: </German>
         </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_bloodVolume">
+            <English>Blood volume: </English>
+            <German>blutvolumen: </German>
+        </Key>
         <Key ID="STR_kat_zeus_manageAirway_Module_displayname">
             <English>Manage Airways</English>
             <German>Atemwege verwalten</German>
         </Key>
         <Key ID="STR_kat_zeus_bloodType_Module_displayname">
-            <English>Change blood group</English>
-            <German>Blutgruppe ändern</German>
+            <English>Change blood group / volume</English>
+            <German>Blutgruppe / volumen ändern</German>
         </Key>
         <Key ID="STR_kat_zeus_NothingSelected">
             <English>Place on a unit.</English>

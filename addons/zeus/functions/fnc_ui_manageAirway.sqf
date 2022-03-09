@@ -99,11 +99,12 @@ private _fnc_onConfirm = {
 	_unit setVariable ["KAT_medical_tensionpneumothorax", _valueArr select 4, true];
 	private _curSpO2Val = _unit getVariable ["KAT_medical_airwayStatus", 50];
 	private _sliderValue = sliderPosition (_display displayCtrl 16106);
-	switch (true) do {
-		case (_sliderValue == _curSpO2Val): {};
-		case (_sliderValue > _curSpO2Val): {[_unit, _sliderValue - _curSpO2Val, true] call EFUNC(breathing,adjustSpo2)};
-		case (_sliderValue < _curSpO2Val): {[_unit, _curSpO2Val - _sliderValue, false] call EFUNC(breathing,adjustSpo2)};
-	};
+    
+	_unit setVariable ["KAT_medical_airwayStatus", _sliderValue, true]; 
+    if(_curSpO2Val == 100) then { 
+        [_unit] call EFUNC(breathing,handleBreathing); 
+    };
+
 };
 
 _display displayAddEventHandler ["unload", _fnc_onUnload];
