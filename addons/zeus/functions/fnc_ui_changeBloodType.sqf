@@ -57,14 +57,14 @@ private _fnc_sliderMove = {
 	private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
 	private _unit = attachedTo _logic;
     private _curVal = _unit getVariable ["ace_medical_bloodVolume", 6.0];
-    _slider ctrlSetTooltip format ["%1%3 (was %2%3)", sliderPosition _slider, _curVal, "L"];
+    _slider ctrlSetTooltip format ["%1%3 (was %2%3)", parseNumber((sliderPosition _slider) toFixed 2), (parseNumber (_curVal toFixed 2)), "L"];
 };
 
 private _slider = _display displayCtrl 26423;
 _slider sliderSetRange [0, 6];
 _slider sliderSetSpeed [1,0.5];
 private _curBloodVol = _unit getVariable ["ace_medical_bloodVolume", 6.0];
-_slider sliderSetPosition (_curBloodVol);
+_slider sliderSetPosition (parseNumber (_curBloodVol toFixed 2));
 _slider ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove];
 [_slider,_curBloodVol] call _fnc_sliderMove;
 
@@ -76,6 +76,7 @@ private _select = switch (_playerBloodyType) do
   	case "A":  {1};
  	case "B":  {2};
   	case "AB": {3};
+    default {0};
 };
 (_display displayCtrl 16107) lbSetCurSel _select;
 
@@ -99,7 +100,7 @@ private _fnc_onConfirm = {
 
     private _curBloodVol = _unit getVariable ["ace_medical_bloodVolume", 6.0];
     private _sliderValue = sliderPosition (_display displayCtrl 26423);
-	_unit setVariable ["ace_medical_bloodVolume", _sliderValue, true];
+	_unit setVariable ["ace_medical_bloodVolume", ( parseNumber (_sliderValue toFixed 2)), true];
 };
 
 _display displayAddEventHandler ["unload", _fnc_onUnload];

@@ -100,7 +100,7 @@ private _fnc_onConfirm = {
 	private _curSpO2Val = _unit getVariable ["KAT_medical_airwayStatus", 50];
 	private _sliderValue = sliderPosition (_display displayCtrl 16106);
     
-	_unit setVariable ["KAT_medical_airwayStatus", _sliderValue, true]; 
+	_unit setVariable ["KAT_medical_airwayStatus", round(_sliderValue), true]; 
     if(_curSpO2Val == 100) then { 
         [_unit] call EFUNC(breathing,handleBreathing); 
     };
