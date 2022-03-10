@@ -73,5 +73,9 @@
             <English>Unit must be alive.</English>
             <German>Einheit muss am Leben sein.</German>
         </Key>
+        <Key ID="STR_kat_zeus_NotUnconscious">
+            <English>Unit must be unconscious.</English>
+            <German>Einheit muss Ohnmächtig sein.</German>
+        </Key>
     </Package>
 </Project>
