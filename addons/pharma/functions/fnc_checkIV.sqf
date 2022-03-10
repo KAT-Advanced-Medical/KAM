@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: 2LT.Mazinski
- * Opens an IV/IO on a patient and changes the patient's flow variable
+ * Author: Mazinski.H
+ * Checks Limb Damage before and IV can be used.
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -9,10 +9,10 @@
  * 2: Body Part <STRING>
  *
  * Return Value:
- * None
+ * <BOOLEAN>
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_circulation_fnc_applyIV;
+ * [player, cursorObject, "LeftLeg"] call kat_pharma_fnc_checkIV;
  *
  * Public: No
  */

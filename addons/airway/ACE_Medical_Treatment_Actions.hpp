@@ -43,17 +43,6 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_accuvac));
         callbackProgress = QUOTE(_this call FUNC(accuvacSound));
     };
-    class Accuvac_vehicle: larynxtubus {
-        displayName = "Vehicle: Accuvac";
-        treatmentTime = QGVAR(Accuvac_time);
-        items[] = {};
-        condition = QFUNC(vehicleCheck);
-        icon = QPATHTOF(ui\accuvac.paa);
-        consumeItem = 0;
-        medicRequired = QGVAR(medLvl_Accuvac);
-        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_accuvac));
-        callbackProgress = QUOTE(_this call FUNC(accuvacSound));
-    };
     class Overstretch: larynxtubus {
         displayName = CSTRING(overstretch);
         displayNameProgress = CSTRING(overstretching);

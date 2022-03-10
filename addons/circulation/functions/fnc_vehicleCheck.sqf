@@ -6,12 +6,16 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
+ * 3: Treatment (not used) <STRING>
+ * 4: Item User (not used) <OBJECT>
+ * 5: Used Item <STRING>
  *
  * Return Value:
- * Vehicle has Device <BOOL>
+ * None
  *
  * Example:
- * [player, cursorObject] call kat_circulation_fnc_vehicleCheck;
+ * [player, cursorObject, "LeftLeg", "", objNull, "kat_IV_20"] call kat_circulation_fnc_vehicleCheck;
  *
  * Public: No
  */
@@ -26,12 +30,17 @@ private _inventory = [];
     _inventory = itemCargo _x;
 
     if (_x isKindOf "LandVehicle" || _x isKindOf "Helicopter") then {
-	    {
-			if (_x == "kat_X_AED") then {
-				_return = true;
-			};
-		} forEach _inventory;
-	};
+        {
+            if (_x isEqualTo "kat_X_AED") then {
+                _return = true;
+            };
+        } forEach _inventory;
+
+        if (_return) then {
+            _patient setVariable [QGVAR(AEDvehicleName), _x, true];
+            _patient setVariable [QGVAR(vehicleTrue), true, true];
+        };
+    };
 } forEach _checkArray;
 
 _return

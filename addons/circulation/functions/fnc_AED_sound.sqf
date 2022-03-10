@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
-ADV-aceCPR - by Belbo - edited by Katalam (new syntax and different sound)
+ADV-aceCPR - by Belbo - edited by Katalam (new syntax and different sound) and YetheSamartaka(PowerUp sound on/off setting)
 */
 
 params ["_args"];
@@ -14,7 +14,9 @@ if !(_caller getVariable ["kat_soundplayed", false]) then {
         playsound3D [QPATHTOF_SOUND(sounds\standclear.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 1.2 seconds
         sleep 1.5;
 		if !(_caller getVariable ["kat_soundplayed", false]) exitWith {};
+        if (GVAR(AED_BeepsAndCharge)) then {
         playsound3D [QPATHTOF_SOUND(sounds\powerup.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 7.6 seconds
+        };
         sleep 7.7; // 9.2 seconds
 		if !(_caller getVariable ["kat_soundplayed", false]) exitWith {};
         playsound3D [QPATHTOF_SOUND(sounds\bump.wav), _caller, false, getPosASL _caller, 5, 1, 15]; // 0.8 seconds

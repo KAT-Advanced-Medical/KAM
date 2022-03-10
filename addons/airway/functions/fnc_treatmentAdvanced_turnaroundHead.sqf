@@ -19,7 +19,7 @@
 params ["_player", "_target"];
 
 if !(_target getVariable ["KAT_medical_airwayOccluded", false]) exitWith {
-    private _output = localize LSTRING(Airway_NA);
+    private _output = localize LSTRING(Airway_turnaroundSuccess);
     [_output, 2, _player] call ace_common_fnc_displayTextStructured;
     false;
 };

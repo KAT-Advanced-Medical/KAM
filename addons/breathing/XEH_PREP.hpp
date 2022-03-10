@@ -1,4 +1,3 @@
-PREP(adjustSpo2);
 PREP(fullHealLocal);
 PREP(handleBreathing);
 PREP(handlePulmoHit);
@@ -13,3 +12,4 @@ PREP(treatmentAdvanced_pulseoximeterLocal);
 PREP(treatmentAdvanced_removePulseoximeter);
 PREP(treatmentAdvanced_tensionpneumothorax);
 PREP(treatmentAdvanced_tensionpneumothoraxLocal);
+PREP(listenLungs);

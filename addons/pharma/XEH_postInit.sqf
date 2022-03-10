@@ -1,7 +1,5 @@
 #include "script_component.hpp"
 
-["treatmentIVfalse", {_this call FUNC(treatmentAdvanced_IV)}] call CBA_fnc_addEventHandler;
-["IVreset", {_this call FUNC(removeEffect_IV)}] call CBA_fnc_addEventHandler;
 ["treatmentCarbonate", {_this call FUNC(treatmentAdvanced_CarbonateLocal)}] call CBA_fnc_addEventHandler;
 ["treatmentNaloxone", {_this call FUNC(treatmentAdvanced_NaloxoneLocal)}] call CBA_fnc_addEventHandler;
 ["treatmentAtropine", {_this call FUNC(treatmentAdvanced_AtropineLocal)}] call CBA_fnc_addEventHandler;

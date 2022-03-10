@@ -1,24 +1,25 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
- * Airway Management for occluding
+ * Author: Mazinski.H
+ * Begins Carbonate Treatment
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Item Classname <STRING>
  *
  * Return Value:
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_accuvac;
+ * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_Carbonate;
  *
- * Public: Yes
+ * Public: No
  */
 
 params ["_medic", "_patient", "_medication"];
 
-["kat_Carbonate", _medic, _patient, "head", "Carbonate"] call acep_circulation_fnc_removeItemfromMag;
+["kat_Carbonate", _medic, _patient, "head", "Carbonate"] call FUNC(removeItemfromMag);
 
 if (local _patient) then {
     ["treatmentCarbonate", [_medic, _patient, _medication]] call CBA_fnc_localEvent;

@@ -1,18 +1,18 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
- * Airway Management for occluding local
+ * Author: Mazinski.H
+ * Checks for Carbonate Wakeup values to restore consciousness
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Item classname <STRING>
+ * 2: Item Classname <STRING>
  *
  * Return Value:
  * Succesful treatment <BOOL>
  *`
  * Example:
- * [player, "Accuvac"] call kat_airway_fnc_treatmentAdvanced_accuvacLocal;
+ * [player, "Accuvac"] call kat_pharma_fnc_treatmentAdvanced_CarbonateLocal;
  *
  * Public: No
  */

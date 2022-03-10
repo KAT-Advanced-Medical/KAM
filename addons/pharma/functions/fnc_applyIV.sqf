@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: 2LT.Mazinski
+ * Author: Mazinski.H
  * Opens an IV/IO on a patient and changes the patient's flow variable
  *
  * Arguments:
@@ -20,11 +20,11 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart", "", "", "_usedItem"];
+params ["_medic", "_patient", "_bodyPart", "_usedItem"];
 
 _patient setVariable [QGVAR(IVplaced), true, true];
 
-if (_usedItem == "kat_IV_16") then {
+if (_usedItem isEqualTo "kat_IV_16") then {
     switch (_bodyPart) do {
     	case "leftarm": {_patient setVariable [QGVAR(IVsite), 2, true];
     	};
@@ -49,8 +49,11 @@ if (_usedItem == "kat_IV_16") then {
 
 [{
     private _patient = _this select 0;
-    [_patient, _patient] call acep_circulation_fnc_retrieveIV;
+    [_patient, _patient] call FUNC(retrieveIV);
 }, [_patient], GVAR(IVdrop)] call CBA_fnc_waitAndExecute;
+
+if (_unit getVariable ["kat_IVPharma_PFH", false]) exitWith {}; 
+_unit setVariable ["kat_IVPharma_PFH", true];
 
 [{
     params ["_args", "_idPFH"];
@@ -66,7 +69,8 @@ if (_usedItem == "kat_IV_16") then {
     };
 
 	if ([_patient, _bodyPart] call ace_medical_treatment_fnc_hasTourniquetAppliedTo) then {
-		_patient setVariable [QGVAR(flowRate), 0, true]
+		_patient setVariable [QGVAR(flowRate), 0, true];
+        _patient setVariable ["kat_IVPharma_PFH", nil];
 	} else {
 		_patient setVariable [QGVAR(flowRate), ace_medical_ivFlowRate, true];
 	};

@@ -35,7 +35,7 @@ if (!isNil {_unit getVariable ["ace_medical_ivBags",[]]}) then {
     _bloodBags = _bloodBags apply {
         _x params ["_bagVolumeRemaining", "_type", "_bodyPart"];
 
-        if (_tourniquets select _bodyPart == 0) then {
+        if (_tourniquets select _bodyPart isEqualTo 0) then {
             private _bagChange = (_deltaT * _flow * 4.16) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
             _bloodVolumeChange = _bloodVolumeChange + (_bagChange / 1000);

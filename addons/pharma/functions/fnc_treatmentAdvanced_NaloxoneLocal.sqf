@@ -1,17 +1,17 @@
 #include "script_component.hpp"
 /*
- * Author: 2LT.Mazinski
+ * Author: Mazinski.H
  * Locates and Removes 1x Morphine after the administration of Naloxone.
  *
  * Arguments:
  * 0: Medic <OBJECT>
- * 1: Medication <STRING>
+ * 1: Item Classname <STRING>
  *
  * Return Value:
- * None
+ * <BOOLEAN>
  *
  * Example:
- * [player, "Naloxone"] call aceP_circulation_fnc_treatmentAdvanced_NaloxoneLocal;
+ * [player, "Naloxone"] call kat_pharma_fnc_treatmentAdvanced_NaloxoneLocal;
  *
  * Public: No
  */
@@ -23,7 +23,7 @@ private _medicationArray = _patient getVariable ["ace_medical_medications", []];
 {
     _x params ["_medication"];
 
-    if (_medication == "Morphine") exitWith {
+    if (_medication isEqualTo "Morphine") exitWith {
     	_medicationArray deleteAt (_medicationArray find _x);
     };
 } forEach (_medicationArray);

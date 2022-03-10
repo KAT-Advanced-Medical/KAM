@@ -23,8 +23,7 @@ class CfgPatches {
             "kat_nitroglycerin",
             "kat_amiodarone",
             "kat_lidocane",
-            "kat_atropine",
-            "kat_ondansetron"
+            "kat_atropine"
         };
         magazines[] = { };
         requiredAddons[] = {
@@ -49,7 +48,6 @@ class CfgPatches {
     };
 };
 
-#include "CfgFunctions.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"

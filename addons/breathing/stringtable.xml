@@ -13,47 +13,41 @@
             <Turkish>ACE-Nefes etkinleştirildi mi?</Turkish>
             <Italian>Attivare ACE-Respirazione?</Italian>
         </Key>
-        <Key ID="STR_kat_breathing_SETTING_death_timer_enable">
-            <English>Alternative death timer for airway injuries?</English>
-            <German>Alternativen Todestimer für Atemwegsverlegungen nutzen?</German>
-            <Polish>Alternatywny licznik do śmierci dla urazów dróg oddechowych?</Polish>
-            <Spanish>¿Tiempo de muerte alternativo para lesiones en vías aéreas?</Spanish>
-            <Chinese>額外因呼吸道受傷的死亡倒數？</Chinese>
-            <Czech>Alternativní čas smrti pro zranění dýchacích cest?</Czech>
-            <Korean>호흡기 부상시(막힘) 사망 타이머 별도 적용?</Korean>
-            <French>Délai mortel alternatif des blessures respiratoires?</French>
-            <Turkish>Hava yolu yaralanmaları için alternatif ölüm zamanlayıcısı?</Turkish>
-            <Italian>Tempo di decesso alternativo per lesioni alle vie aeree</Italian>
+        <Key ID="STR_kat_breathing_SETTING_SpO2_dieValue">
+            <English>Lethal SpO2 value</English>
+            <German>Tödlicher SpO2 Wert</German>
+            <Polish>Wartość śmiertelna SpO2</Polish>
+            <Spanish>Valor letal de SpO2</Spanish>
+            <Chinese>致命的SpO2值</Chinese>
+            <Czech>Smrtelná hodnota SpO2</Czech>
+            <Korean>치명적인 SpO2 값</Korean>
+            <French>Valeur létale de la SpO2</French>
+            <Turkish>Ölümcül SpO2 değeri</Turkish>
+            <Italian>Valore letale di SpO2</Italian>
         </Key>
-        <Key ID="STR_kat_breathing_SETTING_Value_Before">
-            <English>Value to add or remove to the Sp02 before 100 sec</English>
-            <German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird vor 100 s</German>
-            <Polish>Wartość do dodania lub odjęcia do SpO2 przed upływem 100 sek</Polish>
-            <Spanish>Valor para agregar o quitar al Sp02 antes de 100 segundos</Spanish>
-            <Chinese>設定是否在一百秒之前增加或移除血氧飽和度監測器</Chinese>
-            <Czech>Hodnota, která se přidá nebo odebere Sp02 před 100 sekundami</Czech>
-            <Korean>100초후에 산소 포화도에 추가하거나 제거할 값</Korean>
-            <French>Valeur à ajouter ou retirer au Sp02 avant 100 sec</French>
-            <Turkish>100 saniyeden önce Sp02'ye eklenecek veya kaldırılacak değer</Turkish>
-            <Italian>Valore da aggiungere o rimuovere alla Sp02 prima di 100 secondi</Italian>
+        <Key ID="STR_kat_breathing_SETTING_SpO2_dieActive">
+            <English>Activate lethal SpO2 value</English>
+            <German>Tödlichen SpO2 Wert aktivieren</German>
+            <Polish>Aktywuj śmiertelną wartość SpO2</Polish>
+            <Spanish>Activar valor letal de SpO2</Spanish>
+            <Chinese>激活致命的SpO2值</Chinese>
+            <Czech>Aktivace smrtelné hodnoty SpO2</Czech>
+            <Korean>치명적인 SpO2 값 활성화</Korean>
+            <French>Activer la valeur létale de la SpO2</French>
+            <Turkish>Ölümcül SpO2 değerini etkinleştir</Turkish>
+            <Italian>Attivare il valore letale di SpO2</Italian>
         </Key>
-        <Key ID="STR_kat_breathing_SETTING_Value_After">
-            <English>Value to add or remove to the Sp02 after 100 sec</English>
-            <German>Wert der auf die Sauerstoffsättigung rauf oder runter gerechnet wird nach 100 s</German>
-            <Polish>Wartość do dodania lub odjęcia do SpO2 po upływie 100 sek</Polish>
-            <Spanish>Valor para agregar o quitar al Sp02 después de 100 segundos</Spanish>
-            <Chinese>設定是否在一百秒之後增加或移除血氧飽和度監測器</Chinese>
-            <Czech>Hodnota, která se přidá nebo odebere Sp02 po 100 sekundami</Czech>
-            <Korean>100초후에 산소 포화도에 추가하거나 제거할 값</Korean>
-            <French>Valeur à ajouter ou retirer au Sp02 après 100 sec</French>
-            <Turkish>100 saniye sonra Sp02'ye eklenecek veya kaldırılacak değer</Turkish>
-            <Italian>Valore da aggiungere o rimuovere alla Sp02 dopo i 100 secondi</Italian>
+        <Key ID="STR_kat_breathing_SETTING_MultiplyPositive">
+            <English>SpO2 positive multiplier</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_MultiplyNegative">
+            <English>SpO2 negative multiplier</English>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
             <German>Wahrscheinlichkeit für einen Pneumothorax</German>
             <Spanish>Probabilidad de un pneumotórax</Spanish>
-            <Polish>Szansa na odmę opłucną</Polish>
+            <Polish>Szansa na odmę płucną</Polish>
             <Chinese>氣胸的機率</Chinese>
             <Czech>Pravděpodobnost pneumotoraxu</Czech>
             <Korean>기흉 가능성</Korean>
@@ -63,20 +57,20 @@
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
-            <German>Benutze Pulseoximeter</German>
-            <Polish>Użyj Pulsoksymetru</Polish>
+            <German>Benutze Pulsoximeter</German>
+            <Polish>Załóż Pulsoksymetr</Polish>
             <Spanish>Usar oxímetro de pulso</Spanish>
             <Chinese>掛載心率監測器</Chinese>
             <Czech>Připojit Pulzní oxymetr</Czech>
             <Korean>맥박산소측정기 부착</Korean>
             <French>Placer l'oxymètre de pouls</French>
-            <Turkish>Nabız Oksimetresini Takın></Turkish>
+            <Turkish>Nabız Oksimetresini Takın&gt;</Turkish>
             <Italian>Collegare pulsossimetro</Italian>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display_Remove">
             <English>Remove Pulse Oximeter</English>
-            <German>Entferne Pulseoximeter</German>
-            <Polish>Usuń Pulsoksymetr</Polish>
+            <German>Entferne Pulsoximeter</German>
+            <Polish>Zdejmij Pulsoksymetr</Polish>
             <Spanish>Quitar oxímetro de pulso</Spanish>
             <Chinese>移除心率監測器</Chinese>
             <Czech>Odstranit Pulzní oxymetr</Czech>
@@ -87,7 +81,7 @@
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Short">
             <English>Pulse Oximeter</English>
-            <German>Pulseoximeter</German>
+            <German>Pulsoximeter</German>
             <Polish>Pulsoksymetr</Polish>
             <Spanish>Oxímetro de pulso</Spanish>
             <Chinese>心率監測器</Chinese>
@@ -99,7 +93,7 @@
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Use">
             <English>Pulse Oximeter</English>
-            <German>Pulseoximeter</German>
+            <German>Pulsoximeter</German>
             <Polish>Pulsoksymetr</Polish>
             <Spanish>Oxímetro de pulso</Spanish>
             <Chinese>心率監測器</Chinese>
@@ -112,7 +106,7 @@
         <Key ID="STR_kat_breathing_placing">
             <English>Placing</English>
             <German>Anlegen</German>
-            <Polish>Kładzenie</Polish>
+            <Polish>Zakładanie</Polish>
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
             <Czech>Dávám</Czech>
@@ -135,8 +129,8 @@
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_NA">
             <English>Pulse Oximeter already connected</English>
-            <German>Pulseoximeter bereits vorhanden</German>
-            <Polish>Pulsoksymetr jest już podłączony</Polish>
+            <German>Pulsoximeter bereits vorhanden</German>
+            <Polish>Pulsoksymetr jest już założony</Polish>
             <Spanish>El oxímetro de pulso ya está conectado</Spanish>
             <Chinese>心率監測器已經連接了</Chinese>
             <Czech>Pulzní oxymetr je již připojen</Czech>
@@ -147,7 +141,7 @@
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log">
             <English>Pulse Oximeter: HR: %1 Sp02: %2</English>
-            <German>Pulseoximeter: HR: %1 SpO2: %2</German>
+            <German>Pulsoximeter: HR: %1 SpO2: %2</German>
             <Polish>Pulsoksymetr: HR: %1 Sp02: %2</Polish>
             <Spanish>Oxímetro de pulso: HR: %1 Sp02: %2</Spanish>
             <Chinese>心率監測器: 心率: %1 血氧量: %2</Chinese>
@@ -159,8 +153,8 @@
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
-            <German>%1 hat Pulseoximeter angelegt</German>
-            <Polish>%1 podłączył Pulsoksymetr</Polish>
+            <German>%1 hat Pulsoximeter angelegt</German>
+            <Polish>%1 założył Pulsoksymetr</Polish>
             <Spanish>%1 conectado al Oxímetro de pulso</Spanish>
             <Chinese>%1 連接著心率監測器</Chinese>
             <Czech>%1 připojený Pulzní oxymetr</Czech>
@@ -186,7 +180,7 @@
                 %1sufficiently ventilated?
                 %1Sp02 over 70% -&gt; Yes
                 %1Sp02 under 70% -&gt; No -&gt; ass. Breathing</English>
-            <German>Atmung - Breathing
+            <German>Beatmung
                 %1Ausreichend belüftet?
                 %1SpO2 über 70% -&gt; Ja
                 %1SpO2 unter 70% -&gt; Nein -&gt; ass. Beatmung</German>
@@ -211,13 +205,13 @@
                 %1Sp02 넘는다 70% -&gt; 네
                 %1Sp02 아래 70% -&gt; 아니요 -&gt; ass. 호흡</Korean>
             <French>Respiration
-				%1suffisamment ventilé?
-				%1SpO2 au delà 70% -&gt; Oui
-				%1SpO2 sous 70% -&gt; Non -&gt; ass. Respiration</French>
+				        %1suffisamment ventilé?
+				        %1SpO2 au delà 70% -&gt; Oui
+				        %1SpO2 sous 70% -&gt; Non -&gt; ass. Respiration</French>
             <Turkish>Nefes
-				%1yeterince havalandırıldı mı?
-				%1Sp02 70% 'in üzerinde -> Evet
-				%1Sp02 70% 'in altında -> Hayır -> eşek. Nefes</Turkish>
+				        %1yeterince havalandırıldı mı?
+				        %1Sp02 70% 'in üzerinde -&gt; Evet
+				        %1Sp02 70% 'in altında -&gt; Hayır -&gt; eşek. Nefes</Turkish>
             <Italian>Respirazione
                 %1Sufficientemente ventilato?
                 %1SpO2 sopra 70% -&gt; Si
@@ -225,7 +219,7 @@
         </Key>
         <Key ID="STR_kat_breathing_hint_tip">
             <English>If you saved the airway with a larynxtube skip this</English>
-            <German>Falls du die Atemwege mit einem Laryntubus sicherst überspring diesen Schritt</German>
+            <German>Falls du die Atemwege mit einem Larynxtubus sicherst überspring diesen Schritt</German>
             <Polish>Jeżeli udrożniłeś drogi oddechowe przy pomocy rurki krtaniowej, omiń to.</Polish>
             <Spanish>Si trataste las vías aéreas con un tubo laríngeo, omite esto</Spanish>
             <Chinese>如果妳已經使用喉管暢通的話那就跳過這個。</Chinese>
@@ -263,7 +257,7 @@
             <English>1x Pneumothorax</English>
             <German>1x Pneumothorax</German>
             <Polish>1x Odma płucna</Polish>
-            <Spanish>1x PNeumotórax</Spanish>
+            <Spanish>1x Pneumotórax</Spanish>
             <Chinese>1等氣胸</Chinese>
             <Czech>1x Pneumotorax</Czech>
             <Korean>1x 기흉</Korean>
@@ -297,7 +291,7 @@
         </Key>
         <Key ID="STR_kat_breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
-            <German>Chest Seal ist so konzipiert, dass offene Brustwunden in den meisten Fällen behandelt, versiegelt und wieder verschlossen werden.</German>
+            <German>Das Chest Seal ist so konzipiert, dass offene Brustwunden in den meisten Fällen behandelt, versiegelt und wieder verschlossen werden.</German>
             <Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach. Leczy odmę płucną.</Polish>
             <Spanish>Chest Seal es un parche diseñado para tratar, sellar y resellar heridas de pecho abierto, bajo la mayoría de circustancias.</Spanish>
             <Chinese>臨時氣胸密封貼在大多數情況下用途於治癒、密封或者二度密封因為胸腔受傷破裂導致的氣胸</Chinese>
@@ -309,7 +303,7 @@
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_PULSEOXIMETER">
             <English>Allow Pulseoximeter</English>
-            <German>Pulseoximeter erlauben</German>
+            <German>Pulsoximeter erlauben</German>
             <Polish>Zezwalaj na pulsoksymetr</Polish>
             <Spanish>Permitir oxímetro de pulso</Spanish>
             <Chinese>允許脈搏血氧儀</Chinese>
@@ -321,7 +315,7 @@
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_PULSEOXIMETER">
             <English>Training level required to use a Pulseoximeter</English>
-            <German>Benötigtes Training Level um ein Pulseoximeter zu nutzen</German>
+            <German>Benötigtes Training Level um ein Pulsoximeter zu nutzen</German>
             <Polish>Poziom wyszkolenia wymagany do korzystania z pulsoksymetru</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar un oxímetro de pulso</Spanish>
             <Chinese>使用脈搏血氧儀所需的培訓水平</Chinese>
@@ -332,39 +326,42 @@
             <Italian>Livello d'addestramento rischiesto per utilizzare il pulsossimetro</Italian>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_CHESTSEAL">
-            <English>Allow Chestseal</English>
-            <German>Chestseal erlauben</German>
-            <Polish>Pozwól na użycie Chestseal</Polish>
-            <Spanish>Permitir Chestseal</Spanish>
+            <English>Allow Chest Seal</English>
+            <German>Chest Seal erlauben</German>
+            <Polish>Pozwól na użycie Chest Seal</Polish>
+            <Spanish>Permitir Chest Seal</Spanish>
             <Chinese>允許胸部</Chinese>
             <Czech>Povolit hrudní krytí</Czech>
             <Korean>기흉치료 패드 허가</Korean>
             <French>Autoriser le pansement thoracique</French>
-            <Turkish>Chestseal'a izin ver</Turkish>
-            <Italian>Permetti Chestseal</Italian>
+            <Turkish>Chest Seal'a izin ver</Turkish>
+            <Italian>Permetti Chest Seal</Italian>
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_CHESTSEAL">
-            <English>Training level required to use a Chestseal</English>
-            <German>Benötigtes Training Level um ein Chestseal zu nutzen</German>
-            <Polish>Poziom wyszkolenia wymagany do korzystania z Chestseal'a</Polish>
-            <Spanish>Nivel de entrenamiento requerido para usar un Chestseal</Spanish>
+            <English>Training level required to use a Chest Seal</English>
+            <German>Benötigtes Training Level um ein Chest Seal zu nutzen</German>
+            <Polish>Poziom wyszkolenia wymagany do korzystania z Chest Seal'a</Polish>
+            <Spanish>Nivel de entrenamiento requerido para usar un Chest Seal</Spanish>
             <Chinese>使用胸膜所需的訓練水平</Chinese>
             <Czech>Úroveň výcviku nutná k použití hrudního krytí</Czech>
             <Korean>기흉치료 패드 사용에 필요한 의료레벨 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser un pansement thoracique</French>
-            <Turkish>Chestseal kullanmak için gerekli eğitim seviyesi</Turkish>
-            <Italian>Livello d'addestramento rischiesto per utilizzare il Chestseal</Italian>
+            <Turkish>Chest Seal kullanmak için gerekli eğitim seviyesi</Turkish>
+            <Italian>Livello d'addestramento rischiesto per utilizzare il Chest Seal</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_SELF_CHESTSEAL">
+            <English>Allow Chest Seal self treatment</English>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_STABLE_SPO2">
-            <English>Stable Spo2 value to gain consciousness</English>
-            <German>Stabiler Spo2-Wert, um Bewusstsein zu erlangen</German>
+            <English>Stable SpO2 value to gain consciousness</English>
+            <German>Stabiler SpO2-Wert, um Bewusstsein zu erlangen</German>
             <Polish>Stabilna wartość SpO2 żeby odzyskać przytomność</Polish>
-            <Spanish>Valor estable de Spo2 para ganar conciencia</Spanish>
-            <Chinese>穩定的Spo2值以提高意識</Chinese>
-            <Czech>Stabilní hodnota Spo2 pro získání vědomí</Czech>
-            <Korean>의식을 얻기위한 안정적인 Spo2 값</Korean>
+            <Spanish>Valor estable de SpO2 para ganar conciencia</Spanish>
+            <Chinese>穩定的SpO2值以提高意識</Chinese>
+            <Czech>Stabilní hodnota SpO2 pro získání vědomí</Czech>
+            <Korean>의식을 얻기위한 안정적인 SpO2 값</Korean>
             <French>Valeur stable de SpO2 requise pour reprendre conscience</French>
-            <Turkish>Bilinç kazanmak için gerekli Spo2 değeri</Turkish>
+            <Turkish>Bilinç kazanmak için gerekli SpO2 değeri</Turkish>
             <Italian>Valore stabile di Sp02 per riprendere conoscienza</Italian>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_STABLE_SPO2">
@@ -381,13 +378,13 @@
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax_display">
             <English>Drain Fluid</English>
-            <German>Entlastungspunktion Nadel</German>
-            <Spanish>Descompresión con aguja</Spanish>
+            <German>Flüssigkeit ablassen</German>
+            <Spanish>Drenar fluido</Spanish>
             <Polish>Drenaż opłucnej</Polish>
             <Chinese>针减压</Chinese>
             <Czech>Dekompresní jehla</Czech>
             <Korean>바늘 감압</Korean>
-            <French>Aiguille de décompression</French>
+            <French>Aspirer le fluide</French>
             <Turkish>Sıvıyı Boşaltın</Turkish>
             <Italian>Drenare il liquido</Italian>
         </Key>
@@ -404,20 +401,20 @@
             <Italian>%1 ha trattato un emopneumotorace</Italian>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax_mm">
-            <English>1x Hemothorax</English>
-            <German>1x Hämatothorax</German>
+            <English>1x Hemopneumothorax</English>
+            <German>1x Hämatopneumothorax</German>
             <Polish>1x Krwiak opłucnej</Polish>
-            <Spanish>1x Hemothorax</Spanish>
-            <Chinese>1血气胸</Chinese>
-            <Czech>1x Hemotorax</Czech>
-            <Korean>1x 혈기 흉</Korean>
-            <French>1x Hemothorax</French>
-            <Turkish>1x Hemotoraks</Turkish>
-            <Italian>1x Emotorace</Italian>
+            <Spanish>1x Hemoneumotórax</Spanish>
+            <Chinese>血气胸</Chinese>
+            <Czech>1x Hemopneumotorax</Czech>
+            <Korean>1x 혈기흉</Korean>
+            <French>1x Hémopneumothorax</French>
+            <Turkish>1x hemopnömotoraks</Turkish>
+            <Italian>1x Emopneumotorace</Italian>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_display">
             <English>Needle Decompression</English>
-            <German>Entlastungspunktion Nadel</German>
+            <German>Nadel Dekompression</German>
             <Spanish>Descompresión con aguja</Spanish>
             <Polish>Igła dekompresyjna</Polish>
             <Chinese>针减压</Chinese>
@@ -429,7 +426,7 @@
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax">
             <English>%1 treated a Tension Pneumothorax</English>
-            <German>%1 hat einen Hämatopneumothorax behandelt</German>
+            <German>%1 hat einen Spannungspneumothorax behandelt</German>
             <Spanish>%1 tratado un Hemopneumothorax</Spanish>
             <Polish>%1 wyleczył Odmę prężną</Polish>
             <Chinese>%1 治疗了血气胸</Chinese>
@@ -441,7 +438,7 @@
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
-            <German>1x Hämatothorax</German>
+            <German>1x Spannungspneumothorax</German>
             <Polish>1x Odma prężna</Polish>
             <Spanish>1x Hemothorax</Spanish>
             <Chinese>1血气胸</Chinese>
@@ -465,7 +462,7 @@
         </Key>
         <Key ID="STR_kat_breathing_aatKit_desc">
             <English>The Advanced Airway Treatment Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
-            <German>Das Erweiterte Atemwegsbehandlung Kit ist ein Einweg-Kit zur Behandlung fortgeschrittener Atemwegserkrankungen wie Hämopneumothorax</German>
+            <German>Das Erweiterte Atemwegsbehandlung Kit ist ein Einweg-Kit zur Behandlung fortgeschrittener Atemwegserkrankungen wie Hämatopneumothorax</German>
             <Polish>"Zaawansowany zestaw do leczenia dróg oddechowych" to zestaw jednorazowego użytku przeznaczony do leczenia zaawansowanych chorób dróg oddechowych, takich jak krwiak opłucnej lub odmę prężną.</Polish>
             <Spanish>El kit de tratamiento avanzado de las vías respiratorias es un kit de un solo uso diseñado para tratar afecciones avanzadas de las vías respiratorias, como el hemoneumotórax.</Spanish>
             <Chinese>高級氣道治療套件是一次性使用的套件，用於治療氣道血氣胸等高級氣道疾病</Chinese>
@@ -477,7 +474,7 @@
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemothorax / Tension Pneumothorax Chance</English>
-            <German>Hämatopneumothorax Chance</German>
+            <German>Hämatopneumothorax / Spannungspneumothorax Chance</German>
             <Polish>Szansa na wystąpienie krwiaka opłucnej lub odmy prężnej</Polish>
             <Spanish>Posibilidad de hemoneomotórax</Spanish>
             <Chinese>血胸胸機會</Chinese>
@@ -488,8 +485,8 @@
             <Italian>Probabilità di un emo/pneumotorace iperteso</Italian>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
-            <English>The percentage chance that a patient will suffer from a hemothorax or tension pneumothorax after they are treated for a pneumothorax. Treatment requires the draining of fluids with the use of an AAT Kit.</English>
-            <German>Die prozentuale Chance das ein Patient einen Hämatothorax zur selben Zeit wie ein Pneumothorax bekommt. Die Behandlung benötigt das Geben von Flüssigkeit und das AAT Kit.</German>
+            <English>The percentage chance that a patient will suffer from a hemopneumotorax or tension pneumothorax after they are treated for a pneumothorax. Treatment requires the draining of fluids with the use of an AAT Kit.</English>
+            <German>Die prozentuale Chance das ein Patient einen Hämatothorax oder einen Spannungspneumothorax bekommt. Die Behandlung benötigt das entfernen von Flüssigkeit und das AAT Kit.</German>
             <Polish>Procentowa szansa, że pacjent będzie cierpieć na krwiaka opłucnej lub odmę prężną w tym samym czasie, gdy cierpi na odmę płucną. Zabieg wymaga drenażu opłucnej za pomocą zestawu AAT.</Polish>
             <Spanish>El porcentaje de probabilidad de que un paciente sufra un hemotórax al mismo tiempo que padece un neumotórax. El tratamiento requiere el drenaje de líquidos con el uso de un kit AAT.</Spanish>
             <Chinese>患者患氣胸的同時患上血胸的機會百分比。 處理需要使用AAT套件排出流體。</Chinese>
@@ -501,7 +498,7 @@
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemothorax / Tension Pnuemothorax Treament Minimum Level</English>
-            <German>Hämatopneumothorax minimales Medic Level</German>
+            <German>Hämatopneumothorax / Spannungspneumothorax minimales Medic Level</German>
             <Polish>Minimalny poziom wyszkolenia do leczenia krwiaka opłucnej lub odmy prężnej</Polish>
             <Spanish>Nivel mínimo del tratamiento del hemoneumotórax</Spanish>
             <Chinese>血氣胸治療最低水平</Chinese>
@@ -513,7 +510,7 @@
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to perform the Needle Decompression and Drain Fluids treatment actions, used to treat Hemothorax or Tension Pneumothorax.</English>
-            <German>Das minimale Medic Level das benötigt wird um das AAT Kit nutzen zu können. Dieses wird für die Behandlung eines Hämatopneumothorax benutzt.</German>
+            <German>Das minimale Medic Level das benötigt wird um das AAT Kit nutzen zu können. Dieses wird für die Behandlung eines Hämatopneumothorax oder Spannungspneumothorax benutzt.</German>
             <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie wykonać leczenie igłą dekompresyjną i drenaż opłucnej,  stosowane w leczeniu krwiaka opłucnej lub odmy prężnej.</Polish>
             <Spanish>El nivel médico mínimo requerido para que alguien pueda realizar la acción del tratamiento de descompresión con aguja, que se utiliza para tratar el hemoneumotórax.</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
@@ -525,7 +522,7 @@
         </Key>
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
             <English>Pneumothorax Damage Threshold</English>
-            <German>Das minimale Medic Level das benötigt wird um das AAT Kit nutzen zu können. Dieses wird für die Behandlung eines Hämatopneumothorax benutzt.</German>
+            <German>Schadensschwellwert Pneumothorax</German>
             <Polish>Próg obrażeń, aby wystąpiła odma płucna</Polish>
             <Spanish>El nivel médico mínimo requerido para que alguien pueda realizar la acción del tratamiento de descompresión con aguja, que se utiliza para tratar el hemoneumotórax.</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
@@ -537,7 +534,7 @@
         </Key>
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION">
             <English>The amount of damage in a single impact, on a scale of 0 to 1, that needs to occur before there is a chance of pneumothorax. Lower values means that pneumothorax is more likely to occurr. Setting the value very low, or to zero, may cause unexpected behavior or pneumothorax from unexpected injuries.</English>
-            <German>Das minimale Medic Level das benötigt wird um das AAT Kit nutzen zu können. Dieses wird für die Behandlung eines Hämatopneumothorax benutzt.</German>
+            <German>Die Höhe des Schadens bei einem einzigen Aufprall, welcher auf einer Skala von 0 bis 1 auftreten muss, bevor die Chance eines Pneumothoraxes besteht. Niedrigere Werte bedeuten, dass ein Pneumothorax wahrscheinlicher ist. Wird der Wert sehr niedrig oder auf Null gesetzt, kann dies zu unerwartetem Verhalten oder zu einem Pneumothorax aufgrund unerwarteter Verletzungen führen.</German>
             <Polish>Poziom obrażeń w jednym uderzeniu w skali od 0 do 1, który musi wystąpić, zanim zaistnieje odma płucna. Niższa wartość skutkuje większą szansą wystąpienia odmy. Ustawienie wartości bliskiej lub równej zeru może spowodować nieoczekiwane zachowanie lub skutkować uzyskaniem odmy płucnej od niewłaściwych ran.</Polish>
             <Spanish>El nivel médico mínimo requerido para que alguien pueda realizar la acción del tratamiento de descompresión con aguja, que se utiliza para tratar el hemoneumotórax.</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
@@ -546,6 +543,126 @@
             <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression AAT.</French>
             <Turkish>Pnömotoraks olasılığı olmadan önce meydana gelmesi gereken, 0 ila 1 ölçeğinde tek bir darbede hasar miktarı. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya sıfır olarak ayarlanması, beklenmedik yaralanmalardan kaynaklanan beklenmedik davranışlara veya pnömotoraksa neden olabilir.</Turkish>
             <Italian>Il danno in un singolo impatto, in una scala da 0 a 1, richiesto prima che si abbia la possibilità di uno pneumotorace. Valori più bassi rendono il pneumotorace più frequente. Valori molto bassi, o lo 0, possono causare comportamenti inaspettati o pneumotorace da ogni ferita.</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore">
+            <English>Hardcore pneumothorax</English>
+            <Polish>Trudna odma płucna</Polish>
+            <German>Erweitertes Pneumothoraxsystem</German>
+            <Spanish>Neumotórax intenso</Spanish>
+            <Chinese>硬核气胸</Chinese>
+            <Czech>Obtížný pneumotorax</Czech>
+            <Korean>하드코어 기흉</Korean>
+            <French>Pneumothorax intense </French>
+            <Turkish>sert pnömotoraks </Turkish>
+            <Italian>Pneumotorace estremo </Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore_DESC">
+            <English>Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might be helpful</English>
+            <Polish>Włącza tryb trudny dla odmy płucnej przez nie pojawianie się w menu medycznym - Stetoskop może być pomocny</Polish>
+            <German>Aktiviert das erweiterte Pneumothoraxsystem, indem der Pneumotorax nicht im medizinischen Menü erscheint - Stethoskop könnte hilfreich sein</German>
+            <Spanish>Habilita la modificación hardcore para el neumotórax al no hacer que aparezca en el menú médico: el estetoscopio podría ser útil</Spanish>
+            <Chinese>通过不让它出现在医疗菜单中来启用气胸的核心模块 - 听诊器可能会有所帮助</Chinese>
+            <Czech>Povoluje obtížný režim pro pneumotorax, který jej nezobrazí ve zdravotnické nabídnce - Stetoskop by mohl být nápomocný</Czech>
+            <Korean>의료 메뉴에 나타나지 않도록 하여 기흉에 대한 하드코어 모드 활성화 - 청진기가 도움이 될 수 있음</Korean>
+            <French>Active le mod hardcore pour le pneumothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile </French>
+            <Turkish>Tıbbi menüde görünmesini sağlamayarak pnömotoraks için hardcore modunu etkinleştirir - Stetoskop yardımcı olabilir </Turkish>
+            <Italian>Abilita la mod hardcore per il pneumotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile </Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_tensionhemothorax_hardcore">
+            <English>Hardcore tension pneumothorax and hemothorax</English>
+            <Polish>Trudna odma prężna i krwiak opłucnej</Polish>
+            <German>Erweitertes System für Spannungspneumothorax / Hemopneumotorax</German>
+            <Spanish>Neumotórax a tensión intenso y hemotórax</Spanish>
+            <Chinese>硬核张力性气胸和血胸</Chinese>
+            <Czech>Obtížný tezní pneumothorax a hemotorax</Czech>
+            <Korean>하드코어 긴장성 기흉과 혈흉</Korean>
+            <French>Pneumothorax et hémothorax sous tension hardcore </French>
+            <Turkish>Sert tansiyon pnömotoraks ve hemotoraks</Turkish>
+            <Italian>Pneumotorace da tensione hardcore ed emotorace</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_tensionhemothorax_hardcore_DESC">
+            <English>Enables hardcore mod for tension and hemothorax by not making it appear in medical menu - Stethoscope might be helpful</English>
+            <Polish>Włącza tryb trudny dla odmy prężnej i krwiaka opłucnej przez nie pojawianie się w menu medycznym - Stetoskop może być pomocny</Polish>
+            <German>Aktiviert das erweiterte System für Spannungspneumothorax / Hemopneumotorax, indem der Spannungspneumothorax / Hemopneumotorax nicht im medizinischen Menü erscheint - Stethoskop könnte hilfreich sein</German>
+            <Spanish>Habilita el modo hardcore para la tensión y el hemotórax al no hacer que aparezca en el menú médico: el estetoscopio podría ser útil</Spanish>
+            <Chinese>通过不在医疗菜单中显示来启用紧张和血胸的硬核模块 - 听诊器可能会有所帮助</Chinese>
+            <Czech>Povoluje obtížný režim pro tezní pneumothorax a hemotorax, který jej nezobrazí ve zdravotnické nabídnce - Stetoskop by mohl být nápomocný</Czech>
+            <Korean>의료 메뉴에 나타나지 않도록 하여 긴장 및 혈흉에 대한 하드코어 모드 활성화 - 청진기가 도움이 될 수 있음</Korean>
+            <French>Active le mod hardcore pour la tension et l'hémothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile</French>
+            <Turkish>Medikal menüde görünmeyerek tansiyon ve hemotoraks için hardcore modu etkinleştirir - Stetoskop yardımcı olabilir</Turkish>
+            <Italian>Abilita la mod hardcore per la tensione e l'emotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_Stethoscope_display">
+            <English>Stethoscope</English>
+            <Polish>Stetoskop</Polish>
+            <German>Stethoskop</German>
+            <Spanish>Fonendoscopio</Spanish>
+            <Chinese>听诊器</Chinese>
+            <Czech>Stetoskop</Czech>
+            <Korean>청진기</Korean>
+            <French>Stéthoscope</French>
+            <Turkish>Stetoskop</Turkish>
+            <Italian>Stetoscopio</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_Stethoscope_desc">
+            <English>Allows you to auscultate lung sounds</English>
+            <Polish>Pozwala na osłuchiwanie płuc</Polish>
+            <German>Erlaubt die Lunge zu untersuchen</German>
+            <Spanish>Le permite auscultar los sonidos pulmonares.</Spanish>
+            <Chinese>可让您听诊肺音</Chinese>
+            <Czech>Umožňuje vyšetřit plíce poslechem</Czech>
+            <Korean>폐음을 청진할 수 있습니다.</Korean>
+            <French>Permet d'ausculter les sons pulmonaires</French>
+            <Turkish>Akciğer seslerini dinlemenizi sağlar</Turkish>
+            <Italian>Consente di auscultare i suoni polmonari </Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_auscultateLung_display">
+            <English>Auscultate Lung Sounds</English>
+            <Polish>Osłuchaj płuca</Polish>
+            <German>Lungengeräusche abhören</German>
+            <Spanish>Auscultar sonidos pulmonares</Spanish>
+            <Chinese>听诊肺音</Chinese>
+            <Czech>Vyšetřit plíce poslechem</Czech>
+            <Korean>폐음 청진</Korean>
+            <French>Ausculter les sons pulmonaires</French>
+            <Turkish>Akciğer Seslerini Dinleyin</Turkish>
+            <Italian>Auscultare i suoni polmonari</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_listening_progress">
+            <English>Listening</English>
+            <Polish>Osłuchiwanie</Polish>
+            <German>Abhören</German>
+            <Spanish>Escuchando</Spanish>
+            <Chinese>听力</Chinese>
+            <Czech>Poslouchám</Czech>
+            <Korean>청취</Korean>
+            <French>Écoute</French>
+            <Turkish>Dinleme</Turkish>
+            <Italian>Ascoltando</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_StethoscopeSoundVolume">
+            <English>Stethoscope Sound Volume</English>
+            <Polish>Głośność Stetoskopu</Polish>
+            <German>Stethoskop Lautstärke</German>
+            <Spanish>Volumen de sonido del estetoscopio</Spanish>
+            <Chinese>听诊器音量</Chinese>
+            <Czech>Hlasitost zvuku Stetoskopu</Czech>
+            <Korean>청진기 사운드 볼륨</Korean>
+            <French>Volume sonore du stéthoscope</French>
+            <Turkish>Stetoskop Ses Seviyesi</Turkish>
+            <Italian>Volume del suono dello stetoscopio</Italian>
+        </Key>
+        <Key ID="STR_kat_breathing_DESCRIPTION_StethoscopeSoundVolume">
+            <English>Determines how loud the thorax sounds are when using Stethoscope</English>
+            <Polish>Określa jak głośne są dźwięki klatki piersiowej podczas używania Stetoskopu</Polish>
+            <German>Bestimmt, wie laut die Thoraxgeräusche bei der Verwendung des Stethoskops sind</German>
+            <Spanish>Determina qué tan fuertes son los sonidos del tórax cuando se usa el fonendoscopio</Spanish>
+            <Chinese>确定使用听诊器时胸部声音的响度</Chinese>
+            <Czech>Určuje jak moc jsou torax zvuky hlasité při používání stetoskopu</Czech>
+            <Korean>청진기를 사용할 때 흉부 소리의 크기를 결정합니다.</Korean>
+            <French>Détermine à quel point les sons du thorax sont forts lors de l'utilisation du stéthoscope</French>
+            <Turkish>Stetoskop kullanırken toraks seslerinin ne kadar yüksek olduğunu belirler</Turkish>
+            <Italian>Determina quanto sono forti i suoni del torace quando si utilizza lo stetoscopio</Italian>
         </Key>
     </Package>
 </Project>

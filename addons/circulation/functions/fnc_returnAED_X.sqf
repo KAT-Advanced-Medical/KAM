@@ -17,14 +17,23 @@
  * Public: No
  */
 
-params ["_player", "_patient"];
+params ["_player", "_patient", "_AEDreturn"];
 private _output = localize LSTRING(X_Action_Remove);
 
 _patient setVariable [QGVAR(X), false, true];
-_player setVariable [QGVAR(use), false, true];
-_player setVariable [QGVAR(returnedAED), true, true];
-[_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 
-[_player, "kat_X_AED"] call ace_common_fnc_addToInventory;
+if (_patient getVariable ["ace_medical_heartRate", 0] >= 40) then {
+    _patient setVariable [QGVAR(asystole), 0, true];
+};
+
+if (_AEDreturn == true) then {
+    _player setVariable [QGVAR(use), false, true];
+    [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
+    [_player, "kat_X_AED"] call ace_common_fnc_addToInventory;
+    _player setVariable [QGVAR(returnedAED), true, true];
+} else {
+    _patient setVariable [QGVAR(AEDvehicle), "", true];
+    _patient setVariable [QGVAR(vehicleTrue), false, true];
+};
 
 true;

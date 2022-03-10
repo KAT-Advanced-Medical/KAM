@@ -1,20 +1,20 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
- * Airway Management for occluding
+ * Author: Mazinski.H
+ * Generic Medication Function
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Medication <STRING>
+ * 2: Item Classname <STRING>
  *
  * Return Value:
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_accuvac;
+ * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_Generic;
  *
- * Public: Yes
+ * Public: No
  */
 
 params ["_medic", "_patient", "_medication"];

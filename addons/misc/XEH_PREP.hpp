@@ -10,3 +10,8 @@ PREP(limitWounds);
 PREP(removeIVbag);
 PREP(stretcher);
 PREP(treatmentIV);
+PREP(handleRespawn);
+PREP(heliStretcherAttach);
+PREP(actionLowerBy10);
+PREP(addActionRaise);
+PREP(heliAddActionDeploy);

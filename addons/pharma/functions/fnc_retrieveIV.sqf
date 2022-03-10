@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: 2LT.Mazinski
- * Opens an IV/IO on a patient and changes the patient's flow variable
+ * Retrieves the IV/IO from a patient and returns additional fluids to the medic.
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorObject] call kat_circulation_fnc_applyIV;
+ * [player, cursorObject] call kat_pharma_fnc_retrieveIV;
  *
  * Public: No
  */
@@ -20,8 +20,8 @@ params ["_medic", "_patient"];
 
 private _site = _patient getVariable [QGVAR(IVsite), 0];
 
-if (GVAR(IVreuse) == true) then {
-    if (_site == 1) then {
+if (GVAR(IVreuse)) then {
+    if (_site isEqualTo 1) then {
         _medic addItem "kat_IO_FAST";
     } else {
         _medic addItem "kat_IV_16";
