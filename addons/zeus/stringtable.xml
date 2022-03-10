@@ -45,6 +45,10 @@
             <English>Change shockable state</English>
             <German>Schockzustand ändern</German>
         </Key>
+        <Key ID="STR_kat_zeus_checkmedical_Module_displayname">
+            <English>Open unit medical menu</English>
+            <German>Medic Menü der Einheit öffnen</German>
+        </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_state">
             <English>State: </English>
             <German>Wert: </German>
