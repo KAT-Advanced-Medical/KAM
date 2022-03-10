@@ -41,6 +41,22 @@
             <English>Change blood group / volume</English>
             <German>Blutgruppe / volumen ändern</German>
         </Key>
+        <Key ID="STR_kat_zeus_shockablestate_Module_displayname">
+            <English>Change shockable state</English>
+            <German>Schockzustand ändern</German>
+        </Key>
+        <Key ID="STR_kat_zeus_shockablestate_Module_state">
+            <English>State: </English>
+            <German>Wert: </German>
+        </Key>
+        <Key ID="STR_kat_zeus_shockablestate_Module_shockable">
+            <English>Shockable (VF/PVT)</English>
+            <German>Schockbar (VF/PVT)</German>
+        </Key>
+        <Key ID="STR_kat_zeus_shockablestate_Module_non_shockable">
+            <English>non-shockable (Asystole)</English>
+            <German>Nicht-Schockbar (Asystolie)</German>
+        </Key>
         <Key ID="STR_kat_zeus_NothingSelected">
             <English>Place on a unit.</English>
             <German>Es wurde nichts ausgewählt.</German>

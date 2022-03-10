@@ -192,3 +192,60 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
         class ButtonCancel: ButtonCancel {};
     };
 };
+
+
+class GVAR(RscAsystoleModule): RscDisplayAttributes {
+    onLoad = QUOTE([ARR_3('onLoad', _this, QQGVAR(RscAsystoleModule))] call FUNC(zeusAttributes));
+    onUnload = QUOTE([ARR_3('onUnload', _this, QQGVAR(RscAsystoleModule))] call FUNC(zeusAttributes));
+    class Controls: Controls {
+        class Background: Background {};
+        class Title: Title {};
+        class Content: Content {
+            class Controls {
+                class changeShockableState: RscControlsGroupNoScrollbars {
+                    onSetFocus = QUOTE(_this call FUNC(ui_changeAsystole));
+                    idc = 26424;
+                    x = 0;
+                    y = 0;
+                    w = W_PART(26);
+                    h = H_PART(1.1); 
+                    class controls {
+                        class Title1: RscText { 
+                            idc = -1;
+                            text = CSTRING(shockablestate_Module_state);
+                            toolTip = "";
+                            x = 0;
+                            y = 0;
+                            w = W_PART(10);
+                            h = H_PART(1);
+                            colorBackground[] = {0,0,0,0.5};
+                        };
+						class ShockableState: RscCombo {
+							idc = 16112;
+                            x = W_PART(10.1);
+                            y = 0;
+							w = W_PART(15.9);
+                            h = H_PART(1);
+							colorBackground[] = {0, 0, 0, 0.7};
+							class Items {
+                                class none {
+                                    text = "";
+                                    default = 1;
+                                };
+								class shockable {
+									text = CSTRING(shockablestate_Module_shockable);
+								};
+								class non_shockable {
+									text = CSTRING(shockablestate_Module_non_shockable);
+								};
+							};
+						};
+                    };
+                };
+    
+            };
+        };
+        class ButtonOK: ButtonOK {};
+        class ButtonCancel: ButtonCancel {};
+    };
+};

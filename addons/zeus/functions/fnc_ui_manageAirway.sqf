@@ -102,7 +102,7 @@ private _fnc_onConfirm = {
     
 	_unit setVariable ["KAT_medical_airwayStatus", round(_sliderValue), true]; 
     if(_curSpO2Val == 100) then { 
-        [_unit] call EFUNC(breathing,handleBreathing); 
+        [_unit] call EFUNC(breathing,handleBreathing);
     };
 
 };

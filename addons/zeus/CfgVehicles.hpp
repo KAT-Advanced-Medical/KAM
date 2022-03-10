@@ -25,4 +25,10 @@ class cfgVehicles {
 		curatorInfoType = QGVAR(RscChangeBloodType);
 	};
 
+	class GVAR(asystole_module): GVAR(baseModule) {
+		curatorCanAttach = 1;
+		displayName = CSTRING(shockablestate_Module_displayname);
+		curatorInfoType = QGVAR(RscAsystoleModule);
+	};
+
 };
