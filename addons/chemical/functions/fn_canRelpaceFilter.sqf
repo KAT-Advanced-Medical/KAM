@@ -1,0 +1,19 @@
+#include "script_component.hpp"
+/*
+ * Author: DiGii
+ * 
+ * Arguments:
+ * 0: Target <OBJECT>
+ *
+ * Return Value:
+ * BOOL
+ *
+ * Example:
+ * [player,] call kat_chemical_fnc_canReplaceFilter;
+ *
+ * Public: No
+*/
+
+params["_target"];
+
+goggles _target in KAT_AVAIL_GASMASK && 'kat_gasmaskFilter' in items _target

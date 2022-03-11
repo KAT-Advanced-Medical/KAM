@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="chemical">
+        <Key ID="STR_kat_chemical_SETTING_AVAIL_GASMASK">
+            <Original>Accepted gas masks</Original>
+            <German>Akzeptierte Gasmasken</German>
+        </Key>
+        <Key ID="STR_kat_chemical_SETTING_AVAIL_GASMASK_DISC">
+            <Original>Enter here the classname of the masks that should work with the system.</Original>
+            <German>Hier die classname der Masken eintragen die mit dem System funktionieren sollen.</German>
+        </Key>
+        <Key ID="STR_kat_chemical_SETTING_GASMASK_DURABILITY">
+            <Original>Gas masks durability</Original>
+            <German>Gasmasken Haltbarkeit</German>
+        </Key>
+        <Key ID="STR_kat_chemical_SETTING_GASMASK_DURABILITY_DISC">
+            <Original>Determines how long you can stand in the gas with a gas mask without getting infected.</Original>
+            <German>Bestimmt wie lange man mit einer Gasmaske im Gas stehen kann ohne infiziert zu werden.</German>
+        </Key>
+        <Key ID="STR_kat_chemical_SETTING_infection_time">
+            <Original>Time until infection</Original>
+            <German>Zeit bis Infektion</German>
+        </Key>
+        <Key ID="STR_kat_chemical_SETTING_infection_time_disc">
+            <Original>Time you can stand in the gas before you get infected or need a gas mask.</Original>
+            <German>Zeit die man im Gas stehen kann bevor man infiziert wird bzw eine Gasmaske benötigt.</German>
+        </Key>
+        <Key ID="STR_kat_chemical_SETTING_affectAI">
+            <Original>Gas Affects AI</Original>
+            <German>Gas betrifft KI</German>
+        </Key>
+        <Key ID="STR_kat_chemical_SETTING_affectAI_disc">
+            <Original>Determines if AI is affected by gas (If you are running this on a local server this can cause perfomance problems)</Original>
+            <German>Betimmt ob KI von Gas betroffen ist(Wenn dies auf einem lokalen Server ausgeführt wird, kann es zu Leistungsproblemen führen)</German>
+        </Key>
+
+        <Key ID="STR_kat_chemical_GasFilterItem">
+            <Original>Gas mask filter</Original>
+            <German>Gasmaskenfilter</German>
+        </Key>
+        <Key ID="STR_kat_chemical_GasFilterItem_desc">
+            <Original></Original>
+            <German></German>
+        </Key>
+        <Key ID="STR_kat_chemical_sealantItem">
+            <Original>Sealant tube</Original>
+            <German>Dichtmitteltube</German>
+        </Key>
+        <Key ID="STR_kat_chemical_sealantItem_desc">
+            <Original>Sealant which is used to seal objects when e.g. a toxic substance leaks out</Original>
+            <German>Dichtmittel welches zum abdichen von objekten genutzt wird wenn z.b. ein giftstoff austritt</German>
+        </Key>
+        <Key ID="STR_kat_chemical_AntidotItem">
+            <Original>Antidot-Autoinjector</Original>
+        </Key>
+        <Key ID="STR_kat_chemical_AntidotItem_desc">
+            <Original>Multifunctional antidote that treats many types of poisoning. WARNING: It is not compatible with morphine!</Original>
+            <German>Multifunktionales Gegengift welches viele Arten von Vergiftung behandelt. ACHTUNG: Es verträgt sich schlecht in Verbindung mit Morphium!</German>
+        </Key>
+        <Key ID="STR_kat_chemical_AntidotItem_action">
+            <Original>Inject antidote</Original>
+            <German>Antidot injizieren</German>
+        </Key>
+        <Key ID="STR_kat_chemical_AntidotItem_action_progress">
+            <Original>Inject antidote...</Original>
+            <German>Antidot injizieren...</German>
+        </Key>
+        <Key ID="STR_kat_chemical_giveGasMask_action">
+            <Original>Put on gas mask</Original>
+            <German>Gasmaske aufsetzen</German>
+        </Key>
+        <Key ID="STR_kat_chemical_giveGasMask_progress">
+            <Original>Put on gas mask...</Original>
+            <German>Setzte gasmaske auf...</German>
+        </Key>
+        <Key ID="STR_kat_chemical_CheckGasMaskDurability">
+            <Original>Check gas mask durability</Original>
+            <German>Haltbarkeit der Gasmaske prüfen</German>
+        </Key>
+        <Key ID="STR_kat_chemical_ChangeGasMaskFilter">
+            <Original>Replace gas masks filter</Original>
+            <German>Gasmasken Filter austauschen</German>
+        </Key>
+        <Key ID="STR_kat_chemical_GasModule_Displayname">
+            <Original>Create contaminated area / object</Original>
+            <German>Kontaminierten Bereich / Gegenstand erstellen</German>
+        </Key>
+        <Key ID="STR_kat_chemical_GasModule_description">
+            <Original>Raduis around the module which is filled with gas.</Original>
+            <German>Raduis um das Modul welcher mit Gas gefüllt ist.</German>
+        </Key>
+        <Key ID="STR_kat_chemical_GasModule_min_radius_dcs">
+            <Original>The Minimal Range describes the area around the module where the gas is most lethal</Original>
+            <German>Der Minimal Rangebeschreibt den bereich um das modul herum in dem das Gas am tötlichsten ist</German>
+        </Key>
+        <Key ID="STR_kat_chemical_GasModule_max_radius_dcs">
+            <Original>The Maximum Range is a range around the Minimal Range where the gas is less lethal and you have a longer chance of survival.(distance from module to outer ring)</Original>
+            <German>Der Maximum Rangeist ein bereich um den Minimal Range in dem das Gas weniger tötlich ist und man eine längere überlebens chance hat. (distanz von modul bis äußerer ring)</German>
+        </Key>
+        <Key ID="STR_kat_chemical_sealLeak">
+            <Original>Seal leack</Original>
+            <German>Leck versiegeln</German>
+        </Key>
+        <Key ID="STR_kat_chemical_GasModule_SealLeak">
+            <Original>Seal leak</Original>
+            <German>Leck abdichten</German>
+        </Key>
+        <Key ID="STR_kat_chemical_GasModule_Needbigger">
+            <Original>Minimal Range need to be less than Maximum Range!</Original>
+            <German>Minimal Range muss kleiner als Maximum Range sein!</German>
+        </Key>
+        <Key ID="STR_kat_chemical_Intoxikation">
+            <Original>Intoxication</Original>
+            <German>Intoxikation</German>
+        </Key>
+    </Package>
+</Project>
