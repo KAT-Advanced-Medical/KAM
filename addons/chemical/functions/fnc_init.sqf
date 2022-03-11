@@ -28,9 +28,9 @@ if(hasInterface) then {
 	[] spawn FUNC(chemDetector);
 	[player] spawn FUNC(breathing);
 	kat_lastpoisend = 0;
-	player addEventHandler ["killed", {call FUNC(handleRespawn)}];
+	player addEventHandler ["killed", {call kat_chemical_fnc_handleRespawn}];
 	[] spawn {
-		call FUNC(handleRespawn);
+		call kat_chemical_fnc_handleRespawn;
 	};
 	player setVariable["kat_gas_timeleft",missionNamespace getVariable ["kat_medical_infectTime",60],true];
 	player setVariable ["kat_medical_enteredPoisen",false,true];

@@ -6,7 +6,7 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_CHEM "KAT - Chemical"
+#define CBA_SETTINGS_CHEM "KAT - ADV Medical: Chemical"
 
 [
     QGVAR(avail_gasmask),

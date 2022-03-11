@@ -26,7 +26,7 @@ class RscDisplayAttributes {
     };
 };
  
-class kat_RscAtributeRadius: RscControlsGroupNoScrollbars {
+class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
     onSetFocus = QUOTE(_this call FUNC(AttributeRadius));
     idc = 26422;
     x = 0;
@@ -117,7 +117,7 @@ class kat_RscAtributeRadius: RscControlsGroupNoScrollbars {
 };
 
 
-class kat_RscGasModul: RscDisplayAttributes {
+class GVAR(kat_RscGasModul): RscDisplayAttributes {
     onLoad = QUOTE([ARR_3('onLoad', _this, QQGVAR(kat_RscGasModul))] call FUNC(zeusAttributes));
     onUnload = QUOTE([ARR_3('onUnload', _this, QQGVAR(kat_RscGasModul))] call FUNC(zeusAttributes));
     
@@ -126,7 +126,7 @@ class kat_RscGasModul: RscDisplayAttributes {
         class Title: Title {};
         class Content: Content {
             class Controls {
-                class radius: kat_RscAtributeRadius {};
+                class radius: GVAR(kat_RscAtributeRadius) {};
             };
         };
         class ButtonOK: ButtonOK {

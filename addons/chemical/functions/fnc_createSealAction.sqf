@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 ///////////////////
 
 //////////////////
@@ -5,7 +6,7 @@ params["_object"];
 
 private _action = [
 	"kat_gas_interaction",
-	LLSTRING(sealLeak),
+	localize LSTRING(sealLeak),
 	"",
 	{
 		params["_target", "_player"];
