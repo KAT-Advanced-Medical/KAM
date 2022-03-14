@@ -20,7 +20,7 @@ private _action = [
 			{
 				params["_args"];
 				_args params ["_target","_player"];
-				_target setVariable ["kat_gas_active", false,true];
+				_target setVariable ["kat_chemical_gas_active", false,true];
 				[_target, 0, ["ACE_MainActions", "kat_gas_interaction"]] call ace_interact_menu_fnc_removeActionFromObject;
 				[_player, "kat_sealant"] call ace_common_fnc_useItem;
 			},

@@ -113,5 +113,21 @@
             <Original>Intoxication</Original>
             <German>Intoxikation</German>
         </Key>
+        <Key ID="STR_kat_chemical_GasBox_Displayname">
+            <Original>[ACE] 82mm Gas Rounds Box</Original>
+            <German>[ACE] 82mm Gaspatronenkiste</German>
+        </Key>
+        <Key ID="STR_kat_chemical_M7A3_DcsShort">
+            <Original>The M7A3 CS gas grenade is a non-lethal tear gas grenade that causes severe burning of the mucous membranes and eyes on contact.</Original>
+            <German>Die M7A3 CS Gas Granate ist eine nicht tödliche Tränen Gas Granate die bei Kontakt starkes Brennen der Schleimhäute und Augen auslöst.</German>
+        </Key>
+        <Key ID="STR_kat_chemical_TriWire_Gas_Name">
+            <Original>Tripwire Gas</Original>
+            <German>Stolperdraht-Gas</German>
+        </Key>
+        <Key ID="STR_kat_chemical_TriWire_Gas_Desc">
+            <Original>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</Original>
+            <German>Typ: Stolperdraht-Gas - Versprüht bei Auslösung ein gifitges Gas.&lt;br /&gt;Ladungen: 1&lt;br /&gt;Benutzt auf: Boden</German>
+        </Key>
     </Package>
 </Project>

@@ -6,7 +6,7 @@
 params ["_logic","_pos","_radius_max","_radius_min","_gastype"];
 if(_gastype == "") then {_gastype = "Toxic"};
 if(_radius_min == 0) then {_radius_min = _radius_max / 2};
-_logic setVariable ["kat_gas_active", true,true];
+_logic setVariable ["kat_chemical_gas_active", true,true];
 _logic setVariable ["kat_gas_playerArr",[],true];
 _logic setVariable ["kat_pos",_pos,true];
 waitUntil{time > 5};
@@ -56,8 +56,8 @@ private _checkplayers = [{
 [{
 	params["_param","_pfhHandle"];
 	_param params["_logic","_checkplayers"];
-	if (isNull _logic || !alive _logic || !(_logic getVariable ["kat_gas_active",false])) exitWith {
-		_logic setVariable ["kat_gas_active", false, true];
+	if (isNull _logic || !alive _logic || !(_logic getVariable ["kat_chemical_gas_active",false])) exitWith {
+		_logic setVariable ["kat_chemical_gas_active", false, true];
 		[_checkplayers] call CBA_fnc_removePerFrameHandler;
 		[_pfhHandle] call CBA_fnc_removePerFrameHandler;
 	};

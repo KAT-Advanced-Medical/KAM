@@ -186,4 +186,51 @@ class cfgVehicles {
         functionPriority = 1;
         isGlobal = 1;
     };
+
+
+    class LandVehicle;
+    class StaticWeapon: LandVehicle {
+        class Turrets {
+            class MainTurret;
+        };
+    };
+    class StaticMortar: StaticWeapon {
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {};
+        };
+    };
+    class Mortar_01_base_F: StaticMortar {
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                magazines[] += {"KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI"};
+            };
+        };
+    };
+
+
+    class Box_NATO_AmmoOrd_F;
+    class ACE_Box_82mm_Mo_HE: Box_NATO_AmmoOrd_F {
+        class TransportMagazines;
+    };
+    class ACE_Box_82mm_Mo_Combo: ACE_Box_82mm_Mo_HE {
+        class TransportMagazines: TransportMagazines {
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);
+        };
+    };
+    class ACE_Box_82mm_Mo_Gas: ACE_Box_82mm_Mo_HE {
+        displayName = CSTRING(GasBox_Displayname);
+        class TransportMagazines {
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);
+            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);
+        };
+    };
+
+    class APERSTripMine;
+
+    class KAT_Gas_TripWireMine: APERSTripMine {
+        author = "DiGii";
+        ammo = "KAT_Gas_TripWireMine_Ammo";
+        displayName = CSTRING(TriWire_Gas_Name);
+    };
 };

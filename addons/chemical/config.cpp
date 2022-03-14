@@ -8,14 +8,29 @@ class CfgPatches {
             "kat_Antidot_Item",
             "kat_sealant_Item",
             "kat_module_gas",
-            "kat_module_zeus_gas"
+            "kat_module_zeus_gas",
+            "KAT_Gas_TripWireMine"
         };
         weapons[] = {
             "kat_Antidot",
             "kat_sealant",
-            "kat_gasmaskFilter"
+            "kat_gasmaskFilter",
+            "ACE_mortar_82mm",
+            "KAT_M7A3",
+            "KAT_CAS_M43_Bomb",
+            "KAT_CAS_R_80mm_GAS_POD"
         };
-        magazines[] = { };
+        ammo[] = {
+            "KAT_Gas_TripWireMine_Ammo",
+            "KAT_GASTripEffect",
+            "KAT_GASTrip_SmokeEffect",
+            "KAT_CAS_M43_Ammo",
+            "KAT_CAS_M43_Ammo_sub",
+            "KAT_CAS_R_80mm_GAS_AMMO"
+        };
+        magazines[] = {
+            "KAT_CAS_M43_Mag"
+        };
         requiredAddons[] = {
             "kat_main",
             "cba_settings",
@@ -38,6 +53,10 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgMagazineGroups.hpp"
+#include "CfgAmmo.hpp"
+#include "CfgCloudlets.hpp"
+#include "CfgMagazines.hpp"
 #include "CfgUIGrids.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"

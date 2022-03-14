@@ -26,4 +26,12 @@ PREP(displayGasMaskDur);
 PREP(handleGasMaskDur);
 PREP(changeGasMaskFilter);
 PREP(breathing);
+PREP(addLoadAction);
+PREP(handleFired);
+PREP(createZone);
+PREP(throwGrenade);
+PREP(csGrenadeThrownFuze);
+PREP(GasTripEffect);
+PREP(spawnSmoke);
+PREP(CASCreateGas);
 

@@ -11,7 +11,7 @@ params ["_unit","_logic","_pos","_radius_max","_radius_min","_gastype"];
 		_args params ["_logic","_unit","_pos"];
 		private _posString = toString(_logic getVariable ["kat_pos",[0,0,0]]);
 		private _logicPos = toString(getpos _logic);
-		if!(_logic getVariable["kat_gas_active",false]) then {
+		if!(_logic getVariable["kat_chemical_gas_active",false]) then {
 			if(_unit getVariable["kat_medical_enteredPoisen",false]) then {
 				_unit setVariable["kat_medical_enteredPoisen",false,true];
 				[_handler] call CBA_fnc_removePerFrameHandler;
@@ -23,7 +23,7 @@ params ["_unit","_logic","_pos","_radius_max","_radius_min","_gastype"];
 ]call CBA_fnc_addPerFrameHandler;
  
 
-while{_logic getVariable ["kat_gas_active", false] && !(isNull _logic) && _unit in (_logic getVariable ["kat_gas_playerArr",[]])} do {
+while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) && _unit in (_logic getVariable ["kat_gas_playerArr",[]])} do {
 
 	_pos = _logic getVariable ["kat_pos",[0,0,0]];
 	if(_unit distance _pos <= _radius_max && !(_unit getVariable["kat_medical_enteredPoisen",false]) && !(_unit getVariable ["ACE_isUnconscious",false])) then {
@@ -44,7 +44,7 @@ while{_logic getVariable ["kat_gas_active", false] && !(isNull _logic) && _unit 
 				while {_isinGas} do {
 						private _timeleft = _unit getVariable["kat_gasmask_durability",10];
 						_pos = _logic getVariable ["kat_pos",[0,0,0]];
-						if ( _unit distance _pos > _radius_max || !(_logic getVariable["kat_gas_active",false]) || isNull _logic ) exitWith {
+						if ( _unit distance _pos > _radius_max || !(_logic getVariable["kat_chemical_gas_active",false]) || isNull _logic ) exitWith {
 							_unit setVariable["kat_medical_enteredPoisen",false,true];
 							_isinGas = false;
 						};
@@ -64,7 +64,7 @@ while{_logic getVariable ["kat_gas_active", false] && !(isNull _logic) && _unit 
 							_isinGas = false;
 						};
 
-						if (!(_unit getVariable ["kat_medical_enteredPoisen",false]) || !(_logic getVariable["kat_gas_active",false])) then {
+						if (!(_unit getVariable ["kat_medical_enteredPoisen",false]) || !(_logic getVariable["kat_chemical_gas_active",false])) then {
 							
 							_isinGas = false;
 							_unit setVariable ["kat_medical_enteredPoisen",false];
@@ -106,7 +106,7 @@ while{_logic getVariable ["kat_gas_active", false] && !(isNull _logic) && _unit 
 				};
 
 					
-				if ( _unit distance _pos > _radius_max || !(_logic getVariable["kat_gas_active",false]) || isNull _logic ) exitWith {
+				if ( _unit distance _pos > _radius_max || !(_logic getVariable["kat_chemical_gas_active",false]) || isNull _logic ) exitWith {
 					_unit setVariable["kat_medical_enteredPoisen",false,true];
 					_i = 2;
 				};

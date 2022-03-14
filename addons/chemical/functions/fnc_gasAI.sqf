@@ -9,7 +9,7 @@ private _unitt = _unit;
 	{
 		params["_args","_handler"];
 		_args params ["_logic","_unit","_unitt"];
-		if(!(_logic getVariable["kat_gas_active",false]) || !(alive _unit) || isNull _unit) then {
+		if(!(_logic getVariable["kat_chemical_gas_active",false]) || !(alive _unit) || isNull _unit) then {
 			_unit setVariable["kat_medical_enteredPoisen",false,true];
 			[_handler] call CBA_fnc_removePerFrameHandler;
 		};
@@ -18,7 +18,7 @@ private _unitt = _unit;
 	[_logic,_unit,_unitt]
 ]call CBA_fnc_addPerFrameHandler;
 private _skill = _unit skill "aimingAccuracy";
-while{_logic getVariable ["kat_gas_active", false] && !(isNull _logic) && alive _unit && !(_unit getVariable ["ACE_isUnconscious",false])} do { 
+while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) && alive _unit && !(_unit getVariable ["ACE_isUnconscious",false])} do { 
 	_pos = _logic getVariable ["kat_pos",[0,0,0]];
 	if((_unit distance _pos) <= _radius_max && !(_unit getVariable["kat_medical_enteredPoisen",false])) then {
 		_unit setVariable["kat_medical_enteredPoisen",true,true];
@@ -56,7 +56,7 @@ while{_logic getVariable ["kat_gas_active", false] && !(isNull _logic) && alive 
 				_i = 2;
 			};
 			_pos = _logic getVariable ["kat_pos",[0,0,0]];
-			if ( _unit distance _pos > _radius_max || !(_logic getVariable["kat_gas_active",false]) || isNull _logic ) exitWith {
+			if ( _unit distance _pos > _radius_max || !(_logic getVariable["kat_chemical_gas_active",false]) || isNull _logic ) exitWith {
 				_unit setVariable["kat_medical_enteredPoisen",false,true];
 				_i = 2;
 			};

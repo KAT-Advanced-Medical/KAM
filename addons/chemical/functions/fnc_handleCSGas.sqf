@@ -30,7 +30,7 @@ params ["_logic","_radius"];
 	params ["_param","_handler"];
 	_param params ["_logic","_radius","_unit"];
 	private _pos = _logic getVariable ["kat_pos",[0,0,0]];
-	if ( _unit distance _pos > _radius || !(_logic getVariable["kat_gas_active",false]) || isNull _logic ) exitWith {
+	if ( _unit distance _pos > _radius || !(_logic getVariable["kat_chemical_gas_active",false]) || isNull _logic ) exitWith {
 		_unit setVariable["kat_medical_enteredPoisen",false,true];
 		[_handler] call CBA_fnc_removePerFrameHandler;
 	};
