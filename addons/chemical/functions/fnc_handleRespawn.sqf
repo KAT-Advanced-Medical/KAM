@@ -7,8 +7,8 @@
 	player setVariable ["kat_medical_enteredPoisen",false,true];
 	player setVariable ["kat_gas_timeleft",missionNamespace getVariable ["kat_medical_infectTime",60],true];
 	player setVariable ["kat_medical_poisenType","",true];
-	player setVariable ["kat_medical_airPoisend",false,true];
-	player setVariable ["kat_medical_CS",false,true];
+	player setVariable ["kat_chemical_airPoisend",false,true];
+	player setVariable ["kat_chemical_CS",false,true];
 	player setVariable ["kat_gasmask_durability",10,true];
 
 	"kat_CHEM_DETECTOR" cutRsc ["RscWeaponChemicalDetector", "PLAIN", 1, false];

@@ -9,7 +9,7 @@ params ["_patient", "_bodyPart", "_classname"];
 if (!alive _patient) exitWith {}; 
 
 if(_classname == "Antidot") then {
-		_patient setVariable ["kat_medical_airPoisend",false,true];
+		_patient setVariable ["kat_chemical_airPoisend",false,true];
 		_patient setVariable ["kat_medical_isThreated",true,true];
 		_patient setVariable ["kat_medical_enteredPoisen",false,true];
 		if (_patient getVariable ["KAT_PAIN_EFFECT",0] != 0) then {

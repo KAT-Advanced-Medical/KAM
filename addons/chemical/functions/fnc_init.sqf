@@ -6,8 +6,8 @@
 //INIT Gasmasks
 
 [] spawn {
-	waitUntil {!isNil "kat_medical_avail_gasmask" && time > 1};
-	private _items = missionNamespace getVariable ["kat_medical_avail_gasmask","""G_AirPurifyingRespirator_01_F"""];
+	waitUntil {!isNil "kat_chemical_avail_gasmask" && time > 1};
+	private _items = missionNamespace getVariable ["kat_chemical_avail_gasmask","""G_AirPurifyingRespirator_01_F"""];
 	private _item_arr = [_items,"CfgGlasses"] call FUNC(getList);
 	KAT_AVAIL_GASMASK = _item_arr;
 	publicVariable "KAT_AVAIL_GASMASK";

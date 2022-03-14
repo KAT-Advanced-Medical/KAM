@@ -4,14 +4,14 @@
 ///////////////////////////////
 
 
-waitUntil{ player getVariable["kat_medical_airPoisend",false] };
+waitUntil{ player getVariable["kat_chemical_airPoisend",false] };
 
 	private _lastcought = 0;
-	while {player getVariable["kat_medical_airPoisend",false]} do {
+	while {player getVariable["kat_chemical_airPoisend",false]} do {
 		if(!(player getVariable ["ACE_isUnconscious",false]) && alive player) then {
 			private _nextcought = random [20,50,80];
 			waitUntil{(CBA_missionTime - _lastcought) > _nextcought};
-			if (player getVariable["kat_medical_airPoisend",false]) then {
+			if (player getVariable["kat_chemical_airPoisend",false]) then {
 				_lastcought = CBA_missionTime;
 				player say3D "cough_1";
 				addCamShake [3, 4, 0];
@@ -38,7 +38,7 @@ waitUntil{ player getVariable["kat_medical_airPoisend",false] };
 		uiSleep 5;
 	};
 
-if(player getVariable["kat_medical_airPoisend",false]) exitWith {};
+if(player getVariable["kat_chemical_airPoisend",false]) exitWith {};
 [] spawn FUNC(coughing);
 
 

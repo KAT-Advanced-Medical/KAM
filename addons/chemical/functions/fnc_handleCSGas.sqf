@@ -9,7 +9,7 @@ params ["_logic","_radius"];
 	if(_unit getVariable["kat_medical_enteredPoisen",false]) then {
 		if (_unit getVariable ["ace_medical_pain", -1] < 0.25) then {_unit setVariable ["ace_medical_pain", 0.41]};
 		if(goggles _unit in KAT_AVAIL_GASMASK) then {_unit setVariable["kat_medical_enteredPoisen",false,true]};
-		_unit setVariable ["kat_medical_CS",true,true];
+		_unit setVariable ["kat_chemical_CS",true,true];
 		_unit say3D "cough_1";
 		private _rndBlur = selectRandom[5,6,7,8];
 		ppBlur ppEffectAdjust [_rndBlur]; 
@@ -19,7 +19,7 @@ params ["_logic","_radius"];
 		ppBlur ppEffectAdjust [0]; 
 		ppBlur ppEffectEnable true; 
 		ppBlur ppEffectCommit 20;
-		_unit setVariable ["kat_medical_CS",false,true];
+		_unit setVariable ["kat_chemical_CS",false,true];
 		[_handler] call CBA_fnc_removePerFrameHandler;
 		
 	};

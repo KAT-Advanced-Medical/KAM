@@ -48,7 +48,7 @@ if (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
 };
 
 private _poisentype = _target getVariable ["kat_medical_poisenType",""];
-if(_target getVariable ["kat_medical_airPoisend",false]) then{
+if(_target getVariable ["kat_chemical_airPoisend",false]) then{
     _entries pushBack [LLSTRING(Intoxikation), [0.4,0,0.5,1]];
 };
 

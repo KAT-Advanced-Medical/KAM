@@ -3,7 +3,7 @@
 //[] spawn kat_fnc_handleGasMaskDur;
 /////////////////////
 uiSleep 5;
-waitUntil{!isNil "kat_medical_avail_gasmask" && player getVariable ["kat_medical_enteredPoisen", false]};
+waitUntil{!isNil "kat_chemical_avail_gasmask" && player getVariable ["kat_medical_enteredPoisen", false]};
 
 if(player getVariable ["kat_medical_enteredPoisen", false] && goggles player in KAT_AVAIL_GASMASK) then {
 	private _timeEntered = CBA_missionTime;

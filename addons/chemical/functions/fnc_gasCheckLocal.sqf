@@ -51,16 +51,16 @@ while{_logic getVariable ["kat_gas_active", false] && !(isNull _logic) && _unit 
 
 						if !(goggles _unit in KAT_AVAIL_GASMASK && _timeleft > 0) then {
 							_unit setVariable ["kat_medical_poisenType",_gastype,true];
-							if(_gastype == "Toxic") then {_unit setVariable ["kat_medical_airPoisend",true,true];};
-							if(_gastype == "CS") then {_unit setVariable ["kat_medical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
+							if(_gastype == "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
+							if(_gastype == "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
 
 							_isinGas = false;
 						};
 
 						if(_timeleft <= 0 && _unit getVariable ["kat_medical_enteredPoisen",false]) then {
 							_unit setVariable ["kat_medical_poisenType",_gastype,true];
-							if(_gastype == "Toxic") then {_unit setVariable ["kat_medical_airPoisend",true,true];};
-							if(_gastype == "CS") then {_unit setVariable ["kat_medical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
+							if(_gastype == "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
+							if(_gastype == "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
 							_isinGas = false;
 						};
 
@@ -75,8 +75,8 @@ while{_logic getVariable ["kat_gas_active", false] && !(isNull _logic) && _unit 
 			} else {
 				if(_unit getVariable ["kat_medical_enteredPoisen",false]) then {
 					_unit setVariable ["kat_medical_poisenType",_gastype,true];
-					if(_gastype == "Toxic") then {_unit setVariable ["kat_medical_airPoisend",true,true];};
-					if(_gastype == "CS") then {_unit setVariable ["kat_medical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
+					if(_gastype == "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
+					if(_gastype == "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
 				};
 			};
 		};

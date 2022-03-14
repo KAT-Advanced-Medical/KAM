@@ -9,7 +9,7 @@
  * Players googles (BOOL)
  *
  * Example:
- * [player,] call kat_chemical_fnc_hasGasMaskOn;
+ * [player] call kat_chemical_fnc_hasGasMaskOn;
  *
  * Public: No
  */

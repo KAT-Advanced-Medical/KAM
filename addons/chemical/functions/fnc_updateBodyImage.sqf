@@ -34,7 +34,7 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
 
 	if (_infectedIDC != -1) then {
     private _ctrlairInfected = _ctrlGroup controlsGroupCtrl _infectedIDC;
-        if(_target getVariable ["kat_medical_airPoisend",false]) then{
+        if(_target getVariable ["kat_chemical_airPoisend",false]) then{
             _ctrlairInfected ctrlShow true;
         } else {
             _ctrlairInfected ctrlShow false;

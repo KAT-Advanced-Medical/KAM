@@ -9,7 +9,7 @@
  * BOOL
  *
  * Example:
- * [player,] call kat_chemical_fnc_canReplaceFilter;
+ * [player] call kat_chemical_fnc_canReplaceFilter;
  *
  * Public: No
 */

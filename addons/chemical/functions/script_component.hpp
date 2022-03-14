@@ -1,1 +1,1 @@
-#include "\x\kat\addons\circulation\script_component.hpp"
+#include "\x\kat\addons\chemical\script_component.hpp"
