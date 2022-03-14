@@ -96,7 +96,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Amiodarone: Carbonate {
         displayName = CSTRING(Take_Amiodarone);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = 1;
         treatmentTime = 5;
@@ -107,7 +107,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Lidocaine: Carbonate {
         displayName = CSTRING(Take_Lidocaine);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = 1;
         treatmentTime = 5;
@@ -118,7 +118,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Atropine: Carbonate {
         displayName = CSTRING(Take_Atropine);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = 1;
         treatmentTime = 5;

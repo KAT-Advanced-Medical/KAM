@@ -47,31 +47,25 @@ if (_usedItem isEqualTo "kat_IV_16") then {
     [_patient, "FAST IO"] call ace_medical_treatment_fnc_addToTriageCard;
 };
 
-[{
-    private _patient = _this select 0;
-    [_patient, _patient] call FUNC(retrieveIV);
-}, [_patient], GVAR(IVdrop)] call CBA_fnc_waitAndExecute;
-
-if (_unit getVariable ["kat_IVPharma_PFH", false]) exitWith {}; 
-_unit setVariable ["kat_IVPharma_PFH", true];
+if (_patient getVariable ["kat_IVPharma_PFH", false]) exitWith {};
+_patient setVariable ["kat_IVPharma_PFH", true];
 
 [{
     params ["_args", "_idPFH"];
-    _args params ["_patient", "_bodyPart"];
+    _args params ["_patient"];
 
-    private _alive = alive _patient;
-    private _IVstatus = _patient getVariable[QGVAR(IVplaced), false];
+    [{
+        params ["_args", "_idPFH"];
+        _args params ["_patient"];
 
-    if ((!_alive) || (!_IVstatus)) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;        
-		_patient setVariable [QGVAR(IVplaced), false, true];
-		_patient setVariable [QGVAR(IVsite), 0, true];
-    };
+        private _bloodBags = _patient getVariable ["ace_medical_ivBags", []];
 
-	if ([_patient, _bodyPart] call ace_medical_treatment_fnc_hasTourniquetAppliedTo) then {
-		_patient setVariable [QGVAR(flowRate), 0, true];
-        _patient setVariable ["kat_IVPharma_PFH", nil];
-	} else {
-		_patient setVariable [QGVAR(flowRate), ace_medical_ivFlowRate, true];
-	};
-}, 2, [_patient, _bodyPart]] call CBA_fnc_addPerFrameHandler;
+        if (_bloodBags isEqualTo []) then {
+            [_idPFH] call CBA_fnc_removePerFrameHandler;
+            _patient setVariable ["kat_IVPharma_PFH", false];
+            _patient setVariable [QGVAR(IVplaced), false, true];
+            _patient setVariable [QGVAR(IVsite), 0, true];
+        };
+    }, GVAR(IVdrop), [_patient]] call CBA_fnc_addPerFrameHandler;
+
+}, [_patient], GVAR(IVdrop)] call CBA_fnc_waitAndExecute;

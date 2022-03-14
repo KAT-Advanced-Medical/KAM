@@ -37,10 +37,14 @@ if (!local _unit) then {
 
     private _pneumothorax = _unit getVariable ["KAT_medical_pneumothorax", false];
     private _hemothorax = _unit getVariable ["KAT_medical_hemopneumothorax", false];
+    private _tension = _unit getVariable ["KAT_medical_tensionpneumothorax", false];
+
     private _status = _unit getVariable ["KAT_medical_airwayStatus", 100];
     private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
     private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
+
     private _heartRate = _unit getVariable ["ace_medical_heartRate", 0];
+
     private _output = 0;
     private _finalOutput = 0;
     private _multiplierPositive = GVAR(SpO2_MultiplyPositive);
@@ -67,11 +71,11 @@ if (!local _unit) then {
             _output = _output + (0.5 * _multiplierPositive);
         };
 
-        if (_pneumothorax == true || _hemothorax == true) then {
+        if (_pneumothorax == true || _hemothorax == true || _tension == true) then {
             _output = _output - (0.75 * _multiplierNegative);
         };
 
-        if (_heartRate <= 40) then {
+        if ((_heartRate <= 40) && {GVAR(SpO2_perfusion)}) then {
             _output = -0.75 * _multiplierNegative;
         };
 

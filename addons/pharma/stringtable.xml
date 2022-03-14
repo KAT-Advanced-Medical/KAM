@@ -15,7 +15,7 @@
         </Key>
         <Key ID="STR_kat_pharma_NALOXONE_ACTIVE">
             <English>Allow players to use Naloxone?</English>
-            <German>Dürfen Spieler Naloxon nutzen?</German>
+            <German>Stoffwechselabhängiger Puls?</German>
             <Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
             <Spanish>¿Pulso cardíaco depende de metabolismo?</Spanish>
             <Chinese>依心率來決定代謝率？</Chinese>
@@ -27,608 +27,157 @@
         </Key>
         <Key ID="STR_kat_pharma_CARBONATE_ACTIVE">
             <English>Allow players to use Ammonium Carbonate?</English>
-            <German>Dürfen Spieler Ammoniumcarbonat verwenden</German>
-            <Polish>Inny  loadoutname</Polish>
-            <Spanish>Diferente nombre de equipamiento</Spanish>
-            <Chinese>不同配置名稱</Chinese>
-            <Czech>Jiný název vybavení</Czech>
-            <Korean>다른 구성이름</Korean>
-            <French>Nom d'équipement différent</French>
-            <Turkish>Farklı ekipman adı</Turkish>
-            <Italian>Loadoutname diverso</Italian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_ACTIVE">
             <English>Allow players to use TXA?</English>
-            <German>Erlaube Spieler TXA zu nutzen</German>
-            <Polish>Inny  loadoutname</Polish>
-            <Spanish>Diferente nombre de equipamiento</Spanish>
-            <Chinese>不同配置名稱</Chinese>
-            <Czech>Jiný název vybavení</Czech>
-            <Korean>다른 구성이름</Korean>
-            <French>Nom d'équipement différent</French>
-            <Turkish>Farklı ekipman adı</Turkish>
-            <Italian>Loadoutname diverso</Italian>
         </Key>
         <Key ID="STR_kat_pharma_IV_MEDIC">
             <English>Changes what medical level is required to set IVs/IOs</English>
-            <German>Setzt, welche Medizineinhat IV oder IO setzen darf</German>
-            <Polish>Inny  loadoutname</Polish>
-            <Spanish>Diferente nombre de equipamiento</Spanish>
-            <Chinese>不同配置名稱</Chinese>
-            <Czech>Jiný název vybavení</Czech>
-            <Korean>다른 구성이름</Korean>
-            <French>Nom d'équipement différent</French>
-            <Turkish>Farklı ekipman adı</Turkish>
-            <Italian>Loadoutname diverso</Italian>
         </Key>]
         <Key ID="STR_kat_pharma_IV_DROP">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
-            <German>Ändert die Zeit, nach welcher IV oder IO vom Patienten abfallen</German>
-            <Polish>Inny  loadoutname</Polish>
-            <Spanish>Diferente nombre de equipamiento</Spanish>
-            <Chinese>不同配置名稱</Chinese>
-            <Czech>Jiný název vybavení</Czech>
-            <Korean>다른 구성이름</Korean>
-            <French>Nom d'équipement différent</French>
-            <Turkish>Farklı ekipman adı</Turkish>
-            <Italian>Loadoutname diverso</Italian>
         </Key>
         <Key ID="STR_kat_pharma_IV_REUSE">
             <English>Sets if IV/IO needles are reusable</English>
-            <German>Setzt, ob IV oder IO Nadeln wiederverwendbar sind</German>
-            <Polish>Inny  loadoutname</Polish>
-            <Spanish>Diferente nombre de equipamiento</Spanish>
-            <Chinese>不同配置名稱</Chinese>
-            <Czech>Jiný název vybavení</Czech>
-            <Korean>다른 구성이름</Korean>
-            <French>Nom d'équipement différent</French>
-            <Turkish>Farklı ekipman adı</Turkish>
-            <Italian>Loadoutname diverso</Italian>
         </Key>
         <Key ID="STR_kat_pharma_PUSH_TIME">
             <English>Push time for all IV Medications</English>
-            <German>Zeit zum setzen aller IV Medikation</German>
-            <Polish>Inny  loadoutname</Polish>
-            <Spanish>Diferente nombre de equipamiento</Spanish>
-            <Chinese>不同配置名稱</Chinese>
-            <Czech>Jiný název vybavení</Czech>
-            <Korean>다른 구성이름</Korean>
-            <French>Nom d'équipement différent</French>
-            <Turkish>Farklı ekipman adı</Turkish>
-            <Italian>Loadoutname diverso</Italian>
         </Key>
         <Key ID="STR_kat_pharma_IV_TIME">
             <English>Time to establish IVs</English>
-            <German>Zeit zum herstellen einer IV Medikation</German>
-            <Polish>Inny  loadoutname</Polish>
-            <Spanish>Diferente nombre de equipamiento</Spanish>
-            <Chinese>不同配置名稱</Chinese>
-            <Czech>Jiný název vybavení</Czech>
-            <Korean>다른 구성이름</Korean>
-            <French>Nom d'équipement différent</French>
-            <Turkish>Farklı ekipman adı</Turkish>
-            <Italian>Loadoutname diverso</Italian>
         </Key>
         <Key ID="STR_kat_pharma_IO_TIME">
             <English>Time to establish IOs</English>
-            <German>Zeit eine IO Medikation herzustellen</German>
-            <Polish>Inny  loadoutname</Polish>
-            <Spanish>Diferente nombre de equipamiento</Spanish>
-            <Chinese>不同配置名稱</Chinese>
-            <Czech>Jiný název vybavení</Czech>
-            <Korean>다른 구성이름</Korean>
-            <French>Nom d'équipement différent</French>
-            <Turkish>Farklı ekipman adı</Turkish>
-            <Italian>Loadoutname diverso</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Painkillers_DescShort">
             <English>Used to suppress pain</English>
-            <German>Schmerzbekämpfer</German>
-            <Polish>Używany do zwalczania bólu</Polish>
-            <Spanish>Usado para suprimir el dolor</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Užíváno na potlačení bolesti</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Utilisé pour diminuer la douleur</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Usato per sopprimere il dolore</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Painkillers_DescUse">
             <English>An analgesic used to combat light to moderate pain experiences.</English>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
-            <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
-            <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Analgetikum používané k potlačení lehkých až středně bolestivých zážitků.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>Un analgésique utilisé pour diminuer la douleur.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
-
         </Key>
         <Key ID="STR_kat_pharma_Painkillers_Box_Display">
             <English>Painkillers</English>
-            <German>Schmerzmittel</German>
-            <Polish>Lek przeciwbólowy</Polish>
-            <Spanish>Analgésicos</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Prášky proti bolesti</Czech>
-            <Korean>진통제</Korean>
-            <French>Analgésiques</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>Antidolorifici</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Inject_Box_Painkillers">
             <English>Take Painkillers</English>
-            <German>Schlucke Schmerzmittel</German>
-            <Polish>Użyj leku przeciwbólowego</Polish>
-            <Spanish>Usar analgésico</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Vzít si Prášky proti bolesti</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Prendre des analgésiques</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Prendi antidolorifici</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
-            <German>Genutzt zum wiederherstellen des Bewusstseins</German>
-            <Polish>Używane w celu przywrócenia przytomności</Polish>
-            <Spanish>Solía ​​recuperar la conciencia</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Užíváno na potlačení bolesti</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Utilisé pour reprendre conscience</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Usato per riprendere coscienza</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_DescUse">
             <English>The primary ingredient in smelling salts, used to restore consciousness in limited situations.</English>
-            <German>Der Hauptbestandteil von Riechsalzen, die in begrenzten Situationen zur Wiederherstellung des Bewusstseins verwendet werden.</German>
-            <Polish>Głównym składnikiem są sole trzeźwiące, używane do przywrócenia przytomności w określonych okolicznościach</Polish>
-            <Spanish>El ingrediente principal de las sales, utilizado para restaurar la conciencia en situaciones limitadas.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Analgetikum používané k potlačení lehkých až středně bolestivých zážitků.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>L'ingrédient principal dans les sels, utilisé pour restaurer la conscience dans des situations limitées.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>L'ingrediente principale nei sali, utilizzati per ripristinare la coscienza in situazioni limitate.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_Box_Display">
             <English>Ammonium Carbonate</English>
-            <German>Ammoniumcarbonat</German>
-            <Polish>Sole trzeźwiące</Polish>
-            <Spanish>Carbonato de amonio</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Prášky proti bolesti</Czech>
-            <Korean>진통제</Korean>
-            <French>Carbonate d'ammonium</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>Carbonato d'ammonio</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Carbonate">
             <English>Use Carbonate</English>
-            <German>Benutze Ammoniumcarbonat</German>
-            <Polish>Użyj soli trzeźwiących</Polish>
-            <Spanish>Administrar carbonato</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Vzít si Prášky proti bolesti</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Administre du Carbonate</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Somministra Carbonato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
-            <German>Wird zum behandeln von Opioid Überdosen verwendet</German>
-            <Polish>Używany do zwalczania przedawkowania opioidów</Polish>
-            <Spanish>Se utiliza para tratar las sobredosis de opiáceos.</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Užíváno na potlačení bolesti</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Utilisé pour traiter les overdoses d'opiacés</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Usato per trattare le overdose da oppiacei</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Naloxone_DescUse">
             <English>An opioid antagonist that can reverse opioid overdoses from medications such as Morphine.</English>
-            <German>Ein Opioid-Antagonist, der Opioid-Überdosierungen durch Medikamente wie Morphin rückgängig machen kann.</German>
-            <Polish>Antagonista opioidów potrafiący zwalczać przedawkowanie leków takich jak morfina.</Polish>
-            <Spanish>Un antagonista opioide que puede revertir las sobredosis de opioides como la morfina.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Analgetikum používané k potlačení lehkých až středně bolestivých zážitků.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>Un antagoniste des opioïdes qui peut inverser le surdosage d'opioïdes comme la morphine.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Un antagonista degli oppioidi che può invertire le overdose di oppioidi come la morfina.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Naloxone_Box_Display">
             <English>Naloxone</English>
-            <German>Naloxon</German>
-            <Polish>Nalokson</Polish>
-            <Spanish>Naloxone</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Prášky proti bolesti</Czech>
-            <Korean>진통제</Korean>
-            <French>Naloxone</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>Naloxone</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Naloxone">
             <English>Use Naloxone</English>
-            <German>Benutze Naloxon</German>
-            <Polish>Użyj naloksonu</Polish>
-            <Spanish>Administrar Naloxone</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Vzít si Prášky proti bolesti</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Administre du Naloxone</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Somministra Naloxone</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Amiodarone_DescShort">
             <English>Used to combat cardiac arrest</English>
-            <German>Wird verwendet, um Herzstillstand zu bekämpfen</German>
-            <Polish>Używany do zwalczania zatrzymania akcji serca</Polish>
-            <Spanish>Se usa para combatir el paro cardíaco.</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Používá se k boji proti zástavě srdce</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Utilisé pour lutter contre l'arrêt cardiaque</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Usato per combattere l'arresto cardiaco</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Amiodarone_DescUse">
             <English>An anti-arrhythmic used when combatting shockable forms of cardiac arrest.</English>
-            <German>Ein Antiarrhythmikum zur Bekämpfung von schockbaren Formen des Herzstillstands.</German>
-            <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
-            <Spanish>Antiarrítmico utilizado en la lucha contra las formas desfibrilables de paro cardíaco.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Antiarytmikum používané v boji se srdeční zástavou.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>Un antiarythmique utilisé dans la lutte contre les formes d'arrêt cardiaque défibrillable.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Un antiaritmico utilizzato nella lotta contro le forme defibrillabili di arresto cardiaco.</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Amiodarone_Box_Display">
             <English>Amiodarone</English>
-            <German>Amiodaron</German>
-            <Polish>Amiodaron</Polish>
-            <Spanish>Amiodarone</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Amiodaron</Czech>
-            <Korean>진통제</Korean>
-            <French>Amiodarone</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>Amiodarone</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Amiodarone">
             <English>Push Amiodarone</English>
-            <German>Injiziere Amiodarone</German>
-            <Polish>Wstrzyknij amiodaron</Polish>
-            <Spanish>Administrar Amiodarone</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Zatlačte Amiodarone</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Administre du Amiodarone</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Somministra Amiodarome</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_DescShort">
             <English>Used to combat cardiac arrest</English>
-            <German>Wird verwendet, um Herzstillstand zu bekämpfen</German>
-            <Polish>Używany do zwalczania zatrzymania akcji serca</Polish>
-            <Spanish>Se usa para combatir el paro cardíaco.</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Používá se k boji proti zástavě srdce</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Utilisé pour lutter contre l'arrêt cardiaque</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Usato per combattere l'arresto cardiaco</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_DescUse">
             <English>An anti-arrhythmic used when combatting shockable forms of cardiac arrest.</English>
-            <German>Ein Antiarrhythmikum zur Bekämpfung von schockbaren Formen des Herzstillstands.</German>
-            <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
-            <Spanish>Antiarrítmico utilizado en la lucha contra las formas desfibrilables de paro cardíaco.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Antiarytmikum používané v boji se srdeční zástavou.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>Un antiarythmique utilisé dans la lutte contre les formes d'arrêt cardiaque défibrillable.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Un antiaritmico utilizzato nella lotta contro le forme defibrillabili di arresto cardiaco.</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_Box_Display">
             <English>Lidocaine</English>
-            <German>Lidocain</German>
-            <Polish>Lidokaina</Polish>
-            <Spanish>Lidocaína</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Lidokain</Czech>
-            <Korean>진통제</Korean>
-            <French>Lidocaïne</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>Lidocaina</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Lidocaine">
             <English>Push Lidocaine</English>
-            <German>Injiziere Lidocain</German>
-            <Polish>Wstrzyknij lidokainę</Polish>
-            <Spanish>Administrar lidocaína</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Zatlačte Lidocaine</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Administre de la Lidocaïne</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Somministra Lidocaina</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Atropine_DescShort">
             <English>Used to treat bradycardia</English>
-            <German>Wird zur Behandlung von Bradykardie verwendet.</German>
-            <Polish>Używany do zwalczania bradykardii</Polish>
-            <Spanish>Usado para tratar la bradicardia.</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Používá se k léčbě bradykardie</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Utilisé pour traiter la bradycardie</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Usato per trattare la bradicardia</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Atropine_DescUse">
             <English>Commonly used to treat poisoning, Atropine can also be used to treat bradycardia.</English>
-            <German>Atropin wird häufig zur Behandlung von Vergiftungen verwendet und kann auch zur Behandlung von Bradykardie verwendet werden.</German>
-            <Polish>Używany do leczenia zatrucia. Atropina może być również używana w celu leczenia bradykardii.</Polish>
-            <Spanish>Usado para tratar intoxicaciones, pero la atropina también se puede usar para tratar la bradicardia.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Obvykle se používá k léčbě otravy, Atropin může být také použit k léčbě bradykardie.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>Couramment utilisée pour traiter les intoxications, l'atropine peut également être utilisée pour traiter de la bradycardie.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Comunemente usato per trattare l'avvelenamento, l'atropina può anche essere usata per trattare la bradicardia.</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Atropine_Box_Display">
             <English>Atropine</English>
-            <German>Atropin</German>
-            <Polish>Atropina</Polish>
-            <Spanish>Atropina</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Atropin</Czech>
-            <Korean>진통제</Korean>
-            <French>Atropine</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>Atropina</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Atropine">
             <English>Push Atropine</English>
-            <German>Injiziere Atropin</German>
-            <Polish>Wstrzyknij atropinę</Polish>
-            <Spanish>Administrar Atropina</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Zatlačte atropin</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Administre de l'Atropine</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Somministra Atropina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_DescShort">
             <English>Encourages clot formation</English>
-            <German>Fördert die Gerinnselbildung</German>
-            <Polish>Wspomaga tworzenie skrzepów</Polish>
-            <Spanish>Favorece la coagulación</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Užíváno na potlačení bolesti</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Favorise la coagulation</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Favorisce la coagulazione</Italian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_DescUse">
             <English>Used to encourage and stabilize clots in a patient.</English>
-            <German>Wird verwendet, um Blutgerinnsel bei einem Patienten zu fördern und zu stabilisieren.</German>
-            <Polish>Używany do wspomagania tworzenia skrzepów u pacjenta</Polish>
-            <Spanish>Usado para promover y estabilizar la coagulación en el paciente.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Analgetikum používané k potlačení lehkých až středně bolestivých zážitků.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>Utilisé pour favoriser et stabiliser la coagulation chez le patient</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Utilizzato per favorire e stabilizzare la coagulazione nel paziente</Italian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_Box_Display">
             <English>TXA</English>
-            <German>TXA</German>
-            <Polish>TXA</Polish>
-            <Spanish>TXA</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Prášky proti bolesti</Czech>
-            <Korean>진통제</Korean>
-            <French>TXA</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>TXA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Take_TXA">
             <English>Push TXA</English>
-            <German>Injiziere TXA</German>
-            <Polish>Wstrzyknij TXA</Polish>
-            <Spanish>Administrar TXA</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Vzít si Prášky proti bolesti</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Administre du TXA</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Somministra TXA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Norep_DescShort">
             <English>Used to raise blood pressure</English>
-            <German>Wird zum anheben des Blutdruckes benutzt</German>
-            <Polish>Używany do zwalczania bólu</Polish>
-            <Spanish>Usado para suprimir el dolor</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Užíváno na potlačení bolesti</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Utilisé pour diminuer la douleur</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Usato per sopprimere il dolore</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Norep_DescUse">
-            <English>Ein Vasopressor, der zur Erhöhung des Blutdrucks und zur Schockbekämpfung eingesetzt wird.</English>
-            <German>Ein Vasopressor um den Blutdruck zu heben.</German>
-            <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
-            <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Analgetikum používané k potlačení lehkých až středně bolestivých zážitků.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>Un analgésique utilisé pour diminuer la douleur.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
+            <English>A vasopressor used to increase blood pressure and combat shock.</English>
         </Key>
         <Key ID="STR_kat_pharma_Norep_Box_Display">
             <English>Norepinephrine</English>
-            <German>Noradrenalin</German>
-            <Polish>Lek przeciwbólowy</Polish>
-            <Spanish>Analgésicos</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Prášky proti bolesti</Czech>
-            <Korean>진통제</Korean>
-            <French>Analgésiques</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>Antidolorifici</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Norep">
             <English>Push Norepinephrine</English>
-            <German>Injiziere Noradrenalin</German>
-            <Polish>Użyj leku przeciwbólowego</Polish>
-            <Spanish>Usar analgésico</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Vzít si Prášky proti bolesti</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Prendre des analgésiques</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Prendi antidolorifici</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Phenyl_DescShort">
             <English>Used to raise blood pressure</English>
-            <German>Wird zur Erhöhung des Blutdrucks verwendet</German>
-            <Polish>Używany do zwalczania bólu</Polish>
-            <Spanish>Usado para suprimir el dolor</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Užíváno na potlačení bolesti</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Utilisé pour diminuer la douleur</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Usato per sopprimere il dolore</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Phenyl_DescUse">
             <English>A vasopressor used to increase blood pressure and combat shock.</English>
-            <German>Ein Vasopressor, der zur Erhöhung des Blutdrucks und zur Schockbekämpfung eingesetzt wird.</German>
-            <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
-            <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Analgetikum používané k potlačení lehkých až středně bolestivých zážitků.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>Un analgésique utilisé pour diminuer la douleur.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Phenyl_Box_Display">
             <English>Phenylephrine</English>
-            <German>Phenylephrin</German>
-            <Polish>Lek przeciwbólowy</Polish>
-            <Spanish>Analgésicos</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Prášky proti bolesti</Czech>
-            <Korean>진통제</Korean>
-            <French>Analgésiques</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>Antidolorifici</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Phenyl">
             <English>Push Phenylephrine</English>
-            <German>Injiziere Phenylephrin</German>
-            <Polish>Użyj leku przeciwbólowego</Polish>
-            <Spanish>Usar analgésico</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Vzít si Prášky proti bolesti</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Prendre des analgésiques</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Prendi antidolorifici</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Nitro_DescShort">
             <English>Used to lower blood pressure</English>
-            <German>Zur Senkung des Blutdrucks</German>
-            <Polish>Używany do zwalczania bólu</Polish>
-            <Spanish>Usado para suprimir el dolor</Spanish>
-            <Chinese>用於舒緩疼痛</Chinese>
-            <Czech>Užíváno na potlačení bolesti</Czech>
-            <Korean>통증완화를 위해 사용합니다</Korean>
-            <French>Utilisé pour diminuer la douleur</French>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Usato per sopprimere il dolore</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Nitro_DescUse">
             <English>A vasodilator used to decrease blood pressure and combat hypertension.</English>
-            <German>Ein gefäßerweiternder Wirkstoff zur Senkung des Blutdrucks und zur Bekämpfung von Bluthochdruck.</German>
-            <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
-            <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Czech>Analgetikum používané k potlačení lehkých až středně bolestivých zážitků.</Czech>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <French>Un analgésique utilisé pour diminuer la douleur.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Nitro_Box_Display">
             <English>Nitroglycerin</English>
-            <German>Nitroglycerin</German>
-            <Polish>Lek przeciwbólowy</Polish>
-            <Spanish>Analgésicos</Spanish>
-            <Chinese>止痛藥</Chinese>
-            <Czech>Prášky proti bolesti</Czech>
-            <Korean>진통제</Korean>
-            <French>Analgésiques</French>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Italian>Antidolorifici</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Nitro">
             <English>Push Nitroglycerin</English>
-            <German>Injiziere Nitroglycerin</German>
-            <Polish>Użyj leku przeciwbólowego</Polish>
-            <Spanish>Usar analgésico</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Vzít si Prášky proti bolesti</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Prendre des analgésiques</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Prendi antidolorifici</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Reorient">
             <English>Reorient Patient</English>
-            <German>Patient neu orientieren</German>
-            <Polish>Użyj leku przeciwbólowego</Polish>
-            <Spanish>Usar analgésico</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Vzít si Prášky proti bolesti</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Prendre des analgésiques</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Prendi antidolorifici</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Reorienting">
             <English>Reorienting</English>
-            <German>Neuorientieren</German>
-            <Polish>Użyj leku przeciwbólowego</Polish>
-            <Spanish>Usar analgésico</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Vzít si Prášky proti bolesti</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Prendre des analgésiques</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Prendi antidolorifici</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Using">
             <English>Using</English>
-            <German>Benutzen</German>
+            <German>Schlucke</German>
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
             <Chinese>服用中</Chinese>
@@ -640,7 +189,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Pushing">
             <English>Pushing</English>
-            <German>Injizieren</German>
+            <German>Schlucke</German>
             <Polish>Wstrzykiwanie</Polish>
             <Spanish>Empujando</Spanish>
             <Chinese>服用中</Chinese>
@@ -652,7 +201,7 @@
         </Key>
         <Key ID="STR_kat_pharma_push_log">
             <English>%1 pushed %2</English>
-            <German>%1 injezierte mit %2</German>
+            <German>%1 intubierte mit %2</German>
             <Polish>%1 wstrzyknął %2</Polish>
             <Spanish>%1 administró %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -664,7 +213,7 @@
         </Key>
         <Key ID="STR_kat_pharma_inject_log">
             <English>%1 injected %2</English>
-            <German>%1 injezierte mit %2</German>
+            <German>%1 intubierte mit %2</German>
             <Polish>%1 włożył %2</Polish>
             <Spanish>%1 inyectó %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -676,7 +225,7 @@
         </Key>
         <Key ID="STR_kat_pharma_use_log">
             <English>%1 used %2</English>
-            <German>%1 benutzte mit %2</German>
+            <German>%1 intubierte mit %2</German>
             <Polish>%1 użył %2</Polish>
             <Spanish>%1 usado %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -700,7 +249,7 @@
         </Key>
         <Key ID="STR_kat_pharma_IV_DescShort">
             <English>Intravenous Needle</English>
-            <German>Intravenöse Kanüle</German>
+            <German>Schmerzbekämpfer</German>
             <Polish>Kaniula dożylna</Polish>
             <Spanish>Usado para suprimir el dolor</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -724,7 +273,7 @@
         </Key>
         <Key ID="STR_kat_pharma_IO_DescShort">
             <English>Intraosseous Needle</English>
-            <German>Intraossäre Kanüle</German>
+            <German>Schmerzbekämpfer</German>
             <Polish>Igła doszpikowa</Polish>
             <Spanish>Aguja intraósea</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
@@ -736,7 +285,7 @@
         </Key>
         <Key ID="STR_kat_pharma_IV_DescUse">
             <English>Used to allow fluids and certain medications to enter the body.</English>
-            <German>Wird verwendet, damit Flüssigkeiten und bestimmte Medikamente in den Körper gelangen können.</German>
+            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Polish>Używany w celu dostarczenia płynów i pewnych leków do krwioobiegu.</Polish>
             <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
@@ -748,55 +297,40 @@
         </Key>
         <Key ID="STR_kat_pharma_Apply_IV_16">
             <English>Establish 16g IV</English>
-            <German>16g IV einrichten</German>
             <Polish>Załóż 16G IV</Polish>
             <Spanish>Coloque 16g IV</Spanish>
-            <Chinese>檢查中</Chinese>
-            <Czech>Kontroluji</Czech>
-            <Korean>확인중</Korean>
             <French>Insertion 16g IV</French>
-            <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Posiziona 16g IV</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Apply_IO_45">
             <English>Establish FAST IO</English>
-            <German>45mm IO einrichten</German>
             <Polish>Załóż 45mm IO</Polish>
             <Spanish>Coloque 45mm IO</Spanish>
-            <Chinese>檢查中</Chinese>
             <Czech>Založit 45mm IO</Czech>
-            <Korean>확인중</Korean>
             <French>Insertion 45mm IO</French>
-            <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Posiziona 45mm IO</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Applying_IV">
             <English>Establishing IV/IO</English>
-            <German>Einrichtung der IV/IO</German>
             <Polish>Zakładanie IV</Polish>
             <Spanish>Colocando IV</Spanish>
-            <Chinese>檢查中</Chinese>
             <Czech>Kontroluji</Czech>
-            <Korean>확인중</Korean>
             <French>Insertion IV</French>
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Posizionando IV</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Applying_IO">
             <English>Establishing IO</English>
-            <German>Einrichtung der IO</German>
             <Polish>Zakładanie IO</Polish>
             <Spanish>Colocando IO</Spanish>
-            <Chinese>檢查中</Chinese>
             <Czech>Navázání IO</Czech>
-            <Korean>확인중</Korean>
             <French>Insertion IO</French>
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Posizionando IO</Italian>
         </Key>
         <Key ID="STR_kat_pharma_iv_log">
             <English>%1 established a %2</English>
-            <German>%1 stellte IV mit %2 her</German>
+            <German>%1 intubierte mit %2</German>
             <Polish>%1 założył %2</Polish>
             <Spanish>%1 coloqueado %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -808,24 +342,16 @@
         </Key>
         <Key ID="STR_kat_pharma_Remove_IV">
             <English>Remove IV/IO</English>
-            <German>Entferne IV/IO</German>
             <Polish>Zdejmij IV/IO</Polish>
             <Spanish>Quitar IV / IO</Spanish>
-            <Chinese>檢查中</Chinese>
-            <Czech>Kontroluji</Czech>
-            <Korean>확인중</Korean>
             <French>Retire</French>
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Rimuovi IV/IO</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Removing_IV">
             <English>Removing</English>
-            <German>Entferne</German>
             <Polish>Zdejmowanie</Polish>
             <Spanish>Quitando</Spanish>
-            <Chinese>檢查中</Chinese>
-            <Czech>Kontroluji</Czech>
-            <Korean>확인중</Korean>
             <French>En train de retirer</French>
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Rimuovendo</Italian>
@@ -841,9 +367,6 @@
             <French>%1 est maintenant vide</French>
             <Turkish>% 1 artık boş</Turkish>
             <Italian>è vuota</Italian>
-        </Key>
-        <Key ID="STR_kat_pharma_Reorient_successChance">
-            <English>Reorient success Chance</English>
         </Key>
     </Package>
 </Project>
