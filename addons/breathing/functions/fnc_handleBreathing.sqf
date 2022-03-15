@@ -84,7 +84,7 @@ if (!local _unit) then {
         };
 
         if (_output < -0.2) then {
-            _output = -0.2
+            _output = -0.2;
         };
 
         _finalOutput = _status + _output;
