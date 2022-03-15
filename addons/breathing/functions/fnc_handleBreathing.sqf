@@ -102,7 +102,7 @@ if (!local _unit) then {
 
     if ([_unit] call ace_common_fnc_isAwake) exitWith {
         switch (true) do {
-            case (_pneumothorax == true || _hemothorax == true): {
+            case (_pneumothorax == true || _hemothorax == true || _tension == true): {
                 _output = _output - (0.2 * _multiplierNegative);
             };
             case (true): {
