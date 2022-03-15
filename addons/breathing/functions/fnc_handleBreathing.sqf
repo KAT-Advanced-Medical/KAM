@@ -66,17 +66,25 @@ if (!local _unit) then {
 
     if !([_unit] call ace_common_fnc_isAwake) exitWith {
         if (_occluded == true || _obstruction == true) then {
-            _output = _output - (0.75 * _multiplierNegative);
+            _output = _output - (0.2 * _multiplierNegative);
         } else {
-            _output = _output + (0.5 * _multiplierPositive);
+            _output = _output + (0.15 * _multiplierPositive);
         };
 
         if (_pneumothorax == true || _hemothorax == true || _tension == true) then {
-            _output = _output - (0.75 * _multiplierNegative);
+            _output = _output - (0.2 * _multiplierNegative);
         };
 
-        if ((_heartRate <= 40) && {GVAR(SpO2_perfusion)}) then {
-            _output = -0.75 * _multiplierNegative;
+        if ((_heartRate == 20) && {GVAR(SpO2_perfusion)}) then {
+            _output = -0.2 * _multiplierNegative;
+        };
+
+        if (_heartRate >= 25 && _heartRate <= 40) then {
+            _output = 0.4 * _multiplierPositive;
+        };
+
+        if (_output < -0.2) then {
+            _output = -0.2
         };
 
         _finalOutput = _status + _output;
@@ -95,10 +103,10 @@ if (!local _unit) then {
     if ([_unit] call ace_common_fnc_isAwake) exitWith {
         switch (true) do {
             case (_pneumothorax == true || _hemothorax == true): {
-                _output = _output - (0.75 * _multiplierNegative);
+                _output = _output - (0.2 * _multiplierNegative);
             };
             case (true): {
-                _output = _output + (1 * _multiplierPositive);
+                _output = _output + (0.5 * _multiplierPositive);
             };
         };
 
