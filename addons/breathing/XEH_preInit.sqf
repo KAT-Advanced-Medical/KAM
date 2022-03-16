@@ -64,7 +64,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_STABLE_SPO2), LLSTRING(DESCRIPTION_STABLE_SPO2)],
     CBA_SETTINGS_CAT,
-    [0, 95, 85, 0],
+    [0, 95, 65, 0],
     true
 ] call CBA_Settings_fnc_init;
 
