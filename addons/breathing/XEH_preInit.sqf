@@ -24,7 +24,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_SpO2_dieValue),
     CBA_SETTINGS_CAT,
-    [5, 95, 65, 0],
+    [5, 95, 80, 0],
     true
 ] call CBA_Settings_fnc_init;
 

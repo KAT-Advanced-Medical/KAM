@@ -75,7 +75,7 @@ if (!local _unit) then {
             _output = _output - (0.2 * _multiplierNegative);
         };
 
-        if ((_heartRate == 20) && {GVAR(SpO2_perfusion)}) then {
+        if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
             _output = -0.2 * _multiplierNegative;
         };
 
