@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
+ * Author: Katalam, edited by Tomcat, Kygan, YetheSamartaka and MJSTIC
  * Handling oxygen saturation for breathing
  *
  * Arguments:
@@ -42,6 +42,8 @@ if (!local _unit) then {
     private _status = _unit getVariable ["KAT_medical_airwayStatus", 100];
     private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
     private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
+	
+	private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
 
     private _heartRate = _unit getVariable ["ace_medical_heartRate", 0];
 
@@ -65,13 +67,16 @@ if (!local _unit) then {
     };
 
     if !([_unit] call ace_common_fnc_isAwake) exitWith {
-        if (_occluded == true || _obstruction == true) then {
+        if (_occluded || _obstruction) then {
+			if (_overstretch && !(_occluded || _pneumothorax || _hemothorax || _tension)) then {
+            _output = _output + (0.35 * _multiplierNegative);
+        };
             _output = _output - (0.2 * _multiplierNegative);
         } else {
             _output = _output + (0.15 * _multiplierPositive);
         };
 
-        if (_pneumothorax == true || _hemothorax == true || _tension == true) then {
+        if (_pneumothorax || _hemothorax || _tension) then {
             _output = _output - (0.2 * _multiplierNegative);
         };
 
@@ -79,9 +84,10 @@ if (!local _unit) then {
             _output = -0.2 * _multiplierNegative;
         };
 
-        if (_heartRate >= 25 && _heartRate <= 40) then {
+        if (_heartRate >= 25 && _heartRate <= 40 && !(_occluded || _obstruction || _pneumothorax || _hemothorax || _tension)) then {
             _output = 0.4 * _multiplierPositive;
         };
+		
 
         if (_output < -0.2) then {
             _output = -0.2;
@@ -102,7 +108,7 @@ if (!local _unit) then {
 
     if ([_unit] call ace_common_fnc_isAwake) exitWith {
         switch (true) do {
-            case (_pneumothorax == true || _hemothorax == true || _tension == true): {
+            case (_pneumothorax || _hemothorax || _tension): {
                 _output = _output - (0.2 * _multiplierNegative);
             };
             case (true): {
