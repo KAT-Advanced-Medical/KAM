@@ -38,11 +38,11 @@ if (!local _unit) then {
     private _airway = true;
     private _breathing = true;
 
-    if ((_unit getVariable ["KAT_medical_tensionpneumothorax", false] == true) || (_unit getVariable ["KAT_medical_hemopneumothorax", false] == true) || (_unit getVariable ["KAT_medical_pneumothorax", false] == true)) then {
+    if ((_unit getVariable ["KAT_medical_tensionpneumothorax", false]) || (_unit getVariable ["KAT_medical_hemopneumothorax", false]) || (_unit getVariable ["KAT_medical_pneumothorax", false])) then {
         _breathing = false;
     };
 
-    if ((_unit getVariable ["KAT_medical_airwayOccluded", false] == true) || (_unit getVariable [QEGVAR(airway,obstruction), false] == true)) then {
+    if ((_unit getVariable ["KAT_medical_airwayOccluded", false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])) then {
         _airway = false;
     };
 
