@@ -88,8 +88,8 @@ if (!local _unit) then {
         if !(_airway) exitWith {
             _output = -0.3 * _multiplierNegative;
 
-            if (_overstretch) then {
-                _output = 0.1 * _multiplierPositive;
+            if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) || _breathing)) then {
+                _output = 0.15 * _multiplierPositive;
             };
 
             _finalOutput = _status + _output;
@@ -143,4 +143,3 @@ if (!local _unit) then {
     };
 
 }, 3, [_unit]] call CBA_fnc_addPerFrameHandler;
-
