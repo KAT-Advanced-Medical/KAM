@@ -35,16 +35,19 @@ if (!local _unit) then {
         _unit setVariable ["KAT_medical_airwayStatus", 100, true];
     };
 
-    private _pneumothorax = _unit getVariable ["KAT_medical_pneumothorax", false];
-    private _hemothorax = _unit getVariable ["KAT_medical_hemopneumothorax", false];
-    private _tension = _unit getVariable ["KAT_medical_tensionpneumothorax", false];
+    private _airway = true;
+    private _breathing = true;
+
+    if ((_unit getVariable ["KAT_medical_tensionpneumothorax", false] == true) || (_unit getVariable ["KAT_medical_hemopneumothorax", false] == true) || (_unit getVariable ["KAT_medical_pneumothorax", false] == true)) then {
+        _breathing = false;
+    };
+
+    if ((_unit getVariable ["KAT_medical_airwayOccluded", false] == true) || (_unit getVariable [QEGVAR(airway,obstruction), false] == true)) then {
+        _airway = false;
+    };
 
     private _status = _unit getVariable ["KAT_medical_airwayStatus", 100];
-    private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
-    private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
-	
 	private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
-
     private _heartRate = _unit getVariable ["ace_medical_heartRate", 0];
 
     private _output = 0;
@@ -67,30 +70,47 @@ if (!local _unit) then {
     };
 
     if !([_unit] call ace_common_fnc_isAwake) exitWith {
-        if (_occluded || _obstruction) then {
-			if (_overstretch && !(_occluded || _pneumothorax || _hemothorax || _tension)) then {
-            _output = _output + (0.35 * _multiplierNegative);
-        };
-            _output = _output - (0.2 * _multiplierNegative);
-        } else {
-            _output = _output + (0.15 * _multiplierPositive);
+        if !(_breathing) exitWith {
+            _output = -0.3 * _multiplierNegative;
+            _finalOutput = _status + _output;
+
+            if (_finalOutput > 100) then {
+                _finalOutput = 100;
+            };
+
+            if (_finalOutput < 1) then {
+                _finalOutput = 1;
+            };
+
+            _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
         };
 
-        if (_pneumothorax || _hemothorax || _tension) then {
-            _output = _output - (0.2 * _multiplierNegative);
+        if !(_airway) exitWith {
+            _output = -0.3 * _multiplierNegative;
+
+            if (_overstretch) then {
+                _output = 0.1 * _multiplierPositive;
+            };
+
+            _finalOutput = _status + _output;
+
+            if (_finalOutput > 100) then {
+                _finalOutput = 100;
+            };
+
+            if (_finalOutput < 1) then {
+                _finalOutput = 1;
+            };
+
+            _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
         };
 
         if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
             _output = -0.2 * _multiplierNegative;
         };
 
-        if (_heartRate >= 25 && _heartRate <= 40 && !(_occluded || _obstruction || _pneumothorax || _hemothorax || _tension)) then {
-            _output = 0.4 * _multiplierPositive;
-        };
-		
-
-        if (_output < -0.2) then {
-            _output = -0.2;
+        if (_heartRate >= 25) then {
+            _output = 0.3 * _multiplierPositive;
         };
 
         _finalOutput = _status + _output;
@@ -107,13 +127,10 @@ if (!local _unit) then {
     };
 
     if ([_unit] call ace_common_fnc_isAwake) exitWith {
-        switch (true) do {
-            case (_pneumothorax || _hemothorax || _tension): {
-                _output = _output - (0.2 * _multiplierNegative);
-            };
-            case (true): {
-                _output = _output + (0.5 * _multiplierPositive);
-            };
+        if !(_breathing) then {
+            _output = -0.2 * _multiplierNegative;
+        } else {
+            _output = 0.5 * _multiplierPositive;
         };
 
         _finalOutput = _status + _output;

@@ -25,7 +25,6 @@ params [
 ];
 
 private _bloodLoss = _patient getVariable ["ace_medical_bloodVolume", 6.0];
-private _medicationArray = _patient getVariable ["ace_medical_medications", []];
 
 private _chance = 0;
 private _random = random 100;
@@ -64,9 +63,6 @@ if !(GVAR(AdvRhythm)) then {
 	    case "Amiodarone": 
 	    {
 	    _amiBoost = _amiBoost + (random [8,14,20]);
-	    	if (_randomAmi >= 2) then {
-	    	    [_patient, "BRADYCARDIA", 120, 1200, -15, 0, 0] call ace_medical_status_fnc_addMedicationAdjustment;
-	    	};
 	    };
 	    case "Lidocaine":
 	    {
@@ -109,9 +105,10 @@ switch (_reviveObject) do {
 if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AED-X" || _reviveObject isEqualTo "AED-Station") exitWith {
 	_chance = _chance + (_amiBoost + _lidoBoost * _epiBoost);
 
-	if ((_random <= _chance) && (_asystole <= 1)) then {
+    if ((_random <= _chance) && (_asystole == 1)) then {
 		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
 		_patient setVariable [QGVAR(asystole), 0, true];
+        _patient setVariable [QGVAR(CPRcount), 2, true];
 	};
 };
 
@@ -134,13 +131,12 @@ if !(GVAR(enable_CPR_Chances)) then {
 	};
 
 	if (_random <= _chance) then {
-		if (_randomAmi > 2) then {
+		if ((_randomAmi > 2) && (_asystole == 2)) then {
 			_patient setVariable [QGVAR(asystole), 1, true];
-			_patient setVariable [QGVAR(CPRcount), 2, true];
 		} else {
 			["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
 			_patient setVariable [QGVAR(asystole), 0, true];
-			_patient setVariable [QGVAR(CPRcount), 2, true];
-		};
+            _patient setVariable [QGVAR(CPRcount), 2, true];
+        };
 	};
 };
