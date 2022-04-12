@@ -71,7 +71,10 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamart
   - [ ] Big Backpack?
   - [x] Workable IV stand
 - Zeus modules
-  - [x] Fully supported via Zeus modules
+  - [x] Manage unit airways
+  - [x] Change blood group / volume
+  - [x] Change shockable state
+  - [x] Open unit medical menu
 
 ## Known Issues
 
