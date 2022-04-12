@@ -26,7 +26,7 @@ if (_patient getVariable ["ace_medical_heartRate", 0] >= 40) then {
     _patient setVariable [QGVAR(asystole), 0, true];
 };
 
-if (_AEDreturn == true) then {
+if (_AEDreturn) then {
     _player setVariable [QGVAR(use), false, true];
     [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
     [_player, "kat_X_AED"] call ace_common_fnc_addToInventory;
