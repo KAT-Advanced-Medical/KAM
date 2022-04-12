@@ -131,7 +131,7 @@ if !(GVAR(enable_CPR_Chances)) then {
 	};
 
 	if (_random <= _chance) then {
-		if ((_randomAmi > 2) && (_asystole == 2)) then {
+		if ((_randomAmi > 2) && (_asystole isEqualTo 2)) then {
 			_patient setVariable [QGVAR(asystole), 1, true];
 		} else {
 			["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
