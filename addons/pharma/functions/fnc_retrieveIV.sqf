@@ -98,21 +98,21 @@ if (_totalIvVolume >= 1) then {
     if (_plasma > 1) then {
         switch (true) do {
         	case (_plasma > 1200): {
-        	_medic addItem "ACE_plasmaIV";
-        	_medic addItem "ACE_plasmaIV_500";
+        	    _medic addItem "ACE_plasmaIV";
+        	    _medic addItem "ACE_plasmaIV_500";
         	};
         	case (_plasma > 800): {
-        	_medic addItem "ACE_plasmaIV";
+        	    _medic addItem "ACE_plasmaIV";
         	};
         	case (_plasma > 600): {
-        	_medic addItem "ACE_plasmaIV_500";
-        	_medic addItem "ACE_plasmaIV_250";
+        	    _medic addItem "ACE_plasmaIV_500";
+        	    _medic addItem "ACE_plasmaIV_250";
         	};
         	case (_plasma > 400): {
-        	_medic addItem "ACE_plasmaIV_500";
+        	    _medic addItem "ACE_plasmaIV_500";
         	};
         	case (_plasma > 150): {
-        	_medic addItem "ACE_plasmaIV_250";
+        	    _medic addItem "ACE_plasmaIV_250";
         	};
         };
     };
