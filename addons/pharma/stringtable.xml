@@ -5,25 +5,25 @@
             <English>ACE-Pharmacy activated?</English>
             <German>ACE-Kreislauf aktivieren?</German>
             <Polish>ACE-Pharmacy ma być włączone?</Polish>
-            <Spanish>¿Activar ACE-Circulación?</Spanish>
-            <Chinese>啟用ACE-血型循環系統？</Chinese>
+            <Spanish>¿Activación de ACE-Pharmacy?</Spanish>
+            <Chinese>ACE-Pharmacy被激活？</Chinese>
             <Czech>ACE-pharmacy aktivováno?</Czech>
-            <Korean>ACE 순환계통 시스탬 활성화?</Korean>
+            <Korean>ACE-약국 활성화?</Korean>
             <French>ACE-Pharmacy activé?</French>
-            <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
-            <Italian>Attivare ACE-Circolazione?</Italian>
+            <Turkish>ACE-Eczacılık etkinleştirildi mi?</Turkish>
+            <Italian>ACE-Farmacia attivata?</Italian>
         </Key>
         <Key ID="STR_kat_pharma_NALOXONE_ACTIVE">
             <English>Allow players to use Naloxone?</English>
             <German>Stoffwechselabhängiger Puls?</German>
             <Polish>Pozwalać graczom na użycie Naloksonu?</Polish>
-            <Spanish>¿Pulso cardíaco depende de metabolismo?</Spanish>
-            <Chinese>依心率來決定代謝率？</Chinese>
+            <Spanish>¿Permitir a los jugadores usar Naloxona?</Spanish>
+            <Chinese>允许球员使用纳洛酮？</Chinese>
             <Czech>Povolit hráčům použití Naloxonu?</Czech>
-            <Korean>신채대사에 따라 심박수를 결정합니까?</Korean>
+            <Korean>플레이어가 날록손을 사용하도록 허용하시겠습니까?</Korean>
             <French>Autoriser Naloxone?</French>
-            <Turkish>Metabolizmaya Bağımlı kalp hızı?</Turkish>
-            <Italian>La frequenza cardiaca dipende dal metabolismo?</Italian>
+            <Turkish>Oyuncuların Naloxone kullanmasına izin verilsin mi?</Turkish>
+            <Italian>Permettere ai giocatori di usare il Naloxone?</Italian>
         </Key>
         <Key ID="STR_kat_pharma_CARBONATE_ACTIVE">
             <English>Allow players to use Ammonium Carbonate?</English>
@@ -119,7 +119,10 @@
             <French>Utilisé pour diminuer la douleur</French>
             <Chinese>用于抑制疼痛</Chinese>
             <Italian>Usata per sopprimere il dolore</Italian>
-            <Spanish>Se utiliza para suprimir el dolor</Spanish><Korean>통증을 억제하는 데 사용</Korean><Turkish>Ağrıyı bastırmak için kullanılır</Turkish><Czech>Používá se k potlačení bolesti</Czech>
+            <Spanish>Se utiliza para suprimir el dolor</Spanish>
+            <Korean>통증을 억제하는 데 사용</Korean>
+            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
+            <Czech>Používá se k potlačení bolesti</Czech>
         </Key>
         <Key ID="STR_kat_pharma_Painkillers_DescUse">
             <English>An analgesic used to combat light to moderate pain experiences.</English>
@@ -322,8 +325,8 @@
             <Turkish>Lidokain</Turkish>
             <Czech>Lidokain</Czech>
         </Key>
-        <Key ID="STR_KAT_pharma_Take_Lidocaine"
-            ><English>Push Lidocaine</English>
+        <Key ID="STR_KAT_pharma_Take_Lidocaine">
+            <English>Push Lidocaine</English>
             <Polish>Wstrzyknij Lidokainę</Polish>
             <French>Injecter Lidocaïne</French>
             <Chinese>推动利多卡因</Chinese>
@@ -775,7 +778,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Pain_empty">
             <English>%1 is now empty</English>
-         <German>%1 ist nun leer</German>
+            <German>%1 ist nun leer</German>
             <Polish>%1 jest pusty</Polish>
             <Spanish>%1 está vacío ahora</Spanish>
             <Chinese>%1 目前用完了</Chinese>
