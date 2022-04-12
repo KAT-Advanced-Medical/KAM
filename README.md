@@ -24,7 +24,7 @@
 
 **The ACE Advanced Medical System is nice, but we can do it better, even on a more realistic way and bring it on another level with these addons.**
 
-Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamartaka and Battlekeeper.
+Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamartaka, Battlekeeper, MJSTIC and Digii / Julian.
 
 ## Big thanks to
 
