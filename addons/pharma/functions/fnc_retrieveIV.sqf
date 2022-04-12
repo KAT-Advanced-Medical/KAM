@@ -77,21 +77,21 @@ if (_totalIvVolume >= 1) then {
     if (_blood > 1) then {
         switch (true) do {
         	case (_blood > 1200): {
-        	_medic addItem "ACE_bloodIV";
-        	_medic addItem "ACE_bloodIV_500";
+        	    _medic addItem "ACE_bloodIV";
+        	    _medic addItem "ACE_bloodIV_500";
         	};
         	case (_blood > 800): {
-        	_medic addItem "ACE_bloodIV";
+        	    _medic addItem "ACE_bloodIV";
         	};
         	case (_blood > 600): {
-        	_medic addItem "ACE_bloodIV_500";
-        	_medic addItem "ACE_bloodIV_250";
+        	    _medic addItem "ACE_bloodIV_500";
+        	    _medic addItem "ACE_bloodIV_250";
         	};
         	case (_blood > 400): {
-        	_medic addItem "ACE_bloodIV_500";
+        	    _medic addItem "ACE_bloodIV_500";
         	};
         	case (_blood > 150): {
-        	_medic addItem "ACE_bloodIV_250";
+        	    _medic addItem "ACE_bloodIV_250";
         	};
         };
     };
