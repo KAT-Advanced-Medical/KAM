@@ -105,7 +105,7 @@ switch (_reviveObject) do {
 if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AED-X" || _reviveObject isEqualTo "AED-Station") exitWith {
 	_chance = _chance + (_amiBoost + _lidoBoost * _epiBoost);
 
-    if ((_random <= _chance) && (_asystole == 1)) then {
+    if ((_random <= _chance) && (_asystole isEqualTo 1)) then {
 		["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
 		_patient setVariable [QGVAR(asystole), 0, true];
         _patient setVariable [QGVAR(CPRcount), 2, true];
