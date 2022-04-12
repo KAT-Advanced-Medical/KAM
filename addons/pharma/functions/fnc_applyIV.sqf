@@ -26,13 +26,17 @@ _patient setVariable [QGVAR(IVplaced), true, true];
 
 if (_usedItem isEqualTo "kat_IV_16") then {
     switch (_bodyPart) do {
-    	case "leftarm": {_patient setVariable [QGVAR(IVsite), 2, true];
+    	case "leftarm": {
+    	    _patient setVariable [QGVAR(IVsite), 2, true];
     	};
-    	case "rightarm": {_patient setVariable [QGVAR(IVsite), 3, true];
+    	case "rightarm": {
+    	    _patient setVariable [QGVAR(IVsite), 3, true];
     	};
-    	case "leftleg": {_patient setVariable [QGVAR(IVsite), 4, true];
+    	case "leftleg": {
+    	    _patient setVariable [QGVAR(IVsite), 4, true];
     	};
-    	case "rightleg": {_patient setVariable [QGVAR(IVsite), 5, true];
+    	case "rightleg": {
+    	    _patient setVariable [QGVAR(IVsite), 5, true];
     	};
     };
 
