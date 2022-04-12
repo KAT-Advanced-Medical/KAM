@@ -5,12 +5,10 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            "kat_PainkillerItem",
             "kat_X_AEDItem",
             "kat_bloodBankCrate"
         };
         weapons[] = {
-            "kat_Painkiller",
             "kat_bloodIV_O",
             "kat_bloodIV_A",
             "kat_bloodIV_B",
@@ -23,7 +21,6 @@ class CfgPatches {
             "kat_bloodIV_A_250",
             "kat_bloodIV_B_250",
             "kat_bloodIV_AB_250",
-            "kat_PainkillerItem",
             "kat_X_AED",
             "kat_crossPanel",
             "KAT_Empty_bloodIV_500",
@@ -57,7 +54,6 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"
-#include "CfgMagazines.hpp"
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"

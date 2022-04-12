@@ -25,7 +25,7 @@ private _classNameObjects = [];
 		_className = typeOf _x; 
 		_classNameObjects pushBack _className;
 	};
-} forEach nearestObjects [position player, [], 3];
+} forEach nearestObjects [position _patient, [], 3];
 
 if (!(_classNameObjects isEqualTo []) && {_canCPR}) exitWith {true};
 

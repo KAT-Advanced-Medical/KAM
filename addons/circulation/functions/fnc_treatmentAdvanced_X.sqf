@@ -32,11 +32,30 @@ _target setVariable [QGVAR(X), true, true];
 _player setVariable [QGVAR(use), true, true];
 _player setVariable [QGVAR(returnedAED), false, true];
 
+private _bloodLoss = _target getVariable ["ace_medical_bloodVolume", 6.0];
+private _asystole = _target getVariable [QGVAR(asystole), 0];
+
+if (_asystole isEqualTo 0) then {
+    if (_bloodLoss <= 2.8) then {
+        _target setVariable [QGVAR(asystole), 2, true];
+        _asystole = _target getVariable [QGVAR(asystole), 2];
+
+    } else {
+        _target setVariable [QGVAR(asystole), 1, true];
+        _asystole = _target getVariable [QGVAR(asystole), 1];
+    };
+};
+
+if !(GVAR(AdvRhythm)) then {
+    _target setVariable [QGVAR(asystole), 1, true];
+    _asystole = _target getVariable [QGVAR(asystole), 1];
+};
+
 // analyse sound feedback
 playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _target, false, getPosASL _target, 5, 1, 15];
 
 // wait for the analyse and give the advise
-if (_target getVariable ["ace_medical_heartRate", 0] == 0) then {
+if ((_target getVariable ["ace_medical_heartRate", 0] isEqualTo 0) && {_target getVariable [QGVAR(asystole), 0] < 2}) then {
     [{
         params ["_target"];
         playsound3D [QPATHTOF_SOUND(sounds\shock.wav), _target, false, getPosASL _target, 6, 1, 15];
@@ -68,7 +87,7 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
 	[round (_target getVariable ["ace_medical_heartRate", 0]),
 	(round (_target getVariable ["ace_medical_bloodPressure", [0,0]] select 1)),
 	(round (_target getVariable ["ace_medical_bloodPressure", [80,120]] select 0)),
-	(round (_target getVariable ["KAT_medical_airwayStatus", 100]))]] call ace_medical_treatment_fnc_addToLog;
+	(_target getVariable ["KAT_medical_airwayStatus", 100])]] call ace_medical_treatment_fnc_addToLog;
 }, 1, [_string, _target]] call CBA_fnc_addPerFrameHandler;
 
 
@@ -80,11 +99,9 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
 }, {
     params ["_player", "_target"];
 	if (_player getVariable [QGVAR(returnedAED), true]) exitWith {};
-	diag_log "Distance Limit achieved on AED-X";
     [_player, _target] call FUNC(returnAED_X);
 }, [_player, _target], GVAR(timeLimit_AEDX), {
     params ["_player", "_target"];
-	diag_log "Time Limit achieved on AED-X";
     [_player, _target] call FUNC(returnAED_X);
 }] call CBA_fnc_waitUntilAndExecute;
 
