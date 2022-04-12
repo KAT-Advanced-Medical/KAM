@@ -56,21 +56,21 @@ if (_totalIvVolume >= 1) then {
     if (_saline > 1) then {
         switch (true) do {
         	case (_saline > 1200): {
-        	_medic addItem "ACE_salineIV";
-        	_medic addItem "ACE_salineIV_500";
+        	    _medic addItem "ACE_salineIV";
+        	    _medic addItem "ACE_salineIV_500";
         	};
         	case (_saline > 800): {
-        	_medic addItem "ACE_salineIV";
+        	    _medic addItem "ACE_salineIV";
         	};
         	case (_saline > 600): {
-        	_medic addItem "ACE_salineIV_500";
-        	_medic addItem "ACE_salineIV_250";
+        	    _medic addItem "ACE_salineIV_500";
+        	    _medic addItem "ACE_salineIV_250";
         	};
         	case (_saline > 400): {
-        	_medic addItem "ACE_salineIV_500";
+        	    _medic addItem "ACE_salineIV_500";
         	};
         	case (_saline > 150): {
-        	_medic addItem "ACE_salineIV_250";
+        	    _medic addItem "ACE_salineIV_250";
         	};
         };
     };
