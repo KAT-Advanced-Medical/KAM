@@ -22,6 +22,9 @@
 
 params ["_medic", "_patient", "_bodyPart", "_usedItem"];
 
+if (_patient getVariable ["kat_IVPharma_PFH", false]) exitWith {};
+_patient setVariable ["kat_IVPharma_PFH", true];
+
 _patient setVariable [QGVAR(IVplaced), true, true];
 
 if (_usedItem isEqualTo "kat_IV_16") then {
@@ -51,8 +54,6 @@ if (_usedItem isEqualTo "kat_IV_16") then {
     [_patient, "FAST IO"] call ace_medical_treatment_fnc_addToTriageCard;
 };
 
-if (_patient getVariable ["kat_IVPharma_PFH", false]) exitWith {};
-_patient setVariable ["kat_IVPharma_PFH", true];
 
 [{
     params ["_args", "_idPFH"];
@@ -66,6 +67,7 @@ _patient setVariable ["kat_IVPharma_PFH", true];
 
         if (_bloodBags isEqualTo []) then {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
+            _unit setVariable ["kat_IVPharma_PFH", nil];
             _patient setVariable ["kat_IVPharma_PFH", false];
             _patient setVariable [QGVAR(IVplaced), false, true];
             _patient setVariable [QGVAR(IVsite), 0, true];
