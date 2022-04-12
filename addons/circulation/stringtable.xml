@@ -22,6 +22,7 @@
             <Chinese>先进的节奏被激活？</Chinese>
             <Italian>Ritmo avanzato attivato?</Italian>
             <Spanish>¿Ritmo avanzado activado?</Spanish>
+            <Czech>Pokročilý rytmus aktivován?</Czech>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_variableHR_ENABLE">
             <English>Metabolism Dependent heartrate?</English>
@@ -356,6 +357,7 @@
             <French>Vérifier le pouls</French>
             <Italian>Controllare il ritmo</Italian>
             <Spanish>Comprobar el ritmo</Spanish>
+            <Czech>Zkontrolovat rytmus</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag">
             <English>Check Dogtags</English>
@@ -498,6 +500,7 @@
             <Chinese>车辆。使用AED-X</Chinese>
             <Italian>Veicolo: Utilizzare AED-X</Italian>
             <Spanish>Vehículo: Utilice AED-X</Spanish>
+            <Czech>Vozidlo: Použít AED-X</Czech>
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Use">
             <English>Vehicle: Attach AED-X</English>
@@ -508,6 +511,7 @@
             <Chinese>车辆。安装AED-X</Chinese>
             <Italian>Veicolo: Attaccare AED-X</Italian>
             <Spanish>Vehículo: Coloca el AED-X</Spanish>
+            <Czech>Vozidlo: Připevnit AED-X</Czech>
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Remove">
             <English>Vehicle: Remove AED-X</English>
@@ -518,6 +522,7 @@
             <Chinese>车辆。移除AED-X</Chinese>
             <Italian>Veicolo: Rimuovere AED-X</Italian>
             <Spanish>Vehículo: Retirar AED-X</Spanish>
+            <Czech>Vozidlo: Odstranit AED-X</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_Action_Progress">
             <English>Using AED-X defibrillator</English>
@@ -996,6 +1001,7 @@
             <Chinese>使用血型来抽血？</Chinese>
             <Italian>Use Bloodgroups for drawing blood?</Italian>
             <Spanish>¿Utilizar los grupos sanguíneos para la extracción de sangre?</Spanish>
+            <Czech>Použít krevní skupiny pro odebírání krve?</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_SELF_BLOOD_DRAW">
             <English>Enable self blood draw</English>
@@ -1042,6 +1048,7 @@
             <Chinese>献血者的最小血量（升）</Chinese>
             <Italian>Volume minimo di sangue per il donatore (litri)</Italian>
             <Spanish>Volume minimo di sangue per il donatore (litri)</Spanish>
+            <Czech>Minimální objem krve pro dárce (litry)</Czech>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW_DESC">
             <English>Minimum volume of blood allowed to drain a donor to, to ignore this setting set to 0</English>
@@ -1052,6 +1059,7 @@
             <Chinese>혈액 채취에 혈액 그룹을 사용합니까?</Chinese>
             <Italian>Volume minimo di sangue consentito per drenare un donatore, per ignorare questa impostazione impostare su 0</Italian>
             <Spanish>Volumen mínimo de sangre que se permite drenar a un donante, para ignorar este parámetro se establece en 0</Spanish>
+            <Czech>Minimální objem krve, který lze z dárce odebrat, pro ignorování nastavení nastavte 0</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge">
             <English>AED Beep and Charge sound</English>
