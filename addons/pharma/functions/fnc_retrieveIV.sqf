@@ -40,13 +40,13 @@ private _plasma = 0;
     _x params ["_volumeRemaining", "_type"];
     switch (_type) do {
         case ("Saline"): {
-        _saline = _saline + _volumeRemaining;
+            _saline = _saline + _volumeRemaining;
         };
         case ("Blood"): {
-        _blood = _blood + _volumeRemaining;
+            _blood = _blood + _volumeRemaining;
         };
         case ("Plasma"): {
-        _plasma = _plasma + _volumeRemaining;
+            _plasma = _plasma + _volumeRemaining;
         };
     };
     _totalIvVolume = _totalIvVolume + _volumeRemaining;
