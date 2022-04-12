@@ -34,7 +34,7 @@ _target setVariable [QGVAR(pulseoximeter), true, true];
 
     [_target, "quick_view", "STR_kat_breathing_pulseoxi_Log"] call kat_circulation_fnc_removeLog;
     [_target, "quick_view", "STR_kat_breathing_pulseoxi_Log", [round (_target getVariable ["ace_medical_heartRate", 80]),
-        round (_target getVariable ["KAT_medical_airwayStatus", 100])]] call ace_medical_treatment_fnc_addToLog;
+        _target getVariable ["KAT_medical_airwayStatus", 100]]] call ace_medical_treatment_fnc_addToLog;
 }, 1, [_target]] call CBA_fnc_addPerFrameHandler;
 
 [_target, "quick_view", "STR_kat_breathing_pulseoxi_Log", [round (_target getVariable ["ace_medical_heartRate", 80]),

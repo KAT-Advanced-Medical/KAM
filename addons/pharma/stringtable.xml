@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="pharma">
+        <Key ID="STR_kat_pharma_SETTING_ENABLE">
+            <English>ACE-Pharmacy activated?</English>
+            <German>ACE-Kreislauf aktivieren?</German>
+            <Polish>ACE-Czy zaawansowane krążenie ma być włączone?</Polish>
+            <Spanish>¿Activar ACE-Circulación?</Spanish>
+            <Chinese>啟用ACE-血型循環系統？</Chinese>
+            <Czech>ACE-pharma aktivováno?</Czech>
+            <Korean>ACE 순환계통 시스탬 활성화?</Korean>
+            <French>Ace-pharma activé?</French>
+            <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
+            <Italian>Attivare ACE-Circolazione?</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_NALOXONE_ACTIVE">
+            <English>Allow players to use Naloxone?</English>
+            <German>Stoffwechselabhängiger Puls?</German>
+            <Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
+            <Spanish>¿Pulso cardíaco depende de metabolismo?</Spanish>
+            <Chinese>依心率來決定代謝率？</Chinese>
+            <Czech>Metabolismus závislý na tepu?</Czech>
+            <Korean>신채대사에 따라 심박수를 결정합니까?</Korean>
+            <French>Le pouls dépend du métabolisme?</French>
+            <Turkish>Metabolizmaya Bağımlı kalp hızı?</Turkish>
+            <Italian>La frequenza cardiaca dipende dal metabolismo?</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_CARBONATE_ACTIVE">
+            <English>Allow players to use Ammonium Carbonate?</English>
+        </Key>
+        <Key ID="STR_kat_pharma_TXA_ACTIVE">
+            <English>Allow players to use TXA?</English>
+        </Key>
+        <Key ID="STR_kat_pharma_IV_MEDIC">
+            <English>Changes what medical level is required to set IVs/IOs</English>
+        </Key>]
+        <Key ID="STR_kat_pharma_IV_DROP">
+            <English>Changes the time at which IVs/IOs fall out of a patient</English>
+        </Key>
+        <Key ID="STR_kat_pharma_IV_REUSE">
+            <English>Sets if IV/IO needles are reusable</English>
+        </Key>
+        <Key ID="STR_kat_pharma_PUSH_TIME">
+            <English>Push time for all IV Medications</English>
+        </Key>
+        <Key ID="STR_kat_pharma_IV_TIME">
+            <English>Time to establish IVs</English>
+        </Key>
+        <Key ID="STR_kat_pharma_IO_TIME">
+            <English>Time to establish IOs</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Painkillers_DescShort">
+            <English>Used to suppress pain</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Painkillers_DescUse">
+            <English>An analgesic used to combat light to moderate pain experiences.</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Painkillers_Box_Display">
+            <English>Painkillers</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Inject_Box_Painkillers">
+            <English>Take Painkillers</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Carbonate_DescShort">
+            <English>Used to restore consciousness</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Carbonate_DescUse">
+            <English>The primary ingredient in smelling salts, used to restore consciousness in limited situations.</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Carbonate_Box_Display">
+            <English>Ammonium Carbonate</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Take_Carbonate">
+            <English>Use Carbonate</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Naloxone_DescShort">
+            <English>Used to reverse opioid overdoses</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Naloxone_DescUse">
+            <English>An opioid antagonist that can reverse opioid overdoses from medications such as Morphine.</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Naloxone_Box_Display">
+            <English>Naloxone</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Take_Naloxone">
+            <English>Use Naloxone</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Amiodarone_DescShort">
+            <English>Used to combat cardiac arrest</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Amiodarone_DescUse">
+            <English>An anti-arrhythmic used when combatting shockable forms of cardiac arrest.</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Amiodarone_Box_Display">
+            <English>Amiodarone</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Amiodarone">
+            <English>Push Amiodarone</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Lidocaine_DescShort">
+            <English>Used to combat cardiac arrest</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Lidocaine_DescUse">
+            <English>An anti-arrhythmic used when combatting shockable forms of cardiac arrest.</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Lidocaine_Box_Display">
+            <English>Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Lidocaine">
+            <English>Push Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Atropine_DescShort">
+            <English>Used to treat bradycardia</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Atropine_DescUse">
+            <English>Commonly used to treat poisoning, Atropine can also be used to treat bradycardia.</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Atropine_Box_Display">
+            <English>Atropine</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Atropine">
+            <English>Push Atropine</English>
+        </Key>
+        <Key ID="STR_kat_pharma_TXA_DescShort">
+            <English>Encourages clot formation</English>
+        </Key>
+        <Key ID="STR_kat_pharma_TXA_DescUse">
+            <English>Used to encourage and stabilize clots in a patient.</English>
+        </Key>
+        <Key ID="STR_kat_pharma_TXA_Box_Display">
+            <English>TXA</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Take_TXA">
+            <English>Push TXA</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Norep_DescShort">
+            <English>Used to raise blood pressure</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Norep_DescUse">
+            <English>A vasopressor used to increase blood pressure and combat shock.</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Norep_Box_Display">
+            <English>Norepinephrine</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Take_Norep">
+            <English>Push Norepinephrine</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Phenyl_DescShort">
+            <English>Used to raise blood pressure</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Phenyl_DescUse">
+            <English>A vasopressor used to increase blood pressure and combat shock.</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Phenyl_Box_Display">
+            <English>Phenylephrine</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Take_Phenyl">
+            <English>Push Phenylephrine</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Nitro_DescShort">
+            <English>Used to lower blood pressure</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Nitro_DescUse">
+            <English>A vasodilator used to decrease blood pressure and combat hypertension.</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Nitro_Box_Display">
+            <English>Nitroglycerin</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Take_Nitro">
+            <English>Push Nitroglycerin</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Take_Reorient">
+            <English>Reorient Patient</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Reorienting">
+            <English>Reorienting</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Using">
+            <English>Using</English>
+            <German>Schlucke</German>
+            <Polish>Używanie</Polish>
+            <Spanish>Usando</Spanish>
+            <Chinese>服用中</Chinese>
+            <Czech>Používám</Czech>
+            <Korean>사용중</Korean>
+            <French>Utilisation</French>
+            <Turkish>Kullanılıyor</Turkish>
+            <Italian>Usando</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_Pushing">
+            <English>Pushing</English>
+            <German>Schlucke</German>
+            <Polish>Wstrzykiwanie</Polish>
+            <Spanish>Empujando</Spanish>
+            <Chinese>服用中</Chinese>
+            <Czech>Používám</Czech>
+            <Korean>사용중</Korean>
+            <French>En administrant</French>
+            <Turkish>Kullanılıyor</Turkish>
+            <Italian>Somministrando</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_push_log">
+            <English>%1 pushed %2</English>
+            <German>%1 intubierte mit %2</German>
+            <Polish>%1 wstrzyknął %2</Polish>
+            <Spanish>%1 administró %2</Spanish>
+            <Chinese>%1 被插入一個 %2</Chinese>
+            <Czech>%1 vložil %2</Czech>
+            <Korean>%1 삽입됨 %2</Korean>
+            <French>%1 a administré un(e) %2</French>
+            <Turkish>% 1,% 2 eklendi</Turkish>
+            <Italian>%1 ha somministrato %2</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_inject_log">
+            <English>%1 injected %2</English>
+            <German>%1 intubierte mit %2</German>
+            <Polish>%1 włożył %2</Polish>
+            <Spanish>%1 inyectó %2</Spanish>
+            <Chinese>%1 被插入一個 %2</Chinese>
+            <Czech>%1 vložil %2</Czech>
+            <Korean>%1 삽입됨 %2</Korean>
+            <French>%1 a injecté un(e) %2</French>
+            <Turkish>% 1,% 2 eklendi</Turkish>
+            <Italian>%1 ha iniettato %2</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_use_log">
+            <English>%1 used %2</English>
+            <German>%1 intubierte mit %2</German>
+            <Polish>%1 użył %2</Polish>
+            <Spanish>%1 usado %2</Spanish>
+            <Chinese>%1 被插入一個 %2</Chinese>
+            <Czech>%1 vložil %2</Czech>
+            <Korean>%1 삽입됨 %2</Korean>
+            <French>%1 a utilisé un(e) %2</French>
+            <Turkish>% 1,% 2 eklendi</Turkish>
+            <Italian>%1 ha usato %2</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_IV_16_Display">
+            <English>16g IV</English>
+            <German>16g IV</German>
+            <Polish>16g IV</Polish>
+            <Spanish>16g IV</Spanish>
+            <Chinese>16g IV</Chinese>
+            <Czech>16g IV</Czech>
+            <Korean>16g IV</Korean>
+            <French>16g IV</French>
+            <Turkish>16g IV</Turkish>
+            <Italian>16g IV</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_IV_DescShort">
+            <English>Intravenous Needle</English>
+            <German>Schmerzbekämpfer</German>
+            <Polish>Kaniula dożylna</Polish>
+            <Spanish>Usado para suprimir el dolor</Spanish>
+            <Chinese>用於舒緩疼痛</Chinese>
+            <Czech>Užíváno na potlačení bolesti</Czech>
+            <Korean>통증완화를 위해 사용합니다</Korean>
+            <French>Utilisé pour diminuer la douleur</French>
+            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
+            <Italian>Usato per sopprimere il dolore</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_IO_45_Display">
+            <English>FAST IO</English>
+            <German>FAST IO</German>
+            <Polish>FAST IO</Polish>
+            <Spanish>FAST IO</Spanish>
+            <Chinese>FAST IO</Chinese>
+            <Czech>FAST IO</Czech>
+            <Korean>FAST IO</Korean>
+            <French>FAST IO</French>
+            <Turkish>FAST IO</Turkish>
+            <Italian>FAST IO</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_IO_DescShort">
+            <English>Intraosseous Needle</English>
+            <German>Schmerzbekämpfer</German>
+            <Polish>Igła doszpikowa</Polish>
+            <Spanish>Aguja intraósea</Spanish>
+            <Chinese>用於舒緩疼痛</Chinese>
+            <Czech>Intraoseální jehla</Czech>
+            <Korean>통증완화를 위해 사용합니다</Korean>
+            <French>Canule intra-osseuse</French>
+            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
+            <Italian>Ago cannula intraossea</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_IV_DescUse">
+            <English>Used to allow fluids and certain medications to enter the body.</English>
+            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
+            <Polish>Używany w celu dostarczenia płynów i pewnych leków do krwioobiegu.</Polish>
+            <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
+            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
+            <Czech>Analgetikum používané k potlačení lehkých až středně bolestivých zážitků.</Czech>
+            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
+            <French>Un analgésique utilisé pour diminuer la douleur.</French>
+            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
+            <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_Apply_IV_16">
+            <English>Establish 16g IV</English>
+            <Polish>Załóż 16G IV</Polish>
+            <Spanish>Coloque 16g IV</Spanish>
+            <French>Insertion 16g IV</French>
+            <Italian>Posiziona 16g IV</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_Apply_IO_45">
+            <English>Establish FAST IO</English>
+            <Polish>Załóż 45mm IO</Polish>
+            <Spanish>Coloque 45mm IO</Spanish>
+            <Czech>Založit 45mm IO</Czech>
+            <French>Insertion 45mm IO</French>
+            <Italian>Posiziona 45mm IO</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_Applying_IV">
+            <English>Establishing IV/IO</English>
+            <Polish>Zakładanie IV</Polish>
+            <Spanish>Colocando IV</Spanish>
+            <Czech>Kontroluji</Czech>
+            <French>Insertion IV</French>
+            <Turkish>Kontrol Ediliyor</Turkish>
+            <Italian>Posizionando IV</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_Applying_IO">
+            <English>Establishing IO</English>
+            <Polish>Zakładanie IO</Polish>
+            <Spanish>Colocando IO</Spanish>
+            <Czech>Navázání IO</Czech>
+            <French>Insertion IO</French>
+            <Turkish>Kontrol Ediliyor</Turkish>
+            <Italian>Posizionando IO</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_iv_log">
+            <English>%1 established a %2</English>
+            <German>%1 intubierte mit %2</German>
+            <Polish>%1 założył %2</Polish>
+            <Spanish>%1 coloqueado %2</Spanish>
+            <Chinese>%1 被插入一個 %2</Chinese>
+            <Czech>%1 vložil %2</Czech>
+            <Korean>%1 삽입됨 %2</Korean>
+            <French>%1 a inseré un(e) %2</French>
+            <Turkish>% 1,% 2 eklendi</Turkish>
+            <Italian>%1 ha posizionato %2</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_Remove_IV">
+            <English>Remove IV/IO</English>
+            <Polish>Zdejmij IV/IO</Polish>
+            <Spanish>Quitar IV / IO</Spanish>
+            <French>Retire</French>
+            <Turkish>Kontrol Ediliyor</Turkish>
+            <Italian>Rimuovi IV/IO</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_Removing_IV">
+            <English>Removing</English>
+            <Polish>Zdejmowanie</Polish>
+            <Spanish>Quitando</Spanish>
+            <French>En train de retirer</French>
+            <Turkish>Kontrol Ediliyor</Turkish>
+            <Italian>Rimuovendo</Italian>
+        </Key>
+        <Key ID="STR_kat_pharma_Pain_empty">
+            <English>%1 is now empty</English>
+            <German>%1 ist nun leer</German>
+            <Polish>%1 jest pusty</Polish>
+            <Spanish>%1 está vacío ahora</Spanish>
+            <Chinese>%1 目前用完了</Chinese>
+            <Czech>%1 je prázdná</Czech>
+            <Korean>%1 는 현제 비었음</Korean>
+            <French>%1 est maintenant vide</French>
+            <Turkish>% 1 artık boş</Turkish>
+            <Italian>è vuota</Italian>
+        </Key>
+    </Package>
+</Project>

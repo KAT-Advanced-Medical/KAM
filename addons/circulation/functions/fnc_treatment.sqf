@@ -166,8 +166,6 @@ if (_callbackProgress isEqualTo {}) then {
 
 [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem] call _callbackStart;
 
-["ace_treatmentStarted", [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem]] call CBA_fnc_localEvent;
-
 [
     _treatmentTime,
     [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem],
