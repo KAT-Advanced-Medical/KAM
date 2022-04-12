@@ -43,6 +43,9 @@
         <Key ID="STR_kat_breathing_SETTING_MultiplyNegative">
             <English>SpO2 negative multiplier</English>
         </Key>
+        <Key ID="STR_kat_breathing_SETTING_SpO2_Perfusion">
+            <English>Enable cardiac arrest SpO2 reduction</English>
+        </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
             <German>Wahrscheinlichkeit für einen Pneumothorax</German>
@@ -110,7 +113,7 @@
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
             <Czech>Dávám</Czech>
-            <Korean>배치중</Korean>
+            <Korean>부착중</Korean>
             <French>Mise en place</French>
             <Turkish>Yerleştiriliyor</Turkish>
             <Italian>Posizionando</Italian>

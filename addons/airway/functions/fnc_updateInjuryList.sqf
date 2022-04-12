@@ -150,7 +150,13 @@ if (_target getVariable [QGVAR(overstretch), false] && _selectionN isEqualTo 0) 
     _woundEntries pushback [localize LSTRING(overstretched), [0.1, 1, 1, 1]];
 };
 
-if (_target getVariable ["KAT_medical_pneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_pneumothorax_hardcore)) then {
+private _tensionhemothorax = false;
+
+if ((_target getVariable ["KAT_medical_tensionpneumothorax", false]) || (_target getVariable ["KAT_medical_hemopneumothorax", false])) then {
+        _tensionhemothorax = true;
+};
+
+if (_target getVariable ["KAT_medical_pneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_pneumothorax_hardcore) && !(_tensionhemothorax)) then {
     _woundEntries pushback [localize ELSTRING(breathing,pneumothorax_mm), [1,1,1,1]];
 };
 

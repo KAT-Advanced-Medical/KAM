@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
+ * Author: Katalam, edited by Tomcat, Kygan, YetheSamartaka and MJSTIC
  * Handling oxygen saturation for breathing
  *
  * Arguments:
@@ -35,12 +35,21 @@ if (!local _unit) then {
         _unit setVariable ["KAT_medical_airwayStatus", 100, true];
     };
 
-    private _pneumothorax = _unit getVariable ["KAT_medical_pneumothorax", false];
-    private _hemothorax = _unit getVariable ["KAT_medical_hemopneumothorax", false];
+    private _airway = true;
+    private _breathing = true;
+
+    if ((_unit getVariable ["KAT_medical_tensionpneumothorax", false]) || (_unit getVariable ["KAT_medical_hemopneumothorax", false]) || (_unit getVariable ["KAT_medical_pneumothorax", false])) then {
+        _breathing = false;
+    };
+
+    if ((_unit getVariable ["KAT_medical_airwayOccluded", false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])) then {
+        _airway = false;
+    };
+
     private _status = _unit getVariable ["KAT_medical_airwayStatus", 100];
-    private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
-    private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
+	private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
     private _heartRate = _unit getVariable ["ace_medical_heartRate", 0];
+
     private _output = 0;
     private _finalOutput = 0;
     private _multiplierPositive = GVAR(SpO2_MultiplyPositive);
@@ -61,18 +70,47 @@ if (!local _unit) then {
     };
 
     if !([_unit] call ace_common_fnc_isAwake) exitWith {
-        if (_occluded == true || _obstruction == true) then {
-            _output = _output - (0.75 * _multiplierNegative);
-        } else {
-            _output = _output + (0.5 * _multiplierPositive);
+        if !(_breathing) exitWith {
+            _output = -0.3 * _multiplierNegative;
+            _finalOutput = _status + _output;
+
+            if (_finalOutput > 100) then {
+                _finalOutput = 100;
+            };
+
+            if (_finalOutput < 1) then {
+                _finalOutput = 1;
+            };
+
+            _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
         };
 
-        if (_pneumothorax == true || _hemothorax == true) then {
-            _output = _output - (0.75 * _multiplierNegative);
+        if !(_airway) exitWith {
+            _output = -0.3 * _multiplierNegative;
+
+            if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) || _breathing)) then {
+                _output = 0.15 * _multiplierPositive;
+            };
+
+            _finalOutput = _status + _output;
+
+            if (_finalOutput > 100) then {
+                _finalOutput = 100;
+            };
+
+            if (_finalOutput < 1) then {
+                _finalOutput = 1;
+            };
+
+            _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
         };
 
-        if (_heartRate <= 40) then {
-            _output = -0.75 * _multiplierNegative;
+        if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
+            _output = -0.2 * _multiplierNegative;
+        };
+
+        if (_heartRate >= 25) then {
+            _output = 0.3 * _multiplierPositive;
         };
 
         _finalOutput = _status + _output;
@@ -89,13 +127,10 @@ if (!local _unit) then {
     };
 
     if ([_unit] call ace_common_fnc_isAwake) exitWith {
-        switch (true) do {
-            case (_pneumothorax == true || _hemothorax == true): {
-                _output = _output - (0.75 * _multiplierNegative);
-            };
-            case (true): {
-                _output = _output + (1 * _multiplierPositive);
-            };
+        if !(_breathing) then {
+            _output = -0.2 * _multiplierNegative;
+        } else {
+            _output = 0.5 * _multiplierPositive;
         };
 
         _finalOutput = _status + _output;
@@ -105,7 +140,9 @@ if (!local _unit) then {
         };
 
         _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
+	if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= 75}) then {
+			["ace_medical_CriticalVitals", _unit] call CBA_fnc_localEvent;
+		};
     };
 
 }, 3, [_unit]] call CBA_fnc_addPerFrameHandler;
-

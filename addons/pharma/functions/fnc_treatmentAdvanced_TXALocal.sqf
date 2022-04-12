@@ -8,7 +8,7 @@
  * 1: Medication <STRING>
  *
  * Return Value:
- * None
+ * Succesful treatment started <BOOL>
  *
  * Example:
  * [player, "TXA"] call kat_pharma_fnc_treatmentAdvanced_TXALocal;

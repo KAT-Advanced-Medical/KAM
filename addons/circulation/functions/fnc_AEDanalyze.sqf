@@ -32,7 +32,7 @@ if (_asystole isEqualTo 0) then {
 	};
 };
 
-if ((GVAR(AdvRhythm) == false)) then {
+if !(GVAR(AdvRhythm)) then {
     _patient setVariable [QGVAR(asystole), 1, true];
     _asystole = _patient getVariable [QGVAR(asystole), 1];
 };

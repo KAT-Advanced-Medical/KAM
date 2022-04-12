@@ -29,7 +29,7 @@ if (!isNil {_unit getVariable ["ace_medical_ivBags",[]]}) then {
     private _pulse = GET_HEART_RATE(_unit);
 
     if (_pulse < 20) then {
-        _flow = 0;
+        _flow = _flow / 1.5;
     };
 
     _bloodBags = _bloodBags apply {

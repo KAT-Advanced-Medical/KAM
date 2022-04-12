@@ -28,7 +28,7 @@ if (ace_interact_menu_menuBackground == 2) then {0 cutRsc ["ace_interact_menu_me
 
 // Set target name as title
 private _ctrlTitle = _display displayCtrl IDC_TITLE;
-_ctrlTitle ctrlSetText ([ace_medical_gui_target] call ace_common_getName);
+_ctrlTitle ctrlSetText ([ace_medical_gui_target] call ace_common_fnc_getName);
 
 // Initially hide the triage select buttons
 [_display] call ace_medical_gui_fnc_toggleTriageSelect;
@@ -51,9 +51,9 @@ private _list = [
     [IDC_MEDICATION, "medication"],
     [IDC_AIRWAY, "airway"],
     [IDC_ADVANCED, "advanced"],
+    [IDC_SURGERY, "surgery"],
     [IDC_DRAG, "drag"],
-    [IDC_TOGGLE, true],
-    [IDC_SURGERY, "surgery"]
+    [IDC_TOGGLE, true]
 ];
 private _countEnabled = {
     _x params ["", "_category"];

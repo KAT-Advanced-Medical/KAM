@@ -92,16 +92,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Reorient success Chance
-[
-    QGVAR(Reorient_successChance),
-    "SLIDER",
-    LLSTRING(Reorient_successChance),
-    "KAT - ADV Medical: Pharmacy",
-    [0, 100, 25, 0],
-    true
-] call CBA_Settings_fnc_init;
-
 [
     QGVAR(PushTime),
     "SLIDER",

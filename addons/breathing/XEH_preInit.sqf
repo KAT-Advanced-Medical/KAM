@@ -68,6 +68,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// changes whether SpO2 falls during cardiac arrest
+[
+    QGVAR(SpO2_perfusion),
+    "CHECKBOX",
+    LLSTRING(SETTING_SpO2_Perfusion),
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 // breathing probability for a pneumothorax
 // a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
 [
