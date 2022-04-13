@@ -76,7 +76,7 @@
             <Chinese>如果静脉注射针头是可重复使用的，则应设置。</Chinese>
             <Italian>Imposta se gli aghi IV/IO sono riutilizzabili</Italian>
             <Spanish>Establece si las agujas IV/IO son reutilizables</Spanish>
-            <Korean>IV/IO 바늘 재사용 가능 여부 설정</Korean>
+            <Korean>IV/IO 바늘 재사용 가능하나 </Korean>
             <Turkish>IV/IO iğnelerinin yeniden kullanılabilir olup olmadığını ayarlar</Turkish>
             <Czech>Nastaví, zda IV/IO jehly jsou znovu-použitelné</Czech>
         </Key>
@@ -87,7 +87,7 @@
             <Chinese>所有静脉注射药物的推注时间</Chinese>
             <Italian>Tempo di spinta per tutti i farmaci per via endovenosa</Italian>
             <Spanish>Tiempo de empuje para todos los medicamentos intravenosos</Spanish>
-            <Korean>모든 IV 약물에 대한 푸시 시간</Korean>
+            <Korean>IV 약물을 쓸 시간을 밀워</Korean>
             <Turkish>Tüm IV İlaçlar için itme zamanı</Turkish>
             <Czech>Čas potřebný k vstříknutí všech IV léků</Czech>
         </Key>
@@ -98,7 +98,7 @@
             <Chinese>建立静脉注射的时间</Chinese>
             <Italian>Tempo per stabilire le flebo</Italian>
             <Spanish>Tiempo para establecer las vías intravenosas</Spanish>
-            <Korean>IV를 설정하는 시간</Korean>
+            <Korean>IV를 설정늘하는 시간</Korean>
             <Turkish>IV'ler oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IV</Czech>
         </Key>
@@ -109,7 +109,7 @@
             <Chinese>建立国际组织的时间</Chinese>
             <Italian>Tempo per stabilire gli OI</Italian>
             <Spanish>Momento de establecer las OI</Spanish>
-            <Korean>IO 설정 시간</Korean>
+            <Korean>IO 설정을하는 시간</Korean>
             <Turkish>IO'ları oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IO</Czech>
         </Key>
@@ -156,7 +156,7 @@
             <French>Administrer Perfalgan</French>
             <German>Schlucke Schmerzmittel</German>
             <Italian>Prendi antidolorifici</Italian>
-            <Korean>진통제 복용</Korean>
+            <Korean>진통제 써</Korean>
             <Spanish>Usar analgésico</Spanish>
             <Turkish>Ağrı Kesicileri Al</Turkish>
         </Key>
