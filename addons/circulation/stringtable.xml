@@ -499,7 +499,7 @@
             <Turkish>Araç: AED-X kullanın</Turkish>
             <Chinese>车辆。使用AED-X</Chinese>
             <Italian>Veicolo: Utilizzare DAE-X</Italian>
-            <Spanish>Vehículo: Utilice AED-X</Spanish>
+            <Spanish>Vehículo: Utilizar DEA-X</Spanish>
             <Czech>Vozidlo: Použít AED-X</Czech>
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Use">
@@ -510,7 +510,7 @@
             <Turkish>Araç: AED-X'i takın</Turkish>
             <Chinese>车辆。安装AED-X</Chinese>
             <Italian>Veicolo: Attaccare DAE-X</Italian>
-            <Spanish>Vehículo: Coloca el AED-X</Spanish>
+            <Spanish>Vehículo: Colocar DEA-X</Spanish>
             <Czech>Vozidlo: Připevnit AED-X</Czech>
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Remove">
@@ -521,7 +521,7 @@
             <Turkish>Araç: AED-X'i kaldırın</Turkish>
             <Chinese>车辆。移除AED-X</Chinese>
             <Italian>Veicolo: Rimuovere DAE-X</Italian>
-            <Spanish>Vehículo: Retirar AED-X</Spanish>
+            <Spanish>Vehículo: Retirar DEA-X</Spanish>
             <Czech>Vozidlo: Odstranit AED-X</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_Action_Progress">
@@ -1047,7 +1047,7 @@
             <French>Volume minimum de sang du donneur (litres)</French>
             <Chinese>献血者的最小血量（升）</Chinese>
             <Italian>Volume minimo di sangue per il donatore (litri)</Italian>
-            <Spanish>Volume minimo di sangue per il donatore (litri)</Spanish>
+            <Spanish>Volúmen mínimo de sangre para el donante (litro)</Spanish>
             <Czech>Minimální objem krve pro dárce (litry)</Czech>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW_DESC">
@@ -1058,7 +1058,7 @@
             <French>Volume minimum de sang à prélever au donneur, pour ignorer laisser sur 0</French>
             <Chinese>혈액 채취에 혈액 그룹을 사용합니까?</Chinese>
             <Italian>Volume minimo di sangue consentito per prelevare un donatore, per ignorare questa impostazione impostare su 0</Italian>
-            <Spanish>Volumen mínimo de sangre que se permite drenar a un donante, para ignorar este parámetro se establece en 0</Spanish>
+            <Spanish>Volumen mínimo de sangre que se permite extraer a un donante, para ignorar este parámetro se establece en 0</Spanish>
             <Czech>Minimální objem krve, který lze z dárce odebrat, pro ignorování nastavení nastavte 0</Czech>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge">
