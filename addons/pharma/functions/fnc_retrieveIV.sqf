@@ -119,5 +119,3 @@ if (_totalIvVolume >= 1) then {
 };
 
 _patient setVariable ["ace_medical_ivBags", nil, true];
-
-

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat">
+    <Package name="zeus">
+        <Key ID="STR_kat_zeus_ModuleManageAirway_Obstruction">
+            <English>Airway obstruction: </English>
+            <German>Atemwegsobstruktion: </German>
+            <Czech>Zablokování dýchacích cest: </Czech>
+            <French>Obstruction des voies aériennes: </French>
+            <Polish>Zator dróg oddechowych: </Polish>
+            <Spanish>Obstrucción de vías aéreas: </Spanish>
+            <Turkish>ACE-Eczacılık etkinleştirildi mi?</Turkish>
+            <Korean>기도 방해: </Korean>
+            <Chinese>ACE-Pharmacy被激活？</Chinese>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_Occlusion">
+            <English>Airway occlusion: </English>
+            <German>Atemwegsverstopfung: </German>
+            <Czech>Uzavření dýchacích cest: </Czech>
+            <Polish>Zablokowanie dróg oddechowych: </Polish>
+            <Spanish>Oclusión de vías aéreas: </Spanish>
+            <French>Occlusion des voies aériennes:</French>
+            <Korean>기도 폐쇄: </Korean>
+            <Chinese>气道闭塞。: </Chinese>
+            <Turkish>Hava yolu tıkanıklığı: </Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_Pneumothorax">
+            <English>Pneumothorax: </English>
+            <German>Pneumothorax: </German>
+            <Czech>Pneumotorax: </Czech>
+            <French>Pneumothorax: </French>
+            <Polish>Odma opłucna: </Polish>
+            <Spanish>Neumotórax: </Spanish>
+            <Korean>기흉: </Korean>
+            <Chinese>气胸:</Chinese>
+            <Turkish>Pnömotoraks: </Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_Hemopneumothorax">
+            <English>Hemopneumothorax: </English>
+            <German>Hämopneumothorax: </German>
+            <Czech>Hemopneumotorax: </Czech>
+            <French>Hémopneumothorax: </French>
+            <Polish>Krwiak opłucnej: </Polish>
+            <Spanish>Hemoneumotórax: </Spanish>
+            <Korean>혈기흉: </Korean>
+            <Chinese>血气胸:</Chinese>
+            <Turkish>Hemopnömotoraks: </Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_Tensionpneumothorax">
+            <English>Tension pneumothorax: </English>
+            <German>Spannungspneumothorax: </German>
+            <Czech>Tenzní pneumotorax: </Czech>
+            <French>Pneumothorax hypertensif: </French>
+            <Polish>Odma prężna: </Polish>
+            <Spanish>Neumotórax a tensión: </Spanish>
+            <Korean>긴장성 기흉: </Korean>
+            <Chinese>紧张性气胸。:</Chinese>
+            <Turkish>Tansiyon pnömotoraks: </Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_SpO2Value">
+            <English>SpO2 value: </English>
+            <German>SpO2-Wert: </German>
+            <Czech>Hodnota SpO2: </Czech>
+            <French>Valeur Sp02: </French>
+            <Polish>Wartość SpO2: </Polish>
+            <Spanish>Valor SpO2: </Spanish>
+            <Korean>Sp02 값: </Korean>
+            <Chinese>SpO2值。</Chinese>
+            <Turkish>SpO2 değeri: </Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_bloodGroup">
+            <English>Blood group: </English>
+            <German>Blutgruppe: </German>
+            <Czech>Krevní skupina: </Czech>
+            <French>Groupe sanguin: </French>
+            <Polish>Grupa krwi: </Polish>
+            <Spanish>Grupo sanguíneo: </Spanish>
+            <Chinese>血型。</Chinese>
+            <Korean>혈액형: </Korean>
+            <Turkish>Kan grubu: </Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_ModuleManageAirway_bloodVolume">
+            <English>Blood volume: </English>
+            <German>blutvolumen: </German>
+            <Czech>Množství krve: </Czech>
+            <French>Volume sanguin: </French>
+            <Polish>Ilość krwi: </Polish>
+            <Spanish>Volumen sanguíneo: </Spanish>
+            <Chinese>血量。</Chinese>
+            <Korean>혈액량: </Korean>
+            <Turkish>Kan basıncı: </Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_manageAirway_Module_displayname">
+            <English>Manage Airways</English>
+            <German>Atemwege verwalten</German>
+            <Czech>Upravit dýchací cesty</Czech>
+            <French>Gestion des voies aériennes</French>
+            <Polish>Dostosuj drogi oddechowe</Polish>
+            <Spanish>Gestionar vías aéreas</Spanish>
+            <Chinese>管理航空公司</Chinese>
+            <Korean>항공 관리</Korean>
+            <Turkish>Hava Yollarını Yönet</Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_bloodType_Module_displayname">
+            <English>Change blood group / volume</English>
+            <German>Blutgruppe / volumen ändern</German>
+            <Czech>Změnit krevní skupinu / množství</Czech>
+            <French>Changer groupe sanguin / volume</French>
+            <Polish>Zmień grupę / ilość krwi</Polish>
+            <Spanish>Cambiar grupo/volumen sanguíneo</Spanish>
+            <Chinese>改变血型/血量</Chinese>
+            <Korean>혈액형/체적 변경</Korean>
+            <Turkish>Kan grubunu / hacmini değiştir</Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_shockablestate_Module_displayname">
+            <English>Change shockable state</English>
+            <German>Schockzustand ändern</German>
+            <Czech>Změnit šokovatelný stav</Czech>
+            <French>Changer rythme chocable/non-chocable</French>
+            <Polish>Zmień rytm serca</Polish>
+            <Spanish>Cambiar estado de fibrilación cardíaca</Spanish>
+            <Chinese>改变可冲击状态</Chinese>
+            <Korean>충격 가능 상태 변경</Korean>
+            <Turkish>Şok edilebilir durumu değiştir</Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_checkmedical_Module_displayname">
+            <English>Open unit medical menu</English>
+            <German>Medic Menü der Einheit öffnen</German>
+            <Czech>Otevřít zdravotnickou nabídku jednotky</Czech>
+            <French>Ouvrir menu médical</French>
+            <Polish>Otwórz menu medyczne</Polish>
+            <Spanish>Abrir el menú médico de la unidad</Spanish>
+            <Chinese>打开单位医疗菜单</Chinese>
+            <Korean>유닛 의료 메뉴 열기</Korean>
+            <Turkish>Ünite tıbbi menüsünü aç</Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_shockablestate_Module_state">
+            <English>State: </English>
+            <German>Wert: </German>
+            <Czech>Stav: </Czech>
+            <French>Etat: </French>
+            <Polish>Rytm: </Polish>
+            <Spanish>Estado: </Spanish>
+            <Chinese>州。</Chinese>
+            <Korean>상태: </Korean>
+            <Turkish>Belirtmek: </Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_shockablestate_Module_shockable">
+            <English>Shockable (VF/PVT)</English>
+            <German>Schockbar (VF/PVT)</German>
+            <Czech>Šokovatelný (VF/PVT)</Czech>
+            <French>Choquable (FV/TV)</French>
+            <Polish>Defibrylacyjny (VF/PVT)</Polish>
+            <Spanish>Desfibrilable (FV/TV)</Spanish>
+            <Chinese>可休克(VF/PVT)</Chinese>
+            <Korean>충격 가능(VF/PVT)</Korean>
+            <Turkish>Şok Edilebilir (VF/PVT)</Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_shockablestate_Module_non_shockable">
+            <English>non-shockable (Asystole)</English>
+            <German>Nicht-Schockbar (Asystolie)</German>
+            <Czech>Nešokovatelný (Asystola)</Czech>
+            <French>Non-choquable (Asystolie) </French>
+            <Polish>Niedefibrylacyjny (Asystolia)</Polish>
+            <Spanish>No desfibrilable (Asístolia)</Spanish>
+            <Chinese>非休克性 (Asystole)</Chinese>
+            <Korean>충격 불가(수축기)</Korean>
+            <Turkish>şoklanamaz (Asistoli)</Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_NothingSelected">
+            <English>Place on a unit.</English>
+            <German>Es wurde nichts ausgewählt.</German>
+            <Czech>Položte na jednotku.</Czech>
+            <French>Placez sur une unité.</French>
+            <Polish>Połóż na jednostce.</Polish>
+            <Spanish>Colocar en una unidad.</Spanish>
+            <Chinese>放在一个单元上。</Chinese>
+            <Korean>유닛에 놓습니다.</Korean>
+            <Turkish>Bir üniteye yerleştirin.</Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_OnlyInfantry">
+            <English>Unit must be infantry.</English>
+            <German>Nur bei Infanterie verwendbar.</German>
+            <Czech>Jednotka musí být pěchota.</Czech>
+            <French>L'unité doit être une infanterie.</French>
+            <Polish>Jednostką musi być piechota.</Polish>
+            <Spanish>La unidad debe ser infantería.</Spanish>
+            <Chinese>单位必须是步兵。</Chinese>
+            <Korean>부대는 보병이어야 합니다.</Korean>
+            <Turkish>Birim piyade olmalıdır.</Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_MustBeAlive">
+            <English>Unit must be alive.</English>
+            <German>Einheit muss am Leben sein.</German>
+            <Czech>Jednotka musí být naživu.</Czech>
+            <French>L'unité doit être vivante.</French>
+            <Polish>Jednostka musi być żywa.</Polish>
+            <Spanish>La unidad debe estar viva.</Spanish>
+            <Chinese>单位必须是活的。</Chinese>
+            <Korean>유닛이 살아 있어야 합니다.</Korean>
+            <Turkish>Birim canlı olmalı.</Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_NotUnconscious">
+            <English>Unit must be unconscious.</English>
+            <German>Einheit muss Ohnmächtig sein.</German>
+            <Czech>Jednotka musí být při vědomí.</Czech>
+            <French>L'unité doit être inconsciente.</French>
+            <Polish>Jednostka musi być nieprzytomna.</Polish>
+            <Spanish>La unidad debe estar inconsciente.</Spanish>
+            <Chinese>单位必须是无意识的。</Chinese>
+            <Korean>유닛은 의식이 없어야 합니다.</Korean>
+            <Turkish>Ünite bilinçsiz olmalıdır.</Turkish>
+        </Key>
+        <Key ID="STR_kat_zeus_sliderFormat13was23">
+            <English>%1%3 (was %2%3)</English>
+            <German>%1%3 (war %2%3)</German>
+            <Czech>%1%3 (bylo %2%3)</Czech>
+            <French>%1%3 (était %2%3)</French>
+            <Polish>%1%3 (było %2%3)</Polish>
+            <Spanish>%1%3 (era %2%3)</Spanish>
+            <Chinese>%1%3 (曾是 %2%3)</Chinese>
+            <Korean>%1%3 (였다 %2%3)</Korean>
+            <Turkish>%1%3 (oldu %2%3)</Turkish>
+        </Key>
+    </Package>
+</Project>

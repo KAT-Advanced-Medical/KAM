@@ -5,13 +5,13 @@
             <English>ACE-Pharmacy activated?</English>
             <German>ACE-Kreislauf aktivieren?</German>
             <Polish>ACE-Pharmacy ma być włączone?</Polish>
-            <Spanish>¿Activación de ACE-Pharmacy?</Spanish>
+            <Spanish>¿Activar ACE-Pharmacy?</Spanish>
             <Chinese>ACE-Pharmacy被激活？</Chinese>
             <Czech>ACE-pharmacy aktivováno?</Czech>
             <Korean>ACE-약국 활성화?</Korean>
             <French>ACE-Pharmacy activé?</French>
             <Turkish>ACE-Eczacılık etkinleştirildi mi?</Turkish>
-            <Italian>ACE-Farmacia attivata?</Italian>
+            <Italian>ACE-Pharmacy attivata?</Italian>
         </Key>
         <Key ID="STR_kat_pharma_NALOXONE_ACTIVE">
             <English>Allow players to use Naloxone?</English>
@@ -32,7 +32,7 @@
             <French>Autoriser Sels d'Ammoniac?</French>
             <Chinese>允许玩家使用碳酸铵吗？</Chinese>
             <Italian>Permettere ai giocatori di usare il carbonato di ammonio?</Italian>
-            <Spanish>¿Permitir a los jugadores utilizar carbonato de amonio?</Spanish>
+            <Spanish>¿Permitir a los jugadores utilizar Carbonato de Amonio?</Spanish>
             <Korean>플레이어가 탄산 암모늄을 사용하도록 허용하시겠습니까?</Korean>
             <Turkish>Oyuncuların Amonyum Karbonat kullanmasına izin verilsin mi?</Turkish>
             <Czech>Povolit hráčům použít Uhličitan amonný?</Czech>
@@ -44,7 +44,7 @@
             <French>Autoriser Acide Tranexamique?</French>
             <Chinese>允许球员使用TXA？</Chinese>
             <Italian>Permettere ai giocatori di usare il TXA?</Italian>
-            <Spanish>¿Permitir a los jugadores utilizar el TXA?</Spanish>
+            <Spanish>¿Permitir a los jugadores utilizar el ATX?</Spanish>
             <Korean>플레이어가 TXA를 사용하도록 허용하시겠습니까?</Korean>
             <Turkish>Oyuncuların TXA kullanmasına izin verilsin mi?</Turkish>
             <Czech>Povolit hráčům použít TXA?</Czech>
@@ -67,7 +67,7 @@
             <Polish>Czas samoistnego wypadnięcia IV/IO z pacjenta</Polish>
             <French>Temps au bout du quel l'IV/IO tombe du patient</French>
             <Chinese>改变病人的静脉注射/IOs脱落的时间</Chinese>
-            <Italian>Cambia il tempo in cui le flebo/IO cadono da un paziente</Italian>
+            <Italian>Cambia il tempo in cui le IV/IO cadono da un paziente</Italian>
             <Spanish>Cambia el tiempo en el que las IVs/IOs se caen de un paciente</Spanish>
             <Korean>IV/IO가 환자에게서 떨어지는 시간을 변경합니다.</Korean>
             <Turkish>IV'lerin/IO'ların bir hastadan düştüğü zamanı değiştirir</Turkish>
@@ -81,7 +81,7 @@
             <Chinese>如果静脉注射针头是可重复使用的，则应设置。</Chinese>
             <Italian>Imposta se gli aghi IV/IO sono riutilizzabili</Italian>
             <Spanish>Establece si las agujas IV/IO son reutilizables</Spanish>
-            <Korean>IV/IO 바늘 재사용 가능 여부 설정</Korean>
+            <Korean>IV/IO 바늘 재사용 가능하나 </Korean>
             <Turkish>IV/IO iğnelerinin yeniden kullanılabilir olup olmadığını ayarlar</Turkish>
             <Czech>Nastaví, zda IV/IO jehly jsou znovu-použitelné</Czech>
         </Key>
@@ -91,9 +91,9 @@
             <Polish>Czas na podanie leków przez IV</Polish>
             <French>Temps d'injection des médicaments en IV</French>
             <Chinese>所有静脉注射药物的推注时间</Chinese>
-            <Italian>Tempo di spinta per tutti i farmaci per via endovenosa</Italian>
-            <Spanish>Tiempo de empuje para todos los medicamentos intravenosos</Spanish>
-            <Korean>모든 IV 약물에 대한 푸시 시간</Korean>
+            <Italian>Tempo d'iniezione per tutti i farmaci per via endovenosa</Italian>
+            <Spanish>Tiempo de administración para todos los medicamentos intravenosos</Spanish>
+            <Korean>IV 약물을 쓸 시간을 밀워</Korean>
             <Turkish>Tüm IV İlaçlar için itme zamanı</Turkish>
             <Czech>Čas potřebný k vstříknutí všech IV léků</Czech>
         </Key>
@@ -103,9 +103,9 @@
             <Polish>Czas zakładania IV</Polish>
             <French>Temps pour poser une IV</French>
             <Chinese>建立静脉注射的时间</Chinese>
-            <Italian>Tempo per stabilire le flebo</Italian>
+            <Italian>Tempo per inserire IV</Italian>
             <Spanish>Tiempo para establecer las vías intravenosas</Spanish>
-            <Korean>IV를 설정하는 시간</Korean>
+            <Korean>IV를 설정늘하는 시간</Korean>
             <Turkish>IV'ler oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IV</Czech>
         </Key>
@@ -115,9 +115,9 @@
             <Polish>Czas zakładania IO</Polish>
             <French>Temps pour poser une IO</French>
             <Chinese>建立国际组织的时间</Chinese>
-            <Italian>Tempo per stabilire gli OI</Italian>
-            <Spanish>Momento de establecer las OI</Spanish>
-            <Korean>IO 설정 시간</Korean>
+            <Italian>Tempo per posizionare gli IO</Italian>
+            <Spanish>Tiempo para establecer las IO</Spanish>
+            <Korean>IO 설정을하는 시간</Korean>
             <Turkish>IO'ları oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IO</Czech>
         </Key>
@@ -142,7 +142,7 @@
             <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
             <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
             <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
+            <Spanish>Analgésico usado para combatir dolor ligero o moderado.</Spanish>
             <Turkish>Hafif ila orta şiddette ağrı deneyimleriyle mücadele etmek için kullanılan bir analjezik.</Turkish>
         </Key>
         <Key ID="STR_kat_pharma_Painkillers_Box_Display">
@@ -165,8 +165,8 @@
             <French>Administrer Perfalgan</French>
             <German>Schlucke Schmerzmittel</German>
             <Italian>Prendi antidolorifici</Italian>
-            <Korean>진통제 복용</Korean>
-            <Spanish>Usar analgésico</Spanish>
+            <Korean>진통제 써</Korean>
+            <Spanish>Administrar analgésico</Spanish>
             <Turkish>Ağrı Kesicileri Al</Turkish>
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_DescShort">
@@ -175,7 +175,7 @@
             <Polish>Używane w celu przywrócenia przytomności</Polish>
             <French>Utilisé pour stimuler le patient et l'aider à reprendre conscience.</French>
             <Italian>Usato per riprendere coscienza</Italian>
-            <Spanish>Solía ​​recuperar la conciencia</Spanish>
+            <Spanish>Usado para ​​recuperar la consciencia</Spanish>
             <Chinese>用于恢复知觉</Chinese>
             <Korean>의식 회복에 사용</Korean>
             <Turkish>Bilinci geri yüklemek için kullanılır</Turkish>
@@ -188,7 +188,7 @@
             <French>L'ammoniac, dont l'odeur est très forte, utilisé pour faire reprendre conscience dans certaines situations.</French>
             <Italian>L'ingrediente principale nei sali, utilizzati per ripristinare la coscienza in situazioni limitate.</Italian>
             <Chinese>嗅觉盐的主要成分，在有限的情况下用于恢复意识。</Chinese>
-            <Spanish>El ingrediente principal de las sales aromáticas, utilizado para restaurar la conciencia en situaciones limitadas.</Spanish>
+            <Spanish>El ingrediente principal de las sales aromáticas, utilizado para restaurar la consciencia en situaciones limitadas.</Spanish>
             <Korean>제한된 상황에서 의식을 회복시키는 데 사용되는 소금 냄새의 주요 성분.</Korean>
             <Turkish>Kokulu tuzların birincil bileşeni, sınırlı durumlarda bilinci geri kazandırmak için kullanılır.</Turkish>
             <Czech>Primární složka čichacích solí používaná k obnovení vědomí ve výjmečných situacích.</Czech>
@@ -211,7 +211,7 @@
             <Polish>Użyj soli trzeźwiących</Polish>
             <French>Utiliser Sels d'Ammoniac</French>
             <Italian>Somministra Carbonato</Italian>
-            <Spanish>Administrar carbonato</Spanish>
+            <Spanish>Administrar carbonat</Spanish>
             <Chinese>使用碳酸盐</Chinese>
             <Korean>탄산염 사용</Korean>
             <Turkish>Karbonat kullanın</Turkish>
@@ -223,7 +223,7 @@
             <Polish>Używany do zwalczania przedawkowania opioidów</Polish>
             <French>Utilisé pour traiter les overdoses d'opiacés</French>
             <Italian>Usato per trattare le overdose da oppiacei</Italian>
-            <Spanish>Se utiliza para tratar las sobredosis de opiáceos.</Spanish>
+            <Spanish>Usado para tratar las sobredosis de opiáceos.</Spanish>
             <Chinese>用于逆转阿片类药物的过量使用</Chinese>
             <Korean>아편유사제 과다 복용을 역전시키는 데 사용</Korean>
             <Turkish>Opioid aşırı dozlarını tersine çevirmek için kullanılır</Turkish>
@@ -283,7 +283,7 @@
             <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
             <French>Antiarythmique utilisé pour combattre les formes choquables arrêt cardiaque.</French>
             <Chinese>一种抗心律失常药，用于对抗可休克形式的心脏骤停。</Chinese>
-            <Italian>Un antiaritmico usato per combattere le forme di arresto cardiaco da shock.</Italian>
+            <Italian>Un antiaritmico usato per combattere le forme defibrillabili di arresto cardiaco.</Italian>
             <Spanish>Es un antiarrítmico que se utiliza para combatir las formas de paro cardíaco susceptibles de descarga.</Spanish>
             <Korean>충격을 줄 수 있는 형태의 심장 마비를 퇴치할 때 사용되는 항부정맥제.</Korean>
             <Turkish>Şok edilebilir kardiyak arrest formlarıyla mücadele ederken kullanılan bir anti-aritmik.</Turkish>
@@ -296,7 +296,7 @@
             <French>Amiodarone</French>
             <Chinese>胺碘酮</Chinese>
             <Italian>Amiodarone</Italian>
-            <Spanish>Amiodarone</Spanish>
+            <Spanish>Amiodarona</Spanish>
             <Korean>아미오다론</Korean>
             <Turkish>Amiodaron</Turkish>
             <Czech>Amiodaron</Czech>
@@ -307,8 +307,8 @@
             <Polish>Wstrzyknij Amiodaron</Polish>
             <French>Injecter Amiodarone</French>
             <Chinese>推广胺碘酮</Chinese>
-            <Italian>Spingere l'amiodarone</Italian>
-            <Spanish>Empujar Amiodarona</Spanish>
+            <Italian>Iniettare l'amiodarone</Italian>
+            <Spanish>Administrar Amiodarona</Spanish>
             <Korean>푸시 아미오다론</Korean>
             <Turkish>Amiodaron'u itin</Turkish>
             <Czech>Vstříknout amiodaron</Czech>
@@ -331,7 +331,7 @@
             <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
             <French>Antiarythmique utilisé pour combattre les formes choquables arrêt cardiaque.</French>
             <Chinese>一种抗心律失常药，用于对抗可休克形式的心脏骤停。</Chinese>
-            <Italian>Un antiaritmico usato per combattere le forme di arresto cardiaco da shock.</Italian>
+            <Italian>Un antiaritmico usato per combattere le forme defibrillabili di arresto cardiaco.</Italian>
             <Spanish>Es un antiarrítmico que se utiliza para combatir las formas de paro cardíaco susceptibles de descarga.</Spanish>
             <Korean>충격을 줄 수 있는 형태의 심장 마비를 퇴치할 때 사용되는 항부정맥제.</Korean>
             <Turkish>Şok edilebilir kardiyak arrest formlarıyla mücadele ederken kullanılan bir anti-aritmik.</Turkish>
@@ -355,8 +355,8 @@
             <Polish>Wstrzyknij Lidokainę</Polish>
             <French>Injecter Lidocaïne</French>
             <Chinese>推动利多卡因</Chinese>
-            <Italian>Spingere la lidocaina</Italian>
-            <Spanish>Empujar la lidocaína</Spanish>
+            <Italian>Iniettare la lidocaina</Italian>
+            <Spanish>Administrar Lidocaína</Spanish>
             <Korean>푸시 리도카인</Korean>
             <Turkish>Push Lidokain</Turkish>
             <Czech>Vstříknout lidokain</Czech>
@@ -403,8 +403,8 @@
             <Polish>Wstrzyknij Atropinę</Polish>
             <French>Injecter Atropine</French>
             <Chinese>推动阿托品</Chinese>
-            <Italian>Spingere l'atropina</Italian>
-            <Spanish>Empuje Atropina</Spanish>
+            <Italian>Iniettare l'atropina</Italian>
+            <Spanish>Administrar Atropina</Spanish>
             <Korean>푸시 아트로핀</Korean>
             <Turkish>Atropin itin</Turkish>
             <Czech>Vstříknout atropin</Czech>
@@ -426,7 +426,7 @@
 			<German>Zur Förderung und Stabilisierung von Blutgerinnseln in einem Patienten.</German>
             <Polish>Używany do wspomagania tworzenia skrzepów u pacjenta</Polish>
             <French>Utilisé pour favoriser et stabiliser la coagulation chez le patient.</French>
-            <Italian>Utilizzato per favorire e stabilizzare la coagulazione nel paziente</Italian>
+            <Italian>Utilizzato per favorire e stabilizzare la coagulazione del paziente</Italian>
             <Spanish>Usado para promover y estabilizar la coagulación en el paciente.</Spanish>
             <Chinese>用于鼓励和稳定病人体内的血块。</Chinese>
             <Korean>환자의 혈전을 촉진하고 안정시키는 데 사용됩니다.</Korean>
@@ -439,7 +439,7 @@
             <Polish>TXA</Polish>
             <French>Acide Tranexamique</French>
             <Italian>TXA</Italian>
-            <Spanish>TXA</Spanish>
+            <Spanish>ATX</Spanish>
             <Chinese>TXA</Chinese>
             <Korean>텍사스</Korean>
             <Turkish>TXA</Turkish>
@@ -450,7 +450,7 @@
 			<German>TXA verabreichen</German>
             <Polish>Wstrzyknij TXA</Polish>
             <French>Injecter Acide Tranexamique</French>
-            <Italian>Somministra TXA</Italian>
+            <Italian>Innietta TXA</Italian>
             <Spanish>Administrar TXA</Spanish>
             <Chinese>推动TXA</Chinese>
             <Korean>푸시 TXA</Korean>
@@ -475,7 +475,7 @@
             <Polish>Środek zwężający naczynia krwionośne używany do podniesienia ciśnienia krwi oraz zwalczania szoku.</Polish>
             <French>Un vasoconstricteur utilisé pour augmenter la pression artérielle et combattre le choc hypovolémique.</French>
             <Chinese>一种用于提高血压和抗休克的血管抑制剂。</Chinese>
-            <Italian>Un vasopressore usato per aumentare la pressione sanguigna e combattere lo shock.</Italian>
+            <Italian>Un vasopressore usato per aumentare la pressione sanguigna e combattere l'ipotensione.</Italian>
             <Spanish>Un vasopresor utilizado para aumentar la presión arterial y combatir el shock.</Spanish>
             <Korean>혈압을 높이고 쇼크를 퇴치하는 데 사용되는 승압제.</Korean>
             <Turkish>Tansiyonu yükseltmek ve şokla mücadele etmek için kullanılan bir vazopressör.</Turkish>
@@ -499,8 +499,8 @@
             <Polish>Wstrzyknij Noradrenalinę</Polish>
             <French>Injecter Noradrénaline</French>
             <Chinese>推动去甲肾上腺素</Chinese>
-            <Italian>Spingere la norepinefrina</Italian>
-            <Spanish>Empujar la norepinefrina</Spanish>
+            <Italian>Iniettare la norepinefrina</Italian>
+            <Spanish>Administrar Norepinefrina</Spanish>
             <Korean>푸쉬 노르에피네프린</Korean>
             <Turkish>Norepinefrin itin</Turkish>
             <Czech>Vstříknout norepinefrin</Czech>
@@ -523,7 +523,7 @@
             <Polish>Środek zwężający naczynia krwionośne używany do podniesienia ciśnienia krwi oraz zwalczania szoku.</Polish>
             <French>Un vasoconstricteur utilisé pour augmenter la pression artérielle et combattre le choc hypovolémique.</French>
             <Chinese>一种用于提高血压和抗休克的血管抑制剂。</Chinese>
-            <Italian>Un vasopressore usato per aumentare la pressione sanguigna e combattere lo shock.</Italian>
+            <Italian>Un vasopressore usato per aumentare la pressione sanguigna e combattere l'ipotensione'.</Italian>
             <Spanish>Un vasopresor utilizado para aumentar la presión arterial y combatir el shock.</Spanish>
             <Korean>혈압을 높이고 쇼크를 퇴치하는 데 사용되는 승압제.</Korean>
             <Turkish>Tansiyonu yükseltmek ve şokla mücadele etmek için kullanılan bir vazopressör.</Turkish>
@@ -547,8 +547,8 @@
             <Polish>Wstrzyknij Fenylefrynę</Polish>
             <French>Injecter Phényléphrine</French>
             <Chinese>推注苯肾上腺素</Chinese>
-            <Italian>Spingere la fenilefrina</Italian>
-            <Spanish>Empujar la fenilefrina</Spanish>
+            <Italian>Iniettare la fenilefrina</Italian>
+            <Spanish>Administrar Fenilefrina</Spanish>
             <Korean>푸시 페닐에프린</Korean>
             <Turkish>Fenilefrin itin</Turkish>
             <Czech>Vstříknout fenylefrin</Czech>
@@ -595,8 +595,8 @@
             <Polish>Wstrzyknij Nitroglicerynę</Polish>
             <French>Injecter Nitroglycérine</French>
             <Chinese>推动硝化甘油</Chinese>
-            <Italian>Spingere la nitroglicerina</Italian>
-            <Spanish>Empuje la nitroglicerina</Spanish>
+            <Italian>Iniettare la nitroglicerina</Italian>
+            <Spanish>Administrar Nitroglicerina</Spanish>
             <Korean>푸시 니트로글리세린</Korean>
             <Turkish>Nitrogliserin itin</Turkish>
             <Czech>Vstříknout Nitroglycerin</Czech>
@@ -607,8 +607,8 @@
             <Polish>Ocuć pacjenta</Polish>
             <French>Stimuler le patient</French>
             <Chinese>调整病人的方向</Chinese>
-            <Italian>Riorientare il paziente</Italian>
-            <Spanish>Reorientar al paciente</Spanish>
+            <Italian>Stimolare il paziente</Italian>
+            <Spanish>Estimula al paciente</Spanish>
             <Korean>환자의 방향을 바꾸다</Korean>
             <Turkish>환자의 방향을 바꾸다</Turkish>
             <Czech>Reorientovat pacienta</Czech>
@@ -619,8 +619,8 @@
             <Polish>Cucenie</Polish>
             <French>Stimulation</French>
             <Chinese>调整方向</Chinese>
-            <Italian>Riorientare</Italian>
-            <Spanish>Reorientando</Spanish>
+            <Italian>Stimolando</Italian>
+            <Spanish>Estimulando</Spanish>
             <Korean>방향 바꾸기</Korean>
             <Turkish>Yeniden yönlendirme</Turkish>
             <Czech>Reoritentuji</Czech>
@@ -641,13 +641,13 @@
             <English>Pushing</English>
             <German>verabreichen</German>
             <Polish>Wstrzykiwanie</Polish>
-            <Spanish>Empujando</Spanish>
+            <Spanish>Administrando</Spanish>
             <Chinese>服用中</Chinese>
             <Czech>Vstříkávám</Czech>
             <Korean>사용중</Korean>
             <French>Administration</French>
             <Turkish>Kullanılıyor</Turkish>
-            <Italian>Somministrando</Italian>
+            <Italian>Iniettando</Italian>
         </Key>
         <Key ID="STR_kat_pharma_push_log">
             <English>%1 pushed %2</English>
@@ -701,13 +701,13 @@
             <English>Intravenous Needle</English>
             <German>Intravenöse Kanüle</German>
             <Polish>Kaniula dożylna</Polish>
-            <Spanish>Usado para suprimir el dolor</Spanish>
+            <Spanish>Catéter Intravenoso</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
             <Czech>Nitrožilní jehla</Czech>
             <Korean>통증완화를 위해 사용합니다</Korean>
             <French>Cathéther intra-veineux</French>
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Usato per sopprimere il dolore</Italian>
+            <Italian>Catetere intravenoso</Italian>
         </Key>
         <Key ID="STR_kat_pharma_IO_45_Display">
             <English>FAST IO</English>
@@ -725,31 +725,31 @@
             <English>Intraosseous Needle</English>
             <German>Intraossäre Kanüle</German>
             <Polish>Igła doszpikowa</Polish>
-            <Spanish>Aguja intraósea</Spanish>
+            <Spanish>Vía Intraósea</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
             <Czech>Intraoseální jehla</Czech>
             <Korean>통증완화를 위해 사용합니다</Korean>
             <French>Cathéther intra-osseux</French>
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Italian>Ago cannula intraossea</Italian>
+            <Italian>Sistema d'infusione intraossea</Italian>
         </Key>
         <Key ID="STR_kat_pharma_IV_DescUse">
             <English>Used to allow fluids and certain medications to enter the body.</English>
             <German>Wird verwendet, damit Flüssigkeiten und bestimmte Medikamente in den Körper gelangen können.</German>
             <Polish>Używany w celu dostarczenia płynów i pewnych leków do krwioobiegu.</Polish>
-            <Spanish>Analgésico usado para combatir dolor ligero a moderado.</Spanish>
+            <Spanish>Usado para administrar fluidos y ciertos medicamentos en el cuerpo.</Spanish>
             <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
             <Czech>Používá se k umožnění vstupu tekutin a určitých léků do těla.</Czech>
             <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
             <French>Utilisé pour permettre l'administration de médicaments en intra-veineuse.</French>
             <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
+            <Italian>Utilizzato per consentire ai fluidi e ad alcuni farmaci di entrare nel corpo.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Apply_IV_16">
             <English>Establish 16g IV</English>
 			<German>16g IV einrichten</German>
             <Polish>Załóż 16G IV</Polish>
-            <Spanish>Coloque 16g IV</Spanish>
+            <Spanish>Insertar 16g IV</Spanish>
             <French>Insertion 16g IV</French>
             <Italian>Posiziona 16g IV</Italian>
             <Chinese>建立16g IV</Chinese>
@@ -761,10 +761,10 @@
             <English>Establish FAST IO</English>
 			<German>FAST IO einrichten</German>
             <Polish>Załóż FAST IO</Polish>
-            <Spanish>Coloque 45mm IO</Spanish>
+            <Spanish>Insertar FAST IO</Spanish>
             <Czech>Zavést FAST IO</Czech>
             <French>Insertion FAST IO</French>
-            <Italian>Posiziona 45mm IO</Italian>
+            <Italian>Inserisci FAST IO</Italian>
             <Chinese>建立FAST IO</Chinese>
             <Korean>FAST IO 구축</Korean>
             <Turkish>HIZLI IO kurun</Turkish>
@@ -789,7 +789,7 @@
             <Czech>Zavádím IO</Czech>
             <French>Insertion IO</French>
             <Turkish>IO'nun kurulması</Turkish>
-            <Italian>Posizionando IO</Italian>
+            <Italian>Inserendo IO</Italian>
             <Chinese>建立IO</Chinese>
             <Korean>IO 구축</Korean>
         </Key>
@@ -797,7 +797,7 @@
             <English>%1 established a %2</English>
             <German>%1 errichtet eine %2</German>
             <Polish>%1 założył %2</Polish>
-            <Spanish>%1 coloqueado %2</Spanish>
+            <Spanish>%1 ha colocado %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
             <Czech>%1 vložil %2</Czech>
             <Korean>%1 삽입됨 %2</Korean>
@@ -809,7 +809,7 @@
             <English>Remove IV/IO</English>
 			<German>IV/IO entfernen</German>
             <Polish>Zdejmij IV/IO</Polish>
-            <Spanish>Quitar IV / IO</Spanish>
+            <Spanish>Retirar IV/IO</Spanish>
             <French>Retirer IV/IO</French>
             <Turkish>IV/IO'yu kaldır</Turkish>
             <Italian>Rimuovi IV/IO</Italian>
@@ -821,7 +821,7 @@
             <English>Removing</English>
 			<German>entfernen</German>
             <Polish>Zdejmowanie</Polish>
-            <Spanish>Quitando</Spanish>
+            <Spanish>Retirando</Spanish>
             <French>Retrait</French>
             <Turkish>Kaldırma</Turkish>
             <Italian>Rimuovendo</Italian>
@@ -839,7 +839,7 @@
             <Korean>%1 는 현제 비었음</Korean>
             <French>%1 est maintenant vide</French>
             <Turkish>% 1 artık boş</Turkish>
-            <Italian>è vuota</Italian>
+            <Italian>%1 è vuota</Italian>
         </Key>
     </Package>
 </Project>
