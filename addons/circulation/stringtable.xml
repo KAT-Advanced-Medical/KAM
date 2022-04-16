@@ -15,6 +15,7 @@
         </Key>
         <Key ID="STR_kat_circulation_RHYTHM_ENABLE">
             <English>Advanced Rhythm activated?</English>
+			<German>Fortgeschrittenen Rhythmus aktivieren?</German>
             <French>Activer rythme avancé?</French>
             <Polish>Zaawansowane Rytmy włączone?</Polish>
             <Korean>고급 리듬이 활성화되었습니까?</Korean>
@@ -350,6 +351,7 @@
         </Key>
         <Key ID="STR_kat_circulation_Rhythm">
             <English>Check Rhythm</English>
+			<German>Rhythmus prüfen</German>
             <Korean>리듬 확인</Korean>
             <Polish>Sprawdź rytm</Polish>
             <Turkish>Ritmi Kontrol Et</Turkish>
@@ -493,6 +495,7 @@
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_AED_X_Action_Use">
             <English>Vehicle: Use AED-X</English>
+			<German>Fahrzeug: AED-X nutzen</German>
             <Polish>Pojazd: Użyj AED-X</Polish>
             <French>Véhicule: Utiliser AED-X</French>
             <Korean>차량: AED-X 사용</Korean>
@@ -504,6 +507,7 @@
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Use">
             <English>Vehicle: Attach AED-X</English>
+			<German>Fahrzeug: AED-X anschließen</German>
             <Polish>Pojazd: Podłącz AED-X</Polish>
             <French>Véhicule: Attacher AED-X</French>
             <Korean>차량: AED-X 부착</Korean>
@@ -515,6 +519,7 @@
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Remove">
             <English>Vehicle: Remove AED-X</English>
+			<German>Fahrzeug: AED-X entfernen</German>
             <Polish>Pojazd: Odłącz AED-X</Polish>
             <French>Véhicule: Retirer AED-X</French>
             <Korean>차량: AED-X 제거</Korean>
@@ -994,6 +999,7 @@
         </Key>
         <Key ID="STR_kat_circulation_SETTING_DRAW_BLOODGROUPS">
             <English>Use Bloodgroups for drawing blood?</English>
+			<German>Blutgruppen für die Blutentnahme verwenden?</German>
             <Polish>Używaj grup krwi do pobieranie krwi?</Polish>
             <Korean>혈액 채취에 혈액 그룹을 사용합니까?</Korean>
             <Turkish>Kan almak için Kan Grupları kullanılsın mı?</Turkish>
@@ -1041,6 +1047,7 @@
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW">
             <English>Minimum blood volume for donor (liters)</English>
+			<German>Mindestblutmenge für Spender (Liter)</German>
             <Polish>Minimalna ilość krwi u dawcy (litry)</Polish>
             <Korean>기증자의 최소 혈액량(리터)</Korean>
             <Turkish>Donör için minimum kan hacmi (litre)</Turkish>
@@ -1052,6 +1059,7 @@
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW_DESC">
             <English>Minimum volume of blood allowed to drain a donor to, to ignore this setting set to 0</English>
+			<German>Mindestblutmenge, bis zu der ein Spender entnommen werden darf; um diese Einstellung zu ignorieren, setzen Sie sie auf 0</German>
             <Polish>Minimalna ilość krwi którą dawca musi mieć by pobrać z niego krew, ustaw 0 by wyłączyć</Polish>
             <Korean>0으로 설정된 이 설정을 무시하기 위해 기증자가 배출할 수 있는 최소 혈액량</Korean>
             <Turkish>0'a ayarlanmış bu ayarı yok saymak için bir donörün drene etmesine izin verilen minimum kan hacmi</Turkish>
