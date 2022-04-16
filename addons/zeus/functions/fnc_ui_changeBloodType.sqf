@@ -57,7 +57,7 @@ private _fnc_sliderMove = {
 	private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
 	private _unit = attachedTo _logic;
     private _curVal = _unit getVariable ["ace_medical_bloodVolume", 6.0];
-    _slider ctrlSetTooltip format ["STR_kat_zeus_sliderFormat13was23", parseNumber((sliderPosition _slider) toFixed 2), (parseNumber (_curVal toFixed 2)), "L"];
+    _slider ctrlSetTooltip format [localize "STR_kat_zeus_sliderFormat13was23", parseNumber((sliderPosition _slider) toFixed 2), (parseNumber (_curVal toFixed 2)), "L"];
 };
 
 private _slider = _display displayCtrl 26423;
