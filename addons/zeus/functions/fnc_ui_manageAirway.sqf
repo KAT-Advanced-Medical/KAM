@@ -56,7 +56,7 @@ private _fnc_sliderMove = {
 	private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
 	private _unit = attachedTo _logic;
     private _curVal = _unit getVariable ["KAT_medical_airwayStatus", 50];
-    _slider ctrlSetTooltip format ["%1%3 (was %2%3)", round(sliderPosition _slider), round _curVal, "%"];
+    _slider ctrlSetTooltip format ["STR_kat_zeus_sliderFormat13was23", round(sliderPosition _slider), round _curVal, "%"];
 };
 
 private _slider = _display displayCtrl 16106;
