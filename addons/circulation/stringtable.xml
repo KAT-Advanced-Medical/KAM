@@ -738,7 +738,7 @@
             <Korean>%1 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED</French>
             <Turkish>%1 AED gerçekleştirdi</Turkish>
-            <Italian>ha utilizzato un DAE</Italian>
+            <Italian>%1 ha utilizzato un DAE</Italian>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDS">
             <English>%1 performed AED Station</English>
