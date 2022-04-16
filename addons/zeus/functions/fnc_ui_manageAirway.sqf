@@ -109,10 +109,3 @@ private _fnc_onConfirm = {
 
 _display displayAddEventHandler ["unload", _fnc_onUnload];
 _ctrlButtonOK ctrlAddEventHandler ["buttonclick", _fnc_onConfirm];
-
-
-
-
-
-
-
