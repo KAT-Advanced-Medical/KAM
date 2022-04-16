@@ -593,8 +593,8 @@
             <Czech>%1 je prázdná</Czech>
             <Korean>%1 는 현제 비었음</Korean>
             <French>%1 est maintenant vide</French>
-            <Turkish>% 1 artık boş</Turkish>
-            <Italian>è vuota</Italian>
+            <Turkish>%1 artık boş</Turkish>
+            <Italian>%1 è vuota</Italian>
         </Key>
         <Key ID="STR_KAT_circulation_bloodbank">
             <English>Medical Blood bank</English>
@@ -750,7 +750,7 @@
             <Korean>%1 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé une station AED</French>
             <Turkish>%1 gerçekleştirilen AED İstasyonu</Turkish>
-            <Italian>ha utilizzato una stazione DAE</Italian>
+            <Italian>%1 ha utilizzato una stazione DAE</Italian>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDX">
             <English>%1 performed AED-X</English>
@@ -761,8 +761,8 @@
             <Czech>%1 použito AED-X</Czech>
             <Korean>%1 바이탈측정 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED-X</French>
-            <Turkish>% 1 AED-X gerçekleştirdi</Turkish>
-            <Italian>ha utilizzato un DAE-X</Italian>
+            <Turkish>%1 AED-X gerçekleştirdi</Turkish>
+            <Italian>%1 ha utilizzato un DAE-X</Italian>
         </Key>
         <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED_X">
             <English>Succes chance for AED-X</English>
