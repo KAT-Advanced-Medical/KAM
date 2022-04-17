@@ -61,7 +61,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(IV_MEDIC)],
     "KAT - ADV Medical: Pharmacy",
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 2],
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
     true
 ] call CBA_Settings_fnc_init;
 
