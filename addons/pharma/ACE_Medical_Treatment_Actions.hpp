@@ -42,7 +42,7 @@ class ACE_Medical_Treatment_Actions {
     class Naloxone: Carbonate {
         displayName = CSTRING(Take_Naloxone);
         allowedSelections[] = {"Head"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_naloxone"};
@@ -53,7 +53,7 @@ class ACE_Medical_Treatment_Actions {
     class TXA: Carbonate {
         displayName = CSTRING(Take_TXA);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_TXA"};
@@ -64,7 +64,7 @@ class ACE_Medical_Treatment_Actions {
     class Norepinephrine: Carbonate {
         displayName = CSTRING(Take_Norep);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_norepinephrine"};
@@ -75,7 +75,7 @@ class ACE_Medical_Treatment_Actions {
     class Phenylephrine: Carbonate {
         displayName = CSTRING(Take_Phenyl);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_phenylephrine"};
@@ -86,7 +86,7 @@ class ACE_Medical_Treatment_Actions {
     class Nitroglycerin: Carbonate {
         displayName = CSTRING(Take_Nitro);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_nitroglycerin"};
@@ -97,7 +97,7 @@ class ACE_Medical_Treatment_Actions {
     class Amiodarone: Carbonate {
         displayName = CSTRING(Take_Amiodarone);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_amiodarone"};
@@ -108,7 +108,7 @@ class ACE_Medical_Treatment_Actions {
     class Lidocaine: Carbonate {
         displayName = CSTRING(Take_Lidocaine);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_lidocaine"};
@@ -119,7 +119,7 @@ class ACE_Medical_Treatment_Actions {
     class Atropine: Carbonate {
         displayName = CSTRING(Take_Atropine);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_atropine"};
