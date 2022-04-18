@@ -42,41 +42,41 @@ class CfgWeapons {
         displayName = CSTRING(BloodIV_AB_250);
     };
     class KAT_Empty_bloodIV_500: ACE_bloodIV
-	{
+    {
         displayName = CSTRING(FieldBloodTK500_Display);
         descriptionShort = CSTRING(FieldBloodTK_Desc);
         descriptionUse = CSTRING(FieldBloodTK_Desc);
-		picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
-		author = "Battlekeeper";
+        picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
+        author = "Battlekeeper";
         hiddenSelectionsTextures[] = {QPATHTOF(ui\IVBag_blood_500ml_empty_ca.paa)};
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 2;
         };
     };
-	class KAT_Empty_bloodIV_250: ACE_bloodIV
-	{
+    class KAT_Empty_bloodIV_250: ACE_bloodIV
+    {
         displayName = CSTRING(FieldBloodTK250_Display);
         descriptionShort = CSTRING(FieldBloodTK_Desc);
         descriptionUse = CSTRING(FieldBloodTK_Desc);
-		picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
-		author = "Battlekeeper";
+        picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
+        author = "Battlekeeper";
         hiddenSelectionsTextures[] = {QPATHTOF(ui\IVBag_blood_500ml_empty_ca.paa)};
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };
     };
-	class kat_AED: ACE_ItemCore {
+    class kat_AED: ACE_ItemCore {
         scope = 2;
-		author = "Katalam";
+        author = "Katalam";
         displayName = "$STR_KAT_circulation_AED_DISPLAYNAME";
         picture = QPATHTOF(ui\defib.paa);
-		model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
+        model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
         descriptionShort = "$STR_KAT_circulation_AED_DESCRIPTION";
         descriptionUse = "$STR_KAT_circulation_AED_DESCRIPTION";
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 30;
         };
-	};
+    };
     class kat_X_AED: kat_AED {
         scope = 2;
         displayName = CSTRING(X_Display);
