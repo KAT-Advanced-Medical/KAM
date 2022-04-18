@@ -1,0 +1,1 @@
+#include "\x\kat\addons\pharma\script_component.hpp"

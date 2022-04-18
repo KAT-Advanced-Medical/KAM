@@ -70,21 +70,4 @@ texHeaders.bin
 *.swo
 *.biprivatekey
 Thumbs.db
-
-# hemtt & sqfc
-releases/*
-keys/*
-.hemtt/local
-addons/*.pbo
-*.cache
-*.swp
-*.swo
-@*
-*.zip
-.vscode/*
-hemtt
-hemtt.exe
-tools/temp
-*.cache
-*.sqfc
-ArmaScriptCompiler.*
+CHANGELOG.md

@@ -41,13 +41,13 @@ if (IS_BLEEDING(_target)) then {
 // Give a qualitative description of the blood volume lost
 switch (GET_HEMORRHAGE(_target)) do {
     case 1: {
-        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood1", [1, 0, 0, 1]];
+        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood1", [1, 1, 0, 1]];
     };
     case 2: {
-        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood2", [1, 0, 0, 1]];
+        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood2", [1, 0.67, 0, 1]];
     };
     case 3: {
-        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood3", [1, 0, 0, 1]];
+        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood3", [1, 0.33, 0, 1]];
     };
     case 4: {
         _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood4", [1, 0, 0, 1]];
@@ -65,8 +65,8 @@ switch (GET_FRACTURES(_target) select _selectionN) do {
         _entries pushBack [localize "STR_ACE_medical_gui_Status_Fractured", [1, 0, 0, 1]];
     };
     case -1: {
-        if (ace_medical_fractures == 2) then { // Ignore if the splint has no effect
-            _entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [1, 1, 1, 1]];
+        if ((ace_medical_fractures) in [2, 3]) then { 
+            _entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [0.2, 0.2, 1, 1]];
         };
     };
 };
@@ -88,17 +88,6 @@ if (_target call ace_common_fnc_isAwake) then {
         };
         _entries pushBack [localize _painText, [1, 1, 1, 1]];
     };
-};
-
-// Show receiving IV volume remaining
-private _totalIvVolume = 0;
-{
-    _x params ["_volumeRemaining"];
-    _totalIvVolume = _totalIvVolume + _volumeRemaining;
-} forEach (_target getVariable ["ace_medical_ivBags", []]);
-
-if (_totalIvVolume >= 1) then {
-    _entries pushBack [format [localize "STR_ACE_medical_treatment_receivingIvVolume", floor _totalIvVolume], [1, 1, 1, 1]];
 };
 
 // Add entries for open, bandaged, and stitched wounds
@@ -161,7 +150,13 @@ if (_target getVariable [QGVAR(overstretch), false] && _selectionN isEqualTo 0) 
     _woundEntries pushback [localize LSTRING(overstretched), [0.1, 1, 1, 1]];
 };
 
-if (_target getVariable ["KAT_medical_pneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_pneumothorax_hardcore)) then {
+private _tensionhemothorax = false;
+
+if ((_target getVariable ["KAT_medical_tensionpneumothorax", false]) || (_target getVariable ["KAT_medical_hemopneumothorax", false])) then {
+        _tensionhemothorax = true;
+};
+
+if (_target getVariable ["KAT_medical_pneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_pneumothorax_hardcore) && !(_tensionhemothorax)) then {
     _woundEntries pushback [localize ELSTRING(breathing,pneumothorax_mm), [1,1,1,1]];
 };
 
@@ -171,6 +166,54 @@ if (_target getVariable ["KAT_medical_hemopneumothorax", false] && _selectionN i
 
 if (_target getVariable ["KAT_medical_tensionpneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_tensionhemothorax_hardcore)) then {
     _woundEntries pushback [localize ELSTRING(breathing,tensionpneumothorax_mm), [1,1,1,1]];
+};
+
+// Show receiving IV volume remaining
+private _totalIvVolume = 0;
+private _saline = 0;
+private _blood = 0;
+private _plasma = 0;
+
+{
+    _x params ["_volumeRemaining", "_type"];
+    switch (_type) do {
+        case ("Saline"): {
+        _saline = _saline + _volumeRemaining;
+        };
+        case ("Blood"): {
+        _blood = _blood + _volumeRemaining;
+        };
+        case ("Plasma"): {
+        _plasma = _plasma + _volumeRemaining;
+        };
+    };
+    _totalIvVolume = _totalIvVolume + _volumeRemaining;
+} forEach (_target getVariable ["ace_medical_ivBags", []]);
+
+if (_totalIvVolume >= 1) then {
+    if (_saline > 1) then {
+        _entries pushBack ["Saline: " + (format [localize "STR_ACE_medical_treatment_receivingIvVolume", floor _saline]), [1, 1, 1, 1]];
+    };
+    if (_blood > 1) then {
+        _entries pushBack ["Blood: " + (format [localize "STR_ACE_medical_treatment_receivingIvVolume", floor _blood]), [1, 1, 1, 1]];
+    };
+    if (_plasma > 1) then {
+        _entries pushBack ["Plasma: " + (format [localize "STR_ACE_medical_treatment_receivingIvVolume", floor _plasma]), [1, 1, 1, 1]];
+    };
+};
+
+//Handle IV placement
+private _placed = _target getVariable [QEGVAR(pharma,IVplaced), false];
+private _site = _target getVariable [QEGVAR(pharma,IVsite), 0];
+
+if (_placed && {_site == _selectionN}) then {
+    if (_site > 1) then {
+        private _text = format ["STR_kat_pharma_%1_Display", "IV_16"];
+        _woundEntries pushback [localize _text, [0.3, 0.3, 0.5, 1]];
+    } else {
+        private _text = format ["STR_kat_pharma_%1_Display", "IO_45"];
+        _woundEntries pushback [localize _text, [0.3, 0.3, 0.5, 1]];
+    };
 };
 
 // Handle no wound entries

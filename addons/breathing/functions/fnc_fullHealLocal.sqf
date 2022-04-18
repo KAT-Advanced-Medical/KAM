@@ -21,6 +21,11 @@ TRACE_1("fullHealLocal",_patient);
 
 if (!alive _patient) exitWith {};
 
+// check if on fire, then put out the fire before healing
+if ((["ace_fire"] call ace_common_fnc_isModLoaded) && {[_patient] call ace_fire_fnc_isBurning}) then {
+    _patient setVariable ["ace_fire_intensity", 0, true];
+};
+
 private _state = [_patient, ace_medical_STATE_MACHINE] call CBA_statemachine_fnc_getCurrentState;
 TRACE_1("start",_state);
 
@@ -37,6 +42,11 @@ _patient setVariable ["ace_medical_pain", 0, true];
 _patient setVariable ["ace_medical_bloodVolume", 6.0, true];
 
 // Tourniquets
+{
+    if (_x != 0) then {
+        [_patient, "ACE_tourniquet"] call ace_common_fnc_addToInventory;
+    };
+} forEach (_patient getVariable ["ace_medical_tourniquets", [0,0,0,0,0,0]]);
 _patient setVariable ["ace_medical_tourniquets", [0,0,0,0,0,0], true];
 _patient setVariable ["ace_medical_treatment_occludedMedications", nil, true];
 
@@ -52,7 +62,6 @@ _patient setVariable ["KAT_medical_pneumothorax", false, true];
 _patient setVariable ["KAT_medical_hemopneumothorax", false, true];
 _patient setVariable ["KAT_medical_tensionpneumothorax", false, true];
 
-
 // Update wound bleeding
 [_patient] call ace_medical_status_fnc_updateWoundBloodLoss;
 
@@ -63,6 +72,11 @@ _patient setVariable ["ace_medical_peripheralResistance", 100, true];
 
 // IVs
 _patient setVariable ["ace_medical_ivBags", nil, true];
+_unit setVariable [QGVAR(flowRate), 1, true];
+_unit setVariable [QGVAR(IVplaced), false, true];
+_unit setVariable [QGVAR(usedIV), "", true];
+_unit setVariable [QGVAR(IV_counts), 0, true];
+_unit setVariable [QGVAR(IVsite), 0, true];
 
 // Damage storage
 _patient setVariable ["ace_medical_bodyPartDamage", [0,0,0,0,0,0], true];
@@ -86,6 +100,9 @@ _patient setVariable ["ace_medical_painSuppress", 0, true];
 
 // Medication
 _patient setVariable ["ace_medical_medications", [], true];
+_unit setVariable [QGVAR(ondUse), false, true];
+_unit setVariable [QGVAR(asystole), 0, true];
+_unit setVariable [QGVAR(CPRcount), 2, true];
 
 // Reset triage card since medication is reset
 _patient setVariable ["ace_medical_triageCard", [], true];

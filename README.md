@@ -24,7 +24,7 @@
 
 **The ACE Advanced Medical System is nice, but we can do it better, even on a more realistic way and bring it on another level with these addons.**
 
-Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamartaka and Battlekeeper.
+Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamartaka, Battlekeeper, MJSTIC and Digii / Julian.
 
 ## Big thanks to
 
@@ -34,6 +34,8 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamart
 - [Kygan/Conrimaceogain](https://github.com/Conrimaceogain)
 - [YetheSamartaka](https://github.com/YetheSamartaka)
 - [Battlekeeper](https://github.com/Battlekeeper)
+- [MJSTIC](https://github.com/mazinskihenry)
+- [Digii / Julian](https://github.com/AtrixZockt)
 - [regiregi22](https://github.com/regiregi22)
 
 ## Disclaimer from current Developers
@@ -68,6 +70,11 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamart
 - Misc
   - [ ] Big Backpack?
   - [x] Workable IV stand
+- Zeus modules
+  - [x] Manage unit airways
+  - [x] Change blood group / volume
+  - [x] Change shockable state
+  - [x] Open unit medical menu
 
 ## Known Issues
 

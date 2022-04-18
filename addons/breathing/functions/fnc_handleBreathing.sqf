@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
+ * Author: Katalam, edited by Tomcat, Kygan, YetheSamartaka and MJSTIC
  * Handling oxygen saturation for breathing
  *
  * Arguments:
@@ -29,27 +29,37 @@ if (!local _unit) then {
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];
-
-    //If _unit is dead, then remove PFH
     if !(alive _unit) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_O2Breathing_PFH", nil];
+        _unit setVariable ["KAT_medical_airwayStatus", 100, true];
     };
 
-    //set up our important vars
-    private _pneumothorax = _unit getVariable ["KAT_medical_pneumothorax", false];
-    private _hemothorax = _unit getVariable ["KAT_medical_hemopneumothorax", false];
-    private _status = _unit getVariable ["KAT_medical_airwayStatus", 50];
-    private _occluded = _unit getVariable ["KAT_medical_airwayOccluded", false];
-    private _obstruction = _unit getVariable [QEGVAR(airway,obstruction), false];
+    private _airway = true;
+    private _breathing = true;
+
+    if ((_unit getVariable ["KAT_medical_tensionpneumothorax", false]) || (_unit getVariable ["KAT_medical_hemopneumothorax", false]) || (_unit getVariable ["KAT_medical_pneumothorax", false])) then {
+        _breathing = false;
+    };
+
+    if ((_unit getVariable ["KAT_medical_airwayOccluded", false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])) then {
+        _airway = false;
+    };
+
+    private _status = _unit getVariable ["KAT_medical_airwayStatus", 100];
     private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
-    private _airwaySafed = _unit getVariable [QEGVAR(airway,airway), false];
+    private _heartRate = _unit getVariable ["ace_medical_heartRate", 0];
+
+    private _output = 0;
+    private _finalOutput = 0;
+    private _multiplierPositive = GVAR(SpO2_MultiplyPositive);
+    private _multiplierNegative = GVAR(SpO2_MultiplyNegative);
 
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && {GVAR(SpO2_dieActive)}) exitWith {
-         [_idPFH] call CBA_fnc_removePerFrameHandler;
-          [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
-          _unit setVariable ["kat_O2Breathing_PFH", nil];
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+        [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
+        _unit setVariable ["kat_O2Breathing_PFH", nil];
     };
 
     //if the _unit has SpO2 equal/over 100, then remove the PFH
@@ -59,43 +69,80 @@ if (!local _unit) then {
         _unit setVariable ["kat_O2Breathing_PFH", nil];
     };
 
-    //if the _unit is awake withouth injuries, then add SpO2
-    if ([_unit] call ace_common_fnc_isAwake && !_pneumothorax && !_hemothorax) exitWith {
-        [_unit, GVAR(spo2_big_value), true] call FUNC(adjustSpo2);
+    if !([_unit] call ace_common_fnc_isAwake) exitWith {
+        if !(_breathing) exitWith {
+            _output = -0.3 * _multiplierNegative;
+            _finalOutput = _status + _output;
+
+            if (_finalOutput > 100) then {
+                _finalOutput = 100;
+            };
+
+            if (_finalOutput < 1) then {
+                _finalOutput = 1;
+            };
+
+            _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
+        };
+
+        if !(_airway) exitWith {
+            _output = -0.3 * _multiplierNegative;
+
+            if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) || _breathing)) then {
+                _output = 0.15 * _multiplierPositive;
+            };
+
+            _finalOutput = _status + _output;
+
+            if (_finalOutput > 100) then {
+                _finalOutput = 100;
+            };
+
+            if (_finalOutput < 1) then {
+                _finalOutput = 1;
+            };
+
+            _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
+        };
+
+        if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
+            _output = -0.2 * _multiplierNegative;
+        };
+
+        if (_heartRate >= 25) then {
+            _output = 0.3 * _multiplierPositive;
+        };
+
+        _finalOutput = _status + _output;
+
+        if (_finalOutput > 100) then {
+            _finalOutput = 100;
+        };
+
+        if (_finalOutput < 1) then {
+            _finalOutput = 1;
+        };
+
+        _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
     };
 
-    //if the _unit has a pneumothorax, then remove a big value of SpO2
-    if (_pneumothorax) then {
-        [_unit, GVAR(spo2_big_value), false] call FUNC(adjustSpo2);
-    };
+    if ([_unit] call ace_common_fnc_isAwake) exitWith {
+        if !(_breathing) then {
+            _output = -0.2 * _multiplierNegative;
+        } else {
+            _output = 0.5 * _multiplierPositive;
+        };
 
-    //if the _unit has a hemothorax, then remove a big value of SpO2
-    if (_hemothorax) then {
-        [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
-    };
+        _finalOutput = _status + _output;
 
-    //if the _unit has a heartrate bigger than 0, then remove/add x value of SpO2
-    if (_unit getVariable ["ace_medical_heartRate", 0] > 0) exitWith {
-        if (_overstretch && !_occluded) exitWith {
-            [_unit, GVAR(spo2_small_value), true] call FUNC(adjustSpo2);
+        if (_finalOutput < 1) then {
+            _finalOutput = 1;
         };
-        if (_occluded || _obstruction) exitWith {
-            [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
-        };
-        [_unit, GVAR(spo2_big_value), true] call FUNC(adjustSpo2);
-    };
 
-    //if the _unit has no heartrate, then remove/add x value of SpO2
-    switch (true) do {
-        case (_overstretch && !_occluded): {
-            [_unit, GVAR(spo2_small_value), true] call FUNC(adjustSpo2);
-        };
-        case (_airwaySafed): {
-            [_unit, GVAR(spo2_big_value), true] call FUNC(adjustSpo2);
-        };
-        default {
-            [_unit, GVAR(spo2_small_value), false] call FUNC(adjustSpo2);
+        _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
+    if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= 75}) then {
+            ["ace_medical_CriticalVitals", _unit] call CBA_fnc_localEvent;
         };
     };
 
-}, 2, [_unit]] call CBA_fnc_addPerFrameHandler;
+}, 3, [_unit]] call CBA_fnc_addPerFrameHandler;

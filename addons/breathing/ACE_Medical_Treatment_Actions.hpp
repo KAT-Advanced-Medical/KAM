@@ -56,7 +56,7 @@ class ACE_Medical_Treatment_Actions {
         category = "airway";
         treatmentLocations = 0;
         allowedSelections[] = {"Body"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = QGVAR(enable_selfChestseal);
         medicRequired = QGVAR(medLvl_Chestseal);
         treatmentTime = 7;
         items[] = {"kat_chestSeal"};

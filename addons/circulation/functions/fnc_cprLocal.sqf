@@ -24,14 +24,56 @@ params [
     ["_reviveObject","CPR",[""]]
 ];
 
+private _bloodLoss = _patient getVariable ["ace_medical_bloodVolume", 6.0];
+
 private _chance = 0;
 private _random = random 100;
+private _randomAmi = random 4;
 private _randomCPR = random 1;
+private _epiBoost = 1;
+private _amiBoost = 0;
+private _lidoBoost = 0;
+private _asystole = _patient getVariable [QGVAR(asystole), 0];
+private _CPRcount = _patient getVariable [QGVAR(CPRcount), 0];
+
+if (_asystole isEqualTo 0) then {
+    if ((_bloodLoss <= 3.6) && (_randomAmi >= 2)) then {
+        _patient setVariable [QGVAR(asystole), 2, true];
+        _asystole = _patient getVariable [QGVAR(asystole), 2];
+    } else {
+        _patient setVariable [QGVAR(asystole), 1, true];
+        _asystole = _patient getVariable [QGVAR(asystole), 1];
+    };
+};
+
+if !(GVAR(AdvRhythm)) then {
+    _patient setVariable [QGVAR(asystole), 1, true];
+    _asystole = _patient getVariable [QGVAR(asystole), 1];
+};
+
+{
+    _x params ["_medication"];
+
+    switch(_medication) do
+    {
+        case "Epinephrine": 
+        {
+        _epiBoost = 1.5;
+        };
+        case "Amiodarone": 
+        {
+        _amiBoost = _amiBoost + (random [8,14,20]);
+        };
+        case "Lidocaine":
+        {
+        _lidoBoost = _lidoBoost + 8;
+        };
+    };
+} forEach (_patient getVariable ["ace_medical_medications", []]);
 
 switch (_reviveObject) do {
     case "CPR": {
         [_patient, "activity", "STR_ACE_medical_treatment_Activity_CPR", [[_medic, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
-        _chance = ace_medical_treatment_cprSuccessChance;
         if (GVAR(enable_CPR_Chances)) then {
             switch (_medic getVariable ["ace_medical_medicClass",0]) do {
                 case 0: {
@@ -61,16 +103,40 @@ switch (_reviveObject) do {
 };
 
 if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AED-X" || _reviveObject isEqualTo "AED-Station") exitWith {
-    if (_random <= _chance) then {
+    _chance = _chance + (_amiBoost + _lidoBoost * _epiBoost);
+
+    if ((_random <= _chance) && (_asystole isEqualTo 1)) then {
         ["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
+        _patient setVariable [QGVAR(asystole), 0, true];
+        _patient setVariable [QGVAR(CPRcount), 2, true];
     };
 };
+
 if !(GVAR(enable_CPR_Chances)) then {
-    if (_randomCPR < _chance) then {
+    private _min = ace_medical_treatment_cprSuccessChanceMin;
+    private _max = ace_medical_treatment_cprSuccessChanceMax;
+    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), _min, _max, true];
+    // ACE Medical settings are percentages (decimals, 0 <= x <= 1) instead of integers
+
+    if ((random 1) <= _chance) then {
         ["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
+        _patient setVariable [QGVAR(asystole), 0, true];
     };
 } else {
+
+    if (_epiBoost isEqualTo 1.5) then {
+        _chance = _chance + (2 ^ _CPRcount);
+        _CPRcount = _CPRcount + 1;
+        _patient setVariable [QGVAR(CPRcount), _CPRcount, true];
+    };
+
     if (_random <= _chance) then {
-        ["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
+        if ((_randomAmi > 2) && (_asystole isEqualTo 2)) then {
+            _patient setVariable [QGVAR(asystole), 1, true];
+        } else {
+            ["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
+            _patient setVariable [QGVAR(asystole), 0, true];
+            _patient setVariable [QGVAR(CPRcount), 2, true];
+        };
     };
 };

@@ -65,14 +65,6 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class kat_PainkillerItem: ACE_ItemCore {
-        scope = 1; // no mistake, just a placeholder, cause ACE can't handle magazines. DO NOT USE!
-        author = "Katalam";
-        displayName = CSTRING(Painkillers_Box_Display);
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0;
-        };
-    };
     class kat_AED: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
