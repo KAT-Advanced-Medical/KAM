@@ -55,65 +55,65 @@ private _plasma = 0;
 if (_totalIvVolume >= 1) then {
     if (_saline > 1) then {
         switch (true) do {
-        	case (_saline > 1200): {
-        	    _medic addItem "ACE_salineIV";
-        	    _medic addItem "ACE_salineIV_500";
-        	};
-        	case (_saline > 800): {
-        	    _medic addItem "ACE_salineIV";
-        	};
-        	case (_saline > 600): {
-        	    _medic addItem "ACE_salineIV_500";
-        	    _medic addItem "ACE_salineIV_250";
-        	};
-        	case (_saline > 400): {
-        	    _medic addItem "ACE_salineIV_500";
-        	};
-        	case (_saline > 150): {
-        	    _medic addItem "ACE_salineIV_250";
-        	};
+            case (_saline > 1200): {
+                _medic addItem "ACE_salineIV";
+                _medic addItem "ACE_salineIV_500";
+            };
+            case (_saline > 800): {
+                _medic addItem "ACE_salineIV";
+            };
+            case (_saline > 600): {
+                _medic addItem "ACE_salineIV_500";
+                _medic addItem "ACE_salineIV_250";
+            };
+            case (_saline > 400): {
+                _medic addItem "ACE_salineIV_500";
+            };
+            case (_saline > 150): {
+                _medic addItem "ACE_salineIV_250";
+            };
         };
     };
     if (_blood > 1) then {
         switch (true) do {
-        	case (_blood > 1200): {
-        	    _medic addItem "ACE_bloodIV";
-        	    _medic addItem "ACE_bloodIV_500";
-        	};
-        	case (_blood > 800): {
-        	    _medic addItem "ACE_bloodIV";
-        	};
-        	case (_blood > 600): {
-        	    _medic addItem "ACE_bloodIV_500";
-        	    _medic addItem "ACE_bloodIV_250";
-        	};
-        	case (_blood > 400): {
-        	    _medic addItem "ACE_bloodIV_500";
-        	};
-        	case (_blood > 150): {
-        	    _medic addItem "ACE_bloodIV_250";
-        	};
+            case (_blood > 1200): {
+                _medic addItem "ACE_bloodIV";
+                _medic addItem "ACE_bloodIV_500";
+            };
+            case (_blood > 800): {
+                _medic addItem "ACE_bloodIV";
+            };
+            case (_blood > 600): {
+                _medic addItem "ACE_bloodIV_500";
+                _medic addItem "ACE_bloodIV_250";
+            };
+            case (_blood > 400): {
+                _medic addItem "ACE_bloodIV_500";
+            };
+            case (_blood > 150): {
+                _medic addItem "ACE_bloodIV_250";
+            };
         };
     };
     if (_plasma > 1) then {
         switch (true) do {
-        	case (_plasma > 1200): {
-        	    _medic addItem "ACE_plasmaIV";
-        	    _medic addItem "ACE_plasmaIV_500";
-        	};
-        	case (_plasma > 800): {
-        	    _medic addItem "ACE_plasmaIV";
-        	};
-        	case (_plasma > 600): {
-        	    _medic addItem "ACE_plasmaIV_500";
-        	    _medic addItem "ACE_plasmaIV_250";
-        	};
-        	case (_plasma > 400): {
-        	    _medic addItem "ACE_plasmaIV_500";
-        	};
-        	case (_plasma > 150): {
-        	    _medic addItem "ACE_plasmaIV_250";
-        	};
+            case (_plasma > 1200): {
+                _medic addItem "ACE_plasmaIV";
+                _medic addItem "ACE_plasmaIV_500";
+            };
+            case (_plasma > 800): {
+                _medic addItem "ACE_plasmaIV";
+            };
+            case (_plasma > 600): {
+                _medic addItem "ACE_plasmaIV_500";
+                _medic addItem "ACE_plasmaIV_250";
+            };
+            case (_plasma > 400): {
+                _medic addItem "ACE_plasmaIV_500";
+            };
+            case (_plasma > 150): {
+                _medic addItem "ACE_plasmaIV_250";
+            };
         };
     };
 };

@@ -54,8 +54,8 @@ private _fnc_onUnload = {
 private _fnc_sliderMove = {
     params ["_slider","_curBloodVol"];
     private _idc = ctrlIDC _slider;
-	private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
-	private _unit = attachedTo _logic;
+    private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
+    private _unit = attachedTo _logic;
     private _curVal = _unit getVariable ["ace_medical_bloodVolume", 6.0];
     _slider ctrlSetTooltip format [localize "STR_kat_zeus_sliderFormat13was23", parseNumber((sliderPosition _slider) toFixed 2), (parseNumber (_curVal toFixed 2)), "L"];
 };
@@ -72,10 +72,10 @@ _slider ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove];
 private _playerBloodyType = _unit getVariable [QEGVAR(circulation,bloodtype), "O"];
 private _select = switch (_playerBloodyType) do 
 {
-	case "O":  {0};
-  	case "A":  {1};
- 	case "B":  {2};
-  	case "AB": {3};
+    case "O":  {0};
+      case "A":  {1};
+     case "B":  {2};
+      case "AB": {3};
     default {0};
 };
 (_display displayCtrl 16107) lbSetCurSel _select;
@@ -86,13 +86,13 @@ private _fnc_onConfirm = {
     private _display = ctrlparent _ctrlButtonOK;
     if (isNull _display) exitWith {};
 
-	private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objnull);
+    private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objnull);
     if (isNull _logic) exitWith {};
 
-	private _unit = attachedTo _logic;
-	private _bloodtypeSel = lbCurSel (_display displayCtrl 16107);
-	private _bloodtype = ["0","A","B","AB"] select _bloodtypeSel;
-	_unit setVariable [QEGVAR(circulation,bloodtype), _bloodtype, true];
+    private _unit = attachedTo _logic;
+    private _bloodtypeSel = lbCurSel (_display displayCtrl 16107);
+    private _bloodtype = ["0","A","B","AB"] select _bloodtypeSel;
+    _unit setVariable [QEGVAR(circulation,bloodtype), _bloodtype, true];
     private _dogtagData = _unit getVariable "ace_dogtags_dogtagData";
     if(!isNil "_dogtagData") then {
         _dogtagData set [2, _bloodtype];
@@ -100,7 +100,7 @@ private _fnc_onConfirm = {
 
     private _curBloodVol = _unit getVariable ["ace_medical_bloodVolume", 6.0];
     private _sliderValue = sliderPosition (_display displayCtrl 26423);
-	_unit setVariable ["ace_medical_bloodVolume", ( parseNumber (_sliderValue toFixed 2)), true];
+    _unit setVariable ["ace_medical_bloodVolume", ( parseNumber (_sliderValue toFixed 2)), true];
 };
 
 _display displayAddEventHandler ["unload", _fnc_onUnload];

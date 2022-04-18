@@ -1,0 +1,14 @@
+name = "KAT - Advanced Medical";
+dir = "@kat_aceAdvMedical";
+picture = "larynx.paa";
+actionName = "Github";
+action = "https://github.com/Katalam/kat_aceAdvMedical";
+logo = "larynx.paa";
+logoOver = "larynx.paa";
+tooltip = "KAT-ACE Extension";
+tooltipOwned = "KAT-ACE Extension";
+overview = "The ACE Advanced Medical System is nice, but we can do it better, even on a more realistic way and bring it on another level with these addons.";
+author = "Katalam";
+overviewPicture = "larynx.paa";
+overviewText = "KAT-ACE Extension";
+overviewFootnote = "";

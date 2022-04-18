@@ -66,7 +66,7 @@ switch (GET_FRACTURES(_target) select _selectionN) do {
     };
     case -1: {
         if ((ace_medical_fractures) in [2, 3]) then { 
-			_entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [0.2, 0.2, 1, 1]];	
+            _entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [0.2, 0.2, 1, 1]];
         };
     };
 };
