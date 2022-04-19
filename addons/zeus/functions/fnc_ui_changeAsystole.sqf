@@ -42,9 +42,6 @@ switch (false) do {
     case (_unit isKindOf "CAManBase"): {
         [LSTRING(OnlyInfantry)] call _fnc_error;
     };
-    case !(_unit getVariable ["ACE_isUnconscious", false]): {
-        [LSTRING(NotUnconscious)] call _fnc_error;
-    };
 };
 
 private _fnc_onUnload = {
