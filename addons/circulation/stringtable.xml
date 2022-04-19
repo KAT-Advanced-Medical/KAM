@@ -1093,5 +1093,17 @@
             <Turkish>AED/AED-X için Bip ve Şarj sesini etkinleştirir </Turkish>
             <Italian>Abilita il segnale acustico e il suono di carica per DAE/DAE-X </Italian>
         </Key>
+        <Key ID="STR_KAT_circulation_Checking_Rhythm">
+            <English>Checking Rhythm</English>
+            <Polish>Sprawdzanie rytmu</Polish>
+            <German>Rhythmus kontrollieren</German>
+            <Spanish>Comprobando el ritmo cardíaco</Spanish>
+            <Chinese>检查节奏</Chinese>
+            <Czech>Kontroluji rytmus</Czech>
+            <Korean>리듬 확인하기</Korean>
+            <French>Vérification du rythme</French>
+            <Turkish>Ritmi Kontrol Etmek</Turkish>
+            <Italian>Controllando il ritmo</Italian>
+        </Key>
     </Package>
 </Project>
