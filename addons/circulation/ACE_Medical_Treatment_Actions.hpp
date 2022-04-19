@@ -24,7 +24,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class CheckRhythm: CheckPulse { 
         displayName = CSTRING(Rhythm);
-        displayNameProgress = "Checking Rhythm";
+        displayNameProgress = CSTRING(Checking_Rhythm);
         allowedSelections[] = {"Body"};
         treatmentTime = 2;
         items[] = {};
