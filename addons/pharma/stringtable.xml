@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="kat">
     <Package name="pharma">
-        <Key ID="STR_kat_pharma_SETTING_ENABLE">
-            <English>ACE-Pharmacy activated?</English>
-            <German>ACE-Kreislauf aktivieren?</German>
-            <Polish>ACE-Pharmacy ma być włączone?</Polish>
-            <Spanish>¿Activar ACE-Pharmacy?</Spanish>
-            <Chinese>ACE-Pharmacy被激活？</Chinese>
-            <Czech>ACE-pharmacy aktivováno?</Czech>
-            <Korean>ACE-약국 활성화?</Korean>
-            <French>ACE-Pharmacy activé?</French>
-            <Turkish>ACE-Eczacılık etkinleştirildi mi?</Turkish>
-            <Italian>ACE-Pharmacy attivata?</Italian>
-            <Japanese>ACE-Pharmacy を有効化しますか?</Japanese>
-        </Key>
         <Key ID="STR_kat_pharma_NALOXONE_ACTIVE">
             <English>Allow players to use Naloxone?</English>
             <German>Stoffwechselabhängiger Puls?</German>
@@ -66,6 +53,9 @@
             <Czech>Změní který medický level je potřeba k zavedení IV/IO</Czech>
             <Japanese>IV/IOを設定するために必要な医療レベルを変更します</Japanese>
         </Key>
+        <Key ID="STR_ACEP_circulation_IV_DROP_ENABLE">
+            <English>Enables IV/IO drop times</English>
+        </Key>        
         <Key ID="STR_kat_pharma_IV_DROP">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
             <German>Ändert den Zeitpunkt, zu dem IVs/IOs aus einem Patienten herausfallen</German>
