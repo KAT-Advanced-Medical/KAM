@@ -53,7 +53,7 @@
             <Czech>Změní který medický level je potřeba k zavedení IV/IO</Czech>
             <Japanese>IV/IOを設定するために必要な医療レベルを変更します</Japanese>
         </Key>
-        <Key ID="STR_ACEP_circulation_IV_DROP_ENABLE">
+        <Key ID="STR_kat_pharma_IV_DROP_ENABLE">
             <English>Enables IV/IO drop times</English>
         </Key>        
         <Key ID="STR_kat_pharma_IV_DROP">

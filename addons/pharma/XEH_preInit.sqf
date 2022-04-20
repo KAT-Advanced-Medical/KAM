@@ -58,9 +58,9 @@ PREP_RECOMPILE_END;
 
 [
 	QGVAR(IVdropEnable),
-	"KAT - ADV Medical: Pharmacy",
+	"CHECKBOX",
 	[LLSTRING(IV_DROP_ENABLE)],
-	CBA_SETTINGS_CAT_M,
+	"KAT - ADV Medical: Pharmacy",
 	[true],
 	true
 ] call CBA_Settings_fnc_init;
