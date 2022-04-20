@@ -911,5 +911,57 @@
             <Italian>%1 è vuota</Italian>
             <Japanese>%1は空になりました</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap">
+            <English>Reorientation slap sound</English>
+            <Polish>Dźwięk przy cuceniu</Polish>
+            <German>aaa</German>
+            <Spanish>aaa </Spanish>
+            <Chinese>aaa </Chinese>
+            <Czech>aaa</Czech>
+            <Korean>aaa</Korean>
+            <French>aaa</French>
+            <Turkish>aaa</Turkish>
+            <Italian>aaa</Italian>
+            <Japanese>aaa</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap_DESC">
+            <English>Enables slap sound for reorientation</English>
+            <Polish>Włącza dźwięk uderzenia przy cuceniu</Polish>
+            <German>aaa</German>
+            <Spanish>aaa</Spanish>
+            <Chinese>aaa</Chinese>
+            <Czech>aaa</Czech>
+            <Korean>aaa</Korean>
+            <French>aaa</French>
+            <Turkish>aaa</Turkish>
+            <Italian>aaa</Italian>
+            <Japanese>aaa</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable">
+            <English>Reorientation enabled?</English>
+            <Polish>Cucenie dostępne?</Polish>
+            <German>aaa</German>
+            <Spanish>aaa </Spanish>
+            <Chinese>aaa </Chinese>
+            <Czech>aaa</Czech>
+            <Korean>aaa</Korean>
+            <French>aaa</French>
+            <Turkish>aaa</Turkish>
+            <Italian>aaa</Italian>
+            <Japanese>aaa</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable_DESC">
+            <English>Enables reorientation</English>
+            <Polish>Pozwala na cucenie</Polish>
+            <German>aaa</German>
+            <Spanish>aaa</Spanish>
+            <Chinese>aaa</Chinese>
+            <Czech>aaa</Czech>
+            <Korean>aaa</Korean>
+            <French>aaa</French>
+            <Turkish>aaa</Turkish>
+            <Italian>aaa</Italian>
+            <Japanese>aaa</Japanese>
+        </Key>
     </Package>
 </Project>
