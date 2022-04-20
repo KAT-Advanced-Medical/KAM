@@ -54,6 +54,16 @@ _unit setVariable ["KAT_circulation_X_sound2", "x\kat\addons\circulation\sounds\
 _unit setVariable ["KAT_circulation_use", false, true];
 _unit setVariable ["KAT_circulation_returnedAED", false, true];
 
+// KAT Pharmacy
+
+_unit setVariable ["kat_pharma_flowRate", 1, true];
+_unit setVariable ["kat_pharma_IVplaced", false, true];
+_unit setVariable ["kat_pharma_usedIV", "", true];
+_unit setVariable ["kat_pharma_IV_counts", 0, true];
+_unit setVariable ["kat_pharma_IVsite", 0, true];
+_unit setVariable ["kat_pharma_ondUse", false, true];
+
+
 // Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten
 _unit spawn {
 	_unit = param [0,objNull,[objNull]];
