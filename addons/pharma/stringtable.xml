@@ -922,7 +922,7 @@
             <French>Son claque stimulation</French>
             <Turkish>Yönlendirme tokat sesi</Turkish>
             <Italian>Suono schiaffo stimolazione</Italian>
-            <Japanese>aaa</Japanese>
+            <Japanese>刺激時に音を鳴らす</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap_DESC">
             <English>Enables slap sound for reorientation</English>
@@ -935,7 +935,7 @@
             <French>Activer son de la claque</French>
             <Turkish>Yeniden yönlendirme için tokat sesini etkinleştirir</Turkish>
             <Italian>Abilita il suono dello schiaffo per la stimolazione</Italian>
-            <Japanese>aaa</Japanese>
+            <Japanese>患者に刺激を与える際にビンタの音を鳴らします</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable">
             <English>Reorientation enabled?</English>
@@ -948,7 +948,7 @@
             <French>Stimulation activé?</French>
             <Turkish>Yeniden yönlendirme etkin mi?</Turkish>
             <Italian>Stimolazione abilitata?</Italian>
-            <Japanese>aaa</Japanese>
+            <Japanese>患者に刺激を与える 機能を有効化しますか?</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable_DESC">
             <English>Enables reorientation</English>
@@ -961,7 +961,7 @@
             <French>Activer stimulation</French>
             <Turkish>Yeniden yönlendirmeyi etkinleştirir</Turkish>
             <Italian>Stimolazione abilitata</Italian>
-            <Japanese>aaa</Japanese>
+            <Japanese>刺激を与える(患者の安定時にビンタで叩き起こす)機能を有効化します</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation">
             <English>Allow reorientation</English>
@@ -974,7 +974,7 @@
             <French>Autoriser stimulation</French>
             <Turkish>Yeniden yönlendirmeye izin ver</Turkish>
             <Italian>Autorizza stimolazione</Italian>
-            <Japanese>aaa</Japanese>
+            <Japanese>患者に刺激を与えることが出来る人</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation_DESC">
             <English>Medical level required for reorientation</English>
@@ -987,7 +987,7 @@
             <French>Niveau médical requis pour stimulation</French>
             <Turkish>Yeniden oryantasyon için gerekli tıbbi seviye</Turkish>
             <Italian>Livello medico richiesto per stimolazione</Italian>
-            <Japanese>aaa</Japanese>
+            <Japanese>患者を刺激して起こすために必要な医療レベルを変更します</Japanese>
         </Key>
     </Package>
 </Project>
