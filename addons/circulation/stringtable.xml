@@ -389,7 +389,7 @@
             <Italian>Controllare il ritmo</Italian>
             <Spanish>Comprobar el ritmo</Spanish>
             <Czech>Zkontrolovat rytmus</Czech>
-            <Japanese>鼓動を計る</Japanese>
+            <Japanese>心室細動を確認する</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag">
             <English>Check Dogtags</English>
@@ -675,7 +675,7 @@
             <French>Ouvrir la fiche d'indication des groupes sanguins</French>
             <Turkish>Kan Grubu Tablosunu Açın</Turkish>
             <Italian>Apri tavola dei gruppi sanguigni</Italian>
-            <Japanese>血液型のチートシートを開く</Japanese>
+            <Japanese>血液型適合性チャートシートを開く</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_place_AED">
             <English>Place AED</English>
@@ -714,7 +714,7 @@
             <French>Fiche d'indication des groupes sanguins</French>
             <Turkish>Kan Grubu Tablosu</Turkish>
             <Italian>Tavola dei gruppi sanguigni</Italian>
-            <Japanese>血液型のチートシート</Japanese>
+            <Japanese>血液型適合性チャートシート</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_desc_crosspanel">
             <English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
