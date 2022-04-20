@@ -111,6 +111,15 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(medLvl_Reorientation),
+    "LIST",
+    [LLSTRING(SETTING_Allow_Reorientation),LLSTRING(Allow_Reorientation_DESC)],
+    CBA_SETTINGS_CAT,
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    true
+] call CBA_settings_fnc_init;
+
+[
     QGVAR(Reorientation_Slap),
     "CHECKBOX",
     [LLSTRING(SETTING_Reorientation_Slap), LLSTRING(SETTING_Reorientation_Slap_DESC)],

@@ -132,10 +132,10 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Reorienting);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
-        medicRequired = 1;
+        medicRequired = QGVAR(medLvl_Reorientation);
         treatmentTime = 1;
         items[] = {};
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake)) && QGVAR(Reorientation_Enable);
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && GVAR(Reorientation_Enable));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_Reorientation));
         animationMedic = "AinvPknlMstpSnonWnonDnon_medicUp4";

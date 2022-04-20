@@ -963,5 +963,31 @@
             <Italian>aaa</Italian>
             <Japanese>aaa</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation">
+            <English>Allow reorientation</English>
+            <Polish>Pozwól na cucenie</Polish>
+            <German>aaa</German>
+            <Spanish>aaa </Spanish>
+            <Chinese>aaa </Chinese>
+            <Czech>aaa</Czech>
+            <Korean>aaa</Korean>
+            <French>aaa</French>
+            <Turkish>aaa</Turkish>
+            <Italian>aaa</Italian>
+            <Japanese>aaa</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation_DESC">
+            <English>Medical level required for reorientation</English>
+            <Polish>Poziom wyszkolenia wymagany do cucenia</Polish>
+            <German>aaa</German>
+            <Spanish>aaa</Spanish>
+            <Chinese>aaa</Chinese>
+            <Czech>aaa</Czech>
+            <Korean>aaa</Korean>
+            <French>aaa</French>
+            <Turkish>aaa</Turkish>
+            <Italian>aaa</Italian>
+            <Japanese>aaa</Japanese>
+        </Key>
     </Package>
 </Project>
