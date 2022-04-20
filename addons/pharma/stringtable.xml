@@ -915,7 +915,7 @@
             <English>Reorientation slap sound</English>
             <Polish>Dźwięk przy cuceniu</Polish>
             <German>aaa</German>
-            <Spanish>aaa </Spanish>
+            <Spanish>Sonido de bofetada para recuperar la consciencia</Spanish>
             <Chinese>调整方向的拍击声</Chinese>
             <Czech>Zvuk facky reorientace</Czech>
             <Korean>방향 전환 슬랩 사운드</Korean>
@@ -928,7 +928,7 @@
             <English>Enables slap sound for reorientation</English>
             <Polish>Włącza dźwięk uderzenia przy cuceniu</Polish>
             <German>aaa</German>
-            <Spanish>aaa</Spanish>
+            <Spanish>Habilia el sonido de bofetada para recuperar la consciencia</Spanish>
             <Chinese>启用调整方向时的拍打声</Chinese>
             <Czech>Povolit zvuk facky pro reorientaci</Czech>
             <Korean>방향 전환을 위한 슬랩 사운드 활성화</Korean>
@@ -941,7 +941,7 @@
             <English>Reorientation enabled?</English>
             <Polish>Cucenie dostępne?</Polish>
             <German>aaa</German>
-            <Spanish>aaa </Spanish>
+            <Spanish>¿Bofetada para recuperar la consciencia habilitada?</Spanish>
             <Chinese>启用调整方向功能?</Chinese>
             <Czech>Reorientace povolena?</Czech>
             <Korean>방향 전환이 활성화되었습니까?</Korean>
@@ -954,7 +954,7 @@
             <English>Enables reorientation</English>
             <Polish>Pozwala na cucenie</Polish>
             <German>aaa</German>
-            <Spanish>aaa</Spanish>
+            <Spanish>Habilita la bofetada para recuperar la consciencia</Spanish>
             <Chinese>启用调整方向的功能</Chinese>
             <Czech>Povolí reorientaci</Czech>
             <Korean>방향 변경 가능</Korean>
@@ -967,7 +967,7 @@
             <English>Allow reorientation</English>
             <Polish>Pozwól na cucenie</Polish>
             <German>aaa</German>
-            <Spanish>aaa </Spanish>
+            <Spanish>Habilitar la bofetada para recuperar la consciencia</Spanish>
             <Chinese>允许调整方向</Chinese>
             <Czech>Povolit reorientaci</Czech>
             <Korean>방향 변경 허용</Korean>
@@ -980,7 +980,7 @@
             <English>Medical level required for reorientation</English>
             <Polish>Poziom wyszkolenia wymagany do cucenia</Polish>
             <German>aaa</German>
-            <Spanish>aaa</Spanish>
+            <Spanish>Nivel médico requerido para la bofetada</Spanish>
             <Chinese>调整方向所需的医疗水平</Chinese>
             <Czech>Vyžadovaná Zdravotnická úroveň pro reorientaci</Czech>
             <Korean>방향 전환에 필요한 의료 수준</Korean>
