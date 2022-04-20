@@ -18,8 +18,6 @@
 
 params ["_medic", "_patient"];
 
-if !(GVAR(Reorientation_Enable)) exitWith{};
-
 if (GVAR(Reorientation_Slap)) then {
 playSound3D [QPATHTOF_SOUND(sounds\slap.ogg), _patient, false, getPosASL _patient, 10, 1, 15];
 };
