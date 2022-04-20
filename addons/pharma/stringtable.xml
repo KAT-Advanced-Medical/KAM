@@ -917,7 +917,7 @@
             <German>aaa</German>
             <Spanish>aaa </Spanish>
             <Chinese>调整方向的拍击声</Chinese>
-            <Czech>aaa</Czech>
+            <Czech>Zvuk facky reorientace</Czech>
             <Korean>방향 전환 슬랩 사운드</Korean>
             <French>Son claque stimulation</French>
             <Turkish>Yönlendirme tokat sesi</Turkish>
@@ -930,7 +930,7 @@
             <German>aaa</German>
             <Spanish>aaa</Spanish>
             <Chinese>启用调整方向时的拍打声</Chinese>
-            <Czech>aaa</Czech>
+            <Czech>Povolit zvuk facky pro reorientaci</Czech>
             <Korean>방향 전환을 위한 슬랩 사운드 활성화</Korean>
             <French>Activer son de la claque</French>
             <Turkish>Yeniden yönlendirme için tokat sesini etkinleştirir</Turkish>
@@ -943,7 +943,7 @@
             <German>aaa</German>
             <Spanish>aaa </Spanish>
             <Chinese>启用调整方向功能?</Chinese>
-            <Czech>aaa</Czech>
+            <Czech>Reorientace povolena?</Czech>
             <Korean>방향 전환이 활성화되었습니까?</Korean>
             <French>Stimulation activé?</French>
             <Turkish>Yeniden yönlendirme etkin mi?</Turkish>
@@ -956,7 +956,7 @@
             <German>aaa</German>
             <Spanish>aaa</Spanish>
             <Chinese>启用调整方向的功能</Chinese>
-            <Czech>aaa</Czech>
+            <Czech>Povolí reorientaci</Czech>
             <Korean>방향 변경 가능</Korean>
             <French>Activer stimulation</French>
             <Turkish>Yeniden yönlendirmeyi etkinleştirir</Turkish>
@@ -969,7 +969,7 @@
             <German>aaa</German>
             <Spanish>aaa </Spanish>
             <Chinese>允许调整方向</Chinese>
-            <Czech>aaa</Czech>
+            <Czech>Povolit reorientaci</Czech>
             <Korean>방향 변경 허용</Korean>
             <French>Autoriser stimulation</French>
             <Turkish>Yeniden yönlendirmeye izin ver</Turkish>
@@ -982,7 +982,7 @@
             <German>aaa</German>
             <Spanish>aaa</Spanish>
             <Chinese>调整方向所需的医疗水平</Chinese>
-            <Czech>aaa</Czech>
+            <Czech>Vyžadovaná Zdravotnická úroveň pro reorientaci</Czech>
             <Korean>방향 전환에 필요한 의료 수준</Korean>
             <French>Niveau médical requis pour stimulation</French>
             <Turkish>Yeniden oryantasyon için gerekli tıbbi seviye</Turkish>
