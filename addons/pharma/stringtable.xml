@@ -916,12 +916,12 @@
             <Polish>Dźwięk przy cuceniu</Polish>
             <German>aaa</German>
             <Spanish>aaa </Spanish>
-            <Chinese>aaa </Chinese>
+            <Chinese>调整方向的拍击声</Chinese>
             <Czech>aaa</Czech>
-            <Korean>aaa</Korean>
-            <French>aaa</French>
-            <Turkish>aaa</Turkish>
-            <Italian>aaa</Italian>
+            <Korean>방향 전환 슬랩 사운드</Korean>
+            <French>Son claque stimulation</French>
+            <Turkish>Yönlendirme tokat sesi</Turkish>
+            <Italian>Suono schiaffo stimolazione</Italian>
             <Japanese>aaa</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap_DESC">
@@ -929,12 +929,12 @@
             <Polish>Włącza dźwięk uderzenia przy cuceniu</Polish>
             <German>aaa</German>
             <Spanish>aaa</Spanish>
-            <Chinese>aaa</Chinese>
+            <Chinese>启用调整方向时的拍打声</Chinese>
             <Czech>aaa</Czech>
-            <Korean>aaa</Korean>
-            <French>aaa</French>
-            <Turkish>aaa</Turkish>
-            <Italian>aaa</Italian>
+            <Korean>방향 전환을 위한 슬랩 사운드 활성화</Korean>
+            <French>Activer son de la claque</French>
+            <Turkish>Yeniden yönlendirme için tokat sesini etkinleştirir</Turkish>
+            <Italian>Abilita il suono dello schiaffo per la stimolazione</Italian>
             <Japanese>aaa</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable">
@@ -942,12 +942,12 @@
             <Polish>Cucenie dostępne?</Polish>
             <German>aaa</German>
             <Spanish>aaa </Spanish>
-            <Chinese>aaa </Chinese>
+            <Chinese>启用调整方向功能?</Chinese>
             <Czech>aaa</Czech>
-            <Korean>aaa</Korean>
-            <French>aaa</French>
-            <Turkish>aaa</Turkish>
-            <Italian>aaa</Italian>
+            <Korean>방향 전환이 활성화되었습니까?</Korean>
+            <French>Stimulation activé?</French>
+            <Turkish>Yeniden yönlendirme etkin mi?</Turkish>
+            <Italian>Stimolazione abilitata?</Italian>
             <Japanese>aaa</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable_DESC">
@@ -955,12 +955,12 @@
             <Polish>Pozwala na cucenie</Polish>
             <German>aaa</German>
             <Spanish>aaa</Spanish>
-            <Chinese>aaa</Chinese>
+            <Chinese>启用调整方向的功能</Chinese>
             <Czech>aaa</Czech>
-            <Korean>aaa</Korean>
-            <French>aaa</French>
-            <Turkish>aaa</Turkish>
-            <Italian>aaa</Italian>
+            <Korean>방향 변경 가능</Korean>
+            <French>Activer stimulation</French>
+            <Turkish>Yeniden yönlendirmeyi etkinleştirir</Turkish>
+            <Italian>Stimolazione abilitata</Italian>
             <Japanese>aaa</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation">
@@ -968,12 +968,12 @@
             <Polish>Pozwól na cucenie</Polish>
             <German>aaa</German>
             <Spanish>aaa </Spanish>
-            <Chinese>aaa </Chinese>
+            <Chinese>允许调整方向</Chinese>
             <Czech>aaa</Czech>
-            <Korean>aaa</Korean>
-            <French>aaa</French>
-            <Turkish>aaa</Turkish>
-            <Italian>aaa</Italian>
+            <Korean>방향 변경 허용</Korean>
+            <French>Autoriser stimulation</French>
+            <Turkish>Yeniden yönlendirmeye izin ver</Turkish>
+            <Italian>Autorizza stimolazione</Italian>
             <Japanese>aaa</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation_DESC">
@@ -981,12 +981,12 @@
             <Polish>Poziom wyszkolenia wymagany do cucenia</Polish>
             <German>aaa</German>
             <Spanish>aaa</Spanish>
-            <Chinese>aaa</Chinese>
+            <Chinese>调整方向所需的医疗水平</Chinese>
             <Czech>aaa</Czech>
-            <Korean>aaa</Korean>
-            <French>aaa</French>
-            <Turkish>aaa</Turkish>
-            <Italian>aaa</Italian>
+            <Korean>방향 전환에 필요한 의료 수준</Korean>
+            <French>Niveau médical requis pour stimulation</French>
+            <Turkish>Yeniden oryantasyon için gerekli tıbbi seviye</Turkish>
+            <Italian>Livello medico richiesto per stimolazione</Italian>
             <Japanese>aaa</Japanese>
         </Key>
     </Package>
