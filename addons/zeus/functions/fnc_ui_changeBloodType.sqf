@@ -72,10 +72,14 @@ _slider ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove];
 private _playerBloodyType = _unit getVariable [QEGVAR(circulation,bloodtype), "O"];
 private _select = switch (_playerBloodyType) do 
 {
-	case "O":  {0};
-  	case "A":  {1};
- 	case "B":  {2};
-  	case "AB": {3};
+	case "O+":  {0};
+  	case "O-":  {1};
+ 	case "A+":  {2};
+  	case "A-":  {3};
+    case "B+":  {4};
+    case "B-":  {5};
+ 	case "AB+":  {6};
+  	case "AB-":  {7};
     default {0};
 };
 (_display displayCtrl 16107) lbSetCurSel _select;
@@ -91,7 +95,7 @@ private _fnc_onConfirm = {
 
 	private _unit = attachedTo _logic;
 	private _bloodtypeSel = lbCurSel (_display displayCtrl 16107);
-	private _bloodtype = ["0","A","B","AB"] select _bloodtypeSel;
+	private _bloodtype = ["O+","O-","A+","A-","B+","B-","AB+","AB-"] select _bloodtypeSel;
 	_unit setVariable [QEGVAR(circulation,bloodtype), _bloodtype, true];
     private _dogtagData = _unit getVariable "ace_dogtags_dogtagData";
     if(!isNil "_dogtagData") then {
