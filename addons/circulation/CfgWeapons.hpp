@@ -3,79 +3,79 @@ class CfgWeapons {
     class CBA_MiscItem_ItemInfo;
     class ACE_bloodIV;
 
-    class kat_bloodIV_O_RhP: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_O_RhP);
+    class kat_bloodIV_O: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_O);
     };
-    class kat_bloodIV_O_RhN: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_O_RhN);
+    class kat_bloodIV_O_N: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_O_N);
     };
-    class kat_bloodIV_A_RhP: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_A_RhP);
+    class kat_bloodIV_A: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_A);
     };
-    class kat_bloodIV_A_RhN: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_A_RhN);
+    class kat_bloodIV_A_N: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_A_N);
     };
-    class kat_bloodIV_B_RhP: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_B_RhP);
+    class kat_bloodIV_B: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_B);
     };
-    class kat_bloodIV_B_RhN: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_B_RhN);
+    class kat_bloodIV_B_N: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_B_N);
     };
-    class kat_bloodIV_AB_RhP: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_AB_RhP);
+    class kat_bloodIV_AB: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_AB);
     };
-    class kat_bloodIV_AB_RhN: ACE_bloodIV {
-        displayName = CSTRING(BloodIV_AB_RhN);
+    class kat_bloodIV_AB_N: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_AB_N);
     };
     class ACE_bloodIV_500;
-    class kat_bloodIV_O_500_RhP: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_O_500_RhP);
+    class kat_bloodIV_O_500: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_O_500);
     };
-    class kat_bloodIV_O_500_RhN: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_O_500_RhN);
+    class kat_bloodIV_O_500_N: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_O_500_N);
     };
-    class kat_bloodIV_A_500_RhP: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_A_500_RhP);
+    class kat_bloodIV_A_500: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_A_500);
     };
-    class kat_bloodIV_A_500_RhN: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_A_500_RhN);
+    class kat_bloodIV_A_500_N: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_A_500_N);
     };
-    class kat_bloodIV_B_500_RhP: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_B_500_RhP);
+    class kat_bloodIV_B_500: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_B_500);
     };
-    class kat_bloodIV_B_500_RhN: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_B_500_RhN);
+    class kat_bloodIV_B_500_N: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_B_500_N);
     };
-    class kat_bloodIV_AB_500_RhP: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_AB_500_RhP);
+    class kat_bloodIV_AB_500: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_AB_500);
     };
-    class kat_bloodIV_AB_500_RhN: ACE_bloodIV_500 {
-        displayName = CSTRING(BloodIV_AB_500_RhN);
+    class kat_bloodIV_AB_500_N: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_AB_500_N);
     };
     class ACE_bloodIV_250;
-    class kat_bloodIV_O_250_RhP: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_O_250_RhP);
+    class kat_bloodIV_O_250: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_O_250);
     };
-    class kat_bloodIV_O_250_RhN: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_O_250_RhN);
+    class kat_bloodIV_O_250_N: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_O_250_N);
     };
-    class kat_bloodIV_A_250_RhP: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_A_250_RhP);
+    class kat_bloodIV_A_250: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_A_250);
     };
-    class kat_bloodIV_A_250_RhN: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_A_250_RhN);
+    class kat_bloodIV_A_250_N: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_A_250_N);
     };
-    class kat_bloodIV_B_250_RhP: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_B_250_RhP);
+    class kat_bloodIV_B_250: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_B_250);
     };
-    class kat_bloodIV_B_250_RhN: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_B_250_RhN);
+    class kat_bloodIV_B_250_N: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_B_250_N);
     };
-    class kat_bloodIV_AB_250_RhP: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_AB_250_RhP);
+    class kat_bloodIV_AB_250: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_AB_250);
     };
-    class kat_bloodIV_AB_250_RhN: ACE_bloodIV_250 {
-        displayName = CSTRING(BloodIV_AB_250_RhN);
+    class kat_bloodIV_AB_250_N: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_AB_250_N);
     };
     class KAT_Empty_bloodIV_500: ACE_bloodIV
 	{

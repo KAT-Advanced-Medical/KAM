@@ -5,124 +5,124 @@ class ACE_Medical_Advanced {
             class BloodIV_500;
             class BloodIV_250;
 
-            class BloodIV_O_RhP: BloodIV {
+            class BloodIV_O: BloodIV {
 				volume = 1000;
                 bloodType = "O+";
                 compatibility[] = {"O+", "A+", "B+", "AB+"};
             };
-            class BloodIV_O_RhN: BloodIV {
+            class BloodIV_O_N: BloodIV {
 				volume = 1000;
                 bloodType = "O-";
                 compatibility[] = {"O+", "O-", "A+", "A-", "B+","B-", "AB+", "AB-"};
             };
-            class BloodIV_A_RhP: BloodIV {
+            class BloodIV_A: BloodIV {
 				volume = 1000;
                 bloodType = "A+";
                 compatibility[] = {"A+", "AB+"};
             };
-            class BloodIV_A_RhN: BloodIV {
+            class BloodIV_A_N: BloodIV {
 				volume = 1000;
                 bloodType = "A-";
                 compatibility[] = {"A+", "A-", "AB+", "AB-"};
             };
-            class BloodIV_B_RhP: BloodIV {
+            class BloodIV_B: BloodIV {
 				volume = 1000;
                 bloodType = "B+";
                 compatibility[] = {"B+", "AB+"};
             };
-            class BloodIV_B_RhN: BloodIV {
+            class BloodIV_B_N: BloodIV {
 				volume = 1000;
                 bloodType = "B-";
                 compatibility[] = {"B+","B-", "AB+", "AB-"};
             };
-            class BloodIV_AB_RhP: BloodIV {
+            class BloodIV_AB: BloodIV {
 				volume = 1000;
                 bloodType = "AB+";
                 compatibility[] = {"AB+"};
             };
-            class BloodIV_AB_RhN: BloodIV {
+            class BloodIV_AB_N: BloodIV {
 				volume = 1000;
                 bloodType = "AB-";
                 compatibility[] = {"AB+","AB-"};
             };
 
-            class BloodIV_O_500_RhP: BloodIV_500 {
+            class BloodIV_O_500: BloodIV_500 {
 				volume = 500;
                 bloodType = "O+";
                 compatibility[] = {"O+", "A+", "B+", "AB+"};
             };
-            class BloodIV_O_500_RhN: BloodIV_500 {
+            class BloodIV_O_500_N: BloodIV_500 {
 				volume = 500;
                 bloodType = "O-";
                 compatibility[] = {"O+", "O-", "A+", "A-", "B+","B-", "AB+", "AB-"};
             };
-            class BloodIV_A_500_RhP: BloodIV_500 {
+            class BloodIV_A_500: BloodIV_500 {
 				volume = 500;
                 bloodType = "A+";
                 compatibility[] = {"A+", "AB+"};
             };
-             class BloodIV_A_500_RhN: BloodIV_500 {
+             class BloodIV_A_500_N: BloodIV_500 {
 				volume = 500;
                 bloodType = "A-";
                 compatibility[] = {"A+", "A-", "AB+", "AB-"};
             };
-            class BloodIV_B_500_RhP: BloodIV_500 {
+            class BloodIV_B_500: BloodIV_500 {
 				volume = 500;
                 bloodType = "B+";
                 compatibility[] = {"B+", "AB+"};
             };
-            class BloodIV_B_500_RhN: BloodIV_500 {
+            class BloodIV_B_500_N: BloodIV_500 {
 				volume = 500;
                 bloodType = "B-";
                 compatibility[] = {"B+","B-", "AB+", "AB-"};
             };
-            class BloodIV_AB_500_RhP: BloodIV_500 {
+            class BloodIV_AB_500: BloodIV_500 {
 				volume = 500;
                 bloodType = "AB+";
                 compatibility[] = {"AB+"};
             };
-            class BloodIV_AB_500_RhN: BloodIV_500 {
+            class BloodIV_AB_500_N: BloodIV_500 {
 				volume = 500;
                 bloodType = "AB-";
                 compatibility[] = {"AB+","AB-"};
             };
 
-            class BloodIV_O_250_RhP: BloodIV_250 {
+            class BloodIV_O_250: BloodIV_250 {
 				volume = 250;
                 bloodType = "O+";
                 compatibility[] = {"O+", "A+", "B+", "AB+"};
             };
-            class BloodIV_O_250_RhN: BloodIV_250 {
+            class BloodIV_O_250_N: BloodIV_250 {
 				volume = 250;
                 bloodType = "O-";
                 compatibility[] = {"O+", "O-", "A+", "A-", "B+","B-", "AB+", "AB-"};
             };
-            class BloodIV_A_250_RhP: BloodIV_250 {
+            class BloodIV_A_250: BloodIV_250 {
 				volume = 250;
                 bloodType = "A+";
                 compatibility[] = {"A+", "AB+"};
             };
-            class BloodIV_A_250_RhN: BloodIV_250 {
+            class BloodIV_A_250_N: BloodIV_250 {
 				volume = 250;
                 bloodType = "A-";
                 compatibility[] = {"A+", "A-", "AB+", "AB-"};
             };
-            class BloodIV_B_250_RhP: BloodIV_250 {
+            class BloodIV_B_250: BloodIV_250 {
 				volume = 250;
                 bloodType = "B+";
                 compatibility[] = {"B+", "AB+"};
             };
-            class BloodIV_B_250_RhN: BloodIV_250 {
+            class BloodIV_B_250_N: BloodIV_250 {
 				volume = 250;
                 bloodType = "B-";
                 compatibility[] = {"B+","B-", "AB+", "AB-"};
             };
-            class BloodIV_AB_250_RhP: BloodIV_250 {
+            class BloodIV_AB_250: BloodIV_250 {
 				volume = 250;
                 bloodType = "AB+";
                 compatibility[] = {"AB+"};
             };
-            class BloodIV_AB_250_RhN: BloodIV_250 {
+            class BloodIV_AB_250_N: BloodIV_250 {
 				volume = 250;
                 bloodType = "AB-";
                 compatibility[] = {"AB+","AB-"};
