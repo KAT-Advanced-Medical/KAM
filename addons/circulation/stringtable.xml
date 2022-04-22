@@ -66,7 +66,33 @@
             <Italian>Sangue EV (1000ml) GS: 0</Italian>
             <Japanese>血液IV (1000ml) O型</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_O_N">
+            <English>Blood IV (1000ml) BT: 0</English>
+            <German>Blut IV (1000ml) BG: 0</German>
+            <Polish>Krew IV (1000ml) GK: 0</Polish>
+            <Spanish>Sangre IV (1000ml) GS: 0</Spanish>
+            <Chinese>O型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: 0</Czech>
+            <Korean>O형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: O</French>
+            <Turkish>Kan IV (1000ml) KG: 0</Turkish>
+            <Italian>Sangue EV (1000ml) GS: 0</Italian>
+            <Japanese>血液IV (1000ml) O型</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A">
+            <English>Blood IV (1000ml) BT: A</English>
+            <German>Blut IV (1000ml) BG: A</German>
+            <Polish>Krew IV (1000ml) GK: A</Polish>
+            <Spanish>Sangre IV (1000ml) GS: A</Spanish>
+            <Chinese>A型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: A</Czech>
+            <Korean>A형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: A</French>
+            <Turkish>Kan IV (1000ml) KG: A</Turkish>
+            <Italian>Sangue EV (1000ml) GS: A</Italian>
+            <Japanese>血液IV (1000ml) A型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_A_N">
             <English>Blood IV (1000ml) BT: A</English>
             <German>Blut IV (1000ml) BG: A</German>
             <Polish>Krew IV (1000ml) GK: A</Polish>
@@ -92,7 +118,33 @@
             <Italian>Sangue EV (1000ml) GS: B</Italian>
             <Japanese>血液IV (1000ml) B型</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_B_N">
+            <English>Blood IV (1000ml) BT: B</English>
+            <German>Blut IV (1000ml) BG: B</German>
+            <Polish>Krew IV (1000ml) GK: B</Polish>
+            <Spanish>Sangre IV (1000ml) GS: B</Spanish>
+            <Chinese>B型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: B</Czech>
+            <Korean>B형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: B</French>
+            <Turkish>Kan IV (1000ml) KG: B</Turkish>
+            <Italian>Sangue EV (1000ml) GS: B</Italian>
+            <Japanese>血液IV (1000ml) B型</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB">
+            <English>Blood IV (1000ml) BT: AB</English>
+            <German>Blut IV (1000ml) BG: AB</German>
+            <Polish>Krew IV (1000ml) GK: AB</Polish>
+            <Spanish>Sangre IV (1000ml) GS: AB</Spanish>
+            <Chinese>AB型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: AB</Czech>
+            <Korean>AB형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: AB</French>
+            <Turkish>Kan IV (1000ml) KG: AB</Turkish>
+            <Italian>Sangue EV (1000ml) GS: AB</Italian>
+            <Japanese>血液IV (1000ml) AB型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_AB_N">
             <English>Blood IV (1000ml) BT: AB</English>
             <German>Blut IV (1000ml) BG: AB</German>
             <Polish>Krew IV (1000ml) GK: AB</Polish>
@@ -118,7 +170,33 @@
             <Italian>Sangue EV (500ml) GS: 0</Italian>
             <Japanese>血液IV (500ml) O型</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_O_500_N">
+            <English>Blood IV (500ml) BT: 0</English>
+            <German>Blut IV (500ml) BG: 0</German>
+            <Polish>Krew IV (500ml) GK: 0</Polish>
+            <Spanish>Sangre IV (500ml) GS: 0</Spanish>
+            <Chinese>O型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: 0</Czech>
+            <Korean>O형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: O</French>
+            <Turkish>Kan IV (500ml) KG: 0</Turkish>
+            <Italian>Sangue EV (500ml) GS: 0</Italian>
+            <Japanese>血液IV (500ml) O型</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_500">
+            <English>Blood IV (500ml) BT: A</English>
+            <German>Blut IV (500ml) BG: A</German>
+            <Polish>Krew IV (500ml) GK: A</Polish>
+            <Spanish>Sangre IV (500ml) GS: A</Spanish>
+            <Chinese>A型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: A</Czech>
+            <Korean>A형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: A</French>
+            <Turkish>Kan IV (500ml) KG: A</Turkish>
+            <Italian>Sangue EV (500ml) GS: A</Italian>
+            <Japanese>血液IV (500ml) A型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_A_500_N">
             <English>Blood IV (500ml) BT: A</English>
             <German>Blut IV (500ml) BG: A</German>
             <Polish>Krew IV (500ml) GK: A</Polish>
@@ -144,7 +222,33 @@
             <Italian>Sangue EV (500ml) GS: B</Italian>
             <Japanese>血液IV (500ml) B型</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_B_500_N">
+            <English>Blood IV (500ml) BT: B</English>
+            <German>Blut IV (500ml) BG: B</German>
+            <Polish>Krew IV (500ml) GK: B</Polish>
+            <Spanish>Sangre IV (500ml) GS: B</Spanish>
+            <Chinese>B型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: B</Czech>
+            <Korean>B형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: B</French>
+            <Turkish>Kan IV (500ml) KG: B</Turkish>
+            <Italian>Sangue EV (500ml) GS: B</Italian>
+            <Japanese>血液IV (500ml) B型</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_500">
+            <English>Blood IV (500ml) BT: AB</English>
+            <German>Blut IV (500ml) BG: AB</German>
+            <Polish>Krew IV (500ml) GK: AB</Polish>
+            <Spanish>Sangre IV (500ml) GS: AB</Spanish>
+            <Chinese>AB型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: AB</Czech>
+            <Korean>AB형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: AB</French>
+            <Turkish>Kan IV (500ml) KG: AB</Turkish>
+            <Italian>Sangue EV (500ml) GS: AB</Italian>
+            <Japanese>血液IV (500ml) AB型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_AB_500_N">
             <English>Blood IV (500ml) BT: AB</English>
             <German>Blut IV (500ml) BG: AB</German>
             <Polish>Krew IV (500ml) GK: AB</Polish>
@@ -170,7 +274,33 @@
             <Italian>Sangue EV (250ml) GS: 0</Italian>
             <Japanese>血液IV (250ml) O型</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_O_250_N">
+            <English>Blood IV (250ml) BT: 0</English>
+            <German>Blut IV (250ml) BG: 0</German>
+            <Polish>Krew IV (250ml) GK: 0</Polish>
+            <Spanish>Sangre IV (250ML) GS: 0</Spanish>
+            <Chinese>O型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: 0</Czech>
+            <Korean>O형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: O</French>
+            <Turkish>Kan IV (250ml) KG: 0</Turkish>
+            <Italian>Sangue EV (250ml) GS: 0</Italian>
+            <Japanese>血液IV (250ml) O型</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_250">
+            <English>Blood IV (250ml) BT: A</English>
+            <German>Blut IV (250ml) BG: A</German>
+            <Polish>Krew IV (250ml) GK: A</Polish>
+            <Spanish>Sangre IV (250ML) GS: A</Spanish>
+            <Chinese>A型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: A</Czech>
+            <Korean>A형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: A</French>
+            <Turkish>Kan IV (250ml) KG: A</Turkish>
+            <Italian>Sangue EV (250ml) GS: A</Italian>
+            <Japanese>血液IV (250ml) A型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_A_250_N">
             <English>Blood IV (250ml) BT: A</English>
             <German>Blut IV (250ml) BG: A</German>
             <Polish>Krew IV (250ml) GK: A</Polish>
@@ -196,7 +326,33 @@
             <Italian>Sangue EV (250ml) GS: B</Italian>
             <Japanese>血液IV (250ml) B型</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_B_250_N">
+            <English>Blood IV (250ml) BT: B</English>
+            <German>Blut IV (250ml) BG: B</German>
+            <Polish>Krew IV (250ml) GK: B</Polish>
+            <Spanish>Sangre IV (250ML) GS: B</Spanish>
+            <Chinese>B型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: B</Czech>
+            <Korean>B형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: B</French>
+            <Turkish>Kan IV (250ml) KG: B</Turkish>
+            <Italian>Sangue EV (250ml) GS: B</Italian>
+            <Japanese>血液IV (250ml) B型</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_250">
+            <English>Blood IV (250ml) BT: AB</English>
+            <German>Blut IV (250ml) BG: AB</German>
+            <Polish>Krew IV (250ml) GK: AB</Polish>
+            <Spanish>Sangre IV (250ML) GS: AB</Spanish>
+            <Chinese>AB型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: AB</Czech>
+            <Korean>AB형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: AB</French>
+            <Turkish>Kan IV (250ml) KG: AB</Turkish>
+            <Italian>Sangue EV (250ml) GS: AB</Italian>
+            <Japanese>血液IV (250ml) AB型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_AB_250_N">
             <English>Blood IV (250ml) BT: AB</English>
             <German>Blut IV (250ml) BG: AB</German>
             <Polish>Krew IV (250ml) GK: AB</Polish>
@@ -222,7 +378,33 @@
             <Italian>Somministrare Sangue EV (1000ml) GS: 0</Italian>
             <Japanese>血液IV (1000ml) O型 を投与</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_Action_BloodIV_O_N">
+            <English>Give Blood IV (1000ml) BT: 0</English>
+            <German>Bluttransfusion IV (1000ml) BG: 0</German>
+            <Polish>Podaj Krew IV (1000ml) GK: 0</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: 0</Spanish>
+            <Chinese>輸血液 (O型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: 0</Czech>
+            <Korean>O형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: O</French>
+            <Turkish>Kan IV (1000ml) KG: 0 Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: 0</Italian>
+            <Japanese>血液IV (1000ml) O型 を投与</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_A">
+            <English>Give Blood IV (1000ml) BT: A</English>
+            <German>Bluttransfusion IV (1000ml) BG: A</German>
+            <Polish>Podaj Krew IV (1000ml) GK: A</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: A</Spanish>
+            <Chinese>輸血液 (A型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: A</Czech>
+            <Korean>A형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: A</French>
+            <Turkish>Kan IV (1000ml) KG: A Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: A</Italian>
+            <Japanese>血液IV (1000ml) A型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_BloodIV_A_N">
             <English>Give Blood IV (1000ml) BT: A</English>
             <German>Bluttransfusion IV (1000ml) BG: A</German>
             <Polish>Podaj Krew IV (1000ml) GK: A</Polish>
@@ -248,7 +430,33 @@
             <Italian>Somministrare Sangue EV (1000ml) GS: B</Italian>
             <Japanese>血液IV (1000ml) B型 を投与</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_Action_BloodIV_B_N">
+            <English>Give Blood IV (1000ml) BT: B</English>
+            <German>Bluttransfusion IV (1000ml) BG: B</German>
+            <Polish>Podaj Krew IV (1000ml) GK: B</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: B</Spanish>
+            <Chinese>輸血液 (B型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: B</Czech>
+            <Korean>B형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: B</French>
+            <Turkish>Kan IV (1000ml) KG: B Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: B</Italian>
+            <Japanese>血液IV (1000ml) B型 を投与</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_AB">
+            <English>Give Blood IV (1000ml) BT: AB</English>
+            <German>Bluttransfusion IV (1000ml) BG: AB</German>
+            <Polish>Podaj Krew IV (1000ml) GK: AB</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: AB</Spanish>
+            <Chinese>輸血液 (AB型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: AB</Czech>
+            <Korean>AB형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: AB</French>
+            <Turkish>Kan IV (1000ml) KG: AB Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: AB</Italian>
+            <Japanese>血液IV (1000ml) AB型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_BloodIV_AB_N">
             <English>Give Blood IV (1000ml) BT: AB</English>
             <German>Bluttransfusion IV (1000ml) BG: AB</German>
             <Polish>Podaj Krew IV (1000ml) GK: AB</Polish>
@@ -274,7 +482,33 @@
             <Italian>Somministrare Sangue EV (500ml) GS: 0</Italian>
             <Japanese>血液IV (500ml) O型 を投与</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_Action_500_BloodIV_O_N">
+            <English>Give Blood IV (500ml) BT: 0</English>
+            <German>Bluttransfusion IV (500ml) BG: 0</German>
+            <Polish>Podaj Krew IV (500ml) GK: 0</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: 0</Spanish>
+            <Chinese>輸血液 (O型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: 0</Czech>
+            <Korean>O형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: O</French>
+            <Turkish>Kan IV (500ml) KG: 0 Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: 0</Italian>
+            <Japanese>血液IV (500ml) O型 を投与</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_A">
+            <English>Give Blood IV (500ml) BT: A</English>
+            <German>Bluttransfusion IV (500ml) BG: A</German>
+            <Polish>Podaj Krew IV (500ml) GK: A</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: A</Spanish>
+            <Chinese>輸血液 (A型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: A</Czech>
+            <Korean>A형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: A</French>
+            <Turkish>Kan IV (500ml) KG: A Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: A</Italian>
+            <Japanese>血液IV (500ml) A型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_500_BloodIV_A_N">
             <English>Give Blood IV (500ml) BT: A</English>
             <German>Bluttransfusion IV (500ml) BG: A</German>
             <Polish>Podaj Krew IV (500ml) GK: A</Polish>
@@ -300,7 +534,33 @@
             <Italian>Somministrare Sangue EV (500ml) GS: B</Italian>
             <Japanese>血液IV (500ml) B型 を投与</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_Action_500_BloodIV_B_N">
+            <English>Give Blood IV (500ml) BT: B</English>
+            <German>Bluttransfusion IV (500ml) BG: B</German>
+            <Polish>Podaj Krew IV (500ml) GK: B</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: B</Spanish>
+            <Chinese>輸血液 (B型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: B</Czech>
+            <Korean>B형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: B</French>
+            <Turkish>Kan IV (500ml) KG: B Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: B</Italian>
+            <Japanese>血液IV (500ml) B型 を投与</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_AB">
+            <English>Give Blood IV (500ml) BT: AB</English>
+            <German>Bluttransfusion IV (500ml) BG: AB</German>
+            <Polish>Podaj Krew IV (500ml) GK: AB</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: AB</Spanish>
+            <Chinese>輸血液 (AB型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: AB</Czech>
+            <Korean>AB형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: AB</French>
+            <Turkish>Kan IV (500ml) KG: AB Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: AB</Italian>
+            <Japanese>血液IV (500ml) AB型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_500_BloodIV_AB_N">
             <English>Give Blood IV (500ml) BT: AB</English>
             <German>Bluttransfusion IV (500ml) BG: AB</German>
             <Polish>Podaj Krew IV (500ml) GK: AB</Polish>
@@ -326,7 +586,33 @@
             <Italian>Somministrare Sangue EV (250ml) GS: 0</Italian>
             <Japanese>血液IV (250ml) O型 を投与</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_Action_250_BloodIV_O_N">
+            <English>Give Blood IV (250ml) BT: 0</English>
+            <German>Bluttransfusion IV (250ml) BG: 0</German>
+            <Polish>Podaj Krew IV (250ml) GK: 0</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: 0</Spanish>
+            <Chinese>輸血液 (O型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: 0</Czech>
+            <Korean>O형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: O</French>
+            <Turkish>Kan IV (250ml) KG: 0 Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: 0</Italian>
+            <Japanese>血液IV (250ml) O型 を投与</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_A">
+            <English>Give Blood IV (250ml) BT: A</English>
+            <German>Bluttransfusion IV (250ml) BG: A</German>
+            <Polish>Podaj Krew IV (250ml) GK: A</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: A</Spanish>
+            <Chinese>輸血液 (A型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: A</Czech>
+            <Korean>A형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: A</French>
+            <Turkish>Kan IV (250ml) KG: A Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: A</Italian>
+            <Japanese>血液IV (250ml) A型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_250_BloodIV_A_N">
             <English>Give Blood IV (250ml) BT: A</English>
             <German>Bluttransfusion IV (250ml) BG: A</German>
             <Polish>Podaj Krew IV (250ml) GK: A</Polish>
@@ -352,7 +638,33 @@
             <Italian>Somministrare Sangue EV (250ml) GS: B</Italian>
             <Japanese>血液IV (250ml) B型 を投与</Japanese>
         </Key>
+        <Key ID="STR_KAT_circulation_Action_250_BloodIV_B_N">
+            <English>Give Blood IV (250ml) BT: B</English>
+            <German>Bluttransfusion IV (250ml) BG: B</German>
+            <Polish>Podaj Krew IV (250ml) GK: B</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: B</Spanish>
+            <Chinese>輸血液 (B型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: B</Czech>
+            <Korean>A형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: B</French>
+            <Turkish>Kan IV (250ml) KG: B Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: B</Italian>
+            <Japanese>血液IV (250ml) B型 を投与</Japanese>
+        </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_AB">
+            <English>Give Blood IV (250ml) BT: AB</English>
+            <German>Bluttransfusion IV (250ml) BG: AB</German>
+            <Polish>Podaj Krew IV (250ml) GK: AB</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: AB</Spanish>
+            <Chinese>輸血液 (AB型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: AB</Czech>
+            <Korean>AB형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: AB</French>
+            <Turkish>Kan IV (250ml) KG: AB Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: AB</Italian>
+            <Japanese>血液IV (250ml) AB型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_250_BloodIV_AB_N">
             <English>Give Blood IV (250ml) BT: AB</English>
             <German>Bluttransfusion IV (250ml) BG: AB</German>
             <Polish>Podaj Krew IV (250ml) GK: AB</Polish>
