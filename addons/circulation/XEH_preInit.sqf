@@ -63,7 +63,7 @@ private _type = round random(3);
     "LIST",
     LLSTRING(client_bt),
     CBA_SETTINGS_CAT,
-    [["A", "B", "AB", "O"], ["A", "B", "AB", "O"], _type],
+    [["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], _type],
     2,
     {
         player setVariable [QGVAR(bloodtype), _this, true];
