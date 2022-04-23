@@ -916,7 +916,7 @@
             <Polish>Wymagaj włożonego IV/IO</Polish>
             <French>Exiger l'insertion d'IV/IO</French>
             <Chinese>需要插入 IV/IO</Chinese>
-            <Italian>Richiede inserito IV/IO</Italian>
+            <Italian>Richiesto inserimento IV/IO</Italian>
             <Spanish>Requiere inserción IV/IO</Spanish>
             <Korean>삽입된 IV/IO 필요</Korean>
             <Turkish>Takılı IV/IO gerektir</Turkish>
@@ -930,7 +930,7 @@
             <Spanish>Verdadero predeterminado. Si es verdadero, primero deberá insertar IV/IO antes de poder administrarle a alguien solución salina/sangre/plasma.\n Si es falso, conserva el comportamiento estándar de ACE para usar solución salina/sangre/plasma.</Spanish>
             <French>Vrai par défaut. Si vrai, vous devrez d'abord insérer IV/IO avant de pouvoir donner à quelqu'un une solution saline/sang/plasma.\n Si faux, il conserve le comportement ACE standard pour l'utilisation de solution saline/sang/plasma.</French>
             <Turkish>Varsayılan doğru. Doğruysa, birine salin/kan/plazma vermeden önce IV/IO eklemeniz gerekir.\n Yanlışsa, salin/kan/plazma kullanımı için standart ACE davranışını korur.</Turkish>
-            <Italian>Predefinito vero. Se vero, dovrai prima inserire IV/IO prima di poter somministrare a qualcuno soluzione salina/sangue/plasma.\n Se falso, mantiene il comportamento ACE standard per l'uso di soluzione salina/sangue/plasma.</Italian>
+            <Italian>Predefinito vero. Se è vero, dovrai prima inserire l'IV/IO per poter somministrare a qualcuno soluzione salina/sangue/plasma. \nSe falso, mantiene il comportamento ACE standard per l'utilizzo di soluzione salina/sangue/plasma.</Italian>
             <Chinese>默认为真。 如果为 true，您需要先插入 IV/IO，然后才能给某人注射盐水/血液/血浆。\n 如果为 false，它保留使用盐水/血液/血浆的标准 ACE 行为。</Chinese>
             <Korean>기본값은 참입니다. 참이면 염수/혈액/혈장을 제공하기 전에 먼저 IV/IO를 삽입해야 합니다.\n 거짓이면 염수/혈액/혈장 사용에 대한 표준 ACE 동작을 유지합니다.</Korean>
             <Czech>Výchozí povoleno. Pokud je povoleno, budete muset nejprve vložit IV/IO, než budete moci někomu podat fyziologický roztok/krev/plazmu.\n Pokud je zakázano, zachová standardní chování ACE pro použití fyziologického roztoku/krve/plazmy.</Czech>
