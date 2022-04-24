@@ -910,7 +910,8 @@
             <Turkish>% 1 artık boş</Turkish>
             <Italian>%1 è vuota</Italian>
             <Japanese>%1は空になりました</Japanese>
-			<Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV">
+        </Key>
+		<Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV">
             <English>Require inserted IV/IO</English>
 			<German>Erfordert eingefügtes IV/IO</German>
             <Polish>Wymagaj włożonego IV/IO</Polish>
