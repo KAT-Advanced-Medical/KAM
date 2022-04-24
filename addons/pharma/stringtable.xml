@@ -917,7 +917,7 @@
             <French>IV/IO posée requise</French>
             <Chinese>需要插入 IV/IO</Chinese>
             <Italian>Richiesto inserimento IV/IO</Italian>
-            <Spanish>Requiere inserción IV/IO</Spanish>
+            <Spanish>Requiere poner un IV/IO</Spanish>
             <Korean>삽입된 IV/IO 필요</Korean>
             <Turkish>Takılı IV/IO gerektir</Turkish>
             <Czech>Vyžadování vložení IV/IO</Czech>
@@ -927,7 +927,7 @@
             <English>Default true. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma.\n If false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
 			<German>Standardeinstellung wahr. Wenn wahr, müssen Sie zuerst eine IV/IO einführen, bevor Sie jemandem Kochsalzlösung/Blut/Plasma geben können.\n Wenn falsch, behält es das Standard-ACE-Verhalten für die Verwendung von Kochsalzlösung/Blut/Plasma bei.</German>
             <Polish>Domyślnie włączone. Jeśli włączone, należy najpierw umieścić IV/IO przed podaniem płynów. \nJeśli wyłączone, mechanika będzie taka sama jak w ACE przy podawaniu soli fizjologicznej/krwi/osocza.</Polish>
-            <Spanish>Verdadero predeterminado. Si es verdadero, primero deberá insertar IV/IO antes de poder administrarle a alguien solución salina/sangre/plasma.\n Si es falso, conserva el comportamiento estándar de ACE para usar solución salina/sangre/plasma.</Spanish>
+            <Spanish>True como valor por defecto. Si es true se necesitará poner un IV/IO primero antes de poder aplicar salino/sangre/plasma. \n Si es falso, se mantiene el funcionamiento de ACE para aplicar salino/sangre/plasma.</Spanish>
             <French>Par défaut activé. Si activé, vous avez besoin de poser une IV/IO avant de pouvoir administrer de la saline/sang/plasma.\n Si désactivé, le comportement standard de ACE pour l'usage de saline/sang plasma est utilisé.</French>
             <Turkish>Varsayılan doğru. Doğruysa, birine salin/kan/plazma vermeden önce IV/IO eklemeniz gerekir.\n Yanlışsa, salin/kan/plazma kullanımı için standart ACE davranışını korur.</Turkish>
             <Italian>Predefinito vero. Se è vero, dovrai prima inserire l'IV/IO per poter somministrare a qualcuno soluzione salina/sangue/plasma. \nSe falso, mantiene il comportamento ACE standard per l'utilizzo di soluzione salina/sangue/plasma.</Italian>
