@@ -38,6 +38,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Require inserted IV for using saline/blood/plasma?
+[
+    QGVAR(RequireInsIV),
+    "CHECKBOX",
+    [LLSTRING(SETTING_REQUIRE_INS_IV),LLSTRING(SETTING_REQUIRE_INS_IV_DESC)],
+    "KAT - ADV Medical: Pharmacy",
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 [
     QGVAR(IVreuse),
     "CHECKBOX",
