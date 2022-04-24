@@ -8,15 +8,6 @@ PREP_RECOMPILE_END;
 
 #define CBA_SETTINGS_CAT "ACE Pharmacy"
 
-[
-    QGVAR(enable),
-    "CHECKBOX",
-    LLSTRING(SETTING_ENABLE),
-    "KAT - ADV Medical: Pharmacy",
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
 //Activate Naloxone
 [
     QGVAR(naloxoneActive),
@@ -63,6 +54,15 @@ PREP_RECOMPILE_END;
     "KAT - ADV Medical: Pharmacy",
     [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
     true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(IVdropEnable),
+	"CHECKBOX",
+	[LLSTRING(IV_DROP_ENABLE)],
+	"KAT - ADV Medical: Pharmacy",
+	[true],
+	true
 ] call CBA_Settings_fnc_init;
 
 [

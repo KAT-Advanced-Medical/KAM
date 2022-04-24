@@ -31,7 +31,7 @@ class ACE_Medical_Treatment_Actions {
         category = "medication";
         treatmentLocations = 0;
         allowedSelections[] = {"Head"};
-        allowSelfTreatment = 0;
+        allowSelfTreatment = 1;
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {};
@@ -101,7 +101,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_amiodarone"};
-        condition = QUOTE((!([_patient] call ace_common_fnc_isAwake)) && (_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]));
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Amiodarone')] call FUNC(treatmentAdvanced_Generic));
     };
@@ -112,7 +112,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_lidocaine"};
-        condition = QUOTE((!([_patient] call ace_common_fnc_isAwake)) && (_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]));
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Lidocaine')] call FUNC(treatmentAdvanced_Generic));
     };
@@ -123,7 +123,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_atropine"};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]);
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Atropine')] call FUNC(treatmentAdvanced_Atropine));
     };
