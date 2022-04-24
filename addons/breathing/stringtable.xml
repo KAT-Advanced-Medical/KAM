@@ -726,5 +726,31 @@
             <Italian>Determina quanto sono forti i suoni del torace quando si utilizza lo stetoscopio</Italian>
             <Japanese>聴診器を使用したときの胸の音の大きさを設定します</Japanese>
         </Key>
+        <Key ID="STR_kat_breathing_SETTING_SpO2_unconscious">
+            <English>Unconscious SpO2 value</English>
+            <Polish>Wartość SpO2 powodująca nieprzytomność</Polish>
+            <German>SpO2 Grenzwert für Bewusstlosigkeit</German>
+            <Spanish>Valor SpO2 para inconsciencia</Spanish>
+            <Chinese>无意识的SpO2值</Chinese>
+            <Czech>Hodnota SpO2 pro bezvědomí</Czech>
+            <Korean>의식불명에 빠질 SpO2 값</Korean>
+            <French>Valeur SpO2 pour tomber inconscient</French>
+            <Turkish>Bilinçsiz SpO2 değeri</Turkish>
+            <Italian>Valore SpO2 per perdita di coscienza</Italian>
+            <Japanese>意識を失うSpO2の値</Japanese>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_SpO2_unconscious_Desc">
+            <English>SpO2 value that will cause unconscious when dropped below that value</English>
+            <Polish>Powoduje nieprzytomność gdy SpO2 spadnie poniżej tej wartości</Polish>
+            <German>Verursacht Ohnmacht wenn SpO2 wert unter diesen Wert fällt</German>
+            <Spanish>Valor SpO2 que causará inconsciencia cuando sea menor a este valor</Spanish>
+            <Chinese>当下降到低于该值时，会引起不舒服的SpO2值</Chinese>
+            <Czech>Hodnota SpO2, která způsobí bezvědomí, pokud se pod ní dostane</Czech>
+            <Korean>의식불명에 빠지기 시작하는 SpO2(산소포화도)의 값</Korean>
+            <French>Valeur Sp02 sous laquelle on tombe inconscient</French>
+            <Turkish>Bu değerin altına düştüğünde bilinç kaybına neden olacak SpO2 değeri</Turkish>
+            <Italian>Valore di SpO2 sotto il quale causa la perdita di coscienza</Italian>
+            <Japanese>SpO2(血中酸素濃度)が設定した値を下回ると気絶し、無意識状態に陥ります。</Japanese>
+        </Key>
     </Package>
 </Project>

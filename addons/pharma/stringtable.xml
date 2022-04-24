@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="kat">
     <Package name="pharma">
-        <Key ID="STR_kat_pharma_SETTING_ENABLE">
-            <English>ACE-Pharmacy activated?</English>
-            <German>ACE-Kreislauf aktivieren?</German>
-            <Polish>ACE-Pharmacy ma być włączone?</Polish>
-            <Spanish>¿Activar ACE-Pharmacy?</Spanish>
-            <Chinese>ACE-Pharmacy被激活？</Chinese>
-            <Czech>ACE-pharmacy aktivováno?</Czech>
-            <Korean>ACE-약국 활성화?</Korean>
-            <French>ACE-Pharmacy activé?</French>
-            <Turkish>ACE-Eczacılık etkinleştirildi mi?</Turkish>
-            <Italian>ACE-Pharmacy attivata?</Italian>
-            <Japanese>ACE-Pharmacy を有効化しますか?</Japanese>
-        </Key>
         <Key ID="STR_kat_pharma_NALOXONE_ACTIVE">
             <English>Allow players to use Naloxone?</English>
             <German>Stoffwechselabhängiger Puls?</German>
@@ -66,6 +53,19 @@
             <Czech>Změní který medický level je potřeba k zavedení IV/IO</Czech>
             <Japanese>IV/IOを設定するために必要な医療レベルを変更します</Japanese>
         </Key>
+        <Key ID="STR_kat_pharma_IV_DROP_ENABLE">
+            <English>Enables IV/IO drop times</English>
+            <German>Aktiviert das herausfallen von IOs/IVs</German>
+            <Polish>Włącz wypadanie IV/IO</Polish>
+            <Spanish>Habilitar los tiempos de caída de IV/IO</Spanish>
+            <Chinese>启用IV/IO下降时间</Chinese>
+            <Czech>Povolit čas vypadnutí pro IV/IO</Czech>
+            <Korean>IV/IO 드롭 타임 활성화</Korean>
+            <French>Activer les délais d'attente pour les IV/IO</French>
+            <Turkish>IV/IO bırakma sürelerini etkinleştir</Turkish>
+            <Italian>Abilitare i tempi di caduta IV/IO</Italian>
+            <Japanese>IV/IOの滴下時間を有効にする</Japanese>
+        </Key>        
         <Key ID="STR_kat_pharma_IV_DROP">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
             <German>Ändert den Zeitpunkt, zu dem IVs/IOs aus einem Patienten herausfallen</German>
@@ -666,7 +666,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Reorienting">
             <English>Reorienting</English>
-            <German>umorientieren</German>
+            <German>Umorientieren</German>
             <Polish>Cucenie</Polish>
             <French>Stimulation</French>
             <Chinese>调整方向</Chinese>
@@ -679,7 +679,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Using">
             <English>Using</English>
-            <German>benutzen</German>
+            <German>Benutzen</German>
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
             <Chinese>服用中</Chinese>
@@ -692,7 +692,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Pushing">
             <English>Pushing</English>
-            <German>verabreichen</German>
+            <German>Verabreichen</German>
             <Polish>Wstrzykiwanie</Polish>
             <Spanish>Administrando</Spanish>
             <Chinese>服用中</Chinese>
@@ -910,6 +910,109 @@
             <Turkish>% 1 artık boş</Turkish>
             <Italian>%1 è vuota</Italian>
             <Japanese>%1は空になりました</Japanese>
+			<Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV">
+            <English>Require inserted IV/IO</English>
+			<German>Erfordert eingefügtes IV/IO</German>
+            <Polish>Wymagaj włożonego IV/IO</Polish>
+            <French>IV/IO posée requise</French>
+            <Chinese>需要插入 IV/IO</Chinese>
+            <Italian>Richiesto inserimento IV/IO</Italian>
+            <Spanish>Requiere poner un IV/IO</Spanish>
+            <Korean>삽입된 IV/IO 필요</Korean>
+            <Turkish>Takılı IV/IO gerektir</Turkish>
+            <Czech>Vyžadování vložení IV/IO</Czech>
+            <Japanese>輸液にIV/IO挿管を要求しますか</Japanese>
+        </Key>
+        <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV_DESC">
+            <English>Default true. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma.\n If false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
+			<German>Standardeinstellung wahr. Wenn wahr, müssen Sie zuerst eine IV/IO einführen, bevor Sie jemandem Kochsalzlösung/Blut/Plasma geben können.\n Wenn falsch, behält es das Standard-ACE-Verhalten für die Verwendung von Kochsalzlösung/Blut/Plasma bei.</German>
+            <Polish>Domyślnie włączone. Jeśli włączone, należy najpierw umieścić IV/IO przed podaniem płynów. \nJeśli wyłączone, mechanika będzie taka sama jak w ACE przy podawaniu soli fizjologicznej/krwi/osocza.</Polish>
+            <Spanish>True como valor por defecto. Si es true se necesitará poner un IV/IO primero antes de poder aplicar salino/sangre/plasma. \n Si es falso, se mantiene el funcionamiento de ACE para aplicar salino/sangre/plasma.</Spanish>
+            <French>Par défaut activé. Si activé, vous avez besoin de poser une IV/IO avant de pouvoir administrer de la saline/sang/plasma.\n Si désactivé, le comportement standard de ACE pour l'usage de saline/sang plasma est utilisé.</French>
+            <Turkish>Varsayılan doğru. Doğruysa, birine salin/kan/plazma vermeden önce IV/IO eklemeniz gerekir.\n Yanlışsa, salin/kan/plazma kullanımı için standart ACE davranışını korur.</Turkish>
+            <Italian>Predefinito vero. Se è vero, dovrai prima inserire l'IV/IO per poter somministrare a qualcuno soluzione salina/sangue/plasma. \nSe falso, mantiene il comportamento ACE standard per l'utilizzo di soluzione salina/sangue/plasma.</Italian>
+            <Chinese>默认为真。 如果为 true，您需要先插入 IV/IO，然后才能给某人注射盐水/血液/血浆。\n 如果为 false，它保留使用盐水/血液/血浆的标准 ACE 行为。</Chinese>
+            <Korean>기본값은 참입니다. 참이면 염수/혈액/혈장을 제공하기 전에 먼저 IV/IO를 삽입해야 합니다.\n 거짓이면 염수/혈액/혈장 사용에 대한 표준 ACE 동작을 유지합니다.</Korean>
+            <Czech>Výchozí povoleno. Pokud je povoleno, budete muset nejprve vložit IV/IO, než budete moci někomu podat fyziologický roztok/krev/plazmu.\n Pokud je zakázano, zachová standardní chování ACE pro použití fyziologického roztoku/krve/plazmy.</Czech>
+            <Japanese>KATデフォルトではtrueです。trueの場合、輸液を行う前にIV/IOを挿管する必要があります。\nfalseの場合はACEデフォルトの動作を保持します。つまり、生理食塩水/血液/血しょうパックだけで輸液可能になります。</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap">
+            <English>Reorientation slap sound</English>
+            <Polish>Dźwięk przy cuceniu</Polish>
+            <German>Slap-Sound für Umorientieren</German>
+            <Spanish>Sonido de bofetada para recuperar la consciencia</Spanish>
+            <Chinese>调整方向的拍击声</Chinese>
+            <Czech>Zvuk facky reorientace</Czech>
+            <Korean>방향 전환 슬랩 사운드</Korean>
+            <French>Son claque stimulation</French>
+            <Turkish>Yönlendirme tokat sesi</Turkish>
+            <Italian>Suono schiaffo stimolazione</Italian>
+            <Japanese>刺激時に音を鳴らす</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap_DESC">
+            <English>Enables slap sound for reorientation</English>
+            <Polish>Włącza dźwięk uderzenia przy cuceniu</Polish>
+            <German>Aktiviert Slap-Sound für Umorientieren</German>
+            <Spanish>Habilia el sonido de bofetada para recuperar la consciencia</Spanish>
+            <Chinese>启用调整方向时的拍打声</Chinese>
+            <Czech>Povolit zvuk facky pro reorientaci</Czech>
+            <Korean>방향 전환을 위한 슬랩 사운드 활성화</Korean>
+            <French>Activer son de la claque</French>
+            <Turkish>Yeniden yönlendirme için tokat sesini etkinleştirir</Turkish>
+            <Italian>Abilita il suono dello schiaffo per la stimolazione</Italian>
+            <Japanese>患者に刺激を与える際にビンタの音を鳴らします</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable">
+            <English>Reorientation enabled?</English>
+            <Polish>Cucenie dostępne?</Polish>
+            <German>Umorientieren aktiviert?</German>
+            <Spanish>¿Bofetada para recuperar la consciencia habilitada?</Spanish>
+            <Chinese>启用调整方向功能?</Chinese>
+            <Czech>Reorientace povolena?</Czech>
+            <Korean>방향 전환이 활성화되었습니까?</Korean>
+            <French>Stimulation activé?</French>
+            <Turkish>Yeniden yönlendirme etkin mi?</Turkish>
+            <Italian>Stimolazione abilitata?</Italian>
+            <Japanese>患者に刺激を与える 機能を有効化しますか?</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable_DESC">
+            <English>Enables reorientation</English>
+            <Polish>Pozwala na cucenie</Polish>
+            <German>Aktiviert das Umorientieren</German>
+            <Spanish>Habilita la bofetada para recuperar la consciencia</Spanish>
+            <Chinese>启用调整方向的功能</Chinese>
+            <Czech>Povolí reorientaci</Czech>
+            <Korean>방향 변경 가능</Korean>
+            <French>Activer stimulation</French>
+            <Turkish>Yeniden yönlendirmeyi etkinleştirir</Turkish>
+            <Italian>Stimolazione abilitata</Italian>
+            <Japanese>刺激を与える(患者の安定時にビンタで叩き起こす)機能を有効化します</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation">
+            <English>Allow reorientation</English>
+            <Polish>Pozwól na cucenie</Polish>
+            <German>Umorientieren zulassen</German>
+            <Spanish>Habilitar la bofetada para recuperar la consciencia</Spanish>
+            <Chinese>允许调整方向</Chinese>
+            <Czech>Povolit reorientaci</Czech>
+            <Korean>방향 변경 허용</Korean>
+            <French>Autoriser stimulation</French>
+            <Turkish>Yeniden yönlendirmeye izin ver</Turkish>
+            <Italian>Autorizza stimolazione</Italian>
+            <Japanese>患者に刺激を与えることが出来る人</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation_DESC">
+            <English>Medical level required for reorientation</English>
+            <Polish>Poziom wyszkolenia wymagany do cucenia</Polish>
+            <German>Erforderliches Medic Level zum Umorientieren</German>
+            <Spanish>Nivel médico requerido para la bofetada</Spanish>
+            <Chinese>调整方向所需的医疗水平</Chinese>
+            <Czech>Vyžadovaná Zdravotnická úroveň pro reorientaci</Czech>
+            <Korean>방향 전환에 필요한 의료 수준</Korean>
+            <French>Niveau médical requis pour stimulation</French>
+            <Turkish>Yeniden oryantasyon için gerekli tıbbi seviye</Turkish>
+            <Italian>Livello medico richiesto per stimolazione</Italian>
+            <Japanese>患者を刺激して起こすために必要な医療レベルを変更します</Japanese>
         </Key>
     </Package>
 </Project>
