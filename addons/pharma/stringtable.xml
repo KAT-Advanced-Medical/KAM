@@ -914,7 +914,7 @@
             <English>Require inserted IV/IO</English>
 			<German>Erfordert eingefügtes IV/IO</German>
             <Polish>Wymagaj włożonego IV/IO</Polish>
-            <French>Exiger l'insertion d'IV/IO</French>
+            <French>IV/IO posée requise</French>
             <Chinese>需要插入 IV/IO</Chinese>
             <Italian>Richiesto inserimento IV/IO</Italian>
             <Spanish>Requiere inserción IV/IO</Spanish>
@@ -928,7 +928,7 @@
 			<German>Standardeinstellung wahr. Wenn wahr, müssen Sie zuerst eine IV/IO einführen, bevor Sie jemandem Kochsalzlösung/Blut/Plasma geben können.\n Wenn falsch, behält es das Standard-ACE-Verhalten für die Verwendung von Kochsalzlösung/Blut/Plasma bei.</German>
             <Polish>Domyślnie włączone. Jeśli włączone, należy najpierw umieścić IV/IO przed podaniem płynów. \nJeśli wyłączone, mechanika będzie taka sama jak w ACE przy podawaniu soli fizjologicznej/krwi/osocza.</Polish>
             <Spanish>Verdadero predeterminado. Si es verdadero, primero deberá insertar IV/IO antes de poder administrarle a alguien solución salina/sangre/plasma.\n Si es falso, conserva el comportamiento estándar de ACE para usar solución salina/sangre/plasma.</Spanish>
-            <French>Vrai par défaut. Si vrai, vous devrez d'abord insérer IV/IO avant de pouvoir donner à quelqu'un une solution saline/sang/plasma.\n Si faux, il conserve le comportement ACE standard pour l'utilisation de solution saline/sang/plasma.</French>
+            <French>Par défaut activé. Si activé, vous avez besoin de poser une IV/IO avant de pouvoir administrer de la saline/sang/plasma.\n Si désactivé, le comportement standard de ACE pour l'usage de saline/sang plasma est utilisé.</French>
             <Turkish>Varsayılan doğru. Doğruysa, birine salin/kan/plazma vermeden önce IV/IO eklemeniz gerekir.\n Yanlışsa, salin/kan/plazma kullanımı için standart ACE davranışını korur.</Turkish>
             <Italian>Predefinito vero. Se è vero, dovrai prima inserire l'IV/IO per poter somministrare a qualcuno soluzione salina/sangue/plasma. \nSe falso, mantiene il comportamento ACE standard per l'utilizzo di soluzione salina/sangue/plasma.</Italian>
             <Chinese>默认为真。 如果为 true，您需要先插入 IV/IO，然后才能给某人注射盐水/血液/血浆。\n 如果为 false，它保留使用盐水/血液/血浆的标准 ACE 行为。</Chinese>
