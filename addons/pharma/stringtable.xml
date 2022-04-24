@@ -55,6 +55,16 @@
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP_ENABLE">
             <English>Enables IV/IO drop times</English>
+            <German>Aktiviert das herausfallen von IOs/IVs</German>
+            <Polish>Włącz wypadanie IV/IO</Polish>
+            <Spanish>Habilitar los tiempos de caída de IV/IO</Spanish>
+            <Chinese>启用IV/IO下降时间</Chinese>
+            <Czech>Povolit čas vypadnutí pro IV/IO</Czech>
+            <Korean>IV/IO 드롭 타임 활성화</Korean>
+            <French>Activer les délais d'attente pour les IV/IO</French>
+            <Turkish>IV/IO bırakma sürelerini etkinleştir</Turkish>
+            <Italian>Abilitare i tempi di caduta IV/IO</Italian>
+            <Japanese>IV/IOの滴下時間を有効にする</Japanese>
         </Key>        
         <Key ID="STR_kat_pharma_IV_DROP">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
