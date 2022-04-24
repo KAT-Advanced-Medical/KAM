@@ -666,7 +666,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Reorienting">
             <English>Reorienting</English>
-            <German>umorientieren</German>
+            <German>Umorientieren</German>
             <Polish>Cucenie</Polish>
             <French>Stimulation</French>
             <Chinese>调整方向</Chinese>
@@ -679,7 +679,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Using">
             <English>Using</English>
-            <German>benutzen</German>
+            <German>Benutzen</German>
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
             <Chinese>服用中</Chinese>
@@ -692,7 +692,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Pushing">
             <English>Pushing</English>
-            <German>verabreichen</German>
+            <German>Verabreichen</German>
             <Polish>Wstrzykiwanie</Polish>
             <Spanish>Administrando</Spanish>
             <Chinese>服用中</Chinese>
@@ -910,6 +910,84 @@
             <Turkish>% 1 artık boş</Turkish>
             <Italian>%1 è vuota</Italian>
             <Japanese>%1は空になりました</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap">
+            <English>Reorientation slap sound</English>
+            <Polish>Dźwięk przy cuceniu</Polish>
+            <German>Slap-Sound für Umorientieren</German>
+            <Spanish>Sonido de bofetada para recuperar la consciencia</Spanish>
+            <Chinese>调整方向的拍击声</Chinese>
+            <Czech>Zvuk facky reorientace</Czech>
+            <Korean>방향 전환 슬랩 사운드</Korean>
+            <French>Son claque stimulation</French>
+            <Turkish>Yönlendirme tokat sesi</Turkish>
+            <Italian>Suono schiaffo stimolazione</Italian>
+            <Japanese>刺激時に音を鳴らす</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap_DESC">
+            <English>Enables slap sound for reorientation</English>
+            <Polish>Włącza dźwięk uderzenia przy cuceniu</Polish>
+            <German>Aktiviert Slap-Sound für Umorientieren</German>
+            <Spanish>Habilia el sonido de bofetada para recuperar la consciencia</Spanish>
+            <Chinese>启用调整方向时的拍打声</Chinese>
+            <Czech>Povolit zvuk facky pro reorientaci</Czech>
+            <Korean>방향 전환을 위한 슬랩 사운드 활성화</Korean>
+            <French>Activer son de la claque</French>
+            <Turkish>Yeniden yönlendirme için tokat sesini etkinleştirir</Turkish>
+            <Italian>Abilita il suono dello schiaffo per la stimolazione</Italian>
+            <Japanese>患者に刺激を与える際にビンタの音を鳴らします</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable">
+            <English>Reorientation enabled?</English>
+            <Polish>Cucenie dostępne?</Polish>
+            <German>Umorientieren aktiviert?</German>
+            <Spanish>¿Bofetada para recuperar la consciencia habilitada?</Spanish>
+            <Chinese>启用调整方向功能?</Chinese>
+            <Czech>Reorientace povolena?</Czech>
+            <Korean>방향 전환이 활성화되었습니까?</Korean>
+            <French>Stimulation activé?</French>
+            <Turkish>Yeniden yönlendirme etkin mi?</Turkish>
+            <Italian>Stimolazione abilitata?</Italian>
+            <Japanese>患者に刺激を与える 機能を有効化しますか?</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable_DESC">
+            <English>Enables reorientation</English>
+            <Polish>Pozwala na cucenie</Polish>
+            <German>Aktiviert das Umorientieren</German>
+            <Spanish>Habilita la bofetada para recuperar la consciencia</Spanish>
+            <Chinese>启用调整方向的功能</Chinese>
+            <Czech>Povolí reorientaci</Czech>
+            <Korean>방향 변경 가능</Korean>
+            <French>Activer stimulation</French>
+            <Turkish>Yeniden yönlendirmeyi etkinleştirir</Turkish>
+            <Italian>Stimolazione abilitata</Italian>
+            <Japanese>刺激を与える(患者の安定時にビンタで叩き起こす)機能を有効化します</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation">
+            <English>Allow reorientation</English>
+            <Polish>Pozwól na cucenie</Polish>
+            <German>Umorientieren zulassen</German>
+            <Spanish>Habilitar la bofetada para recuperar la consciencia</Spanish>
+            <Chinese>允许调整方向</Chinese>
+            <Czech>Povolit reorientaci</Czech>
+            <Korean>방향 변경 허용</Korean>
+            <French>Autoriser stimulation</French>
+            <Turkish>Yeniden yönlendirmeye izin ver</Turkish>
+            <Italian>Autorizza stimolazione</Italian>
+            <Japanese>患者に刺激を与えることが出来る人</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation_DESC">
+            <English>Medical level required for reorientation</English>
+            <Polish>Poziom wyszkolenia wymagany do cucenia</Polish>
+            <German>Erforderliches Medic Level zum Umorientieren</German>
+            <Spanish>Nivel médico requerido para la bofetada</Spanish>
+            <Chinese>调整方向所需的医疗水平</Chinese>
+            <Czech>Vyžadovaná Zdravotnická úroveň pro reorientaci</Czech>
+            <Korean>방향 전환에 필요한 의료 수준</Korean>
+            <French>Niveau médical requis pour stimulation</French>
+            <Turkish>Yeniden oryantasyon için gerekli tıbbi seviye</Turkish>
+            <Italian>Livello medico richiesto per stimolazione</Italian>
+            <Japanese>患者を刺激して起こすために必要な医療レベルを変更します</Japanese>
         </Key>
     </Package>
 </Project>

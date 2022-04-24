@@ -38,6 +38,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Turn to unconscious in cause of SpO2 unconscious value
+[
+    QGVAR(SpO2_unconscious),
+    "SLIDER",
+    [LLSTRING(SETTING_SpO2_unconscious), LLSTRING(SETTING_SpO2_unconscious_Desc)],
+    CBA_SETTINGS_CAT,
+    [0, 100, 75, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 // breathing SpO2 add value
 [
     QGVAR(SpO2_MultiplyPositive),

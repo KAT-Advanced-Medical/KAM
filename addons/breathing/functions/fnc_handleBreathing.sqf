@@ -140,7 +140,7 @@ if (!local _unit) then {
         };
 
         _unit setVariable ["KAT_medical_airwayStatus", _finalOutput, true];
-	if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= 75}) then {
+	if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(SpO2_unconscious)}) then {
 			["ace_medical_CriticalVitals", _unit] call CBA_fnc_localEvent;
 		};
     };
