@@ -17,29 +17,34 @@
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_player", "_target"];
 
 private _spO2 = 0;
 
-if (alive _patient) then {
+if (alive _target) then {
     _spO2 = _patient getVariable ["KAT_medical_airwayStatus", 100];
 };
 
+private _messageCyanosis = LLSTRING(CyanosisStatus_N);
 private _spO2Output = LSTRING(CyanosisStatus_N);
 
 if (_spO2 < 100) then {
     if (_spO2 < 99 && _spO2 >= 1.66 * {GVAR(dieValue)}) then {
         _spO2Output = LSTRING(CyanosisStatus_Slight);
+        _messageCyanosis = LLSTRING(CyanosisStatus_Slight);
     };
     if (_spO2 < 1.66 * {GVAR(dieValue)} && _spO2 >= 1.33 * {GVAR(dieValue)}) then {
         _spO2Output = LSTRING(CyanosisStatus_Mild);
+        _messageCyanosis = LLSTRING(CyanosisStatus_Mild);
     };
     if (_spO2 < 1.33 * {GVAR(dieValue)} && _spO2 >= 1.01 * {GVAR(dieValue)}) then {
         _spO2Output = LSTRING(CyanosisStatus_Severe);
+        _messageCyanosis = LLSTRING(CyanosisStatus_Severe);
     };
 
 };
 
-[_SpO2Output, 2, _player] call ace_common_fnc_displayTextStructured;
+private _message = format ["%1",_messageCyanosis];
+[_message, 2, _player] call ace_common_fnc_displayTextStructured;
 
-[_patient, "activity", LSTRING(CheckCyanosise_Log), [_medic call ace_common_fnc_getName, _spO2Output]] call ace_medical_treatment_fnc_addToLog;
+[_target, "activity", LSTRING(CheckCyanosis_Log), [[_player] call ace_common_fnc_getName, _spO2Output]] call ace_medical_treatment_fnc_addToLog;

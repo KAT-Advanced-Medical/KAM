@@ -760,23 +760,23 @@
             <English>Checking Cyanosise</English>
             <Polish>Sprawdzanie sinicy</Polish>
         </Key>
-        <Key ID="STR_kat_breathing_CheckCyanosise_Log">
-            <English>Cyanosise Status: </English>
-            <Polish>Status sinicy: </Polish>
+        <Key ID="STR_kat_breathing_CheckCyanosis_Log">
+            <English>Cyanosise Status: %2</English>
+            <Polish>Status sinicy: %2</Polish>
         </Key>
-        <Key ID="STR_kat_breathing_CyanosiseStatus_N">
+        <Key ID="STR_kat_breathing_CyanosisStatus_N">
             <English>No Cyanosise</English>
             <Polish>Brak sinicy</Polish>
         </Key>
-        <Key ID="STR_kat_breathing_CyanosiseStatus_Slight">
+        <Key ID="STR_kat_breathing_CyanosisStatus_Slight">
             <English>Slight Cyanosise</English>
             <Polish>Lekka sinica</Polish>
         </Key>
-        <Key ID="STR_kat_breathing_CyanosiseStatus_Mild">
+        <Key ID="STR_kat_breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosise</English>
             <Polish>Średnia sinica</Polish>
         </Key>
-        <Key ID="STR_kat_breathing_CyanosiseStatus_Severe">
+        <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
             <English>Severe Cyanosise</English>
             <Polish>Ciężka sinica</Polish>
         </Key>
