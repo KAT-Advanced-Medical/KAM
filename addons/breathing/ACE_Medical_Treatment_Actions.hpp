@@ -150,6 +150,6 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"All"};
         allowSelfTreatment = 1;
         condition = "true";
-        callbackSuccess = QFUNC(Cyanosis);
+        callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);
     };
 };
