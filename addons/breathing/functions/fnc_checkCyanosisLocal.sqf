@@ -42,4 +42,4 @@ if (_spO2 < 100) then {
 
 [_SpO2Output, 2, _player] call ace_common_fnc_displayTextStructured;
 
-[_patient, "activity", LSTRING(Check_Cyanosise_Log), [_medic call ace_common_fnc_getName, _spO2Output]] call ace_medical_treatment_fnc_addToLog;
+[_patient, "activity", LSTRING(CheckCyanosise_Log), [_medic call ace_common_fnc_getName, _spO2Output]] call ace_medical_treatment_fnc_addToLog;

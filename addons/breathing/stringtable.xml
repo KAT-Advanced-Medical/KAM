@@ -758,6 +758,9 @@
         <Key ID="STR_kat_breathing_CheckCyanosise_Progress">
             <English>Checking Cyanosise</English>
         </Key>
+        <Key ID="STR_kat_breathing_CheckCyanosise_Log">
+            <English>Checking Cyanosise</English>
+        </Key>
         <Key ID="STR_kat_breathing_CyanosiseStatus_N">
             <English>No Cyanosise</English>
         </Key>
