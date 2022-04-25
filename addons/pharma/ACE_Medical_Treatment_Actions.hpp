@@ -17,7 +17,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         items[] = {};
-        callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _medic, _patient, _bodyPart, 'Painkillers')] call FUNC(removeItemfromMag));
+        callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _medic, _patient, _bodyPart, 'Painkillers')] call FUNC(removeItemfromMag); [_patient] call EFUNC(circulation,wrongBloodTreatment););
         condition = "[_medic, 'kat_Painkiller'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Painkiller'] call ace_common_fnc_hasMagazine";
         litter[] = {};
         icon = QPATHTOF(ui\icon_painkillers_action.paa);
