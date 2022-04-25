@@ -29,15 +29,15 @@ private _messageCyanosis = LLSTRING(CyanosisStatus_N);
 private _spO2Output = LSTRING(CyanosisStatus_N);
 
 if (_spO2 < 100) then {
-    if (_spO2 < 99 && _spO2 >= 1.66 * {GVAR(dieValue)}) then {
+    if (_spO2 < 99 && _spO2 >= 1.35 * GVAR(dieValue)) then {
         _spO2Output = LSTRING(CyanosisStatus_Slight);
         _messageCyanosis = LLSTRING(CyanosisStatus_Slight);
     };
-    if (_spO2 < 1.66 * {GVAR(dieValue)} && _spO2 >= 1.33 * {GVAR(dieValue)}) then {
+    if (_spO2 < 1.35 * GVAR(dieValue) && _spO2 >= 1.17 * GVAR(dieValue)) then {
         _spO2Output = LSTRING(CyanosisStatus_Mild);
         _messageCyanosis = LLSTRING(CyanosisStatus_Mild);
     };
-    if (_spO2 < 1.33 * {GVAR(dieValue)} && _spO2 >= 1.01 * {GVAR(dieValue)}) then {
+    if (_spO2 < 1.17 * GVAR(dieValue) && _spO2 >= 1.01 * GVAR(dieValue)) then {
         _spO2Output = LSTRING(CyanosisStatus_Severe);
         _messageCyanosis = LLSTRING(CyanosisStatus_Severe);
     };
