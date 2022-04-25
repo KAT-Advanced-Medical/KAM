@@ -6,23 +6,22 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Body Part <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject, "Head"] call kat_breathing_fnc_checkCyanosis
+ * call kat_breathing_fnc_checkCyanosis
  *
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_player", "_target"];
 
-if (local _patient) then {
-    ["treatmentCyanosis", [_patient, _medic]] call CBA_fnc_localEvent;
+if (local _target) then {
+    ["treatmentCyanosis", [_player, _target]] call CBA_fnc_localEvent;
 } else {
-    ["treatmentCyanosis", [_patient, _medic], _patient] call CBA_fnc_targetEvent;
+    ["treatmentCyanosis", [_player, _target], _target] call CBA_fnc_targetEvent;
 };
 
 true;

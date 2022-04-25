@@ -12,12 +12,12 @@
  * None
  *
  * Example:
- * [player, cursorObject, "Head"] call kat_breathing_fnc_checkCyanosisLocal
+ * call kat_breathing_fnc_checkCyanosisLocal
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart"];
+params ["_medic", "_patient"];
 
 private _spO2 = 0;
 
