@@ -754,24 +754,31 @@
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosise_Name">
             <English>Check Cyanosise</English>
+            <Polish>Sprawdź sinicę</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosise_Progress">
             <English>Checking Cyanosise</English>
+            <Polish>Sprawdzanie sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosise_Log">
-            <English>Checking Cyanosise</English>
+            <English>Cyanosise Status: </English>
+            <Polish>Status sinicy: </Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosiseStatus_N">
             <English>No Cyanosise</English>
+            <Polish>Brak sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosiseStatus_Slight">
             <English>Slight Cyanosise</English>
+            <Polish>Lekka sinica</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosiseStatus_Mild">
             <English>Mild Cyanosise</English>
+            <Polish>Średnia sinica</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosiseStatus_Severe">
             <English>Severe Cyanosise</English>
+            <Polish>Ciężka sinica</Polish>
         </Key>
     </Package>
 </Project>
