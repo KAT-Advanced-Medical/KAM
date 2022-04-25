@@ -752,5 +752,23 @@
             <Italian>Valore di SpO2 sotto il quale causa la perdita di coscienza</Italian>
             <Japanese>SpO2(血中酸素濃度)が設定した値を下回ると気絶し、無意識状態に陥ります。</Japanese>
         </Key>
+        <Key ID="STR_kat_breathing_CheckCyanosise_Name">
+            <English>Check Cyanosise</English>
+        </Key>
+        <Key ID="STR_kat_breathing_CheckCyanosise_Progress">
+            <English>Checking Cyanosise</English>
+        </Key>
+        <Key ID="STR_kat_breathing_CyanosiseStatus_N">
+            <English>No Cyanosise</English>
+        </Key>
+        <Key ID="STR_kat_breathing_CyanosiseStatus_Slight">
+            <English>Slight Cyanosise</English>
+        </Key>
+        <Key ID="STR_kat_breathing_CyanosiseStatus_Mild">
+            <English>Mild Cyanosise</English>
+        </Key>
+        <Key ID="STR_kat_breathing_CyanosiseStatus_Severe">
+            <English>Severe Cyanosise</English>
+        </Key>
     </Package>
 </Project>
