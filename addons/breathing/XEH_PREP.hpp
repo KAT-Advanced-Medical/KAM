@@ -3,6 +3,8 @@ PREP(handleBreathing);
 PREP(handlePulmoHit);
 PREP(hasStableVitals);
 PREP(init);
+PREP(checkCyanosis);
+PREP(checkCyanosisLocal);
 PREP(treatmentAdvanced_chestSeal);
 PREP(treatmentAdvanced_chestSealLocal);
 PREP(treatmentAdvanced_hemopneumothorax);
