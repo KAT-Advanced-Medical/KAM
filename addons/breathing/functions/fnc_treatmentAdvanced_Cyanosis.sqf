@@ -19,4 +19,10 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-[QGVAR(checkCyanosisLocal), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+if (local _patient) then {
+    ["treatmentCyanosis", [_patient, _medic, _bodypart]] call CBA_fnc_localEvent;
+} else {
+    ["treatmentCyanosis", [_patient, _medic, _bodypart], _patient] call CBA_fnc_targetEvent;
+};
+
+true;
