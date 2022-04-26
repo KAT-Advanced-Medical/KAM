@@ -812,5 +812,13 @@
             <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
             <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
         </Key>
+        <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL">
+            <English>Check Cyanosis Minimum Level</English>
+            <Polish>Minimalny poziom wyszkolenia do sprawdzenia sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL_DESCRIPTION">
+            <English>The minimum medical level required for someone to be able to check cyanosis.</English>
+            <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie sprawdzić sinicę.</Polish>
+        </Key>
     </Package>
 </Project>
