@@ -755,62 +755,77 @@
         <Key ID="STR_kat_breathing_CheckCyanosis_Name">
             <English>Check Cyanosis</English>
             <Polish>Sprawdź sinicę</Polish>
+            <Russian>Проверить цианоз</Russian>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Progress">
             <English>Checking Cyanosis</English>
             <Polish>Sprawdzanie sinicy</Polish>
+            <Russian>Проверка цианоза</Russian>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Log">
             <English>Cyanosis Status: %2</English>
             <Polish>Status sinicy: %2</Polish>
+            <Russian>Статус цианоза: %2</Russian>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_N">
             <English>No Cyanosis</English>
             <Polish>Brak sinicy</Polish>
+            <Russian>Нет цианоза</Russian>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Slight">
             <English>Slight Cyanosis</English>
             <Polish>Lekka sinica</Polish>
+            <Russian>Легкий цианоз</Russian>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosis</English>
             <Polish>Umiarkowana sinica</Polish>
+            <Russian>средний цианоз</Russian>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
             <English>Severe Cyanosis</English>
             <Polish>Ciężka sinica</Polish>
+            <Russian>Тяжелый цианоз</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis">
             <English>Enable cyanosis diagnose</English>
             <Polish>Włącz diagnozę sinicy</Polish>
+            <Russian>Включить диагностику цианоза</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis_DESC">
             <English>Enables cyanosis diagnose</English>
             <Polish>Włącza diagnozę sinicy</Polish>
+            <Russian>Позволяет диагностировать цианоз</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
             <Polish>Poziom SpO2 dla lekkiej sinicy</Polish>
+            <Russian>Легкий цианоз Значение SpO2</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue_DESC">
             <English>Slight cyanosis value - default 90 SpO2</English>
             <Polish>Poziom SpO2 dla lekkiej sinicy - domyślnie 90 SpO2</Polish>
+            <Russian>Значение легкого цианоза - по умолчанию 90 SpO2</Russian>
         </Key>
-         <Key ID="STR_kat_breathing_SETTING_mildValue">
+        <Key ID="STR_kat_breathing_SETTING_mildValue">
             <English>Mild cyanosis SpO2 value</English>
             <Polish>Poziom SpO2 dla umiarkowanej sinicy</Polish>
+            <Russian>Средний значение цианоза SpO2</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue_DESC">
             <English>Mild cyanosis value - default 75 SpO2</English>
             <Polish>Poziom SpO2 dla umiarkowanej sinicy - domyślnie 75 SpO2</Polish>
+            <Russian>Значение Средней цианоза — по умолчанию 75 SpO2</Russian>
         </Key>
-         <Key ID="STR_kat_breathing_SETTING_severeValue">
+        <Key ID="STR_kat_breathing_SETTING_severeValue">
             <English>Severe cyanosis SpO2 value</English>
             <Polish>Poziom SpO2 dla ciężkiej sinicy</Polish>
+            <Russian>Тяжелый цианоз Значение SpO2</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_severeValue_DESC">
             <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
             <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
+            <Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO2 \nДолжно быть немного выше летального значения SpO2</Russian>
         </Key>
     </Package>
 </Project>
