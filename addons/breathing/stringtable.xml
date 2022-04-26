@@ -774,7 +774,7 @@
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosis</English>
-            <Polish>Średnia sinica</Polish>
+            <Polish>Umiarkowana sinica</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
             <English>Severe Cyanosis</English>
@@ -798,11 +798,11 @@
         </Key>
          <Key ID="STR_kat_breathing_SETTING_mildValue">
             <English>Mild cyanosis SpO2 value</English>
-            <Polish>Poziom SpO2 dla średniej sinicy</Polish>
+            <Polish>Poziom SpO2 dla umiarkowanej sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue_DESC">
             <English>Mild cyanosis value - default 75 SpO2</English>
-            <Polish>Poziom SpO2 dla średniej sinicy - domyślnie 75 SpO2</Polish>
+            <Polish>Poziom SpO2 dla umiarkowanej sinicy - domyślnie 75 SpO2</Polish>
         </Key>
          <Key ID="STR_kat_breathing_SETTING_severeValue">
             <English>Severe cyanosis SpO2 value</English>
