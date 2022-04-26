@@ -27,6 +27,7 @@
             <Spanish>¿Ritmo avanzado activado?</Spanish>
             <Czech>Pokročilý rytmus aktivován?</Czech>
             <Japanese>Advanced Rhythm を有効化しますか?</Japanese>
+            <Russian>Продвинутый ритм активирован?</Russian>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_variableHR_ENABLE">
             <English>Metabolism Dependent heartrate?</English>
@@ -470,6 +471,7 @@
             <Spanish>Comprobar el ritmo</Spanish>
             <Czech>Zkontrolovat rytmus</Czech>
             <Japanese>心室細動を確認する</Japanese>
+            <Russian>Проверьте ритм</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag">
             <English>Check Dogtags</English>
@@ -637,6 +639,7 @@
             <Spanish>Vehículo: Utilizar DEA-X</Spanish>
             <Czech>Vozidlo: Použít AED-X</Czech>
             <Japanese>車両：AED-Xを使用</Japanese>
+            <Russian>Транспортное средство: Используйте AED-X</Russian>
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Use">
             <English>Vehicle: Attach AED-X</English>
@@ -650,6 +653,7 @@
             <Spanish>Vehículo: Colocar DEA-X</Spanish>
             <Czech>Vozidlo: Připevnit AED-X</Czech>
             <Japanese>車両：AED-Xを取り付ける</Japanese>
+            <Russian>Транспортное средство: прикрепите AED-X</Russian>
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Remove">
             <English>Vehicle: Remove AED-X</English>
@@ -663,6 +667,7 @@
             <Spanish>Vehículo: Retirar DEA-X</Spanish>
             <Czech>Vozidlo: Odstranit AED-X</Czech>
             <Japanese>車両：AED-Xを取り外します</Japanese>
+            <Russian>Транспортное средство: удалить AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_Action_Progress">
             <English>Using AED-X defibrillator</English>
@@ -786,7 +791,6 @@
             <Korean>자동제세동기 설치</Korean>
             <French>Placer l'AED</French>
             <Turkish>AED'yi yerleştirin</Turkish>
-            <Italian>Posizionare DEA</Italian>
             <Russian>Поместите AED</Russian>
             <Italian>Posizionare DAE</Italian>
             <Japanese>AEDを設置</Japanese>
@@ -801,7 +805,6 @@
             <Korean>자동제세동기 줍기</Korean>
             <French>Ramasser l'AED</French>
             <Turkish>AED'yi Alın</Turkish>
-            <Italian>Raccogliere DEA</Italian>
             <Russian>Самовывоз AED</Russian>
             <Italian>Raccogliere DAE</Italian>
             <Japanese>AEDを拾う</Japanese>
@@ -858,7 +861,6 @@
             <Korean>자동제세동기 배치</Korean>
             <French>Lieux de l'AED</French>
             <Turkish>AED Konumları</Turkish>
-            <Italian>Posizione del DEA</Italian>
             <Russian>Места для AED</Russian>
             <Italian>Posizione del DAE</Italian>
             <Japanese>AEDが使用できる場所</Japanese>
@@ -873,7 +875,6 @@
             <Korean>자동제세동기는 어디에서 사용 가능한가요?</Korean>
             <French>Où l'AED peut être utilisé</French>
             <Turkish>AED nerede kullanılabilir?</Turkish>
-            <Italian>Dove può essere utilizzato il DEA</Italian>
             <Russian>Где можно использовать AED?</Russian>
             <Italian>Dove può essere utilizzato il DAE</Italian>
             <Japanese>AEDが使用できる場所を指定</Japanese>
@@ -916,7 +917,6 @@
             <Korean>%1 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED</French>
             <Turkish>%1 AED gerçekleştirdi</Turkish>
-            <Italian>ha utilizzato un DEA</Italian>
             <Russian>%1 выполнил AED </Russian>
             <Italian>%1 ha utilizzato un DAE</Italian>
             <Japanese>%1はAEDを実行しました</Japanese>
@@ -931,7 +931,6 @@
             <Korean>%1 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé une station AED</French>
             <Turkish>%1 gerçekleştirilen AED İstasyonu</Turkish>
-            <Italian>ha utilizzato una stazione DEA</Italian>
             <Russian>%1 выполнена станция AED</Russian>
             <Italian>%1 ha utilizzato una stazione DAE</Italian>
             <Japanese>%1はAEDステーションを実行しました</Japanese>
@@ -945,8 +944,6 @@
             <Czech>%1 použito AED-X</Czech>
             <Korean>%1 바이탈측정 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED-X</French>
-            <Turkish>% 1 AED-X gerçekleştirdi</Turkish>
-            <Italian>ha utilizzato un DEA-X</Italian>
             <Russian>%1 выполнил AED-X</Russian>
             <Turkish>%1 AED-X gerçekleştirdi</Turkish>
             <Italian>%1 ha utilizzato un DAE-X</Italian>
@@ -962,7 +959,6 @@
             <Korean>바이탈측정 자동제세동기 성공확률</Korean>
             <French>Chances de succès pour l'AED-X</French>
             <Turkish>AED-X için başarı şansı</Turkish>
-            <Italian>Probabilità di successo del DEA-X</Italian>
             <Russian>Шанс на успех для AED-X</Russian>
             <Italian>Probabilità di successo del DAE-X</Italian>
             <Japanese>AED-Xの成功チャンス</Japanese>
@@ -977,7 +973,6 @@
             <Korean>자동제세동기 성공확률</Korean>
             <French>Chances de succès pour l'AED</French>
             <Turkish>AED için başarı şansı</Turkish>
-            <Italian>Probabilità di successo del DEA</Italian>
             <Russian>Шанс успеха для AED</Russian>
             <Italian>Probabilità di successo del DAE</Italian>
             <Japanese>AEDの成功チャンス</Japanese>
@@ -992,7 +987,6 @@
             <Korean>AED 허용 </Korean>
             <French>Autoriser l'AED</French>
             <Turkish>AED'e izin ver</Turkish>
-            <Italian>Permetti il DEA</Italian>
             <Russian>Разрешить AED</Russian>
             <Italian>Permetti il DAE</Italian>
             <Japanese>AEDを許可する</Japanese>
@@ -1007,7 +1001,6 @@
             <Korean>AED 사용에 필요한 교육 수준 </Korean>
             <French>Niveau de d'entrainement pour utiliser un AED</French>
             <Turkish>AED kullanmak için gerekli eğitim seviyesi</Turkish>
-            <Italian>Livello d'addestramento richiesto per usare il DEA</Italian>
             <Russian>Уровень подготовки, необходимый для использования AED</Russian>
             <Italian>Livello d'addestramento richiesto per usare il DAE</Italian>
             <Japanese>AEDを使用するために必要な訓練レベル</Japanese>
@@ -1022,7 +1015,6 @@
             <Korean>바이탈측정 자동제세동기 허용</Korean>
             <French>Autoriser l'AED-X</French>
             <Turkish>AED-X'e izin ver</Turkish>
-            <Italian>Permetti il DEA-X</Italian>
             <Russian>Разрешить AED-X</Russian>
             <Italian>Permetti il DAE-X</Italian>
             <Japanese>AED-Xを許可する</Japanese>
@@ -1037,7 +1029,6 @@
             <Korean>바이탈측정 자동제세동기 사용에 필요한 의료레벨</Korean>
             <French>Niveau de d'entrainement pour utiliser un AED-X</French>
             <Turkish>AED-X kullanmak için gerekli eğitim seviyesi</Turkish>
-            <Italian>Livello d'addestramento richiesto per usare il DEA-X</Italian>
             <Russian>Уровень подготовки, необходимый для использования AED-X</Russian>
             <Italian>Livello d'addestramento richiesto per usare il DAE-X</Italian>
             <Japanese>AED-Xを使用するために必要な訓練レベル</Japanese>
@@ -1052,7 +1043,6 @@
             <Korean>바이탈측정 자동제세동기 사용가능거리 설정(미터법)</Korean>
             <French>Distance maximum en mètres pour l'AED-X</French>
             <Turkish>Metre cinsinden AED-X için mesafe sınırı</Turkish>
-            <Italian>Distanza massima in metri per il DEA-X</Italian>
             <Russian>Ограничение расстояния для AED-X в метрах</Russian>
             <Italian>Distanza massima in metri per il DAE-X</Italian>
             <Japanese>AED-Xの距離制限(メートル単位)</Japanese>
@@ -1067,7 +1057,6 @@
             <Korean>바이탈측정 자동제세동기 모니터링 시간제한 (초단위)</Korean>
             <French>Limite de temps pour monitorer l'AED-X en secondes</French>
             <Turkish>AED-X'in saniye cinsinden izlenmesi için zaman sınırı</Turkish>
-            <Italian>Limite di tempo in secondi per il monitoraggio del DEA-X</Italian>
             <Russian>Ограничение времени для монитора AED-X в секундах</Russian>
             <Italian>Limite di tempo in secondi per il monitoraggio del DAE-X</Italian>
             <Japanese>AED-Xのモニターの制限時間(秒単位)</Japanese>
@@ -1082,7 +1071,6 @@
             <Korean>바이탈측정 자동제세동기 사용시 모니터 비활성화</Korean>
             <French>Désactiver le moniteur pendant l'utilisation de l'AED-X</French>
             <Turkish>AED-X kullanırken Monitörü devre dışı bırakın</Turkish>
-            <Italian>Disattivare il monitoraggio durante l'utilizzo del DEA-X</Italian>
             <Russian>Деактивируйте монитор при использовании AED-X</Russian>
             <Italian>Disattivare il monitoraggio durante l'utilizzo del DAE-X</Italian>
             <Japanese>AED-Xの使用中にモニターを非アクティブ化する</Japanese>
@@ -1227,12 +1215,6 @@
             <Russian>Рисование крови</Russian>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_DRAW_BLOODGROUPS">
-            <English>Use Blood Groups for drawing blood?</English>
-            <German>Verwenden der Blutgruppen für die Blutentnahme?</German>
-            <Russian>Использовать группы крови для забора крови?</Russian>
-            <Japanese>採血</Japanese>
-        </Key>
-        <Key ID="STR_kat_circulation_SETTING_DRAW_BLOODGROUPS">
             <English>Use Bloodgroups for drawing blood?</English>
             <German>Blutgruppen für die Blutentnahme verwenden?</German>
             <Polish>Używaj grup krwi do pobieranie krwi?</Polish>
@@ -1244,6 +1226,7 @@
             <Spanish>¿Utilizar los grupos sanguíneos para la extracción de sangre?</Spanish>
             <Czech>Použít krevní skupiny pro odebírání krve?</Czech>
             <Japanese>採血に血液型を使用しますか?</Japanese>
+            <Russian>Использовать группы крови для забора крови?</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_SELF_BLOOD_DRAW">
             <English>Enable self blood draw</English>
@@ -1288,17 +1271,6 @@
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW">
             <English>Minimum blood volume for donor (liters)</English>
-            <German>Mindestblutvolumen für Spender (Liter)</German>
-            <Russian>Минимальный объем крови для донора (литры)</Russian>
-        </Key>
-        <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW_DESC">
-            <English>Minimum volume of blood allowed to drain a donor to, to ignore this setting set to 0</English>
-            <German>Minimales Blutvolumen, das einem Spender entnommen werden darf. Um diese Einstellung zu ignorieren, setzen sie auf 0.</German>
-            <Russian>Минимальный объем крови, разрешенный для слива донора, чтобы игнорировать этот параметр, установленный на 0</Russian>
-            <Japanese>250mlキットの採血時間</Japanese>
-        </Key>
-        <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW">
-            <English>Minimum blood volume for donor (liters)</English>
             <German>Mindestblutmenge für Spender (Liter)</German>
             <Polish>Minimalna ilość krwi u dawcy (litry)</Polish>
             <Korean>기증자의 최소 혈액량(리터)</Korean>
@@ -1308,6 +1280,7 @@
             <Italian>Volume minimo di sangue per il donatore (litri)</Italian>
             <Spanish>Volúmen mínimo de sangre para el donante (litro)</Spanish>
             <Czech>Minimální objem krve pro dárce (litry)</Czech>
+            <Russian>Минимальный объем крови для донора (литры)</Russian>
             <Japanese>採血できる最小血液量(リットル)</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW_DESC">
@@ -1321,6 +1294,7 @@
             <Italian>Volume minimo di sangue consentito per prelevare un donatore, per ignorare questa impostazione impostare su 0</Italian>
             <Spanish>Volumen mínimo de sangre que se permite extraer a un donante, para ignorar este parámetro se establece en 0</Spanish>
             <Czech>Minimální objem krve, který lze z dárce odebrat, pro ignorování nastavení nastavte 0</Czech>
+            <Russian>Минимальный объем крови, разрешенный для слива донора, чтобы игнорировать этот параметр, установленный на 0</Russian>
             <Japanese>ドナーから採血できる最小量の血液。0に設定で無視。</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge">
@@ -1333,7 +1307,6 @@
             <Korean>AED 경고음 및 충전음 </Korean>
             <French>Bip AED et son de charge </French>
             <Turkish>AED Bip ve Şarj sesi </Turkish>
-            <Italian>Segnale acustico AED e suono di carica </Italian>
             <Russian>Звуковой сигнал AED и звук зарядки</Russian>
             <Italian>Segnale acustico DAE e suono di carica </Italian>
             <Japanese>AEDビープ音と充電音</Japanese>
@@ -1348,7 +1321,6 @@
             <Korean>AED/AED-X에 대한 경고음 및 충전 사운드 활성화 </Korean>
             <French>Active le bip et le son de charge pour AED/AED-X </French>
             <Turkish>AED/AED-X için Bip ve Şarj sesini etkinleştirir </Turkish>
-            <Italian>Abilita il segnale acustico e il suono di carica per AED/AED-X </Italian>
             <Russian>Включает звуковой сигнал и звук зарядки для AED/AED-X</Russian>
             <Italian>Abilita il segnale acustico e il suono di carica per DAE/DAE-X </Italian>
             <Japanese>AED/AED-Xのビープ音と充電音を有効にします</Japanese>
@@ -1364,6 +1336,7 @@
             <French>Vérification du rythme</French>
             <Turkish>Ritmi Kontrol Etmek</Turkish>
             <Italian>Controllando il ritmo</Italian>
+            <Russian>Проверка ритма</Russian>
         </Key>
     </Package>
 </Project>
