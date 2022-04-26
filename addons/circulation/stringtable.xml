@@ -1269,6 +1269,7 @@
             <Turkish>250ml Kit için çizim süresi </Turkish>
             <Italian>Tempo di disegno per Kit 250ml </Italian>
             <Russian>Время нанесения для набора 250 мл</Russian>
+            <Japanese>250mlキットの採血時間</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW">
             <English>Minimum blood volume for donor (liters)</English>
