@@ -13,6 +13,7 @@
             <Turkish>Oyuncuların Naloxone kullanmasına izin verilsin mi?</Turkish>
             <Italian>Permettere ai giocatori di usare il Naloxone?</Italian>
             <Japanese>プレイヤーにナロキソンの使用を許可しますか?</Japanese>
+            <Russian>Разрешить игрокам использовать налоксон?</Russian>
         </Key>
         <Key ID="STR_kat_pharma_CARBONATE_ACTIVE">
             <English>Allow players to use Ammonium Carbonate?</English>
@@ -26,6 +27,7 @@
             <Turkish>Oyuncuların Amonyum Karbonat kullanmasına izin verilsin mi?</Turkish>
             <Czech>Povolit hráčům použít Uhličitan amonný?</Czech>
             <Japanese>プレイヤーに炭酸アンモニウムの使用を許可しますか?</Japanese>
+            <Russian>Разрешить игрокам использовать карбонат аммония?</Russian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_ACTIVE">
             <English>Allow players to use TXA?</English>
@@ -39,6 +41,7 @@
             <Turkish>Oyuncuların TXA kullanmasına izin verilsin mi?</Turkish>
             <Czech>Povolit hráčům použít TXA?</Czech>
             <Japanese>プレイヤーにトラネキサム酸(TXA)の使用を許可しますか?</Japanese>
+            <Russian>Разрешить игрокам использовать TXA?</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_MEDIC">
             <English>Changes what medical level is required to set IVs/IOs</English>
@@ -52,6 +55,7 @@
             <Turkish>IV'leri/IO'ları ayarlamak için gereken tıbbi düzeyi değiştirir</Turkish>
             <Czech>Změní který medický level je potřeba k zavedení IV/IO</Czech>
             <Japanese>IV/IOを設定するために必要な医療レベルを変更します</Japanese>
+            <Russian>Изменяет медицинский уровень, необходимый для установки IV/IO.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP_ENABLE">
             <English>Enables IV/IO drop times</English>
@@ -65,7 +69,8 @@
             <Turkish>IV/IO bırakma sürelerini etkinleştir</Turkish>
             <Italian>Abilitare i tempi di caduta IV/IO</Italian>
             <Japanese>IV/IOの滴下時間を有効にする</Japanese>
-        </Key>        
+            <Russian>Включает время сброса IV/IO</Russian>
+        </Key>
         <Key ID="STR_kat_pharma_IV_DROP">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
             <German>Ändert den Zeitpunkt, zu dem IVs/IOs aus einem Patienten herausfallen</German>
@@ -78,6 +83,7 @@
             <Turkish>IV'lerin/IO'ların bir hastadan düştüğü zamanı değiştirir</Turkish>
             <Czech>Změní čas po kterém samovolně vypadnou IV/IO z pacienta</Czech>
             <Japanese>IV/IOが患者から落ちる時間を変更します</Japanese>
+            <Russian>Изменяет время выпадения IV/IO капельниц у пациента</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_REUSE">
             <English>Sets if IV/IO needles are reusable</English>
@@ -91,6 +97,7 @@
             <Turkish>IV/IO iğnelerinin yeniden kullanılabilir olup olmadığını ayarlar</Turkish>
             <Czech>Nastaví, zda IV/IO jehly jsou znovu-použitelné</Czech>
             <Japanese>IV/IO針が再利用可能かどうかを設定します</Japanese>
+            <Russian>Устанавливает, можно ли использовать иглы для IV/IO повторно</Russian>
         </Key>
         <Key ID="STR_kat_pharma_PUSH_TIME">
             <English>Push time for all IV Medications</English>
@@ -104,6 +111,7 @@
             <Turkish>Tüm IV İlaçlar için itme zamanı</Turkish>
             <Czech>Čas potřebný k vstříknutí všech IV léků</Czech>
             <Japanese>すべての点滴薬の注射タイム</Japanese>
+            <Russian>Время выталкивания всех IV лекарств</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_TIME">
             <English>Time to establish IVs</English>
@@ -117,6 +125,7 @@
             <Turkish>IV'ler oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IV</Czech>
             <Japanese>IVを挿管する時間</Japanese>
+            <Russian>Время устанавливать IV</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IO_TIME">
             <English>Time to establish IOs</English>
@@ -130,6 +139,7 @@
             <Turkish>IO'ları oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IO</Czech>
             <Japanese>IOを挿管する時間</Japanese>
+            <Russian>Время устанавливать IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Painkillers_DescShort">
             <English>Used to suppress pain</English>
@@ -143,6 +153,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Czech>Používá se k potlačení bolesti</Czech>
             <Japanese>痛みを抑えるために使用されます</Japanese>
+            <Russian>Используется для подавления боли</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Painkillers_DescUse">
             <English>An analgesic used to combat light to moderate pain experiences.</English>
@@ -156,6 +167,7 @@
             <Spanish>Analgésico usado para combatir dolor ligero o moderado.</Spanish>
             <Turkish>Hafif ila orta şiddette ağrı deneyimleriyle mücadele etmek için kullanılan bir analjezik.</Turkish>
             <Japanese>軽度から中等度の痛みの経験と戦うために使用される鎮痛剤。</Japanese>
+            <Russian>An analgesic used to treat mild to moderate pain.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Painkillers_Box_Display">
             <English>Painkillers</English>
@@ -169,6 +181,7 @@
             <Spanish>Analgésicos</Spanish>
             <Turkish>Ağrı Kesiciler</Turkish>
             <Japanese>鎮痛剤</Japanese>
+            <Russian>Обезболивающие</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Inject_Box_Painkillers">
             <English>Take Painkillers</English>
@@ -182,6 +195,7 @@
             <Spanish>Administrar analgésico</Spanish>
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Japanese>鎮痛剤を投与</Japanese>
+            <Russian>Принимайте обезболивающие</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
@@ -195,6 +209,7 @@
             <Turkish>Bilinci geri yüklemek için kullanılır</Turkish>
             <Czech>Používá se k obnovení vědomí</Czech>
             <Japanese>意識を回復するために使用されます</Japanese>
+            <Russian>Используется для восстановления сознания</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_DescUse">
             <English>The primary ingredient in smelling salts, used to restore consciousness in limited situations.</English>
@@ -208,6 +223,7 @@
             <Turkish>Kokulu tuzların birincil bileşeni, sınırlı durumlarda bilinci geri kazandırmak için kullanılır.</Turkish>
             <Czech>Primární složka čichacích solí používaná k obnovení vědomí ve výjmečných situacích.</Czech>
             <Japanese>気付け薬の主成分で、限られた状況で意識を回復するために使用されます。</Japanese>
+            <Russian>Основной ингредиент нюхательной соли, используемый для восстановления сознания в ограниченных ситуациях.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_Box_Display">
             <English>Ammonium Carbonate</English>
@@ -221,6 +237,7 @@
             <Turkish>Amonyum karbonat</Turkish>
             <Czech>Uhličitan amonný</Czech>
             <Japanese>炭酸アンモニウム</Japanese>
+            <Russian>Карбонат аммония</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Carbonate">
             <English>Use Carbonate</English>
@@ -234,6 +251,7 @@
             <Turkish>Karbonat kullanın</Turkish>
             <Czech>Použít uhličitan</Czech>
             <Japanese>炭酸塩を投与</Japanese>
+            <Russian>Используйте карбонат</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -247,6 +265,7 @@
             <Turkish>Opioid aşırı dozlarını tersine çevirmek için kullanılır</Turkish>
             <Czech>Používá se ke zvrácení předávkování opioidy</Czech>
             <Japanese>オピオイド過剰摂取を元に戻すために使用されます</Japanese>
+            <Russian>Используется для устранения передозировок опиоидами.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Naloxone_DescUse">
             <English>An opioid antagonist that can reverse opioid overdoses from medications such as Morphine.</English>
@@ -260,6 +279,7 @@
             <Turkish>Morfin gibi ilaçlardan kaynaklanan aşırı opioid dozlarını tersine çevirebilen bir opioid antagonisti.</Turkish>
             <Czech>Opioidní protiváha, která může zvrátit předávkování léků, jako je Morfin.</Czech>
             <Japanese>モルヒネなどの薬剤からのオピオイド過剰摂取を元に戻すことができるオピオイド拮抗薬。</Japanese>
+            <Russian>Антагонист опиатов, который может обратить вспять передозировку опиатами от таких лекарств, как морфин.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Naloxone_Box_Display">
             <English>Naloxone</English>
@@ -273,6 +293,7 @@
             <Turkish>Nalokson</Turkish>
             <Czech>Naloxon</Czech>
             <Japanese>ナロキソン</Japanese>
+            <Russian>Налоксон</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Naloxone">
             <English>Use Naloxone</English>
@@ -286,6 +307,7 @@
             <Turkish>Nalokson kullanın</Turkish>
             <Czech>Použít naloxon</Czech>
             <Japanese>ナロキソンを投与</Japanese>
+            <Russian>Используйте налоксон</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Amiodarone_DescShort">
             <English>Used to combat cardiac arrest</English>
@@ -299,9 +321,10 @@
             <Turkish>Kalp durmasıyla mücadele için kullanılır</Turkish>
             <Czech>Používá se k léčení srdeční zástavy</Czech>
             <Japanese>心停止と戦うために使用されます</Japanese>
+            <Russian>Используется для борьбы с остановкой сердца</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Amiodarone_DescUse">
-            <English>An anti-arrhythmic used when combatting shockable forms of cardiac arrest.</English>
+            <English>An anti-arrhythmic used when combating shockable forms of cardiac arrest.</English>
             <German>Ein Antiarrhythmikum, das bei der Bekämpfung schockbarer Formen des Herzstillstands eingesetzt wird.</German>
             <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
             <French>Antiarythmique utilisé pour combattre les formes choquables arrêt cardiaque.</French>
@@ -312,6 +335,7 @@
             <Turkish>Şok edilebilir kardiyak arrest formlarıyla mücadele ederken kullanılan bir anti-aritmik.</Turkish>
             <Czech>Antiarytmikum používané při léčení šokovatelných forem zástavy srdce.</Czech>
             <Japanese>ショック可能な形態の心停止と戦うときに使用される抗不整脈薬。</Japanese>
+            <Russian>Антиаритмическое средство, используемое при борьбе с шоковыми формами остановки сердца.</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Amiodarone_Box_Display">
             <English>Amiodarone</English>
@@ -325,6 +349,7 @@
             <Turkish>Amiodaron</Turkish>
             <Czech>Amiodaron</Czech>
             <Japanese>アミオダロン</Japanese>
+            <Russian>Амиодарон</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Amiodarone">
             <English>Push Amiodarone</English>
@@ -338,6 +363,7 @@
             <Turkish>Amiodaron'u itin</Turkish>
             <Czech>Vstříknout amiodaron</Czech>
             <Japanese>アミオダロンを注射</Japanese>
+            <Russian>Ввести амиодарон</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_DescShort">
             <English>Used to combat cardiac arrest</English>
@@ -351,9 +377,10 @@
             <Turkish>Kalp durmasıyla mücadele için kullanılır</Turkish>
             <Czech>Používá se k léčení srdeční zástavy</Czech>
             <Japanese>心停止と戦うために使用されます</Japanese>
+            <Russian>Используется для борьбы с остановкой сердца</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_DescUse">
-            <English>An anti-arrhythmic used when combatting shockable forms of cardiac arrest.</English>
+            <English>An anti-arrhythmic used when combating shockable forms of cardiac arrest.</English>
             <German>Ein Antiarrhythmikum, das bei der Bekämpfung schockbarer Formen des Herzstillstands eingesetzt wird.</German>
             <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
             <French>Antiarythmique utilisé pour combattre les formes choquables arrêt cardiaque.</French>
@@ -364,6 +391,7 @@
             <Turkish>Şok edilebilir kardiyak arrest formlarıyla mücadele ederken kullanılan bir anti-aritmik.</Turkish>
             <Czech>Antiarytmikum používané při léčení šokovatelných forem zástavy srdce.</Czech>
             <Japanese>ショック可能な形態の心停止と戦うときに使用される抗不整脈薬。</Japanese>
+            <Russian>Антиаритмическое средство, используемое при борьбе с шоковыми формами остановки сердца.</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_Box_Display">
             <English>Lidocaine</English>
@@ -377,6 +405,7 @@
             <Turkish>Lidokain</Turkish>
             <Czech>Lidokain</Czech>
             <Japanese>リドカイン</Japanese>
+            <Russian>Лидокаин</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Lidocaine">
             <English>Push Lidocaine</English>
@@ -390,6 +419,7 @@
             <Turkish>Push Lidokain</Turkish>
             <Czech>Vstříknout lidokain</Czech>
             <Japanese>リドカインを注射</Japanese>
+            <Russian>Ввести Лидокаин</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Atropine_DescShort">
             <English>Used to treat bradycardia</English>
@@ -403,6 +433,7 @@
             <Turkish>Bradikardi tedavisinde kullanılır</Turkish>
             <Czech>Používá se k léčbě bradykardie</Czech>
             <Japanese>徐脈の治療に使用されます</Japanese>
+            <Russian>Используется для лечения брадикардии</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Atropine_DescUse">
             <English>Commonly used to treat poisoning, Atropine can also be used to treat bradycardia.</English>
@@ -416,6 +447,7 @@
             <Turkish>Zehirlenmeyi tedavi etmek için yaygın olarak kullanılan Atropin, bradikardiyi tedavi etmek için de kullanılabilir.</Turkish>
             <Czech>Atropin se běžně používá k léčbě otrav, lze také použít k léčbě bradykardie.</Czech>
             <Japanese>中毒の治療に一般的に使用されるアトロピンは、徐脈の治療にも使用できます。</Japanese>
+            <Russian>Обычно используемый для лечения отравлений, атропин также может быть использован для лечения брадикардии.</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Atropine_Box_Display">
             <English>Atropine</English>
@@ -429,6 +461,7 @@
             <Turkish>Atropin</Turkish>
             <Czech>Atropin</Czech>
             <Japanese>アトロピン</Japanese>
+            <Russian>Атропин</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Atropine">
             <English>Push Atropine</English>
@@ -442,6 +475,7 @@
             <Turkish>Atropin itin</Turkish>
             <Czech>Vstříknout atropin</Czech>
             <Japanese>アトロピンを注射</Japanese>
+            <Russian>Ввести Атропин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_DescShort">
             <English>Encourages clot formation</English>
@@ -455,6 +489,7 @@
             <Turkish>Pıhtı oluşumunu teşvik eder</Turkish>
             <Czech>Podporuje tvorbu sraženin</Czech>
             <Japanese>血栓形成を促進します</Japanese>
+            <Russian>Способствует образованию тромбов</Russian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_DescUse">
             <English>Used to encourage and stabilize clots in a patient.</English>
@@ -468,6 +503,7 @@
             <Turkish>Bir hastada pıhtıları teşvik etmek ve stabilize etmek için kullanılır.</Turkish>
             <Czech>Používá se k povzbuzení a stabilizaci sraženin u pacienta.</Czech>
             <Japanese>患者の血栓を促進し、安定させるために使用されます。</Japanese>
+            <Russian>Используется для стимулирования и стабилизации образования тромбов у пациента.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_Box_Display">
             <English>TXA</English>
@@ -481,6 +517,7 @@
             <Turkish>TXA</Turkish>
             <Czech>TXA</Czech>
             <Japanese>トラネキサム酸(TXA)</Japanese>
+            <Russian>TXA</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Take_TXA">
             <English>Push TXA</English>
@@ -494,6 +531,7 @@
             <Turkish>TXA'yı itin</Turkish>
             <Czech>Vstříknout TXA</Czech>
             <Japanese>トラネキサム酸を注射</Japanese>
+            <Russian>Ввести TXA</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Norep_DescShort">
             <English>Used to raise blood pressure</English>
@@ -507,6 +545,7 @@
             <Turkish>Kan basıncını yükseltmek için kullanılır</Turkish>
             <Czech>Používáno ke zvýšení krevního tlaku</Czech>
             <Japanese>血圧を上げるために使用されます</Japanese>
+            <Russian>Используется для повышения артериального давления</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Norep_DescUse">
             <English>A vasopressor used to increase blood pressure and combat shock.</English>
@@ -520,6 +559,7 @@
             <Turkish>Tansiyonu yükseltmek ve şokla mücadele etmek için kullanılan bir vazopressör.</Turkish>
             <Czech>Vasopresor používán k zvýšení krevního tlaku a bojového šoku</Czech>
             <Japanese>血圧を上げてショックと戦うために使用される昇圧剤。</Japanese>
+            <Russian>Вазопрессор, используемый для повышения артериального давления и борьбы с шоком.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Norep_Box_Display">
             <English>Norepinephrine</English>
@@ -533,6 +573,7 @@
             <Turkish>Norepinefrin</Turkish>
             <Czech>Norepinefrin</Czech>
             <Japanese>ノルエピネフリン</Japanese>
+            <Russian>Норадреналин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Norep">
             <English>Push Norepinephrine</English>
@@ -546,6 +587,7 @@
             <Turkish>Norepinefrin itin</Turkish>
             <Czech>Vstříknout norepinefrin</Czech>
             <Japanese>ノルエピネフリンを注射</Japanese>
+            <Russian>Ввести Норадреналин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Phenyl_DescShort">
             <English>Used to raise blood pressure</English>
@@ -559,6 +601,7 @@
             <Turkish>Kan basıncını yükseltmek için kullanılır</Turkish>
             <Czech>Používáno ke zvýšení krevního tlaku</Czech>
             <Japanese>血圧を上げるために使用されます</Japanese>
+            <Russian>Используется для повышения артериального давления</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Phenyl_DescUse">
             <English>A vasopressor used to increase blood pressure and combat shock.</English>
@@ -572,6 +615,7 @@
             <Turkish>Tansiyonu yükseltmek ve şokla mücadele etmek için kullanılan bir vazopressör.</Turkish>
             <Czech>Vasopresor používán k zvýšení krevního tlaku a bojového šoku</Czech>
             <Japanese>血圧を上げてショックと戦うために使用される昇圧剤。</Japanese>
+            <Russian>Вазопрессор, используемый для повышения артериального давления и борьбы с шоком.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Phenyl_Box_Display">
             <English>Phenylephrine</English>
@@ -585,6 +629,7 @@
             <Turkish>Fenilefrin</Turkish>
             <Czech>Fenylefrin</Czech>
             <Japanese>フェニレフリン</Japanese>
+            <Russian>Фенилэфрин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Phenyl">
             <English>Push Phenylephrine</English>
@@ -598,6 +643,7 @@
             <Turkish>Fenilefrin itin</Turkish>
             <Czech>Vstříknout fenylefrin</Czech>
             <Japanese>フェニレフリンを注射</Japanese>
+            <Russian>Ввести Фенилэфрин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Nitro_DescShort">
             <English>Used to lower blood pressure</English>
@@ -611,6 +657,7 @@
             <Turkish>Kan basıncını düşürmek için kullanılır</Turkish>
             <Czech>Používáno ke snížení krevního tlaku</Czech>
             <Japanese>血圧を下げるために使用されます</Japanese>
+            <Russian>Используется для снижения артериального давления</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Nitro_DescUse">
             <English>A vasodilator used to decrease blood pressure and combat hypertension.</English>
@@ -624,6 +671,7 @@
             <Turkish>Kan basıncını düşürmek ve hipertansiyonla mücadele etmek için kullanılan bir vazodilatör.</Turkish>
             <Czech>Vasodilator je použit ke snížení krevního tlaku a bojovým hypertenzím</Czech>
             <Japanese>血圧を下げ、高血圧と戦うために使用される血管拡張剤。</Japanese>
+            <Russian>Сосудорасширяющее средство, используемое для снижения артериального давления и борьбы с гипертонией.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Nitro_Box_Display">
             <English>Nitroglycerin</English>
@@ -637,6 +685,7 @@
             <Turkish>Nitrogliserin</Turkish>
             <Czech>Nitroglycerin</Czech>
             <Japanese>ニトログリセリン</Japanese>
+            <Russian>Нитроглицерин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Nitro">
             <English>Push Nitroglycerin</English>
@@ -650,6 +699,7 @@
             <Turkish>Nitrogliserin itin</Turkish>
             <Czech>Vstříknout Nitroglycerin</Czech>
             <Japanese>ニトログリセリンを注射</Japanese>
+            <Russian>Ввести Нитроглицерин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Reorient">
             <English>Reorient Patient</English>
@@ -663,6 +713,7 @@
             <Turkish>환자의 방향을 바꾸다</Turkish>
             <Czech>Reorientovat pacienta</Czech>
             <Japanese>患者に刺激を与える</Japanese>
+            <Russian>Переориентация пациента</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Reorienting">
             <English>Reorienting</English>
@@ -676,6 +727,7 @@
             <Turkish>Yeniden yönlendirme</Turkish>
             <Czech>Reoritentuji</Czech>
             <Japanese>刺激を与えています</Japanese>
+            <Russian>Переориентация</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Using">
             <English>Using</English>
@@ -689,6 +741,7 @@
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Usando</Italian>
             <Japanese>投与</Japanese>
+            <Russian>С использованием</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Pushing">
             <English>Pushing</English>
@@ -702,6 +755,7 @@
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Iniettando</Italian>
             <Japanese>注射中</Japanese>
+            <Russian>Ввести </Russian>
         </Key>
         <Key ID="STR_kat_pharma_push_log">
             <English>%1 pushed %2</English>
@@ -715,6 +769,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
             <Japanese>%1が%2を注射</Japanese>
+            <Russian>%1 нажал %2</Russian>
         </Key>
         <Key ID="STR_kat_pharma_inject_log">
             <English>%1 injected %2</English>
@@ -728,6 +783,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
             <Japanese>%1が%2を注入</Japanese>
+            <Russian>%1 введено %2</Russian>
         </Key>
         <Key ID="STR_kat_pharma_use_log">
             <English>%1 used %2</English>
@@ -741,6 +797,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
             <Japanese>%1が%2を投与</Japanese>
+            <Russian>%1 использует %2</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_16_Display">
             <English>16g IV</English>
@@ -754,6 +811,7 @@
             <Turkish>16g IV</Turkish>
             <Italian>16g IV</Italian>
             <Japanese>16g IV</Japanese>
+            <Russian>16г IV</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_DescShort">
             <English>Intravenous Needle</English>
@@ -767,6 +825,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Catetere intravenoso</Italian>
             <Japanese>静脈注射針</Japanese>
+            <Russian>Внутривенное игла</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IO_45_Display">
             <English>FAST IO</English>
@@ -780,6 +839,7 @@
             <Turkish>FAST IO</Turkish>
             <Italian>FAST IO</Italian>
             <Japanese>FAST IO</Japanese>
+            <Russian>FAST IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IO_DescShort">
             <English>Intraosseous Needle</English>
@@ -793,6 +853,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Sistema d'infusione intraossea</Italian>
             <Japanese>骨内注射針</Japanese>
+            <Russian>Внутривенное игла</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_DescUse">
             <English>Used to allow fluids and certain medications to enter the body.</English>
@@ -806,6 +867,7 @@
             <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
             <Italian>Utilizzato per consentire ai fluidi e ad alcuni farmaci di entrare nel corpo.</Italian>
             <Japanese>輸液や薬液を体内に注射するために使用されます。</Japanese>
+            <Russian>Используется для пропуска жидкостей и некоторых лекарств в организм.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Apply_IV_16">
             <English>Establish 16g IV</English>
@@ -819,6 +881,7 @@
             <Turkish>16g IV oluşturun</Turkish>
             <Czech>Zavádím IV</Czech>
             <Japanese>16g IVを挿管する</Japanese>
+            <Russian>Настройка 16г IV</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Apply_IO_45">
             <English>Establish FAST IO</English>
@@ -832,6 +895,7 @@
             <Korean>FAST IO 구축</Korean>
             <Turkish>HIZLI IO kurun</Turkish>
             <Japanese>FAST IOを挿管する</Japanese>
+            <Russian>Установить 16г IV</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Applying_IV">
             <English>Establishing IV/IO</English>
@@ -845,6 +909,7 @@
             <Chinese>建立IV/IO</Chinese>
             <Korean>IV/IO 구축</Korean>
             <Japanese>IV/IOの挿管中</Japanese>
+            <Russian>Настройка IV/IO </Russian>
         </Key>
         <Key ID="STR_kat_pharma_Applying_IO">
             <English>Establishing IO</English>
@@ -858,6 +923,7 @@
             <Chinese>建立IO</Chinese>
             <Korean>IO 구축</Korean>
             <Japanese>IOの挿管中</Japanese>
+            <Russian>Настройка IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_iv_log">
             <English>%1 established a %2</English>
@@ -871,6 +937,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha posizionato %2</Italian>
             <Japanese>%1は%2を挿管しました</Japanese>
+            <Russian>%1 Настройка %2</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Remove_IV">
             <English>Remove IV/IO</English>
@@ -884,6 +951,7 @@
             <Korean>IV/IO 제거</Korean>
             <Czech>Odstraňuji IV</Czech>
             <Japanese>IV/IOを除去します</Japanese>
+            <Russian>Удалить IV/IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Removing_IV">
             <English>Removing</English>
@@ -897,6 +965,7 @@
             <Korean>풀이</Korean>
             <Czech>Odstraňuji</Czech>
             <Japanese>除去中</Japanese>
+            <Russian>Удаление</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Pain_empty">
             <English>%1 is now empty</English>
@@ -910,10 +979,11 @@
             <Turkish>% 1 artık boş</Turkish>
             <Italian>%1 è vuota</Italian>
             <Japanese>%1は空になりました</Japanese>
+            <Russian>%1 сейчас пуст</Russian>
         </Key>
-		<Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV">
+        <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV">
             <English>Require inserted IV/IO</English>
-			<German>Erfordert eingefügtes IV/IO</German>
+            <German>Erfordert eingefügtes IV/IO</German>
             <Polish>Wymagaj włożonego IV/IO</Polish>
             <French>IV/IO posée requise</French>
             <Chinese>需要插入 IV/IO</Chinese>
@@ -923,10 +993,11 @@
             <Turkish>Takılı IV/IO gerektir</Turkish>
             <Czech>Vyžadování vložení IV/IO</Czech>
             <Japanese>輸液にIV/IO挿管を要求しますか</Japanese>
+            <Russian>Требовать вставки IV/IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV_DESC">
             <English>Default true. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma.\n If false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
-			<German>Standardeinstellung wahr. Wenn wahr, müssen Sie zuerst eine IV/IO einführen, bevor Sie jemandem Kochsalzlösung/Blut/Plasma geben können.\n Wenn falsch, behält es das Standard-ACE-Verhalten für die Verwendung von Kochsalzlösung/Blut/Plasma bei.</German>
+            <German>Standardeinstellung wahr. Wenn wahr, müssen Sie zuerst eine IV/IO einführen, bevor Sie jemandem Kochsalzlösung/Blut/Plasma geben können.\n Wenn falsch, behält es das Standard-ACE-Verhalten für die Verwendung von Kochsalzlösung/Blut/Plasma bei.</German>
             <Polish>Domyślnie włączone. Jeśli włączone, należy najpierw umieścić IV/IO przed podaniem płynów. \nJeśli wyłączone, mechanika będzie taka sama jak w ACE przy podawaniu soli fizjologicznej/krwi/osocza.</Polish>
             <Spanish>True como valor por defecto. Si es true se necesitará poner un IV/IO primero antes de poder aplicar salino/sangre/plasma. \n Si es falso, se mantiene el funcionamiento de ACE para aplicar salino/sangre/plasma.</Spanish>
             <French>Par défaut activé. Si activé, vous avez besoin de poser une IV/IO avant de pouvoir administrer de la saline/sang/plasma.\n Si désactivé, le comportement standard de ACE pour l'usage de saline/sang plasma est utilisé.</French>
@@ -936,6 +1007,7 @@
             <Korean>기본값은 참입니다. 참이면 염수/혈액/혈장을 제공하기 전에 먼저 IV/IO를 삽입해야 합니다.\n 거짓이면 염수/혈액/혈장 사용에 대한 표준 ACE 동작을 유지합니다.</Korean>
             <Czech>Výchozí povoleno. Pokud je povoleno, budete muset nejprve vložit IV/IO, než budete moci někomu podat fyziologický roztok/krev/plazmu.\n Pokud je zakázano, zachová standardní chování ACE pro použití fyziologického roztoku/krve/plazmy.</Czech>
             <Japanese>KATデフォルトではtrueです。trueの場合、輸液を行う前にIV/IOを挿管する必要があります。\nfalseの場合はACEデフォルトの動作を保持します。つまり、生理食塩水/血液/血しょうパックだけで輸液可能になります。</Japanese>
+            <Russian>Истина по умолчанию. Если это правда, вам нужно будет сначала ввести IV/IO, прежде чем вы сможете дать кому-то физиологический раствор/кровь/плазму.\n Если false, он сохраняет стандартное поведение ACE для использования физиологического раствора/крови/плазмы.</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -949,6 +1021,7 @@
             <Turkish>Yönlendirme tokat sesi</Turkish>
             <Italian>Suono schiaffo stimolazione</Italian>
             <Japanese>刺激時に音を鳴らす</Japanese>
+            <Russian>Звук пощечины при переориентации</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap_DESC">
             <English>Enables slap sound for reorientation</English>
@@ -962,6 +1035,7 @@
             <Turkish>Yeniden yönlendirme için tokat sesini etkinleştirir</Turkish>
             <Italian>Abilita il suono dello schiaffo per la stimolazione</Italian>
             <Japanese>患者に刺激を与える際にビンタの音を鳴らします</Japanese>
+            <Russian>Включает звук пощечины для переориентации</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable">
             <English>Reorientation enabled?</English>
@@ -975,6 +1049,7 @@
             <Turkish>Yeniden yönlendirme etkin mi?</Turkish>
             <Italian>Stimolazione abilitata?</Italian>
             <Japanese>患者に刺激を与える 機能を有効化しますか?</Japanese>
+            <Russian>Переориентация включена?</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable_DESC">
             <English>Enables reorientation</English>
@@ -988,6 +1063,8 @@
             <Turkish>Yeniden yönlendirmeyi etkinleştirir</Turkish>
             <Italian>Stimolazione abilitata</Italian>
             <Japanese>刺激を与える(患者の安定時にビンタで叩き起こす)機能を有効化します</Japanese>
+            <Russian>Включает
+переориентация</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation">
             <English>Allow reorientation</English>
@@ -1001,6 +1078,7 @@
             <Turkish>Yeniden yönlendirmeye izin ver</Turkish>
             <Italian>Autorizza stimolazione</Italian>
             <Japanese>患者に刺激を与えることが出来る人</Japanese>
+            <Russian>Разрешить переориентацию</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation_DESC">
             <English>Medical level required for reorientation</English>
@@ -1014,6 +1092,7 @@
             <Turkish>Yeniden oryantasyon için gerekli tıbbi seviye</Turkish>
             <Italian>Livello medico richiesto per stimolazione</Italian>
             <Japanese>患者を刺激して起こすために必要な医療レベルを変更します</Japanese>
+            <Russian>Медицинский уровень, необходимый для переориентации</Russian>
         </Key>
     </Package>
 </Project>
