@@ -72,14 +72,17 @@
         <Key ID="STR_kat_breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
             <Japanese>SpO2正の乗数</Japanese>
+            <Russian>Положительный множитель SpO2</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyNegative">
             <English>SpO2 negative multiplier</English>
             <Japanese>SpO2負の乗数</Japanese>
+            <Russian>Отрицательный множитель SpO2</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
             <Japanese>心停止のSpO2低下を可能にする</Japanese>
+            <Russian>Включить снижение SpO2 при остановке сердца</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -442,6 +445,7 @@
         <Key ID="STR_kat_breathing_SETTING_SELF_CHESTSEAL">
             <English>Allow Chest Seal self treatment</English>
             <Japanese>チェストシールでの自己治療を許可する</Japanese>
+            <Russian>Разрешить самолечение Чест Сеал </Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
@@ -819,6 +823,7 @@
             <Turkish>Bilinçsiz SpO2 değeri</Turkish>
             <Italian>Valore SpO2 per perdita di coscienza</Italian>
             <Japanese>意識を失うSpO2の値</Japanese>
+            <Russian>Бессознательное значение SpO2</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_unconscious_Desc">
             <English>SpO2 value that will cause unconscious when dropped below that value</English>
@@ -832,6 +837,7 @@
             <Turkish>Bu değerin altına düştüğünde bilinç kaybına neden olacak SpO2 değeri</Turkish>
             <Italian>Valore di SpO2 sotto il quale causa la perdita di coscienza</Italian>
             <Japanese>SpO2(血中酸素濃度)が設定した値を下回ると気絶し、無意識状態に陥ります。</Japanese>
+            <Russian>Значение SpO2, которое приведет к потере сознания при падении ниже этого значения</Russian>
         </Key>
     </Package>
 </Project>
