@@ -6,7 +6,6 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Body Part <OBJECT>
  *
  * Return Value:
  * None
@@ -29,15 +28,15 @@ private _messageCyanosis = LLSTRING(CyanosisStatus_N);
 private _spO2Output = LSTRING(CyanosisStatus_N);
 
 if (_spO2 < 100) then {
-    if (_spO2 < 99 && _spO2 >= 1.35 * GVAR(dieValue)) then {
+    if (_spO2 < 100 && _spO2 >= GVAR(slightValue)) then {
         _spO2Output = LSTRING(CyanosisStatus_Slight);
         _messageCyanosis = LLSTRING(CyanosisStatus_Slight);
     };
-    if (_spO2 < 1.35 * GVAR(dieValue) && _spO2 >= 1.17 * GVAR(dieValue)) then {
+    if (_spO2 < GVAR(slightValue) && _spO2 >= GVAR(mildValue)) then {
         _spO2Output = LSTRING(CyanosisStatus_Mild);
         _messageCyanosis = LLSTRING(CyanosisStatus_Mild);
     };
-    if (_spO2 < 1.17 * GVAR(dieValue) && _spO2 >= 1.01 * GVAR(dieValue)) then {
+    if (_spO2 < GVAR(mildValue) && _spO2 >= GVAR(severeValue)) then {
         _spO2Output = LSTRING(CyanosisStatus_Severe);
         _messageCyanosis = LLSTRING(CyanosisStatus_Severe);
     };

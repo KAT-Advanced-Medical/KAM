@@ -147,9 +147,9 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(CheckCyanosis_Name);
         displayNameProgress = CSTRING(CheckCyanosis_Progress);
         treatmentTime = 3;
-        allowedSelections[] = {"All"};
+        allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        condition = "true";
+        condition = QGVAR(enableCyanosis);
         callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);
     };
 };

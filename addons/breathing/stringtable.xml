@@ -753,32 +753,64 @@
             <Japanese>SpO2(血中酸素濃度)が設定した値を下回ると気絶し、無意識状態に陥ります。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Name">
-            <English>Check Cyanosise</English>
+            <English>Check Cyanosis</English>
             <Polish>Sprawdź sinicę</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Progress">
-            <English>Checking Cyanosise</English>
+            <English>Checking Cyanosis</English>
             <Polish>Sprawdzanie sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Log">
-            <English>Cyanosise Status: %2</English>
+            <English>Cyanosis Status: %2</English>
             <Polish>Status sinicy: %2</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_N">
-            <English>No Cyanosise</English>
+            <English>No Cyanosis</English>
             <Polish>Brak sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Slight">
-            <English>Slight Cyanosise</English>
+            <English>Slight Cyanosis</English>
             <Polish>Lekka sinica</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Mild">
-            <English>Mild Cyanosise</English>
+            <English>Mild Cyanosis</English>
             <Polish>Średnia sinica</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
-            <English>Severe Cyanosise</English>
+            <English>Severe Cyanosis</English>
             <Polish>Ciężka sinica</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_Cyanosis">
+            <English>Enable cyanosis diagnose</English>
+            <Polish>Włącz diagnozę sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_Cyanosis_DESC">
+            <English>Enables cyanosis diagnose</English>
+            <Polish>Włącza diagnozę sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_slightValue">
+            <English>Slight cyanosis SpO2 value</English>
+            <Polish>Poziom SpO2 dla lekkiej sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_slightValue_DESC">
+            <English>Slight cyanosis value - default 90 SpO2</English>
+            <Polish>Poziom SpO2 dla lekkiej sinicy - domyślnie 90 SpO2</Polish>
+        </Key>
+         <Key ID="STR_kat_breathing_SETTING_mildValue">
+            <English>Mild cyanosis SpO2 value</English>
+            <Polish>Poziom SpO2 dla średniej sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_mildValue_DESC">
+            <English>Mild cyanosis value - default 75 SpO2</English>
+            <Polish>Poziom SpO2 dla średniej sinicy - domyślnie 75 SpO2</Polish>
+        </Key>
+         <Key ID="STR_kat_breathing_SETTING_severeValue">
+            <English>Severe cyanosis SpO2 value</English>
+            <Polish>Poziom SpO2 dla ciężkiej sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_severeValue_DESC">
+            <English>Severe cyanosis value - default 66 SpO2</English>
+            <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2</Polish>
         </Key>
     </Package>
 </Project>
