@@ -17,4 +17,20 @@ class CfgMagazines {
         lastRoundsTracer = 0;
         mass = 1;
     };
+    class kat_Carbonate: CA_Magazine {
+        author = "Katalam";
+        scope = 2;
+
+        displayName = CSTRING(Carbonate_Box_Display);
+        descriptionShort = CSTRING(Carbonate_DescShort);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        picture = QPATHTOF(ui\icon_Carbonate.paa);
+
+        ammo = "";
+        count = 10;
+        initSpeed = 0;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+        mass = 1;
+    };
 };

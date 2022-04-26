@@ -32,6 +32,7 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_Pulseoximeter,3);
             MACRO_ADDITEM(kat_chestSeal,25);
             MACRO_ADDITEM(kat_aatKit,10);
+            MACRO_ADDITEM(kat_stethoscope,5);
         };
     };
 };

@@ -38,23 +38,53 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// breathing SpO2 add & remove value small
+// Turn to unconscious in cause of SpO2 unconscious value
 [
-    QGVAR(spo2_small_value),
+    QGVAR(SpO2_unconscious),
     "SLIDER",
-    LLSTRING(SETTING_Value_Before),
+    [LLSTRING(SETTING_SpO2_unconscious), LLSTRING(SETTING_SpO2_unconscious_Desc)],
     CBA_SETTINGS_CAT,
-    [0, 100, 33, 0],
+    [0, 100, 75, 0],
     true
 ] call CBA_Settings_fnc_init;
 
-// breathing SpO2 add % remove value big
+// breathing SpO2 add value
 [
-    QGVAR(spo2_big_value),
+    QGVAR(SpO2_MultiplyPositive),
     "SLIDER",
-    LLSTRING(SETTING_Value_After),
+    LLSTRING(SETTING_MultiplyPositive),
     CBA_SETTINGS_CAT,
-    [0, 100, 66, 0],
+    [0, 10, 1, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// breathing SpO2 remove value
+[
+    QGVAR(SpO2_MultiplyNegative),
+    "SLIDER",
+    LLSTRING(SETTING_MultiplyNegative),
+    CBA_SETTINGS_CAT,
+    [0, 10, 1, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// SpO2 value for stability determination
+[
+    QGVAR(Stable_spo2),
+    "SLIDER",
+    [LLSTRING(SETTING_STABLE_SPO2), LLSTRING(DESCRIPTION_STABLE_SPO2)],
+    CBA_SETTINGS_CAT,
+    [0, 95, 85, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// changes whether SpO2 falls during cardiac arrest
+[
+    QGVAR(SpO2_perfusion),
+    "CHECKBOX",
+    LLSTRING(SETTING_SpO2_Perfusion),
+    CBA_SETTINGS_CAT,
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -89,13 +119,13 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
-// breathing SpO2 add % remove value big
+//Allow ChestSeal SelfTreatment
 [
-    QGVAR(Stable_spo2),
-    "SLIDER",
-    [LLSTRING(SETTING_STABLE_SPO2), LLSTRING(DESCRIPTION_STABLE_SPO2)],
+    QGVAR(enable_selfChestseal),
+    "LIST",
+    LLSTRING(SETTING_SELF_CHESTSEAL),
     CBA_SETTINGS_CAT,
-    [0, 95, 85, 0],
+    [[0, 1], ["STR_ACE_common_No", "STR_ACE_common_Yes"], 1],
     true
 ] call CBA_Settings_fnc_init;
 

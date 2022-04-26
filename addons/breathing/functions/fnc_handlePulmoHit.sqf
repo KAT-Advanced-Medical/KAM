@@ -19,10 +19,10 @@
 params ["_unit", "_bodyPart", "_damage", "", "_ammo",""];
 
 if !(GVAR(enable)) exitWith {};
-if (GVAR(pneumothorax) == 0) exitWith {};
 if !(_bodyPart isEqualTo "Body") exitWith {};
-if (_damage < GVAR(pneumothoraxDamageThreshold)) exitWith {};
 if !(_ammo isKindOF "BulletBase") exitWith {};
+if (_damage < GVAR(pneumothoraxDamageThreshold)) exitWith {};
+if (GVAR(pneumothorax) == 0) exitWith {};
 
 if (random 100 <= GVAR(pneumothorax)) then {
     // add breathing sound

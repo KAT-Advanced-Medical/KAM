@@ -37,8 +37,6 @@ private _actions = [];
                     private _vector = getArray (configFile >> "CfgVehicles" >> typeOf (_parameter select 0) >> "stretcherVector");
                     _target attachTo [(_parameter select 0), _pos];
                     _target setVectorDirAndUp _vector;
-                    diag_log _target;
-                    diag_log _parameter;
                 },
                 {true},
                 {},

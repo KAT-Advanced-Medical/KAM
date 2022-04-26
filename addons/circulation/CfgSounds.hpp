@@ -15,9 +15,4 @@ class CfgSounds {
         sound[] = {QPATHTOF_SOUND(sounds\noshock.wav), db + 2, 1, 15};
         titles[]    = {};
     };
-    class GVAR(TakePainKiller) {
-        name = QGVAR(TakePainKiller);
-        sound[] = {QPATHTOF_SOUND(sounds\take_painkillers.wav), db + 2, 1, 15};
-        titles[]    = {};
-    };
 };
