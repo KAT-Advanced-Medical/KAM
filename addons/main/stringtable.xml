@@ -4,13 +4,14 @@
         <Key ID="STR_kat_main_URL">
             <English>https://github.com/Tomcat-SG/KAM</English>
             <German>https://github.com/Tomcat-SG/KAM</German>
-	    <Spanish>https://github.com/Tomcat-SG/KAM</Spanish>
-	    <Chinese>https://github.com/Tomcat-SG/KAM</Chinese>
+            <Spanish>https://github.com/Tomcat-SG/KAM</Spanish>
+            <Chinese>https://github.com/Tomcat-SG/KAM</Chinese>
             <Turkish>https://github.com/Tomcat-SG/KAM</Turkish>
             <Korean>https://github.com/Tomcat-SG/KAM</Korean>
             <Polish>https://github.com/Tomcat-SG/KAM</Polish>
             <French>https://github.com/Tomcat-SG/KAM</French>
             <Czech>https://github.com/Tomcat-SG/KAM</Czech>
+            <Russian>https://github.com/Tomcat-SG/KAM</Russian>
         </Key>
     </Package>
 </Project>

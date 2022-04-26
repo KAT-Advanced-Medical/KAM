@@ -12,6 +12,7 @@
             <French>Ace-Circulation activé?</French>
             <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
             <Italian>Attivare ACE-Circolazione?</Italian>
+            <Russian>ACE-циркуляция активирована?</Russian>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_variableHR_ENABLE">
             <English>Metabolism Dependent heartrate?</English>
@@ -24,6 +25,7 @@
             <French>Le pouls dépend du métabolisme?</French>
             <Turkish>Metabolizmaya Bağımlı kalp hızı?</Turkish>
             <Italian>La frequenza cardiaca dipende dal metabolismo?</Italian>
+            <Russian>Метаболизм Зависимый сердечный ритм?</Russian>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_loadout">
             <English>Different loadoutname</English>
@@ -36,6 +38,7 @@
             <French>Nom d'équipement différent</French>
             <Turkish>Farklı ekipman adı</Turkish>
             <Italian>Loadoutname diverso</Italian>
+            <Russian>Другое Лоадут имя</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O">
             <English>Blood IV (1000ml) BT: 0</English>
@@ -48,6 +51,7 @@
             <French>Sang IV (1000ml) GS: O</French>
             <Turkish>Kan IV (1000ml) KG: 0</Turkish>
             <Italian>Sangue EV (1000ml) GS: 0</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : 0</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A">
             <English>Blood IV (1000ml) BT: A</English>
@@ -60,6 +64,7 @@
             <French>Sang IV (1000ml) GS: A</French>
             <Turkish>Kan IV (1000ml) KG: A</Turkish>
             <Italian>Sangue EV (1000ml) GS: A</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : А</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B">
             <English>Blood IV (1000ml) BT: B</English>
@@ -72,6 +77,7 @@
             <French>Sang IV (1000ml) GS: B</French>
             <Turkish>Kan IV (1000ml) KG: B</Turkish>
             <Italian>Sangue EV (1000ml) GS: B</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : В</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB">
             <English>Blood IV (1000ml) BT: AB</English>
@@ -84,6 +90,7 @@
             <French>Sang IV (1000ml) GS: AB</French>
             <Turkish>Kan IV (1000ml) KG: AB</Turkish>
             <Italian>Sangue EV (1000ml) GS: AB</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : АВ </Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_500">
             <English>Blood IV (500ml) BT: 0</English>
@@ -96,6 +103,7 @@
             <French>Sang IV (500ml) GS: O</French>
             <Turkish>Kan IV (500ml) KG: 0</Turkish>
             <Italian>Sangue EV (500ml) GS: 0</Italian>
+            <Russian>Кровь IV (500 мл) Гk : 0</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_500">
             <English>Blood IV (500ml) BT: A</English>
@@ -108,6 +116,7 @@
             <French>Sang IV (500ml) GS: A</French>
             <Turkish>Kan IV (500ml) KG: A</Turkish>
             <Italian>Sangue EV (500ml) GS: A</Italian>
+            <Russian>Кровь IV (500 мл) Гk : А</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_500">
             <English>Blood IV (500ml) BT: B</English>
@@ -120,6 +129,7 @@
             <French>Sang IV (500ml) GS: B</French>
             <Turkish>Kan IV (500ml) KG: B</Turkish>
             <Italian>Sangue EV (500ml) GS: B</Italian>
+            <Russian>Кровь IV (500 мл) Гk : В</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_500">
             <English>Blood IV (500ml) BT: AB</English>
@@ -132,6 +142,7 @@
             <French>Sang IV (500ml) GS: AB</French>
             <Turkish>Kan IV (500ml) KG: AB</Turkish>
             <Italian>Sangue EV (500ml) GS: AB</Italian>
+            <Russian>Кровь IV (500 мл) Гk : АВ </Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_250">
             <English>Blood IV (250ml) BT: 0</English>
@@ -144,6 +155,7 @@
             <French>Sang IV (250ml) GS: O</French>
             <Turkish>Kan IV (250ml) KG: 0</Turkish>
             <Italian>Sangue EV (250ml) GS: 0</Italian>
+            <Russian>Кровь IV (250 мл) Гk : 0</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_250">
             <English>Blood IV (250ml) BT: A</English>
@@ -156,6 +168,7 @@
             <French>Sang IV (250ml) GS: A</French>
             <Turkish>Kan IV (250ml) KG: A</Turkish>
             <Italian>Sangue EV (250ml) GS: A</Italian>
+            <Russian>Кровь IV (250 мл) Гk : А</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_250">
             <English>Blood IV (250ml) BT: B</English>
@@ -168,6 +181,7 @@
             <French>Sang IV (250ml) GS: B</French>
             <Turkish>Kan IV (250ml) KG: B</Turkish>
             <Italian>Sangue EV (250ml) GS: B</Italian>
+            <Russian>Кровь IV (250 мл) Гk : В</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_250">
             <English>Blood IV (250ml) BT: AB</English>
@@ -180,6 +194,7 @@
             <French>Sang IV (250ml) GS: AB</French>
             <Turkish>Kan IV (250ml) KG: AB</Turkish>
             <Italian>Sangue EV (250ml) GS: AB</Italian>
+            <Russian>Кровь IV (250 мл) Гk : АВ </Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_O">
             <English>Give Blood IV (1000ml) BT: 0</English>
@@ -192,6 +207,7 @@
             <French>Transfusion de sang IV (1000ml) GS: O</French>
             <Turkish>Kan IV (1000ml) KG: 0 Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: 0</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : 0</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_A">
             <English>Give Blood IV (1000ml) BT: A</English>
@@ -204,6 +220,7 @@
             <French>Transfusion de sang IV (1000ml) GS: A</French>
             <Turkish>Kan IV (1000ml) KG: A Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: A</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : А</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_B">
             <English>Give Blood IV (1000ml) BT: B</English>
@@ -216,6 +233,7 @@
             <French>Transfusion de sang IV (1000ml) GS: B</French>
             <Turkish>Kan IV (1000ml) KG: B Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: B</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : В</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_AB">
             <English>Give Blood IV (1000ml) BT: AB</English>
@@ -228,6 +246,7 @@
             <French>Transfusion de sang IV (1000ml) GS: AB</French>
             <Turkish>Kan IV (1000ml) KG: AB Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: AB</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : АВ</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_O">
             <English>Give Blood IV (500ml) BT: 0</English>
@@ -240,6 +259,7 @@
             <French>Transfusion de sang IV (500ml) GS: O</French>
             <Turkish>Kan IV (500ml) KG: 0 Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: 0</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : 0</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_A">
             <English>Give Blood IV (500ml) BT: A</English>
@@ -252,6 +272,7 @@
             <French>Transfusion de sang IV (500ml) GS: A</French>
             <Turkish>Kan IV (500ml) KG: A Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: A</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : А</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_B">
             <English>Give Blood IV (500ml) BT: B</English>
@@ -264,6 +285,7 @@
             <French>Transfusion de sang IV (500ml) GS: B</French>
             <Turkish>Kan IV (500ml) KG: B Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: B</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : В</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_AB">
             <English>Give Blood IV (500ml) BT: AB</English>
@@ -276,6 +298,7 @@
             <French>Transfusion de sang IV (500ml) GS: AB</French>
             <Turkish>Kan IV (500ml) KG: AB Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: AB</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : АВ</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_O">
             <English>Give Blood IV (250ml) BT: 0</English>
@@ -288,6 +311,7 @@
             <French>Transfusion de sang IV (250ml) GS: O</French>
             <Turkish>Kan IV (250ml) KG: 0 Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: 0</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : 0</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_A">
             <English>Give Blood IV (250ml) BT: A</English>
@@ -300,6 +324,7 @@
             <French>Transfusion de sang IV (250ml) GS: A</French>
             <Turkish>Kan IV (250ml) KG: A Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: A</Italian>
+            <Russian>Переливание крови IV (200 мл) Гk : А</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_B">
             <English>Give Blood IV (250ml) BT: B</English>
@@ -312,6 +337,7 @@
             <French>Transfusion de sang IV (250ml) GS: B</French>
             <Turkish>Kan IV (250ml) KG: B Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: B</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : В</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_AB">
             <English>Give Blood IV (250ml) BT: AB</English>
@@ -324,6 +350,7 @@
             <French>Transfusion de sang IV (250ml) GS: AB</French>
             <Turkish>Kan IV (250ml) KG: AB Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: AB</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : АВ</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_DescShort">
             <English>Used to suppress pain</English>
@@ -336,6 +363,7 @@
             <French>Utilisé pour diminuer la douleur</French>
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Usato per sopprimere il dolore</Italian>
+            <Russian>Используется для подавления боли</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_DescUse">
             <English>An analgesic used to combat light to moderate pain experiences.</English>
@@ -348,7 +376,7 @@
             <French>Un analgésique utilisé pour diminuer la douleur.</French>
             <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
             <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
-
+            <Russian>Анальгетик, используемый для борьбы с легкими и умеренными болями.</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_Box_Display">
             <English>Painkillers</English>
@@ -361,6 +389,7 @@
             <French>Analgésiques</French>
             <Turkish>Ağrı Kesiciler</Turkish>
             <Italian>Antidolorifici</Italian>
+            <Russian>Обезболивающие</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Inject_Box_Painkillers">
             <English>Take Painkillers</English>
@@ -373,6 +402,7 @@
             <French>Prendre des analgésiques</French>
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Prendi antidolorifici</Italian>
+            <Russian>Принимайте обезболивающие</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Using">
             <English>Using</English>
@@ -385,6 +415,7 @@
             <French>Utilisation</French>
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Usando</Italian>
+            <Russian>С использованием</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag">
             <English>Check Dogtags</English>
@@ -397,6 +428,7 @@
             <French>Vérifier la plaque d'identification</French>
             <Turkish>Künyeyi Kontrol Et</Turkish>
             <Italian>Controlla piastrine</Italian>
+            <Russian>Проверка Солдатский жетон</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag_Action">
             <English>Checking</English>
@@ -409,6 +441,7 @@
             <French>Vérification</French>
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Controllando</Italian>
+            <Russian>Проверка</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_X_already">
             <English>Already one connected</English>
@@ -421,6 +454,7 @@
             <French>Un déjà connecté</French>
             <Turkish>Zaten bağlandı</Turkish>
             <Italian>Già uno collegato</Italian>
+            <Russian>Уже один подключен</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_X_Display">
             <English>AED X-Series</English>
@@ -433,6 +467,7 @@
             <French>AED X-Series</French>
             <Turkish>AED X-Serisi</Turkish>
             <Italian>DAE Serie X</Italian>
+            <Russian>AED серии X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_X_Desc">
             <English>Used to monitor vital values and to resuscitate persons</English>
@@ -445,6 +480,7 @@
             <French>Utilisé pour monitorer les constantes vitales et ressusciter les patients</French>
             <Turkish>Hayati değerleri izlemek ve kişileri canlandırmak için kullanılır</Turkish>
             <Italian>Usato per monitorare i parametri vitali e rianimare i pazienti</Italian>
+            <Russian>Используется для мониторинга жизненных показателей и реанимации людей.</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Use">
             <English>Monitor vitals</English>
@@ -457,6 +493,7 @@
             <French>Monitorer les constantes vitales</French>
             <Turkish>Monitor vitals</Turkish>
             <Italian>Monitorare parametri vitali</Italian>
+            <Russian>Мониторинг основных показателей</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Defib_Action_Use">
             <English>Use AED defibrillator</English>
@@ -469,6 +506,7 @@
             <French>Utiliser le défibrillateur AED</French>
             <Turkish>AED defibrilatör kullanın</Turkish>
             <Italian>Usare il defibrillatore DAE</Italian>
+            <Russian>Используйте дефибриллятор AED</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_DefibS_Action_Use">
             <English>Use AED Station</English>
@@ -481,6 +519,7 @@
             <French>Utiliser la station AED</French>
             <Turkish>AED İstasyonunu Kullanın</Turkish>
             <Italian>Usare la stazione DAE</Italian>
+            <Russian>Использовать станцию AED</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_AED_PROGRESS">
             <English>Using the defibrillator...</English>
@@ -493,6 +532,7 @@
             <French>Utilisation du défibrillateur...</French>
             <Turkish>Defibrilatör kullanılıyor...</Turkish>
             <Italian>Usando il defibrillatore...</Italian>
+            <Russian>Использование дефибриллятора...</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_Action_Use">
             <English>Use AED-X defibrillator</English>
@@ -505,6 +545,7 @@
             <French>Utiliser le défibrillateur AED-X</French>
             <Turkish>AED-X defibrilatör kullan</Turkish>
             <Italian>Usare il defibrillatore DAE-X</Italian>
+            <Russian>Используйте дефибриллятор AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Remove">
             <English>Remove monitoring</English>
@@ -517,6 +558,7 @@
             <French>Retirer le moniteur</French>
             <Turkish>İzlemeyi kaldır</Turkish>
             <Italian>Rimuovere il monitoraggio</Italian>
+            <Russian>Удалить мониторинг</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_Action_Progress">
             <English>Using AED-X defibrillator</English>
@@ -529,6 +571,7 @@
             <French>Utilisation du défibrillateur AED-X</French>
             <Turkish>AED-X defibrilatörü kullanılıyor</Turkish>
             <Italian>Usando il defibrillatore DAE-X</Italian>
+            <Russian>Использование дефибриллятора AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Progress">
             <English>Connecting</English>
@@ -541,6 +584,7 @@
             <French>Connexion</French>
             <Turkish>Bağlanıyor</Turkish>
             <Italian>Collegando</Italian>
+            <Russian>Подключения</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_X_Remove_Action_Progress">
             <English>Disconnecting</English>
@@ -553,6 +597,7 @@
             <French>Déconnexion</French>
             <Turkish>Bağlantı Kesiliyor</Turkish>
             <Italian>Scollegando</Italian>
+            <Russian>Отключение</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_removeSound">
             <English>Turn down volume of AED X</English>
@@ -565,6 +610,7 @@
             <French>Réduire le volume du AED-X</French>
             <Turkish>AED X'in sesini kısın</Turkish>
             <Italian>Ridurre il volume del DAE-X</Italian>
+            <Russian>Уменьшите громкость AED X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_addSound">
             <English>Turn up volume of AED X</English>
@@ -577,6 +623,7 @@
             <French>Augmenter le volume du AED-X</French>
             <Turkish>AED X'in sesini arttırın</Turkish>
             <Italian>Aumentare il volume del DAE-X</Italian>
+            <Russian>Увеличьте громкость AED X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_Pain_empty">
             <English>%1 is now empty</English>
@@ -589,6 +636,7 @@
             <French>%1 est maintenant vide</French>
             <Turkish>% 1 artık boş</Turkish>
             <Italian>è vuota</Italian>
+            <Russian>%1 сейчас пуст</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_bloodbank">
             <English>Medical Blood bank</English>
@@ -601,6 +649,7 @@
             <French>Réserve médicale de sang</French>
             <Turkish>Tıbbi Kan bankası</Turkish>
             <Italian>Banca del sangue</Italian>
+            <Russian>Банк медицинской крови</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_open_crosspanel">
             <English>Open blood groups cheat sheet</English>
@@ -613,6 +662,7 @@
             <French>Ouvrir la fiche d'indication des groupes sanguins</French>
             <Turkish>Kan Grubu Tablosunu Açın</Turkish>
             <Italian>Apri tavola dei gruppi sanguigni</Italian>
+            <Russian>Открытая шпаргалка по группам крови</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_place_AED">
             <English>Place AED</English>
@@ -625,6 +675,7 @@
             <French>Placer l'AED</French>
             <Turkish>AED'yi yerleştirin</Turkish>
             <Italian>Posizionare DEA</Italian>
+            <Russian>Поместите AED</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_PickUpAction">
             <English>Pickup AED</English>
@@ -637,6 +688,7 @@
             <French>Ramasser l'AED</French>
             <Turkish>AED'yi Alın</Turkish>
             <Italian>Raccogliere DEA</Italian>
+            <Russian>Самовывоз AED</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -649,6 +701,7 @@
             <French>Fiche d'indication des groupes sanguins</French>
             <Turkish>Kan Grubu Tablosu</Turkish>
             <Italian>Tavola dei gruppi sanguigni</Italian>
+            <Russian>Шпаргалка по группам крови</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_desc_crosspanel">
             <English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
@@ -661,6 +714,7 @@
             <French>Une mauvaise combinaison sanguine du donneur et du receveur peut avoir des conséquences mortelles</French>
             <Turkish>Verici ve alıcı kanının yanlış bir kombinasyonu ölümcül sonuçlara bile yol açabilir.</Turkish>
             <Italian>Un'errata combinazione tra sangue del donatore e del ricevente può portare a conseguenza mortali.</Italian>
+            <Russian>Неправильное сочетание донорской и реципиентной крови может иметь смертельные последствия.</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_client_bt">
             <English>Blood type</English>
@@ -673,6 +727,7 @@
             <French>Groupe sanguin</French>
             <Turkish>Kan Grubu</Turkish>
             <Italian>Gruppo sanguigno</Italian>
+            <Russian>Группа крови</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -685,6 +740,7 @@
             <French>Lieux de l'AED</French>
             <Turkish>AED Konumları</Turkish>
             <Italian>Posizione del DEA</Italian>
+            <Russian>Места для AED</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_LOCATION_AED_DESCRIPTION">
             <English>Where can the AED be used?</English>
@@ -697,6 +753,7 @@
             <French>Où l'AED peut être utilisé</French>
             <Turkish>AED nerede kullanılabilir?</Turkish>
             <Italian>Dove può essere utilizzato il DEA</Italian>
+            <Russian>Где можно использовать AED?</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_AED_DISPLAYNAME">
             <English>Automated External Defibrillator</English>
@@ -709,6 +766,7 @@
             <French>Défibrillateur Automatisé Externe</French>
             <Turkish>Otomatik eksternal defibrilatör</Turkish>
             <Italian>Defibrillatore Automatico Esterno</Italian>
+            <Russian>Автоматический внешний дефибриллятор (AED)</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_AED_DESCRIPTION">
             <English>Use to resuscitate player</English>
@@ -721,6 +779,7 @@
             <French>Utilisé pour ressusciter un joueur</French>
             <Turkish>Oyuncuyu canlandırmak için kullanın</Turkish>
             <Italian>Utilizzato per resuscitare un giocatore</Italian>
+            <Russian>Используйте, чтобы реанимировать игрока</Russian>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AED">
             <English>%1 performed AED</English>
@@ -733,6 +792,7 @@
             <French>%1 a utilisé un AED</French>
             <Turkish>%1 AED gerçekleştirdi</Turkish>
             <Italian>ha utilizzato un DEA</Italian>
+            <Russian>%1 выполнил AED </Russian>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDS">
             <English>%1 performed AED Station</English>
@@ -745,6 +805,7 @@
             <French>%1 a utilisé une station AED</French>
             <Turkish>%1 gerçekleştirilen AED İstasyonu</Turkish>
             <Italian>ha utilizzato una stazione DEA</Italian>
+            <Russian>%1 выполнена станция AED</Russian>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDX">
             <English>%1 performed AED-X</English>
@@ -757,9 +818,10 @@
             <French>%1 a utilisé un AED-X</French>
             <Turkish>% 1 AED-X gerçekleştirdi</Turkish>
             <Italian>ha utilizzato un DEA-X</Italian>
+            <Russian>%1 выполнил AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED_X">
-            <English>Succes chance for AED-X</English>
+            <English>Success chance for AED-X</English>
             <Polish>Szansa na udaną defybrilację dla AED-X</Polish>
             <German>Erfolgsrate für AED-X</German>
             <Spanish>Posibilidad de éxito para AED-X</Spanish>
@@ -769,9 +831,10 @@
             <French>Chances de succès pour l'AED-X</French>
             <Turkish>AED-X için başarı şansı</Turkish>
             <Italian>Probabilità di successo del DEA-X</Italian>
+            <Russian>Шанс на успех для AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED">
-            <English>Succes chance for AED</English>
+            <English>Success chance for AED</English>
             <Polish>Szansa na udaną defybrilację dla AED</Polish>
             <German>Erfolgsrate für AED</German>
             <Spanish>Posibilidad de éxito para AED</Spanish>
@@ -781,6 +844,7 @@
             <French>Chances de succès pour l'AED</French>
             <Turkish>AED için başarı şansı</Turkish>
             <Italian>Probabilità di successo del DEA</Italian>
+            <Russian>Шанс успеха для AED</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED">
             <English>Allow AED</English>
@@ -793,6 +857,7 @@
             <French>Autoriser l'AED</French>
             <Turkish>AED'e izin ver</Turkish>
             <Italian>Permetti il DEA</Italian>
+            <Russian>Разрешить AED</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_TRAINING_LEVEL_AED">
             <English>Training level required to use an AED</English>
@@ -805,6 +870,7 @@
             <French>Niveau de d'entrainement pour utiliser un AED</French>
             <Turkish>AED kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per usare il DEA</Italian>
+            <Russian>Уровень подготовки, необходимый для использования AED</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED_X">
             <English>Allow AED-X</English>
@@ -817,6 +883,7 @@
             <French>Autoriser l'AED-X</French>
             <Turkish>AED-X'e izin ver</Turkish>
             <Italian>Permetti il DEA-X</Italian>
+            <Russian>Разрешить AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
@@ -829,6 +896,7 @@
             <French>Niveau de d'entrainement pour utiliser un AED-X</French>
             <Turkish>AED-X kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per usare il DEA-X</Italian>
+            <Russian>Уровень подготовки, необходимый для использования AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_DISTANCELIMIT_AED_X">
             <English>Distance limit for AED-X in meters</English>
@@ -841,6 +909,7 @@
             <French>Distance maximum en mètres pour l'AED-X</French>
             <Turkish>Metre cinsinden AED-X için mesafe sınırı</Turkish>
             <Italian>Distanza massima in metri per il DEA-X</Italian>
+            <Russian>Ограничение расстояния для AED-X в метрах</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_TIMELIMIT_AED_X">
             <English>Time limit for monitor of AED-X in seconds</English>
@@ -853,6 +922,7 @@
             <French>Limite de temps pour monitorer l'AED-X en secondes</French>
             <Turkish>AED-X'in saniye cinsinden izlenmesi için zaman sınırı</Turkish>
             <Italian>Limite di tempo in secondi per il monitoraggio del DEA-X</Italian>
+            <Russian>Ограничение времени для монитора AED-X в секундах</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_DEACTIVATE_MONITOR_WHILEAED_X">
             <English>Deactivate Monitor while using AED-X</English>
@@ -865,6 +935,7 @@
             <French>Désactiver le moniteur pendant l'utilisation de l'AED-X</French>
             <Turkish>AED-X kullanırken Monitörü devre dışı bırakın</Turkish>
             <Italian>Disattivare il monitoraggio durante l'utilizzo del DEA-X</Italian>
+            <Russian>Деактивируйте монитор при использовании AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -877,6 +948,7 @@
             <French>Activer différentes chances de réussite de RCP par niveau médical </French>
             <Turkish>Tıbbi eğitim seviyesi başına farklı CPR şansı sağlayın</Turkish>
             <Italian>Attivare diverse possibilità di riuscita della RCP per livello medico</Italian>
+            <Russian>Включить разные шансы СЛР для каждого медицинского уровня</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DOCTOR">
             <English>CPR Chance for Doctors</English>
@@ -889,6 +961,7 @@
             <French>Chances de RCP pour les Docteurs</French>
             <Turkish>Doktorlar için CPR Şansı</Turkish>
             <Italian>Probabilità di RCP per i dottori</Italian>
+            <Russian>Шанс СЛР для врачей</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_REGULARMEDIC">
             <English>CPR Chance for Regular medics</English>
@@ -901,6 +974,7 @@
             <French>Chances de RCP pour les médecins</French>
             <Turkish>İlk yardım uzmanları için CPR Şansı</Turkish>
             <Italian>Probabilità di RCP per i medici</Italian>
+            <Russian>Шанс СЛР для обычных медиков</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DEFAULT">
             <English>CPR Chance for Default</English>
@@ -913,6 +987,7 @@
             <French>Chances de RCP par défaut</French>
             <Turkish>Varsayılan CPR Şansı</Turkish>
             <Italian>Probabilità di RCP per default</Italian>
+            <Russian>Шанс СЛР по умолчанию</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -925,6 +1000,7 @@
             <French>Kit de transfusion sanguine de terrain (500 ml) </French>
             <Turkish>Saha Kan Transfüzyon Kiti (500ml) </Turkish>
             <Italian>Kit per trasfusione di sangue da campo (500 ml) </Italian>
+            <Russian>Полевой набор для переливания крови (500 мл)</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK250_Display">
             <English>Field Blood Transfusion Kit (250ml)</English>
@@ -937,6 +1013,7 @@
             <French>Kit de transfusion sanguine de terrain (250 ml) </French>
             <Turkish>Saha Kan Transfüzyon Kiti (250ml) </Turkish>
             <Italian>Kit per trasfusione di sangue da campo (250 ml) </Italian>
+            <Russian>Полевой набор для переливания крови (250 мл)</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK_Desc">
             <English>Allows you to draw blood and use it</English>
@@ -949,6 +1026,7 @@
             <French>Permet de prélever du sang et de l'utiliser </French>
             <Turkish>Kan almanızı ve kullanmanızı sağlar </Turkish>
             <Italian>Ti permette di prelevare il sangue e usarlo </Italian>
+            <Russian>Позволяет брать кровь и использовать ее</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_DrawBlood500_Action_Use">
             <English>Draw Blood (500ml)</English>
@@ -961,6 +1039,7 @@
             <French>Prélèvement de sang (500 ml) </French>
             <Turkish>Kan Al (500ml) </Turkish>
             <Italian>Disegna sangue (500 ml) </Italian>
+            <Russian>Взять кровь (500 мл)</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_DrawBlood250_Action_Use">
             <English>Draw Blood (250ml)</English>
@@ -973,6 +1052,7 @@
             <French>Prélèvement de sang (250 ml) </French>
             <Turkish>Kan Al (250ml) </Turkish>
             <Italian>Disegna sangue (250 ml) </Italian>
+            <Russian>Взять кровь (250 мл)</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>
@@ -985,9 +1065,12 @@
             <French>Prélèvement de sang </French>
             <Turkish>Kan Alma </Turkish>
             <Italian>Prelevare sangue</Italian>
+            <Russian>Рисование крови</Russian>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_DRAW_BLOODGROUPS">
-            <English>Use Bloodgroups for drawing blood?</English>
+            <English>Use Blood Groups for drawing blood?</English>
+            <German>Verwenden der Blutgruppen für die Blutentnahme?</German>
+            <Russian>Использовать группы крови для забора крови?</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_SELF_BLOOD_DRAW">
             <English>Enable self blood draw</English>
@@ -1000,6 +1083,7 @@
             <French>Activer l'auto-prélèvement de sang </French>
             <Turkish>Kendi kendine kan alımını etkinleştir </Turkish>
             <Italian>Abilita l'autoprelievo di sangue </Italian>
+            <Russian>Включить самостоятельное взятие крови</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_BLOOD_DRAWTIME_500ML">
             <English>Drawing time for 500ml Kit</English>
@@ -1012,6 +1096,7 @@
             <French>Temps de dessin pour le kit 500ml </French>
             <Turkish>500ml Kit için çizim süresi </Turkish>
             <Italian>Tempo di disegno per Kit 500ml </Italian>
+            <Russian>Время нанесения для набора 500 мл</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_BLOOD_DRAWTIME_250ML">
             <English>Drawing time for 250ml Kit</English>
@@ -1024,12 +1109,17 @@
             <French>Temps de dessin pour le kit 250ml </French>
             <Turkish>250ml Kit için çizim süresi </Turkish>
             <Italian>Tempo di disegno per Kit 250ml </Italian>
+            <Russian>Время нанесения для набора 250 мл</Russian>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW">
             <English>Minimum blood volume for donor (liters)</English>
+            <German>Mindestblutvolumen für Spender (Liter)</German>
+            <Russian>Минимальный объем крови для донора (литры)</Russian>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW_DESC">
             <English>Minimum volume of blood allowed to drain a donor to, to ignore this setting set to 0</English>
+            <German>Minimales Blutvolumen, das einem Spender entnommen werden darf. Um diese Einstellung zu ignorieren, setzen sie auf 0.</German>
+            <Russian>Минимальный объем крови, разрешенный для слива донора, чтобы игнорировать этот параметр, установленный на 0</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge">
             <English>AED Beep and Charge sound</English>
@@ -1042,6 +1132,7 @@
             <French>Bip AED et son de charge </French>
             <Turkish>AED Bip ve Şarj sesi </Turkish>
             <Italian>Segnale acustico AED e suono di carica </Italian>
+            <Russian>Звуковой сигнал AED и звук зарядки</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge_DESC">
             <English>Enables Beep and Charge sound for AED/AED-X</English>
@@ -1054,6 +1145,7 @@
             <French>Active le bip et le son de charge pour AED/AED-X </French>
             <Turkish>AED/AED-X için Bip ve Şarj sesini etkinleştirir </Turkish>
             <Italian>Abilita il segnale acustico e il suono di carica per AED/AED-X </Italian>
+            <Russian>Включает звуковой сигнал и звук зарядки для AED/AED-X</Russian>
         </Key>
     </Package>
 </Project>
