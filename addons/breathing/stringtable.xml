@@ -809,8 +809,8 @@
             <Polish>Poziom SpO2 dla ciężkiej sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_severeValue_DESC">
-            <English>Severe cyanosis value - default 66 SpO2</English>
-            <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2</Polish>
+            <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
+            <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
         </Key>
     </Package>
 </Project>
