@@ -62,6 +62,8 @@ _unit setVariable ["kat_pharma_usedIV", "", true];
 _unit setVariable ["kat_pharma_IV_counts", 0, true];
 _unit setVariable ["kat_pharma_IVsite", 0, true];
 _unit setVariable ["kat_pharma_ondUse", false, true];
+_unit setVariable ["kat_pharma_active", false, true];
+_unit setVariable ["kat_IVPharma_PFH", nil];
 
 
 // Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten

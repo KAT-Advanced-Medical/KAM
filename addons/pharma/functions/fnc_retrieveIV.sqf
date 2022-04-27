@@ -30,6 +30,8 @@ if (GVAR(IVreuse)) then {
 
 _patient setVariable [QGVAR(IVplaced), false, true];
 _patient setVariable [QGVAR(IVsite), 0, true];
+_patient setVariable [QGVAR(active), false, true];
+_patient setVariable ["kat_IVPharma_PFH", nil];
 
 private _totalIvVolume = 0;
 private _saline = 0;
