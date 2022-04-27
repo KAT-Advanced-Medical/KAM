@@ -147,7 +147,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(CheckCyanosis_Name);
         displayNameProgress = CSTRING(CheckCyanosis_Progress);
         treatmentTime = 3;
-        allowedSelections[] = {"Head"};
+        allowedSelections[] = {"Head", "LeftArm", "RightArm"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Cyanosis);
         condition = QGVAR(enableCyanosis);
