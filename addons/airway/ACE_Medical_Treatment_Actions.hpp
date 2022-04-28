@@ -69,6 +69,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Body"};
         medicRequired = 0;
         items[] = {};
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && ([_patient] getVariable [ARR_2(QQGVAR(occluded),true)]));
 		icon = "";
         callbackSuccess = QFUNC(RecoveryPositionLocal);
     };

@@ -18,7 +18,7 @@
 params ["_unit"];
 
 if !(GVAR(enable)) exitWith {};
-if GVAR(recoveryPosition) exitWith {};
+if !(_unit getVariable [QGVAR(recovery), false]) exitWith {};
 
 if (_unit getVariable ["kat_pukeActive_PFH", false]) exitWith {};
 _unit setVariable ["kat_pukeActive_PFH", true];

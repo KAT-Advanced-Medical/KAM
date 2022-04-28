@@ -10,6 +10,8 @@ PREP(treatmentAdvanced_AccuvacLocal);
 PREP(treatmentAdvanced_airway);
 PREP(treatmentAdvanced_airwayLocal);
 PREP(treatmentAdvanced_overstretchHead);
+PREP(treatmentAdvanced_RecoveryPosition);
+PREP(treatmentAdvanced_RecoveryPositionLocal);
 PREP(treatmentAdvanced_turnaroundHead);
 PREP(updateInjuryList);
 PREP(updateLogList);
