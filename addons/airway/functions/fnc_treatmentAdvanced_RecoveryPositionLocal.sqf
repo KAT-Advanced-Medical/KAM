@@ -30,9 +30,11 @@ _target setVariable [QGVAR(overstretch), true, true];
 private _output = localize LSTRING(Recovery_Info);
 [_output, 2, _player] call ace_common_fnc_displayTextStructured;
 
+[_target, "activity", LSTRING(RecoveryPosition_Log), [[_player] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+
 [{
     params ["_player", "_target"];
-    (_target call ace_medical_status_fnc_isBeingDragged) || (_target call ace_medical_status_fnc_isBeingCarried) || !(isNull objectParent _target);
+    (_target call ace_medical_status_fnc_isBeingDragged) || (_target call ace_medical_status_fnc_isBeingCarried);
 }, {
     params ["_player", "_target"];
     _target setVariable [QGVAR(recovery), false, true];

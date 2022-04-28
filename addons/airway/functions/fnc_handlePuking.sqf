@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
+ * Author: Katalam, edited by MiszczuZPolski
  * Called when a unit enters the unconscious state. Will add a FrameHandler for puking while unconscious.
  *
  * Arguments:
@@ -18,7 +18,9 @@
 params ["_unit"];
 
 if !(GVAR(enable)) exitWith {};
-if (_unit getVariable [QGVAR(recovery), false]) exitWith {};
+if (_unit getVariable [QGVAR(recovery), false]) then {
+     if (true) exitWith {};
+};
 
 if (_unit getVariable ["kat_pukeActive_PFH", false]) exitWith {};
 _unit setVariable ["kat_pukeActive_PFH", true];

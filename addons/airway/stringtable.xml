@@ -913,6 +913,9 @@
         <Key ID="STR_kat_airway_Recovery_Cancel">
             <English>Recovery Cancel</English>
         </Key>
+        </Key><Key ID="STR_kat_airway_RecoveryPosition_Log">
+            <English>%1 established recovery position</English>
+        </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY">
             <English>Recovery Time</English>
         </Key><Key ID="STR_kat_airway_TIME_RECOVERY">
