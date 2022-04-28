@@ -24,7 +24,8 @@ if (_target getVariable [QGVAR(recovery), false]) exitWith {
     false;
 };
 
-_target setVariable [GVAR(recovery), true, true];
+_target setVariable [QGVAR(recovery), true, true];
+_target setVariable [QGVAR(overstretch), true, true];
 
 private _output = localize LSTRING(Recovery_Info);
 [_output, 2, _player] call ace_common_fnc_displayTextStructured;
@@ -35,6 +36,7 @@ private _output = localize LSTRING(Recovery_Info);
 }, {
     params ["_player", "_target"];
     _target setVariable [QGVAR(recovery), false, true];
+    _target setVariable [QGVAR(overstretch), false, true];
     _output = localize LSTRING(Recovery_Cancel);
     [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 }] call CBA_fnc_waitUntilAndExecute;
