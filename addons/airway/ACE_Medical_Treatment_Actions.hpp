@@ -62,6 +62,16 @@ class ACE_Medical_Treatment_Actions {
 		icon = "";
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_turnaroundHead));
     };
+    class RecoveryPosition: larynxtubus {
+        displayName = CSTRING(RecoveryPosition);
+        displayNameProgress = CSTRING(RecoveryPosition_Action);
+        treatmentTime = QGVAR(RecoveryPosition_Time);
+        allowedSelections[] = {"Body"};
+        medicRequired = 0;
+        items[] = {};
+		icon = "";
+        callbackSuccess = QFUNC(RecoveryPositionLocal);
+    };
     class CheckPulse;
     class CheckAirway: checkPulse {
         displayName = CSTRING(checkAirway);
