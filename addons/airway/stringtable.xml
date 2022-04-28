@@ -913,5 +913,11 @@
         <Key ID="STR_kat_airway_Recovery_Cancel">
             <English>Recovery Cancel</English>
         </Key>
+        <Key ID="STR_kat_airway_TIME_RECOVERY">
+            <English>Recovery Time</English>
+        </Key><Key ID="STR_kat_airway_TIME_RECOVERY">
+            <English>Recovery Time Desc</English>
+        </Key>
+        
     </Package>
 </Project>
