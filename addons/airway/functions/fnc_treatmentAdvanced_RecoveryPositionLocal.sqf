@@ -26,6 +26,7 @@ if (_target getVariable [QGVAR(recovery), false]) exitWith {
 
 _target setVariable [QGVAR(recovery), true, true];
 _target setVariable [QGVAR(overstretch), true, true];
+_target setVariable ["KAT_medical_airwayOccluded", false, true];
 
 private _output = localize LSTRING(Recovery_Info);
 [_output, 2, _player] call ace_common_fnc_displayTextStructured;
