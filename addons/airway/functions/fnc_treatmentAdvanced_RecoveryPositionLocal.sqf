@@ -42,6 +42,12 @@ private _output = localize LSTRING(Recovery_Info);
     _patient setVariable [QGVAR(overstretch), false, true];
     _output = localize LSTRING(Recovery_Cancel);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+}, [_medic, _patient], 3600, {
+    params ["_medic","patient"];
+    _patient setVariable [QGVAR(recovery), false, true];
+    _patient setVariable [QGVAR(overstretch), false, true];
+    _output = localize LSTRING(Recovery_Cancel);
+    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 }] call CBA_fnc_waitUntilAndExecute;
 
 true;
