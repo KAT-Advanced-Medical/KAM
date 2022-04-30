@@ -69,10 +69,9 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         medicRequired = 0;
         items[] = {};
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (!(_patient getVariable [ARR_2(QQGVAR(airway_item,""))] isEqualTo "larynx") || !(_patient getVariable [ARR_2(QQGVAR(airway_item,""))] isEqualTo "guedel") ));
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
 		icon = "";
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_RecoveryPosition));
-        animationPatientUnconscious = "ace_medical_engine_uncon_anim_6_1";
     };
     class CheckPulse;
     class CheckAirway: checkPulse {

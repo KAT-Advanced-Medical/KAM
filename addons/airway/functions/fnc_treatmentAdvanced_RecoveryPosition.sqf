@@ -16,12 +16,12 @@
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["_medic", "_patient"];
 
-if (local _target) then {
-    ["treatmentRecoveryPosition", [_player, _target]] call CBA_fnc_localEvent;
+if (local _patient) then {
+    ["treatmentRecoveryPosition", [_medic, _patient]] call CBA_fnc_localEvent;
 } else {
-    ["treatmentRecoveryPosition", [_player, _target], _target] call CBA_fnc_targetEvent;
+    ["treatmentRecoveryPosition", [_medic, _patient], _patient] call CBA_fnc_patientEvent;
 };
 
 true;
