@@ -94,6 +94,8 @@ if (GVAR(IVdropEnable)) then {
 
                 _patient setVariable [QGVAR(IVplaced), false, true];
                 _patient setVariable [QGVAR(IVsite), 0, true];
+                _patient setVariable [QGVAR(active), false, true];
+                _patient setVariable ["kat_IVPharma_PFH", nil];
             };
         }, GVAR(IVdrop), [_patient]] call CBA_fnc_addPerFrameHandler;
 
