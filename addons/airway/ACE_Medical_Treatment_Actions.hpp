@@ -69,7 +69,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         medicRequired = 0;
         items[] = {};
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
+        condition = QUOTE((!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)])) && FUNC(checkRecovery));
 		icon = "";
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_RecoveryPosition));
     };
