@@ -6,7 +6,7 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_CAT "ACE Pharmacy"
+#define CBA_SETTINGS_CAT "KAT - ADV Medical: Pharmacy"
 
 //Activate Naloxone
 [
