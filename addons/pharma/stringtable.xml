@@ -937,7 +937,7 @@
             <Czech>Výchozí povoleno. Pokud je povoleno, budete muset nejprve vložit IV/IO, než budete moci někomu podat fyziologický roztok/krev/plazmu.\n Pokud je zakázano, zachová standardní chování ACE pro použití fyziologického roztoku/krve/plazmy.</Czech>
             <Japanese>KATデフォルトではtrueです。trueの場合、輸液を行う前にIV/IOを挿管する必要があります。\nfalseの場合はACEデフォルトの動作を保持します。つまり、生理食塩水/血液/血しょうパックだけで輸液可能になります。</Japanese>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap">
+        <Key ID="STR_KAT_pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
             <Polish>Dźwięk przy cuceniu</Polish>
             <German>Slap-Sound für Umorientieren</German>
@@ -950,7 +950,7 @@
             <Italian>Suono schiaffo stimolazione</Italian>
             <Japanese>刺激時に音を鳴らす</Japanese>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Slap_DESC">
+        <Key ID="STR_KAT_pharma_SETTING_Reorientation_Slap_DESC">
             <English>Enables slap sound for reorientation</English>
             <Polish>Włącza dźwięk uderzenia przy cuceniu</Polish>
             <German>Aktiviert Slap-Sound für Umorientieren</German>
@@ -963,7 +963,7 @@
             <Italian>Abilita il suono dello schiaffo per la stimolazione</Italian>
             <Japanese>患者に刺激を与える際にビンタの音を鳴らします</Japanese>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable">
+        <Key ID="STR_KAT_pharma_SETTING_Reorientation_Enable">
             <English>Reorientation enabled?</English>
             <Polish>Cucenie dostępne?</Polish>
             <German>Umorientieren aktiviert?</German>
@@ -976,7 +976,7 @@
             <Italian>Stimolazione abilitata?</Italian>
             <Japanese>患者に刺激を与える 機能を有効化しますか?</Japanese>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_Reorientation_Enable_DESC">
+        <Key ID="STR_KAT_pharma_SETTING_Reorientation_Enable_DESC">
             <English>Enables reorientation</English>
             <Polish>Pozwala na cucenie</Polish>
             <German>Aktiviert das Umorientieren</German>
@@ -989,7 +989,7 @@
             <Italian>Stimolazione abilitata</Italian>
             <Japanese>刺激を与える(患者の安定時にビンタで叩き起こす)機能を有効化します</Japanese>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation">
+        <Key ID="STR_KAT_pharma_SETTING_Allow_Reorientation">
             <English>Allow reorientation</English>
             <Polish>Pozwól na cucenie</Polish>
             <German>Umorientieren zulassen</German>
@@ -1002,7 +1002,7 @@
             <Italian>Autorizza stimolazione</Italian>
             <Japanese>患者に刺激を与えることが出来る人</Japanese>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation_DESC">
+        <Key ID="STR_KAT_pharma_SETTING_Allow_Reorientation_DESC">
             <English>Medical level required for reorientation</English>
             <Polish>Poziom wyszkolenia wymagany do cucenia</Polish>
             <German>Erforderliches Medic Level zum Umorientieren</German>
