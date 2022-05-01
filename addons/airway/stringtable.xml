@@ -898,29 +898,37 @@
             <Italian>Colora gli Activitylogs di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
             <Japanese>値が重要な場合は、AED-Xまたはパルスオキシメーターのアクティビティログを赤に着色します</Japanese>
         </Key>
-        <Key ID="STR_kat_airway_RecoveryPosition">
-            <English>Recovery Position</English>
+        <Key ID="STR_kat_airway_RecoveryPosition_displayName">
+            <English>Establish recovery position</English>
+            <Polish>Ułóż w pozycji bezpiecznej</Polish>
         </Key>
-        <Key ID="STR_kat_airway_RecoveryPosition">
-            <English>Recovery Position Action</English>
+        <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
+            <English>Establishing recovery position</English>
+            <Polish>Układanie w pozycji</Polish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Already">
-            <English>Recovery Already</English>
+            <English>Recovery position already established</English>
+            <Polish>Pacjent jest ułożony w pozycji bezpiecznej</Polish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Info">
-            <English>Recovery Info</English>
+            <English>Recovery position established successfully</English>
+            <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Cancel">
-            <English>Recovery Cancel</English>
+            <English>Recovery position cancelled</English>
+            <Polish>Przerwano pozycję bezpieczną</Polish>
         </Key>
         </Key><Key ID="STR_kat_airway_RecoveryPosition_Log">
             <English>%1 established recovery position</English>
+            <Polish>%1 ułożył w pozycji bezpiecznej</Polish>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY">
-            <English>Recovery Time</English>
-        </Key><Key ID="STR_kat_airway_TIME_RECOVERY">
-            <English>Recovery Time Desc</English>
+            <English>Time for recovery position</English>
+            <Polish>Czas na ułożenie w pozycji bezpiecznej</Polish>
         </Key>
-        
+        <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
+            <English>How long it will take to establish recovery position</English>
+            <Polish>Jak długo potrwa ułożenie w pozycji bocznej bezpiecznej</Polish>
+        </Key>
     </Package>
 </Project>

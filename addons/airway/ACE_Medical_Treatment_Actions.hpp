@@ -63,8 +63,8 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_turnaroundHead));
     };
     class RecoveryPosition: larynxtubus {
-        displayName = CSTRING(RecoveryPosition);
-        displayNameProgress = CSTRING(RecoveryPosition_Action);
+        displayName = CSTRING(RecoveryPosition_displayName);
+        displayNameProgress = CSTRING(RecoveryPosition_displayNameProgress);
         treatmentTime = QGVAR(RecoveryPosition_Time);
         allowedSelections[] = {"Head"};
         medicRequired = 0;

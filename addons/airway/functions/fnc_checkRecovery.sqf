@@ -32,11 +32,4 @@ if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "guedel" && (_classN
     _return = false;
 };
 
-//check if patient has fractures
-{
-    if( _x > 0 ) then {
-        _return = false;
-    };
-} forEach _fractures;
-
 _return
