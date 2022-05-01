@@ -908,7 +908,7 @@
         </Key>
         <Key ID="STR_kat_airway_Recovery_Already">
             <English>Recovery position already established</English>
-            <Polish>Pacjent jest ułożony w pozycji bezpiecznej</Polish>
+            <Polish>Pacjent jest już ułożony w pozycji bezpiecznej</Polish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Info">
             <English>Recovery position established successfully</English>
