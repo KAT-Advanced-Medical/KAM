@@ -27,11 +27,7 @@ if (_patient getVariable [QGVAR(recovery), false]) exitWith {
 _patient setVariable [QGVAR(recovery), true, true];
 _patient setVariable [QGVAR(overstretch), true, true];
 _patient setVariable ["KAT_medical_airwayOccluded", false, true];
-{
-    if( _x > 0 ) then {
-        [_patient, 0.1] call ace_medical_status_fnc_adjustPainLevel;
-    };
-} forEach _fractures;
+[_patient, 0.5] call ace_medical_status_fnc_adjustPainLevel;
 
 private _output = localize LSTRING(Recovery_Info);
 [_output, 2, _medic] call ace_common_fnc_displayTextStructured;
@@ -40,27 +36,20 @@ private _output = localize LSTRING(Recovery_Info);
 
 [{
     params ["_medic", "_patient"];
-    (_patient call ace_medical_status_fnc_isBeingDragged) || (_patient call ace_medical_status_fnc_isBeingCarried);
+    (_patient call ace_medical_status_fnc_isBeingDragged) || (_patient call ace_medical_status_fnc_isBeingCarried) || !(isNull objectParent _target);
 }, {
     params ["_medic", "_patient"];
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
-    {
-        if( _x > 0 ) then {
-            [_patient, 0.1] call ace_medical_status_fnc_adjustPainLevel;
-        };
-    } forEach _fractures;
+    [_patient, 0.7] call ace_medical_status_fnc_adjustPainLevel;
+
     _output = localize LSTRING(Recovery_Cancel);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 }, [_medic, _patient], 3600, {
     params ["_medic","patient"];
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
-    {
-        if( _x > 0 ) then {
-            [_patient, 0.1] call ace_medical_status_fnc_adjustPainLevel;
-        };
-    } forEach _fractures;
+    [_patient, 0.7] call ace_medical_status_fnc_adjustPainLevel;
     _output = localize LSTRING(Recovery_Cancel);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 }] call CBA_fnc_waitUntilAndExecute;
