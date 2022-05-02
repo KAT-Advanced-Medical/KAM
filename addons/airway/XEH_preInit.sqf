@@ -184,7 +184,17 @@ In real life, this will happen sometimes, not quiet often.
     "SLIDER",
     [LLSTRING(TIME_RECOVERY),LLSTRING(TIME_RECOVERY_DESC)],
     CBA_SETTINGS_CAT,
-    [1, 20, 6, 0],
+    [1, 120, 6, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Settable action time for Cancel recovery position
+[
+    QGVAR(CancelRecoveryPosition_Time),
+    "SLIDER",
+    [LLSTRING(TIME_CANCELRECOVERY),LLSTRING(TIME_CANCELRECOVERY_DESC)],
+    CBA_SETTINGS_CAT,
+    [1, 120, 6, 0],
     true
 ] call CBA_Settings_fnc_init;
 

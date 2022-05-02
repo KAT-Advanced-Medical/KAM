@@ -7,6 +7,7 @@ if !(GVAR(enable)) exitWith {};
 ["treatmentGuedel", {_this call FUNC(treatmentAdvanced_guedelLocal)}] call CBA_fnc_addEventHandler;
 ["treatmentAccuvac", {_this call FUNC(treatmentAdvanced_accuvacLocal)}] call CBA_fnc_addEventHandler;
 ["treatmentRecoveryPosition", {_this call FUNC(treatmentAdvanced_RecoveryPositionLocal)}] call CBA_fnc_addEventHandler;
+["treatmentCancelRecoveryPosition", {_this call FUNC(treatmentAdvanced_CancelRecoveryPositionLocal)}] call CBA_fnc_addEventHandler;
 
 ["ace_unconscious", {
     params ["_unit", "_state"];

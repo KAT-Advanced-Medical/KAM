@@ -12,15 +12,14 @@
  * <BOOLEAN>
  *
  * Example:
- * call kat_circulation_fnc_checkRecovery;
+ * call kat_airway_fnc_checkRecovery;
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_className"];
+params ["_medic", "_patient"];
 
 private _return = true;
-private _fractures = GET_FRACTURES(_patient);
 
 //check if patient has inserted larynx
 if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") then {
@@ -28,7 +27,7 @@ if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") then {
 };
 
 //check if patient has inserted guedeltube
-if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "guedel" && (_className isEqualTo "Guedeltubus")) then {
+if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "guedel") then {
     _return = false;
 };
 

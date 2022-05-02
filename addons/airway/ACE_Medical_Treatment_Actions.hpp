@@ -69,9 +69,20 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         medicRequired = 0;
         items[] = {};
-        condition = QUOTE((!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)])) && FUNC(checkRecovery));
+        condition = QUOTE((!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)])) && FUNC(checkRecovery));
 		icon = "";
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_RecoveryPosition));
+    };
+    class CancelRecoveryPosition: larynxtubus {
+        displayName = CSTRING(CancelRecoveryPosition_displayName);
+        displayNameProgress = CSTRING(CancelRecoveryPosition_displayNameProgress);
+        treatmentTime = QGVAR(CancelRecoveryPosition_Time);
+        allowedSelections[] = {"Head"};
+        medicRequired = 0;
+        items[] = {};
+        condition = QUOTE((!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(recovery),false)])));
+		icon = "";
+        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_CancelRecoveryPosition));
     };
     class CheckPulse;
     class CheckAirway: checkPulse {
