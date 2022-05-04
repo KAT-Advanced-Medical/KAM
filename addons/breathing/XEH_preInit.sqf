@@ -191,4 +191,14 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 */
 
+// Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.
+[
+    QGVAR(showPneumothorax_dupe),
+    "CHECKBOX",
+    [LLSTRING(showPneumothorax_dupe),LLSTRING(showPneumothorax_dupe_DESC)],
+    CBA_SETTINGS_CAT,
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

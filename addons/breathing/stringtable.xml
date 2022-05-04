@@ -752,5 +752,13 @@
             <Italian>Valore di SpO2 sotto il quale causa la perdita di coscienza</Italian>
             <Japanese>SpO2(血中酸素濃度)が設定した値を下回ると気絶し、無意識状態に陥ります。</Japanese>
         </Key>
+        <Key ID="STR_kat_breathing_showPneumothorax_dupe">
+            <English>Show pneumothorax duplicate</English>
+            <Czech>Ukázat duplikát pneumotoraxu</Czech>
+        </Key>
+        <Key ID="STR_kat_breathing_showPneumothorax_dupe_DESC">
+            <English>Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.</English>
+            <Czech>Výchozí nastavení zakázáno. Pokud povoleno, jednotky s tenzním pneumotoraxem a nebo hemopneumotoraxem budou mít též zranění pneumotorax ukázán ve zdravotnické nabídce.</Czech>
+        </Key>
     </Package>
 </Project>
