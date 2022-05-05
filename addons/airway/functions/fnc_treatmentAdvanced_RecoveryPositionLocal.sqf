@@ -30,11 +30,7 @@ private _output = localize LSTRING(Recovery_Info);
 
 [{
     params ["_medic", "_patient"];
-    private _itemInUse = false;
-    if ((_patient getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") || (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "guedel")) then {
-        _itemInUse = true;
-    };
-    (_patient call ace_medical_status_fnc_isBeingDragged) || (_patient call ace_medical_status_fnc_isBeingCarried) || !(isNull objectParent _patient) || (_itemInUse);
+    (_patient call ace_medical_status_fnc_isBeingDragged) || (_patient call ace_medical_status_fnc_isBeingCarried) || !(isNull objectParent _patient) || (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") || (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "guedel");
 }, {
     params ["_medic", "_patient"];
     _patient setVariable [QGVAR(recovery), false, true];
