@@ -151,7 +151,7 @@ if (_target getVariable [QGVAR(overstretch), false] && _selectionN isEqualTo 0) 
 };
 
 private _tensionhemothorax = false;
-if (!(kat_breathing_showPneumothorax_dupe)) {
+if (!(kat_breathing_showPneumothorax_dupe)) then {
     if ((_target getVariable ["KAT_medical_tensionpneumothorax", false]) || (_target getVariable ["KAT_medical_hemopneumothorax", false])) then {
             _tensionhemothorax = true;
     };
