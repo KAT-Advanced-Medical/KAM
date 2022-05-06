@@ -55,5 +55,16 @@ class ACE_Medical_Treatment {
             incompatibleMedication[] = {};
             viscosityChange = -25;
         };
+        class Ketamine {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {5, 15};
+            hrIncreaseNormal[] = {10, 20};
+            hrIncreaseHigh[] = {10, 20};
+            timeInSystem = 1200;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            incompatibleMedication[] = {};
+            viscosityChange = 20;
+        };
 	};
 };

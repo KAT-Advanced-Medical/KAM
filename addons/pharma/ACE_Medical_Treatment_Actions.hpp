@@ -127,6 +127,17 @@ class ACE_Medical_Treatment_Actions {
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Atropine')] call FUNC(treatmentAdvanced_Atropine));
     };
+    class Ketamine: Carbonate {
+        displayName = CSTRING(Take_Ketamine);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = 1;
+        treatmentTime = 5;
+        items[] = {"kat_ketamine"};
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        patientStateCondition = 0;
+        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Ketamine')] call FUNC(treatmentAdvanced_Ketamine));
+    };
     class Reorientation: Carbonate {
         displayName = CSTRING(Take_Reorient);
         displayNameProgress = CSTRING(Reorienting);

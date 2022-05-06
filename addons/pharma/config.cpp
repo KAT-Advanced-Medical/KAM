@@ -23,7 +23,8 @@ class CfgPatches {
             "kat_nitroglycerin",
             "kat_amiodarone",
             "kat_lidocane",
-            "kat_atropine"
+            "kat_atropine",
+            "kat_ketamine"
         };
         magazines[] = { };
         requiredAddons[] = {

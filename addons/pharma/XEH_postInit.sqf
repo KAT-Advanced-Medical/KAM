@@ -7,3 +7,4 @@
 ["treatmentTXA", {_this call FUNC(treatmentAdvanced_TXALocal)}] call CBA_fnc_addEventHandler;
 ["treatmentOndansetron", {_this call FUNC(treatmentAdvanced_OndansetronLocal)}] call CBA_fnc_addEventHandler;
 ["treatmentReorientation", {_this call FUNC(treatmentAdvanced_ReorientationLocal)}] call CBA_fnc_addEventHandler;
+["treatmentKetamine", {_this call FUNC(treatmentAdvanced_KetamineLocal)}] call CBA_fnc_addEventHandler;
