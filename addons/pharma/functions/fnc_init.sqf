@@ -22,5 +22,6 @@ _unit setVariable [QGVAR(IVplaced), false, true];
 _unit setVariable [QGVAR(usedIV), "", true];
 _unit setVariable [QGVAR(IV_counts), 0, true];
 _unit setVariable [QGVAR(IVsite), 0, true];
+_unit setvariable [QGVAR(active), false, true];
 
 _unit setVariable [QGVAR(ondUse), false, true];
