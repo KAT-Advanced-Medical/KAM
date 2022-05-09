@@ -46,4 +46,4 @@ if (_spO2 < 100) then {
 private _message = format ["%1",_messageCyanosis];
 [_message, 2, _player] call ace_common_fnc_displayTextStructured;
 
-[_target, "quick_view", LSTRING(CheckCyanosis_Log), [[_player] call ace_common_fnc_getName, _spO2Output]] call ace_medical_treatment_fnc_addToLog;
+[_target, "quick_view", LSTRING(CheckCyanosis_Log), [_spO2Output]] call ace_medical_treatment_fnc_addToLog;
