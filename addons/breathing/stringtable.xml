@@ -829,6 +829,7 @@
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL">
             <English>Check Cyanosis Minimum Level</English>
+            <German>Zyanose prüfen Medic Level</German>
             <Polish>Minimalny poziom wyszkolenia do sprawdzenia sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL_DESCRIPTION">
