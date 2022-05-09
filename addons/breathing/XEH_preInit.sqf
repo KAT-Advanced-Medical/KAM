@@ -179,6 +179,56 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Enables cyanosis diagnose
+[
+    QGVAR(enableCyanosis),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Cyanosis), LLSTRING(SETTING_Cyanosis_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+//Settable list for checking Cyanosis per medical class
+[
+    QGVAR(medLvl_Cyanosis),
+    "LIST",
+    [LLSTRING(CYANOSIS_TREATMENT_LEVEL), LLSTRING(CYANOSIS_TREATMENT_LEVEL_DESCRIPTION)],
+    CBA_SETTINGS_CAT,
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    true
+] call CBA_settings_fnc_init;
+
+//Slight level for cyanosis
+[
+    QGVAR(slightValue),
+    "SLIDER",
+    [LLSTRING(SETTING_slightValue), LLSTRING(SETTING_slightValue_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 100, 90, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//Mild level for cyanosis
+[
+    QGVAR(mildValue),
+    "SLIDER",
+    [LLSTRING(SETTING_mildValue), LLSTRING(SETTING_mildValue_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 100, 75, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//Severe level for cyanosis
+[
+    QGVAR(severeValue),
+    "SLIDER",
+    [LLSTRING(SETTING_severeValue), LLSTRING(SETTING_severeValue_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 100, 66, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // sound volume for Stethoscope
 /*
 [

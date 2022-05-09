@@ -849,5 +849,90 @@
             <Czech>Výchozí nastavení zakázáno. Pokud povoleno, jednotky s tenzním pneumotoraxem a nebo hemopneumotoraxem budou mít též zranění pneumotorax ukázán ve zdravotnické nabídce.</Czech>
             <German>Standardmäßig ist diese Option deaktiviert. Wenn aktiviert, wird bei Einheiten mit Spannungspneumothorax oder Hämopneumothorax auch die Pneumothorax-Verletzung im medizinischen Menü angezeigt.</German>
         </Key>
+        <Key ID="STR_kat_breathing_CheckCyanosis_Name">
+            <English>Check Cyanosis</English>
+            <German>Zyanose überprüfen</German>
+            <Polish>Sprawdź sinicę</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_CheckCyanosis_Progress">
+            <English>Checking Cyanosis</English>
+            <German>Zyanose prüfen</German>
+            <Polish>Sprawdzanie sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_CheckCyanosis_Log">
+            <English>Cyanosis Status: %1</English>
+            <German>Status der Zyanose: %1</German>
+            <Polish>Status sinicy: %1</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_CyanosisStatus_N">
+            <English>No Cyanosis</English>
+            <German>Keine Zyanose</German>
+            <Polish>Brak sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_CyanosisStatus_Slight">
+            <English>Slight Cyanosis</English>
+            <German>Leichte Zyanose</German>
+            <Polish>Lekka sinica</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_CyanosisStatus_Mild">
+            <English>Mild Cyanosis</English>
+            <German>Mittelschwere Zyanose</German>
+            <Polish>Umiarkowana sinica</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
+            <English>Severe Cyanosis</English>
+            <German>Schwere Zyanose</German>
+            <Polish>Ciężka sinica</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_Cyanosis">
+            <English>Enable cyanosis diagnose</English>
+            <German>Zyanose-Diagnose aktivieren</German>
+            <Polish>Włącz diagnozę sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_Cyanosis_DESC">
+            <English>Enables cyanosis diagnose</English>
+            <German>Aktiviert die Zyanose-Diagnose</German>
+            <Polish>Włącza diagnozę sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_slightValue">
+            <English>Slight cyanosis SpO2 value</English>
+            <German>Leichter Zyanose SpO2-Wert</German>
+            <Polish>Poziom SpO2 dla lekkiej sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_slightValue_DESC">
+            <English>Slight cyanosis value - default 90 SpO2</English>
+            <German>Leichte Zyanose - Standardwert 90 SpO2</German>
+            <Polish>Poziom SpO2 dla lekkiej sinicy - domyślnie 90 SpO2</Polish>
+        </Key>
+         <Key ID="STR_kat_breathing_SETTING_mildValue">
+            <English>Mild cyanosis SpO2 value</English>
+            <German>Mittelschwere Zyanose SpO2-Wert</German>
+            <Polish>Poziom SpO2 dla umiarkowanej sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_mildValue_DESC">
+            <English>Mild cyanosis value - default 75 SpO2</English>
+            <German>Mittelschwere Zyanose - Standardwert 75 SpO2</German>
+            <Polish>Poziom SpO2 dla umiarkowanej sinicy - domyślnie 75 SpO2</Polish>
+        </Key>
+         <Key ID="STR_kat_breathing_SETTING_severeValue">
+            <English>Severe cyanosis SpO2 value</English>
+            <German>Schwere Zyanose SpO2-Wert</German>
+            <Polish>Poziom SpO2 dla ciężkiej sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_severeValue_DESC">
+            <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
+            <German>Schwere Zyanose - Standardwert 66 SpO2 \nSollte etwas höher sein als der tödliche SpO2-Wert</German>
+            <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL">
+            <English>Check Cyanosis Minimum Level</English>
+            <German>Zyanose prüfen Medic Level</German>
+            <Polish>Minimalny poziom wyszkolenia do sprawdzenia sinicy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL_DESCRIPTION">
+            <English>The minimum medical level required for someone to be able to check cyanosis.</English>
+            <German>Das Medic Level, das erforderlich ist, damit jemand eine Zyanose feststellen kann.</German>
+            <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie sprawdzić sinicę.</Polish>
+        </Key>
     </Package>
 </Project>
