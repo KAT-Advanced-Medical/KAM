@@ -12,6 +12,7 @@
             <French>ACE-Respiration activé?</French>
             <Turkish>ACE-Nefes etkinleştirildi mi?</Turkish>
             <Italian>Attivare ACE-Respirazione?</Italian>
+            <Russian>ACE-дыхание активировано?</Russian>
             <Japanese>ACE-Breathing を有効化しますか?</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_dieValue">
@@ -25,6 +26,7 @@
             <French>Valeur létale de la SpO2</French>
             <Turkish>Ölümcül SpO2 değeri</Turkish>
             <Italian>Valore letale di SpO2</Italian>
+            <Russian>Смертельное значение SpO2</Russian>
             <Japanese>致命的なSpO2値</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_dieActive">
@@ -38,19 +40,49 @@
             <French>Activer la valeur létale de la SpO2</French>
             <Turkish>Ölümcül SpO2 değerini etkinleştir</Turkish>
             <Italian>Attivare il valore letale di SpO2</Italian>
+            <Russian>Активировать летальное значение SpO2</Russian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_Value_Before">
+            <English>Small value to add / remove Sp02 (smaller treatment or injuries)</English>
+            <German>Kleiner Wert zum Hinzufügen / Entfernen von Sp02 (kleinere Behandlung oder Verletzungen)</German>
+            <Polish>Mała wartość do dodania / usunięcia SpO2 (mniejsze zabiegi lub urazy)</Polish>
+            <Spanish>Pequeño valor para añadir / quitar Sp02 (tratamiento o lesiones menores)</Spanish>
+            <Chinese>增加/删除Sp02的价值很小（较小的治疗或伤害）。</Chinese>
+            <Czech>Malá hodnota pro přidání / odebrání Sp02 (menší ošetření nebo zranění)</Czech>
+            <Korean>Sp02를 추가/제거하는 작은 값(더 작은 치료 또는 부상)</Korean>
+            <French>Faible valeur à ajouter/supprimer Sp02 (traitement ou blessures de moindre importance)</French>
+            <Turkish>Sp02 eklemek / çıkarmak için küçük değer (daha küçük tedavi veya yaralanmalar)</Turkish>
+            <Italian>Piccolo valore da aggiungere/rimuovere Sp02 (trattamento minore o lesioni)</Italian>
+            <Russian>Небольшое значение для добавления/удаления Sp02 (меньшее лечение или травмы)</Russian>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_Value_After">
+            <English>Big value to add / remove Sp02 (bigger treatment or injuries)</English>
+            <German>Großer Wert zum Hinzufügen / Entfernen von Sp02 (größere Behandlung oder Verletzungen)</German>
+            <Polish>Duża wartość do dodania / usunięcia SpO2 (większe leczenie lub urazy)</Polish>
+            <Spanish>Gran valor para añadir / eliminar Sp02 (mayor tratamiento o lesiones)</Spanish>
+            <Chinese>大价值的增加/删除Sp02（更大的治疗或伤害）。</Chinese>
+            <Czech>Velká hodnota pro přidání / odstranění Sp02 (větší léčba nebo zranění)</Czech>
+            <Korean>Sp02 추가/제거에 큰 가치(더 큰 치료 또는 부상)</Korean>
+            <French>Grande valeur pour ajouter / supprimer Sp02 (traitement ou blessures plus importantes)</French>
+            <Turkish>Sp02 eklemek / çıkarmak için büyük değer (daha büyük tedavi veya yaralanmalar)</Turkish>
+            <Italian>Grande valore da aggiungere / rimuovere Sp02 (trattamento più grande o lesioni)</Italian>
+            <Russian>Большое значение для добавления/удаления Sp02 (более серьезное лечение или травмы)</Russian>
             <Japanese>致命的なSpO2値をアクティブにする</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
             <Japanese>SpO2正の乗数</Japanese>
+            <Russian>Положительный множитель SpO2</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyNegative">
             <English>SpO2 negative multiplier</English>
             <Japanese>SpO2負の乗数</Japanese>
+            <Russian>Отрицательный множитель SpO2</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
             <Japanese>心停止のSpO2低下を可能にする</Japanese>
+            <Russian>Включить снижение SpO2 при остановке сердца</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -63,6 +95,7 @@
             <French>Probabilité d'un pneumothorax</French>
             <Turkish>Pnömotoraks olasılığı</Turkish>
             <Italian>Probabilità di pneumotorace</Italian>
+            <Russian>Вероятность пневмоторакса</Russian>
             <Japanese>気胸の確率</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display">
@@ -76,6 +109,7 @@
             <French>Placer l'oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresini Takın&gt;</Turkish>
             <Italian>Collegare pulsossimetro</Italian>
+            <Russian>Прикрепите пульсоксиметр</Russian>
             <Japanese>パルスオキシメータを取り付ける</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display_Remove">
@@ -89,6 +123,7 @@
             <French>Retirer l'oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresini Çıkarın</Turkish>
             <Italian>Rimuovere pulsossimetro</Italian>
+            <Russian>Удалить пульсоксиметр</Russian>
             <Japanese>パルスオキシメータを取り外します</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Short">
@@ -102,6 +137,7 @@
             <French>Oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresi</Turkish>
             <Italian>Pulsossimetro</Italian>
+            <Russian>Пульсоксиметр</Russian>
             <Japanese>パルスオキシメーター</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Use">
@@ -115,6 +151,7 @@
             <French>Oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresi</Turkish>
             <Italian>Pulsossimetro</Italian>
+            <Russian>Пульсоксиметр</Russian>
             <Japanese>パルスオキシメーター</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_placing">
@@ -128,6 +165,7 @@
             <French>Mise en place</French>
             <Turkish>Yerleştiriliyor</Turkish>
             <Italian>Posizionando</Italian>
+            <Russian>Использовать</Russian>
             <Japanese>装着中</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_remove">
@@ -141,6 +179,7 @@
             <French>Retrait</French>
             <Turkish>Çıkartılıyor</Turkish>
             <Italian>Rimuovendo</Italian>
+            <Russian>Развязать</Russian>
             <Japanese>取り外し中</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_NA">
@@ -154,6 +193,7 @@
             <French>Oxymètre de pouls déjà installé</French>
             <Turkish>Nabız Oksimetresi zaten bağlı</Turkish>
             <Italian>Pulsossimetro già collegato</Italian>
+            <Russian>Пульсоксиметр уже подключен</Russian>
             <Japanese>パルスオキシメータはすでに接続されています</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log">
@@ -167,6 +207,7 @@
             <French>Oxymètre de pouls: HR: %1 SpO2: %2</French>
             <Turkish>Nabız Oksimetresi: HR: %1 Sp02: %2</Turkish>
             <Italian>Pulsossimetro: HR: %1 sp02: %2</Italian>
+            <Russian>Пульсоксиметр: ЧСС: %1 Sp02: %2</Russian>
             <Japanese>パルスオキシメータ:HR:%1 Sp02:%2</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
@@ -180,6 +221,7 @@
             <French>%1 a connecté l'oxymètre de pouls</French>
             <Turkish>%1 bağlı Nabız Ölçer</Turkish>
             <Italian>%1 ha collegato un pulsossimetro</Italian>
+            <Russian>%1 подключен пульсоксиметр</Russian>
             <Japanese>%1 がパルスオキシメーターを装着</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hint_name">
@@ -193,6 +235,7 @@
             <French>Respiration</French>
             <Turkish>Nefes Alma</Turkish>
             <Italian>Respirazione</Italian>
+            <Russian>Дыхание</Russian>
             <Japanese>呼吸</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hint_desc">
@@ -236,6 +279,10 @@
                 %1Sufficientemente ventilato?
                 %1SpO2 sopra 70% -&gt; Si
                 %1SpO2 sotto 70% -&gt; No -&gt; ass. Respirazione</Italian>
+            <Russian>Дыхание
+                 %1достаточно вентилируется?
+                 %1Sp02 более 70% -&gt; Да
+                 %1Sp02 ниже 70% -&gt; Нет -&gt; зад. Дыхание</Russian>
             <Japanese>"呼吸
  %1気道が確保できていますか?
  %1Sp02 70%以上 -&gt; はい
@@ -252,6 +299,7 @@
             <French>Si vous avez sauvegardé les voies respiratoires avec un tube laryngé passez l'action</French>
             <Turkish>Solunum yolunu bir Laringeal Tüp ile kaydettiyseniz bunu atlayın</Turkish>
             <Italian>Se hai trattato le vie aeree con un tubo laringeo, salta questo</Italian>
+            <Russian>Если вы спасли дыхательные пути с помощью гортанной трубки, пропустите это</Russian>
             <Japanese>King LTで気道を確保した場合は、これをスキップしてください</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax">
@@ -265,6 +313,7 @@
             <French>%1 a traité un pneumothorax</French>
             <Turkish>%1 pnömotoraksı tedavi etti</Turkish>
             <Italian>%1 ha trattato un pneumotorace</Italian>
+            <Russian>%1 лечили пневмоторакс</Russian>
             <Japanese>%1は気胸を治療しました</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_display">
@@ -278,6 +327,7 @@
             <French>Pansement thoracique</French>
             <Turkish>Chest Seal</Turkish>
             <Italian>Chest Seal</Italian>
+            <Russian>Чест Сеал </Russian>
             <Japanese>チェストシール</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_mm">
@@ -291,6 +341,7 @@
             <French>1x Pneumothorax</French>
             <Turkish>1x Pnömotoraks</Turkish>
             <Italian>1x Pneumotorace</Italian>
+            <Russian>1x Пневмоторакс</Russian>
             <Japanese>1x 気胸</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_treating">
@@ -304,6 +355,7 @@
             <French>Traitement</French>
             <Turkish>Tedavi Ediliyor</Turkish>
             <Italian>Trattando</Italian>
+            <Russian>Лечение</Russian>
             <Japanese>治療中</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_chestseal_display">
@@ -317,6 +369,7 @@
             <French>Pansement thoracique</French>
             <Turkish>Chest Seal</Turkish>
             <Italian>Chest Seal</Italian>
+            <Russian>Чест Сеал </Russian>
             <Japanese>チェストシール</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_chestseal_desc">
@@ -330,6 +383,7 @@
             <French>Le pansement thoracique est conçu pour traiter et refermer une blessure thoracique dans la majorité des cas</French>
             <Turkish>Chest Seal, çoğu durumda açık göğüs yaralarını tedavi etmek, kapatmak ve yeniden kapatmak için tasarlanmıştır.</Turkish>
             <Italian>Il Chest Seal è progettato per trattare, sigillare e risigillare ferite aperte al torace nella maggior parte delle circostanze</Italian>
+            <Russian>Чест Сеал разработан для лечения, герметизации и повторной герметизации открытых ран грудной клетки в большинстве случаев.</Russian>
             <Japanese>チェストシールは、ほとんどの状況で開いた胸部の傷を治療、シール、および再シールするように設計されています。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_PULSEOXIMETER">
@@ -343,6 +397,7 @@
             <French>Autoriser l'oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresine izin ver</Turkish>
             <Italian>Permetti pulsossimetro</Italian>
+            <Russian>Разрешить пульсоксиметр</Russian>
             <Japanese>パルスオキシメータを許可する</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_PULSEOXIMETER">
@@ -356,6 +411,7 @@
             <French>Niveau d'entrainement requis pour utiliser un oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresi kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento rischiesto per utilizzare il pulsossimetro</Italian>
+            <Russian>Уровень подготовки, необходимый для использования пульсоксиметра</Russian>
             <Japanese>パルスオキシメータを使用するために必要な訓練レベル</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_CHESTSEAL">
@@ -369,6 +425,7 @@
             <French>Autoriser le pansement thoracique</French>
             <Turkish>Chest Seal'a izin ver</Turkish>
             <Italian>Permetti Chest Seal</Italian>
+            <Russian>Разрешить Чест Сеал </Russian>
             <Japanese>チェストシールを許可する</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_CHESTSEAL">
@@ -382,11 +439,13 @@
             <French>Niveau d'entrainement requis pour utiliser un pansement thoracique</French>
             <Turkish>Chest Seal kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento rischiesto per utilizzare il Chest Seal</Italian>
+            <Russian>Уровень подготовки, необходимый для использования Чест Сеал </Russian>
             <Japanese>チェストシールを使用するために必要な訓練レベル</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SELF_CHESTSEAL">
             <English>Allow Chest Seal self treatment</English>
             <Japanese>チェストシールでの自己治療を許可する</Japanese>
+            <Russian>Разрешить самолечение Чест Сеал </Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
@@ -399,6 +458,7 @@
             <French>Valeur stable de SpO2 requise pour reprendre conscience</French>
             <Turkish>Bilinç kazanmak için gerekli SpO2 değeri</Turkish>
             <Italian>Valore stabile di Sp02 per riprendere conoscienza</Italian>
+            <Russian>Стабильное значение SpO2 для прихода в сознание</Russian>
             <Japanese>意識を取り戻すために必要なSpO2値</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_STABLE_SPO2">
@@ -412,6 +472,7 @@
             <French>Après avoir dépassé la valeur définie (par défaut 85), le patient pourra reprendre connaissance</French>
             <Turkish>Seçilen değerden (varsayılan 85) daha fazlasına ulaştıktan sonra, ancak o zaman hasta bilincini geri kazanabilir</Turkish>
             <Italian>Dopo aver raggiunto un valore sufficiente (default 85), il paziente può riprendere conoscienza</Italian>
+            <Russian>Только после достижения значения, превышающего выбранное (по умолчанию 85), пациент может прийти в сознание.</Russian>
             <Japanese>選択した値(デフォルトは85)を超えた後、患者は意識を取り戻すことができます</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax_display">
@@ -425,6 +486,7 @@
             <French>Aspirer le fluide</French>
             <Turkish>Sıvıyı Boşaltın</Turkish>
             <Italian>Drenare il liquido</Italian>
+            <Russian>Слить жидкость</Russian>
             <Japanese>液体を排出する</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax">
@@ -438,6 +500,7 @@
             <French>%1 Hemo-pneumothorax traité</French>
             <Turkish>%1 Hemopnömotoraksı tedavi etti</Turkish>
             <Italian>%1 ha trattato un emopneumotorace</Italian>
+            <Russian>%1 лечили гемопневмоторакс</Russian>
             <Japanese>%1は血気胸を治療しました</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax_mm">
@@ -451,6 +514,7 @@
             <French>1x Hémopneumothorax</French>
             <Turkish>1x hemopnömotoraks</Turkish>
             <Italian>1x Emopneumotorace</Italian>
+            <Russian>1x Гемопневмоторакс</Russian>
             <Japanese>1x 血気胸</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_display">
@@ -464,6 +528,7 @@
             <French>Aiguille de décompression</French>
             <Turkish>İğne Dekompresyonu</Turkish>
             <Italian>Decompressione con ago</Italian>
+            <Russian>Декомпрессия иглы</Russian>
             <Japanese>胸腔穿刺減圧</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax">
@@ -477,6 +542,7 @@
             <French>%1 Hemo-pneumothorax traité</French>
             <Turkish>%1 Gerilim Pnömotoraks'ı tedavi edildi</Turkish>
             <Italian>%1 ha trattato uno pneumotorace iperteso</Italian>
+            <Russian>%1 лечили напряженный пневмоторакс</Russian>
             <Japanese>%1は緊張性気胸を治療しました</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_mm">
@@ -490,6 +556,7 @@
             <French>1x Hemothorax</French>
             <Turkish>1x Gerilim Pnömotoraks'ı</Turkish>
             <Italian>1x Pneumotorace iperteso</Italian>
+            <Russian>1x Напряженный пневмоторакс</Russian>
             <Japanese>1x 緊張性気胸</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_aatKit_display">
@@ -503,6 +570,7 @@
             <French>AAT kit</French>
             <Turkish>AAT Kiti</Turkish>
             <Italian>AAT Kit</Italian>
+            <Russian>Комплект ААТ</Russian>
             <Japanese>AATキット</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_aatKit_desc">
@@ -516,6 +584,7 @@
             <French>Le kit Kit de Traitement médical d’urgence des voies aériennes est un kit à usage unique, désigné pour traiter les blessures urgentes des voies aériennes comme des hémo-pneumothorax.</French>
             <Turkish>Gelişmiş Hava Yolu Tedavi Kiti, hemopnömotoraks gibi gelişmiş hava yolu koşullarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
             <Italian>Il kit per il Trattamento Avanzato delle vie Aeree è un kit ad uso singolo per il trattamento avanzato di condizioni alle vie aeree, come l'emopneumotorace</Italian>
+            <Russian>Набор ААТ</Russian>
             <Japanese>Advanced Airway Treatment Kitは、血気胸などの高度な気道の状態を治療するために設計された使い捨てキットです。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
@@ -529,6 +598,7 @@
             <French>Chance d'avoir un Hemo-pneumothorax</French>
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Şansı</Turkish>
             <Italian>Probabilità di un emo/pneumotorace iperteso</Italian>
+            <Russian>Гемоторакс / Напряженный пневмоторакс Вероятность</Russian>
             <Japanese>血胸/緊張性気胸の可能性</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
@@ -542,6 +612,7 @@
             <French>Le pourcentage de chance qu'un patient souffriera d'un hemothorax en même temps qu'un pneumothorax. Le traitement necessitera d'évacuer les fluides en utilisant un kit AAT</French>
             <Turkish>Bir hastanın pnömotoraks tedavisi gördükten sonra hemotoraks veya tansiyon pnömotorakstan muzdarip olma şansı yüzdesi. Tedavi, sıvıların bir AAT Kiti kullanılarak boşaltılmasını gerektirir.</Turkish>
             <Italian>La probabilità percentuale che un paziente soffra di un emopneumotorace o pneumotorace iperteso in seguito al trattamento di uno pneumotorace. Il trattamento richiede un drenaggio con l'AAT Kit.</Italian>
+            <Russian>Процентная вероятность того, что пациент будет страдать гемопневмотораксом или напряженным пневмотораксом после лечения пневмоторакса. Лечение требует дренирования жидкости с использованием набора ААТ.</Russian>
             <Japanese>気胸の治療を受けた後、患者が気胸または緊張性気胸に苦しむ可能性の割合。治療には、AATキットを使用して水分を排出する必要があります。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
@@ -555,6 +626,7 @@
             <French>Niveau minimum de soins d'un Hemo-pneumothorax </French>
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Tedavisi Minimum Seviye</Turkish>
             <Italian>Livello minimo per il trattamento di un emo/pneumotorace iperteso</Italian>
+            <Russian>Лечение гемоторакса/напряженного пневмоторакса Минимальный уровень</Russian>
             <Japanese>血胸/緊張性気胸治療最低レベル</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
@@ -568,6 +640,7 @@
             <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression AAT.</French>
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Italian>Il livello medico minimo richiesto per eseguire la decompressione con ago e il drenaggio dei fluidi, necessari per il trattamento di un emotorace o pneumotorace iperteso</Italian>
+            <Russian>Минимальный медицинский уровень, необходимый для того, чтобы кто-то мог выполнять лечебные действия «Декомпрессия иглой» и «Дренаж жидкости», используемые для лечения гемоторакса или напряженного пневмоторакса.</Russian>
             <Japanese>血胸または緊張性気胸の治療に使用される、針減圧および排液治療アクションを実行できるようにするために必要な最小医療レベル。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
@@ -581,6 +654,7 @@
             <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression AAT.</French>
             <Turkish>Pnömotoraks Hasar Eşiği</Turkish>
             <Italian>Soglia di danno per il pneumotorace</Italian>
+            <Russian>Порог повреждения пневмоторакса</Russian>
             <Japanese>気胸損傷閾値</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION">
@@ -594,6 +668,7 @@
             <French> Niveau médical minimum requis pour soigner un Hemo-pneumothorax en utilisant un kit de décompression AAT.</French>
             <Turkish>Pnömotoraks olasılığı olmadan önce meydana gelmesi gereken, 0 ila 1 ölçeğinde tek bir darbede hasar miktarı. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya sıfır olarak ayarlanması, beklenmedik yaralanmalardan kaynaklanan beklenmedik davranışlara veya pnömotoraksa neden olabilir.</Turkish>
             <Italian>Il danno in un singolo impatto, in una scala da 0 a 1, richiesto prima che si abbia la possibilità di uno pneumotorace. Valori più bassi rendono il pneumotorace più frequente. Valori molto bassi, o lo 0, possono causare comportamenti inaspettati o pneumotorace da ogni ferita.</Italian>
+            <Russian>Количество повреждений при одном ударе по шкале от 0 до 1, которое должно произойти, прежде чем возникнет вероятность пневмоторакса. Более низкие значения означают, что пневмоторакс более вероятен. Установка очень низкого значения или нуля может привести к неожиданному поведению или пневмотораксу из-за неожиданных травм.</Russian>
             <Japanese>気胸の可能性がある前に発生する必要がある、0から1のスケールでの1回の衝撃での損傷の量。値が低いほど、気胸が発生する可能性が高くなります。値を非常に低く設定するか、ゼロに設定すると、予期しない動作や予期しない怪我による気胸を引き起こす可能性があります。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore">
@@ -607,6 +682,7 @@
             <French>Pneumothorax intense </French>
             <Turkish>sert pnömotoraks </Turkish>
             <Italian>Pneumotorace estremo </Italian>
+            <Russian>Система расширенного пневмоторакса</Russian>
             <Japanese>ハードコア気胸</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore_DESC">
@@ -620,6 +696,7 @@
             <French>Active le mod hardcore pour le pneumothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile </French>
             <Turkish>Tıbbi menüde görünmesini sağlamayarak pnömotoraks için hardcore modunu etkinleştirir - Stetoskop yardımcı olabilir </Turkish>
             <Italian>Abilita la mod hardcore per il pneumotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile </Italian>
+            <Russian>Активирует расширенную систему пневмоторакса, не показывая пневмоторакс в медицинском меню — может помочь стетоскоп.</Russian>
             <Japanese>気胸のハードコアmodを有効にします。気胸が発生しても医療メニューに表示しません。-聴診器が役立つ場合があります</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_tensionhemothorax_hardcore">
@@ -633,6 +710,7 @@
             <French>Pneumothorax et hémothorax sous tension hardcore </French>
             <Turkish>Sert tansiyon pnömotoraks ve hemotoraks</Turkish>
             <Italian>Pneumotorace da tensione hardcore ed emotorace</Italian>
+            <Russian>Усовершенствованная система для напряженного пневмоторакса/гемопневмоторакса</Russian>
             <Japanese>ハードコア緊張性気胸と血胸</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_tensionhemothorax_hardcore_DESC">
@@ -646,6 +724,7 @@
             <French>Active le mod hardcore pour la tension et l'hémothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile</French>
             <Turkish>Medikal menüde görünmeyerek tansiyon ve hemotoraks için hardcore modu etkinleştirir - Stetoskop yardımcı olabilir</Turkish>
             <Italian>Abilita la mod hardcore per la tensione e l'emotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile</Italian>
+            <Russian>Активирует расширенную систему для напряженного пневмоторакса / гемопневмоторакса, не отображая напряженный пневмоторакс / гемопневмоторакс в медицинском меню - может помочь стетоскоп</Russian>
             <Japanese>緊張性気胸と血気胸のハードコアmodを有効にします。気胸が発生しても医療メニューに表示しません。-聴診器が役立つ場合があります</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_Stethoscope_display">
@@ -659,6 +738,7 @@
             <French>Stéthoscope</French>
             <Turkish>Stetoskop</Turkish>
             <Italian>Stetoscopio</Italian>
+            <Russian>Стетоскоп</Russian>
             <Japanese>聴診器</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_Stethoscope_desc">
@@ -672,6 +752,7 @@
             <French>Permet d'ausculter les sons pulmonaires</French>
             <Turkish>Akciğer seslerini dinlemenizi sağlar</Turkish>
             <Italian>Consente di auscultare i suoni polmonari </Italian>
+            <Russian>Позволяет аускультировать легочные шумы</Russian>
             <Japanese>呼吸音を聴診することができます</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_auscultateLung_display">
@@ -685,6 +766,7 @@
             <French>Ausculter les sons pulmonaires</French>
             <Turkish>Akciğer Seslerini Dinleyin</Turkish>
             <Italian>Auscultare i suoni polmonari</Italian>
+            <Russian>Выслушивайте легочные шумы</Russian>
             <Japanese>呼吸音を聴診する</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_listening_progress">
@@ -698,6 +780,7 @@
             <French>Écoute</French>
             <Turkish>Dinleme</Turkish>
             <Italian>Ascoltando</Italian>
+            <Russian>Прослушивание</Russian>
             <Japanese>聴診中</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_StethoscopeSoundVolume">
@@ -711,6 +794,7 @@
             <French>Volume sonore du stéthoscope</French>
             <Turkish>Stetoskop Ses Seviyesi</Turkish>
             <Italian>Volume del suono dello stetoscopio</Italian>
+            <Russian>Громкость звука стетоскопа</Russian>
             <Japanese>聴診器の音量</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_StethoscopeSoundVolume">
@@ -724,6 +808,7 @@
             <French>Détermine à quel point les sons du thorax sont forts lors de l'utilisation du stéthoscope</French>
             <Turkish>Stetoskop kullanırken toraks seslerinin ne kadar yüksek olduğunu belirler</Turkish>
             <Italian>Determina quanto sono forti i suoni del torace quando si utilizza lo stetoscopio</Italian>
+            <Russian>Определяет громкость звуков грудной клетки при использовании стетоскопа.</Russian>
             <Japanese>聴診器を使用したときの胸の音の大きさを設定します</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_unconscious">
@@ -738,6 +823,7 @@
             <Turkish>Bilinçsiz SpO2 değeri</Turkish>
             <Italian>Valore SpO2 per perdita di coscienza</Italian>
             <Japanese>意識を失うSpO2の値</Japanese>
+            <Russian>Бессознательное значение SpO2</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_unconscious_Desc">
             <English>SpO2 value that will cause unconscious when dropped below that value</English>
@@ -751,6 +837,7 @@
             <Turkish>Bu değerin altına düştüğünde bilinç kaybına neden olacak SpO2 değeri</Turkish>
             <Italian>Valore di SpO2 sotto il quale causa la perdita di coscienza</Italian>
             <Japanese>SpO2(血中酸素濃度)が設定した値を下回ると気絶し、無意識状態に陥ります。</Japanese>
+            <Russian>Значение SpO2, которое приведет к потере сознания при падении ниже этого значения</Russian>
         </Key>
         <Key ID="STR_kat_breathing_showPneumothorax_dupe">
             <English>Show pneumothorax duplicate</English>

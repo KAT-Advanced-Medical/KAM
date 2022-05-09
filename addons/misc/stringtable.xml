@@ -12,6 +12,7 @@
             <French>ACE-Misc activé?</French>
             <Turkish>ACE-Misc activated?</Turkish>
             <Italian>Attivare ACE-Misc?</Italian>
+            <Russian>ACE-Misc активирован?</Russian>
             <Japanese>ACE-Misc を有効化しますか?</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV">
@@ -25,6 +26,7 @@
             <French>Administrer IV</French>
             <Turkish>IV Bağlanıyor</Turkish>
             <Italian>Somministrando EV</Italian>
+            <Russian>Присоединить IV</Russian>
             <Japanese>IVを取り付ける</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display">
@@ -38,6 +40,7 @@
             <French>Administrer IV (1000ml)</French>
             <Turkish>IV (1000ml) Bağla</Turkish>
             <Italian>Somministrare EV (1000ml)</Italian>
+            <Russian>Присоединить IV  (1000 мл)</Russian>
             <Japanese>IVを取り付ける(1000ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_500">
@@ -51,6 +54,7 @@
             <French>Administrer IV (500ml)</French>
             <Turkish>IV (500ml) Bağla</Turkish>
             <Italian>Somministrare EV (500ml)</Italian>
+            <Russian>Прикрепить IV (500 мл)</Russian>
             <Japanese>IVを取り付ける(500ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_250">
@@ -64,6 +68,7 @@
             <French>Administrer IV (250ml)</French>
             <Turkish>IV (250ml) Bağla</Turkish>
             <Italian>Somministrare EV (250ml)</Italian>
+            <Russian>Прикрепить IV (250 мл)</Russian>
             <Japanese>IVを取り付ける(250ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand">
@@ -77,6 +82,7 @@
             <French>Accrocher: Saline IV (1000ml)</French>
             <Turkish>Stant: Seruym IV (1000ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (1000ml)</Italian>
+            <Russian>Подставка: Физиологический раствор IV (1000 мл)</Russian>
             <Japanese>スタンド：生理食塩水IV(1000ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_500">
@@ -90,6 +96,7 @@
             <French>Accrocher: Saline IV (500ml)</French>
             <Turkish>Stant: Seruym IV (500ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (500ml)</Italian>
+            <Russian>Подставка: Физиологический раствор IV (500 мл)</Russian>
             <Japanese>スタンド：生理食塩水IV(500ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_250">
@@ -103,6 +110,7 @@
             <French>Accrocher: Saline IV (250ml)</French>
             <Turkish>Stant: Seruym IV (250ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (250ml)</Italian>
+            <Russian>Подставка: Физиологический раствор IV (250 мл)</Russian>
             <Japanese>スタンド：生理食塩水IV(250ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_SETTING_LIMITWOUNDS_ENABLE">
@@ -116,6 +124,7 @@
             <French>Activer une limite de blessures</French>
             <Turkish>Sınırlı yaraları etkinleştirin</Turkish>
             <Italian>Attivare un limite di ferite</Italian>
+            <Russian>Включить ограниченные раны</Russian>
             <Japanese>制限された負傷を有効にする</Japanese>
         </Key>
         <Key ID="STR_kat_misc_LIMITWOUNDS_Display">
@@ -129,6 +138,7 @@
             <French>Panser les blessures</French>
             <Turkish>Bandaj yaraları</Turkish>
             <Italian>Bendare le ferite</Italian>
+            <Russian>Перевязка ран</Russian>
             <Japanese>包帯の負傷</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Condition_limitWounds_Display">
@@ -142,6 +152,7 @@
             <French>Condition d'utilisation pour limite de blessures</French>
             <Turkish>Durum sınırı yaralarını kullanın</Turkish>
             <Italian>Condizione d'utilizzo per limite delle ferite</Italian>
+            <Russian>Использовать раны ограничения состояния</Russian>
             <Japanese>制限された負傷の条件</Japanese>
         </Key>
         <Key ID="STR_kat_misc_disassemble_stretcher_display">
@@ -155,6 +166,7 @@
             <French>Désassembler la civière</French>
             <Turkish>Sedyeyi sökün</Turkish>
             <Italian>Disassemblare la barella</Italian>
+            <Russian>Разобрать носилки</Russian>
             <Japanese>担架を分解する</Japanese>
         </Key>
         <Key ID="STR_kat_misc_disassemble_attach_display">
@@ -168,6 +180,7 @@
             <French>Attacher à</French>
             <Turkish>Şuna Bağla</Turkish>
             <Italian>Collega a</Italian>
+            <Russian>Приложить к</Russian>
             <Japanese>取り付ける</Japanese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_attach">
@@ -181,6 +194,7 @@
             <French>Attacher la civière</French>
             <Turkish>Sedyeyi Takın</Turkish>
             <Italian>Attacca la barella</Italian>
+            <Russian>Прикрепить носилки</Russian>
             <Japanese>担架を取り付ける</Japanese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_lower10m">
@@ -194,6 +208,7 @@
             <French>Abaisser la civière de 10 m</French>
             <Turkish>Alt Sedye 10m</Turkish>
             <Italian>Barella inferiore di 10 m</Italian>
+            <Russian>Нижние носилки на 10 м</Russian>
             <Japanese>担架を10m下げる</Japanese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_raise10m">
@@ -206,7 +221,8 @@
             <Korean>들것을 10m 올리기</Korean>
             <French>Élever la civière de 10 m</French>
             <Turkish>Sedyeyi 10m Yükselt</Turkish>
-            <Italian>Alzare la barella di 10 m</Italian>
+				  	<Italian>Alzare la barella di 10 m</Italian>
+				  	<Russian>Поднимите носилки на 10 м</Russian>
             <Japanese>担架を10m上げる</Japanese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_raise">
@@ -220,6 +236,7 @@
             <French>Soulever la civière</French>
             <Turkish>Kaldırma Sedyesi</Turkish>
             <Italian>Alzare la barella</Italian>
+            <Russian>Поднимите носилки</Russian>
             <Japanese>担架を載せる</Japanese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_lower">
@@ -233,6 +250,7 @@
             <French>Civière inférieure</French>
             <Turkish>Alt Sedye</Turkish>
             <Italian>Barella inferiore</Italian>
+            <Russian>Нижние носилки</Russian>
             <Japanese>担架を降ろす</Japanese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_flip">
@@ -246,6 +264,7 @@
             <French>Civière à bascule</French>
             <Turkish>Flip Sedye</Turkish>
             <Italian>Flip Barella</Italian>
+            <Russian>Флип носилки</Russian>
             <Japanese>担架を回転させる</Japanese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_attention1">
@@ -259,6 +278,7 @@
             <French>Le véhicule que vous regardez n'est pas un hélicoptère !</French>
             <Turkish>Baktığınız araç helikopter değil!</Turkish>
             <Italian>Il veicolo che stai guardando non è un elicottero!</Italian>
+            <Russian>Транспортное средство, на которое вы смотрите, не является вертолетом!</Russian>
             <Japanese>あなたが見ている車両はヘリコプターではありません!</Japanese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_attention2">
@@ -272,6 +292,7 @@
             <French>Vous devez être à moins de 15 m de l'hélicoptère et le regarder !</French>
             <Turkish>Helikopterin 15m yakınında olmalı ve ona bakmalısın!</Turkish>
             <Italian>Devi essere a meno di 15 metri dall'elicottero e guardarlo!</Italian>
+					  <Russian>Вы должны находиться в пределах 15 м от вертолета и смотреть на него!</Russian>
             <Japanese>あなたはヘリコプターから15メートル以内にいて、視線を合わせる必要があります!</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Helistretcher_Display">
@@ -285,10 +306,11 @@
             <French>Hélicivière amovible </French>
             <Turkish>Helitakılabilir sedye</Turkish>
             <Italian>Elibarella agganciabile</Italian>
+            <Russian>Вы должны находиться в пределах 15 м от вертолета и посмотри на это!</Russian>
             <Japanese>ヘリコプター用担架</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Helistretcher_Desc">
-            <English>Allows you to attach a stretcher on helicopter(Double click)</English>
+            <English>Allows you to attach a stretcher to a helicopter(Double click)</English>
             <Polish>Pozwala podczepić nosze do śmigłowca(Podwójne kliknięcie)</Polish>
             <German>Ermöglicht das Anbringen einer Trage am Hubschrauber (Doppelklick)</German>
             <Spanish>Le permite colocar una camilla en helicóptero (doble clic)</Spanish>
@@ -298,6 +320,7 @@
             <French>Vous permet d'attacher une civière sur hélicoptère (double clic)</French>
             <Turkish>Helikoptere sedye takmanızı sağlar(Çift tıklama)</Turkish>
             <Italian>Consente di collegare una barella sull'elicottero (doppio clic)</Italian>
+            <Russian>Позволяет прикрепить носилки к вертолету (двойной щелчок)</Russian>
             <Japanese>ヘリコプターに担架を取り付けることができます(ダブルクリック)</Japanese>
         </Key>
     </Package>

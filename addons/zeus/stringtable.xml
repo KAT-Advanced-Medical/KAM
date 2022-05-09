@@ -12,6 +12,7 @@
             <Korean>기도 방해: </Korean>
             <Chinese>气道闭塞: </Chinese>
             <Japanese>気道閉塞:</Japanese>
+            <Russian>Обструкция дыхательных путей:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Occlusion">
             <English>Airway occlusion: </English>
@@ -24,6 +25,7 @@
             <Chinese>气道闭塞: </Chinese>
             <Turkish>Hava yolu tıkanıklığı: </Turkish>
             <Japanese>気道異物:</Japanese>
+            <Russian>Окклюзия дыхательных путей:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Pneumothorax">
             <English>Pneumothorax: </English>
@@ -36,6 +38,7 @@
             <Chinese>气胸:</Chinese>
             <Turkish>Pnömotoraks: </Turkish>
             <Japanese>気胸:</Japanese>
+            <Russian>Пневмоторакс:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Hemopneumothorax">
             <English>Hemopneumothorax: </English>
@@ -48,6 +51,7 @@
             <Chinese>血气胸:</Chinese>
             <Turkish>Hemopnömotoraks: </Turkish>
             <Japanese>血気胸:</Japanese>
+            <Russian>Гемопневмоторакс:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Tensionpneumothorax">
             <English>Tension pneumothorax: </English>
@@ -60,6 +64,7 @@
             <Chinese>紧张性气胸。:</Chinese>
             <Turkish>Tansiyon pnömotoraks: </Turkish>
             <Japanese>緊張性気胸:</Japanese>
+            <Russian>Напряженный пневмоторакс:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_SpO2Value">
             <English>SpO2 value: </English>
@@ -72,6 +77,7 @@
             <Chinese>SpO2值。</Chinese>
             <Turkish>SpO2 değeri: </Turkish>
             <Japanese>SpO2値:</Japanese>
+            <Russian>Значение SpO2:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_bloodGroup">
             <English>Blood group: </English>
@@ -84,6 +90,7 @@
             <Korean>혈액형: </Korean>
             <Turkish>Kan grubu: </Turkish>
             <Japanese>血液型:</Japanese>
+            <Russian>Группа крови:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_bloodVolume">
             <English>Blood volume: </English>
@@ -96,6 +103,7 @@
             <Korean>혈액량: </Korean>
             <Turkish>Kan basıncı: </Turkish>
             <Japanese>血液量:</Japanese>
+            <Russian>Объем крови:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_manageAirway_Module_displayname">
             <English>Manage Airways</English>
@@ -108,6 +116,7 @@
             <Korean>항공 관리</Korean>
             <Turkish>Hava Yollarını Yönet</Turkish>
             <Japanese>気道を管理する</Japanese>
+            <Russian>Управление авиалиниями</Russian>
         </Key>
         <Key ID="STR_kat_zeus_bloodType_Module_displayname">
             <English>Change blood group / volume</English>
@@ -120,6 +129,7 @@
             <Korean>혈액형/체적 변경</Korean>
             <Turkish>Kan grubunu / hacmini değiştir</Turkish>
             <Japanese>血液型/容量を変更する</Japanese>
+            <Russian>Изменить группу/объем крови</Russian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_displayname">
             <English>Change shockable state</English>
@@ -132,6 +142,7 @@
             <Korean>충격 가능 상태 변경</Korean>
             <Turkish>Şok edilebilir durumu değiştir</Turkish>
             <Japanese>ショック状態を変える</Japanese>
+            <Russian>Изменить шоковое состояние</Russian>
         </Key>
         <Key ID="STR_kat_zeus_checkmedical_Module_displayname">
             <English>Open unit medical menu</English>
@@ -144,6 +155,7 @@
             <Korean>유닛 의료 메뉴 열기</Korean>
             <Turkish>Ünite tıbbi menüsünü aç</Turkish>
             <Japanese>医療メニューを開く</Japanese>
+            <Russian>Медицинское меню открытого блока</Russian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_state">
             <English>State: </English>
@@ -156,6 +168,7 @@
             <Korean>상태: </Korean>
             <Turkish>Belirtmek: </Turkish>
             <Japanese>状態:</Japanese>
+            <Russian>Состояние:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_shockable">
             <English>Shockable (VF/PVT)</English>
@@ -168,6 +181,7 @@
             <Korean>충격 가능(VF/PVT)</Korean>
             <Turkish>Şok Edilebilir (VF/PVT)</Turkish>
             <Japanese>ショック可能(VF / PVT)</Japanese>
+            <Russian>Шокирующий (VF/PVT)</Russian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_non_shockable">
             <English>non-shockable (Asystole)</English>
@@ -180,6 +194,7 @@
             <Korean>충격 불가(수축기)</Korean>
             <Turkish>şoklanamaz (Asistoli)</Turkish>
             <Japanese>ショック不可(心静止)</Japanese>
+            <Russian>Без шока (асистолия)</Russian>
         </Key>
         <Key ID="STR_kat_zeus_NothingSelected">
             <English>Place on a unit.</English>
@@ -192,6 +207,7 @@
             <Korean>유닛에 놓습니다.</Korean>
             <Turkish>Bir üniteye yerleştirin.</Turkish>
             <Japanese>ユニットに置きます。</Japanese>
+            <Russian>Поместите на единицу.</Russian>
         </Key>
         <Key ID="STR_kat_zeus_OnlyInfantry">
             <English>Unit must be infantry.</English>
@@ -204,6 +220,7 @@
             <Korean>부대는 보병이어야 합니다.</Korean>
             <Turkish>Birim piyade olmalıdır.</Turkish>
             <Japanese>ユニットは歩兵でなければなりません。</Japanese>
+            <Russian>Юнит должен быть пехотным.</Russian>
         </Key>
         <Key ID="STR_kat_zeus_MustBeAlive">
             <English>Unit must be alive.</English>
@@ -216,6 +233,7 @@
             <Korean>유닛이 살아 있어야 합니다.</Korean>
             <Turkish>Birim canlı olmalı.</Turkish>
             <Japanese>ユニットは生きている必要があります。</Japanese>
+            <Russian>Юнит должен быть жив.</Russian>
         </Key>
         <Key ID="STR_kat_zeus_NotUnconscious">
             <English>Unit must be unconscious.</English>
@@ -228,6 +246,7 @@
             <Korean>유닛은 의식이 없어야 합니다.</Korean>
             <Turkish>Ünite bilinçsiz olmalıdır.</Turkish>
             <Japanese>ユニットは意識を失っている必要があります。</Japanese>
+            <Russian>Юнит должен быть без сознания.</Russian>
         </Key>
         <Key ID="STR_kat_zeus_sliderFormat13was23">
             <English>%1%3 (was %2%3)</English>
@@ -240,6 +259,7 @@
             <Korean>%1%3 (였다 %2%3)</Korean>
             <Turkish>%1%3 (oldu %2%3)</Turkish>
             <Japanese>%1%3(以前は%2%3)</Japanese>
+            <Russian>%1%3 (было %2%3)</Russian>
         </Key>
     </Package>
 </Project>
