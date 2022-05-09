@@ -814,6 +814,7 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue_DESC">
             <English>Mild cyanosis value - default 75 SpO2</English>
+            <German>Mittelschwere Zyanose - Standardwert 75 SpO2</German>
             <Polish>Poziom SpO2 dla umiarkowanej sinicy - domyślnie 75 SpO2</Polish>
         </Key>
          <Key ID="STR_kat_breathing_SETTING_severeValue">
