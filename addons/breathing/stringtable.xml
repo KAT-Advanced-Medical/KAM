@@ -804,6 +804,7 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue_DESC">
             <English>Slight cyanosis value - default 90 SpO2</English>
+            <German>Leichte Zyanose - Standardwert 90 SpO2</German>
             <Polish>Poziom SpO2 dla lekkiej sinicy - domyślnie 90 SpO2</Polish>
         </Key>
          <Key ID="STR_kat_breathing_SETTING_mildValue">
