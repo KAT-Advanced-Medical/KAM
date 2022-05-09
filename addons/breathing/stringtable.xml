@@ -755,6 +755,7 @@
         <Key ID="STR_kat_breathing_showPneumothorax_dupe">
             <English>Show pneumothorax duplicate</English>
             <Czech>Ukázat duplikát pneumotoraxu</Czech>
+            <German>Pneumothorax dupliziert anzeigen</German>
         </Key>
         <Key ID="STR_kat_breathing_showPneumothorax_dupe_DESC">
             <English>Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.</English>
