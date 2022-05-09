@@ -834,6 +834,7 @@
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to check cyanosis.</English>
+            <German>Das Medic Level, das erforderlich ist, damit jemand eine Zyanose feststellen kann.</German>
             <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie sprawdzić sinicę.</Polish>
         </Key>
     </Package>
