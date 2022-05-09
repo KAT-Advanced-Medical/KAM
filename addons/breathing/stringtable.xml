@@ -760,6 +760,7 @@
         <Key ID="STR_kat_breathing_showPneumothorax_dupe_DESC">
             <English>Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.</English>
             <Czech>Výchozí nastavení zakázáno. Pokud povoleno, jednotky s tenzním pneumotoraxem a nebo hemopneumotoraxem budou mít též zranění pneumotorax ukázán ve zdravotnické nabídce.</Czech>
+            <German>Standardmäßig ist diese Option deaktiviert. Wenn aktiviert, wird bei Einheiten mit Spannungspneumothorax oder Hämopneumothorax auch die Pneumothorax-Verletzung im medizinischen Menü angezeigt.</German>
         </Key>
     </Package>
 </Project>
