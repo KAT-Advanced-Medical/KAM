@@ -769,6 +769,7 @@
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_N">
             <English>No Cyanosis</English>
+            <German>Keine Zyanose</German>
             <Polish>Brak sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Slight">
