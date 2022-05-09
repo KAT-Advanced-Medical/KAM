@@ -1063,8 +1063,7 @@
             <Turkish>Yeniden yönlendirmeyi etkinleştirir</Turkish>
             <Italian>Stimolazione abilitata</Italian>
             <Japanese>刺激を与える(患者の安定時にビンタで叩き起こす)機能を有効化します</Japanese>
-            <Russian>Включает
-переориентация</Russian>
+            <Russian>Включает переориентация</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_Allow_Reorientation">
             <English>Allow reorientation</English>
