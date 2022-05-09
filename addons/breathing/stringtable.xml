@@ -774,6 +774,7 @@
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Slight">
             <English>Slight Cyanosis</English>
+            <German>Leichte Zyanose</German>
             <Polish>Lekka sinica</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Mild">
