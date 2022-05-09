@@ -799,6 +799,7 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
+            <German>Leichter Zyanose SpO2-Wert</German>
             <Polish>Poziom SpO2 dla lekkiej sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue_DESC">
