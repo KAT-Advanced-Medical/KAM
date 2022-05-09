@@ -784,6 +784,7 @@
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
             <English>Severe Cyanosis</English>
+            <German>Schwere Zyanose</German>
             <Polish>Ciężka sinica</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis">
