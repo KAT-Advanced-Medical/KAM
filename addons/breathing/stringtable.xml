@@ -759,6 +759,7 @@
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Progress">
             <English>Checking Cyanosis</English>
+            <German>Zyanose prüfen</German>
             <Polish>Sprawdzanie sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Log">
