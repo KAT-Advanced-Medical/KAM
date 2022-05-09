@@ -794,6 +794,7 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis_DESC">
             <English>Enables cyanosis diagnose</English>
+            <German>Aktiviert die Zyanose-Diagnose</German>
             <Polish>Włącza diagnozę sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue">
