@@ -824,6 +824,7 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_severeValue_DESC">
             <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
+            <German>Schwere Zyanose - Standardwert 66 SpO2 \nSollte etwas höher sein als der tödliche SpO2-Wert</German>
             <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL">
