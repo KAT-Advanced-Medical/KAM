@@ -754,6 +754,7 @@
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Name">
             <English>Check Cyanosis</English>
+            <German>Zyanose überprüfen</German>
             <Polish>Sprawdź sinicę</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Progress">
