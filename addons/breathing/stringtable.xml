@@ -809,6 +809,7 @@
         </Key>
          <Key ID="STR_kat_breathing_SETTING_mildValue">
             <English>Mild cyanosis SpO2 value</English>
+            <German>Mittelschwere Zyanose SpO2-Wert</German>
             <Polish>Poziom SpO2 dla umiarkowanej sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue_DESC">
