@@ -779,6 +779,7 @@
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosis</English>
+            <German>Mittelschwere Zyanose</German>
             <Polish>Umiarkowana sinica</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
