@@ -819,6 +819,7 @@
         </Key>
          <Key ID="STR_kat_breathing_SETTING_severeValue">
             <English>Severe cyanosis SpO2 value</English>
+            <German>Schwere Zyanose SpO2-Wert</German>
             <Polish>Poziom SpO2 dla ciężkiej sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_severeValue_DESC">
