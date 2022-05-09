@@ -763,8 +763,9 @@
             <Polish>Sprawdzanie sinicy</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Log">
-            <English>Cyanosis Status: %2</English>
-            <Polish>Status sinicy: %2</Polish>
+            <English>Cyanosis Status: %1</English>
+            <German>Status der Zyanose: %1</German>
+            <Polish>Status sinicy: %1</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_N">
             <English>No Cyanosis</English>
