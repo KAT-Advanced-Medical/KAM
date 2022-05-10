@@ -143,4 +143,14 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
+    class CheckCyanosis: CheckPulse{
+        displayName = CSTRING(CheckCyanosis_Name);
+        displayNameProgress = CSTRING(CheckCyanosis_Progress);
+        treatmentTime = 3;
+        allowedSelections[] = {"Head", "LeftArm", "RightArm"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_Cyanosis);
+        condition = QGVAR(enableCyanosis);
+        callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);
+    };
 };

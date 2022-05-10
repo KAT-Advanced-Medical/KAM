@@ -72,11 +72,13 @@ _patient setVariable ["ace_medical_peripheralResistance", 100, true];
 
 // IVs
 _patient setVariable ["ace_medical_ivBags", nil, true];
-_unit setVariable [QGVAR(flowRate), 1, true];
-_unit setVariable [QGVAR(IVplaced), false, true];
-_unit setVariable [QGVAR(usedIV), "", true];
-_unit setVariable [QGVAR(IV_counts), 0, true];
-_unit setVariable [QGVAR(IVsite), 0, true];
+_patient setVariable ["kat_pharma_flowRate", 1, true];
+_patient setVariable ["kat_pharma_IVplaced", false, true];
+_patient setVariable ["kat_pharma_usedIV", "", true];
+_patient setVariable ["kat_pharma_IV_counts", 0, true];
+_patient setVariable ["kat_pharma_IVsite", 0, true];
+_patient setVariable ["kat_pharma_active", false, true];
+_patient setVariable ["kat_IVPharma_PFH", nil];
 
 // Damage storage
 _patient setVariable ["ace_medical_bodyPartDamage", [0,0,0,0,0,0], true];
@@ -100,9 +102,9 @@ _patient setVariable ["ace_medical_painSuppress", 0, true];
 
 // Medication
 _patient setVariable ["ace_medical_medications", [], true];
-_unit setVariable [QGVAR(ondUse), false, true];
-_unit setVariable [QGVAR(asystole), 0, true];
-_unit setVariable [QGVAR(CPRcount), 2, true];
+_patient setVariable ["kat_pharma_ondUse", false, true];
+_patient setVariable ["kat_circulation_asystole", 0, true];
+_patient setVariable ["kat_circulation_CPRcount", 2, true];
 
 // Reset triage card since medication is reset
 _patient setVariable ["ace_medical_triageCard", [], true];
