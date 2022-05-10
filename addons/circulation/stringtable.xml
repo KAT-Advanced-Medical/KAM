@@ -64,6 +64,7 @@
             <French>Sang IV (1000ml) GS: O+</French>
             <Turkish>Kan IV (1000ml) KG: 0+</Turkish>
             <Italian>Sangue EV (1000ml) GS: 0+</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : 0</Russian>
             <Japanese>血液IV (1000ml) O+型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_N">
@@ -77,6 +78,7 @@
             <French>Sang IV (1000ml) GS: O-</French>
             <Turkish>Kan IV (1000ml) KG: 0-</Turkish>
             <Italian>Sangue EV (1000ml) GS: 0-</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : 0-</Russian>
             <Japanese>血液IV (1000ml) O-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A">
@@ -90,6 +92,7 @@
             <French>Sang IV (1000ml) GS: A+</French>
             <Turkish>Kan IV (1000ml) KG: A+</Turkish>
             <Italian>Sangue EV (1000ml) GS: A+</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : А+</Russian>
             <Japanese>血液IV (1000ml) A+型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_N">
@@ -103,6 +106,7 @@
             <French>Sang IV (1000ml) GS: A-</French>
             <Turkish>Kan IV (1000ml) KG: A-</Turkish>
             <Italian>Sangue EV (1000ml) GS: A-</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : А-</Russian>
             <Japanese>血液IV (1000ml) A-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B">
@@ -116,6 +120,7 @@
             <French>Sang IV (1000ml) GS: B</French>
             <Turkish>Kan IV (1000ml) KG: B</Turkish>
             <Italian>Sangue EV (1000ml) GS: B</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : B+</Russian>
             <Japanese>血液IV (1000ml) B型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_N">
@@ -129,6 +134,7 @@
             <French>Sang IV (1000ml) GS: B-</French>
             <Turkish>Kan IV (1000ml) KG: B-</Turkish>
             <Italian>Sangue EV (1000ml) GS: B-</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : B-</Russian>
             <Japanese>血液IV (1000ml) B-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB">
@@ -142,6 +148,7 @@
             <French>Sang IV (1000ml) GS: AB+</French>
             <Turkish>Kan IV (1000ml) KG: AB+</Turkish>
             <Italian>Sangue EV (1000ml) GS: AB+</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : AB+</Russian>
             <Japanese>血液IV (1000ml) AB+型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_N">
@@ -155,6 +162,7 @@
             <French>Sang IV (1000ml) GS: AB-</French>
             <Turkish>Kan IV (1000ml) KG: AB-</Turkish>
             <Italian>Sangue EV (1000ml) GS: AB-</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : АB-</Russian>
             <Japanese>血液IV (1000ml) AB-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_500">
@@ -168,6 +176,7 @@
             <French>Sang IV (500ml) GS: O+</French>
             <Turkish>Kan IV (500ml) KG: 0+</Turkish>
             <Italian>Sangue EV (500ml) GS: 0+</Italian>
+            <Russian>Кровь IV (500 мл) Гk : 0+</Russian>
             <Japanese>血液IV (500ml) O+型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_500_N">
@@ -181,6 +190,7 @@
             <French>Sang IV (500ml) GS: O-</French>
             <Turkish>Kan IV (500ml) KG: 0-</Turkish>
             <Italian>Sangue EV (500ml) GS: 0-</Italian>
+            <Russian>Кровь IV (500 мл) Гk : 0-</Russian>
             <Japanese>血液IV (500ml) O-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_500">
@@ -194,6 +204,7 @@
             <French>Sang IV (500ml) GS: A+</French>
             <Turkish>Kan IV (500ml) KG: A+</Turkish>
             <Italian>Sangue EV (500ml) GS: A+</Italian>
+            <Russian>Кровь IV (500 мл) Гk : A+</Russian>
             <Japanese>血液IV (500ml) A+型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_500_N">
@@ -207,6 +218,7 @@
             <French>Sang IV (500ml) GS: A-</French>
             <Turkish>Kan IV (500ml) KG: A-</Turkish>
             <Italian>Sangue EV (500ml) GS: A-</Italian>
+            <Russian>Кровь IV (500 мл) Гk : A-</Russian>
             <Japanese>血液IV (500ml) A-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_500">
@@ -220,6 +232,7 @@
             <French>Sang IV (500ml) GS: B+</French>
             <Turkish>Kan IV (500ml) KG: B+</Turkish>
             <Italian>Sangue EV (500ml) GS: B+</Italian>
+            <Russian>Кровь IV (500 мл) Гk : B+</Russian>
             <Japanese>血液IV (500ml) B+型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_500_N">
@@ -233,6 +246,7 @@
             <French>Sang IV (500ml) GS: B-</French>
             <Turkish>Kan IV (500ml) KG: B-</Turkish>
             <Italian>Sangue EV (500ml) GS: B-</Italian>
+            <Russian>Кровь IV (500 мл) Гk : B-</Russian>
             <Japanese>血液IV (500ml) B-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_500">
@@ -246,6 +260,7 @@
             <French>Sang IV (500ml) GS: AB+</French>
             <Turkish>Kan IV (500ml) KG: AB+</Turkish>
             <Italian>Sangue EV (500ml) GS: AB+</Italian>
+            <Russian>Кровь IV (500 мл) Гk : AB+</Russian>
             <Japanese>血液IV (500ml) AB+型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_500_N">
@@ -259,6 +274,7 @@
             <French>Sang IV (500ml) GS: AB-</French>
             <Turkish>Kan IV (500ml) KG: AB-</Turkish>
             <Italian>Sangue EV (500ml) GS: AB-</Italian>
+            <Russian>Кровь IV (500 мл) Гk : AB-</Russian>
             <Japanese>血液IV (500ml) AB-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_250">
@@ -272,6 +288,7 @@
             <French>Sang IV (250ml) GS: O+</French>
             <Turkish>Kan IV (250ml) KG: 0+</Turkish>
             <Italian>Sangue EV (250ml) GS: 0+</Italian>
+            <Russian>Кровь IV (250 мл) Гk : 0+</Russian>
             <Japanese>血液IV (250ml) O+型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_250_N">
@@ -285,6 +302,7 @@
             <French>Sang IV (250ml) GS: O-</French>
             <Turkish>Kan IV (250ml) KG: 0-</Turkish>
             <Italian>Sangue EV (250ml) GS: 0-</Italian>
+            <Russian>Кровь IV (250 мл) Гk : 0-</Russian>
             <Japanese>血液IV (250ml) O-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_250">
@@ -298,6 +316,7 @@
             <French>Sang IV (250ml) GS: A+</French>
             <Turkish>Kan IV (250ml) KG: A+</Turkish>
             <Italian>Sangue EV (250ml) GS: A+</Italian>
+            <Russian>Кровь IV (250 мл) Гk : A+</Russian>
             <Japanese>血液IV (250ml) A+型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_250_N">
@@ -311,6 +330,7 @@
             <French>Sang IV (250ml) GS: A-</French>
             <Turkish>Kan IV (250ml) KG: A-</Turkish>
             <Italian>Sangue EV (250ml) GS: A-</Italian>
+            <Russian>Кровь IV (250 мл) Гk : A-</Russian>
             <Japanese>血液IV (250ml) A-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_250">
@@ -324,6 +344,7 @@
             <French>Sang IV (250ml) GS: B+</French>
             <Turkish>Kan IV (250ml) KG: B+</Turkish>
             <Italian>Sangue EV (250ml) GS: B+</Italian>
+            <Russian>Кровь IV (250 мл) Гk : B+</Russian>
             <Japanese>血液IV (250ml) B+型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_250_N">
@@ -337,6 +358,7 @@
             <French>Sang IV (250ml) GS: B-</French>
             <Turkish>Kan IV (250ml) KG: B-</Turkish>
             <Italian>Sangue EV (250ml) GS: B-</Italian>
+            <Russian>Кровь IV (250 мл) Гk : B-</Russian>
             <Japanese>血液IV (250ml) B-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_250">
@@ -350,6 +372,7 @@
             <French>Sang IV (250ml) GS: AB+</French>
             <Turkish>Kan IV (250ml) KG: AB+</Turkish>
             <Italian>Sangue EV (250ml) GS: AB+</Italian>
+            <Russian>Кровь IV (250 мл) Гk : AB+</Russian>
             <Japanese>血液IV (250ml) AB+型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_250_N">
@@ -363,6 +386,7 @@
             <French>Sang IV (250ml) GS: AB-</French>
             <Turkish>Kan IV (250ml) KG: AB-</Turkish>
             <Italian>Sangue EV (250ml) GS: AB-</Italian>
+            <Russian>Кровь IV (250 мл) Гk : AB-</Russian>
             <Japanese>血液IV (250ml) AB-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_O">
@@ -376,6 +400,7 @@
             <French>Transfusion de sang IV (1000ml) GS: O+</French>
             <Turkish>Kan IV (1000ml) KG: 0+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: 0+</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : 0+</Russian>
             <Japanese>血液IV (1000ml) O+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_O_N">
@@ -389,6 +414,7 @@
             <French>Transfusion de sang IV (1000ml) GS: O-</French>
             <Turkish>Kan IV (1000ml) KG: 0- Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: 0-</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : 0-</Russian>
             <Japanese>血液IV (1000ml) O-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_A">
@@ -402,6 +428,7 @@
             <French>Transfusion de sang IV (1000ml) GS: A+</French>
             <Turkish>Kan IV (1000ml) KG: A+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: A+</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : А+</Russian>
             <Japanese>血液IV (1000ml) A+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_A_N">
@@ -415,6 +442,7 @@
             <French>Transfusion de sang IV (1000ml) GS: A-</French>
             <Turkish>Kan IV (1000ml) KG: A- Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: A-</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : А-</Russian>
             <Japanese>血液IV (1000ml) A-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_B">
@@ -428,6 +456,7 @@
             <French>Transfusion de sang IV (1000ml) GS: B+</French>
             <Turkish>Kan IV (1000ml) KG: B+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: B+</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : B+</Russian>
             <Japanese>血液IV (1000ml) B+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_B_N">
@@ -441,6 +470,7 @@
             <French>Transfusion de sang IV (1000ml) GS: B-</French>
             <Turkish>Kan IV (1000ml) KG: B- Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: B-</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : B-</Russian>
             <Japanese>血液IV (1000ml) B-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_AB">
@@ -454,6 +484,7 @@
             <French>Transfusion de sang IV (1000ml) GS: AB+</French>
             <Turkish>Kan IV (1000ml) KG: AB+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: AB+</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : АB+</Russian>
             <Japanese>血液IV (1000ml) AB+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_AB_N">
@@ -467,6 +498,7 @@
             <French>Transfusion de sang IV (1000ml) GS: AB-</French>
             <Turkish>Kan IV (1000ml) KG: AB- Ver</Turkish>
             <Italian>Somministrare Sangue EV (1000ml) GS: AB-</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : АB-</Russian>
             <Japanese>血液IV (1000ml) AB-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_O">
@@ -480,6 +512,7 @@
             <French>Transfusion de sang IV (500ml) GS: O+</French>
             <Turkish>Kan IV (500ml) KG: 0+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: 0+</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : 0+</Russian>
             <Japanese>血液IV (500ml) O+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_O_N">
@@ -493,6 +526,7 @@
             <French>Transfusion de sang IV (500ml) GS: O-</French>
             <Turkish>Kan IV (500ml) KG: 0- Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: 0-</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : 0-</Russian>
             <Japanese>血液IV (500ml) O-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_A">
@@ -506,6 +540,7 @@
             <French>Transfusion de sang IV (500ml) GS: A+</French>
             <Turkish>Kan IV (500ml) KG: A+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: A+</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : A+</Russian>
             <Japanese>血液IV (500ml) A+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_A_N">
@@ -519,6 +554,7 @@
             <French>Transfusion de sang IV (500ml) GS: A-</French>
             <Turkish>Kan IV (500ml) KG: A- Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: A-</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : A-</Russian>
             <Japanese>血液IV (500ml) A-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_B">
@@ -532,6 +568,7 @@
             <French>Transfusion de sang IV (500ml) GS: B+</French>
             <Turkish>Kan IV (500ml) KG: B+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: B+</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : B+</Russian>
             <Japanese>血液IV (500ml) B+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_B_N">
@@ -545,6 +582,7 @@
             <French>Transfusion de sang IV (500ml) GS: B-</French>
             <Turkish>Kan IV (500ml) KG: B- Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: B-</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : B-</Russian>
             <Japanese>血液IV (500ml) B-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_AB">
@@ -558,6 +596,7 @@
             <French>Transfusion de sang IV (500ml) GS: AB+</French>
             <Turkish>Kan IV (500ml) KG: AB+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: AB+</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : AB+</Russian>
             <Japanese>血液IV (500ml) AB+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_AB_N">
@@ -571,6 +610,7 @@
             <French>Transfusion de sang IV (500ml) GS: AB-</French>
             <Turkish>Kan IV (500ml) KG: AB- Ver</Turkish>
             <Italian>Somministrare Sangue EV (500ml) GS: AB-</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : AB-</Russian>
             <Japanese>血液IV (500ml) AB-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_O">
@@ -584,6 +624,7 @@
             <French>Transfusion de sang IV (250ml) GS: O+</French>
             <Turkish>Kan IV (250ml) KG: 0+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: 0+</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : 0+</Russian>
             <Japanese>血液IV (250ml) O+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_O_N">
@@ -597,6 +638,7 @@
             <French>Transfusion de sang IV (250ml) GS: O-</French>
             <Turkish>Kan IV (250ml) KG: 0- Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: 0-</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : 0-</Russian>
             <Japanese>血液IV (250ml) O-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_A">
@@ -610,6 +652,7 @@
             <French>Transfusion de sang IV (250ml) GS: A+</French>
             <Turkish>Kan IV (250ml) KG: A+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: A+</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : A+</Russian>
             <Japanese>血液IV (250ml) A+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_A_N">
@@ -623,6 +666,7 @@
             <French>Transfusion de sang IV (250ml) GS: A-</French>
             <Turkish>Kan IV (250ml) KG: A- Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: A-</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : A-</Russian>
             <Japanese>血液IV (250ml) A-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_B">
@@ -636,6 +680,7 @@
             <French>Transfusion de sang IV (250ml) GS: B+</French>
             <Turkish>Kan IV (250ml) KG: B+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: B+</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : B+</Russian>
             <Japanese>血液IV (250ml) B+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_B_N">
@@ -649,6 +694,7 @@
             <French>Transfusion de sang IV (250ml) GS: B-</French>
             <Turkish>Kan IV (250ml) KG: B- Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: B-</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : B-</Russian>
             <Japanese>血液IV (250ml) B-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_AB">
@@ -662,6 +708,7 @@
             <French>Transfusion de sang IV (250ml) GS: AB+</French>
             <Turkish>Kan IV (250ml) KG: AB+ Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: AB+</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : AB+</Russian>
             <Japanese>血液IV (250ml) AB+型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_AB_N">
@@ -675,6 +722,7 @@
             <French>Transfusion de sang IV (250ml) GS: AB-</French>
             <Turkish>Kan IV (250ml) KG: AB- Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: AB-</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : AB-</Russian>
             <Japanese>血液IV (250ml) AB-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Using">
