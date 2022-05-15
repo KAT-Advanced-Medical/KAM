@@ -84,7 +84,7 @@ In real life, this will happen sometimes, not quiet often.
     "LIST",
     [LLSTRING(ALLOW_LARYNXTUBUS),LLSTRING(ALLOW_LARYNXTUBUS_DESC)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -104,7 +104,7 @@ In real life, this will happen sometimes, not quiet often.
     "LIST",
     [LLSTRING(ALLOW_ACCUVAC),LLSTRING(ALLOW_ACCUVAC_DESC)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
