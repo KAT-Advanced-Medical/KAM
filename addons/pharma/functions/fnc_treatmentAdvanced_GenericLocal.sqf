@@ -22,9 +22,9 @@ params ["_target", "_medic", "_item"];
 if (_item isEqualTo "Amiodarone") then {
     [_target, "Amiodarone", 0, 60, 0, 0, 0] call ace_medical_status_fnc_addMedicationAdjustment;
 
-    private _random = random 2;
+    private _random = random 3;
 
-    if (_random == 1) then {
+    if (_random <= 1) then {
         [_patient, "BRADYCARDIA", 120, 1200, -15, 0, 0] call ace_medical_status_fnc_addMedicationAdjustment;
     };
 };
