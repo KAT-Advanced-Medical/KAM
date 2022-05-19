@@ -83,7 +83,7 @@
             <Turkish>Kusma sesi etkinleştirilsin mi?</Turkish>
             <Italian>Attivare il suono del vomito?</Italian>
             <Russian>Активировать звук рвоты?</Russian>
-            <Japanese>嘔吐音を発動しますか?</Japanese>
+            <Japanese>嘔吐音を再生しますか?</Japanese>
         </Key>
         <Key ID="STR_kat_airway_SETTING_exit">
             <English>Community called keko had addon for AFK players. They were put unconscious so others could drag them away. That triggered chances for airway problems. This string prevents that from happening when they get unconscious by that AFK addon.</English>
@@ -125,7 +125,7 @@
             <Turkish>%1 kontrol edilmiş havayolları: %2 %3, %4 %5</Turkish>
             <Italian>%1 ha controllato le vie aeree: %2 %3 %4 %5</Italian>
             <Russian>%1 проверены дыхательные пути: %2 %3, %4 %5</Russian>
-            <Japanese>%1が気道を確認しました: %2 %3, %4 %5</Japanese>
+            <Japanese>%1 が気道を確認しました: %2 %3, %4 %5</Japanese>
         </Key>
         <Key ID="STR_kat_airway_airway_log">
             <English>%1 inserted a %2</English>
@@ -139,7 +139,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha intubato con %2</Italian>
             <Russian>%1 вставил %2</Russian>
-            <Japanese>%1は%2を挿管しました</Japanese>
+            <Japanese>%1 は %2 を挿管しました</Japanese>
         </Key>
         <Key ID="STR_kat_airway_Occluded">
             <English>Occluded</English>
@@ -279,7 +279,7 @@
             <Turkish>% 1 a:% 2 koydu</Turkish>
             <Italian>%1 ha posizionato un: %2</Italian>
             <Russian>%1 установить: %2</Russian>
-            <Japanese>%1は%2を設置した</Japanese>
+            <Japanese>%1 は %2 を使用しました</Japanese>
         </Key>
         <Key ID="STR_kat_airway_Airway_NA">
             <English>Airways are clear</English>
@@ -335,7 +335,7 @@
             <Turkish>Hyperextension Gerçekleştir</Turkish>
             <Italian>Iperestensione della testa</Italian>
             <Russian>Гиперэкстензия головы</Russian>
-            <Japanese>気道の確保(頭部後屈あご先挙上法)</Japanese>
+            <Japanese>気道の確保</Japanese>
         </Key>
         <Key ID="STR_kat_airway_overstretched">
             <English>Hyperextended Head</English>
@@ -349,7 +349,7 @@
             <Turkish>Hyperextension Gerçekleşmiş Kafa</Turkish>
             <Italian>Testa iperestesa</Italian>
             <Russian>перетянутый голова</Russian>
-            <Japanese>気道を確保中(頭部後屈あご先挙上法)</Japanese>
+            <Japanese>気道を確保中 (頭部後屈あご先挙上法)</Japanese>
         </Key>
         <Key ID="STR_kat_airway_overstretching">
             <English>Extending</English>

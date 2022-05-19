@@ -83,7 +83,7 @@
             <Turkish>Stant: Seruym IV (1000ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (1000ml)</Italian>
             <Russian>Подставка: Физиологический раствор IV (1000 мл)</Russian>
-            <Japanese>スタンド：生理食塩水IV(1000ml)</Japanese>
+            <Japanese>スタンド: 生理食塩水IV(1000ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_500">
             <English>Stand: Saline IV (500ml)</English>
@@ -97,7 +97,7 @@
             <Turkish>Stant: Seruym IV (500ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (500ml)</Italian>
             <Russian>Подставка: Физиологический раствор IV (500 мл)</Russian>
-            <Japanese>スタンド：生理食塩水IV(500ml)</Japanese>
+            <Japanese>スタンド: 生理食塩水IV(500ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_250">
             <English>Stand: Saline IV (250ml)</English>
@@ -111,7 +111,7 @@
             <Turkish>Stant: Seruym IV (250ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (250ml)</Italian>
             <Russian>Подставка: Физиологический раствор IV (250 мл)</Russian>
-            <Japanese>スタンド：生理食塩水IV(250ml)</Japanese>
+            <Japanese>スタンド: 生理食塩水IV(250ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_SETTING_LIMITWOUNDS_ENABLE">
             <English>Enable limited wounds</English>
@@ -221,8 +221,8 @@
             <Korean>들것을 10m 올리기</Korean>
             <French>Élever la civière de 10 m</French>
             <Turkish>Sedyeyi 10m Yükselt</Turkish>
-				  	<Italian>Alzare la barella di 10 m</Italian>
-				  	<Russian>Поднимите носилки на 10 м</Russian>
+            <Italian>Alzare la barella di 10 m</Italian>
+            <Russian>Поднимите носилки на 10 м</Russian>
             <Japanese>担架を10m上げる</Japanese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_raise">
@@ -292,7 +292,7 @@
             <French>Vous devez être à moins de 15 m de l'hélicoptère et le regarder !</French>
             <Turkish>Helikopterin 15m yakınında olmalı ve ona bakmalısın!</Turkish>
             <Italian>Devi essere a meno di 15 metri dall'elicottero e guardarlo!</Italian>
-					  <Russian>Вы должны находиться в пределах 15 м от вертолета и смотреть на него!</Russian>
+            <Russian>Вы должны находиться в пределах 15 м от вертолета и смотреть на него!</Russian>
             <Japanese>あなたはヘリコプターから15メートル以内にいて、視線を合わせる必要があります!</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Helistretcher_Display">

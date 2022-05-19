@@ -391,6 +391,7 @@
             <Turkish>Kan IV (250ml) KG: AB Ver</Turkish>
             <Italian>Somministrare Sangue EV (250ml) GS: AB</Italian>
             <Russian>Переливание крови IV (250 мл) Гk : АВ</Russian>
+            <Japanese>血液IV (250ml) AB型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_DescShort">
             <English>Used to suppress pain</English>
@@ -404,6 +405,7 @@
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Usato per sopprimere il dolore</Italian>
             <Russian>Используется для подавления боли</Russian>
+            <Japanese>痛みを抑えるために使用されます</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_DescUse">
             <English>An analgesic used to combat light to moderate pain experiences.</English>
@@ -417,6 +419,7 @@
             <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
             <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
             <Russian>Анальгетик, используемый для борьбы с легкими и умеренными болями.</Russian>
+            <Japanese>一般的な市販のアセトアミノフェン鎮痛剤。軽・中度の痛みに効能があります。</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Painkillers_Box_Display">
             <English>Painkillers</English>
@@ -430,6 +433,7 @@
             <Turkish>Ağrı Kesiciler</Turkish>
             <Italian>Antidolorifici</Italian>
             <Russian>Обезболивающие</Russian>
+            <Japanese>鎮痛剤</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Inject_Box_Painkillers">
             <English>Take Painkillers</English>
@@ -443,7 +447,7 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Italian>Prendi antidolorifici</Italian>
             <Russian>Принимайте обезболивающие</Russian>
-            <Japanese>血液IV (250ml) AB型 を投与</Japanese>
+            <Japanese>鎮痛剤を服用</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Using">
             <English>Using</English>
@@ -638,7 +642,7 @@
             <Italian>Veicolo: Utilizzare DAE-X</Italian>
             <Spanish>Vehículo: Utilizar DEA-X</Spanish>
             <Czech>Vozidlo: Použít AED-X</Czech>
-            <Japanese>車両：AED-Xを使用</Japanese>
+            <Japanese>車両: AED-Xを使用</Japanese>
             <Russian>Транспортное средство: Используйте AED-X</Russian>
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Use">
@@ -652,7 +656,7 @@
             <Italian>Veicolo: Attaccare DAE-X</Italian>
             <Spanish>Vehículo: Colocar DEA-X</Spanish>
             <Czech>Vozidlo: Připevnit AED-X</Czech>
-            <Japanese>車両：AED-Xを取り付ける</Japanese>
+            <Japanese>車両: AED-Xを取り付ける</Japanese>
             <Russian>Транспортное средство: прикрепите AED-X</Russian>
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Remove">
@@ -666,7 +670,7 @@
             <Italian>Veicolo: Rimuovere DAE-X</Italian>
             <Spanish>Vehículo: Retirar DEA-X</Spanish>
             <Czech>Vozidlo: Odstranit AED-X</Czech>
-            <Japanese>車両：AED-Xを取り外します</Japanese>
+            <Japanese>車両: AED-Xを取り外します</Japanese>
             <Russian>Транспортное средство: удалить AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_Action_Progress">
@@ -681,7 +685,7 @@
             <Turkish>AED-X defibrilatörü kullanılıyor</Turkish>
             <Italian>Usando il defibrillatore DAE-X</Italian>
             <Russian>Использование дефибриллятора AED-X</Russian>
-            <Japanese>AED-X除細動器の使用</Japanese>
+            <Japanese>AED-X 除細動器の使用</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Progress">
             <English>Connecting</English>
@@ -751,7 +755,7 @@
             <Turkish>%1 artık boş</Turkish>
             <Russian>%1 сейчас пуст</Russian>
             <Italian>%1 è vuota</Italian>
-            <Japanese>%1は空になりました</Japanese>
+            <Japanese>%1 は空になりました</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_bloodbank">
             <English>Medical Blood bank</English>
@@ -821,7 +825,7 @@
             <Turkish>Kan Grubu Tablosu</Turkish>
             <Italian>Tavola dei gruppi sanguigni</Italian>
             <Russian>Шпаргалка по группам крови</Russian>
-            <Japanese>血液型適合性チャートシート</Japanese>
+            <Japanese>血液型適合確認シート</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_desc_crosspanel">
             <English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
@@ -919,7 +923,7 @@
             <Turkish>%1 AED gerçekleştirdi</Turkish>
             <Russian>%1 выполнил AED </Russian>
             <Italian>%1 ha utilizzato un DAE</Italian>
-            <Japanese>%1はAEDを実行しました</Japanese>
+            <Japanese>%1 はAEDを実行しました</Japanese>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDS">
             <English>%1 performed AED Station</English>
@@ -933,7 +937,7 @@
             <Turkish>%1 gerçekleştirilen AED İstasyonu</Turkish>
             <Russian>%1 выполнена станция AED</Russian>
             <Italian>%1 ha utilizzato una stazione DAE</Italian>
-            <Japanese>%1はAEDステーションを実行しました</Japanese>
+            <Japanese>%1 はAEDステーションを実行しました</Japanese>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDX">
             <English>%1 performed AED-X</English>
@@ -947,7 +951,7 @@
             <Russian>%1 выполнил AED-X</Russian>
             <Turkish>%1 AED-X gerçekleştirdi</Turkish>
             <Italian>%1 ha utilizzato un DAE-X</Italian>
-            <Japanese>%1はAED-Xを実行しました</Japanese>
+            <Japanese>%1 はAED-Xを実行しました</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED_X">
             <English>Success chance for AED-X</English>
@@ -1339,6 +1343,7 @@
             <Turkish>Ritmi Kontrol Etmek</Turkish>
             <Italian>Controllando il ritmo</Italian>
             <Russian>Проверка ритма</Russian>
+            <Japanese>心室細動を確認する</Japanese>
         </Key>
     </Package>
 </Project>

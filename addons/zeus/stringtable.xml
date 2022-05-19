@@ -180,7 +180,7 @@
             <Chinese>可休克(VF/PVT)</Chinese>
             <Korean>충격 가능(VF/PVT)</Korean>
             <Turkish>Şok Edilebilir (VF/PVT)</Turkish>
-            <Japanese>ショック可能(VF / PVT)</Japanese>
+            <Japanese>ショック可能(VF/PVT)</Japanese>
             <Russian>Шокирующий (VF/PVT)</Russian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_non_shockable">
@@ -258,7 +258,7 @@
             <Chinese>%1%3 (曾是 %2%3)</Chinese>
             <Korean>%1%3 (였다 %2%3)</Korean>
             <Turkish>%1%3 (oldu %2%3)</Turkish>
-            <Japanese>%1%3(以前は%2%3)</Japanese>
+            <Japanese>%1%3 (以前は %2%3)</Japanese>
             <Russian>%1%3 (было %2%3)</Russian>
         </Key>
     </Package>
