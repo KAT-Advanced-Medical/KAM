@@ -419,7 +419,7 @@
             <Turkish>Baş döndürme</Turkish>
             <Italian>Rotazione testa</Italian>
             <Russian>Повернуть голову в сторону</Russian>
-            <Japanese>吐瀉物の除去(回復体位)</Japanese>
+            <Japanese>気道異物の除去</Japanese>
         </Key>
         <Key ID="STR_kat_airway_turnaround_action">
             <English>Turning the head</English>
@@ -671,7 +671,7 @@
             <Turkish>Baş döndürme başarı olasılığı</Turkish>
             <Italian>Probabilità di successo della rotazione della testa</Italian>
             <Russian>Вероятность успеха для поворота головы</Russian>
-            <Japanese>吐瀉物の除去(回復体位)の成功確率</Japanese>
+            <Japanese>気道異物の除去の成功確率</Japanese>
         </Key>
         <Key ID="STR_kat_airway_SUCCES_HEADTURNING_DESC">
             <English>Higher, the better the probability of success</English>
@@ -853,7 +853,7 @@
             <Turkish>Kafayı çevirmek ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per ruotare la testa</Italian>
             <Russian>Сколько времени потребуется, чтобы повернуть голову</Russian>
-            <Japanese>吐瀉物の除去(回復体位)にかかる時間</Japanese>
+            <Japanese>気道異物の除去にかかる時間</Japanese>
         </Key>
         <Key ID="STR_kat_airway_TIME_ACCUVAC">
             <English>Time for Accuvac</English>
