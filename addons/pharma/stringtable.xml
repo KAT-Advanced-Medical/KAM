@@ -54,7 +54,7 @@
             <Korean>IV/IO를 설정하는 데 필요한 의료 수준 변경</Korean>
             <Turkish>IV'leri/IO'ları ayarlamak için gereken tıbbi düzeyi değiştirir</Turkish>
             <Czech>Změní který medický level je potřeba k zavedení IV/IO</Czech>
-            <Japanese>IV/IOを設定するために必要な医療レベルを変更します</Japanese>
+            <Japanese>IV/IOを刺入するために必要な医療レベルを変更します</Japanese>
             <Russian>Изменяет медицинский уровень, необходимый для установки IV/IO.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP_ENABLE">
@@ -68,7 +68,7 @@
             <French>Activer les délais d'attente pour les IV/IO</French>
             <Turkish>IV/IO bırakma sürelerini etkinleştir</Turkish>
             <Italian>Abilitare i tempi di caduta IV/IO</Italian>
-            <Japanese>IV/IOの滴下時間を有効にする</Japanese>
+            <Japanese>IV/IOの時間経過での脱落を有効化</Japanese>
             <Russian>Включает время сброса IV/IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP">
@@ -82,7 +82,7 @@
             <Korean>IV/IO가 환자에게서 떨어지는 시간을 변경합니다.</Korean>
             <Turkish>IV'lerin/IO'ların bir hastadan düştüğü zamanı değiştirir</Turkish>
             <Czech>Změní čas po kterém samovolně vypadnou IV/IO z pacienta</Czech>
-            <Japanese>IV/IOが患者から落ちる時間を変更します</Japanese>
+            <Japanese>IV/IOが脱落する時間</Japanese>
             <Russian>Изменяет время выпадения IV/IO капельниц у пациента</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_REUSE">
@@ -110,7 +110,7 @@
             <Korean>IV 약물을 쓸 시간을 밀워</Korean>
             <Turkish>Tüm IV İlaçlar için itme zamanı</Turkish>
             <Czech>Čas potřebný k vstříknutí všech IV léků</Czech>
-            <Japanese>すべての点滴薬の注射タイム</Japanese>
+            <Japanese>すべての点滴薬の注入時間</Japanese>
             <Russian>Время выталкивания всех IV лекарств</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_TIME">
@@ -124,7 +124,7 @@
             <Korean>IV를 설정늘하는 시간</Korean>
             <Turkish>IV'ler oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IV</Czech>
-            <Japanese>IVを挿管する時間</Japanese>
+            <Japanese>IVを刺入する時間</Japanese>
             <Russian>Время устанавливать IV</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IO_TIME">
@@ -138,7 +138,7 @@
             <Korean>IO 설정을하는 시간</Korean>
             <Turkish>IO'ları oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IO</Czech>
-            <Japanese>IOを挿管する時間</Japanese>
+            <Japanese>IOを刺入する時間</Japanese>
             <Russian>Время устанавливать IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Painkillers_DescShort">
@@ -166,7 +166,7 @@
             <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
             <Spanish>Analgésico usado para combatir dolor ligero o moderado.</Spanish>
             <Turkish>Hafif ila orta şiddette ağrı deneyimleriyle mücadele etmek için kullanılan bir analjezik.</Turkish>
-            <Japanese>軽度から中等度の痛みの経験と戦うために使用される鎮痛剤。</Japanese>
+            <Japanese>一般的な市販のアセトアミノフェン鎮痛剤。軽・中度の痛みに効能があります。</Japanese>
             <Russian>An analgesic used to treat mild to moderate pain.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Painkillers_Box_Display">
@@ -194,7 +194,7 @@
             <Korean>진통제 써</Korean>
             <Spanish>Administrar analgésico</Spanish>
             <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Japanese>鎮痛剤を投与</Japanese>
+            <Japanese>鎮痛剤を服用</Japanese>
             <Russian>Принимайте обезболивающие</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_DescShort">
@@ -250,7 +250,7 @@
             <Korean>탄산염 사용</Korean>
             <Turkish>Karbonat kullanın</Turkish>
             <Czech>Použít uhličitan</Czech>
-            <Japanese>炭酸塩を投与</Japanese>
+            <Japanese>炭酸アンモニウムを使う</Japanese>
             <Russian>Используйте карбонат</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Naloxone_DescShort">
@@ -278,7 +278,7 @@
             <Korean>모르핀과 같은 약물로 인한 아편유사제 과다복용을 역전시킬 수 있는 아편유사제 길항제.</Korean>
             <Turkish>Morfin gibi ilaçlardan kaynaklanan aşırı opioid dozlarını tersine çevirebilen bir opioid antagonisti.</Turkish>
             <Czech>Opioidní protiváha, která může zvrátit předávkování léků, jako je Morfin.</Czech>
-            <Japanese>モルヒネなどの薬剤からのオピオイド過剰摂取を元に戻すことができるオピオイド拮抗薬。</Japanese>
+            <Japanese>モルヒネなどの薬剤によるオピオイド過剰摂取を治療するオピオイド拮抗薬。</Japanese>
             <Russian>Антагонист опиатов, который может обратить вспять передозировку опиатами от таких лекарств, как морфин.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Naloxone_Box_Display">
@@ -362,7 +362,7 @@
             <Korean>푸시 아미오다론</Korean>
             <Turkish>Amiodaron'u itin</Turkish>
             <Czech>Vstříknout amiodaron</Czech>
-            <Japanese>アミオダロンを注射</Japanese>
+            <Japanese>アミオダロンを注入</Japanese>
             <Russian>Ввести амиодарон</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_DescShort">
@@ -418,7 +418,7 @@
             <Korean>푸시 리도카인</Korean>
             <Turkish>Push Lidokain</Turkish>
             <Czech>Vstříknout lidokain</Czech>
-            <Japanese>リドカインを注射</Japanese>
+            <Japanese>リドカインを注入</Japanese>
             <Russian>Ввести Лидокаин</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Atropine_DescShort">
@@ -474,7 +474,7 @@
             <Korean>푸시 아트로핀</Korean>
             <Turkish>Atropin itin</Turkish>
             <Czech>Vstříknout atropin</Czech>
-            <Japanese>アトロピンを注射</Japanese>
+            <Japanese>アトロピンを注入</Japanese>
             <Russian>Ввести Атропин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_DescShort">
@@ -488,7 +488,7 @@
             <Korean>혈전 형성 촉진</Korean>
             <Turkish>Pıhtı oluşumunu teşvik eder</Turkish>
             <Czech>Podporuje tvorbu sraženin</Czech>
-            <Japanese>血栓形成を促進します</Japanese>
+            <Japanese>血液凝固を促進し、出血を抑えます。</Japanese>
             <Russian>Способствует образованию тромбов</Russian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_DescUse">
@@ -502,7 +502,7 @@
             <Korean>환자의 혈전을 촉진하고 안정시키는 데 사용됩니다.</Korean>
             <Turkish>Bir hastada pıhtıları teşvik etmek ve stabilize etmek için kullanılır.</Turkish>
             <Czech>Používá se k povzbuzení a stabilizaci sraženin u pacienta.</Czech>
-            <Japanese>患者の血栓を促進し、安定させるために使用されます。</Japanese>
+            <Japanese>患者の血液凝固を促進し、出血を抑え容体を安定させるために使用されます。</Japanese>
             <Russian>Используется для стимулирования и стабилизации образования тромбов у пациента.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_Box_Display">
@@ -530,7 +530,7 @@
             <Korean>푸시 TXA</Korean>
             <Turkish>TXA'yı itin</Turkish>
             <Czech>Vstříknout TXA</Czech>
-            <Japanese>トラネキサム酸を注射</Japanese>
+            <Japanese>トラネキサム酸(TXA)を注入</Japanese>
             <Russian>Ввести TXA</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Norep_DescShort">
@@ -586,7 +586,7 @@
             <Korean>푸쉬 노르에피네프린</Korean>
             <Turkish>Norepinefrin itin</Turkish>
             <Czech>Vstříknout norepinefrin</Czech>
-            <Japanese>ノルエピネフリンを注射</Japanese>
+            <Japanese>ノルエピネフリンを注入</Japanese>
             <Russian>Ввести Норадреналин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Phenyl_DescShort">
@@ -642,7 +642,7 @@
             <Korean>푸시 페닐에프린</Korean>
             <Turkish>Fenilefrin itin</Turkish>
             <Czech>Vstříknout fenylefrin</Czech>
-            <Japanese>フェニレフリンを注射</Japanese>
+            <Japanese>フェニレフリンを注入</Japanese>
             <Russian>Ввести Фенилэфрин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Nitro_DescShort">
@@ -698,7 +698,7 @@
             <Korean>푸시 니트로글리세린</Korean>
             <Turkish>Nitrogliserin itin</Turkish>
             <Czech>Vstříknout Nitroglycerin</Czech>
-            <Japanese>ニトログリセリンを注射</Japanese>
+            <Japanese>ニトログリセリンを注入</Japanese>
             <Russian>Ввести Нитроглицерин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Reorient">
@@ -768,7 +768,7 @@
             <French>%1 a administré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
-            <Japanese>%1が%2を注射</Japanese>
+            <Japanese>%1 が %2を注入</Japanese>
             <Russian>%1 нажал %2</Russian>
         </Key>
         <Key ID="STR_kat_pharma_inject_log">
@@ -782,7 +782,7 @@
             <French>%1 a injecté un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
-            <Japanese>%1が%2を注入</Japanese>
+            <Japanese>%1 が %2を注射</Japanese>
             <Russian>%1 введено %2</Russian>
         </Key>
         <Key ID="STR_kat_pharma_use_log">
@@ -796,7 +796,7 @@
             <French>%1 a utilisé un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
-            <Japanese>%1が%2を投与</Japanese>
+            <Japanese>%1 が %2を使用</Japanese>
             <Russian>%1 использует %2</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_16_Display">
@@ -880,7 +880,7 @@
             <Korean>16g IV 설정</Korean>
             <Turkish>16g IV oluşturun</Turkish>
             <Czech>Zavádím IV</Czech>
-            <Japanese>16g IVを挿管する</Japanese>
+            <Japanese>16g IVを刺入する</Japanese>
             <Russian>Настройка 16г IV</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Apply_IO_45">
@@ -894,7 +894,7 @@
             <Chinese>建立FAST IO</Chinese>
             <Korean>FAST IO 구축</Korean>
             <Turkish>HIZLI IO kurun</Turkish>
-            <Japanese>FAST IOを挿管する</Japanese>
+            <Japanese>FAST IOを刺入する</Japanese>
             <Russian>Установить 16г IV</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Applying_IV">
@@ -908,7 +908,7 @@
             <Italian>Posizionando IV</Italian>
             <Chinese>建立IV/IO</Chinese>
             <Korean>IV/IO 구축</Korean>
-            <Japanese>IV/IOの挿管中</Japanese>
+            <Japanese>IV/IOの刺入中</Japanese>
             <Russian>Настройка IV/IO </Russian>
         </Key>
         <Key ID="STR_kat_pharma_Applying_IO">
@@ -922,7 +922,7 @@
             <Italian>Inserendo IO</Italian>
             <Chinese>建立IO</Chinese>
             <Korean>IO 구축</Korean>
-            <Japanese>IOの挿管中</Japanese>
+            <Japanese>IOの刺入中</Japanese>
             <Russian>Настройка IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_iv_log">
@@ -936,7 +936,7 @@
             <French>%1 a inseré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha posizionato %2</Italian>
-            <Japanese>%1は%2を挿管しました</Japanese>
+            <Japanese>%1 は %2 を刺入しました</Japanese>
             <Russian>%1 Настройка %2</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Remove_IV">
@@ -950,7 +950,7 @@
             <Chinese>移除IV/IO</Chinese>
             <Korean>IV/IO 제거</Korean>
             <Czech>Odstraňuji IV</Czech>
-            <Japanese>IV/IOを除去します</Japanese>
+            <Japanese>IV/IOを抜去します</Japanese>
             <Russian>Удалить IV/IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Removing_IV">
@@ -964,7 +964,7 @@
             <Chinese>移除</Chinese>
             <Korean>풀이</Korean>
             <Czech>Odstraňuji</Czech>
-            <Japanese>除去中</Japanese>
+            <Japanese>抜去中</Japanese>
             <Russian>Удаление</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Pain_empty">
@@ -978,7 +978,7 @@
             <French>%1 est maintenant vide</French>
             <Turkish>% 1 artık boş</Turkish>
             <Italian>%1 è vuota</Italian>
-            <Japanese>%1は空になりました</Japanese>
+            <Japanese>%1 は空になりました</Japanese>
             <Russian>%1 сейчас пуст</Russian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV">
@@ -992,7 +992,7 @@
             <Korean>삽입된 IV/IO 필요</Korean>
             <Turkish>Takılı IV/IO gerektir</Turkish>
             <Czech>Vyžadování vložení IV/IO</Czech>
-            <Japanese>輸液にIV/IO挿管を要求しますか</Japanese>
+            <Japanese>輸液にIV/IO刺入を要求しますか</Japanese>
             <Russian>Требовать вставки IV/IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV_DESC">
@@ -1006,7 +1006,7 @@
             <Chinese>默认为真。 如果为 true，您需要先插入 IV/IO，然后才能给某人注射盐水/血液/血浆。\n 如果为 false，它保留使用盐水/血液/血浆的标准 ACE 行为。</Chinese>
             <Korean>기본값은 참입니다. 참이면 염수/혈액/혈장을 제공하기 전에 먼저 IV/IO를 삽입해야 합니다.\n 거짓이면 염수/혈액/혈장 사용에 대한 표준 ACE 동작을 유지합니다.</Korean>
             <Czech>Výchozí povoleno. Pokud je povoleno, budete muset nejprve vložit IV/IO, než budete moci někomu podat fyziologický roztok/krev/plazmu.\n Pokud je zakázano, zachová standardní chování ACE pro použití fyziologického roztoku/krve/plazmy.</Czech>
-            <Japanese>KATデフォルトではtrueです。trueの場合、輸液を行う前にIV/IOを挿管する必要があります。\nfalseの場合はACEデフォルトの動作を保持します。つまり、生理食塩水/血液/血しょうパックだけで輸液可能になります。</Japanese>
+            <Japanese>KATデフォルトではtrueです。trueの場合、輸液を行う前にIV/IOを刺入する必要があります。\nfalseの場合はACEデフォルトの動作を保持します。つまり、生理食塩水/血液/血しょうパックだけで輸液可能になります。</Japanese>
             <Russian>Истина по умолчанию. Если это правда, вам нужно будет сначала ввести IV/IO, прежде чем вы сможете дать кому-то физиологический раствор/кровь/плазму.\n Если false, он сохраняет стандартное поведение ACE для использования физиологического раствора/крови/плазмы.</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Reorientation_Slap">

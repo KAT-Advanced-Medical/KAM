@@ -41,6 +41,7 @@
             <Turkish>Ölümcül SpO2 değerini etkinleştir</Turkish>
             <Italian>Attivare il valore letale di SpO2</Italian>
             <Russian>Активировать летальное значение SpO2</Russian>
+            <Japanese>致命的なSpO2値を有効化</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_Before">
             <English>Small value to add / remove Sp02 (smaller treatment or injuries)</English>
@@ -54,6 +55,7 @@
             <Turkish>Sp02 eklemek / çıkarmak için küçük değer (daha küçük tedavi veya yaralanmalar)</Turkish>
             <Italian>Piccolo valore da aggiungere/rimuovere Sp02 (trattamento minore o lesioni)</Italian>
             <Russian>Небольшое значение для добавления/удаления Sp02 (меньшее лечение или травмы)</Russian>
+            <Japanese>小さいSpO2値の上下変動(軽症時)</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_After">
             <English>Big value to add / remove Sp02 (bigger treatment or injuries)</English>
@@ -67,7 +69,7 @@
             <Turkish>Sp02 eklemek / çıkarmak için büyük değer (daha büyük tedavi veya yaralanmalar)</Turkish>
             <Italian>Grande valore da aggiungere / rimuovere Sp02 (trattamento più grande o lesioni)</Italian>
             <Russian>Большое значение для добавления/удаления Sp02 (более серьезное лечение или травмы)</Russian>
-            <Japanese>致命的なSpO2値をアクティブにする</Japanese>
+            <Japanese>大きいSpO2値の上下変動(重症時)</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
@@ -208,7 +210,7 @@
             <Turkish>Nabız Oksimetresi: HR: %1 Sp02: %2</Turkish>
             <Italian>Pulsossimetro: HR: %1 sp02: %2</Italian>
             <Russian>Пульсоксиметр: ЧСС: %1 Sp02: %2</Russian>
-            <Japanese>パルスオキシメータ:HR:%1 Sp02:%2</Japanese>
+            <Japanese>パルスオキシメータ: HR: %1 Sp02: %2</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -283,10 +285,10 @@
                  %1достаточно вентилируется?
                  %1Sp02 более 70% -&gt; Да
                  %1Sp02 ниже 70% -&gt; Нет -&gt; зад. Дыхание</Russian>
-            <Japanese>"呼吸
- %1気道が確保できていますか?
- %1Sp02 70%以上 -&gt; はい
- %1Sp02 70%以下 -&gt; いいえ -&gt; 呼吸を助けてください"</Japanese>
+            <Japanese>呼吸
+                %1十分に吸気していますか?
+                %1Sp02 70%以上 -&gt; はい
+                %1Sp02 70%以下 -&gt; いいえ -&gt; 呼吸を助けてください</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hint_tip">
             <English>If you saved the airway with a larynxtube skip this</English>
@@ -314,7 +316,7 @@
             <Turkish>%1 pnömotoraksı tedavi etti</Turkish>
             <Italian>%1 ha trattato un pneumotorace</Italian>
             <Russian>%1 лечили пневмоторакс</Russian>
-            <Japanese>%1は気胸を治療しました</Japanese>
+            <Japanese>%1 は気胸を治療しました</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_display">
             <English>Chest Seal</English>
@@ -501,7 +503,7 @@
             <Turkish>%1 Hemopnömotoraksı tedavi etti</Turkish>
             <Italian>%1 ha trattato un emopneumotorace</Italian>
             <Russian>%1 лечили гемопневмоторакс</Russian>
-            <Japanese>%1は血気胸を治療しました</Japanese>
+            <Japanese>%1 は血気胸を治療しました</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax_mm">
             <English>1x Hemopneumothorax</English>
@@ -543,7 +545,7 @@
             <Turkish>%1 Gerilim Pnömotoraks'ı tedavi edildi</Turkish>
             <Italian>%1 ha trattato uno pneumotorace iperteso</Italian>
             <Russian>%1 лечили напряженный пневмоторакс</Russian>
-            <Japanese>%1は緊張性気胸を治療しました</Japanese>
+            <Japanese>%1 は緊張性気胸を治療しました</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
@@ -655,7 +657,7 @@
             <Turkish>Pnömotoraks Hasar Eşiği</Turkish>
             <Italian>Soglia di danno per il pneumotorace</Italian>
             <Russian>Порог повреждения пневмоторакса</Russian>
-            <Japanese>気胸損傷閾値</Japanese>
+            <Japanese>負傷による気胸発生のしきい値</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION">
             <English>The amount of damage in a single impact, on a scale of 0 to 1, that needs to occur before there is a chance of pneumothorax. Lower values means that pneumothorax is more likely to occurr. Setting the value very low, or to zero, may cause unexpected behavior or pneumothorax from unexpected injuries.</English>
@@ -669,7 +671,7 @@
             <Turkish>Pnömotoraks olasılığı olmadan önce meydana gelmesi gereken, 0 ila 1 ölçeğinde tek bir darbede hasar miktarı. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya sıfır olarak ayarlanması, beklenmedik yaralanmalardan kaynaklanan beklenmedik davranışlara veya pnömotoraksa neden olabilir.</Turkish>
             <Italian>Il danno in un singolo impatto, in una scala da 0 a 1, richiesto prima che si abbia la possibilità di uno pneumotorace. Valori più bassi rendono il pneumotorace più frequente. Valori molto bassi, o lo 0, possono causare comportamenti inaspettati o pneumotorace da ogni ferita.</Italian>
             <Russian>Количество повреждений при одном ударе по шкале от 0 до 1, которое должно произойти, прежде чем возникнет вероятность пневмоторакса. Более низкие значения означают, что пневмоторакс более вероятен. Установка очень низкого значения или нуля может привести к неожиданному поведению или пневмотораксу из-за неожиданных травм.</Russian>
-            <Japanese>気胸の可能性がある前に発生する必要がある、0から1のスケールでの1回の衝撃での損傷の量。値が低いほど、気胸が発生する可能性が高くなります。値を非常に低く設定するか、ゼロに設定すると、予期しない動作や予期しない怪我による気胸を引き起こす可能性があります。</Japanese>
+            <Japanese>一度の負傷で発生する気胸へのダメージ。値が低いほど、気胸が発生する可能性が高くなります。値を非常に低く設定するか、0に設定すると、予期しない動作や予期しない怪我による気胸を引き起こす可能性があります。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore">
             <English>Hardcore pneumothorax</English>
@@ -843,111 +845,130 @@
             <English>Show pneumothorax duplicate</English>
             <Czech>Ukázat duplikát pneumotoraxu</Czech>
             <German>Pneumothorax dupliziert anzeigen</German>
+            <Japanese>気胸の重複表示をする</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_showPneumothorax_dupe_DESC">
             <English>Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.</English>
             <Czech>Výchozí nastavení zakázáno. Pokud povoleno, jednotky s tenzním pneumotoraxem a nebo hemopneumotoraxem budou mít též zranění pneumotorax ukázán ve zdravotnické nabídce.</Czech>
             <German>Standardmäßig ist diese Option deaktiviert. Wenn aktiviert, wird bei Einheiten mit Spannungspneumothorax oder Hämopneumothorax auch die Pneumothorax-Verletzung im medizinischen Menü angezeigt.</German>
+            <Japanese>デフォルトは無効です。有効にすると、緊張性気胸または血気胸のあるユニットでも、医療メニューに発生した他の気胸が表示されます。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Name">
             <English>Check Cyanosis</English>
             <German>Zyanose überprüfen</German>
             <Polish>Sprawdź sinicę</Polish>
-			<Russian>Проверить цианоз</Russian>
+            <Russian>Проверить цианоз</Russian>
+            <Japanese>チアノーゼをチェック</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Progress">
             <English>Checking Cyanosis</English>
             <German>Zyanose prüfen</German>
             <Polish>Sprawdzanie sinicy</Polish>
-			<Russian>Проверка цианоза</Russian>
+            <Russian>Проверка цианоза</Russian>
+            <Japanese>チアノーゼの確認</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Log">
             <English>Cyanosis Status: %1</English>
             <German>Status der Zyanose: %1</German>
             <Polish>Status sinicy: %1</Polish>
-			<Russian>Статус цианоза: %1</Russian>
+            <Russian>Статус цианоза: %1</Russian>
+            <Japanese>チアノーゼ状態: %1</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_N">
             <English>No Cyanosis</English>
             <German>Keine Zyanose</German>
             <Polish>Brak sinicy</Polish>
-			<Russian>Нет цианоза</Russian>
+            <Russian>Нет цианоза</Russian>
+            <Japanese>チアノーゼなし</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Slight">
             <English>Slight Cyanosis</English>
             <German>Leichte Zyanose</German>
             <Polish>Lekka sinica</Polish>
-			<Russian>Легкий цианоз</Russian>
+            <Russian>Легкий цианоз</Russian>
+            <Japanese>わずかなチアノーゼ</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosis</English>
             <German>Mittelschwere Zyanose</German>
             <Polish>Umiarkowana sinica</Polish>
-			<Russian>средний цианоз</Russian>
+            <Russian>средний цианоз</Russian>
+            <Japanese>軽度のチアノーゼ</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
             <English>Severe Cyanosis</English>
             <German>Schwere Zyanose</German>
             <Polish>Ciężka sinica</Polish>
-			<Russian>Тяжелый цианоз</Russian>
+            <Russian>Тяжелый цианоз</Russian>
+            <Japanese>重度のチアノーゼ</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis">
             <English>Enable cyanosis diagnose</English>
             <German>Zyanose-Diagnose aktivieren</German>
             <Polish>Włącz diagnozę sinicy</Polish>
-			<Russian>Включить диагностику цианоза</Russian>
+            <Russian>Включить диагностику цианоза</Russian>
+            <Japanese>チアノーゼ診断を有効にする</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis_DESC">
             <English>Enables cyanosis diagnose</English>
             <German>Aktiviert die Zyanose-Diagnose</German>
             <Polish>Włącza diagnozę sinicy</Polish>
-			<Russian>Позволяет диагностировать цианоз</Russian>
+            <Russian>Позволяет диагностировать цианоз</Russian>
+            <Japanese>チアノーゼ診断を可能にします</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
             <German>Leichter Zyanose SpO2-Wert</German>
             <Polish>Poziom SpO2 dla lekkiej sinicy</Polish>
-			<Russian>Легкий цианоз Значение SpO2</Russian>
+            <Russian>Легкий цианоз Значение SpO2</Russian>
+            <Japanese>わずかなチアノーゼSpO2値</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue_DESC">
             <English>Slight cyanosis value - default 90 SpO2</English>
             <German>Leichte Zyanose - Standardwert 90 SpO2</German>
             <Polish>Poziom SpO2 dla lekkiej sinicy - domyślnie 90 SpO2</Polish>
-			<Russian>Значение легкого цианоза - по умолчанию 90 SpO2</Russian>
+            <Russian>Значение легкого цианоза - по умолчанию 90 SpO2</Russian>
+            <Japanese>わずかなチアノーゼ値 - デフォルトはSpO2 90</Japanese>
         </Key>
-         <Key ID="STR_kat_breathing_SETTING_mildValue">
+        <Key ID="STR_kat_breathing_SETTING_mildValue">
             <English>Mild cyanosis SpO2 value</English>
             <German>Mittelschwere Zyanose SpO2-Wert</German>
             <Polish>Poziom SpO2 dla umiarkowanej sinicy</Polish>
-			<Russian>Средний значение цианоза SpO2</Russian>
+            <Russian>Средний значение цианоза SpO2</Russian>
+            <Japanese>軽度のチアノーゼSpO2値</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue_DESC">
             <English>Mild cyanosis value - default 75 SpO2</English>
             <German>Mittelschwere Zyanose - Standardwert 75 SpO2</German>
             <Polish>Poziom SpO2 dla umiarkowanej sinicy - domyślnie 75 SpO2</Polish>
-			<Russian>Значение Средней цианоза — по умолчанию 75 SpO2</Russian>
+            <Russian>Значение Средней цианоза — по умолчанию 75 SpO2</Russian>
+            <Japanese>軽度のチアノーゼ値 - デフォルトはSpO2 75</Japanese>
         </Key>
-         <Key ID="STR_kat_breathing_SETTING_severeValue">
+        <Key ID="STR_kat_breathing_SETTING_severeValue">
             <English>Severe cyanosis SpO2 value</English>
             <German>Schwere Zyanose SpO2-Wert</German>
             <Polish>Poziom SpO2 dla ciężkiej sinicy</Polish>
-			<Russian>Тяжелый цианоз Значение SpO2</Russian>
+            <Russian>Тяжелый цианоз Значение SpO2</Russian>
+            <Japanese>重度のチアノーゼSpO2値</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_severeValue_DESC">
             <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
             <German>Schwere Zyanose - Standardwert 66 SpO2 \nSollte etwas höher sein als der tödliche SpO2-Wert</German>
             <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
-			<Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO2 \nДолжно быть немного выше летального значения SpO2</Russian>
+            <Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO2 \nДолжно быть немного выше летального значения SpO2</Russian>
+            <Japanese>重度のチアノーゼ値 - デフォルトSpO2 66\n致命的なSpO2値より少し高く設定する必要があります</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL">
             <English>Check Cyanosis Minimum Level</English>
             <German>Zyanose prüfen Medic Level</German>
             <Polish>Minimalny poziom wyszkolenia do sprawdzenia sinicy</Polish>
+            <Japanese>チアノーゼを確認出来る医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to check cyanosis.</English>
             <German>Das Medic Level, das erforderlich ist, damit jemand eine Zyanose feststellen kann.</German>
             <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie sprawdzić sinicę.</Polish>
+            <Japanese>誰かがチアノーゼをチェックできるようにするために必要な最低医療レベル。</Japanese>
         </Key>
     </Package>
 </Project>
