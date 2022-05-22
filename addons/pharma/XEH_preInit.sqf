@@ -44,7 +44,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     [LLSTRING(SETTING_REQUIRE_INS_IV),LLSTRING(SETTING_REQUIRE_INS_IV_DESC)],
     "KAT - ADV Medical: Pharmacy",
-    [true],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
