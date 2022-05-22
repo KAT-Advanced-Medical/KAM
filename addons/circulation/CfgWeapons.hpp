@@ -6,40 +6,76 @@ class CfgWeapons {
     class kat_bloodIV_O: ACE_bloodIV {
         displayName = CSTRING(BloodIV_O);
     };
+    class kat_bloodIV_O_N: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_O_N);
+    };
     class kat_bloodIV_A: ACE_bloodIV {
         displayName = CSTRING(BloodIV_A);
+    };
+    class kat_bloodIV_A_N: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_A_N);
     };
     class kat_bloodIV_B: ACE_bloodIV {
         displayName = CSTRING(BloodIV_B);
     };
+    class kat_bloodIV_B_N: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_B_N);
+    };
     class kat_bloodIV_AB: ACE_bloodIV {
         displayName = CSTRING(BloodIV_AB);
+    };
+    class kat_bloodIV_AB_N: ACE_bloodIV {
+        displayName = CSTRING(BloodIV_AB_N);
     };
     class ACE_bloodIV_500;
     class kat_bloodIV_O_500: ACE_bloodIV_500 {
         displayName = CSTRING(BloodIV_O_500);
     };
+    class kat_bloodIV_O_500_N: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_O_500_N);
+    };
     class kat_bloodIV_A_500: ACE_bloodIV_500 {
         displayName = CSTRING(BloodIV_A_500);
+    };
+    class kat_bloodIV_A_500_N: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_A_500_N);
     };
     class kat_bloodIV_B_500: ACE_bloodIV_500 {
         displayName = CSTRING(BloodIV_B_500);
     };
+    class kat_bloodIV_B_500_N: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_B_500_N);
+    };
     class kat_bloodIV_AB_500: ACE_bloodIV_500 {
         displayName = CSTRING(BloodIV_AB_500);
+    };
+    class kat_bloodIV_AB_500_N: ACE_bloodIV_500 {
+        displayName = CSTRING(BloodIV_AB_500_N);
     };
     class ACE_bloodIV_250;
     class kat_bloodIV_O_250: ACE_bloodIV_250 {
         displayName = CSTRING(BloodIV_O_250);
     };
+    class kat_bloodIV_O_250_N: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_O_250_N);
+    };
     class kat_bloodIV_A_250: ACE_bloodIV_250 {
         displayName = CSTRING(BloodIV_A_250);
+    };
+    class kat_bloodIV_A_250_N: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_A_250_N);
     };
     class kat_bloodIV_B_250: ACE_bloodIV_250 {
         displayName = CSTRING(BloodIV_B_250);
     };
+    class kat_bloodIV_B_250_N: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_B_250_N);
+    };
     class kat_bloodIV_AB_250: ACE_bloodIV_250 {
         displayName = CSTRING(BloodIV_AB_250);
+    };
+    class kat_bloodIV_AB_250_N: ACE_bloodIV_250 {
+        displayName = CSTRING(BloodIV_AB_250_N);
     };
     class KAT_Empty_bloodIV_500: ACE_bloodIV
 	{
