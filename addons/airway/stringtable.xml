@@ -942,6 +942,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
+            <German>Die Zeit, wie lange es dauert eine erfolgreiche stabile Seitenlage durchzuführen</German>
             <Polish>Jak długo potrwa ułożenie w pozycji bocznej bezpiecznej</Polish>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayName">
