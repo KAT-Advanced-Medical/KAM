@@ -913,6 +913,7 @@
         <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
             <English>Establishing recovery position</English>
             <German>In die stabile Seitenlage legen</German>
+            <German>In die stabile Seitenlage legen</German>
             <Polish>Układanie w pozycji</Polish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Info">
