@@ -24,7 +24,7 @@
 
 **The ACE Advanced Medical System is nice, but we can do it better, even on a more realistic way and bring it on another level with these addons.**
 
-Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamartaka, Battlekeeper, MJSTIC and Digii / Julian.
+Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamartaka, Battlekeeper, MJSTIC, MiszczuZPolski and Digii / Julian.
 
 ## Big thanks to
 
@@ -35,6 +35,7 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamart
 - [YetheSamartaka](https://github.com/YetheSamartaka)
 - [Battlekeeper](https://github.com/Battlekeeper)
 - [MJSTIC](https://github.com/mazinskihenry)
+- [MJSTIC](https://github.com/MiszczuZPolski)
 - [Digii / Julian](https://github.com/AtrixZockt)
 - [regiregi22](https://github.com/regiregi22)
 
@@ -56,9 +57,10 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamart
 - Breathing
   - [x] Oxygen saturation
   - [x] Pulse-oximeter
+  - [x] Cyanosis diagnose
   - [x] Pneumothorax, tension pneumothorax and hemothorax
 - Circulation
-  - [x] Blood Groups
+  - [x] Blood Groups including Rh Factors
   - [x] Painkillers
   - [x] Automated external defibrillators
   - [x] Settable sucess CPR chances per medical level expertise
