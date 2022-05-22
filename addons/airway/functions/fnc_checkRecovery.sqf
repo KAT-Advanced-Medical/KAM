@@ -21,13 +21,8 @@ params ["_medic", "_patient"];
 
 private _return = true;
 
-//check if patient has inserted larynx
-if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") then {
-    _return = false;
-};
-
-//check if patient has inserted guedeltube
-if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "guedel") then {
+//check if patient has inserted larynx or guedeltube
+if (_patient getVariable [QGVAR(airway_item), ""] in ["larynx","guedel"]) then {
     _return = false;
 };
 
