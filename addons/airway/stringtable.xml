@@ -930,6 +930,7 @@
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_Log">
             <English>%1 established recovery position</English>
+            <German>%1 hat die stabile Seitenlage durchgeführt</German>
             <Polish>%1 ułożył w pozycji bezpiecznej</Polish>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY">
