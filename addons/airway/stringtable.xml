@@ -924,6 +924,7 @@
         </Key>
         <Key ID="STR_kat_airway_Recovery_Cancel">
             <English>Recovery position cancelled</English>
+            <German>Stabile Seitenlage abgebrochen</German>
             <Polish>Przerwano pozycję bezpieczną</Polish>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_Log">
