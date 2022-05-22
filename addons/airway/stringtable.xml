@@ -936,6 +936,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY">
             <English>Time for recovery position</English>
+            <German>Zeit für die stabile Seitenlage</German>
             <Polish>Czas na ułożenie w pozycji bezpiecznej</Polish>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
