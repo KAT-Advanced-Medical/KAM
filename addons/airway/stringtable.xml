@@ -949,6 +949,7 @@
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayNameProgress">
             <English>Cancelling recovery position</English>
             <German>Stabile Seitenlage abbrechen</German>
+            <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerywanie pozycji bezpiecznej</Polish>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY">
