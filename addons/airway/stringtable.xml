@@ -967,5 +967,65 @@
             <Russian>Окрашивает журналы активности AED-X или пульсоксиметра в красный цвет, если какое-либо значение является критическим.</Russian>
             <Japanese>値が重要な場合は、AED-Xまたはパルスオキシメーターのアクティビティログを赤に着色します</Japanese>
         </Key>
+        <Key ID="STR_kat_airway_RecoveryPosition">
+            <English>Established in recovery position</English>
+            <German>In die stabile Seitenlage gebracht</German>
+            <Polish>Ułożony w pozycji bezpiecznej</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_RecoveryPosition_displayName">
+            <English>Establish recovery position</English>
+            <German>In die stabile Seitenlage legen</German>
+            <Polish>Ułóż w pozycji bezpiecznej</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
+            <English>Establishing recovery position</English>
+            <German>In die stabile Seitenlage legen</German>
+            <Polish>Układanie w pozycji</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_Recovery_Info">
+            <English>Recovery position established successfully</English>
+            <German>Erfolgreich in die stabile Seitenlage gelegt</German>
+            <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_Recovery_Cancel">
+            <English>Recovery position cancelled</English>
+            <German>Stabile Seitenlage abgebrochen</German>
+            <Polish>Przerwano pozycję bezpieczną</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_RecoveryPosition_Log">
+            <English>%1 established recovery position</English>
+            <German>%1 hat die stabile Seitenlage durchgeführt</German>
+            <Polish>%1 ułożył w pozycji bezpiecznej</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_RECOVERY">
+            <English>Time for recovery position</English>
+            <German>Zeit für die stabile Seitenlage</German>
+            <Polish>Czas na ułożenie w pozycji bezpiecznej</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
+            <English>How long it will take to establish recovery position</English>
+            <German>Die Zeit, wie lange es dauert eine erfolgreiche stabile Seitenlage durchzuführen</German>
+            <Polish>Jak długo potrwa ułożenie w pozycji bocznej bezpiecznej</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_CancelRecoveryPosition_displayName">
+            <English>Cancel recovery position</English>
+            <German>Stabile Seitenlage abbrechen</German>
+            <Polish>Przerwij pozycję bezpieczną</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_CancelRecoveryPosition_displayNameProgress">
+            <English>Cancelling recovery position</English>
+            <German>Stabile Seitenlage abbrechen</German>
+            <Polish>Przerywanie pozycji bezpiecznej</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_CANCELRECOVERY">
+            <English>Time for cancelling recovery position</English>
+            <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
+            <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_TIME_CANCELRECOVERY_DESC">
+            <English>How long it will take to establish recovery position</English>
+            <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
+            <Polish>Jak długo potrwa przerwanie pozycji bocznej bezpiecznej</Polish>
+        </Key>
     </Package>
 </Project>
