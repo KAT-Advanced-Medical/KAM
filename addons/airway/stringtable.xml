@@ -900,6 +900,7 @@
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition">
             <English>Established in recovery position</English>
+            <German>In die stabile Seitenlage gelegt</German>
             <Polish>Ułożony w pozycji bezpiecznej</Polish>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayName">
