@@ -919,6 +919,7 @@
         <Key ID="STR_kat_airway_Recovery_Info">
             <English>Recovery position established successfully</English>
             <German>Erfolgreich in die stabile Seitenlage gelegt</German>
+            <German>Erfolgreich in die stabile Seitenlage gelegt</German>
             <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Cancel">
