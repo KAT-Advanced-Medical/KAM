@@ -944,6 +944,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY">
             <English>Time for cancelling recovery position</English>
+            <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
             <German>Zeit zum abbrechen der stabilen Seitenlage</German>
             <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
         </Key>
