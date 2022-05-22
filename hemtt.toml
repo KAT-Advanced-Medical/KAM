@@ -1,6 +1,6 @@
 name = "KAM"
 prefix = "kat"
-author = "Katalam"
+author = "Katalam, Tomcat, Kygan, YetheSamartaka, Battlekeeper, MJSTIC, Digii / Julian and MiszczuZPolski"
 template = "cba"
 mainprefix = "x"
 include = ["./include"]
