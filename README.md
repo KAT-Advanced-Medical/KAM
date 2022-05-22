@@ -35,7 +35,7 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamart
 - [YetheSamartaka](https://github.com/YetheSamartaka)
 - [Battlekeeper](https://github.com/Battlekeeper)
 - [MJSTIC](https://github.com/mazinskihenry)
-- [MJSTIC](https://github.com/MiszczuZPolski)
+- [MiszczuZPolski](https://github.com/MiszczuZPolski)
 - [Digii / Julian](https://github.com/AtrixZockt)
 - [regiregi22](https://github.com/regiregi22)
 
@@ -98,7 +98,7 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamart
 
 ## Class Names - WIP
 
-- [click here](https://github.com/Katalam/kat_aceAdvMedical/wiki/Class-Names)
+- [click here](https://github.com/Tomcat-SG/KAM/wiki/Classnames)
 
 ## Contributing
 
