@@ -106,15 +106,7 @@ You can help out with the ongoing development by looking for potential bugs in m
 
 ### Building
 
-The build process is base on the [ACE3 build process](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html), so you can follow the steps there. Basically the following is needed:
-
-- correctly setup project drive (P: drive)
-- download/clone kat_aceAdvMedical GitHub repo
-- switch to the tools/ folder and execute ```python setup.py```
-- you can build by executing ```python build.py``` from the tools folder
-- for testing include your mod by adding ```-mod=x\kat``` as start parameter
-
-For building release builds see [ACE3 reference](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html).
+[Setup dev-enviroment](https://github.com/Tomcat-SG/KAM/wiki/Build-KAM-with-SQFC)
 
 ### Submitting issues and requesting features
 
