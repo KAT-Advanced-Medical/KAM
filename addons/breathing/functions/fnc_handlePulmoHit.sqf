@@ -16,7 +16,8 @@
  * Public: No
  */
 
-params ["_unit", "_bodyPart", "_damage", "", "_ammo",""];
+ params ["_unit", "_allDamages", "", "_ammo"];
+ _allDamages select 0 params ["_damage","_bodyPart"];
 
 if !(GVAR(enable)) exitWith {};
 if !(_bodyPart isEqualTo "Body") exitWith {};

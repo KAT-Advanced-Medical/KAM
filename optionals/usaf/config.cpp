@@ -4,12 +4,12 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        units[] = { };
-        weapons[] = { };
+        units[] = {};
+        weapons[] = {};
         magazines[] = {};
         requiredAddons[] = {
-            "kat_acemisc",
-            "rhs_usaf"
+            "kat_misc",
+            "rhsusf_main"
         };
         author = "Katalam";
         authors[] = {"Katalam"};

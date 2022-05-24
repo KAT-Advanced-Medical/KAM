@@ -60,17 +60,29 @@ class GVAR(RscChangeBloodType): RscDisplayAttributes {
 							colorBackground[] = {0, 0, 0, 0.7};
 							class Items {
 								class BloodType_0 {
-									text = "0";
+									text = "O+";
                                     default = 1;
 								};
+								class BloodType_0_N {
+									text = "O-";
+								};
 								class BloodType_A {
-									text = "A";
+									text = "A+";
 								};
-								class BloodType_B {
-									text = "B";
+								class BloodType_A_N {
+									text = "A-";
 								};
-								class BloodType_AB {
-									text = "AB";
+                                class BloodType_B {
+									text = "B+";
+								};
+								class BloodType_B_N {
+									text = "B-";
+								};
+                                class BloodType_AB {
+									text = "AB+";
+								};
+								class BloodType_AB_N {
+									text = "AB-";
 								};
 							};
 						};

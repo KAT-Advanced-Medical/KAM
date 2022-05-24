@@ -9,6 +9,9 @@
 Tomcat (https://github.com/Tomcat-SG)
 Kygan (https://github.com/Conrimaceogain)
 YetheSamartaka (https://github.com/YetheSamartaka)
+Battlekeeper (https://github.com/Battlekeeper)
+MJSTIC (https://github.com/mazinskihenry)
+Digii / Julian (https://github.com/AtrixZockt)
 
 
 # ORIGINAL AUTHOR
@@ -27,3 +30,7 @@ MiszczuZPolski
 Skrax and [TFH] Team
 Fanrod & his associate group called K.H.4
 ReanaPatrol_IT
+[TEN] skythunder_
+[MOS] PRODIGY
+DMKR
+[MCOE] Kile

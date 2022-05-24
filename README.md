@@ -24,7 +24,7 @@
 
 **The ACE Advanced Medical System is nice, but we can do it better, even on a more realistic way and bring it on another level with these addons.**
 
-Originaly created by Katalam, currently maintained by Tomcat, Kygan and YetheSamartaka.
+Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamartaka, Battlekeeper, MJSTIC, MiszczuZPolski and Digii / Julian.
 
 ## Big thanks to
 
@@ -33,6 +33,10 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan and YetheSam
 - [Tomcat-SG](https://github.com/Tomcat-SG)
 - [Kygan/Conrimaceogain](https://github.com/Conrimaceogain)
 - [YetheSamartaka](https://github.com/YetheSamartaka)
+- [Battlekeeper](https://github.com/Battlekeeper)
+- [MJSTIC](https://github.com/mazinskihenry)
+- [MiszczuZPolski](https://github.com/MiszczuZPolski)
+- [Digii / Julian](https://github.com/AtrixZockt)
 - [regiregi22](https://github.com/regiregi22)
 
 ## Disclaimer from current Developers
@@ -53,9 +57,10 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan and YetheSam
 - Breathing
   - [x] Oxygen saturation
   - [x] Pulse-oximeter
+  - [x] Cyanosis diagnose
   - [x] Pneumothorax, tension pneumothorax and hemothorax
 - Circulation
-  - [x] Blood Groups
+  - [x] Blood Groups including Rh Factors
   - [x] Painkillers
   - [x] Automated external defibrillators
   - [x] Settable sucess CPR chances per medical level expertise
@@ -67,6 +72,11 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan and YetheSam
 - Misc
   - [ ] Big Backpack?
   - [x] Workable IV stand
+- Zeus modules
+  - [x] Manage unit airways
+  - [x] Change blood group / volume
+  - [x] Change shockable state
+  - [x] Open unit medical menu
 
 ## Known Issues
 
@@ -88,7 +98,7 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan and YetheSam
 
 ## Class Names - WIP
 
-- [click here](https://github.com/Katalam/kat_aceAdvMedical/wiki/Class-Names)
+- [click here](https://github.com/Tomcat-SG/KAM/wiki/Classnames)
 
 ## Contributing
 
@@ -96,19 +106,11 @@ You can help out with the ongoing development by looking for potential bugs in m
 
 ### Building
 
-The build process is base on the [ACE3 build process](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html), so you can follow the steps there. Basically the following is needed:
-
-- correctly setup project drive (P: drive)
-- download/clone kat_aceAdvMedical GitHub repo
-- switch to the tools/ folder and execute ```python setup.py```
-- you can build by executing ```python build.py``` from the tools folder
-- for testing include your mod by adding ```-mod=x\kat``` as start parameter
-
-For building release builds see [ACE3 reference](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html).
+[Setup dev-enviroment](https://github.com/Tomcat-SG/KAM/wiki/Build-KAM-with-SQFC)
 
 ### Submitting issues and requesting features
 
-Please, use my [Issue Tracker](https://github.com/Katalam/kat_aceAdvMedical/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
+Please, use our [Issue Tracker](https://github.com/Tomcat-SG/KAM/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
 
 ## License
 

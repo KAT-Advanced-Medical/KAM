@@ -36,7 +36,7 @@ private _bloodLoss = _target getVariable ["ace_medical_bloodVolume", 6.0];
 private _asystole = _target getVariable [QGVAR(asystole), 0];
 
 if (_asystole isEqualTo 0) then {
-    if (_bloodLoss <= 2.8) then {
+    if (_bloodLoss <= 3.6) then {
         _target setVariable [QGVAR(asystole), 2, true];
         _asystole = _target getVariable [QGVAR(asystole), 2];
 
@@ -97,12 +97,12 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
     params ["_player", "_target"];
     ((_target distance2D _player) > GVAR(distanceLimit_AEDX)) || _player getVariable [QGVAR(returnedAED), true]
 }, {
-    params ["_player", "_target"];
-	if (_player getVariable [QGVAR(returnedAED), true]) exitWith {};
-    [_player, _target] call FUNC(returnAED_X);
+    params ["_player", "_target", "_returnAED"];
+    if (_player getVariable [QGVAR(returnedAED), true]) exitWith {};
+    [_player, _target, true] call FUNC(returnAED_X);
 }, [_player, _target], GVAR(timeLimit_AEDX), {
-    params ["_player", "_target"];
-    [_player, _target] call FUNC(returnAED_X);
+    params ["_player", "_target", "_returnAED"];
+    [_player, _target, true] call FUNC(returnAED_X);
 }] call CBA_fnc_waitUntilAndExecute;
 
 // spawns the heart rate beep if enabled in CBA settings

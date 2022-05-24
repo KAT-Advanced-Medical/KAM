@@ -57,7 +57,7 @@ private _fnc_sliderMove = {
 	private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
 	private _unit = attachedTo _logic;
     private _curVal = _unit getVariable ["ace_medical_bloodVolume", 6.0];
-    _slider ctrlSetTooltip format ["%1%3 (was %2%3)", parseNumber((sliderPosition _slider) toFixed 2), (parseNumber (_curVal toFixed 2)), "L"];
+    _slider ctrlSetTooltip format [localize "STR_kat_zeus_sliderFormat13was23", parseNumber((sliderPosition _slider) toFixed 2), (parseNumber (_curVal toFixed 2)), "L"];
 };
 
 private _slider = _display displayCtrl 26423;
@@ -72,10 +72,14 @@ _slider ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove];
 private _playerBloodyType = _unit getVariable [QEGVAR(circulation,bloodtype), "O"];
 private _select = switch (_playerBloodyType) do 
 {
-	case "O":  {0};
-  	case "A":  {1};
- 	case "B":  {2};
-  	case "AB": {3};
+	case "O+":  {0};
+  	case "O-":  {1};
+ 	case "A+":  {2};
+  	case "A-":  {3};
+    case "B+":  {4};
+    case "B-":  {5};
+ 	case "AB+":  {6};
+  	case "AB-":  {7};
     default {0};
 };
 (_display displayCtrl 16107) lbSetCurSel _select;
@@ -91,7 +95,7 @@ private _fnc_onConfirm = {
 
 	private _unit = attachedTo _logic;
 	private _bloodtypeSel = lbCurSel (_display displayCtrl 16107);
-	private _bloodtype = ["0","A","B","AB"] select _bloodtypeSel;
+	private _bloodtype = ["O+","O-","A+","A-","B+","B-","AB+","AB-"] select _bloodtypeSel;
 	_unit setVariable [QEGVAR(circulation,bloodtype), _bloodtype, true];
     private _dogtagData = _unit getVariable "ace_dogtags_dogtagData";
     if(!isNil "_dogtagData") then {

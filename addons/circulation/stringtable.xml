@@ -12,9 +12,22 @@
             <French>Ace-Circulation activé?</French>
             <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
             <Italian>Attivare ACE-Circolazione?</Italian>
+            <Russian>ACE-циркуляция активирована?</Russian>
+            <Japanese>ACE-Circulation を有効化しますか?</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_RHYTHM_ENABLE">
             <English>Advanced Rhythm activated?</English>
+            <German>Fortgeschrittenen Rhythmus aktivieren?</German>
+            <French>Activer rythme avancé?</French>
+            <Polish>Zaawansowane Rytmy włączone?</Polish>
+            <Korean>고급 리듬이 활성화되었습니까?</Korean>
+            <Turkish>Gelişmiş Ritim etkinleştirildi mi?</Turkish>
+            <Chinese>先进的节奏被激活？</Chinese>
+            <Italian>Ritmo avanzato attivato?</Italian>
+            <Spanish>¿Ritmo avanzado activado?</Spanish>
+            <Czech>Pokročilý rytmus aktivován?</Czech>
+            <Japanese>Advanced Rhythm を有効化しますか?</Japanese>
+            <Russian>Продвинутый ритм активирован?</Russian>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_variableHR_ENABLE">
             <English>Metabolism Dependent heartrate?</English>
@@ -27,6 +40,8 @@
             <French>Le pouls dépend du métabolisme?</French>
             <Turkish>Metabolizmaya Bağımlı kalp hızı?</Turkish>
             <Italian>La frequenza cardiaca dipende dal metabolismo?</Italian>
+            <Russian>Метаболизм Зависимый сердечный ритм?</Russian>
+            <Japanese>代謝に依存する心拍数 を有効化しますか?</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_loadout">
             <English>Different loadoutname</English>
@@ -39,294 +54,680 @@
             <French>Nom d'équipement différent</French>
             <Turkish>Farklı ekipman adı</Turkish>
             <Italian>Loadoutname diverso</Italian>
+            <Russian>Другое Лоадут имя</Russian>
+            <Japanese>別のロードアウト名</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O">
-            <English>Blood IV (1000ml) BT: 0</English>
-            <German>Blut IV (1000ml) BG: 0</German>
-            <Polish>Krew IV (1000ml) GK: 0</Polish>
-            <Spanish>Sangre IV (1000ml) GS: 0</Spanish>
-            <Chinese>O型血液包 (1000ml)</Chinese>
-            <Czech>Krev IV (1000ml) KS: 0</Czech>
-            <Korean>O형혈액 (1000ml)</Korean>
-            <French>Sang IV (1000ml) GS: O</French>
-            <Turkish>Kan IV (1000ml) KG: 0</Turkish>
-            <Italian>Sangue EV (1000ml) GS: 0</Italian>
+            <English>Blood IV (1000ml) BT: 0+</English>
+            <German>Blut IV (1000ml) BG: 0+</German>
+            <Polish>Krew IV (1000ml) GK: 0+</Polish>
+            <Spanish>Sangre IV (1000ml) GS: 0+</Spanish>
+            <Chinese>O+型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: 0+</Czech>
+            <Korean>O+형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: O+</French>
+            <Turkish>Kan IV (1000ml) KG: 0+</Turkish>
+            <Italian>Sangue EV (1000ml) GS: 0+</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : 0+</Russian>
+            <Japanese>血液IV (1000ml) O+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_O_N">
+            <English>Blood IV (1000ml) BT: 0-</English>
+            <German>Blut IV (1000ml) BG: 0-</German>
+            <Polish>Krew IV (1000ml) GK: 0-</Polish>
+            <Spanish>Sangre IV (1000ml) GS: 0-</Spanish>
+            <Chinese>O-型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: 0-</Czech>
+            <Korean>O-형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: O-</French>
+            <Turkish>Kan IV (1000ml) KG: 0-</Turkish>
+            <Italian>Sangue EV (1000ml) GS: 0-</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : 0-</Russian>
+            <Japanese>血液IV (1000ml) O-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A">
-            <English>Blood IV (1000ml) BT: A</English>
-            <German>Blut IV (1000ml) BG: A</German>
-            <Polish>Krew IV (1000ml) GK: A</Polish>
-            <Spanish>Sangre IV (1000ml) GS: A</Spanish>
-            <Chinese>A型血液包 (1000ml)</Chinese>
-            <Czech>Krev IV (1000ml) KS: A</Czech>
-            <Korean>A형혈액 (1000ml)</Korean>
-            <French>Sang IV (1000ml) GS: A</French>
-            <Turkish>Kan IV (1000ml) KG: A</Turkish>
-            <Italian>Sangue EV (1000ml) GS: A</Italian>
+            <English>Blood IV (1000ml) BT: A+</English>
+            <German>Blut IV (1000ml) BG: A+</German>
+            <Polish>Krew IV (1000ml) GK: A+</Polish>
+            <Spanish>Sangre IV (1000ml) GS: A+</Spanish>
+            <Chinese>A+型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: A+</Czech>
+            <Korean>A+형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: A+</French>
+            <Turkish>Kan IV (1000ml) KG: A+</Turkish>
+            <Italian>Sangue EV (1000ml) GS: A+</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : А+</Russian>
+            <Japanese>血液IV (1000ml) A+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_A_N">
+            <English>Blood IV (1000ml) BT: A-</English>
+            <German>Blut IV (1000ml) BG: A-</German>
+            <Polish>Krew IV (1000ml) GK: A-</Polish>
+            <Spanish>Sangre IV (1000ml) GS: A-</Spanish>
+            <Chinese>A-型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: A-</Czech>
+            <Korean>A-형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: A-</French>
+            <Turkish>Kan IV (1000ml) KG: A-</Turkish>
+            <Italian>Sangue EV (1000ml) GS: A-</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : А-</Russian>
+            <Japanese>血液IV (1000ml) A-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B">
-            <English>Blood IV (1000ml) BT: B</English>
-            <German>Blut IV (1000ml) BG: B</German>
-            <Polish>Krew IV (1000ml) GK: B</Polish>
-            <Spanish>Sangre IV (1000ml) GS: B</Spanish>
-            <Chinese>B型血液包 (1000ml)</Chinese>
-            <Czech>Krev IV (1000ml) KS: B</Czech>
-            <Korean>B형혈액 (1000ml)</Korean>
-            <French>Sang IV (1000ml) GS: B</French>
-            <Turkish>Kan IV (1000ml) KG: B</Turkish>
-            <Italian>Sangue EV (1000ml) GS: B</Italian>
+            <English>Blood IV (1000ml) BT: B+</English>
+            <German>Blut IV (1000ml) BG: B+</German>
+            <Polish>Krew IV (1000ml) GK: B+</Polish>
+            <Spanish>Sangre IV (1000ml) GS: B+</Spanish>
+            <Chinese>B+型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: B+</Czech>
+            <Korean>B+형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: B+</French>
+            <Turkish>Kan IV (1000ml) KG: B+</Turkish>
+            <Italian>Sangue EV (1000ml) GS: B+</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : B+</Russian>
+            <Japanese>血液IV (1000ml) B+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_B_N">
+            <English>Blood IV (1000ml) BT: B-</English>
+            <German>Blut IV (1000ml) BG: B-</German>
+            <Polish>Krew IV (1000ml) GK: B-</Polish>
+            <Spanish>Sangre IV (1000ml) GS: B-</Spanish>
+            <Chinese>B-型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: B-</Czech>
+            <Korean>B-형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: B-</French>
+            <Turkish>Kan IV (1000ml) KG: B-</Turkish>
+            <Italian>Sangue EV (1000ml) GS: B-</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : B-</Russian>
+            <Japanese>血液IV (1000ml) B-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB">
-            <English>Blood IV (1000ml) BT: AB</English>
-            <German>Blut IV (1000ml) BG: AB</German>
-            <Polish>Krew IV (1000ml) GK: AB</Polish>
-            <Spanish>Sangre IV (1000ml) GS: AB</Spanish>
-            <Chinese>AB型血液包 (1000ml)</Chinese>
-            <Czech>Krev IV (1000ml) KS: AB</Czech>
-            <Korean>AB형혈액 (1000ml)</Korean>
-            <French>Sang IV (1000ml) GS: AB</French>
-            <Turkish>Kan IV (1000ml) KG: AB</Turkish>
-            <Italian>Sangue EV (1000ml) GS: AB</Italian>
+            <English>Blood IV (1000ml) BT: AB+</English>
+            <German>Blut IV (1000ml) BG: AB+</German>
+            <Polish>Krew IV (1000ml) GK: AB+</Polish>
+            <Spanish>Sangre IV (1000ml) GS: AB+</Spanish>
+            <Chinese>AB+型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: AB+</Czech>
+            <Korean>AB+형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: AB+</French>
+            <Turkish>Kan IV (1000ml) KG: AB+</Turkish>
+            <Italian>Sangue EV (1000ml) GS: AB+</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : AB+</Russian>
+            <Japanese>血液IV (1000ml) AB+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_AB_N">
+            <English>Blood IV (1000ml) BT: AB-</English>
+            <German>Blut IV (1000ml) BG: AB-</German>
+            <Polish>Krew IV (1000ml) GK: AB-</Polish>
+            <Spanish>Sangre IV (1000ml) GS: AB-</Spanish>
+            <Chinese>AB-型血液包 (1000ml)</Chinese>
+            <Czech>Krev IV (1000ml) KS: AB-</Czech>
+            <Korean>AB-형혈액 (1000ml)</Korean>
+            <French>Sang IV (1000ml) GS: AB-</French>
+            <Turkish>Kan IV (1000ml) KG: AB-</Turkish>
+            <Italian>Sangue EV (1000ml) GS: AB-</Italian>
+            <Russian>Кровь IV (1000 мл) Гk : АB-</Russian>
+            <Japanese>血液IV (1000ml) AB-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_500">
-            <English>Blood IV (500ml) BT: 0</English>
-            <German>Blut IV (500ml) BG: 0</German>
-            <Polish>Krew IV (500ml) GK: 0</Polish>
-            <Spanish>Sangre IV (500ml) GS: 0</Spanish>
-            <Chinese>O型血液包 (500ml)</Chinese>
-            <Czech>Krev IV (500ml) KS: 0</Czech>
-            <Korean>O형혈액 (500ml)</Korean>
-            <French>Sang IV (500ml) GS: O</French>
-            <Turkish>Kan IV (500ml) KG: 0</Turkish>
-            <Italian>Sangue EV (500ml) GS: 0</Italian>
+            <English>Blood IV (500ml) BT: 0+</English>
+            <German>Blut IV (500ml) BG: 0+</German>
+            <Polish>Krew IV (500ml) GK: 0+</Polish>
+            <Spanish>Sangre IV (500ml) GS: 0+</Spanish>
+            <Chinese>O+型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: 0+</Czech>
+            <Korean>O+형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: O+</French>
+            <Turkish>Kan IV (500ml) KG: 0+</Turkish>
+            <Italian>Sangue EV (500ml) GS: 0+</Italian>
+            <Russian>Кровь IV (500 мл) Гk : 0+</Russian>
+            <Japanese>血液IV (500ml) O+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_O_500_N">
+            <English>Blood IV (500ml) BT: 0-</English>
+            <German>Blut IV (500ml) BG: 0-</German>
+            <Polish>Krew IV (500ml) GK: 0-</Polish>
+            <Spanish>Sangre IV (500ml) GS: 0-</Spanish>
+            <Chinese>O-型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: 0-</Czech>
+            <Korean>O-형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: O-</French>
+            <Turkish>Kan IV (500ml) KG: 0-</Turkish>
+            <Italian>Sangue EV (500ml) GS: 0-</Italian>
+            <Russian>Кровь IV (500 мл) Гk : 0-</Russian>
+            <Japanese>血液IV (500ml) O-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_500">
-            <English>Blood IV (500ml) BT: A</English>
-            <German>Blut IV (500ml) BG: A</German>
-            <Polish>Krew IV (500ml) GK: A</Polish>
-            <Spanish>Sangre IV (500ml) GS: A</Spanish>
-            <Chinese>A型血液包 (500ml)</Chinese>
-            <Czech>Krev IV (500ml) KS: A</Czech>
-            <Korean>A형혈액 (500ml)</Korean>
-            <French>Sang IV (500ml) GS: A</French>
-            <Turkish>Kan IV (500ml) KG: A</Turkish>
-            <Italian>Sangue EV (500ml) GS: A</Italian>
+            <English>Blood IV (500ml) BT: A+</English>
+            <German>Blut IV (500ml) BG: A+</German>
+            <Polish>Krew IV (500ml) GK: A+</Polish>
+            <Spanish>Sangre IV (500ml) GS: A+</Spanish>
+            <Chinese>A+型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: A+</Czech>
+            <Korean>A+형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: A+</French>
+            <Turkish>Kan IV (500ml) KG: A+</Turkish>
+            <Italian>Sangue EV (500ml) GS: A+</Italian>
+            <Russian>Кровь IV (500 мл) Гk : A+</Russian>
+            <Japanese>血液IV (500ml) A+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_A_500_N">
+            <English>Blood IV (500ml) BT: A-</English>
+            <German>Blut IV (500ml) BG: A-</German>
+            <Polish>Krew IV (500ml) GK: A-</Polish>
+            <Spanish>Sangre IV (500ml) GS: A-</Spanish>
+            <Chinese>A-型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: A-</Czech>
+            <Korean>A-형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: A-</French>
+            <Turkish>Kan IV (500ml) KG: A-</Turkish>
+            <Italian>Sangue EV (500ml) GS: A-</Italian>
+            <Russian>Кровь IV (500 мл) Гk : A-</Russian>
+            <Japanese>血液IV (500ml) A-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_500">
-            <English>Blood IV (500ml) BT: B</English>
-            <German>Blut IV (500ml) BG: B</German>
-            <Polish>Krew IV (500ml) GK: B</Polish>
-            <Spanish>Sangre IV (500ml) GS: B</Spanish>
-            <Chinese>B型血液包 (500ml)</Chinese>
-            <Czech>Krev IV (500ml) KS: B</Czech>
-            <Korean>B형혈액 (500ml)</Korean>
-            <French>Sang IV (500ml) GS: B</French>
-            <Turkish>Kan IV (500ml) KG: B</Turkish>
-            <Italian>Sangue EV (500ml) GS: B</Italian>
+            <English>Blood IV (500ml) BT: B+</English>
+            <German>Blut IV (500ml) BG: B+</German>
+            <Polish>Krew IV (500ml) GK: B+</Polish>
+            <Spanish>Sangre IV (500ml) GS: B+</Spanish>
+            <Chinese>B+型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: B+</Czech>
+            <Korean>B+형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: B+</French>
+            <Turkish>Kan IV (500ml) KG: B+</Turkish>
+            <Italian>Sangue EV (500ml) GS: B+</Italian>
+            <Russian>Кровь IV (500 мл) Гk : B+</Russian>
+            <Japanese>血液IV (500ml) B+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_B_500_N">
+            <English>Blood IV (500ml) BT: B-</English>
+            <German>Blut IV (500ml) BG: B-</German>
+            <Polish>Krew IV (500ml) GK: B-</Polish>
+            <Spanish>Sangre IV (500ml) GS: B-</Spanish>
+            <Chinese>B-型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: B-</Czech>
+            <Korean>B-형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: B-</French>
+            <Turkish>Kan IV (500ml) KG: B-</Turkish>
+            <Italian>Sangue EV (500ml) GS: B-</Italian>
+            <Russian>Кровь IV (500 мл) Гk : B-</Russian>
+            <Japanese>血液IV (500ml) B-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_500">
-            <English>Blood IV (500ml) BT: AB</English>
-            <German>Blut IV (500ml) BG: AB</German>
-            <Polish>Krew IV (500ml) GK: AB</Polish>
-            <Spanish>Sangre IV (500ml) GS: AB</Spanish>
-            <Chinese>AB型血液包 (500ml)</Chinese>
-            <Czech>Krev IV (500ml) KS: AB</Czech>
-            <Korean>AB형혈액 (500ml)</Korean>
-            <French>Sang IV (500ml) GS: AB</French>
-            <Turkish>Kan IV (500ml) KG: AB</Turkish>
-            <Italian>Sangue EV (500ml) GS: AB</Italian>
+            <English>Blood IV (500ml) BT: AB+</English>
+            <German>Blut IV (500ml) BG: AB+</German>
+            <Polish>Krew IV (500ml) GK: AB+</Polish>
+            <Spanish>Sangre IV (500ml) GS: AB+</Spanish>
+            <Chinese>AB+型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: AB+</Czech>
+            <Korean>AB+형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: AB+</French>
+            <Turkish>Kan IV (500ml) KG: AB+</Turkish>
+            <Italian>Sangue EV (500ml) GS: AB+</Italian>
+            <Russian>Кровь IV (500 мл) Гk : AB+</Russian>
+            <Japanese>血液IV (500ml) AB+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_AB_500_N">
+            <English>Blood IV (500ml) BT: AB-</English>
+            <German>Blut IV (500ml) BG: AB-</German>
+            <Polish>Krew IV (500ml) GK: AB-</Polish>
+            <Spanish>Sangre IV (500ml) GS: AB-</Spanish>
+            <Chinese>AB-型血液包 (500ml)</Chinese>
+            <Czech>Krev IV (500ml) KS: AB-</Czech>
+            <Korean>AB-형혈액 (500ml)</Korean>
+            <French>Sang IV (500ml) GS: AB-</French>
+            <Turkish>Kan IV (500ml) KG: AB-</Turkish>
+            <Italian>Sangue EV (500ml) GS: AB-</Italian>
+            <Russian>Кровь IV (500 мл) Гk : AB-</Russian>
+            <Japanese>血液IV (500ml) AB-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O_250">
-            <English>Blood IV (250ml) BT: 0</English>
-            <German>Blut IV (250ml) BG: 0</German>
-            <Polish>Krew IV (250ml) GK: 0</Polish>
-            <Spanish>Sangre IV (250ML) GS: 0</Spanish>
-            <Chinese>O型血液包 (250ml)</Chinese>
-            <Czech>Krev IV (250ml) KS: 0</Czech>
-            <Korean>O형혈액 (250ml)</Korean>
-            <French>Sang IV (250ml) GS: O</French>
-            <Turkish>Kan IV (250ml) KG: 0</Turkish>
-            <Italian>Sangue EV (250ml) GS: 0</Italian>
+            <English>Blood IV (250ml) BT: 0+</English>
+            <German>Blut IV (250ml) BG: 0+</German>
+            <Polish>Krew IV (250ml) GK: 0+</Polish>
+            <Spanish>Sangre IV (250ML) GS: 0+</Spanish>
+            <Chinese>O+型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: 0+</Czech>
+            <Korean>O+형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: O+</French>
+            <Turkish>Kan IV (250ml) KG: 0+</Turkish>
+            <Italian>Sangue EV (250ml) GS: 0+</Italian>
+            <Russian>Кровь IV (250 мл) Гk : 0+</Russian>
+            <Japanese>血液IV (250ml) O+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_O_250_N">
+            <English>Blood IV (250ml) BT: 0-</English>
+            <German>Blut IV (250ml) BG: 0-</German>
+            <Polish>Krew IV (250ml) GK: 0-</Polish>
+            <Spanish>Sangre IV (250ML) GS: 0-</Spanish>
+            <Chinese>O-型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: 0-</Czech>
+            <Korean>O-형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: O-</French>
+            <Turkish>Kan IV (250ml) KG: 0-</Turkish>
+            <Italian>Sangue EV (250ml) GS: 0-</Italian>
+            <Russian>Кровь IV (250 мл) Гk : 0-</Russian>
+            <Japanese>血液IV (250ml) O-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_A_250">
-            <English>Blood IV (250ml) BT: A</English>
-            <German>Blut IV (250ml) BG: A</German>
-            <Polish>Krew IV (250ml) GK: A</Polish>
-            <Spanish>Sangre IV (250ML) GS: A</Spanish>
-            <Chinese>A型血液包 (250ml)</Chinese>
-            <Czech>Krev IV (250ml) KS: A</Czech>
-            <Korean>A형혈액 (250ml)</Korean>
-            <French>Sang IV (250ml) GS: A</French>
-            <Turkish>Kan IV (250ml) KG: A</Turkish>
-            <Italian>Sangue EV (250ml) GS: A</Italian>
+            <English>Blood IV (250ml) BT: A+</English>
+            <German>Blut IV (250ml) BG: A+</German>
+            <Polish>Krew IV (250ml) GK: A+</Polish>
+            <Spanish>Sangre IV (250ML) GS: A+</Spanish>
+            <Chinese>A+型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: A+</Czech>
+            <Korean>A+형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: A+</French>
+            <Turkish>Kan IV (250ml) KG: A+</Turkish>
+            <Italian>Sangue EV (250ml) GS: A+</Italian>
+            <Russian>Кровь IV (250 мл) Гk : A+</Russian>
+            <Japanese>血液IV (250ml) A+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_A_250_N">
+            <English>Blood IV (250ml) BT: A-</English>
+            <German>Blut IV (250ml) BG: A-</German>
+            <Polish>Krew IV (250ml) GK: A-</Polish>
+            <Spanish>Sangre IV (250ML) GS: A-</Spanish>
+            <Chinese>A-型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: A-</Czech>
+            <Korean>A-형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: A-</French>
+            <Turkish>Kan IV (250ml) KG: A-</Turkish>
+            <Italian>Sangue EV (250ml) GS: A-</Italian>
+            <Russian>Кровь IV (250 мл) Гk : A-</Russian>
+            <Japanese>血液IV (250ml) A-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_B_250">
-            <English>Blood IV (250ml) BT: B</English>
-            <German>Blut IV (250ml) BG: B</German>
-            <Polish>Krew IV (250ml) GK: B</Polish>
-            <Spanish>Sangre IV (250ML) GS: B</Spanish>
-            <Chinese>B型血液包 (250ml)</Chinese>
-            <Czech>Krev IV (250ml) KS: B</Czech>
-            <Korean>B형혈액 (250ml)</Korean>
-            <French>Sang IV (250ml) GS: B</French>
-            <Turkish>Kan IV (250ml) KG: B</Turkish>
-            <Italian>Sangue EV (250ml) GS: B</Italian>
+            <English>Blood IV (250ml) BT: B+</English>
+            <German>Blut IV (250ml) BG: B+</German>
+            <Polish>Krew IV (250ml) GK: B+</Polish>
+            <Spanish>Sangre IV (250ML) GS: B+</Spanish>
+            <Chinese>B+型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: B+</Czech>
+            <Korean>B+형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: B+</French>
+            <Turkish>Kan IV (250ml) KG: B+</Turkish>
+            <Italian>Sangue EV (250ml) GS: B+</Italian>
+            <Russian>Кровь IV (250 мл) Гk : B+</Russian>
+            <Japanese>血液IV (250ml) B+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_B_250_N">
+            <English>Blood IV (250ml) BT: B-</English>
+            <German>Blut IV (250ml) BG: B-</German>
+            <Polish>Krew IV (250ml) GK: B-</Polish>
+            <Spanish>Sangre IV (250ML) GS: B-</Spanish>
+            <Chinese>B-型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: B-</Czech>
+            <Korean>B-형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: B-</French>
+            <Turkish>Kan IV (250ml) KG: B-</Turkish>
+            <Italian>Sangue EV (250ml) GS: B-</Italian>
+            <Russian>Кровь IV (250 мл) Гk : B-</Russian>
+            <Japanese>血液IV (250ml) B-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_BloodIV_AB_250">
-            <English>Blood IV (250ml) BT: AB</English>
-            <German>Blut IV (250ml) BG: AB</German>
-            <Polish>Krew IV (250ml) GK: AB</Polish>
-            <Spanish>Sangre IV (250ML) GS: AB</Spanish>
-            <Chinese>AB型血液包 (250ml)</Chinese>
-            <Czech>Krev IV (250ml) KS: AB</Czech>
-            <Korean>AB형혈액 (250ml)</Korean>
-            <French>Sang IV (250ml) GS: AB</French>
-            <Turkish>Kan IV (250ml) KG: AB</Turkish>
-            <Italian>Sangue EV (250ml) GS: AB</Italian>
+            <English>Blood IV (250ml) BT: AB+</English>
+            <German>Blut IV (250ml) BG: AB+</German>
+            <Polish>Krew IV (250ml) GK: AB+</Polish>
+            <Spanish>Sangre IV (250ML) GS: AB+</Spanish>
+            <Chinese>AB+型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: AB+</Czech>
+            <Korean>AB+형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: AB+</French>
+            <Turkish>Kan IV (250ml) KG: AB+</Turkish>
+            <Italian>Sangue EV (250ml) GS: AB+</Italian>
+            <Russian>Кровь IV (250 мл) Гk : AB+</Russian>
+            <Japanese>血液IV (250ml) AB+型</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_BloodIV_AB_250_N">
+            <English>Blood IV (250ml) BT: AB-</English>
+            <German>Blut IV (250ml) BG: AB-</German>
+            <Polish>Krew IV (250ml) GK: AB-</Polish>
+            <Spanish>Sangre IV (250ML) GS: AB-</Spanish>
+            <Chinese>AB-型血液包 (250ml)</Chinese>
+            <Czech>Krev IV (250ml) KS: AB-</Czech>
+            <Korean>AB-형혈액 (250ml)</Korean>
+            <French>Sang IV (250ml) GS: AB-</French>
+            <Turkish>Kan IV (250ml) KG: AB-</Turkish>
+            <Italian>Sangue EV (250ml) GS: AB-</Italian>
+            <Russian>Кровь IV (250 мл) Гk : AB-</Russian>
+            <Japanese>血液IV (250ml) AB-型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_O">
-            <English>Give Blood IV (1000ml) BT: 0</English>
-            <German>Bluttransfusion IV (1000ml) BG: 0</German>
-            <Polish>Podaj Krew IV (1000ml) GK: 0</Polish>
-            <Spanish>Administrar Sangre IV (1000ml) GS: 0</Spanish>
-            <Chinese>輸血液 (O型 1000ml)</Chinese>
-            <Czech>Dát Krev IV (1000ml) KS: 0</Czech>
-            <Korean>수혈중 O형혈액(1000ml)</Korean>
-            <French>Transfusion de sang IV (1000ml) GS: O</French>
-            <Turkish>Kan IV (1000ml) KG: 0 Ver</Turkish>
-            <Italian>Somministrare Sangue EV (1000ml) GS: 0</Italian>
+            <English>Give Blood IV (1000ml) BT: 0+</English>
+            <German>Bluttransfusion IV (1000ml) BG: 0+</German>
+            <Polish>Podaj Krew IV (1000ml) GK: 0+</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: 0+</Spanish>
+            <Chinese>輸血液 (O+型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: 0+</Czech>
+            <Korean>O+형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: O+</French>
+            <Turkish>Kan IV (1000ml) KG: 0+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: 0+</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : 0+</Russian>
+            <Japanese>血液IV (1000ml) O+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_BloodIV_O_N">
+            <English>Give Blood IV (1000ml) BT: 0-</English>
+            <German>Bluttransfusion IV (1000ml) BG: 0-</German>
+            <Polish>Podaj Krew IV (1000ml) GK: 0-</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: 0-</Spanish>
+            <Chinese>輸血液 (O-型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: 0-</Czech>
+            <Korean>O-형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: O-</French>
+            <Turkish>Kan IV (1000ml) KG: 0- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: 0-</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : 0-</Russian>
+            <Japanese>血液IV (1000ml) O-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_A">
-            <English>Give Blood IV (1000ml) BT: A</English>
-            <German>Bluttransfusion IV (1000ml) BG: A</German>
-            <Polish>Podaj Krew IV (1000ml) GK: A</Polish>
-            <Spanish>Administrar Sangre IV (1000ml) GS: A</Spanish>
-            <Chinese>輸血液 (A型 1000ml)</Chinese>
-            <Czech>Dát Krev IV (1000ml) KS: A</Czech>
-            <Korean>수혈중 A형혈액(1000ml)</Korean>
-            <French>Transfusion de sang IV (1000ml) GS: A</French>
-            <Turkish>Kan IV (1000ml) KG: A Ver</Turkish>
-            <Italian>Somministrare Sangue EV (1000ml) GS: A</Italian>
+            <English>Give Blood IV (1000ml) BT: A+</English>
+            <German>Bluttransfusion IV (1000ml) BG: A+</German>
+            <Polish>Podaj Krew IV (1000ml) GK: A+</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: A+</Spanish>
+            <Chinese>輸血液 (A+型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: A+</Czech>
+            <Korean>A+형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: A+</French>
+            <Turkish>Kan IV (1000ml) KG: A+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: A+</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : А+</Russian>
+            <Japanese>血液IV (1000ml) A+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_BloodIV_A_N">
+            <English>Give Blood IV (1000ml) BT: A-</English>
+            <German>Bluttransfusion IV (1000ml) BG: A-</German>
+            <Polish>Podaj Krew IV (1000ml) GK: A-</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: A-</Spanish>
+            <Chinese>輸血液 (A-型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: A-</Czech>
+            <Korean>A-형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: A-</French>
+            <Turkish>Kan IV (1000ml) KG: A- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: A-</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : А-</Russian>
+            <Japanese>血液IV (1000ml) A-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_B">
-            <English>Give Blood IV (1000ml) BT: B</English>
-            <German>Bluttransfusion IV (1000ml) BG: B</German>
-            <Polish>Podaj Krew IV (1000ml) GK: B</Polish>
-            <Spanish>Administrar Sangre IV (1000ml) GS: B</Spanish>
-            <Chinese>輸血液 (B型 1000ml)</Chinese>
-            <Czech>Dát Krev IV (1000ml) KS: B</Czech>
-            <Korean>수혈중 B형혈액(1000ml)</Korean>
-            <French>Transfusion de sang IV (1000ml) GS: B</French>
-            <Turkish>Kan IV (1000ml) KG: B Ver</Turkish>
-            <Italian>Somministrare Sangue EV (1000ml) GS: B</Italian>
+            <English>Give Blood IV (1000ml) BT: B+</English>
+            <German>Bluttransfusion IV (1000ml) BG: B+</German>
+            <Polish>Podaj Krew IV (1000ml) GK: B+</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: B+</Spanish>
+            <Chinese>輸血液 (B+型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: B+</Czech>
+            <Korean>B+형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: B+</French>
+            <Turkish>Kan IV (1000ml) KG: B+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: B+</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : B+</Russian>
+            <Japanese>血液IV (1000ml) B+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_BloodIV_B_N">
+            <English>Give Blood IV (1000ml) BT: B-</English>
+            <German>Bluttransfusion IV (1000ml) BG: B-</German>
+            <Polish>Podaj Krew IV (1000ml) GK: B-</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: B-</Spanish>
+            <Chinese>輸血液 (B-型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: B-</Czech>
+            <Korean>B-형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: B-</French>
+            <Turkish>Kan IV (1000ml) KG: B- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: B-</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : B-</Russian>
+            <Japanese>血液IV (1000ml) B-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_BloodIV_AB">
-            <English>Give Blood IV (1000ml) BT: AB</English>
-            <German>Bluttransfusion IV (1000ml) BG: AB</German>
-            <Polish>Podaj Krew IV (1000ml) GK: AB</Polish>
-            <Spanish>Administrar Sangre IV (1000ml) GS: AB</Spanish>
-            <Chinese>輸血液 (AB型 1000ml)</Chinese>
-            <Czech>Dát Krev IV (1000ml) KS: AB</Czech>
-            <Korean>수혈중 AB형혈액(1000ml)</Korean>
-            <French>Transfusion de sang IV (1000ml) GS: AB</French>
-            <Turkish>Kan IV (1000ml) KG: AB Ver</Turkish>
-            <Italian>Somministrare Sangue EV (1000ml) GS: AB</Italian>
+            <English>Give Blood IV (1000ml) BT: AB+</English>
+            <German>Bluttransfusion IV (1000ml) BG: AB+</German>
+            <Polish>Podaj Krew IV (1000ml) GK: AB+</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: AB+</Spanish>
+            <Chinese>輸血液 (AB+型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: AB+</Czech>
+            <Korean>AB+형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: AB+</French>
+            <Turkish>Kan IV (1000ml) KG: AB+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: AB+</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : АB+</Russian>
+            <Japanese>血液IV (1000ml) AB+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_BloodIV_AB_N">
+            <English>Give Blood IV (1000ml) BT: AB-</English>
+            <German>Bluttransfusion IV (1000ml) BG: AB-</German>
+            <Polish>Podaj Krew IV (1000ml) GK: AB-</Polish>
+            <Spanish>Administrar Sangre IV (1000ml) GS: AB-</Spanish>
+            <Chinese>輸血液 (AB-型 1000ml)</Chinese>
+            <Czech>Dát Krev IV (1000ml) KS: AB-</Czech>
+            <Korean>AB-형혈액(1000ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (1000ml) GS: AB-</French>
+            <Turkish>Kan IV (1000ml) KG: AB- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (1000ml) GS: AB-</Italian>
+            <Russian>Переливание крови IV (1000 мл) Гk : АB-</Russian>
+            <Japanese>血液IV (1000ml) AB-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_O">
-            <English>Give Blood IV (500ml) BT: 0</English>
-            <German>Bluttransfusion IV (500ml) BG: 0</German>
-            <Polish>Podaj Krew IV (500ml) GK: 0</Polish>
-            <Spanish>Administrar Sangre IV (500ml) GS: 0</Spanish>
-            <Chinese>輸血液 (O型 500ml)</Chinese>
-            <Czech>Dát Krev IV (500ml) KS: 0</Czech>
-            <Korean>수혈중 O형혈액(500ml)</Korean>
-            <French>Transfusion de sang IV (500ml) GS: O</French>
-            <Turkish>Kan IV (500ml) KG: 0 Ver</Turkish>
-            <Italian>Somministrare Sangue EV (500ml) GS: 0</Italian>
+            <English>Give Blood IV (500ml) BT: 0+</English>
+            <German>Bluttransfusion IV (500ml) BG: 0+</German>
+            <Polish>Podaj Krew IV (500ml) GK: 0+</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: 0+</Spanish>
+            <Chinese>輸血液 (O+型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: 0+</Czech>
+            <Korean>O+형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: O+</French>
+            <Turkish>Kan IV (500ml) KG: 0+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: 0+</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : 0+</Russian>
+            <Japanese>血液IV (500ml) O+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_500_BloodIV_O_N">
+            <English>Give Blood IV (500ml) BT: 0-</English>
+            <German>Bluttransfusion IV (500ml) BG: 0-</German>
+            <Polish>Podaj Krew IV (500ml) GK: 0-</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: 0-</Spanish>
+            <Chinese>輸血液 (O-型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: 0-</Czech>
+            <Korean>O-형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: O-</French>
+            <Turkish>Kan IV (500ml) KG: 0- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: 0-</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : 0-</Russian>
+            <Japanese>血液IV (500ml) O-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_A">
-            <English>Give Blood IV (500ml) BT: A</English>
-            <German>Bluttransfusion IV (500ml) BG: A</German>
-            <Polish>Podaj Krew IV (500ml) GK: A</Polish>
-            <Spanish>Administrar Sangre IV (500ml) GS: A</Spanish>
-            <Chinese>輸血液 (A型 500ml)</Chinese>
-            <Czech>Dát Krev IV (500ml) KS: A</Czech>
-            <Korean>수혈중 A형혈액(500ml)</Korean>
-            <French>Transfusion de sang IV (500ml) GS: A</French>
-            <Turkish>Kan IV (500ml) KG: A Ver</Turkish>
-            <Italian>Somministrare Sangue EV (500ml) GS: A</Italian>
+            <English>Give Blood IV (500ml) BT: A+</English>
+            <German>Bluttransfusion IV (500ml) BG: A+</German>
+            <Polish>Podaj Krew IV (500ml) GK: A+</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: A+</Spanish>
+            <Chinese>輸血液 (A+型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: A+</Czech>
+            <Korean>A+형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: A+</French>
+            <Turkish>Kan IV (500ml) KG: A+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: A+</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : A+</Russian>
+            <Japanese>血液IV (500ml) A+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_500_BloodIV_A_N">
+            <English>Give Blood IV (500ml) BT: A-</English>
+            <German>Bluttransfusion IV (500ml) BG: A-</German>
+            <Polish>Podaj Krew IV (500ml) GK: A-</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: A-</Spanish>
+            <Chinese>輸血液 (A-型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: A-</Czech>
+            <Korean>A-형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: A-</French>
+            <Turkish>Kan IV (500ml) KG: A- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: A-</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : A-</Russian>
+            <Japanese>血液IV (500ml) A-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_B">
-            <English>Give Blood IV (500ml) BT: B</English>
-            <German>Bluttransfusion IV (500ml) BG: B</German>
-            <Polish>Podaj Krew IV (500ml) GK: B</Polish>
-            <Spanish>Administrar Sangre IV (500ml) GS: B</Spanish>
-            <Chinese>輸血液 (B型 500ml)</Chinese>
-            <Czech>Dát Krev IV (500ml) KS: B</Czech>
-            <Korean>수혈중 B형혈액(500ml)</Korean>
-            <French>Transfusion de sang IV (500ml) GS: B</French>
-            <Turkish>Kan IV (500ml) KG: B Ver</Turkish>
-            <Italian>Somministrare Sangue EV (500ml) GS: B</Italian>
+            <English>Give Blood IV (500ml) BT: B+</English>
+            <German>Bluttransfusion IV (500ml) BG: B+</German>
+            <Polish>Podaj Krew IV (500ml) GK: B+</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: B+</Spanish>
+            <Chinese>輸血液 (B+型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: B+</Czech>
+            <Korean>B+형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: B+</French>
+            <Turkish>Kan IV (500ml) KG: B+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: B+</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : B+</Russian>
+            <Japanese>血液IV (500ml) B+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_500_BloodIV_B_N">
+            <English>Give Blood IV (500ml) BT: B-</English>
+            <German>Bluttransfusion IV (500ml) BG: B-</German>
+            <Polish>Podaj Krew IV (500ml) GK: B-</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: B-</Spanish>
+            <Chinese>輸血液 (B-型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: B-</Czech>
+            <Korean>B-형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: B-</French>
+            <Turkish>Kan IV (500ml) KG: B- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: B-</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : B-</Russian>
+            <Japanese>血液IV (500ml) B-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_500_BloodIV_AB">
-            <English>Give Blood IV (500ml) BT: AB</English>
-            <German>Bluttransfusion IV (500ml) BG: AB</German>
-            <Polish>Podaj Krew IV (500ml) GK: AB</Polish>
-            <Spanish>Administrar Sangre IV (500ml) GS: AB</Spanish>
-            <Chinese>輸血液 (AB型 500ml)</Chinese>
-            <Czech>Dát Krev IV (500ml) KS: AB</Czech>
-            <Korean>수혈중 AB형혈액(500ml)</Korean>
-            <French>Transfusion de sang IV (500ml) GS: AB</French>
-            <Turkish>Kan IV (500ml) KG: AB Ver</Turkish>
-            <Italian>Somministrare Sangue EV (500ml) GS: AB</Italian>
+            <English>Give Blood IV (500ml) BT: AB+</English>
+            <German>Bluttransfusion IV (500ml) BG: AB+</German>
+            <Polish>Podaj Krew IV (500ml) GK: AB+</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: AB+</Spanish>
+            <Chinese>輸血液 (AB+型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: AB+</Czech>
+            <Korean>AB+형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: AB+</French>
+            <Turkish>Kan IV (500ml) KG: AB+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: AB+</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : AB+</Russian>
+            <Japanese>血液IV (500ml) AB+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_500_BloodIV_AB_N">
+            <English>Give Blood IV (500ml) BT: AB-</English>
+            <German>Bluttransfusion IV (500ml) BG: AB-</German>
+            <Polish>Podaj Krew IV (500ml) GK: AB-</Polish>
+            <Spanish>Administrar Sangre IV (500ml) GS: AB-</Spanish>
+            <Chinese>輸血液 (AB-型 500ml)</Chinese>
+            <Czech>Dát Krev IV (500ml) KS: AB-</Czech>
+            <Korean>AB-형혈액(500ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (500ml) GS: AB-</French>
+            <Turkish>Kan IV (500ml) KG: AB- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (500ml) GS: AB-</Italian>
+            <Russian>Переливание крови IV (500 мл) Гk : AB-</Russian>
+            <Japanese>血液IV (500ml) AB-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_O">
-            <English>Give Blood IV (250ml) BT: 0</English>
-            <German>Bluttransfusion IV (250ml) BG: 0</German>
-            <Polish>Podaj Krew IV (250ml) GK: 0</Polish>
-            <Spanish>Administrar Sangre IV (250ml) GS: 0</Spanish>
-            <Chinese>輸血液 (O型 250ml)</Chinese>
-            <Czech>Dát Krev IV (250ml) KS: 0</Czech>
-            <Korean>수혈중 O형혈액(250ml)</Korean>
-            <French>Transfusion de sang IV (250ml) GS: O</French>
-            <Turkish>Kan IV (250ml) KG: 0 Ver</Turkish>
-            <Italian>Somministrare Sangue EV (250ml) GS: 0</Italian>
+            <English>Give Blood IV (250ml) BT: 0+</English>
+            <German>Bluttransfusion IV (250ml) BG: 0+</German>
+            <Polish>Podaj Krew IV (250ml) GK: 0+</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: 0+</Spanish>
+            <Chinese>輸血液 (O+型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: 0+</Czech>
+            <Korean>O+형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: O+</French>
+            <Turkish>Kan IV (250ml) KG: 0+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: 0+</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : 0+</Russian>
+            <Japanese>血液IV (250ml) O+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_250_BloodIV_O_N">
+            <English>Give Blood IV (250ml) BT: 0-</English>
+            <German>Bluttransfusion IV (250ml) BG: 0-</German>
+            <Polish>Podaj Krew IV (250ml) GK: 0-</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: 0-</Spanish>
+            <Chinese>輸血液 (O-型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: 0-</Czech>
+            <Korean>O-형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: O-</French>
+            <Turkish>Kan IV (250ml) KG: 0- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: 0-</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : 0-</Russian>
+            <Japanese>血液IV (250ml) O-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_A">
-            <English>Give Blood IV (250ml) BT: A</English>
-            <German>Bluttransfusion IV (250ml) BG: A</German>
-            <Polish>Podaj Krew IV (250ml) GK: A</Polish>
-            <Spanish>Administrar Sangre IV (250ml) GS: A</Spanish>
-            <Chinese>輸血液 (A型 250ml)</Chinese>
-            <Czech>Dát Krev IV (250ml) KS: A</Czech>
-            <Korean>수혈중 A형혈액(250ml)</Korean>
-            <French>Transfusion de sang IV (250ml) GS: A</French>
-            <Turkish>Kan IV (250ml) KG: A Ver</Turkish>
-            <Italian>Somministrare Sangue EV (250ml) GS: A</Italian>
+            <English>Give Blood IV (250ml) BT: A+</English>
+            <German>Bluttransfusion IV (250ml) BG: A+</German>
+            <Polish>Podaj Krew IV (250ml) GK: A+</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: A+</Spanish>
+            <Chinese>輸血液 (A+型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: A+</Czech>
+            <Korean>A+형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: A+</French>
+            <Turkish>Kan IV (250ml) KG: A+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: A+</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : A+</Russian>
+            <Japanese>血液IV (250ml) A+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_250_BloodIV_A_N">
+            <English>Give Blood IV (250ml) BT: A-</English>
+            <German>Bluttransfusion IV (250ml) BG: A-</German>
+            <Polish>Podaj Krew IV (250ml) GK: A-</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: A-</Spanish>
+            <Chinese>輸血液 (A-型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: A-</Czech>
+            <Korean>A-형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: A-</French>
+            <Turkish>Kan IV (250ml) KG: A- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: A-</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : A-</Russian>
+            <Japanese>血液IV (250ml) A-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_B">
-            <English>Give Blood IV (250ml) BT: B</English>
-            <German>Bluttransfusion IV (250ml) BG: B</German>
-            <Polish>Podaj Krew IV (250ml) GK: B</Polish>
-            <Spanish>Administrar Sangre IV (250ml) GS: B</Spanish>
-            <Chinese>輸血液 (B型 250ml)</Chinese>
-            <Czech>Dát Krev IV (250ml) KS: B</Czech>
-            <Korean>수혈중 A형혈액(250ml)</Korean>
-            <French>Transfusion de sang IV (250ml) GS: B</French>
-            <Turkish>Kan IV (250ml) KG: B Ver</Turkish>
-            <Italian>Somministrare Sangue EV (250ml) GS: B</Italian>
+            <English>Give Blood IV (250ml) BT: B+</English>
+            <German>Bluttransfusion IV (250ml) BG: B+</German>
+            <Polish>Podaj Krew IV (250ml) GK: B+</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: B+</Spanish>
+            <Chinese>輸血液 (B+型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: B+</Czech>
+            <Korean>B+형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: B+</French>
+            <Turkish>Kan IV (250ml) KG: B+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: B+</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : B+</Russian>
+            <Japanese>血液IV (250ml) B+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_250_BloodIV_B_N">
+            <English>Give Blood IV (250ml) BT: B-</English>
+            <German>Bluttransfusion IV (250ml) BG: B-</German>
+            <Polish>Podaj Krew IV (250ml) GK: B-</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: B-</Spanish>
+            <Chinese>輸血液 (B-型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: B-</Czech>
+            <Korean>B-형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: B-</French>
+            <Turkish>Kan IV (250ml) KG: B- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: B-</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : B-</Russian>
+            <Japanese>血液IV (250ml) B-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Action_250_BloodIV_AB">
-            <English>Give Blood IV (250ml) BT: AB</English>
-            <German>Bluttransfusion IV (250ml) BG: AB</German>
-            <Polish>Podaj Krew IV (250ml) GK: AB</Polish>
-            <Spanish>Administrar Sangre IV (250ml) GS: AB</Spanish>
-            <Chinese>輸血液 (AB型 250ml)</Chinese>
-            <Czech>Dát Krev IV (250ml) KS: AB</Czech>
-            <Korean>수혈중 AB형혈액(250ml)</Korean>
-            <French>Transfusion de sang IV (250ml) GS: AB</French>
-            <Turkish>Kan IV (250ml) KG: AB Ver</Turkish>
-            <Italian>Somministrare Sangue EV (250ml) GS: AB</Italian>
+            <English>Give Blood IV (250ml) BT: AB+</English>
+            <German>Bluttransfusion IV (250ml) BG: AB+</German>
+            <Polish>Podaj Krew IV (250ml) GK: AB+</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: AB+</Spanish>
+            <Chinese>輸血液 (AB+型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: AB+</Czech>
+            <Korean>AB+형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: AB+</French>
+            <Turkish>Kan IV (250ml) KG: AB+ Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: AB+</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : AB+</Russian>
+            <Japanese>血液IV (250ml) AB+型 を投与</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Action_250_BloodIV_AB_N">
+            <English>Give Blood IV (250ml) BT: AB-</English>
+            <German>Bluttransfusion IV (250ml) BG: AB-</German>
+            <Polish>Podaj Krew IV (250ml) GK: AB-</Polish>
+            <Spanish>Administrar Sangre IV (250ml) GS: AB-</Spanish>
+            <Chinese>輸血液 (AB-型 250ml)</Chinese>
+            <Czech>Dát Krev IV (250ml) KS: AB-</Czech>
+            <Korean>AB-형혈액(250ml) 수혈하기</Korean>
+            <French>Transfusion de sang IV (250ml) GS: AB-</French>
+            <Turkish>Kan IV (250ml) KG: AB- Ver</Turkish>
+            <Italian>Somministrare Sangue EV (250ml) GS: AB-</Italian>
+            <Russian>Переливание крови IV (250 мл) Гk : AB-</Russian>
+            <Japanese>血液IV (250ml) AB-型 を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Using">
             <English>Using</English>
@@ -339,9 +740,22 @@
             <French>Utilisation</French>
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Usando</Italian>
+            <Russian>С использованием</Russian>
+            <Japanese>使用中</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_Rhythm">
             <English>Check Rhythm</English>
+            <German>Rhythmus prüfen</German>
+            <Korean>리듬 확인</Korean>
+            <Polish>Sprawdź rytm</Polish>
+            <Turkish>Ritmi Kontrol Et</Turkish>
+            <Chinese>检查节奏</Chinese>
+            <French>Vérifier le pouls</French>
+            <Italian>Controllare il ritmo</Italian>
+            <Spanish>Comprobar el ritmo</Spanish>
+            <Czech>Zkontrolovat rytmus</Czech>
+            <Japanese>心室細動を確認する</Japanese>
+            <Russian>Проверьте ритм</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag">
             <English>Check Dogtags</English>
@@ -354,6 +768,8 @@
             <French>Vérifier la plaque d'identification</French>
             <Turkish>Künyeyi Kontrol Et</Turkish>
             <Italian>Controlla piastrine</Italian>
+            <Russian>Проверка Солдатский жетон</Russian>
+            <Japanese>ドッグタグを確認する</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_DogTag_Action">
             <English>Checking</English>
@@ -366,6 +782,8 @@
             <French>Vérification</French>
             <Turkish>Kontrol Ediliyor</Turkish>
             <Italian>Controllando</Italian>
+            <Russian>Проверка</Russian>
+            <Japanese>確認中</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_X_already">
             <English>Already one connected</English>
@@ -378,6 +796,8 @@
             <French>Un déjà connecté</French>
             <Turkish>Zaten bağlandı</Turkish>
             <Italian>Già uno collegato</Italian>
+            <Russian>Уже один подключен</Russian>
+            <Japanese>すでに1つ接続されています</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Display">
             <English>AED X-Series</English>
@@ -390,6 +810,8 @@
             <French>AED X-Series</French>
             <Turkish>AED X-Serisi</Turkish>
             <Italian>DAE Serie X</Italian>
+            <Russian>AED серии X</Russian>
+            <Japanese>AED Xシリーズ</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Desc">
             <English>Used to monitor vital values and to resuscitate persons</English>
@@ -402,6 +824,8 @@
             <French>Utilisé pour monitorer les constantes vitales et ressusciter les patients</French>
             <Turkish>Hayati değerleri izlemek ve kişileri canlandırmak için kullanılır</Turkish>
             <Italian>Usato per monitorare i parametri vitali e rianimare i pazienti</Italian>
+            <Russian>Используется для мониторинга жизненных показателей и реанимации людей.</Russian>
+            <Japanese>バイタルの値を監視し、人を蘇生させるために使用されます</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Use">
             <English>Monitor vitals</English>
@@ -414,6 +838,8 @@
             <French>Monitorer les constantes vitales</French>
             <Turkish>Monitor vitals</Turkish>
             <Italian>Monitorare parametri vitali</Italian>
+            <Russian>Мониторинг основных показателей</Russian>
+            <Japanese>バイタルを監視する</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Defib_Action_Use">
             <English>Use AED defibrillator</English>
@@ -426,6 +852,8 @@
             <French>Utiliser le défibrillateur AED</French>
             <Turkish>AED defibrilatör kullanın</Turkish>
             <Italian>Usare il defibrillatore DAE</Italian>
+            <Russian>Используйте дефибриллятор AED</Russian>
+            <Japanese>AED 除細動器を使用する</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_DefibS_Action_Use">
             <English>Use AED Station</English>
@@ -438,6 +866,8 @@
             <French>Utiliser la station AED</French>
             <Turkish>AED İstasyonunu Kullanın</Turkish>
             <Italian>Usare la stazione DAE</Italian>
+            <Russian>Использовать станцию AED</Russian>
+            <Japanese>AEDステーションを使用する</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_AED_PROGRESS">
             <English>Using the defibrillator...</English>
@@ -450,6 +880,8 @@
             <French>Utilisation du défibrillateur...</French>
             <Turkish>Defibrilatör kullanılıyor...</Turkish>
             <Italian>Usando il defibrillatore...</Italian>
+            <Russian>Использование дефибриллятора...</Russian>
+            <Japanese>除細動器の使用...</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_Action_Use">
             <English>Use AED-X defibrillator</English>
@@ -458,10 +890,12 @@
             <Spanish>Utilice el desfibrilador AED-X</Spanish>
             <Chinese>使用AED-X除顫器</Chinese>
             <Czech>Použít AED-X defibrilátor</Czech>
-            <Korean>바이탈측정 자동제세동기 사용</Korean>
+            <Korean>전기충격기능 사용</Korean>
             <French>Utiliser le défibrillateur AED-X</French>
             <Turkish>AED-X defibrilatör kullan</Turkish>
             <Italian>Usare il defibrillatore DAE-X</Italian>
+            <Russian>Используйте дефибриллятор AED-X</Russian>
+            <Japanese>AED-X 除細動器を使用する</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Remove">
             <English>Remove monitoring</English>
@@ -474,15 +908,50 @@
             <French>Retirer le moniteur</French>
             <Turkish>İzlemeyi kaldır</Turkish>
             <Italian>Rimuovere il monitoraggio</Italian>
+            <Russian>Удалить мониторинг</Russian>
+            <Japanese>モニターを取り外す</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_AED_X_Action_Use">
             <English>Vehicle: Use AED-X</English>
+            <German>Fahrzeug: AED-X nutzen</German>
+            <Polish>Pojazd: Użyj AED-X</Polish>
+            <French>Véhicule: Utiliser AED-X</French>
+            <Korean>차량: AED-X 사용</Korean>
+            <Turkish>Araç: AED-X kullanın</Turkish>
+            <Chinese>车辆。使用AED-X</Chinese>
+            <Italian>Veicolo: Utilizzare DAE-X</Italian>
+            <Spanish>Vehículo: Utilizar DEA-X</Spanish>
+            <Czech>Vozidlo: Použít AED-X</Czech>
+            <Japanese>車両: AED-Xを使用</Japanese>
+            <Russian>Транспортное средство: Используйте AED-X</Russian>
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Use">
             <English>Vehicle: Attach AED-X</English>
+            <German>Fahrzeug: AED-X anschließen</German>
+            <Polish>Pojazd: Podłącz AED-X</Polish>
+            <French>Véhicule: Attacher AED-X</French>
+            <Korean>차량: AED-X 부착</Korean>
+            <Turkish>Araç: AED-X'i takın</Turkish>
+            <Chinese>车辆。安装AED-X</Chinese>
+            <Italian>Veicolo: Attaccare DAE-X</Italian>
+            <Spanish>Vehículo: Colocar DEA-X</Spanish>
+            <Czech>Vozidlo: Připevnit AED-X</Czech>
+            <Japanese>車両: AED-Xを取り付ける</Japanese>
+            <Russian>Транспортное средство: прикрепите AED-X</Russian>
         </Key>
         <Key ID="STR_kat_circulation_Vehicle_X_Action_Remove">
             <English>Vehicle: Remove AED-X</English>
+            <German>Fahrzeug: AED-X entfernen</German>
+            <Polish>Pojazd: Odłącz AED-X</Polish>
+            <French>Véhicule: Retirer AED-X</French>
+            <Korean>차량: AED-X 제거</Korean>
+            <Turkish>Araç: AED-X'i kaldırın</Turkish>
+            <Chinese>车辆。移除AED-X</Chinese>
+            <Italian>Veicolo: Rimuovere DAE-X</Italian>
+            <Spanish>Vehículo: Retirar DEA-X</Spanish>
+            <Czech>Vozidlo: Odstranit AED-X</Czech>
+            <Japanese>車両: AED-Xを取り外します</Japanese>
+            <Russian>Транспортное средство: удалить AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_Action_Progress">
             <English>Using AED-X defibrillator</English>
@@ -495,6 +964,8 @@
             <French>Utilisation du défibrillateur AED-X</French>
             <Turkish>AED-X defibrilatörü kullanılıyor</Turkish>
             <Italian>Usando il defibrillatore DAE-X</Italian>
+            <Russian>Использование дефибриллятора AED-X</Russian>
+            <Japanese>AED-X 除細動器の使用</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_Progress">
             <English>Connecting</English>
@@ -507,6 +978,8 @@
             <French>Connexion</French>
             <Turkish>Bağlanıyor</Turkish>
             <Italian>Collegando</Italian>
+            <Russian>Подключения</Russian>
+            <Japanese>接続中</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Remove_Action_Progress">
             <English>Disconnecting</English>
@@ -519,6 +992,8 @@
             <French>Déconnexion</French>
             <Turkish>Bağlantı Kesiliyor</Turkish>
             <Italian>Scollegando</Italian>
+            <Russian>Отключение</Russian>
+            <Japanese>切断中</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_removeSound">
             <English>Turn down volume of AED X</English>
@@ -531,6 +1006,8 @@
             <French>Réduire le volume du AED-X</French>
             <Turkish>AED X'in sesini kısın</Turkish>
             <Italian>Ridurre il volume del DAE-X</Italian>
+            <Russian>Уменьшите громкость AED X</Russian>
+            <Japanese>AED Xの音量を下げる</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_addSound">
             <English>Turn up volume of AED X</English>
@@ -543,6 +1020,8 @@
             <French>Augmenter le volume du AED-X</French>
             <Turkish>AED X'in sesini arttırın</Turkish>
             <Italian>Aumentare il volume del DAE-X</Italian>
+            <Russian>Увеличьте громкость AED X</Russian>
+            <Japanese>AED Xの音量を上げる</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_Pain_empty">
             <English>%1 is now empty</English>
@@ -553,8 +1032,10 @@
             <Czech>%1 je prázdná</Czech>
             <Korean>%1 는 현제 비었음</Korean>
             <French>%1 est maintenant vide</French>
-            <Turkish>% 1 artık boş</Turkish>
-            <Italian>è vuota</Italian>
+            <Turkish>%1 artık boş</Turkish>
+            <Russian>%1 сейчас пуст</Russian>
+            <Italian>%1 è vuota</Italian>
+            <Japanese>%1 は空になりました</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_bloodbank">
             <English>Medical Blood bank</English>
@@ -567,6 +1048,8 @@
             <French>Réserve médicale de sang</French>
             <Turkish>Tıbbi Kan bankası</Turkish>
             <Italian>Banca del sangue</Italian>
+            <Russian>Банк медицинской крови</Russian>
+            <Japanese>医療血液バンク</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_open_crosspanel">
             <English>Open blood groups cheat sheet</English>
@@ -579,6 +1062,8 @@
             <French>Ouvrir la fiche d'indication des groupes sanguins</French>
             <Turkish>Kan Grubu Tablosunu Açın</Turkish>
             <Italian>Apri tavola dei gruppi sanguigni</Italian>
+            <Russian>Открытая шпаргалка по группам крови</Russian>
+            <Japanese>血液型適合性チャートシートを開く</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_place_AED">
             <English>Place AED</English>
@@ -590,7 +1075,9 @@
             <Korean>자동제세동기 설치</Korean>
             <French>Placer l'AED</French>
             <Turkish>AED'yi yerleştirin</Turkish>
-            <Italian>Posizionare DEA</Italian>
+            <Russian>Поместите AED</Russian>
+            <Italian>Posizionare DAE</Italian>
+            <Japanese>AEDを設置</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_PickUpAction">
             <English>Pickup AED</English>
@@ -602,7 +1089,9 @@
             <Korean>자동제세동기 줍기</Korean>
             <French>Ramasser l'AED</French>
             <Turkish>AED'yi Alın</Turkish>
-            <Italian>Raccogliere DEA</Italian>
+            <Russian>Самовывоз AED</Russian>
+            <Italian>Raccogliere DAE</Italian>
+            <Japanese>AEDを拾う</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -615,6 +1104,8 @@
             <French>Fiche d'indication des groupes sanguins</French>
             <Turkish>Kan Grubu Tablosu</Turkish>
             <Italian>Tavola dei gruppi sanguigni</Italian>
+            <Russian>Шпаргалка по группам крови</Russian>
+            <Japanese>血液型適合確認シート</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_desc_crosspanel">
             <English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
@@ -627,9 +1118,11 @@
             <French>Une mauvaise combinaison sanguine du donneur et du receveur peut avoir des conséquences mortelles</French>
             <Turkish>Verici ve alıcı kanının yanlış bir kombinasyonu ölümcül sonuçlara bile yol açabilir.</Turkish>
             <Italian>Un'errata combinazione tra sangue del donatore e del ricevente può portare a conseguenza mortali.</Italian>
+            <Russian>Неправильное сочетание донорской и реципиентной крови может иметь смертельные последствия.</Russian>
+            <Japanese>ドナーと患者の血液の間違った組み合わせは、致命的な結果をもたらす可能性さえあります。</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_client_bt">
-            <English>Blood type</English>
+            <English>Blood group</English>
             <German>Blutgruppe</German>
             <Polish>Grupa krwi</Polish>
             <Spanish>Grupo sanguíneo</Spanish>
@@ -639,6 +1132,8 @@
             <French>Groupe sanguin</French>
             <Turkish>Kan Grubu</Turkish>
             <Italian>Gruppo sanguigno</Italian>
+            <Russian>Группа крови</Russian>
+            <Japanese>血液型</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -650,7 +1145,9 @@
             <Korean>자동제세동기 배치</Korean>
             <French>Lieux de l'AED</French>
             <Turkish>AED Konumları</Turkish>
-            <Italian>Posizione del DEA</Italian>
+            <Russian>Места для AED</Russian>
+            <Italian>Posizione del DAE</Italian>
+            <Japanese>AEDが使用できる場所</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_LOCATION_AED_DESCRIPTION">
             <English>Where can the AED be used?</English>
@@ -662,7 +1159,9 @@
             <Korean>자동제세동기는 어디에서 사용 가능한가요?</Korean>
             <French>Où l'AED peut être utilisé</French>
             <Turkish>AED nerede kullanılabilir?</Turkish>
-            <Italian>Dove può essere utilizzato il DEA</Italian>
+            <Russian>Где можно использовать AED?</Russian>
+            <Italian>Dove può essere utilizzato il DAE</Italian>
+            <Japanese>AEDが使用できる場所を指定</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_AED_DISPLAYNAME">
             <English>Automated External Defibrillator</English>
@@ -675,6 +1174,8 @@
             <French>Défibrillateur Automatisé Externe</French>
             <Turkish>Otomatik eksternal defibrilatör</Turkish>
             <Italian>Defibrillatore Automatico Esterno</Italian>
+            <Russian>Автоматический внешний дефибриллятор (AED)</Russian>
+            <Japanese>AED (自動体外式除細動器)</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_AED_DESCRIPTION">
             <English>Use to resuscitate player</English>
@@ -687,6 +1188,8 @@
             <French>Utilisé pour ressusciter un joueur</French>
             <Turkish>Oyuncuyu canlandırmak için kullanın</Turkish>
             <Italian>Utilizzato per resuscitare un giocatore</Italian>
+            <Russian>Используйте, чтобы реанимировать игрока</Russian>
+            <Japanese>プレーヤーを蘇生させるために使用する</Japanese>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AED">
             <English>%1 performed AED</English>
@@ -698,7 +1201,9 @@
             <Korean>%1 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED</French>
             <Turkish>%1 AED gerçekleştirdi</Turkish>
-            <Italian>ha utilizzato un DEA</Italian>
+            <Russian>%1 выполнил AED </Russian>
+            <Italian>%1 ha utilizzato un DAE</Italian>
+            <Japanese>%1 はAEDを実行しました</Japanese>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDS">
             <English>%1 performed AED Station</English>
@@ -710,7 +1215,9 @@
             <Korean>%1 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé une station AED</French>
             <Turkish>%1 gerçekleştirilen AED İstasyonu</Turkish>
-            <Italian>ha utilizzato una stazione DEA</Italian>
+            <Russian>%1 выполнена станция AED</Russian>
+            <Italian>%1 ha utilizzato una stazione DAE</Italian>
+            <Japanese>%1 はAEDステーションを実行しました</Japanese>
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDX">
             <English>%1 performed AED-X</English>
@@ -721,11 +1228,13 @@
             <Czech>%1 použito AED-X</Czech>
             <Korean>%1 바이탈측정 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED-X</French>
-            <Turkish>% 1 AED-X gerçekleştirdi</Turkish>
-            <Italian>ha utilizzato un DEA-X</Italian>
+            <Russian>%1 выполнил AED-X</Russian>
+            <Turkish>%1 AED-X gerçekleştirdi</Turkish>
+            <Italian>%1 ha utilizzato un DAE-X</Italian>
+            <Japanese>%1 はAED-Xを実行しました</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED_X">
-            <English>Succes chance for AED-X</English>
+            <English>Success chance for AED-X</English>
             <Polish>Szansa na udaną defybrilację dla AED-X</Polish>
             <German>Erfolgsrate für AED-X</German>
             <Spanish>Posibilidad de éxito para AED-X</Spanish>
@@ -734,10 +1243,12 @@
             <Korean>바이탈측정 자동제세동기 성공확률</Korean>
             <French>Chances de succès pour l'AED-X</French>
             <Turkish>AED-X için başarı şansı</Turkish>
-            <Italian>Probabilità di successo del DEA-X</Italian>
+            <Russian>Шанс на успех для AED-X</Russian>
+            <Italian>Probabilità di successo del DAE-X</Italian>
+            <Japanese>AED-Xの成功チャンス</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED">
-            <English>Succes chance for AED</English>
+            <English>Success chance for AED</English>
             <Polish>Szansa na udaną defybrilację dla AED</Polish>
             <German>Erfolgsrate für AED</German>
             <Spanish>Posibilidad de éxito para AED</Spanish>
@@ -746,7 +1257,9 @@
             <Korean>자동제세동기 성공확률</Korean>
             <French>Chances de succès pour l'AED</French>
             <Turkish>AED için başarı şansı</Turkish>
-            <Italian>Probabilità di successo del DEA</Italian>
+            <Russian>Шанс успеха для AED</Russian>
+            <Italian>Probabilità di successo del DAE</Italian>
+            <Japanese>AEDの成功チャンス</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED">
             <English>Allow AED</English>
@@ -758,7 +1271,9 @@
             <Korean>AED 허용 </Korean>
             <French>Autoriser l'AED</French>
             <Turkish>AED'e izin ver</Turkish>
-            <Italian>Permetti il DEA</Italian>
+            <Russian>Разрешить AED</Russian>
+            <Italian>Permetti il DAE</Italian>
+            <Japanese>AEDを許可する</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_TRAINING_LEVEL_AED">
             <English>Training level required to use an AED</English>
@@ -770,7 +1285,9 @@
             <Korean>AED 사용에 필요한 교육 수준 </Korean>
             <French>Niveau de d'entrainement pour utiliser un AED</French>
             <Turkish>AED kullanmak için gerekli eğitim seviyesi</Turkish>
-            <Italian>Livello d'addestramento richiesto per usare il DEA</Italian>
+            <Russian>Уровень подготовки, необходимый для использования AED</Russian>
+            <Italian>Livello d'addestramento richiesto per usare il DAE</Italian>
+            <Japanese>AEDを使用するために必要な訓練レベル</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED_X">
             <English>Allow AED-X</English>
@@ -782,7 +1299,9 @@
             <Korean>바이탈측정 자동제세동기 허용</Korean>
             <French>Autoriser l'AED-X</French>
             <Turkish>AED-X'e izin ver</Turkish>
-            <Italian>Permetti il DEA-X</Italian>
+            <Russian>Разрешить AED-X</Russian>
+            <Italian>Permetti il DAE-X</Italian>
+            <Japanese>AED-Xを許可する</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
@@ -794,7 +1313,9 @@
             <Korean>바이탈측정 자동제세동기 사용에 필요한 의료레벨</Korean>
             <French>Niveau de d'entrainement pour utiliser un AED-X</French>
             <Turkish>AED-X kullanmak için gerekli eğitim seviyesi</Turkish>
-            <Italian>Livello d'addestramento richiesto per usare il DEA-X</Italian>
+            <Russian>Уровень подготовки, необходимый для использования AED-X</Russian>
+            <Italian>Livello d'addestramento richiesto per usare il DAE-X</Italian>
+            <Japanese>AED-Xを使用するために必要な訓練レベル</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_DISTANCELIMIT_AED_X">
             <English>Distance limit for AED-X in meters</English>
@@ -806,7 +1327,9 @@
             <Korean>바이탈측정 자동제세동기 사용가능거리 설정(미터법)</Korean>
             <French>Distance maximum en mètres pour l'AED-X</French>
             <Turkish>Metre cinsinden AED-X için mesafe sınırı</Turkish>
-            <Italian>Distanza massima in metri per il DEA-X</Italian>
+            <Russian>Ограничение расстояния для AED-X в метрах</Russian>
+            <Italian>Distanza massima in metri per il DAE-X</Italian>
+            <Japanese>AED-Xの距離制限(メートル単位)</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_TIMELIMIT_AED_X">
             <English>Time limit for monitor of AED-X in seconds</English>
@@ -818,7 +1341,9 @@
             <Korean>바이탈측정 자동제세동기 모니터링 시간제한 (초단위)</Korean>
             <French>Limite de temps pour monitorer l'AED-X en secondes</French>
             <Turkish>AED-X'in saniye cinsinden izlenmesi için zaman sınırı</Turkish>
-            <Italian>Limite di tempo in secondi per il monitoraggio del DEA-X</Italian>
+            <Russian>Ограничение времени для монитора AED-X в секундах</Russian>
+            <Italian>Limite di tempo in secondi per il monitoraggio del DAE-X</Italian>
+            <Japanese>AED-Xのモニターの制限時間(秒単位)</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_DEACTIVATE_MONITOR_WHILEAED_X">
             <English>Deactivate Monitor while using AED-X</English>
@@ -829,8 +1354,10 @@
             <Czech>Deaktivovat monitoring při použití AED-X</Czech>
             <Korean>바이탈측정 자동제세동기 사용시 모니터 비활성화</Korean>
             <French>Désactiver le moniteur pendant l'utilisation de l'AED-X</French>
-            <Turkish>AED-X kullanırken Monitörü devre dışı bırakın</Turkish>
-            <Italian>Disattivare il monitoraggio durante l'utilizzo del DEA-X</Italian>
+            <Turkish>AED-X kullanırken Monitörü re dışı bırakın</Turkish>
+            <Russian>Деактивируйте монитор при использовании AED-X</Russian>
+            <Italian>Disattivare il monitoraggio durante l'utilizzo del DAE-X</Italian>
+            <Japanese>AED-Xの使用中にモニターを非アクティブ化する</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -843,6 +1370,8 @@
             <French>Activer différentes chances de réussite de RCP par niveau médical </French>
             <Turkish>Tıbbi eğitim seviyesi başına farklı CPR şansı sağlayın</Turkish>
             <Italian>Attivare diverse possibilità di riuscita della RCP per livello medico</Italian>
+            <Russian>Включить разные шансы СЛР для каждого медицинского уровня</Russian>
+            <Japanese>医療レベルごとにCPRの成功チャンスを変更する</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DOCTOR">
             <English>CPR Chance for Doctors</English>
@@ -855,6 +1384,8 @@
             <French>Chances de RCP pour les Docteurs</French>
             <Turkish>Doktorlar için CPR Şansı</Turkish>
             <Italian>Probabilità di RCP per i dottori</Italian>
+            <Russian>Шанс СЛР для врачей</Russian>
+            <Japanese>医師のCPRチャンス</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_REGULARMEDIC">
             <English>CPR Chance for Regular medics</English>
@@ -867,6 +1398,8 @@
             <French>Chances de RCP pour les médecins</French>
             <Turkish>İlk yardım uzmanları için CPR Şansı</Turkish>
             <Italian>Probabilità di RCP per i medici</Italian>
+            <Russian>Шанс СЛР для обычных медиков</Russian>
+            <Japanese>衛生兵のCPRチャンス</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DEFAULT">
             <English>CPR Chance for Default</English>
@@ -879,6 +1412,8 @@
             <French>Chances de RCP par défaut</French>
             <Turkish>Varsayılan CPR Şansı</Turkish>
             <Italian>Probabilità di RCP per default</Italian>
+            <Russian>Шанс СЛР по умолчанию</Russian>
+            <Japanese>デフォルトのCPRチャンス</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -891,6 +1426,8 @@
             <French>Kit de transfusion sanguine de terrain (500 ml) </French>
             <Turkish>Saha Kan Transfüzyon Kiti (500ml) </Turkish>
             <Italian>Kit per trasfusione di sangue da campo (500 ml) </Italian>
+            <Russian>Полевой набор для переливания крови (500 мл)</Russian>
+            <Japanese>前線輸血キット (500ml)</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK250_Display">
             <English>Field Blood Transfusion Kit (250ml)</English>
@@ -903,6 +1440,8 @@
             <French>Kit de transfusion sanguine de terrain (250 ml) </French>
             <Turkish>Saha Kan Transfüzyon Kiti (250ml) </Turkish>
             <Italian>Kit per trasfusione di sangue da campo (250 ml) </Italian>
+            <Russian>Полевой набор для переливания крови (250 мл)</Russian>
+            <Japanese>前線輸血キット (250ml)</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK_Desc">
             <English>Allows you to draw blood and use it</English>
@@ -911,10 +1450,12 @@
             <Spanish>Te permite sacar sangre y usarla. </Spanish>
             <Chinese>允许你抽血并使用它 </Chinese>
             <Czech>Umožňuje odebírat krev a použít ji</Czech>
-            <Korean>혈액을 채취하여 사용할 수 있습니다. </Korean>
+            <Korean>혈액을 채혈하여 사용할 수 있습니다.</Korean>
             <French>Permet de prélever du sang et de l'utiliser </French>
             <Turkish>Kan almanızı ve kullanmanızı sağlar </Turkish>
             <Italian>Ti permette di prelevare il sangue e usarlo </Italian>
+            <Russian>Позволяет брать кровь и использовать ее</Russian>
+            <Japanese>採血して使用することができます</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_DrawBlood500_Action_Use">
             <English>Draw Blood (500ml)</English>
@@ -923,10 +1464,12 @@
             <Spanish>Extraer sangre (500 ml) </Spanish>
             <Chinese>抽血 (500ml) </Chinese>
             <Czech>Odebrat krev (500ml)</Czech>
-            <Korean>드로우 블러드 (500ml) </Korean>
+            <Korean>혈액 채혈 (500ml)</Korean>
             <French>Prélèvement de sang (500 ml) </French>
             <Turkish>Kan Al (500ml) </Turkish>
             <Italian>Disegna sangue (500 ml) </Italian>
+            <Russian>Взять кровь (500 мл)</Russian>
+            <Japanese>採血 (500ml)</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_DrawBlood250_Action_Use">
             <English>Draw Blood (250ml)</English>
@@ -935,10 +1478,12 @@
             <Spanish>Extraer sangre (250 ml) </Spanish>
             <Chinese>抽血 (250ml) </Chinese>
             <Czech>Odebrat krev (250ml)</Czech>
-            <Korean>드로우 블러드 (250ml) </Korean>
+            <Korean>혈액 채혈 (250ml) </Korean>
             <French>Prélèvement de sang (250 ml) </French>
             <Turkish>Kan Al (250ml) </Turkish>
             <Italian>Disegna sangue (250 ml) </Italian>
+            <Russian>Взять кровь (250 мл)</Russian>
+            <Japanese>採血 (250ml)</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>
@@ -947,13 +1492,26 @@
             <Spanish>Dibujando sangre</Spanish>
             <Chinese>抽血 </Chinese>
             <Czech>Odebírání krve</Czech>
-            <Korean>혈액 그리기 </Korean>
+            <Korean>혈액 채혈중</Korean>
             <French>Prélèvement de sang </French>
             <Turkish>Kan Alma </Turkish>
             <Italian>Prelevare sangue</Italian>
+            <Russian>Рисование крови</Russian>
+            <Japanese>採血</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_DRAW_BLOODGROUPS">
             <English>Use Bloodgroups for drawing blood?</English>
+            <German>Blutgruppen für die Blutentnahme verwenden?</German>
+            <Polish>Używaj grup krwi do pobieranie krwi?</Polish>
+            <Korean>혈액 채취에 혈액 그룹을 사용합니까?</Korean>
+            <Turkish>Kan almak için Kan Grupları kullanılsın mı?</Turkish>
+            <French>Utiliser les groupes sanguin pour le prélèvement de sang?</French>
+            <Chinese>使用血型来抽血？</Chinese>
+            <Italian>Usare il gruppo sanguigno per il prelievo del sangue?</Italian>
+            <Spanish>¿Utilizar los grupos sanguíneos para la extracción de sangre?</Spanish>
+            <Czech>Použít krevní skupiny pro odebírání krve?</Czech>
+            <Japanese>採血に血液型を使用しますか?</Japanese>
+            <Russian>Использовать группы крови для забора крови?</Russian>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_SELF_BLOOD_DRAW">
             <English>Enable self blood draw</English>
@@ -966,6 +1524,8 @@
             <French>Activer l'auto-prélèvement de sang </French>
             <Turkish>Kendi kendine kan alımını etkinleştir </Turkish>
             <Italian>Abilita l'autoprelievo di sangue </Italian>
+            <Russian>Включить самостоятельное взятие крови</Russian>
+            <Japanese>自己採血を有効にする</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_BLOOD_DRAWTIME_500ML">
             <English>Drawing time for 500ml Kit</English>
@@ -974,10 +1534,12 @@
             <Spanish>Tiempo de dibujo para el kit de 500ml  </Spanish>
             <Chinese>500 毫升套件的绘制时间  </Chinese>
             <Czech>Odebírací čas pro 500ml Kit</Czech>
-            <Korean>500ml 키트의 드로잉 시간  </Korean>
+            <Korean>500ml 키트의 채혈 시간</Korean>
             <French>Temps de dessin pour le kit 500ml </French>
             <Turkish>500ml Kit için çizim süresi </Turkish>
             <Italian>Tempo di disegno per Kit 500ml </Italian>
+            <Russian>Время нанесения для набора 500 мл</Russian>
+            <Japanese>500mlキットの採血時間</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_BLOOD_DRAWTIME_250ML">
             <English>Drawing time for 250ml Kit</English>
@@ -986,16 +1548,40 @@
             <Spanish>Tiempo de dibujo para el kit de 250ml </Spanish>
             <Chinese>250 毫升套件的绘制时间 </Chinese>
             <Czech>Odebírací čas pro 250ml Kit</Czech>
-            <Korean>250ml 키트의 드로잉 시간 </Korean>
+            <Korean>250ml 키트의 채혈 시간</Korean>
             <French>Temps de dessin pour le kit 250ml </French>
             <Turkish>250ml Kit için çizim süresi </Turkish>
             <Italian>Tempo di disegno per Kit 250ml </Italian>
+            <Russian>Время нанесения для набора 250 мл</Russian>
+            <Japanese>250mlキットの採血時間</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW">
             <English>Minimum blood volume for donor (liters)</English>
+            <German>Mindestblutmenge für Spender (Liter)</German>
+            <Polish>Minimalna ilość krwi u dawcy (litry)</Polish>
+            <Korean>기증자의 최소 혈액량(리터)</Korean>
+            <Turkish>Donör için minimum kan hacmi (litre)</Turkish>
+            <French>Volume minimum de sang du donneur (litres)</French>
+            <Chinese>献血者的最小血量（升）</Chinese>
+            <Italian>Volume minimo di sangue per il donatore (litri)</Italian>
+            <Spanish>Volúmen mínimo de sangre para el donante (litro)</Spanish>
+            <Czech>Minimální objem krve pro dárce (litry)</Czech>
+            <Russian>Минимальный объем крови для донора (литры)</Russian>
+            <Japanese>採血できる最小血液量(リットル)</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_MINIMUM_SAFE_DRAW_DESC">
             <English>Minimum volume of blood allowed to drain a donor to, to ignore this setting set to 0</English>
+            <German>Mindestblutmenge, bis zu der ein Spender entnommen werden darf; um diese Einstellung zu ignorieren, setzen Sie sie auf 0</German>
+            <Polish>Minimalna ilość krwi którą dawca musi mieć by pobrać z niego krew, ustaw 0 by wyłączyć</Polish>
+            <Korean>0으로 설정된 이 설정을 무시하기 위해 기증자가 배출할 수 있는 최소 혈액량</Korean>
+            <Turkish>0'a ayarlanmış bu ayarı yok saymak için bir donörün drene etmesine izin verilen minimum kan hacmi</Turkish>
+            <French>Volume minimum de sang à prélever au donneur, pour ignorer laisser sur 0</French>
+            <Chinese>혈액 채취에 혈액 그룹을 사용합니까?</Chinese>
+            <Italian>Volume minimo di sangue consentito per prelevare un donatore, per ignorare questa impostazione impostare su 0</Italian>
+            <Spanish>Volumen mínimo de sangre que se permite extraer a un donante, para ignorar este parámetro se establece en 0</Spanish>
+            <Czech>Minimální objem krve, který lze z dárce odebrat, pro ignorování nastavení nastavte 0</Czech>
+            <Russian>Минимальный объем крови, разрешенный для слива донора, чтобы игнорировать этот параметр, установленный на 0</Russian>
+            <Japanese>ドナーから採血できる最小量の血液。0に設定で無視。</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge">
             <English>AED Beep and Charge sound</English>
@@ -1007,7 +1593,9 @@
             <Korean>AED 경고음 및 충전음 </Korean>
             <French>Bip AED et son de charge </French>
             <Turkish>AED Bip ve Şarj sesi </Turkish>
-            <Italian>Segnale acustico AED e suono di carica </Italian>
+            <Russian>Звуковой сигнал AED и звук зарядки</Russian>
+            <Italian>Segnale acustico DAE e suono di carica </Italian>
+            <Japanese>AEDビープ音と充電音</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_SETTING_AED_BeepsAndCharge_DESC">
             <English>Enables Beep and Charge sound for AED/AED-X</English>
@@ -1019,7 +1607,23 @@
             <Korean>AED/AED-X에 대한 경고음 및 충전 사운드 활성화 </Korean>
             <French>Active le bip et le son de charge pour AED/AED-X </French>
             <Turkish>AED/AED-X için Bip ve Şarj sesini etkinleştirir </Turkish>
-            <Italian>Abilita il segnale acustico e il suono di carica per AED/AED-X </Italian>
+            <Russian>Включает звуковой сигнал и звук зарядки для AED/AED-X</Russian>
+            <Italian>Abilita il segnale acustico e il suono di carica per DAE/DAE-X </Italian>
+            <Japanese>AED/AED-Xのビープ音と充電音を有効にします</Japanese>
+        </Key>
+        <Key ID="STR_KAT_circulation_Checking_Rhythm">
+            <English>Checking Rhythm</English>
+            <Polish>Sprawdzanie rytmu</Polish>
+            <German>Rhythmus kontrollieren</German>
+            <Spanish>Comprobando el ritmo cardíaco</Spanish>
+            <Chinese>检查节奏</Chinese>
+            <Czech>Kontroluji rytmus</Czech>
+            <Korean>리듬 확인하기</Korean>
+            <French>Vérification du rythme</French>
+            <Turkish>Ritmi Kontrol Etmek</Turkish>
+            <Italian>Controllando il ritmo</Italian>
+            <Russian>Проверка ритма</Russian>
+            <Japanese>心室細動を確認する</Japanese>
         </Key>
     </Package>
 </Project>

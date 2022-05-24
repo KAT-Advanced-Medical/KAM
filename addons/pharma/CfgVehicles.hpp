@@ -31,10 +31,19 @@ class CfgVehicles {
     
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems: TransportItems {
-            MACRO_ADDITEM(kat_X_AED,1);
+            MACRO_ADDITEM(kat_amiodarone,20);
+            MACRO_ADDITEM(kat_atropine,20);
+            MACRO_ADDITEM(kat_IO_FAST,20);
+            MACRO_ADDITEM(kat_IV_16,20);
+            MACRO_ADDITEM(kat_lidocaine,20);
+            MACRO_ADDITEM(kat_naloxone,20);
+            MACRO_ADDITEM(kat_nitroglycerin,20);
+            MACRO_ADDITEM(kat_norepinephrine,20);
+            MACRO_ADDITEM(kat_phenylephrine,20);
+            MACRO_ADDITEM(kat_TXA,20);
         };
         class TransportMagazines: TransportMagazines {
-            MACRO_ADDMAGAZINE(kat_Painkiller,10);
+            MACRO_ADDMAGAZINE(kat_Carbonate,10);
         };
     };
 };

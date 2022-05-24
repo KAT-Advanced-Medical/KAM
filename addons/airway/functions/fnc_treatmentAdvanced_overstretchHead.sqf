@@ -42,7 +42,7 @@ private _output = localize LSTRING(overstretch_info);
     _target setVariable [QGVAR(overstretch), false, true];
     _output = localize LSTRING(overstretch_cancel);
     [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
-}, [_player, _target], 120, {
+}, [_player, _target], 600, {
     params ["_player", "_target"];
     _target setVariable [QGVAR(overstretch), false, true];
     _output = localize LSTRING(overstretch_cancel);

@@ -52,17 +52,29 @@ class CfgVehicles {
         class TransportItems: TransportItems {
             MACRO_ADDITEM(kat_crossPanel,5);
             MACRO_ADDITEM(kat_bloodIV_O,5);
+            MACRO_ADDITEM(kat_bloodIV_O_N,5);
             MACRO_ADDITEM(kat_bloodIV_A,10);
+            MACRO_ADDITEM(kat_bloodIV_A_N,10);
             MACRO_ADDITEM(kat_bloodIV_B,10);
+            MACRO_ADDITEM(kat_bloodIV_B_N,10);
             MACRO_ADDITEM(kat_bloodIV_AB,10);
+            MACRO_ADDITEM(kat_bloodIV_AB_N,10);
             MACRO_ADDITEM(kat_bloodIV_O_500,5);
+            MACRO_ADDITEM(kat_bloodIV_O_500_N,5);
             MACRO_ADDITEM(kat_bloodIV_A_500,10);
+            MACRO_ADDITEM(kat_bloodIV_A_500_N,10);
             MACRO_ADDITEM(kat_bloodIV_B_500,10);
+            MACRO_ADDITEM(kat_bloodIV_B_500_N,10);
             MACRO_ADDITEM(kat_bloodIV_AB_500,10);
+            MACRO_ADDITEM(kat_bloodIV_AB_500_N,10);
             MACRO_ADDITEM(kat_bloodIV_O_250,5);
+            MACRO_ADDITEM(kat_bloodIV_O_250_N,5);
             MACRO_ADDITEM(kat_bloodIV_A_250,10);
+            MACRO_ADDITEM(kat_bloodIV_A_250_N,10);
             MACRO_ADDITEM(kat_bloodIV_B_250,10);
+            MACRO_ADDITEM(kat_bloodIV_B_250_N,10);
             MACRO_ADDITEM(kat_bloodIV_AB_250,10);
+            MACRO_ADDITEM(kat_bloodIV_AB_250_N,10);
         };
     };
 
