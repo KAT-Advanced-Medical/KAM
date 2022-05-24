@@ -49,6 +49,7 @@ if (!local _unit) then {
     private _status = _unit getVariable ["KAT_medical_airwayStatus", 100];
 	private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
     private _heartRate = _unit getVariable ["ace_medical_heartRate", 0];
+    private _blockDeath = _unit getVariable ["ace_medical_deathblocked", false];
 
     private _output = 0;
     private _finalOutput = 0;
@@ -56,7 +57,7 @@ if (!local _unit) then {
     private _multiplierNegative = GVAR(SpO2_MultiplyNegative);
 
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
-    if ((_status <= GVAR(SpO2_dieValue)) && {GVAR(SpO2_dieActive)}) exitWith {
+    if ((_status <= GVAR(SpO2_dieValue)) && {GVAR(SpO2_dieActive)} && !_blockDeath ) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
         _unit setVariable ["kat_O2Breathing_PFH", nil];
