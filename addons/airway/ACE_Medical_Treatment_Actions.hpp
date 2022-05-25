@@ -65,8 +65,9 @@ class ACE_Medical_Treatment_Actions {
     class RecoveryPosition: larynxtubus {
         displayName = CSTRING(RecoveryPosition_displayName);
         displayNameProgress = CSTRING(RecoveryPosition_displayNameProgress);
+        category="advanced";
         treatmentTime = QGVAR(RecoveryPosition_Time);
-        allowedSelections[] = {"Head"};
+        allowedSelections[] = {"Body"};
         medicRequired = 0;
         items[] = {};
         condition = QUOTE((!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)])) && FUNC(checkRecovery));
@@ -76,8 +77,9 @@ class ACE_Medical_Treatment_Actions {
     class CancelRecoveryPosition: larynxtubus {
         displayName = CSTRING(CancelRecoveryPosition_displayName);
         displayNameProgress = CSTRING(CancelRecoveryPosition_displayNameProgress);
+        category="advanced";
         treatmentTime = QGVAR(CancelRecoveryPosition_Time);
-        allowedSelections[] = {"Head"};
+        allowedSelections[] = {"Body"};
         medicRequired = 0;
         items[] = {};
         condition = QUOTE((!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(recovery),false)])));
