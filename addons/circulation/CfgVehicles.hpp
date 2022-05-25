@@ -42,6 +42,8 @@ class CfgVehicles {
         class TransportItems: TransportItems {
             MACRO_ADDITEM(kat_X_AED,1);
 			MACRO_ADDITEM(kat_AED,1);
+            MACRO_ADDITEM(KAT_Empty_bloodIV_250,10);
+            MACRO_ADDITEM(KAT_Empty_bloodIV_500,10);
         };
         class TransportMagazines: TransportMagazines {
             MACRO_ADDMAGAZINE(kat_Painkiller,10);
@@ -75,6 +77,8 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_bloodIV_B_250_N,10);
             MACRO_ADDITEM(kat_bloodIV_AB_250,10);
             MACRO_ADDITEM(kat_bloodIV_AB_250_N,10);
+            MACRO_ADDITEM(KAT_Empty_bloodIV_250,10);
+            MACRO_ADDITEM(KAT_Empty_bloodIV_500,10);
         };
     };
 
