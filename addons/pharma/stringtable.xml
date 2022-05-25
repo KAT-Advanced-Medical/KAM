@@ -12,7 +12,7 @@
             <French>Autoriser Naloxone?</French>
             <Turkish>Oyuncuların Naloxone kullanmasına izin verilsin mi?</Turkish>
             <Italian>Permettere ai giocatori di usare il Naloxone?</Italian>
-            <Japanese>プレイヤーにナロキソンの使用を許可しますか?</Japanese>
+            <Japanese>ナロキソンの使用を許可</Japanese>
             <Russian>Разрешить игрокам использовать налоксон?</Russian>
         </Key>
         <Key ID="STR_kat_pharma_CARBONATE_ACTIVE">
@@ -26,7 +26,7 @@
             <Korean>플레이어가 탄산 암모늄을 사용하도록 허용하시겠습니까?</Korean>
             <Turkish>Oyuncuların Amonyum Karbonat kullanmasına izin verilsin mi?</Turkish>
             <Czech>Povolit hráčům použít Uhličitan amonný?</Czech>
-            <Japanese>プレイヤーに炭酸アンモニウムの使用を許可しますか?</Japanese>
+            <Japanese>炭酸アンモニウムの使用を許可</Japanese>
             <Russian>Разрешить игрокам использовать карбонат аммония?</Russian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_ACTIVE">
@@ -40,7 +40,7 @@
             <Korean>플레이어가 TXA를 사용하도록 허용하시겠습니까?</Korean>
             <Turkish>Oyuncuların TXA kullanmasına izin verilsin mi?</Turkish>
             <Czech>Povolit hráčům použít TXA?</Czech>
-            <Japanese>プレイヤーにトラネキサム酸(TXA)の使用を許可しますか?</Japanese>
+            <Japanese>トラネキサム酸(TXA)の使用を許可</Japanese>
             <Russian>Разрешить игрокам использовать TXA?</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_MEDIC">
@@ -54,7 +54,7 @@
             <Korean>IV/IO를 설정하는 데 필요한 의료 수준 변경</Korean>
             <Turkish>IV'leri/IO'ları ayarlamak için gereken tıbbi düzeyi değiştirir</Turkish>
             <Czech>Změní který medický level je potřeba k zavedení IV/IO</Czech>
-            <Japanese>IV/IOを刺入するために必要な医療レベルを変更します</Japanese>
+            <Japanese>IV/IOの許可</Japanese>
             <Russian>Изменяет медицинский уровень, необходимый для установки IV/IO.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP_ENABLE">
@@ -68,7 +68,7 @@
             <French>Activer les délais d'attente pour les IV/IO</French>
             <Turkish>IV/IO bırakma sürelerini etkinleştir</Turkish>
             <Italian>Abilitare i tempi di caduta IV/IO</Italian>
-            <Japanese>IV/IOの時間経過での脱落を有効化</Japanese>
+            <Japanese>IV/IO針の時間経過での脱落</Japanese>
             <Russian>Включает время сброса IV/IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP">
@@ -82,7 +82,7 @@
             <Korean>IV/IO가 환자에게서 떨어지는 시간을 변경합니다.</Korean>
             <Turkish>IV'lerin/IO'ların bir hastadan düştüğü zamanı değiştirir</Turkish>
             <Czech>Změní čas po kterém samovolně vypadnou IV/IO z pacienta</Czech>
-            <Japanese>IV/IOが脱落する時間</Japanese>
+            <Japanese>IV/IO針が脱落する時間</Japanese>
             <Russian>Изменяет время выпадения IV/IO капельниц у пациента</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_REUSE">
@@ -96,7 +96,7 @@
             <Korean>IV/IO 바늘 재사용 가능하나 </Korean>
             <Turkish>IV/IO iğnelerinin yeniden kullanılabilir olup olmadığını ayarlar</Turkish>
             <Czech>Nastaví, zda IV/IO jehly jsou znovu-použitelné</Czech>
-            <Japanese>IV/IO針が再利用可能かどうかを設定します</Japanese>
+            <Japanese>IV/IO針の再利用</Japanese>
             <Russian>Устанавливает, можно ли использовать иглы для IV/IO повторно</Russian>
         </Key>
         <Key ID="STR_kat_pharma_PUSH_TIME">
@@ -110,7 +110,7 @@
             <Korean>IV 약물을 쓸 시간을 밀워</Korean>
             <Turkish>Tüm IV İlaçlar için itme zamanı</Turkish>
             <Czech>Čas potřebný k vstříknutí všech IV léků</Czech>
-            <Japanese>すべての点滴薬の注入時間</Japanese>
+            <Japanese>点滴薬の注入にかかる時間</Japanese>
             <Russian>Время выталкивания всех IV лекарств</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_TIME">
@@ -124,7 +124,7 @@
             <Korean>IV를 설정늘하는 시간</Korean>
             <Turkish>IV'ler oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IV</Czech>
-            <Japanese>IVを刺入する時間</Japanese>
+            <Japanese>IV針の刺入にかかる時間</Japanese>
             <Russian>Время устанавливать IV</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IO_TIME">
@@ -138,7 +138,7 @@
             <Korean>IO 설정을하는 시간</Korean>
             <Turkish>IO'ları oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IO</Czech>
-            <Japanese>IOを刺入する時間</Japanese>
+            <Japanese>IO針の刺入にかかる時間</Japanese>
             <Russian>Время устанавливать IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Painkillers_DescShort">
@@ -572,7 +572,7 @@
             <Korean>노르에피네프린</Korean>
             <Turkish>Norepinefrin</Turkish>
             <Czech>Norepinefrin</Czech>
-            <Japanese>ノルエピネフリン</Japanese>
+            <Japanese>ノルアドレナリン</Japanese>
             <Russian>Норадреналин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Take_Norep">
@@ -586,7 +586,7 @@
             <Korean>푸쉬 노르에피네프린</Korean>
             <Turkish>Norepinefrin itin</Turkish>
             <Czech>Vstříknout norepinefrin</Czech>
-            <Japanese>ノルエピネフリンを注入</Japanese>
+            <Japanese>ノルアドレナリンを注入</Japanese>
             <Russian>Ввести Норадреналин</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Phenyl_DescShort">
@@ -1048,7 +1048,7 @@
             <French>Stimulation activé?</French>
             <Turkish>Yeniden yönlendirme etkin mi?</Turkish>
             <Italian>Stimolazione abilitata?</Italian>
-            <Japanese>患者に刺激を与える 機能を有効化しますか?</Japanese>
+            <Japanese>患者に刺激を与える機能の有効化</Japanese>
             <Russian>Переориентация включена?</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Reorientation_Enable_DESC">
@@ -1076,7 +1076,7 @@
             <French>Autoriser stimulation</French>
             <Turkish>Yeniden yönlendirmeye izin ver</Turkish>
             <Italian>Autorizza stimolazione</Italian>
-            <Japanese>患者に刺激を与えることが出来る人</Japanese>
+            <Japanese>患者に刺激を与える許可</Japanese>
             <Russian>Разрешить переориентацию</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Allow_Reorientation_DESC">
@@ -1090,7 +1090,7 @@
             <French>Niveau médical requis pour stimulation</French>
             <Turkish>Yeniden oryantasyon için gerekli tıbbi seviye</Turkish>
             <Italian>Livello medico richiesto per stimolazione</Italian>
-            <Japanese>患者を刺激して起こすために必要な医療レベルを変更します</Japanese>
+            <Japanese>患者を刺激を与えるために訓練レベルを必要とさせます。</Japanese>
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
         </Key>
     </Package>
