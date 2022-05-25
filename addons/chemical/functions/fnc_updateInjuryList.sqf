@@ -109,7 +109,7 @@ private _fnc_processWounds = {
             private _classIndex = _woundClassID / 10;
             private _category   = _woundClassID % 10;
 
-            private _className = ace_medical_damage_woundsData select _classIndex select 6;
+            private _className = ace_medical_damage_woundClassNames select _classIndex;
             private _suffix = ["Minor", "Medium", "Large"] select _category;
             private _woundName = localize format ["STR_ACE_Medical_Damage_%1_%2", _className, _suffix];
 
