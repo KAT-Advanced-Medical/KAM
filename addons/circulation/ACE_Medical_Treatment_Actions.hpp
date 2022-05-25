@@ -3,7 +3,7 @@ class ACE_Medical_Treatment_Actions {
     class Morphine;
     class CheckPulse;
     class CPR {
-        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        condition = QUOTE("ace_medical_treatment_fnc_canCPR" && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
     };
 
     class CheckDogtags: CheckPulse {
