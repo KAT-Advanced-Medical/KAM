@@ -84,7 +84,7 @@ In real life, this will happen sometimes, not quiet often.
     "LIST",
     [LLSTRING(ALLOW_LARYNXTUBUS),LLSTRING(ALLOW_LARYNXTUBUS_DESC)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -94,7 +94,7 @@ In real life, this will happen sometimes, not quiet often.
     "LIST",
     [LLSTRING(ALLOW_GUEDELTUBUS),LLSTRING(ALLOW_GUEDELTUBUS_DESC)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -104,7 +104,7 @@ In real life, this will happen sometimes, not quiet often.
     "LIST",
     [LLSTRING(ALLOW_ACCUVAC),LLSTRING(ALLOW_ACCUVAC_DESC)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
