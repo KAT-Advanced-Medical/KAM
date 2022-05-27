@@ -13,7 +13,7 @@
             <Turkish>ACE-Misc activated?</Turkish>
             <Italian>Attivare ACE-Misc?</Italian>
             <Russian>ACE-Misc активирован?</Russian>
-            <Japanese>ACE-Misc を有効化しますか?</Japanese>
+            <Japanese>KAM-Misc を有効化しますか?</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV">
             <English>Attaching IV</English>
@@ -41,7 +41,7 @@
             <Turkish>IV (1000ml) Bağla</Turkish>
             <Italian>Somministrare EV (1000ml)</Italian>
             <Russian>Присоединить IV  (1000 мл)</Russian>
-            <Japanese>IVを取り付ける(1000ml)</Japanese>
+            <Japanese>IVを取り付ける (1000ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_500">
             <English>Attach IV (500ml)</English>
@@ -55,7 +55,7 @@
             <Turkish>IV (500ml) Bağla</Turkish>
             <Italian>Somministrare EV (500ml)</Italian>
             <Russian>Прикрепить IV (500 мл)</Russian>
-            <Japanese>IVを取り付ける(500ml)</Japanese>
+            <Japanese>IVを取り付ける (500ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_250">
             <English>Attach IV (250ml)</English>
@@ -69,7 +69,7 @@
             <Turkish>IV (250ml) Bağla</Turkish>
             <Italian>Somministrare EV (250ml)</Italian>
             <Russian>Прикрепить IV (250 мл)</Russian>
-            <Japanese>IVを取り付ける(250ml)</Japanese>
+            <Japanese>IVを取り付ける (250ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand">
             <English>Stand: Saline IV (1000ml)</English>
@@ -83,7 +83,7 @@
             <Turkish>Stant: Seruym IV (1000ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (1000ml)</Italian>
             <Russian>Подставка: Физиологический раствор IV (1000 мл)</Russian>
-            <Japanese>スタンド: 生理食塩水IV(1000ml)</Japanese>
+            <Japanese>スタンド: 生理食塩水IV (1000ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_500">
             <English>Stand: Saline IV (500ml)</English>
@@ -97,7 +97,7 @@
             <Turkish>Stant: Seruym IV (500ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (500ml)</Italian>
             <Russian>Подставка: Физиологический раствор IV (500 мл)</Russian>
-            <Japanese>スタンド: 生理食塩水IV(500ml)</Japanese>
+            <Japanese>スタンド: 生理食塩水IV (500ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_250">
             <English>Stand: Saline IV (250ml)</English>
@@ -111,7 +111,7 @@
             <Turkish>Stant: Seruym IV (250ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (250ml)</Italian>
             <Russian>Подставка: Физиологический раствор IV (250 мл)</Russian>
-            <Japanese>スタンド: 生理食塩水IV(250ml)</Japanese>
+            <Japanese>スタンド: 生理食塩水IV (250ml)</Japanese>
         </Key>
         <Key ID="STR_kat_misc_SETTING_LIMITWOUNDS_ENABLE">
             <English>Enable limited wounds</English>
@@ -265,7 +265,7 @@
             <Turkish>Flip Sedye</Turkish>
             <Italian>Flip Barella</Italian>
             <Russian>Флип носилки</Russian>
-            <Japanese>担架を回転させる</Japanese>
+            <Japanese>担架をひっくり返す</Japanese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_attention1">
             <English>The vehicle you are looking at is not a helicopter!</English>

@@ -13,7 +13,7 @@
             <Turkish>ACE-Nefes etkinleştirildi mi?</Turkish>
             <Italian>Attivare ACE-Respirazione?</Italian>
             <Russian>ACE-дыхание активировано?</Russian>
-            <Japanese>ACE-Breathing を有効化しますか?</Japanese>
+            <Japanese>KAM-Breathing を有効化しますか?</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_dieValue">
             <English>Lethal SpO2 value</English>
@@ -55,7 +55,7 @@
             <Turkish>Sp02 eklemek / çıkarmak için küçük değer (daha küçük tedavi veya yaralanmalar)</Turkish>
             <Italian>Piccolo valore da aggiungere/rimuovere Sp02 (trattamento minore o lesioni)</Italian>
             <Russian>Небольшое значение для добавления/удаления Sp02 (меньшее лечение или травмы)</Russian>
-            <Japanese>小さいSpO2値の上下変動(軽症時)</Japanese>
+            <Japanese>小さいSpO2値の上下変動 (軽症時)</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Value_After">
             <English>Big value to add / remove Sp02 (bigger treatment or injuries)</English>
@@ -69,7 +69,7 @@
             <Turkish>Sp02 eklemek / çıkarmak için büyük değer (daha büyük tedavi veya yaralanmalar)</Turkish>
             <Italian>Grande valore da aggiungere / rimuovere Sp02 (trattamento più grande o lesioni)</Italian>
             <Russian>Большое значение для добавления/удаления Sp02 (более серьезное лечение или травмы)</Russian>
-            <Japanese>大きいSpO2値の上下変動(重症時)</Japanese>
+            <Japanese>大きいSpO2値の上下変動 (重症時)</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
@@ -83,7 +83,7 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
-            <Japanese>心停止のSpO2低下を可能にする</Japanese>
+            <Japanese>心停止時のSpO2低下を有効化</Japanese>
             <Russian>Включить снижение SpO2 при остановке сердца</Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
@@ -285,10 +285,10 @@
                  %1достаточно вентилируется?
                  %1Sp02 более 70% -&gt; Да
                  %1Sp02 ниже 70% -&gt; Нет -&gt; зад. Дыхание</Russian>
-            <Japanese>呼吸
-                %1十分に吸気していますか?
-                %1Sp02 70%以上 -&gt; はい
-                %1Sp02 70%以下 -&gt; いいえ -&gt; 呼吸を助けてください</Japanese>
+            <Japanese>"呼吸
+ %1十分に吸気していますか?
+ %1Sp02 70%以上 -&gt; はい
+ %1Sp02 70%以下 -&gt; いいえ -&gt; 呼吸を助けてください"</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hint_tip">
             <English>If you saved the airway with a larynxtube skip this</English>
@@ -400,7 +400,7 @@
             <Turkish>Nabız Oksimetresine izin ver</Turkish>
             <Italian>Permetti pulsossimetro</Italian>
             <Russian>Разрешить пульсоксиметр</Russian>
-            <Japanese>パルスオキシメータを許可する</Japanese>
+            <Japanese>パルスオキシメータの許可</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_PULSEOXIMETER">
             <English>Training level required to use a Pulseoximeter</English>
@@ -414,7 +414,7 @@
             <Turkish>Nabız Oksimetresi kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento rischiesto per utilizzare il pulsossimetro</Italian>
             <Russian>Уровень подготовки, необходимый для использования пульсоксиметра</Russian>
-            <Japanese>パルスオキシメータを使用するために必要な訓練レベル</Japanese>
+            <Japanese>パルスオキシメータの使用に訓練レベルを必要とさせます。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_CHESTSEAL">
             <English>Allow Chest Seal</English>
@@ -428,7 +428,7 @@
             <Turkish>Chest Seal'a izin ver</Turkish>
             <Italian>Permetti Chest Seal</Italian>
             <Russian>Разрешить Чест Сеал </Russian>
-            <Japanese>チェストシールを許可する</Japanese>
+            <Japanese>チェストシールの許可</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_TRAININGLEVEL_CHESTSEAL">
             <English>Training level required to use a Chest Seal</English>
@@ -442,11 +442,11 @@
             <Turkish>Chest Seal kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento rischiesto per utilizzare il Chest Seal</Italian>
             <Russian>Уровень подготовки, необходимый для использования Чест Сеал </Russian>
-            <Japanese>チェストシールを使用するために必要な訓練レベル</Japanese>
+            <Japanese>チェストシールの使用に訓練レベルを必要とさせます。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SELF_CHESTSEAL">
             <English>Allow Chest Seal self treatment</English>
-            <Japanese>チェストシールでの自己治療を許可する</Japanese>
+            <Japanese>チェストシールでの自己治療を許可</Japanese>
             <Russian>Разрешить самолечение Чест Сеал </Russian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_STABLE_SPO2">
@@ -489,7 +489,7 @@
             <Turkish>Sıvıyı Boşaltın</Turkish>
             <Italian>Drenare il liquido</Italian>
             <Russian>Слить жидкость</Russian>
-            <Japanese>液体を排出する</Japanese>
+            <Japanese>胸腔排液治療</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax">
             <English>%1 treated a Hemopneumothorax</English>
@@ -587,7 +587,7 @@
             <Turkish>Gelişmiş Hava Yolu Tedavi Kiti, hemopnömotoraks gibi gelişmiş hava yolu koşullarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
             <Italian>Il kit per il Trattamento Avanzato delle vie Aeree è un kit ad uso singolo per il trattamento avanzato di condizioni alle vie aeree, come l'emopneumotorace</Italian>
             <Russian>Набор ААТ</Russian>
-            <Japanese>Advanced Airway Treatment Kitは、血気胸などの高度な気道の状態を治療するために設計された使い捨てキットです。</Japanese>
+            <Japanese>AATキットは、血気胸などの高度な呼吸器の状態を治療するために設計された使い捨てキットです。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemothorax / Tension Pneumothorax Chance</English>
@@ -601,7 +601,7 @@
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Şansı</Turkish>
             <Italian>Probabilità di un emo/pneumotorace iperteso</Italian>
             <Russian>Гемоторакс / Напряженный пневмоторакс Вероятность</Russian>
-            <Japanese>血胸/緊張性気胸の可能性</Japanese>
+            <Japanese>血気胸/緊張性気胸の可能性</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>The percentage chance that a patient will suffer from a hemopneumotorax or tension pneumothorax after they are treated for a pneumothorax. Treatment requires the draining of fluids with the use of an AAT Kit.</English>
@@ -615,7 +615,7 @@
             <Turkish>Bir hastanın pnömotoraks tedavisi gördükten sonra hemotoraks veya tansiyon pnömotorakstan muzdarip olma şansı yüzdesi. Tedavi, sıvıların bir AAT Kiti kullanılarak boşaltılmasını gerektirir.</Turkish>
             <Italian>La probabilità percentuale che un paziente soffra di un emopneumotorace o pneumotorace iperteso in seguito al trattamento di uno pneumotorace. Il trattamento richiede un drenaggio con l'AAT Kit.</Italian>
             <Russian>Процентная вероятность того, что пациент будет страдать гемопневмотораксом или напряженным пневмотораксом после лечения пневмоторакса. Лечение требует дренирования жидкости с использованием набора ААТ.</Russian>
-            <Japanese>気胸の治療を受けた後、患者が気胸または緊張性気胸に苦しむ可能性の割合。治療には、AATキットを使用して水分を排出する必要があります。</Japanese>
+            <Japanese>気胸の治療を受けた後、患者が血気胸または緊張性気胸に苦しむ可能性の割合。治療には、AATキットを使用して体液を排出する必要があります。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemothorax / Tension Pnuemothorax Treament Minimum Level</English>
@@ -629,7 +629,7 @@
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Tedavisi Minimum Seviye</Turkish>
             <Italian>Livello minimo per il trattamento di un emo/pneumotorace iperteso</Italian>
             <Russian>Лечение гемоторакса/напряженного пневмоторакса Минимальный уровень</Russian>
-            <Japanese>血胸/緊張性気胸治療最低レベル</Japanese>
+            <Japanese>血気胸/緊張性気胸治療の許可</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to perform the Needle Decompression and Drain Fluids treatment actions, used to treat Hemothorax or Tension Pneumothorax.</English>
@@ -643,7 +643,7 @@
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Italian>Il livello medico minimo richiesto per eseguire la decompressione con ago e il drenaggio dei fluidi, necessari per il trattamento di un emotorace o pneumotorace iperteso</Italian>
             <Russian>Минимальный медицинский уровень, необходимый для того, чтобы кто-то мог выполнять лечебные действия «Декомпрессия иглой» и «Дренаж жидкости», используемые для лечения гемоторакса или напряженного пневмоторакса.</Russian>
-            <Japanese>血胸または緊張性気胸の治療に使用される、針減圧および排液治療アクションを実行できるようにするために必要な最小医療レベル。</Japanese>
+            <Japanese>胸腔穿刺減圧および胸腔排液治療に訓練レベルを必要とさせます。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
             <English>Pneumothorax Damage Threshold</English>
@@ -685,7 +685,7 @@
             <Turkish>sert pnömotoraks </Turkish>
             <Italian>Pneumotorace estremo </Italian>
             <Russian>Система расширенного пневмоторакса</Russian>
-            <Japanese>ハードコア気胸</Japanese>
+            <Japanese>高度な気胸診断を有効化</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore_DESC">
             <English>Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might be helpful</English>
@@ -699,7 +699,7 @@
             <Turkish>Tıbbi menüde görünmesini sağlamayarak pnömotoraks için hardcore modunu etkinleştirir - Stetoskop yardımcı olabilir </Turkish>
             <Italian>Abilita la mod hardcore per il pneumotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile </Italian>
             <Russian>Активирует расширенную систему пневмоторакса, не показывая пневмоторакс в медицинском меню — может помочь стетоскоп.</Russian>
-            <Japanese>気胸のハードコアmodを有効にします。気胸が発生しても医療メニューに表示しません。-聴診器が役立つ場合があります</Japanese>
+            <Japanese>気胸診断のハードコアモードを有効にします。気胸が発生しても医療メニューに表示しません。-聴診器が役立つ場合があります</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_tensionhemothorax_hardcore">
             <English>Hardcore tension pneumothorax and hemothorax</English>
@@ -713,7 +713,7 @@
             <Turkish>Sert tansiyon pnömotoraks ve hemotoraks</Turkish>
             <Italian>Pneumotorace da tensione hardcore ed emotorace</Italian>
             <Russian>Усовершенствованная система для напряженного пневмоторакса/гемопневмоторакса</Russian>
-            <Japanese>ハードコア緊張性気胸と血胸</Japanese>
+            <Japanese>高度な緊張性気胸と血気胸診断を有効化</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_tensionhemothorax_hardcore_DESC">
             <English>Enables hardcore mod for tension and hemothorax by not making it appear in medical menu - Stethoscope might be helpful</English>
@@ -727,7 +727,7 @@
             <Turkish>Medikal menüde görünmeyerek tansiyon ve hemotoraks için hardcore modu etkinleştirir - Stetoskop yardımcı olabilir</Turkish>
             <Italian>Abilita la mod hardcore per la tensione e l'emotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile</Italian>
             <Russian>Активирует расширенную систему для напряженного пневмоторакса / гемопневмоторакса, не отображая напряженный пневмоторакс / гемопневмоторакс в медицинском меню - может помочь стетоскоп</Russian>
-            <Japanese>緊張性気胸と血気胸のハードコアmodを有効にします。気胸が発生しても医療メニューに表示しません。-聴診器が役立つ場合があります</Japanese>
+            <Japanese>緊張性気胸診断と血気胸診断のハードコアモードを有効にします。それらが発生しても医療メニューに表示しません。-聴診器が役立つ場合があります</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_Stethoscope_display">
             <English>Stethoscope</English>
@@ -811,7 +811,7 @@
             <Turkish>Stetoskop kullanırken toraks seslerinin ne kadar yüksek olduğunu belirler</Turkish>
             <Italian>Determina quanto sono forti i suoni del torace quando si utilizza lo stetoscopio</Italian>
             <Russian>Определяет громкость звуков грудной клетки при использовании стетоскопа.</Russian>
-            <Japanese>聴診器を使用したときの胸の音の大きさを設定します</Japanese>
+            <Japanese>聴診器を使用した際の呼吸音の音の大きさを設定します</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_unconscious">
             <English>Unconscious SpO2 value</English>
@@ -858,56 +858,56 @@
             <German>Zyanose überprüfen</German>
             <Polish>Sprawdź sinicę</Polish>
             <Russian>Проверить цианоз</Russian>
-            <Japanese>チアノーゼをチェック</Japanese>
+            <Japanese>チアノーゼの確認</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Progress">
             <English>Checking Cyanosis</English>
             <German>Zyanose prüfen</German>
             <Polish>Sprawdzanie sinicy</Polish>
             <Russian>Проверка цианоза</Russian>
-            <Japanese>チアノーゼの確認</Japanese>
+            <Japanese>チアノーゼを確認中</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Log">
             <English>Cyanosis Status: %1</English>
             <German>Status der Zyanose: %1</German>
             <Polish>Status sinicy: %1</Polish>
             <Russian>Статус цианоза: %1</Russian>
-            <Japanese>チアノーゼ状態: %1</Japanese>
+            <Japanese>チアノーゼの症状: %1</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_N">
             <English>No Cyanosis</English>
             <German>Keine Zyanose</German>
             <Polish>Brak sinicy</Polish>
             <Russian>Нет цианоза</Russian>
-            <Japanese>チアノーゼなし</Japanese>
+            <Japanese>なし</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Slight">
             <English>Slight Cyanosis</English>
             <German>Leichte Zyanose</German>
             <Polish>Lekka sinica</Polish>
             <Russian>Легкий цианоз</Russian>
-            <Japanese>わずかなチアノーゼ</Japanese>
+            <Japanese>わずか</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosis</English>
             <German>Mittelschwere Zyanose</German>
             <Polish>Umiarkowana sinica</Polish>
             <Russian>средний цианоз</Russian>
-            <Japanese>軽度のチアノーゼ</Japanese>
+            <Japanese>軽度</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
             <English>Severe Cyanosis</English>
             <German>Schwere Zyanose</German>
             <Polish>Ciężka sinica</Polish>
             <Russian>Тяжелый цианоз</Russian>
-            <Japanese>重度のチアノーゼ</Japanese>
+            <Japanese>重度</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis">
             <English>Enable cyanosis diagnose</English>
             <German>Zyanose-Diagnose aktivieren</German>
             <Polish>Włącz diagnozę sinicy</Polish>
             <Russian>Включить диагностику цианоза</Russian>
-            <Japanese>チアノーゼ診断を有効にする</Japanese>
+            <Japanese>チアノーゼ診断を有効化</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis_DESC">
             <English>Enables cyanosis diagnose</English>
@@ -921,54 +921,54 @@
             <German>Leichter Zyanose SpO2-Wert</German>
             <Polish>Poziom SpO2 dla lekkiej sinicy</Polish>
             <Russian>Легкий цианоз Значение SpO2</Russian>
-            <Japanese>わずかなチアノーゼSpO2値</Japanese>
+            <Japanese>わずかなチアノーゼが発症するSpO2値</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue_DESC">
             <English>Slight cyanosis value - default 90 SpO2</English>
             <German>Leichte Zyanose - Standardwert 90 SpO2</German>
             <Polish>Poziom SpO2 dla lekkiej sinicy - domyślnie 90 SpO2</Polish>
             <Russian>Значение легкого цианоза - по умолчанию 90 SpO2</Russian>
-            <Japanese>わずかなチアノーゼ値 - デフォルトはSpO2 90</Japanese>
+            <Japanese>わずかなチアノーゼが発症するSpO2の値 - デフォルトはSpO2 90</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue">
             <English>Mild cyanosis SpO2 value</English>
             <German>Mittelschwere Zyanose SpO2-Wert</German>
             <Polish>Poziom SpO2 dla umiarkowanej sinicy</Polish>
             <Russian>Средний значение цианоза SpO2</Russian>
-            <Japanese>軽度のチアノーゼSpO2値</Japanese>
+            <Japanese>軽度のチアノーゼが発症するSpO2値</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue_DESC">
             <English>Mild cyanosis value - default 75 SpO2</English>
             <German>Mittelschwere Zyanose - Standardwert 75 SpO2</German>
             <Polish>Poziom SpO2 dla umiarkowanej sinicy - domyślnie 75 SpO2</Polish>
             <Russian>Значение Средней цианоза — по умолчанию 75 SpO2</Russian>
-            <Japanese>軽度のチアノーゼ値 - デフォルトはSpO2 75</Japanese>
+            <Japanese>軽度のチアノーゼが発症するSpO2の値 - デフォルトはSpO2 75</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_severeValue">
             <English>Severe cyanosis SpO2 value</English>
             <German>Schwere Zyanose SpO2-Wert</German>
             <Polish>Poziom SpO2 dla ciężkiej sinicy</Polish>
             <Russian>Тяжелый цианоз Значение SpO2</Russian>
-            <Japanese>重度のチアノーゼSpO2値</Japanese>
+            <Japanese>重度のチアノーゼが発症するSpO2値</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_severeValue_DESC">
             <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
             <German>Schwere Zyanose - Standardwert 66 SpO2 \nSollte etwas höher sein als der tödliche SpO2-Wert</German>
             <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
             <Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO2 \nДолжно быть немного выше летального значения SpO2</Russian>
-            <Japanese>重度のチアノーゼ値 - デフォルトSpO2 66\n致命的なSpO2値より少し高く設定する必要があります</Japanese>
+            <Japanese>重度のチアノーゼが発症するSpO2の値 - デフォルトSpO2 66\n致命的なSpO2値より少し高く設定する必要があります</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL">
             <English>Check Cyanosis Minimum Level</English>
             <German>Zyanose prüfen Medic Level</German>
             <Polish>Minimalny poziom wyszkolenia do sprawdzenia sinicy</Polish>
-            <Japanese>チアノーゼを確認出来る医療レベル</Japanese>
+            <Japanese>チアノーゼの確認の許可</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to check cyanosis.</English>
             <German>Das Medic Level, das erforderlich ist, damit jemand eine Zyanose feststellen kann.</German>
             <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie sprawdzić sinicę.</Polish>
-            <Japanese>誰かがチアノーゼをチェックできるようにするために必要な最低医療レベル。</Japanese>
+            <Japanese>チアノーゼの確認に訓練レベルを必要とさせます。</Japanese>
         </Key>
     </Package>
 </Project>
