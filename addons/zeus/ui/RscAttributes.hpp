@@ -51,41 +51,41 @@ class GVAR(RscChangeBloodType): RscDisplayAttributes {
                             h = H_PART(1);
                             colorBackground[] = {0,0,0,0.5};
                         };
-						class BloodType: RscCombo {
-							idc = 16107;
+                        class BloodType: RscCombo {
+                            idc = 16107;
                             x = W_PART(10.1);
                             y = 0;
-							w = W_PART(15.9);
+                            w = W_PART(15.9);
                             h = H_PART(1);
-							colorBackground[] = {0, 0, 0, 0.7};
-							class Items {
-								class BloodType_0 {
-									text = "O+";
+                            colorBackground[] = {0, 0, 0, 0.7};
+                            class Items {
+                                class BloodType_0 {
+                                    text = "O+";
                                     default = 1;
-								};
-								class BloodType_0_N {
-									text = "O-";
-								};
-								class BloodType_A {
-									text = "A+";
-								};
-								class BloodType_A_N {
-									text = "A-";
-								};
+                                };
+                                class BloodType_0_N {
+                                    text = "O-";
+                                };
+                                class BloodType_A {
+                                    text = "A+";
+                                };
+                                class BloodType_A_N {
+                                    text = "A-";
+                                };
                                 class BloodType_B {
-									text = "B+";
-								};
-								class BloodType_B_N {
-									text = "B-";
-								};
+                                    text = "B+";
+                                };
+                                class BloodType_B_N {
+                                    text = "B-";
+                                };
                                 class BloodType_AB {
-									text = "AB+";
-								};
-								class BloodType_AB_N {
-									text = "AB-";
-								};
-							};
-						};
+                                    text = "AB+";
+                                };
+                                class BloodType_AB_N {
+                                    text = "AB-";
+                                };
+                            };
+                        };
                         class Title6: Title1 {
                             idc = -1;
                             text = CSTRING(ModuleManageAirway_bloodVolume);
@@ -136,7 +136,7 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                             h = H_PART(1);
                             colorBackground[] = {0,0,0,0.5};
                         };
-						class Obstruction: RscCheckBox {
+                        class Obstruction: RscCheckBox {
                             idc = 16101;
                             x = W_PART(10.1);
                             y = 0;
@@ -183,13 +183,13 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                             idc = 16105;
                             y = H_PART(4.4);
                         };
-						class Title6: Title1 {
+                        class Title6: Title1 {
                             idc = -1;
                             text = CSTRING(ModuleManageAirway_SpO2Value);
                             toolTip = "";
                             y = H_PART(5.5);
                         };
-						class SpO2Value: RscXSliderH {
+                        class SpO2Value: RscXSliderH {
                             idc = 16106;
                             x = W_PART(10.1);
                             y = H_PART(5.5);
@@ -232,26 +232,26 @@ class GVAR(RscAsystoleModule): RscDisplayAttributes {
                             h = H_PART(1);
                             colorBackground[] = {0,0,0,0.5};
                         };
-						class ShockableState: RscCombo {
-							idc = 16112;
+                        class ShockableState: RscCombo {
+                            idc = 16112;
                             x = W_PART(10.1);
                             y = 0;
-							w = W_PART(15.9);
+                            w = W_PART(15.9);
                             h = H_PART(1);
-							colorBackground[] = {0, 0, 0, 0.7};
-							class Items {
+                            colorBackground[] = {0, 0, 0, 0.7};
+                            class Items {
                                 class none {
                                     text = "";
                                     default = 1;
                                 };
-								class shockable {
-									text = CSTRING(shockablestate_Module_shockable);
-								};
-								class non_shockable {
-									text = CSTRING(shockablestate_Module_non_shockable);
-								};
-							};
-						};
+                                class shockable {
+                                    text = CSTRING(shockablestate_Module_shockable);
+                                };
+                                class non_shockable {
+                                    text = CSTRING(shockablestate_Module_non_shockable);
+                                };
+                            };
+                        };
                     };
                 };
     
