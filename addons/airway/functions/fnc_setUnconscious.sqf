@@ -47,12 +47,12 @@ if (_knockOut) then {
     if (_minWaitingTime > 0) then {
         if (_forcedWakup) then {
             // If unit still has stable vitals at min waiting time, then force wake up
-			KAT_forceWakeup = true;
+            KAT_forceWakeup = true;
             [{
                 params [["_unit", objNull]];
                 if ((alive _unit) && {_unit call ace_medical_status_fnc_hasStableVitals}) then {
                     ["ace_medical_WakeUp", _unit] call CBA_fnc_localEvent;
-					KAT_forceWakeup = false;
+                    KAT_forceWakeup = false;
                 } else {
                     KAT_forceWakeup = false;
                 };

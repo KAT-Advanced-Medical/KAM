@@ -24,7 +24,7 @@ private _medicationArray = _patient getVariable ["ace_medical_medications", []];
     _x params ["_medication"];
 
     if (_medication isEqualTo "Morphine") exitWith {
-    	_medicationArray deleteAt (_medicationArray find _x);
+        _medicationArray deleteAt (_medicationArray find _x);
     };
 } forEach (_medicationArray);
 
