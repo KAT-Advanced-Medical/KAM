@@ -947,7 +947,7 @@
             <Chinese>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinese>
             <Czech>Barevné protokoly aktivit (AED-X / Pulseoximeter)</Czech>
             <Korean>컬러 활동 기록 (AED-X / 맥박 측정기)</Korean>
-            <French>Blocs d'activité colorés (AED-X/Pulseoximeter)</French>
+            <French>Registres d'activité colorés (AED-X/Pulseoximeter)</French>
             <Turkish>Renkli aktivite günlükleri (AED-X / Pulseoximeter)</Turkish>
             <Italian>Zoccoli di attività colorati (AED-X/Pulsossimetro)</Italian>
             <Russian>Цветные журналы активности (AED-X/пульсоксиметр)</Russian>
@@ -961,7 +961,7 @@
             <Chinese>将AED-X或Pulseoximeter的Activitylogs染成红色，如果任何值是临界值。</Chinese>
             <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulseoximeter červeně</Czech>
             <Korean>중요한 값이있는 경우 AED-X 또는 맥박 산소계의 활동 로그를 빨간색으로 표시합니다.</Korean>
-            <French>Colore les Activitylogs de l'AED-X ou du Pulseoximeter en rouge, si une valeur est critique</French>
+            <French>Colore les registres d'activité de l'AED-X ou de l'oxymètre de pouls en rouge, si une valeur est critique</French>
             <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
             <Italian>Colora gli Activitylogs di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
             <Russian>Окрашивает журналы активности AED-X или пульсоксиметра в красный цвет, если какое-либо значение является критическим.</Russian>
@@ -972,72 +972,84 @@
             <German>In die stabile Seitenlage gebracht</German>
             <Polish>Ułożony w pozycji bezpiecznej</Polish>
             <Japanese>回復体位をとっています</Japanese>
+            <French>En position latérale de sécurité</French>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayName">
             <English>Establish recovery position</English>
             <German>In die stabile Seitenlage legen</German>
             <Polish>Ułóż w pozycji bezpiecznej</Polish>
             <Japanese>回復体位をとらせる</Japanese>
+            <French>Mettre en position latérale de sécurité</French>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
             <English>Establishing recovery position</English>
             <German>In die stabile Seitenlage legen</German>
             <Polish>Układanie w pozycji</Polish>
             <Japanese>回復体位をとらせています</Japanese>
+            <French>Mise en position latérale de sécurité</French>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Info">
             <English>Recovery position established successfully</English>
             <German>Erfolgreich in die stabile Seitenlage gelegt</German>
             <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
             <Japanese>回復体位をとりました</Japanese>
+            <French>Mise en position latérale de sécurité réussie</French>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Cancel">
             <English>Recovery position cancelled</English>
             <German>Stabile Seitenlage abgebrochen</German>
             <Polish>Przerwano pozycję bezpieczną</Polish>
             <Japanese>回復体位が崩されました</Japanese>
+            <French>Mise en position latérale de sécurité annulée</French>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_Log">
             <English>%1 established recovery position</English>
             <German>%1 hat die stabile Seitenlage durchgeführt</German>
             <Polish>%1 ułożył w pozycji bezpiecznej</Polish>
             <Japanese>%1 が回復体位にしました</Japanese>
+            <French>%1 a mis en place la position latérale de sécurité</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY">
             <English>Time for recovery position</English>
             <German>Zeit für die stabile Seitenlage</German>
             <Polish>Czas na ułożenie w pozycji bezpiecznej</Polish>
             <Japanese>回復体位にかかる時間</Japanese>
+            <French>Temps pour mettre en position latérale de sécurité</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
             <German>Die Zeit, wie lange es dauert eine erfolgreiche stabile Seitenlage durchzuführen</German>
             <Polish>Jak długo potrwa ułożenie w pozycji bocznej bezpiecznej</Polish>
             <Japanese>回復体位を完了するのにどのくらい時間がかかるか設定します</Japanese>
+            <French>Temps nécessaire pour mettre en position latérale de sécurité</French>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayName">
             <English>Cancel recovery position</English>
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerwij pozycję bezpieczną</Polish>
             <Japanese>回復体位をやめる</Japanese>
+            <French>Annuler la position latérale de sécurité</French>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayNameProgress">
             <English>Cancelling recovery position</English>
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerywanie pozycji bezpiecznej</Polish>
             <Japanese>回復体位を崩しています</Japanese>
+            <French>Annulation de la position latérale de sécurité</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY">
             <English>Time for cancelling recovery position</English>
             <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
             <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
             <Japanese>回復体位をやめるのにかかる時間</Japanese>
+            <French>Temps pour annuler la position latérale de sécurité</French>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
             <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
             <Polish>Jak długo potrwa przerwanie pozycji bocznej bezpiecznej</Polish>
             <Japanese>回復体位をやめさせるのにどのくらい時間がかかるか設定します</Japanese>
+            <French>Temps nécessaire pour annuler la position latérale de sécurité</French>
         </Key>
     </Package>
 </Project>
