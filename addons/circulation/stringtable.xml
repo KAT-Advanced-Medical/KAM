@@ -1115,7 +1115,7 @@
             <Chinese>使用不相容的血包來輸血可能會導致病患死亡</Chinese>
             <Czech>Špatná kombinace krve dárce a příjemce může mít smrtelné následky.</Czech>
             <Korean>잘못된 혈액형으로 수혈시에는 사망에 이를수도 있습니다</Korean>
-            <French>Une mauvaise combinaison sanguine du donneur et du receveur peut avoir des conséquences mortelles</French>
+            <French>Une mauvaise combinaison sanguine du donneur et du receveur peut avoir des conséquences mortelles.</French>
             <Turkish>Verici ve alıcı kanının yanlış bir kombinasyonu ölümcül sonuçlara bile yol açabilir.</Turkish>
             <Italian>Un'errata combinazione tra sangue del donatore e del ricevente può portare a conseguenza mortali.</Italian>
             <Russian>Неправильное сочетание донорской и реципиентной крови может иметь смертельные последствия.</Russian>
@@ -1157,7 +1157,7 @@
             <Spanish>¿Dónde se puede usar el DAE?</Spanish>
             <Czech>Kde může být AED použito?</Czech>
             <Korean>자동제세동기는 어디에서 사용 가능한가요?</Korean>
-            <French>Où l'AED peut être utilisé</French>
+            <French>Où l'AED peut être utilisé?</French>
             <Turkish>AED nerede kullanılabilir?</Turkish>
             <Russian>Где можно использовать AED?</Russian>
             <Italian>Dove può essere utilizzato il DAE</Italian>
@@ -1535,7 +1535,7 @@
             <Chinese>500 毫升套件的绘制时间  </Chinese>
             <Czech>Odebírací čas pro 500ml Kit</Czech>
             <Korean>500ml 키트의 채혈 시간</Korean>
-            <French>Temps de dessin pour le kit 500ml </French>
+            <French>Temps de prélèvement pour le kit 500ml </French>
             <Turkish>500ml Kit için çizim süresi </Turkish>
             <Italian>Tempo di disegno per Kit 500ml </Italian>
             <Russian>Время нанесения для набора 500 мл</Russian>
@@ -1549,7 +1549,7 @@
             <Chinese>250 毫升套件的绘制时间 </Chinese>
             <Czech>Odebírací čas pro 250ml Kit</Czech>
             <Korean>250ml 키트의 채혈 시간</Korean>
-            <French>Temps de dessin pour le kit 250ml </French>
+            <French>Temps de prélèvement pour le kit 250ml </French>
             <Turkish>250ml Kit için çizim süresi </Turkish>
             <Italian>Tempo di disegno per Kit 250ml </Italian>
             <Russian>Время нанесения для набора 250 мл</Russian>
