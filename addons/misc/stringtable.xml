@@ -149,7 +149,7 @@
             <Chinese>以條件來限制傷口</Chinese>
             <Czech>Použít podmínku omezených ran</Czech>
             <Korean>상태 제한 상처사용</Korean>
-            <French>Condition d'utilisation pour limite de blessures</French>
+            <French>Condition d'utilisation pour la limite de blessures</French>
             <Turkish>Durum sınırı yaralarını kullanın</Turkish>
             <Italian>Condizione d'utilizzo per limite delle ferite</Italian>
             <Russian>Использовать раны ограничения состояния</Russian>
@@ -233,7 +233,7 @@
             <Chinese>AA抬起担架AA</Chinese>
             <Czech>Vytáhnout nosítka</Czech>
             <Korean>들것 올리기</Korean>
-            <French>Soulever la civière</French>
+            <French>Elever la civière</French>
             <Turkish>Kaldırma Sedyesi</Turkish>
             <Italian>Alzare la barella</Italian>
             <Russian>Поднимите носилки</Russian>
@@ -247,7 +247,7 @@
             <Chinese>下担架</Chinese>
             <Czech>Snížit nosítka</Czech>
             <Korean>하부 들것</Korean>
-            <French>Civière inférieure</French>
+            <French>Baisser la civière</French>
             <Turkish>Alt Sedye</Turkish>
             <Italian>Barella inferiore</Italian>
             <Russian>Нижние носилки</Russian>
@@ -261,7 +261,7 @@
             <Chinese>翻转担架</Chinese>
             <Czech>Otočit nosítka</Czech>
             <Korean>플립 들것</Korean>
-            <French>Civière à bascule</French>
+            <French>Retourner la civière</French>
             <Turkish>Flip Sedye</Turkish>
             <Italian>Flip Barella</Italian>
             <Russian>Флип носилки</Russian>
