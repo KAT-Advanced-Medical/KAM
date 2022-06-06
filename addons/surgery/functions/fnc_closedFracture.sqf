@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: PabstMirror
- * Applies a splint to the patient on the given body part.
+ * Author: 1LT.Mazinski.H
+ * Fully heals a fracture on the selected limb.
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -12,7 +12,7 @@
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call ace_medical_treatment_fnc_splint
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_closedFracture
  *
  * Public: No
  */

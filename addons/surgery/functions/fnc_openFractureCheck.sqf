@@ -1,21 +1,19 @@
 #include "script_component.hpp"
 /*
- * Author: 2LT.Mazinski
- * Opens an IV/IO on a patient and changes the patient's flow variable
+ * Author: 1LT.Mazinski.H
+ * Local call to check if a patient has a complex fracture
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
  * 2: Body Part <STRING>
- * 3: Treatment (not used) <STRING>
- * 4: Item User (not used) <OBJECT>
- * 5: Used Item <STRING>
+ * 3: Fracture Status <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg", "", objNull, "kat_IV_20"] call kat_circulation_fnc_fractureCheck;
+ * [player, cursorObject, "LeftLeg", 3.1] call kat_surgery_fnc_openFractureCheck
  *
  * Public: No
  */

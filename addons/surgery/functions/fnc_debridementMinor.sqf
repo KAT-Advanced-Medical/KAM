@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: PabstMirror
- * Applies a splint to the patient on the given body part.
+ * Author: 1LT.Mazinski.H
+ * Clears all stitched wounds on a patient
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -12,7 +12,7 @@
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call ace_medical_treatment_fnc_splint
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_debridementMinor
  *
  * Public: No
  */

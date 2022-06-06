@@ -1,18 +1,18 @@
 #include "script_component.hpp"
 /*
- * Author: PabstMirror
- * Applies a splint to the patient on the given body part.
- *
+ * Author: 1LT.Mazinski.H
+ * Progresses the treatment process for a complex fracture
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
  * 2: Body Part <STRING>
+ * 3: Current Fracture Status <NUMBER>
  *
  * Return Value:
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call ace_medical_treatment_fnc_splint
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_openFractureProgress
  *
  * Public: No
  */

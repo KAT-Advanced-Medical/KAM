@@ -1,21 +1,17 @@
 #include "script_component.hpp"
 /*
- * Author: 2LT.Mazinski
- * Checks for AED-Xs in vehicle inventories and allows them to be used on patients both in and around the vehicle.
+ * Author: 1LT.Mazinski.H
+ * Allows for dialysis to occur around medical vehicles
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Body Part <STRING>
- * 3: Treatment (not used) <STRING>
- * 4: Item User (not used) <OBJECT>
- * 5: Used Item <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg", "", objNull, "kat_IV_20"] call kat_circulation_fnc_applyIV;
+ * [player, cursorObject] call kat_surgery_fnc_vehicleCheckDialysis
  *
  * Public: No
  */

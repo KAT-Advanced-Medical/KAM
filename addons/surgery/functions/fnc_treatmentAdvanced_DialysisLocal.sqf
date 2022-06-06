@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: 2LT.Mazinski
- * Locates and Removes 1x Morphine after the administration of Naloxone.
+ * Author: 1LT.Mazinski.H
+ * Local treatment call for dialysis procedure
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, "Naloxone"] call aceP_circulation_fnc_treatmentAdvanced_NaloxoneLocal;
+ * [player, cursorTarget] call kat_surgery_fnc_treatmentAdvanced_DialysisLocal
  *
  * Public: No
  */

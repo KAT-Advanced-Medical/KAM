@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: PabstMirror
- * Local callback for applying a splint to a patient.
+ * Author: 1LT.Mazinski.H
+ * Local call for fully healing a fracture.
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -12,7 +12,7 @@
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call ace_medical_treatment_fnc_splintLocal
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_closedFractureLocal
  *
  * Public: No
  */
