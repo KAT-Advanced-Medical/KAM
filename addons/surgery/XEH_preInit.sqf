@@ -6,7 +6,7 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_CAT_M "KAT Medical - Surgery"
+#define CBA_SETTINGS_CAT_M "KAT - ADV Medical: Surgery"
 
 [
 	QGVAR(kidneyAction),
@@ -18,11 +18,11 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(blockChance),
+	QGVAR(dialysisTime),
 	"SLIDER",
-	[LLSTRING(BLOCK_CHANCE), LLSTRING(BLOCK_CHANCE_DESC)],
+	LLSTRING(DIALYSIS_TIMER),
 	CBA_SETTINGS_CAT_M,
-	[0, 100, 20, 0],
+	[0,100,20,0],
 	true
 ] call CBA_Settings_fnc_init;
 
@@ -56,7 +56,7 @@ PREP_RECOMPILE_END;
 [
 	QGVAR(etomidateTime),
 	"SLIDER",
-	LLSTRING(ETOMIDATE_TIME),
+	[LLSTRING(ETOMIDATE_TIMER), LLSTRING(ETOMIDATE_TIMER_DESC)],
 	CBA_SETTINGS_CAT_M,
 	[0,100,45,0],
 	true
@@ -72,24 +72,6 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(openTime),
-	"SLIDER",
-	LLSTRING(OPEN_TIMER),
-	CBA_SETTINGS_CAT_M,
-	[0,100,15,0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(surgicalTime),
-	"SLIDER",
-	LLSTRING(SURGICAL_TIMER),
-	CBA_SETTINGS_CAT_M,
-	[0,100,8,0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
 	QGVAR(incisionTime),
 	"SLIDER",
 	LLSTRING(INCISION_TIMER),
@@ -99,11 +81,56 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+	QGVAR(intermediateTime),
+	"SLIDER",
+	[LLSTRING(INTERMEDIATE_TIMER), LLSTRING(INTERMEDIATE_TIMER_DESC)],
+	CBA_SETTINGS_CAT_M,
+	[0,100,8,0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(openTime),
+	"SLIDER",
+	LLSTRING(OPEN_TIMER),
+	CBA_SETTINGS_CAT_M,
+	[0,100,15,0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(debrideTime),
+	"SLIDER",
+	LLSTRING(DEBRIDE_TIMER),
+	CBA_SETTINGS_CAT_M,
+	[0,100,20,0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(npwtTime),
+	"SLIDER",
+	LLSTRING(NPWT_TIMER),
+	CBA_SETTINGS_CAT_M,
+	[0,100,20,0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
 	QGVAR(fractureCheck_Level),
 	"LIST",
 	LLSTRING(FRACTURE_CHECK),
 	CBA_SETTINGS_CAT_M,
 	[[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(fractureCheck_Time),
+	"SLIDER",
+	LLSTRING(FRACTURE_CHECK_TIMER),
+	CBA_SETTINGS_CAT_M,
+	[0,100,10,0],
 	true
 ] call CBA_Settings_fnc_init;
 

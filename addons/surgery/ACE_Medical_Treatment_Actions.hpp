@@ -6,9 +6,12 @@ class ACE_Medical_Treatment_Actions {
     class Morphine;
     class CheckPulse;
     class CPR;
+    class Carbonate;
+    class Defibrillator_AED_X_vehicle;
 
     class BreathCheck: Carbonate {
-        displayName = "Check Breath";
+        displayName = CSTRING(breath_check);
+        displayNameProgress = CSTRING(fracture_checking);
         category = "examine";
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
@@ -22,35 +25,35 @@ class ACE_Medical_Treatment_Actions {
         animationMedicProne = "";
     };
     class Dialysis: Defibrillator_AED_X_vehicle {
-        displayName = "Perform Dialysis";
-        displayNameProgress = "Performing";
+        displayName = CSTRING(dialysis);
+        displayNameProgress = CSTRING(performing);
         items[] = {};
         condition = QFUNC(vehicleCheckDialysis);
-        treatmentTime = 15;
-        medicRequired = 1;
+        treatmentTime = QGVAR(dialysisTime);
+        medicRequired = QGVAR(surgicalAction);
         callbackProgress = "";
         callbackStart = "";
         callbackFailure = "";
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_Dialysis));
-        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+        icon = QPATHTOF(ui\vacuum.paa);
     };
     class CheckFracture: CheckPulse {
-        displayName = "Check Fracture";
-        displayNameProgress = "Checking Fracture";
+        displayName = CSTRING(fracture_check);
+        displayNameProgress = CSTRING(fracture_check);
         category = "examine";
         treatmentLocations = 0;
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(fractureCheck_Level);
-        treatmentTime = 5;
+        treatmentTime = QGVAR(fractureCheck_Time);
         items[] = {};
         condition = QUOTE(([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(fractureCheck)) && (GVAR(enable_fracture)));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(fractureSelect));
     };
     class ClosedReduction: CheckFracture {
-        displayName = "Perform Closed Reduction";
-        displayNameProgress = "Performing Reduction";
+        displayName = CSTRING(closed);
+        displayNameProgress = CSTRING(perform);
         category = "surgery";
         treatmentLocations = QGVAR(closedLocation);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -63,8 +66,8 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(closedFracture));
     };
     class OpenReduction: CheckFracture {
-        displayName = "Perform Open Reduction";
-        displayNameProgress = "Performing Reduction";
+        displayName = CSTRING(open);
+        displayNameProgress = CSTRING(perform);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -77,7 +80,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(openFracture));
     };
     class Etomidate: Carbonate {
-        displayName = "Push Etomidate";
+        displayName = CSTRING(Etomidate_Use);
         category = "surgery";
         treatmentLocations = 0;
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -90,7 +93,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_medication;";
     };
     class Lorazepam: Carbonate {
-        displayName = "Push Lorazepam";
+        displayName = CSTRING(Lorazepam_Use);
         category = "surgery";
         treatmentLocations = 0;
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -103,7 +106,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Lorazepam')] call FUNC(treatmentAdvanced_Generic));
     };
     class Flumazenil: Carbonate {
-        displayName = "Push Flumazenil";
+        displayName = CSTRING(Flumazenil_Use);
         category = "surgery";
         treatmentLocations = 0;
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -116,14 +119,14 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Flumazenil')] call FUNC(treatmentAdvanced_Generic));
     };
     class Expose: BasicBandage {
-        displayName = "Expose fracture";
-        displayNameProgress = "Exposing";
+        displayName = CSTRING(Retractor_Use);
+        displayNameProgress = CSTRING(Retractor_Action);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction);
-        treatmentTime = QGVAR(surgicalTime);
+        treatmentTime = QGVAR(intermediateTime);
         items[] = {"kat_retractor"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openFractureCheck));
         consumeItem = 0;
@@ -131,28 +134,28 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openFractureProgress));
     };
     class Incision: BasicBandage {
-        displayName = "Peform Incision";
-        displayNameProgress = "Performing Incision";
+        displayName = CSTRING(Scalpel_use);
+        displayNameProgress = CSTRING(perform);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction);
-        treatmentTime = QGVAR(surgicalTime);
+        treatmentTime = QGVAR(incisionTime);
         items[] = {"kat_scalpel"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(openFractureCheck));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(openFractureIncision));
     };
     class Clamp: BasicBandage {
-        displayName = "Clamp Fracture";
-        displayNameProgress = "Clamping Fracture";
+        displayName = CSTRING(Clamp_Use);
+        displayNameProgress = CSTRING(Clamp_Action);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction);
-        treatmentTime = QGVAR(surgicalTime);
+        treatmentTime = QGVAR(intermediateTime);
         items[] = {"kat_clamp"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call FUNC(openFractureCheck));
         consumeItem = 0;
@@ -160,47 +163,45 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call FUNC(openFractureProgress));
     };
     class Irrigate: BasicBandage {
-        displayName = "Irrigate Wound";
-        displayNameProgress = "Irrigating";
+        displayName = CSTRING(Irrigate_Use);
+        displayNameProgress = CSTRING(Irrigate_Action);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction);
-        treatmentTime = QGVAR(surgicalTime);
+        treatmentTime = QGVAR(intermediateTime);
         items[] = {"ACE_salineIV_250"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openFractureCheck));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openFractureProgress));
     };
     class Debridement: BasicBandage {
-        displayName = "Debride Wounds";
-        displayNameProgress = "Debriding";
+        displayName = CSTRING(Debride_Use);
+        displayNameProgress = CSTRING(Debride_Action);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
         allowedSelections[] = {"Head", "Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction);
-        treatmentTime = 15;
+        treatmentTime = QGAVR(debrideTime);
         items[] = {"kat_scalpel"};
         condition = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(debridementCheck));
         consumeItem = 0;
-        patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(debridementClear));
     };
     class NPWT: BasicBandage {
-        displayName = "Apply NPWT Dressing";
-        displayNameProgress = "Applying";
+        displayName = CSTRING(Vacuum_Use);
+        displayNameProgress = CSTRING(Vacuum_Action);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
         allowedSelections[] = {"Head", "Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 8;
+        allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction);
-        treatmentTime = 8;
+        treatmentTime = QGVAR(npwtTime);
         items[] = {"kat_vacuum"};
         condition = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(debridementCheck));
         consumeItem = 0;
-        patientStateCondition = 0;
         callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(debridementStart));
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(debridementMinor));
     };

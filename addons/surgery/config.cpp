@@ -32,14 +32,13 @@ class CfgPatches {
             "ace_dogtags",
             "cba_settings"
         };
-        author = "2LT.Mazinski";
-        authors[] = {"2LT.Mazinski"};
+        author = "1LT.Mazinski";
+        authors[] = {"1LT.Mazinski"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };
 };
 
-#include "CfgFunctions.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"

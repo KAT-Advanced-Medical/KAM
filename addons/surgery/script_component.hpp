@@ -1,6 +1,6 @@
-#define COMPONENT circulation
-#define COMPONENT_BEAUTIFIED ACE - Circulation
-#include "\x\aceP\addons\main\script_mod.hpp"
+#define COMPONENT surgery
+#define COMPONENT_BEAUTIFIED KAT - Surgery
+#include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -14,7 +14,7 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_CIRCULATION
 #endif
 
-#include "\x\aceP\addons\main\script_macros.hpp"
+#include "\x\kat\addons\main\script_macros.hpp"
 #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 
 // Returns a text config entry as compiled code or variable from missionNamespace
