@@ -29,7 +29,7 @@ _target setVariable [QGVAR(pulseoximeter), true, true];
     _args params ["_target"];
     if !(_target getVariable [QGVAR(pulseoximeter), false]) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
-		_target setVariable ["kat_PulseoxiInUse_PFH", nil];
+        _target setVariable ["kat_PulseoxiInUse_PFH", nil];
     };
 
     [_target, "quick_view", "STR_kat_breathing_pulseoxi_Log"] call kat_circulation_fnc_removeLog;
