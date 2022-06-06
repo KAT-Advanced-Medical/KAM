@@ -26,4 +26,4 @@ if (_target != player) then {
 	};
 };
 
-_target getVariable [QGVAR(bloodtype), "O"];
+_target getVariable [QGVAR(bloodtype), "O-"];

@@ -57,7 +57,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-private _type = round random(3);
+private _type = round random(7);
 [
     QGVAR(bloodgroup),
     "LIST",
