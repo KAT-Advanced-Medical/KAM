@@ -8,7 +8,7 @@
             <Spanish>¿Activar ACE-Misceláneos?</Spanish>
             <Chinese>啟用ACE-雜項?</Chinese>
             <Czech>ACE-Misc aktivováno?</Czech>
-            <Korean>ACE 음악 활성화?</Korean>
+            <Korean>ACE 음악 활성화</Korean>
             <French>ACE-Misc activé?</French>
             <Turkish>ACE-Misc activated?</Turkish>
             <Italian>Attivare ACE-Misc?</Italian>
@@ -22,7 +22,7 @@
             <Spanish>Administrando IV</Spanish>
             <Chinese>注射點滴</Chinese>
             <Czech>Připojuji IV</Czech>
-            <Korean>수액 붙이는중</Korean>
+            <Korean>IV 놓는 중</Korean>
             <French>Administrer IV</French>
             <Turkish>IV Bağlanıyor</Turkish>
             <Italian>Somministrando EV</Italian>
@@ -36,7 +36,7 @@
             <Spanish>Administrar IV (1000ml)</Spanish>
             <Chinese>注射點滴 (1000ml)</Chinese>
             <Czech>Připojuji IV (1000ml)</Czech>
-            <Korean>수액 붙이기(1000ml)</Korean>
+            <Korean>IV 놓기(1000ml)</Korean>
             <French>Administrer IV (1000ml)</French>
             <Turkish>IV (1000ml) Bağla</Turkish>
             <Italian>Somministrare EV (1000ml)</Italian>
@@ -50,7 +50,7 @@
             <Spanish>Administrar IV (500ml)</Spanish>
             <Chinese>注射點滴 (500ml)</Chinese>
             <Czech>Připojuji IV (500ml)</Czech>
-            <Korean>수액 붙이기(500ml)</Korean>
+            <Korean>IV 놓기(500ml)</Korean>
             <French>Administrer IV (500ml)</French>
             <Turkish>IV (500ml) Bağla</Turkish>
             <Italian>Somministrare EV (500ml)</Italian>
@@ -64,7 +64,7 @@
             <Spanish>Administrar IV (250ml)</Spanish>
             <Chinese>注射點滴 (250ml)</Chinese>
             <Czech>Připojuji IV (2500ml)</Czech>
-            <Korean>수액 붙이기(250ml)</Korean>
+            <Korean>IV 놓기(250ml)</Korean>
             <French>Administrer IV (250ml)</French>
             <Turkish>IV (250ml) Bağla</Turkish>
             <Italian>Somministrare EV (250ml)</Italian>
@@ -78,7 +78,7 @@
             <Spanish>Soporte: Salino IV (1000ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (1000ml)</Chinese>
             <Czech>Stojan: Solný roztok (1000ml)</Czech>
-            <Korean>스탠드: 수액(1000ml)</Korean>
+            <Korean>스탠드: 생리식염수 IV(1000ml)</Korean>
             <French>Accrocher: Saline IV (1000ml)</French>
             <Turkish>Stant: Seruym IV (1000ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (1000ml)</Italian>
@@ -92,7 +92,7 @@
             <Spanish>Soporte: Salino IV (500ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (500ml)</Chinese>
             <Czech>Stojan: Solný roztok (500ml)</Czech>
-            <Korean>스탠드: 수액(500ml)</Korean>
+            <Korean>스탠드: 생리식염수 IV(500ml)</Korean>
             <French>Accrocher: Saline IV (500ml)</French>
             <Turkish>Stant: Seruym IV (500ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (500ml)</Italian>
@@ -106,7 +106,7 @@
             <Spanish>Soporte: Salino IV (250ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (250ml)</Chinese>
             <Czech>Stojan: Solný roztok (250ml)</Czech>
-            <Korean>스탠드: 수액(250ml)</Korean>
+            <Korean>스탠드: 생리식염수 IV(250ml)</Korean>
             <French>Accrocher: Saline IV (250ml)</French>
             <Turkish>Stant: Seruym IV (250ml)</Turkish>
             <Italian>Supporto: Fisiologica EV (250ml)</Italian>
@@ -120,7 +120,7 @@
             <Spanish>Habilitar límite de heridas</Spanish>
             <Chinese>開啟傷口限制</Chinese>
             <Czech>Povolit omezené rány</Czech>
-            <Korean>제한된 상처 사용</Korean>
+            <Korean>제한된 상처 활성화</Korean>
             <French>Activer une limite de blessures</French>
             <Turkish>Sınırlı yaraları etkinleştirin</Turkish>
             <Italian>Attivare un limite di ferite</Italian>
@@ -134,7 +134,7 @@
             <Spanish>Vendar heridas</Spanish>
             <Chinese>包紮傷口</Chinese>
             <Czech>Zavázat rány</Czech>
-            <Korean>상처들에 여러붕대 감기</Korean>
+            <Korean>붕대 감기</Korean>
             <French>Panser les blessures</French>
             <Turkish>Bandaj yaraları</Turkish>
             <Italian>Bendare le ferite</Italian>
@@ -162,7 +162,7 @@
             <Spanish>Desarmar camilla</Spanish>
             <Chinese>拆卸式擔架</Chinese>
             <Czech>Rozložit nosítka</Czech>
-            <Korean>분리가능한 들것</Korean>
+            <Korean>들것 분리</Korean>
             <French>Désassembler la civière</French>
             <Turkish>Sedyeyi sökün</Turkish>
             <Italian>Disassemblare la barella</Italian>
@@ -218,7 +218,7 @@
             <Spanish>Levantar la camilla 10 m</Spanish>
             <Chinese>将担架抬高 10m</Chinese>
             <Czech>Vytáhnout nosítka o 10m</Czech>
-            <Korean>들것을 10m 올리기</Korean>
+            <Korean>들것을 10m 높이기</Korean>
             <French>Élever la civière de 10 m</French>
             <Turkish>Sedyeyi 10m Yükselt</Turkish>
             <Italian>Alzare la barella di 10 m</Italian>
@@ -246,7 +246,7 @@
             <Spanish>Camilla inferior</Spanish>
             <Chinese>下担架</Chinese>
             <Czech>Snížit nosítka</Czech>
-            <Korean>하부 들것</Korean>
+            <Korean>들것 내리기</Korean>
             <French>Baisser la civière</French>
             <Turkish>Alt Sedye</Turkish>
             <Italian>Barella inferiore</Italian>
@@ -260,7 +260,7 @@
             <Spanish>Camilla Flip</Spanish>
             <Chinese>翻转担架</Chinese>
             <Czech>Otočit nosítka</Czech>
-            <Korean>플립 들것</Korean>
+            <Korean>들것 뒤집기</Korean>
             <French>Retourner la civière</French>
             <Turkish>Flip Sedye</Turkish>
             <Italian>Flip Barella</Italian>
