@@ -5,24 +5,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            "kat_PainkillerItem",
-            "kat_CarbonateItem",
-            "kat_X_AEDItem"
         };
         weapons[] = {
-            "kat_Painkiller",
-            "kat_PainkillerItem",
-            "kat_IV_16",
-            "kat_IO_FAST",
-            "kat_Carbonate",
-            "kat_CarbonateItem",
-            "kat_naloxone",
-            "kat_TXA",
-            "kat_EACA",
-            "kat_X_AED",
-            "kat_norepinephrine",
-            "kat_phenylephrine",
-            "kat_nitroglycerin",
             "kat_etomidate",
             "kat_lidocaine",
             "kat_lorazepam",
@@ -48,8 +32,8 @@ class CfgPatches {
             "ace_dogtags",
             "cba_settings"
         };
-        author = "Katalam";
-        authors[] = {"Katalam", "2LT.Mazinski"};
+        author = "2LT.Mazinski";
+        authors[] = {"2LT.Mazinski"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };
@@ -59,8 +43,5 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"
-#include "CfgMagazines.hpp"
-#include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
-#include "ACE_Medical_Advanced.hpp"
