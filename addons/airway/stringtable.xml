@@ -22,7 +22,7 @@
             <Spanish>¿Activar ACE-Lesiones Respiratorias?</Spanish>
             <Chinese>啟用ACE-呼吸道受傷機制?</Chinese>
             <Czech>ACE - zranění dýchacích cest aktivováno?</Czech>
-            <Korean>기도부상 활성화?</Korean>
+            <Korean>기도 부상 활성화</Korean>
             <French>ACE-Blessures des voies aériennes activées?</French>
             <Turkish>ACE-Havayolu yaralanmaları aktive edildi mi?</Turkish>
             <Italian>Attivare ACE-Lesioni Respiratorie?</Italian>
@@ -36,7 +36,7 @@
             <Spanish>Probabilidad de colapso en vías aéreas</Spanish>
             <Chinese>呼吸道塌陷機率</Chinese>
             <Czech>Pravděpodobnost zhroucení dýchacích cest</Czech>
-            <Korean>기도 붕괴 가능성</Korean>
+            <Korean>기도 허탈 확률</Korean>
             <French>Probabilité d'affaissement des voies aériennes</French>
             <Turkish>Hava yolu çökmesi olasılığı</Turkish>
             <Italian>Probabilità di collasso delle vie aeree</Italian>
@@ -50,7 +50,7 @@
             <Spanish>Probabilidad de obstrucción en vías aéreas</Spanish>
             <Chinese>呼吸道阻塞機率</Chinese>
             <Czech>Pravděpodobnost zablokování dýchacích cest</Czech>
-            <Korean>기도가 막힐 가능성</Korean>
+            <Korean>기도가 혀에 의해 막힐 확률</Korean>
             <French>Probabilité d'obstruction des voies aériennes</French>
             <Turkish>Tıkanmış bir hava yolu olasılığı</Turkish>
             <Italian>Probabilità di ostruzione delle vie aeree</Italian>
@@ -64,7 +64,7 @@
             <Spanish>Probabilidad de oclusión en vías aéreas</Spanish>
             <Chinese>呼吸道閉塞機率</Chinese>
             <Czech>Pravděpodobnost uzavření dýchacích cest</Czech>
-            <Korean>기도 폐쇄 가능성</Korean>
+            <Korean>기도가 구토에 의해 막힐 확률</Korean>
             <French>Probabilité d'occlusion des voies aériennes</French>
             <Turkish>Hava yolunu tıkama olasılığı</Turkish>
             <Italian>Probabilità di occlusione delle vie aeree</Italian>
@@ -78,7 +78,7 @@
             <Spanish>¿Activar el sonido de vómito?</Spanish>
             <Chinese>啟用人物嘔吐聲音？</Chinese>
             <Czech>Aktivovat zvuk zvracení?</Czech>
-            <Korean>토하는 사운드 활성화?</Korean>
+            <Korean>토하는 사운드 활성화</Korean>
             <French>Activation du son des vomissements?</French>
             <Turkish>Kusma sesi etkinleştirilsin mi?</Turkish>
             <Italian>Attivare il suono del vomito?</Italian>
@@ -92,7 +92,7 @@
             <Spanish>La comunidad llamada Keko tenía un addon para los jugadores del AFK. Se les ponía inconscientes para que otros pudieran arrastrarlos. Eso disparó las posibilidades de problemas en las vías respiratorias. Esta cadena evita que eso suceda cuando quedan inconscientes por ese addon de AFK.</Spanish>
             <Chinese>名为keko的社区有AFK玩家的附加功能。他们被置于无意识状态，所以其他人可以将他们拖走。这引发了气道问题的机会。这个字符串可以防止他们被AFK插件弄昏的情况发生。</Chinese>
             <Czech>Komunia zvaná keko měla addon pro AFK hráče. Ti byli dáni do bezvědomí, takže je ostatní mohli odtáhnout pryč. To ale vyvolalo problémy, které mohli ohrozit jejich dýchací cesty. Tento string zabrání dýchacím potížím, pokud je hráč tímto AFK addonemm dán do bezvědomí.</Czech>
-            <Korean>keko라는 커뮤니티에는 AFK 플레이어를위한 추가 기능이 있습니다. 다른 사람들이 그들을 끌고 갈 수 있도록 그들은 의식을 잃었습니다. 그것은기도 문제의 가능성을 촉발 시켰습니다. 이 문자열은 AFK 애드온에 의해 의식을 잃었을 때 발생하는 것을 방지합니다.</Korean>
+            <Korean>keko라는 커뮤니티에는 잠수 플레이어를 위한 애드온이 있었습니다. 그 애드온은 다른 사람들이 그들을 끌고 갈 수 있도록 그들을 의식불명으로 만듭니다. 그러나 그것은 기도 이상의 확률을 발생시켰습니다. 이 문자열은 그 애드온에 의해 의식불명이 발생하는 것을 방지합니다.</Korean>
             <French>Le membre de la communauté appelé Keko avait un addon pour les joueurs AFK. Ils étaient passés inconscients et pouvaient être trainés. Ce qui déclenchait les chances de problèmes respiratoires. Cette option empêche cela de se produire quand ils deviennent inconscients par cet addon AFK.</French>
             <Turkish>Keko adlı topluluğun AFK oyuncuları için eklentileri vardı. Başkalarının onları uzaklaştırabilmesi için bilinçsiz bırakıldılar. Bu, hava yolu problemleri olasılığını tetikledi. Bu dize, AFK eklentisi tarafından bilinçsiz hale geldiklerinde bunun olmasını engeller.</Turkish>
             <Italian>La comunità chiamata keko aveva un addon per i giocatori AFK. Venivano resi inconscenti così che gli altri potessero trascinarli via. Questo aveva la possibilità di causare problemi alle vie aeree. Questa stringa previene che ciò succeda quando vengono resi incoscenti da questo addon AFK.</Italian>
@@ -106,7 +106,7 @@
             <Spanish>Comprobar vías aéreas</Spanish>
             <Chinese>檢查呼吸道</Chinese>
             <Czech>Zkontrolovat dýchací cesty</Czech>
-            <Korean>기도확인</Korean>
+            <Korean>기도 확인</Korean>
             <French>Vérifier les voies aériennes</French>
             <Turkish>Hava Yollarını Kontrol Edin</Turkish>
             <Italian>Controllare vie aeree</Italian>
@@ -120,7 +120,7 @@
             <Spanish>%1 comprobó las vías aéreas: %2 %3, %4 %5</Spanish>
             <Chinese>%1 檢查呼吸道: %2 %3, %4 %5</Chinese>
             <Czech>Zkontrolovány dýchací cesty: %2 %3, %4 %5 </Czech>
-            <Korean>%1 기도 확인됨: %2 %3, %4 %5</Korean>
+            <Korean>%1 이(가)기도 확인함: %2 %3, %4 %5</Korean>
             <French>%1 a vérifié les voies aériennes : %2 %3, %4 %5</French>
             <Turkish>%1 kontrol edilmiş havayolları: %2 %3, %4 %5</Turkish>
             <Italian>%1 ha controllato le vie aeree: %2 %3 %4 %5</Italian>
@@ -134,7 +134,7 @@
             <Spanish>%1 intubado con %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
             <Czech>%1 vložil %2</Czech>
-            <Korean>%1 삽입됨 %2</Korean>
+            <Korean>%1 은(는) %2 을(를) 삽입했습니다</Korean>
             <French>%1 a intubé avec un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha intubato con %2</Italian>
@@ -148,7 +148,7 @@
             <Spanish>Ocluída</Spanish>
             <Chinese>閉塞</Chinese>
             <Czech>Uzavřeno</Czech>
-            <Korean>기도에 이물질</Korean>
+            <Korean>구토</Korean>
             <French>Occludées</French>
             <Turkish>Tıkalı</Turkish>
             <Italian>Occlusa</Italian>
@@ -176,7 +176,7 @@
             <Spanish>Obstruída</Spanish>
             <Chinese>阻塞</Chinese>
             <Czech>Zablokováno</Czech>
-            <Korean>기도폐쇄됨</Korean>
+            <Korean>혀로 인한 기도 폐쇄</Korean>
             <French>Obstruées</French>
             <Turkish>Kapanma</Turkish>
             <Italian>Ostruita</Italian>
@@ -190,7 +190,7 @@
             <Spanish>No</Spanish>
             <Chinese>無</Chinese>
             <Czech>Není</Czech>
-            <Korean>클리어됨</Korean>
+            <Korean>없음</Korean>
             <French>Non</French>
             <Turkish>Değil</Turkish>
             <Italian>No</Italian>
@@ -204,7 +204,7 @@
             <Spanish>Las vías aéreas están despejadas</Spanish>
             <Chinese>航線暢通</Chinese>
             <Czech>Dýchací cesty jsou volné</Czech>
-            <Korean>기도는 깨끗함</Korean>
+            <Korean>기도 막히지 않음</Korean>
             <French>Les voies aériennes sont dégagées</French>
             <Turkish>Havayolları temiz</Turkish>
             <Italian>Le vie aeree sono libere</Italian>
@@ -218,7 +218,7 @@
             <Spanish>No se necesita succión médica</Spanish>
             <Chinese>不需要醫療抽吸</Chinese>
             <Czech>Není třeba nic odsát</Czech>
-            <Korean>기도 이물질 제거 필요없음</Korean>
+            <Korean>기도의 구토 제거 불필요</Korean>
             <French>Pas d'aspiration médicale requise</French>
             <Turkish>Tıbbi aspirasyona gerek yok</Turkish>
             <Italian>Aspirazione medica non necessaria</Italian>
@@ -232,7 +232,7 @@
             <Spanish>Requiere manejo de vías aéreas</Spanish>
             <Chinese>需要呼吸道控制</Chinese>
             <Czech>Je třeba se postarat o dýchací cesty</Czech>
-            <Korean>기도확보 필요함</Korean>
+            <Korean>기도 확보 필요</Korean>
             <French>Gestion des voies aériennes requise</French>
             <Turkish>Havayolu yönetimi gerekli</Turkish>
             <Italian>Gestione delle vie aeree necessaria</Italian>
@@ -246,7 +246,7 @@
             <Spanish>Requiere succión médica</Spanish>
             <Chinese>需要醫療抽吸</Chinese>
             <Czech>Je třeba odsávání</Czech>
-            <Korean>기도에 이물질 제거 필요함</Korean>
+            <Korean>기도의 구토 제거 필요</Korean>
             <French>Aspiration médicale requise</French>
             <Turkish>Tıbbi aspirasyon gerekli</Turkish>
             <Italian>Aspirazione medica necessaria</Italian>
@@ -274,7 +274,7 @@
             <Spanish>%1 puso un: %2</Spanish>
             <Chinese>%1 放置一個: %2</Chinese>
             <Czech>%1 vlož: %2</Czech>
-            <Korean>%1 넣는중: %2</Korean>
+            <Korean>%1 은(는) %2 을(를) 사용했습니다</Korean>
             <French>%1 a placé un(e) : %2</French>
             <Turkish>% 1 a:% 2 koydu</Turkish>
             <Italian>%1 ha posizionato un: %2</Italian>
@@ -288,7 +288,7 @@
             <Spanish>Las vías aéreas están despejadas</Spanish>
             <Chinese>航線暢通</Chinese>
             <Czech>Dýchací cesty jsou volné</Czech>
-            <Korean>이미 기도확보 돼있음</Korean>
+            <Korean>기도가 깨끗해짐</Korean>
             <French>Les voies aériennes sont dégagées</French>
             <Turkish>Havayolları temiz</Turkish>
             <Italian>Le vie aeree sono libere</Italian>
@@ -302,7 +302,7 @@
             <Spanish>Oclusión eliminada</Spanish>
             <Chinese>遮擋移除</Chinese>
             <Czech>Uzavření odstraněno</Czech>
-            <Korean>이물질 제거 성공</Korean>
+            <Korean>구토 제거 성공</Korean>
             <French>Occlusion supprimée</French>
             <Turkish>Tıkanıklık kaldırıldı</Turkish>
             <Italian>Occlusione rimossa</Italian>
@@ -316,7 +316,7 @@
             <Spanish>El artículo no se pudo usar, las vías respiratorias no están despejadas</Spanish>
             <Chinese>物品无法使用，气道不明</Chinese>
             <Czech>Předmět nemohl být použit, dýchací cesty nejsou volné</Czech>
-            <Korean>기도확보 실패, 기도가 여전히 폐쇄됨</Korean>
+            <Korean>기도확보 실패, 기도가 여전히 막혀 있음</Korean>
             <French>L'article n'a pas pu être utilisé, les voies respiratoires ne sont pas dégagées</French>
             <Turkish>Öğe kullanılamadı, hava yolları açık değil</Turkish>
             <Italian>L'articolo non può essere utilizzato, le vie aeree non sono libere</Italian>
@@ -344,7 +344,7 @@
             <Spanish>Cabeza hiperextendida</Spanish>
             <Chinese>伸張頭部</Chinese>
             <Czech>Narovnaná hlava</Czech>
-            <Korean>머리뒤로 젖혀짐</Korean>
+            <Korean>머리가 뒤로 젖혀짐</Korean>
             <French>Tête en hyperextension</French>
             <Turkish>Hyperextension Gerçekleşmiş Kafa</Turkish>
             <Italian>Testa iperestesa</Italian>
@@ -358,7 +358,7 @@
             <Spanish>Hiperextendiendo cabeza</Spanish>
             <Chinese>伸張中</Chinese>
             <Czech>Narovnávám</Czech>
-            <Korean>머리 뒤로 젖히는중</Korean>
+            <Korean>머리를 뒤로 젖히는 중</Korean>
             <French>Extension</French>
             <Turkish>Uzatılmış</Turkish>
             <Italian>Estendendo</Italian>
@@ -372,7 +372,7 @@
             <Spanish>Hiperextensión cancelada</Spanish>
             <Chinese>已經取消伸張頭部</Chinese>
             <Czech>Narovnávání hlavy přerušeno</Czech>
-            <Korean>뒤로 젖힌 머리가 틀어짐</Korean>
+            <Korean>머리를 뒤로 젖히기 취소</Korean>
             <French>Hyperextension de la tête annulée</French>
             <Turkish>Hyperextension İptal Edildi</Turkish>
             <Italian>Iperestensione della testa annullata</Italian>
@@ -386,7 +386,7 @@
             <Spanish>¡No huyas, estás salvando una vida!</Spanish>
             <Chinese>不要跑，你正在拯救性命！</Chinese>
             <Czech>Nevzdaluj se od pacienta, zachraňuješ mu život!</Czech>
-            <Korean>도망치지 마세요 생명을 구하고 있어요!</Korean>
+            <Korean>도망치지 마십시오! 당신은 생명을 구하는 중입니다!</Korean>
             <French>Ne partez pas, vous êtes en train de sauver une vie!</French>
             <Turkish>Kaçma, bir hayat kurtarıyorsun!</Turkish>
             <Italian>Non andartene, stai salvando una vita!</Italian>
@@ -400,7 +400,7 @@
             <Spanish>Giro de cabeza realizado, las vías respiratorias aún no están despejadas</Spanish>
             <Chinese>转头，气道仍不清楚</Chinese>
             <Czech>Hlavou se otočilo, dýchací cesty stále nejsou volné</Czech>
-            <Korean>이물질 제거 실패</Korean>
+            <Korean>고개를 돌려보았으나, 기도는 여전히 막혀 있다.</Korean>
             <French>Tour de tête effectué, les voies respiratoires ne sont toujours pas dégagées</French>
             <Turkish>Baş dönüşü yapıldı, hava yolları hala net değil</Turkish>
             <Italian>Rotazione della testa eseguita, le vie aeree non sono ancora libere</Italian>
@@ -414,7 +414,7 @@
             <Spanish>Girar cabeza</Spanish>
             <Chinese>扶正頭部</Chinese>
             <Czech>Otáčet hlavou</Czech>
-            <Korean>이물질 제거</Korean>
+            <Korean>고개 돌리는 중</Korean>
             <French>Rotation de la tête</French>
             <Turkish>Baş döndürme</Turkish>
             <Italian>Rotazione testa</Italian>
@@ -428,7 +428,7 @@
             <Spanish>Girando la cabeza</Spanish>
             <Chinese>轉動頭部中</Chinese>
             <Czech>Otáčení hlavou</Czech>
-            <Korean>이물질 제거 시도 중</Korean>
+            <Korean>고개 돌리기</Korean>
             <French>Rotation de la tête</French>
             <Turkish>Kafayı çevir</Turkish>
             <Italian>Ruotando la testa</Italian>
@@ -442,7 +442,7 @@
             <Spanish>No se necesita succión médica</Spanish>
             <Chinese>不需要醫療抽吸</Chinese>
             <Czech>Sání není třeba</Czech>
-            <Korean>기도 이물질 제거 필요없음</Korean>
+            <Korean>의료용 석션 불필요</Korean>
             <French>Aspiration médicale non requise</French>
             <Turkish>Tıbbi aspirasyona gerek yok</Turkish>
             <Italian>Aspirazione medica non necessaria</Italian>
@@ -456,7 +456,7 @@
             <Spanish>Comprobando vías aéreas</Spanish>
             <Chinese>檢查呼吸道</Chinese>
             <Czech>Kontrola dýchacích cest</Czech>
-            <Korean>기도확인중</Korean>
+            <Korean>기도 확인 중</Korean>
             <French>Vérification des voies aériennes</French>
             <Turkish>Havayolunun Kontrol Ediliyor</Turkish>
             <Italian>Controllo delle vie aeree</Italian>
@@ -470,7 +470,7 @@
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
             <Czech>Pokládám</Czech>
-            <Korean>배치</Korean>
+            <Korean>넣는 중</Korean>
             <French>Mise en place d'un(e)</French>
             <Turkish>Yerleştiriliyor</Turkish>
             <Italian>Posizionando</Italian>
@@ -498,7 +498,7 @@
             <Spanish>El tubo laríngeo se usa para salvar las vías aéreas</Spanish>
             <Chinese>喉管是用於拯救呼吸道</Chinese>
             <Czech>King LT je používán na záchranu dýchacích cest</Czech>
-            <Korean>기관 삽입기는 기도를 확보하기 위해 사용됩니다.</Korean>
+            <Korean>기관삽입기는 기도를 확보하기 위해 사용됩니다.</Korean>
             <French>Le tube laryngé est utilisé pour protéger les voies aériennes</French>
             <Turkish>Laringeal Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
             <Italian>Il tubo laringeo viene usato per salvare le vie aeree</Italian>
@@ -512,7 +512,7 @@
             <Spanish>El tubo laríngeo se usa para salvar las vías aéreas</Spanish>
             <Chinese>喉管是用於拯救呼吸道</Chinese>
             <Czech>King LT je používán na záchranu dýchacích cest</Czech>
-            <Korean>기관 삽입기는 기도를 확보하기 위해 사용됩니다.</Korean>
+            <Korean>기관삽입기는 기도를 확보하기 위해 사용됩니다.</Korean>
             <French>Le tube laryngé est utilisé pour protéger les voies aériennes</French>
             <Turkish>Laringeal Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
             <Italian>Il tubo laringeo viene usato per salvare le vie aeree</Italian>
@@ -554,7 +554,7 @@
             <Spanish>La cánula de Guedel se usa para salvar las vías aéreas</Spanish>
             <Chinese>抽吸管用於拯救呼吸道</Chinese>
             <Czech>King LT je používán na záchranu dýchacích cest</Czech>
-            <Korean>게델튜브는 응급처치현장에서 신속하며 간편하게 기도확보하기 위해 사용됩니다</Korean>
+            <Korean>게델튜브는 응급처치현장에서 신속하며 간편하게 기도를 확보하기 위해 사용됩니다</Korean>
             <French>La canule de Guedel est utilisée pour protéger les voies aériennes</French>
             <Turkish>Guedel Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
             <Italian>La canula di Guedel viene usata per salvare le vie aeree</Italian>
@@ -568,7 +568,7 @@
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>
             <Czech>ACCUVAC je lékařské odsávací zařízení pro odsávání dýchacích cest s pohonem na baterky pro mobilní použití v pohotovostní medicíně.</Czech>
-            <Korean>전기흡인기는 응급상황에서 목에 걸린 이물질을 흡인하기 위한 휴대용장비입니다.</Korean>
+            <Korean>전기흡인기는 응급상황에서 목에 걸린 이물질을 흡인하기 위한 휴대용 의료석션입니다.</Korean>
             <French>L’ACCUVAC est un dispositif médical mobile d’aspiration pour libérer les voies aériennes supérieures des patients en cas d'encombrement ou d'obstruction</French>
             <Turkish>ACCUVAC, acil tıpta mobil kullanım için pilli hava yolu emişine yönelik tıbbi bir emme cihazıdır.</Turkish>
             <Italian>L'ACCUVAC è un dispositivo medico portatile di suzione a batterie per aspirare le vie aeree in caso di emergenza</Italian>
@@ -582,7 +582,7 @@
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>
             <Czech>ACCUVAC je lékařské odsávací zařízení pro odsávání dýchacích cest s pohonem na baterky pro mobilní použití v pohotovostní medicíně.</Czech>
-            <Korean>전기흡인기는 응급상황에서 목에 걸린 이물질을 흡인하기 위한 휴대용장비입니다.</Korean>
+            <Korean>전기흡인기는 응급상황에서 목에 걸린 이물질을 흡인하기 위한 휴대용 의료석션입니다</Korean>
             <French>L’ACCUVAC est un dispositif médical mobile d’aspiration pour libérer les voies aériennes supérieures des patients en cas d'encombrement ou d'obstruction</French>
             <Turkish>ACCUVAC, acil tıpta mobil kullanım için pilli hava yolu emişine yönelik tıbbi bir emme cihazıdır.</Turkish>
             <Italian>L'ACCUVAC è un dispositivo medico portatile di suzione a batterie per aspirare le vie aeree in caso di emergenza</Italian>
@@ -638,7 +638,7 @@
             <Spanish>Cuando un paciente entre en estado de inconciencia, hay dos posibles escenarios. Lo primero, las vías aéreas pueden colapsar. En términos médicos, esto significa que las vías aéreas pueden bloquearse con el músculo de la lengua por la falta de tono muscular (tensión). Por ejemplo, en la vida real, esto le pasará a casi cualquier persona inconciente que esté sobre su espalda. Lo segundo que puede pasar es una obstrucción de las vías aéreas. Cuando un paciente está sobre su espalda y éste vomita, el vómito no abandonará el área de la boca, permanecerá ahí y esto puede bloquear las vías aéreas también. El correcto tratamiento sería eliminar el vómito. En la vida real esto último sólo ocurrirá a veces, no muy frecuentemente.</Spanish>
             <Chinese>當患者陷入無意識狀態時，有兩件事情可能會發生。首先呼吸道可能會塌陷，以醫學角度來看，因為舌部肌肉失去張力而導致阻擋住呼吸道。舉個例子，在現實生活中每一個失去意識的人幾乎都會發生這個。再來就是會發生的就是呼吸道閉塞。當病人倒地並嘔吐的時候，會讓嘴部沒有空間，也會導致呼吸道阻塞。有一個治療方法，那就是清除嘔吐物。在現實生活中，這偶爾會發生，但不常見</Chinese>
             <Czech>Když pacient vstoupí do stavu bezvědomí, mohou nastat dvě věci. Nejprve se mohou zhroutit dýchací cesty. V lékařském smyslu to znamená, že dýchací cesty mohou být blokovány vaším jazykovým svalem, protože mu chybí svalový tón. Například v reálném životě se to stane téměř každému, který v bezvědomí leží na zádech. Druhou věcí, která se může stát, je zablokovaný stav dýchacích cest, když pacient leží na zádech a zvrací. Zvratky neopustí prostor v ústech a ty mohou také blokovat dýchací cesty. Pro stabilizaci je třeba zvratky odstranit. Ve skutečném životě se v těchto stavech občas člověk pozvrací, ale nestává se to tak často.</Czech>
-            <Korean>환자가 기절하면 두가지 일이 발생할 수 있음 먼저 기도가 혀 근육의 긴장상실로 기도를 막는다(중력에 의해 내려가고 기도를 막음) 이는 기절환자에게서 거의 대부분 볼 수 있는 증상이다 두번째로 구토를 하여 기도에 내용물리 가득차 기도폐쇠를 유발할 수 있음 이경우 치료법은 구토물을 제거하는것임 다만 두번째 경우는 일반적이지는 않음</Korean>
+            <Korean>환자가 기절하면 두 가지 일이 발생할 수 있다. 먼저 기도가 혀 근육의 힘이 빠져 기도를 막는다(중력에 의해 내려가고 기도를 막음). 이는 기절한 환자에게서 거의 대부분 볼 수 있는 증상이다. 두 번째로 구토를 하여 기도에 내용물이 가득차 기도폐쇄를 유발할 수 있으며, 이 경우 치료법은 구토물을 제거하는 것이다. 다만 두 번째 경우는 일반적이지는 않은 경우이다.</Korean>
             <French>Quand un patient devient inconscient, deux choses peuvent se produire. La première, les voies aériennes peuvent s'affaisser. D'un point de vue médical, les voies aériennes peuvent être bloquées par la langue. Par exemple en situation réelle, cela se produira quasiment systématiquement pour toute personne inconsciente allongée sur le dos. La deuxième chose qui peut arriver est un état d'occlusion des voies aériennes. Quand un patient est allongé sur le dos et qu'il vomit, il pourra boucher ses voies aériennes. La bonne méthode dans ce cas est de retirer le vomi.</French>
             <Turkish>Hasta bilinçsiz duruma girdiğinde olabilecek iki şey vardır. Öncelikle hava yolu çökebilir. Tıbbi anlamda bu, eksik kas tonusu nedeniyle hava yolunun dil kasınızdan bloke edilebileceği anlamına gelir. Örneğin gerçek hayatta, sırt üstü yatan hemen hemen her bilinçsiz insanın başına gelecek.Olabilecek ikinci şey, hava yolu tıkalı durumudur. Hasta sırtüstü yatarken ve vücudu kustuğunda ağız boşluğunu terk etmeyecektir. Orada kalacak ve hava yolunu da tıkayabilir. Buradaki doğru tedavi, bu kusmuğu çıkarmaktır. Gerçek hayatta bu bazen olur, sık sık değil.</Turkish>
             <Italian>Quando un paziente entra in stato d'incoscienza, possono accadere due cose. La prima, possono collassare le vie aeree. In termini medici significa che, a causa della mancanza del tono muscolare, le vie aeree possono venire bloccate dalla lingua. Ad esempio nella vita reale, questo accade a quasi ogni persona svenuta distesa sulla schiena. La seconda cosa che può accadere è l'ostruzione delle vie aeree. Quando un paziente è disteso sulla schiena e vomita, il vomito rimane nella bocca e può bloccare le vie aeree. Il trattamento qui consiste nella rimozione del vomito. Nella vita reale, questo non accade molto spesso.</Italian>
@@ -666,7 +666,7 @@
             <Spanish>Probabilidad de éxito para llamar la atención</Spanish>
             <Chinese>轉頭成功的可能性</Chinese>
             <Czech>Pravděpodobnost úspěchu při otáčení hlavy</Czech>
-            <Korean>이물질 제거 성공확률</Korean>
+            <Korean>고개 돌리기 성공 확률</Korean>
             <French>Probabilité de réussite de la rotation de la tête</French>
             <Turkish>Baş döndürme başarı olasılığı</Turkish>
             <Italian>Probabilità di successo della rotazione della testa</Italian>
@@ -680,7 +680,7 @@
             <Spanish>Cuanto mayor sea, mayor será la probabilidad de éxito</Spanish>
             <Chinese>越高，成功的可能性越大</Chinese>
             <Czech>Čím vyšší, tím lepší šance</Czech>
-            <Korean>높을수록 성공확률이 높음</Korean>
+            <Korean>값이 높을수록 성공 확률이 높음</Korean>
             <French>Plus élevé, les chances de réussite seront meilleures</French>
             <Turkish>Başarı olasılığı ne kadar yüksekse, o kadar iyi</Turkish>
             <Italian>Più alto è, migliori sono le probabilità di successo</Italian>
@@ -694,7 +694,7 @@
             <Spanish>Permitir Larynxtubus</Spanish>
             <Chinese>允許喉頭</Chinese>
             <Czech>Povolit Larynx tubu</Czech>
-            <Korean>기관 삽입기 허용</Korean>
+            <Korean>기관삽입기 허용</Korean>
             <French>Autoriser le tube laryngé</French>
             <Turkish>Laringeal Tüp'e izin ver</Turkish>
             <Italian>Permetti il tubo laringeo</Italian>
@@ -736,7 +736,7 @@
             <Spanish>Nivel de entrenamiento requerido para usar un Guedeltubus</Spanish>
             <Chinese>使用Guedeltubus所需的培訓水平</Chinese>
             <Czech>Úroveň výcviku potřebná k použití Guedel tuby</Czech>
-            <Korean>게델튜브를 사용하기위한 의료레벨 수준</Korean>
+            <Korean>게델튜브를 사용하기 위한 의료레벨 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser une canule de Guedel</French>
             <Turkish>Guedel Tüp'ü kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare la canula di Guedel</Italian>
@@ -764,7 +764,7 @@
             <Spanish>Nivel de entrenamiento requerido para usar un Accuvac</Spanish>
             <Chinese>使用Accuvac所需的培訓水平</Chinese>
             <Czech>Úroveň výcviku potřebná k použití Accuvacu</Czech>
-            <Korean>전기흡인기를 사용하기위한 의료레벨 수준</Korean>
+            <Korean>전기흡인기를 사용하기 위한 의료레벨 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser un ACCUVAC</French>
             <Turkish>Acuvvac'ı kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare l'ACCUVAC</Italian>
@@ -778,7 +778,7 @@
             <Spanish>Hora de revisar las vías aéreas</Spanish>
             <Chinese>是時候檢查航空公司了</Chinese>
             <Czech>Čas pro zkontrolování dýchacích cest</Czech>
-            <Korean>기도확인에 걸리는 시간</Korean>
+            <Korean>기도 확인에 걸리는 시간</Korean>
             <French>Durée pour vérifier les voies aériennes</French>
             <Turkish>Havayollarını kontrol etme zamanı</Turkish>
             <Italian>Tempo per controllare le vie aeree</Italian>
@@ -792,7 +792,7 @@
             <Spanish>Cuánto tiempo llevará revisar Airways</Spanish>
             <Chinese>檢查航空公司需要多長時間</Chinese>
             <Czech>Jak dlouho zabere zkontrolování dýchacích cest</Czech>
-            <Korean>기도확인에 얼마나 오레 걸릴것인가</Korean>
+            <Korean>기도 확인 행동에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra-t-il pour vérifier les voies aériennes</French>
             <Turkish>Havayollarını kontrol etmek ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per controllare le vie aeree</Italian>
@@ -806,7 +806,7 @@
             <Spanish>Hora de girar la cabeza</Spanish>
             <Chinese>轉向時間</Chinese>
             <Czech>Čas otočení hlavy</Czech>
-            <Korean>이물질 제거 소요 시간</Korean>
+            <Korean>고개 돌리기에 걸리는 시간</Korean>
             <French>Durée pour tourner la tête</French>
             <Turkish>Baş döndürme zamanı</Turkish>
             <Italian>Tempo per ruotare la testa</Italian>
@@ -820,7 +820,7 @@
             <Spanish>Hora de estirar demasiado la cabeza</Spanish>
             <Chinese>过度伸展头部的时间</Chinese>
             <Czech>Čas na přetažení hlavy</Czech>
-            <Korean>머리 뒤로 젖히기에 걸리는시간</Korean>
+            <Korean>머리 뒤로 젖히기에 걸리는 시간</Korean>
             <French>Durée pour basculer la tête en arrière - Hyperextension</French>
             <Turkish>Kafayı aşırı germe zamanı</Turkish>
             <Italian>Tempo per iperestendere la testa</Italian>
@@ -834,7 +834,7 @@
             <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
             <Chinese>转头需要多长时间</Chinese>
             <Czech>Jak dlouho bude trvat, než se otočí hlava</Czech>
-            <Korean>머리 뒤로 젖히기에 얼마나 오래 걸릴것인가(최대시간 설정)</Korean>
+            <Korean>머리 뒤로 젖히기에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour basculer la tête en arrière</French>
             <Turkish>Kafanın aşırı gerilmesi ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per iperestendere la testa</Italian>
@@ -848,7 +848,7 @@
             <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
             <Chinese>轉頭需要多長時間</Chinese>
             <Czech>Jak dlouho zabere otočení hlavy</Czech>
-            <Korean>머리 뒤로 젖히기에 얼마나 오래 걸릴것인가(최대시간 설정)</Korean>
+            <Korean>고개 돌리기에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour tourner la tête</French>
             <Turkish>Kafayı çevirmek ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per ruotare la testa</Italian>
@@ -876,7 +876,7 @@
             <Spanish>Cuánto tiempo llevará usar Accuvac</Spanish>
             <Chinese>使用Accuvac需要多長時間</Chinese>
             <Czech>Jak dlouho zabere použití Accuvacu</Czech>
-            <Korean>흡인에 사용에 얼마나 오래 걸릴것인가</Korean>
+            <Korean>흡인에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour aspirer avec l'ACCUVAC</French>
             <Turkish>Accuvac'ı kullanmak ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per usare l'ACCUVAC</Italian>
@@ -904,7 +904,7 @@
             <Spanish>Cuánto tiempo llevará usar Larynxtubus</Spanish>
             <Chinese>使用喉頭需要多長時間</Chinese>
             <Czech>Jak dlouho zabere použití Larynx tuby</Czech>
-            <Korean>기관 삽입기 사용에 얼마나 오래 걸릴것인가</Korean>
+            <Korean>기관삽입기 사용에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour placer un tube laryngé</French>
             <Turkish>Laringeal Tüp'ü kullanmak ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per posizionare il tubo laringeo</Italian>
@@ -932,7 +932,7 @@
             <Spanish>Cuánto tiempo tomará usar Guedeltubus</Spanish>
             <Chinese>使用Guedeltubus需要多長時間</Chinese>
             <Czech>Jak dlouho zabere použití Guedel tuby</Czech>
-            <Korean>게델튜브 사용에 얼마나 오래 걸릴것인가</Korean>
+            <Korean>게델튜브 사용에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour placer une canule de Guedel</French>
             <Turkish>Guedel Tüp'ü kullanmak ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per posizionare una canula di Guedel</Italian>
@@ -960,7 +960,7 @@
             <Spanish>Coloca los registros de actividad del AED-X o del Pulsoxímetro en rojo, si algún valor es crítico</Spanish>
             <Chinese>将AED-X或Pulseoximeter的Activitylogs染成红色，如果任何值是临界值。</Chinese>
             <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulseoximeter červeně</Czech>
-            <Korean>중요한 값이있는 경우 AED-X 또는 맥박 산소계의 활동 로그를 빨간색으로 표시합니다.</Korean>
+            <Korean>중요한 값이있는 경우 AED-X 또는 맥박산소측정기의 활동 로그를 빨간색으로 표시합니다.</Korean>
             <French>Colore les Activitylogs de l'AED-X ou du Pulseoximeter en rouge, si une valeur est critique</French>
             <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
             <Italian>Colora gli Activitylogs di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
@@ -972,72 +972,84 @@
             <German>In die stabile Seitenlage gebracht</German>
             <Polish>Ułożony w pozycji bezpiecznej</Polish>
             <Japanese>回復体位をとっています</Japanese>
+            <Korean>회복자세 교정</Korean>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayName">
             <English>Establish recovery position</English>
             <German>In die stabile Seitenlage legen</German>
             <Polish>Ułóż w pozycji bezpiecznej</Polish>
             <Japanese>回復体位をとらせる</Japanese>
+            <Korean>회복자세 교정해주기</Korean>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
             <English>Establishing recovery position</English>
             <German>In die stabile Seitenlage legen</German>
             <Polish>Układanie w pozycji</Polish>
             <Japanese>回復体位をとらせています</Japanese>
+            <Korean>회복자세 교정 중</Korean>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Info">
             <English>Recovery position established successfully</English>
             <German>Erfolgreich in die stabile Seitenlage gelegt</German>
             <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
             <Japanese>回復体位をとりました</Japanese>
+            <Korean>회복자세 교정 성공</Korean>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Cancel">
             <English>Recovery position cancelled</English>
             <German>Stabile Seitenlage abgebrochen</German>
             <Polish>Przerwano pozycję bezpieczną</Polish>
             <Japanese>回復体位が崩されました</Japanese>
+            <Korean>회복자세 교정 취소됨</Korean>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_Log">
             <English>%1 established recovery position</English>
             <German>%1 hat die stabile Seitenlage durchgeführt</German>
             <Polish>%1 ułożył w pozycji bezpiecznej</Polish>
             <Japanese>%1 が回復体位にしました</Japanese>
+            <Korean>%1 이(가) 회복자세를 교정했습니다</Korean>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY">
             <English>Time for recovery position</English>
             <German>Zeit für die stabile Seitenlage</German>
             <Polish>Czas na ułożenie w pozycji bezpiecznej</Polish>
             <Japanese>回復体位にかかる時間</Japanese>
+            <Korean>회복자세 교정 시간</Korean>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
             <German>Die Zeit, wie lange es dauert eine erfolgreiche stabile Seitenlage durchzuführen</German>
             <Polish>Jak długo potrwa ułożenie w pozycji bocznej bezpiecznej</Polish>
             <Japanese>回復体位を完了するのにどのくらい時間がかかるか設定します</Japanese>
+            <Korean>회복자세를 교정해주는 데 걸리는 시간입니다.</Korean>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayName">
             <English>Cancel recovery position</English>
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerwij pozycję bezpieczną</Polish>
             <Japanese>回復体位をやめる</Japanese>
+            <Korean>회복자세 교정 취소</Korean>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayNameProgress">
             <English>Cancelling recovery position</English>
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerywanie pozycji bezpiecznej</Polish>
             <Japanese>回復体位を崩しています</Japanese>
+            <Korean>회복자세 교정 취소 중</Korean>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY">
             <English>Time for cancelling recovery position</English>
             <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
             <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
             <Japanese>回復体位をやめるのにかかる時間</Japanese>
+            <Korean>회복자세 교정 취소 시간</Korean>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
             <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
             <Polish>Jak długo potrwa przerwanie pozycji bocznej bezpiecznej</Polish>
             <Japanese>回復体位をやめさせるのにどのくらい時間がかかるか設定します</Japanese>
+            <Korean>회복자세 교정을 취소하는 데 걸리는 시간입니다</Korean>
         </Key>
     </Package>
 </Project>

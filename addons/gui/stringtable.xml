@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="kat">
     <Package name="gui">
-        <Key></Key>
+        <Key ID="STR_kat_gui_dummy">
+            <English>dummy for tabler application</English>
+        </Key>
     </Package>
 </Project>
