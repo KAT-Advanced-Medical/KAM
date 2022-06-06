@@ -19,13 +19,13 @@
 
 // Check if menu should stay open for target
 if(isNUll findDisplay 312) then {
-	if !([ACE_player, ace_medical_gui_target, ["isNotInside", "isNotSwimming"]] call ace_common_fnc_canInteractWith && {[ACE_player, ace_medical_gui_target] call ace_medical_gui_fnc_canOpenMenu}) then {
-		closeDialog 0;
-		// Show hint if distance condition failed
-		if ((ACE_player distance ace_medical_gui_target > ace_medical_gui_maxDistance) && {vehicle ACE_player != vehicle ace_medical_gui_target}) then {
-			[["$STR_ACE_Medical_DistanceToFar", ace_medical_gui_target call ace_common_fnc_getName], 2] call ace_common_fnc_displayTextStructured;
-		};
-	};
+    if !([ACE_player, ace_medical_gui_target, ["isNotInside", "isNotSwimming"]] call ace_common_fnc_canInteractWith && {[ACE_player, ace_medical_gui_target] call ace_medical_gui_fnc_canOpenMenu}) then {
+        closeDialog 0;
+        // Show hint if distance condition failed
+        if ((ACE_player distance ace_medical_gui_target > ace_medical_gui_maxDistance) && {vehicle ACE_player != vehicle ace_medical_gui_target}) then {
+            [["$STR_ACE_Medical_DistanceToFar", ace_medical_gui_target call ace_common_fnc_getName], 2] call ace_common_fnc_displayTextStructured;
+        };
+    };
 };
 
 // Get the Medical Menu display

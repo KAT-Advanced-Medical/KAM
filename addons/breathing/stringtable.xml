@@ -270,13 +270,13 @@
                 %1Sp02 넘는다 70% -&gt; 네
                 %1Sp02 아래 70% -&gt; 아니요 -&gt; ass. 호흡</Korean>
             <French>Respiration
-				        %1suffisamment ventilé?
-				        %1SpO2 au delà 70% -&gt; Oui
-				        %1SpO2 sous 70% -&gt; Non -&gt; ass. Respiration</French>
+                        %1suffisamment ventilé?
+                        %1SpO2 au delà 70% -&gt; Oui
+                        %1SpO2 sous 70% -&gt; Non -&gt; ass. Respiration</French>
             <Turkish>Nefes
-				        %1yeterince havalandırıldı mı?
-				        %1Sp02 70% 'in üzerinde -&gt; Evet
-				        %1Sp02 70% 'in altında -&gt; Hayır -&gt; eşek. Nefes</Turkish>
+                        %1yeterince havalandırıldı mı?
+                        %1Sp02 70% 'in üzerinde -&gt; Evet
+                        %1Sp02 70% 'in altında -&gt; Hayır -&gt; eşek. Nefes</Turkish>
             <Italian>Respirazione
                 %1Sufficientemente ventilato?
                 %1SpO2 sopra 70% -&gt; Si

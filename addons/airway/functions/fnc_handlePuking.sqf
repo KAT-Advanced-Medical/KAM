@@ -30,7 +30,7 @@ _unit setVariable ["kat_pukeActive_PFH", true];
     private _recovery = _unit getVariable [QGVAR(recovery), false];
     if (!_alive || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") || _recovery) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
-		_unit setVariable ["kat_pukeActive_PFH", nil];
+        _unit setVariable ["kat_pukeActive_PFH", nil];
     };
     if (random(100) <= GVAR(probability_occluded)) then {
         if !(_unit getVariable ["KAT_medical_airwayOccluded", false]) then {
