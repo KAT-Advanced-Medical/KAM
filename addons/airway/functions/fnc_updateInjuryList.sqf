@@ -66,7 +66,7 @@ switch (GET_FRACTURES(_target) select _selectionN) do {
     };
     case -1: {
         if ((ace_medical_fractures) in [2, 3]) then { 
-			_entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [0.2, 0.2, 1, 1]];	
+            _entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [0.2, 0.2, 1, 1]];    
         };
     };
 };
@@ -141,7 +141,7 @@ private _fnc_getWoundDescription = {
 if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then {
     private _a = _target getVariable [QGVAR(airway_item), ""];
     if !(_a isEqualTo "") then {
-		private _text = format [LSTRING(%1_Display), _a];
+        private _text = format [LSTRING(%1_Display), _a];
         _woundEntries pushback [localize _text, [0.1, 1, 1, 1]];
     };
 };

@@ -62,17 +62,17 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(IV_MEDIC)],
     "KAT - ADV Medical: Pharmacy",
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(IVdropEnable),
-	"CHECKBOX",
-	[LLSTRING(IV_DROP_ENABLE)],
-	"KAT - ADV Medical: Pharmacy",
-	[true],
-	true
+    QGVAR(IVdropEnable),
+    "CHECKBOX",
+    [LLSTRING(IV_DROP_ENABLE)],
+    "KAT - ADV Medical: Pharmacy",
+    [true],
+    true
 ] call CBA_Settings_fnc_init;
 
 [
@@ -125,7 +125,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(SETTING_Allow_Reorientation),LLSTRING(Allow_Reorientation_DESC)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 

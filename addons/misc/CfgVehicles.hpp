@@ -113,7 +113,7 @@ class CfgVehicles {
         transportMaxBackpacks = 0;
         transportMaxMagazines = 64;
         class TransportItems;
-		class Turrets {};
+        class Turrets {};
         transportSoldier = 1;
         ace_cargo_canLoad = 0;
         ace_Cargo_hasCargo = 0;

@@ -14,13 +14,13 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         callbackSuccess = "[_medic, _patient] call ace_dogtags_fnc_checkDogtag";
         condition = "true";
-		animationPatient = "";
+        animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
     class CheckBloodPressure: CheckPulse { 
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-		animationPatient = "";
+        animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
@@ -43,35 +43,35 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = GVAR(blood_drawTime_500ml);
         allowedSelections[] = {"LeftArm", "RightArm"};
         allowSelfTreatment = GVAR(enable_selfBloodDraw);
-		category = "advanced";
-		medicRequired = 0;
-		consumeItem = 1;
+        category = "advanced";
+        medicRequired = 0;
+        consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient,500)] call FUNC(drawBlood));
         condition = QUOTE([ARR_3(_medic, _patient,500)] call FUNC(canDraw));
-		items[] = {"KAT_Empty_bloodIV_500"};
-		animationPatient = "";
+        items[] = {"KAT_Empty_bloodIV_500"};
+        animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
-	class KAT_DrawBlood250: CheckPulse {
+    class KAT_DrawBlood250: CheckPulse {
         displayName = CSTRING(DrawBlood250_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
         treatmentTime = GVAR(blood_drawTime_250ml);
         allowedSelections[] = {"LeftArm", "RightArm"};
         allowSelfTreatment = GVAR(enable_selfBloodDraw);
-		category = "advanced";
-		medicRequired = 0;
-		consumeItem = 1;
+        category = "advanced";
+        medicRequired = 0;
+        consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient,250)] call FUNC(drawBlood));
         condition = QUOTE([ARR_3(_medic, _patient,250)] call FUNC(canDraw));
-		items[] = {"KAT_Empty_bloodIV_250"};
-		animationPatient = "";
+        items[] = {"KAT_Empty_bloodIV_250"};
+        animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
 
     #include "Blood_Medical.hpp"
-	
+    
     class Defibrillator: CPR {
         displayName = CSTRING(Defib_Action_Use);
         displayNameProgress = "$STR_KAT_circulation_AED_PROGRESS";

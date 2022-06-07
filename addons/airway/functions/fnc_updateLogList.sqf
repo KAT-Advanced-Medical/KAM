@@ -23,8 +23,8 @@ lbClear _ctrl;
 {
     _x params ["_message", "_timeStamp", "_arguments"];
 
-	//set us the original string into a var to check the afterwards
-	_messageWOlocalization = _message;
+    //set us the original string into a var to check the afterwards
+    _messageWOlocalization = _message;
 
     // Localize message and arguments
     if (isLocalized _message) then {
@@ -38,26 +38,26 @@ lbClear _ctrl;
 
     _rowIdc = _ctrl lbAdd format ["%1 %2", _timeStamp, _message];
 
-	//Color the logs if enabled by Airway Settings of KAM
-	if (GVAR(Colored_logs)) then {
-		if (_messageWOlocalization isEqualTo "STR_kat_breathing_pulseoxi_Log") then {
-			if (((_arguments select 0) < 45 )
-			|| ((_arguments select 0) > 120 )
-			|| ((_arguments select 1) < 75 )) then {
-				_ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
-			};
-		};
-		if (_messageWOlocalization isEqualTo "HR: %1 RR: %2/%3 SpO2: %4") then {
-			if (((_arguments select 0) < 45 )
-			|| ((_arguments select 0) > 120 )
-			|| ((_arguments select 1) < 50 )
-			|| ((_arguments select 1) > 200 )
-			|| ((_arguments select 2) < 60 )
-			|| ((_arguments select 2) > 145 )
-			|| ((_arguments select 3) < 75 )) then {
-				_ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
-			};
-		};
-	};
-	
+    //Color the logs if enabled by Airway Settings of KAM
+    if (GVAR(Colored_logs)) then {
+        if (_messageWOlocalization isEqualTo "STR_kat_breathing_pulseoxi_Log") then {
+            if (((_arguments select 0) < 45 )
+            || ((_arguments select 0) > 120 )
+            || ((_arguments select 1) < 75 )) then {
+                _ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
+            };
+        };
+        if (_messageWOlocalization isEqualTo "HR: %1 RR: %2/%3 SpO2: %4") then {
+            if (((_arguments select 0) < 45 )
+            || ((_arguments select 0) > 120 )
+            || ((_arguments select 1) < 50 )
+            || ((_arguments select 1) > 200 )
+            || ((_arguments select 2) < 60 )
+            || ((_arguments select 2) > 145 )
+            || ((_arguments select 3) < 75 )) then {
+                _ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
+            };
+        };
+    };
+    
 } forEach _logs;
