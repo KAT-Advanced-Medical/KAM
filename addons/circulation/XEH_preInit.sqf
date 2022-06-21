@@ -63,12 +63,13 @@ private _type = round random(7);
     "LIST",
     LLSTRING(client_bt),
     CBA_SETTINGS_CAT,
-    [["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], _type],
+    [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], _type],
     2,
     {
         player setVariable [QGVAR(bloodtype), _this, true];
         player setVariable ["ace_dogtags_dogtagData", nil, true];
-    }
+    },
+    true
 ] call CBA_Settings_fnc_init;
 
 //Settable list for using AED per medical class
