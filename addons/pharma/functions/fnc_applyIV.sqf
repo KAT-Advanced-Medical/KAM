@@ -35,18 +35,18 @@ if (_active) then {
 
 if (_usedItem isEqualTo "kat_IV_16") then {
     switch (_bodyPart) do {
-    	case "leftarm": {
-    	    _patient setVariable [QGVAR(IVsite), 2, true];
-    	};
-    	case "rightarm": {
-    	    _patient setVariable [QGVAR(IVsite), 3, true];
-    	};
-    	case "leftleg": {
-    	    _patient setVariable [QGVAR(IVsite), 4, true];
-    	};
-    	case "rightleg": {
-    	    _patient setVariable [QGVAR(IVsite), 5, true];
-    	};
+        case "leftarm": {
+            _patient setVariable [QGVAR(IVsite), 2, true];
+        };
+        case "rightarm": {
+            _patient setVariable [QGVAR(IVsite), 3, true];
+        };
+        case "leftleg": {
+            _patient setVariable [QGVAR(IVsite), 4, true];
+        };
+        case "rightleg": {
+            _patient setVariable [QGVAR(IVsite), 5, true];
+        };
     };
 
     [_patient, "activity", LSTRING(iv_log), [[_medic] call ace_common_fnc_getName, "16g IV"]] call ace_medical_treatment_fnc_addToLog;

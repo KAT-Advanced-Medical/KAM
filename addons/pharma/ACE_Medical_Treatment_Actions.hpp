@@ -137,6 +137,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && GVAR(Reorientation_Enable));
         patientStateCondition = 0;
+        litter[] = {};
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_Reorientation));
         animationMedic = "AinvPknlMstpSnonWnonDnon_medicUp4";
         animationMedicProne = "AinvPknlMstpSnonWnonDnon_medicUp4";

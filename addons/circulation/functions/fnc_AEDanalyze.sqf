@@ -22,14 +22,14 @@ private _bloodLoss = _patient getVariable ["ace_medical_bloodVolume", 6.0];
 private _asystole = _patient getVariable [QGVAR(asystole), 0];
 
 if (_asystole isEqualTo 0) then {
-	if (_bloodLoss <= 3.6) then {
-		_patient setVariable [QGVAR(asystole), 2, true];
+    if (_bloodLoss <= 3.6) then {
+        _patient setVariable [QGVAR(asystole), 2, true];
         _asystole = _patient getVariable [QGVAR(asystole), 2];
-	} else {
-		_patient setVariable [QGVAR(asystole), 1, true];
+    } else {
+        _patient setVariable [QGVAR(asystole), 1, true];
         _asystole = _patient getVariable [QGVAR(asystole), 1];
 
-	};
+    };
 };
 
 if !(GVAR(AdvRhythm)) then {

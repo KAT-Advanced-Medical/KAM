@@ -729,6 +729,34 @@
             <Japanese>刺激を与えています</Japanese>
             <Russian>Переориентация</Russian>
         </Key>
+        <Key ID="STR_kat_pharma_Reorienting_Info">
+            <English>You hit the cheek, but patient still asleep!</English>
+            <German>Du hast die Wange getroffen, aber Patient schläft noch!</German>
+            <Polish>Uderzyłeś w policzek, ale pacjent nadal śpi!</Polish>
+            <Spanish>¡Te golpeas la mejilla, pero el paciente sigue dormido!</Spanish>
+            <Chinese>你打你的脸颊，但病人还在睡觉！</Chinese>
+            <Czech>Udeřil jsi do tváře, ale pacient stále spí!</Czech>
+            <Korean>당신은 뺨을 두 드렸지만 환자는 여전히 잠을 자고 있습니다!</Korean>
+            <French>Vous avez frappé la joue, mais patient encore endormi!</French>
+            <Turkish>Yanağına vurdun ama hasta hala uyuyor!</Turkish>
+            <Italian>Hai colpito la guancia, ma il paziente dorme ancora!</Italian>
+            <Russian>Вы попали в щеку, но больной еще спит!</Russian>
+            <Japanese>あなたは頬を叩きましたが、患者はまだ眠っています!</Japanese>
+        </Key>
+        <Key ID="STR_kat_pharma_ReorientingSuccess">
+            <English>Patient woke up with a hard hit!</English>
+            <German>Patient wachte mit einem harten Schlag auf!</German>
+            <Polish>Pacjent obudził się z mocnym uderzeniem!</Polish>
+            <Spanish>¡El paciente se despertó con un golpe fuerte!</Spanish>
+            <Chinese>患者被重击醒来！</Chinese>
+            <Czech>Pacient se probudil s tvrdým úderem!</Czech>
+            <Korean>환자는 강한 타격으로 깨어났습니다!</Korean>
+            <French>Le patient s'est réveillé avec un coup dur !</French>
+            <Turkish>Hasta sert bir vuruşla uyandı!</Turkish>
+            <Italian>Il paziente si è svegliato con un duro colpo!</Italian>
+            <Russian>Пациент проснулся от сильного удара!</Russian>
+            <Japanese>患者は強打で飛び起きた!</Japanese>
+        </Key>
         <Key ID="STR_kat_pharma_Using">
             <English>Using</English>
             <German>Benutzen</German>
