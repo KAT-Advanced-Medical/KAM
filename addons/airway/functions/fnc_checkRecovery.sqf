@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: MiszczuZPolski
- * Checks if guedel or larynx was placed before or any fractures are present
+ * Checks if guedel or larynx was placed before
  *
  * Arguments:
  * 0: Medic <OBJECT>
