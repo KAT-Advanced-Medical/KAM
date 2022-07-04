@@ -974,6 +974,7 @@
             <Japanese>回復体位をとっています</Japanese>
             <Korean>회복자세 교정</Korean>
             <French>En position latérale de sécurité</French>
+            <Turkish>Kurtarma pozisyonu oluşturuldu</Turkish>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayName">
             <English>Establish recovery position</English>
@@ -982,6 +983,7 @@
             <Japanese>回復体位をとらせる</Japanese>
             <Korean>회복자세 교정해주기</Korean>
             <French>Mettre en position latérale de sécurité</French>
+            <Turkish>Kurtarma pozisyonu oluşturun</Turkish>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
             <English>Establishing recovery position</English>
@@ -990,6 +992,7 @@
             <Japanese>回復体位をとらせています</Japanese>
             <Korean>회복자세 교정 중</Korean>
             <French>Mise en position latérale de sécurité</French>
+            <Turkish>Kurtarma pozisyonu oluşturuluyor</Turkish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Info">
             <English>Recovery position established successfully</English>
@@ -998,6 +1001,7 @@
             <Japanese>回復体位をとりました</Japanese>
             <Korean>회복자세 교정 성공</Korean>
             <French>Mise en position latérale de sécurité réussie</French>
+            <Turkish>Kurtarma pozisyonu başarıyla kuruldu</Turkish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Cancel">
             <English>Recovery position cancelled</English>
@@ -1006,6 +1010,7 @@
             <Japanese>回復体位が崩されました</Japanese>
             <Korean>회복자세 교정 취소됨</Korean>
             <French>Mise en position latérale de sécurité annulée</French>
+            <Turkish>Kurtarma pozisyonu iptal edildi</Turkish>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_Log">
             <English>%1 established recovery position</English>
@@ -1014,6 +1019,7 @@
             <Japanese>%1 が回復体位にしました</Japanese>
             <Korean>%1 이(가) 회복자세를 교정했습니다</Korean>
             <French>%1 a mis en place la position latérale de sécurité</French>
+            <Turkish>Kurtarma pozisyonu %1 oluşturuldu</Turkish>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY">
             <English>Time for recovery position</English>
@@ -1022,6 +1028,7 @@
             <Japanese>回復体位にかかる時間</Japanese>
             <Korean>회복자세 교정 시간</Korean>
             <French>Temps pour mettre en position latérale de sécurité</French>
+            <Turkish>Kurtarma pozisyonu için zaman</Turkish>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
@@ -1030,6 +1037,7 @@
             <Japanese>回復体位を完了するのにどのくらい時間がかかるか設定します</Japanese>
             <Korean>회복자세를 교정해주는 데 걸리는 시간입니다.</Korean>
             <French>Temps nécessaire pour mettre en position latérale de sécurité</French>
+            <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayName">
             <English>Cancel recovery position</English>
@@ -1038,6 +1046,7 @@
             <Japanese>回復体位をやめる</Japanese>
             <Korean>회복자세 교정 취소</Korean>
             <French>Annuler la position latérale de sécurité</French>
+            <Turkish>Kurtarma pozisyonunu iptal et</Turkish>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayNameProgress">
             <English>Cancelling recovery position</English>
@@ -1046,6 +1055,7 @@
             <Japanese>回復体位を崩しています</Japanese>
             <Korean>회복자세 교정 취소 중</Korean>
             <French>Annulation de la position latérale de sécurité</French>
+            <Turkish>Kurtarma pozisyonu iptal ediliyor</Turkish>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY">
             <English>Time for cancelling recovery position</English>
@@ -1054,6 +1064,7 @@
             <Japanese>回復体位をやめるのにかかる時間</Japanese>
             <Korean>회복자세 교정 취소 시간</Korean>
             <French>Temps pour annuler la position latérale de sécurité</French>
+            <Turkish>Kurtarma pozisyonunu iptal etmek için zaman</Turkish>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
@@ -1062,6 +1073,7 @@
             <Japanese>回復体位をやめさせるのにどのくらい時間がかかるか設定します</Japanese>
             <Korean>회복자세 교정을 취소하는 데 걸리는 시간입니다</Korean>
             <French>Temps nécessaire pour annuler la position latérale de sécurité</French>
+            <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
         </Key>
     </Package>
 </Project>
