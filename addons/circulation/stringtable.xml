@@ -7,6 +7,7 @@
             <Polish>ACE-Czy zaawansowane krążenie ma być włączone?</Polish>
             <Spanish>¿Activar ACE-Circulación?</Spanish>
             <Chinese>啟用ACE-血型循環系統？</Chinese>
+            <Chinesesimp>启用ACE-血型循环系统？</Chinesesimp>
             <Czech>ACE-Circulation aktivováno?</Czech>
             <Korean>순환계통 시스템 활성화</Korean>
             <French>Ace-Circulation activé?</French>
@@ -23,6 +24,7 @@
             <Korean>고급 리듬이 활성화 되었습니까?</Korean>
             <Turkish>Gelişmiş Ritim etkinleştirildi mi?</Turkish>
             <Chinese>先进的节奏被激活？</Chinese>
+            <Chinesesimp>是否启用高级心率？</Chinesesimp>
             <Italian>Ritmo avanzato attivato?</Italian>
             <Spanish>¿Ritmo avanzado activado?</Spanish>
             <Czech>Pokročilý rytmus aktivován?</Czech>
@@ -35,6 +37,7 @@
             <Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
             <Spanish>¿Pulso cardíaco depende de metabolismo?</Spanish>
             <Chinese>依心率來決定代謝率？</Chinese>
+            <Chinesesimp>依心率来决定代谢率？</Chinesesimp>
             <Czech>Metabolismus závislý na tepu?</Czech>
             <Korean>신체대사량에 따라 심박수가 결정됩니까?</Korean>
             <French>Le pouls dépend du métabolisme?</French>
@@ -49,6 +52,7 @@
             <Polish>Inny  loadoutname</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
             <Chinese>不同配置名稱</Chinese>
+            <Chinesesimp>不同配置名称</Chinesesimp>
             <Czech>Jiný název vybavení</Czech>
             <Korean>다른 로드아웃 이름</Korean>
             <French>Nom d'équipement différent</French>
@@ -63,6 +67,7 @@
             <Polish>Krew IV (1000ml) GK: 0+</Polish>
             <Spanish>Sangre IV (1000ml) GS: 0+</Spanish>
             <Chinese>O+型血液包 (1000ml)</Chinese>
+            <Chinesesimp>O+型血液包 (1000ml)</Chinesesimp>
             <Czech>Krev IV (1000ml) KS: 0+</Czech>
             <Korean>O+형 혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: O+</French>
@@ -77,6 +82,7 @@
             <Polish>Krew IV (1000ml) GK: 0-</Polish>
             <Spanish>Sangre IV (1000ml) GS: 0-</Spanish>
             <Chinese>O-型血液包 (1000ml)</Chinese>
+            <Chinesesimp>O-型血液包 (1000ml)</Chinesesimp>
             <Czech>Krev IV (1000ml) KS: 0-</Czech>
             <Korean>O-형 혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: O-</French>
@@ -91,6 +97,7 @@
             <Polish>Krew IV (1000ml) GK: A+</Polish>
             <Spanish>Sangre IV (1000ml) GS: A+</Spanish>
             <Chinese>A+型血液包 (1000ml)</Chinese>
+            <Chinesesimp>A+型血液包 (1000ml)</Chinesesimp>
             <Czech>Krev IV (1000ml) KS: A+</Czech>
             <Korean>A+형 혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: A+</French>
@@ -105,6 +112,7 @@
             <Polish>Krew IV (1000ml) GK: A-</Polish>
             <Spanish>Sangre IV (1000ml) GS: A-</Spanish>
             <Chinese>A-型血液包 (1000ml)</Chinese>
+            <Chinesesimp>A-型血液包 (1000ml)</Chinesesimp>
             <Czech>Krev IV (1000ml) KS: A-</Czech>
             <Korean>A-형 혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: A-</French>
@@ -119,6 +127,7 @@
             <Polish>Krew IV (1000ml) GK: B+</Polish>
             <Spanish>Sangre IV (1000ml) GS: B+</Spanish>
             <Chinese>B+型血液包 (1000ml)</Chinese>
+            <Chinesesimp>B+型血液包 (1000ml)</Chinesesimp>
             <Czech>Krev IV (1000ml) KS: B+</Czech>
             <Korean>B+형 혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: B+</French>
@@ -133,6 +142,7 @@
             <Polish>Krew IV (1000ml) GK: B-</Polish>
             <Spanish>Sangre IV (1000ml) GS: B-</Spanish>
             <Chinese>B-型血液包 (1000ml)</Chinese>
+            <Chinesesimp>B-型血液包 (1000ml)</Chinesesimp>
             <Czech>Krev IV (1000ml) KS: B-</Czech>
             <Korean>B-형 혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: B-</French>
@@ -147,6 +157,7 @@
             <Polish>Krew IV (1000ml) GK: AB+</Polish>
             <Spanish>Sangre IV (1000ml) GS: AB+</Spanish>
             <Chinese>AB+型血液包 (1000ml)</Chinese>
+            <Chinesesimp>AB+型血液包 (1000ml)</Chinesesimp>
             <Czech>Krev IV (1000ml) KS: AB+</Czech>
             <Korean>AB+형 혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: AB+</French>
@@ -161,6 +172,7 @@
             <Polish>Krew IV (1000ml) GK: AB-</Polish>
             <Spanish>Sangre IV (1000ml) GS: AB-</Spanish>
             <Chinese>AB-型血液包 (1000ml)</Chinese>
+            <Chinesesimp>AB-型血液包 (1000ml)</Chinesesimp>
             <Czech>Krev IV (1000ml) KS: AB-</Czech>
             <Korean>AB-형 혈액 (1000ml)</Korean>
             <French>Sang IV (1000ml) GS: AB-</French>
@@ -175,6 +187,7 @@
             <Polish>Krew IV (500ml) GK: 0+</Polish>
             <Spanish>Sangre IV (500ml) GS: 0+</Spanish>
             <Chinese>O+型血液包 (500ml)</Chinese>
+            <Chinesesimp>O+型血液包 (500ml)</Chinesesimp>
             <Czech>Krev IV (500ml) KS: 0+</Czech>
             <Korean>O+형 혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: O+</French>
@@ -189,6 +202,7 @@
             <Polish>Krew IV (500ml) GK: 0-</Polish>
             <Spanish>Sangre IV (500ml) GS: 0-</Spanish>
             <Chinese>O-型血液包 (500ml)</Chinese>
+            <Chinesesimp>O-型血液包 (500ml)</Chinesesimp>
             <Czech>Krev IV (500ml) KS: 0-</Czech>
             <Korean>O-형 혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: O-</French>
@@ -203,6 +217,7 @@
             <Polish>Krew IV (500ml) GK: A+</Polish>
             <Spanish>Sangre IV (500ml) GS: A+</Spanish>
             <Chinese>A+型血液包 (500ml)</Chinese>
+            <Chinesesimp>A+型血液包 (500ml)</Chinesesimp>
             <Czech>Krev IV (500ml) KS: A+</Czech>
             <Korean>A+형 혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: A+</French>
@@ -217,6 +232,7 @@
             <Polish>Krew IV (500ml) GK: A-</Polish>
             <Spanish>Sangre IV (500ml) GS: A-</Spanish>
             <Chinese>A-型血液包 (500ml)</Chinese>
+            <Chinesesimp>A-型血液包 (500ml)</Chinesesimp>
             <Czech>Krev IV (500ml) KS: A-</Czech>
             <Korean>A-형 혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: A-</French>
@@ -231,6 +247,7 @@
             <Polish>Krew IV (500ml) GK: B+</Polish>
             <Spanish>Sangre IV (500ml) GS: B+</Spanish>
             <Chinese>B+型血液包 (500ml)</Chinese>
+            <Chinesesimp>B+型血液包 (500ml)</Chinesesimp>
             <Czech>Krev IV (500ml) KS: B+</Czech>
             <Korean>B+형 혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: B+</French>
@@ -245,6 +262,7 @@
             <Polish>Krew IV (500ml) GK: B-</Polish>
             <Spanish>Sangre IV (500ml) GS: B-</Spanish>
             <Chinese>B-型血液包 (500ml)</Chinese>
+            <Chinesesimp>B-型血液包 (500ml)</Chinesesimp>
             <Czech>Krev IV (500ml) KS: B-</Czech>
             <Korean>B-형 혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: B-</French>
@@ -259,6 +277,7 @@
             <Polish>Krew IV (500ml) GK: AB+</Polish>
             <Spanish>Sangre IV (500ml) GS: AB+</Spanish>
             <Chinese>AB+型血液包 (500ml)</Chinese>
+            <Chinesesimp>AB+型血液包 (500ml)</Chinesesimp>
             <Czech>Krev IV (500ml) KS: AB+</Czech>
             <Korean>AB+형 혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: AB+</French>
@@ -273,6 +292,7 @@
             <Polish>Krew IV (500ml) GK: AB-</Polish>
             <Spanish>Sangre IV (500ml) GS: AB-</Spanish>
             <Chinese>AB-型血液包 (500ml)</Chinese>
+            <Chinesesimp>AB-型血液包 (500ml)</Chinesesimp>
             <Czech>Krev IV (500ml) KS: AB-</Czech>
             <Korean>AB-형 혈액 (500ml)</Korean>
             <French>Sang IV (500ml) GS: AB-</French>
@@ -287,6 +307,7 @@
             <Polish>Krew IV (250ml) GK: 0+</Polish>
             <Spanish>Sangre IV (250ML) GS: 0+</Spanish>
             <Chinese>O+型血液包 (250ml)</Chinese>
+            <Chinesesimp>O+型血液包 (250ml)</Chinesesimp>
             <Czech>Krev IV (250ml) KS: 0+</Czech>
             <Korean>O+형 혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: O+</French>
@@ -301,6 +322,7 @@
             <Polish>Krew IV (250ml) GK: 0-</Polish>
             <Spanish>Sangre IV (250ML) GS: 0-</Spanish>
             <Chinese>O-型血液包 (250ml)</Chinese>
+            <Chinesesimp>O-型血液包 (250ml)</Chinesesimp>
             <Czech>Krev IV (250ml) KS: 0-</Czech>
             <Korean>O-형 혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: O-</French>
@@ -315,6 +337,7 @@
             <Polish>Krew IV (250ml) GK: A+</Polish>
             <Spanish>Sangre IV (250ML) GS: A+</Spanish>
             <Chinese>A+型血液包 (250ml)</Chinese>
+            <Chinesesimp>A+型血液包 (250ml)</Chinesesimp>
             <Czech>Krev IV (250ml) KS: A+</Czech>
             <Korean>A+형 혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: A+</French>
@@ -329,6 +352,7 @@
             <Polish>Krew IV (250ml) GK: A-</Polish>
             <Spanish>Sangre IV (250ML) GS: A-</Spanish>
             <Chinese>A-型血液包 (250ml)</Chinese>
+            <Chinesesimp>A-型血液包 (250ml)</Chinesesimp>
             <Czech>Krev IV (250ml) KS: A-</Czech>
             <Korean>A-형 혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: A-</French>
@@ -343,6 +367,7 @@
             <Polish>Krew IV (250ml) GK: B+</Polish>
             <Spanish>Sangre IV (250ML) GS: B+</Spanish>
             <Chinese>B+型血液包 (250ml)</Chinese>
+            <Chinesesimp>B+型血液包 (250ml)</Chinesesimp>
             <Czech>Krev IV (250ml) KS: B+</Czech>
             <Korean>B+형 혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: B+</French>
@@ -357,6 +382,7 @@
             <Polish>Krew IV (250ml) GK: B-</Polish>
             <Spanish>Sangre IV (250ML) GS: B-</Spanish>
             <Chinese>B-型血液包 (250ml)</Chinese>
+            <Chinesesimp>B-型血液包 (250ml)</Chinesesimp>
             <Czech>Krev IV (250ml) KS: B-</Czech>
             <Korean>B-형 혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: B-</French>
@@ -371,6 +397,7 @@
             <Polish>Krew IV (250ml) GK: AB+</Polish>
             <Spanish>Sangre IV (250ML) GS: AB+</Spanish>
             <Chinese>AB+型血液包 (250ml)</Chinese>
+            <Chinesesimp>AB+型血液包 (250ml)</Chinesesimp>
             <Czech>Krev IV (250ml) KS: AB+</Czech>
             <Korean>AB+형 혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: AB+</French>
@@ -385,6 +412,7 @@
             <Polish>Krew IV (250ml) GK: AB-</Polish>
             <Spanish>Sangre IV (250ML) GS: AB-</Spanish>
             <Chinese>AB-型血液包 (250ml)</Chinese>
+            <Chinesesimp>AB-型血液包 (250ml)</Chinesesimp>
             <Czech>Krev IV (250ml) KS: AB-</Czech>
             <Korean>AB-형 혈액 (250ml)</Korean>
             <French>Sang IV (250ml) GS: AB-</French>
@@ -399,6 +427,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: 0+</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: 0+</Spanish>
             <Chinese>輸血液 (O+型 1000ml)</Chinese>
+            <Chinesesimp>输血 (O+型 1000ml)</Chinesesimp>
             <Czech>Dát Krev IV (1000ml) KS: 0+</Czech>
             <Korean>O+형혈 액(1000ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (1000ml) GS: O+</French>
@@ -413,6 +442,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: 0-</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: 0-</Spanish>
             <Chinese>輸血液 (O-型 1000ml)</Chinese>
+            <Chinesesimp>输血 (O-型 1000ml)</Chinesesimp>
             <Czech>Dát Krev IV (1000ml) KS: 0-</Czech>
             <Korean>O-형 혈액(1000ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (1000ml) GS: O-</French>
@@ -427,6 +457,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: A+</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: A+</Spanish>
             <Chinese>輸血液 (A+型 1000ml)</Chinese>
+            <Chinesesimp>输血 (A+型 1000ml)</Chinesesimp>
             <Czech>Dát Krev IV (1000ml) KS: A+</Czech>
             <Korean>A+형 혈액(1000ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (1000ml) GS: A+</French>
@@ -441,6 +472,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: A-</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: A-</Spanish>
             <Chinese>輸血液 (A-型 1000ml)</Chinese>
+            <Chinesesimp>输血 (A-型 1000ml)</Chinesesimp>
             <Czech>Dát Krev IV (1000ml) KS: A-</Czech>
             <Korean>A-형 혈액(1000ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (1000ml) GS: A-</French>
@@ -455,6 +487,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: B+</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: B+</Spanish>
             <Chinese>輸血液 (B+型 1000ml)</Chinese>
+            <Chinesesimp>输血 (B+型 1000ml)</Chinesesimp>
             <Czech>Dát Krev IV (1000ml) KS: B+</Czech>
             <Korean>B+형 혈액(1000ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (1000ml) GS: B+</French>
@@ -469,6 +502,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: B-</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: B-</Spanish>
             <Chinese>輸血液 (B-型 1000ml)</Chinese>
+            <Chinesesimp>输血 (B-型 1000ml)</Chinesesimp>
             <Czech>Dát Krev IV (1000ml) KS: B-</Czech>
             <Korean>B-형 혈액(1000ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (1000ml) GS: B-</French>
@@ -483,6 +517,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: AB+</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: AB+</Spanish>
             <Chinese>輸血液 (AB+型 1000ml)</Chinese>
+            <Chinesesimp>输血 (AB+型 1000ml)</Chinesesimp>
             <Czech>Dát Krev IV (1000ml) KS: AB+</Czech>
             <Korean>AB+형 혈액(1000ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (1000ml) GS: AB+</French>
@@ -497,6 +532,7 @@
             <Polish>Podaj Krew IV (1000ml) GK: AB-</Polish>
             <Spanish>Administrar Sangre IV (1000ml) GS: AB-</Spanish>
             <Chinese>輸血液 (AB-型 1000ml)</Chinese>
+            <Chinesesimp>输血 (AB-型 1000ml)</Chinesesimp>
             <Czech>Dát Krev IV (1000ml) KS: AB-</Czech>
             <Korean>AB-형 혈액(1000ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (1000ml) GS: AB-</French>
@@ -511,6 +547,7 @@
             <Polish>Podaj Krew IV (500ml) GK: 0+</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: 0+</Spanish>
             <Chinese>輸血液 (O+型 500ml)</Chinese>
+            <Chinesesimp>输血 (O+型 500ml)</Chinesesimp>
             <Czech>Dát Krev IV (500ml) KS: 0+</Czech>
             <Korean>O+형 혈액(500ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (500ml) GS: O+</French>
@@ -525,6 +562,7 @@
             <Polish>Podaj Krew IV (500ml) GK: 0-</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: 0-</Spanish>
             <Chinese>輸血液 (O-型 500ml)</Chinese>
+            <Chinesesimp>输血 (O-型 500ml)</Chinesesimp>
             <Czech>Dát Krev IV (500ml) KS: 0-</Czech>
             <Korean>O-형 혈액(500ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (500ml) GS: O-</French>
@@ -539,6 +577,7 @@
             <Polish>Podaj Krew IV (500ml) GK: A+</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: A+</Spanish>
             <Chinese>輸血液 (A+型 500ml)</Chinese>
+            <Chinesesimp>输血 (A+型 500ml)</Chinesesimp>
             <Czech>Dát Krev IV (500ml) KS: A+</Czech>
             <Korean>A+형 혈액(500ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (500ml) GS: A+</French>
@@ -553,6 +592,7 @@
             <Polish>Podaj Krew IV (500ml) GK: A-</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: A-</Spanish>
             <Chinese>輸血液 (A-型 500ml)</Chinese>
+            <Chinesesimp>输血 (A-型 500ml)</Chinesesimp>
             <Czech>Dát Krev IV (500ml) KS: A-</Czech>
             <Korean>A-형 혈액(500ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (500ml) GS: A-</French>
@@ -567,6 +607,7 @@
             <Polish>Podaj Krew IV (500ml) GK: B+</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: B+</Spanish>
             <Chinese>輸血液 (B+型 500ml)</Chinese>
+            <Chinesesimp>输血 (B+型 500ml)</Chinesesimp>
             <Czech>Dát Krev IV (500ml) KS: B+</Czech>
             <Korean>B+형 혈액(500ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (500ml) GS: B+</French>
@@ -581,6 +622,7 @@
             <Polish>Podaj Krew IV (500ml) GK: B-</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: B-</Spanish>
             <Chinese>輸血液 (B-型 500ml)</Chinese>
+            <Chinesesimp>输血 (B-型 500ml)</Chinesesimp>
             <Czech>Dát Krev IV (500ml) KS: B-</Czech>
             <Korean>B-형 혈액(500ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (500ml) GS: B-</French>
@@ -595,6 +637,7 @@
             <Polish>Podaj Krew IV (500ml) GK: AB+</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: AB+</Spanish>
             <Chinese>輸血液 (AB+型 500ml)</Chinese>
+            <Chinesesimp>输血 (AB+型 500ml)</Chinesesimp>
             <Czech>Dát Krev IV (500ml) KS: AB+</Czech>
             <Korean>AB+형 혈액(500ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (500ml) GS: AB+</French>
@@ -609,6 +652,7 @@
             <Polish>Podaj Krew IV (500ml) GK: AB-</Polish>
             <Spanish>Administrar Sangre IV (500ml) GS: AB-</Spanish>
             <Chinese>輸血液 (AB-型 500ml)</Chinese>
+            <Chinesesimp>输血 (AB-型 500ml)</Chinesesimp>
             <Czech>Dát Krev IV (500ml) KS: AB-</Czech>
             <Korean>AB-형 혈액(500ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (500ml) GS: AB-</French>
@@ -623,6 +667,7 @@
             <Polish>Podaj Krew IV (250ml) GK: 0+</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: 0+</Spanish>
             <Chinese>輸血液 (O+型 250ml)</Chinese>
+            <Chinesesimp>输血 (O+型 250ml)</Chinesesimp>
             <Czech>Dát Krev IV (250ml) KS: 0+</Czech>
             <Korean>O+형 혈액(250ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (250ml) GS: O+</French>
@@ -637,6 +682,7 @@
             <Polish>Podaj Krew IV (250ml) GK: 0-</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: 0-</Spanish>
             <Chinese>輸血液 (O-型 250ml)</Chinese>
+            <Chinesesimp>输血 (O-型 250ml)</Chinesesimp>
             <Czech>Dát Krev IV (250ml) KS: 0-</Czech>
             <Korean>O-형 혈액(250ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (250ml) GS: O-</French>
@@ -651,6 +697,7 @@
             <Polish>Podaj Krew IV (250ml) GK: A+</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: A+</Spanish>
             <Chinese>輸血液 (A+型 250ml)</Chinese>
+            <Chinesesimp>输血 (A+型 250ml)</Chinesesimp>
             <Czech>Dát Krev IV (250ml) KS: A+</Czech>
             <Korean>A+형 혈액(250ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (250ml) GS: A+</French>
@@ -665,6 +712,7 @@
             <Polish>Podaj Krew IV (250ml) GK: A-</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: A-</Spanish>
             <Chinese>輸血液 (A-型 250ml)</Chinese>
+            <Chinesesimp>输血 (A-型 250ml)</Chinesesimp>
             <Czech>Dát Krev IV (250ml) KS: A-</Czech>
             <Korean>A-형 혈액(250ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (250ml) GS: A-</French>
@@ -679,6 +727,7 @@
             <Polish>Podaj Krew IV (250ml) GK: B+</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: B+</Spanish>
             <Chinese>輸血液 (B+型 250ml)</Chinese>
+            <Chinesesimp>输血 (B+型 250ml)</Chinesesimp>
             <Czech>Dát Krev IV (250ml) KS: B+</Czech>
             <Korean>B+형 혈액(250ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (250ml) GS: B+</French>
@@ -693,6 +742,7 @@
             <Polish>Podaj Krew IV (250ml) GK: B-</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: B-</Spanish>
             <Chinese>輸血液 (B-型 250ml)</Chinese>
+            <Chinesesimp>输血 (B-型 250ml)</Chinesesimp>
             <Czech>Dát Krev IV (250ml) KS: B-</Czech>
             <Korean>B-형 혈액(250ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (250ml) GS: B-</French>
@@ -707,6 +757,7 @@
             <Polish>Podaj Krew IV (250ml) GK: AB+</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: AB+</Spanish>
             <Chinese>輸血液 (AB+型 250ml)</Chinese>
+            <Chinesesimp>输血 (AB+型 250ml)</Chinesesimp>
             <Czech>Dát Krev IV (250ml) KS: AB+</Czech>
             <Korean>AB+형 혈액(250ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (250ml) GS: AB+</French>
@@ -721,6 +772,7 @@
             <Polish>Podaj Krew IV (250ml) GK: AB-</Polish>
             <Spanish>Administrar Sangre IV (250ml) GS: AB-</Spanish>
             <Chinese>輸血液 (AB-型 250ml)</Chinese>
+            <Chinesesimp>输血 (AB-型 250ml)</Chinesesimp>
             <Czech>Dát Krev IV (250ml) KS: AB-</Czech>
             <Korean>AB-형 혈액(250ml) 수혈하기</Korean>
             <French>Transfusion de sang IV (250ml) GS: AB-</French>
@@ -735,6 +787,7 @@
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
             <Chinese>服用中</Chinese>
+            <Chinesesimp>服用中...hinesesimp>
             <Czech>Používám</Czech>
             <Korean>사용 중</Korean>
             <French>Utilisation</French>
@@ -750,6 +803,7 @@
             <Polish>Sprawdź rytm</Polish>
             <Turkish>Ritmi Kontrol Et</Turkish>
             <Chinese>检查节奏</Chinese>
+            <Chinese>检查心率曲线</Chinese>
             <French>Vérifier le pouls</French>
             <Italian>Controllare il ritmo</Italian>
             <Spanish>Comprobar el ritmo</Spanish>
@@ -763,6 +817,7 @@
             <Polish>Sprawdź nieśmiertelniki</Polish>
             <Spanish>Comprobar placa de identificación</Spanish>
             <Chinese>檢查兵籍牌</Chinese>
+            <Chinesesimp>检查兵籍牌</Chinesesimp>
             <Czech>Zkontrolovat psí známky</Czech>
             <Korean>인식표 확인</Korean>
             <French>Vérifier la plaque d'identification</French>
@@ -777,6 +832,7 @@
             <Polish>Sprawdzanie</Polish>
             <Spanish>Comprobando</Spanish>
             <Chinese>檢查中</Chinese>
+            <Chinesesimp>检查中...hinesesimp>
             <Czech>Kontroluji</Czech>
             <Korean>확인 중</Korean>
             <French>Vérification</French>
@@ -791,6 +847,7 @@
             <Polish>Jeden jest już podłączony</Polish>
             <Spanish>Ya hay uno conectado</Spanish>
             <Chinese>已經有連接一個了</Chinese>
+            <Chinesesimp>已经连接一个了</Chinesesimp>
             <Czech>Jeden již připojen</Czech>
             <Korean>AED가 이미 연결되어 있습니다</Korean>
             <French>Un déjà connecté</French>
@@ -805,6 +862,7 @@
             <Polish>AED X-Series</Polish>
             <Spanish>DEA Serie X</Spanish>
             <Chinese>自動體外心臟除顫器 X系列</Chinese>
+            <Chinesesimp>AED-X除颤仪</Chinesesimp>
             <Czech>AED X-Series</Czech>
             <Korean>X 시리즈 AED</Korean>
             <French>AED X-Series</French>
@@ -819,6 +877,7 @@
             <Polish>Używany do monitorowania parametrów życiowych  i defibrylacji.</Polish>
             <Spanish>Usado para monitorear vitales y resucitar pacientes </Spanish>
             <Chinese>有著生命跡象檢測器並可以甦醒患者</Chinese>
+            <Chinesesimp>有生命迹象监测器并可以唤醒患者</Chinesesimp>
             <Czech>Používán na monitorování vitálních funkcí a resuscitování</Czech>
             <Korean>부상병에게 연결하여 바이탈 모니터링과 제세동을 위해 사용합니다</Korean>
             <French>Utilisé pour monitorer les constantes vitales et ressusciter les patients</French>
@@ -833,6 +892,7 @@
             <Polish>Monitoruj parametry życiowe</Polish>
             <Spanish>Monitorear vitales</Spanish>
             <Chinese>監控生命跡象</Chinese>
+            <Chinesesimp>监控生命迹象</Chinesesimp>
             <Czech>Monitorování vitálních funkcí</Czech>
             <Korean>모니터링 연결하기</Korean>
             <French>Monitorer les constantes vitales</French>
@@ -847,6 +907,7 @@
             <Polish>Użyj defibrylatora AED</Polish>
             <Spanish>Utilice el desfibrilador AED</Spanish>
             <Chinese>使用AED除顫器</Chinese>
+            <Chinesesimp>使用AED除颤器</Chinesesimp>
             <Czech>Použít AED defibrilátor</Czech>
             <Korean>자동제세동기 사용</Korean>
             <French>Utiliser le défibrillateur AED</French>
@@ -861,6 +922,7 @@
             <Polish>Użyj stacji AED</Polish>
             <Spanish>Utilice el estación AED</Spanish>
             <Chinese>使用AED除顫器</Chinese>
+            <Chinesesimp>使用AED除颤器</Chinesesimp>
             <Czech>Použít AED stanici</Czech>
             <Korean>비치형 자동제세동기 사용</Korean>
             <French>Utiliser la station AED</French>
@@ -873,6 +935,7 @@
             <English>Using the defibrillator...</English>
             <German>Setze Defibrillator ein...</German>
             <Chinese>使用除顫器中...</Chinese>
+            <Chinesesimp>使用除颤器中...</Chinesesimp>
             <Polish>Używanie Defibrylatora...</Polish>
             <Spanish>Usando el desfibrilador...</Spanish>
             <Czech>Používám defibrilátor...</Czech>
@@ -889,6 +952,7 @@
             <Polish>Użyj defibrylatora AED-X</Polish>
             <Spanish>Utilice el desfibrilador AED-X</Spanish>
             <Chinese>使用AED-X除顫器</Chinese>
+            <Chinesesimp>使用AED-X除颤器</Chinesesimp>
             <Czech>Použít AED-X defibrilátor</Czech>
             <Korean>X-시리즈 AED 사용</Korean>
             <French>Utiliser le défibrillateur AED-X</French>
@@ -903,6 +967,7 @@
             <Polish>Przestań monitorować</Polish>
             <Spanish>Quitar monitoreo</Spanish>
             <Chinese>移除監控</Chinese>
+            <Chinesesimp>移除监控</Chinesesimp>
             <Czech>Odstranit monitorování</Czech>
             <Korean>모니터링 해제</Korean>
             <French>Retirer le moniteur</French>
@@ -919,6 +984,7 @@
             <Korean>차량: X-시리즈 AED 사용</Korean>
             <Turkish>Araç: AED-X kullanın</Turkish>
             <Chinese>车辆。使用AED-X</Chinese>
+            <Chinesesimp>载具: 使用AED-X</Chinesesimp>
             <Italian>Veicolo: Utilizzare DAE-X</Italian>
             <Spanish>Vehículo: Utilizar DEA-X</Spanish>
             <Czech>Vozidlo: Použít AED-X</Czech>
@@ -933,6 +999,7 @@
             <Korean>차량: X 시리즈 AED 부착</Korean>
             <Turkish>Araç: AED-X'i takın</Turkish>
             <Chinese>车辆。安装AED-X</Chinese>
+            <Chinesesimp>载具: 安装AED-X</Chinesesimp>
             <Italian>Veicolo: Attaccare DAE-X</Italian>
             <Spanish>Vehículo: Colocar DEA-X</Spanish>
             <Czech>Vozidlo: Připevnit AED-X</Czech>
@@ -947,6 +1014,7 @@
             <Korean>차량: X-시리즈 AED 제거</Korean>
             <Turkish>Araç: AED-X'i kaldırın</Turkish>
             <Chinese>车辆。移除AED-X</Chinese>
+            <Chinesesimp>载具: 移除AED-X</Chinesesimp>
             <Italian>Veicolo: Rimuovere DAE-X</Italian>
             <Spanish>Vehículo: Retirar DEA-X</Spanish>
             <Czech>Vozidlo: Odstranit AED-X</Czech>
@@ -959,6 +1027,7 @@
             <Polish>Korzystanie z defibrylatora AED-X</Polish>
             <Spanish>Yo uso un desfibrilador AED-X</Spanish>
             <Chinese>我使用AED-X除顫器</Chinese>
+            <Chinesesimp>使用AED-X除颤器</Chinesesimp>
             <Czech>Používám AED-X defibrilátor</Czech>
             <Korean>X-시리즈 AED 사용</Korean>
             <French>Utilisation du défibrillateur AED-X</French>
@@ -973,6 +1042,7 @@
             <Polish>Łączenie</Polish>
             <Spanish>Conectando</Spanish>
             <Chinese>連線中</Chinese>
+            <Chinesesimp>连线中...hinesesimp>
             <Czech>Připojuji</Czech>
             <Korean>연결 중</Korean>
             <French>Connexion</French>
@@ -987,6 +1057,7 @@
             <Polish>Rozłączanie</Polish>
             <Spanish>Desconectando</Spanish>
             <Chinese>斷開連接</Chinese>
+            <Chinesesimp>断开连接</Chinesesimp>
             <Czech>Odpojuji</Czech>
             <Korean>떼어내는 중</Korean>
             <French>Déconnexion</French>
@@ -1001,6 +1072,7 @@
             <Polish>Wycisz dźwięki AED X</Polish>
             <Spanish>Bajar el volúmen del DEA X</Spanish>
             <Chinese>降低AED X音量</Chinese>
+            <Chinesesimp>降低AED X音量</Chinesesimp>
             <Czech>Snížit hlasitost AED-X</Czech>
             <Korean>X-시리즈 AED 소리 끄기</Korean>
             <French>Réduire le volume du AED-X</French>
@@ -1015,6 +1087,7 @@
             <Polish>Włącz dźwięki AED X</Polish>
             <Spanish>Subir el volúmen del DEA X</Spanish>
             <Chinese>提高AED X音量</Chinese>
+            <Chinesesimp>提高AED X音量</Chinesesimp>
             <Czech>Zvýšit hlasitost AED-X</Czech>
             <Korean>X-시리즈 AED 소리 켜기</Korean>
             <French>Augmenter le volume du AED-X</French>
@@ -1029,6 +1102,7 @@
             <Polish>%1 jest pusty</Polish>
             <Spanish>%1 está vacío ahora</Spanish>
             <Chinese>%1 目前用完了</Chinese>
+            <Chinesesimp>%1 用完了</Chinesesimp>
             <Czech>%1 je prázdná</Czech>
             <Korean>%1 은(는) 현재 비어 있음</Korean>
             <French>%1 est maintenant vide</French>
@@ -1043,6 +1117,7 @@
             <Polish>Bank krwi</Polish>
             <Spanish>Banco de sangre</Spanish>
             <Chinese>血庫</Chinese>
+            <Chinesesimp>医用血库</Chinesesimp>
             <Czech>Lékařská krevní banka</Czech>
             <Korean>의료용 혈액은행</Korean>
             <French>Réserve médicale de sang</French>
@@ -1057,6 +1132,7 @@
             <Polish>Otwórz tabele grup krwi</Polish>
             <Spanish>Abrir tabla de compatibilidad sanguínea</Spanish>
             <Chinese>打開血型相容表</Chinese>
+            <Chinesesimp>打开血型相容表</Chinesesimp>
             <Czech>Otevřít tahák krevních skupin</Czech>
             <Korean>혈액형 비교표 열기</Korean>
             <French>Ouvrir la fiche d'indication des groupes sanguins</French>
@@ -1071,6 +1147,7 @@
             <Polish>Połóż AED</Polish>
             <Spanish>Sitio AED</Spanish>
             <Chinese>打開血型相容表</Chinese>
+            <Chinesesimp>放置AED</Chinesesimp>
             <Czech>Místo AED</Czech>
             <Korean>자동제세동기 설치</Korean>
             <French>Placer l'AED</French>
@@ -1085,6 +1162,7 @@
             <Polish>Podnieś AED</Polish>
             <Spanish>Recoger AED</Spanish>
             <Chinese>打開血型相容表</Chinese>
+            <Chinesesimp>捡起AED</Chinesesimp>
             <Czech>Vyzvednout AED</Czech>
             <Korean>자동제세동기 줍기</Korean>
             <French>Ramasser l'AED</French>
@@ -1099,6 +1177,7 @@
             <Polish>Tabela grup krwi</Polish>
             <Spanish>Tabla de grupos sanguíneos</Spanish>
             <Chinese>血型相容表</Chinese>
+            <Chinesesimp>血型相容表</Chinesesimp>
             <Czech>tahák krevních skupin</Czech>
             <Korean>혈액형 비교표</Korean>
             <French>Fiche d'indication des groupes sanguins</French>
@@ -1113,6 +1192,7 @@
             <Polish>Zła kombinacja krwi dawcy i biorcy może mieć śmiertelne konsekwencje.</Polish>
             <Spanish>Una mala combinación de donante y receptor puede traer consecuencias fatales.</Spanish>
             <Chinese>使用不相容的血包來輸血可能會導致病患死亡</Chinese>
+            <Chinesesimp>使用不相容的血包来输血可能会导致病患死亡</Chinesesimp>
             <Czech>Špatná kombinace krve dárce a příjemce může mít smrtelné následky.</Czech>
             <Korean>잘못된 혈액형으로 수혈 시 사망에 이를 수도 있습니다</Korean>
             <French>Une mauvaise combinaison sanguine du donneur et du receveur peut avoir des conséquences mortelles.</French>
@@ -1127,6 +1207,7 @@
             <Polish>Grupa krwi</Polish>
             <Spanish>Grupo sanguíneo</Spanish>
             <Chinese>血型</Chinese>
+            <Chinesesimp>血型</Chinesesimp>
             <Czech>Krevní skupina</Czech>
             <Korean>혈액형</Korean>
             <French>Groupe sanguin</French>
@@ -1139,6 +1220,7 @@
             <English>Locations AED</English>
             <German>Orte für AED</German>
             <Chinese>AED使用場合</Chinese>
+            <Chinesesimp>AED使用场合</Chinesesimp>
             <Polish>Miejsca użycia AED</Polish>
             <Spanish>Ubicación del DAE</Spanish>
             <Czech>Oblasti pro AED</Czech>
@@ -1153,6 +1235,7 @@
             <English>Where can the AED be used?</English>
             <German>Wo kann der AED verwendet werden?</German>
             <Chinese>哪裡可以使用AED?</Chinese>
+            <Chinesesimp>哪里可以使用AED?</Chinesesimp>
             <Polish>Gdzie można użyć AED?</Polish>
             <Spanish>¿Dónde se puede usar el DAE?</Spanish>
             <Czech>Kde může být AED použito?</Czech>
@@ -1167,6 +1250,7 @@
             <English>Automated External Defibrillator</English>
             <German>Automatisierter Externer Defibrillator</German>
             <Chinese>自動體外除顫器</Chinese>
+            <Chinesesimp>AED除颤器</Chinesesimp>
             <Polish>Automatyczny Zewnętrzny Defibrylator</Polish>
             <Spanish>Desfibrilador Externo Automático</Spanish>
             <Czech>Automatický externí defibrilátor</Czech>
@@ -1181,6 +1265,7 @@
             <English>Use to resuscitate player</English>
             <German>Stellt Puls wieder her</German>
             <Chinese>用來甦醒玩家</Chinese>
+            <Chinesesimp>使用电击来唤醒玩家</Chinesesimp>
             <Polish>Użyj do reanimacji</Polish>
             <Spanish>Úsalo para resucitar a un jugador</Spanish>
             <Czech>Použít k resuscitaci hráče</Czech>
@@ -1197,6 +1282,7 @@
             <German>%1 hat ein AED durchgeführt</German>
             <Spanish>%1 realicó AED</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
+            <Chinesesimp>%1 已使用AED</Chinesesimp>
             <Czech>%1 použito AED</Czech>
             <Korean>%1 은(는) 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED</French>
@@ -1211,6 +1297,7 @@
             <German>%1 hat ein AED Station durchgeführt</German>
             <Spanish>%1 realicó AED Station</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
+            <Chinesesimp>%1 已使用固定式AED</Chinesesimp>
             <Czech>%1 použita AED stanice</Czech>
             <Korean>%1 은(는) 비치형 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé une station AED</French>
@@ -1225,6 +1312,7 @@
             <German>%1 hat ein AED-X durchgeführt</German>
             <Spanish>%1 realicó AED-X</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
+            <Chinesesimp>%1 已使用AED-X/Chinesesimp>
             <Czech>%1 použito AED-X</Czech>
             <Korean>%1 은(는) X 시리즈 AED가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED-X</French>
@@ -1239,6 +1327,7 @@
             <German>Erfolgsrate für AED-X</German>
             <Spanish>Posibilidad de éxito para AED-X</Spanish>
             <Chinese>AED-X成功的機會</Chinese>
+            <Chinesesimp>AED-X成功的几率</Chinesesimp>
             <Czech>Šance úspěchu pro AED-X</Czech>
             <Korean>X-시리즈 AED 성공 확률</Korean>
             <French>Chances de succès pour l'AED-X</French>
@@ -1253,6 +1342,7 @@
             <German>Erfolgsrate für AED</German>
             <Spanish>Posibilidad de éxito para AED</Spanish>
             <Chinese>AED成功的機會</Chinese>
+            <Chinesesimp>AED成功的几率</Chinesesimp>
             <Czech>Šance úspěchu pro AED</Czech>
             <Korean>자동제세동기 성공 확률</Korean>
             <French>Chances de succès pour l'AED</French>
@@ -1267,6 +1357,7 @@
             <German>AED erlauben</German>
             <Spanish>Permitir AED</Spanish>
             <Chinese>允許AED</Chinese>
+            <Chinesesimp>允许AED</Chinesesimp>
             <Czech>Povolit AED</Czech>
             <Korean>AED 허용</Korean>
             <French>Autoriser l'AED</French>
@@ -1281,6 +1372,7 @@
             <German>Benötigtes Training Level um den  AED zu nutzen</German>
             <Spanish>Nivel de entrenamiento requerido para usar un AED</Spanish>
             <Chinese>使用AED所需的培訓水平</Chinese>
+            <Chinesesimp>使用AED所需的医疗培训水平</Chinesesimp>
             <Czech>Úroveň výcviku nutná k použití AED</Czech>
             <Korean>AED를 사용하기 위해 필요한 의료레벨 수준</Korean>
             <French>Niveau de d'entrainement pour utiliser un AED</French>
@@ -1295,6 +1387,7 @@
             <German>AED-X erlauben</German>
             <Spanish>Permitir AED-X</Spanish>
             <Chinese>允許AED-X</Chinese>
+            <Chinesesimp>允许AED-X</Chinesesimp>
             <Czech>Povolit AED-X</Czech>
             <Korean>X-시리즈 AED 허용</Korean>
             <French>Autoriser l'AED-X</French>
@@ -1309,6 +1402,7 @@
             <German>Benötigtes Training Level um den  AED-X zu nutzen</German>
             <Spanish>Nivel de entrenamiento requerido para usar un AED-X</Spanish>
             <Chinese>使用AED-X所需的培訓水平</Chinese>
+            <Chinesesimp>使用AED-X的医疗培训水平</Chinesesimp>
             <Czech>Úroveň výcviku nutná k použití AED-X</Czech>
             <Korean>X-시리즈 AED를 사용하기 위해 필요한 의료레벨 수준</Korean>
             <French>Niveau de d'entrainement pour utiliser un AED-X</French>
@@ -1323,6 +1417,7 @@
             <German>Distanz Grenze für den AED-X in Meter</German>
             <Spanish>Límite de distancia para AED-X en metros</Spanish>
             <Chinese>AED-X的距離限制，以米為單位</Chinese>
+            <Chinesesimp>AED-X的距离限制，以米为单位</Chinesesimp>
             <Czech>Vzdálenostní limit pro AED-X v metrech</Czech>
             <Korean>X-시리즈 AED 사용가능거리 설정 (미터)</Korean>
             <French>Distance maximum en mètres pour l'AED-X</French>
@@ -1337,6 +1432,7 @@
             <German>Zeitbegrenzung für die Werteüberwachung vom AED-X in Sekunden</German>
             <Spanish>Límite de tiempo para monitor de AED-X en segundos</Spanish>
             <Chinese>監視AED-X的時間限制（以秒為單位）</Chinese>
+            <Chinesesimp>AED-X监视的时间限制（以秒为单位）</Chinesesimp>
             <Czech>Časový limit pro monitoring pomocí AED-X v sekundách</Czech>
             <Korean>X-시리즈 AED 모니터링 시간 제한 (초)</Korean>
             <French>Limite de temps pour monitorer l'AED-X en secondes</French>
@@ -1351,6 +1447,7 @@
             <German>AED-X Monitor während dem defibrillieren deaktivieren</German>
             <Spanish>Desactive el monitor mientras usa AED-X</Spanish>
             <Chinese>使用AED-X時停用顯示器</Chinese>
+            <Chinesesimp>使用AED-X时停用显示器</Chinesesimp>
             <Czech>Deaktivovat monitoring při použití AED-X</Czech>
             <Korean>X-시리즈 AED 사용 시 모니터 비활성화</Korean>
             <French>Désactiver le moniteur pendant l'utilisation de l'AED-X</French>
@@ -1365,6 +1462,7 @@
             <German>Aktiviere verschiedene HLW Erfolgsraten für verschiedene Medic Level</German>
             <Spanish>Permita diferentes posibilidades de RCP por nivel médico</Spanish>
             <Chinese>每個醫療級別啟用不同的CPR機會</Chinese>
+            <Chinesesimp>每个医疗培训水平启用不同的CPR几率</Chinesesimp>
             <Czech>Povolit různé šance pro resuscitaci dle úrovně zdravotnického výcviku</Czech>
             <Korean>의료레벨에 따라 CPR 성공 확률을 다르게 하도록 설정</Korean>
             <French>Activer différentes chances de réussite de RCP par niveau médical </French>
@@ -1379,6 +1477,7 @@
             <German>HLW Erfolgsrate für Doktoren</German>
             <Spanish>Posibilidad de RCP para médicos</Spanish>
             <Chinese>醫生的CPR機會</Chinese>
+            <Chinesesimp>医生的CPR几率</Chinesesimp>
             <Czech>Šance resuscitace pro doktory</Czech>
             <Korean>군의관 CPR 성공 확률</Korean>
             <French>Chances de RCP pour les Docteurs</French>
@@ -1393,6 +1492,7 @@
             <German>HLW Erfolgsrate für normale Medics</German>
             <Spanish>Posibilidad de RCP para médicos regulares</Spanish>
             <Chinese>常規醫生的CPR機會</Chinese>
+            <Chinesesimp>军医的CPR几率</Chinesesimp>
             <Czech>Šance resuscitace pro regulérní zdravotníky</Czech>
             <Korean>의무병 CPR 성공 확률</Korean>
             <French>Chances de RCP pour les médecins</French>
@@ -1407,6 +1507,7 @@
             <German>Standard HLW Erfolgsrate</German>
             <Spanish>Posibilidad de RCP por incumplimiento</Spanish>
             <Chinese>預設CPR機會</Chinese>
+            <Chinesesimp>预设CPR几率</Chinesesimp>
             <Czech>Šance resuscitace pro základní</Czech>
             <Korean>일반 전투병 CPR 성공 확률</Korean>
             <French>Chances de RCP par défaut</French>
@@ -1421,6 +1522,7 @@
             <German>Bluttransfusionsset (500ml)</German>
             <Spanish>Kit de transfusión de sangre de campo (500 ml) </Spanish>
             <Chinese>野战输血套件 (500ml) </Chinese>
+            <Chinesesimp>野战输血套件 (500ml) </Chinesesimp>
             <Czech>Polní transfůzní kit (250ml)</Czech>
             <Korean>현장 수혈 키트 (500ml)</Korean>
             <French>Kit de transfusion sanguine de terrain (500 ml) </French>
@@ -1435,6 +1537,7 @@
             <German>Bluttransfusionsset (250ml)</German>
             <Spanish>Kit de transfusión de sangre de campo (250 ml) </Spanish>
             <Chinese>野战输血套件 (250ml) </Chinese>
+            <Chinesesimp>野战输血套件 (250ml) </Chinesesimp>
             <Czech>Polní transfůzní kit (250ml)</Czech>
             <Korean>현장 수혈 키트 (250ml)</Korean>
             <French>Kit de transfusion sanguine de terrain (250 ml) </French>
@@ -1449,6 +1552,7 @@
             <German>Ermöglicht die Entnahme von Blut und dessen Verwendung</German>
             <Spanish>Te permite sacar sangre y usarla. </Spanish>
             <Chinese>允许你抽血并使用它 </Chinese>
+            <Chinesesimp>允许你抽血并使用它 </Chinesesimp>
             <Czech>Umožňuje odebírat krev a použít ji</Czech>
             <Korean>피를 채혈해서 사용할 수 있게 합니다</Korean>
             <French>Permet de prélever du sang et de l'utiliser </French>
@@ -1463,6 +1567,7 @@
             <German>Blut abnehmen (500ml)</German>
             <Spanish>Extraer sangre (500 ml) </Spanish>
             <Chinese>抽血 (500ml) </Chinese>
+            <Chinesesimp>抽血 (500ml) </Chinesesimp>
             <Czech>Odebrat krev (500ml)</Czech>
             <Korean>혈액 채혈 (500ml)</Korean>
             <French>Prélèvement de sang (500 ml) </French>
@@ -1477,6 +1582,7 @@
             <German>Blut abnehmen (250ml)</German>
             <Spanish>Extraer sangre (250 ml) </Spanish>
             <Chinese>抽血 (250ml) </Chinese>
+            <Chinesesimp>抽血 (250ml) </Chinesesimp>
             <Czech>Odebrat krev (250ml)</Czech>
             <Korean>혈액 채혈 (250ml)</Korean>
             <French>Prélèvement de sang (250 ml) </French>
@@ -1491,6 +1597,7 @@
             <German>Entnehme Blut</German>
             <Spanish>Dibujando sangre</Spanish>
             <Chinese>抽血 </Chinese>
+            <Chinesesimp>抽血中...hinesesimp>
             <Czech>Odebírání krve</Czech>
             <Korean>혈액 채혈 중</Korean>
             <French>Prélèvement de sang </French>
@@ -1507,6 +1614,7 @@
             <Turkish>Kan almak için Kan Grupları kullanılsın mı?</Turkish>
             <French>Utiliser les groupes sanguin pour le prélèvement de sang?</French>
             <Chinese>使用血型来抽血？</Chinese>
+            <Chinesesimp>抽血使用血型？</Chinesesimp>
             <Italian>Usare il gruppo sanguigno per il prelievo del sangue?</Italian>
             <Spanish>¿Utilizar los grupos sanguíneos para la extracción de sangre?</Spanish>
             <Czech>Použít krevní skupiny pro odebírání krve?</Czech>
@@ -1519,6 +1627,7 @@
             <German>Selbstblutentnahme aktivieren</German>
             <Spanish>Habilitar la extracción de sangre propia</Spanish>
             <Chinese>启用自抽血</Chinese>
+            <Chinesesimp>允许自抽血</Chinesesimp>
             <Czech>Umožnění vlastního odběru krve</Czech>
             <Korean>자가 채혈 활성화</Korean>
             <French>Activer l'auto-prélèvement de sang </French>
@@ -1533,6 +1642,7 @@
             <German>Blutentnahmezeit für 500ml Kit</German>
             <Spanish>Tiempo de dibujo para el kit de 500ml  </Spanish>
             <Chinese>500 毫升套件的绘制时间  </Chinese>
+            <Chinesesimp>500 mL的抽取时间  </Chinesesimp>
             <Czech>Odebírací čas pro 500ml Kit</Czech>
             <Korean>500ml 키트의 채혈 시간</Korean>
             <French>Temps de prélèvement pour le kit 500ml </French>
@@ -1547,6 +1657,7 @@
             <German>Blutentnahmezeit für 250ml Kit</German>
             <Spanish>Tiempo de dibujo para el kit de 250ml </Spanish>
             <Chinese>250 毫升套件的绘制时间 </Chinese>
+            <Chinesesimp>250 mL的抽取时间  </Chinesesimp>
             <Czech>Odebírací čas pro 250ml Kit</Czech>
             <Korean>250ml 키트의 채혈 시간</Korean>
             <French>Temps de prélèvement pour le kit 250ml </French>
@@ -1563,6 +1674,7 @@
             <Turkish>Donör için minimum kan hacmi (litre)</Turkish>
             <French>Volume minimum de sang du donneur (litres)</French>
             <Chinese>献血者的最小血量（升）</Chinese>
+            <Chinesesimp>献血者的最小血容量（L）</Chinesesimp>
             <Italian>Volume minimo di sangue per il donatore (litri)</Italian>
             <Spanish>Volúmen mínimo de sangre para el donante (litro)</Spanish>
             <Czech>Minimální objem krve pro dárce (litry)</Czech>
@@ -1577,6 +1689,7 @@
             <Turkish>0'a ayarlanmış bu ayarı yok saymak için bir donörün drene etmesine izin verilen minimum kan hacmi</Turkish>
             <French>Volume minimum de sang à prélever au donneur, pour ignorer laisser sur 0</French>
             <Chinese>혈액 채취에 혈액 그룹을 사용합니까?</Chinese>
+            <Chinesesimp>允许供体引流的最小血液量，设置为 0 忽略</Chinesesimp>
             <Italian>Volume minimo di sangue consentito per prelevare un donatore, per ignorare questa impostazione impostare su 0</Italian>
             <Spanish>Volumen mínimo de sangre que se permite extraer a un donante, para ignorar este parámetro se establece en 0</Spanish>
             <Czech>Minimální objem krve, který lze z dárce odebrat, pro ignorování nastavení nastavte 0</Czech>
@@ -1589,6 +1702,7 @@
             <German>AED Signal- und Ladeton</German>
             <Spanish>Sonido de carga y pitido del DEA </Spanish>
             <Chinese>AED 蜂鸣声和充电声 </Chinese>
+            <Chinesesimp>AED 蜂鸣声和充电声 </Chinesesimp>
             <Czech>Zvuk AED pípání a nabíjení</Czech>
             <Korean>AED 경고음 및 충전음</Korean>
             <French>Bip AED et son de charge </French>
@@ -1603,6 +1717,7 @@
             <German>Aktiviert Signal- und Ladeton für AED/AED-X</German>
             <Spanish>Habilita el sonido de Beep y Charge para AED / AED-X </Spanish>
             <Chinese>为 AED/AED-X 启用蜂鸣和充电声音 </Chinese>
+            <Chinesesimp>为 AED/AED-X 启用蜂鸣和充电声 </Chinesesimp>
             <Czech>Zvuk AED pípání a nabíjení</Czech>
             <Korean>AED/X-시리즈 AED에 대한 경고음 및 충전음 활성화</Korean>
             <French>Active le bip et le son de charge pour AED/AED-X </French>
@@ -1617,6 +1732,7 @@
             <German>Rhythmus kontrollieren</German>
             <Spanish>Comprobando el ritmo cardíaco</Spanish>
             <Chinese>检查节奏</Chinese>
+            <Chinesesimp>检查心率曲线</Chinesesimp>
             <Czech>Kontroluji rytmus</Czech>
             <Korean>리듬 확인하기</Korean>
             <French>Vérification du rythme</French>
