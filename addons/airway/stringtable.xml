@@ -7,6 +7,7 @@
             <Polish>https://github.com/Tomcat-SG/KAM</Polish>
             <Spanish>https://github.com/Tomcat-SG/KAM</Spanish>
             <Chinese>https://github.com/Tomcat-SG/KAM</Chinese>
+            <Chinesesimp>https://github.com/Tomcat-SG/KAM</Chinesesimp>
             <Czech>https://github.com/Tomcat-SG/KAM</Czech>
             <Korean>https://github.com/Tomcat-SG/KAM</Korean>
             <French>https://github.com/Tomcat-SG/KAM</French>
@@ -21,6 +22,7 @@
             <Polish>ACE- Czy urazy dróg oddechowych mają być aktywowane?</Polish>
             <Spanish>¿Activar ACE-Lesiones Respiratorias?</Spanish>
             <Chinese>啟用ACE-呼吸道受傷機制?</Chinese>
+            <Chinesesimp>启用ACE-气道功能</Chinesesimp>
             <Czech>ACE - zranění dýchacích cest aktivováno?</Czech>
             <Korean>기도 부상 활성화</Korean>
             <French>ACE-Blessures des voies aériennes activées?</French>
@@ -35,6 +37,7 @@
             <Polish>Szansa na zapadnięcie się dróg oddechowych</Polish>
             <Spanish>Probabilidad de colapso en vías aéreas</Spanish>
             <Chinese>呼吸道塌陷機率</Chinese>
+            <Chinesesimp>气道塌陷几率</Chinesesimp>
             <Czech>Pravděpodobnost zhroucení dýchacích cest</Czech>
             <Korean>기도 허탈 확률</Korean>
             <French>Probabilité d'affaissement des voies aériennes</French>
@@ -49,6 +52,7 @@
             <Polish>Szansa na zator dróg oddechowych</Polish>
             <Spanish>Probabilidad de obstrucción en vías aéreas</Spanish>
             <Chinese>呼吸道阻塞機率</Chinese>
+            <Chinesesimp>气道闭塞几率</Chinesesimp>
             <Czech>Pravděpodobnost zablokování dýchacích cest</Czech>
             <Korean>기도가 혀에 의해 막힐 확률</Korean>
             <French>Probabilité d'obstruction des voies aériennes</French>
@@ -63,6 +67,7 @@
             <Polish>Szansa na zablokowanie się dróg oddechowych</Polish>
             <Spanish>Probabilidad de oclusión en vías aéreas</Spanish>
             <Chinese>呼吸道閉塞機率</Chinese>
+            <Chinesesimp>气道异物几率</Chinesesimp>
             <Czech>Pravděpodobnost uzavření dýchacích cest</Czech>
             <Korean>기도가 구토에 의해 막힐 확률</Korean>
             <French>Probabilité d'occlusion des voies aériennes</French>
@@ -77,6 +82,7 @@
             <Polish>Czy dźwięk wymiotowania ma być włączony?</Polish>
             <Spanish>¿Activar el sonido de vómito?</Spanish>
             <Chinese>啟用人物嘔吐聲音？</Chinese>
+            <Chinesesimp>启用单位呕吐声音?</Chinesesimp>
             <Czech>Aktivovat zvuk zvracení?</Czech>
             <Korean>토하는 사운드 활성화</Korean>
             <French>Activation du son des vomissements?</French>
@@ -91,6 +97,7 @@
             <Polish>Społeczność zwana keko miała dodatek dla graczy AFK. Byli nieprzytomni, żeby inni mogli ich odciągnąć. Spowodowało to problemy z drogami oddechowymi. Ten ciąg zapobiega temu, gdy stracą przytomność przez ten dodatek AFK.</Polish>
             <Spanish>La comunidad llamada Keko tenía un addon para los jugadores del AFK. Se les ponía inconscientes para que otros pudieran arrastrarlos. Eso disparó las posibilidades de problemas en las vías respiratorias. Esta cadena evita que eso suceda cuando quedan inconscientes por ese addon de AFK.</Spanish>
             <Chinese>名为keko的社区有AFK玩家的附加功能。他们被置于无意识状态，所以其他人可以将他们拖走。这引发了气道问题的机会。这个字符串可以防止他们被AFK插件弄昏的情况发生。</Chinese>
+            <Chinesesimp>一个名为keko的社区有为AFK玩家提供的附加功能。处于AFK状态下的玩家被调整为无意识状态，所以其他人可以将他们拖走。这引发了与气道相关的问题。这个设定可以防止他们被AFK插件杀死的情况发生。</Chinesesimp>
             <Czech>Komunia zvaná keko měla addon pro AFK hráče. Ti byli dáni do bezvědomí, takže je ostatní mohli odtáhnout pryč. To ale vyvolalo problémy, které mohli ohrozit jejich dýchací cesty. Tento string zabrání dýchacím potížím, pokud je hráč tímto AFK addonemm dán do bezvědomí.</Czech>
             <Korean>keko라는 커뮤니티에는 잠수 플레이어를 위한 애드온이 있었습니다. 그 애드온은 다른 사람들이 그들을 끌고 갈 수 있도록 그들을 의식불명으로 만듭니다. 그러나 그것은 기도 이상의 확률을 발생시켰습니다. 이 문자열은 그 애드온에 의해 의식불명이 발생하는 것을 방지합니다.</Korean>
             <French>Le membre de la communauté appelé Keko avait un addon pour les joueurs AFK. Ils étaient passés inconscients et pouvaient être trainés. Ce qui déclenchait les chances de problèmes respiratoires. Cette option empêche cela de se produire quand ils deviennent inconscients par cet addon AFK.</French>
@@ -105,6 +112,7 @@
             <Polish>Sprawdź drogi oddechowe</Polish>
             <Spanish>Comprobar vías aéreas</Spanish>
             <Chinese>檢查呼吸道</Chinese>
+            <Chinesesimp>检查气道</Chinesesimp>
             <Czech>Zkontrolovat dýchací cesty</Czech>
             <Korean>기도 확인</Korean>
             <French>Vérifier les voies aériennes</French>
@@ -119,6 +127,7 @@
             <Polish>%1 sprawdził drogi oddechowe: %2 %3, %4 %5</Polish>
             <Spanish>%1 comprobó las vías aéreas: %2 %3, %4 %5</Spanish>
             <Chinese>%1 檢查呼吸道: %2 %3, %4 %5</Chinese>
+            <Chinesesimp>%1 气道情况已查明: %2%3, %4%5</Chinesesimp>
             <Czech>Zkontrolovány dýchací cesty: %2 %3, %4 %5 </Czech>
             <Korean>%1 이(가)기도 확인함: %2 %3, %4 %5</Korean>
             <French>%1 a vérifié les voies aériennes : %2 %3, %4 %5</French>
@@ -133,6 +142,7 @@
             <Polish>%1 intubował %2</Polish>
             <Spanish>%1 intubado con %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
+            <Chinesesimp>%1 被插入 %2</Chinesesimp>
             <Czech>%1 vložil %2</Czech>
             <Korean>%1 은(는) %2 을(를) 삽입했습니다</Korean>
             <French>%1 a intubé avec un(e) %2</French>
@@ -147,6 +157,7 @@
             <Polish>Zablokowane</Polish>
             <Spanish>Ocluída</Spanish>
             <Chinese>閉塞</Chinese>
+            <Chinesesimp>异物阻塞</Chinesesimp>
             <Czech>Uzavřeno</Czech>
             <Korean>구토</Korean>
             <French>Occludées</French>
@@ -161,6 +172,7 @@
             <Polish>Zapadnięte</Polish>
             <Spanish>Colapsada</Spanish>
             <Chinese>塌陷</Chinese>
+            <Chinesesimp>塌陷</Chinesesimp>
             <Czech>Zhrouceno</Czech>
             <Korean>허탈</Korean>
             <French>Affaissées </French>
@@ -175,6 +187,7 @@
             <Polish>Zator</Polish>
             <Spanish>Obstruída</Spanish>
             <Chinese>阻塞</Chinese>
+            <Chinesesimp>闭塞</Chinesesimp>
             <Czech>Zablokováno</Czech>
             <Korean>혀로 인한 기도 폐쇄</Korean>
             <French>Obstruées</French>
@@ -189,6 +202,7 @@
             <Polish>Nie</Polish>
             <Spanish>No</Spanish>
             <Chinese>無</Chinese>
+            <Chinesesimp>无</Chinesesimp>
             <Czech>Není</Czech>
             <Korean>없음</Korean>
             <French>Non</French>
@@ -203,6 +217,7 @@
             <Polish>Drogi oddechowe są czyste</Polish>
             <Spanish>Las vías aéreas están despejadas</Spanish>
             <Chinese>航線暢通</Chinese>
+            <Chinesesimp>气道通畅</Chinesesimp>
             <Czech>Dýchací cesty jsou volné</Czech>
             <Korean>기도 막히지 않음</Korean>
             <French>Les voies aériennes sont dégagées</French>
@@ -217,6 +232,7 @@
             <Polish>Brak konieczności odsysania</Polish>
             <Spanish>No se necesita succión médica</Spanish>
             <Chinese>不需要醫療抽吸</Chinese>
+            <Chinesesimp>不需要医疗抽吸</Chinesesimp>
             <Czech>Není třeba nic odsát</Czech>
             <Korean>기도의 구토 제거 불필요</Korean>
             <French>Pas d'aspiration médicale requise</French>
@@ -231,6 +247,7 @@
             <Polish>Potrzebne udrażnianie dróg oddechowych</Polish>
             <Spanish>Requiere manejo de vías aéreas</Spanish>
             <Chinese>需要呼吸道控制</Chinese>
+            <Chinesesimp>需要气道管理</Chinesesimp>
             <Czech>Je třeba se postarat o dýchací cesty</Czech>
             <Korean>기도 확보 필요</Korean>
             <French>Gestion des voies aériennes requise</French>
@@ -245,6 +262,7 @@
             <Polish>Potrzebne odsysanie</Polish>
             <Spanish>Requiere succión médica</Spanish>
             <Chinese>需要醫療抽吸</Chinese>
+            <Chinesesimp>需要医疗抽吸</Chinesesimp>
             <Czech>Je třeba odsávání</Czech>
             <Korean>기도의 구토 제거 필요</Korean>
             <French>Aspiration médicale requise</French>
@@ -259,6 +277,7 @@
             <Polish>Drogi oddechowe są udrażniane</Polish>
             <Spanish>El manejo de vías aéreas ya se ha llevado a cabo</Spanish>
             <Chinese>已經做好呼吸道控制</Chinese>
+            <Chinesesimp>气道管理已完成</Chinesesimp>
             <Czech>Péče o dýchací cesty již byla provedena</Czech>
             <Korean>이미 기도관리 완료됨</Korean>
             <French>La gestion des voies aériennes a déjà été effectuée</French>
@@ -273,6 +292,7 @@
             <Polish>%1 umieścił: %2</Polish>
             <Spanish>%1 puso un: %2</Spanish>
             <Chinese>%1 放置一個: %2</Chinese>
+            <Chinesesimp>%1 被放置: %2</Chinesesimp>
             <Czech>%1 vlož: %2</Czech>
             <Korean>%1 은(는) %2 을(를) 사용했습니다</Korean>
             <French>%1 a placé un(e) : %2</French>
@@ -287,6 +307,7 @@
             <Polish>Drogi oddechowe są czyste</Polish>
             <Spanish>Las vías aéreas están despejadas</Spanish>
             <Chinese>航線暢通</Chinese>
+            <Chinesesimp>气道通畅</Chinesesimp>
             <Czech>Dýchací cesty jsou volné</Czech>
             <Korean>기도가 깨끗해짐</Korean>
             <French>Les voies aériennes sont dégagées</French>
@@ -301,6 +322,7 @@
             <Polish>Zablokowanie usunięte</Polish>
             <Spanish>Oclusión eliminada</Spanish>
             <Chinese>遮擋移除</Chinese>
+            <Chinesesimp>气道异物移除</Chinesesimp>
             <Czech>Uzavření odstraněno</Czech>
             <Korean>구토 제거 성공</Korean>
             <French>Occlusion supprimée</French>
@@ -315,6 +337,7 @@
             <Polish>Przedmiot nie może zostać użyty, drogi oddechowe nie są czyste</Polish>
             <Spanish>El artículo no se pudo usar, las vías respiratorias no están despejadas</Spanish>
             <Chinese>物品无法使用，气道不明</Chinese>
+            <Chinesesimp>物品无法使用,气道仍不通畅</Chinesesimp>
             <Czech>Předmět nemohl být použit, dýchací cesty nejsou volné</Czech>
             <Korean>기도확보 실패, 기도가 여전히 막혀 있음</Korean>
             <French>L'article n'a pas pu être utilisé, les voies respiratoires ne sont pas dégagées</French>
@@ -329,6 +352,7 @@
             <Polish>Odchyl głowę</Polish>
             <Spanish>Hiperextensión de cabeza</Spanish>
             <Chinese>頭部過度伸張</Chinese>
+            <Chinesesimp>物品无法使用,气道仍不通畅</Chinesesimp>
             <Czech>Narovnat hlavu</Czech>
             <Korean>머리 뒤로 젖히기</Korean>
             <French>Hyperextension de la tête</French>
@@ -343,6 +367,7 @@
             <Polish>Głowa odchylona</Polish>
             <Spanish>Cabeza hiperextendida</Spanish>
             <Chinese>伸張頭部</Chinese>
+            <Chinesesimp>拉伸颈部</Chinesesimp>
             <Czech>Narovnaná hlava</Czech>
             <Korean>머리가 뒤로 젖혀짐</Korean>
             <French>Tête en hyperextension</French>
@@ -357,6 +382,7 @@
             <Polish>Odchylanie głowy</Polish>
             <Spanish>Hiperextendiendo cabeza</Spanish>
             <Chinese>伸張中</Chinese>
+            <Chinesesimp>拉伸中...</Chinesesimp>
             <Czech>Narovnávám</Czech>
             <Korean>머리를 뒤로 젖히는 중</Korean>
             <French>Extension</French>
@@ -371,6 +397,7 @@
             <Polish>Przestałeś odchylać głowę</Polish>
             <Spanish>Hiperextensión cancelada</Spanish>
             <Chinese>已經取消伸張頭部</Chinese>
+            <Chinesesimp>已取消拉伸</Chinesesimp>
             <Czech>Narovnávání hlavy přerušeno</Czech>
             <Korean>머리를 뒤로 젖히기 취소</Korean>
             <French>Hyperextension de la tête annulée</French>
@@ -385,6 +412,7 @@
             <Polish>Nie uciekaj, ratujesz życie!</Polish>
             <Spanish>¡No huyas, estás salvando una vida!</Spanish>
             <Chinese>不要跑，你正在拯救性命！</Chinese>
+            <Chinesesimp>不要离开,你正在确保气道通畅</Chinesesimp>
             <Czech>Nevzdaluj se od pacienta, zachraňuješ mu život!</Czech>
             <Korean>도망치지 마십시오! 당신은 생명을 구하는 중입니다!</Korean>
             <French>Ne partez pas, vous êtes en train de sauver une vie!</French>
@@ -399,6 +427,7 @@
             <Polish>Obrót głowy wykonany, drogi oddechowe wciąż nie są czyste</Polish>
             <Spanish>Giro de cabeza realizado, las vías respiratorias aún no están despejadas</Spanish>
             <Chinese>转头，气道仍不清楚</Chinese>
+            <Chinesesimp>尝试清理气道异物失败,异物仍存在</Chinesesimp>
             <Czech>Hlavou se otočilo, dýchací cesty stále nejsou volné</Czech>
             <Korean>고개를 돌려보았으나, 기도는 여전히 막혀 있다.</Korean>
             <French>Tour de tête effectué, les voies respiratoires ne sont toujours pas dégagées</French>
@@ -413,6 +442,7 @@
             <Polish>Obróć głowę</Polish>
             <Spanish>Girar cabeza</Spanish>
             <Chinese>扶正頭部</Chinese>
+            <Chinesesimp>尝试清理气道异物</Chinesesimp>
             <Czech>Otáčet hlavou</Czech>
             <Korean>고개 돌리는 중</Korean>
             <French>Rotation de la tête</French>
@@ -427,6 +457,7 @@
             <Polish>Obracanie głowy</Polish>
             <Spanish>Girando la cabeza</Spanish>
             <Chinese>轉動頭部中</Chinese>
+            <Chinesesimp>尝试清理气道异物中</Chinesesimp>
             <Czech>Otáčení hlavou</Czech>
             <Korean>고개 돌리기</Korean>
             <French>Rotation de la tête</French>
@@ -441,6 +472,7 @@
             <Polish>Odsysanie nie jest potrzebne</Polish>
             <Spanish>No se necesita succión médica</Spanish>
             <Chinese>不需要醫療抽吸</Chinese>
+            <Chinesesimp>不需要医疗抽吸</Chinesesimp>
             <Czech>Sání není třeba</Czech>
             <Korean>의료용 석션 불필요</Korean>
             <French>Aspiration médicale non requise</French>
@@ -455,6 +487,7 @@
             <Polish>Sprawdzanie dróg oddechowych</Polish>
             <Spanish>Comprobando vías aéreas</Spanish>
             <Chinese>檢查呼吸道</Chinese>
+            <Chinesesimp>检查气道</Chinesesimp>
             <Czech>Kontrola dýchacích cest</Czech>
             <Korean>기도 확인 중</Korean>
             <French>Vérification des voies aériennes</French>
@@ -469,6 +502,7 @@
             <Polish>Zakładanie</Polish>
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
+            <Chinesesimp>放置中</Chinesesimp>
             <Czech>Pokládám</Czech>
             <Korean>넣는 중</Korean>
             <French>Mise en place d'un(e)</French>
@@ -483,6 +517,7 @@
             <Polish>Rurka krtaniowa</Polish>
             <Spanish>Tubo laríngeo</Spanish>
             <Chinese>喉管</Chinese>
+            <Chinesesimp>喉管(King LT-D)</Chinesesimp>
             <Czech>King LT</Czech>
             <Korean>기관삽입기</Korean>
             <French>Tube laryngé</French>
@@ -497,6 +532,7 @@
             <Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
             <Spanish>El tubo laríngeo se usa para salvar las vías aéreas</Spanish>
             <Chinese>喉管是用於拯救呼吸道</Chinese>
+            <Chinesesimp>King LT-D是一种无菌的一次性声门上气道装置,是气管插管或面罩通气的替代方法.</Chinesesimp>
             <Czech>King LT je používán na záchranu dýchacích cest</Czech>
             <Korean>기관삽입기는 기도를 확보하기 위해 사용됩니다.</Korean>
             <French>Le tube laryngé est utilisé pour protéger les voies aériennes</French>
@@ -511,6 +547,7 @@
             <Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
             <Spanish>El tubo laríngeo se usa para salvar las vías aéreas</Spanish>
             <Chinese>喉管是用於拯救呼吸道</Chinese>
+            <Chinesesimp>King LT-D是一种无菌的一次性声门上气道装置,是气管插管或面罩通气的替代方法,经过特殊设计,可最大限度地减少气道创伤.</Chinesesimp>
             <Czech>King LT je používán na záchranu dýchacích cest</Czech>
             <Korean>기관삽입기는 기도를 확보하기 위해 사용됩니다.</Korean>
             <French>Le tube laryngé est utilisé pour protéger les voies aériennes</French>
@@ -525,6 +562,7 @@
             <Polish>Rurka ustno-gardłowa</Polish>
             <Spanish>Cánula de Guedel</Spanish>
             <Chinese>抽吸管</Chinese>
+            <Chinesesimp>口咽通气管(Guedel)</Chinesesimp>
             <Czech>Geudel Tuba</Czech>
             <Korean>게델튜브</Korean>
             <French>Canule de Guedel</French>
@@ -539,6 +577,7 @@
             <Polish>Rurka ustno-gardłowa zabezpiecza drogi oddechowe</Polish>
             <Spanish>La cánula de Guedel se usa para salvar las vías aéreas</Spanish>
             <Chinese>抽吸管用於拯救呼吸道</Chinese>
+            <Chinesesimp>Guedel是一种气道辅助通气装置,同时集成了舌垫可防止气道阻塞.</Chinesesimp>
             <Czech>Geudel tuba je používán na záchranu dýchacích cest</Czech>
             <Korean>게델튜브는 응급처치현장에서 신속하며 간편하게 기도확보하기 위해 사용됩니다</Korean>
             <French>La canule de Guedel est utilisée pour protéger les voies aériennes</French>
@@ -553,6 +592,7 @@
             <Polish>Rurka ustno-gardłowa służy do podtrzymywania języka przed blokowaniem dróg oddechowych</Polish>
             <Spanish>La cánula de Guedel se usa para salvar las vías aéreas</Spanish>
             <Chinese>抽吸管用於拯救呼吸道</Chinese>
+            <Chinesesimp>Guedel是一种气道辅助通气装置,同时集成了舌垫可防止气道阻塞.</Chinesesimp>
             <Czech>King LT je používán na záchranu dýchacích cest</Czech>
             <Korean>게델튜브는 응급처치현장에서 신속하며 간편하게 기도를 확보하기 위해 사용됩니다</Korean>
             <French>La canule de Guedel est utilisée pour protéger les voies aériennes</French>
@@ -567,6 +607,7 @@
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>
+            <Chinesesimp>ACCUVAC是紧急情况下使用的电池驱动的便携式医疗抽吸装置</Chinesesimp>
             <Czech>ACCUVAC je lékařské odsávací zařízení pro odsávání dýchacích cest s pohonem na baterky pro mobilní použití v pohotovostní medicíně.</Czech>
             <Korean>전기흡인기는 응급상황에서 목에 걸린 이물질을 흡인하기 위한 휴대용 의료석션입니다.</Korean>
             <French>L’ACCUVAC est un dispositif médical mobile d’aspiration pour libérer les voies aériennes supérieures des patients en cas d'encombrement ou d'obstruction</French>
@@ -581,6 +622,7 @@
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>
+            <Chinesesimp>ACCUVAC是紧急情况下使用的电池驱动的便携式医疗抽吸装置</Chinesesimp>
             <Czech>ACCUVAC je lékařské odsávací zařízení pro odsávání dýchacích cest s pohonem na baterky pro mobilní použití v pohotovostní medicíně.</Czech>
             <Korean>전기흡인기는 응급상황에서 목에 걸린 이물질을 흡인하기 위한 휴대용 의료석션입니다</Korean>
             <French>L’ACCUVAC est un dispositif médical mobile d’aspiration pour libérer les voies aériennes supérieures des patients en cas d'encombrement ou d'obstruction</French>
@@ -595,6 +637,7 @@
             <Polish>Intubowanie</Polish>
             <Spanish>Intubando</Spanish>
             <Chinese>插管</Chinese>
+            <Chinesesimp>插管</Chinesesimp>
             <Czech>Intubace</Czech>
             <Korean>삽관</Korean>
             <French>Intubation</French>
@@ -609,6 +652,7 @@
             <Polish>Odsysanie medyczne</Polish>
             <Spanish>Succión médica</Spanish>
             <Chinese>醫療抽吸</Chinese>
+            <Chinesesimp>医疗抽吸(ACCUVAC)</Chinesesimp>
             <Czech>Lékařské odsávání</Czech>
             <Korean>흡인</Korean>
             <French>Aspiration médicale</French>
@@ -623,6 +667,7 @@
             <Polish>Leczenie</Polish>
             <Spanish>Tratamiento</Spanish>
             <Chinese>治療</Chinese>
+            <Chinesesimp>治疗</Chinesesimp>
             <Czech>Léčba</Czech>
             <Korean>치료</Korean>
             <French>Soins</French>
@@ -651,6 +696,7 @@
             <Polish>Wymiociny(małe)</Polish>
             <Spanish>Vómito (Pequeño)</Spanish>
             <Chinese>嘔吐物 (少量）</Chinese>
+            <Chinesesimp>呕吐物 (少量)</Chinesesimp>
             <Czech>Zvratky (Malé)</Czech>
             <Korean>구토(소량)</Korean>
             <French>Vomissements (Faible)</French>
@@ -665,6 +711,7 @@
             <Polish>Prawdopodobieństwo sukcesu w obróceniu głowy</Polish>
             <Spanish>Probabilidad de éxito para llamar la atención</Spanish>
             <Chinese>轉頭成功的可能性</Chinese>
+            <Chinesesimp>清理气道异物的成功几率</Chinesesimp>
             <Czech>Pravděpodobnost úspěchu při otáčení hlavy</Czech>
             <Korean>고개 돌리기 성공 확률</Korean>
             <French>Probabilité de réussite de la rotation de la tête</French>
@@ -679,6 +726,7 @@
             <Polish>Im wyższa, tym większe prawdopodobieństwo sukcesu</Polish>
             <Spanish>Cuanto mayor sea, mayor será la probabilidad de éxito</Spanish>
             <Chinese>越高，成功的可能性越大</Chinese>
+            <Chinesesimp>越高，成功的可能性越大</Chinesesimp>
             <Czech>Čím vyšší, tím lepší šance</Czech>
             <Korean>값이 높을수록 성공 확률이 높음</Korean>
             <French>Plus élevé, les chances de réussite seront meilleures</French>
@@ -693,6 +741,7 @@
             <Polish>Pozwól na użycie rurki krtaniowej</Polish>
             <Spanish>Permitir Larynxtubus</Spanish>
             <Chinese>允許喉頭</Chinese>
+            <Chinesesimp>允许使用喉管(King LT-D)</Chinesesimp>
             <Czech>Povolit Larynx tubu</Czech>
             <Korean>기관삽입기 허용</Korean>
             <French>Autoriser le tube laryngé</French>
@@ -707,6 +756,7 @@
             <Polish>Poziom wyszkolenia wymagany do korzystania z rurki krtaniowej</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar un Larynxtubus - KingLT</Spanish>
             <Chinese>使用喉管所需的培訓水平-KingLT</Chinese>
+            <Chinesesimp>使用喉管所需的医疗培训水平</Chinesesimp>
             <Czech>Úroveň výcviku potřebná k použití Larynx tuby - King LT</Czech>
             <Korean>기관삽입기를 사용하기 위해 필요한 의료레벨 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser un tube laryngé</French>
@@ -721,6 +771,7 @@
             <Polish>Pozwól na użycie rurki ustno-gardłowej</Polish>
             <Spanish>Permitir Guedeltubus</Spanish>
             <Chinese>允許瓜德爾圖布斯</Chinese>
+            <Chinesesimp>允许使用口咽通气道(Guedel)</Chinesesimp>
             <Czech>Povolit Guedel tubu</Czech>
             <Korean>게델튜브 허용</Korean>
             <French>Autoriser la canule de Guedel</French>
@@ -735,6 +786,7 @@
             <Polish>Poziom wyszkolenia wymagany do korzystania z rurki ustno-gardłowej</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar un Guedeltubus</Spanish>
             <Chinese>使用Guedeltubus所需的培訓水平</Chinese>
+            <Chinesesimp>使用口咽通气道所需的医疗培训水平</Chinesesimp>
             <Czech>Úroveň výcviku potřebná k použití Guedel tuby</Czech>
             <Korean>게델튜브를 사용하기 위한 의료레벨 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser une canule de Guedel</French>
@@ -749,6 +801,7 @@
             <Polish>Pozwól na użycie Accuvac</Polish>
             <Spanish>Permitir Accuvac</Spanish>
             <Chinese>允許Accuvac</Chinese>
+            <Chinesesimp>允许使用紧急医疗抽吸器(Accuvac)</Chinesesimp>
             <Czech>Povolit Accuvac</Czech>
             <Korean>전기흡인기 허용</Korean>
             <French>Autoriser l'ACCUVAC</French>
@@ -763,6 +816,7 @@
             <Polish>Poziom wyszkolenia wymagany do korzystania z Accuvac</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar un Accuvac</Spanish>
             <Chinese>使用Accuvac所需的培訓水平</Chinese>
+            <Chinesesimp>使用紧急医疗抽吸器所需的医疗培训水平</Chinesesimp>
             <Czech>Úroveň výcviku potřebná k použití Accuvacu</Czech>
             <Korean>전기흡인기를 사용하기 위한 의료레벨 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser un ACCUVAC</French>
@@ -777,6 +831,7 @@
             <Polish>Czas sprawdzenia dróg oddechowych</Polish>
             <Spanish>Hora de revisar las vías aéreas</Spanish>
             <Chinese>是時候檢查航空公司了</Chinese>
+            <Chinesesimp>检查气道的时间</Chinesesimp>
             <Czech>Čas pro zkontrolování dýchacích cest</Czech>
             <Korean>기도 확인에 걸리는 시간</Korean>
             <French>Durée pour vérifier les voies aériennes</French>
@@ -791,6 +846,7 @@
             <Polish>Ile czasu zajmie sprawdzenie dróg oddechowych</Polish>
             <Spanish>Cuánto tiempo llevará revisar Airways</Spanish>
             <Chinese>檢查航空公司需要多長時間</Chinese>
+            <Chinesesimp>检查气道的所需时间</Chinesesimp>
             <Czech>Jak dlouho zabere zkontrolování dýchacích cest</Czech>
             <Korean>기도 확인 행동에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra-t-il pour vérifier les voies aériennes</French>
@@ -805,6 +861,7 @@
             <Polish>Czas na obrócenie głowy</Polish>
             <Spanish>Hora de girar la cabeza</Spanish>
             <Chinese>轉向時間</Chinese>
+            <Chinesesimp>清理气道异物的所需时间</Chinesesimp>
             <Czech>Čas otočení hlavy</Czech>
             <Korean>고개 돌리기에 걸리는 시간</Korean>
             <French>Durée pour tourner la tête</French>
@@ -819,6 +876,7 @@
             <Polish>Czas na odchylenie głowy</Polish>
             <Spanish>Hora de estirar demasiado la cabeza</Spanish>
             <Chinese>过度伸展头部的时间</Chinese>
+            <Chinesesimp>拉伸颈部的时间</Chinesesimp>
             <Czech>Čas na přetažení hlavy</Czech>
             <Korean>머리 뒤로 젖히기에 걸리는 시간</Korean>
             <French>Durée pour basculer la tête en arrière - Hyperextension</French>
@@ -833,6 +891,7 @@
             <Polish>Ile czasu zajmie odchylenie głowy</Polish>
             <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
             <Chinese>转头需要多长时间</Chinese>
+            <Chinesesimp>拉伸颈部的所需时间</Chinesesimp>
             <Czech>Jak dlouho bude trvat, než se otočí hlava</Czech>
             <Korean>머리 뒤로 젖히기에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour basculer la tête en arrière</French>
@@ -847,6 +906,7 @@
             <Polish>Ile czasu zajmie obrócenie głowy</Polish>
             <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
             <Chinese>轉頭需要多長時間</Chinese>
+            <Chinesesimp>清理气道异物的所需时间</Chinesesimp>
             <Czech>Jak dlouho zabere otočení hlavy</Czech>
             <Korean>고개 돌리기에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour tourner la tête</French>
@@ -861,6 +921,7 @@
             <Polish>Czas na użycie Accuvac</Polish>
             <Spanish>Hora de Accuvac</Spanish>
             <Chinese>Accuvac時間</Chinese>
+            <Chinesesimp>Accuvac時間</Chinesesimp>
             <Czech>Čas pro Accuvac </Czech>
             <Korean>흡인에 걸리는 시간</Korean>
             <French>Durée d'aspiration avec l'ACCUVAC</French>
@@ -875,6 +936,7 @@
             <Polish>Ile czasu zajmie użycie Accuvac'a</Polish>
             <Spanish>Cuánto tiempo llevará usar Accuvac</Spanish>
             <Chinese>使用Accuvac需要多長時間</Chinese>
+            <Chinesesimp>使用紧急医疗抽吸器的所需時間</Chinesesimp>
             <Czech>Jak dlouho zabere použití Accuvacu</Czech>
             <Korean>흡인에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour aspirer avec l'ACCUVAC</French>
@@ -889,6 +951,7 @@
             <Polish>Czas na użycie rurki krtaniowej</Polish>
             <Spanish>Hora de laringubo</Spanish>
             <Chinese>喉頭時間</Chinese>
+            <Chinesesimp>喉管時間</Chinesesimp>
             <Czech>Čas pro Larynx tubu</Czech>
             <Korean>기관삽입기 사용에 걸리는 시간</Korean>
             <French>Durée d'intubation avec le tube laryngé</French>
@@ -903,6 +966,7 @@
             <Polish>Ile czasu zajmie użycie rurki krtaniowej</Polish>
             <Spanish>Cuánto tiempo llevará usar Larynxtubus</Spanish>
             <Chinese>使用喉頭需要多長時間</Chinese>
+            <Chinesesimp>使用喉管的所需時間</Chinesesimp>
             <Czech>Jak dlouho zabere použití Larynx tuby</Czech>
             <Korean>기관삽입기 사용에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour placer un tube laryngé</French>
@@ -917,6 +981,7 @@
             <Polish>Czas na użycie rurki ustno-gardłowej</Polish>
             <Spanish>Hora de Geudeltubus</Spanish>
             <Chinese>Geudeltubus的時間</Chinese>
+            <Chinesesimp>口咽通气道時間</Chinesesimp>
             <Czech>Čas pro Guedel tubu</Czech>
             <Korean>게델튜브 사용에 걸리는 시간</Korean>
             <French>Durée d'installation de la canule de Guedel</French>
@@ -931,6 +996,7 @@
             <Polish>Jak długo potrwa użycie rurki ustno-gardłowej</Polish>
             <Spanish>Cuánto tiempo tomará usar Guedeltubus</Spanish>
             <Chinese>使用Guedeltubus需要多長時間</Chinese>
+            <Chinesesimp>使用口咽通气道的所需时间</Chinesesimp>
             <Czech>Jak dlouho zabere použití Guedel tuby</Czech>
             <Korean>게델튜브 사용에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour placer une canule de Guedel</French>
@@ -945,6 +1011,7 @@
             <Polish>Kolorowe logi aktywności (AED-X/Pulsoksymetr)</Polish>
             <Spanish>Registros de actividad de color (AED-X/Pulseoxímetro)</Spanish>
             <Chinese>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinese>
+            <Chinesesimp>允许彩色活动记录(AED-X/脉搏血氧仪)</Chinesesimp>
             <Czech>Barevné protokoly aktivit (AED-X / Pulseoximeter)</Czech>
             <Korean>컬러 활동 기록 (AED-X / 맥박 측정기)</Korean>
             <French>Registres d'activité colorés (AED-X/Pulseoximeter)</French>
@@ -959,6 +1026,7 @@
             <Polish>Zabarwia logi AED-X lub pulsoksymetru na czerwono, jeśli jakaś wartość jest krytyczna</Polish>
             <Spanish>Coloca los registros de actividad del AED-X o del Pulsoxímetro en rojo, si algún valor es crítico</Spanish>
             <Chinese>将AED-X或Pulseoximeter的Activitylogs染成红色，如果任何值是临界值。</Chinese>
+            <Chinesesimp>若任何生命处于危险中(处于临界值以下),则将AED-X或脉搏血氧仪的数值显示为红色</Chinesesimp>
             <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulseoximeter červeně</Czech>
             <Korean>중요한 값이있는 경우 AED-X 또는 맥박산소측정기의 활동 로그를 빨간색으로 표시합니다.</Korean>
             <French>Colore les registres d'activité de l'AED-X ou de l'oxymètre de pouls en rouge, si une valeur est critique</French>
@@ -971,6 +1039,7 @@
             <English>Established in recovery position</English>
             <German>In die stabile Seitenlage gebracht</German>
             <Polish>Ułożony w pozycji bezpiecznej</Polish>
+            <Chinesesimp>建立救援体位</Chinesesimp>
             <Japanese>回復体位をとっています</Japanese>
             <Korean>회복자세 교정</Korean>
             <French>En position latérale de sécurité</French>
@@ -980,6 +1049,7 @@
             <English>Establish recovery position</English>
             <German>In die stabile Seitenlage legen</German>
             <Polish>Ułóż w pozycji bezpiecznej</Polish>
+            <Chinesesimp>建立救援体位</Chinesesimp>
             <Japanese>回復体位をとらせる</Japanese>
             <Korean>회복자세 교정해주기</Korean>
             <French>Mettre en position latérale de sécurité</French>
@@ -989,6 +1059,7 @@
             <English>Establishing recovery position</English>
             <German>In die stabile Seitenlage legen</German>
             <Polish>Układanie w pozycji</Polish>
+            <Chinesesimp>正在建立救援体位</Chinesesimp>
             <Japanese>回復体位をとらせています</Japanese>
             <Korean>회복자세 교정 중</Korean>
             <French>Mise en position latérale de sécurité</French>
@@ -998,6 +1069,7 @@
             <English>Recovery position established successfully</English>
             <German>Erfolgreich in die stabile Seitenlage gelegt</German>
             <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
+            <Chinesesimp>已成功建立救援体位</Chinesesimp>
             <Japanese>回復体位をとりました</Japanese>
             <Korean>회복자세 교정 성공</Korean>
             <French>Mise en position latérale de sécurité réussie</French>
@@ -1007,6 +1079,7 @@
             <English>Recovery position cancelled</English>
             <German>Stabile Seitenlage abgebrochen</German>
             <Polish>Przerwano pozycję bezpieczną</Polish>
+            <Chinesesimp>已取消救援体位</Chinesesimp>
             <Japanese>回復体位が崩されました</Japanese>
             <Korean>회복자세 교정 취소됨</Korean>
             <French>Mise en position latérale de sécurité annulée</French>
@@ -1016,6 +1089,7 @@
             <English>%1 established recovery position</English>
             <German>%1 hat die stabile Seitenlage durchgeführt</German>
             <Polish>%1 ułożył w pozycji bezpiecznej</Polish>
+            <Chinesesimp>%1 已建立救援体位</Chinesesimp>
             <Japanese>%1 が回復体位にしました</Japanese>
             <Korean>%1 이(가) 회복자세를 교정했습니다</Korean>
             <French>%1 a mis en place la position latérale de sécurité</French>
@@ -1025,6 +1099,7 @@
             <English>Time for recovery position</English>
             <German>Zeit für die stabile Seitenlage</German>
             <Polish>Czas na ułożenie w pozycji bezpiecznej</Polish>
+            <Chinesesimp>建立救援体位时间</Chinesesimp>
             <Japanese>回復体位にかかる時間</Japanese>
             <Korean>회복자세 교정 시간</Korean>
             <French>Temps pour mettre en position latérale de sécurité</French>
@@ -1034,6 +1109,7 @@
             <English>How long it will take to establish recovery position</English>
             <German>Die Zeit, wie lange es dauert eine erfolgreiche stabile Seitenlage durchzuführen</German>
             <Polish>Jak długo potrwa ułożenie w pozycji bocznej bezpiecznej</Polish>
+            <Chinesesimp>建立救援体位的所需时间</Chinesesimp>
             <Japanese>回復体位を完了するのにどのくらい時間がかかるか設定します</Japanese>
             <Korean>회복자세를 교정해주는 데 걸리는 시간입니다.</Korean>
             <French>Temps nécessaire pour mettre en position latérale de sécurité</French>
@@ -1043,6 +1119,7 @@
             <English>Cancel recovery position</English>
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerwij pozycję bezpieczną</Polish>
+            <Chinesesimp>取消救援体位</Chinesesimp>
             <Japanese>回復体位をやめる</Japanese>
             <Korean>회복자세 교정 취소</Korean>
             <French>Annuler la position latérale de sécurité</French>
@@ -1052,6 +1129,7 @@
             <English>Cancelling recovery position</English>
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerywanie pozycji bezpiecznej</Polish>
+            <Chinesesimp>正在取消救援体位</Chinesesimp>
             <Japanese>回復体位を崩しています</Japanese>
             <Korean>회복자세 교정 취소 중</Korean>
             <French>Annulation de la position latérale de sécurité</French>
@@ -1061,6 +1139,7 @@
             <English>Time for cancelling recovery position</English>
             <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
             <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
+            <Chinesesimp>取消救援体位时间</Chinesesimp>
             <Japanese>回復体位をやめるのにかかる時間</Japanese>
             <Korean>회복자세 교정 취소 시간</Korean>
             <French>Temps pour annuler la position latérale de sécurité</French>
@@ -1070,6 +1149,7 @@
             <English>How long it will take to establish recovery position</English>
             <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
             <Polish>Jak długo potrwa przerwanie pozycji bocznej bezpiecznej</Polish>
+            <Chinesesimp>取消救援体位的所需时间</Chinesesimp>
             <Japanese>回復体位をやめさせるのにどのくらい時間がかかるか設定します</Japanese>
             <Korean>회복자세 교정을 취소하는 데 걸리는 시간입니다</Korean>
             <French>Temps nécessaire pour annuler la position latérale de sécurité</French>
