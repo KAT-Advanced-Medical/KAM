@@ -24,7 +24,7 @@ private _recovery = _patient getVariable[QEGVAR(airway,recovery),false];
 
 if (((_hasMonitor)
 || ([_medic, 'kat_X_AED'] call ace_common_fnc_hasItem))
-&& !{_recovery}
+&& {!_recovery}
 && {_canCPR}) exitWith {true};
 
 false
