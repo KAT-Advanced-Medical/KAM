@@ -1,4 +1,3 @@
-PREP(canThoraxTreatment);
 PREP(fullHealLocal);
 PREP(handleBreathing);
 PREP(handlePulmoHit);
