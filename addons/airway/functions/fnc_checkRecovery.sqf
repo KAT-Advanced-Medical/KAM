@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: MiszczuZPolski
- * Checks if guedel or larynx was placed before or any fractures are present
+ * Checks if guedel or larynx was placed before
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -22,7 +22,7 @@ params ["_medic", "_patient"];
 private _return = true;
 
 //check if patient has inserted larynx or guedeltube
-if (_patient getVariable [QGVAR(airway_item), ""] in ["larynx","guedel"]) then {
+if ((_patient getVariable [QGVAR(airway_item), ""] in ["larynx","guedel"]) || !(isNull objectParent _patient)) then {
     _return = false;
 };
 
