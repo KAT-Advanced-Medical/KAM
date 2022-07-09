@@ -117,11 +117,11 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(fractureCheck_Level),
-	"LIST",
-	LLSTRING(FRACTURE_CHECK),
+	QGVAR(BreathCheck_Time),
+	"SLIDER",
+	LLSTRING(BREATH_CHECK_TIME),
 	CBA_SETTINGS_CAT_M,
-	[[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+	[0,100,2,0],
 	true
 ] call CBA_Settings_fnc_init;
 
@@ -135,20 +135,20 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(closedReduction),
+	QGVAR(closedReduction_MedLevel),
 	"LIST",
-	LLSTRING(CLOSED_REDUCTION),
+	LLSTRING(CLOSED_REDUCTION_MEDLEVEL),
 	CBA_SETTINGS_CAT_M,
-	[[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
 	true
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(surgicalAction),
+	QGVAR(surgicalAction_MedLevel),
 	"LIST",
-	LLSTRING(SURGICAL_ACTION),
+	LLSTRING(SURGICAL_ACTION_MEDLEVEL),
 	CBA_SETTINGS_CAT_M,
-	[[0, 1, 2], ["Anyone", "Medics", "Doctors"], 2],
+	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
 	true
 ] call CBA_Settings_fnc_init;
 
@@ -168,6 +168,60 @@ PREP_RECOMPILE_END;
 	CBA_SETTINGS_CAT_M,
 	[[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
 	true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(fractureCheck_MedLevel),
+	"LIST",
+	LLSTRING(FRACTURE_CHECK_MEDLEVEL),
+	CBA_SETTINGS_CAT_M,
+	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(Flumazenil_MedLevel),
+	"LIST",
+	LLSTRING(FLUMAZENIL_MEDLEVEL),
+	CBA_SETTINGS_CAT_M,
+	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(Lorazepam_MedLevel),
+	"LIST",
+	LLSTRING(LORAZEPAM_MEDLEVEL),
+	CBA_SETTINGS_CAT_M,
+	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(Etomidate_MedLevel),
+	"LIST",
+	LLSTRING(ETOMIDATE_MEDLEVEL),
+	CBA_SETTINGS_CAT_M,
+	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(BreathCheck_MedLevel),
+	"LIST",
+	LLSTRING(BREATH_CHECK_MEDLEVEL),
+	CBA_SETTINGS_CAT_M,
+	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(enable_selfCheckFracture),
+    "LIST",
+    LLSTRING(SETTING_SELF_CHECKFRACTURE),
+    CBA_SETTINGS_CAT,
+    [[0, 1], ["STR_ACE_common_No", "STR_ACE_common_Yes"], 1],
+    true
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;
