@@ -15,8 +15,8 @@ class ACE_Medical_Treatment_Actions {
         category = "examine";
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = 2;
+        medicRequired = QGVAR(BreathCheck_MedLevel);
+        treatmentTime = QGVAR(BreathCheck_Time);
         items[] = {};
         condition = true;
         patientStateCondition = 0;
@@ -43,7 +43,7 @@ class ACE_Medical_Treatment_Actions {
         category = "examine";
         treatmentLocations = 0;
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 1;
+        allowSelfTreatment = QGVAR(enable_selfCheckFracture);
         medicRequired = QGVAR(fractureCheck_Level);
         treatmentTime = QGVAR(fractureCheck_Time);
         items[] = {};
@@ -98,7 +98,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = 0;
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
-        medicRequired = 1;
+        medicRequired = QGVAR(Lorazepam_MedLevel);
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_lorazepam"};
         condition = QFUNC(removeIV);
@@ -111,7 +111,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = 0;
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
-        medicRequired = 1;
+        medicRequired = QGVAR(Flumazenil_MedLevel);
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_flumazenil"};
         condition = QFUNC(removeIV);
@@ -184,7 +184,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head", "Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction);
-        treatmentTime = QGAVR(debrideTime);
+        treatmentTime = QGVAR(debrideTime);
         items[] = {"kat_scalpel"};
         condition = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(debridementCheck));
         consumeItem = 0;
