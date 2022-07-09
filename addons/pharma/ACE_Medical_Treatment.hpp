@@ -1,7 +1,7 @@
 class ADDON {
 	class Medication {
-		class Carbonate {
-			painReduce = 0;
+		    class Carbonate {
+			      painReduce = 0;
             hrIncreaseLow[] = {5, 10};
             hrIncreaseNormal[] = {10, 15};
             hrIncreaseHigh[] = {15, 20};
@@ -10,9 +10,9 @@ class ADDON {
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;
-		};
-		class TXA {
-			painReduce = 0;
+        };
+        class TXA {
+            painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
             hrIncreaseHigh[] = {0, 0};
@@ -21,7 +21,7 @@ class ADDON {
             maxDose = 3;
             incompatibleMedication[] = {};
             viscosityChange = 0;
-		};
+        };
         class Norepinephrine {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
@@ -110,5 +110,5 @@ class ADDON {
             incompatibleMedication[] = {};
             viscosityChange = -5;
         };
-	};
+    };
 };

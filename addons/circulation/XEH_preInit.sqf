@@ -29,12 +29,12 @@ PREP_RECOMPILE_END;
 
 //location for AED - Defi:
 [
-	QGVAR(useLocation_AED),
-	"LIST",
-	[LLSTRING(LOCATION_AED),LLSTRING(LOCATION_AED_DESCRIPTION)],
-	CBA_SETTINGS_CAT,
-	[[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],0],
-	true
+    QGVAR(useLocation_AED),
+    "LIST",
+    [LLSTRING(LOCATION_AED),LLSTRING(LOCATION_AED_DESCRIPTION)],
+    CBA_SETTINGS_CAT,
+    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],0],
+    true
 ] call CBA_Settings_fnc_init;
 
 //Succes chance for AED-X
@@ -57,18 +57,19 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-private _type = round random(3);
+private _type = round random(7);
 [
     QGVAR(bloodgroup),
     "LIST",
     LLSTRING(client_bt),
     CBA_SETTINGS_CAT,
-    [["A", "B", "AB", "O"], ["A", "B", "AB", "O"], _type],
+    [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], _type],
     2,
     {
         player setVariable [QGVAR(bloodtype), _this, true];
         player setVariable ["ace_dogtags_dogtagData", nil, true];
-    }
+    },
+    true
 ] call CBA_Settings_fnc_init;
 
 //Settable list for using AED per medical class
@@ -77,7 +78,7 @@ private _type = round random(3);
     "LIST",
     [LLSTRING(ALLOW_AED),LLSTRING(TRAINING_LEVEL_AED)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -87,7 +88,7 @@ private _type = round random(3);
     "LIST",
     [LLSTRING(ALLOW_AED_X),LLSTRING(TRAINING_LEVEL_AED_X)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -133,32 +134,32 @@ private _type = round random(3);
 
 //CPR Chance for Doctors
 [
-	QGVAR(CPR_Chance_Doctor),
-	"SLIDER",
-	LLSTRING(SETTING_CPR_CHANCE_DOCTOR),
-	CBA_SETTINGS_CAT,
-	[0,100,40,0],
-	true
+    QGVAR(CPR_Chance_Doctor),
+    "SLIDER",
+    LLSTRING(SETTING_CPR_CHANCE_DOCTOR),
+    CBA_SETTINGS_CAT,
+    [0,100,40,0],
+    true
 ] call CBA_Settings_fnc_init;
 
 //CPR Chance for Regular medics
 [
-	QGVAR(CPR_Chance_RegularMedic),
-	"SLIDER",
-	LLSTRING(SETTING_CPR_CHANCE_REGULARMEDIC),
-	CBA_SETTINGS_CAT,
-	[0,100,30,0],
-	true
+    QGVAR(CPR_Chance_RegularMedic),
+    "SLIDER",
+    LLSTRING(SETTING_CPR_CHANCE_REGULARMEDIC),
+    CBA_SETTINGS_CAT,
+    [0,100,30,0],
+    true
 ] call CBA_Settings_fnc_init;
 
 //CPR Chance for Default
 [
-	QGVAR(CPR_Chance_Default),
-	"SLIDER",
-	LLSTRING(SETTING_CPR_CHANCE_DEFAULT),
-	CBA_SETTINGS_CAT,
-	[0,100,20,0],
-	true
+    QGVAR(CPR_Chance_Default),
+    "SLIDER",
+    LLSTRING(SETTING_CPR_CHANCE_DEFAULT),
+    CBA_SETTINGS_CAT,
+    [0,100,20,0],
+    true
 ] call CBA_Settings_fnc_init;
 
 //Blood draw uses blood groups
@@ -183,22 +184,22 @@ private _type = round random(3);
 
 //blood draw time for 500ml kit
 [
-	QGVAR(blood_drawTime_500ml),
-	"SLIDER",
-	LLSTRING(SETTING_BLOOD_DRAWTIME_500ML),
-	CBA_SETTINGS_CAT,
-	[1,600,50,0],
-	true
+    QGVAR(blood_drawTime_500ml),
+    "SLIDER",
+    LLSTRING(SETTING_BLOOD_DRAWTIME_500ML),
+    CBA_SETTINGS_CAT,
+    [1,600,50,0],
+    true
 ] call CBA_Settings_fnc_init;
 
 //blood draw time for 250ml kit
 [
-	QGVAR(blood_drawTime_250ml),
-	"SLIDER",
-	LLSTRING(SETTING_BLOOD_DRAWTIME_250ML),
-	CBA_SETTINGS_CAT,
-	[1,600,25,0],
-	true
+    QGVAR(blood_drawTime_250ml),
+    "SLIDER",
+    LLSTRING(SETTING_BLOOD_DRAWTIME_250ML),
+    CBA_SETTINGS_CAT,
+    [1,600,25,0],
+    true
 ] call CBA_Settings_fnc_init;
 
 //Minimum acceptable blood volume for drawing blood

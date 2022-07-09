@@ -70,4 +70,10 @@ texHeaders.bin
 *.swo
 *.biprivatekey
 Thumbs.db
-CHANGELOG.md
+#CHANGELOG.md
+
+## Added by HEMTT
+releases/*
+keys/*
+.hemtt/local
+####

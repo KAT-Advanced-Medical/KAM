@@ -42,7 +42,7 @@ class CfgWeapons {
             mass = 5;
         };
     };
-    class kat_stethoscope: ACE_ItemCore	{
+    class kat_stethoscope: ACE_ItemCore    {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -50,7 +50,7 @@ class CfgWeapons {
         displayName= CSTRING(Stethoscope_display);
         descriptionShort= CSTRING(Stethoscope_desc);
         descriptionUse= CSTRING(Stethoscope_desc);
-		picture = QPATHTOF(ui\steth.paa);
+        picture = QPATHTOF(ui\steth.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 5;
         };

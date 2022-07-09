@@ -9,9 +9,10 @@
             <Polish>Zator dróg oddechowych: </Polish>
             <Spanish>Obstrucción de vías aéreas: </Spanish>
             <Turkish>ACE-Eczacılık etkinleştirildi mi?</Turkish>
-            <Korean>기도 방해: </Korean>
+            <Korean>기도가 혀에 의해 막히게 하기: </Korean>
             <Chinese>气道闭塞: </Chinese>
             <Japanese>気道閉塞:</Japanese>
+            <Russian>Обструкция дыхательных путей:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Occlusion">
             <English>Airway occlusion: </English>
@@ -20,10 +21,11 @@
             <Polish>Zablokowanie dróg oddechowych: </Polish>
             <Spanish>Oclusión de vías aéreas: </Spanish>
             <French>Occlusion des voies aériennes:</French>
-            <Korean>기도 폐쇄: </Korean>
+            <Korean>기도가 구토에 의해 막히게 하기: </Korean>
             <Chinese>气道闭塞: </Chinese>
             <Turkish>Hava yolu tıkanıklığı: </Turkish>
             <Japanese>気道異物:</Japanese>
+            <Russian>Окклюзия дыхательных путей:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Pneumothorax">
             <English>Pneumothorax: </English>
@@ -32,10 +34,11 @@
             <French>Pneumothorax: </French>
             <Polish>Odma opłucna: </Polish>
             <Spanish>Neumotórax: </Spanish>
-            <Korean>기흉: </Korean>
+            <Korean>기흉 활성화: </Korean>
             <Chinese>气胸:</Chinese>
             <Turkish>Pnömotoraks: </Turkish>
             <Japanese>気胸:</Japanese>
+            <Russian>Пневмоторакс:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Hemopneumothorax">
             <English>Hemopneumothorax: </English>
@@ -44,10 +47,11 @@
             <French>Hémopneumothorax: </French>
             <Polish>Krwiak opłucnej: </Polish>
             <Spanish>Hemoneumotórax: </Spanish>
-            <Korean>혈기흉: </Korean>
+            <Korean>혈기흉 활성화: </Korean>
             <Chinese>血气胸:</Chinese>
             <Turkish>Hemopnömotoraks: </Turkish>
             <Japanese>血気胸:</Japanese>
+            <Russian>Гемопневмоторакс:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Tensionpneumothorax">
             <English>Tension pneumothorax: </English>
@@ -56,10 +60,11 @@
             <French>Pneumothorax hypertensif: </French>
             <Polish>Odma prężna: </Polish>
             <Spanish>Neumotórax a tensión: </Spanish>
-            <Korean>긴장성 기흉: </Korean>
+            <Korean>긴장성 기흉 활성화: </Korean>
             <Chinese>紧张性气胸。:</Chinese>
             <Turkish>Tansiyon pnömotoraks: </Turkish>
             <Japanese>緊張性気胸:</Japanese>
+            <Russian>Напряженный пневмоторакс:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_SpO2Value">
             <English>SpO2 value: </English>
@@ -68,10 +73,11 @@
             <French>Valeur Sp02: </French>
             <Polish>Wartość SpO2: </Polish>
             <Spanish>Valor SpO2: </Spanish>
-            <Korean>Sp02 값: </Korean>
+            <Korean>SpO2 값: </Korean>
             <Chinese>SpO2值。</Chinese>
             <Turkish>SpO2 değeri: </Turkish>
             <Japanese>SpO2値:</Japanese>
+            <Russian>Значение SpO2:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_bloodGroup">
             <English>Blood group: </English>
@@ -84,6 +90,7 @@
             <Korean>혈액형: </Korean>
             <Turkish>Kan grubu: </Turkish>
             <Japanese>血液型:</Japanese>
+            <Russian>Группа крови:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_bloodVolume">
             <English>Blood volume: </English>
@@ -96,6 +103,7 @@
             <Korean>혈액량: </Korean>
             <Turkish>Kan basıncı: </Turkish>
             <Japanese>血液量:</Japanese>
+            <Russian>Объем крови:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_manageAirway_Module_displayname">
             <English>Manage Airways</English>
@@ -105,9 +113,10 @@
             <Polish>Dostosuj drogi oddechowe</Polish>
             <Spanish>Gestionar vías aéreas</Spanish>
             <Chinese>管理航空公司</Chinese>
-            <Korean>항공 관리</Korean>
+            <Korean>기도 관리</Korean>
             <Turkish>Hava Yollarını Yönet</Turkish>
             <Japanese>気道を管理する</Japanese>
+            <Russian>Управление авиалиниями</Russian>
         </Key>
         <Key ID="STR_kat_zeus_bloodType_Module_displayname">
             <English>Change blood group / volume</English>
@@ -117,9 +126,10 @@
             <Polish>Zmień grupę / ilość krwi</Polish>
             <Spanish>Cambiar grupo/volumen sanguíneo</Spanish>
             <Chinese>改变血型/血量</Chinese>
-            <Korean>혈액형/체적 변경</Korean>
+            <Korean>혈액형/혈액량 변경</Korean>
             <Turkish>Kan grubunu / hacmini değiştir</Turkish>
             <Japanese>血液型/容量を変更する</Japanese>
+            <Russian>Изменить группу/объем крови</Russian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_displayname">
             <English>Change shockable state</English>
@@ -129,9 +139,10 @@
             <Polish>Zmień rytm serca</Polish>
             <Spanish>Cambiar estado de fibrilación cardíaca</Spanish>
             <Chinese>改变可冲击状态</Chinese>
-            <Korean>충격 가능 상태 변경</Korean>
+            <Korean>심정지 상태 변경</Korean>
             <Turkish>Şok edilebilir durumu değiştir</Turkish>
             <Japanese>ショック状態を変える</Japanese>
+            <Russian>Изменить шоковое состояние</Russian>
         </Key>
         <Key ID="STR_kat_zeus_checkmedical_Module_displayname">
             <English>Open unit medical menu</English>
@@ -144,6 +155,7 @@
             <Korean>유닛 의료 메뉴 열기</Korean>
             <Turkish>Ünite tıbbi menüsünü aç</Turkish>
             <Japanese>医療メニューを開く</Japanese>
+            <Russian>Медицинское меню открытого блока</Russian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_state">
             <English>State: </English>
@@ -156,6 +168,7 @@
             <Korean>상태: </Korean>
             <Turkish>Belirtmek: </Turkish>
             <Japanese>状態:</Japanese>
+            <Russian>Состояние:</Russian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_shockable">
             <English>Shockable (VF/PVT)</English>
@@ -165,9 +178,10 @@
             <Polish>Defibrylacyjny (VF/PVT)</Polish>
             <Spanish>Desfibrilable (FV/TV)</Spanish>
             <Chinese>可休克(VF/PVT)</Chinese>
-            <Korean>충격 가능(VF/PVT)</Korean>
+            <Korean>쇼크성 심정지(VF/PVT)</Korean>
             <Turkish>Şok Edilebilir (VF/PVT)</Turkish>
-            <Japanese>ショック可能(VF / PVT)</Japanese>
+            <Japanese>ショック可能(VF/PVT)</Japanese>
+            <Russian>Шокирующий (VF/PVT)</Russian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_non_shockable">
             <English>non-shockable (Asystole)</English>
@@ -177,9 +191,10 @@
             <Polish>Niedefibrylacyjny (Asystolia)</Polish>
             <Spanish>No desfibrilable (Asístolia)</Spanish>
             <Chinese>非休克性 (Asystole)</Chinese>
-            <Korean>충격 불가(수축기)</Korean>
+            <Korean>비-쇼크성 심정지(심부전수축)</Korean>
             <Turkish>şoklanamaz (Asistoli)</Turkish>
             <Japanese>ショック不可(心静止)</Japanese>
+            <Russian>Без шока (асистолия)</Russian>
         </Key>
         <Key ID="STR_kat_zeus_NothingSelected">
             <English>Place on a unit.</English>
@@ -189,9 +204,10 @@
             <Polish>Połóż na jednostce.</Polish>
             <Spanish>Colocar en una unidad.</Spanish>
             <Chinese>放在一个单元上。</Chinese>
-            <Korean>유닛에 놓습니다.</Korean>
+            <Korean>유닛에 배치하십시오.</Korean>
             <Turkish>Bir üniteye yerleştirin.</Turkish>
             <Japanese>ユニットに置きます。</Japanese>
+            <Russian>Поместите на единицу.</Russian>
         </Key>
         <Key ID="STR_kat_zeus_OnlyInfantry">
             <English>Unit must be infantry.</English>
@@ -201,9 +217,10 @@
             <Polish>Jednostką musi być piechota.</Polish>
             <Spanish>La unidad debe ser infantería.</Spanish>
             <Chinese>单位必须是步兵。</Chinese>
-            <Korean>부대는 보병이어야 합니다.</Korean>
+            <Korean>유닛은 보병이어야 합니다.</Korean>
             <Turkish>Birim piyade olmalıdır.</Turkish>
             <Japanese>ユニットは歩兵でなければなりません。</Japanese>
+            <Russian>Юнит должен быть пехотным.</Russian>
         </Key>
         <Key ID="STR_kat_zeus_MustBeAlive">
             <English>Unit must be alive.</English>
@@ -216,6 +233,7 @@
             <Korean>유닛이 살아 있어야 합니다.</Korean>
             <Turkish>Birim canlı olmalı.</Turkish>
             <Japanese>ユニットは生きている必要があります。</Japanese>
+            <Russian>Юнит должен быть жив.</Russian>
         </Key>
         <Key ID="STR_kat_zeus_NotUnconscious">
             <English>Unit must be unconscious.</English>
@@ -228,6 +246,7 @@
             <Korean>유닛은 의식이 없어야 합니다.</Korean>
             <Turkish>Ünite bilinçsiz olmalıdır.</Turkish>
             <Japanese>ユニットは意識を失っている必要があります。</Japanese>
+            <Russian>Юнит должен быть без сознания.</Russian>
         </Key>
         <Key ID="STR_kat_zeus_sliderFormat13was23">
             <English>%1%3 (was %2%3)</English>
@@ -237,9 +256,10 @@
             <Polish>%1%3 (było %2%3)</Polish>
             <Spanish>%1%3 (era %2%3)</Spanish>
             <Chinese>%1%3 (曾是 %2%3)</Chinese>
-            <Korean>%1%3 (였다 %2%3)</Korean>
+            <Korean>%1%3 ( %2%3 이었다)</Korean>
             <Turkish>%1%3 (oldu %2%3)</Turkish>
-            <Japanese>%1%3(以前は%2%3)</Japanese>
+            <Japanese>%1%3 (以前は %2%3)</Japanese>
+            <Russian>%1%3 (было %2%3)</Russian>
         </Key>
     </Package>
 </Project>

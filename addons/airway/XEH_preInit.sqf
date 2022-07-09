@@ -84,7 +84,7 @@ In real life, this will happen sometimes, not quiet often.
     "LIST",
     [LLSTRING(ALLOW_LARYNXTUBUS),LLSTRING(ALLOW_LARYNXTUBUS_DESC)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -94,7 +94,7 @@ In real life, this will happen sometimes, not quiet often.
     "LIST",
     [LLSTRING(ALLOW_GUEDELTUBUS),LLSTRING(ALLOW_GUEDELTUBUS_DESC)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -104,7 +104,7 @@ In real life, this will happen sometimes, not quiet often.
     "LIST",
     [LLSTRING(ALLOW_ACCUVAC),LLSTRING(ALLOW_ACCUVAC_DESC)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -175,6 +175,26 @@ In real life, this will happen sometimes, not quiet often.
     [LLSTRING(COLORED_LOGS),LLSTRING(COLORED_LOGS_DESC)],
     CBA_SETTINGS_CAT,
     [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Settable action time for Recovery position
+[
+    QGVAR(RecoveryPosition_Time),
+    "SLIDER",
+    [LLSTRING(TIME_RECOVERY),LLSTRING(TIME_RECOVERY_DESC)],
+    CBA_SETTINGS_CAT,
+    [1, 120, 6, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Settable action time for Cancel recovery position
+[
+    QGVAR(CancelRecoveryPosition_Time),
+    "SLIDER",
+    [LLSTRING(TIME_CANCELRECOVERY),LLSTRING(TIME_CANCELRECOVERY_DESC)],
+    CBA_SETTINGS_CAT,
+    [1, 120, 6, 0],
     true
 ] call CBA_Settings_fnc_init;
 

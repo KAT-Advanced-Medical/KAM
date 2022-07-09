@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
+ * Author: Katalam, edited by MiszczuZPolski
  * Called when a unit enters the unconscious state. Will add a FrameHandler for puking while unconscious.
  *
  * Arguments:
@@ -27,9 +27,10 @@ _unit setVariable ["kat_pukeActive_PFH", true];
     params ["_args", "_idPFH"];
     _args params ["_unit"];
     private _alive = _unit getVariable ["ACE_isUnconscious", false];
-    if (!_alive || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "larynx")) exitWith {
+    private _recovery = _unit getVariable [QGVAR(recovery), false];
+    if (!_alive || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") || _recovery) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
-		_unit setVariable ["kat_pukeActive_PFH", nil];
+        _unit setVariable ["kat_pukeActive_PFH", nil];
     };
     if (random(100) <= GVAR(probability_occluded)) then {
         if !(_unit getVariable ["KAT_medical_airwayOccluded", false]) then {

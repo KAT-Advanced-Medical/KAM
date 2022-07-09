@@ -66,7 +66,7 @@ switch (GET_FRACTURES(_target) select _selectionN) do {
     };
     case -1: {
         if ((ace_medical_fractures) in [2, 3]) then { 
-			_entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [0.2, 0.2, 1, 1]];	
+            _entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [0.2, 0.2, 1, 1]];    
         };
     };
 };
@@ -96,7 +96,7 @@ private _woundEntries = [];
 private _fnc_getWoundDescription = {
     private _classIndex = _woundClassID / 10;
     private _category = _woundClassID % 10;
-    private _className = ace_medical_damage_woundsData select _classIndex select 6;
+    private _className = ace_medical_damage_woundClassNames select _classIndex;
     private _suffix = ["Minor", "Medium", "Large"] select _category;
     private _woundName = localize format ["STR_ACE_medical_damage_%1_%2", _className, _suffix];
     if (_amountOf >= 1) then {
@@ -141,7 +141,7 @@ private _fnc_getWoundDescription = {
 if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then {
     private _a = _target getVariable [QGVAR(airway_item), ""];
     if !(_a isEqualTo "") then {
-		private _text = format [LSTRING(%1_Display), _a];
+        private _text = format [LSTRING(%1_Display), _a];
         _woundEntries pushback [localize _text, [0.1, 1, 1, 1]];
     };
 };
@@ -150,10 +150,15 @@ if (_target getVariable [QGVAR(overstretch), false] && _selectionN isEqualTo 0) 
     _woundEntries pushback [localize LSTRING(overstretched), [0.1, 1, 1, 1]];
 };
 
-private _tensionhemothorax = false;
+if (_target getVariable [QGVAR(recovery), false]) then {
+    _entries pushback [localize LSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
+};
 
-if ((_target getVariable ["KAT_medical_tensionpneumothorax", false]) || (_target getVariable ["KAT_medical_hemopneumothorax", false])) then {
-        _tensionhemothorax = true;
+private _tensionhemothorax = false;
+if (!(kat_breathing_showPneumothorax_dupe)) then {
+    if ((_target getVariable ["KAT_medical_tensionpneumothorax", false]) || (_target getVariable ["KAT_medical_hemopneumothorax", false])) then {
+            _tensionhemothorax = true;
+    };
 };
 
 if (_target getVariable ["KAT_medical_pneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_pneumothorax_hardcore) && !(_tensionhemothorax)) then {
