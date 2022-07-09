@@ -27,15 +27,15 @@ private _fractureString = "";
 if (_liveFracture != 0) exitWith {
 
     if (_liveFracture >= 3) then  {
-        _fractureString = "Comminuted Fracture";
+        _fractureString = LSTRING(COMMINUTED_FRACTURE);
     };
 
     if (_liveFracture >= 2 && _liveFracture < 3) then {
-        _fractureString = "Compound Fracture";
+        _fractureString = LSTRING(COMPOUND_FRACTURE);
     };
 
     if (_liveFracture == 1) then {
-        _fractureString = "Simple Fracture";
+        _fractureString = LSTRING(SIMPLE_FRACTURE);
     };
     [_patient, "quick_view", LSTRING(fracture_log), [_fractureString, STRING_BODY_PARTS select _part]] call ace_medical_treatment_fnc_addToLog;  
 };
@@ -44,15 +44,15 @@ private _value = random 100;
 
 if (_value <= GVAR(simpleChance)) then {
     _liveFracture = 1;
-    _fractureString = "Simple Fracture";
+    _fractureString = LSTRING(SIMPLE_FRACTURE);
 } else {
     private _subValue = random 100;
     if (_subValue <= GVAR(compoundChance)) then {
         _liveFracture = 2;
-        _fractureString = "Compound Fracture";
+        _fractureString = LSTRING(COMPOUND_FRACTURE);
     } else {
         _liveFracture = 3;
-        _fractureString = "Comminuted Fracture";
+        _fractureString = LSTRING(COMMINUTED_FRACTURE);
     };
 };
 
