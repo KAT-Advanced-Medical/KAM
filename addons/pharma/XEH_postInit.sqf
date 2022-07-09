@@ -7,3 +7,7 @@
 ["treatmentTXA", {_this call FUNC(treatmentAdvanced_TXALocal)}] call CBA_fnc_addEventHandler;
 ["treatmentOndansetron", {_this call FUNC(treatmentAdvanced_OndansetronLocal)}] call CBA_fnc_addEventHandler;
 ["treatmentReorientation", {_this call FUNC(treatmentAdvanced_ReorientationLocal)}] call CBA_fnc_addEventHandler;
+[QGVAR(ketamineLocal), LINKFUNC(KetamineLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(FentanylLocal), LINKFUNC(FentanylLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(NalbuphineLocal), LINKFUNC(NalbuphineLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(medicationLocal), LINKFUNC(treatmentAdvanced_medicationLocal)] call CBA_fnc_addEventHandler;

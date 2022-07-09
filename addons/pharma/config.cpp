@@ -23,7 +23,10 @@ class CfgPatches {
             "kat_nitroglycerin",
             "kat_amiodarone",
             "kat_lidocane",
-            "kat_atropine"
+            "kat_atropine",
+            "kat_ketamine",
+            "kat_fentanyl",
+            "kat_nalbuphine"
         };
         magazines[] = { };
         requiredAddons[] = {
@@ -42,7 +45,7 @@ class CfgPatches {
             "cba_settings"
         };
         author = "Katalam";
-        authors[] = {"Katalam", "2LT.Mazinski"};
+        authors[] = {"Katalam", "2LT.Mazinski", "MiszczuZPolski"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };
