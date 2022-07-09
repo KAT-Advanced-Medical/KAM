@@ -26,7 +26,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Dialysis: Defibrillator_AED_X_vehicle {
         displayName = CSTRING(dialysis);
-        displayNameProgress = CSTRING(performing);
+        displayNameProgress = CSTRING(perform);
         items[] = {};
         condition = QFUNC(vehicleCheckDialysis);
         treatmentTime = QGVAR(dialysisTime);
