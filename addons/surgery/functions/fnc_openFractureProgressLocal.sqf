@@ -21,7 +21,7 @@
 params ["_medic", "_patient", "_bodyPart", "_entry"];
 
 if !(IS_UNCONSCIOUS(_patient)) exitWith {
-    private _output = localize LSTRING(fracture_fail);
+    private _output = LLSTRING(fracture_fail);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 };
 
@@ -44,20 +44,20 @@ if (_liveFracture > 3) then {
 };
 
 if (_entry == 2.3 && _reduce) exitWith {
-    private _output = localize LSTRING(fracture_fail);
+    private _output = LLSTRING(fracture_fail);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 };
 
 if (_number == _liveFracture) exitWith {
     switch (true) do {
         case (_entry == 2.1): {
-        _surgeryString = "exposed";
+        _surgeryString = LSTRING(EXPOSED);
         };
         case (_entry == 2.3): {
-        _surgeryString = "irrigated";
+        _surgeryString = LSTRING(IRRIGATED);
         };
         case (_entry == 3.3): {
-        _surgeryString = "clamped";
+        _surgeryString = LSTRING(CLAMPED);
         };
     };
 
@@ -73,5 +73,5 @@ if (_number == _liveFracture) exitWith {
     _patient setVariable [QGVAR(fractures), _fractureArray, true];
 };
 
-private _output = localize LSTRING(fracture_fail);
+private _output = LLSTRING(fracture_fail);
 [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
