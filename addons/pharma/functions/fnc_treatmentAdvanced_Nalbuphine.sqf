@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: MiszczuZPolski
- * Begins Ketamine Treatment
+ * Begins Nalbuphine Treatment
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -11,7 +11,7 @@
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_Ketamine;
+ * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_Nalbuphine;
  *
  * Public: No
  */
@@ -19,9 +19,9 @@
 params ["_medic", "_patient"];
 
 if (local _patient) then {
-    ["treatmentKetamine", [_patient, "Ketamine"]] call CBA_fnc_localEvent;
+    ["treatmentNalbuphine", [_patient, "Nalbuphine"]] call CBA_fnc_localEvent;
 } else {
-    ["treatmentKetamine", [_patient, "Ketamine"], _patient] call CBA_fnc_targetEvent;
+    ["treatmentNalbuphine", [_patient, "Nalbuphine"], _patient] call CBA_fnc_targetEvent;
 };
 
 true;

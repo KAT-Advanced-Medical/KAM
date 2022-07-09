@@ -134,7 +134,26 @@ class CfgWeapons {
         picture = QPATHTOF(ui\icon_Ketamine.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Ketamine_DescShort);
-        descriptionUse = CSTRING(etamine_DescUse);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        }; 
+    };
+    class kat_fentanyl: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Fentanyl_Box_Display);
+        picture = QPATHTOF(ui\icon_Fentanyl.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Fentanyl_DescShort);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        }; 
+    };
+    class kat_nalbuphine: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Nalbuphine_Box_Display);
+        picture = QPATHTOF(ui\icon_Nalbuphine.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Nalbuphine_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 

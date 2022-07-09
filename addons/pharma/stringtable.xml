@@ -1015,5 +1015,35 @@
             <Italian>Livello medico richiesto per stimolazione</Italian>
             <Japanese>患者を刺激して起こすために必要な医療レベルを変更します</Japanese>
         </Key>
+        <Key ID="STR_KAT_pharma_Take_Ketamine">
+            <English>Take Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Ketamine_Box_Display">
+            <English>Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Ketamine_DescShort">
+            <English>Suppress pain and gives you K-Hole</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Fentanyl">
+            <English>Take Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Fentanyl_Box_Display">
+            <English>Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Fentanyl_DescShort">
+            <English>Suppress pain and gives you nausea</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Nalbuphine">
+            <English>Take Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Nalbuphine_Box_Display">
+            <English>Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Nalubphine_DescShort">
+            <English>Suppress pain and gives you depression</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Activity_usedItem">
+            <English>%1 used %2</English>
+        </Key>
     </Package>
 </Project>

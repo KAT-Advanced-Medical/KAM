@@ -11,7 +11,7 @@
  * <BOOLEAN>
  *
  * Example:
- * [player, "Ketamine"] call kat_pharma_fnc_treatmentAdvanced_KetamineLocal;
+ * [player, "Fentanyl"] call kat_pharma_fnc_treatmentAdvanced_FentanylLocal;
  *
  * Public: No
  */
