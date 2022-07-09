@@ -166,7 +166,7 @@ PREP_RECOMPILE_END;
 	"LIST",
 	LLSTRING(SURGICAL_LOCATION),
 	CBA_SETTINGS_CAT_M,
-	[[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
+	[[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],0],
 	true
 ] call CBA_Settings_fnc_init;
 
