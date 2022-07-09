@@ -275,7 +275,7 @@
             <English>Time to apply an NPWT dressing</English>
         </Key>
         <Key ID="STR_kat_surgery_FRACTURE_CHECK_TIMER">
-            <English>Fracture check level</English>
+            <English>Fracture check timer</English>
         </Key>
         <Key ID="STR_kat_surgery_FRACTURE_CHECK_MEDLEVEL">
             <English>Medical level required for someone to check fracture</English>
