@@ -39,7 +39,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class CheckFracture: CheckPulse {
         displayName = CSTRING(fracture_check);
-        displayNameProgress = CSTRING(fracture_check);
+        displayNameProgress = CSTRING(fracture_checking);
         category = "examine";
         treatmentLocations = 0;
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -52,7 +52,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(fractureSelect));
     };
     class ClosedReduction: CheckFracture {
-        displayName = CSTRING(closed);
+        displayName = CSTRING(fracture_closed);
         displayNameProgress = CSTRING(perform);
         category = "surgery";
         treatmentLocations = QGVAR(closedLocation);
@@ -66,7 +66,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(closedFracture));
     };
     class OpenReduction: CheckFracture {
-        displayName = CSTRING(open);
+        displayName = CSTRING(fracture_open);
         displayNameProgress = CSTRING(perform);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
@@ -134,7 +134,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openFractureProgress));
     };
     class Incision: BasicBandage {
-        displayName = CSTRING(Scalpel_use);
+        displayName = CSTRING(Scalpel_Use);
         displayNameProgress = CSTRING(perform);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
