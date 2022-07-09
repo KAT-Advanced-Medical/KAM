@@ -10,7 +10,7 @@ class CfgPatches {
             "kat_etomidate",
             "kat_lidocaine",
             "kat_lorazepam",
-            "kat_flumazenil"
+            "kat_flumazenil",
             "kat_scalpel",
             "kat_retractor",
             "kat_clamp",
