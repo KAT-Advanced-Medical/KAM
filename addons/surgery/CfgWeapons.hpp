@@ -4,7 +4,7 @@ class CfgWeapons {
 
     class kat_etomidate: ACE_ItemCore {
         scope = 2;
-        displayName = "Etomidate";
+        displayName = CSTRING(Etomidate_displayName);
         picture = QPATHTOF(ui\etomidate.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Etomidate_DescShort);
@@ -15,7 +15,7 @@ class CfgWeapons {
     };
     class kat_lorazepam: ACE_ItemCore {
         scope = 2;
-        displayName = "Lorazepam";
+        displayName = CSTRING(Lorazepam_displayName);
         picture = QPATHTOF(ui\lorazepam.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Lorazepam_DescShort);
@@ -26,7 +26,7 @@ class CfgWeapons {
     };
     class kat_flumazenil: ACE_ItemCore {
         scope = 2;
-        displayName = "Flumazenil";
+        displayName = CSTRING(Flumazenil_displayName);
         picture = QPATHTOF(ui\flumazenil.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Flumazenil_DescShort);
@@ -37,7 +37,7 @@ class CfgWeapons {
     };
     class kat_scalpel: ACE_ItemCore {
         scope = 2;
-        displayName = "Scalpel";
+        displayName = CSTRING(Scalpel_displayName);
         picture = QPATHTOF(ui\scalpel.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Scalpel_DescShort);
@@ -48,7 +48,7 @@ class CfgWeapons {
     };
     class kat_retractor: ACE_ItemCore {
         scope = 2;
-        displayName = "Retractor";
+        displayName = CSTRING(Retractor_displayName);
         picture = QPATHTOF(ui\retractor.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Retractor_DescShort);
@@ -59,7 +59,7 @@ class CfgWeapons {
     };
     class kat_clamp: ACE_ItemCore {
         scope = 2;
-        displayName = "Clamp";
+        displayName = CSTRING(Clamp_displayName);
         picture = QPATHTOF(ui\clamp.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Clamp_DescShort);
@@ -70,7 +70,7 @@ class CfgWeapons {
     };
     class kat_plate: ACE_ItemCore {
         scope = 2;
-        displayName = "Bone Plate";
+        displayName = CSTRING(Plate_DescShort); //Not an error - it has the same description as display name
         picture = QPATHTOF(ui\plate.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Plate_DescShort);
@@ -81,7 +81,7 @@ class CfgWeapons {
     };
     class kat_vacuum: ACE_ItemCore {
         scope = 2;
-        displayName = "Dressing Vacuum";
+        displayName = CSTRING(Vacuum_DescShort); //Not an error - it has the same description as display name
         picture = QPATHTOF(ui\vacuum.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Vacuum_DescShort);
