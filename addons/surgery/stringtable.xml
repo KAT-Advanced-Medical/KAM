@@ -109,6 +109,9 @@
         <Key ID="STR_kat_surgery_debridement_fail">
             <English>Wound Dressing Failed</English>
         </Key>
+        <Key ID="STR_kat_surgery_Etomidate_displayName">
+            <English>Etomidate</English>
+        </Key>
         <Key ID="STR_kat_surgery_Etomidate_DescShort">
             <English>General Anesthetic</English>
         </Key>
@@ -117,6 +120,9 @@
         </Key>
         <Key ID="STR_kat_surgery_Etomidate_Use">
             <English>Push Etomidate</English>
+        </Key>
+        <Key ID="STR_kat_surgery_Lorazepam_displayName">
+            <English>Lorazepam</English>
         </Key>
         <Key ID="STR_kat_surgery_Lorazepam_DescShort">
             <English>Sedtation medication</English>
@@ -127,6 +133,9 @@
         <Key ID="STR_kat_surgery_Lorazepam_Use">
             <English>Push Lorazepam</English>
         </Key>
+        <Key ID="STR_kat_surgery_Flumazenil_displayName">
+            <English>Flumazenil</English>
+        </Key>
         <Key ID="STR_kat_surgery_Flumazenil_DescShort">
             <English>Counter to Lorzaepam</English>
         </Key>
@@ -136,6 +145,9 @@
         <Key ID="STR_kat_surgery_Flumazenil_Use">
             <English>Push Flumazenil</English>
         </Key>
+        <Key ID="STR_kat_surgery_Scalpel_displayName">
+            <English>Scalpel</English>
+        </Key>
         <Key ID="STR_kat_surgery_Scalpel_DescShort">
             <English>Create incisions and debrides wounds</English>
         </Key>
@@ -144,6 +156,9 @@
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_Use">
             <English>Perform Incision</English>
+        </Key>
+        <Key ID="STR_kat_surgery_Retractor_displayName">
+            <English>Retractor</English>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_DescShort">
             <English>Wound Expander</English>
@@ -156,6 +171,9 @@
         </Key>
         <Key ID="STR_kat_surgery_Retractor_Action">
             <English>Exposing</English>
+        </Key>
+        <Key ID="STR_kat_surgery_Clamp_displayName">
+            <English>Clamp</English>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_DescShort">
             <English>Fracture Clamp</English>
@@ -288,6 +306,24 @@
         </Key>
         <Key ID="STR_kat_surgery_SETTING_SELF_CHECKFRACTURE">
             <English>Allow self check fracture</English>
+        </Key>
+        <Key ID="STR_kat_surgery_EXPOSED">
+            <English>exposed</English>
+        </Key>
+        <Key ID="STR_kat_surgery_IRRIGATED">
+            <English>irrigated</English>
+        </Key>
+        <Key ID="STR_kat_surgery_CLAMPED">
+            <English>clamped</English>
+        </Key>
+        <Key ID="STR_kat_surgery_COMMINUTED_FRACTURE">
+            <English>Comminuted Fracture</English>
+        </Key>
+        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE">
+            <English>Compound Fracture</English>
+        </Key>
+        <Key ID="STR_kat_surgery_SIMPLE_FRACTURE">
+            <English>Simple Fracture</English>
         </Key>
     </Package>
 </Project>
