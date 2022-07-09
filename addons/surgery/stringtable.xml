@@ -74,7 +74,7 @@
             <English>Patient's breath is ok</English>
         </Key>
         <Key ID="STR_kat_surgery_dialysis">
-            <English>Patient's breath is ok</English>
+            <English>Perform Dialysis</English>
         </Key>
         <Key ID="STR_kat_surgery_perform">
             <English>Performing</English>
