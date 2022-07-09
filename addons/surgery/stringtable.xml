@@ -241,6 +241,9 @@
         <Key ID="STR_kat_surgery_INCISION_TIMER">
             <English>Time to perform incisions</English>
         </Key>
+        <Key ID="STR_kat_surgery_BREATH_CHECK_TIME">
+            <English>Time to perform breath check</English>
+        </Key>
         <Key ID="STR_kat_surgery_INTERMEDIATE_TIMER">
             <English>Time to perform intermediate actions</English>
         </Key>
@@ -253,23 +256,38 @@
         <Key ID="STR_kat_surgery_NPWT_TIMER">
             <English>Time to apply an NPWT dressing</English>
         </Key>
-        <Key ID="STR_kat_surgery_FRACTURE_CHECK">
-            <English>Fracture check level</English>
-        </Key>
         <Key ID="STR_kat_surgery_FRACTURE_CHECK_TIMER">
             <English>Fracture check level</English>
         </Key>
-        <Key ID="STR_kat_surgery_CLOSED_REDUCTION">
-            <English>Closed reduction level</English>
+        <Key ID="STR_kat_surgery_FRACTURE_CHECK_MEDLEVEL">
+            <English>Medical level required for someone to check fracture</English>
         </Key>
-        <Key ID="STR_kat_surgery_SURGICAL_ACTION">
-            <English>Surgical action level</English>
+        <Key ID="STR_kat_surgery_CLOSED_REDUCTION_MEDLEVEL">
+            <English>Medical level required for closed reduction</English>
+        </Key>
+        <Key ID="STR_kat_surgery_SURGICAL_ACTION_MEDLEVEL">
+            <English>Medical level required for Surgical action</English>
+        </Key>
+        <Key ID="STR_kat_surgery_FLUMAZENIL_MEDLEVEL">
+            <English>Medical level required for Flumazenil</English>
+        </Key>
+        <Key ID="STR_kat_surgery_LORAZEPAM_MEDLEVEL">
+            <English>Medical level required for Lorazepam</English>
+        </Key>
+        <Key ID="STR_kat_surgery_ETOMIDATE_MEDLEVEL">
+            <English>Medical level required for Etomidate</English>
+        </Key>
+        <Key ID="STR_kat_surgery_BREATH_CHECK_MEDLEVEL">
+            <English>Medical level required for Breath check</English>
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_LOCATION">
             <English>Closed reduction location</English>
         </Key>
         <Key ID="STR_kat_surgery_SURGICAL_LOCATION">
             <English>Open reduction/Surgical location</English>
+        </Key>
+        <Key ID="STR_kat_surgery_SETTING_SELF_CHECKFRACTURE">
+            <English>Allow self check fracture</English>
         </Key>
     </Package>
 </Project>
