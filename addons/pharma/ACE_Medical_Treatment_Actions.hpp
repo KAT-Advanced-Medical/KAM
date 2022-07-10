@@ -37,7 +37,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         condition = "[_medic, 'kat_Carbonate'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Carbonate'] call ace_common_fnc_hasMagazine";
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Carbonate')] call FUNC(treatmentAdvanced_Carbonate));
+        callbackSuccess = QFUNC(treatmentAdvanced_Carbonate);
     };
     class Naloxone: Carbonate {
         displayName = CSTRING(Take_Naloxone);
@@ -48,7 +48,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_naloxone"};
         condition = QGVAR(naloxoneActive);
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Naloxone')] call FUNC(treatmentAdvanced_Naloxone));
+        callbackSuccess = QFUNC(treatmentAdvanced_Naloxone);
     };
     class TXA: Carbonate {
         displayName = CSTRING(Take_TXA);
@@ -59,7 +59,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_TXA"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && GVAR(txaActive) && FUNC(removeIV));
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_TXA));
+        callbackSuccess = QFUNC(treatmentAdvanced_TXA);
     };
     class Norepinephrine: Carbonate {
         displayName = CSTRING(Take_Norep);
@@ -70,7 +70,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_norepinephrine"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
-        callbackSuccess = "ace_medical_treatment_fnc_medication";
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
     class Phenylephrine: Carbonate {
         displayName = CSTRING(Take_Phenyl);
@@ -81,7 +81,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_phenylephrine"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
-        callbackSuccess = "ace_medical_treatment_fnc_medication";
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
     class Nitroglycerin: Carbonate {
         displayName = CSTRING(Take_Nitro);
@@ -92,7 +92,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_nitroglycerin"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
-        callbackSuccess = "ace_medical_treatment_fnc_medication";
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
     class Amiodarone: Carbonate {
         displayName = CSTRING(Take_Amiodarone);
@@ -103,7 +103,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_amiodarone"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Amiodarone')] call FUNC(treatmentAdvanced_Generic));
+        callbackSuccess = QFUNC(treatmentAdvanced_Amiodarone);
     };
     class Lidocaine: Carbonate {
         displayName = CSTRING(Take_Lidocaine);
@@ -114,7 +114,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_lidocaine"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Lidocaine')] call FUNC(treatmentAdvanced_Generic));
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
     class Atropine: Carbonate {
         displayName = CSTRING(Take_Atropine);
@@ -125,7 +125,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_atropine"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Atropine')] call FUNC(treatmentAdvanced_Atropine));
+        callbackSuccess = QFUNC(treatmentAdvanced_Atropine);
     };
     class Ketamine: Carbonate {
         displayName = CSTRING(Take_Ketamine);
@@ -171,7 +171,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && GVAR(Reorientation_Enable));
         patientStateCondition = 0;
         litter[] = {};
-        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_Reorientation));
+        callbackSuccess = QFUNC(treatmentAdvanced_Reorientation);
         animationMedic = "AinvPknlMstpSnonWnonDnon_medicUp4";
         animationMedicProne = "AinvPknlMstpSnonWnonDnon_medicUp4";
     };

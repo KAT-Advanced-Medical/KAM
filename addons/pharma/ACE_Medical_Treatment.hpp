@@ -16,8 +16,8 @@ class ADDON {
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
             hrIncreaseHigh[] = {0, 0};
-            timeInSystem = 600;
-            timeTillMaxEffect = 15;
+            timeInSystem = 120;
+            timeTillMaxEffect = 5;
             maxDose = 3;
             incompatibleMedication[] = {};
             viscosityChange = 0;
@@ -110,5 +110,38 @@ class ADDON {
             incompatibleMedication[] = {};
             viscosityChange = -5;
         };
+        class Atropine {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0, 0};
+            hrIncreaseNormal[] = {0, 0, 0};
+            hrIncreaseHigh[] = {0, 0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            incompatibleMedication[]= {};
+            viscosityChange = 0;
+        };
+        class Amiodarone{
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0, 0};
+            hrIncreaseNormal[] = {0, 0, 0};
+            hrIncreaseHigh[] = {0, 0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            incompatibleMedication[]= {};
+            viscosityChange = 0;
+        }
+        class Lidocaine{
+            painReduce = 0.2;
+            hrIncreaseLow[] = {0, 0, 0};
+            hrIncreaseNormal[] = {0, 0, 0};
+            hrIncreaseHigh[] = {0, 0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            incompatibleMedication[]= {};
+            viscosityChange = 0;
+        }
     };
 };

@@ -58,4 +58,3 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
-#include "ACE_Medical_Advanced.hpp"

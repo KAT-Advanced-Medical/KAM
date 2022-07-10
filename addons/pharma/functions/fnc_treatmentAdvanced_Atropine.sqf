@@ -16,12 +16,10 @@
  * Public: Yes
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
-if (local _patient) then {
-    ["treatmentAtropine", [_patient, "Atropine"]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentAtropine", [_patient, "Atropine"], _patient] call CBA_fnc_targetEvent;
-};
+[_patient, _usedItem] call ace_medical_treatment_fnc_addToTriageCard;
+[_patient, "activity", LSTRING(Activity_usedItem), [[_medic] call ace_common_fnc_getName, getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ace_medical_treatment_fnc_addToLog;
 
-true;
+[QGVAR(atropineLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+[QGVAR(medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;

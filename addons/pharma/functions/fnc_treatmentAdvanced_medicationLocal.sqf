@@ -76,9 +76,4 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange] call ace_medical_status_fnc_addMedicationAdjustment;
 
 // Check for medication compatiblity
-[_patient, _className, _maxDose, _incompatibleMedication] call ace_medical_treatment_onMedicationUsage;
-
-[_target, _item] call ace_medical_treatment_fnc_addToTriageCard;
-[_target, "activity", LSTRING(push_log), [[_medic] call ace_common_fnc_getName, _item]] call ace_medical_treatment_fnc_addToLog;
-
-true
+[_patient, _className, _maxDose, _incompatibleMedication] call ace_medical_treatment_fnc_onMedicationUsage;

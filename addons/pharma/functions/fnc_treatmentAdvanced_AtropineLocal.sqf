@@ -16,7 +16,9 @@
  * Public: No
  */
 
-params ["_target", "_item"];
+params ["_patient", "_bodyPart", "_classname"];
+
+private _medicationArray = _patient getVariable ["ace_medical_medications", []];
 
 {
     _x params ["_medication"];
@@ -27,8 +29,3 @@ params ["_target", "_item"];
 } forEach (_medicationArray);
 
 _patient setVariable ["ace_medical_medications", _medicationArray, true];
-
-[_target, _item] call ace_medical_treatment_fnc_addToTriageCard;
-[_target, "activity", LSTRING(push_log), [[_medic] call ace_common_fnc_getName, "Atropine"]] call ace_medical_treatment_fnc_addToLog;
-
-true

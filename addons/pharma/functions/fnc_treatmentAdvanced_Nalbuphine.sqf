@@ -16,12 +16,6 @@
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
-if (local _patient) then {
-    ["treatmentNalbuphine", [_patient, "Nalbuphine"]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentNalbuphine", [_patient, "Nalbuphine"], _patient] call CBA_fnc_targetEvent;
-};
-
-true;
+[QGVAR(medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;

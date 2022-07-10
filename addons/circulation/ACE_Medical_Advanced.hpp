@@ -128,13 +128,5 @@ class ACE_Medical_Advanced {
                 compatibility[] = {"AB+","AB-"};
             };
         };
-        class Medication {
-            class Atropine {
-                //change for effect from Atropine. Anomalie here, if you give more it will push your heart rate
-                hrIncreaseLow[] = {15, 20, 20};
-                hrIncreaseNormal[] = {10, 15, 15};
-                hrIncreaseHigh[] = {5, 10, 10};
-            };
-        };
     };
 };

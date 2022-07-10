@@ -17,14 +17,11 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_medication"];
+params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
+[_patient, _usedItem] call ace_medical_treatment_fnc_addToTriageCard;
+[_patient, "activity", LSTRING(Activity_usedItem), [[_medic] call ace_common_fnc_getName, getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ace_medical_treatment_fnc_addToLog;
 ["kat_Carbonate", _medic, _patient, "head", "Carbonate"] call FUNC(removeItemfromMag);
 
-if (local _patient) then {
-    ["treatmentCarbonate", [_medic, _patient, _medication]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentCarbonate", [_medic, _patient, _medication], _patient] call CBA_fnc_targetEvent;
-};
-
-true;
+[QGVAR(carbonateLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+[QGVAR(medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
