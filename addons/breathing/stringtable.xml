@@ -100,6 +100,9 @@
             <Korean>심정지 중 SpO2 감소 활성화</Korean>
             <French>Autoriser la réduction de la SpO2 d’arrêt cardiaque</French>
         </Key>
+        <Key ID="STR_kat_breathing_SETTING_PerfusionMultiplier">
+            <English>Perfusion multiplier</English>
+        </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
             <German>Wahrscheinlichkeit für einen Pneumothorax</German>
