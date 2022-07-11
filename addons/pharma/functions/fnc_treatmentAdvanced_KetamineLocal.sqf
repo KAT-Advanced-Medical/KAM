@@ -5,7 +5,6 @@
  *
  * Arguments:
  * 0: Medic <OBJECT>
- * 1: Item Classname <STRING>
  *
  * Return Value:
  * <BOOLEAN>
@@ -16,4 +15,6 @@
  * Public: No
  */
 
-params ["_patient", "_medicationString"];
+params ["_patient"];
+
+[true] call FUNC(effectKetamine);

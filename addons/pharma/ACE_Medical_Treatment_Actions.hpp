@@ -136,7 +136,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_ketamine"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(treatmentAdvanced_Ketamine);
     };
     class Fentanyl: Carbonate {
         displayName = CSTRING(Take_Fentanyl);
@@ -147,7 +147,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_fentanyl"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(treatmentAdvanced_Fentanyl);
     };
     class Nalbuphine: Carbonate {
         displayName = CSTRING(Take_Nalbuphine);
@@ -158,7 +158,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_nalbuphine"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
         patientStateCondition = 0;
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(treatmentAdvanced_Nalbuphine);
     };
     class Reorientation: Carbonate {
         displayName = CSTRING(Take_Reorient);

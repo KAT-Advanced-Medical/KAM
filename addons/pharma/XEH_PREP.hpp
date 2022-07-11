@@ -1,5 +1,6 @@
 PREP(applyIV);
 PREP(checkIV);
+PREP(effectKetamine);
 PREP(getBloodVolumeChange);
 PREP(init);
 PREP(removeItemfromMag);

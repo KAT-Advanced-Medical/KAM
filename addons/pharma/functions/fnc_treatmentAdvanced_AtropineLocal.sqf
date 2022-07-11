@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_patient", "_bodyPart", "_classname"];
+params ["_patient"];
 
 private _medicationArray = _patient getVariable ["ace_medical_medications", []];
 
