@@ -76,6 +76,9 @@
             <Russian>Вероятность закупорки дыхательных путей</Russian>
             <Japanese>気道異物の確率</Japanese>
         </Key>
+        <Key ID="STR_kat_airway_SETTING_occlusion_repeatTimer">
+            <English>Occlusion repeat timer</English>
+        </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
             <German>Erbrechengeräusch abspielen?</German>

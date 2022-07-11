@@ -17,9 +17,8 @@
 
 params ["_unit"];
 
-if !(GVAR(enable)) exitWith {};
-
-if (_unit getVariable ["kat_O2Breathing_PFH", false]) exitWith {};
+//Other mods can utilise KAT_SpO2Change_Exclusion variable to prevent occlusions from happening
+if ((_unit getVariable ["kat_O2Breathing_PFH", false]) || !(GVAR(enable)) || (_unit getVariable ["KAT_SpO2Change_Exclusion", false])) exitWith {};
 _unit setVariable ["kat_O2Breathing_PFH", true];
 
 if (!local _unit) then {
