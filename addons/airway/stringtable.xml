@@ -78,7 +78,7 @@
         </Key>
         <Key ID="STR_kat_airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
-			<German>Zeit für die Wiederholung des Erbrechens</German>
+            <German>Zeit für die Wiederholung des Erbrechens</German>
         </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>

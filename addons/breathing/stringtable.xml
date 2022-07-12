@@ -78,7 +78,7 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
-			<German>SpO2 positiver Multiplikator</German>
+            <German>SpO2 positiver Multiplikator</German>
             <Japanese>SpO2正の乗数</Japanese>
             <Chinesesimp>SpO2值正乘数</Chinesesimp>
             <Russian>Положительный множитель SpO2</Russian>
@@ -87,16 +87,16 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyNegative">
             <English>SpO2 negative multiplier</English>
-			<German>SpO2 negativer Multiplikator</German>
+            <German>SpO2 negativer Multiplikator</German>
             <Japanese>SpO2負の乗数</Japanese>
             <Chinesesimp>SpO2值负乘数</Chinesesimp>
             <Russian>Отрицательный множитель SpO2</Russian>
             <Korean>SpO2의 감소 배율</Korean>
-            <French>Multiplicateur négatif de la SpO2</French>		
+            <French>Multiplicateur négatif de la SpO2</French>        
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
-			<German>Aktivieren von SpO2-Verlust bei Herzstillstand</German>
+            <German>Aktivieren von SpO2-Verlust bei Herzstillstand</German>
             <Japanese>心停止時のSpO2低下を有効化</Japanese>
             <Chinesesimp>心脏骤停时减少SpO2的下降</Chinesesimp>
             <Russian>Включить снижение SpO2 при остановке сердца</Russian>
@@ -105,7 +105,7 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_PerfusionMultiplier">
             <English>Perfusion multiplier</English>
-			<German>Perfusionsindex</German>
+            <German>Perfusionsindex</German>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
