@@ -19,9 +19,9 @@
  params ["_unit", "_allDamages", "", "_ammo"];
  _allDamages select 0 params ["_damage","_bodyPart"];
 
-if !((GVAR(enable)) || (_bodyPart isEqualTo "Body") || (_ammo isKindOF "BulletBase")) exitWith {};
+if (!(GVAR(enable)) || !(_bodyPart isEqualTo "Body") || !(_ammo isKindOF "BulletBase")) exitWith {};
 //Other mods can utilise KAT_Pneumothorax_Exclusion variable to prevent Pneumothorax from happening
-if ((_damage < GVAR(pneumothoraxDamageThreshold)) || (GVAR(pneumothorax) == 0) || (_unit getVariable ["KAT_Pneumothorax_Exclusion", false])) exitWith {};
+if ((_damage < GVAR(pneumothoraxDamageThreshold)) || (GVAR(pneumothorax) isEqualTo 0) || (_unit getVariable ["KAT_Pneumothorax_Exclusion", false])) exitWith {};
 
 if (random 100 <= GVAR(pneumothorax)) then {
     // add breathing sound
