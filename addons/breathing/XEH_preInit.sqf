@@ -88,6 +88,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// breathing SpO2 perfusion multiplier
+[
+    QGVAR(SpO2_PerfusionMultiplier),
+    "SLIDER",
+    LLSTRING(SETTING_PerfusionMultiplier),
+    CBA_SETTINGS_CAT,
+    [0, 10, 1, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // breathing probability for a pneumothorax
 // a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
 [
