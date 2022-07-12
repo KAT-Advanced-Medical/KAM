@@ -17,9 +17,8 @@
 
 params ["_unit"];
 
-if !(GVAR(enable)) exitWith {};
-
-if (_unit getVariable ["kat_O2Breathing_PFH", false]) exitWith {};
+//Other mods can utilise KAT_SpO2Change_Exclusion variable to prevent occlusions from happening
+if ((_unit getVariable ["kat_O2Breathing_PFH", false]) || !(GVAR(enable)) || (_unit getVariable ["KAT_SpO2Change_Exclusion", false])) exitWith {};
 _unit setVariable ["kat_O2Breathing_PFH", true];
 
 if (!local _unit) then {
@@ -32,7 +31,6 @@ if (!local _unit) then {
     if !(alive _unit) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_O2Breathing_PFH", nil];
-        _unit setVariable ["KAT_medical_airwayStatus", 100, true];
     };
 
     private _airway = true;
@@ -59,7 +57,7 @@ if (!local _unit) then {
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && { GVAR(SpO2_dieActive) && { !_blockDeath } }) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
-        [_unit, "#setDead"] call ace_medical_status_fnc_setDead;
+        [_unit, "terminal_SpO2_death"] call ace_medical_status_fnc_setDead;
         _unit setVariable ["kat_O2Breathing_PFH", nil];
     };
 
@@ -107,7 +105,7 @@ if (!local _unit) then {
         };
 
         if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
-            _output = -0.2 * _multiplierNegative;
+            _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
         };
 
         if (_heartRate >= 25) then {

@@ -29,6 +29,7 @@ _unit setVariable ["kat_airway_overstretch", false, true];
 _unit setVariable ["kat_airway_startTime", 0, true];
 _unit setVariable ['kat_AEDinUse', false, true];
 KAT_forceWakeup = false;
+_unit setVariable [QGVAR(recovery), false, true];
 
 // KAT Breathing
 
@@ -43,7 +44,6 @@ _unit setVariable ["kat_breathing_pulseoximeter", false, true];
 _unit setVariable ["kat_PulseoxiInUse_PFH", nil];
 _unit setVariable ["kat_breathing_o2", false, true];
 _unit setVariable ["KAT_circulation_X", false, true];
-_unit setVariable [QGVAR(recovery), false, true];
 
 // KAT Circulation
 
