@@ -92,7 +92,7 @@
             <Chinesesimp>SpO2值负乘数</Chinesesimp>
             <Russian>Отрицательный множитель SpO2</Russian>
             <Korean>SpO2의 감소 배율</Korean>
-            <French>Multiplicateur négatif de la SpO2</French>        
+            <French>Multiplicateur négatif de la SpO2</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
@@ -106,6 +106,7 @@
         <Key ID="STR_kat_breathing_SETTING_PerfusionMultiplier">
             <English>Perfusion multiplier</English>
             <German>Perfusionsindex</German>
+            <Korean>관류 계수</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
