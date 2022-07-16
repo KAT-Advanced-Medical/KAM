@@ -15,5 +15,16 @@
  *
  * Public: No
  */
+params ["_patient"];
 
-params ["_patient", "_medicationString"];
+GVAR(ppNalbuphineDynamic) = ppEffectCreate ["DynamicBlur",511];
+
+GVAR(ppNalbuphineDynamic) ppEffectEnable true;
+
+GVAR(ppNalbuphineDynamic) ppEffectAdjust [1.76];
+
+GVAR(ppNalbuphineDynamic) ppEffectCommit 3;
+
+[{
+	GVAR(ppNalbuphineDynamic) ppEffectEnable false;
+},[_patient], 60] call CBA_fnc_waitAndExecute;
