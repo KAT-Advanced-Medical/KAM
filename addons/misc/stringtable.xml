@@ -346,5 +346,17 @@
             <Russian>Позволяет прикрепить носилки к вертолету (двойной щелчок)</Russian>
             <Japanese>ヘリコプターに担架を取り付けることができます(ダブルクリック)</Japanese>
         </Key>
+        <Key ID="STR_kat_misc_SETTING_incompatibilityWarning">
+            <English>Incompatible addon warning</English>
+            <Czech>Varování nekompatibilního addonu</Czech>
+        </Key>
+        <Key ID="STR_kat_misc_SETTING_incompatibilityWarning_Desc">
+            <English>Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that could negatively affect correct functionality of KAT are used.\n Warning disappears after 60 seconds.</English>
+            <Czech>Vyhodí varování a přidá řádek do RPT logu pokud jsou použity nekompatibilní addony(Zanesené námi - vývojáři), které by mohli negativně ovlivnit správnou funkcionalitu KATu.\n Varování zmizí po 60 sekundách. </Czech>
+        </Key>
+        <Key ID="STR_kat_misc_incompatibilityWarning_Desc">
+            <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
+            <Czech>[KAM VAROVÁNÍ] Nekompatibilní addon(y), které by mohly negativně ovlivnit správnou funkcionalitu detekovány. KAT - Advanced Medical REWRITE Developerský Tým silně doporučuje odebrat tyto addony: %1</Czech>
+        </Key>
     </Package>
 </Project>
