@@ -22,7 +22,7 @@ private _foundIncompatibleAddons = [];
 { if (isClass(configFile >> "CfgPatches" >> _x)) then {
 	_foundIncompatibleAddons append [_x];
 	         //Incompatible addons
-}; } forEach ["BAD_EXAMPLE_ADDON1","BAD_EXAMPLE_ADDON2","addon2bleeeee","addon3bleeeee"];
+}; } forEach ["KATMEDICALSTATIC","kat_evac","KATMEDICALsteth","adv_aceCPR","aceP_main"];
 
 if ((count _foundIncompatibleAddons) > 0) then {
 	diag_log format [LLSTRING(incompatibilityWarning_Desc), _foundIncompatibleAddons];
