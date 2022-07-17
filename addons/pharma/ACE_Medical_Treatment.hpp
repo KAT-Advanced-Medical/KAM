@@ -131,7 +131,7 @@ class ADDON {
             maxDose = 4;
             incompatibleMedication[]= {};
             viscosityChange = 0;
-        }
+        };
         class Lidocaine{
             painReduce = 0.2;
             hrIncreaseLow[] = {0, 0, 0};
@@ -142,6 +142,6 @@ class ADDON {
             maxDose = 4;
             incompatibleMedication[]= {};
             viscosityChange = 0;
-        }
+        };
     };
 };

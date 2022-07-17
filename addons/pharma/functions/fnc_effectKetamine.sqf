@@ -1,21 +1,28 @@
 #include "script_component.hpp"
 /*
- * Author: MiszczuZPolski
- * 
+ * Author: Glowbal
+ * Calculates the blood volume change and decreases the IVs given to the unit.
  *
  * Arguments:
- * 0: Medic <OBJECT>
+ * 0: The Unit <OBJECT>
+ * 1: Time since last update <NUMBER>
+ * 2: Global Sync Values (bloodbags) <BOOL>
  *
  * Return Value:
- * <BOOLEAN>
+ * Blood volume change (liters per second) <NUMBER>
  *
  * Example:
- * [player, "Ketamine"] call kat_pharma_fnc_treatmentAdvanced_KetamineLocal;
+ * [player, 1, true] call ace_medical_status_fnc_getBloodVolumeChange
  *
  * Public: No
  */
+params ["_patient", "_enable"];
 
-params ["_patient"];
+if (!_enable) exitWith {
+	GVAR(ppKetamineBlur) ppEffectEnable false;
+	GVAR(ppKetamineWet) ppEffectEnable false;
+	GVAR(ppKetamineColor) ppEffectEnable false;
+};
 
 GVAR(ppKetamineBlur) = ppEffectCreate ["RadialBlur", 110];
 GVAR(ppKetamineWet) = ppEffectCreate ["WetDistortion",310];

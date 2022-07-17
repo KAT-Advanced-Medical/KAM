@@ -1,22 +1,26 @@
 #include "script_component.hpp"
 /*
- * Author: MiszczuZPolski
- * 
+ * Author: Glowbal
+ * Calculates the blood volume change and decreases the IVs given to the unit.
  *
  * Arguments:
- * 0: Medic <OBJECT>
- * 1: Item Classname <STRING>
+ * 0: The Unit <OBJECT>
+ * 1: Time since last update <NUMBER>
+ * 2: Global Sync Values (bloodbags) <BOOL>
  *
  * Return Value:
- * <BOOLEAN>
+ * Blood volume change (liters per second) <NUMBER>
  *
  * Example:
- * [player, "Fentanyl"] call kat_pharma_fnc_treatmentAdvanced_FentanylLocal;
+ * [player, 1, true] call ace_medical_status_fnc_getBloodVolumeChange
  *
  * Public: No
  */
+params ["_patient", "_enable"];
 
-params ["_patient"];
+if (!_enable) exitWith {
+	GVAR(ppFentanylWet) ppEffectEnable false;
+};
 
 GVAR(ppFentanylWet) = ppEffectCreate ["WetDistortion",311];
 

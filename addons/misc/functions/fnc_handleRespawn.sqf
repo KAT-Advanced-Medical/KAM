@@ -65,6 +65,9 @@ _unit setVariable ["kat_pharma_IVsite", 0, true];
 _unit setVariable ["kat_pharma_ondUse", false, true];
 _unit setVariable ["kat_pharma_active", false, true];
 _unit setVariable ["kat_IVPharma_PFH", nil];
+[_unit, false] call EFUNC(pharma,effectKetamine);
+[_unit, false] call EFUNC(pharma,effectFentanyl);
+[_unit, false] call EFUNC(pharma,effectNalbuphine);
 
 
 // Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten

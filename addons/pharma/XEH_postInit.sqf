@@ -6,7 +6,4 @@
 [QGVAR(amiodaroneLocal), LINKFUNC(treatmentAdvanced_AmiodaroneLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(txaLocal), LINKFUNC(treatmentAdvanced_TXALocal)] call CBA_fnc_addEventHandler;
 [QGVAR(reorientationLocal), LINKFUNC(treatmentAdvanced_ReorientationLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(ketamineLocal), LINKFUNC(treatmentAdvanced_KetamineLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(fentanylLocal), LINKFUNC(treatmentAdvanced_FentanylLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(nalbuphineLocal), LINKFUNC(treatmentAdvanced_NalbuphineLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(medicationLocal), LINKFUNC(treatmentAdvanced_medicationLocal)] call CBA_fnc_addEventHandler;
