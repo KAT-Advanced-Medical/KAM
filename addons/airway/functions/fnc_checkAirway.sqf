@@ -26,6 +26,9 @@ private _yesornoOccluded = LSTRING(N);
 if (_target getVariable [QGVAR(obstruction), false]) then {
     _messageairwayobstruction = localize LSTRING(message_obstruction_yes);
     _yesornoobstruction = "";
+    if (_target getVariable[QGVAR(overstretch), false]) then {
+    _yesornoobstruction = LLSTRING(message_obstructionTemporarilyMitigated);
+    };
     _target setVariable ["ace_medical_triageLevel", 3, true];
 };
 if (_target getVariable ["KAT_medical_airwayOccluded", false]) then {
