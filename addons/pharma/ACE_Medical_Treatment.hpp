@@ -77,17 +77,6 @@ class ADDON {
             incompatibleMedication[] = {};
             viscosityChange = 10;
         };
-        class Morphine {
-            painReduce = 0.7;
-            hrIncreaseLow[] = {-20, -15};
-            hrIncreaseNormal[] = {-25, -10};
-            hrIncreaseHigh[] = {-25, -15};
-            timeInSystem = 900;
-            timeTillMaxEffect = 40;
-            maxDose = 4;
-            incompatibleMedication[] = {};
-            viscosityChange = -25;
-        };
         class Nalbuphine {
             painReduce = 0.6;
             hrIncreaseLow[] = {-5, 0};

@@ -105,6 +105,9 @@ _patient setVariable ["ace_medical_medications", [], true];
 _patient setVariable ["kat_pharma_ondUse", false, true];
 _patient setVariable ["kat_circulation_asystole", 0, true];
 _patient setVariable ["kat_circulation_CPRcount", 2, true];
+[_patient, false] call EFUNC(pharma,effectKetamine);
+[_patient, false] call EFUNC(pharma,effectFentanyl);
+[_patient, false] call EFUNC(pharma,effectNalbuphine);
 
 // Reset triage card since medication is reset
 _patient setVariable ["ace_medical_triageCard", [], true];

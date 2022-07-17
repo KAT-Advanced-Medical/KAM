@@ -18,7 +18,7 @@
  */
 
 // todo: move this macro to script_macros_medical.hpp?
-#define MORPHINE_PAIN_SUPPRESSION 0.7
+#define MORPHINE_PAIN_SUPPRESSION 0.6
 
 params ["_patient", "_bodyPart", "_classname"];
 TRACE_3("medicationLocal",_patient,_bodyPart,_classname);

@@ -11,7 +11,7 @@
  * None
  *`
  * Example:
- * [player, "Accuvac"] call kat_pharma_fnc_treatmentAdvanced_CarbonateLocal;
+ * [player, cursorObject] call kat_pharma_fnc_treatmentAdvanced_CarbonateLocal;
  *
  * Public: No
  */

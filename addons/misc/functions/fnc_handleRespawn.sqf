@@ -69,7 +69,6 @@ _unit setVariable ["kat_IVPharma_PFH", nil];
 [_unit, false] call EFUNC(pharma,effectFentanyl);
 [_unit, false] call EFUNC(pharma,effectNalbuphine);
 
-
 // Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten
 _unit spawn {
     _unit = param [0,objNull,[objNull]];

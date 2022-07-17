@@ -17,7 +17,6 @@
  */
 
 params ["_player", "_mag"];
-systemChat "działa ammo";
 
 private _matchesMags = magazinesAmmo _player select {_x select 0 == _mag};
 _player removeMagazineGlobal _mag;
