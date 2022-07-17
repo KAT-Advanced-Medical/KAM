@@ -5,13 +5,12 @@
  *
  * Arguments:
  * 0: Medic <OBJECT>
- * 1: Medication <STRING>
  *
  * Return Value:
- * Succesful treatment started <BOOL>
+ * None
  *
  * Example:
- * [player, "TXA"] call kat_pharma_fnc_treatmentAdvanced_TXALocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_TXALocal;
  *
  * Public: No
  */
@@ -24,7 +23,6 @@ params ["_patient"];
 
     private _medicationArray = _patient getVariable ["ace_medical_medications", []];
     private _TXA = false;
-    private _TXAactive = true;
 
     {
         _x params ["_medication"];

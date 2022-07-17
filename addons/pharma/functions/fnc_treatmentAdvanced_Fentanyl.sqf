@@ -6,12 +6,16 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
+ * 3: Treatment <STRING>
+ * 4: Item User (not used) <OBJECT>
+ * 5: Used Item <STRING>
  *
  * Return Value:
- * Succesful treatment started <BOOL>
+ * None
  *
  * Example:
- * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_Fentanyl;
+ * [player, cursorObject, "RightArm", "Fentanyl", objNull, "kat_fentanyl"] call kat_pharma_fnc_treatmentAdvanced_Fentanyl;
  *
  * Public: No
  */

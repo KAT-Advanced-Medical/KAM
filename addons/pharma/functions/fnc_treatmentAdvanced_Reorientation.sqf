@@ -8,7 +8,7 @@
  * 1: Patient <OBJECT>
  *
  * Return Value:
- * Succesful treatment started <BOOL>
+ * None
  *
  * Example:
  * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_Reorientation;

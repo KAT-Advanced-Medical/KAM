@@ -6,10 +6,9 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Item Classname <STRING>
  *
  * Return Value:
- * Succesful treatment <BOOL>
+ * None
  *`
  * Example:
  * [player, "Accuvac"] call kat_pharma_fnc_treatmentAdvanced_CarbonateLocal;

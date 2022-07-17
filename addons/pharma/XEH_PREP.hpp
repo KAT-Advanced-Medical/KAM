@@ -21,6 +21,7 @@ PREP(treatmentAdvanced_medicationLocal);
 PREP(treatmentAdvanced_Nalbuphine);
 PREP(treatmentAdvanced_Naloxone);
 PREP(treatmentAdvanced_NaloxoneLocal);
+PREP(treatmentAdvanced_Painkillers);
 PREP(treatmentAdvanced_Reorientation);
 PREP(treatmentAdvanced_ReorientationLocal);
 PREP(treatmentAdvanced_TXA);

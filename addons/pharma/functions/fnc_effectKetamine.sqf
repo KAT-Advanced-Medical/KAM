@@ -1,18 +1,17 @@
 #include "script_component.hpp"
 /*
- * Author: Glowbal
- * Calculates the blood volume change and decreases the IVs given to the unit.
+ * Author: MiszczuZPolski
+ * Create Ketamine post process effect
  *
  * Arguments:
- * 0: The Unit <OBJECT>
- * 1: Time since last update <NUMBER>
- * 2: Global Sync Values (bloodbags) <BOOL>
+ * 0: Patient <OBJECT>
+ * 1: Enable <BOOL>
  *
  * Return Value:
- * Blood volume change (liters per second) <NUMBER>
+ * NONE
  *
  * Example:
- * [player, 1, true] call ace_medical_status_fnc_getBloodVolumeChange
+ * [_patient, true] call kat_pharma_fnc_effectKetamine;
  *
  * Public: No
  */

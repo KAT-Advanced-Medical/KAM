@@ -4,18 +4,17 @@
  * Locates and Removes Bradycardia Effect.
  *
  * Arguments:
- * 0: Medic <OBJECT>
- * 1: Medication <STRING>
+ * 0: Patient <OBJECT>
  *
  * Return Value:
- * <BOOLEAN>
+ * None
  *
  * Example:
- * [player, "Atropine"] call kat_pharma_fnc_treatmentAdvanced_AtropineLocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_AtropineLocal;
  *
  * Public: No
  */
-
+ 
 params ["_patient"];
 
 private _medicationArray = _patient getVariable ["ace_medical_medications", []];

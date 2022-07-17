@@ -8,7 +8,7 @@
  * 1: Item Classname <STRING>
  *
  * Return Value:
- * <BOOLEAN>
+ * None
  *
  * Example:
  * [player, "Naloxone"] call kat_pharma_fnc_treatmentAdvanced_NaloxoneLocal;

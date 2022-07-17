@@ -1,12 +1,10 @@
 #include "script_component.hpp"
 /*
- * Author: Mazinski.H
- * Adds Medication to patient's logs
+ * Author: Mazinski.H, Edited by MiszczuZPolski
+ * Applies Bradycardia randomly
  *
  * Arguments:
- * 0: Medic <OBJECT>
- * 1: Patient <OBJECT>
- * 2: Item Classname <OBJECT>
+ * 0: Patient <OBJECT>
  *
  * Return Value:
  * Succesful treatment started <BOOL>
