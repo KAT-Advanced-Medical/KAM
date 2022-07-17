@@ -217,7 +217,7 @@
             <Japanese>無し</Japanese>
         </Key>
         <Key ID="STR_kat_airway_message_obstructionTemporarilyMitigated">
-            <English>Temporarily mitigated</English>
+            <English>Mitigated</English>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
