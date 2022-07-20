@@ -84,7 +84,7 @@
             <Russian>Положительный множитель SpO2</Russian>
             <Korean>SpO2의 회복 배율</Korean>
             <French>Multiplicateur positif de la SpO2</French>
-            <Polish>SpO2 dodatni mnożnik</Polish>
+            <Polish>Dodatni mnożnik SpO2</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyNegative">
             <English>SpO2 negative multiplier</English>
@@ -94,7 +94,7 @@
             <Russian>Отрицательный множитель SpO2</Russian>
             <Korean>SpO2의 감소 배율</Korean>
             <French>Multiplicateur négatif de la SpO2</French>
-            <Polish>SpO2 ujemny mnożnik</Polish>
+            <Polish>Ujemny mnożnik SpO2</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
