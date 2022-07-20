@@ -80,6 +80,7 @@
             <English>Occlusion repeat timer</English>
             <German>Zeit für die Wiederholung des Erbrechens</German>
             <Korean>구토 반복 타이머</Korean>
+            <Polish>Czas powtarzania zablokowania</Polish>
         </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
