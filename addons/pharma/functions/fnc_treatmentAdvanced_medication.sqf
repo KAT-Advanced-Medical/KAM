@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: Mazinski.H
- * Begins TXA Treatment
+ * Author: Glowbal, mharis001 Edited by MiszczuZPolski
+ * Administers medication to the patient on the given body bodypart.
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", "TXA", objNull, "kat_TXA"] call kat_pharma_fnc_treatmentAdvanced_TXA;
+ * [player, cursorObject, "RightArm", "Morphine", objNull, "ACE_morphine"] call ace_medical_treatment_fnc_medication
  *
  * Public: No
  */
@@ -26,4 +26,3 @@ params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 [_patient, "activity", LSTRING(Activity_usedItem), [[_medic] call ace_common_fnc_getName, getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ace_medical_treatment_fnc_addToLog;
 
 [QGVAR(medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
-[QGVAR(txaLocal), _patient, _patient] call CBA_fnc_targetEvent;

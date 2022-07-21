@@ -65,6 +65,9 @@ _unit setVariable ["kat_pharma_IVsite", 0, true];
 _unit setVariable ["kat_pharma_ondUse", false, true];
 _unit setVariable ["kat_pharma_active", false, true];
 _unit setVariable ["kat_IVPharma_PFH", nil];
+[_unit, false] call EFUNC(pharma,effectKetamine);
+[_unit, false] call EFUNC(pharma,effectFentanyl);
+[_unit, false] call EFUNC(pharma,effectNalbuphine);
 
 //KAT Surgery
 
@@ -78,7 +81,6 @@ _unit setVariable ["kat_surgery_fractures", [0,0,0,0,0,0], true];
 _unit setVariable ["kat_surgery_lidocaine", false, true];
 _unit setVariable ["kat_surgery_etomidate", false, true];
 _unit setVariable ["kat_surgery_sedated", false, true];
-
 
 // Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten
 _unit spawn {
