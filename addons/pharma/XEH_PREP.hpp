@@ -25,8 +25,6 @@ PREP(treatmentAdvanced_medicationLocal);
 PREP(treatmentAdvanced_Nalbuphine);
 PREP(treatmentAdvanced_Dialysis);
 PREP(treatmentAdvanced_DialysisLocal);
-PREP(treatmentAdvanced_Generic);
-PREP(treatmentAdvanced_GenericLocal);
 PREP(treatmentAdvanced_Naloxone);
 PREP(treatmentAdvanced_NaloxoneLocal);
 PREP(treatmentAdvanced_Painkillers);
