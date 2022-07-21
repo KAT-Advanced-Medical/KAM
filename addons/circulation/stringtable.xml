@@ -787,7 +787,7 @@
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
             <Chinese>服用中</Chinese>
-            <Chinesesimp>服用中...hinesesimp>
+            <Chinesesimp>服用中...</Chinesesimp>
             <Czech>Používám</Czech>
             <Korean>사용 중</Korean>
             <French>Utilisation</French>
@@ -803,7 +803,7 @@
             <Polish>Sprawdź rytm</Polish>
             <Turkish>Ritmi Kontrol Et</Turkish>
             <Chinese>检查节奏</Chinese>
-            <Chinese>检查心率曲线</Chinese>
+            <Chinesesimp>检查心率曲线</Chinesesimp>
             <French>Vérifier le pouls</French>
             <Italian>Controllare il ritmo</Italian>
             <Spanish>Comprobar el ritmo</Spanish>
@@ -832,7 +832,7 @@
             <Polish>Sprawdzanie</Polish>
             <Spanish>Comprobando</Spanish>
             <Chinese>檢查中</Chinese>
-            <Chinesesimp>检查中...hinesesimp>
+            <Chinesesimp>检查中...</Chinesesimp>
             <Czech>Kontroluji</Czech>
             <Korean>확인 중</Korean>
             <French>Vérification</French>
@@ -1042,7 +1042,7 @@
             <Polish>Łączenie</Polish>
             <Spanish>Conectando</Spanish>
             <Chinese>連線中</Chinese>
-            <Chinesesimp>连线中...hinesesimp>
+            <Chinesesimp>连线中...</Chinesesimp>
             <Czech>Připojuji</Czech>
             <Korean>연결 중</Korean>
             <French>Connexion</French>
@@ -1312,7 +1312,7 @@
             <German>%1 hat ein AED-X durchgeführt</German>
             <Spanish>%1 realicó AED-X</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
-            <Chinesesimp>%1 已使用AED-X/Chinesesimp>
+            <Chinesesimp>%1 已使用AED-X</Chinesesimp>
             <Czech>%1 použito AED-X</Czech>
             <Korean>%1 은(는) X 시리즈 AED가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED-X</French>
@@ -1597,7 +1597,7 @@
             <German>Entnehme Blut</German>
             <Spanish>Dibujando sangre</Spanish>
             <Chinese>抽血 </Chinese>
-            <Chinesesimp>抽血中...hinesesimp>
+            <Chinesesimp>抽血中...</Chinesesimp>
             <Czech>Odebírání krve</Czech>
             <Korean>혈액 채혈 중</Korean>
             <French>Prélèvement de sang </French>
