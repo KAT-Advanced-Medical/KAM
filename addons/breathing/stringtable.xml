@@ -84,6 +84,7 @@
             <Russian>Положительный множитель SpO2</Russian>
             <Korean>SpO2의 회복 배율</Korean>
             <French>Multiplicateur positif de la SpO2</French>
+            <Polish>Dodatni mnożnik SpO2</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyNegative">
             <English>SpO2 negative multiplier</English>
@@ -93,6 +94,7 @@
             <Russian>Отрицательный множитель SpO2</Russian>
             <Korean>SpO2의 감소 배율</Korean>
             <French>Multiplicateur négatif de la SpO2</French>
+            <Polish>Ujemny mnożnik SpO2</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
@@ -102,11 +104,13 @@
             <Russian>Включить снижение SpO2 при остановке сердца</Russian>
             <Korean>심정지 중 SpO2 감소 활성화</Korean>
             <French>Autoriser la réduction de la SpO2 d’arrêt cardiaque</French>
+            <Polish>Włącz utratę SpO2 w trakcie zatrzymania akcji serca</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_PerfusionMultiplier">
             <English>Perfusion multiplier</English>
             <German>Perfusionsindex</German>
             <Korean>관류 계수</Korean>
+            <Polish>Mnożnik persfuzji</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -493,6 +497,7 @@
             <Russian>Разрешить самолечение Чест Сеал </Russian>
             <Korean>체스트 씰로 자가치료 허용 여부</Korean>
             <French>Autoriser le pansement thoracique sur soi-même</French>
+            <Polish>Pozwól na samo leczenie przy użyciu Chest Seala</Polish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
@@ -923,6 +928,7 @@
             <Korean>기흉 중복 표시</Korean>
             <French>Montrer la duplication du pneumothorax</French>
             <Turkish>Pnömotoraks kopyasını göster</Turkish>
+            <Polish>Pokaż duplikat odmy płucnej</Polish>
         </Key>
         <Key ID="STR_kat_breathing_showPneumothorax_dupe_DESC">
             <English>Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.</English>
@@ -933,6 +939,7 @@
             <Korean>기본값은 비활성화입니다. 활성화 시 긴장성 기흉 또는 혈기흉이 있는 유닛도 의료 메뉴에 기흉 부상으로 표시됩니다.</Korean>
             <French>Désactivé par défaut. Si activé, les unités avec des pneumothorax sous tension ou des hemopneumothorax auront également le pneumothorax affiché dans leur menu médical.</French>
             <Turkish>Varsayılan devre dışıdır. Etkinleştirilirse, tansiyon pnömotorakslı veya hemopnömotorakslı ünitelerde medikal menüde pnömotoraks yaralanması da görüntülenir.</Turkish>
+            <Polish>Domyślnie wyłączone. Jeśli włączone, jednostki z odmą prężną lub krwiakiem opłucnej będą również wyświetlać odmę płucną w menu medycznym.</Polish>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Name">
             <English>Check Cyanosis</English>
