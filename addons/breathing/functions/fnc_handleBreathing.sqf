@@ -36,7 +36,7 @@ if (!local _unit) then {
     private _airway = true;
     private _breathing = true;
 
-    if ((_unit getVariable ["kat_chemical_airPoisend", false] || _unit getVariable ["KAT_medical_tensionpneumothorax", false]) || (_unit getVariable ["KAT_medical_hemopneumothorax", false]) || (_unit getVariable ["KAT_medical_pneumothorax", false])) then {
+    if ((_unit getVariable ["kat_chemical_airPoisend", false]) || (_unit getVariable ["KAT_medical_tensionpneumothorax", false]) || (_unit getVariable ["KAT_medical_hemopneumothorax", false]) || (_unit getVariable ["KAT_medical_pneumothorax", false])) then {
         _breathing = false;
     };
 

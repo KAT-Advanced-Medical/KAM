@@ -53,7 +53,7 @@ while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) 
 							_unit setVariable ["kat_medical_poisenType",_gastype,true];
 							if(_gastype == "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
 							if(_gastype == "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
-
+							[_unit] call KAT_breathing_fnc_handleBreathing;
 							_isinGas = false;
 						};
 
@@ -61,6 +61,7 @@ while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) 
 							_unit setVariable ["kat_medical_poisenType",_gastype,true];
 							if(_gastype == "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
 							if(_gastype == "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
+							[_unit] call KAT_breathing_fnc_handleBreathing;
 							_isinGas = false;
 						};
 
@@ -77,10 +78,10 @@ while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) 
 					_unit setVariable ["kat_medical_poisenType",_gastype,true];
 					if(_gastype == "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
 					if(_gastype == "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
+					[_unit] call KAT_breathing_fnc_handleBreathing;
 				};
 			};
 		};
-		//time in gas before something happens (todo: move to addonoptions)
 		
 
 			private _prozent = 1;

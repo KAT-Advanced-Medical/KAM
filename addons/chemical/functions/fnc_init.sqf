@@ -23,7 +23,7 @@
 if(hasInterface) then {
 
 	[] spawn FUNC(coughing);
-	[] spawn FUNC(handlePoisenDamage);
+	//[] spawn FUNC(handlePoisenDamage);  //Will be used once more gas types are added
 	[] spawn FUNC(handleGasMaskDur);
 	[] spawn FUNC(chemDetector);
 	[player] spawn FUNC(breathing);
