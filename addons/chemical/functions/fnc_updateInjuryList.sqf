@@ -47,10 +47,12 @@ if (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
     _entries pushBack [localize "STR_ACE_Medical_GUI_Status_Tourniquet_Applied", [0.77, 0.51, 0.08, 1]];
 };
 
-private _poisentype = _target getVariable ["kat_medical_poisenType",""];
+
+// Inficate current poisen status
+/*private _poisentype = _target getVariable ["kat_medical_poisenType",""];
 if(_target getVariable ["kat_chemical_airPoisend",false]) then{
-    _entries pushBack [LLSTRING(Intoxikation), [0.4,0,0.5,1]];
-};
+    _entries pushBack [localize LSTRING(Intoxikation), [0.4,0,0.5,1]];
+};*/
 
 
 

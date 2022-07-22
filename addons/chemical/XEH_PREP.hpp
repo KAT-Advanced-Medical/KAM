@@ -34,4 +34,5 @@ PREP(csGrenadeThrownFuze);
 PREP(GasTripEffect);
 PREP(spawnSmoke);
 PREP(CASCreateGas);
+PREP(updateBodyImage);
 

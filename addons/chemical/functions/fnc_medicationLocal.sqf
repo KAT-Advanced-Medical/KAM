@@ -19,7 +19,7 @@ if(_classname == "Antidot") then {
 
 
 // Get adjustment attributes for used medication
-private _defaultConfig = configFile >> "ace_medical_treatment_actions";
+private _defaultConfig = configFile >> "ace_medical_treatment" >> "Medication";
 private _medicationConfig = _defaultConfig >> _classname;
 
 private _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce"));
@@ -35,11 +35,11 @@ private _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMe
 private _heartRate = _patient getVariable["ace_medical_heartrate",80];
 private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
 _hrIncrease params ["_minIncrease", "_maxIncrease"];
-private _heartRateChange = _minIncrease + random (_maxIncrease - _minIncrease);	
+private _heartRateChange = _minIncrease + random (_maxIncrease - _minIncrease);
 
+// Adjust the medication effects and add the medication to the list
 TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 [_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange] call ace_medical_status_fnc_addMedicationAdjustment;
 
-
-
+// Check for medication compatiblity
 [_patient, _className, _maxDose, _incompatibleMedication] call ace_medical_treatment_fnc_onMedicationUsage;

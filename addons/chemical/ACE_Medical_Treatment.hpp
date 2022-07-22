@@ -1,4 +1,4 @@
-class ACE_Medical_Treatment {
+class ace_medical_treatment {
     class Medication {
         class Antidot {
             painReduce = 0;

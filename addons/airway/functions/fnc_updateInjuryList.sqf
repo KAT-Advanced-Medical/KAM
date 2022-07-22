@@ -137,6 +137,12 @@ private _fnc_getWoundDescription = {
     };
 } forEach GET_STITCHED_WOUNDS(_target);
 
+//INTOXICATION by DiGii
+private _poisentype = _target getVariable ["kat_medical_poisenType",""];
+if(_target getVariable ["kat_chemical_airPoisend",false]) then{
+    _woundEntries pushBack [localize "STR_kat_chemical_Intoxikation", [0.4,0,0.5,1]];
+};
+
 // EDIT by Katalam & Tomcat
 if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then {
     private _a = _target getVariable [QGVAR(airway_item), ""];

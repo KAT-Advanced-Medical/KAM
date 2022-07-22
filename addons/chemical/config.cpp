@@ -52,6 +52,7 @@ class CfgPatches {
     };
 };
 
+#include "CfgFunctions.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgMagazineGroups.hpp"
 #include "CfgAmmo.hpp"

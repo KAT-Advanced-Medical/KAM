@@ -17,6 +17,11 @@
 #include "\x\kat\addons\main\script_macros.hpp"
 #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 
+#include "\a3\ui_f\hpp\defineResincl.inc"
+#include "\a3\ui_f\hpp\defineDIKCodes.inc"
+#include "\a3\ui_f\hpp\defineCommonGrids.inc"
+#include "\a3\ui_f\hpp\defineCommonColors.inc"
+
 // Returns a text config entry as compiled code or variable from missionNamespace
 #define GET_FUNCTION(var,cfg) \
     private var = getText (cfg); \
