@@ -79,7 +79,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 3;
         items[] = {};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && QFUNC(salineCheck);
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(salineCheck));
         patientStateCondition = 0;
         callbackSuccess = QFUNC(treatmentAdvanced_Flush);
     };
