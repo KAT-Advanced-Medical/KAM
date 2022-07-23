@@ -220,7 +220,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     [LLSTRING(SETTING_SELF_CHECKFRACTURE)],
  	CBA_SETTINGS_CAT_M,
-	[false],
+	[true],
 	true
 ] call CBA_Settings_fnc_init;
 
