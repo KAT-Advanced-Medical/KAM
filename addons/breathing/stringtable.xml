@@ -111,6 +111,7 @@
             <German>Perfusionsindex</German>
             <Korean>관류 계수</Korean>
             <Polish>Mnożnik persfuzji</Polish>
+            <Japanese>かん流量の乗数</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
