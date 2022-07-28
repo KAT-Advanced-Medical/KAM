@@ -28,3 +28,7 @@
     params ["_unit", "_container", "_item", "_slot", "_params"];
     [_unit,_item] call kat_misc_fnc_heliStretcherAttach;
 },true] call CBA_fnc_addItemContextMenuOption;
+
+if (GVAR(incompatibilityWarning)) then {
+     call FUNC(incompatibilityWarning);
+};

@@ -346,5 +346,23 @@
             <Russian>Позволяет прикрепить носилки к вертолету (двойной щелчок)</Russian>
             <Japanese>ヘリコプターに担架を取り付けることができます(ダブルクリック)</Japanese>
         </Key>
+        <Key ID="STR_kat_misc_SETTING_incompatibilityWarning">
+            <English>Incompatible addon warning</English>
+            <German>Inkompatible Mods Warnung</German>
+            <Czech>Varování nekompatibilního addonu</Czech>
+            <Japanese>互換性のないアドオンの警告</Japanese>
+        </Key>
+        <Key ID="STR_kat_misc_SETTING_incompatibilityWarning_Desc">
+            <English>Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that could negatively affect correct functionality of KAT are used.\n Warning disappears after 60 seconds.</English>
+            <German>Wirft eine Warnung aus und fügt eine Zeile in das RPT-Protokoll ein, wenn inkompatible Addons (von uns aufgelistet - Entwickler) verwendet werden, die die korrekte Funktionalität von KAT beeinträchtigen könnten. Die Warnung verschwindet nach 60 Sekunden.</German>
+            <Czech>Vyhodí varování a přidá řádek do RPT logu pokud jsou použity nekompatibilní addony(Zanesené námi - vývojáři), které by mohli negativně ovlivnit správnou funkcionalitu KATu.\n Varování zmizí po 60 sekundách. </Czech>
+            <Japanese>KATの正常な動作に悪影響を与える可能性のある互換性のない(開発チームによりリストされた)アドオンが使用された場合、警告を表示し、RPTログに行を追加します。\n 警告は60秒後に消えます。</Japanese>
+        </Key>
+        <Key ID="STR_kat_misc_incompatibilityWarning_Desc">
+            <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
+            <German>[KAM WARNUNG] Es wurden inkompatible Addons entdeckt, die die korrekte Funktionalität beeinträchtigen könnten. Das KAT - Advanced Medical REWRITE Development Team rät dringend, diese Addons zu entfernen: %1</German>
+            <Czech>[KAM VAROVÁNÍ] Nekompatibilní addon(y), které by mohly negativně ovlivnit správnou funkcionalitu detekovány. KAT - Advanced Medical REWRITE Developerský Tým silně doporučuje odebrat tyto addony: %1</Czech>
+            <Japanese>[KAM WARNING] KAT-KAMの動作に悪影響を及ぼす可能性のある互換性のないアドオンが検出されました。KAT-KAM開発チームはこれらのアドオンをアンロードすることを強く推奨します: %1</Japanese>
+        </Key>
     </Package>
 </Project>

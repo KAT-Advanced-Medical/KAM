@@ -15,3 +15,4 @@ PREP(heliStretcherAttach);
 PREP(actionLowerBy10);
 PREP(addActionRaise);
 PREP(heliAddActionDeploy);
+PREP(incompatibilityWarning);
