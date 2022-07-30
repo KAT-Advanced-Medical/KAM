@@ -136,7 +136,7 @@
             <Chinese>%1 檢查呼吸道: %2 %3, %4 %5</Chinese>
             <Chinesesimp>%1 气道情况已查明: %2%3, %4%5</Chinesesimp>
             <Czech>Zkontrolovány dýchací cesty: %2 %3, %4 %5 </Czech>
-            <Korean>%1 이(가)기도 확인함: %2 %3, %4 %5</Korean>
+            <Korean>%1 이(가)기도 확인함: %3 %2 , %5 %4 </Korean>
             <French>%1 a vérifié les voies aériennes : %2 %3, %4 %5</French>
             <Turkish>%1 kontrol edilmiş havayolları: %2 %3, %4 %5</Turkish>
             <Italian>%1 ha controllato le vie aeree: %2 %3 %4 %5</Italian>
