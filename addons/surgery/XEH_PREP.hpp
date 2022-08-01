@@ -18,5 +18,8 @@ PREP(openFractureIncision);
 PREP(openFractureIncisionLocal);
 PREP(openFractureProgress);
 PREP(openFractureProgressLocal);
+PREP(treatmentAdvanced_Dialysis);
+PREP(treatmentAdvanced_DialysisLocal);
 PREP(treatmentAdvanced_Generic);
 PREP(treatmentAdvanced_GenericLocal);
+PREP(vehicleCheckDialysis);

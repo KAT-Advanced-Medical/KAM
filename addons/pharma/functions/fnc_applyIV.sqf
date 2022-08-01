@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg", "", objNull, "kat_IV_16"] call kat_circulation_fnc_applyIV;
+ * [player, cursorObject, "LeftLeg", "", objNull, "kat_IV_20"] call kat_circulation_fnc_applyIV;
  *
  * Public: No
  */

@@ -8,7 +8,7 @@
  * 1: Patient <OBJECT>
  *
  * Return Value:
- * None
+ * Succesful treatment started <BOOL>
  *
  * Example:
  * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_Reorientation;
@@ -22,4 +22,10 @@ if (GVAR(Reorientation_Slap)) then {
 playSound3D [QPATHTOF_SOUND(sounds\slap.ogg), _patient, false, getPosASL _patient, 10, 1, 15];
 };
 
-[QGVAR(reorientationLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+if (local _patient) then {
+    ["treatmentReorientation", [_medic, _patient]] call CBA_fnc_localEvent;
+} else {
+    ["treatmentReorientation", [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+};
+
+true;

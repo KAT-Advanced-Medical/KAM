@@ -10,7 +10,7 @@
  * 2: Body Part <STRING>
  *
  * Return Value:
- * Remove IV <BOOLEAN>
+ * None
  *
  * Example:
  * [player, cursorObject, "LeftLeg"] call kat_pharma_fnc_removeIV;

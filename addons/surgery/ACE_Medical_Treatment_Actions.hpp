@@ -9,6 +9,34 @@ class ACE_Medical_Treatment_Actions {
     class Carbonate;
     class Defibrillator_AED_X_vehicle;
 
+    class BreathCheck: Carbonate {
+        displayName = CSTRING(breath_check);
+        displayNameProgress = CSTRING(fracture_checking);
+        category = "examine";
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(BreathCheck_MedLevel);
+        treatmentTime = QGVAR(BreathCheck_Time);
+        items[] = {};
+        condition = true;
+        patientStateCondition = 0;
+        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(inspectBreath));
+        animationMedic = "";
+        animationMedicProne = "";
+    };
+    class Dialysis: Defibrillator_AED_X_vehicle {
+        displayName = CSTRING(dialysis);
+        displayNameProgress = CSTRING(perform);
+        items[] = {};
+        condition = QFUNC(vehicleCheckDialysis);
+        treatmentTime = QGVAR(dialysisTime);
+        medicRequired = QGVAR(surgicalAction);
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_Dialysis));
+        icon = QPATHTOF(ui\vacuum.paa);
+    };
     class CheckFracture: CheckPulse {
         displayName = CSTRING(fracture_check);
         displayNameProgress = CSTRING(fracture_checking);

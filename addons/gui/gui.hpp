@@ -27,8 +27,8 @@ class ACE_Medical_Menu {
         class Surgury: Triage {
             idc = IDC_SURGERY;
             onButtonClick = QUOTE(ace_medical_gui_selectedCategory = 'surgery');
-            text = QPATHTOF(data\categories\plate.paa);
-            tooltip = "Surgery";
+            text = QPATHTOF(data\categories\medication.paa);
+            tooltip = "Toggle Surgery Option";
             x = POS_X(13.5);
         };
         class Action1: RscButtonMenu {};

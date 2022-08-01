@@ -138,40 +138,5 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-	QGVAR(kidneyAction),
-	"CHECKBOX",
-	[LLSTRING(SETTING_Kidney_Action), LLSTRING(SETTING_Kidney_Action_DESC)],
-	CBA_SETTINGS_CAT,
-	[false],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(aiEnableAdvanced),
-	"CHECKBOX",
-	["Enable Advanced Medical for AI", "Enables kidney actions and blood pressure PFHs for AI"],
-	CBA_SETTINGS_CAT,
-	[false],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(blockChance),
-	"SLIDER",
-	[LLSTRING(SETTING_Block_Chance), LLSTRING(SETTING_Block_Chance_DESC)],
-	CBA_SETTINGS_CAT,
-	[0, 100, 20, 0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(maxStack),
-	"SLIDER",
-	[LLSTRING(SETTING_Max_Stack), LLSTRING(SETTING_Max_Stack_DESC)],
-	CBA_SETTINGS_CAT,
-	[1, 10, 5, 0],
-	true
-] call CBA_Settings_fnc_init;
 
 ADDON = true;

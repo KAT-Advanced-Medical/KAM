@@ -23,11 +23,7 @@ class CfgPatches {
             "kat_nitroglycerin",
             "kat_amiodarone",
             "kat_lidocane",
-            "kat_atropine",
-            "kat_atropine",
-            "kat_ketamine",
-            "kat_fentanyl",
-            "kat_nalbuphine"
+            "kat_atropine"
         };
         magazines[] = { };
         requiredAddons[] = {
@@ -46,7 +42,7 @@ class CfgPatches {
             "cba_settings"
         };
         author = "Katalam";
-        authors[] = {"Katalam", "2LT.Mazinski", "MiszczuZPolski"};
+        authors[] = {"Katalam", "2LT.Mazinski"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };
@@ -59,3 +55,4 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "ACE_Medical_Advanced.hpp"

@@ -141,50 +141,6 @@
             <Japanese>IO針の刺入にかかる時間</Japanese>
             <Russian>Время устанавливать IO</Russian>
         </Key>
-        <Key ID="STR_KAT_pharma_Take_Ketamine">
-            <English>Take Ketamine</English>
-        </Key>
-        <Key ID="STR_KAT_pharma_Ketamine_Box_Display">
-            <English>Ketamine</English>
-        </Key>
-        <Key ID="STR_KAT_pharma_Ketamine_DescShort">
-            <English>Suppress pain and gives you K-Hole</English>
-        </Key>
-        <Key ID="STR_KAT_pharma_Take_Fentanyl">
-            <English>Take Fentanyl</English>
-        </Key>
-        <Key ID="STR_KAT_pharma_Fentanyl_Box_Display">
-            <English>Fentanyl</English>
-        </Key>
-        <Key ID="STR_KAT_pharma_Fentanyl_DescShort">
-            <English>Suppress pain and gives you nausea</English>
-        </Key>
-        <Key ID="STR_KAT_pharma_Take_Nalbuphine">
-            <English>Take Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_pharma_Nalbuphine_Box_Display">
-            <English>Nalbuphine</English>
-        </Key>
-        <Key ID="STR_KAT_pharma_Nalubphine_DescShort">
-            <English>Suppress pain and gives you depression</English>
-        </Key>
-        <Key ID="STR_KAT_pharma_Activity_usedItem">
-            <English>%1 used %2</English>
-            <Spanish>%1 usó %2</Spanish>
-            <German>%1 benutzt %2</German>
-            <Russian>%1 использовал %2</Russian>
-            <Polish>%1 użył %2</Polish>
-            <French>%1 a utilisé un %2.</French>
-            <Hungarian>%1 használta a %2-t</Hungarian>
-            <Italian>%1 ha usato %2</Italian>
-            <Portuguese>%1 usou %2</Portuguese>
-            <Czech>%1 použil %2</Czech>
-            <Japanese>%1 は %2 を使った</Japanese>
-            <Korean>%1 (이)가 %2 을 썼다</Korean>
-            <Chinesesimp>%1 已使用 %2</Chinesesimp>
-            <Chinese>%1 已使用 %2</Chinese>
-            <Turkish>%1 kullanıldı %2</Turkish>
-        </Key>
         <Key ID="STR_kat_pharma_Painkillers_DescShort">
             <English>Used to suppress pain</English>
             <German>Zur Unterdrückung von Schmerzen</German>
@@ -577,24 +533,6 @@
             <Japanese>トラネキサム酸(TXA)を注入</Japanese>
             <Russian>Ввести TXA</Russian>
         </Key>
-        <Key ID="STR_kat_pharma_EACA_DescShort">
-            <English>Clot stabilizer</English>
-        </Key>
-        <Key ID="STR_kat_pharma_EACA_DescUse">
-            <English>Used to stabilize and close clots</English>
-        </Key>        
-        <Key ID="STR_kat_pharma_Take_EACA">
-            <English>Push EACA</English>
-            <German>Schlucke Schmerzmittel</German>
-            <Polish>Wstrzyknij TXA</Polish>
-            <Spanish>Administrar TXA</Spanish>
-            <Chinese>服用止痛藥</Chinese>
-            <Czech>Vzít si Prášky proti bolesti</Czech>
-            <Korean>진통제 복용</Korean>
-            <French>Administre du TXA</French>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Italian>Somministra TXA</Italian>
-        </Key>        
         <Key ID="STR_kat_pharma_Norep_DescShort">
             <English>Used to raise blood pressure</English>
             <German>Wird zur Erhöhung des Blutdrucks verwendet</German>
@@ -1071,24 +1009,6 @@
             <Japanese>%1 は空になりました</Japanese>
             <Russian>%1 сейчас пуст</Russian>
         </Key>
-        <Key ID="STR_kat_pharma_flush_log">
-            <English>%1 performed a saline flush on %2</English>
-        </Key>        
-        <Key ID="STR_kat_pharma_IVblock_closed">
-            <English>Patient's IV is blocked</English>
-        </Key>
-        <Key ID="STR_kat_pharma_IVblock_clear">
-            <English>Patient's IV is clear</English>
-        </Key>
-        <Key ID="STR_kat_pharma_breath_stink">
-            <English>Patient's breath is harsh and metallic</English>
-        </Key>
-        <Key ID="STR_kat_pharma_breath_mild">
-            <English>Patient's breath is slightly fruity</English>
-        </Key>
-        <Key ID="STR_kat_pharma_breath_good">
-            <English>Patient's breath is ok</English>
-        </Key>
         <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV">
             <English>Require inserted IV/IO</English>
             <German>Erfordert eingefügtes IV/IO</German>
@@ -1200,24 +1120,6 @@
             <Italian>Livello medico richiesto per stimolazione</Italian>
             <Japanese>患者を刺激を与えるために訓練レベルを必要とさせます。</Japanese>
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
-        </Key>
-        <Key ID="STR_kat_pharma_SETTING_Kidney_Action">
-            <English>Kidney damage/failure</English>
-        </Key>
-        <Key ID="STR_kat_pharma_SETTING_Kidney_Action_DESC">
-            <English>Enables kidney damage caused by overuse of saline</English>
-        </Key>
-        <Key ID="STR_kat_pharma_SETTING_Block_Chance">
-            <English>IV Block Chance</English>
-        </Key>
-        <Key ID="STR_kat_pharma_SETTING_Block_Chance_DESC">
-            <English>Chance of IV blockage due to medication pushes without saline flush</English>
-        </Key>
-        <Key ID="STR_kat_pharma_SETTING_Max_Stack">
-            <English>Maximum Fluid Bag Stack</English>
-        </Key>
-        <Key ID="STR_kat_pharma_SETTING_Max_Stack_DESC">
-            <English>The maximum amount of fluid bags that can be stacked to increase IV flow rate</English>
         </Key>
     </Package>
 </Project>

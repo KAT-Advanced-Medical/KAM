@@ -4,20 +4,19 @@
  * Locates and Removes Bradycardia Effect.
  *
  * Arguments:
- * 0: Patient <OBJECT>
+ * 0: Medic <OBJECT>
+ * 1: Medication <STRING>
  *
  * Return Value:
- * None
+ * <BOOLEAN>
  *
  * Example:
- * [player] call kat_pharma_fnc_treatmentAdvanced_AtropineLocal;
+ * [player, "Atropine"] call kat_pharma_fnc_treatmentAdvanced_AtropineLocal;
  *
  * Public: No
  */
 
-params ["_patient"];
-
-private _medicationArray = _patient getVariable ["ace_medical_medications", []];
+params ["_target", "_item"];
 
 {
     _x params ["_medication"];
@@ -28,3 +27,8 @@ private _medicationArray = _patient getVariable ["ace_medical_medications", []];
 } forEach (_medicationArray);
 
 _patient setVariable ["ace_medical_medications", _medicationArray, true];
+
+[_target, _item] call ace_medical_treatment_fnc_addToTriageCard;
+[_target, "activity", LSTRING(push_log), [[_medic] call ace_common_fnc_getName, "Atropine"]] call ace_medical_treatment_fnc_addToLog;
+
+true
