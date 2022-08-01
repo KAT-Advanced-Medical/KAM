@@ -17,18 +17,16 @@
 
 params ["_unit"];
 
-if !(GVAR(enable)) exitWith {};
-
-if (_unit getVariable ["kat_pukeActive_PFH", false]) exitWith {};
+//Other mods can utilise KAT_Occlusion_Exclusion variable to prevent occlusions from happening
+if ((_unit getVariable ["kat_pukeActive_PFH", false]) || !(GVAR(enable)) || (_unit getVariable ["KAT_Occlusion_Exclusion", false])) exitWith {};
 _unit setVariable ["kat_pukeActive_PFH", true];
-
 
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];
-    private _alive = _unit getVariable ["ACE_isUnconscious", false];
+    private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
     private _recovery = _unit getVariable [QGVAR(recovery), false];
-    if (!_alive || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") || _recovery) exitWith {
+    if ((!(alive _unit)) || !_isUnconscious || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") || _recovery) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_pukeActive_PFH", nil];
     };
@@ -40,4 +38,4 @@ _unit setVariable ["kat_pukeActive_PFH", true];
             };
         };
     };
-}, 60, [_unit]] call CBA_fnc_addPerFrameHandler;
+}, GVAR(occlusion_repeatTimer), [_unit]] call CBA_fnc_addPerFrameHandler;
