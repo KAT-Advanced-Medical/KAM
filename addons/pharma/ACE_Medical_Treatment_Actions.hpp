@@ -50,6 +50,17 @@ class ACE_Medical_Treatment_Actions {
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Naloxone')] call FUNC(treatmentAdvanced_Naloxone));
     };
+    class EACA: Carbonate {
+        displayName = CSTRING(Take_EACA);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = 1;
+        treatmentTime = QGVAR(PushTime);
+        items[] = {"kat_EACA"};
+        condition = QFUNC(removeIV);
+        patientStateCondition = 0;
+        callbackSuccess = QFUNC(treatmentAdvanced_EACA);
+    };
     class TXA: Carbonate {
         displayName = CSTRING(Take_TXA);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -59,10 +70,9 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_TXA"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && GVAR(txaActive) && FUNC(removeIV));
         patientStateCondition = 0;
-<<<<<<< HEAD
         callbackSuccess = QFUNC(treatmentAdvanced_TXA);
     };
-    class Saline_Flush: Carbonate {
+class Saline_Flush: Carbonate {
         displayName = "Saline Flush";
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
@@ -100,9 +110,6 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(inspectBreath);
         animationMedic = "";
         animationMedicProne = "";
-=======
-        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_TXA));
->>>>>>> parent of 3c83512 (More stuff)
     };
     class Norepinephrine: Carbonate {
         displayName = CSTRING(Take_Norep);

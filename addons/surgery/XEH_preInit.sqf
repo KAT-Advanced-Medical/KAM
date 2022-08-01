@@ -217,19 +217,11 @@ PREP_RECOMPILE_END;
 
 [
     QGVAR(enable_selfCheckFracture),
-<<<<<<< HEAD
     "CHECKBOX",
     [LLSTRING(SETTING_SELF_CHECKFRACTURE)],
  	CBA_SETTINGS_CAT_M,
 	[true],
 	true
-=======
-    "LIST",
-    LLSTRING(SETTING_SELF_CHECKFRACTURE),
-    CBA_SETTINGS_CAT,
-    [[0, 1], ["STR_ACE_common_No", "STR_ACE_common_Yes"], 1],
-    true
->>>>>>> parent of 3c83512 (More stuff)
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;

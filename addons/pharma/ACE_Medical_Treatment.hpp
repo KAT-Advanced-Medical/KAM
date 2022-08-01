@@ -55,5 +55,16 @@ class ACE_Medical_Treatment {
             incompatibleMedication[] = {};
             viscosityChange = -25;
         };
+        class EACA {
+			painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 600;
+            timeTillMaxEffect = 15;
+            maxDose = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+		};
     };
 };

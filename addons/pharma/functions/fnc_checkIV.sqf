@@ -31,4 +31,3 @@ if (_final2 < 7) then {
 };
 
 _return
-

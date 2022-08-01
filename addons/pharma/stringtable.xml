@@ -1201,5 +1201,41 @@
             <Japanese>患者を刺激を与えるために訓練レベルを必要とさせます。</Japanese>
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
         </Key>
+        <Key ID="STR_kat_pharma_flush_log">
+            <English>%1 performed a saline flush on %2</English>
+        </Key>        
+        <Key ID="STR_kat_pharma_IVblock_closed">
+            <English>Patient's IV is blocked</English>
+        </Key>
+        <Key ID="STR_kat_pharma_IVblock_clear">
+            <English>Patient's IV is clear</English>
+        </Key>
+        <Key ID="STR_kat_pharma_breath_stink">
+            <English>Patient's breath is harsh and metallic</English>
+        </Key>
+        <Key ID="STR_kat_pharma_breath_mild">
+            <English>Patient's breath is slightly fruity</English>
+        </Key>
+        <Key ID="STR_kat_pharma_breath_good">
+            <English>Patient's breath is ok</English>
+        </Key>
+        <Key ID="STR_kat_pharma_SETTING_Kidney_Action">
+            <English>Kidney damage/failure</English>
+        </Key>
+        <Key ID="STR_kat_pharma_SETTING_Kidney_Action_DESC">
+            <English>Enables kidney damage caused by overuse of saline</English>
+        </Key>
+        <Key ID="STR_kat_pharma_SETTING_Block_Chance">
+            <English>IV Block Chance</English>
+        </Key>
+        <Key ID="STR_kat_pharma_SETTING_Block_Chance_DESC">
+            <English>Chance of IV blockage due to medication pushes without saline flush</English>
+        </Key>
+        <Key ID="STR_kat_pharma_SETTING_Max_Stack">
+            <English>Maximum Fluid Bag Stack</English>
+        </Key>
+        <Key ID="STR_kat_pharma_SETTING_Max_Stack_DESC">
+            <English>The maximum amount of fluid bags that can be stacked to increase IV flow rate</English>
+        </Key>
     </Package>
 </Project>
