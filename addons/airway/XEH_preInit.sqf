@@ -48,6 +48,16 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+// Occlusion repeat timer
+[
+    QGVAR(occlusion_repeatTimer),
+    "SLIDER",
+    LLSTRING(SETTING_occlusion_repeatTimer),
+    CBA_SETTINGS_CAT,
+    [1, 1200, 60, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 // Succes for headturning
 [
     QGVAR(probability_headturning),

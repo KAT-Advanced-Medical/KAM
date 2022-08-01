@@ -7,6 +7,7 @@
             <Polish>ACE-Inne aktywowane?</Polish>
             <Spanish>¿Activar ACE-Misceláneos?</Spanish>
             <Chinese>啟用ACE-雜項?</Chinese>
+            <Chinesesimp>启用ACE-杂项?</Chinesesimp>
             <Czech>ACE-Misc aktivováno?</Czech>
             <Korean>ACE 음악 활성화</Korean>
             <French>ACE-Misc activé?</French>
@@ -21,6 +22,7 @@
             <Polish>Zakładanie IV</Polish>
             <Spanish>Administrando IV</Spanish>
             <Chinese>注射點滴</Chinese>
+            <Chinesesimp>IV注射</Chinesesimp>
             <Czech>Připojuji IV</Czech>
             <Korean>IV 놓는 중</Korean>
             <French>Administrer IV</French>
@@ -35,6 +37,7 @@
             <Polish>Załóż IV (1000ml)</Polish>
             <Spanish>Administrar IV (1000ml)</Spanish>
             <Chinese>注射點滴 (1000ml)</Chinese>
+            <Chinesesimp>IV注射 (1000ml)</Chinesesimp>
             <Czech>Připojuji IV (1000ml)</Czech>
             <Korean>IV 놓기(1000ml)</Korean>
             <French>Administrer IV (1000ml)</French>
@@ -49,6 +52,7 @@
             <Polish>Załóż IV (500ml)</Polish>
             <Spanish>Administrar IV (500ml)</Spanish>
             <Chinese>注射點滴 (500ml)</Chinese>
+            <Chinesesimp>IV注射 (500ml)</Chinesesimp>
             <Czech>Připojuji IV (500ml)</Czech>
             <Korean>IV 놓기(500ml)</Korean>
             <French>Administrer IV (500ml)</French>
@@ -63,6 +67,7 @@
             <Polish>Załóż IV (250ml)</Polish>
             <Spanish>Administrar IV (250ml)</Spanish>
             <Chinese>注射點滴 (250ml)</Chinese>
+            <Chinesesimp>IV注射 (250ml)</Chinesesimp>
             <Czech>Připojuji IV (2500ml)</Czech>
             <Korean>IV 놓기(250ml)</Korean>
             <French>Administrer IV (250ml)</French>
@@ -77,6 +82,7 @@
             <Polish>Stojak: Sól fizjologiczna IV (1000ml)</Polish>
             <Spanish>Soporte: Salino IV (1000ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (1000ml)</Chinese>
+            <Chinesesimp>点滴架：生理盐水 (1000ml)</Chinesesimp>
             <Czech>Stojan: Solný roztok (1000ml)</Czech>
             <Korean>스탠드: 생리식염수 IV(1000ml)</Korean>
             <French>Accrocher: Saline IV (1000ml)</French>
@@ -91,6 +97,7 @@
             <Polish>Stojak: Sól fizjologiczna IV (500ml)</Polish>
             <Spanish>Soporte: Salino IV (500ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (500ml)</Chinese>
+            <Chinesesimp>点滴架：生理盐水 (500ml)</Chinesesimp>
             <Czech>Stojan: Solný roztok (500ml)</Czech>
             <Korean>스탠드: 생리식염수 IV(500ml)</Korean>
             <French>Accrocher: Saline IV (500ml)</French>
@@ -105,6 +112,7 @@
             <Polish>Stojak: Sól fizjologiczna IV (250ml)</Polish>
             <Spanish>Soporte: Salino IV (250ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (250ml)</Chinese>
+            <Chinesesimp>点滴架：生理盐水 (250ml)</Chinesesimp>
             <Czech>Stojan: Solný roztok (250ml)</Czech>
             <Korean>스탠드: 생리식염수 IV(250ml)</Korean>
             <French>Accrocher: Saline IV (250ml)</French>
@@ -119,6 +127,7 @@
             <Polish>Umożliwiają ograniczone rany</Polish>
             <Spanish>Habilitar límite de heridas</Spanish>
             <Chinese>開啟傷口限制</Chinese>
+            <Chinesesimp>开启伤口限制</Chinesesimp>
             <Czech>Povolit omezené rány</Czech>
             <Korean>제한된 상처 활성화</Korean>
             <French>Activer une limite de blessures</French>
@@ -133,6 +142,7 @@
             <Polish>Rany opatrunkowe</Polish>
             <Spanish>Vendar heridas</Spanish>
             <Chinese>包紮傷口</Chinese>
+            <Chinesesimp>绷带伤口</Chinesesimp>
             <Czech>Zavázat rány</Czech>
             <Korean>붕대 감기</Korean>
             <French>Panser les blessures</French>
@@ -147,6 +157,7 @@
             <Polish>Stosować rany ograniczające stan zdrowia</Polish>
             <Spanish>Usar condición para límite de heridas</Spanish>
             <Chinese>以條件來限制傷口</Chinese>
+            <Chinesesimp>以条件来限制伤口</Chinesesimp>
             <Czech>Použít podmínku omezených ran</Czech>
             <Korean>상태 제한 상처사용</Korean>
             <French>Condition d'utilisation pour la limite de blessures</French>
@@ -161,6 +172,7 @@
             <Polish>Złóż nosze</Polish>
             <Spanish>Desarmar camilla</Spanish>
             <Chinese>拆卸式擔架</Chinese>
+            <Chinesesimp>拆卸式担架</Chinesesimp>
             <Czech>Rozložit nosítka</Czech>
             <Korean>들것 분리</Korean>
             <French>Désassembler la civière</French>
@@ -175,6 +187,7 @@
             <Polish>Przyczep do</Polish>
             <Spanish>Poner en</Spanish>
             <Chinese>掛在</Chinese>
+            <Chinesesimp>链接到</Chinesesimp>
             <Czech>Připevnit k</Czech>
             <Korean>에 부착</Korean>
             <French>Attacher à</French>
@@ -189,6 +202,7 @@
             <German>Trage befestigen</German>
             <Spanish>Adjuntar camilla </Spanish>
             <Chinese>附加担架 </Chinese>
+            <Chinesesimp>连接担架 </Chinesesimp>
             <Czech>Připevnit nosítka</Czech>
             <Korean>들것 부착 </Korean>
             <French>Attacher la civière</French>
@@ -203,6 +217,7 @@
             <German>Trage um 10m absenken</German>
             <Spanish>Camilla inferior en 10 m</Spanish>
             <Chinese>下担架 10m</Chinese>
+            <Chinesesimp>担架下降 10m</Chinesesimp>
             <Czech>Snížit nosítka o 10m</Czech>
             <Korean>들것을 10m 낮추기</Korean>
             <French>Abaisser la civière de 10 m</French>
@@ -217,6 +232,7 @@
             <German>Trage um 10m anheben</German>
             <Spanish>Levantar la camilla 10 m</Spanish>
             <Chinese>将担架抬高 10m</Chinese>
+            <Chinesesimp>担架抬高 10m</Chinesesimp>
             <Czech>Vytáhnout nosítka o 10m</Czech>
             <Korean>들것을 10m 높이기</Korean>
             <French>Élever la civière de 10 m</French>
@@ -231,6 +247,7 @@
             <German>Trage anheben</German>
             <Spanish>Levantar camilla</Spanish>
             <Chinese>AA抬起担架AA</Chinese>
+            <Chinesesimp>抬起担架</Chinesesimp>
             <Czech>Vytáhnout nosítka</Czech>
             <Korean>들것 올리기</Korean>
             <French>Elever la civière</French>
@@ -245,6 +262,7 @@
             <German>Trage absenken</German>
             <Spanish>Camilla inferior</Spanish>
             <Chinese>下担架</Chinese>
+            <Chinesesimp>放下担架</Chinesesimp>
             <Czech>Snížit nosítka</Czech>
             <Korean>들것 내리기</Korean>
             <French>Baisser la civière</French>
@@ -259,6 +277,7 @@
             <German>Trage flippen</German>
             <Spanish>Camilla Flip</Spanish>
             <Chinese>翻转担架</Chinese>
+            <Chinesesimp>翻转担架</Chinesesimp>
             <Czech>Otočit nosítka</Czech>
             <Korean>들것 뒤집기</Korean>
             <French>Retourner la civière</French>
@@ -273,6 +292,7 @@
             <German>Dieses Fahrzeug ist kein Helikopter!</German>
             <Spanish>¡El vehículo que está mirando no es un helicóptero!</Spanish>
             <Chinese>您正在查看的车辆不是直升机！</Chinese>
+            <Chinesesimp>您正在注视的载具不是直升机！</Chinesesimp>
             <Czech>Vozidlo na které se díváte není helikoptéra!</Czech>
             <Korean>당신이 보고 있는 차량은 헬리콥터가 아닙니다!</Korean>
             <French>Le véhicule que vous regardez n'est pas un hélicoptère !</French>
@@ -287,6 +307,7 @@
             <German>Sie müssen sich in einem Umkreis von 15 Metern um den Hubschrauber aufhalten und ihn anschauen!</German>
             <Spanish>¡Debes estar a menos de 15 m del helicóptero y míralo!</Spanish>
             <Chinese>你必须在直升机 15m 以内并看它！</Chinese>
+            <Chinesesimp>你必须在直升机 15m 以内并注视它！</Chinesesimp>
             <Czech>Musíte být v rámci 15m od helikoptéry a dívat se na ni!</Czech>
             <Korean>헬리콥터에서 15m 이내에 있어야 하며 헬리콥터를 살펴보세요!</Korean>
             <French>Vous devez être à moins de 15 m de l'hélicoptère et le regarder !</French>
@@ -301,6 +322,7 @@
             <German>Anbringbare Helitrage</German>
             <Spanish>Helicamilla acoplable</Spanish>
             <Chinese>可连接直升机</Chinese>
+            <Chinesesimp>可连接担架</Chinesesimp>
             <Czech>Připevnitelná helinosítka</Czech>
             <Korean>부착형 헬리스트레처</Korean>
             <French>Hélicivière amovible </French>
@@ -315,6 +337,7 @@
             <German>Ermöglicht das Anbringen einer Trage am Hubschrauber (Doppelklick)</German>
             <Spanish>Le permite colocar una camilla en helicóptero (doble clic)</Spanish>
             <Chinese>允许您在直升机上附加担架（双击）</Chinese>
+            <Chinesesimp>允许您在直升机上附加担架（双击）</Chinesesimp>
             <Czech>Umožňuje připevnit nosítka na helikoptéru(Dvojtým kliknutím)</Czech>
             <Korean>헬리콥터에 들것 부착 가능(더블 클릭)</Korean>
             <French>Vous permet d'attacher une civière sur hélicoptère (double clic)</French>
@@ -322,6 +345,27 @@
             <Italian>Consente di collegare una barella sull'elicottero (doppio clic)</Italian>
             <Russian>Позволяет прикрепить носилки к вертолету (двойной щелчок)</Russian>
             <Japanese>ヘリコプターに担架を取り付けることができます(ダブルクリック)</Japanese>
+        </Key>
+        <Key ID="STR_kat_misc_SETTING_incompatibilityWarning">
+            <English>Incompatible addon warning</English>
+            <German>Inkompatible Mods Warnung</German>
+            <Czech>Varování nekompatibilního addonu</Czech>
+			<Korean>호환되지 않는 애드온 경고</Korean>
+            <Japanese>互換性のないアドオンの警告</Japanese>
+        </Key>
+        <Key ID="STR_kat_misc_SETTING_incompatibilityWarning_Desc">
+            <English>Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that could negatively affect correct functionality of KAT are used.\n Warning disappears after 60 seconds.</English>
+            <German>Wirft eine Warnung aus und fügt eine Zeile in das RPT-Protokoll ein, wenn inkompatible Addons (von uns aufgelistet - Entwickler) verwendet werden, die die korrekte Funktionalität von KAT beeinträchtigen könnten. Die Warnung verschwindet nach 60 Sekunden.</German>
+            <Czech>Vyhodí varování a přidá řádek do RPT logu pokud jsou použity nekompatibilní addony(Zanesené námi - vývojáři), které by mohli negativně ovlivnit správnou funkcionalitu KATu.\n Varování zmizí po 60 sekundách. </Czech>
+			<Korean>KAT의 제대로 작동하는 기능에 부정적인 형향을 미칠 수 있는 호환되지 않는 애드온(개발자 목록 찾고)을 사용할 경우 경고를 보내고 rpt 로그에 라인을 추가합니다.\n경고는 60초 후에 사라집니다.</Korean>
+            <Japanese>KATの正常な動作に悪影響を与える可能性のある互換性のない(開発チームによりリストされた)アドオンが使用された場合、警告を表示し、RPTログに行を追加します。\n 警告は60秒後に消えます。</Japanese>
+        </Key>
+        <Key ID="STR_kat_misc_incompatibilityWarning_Desc">
+            <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
+            <German>[KAM WARNUNG] Es wurden inkompatible Addons entdeckt, die die korrekte Funktionalität beeinträchtigen könnten. Das KAT - Advanced Medical REWRITE Development Team rät dringend, diese Addons zu entfernen: %1</German>
+            <Czech>[KAM VAROVÁNÍ] Nekompatibilní addon(y), které by mohly negativně ovlivnit správnou funkcionalitu detekovány. KAT - Advanced Medical REWRITE Developerský Tým silně doporučuje odebrat tyto addony: %1</Czech>
+			<Korean>[KAM 경고] 제대로 작동 중인 기능에 부정적인 영향을 미칠 수 있는 호환되지 않는 애드온이 감지되었습니다. KAT -Advanced Medical REWRITE 개발팀은 다음 애드온을 제거할 것을 강력히 권장합니다: %1</Korean>
+            <Japanese>[KAM WARNING] KAT-KAMの動作に悪影響を及ぼす可能性のある互換性のないアドオンが検出されました。KAT-KAM開発チームはこれらのアドオンをアンロードすることを強く推奨します: %1</Japanese>
         </Key>
     </Package>
 </Project>

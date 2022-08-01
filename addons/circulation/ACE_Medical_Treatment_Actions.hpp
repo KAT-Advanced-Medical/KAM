@@ -3,7 +3,7 @@ class ACE_Medical_Treatment_Actions {
     class Morphine;
     class CheckPulse;
     class CPR {
-        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        condition = QUOTE(([ARR_2(_medic,_patient)] call ace_medical_treatment_fnc_canCPR) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
     };
 
     class CheckDogtags: CheckPulse {
@@ -78,7 +78,7 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\defib.paa);
         items[] = {"kat_AED"};
         treatmentTime = 10;
-        condition = "";
+        condition = QUOTE(([_medic,_patient] call ace_medical_treatment_fnc_canCPR) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackStart = "call ace_medical_treatment_fnc_cprStart; _patient setVariable ['kat_AEDinUse', true, true];";
         callbackProgress = "call ace_medical_treatment_fnc_cprProgress; call kat_circulation_fnc_AED_sound;";
         callbackSuccess = "[_medic, _patient, 'AED'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
