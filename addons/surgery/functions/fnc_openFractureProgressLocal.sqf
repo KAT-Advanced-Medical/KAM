@@ -20,9 +20,11 @@
 
 params ["_medic", "_patient", "_bodyPart", "_entry"];
 
-if !(IS_UNCONSCIOUS(_patient)) exitWith {
-    private _output = LLSTRING(fracture_fail);
-    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+if (GVAR(uncon_requieredForAction)) then {
+    if !(IS_UNCONSCIOUS(_patient)) exitWith {
+        private _output = LLSTRING(fracture_fail);
+        [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+    };
 };
 
 private _part = ALL_BODY_PARTS find toLower _bodyPart;

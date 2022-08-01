@@ -325,5 +325,11 @@
         <Key ID="STR_kat_surgery_SIMPLE_FRACTURE">
             <English>Simple Fracture</English>
         </Key>
+        <Key ID="STR_kat_surgery_uncon_requieredForActions">
+            <English>Unconsciouness Requierement</English>
+        </Key>
+        <Key ID="STR_kat_surgery_uncon_requieredForActions_DESC">
+            <English>Whether or not is unconsciousness requiered to perform some surgery actions</English>
+        </Key>
     </Package>
 </Project>

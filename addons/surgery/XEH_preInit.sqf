@@ -217,10 +217,19 @@ PREP_RECOMPILE_END;
 
 [
     QGVAR(enable_selfCheckFracture),
-    "CHECKBOX",
+    "LIST",
     [LLSTRING(SETTING_SELF_CHECKFRACTURE)],
  	CBA_SETTINGS_CAT_M,
-	[true],
+	[[0, 1], ["STR_ACE_common_No", "STR_ACE_common_Yes"], 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(uncon_requieredForActions),
+	"CHECKBOX",
+	[LLSTRING(uncon_requieredForActions), LLSTRING(uncon_requieredForActions_DESC)],
+	CBA_SETTINGS_CAT_M,
+	[false],
 	true
 ] call CBA_Settings_fnc_init;
 
