@@ -55,7 +55,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_TXA"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && GVAR(txaActive) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && GVAR(txaActive) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_TXA);
     };
     class Norepinephrine: Carbonate {
@@ -65,7 +65,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_norepinephrine"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
     class Phenylephrine: Carbonate {
@@ -75,7 +75,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_phenylephrine"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
     class Nitroglycerin: Carbonate {
@@ -85,7 +85,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_nitroglycerin"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
     class Amiodarone: Carbonate {
@@ -95,7 +95,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_amiodarone"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_Amiodarone);
     };
     class Lidocaine: Carbonate {
@@ -105,7 +105,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_lidocaine"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
     class Atropine: Carbonate {
@@ -115,7 +115,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_atropine"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_Atropine);
     };
     class Ketamine: Carbonate {
@@ -125,7 +125,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_ketamine"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_Ketamine);
     };
     class Fentanyl: Carbonate {
@@ -135,7 +135,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_fentanyl"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_Fentanyl);
     };
     class Nalbuphine: Carbonate {
@@ -145,7 +145,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_nalbuphine"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_Nalbuphine);
     };
     class Reorientation: Carbonate {
