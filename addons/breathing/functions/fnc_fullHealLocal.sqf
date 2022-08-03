@@ -78,7 +78,7 @@ _patient setVariable ["kat_pharma_usedIV", "", true];
 _patient setVariable ["kat_pharma_IV_counts", 0, true];
 _patient setVariable ["kat_pharma_IVsite", 0, true];
 _patient setVariable ["kat_pharma_active", false, true];
-_patient setVariable ["kat_IVPharma_PFH", nil];
+_patient setVariable ["kat_IVPharma_PFH", nil, true];
 
 // Damage storage
 _patient setVariable ["ace_medical_bodyPartDamage", [0,0,0,0,0,0], true];
