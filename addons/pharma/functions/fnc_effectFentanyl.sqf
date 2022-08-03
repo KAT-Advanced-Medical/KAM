@@ -17,11 +17,11 @@
  */
 params ["_patient", "_enable"];
 
+GVAR(ppFentanylWet) = ppEffectCreate ["WetDistortion",311];
+
 if (!_enable) exitWith {
 	GVAR(ppFentanylWet) ppEffectEnable false;
 };
-
-GVAR(ppFentanylWet) = ppEffectCreate ["WetDistortion",311];
 
 GVAR(ppFentanylWet) ppEffectEnable true;
 

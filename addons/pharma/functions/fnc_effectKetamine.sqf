@@ -17,15 +17,15 @@
  */
 params ["_patient", "_enable"];
 
+GVAR(ppKetamineBlur) = ppEffectCreate ["RadialBlur", 110];
+GVAR(ppKetamineWet) = ppEffectCreate ["WetDistortion",310];
+GVAR(ppKetamineColor) = ppEffectCreate ["ColorInversion",2510];
+
 if (!_enable) exitWith {
 	GVAR(ppKetamineBlur) ppEffectEnable false;
 	GVAR(ppKetamineWet) ppEffectEnable false;
 	GVAR(ppKetamineColor) ppEffectEnable false;
 };
-
-GVAR(ppKetamineBlur) = ppEffectCreate ["RadialBlur", 110];
-GVAR(ppKetamineWet) = ppEffectCreate ["WetDistortion",310];
-GVAR(ppKetamineColor) = ppEffectCreate ["ColorInversion",2510];
 
 GVAR(ppKetamineBlur) ppEffectEnable true;
 GVAR(ppKetamineWet) ppEffectEnable true;

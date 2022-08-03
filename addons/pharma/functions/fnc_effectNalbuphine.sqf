@@ -17,11 +17,11 @@
  */
 params ["_patient", "_enable"];
 
+GVAR(ppNalbuphineDynamic) = ppEffectCreate ["DynamicBlur",511];
+
 if (!_enable) exitWith {
 	GVAR(ppNalbuphineDynamic) ppEffectEnable false;
 };
-
-GVAR(ppNalbuphineDynamic) = ppEffectCreate ["DynamicBlur",511];
 
 GVAR(ppNalbuphineDynamic) ppEffectEnable true;
 
