@@ -148,5 +148,25 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//chance for reorientation success
+[
+    QGVAR(reorientationChance),
+    "SLIDER",
+    LLSTRING(SETTING_reorientationChance),
+    CBA_SETTINGS_CAT,
+    [0, 100, 100, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//chance for carbonate success
+[
+    QGVAR(carbonateChance),
+    "SLIDER",
+    LLSTRING(SETTING_carbonateChance),
+    CBA_SETTINGS_CAT,
+    [0, 100, 100, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 
 ADDON = true;
