@@ -112,6 +112,7 @@
             <Korean>관류 계수</Korean>
             <Polish>Mnożnik persfuzji</Polish>
             <Japanese>かん流量の乗数</Japanese>
+            <French>Multiplicateur de perfusion</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -554,7 +555,7 @@
             <Chinesesimp>%1 治愈了血气胸</Chinesesimp>
             <Czech>%1 léčil hemopneumotorax</Czech>
             <Korean>%1 은(는) 혈기흉 치료 완료</Korean>
-            <French>%1 Hemo-pneumothorax traité</French>
+            <French>%1 a traité un hémopneumothorax</French>
             <Turkish>%1 Hemopnömotoraksı tedavi etti</Turkish>
             <Italian>%1 ha trattato un emopneumotorace</Italian>
             <Russian>%1 лечили гемопневмоторакс</Russian>
@@ -599,7 +600,7 @@
             <Chinesesimp>%1 治愈了张力性气胸</Chinesesimp>
             <Czech>%1 léčil hemopneumotorax</Czech>
             <Korean>%1 은(는) 긴장성 기흉 치료 완료</Korean>
-            <French>%1 Hemo-pneumothorax traité</French>
+            <French>%1 a traité un pneumothorax sous tension</French>
             <Turkish>%1 Gerilim Pnömotoraks'ı tedavi edildi</Turkish>
             <Italian>%1 ha trattato uno pneumotorace iperteso</Italian>
             <Russian>%1 лечили напряженный пневмоторакс</Russian>
@@ -614,7 +615,7 @@
             <Chinesesimp>1x 张力性气胸</Chinesesimp>
             <Czech>1x Hemotorax</Czech>
             <Korean>1x 긴장성 기흉</Korean>
-            <French>1x Hemothorax</French>
+            <French>1x Pneumothorax sous tension</French>
             <Turkish>1x Gerilim Pnömotoraks'ı</Turkish>
             <Italian>1x Pneumotorace iperteso</Italian>
             <Russian>1x Напряженный пневмоторакс</Russian>
@@ -659,7 +660,7 @@
             <Chinesesimp>血气胸/张力性气胸概率</Chinesesimp>
             <Czech>Šance na hemopneumotorax</Czech>
             <Korean>혈기흉 발생 확률</Korean>
-            <French>Chance d'avoir un Hemo-pneumothorax</French>
+            <French>Chance d'avoir un hémopneumothorax / pneumothorax sous tension</French>
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Şansı</Turkish>
             <Italian>Probabilità di un emo/pneumotorace iperteso</Italian>
             <Russian>Гемоторакс / Напряженный пневмоторакс Вероятность</Russian>
@@ -674,7 +675,7 @@
             <Chinesesimp>患者在接受气胸治疗后是否有能患血气胸或张力性气胸,需要使用AAT Kit排出胸腔液体</Chinesesimp>
             <Czech>Procentní šance, že pacient bude trpět hemotoraxem současně s pneumotoraxem. Léčba vyžaduje vypouštění tekutin pomocí sady AAT.</Czech>
             <Korean>환자가 혈기흉을 앓을 확률입니다. 치료에는 AAT 키트를 사용하여 체액을 배출해야합니다.</Korean>
-            <French>Le pourcentage de chance qu'un patient souffre d'un hemothorax en même temps qu'un pneumothorax. Le traitement necessitera d'évacuer les fluides en utilisant un kit AAT</French>
+            <French>Le pourcentage de chance qu'un patient souffre d'un hémopneumothorax ou un pneumothorax sous tension en même temps qu'un pneumothorax. Le traitement necessitera d'évacuer les fluides en utilisant un kit AAT</French>
             <Turkish>Bir hastanın pnömotoraks tedavisi gördükten sonra hemotoraks veya tansiyon pnömotorakstan muzdarip olma şansı yüzdesi. Tedavi, sıvıların bir AAT Kiti kullanılarak boşaltılmasını gerektirir.</Turkish>
             <Italian>La probabilità percentuale che un paziente soffra di un emopneumotorace o pneumotorace iperteso in seguito al trattamento di uno pneumotorace. Il trattamento richiede un drenaggio con l'AAT Kit.</Italian>
             <Russian>Процентная вероятность того, что пациент будет страдать гемопневмотораксом или напряженным пневмотораксом после лечения пневмоторакса. Лечение требует дренирования жидкости с использованием набора ААТ.</Russian>
@@ -689,7 +690,7 @@
             <Chinesesimp>血气胸/张力性气胸的最低治愈水平</Chinesesimp>
             <Czech>Minimální úroveň zdravotního výcviku</Czech>
             <Korean>혈기흉 치료를 위한 최소 의료레벨 수준</Korean>
-            <French>Niveau minimum de soins d'un Hemo-pneumothorax </French>
+            <French>Niveau minimum de soins d'un hémopneumothorax / pneumothorax sous tension</French>
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Tedavisi Minimum Seviye</Turkish>
             <Italian>Livello minimo per il trattamento di un emo/pneumotorace iperteso</Italian>
             <Russian>Лечение гемоторакса/напряженного пневмоторакса Минимальный уровень</Russian>
@@ -704,7 +705,7 @@
             <Chinesesimp>使用胸腔穿刺减压所需的医疗培训水平</Chinesesimp>
             <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT kitu a používá se k léčbě hemopneumotoraxu.</Czech>
             <Korean>혈기흉 치료에 사용되는 바늘 감압 치료 조치를 수행할 수 있는 사람에게 필요한 최소 의료레벨 수준입니다.</Korean>
-            <French>Niveau médical minimum requis pour effectuer une aiguille de décompression et une aspiration des fluides, pour traiter un hemothorax.</French>
+            <French>Niveau médical minimum requis pour effectuer une aiguille de décompression et une aspiration des fluides, pour traiter un hémopneumothorax ou un pneumothorax sous tension </French>
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Italian>Il livello medico minimo richiesto per eseguire la decompressione con ago e il drenaggio dei fluidi, necessari per il trattamento di un emotorace o pneumotorace iperteso</Italian>
             <Russian>Минимальный медицинский уровень, необходимый для того, чтобы кто-то мог выполнять лечебные действия «Декомпрессия иглой» и «Дренаж жидкости», используемые для лечения гемоторакса или напряженного пневмоторакса.</Russian>
@@ -749,7 +750,7 @@
             <Chinesesimp>硬核气胸</Chinesesimp>
             <Czech>Obtížný pneumotorax</Czech>
             <Korean>하드코어 기흉</Korean>
-            <French>Pneumothorax harcore</French>
+            <French>Pneumothorax hardcore</French>
             <Turkish>sert pnömotoraks </Turkish>
             <Italian>Pneumotorace estremo </Italian>
             <Russian>Система расширенного пневмоторакса</Russian>
@@ -779,7 +780,7 @@
             <Chinesesimp>硬核张力性气胸和血气胸</Chinesesimp>
             <Czech>Obtížný tezní pneumothorax a hemotorax</Czech>
             <Korean>하드코어 긴장성 기흉과 혈기흉</Korean>
-            <French>Pneumothorax et hémothorax sous tension hardcore </French>
+            <French>Hémopneumothorax et pneumothorax sous tension  hardcore </French>
             <Turkish>Sert tansiyon pnömotoraks ve hemotoraks</Turkish>
             <Italian>Pneumotorace da tensione hardcore ed emotorace</Italian>
             <Russian>Усовершенствованная система для напряженного пневмоторакса/гемопневмоторакса</Russian>
@@ -794,7 +795,7 @@
             <Chinesesimp>通过不让张力性气胸和血气胸直接显示在医疗诊断中来提高难度,使用听诊器能间接诊断张力性气胸和血气胸</Chinesesimp>
             <Czech>Povoluje obtížný režim pro tezní pneumothorax a hemotorax, který jej nezobrazí ve zdravotnické nabídnce - Stetoskop by mohl být nápomocný</Czech>
             <Korean>긴장성 기흉과 혈기흉을 의료 메뉴에 표시되지 않게 하는 모드 활성화 - 청진기가 도움이 될 수 있음</Korean>
-            <French>Active le mod hardcore pour la tension et l'hémothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile</French>
+            <French>Active le mod hardcore pour le pneumothorax sous tension  et l'hémopneumothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile</French>
             <Turkish>Medikal menüde görünmeyerek tansiyon ve hemotoraks için hardcore modu etkinleştirir - Stetoskop yardımcı olabilir</Turkish>
             <Italian>Abilita la mod hardcore per la tensione e l'emotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile</Italian>
             <Russian>Активирует расширенную систему для напряженного пневмоторакса / гемопневмоторакса, не отображая напряженный пневмоторакс / гемопневмоторакс в медицинском меню - может помочь стетоскоп</Russian>
@@ -938,7 +939,7 @@
             <Japanese>デフォルトは無効です。有効にすると、緊張性気胸または血気胸のあるユニットでも、医療メニューに発生した他の気胸が表示されます。</Japanese>
             <Chinesesimp>默认值处于禁用状态.如果启用,张力性气胸或血气胸的单位也会在医疗菜单中显示气胸损伤</Chinesesimp>
             <Korean>기본값은 비활성화입니다. 활성화 시 긴장성 기흉 또는 혈기흉이 있는 유닛도 의료 메뉴에 기흉 부상으로 표시됩니다.</Korean>
-            <French>Désactivé par défaut. Si activé, les unités avec des pneumothorax sous tension ou des hemopneumothorax auront également le pneumothorax affiché dans leur menu médical.</French>
+            <French>Désactivé par défaut. Si activé, les unités avec des pneumothorax sous tension ou des hémopneumothorax auront également le pneumothorax affiché dans leur menu médical.</French>
             <Turkish>Varsayılan devre dışıdır. Etkinleştirilirse, tansiyon pnömotorakslı veya hemopnömotorakslı ünitelerde medikal menüde pnömotoraks yaralanması da görüntülenir.</Turkish>
             <Polish>Domyślnie wyłączone. Jeśli włączone, jednostki z odmą prężną lub krwiakiem opłucnej będą również wyświetlać odmę płucną w menu medycznym.</Polish>
         </Key>
