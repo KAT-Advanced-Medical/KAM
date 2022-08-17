@@ -221,6 +221,7 @@
         <Key ID="STR_kat_airway_message_obstructionTemporarilyMitigated">
             <English>Mitigated</English>
             <Japanese>軽減された</Japanese>
+            <Korean>완화됨</Korean>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
