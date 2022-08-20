@@ -1063,92 +1063,180 @@
             <Polish>Czas na użycie soli trzeźwiących</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Naloxone">
-            <English>Allow using Naloxone</English>
+            <English>Allow pushing Naloxone</English>
             <Polish>Ograniczenie użycia Naloksonu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Naloxone">
-            <English>Time to use Naloxone</English>
-            <Polish>Czas na użycie Naloksonu</Polish>
+            <English>Time to push Naloxone</English>
+            <Polish>Czas na wstrzyknięcie Naloksonu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_TXA">
-            <English>Allow using TXA</English>
+            <English>Allow pushing TXA</English>
             <Polish>Ograniczenie użycia TXA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_TXA">
-            <English>Time to use TXA</English>
-            <Polish>Czas na użycie TXA</Polish>
+            <English>Time to push TXA</English>
+            <Polish>Czas na wstrzyknięcie TXA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Norepinephrine">
-            <English>Allow using Norepinephrine</English>
+            <English>Allow pushing Norepinephrine</English>
             <Polish>Ograniczenie użycia Noradrenaliny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Norepinephrine">
-            <English>Time to use Norepinephrine</English>
-            <Polish>Czas na użycie Noradrenaliny</Polish>
+            <English>Time to push Norepinephrine</English>
+            <Polish>Czas na wstrzyknięcie Noradrenaliny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Phenylephrine">
-            <English>Allow using Phenylephrine</English>
+            <English>Allow pushing Phenylephrine</English>
             <Polish>Ograniczenie użycia Fenylefryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Phenylephrine">
-            <English>Time to use Phenylephrine</English>
-            <Polish>Czas na użycie Fenylefryny</Polish>
+            <English>Time to push Phenylephrine</English>
+            <Polish>Czas na wstrzyknięcie Fenylefryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nitroglycerin">
-            <English>Allow using Nitroglycerin</English>
+            <English>Allow pushing Nitroglycerin</English>
             <Polish>Ograniczenie użycia Nitrogliceryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nitroglycerin">
-            <English>Time to use Nitroglycerin</English>
-            <Polish>Czas na użycie Nitrogliceryny</Polish>
+            <English>Time to push Nitroglycerin</English>
+            <Polish>Czas na wstrzyknięcie Nitrogliceryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Amiodarone">
-            <English>Allow using Amiodarone</English>
+            <English>Allow pushing Amiodarone</English>
             <Polish>Ograniczenie użycia Amiodaronu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Amiodarone">
-            <English>Time to use Amiodarone</English>
-            <Polish>Czas na użycie Amiodaronu</Polish>
+            <English>Time to push Amiodarone</English>
+            <Polish>Czas na wstrzyknięcie Amiodaronu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Lidocaine">
-            <English>Allow using Lidocaine</English>
+            <English>Allow pushing Lidocaine</English>
             <Polish>Ograniczenie użycia Lidokainy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Lidocaine">
-            <English>Time to use Lidocaine</English>
-            <Polish>Czas na użycie Lidokainy</Polish>
+            <English>Time to push Lidocaine</English>
+            <Polish>Czas na wstrzyknięcie Lidokainy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Atropine">
-            <English>Allow using Atropine</English>
+            <English>Allow pushing Atropine</English>
             <Polish>Ograniczenie użycia Atropiny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Atropine">
-            <English>Time to use Atropine</English>
-            <Polish>Czas na użycie Atropiny</Polish>
+            <English>Time to push Atropine</English>
+            <Polish>Czas na wstrzyknięcie Atropiny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Ketamine">
-            <English>Allow using Ketamine</English>
+            <English>Allow pushing Ketamine</English>
             <Polish>Ograniczenie użycia Ketaminy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Ketamine">
-            <English>Time to use Ketamine</English>
-            <Polish>Czas na użycie Ketaminy</Polish>
+            <English>Time to push Ketamine</English>
+            <Polish>Czas na wstrzyknięcie Ketaminy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Fentanyl">
-            <English>Allow using Fentanyl</English>
+            <English>Allow pushing Fentanyl</English>
             <Polish>Ograniczenie użycia Fentanylu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Fentanyl">
-            <English>Time to use Fentanyl</English>
-            <Polish>Czas na użycie Fentanylu</Polish>
+            <English>Time to push Fentanyl</English>
+            <Polish>Czas na wstrzyknięcie Fentanylu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nalbuphine">
-            <English>Allow using Nalbuphine</English>
+            <English>Allow pushing Nalbuphine</English>
             <Polish>Ograniczenie użycia Nalbuphinu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nalbuphine">
-            <English>Time to use Nalbuphine</English>
-            <Polish>Czas na użycie Nalbuphinu</Polish>
+            <English>Time to push Nalbuphine</English>
+            <Polish>Czas na wstrzyknięcie Nalbuphinu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Basic">
+            <English>Basic Settings</English>
+            <Polish>Podstawowe Ustawienia</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_ApplyIV">
+            <English>IV Settings</English>
+            <Polish>Ustawienia IV</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_ApplyIO">
+            <English>IO Settings</English>
+            <Polish>Ustawienia IO</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Reorientation">
+            <English>Reorientation Settings</English>
+            <Polish>Ustawienia Cucenia</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Carbonate">
+            <English>Carbonate Settings</English>
+            <Polish>Ustawienia Soli Trzeźwiących</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Naloxone">
+            <English>Naloxone Settings</English>
+            <Polish>Ustawienia Naloksonu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_TXA">
+            <English>TXA Settings</English>
+            <Polish>Ustawienia TXA</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Norepinephrine">
+            <English>Norepinephrine Settings</English>
+            <Polish>Ustawienia Noradrenaliny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Phenylephrine">
+            <English>Phenylephrine Settings</English>
+            <Polish>Ustawienia Fenylefryny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Nitroglycerin">
+            <English>Nitroglycerin Settings</English>
+            <Polish>Ustawienia Nitrogliceryny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Amiodarone">
+            <English>Amiodarone Settings</English>
+            <Polish>Ustawienia Amiodarone</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Lidocaine">
+            <English>Lidocaine Settings</English>
+            <Polish>Ustawienia Lidokainy</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Atropine">
+            <English>Atropine Settings</English>
+            <Polish>Ustawienia Atropiny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Ketamine">
+            <English>Ketamine Settings</English>
+            <Polish>Ustawienia Ketaminy</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Fentanyl">
+            <English>Fentanyl Settings</English>
+            <Polish>Ustawienia Fentanylu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Nalbuphine">
+            <English>Nalbuphine Settings</English>
+            <Polish>Ustawienia Nalbuphinu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_fentanylEnable">
+            <English>Enable Fentanyl visual effects</English>
+            <Polish>Włącz efekty wizualne Fentanylu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_fentanylEnable_Desc">
+            <English>Enables Fentanyl visual effects \nEffect might be danger for epileptic</English>
+            <Polish>Włącza efekty wizualne Fentanylu \nEfekty mogą być zagrożeniem dla epileptyków</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_ketamineEnable">
+            <English>Enable Ketamine visual effects</English>
+            <Polish>Włącz efekty wizualne Ketaminy</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_ketamineEnable_Desc">
+            <English>Enables Ketamine visual effects \nEffect might be danger for epileptic</English>
+            <Polish>Włącza efekty wizualne Ketaminy \nEfekty mogą być zagrożeniem dla epileptyków</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_nalbuphineEnable">
+            <English>Enable Nalbuphine visual effects</English>
+            <Polish>Włącz efekty wizualne Nalbuphine</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_nalbuphineEnable_Desc">
+            <English>Enables Nalbuphine visual effects \nEffect might be danger for epileptic</English>
+            <Polish>Włącza efekty wizualne Nalbuphine \nEfekty mogą być zagrożeniem dla epileptyków</Polish>
         </Key>
     </Package>
 </Project>

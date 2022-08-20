@@ -328,6 +328,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(ketamineEnable),
+    "CHECKBOX",
+    [LLSTRING(ketamineEnable),LLSTRING(ketamineEnable_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 //Fentanyl Settings Category 
 [
     QGVAR(medLvl_Fentanyl),
@@ -347,6 +356,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(fentanylEnable),
+    "CHECKBOX",
+    [LLSTRING(fentanylEnable),LLSTRING(fentanylEnable_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 //Nalbuphine Settings Category 
 [
     QGVAR(medLvl_Nalbuphine),
@@ -363,6 +381,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(treatmentTime_Nalbuphine)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nalbuphine)],
     [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(nalbuphineEnable),
+    "CHECKBOX",
+    [LLSTRING(nalbuphineEnable),LLSTRING(nalbuphineEnable_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nalbuphine)],
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 
