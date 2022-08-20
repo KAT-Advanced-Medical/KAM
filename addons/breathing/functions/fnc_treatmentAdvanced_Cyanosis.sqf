@@ -16,12 +16,6 @@
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["_medic", "_patient"];
 
-if (local _target) then {
-    ["treatmentCyanosis", [_player, _target]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentCyanosis", [_player, _target], _target] call CBA_fnc_targetEvent;
-};
-
-true;
+[QGVAR(cyanosisLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
