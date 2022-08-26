@@ -50,11 +50,9 @@ params ["_target", "_item"];
 
     private _openWounds = _target getVariable ["ace_medical_openWounds", []];
     private _once = false;
-
     {
         _x params ["_id", "_bodyPart", "_amount"];
-
-        if (!_once && (_id != 20) && (_id != 21) && (_id != 22) && (_amount > 0)) exitWith {
+        if (!_once && (floor(_id / 10) != 2) && (floor(_id / 10) != 8) && (_amount > 0)) exitWith {
             private _part = ALL_BODY_PARTS select _bodyPart;
             ["ace_medical_treatment_bandageLocal", [_target, _part, "QuikClot"], _target] call CBA_fnc_targetEvent;
 
