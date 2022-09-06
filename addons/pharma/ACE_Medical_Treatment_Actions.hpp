@@ -72,7 +72,7 @@ class ACE_Medical_Treatment_Actions {
         patientStateCondition = 0;
         callbackSuccess = QFUNC(treatmentAdvanced_TXA);
     };
-class Saline_Flush: Carbonate {
+    class Saline_Flush: Carbonate {
         displayName = "Saline Flush";
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
