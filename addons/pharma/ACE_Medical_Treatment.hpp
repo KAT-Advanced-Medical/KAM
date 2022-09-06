@@ -65,6 +65,6 @@ class ACE_Medical_Treatment {
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;
-		};
+        };
     };
 };
