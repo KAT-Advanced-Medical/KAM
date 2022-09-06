@@ -1,5 +1,5 @@
 class ACE_Medical_Treatment {
-	class Medication {
+    class Medication {
         class Etomidate {
             painReduce = 0.4;
             hrIncreaseLow[] = {-5, -10};
@@ -11,7 +11,7 @@ class ACE_Medical_Treatment {
             incompatibleMedication[] = {};
             viscosityChange = 0;
         };
-	};
+    };
 
     class Bandaging {
         class Dressing {
