@@ -14,7 +14,8 @@ class CfgPatches {
             "kat_scalpel",
             "kat_retractor",
             "kat_clamp",
-            "kat_vacuum"
+            "kat_vacuum",
+            "kat_plate"
         };
         magazines[] = { };
         requiredAddons[] = {
