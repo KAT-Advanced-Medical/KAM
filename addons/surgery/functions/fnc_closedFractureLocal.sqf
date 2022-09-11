@@ -34,9 +34,9 @@ if (_count1 == 0 && _count2 == 0) then {
 playsound3D [QPATHTOF_SOUND(sounds\reduction.wav), _patient, false, getPosASL _patient, 8, 1, 15];
 
 if (_number < 3) exitWith {
-        private _output = LLSTRING(fracture_fail);
-        [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
-    };
+    private _output = LLSTRING(fracture_fail);
+    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+};
 
 _activeFracture set [_part, 0];
 _fractureArray set [_part, 0];
