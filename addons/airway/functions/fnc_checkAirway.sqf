@@ -18,18 +18,21 @@
 
 params ["_player", "_target"];
 
-private _messageairwayobstruction = localize LSTRING(message_obstruction_no);
-private _messageairwayOccluded = localize LSTRING(message_Occluded_no);
+private _messageairwayobstruction = LLSTRING(message_obstruction_no);
+private _messageairwayOccluded = LLSTRING(message_Occluded_no);
 private _obstruction = LSTRING(noObstruction);
 private _occluded = LSTRING(noOccluded);
 
 if (_target getVariable [QGVAR(obstruction), false]) then {
-    _messageairwayobstruction = localize LSTRING(message_obstruction_yes);
+    _messageairwayobstruction = LLSTRING(message_obstruction_yes);
     _obstruction = LSTRING(obstruction);
+    if (_target getVariable [QGVAR(overstretch), false]) then {
+        _obstruction = LLSTRING(message_obstructionTemporarilyMitigated);
+    };
     _target setVariable ["ace_medical_triageLevel", 3, true];
 };
 if (_target getVariable ["KAT_medical_airwayOccluded", false]) then {
-    _messageairwayOccluded = localize LSTRING(message_Occluded_yes);
+    _messageairwayOccluded = LLSTRING(message_Occluded_yes);
     _occluded = LSTRING(Occluded);
     _target setVariable ["ace_medical_triageLevel", 3, true];
 };

@@ -111,8 +111,8 @@ class CfgWeapons {
         displayName = CSTRING(Lidocaine_Box_Display);
         picture = QPATHTOF(ui\icon_Lidocaine.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Lidocane_DescShort);
-        descriptionUse = CSTRING(Lidocane_DescUse);
+        descriptionShort = CSTRING(Lidocaine_DescShort);
+        descriptionUse = CSTRING(Lidocaine_DescUse);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 

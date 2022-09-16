@@ -36,7 +36,7 @@ private _bloodLoss = _target getVariable ["ace_medical_bloodVolume", 6.0];
 private _asystole = _target getVariable [QGVAR(asystole), 0];
 
 if (_asystole isEqualTo 0) then {
-    if (_bloodLoss <= 2.8) then {
+    if (_bloodLoss <= 3.6) then {
         _target setVariable [QGVAR(asystole), 2, true];
         _asystole = _target getVariable [QGVAR(asystole), 2];
 
@@ -110,21 +110,21 @@ private _string = "HR: %1 RR: %2/%3 SpO2: %4";
 [_target, _player] spawn {
     params ["_target", "_player"];
     while {_target getVariable [QGVAR(X), false]} do {
-		if (GVAR(DeactMon_whileAED_X) && _target getVariable ['kat_AEDinUse', false]) then {
-		//No Beep for you atm
-		} else {
-			private _hr = _target getVariable ["ace_medical_heartRate", 80];
-			if (_hr <= 0) then {
-				private _soundPath1 = _target getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
-				playsound3D [_soundPath1, _target, false, getPosASL _target, 2, 1, 15];
-				sleep 1.478;
-			} else {
-				private _sleep = 60 / _hr;
-				private _soundPath2 = _target getVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav)];
-				playsound3D [_soundPath2, _target, false, getPosASL _target, 5, 1, 15];
-				sleep 0.25;
-				sleep _sleep;
-			};
-		};
+        if (GVAR(DeactMon_whileAED_X) && _target getVariable ['kat_AEDinUse', false]) then {
+        //No Beep for you atm
+        } else {
+            private _hr = _target getVariable ["ace_medical_heartRate", 80];
+            if (_hr <= 0) then {
+                private _soundPath1 = _target getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
+                playsound3D [_soundPath1, _target, false, getPosASL _target, 2, 1, 15];
+                sleep 1.478;
+            } else {
+                private _sleep = 60 / _hr;
+                private _soundPath2 = _target getVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav)];
+                playsound3D [_soundPath2, _target, false, getPosASL _target, 5, 1, 15];
+                sleep 0.25;
+                sleep _sleep;
+            };
+        };
     };
 };

@@ -32,9 +32,19 @@ PREP_RECOMPILE_END;
 [
     QGVAR(SpO2_dieActive),
     "CHECKBOX",
-	LLSTRING(SETTING_SpO2_dieActive),
+    LLSTRING(SETTING_SpO2_dieActive),
     CBA_SETTINGS_CAT,
     [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Turn to unconscious in cause of SpO2 unconscious value
+[
+    QGVAR(SpO2_unconscious),
+    "SLIDER",
+    [LLSTRING(SETTING_SpO2_unconscious), LLSTRING(SETTING_SpO2_unconscious_Desc)],
+    CBA_SETTINGS_CAT,
+    [0, 100, 75, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -78,6 +88,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// breathing SpO2 perfusion multiplier
+[
+    QGVAR(SpO2_PerfusionMultiplier),
+    "SLIDER",
+    LLSTRING(SETTING_PerfusionMultiplier),
+    CBA_SETTINGS_CAT,
+    [0, 10, 1, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // breathing probability for a pneumothorax
 // a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
 [
@@ -95,7 +115,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(ALLOW_PULSEOXIMETER), LLSTRING(TRAININGLEVEL_PULSEOXIMETER)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -105,7 +125,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(ALLOW_CHESTSEAL), LLSTRING(TRAININGLEVEL_CHESTSEAL)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -135,7 +155,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(HEMOPNEUMOTHORAX_TREATMENT_LEVEL), LLSTRING(HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION)],
     CBA_SETTINGS_CAT,
-    [[0, 1, 2], ["Anyone", "Medics", "Doctors"], 1],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -169,6 +189,56 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Enables cyanosis diagnose
+[
+    QGVAR(enableCyanosis),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Cyanosis), LLSTRING(SETTING_Cyanosis_DESC)],
+    CBA_SETTINGS_CAT,
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+//Settable list for checking Cyanosis per medical class
+[
+    QGVAR(medLvl_Cyanosis),
+    "LIST",
+    [LLSTRING(CYANOSIS_TREATMENT_LEVEL), LLSTRING(CYANOSIS_TREATMENT_LEVEL_DESCRIPTION)],
+    CBA_SETTINGS_CAT,
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+//Slight level for cyanosis
+[
+    QGVAR(slightValue),
+    "SLIDER",
+    [LLSTRING(SETTING_slightValue), LLSTRING(SETTING_slightValue_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 100, 90, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//Mild level for cyanosis
+[
+    QGVAR(mildValue),
+    "SLIDER",
+    [LLSTRING(SETTING_mildValue), LLSTRING(SETTING_mildValue_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 100, 75, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//Severe level for cyanosis
+[
+    QGVAR(severeValue),
+    "SLIDER",
+    [LLSTRING(SETTING_severeValue), LLSTRING(SETTING_severeValue_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 100, 66, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // sound volume for Stethoscope
 /*
 [
@@ -180,5 +250,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 */
+
+// Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.
+[
+    QGVAR(showPneumothorax_dupe),
+    "CHECKBOX",
+    [LLSTRING(showPneumothorax_dupe),LLSTRING(showPneumothorax_dupe_DESC)],
+    CBA_SETTINGS_CAT,
+    [false],
+    true
+] call CBA_Settings_fnc_init;
 
 ADDON = true;

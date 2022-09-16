@@ -2,7 +2,9 @@ class ACE_Medical_Treatment_Actions {
     class FieldDressing;
     class Morphine;
     class CheckPulse;
-    class CPR;
+    class CPR {
+        condition = QUOTE(([ARR_2(_medic,_patient)] call ace_medical_treatment_fnc_canCPR) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+    };
 
     class CheckDogtags: CheckPulse {
         displayName = CSTRING(DogTag);
@@ -12,19 +14,19 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         callbackSuccess = "[_medic, _patient] call ace_dogtags_fnc_checkDogtag";
         condition = "true";
-		animationPatient = "";
+        animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
     class CheckBloodPressure: CheckPulse { 
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-		animationPatient = "";
+        animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
     class CheckRhythm: CheckPulse { 
         displayName = CSTRING(Rhythm);
-        displayNameProgress = "Checking Rhythm";
+        displayNameProgress = CSTRING(Checking_Rhythm);
         allowedSelections[] = {"Body"};
         treatmentTime = 2;
         items[] = {};
@@ -41,41 +43,42 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = GVAR(blood_drawTime_500ml);
         allowedSelections[] = {"LeftArm", "RightArm"};
         allowSelfTreatment = GVAR(enable_selfBloodDraw);
-		category = "advanced";
-		medicRequired = 0;
-		consumeItem = 1;
+        category = "advanced";
+        medicRequired = 0;
+        consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient,500)] call FUNC(drawBlood));
         condition = QUOTE([ARR_3(_medic, _patient,500)] call FUNC(canDraw));
-		items[] = {"KAT_Empty_bloodIV_500"};
-		animationPatient = "";
+        items[] = {"KAT_Empty_bloodIV_500"};
+        animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
-	class KAT_DrawBlood250: CheckPulse {
+    class KAT_DrawBlood250: CheckPulse {
         displayName = CSTRING(DrawBlood250_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
         treatmentTime = GVAR(blood_drawTime_250ml);
         allowedSelections[] = {"LeftArm", "RightArm"};
         allowSelfTreatment = GVAR(enable_selfBloodDraw);
-		category = "advanced";
-		medicRequired = 0;
-		consumeItem = 1;
+        category = "advanced";
+        medicRequired = 0;
+        consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient,250)] call FUNC(drawBlood));
         condition = QUOTE([ARR_3(_medic, _patient,250)] call FUNC(canDraw));
-		items[] = {"KAT_Empty_bloodIV_250"};
-		animationPatient = "";
+        items[] = {"KAT_Empty_bloodIV_250"};
+        animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
 
     #include "Blood_Medical.hpp"
-	
+    
     class Defibrillator: CPR {
         displayName = CSTRING(Defib_Action_Use);
         displayNameProgress = "$STR_KAT_circulation_AED_PROGRESS";
         icon = QPATHTOF(ui\defib.paa);
         items[] = {"kat_AED"};
         treatmentTime = 10;
+        condition = QUOTE(([_medic,_patient] call ace_medical_treatment_fnc_canCPR) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackStart = "call ace_medical_treatment_fnc_cprStart; _patient setVariable ['kat_AEDinUse', true, true];";
         callbackProgress = "call ace_medical_treatment_fnc_cprProgress; call kat_circulation_fnc_AED_sound;";
         callbackSuccess = "[_medic, _patient, 'AED'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
