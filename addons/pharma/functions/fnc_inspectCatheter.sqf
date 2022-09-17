@@ -1,21 +1,17 @@
 #include "script_component.hpp"
 /*
  * Author: 2LT.Mazinski
- * Opens an IV/IO on a patient and changes the patient's flow variable
+ * Function for inspecting catheter
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Body Part <STRING>
- * 3: Treatment (not used) <STRING>
- * 4: Item User (not used) <OBJECT>
- * 5: Used Item <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg", "", objNull, "kat_IV_20"] call kat_circulation_fnc_fractureCheck;
+ * [_medic, _patient] call kat_pharma_fnc_inspectCatheter;
  *
  * Public: No
  */
