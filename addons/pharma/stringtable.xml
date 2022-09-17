@@ -1237,5 +1237,32 @@
         <Key ID="STR_kat_pharma_SETTING_Max_Stack_DESC">
             <English>The maximum amount of fluid bags that can be stacked to increase IV flow rate</English>
         </Key>
+        <Key ID="STR_kat_pharma_EACA_Display">
+            <English>EACA</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Take_EACA">
+            <English>Push EACA</English>
+        </Key>
+        <Key ID="STR_kat_pharma_EACA_DescShort">
+            <English>Encourages clot formation</English>
+        </Key>
+        <Key ID="STR_kat_pharma_EACA_DescUse">
+            <English>Used to encourage and stabilize clots in a patient</English>
+        </Key>
+        <Key ID="STR_kat_pharma_SETTING_aiEnabled">
+            <English>Enable Advanced Medical for AI</English>
+        </Key>
+        <Key ID="STR_kat_pharma_SETTING_aiEnabled_DESC">
+            <English>Enables kidney actions and blood pressure PFHs for AI</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Check_Breath">
+            <English>Check breath</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Inspect_Catheter">
+            <English>Inspect Catheter</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Saline_Flush">
+            <English>Saline Flush</English>
+        </Key>
     </Package>
 </Project>
