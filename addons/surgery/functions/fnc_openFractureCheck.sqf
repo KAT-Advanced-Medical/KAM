@@ -10,7 +10,7 @@
  * 3: Fracture Status <NUMBER>
  *
  * Return Value:
- * None
+ * Succesful treatment <BOOL>
  *
  * Example:
  * [player, cursorObject, "LeftLeg", 3.1] call kat_surgery_fnc_openFractureCheck
