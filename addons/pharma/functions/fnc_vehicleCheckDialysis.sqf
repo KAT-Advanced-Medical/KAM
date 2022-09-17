@@ -8,7 +8,7 @@
  * 1: Patient <OBJECT>
  *
  * Return Value:
- * None
+ * Succesful treatment <BOOL>
  *
  * Example:
  * [player, cursorObject] call kat_surgery_fnc_vehicleCheckDialysis
