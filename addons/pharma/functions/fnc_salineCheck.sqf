@@ -1,18 +1,17 @@
 #include "script_component.hpp"
 /*
  * Author: 2LT.Mazinski
- * Opens an IV/IO on a patient and changes the patient's flow variable
+ * Checks Saline volume remaining
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Body Part <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_circulation_fnc_applyIV;
+ * [_medic, _patient] call kat_pharma_fnc_salineCheck;
  *
  * Public: No
  */
