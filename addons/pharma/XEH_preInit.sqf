@@ -150,7 +150,7 @@ PREP_RECOMPILE_END;
 [
 	QGVAR(aiEnableAdvanced),
 	"CHECKBOX",
-	["Enable Advanced Medical for AI", "Enables kidney actions and blood pressure PFHs for AI"],
+	[LLSTRING(SETTING_aiEnabled), LLSTRING(SETTING_aiEnabled_DESC)],
 	CBA_SETTINGS_CAT,
 	[false],
 	true
