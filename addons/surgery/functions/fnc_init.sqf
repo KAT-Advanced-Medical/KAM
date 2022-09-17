@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
+ * Author: 2LT.Mazinski
  * Initializes unit variables.
  *
  * Arguments:
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_circulation_fnc_init;
+ * [player] call kat_surgery_fnc_init;
  *
  * Public: No
  */
