@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_debridementCheckLocal;
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_debridementClearLocal;
  *
  * Public: No
  */
