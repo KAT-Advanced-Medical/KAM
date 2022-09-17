@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
- * Airway Management for occluding
+ * Author: 2LT.Mazinski
+ * Handles EACA treatment
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -11,7 +11,7 @@
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_accuvac;
+ * [_medic, _patient] call kat_pharma_fnc_treatmentAdvanced_EACA;
  *
  * Public: Yes
  */
