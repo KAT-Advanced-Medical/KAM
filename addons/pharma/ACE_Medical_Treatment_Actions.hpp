@@ -73,7 +73,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_TXA);
     };
     class Saline_Flush: Carbonate {
-        displayName = "Saline Flush";
+        displayName = CSTRING(Saline_Flush);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = 1;
@@ -84,7 +84,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_Flush);
     };
     class Inspect: Carbonate {
-        displayName = "Inspect Catheter";
+        displayName = CSTRING(Inspect_Catheter);
         category = "examine";
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
@@ -98,7 +98,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedicProne = "";
     };
     class BreathCheck: Carbonate {
-        displayName = "Check Breath";
+        displayName = CSTRING(Check_Breath);
         category = "examine";
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
