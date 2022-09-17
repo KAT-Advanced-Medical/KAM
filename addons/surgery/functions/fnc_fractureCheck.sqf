@@ -7,12 +7,13 @@
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
  * 2: Body Part <STRING>
+ * 3: Number <NUMBER>
  *
  * Return Value:
  * Fracture <BOOLEAN>
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_fractureCheck
+ * [player, cursorObject, "LeftLeg", "1"] call kat_surgery_fnc_fractureCheck
  *
  * Public: No
  */
