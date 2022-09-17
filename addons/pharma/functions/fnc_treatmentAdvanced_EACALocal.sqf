@@ -1,17 +1,18 @@
 #include "script_component.hpp"
 /*
  * Author: 2LT.Mazinski
- * Begins TXA bandaging process
+ * Local function for EACA treatment
  *
  * Arguments:
- * 0: Medic <OBJECT>
+ * 0: Target <OBJECT>
  * 1: Medication <STRING>
+ * 2: Medic <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, "TXA"] call aceP_circulation_fnc_treatmentAdvanced_TXALocal;
+ * [_target, "TXA", _medic] call kat_pharma_fnc_treatmentAdvanced_EACALocal;
  *
  * Public: No
  */
