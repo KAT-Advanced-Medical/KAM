@@ -430,7 +430,7 @@
             <Turkish>Kaçma, bir hayat kurtarıyorsun!</Turkish>
             <Italian>Non andartene, stai salvando una vita!</Italian>
             <Russian>Не убегай, ты спасаешь жизнь!</Russian>
-            <Japanese>気道を確保し続けるために移動しないでください!</Japanese>
+            <Japanese>移動しないでください、 あなたは気道確保中です!</Japanese>
         </Key>
         <Key ID="STR_kat_airway_turnaround_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -445,7 +445,7 @@
             <Turkish>Baş dönüşü yapıldı, hava yolları hala net değil</Turkish>
             <Italian>Rotazione della testa eseguita, le vie aeree non sono ancora libere</Italian>
             <Russian>Выполнен поворот головы, дыхательные пути еще не очистились</Russian>
-            <Japanese>試みましたが、まだ異物が残っています。</Japanese>
+            <Japanese>試みましたが、異物がまだ残っています</Japanese>
         </Key>
         <Key ID="STR_kat_airway_turnaround">
             <English>Head turning</English>
@@ -475,7 +475,7 @@
             <Turkish>Kafayı çevir</Turkish>
             <Italian>Ruotando la testa</Italian>
             <Russian>Повернуть голову в сторону</Russian>
-            <Japanese>吐瀉物を除去しようとしています</Japanese>
+            <Japanese>異物を除去しようとしています</Japanese>
         </Key>
         <Key ID="STR_kat_airway_Accuvac_NA">
             <English>Medical suction not needed</English>
@@ -1061,7 +1061,7 @@
             <German>In die stabile Seitenlage legen</German>
             <Polish>Ułóż w pozycji bezpiecznej</Polish>
             <Chinesesimp>建立救援体位</Chinesesimp>
-            <Japanese>回復体位をとらせる</Japanese>
+            <Japanese>回復体位にする</Japanese>
             <Korean>회복자세 교정해주기</Korean>
             <French>Mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturun</Turkish>
@@ -1071,7 +1071,7 @@
             <German>In die stabile Seitenlage legen</German>
             <Polish>Układanie w pozycji</Polish>
             <Chinesesimp>正在建立救援体位</Chinesesimp>
-            <Japanese>回復体位をとらせています</Japanese>
+            <Japanese>回復体位にしています</Japanese>
             <Korean>회복자세 교정 중</Korean>
             <French>Mise en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturuluyor</Turkish>
@@ -1081,7 +1081,7 @@
             <German>Erfolgreich in die stabile Seitenlage gelegt</German>
             <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
             <Chinesesimp>已成功建立救援体位</Chinesesimp>
-            <Japanese>回復体位をとりました</Japanese>
+            <Japanese>回復体位になりました</Japanese>
             <Korean>회복자세 교정 성공</Korean>
             <French>Mise en position latérale de sécurité réussie</French>
             <Turkish>Kurtarma pozisyonu başarıyla kuruldu</Turkish>
@@ -1091,7 +1091,7 @@
             <German>Stabile Seitenlage abgebrochen</German>
             <Polish>Przerwano pozycję bezpieczną</Polish>
             <Chinesesimp>已取消救援体位</Chinesesimp>
-            <Japanese>回復体位が崩されました</Japanese>
+            <Japanese>回復体位をやめました</Japanese>
             <Korean>회복자세 교정 취소됨</Korean>
             <French>Mise en position latérale de sécurité annulée</French>
             <Turkish>Kurtarma pozisyonu iptal edildi</Turkish>
@@ -1131,7 +1131,7 @@
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerwij pozycję bezpieczną</Polish>
             <Chinesesimp>取消救援体位</Chinesesimp>
-            <Japanese>回復体位をやめる</Japanese>
+            <Japanese>回復体位を崩す</Japanese>
             <Korean>회복자세 교정 취소</Korean>
             <French>Annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunu iptal et</Turkish>
@@ -1151,7 +1151,7 @@
             <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
             <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
             <Chinesesimp>取消救援体位时间</Chinesesimp>
-            <Japanese>回復体位をやめるのにかかる時間</Japanese>
+            <Japanese>回復体位を崩すのにかかる時間</Japanese>
             <Korean>회복자세 교정 취소 시간</Korean>
             <French>Temps pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunu iptal etmek için zaman</Turkish>
@@ -1161,7 +1161,7 @@
             <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
             <Polish>Jak długo potrwa przerwanie pozycji bocznej bezpiecznej</Polish>
             <Chinesesimp>取消救援体位的所需时间</Chinesesimp>
-            <Japanese>回復体位をやめさせるのにどのくらい時間がかかるか設定します</Japanese>
+            <Japanese>回復体位を崩すのにどのくらい時間がかかるか設定します</Japanese>
             <Korean>회복자세 교정을 취소하는 데 걸리는 시간입니다</Korean>
             <French>Temps nécessaire pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
