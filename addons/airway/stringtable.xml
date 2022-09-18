@@ -139,6 +139,7 @@
             <French>%1 a vérifié les voies aériennes : %2, %3</French>
             <Turkish>%1 kontrol edilmiş havayolları: %2, %3</Turkish>
             <Italian>%1 ha controllato le vie aeree: %2, %3</Italian>
+            <Japanese>%1 が気道を確認しました: %2, %3</Japanese>
         </Key>
         <Key ID="STR_kat_airway_airway_log">
             <English>%1 inserted a %2</English>
@@ -218,6 +219,7 @@
         <Key ID="STR_kat_airway_message_obstructionTemporarilyMitigated">
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
+            <Japanese>軽減された閉塞</Japanese>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
@@ -1174,6 +1176,7 @@
             <French>Non obstruées</French>
             <Turkish>Değil Kapanma</Turkish>
             <Italian>No ostruita</Italian>
+            <Japanese>閉塞無し</Japanese>
         </Key>
         <Key ID="STR_kat_airway_noOccluded">
             <English>Not occluded</English>
@@ -1186,6 +1189,7 @@
             <French>Non occludées</French>
             <Turkish>Değil Tıkalı</Turkish>
             <Italian>No occlusa</Italian>
+            <Japanese>異物無し</Japanese>
         </Key>
     </Package>
 </Project>
