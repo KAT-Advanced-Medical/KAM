@@ -8,7 +8,6 @@ PREP(gasCheck);
 PREP(gasCheckLocal);
 PREP(getList);
 PREP(coughing);
-PREP(handlePoisenDamage);
 PREP(handleRespawn);
 PREP(gasmodule);
 PREP(initModule);
