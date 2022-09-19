@@ -57,7 +57,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_TXA"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && GVAR(txaActive) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && GVAR(txaActive) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_TXA));
     };
@@ -68,7 +68,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_norepinephrine"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         patientStateCondition = 0;
         callbackSuccess = "ace_medical_treatment_fnc_medication";
     };
@@ -79,7 +79,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_phenylephrine"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         patientStateCondition = 0;
         callbackSuccess = "ace_medical_treatment_fnc_medication";
     };
@@ -90,7 +90,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_nitroglycerin"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         patientStateCondition = 0;
         callbackSuccess = "ace_medical_treatment_fnc_medication";
     };
@@ -101,7 +101,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_amiodarone"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Amiodarone')] call FUNC(treatmentAdvanced_Generic));
     };
@@ -112,7 +112,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_lidocaine"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Lidocaine')] call FUNC(treatmentAdvanced_Generic));
     };
@@ -123,7 +123,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 5;
         items[] = {"kat_atropine"};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV));
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Atropine')] call FUNC(treatmentAdvanced_Atropine));
     };

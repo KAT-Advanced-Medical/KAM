@@ -48,6 +48,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Require inserted IV for using medications?
+[
+    QGVAR(MedicationsRequireInsIV),
+    "CHECKBOX",
+    [LLSTRING(SETTING_REQUIRE_INS_IV_Medications),LLSTRING(SETTING_REQUIRE_INS_IV_Medications_DESC)],
+    "KAT - ADV Medical: Pharmacy",
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 [
     QGVAR(IVreuse),
     "CHECKBOX",

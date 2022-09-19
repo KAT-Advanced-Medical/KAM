@@ -81,6 +81,7 @@
             <German>Zeit für die Wiederholung des Erbrechens</German>
             <Korean>구토 반복 타이머</Korean>
             <Polish>Czas powtarzania zablokowania</Polish>
+            <Japanese>異物の再発する時間</Japanese>
         </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -135,7 +136,7 @@
             <Chinese>%1 檢查呼吸道: %2 %3, %4 %5</Chinese>
             <Chinesesimp>%1 气道情况已查明: %2%3, %4%5</Chinesesimp>
             <Czech>Zkontrolovány dýchací cesty: %2 %3, %4 %5 </Czech>
-            <Korean>%1 이(가)기도 확인함: %2 %3, %4 %5</Korean>
+            <Korean>%1 이(가)기도 확인함: %3 %2 , %5 %4 </Korean>
             <French>%1 a vérifié les voies aériennes : %2 %3, %4 %5</French>
             <Turkish>%1 kontrol edilmiş havayolları: %2 %3, %4 %5</Turkish>
             <Italian>%1 ha controllato le vie aeree: %2 %3 %4 %5</Italian>
@@ -219,6 +220,7 @@
         </Key>
         <Key ID="STR_kat_airway_message_obstructionTemporarilyMitigated">
             <English>Mitigated</English>
+            <Japanese>軽減された</Japanese>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
