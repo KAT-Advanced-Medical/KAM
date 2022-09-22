@@ -27,20 +27,17 @@ if (alive _target) then {
 private _messageCyanosis = LLSTRING(CyanosisStatus_N);
 private _spO2Output = LSTRING(CyanosisStatus_N);
 
-if (_spO2 < 100) then {
-    if (_spO2 < 100 && _spO2 >= GVAR(slightValue)) then {
-        _spO2Output = LSTRING(CyanosisStatus_Slight);
-        _messageCyanosis = LLSTRING(CyanosisStatus_Slight);
-    };
-    if (_spO2 < GVAR(slightValue) && _spO2 >= GVAR(mildValue)) then {
-        _spO2Output = LSTRING(CyanosisStatus_Mild);
-        _messageCyanosis = LLSTRING(CyanosisStatus_Mild);
-    };
-    if (_spO2 < GVAR(mildValue) && _spO2 >= GVAR(severeValue)) then {
-        _spO2Output = LSTRING(CyanosisStatus_Severe);
-        _messageCyanosis = LLSTRING(CyanosisStatus_Severe);
-    };
-
+if (_spO2 <= GVAR(slightValue)) then {
+     _spO2Output = LSTRING(CyanosisStatus_Slight);
+    _messageCyanosis = LLSTRING(CyanosisStatus_Slight);
+};
+if (_spO2 <= GVAR(mildValue)) then {
+    _spO2Output = LSTRING(CyanosisStatus_Mild);
+    _messageCyanosis = LLSTRING(CyanosisStatus_Mild);
+};
+if (_spO2 <= GVAR(severeValue)) then {
+    _spO2Output = LSTRING(CyanosisStatus_Severe);
+    _messageCyanosis = LLSTRING(CyanosisStatus_Severe);
 };
 
 private _message = format ["%1",_messageCyanosis];

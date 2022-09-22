@@ -82,6 +82,7 @@
             <Korean>구토 반복 타이머</Korean>
             <Polish>Czas powtarzania zablokowania</Polish>
             <Japanese>異物の再発する時間</Japanese>
+            <French>Temps de répétition des occlusions</French>
         </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -129,19 +130,17 @@
             <Japanese>気道をチェック</Japanese>
         </Key>
         <Key ID="STR_kat_airway_checkAirway_log">
-            <English>%1 checked airways: %2 %3, %4 %5</English>
-            <German>%1 überprüfte Atemwege: %2 %3, %4 %5</German>
-            <Polish>%1 sprawdził drogi oddechowe: %2 %3, %4 %5</Polish>
-            <Spanish>%1 comprobó las vías aéreas: %2 %3, %4 %5</Spanish>
-            <Chinese>%1 檢查呼吸道: %2 %3, %4 %5</Chinese>
-            <Chinesesimp>%1 气道情况已查明: %2%3, %4%5</Chinesesimp>
-            <Czech>Zkontrolovány dýchací cesty: %2 %3, %4 %5 </Czech>
-            <Korean>%1 이(가)기도 확인함: %3 %2 , %5 %4 </Korean>
-            <French>%1 a vérifié les voies aériennes : %2 %3, %4 %5</French>
-            <Turkish>%1 kontrol edilmiş havayolları: %2 %3, %4 %5</Turkish>
-            <Italian>%1 ha controllato le vie aeree: %2 %3 %4 %5</Italian>
-            <Russian>%1 проверены дыхательные пути: %2 %3, %4 %5</Russian>
-            <Japanese>%1 が気道を確認しました: %3%2, %5%4</Japanese>
+            <English>%1 checked airways: %2, %3</English>
+            <German>%1 überprüfte Atemwege: %2, %3</German>
+            <Polish>%1 sprawdził drogi oddechowe: %2, %3</Polish>
+            <Spanish>%1 comprobó las vías aéreas: %2, %2</Spanish>
+            <Chinese>%1 檢查呼吸道: %2, %3</Chinese>
+            <Czech>Zkontrolovány dýchací cesty: %2, %3</Czech>
+            <Korean>%1 기도 확인됨: %2, %3</Korean>
+            <French>%1 a vérifié les voies aériennes : %2, %3</French>
+            <Turkish>%1 kontrol edilmiş havayolları: %2, %3</Turkish>
+            <Italian>%1 ha controllato le vie aeree: %2, %3</Italian>
+            <Japanese>%1 が気道を確認しました: %2, %3</Japanese>
         </Key>
         <Key ID="STR_kat_airway_airway_log">
             <English>%1 inserted a %2</English>
@@ -161,7 +160,7 @@
         <Key ID="STR_kat_airway_Occluded">
             <English>Occluded</English>
             <German>Verstopft</German>
-            <Polish>Zablokowane</Polish>
+            <Polish>Zator</Polish>
             <Spanish>Ocluída</Spanish>
             <Chinese>閉塞</Chinese>
             <Chinesesimp>异物阻塞</Chinesesimp>
@@ -191,7 +190,7 @@
         <Key ID="STR_kat_airway_obstruction">
             <English>Obstruction</English>
             <German>Verlegt</German>
-            <Polish>Zator</Polish>
+            <Polish>Niedrożne</Polish>
             <Spanish>Obstruída</Spanish>
             <Chinese>阻塞</Chinese>
             <Chinesesimp>闭塞</Chinesesimp>
@@ -219,7 +218,8 @@
             <Japanese>無し</Japanese>
         </Key>
         <Key ID="STR_kat_airway_message_obstructionTemporarilyMitigated">
-            <English>Mitigated</English>
+            <English>Mitigated obstruction</English>
+            <Polish>Ręcznie udrożnione</Polish>
             <Japanese>軽減された</Japanese>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
@@ -1165,6 +1165,32 @@
             <Korean>회복자세 교정을 취소하는 데 걸리는 시간입니다</Korean>
             <French>Temps nécessaire pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
+        </Key>
+        <Key ID="STR_kat_airway_noObstruction">
+            <English>Not obstructed</English>
+            <German>Nicht verlegt</German>
+            <Polish>Drożne</Polish>
+            <Spanish>No obstruída</Spanish>
+            <Chinese>無 阻塞</Chinese>
+            <Czech>Není zablokováno</Czech>
+            <Korean>아니다 막힘(이물질)</Korean>
+            <French>Non obstruées</French>
+            <Turkish>Değil Kapanma</Turkish>
+            <Italian>No ostruita</Italian>
+            <Japanese>閉塞無し</Japanese>
+        </Key>
+        <Key ID="STR_kat_airway_noOccluded">
+            <English>Not occluded</English>
+            <German>Nicht verstopft</German>
+            <Polish>Brak zatoru</Polish>
+            <Spanish>No ocluída</Spanish>
+            <Chinese>無 閉塞</Chinese>
+            <Czech>Není uzavřeno</Czech>
+            <Korean>아니다 막힘</Korean>
+            <French>Non occludées</French>
+            <Turkish>Değil Tıkalı</Turkish>
+            <Italian>No occlusa</Italian>
+            <Japanese>異物無し</Japanese>
         </Key>
     </Package>
 </Project>
