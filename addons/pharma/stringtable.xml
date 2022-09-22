@@ -761,7 +761,6 @@
             <Italian>Stimolare il paziente</Italian>
             <Spanish>Estimula al paciente</Spanish>
             <Korean>환자 깨우기</Korean>
-            <Turkish></Turkish>
             <Czech>Reorientovat pacienta</Czech>
             <Japanese>患者に刺激を与える</Japanese>
             <Russian>Переориентация пациента</Russian>
@@ -790,7 +789,7 @@
             <Chinesesimp>患者仍未苏醒</Chinesesimp>
             <Czech>Udeřil jsi do tváře, ale pacient stále spí!</Czech>
             <Korean>뺨을 때렸지만 여전히 의식 불명 상태입니다!</Korean>
-            <French>Vous avez frappé la joue, mais patient encore endormi!</French>
+            <French>Vous avez frappé la joue, mais le patient est encore endormi!</French>
             <Turkish>Yanağına vurdun ama hasta hala uyuyor!</Turkish>
             <Italian>Hai colpito la guancia, ma il paziente dorme ancora!</Italian>
             <Russian>Вы попали в щеку, но больной еще спит!</Russian>
@@ -1113,9 +1112,11 @@
         </Key>
         <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV_Medications">
             <English>Medications Require IV/IO</English>
+            <French>Les médicaments nécessitent une IV/IO</French>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV_Medications_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone medications.\n If false, you can give them without it.</English>
+            <French>Faux par défaut. Si vrai, il sera nécessaire d'insérer une IV/IO avant de pouvoir donner des médicaments à quelqu'un.\n Si faux, ils pourront être donnés sans</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
