@@ -350,22 +350,25 @@
             <English>Incompatible addon warning</English>
             <German>Inkompatible Mods Warnung</German>
             <Czech>Varování nekompatibilního addonu</Czech>
-			<Korean>호환되지 않는 애드온 경고</Korean>
+            <Korean>호환되지 않는 애드온 경고</Korean>
             <Japanese>互換性のないアドオンの警告</Japanese>
+            <French>Avertissement d'addon incompatible</French>
         </Key>
         <Key ID="STR_kat_misc_SETTING_incompatibilityWarning_Desc">
             <English>Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that could negatively affect correct functionality of KAT are used.\n Warning disappears after 60 seconds.</English>
             <German>Wirft eine Warnung aus und fügt eine Zeile in das RPT-Protokoll ein, wenn inkompatible Addons (von uns aufgelistet - Entwickler) verwendet werden, die die korrekte Funktionalität von KAT beeinträchtigen könnten. Die Warnung verschwindet nach 60 Sekunden.</German>
             <Czech>Vyhodí varování a přidá řádek do RPT logu pokud jsou použity nekompatibilní addony(Zanesené námi - vývojáři), které by mohli negativně ovlivnit správnou funkcionalitu KATu.\n Varování zmizí po 60 sekundách. </Czech>
-			<Korean>KAT의 제대로 작동하는 기능에 부정적인 형향을 미칠 수 있는 호환되지 않는 애드온(개발자 목록 찾고)을 사용할 경우 경고를 보내고 rpt 로그에 라인을 추가합니다.\n경고는 60초 후에 사라집니다.</Korean>
+            <Korean>KAT의 제대로 작동하는 기능에 부정적인 형향을 미칠 수 있는 호환되지 않는 애드온(개발자 목록 찾고)을 사용할 경우 경고를 보내고 rpt 로그에 라인을 추가합니다.\n경고는 60초 후에 사라집니다.</Korean>
             <Japanese>KATの正常な動作に悪影響を与える可能性のある互換性のない(開発チームによりリストされた)アドオンが使用された場合、警告を表示し、RPTログに行を追加します。\n 警告は60秒後に消えます。</Japanese>
+            <French>Affiche un avertissement et ajoute une ligne au log RPT si des addons incompatibles (Listés par nous - les développeurs) qui pourraient affecter négativement le fonctionnement correct de KAT sont utilisés.\n L'avertissement disparaîtra après 60 secondes.  </French>
         </Key>
         <Key ID="STR_kat_misc_incompatibilityWarning_Desc">
             <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
             <German>[KAM WARNUNG] Es wurden inkompatible Addons entdeckt, die die korrekte Funktionalität beeinträchtigen könnten. Das KAT - Advanced Medical REWRITE Development Team rät dringend, diese Addons zu entfernen: %1</German>
             <Czech>[KAM VAROVÁNÍ] Nekompatibilní addon(y), které by mohly negativně ovlivnit správnou funkcionalitu detekovány. KAT - Advanced Medical REWRITE Developerský Tým silně doporučuje odebrat tyto addony: %1</Czech>
-			<Korean>[KAM 경고] 제대로 작동 중인 기능에 부정적인 영향을 미칠 수 있는 호환되지 않는 애드온이 감지되었습니다. KAT -Advanced Medical REWRITE 개발팀은 다음 애드온을 제거할 것을 강력히 권장합니다: %1</Korean>
+            <Korean>[KAM 경고] 제대로 작동 중인 기능에 부정적인 영향을 미칠 수 있는 호환되지 않는 애드온이 감지되었습니다. KAT -Advanced Medical REWRITE 개발팀은 다음 애드온을 제거할 것을 강력히 권장합니다: %1</Korean>
             <Japanese>[KAM WARNING] KAT-KAMの動作に悪影響を及ぼす可能性のある互換性のないアドオンが検出されました。KAT-KAM開発チームはこれらのアドオンをアンロードすることを強く推奨します: %1</Japanese>
+            <French>[AVERTISSEMENT KAM] Un(des) addon(s) incompatible(s) pouvant affecter le fonctionnement correct de KAT ont été détectés. L'équipe de développement de KAT - Advanced Medical REWRITE recommande fortement de retirer ces addons : %1 </French>
         </Key>
     </Package>
 </Project>

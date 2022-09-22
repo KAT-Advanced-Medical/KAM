@@ -82,6 +82,7 @@
             <Korean>구토 반복 타이머</Korean>
             <Polish>Czas powtarzania zablokowania</Polish>
             <Japanese>異物の再発する時間</Japanese>
+            <French>Temps de répétition des occlusions</French>
         </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -219,7 +220,7 @@
         <Key ID="STR_kat_airway_message_obstructionTemporarilyMitigated">
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
-            <Japanese>軽減された閉塞</Japanese>
+            <Japanese>軽減された</Japanese>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
