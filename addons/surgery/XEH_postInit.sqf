@@ -1,7 +1,5 @@
 #include "script_component.hpp"
 
-["treatmentKetamine", {_this call FUNC(treatmentAdvanced_KetamineLocal)}] call CBA_fnc_addEventHandler;
-["treatmentLido", {_this call FUNC(treatmentAdvanced_LidoLocal)}] call CBA_fnc_addEventHandler;
 ["treatmentGeneric", {_this call FUNC(treatmentAdvanced_GenericLocal)}] call CBA_fnc_addEventHandler;
 ["treatmentFractureSelect", {_this call FUNC(fractureSelectLocal)}] call CBA_fnc_addEventHandler;
 ["treatmentClosedFracture", {_this call FUNC(closedFractureLocal)}] call CBA_fnc_addEventHandler;
