@@ -235,10 +235,10 @@
         <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_DESC">
             <English>Sets the chance for simple fractures. Also sets the chance for complex fractures (60% Simple = 40% Complex)</English>
         </Key>
-        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE">
+        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
         </Key>
-        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_DESC">
+        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for compound fractures. Also sets the chance for comminuted fractures (60% Compound = 40% Comminuted)</English>
         </Key>
         <Key ID="STR_kat_surgery_ETOMIDATE_TIMER">

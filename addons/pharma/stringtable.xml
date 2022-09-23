@@ -1240,6 +1240,7 @@
         <Key ID="STR_kat_pharma_nalbuphineEnable_Desc">
             <English>Enables Nalbuphine visual effects \nEffect might be danger for epileptic</English>
             <Polish>Włącza efekty wizualne Nalbuphine \nEfekty mogą być zagrożeniem dla epileptyków</Polish>
+        </Key>
         <Key ID="STR_kat_pharma_flush_log">
             <English>%1 performed a saline flush on %2</English>
         </Key>        
