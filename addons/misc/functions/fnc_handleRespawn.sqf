@@ -54,6 +54,8 @@ _unit setVariable ["KAT_circulation_X_sound1", "x\kat\addons\circulation\sounds\
 _unit setVariable ["KAT_circulation_X_sound2", "x\kat\addons\circulation\sounds\heartrate.wav", true];
 _unit setVariable ["KAT_circulation_use", false, true];
 _unit setVariable ["KAT_circulation_returnedAED", false, true];
+_unit setVariable ["KAT_circulation_asystole", 1, true];
+_unit setVariable ["KAT_circulation_CPRcount", 2, true];
 
 // KAT Pharmacy
 

@@ -33,22 +33,16 @@ _player setVariable [QGVAR(use), true, true];
 _player setVariable [QGVAR(returnedAED), false, true];
 
 private _bloodLoss = _target getVariable ["ace_medical_bloodVolume", 6.0];
-private _asystole = _target getVariable [QGVAR(asystole), 0];
-
-if (_asystole isEqualTo 0) then {
-    if (_bloodLoss <= 3.6) then {
-        _target setVariable [QGVAR(asystole), 2, true];
-        _asystole = _target getVariable [QGVAR(asystole), 2];
-
-    } else {
-        _target setVariable [QGVAR(asystole), 1, true];
-        _asystole = _target getVariable [QGVAR(asystole), 1];
-    };
-};
+private _asystole = _target getVariable [QGVAR(asystole), 1];
 
 if !(GVAR(AdvRhythm)) then {
     _target setVariable [QGVAR(asystole), 1, true];
     _asystole = _target getVariable [QGVAR(asystole), 1];
+    } else {
+    if (_bloodLoss <= 3.6) then {
+        _target setVariable [QGVAR(asystole), 2, true];
+        _asystole = _target getVariable [QGVAR(asystole), 2];
+    };
 };
 
 // analyse sound feedback
