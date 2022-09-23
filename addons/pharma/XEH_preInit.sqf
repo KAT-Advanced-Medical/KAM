@@ -112,6 +112,16 @@ PREP_RECOMPILE_END;
 ] call CBA_settings_fnc_init;
 
 [
+    QGVAR(treatmentTime_Reorientation),
+    "SLIDER",
+    [LLSTRING(treatmentTime_Reorientation)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Reorientation)],
+    [0.1, 10, 2, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+
+[
     QGVAR(Reorientation_Slap),
     "CHECKBOX",
     [LLSTRING(SETTING_Reorientation_Slap), LLSTRING(SETTING_Reorientation_Slap_DESC)],

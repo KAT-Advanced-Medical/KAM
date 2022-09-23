@@ -997,6 +997,10 @@
             <Japanese>患者を刺激を与えるために訓練レベルを必要とさせます。</Japanese>
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
         </Key>
+        <Key ID="STR_KAT_pharma_SETTING_treatmentTime_Reorientation">
+            <English>Treatment time for reorientation</English>
+            <Polish>Czas cucenia</Polish>
+        </Key>
         <Key ID="STR_KAT_pharma_Take_Ketamine">
             <English>Take Ketamine</English>
         </Key>
@@ -1062,7 +1066,7 @@
             <Polish>Ograniczenie użycia soli trzeźwiących</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Carbonate">
-            <English>Time to use Carbonate</English>
+            <English>Treatment time for Carbonate</English>
             <Polish>Czas na użycie soli trzeźwiących</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Naloxone">
@@ -1070,7 +1074,7 @@
             <Polish>Ograniczenie użycia Naloksonu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Naloxone">
-            <English>Time to push Naloxone</English>
+            <English>Treatment time for Naloxone</English>
             <Polish>Czas na wstrzyknięcie Naloksonu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_TXA">
@@ -1078,7 +1082,7 @@
             <Polish>Ograniczenie użycia TXA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_TXA">
-            <English>Time to push TXA</English>
+            <English>Treatment time for TXA</English>
             <Polish>Czas na wstrzyknięcie TXA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Norepinephrine">
@@ -1086,7 +1090,7 @@
             <Polish>Ograniczenie użycia Noradrenaliny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Norepinephrine">
-            <English>Time to push Norepinephrine</English>
+            <English>Treatment time for Norepinephrine</English>
             <Polish>Czas na wstrzyknięcie Noradrenaliny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Phenylephrine">
@@ -1094,7 +1098,7 @@
             <Polish>Ograniczenie użycia Fenylefryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Phenylephrine">
-            <English>Time to push Phenylephrine</English>
+            <English>Treatment time for Phenylephrine</English>
             <Polish>Czas na wstrzyknięcie Fenylefryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nitroglycerin">
@@ -1102,7 +1106,7 @@
             <Polish>Ograniczenie użycia Nitrogliceryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nitroglycerin">
-            <English>Time to push Nitroglycerin</English>
+            <English>Treatment time for Nitroglycerin</English>
             <Polish>Czas na wstrzyknięcie Nitrogliceryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Amiodarone">
@@ -1110,7 +1114,7 @@
             <Polish>Ograniczenie użycia Amiodaronu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Amiodarone">
-            <English>Time to push Amiodarone</English>
+            <English>Treatment time for Amiodarone</English>
             <Polish>Czas na wstrzyknięcie Amiodaronu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Lidocaine">
@@ -1118,7 +1122,7 @@
             <Polish>Ograniczenie użycia Lidokainy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Lidocaine">
-            <English>Time to push Lidocaine</English>
+            <English>Treatment time for Lidocaine</English>
             <Polish>Czas na wstrzyknięcie Lidokainy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Atropine">
@@ -1126,7 +1130,7 @@
             <Polish>Ograniczenie użycia Atropiny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Atropine">
-            <English>Time to push Atropine</English>
+            <English>Treatment time for Atropine</English>
             <Polish>Czas na wstrzyknięcie Atropiny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_EACA">
@@ -1134,7 +1138,7 @@
             <Polish>Ograniczenie użycia EACA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_EACA">
-            <English>Time to push EACA</English>
+            <English>Treatment time for EACA</English>
             <Polish>Czas na wstrzyknięcie EACA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Ketamine">
@@ -1142,7 +1146,7 @@
             <Polish>Ograniczenie użycia Ketaminy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Ketamine">
-            <English>Time to push Ketamine</English>
+            <English>Treatment time for Ketamine</English>
             <Polish>Czas na wstrzyknięcie Ketaminy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Fentanyl">
@@ -1150,7 +1154,7 @@
             <Polish>Ograniczenie użycia Fentanylu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Fentanyl">
-            <English>Time to push Fentanyl</English>
+            <English>Treatment time for Fentanyl</English>
             <Polish>Czas na wstrzyknięcie Fentanylu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nalbuphine">
@@ -1158,7 +1162,7 @@
             <Polish>Ograniczenie użycia Nalbuphinu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nalbuphine">
-            <English>Time to push Nalbuphine</English>
+            <English>Treatment time for Nalbuphine</English>
             <Polish>Czas na wstrzyknięcie Nalbuphinu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Basic">
