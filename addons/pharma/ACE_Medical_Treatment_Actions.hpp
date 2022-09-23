@@ -12,6 +12,9 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QUOTE(ace_medical_treatment_medicIV);
         condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(RequireInsIV)));
     };
+    class Epinephrine: Morphine{
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+    };
     class Painkillers: Morphine {
         displayName = CSTRING(Inject_Box_Painkillers);
         displayNameProgress = CSTRING(Using);
@@ -53,10 +56,10 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Take_EACA);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = QGVAR(PushTime);
+        medicRequired = QGVAR(medLvl_EACA);
+        treatmentTime = QGVAR(treatmentTime_EACA);
         items[] = {"kat_EACA"};
-        condition = QFUNC(removeIV);
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_EACA);
     };
     class TXA: Carbonate {

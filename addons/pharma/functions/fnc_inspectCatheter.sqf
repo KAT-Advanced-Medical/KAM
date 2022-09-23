@@ -21,9 +21,9 @@ params ["_medic", "_patient"];
 private _block = _patient getVariable [QGVAR(IVblock), false];
 
 if (_block) exitWith {
-    private _output = localize LSTRING(IVblock_closed);
+    private _output = LLSTRING(IVblock_closed);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 };
 
-private _output = localize LSTRING(IVblock_clear);
+private _output = LLSTRING(IVblock_clear);
 [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;

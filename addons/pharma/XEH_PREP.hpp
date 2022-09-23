@@ -20,6 +20,8 @@ PREP(treatmentAdvanced_Carbonate);
 PREP(treatmentAdvanced_CarbonateLocal);
 PREP(treatmentAdvanced_Dialysis);
 PREP(treatmentAdvanced_DialysisLocal);
+PREP(treatmentAdvanced_EACA);
+PREP(treatmentAdvanced_EACALocal);
 PREP(treatmentAdvanced_Fentanyl);
 PREP(treatmentAdvanced_Ketamine);
 PREP(treatmentAdvanced_medication);

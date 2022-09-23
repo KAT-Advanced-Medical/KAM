@@ -309,6 +309,25 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// EACA Settings Category 
+[
+    QGVAR(medLvl_EACA),
+    "LIST",
+    [LLSTRING(medLvl_EACA)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_EACA)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_EACA),
+    "SLIDER",
+    [LLSTRING(treatmentTime_EACA)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_EACA)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 //Ketamine Settings Category 
 [
     QGVAR(medLvl_Ketamine),

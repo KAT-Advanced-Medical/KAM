@@ -16,6 +16,7 @@ class CfgPatches {
             "kat_Carbonate",
             "kat_CarbonateItem",
             "kat_naloxone",
+            "kat_EACA",
             "kat_TXA",
             "kat_X_AED",
             "kat_norepinephrine",

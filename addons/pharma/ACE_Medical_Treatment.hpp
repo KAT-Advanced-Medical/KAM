@@ -1,5 +1,8 @@
 class ADDON {
 	class Medication {
+        class Epinephrine {
+            alphaFactor = 0.15;
+        };
 		class Carbonate {
 			painReduce = 0;
             hrIncreaseLow[] = {5, 10};
@@ -133,6 +136,7 @@ class ADDON {
             timeTillMaxEffect = 30;
             maxDose = 4;
             incompatibleMedication[]= {};
+        };
         class EACA {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};

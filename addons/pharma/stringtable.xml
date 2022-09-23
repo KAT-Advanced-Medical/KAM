@@ -1129,6 +1129,14 @@
             <English>Time to push Atropine</English>
             <Polish>Czas na wstrzyknięcie Atropiny</Polish>
         </Key>
+        <Key ID="STR_kat_pharma_medLvl_EACA">
+            <English>Allow pushing EACA</English>
+            <Polish>Ograniczenie użycia EACA</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_EACA">
+            <English>Time to push EACA</English>
+            <Polish>Czas na wstrzyknięcie EACA</Polish>
+        </Key>
         <Key ID="STR_kat_pharma_medLvl_Ketamine">
             <English>Allow pushing Ketamine</English>
             <Polish>Ograniczenie użycia Ketaminy</Polish>
@@ -1204,6 +1212,10 @@
         <Key ID="STR_kat_pharma_SubCategory_Atropine">
             <English>Atropine Settings</English>
             <Polish>Ustawienia Atropiny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_EACA">
+            <English>EACA Settings</English>
+            <Polish>Ustawienia EACA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Ketamine">
             <English>Ketamine Settings</English>

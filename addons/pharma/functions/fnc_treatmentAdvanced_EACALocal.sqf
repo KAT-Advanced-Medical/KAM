@@ -4,19 +4,18 @@
  * Local function for EACA treatment
  *
  * Arguments:
- * 0: Target <OBJECT>
- * 1: Medic <OBJECT>
+ * 0: Medic <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [_medic, _patient] call kat_pharma_fnc_treatmentAdvanced_EACALocal;
+ * [_patient] call kat_pharma_fnc_treatmentAdvanced_EACALocal;
  *
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_patient"];
 
 private _IVsite = _patient getVariable [QGVAR(IVsite), 0];
 
@@ -61,10 +60,10 @@ if (_IVsite > 1) then {
         private _woundIndex = _stitchedWounds findIf {
             _x params ["_classID", "_bodyPartN"];
 
-            _classID isEqualTo _treatedID && {_bodyPartN isEqualTo _treatedBodyPartN}
+            _classID == _treatedID && {_bodyPartN == _treatedBodyPartN}
         };
 
-        if (_woundIndex isEqualTo -1) then {
+        if (_woundIndex == -1) then {
             _stitchedWounds pushBack _treatedWound;
         } else {
             private _wound = _stitchedWounds select _woundIndex;
