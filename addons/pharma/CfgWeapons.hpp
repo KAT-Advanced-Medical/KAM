@@ -54,7 +54,6 @@ class CfgWeapons {
         picture = QPATHTOF(ui\icon_TXA.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(EACA_DescShort);
-        descriptionUse = CSTRING(EACA_DescUse);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
         };

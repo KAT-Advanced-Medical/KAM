@@ -57,7 +57,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(PushTime);
         items[] = {"kat_EACA"};
         condition = QFUNC(removeIV);
-        patientStateCondition = 0;
         callbackSuccess = QFUNC(treatmentAdvanced_EACA);
     };
     class TXA: Carbonate {
@@ -70,7 +69,7 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_TXA);
     };
-    class Saline_Flush: Carbonate {
+    class SalineFlush: Carbonate {
         displayName = CSTRING(Saline_Flush);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
@@ -78,7 +77,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 3;
         items[] = {};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(salineCheck));
-        patientStateCondition = 0;
         callbackSuccess = QFUNC(treatmentAdvanced_Flush);
     };
     class Inspect: Carbonate {
@@ -90,7 +88,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         items[] = {};
         condition = QFUNC(removeIV);
-        patientStateCondition = 0;
         callbackSuccess = QFUNC(inspectCatheter);
         animationMedic = "";
         animationMedicProne = "";
@@ -104,7 +101,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         items[] = {};
         condition = true;
-        patientStateCondition = 0;
         callbackSuccess = QFUNC(inspectBreath);
         animationMedic = "";
         animationMedicProne = "";

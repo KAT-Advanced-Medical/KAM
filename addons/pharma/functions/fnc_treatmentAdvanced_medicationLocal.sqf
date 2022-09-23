@@ -65,6 +65,7 @@ private _hrIncreaseLow          = GET_ARRAY(_medicationConfig >> "hrIncreaseLow"
 private _hrIncreaseNormal       = GET_ARRAY(_medicationConfig >> "hrIncreaseNormal",getArray (_defaultConfig >> "hrIncreaseNormal"));
 private _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
 private _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
+private _alphaFactor            = GET_ARRAY(_medicationConfig >> "alphaFactor",getArray (_defaultConfig >> "alphaFactor"));
 
 private _heartRate = GET_HEART_RATE(_patient);
 private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
@@ -77,3 +78,6 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 
 // Check for medication compatiblity
 [_patient, _className, _maxDose, _incompatibleMedication] call ace_medical_treatment_fnc_onMedicationUsage;
+
+//Change Alpha Factor
+[_patient, _alphaFactor] call FUNC(alphaAction);

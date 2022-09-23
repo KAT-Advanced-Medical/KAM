@@ -32,6 +32,7 @@ class ADDON {
             maxDose = 12;
             incompatibleMedication[] = {};
             viscosityChange = 25;
+            alphaFactor = -0.3;
         };
         class Phenylephrine {
             painReduce = 0;
@@ -43,6 +44,7 @@ class ADDON {
             maxDose = 12;
             incompatibleMedication[] = {};
             viscosityChange = 50;
+            alphaFactor = -0.5;
         };
         class Nitroglycerin {
             painReduce = 0;
@@ -54,6 +56,7 @@ class ADDON {
             maxDose = 12;
             incompatibleMedication[] = {};
             viscosityChange = -25;
+            alphaFactor = 0.3;
         };
         class Fentanyl {
             painReduce = 1;

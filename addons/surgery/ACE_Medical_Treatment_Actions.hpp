@@ -62,7 +62,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_etomidate"};
         condition = QEFUNC(pharma,removeIV);
         patientStateCondition = 0;
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_medication;";
+        callbackSuccess = QEFUNC(pharma, medication);
     };
     class Lorazepam: Carbonate {
         displayName = CSTRING(Lorazepam_Use);
@@ -75,7 +75,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_lorazepam"};
         condition = QEFUNC(pharma,removeIV);
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Lorazepam')] call FUNC(treatmentAdvanced_Generic));
+        callbackSuccess = QFUNC(Lorazepam);
     };
     class Flumazenil: Carbonate {
         displayName = CSTRING(Flumazenil_Use);
@@ -88,7 +88,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_flumazenil"};
         condition = QEFUNC(pharma,removeIV);
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Flumazenil')] call FUNC(treatmentAdvanced_Generic));
+        callbackSuccess = QFUNC(Flumazenil);
     };
     class Expose: BasicBandage {
         displayName = CSTRING(Retractor_Use);

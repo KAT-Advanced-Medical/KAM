@@ -8,5 +8,5 @@
 ["treatmentOpenFractureProgress", {_this call FUNC(openFractureProgressLocal)}] call CBA_fnc_addEventHandler;
 ["treatmentDebridementClear", {_this call FUNC(debridementClearLocal)}] call CBA_fnc_addEventHandler;
 ["treatmentDebridementMinor", {_this call FUNC(debridementMinorLocal)}] call CBA_fnc_addEventHandler;
-["treatmentDialysis", {_this call FUNC(treatmentAdvanced_DialysisLocal)}] call CBA_fnc_addEventHandler;
-
+[QGVAR(flumazenilLocal), LINKFUNC(treatmentAdvanced_FlumazenilLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(lorazepamLocal), LINKFUNC(treatmentAdvanced_LorazepamLocal)] call CBA_fnc_addEventHandler;

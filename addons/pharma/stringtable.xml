@@ -1286,9 +1286,6 @@
         <Key ID="STR_kat_pharma_EACA_DescShort">
             <English>Encourages clot formation</English>
         </Key>
-        <Key ID="STR_kat_pharma_EACA_DescUse">
-            <English>Used to encourage and stabilize clots in a patient</English>
-        </Key>
         <Key ID="STR_kat_pharma_SETTING_aiEnabled">
             <English>Enable Advanced Medical for AI</English>
         </Key>
