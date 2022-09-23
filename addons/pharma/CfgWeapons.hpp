@@ -48,6 +48,17 @@ class CfgWeapons {
             mass = 0.5;
         }; 
     };
+    class kat_EACA: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(EACA_Display);
+        picture = QPATHTOF(ui\icon_TXA.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(EACA_DescShort);
+        descriptionUse = CSTRING(EACA_DescUse);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.2;
+        };
+    };
     class kat_TXA: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(TXA_Box_Display);

@@ -110,7 +110,7 @@ class ADDON {
             incompatibleMedication[]= {};
             viscosityChange = 0;
         };
-        class Amiodarone{
+        class Amiodarone {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0, 0};
             hrIncreaseNormal[] = {0, 0, 0};
@@ -121,7 +121,7 @@ class ADDON {
             incompatibleMedication[]= {};
             viscosityChange = 0;
         };
-        class Lidocaine{
+        class Lidocaine {
             painReduce = 0.2;
             hrIncreaseLow[] = {0, 0, 0};
             hrIncreaseNormal[] = {0, 0, 0};
@@ -130,6 +130,15 @@ class ADDON {
             timeTillMaxEffect = 30;
             maxDose = 4;
             incompatibleMedication[]= {};
+        class EACA {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 600;
+            timeTillMaxEffect = 15;
+            maxDose = 10;
+            incompatibleMedication[] = {};
             viscosityChange = 0;
         };
     };

@@ -49,6 +49,17 @@ class ACE_Medical_Treatment_Actions {
         condition = "true";
         callbackSuccess = QFUNC(treatmentAdvanced_Naloxone);
     };
+    class EACA: Carbonate {
+        displayName = CSTRING(Take_EACA);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = 1;
+        treatmentTime = QGVAR(PushTime);
+        items[] = {"kat_EACA"};
+        condition = QFUNC(removeIV);
+        patientStateCondition = 0;
+        callbackSuccess = QFUNC(treatmentAdvanced_EACA);
+    };
     class TXA: Carbonate {
         displayName = CSTRING(Take_TXA);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -58,6 +69,45 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_TXA"};
         condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
         callbackSuccess = QFUNC(treatmentAdvanced_TXA);
+    };
+    class Saline_Flush: Carbonate {
+        displayName = CSTRING(Saline_Flush);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = 1;
+        treatmentTime = 3;
+        items[] = {};
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(salineCheck));
+        patientStateCondition = 0;
+        callbackSuccess = QFUNC(treatmentAdvanced_Flush);
+    };
+    class Inspect: Carbonate {
+        displayName = CSTRING(Inspect_Catheter);
+        category = "examine";
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = 1;
+        treatmentTime = 2;
+        items[] = {};
+        condition = QFUNC(removeIV);
+        patientStateCondition = 0;
+        callbackSuccess = QFUNC(inspectCatheter);
+        animationMedic = "";
+        animationMedicProne = "";
+    };
+    class BreathCheck: Carbonate {
+        displayName = CSTRING(Check_Breath);
+        category = "examine";
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 1;
+        medicRequired = 1;
+        treatmentTime = 2;
+        items[] = {};
+        condition = true;
+        patientStateCondition = 0;
+        callbackSuccess = QFUNC(inspectBreath);
+        animationMedic = "";
+        animationMedicProne = "";
     };
     class Norepinephrine: Carbonate {
         displayName = CSTRING(Take_Norep);
