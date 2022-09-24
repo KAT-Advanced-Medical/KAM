@@ -1317,5 +1317,11 @@
         <Key ID="STR_kat_pharma_Saline_Flush">
             <English>Saline Flush</English>
         </Key>
+        <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage">
+            <English>IV Check limb damage</English>
+        </Key>
+        <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage_DESC">
+            <English>Whether or not you can apply the IV to the too damaged limb. In default, this is disabled.</English>
+        </Key>
     </Package>
 </Project>
