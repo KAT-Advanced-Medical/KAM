@@ -73,6 +73,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+	QGVAR(ivCheckLimbDamage),
+	"CHECKBOX",
+	[LLSTRING(SETTING_ivCheckLimbDamage), LLSTRING(SETTING_ivCheckLimbDamage_DESC)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+	[false],
+	true
+] call CBA_Settings_fnc_init;
+
 // IO Settings Category
 [
     QGVAR(medLvl_ApplyIO),
@@ -456,15 +465,6 @@ PREP_RECOMPILE_END;
 	[LLSTRING(SETTING_Max_Stack), LLSTRING(SETTING_Max_Stack_DESC)],
 	CBA_SETTINGS_CAT,
 	[1, 10, 5, 0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(ivCheckLimbDamage),
-	"CHECKBOX",
-	[LLSTRING(SETTING_ivCheckLimbDamage), LLSTRING(SETTING_ivCheckLimbDamage_DESC)],
-	CBA_SETTINGS_CAT,
-	[false],
 	true
 ] call CBA_Settings_fnc_init;
 
