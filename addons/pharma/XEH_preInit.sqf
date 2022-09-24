@@ -176,6 +176,63 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Lorazepam Settings Category
+[
+	QGVAR(medLvl_Lorazepam),
+	"LIST",
+	[LLSTRING(medLvl_Lorazepam)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Lorazepam)],
+	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_Lorazepam),
+    "SLIDER",
+    [LLSTRING(treatmentTime_Lorazepam)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Lorazepam)],
+    [0.1, 10, 2, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//Etomidate Settings Category
+[
+	QGVAR(medLvl_Etomidate),
+	"LIST",
+	[LLSTRING(medLvl_Etomidate)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Etomidate)],
+	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_Etomidate),
+    "SLIDER",
+    [LLSTRING(treatmentTime_Etomidate)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Etomidate)],
+    [0.1, 10, 2, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//FLumazenil Settings Category
+[
+	QGVAR(medLvl_Flumezenil),
+	"LIST",
+	[LLSTRING(medLvl_Flumazenil)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Flumazenil)],
+	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_Flumazenil),
+    "SLIDER",
+    [LLSTRING(treatmentTime_Flumazenil)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Flumazenil)],
+    [0.1, 10, 2, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // Naloxone Settings Category
 [
     QGVAR(medLvl_Naloxone),

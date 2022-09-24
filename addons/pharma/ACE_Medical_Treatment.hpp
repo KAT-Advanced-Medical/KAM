@@ -148,5 +148,38 @@ class ADDON {
             incompatibleMedication[] = {};
             viscosityChange = 0;
         };
+        class Etomidate {
+            painReduce = 0.4;
+            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseNormal[] = {-15, -20};
+            hrIncreaseHigh[] = {-20, -30};
+            timeInSystem = 45;
+            timeTillMaxEffect = 5;
+            maxDose = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+        };
+        class Flumazenil {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 60;
+            timeTillMaxEffect = 5;
+            maxDose = 3;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+        };
+        class Lorazepam {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 60;
+            timeTillMaxEffect = 5;
+            maxDose = 3;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+        };
     };
 };

@@ -109,42 +109,6 @@
         <Key ID="STR_kat_surgery_debridement_fail">
             <English>Wound Dressing Failed</English>
         </Key>
-        <Key ID="STR_kat_surgery_Etomidate_displayName">
-            <English>Etomidate</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Etomidate_DescShort">
-            <English>General Anesthetic</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Etomidate_DescUse">
-            <English>Used as a general anesthetic for surgical procedures</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Etomidate_Use">
-            <English>Push Etomidate</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Lorazepam_displayName">
-            <English>Lorazepam</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Lorazepam_DescShort">
-            <English>Sedtation medication</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Lorazepam_DescUse">
-            <English>Used to sedate patients and prepare them for surgery</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Lorazepam_Use">
-            <English>Push Lorazepam</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Flumazenil_displayName">
-            <English>Flumazenil</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Flumazenil_DescShort">
-            <English>Counter to Lorzaepam</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Flumazenil_DescUse">
-            <English>Used to bring patients out of sedation</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Flumazenil_Use">
-            <English>Push Flumazenil</English>
-        </Key>
         <Key ID="STR_kat_surgery_Scalpel_displayName">
             <English>Scalpel</English>
         </Key>
@@ -285,15 +249,6 @@
         </Key>
         <Key ID="STR_kat_surgery_SURGICAL_ACTION_MEDLEVEL">
             <English>Medical level required for Surgical action</English>
-        </Key>
-        <Key ID="STR_kat_surgery_FLUMAZENIL_MEDLEVEL">
-            <English>Medical level required for Flumazenil</English>
-        </Key>
-        <Key ID="STR_kat_surgery_LORAZEPAM_MEDLEVEL">
-            <English>Medical level required for Lorazepam</English>
-        </Key>
-        <Key ID="STR_kat_surgery_ETOMIDATE_MEDLEVEL">
-            <English>Medical level required for Etomidate</English>
         </Key>
         <Key ID="STR_kat_surgery_BREATH_CHECK_MEDLEVEL">
             <English>Medical level required for Breath check</English>

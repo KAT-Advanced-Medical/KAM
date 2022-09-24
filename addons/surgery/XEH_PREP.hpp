@@ -18,7 +18,3 @@ PREP(openFractureIncision);
 PREP(openFractureIncisionLocal);
 PREP(openFractureProgress);
 PREP(openFractureProgressLocal);
-PREP(treatmentAdvanced_Flumazenil);
-PREP(treatmentAdvanced_FlumazenilLocal);
-PREP(treatmentAdvanced_Lorazepam);
-PREP(treatmentAdvanced_LorazepamLocal);

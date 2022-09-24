@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: MiszczuZPolski
- * Begins Flumazenil unsedating process
+ * Begins Lorazepam sedating process
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -17,4 +17,5 @@
 
 params ["_patient"];
 
-_target setVariable [QGVAR(sedated), false, true];
+_patient setVariable [QEGVAR(surgery,sedated), true, true];
+[_patient, true] call ace_medical_fnc_setUnconscious;

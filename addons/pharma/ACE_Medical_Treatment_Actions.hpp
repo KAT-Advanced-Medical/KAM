@@ -245,4 +245,40 @@ class ACE_Medical_Treatment_Actions {
         condition = QFUNC(removeIV);
         callbackSuccess = QFUNC(retrieveIV);
     };
+    class Etomidate: Carbonate {
+        displayName = CSTRING(Etomidate_Use);
+        category = "surgery";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_Etomidate);
+        treatmentTime = QGVAR(treatmentTime_Etomidate);
+        items[] = {"kat_etomidate"};
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+    };
+    class Lorazepam: Carbonate {
+        displayName = CSTRING(Lorazepam_Use);
+        category = "surgery";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_Lorazepam);
+        treatmentTime = QGVAR(treatmentTime_Lorazepam);
+        items[] = {"kat_lorazepam"};
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
+        callbackSuccess = QFUNC(treatmentAdvanced_Lorazepam);
+    };
+    class Flumazenil: Carbonate {
+        displayName = CSTRING(Flumazenil_Use);
+        category = "surgery";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_Flumezenil);
+        treatmentTime = QGVAR(treatmentTime_Flumazenil);
+        items[] = {"kat_flumazenil"};
+        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
+        callbackSuccess = QFUNC(treatmentAdvanced_Flumazenil);
+    };
 };

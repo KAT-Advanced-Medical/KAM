@@ -3,7 +3,7 @@
     <Package name="pharma">
         <Key ID="STR_kat_pharma_medLvl_ApplyIV">
             <English>Allow applying IV</English>
-            <Polish>Ograniczenie użycia IV</Polish>
+            <Polish>Poziom wyszkolenia medycznego dla IV</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_ApplyIV_Desc">
             <English>Changes what medical level is required to set IVs</English>
@@ -22,7 +22,7 @@
         </Key>
         <Key ID="STR_kat_pharma_medLvl_ApplyIO">
             <English>Allow applying IO</English>
-            <Polish>Ograniczenie użycia IO</Polish>
+            <Polish>Poziom wyszkolenia medycznego dla IO</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_ApplyIO_Desc">
             <English>Changes what medical level is required to set IOs</English>
@@ -997,9 +997,45 @@
             <Japanese>患者を刺激を与えるために訓練レベルを必要とさせます。</Japanese>
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_treatmentTime_Reorientation">
+        <Key ID="STR_KAT_pharma_treatmentTime_Reorientation">
             <English>Treatment time for reorientation</English>
             <Polish>Czas cucenia</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_Etomidate_displayName">
+            <English>Etomidate</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Etomidate_DescShort">
+            <English>General Anesthetic</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Etomidate_DescUse">
+            <English>Used as a general anesthetic for surgical procedures</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Etomidate_Use">
+            <English>Push Etomidate</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Lorazepam_displayName">
+            <English>Lorazepam</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Lorazepam_DescShort">
+            <English>Sedtation medication</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Lorazepam_DescUse">
+            <English>Used to sedate patients and prepare them for surgery</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Lorazepam_Use">
+            <English>Push Lorazepam</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Flumazenil_displayName">
+            <English>Flumazenil</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Flumazenil_DescShort">
+            <English>Counter to Lorzaepam</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Flumazenil_DescUse">
+            <English>Used to bring patients out of sedation</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Flumazenil_Use">
+            <English>Push Flumazenil</English>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Ketamine">
             <English>Take Ketamine</English>
@@ -1063,103 +1099,124 @@
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
-            <Polish>Ograniczenie użycia soli trzeźwiących</Polish>
+            <Polish>Poziom wyszkolenia medycznego dla soli trzeźwiących</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>
             <Polish>Czas na użycie soli trzeźwiących</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Naloxone">
-            <English>Allow pushing Naloxone</English>
-            <Polish>Ograniczenie użycia Naloksonu</Polish>
+            <English>Medical level required for Naloxone</English>
+            <Polish>Poziom wyszkolenia medycznego dla Naloksonu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Naloxone">
             <English>Treatment time for Naloxone</English>
             <Polish>Czas na wstrzyknięcie Naloksonu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_TXA">
-            <English>Allow pushing TXA</English>
-            <Polish>Ograniczenie użycia TXA</Polish>
+            <English>Medical level required for TXA</English>
+            <Polish>Poziom wyszkolenia medycznego dla TXA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_TXA">
             <English>Treatment time for TXA</English>
             <Polish>Czas na wstrzyknięcie TXA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Norepinephrine">
-            <English>Allow pushing Norepinephrine</English>
-            <Polish>Ograniczenie użycia Noradrenaliny</Polish>
+            <English>Medical level required for Norepinephrine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Norepinephrine">
             <English>Treatment time for Norepinephrine</English>
             <Polish>Czas na wstrzyknięcie Noradrenaliny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Phenylephrine">
-            <English>Allow pushing Phenylephrine</English>
-            <Polish>Ograniczenie użycia Fenylefryny</Polish>
+            <English>Medical level required for Phenylephrine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Fenylefryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Phenylephrine">
             <English>Treatment time for Phenylephrine</English>
             <Polish>Czas na wstrzyknięcie Fenylefryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nitroglycerin">
-            <English>Allow pushing Nitroglycerin</English>
-            <Polish>Ograniczenie użycia Nitrogliceryny</Polish>
+            <English>Medical level required for Nitroglycerin</English>
+            <Polish>Poziom wyszkolenia medycznego dla Nitrogliceryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nitroglycerin">
             <English>Treatment time for Nitroglycerin</English>
             <Polish>Czas na wstrzyknięcie Nitrogliceryny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Amiodarone">
-            <English>Allow pushing Amiodarone</English>
-            <Polish>Ograniczenie użycia Amiodaronu</Polish>
+            <English>Medical level required for Amiodarone</English>
+            <Polish>Poziom wyszkolenia medycznego dla Amiodaronu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Amiodarone">
             <English>Treatment time for Amiodarone</English>
             <Polish>Czas na wstrzyknięcie Amiodaronu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Lidocaine">
-            <English>Allow pushing Lidocaine</English>
-            <Polish>Ograniczenie użycia Lidokainy</Polish>
+            <English>Medical level required for Lidocaine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Lidokainy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Lidocaine">
             <English>Treatment time for Lidocaine</English>
             <Polish>Czas na wstrzyknięcie Lidokainy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Atropine">
-            <English>Allow pushing Atropine</English>
-            <Polish>Ograniczenie użycia Atropiny</Polish>
+            <English>Medical level required for Atropine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Atropiny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Atropine">
             <English>Treatment time for Atropine</English>
             <Polish>Czas na wstrzyknięcie Atropiny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_EACA">
-            <English>Allow pushing EACA</English>
-            <Polish>Ograniczenie użycia EACA</Polish>
+            <English>Medical level required for EACA</English>
+            <Polish>Poziom wyszkolenia medycznego dla EACA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_EACA">
             <English>Treatment time for EACA</English>
             <Polish>Czas na wstrzyknięcie EACA</Polish>
         </Key>
+        <Key ID="STR_kat_pharma_medLvl_Flumazenil">
+            <English>Medical level required for Flumazenil</English>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Flumazenil">
+            <English>Treatment time for Flumazenil</English>
+            <Polish>Czas na wstrzyknięcie Flumazenilu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Lorazepam">
+            <English>Medical level required for Lorazepam</English>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Lorazepam">
+            <English>Treatment time for Lorazepam</English>
+            <Polish>Czas na wstrzyknięcie Lorazepamu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Etomidate">
+            <English>Medical level required for Etomidate</English>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Etomidate">
+            <English>Treatment time for Etomidate</English>
+            <Polish>Czas na wstrzyknięcie Etomidatu</Polish>
+        </Key>
         <Key ID="STR_kat_pharma_medLvl_Ketamine">
-            <English>Allow pushing Ketamine</English>
-            <Polish>Ograniczenie użycia Ketaminy</Polish>
+            <English>Medical level required for Ketamine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Ketaminy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Ketamine">
             <English>Treatment time for Ketamine</English>
             <Polish>Czas na wstrzyknięcie Ketaminy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Fentanyl">
-            <English>Allow pushing Fentanyl</English>
-            <Polish>Ograniczenie użycia Fentanylu</Polish>
+            <English>Medical level required for Fentanyl</English>
+            <Polish>Poziom wyszkolenia medycznego dla Fentanylu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Fentanyl">
             <English>Treatment time for Fentanyl</English>
             <Polish>Czas na wstrzyknięcie Fentanylu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nalbuphine">
-            <English>Allow pushing Nalbuphine</English>
-            <Polish>Ograniczenie użycia Nalbuphinu</Polish>
+            <English>Medical level required for Nalbuphine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Nalbuphinu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nalbuphine">
             <English>Treatment time for Nalbuphine</English>
@@ -1232,6 +1289,18 @@
         <Key ID="STR_kat_pharma_SubCategory_Nalbuphine">
             <English>Nalbuphine Settings</English>
             <Polish>Ustawienia Nalbuphinu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Flumazenil">
+            <English>Flumazenil Settings</English>
+            <Polish>Ustawienia Flumazenilu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Lorazepam">
+            <English>Lorazepam Settings</English>
+            <Polish>Ustawienia Lorazepamu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Etomidate">
+            <English>Etomidate Settings</English>
+            <Polish>Ustawienia Etomidatu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_fentanylEnable">
             <English>Enable Fentanyl visual effects</English>

@@ -180,33 +180,6 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(Flumazenil_MedLevel),
-	"LIST",
-	LLSTRING(FLUMAZENIL_MEDLEVEL),
-	CBA_SETTINGS_CAT_M,
-	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(Lorazepam_MedLevel),
-	"LIST",
-	LLSTRING(LORAZEPAM_MEDLEVEL),
-	CBA_SETTINGS_CAT_M,
-	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(Etomidate_MedLevel),
-	"LIST",
-	LLSTRING(ETOMIDATE_MEDLEVEL),
-	CBA_SETTINGS_CAT_M,
-	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
 	QGVAR(BreathCheck_MedLevel),
 	"LIST",
 	LLSTRING(BREATH_CHECK_MEDLEVEL),

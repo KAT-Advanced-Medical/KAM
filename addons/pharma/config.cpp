@@ -27,7 +27,10 @@ class CfgPatches {
             "kat_atropine",
             "kat_ketamine",
             "kat_fentanyl",
-            "kat_nalbuphine"
+            "kat_nalbuphine",
+            "kat_flumazenil",
+            "kat_lorazepam",
+            "kat_etomidate"
         };
         magazines[] = { };
         requiredAddons[] = {
