@@ -19,6 +19,9 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
+if !(GVAR(ivCheckLimbDamage)) exitWith {
+    true;
+};
 private _bodyPartDamage = _patient getVariable ["ace_medical_bodyPartDamage", [0, 0, 0, 0, 0, 0]];
 private _compare = ALL_BODY_PARTS find toLower _bodyPart;
 private _final2 = 0;
