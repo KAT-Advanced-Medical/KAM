@@ -8,6 +8,9 @@ class CfgFunctions {
             class getBloodLoss {
                 file = QPATHTOF(functions\fnc_getBloodLoss.sqf);
             };
+            class hasStableVitals {
+                file = QPATHTOF(functions\fnc_hasStableVitals.sqf);
+            };
         };
     };
 };

@@ -17,5 +17,5 @@
 
 params ["_patient"];
 
-_patient setVariable [QEGVAR(surgery,sedated), true, true];
+_patient setVariable [QGVAR(sedated), true, true];
 [_patient, true] call ace_medical_fnc_setUnconscious;
