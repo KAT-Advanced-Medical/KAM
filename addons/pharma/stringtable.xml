@@ -134,7 +134,7 @@
             <Russian>Обезболивающие</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Inject_Box_Painkillers">
-            <English>Take Painkillers</English>
+            <English>Push Painkillers</English>
             <Polish>Użyj leku przeciwbólowego</Polish>
             <Chinese>服用止痛藥</Chinese>
             <Chinesesimp>服用止痛药</Chinesesimp>
@@ -1038,7 +1038,7 @@
             <English>Push Flumazenil</English>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Ketamine">
-            <English>Take Ketamine</English>
+            <English>Push Ketamine</English>
         </Key>
         <Key ID="STR_KAT_pharma_Ketamine_Box_Display">
             <English>Ketamine</English>
@@ -1047,7 +1047,7 @@
             <English>Suppress pain</English>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Fentanyl">
-            <English>Take Fentanyl</English>
+            <English>Push Fentanyl</English>
         </Key>
         <Key ID="STR_KAT_pharma_Fentanyl_Box_Display">
             <English>Fentanyl</English>
@@ -1056,12 +1056,12 @@
             <English>Suppress pain</English>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Nalbuphine">
-            <English>Take Nalbuphine</English>
+            <English>Push Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_pharma_Nalbuphine_Box_Display">
             <English>Nalbuphine</English>
         </Key>
-        <Key ID="STR_KAT_pharma_Nalubphine_DescShort">
+        <Key ID="STR_KAT_pharma_Nalbuphine_DescShort">
             <English>Suppress pain</English>
         </Key>
         <Key ID="STR_KAT_pharma_Activity_usedItem">

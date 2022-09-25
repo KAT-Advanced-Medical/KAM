@@ -424,6 +424,15 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(ketamineTimer),
+    "SLIDER",
+    [LLSTRING(repeat_Ketamine)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
+    [0.1, 120, 10, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(ketamineEnable),
     "CHECKBOX",
     [LLSTRING(ketamineEnable),LLSTRING(ketamineEnable_Desc)],
