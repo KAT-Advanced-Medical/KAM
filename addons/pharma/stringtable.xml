@@ -1302,30 +1302,6 @@
             <English>Etomidate Settings</English>
             <Polish>Ustawienia Etomidatu</Polish>
         </Key>
-        <Key ID="STR_kat_pharma_fentanylEnable">
-            <English>Enable Fentanyl visual effects</English>
-            <Polish>Włącz efekty wizualne Fentanylu</Polish>
-        </Key>
-        <Key ID="STR_kat_pharma_fentanylEnable_Desc">
-            <English>Enables Fentanyl visual effects \nEffect might be danger for epileptic</English>
-            <Polish>Włącza efekty wizualne Fentanylu \nEfekty mogą być zagrożeniem dla epileptyków</Polish>
-        </Key>
-        <Key ID="STR_kat_pharma_ketamineEnable">
-            <English>Enable Ketamine visual effects</English>
-            <Polish>Włącz efekty wizualne Ketaminy</Polish>
-        </Key>
-        <Key ID="STR_kat_pharma_ketamineEnable_Desc">
-            <English>Enables Ketamine visual effects \nEffect might be danger for epileptic</English>
-            <Polish>Włącza efekty wizualne Ketaminy \nEfekty mogą być zagrożeniem dla epileptyków</Polish>
-        </Key>
-        <Key ID="STR_kat_pharma_nalbuphineEnable">
-            <English>Enable Nalbuphine visual effects</English>
-            <Polish>Włącz efekty wizualne Nalbuphine</Polish>
-        </Key>
-        <Key ID="STR_kat_pharma_nalbuphineEnable_Desc">
-            <English>Enables Nalbuphine visual effects \nEffect might be danger for epileptic</English>
-            <Polish>Włącza efekty wizualne Nalbuphine \nEfekty mogą być zagrożeniem dla epileptyków</Polish>
-        </Key>
         <Key ID="STR_kat_pharma_flush_log">
             <English>%1 performed a saline flush on %2</English>
         </Key>        
