@@ -40,7 +40,10 @@ if !(GVAR(AdvRhythm)) then {
     _patient setVariable [QGVAR(asystole), 1, true];
     _asystole = _patient getVariable [QGVAR(asystole), 1];
     } else {
-    if (_bloodLoss <= 3.6) then {
+    if (_bloodLoss > 3.6) then {
+        _patient setVariable [QGVAR(asystole), 1, true];
+        _asystole = _patient getVariable [QGVAR(asystole), 1];
+    } else {
         _patient setVariable [QGVAR(asystole), 2, true];
         _asystole = _patient getVariable [QGVAR(asystole), 2];
     };
