@@ -37,23 +37,43 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Succes chance for AED-X
+//Max Succes chance for AED-X
 [
-    QGVAR(SuccesCh_AED_X),
+    QGVAR(AED_X_MaxChance),
     "SLIDER",
-    LLSTRING(SUCESSCHANCE_AED_X),
+    LLSTRING(AED_X_MaxChance),
     CBA_SETTINGS_CAT,
-    [1, 100, 85, 0],
+    [1, 100, 90, 0],
     true
 ] call CBA_Settings_fnc_init;
 
-//Succes chance for AED
+//Min Succes chance for AED-X
 [
-    QGVAR(SuccesCh_AED),
+    QGVAR(AED_X_MinChance),
     "SLIDER",
-    LLSTRING(SUCESSCHANCE_AED),
+    LLSTRING(AED_X_MinChance),
+    CBA_SETTINGS_CAT,
+    [1, 100, 45, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//Max Succes chance for AED
+[
+    QGVAR(AED_MaxChance),
+    "SLIDER",
+    LLSTRING(AED_MaxChance),
     CBA_SETTINGS_CAT,
     [1, 100, 80, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//Min Succes chance for AED
+[
+    QGVAR(AED_MinChance),
+    "SLIDER",
+    LLSTRING(AED_MinChance),
+    CBA_SETTINGS_CAT,
+    [1, 100, 40, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -132,33 +152,63 @@ private _type = round random(7);
     true
 ] call CBA_Settings_fnc_init;
 
-//CPR Chance for Doctors
+//Max CPR Chance for Doctors
 [
-    QGVAR(CPR_Chance_Doctor),
+    QGVAR(CPR_MaxChance_Doctor),
     "SLIDER",
-    LLSTRING(SETTING_CPR_CHANCE_DOCTOR),
+    LLSTRING(CPR_MaxChance_Doctor),
     CBA_SETTINGS_CAT,
     [0,100,40,0],
     true
 ] call CBA_Settings_fnc_init;
 
-//CPR Chance for Regular medics
+//Min CPR Chance for Doctors
 [
-    QGVAR(CPR_Chance_RegularMedic),
+    QGVAR(CPR_MinChance_Doctor),
     "SLIDER",
-    LLSTRING(SETTING_CPR_CHANCE_REGULARMEDIC),
+    LLSTRING(CPR_MinChance_Doctor),
+    CBA_SETTINGS_CAT,
+    [0,100,20,0],
+    true
+] call CBA_Settings_fnc_init;
+
+//Max CPR Chance for Regular medics
+[
+    QGVAR(CPR_MaxChance_RegularMedic),
+    "SLIDER",
+    LLSTRING(CPR_MaxChance_RegularMedic),
     CBA_SETTINGS_CAT,
     [0,100,30,0],
     true
 ] call CBA_Settings_fnc_init;
 
-//CPR Chance for Default
+//Min CPR Chance for Regular medics
 [
-    QGVAR(CPR_Chance_Default),
+    QGVAR(CPR_MinChance_RegularMedic),
     "SLIDER",
-    LLSTRING(SETTING_CPR_CHANCE_DEFAULT),
+    LLSTRING(CPR_MinChance_RegularMedic),
+    CBA_SETTINGS_CAT,
+    [0,100,15,0],
+    true
+] call CBA_Settings_fnc_init;
+
+//Max CPR Chance for Default
+[
+    QGVAR(CPR_MaxChance_Default),
+    "SLIDER",
+    LLSTRING(CPR_MaxChance_Default),
     CBA_SETTINGS_CAT,
     [0,100,20,0],
+    true
+] call CBA_Settings_fnc_init;
+
+//Min CPR Chance for Default
+[
+    QGVAR(CPR_MinChance_Default),
+    "SLIDER",
+    LLSTRING(CPR_MinChance_Default),
+    CBA_SETTINGS_CAT,
+    [0,100,10,0],
     true
 ] call CBA_Settings_fnc_init;
 
