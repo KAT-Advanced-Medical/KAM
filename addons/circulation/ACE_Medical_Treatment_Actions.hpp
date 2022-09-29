@@ -29,8 +29,8 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Checking_Rhythm);
         allowedSelections[] = {"Body"};
         treatmentTime = 2;
-        items[] = {};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), false)]);
+        items[] = {"kat_AED", "kat_X_AED"};
+        condition = "true";
         callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDanalyze));
         callbackSuccess = "";
         animationPatient = "";
