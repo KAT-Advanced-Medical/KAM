@@ -189,6 +189,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Chance for pneumothorax to deteriorate into tension pneumothorax
+[
+    QGVAR(deterioratingPneumothorax_chance),
+    "SLIDER",
+    [LLSTRING(SETTING_deterioratingPneumothorax_chance), LLSTRING(SETTING_deterioratingPneumothorax_chance_Desc)],
+    CBA_SETTINGS_CAT,
+    [0, 100, 10, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//Deteriorating pneumothorax countdown
+[
+    QGVAR(deterioratingPneumothorax_countdown),
+    "SLIDER",
+    [LLSTRING(SETTING_deterioratingPneumothorax_countdown), LLSTRING(SETTING_deterioratingPneumothorax_countdown_Desc)],
+    CBA_SETTINGS_CAT,
+    [1, 3600, 120, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 //Enables cyanosis diagnose
 [
     QGVAR(enableCyanosis),
