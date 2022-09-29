@@ -88,7 +88,6 @@ switch (_reviveObject) do {
     };
     case "AED": {
         [_patient, "activity", "STR_ACE_Medical_Treatment_Activity_AED", [[_medic, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
-        _chance = GVAR(SuccesCh_AED);
         _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_MinChance), GVAR(AED_MaxChance), true];
     };
     case "AED-Station": {
@@ -97,7 +96,6 @@ switch (_reviveObject) do {
     };
     case "AED-X": {
         [_patient, "activity", "STR_ACE_Medical_Treatment_Activity_AEDX", [[_medic, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
-        _chance = GVAR(SuccesCh_AED_X);
         _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_X_MinChance), GVAR(AED_X_MaxChance), true];
     };
 };
