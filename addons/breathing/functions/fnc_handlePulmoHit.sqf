@@ -47,7 +47,7 @@ if (random 100 <= GVAR(pneumothorax)) then {
 if ((random(100) <= GVAR(deterioratingPneumothorax_chance)) && (_unit getVariable ["KAT_medical_pneumothorax", false])) then {
     [{
         params ["_unit"];
-        if (_hemo || _tension || !(alive _unit)) exitWith {};
+        if ((_hemo || _tension || !(alive _unit)) || !(_unit getVariable ["KAT_medical_pneumothorax", false])) exitWith {};
         [_unit, 0.7] call ace_medical_status_fnc_adjustPainLevel;
         [_unit] call FUNC(handleBreathing);
         _unit setVariable ["KAT_medical_tensionpneumothorax", true, true];
