@@ -1128,5 +1128,17 @@
             <French>Le niveau médical minimum nécessaire pour pouvoir contrôler la cyanose</French>
             <Turkish>Bir kişinin Siyanozu kontrol edebilmesi için gereken minimum tıbbi seviye.</Turkish>
         </Key>
+        <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance">
+            <English>Pneumothorax deterioration chance</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance_Desc">
+            <English>Chance for pneumothorax to deteriorate into tension pneumothorax</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown">
+            <English>Deteriorating pneumothorax countdown</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown_Desc">
+            <English>After this countdown a chance will be rolled whether or not the pneumothorax will deteriorate into tension pneumothorax</English>
+        </Key>
     </Package>
 </Project>
