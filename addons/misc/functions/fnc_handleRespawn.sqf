@@ -67,9 +67,6 @@ _unit setVariable ["kat_pharma_IVsite", 0, true];
 _unit setVariable ["kat_pharma_ondUse", false, true];
 _unit setVariable ["kat_pharma_active", false, true];
 _unit setVariable ["kat_IVPharma_PFH", nil, true];
-[_unit, false] call EFUNC(pharma,effectKetamine);
-[_unit, false] call EFUNC(pharma,effectFentanyl);
-[_unit, false] call EFUNC(pharma,effectNalbuphine);
 
 //KAT Surgery
 
