@@ -18,14 +18,9 @@
 
 params ["_medic", "_patient"];
 
-private _bloodVolume = GET_BLOOD_VOLUME(_patient);
-private _pulse = GET_HEART_RATE(_patient);
+private _bloodPressure = [_patient] call ace_medical_status_fnc_getBloodPressure;
+_bloodPressureH = _bloodPressure select 1;
 
-if (_bloodVolume > 4.2 && _pulse >= 60 && _pulse <= 120 && (random 100 <= GVAR(carbonateChance))) then {
-    [_patient, false] call ace_medical_fnc_setUnconscious;
-    _output = LLSTRING(CarbonateSuccess);
-    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
-} else {
-    _output = LLSTRING(Carbonate_Info);
-    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+if (_bloodPressureH >= 110 && _bloodPressureH <= 130 && (random 100 <= GVAR(carbonateChance))) then {
+    [_patient, false] call ace_medical_status_fnc_setUnconsciousState;
 };

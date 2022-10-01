@@ -1089,14 +1089,6 @@
             <English>Chance for succesful Carbonate use</English>
             <Polish>Szansa na pomyślne użycie soli trzeźwiących</Polish>
         </Key>
-        <Key ID="STR_kat_pharma_Carbonate_Info">
-            <English>You hit the cheek, but patient still asleep!</English>
-            <Polish>Uderzyłeś w policzek, ale pacjent nadal śpi!</Polish>
-        </Key>
-        <Key ID="STR_kat_pharma_CarbonateSuccess">
-            <English>Patient woke up with a hard hit!</English>
-            <Polish>Pacjent obudził się z mocnym uderzeniem!</Polish>
-        </Key>
         <Key ID="STR_kat_pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
             <Polish>Poziom wyszkolenia medycznego dla soli trzeźwiących</Polish>
