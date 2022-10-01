@@ -252,7 +252,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// TXA Settings Category 
+// TXA Settings Category
 [
     QGVAR(medLvl_TXA),
     "LIST",
@@ -271,7 +271,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Norepinephrine Settings Category 
+// Norepinephrine Settings Category
 [
     QGVAR(medLvl_Norepinephrine),
     "LIST",
@@ -290,7 +290,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Phenylephrine Settings Category 
+// Phenylephrine Settings Category
 [
     QGVAR(medLvl_Phenylephrine),
     "LIST",
@@ -309,7 +309,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Nitroglycerin Settings Category 
+// Nitroglycerin Settings Category
 [
     QGVAR(medLvl_Nitroglycerin),
     "LIST",
@@ -328,7 +328,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Amiodarone Settings Category 
+// Amiodarone Settings Category
 [
     QGVAR(medLvl_Amiodarone),
     "LIST",
@@ -347,7 +347,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Lidocaine Settings Category 
+// Lidocaine Settings Category
 [
     QGVAR(medLvl_Lidocaine),
     "LIST",
@@ -366,7 +366,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Atropine Settings Category 
+// Atropine Settings Category
 [
     QGVAR(medLvl_Atropine),
     "LIST",
@@ -385,7 +385,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// EACA Settings Category 
+// EACA Settings Category
 [
     QGVAR(medLvl_EACA),
     "LIST",
@@ -404,7 +404,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Ketamine Settings Category 
+//Ketamine Settings Category
 [
     QGVAR(medLvl_Ketamine),
     "LIST",
@@ -432,7 +432,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Fentanyl Settings Category 
+//Fentanyl Settings Category
 [
     QGVAR(medLvl_Fentanyl),
     "LIST",
@@ -451,7 +451,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Nalbuphine Settings Category 
+//Nalbuphine Settings Category
 [
     QGVAR(medLvl_Nalbuphine),
     "LIST",
@@ -470,7 +470,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[    
+[
 	QGVAR(kidneyAction),
 	"CHECKBOX",
 	[LLSTRING(SETTING_Kidney_Action), LLSTRING(SETTING_Kidney_Action_DESC)],
