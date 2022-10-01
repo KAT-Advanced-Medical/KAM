@@ -3,8 +3,8 @@ class ADDON {
         class Epinephrine {
             alphaFactor = 0.15;
         };
-		class Carbonate {
-			painReduce = 0;
+        class Carbonate {
+            painReduce = 0;
             hrIncreaseLow[] = {5, 10};
             hrIncreaseNormal[] = {10, 15};
             hrIncreaseHigh[] = {15, 20};
