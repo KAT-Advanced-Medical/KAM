@@ -12,10 +12,10 @@
  * 5: Used Item <STRING>
  *
  * Return Value:
- * Succesful treatment started <BOOL>
+ * None
  *
  * Example:
- * [player, cursorObject, "RightArm", "Amiodarone", objNull, "kat_amiodarone"] call kat_pharma_fnc_treatmentAdvanced_Amiodaron;
+ * [player, cursorObject, "RightArm", "Flumazenil", objNull, "kat_flumazenil"] call kat_pharma_fnc_treatmentAdvanced_Amiodaron;
  *
  * Public: No
  */

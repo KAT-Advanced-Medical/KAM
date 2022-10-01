@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_pharma_fnc_treatmentAdvanced_TXALocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_FlumazenilLocal;
  *
  * Public: No
  */

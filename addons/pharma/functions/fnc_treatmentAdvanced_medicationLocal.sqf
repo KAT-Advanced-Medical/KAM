@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, "RightArm", "Morphine"] call ace_medical_treatment_fnc_medicationLocal
+ * [player, "RightArm", "Morphine"] call kat_pharma_fnc_treatmentAdvanced_medicationLocal
  *
  * Public: No
  */

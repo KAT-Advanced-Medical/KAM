@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", "Morphine", objNull, "ACE_morphine"] call ace_medical_treatment_fnc_medication
+ * [player, cursorObject, "RightArm", "Morphine", objNull, "ACE_morphine"] call kat_pharma_fnc_treatmentAdvanced_medication
  *
  * Public: No
  */
