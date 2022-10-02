@@ -1696,5 +1696,18 @@
             <Russian>Проверка ритма</Russian>
             <Japanese>心室細動を確認する</Japanese>
         </Key>
+        <Key ID="STR_kat_circulation_SubCategory_Basic">
+            <English>Basic Settings</English>
+            <Polish>Podstawowe Ustawienia</Polish>
+        </Key>
+        <Key ID="STR_kat_circulation_SubCategory_AED">
+            <English>AED + AED-X Settings</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SubCategory_CPR">
+            <English>CPR Settings</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SubCategory_BloodDraw">
+            <English>Blood draw Settings</English>
+        </Key>
     </Package>
 </Project>
