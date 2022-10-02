@@ -8,7 +8,7 @@
  * 1: Item Classname <STRING>
  *
  * Return Value:
- * <BOOLEAN>
+ * None
  *
  * Example:
  * [player, "Naloxone"] call kat_pharma_fnc_treatmentAdvanced_NaloxoneLocal;
@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_patient", "_medicationString"];
+params ["_patient"];
 
 private _medicationArray = _patient getVariable ["ace_medical_medications", []];
 
@@ -29,8 +29,3 @@ private _medicationArray = _patient getVariable ["ace_medical_medications", []];
 } forEach (_medicationArray);
 
 _patient setVariable ["ace_medical_medications", _medicationArray, true];
-
-[_patient, "Naloxone"] call ace_medical_treatment_fnc_addToTriageCard;
-[_patient, "activity", LSTRING(use_log), [[_medic] call ace_common_fnc_getName, "Naloxone"]] call ace_medical_treatment_fnc_addToLog;
-
-true

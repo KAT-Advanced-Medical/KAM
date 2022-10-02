@@ -51,45 +51,6 @@ class ACE_Medical_Treatment_Actions {
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(openFracture));
     };
-    class Etomidate: Carbonate {
-        displayName = CSTRING(Etomidate_Use);
-        category = "surgery";
-        treatmentLocations = 0;
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
-        medicRequired = QGVAR(Etomidate_MedLevel);
-        treatmentTime = QEGVAR(pharma,PushTime);
-        items[] = {"kat_etomidate"};
-        condition = QEFUNC(pharma,removeIV);
-        patientStateCondition = 0;
-        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_medication;";
-    };
-    class Lorazepam: Carbonate {
-        displayName = CSTRING(Lorazepam_Use);
-        category = "surgery";
-        treatmentLocations = 0;
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
-        medicRequired = QGVAR(Lorazepam_MedLevel);
-        treatmentTime = QEGVAR(pharma,PushTime);
-        items[] = {"kat_lorazepam"};
-        condition = QEFUNC(pharma,removeIV);
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Lorazepam')] call FUNC(treatmentAdvanced_Generic));
-    };
-    class Flumazenil: Carbonate {
-        displayName = CSTRING(Flumazenil_Use);
-        category = "surgery";
-        treatmentLocations = 0;
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
-        medicRequired = QGVAR(Flumazenil_MedLevel);
-        treatmentTime = QEGVAR(pharma,PushTime);
-        items[] = {"kat_flumazenil"};
-        condition = QEFUNC(pharma,removeIV);
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Flumazenil')] call FUNC(treatmentAdvanced_Generic));
-    };
     class Expose: BasicBandage {
         displayName = CSTRING(Retractor_Use);
         displayNameProgress = CSTRING(Retractor_Action);

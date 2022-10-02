@@ -28,7 +28,7 @@ private _messageCyanosis = LLSTRING(CyanosisStatus_N);
 private _spO2Output = LSTRING(CyanosisStatus_N);
 
 if (_spO2 <= GVAR(slightValue)) then {
-     _spO2Output = LSTRING(CyanosisStatus_Slight);
+    _spO2Output = LSTRING(CyanosisStatus_Slight);
     _messageCyanosis = LLSTRING(CyanosisStatus_Slight);
 };
 if (_spO2 <= GVAR(mildValue)) then {

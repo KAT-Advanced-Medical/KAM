@@ -47,7 +47,7 @@ PREP_RECOMPILE_END;
 [
 	QGVAR(compoundChance),
 	"SLIDER",
-	[LLSTRING(COMPOUND_FRACTURE) ,LLSTRING(COMPOUND_FRACTURE_DESC)],
+	[LLSTRING(COMPOUND_FRACTURE_CHANCE) ,LLSTRING(COMPOUND_FRACTURE_CHANCE_DESC)],
 	CBA_SETTINGS_CAT_M,
 	[0,100,30,0],
 	true
@@ -174,33 +174,6 @@ PREP_RECOMPILE_END;
 	QGVAR(fractureCheck_MedLevel),
 	"LIST",
 	LLSTRING(FRACTURE_CHECK_MEDLEVEL),
-	CBA_SETTINGS_CAT_M,
-	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(Flumazenil_MedLevel),
-	"LIST",
-	LLSTRING(FLUMAZENIL_MEDLEVEL),
-	CBA_SETTINGS_CAT_M,
-	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(Lorazepam_MedLevel),
-	"LIST",
-	LLSTRING(LORAZEPAM_MEDLEVEL),
-	CBA_SETTINGS_CAT_M,
-	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(Etomidate_MedLevel),
-	"LIST",
-	LLSTRING(ETOMIDATE_MEDLEVEL),
 	CBA_SETTINGS_CAT_M,
 	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
 	true

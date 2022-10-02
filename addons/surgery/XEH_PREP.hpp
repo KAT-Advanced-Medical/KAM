@@ -18,5 +18,3 @@ PREP(openFractureIncision);
 PREP(openFractureIncisionLocal);
 PREP(openFractureProgress);
 PREP(openFractureProgressLocal);
-PREP(treatmentAdvanced_Generic);
-PREP(treatmentAdvanced_GenericLocal);

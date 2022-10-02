@@ -1,21 +1,19 @@
 #include "script_component.hpp"
 /*
- * Author: Glowbal
- * Calculate the total blood loss of a unit.
+ * Author: MJSTIC
+ * Adds the alpha factor value from medications to the patient.
  *
  * Arguments:
- * 0: The Unit <OBJECT>
- *
- * Return Value:
- * Total blood loss of unit (litres/second) <NUMBER>
+ * 0: Patient <OBJECT>
+ * 1: Alpha Value <NUMBER>
  *
  * Example:
- * [player] call ace_medical_status_fnc_getBloodLoss
+ * [player, 0.5] call kat_pharma_fnc_alphaAction;
  *
  * Public: No
  */
 
-params ["", "_patient", "_value"];
+params ["_patient", "_value"];
 
 private _alphaAction = _patient getVariable [QGVAR(alphaAction), 1];
 
