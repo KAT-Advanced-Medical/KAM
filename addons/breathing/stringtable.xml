@@ -1152,5 +1152,33 @@
             <Turkish>Bir kişinin Siyanozu kontrol edebilmesi için gereken minimum tıbbi seviye.</Turkish>
             <Italian>Il livello minimo richiesto per poter diagnosticare la cianosi.</Italian>
         </Key>
+        <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance">
+            <English>Pneumothorax deterioration chance</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance_Desc">
+            <English>Chance for pneumothorax to deteriorate into tension pneumothorax</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown">
+            <English>Deteriorating pneumothorax countdown</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown_Desc">
+            <English>After this countdown a chance will be rolled whether or not the pneumothorax will deteriorate into tension pneumothorax</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SubCategory_Basic">
+            <English>Basic Settings</English>
+            <Polish>Podstawowe Ustawienia</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_SubCategory_Items">
+            <English>Breathing items Settings</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SubCategory_ThoraxInjuries">
+            <English>Thorax injuries Settings</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SubCategory_ThoraxInjuries">
+            <English>Thorax injuries Settings</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SubCategory_ThoraxInjuries">
+            <English>Cyanosis Settings</English>
+        </Key>
     </Package>
 </Project>

@@ -13,7 +13,7 @@ PREP_RECOMPILE_END;
     QGVAR(enable),
     "CHECKBOX",
     LLSTRING(SETTING_ENABLE),
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -23,7 +23,7 @@ PREP_RECOMPILE_END;
     QGVAR(incompatibilityWarning),
     "CHECKBOX",
     [LLSTRING(SETTING_incompatibilityWarning), LLSTRING(SETTING_incompatibilityWarning_Desc)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;

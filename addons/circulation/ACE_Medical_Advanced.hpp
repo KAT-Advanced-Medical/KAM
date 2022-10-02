@@ -128,26 +128,5 @@ class ACE_Medical_Advanced {
                 compatibility[] = {"AB+","AB-"};
             };
         };
-        class Medication {
-            class Atropine {
-                //change for effect from Atropine. Anomalie here, if you give more it will push your heart rate
-                hrIncreaseLow[] = {15, 20, 20};
-                hrIncreaseNormal[] = {10, 15, 15};
-                hrIncreaseHigh[] = {5, 10, 10};
-            };
-            class Painkillers {
-                // copied from ACE. Just a reminder
-                painReduce = 1.2; // increased from 0.7
-                timeInSystem = 120;
-                maxDose = 10;
-                inCompatableMedication[] = {};
-                // will push your blood pressure and leave your heart rate
-                // The viscosity of a fluid is a measure of its resistance to gradual deformation by shear stress or tensile stress. For liquids, it corresponds to the informal concept of "thickness".
-                // This value will increase/decrease the viscoty of the blood with the percentage given. Where 100 = max. Using the minus will decrease viscosity
-                viscosityChange = 5;
-                // item class name
-                itemClassName = "kat_PainkillerItem";
-            };
-        };
     };
 };

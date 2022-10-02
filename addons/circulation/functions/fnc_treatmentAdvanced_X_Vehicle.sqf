@@ -39,7 +39,10 @@ if !(GVAR(AdvRhythm)) then {
     _target setVariable [QGVAR(asystole), 1, true];
     _asystole = _target getVariable [QGVAR(asystole), 1];
     } else {
-    if (_bloodLoss <= 3.6) then {
+    if (_bloodLoss > 3.6) then {
+        _target setVariable [QGVAR(asystole), 1, true];
+        _asystole = _target getVariable [QGVAR(asystole), 1];
+    } else {
         _target setVariable [QGVAR(asystole), 2, true];
         _asystole = _target getVariable [QGVAR(asystole), 2];
     };
@@ -49,7 +52,7 @@ if !(GVAR(AdvRhythm)) then {
 playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _target, false, getPosASL _target, 5, 1, 15];
 
 // wait for the analyse and give the advise
-if ((_target getVariable ["ace_medical_heartRate", 0] isEqualTo 0) && {_target getVariable [QGVAR(asystole), 0] < 2}) then {
+if ((_target getVariable ["ace_medical_heartRate", 0] isEqualTo 0) && {_target getVariable [QGVAR(asystole), 1] < 2}) then {
     [{
         params ["_target"];
         playsound3D [QPATHTOF_SOUND(sounds\shock.wav), _target, false, getPosASL _target, 6, 1, 15];

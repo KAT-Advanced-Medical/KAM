@@ -1,65 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="kat">
     <Package name="pharma">
-        <Key ID="STR_kat_pharma_NALOXONE_ACTIVE">
-            <English>Allow players to use Naloxone?</English>
-            <German>Stoffwechselabhängiger Puls?</German>
-            <Polish>Pozwalać graczom na użycie Naloksonu?</Polish>
-            <Spanish>¿Permitir a los jugadores usar Naloxona?</Spanish>
-            <Chinese>允许球员使用纳洛酮？</Chinese>
-            <Chinesesimp>允许玩家使用纳洛酮吗？</Chinesesimp>
-            <Czech>Povolit hráčům použití Naloxonu?</Czech>
-            <Korean>플레이어가 날록손을 사용하도록 허용하시겠습니까?</Korean>
-            <French>Autoriser Naloxone?</French>
-            <Turkish>Oyuncuların Naloxone kullanmasına izin verilsin mi?</Turkish>
-            <Italian>Permettere ai giocatori di usare il Naloxone?</Italian>
-            <Japanese>ナロキソンの使用を許可</Japanese>
-            <Russian>Разрешить игрокам использовать налоксон?</Russian>
+        <Key ID="STR_kat_pharma_medLvl_ApplyIV">
+            <English>Allow applying IV</English>
+            <Polish>Poziom wyszkolenia medycznego dla IV</Polish>
         </Key>
-        <Key ID="STR_kat_pharma_CARBONATE_ACTIVE">
-            <English>Allow players to use Ammonium Carbonate?</English>
-            <German>Dürfen Spieler Ammoniumkarbonat verwenden?</German>
-            <Polish>Pozwalać graczom na użycie soli trzeźwiących?</Polish>
-            <French>Autoriser Sels d'Ammoniac?</French>
-            <Chinese>允许玩家使用碳酸铵吗？</Chinese>
-            <Chinesesimp>允许玩家使用碳酸铵吗？</Chinesesimp>
-            <Italian>Permettere ai giocatori di usare il carbonato di ammonio?</Italian>
-            <Spanish>¿Permitir a los jugadores utilizar Carbonato de Amonio?</Spanish>
-            <Korean>플레이어가 탄산 암모늄을 사용하도록 허용하시겠습니까?</Korean>
-            <Turkish>Oyuncuların Amonyum Karbonat kullanmasına izin verilsin mi?</Turkish>
-            <Czech>Povolit hráčům použít Uhličitan amonný?</Czech>
-            <Japanese>炭酸アンモニウムの使用を許可</Japanese>
-            <Russian>Разрешить игрокам использовать карбонат аммония?</Russian>
+        <Key ID="STR_kat_pharma_medLvl_ApplyIV_Desc">
+            <English>Changes what medical level is required to set IVs</English>
+            <German>Ändert, welcher medizinische Grad für das Legen von IVs erforderlich ist</German>
+            <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia IV</Polish>
+            <French>Niveau nécessaire pour poser une IV</French>
+            <Chinese>改变设置静脉注射所需的医疗级别</Chinese>
+            <Chinesesimp>改变设置静脉注射IVs所需的医疗级别</Chinesesimp>
+            <Italian>Cambia il livello medico richiesto per impostare le IV</Italian>
+            <Spanish>Cambia el nivel médico que se requiere para colocar las IVs</Spanish>
+            <Korean>IV를 설정하는 데 필요한 의료 레벨 수준 변경</Korean>
+            <Turkish>IV'leri'ları ayarlamak için gereken tıbbi düzeyi değiştirir</Turkish>
+            <Czech>Změní který medický level je potřeba k zavedení IV</Czech>
+            <Japanese>IVの許可</Japanese>
+            <Russian>Изменяет медицинский уровень, необходимый для установки IV.</Russian>
         </Key>
-        <Key ID="STR_kat_pharma_TXA_ACTIVE">
-            <English>Allow players to use TXA?</English>
-            <German>Dürfen Spieler TXA verwenden?</German>
-            <Polish>Pozwalać graczom na użycie TXA?</Polish>
-            <French>Autoriser Acide Tranexamique?</French>
-            <Chinese>允许球员使用TXA？</Chinese>
-            <Chinesesimp>允许玩家使用血栓素？</Chinesesimp>
-            <Italian>Permettere ai giocatori di usare il TXA?</Italian>
-            <Spanish>¿Permitir a los jugadores utilizar el ATX?</Spanish>
-            <Korean>플레이어가 TXA를 사용하도록 허용하시겠습니까?</Korean>
-            <Turkish>Oyuncuların TXA kullanmasına izin verilsin mi?</Turkish>
-            <Czech>Povolit hráčům použít TXA?</Czech>
-            <Japanese>トラネキサム酸(TXA)の使用を許可</Japanese>
-            <Russian>Разрешить игрокам использовать TXA?</Russian>
+        <Key ID="STR_kat_pharma_medLvl_ApplyIO">
+            <English>Allow applying IO</English>
+            <Polish>Poziom wyszkolenia medycznego dla IO</Polish>
         </Key>
-        <Key ID="STR_kat_pharma_IV_MEDIC">
-            <English>Changes what medical level is required to set IVs/IOs</English>
-            <German>Ändert, welcher medizinische Grad für das Legen von IVs/IOs erforderlich ist</German>
-            <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia IV/IO</Polish>
-            <French>Niveau nécessaire pour poser une IV/IO</French>
-            <Chinese>改变设置静脉注射/IOs所需的医疗级别</Chinese>
-            <Chinesesimp>改变设置静脉注射IVs/IOs所需的医疗级别</Chinesesimp>
-            <Italian>Cambia il livello medico richiesto per impostare le IV/IO</Italian>
-            <Spanish>Cambia el nivel médico que se requiere para colocar las IVs/IOs</Spanish>
-            <Korean>IV/IO를 설정하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <Turkish>IV'leri/IO'ları ayarlamak için gereken tıbbi düzeyi değiştirir</Turkish>
-            <Czech>Změní který medický level je potřeba k zavedení IV/IO</Czech>
-            <Japanese>IV/IOの許可</Japanese>
-            <Russian>Изменяет медицинский уровень, необходимый для установки IV/IO.</Russian>
+        <Key ID="STR_kat_pharma_medLvl_ApplyIO_Desc">
+            <English>Changes what medical level is required to set IOs</English>
+            <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia IO</Polish>
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP_ENABLE">
             <English>Enables IV/IO drop times</English>
@@ -106,22 +73,7 @@
             <Japanese>IV/IO針の再利用</Japanese>
             <Russian>Устанавливает, можно ли использовать иглы для IV/IO повторно</Russian>
         </Key>
-        <Key ID="STR_kat_pharma_PUSH_TIME">
-            <English>Push time for all IV Medications</English>
-            <German>Push-Zeit für alle IV-Medikamente</German>
-            <Polish>Czas na podanie leków przez IV</Polish>
-            <French>Temps d'injection des médicaments en IV</French>
-            <Chinese>所有静脉注射药物的推注时间</Chinese>
-            <Chinesesimp>所有注射药物的推注时间</Chinesesimp>
-            <Italian>Tempo d'iniezione per tutti i farmaci per via endovenosa</Italian>
-            <Spanish>Tiempo de administración para todos los medicamentos intravenosos</Spanish>
-            <Korean>IV에 투여되는 모든 약물이 주입되는 시간</Korean>
-            <Turkish>Tüm IV İlaçlar için itme zamanı</Turkish>
-            <Czech>Čas potřebný k vstříknutí všech IV léků</Czech>
-            <Japanese>点滴薬の注入にかかる時間</Japanese>
-            <Russian>Время выталкивания всех IV лекарств</Russian>
-        </Key>
-        <Key ID="STR_kat_pharma_IV_TIME">
+        <Key ID="STR_kat_pharma_treatmentTime_ApplyIV">
             <English>Time to establish IVs</English>
             <German>Zeit zum Anlegen von IVs</German>
             <Polish>Czas zakładania IV</Polish>
@@ -136,7 +88,7 @@
             <Japanese>IV針の刺入にかかる時間</Japanese>
             <Russian>Время устанавливать IV</Russian>
         </Key>
-        <Key ID="STR_kat_pharma_IO_TIME">
+        <Key ID="STR_kat_pharma_treatmentTime_ApplyIO">
             <English>Time to establish IOs</English>
             <German>Zeit zum Anlegen von IOs</German>
             <Polish>Czas zakładania IO</Polish>
@@ -166,21 +118,6 @@
             <Japanese>痛みを抑えるために使用されます</Japanese>
             <Russian>Используется для подавления боли</Russian>
         </Key>
-        <Key ID="STR_kat_pharma_Painkillers_DescUse">
-            <English>An analgesic used to combat light to moderate pain experiences.</English>
-            <Polish>Środek przeciwbólowy używany do zwalczania słabego i średniego bólu.</Polish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Chinesesimp>一种用于对抗轻度至中度疼痛的止痛药。</Chinesesimp>
-            <Czech>Analgetikum používané k potlačení lehkých až středně silných bolestí.</Czech>
-            <French>Un analgésique utilisé pour diminuer la douleur.</French>
-            <German>Ein Schmerzmittel um leichte bis mäßige Schmerzen zu behandeln.</German>
-            <Italian>Analgesico usato per combattere il dolore moderato e leggero</Italian>
-            <Korean>가벼운 통증에서 중간 정도의 통증에 대응하기 위한 진통제</Korean>
-            <Spanish>Analgésico usado para combatir dolor ligero o moderado.</Spanish>
-            <Turkish>Hafif ila orta şiddette ağrı deneyimleriyle mücadele etmek için kullanılan bir analjezik.</Turkish>
-            <Japanese>一般的な市販のアセトアミノフェン鎮痛剤。軽・中度の痛みに効能があります。</Japanese>
-            <Russian>An analgesic used to treat mild to moderate pain.</Russian>
-        </Key>
         <Key ID="STR_kat_pharma_Painkillers_Box_Display">
             <English>Painkillers</English>
             <Polish>Lek przeciwbólowy</Polish>
@@ -197,7 +134,7 @@
             <Russian>Обезболивающие</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Inject_Box_Painkillers">
-            <English>Take Painkillers</English>
+            <English>Push Painkillers</English>
             <Polish>Użyj leku przeciwbólowego</Polish>
             <Chinese>服用止痛藥</Chinese>
             <Chinesesimp>服用止痛药</Chinesesimp>
@@ -225,21 +162,6 @@
             <Czech>Používá se k obnovení vědomí</Czech>
             <Japanese>意識を回復するために使用されます</Japanese>
             <Russian>Используется для восстановления сознания</Russian>
-        </Key>
-        <Key ID="STR_kat_pharma_Carbonate_DescUse">
-            <English>The primary ingredient in smelling salts, used to restore consciousness in limited situations.</English>
-            <German>Der Hauptbestandteil von Riechsalz wird verwendet um in bestimmten Situationen das Bewusstseins wieder zu erlangen.</German>
-            <Polish>Głównym składnikiem jest węglan amonu, używany do przywrócenia przytomności w określonych okolicznościach</Polish>
-            <French>L'ammoniac, dont l'odeur est très forte, utilisé pour faire reprendre conscience dans certaines situations.</French>
-            <Italian>L'ingrediente principale nei sali, utilizzati per ripristinare la coscienza in situazioni limitate.</Italian>
-            <Chinese>嗅觉盐的主要成分，在有限的情况下用于恢复意识。</Chinese>
-            <Chinesesimp>嗅盐的主要成分，在有限的情况下用于恢复意识。</Chinesesimp>
-            <Spanish>El ingrediente principal de las sales aromáticas, utilizado para restaurar la consciencia en situaciones limitadas.</Spanish>
-            <Korean>제한된 상황에서 의식을 회복시키는 데 사용되는 소금 냄새의 주요 성분.</Korean>
-            <Turkish>Kokulu tuzların birincil bileşeni, sınırlı durumlarda bilinci geri kazandırmak için kullanılır.</Turkish>
-            <Czech>Primární složka čichacích solí používaná k obnovení vědomí ve výjmečných situacích.</Czech>
-            <Japanese>気付け薬の主成分で、限られた状況で意識を回復するために使用されます。</Japanese>
-            <Russian>Основной ингредиент нюхательной соли, используемый для восстановления сознания в ограниченных ситуациях.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Carbonate_Box_Display">
             <English>Ammonium Carbonate</English>
@@ -286,21 +208,6 @@
             <Japanese>オピオイド過剰摂取を元に戻すために使用されます</Japanese>
             <Russian>Используется для устранения передозировок опиоидами.</Russian>
         </Key>
-        <Key ID="STR_kat_pharma_Naloxone_DescUse">
-            <English>An opioid antagonist that can reverse opioid overdoses from medications such as Morphine.</English>
-            <German>Ein Opioid-Antagonist, der Opioid-Überdosierungen von Medikamenten wie Morphin rückgängig machen kann.</German>
-            <Polish>Antagonista opioidów potrafiący zwalczać przedawkowanie leków takich jak morfina.</Polish>
-            <French>Un antagoniste des opioïdes qui peut inverser le surdosage d'opiacés comme la morphine.</French>
-            <Italian>Un antagonista degli oppioidi che può invertire le overdose di oppioidi come la morfina.</Italian>
-            <Spanish>Un antagonista opioide que puede revertir las sobredosis de opioides como la morfina.</Spanish>
-            <Chinese>一种阿片类拮抗剂，可以逆转吗啡等药物的阿片类药物过量。</Chinese>
-            <Chinesesimp>一种阿片类拮抗剂，可以逆转吗啡等药物的阿片类药物过量。</Chinesesimp>
-            <Korean>모르핀과 같은 약물로 인한 아편유사제 과다복용을 역전시킬 수 있는 아편유사제 길항제.</Korean>
-            <Turkish>Morfin gibi ilaçlardan kaynaklanan aşırı opioid dozlarını tersine çevirebilen bir opioid antagonisti.</Turkish>
-            <Czech>Opioidní protiváha, která může zvrátit předávkování léků, jako je Morfin.</Czech>
-            <Japanese>モルヒネなどの薬剤によるオピオイド過剰摂取を治療するオピオイド拮抗薬。</Japanese>
-            <Russian>Антагонист опиатов, который может обратить вспять передозировку опиатами от таких лекарств, как морфин.</Russian>
-        </Key>
         <Key ID="STR_kat_pharma_Naloxone_Box_Display">
             <English>Naloxone</English>
             <German>Naloxone</German>
@@ -345,21 +252,6 @@
             <Czech>Používá se k léčení srdeční zástavy</Czech>
             <Japanese>心停止と戦うために使用されます</Japanese>
             <Russian>Используется для борьбы с остановкой сердца</Russian>
-        </Key>
-        <Key ID="STR_KAT_pharma_Amiodarone_DescUse">
-            <English>An anti-arrhythmic used when combating shockable forms of cardiac arrest.</English>
-            <German>Ein Antiarrhythmikum, das bei der Bekämpfung schockbarer Formen des Herzstillstands eingesetzt wird.</German>
-            <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
-            <French>Antiarythmique utilisé pour combattre les formes choquables arrêt cardiaque.</French>
-            <Chinese>一种抗心律失常药，用于对抗可休克形式的心脏骤停。</Chinese>
-            <Chinesesimp>一种抗心律失常药，用于对抗休克形式的心脏骤停。</Chinesesimp>
-            <Italian>Un antiaritmico usato per combattere le forme defibrillabili di arresto cardiaco.</Italian>
-            <Spanish>Es un antiarrítmico que se utiliza para combatir las formas de paro cardíaco susceptibles de descarga.</Spanish>
-            <Korean>충격을 줄 수 있는 형태의 심장 마비를 퇴치할 때 사용되는 항부정맥제.</Korean>
-            <Turkish>Şok edilebilir kardiyak arrest formlarıyla mücadele ederken kullanılan bir anti-aritmik.</Turkish>
-            <Czech>Antiarytmikum používané při léčení šokovatelných forem zástavy srdce.</Czech>
-            <Japanese>ショック可能な形態の心停止と戦うときに使用される抗不整脈薬。</Japanese>
-            <Russian>Антиаритмическое средство, используемое при борьбе с шоковыми формами остановки сердца.</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Amiodarone_Box_Display">
             <English>Amiodarone</English>
@@ -406,21 +298,6 @@
             <Japanese>心停止と戦うために使用されます</Japanese>
             <Russian>Используется для борьбы с остановкой сердца</Russian>
         </Key>
-        <Key ID="STR_KAT_pharma_Lidocaine_DescUse">
-            <English>An anti-arrhythmic used when combating shockable forms of cardiac arrest.</English>
-            <German>Ein Antiarrhythmikum, das bei der Bekämpfung schockbarer Formen des Herzstillstands eingesetzt wird.</German>
-            <Polish>Środek antyarytmiczny stosowany w walce z podatnymi na wstrząsy formami zatrzymania krążenia.</Polish>
-            <French>Antiarythmique utilisé pour combattre les formes choquables arrêt cardiaque.</French>
-            <Chinese>一种抗心律失常药，用于对抗可休克形式的心脏骤停。</Chinese>
-            <Chinesesimp>一种抗心律失常药，用于对抗休克形式的心脏骤停。</Chinesesimp>
-            <Italian>Un antiaritmico usato per combattere le forme defibrillabili di arresto cardiaco.</Italian>
-            <Spanish>Es un antiarrítmico que se utiliza para combatir las formas de paro cardíaco susceptibles de descarga.</Spanish>
-            <Korean>충격을 줄 수 있는 형태의 심장 마비를 퇴치할 때 사용되는 항부정맥제.</Korean>
-            <Turkish>Şok edilebilir kardiyak arrest formlarıyla mücadele ederken kullanılan bir anti-aritmik.</Turkish>
-            <Czech>Antiarytmikum používané při léčení šokovatelných forem zástavy srdce.</Czech>
-            <Japanese>ショック可能な形態の心停止と戦うときに使用される抗不整脈薬。</Japanese>
-            <Russian>Антиаритмическое средство, используемое при борьбе с шоковыми формами остановки сердца.</Russian>
-        </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_Box_Display">
             <English>Lidocaine</English>
             <German>Lidocain</German>
@@ -465,21 +342,6 @@
             <Czech>Používá se k léčbě bradykardie</Czech>
             <Japanese>徐脈の治療に使用されます</Japanese>
             <Russian>Используется для лечения брадикардии</Russian>
-        </Key>
-        <Key ID="STR_KAT_pharma_Atropine_DescUse">
-            <English>Commonly used to treat poisoning, Atropine can also be used to treat bradycardia.</English>
-            <German>Atropin wird häufig zur Behandlung von Vergiftungen eingesetzt und kann auch zur Behandlung von Bradykardie verwendet werden.</German>
-            <Polish>Używany do leczenia zatrucia. Atropina może być również używana w celu leczenia bradykardii.</Polish>
-            <French>Communément utilisé comme antidote au gaz neurotoxiques mais peut également traiter une bradycardie.</French>
-            <Chinese>常用于治疗中毒，阿托品也可用于治疗心动过缓。</Chinese>
-            <Chinesesimp>常用于治疗中毒，阿托品也可用于治疗心动过缓。</Chinesesimp>
-            <Italian>Comunemente usata per trattare l'avvelenamento, l'atropina può anche essere usata per trattare la bradicardia.</Italian>
-            <Spanish>Comúnmente utilizada para tratar la intoxicación, la atropina también puede utilizarse para tratar la bradicardia.</Spanish>
-            <Korean>중독 치료에 일반적으로 사용되는 아트로핀은 서맥 치료에도 사용할 수 있습니다.</Korean>
-            <Turkish>Zehirlenmeyi tedavi etmek için yaygın olarak kullanılan Atropin, bradikardiyi tedavi etmek için de kullanılabilir.</Turkish>
-            <Czech>Atropin se běžně používá k léčbě otrav, lze také použít k léčbě bradykardie.</Czech>
-            <Japanese>中毒の治療に一般的に使用されるアトロピンは、徐脈の治療にも使用できます。</Japanese>
-            <Russian>Обычно используемый для лечения отравлений, атропин также может быть использован для лечения брадикардии.</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Atropine_Box_Display">
             <English>Atropine</English>
@@ -526,21 +388,6 @@
             <Japanese>血液凝固を促進し、出血を抑えます。</Japanese>
             <Russian>Способствует образованию тромбов</Russian>
         </Key>
-        <Key ID="STR_kat_pharma_TXA_DescUse">
-            <English>Used to encourage and stabilize clots in a patient.</English>
-            <German>Zur Förderung und Stabilisierung von Blutgerinnseln in einem Patienten.</German>
-            <Polish>Używany do wspomagania tworzenia skrzepów u pacjenta</Polish>
-            <French>Utilisé pour favoriser et stabiliser la coagulation chez le patient.</French>
-            <Italian>Utilizzato per favorire e stabilizzare la coagulazione del paziente</Italian>
-            <Spanish>Usado para promover y estabilizar la coagulación en el paciente.</Spanish>
-            <Chinese>用于鼓励和稳定病人体内的血块。</Chinese>
-            <Chinesesimp>促进血凝块的形成,有利于抑制出血</Chinesesimp>
-            <Korean>환자의 혈전을 촉진하고 안정시키는 데 사용됩니다.</Korean>
-            <Turkish>Bir hastada pıhtıları teşvik etmek ve stabilize etmek için kullanılır.</Turkish>
-            <Czech>Používá se k povzbuzení a stabilizaci sraženin u pacienta.</Czech>
-            <Japanese>患者の血液凝固を促進し、出血を抑え容体を安定させるために使用されます。</Japanese>
-            <Russian>Используется для стимулирования и стабилизации образования тромбов у пациента.</Russian>
-        </Key>
         <Key ID="STR_kat_pharma_TXA_Box_Display">
             <English>TXA</English>
             <German>TXA</German>
@@ -585,21 +432,6 @@
             <Czech>Používáno ke zvýšení krevního tlaku</Czech>
             <Japanese>血圧を上げるために使用されます</Japanese>
             <Russian>Используется для повышения артериального давления</Russian>
-        </Key>
-        <Key ID="STR_kat_pharma_Norep_DescUse">
-            <English>A vasopressor used to increase blood pressure and combat shock.</English>
-            <German>Ein Vasopressor, der zur Erhöhung des Blutdrucks und zur Schockbekämpfung eingesetzt wird.</German>
-            <Polish>Środek zwężający naczynia krwionośne używany do podniesienia ciśnienia krwi oraz zwalczania szoku.</Polish>
-            <French>Un vasoconstricteur utilisé pour augmenter la pression artérielle et combattre le choc hypovolémique.</French>
-            <Chinese>一种用于提高血压和抗休克的血管抑制剂。</Chinese>
-            <Chinesesimp>一种用于提高血压和抗休克的血管抑制剂。</Chinesesimp>
-            <Italian>Un vasopressore usato per aumentare la pressione sanguigna e combattere l'ipotensione.</Italian>
-            <Spanish>Un vasopresor utilizado para aumentar la presión arterial y combatir el shock.</Spanish>
-            <Korean>혈압을 높이고 쇼크를 퇴치하는 데 사용되는 승압제.</Korean>
-            <Turkish>Tansiyonu yükseltmek ve şokla mücadele etmek için kullanılan bir vazopressör.</Turkish>
-            <Czech>Vasopresor používán k zvýšení krevního tlaku a bojového šoku</Czech>
-            <Japanese>血圧を上げてショックと戦うために使用される昇圧剤。</Japanese>
-            <Russian>Вазопрессор, используемый для повышения артериального давления и борьбы с шоком.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Norep_Box_Display">
             <English>Norepinephrine</English>
@@ -646,21 +478,6 @@
             <Japanese>血圧を上げるために使用されます</Japanese>
             <Russian>Используется для повышения артериального давления</Russian>
         </Key>
-        <Key ID="STR_kat_pharma_Phenyl_DescUse">
-            <English>A vasopressor used to increase blood pressure and combat shock.</English>
-            <German>Ein Vasopressor, der zur Erhöhung des Blutdrucks und zur Schockbekämpfung eingesetzt wird.</German>
-            <Polish>Środek zwężający naczynia krwionośne używany do podniesienia ciśnienia krwi oraz zwalczania szoku.</Polish>
-            <French>Un vasoconstricteur utilisé pour augmenter la pression artérielle et combattre le choc hypovolémique.</French>
-            <Chinese>一种用于提高血压和抗休克的血管抑制剂。</Chinese>
-            <Chinesesimp>一种用于提高血压和抗休克的血管抑制剂。</Chinesesimp>
-            <Italian>Un vasopressore usato per aumentare la pressione sanguigna e combattere l'ipotensione'.</Italian>
-            <Spanish>Un vasopresor utilizado para aumentar la presión arterial y combatir el shock.</Spanish>
-            <Korean>혈압을 높이고 쇼크를 퇴치하는 데 사용되는 승압제.</Korean>
-            <Turkish>Tansiyonu yükseltmek ve şokla mücadele etmek için kullanılan bir vazopressör.</Turkish>
-            <Czech>Vasopresor používán k zvýšení krevního tlaku a bojového šoku</Czech>
-            <Japanese>血圧を上げてショックと戦うために使用される昇圧剤。</Japanese>
-            <Russian>Вазопрессор, используемый для повышения артериального давления и борьбы с шоком.</Russian>
-        </Key>
         <Key ID="STR_kat_pharma_Phenyl_Box_Display">
             <English>Phenylephrine</English>
             <German>Phenylephrin</German>
@@ -705,21 +522,6 @@
             <Czech>Používáno ke snížení krevního tlaku</Czech>
             <Japanese>血圧を下げるために使用されます</Japanese>
             <Russian>Используется для снижения артериального давления</Russian>
-        </Key>
-        <Key ID="STR_kat_pharma_Nitro_DescUse">
-            <English>A vasodilator used to decrease blood pressure and combat hypertension.</English>
-            <German>Ein gefäßerweiternder Wirkstoff zur Senkung des Blutdrucks und zur Bekämpfung von Bluthochdruck.</German>
-            <Polish>Środek rozkurczowy używany do obniżenia ciśnienia krwi i nadciśnienia tętnicznego.</Polish>
-            <French>Un vasodilatateur utilisé pour diminuer la pression artérielle et combattre l'hypertension.</French>
-            <Chinese>一种血管扩张剂，用于降低血压和防治高血压。</Chinese>
-            <Chinesesimp>一种血管扩张剂，用于降低血压和防治高血压。</Chinesesimp>
-            <Italian>Un vasodilatatore usato per diminuire la pressione sanguigna e combattere l'ipertensione.</Italian>
-            <Spanish>Un vasodilatador utilizado para disminuir la presión arterial y combatir la hipertensión.</Spanish>
-            <Korean>혈압을 낮추고 고혈압을 퇴치하는 데 사용되는 혈관 확장제.</Korean>
-            <Turkish>Kan basıncını düşürmek ve hipertansiyonla mücadele etmek için kullanılan bir vazodilatör.</Turkish>
-            <Czech>Vasodilator je použit ke snížení krevního tlaku a bojovým hypertenzím</Czech>
-            <Japanese>血圧を下げ、高血圧と戦うために使用される血管拡張剤。</Japanese>
-            <Russian>Сосудорасширяющее средство, используемое для снижения артериального давления и борьбы с гипертонией.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Nitro_Box_Display">
             <English>Nitroglycerin</English>
@@ -944,21 +746,6 @@
             <Italian>Sistema d'infusione intraossea</Italian>
             <Japanese>骨内注射針</Japanese>
             <Russian>Внутривенное игла</Russian>
-        </Key>
-        <Key ID="STR_kat_pharma_IV_DescUse">
-            <English>Used to allow fluids and certain medications to enter the body.</English>
-            <German>Wird verwendet, damit Flüssigkeiten und bestimmte Medikamente in den Körper gelangen können.</German>
-            <Polish>Używany w celu dostarczenia płynów i pewnych leków do krwioobiegu.</Polish>
-            <Spanish>Usado para administrar fluidos y ciertos medicamentos en el cuerpo.</Spanish>
-            <Chinese>一種藥物，用於減緩輕、中度的疼痛用。</Chinese>
-            <Chinesesimp>用于允许液体和某些药物进入人体。</Chinesesimp>
-            <Czech>Používá se k umožnění vstupu tekutin a určitých léků do těla.</Czech>
-            <Korean>체액과 특정 약물이 체내에 들어오도록 하는 데 사용됩니다.</Korean>
-            <French>Utilisé pour permettre l'administration de médicaments en intra-veineuse.</French>
-            <Turkish>Hafif ila orta dereceli ağrı deneyimleriyle mücadele etmek için kullanılan bir ağrı kesici.</Turkish>
-            <Italian>Utilizzato per consentire ai fluidi e ad alcuni farmaci di entrare nel corpo.</Italian>
-            <Japanese>輸液や薬液を体内に注射するために使用されます。</Japanese>
-            <Russian>Используется для пропуска жидкостей и некоторых лекарств в организм.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Apply_IV_16">
             <English>Establish 16g IV</English>
@@ -1211,6 +998,303 @@
             <Italian>Livello medico richiesto per stimolazione</Italian>
             <Japanese>患者を刺激を与えるために訓練レベルを必要とさせます。</Japanese>
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
+        </Key>
+        <Key ID="STR_KAT_pharma_treatmentTime_Reorientation">
+            <English>Treatment time for reorientation</English>
+            <Polish>Czas cucenia</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_Etomidate_displayName">
+            <English>Etomidate</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Etomidate_DescShort">
+            <English>General Anesthetic</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Etomidate_DescUse">
+            <English>Used as a general anesthetic for surgical procedures</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Etomidate_Use">
+            <English>Push Etomidate</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Lorazepam_displayName">
+            <English>Lorazepam</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Lorazepam_DescShort">
+            <English>Sedtation medication</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Lorazepam_DescUse">
+            <English>Used to sedate patients and prepare them for surgery</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Lorazepam_Use">
+            <English>Push Lorazepam</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Flumazenil_displayName">
+            <English>Flumazenil</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Flumazenil_DescShort">
+            <English>Counter to Lorzaepam</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Flumazenil_DescUse">
+            <English>Used to bring patients out of sedation</English>
+        </Key>
+        <Key ID="STR_kat_pharma_Flumazenil_Use">
+            <English>Push Flumazenil</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Ketamine">
+            <English>Push Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Ketamine_Box_Display">
+            <English>Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Ketamine_DescShort">
+            <English>Suppress pain</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Fentanyl">
+            <English>Push Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Fentanyl_Box_Display">
+            <English>Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Fentanyl_DescShort">
+            <English>Suppress pain</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Take_Nalbuphine">
+            <English>Push Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Nalbuphine_Box_Display">
+            <English>Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Nalbuphine_DescShort">
+            <English>Suppress pain</English>
+        </Key>
+        <Key ID="STR_KAT_pharma_Activity_usedItem">
+            <English>%1 used %2</English>
+            <Spanish>%1 usó %2</Spanish>
+            <German>%1 benutzt %2</German>
+            <Russian>%1 использовал %2</Russian>
+            <Polish>%1 użył %2</Polish>
+            <French>%1 a utilisé un %2.</French>
+            <Hungarian>%1 használta a %2-t</Hungarian>
+            <Italian>%1 ha usato %2</Italian>
+            <Portuguese>%1 usou %2</Portuguese>
+            <Czech>%1 použil %2</Czech>
+            <Japanese>%1 は %2 を使った</Japanese>
+            <Korean>%1 (이)가 %2 을 썼다</Korean>
+            <Chinesesimp>%1 已使用 %2</Chinesesimp>
+            <Chinese>%1 已使用 %2</Chinese>
+            <Turkish>%1 kullanıldı %2</Turkish>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_reorientationChance">
+            <English>Chance for succesful reorientation</English>
+            <Polish>Szansa na pomyślne ocucenie</Polish>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_carbonateChance">
+            <English>Chance for succesful Carbonate use</English>
+            <Polish>Szansa na pomyślne użycie soli trzeźwiących</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Carbonate">
+            <English>Allow using Carbonate</English>
+            <Polish>Poziom wyszkolenia medycznego dla soli trzeźwiących</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Carbonate">
+            <English>Treatment time for Carbonate</English>
+            <Polish>Czas na użycie soli trzeźwiących</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Naloxone">
+            <English>Medical level required for Naloxone</English>
+            <Polish>Poziom wyszkolenia medycznego dla Naloksonu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Naloxone">
+            <English>Treatment time for Naloxone</English>
+            <Polish>Czas na wstrzyknięcie Naloksonu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_TXA">
+            <English>Medical level required for TXA</English>
+            <Polish>Poziom wyszkolenia medycznego dla TXA</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_TXA">
+            <English>Treatment time for TXA</English>
+            <Polish>Czas na wstrzyknięcie TXA</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Norepinephrine">
+            <English>Medical level required for Norepinephrine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Norepinephrine">
+            <English>Treatment time for Norepinephrine</English>
+            <Polish>Czas na wstrzyknięcie Noradrenaliny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Phenylephrine">
+            <English>Medical level required for Phenylephrine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Fenylefryny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Phenylephrine">
+            <English>Treatment time for Phenylephrine</English>
+            <Polish>Czas na wstrzyknięcie Fenylefryny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Nitroglycerin">
+            <English>Medical level required for Nitroglycerin</English>
+            <Polish>Poziom wyszkolenia medycznego dla Nitrogliceryny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Nitroglycerin">
+            <English>Treatment time for Nitroglycerin</English>
+            <Polish>Czas na wstrzyknięcie Nitrogliceryny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Amiodarone">
+            <English>Medical level required for Amiodarone</English>
+            <Polish>Poziom wyszkolenia medycznego dla Amiodaronu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Amiodarone">
+            <English>Treatment time for Amiodarone</English>
+            <Polish>Czas na wstrzyknięcie Amiodaronu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Lidocaine">
+            <English>Medical level required for Lidocaine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Lidokainy</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Lidocaine">
+            <English>Treatment time for Lidocaine</English>
+            <Polish>Czas na wstrzyknięcie Lidokainy</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Atropine">
+            <English>Medical level required for Atropine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Atropiny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Atropine">
+            <English>Treatment time for Atropine</English>
+            <Polish>Czas na wstrzyknięcie Atropiny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_EACA">
+            <English>Medical level required for EACA</English>
+            <Polish>Poziom wyszkolenia medycznego dla EACA</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_EACA">
+            <English>Treatment time for EACA</English>
+            <Polish>Czas na wstrzyknięcie EACA</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Flumazenil">
+            <English>Medical level required for Flumazenil</English>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Flumazenil">
+            <English>Treatment time for Flumazenil</English>
+            <Polish>Czas na wstrzyknięcie Flumazenilu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Lorazepam">
+            <English>Medical level required for Lorazepam</English>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Lorazepam">
+            <English>Treatment time for Lorazepam</English>
+            <Polish>Czas na wstrzyknięcie Lorazepamu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Etomidate">
+            <English>Medical level required for Etomidate</English>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Etomidate">
+            <English>Treatment time for Etomidate</English>
+            <Polish>Czas na wstrzyknięcie Etomidatu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Ketamine">
+            <English>Medical level required for Ketamine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Ketaminy</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Ketamine">
+            <English>Treatment time for Ketamine</English>
+            <Polish>Czas na wstrzyknięcie Ketaminy</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Fentanyl">
+            <English>Medical level required for Fentanyl</English>
+            <Polish>Poziom wyszkolenia medycznego dla Fentanylu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Fentanyl">
+            <English>Treatment time for Fentanyl</English>
+            <Polish>Czas na wstrzyknięcie Fentanylu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Nalbuphine">
+            <English>Medical level required for Nalbuphine</English>
+            <Polish>Poziom wyszkolenia medycznego dla Nalbuphinu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Nalbuphine">
+            <English>Treatment time for Nalbuphine</English>
+            <Polish>Czas na wstrzyknięcie Nalbuphinu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Basic">
+            <English>Basic Settings</English>
+            <Polish>Podstawowe Ustawienia</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_ApplyIV">
+            <English>IV Settings</English>
+            <Polish>Ustawienia IV</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_ApplyIO">
+            <English>IO Settings</English>
+            <Polish>Ustawienia IO</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Reorientation">
+            <English>Reorientation Settings</English>
+            <Polish>Ustawienia Cucenia</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Carbonate">
+            <English>Carbonate Settings</English>
+            <Polish>Ustawienia Soli Trzeźwiących</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Naloxone">
+            <English>Naloxone Settings</English>
+            <Polish>Ustawienia Naloksonu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_TXA">
+            <English>TXA Settings</English>
+            <Polish>Ustawienia TXA</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Norepinephrine">
+            <English>Norepinephrine Settings</English>
+            <Polish>Ustawienia Noradrenaliny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Phenylephrine">
+            <English>Phenylephrine Settings</English>
+            <Polish>Ustawienia Fenylefryny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Nitroglycerin">
+            <English>Nitroglycerin Settings</English>
+            <Polish>Ustawienia Nitrogliceryny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Amiodarone">
+            <English>Amiodarone Settings</English>
+            <Polish>Ustawienia Amiodarone</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Lidocaine">
+            <English>Lidocaine Settings</English>
+            <Polish>Ustawienia Lidokainy</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Atropine">
+            <English>Atropine Settings</English>
+            <Polish>Ustawienia Atropiny</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_EACA">
+            <English>EACA Settings</English>
+            <Polish>Ustawienia EACA</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Ketamine">
+            <English>Ketamine Settings</English>
+            <Polish>Ustawienia Ketaminy</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Fentanyl">
+            <English>Fentanyl Settings</English>
+            <Polish>Ustawienia Fentanylu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Nalbuphine">
+            <English>Nalbuphine Settings</English>
+            <Polish>Ustawienia Nalbuphinu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Flumazenil">
+            <English>Flumazenil Settings</English>
+            <Polish>Ustawienia Flumazenilu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Lorazepam">
+            <English>Lorazepam Settings</English>
+            <Polish>Ustawienia Lorazepamu</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Etomidate">
+            <English>Etomidate Settings</English>
+            <Polish>Ustawienia Etomidatu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_flush_log">
             <English>%1 performed a saline flush on %2</English>

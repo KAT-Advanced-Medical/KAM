@@ -109,42 +109,6 @@
         <Key ID="STR_kat_surgery_debridement_fail">
             <English>Wound Dressing Failed</English>
         </Key>
-        <Key ID="STR_kat_surgery_Etomidate_displayName">
-            <English>Etomidate</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Etomidate_DescShort">
-            <English>General Anesthetic</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Etomidate_DescUse">
-            <English>Used as a general anesthetic for surgical procedures</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Etomidate_Use">
-            <English>Push Etomidate</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Lorazepam_displayName">
-            <English>Lorazepam</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Lorazepam_DescShort">
-            <English>Sedtation medication</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Lorazepam_DescUse">
-            <English>Used to sedate patients and prepare them for surgery</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Lorazepam_Use">
-            <English>Push Lorazepam</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Flumazenil_displayName">
-            <English>Flumazenil</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Flumazenil_DescShort">
-            <English>Counter to Lorzaepam</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Flumazenil_DescUse">
-            <English>Used to bring patients out of sedation</English>
-        </Key>
-        <Key ID="STR_kat_surgery_Flumazenil_Use">
-            <English>Push Flumazenil</English>
-        </Key>
         <Key ID="STR_kat_surgery_Scalpel_displayName">
             <English>Scalpel</English>
         </Key>
@@ -235,10 +199,10 @@
         <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_DESC">
             <English>Sets the chance for simple fractures. Also sets the chance for complex fractures (60% Simple = 40% Complex)</English>
         </Key>
-        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE">
+        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
         </Key>
-        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_DESC">
+        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for compound fractures. Also sets the chance for comminuted fractures (60% Compound = 40% Comminuted)</English>
         </Key>
         <Key ID="STR_kat_surgery_ETOMIDATE_TIMER">
@@ -286,15 +250,6 @@
         <Key ID="STR_kat_surgery_SURGICAL_ACTION_MEDLEVEL">
             <English>Medical level required for Surgical action</English>
         </Key>
-        <Key ID="STR_kat_surgery_FLUMAZENIL_MEDLEVEL">
-            <English>Medical level required for Flumazenil</English>
-        </Key>
-        <Key ID="STR_kat_surgery_LORAZEPAM_MEDLEVEL">
-            <English>Medical level required for Lorazepam</English>
-        </Key>
-        <Key ID="STR_kat_surgery_ETOMIDATE_MEDLEVEL">
-            <English>Medical level required for Etomidate</English>
-        </Key>
         <Key ID="STR_kat_surgery_BREATH_CHECK_MEDLEVEL">
             <English>Medical level required for Breath check</English>
         </Key>
@@ -330,6 +285,19 @@
         </Key>
         <Key ID="STR_kat_surgery_uncon_requieredForActions_DESC">
             <English>Whether or not is unconsciousness requiered to perform some surgery actions</English>
+        </Key>
+        <Key ID="STR_kat_surgery_SubCategory_Basic">
+            <English>Basic Settings</English>
+            <Polish>Podstawowe Ustawienia</Polish>
+        </Key>
+        <Key ID="STR_kat_surgery_SubCategory_SurgicalActions">
+            <English>Surgical actions Settings</English>
+        </Key>
+        <Key ID="STR_kat_surgery_SubCategory_Fractures">
+            <English>Fractures Settings</English>
+        </Key>
+        <Key ID="STR_kat_surgery_SubCategory_Kidney">
+            <English>Kidney Settings</English>
         </Key>
     </Package>
 </Project>

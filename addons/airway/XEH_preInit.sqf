@@ -23,8 +23,18 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(enable),
     "CHECKBOX",
     LLSTRING(SETTING_ENABLE),
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Settable action time for CheckAirway
+[
+    QGVAR(CheckAirway_time),
+    "SLIDER",
+    [LLSTRING(TIME_CHECKAIRWAY),LLSTRING(TIME_CHECKAIRWAY_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [1, 10, 2, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -33,7 +43,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(probability_obstruction),
     "SLIDER",
     LLSTRING(SETTING_obstruction),
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [0, 100, 15, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -43,7 +53,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(probability_occluded),
     "SLIDER",
     LLSTRING(SETTING_occluded),
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [0, 100, 10, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -53,7 +63,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(occlusion_repeatTimer),
     "SLIDER",
     LLSTRING(SETTING_occlusion_repeatTimer),
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [1, 1200, 60, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -63,8 +73,18 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(probability_headturning),
     "SLIDER",
     [LLSTRING(SUCCES_HEADTURNING),LLSTRING(SUCCES_HEADTURNING_DESC)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [1, 100, 50, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Settable action time for Head turning
+[
+    QGVAR(TurnAround_time),
+    "SLIDER",
+    [LLSTRING(TIME_HEADTURNING),LLSTRING(TIME_HEADTURNING_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [1, 10, 2, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -74,7 +94,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(checkbox_puking_sound),
     "CHECKBOX",
     LLSTRING(SETTING_puking_sound),
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -83,8 +103,18 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(string_exit),
     "LIST",
     ["keko_wasPunched string", LLSTRING(SETTING_exit)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [["", "keko_wasPunched"], ["", "keko_wasPunched"], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Enable or disable Colored Action Logs
+[
+    QGVAR(Colored_logs),
+    "CHECKBOX",
+    [LLSTRING(COLORED_LOGS),LLSTRING(COLORED_LOGS_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -93,7 +123,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(medLvl_Larynxtubus),
     "LIST",
     [LLSTRING(ALLOW_LARYNXTUBUS),LLSTRING(ALLOW_LARYNXTUBUS_DESC)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
@@ -103,7 +133,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(medLvl_Guedeltubus),
     "LIST",
     [LLSTRING(ALLOW_GUEDELTUBUS),LLSTRING(ALLOW_GUEDELTUBUS_DESC)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
@@ -113,47 +143,17 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(medLvl_Accuvac),
     "LIST",
     [LLSTRING(ALLOW_ACCUVAC),LLSTRING(ALLOW_ACCUVAC_DESC)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
-
-// Settable action time for CheckAirway
-[
-    QGVAR(CheckAirway_time),
-    "SLIDER",
-    [LLSTRING(TIME_CHECKAIRWAY),LLSTRING(TIME_CHECKAIRWAY_DESC)],
-    CBA_SETTINGS_CAT,
-    [1, 10, 2, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-// Settable action time for Head turning
-[
-    QGVAR(TurnAround_time),
-    "SLIDER",
-    [LLSTRING(TIME_HEADTURNING),LLSTRING(TIME_HEADTURNING_DESC)],
-    CBA_SETTINGS_CAT,
-    [1, 10, 2, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-// Settable action time for Head overstretching
-[
-    QGVAR(Overstretch_time),
-    "SLIDER",
-    [LLSTRING(TIME_OVERSTRETCH),LLSTRING(TIME_OVERSTRETCH_DESC)],
-    CBA_SETTINGS_CAT,
-    [1, 10, 3, 0],
-    true
-] call CBA_Settings_fnc_init;
 
 // Settable action time for Accuvac
 [
     QGVAR(Accuvac_time),
     "SLIDER",
     [LLSTRING(TIME_ACCUVAC),LLSTRING(TIME_ACCUVAC_DESC)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [1, 20, 8, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -163,7 +163,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(Larynxtubus_time),
     "SLIDER",
     [LLSTRING(TIME_LARYNXTUBUS),LLSTRING(TIME_LARYNXTUBUS_DESC)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [1, 10, 3, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -173,18 +173,18 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(Guedeltubus_time),
     "SLIDER",
     [LLSTRING(TIME_GUEDELTUBUS),LLSTRING(TIME_GUEDELTUBUS_DESC)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [1, 20, 6, 0],
     true
 ] call CBA_Settings_fnc_init;
 
-// Enable or disable Colored Action Logs
+// Settable action time for Head overstretching
 [
-    QGVAR(Colored_logs),
-    "CHECKBOX",
-    [LLSTRING(COLORED_LOGS),LLSTRING(COLORED_LOGS_DESC)],
-    CBA_SETTINGS_CAT,
-    [true],
+    QGVAR(Overstretch_time),
+    "SLIDER",
+    [LLSTRING(TIME_OVERSTRETCH),LLSTRING(TIME_OVERSTRETCH_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionOverstretch)],
+    [1, 10, 3, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -193,7 +193,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(RecoveryPosition_Time),
     "SLIDER",
     [LLSTRING(TIME_RECOVERY),LLSTRING(TIME_RECOVERY_DESC)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionOverstretch)],
     [1, 120, 6, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -203,7 +203,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(CancelRecoveryPosition_Time),
     "SLIDER",
     [LLSTRING(TIME_CANCELRECOVERY),LLSTRING(TIME_CANCELRECOVERY_DESC)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionOverstretch)],
     [1, 120, 6, 0],
     true
 ] call CBA_Settings_fnc_init;

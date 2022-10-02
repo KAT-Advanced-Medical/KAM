@@ -40,7 +40,10 @@ if !(GVAR(AdvRhythm)) then {
     _patient setVariable [QGVAR(asystole), 1, true];
     _asystole = _patient getVariable [QGVAR(asystole), 1];
     } else {
-    if (_bloodLoss <= 3.6) then {
+    if (_bloodLoss > 3.6) then {
+        _patient setVariable [QGVAR(asystole), 1, true];
+        _asystole = _patient getVariable [QGVAR(asystole), 1];
+    } else {
         _patient setVariable [QGVAR(asystole), 2, true];
         _asystole = _patient getVariable [QGVAR(asystole), 2];
     };
@@ -72,28 +75,28 @@ switch (_reviveObject) do {
         if (GVAR(enable_CPR_Chances)) then {
             switch (_medic getVariable ["ace_medical_medicClass",0]) do {
                 case 0: {
-                    _chance = GVAR(CPR_Chance_Default);
+                    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(CPR_MinChance_Default), GVAR(CPR_MaxChance_Default), true];
                 };
                 case 1: {
-                    _chance = GVAR(CPR_Chance_RegularMedic);
+                    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(CPR_MinChance_RegularMedic), GVAR(CPR_MaxChance_RegularMedic), true];
                 };
                 case 2: {
-                    _chance = GVAR(CPR_Chance_Doctor);
+                    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(CPR_MinChance_Doctor), GVAR(CPR_MaxChance_Doctor), true];
                 };
             };
         };
     };
     case "AED": {
         [_patient, "activity", "STR_ACE_Medical_Treatment_Activity_AED", [[_medic, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
-        _chance = GVAR(SuccesCh_AED);
+        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_MinChance), GVAR(AED_MaxChance), true];
     };
     case "AED-Station": {
         [_patient, "activity", "STR_ACE_Medical_Treatment_Activity_AEDS", [[_medic, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
-        _chance = GVAR(SuccesCh_AED);
+        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_MinChance), GVAR(AED_MaxChance), true];
     };
     case "AED-X": {
         [_patient, "activity", "STR_ACE_Medical_Treatment_Activity_AEDX", [[_medic, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
-        _chance = GVAR(SuccesCh_AED_X);
+        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_X_MinChance), GVAR(AED_X_MaxChance), true];
     };
 };
 

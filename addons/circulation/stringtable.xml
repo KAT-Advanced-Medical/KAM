@@ -1321,36 +1321,18 @@
             <Italian>%1 ha utilizzato un DAE-X</Italian>
             <Japanese>%1 はAED-Xを実行しました</Japanese>
         </Key>
-        <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED_X">
-            <English>Success chance for AED-X</English>
-            <Polish>Szansa na udaną defybrilację dla AED-X</Polish>
-            <German>Erfolgsrate für AED-X</German>
-            <Spanish>Posibilidad de éxito para AED-X</Spanish>
-            <Chinese>AED-X成功的機會</Chinese>
-            <Chinesesimp>AED-X成功的几率</Chinesesimp>
-            <Czech>Šance úspěchu pro AED-X</Czech>
-            <Korean>X-시리즈 AED 성공 확률</Korean>
-            <French>Chances de succès pour l'AED-X</French>
-            <Turkish>AED-X için başarı şansı</Turkish>
-            <Russian>Шанс на успех для AED-X</Russian>
-            <Italian>Probabilità di successo del DAE-X</Italian>
-            <Japanese>AED-Xの蘇生成功率</Japanese>
-        </Key>
-        <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED">
-            <English>Success chance for AED</English>
-            <Polish>Szansa na udaną defybrilację dla AED</Polish>
-            <German>Erfolgsrate für AED</German>
-            <Spanish>Posibilidad de éxito para AED</Spanish>
-            <Chinese>AED成功的機會</Chinese>
-            <Chinesesimp>AED成功的几率</Chinesesimp>
-            <Czech>Šance úspěchu pro AED</Czech>
-            <Korean>자동제세동기 성공 확률</Korean>
-            <French>Chances de succès pour l'AED</French>
-            <Turkish>AED için başarı şansı</Turkish>
-            <Russian>Шанс успеха для AED</Russian>
-            <Italian>Probabilità di successo del DAE</Italian>
-            <Japanese>AEDの蘇生成功率</Japanese>
-        </Key>
+        <Key ID="STR_KAT_circulation_AED_X_MaxChance">
+            <English>Max Success chance for AED-X</English>
+         </Key>
+         <Key ID="STR_KAT_circulation_AED_MaxChance">
+            <English>Max Success chance for AED</English>
+         </Key>
+         <Key ID="STR_KAT_circulation_AED_X_MinChance">
+            <English>Min Success chance for AED-X</English>
+         </Key>
+         <Key ID="STR_KAT_circulation_AED_MinChance">
+            <English>Min Success chance for AED</English>
+         </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED">
             <English>Allow AED</English>
             <Polish>Ograniczenie użycia AED</Polish>
@@ -1471,50 +1453,23 @@
             <Russian>Включить разные шансы СЛР для каждого медицинского уровня</Russian>
             <Japanese>医療レベルごとにCPRの成功率を変更する</Japanese>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DOCTOR">
-            <English>CPR Chance for Doctors</English>
-            <Polish>Szansa na udaną resuscytację dla doktorów</Polish>
-            <German>HLW Erfolgsrate für Doktoren</German>
-            <Spanish>Posibilidad de RCP para médicos</Spanish>
-            <Chinese>醫生的CPR機會</Chinese>
-            <Chinesesimp>医生的CPR几率</Chinesesimp>
-            <Czech>Šance resuscitace pro doktory</Czech>
-            <Korean>군의관 CPR 성공 확률</Korean>
-            <French>Chances de RCP pour les Docteurs</French>
-            <Turkish>Doktorlar için CPR Şansı</Turkish>
-            <Italian>Probabilità di RCP per i dottori</Italian>
-            <Russian>Шанс СЛР для врачей</Russian>
-            <Japanese>医師のCPR蘇生成功率</Japanese>
+        <Key ID="STR_KAT_circulation_CPR_MaxChance_Doctor">
+            <English>Max CPR Chance for Doctors</English>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_REGULARMEDIC">
-            <English>CPR Chance for Regular medics</English>
-            <Polish>Szansa na udaną resuscytację dla zwykłych medyków</Polish>
-            <German>HLW Erfolgsrate für normale Medics</German>
-            <Spanish>Posibilidad de RCP para médicos regulares</Spanish>
-            <Chinese>常規醫生的CPR機會</Chinese>
-            <Chinesesimp>军医的CPR几率</Chinesesimp>
-            <Czech>Šance resuscitace pro regulérní zdravotníky</Czech>
-            <Korean>의무병 CPR 성공 확률</Korean>
-            <French>Chances de RCP pour les médecins</French>
-            <Turkish>İlk yardım uzmanları için CPR Şansı</Turkish>
-            <Italian>Probabilità di RCP per i medici</Italian>
-            <Russian>Шанс СЛР для обычных медиков</Russian>
-            <Japanese>衛生兵のCPR蘇生成功率</Japanese>
+        <Key ID="STR_KAT_circulation_CPR_MaxChance_RegularMedic">
+            <English>Max CPR Chance for Regular medics</English>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DEFAULT">
-            <English>CPR Chance for Default</English>
-            <Polish>Szansa resuscytacji domyślnie</Polish>
-            <German>Standard HLW Erfolgsrate</German>
-            <Spanish>Posibilidad de RCP por incumplimiento</Spanish>
-            <Chinese>預設CPR機會</Chinese>
-            <Chinesesimp>预设CPR几率</Chinesesimp>
-            <Czech>Šance resuscitace pro základní</Czech>
-            <Korean>일반 전투병 CPR 성공 확률</Korean>
-            <French>Chances de RCP par défaut</French>
-            <Turkish>Varsayılan CPR Şansı</Turkish>
-            <Italian>Probabilità di RCP per default</Italian>
-            <Russian>Шанс СЛР по умолчанию</Russian>
-            <Japanese>デフォルトのCPR蘇生成功率</Japanese>
+        <Key ID="STR_KAT_circulation_CPR_MaxChance_Default">
+            <English>Max CPR Chance for Default</English>
+        </Key>
+         <Key ID="STR_KAT_circulation_CPR_MinChance_Doctor">
+            <English>Min CPR Chance for Doctors</English>
+        </Key>
+        <Key ID="STR_KAT_circulation_CPR_MinChance_RegularMedic">
+            <English>Min CPR Chance for Regular medics</English>
+        </Key>
+        <Key ID="STR_KAT_circulation_CPR_MinChance_Default">
+            <English>Min CPR Chance for Default</English>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -1740,6 +1695,19 @@
             <Italian>Controllando il ritmo</Italian>
             <Russian>Проверка ритма</Russian>
             <Japanese>心室細動を確認する</Japanese>
+        </Key>
+        <Key ID="STR_kat_circulation_SubCategory_Basic">
+            <English>Basic Settings</English>
+            <Polish>Podstawowe Ustawienia</Polish>
+        </Key>
+        <Key ID="STR_kat_circulation_SubCategory_AED">
+            <English>AED + AED-X Settings</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SubCategory_CPR">
+            <English>CPR Settings</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SubCategory_BloodDraw">
+            <English>Blood draw Settings</English>
         </Key>
     </Package>
 </Project>
