@@ -21,13 +21,12 @@ params ["_medic", "_patient"];
 private _ph = _patient getVariable [QGVAR(ph), 1500];
 private _output = LLSTRING(breath_stink);
 
-if (_ph > 750) then {
-    private _output = LLSTRING(breath_good);
-};
-
 if (_ph > 250) then {
-    private _output = LLSTRING(breath_mild);
+    _output = LLSTRING(breath_mild);
 };
 
+if (_ph > 750) then {
+    _output = LLSTRING(breath_good);
+};
 
 [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
