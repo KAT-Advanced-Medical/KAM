@@ -222,6 +222,7 @@
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
             <Japanese>軽減された</Japanese>
+            <Italian>Ostruzione mitigata.</Italian>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
@@ -1208,12 +1209,15 @@
         <Key ID="STR_kat_airway_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
+            <Italian>Impostazioni base</Italian>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_RecoveryPositionOverstretch">
             <English>Recovery position + Overstretch Settings</English>
+            <Italian>Impostazioni posizione laterale di sicurezza e stiramento</Italian>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
+            <Italian>Impostazione oggetti vie aeree.</Italian>
         </Key>
     </Package>
 </Project>
