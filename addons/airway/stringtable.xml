@@ -1192,5 +1192,15 @@
             <Italian>No occlusa</Italian>
             <Japanese>異物無し</Japanese>
         </Key>
+        <Key ID="STR_kat_airway_SubCategory_Basic">
+            <English>Basic Settings</English>
+            <Polish>Podstawowe Ustawienia</Polish>
+        </Key>
+        <Key ID="STR_kat_airway_SubCategory_RecoveryPositionOverstretch">
+            <English>Recovery position + Overstretch Settings</English>
+        </Key>
+        <Key ID="STR_kat_airway_SubCategory_Items">
+            <English>Airway items Settings</English>
+        </Key>
     </Package>
 </Project>

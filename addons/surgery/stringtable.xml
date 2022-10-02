@@ -286,5 +286,18 @@
         <Key ID="STR_kat_surgery_uncon_requieredForActions_DESC">
             <English>Whether or not is unconsciousness requiered to perform some surgery actions</English>
         </Key>
+        <Key ID="STR_kat_surgery_SubCategory_Basic">
+            <English>Basic Settings</English>
+            <Polish>Podstawowe Ustawienia</Polish>
+        </Key>
+        <Key ID="STR_kat_surgery_SubCategory_SurgicalActions">
+            <English>Surgical actions Settings</English>
+        </Key>
+        <Key ID="STR_kat_surgery_SubCategory_Fractures">
+            <English>Fractures Settings</English>
+        </Key>
+        <Key ID="STR_kat_surgery_SubCategory_Kidney">
+            <English>Kidney Settings</English>
+        </Key>
     </Package>
 </Project>

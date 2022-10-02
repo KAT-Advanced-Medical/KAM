@@ -3,7 +3,7 @@ PREP(applyIV);
 PREP(checkIV);
 PREP(getBloodLoss);
 PREP(getBloodVolumeChange);
-PREP(hasStableVitals)
+PREP(hasStableVitals);
 PREP(init);
 PREP(inspectBreath);
 PREP(inspectCatheter);

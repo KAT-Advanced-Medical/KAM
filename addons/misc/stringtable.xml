@@ -370,5 +370,9 @@
             <Japanese>[KAM WARNING] KAT-KAMの動作に悪影響を及ぼす可能性のある互換性のないアドオンが検出されました。KAT-KAM開発チームはこれらのアドオンをアンロードすることを強く推奨します: %1</Japanese>
             <French>[AVERTISSEMENT KAM] Un(des) addon(s) incompatible(s) pouvant affecter le fonctionnement correct de KAT ont été détectés. L'équipe de développement de KAT - Advanced Medical REWRITE recommande fortement de retirer ces addons : %1 </French>
         </Key>
+        <Key ID="STR_kat_misc_SubCategory_Basic">
+            <English>Basic Settings</English>
+            <Polish>Podstawowe Ustawienia</Polish>
+        </Key>
     </Package>
 </Project>
