@@ -13,6 +13,7 @@
             <Chinese>气道闭塞: </Chinese>
             <Japanese>気道閉塞:</Japanese>
             <Russian>Обструкция дыхательных путей:</Russian>
+            <Italian>Ostruzione delle vie aeree.</Italian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Occlusion">
             <English>Airway occlusion: </English>
@@ -26,6 +27,7 @@
             <Turkish>Hava yolu tıkanıklığı: </Turkish>
             <Japanese>気道異物:</Japanese>
             <Russian>Окклюзия дыхательных путей:</Russian>
+            <Italian>Occlusione delle vie aeree.</Italian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Pneumothorax">
             <English>Pneumothorax: </English>
@@ -39,6 +41,7 @@
             <Turkish>Pnömotoraks: </Turkish>
             <Japanese>気胸:</Japanese>
             <Russian>Пневмоторакс:</Russian>
+            <Italian>Pneumotorace</Italian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Hemopneumothorax">
             <English>Hemopneumothorax: </English>
@@ -52,6 +55,7 @@
             <Turkish>Hemopnömotoraks: </Turkish>
             <Japanese>血気胸:</Japanese>
             <Russian>Гемопневмоторакс:</Russian>
+            <Italian>Emopneumotorace</Italian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Tensionpneumothorax">
             <English>Tension pneumothorax: </English>
@@ -65,6 +69,7 @@
             <Turkish>Tansiyon pnömotoraks: </Turkish>
             <Japanese>緊張性気胸:</Japanese>
             <Russian>Напряженный пневмоторакс:</Russian>
+            <Italian>Pneumotorace iperteso</Italian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_SpO2Value">
             <English>SpO2 value: </English>
@@ -78,6 +83,7 @@
             <Turkish>SpO2 değeri: </Turkish>
             <Japanese>SpO2値:</Japanese>
             <Russian>Значение SpO2:</Russian>
+            <Italian>Valore di SpO2</Italian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_bloodGroup">
             <English>Blood group: </English>
@@ -91,6 +97,7 @@
             <Turkish>Kan grubu: </Turkish>
             <Japanese>血液型:</Japanese>
             <Russian>Группа крови:</Russian>
+            <Italian>Gruppo sanguigno</Italian>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_bloodVolume">
             <English>Blood volume: </English>
@@ -104,6 +111,7 @@
             <Turkish>Kan basıncı: </Turkish>
             <Japanese>血液量:</Japanese>
             <Russian>Объем крови:</Russian>
+            <Italian>Volume di sangue</Italian>
         </Key>
         <Key ID="STR_kat_zeus_manageAirway_Module_displayname">
             <English>Manage Airways</English>
@@ -117,6 +125,7 @@
             <Turkish>Hava Yollarını Yönet</Turkish>
             <Japanese>気道を管理する</Japanese>
             <Russian>Управление авиалиниями</Russian>
+            <Italian>Gestisci le vie aeree</Italian>
         </Key>
         <Key ID="STR_kat_zeus_bloodType_Module_displayname">
             <English>Change blood group / volume</English>
@@ -130,6 +139,7 @@
             <Turkish>Kan grubunu / hacmini değiştir</Turkish>
             <Japanese>血液型/容量を変更する</Japanese>
             <Russian>Изменить группу/объем крови</Russian>
+            <Italian>Cambia gruppo sanguigno e volume</Italian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_displayname">
             <English>Change shockable state</English>
@@ -143,6 +153,7 @@
             <Turkish>Şok edilebilir durumu değiştir</Turkish>
             <Japanese>ショック状態を変える</Japanese>
             <Russian>Изменить шоковое состояние</Russian>
+            <Italian>Cambia stato defibrillabile</Italian>
         </Key>
         <Key ID="STR_kat_zeus_checkmedical_Module_displayname">
             <English>Open unit medical menu</English>
@@ -156,6 +167,7 @@
             <Turkish>Ünite tıbbi menüsünü aç</Turkish>
             <Japanese>医療メニューを開く</Japanese>
             <Russian>Медицинское меню открытого блока</Russian>
+            <Italian>Apri il menu medico</Italian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_state">
             <English>State: </English>
@@ -169,6 +181,7 @@
             <Turkish>Belirtmek: </Turkish>
             <Japanese>状態:</Japanese>
             <Russian>Состояние:</Russian>
+            <Italian>Stato: </Italian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_shockable">
             <English>Shockable (VF/PVT)</English>
@@ -182,6 +195,7 @@
             <Turkish>Şok Edilebilir (VF/PVT)</Turkish>
             <Japanese>ショック可能(VF/PVT)</Japanese>
             <Russian>Шокирующий (VF/PVT)</Russian>
+            <Italian>Defibrillabile (VF/PVT)</Italian>
         </Key>
         <Key ID="STR_kat_zeus_shockablestate_Module_non_shockable">
             <English>non-shockable (Asystole)</English>
@@ -195,6 +209,7 @@
             <Turkish>şoklanamaz (Asistoli)</Turkish>
             <Japanese>ショック不可(心静止)</Japanese>
             <Russian>Без шока (асистолия)</Russian>
+            <Italian>Non defibrillabile (Asistolia)</Italian>
         </Key>
         <Key ID="STR_kat_zeus_NothingSelected">
             <English>Place on a unit.</English>
@@ -208,6 +223,7 @@
             <Turkish>Bir üniteye yerleştirin.</Turkish>
             <Japanese>ユニットに置きます。</Japanese>
             <Russian>Поместите на единицу.</Russian>
+            <Italian>Piazza su un'unità</Italian>
         </Key>
         <Key ID="STR_kat_zeus_OnlyInfantry">
             <English>Unit must be infantry.</English>
@@ -221,6 +237,7 @@
             <Turkish>Birim piyade olmalıdır.</Turkish>
             <Japanese>ユニットは歩兵でなければなりません。</Japanese>
             <Russian>Юнит должен быть пехотным.</Russian>
+            <Italian>L'unità deve essere di fanteria.</Italian>
         </Key>
         <Key ID="STR_kat_zeus_MustBeAlive">
             <English>Unit must be alive.</English>
@@ -234,6 +251,7 @@
             <Turkish>Birim canlı olmalı.</Turkish>
             <Japanese>ユニットは生きている必要があります。</Japanese>
             <Russian>Юнит должен быть жив.</Russian>
+            <Italian>L'unità deve essere viva</Italian>
         </Key>
         <Key ID="STR_kat_zeus_NotUnconscious">
             <English>Unit must be unconscious.</English>
@@ -247,6 +265,7 @@
             <Turkish>Ünite bilinçsiz olmalıdır.</Turkish>
             <Japanese>ユニットは意識を失っている必要があります。</Japanese>
             <Russian>Юнит должен быть без сознания.</Russian>
+            <Italian>L'unità deve essere viva.</Italian>
         </Key>
         <Key ID="STR_kat_zeus_sliderFormat13was23">
             <English>%1%3 (was %2%3)</English>

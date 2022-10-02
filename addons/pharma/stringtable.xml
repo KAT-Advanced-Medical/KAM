@@ -561,7 +561,7 @@
             <German>TXA verabreichen</German>
             <Polish>Wstrzyknij TXA</Polish>
             <French>Injecter Acide Tranexamique</French>
-            <Italian>Innietta TXA</Italian>
+            <Italian>Inietta TXA</Italian>
             <Spanish>Administrar TXA</Spanish>
             <Chinese>推动TXA</Chinese>
             <Chinesesimp>使用血栓素</Chinesesimp>
@@ -1114,11 +1114,13 @@
             <English>Medications Require IV/IO</English>
             <Japanese>薬液にIV/IO刺入を要求しますか</Japanese>
             <French>Les médicaments nécessitent une IV/IO</French>
+            <Italian>Le medicazioni richiedono un accesso IV/IO</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV_Medications_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone medications.\n If false, you can give them without it.</English>
             <Japanese>KATデフォルトではfalseです。trueの場合、薬液注射を行う前にIV/IOを刺入する必要があります。\nfalseの場合は薬品だけで投与可能になります。</Japanese>
             <French>Faux par défaut. Si vrai, il sera nécessaire d'insérer une IV/IO avant de pouvoir donner des médicaments à quelqu'un.\n Si faux, ils pourront être donnés sans</French>
+            <Italian>Falso nel default. Se vero/true, dovrai prima inserire un IV/IO per poter effettuare alcune medicazioni. \n Se falso, potrai dargliele senza IV/IO. </Italian>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -1212,72 +1214,95 @@
         </Key>
         <Key ID="STR_kat_pharma_flush_log">
             <English>%1 performed a saline flush on %2</English>
-        </Key>        
+            <Italian>%1 ha eseguito uno sciacquo salino su %2</Italian>
+        </Key>
         <Key ID="STR_kat_pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
+            <Italian>La IV del paziente è ostruita/bloccata.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_IVblock_clear">
             <English>Patient's IV is clear</English>
+            <Italian>La IV del paziente è pulita.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
+            <Italian>Il respiro del paziente è anormale e affannoso.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_breath_mild">
             <English>Patient's breath is slightly fruity</English>
+            <Italian>Il respiro del paziente è leggermente fruttato.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_breath_good">
             <English>Patient's breath is ok</English>
+            <Italian>Il respiro del paziente è ok.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
+            <Italian>Rene danneggiato/collassato.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Kidney_Action_DESC">
             <English>Enables kidney damage caused by overuse of saline</English>
+            <Italian>Abilita danni renali causati da un overdose di soluzione salina.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Block_Chance">
             <English>IV Block Chance</English>
+            <Italian>Possibilità di ostruzione della IV</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Block_Chance_DESC">
             <English>Chance of IV blockage due to medication pushes without saline flush</English>
+            <Italian>Possibilità di ostruzione della IV senza prima aver svolto uno sciacquo salino.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Max_Stack">
             <English>Maximum Fluid Bag Stack</English>
+            <Italian>Stack massimo della sacca per fluidi.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Max_Stack_DESC">
             <English>The maximum amount of fluid bags that can be stacked to increase IV flow rate</English>
+            <Italian>La quantità massima di sacche per fluidi che possono essere accorpate per aumentare la portata (flow rate) della  IV</Italian>
         </Key>
         <Key ID="STR_kat_pharma_EACA_Display">
             <English>EACA</English>
+            <Italian>EACA (Acido aminocaproico Epsilon)</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Take_EACA">
             <English>Push EACA</English>
+            <Italian>Utilizza EACA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_EACA_DescShort">
             <English>Encourages clot formation</English>
+            <Italian>Favorire la formazione di coaguli</Italian>
         </Key>
         <Key ID="STR_kat_pharma_EACA_DescUse">
             <English>Used to encourage and stabilize clots in a patient</English>
+            <Italian>Usato per stimolare e stabilizzare i coaguli in un paziente</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_aiEnabled">
             <English>Enable Advanced Medical for AI</English>
+            <Italian>Abilita Advanced Medical per l'IA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_aiEnabled_DESC">
             <English>Enables kidney actions and blood pressure PFHs for AI</English>
+            <Italian>Abilita le funzioni renali e la pressione sanguigna PFH per l'IA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Check_Breath">
             <English>Check breath</English>
+            <Italian>Controlla il respiro</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Inspect_Catheter">
             <English>Inspect Catheter</English>
+            <Italian>Ispeziona il catetere</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Saline_Flush">
             <English>Saline Flush</English>
+            <Italian>Risciaquo salino</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage">
             <English>IV Check limb damage</English>
+            <Italian>IV Controllare il danno agli arti</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage_DESC">
             <English>Whether or not you can apply the IV to the too damaged limb. In default, this is disabled.</English>
+            <Italian>Puoi o no applicare la flebo all'arto troppo danneggiato. Nel default, questo è disabilitato.</Italian>
         </Key>
     </Package>
 </Project>

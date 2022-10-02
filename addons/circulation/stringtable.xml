@@ -1572,7 +1572,7 @@
             <Korean>혈액 채혈 (500ml)</Korean>
             <French>Prélèvement de sang (500 ml) </French>
             <Turkish>Kan Al (500ml) </Turkish>
-            <Italian>Disegna sangue (500 ml) </Italian>
+            <Italian>Estrai sangue dal corpo (500 ml) </Italian>
             <Russian>Взять кровь (500 мл)</Russian>
             <Japanese>採血する (500ml)</Japanese>
         </Key>
@@ -1587,7 +1587,7 @@
             <Korean>혈액 채혈 (250ml)</Korean>
             <French>Prélèvement de sang (250 ml) </French>
             <Turkish>Kan Al (250ml) </Turkish>
-            <Italian>Disegna sangue (250 ml) </Italian>
+            <Italian>Estrai sangue dal corpo (250 ml) </Italian>
             <Russian>Взять кровь (250 мл)</Russian>
             <Japanese>採血する (250ml)</Japanese>
         </Key>
@@ -1647,7 +1647,7 @@
             <Korean>500ml 키트의 채혈 시간</Korean>
             <French>Temps de prélèvement pour le kit 500ml </French>
             <Turkish>500ml Kit için çizim süresi </Turkish>
-            <Italian>Tempo di disegno per Kit 500ml </Italian>
+            <Italian>Tempo per estrarre sangue dal corpo Kit 500ml </Italian>
             <Russian>Время нанесения для набора 500 мл</Russian>
             <Japanese>500mlキットの採血時間</Japanese>
         </Key>
@@ -1662,7 +1662,7 @@
             <Korean>250ml 키트의 채혈 시간</Korean>
             <French>Temps de prélèvement pour le kit 250ml </French>
             <Turkish>250ml Kit için çizim süresi </Turkish>
-            <Italian>Tempo di disegno per Kit 250ml </Italian>
+            <Italian>Tempo per estrarre sangue dal corpo Kit 250ml </Italian>
             <Russian>Время нанесения для набора 250 мл</Russian>
             <Japanese>250mlキットの採血時間</Japanese>
         </Key>
