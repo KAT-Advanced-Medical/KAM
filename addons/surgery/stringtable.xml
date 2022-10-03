@@ -63,241 +63,320 @@
         </Key>
         <Key ID="STR_kat_surgery_breath_check">
             <English>Patient's breath is harsh and metallic</English>
+            <Italian>Il respiro del paziente è aspro e metallico</Italian>
         </Key>
         <Key ID="STR_kat_surgery_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
+            <Italian>Il respiro del paziente è aspro e metallico</Italian>
         </Key>
         <Key ID="STR_kat_surgery_breath_mild">
             <English>Patient's breath is slightly fruity</English>
+            <Italian>Il respiro del paziente è leggermente fruttato</Italian>
         </Key>
         <Key ID="STR_kat_surgery_breath_good">
             <English>Patient's breath is ok</English>
+            <Italian>Il respiro del paziente è ok</Italian>
         </Key>
         <Key ID="STR_kat_surgery_dialysis">
             <English>Perform Dialysis</English>
+            <Italian>Eseguire la dialisi</Italian>
         </Key>
         <Key ID="STR_kat_surgery_perform">
             <English>Performing</English>
+            <Italian>Esecuzione</Italian>
         </Key>
         <Key ID="STR_kat_surgery_fracture_check">
             <English>Check Fracture</English>
+            <Italian>Controlla frattura</Italian>
         </Key>
         <Key ID="STR_kat_surgery_fracture_checking">
             <English>Checking</English>
+            <Italian>Controllando</Italian>
         </Key>
         <Key ID="STR_kat_surgery_fracture_closed">
             <English>Perform Closed Reduction</English>
+            <Italian>Esegui la riduzione chiusa</Italian>
         </Key>
         <Key ID="STR_kat_surgery_fracture_open">
             <English>Perform Open Reduction</English>
+            <Italian>Esegui la riduzione aperta</Italian>
         </Key>
         <Key ID="STR_kat_surgery_fracture_log">
             <English>%1 present on %2</English>
+            <Italian>%1 presente su %2</Italian>
         </Key>
         <Key ID="STR_kat_surgery_surgery_log">
             <English>%1 %2 the fracture on the %3</English>
+            <Italian>%1 %2 la frattura sul %3</Italian>
         </Key>
         <Key ID="STR_kat_surgery_incision_log">
             <English>%1 made an incision on the %2</English>
+            <Italian>%1 ha fatto un'incisione su %2</Italian>
         </Key>
         <Key ID="STR_kat_surgery_dialysis_log">
             <English>%1 performed dialysis</English>
+            <Italian>%1 ha eseguito la dialisi</Italian>
         </Key>
         <Key ID="STR_kat_surgery_fracture_fail">
             <English>Surgical Action Failed</English>
+            <Italian>Operazione chirurgica fallita</Italian>
         </Key>
         <Key ID="STR_kat_surgery_debridement_fail">
             <English>Wound Dressing Failed</English>
+            <Italian>Medicazione delle ferite non riuscita</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_displayName">
             <English>Scalpel</English>
+            <Italian>Bisturi</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_DescShort">
             <English>Create incisions and debrides wounds</English>
+            <Italian>Crea incisioni e sbriglia le ferite</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_DescUse">
             <English>Used for creating incisions and debriding wounds</English>
+            <Italian>Usato per creare incisioni e sbrigliare ferite</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_Use">
             <English>Perform Incision</English>
+            <Italian>Esegui incisione</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_displayName">
             <English>Retractor</English>
+            <Italian>Divaricatore</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_DescShort">
             <English>Wound Expander</English>
+            <Italian>Espansore della ferita</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_DescUse">
             <English>Used to expand and expose fractures</English>
+            <Italian>Usato per espandere ed esporre fratture</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_Use">
             <English>Expose Fracture</English>
+            <Italian>Esponi la frattura</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_Action">
             <English>Exposing</English>
+            <Italian>Esponendo</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_displayName">
             <English>Clamp</English>
+            <Italian>Clampando</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_DescShort">
             <English>Fracture Clamp</English>
+            <Italian>Clamp per frattura</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_DescUse">
             <English>Used to clamp comminuted fractures</English>
+            <Italian>Usato per bloccare le fratture pluriframmentarie</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_Use">
             <English>Clamp Fracture</English>
+            <Italian>Clampa la frattura</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_Action">
             <English>Clamping</English>
+            <Italian>Clampando</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Irrigate_Use">
             <English>Irrigate Wound</English>
+            <Italian>Lava e pulisci la ferita</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Irrigate_Action">
             <English>Irrigating</English>
+            <Italian>Lavando e pulendo</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Plate_DescShort">
             <English>Bone Plate</English>
+            <Italian>Piastre ossee</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Plate_DescUse">
             <English>Used to complete all complex fracture types</English>
+            <Italian>Utilizzato per risolvere tutti i tipi di fratture complesse</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Debride_Use">
             <English>Debride Wounds</English>
+            <Italian>Raschia le ferite</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Debride_Action">
             <English>Debriding</English>
+            <Italian>Raschiando</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_DescShort">
             <English>Dressing vacuum</English>
+            <Italian>Sottovuoto per medicazione</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_DescUse">
             <English>Used to completely dress and seal wounds</English>
+            <Italian>Usato per coprire e sigillare completamente le ferite</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_Use">
             <English>Apply NPWT Dressing</English>
+            <Italian>Applicare la medicazione terapia a pressione negativa (NPWT)</Italian>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_Action">
             <English>Applying</English>
+            <Italian>Applicando</Italian>
         </Key>
         <Key ID="STR_kat_surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>
+            <Italian>Danno/insufficienza renale</Italian>
         </Key>
         <Key ID="STR_kat_surgery_KIDNEY_ACTION_DESC">
             <English>Enables kidney damage caused by overuse of saline</English>
+            <Italian>Consente danni renali causati da un uso eccessivo di soluzione salina</Italian>
         </Key>
         <Key ID="STR_kat_surgery_DIALYSIS_TIMER">
             <English>Time to perform dialysis</English>
+            <Italian>Tempo necessario per eseguire la dialisi</Italian>
         </Key>
         <Key ID="STR_kat_surgery_ADVANCED_FRACTURE">
             <English>Enables advanced fractures</English>
+            <Italian>Abilita fratture avanzate</Italian>
         </Key>
         <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_CHANCE">
             <English>Simple fracture chance</English>
+            <Italian>Possibilità di frattura semplice</Italian>
         </Key>
         <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for simple fractures. Also sets the chance for complex fractures (60% Simple = 40% Complex)</English>
+            <Italian>Imposta la possibilità di fratture semplici. Imposta anche la possibilità di fratture complesse (60% semplice = 40% complesso)</Italian>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
+            <Italian>Possibilità di frattura composta</Italian>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for compound fractures. Also sets the chance for comminuted fractures (60% Compound = 40% Comminuted)</English>
+            <Italian>Imposta la possibilità di fratture composte. Imposta anche la possibilità di fratture comminute (60% composto = 40% sminuzzato)</Italian>
         </Key>
         <Key ID="STR_kat_surgery_ETOMIDATE_TIMER">
             <English>Etomidate cycle timer</English>
+            <Italian>Timer ciclo Etomidato</Italian>
         </Key>
         <Key ID="STR_kat_surgery_ETOMIDATE_TIMER_DESC">
             <English>Determines how long each dose of etomidate stays in a patient</English>
+            <Italian>Determina per quanto tempo ciascuna dose di etomidato rimane in un paziente</Italian>
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_TIMER">
             <English>Time to perform closed reductions</English>
+            <Italian>Tempo per eseguire riduzioni chiuse</Italian>
         </Key>
         <Key ID="STR_kat_surgery_OPEN_TIMER">
             <English>Time to perform open reductions</English>
+            <Italian>Tempo per eseguire riduzioni aperte</Italian>
         </Key>
         <Key ID="STR_kat_surgery_SURGICAL_TIMER">
             <English>Time to perform surgical actions</English>
+            <Italian>Tempo per eseguire azioni chirurgiche</Italian>
         </Key>
         <Key ID="STR_kat_surgery_INCISION_TIMER">
             <English>Time to perform incisions</English>
+            <Italian>Tempo per eseguire le incisioni</Italian>
         </Key>
         <Key ID="STR_kat_surgery_BREATH_CHECK_TIME">
             <English>Time to perform breath check</English>
+            <Italian>Tempo per eseguire il controllo del respiro</Italian>
         </Key>
         <Key ID="STR_kat_surgery_INTERMEDIATE_TIMER">
             <English>Time to perform intermediate actions</English>
+            <Italian>Tempo per eseguire azioni intermedie</Italian>
         </Key>
         <Key ID="STR_kat_surgery_INTERMEDIATE_TIMER_DESC">
             <English>Sets how long it takes to perform intermediate surgical actions such as exposing and irrigation</English>
+            <Italian>Imposta il tempo necessario per eseguire azioni chirurgiche intermedie come l'esposizione ed il lavaggio/pulizia </Italian>
         </Key>
         <Key ID="STR_kat_surgery_DEBRIDE_TIMER">
             <English>Time to debride a patient</English>
+            <Italian>Tempo per sbrigliare un paziente</Italian>
         </Key>
         <Key ID="STR_kat_surgery_NPWT_TIMER">
             <English>Time to apply an NPWT dressing</English>
+            <Italian>Tempo per applicare una medicazione di terapia a pressione negativa (NPWT)</Italian>
         </Key>
         <Key ID="STR_kat_surgery_FRACTURE_CHECK_TIMER">
             <English>Fracture check timer</English>
+            <Italian>Timer per il controllo delle fratture</Italian>
         </Key>
         <Key ID="STR_kat_surgery_FRACTURE_CHECK_MEDLEVEL">
             <English>Medical level required for someone to check fracture</English>
+            <Italian>Livello medico richiesto a qualcuno per controllare la frattura</Italian>
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_REDUCTION_MEDLEVEL">
             <English>Medical level required for closed reduction</English>
+            <Italian>Livello medico richiesto per la riduzione chiusa</Italian>
         </Key>
         <Key ID="STR_kat_surgery_SURGICAL_ACTION_MEDLEVEL">
             <English>Medical level required for Surgical action</English>
+            <Italian>Livello medico richiesto per l'azione chirurgica</Italian>
         </Key>
         <Key ID="STR_kat_surgery_BREATH_CHECK_MEDLEVEL">
             <English>Medical level required for Breath check</English>
+            <Italian>Livello medico richiesto per il controllo del respiro</Italian>
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_LOCATION">
             <English>Closed reduction location</English>
+            <Italian>Luogo di riduzione chiusa</Italian>
         </Key>
         <Key ID="STR_kat_surgery_SURGICAL_LOCATION">
             <English>Open reduction/Surgical location</English>
+            <Italian>Apri localizzazione chirurgica/riduzione aperta</Italian>
         </Key>
         <Key ID="STR_kat_surgery_SETTING_SELF_CHECKFRACTURE">
             <English>Allow self check fracture</English>
+            <Italian>Consenti autodiagnosi frattura </Italian>
         </Key>
         <Key ID="STR_kat_surgery_EXPOSED">
             <English>exposed</English>
+            <Italian>Esposta</Italian>
         </Key>
         <Key ID="STR_kat_surgery_IRRIGATED">
             <English>irrigated</English>
+            <Italian>Pulita e lavata</Italian>
         </Key>
         <Key ID="STR_kat_surgery_CLAMPED">
             <English>clamped</English>
+            <Italian>Clampata</Italian>
         </Key>
         <Key ID="STR_kat_surgery_COMMINUTED_FRACTURE">
             <English>Comminuted Fracture</English>
+            <Italian>Frattura pluriframmentaria</Italian>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE">
             <English>Compound Fracture</English>
+            <Italian>Frattura composta</Italian>
         </Key>
         <Key ID="STR_kat_surgery_SIMPLE_FRACTURE">
             <English>Simple Fracture</English>
+            <Italian>Frattura semplice</Italian>
         </Key>
         <Key ID="STR_kat_surgery_uncon_requieredForActions">
             <English>Unconsciouness Requierement</English>
+            <Italian>Requisito di incoscienza</Italian>
         </Key>
         <Key ID="STR_kat_surgery_uncon_requieredForActions_DESC">
             <English>Whether or not is unconsciousness requiered to perform some surgery actions</English>
+            <Italian>Decidere se l'incoscienza sia richiesta o meno per eseguire alcune azioni chirurgiche</Italian>
         </Key>
         <Key ID="STR_kat_surgery_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
+            <Italian>Impostazioni di base</Italian>
         </Key>
         <Key ID="STR_kat_surgery_SubCategory_SurgicalActions">
             <English>Surgical actions Settings</English>
+            <Italian>Impostazioni delle azioni chirurgiche</Italian>
         </Key>
         <Key ID="STR_kat_surgery_SubCategory_Fractures">
             <English>Fractures Settings</English>
+            <Italian>Impostazioni fratture</Italian>
         </Key>
         <Key ID="STR_kat_surgery_SubCategory_Kidney">
             <English>Kidney Settings</English>
+            <Italian>Impostazioni renali</Italian>
         </Key>
     </Package>
 </Project>
