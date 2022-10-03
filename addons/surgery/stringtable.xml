@@ -193,10 +193,10 @@
         <Key ID="STR_kat_surgery_ADVANCED_FRACTURE">
             <English>Enables advanced fractures</English>
         </Key>
-        <Key ID="STR_kat_surgery_SIMPLE_FRACTURE">
+        <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_CHANCE">
             <English>Simple fracture chance</English>
         </Key>
-        <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_DESC">
+        <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for simple fractures. Also sets the chance for complex fractures (60% Simple = 40% Complex)</English>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
