@@ -376,6 +376,7 @@
         <Key ID="STR_kat_misc_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
+            <Italian>Impostazioni di base</Italian>
         </Key>
     </Package>
 </Project>
