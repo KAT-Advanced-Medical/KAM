@@ -1174,10 +1174,7 @@
         <Key ID="STR_kat_breathing_SubCategory_ThoraxInjuries">
             <English>Thorax injuries Settings</English>
         </Key>
-        <Key ID="STR_kat_breathing_SubCategory_ThoraxInjuries">
-            <English>Thorax injuries Settings</English>
-        </Key>
-        <Key ID="STR_kat_breathing_SubCategory_ThoraxInjuries">
+        <Key ID="STR_kat_breathing_SubCategory_Cyanosis">
             <English>Cyanosis Settings</English>
         </Key>
     </Package>
