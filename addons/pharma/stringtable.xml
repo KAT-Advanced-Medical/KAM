@@ -1435,10 +1435,6 @@
             <English>Encourages clot formation</English>
             <Italian>Favorire la formazione di coaguli</Italian>
         </Key>
-        <Key ID="STR_kat_pharma_EACA_DescUse">
-            <English>Used to encourage and stabilize clots in a patient</English>
-            <Italian>Usato per stimolare e stabilizzare i coaguli in un paziente</Italian>
-        </Key>
         <Key ID="STR_kat_pharma_SETTING_aiEnabled">
             <English>Enable Advanced Medical for AI</English>
             <Italian>Abilita Advanced Medical per l'IA</Italian>
