@@ -1323,16 +1323,20 @@
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_MaxChance">
             <English>Max Success chance for AED-X</English>
-         </Key>
-         <Key ID="STR_KAT_circulation_AED_MaxChance">
+            <Italian>Massima probabilità di successo per DAE-X</Italian>
+        </Key>
+        <Key ID="STR_KAT_circulation_AED_MaxChance">
             <English>Max Success chance for AED</English>
-         </Key>
-         <Key ID="STR_KAT_circulation_AED_X_MinChance">
+            <Italian>Massima probabilità di successo per DAE</Italian>
+        </Key>
+        <Key ID="STR_KAT_circulation_AED_X_MinChance">
             <English>Min Success chance for AED-X</English>
-         </Key>
-         <Key ID="STR_KAT_circulation_AED_MinChance">
+            <Italian>Minima probabilità di successo per DAE-X</Italian>
+        </Key>
+        <Key ID="STR_KAT_circulation_AED_MinChance">
             <English>Min Success chance for AED</English>
-         </Key>
+            <Italian>Minima probabilità di successo per DAE</Italian>
+        </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED">
             <English>Allow AED</English>
             <Polish>Ograniczenie użycia AED</Polish>
@@ -1455,21 +1459,27 @@
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_Doctor">
             <English>Max CPR Chance for Doctors</English>
+            <Italian>Massima probabilità RCP per i dottori.</Italian>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
+            <Italian>Massima probabilità RCP per i medici.</Italian>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
+            <Italian>Massima probabilità RCP per i default.</Italian>
         </Key>
-         <Key ID="STR_KAT_circulation_CPR_MinChance_Doctor">
+        <Key ID="STR_KAT_circulation_CPR_MinChance_Doctor">
             <English>Min CPR Chance for Doctors</English>
+            <Italian>Minima probabilità RCP per i dottori.</Italian>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
+            <Italian>Minima probabilità RCP per i medici.</Italian>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_Default">
             <English>Min CPR Chance for Default</English>
+            <Italian>Minima probabilità RCP per i default.</Italian>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -1527,7 +1537,7 @@
             <Korean>혈액 채혈 (500ml)</Korean>
             <French>Prélèvement de sang (500 ml) </French>
             <Turkish>Kan Al (500ml) </Turkish>
-            <Italian>Disegna sangue (500 ml) </Italian>
+            <Italian>Estrai sangue dal corpo (500 ml) </Italian>
             <Russian>Взять кровь (500 мл)</Russian>
             <Japanese>採血する (500ml)</Japanese>
         </Key>
@@ -1542,7 +1552,7 @@
             <Korean>혈액 채혈 (250ml)</Korean>
             <French>Prélèvement de sang (250 ml) </French>
             <Turkish>Kan Al (250ml) </Turkish>
-            <Italian>Disegna sangue (250 ml) </Italian>
+            <Italian>Estrai sangue dal corpo (250 ml) </Italian>
             <Russian>Взять кровь (250 мл)</Russian>
             <Japanese>採血する (250ml)</Japanese>
         </Key>
@@ -1602,7 +1612,7 @@
             <Korean>500ml 키트의 채혈 시간</Korean>
             <French>Temps de prélèvement pour le kit 500ml </French>
             <Turkish>500ml Kit için çizim süresi </Turkish>
-            <Italian>Tempo di disegno per Kit 500ml </Italian>
+            <Italian>Tempo per estrarre sangue dal corpo Kit 500ml </Italian>
             <Russian>Время нанесения для набора 500 мл</Russian>
             <Japanese>500mlキットの採血時間</Japanese>
         </Key>
@@ -1617,7 +1627,7 @@
             <Korean>250ml 키트의 채혈 시간</Korean>
             <French>Temps de prélèvement pour le kit 250ml </French>
             <Turkish>250ml Kit için çizim süresi </Turkish>
-            <Italian>Tempo di disegno per Kit 250ml </Italian>
+            <Italian>Tempo per estrarre sangue dal corpo Kit 250ml </Italian>
             <Russian>Время нанесения для набора 250 мл</Russian>
             <Japanese>250mlキットの採血時間</Japanese>
         </Key>
@@ -1699,15 +1709,19 @@
         <Key ID="STR_kat_circulation_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
+            <Italian>Impostazioni base</Italian>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_AED">
             <English>AED + AED-X Settings</English>
+            <Italian>Impostazioni DAE e DAE-X</Italian>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_CPR">
             <English>CPR Settings</English>
+            <Italian>Impostazioni RCP</Italian>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
+            <Italian>Impostazioni prelievo sangue</Italian>
         </Key>
     </Package>
 </Project>

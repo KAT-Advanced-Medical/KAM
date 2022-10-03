@@ -4,6 +4,7 @@
         <Key ID="STR_kat_pharma_medLvl_ApplyIV">
             <English>Allow applying IV</English>
             <Polish>Poziom wyszkolenia medycznego dla IV</Polish>
+            <Italian>Permetti utilizzo IV</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_ApplyIV_Desc">
             <English>Changes what medical level is required to set IVs</English>
@@ -23,10 +24,12 @@
         <Key ID="STR_kat_pharma_medLvl_ApplyIO">
             <English>Allow applying IO</English>
             <Polish>Poziom wyszkolenia medycznego dla IO</Polish>
+            <Italian>Permetti utilizzo IO</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_ApplyIO_Desc">
             <English>Changes what medical level is required to set IOs</English>
             <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia IO</Polish>
+            <Italian>Cambia quale livello medico è richiesto per posizionare la IO.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP_ENABLE">
             <English>Enables IV/IO drop times</English>
@@ -408,7 +411,7 @@
             <German>TXA verabreichen</German>
             <Polish>Wstrzyknij TXA</Polish>
             <French>Injecter Acide Tranexamique</French>
-            <Italian>Innietta TXA</Italian>
+            <Italian>Inietta TXA</Italian>
             <Spanish>Administrar TXA</Spanish>
             <Chinese>推动TXA</Chinese>
             <Chinesesimp>使用血栓素</Chinesesimp>
@@ -901,11 +904,13 @@
             <English>Medications Require IV/IO</English>
             <Japanese>薬液にIV/IO刺入を要求しますか</Japanese>
             <French>Les médicaments nécessitent une IV/IO</French>
+            <Italian>Le medicazioni richiedono un accesso IV/IO</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV_Medications_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone medications.\n If false, you can give them without it.</English>
             <Japanese>KATデフォルトではfalseです。trueの場合、薬液注射を行う前にIV/IOを刺入する必要があります。\nfalseの場合は薬品だけで投与可能になります。</Japanese>
             <French>Faux par défaut. Si vrai, il sera nécessaire d'insérer une IV/IO avant de pouvoir donner des médicaments à quelqu'un.\n Si faux, ils pourront être donnés sans</French>
+            <Italian>Falso nel default. Se vero/true, dovrai prima inserire un IV/IO per poter effettuare alcune medicazioni. \n Se falso, potrai dargliele senza IV/IO. </Italian>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -1000,69 +1005,91 @@
         <Key ID="STR_KAT_pharma_treatmentTime_Reorientation">
             <English>Treatment time for reorientation</English>
             <Polish>Czas cucenia</Polish>
+            <Italian>Tempo di trattamento per riorientamento.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_displayName">
             <English>Etomidate</English>
+            <Italian>Etomidato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_DescShort">
             <English>General Anesthetic</English>
+            <Italian>Anestesia generale</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_DescUse">
             <English>Used as a general anesthetic for surgical procedures</English>
+            <Italian>Usato come anestetico generale per procedure chirurgiche</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_Use">
             <English>Push Etomidate</English>
+            <Italian>Inietta Etomidato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_displayName">
             <English>Lorazepam</English>
+            <Italian>Lorazepam</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_DescShort">
             <English>Sedtation medication</English>
+            <Italian>Farmaco sedativo</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_DescUse">
             <English>Used to sedate patients and prepare them for surgery</English>
+            <Italian>Usato per sedare i pazienti e prepararli per un intervento chirurgico</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_Use">
             <English>Push Lorazepam</English>
+            <Italian>Inietta Lorazepam</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_displayName">
             <English>Flumazenil</English>
+            <Italian>Flumazenil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_DescShort">
             <English>Counter to Lorzaepam</English>
+            <Italian>Antagonista del Lorazepam</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_DescUse">
             <English>Used to bring patients out of sedation</English>
+            <Italian>Usato per portare i pazienti fuori dalla sedazione</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_Use">
             <English>Push Flumazenil</English>
+            <Italian>Inietta Flumazenil</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Ketamine">
             <English>Push Ketamine</English>
+            <Italian>Inietta Ketamina</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Ketamine_Box_Display">
             <English>Ketamine</English>
+            <Italian>Ketamina</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Ketamine_DescShort">
             <English>Suppress pain</English>
+            <Italian>Sopprime il dolore</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Fentanyl">
             <English>Push Fentanyl</English>
+            <Italian>Inietta Fentanil</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Fentanyl_Box_Display">
             <English>Fentanyl</English>
+            <Italian>Fentanil</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Fentanyl_DescShort">
             <English>Suppress pain</English>
+            <Italian>Sopprime il dolore</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
+            <Italian>Inietta</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Nalbuphine_Box_Display">
             <English>Nalbuphine</English>
+            <Italian>Spingi Nalbufina (Nubain)</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Nalbuphine_DescShort">
             <English>Suppress pain</English>
+            <Italian>Sopprime il dolore</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Activity_usedItem">
             <English>%1 used %2</English>
@@ -1084,281 +1111,357 @@
         <Key ID="STR_KAT_pharma_SETTING_reorientationChance">
             <English>Chance for succesful reorientation</English>
             <Polish>Szansa na pomyślne ocucenie</Polish>
+            <Italian>Possibilità di un riorientamento riuscito</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_carbonateChance">
             <English>Chance for succesful Carbonate use</English>
             <Polish>Szansa na pomyślne użycie soli trzeźwiących</Polish>
+            <Italian>Possibilità di utilizzare con successo il carbonato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
             <Polish>Poziom wyszkolenia medycznego dla soli trzeźwiących</Polish>
+            <Italian>Consenti di usare il carbonato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>
             <Polish>Czas na użycie soli trzeźwiących</Polish>
+            <Italian>Tempo di trattamento per il carbonato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Naloxone">
             <English>Medical level required for Naloxone</English>
             <Polish>Poziom wyszkolenia medycznego dla Naloksonu</Polish>
+            <Italian>Livello medico richiesto per Naloxone</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Naloxone">
             <English>Treatment time for Naloxone</English>
             <Polish>Czas na wstrzyknięcie Naloksonu</Polish>
+            <Italian>Tempo di trattamento per il naloxone</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
             <Polish>Poziom wyszkolenia medycznego dla TXA</Polish>
+            <Italian>Livello medico richiesto per TXA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_TXA">
             <English>Treatment time for TXA</English>
             <Polish>Czas na wstrzyknięcie TXA</Polish>
+            <Italian>Tempo di trattamento per TXA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Norepinephrine">
             <English>Medical level required for Norepinephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
+            <Italian>Livello medico richiesto per la noradrenalina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Norepinephrine">
             <English>Treatment time for Norepinephrine</English>
             <Polish>Czas na wstrzyknięcie Noradrenaliny</Polish>
+            <Italian>Tempo di trattamento per la noradrenalina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Phenylephrine">
             <English>Medical level required for Phenylephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Fenylefryny</Polish>
+            <Italian>Livello medico richiesto per la fenilefrina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Phenylephrine">
             <English>Treatment time for Phenylephrine</English>
             <Polish>Czas na wstrzyknięcie Fenylefryny</Polish>
+            <Italian>Tempo di trattamento per la fenilefrina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nitroglycerin">
             <English>Medical level required for Nitroglycerin</English>
             <Polish>Poziom wyszkolenia medycznego dla Nitrogliceryny</Polish>
+            <Italian>Livello medico richiesto per la nitroglicerina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nitroglycerin">
             <English>Treatment time for Nitroglycerin</English>
             <Polish>Czas na wstrzyknięcie Nitrogliceryny</Polish>
+            <Italian>Tempo di trattamento per la nitroglicerina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Amiodarone">
             <English>Medical level required for Amiodarone</English>
             <Polish>Poziom wyszkolenia medycznego dla Amiodaronu</Polish>
+            <Italian>Livello medico richiesto per Amiodarone</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Amiodarone">
             <English>Treatment time for Amiodarone</English>
             <Polish>Czas na wstrzyknięcie Amiodaronu</Polish>
+            <Italian>Tempo di trattamento per Amiodarone</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Lidocaine">
             <English>Medical level required for Lidocaine</English>
             <Polish>Poziom wyszkolenia medycznego dla Lidokainy</Polish>
+            <Italian>Livello medico richiesto per la lidocaina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Lidocaine">
             <English>Treatment time for Lidocaine</English>
             <Polish>Czas na wstrzyknięcie Lidokainy</Polish>
+            <Italian>Tempo di trattamento per la lidocaina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Atropine">
             <English>Medical level required for Atropine</English>
             <Polish>Poziom wyszkolenia medycznego dla Atropiny</Polish>
+            <Italian>Livello medico richiesto per l'atropina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Atropine">
             <English>Treatment time for Atropine</English>
             <Polish>Czas na wstrzyknięcie Atropiny</Polish>
+            <Italian>Tempo di trattamento per l'atropina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_EACA">
             <English>Medical level required for EACA</English>
             <Polish>Poziom wyszkolenia medycznego dla EACA</Polish>
+            <Italian>Livello medico richiesto per EACA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_EACA">
             <English>Treatment time for EACA</English>
             <Polish>Czas na wstrzyknięcie EACA</Polish>
+            <Italian>Tempo di trattamento per EACA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Flumazenil">
             <English>Medical level required for Flumazenil</English>
+            <Italian>Livello medico richiesto per Flumazenil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Flumazenil">
             <English>Treatment time for Flumazenil</English>
             <Polish>Czas na wstrzyknięcie Flumazenilu</Polish>
+            <Italian>Tempo di trattamento per Flumazenil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Lorazepam">
             <English>Medical level required for Lorazepam</English>
+            <Italian>Livello medico richiesto per Lorazepam</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Lorazepam">
             <English>Treatment time for Lorazepam</English>
             <Polish>Czas na wstrzyknięcie Lorazepamu</Polish>
+            <Italian>Tempo di trattamento per Lorazepam</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Etomidate">
             <English>Medical level required for Etomidate</English>
+            <Italian>Livello medico richiesto per Etomidato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Etomidate">
             <English>Treatment time for Etomidate</English>
             <Polish>Czas na wstrzyknięcie Etomidatu</Polish>
+            <Italian>Tempo di trattamento per Etomidato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Ketamine">
             <English>Medical level required for Ketamine</English>
             <Polish>Poziom wyszkolenia medycznego dla Ketaminy</Polish>
+            <Italian>Livello medico richiesto per la ketamina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Ketamine">
             <English>Treatment time for Ketamine</English>
             <Polish>Czas na wstrzyknięcie Ketaminy</Polish>
+            <Italian>Tempo di trattamento per la ketamina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Fentanyl">
             <English>Medical level required for Fentanyl</English>
             <Polish>Poziom wyszkolenia medycznego dla Fentanylu</Polish>
+            <Italian>Livello medico richiesto per Fentanil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Fentanyl">
             <English>Treatment time for Fentanyl</English>
             <Polish>Czas na wstrzyknięcie Fentanylu</Polish>
+            <Italian>Tempo di trattamento per Fentanil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nalbuphine">
             <English>Medical level required for Nalbuphine</English>
             <Polish>Poziom wyszkolenia medycznego dla Nalbuphinu</Polish>
+            <Italian>Livello medico richiesto per nalbufina (nubain)</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nalbuphine">
             <English>Treatment time for Nalbuphine</English>
             <Polish>Czas na wstrzyknięcie Nalbuphinu</Polish>
+            <Italian>Tempo di trattamento per nalbufina (nubain)</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
+            <Italian>Impostazioni di base</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_ApplyIV">
             <English>IV Settings</English>
             <Polish>Ustawienia IV</Polish>
+            <Italian>Impostazioni IV</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_ApplyIO">
             <English>IO Settings</English>
             <Polish>Ustawienia IO</Polish>
+            <Italian>Impostazioni IO</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Reorientation">
             <English>Reorientation Settings</English>
             <Polish>Ustawienia Cucenia</Polish>
+            <Italian>Impostazioni di riorientamento</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Carbonate">
             <English>Carbonate Settings</English>
             <Polish>Ustawienia Soli Trzeźwiących</Polish>
+            <Italian>Impostazioni del carbonato d'ammonio</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Naloxone">
             <English>Naloxone Settings</English>
             <Polish>Ustawienia Naloksonu</Polish>
+            <Italian>Impostazioni del naloxone</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_TXA">
             <English>TXA Settings</English>
             <Polish>Ustawienia TXA</Polish>
+            <Italian>Impostazioni del TXA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Norepinephrine">
             <English>Norepinephrine Settings</English>
             <Polish>Ustawienia Noradrenaliny</Polish>
+            <Italian>Impostazioni della norepinefrina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Phenylephrine">
             <English>Phenylephrine Settings</English>
             <Polish>Ustawienia Fenylefryny</Polish>
+            <Italian>Impostazioni della fenilefrina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Nitroglycerin">
             <English>Nitroglycerin Settings</English>
             <Polish>Ustawienia Nitrogliceryny</Polish>
+            <Italian>Impostazioni della nitroglicerina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Amiodarone">
             <English>Amiodarone Settings</English>
             <Polish>Ustawienia Amiodarone</Polish>
+            <Italian>Impostazion dell'amiodarone</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Lidocaine">
             <English>Lidocaine Settings</English>
             <Polish>Ustawienia Lidokainy</Polish>
+            <Italian>Impostazioni della lidocaina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Atropine">
             <English>Atropine Settings</English>
             <Polish>Ustawienia Atropiny</Polish>
+            <Italian>Impostazioni dell'atropina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_EACA">
             <English>EACA Settings</English>
             <Polish>Ustawienia EACA</Polish>
+            <Italian>Impostazioni EACA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Ketamine">
             <English>Ketamine Settings</English>
             <Polish>Ustawienia Ketaminy</Polish>
+            <Italian>Impostazioni della ketamina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Fentanyl">
             <English>Fentanyl Settings</English>
             <Polish>Ustawienia Fentanylu</Polish>
+            <Italian>Impostazioni del fentanil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Nalbuphine">
             <English>Nalbuphine Settings</English>
             <Polish>Ustawienia Nalbuphinu</Polish>
+            <Italian>Impostazione della nalbufina (nubain)</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Flumazenil">
             <English>Flumazenil Settings</English>
             <Polish>Ustawienia Flumazenilu</Polish>
+            <Italian>Impostazioni del flumazenil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Lorazepam">
             <English>Lorazepam Settings</English>
             <Polish>Ustawienia Lorazepamu</Polish>
+            <Italian>Impostazioni del lorazepam</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Etomidate">
             <English>Etomidate Settings</English>
             <Polish>Ustawienia Etomidatu</Polish>
+            <Italian>Impostazioni del etomidato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_flush_log">
             <English>%1 performed a saline flush on %2</English>
-        </Key>        
+            <Italian>%1 ha eseguito uno sciacquo salino su %2</Italian>
+        </Key>
         <Key ID="STR_kat_pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
+            <Italian>La IV del paziente è ostruita/bloccata.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_IVblock_clear">
             <English>Patient's IV is clear</English>
+            <Italian>La IV del paziente è pulita.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
+            <Italian>Il respiro del paziente è anormale e affannoso.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_breath_mild">
             <English>Patient's breath is slightly fruity</English>
+            <Italian>Il respiro del paziente è leggermente fruttato.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_breath_good">
             <English>Patient's breath is ok</English>
+            <Italian>Il respiro del paziente è ok.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
+            <Italian>Rene danneggiato/collassato.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Kidney_Action_DESC">
             <English>Enables kidney damage caused by overuse of saline</English>
+            <Italian>Abilita danni renali causati da un overdose di soluzione salina.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Block_Chance">
             <English>IV Block Chance</English>
+            <Italian>Possibilità di ostruzione della IV</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Block_Chance_DESC">
             <English>Chance of IV blockage due to medication pushes without saline flush</English>
+            <Italian>Possibilità di ostruzione della IV senza prima aver svolto uno sciacquo salino.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Max_Stack">
             <English>Maximum Fluid Bag Stack</English>
+            <Italian>Stack massimo della sacca per fluidi.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Max_Stack_DESC">
             <English>The maximum amount of fluid bags that can be stacked to increase IV flow rate</English>
+            <Italian>La quantità massima di sacche per fluidi che possono essere accorpate per aumentare la portata (flow rate) della  IV</Italian>
         </Key>
         <Key ID="STR_kat_pharma_EACA_Display">
             <English>EACA</English>
+            <Italian>EACA (Acido aminocaproico Epsilon)</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Take_EACA">
             <English>Push EACA</English>
+            <Italian>Utilizza EACA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_EACA_DescShort">
             <English>Encourages clot formation</English>
+            <Italian>Favorire la formazione di coaguli</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_aiEnabled">
             <English>Enable Advanced Medical for AI</English>
+            <Italian>Abilita Advanced Medical per l'IA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_aiEnabled_DESC">
             <English>Enables kidney actions and blood pressure PFHs for AI</English>
+            <Italian>Abilita le funzioni renali e la pressione sanguigna PFH per l'IA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Check_Breath">
             <English>Check breath</English>
+            <Italian>Controlla il respiro</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Inspect_Catheter">
             <English>Inspect Catheter</English>
+            <Italian>Ispeziona il catetere</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Saline_Flush">
             <English>Saline Flush</English>
+            <Italian>Risciaquo salino</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage">
             <English>IV Check limb damage</English>
+            <Italian>IV Controllare il danno agli arti</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage_DESC">
             <English>Whether or not you can apply the IV to the too damaged limb. In default, this is disabled.</English>
+            <Italian>Puoi o no applicare la flebo all'arto troppo danneggiato. Nel default, questo è disabilitato.</Italian>
         </Key>
     </Package>
 </Project>

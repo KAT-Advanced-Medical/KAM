@@ -85,6 +85,7 @@
             <Korean>SpO2의 회복 배율</Korean>
             <French>Multiplicateur positif de la SpO2</French>
             <Polish>Dodatni mnożnik SpO2</Polish>
+            <Italian>Moltiplicatore positivo della SpO2</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyNegative">
             <English>SpO2 negative multiplier</English>
@@ -95,6 +96,7 @@
             <Korean>SpO2의 감소 배율</Korean>
             <French>Multiplicateur négatif de la SpO2</French>
             <Polish>Ujemny mnożnik SpO2</Polish>
+            <Italian>Moltiplicatore negativo della SpO2</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
@@ -105,6 +107,7 @@
             <Korean>심정지 중 SpO2 감소 활성화</Korean>
             <French>Autoriser la réduction de la SpO2 d’arrêt cardiaque</French>
             <Polish>Włącz utratę SpO2 w trakcie zatrzymania akcji serca</Polish>
+            <Italian>Autorizza la riduzione della SpO2 dell'arresto cardiaco.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_PerfusionMultiplier">
             <English>Perfusion multiplier</English>
@@ -113,6 +116,7 @@
             <Polish>Mnożnik persfuzji</Polish>
             <Japanese>かん流量の乗数</Japanese>
             <French>Multiplicateur de perfusion</French>
+            <Italian>Moltiplicatore della perfusione.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -500,6 +504,7 @@
             <Korean>체스트 씰로 자가치료 허용 여부</Korean>
             <French>Autoriser le pansement thoracique sur soi-même</French>
             <Polish>Pozwól na samo leczenie przy użyciu Chest Seala</Polish>
+            <Italian>Permetti automedicazione con Chest Seal.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
@@ -931,6 +936,7 @@
             <French>Montrer la duplication du pneumothorax</French>
             <Turkish>Pnömotoraks kopyasını göster</Turkish>
             <Polish>Pokaż duplikat odmy płucnej</Polish>
+            <Italian>Mostra la duplicazione del pneumotorace.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_showPneumothorax_dupe_DESC">
             <English>Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.</English>
@@ -942,6 +948,7 @@
             <French>Désactivé par défaut. Si activé, les unités avec des pneumothorax sous tension ou des hémopneumothorax auront également le pneumothorax affiché dans leur menu médical.</French>
             <Turkish>Varsayılan devre dışıdır. Etkinleştirilirse, tansiyon pnömotorakslı veya hemopnömotorakslı ünitelerde medikal menüde pnömotoraks yaralanması da görüntülenir.</Turkish>
             <Polish>Domyślnie wyłączone. Jeśli włączone, jednostki z odmą prężną lub krwiakiem opłucnej będą również wyświetlać odmę płucną w menu medycznym.</Polish>
+            <Italian>In default è disabilitato. Se attivato, le unità con pneumotorace iperteso o emopneumotorace avranno questi segnati sul menu medico.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Name">
             <English>Check Cyanosis</English>
@@ -953,6 +960,7 @@
             <Korean>치아노제 확인</Korean>
             <French>Contrôler la cyanose</French>
             <Turkish>Siyanozu kontrol et</Turkish>
+            <Italian>Controlla la cianosi.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Progress">
             <English>Checking Cyanosis</English>
@@ -964,6 +972,7 @@
             <Korean>치아노제 확인 중</Korean>
             <French>Controle de la cyanose</French>
             <Turkish>Siyanoz kontrol ediliyor</Turkish>
+            <Italian>Controllando la cianosi.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Log">
             <English>Cyanosis Status: %1</English>
@@ -975,6 +984,7 @@
             <Korean>치아노제 상태: %1</Korean>
             <French>Statut de la cysnose: %1</French>
             <Turkish>Siyanoz durumu: %1</Turkish>
+            <Italian>Status della cianosi %1.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_N">
             <English>No Cyanosis</English>
@@ -986,6 +996,7 @@
             <Korean>치아노제 없음</Korean>
             <French>Aucune cyanose</French>
             <Turkish>Siyanoz yok</Turkish>
+            <Italian>Nessuna traccia di cianosi,</Italian>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Slight">
             <English>Slight Cyanosis</English>
@@ -997,6 +1008,7 @@
             <Korean>미미한 치아노제 증상</Korean>
             <French>Cyanose légère</French>
             <Turkish>Hafif Siyanoz</Turkish>
+            <Italian>Leggera cianosi.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosis</English>
@@ -1008,6 +1020,7 @@
             <Korean>가벼운 치아노제 증상</Korean>
             <French>Cyanose moyenne</French>
             <Turkish>Orta derece Siyanoz</Turkish>
+            <Italian>Moderata cianosi.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
             <English>Severe Cyanosis</English>
@@ -1019,6 +1032,7 @@
             <Korean>심각한 치아노제 증상</Korean>
             <French>Cyanose grave</French>
             <Turkish>Şiddetli Siyanoz</Turkish>
+            <Italian>Grave cianosi.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis">
             <English>Enable cyanosis diagnose</English>
@@ -1030,6 +1044,7 @@
             <Korean>치아노제 진단 사용</Korean>
             <French>Autoriser le diagnostique de la cyanose</French>
             <Turkish>Siyanoz tanısını etkinleştir</Turkish>
+            <Italian>Abilita la diagnosi della cianosi.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis_DESC">
             <English>Enables cyanosis diagnose</English>
@@ -1041,6 +1056,7 @@
             <Korean>치아노제(청색증)의 진단을 사용합니다</Korean>
             <French>Autorise le diagnostique de la cyanose</French>
             <Turkish>Siyanoz teşhisini etkinleştirir</Turkish>
+            <Italian>Abilita la diagnosi della cianosi.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -1052,6 +1068,7 @@
             <Korean>미미한 치아노제 증상 값</Korean>
             <French>Valeur de SpO2 de la cyanose légère</French>
             <Turkish>Hafif Siyanoz SpO2 değeri</Turkish>
+            <Italian>Valore di SpO2 della cianosi leggera.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue_DESC">
             <English>Slight cyanosis value - default 90 SpO2</English>
@@ -1063,6 +1080,7 @@
             <Korean>미미한 치아노제의 값입니다 - 기본값은 SpO2 90</Korean>
             <French>Valeur de la cyanose légère - 90 SpO2 par défaut</French>
             <Turkish>Hafif Siyanoz değeri - varsayılan 90 SpO2</Turkish>
+            <Italian>Valore di cianosi leggera - default SpO2 90 .</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue">
             <English>Mild cyanosis SpO2 value</English>
@@ -1074,6 +1092,7 @@
             <Korean>가벼운 치아노제 증상 값</Korean>
             <French>Valeur de SpO2 de la cyanose moyenne</French>
             <Turkish>Orta derece Siyanoz SpO2 değeri</Turkish>
+            <Italian>Valore di SpO2 della cianosi media.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue_DESC">
             <English>Mild cyanosis value - default 75 SpO2</English>
@@ -1085,6 +1104,7 @@
             <Korean>가벼운 치아노제의 값입니다 - 기본값은 SpO2 75</Korean>
             <French>Valeur de la cyanose moyenne - 75 SpO2 par défaut</French>
             <Turkish>Orta derece Siyanoz değeri - varsayılan 75 SpO2</Turkish>
+            <Italian>Valore di cianosi media - default SpO2 75 .</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_severeValue">
             <English>Severe cyanosis SpO2 value</English>
@@ -1096,6 +1116,7 @@
             <Korean>심각한 치아노제 증상 값</Korean>
             <French>Valeur de SpO2 de la cyanose grave</French>
             <Turkish>Şiddetli Siyanoz SpO2 değeri</Turkish>
+            <Italian>Valore di SpO2 della cianosi grave</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_severeValue_DESC">
             <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
@@ -1107,6 +1128,7 @@
             <Korean>심각한 치아노제의 값입니다 - 기본값은 SpO2 66 \n반드시 사망하게 되는 SpO2 값보다 아주 조금 높아야 합니다</Korean>
             <French>Valeur de la cyanose grave - 66 SpO2 par défaut \nCette valeur devrait être un peu plus haute que la valeur de SpO2 létale.</French>
             <Turkish>Şiddetli Siyanoz değeri - varsayılan 66 SpO2 \nÖlümcül SpO2 değerinden biraz daha yüksek olmalıdır</Turkish>
+            <Italian>Valore di cianosi grave- default SpO2 66. (Dovrebbe essere un pochino più alta del valore letate di SpO2</Italian>
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL">
             <English>Check Cyanosis Minimum Level</English>
@@ -1117,6 +1139,7 @@
             <Korean>치아노제 증상 확인 최소 수준</Korean>
             <French>Niveau médical minimum pour contrôler la cyanose</French>
             <Turkish>Siyanoz minimum düzeyini kontrol edin</Turkish>
+            <Italian>Controlla livello minimo di cianosi.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to check cyanosis.</English>
@@ -1127,6 +1150,7 @@
             <Korean>치아노제 증상을 확인할 수 있는 사람의 최소 의료레벨 수준입니다.</Korean>
             <French>Le niveau médical minimum nécessaire pour pouvoir contrôler la cyanose</French>
             <Turkish>Bir kişinin Siyanozu kontrol edebilmesi için gereken minimum tıbbi seviye.</Turkish>
+            <Italian>Il livello minimo richiesto per poter diagnosticare la cianosi.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance">
             <English>Pneumothorax deterioration chance</English>
