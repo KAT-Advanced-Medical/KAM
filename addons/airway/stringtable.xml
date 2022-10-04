@@ -84,6 +84,7 @@
             <Japanese>異物の再発する時間</Japanese>
             <French>Temps de répétition des occlusions</French>
             <Italian>Tempo di ripetizione per l'occlusione</Italian>
+            <Czech>Opakovač uzavření dýchacích cest</Czech>
         </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -223,6 +224,7 @@
             <Polish>Ręcznie udrożnione</Polish>
             <Japanese>軽減された</Japanese>
             <Italian>Ostruzione mitigata.</Italian>
+            <Czech>Zmírněné zablokování</Czech>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
@@ -1058,6 +1060,7 @@
             <French>En position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturuldu</Turkish>
             <Italian>In posizione laterale di sicurezza.</Italian>
+            <Czech>Uveden do stabilizované polohy</Czech>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayName">
             <English>Establish recovery position</English>
@@ -1069,6 +1072,7 @@
             <French>Mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturun</Turkish>
             <Italian>Metti in posizione laterale di sicurezza.</Italian>
+            <Czech>Uvést do stabilizované polohy</Czech>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
             <English>Establishing recovery position</English>
@@ -1080,6 +1084,7 @@
             <French>Mise en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturuluyor</Turkish>
             <Italian>Mettendo in posizione laterale di sicurezza.</Italian>
+            <Czech>Uvádím do stabilizované polohy</Czech>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Info">
             <English>Recovery position established successfully</English>
@@ -1091,6 +1096,7 @@
             <French>Mise en position latérale de sécurité réussie</French>
             <Turkish>Kurtarma pozisyonu başarıyla kuruldu</Turkish>
             <Italian>Messo in posizione laterale di sicurezza. </Italian>
+            <Czech>Stabilizovaná poloha uvedena úspěšně</Czech>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Cancel">
             <English>Recovery position cancelled</English>
@@ -1102,6 +1108,7 @@
             <French>Mise en position latérale de sécurité annulée</French>
             <Turkish>Kurtarma pozisyonu iptal edildi</Turkish>
             <Italian>Posizione laterale di sicurezza annullata.</Italian>
+            <Czech>Stabilizovaná poloha zrušena</Czech>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_Log">
             <English>%1 established recovery position</English>
@@ -1113,6 +1120,7 @@
             <French>%1 a mis en place la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu %1 oluşturuldu</Turkish>
             <Italian>%1 messo in posizione laterale di sicurezza. </Italian>
+            <Czech>%1 uvedl do stabilizované polohy</Czech>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY">
             <English>Time for recovery position</English>
@@ -1124,6 +1132,7 @@
             <French>Temps pour mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu için zaman</Turkish>
             <Italian>Tempo per mettere in posizione laterale di sicurezza. </Italian>
+            <Czech>Doba pro stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
@@ -1135,6 +1144,7 @@
             <French>Temps nécessaire pour mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
             <Italian>Tempo necessario per mettere in posizione laterale di sicurezza. </Italian>
+            <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayName">
             <English>Cancel recovery position</English>
@@ -1146,6 +1156,7 @@
             <French>Annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunu iptal et</Turkish>
             <Italian>Cancella la posizione laterale di sicurezza. </Italian>
+            <Czech>Zrušit stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayNameProgress">
             <English>Cancelling recovery position</English>
@@ -1157,6 +1168,7 @@
             <French>Annulation de la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu iptal ediliyor</Turkish>
             <Italian>Cancellando la posizione laterale di sicurezza.</Italian>
+            <Czech>Ruším stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY">
             <English>Time for cancelling recovery position</English>
@@ -1168,6 +1180,7 @@
             <French>Temps pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunu iptal etmek için zaman</Turkish>
             <Italian>Tempo per cancellare la  posizione laterale di sicurezza. </Italian>
+            <Czech>Doba pro zrušení stabilizované polohy</Czech>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
@@ -1179,6 +1192,7 @@
             <French>Temps nécessaire pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
             <Italian>Tempo necessario per annullare la posizione laterale di sicurezza. </Italian>
+            <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_kat_airway_noObstruction">
             <English>Not obstructed</English>
@@ -1210,14 +1224,17 @@
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
             <Italian>Impostazioni base</Italian>
+            <Czech>Základní nastavení</Czech>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_RecoveryPositionOverstretch">
             <English>Recovery position + Overstretch Settings</English>
             <Italian>Impostazioni posizione laterale di sicurezza e stiramento</Italian>
+            <Czech>Nastavení stabilizované polohy a narovnávání hlavy</Czech>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
             <Italian>Impostazione oggetti vie aeree.</Italian>
+            <Czech>Nastavení předmětů dýchacích cest</Czech>
         </Key>
     </Package>
 </Project>

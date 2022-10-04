@@ -86,6 +86,7 @@
             <French>Multiplicateur positif de la SpO2</French>
             <Polish>Dodatni mnożnik SpO2</Polish>
             <Italian>Moltiplicatore positivo della SpO2</Italian>
+            <Czech>Pozitivní násobič SpO2</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyNegative">
             <English>SpO2 negative multiplier</English>
@@ -97,6 +98,7 @@
             <French>Multiplicateur négatif de la SpO2</French>
             <Polish>Ujemny mnożnik SpO2</Polish>
             <Italian>Moltiplicatore negativo della SpO2</Italian>
+            <Czech>Negativní násobič SpO2</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_Perfusion">
             <English>Enable cardiac arrest SpO2 reduction</English>
@@ -108,6 +110,7 @@
             <French>Autoriser la réduction de la SpO2 d’arrêt cardiaque</French>
             <Polish>Włącz utratę SpO2 w trakcie zatrzymania akcji serca</Polish>
             <Italian>Autorizza la riduzione della SpO2 dell'arresto cardiaco.</Italian>
+            <Czech>Povolit redukci SpO2 při zástavě srdce</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_PerfusionMultiplier">
             <English>Perfusion multiplier</English>
@@ -117,6 +120,7 @@
             <Japanese>かん流量の乗数</Japanese>
             <French>Multiplicateur de perfusion</French>
             <Italian>Moltiplicatore della perfusione.</Italian>
+            <Czech>Násobič perfuze</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax">
             <English>Probability for a pneumothorax</English>
@@ -505,6 +509,7 @@
             <French>Autoriser le pansement thoracique sur soi-même</French>
             <Polish>Pozwól na samo leczenie przy użyciu Chest Seala</Polish>
             <Italian>Permetti automedicazione con Chest Seal.</Italian>
+            <Czech>Povolit vlastní léčení pomocí hrudního krytí</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
@@ -961,6 +966,7 @@
             <French>Contrôler la cyanose</French>
             <Turkish>Siyanozu kontrol et</Turkish>
             <Italian>Controlla la cianosi.</Italian>
+            <Czech>Zkontrolovat cyanózu</Czech>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Progress">
             <English>Checking Cyanosis</English>
@@ -973,6 +979,7 @@
             <French>Controle de la cyanose</French>
             <Turkish>Siyanoz kontrol ediliyor</Turkish>
             <Italian>Controllando la cianosi.</Italian>
+            <Czech>Kontroluji cyanózu</Czech>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Log">
             <English>Cyanosis Status: %1</English>
@@ -985,6 +992,7 @@
             <French>Statut de la cysnose: %1</French>
             <Turkish>Siyanoz durumu: %1</Turkish>
             <Italian>Status della cianosi %1.</Italian>
+            <Czech>Status cyanózy: %1</Czech>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_N">
             <English>No Cyanosis</English>
@@ -997,6 +1005,7 @@
             <French>Aucune cyanose</French>
             <Turkish>Siyanoz yok</Turkish>
             <Italian>Nessuna traccia di cianosi,</Italian>
+            <Czech>Žádná cyanóza</Czech>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Slight">
             <English>Slight Cyanosis</English>
@@ -1009,6 +1018,7 @@
             <French>Cyanose légère</French>
             <Turkish>Hafif Siyanoz</Turkish>
             <Italian>Leggera cianosi.</Italian>
+            <Czech>Nepatrná cyanóza</Czech>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosis</English>
@@ -1021,6 +1031,7 @@
             <French>Cyanose moyenne</French>
             <Turkish>Orta derece Siyanoz</Turkish>
             <Italian>Moderata cianosi.</Italian>
+            <Czech>Mírná cyanóza</Czech>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
             <English>Severe Cyanosis</English>
@@ -1033,6 +1044,7 @@
             <French>Cyanose grave</French>
             <Turkish>Şiddetli Siyanoz</Turkish>
             <Italian>Grave cianosi.</Italian>
+            <Czech>Vážná cyanóza</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis">
             <English>Enable cyanosis diagnose</English>
@@ -1045,6 +1057,7 @@
             <French>Autoriser le diagnostique de la cyanose</French>
             <Turkish>Siyanoz tanısını etkinleştir</Turkish>
             <Italian>Abilita la diagnosi della cianosi.</Italian>
+            <Czech>Povolit diagnózu cyanózy</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis_DESC">
             <English>Enables cyanosis diagnose</English>
@@ -1057,6 +1070,7 @@
             <French>Autorise le diagnostique de la cyanose</French>
             <Turkish>Siyanoz teşhisini etkinleştirir</Turkish>
             <Italian>Abilita la diagnosi della cianosi.</Italian>
+            <Czech>Povolí diagnózu cyanózy</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -1069,6 +1083,7 @@
             <French>Valeur de SpO2 de la cyanose légère</French>
             <Turkish>Hafif Siyanoz SpO2 değeri</Turkish>
             <Italian>Valore di SpO2 della cianosi leggera.</Italian>
+            <Czech>SpO2 hodnota nepatrné cyanózy</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue_DESC">
             <English>Slight cyanosis value - default 90 SpO2</English>
@@ -1081,6 +1096,7 @@
             <French>Valeur de la cyanose légère - 90 SpO2 par défaut</French>
             <Turkish>Hafif Siyanoz değeri - varsayılan 90 SpO2</Turkish>
             <Italian>Valore di cianosi leggera - default SpO2 90 .</Italian>
+            <Czech>Hodnota nepatrné cyanózy - základní hodnota SpO2 90</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue">
             <English>Mild cyanosis SpO2 value</English>
@@ -1093,6 +1109,7 @@
             <French>Valeur de SpO2 de la cyanose moyenne</French>
             <Turkish>Orta derece Siyanoz SpO2 değeri</Turkish>
             <Italian>Valore di SpO2 della cianosi media.</Italian>
+            <Czech>SpO2 hodnota mírné cyanózy</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue_DESC">
             <English>Mild cyanosis value - default 75 SpO2</English>
@@ -1105,6 +1122,7 @@
             <French>Valeur de la cyanose moyenne - 75 SpO2 par défaut</French>
             <Turkish>Orta derece Siyanoz değeri - varsayılan 75 SpO2</Turkish>
             <Italian>Valore di cianosi media - default SpO2 75 .</Italian>
+            <Czech>Hodnota mírné cyanózy - základní hodnota SpO2 75</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_severeValue">
             <English>Severe cyanosis SpO2 value</English>
@@ -1117,6 +1135,7 @@
             <French>Valeur de SpO2 de la cyanose grave</French>
             <Turkish>Şiddetli Siyanoz SpO2 değeri</Turkish>
             <Italian>Valore di SpO2 della cianosi grave</Italian>
+            <Czech>SpO2 hodnota vážné cyanózy</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_severeValue_DESC">
             <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
@@ -1129,6 +1148,7 @@
             <French>Valeur de la cyanose grave - 66 SpO2 par défaut \nCette valeur devrait être un peu plus haute que la valeur de SpO2 létale.</French>
             <Turkish>Şiddetli Siyanoz değeri - varsayılan 66 SpO2 \nÖlümcül SpO2 değerinden biraz daha yüksek olmalıdır</Turkish>
             <Italian>Valore di cianosi grave- default SpO2 66. (Dovrebbe essere un pochino più alta del valore letate di SpO2</Italian>
+            <Czech>Hodnota vážné cyanózy - základní hodnota SpO2 66 \nMěla by být mírně vyšší, než smrtelná hodnota SpO2</Czech>
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL">
             <English>Check Cyanosis Minimum Level</English>
@@ -1140,6 +1160,7 @@
             <French>Niveau médical minimum pour contrôler la cyanose</French>
             <Turkish>Siyanoz minimum düzeyini kontrol edin</Turkish>
             <Italian>Controlla livello minimo di cianosi.</Italian>
+            <Czech>Minimální level ke zkontrolování cyanózy</Czech>
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to check cyanosis.</English>
@@ -1151,39 +1172,48 @@
             <French>Le niveau médical minimum nécessaire pour pouvoir contrôler la cyanose</French>
             <Turkish>Bir kişinin Siyanozu kontrol edebilmesi için gereken minimum tıbbi seviye.</Turkish>
             <Italian>Il livello minimo richiesto per poter diagnosticare la cianosi.</Italian>
+            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl zkontrolovat cyanózu</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance">
             <English>Pneumothorax deterioration chance</English>
             <Italian>Possibilità di deterioramento del pneumotorace</Italian>
+            <Czech>Šance na zhoršení pneumotoraxu</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance_Desc">
             <English>Chance for pneumothorax to deteriorate into tension pneumothorax</English>
             <Italian>Possibilità che il pneumotorace possa peggiorare in pneumotorace tensivo</Italian>
+            <Czech>Šance na zhoršení pneumotoraxu do tenzního pneumotoraxu</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown">
             <English>Deteriorating pneumothorax countdown</English>
             <Italian>Conto alla rovescia del pneumotorace in peggioramento</Italian>
+            <Czech>Odpočet pro zhoršení pneumotoraxu</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown_Desc">
             <English>After this countdown a chance will be rolled whether or not the pneumothorax will deteriorate into tension pneumothorax</English>
             <Italian>Dopo questo conto alla rovescia verrà lanciata una possibilità se il pneumotorace si deteriorerà o meno in pneumotorace tensivo</Italian>
+            <Czech>Poté co proběhne tento odpočet bude zkontrolována šance, zda se pneumotorax zhorší na tenzní pneumotorax</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
             <Italian>Impostazioni di base</Italian>
+            <Czech>Základní nastavení</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
             <Italian>Impostazioni oggetti respirazione </Italian>
+            <Czech>Nastavení dýchacích předmětů</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_ThoraxInjuries">
             <English>Thorax injuries Settings</English>
             <Italian> Impostazioni lesioni al torace</Italian>
+            <Czech>Nastavení zranění toraxu</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Cyanosis">
             <English>Cyanosis Settings</English>
             <Italian>Impostazioni di cianosi</Italian>
+            <Czech>Nastavení cyanózy</Czech>
         </Key>
     </Package>
 </Project>
