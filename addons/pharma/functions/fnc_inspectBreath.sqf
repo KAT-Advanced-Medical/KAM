@@ -18,7 +18,7 @@
 
 params ["_medic", "_patient"];
 
-private _ph = _patient getVariable [QGVAR(ph), 1500];
+private _ph = _patient getVariable [QGVAR(pH), 1500];
 private _output = LLSTRING(breath_stink);
 
 if (_ph > 250) then {

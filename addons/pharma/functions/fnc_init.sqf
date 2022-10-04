@@ -25,6 +25,7 @@ _unit setVariable [QGVAR(IVsite), 0, true];
 _unit setVariable [QGVAR(IVblock), false, true];
 _unit setVariable [QGVAR(IVflush), false, true];
 _unit setvariable [QGVAR(active), false, true];
+_unit setvariable [QGVAR(sedated), false, true];
 
 _unit setVariable [QGVAR(TXA), 1, true];
 _unit setVariable [QGVAR(ondUse), false, true];
