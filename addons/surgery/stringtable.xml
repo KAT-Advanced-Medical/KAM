@@ -71,469 +71,548 @@
             <Chinesesimp>病人的呼吸是刺耳的</Chinesesimp>
             <Italian>Il respiro del paziente è aspro e metallico</Italian>
             <Polish>Oddech pachnie ostro i metalicznie</Polish>
+            <Czech>Dech pacienta je drsný a kovový</Czech>
         </Key>
         <Key ID="STR_kat_surgery_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
             <Chinesesimp>病人的呼吸是沙哑的</Chinesesimp>
             <Italian>Il respiro del paziente è aspro e metallico</Italian>
             <Polish>Oddech pachnie ostro i metalicznie</Polish>
+            <Czech>Dech pacienta je drsný a kovový</Czech>
         </Key>
         <Key ID="STR_kat_surgery_breath_mild">
             <English>Patient's breath is slightly fruity</English>
             <Chinesesimp>病人的呼吸是平和的</Chinesesimp>
             <Italian>Il respiro del paziente è leggermente fruttato</Italian>
             <Polish>Oddech pachnie lekko owocowo</Polish>
+            <Czech>Dech pacienta je mírně ovocný</Czech>
         </Key>
         <Key ID="STR_kat_surgery_breath_good">
             <English>Patient's breath is ok</English>
             <Chinesesimp>病人的呼吸是正常的</Chinesesimp>
             <Italian>Il respiro del paziente è ok</Italian>
             <Polish>Oddech pachnie dobrze</Polish>
+            <Czech>Dech pacienta je v pořádku</Czech>
         </Key>
         <Key ID="STR_kat_surgery_dialysis">
             <English>Perform Dialysis</English>
             <Chinesesimp>进行透析</Chinesesimp>
             <Italian>Eseguire la dialisi</Italian>
             <Polish>Przeprowadź dializę</Polish>
+            <Czech>Provádět dialýzu</Czech>
         </Key>
         <Key ID="STR_kat_surgery_perform">
             <English>Performing</English>
             <Chinesesimp>透析中</Chinesesimp>
             <Italian>Esecuzione</Italian>
             <Polish>Przeprowadzanie</Polish>
+            <Czech>Provádění</Czech>
         </Key>
         <Key ID="STR_kat_surgery_fracture_check">
             <English>Check Fracture</English>
             <Chinesesimp>检查骨折</Chinesesimp>
             <Italian>Controlla frattura</Italian>
             <Polish>Sprawdź złamanie</Polish>
+            <Czech>Zkontrolovat zlomeninu</Czech>
         </Key>
         <Key ID="STR_kat_surgery_fracture_checking">
             <English>Checking</English>
             <Chinesesimp>检查中</Chinesesimp>
             <Italian>Controllando</Italian>
             <Polish>Sprawdzanie</Polish>
+            <Czech>Kontrola</Czech>
         </Key>
         <Key ID="STR_kat_surgery_fracture_closed">
             <English>Perform Closed Reduction</English>
             <Chinesesimp>封闭伤口</Chinesesimp>
             <Italian>Esegui la riduzione chiusa</Italian>
             <Polish>Przeprowadź zamkniętą redukcję</Polish>
+            <Czech>Provést otevřenou redukci</Czech>
         </Key>
         <Key ID="STR_kat_surgery_fracture_open">
             <English>Perform Open Reduction</English>
             <Chinesesimp>开放伤口</Chinesesimp>
             <Italian>Esegui la riduzione aperta</Italian>
             <Polish>Przeprowadź otwartą redukcję</Polish>
+            <Czech>Proveďte otevřené snížení</Czech>
         </Key>
         <Key ID="STR_kat_surgery_fracture_log">
             <English>%1 present on %2</English>
             <Chinesesimp>%1 存在于 %2</Chinesesimp>
             <Italian>%1 presente su %2</Italian>
             <Polish>%1 znajduje się na %2</Polish>
+            <Czech>%1 přítomno na %2</Czech>
         </Key>
         <Key ID="STR_kat_surgery_surgery_log">
             <English>%1 %2 the fracture on the %3</English>
             <Chinesesimp>在 %3 上有一处 %1 %2</Chinesesimp>
             <Italian>%1 %2 la frattura sul %3</Italian>
             <Polish>%1 %2 złamanie na %3</Polish>
+            <Czech>%1 %2 zlomenina na %3</Czech>
         </Key>
         <Key ID="STR_kat_surgery_incision_log">
             <English>%1 made an incision on the %2</English>
             <Chinesesimp>%1 在 %2 上做了一个切口</Chinesesimp>
             <Italian>%1 ha fatto un'incisione su %2</Italian>
             <Polish>%1 wykonał nacięcie na %2</Polish>
+            <Czech>%1 provedl řez na %2</Czech>
         </Key>
         <Key ID="STR_kat_surgery_dialysis_log">
             <English>%1 performed dialysis</English>
             <Chinesesimp>%1 进行了透析</Chinesesimp>
             <Italian>%1 ha eseguito la dialisi</Italian>
             <Polish>%1 przeprowadził dializę</Polish>
+            <Czech>%1 provedl dialýzu</Czech>
         </Key>
         <Key ID="STR_kat_surgery_fracture_fail">
             <English>Surgical Action Failed</English>
             <Chinesesimp>手术失败</Chinesesimp>
             <Italian>Operazione chirurgica fallita</Italian>
             <Polish>Akcja chirurgiczna nie powiodła się</Polish>
+            <Czech>Chirurgická akce selhala</Czech>
         </Key>
         <Key ID="STR_kat_surgery_debridement_fail">
             <English>Wound Dressing Failed</English>
             <Chinesesimp>伤口清创失败</Chinesesimp>
             <Italian>Medicazione delle ferite non riuscita</Italian>
             <Polish>Opatrywanie nie powiodło się</Polish>
+            <Czech>Obvázání rány selhalo</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_displayName">
             <English>Scalpel</English>
             <Chinesesimp>手术刀</Chinesesimp>
             <Italian>Bisturi</Italian>
             <Polish>Skalpel</Polish>
+            <Czech>Skalpel</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_DescShort">
             <English>Create incisions and debrides wounds</English>
             <Chinesesimp>对伤口进行清创</Chinesesimp>
             <Italian>Crea incisioni e sbriglia le ferite</Italian>
             <Polish>Tworzy nacięcia i oczyszcza rany</Polish>
+            <Czech>Vytvořit řezy a očistit rány</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_DescUse">
             <English>Used for creating incisions and debriding wounds</English>
             <Chinesesimp>用于创建切口和伤口清创</Chinesesimp>
             <Italian>Usato per creare incisioni e sbrigliare ferite</Italian>
+            <Czech>Používá se pro vytváření řezů a čištění ran</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_Use">
             <English>Perform Incision</English>
             <Chinesesimp>创建切口</Chinesesimp>
             <Italian>Esegui incisione</Italian>
             <Polish>Wykonaj nacięcie</Polish>
+            <Czech>Provést řez</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_displayName">
             <English>Retractor</English>
             <Chinesesimp>扩张器</Chinesesimp>
             <Italian>Divaricatore</Italian>
             <Polish>Hak chirurgiczny</Polish>
+            <Czech>Retraktor</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_DescShort">
             <English>Wound Expander</English>
             <Chinesesimp>伤口扩张器</Chinesesimp>
             <Italian>Espansore della ferita</Italian>
             <Polish>Rozszerza rany</Polish>
+            <Czech>Rána rozšířena</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_DescUse">
             <English>Used to expand and expose fractures</English>
             <Chinesesimp>用于扩大和暴露骨折创面</Chinesesimp>
             <Italian>Usato per espandere ed esporre fratture</Italian>
+            <Czech>Slouží k rozšiřování a odhalování zlomenin</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_Use">
             <English>Expose Fracture</English>
             <Chinesesimp>暴露骨折</Chinesesimp>
             <Italian>Esponi la frattura</Italian>
             <Polish>Odsłoń złamanie</Polish>
+            <Czech>Odhalit zlomeninu</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_Action">
             <English>Exposing</English>
             <Chinesesimp>暴露</Chinesesimp>
             <Italian>Esponendo</Italian>
             <Polish>Odsłanianie</Polish>
+            <Czech>Odhalování</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_displayName">
             <English>Clamp</English>
             <Chinesesimp>夹板</Chinesesimp>
             <Italian>Clampando</Italian>
             <Polish>Zacisk chirurgiczny</Polish>
+            <Czech>Svorka</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_DescShort">
             <English>Fracture Clamp</English>
             <Chinesesimp>骨折夹板</Chinesesimp>
             <Italian>Clamp per frattura</Italian>
             <Polish>Zaciska złamania</Polish>
+            <Czech>Svorka na zlomeniny</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_DescUse">
             <English>Used to clamp comminuted fractures</English>
             <Chinesesimp>用于夹紧粉碎性骨折</Chinesesimp>
             <Italian>Usato per bloccare le fratture pluriframmentarie</Italian>
+            <Czech>Používá se k upnutí rozdrcených zlomenin</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_Use">
             <English>Clamp Fracture</English>
             <Chinesesimp>夹板断裂</Chinesesimp>
             <Italian>Clampa la frattura</Italian>
             <Polish>Zaciśnij złamanie</Polish>
+            <Czech>Upnout zlomeninu</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_Action">
             <English>Clamping</English>
             <Chinesesimp>夹紧</Chinesesimp>
             <Italian>Clampando</Italian>
             <Polish>Zaciskanie</Polish>
+            <Czech>Upínání</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Irrigate_Use">
             <English>Irrigate Wound</English>
             <Chinesesimp>冲洗伤口</Chinesesimp>
             <Italian>Lava e pulisci la ferita</Italian>
             <Polish>Opłukaj ranę</Polish>
+            <Czech>Zavlažovat ránu</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Irrigate_Action">
             <English>Irrigating</English>
             <Chinesesimp>冲洗中</Chinesesimp>
             <Italian>Lavando e pulendo</Italian>
             <Polish>Opłukiwanie</Polish>
+            <Czech>Zavlažování</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Plate_DescShort">
             <English>Bone Plate</English>
             <Chinesesimp>骨板</Chinesesimp>
             <Italian>Piastre ossee</Italian>
             <Polish>Płytka chirurgiczna</Polish>
+            <Czech>Kostní deska</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Plate_DescUse">
             <English>Used to complete all complex fracture types</English>
             <Chinesesimp>用于完成所有复杂骨折类型</Chinesesimp>
             <Italian>Utilizzato per risolvere tutti i tipi di fratture complesse</Italian>
+            <Czech>Používá se k léčení všech složitých typů zlomenin</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Debride_Use">
             <English>Debride Wounds</English>
             <Chinesesimp>用于完成所有复杂骨折类型</Chinesesimp>
             <Italian>Raschia le ferite</Italian>
             <Polish>Oczyść rany</Polish>
+            <Czech>Vyčistit rány</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Debride_Action">
             <English>Debriding</English>
             <Chinesesimp>清创伤口</Chinesesimp>
             <Italian>Raschiando</Italian>
             <Polish>Oczyszczanie</Polish>
+            <Czech>Čištění</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_DescShort">
             <English>Dressing vacuum</English>
             <Chinesesimp>NPWT 敷料</Chinesesimp>
             <Italian>Sottovuoto per medicazione</Italian>
             <Polish>Opatrunek próżniowy</Polish>
+            <Czech>Vakuový obvaz</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_DescUse">
             <English>Used to completely dress and seal wounds</English>
             <Chinesesimp>用于完全包扎和密封伤口</Chinesesimp>
             <Italian>Usato per coprire e sigillare completamente le ferite</Italian>
+            <Czech>Slouží k úplnému zavázání a utěsnění rány</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_Use">
             <English>Apply NPWT Dressing</English>
             <Chinesesimp>应用 NPWT 敷料</Chinesesimp>
             <Italian>Applicare la medicazione terapia a pressione negativa (NPWT)</Italian>
             <Polish>Nałóż opatrunek próżniowy</Polish>
+            <Czech>Použít NPWT obvaz</Czech>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_Action">
             <English>Applying</English>
             <Chinesesimp>用于完全包扎和密封伤口</Chinesesimp>
             <Italian>Applicando</Italian>
             <Polish>Nakładanie</Polish>
+            <Czech>Používání</Czech>
         </Key>
         <Key ID="STR_kat_surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>
             <Chinesesimp>肾损伤/衰竭</Chinesesimp>
             <Italian>Danno/insufficienza renale</Italian>
             <Polish>Uszkodzenie nerek</Polish>
+            <Czech>Poškození/selhání ledvin</Czech>
         </Key>
         <Key ID="STR_kat_surgery_KIDNEY_ACTION_DESC">
             <English>Enables kidney damage caused by overuse of saline</English>
             <Chinesesimp>启用因过度使用生理盐水而造成的肾脏损害</Chinesesimp>
             <Italian>Consente danni renali causati da un uso eccessivo di soluzione salina</Italian>
             <Polish>Włącza uszkadzanie nerek spowodowane zbytnim użyciem soli fizjologicznej</Polish>
+            <Czech>Umožňuje poškození ledvin způsobené nadužíváním fyziologického roztoku</Czech>
         </Key>
         <Key ID="STR_kat_surgery_DIALYSIS_TIMER">
             <English>Time to perform dialysis</English>
             <Chinesesimp>进行透析的时间</Chinesesimp>
             <Italian>Tempo necessario per eseguire la dialisi</Italian>
             <Polish>Czas potrzebny na dializę</Polish>
+            <Czech>Čas pro dialýzu</Czech>
         </Key>
         <Key ID="STR_kat_surgery_ADVANCED_FRACTURE">
             <English>Enables advanced fractures</English>
             <Chinesesimp>启用高级骨折</Chinesesimp>
             <Italian>Abilita fratture avanzate</Italian>
             <Polish>Włącza zaawansowane złamania</Polish>
+            <Czech>Povoluje pokročilé zlomeniny</Czech>
         </Key>
         <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_CHANCE">
             <English>Simple fracture chance</English>
             <Chinesesimp>简单骨折几率</Chinesesimp>
             <Italian>Possibilità di frattura semplice</Italian>
             <Polish>Szansa na proste złamanie</Polish>
+            <Czech>Jednoduchá šance na zlomeninu</Czech>
         </Key>
         <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for simple fractures. Also sets the chance for complex fractures (60% Simple = 40% Complex)</English>
             <Chinesesimp>设置简单骨折的几率,同时设置了复合骨折的几率 (60% 简单 = 40% 复杂)</Chinesesimp>
             <Italian>Imposta la possibilità di fratture semplici. Imposta anche la possibilità di fratture complesse (60% semplice = 40% complesso)</Italian>
             <Polish>Ustawia szansę na proste złamanie. \nPonadto ustawia szansę dla skomplikowanych złamań (60% proste = 40% skomplikowane)</Polish>
+            <Czech>Nastavuje šanci pro jednoduché zlomeniny. Nastavuje také šanci na složité zlomeniny (60% jednoduché = 40% složité)</Czech>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
             <Chinesesimp>复合骨折几率</Chinesesimp>
             <Italian>Possibilità di frattura composta</Italian>
             <Polish>Szansa na złożone złamanie</Polish>
+            <Czech>Složená zlomeninová šance</Czech>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for compound fractures. Also sets the chance for comminuted fractures (60% Compound = 40% Comminuted)</English>
             <Chinesesimp>设置复合骨折的机会,同时设置粉碎骨折的几率 (60% 复合 = 40% 粉碎)</Chinesesimp>
             <Italian>Imposta la possibilità di fratture composte. Imposta anche la possibilità di fratture comminute (60% composto = 40% sminuzzato)</Italian>
             <Polish>Ustawia szansę na złożone złamanie. \nPonadto ustawia szansę dla złamań z przemieszczeniem (60% proste = 40% z przemieszczeniem)</Polish>
+            <Czech>Nastavuje šanci na složené zlomeniny. Také nastavuje šanci na rozdrcené zlomeniny (60% složené = 40% rozdrcené)</Czech>
         </Key>
         <Key ID="STR_kat_surgery_ETOMIDATE_TIMER">
             <English>Etomidate cycle timer</English>
             <Chinesesimp>依托咪酯循环计时器</Chinesesimp>
             <Italian>Timer ciclo Etomidato</Italian>
             <Polish>Cykl czasu Etomidatu</Polish>
+            <Czech>Časovač cyklu etomidát</Czech>
         </Key>
         <Key ID="STR_kat_surgery_ETOMIDATE_TIMER_DESC">
             <English>Determines how long each dose of etomidate stays in a patient</English>
             <Chinesesimp>确定每剂依托咪酯在患者体内的停留时间</Chinesesimp>
             <Italian>Determina per quanto tempo ciascuna dose di etomidato rimane in un paziente</Italian>
             <Polish>Ustala jak długo każda dawka Etomidatu zostaje w pacjencie</Polish>
+            <Czech>Určuje, jak dlouho každá dávka etomidátu zůstává v pacientovi</Czech>
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_TIMER">
             <English>Time to perform closed reductions</English>
             <Chinesesimp>执行封闭伤口的时间</Chinesesimp>
             <Italian>Tempo per eseguire riduzioni chiuse</Italian>
             <Polish>Czas potrzebny na wykonanie zamkniętej redukcji</Polish>
+            <Czech>Čas provádění uzavřené redukce</Czech>
         </Key>
         <Key ID="STR_kat_surgery_OPEN_TIMER">
             <English>Time to perform open reductions</English>
             <Chinesesimp>执行开放伤口的时间</Chinesesimp>
             <Italian>Tempo per eseguire riduzioni aperte</Italian>
             <Polish>Czas potrzebny na wykonanie otwartej redukcji</Polish>
+            <Czech>Čas provádění otevřené redukce</Czech>
         </Key>
         <Key ID="STR_kat_surgery_SURGICAL_TIMER">
             <English>Time to perform surgical actions</English>
             <Chinesesimp>执行手术了的时间</Chinesesimp>
             <Italian>Tempo per eseguire azioni chirurgiche</Italian>
             <Polish>Czas potrzebny na wykonanie zabiegów chirurgicznych</Polish>
+            <Czech>Čas provádění chirurgické akce</Czech>
         </Key>
         <Key ID="STR_kat_surgery_INCISION_TIMER">
             <English>Time to perform incisions</English>
             <Chinesesimp>进行切口的时间</Chinesesimp>
             <Italian>Tempo per eseguire le incisioni</Italian>
             <Polish>Czas potrzebny na wykonanie nacięć</Polish>
+            <Czech>Čas provádění řezů</Czech>
         </Key>
         <Key ID="STR_kat_surgery_BREATH_CHECK_TIME">
             <English>Time to perform breath check</English>
             <Chinesesimp>进行呼吸检查的时间</Chinesesimp>
             <Italian>Tempo per eseguire il controllo del respiro</Italian>
             <Polish>Czas potrzebny na sprawdzenie oddechu</Polish>
+            <Czech>Čas provádění kontroly dechu</Czech>
         </Key>
         <Key ID="STR_kat_surgery_INTERMEDIATE_TIMER">
             <English>Time to perform intermediate actions</English>
             <Chinesesimp>进行中间操作的时间</Chinesesimp>
             <Italian>Tempo per eseguire azioni intermedie</Italian>
             <Polish>Czas potrzebny do wykonania natychmiastowych akcji</Polish>
+            <Czech>Čas provádění středně těžkých akcí</Czech>
         </Key>
         <Key ID="STR_kat_surgery_INTERMEDIATE_TIMER_DESC">
             <English>Sets how long it takes to perform intermediate surgical actions such as exposing and irrigation</English>
             <Chinesesimp>设置执行手术中间操作（例如暴露和冲洗）所需的时间</Chinesesimp>
             <Italian>Imposta il tempo necessario per eseguire azioni chirurgiche intermedie come l'esposizione ed il lavaggio/pulizia </Italian>
             <Polish>Ustala jak długo zajmuje wykonanie natychmiastowych zabiegów chirurgicznych, takich jak odsłonienie i opłukanie</Polish>
+            <Czech>Nastavuje, jak dlouho trvá provádění středně těžkých chirurgických akcí, jako je odhalení a zavlažování</Czech>
         </Key>
         <Key ID="STR_kat_surgery_DEBRIDE_TIMER">
             <English>Time to debride a patient</English>
             <Chinesesimp>进行伤口清创的时间</Chinesesimp>
             <Italian>Tempo per sbrigliare un paziente</Italian>
             <Polish>Czas potrzebny na oczyszczenie rany</Polish>
+            <Czech>Čas čištění pacienta</Czech>
         </Key>
         <Key ID="STR_kat_surgery_NPWT_TIMER">
             <English>Time to apply an NPWT dressing</English>
             <Chinesesimp>使用 NPWT 敷料的时间</Chinesesimp>
             <Italian>Tempo per applicare una medicazione di terapia a pressione negativa (NPWT)</Italian>
             <Polish>Czas potrzebny do nałożenie opatrunku próżniowego</Polish>
+            <Czech>Čask použití NPWT</Czech>
         </Key>
         <Key ID="STR_kat_surgery_FRACTURE_CHECK_TIMER">
             <English>Fracture check timer</English>
             <Chinesesimp>骨折检查计时器</Chinesesimp>
             <Italian>Timer per il controllo delle fratture</Italian>
             <Polish>Czas potrzebny na sprawdzenie złamania</Polish>
+            <Czech>Časovač kontroly zlomenin</Czech>
         </Key>
         <Key ID="STR_kat_surgery_FRACTURE_CHECK_MEDLEVEL">
             <English>Medical level required for someone to check fracture</English>
             <Chinesesimp>检查骨折所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto a qualcuno per controllare la frattura</Italian>
             <Polish>Poziom wyszkolenia medycznego potrzebny do sprawdzenia złamania</Polish>
+            <Czech>Lékařská úroveň potřebná pro někoho, aby zkontroloval zlomeninu</Czech>
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_REDUCTION_MEDLEVEL">
             <English>Medical level required for closed reduction</English>
             <Chinesesimp>闭合复位所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per la riduzione chiusa</Italian>
             <Polish>Poziom wyszkolenia medycznego potrzebny do zamkniętej redukcji</Polish>
+            <Czech>Lékařská úroveň potřebná pro uzavřenou redukci</Czech>
         </Key>
         <Key ID="STR_kat_surgery_SURGICAL_ACTION_MEDLEVEL">
             <English>Medical level required for Surgical action</English>
             <Chinesesimp>手术所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per l'azione chirurgica</Italian>
             <Polish>Poziom wyszkolenia medycznego potrzebny do akcji chirurgicznych</Polish>
+            <Czech>Lékařská úroveň potřebná pro chirurgické akce</Czech>
         </Key>
         <Key ID="STR_kat_surgery_BREATH_CHECK_MEDLEVEL">
             <English>Medical level required for Breath check</English>
             <Chinesesimp>呼吸检查所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per il controllo del respiro</Italian>
             <Polish>Poziom wyszkolenia medycznego potrzebny do sprawdzenia oddechu</Polish>
+            <Czech>Lékařská úroveň potřebná pro kontrolu dechu</Czech>
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_LOCATION">
             <English>Closed reduction location</English>
             <Chinesesimp>封闭伤口的位置</Chinesesimp>
             <Italian>Luogo di riduzione chiusa</Italian>
             <Polish>Lokalizacja dla zamkniętej redukcji</Polish>
+            <Czech>Umístění uzavřené redukce</Czech>
         </Key>
         <Key ID="STR_kat_surgery_SURGICAL_LOCATION">
             <English>Open reduction/Surgical location</English>
             <Chinesesimp>开放伤口/手术的位置</Chinesesimp>
             <Italian>Apri localizzazione chirurgica/riduzione aperta</Italian>
             <Polish>Lokalizacja dla otwartej redukcji/akcji chirurgicznych</Polish>
+            <Czech>Otevřená redukce/chirurgická poloha</Czech>
         </Key>
         <Key ID="STR_kat_surgery_SETTING_SELF_CHECKFRACTURE">
             <English>Allow self check fracture</English>
             <Chinesesimp>允许自检骨折</Chinesesimp>
             <Italian>Consenti autodiagnosi frattura </Italian>
             <Polish>Zezwól na samo-sprawdzenie złamania</Polish>
+            <Czech>Povolit vlastní kontrolu zlomenin</Czech>
         </Key>
         <Key ID="STR_kat_surgery_EXPOSED">
             <English>exposed</English>
             <Chinesesimp>暴露</Chinesesimp>
             <Italian>Esposta</Italian>
             <Polish>odsłoniona</Polish>
+            <Czech>Odhaleno</Czech>
         </Key>
         <Key ID="STR_kat_surgery_IRRIGATED">
             <English>irrigated</English>
             <Chinesesimp>清洗</Chinesesimp>
             <Italian>Pulita e lavata</Italian>
             <Polish>opłukana</Polish>
+            <Czech>Zavlaženo</Czech>
         </Key>
         <Key ID="STR_kat_surgery_CLAMPED">
             <English>clamped</English>
             <Chinesesimp>夹住</Chinesesimp>
             <Italian>Clampata</Italian>
             <Polish>zaciśnięta</Polish>
+            <Czech>Upnuto</Czech>
         </Key>
         <Key ID="STR_kat_surgery_COMMINUTED_FRACTURE">
             <English>Comminuted Fracture</English>
             <Chinesesimp>粉碎性骨折</Chinesesimp>
             <Italian>Frattura pluriframmentaria</Italian>
             <Polish>Złamanie z przemieszczeniem</Polish>
+            <Czech>Rozdrcená zlomenina</Czech>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE">
             <English>Compound Fracture</English>
             <Chinesesimp>复合性骨折</Chinesesimp>
             <Italian>Frattura composta</Italian>
             <Polish>Złamanie złożone</Polish>
+            <Czech>Složená zlomenina</Czech>
         </Key>
         <Key ID="STR_kat_surgery_SIMPLE_FRACTURE">
             <English>Simple Fracture</English>
             <Chinesesimp>简单骨折</Chinesesimp>
             <Italian>Frattura semplice</Italian>
             <Polish>Złamanie proste</Polish>
+            <Czech>Jednoduchá zlomenina</Czech>
         </Key>
         <Key ID="STR_kat_surgery_uncon_requieredForActions">
             <English>Unconsciouness Requierement</English>
             <Chinesesimp>要求无意识</Chinesesimp>
             <Italian>Requisito di incoscienza</Italian>
             <Polish>Nieprzytomność wymagana</Polish>
+            <Czech>Vyžadování bezvědomí</Czech>
         </Key>
         <Key ID="STR_kat_surgery_uncon_requieredForActions_DESC">
             <English>Whether or not is unconsciousness requiered to perform some surgery actions</English>
             <Chinesesimp>进行某些手术动作是否需要无意识</Chinesesimp>
             <Italian>Decidere se l'incoscienza sia richiesta o meno per eseguire alcune azioni chirurgiche</Italian>
             <Polish>Czy nieprzytomność jest wymagana do przeprowadzenia niektórych akcji chirurgicznych</Polish>
+            <Czech>Zda je či není vyžadováno bezvědomí, aby se mohli provést některé chirurgické akce</Czech>
         </Key>
         <Key ID="STR_kat_surgery_SubCategory_Basic">
             <English>Basic Settings</English>
             <Chinesesimp>基本设置</Chinesesimp>
             <Polish>Podstawowe Ustawienia</Polish>
             <Italian>Impostazioni di base</Italian>
+            <Czech>Základní nastavení</Czech>
         </Key>
         <Key ID="STR_kat_surgery_SubCategory_SurgicalActions">
             <English>Surgical actions Settings</English>
             <Chinesesimp>手术操作设置</Chinesesimp>
             <Italian>Impostazioni delle azioni chirurgiche</Italian>
             <Polish>Ustawienia Akcji Chirurgicznych</Polish>
+            <Czech>Nastavení chirurgických akcí</Czech>
         </Key>
         <Key ID="STR_kat_surgery_SubCategory_Fractures">
             <English>Fractures Settings</English>
             <Chinesesimp>骨折设置</Chinesesimp>
             <Italian>Impostazioni fratture</Italian>
             <Polish>Ustawienia Złamań</Polish>
+            <Czech>Nastavení zlomenin</Czech>
         </Key>
         <Key ID="STR_kat_surgery_SubCategory_Kidney">
             <English>Kidney Settings</English>
             <Chinesesimp>肾脏设置</Chinesesimp>
             <Italian>Impostazioni renali</Italian>
             <Polish>Ustawienia Nerek</Polish>
+            <Czech>Nastavení ledvin</Czech>
         </Key>
     </Package>
 </Project>
