@@ -1005,90 +1005,112 @@
         <Key ID="STR_KAT_pharma_treatmentTime_Reorientation">
             <English>Treatment time for reorientation</English>
             <Polish>Czas cucenia</Polish>
+            <Chinesesimp>恢复体态的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per riorientamento.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_displayName">
             <English>Etomidate</English>
+            <Chinesesimp>依托咪酯</Chinesesimp>
             <Italian>Etomidato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_DescShort">
             <English>General Anesthetic</English>
+            <Chinesesimp>全身麻醉</Chinesesimp>
             <Italian>Anestesia generale</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_DescUse">
             <English>Used as a general anesthetic for surgical procedures</English>
+            <Chinesesimp>用作外科手术的全身麻醉剂</Chinesesimp>
             <Italian>Usato come anestetico generale per procedure chirurgiche</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_Use">
             <English>Push Etomidate</English>
+            <Chinesesimp>推注依托咪酯</Chinesesimp>
             <Italian>Inietta Etomidato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_displayName">
             <English>Lorazepam</English>
+            <Chinesesimp>劳拉西泮</Chinesesimp>
             <Italian>Lorazepam</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_DescShort">
             <English>Sedtation medication</English>
+            <Chinesesimp>镇静药物</Chinesesimp>
             <Italian>Farmaco sedativo</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_DescUse">
             <English>Used to sedate patients and prepare them for surgery</English>
+            <Chinesesimp>用于镇静患者并为手术做好准备</Chinesesimp>
             <Italian>Usato per sedare i pazienti e prepararli per un intervento chirurgico</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_Use">
             <English>Push Lorazepam</English>
+            <Chinesesimp>推注劳拉西泮</Chinesesimp>
             <Italian>Inietta Lorazepam</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_displayName">
             <English>Flumazenil</English>
+            <Chinesesimp>氟马西尼</Chinesesimp>
             <Italian>Flumazenil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_DescShort">
             <English>Counter to Lorzaepam</English>
+            <Chinesesimp>对抗劳拉西泮</Chinesesimp>
             <Italian>Antagonista del Lorazepam</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_DescUse">
             <English>Used to bring patients out of sedation</English>
+            <Chinesesimp>用于使患者脱离镇静状态</Chinesesimp>
             <Italian>Usato per portare i pazienti fuori dalla sedazione</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_Use">
             <English>Push Flumazenil</English>
+            <Chinesesimp>推注氟马西尼</Chinesesimp>
             <Italian>Inietta Flumazenil</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Ketamine">
             <English>Push Ketamine</English>
+            <Chinesesimp>推注氯胺酮</Chinesesimp>
             <Italian>Inietta Ketamina</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Ketamine_Box_Display">
             <English>Ketamine</English>
+            <Chinesesimp>氯胺酮</Chinesesimp>
             <Italian>Ketamina</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Ketamine_DescShort">
             <English>Suppress pain</English>
+            <Chinesesimp>抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Fentanyl">
             <English>Push Fentanyl</English>
+            <Chinesesimp>推注芬太尼</Chinesesimp>
             <Italian>Inietta Fentanil</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Fentanyl_Box_Display">
             <English>Fentanyl</English>
+            <Chinesesimp>芬太尼</Chinesesimp>
             <Italian>Fentanil</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Fentanyl_DescShort">
             <English>Suppress pain</English>
+            <Chinesesimp>抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
+            <Chinesesimp>推注纳布啡</Chinesesimp>
             <Italian>Inietta</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Nalbuphine_Box_Display">
             <English>Nalbuphine</English>
+            <Chinesesimp>纳布啡</Chinesesimp>
             <Italian>Spingi Nalbufina (Nubain)</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Nalbuphine_DescShort">
             <English>Suppress pain</English>
+            <Chinesesimp>抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_Activity_usedItem">
@@ -1111,173 +1133,208 @@
         <Key ID="STR_KAT_pharma_SETTING_reorientationChance">
             <English>Chance for succesful reorientation</English>
             <Polish>Szansa na pomyślne ocucenie</Polish>
+            <Chinesesimp>成功进行恢复体态的几率</Chinesesimp>
             <Italian>Possibilità di un riorientamento riuscito</Italian>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_carbonateChance">
             <English>Chance for succesful Carbonate use</English>
             <Polish>Szansa na pomyślne użycie soli trzeźwiących</Polish>
+            <Chinesesimp>成功使用碳酸盐的几率</Chinesesimp>
             <Italian>Possibilità di utilizzare con successo il carbonato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
             <Polish>Poziom wyszkolenia medycznego dla soli trzeźwiących</Polish>
+            <Chinesesimp>允许使用碳酸盐</Chinesesimp>
             <Italian>Consenti di usare il carbonato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>
             <Polish>Czas na użycie soli trzeźwiących</Polish>
+            <Chinesesimp>碳酸盐的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per il carbonato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Naloxone">
             <English>Medical level required for Naloxone</English>
             <Polish>Poziom wyszkolenia medycznego dla Naloksonu</Polish>
+            <Chinesesimp>纳洛酮所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per Naloxone</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Naloxone">
             <English>Treatment time for Naloxone</English>
             <Polish>Czas na wstrzyknięcie Naloksonu</Polish>
+            <Chinesesimp>纳洛酮的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per il naloxone</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
             <Polish>Poziom wyszkolenia medycznego dla TXA</Polish>
+            <Chinesesimp>TXA所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per TXA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_TXA">
             <English>Treatment time for TXA</English>
             <Polish>Czas na wstrzyknięcie TXA</Polish>
+            <Chinesesimp>TXA的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per TXA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Norepinephrine">
             <English>Medical level required for Norepinephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
+            <Chinesesimp>去甲肾上腺素所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per la noradrenalina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Norepinephrine">
             <English>Treatment time for Norepinephrine</English>
             <Polish>Czas na wstrzyknięcie Noradrenaliny</Polish>
+            <Chinesesimp>去甲肾上腺素的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per la noradrenalina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Phenylephrine">
             <English>Medical level required for Phenylephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Fenylefryny</Polish>
+            <Chinesesimp>苯肾上腺素所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per la fenilefrina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Phenylephrine">
             <English>Treatment time for Phenylephrine</English>
             <Polish>Czas na wstrzyknięcie Fenylefryny</Polish>
+            <Chinesesimp>苯肾上腺素的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per la fenilefrina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nitroglycerin">
             <English>Medical level required for Nitroglycerin</English>
             <Polish>Poziom wyszkolenia medycznego dla Nitrogliceryny</Polish>
+            <Chinesesimp>硝酸甘油所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per la nitroglicerina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nitroglycerin">
             <English>Treatment time for Nitroglycerin</English>
             <Polish>Czas na wstrzyknięcie Nitrogliceryny</Polish>
+            <Chinesesimp>硝酸甘油的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per la nitroglicerina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Amiodarone">
             <English>Medical level required for Amiodarone</English>
             <Polish>Poziom wyszkolenia medycznego dla Amiodaronu</Polish>
+            <Chinesesimp>胺碘酮所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per Amiodarone</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Amiodarone">
             <English>Treatment time for Amiodarone</English>
             <Polish>Czas na wstrzyknięcie Amiodaronu</Polish>
+            <Chinesesimp>胺碘酮的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per Amiodarone</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Lidocaine">
             <English>Medical level required for Lidocaine</English>
             <Polish>Poziom wyszkolenia medycznego dla Lidokainy</Polish>
+            <Chinesesimp>利多卡因所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per la lidocaina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Lidocaine">
             <English>Treatment time for Lidocaine</English>
             <Polish>Czas na wstrzyknięcie Lidokainy</Polish>
+            <Chinesesimp>利多卡因的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per la lidocaina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Atropine">
             <English>Medical level required for Atropine</English>
             <Polish>Poziom wyszkolenia medycznego dla Atropiny</Polish>
+            <Chinesesimp>阿托品所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per l'atropina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Atropine">
             <English>Treatment time for Atropine</English>
             <Polish>Czas na wstrzyknięcie Atropiny</Polish>
+            <Chinesesimp>阿托品的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per l'atropina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_EACA">
             <English>Medical level required for EACA</English>
             <Polish>Poziom wyszkolenia medycznego dla EACA</Polish>
+            <Chinesesimp>EACA所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per EACA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_EACA">
             <English>Treatment time for EACA</English>
             <Polish>Czas na wstrzyknięcie EACA</Polish>
+            <Chinesesimp>EACA的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per EACA</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Flumazenil">
             <English>Medical level required for Flumazenil</English>
+            <Chinesesimp>氟马西尼所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per Flumazenil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Flumazenil">
             <English>Treatment time for Flumazenil</English>
             <Polish>Czas na wstrzyknięcie Flumazenilu</Polish>
+            <Chinesesimp>氟马西尼的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per Flumazenil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Lorazepam">
             <English>Medical level required for Lorazepam</English>
+            <Chinesesimp>劳拉西泮所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per Lorazepam</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Lorazepam">
             <English>Treatment time for Lorazepam</English>
             <Polish>Czas na wstrzyknięcie Lorazepamu</Polish>
+            <Chinesesimp>劳拉西泮的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per Lorazepam</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Etomidate">
             <English>Medical level required for Etomidate</English>
+            <Chinesesimp>依托咪酯所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per Etomidato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Etomidate">
             <English>Treatment time for Etomidate</English>
             <Polish>Czas na wstrzyknięcie Etomidatu</Polish>
+            <Chinesesimp>依托咪酯的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per Etomidato</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Ketamine">
             <English>Medical level required for Ketamine</English>
             <Polish>Poziom wyszkolenia medycznego dla Ketaminy</Polish>
+            <Chinesesimp>氯胺酮所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per la ketamina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Ketamine">
             <English>Treatment time for Ketamine</English>
             <Polish>Czas na wstrzyknięcie Ketaminy</Polish>
+            <Chinesesimp>氯胺酮的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per la ketamina</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Fentanyl">
             <English>Medical level required for Fentanyl</English>
             <Polish>Poziom wyszkolenia medycznego dla Fentanylu</Polish>
+            <Chinesesimp>芬太尼所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per Fentanil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Fentanyl">
             <English>Treatment time for Fentanyl</English>
             <Polish>Czas na wstrzyknięcie Fentanylu</Polish>
+            <Chinesesimp>芬太尼的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per Fentanil</Italian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nalbuphine">
             <English>Medical level required for Nalbuphine</English>
             <Polish>Poziom wyszkolenia medycznego dla Nalbuphinu</Polish>
+            <Chinesesimp>纳布啡所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per nalbufina (nubain)</Italian>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nalbuphine">
             <English>Treatment time for Nalbuphine</English>
             <Polish>Czas na wstrzyknięcie Nalbuphinu</Polish>
+            <Chinesesimp>纳布啡的治疗时间</Chinesesimp>
             <Italian>Tempo di trattamento per nalbufina (nubain)</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
+            <Chinesesimp>基础设置</Chinesesimp>
             <Italian>Impostazioni di base</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_ApplyIV">
