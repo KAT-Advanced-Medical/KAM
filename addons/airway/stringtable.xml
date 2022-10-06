@@ -1225,16 +1225,19 @@
             <Polish>Podstawowe Ustawienia</Polish>
             <Italian>Impostazioni base</Italian>
             <Czech>Základní nastavení</Czech>
+            <French>Paramètres basiques</French>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_RecoveryPositionOverstretch">
             <English>Recovery position + Overstretch Settings</English>
             <Italian>Impostazioni posizione laterale di sicurezza e stiramento</Italian>
             <Czech>Nastavení stabilizované polohy a narovnávání hlavy</Czech>
+            <French>Paramètres de position latérale de sécurité + hyperextension</French>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
             <Italian>Impostazione oggetti vie aeree.</Italian>
             <Czech>Nastavení předmětů dýchacích cest</Czech>
+            <French>Paramètres des objets des voies aériennes</French>
         </Key>
     </Package>
 </Project>

@@ -1325,21 +1325,25 @@
             <English>Max Success chance for AED-X</English>
             <Italian>Massima probabilità di successo per DAE-X</Italian>
             <Czech>Max šance úspěchu pro AED-X</Czech>
+            <French>Chance maximale de succès de l'AED-X</French>
         </Key>
         <Key ID="STR_KAT_circulation_AED_MaxChance">
             <English>Max Success chance for AED</English>
             <Italian>Massima probabilità di successo per DAE</Italian>
             <Czech>Max šance úspěchu pro AED</Czech>
+            <French>Chance maximale de succès de l'AED</French>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_MinChance">
             <English>Min Success chance for AED-X</English>
             <Italian>Minima probabilità di successo per DAE-X</Italian>
             <Czech>Min šance úspěchu pro AED-X</Czech>
+            <French>Chance minimale de succès de l'AED-X</French>
         </Key>
         <Key ID="STR_KAT_circulation_AED_MinChance">
             <English>Min Success chance for AED</English>
             <Italian>Minima probabilità di successo per DAE</Italian>
             <Czech>Min šance úspěchu pro AED</Czech>
+            <French>Chance minimale de succès de l'AED</French>
         </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED">
             <English>Allow AED</English>
@@ -1465,31 +1469,37 @@
             <English>Max CPR Chance for Doctors</English>
             <Italian>Massima probabilità RCP per i dottori.</Italian>
             <Czech>Max šance úspěchu resuscitace pro Doktory</Czech>
+            <French>Chance maximale de succès de la RCP pour les médecins</French>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
             <Italian>Massima probabilità RCP per i medici.</Italian>
             <Czech>Max šance úspěchu resuscitace Polní zdravotníky</Czech>
+            <French>Chance maximale de succès de la RCP pour les infirmiers</French>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
             <Italian>Massima probabilità RCP per i default.</Italian>
             <Czech>Max šance úspěchu resuscitace pro Základní</Czech>
+            <French>Chance maximale de succès de la RCP par défaut</French>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_Doctor">
             <English>Min CPR Chance for Doctors</English>
             <Italian>Minima probabilità RCP per i dottori.</Italian>
             <Czech>Min šance úspěchu resuscitace pro Doktory</Czech>
+            <French>Chance minimale de succès de la RCP pour les médecins</French>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
             <Italian>Minima probabilità RCP per i medici.</Italian>
             <Czech>Min šance úspěchu resuscitace Polní zdravotníky</Czech>
+            <French>Chance minimale de succès de la RCP pour les infirmiers</French>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_Default">
             <English>Min CPR Chance for Default</English>
             <Italian>Minima probabilità RCP per i default.</Italian>
             <Czech>Min šance úspěchu resuscitace pro Základní</Czech>
+            <French>Chance minimale de succès de la RCP par défaut</French>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -1721,21 +1731,25 @@
             <Polish>Podstawowe Ustawienia</Polish>
             <Italian>Impostazioni base</Italian>
             <Czech>Základní nastavení</Czech>
+            <French>Paramètres basiques</French>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_AED">
             <English>AED + AED-X Settings</English>
             <Italian>Impostazioni DAE e DAE-X</Italian>
             <Czech>Nastavení AED + AED-X</Czech>
+            <French>Paramètres de l'AED + AED-X</French>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_CPR">
             <English>CPR Settings</English>
             <Italian>Impostazioni RCP</Italian>
             <Czech>Nastavení resuscitace</Czech>
+            <French>Paramètres de la RCP</French>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
             <Italian>Impostazioni prelievo sangue</Italian>
             <Czech>Nastavení odběru krve</Czech>
+            <French>Paramètres des prises de sang</French>
         </Key>
     </Package>
 </Project>
