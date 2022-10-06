@@ -1178,42 +1178,50 @@
             <English>Pneumothorax deterioration chance</English>
             <Italian>Possibilità di deterioramento del pneumotorace</Italian>
             <Czech>Šance na zhoršení pneumotoraxu</Czech>
+            <French>Chance de détérioration d'un pneumothorax</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance_Desc">
             <English>Chance for pneumothorax to deteriorate into tension pneumothorax</English>
             <Italian>Possibilità che il pneumotorace possa peggiorare in pneumotorace tensivo</Italian>
             <Czech>Šance na zhoršení pneumotoraxu do tenzního pneumotoraxu</Czech>
+            <French>Chance qu'un pneumothorax se détériore en un pneumothorax sous tension</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown">
             <English>Deteriorating pneumothorax countdown</English>
             <Italian>Conto alla rovescia del pneumotorace in peggioramento</Italian>
             <Czech>Odpočet pro zhoršení pneumotoraxu</Czech>
+            <French>Compte à rebours de détérioration d'un pneumothorax</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown_Desc">
             <English>After this countdown a chance will be rolled whether or not the pneumothorax will deteriorate into tension pneumothorax</English>
             <Italian>Dopo questo conto alla rovescia verrà lanciata una possibilità se il pneumotorace si deteriorerà o meno in pneumotorace tensivo</Italian>
             <Czech>Poté co proběhne tento odpočet bude zkontrolována šance, zda se pneumotorax zhorší na tenzní pneumotorax</Czech>
+            <French>Après ce compte à rebours, il y aura une chance aléatoire qu'un pneumothorax empire ou non en un pneumothorax sous tension</French>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
             <Italian>Impostazioni di base</Italian>
             <Czech>Základní nastavení</Czech>
+            <French>Paramètres basiques</French>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
             <Italian>Impostazioni oggetti respirazione </Italian>
             <Czech>Nastavení dýchacích předmětů</Czech>
+            <French>Paramètres des objets de respiration</French>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_ThoraxInjuries">
             <English>Thorax injuries Settings</English>
             <Italian> Impostazioni lesioni al torace</Italian>
             <Czech>Nastavení zranění toraxu</Czech>
+            <French>Paramètres des blessures au thorax</French>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Cyanosis">
             <English>Cyanosis Settings</English>
             <Italian>Impostazioni di cianosi</Italian>
             <Czech>Nastavení cyanózy</Czech>
+            <French>Paramètres de la cyanose</French>
         </Key>
     </Package>
 </Project>
