@@ -33,9 +33,19 @@ if (!GVAR(advancedMedication)) exitWith {
         case "Morphine": {
             private _painSuppress = GET_PAIN_SUPPRESS(_patient);
             _patient setVariable [VAR_PAIN_SUPP, (_painSuppress + MORPHINE_PAIN_SUPPRESSION) min 1, true];
+            [_patient, 0.15] call kat_pharma_fnc_alphaAction;
         };
         case "Epinephrine": {
-            ["ace_medical_WakeUp", _patient] call CBA_fnc_localEvent;
+            [_patient, -0.15] call kat_pharma_fnc_alphaAction;
+        };
+        case "Norepinephrine": {
+            [_patient, -0.3] call kat_pharma_fnc_alphaAction;
+        };
+        case "Phenylephrine": {
+            [_patient, -0.5] call kat_pharma_fnc_alphaAction;
+        };
+        case "Nitroglycerin": {
+            [_patient, 0.3] call kat_pharma_fnc_alphaAction;
         };
     };
 };
