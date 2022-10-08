@@ -20,7 +20,7 @@ params ["_unit"];
 
 if ((_unit getVariable ["ace_medical_bloodVolume", 6.0]) < 5.1) exitWith { false };
 if (_unit getVariable ["ace_medical_inCardiacArrest", false]) exitWith { false };
-if (_unit getVariable ["kat_surgery_sedated", true]) exitWith { false };
+if (_unit getVariable ["kat_surgery_sedated", false]) exitWith { false };
 
 private _bloodPressure = [_unit] call ace_medical_status_fnc_getBloodPressure;
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
