@@ -33,7 +33,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(closedReduction_MedLevel);
         treatmentTime = QGVAR(closedTime);
         items[] = {};
-        condition = "true";
+        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 1)] call FUNC(fractureCheck));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(closedFracture));
     };
@@ -46,8 +46,8 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(openTime);
-        items[] = {};
-        condition = "true";
+        items[] = {"kat_plate"};
+        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.5)] call FUNC(openFractureCheck));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(openFracture));
     };
@@ -61,7 +61,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"kat_retractor"};
-        condition = "true";
+        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openFractureCheck));
         consumeItem = 0;
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openFractureProgress));
@@ -76,7 +76,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(incisionTime);
         items[] = {"kat_scalpel"};
-        condition = "true";
+        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(openFractureCheck));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(openFractureIncision));
     };
@@ -90,7 +90,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"kat_clamp"};
-        condition = "true";
+        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call FUNC(openFractureCheck));
         consumeItem = 0;
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call FUNC(openFractureProgress));
@@ -105,7 +105,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"ACE_salineIV_250"};
-        condition = "true";
+        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openFractureCheck));
         patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openFractureProgress));
     };
@@ -119,7 +119,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(debrideTime);
         items[] = {"kat_scalpel"};
-        condition = "true";
+        condition = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(debridementCheck));
         consumeItem = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(debridementClear));
     };
@@ -133,7 +133,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(npwtTime);
         items[] = {"kat_vacuum"};
-        condition = "true";
+        condition = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(debridementCheck));
         consumeItem = 0;
         callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(debridementStart));
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(debridementMinor));
