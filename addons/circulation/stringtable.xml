@@ -1470,36 +1470,42 @@
             <Italian>Massima probabilità RCP per i dottori.</Italian>
             <Czech>Max šance úspěchu resuscitace pro Doktory</Czech>
             <French>Chance maximale de succès de la RCP pour les médecins</French>
+            <Polish>Maksymalna szansa CPR dla Doktorów</Polish>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
             <Italian>Massima probabilità RCP per i medici.</Italian>
             <Czech>Max šance úspěchu resuscitace Polní zdravotníky</Czech>
             <French>Chance maximale de succès de la RCP pour les infirmiers</French>
+            <Polish>Maksymalna szansa CPR dla Medyków</Polish>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
             <Italian>Massima probabilità RCP per i default.</Italian>
             <Czech>Max šance úspěchu resuscitace pro Základní</Czech>
             <French>Chance maximale de succès de la RCP par défaut</French>
+            <Polish>Maksymalna szansa domyślnie</Polish>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_Doctor">
             <English>Min CPR Chance for Doctors</English>
             <Italian>Minima probabilità RCP per i dottori.</Italian>
             <Czech>Min šance úspěchu resuscitace pro Doktory</Czech>
             <French>Chance minimale de succès de la RCP pour les médecins</French>
+            <Polish>Minimalna szansa CPR dla Doktorów</Polish>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
             <Italian>Minima probabilità RCP per i medici.</Italian>
             <Czech>Min šance úspěchu resuscitace Polní zdravotníky</Czech>
             <French>Chance minimale de succès de la RCP pour les infirmiers</French>
+            <Polish>Minimalna szansa CPR dla Medyków</Polish>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_Default">
             <English>Min CPR Chance for Default</English>
             <Italian>Minima probabilità RCP per i default.</Italian>
             <Czech>Min šance úspěchu resuscitace pro Základní</Czech>
             <French>Chance minimale de succès de la RCP par défaut</French>
+            <Polish>Minimalna szansa CPR domyślnie</Polish>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -1738,18 +1744,21 @@
             <Italian>Impostazioni DAE e DAE-X</Italian>
             <Czech>Nastavení AED + AED-X</Czech>
             <French>Paramètres de l'AED + AED-X</French>
+            <Polish>Ustawienia dla AED + AED-X</Polish>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_CPR">
             <English>CPR Settings</English>
             <Italian>Impostazioni RCP</Italian>
             <Czech>Nastavení resuscitace</Czech>
             <French>Paramètres de la RCP</French>
+            <Polish>Ustawienia CPR</Polish>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
             <Italian>Impostazioni prelievo sangue</Italian>
             <Czech>Nastavení odběru krve</Czech>
             <French>Paramètres des prises de sang</French>
+            <Polish>Ustawienia pobierania krwi</Polish>
         </Key>
     </Package>
 </Project>
