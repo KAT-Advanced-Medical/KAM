@@ -210,16 +210,16 @@ if (_totalIvVolume >= 1) then {
 };
 
 //Handle IV placement
-private _placed = _target getVariable [QEGVAR(pharma,IVplaced), false];
-private _site = _target getVariable [QEGVAR(pharma,IVsite), 0];
+private _placed = _target getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0]];
+private _IVactual = _placed select _selectionN;
 
-if (_placed && {_site == _selectionN}) then {
-    if (_site > 1) then {
-        private _text = format ["STR_kat_pharma_%1_Display", "IV_16"];
-        _woundEntries pushback [localize _text, [0.3, 0.3, 0.5, 1]];
-    } else {
+if (_IVactual > 0) then {
+    if (_IVactual == 1) then {
         private _text = format ["STR_kat_pharma_%1_Display", "IO_45"];
-        _woundEntries pushback [localize _text, [0.3, 0.3, 0.5, 1]];
+        _entries pushBack [localize _text, [0.3, 0.6, 0.3, 1]];
+    } else {
+        private _text = format ["STR_kat_pharma_%1_Display", "IV_16"];
+        _entries pushBack [localize _text, [0.3, 0.6, 0.3, 1]];
     };
 };
 
