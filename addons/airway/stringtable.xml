@@ -225,6 +225,7 @@
             <Japanese>軽減された</Japanese>
             <Italian>Ostruzione mitigata.</Italian>
             <Czech>Zmírněné zablokování</Czech>
+            <Korean>막힘 완화됨</Korean>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
@@ -1201,7 +1202,7 @@
             <Spanish>No obstruída</Spanish>
             <Chinese>無 阻塞</Chinese>
             <Czech>Není zablokováno</Czech>
-            <Korean>아니다 막힘(이물질)</Korean>
+            <Korean>혀에 의해 막히지 않음</Korean>
             <French>Non obstruées</French>
             <Turkish>Değil Kapanma</Turkish>
             <Italian>No ostruita</Italian>
@@ -1214,7 +1215,7 @@
             <Spanish>No ocluída</Spanish>
             <Chinese>無 閉塞</Chinese>
             <Czech>Není uzavřeno</Czech>
-            <Korean>아니다 막힘</Korean>
+            <Korean>구토에 의해 막히지 않음</Korean>
             <French>Non occludées</French>
             <Turkish>Değil Tıkalı</Turkish>
             <Italian>No occlusa</Italian>
@@ -1226,18 +1227,21 @@
             <Italian>Impostazioni base</Italian>
             <Czech>Základní nastavení</Czech>
             <French>Paramètres basiques</French>
+            <Korean>일반 설정</Korean>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_RecoveryPositionOverstretch">
             <English>Recovery position + Overstretch Settings</English>
             <Italian>Impostazioni posizione laterale di sicurezza e stiramento</Italian>
             <Czech>Nastavení stabilizované polohy a narovnávání hlavy</Czech>
             <French>Paramètres de position latérale de sécurité + hyperextension</French>
+            <Korean>회복 자세 + 머리 젖히기 설정</Korean>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
             <Italian>Impostazione oggetti vie aeree.</Italian>
             <Czech>Nastavení předmětů dýchacích cest</Czech>
             <French>Paramètres des objets des voies aériennes</French>
+            <Korean>기도 관련 아이템 설정</Korean>
         </Key>
     </Package>
 </Project>
