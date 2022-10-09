@@ -1180,6 +1180,7 @@
             <Czech>Šance na zhoršení pneumotoraxu</Czech>
             <French>Chance de détérioration d'un pneumothorax</French>
             <Polish>Szansa na pogorszenie się odmy płucnej</Polish>
+            <Korean>기흉 악화 확률</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance_Desc">
             <English>Chance for pneumothorax to deteriorate into tension pneumothorax</English>
@@ -1187,6 +1188,7 @@
             <Czech>Šance na zhoršení pneumotoraxu do tenzního pneumotoraxu</Czech>
             <French>Chance qu'un pneumothorax se détériore en un pneumothorax sous tension</French>
             <Polish>Szansa na pogorszenie się odmy płucnej w odmę prężną</Polish>
+            <Korean>기흉이 긴장성 기흉으로 악화될 확률</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown">
             <English>Deteriorating pneumothorax countdown</English>
@@ -1194,6 +1196,7 @@
             <Czech>Odpočet pro zhoršení pneumotoraxu</Czech>
             <French>Compte à rebours de détérioration d'un pneumothorax</French>
             <Polish>Licznik do pogorszenia się odmy</Polish>
+            <Korean>기흉 악화 카운트다운</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown_Desc">
             <English>After this countdown a chance will be rolled whether or not the pneumothorax will deteriorate into tension pneumothorax</English>
@@ -1201,6 +1204,7 @@
             <Czech>Poté co proběhne tento odpočet bude zkontrolována šance, zda se pneumotorax zhorší na tenzní pneumotorax</Czech>
             <French>Après ce compte à rebours, il y aura une chance aléatoire qu'un pneumothorax empire ou non en un pneumothorax sous tension</French>
             <Polish>Po tym odliczaniu zostanie wyliczona szansa na to, czy odma płucna przekształci się w odmę prężną.</Polish>
+            <Korean>이 카운트다운이 끝나면 기흉이 긴장성 기흉으로 악화되는지 여부가 결정됩니다.</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -1208,6 +1212,7 @@
             <Italian>Impostazioni di base</Italian>
             <Czech>Základní nastavení</Czech>
             <French>Paramètres basiques</French>
+            <Korean>일반 설정</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
@@ -1215,6 +1220,7 @@
             <Czech>Nastavení dýchacích předmětů</Czech>
             <French>Paramètres des objets de respiration</French>
             <Polish>Ustawienia dla przedmiotów</Polish>
+            <Korean>호흡기 관련 아이템 설정</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_ThoraxInjuries">
             <English>Thorax injuries Settings</English>
@@ -1222,6 +1228,7 @@
             <Czech>Nastavení zranění toraxu</Czech>
             <French>Paramètres des blessures au thorax</French>
             <Polish>Ustawienia dla obrażeń klatki piersiowej</Polish>
+            <Korean>흉부 부상 설정</Korean>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Cyanosis">
             <English>Cyanosis Settings</English>
@@ -1229,6 +1236,7 @@
             <Czech>Nastavení cyanózy</Czech>
             <French>Paramètres de la cyanose</French>
             <Polish>Ustawienia sinicy</Polish>
+            <Korean>치아노제 설정</Korean>
         </Key>
     </Package>
 </Project>

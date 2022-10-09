@@ -1326,24 +1326,28 @@
             <Italian>Massima probabilità di successo per DAE-X</Italian>
             <Czech>Max šance úspěchu pro AED-X</Czech>
             <French>Chance maximale de succès de l'AED-X</French>
+            <Korean>X-시리즈 AED의 최대 성공 확률</Korean>
         </Key>
         <Key ID="STR_KAT_circulation_AED_MaxChance">
             <English>Max Success chance for AED</English>
             <Italian>Massima probabilità di successo per DAE</Italian>
             <Czech>Max šance úspěchu pro AED</Czech>
             <French>Chance maximale de succès de l'AED</French>
+            <Korean>자동제세동기의 최대 성공 확률</Korean>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_MinChance">
             <English>Min Success chance for AED-X</English>
             <Italian>Minima probabilità di successo per DAE-X</Italian>
             <Czech>Min šance úspěchu pro AED-X</Czech>
             <French>Chance minimale de succès de l'AED-X</French>
+            <Korean>X-시리즈 AED의 최소 성공 확률</Korean>
         </Key>
         <Key ID="STR_KAT_circulation_AED_MinChance">
             <English>Min Success chance for AED</English>
             <Italian>Minima probabilità di successo per DAE</Italian>
             <Czech>Min šance úspěchu pro AED</Czech>
             <French>Chance minimale de succès de l'AED</French>
+            <Korean>자동제세동기의 최소 성공 확률</Korean>
         </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED">
             <English>Allow AED</English>
@@ -1471,6 +1475,7 @@
             <Czech>Max šance úspěchu resuscitace pro Doktory</Czech>
             <French>Chance maximale de succès de la RCP pour les médecins</French>
             <Polish>Maksymalna szansa CPR dla Doktorów</Polish>
+            <Korean>군의관의 최대 CPR 확률</Korean>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
@@ -1478,6 +1483,7 @@
             <Czech>Max šance úspěchu resuscitace Polní zdravotníky</Czech>
             <French>Chance maximale de succès de la RCP pour les infirmiers</French>
             <Polish>Maksymalna szansa CPR dla Medyków</Polish>
+            <Korean>의무병의 최대 CPR 확률</Korean>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -1485,6 +1491,7 @@
             <Czech>Max šance úspěchu resuscitace pro Základní</Czech>
             <French>Chance maximale de succès de la RCP par défaut</French>
             <Polish>Maksymalna szansa domyślnie</Polish>
+            <Korean>일반병의 최대 CPR 확률</Korean>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_Doctor">
             <English>Min CPR Chance for Doctors</English>
@@ -1492,6 +1499,7 @@
             <Czech>Min šance úspěchu resuscitace pro Doktory</Czech>
             <French>Chance minimale de succès de la RCP pour les médecins</French>
             <Polish>Minimalna szansa CPR dla Doktorów</Polish>
+            <Korean>군의관의 최소 CPR 확률</Korean>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
@@ -1499,6 +1507,7 @@
             <Czech>Min šance úspěchu resuscitace Polní zdravotníky</Czech>
             <French>Chance minimale de succès de la RCP pour les infirmiers</French>
             <Polish>Minimalna szansa CPR dla Medyków</Polish>
+            <Korean>의무병의 최소 CPR 확률</Korean>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_Default">
             <English>Min CPR Chance for Default</English>
@@ -1506,6 +1515,7 @@
             <Czech>Min šance úspěchu resuscitace pro Základní</Czech>
             <French>Chance minimale de succès de la RCP par défaut</French>
             <Polish>Minimalna szansa CPR domyślnie</Polish>
+            <Korean>일반병의 최소 CPR 확률</Korean>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -1738,6 +1748,7 @@
             <Italian>Impostazioni base</Italian>
             <Czech>Základní nastavení</Czech>
             <French>Paramètres basiques</French>
+            <Korean>일반 설정</Korean>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_AED">
             <English>AED + AED-X Settings</English>
@@ -1745,6 +1756,7 @@
             <Czech>Nastavení AED + AED-X</Czech>
             <French>Paramètres de l'AED + AED-X</French>
             <Polish>Ustawienia dla AED + AED-X</Polish>
+            <Korean>자동제세동기 + X-시리즈 AED 설정</Korean>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_CPR">
             <English>CPR Settings</English>
@@ -1752,6 +1764,7 @@
             <Czech>Nastavení resuscitace</Czech>
             <French>Paramètres de la RCP</French>
             <Polish>Ustawienia CPR</Polish>
+            <Korean>심폐소생술 설정</Korean>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
@@ -1759,6 +1772,7 @@
             <Czech>Nastavení odběru krve</Czech>
             <French>Paramètres des prises de sang</French>
             <Polish>Ustawienia pobierania krwi</Polish>
+            <Korean>채혈 설정</Korean>
         </Key>
     </Package>
 </Project>
