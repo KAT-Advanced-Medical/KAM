@@ -912,6 +912,7 @@
             <French>Les médicaments nécessitent une IV/IO</French>
             <Italian>Le medicazioni richiedono un accesso IV/IO</Italian>
             <Czech>Léčiva vyžadující IV/IO</Czech>
+            <Polish>Leki wymagają IV/IO</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV_Medications_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone medications.\n If false, you can give them without it.</English>
@@ -919,6 +920,7 @@
             <French>Faux par défaut. Si vrai, il sera nécessaire d'insérer une IV/IO avant de pouvoir donner des médicaments à quelqu'un.\n Si faux, ils pourront être donnés sans</French>
             <Italian>Falso nel default. Se vero/true, dovrai prima inserire un IV/IO per poter effettuare alcune medicazioni. \n Se falso, potrai dargliele senza IV/IO. </Italian>
             <Czech>V základu vypnuto. Pokud zapnuto, budete potřebovat zavést IV/IO jako první, než budete moct někomu dávat léčiva \n Pokud vypnuto, tak je můžete dávat bez nich</Czech>
+            <Polish>Domyślnie wyłączone. Jeśli włączone leki będą wymagać założonego IV/IO \n Wyłączone pozwoli podać leki bez tego.</Polish>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -1024,6 +1026,7 @@
             <Italian>Etomidato</Italian>
             <Czech>Etomidát</Czech>
             <French>Étomidate</French>
+            <Polish>Etomidat</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_DescShort">
             <English>General Anesthetic</English>
@@ -1031,6 +1034,7 @@
             <Italian>Anestesia generale</Italian>
             <Czech>Obecné anestetika</Czech>
             <French>Anesthésie générale</French>
+            <Polish>Anestetyk</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_DescUse">
             <English>Used as a general anesthetic for surgical procedures</English>
@@ -1045,6 +1049,7 @@
             <Italian>Inietta Etomidato</Italian>
             <Czech>Vstříknout etomidát</Czech>
             <French>Administrer de l'étomidate</French>
+            <Polish>Wstrzyknij Etomidat</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_displayName">
             <English>Lorazepam</English>
@@ -1052,6 +1057,7 @@
             <Italian>Lorazepam</Italian>
             <Czech>Lorazepam</Czech>
             <French>Lorazépam</French>
+            <Polish>Lorazepam</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_DescShort">
             <English>Sedtation medication</English>
@@ -1059,6 +1065,7 @@
             <Italian>Farmaco sedativo</Italian>
             <Czech>Sedační léky</Czech>
             <French>Médicament de sédation</French>
+            <Polish>Środek usypiający</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_DescUse">
             <English>Used to sedate patients and prepare them for surgery</English>
@@ -1073,6 +1080,7 @@
             <Italian>Inietta Lorazepam</Italian>
             <Czech>Vstříknout Lorazepam</Czech>
             <French>Administrer du lorazépam</French>
+            <Polish>Wstrzyknij Lorazepam</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_displayName">
             <English>Flumazenil</English>
@@ -1080,6 +1088,7 @@
             <Italian>Flumazenil</Italian>
             <Czech>Flumazenil</Czech>
             <French>Flumazénil</French>
+            <Polish>Flumazenil</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_DescShort">
             <English>Counter to Lorzaepam</English>
@@ -1087,6 +1096,7 @@
             <Italian>Antagonista del Lorazepam</Italian>
             <Czech>Proti Lorzaepamu</Czech>
             <French>Lutte contre le lorazépam</French>
+            <Polish>Środek wybudzający z Lorazepamu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_DescUse">
             <English>Used to bring patients out of sedation</English>
@@ -1101,6 +1111,7 @@
             <Italian>Inietta Flumazenil</Italian>
             <Czech>Vstříknout Flumazenil</Czech>
             <French>Administrer du flumazénil</French>
+            <Polish>Wstrzyknij Flumazenil</Polish>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Ketamine">
             <English>Push Ketamine</English>
@@ -1108,6 +1119,7 @@
             <Italian>Inietta Ketamina</Italian>
             <Czech>Vstříknout ketamin</Czech>
             <French>Administrer de la kétamine</French>
+            <Polish>Wstrzyknij Ketaminę</Polish>
         </Key>
         <Key ID="STR_KAT_pharma_Ketamine_Box_Display">
             <English>Ketamine</English>
@@ -1115,6 +1127,7 @@
             <Italian>Ketamina</Italian>
             <Czech>Ketamin</Czech>
             <French>Kétamine</French>
+            <Polish>Ketamina</Polish>
         </Key>
         <Key ID="STR_KAT_pharma_Ketamine_DescShort">
             <English>Suppress pain</English>
@@ -1122,6 +1135,7 @@
             <Italian>Sopprime il dolore</Italian>
             <Czech>Potlačit bolest</Czech>
             <French>Combat la douleur</French>
+            <Polish>Zwalcza ból</Polish>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Fentanyl">
             <English>Push Fentanyl</English>
@@ -1129,6 +1143,7 @@
             <Italian>Inietta Fentanil</Italian>
             <Czech>Vstříknout fentanyl</Czech>
             <French>Administrer du fentanyl</French>
+            <Polish>Wstrzyknij Fentanyl</Polish>
         </Key>
         <Key ID="STR_KAT_pharma_Fentanyl_Box_Display">
             <English>Fentanyl</English>
@@ -1136,6 +1151,7 @@
             <Italian>Fentanil</Italian>
             <Czech>Fentanyl</Czech>
             <French>Fentanyl</French>
+            <Polish>Fentanyl</Polish>
         </Key>
         <Key ID="STR_KAT_pharma_Fentanyl_DescShort">
             <English>Suppress pain</English>
@@ -1143,6 +1159,7 @@
             <Italian>Sopprime il dolore</Italian>
             <Czech>Potlačit bolest</Czech>
             <French>Combat la douleur</French>
+            <Polish>Zwalcza ból</Polish>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
@@ -1150,6 +1167,7 @@
             <Italian>Inietta</Italian>
             <Czech>Vstříknout Nalbuphine</Czech>
             <French>Administrer de la nalbuphine</French>
+            <Polish>Wstrzyknij Nalbufinę</Polish>
         </Key>
         <Key ID="STR_KAT_pharma_Nalbuphine_Box_Display">
             <English>Nalbuphine</English>
@@ -1157,6 +1175,7 @@
             <Italian>Spingi Nalbufina (Nubain)</Italian>
             <Czech>Nalbuphine</Czech>
             <French>Nalbuphine</French>
+            <Polish>Nalbufina</Polish>
         </Key>
         <Key ID="STR_KAT_pharma_Nalbuphine_DescShort">
             <English>Suppress pain</English>
@@ -1164,6 +1183,7 @@
             <Italian>Sopprime il dolore</Italian>
             <Czech>Potlačit bolest</Czech>
             <French>Combat la douleur</French>
+            <Polish>Zwalcza ból</Polish>
         </Key>
         <Key ID="STR_KAT_pharma_Activity_usedItem">
             <English>%1 used %2</English>
@@ -1597,18 +1617,21 @@
             <Italian>%1 ha eseguito uno sciacquo salino su %2</Italian>
             <Czech>%1 provedl vypláchnutí solným roztokem na %2</Czech>
             <French>%1 a effectué un rinçage à la solution saline sur %2</French>
+            <Polish>%1 przeprowadził płukanie solą fizjologiczną na %2 </Polish>
         </Key>
         <Key ID="STR_kat_pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
             <Italian>La IV del paziente è ostruita/bloccata.</Italian>
             <Czech>IV pacienta je blokována</Czech>
             <French>L'IV du patient est bloquée</French>
+            <Polish>IV jest zablokowane</Polish>
         </Key>
         <Key ID="STR_kat_pharma_IVblock_clear">
             <English>Patient's IV is clear</English>
             <Italian>La IV del paziente è pulita.</Italian>
             <Czech>IV pacienta je čistá</Czech>
             <French>L'IV du patient est dégagée</French>
+            <Polish>IV jest drożne</Polish>
         </Key>
         <Key ID="STR_kat_pharma_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
@@ -1699,18 +1722,21 @@
             <Italian>Controlla il respiro</Italian>
             <Czech>Zkontrolujte dech</Czech>
             <French>Contrôler l'haleine</French>
+            <Polish>Sprawdź oddech</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Inspect_Catheter">
             <English>Inspect Catheter</English>
             <Italian>Ispeziona il catetere</Italian>
             <Czech>Zkontrolujte katétr</Czech>
             <French>Inspecter le cathéter</French>
+            <Polish>Sprawdź IV</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Saline_Flush">
             <English>Saline Flush</English>
             <Italian>Risciaquo salino</Italian>
             <Czech>Vypláchnutí solným roztokem</Czech>
             <French>Rinçage à la solution saline</French>
+            <Polish>Płukanie solą fizjologiczną</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage">
             <English>IV Check limb damage</English>
