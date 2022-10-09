@@ -72,7 +72,7 @@ _patient setVariable ["ace_medical_peripheralResistance", 100, true];
 
 // IVs
 _patient setVariable ["ace_medical_ivBags", nil, true];
-_patient setVariable ["kat_pharma_flowRate", 1, true];
+_patient setVariable ["kat_pharma_alphaAction", 1, true];
 _patient setVariable ["kat_pharma_IV", [0,0,0,0,0,0], true];
 _patient setVariable ["kat_pharma_IVpfh", [0,0,0,0,0,0], true];
 _patient setVariable ["kat_pharma_active", false, true];

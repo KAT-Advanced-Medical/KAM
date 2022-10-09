@@ -18,6 +18,9 @@
 
 params ["_medic", "_patient"];
 
+private _sedated = _patient getVariable [QGVAR(sedated), false];
+if (_sedated) exitWith {};
+
 private _bloodPressure = [_patient] call ace_medical_status_fnc_getBloodPressure;
 _bloodPressureH = _bloodPressure select 1;
 

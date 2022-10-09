@@ -35,7 +35,11 @@ if (!GVAR(advancedMedication)) exitWith {
             _patient setVariable [VAR_PAIN_SUPP, (_painSuppress + MORPHINE_PAIN_SUPPRESSION) min 1, true];
         };
         case "Epinephrine": {
-            ["ace_medical_WakeUp", _patient] call CBA_fnc_localEvent;
+            private _sedated = _patient getVariable [QGVAR(sedated), false];
+            if !(_sedated) then {
+                ["ace_medical_WakeUp", _patient] call CBA_fnc_localEvent;
+            };
+            
             [_patient, -0.15] call kat_pharma_fnc_alphaAction;
         };
     };

@@ -18,6 +18,9 @@
 
 params ["_medic", "_patient"];
 
+private _sedated = _patient getVariable [QGVAR(sedated), false];
+if (_sedated) exitWith {};
+
 private _bloodVolume = GET_BLOOD_VOLUME(_patient);
 private _pulse = GET_HEART_RATE(_patient);
 
