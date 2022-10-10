@@ -3,19 +3,21 @@ class CfgWeapons {
     class CBA_MiscItem_ItemInfo;
 
     class kat_PainkillerItem: ACE_ItemCore {
-        scope = 1; // no mistake, just a placeholder, cause ACE can't handle magazines. DO NOT USE!
+        scope = 2; //This item is not actually used and it is replaced by ace_common_fnc_registerItemReplacement 
         author = "Katalam";
         displayName = CSTRING(Painkillers_Box_Display);
+        picture = QPATHTOF(ui\icon_painkillers.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0;
+            mass = 1;
         };
     };
     class kat_CarbonateItem: ACE_ItemCore {
-        scope = 1; // no mistake, just a placeholder, cause ACE can't handle magazines. DO NOT USE!
+        scope = 2; //This item is not actually used and it is replaced by ace_common_fnc_registerItemReplacement 
         author = "Mazinski.H";
         displayName = CSTRING(Carbonate_Box_Display);
+        picture = QPATHTOF(ui\icon_Carbonate.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0;
+            mass = 1;
         };
     };
     class kat_IV_16: ACE_ItemCore {

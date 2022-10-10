@@ -17,15 +17,13 @@
 
 params ["_unit"];
 
-_unit setVariable [QGVAR(flowRate), 1, true];
-_unit setVariable [QGVAR(IVplaced), false, true];
-_unit setVariable [QGVAR(usedIV), "", true];
-_unit setVariable [QGVAR(IV_counts), 0, true];
-_unit setVariable [QGVAR(IVsite), 0, true];
+_unit setVariable [QGVAR(IV), [0,0,0,0,0,0], true];
+_unit setVariable [QGVAR(IVpfh), [0,0,0,0,0,0], true];
 _unit setVariable [QGVAR(IVblock), false, true];
 _unit setVariable [QGVAR(IVflush), false, true];
-_unit setvariable [QGVAR(active), false, true];
-_unit setvariable [QGVAR(sedated), false, true];
+_unit setVariable [QGVAR(active), false, true];
+_unit setVariable [QGVAR(sedated), false, true];
+_unit setVariable [QGVAR(alphaAction), 1];
 
 _unit setVariable [QGVAR(TXA), 1, true];
 _unit setVariable [QGVAR(ondUse), false, true];

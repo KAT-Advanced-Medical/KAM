@@ -354,6 +354,7 @@
             <Japanese>互換性のないアドオンの警告</Japanese>
             <French>Avertissement d'addon incompatible</French>
             <Italian>Avviso di addon incompatibile.</Italian>
+            <Polish>Ostrzeżenie o niekompatybilnym modzie</Polish>
         </Key>
         <Key ID="STR_kat_misc_SETTING_incompatibilityWarning_Desc">
             <English>Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that could negatively affect correct functionality of KAT are used.\n Warning disappears after 60 seconds.</English>
@@ -363,6 +364,7 @@
             <Japanese>KATの正常な動作に悪影響を与える可能性のある互換性のない(開発チームによりリストされた)アドオンが使用された場合、警告を表示し、RPTログに行を追加します。\n 警告は60秒後に消えます。</Japanese>
             <French>Affiche un avertissement et ajoute une ligne au log RPT si des addons incompatibles (Listés par nous - les développeurs) qui pourraient affecter négativement le fonctionnement correct de KAT sont utilisés.\n L'avertissement disparaîtra après 60 secondes.  </French>
             <Italian>Mostra un allerta e aggiungi una line al file RPT log se l'addon è incompatibile (elencato da noi sviluppatori) che possa influenzare negativamente sul corretto utilizzo della KAT \n L'avviso sparisce dopo 60 secondi.</Italian>
+            <Polish>Pokazuje error i dodaje log do RPT jeśli niekompatybilny mod (podane przez developerów KAT), który może powodować błędy jest używany. \nPowiadomienie znika po 60 sekundach.</Polish>
         </Key>
         <Key ID="STR_kat_misc_incompatibilityWarning_Desc">
             <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
@@ -372,6 +374,7 @@
             <Japanese>[KAM WARNING] KAT-KAMの動作に悪影響を及ぼす可能性のある互換性のないアドオンが検出されました。KAT-KAM開発チームはこれらのアドオンをアンロードすることを強く推奨します: %1</Japanese>
             <French>[AVERTISSEMENT KAM] Un(des) addon(s) incompatible(s) pouvant affecter le fonctionnement correct de KAT ont été détectés. L'équipe de développement de KAT - Advanced Medical REWRITE recommande fortement de retirer ces addons : %1 </French>
             <Italian>[AVVISO KAM]  E' stata rilevato almeno un addon che potrebbe influenzare negativamente il corretto funzionamenot della KAT. Gli sviluppatori della KAT consigliando vivamente di rumuovere questi addons.</Italian>
+            <Polish>[KAM WARNING] Niekompatybilny mod, który może wywoływać błędy został wykryty. Zespół deweloperski KAT - Advanced Medical REWRITE stanowczo odradza użycie następujących modów: %1 </Polish>
         </Key>
         <Key ID="STR_kat_misc_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -379,6 +382,7 @@
             <Italian>Impostazioni di base</Italian>
             <Czech>Základní nastavení</Czech>
             <French>Paramètres basiques</French>
+            <Korean>일반 설정</Korean>
         </Key>
     </Package>
 </Project>

@@ -59,12 +59,9 @@ _unit setVariable ["KAT_circulation_CPRcount", 2, true];
 
 // KAT Pharmacy
 
-_unit setVariable ["kat_pharma_flowRate", 1, true];
-_unit setVariable ["kat_pharma_IVplaced", false, true];
-_unit setVariable ["kat_pharma_usedIV", "", true];
-_unit setVariable ["kat_pharma_IV_counts", 0, true];
-_unit setVariable ["kat_pharma_IVsite", 0, true];
-_unit setVariable ["kat_pharma_ondUse", false, true];
+_unit setVariable ["kat_pharma_alphaAction", 1, true];
+_unit setVariable ["kat_pharma_IV", [0,0,0,0,0,0], true];
+_unit setVariable ["kat_pharma_IVpfh", [0,0,0,0,0,0], true];
 _unit setVariable ["kat_pharma_active", false, true];
 _unit setVariable ["kat_IVPharma_PFH", nil, true];
 
