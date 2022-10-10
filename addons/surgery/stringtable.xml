@@ -266,7 +266,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Clamp_displayName">
             <English>Clamp</English>
-            <Chinesesimp>夹板</Chinesesimp>
+            <Chinesesimp>夹钳</Chinesesimp>
             <Italian>Clampando</Italian>
             <Polish>Zacisk chirurgiczny</Polish>
             <Czech>Svorka</Czech>
@@ -274,7 +274,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Clamp_DescShort">
             <English>Fracture Clamp</English>
-            <Chinesesimp>骨折夹板</Chinesesimp>
+            <Chinesesimp>骨折夹钳</Chinesesimp>
             <Italian>Clamp per frattura</Italian>
             <Polish>Zaciska złamania</Polish>
             <Czech>Svorka na zlomeniny</Czech>
@@ -289,7 +289,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Clamp_Use">
             <English>Clamp Fracture</English>
-            <Chinesesimp>夹板断裂</Chinesesimp>
+            <Chinesesimp>夹紧骨折</Chinesesimp>
             <Italian>Clampa la frattura</Italian>
             <Polish>Zaciśnij złamanie</Polish>
             <Czech>Upnout zlomeninu</Czech>
@@ -297,7 +297,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Clamp_Action">
             <English>Clamping</English>
-            <Chinesesimp>夹紧</Chinesesimp>
+            <Chinesesimp>夹紧中</Chinesesimp>
             <Italian>Clampando</Italian>
             <Polish>Zaciskanie</Polish>
             <Czech>Upínání</Czech>
@@ -336,7 +336,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Debride_Use">
             <English>Debride Wounds</English>
-            <Chinesesimp>用于完成所有复杂骨折类型</Chinesesimp>
+            <Chinesesimp>清创伤口</Chinesesimp>
             <Italian>Raschia le ferite</Italian>
             <Polish>Oczyść rany</Polish>
             <Czech>Vyčistit rány</Czech>
@@ -344,7 +344,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Debride_Action">
             <English>Debriding</English>
-            <Chinesesimp>清创伤口</Chinesesimp>
+            <Chinesesimp>清创中</Chinesesimp>
             <Italian>Raschiando</Italian>
             <Polish>Oczyszczanie</Polish>
             <Czech>Čištění</Czech>
