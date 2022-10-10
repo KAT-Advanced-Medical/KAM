@@ -27,7 +27,8 @@ if (_target getVariable [QGVAR(obstruction), false]) then {
     _messageairwayobstruction = LLSTRING(message_obstruction_yes);
     _obstruction = LSTRING(obstruction);
     if (_target getVariable [QGVAR(overstretch), false]) then {
-        _obstruction = LLSTRING(message_obstructionTemporarilyMitigated);
+        _messageairwayobstruction = LLSTRING(message_obstructionTemporarilyMitigated);
+        _obstruction = LLSTRING(mitigatedObstruction);
     };
     _target setVariable ["ace_medical_triageLevel", 3, true];
 };

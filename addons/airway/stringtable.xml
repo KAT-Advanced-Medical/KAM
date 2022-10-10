@@ -220,7 +220,7 @@
             <Russian>Нет</Russian>
             <Japanese>無し</Japanese>
         </Key>
-        <Key ID="STR_kat_airway_message_obstructionTemporarilyMitigated">
+        <Key ID="STR_kat_airway_mitigatedObstruction">
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
             <Japanese>軽減された</Japanese>
@@ -229,6 +229,10 @@
             <Korean>막힘 완화됨</Korean>
             <German>Geringe Obstruktion</German>
             <Chinesesimp>减轻阻塞</Chinesesimp>
+        </Key>
+        <Key ID="STR_kat_airway_message_obstructionTemporarilyMitigated">
+            <English>Obstruction is temporarily mitigated</English>
+            <Polish>Drogi oddechowe są ręcznie udrożnione</Polish>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
