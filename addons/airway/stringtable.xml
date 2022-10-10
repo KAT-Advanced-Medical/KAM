@@ -85,6 +85,7 @@
             <French>Temps de répétition des occlusions</French>
             <Italian>Tempo di ripetizione per l'occlusione</Italian>
             <Czech>Opakovač uzavření dýchacích cest</Czech>
+            <Chinesesimp>气道异物再发冷却时间</Chinesesimp>
         </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -226,6 +227,7 @@
             <Italian>Ostruzione mitigata.</Italian>
             <Czech>Zmírněné zablokování</Czech>
             <Korean>막힘 완화됨</Korean>
+            <Chinesesimp>减轻阻塞</Chinesesimp>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
@@ -398,7 +400,7 @@
             <Polish>Odchylanie głowy</Polish>
             <Spanish>Hiperextendiendo cabeza</Spanish>
             <Chinese>伸張中</Chinese>
-            <Chinesesimp>拉伸中...</Chinesesimp>
+            <Chinesesimp>拉伸中</Chinesesimp>
             <Czech>Narovnávám</Czech>
             <Korean>머리를 뒤로 젖히는 중</Korean>
             <French>Extension</French>
@@ -443,7 +445,7 @@
             <Polish>Obrót głowy wykonany, drogi oddechowe wciąż nie są czyste</Polish>
             <Spanish>Giro de cabeza realizado, las vías respiratorias aún no están despejadas</Spanish>
             <Chinese>转头，气道仍不清楚</Chinese>
-            <Chinesesimp>尝试清理气道异物失败,异物仍存在</Chinesesimp>
+            <Chinesesimp>尝试清理气道异物失败, 异物仍存在</Chinesesimp>
             <Czech>Hlavou se otočilo, dýchací cesty stále nejsou volné</Czech>
             <Korean>고개를 돌려보았으나, 기도는 여전히 막혀 있다.</Korean>
             <French>Tour de tête effectué, les voies respiratoires ne sont toujours pas dégagées</French>
@@ -847,7 +849,7 @@
             <Polish>Czas sprawdzenia dróg oddechowych</Polish>
             <Spanish>Hora de revisar las vías aéreas</Spanish>
             <Chinese>是時候檢查航空公司了</Chinese>
-            <Chinesesimp>检查气道的时间</Chinesesimp>
+            <Chinesesimp>检查气道的所需时间</Chinesesimp>
             <Czech>Čas pro zkontrolování dýchacích cest</Czech>
             <Korean>기도 확인에 걸리는 시간</Korean>
             <French>Durée pour vérifier les voies aériennes</French>
@@ -892,7 +894,7 @@
             <Polish>Czas na odchylenie głowy</Polish>
             <Spanish>Hora de estirar demasiado la cabeza</Spanish>
             <Chinese>过度伸展头部的时间</Chinese>
-            <Chinesesimp>拉伸颈部的时间</Chinesesimp>
+            <Chinesesimp>拉伸颈部的所需时间</Chinesesimp>
             <Czech>Čas na přetažení hlavy</Czech>
             <Korean>머리 뒤로 젖히기에 걸리는 시간</Korean>
             <French>Durée pour basculer la tête en arrière - Hyperextension</French>
@@ -1055,7 +1057,7 @@
             <English>Established in recovery position</English>
             <German>In die stabile Seitenlage gebracht</German>
             <Polish>Ułożony w pozycji bezpiecznej</Polish>
-            <Chinesesimp>建立救援体位</Chinesesimp>
+            <Chinesesimp>建立恢复体态</Chinesesimp>
             <Japanese>回復体位をとっています</Japanese>
             <Korean>회복자세 교정</Korean>
             <French>En position latérale de sécurité</French>
@@ -1067,7 +1069,7 @@
             <English>Establish recovery position</English>
             <German>In die stabile Seitenlage legen</German>
             <Polish>Ułóż w pozycji bezpiecznej</Polish>
-            <Chinesesimp>建立救援体位</Chinesesimp>
+            <Chinesesimp>建立恢复体态</Chinesesimp>
             <Japanese>回復体位にする</Japanese>
             <Korean>회복자세 교정해주기</Korean>
             <French>Mettre en position latérale de sécurité</French>
@@ -1079,7 +1081,7 @@
             <English>Establishing recovery position</English>
             <German>In die stabile Seitenlage legen</German>
             <Polish>Układanie w pozycji</Polish>
-            <Chinesesimp>正在建立救援体位</Chinesesimp>
+            <Chinesesimp>正在建立恢复体态</Chinesesimp>
             <Japanese>回復体位にしています</Japanese>
             <Korean>회복자세 교정 중</Korean>
             <French>Mise en position latérale de sécurité</French>
@@ -1091,7 +1093,7 @@
             <English>Recovery position established successfully</English>
             <German>Erfolgreich in die stabile Seitenlage gelegt</German>
             <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
-            <Chinesesimp>已成功建立救援体位</Chinesesimp>
+            <Chinesesimp>已成功建立恢复体态</Chinesesimp>
             <Japanese>回復体位になりました</Japanese>
             <Korean>회복자세 교정 성공</Korean>
             <French>Mise en position latérale de sécurité réussie</French>
@@ -1103,7 +1105,7 @@
             <English>Recovery position cancelled</English>
             <German>Stabile Seitenlage abgebrochen</German>
             <Polish>Przerwano pozycję bezpieczną</Polish>
-            <Chinesesimp>已取消救援体位</Chinesesimp>
+            <Chinesesimp>已取消恢复体态</Chinesesimp>
             <Japanese>回復体位を崩しました</Japanese>
             <Korean>회복자세 교정 취소됨</Korean>
             <French>Mise en position latérale de sécurité annulée</French>
@@ -1115,7 +1117,7 @@
             <English>%1 established recovery position</English>
             <German>%1 hat die stabile Seitenlage durchgeführt</German>
             <Polish>%1 ułożył w pozycji bezpiecznej</Polish>
-            <Chinesesimp>%1 已建立救援体位</Chinesesimp>
+            <Chinesesimp>%1 已建立恢复体态</Chinesesimp>
             <Japanese>%1 が回復体位にしました</Japanese>
             <Korean>%1 이(가) 회복자세를 교정했습니다</Korean>
             <French>%1 a mis en place la position latérale de sécurité</French>
@@ -1127,7 +1129,7 @@
             <English>Time for recovery position</English>
             <German>Zeit für die stabile Seitenlage</German>
             <Polish>Czas na ułożenie w pozycji bezpiecznej</Polish>
-            <Chinesesimp>建立救援体位时间</Chinesesimp>
+            <Chinesesimp>建立恢复体态时间</Chinesesimp>
             <Japanese>回復体位にかかる時間</Japanese>
             <Korean>회복자세 교정 시간</Korean>
             <French>Temps pour mettre en position latérale de sécurité</French>
@@ -1139,7 +1141,7 @@
             <English>How long it will take to establish recovery position</English>
             <German>Die Zeit, wie lange es dauert eine erfolgreiche stabile Seitenlage durchzuführen</German>
             <Polish>Jak długo potrwa ułożenie w pozycji bocznej bezpiecznej</Polish>
-            <Chinesesimp>建立救援体位的所需时间</Chinesesimp>
+            <Chinesesimp>建立恢复体态的所需时间</Chinesesimp>
             <Japanese>回復体位を完了するのにどのくらい時間がかかるか設定します</Japanese>
             <Korean>회복자세를 교정해주는 데 걸리는 시간입니다.</Korean>
             <French>Temps nécessaire pour mettre en position latérale de sécurité</French>
@@ -1151,7 +1153,7 @@
             <English>Cancel recovery position</English>
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerwij pozycję bezpieczną</Polish>
-            <Chinesesimp>取消救援体位</Chinesesimp>
+            <Chinesesimp>取消恢复体态</Chinesesimp>
             <Japanese>回復体位を崩す</Japanese>
             <Korean>회복자세 교정 취소</Korean>
             <French>Annuler la position latérale de sécurité</French>
@@ -1163,7 +1165,7 @@
             <English>Cancelling recovery position</English>
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerywanie pozycji bezpiecznej</Polish>
-            <Chinesesimp>正在取消救援体位</Chinesesimp>
+            <Chinesesimp>正在取消恢复体态</Chinesesimp>
             <Japanese>回復体位を崩しています</Japanese>
             <Korean>회복자세 교정 취소 중</Korean>
             <French>Annulation de la position latérale de sécurité</French>
@@ -1175,7 +1177,7 @@
             <English>Time for cancelling recovery position</English>
             <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
             <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
-            <Chinesesimp>取消救援体位时间</Chinesesimp>
+            <Chinesesimp>取消恢复体态时间</Chinesesimp>
             <Japanese>回復体位を崩すのにかかる時間</Japanese>
             <Korean>회복자세 교정 취소 시간</Korean>
             <French>Temps pour annuler la position latérale de sécurité</French>
@@ -1187,7 +1189,7 @@
             <English>How long it will take to establish recovery position</English>
             <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
             <Polish>Jak długo potrwa przerwanie pozycji bocznej bezpiecznej</Polish>
-            <Chinesesimp>取消救援体位的所需时间</Chinesesimp>
+            <Chinesesimp>取消恢复体态的所需时间</Chinesesimp>
             <Japanese>回復体位を崩すのにどのくらい時間がかかるか設定します</Japanese>
             <Korean>회복자세 교정을 취소하는 데 걸리는 시간입니다</Korean>
             <French>Temps nécessaire pour annuler la position latérale de sécurité</French>
@@ -1207,6 +1209,7 @@
             <Turkish>Değil Kapanma</Turkish>
             <Italian>No ostruita</Italian>
             <Japanese>閉塞無し</Japanese>
+            <Chinesesimp>无阻塞</Chinesesimp>
         </Key>
         <Key ID="STR_kat_airway_noOccluded">
             <English>Not occluded</English>
@@ -1220,6 +1223,7 @@
             <Turkish>Değil Tıkalı</Turkish>
             <Italian>No occlusa</Italian>
             <Japanese>異物無し</Japanese>
+            <Chinesesimp>无闭塞</Chinesesimp>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -1228,6 +1232,7 @@
             <Czech>Základní nastavení</Czech>
             <French>Paramètres basiques</French>
             <Korean>일반 설정</Korean>
+            <Chinesesimp>基础设置</Chinesesimp>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_RecoveryPositionOverstretch">
             <English>Recovery position + Overstretch Settings</English>
@@ -1235,6 +1240,7 @@
             <Czech>Nastavení stabilizované polohy a narovnávání hlavy</Czech>
             <French>Paramètres de position latérale de sécurité + hyperextension</French>
             <Korean>회복 자세 + 머리 젖히기 설정</Korean>
+            <Chinesesimp>恢复体态设置</Chinesesimp>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1242,6 +1248,7 @@
             <Czech>Nastavení předmětů dýchacích cest</Czech>
             <French>Paramètres des objets des voies aériennes</French>
             <Korean>기도 관련 아이템 설정</Korean>
+            <Chinesesimp>气道物品设置</Chinesesimp>
         </Key>
     </Package>
 </Project>

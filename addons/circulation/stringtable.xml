@@ -7,7 +7,7 @@
             <Polish>ACE-Czy zaawansowane krążenie ma być włączone?</Polish>
             <Spanish>¿Activar ACE-Circulación?</Spanish>
             <Chinese>啟用ACE-血型循環系統？</Chinese>
-            <Chinesesimp>启用ACE-血型循环系统？</Chinesesimp>
+            <Chinesesimp>启用ACE-血型循环系统</Chinesesimp>
             <Czech>ACE-Circulation aktivováno?</Czech>
             <Korean>순환계통 시스템 활성화</Korean>
             <French>Ace-Circulation activé?</French>
@@ -24,7 +24,7 @@
             <Korean>고급 리듬이 활성화 되었습니까?</Korean>
             <Turkish>Gelişmiş Ritim etkinleştirildi mi?</Turkish>
             <Chinese>先进的节奏被激活？</Chinese>
-            <Chinesesimp>是否启用高级心率？</Chinesesimp>
+            <Chinesesimp>是否启用高级心率</Chinesesimp>
             <Italian>Ritmo avanzato attivato?</Italian>
             <Spanish>¿Ritmo avanzado activado?</Spanish>
             <Czech>Pokročilý rytmus aktivován?</Czech>
@@ -37,7 +37,7 @@
             <Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
             <Spanish>¿Pulso cardíaco depende de metabolismo?</Spanish>
             <Chinese>依心率來決定代謝率？</Chinese>
-            <Chinesesimp>依心率来决定代谢率？</Chinesesimp>
+            <Chinesesimp>依心率来决定代谢率</Chinesesimp>
             <Czech>Metabolismus závislý na tepu?</Czech>
             <Korean>신체대사량에 따라 심박수가 결정됩니까?</Korean>
             <French>Le pouls dépend du métabolisme?</French>
@@ -1415,7 +1415,7 @@
             <German>Distanz Grenze für den AED-X in Meter</German>
             <Spanish>Límite de distancia para AED-X en metros</Spanish>
             <Chinese>AED-X的距離限制，以米為單位</Chinese>
-            <Chinesesimp>AED-X的距离限制，以米为单位</Chinesesimp>
+            <Chinesesimp>AED-X的距离限制, 以米为单位</Chinesesimp>
             <Czech>Vzdálenostní limit pro AED-X v metrech</Czech>
             <Korean>X-시리즈 AED 사용가능거리 설정 (미터)</Korean>
             <French>Distance maximum en mètres pour l'AED-X</French>
@@ -1430,7 +1430,7 @@
             <German>Zeitbegrenzung für die Werteüberwachung vom AED-X in Sekunden</German>
             <Spanish>Límite de tiempo para monitor de AED-X en segundos</Spanish>
             <Chinese>監視AED-X的時間限制（以秒為單位）</Chinese>
-            <Chinesesimp>AED-X监视的时间限制（以秒为单位）</Chinesesimp>
+            <Chinesesimp>AED-X监视的时间限制(以秒为单位)</Chinesesimp>
             <Czech>Časový limit pro monitoring pomocí AED-X v sekundách</Czech>
             <Korean>X-시리즈 AED 모니터링 시간 제한 (초)</Korean>
             <French>Limite de temps pour monitorer l'AED-X en secondes</French>
@@ -1460,7 +1460,7 @@
             <German>Aktiviere verschiedene HLW Erfolgsraten für verschiedene Medic Level</German>
             <Spanish>Permita diferentes posibilidades de RCP por nivel médico</Spanish>
             <Chinese>每個醫療級別啟用不同的CPR機會</Chinese>
-            <Chinesesimp>每个医疗培训水平启用不同的CPR几率</Chinesesimp>
+            <Chinesesimp>每个医疗水平启用不同的CPR几率</Chinesesimp>
             <Czech>Povolit různé šance pro resuscitaci dle úrovně zdravotnického výcviku</Czech>
             <Korean>의료레벨에 따라 CPR 성공 확률을 다르게 하도록 설정</Korean>
             <French>Activer différentes chances de réussite de RCP par niveau médical </French>
@@ -1476,6 +1476,7 @@
             <French>Chance maximale de succès de la RCP pour les médecins</French>
             <Polish>Maksymalna szansa CPR dla Doktorów</Polish>
             <Korean>군의관의 최대 CPR 확률</Korean>
+            <Chinesesimp>医生的最大心肺复苏几率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
@@ -1484,6 +1485,7 @@
             <French>Chance maximale de succès de la RCP pour les infirmiers</French>
             <Polish>Maksymalna szansa CPR dla Medyków</Polish>
             <Korean>의무병의 최대 CPR 확률</Korean>
+            <Chinesesimp>军医的最大心肺复苏几率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -1492,6 +1494,7 @@
             <French>Chance maximale de succès de la RCP par défaut</French>
             <Polish>Maksymalna szansa domyślnie</Polish>
             <Korean>일반병의 최대 CPR 확률</Korean>
+            <Chinesesimp>默认的最大心肺复苏几率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_Doctor">
             <English>Min CPR Chance for Doctors</English>
@@ -1500,6 +1503,7 @@
             <French>Chance minimale de succès de la RCP pour les médecins</French>
             <Polish>Minimalna szansa CPR dla Doktorów</Polish>
             <Korean>군의관의 최소 CPR 확률</Korean>
+            <Chinesesimp>医生的最小心肺复苏几率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
@@ -1508,6 +1512,7 @@
             <French>Chance minimale de succès de la RCP pour les infirmiers</French>
             <Polish>Minimalna szansa CPR dla Medyków</Polish>
             <Korean>의무병의 최소 CPR 확률</Korean>
+            <Chinesesimp>军医的最小心肺复苏几率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_Default">
             <English>Min CPR Chance for Default</English>
@@ -1516,6 +1521,7 @@
             <French>Chance minimale de succès de la RCP par défaut</French>
             <Polish>Minimalna szansa CPR domyślnie</Polish>
             <Korean>일반병의 최소 CPR 확률</Korean>
+            <Chinesesimp>默认的最小心肺复苏几率</Chinesesimp>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -1553,7 +1559,7 @@
             <German>Ermöglicht die Entnahme von Blut und dessen Verwendung</German>
             <Spanish>Te permite sacar sangre y usarla. </Spanish>
             <Chinese>允许你抽血并使用它 </Chinese>
-            <Chinesesimp>允许你抽血并使用它 </Chinesesimp>
+            <Chinesesimp>允许你抽出血液并使用它 </Chinesesimp>
             <Czech>Umožňuje odebírat krev a použít ji</Czech>
             <Korean>피를 채혈해서 사용할 수 있게 합니다</Korean>
             <French>Permet de prélever du sang et de l'utiliser </French>
@@ -1598,7 +1604,7 @@
             <German>Entnehme Blut</German>
             <Spanish>Dibujando sangre</Spanish>
             <Chinese>抽血 </Chinese>
-            <Chinesesimp>抽血中...</Chinesesimp>
+            <Chinesesimp>抽血中</Chinesesimp>
             <Czech>Odebírání krve</Czech>
             <Korean>혈액 채혈 중</Korean>
             <French>Prélèvement de sang </French>
@@ -1749,6 +1755,7 @@
             <Czech>Základní nastavení</Czech>
             <French>Paramètres basiques</French>
             <Korean>일반 설정</Korean>
+            <Chinesesimp>基础设置</Chinesesimp>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_AED">
             <English>AED + AED-X Settings</English>
@@ -1757,6 +1764,7 @@
             <French>Paramètres de l'AED + AED-X</French>
             <Polish>Ustawienia dla AED + AED-X</Polish>
             <Korean>자동제세동기 + X-시리즈 AED 설정</Korean>
+            <Chinesesimp>AED和AED-X设置</Chinesesimp>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_CPR">
             <English>CPR Settings</English>
@@ -1765,6 +1773,7 @@
             <French>Paramètres de la RCP</French>
             <Polish>Ustawienia CPR</Polish>
             <Korean>심폐소생술 설정</Korean>
+            <Chinesesimp>CPR设置</Chinesesimp>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
@@ -1773,6 +1782,7 @@
             <French>Paramètres des prises de sang</French>
             <Polish>Ustawienia pobierania krwi</Polish>
             <Korean>채혈 설정</Korean>
+            <Chinesesimp>抽血设置</Chinesesimp>
         </Key>
     </Package>
 </Project>
