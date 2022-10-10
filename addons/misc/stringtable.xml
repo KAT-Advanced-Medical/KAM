@@ -78,7 +78,7 @@
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand">
             <English>Stand: Saline IV (1000ml)</English>
-            <German>Ständer: Saline IV (1000ml)</German>
+            <German>Ständer: Kochsalzlösung IV (1000ml)</German>
             <Polish>Stojak: Sól fizjologiczna IV (1000ml)</Polish>
             <Spanish>Soporte: Salino IV (1000ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (1000ml)</Chinese>
@@ -93,7 +93,7 @@
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_500">
             <English>Stand: Saline IV (500ml)</English>
-            <German>Ständer: Saline IV (500ml)</German>
+            <German>Ständer: Kochsalzlösung IV (500ml)</German>
             <Polish>Stojak: Sól fizjologiczna IV (500ml)</Polish>
             <Spanish>Soporte: Salino IV (500ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (500ml)</Chinese>
@@ -108,7 +108,7 @@
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_250">
             <English>Stand: Saline IV (250ml)</English>
-            <German>Ständer: Saline IV (250ml)</German>
+            <German>Ständer: Kochsalzlösung IV (250ml)</German>
             <Polish>Stojak: Sól fizjologiczna IV (250ml)</Polish>
             <Spanish>Soporte: Salino IV (250ml)</Spanish>
             <Chinese>點滴架：生理食鹽水 (250ml)</Chinese>
@@ -383,6 +383,7 @@
             <Czech>Základní nastavení</Czech>
             <French>Paramètres basiques</French>
             <Korean>일반 설정</Korean>
+            <German>Grundeinstellungen</German>
         </Key>
     </Package>
 </Project>
