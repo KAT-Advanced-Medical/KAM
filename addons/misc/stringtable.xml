@@ -7,7 +7,7 @@
             <Polish>ACE-Inne aktywowane?</Polish>
             <Spanish>¿Activar ACE-Misceláneos?</Spanish>
             <Chinese>啟用ACE-雜項?</Chinese>
-            <Chinesesimp>启用ACE-杂项?</Chinesesimp>
+            <Chinesesimp>启用ACE-杂项</Chinesesimp>
             <Czech>ACE-Misc aktivováno?</Czech>
             <Korean>ACE 음악 활성화</Korean>
             <French>ACE-Misc activé?</French>
@@ -142,7 +142,7 @@
             <Polish>Rany opatrunkowe</Polish>
             <Spanish>Vendar heridas</Spanish>
             <Chinese>包紮傷口</Chinese>
-            <Chinesesimp>绷带伤口</Chinesesimp>
+            <Chinesesimp>包扎伤口</Chinesesimp>
             <Czech>Zavázat rány</Czech>
             <Korean>붕대 감기</Korean>
             <French>Panser les blessures</French>
@@ -157,7 +157,7 @@
             <Polish>Stosować rany ograniczające stan zdrowia</Polish>
             <Spanish>Usar condición para límite de heridas</Spanish>
             <Chinese>以條件來限制傷口</Chinese>
-            <Chinesesimp>以条件来限制伤口</Chinesesimp>
+            <Chinesesimp>用条件来限制伤口</Chinesesimp>
             <Czech>Použít podmínku omezených ran</Czech>
             <Korean>상태 제한 상처사용</Korean>
             <French>Condition d'utilisation pour la limite de blessures</French>
@@ -172,7 +172,7 @@
             <Polish>Złóż nosze</Polish>
             <Spanish>Desarmar camilla</Spanish>
             <Chinese>拆卸式擔架</Chinese>
-            <Chinesesimp>拆卸式担架</Chinesesimp>
+            <Chinesesimp>可拆卸式担架</Chinesesimp>
             <Czech>Rozložit nosítka</Czech>
             <Korean>들것 분리</Korean>
             <French>Désassembler la civière</French>
@@ -187,7 +187,7 @@
             <Polish>Przyczep do</Polish>
             <Spanish>Poner en</Spanish>
             <Chinese>掛在</Chinese>
-            <Chinesesimp>链接到</Chinesesimp>
+            <Chinesesimp>附加到</Chinesesimp>
             <Czech>Připevnit k</Czech>
             <Korean>에 부착</Korean>
             <French>Attacher à</French>
@@ -384,6 +384,7 @@
             <French>Paramètres basiques</French>
             <Korean>일반 설정</Korean>
             <German>Grundeinstellungen</German>
+            <Chinesesimp>基础设置</Chinesesimp>
         </Key>
     </Package>
 </Project>

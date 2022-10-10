@@ -316,7 +316,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Clamp_displayName">
             <English>Clamp</English>
-            <Chinesesimp>夹板</Chinesesimp>
+            <Chinesesimp>夹钳</Chinesesimp>
             <Italian>Clampando</Italian>
             <Polish>Zacisk chirurgiczny</Polish>
             <Czech>Svorka</Czech>
@@ -326,7 +326,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Clamp_DescShort">
             <English>Fracture Clamp</English>
-            <Chinesesimp>骨折夹板</Chinesesimp>
+            <Chinesesimp>骨折夹钳</Chinesesimp>
             <Italian>Clamp per frattura</Italian>
             <Polish>Zaciska złamania</Polish>
             <Czech>Svorka na zlomeniny</Czech>
@@ -345,7 +345,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Clamp_Use">
             <English>Clamp Fracture</English>
-            <Chinesesimp>夹板断裂</Chinesesimp>
+            <Chinesesimp>夹紧骨折</Chinesesimp>
             <Italian>Clampa la frattura</Italian>
             <Polish>Zaciśnij złamanie</Polish>
             <Czech>Upnout zlomeninu</Czech>
@@ -355,7 +355,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Clamp_Action">
             <English>Clamping</English>
-            <Chinesesimp>夹紧</Chinesesimp>
+            <Chinesesimp>夹紧中</Chinesesimp>
             <Italian>Clampando</Italian>
             <Polish>Zaciskanie</Polish>
             <Czech>Upínání</Czech>
@@ -404,7 +404,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Debride_Use">
             <English>Debride Wounds</English>
-            <Chinesesimp>用于完成所有复杂骨折类型</Chinesesimp>
+            <Chinesesimp>清创伤口</Chinesesimp>
             <Italian>Raschia le ferite</Italian>
             <Polish>Oczyść rany</Polish>
             <Czech>Vyčistit rány</Czech>
@@ -414,7 +414,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Debride_Action">
             <English>Debriding</English>
-            <Chinesesimp>清创伤口</Chinesesimp>
+            <Chinesesimp>清创中</Chinesesimp>
             <Italian>Raschiando</Italian>
             <Polish>Oczyszczanie</Polish>
             <Czech>Čištění</Czech>
@@ -443,7 +443,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_Use">
             <English>Apply NPWT Dressing</English>
-            <Chinesesimp>应用 NPWT 敷料</Chinesesimp>
+            <Chinesesimp>施用 NPWT 敷料</Chinesesimp>
             <Italian>Applicare la medicazione terapia a pressione negativa (NPWT)</Italian>
             <Polish>Nałóż opatrunek próżniowy</Polish>
             <Czech>Použít NPWT obvaz</Czech>
@@ -453,7 +453,7 @@
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_Action">
             <English>Applying</English>
-            <Chinesesimp>用于完全包扎和密封伤口</Chinesesimp>
+            <Chinesesimp>施用中</Chinesesimp>
             <Italian>Applicando</Italian>
             <Polish>Nakładanie</Polish>
             <Czech>Používání</Czech>
@@ -553,7 +553,7 @@
         </Key>
         <Key ID="STR_kat_surgery_ETOMIDATE_TIMER_DESC">
             <English>Determines how long each dose of etomidate stays in a patient</English>
-            <Chinesesimp>确定每剂依托咪酯在患者体内的停留时间</Chinesesimp>
+            <Chinesesimp>确定依托咪酯在患者体内的停留时间</Chinesesimp>
             <Italian>Determina per quanto tempo ciascuna dose di etomidato rimane in un paziente</Italian>
             <Polish>Ustala jak długo każda dawka Etomidatu zostaje w pacjencie</Polish>
             <Czech>Určuje, jak dlouho každá dávka etomidátu zůstává v pacientovi</Czech>
@@ -583,7 +583,7 @@
         </Key>
         <Key ID="STR_kat_surgery_SURGICAL_TIMER">
             <English>Time to perform surgical actions</English>
-            <Chinesesimp>执行手术了的时间</Chinesesimp>
+            <Chinesesimp>执行手术的时间</Chinesesimp>
             <Italian>Tempo per eseguire azioni chirurgiche</Italian>
             <Polish>Czas potrzebny na wykonanie zabiegów chirurgicznych</Polish>
             <Czech>Čas provádění chirurgické akce</Czech>
@@ -643,7 +643,7 @@
         </Key>
         <Key ID="STR_kat_surgery_NPWT_TIMER">
             <English>Time to apply an NPWT dressing</English>
-            <Chinesesimp>使用 NPWT 敷料的时间</Chinesesimp>
+            <Chinesesimp>施用 NPWT 敷料的时间</Chinesesimp>
             <Italian>Tempo per applicare una medicazione di terapia a pressione negativa (NPWT)</Italian>
             <Polish>Czas potrzebny do nałożenie opatrunku próżniowego</Polish>
             <Czech>Čask použití NPWT</Czech>
@@ -753,7 +753,7 @@
         </Key>
         <Key ID="STR_kat_surgery_CLAMPED">
             <English>clamped</English>
-            <Chinesesimp>夹住</Chinesesimp>
+            <Chinesesimp>钳住</Chinesesimp>
             <Italian>Clampata</Italian>
             <Polish>zaciśnięta</Polish>
             <Czech>Upnuto</Czech>

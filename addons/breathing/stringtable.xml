@@ -7,7 +7,7 @@
             <Polish>ACE-Czy zaawansowane oddychanie ma być włączone?</Polish>
             <Spanish>¿Activar ACE-Respiración?</Spanish>
             <Chinese>啟用ACE-心肺呼吸系統？</Chinese>
-            <Chinesesimp>启用ACE-呼吸系统?</Chinesesimp>
+            <Chinesesimp>启用ACE-呼吸系统</Chinesesimp>
             <Czech>ACE-Breathing aktivováno?</Czech>
             <Korean>ACE 심폐호흡기 기능 활성화</Korean>
             <French>ACE-Respiration activé?</French>
@@ -233,7 +233,7 @@
             <Polish>Pulsoksymetr jest już założony</Polish>
             <Spanish>El oxímetro de pulso ya está conectado</Spanish>
             <Chinese>心率監測器已經連接了</Chinese>
-            <Chinesesimp>已连接脉搏血氧仪,无法连接</Chinesesimp>
+            <Chinesesimp>已连接脉搏血氧仪, 无法连接</Chinesesimp>
             <Czech>Pulzní oxymetr je již připojen</Czech>
             <Korean>맥박산소측정기가 이미 연결되어 있음</Korean>
             <French>Oxymètre de pouls déjà installé</French>
@@ -869,7 +869,7 @@ Die Höhe des Schadens bei einem einzigen Aufprall, welcher auf einer Skala von 
             <German>Abhören</German>
             <Spanish>Escuchando</Spanish>
             <Chinese>听力</Chinese>
-            <Chinesesimp>听诊中...</Chinesesimp>
+            <Chinesesimp>听诊中</Chinesesimp>
             <Czech>Poslouchám</Czech>
             <Korean>듣는 중</Korean>
             <French>Écoute</French>
@@ -929,7 +929,7 @@ Die Höhe des Schadens bei einem einzigen Aufprall, welcher auf einer Skala von 
             <German>Verursacht Ohnmacht, wenn SpO2 wert unter diesen Wert fällt</German>
             <Spanish>Valor SpO2 que causará inconsciencia cuando sea menor a este valor</Spanish>
             <Chinese>当下降到低于该值时，会引起不舒服的SpO2值</Chinese>
-            <Chinesesimp>当下降到低于该值时，会令人昏迷的SpO2值</Chinesesimp>
+            <Chinesesimp>当下降到低于该值时, 会令人昏迷的SpO2值</Chinesesimp>
             <Czech>Hodnota SpO2, která způsobí bezvědomí, pokud se pod ní dostane</Czech>
             <Korean>의식불명에 빠지기 시작하는 SpO2(산소포화도)의 값</Korean>
             <French>Valeur SpO2 sous laquelle on tombe inconscient</French>
@@ -1189,6 +1189,7 @@ Die Höhe des Schadens bei einem einzigen Aufprall, welcher auf einer Skala von 
             <Polish>Szansa na pogorszenie się odmy płucnej</Polish>
             <Korean>기흉 악화 확률</Korean>
             <German>Wahrscheinlichkeit einer Pneumothorax-Verschlechterung</German>
+            <Chinesesimp>气胸恶化几率</Chinesesimp>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance_Desc">
             <English>Chance for pneumothorax to deteriorate into tension pneumothorax</English>
@@ -1198,6 +1199,7 @@ Die Höhe des Schadens bei einem einzigen Aufprall, welcher auf einer Skala von 
             <Polish>Szansa na pogorszenie się odmy płucnej w odmę prężną</Polish>
             <Korean>기흉이 긴장성 기흉으로 악화될 확률</Korean>
             <German>Wahrscheinlichkeit, dass sich der Pneumothorax zu einem Spannungspneumothorax entwickelt</German>
+            <Chinesesimp>气胸恶化至张力性气胸几率</Chinesesimp>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown">
             <English>Deteriorating pneumothorax countdown</English>
@@ -1207,6 +1209,7 @@ Die Höhe des Schadens bei einem einzigen Aufprall, welcher auf einer Skala von 
             <Polish>Licznik do pogorszenia się odmy</Polish>
             <Korean>기흉 악화 카운트다운</Korean>
             <German>Verschlechterung des Pneumothorax-Countdowns</German>
+            <Chinesesimp>气胸恶化冷却时间</Chinesesimp>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown_Desc">
             <English>After this countdown a chance will be rolled whether or not the pneumothorax will deteriorate into tension pneumothorax</English>
@@ -1216,6 +1219,7 @@ Die Höhe des Schadens bei einem einzigen Aufprall, welcher auf einer Skala von 
             <Polish>Po tym odliczaniu zostanie wyliczona szansa na to, czy odma płucna przekształci się w odmę prężną.</Polish>
             <Korean>이 카운트다운이 끝나면 기흉이 긴장성 기흉으로 악화되는지 여부가 결정됩니다.</Korean>
             <German>Nach diesem Countdown wird gewürfelt, ob sich der Pneumothorax zu einem Spannungspneumothorax entwickelt oder nicht.</German>
+            <Chinesesimp>在此倒计时后，将气胸有机率恶化为张力性气胸</Chinesesimp>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -1225,6 +1229,7 @@ Die Höhe des Schadens bei einem einzigen Aufprall, welcher auf einer Skala von 
             <French>Paramètres basiques</French>
             <Korean>일반 설정</Korean>
             <German>Grundeinstellungen</German>
+            <Chinesesimp>基础设置</Chinesesimp>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
