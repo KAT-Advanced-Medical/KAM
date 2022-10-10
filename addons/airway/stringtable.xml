@@ -191,7 +191,7 @@
         </Key>
         <Key ID="STR_kat_airway_obstruction">
             <English>Obstruction</English>
-            <German>Verlegt</German>
+            <German>Obstruktion</German>
             <Polish>Niedrożne</Polish>
             <Spanish>Obstruída</Spanish>
             <Chinese>阻塞</Chinese>
@@ -226,6 +226,7 @@
             <Italian>Ostruzione mitigata.</Italian>
             <Czech>Zmírněné zablokování</Czech>
             <Korean>막힘 완화됨</Korean>
+            <German>Geringe Obstruktion</German>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
@@ -514,7 +515,7 @@
         </Key>
         <Key ID="STR_kat_airway_action_placing">
             <English>Placing</English>
-            <German>Setzen</German>
+            <German>Platziere</German>
             <Polish>Zakładanie</Polish>
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
@@ -619,7 +620,7 @@
         </Key>
         <Key ID="STR_kat_airway_Accuvac_Desc_Use">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
-            <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
+            <German>Der ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>
@@ -634,7 +635,7 @@
         </Key>
         <Key ID="STR_kat_airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
-            <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
+            <German>Der ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>
@@ -694,7 +695,7 @@
         </Key>
         <Key ID="STR_kat_airway_hint_desc">
             <English>When a patient enters the unconscious state, there are two things that can happen. First of all the airway can collapse. In medical sense this mean, the airway can be blocked from your tongue muscle, 'cause of the missing muscle tone. For example in real life, this will happen to nearly every unconscious person lying on the back. The second thing that can happen is the the airway occluded state. When a patient is lying on the back and the body puke, it will not leave the mouth space. It will stay in there and can block the airway too. The right treatment here, is to remove this vomit. In real life, this will happen sometimes, not quiet often.</English>
-            <German>Wenn eine Person bewusstlos wird, gibt es zwei Dinge die passieren können. Erstens die Atemwege können verlegt sein. Durch de nnicht mehr vorhandenen Muskeltonus kann der zungengrund den Luftweg blockieren. Im echten Leben kann man davon ausgehen das wenn ein Patient bewusstlos ist und auf dem Rücken liegt, das er eine Atemwegsverlegung hat. Zweitens, es ist möglich das der Patient erbricht und dann blockieren flüssige und feste Stoffe die Atemwege und dann sind diese "verstopft". Im echten Leben passiert das nicht besonders häufig</German>
+            <German>Wenn eine Person bewusstlos wird, gibt es zwei Dinge, die passieren können. Erstens, die Atemwege können obstruiert sein. Durch den nicht mehr vorhandenen Muskeltonus kann der Zungengrund den Luftweg blockieren. Im echten Leben kann man davon ausgehen, wenn ein Patient bewusstlos ist und auf dem Rücken liegt, dass er eine Atemwegsverlegung hat. Zweitens, es ist möglich, dass der Patient erbricht und flüssige und feste Stoffe dann in die Atemwege gelangen und diese dann "verstopfen". Im echten Leben passiert das nicht besonders häufig</German>
             <Polish>Kiedy pacjent staję się nieprzytomny, mogą stać się dwie rzeczy. Pierwszą jest zapadnięcie się dróg oddechowych. Z medycznego punktu widzenia drogi oddechowe mogą być zablokowane przez język. Na przykład w prawdziwym życiu zdarzy się to praktycznie w każdym przypadku osoby nieprzytomnej leżącej na plecach. Drugą rzeczą która może się zdarzyć to niedrożność dróg oddechowych. Kiedy pacjent leży na plecach i ciało będzie wymiotowało/odkrztuszało to zawartość nie opuści buzi. Zostanie tam i będzie mogło blokować drogi oddechowe. Odpowiednim leczniem jest tu usunięcie wymiocin. W prawdziwym życiu też może się to zdarzyć ale nie jest to częste.</Polish>
             <Spanish>Cuando un paciente entre en estado de inconciencia, hay dos posibles escenarios. Lo primero, las vías aéreas pueden colapsar. En términos médicos, esto significa que las vías aéreas pueden bloquearse con el músculo de la lengua por la falta de tono muscular (tensión). Por ejemplo, en la vida real, esto le pasará a casi cualquier persona inconciente que esté sobre su espalda. Lo segundo que puede pasar es una obstrucción de las vías aéreas. Cuando un paciente está sobre su espalda y éste vomita, el vómito no abandonará el área de la boca, permanecerá ahí y esto puede bloquear las vías aéreas también. El correcto tratamiento sería eliminar el vómito. En la vida real esto último sólo ocurrirá a veces, no muy frecuentemente.</Spanish>
             <Chinese>當患者陷入無意識狀態時，有兩件事情可能會發生。首先呼吸道可能會塌陷，以醫學角度來看，因為舌部肌肉失去張力而導致阻擋住呼吸道。舉個例子，在現實生活中每一個失去意識的人幾乎都會發生這個。再來就是會發生的就是呼吸道閉塞。當病人倒地並嘔吐的時候，會讓嘴部沒有空間，也會導致呼吸道阻塞。有一個治療方法，那就是清除嘔吐物。在現實生活中，這偶爾會發生，但不常見</Chinese>
@@ -798,7 +799,7 @@
         </Key>
         <Key ID="STR_kat_airway_ALLOW_GUEDELTUBUS_DESC">
             <English>Training level required to use a Guedeltubus</English>
-            <German>Benötigtes Training Level um den Guedeltubus zu nutzen</German>
+            <German>Benötigtes Trainings Level um den Guedeltubus zu nutzen</German>
             <Polish>Poziom wyszkolenia wymagany do korzystania z rurki ustno-gardłowej</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar un Guedeltubus</Spanish>
             <Chinese>使用Guedeltubus所需的培訓水平</Chinese>
@@ -828,7 +829,7 @@
         </Key>
         <Key ID="STR_kat_airway_ALLOW_ACCUVAC_DESC">
             <English>Training level required to use an Accuvac</English>
-            <German>Benötigtes Training Level um den Accuvac zu nutzen</German>
+            <German>Benötigtes Trainings Level um den Accuvac zu nutzen</German>
             <Polish>Poziom wyszkolenia wymagany do korzystania z Accuvac</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar un Accuvac</Spanish>
             <Chinese>使用Accuvac所需的培訓水平</Chinese>
@@ -858,7 +859,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_CHECKAIRWAY_DESC">
             <English>How long it will take to check Airways</English>
-            <German>Wie lange es dauert um die Atemwege zu prüfen</German>
+            <German>Wie lange es dauert, um die Atemwege zu prüfen</German>
             <Polish>Ile czasu zajmie sprawdzenie dróg oddechowych</Polish>
             <Spanish>Cuánto tiempo llevará revisar Airways</Spanish>
             <Chinese>檢查航空公司需要多長時間</Chinese>
@@ -903,7 +904,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_OVERSTRETCH_DESC">
             <English>How long it will take to overstretch the head</English>
-            <German>Wie lange es dauert um den Kopf zu überstrecken</German>
+            <German>Wie lange es dauert, um den Kopf zu überstrecken</German>
             <Polish>Ile czasu zajmie odchylenie głowy</Polish>
             <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
             <Chinese>转头需要多长时间</Chinese>
@@ -918,7 +919,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_HEADTURNING_DESC">
             <English>How long it will take to turn head</English>
-            <German>Wie lange dauert es den Kopf zur Seite zu drehen</German>
+            <German>Wie lange dauert es, den Kopf zur Seite zu drehen</German>
             <Polish>Ile czasu zajmie obrócenie głowy</Polish>
             <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
             <Chinese>轉頭需要多長時間</Chinese>
@@ -948,7 +949,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_ACCUVAC_DESC">
             <English>How long it will take to use Accuvac</English>
-            <German>Wie lange dauert es den Accuvac zu nutzen</German>
+            <German>Wie lange dauert es, den Accuvac zu nutzen</German>
             <Polish>Ile czasu zajmie użycie Accuvac'a</Polish>
             <Spanish>Cuánto tiempo llevará usar Accuvac</Spanish>
             <Chinese>使用Accuvac需要多長時間</Chinese>
@@ -978,7 +979,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_LARYNXTUBUS_DESC">
             <English>How long it will take to use Larynxtubus</English>
-            <German>Wie lange dauert es den Laryxtubus zu nutzen</German>
+            <German>Wie lange dauert es, den Laryxtubus zu nutzen</German>
             <Polish>Ile czasu zajmie użycie rurki krtaniowej</Polish>
             <Spanish>Cuánto tiempo llevará usar Larynxtubus</Spanish>
             <Chinese>使用喉頭需要多長時間</Chinese>
@@ -1008,7 +1009,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_GUEDELTUBUS_DESC">
             <English>How long it will take to use Guedeltubus</English>
-            <German>Wie lange dauert es den Guedeltubus zu nutzen</German>
+            <German>Wie lange dauert es, den Guedeltubus zu nutzen</German>
             <Polish>Jak długo potrwa użycie rurki ustno-gardłowej</Polish>
             <Spanish>Cuánto tiempo tomará usar Guedeltubus</Spanish>
             <Chinese>使用Guedeltubus需要多長時間</Chinese>
@@ -1137,7 +1138,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
-            <German>Die Zeit, wie lange es dauert eine erfolgreiche stabile Seitenlage durchzuführen</German>
+            <German>Die Zeit, wie lange es dauert, eine erfolgreiche stabile Seitenlage durchzuführen</German>
             <Polish>Jak długo potrwa ułożenie w pozycji bocznej bezpiecznej</Polish>
             <Chinesesimp>建立救援体位的所需时间</Chinesesimp>
             <Japanese>回復体位を完了するのにどのくらい時間がかかるか設定します</Japanese>
@@ -1173,7 +1174,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY">
             <English>Time for cancelling recovery position</English>
-            <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
+            <German>Die Zeit, wie lange es dauert, eine stabile Seitenlage abzubrechen</German>
             <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
             <Chinesesimp>取消救援体位时间</Chinesesimp>
             <Japanese>回復体位を崩すのにかかる時間</Japanese>
@@ -1185,7 +1186,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
-            <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
+            <German>Die Zeit, wie lange es dauert, eine stabile Seitenlage abzubrechen</German>
             <Polish>Jak długo potrwa przerwanie pozycji bocznej bezpiecznej</Polish>
             <Chinesesimp>取消救援体位的所需时间</Chinesesimp>
             <Japanese>回復体位を崩すのにどのくらい時間がかかるか設定します</Japanese>
@@ -1197,7 +1198,7 @@
         </Key>
         <Key ID="STR_kat_airway_noObstruction">
             <English>Not obstructed</English>
-            <German>Nicht verlegt</German>
+            <German>Nicht obstruiert</German>
             <Polish>Drożne</Polish>
             <Spanish>No obstruída</Spanish>
             <Chinese>無 阻塞</Chinese>
@@ -1228,6 +1229,7 @@
             <Czech>Základní nastavení</Czech>
             <French>Paramètres basiques</French>
             <Korean>일반 설정</Korean>
+            <German>Grundeinstellungen</German>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_RecoveryPositionOverstretch">
             <English>Recovery position + Overstretch Settings</English>
@@ -1235,6 +1237,7 @@
             <Czech>Nastavení stabilizované polohy a narovnávání hlavy</Czech>
             <French>Paramètres de position latérale de sécurité + hyperextension</French>
             <Korean>회복 자세 + 머리 젖히기 설정</Korean>
+            <German>Wiederherstellungsposition + Überdehnungseinstellungen</German>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1242,6 +1245,7 @@
             <Czech>Nastavení předmětů dýchacích cest</Czech>
             <French>Paramètres des objets des voies aériennes</French>
             <Korean>기도 관련 아이템 설정</Korean>
+            <German>Einstellungen der Atemwegsobjekte</German>
         </Key>
     </Package>
 </Project>
