@@ -386,5 +386,13 @@
             <German>Grundeinstellungen</German>
             <Chinesesimp>基础设置</Chinesesimp>
         </Key>
+        <Key ID="STR_kat_misc_SETTING_arsenalMedCategory">
+            <English>Arsenal Medical category</English>
+            <Czech>Zdravotnická kategorie arzenálu</Czech>
+        </Key>
+        <Key ID="STR_kat_misc_SETTING_arsenalMedCategory_Desc">
+            <English>Enable medical category for arsenal and relocate all medical related items to it?</English>
+            <Czech>Povolit zdravotnickou kategorii pro arzenál a přemístit do ní všechny zdravotnické věci?</Czech>
+        </Key>
     </Package>
 </Project>
