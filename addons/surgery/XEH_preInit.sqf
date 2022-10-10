@@ -27,24 +27,6 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(kidneyAction),
-	"CHECKBOX",
-	[LLSTRING(KIDNEY_ACTION), LLSTRING(KIDNEY_ACTION_DESC)],
-	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Kidney)],
-	[false],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(dialysisTime),
-	"SLIDER",
-	LLSTRING(DIALYSIS_TIMER),
-	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Kidney)],
-	[0,100,20,0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
 	QGVAR(enable_fracture),
 	"CHECKBOX",
 	LLSTRING(ADVANCED_FRACTURE),

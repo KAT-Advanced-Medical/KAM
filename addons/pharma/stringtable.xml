@@ -1489,6 +1489,7 @@
             <French>Niveau médical requis pour le Flumazénil</French>
             <Korean>플루마제닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Flumazenil</German>
+            <Polish>Poziom wyszkolenia medycznego dla Flumazenilu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Flumazenil">
             <English>Treatment time for Flumazenil</English>
@@ -1508,6 +1509,7 @@
             <French>Niveau médical requis pour le Lorazépam</French>
             <Korean>로라제팜을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Lorazepam</German>
+            <Polish>Poziom wyszkolenia medycznego dla Lorazepamu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Lorazepam">
             <English>Treatment time for Lorazepam</English>
@@ -1527,6 +1529,7 @@
             <French>Niveau médical requis pour l'Étomidate</French>
             <Korean>에토미데이트를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Etomidat</German>
+            <Polish>Poziom wyszkolenia medycznego dla Etomidatu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Etomidate">
             <English>Treatment time for Etomidate</English>
@@ -1864,6 +1867,7 @@
             <Korean>신장 손상/기능상실</Korean>
             <German>Nierenschäden/-versagen</German>
             <Chinesesimp>肾损伤/衰竭</Chinesesimp>
+            <Polish>Uszkodzenie nerek</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Kidney_Action_DESC">
             <English>Enables kidney damage caused by overuse of saline</English>
@@ -1873,6 +1877,7 @@
             <Korean>식염수 과다 사용으로 인한 신장 손상 활성화</Korean>
             <German>Ermöglicht Nierenschäden, die durch übermäßigen Gebrauch von Kochsalzlösung verursacht werden</German>
             <Chinesesimp>启用因过度使用生理盐水而造成的肾脏损害</Chinesesimp>
+            <Polish>Włącza uszkadzanie nerek spowodowane zbytnim użyciem soli fizjologicznej</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Block_Chance">
             <English>IV Block Chance</English>
@@ -1918,6 +1923,7 @@
             <Korean>아미노카프로산</Korean>
             <German>ε-Aminocapronsäure</German>
             <Chinesesimp>EACA</Chinesesimp>
+            <Polish>EACA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Take_EACA">
             <English>Push EACA</English>
@@ -1927,6 +1933,7 @@
             <Korean>아미노카프로산 투여</Korean>
             <German>Verabreiche Aminocapronsäure</German>
             <Chinesesimp>推注EACA</Chinesesimp>
+            <Polish>Wstrzyknij EACA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_EACA_DescShort">
             <English>Encourages clot formation</English>
@@ -1936,6 +1943,7 @@
             <Korean>혈전 형성을 촉진합니다.</Korean>
             <German>Fördert die Gerinnungsbildung</German>
             <Chinesesimp>促进凝块形成</Chinesesimp>
+            <Polish>Wspomaga powstawanie skrzepów</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_aiEnabled">
             <English>Enable Advanced Medical for AI</English>
@@ -2002,6 +2010,15 @@
             <Korean>심하게 손상된 사지에 IV를 꽂을 수 있는지의 여부. 기본값은 비활성화입니다.</Korean>
             <German>Ob die IV an der zu stark beschädigten Gliedmaße angewendet werden kann oder nicht. In der Standardeinstellung ist dies deaktiviert.</German>
             <Chinesesimp>是否可以将 IV 应用于受损的肢体。 默认情况下，这是禁用的。</Chinesesimp>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Kidney">
+            <English>Kidney Settings</English>
+            <Chinesesimp>肾脏设置</Chinesesimp>
+            <Italian>Impostazioni renali</Italian>
+            <Polish>Ustawienia Nerek</Polish>
+            <Czech>Nastavení ledvin</Czech>
+            <French>Paramètres des reins</French>
+            <Korean>신장 설정</Korean>
         </Key>
     </Package>
 </Project>
