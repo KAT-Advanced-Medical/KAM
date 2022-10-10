@@ -679,9 +679,7 @@
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>The percentage chance that a patient will suffer from a hemopneumotorax or tension pneumothorax after they are treated for a pneumothorax. Treatment requires the draining of fluids with the use of an AAT Kit.</English>
-            <German>Die prozentuale Chance, dass ein Patient einen Hämatothorax oder einen Spannungspneumothorax bekommt. Die Behandlung benötigt das Entfernen von Flüssigkeit und das AAT Kit.
-
-</German>
+            <German>Die prozentuale Chance, dass ein Patient einen Hämatothorax oder einen Spannungspneumothorax bekommt. Die Behandlung benötigt das Entfernen von Flüssigkeit und das AAT Kit.</German>
             <Polish>Procentowa szansa, że pacjent będzie cierpieć na krwiaka opłucnej lub odmę prężną w tym samym czasie, gdy cierpi na odmę płucną. Zabieg wymaga drenażu opłucnej za pomocą zestawu AAT.</Polish>
             <Spanish>El porcentaje de probabilidad de que un paciente sufra un hemotórax al mismo tiempo que padece un neumotórax. El tratamiento requiere el drenaje de líquidos con el uso de un kit AAT.</Spanish>
             <Chinese>患者患氣胸的同時患上血胸的機會百分比。 處理需要使用AAT套件排出流體。</Chinese>
@@ -696,8 +694,7 @@
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemothorax / Tension Pnuemothorax Treament Minimum Level</English>
-            <German>
-Hämatopneumothorax / Spannungspneumothorax minimales Trainings Level</German>
+            <German>Hämatopneumothorax / Spannungspneumothorax minimales Trainings Level</German>
             <Polish>Minimalny poziom wyszkolenia do leczenia krwiaka opłucnej lub odmy prężnej</Polish>
             <Spanish>Nivel mínimo del tratamiento del hemoneumotórax</Spanish>
             <Chinese>血氣胸治療最低水平</Chinese>
@@ -712,9 +709,7 @@ Hämatopneumothorax / Spannungspneumothorax minimales Trainings Level</German>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to perform the Needle Decompression and Drain Fluids treatment actions, used to treat Hemothorax or Tension Pneumothorax.</English>
-            <German>Das minimale Trainingslevel, das benötigt wird, um das AAT Kit nutzen zu können. Dieses wird für die Behandlung eines Hämatopneumothorax oder Spannungspneumothorax benutzt.
-
-</German>
+            <German>Das minimale Trainingslevel, das benötigt wird, um das AAT Kit nutzen zu können. Dieses wird für die Behandlung eines Hämatopneumothorax oder Spannungspneumothorax benutzt.</German>
             <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie wykonać leczenie igłą dekompresyjną i drenaż opłucnej,  stosowane w leczeniu krwiaka opłucnej lub odmy prężnej.</Polish>
             <Spanish>El nivel médico mínimo requerido para que alguien pueda realizar la acción del tratamiento de descompresión con aguja, que se utiliza para tratar el hemoneumotórax.</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
@@ -744,8 +739,7 @@ Hämatopneumothorax / Spannungspneumothorax minimales Trainings Level</German>
         </Key>
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION">
             <English>The amount of damage in a single impact, on a scale of 0 to 1, that needs to occur before there is a chance of pneumothorax. Lower values means that pneumothorax is more likely to occurr. Setting the value very low, or to zero, may cause unexpected behavior or pneumothorax from unexpected injuries.</English>
-            <German>
-Die Höhe des Schadens bei einem einzigen Aufprall, welcher auf einer Skala von 0 bis 1 auftreten muss, bevor die Chance eines Pneumothoraxes besteht. Niedrigere Werte bedeuten, dass ein Pneumothorax wahrscheinlicher ist. Wird der Wert sehr niedrig oder auf null gesetzt, kann dies zu unerwartetem Verhalten oder zu einem Pneumothorax aufgrund unerwarteter Verletzungen führen.</German>
+            <German>Die Höhe des Schadens bei einem einzigen Aufprall, welcher auf einer Skala von 0 bis 1 auftreten muss, bevor die Chance eines Pneumothoraxes besteht. Niedrigere Werte bedeuten, dass ein Pneumothorax wahrscheinlicher ist. Wird der Wert sehr niedrig oder auf null gesetzt, kann dies zu unerwartetem Verhalten oder zu einem Pneumothorax aufgrund unerwarteter Verletzungen führen.</German>
             <Polish>Poziom obrażeń w jednym uderzeniu w skali od 0 do 1, który musi wystąpić, zanim zaistnieje odma płucna. Niższa wartość skutkuje większą szansą wystąpienia odmy. Ustawienie wartości bliskiej lub równej zeru może spowodować nieoczekiwane zachowanie lub skutkować uzyskaniem odmy płucnej od niewłaściwych ran.</Polish>
             <Spanish>El nivel médico mínimo requerido para que alguien pueda realizar la acción del tratamiento de descompresión con aguja, que se utiliza para tratar el hemoneumotórax.</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
