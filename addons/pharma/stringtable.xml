@@ -1439,6 +1439,7 @@
             <Czech>Lékařská úroveň potřebná pro flumazenil</Czech>
             <French>Niveau médical requis pour le Flumazénil</French>
             <Korean>플루마제닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
+            <Polish>Poziom wyszkolenia medycznego dla Flumazenilu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Flumazenil">
             <English>Treatment time for Flumazenil</English>
@@ -1456,6 +1457,7 @@
             <Czech>Lékařská úroveň potřebná pro lorazepam</Czech>
             <French>Niveau médical requis pour le Lorazépam</French>
             <Korean>로라제팜을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
+            <Polish>Poziom wyszkolenia medycznego dla Lorazepamu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Lorazepam">
             <English>Treatment time for Lorazepam</English>
@@ -1473,6 +1475,7 @@
             <Czech>Lékařská úroveň potřebná pro etomidát</Czech>
             <French>Niveau médical requis pour l'Étomidate</French>
             <Korean>에토미데이트를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
+            <Polish>Poziom wyszkolenia medycznego dla Etomidatu</Polish>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Etomidate">
             <English>Treatment time for Etomidate</English>
@@ -1823,6 +1826,7 @@
             <French>Acide aminocaproïque</French>
             <Korean>아미노카프로산</Korean>
             <Chinesesimp>EACA</Chinesesimp>
+            <Polish>EACA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Take_EACA">
             <English>Push EACA</English>
@@ -1831,6 +1835,7 @@
             <French>Administrer de l'Acide aminocaproïque</French>
             <Korean>아미노카프로산 투여</Korean>
             <Chinesesimp>推注EACA</Chinesesimp>
+            <Polish>Wstrzyknij EACA</Polish>
         </Key>
         <Key ID="STR_kat_pharma_EACA_DescShort">
             <English>Encourages clot formation</English>
@@ -1839,6 +1844,7 @@
             <French>Favorise la formation de caillots</French>
             <Korean>혈전 형성을 촉진합니다.</Korean>
             <Chinesesimp>促进凝块形成</Chinesesimp>
+            <Polish>Wspomaga powstawanie skrzepów</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_aiEnabled">
             <English>Enable Advanced Medical for AI</English>
