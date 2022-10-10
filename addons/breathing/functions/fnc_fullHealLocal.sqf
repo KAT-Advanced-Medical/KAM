@@ -78,13 +78,12 @@ _patient setVariable ["kat_pharma_IVpfh", [0,0,0,0,0,0], true];
 _patient setVariable ["kat_pharma_active", false, true];
 _patient setVariable ["kat_IVPharma_PFH", nil, true];
 _patient setVariable ["kat_pharma_sedated", false, true];
+_patient setVariable ["kat_pharma_pH", 1500, true];
+_patient setVariable ["kat_pharma_kidneyFail", false, true];
+_patient setVariable ["kat_pharma_kidneyArrest", false, true];
+_patient setVariable ["kat_pharma_kidneyPressure", false, true];
 
 //KAT Surgery
-
-_patient setVariable ["kat_surgery_pH", 1500, true];
-_patient setVariable ["kat_surgery_kidneyFail", false, true];
-_patient setVariable ["kat_surgery_kidneyArrest", false, true];
-_patient setVariable ["kat_surgery_kidneyPressure", false, true];
 
 _patient setVariable ["kat_surgery_debridement", [0,0,0,0,0,0], true];
 _patient setVariable ["kat_surgery_fractures", [0,0,0,0,0,0], true];

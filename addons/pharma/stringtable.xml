@@ -1778,6 +1778,7 @@
             <French>Lésions/Insuffisance rénale</French>
             <Korean>신장 손상/기능상실</Korean>
             <Chinesesimp>肾损伤/衰竭</Chinesesimp>
+            <Polish>Uszkodzenie nerek</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Kidney_Action_DESC">
             <English>Enables kidney damage caused by overuse of saline</English>
@@ -1786,6 +1787,7 @@
             <French>Active les lésions rénales causées par une surutilisation de solution saline</French>
             <Korean>식염수 과다 사용으로 인한 신장 손상 활성화</Korean>
             <Chinesesimp>启用因过度使用生理盐水而造成的肾脏损害</Chinesesimp>
+            <Polish>Włącza uszkadzanie nerek spowodowane zbytnim użyciem soli fizjologicznej</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Block_Chance">
             <English>IV Block Chance</English>
@@ -1904,6 +1906,15 @@
             <French>Définie si vous pouvez ou non appliquer une IV sur un membre trop endommagé. Par défaut, ce réglage est désactivé.</French>
             <Korean>심하게 손상된 사지에 IV를 꽂을 수 있는지의 여부. 기본값은 비활성화입니다.</Korean>
             <Chinesesimp>是否可以将 IV 应用于受损的肢体。 默认情况下，这是禁用的。</Chinesesimp>
+        </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Kidney">
+            <English>Kidney Settings</English>
+            <Chinesesimp>肾脏设置</Chinesesimp>
+            <Italian>Impostazioni renali</Italian>
+            <Polish>Ustawienia Nerek</Polish>
+            <Czech>Nastavení ledvin</Czech>
+            <French>Paramètres des reins</French>
+            <Korean>신장 설정</Korean>
         </Key>
     </Package>
 </Project>
