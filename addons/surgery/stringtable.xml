@@ -421,24 +421,6 @@
             <French>Application</French>
             <Korean>적용 중</Korean>
         </Key>
-        <Key ID="STR_kat_surgery_KIDNEY_ACTION">
-            <English>Kidney damage/failure</English>
-            <Chinesesimp>肾损伤/衰竭</Chinesesimp>
-            <Italian>Danno/insufficienza renale</Italian>
-            <Polish>Uszkodzenie nerek</Polish>
-            <Czech>Poškození/selhání ledvin</Czech>
-            <French>Dégâts/Insuffisance rénale</French>
-            <Korean>신장 손상/기능상실</Korean>
-        </Key>
-        <Key ID="STR_kat_surgery_KIDNEY_ACTION_DESC">
-            <English>Enables kidney damage caused by overuse of saline</English>
-            <Chinesesimp>启用因过度使用生理盐水而造成的肾脏损害</Chinesesimp>
-            <Italian>Consente danni renali causati da un uso eccessivo di soluzione salina</Italian>
-            <Polish>Włącza uszkadzanie nerek spowodowane zbytnim użyciem soli fizjologicznej</Polish>
-            <Czech>Umožňuje poškození ledvin způsobené nadužíváním fyziologického roztoku</Czech>
-            <French>Autorise les dégâts rénaux causés par une surutilisation de solution saline</French>
-            <Korean>식염수 과다 사용으로 인한 신장 손상 활성화</Korean>
-        </Key>
         <Key ID="STR_kat_surgery_DIALYSIS_TIMER">
             <English>Time to perform dialysis</English>
             <Chinesesimp>进行透析的时间</Chinesesimp>
@@ -762,15 +744,6 @@
             <Czech>Nastavení zlomenin</Czech>
             <French>Paramètres des fractures</French>
             <Korean>골절 설정</Korean>
-        </Key>
-        <Key ID="STR_kat_surgery_SubCategory_Kidney">
-            <English>Kidney Settings</English>
-            <Chinesesimp>肾脏设置</Chinesesimp>
-            <Italian>Impostazioni renali</Italian>
-            <Polish>Ustawienia Nerek</Polish>
-            <Czech>Nastavení ledvin</Czech>
-            <French>Paramètres des reins</French>
-            <Korean>신장 설정</Korean>
         </Key>
     </Package>
 </Project>

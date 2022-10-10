@@ -63,14 +63,14 @@ class ADDON {
         };
         class Fentanyl {
             painReduce = 1;
-            hrIncreaseLow[] = {-25, -20};
-            hrIncreaseNormal[] = {-30, -25};
-            hrIncreaseHigh[] = {-35, -25};
-            timeInSystem = 1800;
-            timeTillMaxEffect = 60;
+            hrIncreaseLow[] = {-10, -5};
+            hrIncreaseNormal[] = {-15, -10};
+            hrIncreaseHigh[] = {-20, -10};
+            timeInSystem = 900;
+            timeTillMaxEffect = 20;
             maxDose = 2;
             incompatibleMedication[] = {};
-            viscosityChange = -35;
+            viscosityChange = -10;
         };
         class Ketamine {
             painReduce = 0.8;
