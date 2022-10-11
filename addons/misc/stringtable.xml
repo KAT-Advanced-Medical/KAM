@@ -389,10 +389,12 @@
         <Key ID="STR_kat_misc_SETTING_arsenalMedCategory">
             <English>Arsenal Medical category</English>
             <Czech>Zdravotnická kategorie arzenálu</Czech>
+            <French>Catégorie médicale pour l'arsenal</French>
         </Key>
         <Key ID="STR_kat_misc_SETTING_arsenalMedCategory_Desc">
             <English>Enable medical category for arsenal and relocate all medical related items to it?</English>
             <Czech>Povolit zdravotnickou kategorii pro arzenál a přemístit do ní všechny zdravotnické věci?</Czech>
+            <French>Active la catégorie médicale pour l'arsenal et y affecte tous les objets médicaux ?</French>
         </Key>
     </Package>
 </Project>

@@ -229,10 +229,12 @@
             <Korean>막힘 완화됨</Korean>
             <German>Geringe Obstruktion</German>
             <Chinesesimp>减轻阻塞</Chinesesimp>
+            <French>Obstruction atténuée</French>
         </Key>
         <Key ID="STR_kat_airway_message_obstructionTemporarilyMitigated">
             <English>Obstruction is temporarily mitigated</English>
             <Polish>Drogi oddechowe są ręcznie udrożnione</Polish>
+            <French>L'obstruction a été temporairement atténuée</French>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
