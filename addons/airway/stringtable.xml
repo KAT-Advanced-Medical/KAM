@@ -235,6 +235,7 @@
             <English>Obstruction is temporarily mitigated</English>
             <Polish>Drogi oddechowe są ręcznie udrożnione</Polish>
             <French>L'obstruction a été temporairement atténuée</French>
+            <Japanese>閉塞は一時的に軽減されています</Japanese>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
@@ -1241,6 +1242,7 @@
             <Korean>일반 설정</Korean>
             <German>Grundeinstellungen</German>
             <Chinesesimp>基础设置</Chinesesimp>
+            <Japanese>基本設定</Japanese>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_RecoveryPositionOverstretch">
             <English>Recovery position + Overstretch Settings</English>
@@ -1250,6 +1252,7 @@
             <Korean>회복 자세 + 머리 젖히기 설정</Korean>
             <German>Wiederherstellungsposition + Überdehnungseinstellungen</German>
             <Chinesesimp>恢复体态设置</Chinesesimp>
+            <Japanese>回復体位設定</Japanese>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1259,6 +1262,7 @@
             <Korean>기도 관련 아이템 설정</Korean>
             <German>Einstellungen der Atemwegsobjekte</German>
             <Chinesesimp>气道物品设置</Chinesesimp>
+            <Japanese>気道アイテム設定</Japanese>
         </Key>
     </Package>
 </Project>

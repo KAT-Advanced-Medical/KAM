@@ -10,6 +10,7 @@
             <French>Autoriser la pose d'IV</French>
             <Korean>IV 설정 허용</Korean>
             <German>Erlaubt die Anwendung von IV</German>
+            <Japanese>IVの使用許可</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_ApplyIV_Desc">
             <English>Changes what medical level is required to set IVs</English>
@@ -23,7 +24,7 @@
             <Korean>IV를 설정하는 데 필요한 의료 레벨 수준 변경</Korean>
             <Turkish>IV'leri'ları ayarlamak için gereken tıbbi düzeyi değiştirir</Turkish>
             <Czech>Změní který medický level je potřeba k zavedení IV</Czech>
-            <Japanese>IVの許可</Japanese>
+            <Japanese>IVの使用に訓練レベルを必要とさせます。</Japanese>
             <Russian>Изменяет медицинский уровень, необходимый для установки IV.</Russian>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_ApplyIO">
@@ -35,6 +36,7 @@
             <French>Autoriser la pose d'IO</French>
             <Korean>IO 설정 허용</Korean>
             <German>Erlaubt die Anwendung von IO</German>
+            <Japanese>IOの使用許可</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_ApplyIO_Desc">
             <English>Changes what medical level is required to set IOs</English>
@@ -45,6 +47,7 @@
             <French>Change le niveau médical requis pour poser des IO</French>
             <Korean>IO를 설정하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Ändert, welcher medizinische Grad für das Legen von IOs erforderlich ist</German>
+            <Japanese>IOの使用に訓練レベルを必要とさせます。</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP_ENABLE">
             <English>Enables IV/IO drop times</English>
@@ -1036,6 +1039,7 @@
             <French>Temps de traitement pour réorienter</French>
             <Korean>뺨을 때리는 데 걸리는 시간</Korean>
             <German>Behandlungszeit für die Umorientierung</German>
+            <Japanese>患者に刺激を与えるのにかかる時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_displayName">
             <English>Etomidate</English>
@@ -1046,6 +1050,7 @@
             <Polish>Etomidat</Polish>
             <Korean>에토미데이트</Korean>
             <German>Etomidat</German>
+            <Japanese>エトミダート</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_DescShort">
             <English>General Anesthetic</English>
@@ -1056,6 +1061,7 @@
             <Polish>Anestetyk</Polish>
             <Korean>일반적인 마취제</Korean>
             <German>Allgemeinanästhesie</German>
+            <Japanese>全身麻酔</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_DescUse">
             <English>Used as a general anesthetic for surgical procedures</English>
@@ -1065,6 +1071,7 @@
             <French>Utilisé comme un anesthésique général pour les procédures chirurgicales</French>
             <Korean>수술 시 전신 마취제로 사용됩니다.</Korean>
             <German>Wird als allgemeines Anästhetikum bei chirurgischen Eingriffen verwendet</German>
+            <Japanese>外科的処置のための全身麻酔薬として使用される</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_Use">
             <English>Push Etomidate</English>
@@ -1075,6 +1082,7 @@
             <Polish>Wstrzyknij Etomidat</Polish>
             <Korean>에토미데이트 투여</Korean>
             <German>Verabreiche Etomidat</German>
+            <Japanese>エトミダートを注入</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_displayName">
             <English>Lorazepam</English>
@@ -1085,6 +1093,7 @@
             <Polish>Lorazepam</Polish>
             <Korean>로라제팜</Korean>
             <German>Lorazepam</German>
+            <Japanese>ロラゼパム</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_DescShort">
             <English>Sedtation medication</English>
@@ -1095,6 +1104,7 @@
             <Polish>Środek usypiający</Polish>
             <Korean>진정성 약물</Korean>
             <German>Sedierungsmittel</German>
+            <Japanese>鎮静薬</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_DescUse">
             <English>Used to sedate patients and prepare them for surgery</English>
@@ -1104,6 +1114,7 @@
             <French>Utiliser pour sédater les patients et les préparer pour une opération</French>
             <Korean>환자를 진정시키고 수술 준비를 하는 데 사용됩니다.</Korean>
             <German>Zur Sedierung von Patienten und zur Vorbereitung auf eine Operation</German>
+            <Japanese>患者を鎮静させ、手術の準備をするために使用されます</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_Use">
             <English>Push Lorazepam</English>
@@ -1114,6 +1125,7 @@
             <Polish>Wstrzyknij Lorazepam</Polish>
             <Korean>로라제팜 투여</Korean>
             <German>Verabreiche Lorazepam</German>
+            <Japanese>ロラゼパムを注入</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_displayName">
             <English>Flumazenil</English>
@@ -1124,6 +1136,7 @@
             <Polish>Flumazenil</Polish>
             <Korean>플루마제닐</Korean>
             <German>Flumazenil</German>
+            <Japanese>フルマゼニル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_DescShort">
             <English>Counter to Lorzaepam</English>
@@ -1134,6 +1147,7 @@
             <Polish>Środek wybudzający z Lorazepamu</Polish>
             <Korean>로라제팜의 반대 약물</Korean>
             <German>Antagonist zu Lorazepam</German>
+            <Japanese>ロルゼパムへの拮抗薬</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_DescUse">
             <English>Used to bring patients out of sedation</English>
@@ -1143,6 +1157,7 @@
             <French>Utilisé pour sortir les patients de sédation</French>
             <Korean>환자를 진정 상태에서 벗어나게 하는 데 사용됩니다.</Korean>
             <German>Wird verwendet, um Patienten aus der Sedierung zu holen</German>
+            <Japanese>患者を鎮静状態から解放するために使用</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_Use">
             <English>Push Flumazenil</English>
@@ -1153,6 +1168,7 @@
             <Polish>Wstrzyknij Flumazenil</Polish>
             <Korean>플루마제닐 투여</Korean>
             <German>Verabreiche Flumazenil</German>
+            <Japanese>フルマゼニルを注入</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Ketamine">
             <English>Push Ketamine</English>
@@ -1163,6 +1179,7 @@
             <Polish>Wstrzyknij Ketaminę</Polish>
             <Korean>케타민 투여</Korean>
             <German>Verabreiche Ketamin</German>
+            <Japanese>ケタミンを注入</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_Ketamine_Box_Display">
             <English>Ketamine</English>
@@ -1173,6 +1190,7 @@
             <Polish>Ketamina</Polish>
             <Korean>케타민</Korean>
             <German>Ketamin</German>
+            <Japanese>ケタミン</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_Ketamine_DescShort">
             <English>Suppress pain</English>
@@ -1183,6 +1201,7 @@
             <Polish>Zwalcza ból</Polish>
             <Korean>고통 억제</Korean>
             <German>Unterdrückt Schmerzen</German>
+            <Japanese>痛みを抑える</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Fentanyl">
             <English>Push Fentanyl</English>
@@ -1193,6 +1212,7 @@
             <Polish>Wstrzyknij Fentanyl</Polish>
             <Korean>펜타닐 투여</Korean>
             <German>Verabreiche Fentanyl</German>
+            <Japanese>フェンタニルを注入</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_Fentanyl_Box_Display">
             <English>Fentanyl</English>
@@ -1203,6 +1223,7 @@
             <Polish>Fentanyl</Polish>
             <Korean>펜타닐</Korean>
             <German>Fentanyl</German>
+            <Japanese>フェンタニル</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_Fentanyl_DescShort">
             <English>Suppress pain</English>
@@ -1213,6 +1234,7 @@
             <Polish>Zwalcza ból</Polish>
             <Korean>고통 억제</Korean>
             <German>Unterdrückt Schmerzen</German>
+            <Japanese>痛みを抑える</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
@@ -1223,6 +1245,7 @@
             <Polish>Wstrzyknij Nalbufinę</Polish>
             <Korean>날부핀 투여</Korean>
             <German>Verabreiche Nalbuphin</German>
+            <Japanese>ナルブフィンを注入</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_Nalbuphine_Box_Display">
             <English>Nalbuphine</English>
@@ -1233,6 +1256,7 @@
             <Polish>Nalbufina</Polish>
             <Korean>날부핀</Korean>
             <German>Nalbuphin</German>
+            <Japanese>ナルブフィン</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_Nalbuphine_DescShort">
             <English>Suppress pain</English>
@@ -1243,6 +1267,7 @@
             <Polish>Zwalcza ból</Polish>
             <Korean>고통 억제</Korean>
             <German>Unterdrückt Schmerzen</German>
+            <Japanese>痛みを抑える</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_Activity_usedItem">
             <English>%1 used %2</English>
@@ -1270,6 +1295,7 @@
             <French>Chance de succès de la réorientation</French>
             <Korean>뺨 때리기가 성공할 확률</Korean>
             <German>Chance für eine erfolgreiche Umorientierung</German>
+            <Japanese>患者に刺激を与えた際の覚醒成功率</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_carbonateChance">
             <English>Chance for succesful Carbonate use</English>
@@ -1280,6 +1306,7 @@
             <French>Chance de succès des Sels d'Ammoniac</French>
             <Korean>탄산암모늄 사용으로 성공할 확률</Korean>
             <German>Chance für den erfolgreichen Einsatz von Carbonat</German>
+            <Japanese>炭酸アンモニウムを使用した際の覚醒成功率</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
@@ -1290,6 +1317,7 @@
             <French>Autoriser l'usage des Sels d'Ammoniac</French>
             <Korean>탄산암모늄 사용 허가</Korean>
             <German>Erlaube die Verwendung von Carbonat</German>
+            <Japanese>炭酸アンモニウムの使用を許可</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>
@@ -1300,6 +1328,7 @@
             <French>Temps de traitement des Sels d'Ammoniac</French>
             <Korean>탄산암모늄으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Carbonat</German>
+            <Japanese>炭酸アンモニウムの使用にかかる時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Naloxone">
             <English>Medical level required for Naloxone</English>
@@ -1310,6 +1339,7 @@
             <French>Niveau médical requis pour la Naloxone</French>
             <Korean>날록손을 사용할 수 있는 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Naloxon </German>
+            <Japanese>ナロキソンに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Naloxone">
             <English>Treatment time for Naloxone</English>
@@ -1320,6 +1350,7 @@
             <French>Temps de traitement de la Naloxone</French>
             <Korean>날록손으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Naloxon </German>
+            <Japanese>ナロキソンの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
@@ -1330,6 +1361,7 @@
             <French>Niveau médical requis pour l'Acide Tranexamique</French>
             <Korean>TXA를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von TXA</German>
+            <Japanese>TXAに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_TXA">
             <English>Treatment time for TXA</English>
@@ -1340,6 +1372,7 @@
             <French>Temps de traitement de l'Acide Tranexamique</French>
             <Korean>TXA로 치료하는 시간</Korean>
             <German>Anwendungszeit für TXA</German>
+            <Japanese>TXAの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Norepinephrine">
             <English>Medical level required for Norepinephrine</English>
@@ -1350,6 +1383,7 @@
             <French>Niveau médical requis pour la Noradrénaline</French>
             <Korean>노르에피네프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Norepinephrin</German>
+            <Japanese>ノルアドレナリンに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Norepinephrine">
             <English>Treatment time for Norepinephrine</English>
@@ -1360,6 +1394,7 @@
             <French>Temps de traitement de la Noradrénaline</French>
             <Korean>노르에피네프린으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Norepinephrin</German>
+            <Japanese>ノルアドレナリンの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Phenylephrine">
             <English>Medical level required for Phenylephrine</English>
@@ -1370,6 +1405,7 @@
             <French>Niveau médical requis pour la Phényléphrine</French>
             <Korean>페닐에프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Phenylephrin</German>
+            <Japanese>フェニレフリンに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Phenylephrine">
             <English>Treatment time for Phenylephrine</English>
@@ -1380,6 +1416,7 @@
             <French>Temps de traitement de la Phényléphrine</French>
             <Korean>페닐에프린으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Phenylephrin</German>
+            <Japanese>フェニレフリンの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nitroglycerin">
             <English>Medical level required for Nitroglycerin</English>
@@ -1390,6 +1427,7 @@
             <French>Niveau médical requis pour la Nitroglycérine</French>
             <Korean>니트로글리세린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Anwendungszeit für Nitroglycerin</German>
+            <Japanese>ニトログリセリンに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nitroglycerin">
             <English>Treatment time for Nitroglycerin</English>
@@ -1400,6 +1438,7 @@
             <French>Temps de traitement de la Nitroglycérine</French>
             <Korean>니트로글리세린으로 치료하는 시간</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Nitroglycerin</German>
+            <Japanese>ニトログリセリンの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Amiodarone">
             <English>Medical level required for Amiodarone</English>
@@ -1410,6 +1449,7 @@
             <French>Niveau médical requis pour l'Amiodarone</French>
             <Korean>아미오다론을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Anwendungszeit für Amiodaron</German>
+            <Japanese>アミオダロンに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Amiodarone">
             <English>Treatment time for Amiodarone</English>
@@ -1420,6 +1460,7 @@
             <French>Temps de traitement de l'Amiodarone</French>
             <Korean>아미오다론으로 치료하는 시간</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Amiodaron</German>
+            <Japanese>アミオダロンの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Lidocaine">
             <English>Medical level required for Lidocaine</English>
@@ -1430,6 +1471,7 @@
             <French>Niveau médical requis pour la Lidocaïne</French>
             <Korean>리도카인을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Lidocain</German>
+            <Japanese>リドカインに必​​要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Lidocaine">
             <English>Treatment time for Lidocaine</English>
@@ -1440,6 +1482,7 @@
             <French>Temps de traitement de la Lidocaïne</French>
             <Korean>리도카인으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Lidocain</German>
+            <Japanese>リドカインの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Atropine">
             <English>Medical level required for Atropine</English>
@@ -1450,6 +1493,7 @@
             <French>Niveau médical requis pour l'Atropine</French>
             <Korean>아트로핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Atropin</German>
+            <Japanese>アトロピンに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Atropine">
             <English>Treatment time for Atropine</English>
@@ -1460,6 +1504,7 @@
             <French>Temps de traitement de l'Atropine</French>
             <Korean>아트로핀으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Atropin</German>
+            <Japanese>アトロピンの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_EACA">
             <English>Medical level required for EACA</English>
@@ -1470,6 +1515,7 @@
             <French>Niveau médical requis pour l'Acide Aminocaproïque</French>
             <Korean>아미노카프로산을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Aminocapronsäure</German>
+            <Japanese>EACAに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_EACA">
             <English>Treatment time for EACA</English>
@@ -1480,6 +1526,7 @@
             <French>Temps de traitement de l'Acide Aminocaproïque</French>
             <Korean>아미노카프로산으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Aminocapronsäure</German>
+            <Japanese>EACAの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Flumazenil">
             <English>Medical level required for Flumazenil</English>
@@ -1490,6 +1537,7 @@
             <Korean>플루마제닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Flumazenil</German>
             <Polish>Poziom wyszkolenia medycznego dla Flumazenilu</Polish>
+            <Japanese>フルマゼニルに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Flumazenil">
             <English>Treatment time for Flumazenil</English>
@@ -1500,6 +1548,7 @@
             <French>Temps de traitement du Flumazénil</French>
             <Korean>플루마제닐로 치료하는 시간</Korean>
             <German>Anwendungszeit für Flumazenil</German>
+            <Japanese>フルマゼニルの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Lorazepam">
             <English>Medical level required for Lorazepam</English>
@@ -1510,6 +1559,7 @@
             <Korean>로라제팜을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Lorazepam</German>
             <Polish>Poziom wyszkolenia medycznego dla Lorazepamu</Polish>
+            <Japanese>ロラゼパムに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Lorazepam">
             <English>Treatment time for Lorazepam</English>
@@ -1520,6 +1570,7 @@
             <French>Temps de traitement du Lorazépam</French>
             <Korean>로라제팜으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Lorazepam</German>
+            <Japanese>ロラゼパムの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Etomidate">
             <English>Medical level required for Etomidate</English>
@@ -1530,6 +1581,7 @@
             <Korean>에토미데이트를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Etomidat</German>
             <Polish>Poziom wyszkolenia medycznego dla Etomidatu</Polish>
+            <Japanese>エトミダートに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Etomidate">
             <English>Treatment time for Etomidate</English>
@@ -1540,6 +1592,7 @@
             <French>Temps de traitement de l'Étomidate</French>
             <Korean>에토미데이트로 치료하는 시간</Korean>
             <German>Anwendungszeit für Etomidat</German>
+            <Japanese>エトミダートの施術時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Ketamine">
             <English>Medical level required for Ketamine</English>
@@ -1550,6 +1603,7 @@
             <French>Niveau médical requis pour la Kétamine</French>
             <Korean>케타민을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Ketamin</German>
+            <Japanese>ケタミンに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Ketamine">
             <English>Treatment time for Ketamine</English>
@@ -1560,6 +1614,7 @@
             <French>Temps de traitement de la Kétamine</French>
             <Korean>케타민으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Ketamin</German>
+            <Japanese>ケタミンの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Fentanyl">
             <English>Medical level required for Fentanyl</English>
@@ -1570,6 +1625,7 @@
             <French>Niveau médical requis pour le Fentanyl</French>
             <Korean>펜타닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Fentayl</German>
+            <Japanese>フェンタニルに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Fentanyl">
             <English>Treatment time for Fentanyl</English>
@@ -1580,6 +1636,7 @@
             <French>Temps de traitement du Fentanyl</French>
             <Korean>펜타닐로 치료하는 시간</Korean>
             <German>Anwendungszeit für Fentayl</German>
+            <Japanese>フェンタニルの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Nalbuphine">
             <English>Medical level required for Nalbuphine</English>
@@ -1590,6 +1647,7 @@
             <French>Niveau médical requis pour la Nalbuphine</French>
             <Korean>날부핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinisches Level für die Gabe von Nalbuphin </German>
+            <Japanese>ナルブフィンに必要な医療レベル</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Nalbuphine">
             <English>Treatment time for Nalbuphine</English>
@@ -1600,6 +1658,7 @@
             <French>Temps de traitement de la Nalbuphine</French>
             <Korean>날부핀으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Nalbuphin</German>
+            <Japanese>ナルブフィンの治療時間</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -1610,6 +1669,7 @@
             <French>Paramètres basiques</French>
             <Korean>일반 설정</Korean>
             <German>Grundeinstellungen</German>
+            <Japanese>基本設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_ApplyIV">
             <English>IV Settings</English>
@@ -1620,6 +1680,7 @@
             <French>Paramètres des IV</French>
             <Korean>IV 설정</Korean>
             <German>IV Einstellungen</German>
+            <Japanese>Ⅳ設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_ApplyIO">
             <English>IO Settings</English>
@@ -1630,6 +1691,7 @@
             <French>Paramètres des IO</French>
             <Korean>IO 설정</Korean>
             <German>IO Einstellungen</German>
+            <Japanese>IO 設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Reorientation">
             <English>Reorientation Settings</English>
@@ -1640,6 +1702,7 @@
             <French>Paramètres de la réorientation</French>
             <Korean>뺨 때리기 설정</Korean>
             <German>Umorientierungs-Einstellungen</German>
+            <Japanese>患者に刺激を与える設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Carbonate">
             <English>Carbonate Settings</English>
@@ -1650,6 +1713,7 @@
             <French>Paramètres des Sels d'Ammoniac</French>
             <Korean>탄산암모늄 설정</Korean>
             <German>Carbonat Einstellungen</German>
+            <Japanese>炭酸アンモニウム設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Naloxone">
             <English>Naloxone Settings</English>
@@ -1660,6 +1724,7 @@
             <French>Paramètres de la Naloxone</French>
             <Korean>날록손 설정</Korean>
             <German>Naloxon Einstellungen</German>
+            <Japanese>ナロキソン設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_TXA">
             <English>TXA Settings</English>
@@ -1670,6 +1735,7 @@
             <French>Paramètres de l'Acide Tranexamique</French>
             <Korean>TXA 설정</Korean>
             <German>TXA Einstellungen</German>
+            <Japanese>TXA設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Norepinephrine">
             <English>Norepinephrine Settings</English>
@@ -1680,6 +1746,7 @@
             <French>Paramètres de la Noradrénaline</French>
             <Korean>노르에피네프린 설정</Korean>
             <German>Norepinephrin Einstellungen</German>
+            <Japanese>ノルアドレナリン設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Phenylephrine">
             <English>Phenylephrine Settings</English>
@@ -1690,6 +1757,7 @@
             <French>Paramètres de la Phényléphrine</French>
             <Korean>페닐에프린 설정</Korean>
             <German>Phenylephrin Einstellungen</German>
+            <Japanese>フェニレフリン設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Nitroglycerin">
             <English>Nitroglycerin Settings</English>
@@ -1700,6 +1768,7 @@
             <French>Paramètres de la Nitroglynérine</French>
             <Korean>니트로글리세린 설정</Korean>
             <German>Nitroglycerin Einstellungen</German>
+            <Japanese>ニトログリセリン設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Amiodarone">
             <English>Amiodarone Settings</English>
@@ -1710,6 +1779,7 @@
             <French>Paramètres de l'Amiodarone</French>
             <Korean>아미오다론 설정</Korean>
             <German>Amiodaron Einstellungen</German>
+            <Japanese>アミオダロン設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Lidocaine">
             <English>Lidocaine Settings</English>
@@ -1720,6 +1790,7 @@
             <French>Paramètres de la Lidocaine</French>
             <Korean>리도카인 설정</Korean>
             <German>Lidocain Einstellungen</German>
+            <Japanese>リドカイン設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Atropine">
             <English>Atropine Settings</English>
@@ -1730,6 +1801,7 @@
             <French>Paramètres de l'Atropine</French>
             <Korean>아트로핀 설정</Korean>
             <German>Atropin Einstellungen</German>
+            <Japanese>アトロピン設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_EACA">
             <English>EACA Settings</English>
@@ -1740,6 +1812,7 @@
             <French>Paramètres de l'Acide Aminocaproïque</French>
             <Korean>아미노카프로산 설정</Korean>
             <German>Aminocapronsäure Einstellungen</German>
+            <Japanese>Ε-アミノカプロン酸 (EACA)</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Ketamine">
             <English>Ketamine Settings</English>
@@ -1750,6 +1823,7 @@
             <French>Paramètres de la Kétamine</French>
             <Korean>케타민 설정</Korean>
             <German>Ketamin Einstellungen</German>
+            <Japanese>ケタミン設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Fentanyl">
             <English>Fentanyl Settings</English>
@@ -1760,6 +1834,7 @@
             <French>Paramètres du Fentanyl</French>
             <Korean>펜타닐 설정</Korean>
             <German>Fentanyl Einstellungen</German>
+            <Japanese>フェンタニル設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Nalbuphine">
             <English>Nalbuphine Settings</English>
@@ -1770,6 +1845,7 @@
             <French>Paramètres de la Nalbuphine</French>
             <Korean>날부핀 설정</Korean>
             <German> Nalbuphin Einstellungen</German>
+            <Japanese>ナルブフィン設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Flumazenil">
             <English>Flumazenil Settings</English>
@@ -1780,6 +1856,7 @@
             <French>Paramètres du Flumazénil</French>
             <Korean>플루마제닐 설정</Korean>
             <German>Flumazenil Einstellungen</German>
+            <Japanese>フルマゼニル設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Lorazepam">
             <English>Lorazepam Settings</English>
@@ -1790,6 +1867,7 @@
             <French>Paramètres du Lorazépam</French>
             <Korean>로라제팜 설정</Korean>
             <German>Lorazepam Einstellungen</German>
+            <Japanese>ロラゼパム設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Etomidate">
             <English>Etomidate Settings</English>
@@ -1800,6 +1878,7 @@
             <French>Paramètres de l'Étomidate</French>
             <Korean>에토미데이트 설정</Korean>
             <German>Etomidat Einstellungen</German>
+            <Japanese>エトミダート設定</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_flush_log">
             <English>%1 performed a saline flush on %2</English>
@@ -1810,6 +1889,7 @@
             <Korean>%1 이(가) %2 에게 식염수 주입을 수행했습니다.</Korean>
             <German>%1 hat an %2 eine Spülung mit Kochsalzlösung durchgeführt</German>
             <Chinesesimp>%1 对 %2 使用了盐水冲洗</Chinesesimp>
+            <Japanese>%1 は %2 に生理食塩水フラッシュを実行しました</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
@@ -1819,8 +1899,8 @@
             <Polish>IV jest zablokowane</Polish>
             <Korean>환자의 IV가 막힘</Korean>
             <German>Die IV des Patienten ist blockiert</German>
-
             <Chinesesimp>患者的IV受到阻塞</Chinesesimp>
+            <Japanese>患者の IV は閉塞している</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_IVblock_clear">
             <English>Patient's IV is clear</English>
@@ -1831,6 +1911,7 @@
             <Korean>환자의 IV가 정상</Korean>
             <German>Die IV des Patienten ist durchgängig</German>
             <Chinesesimp>患者的IV是干净的</Chinesesimp>
+            <Japanese>患者のIVはクリアです</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
@@ -1840,6 +1921,7 @@
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
             <Chinesesimp>病人的呼吸是沙哑的</Chinesesimp>
+            <Japanese>患者の息はひどく金属的だ</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_breath_mild">
             <English>Patient's breath is slightly fruity</English>
@@ -1849,6 +1931,7 @@
             <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
             <German>Der Atem des Patienten ist leicht fruchtig</German>
             <Chinesesimp>病人的呼吸是平和的</Chinesesimp>
+            <Japanese>患者の息は少しフルーティーです</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_breath_good">
             <English>Patient's breath is ok</English>
@@ -1858,6 +1941,7 @@
             <Korean>환자의 호흡은 정상이다</Korean>
             <German>Der Atem des Patienten ist in Ordnung</German>
             <Chinesesimp>病人的呼吸是正常的</Chinesesimp>
+            <Japanese>患者の息は問題ありません</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -1868,6 +1952,7 @@
             <German>Nierenschäden/-versagen</German>
             <Chinesesimp>肾损伤/衰竭</Chinesesimp>
             <Polish>Uszkodzenie nerek</Polish>
+            <Japanese>腎臓の損傷/機能不全</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Kidney_Action_DESC">
             <English>Enables kidney damage caused by overuse of saline</English>
@@ -1878,6 +1963,7 @@
             <German>Ermöglicht Nierenschäden, die durch übermäßigen Gebrauch von Kochsalzlösung verursacht werden</German>
             <Chinesesimp>启用因过度使用生理盐水而造成的肾脏损害</Chinesesimp>
             <Polish>Włącza uszkadzanie nerek spowodowane zbytnim użyciem soli fizjologicznej</Polish>
+            <Japanese>生理食塩水の過剰使用による腎臓の損傷を可能にします</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Block_Chance">
             <English>IV Block Chance</English>
@@ -1887,6 +1973,7 @@
             <Korean>IV 막힘 확률</Korean>
             <German>Chance des IVs zu blockieren</German>
             <Chinesesimp>IV 阻塞几率</Chinesesimp>
+            <Japanese>IV閉塞の確率</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Block_Chance_DESC">
             <English>Chance of IV blockage due to medication pushes without saline flush</English>
@@ -1896,6 +1983,7 @@
             <Korean>식염수 주입 없이 약물 투여로 인한 IV 막힘 확률</Korean>
             <German>Möglichkeit einer Verstopfung der IV durch Medikamentengabe ohne Kochsalzspülung</German>
             <Chinesesimp>由于没有盐水协助的药物注射导致 IV 阻塞的机会</Chinesesimp>
+            <Japanese>生理食塩水を流さずに薬を注入することによるIV閉塞の可能性</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Max_Stack">
             <English>Maximum Fluid Bag Stack</English>
@@ -1905,6 +1993,7 @@
             <Korean>최대 액체 가방 양</Korean>
             <German>Maximaler Flüssigkeitsbeutelstapel</German>
             <Chinesesimp>注射液堆叠上限</Chinesesimp>
+            <Japanese>最大輸液袋スタック数</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Max_Stack_DESC">
             <English>The maximum amount of fluid bags that can be stacked to increase IV flow rate</English>
@@ -1914,6 +2003,7 @@
             <Korean>IV 주입량을 증가시키기 위해 쌓을 수 있는 최대 액체 가방의 양</Korean>
             <German>Die maximale Anzahl von Flüssigkeitsbeuteln, die gestapelt werden können, um die Durchflussrate der Infusion zu erhöhen</German>
             <Chinesesimp>可堆叠的最大液体袋量以增加 IV 流速</Chinesesimp>
+            <Japanese>IV流量を増やすために積み重ねることができる輸液袋の最大量</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_EACA_Display">
             <English>EACA</English>
@@ -1924,6 +2014,7 @@
             <German>ε-Aminocapronsäure</German>
             <Chinesesimp>EACA</Chinesesimp>
             <Polish>EACA</Polish>
+            <Japanese>EACA</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Take_EACA">
             <English>Push EACA</English>
@@ -1934,6 +2025,7 @@
             <German>Verabreiche Aminocapronsäure</German>
             <Chinesesimp>推注EACA</Chinesesimp>
             <Polish>Wstrzyknij EACA</Polish>
+            <Japanese>EACAを注入</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_EACA_DescShort">
             <English>Encourages clot formation</English>
@@ -1944,6 +2036,7 @@
             <German>Fördert die Gerinnungsbildung</German>
             <Chinesesimp>促进凝块形成</Chinesesimp>
             <Polish>Wspomaga powstawanie skrzepów</Polish>
+            <Japanese>血栓形成を促進する</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_aiEnabled">
             <English>Enable Advanced Medical for AI</English>
@@ -1953,6 +2046,7 @@
             <Korean>인공지능에게 고급 의료 활성화</Korean>
             <German>Erweiterte Sanität KI aktivieren</German>
             <Chinesesimp>为 AI 启用高级医疗</Chinesesimp>
+            <Japanese>AI向けの高度な医療を有効にする</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_aiEnabled_DESC">
             <English>Enables kidney actions and blood pressure PFHs for AI</English>
@@ -1962,6 +2056,7 @@
             <Korean>인공지능에게 신장 작용 및 혈압 PFH 활성화</Korean>
             <German>Ermöglicht Nierenaktionen und Blutdruck Vorgeschichten für die KI</German>
             <Chinesesimp>为 AI 启用肾脏和血压功能</Chinesesimp>
+            <Japanese>AIの腎臓作用と血圧PFHを有効にします</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Check_Breath">
             <English>Check Breath</English>
@@ -1972,6 +2067,7 @@
             <Korean>호흡 확인</Korean>
             <German>Überprüfe Atem</German>
             <Chinesesimp>检查呼吸</Chinesesimp>
+            <Japanese>呼吸の確認</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Inspect_Catheter">
             <English>Inspect Catheter</English>
@@ -1982,6 +2078,7 @@
             <Korean>카테터 검사</Korean>
             <German>Katheter untersuchen</German>
             <Chinesesimp>检查导管</Chinesesimp>
+            <Japanese>カテーテルの検査</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Saline_Flush">
             <English>Saline Flush</English>
@@ -1992,6 +2089,7 @@
             <Korean>식염수 주입</Korean>
             <German>Kochsalzspülung</German>
             <Chinesesimp>用生理盐水冲洗</Chinesesimp>
+            <Japanese>生理食塩水フラッシュ</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage">
             <English>IV Check limb damage</English>
@@ -2001,6 +2099,7 @@
             <Korean>IV로 사지 손상 검사</Korean>
             <German>IV Gliedmaßenschäden prüfen</German>
             <Chinesesimp>IV 检查肢体损伤</Chinesesimp>
+            <Japanese>IVの四肢損傷の確認</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage_DESC">
             <English>Whether or not you can apply the IV to the too damaged limb. In default, this is disabled.</English>
@@ -2010,6 +2109,7 @@
             <Korean>심하게 손상된 사지에 IV를 꽂을 수 있는지의 여부. 기본값은 비활성화입니다.</Korean>
             <German>Ob die IV an der zu stark beschädigten Gliedmaße angewendet werden kann oder nicht. In der Standardeinstellung ist dies deaktiviert.</German>
             <Chinesesimp>是否可以将 IV 应用于受损的肢体。 默认情况下，这是禁用的。</Chinesesimp>
+            <Japanese>あまりにも損傷した手足に点滴を適用できるかどうか。デフォルトでは無効。</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Kidney">
             <English>Kidney Settings</English>
@@ -2019,6 +2119,7 @@
             <Czech>Nastavení ledvin</Czech>
             <French>Paramètres des reins</French>
             <Korean>신장 설정</Korean>
+            <Japanese>腎臓の設定</Japanese>
         </Key>
     </Package>
 </Project>
