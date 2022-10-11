@@ -331,10 +331,10 @@
                  %1достаточно вентилируется?
                  %1Sp02 более 70% -&gt; Да
                  %1Sp02 ниже 70% -&gt; Нет -&gt; зад. Дыхание</Russian>
-            <Japanese>"""呼吸
+            <Japanese>呼吸
  %1十分に吸気していますか?
  %1Sp02 70%以上 -&gt; はい
- %1Sp02 70%以下 -&gt; いいえ -&gt; 呼吸補助が必要"""</Japanese>
+ %1Sp02 70%以下 -&gt; いいえ -&gt; 呼吸補助が必要</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hint_tip">
             <English>If you saved the airway with a larynxtube skip this</English>
