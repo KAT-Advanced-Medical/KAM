@@ -331,10 +331,10 @@
                  %1достаточно вентилируется?
                  %1Sp02 более 70% -&gt; Да
                  %1Sp02 ниже 70% -&gt; Нет -&gt; зад. Дыхание</Russian>
-            <Japanese>"呼吸
+            <Japanese>"""呼吸
  %1十分に吸気していますか?
  %1Sp02 70%以上 -&gt; はい
- %1Sp02 70%以下 -&gt; いいえ -&gt; 呼吸を助けてください"</Japanese>
+ %1Sp02 70%以下 -&gt; いいえ -&gt; 呼吸補助が必要"""</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hint_tip">
             <English>If you saved the airway with a larynxtube skip this</English>
@@ -348,7 +348,7 @@
             <Turkish>Solunum yolunu bir Laringeal Tüp ile kaydettiyseniz bunu atlayın</Turkish>
             <Italian>Se hai trattato le vie aeree con un tubo laringeo, salta questo</Italian>
             <Russian>Если вы спасли дыхательные пути с помощью гортанной трубки, пропустите это</Russian>
-            <Japanese>King LTで気道を確保した場合は、これをスキップしてください</Japanese>
+            <Japanese>King LTで気道を確保した場合は、これを無視してください</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax">
             <English>%1 treated a pneumothorax</English>
@@ -1184,6 +1184,7 @@
             <Korean>기흉 악화 확률</Korean>
             <German>Wahrscheinlichkeit einer Pneumothorax-Verschlechterung</German>
             <Chinesesimp>气胸恶化几率</Chinesesimp>
+            <Japanese>気胸悪化の可能性</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance_Desc">
             <English>Chance for pneumothorax to deteriorate into tension pneumothorax</English>
@@ -1194,6 +1195,7 @@
             <Korean>기흉이 긴장성 기흉으로 악화될 확률</Korean>
             <German>Wahrscheinlichkeit, dass sich der Pneumothorax zu einem Spannungspneumothorax entwickelt</German>
             <Chinesesimp>气胸恶化至张力性气胸几率</Chinesesimp>
+            <Japanese>気胸が緊張性気胸に悪化する可能性</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown">
             <English>Deteriorating pneumothorax countdown</English>
@@ -1204,6 +1206,7 @@
             <Korean>기흉 악화 카운트다운</Korean>
             <German>Verschlechterung des Pneumothorax-Countdowns</German>
             <Chinesesimp>气胸恶化冷却时间</Chinesesimp>
+            <Japanese>気胸悪化に掛る時間</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown_Desc">
             <English>After this countdown a chance will be rolled whether or not the pneumothorax will deteriorate into tension pneumothorax</English>
@@ -1214,6 +1217,7 @@
             <Korean>이 카운트다운이 끝나면 기흉이 긴장성 기흉으로 악화되는지 여부가 결정됩니다.</Korean>
             <German>Nach diesem Countdown wird gewürfelt, ob sich der Pneumothorax zu einem Spannungspneumothorax entwickelt oder nicht.</German>
             <Chinesesimp>在此倒计时后，将气胸有机率恶化为张力性气胸</Chinesesimp>
+            <Japanese>この時間の後、気胸が緊張性気胸に悪化するかどうかが判定されます</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -1224,6 +1228,7 @@
             <Korean>일반 설정</Korean>
             <German>Grundeinstellungen</German>
             <Chinesesimp>基础设置</Chinesesimp>
+            <Japanese>基本設定</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
@@ -1233,6 +1238,7 @@
             <Polish>Ustawienia dla przedmiotów</Polish>
             <Korean>호흡기 관련 아이템 설정</Korean>
             <German>Einstellungen der Atmungsobjekte</German>
+            <Japanese>呼吸アイテム設定</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_ThoraxInjuries">
             <English>Thorax injuries Settings</English>
@@ -1242,6 +1248,7 @@
             <Polish>Ustawienia dla obrażeń klatki piersiowej</Polish>
             <Korean>흉부 부상 설정</Korean>
             <German>Thoraxverletzungs-Einstellungen</German>
+            <Japanese>胸部負傷の設定</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Cyanosis">
             <English>Cyanosis Settings</English>
@@ -1251,6 +1258,7 @@
             <Polish>Ustawienia sinicy</Polish>
             <Korean>치아노제 설정</Korean>
             <German>Zyanose-Einstellungen</German>
+            <Japanese>チアノーゼの設定</Japanese>
         </Key>
     </Package>
 </Project>

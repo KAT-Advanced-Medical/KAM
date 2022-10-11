@@ -1328,6 +1328,7 @@
             <French>Chance maximale de succès de l'AED-X</French>
             <Korean>X-시리즈 AED의 최대 성공 확률</Korean>
             <German>Maximale Erfolgschance für den AED-X</German>
+            <Japanese>AED-Xの最大成功率</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_AED_MaxChance">
             <English>Max Success chance for AED</English>
@@ -1336,6 +1337,7 @@
             <French>Chance maximale de succès de l'AED</French>
             <Korean>자동제세동기의 최대 성공 확률</Korean>
             <German>Maximale Erfolgschance für den AED</German>
+            <Japanese>AEDの最大成功率</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_MinChance">
             <English>Min Success chance for AED-X</English>
@@ -1344,6 +1346,7 @@
             <French>Chance minimale de succès de l'AED-X</French>
             <Korean>X-시리즈 AED의 최소 성공 확률</Korean>
             <German>Minimale Erfolgschance für den AED-X</German>
+            <Japanese>AED-Xの最小成功確率</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_AED_MinChance">
             <English>Min Success chance for AED</English>
@@ -1352,6 +1355,7 @@
             <French>Chance minimale de succès de l'AED</French>
             <Korean>자동제세동기의 최소 성공 확률</Korean>
             <German>Minimale Erfolgschance für den AED</German>
+            <Japanese>AEDの最小成功確率</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED">
             <English>Allow AED</English>
@@ -1482,6 +1486,7 @@
             <Korean>군의관의 최대 CPR 확률</Korean>
             <German>Maximale HLW-Erfolgsrate für Ärzte</German>
             <Chinesesimp>医生的最大心肺复苏几率</Chinesesimp>
+            <Japanese>医師の最大CPR成功率</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
@@ -1492,6 +1497,7 @@
             <Korean>의무병의 최대 CPR 확률</Korean>
             <German>Maximale HLW-Erfolgsrate für reguläre Sanitäter</German>
             <Chinesesimp>军医的最大心肺复苏几率</Chinesesimp>
+            <Japanese>衛生兵の最大CPR成功率</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -1502,6 +1508,7 @@
             <Korean>일반병의 최대 CPR 확률</Korean>
             <German>Maximale Standard HLW-Erfolgsrate</German>
             <Chinesesimp>默认的最大心肺复苏几率</Chinesesimp>
+            <Japanese>一般兵の最大CPR成功率</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_Doctor">
             <English>Min CPR Chance for Doctors</English>
@@ -1512,6 +1519,7 @@
             <Korean>군의관의 최소 CPR 확률</Korean>
             <German>Minimale HLW-Erfolgsrate für Ärzte</German>
             <Chinesesimp>医生的最小心肺复苏几率</Chinesesimp>
+            <Japanese>医師の最小CPR成功率</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
@@ -1522,6 +1530,7 @@
             <Korean>의무병의 최소 CPR 확률</Korean>
             <German>Minimale HLW-Erfolgsrate für reguläre Sanitäter</German>
             <Chinesesimp>军医的最小心肺复苏几率</Chinesesimp>
+            <Japanese>衛生兵の最小CPR成功率</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_CPR_MinChance_Default">
             <English>Min CPR Chance for Default</English>
@@ -1532,6 +1541,7 @@
             <Korean>일반병의 최소 CPR 확률</Korean>
             <German>Minimale Standard HLW-Erfolgsrate</German>
             <Chinesesimp>默认的最小心肺复苏几率</Chinesesimp>
+            <Japanese>一般兵の最小CPR成功率</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -1767,6 +1777,7 @@
             <Korean>일반 설정</Korean>
             <German>Grundeinstellungen</German>
             <Chinesesimp>基础设置</Chinesesimp>
+            <Japanese>基本設定</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_AED">
             <English>AED + AED-X Settings</English>
@@ -1777,6 +1788,7 @@
             <Korean>자동제세동기 + X-시리즈 AED 설정</Korean>
             <German>AED und AED-X Einstellungen</German>
             <Chinesesimp>AED和AED-X设置</Chinesesimp>
+            <Japanese>AEDとAED-X設定</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_CPR">
             <English>CPR Settings</English>
@@ -1787,6 +1799,7 @@
             <Korean>심폐소생술 설정</Korean>
             <German>HLW Einstellungen</German>
             <Chinesesimp>CPR设置</Chinesesimp>
+            <Japanese>CPR設定</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
@@ -1797,6 +1810,7 @@
             <Korean>채혈 설정</Korean>
             <German>Blutabnahmeeinstellungen</German>
             <Chinesesimp>抽血设置</Chinesesimp>
+            <Japanese>採血設定</Japanese>
         </Key>
     </Package>
 </Project>
