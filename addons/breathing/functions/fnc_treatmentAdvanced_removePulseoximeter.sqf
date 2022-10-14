@@ -16,13 +16,13 @@
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["_medic", "_patient"];
 
-_target setVariable [QGVAR(pulseoximeter), false, true];
+_patient setVariable [QGVAR(pulseoximeter), false, true];
 
-if (_player canAdd "kat_Pulseoximeter") then {
-    _player addItem "kat_Pulseoximeter";
+if (_medic canAdd "kat_Pulseoximeter") then {
+    _medic addItem "kat_Pulseoximeter";
 } else {
-    private _groundHolder = createVehicle ["WeaponHolderSimulated", _target, [], 0.5, "CAN_COLLIDE"];
+    private _groundHolder = createVehicle ["WeaponHolderSimulated", _patient, [], 0.5, "CAN_COLLIDE"];
     _groundHolder addItemCargoGlobal ["kat_Pulseoximeter", 1];
 };

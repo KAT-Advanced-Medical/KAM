@@ -12,7 +12,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_Pulseoximeter"};
         condition = "kat_breathing_enable && !(_patient getVariable ['kat_breathing_pulseoximeter', false])";
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_pulseoximeter));
+        callbackSuccess = QFUNC(treatmentAdvanced_pulseoximeter);
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -37,7 +37,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(pulseoximeter), false)]);
         patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_removePulseoximeter));
+        callbackSuccess = QFUNC(treatmentAdvanced_removePulseoximeter);
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 0;
