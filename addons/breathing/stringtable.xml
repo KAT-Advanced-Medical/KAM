@@ -109,7 +109,7 @@
             <Korean>심정지 중 SpO2 감소 활성화</Korean>
             <French>Autoriser la réduction de la SpO2 d’arrêt cardiaque</French>
             <Polish>Włącz utratę SpO2 w trakcie zatrzymania akcji serca</Polish>
-            <Italian>Autorizza la riduzione della SpO2 dell'arresto cardiaco.</Italian>
+            <Italian>Autorizza la riduzione della SpO2 nell'arresto cardiaco.</Italian>            
             <Czech>Povolit redukci SpO2 při zástavě srdce</Czech>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_PerfusionMultiplier">

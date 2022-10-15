@@ -74,7 +74,7 @@
         <Key ID="STR_kat_surgery_breath_check">
             <English>Patient's breath is harsh and metallic</English>
             <Chinesesimp>病人的呼吸是刺耳的</Chinesesimp>
-            <Italian>Il respiro del paziente è aspro e metallico</Italian>
+            <Italian>Il respiro del paziente è faticoso e metallico</Italian>            
             <Polish>Oddech pachnie ostro i metalicznie</Polish>
             <Czech>Dech pacienta je drsný a kovový</Czech>
             <French>L'haleine du patient est mauvaise et métallique</French>
@@ -85,7 +85,7 @@
         <Key ID="STR_kat_surgery_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
             <Chinesesimp>病人的呼吸是沙哑的</Chinesesimp>
-            <Italian>Il respiro del paziente è aspro e metallico</Italian>
+            <Italian>Il respiro del paziente è faticoso e metallico</Italian>            
             <Polish>Oddech pachnie ostro i metalicznie</Polish>
             <Czech>Dech pacienta je drsný a kovový</Czech>
             <French>L'haleine du patient est mauvaise et métallique</French>
@@ -228,7 +228,7 @@
         <Key ID="STR_kat_surgery_fracture_fail">
             <English>Surgical Action Failed</English>
             <Chinesesimp>手术失败</Chinesesimp>
-            <Italian>Operazione chirurgica fallita</Italian>
+            <Italian>Azione chirurgica fallita</Italian>
             <Polish>Akcja chirurgiczna nie powiodła się</Polish>
             <Czech>Chirurgická akce selhala</Czech>
             <French>Echec de l'action chirurgicale</French>
