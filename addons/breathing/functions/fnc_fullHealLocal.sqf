@@ -72,26 +72,23 @@ _patient setVariable ["ace_medical_peripheralResistance", 100, true];
 
 // IVs
 _patient setVariable ["ace_medical_ivBags", nil, true];
-_patient setVariable ["kat_pharma_flowRate", 1, true];
-_patient setVariable ["kat_pharma_IVplaced", false, true];
-_patient setVariable ["kat_pharma_usedIV", "", true];
-_patient setVariable ["kat_pharma_IV_counts", 0, true];
-_patient setVariable ["kat_pharma_IVsite", 0, true];
+_patient setVariable ["kat_pharma_alphaAction", 1, true];
+_patient setVariable ["kat_pharma_IV", [0,0,0,0,0,0], true];
+_patient setVariable ["kat_pharma_IVpfh", [0,0,0,0,0,0], true];
 _patient setVariable ["kat_pharma_active", false, true];
 _patient setVariable ["kat_IVPharma_PFH", nil, true];
+_patient setVariable ["kat_pharma_sedated", false, true];
+_patient setVariable ["kat_pharma_pH", 1500, true];
+_patient setVariable ["kat_pharma_kidneyFail", false, true];
+_patient setVariable ["kat_pharma_kidneyArrest", false, true];
+_patient setVariable ["kat_pharma_kidneyPressure", false, true];
 
 //KAT Surgery
-
-_patient setVariable ["kat_surgery_pH", 1500, true];
-_patient setVariable ["kat_surgery_kidneyFail", false, true];
-_patient setVariable ["kat_surgery_kidneyArrest", false, true];
-_patient setVariable ["kat_surgery_kidneyPressure", false, true];
 
 _patient setVariable ["kat_surgery_debridement", [0,0,0,0,0,0], true];
 _patient setVariable ["kat_surgery_fractures", [0,0,0,0,0,0], true];
 _patient setVariable ["kat_surgery_lidocaine", false, true];
 _patient setVariable ["kat_surgery_etomidate", false, true];
-_patient setVariable ["kat_surgery_sedated", false, true];
 
 // Damage storage
 _patient setVariable ["ace_medical_bodyPartDamage", [0,0,0,0,0,0], true];

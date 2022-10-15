@@ -39,11 +39,13 @@ private _output = localize LSTRING(overstretch_info);
     (_target distance2D _player) > 5;
 }, {
     params ["_player", "_target"];
+    if (_target getVariable [QGVAR(recovery), false]) exitWith {};
     _target setVariable [QGVAR(overstretch), false, true];
     _output = localize LSTRING(overstretch_cancel);
     [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 }, [_player, _target], 600, {
     params ["_player", "_target"];
+    if (_target getVariable [QGVAR(recovery), false]) exitWith {};
     _target setVariable [QGVAR(overstretch), false, true];
     _output = localize LSTRING(overstretch_cancel);
     [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;

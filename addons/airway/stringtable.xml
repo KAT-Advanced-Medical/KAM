@@ -84,6 +84,8 @@
             <Japanese>異物の再発する時間</Japanese>
             <French>Temps de répétition des occlusions</French>
             <Italian>Tempo di ripetizione per l'occlusione</Italian>
+            <Czech>Opakovač uzavření dýchacích cest</Czech>
+            <Chinesesimp>气道异物再发冷却时间</Chinesesimp>
         </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -190,7 +192,7 @@
         </Key>
         <Key ID="STR_kat_airway_obstruction">
             <English>Obstruction</English>
-            <German>Verlegt</German>
+            <German>Obstruktion</German>
             <Polish>Niedrożne</Polish>
             <Spanish>Obstruída</Spanish>
             <Chinese>阻塞</Chinese>
@@ -218,11 +220,22 @@
             <Russian>Нет</Russian>
             <Japanese>無し</Japanese>
         </Key>
-        <Key ID="STR_kat_airway_message_obstructionTemporarilyMitigated">
+        <Key ID="STR_kat_airway_mitigatedObstruction">
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
             <Japanese>軽減された</Japanese>
-            <Italian>Ostruzione attenuata.</Italian>
+            <Italian>Ostruzione attenuata.</Italian>            
+            <Czech>Zmírněné zablokování</Czech>
+            <Korean>막힘 완화됨</Korean>
+            <German>Geringe Obstruktion</German>
+            <Chinesesimp>减轻阻塞</Chinesesimp>
+            <French>Obstruction atténuée</French>
+        </Key>
+        <Key ID="STR_kat_airway_message_obstructionTemporarilyMitigated">
+            <English>Obstruction is temporarily mitigated</English>
+            <Polish>Drogi oddechowe są ręcznie udrożnione</Polish>
+            <French>L'obstruction a été temporairement atténuée</French>
+            <Japanese>閉塞は一時的に軽減されています</Japanese>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
@@ -395,7 +408,7 @@
             <Polish>Odchylanie głowy</Polish>
             <Spanish>Hiperextendiendo cabeza</Spanish>
             <Chinese>伸張中</Chinese>
-            <Chinesesimp>拉伸中...</Chinesesimp>
+            <Chinesesimp>拉伸中</Chinesesimp>
             <Czech>Narovnávám</Czech>
             <Korean>머리를 뒤로 젖히는 중</Korean>
             <French>Extension</French>
@@ -440,7 +453,7 @@
             <Polish>Obrót głowy wykonany, drogi oddechowe wciąż nie są czyste</Polish>
             <Spanish>Giro de cabeza realizado, las vías respiratorias aún no están despejadas</Spanish>
             <Chinese>转头，气道仍不清楚</Chinese>
-            <Chinesesimp>尝试清理气道异物失败,异物仍存在</Chinesesimp>
+            <Chinesesimp>尝试清理气道异物失败, 异物仍存在</Chinesesimp>
             <Czech>Hlavou se otočilo, dýchací cesty stále nejsou volné</Czech>
             <Korean>고개를 돌려보았으나, 기도는 여전히 막혀 있다.</Korean>
             <French>Tour de tête effectué, les voies respiratoires ne sont toujours pas dégagées</French>
@@ -511,7 +524,7 @@
         </Key>
         <Key ID="STR_kat_airway_action_placing">
             <English>Placing</English>
-            <German>Setzen</German>
+            <German>Platziere</German>
             <Polish>Zakładanie</Polish>
             <Spanish>Colocando</Spanish>
             <Chinese>放置中</Chinese>
@@ -616,7 +629,7 @@
         </Key>
         <Key ID="STR_kat_airway_Accuvac_Desc_Use">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
-            <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
+            <German>Der ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>
@@ -631,7 +644,7 @@
         </Key>
         <Key ID="STR_kat_airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
-            <German>ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
+            <German>Der ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>
@@ -691,7 +704,7 @@
         </Key>
         <Key ID="STR_kat_airway_hint_desc">
             <English>When a patient enters the unconscious state, there are two things that can happen. First of all the airway can collapse. In medical sense this mean, the airway can be blocked from your tongue muscle, 'cause of the missing muscle tone. For example in real life, this will happen to nearly every unconscious person lying on the back. The second thing that can happen is the the airway occluded state. When a patient is lying on the back and the body puke, it will not leave the mouth space. It will stay in there and can block the airway too. The right treatment here, is to remove this vomit. In real life, this will happen sometimes, not quiet often.</English>
-            <German>Wenn eine Person bewusstlos wird, gibt es zwei Dinge die passieren können. Erstens die Atemwege können verlegt sein. Durch de nnicht mehr vorhandenen Muskeltonus kann der zungengrund den Luftweg blockieren. Im echten Leben kann man davon ausgehen das wenn ein Patient bewusstlos ist und auf dem Rücken liegt, das er eine Atemwegsverlegung hat. Zweitens, es ist möglich das der Patient erbricht und dann blockieren flüssige und feste Stoffe die Atemwege und dann sind diese "verstopft". Im echten Leben passiert das nicht besonders häufig</German>
+            <German>Wenn eine Person bewusstlos wird, gibt es zwei Dinge, die passieren können. Erstens, die Atemwege können obstruiert sein. Durch den nicht mehr vorhandenen Muskeltonus kann der Zungengrund den Luftweg blockieren. Im echten Leben kann man davon ausgehen, wenn ein Patient bewusstlos ist und auf dem Rücken liegt, dass er eine Atemwegsverlegung hat. Zweitens, es ist möglich, dass der Patient erbricht und flüssige und feste Stoffe dann in die Atemwege gelangen und diese dann "verstopfen". Im echten Leben passiert das nicht besonders häufig</German>
             <Polish>Kiedy pacjent staję się nieprzytomny, mogą stać się dwie rzeczy. Pierwszą jest zapadnięcie się dróg oddechowych. Z medycznego punktu widzenia drogi oddechowe mogą być zablokowane przez język. Na przykład w prawdziwym życiu zdarzy się to praktycznie w każdym przypadku osoby nieprzytomnej leżącej na plecach. Drugą rzeczą która może się zdarzyć to niedrożność dróg oddechowych. Kiedy pacjent leży na plecach i ciało będzie wymiotowało/odkrztuszało to zawartość nie opuści buzi. Zostanie tam i będzie mogło blokować drogi oddechowe. Odpowiednim leczniem jest tu usunięcie wymiocin. W prawdziwym życiu też może się to zdarzyć ale nie jest to częste.</Polish>
             <Spanish>Cuando un paciente entre en estado de inconciencia, hay dos posibles escenarios. Lo primero, las vías aéreas pueden colapsar. En términos médicos, esto significa que las vías aéreas pueden bloquearse con el músculo de la lengua por la falta de tono muscular (tensión). Por ejemplo, en la vida real, esto le pasará a casi cualquier persona inconciente que esté sobre su espalda. Lo segundo que puede pasar es una obstrucción de las vías aéreas. Cuando un paciente está sobre su espalda y éste vomita, el vómito no abandonará el área de la boca, permanecerá ahí y esto puede bloquear las vías aéreas también. El correcto tratamiento sería eliminar el vómito. En la vida real esto último sólo ocurrirá a veces, no muy frecuentemente.</Spanish>
             <Chinese>當患者陷入無意識狀態時，有兩件事情可能會發生。首先呼吸道可能會塌陷，以醫學角度來看，因為舌部肌肉失去張力而導致阻擋住呼吸道。舉個例子，在現實生活中每一個失去意識的人幾乎都會發生這個。再來就是會發生的就是呼吸道閉塞。當病人倒地並嘔吐的時候，會讓嘴部沒有空間，也會導致呼吸道阻塞。有一個治療方法，那就是清除嘔吐物。在現實生活中，這偶爾會發生，但不常見</Chinese>
@@ -795,7 +808,7 @@
         </Key>
         <Key ID="STR_kat_airway_ALLOW_GUEDELTUBUS_DESC">
             <English>Training level required to use a Guedeltubus</English>
-            <German>Benötigtes Training Level um den Guedeltubus zu nutzen</German>
+            <German>Benötigtes Trainings Level um den Guedeltubus zu nutzen</German>
             <Polish>Poziom wyszkolenia wymagany do korzystania z rurki ustno-gardłowej</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar un Guedeltubus</Spanish>
             <Chinese>使用Guedeltubus所需的培訓水平</Chinese>
@@ -825,7 +838,7 @@
         </Key>
         <Key ID="STR_kat_airway_ALLOW_ACCUVAC_DESC">
             <English>Training level required to use an Accuvac</English>
-            <German>Benötigtes Training Level um den Accuvac zu nutzen</German>
+            <German>Benötigtes Trainings Level um den Accuvac zu nutzen</German>
             <Polish>Poziom wyszkolenia wymagany do korzystania z Accuvac</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar un Accuvac</Spanish>
             <Chinese>使用Accuvac所需的培訓水平</Chinese>
@@ -844,7 +857,7 @@
             <Polish>Czas sprawdzenia dróg oddechowych</Polish>
             <Spanish>Hora de revisar las vías aéreas</Spanish>
             <Chinese>是時候檢查航空公司了</Chinese>
-            <Chinesesimp>检查气道的时间</Chinesesimp>
+            <Chinesesimp>检查气道的所需时间</Chinesesimp>
             <Czech>Čas pro zkontrolování dýchacích cest</Czech>
             <Korean>기도 확인에 걸리는 시간</Korean>
             <French>Durée pour vérifier les voies aériennes</French>
@@ -855,7 +868,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_CHECKAIRWAY_DESC">
             <English>How long it will take to check Airways</English>
-            <German>Wie lange es dauert um die Atemwege zu prüfen</German>
+            <German>Wie lange es dauert, um die Atemwege zu prüfen</German>
             <Polish>Ile czasu zajmie sprawdzenie dróg oddechowych</Polish>
             <Spanish>Cuánto tiempo llevará revisar Airways</Spanish>
             <Chinese>檢查航空公司需要多長時間</Chinese>
@@ -889,7 +902,7 @@
             <Polish>Czas na odchylenie głowy</Polish>
             <Spanish>Hora de estirar demasiado la cabeza</Spanish>
             <Chinese>过度伸展头部的时间</Chinese>
-            <Chinesesimp>拉伸颈部的时间</Chinesesimp>
+            <Chinesesimp>拉伸颈部的所需时间</Chinesesimp>
             <Czech>Čas na přetažení hlavy</Czech>
             <Korean>머리 뒤로 젖히기에 걸리는 시간</Korean>
             <French>Durée pour basculer la tête en arrière - Hyperextension</French>
@@ -900,7 +913,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_OVERSTRETCH_DESC">
             <English>How long it will take to overstretch the head</English>
-            <German>Wie lange es dauert um den Kopf zu überstrecken</German>
+            <German>Wie lange es dauert, um den Kopf zu überstrecken</German>
             <Polish>Ile czasu zajmie odchylenie głowy</Polish>
             <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
             <Chinese>转头需要多长时间</Chinese>
@@ -915,7 +928,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_HEADTURNING_DESC">
             <English>How long it will take to turn head</English>
-            <German>Wie lange dauert es den Kopf zur Seite zu drehen</German>
+            <German>Wie lange dauert es, den Kopf zur Seite zu drehen</German>
             <Polish>Ile czasu zajmie obrócenie głowy</Polish>
             <Spanish>Cuánto tiempo llevará girar la cabeza</Spanish>
             <Chinese>轉頭需要多長時間</Chinese>
@@ -945,7 +958,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_ACCUVAC_DESC">
             <English>How long it will take to use Accuvac</English>
-            <German>Wie lange dauert es den Accuvac zu nutzen</German>
+            <German>Wie lange dauert es, den Accuvac zu nutzen</German>
             <Polish>Ile czasu zajmie użycie Accuvac'a</Polish>
             <Spanish>Cuánto tiempo llevará usar Accuvac</Spanish>
             <Chinese>使用Accuvac需要多長時間</Chinese>
@@ -975,7 +988,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_LARYNXTUBUS_DESC">
             <English>How long it will take to use Larynxtubus</English>
-            <German>Wie lange dauert es den Laryxtubus zu nutzen</German>
+            <German>Wie lange dauert es, den Laryxtubus zu nutzen</German>
             <Polish>Ile czasu zajmie użycie rurki krtaniowej</Polish>
             <Spanish>Cuánto tiempo llevará usar Larynxtubus</Spanish>
             <Chinese>使用喉頭需要多長時間</Chinese>
@@ -1005,7 +1018,7 @@
         </Key>
         <Key ID="STR_kat_airway_TIME_GUEDELTUBUS_DESC">
             <English>How long it will take to use Guedeltubus</English>
-            <German>Wie lange dauert es den Guedeltubus zu nutzen</German>
+            <German>Wie lange dauert es, den Guedeltubus zu nutzen</German>
             <Polish>Jak długo potrwa użycie rurki ustno-gardłowej</Polish>
             <Spanish>Cuánto tiempo tomará usar Guedeltubus</Spanish>
             <Chinese>使用Guedeltubus需要多長時間</Chinese>
@@ -1052,146 +1065,159 @@
             <English>Established in recovery position</English>
             <German>In die stabile Seitenlage gebracht</German>
             <Polish>Ułożony w pozycji bezpiecznej</Polish>
-            <Chinesesimp>建立救援体位</Chinesesimp>
+            <Chinesesimp>建立恢复体态</Chinesesimp>
             <Japanese>回復体位をとっています</Japanese>
             <Korean>회복자세 교정</Korean>
             <French>En position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturuldu</Turkish>
             <Italian>In posizione laterale di sicurezza.</Italian>
+            <Czech>Uveden do stabilizované polohy</Czech>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayName">
             <English>Establish recovery position</English>
             <German>In die stabile Seitenlage legen</German>
             <Polish>Ułóż w pozycji bezpiecznej</Polish>
-            <Chinesesimp>建立救援体位</Chinesesimp>
+            <Chinesesimp>建立恢复体态</Chinesesimp>
             <Japanese>回復体位にする</Japanese>
             <Korean>회복자세 교정해주기</Korean>
             <French>Mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturun</Turkish>
             <Italian>Metti in posizione laterale di sicurezza.</Italian>
+            <Czech>Uvést do stabilizované polohy</Czech>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
             <English>Establishing recovery position</English>
             <German>In die stabile Seitenlage legen</German>
             <Polish>Układanie w pozycji</Polish>
-            <Chinesesimp>正在建立救援体位</Chinesesimp>
+            <Chinesesimp>正在建立恢复体态</Chinesesimp>
             <Japanese>回復体位にしています</Japanese>
             <Korean>회복자세 교정 중</Korean>
             <French>Mise en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturuluyor</Turkish>
             <Italian>Mettendo in posizione laterale di sicurezza.</Italian>
+            <Czech>Uvádím do stabilizované polohy</Czech>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Info">
             <English>Recovery position established successfully</English>
             <German>Erfolgreich in die stabile Seitenlage gelegt</German>
             <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
-            <Chinesesimp>已成功建立救援体位</Chinesesimp>
+            <Chinesesimp>已成功建立恢复体态</Chinesesimp>
             <Japanese>回復体位になりました</Japanese>
             <Korean>회복자세 교정 성공</Korean>
             <French>Mise en position latérale de sécurité réussie</French>
             <Turkish>Kurtarma pozisyonu başarıyla kuruldu</Turkish>
             <Italian>Messo in posizione laterale di sicurezza. </Italian>
+            <Czech>Stabilizovaná poloha uvedena úspěšně</Czech>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Cancel">
             <English>Recovery position cancelled</English>
             <German>Stabile Seitenlage abgebrochen</German>
             <Polish>Przerwano pozycję bezpieczną</Polish>
-            <Chinesesimp>已取消救援体位</Chinesesimp>
+            <Chinesesimp>已取消恢复体态</Chinesesimp>
             <Japanese>回復体位を崩しました</Japanese>
             <Korean>회복자세 교정 취소됨</Korean>
             <French>Mise en position latérale de sécurité annulée</French>
             <Turkish>Kurtarma pozisyonu iptal edildi</Turkish>
             <Italian>Posizione laterale di sicurezza annullata.</Italian>
+            <Czech>Stabilizovaná poloha zrušena</Czech>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_Log">
             <English>%1 established recovery position</English>
             <German>%1 hat die stabile Seitenlage durchgeführt</German>
             <Polish>%1 ułożył w pozycji bezpiecznej</Polish>
-            <Chinesesimp>%1 已建立救援体位</Chinesesimp>
+            <Chinesesimp>%1 已建立恢复体态</Chinesesimp>
             <Japanese>%1 が回復体位にしました</Japanese>
             <Korean>%1 이(가) 회복자세를 교정했습니다</Korean>
             <French>%1 a mis en place la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu %1 oluşturuldu</Turkish>
             <Italian>%1 messo in posizione laterale di sicurezza. </Italian>
+            <Czech>%1 uvedl do stabilizované polohy</Czech>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY">
             <English>Time for recovery position</English>
             <German>Zeit für die stabile Seitenlage</German>
             <Polish>Czas na ułożenie w pozycji bezpiecznej</Polish>
-            <Chinesesimp>建立救援体位时间</Chinesesimp>
+            <Chinesesimp>建立恢复体态时间</Chinesesimp>
             <Japanese>回復体位にかかる時間</Japanese>
             <Korean>회복자세 교정 시간</Korean>
             <French>Temps pour mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu için zaman</Turkish>
             <Italian>Tempo per mettere in posizione laterale di sicurezza. </Italian>
+            <Czech>Doba pro stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
-            <German>Die Zeit, wie lange es dauert eine erfolgreiche stabile Seitenlage durchzuführen</German>
+            <German>Die Zeit, wie lange es dauert, eine erfolgreiche stabile Seitenlage durchzuführen</German>
             <Polish>Jak długo potrwa ułożenie w pozycji bocznej bezpiecznej</Polish>
-            <Chinesesimp>建立救援体位的所需时间</Chinesesimp>
+            <Chinesesimp>建立恢复体态的所需时间</Chinesesimp>
             <Japanese>回復体位を完了するのにどのくらい時間がかかるか設定します</Japanese>
             <Korean>회복자세를 교정해주는 데 걸리는 시간입니다.</Korean>
             <French>Temps nécessaire pour mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
             <Italian>Tempo necessario per mettere in posizione laterale di sicurezza. </Italian>
+            <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayName">
             <English>Cancel recovery position</English>
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerwij pozycję bezpieczną</Polish>
-            <Chinesesimp>取消救援体位</Chinesesimp>
+            <Chinesesimp>取消恢复体态</Chinesesimp>
             <Japanese>回復体位を崩す</Japanese>
             <Korean>회복자세 교정 취소</Korean>
             <French>Annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunu iptal et</Turkish>
             <Italian>Cancella la posizione laterale di sicurezza. </Italian>
+            <Czech>Zrušit stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayNameProgress">
             <English>Cancelling recovery position</English>
             <German>Stabile Seitenlage abbrechen</German>
             <Polish>Przerywanie pozycji bezpiecznej</Polish>
-            <Chinesesimp>正在取消救援体位</Chinesesimp>
+            <Chinesesimp>正在取消恢复体态</Chinesesimp>
             <Japanese>回復体位を崩しています</Japanese>
             <Korean>회복자세 교정 취소 중</Korean>
             <French>Annulation de la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu iptal ediliyor</Turkish>
             <Italian>Cancellando la posizione laterale di sicurezza.</Italian>
+            <Czech>Ruším stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY">
             <English>Time for cancelling recovery position</English>
-            <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
+            <German>Die Zeit, wie lange es dauert, eine stabile Seitenlage abzubrechen</German>
             <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
-            <Chinesesimp>取消救援体位时间</Chinesesimp>
+            <Chinesesimp>取消恢复体态时间</Chinesesimp>
             <Japanese>回復体位を崩すのにかかる時間</Japanese>
             <Korean>회복자세 교정 취소 시간</Korean>
             <French>Temps pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunu iptal etmek için zaman</Turkish>
             <Italian>Tempo per cancellare la  posizione laterale di sicurezza. </Italian>
+            <Czech>Doba pro zrušení stabilizované polohy</Czech>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
-            <German>Die Zeit, wie lange es dauert eine stabile Seitenlage abzubrechen</German>
+            <German>Die Zeit, wie lange es dauert, eine stabile Seitenlage abzubrechen</German>
             <Polish>Jak długo potrwa przerwanie pozycji bocznej bezpiecznej</Polish>
-            <Chinesesimp>取消救援体位的所需时间</Chinesesimp>
+            <Chinesesimp>取消恢复体态的所需时间</Chinesesimp>
             <Japanese>回復体位を崩すのにどのくらい時間がかかるか設定します</Japanese>
             <Korean>회복자세 교정을 취소하는 데 걸리는 시간입니다</Korean>
             <French>Temps nécessaire pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
             <Italian>Tempo necessario per annullare la posizione laterale di sicurezza. </Italian>
+            <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
         </Key>
         <Key ID="STR_kat_airway_noObstruction">
             <English>Not obstructed</English>
-            <German>Nicht verlegt</German>
+            <German>Nicht obstruiert</German>
             <Polish>Drożne</Polish>
             <Spanish>No obstruída</Spanish>
             <Chinese>無 阻塞</Chinese>
             <Czech>Není zablokováno</Czech>
-            <Korean>아니다 막힘(이물질)</Korean>
+            <Korean>혀에 의해 막히지 않음</Korean>
             <French>Non obstruées</French>
             <Turkish>Değil Kapanma</Turkish>
             <Italian>No ostruita</Italian>
             <Japanese>閉塞無し</Japanese>
+            <Chinesesimp>无阻塞</Chinesesimp>
         </Key>
         <Key ID="STR_kat_airway_noOccluded">
             <English>Not occluded</English>
@@ -1200,24 +1226,43 @@
             <Spanish>No ocluída</Spanish>
             <Chinese>無 閉塞</Chinese>
             <Czech>Není uzavřeno</Czech>
-            <Korean>아니다 막힘</Korean>
+            <Korean>구토에 의해 막히지 않음</Korean>
             <French>Non occludées</French>
             <Turkish>Değil Tıkalı</Turkish>
             <Italian>No occlusa</Italian>
             <Japanese>異物無し</Japanese>
+            <Chinesesimp>无闭塞</Chinesesimp>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
             <Italian>Impostazioni base</Italian>
+            <Czech>Základní nastavení</Czech>
+            <French>Paramètres basiques</French>
+            <Korean>일반 설정</Korean>
+            <German>Grundeinstellungen</German>
+            <Chinesesimp>基础设置</Chinesesimp>
+            <Japanese>基本設定</Japanese>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_RecoveryPositionOverstretch">
             <English>Recovery position + Overstretch Settings</English>
             <Italian>Impostazioni posizione laterale di sicurezza e stiramento</Italian>
+            <Czech>Nastavení stabilizované polohy a narovnávání hlavy</Czech>
+            <French>Paramètres de position latérale de sécurité + hyperextension</French>
+            <Korean>회복 자세 + 머리 젖히기 설정</Korean>
+            <German>Wiederherstellungsposition + Überdehnungseinstellungen</German>
+            <Chinesesimp>恢复体态设置</Chinesesimp>
+            <Japanese>回復体位設定</Japanese>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
             <Italian>Impostazione oggetti vie aeree.</Italian>
+            <Czech>Nastavení předmětů dýchacích cest</Czech>
+            <French>Paramètres des objets des voies aériennes</French>
+            <Korean>기도 관련 아이템 설정</Korean>
+            <German>Einstellungen der Atemwegsobjekte</German>
+            <Chinesesimp>气道物品设置</Chinesesimp>
+            <Japanese>気道アイテム設定</Japanese>
         </Key>
     </Package>
 </Project>
