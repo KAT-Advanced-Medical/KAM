@@ -17,10 +17,6 @@
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["_medic", "_patient", "_bodyPart"];
 
-if (local _target) then {
-    ["treatmentPulseoximeter", [_player, _target]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentPulseoximeter", [_player, _target], _target] call CBA_fnc_targetEvent;
-};
+[QGVAR(pulseoxLocal), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
