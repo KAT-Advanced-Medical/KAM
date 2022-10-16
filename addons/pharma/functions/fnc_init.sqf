@@ -28,6 +28,7 @@ _unit setVariable [QGVAR(TXA), 1, true];
 _unit setVariable [QGVAR(ondUse), false, true];
 
 _unit setVariable [QGVAR(pH), 1500, true];
+_unit setVariable [QGVAR(coagulationFactor), 10, true];
 _unit setVariable [QGVAR(kidneyFail), false, true];
 _unit setVariable [QGVAR(kidneyArrest), false, true];
 _unit setVariable [QGVAR(kidneyPressure), false, true];
@@ -110,6 +111,8 @@ if ((isPlayer _unit) || (GVAR(aiEnableAdvanced))) then {
             params ["_args", "_idPFH"];
             _args params ["_unit"];
 
+            diag_log "WORKING4";
+
             if !(isPlayer _unit) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
@@ -120,9 +123,15 @@ if ((isPlayer _unit) || (GVAR(aiEnableAdvanced))) then {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
 
-            private _openWounds = GET_OPEN_WOUNDS(_unit);
-            private _pulse = GET_HEART_RATE(_unit);
+            diag_log "WORKING3";
+
+            private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, []];
+            private _pulse =  _unit getVariable [VAR_HEART_RATE, 60];
             private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
+
+            diag_log _openWounds;
+            diag_log _pulse;
+            diag_log _coagulationFactor;
 
             if (_openWounds isEqualTo []) exitWith {};
             if (_pulse < 20) exitWith {};
@@ -130,11 +139,14 @@ if ((isPlayer _unit) || (GVAR(aiEnableAdvanced))) then {
 
             private _count = [_unit, "TXA"] call ace_medical_status_fnc_getMedicationCount;
 
+            diag_log "WORKING2";
+
             if (_count == 0) exitWith {
                 {
                     _x params ["", "_bodyPart", "_amount", "_bleeding"];
 
                     if (_amount * _bleeding > 0) exitWith {
+                        diag_log "WORKING";
                         private _part = ALL_BODY_PARTS select _bodyPart;
                         ["ace_medical_treatment_bandageLocal", [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
                         _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];

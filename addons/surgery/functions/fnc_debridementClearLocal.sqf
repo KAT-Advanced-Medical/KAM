@@ -25,9 +25,6 @@ private _compare = ALL_BODY_PARTS find toLower _bodyPart2;
 _debridement set [_compare, 1];
 _patient setVariable [QGVAR(debridement), _debridement, true];
 
-diag_log _bodyPart2;
-diag_log _patient;
-
 {
     _x params ["_id", "_bodyPart", "_amount"];
 

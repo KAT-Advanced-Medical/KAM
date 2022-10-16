@@ -1,4 +1,4 @@
-class ADDON {
+class ACE_Medical_Treatment {
     class Bandaging {
         class FieldDressing {};
         class Dressing: FieldDressing {

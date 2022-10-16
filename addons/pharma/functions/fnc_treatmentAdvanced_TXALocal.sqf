@@ -65,6 +65,7 @@ if !(GVAR(coagulation)) then {
             if ((!_alive) || (_exit)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
+
         }, 6, [_patient]] call CBA_fnc_addPerFrameHandler;
     };
 };

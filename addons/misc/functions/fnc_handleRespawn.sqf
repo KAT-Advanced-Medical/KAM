@@ -80,6 +80,8 @@ _unit setVariable ["kat_surgery_debridement", [0,0,0,0,0,0], true];
 _unit setVariable ["kat_surgery_fractures", [0,0,0,0,0,0], true];
 _unit setVariable ["kat_surgery_lidocaine", false, true];
 _unit setVariable ["kat_surgery_etomidate", false, true];
+_unit setVariable ["kat_surgery_sedated", false, true];
+
 
 // Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten
 _unit spawn {
@@ -89,7 +91,7 @@ _unit spawn {
     _unit setVariable [QGVAR(airway_item), "", true];
 };
 
-if ((isPlayer _unit) || "kat_pharma_aiEnableAdvanced") then {
+if ((isPlayer _unit) || kat_pharma_aiEnableAdvanced) then {
     [{
         params ["_args", "_idPFH"];
         _args params ["_unit"];
@@ -116,7 +118,7 @@ if ((isPlayer _unit) || "kat_pharma_aiEnableAdvanced") then {
         };
     }, 180, [_unit]] call CBA_fnc_addPerFrameHandler;
 
-    if ("kat_pharma_kidneyAction") then {
+    if (kat_pharma_kidneyAction) then {
         [{
             params ["_args", "_idPFH"];
             _args params ["_unit"];
@@ -162,14 +164,10 @@ if ((isPlayer _unit) || "kat_pharma_aiEnableAdvanced") then {
         }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
     };
 
-    if ("kat_pharma_coagulation") then {
+    /*if (kat_pharma_coagulation) then {
         [{
             params ["_args", "_idPFH"];
             _args params ["_unit"];
-
-            if !(isPlayer _unit) exitWith {
-                [_idPFH] call CBA_fnc_removePerFrameHandler;
-            };
 
             private _alive = alive _unit;
 
@@ -211,5 +209,5 @@ if ((isPlayer _unit) || "kat_pharma_aiEnableAdvanced") then {
                 } forEach _openWounds;
             };
         }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;
-    };
+    };*/
 };
