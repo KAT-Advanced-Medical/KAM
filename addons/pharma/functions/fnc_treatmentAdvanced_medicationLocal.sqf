@@ -39,7 +39,7 @@ if (!GVAR(advancedMedication)) exitWith {
             if !(_sedated) then {
                 ["ace_medical_WakeUp", _patient] call CBA_fnc_localEvent;
             };
-
+            
             [_patient, -0.15] call kat_pharma_fnc_alphaAction;
         };
     };

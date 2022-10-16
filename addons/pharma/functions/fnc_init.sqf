@@ -93,7 +93,7 @@ if ((isPlayer _unit) || (GVAR(aiEnableAdvanced))) then {
 
             if (_ph < 750) exitWith {
                 _ph = (_ph + 25) min 1500;
-                _unit setVariable [QGVAR(ph), _ph, true];
+                _unit setVariable [QGVAR(pH), _ph, true];
 
                 if !(_kidneyPressure) then {
                     _unit setVariable [QGVAR(kidneyPressure), true, true];
@@ -102,7 +102,7 @@ if ((isPlayer _unit) || (GVAR(aiEnableAdvanced))) then {
             };
 
             _ph = (_ph + 50) min 1500;
-            _unit setVariable [QGVAR(ph), _ph, true];
+            _unit setVariable [QGVAR(pH), _ph, true];
         }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
     };
 

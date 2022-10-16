@@ -65,6 +65,7 @@ _unit setVariable ["kat_pharma_IVpfh", [0,0,0,0,0,0], true];
 _unit setVariable ["kat_pharma_active", false, true];
 _unit setVariable ["kat_pharma_PFH", nil, true];
 _unit setVariable ["kat_pharma_alphaAction", 1];
+_unit setVariable ["kat_pharma_sedated", false, true];
 
 _unit setVariable ["kat_pharma_TXA", 1, true];
 _unit setVariable ["kat_pharma_ondUse", false, true];
@@ -80,7 +81,6 @@ _unit setVariable ["kat_surgery_debridement", [0,0,0,0,0,0], true];
 _unit setVariable ["kat_surgery_fractures", [0,0,0,0,0,0], true];
 _unit setVariable ["kat_surgery_lidocaine", false, true];
 _unit setVariable ["kat_surgery_etomidate", false, true];
-_unit setVariable ["kat_surgery_sedated", false, true];
 
 
 // Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten
@@ -91,7 +91,7 @@ _unit spawn {
     _unit setVariable [QGVAR(airway_item), "", true];
 };
 
-if ((isPlayer _unit) || kat_pharma_aiEnableAdvanced) then {
+if ((isPlayer _unit) || (EGVAR(pharma,aiEnableAdvanced))) then {
     [{
         params ["_args", "_idPFH"];
         _args params ["_unit"];
@@ -108,17 +108,17 @@ if ((isPlayer _unit) || kat_pharma_aiEnableAdvanced) then {
         {
             _x params ["_medication"];
 
-            if (_medication isEqualTo "Epinephrine" || _medication isEqualTo "Phenylephrine" ||  _medication isEqualTo "Nitroglycerin" || _medication isEqualTo "Lidocaine" || _medication isEqualTo "Norepinephrine") exitWith {
+            if (_medication in ["Epinephrine", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
                 _action = true;
            };
         } forEach (_medicationArray);
 
         if !(_action) then {
-            _unit setVariable ["kat_pharma_alphaAction", 1];
+            _unit setVariable [QEGVAR(pharma,alphaAction), 1];
         };
     }, 180, [_unit]] call CBA_fnc_addPerFrameHandler;
 
-    if (kat_pharma_kidneyAction) then {
+    if (EGVAR(pharma,kidneyAction)) then {
         [{
             params ["_args", "_idPFH"];
             _args params ["_unit"];
@@ -129,38 +129,38 @@ if ((isPlayer _unit) || kat_pharma_aiEnableAdvanced) then {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
 
-            private _ph = _unit getVariable ["kat_pharma_ph", 1500];
+            private _ph = _unit getVariable [QEGVAR(pharma,pH), 1500];
             if (_ph == 1500) exitWith {};
 
-            private _kidneyFail = _unit getVariable ["kat_pharma_kidneyFail", false];
-            private _kidneyArrest = _unit getVariable ["kat_pharma_kidneyArrest", false];
-            private _kidneyPressure = _unit getVariable ["kat_pharma_kidneyPressure", false];
+            private _kidneyFail = _unit getVariable [QEGVAR(pharma,kidneyFail), false];
+            private _kidneyArrest = _unit getVariable [QEGVAR(pharma,kidneyArrest), false];
+            private _kidneyPressure = _unit getVariable [QEGVAR(pharma,kidneyPressure), false];
 
             if (_ph <= 0) exitWith {
-                _unit setVariable ["kat_pharma_kidneyFail", true, true];
+                _unit setVariable [QEGVAR(pharma,kidneyFail), true, true];
 
                 if !(_kidneyArrest) then {
                     private _random = random 1;
 
                     if (_random >= 0.5) then {
                         [_unit, true] call ace_medical_status_fnc_setCardiacArrestState;
-                        _unit setVariable ["kat_pharma_kidneyArrest", true, true];
+                        _unit setVariable [QEGVAR(pharma,kidneyArrest), true, true];
                     };
                 };
             };
 
             if (_ph < 750) exitWith {
                 _ph = (_ph + 25) min 1500;
-                _unit setVariable [QGVAR(pH), _ph, true];
+                _unit setVariable [QEGVAR(pharma,pH), _ph, true];
 
                 if !(_kidneyPressure) then {
-                    _unit setVariable ["kat_pharma_kidneyPressure", true, true];
+                    _unit setVariable [QEGVAR(pharma,kidneyPressure), true, true];
                     [_unit, "KIDNEY", 15, 1200, 30, 0, 15] call ace_medical_status_fnc_addMedicationAdjustment;
                 };
             };
 
             _ph = (_ph + 50) min 1500;
-            _unit setVariable ["kat_pharma_pH", _ph, true];
+            _unit setVariable [QEGVAR(pharma,pH), _ph, true];
         }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
     };
 

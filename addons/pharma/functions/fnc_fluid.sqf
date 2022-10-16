@@ -20,4 +20,4 @@
 
 params ["_patient", "_ph", "_coagulation"];
 
-[QGVAR(fluidLocal), _patient, _ph, _coagulation] call CBA_fnc_targetEvent;
+[QGVAR(fluidLocal),[ _patient, _ph, _coagulation], _patient] call CBA_fnc_targetEvent;
