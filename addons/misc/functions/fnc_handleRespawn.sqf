@@ -176,8 +176,8 @@ if ((isPlayer _unit) || (EGVAR(pharma,aiEnableAdvanced))) then {
             };
 
             private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, []];
-            private _pulse =  _unit getVariable [VAR_HEART_RATE, 80];
-            private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
+            private _pulse = _unit getVariable [VAR_HEART_RATE, 80];
+            private _coagulationFactor = _unit getVariable [QEGVAR(pharma,coagulationFactor), 10];
 
             if (_openWounds isEqualTo []) exitWith {};
             if (_pulse < 20) exitWith {};
@@ -192,7 +192,7 @@ if ((isPlayer _unit) || (EGVAR(pharma,aiEnableAdvanced))) then {
                     if (_amount * _bleeding > 0) exitWith {
                         private _part = ALL_BODY_PARTS select _bodyPart;
                         ["ace_medical_treatment_bandageLocal", [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
-                        _unit setVariable ["kat_pharma_coagulationFactor", (_coagulationFactor - 1), true];
+                        _unit setVariable [QEGVAR(pharma,coagulationFactor), (_coagulationFactor - 1), true];
                     };
                 } forEach _openWounds;
             };
@@ -204,7 +204,7 @@ if ((isPlayer _unit) || (EGVAR(pharma,aiEnableAdvanced))) then {
                     if (_amount * _bleeding > 0) exitWith {
                         private _part = ALL_BODY_PARTS select _bodyPart;
                         ["ace_medical_treatment_bandageLocal", [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
-                        _unit setVariable ["kat_pharma_coagulationFactor", (_coagulationFactor - 1), true];
+                        _unit setVariable [QEGVAR(pharma,coagulationFactor), (_coagulationFactor - 1), true];
                     };
                 } forEach _openWounds;
             };

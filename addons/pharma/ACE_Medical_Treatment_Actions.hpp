@@ -296,8 +296,8 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_Flumazenil);
     };
     class Dialysis: Defibrillator_AED_X_vehicle {
-        displayName = "Perform Dialysis";
-        displayNameProgress = "Performing";
+        displayName = CSTRING(Dialysis_DisplayName);
+        displayNameProgress = CSTRING(Dialysis_DisplayNameProgress);
         category = "surgery";
         items[] = {};
         condition = QFUNC(vehicleCheckDialysis);

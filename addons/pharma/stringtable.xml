@@ -2127,5 +2127,13 @@
             <Korean>신장 설정</Korean>
             <Japanese>腎臓の設定</Japanese>
         </Key>
+        <Key ID="STR_kat_pharma_Dialysis_DisplayName">
+            <English>Perform Dialysis</English>
+            <Polish>Przeprowadź Dializę</Polish>
+        </Key>
+        <Key ID="STR_kat_pharma_Dialysis_DisplayNameProgress">
+            <English>Performing</English>
+            <Polish>Dializa w toku...</Polish>
+        </Key>
     </Package>
 </Project>

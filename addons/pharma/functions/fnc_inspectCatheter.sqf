@@ -23,9 +23,9 @@ private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
 
 if (_IVactual == 3) exitWith {
-    private _output = localize LSTRING(IVblock_closed);
+    private _output = LLSTRING(IVblock_closed);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 };
 
-private _output = localize LSTRING(IVblock_clear);
+private _output = LLSTRING(IVblock_clear);
 [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
