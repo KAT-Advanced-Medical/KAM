@@ -22,7 +22,6 @@ _unit setVariable [QGVAR(IVpfh), [0,0,0,0,0,0], true];
 _unit setVariable [QGVAR(IVblock), false, true];
 _unit setVariable [QGVAR(IVflush), false, true];
 _unit setVariable [QGVAR(active), false, true];
-_unit setVariable [QGVAR(sedated), false, true];
 _unit setVariable [QGVAR(alphaAction), 1];
 
 _unit setVariable [QGVAR(TXA), 1, true];
@@ -104,5 +103,56 @@ if ((isPlayer _unit) || (GVAR(aiEnableAdvanced))) then {
             _ph = (_ph + 50) min 1500;
             _unit setVariable [QGVAR(ph), _ph, true];
         }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
+    };
+
+    if (GVAR(coagulation)) then {
+        [{
+            params ["_args", "_idPFH"];
+            _args params ["_unit"];
+
+            if !(isPlayer _unit) exitWith {
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            };
+
+            private _alive = alive _unit;
+
+            if !(_alive) exitWith {
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            };
+
+            private _openWounds = GET_OPEN_WOUNDS(_unit);
+            private _pulse = GET_HEART_RATE(_unit);
+            private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
+
+            if (_openWounds isEqualTo []) exitWith {};
+            if (_pulse < 20) exitWith {};
+            if (_coagulationFactor == 0) exitWith {};
+
+            private _count = [_unit, "TXA"] call ace_medical_status_fnc_getMedicationCount;
+
+            if (_count == 0) exitWith {
+                {
+                    _x params ["", "_bodyPart", "_amount", "_bleeding"];
+
+                    if (_amount * _bleeding > 0) exitWith {
+                        private _part = ALL_BODY_PARTS select _bodyPart;
+                        ["ace_medical_treatment_bandageLocal", [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
+                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
+                    };
+                } forEach _openWounds;
+            };
+
+            if (_count > 0) exitWith {
+                {
+                    _x params ["", "_bodyPart", "_amount", "_bleeding"];
+
+                    if (_amount * _bleeding > 0) exitWith {
+                        private _part = ALL_BODY_PARTS select _bodyPart;
+                        ["ace_medical_treatment_bandageLocal", [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
+                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
+                    };
+                } forEach _openWounds;
+            };
+        }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;
     };
 };

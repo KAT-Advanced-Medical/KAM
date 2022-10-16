@@ -506,4 +506,13 @@ PREP_RECOMPILE_END;
 	true
 ] call CBA_Settings_fnc_init;
 
+[
+	QGVAR(coagulation),
+	"CHECKBOX",
+	[LLSTRING(SETTING_Coagulation), LLSTRING(SETTING_Coagulation_DESC)],
+	CBA_SETTINGS_CAT,
+	[true],
+	true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

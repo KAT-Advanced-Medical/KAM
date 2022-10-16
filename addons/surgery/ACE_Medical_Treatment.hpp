@@ -1,11 +1,7 @@
 class ADDON {
     class Bandaging {
-        class Dressing {
-            effectiveness = 50;
-            reopeningChance = 0;
-            reopeningMinDelay = 120;
-            reopeningMaxDelay = 200;
-
+        class FieldDressing {};
+        class Dressing: FieldDressing {
             class Abrasion {
                 effectiveness = 50;
                 reopeningChance = 0;

@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: 1LT.Mazinski.H
- * Local call for clearing all stitched wounds on a patient
+ * Local call for clearing all stitched and bandaged wounds on a patient
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -94,3 +94,4 @@ if !(_remainder) then {
 };
 
 [_patient] call ace_medical_engine_fnc_updateDamageEffects;
+[_patient] call ace_medical_engine_fnc_updateWoundBleedLoss;

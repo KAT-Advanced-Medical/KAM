@@ -7,6 +7,8 @@ PREP(hasStableVitals);
 PREP(init);
 PREP(inspectBreath);
 PREP(inspectCatheter);
+PREP(fluid);
+PREP(fluidLocal);
 PREP(removeItemfromMag);
 PREP(removeIV);
 PREP(retrieveIV);

@@ -1423,6 +1423,12 @@
             <English>The maximum amount of fluid bags that can be stacked to increase IV flow rate</English>
             <Italian>La quantità massima di sacche per fluidi che possono essere accorpate per aumentare la portata (flow rate) della  IV</Italian>
         </Key>
+        <Key ID="STR_kat_pharma_SETTING_Coagulation">
+            <English>Enable Coagulation</English>
+        </Key>
+        <Key ID="STR_kat_pharma_SETTING_Coagulation_DESC">
+            <English>Enables advanced coagulation features and modifies TXA and EACA behaviour accordingly.</English>
+        </Key>
         <Key ID="STR_kat_pharma_EACA_Display">
             <English>EACA</English>
             <Italian>EACA (Acido aminocaproico Epsilon)</Italian>
