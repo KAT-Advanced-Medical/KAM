@@ -164,7 +164,7 @@ if ((isPlayer _unit) || (EGVAR(pharma,aiEnableAdvanced))) then {
         }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
     };
 
-    /*if (kat_pharma_coagulation) then {
+    if (EGVAR(pharma,coagulation)) then {
         [{
             params ["_args", "_idPFH"];
             _args params ["_unit"];
@@ -175,9 +175,9 @@ if ((isPlayer _unit) || (EGVAR(pharma,aiEnableAdvanced))) then {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
 
-            private _openWounds = GET_OPEN_WOUNDS(_unit);
-            private _pulse = GET_HEART_RATE(_unit);
-            private _coagulationFactor = _unit getVariable ["kat_pharma_coagulationFactor", 10];
+            private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, []];
+            private _pulse =  _unit getVariable [VAR_HEART_RATE, 80];
+            private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
 
             if (_openWounds isEqualTo []) exitWith {};
             if (_pulse < 20) exitWith {};
@@ -209,5 +209,5 @@ if ((isPlayer _unit) || (EGVAR(pharma,aiEnableAdvanced))) then {
                 } forEach _openWounds;
             };
         }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;
-    };*/
+    };
 };

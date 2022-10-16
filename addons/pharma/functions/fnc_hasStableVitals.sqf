@@ -18,7 +18,7 @@
 params ["_unit"];
 
 if IN_CRDC_ARRST(_unit) exitWith { false };
-if (_unit getVariable [QGVAR(sedated), false]) exitWith { false };
+if (_unit getVariable [QEGVAR(surgery,sedated), false]) exitWith { false };
 
 private _bloodVolume = GET_BLOOD_VOLUME(_unit);
 if (_bloodVolume < 5.1) exitWith { false };

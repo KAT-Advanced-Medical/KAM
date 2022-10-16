@@ -18,7 +18,7 @@
 
 params ["_medic", "_patient"];
 
-private _sedated = _patient getVariable [QGVAR(sedated), false];
+private _sedated = _patient getVariable [QEGVAR(surgery,sedated), false];
 if (_sedated) exitWith {};
 
 private _bloodPressure = [_patient] call ace_medical_status_fnc_getBloodPressure;

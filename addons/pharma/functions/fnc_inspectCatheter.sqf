@@ -16,14 +16,16 @@
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", "_bodyPart"];
 
-private _block = _patient getVariable [QGVAR(IVblock), false];
+private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
+private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+private _IVactual = _IVarray select _partIndex;
 
-if (_block) exitWith {
-    private _output = LLSTRING(IVblock_closed);
+if (_IVactual == 3) exitWith {
+    private _output = localize LSTRING(IVblock_closed);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 };
 
-private _output = LLSTRING(IVblock_clear);
+private _output = localize LSTRING(IVblock_clear);
 [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;

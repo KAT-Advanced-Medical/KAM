@@ -6,6 +6,8 @@ class ACE_Medical_Treatment_Actions {
     class Morphine;
     class CheckPulse;
     class CPR;
+    class Defibrillator;
+    class Defibrillator_AED_X_Vehicle;
 
     class BloodIV: BasicBandage {
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -292,5 +294,19 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(treatmentTime_Flumazenil);
         items[] = {"kat_flumazenil"};
         callbackSuccess = QFUNC(treatmentAdvanced_Flumazenil);
+    };
+    class Dialysis: Defibrillator_AED_X_vehicle {
+        displayName = "Perform Dialysis";
+        displayNameProgress = "Performing";
+        category = "surgery";
+        items[] = {};
+        condition = QFUNC(vehicleCheckDialysis);
+        treatmentTime = 15;
+        medicRequired = 1;
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_Dialysis));
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
 };

@@ -11,6 +11,7 @@
 [QGVAR(dialysisLocal), LINKFUNC(treatmentAdvanced_DialysisLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(flumazenilLocal), LINKFUNC(treatmentAdvanced_FlumazenilLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(lorazepamLocal), LINKFUNC(treatmentAdvanced_LorazepamLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(fluidLocal), LINKFUNC(fluidLocal)] call CBA_fnc_addEventHandler;
 
 ["kat_PainkillerItem", "kat_Painkiller"] call ace_common_fnc_registerItemReplacement;
 ["kat_CarbonateItem", "kat_Carbonate"] call ace_common_fnc_registerItemReplacement;

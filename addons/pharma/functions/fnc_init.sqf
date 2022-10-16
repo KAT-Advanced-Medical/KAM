@@ -19,8 +19,6 @@ params ["_unit"];
 
 _unit setVariable [QGVAR(IV), [0,0,0,0,0,0], true];
 _unit setVariable [QGVAR(IVpfh), [0,0,0,0,0,0], true];
-_unit setVariable [QGVAR(IVblock), false, true];
-_unit setVariable [QGVAR(IVflush), false, true];
 _unit setVariable [QGVAR(active), false, true];
 _unit setVariable [QGVAR(alphaAction), 1];
 
@@ -50,7 +48,7 @@ if ((isPlayer _unit) || (GVAR(aiEnableAdvanced))) then {
         {
             _x params ["_medication"];
 
-            if (_medication isEqualTo "Epinephrine" || _medication isEqualTo "Phenylephrine" ||  _medication isEqualTo "Nitroglycerin" || _medication isEqualTo "Lidocaine" || _medication isEqualTo "Norepinephrine") exitWith {
+            if (_medication in ["Epinephrine", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
                 _action = true;
            };
         } forEach (_medicationArray);
@@ -71,8 +69,12 @@ if ((isPlayer _unit) || (GVAR(aiEnableAdvanced))) then {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
 
-            private _ph = _unit getVariable [QGVAR(ph), 1500];
-            if (_ph == 1500) exitWith {};
+            private _ph = _unit getVariable [QGVAR(pH), 1500];
+            if (_ph == 1500) exitWith {
+                _unit setVariable [QGVAR(kidneyArrest), false, true];
+                _unit setVariable [QGVAR(kidneyPressure), false, true];
+                _unit setVariable [QGVAR(kidneyFail), false, true];
+            };
 
             private _kidneyFail = _unit getVariable [QGVAR(kidneyFail), false];
             private _kidneyArrest = _unit getVariable [QGVAR(kidneyArrest), false];
@@ -80,6 +82,7 @@ if ((isPlayer _unit) || (GVAR(aiEnableAdvanced))) then {
 
             if (_ph <= 0) exitWith {
                 _unit setVariable [QGVAR(kidneyFail), true, true];
+                _unit setVariable [QGVAR(pH), 0, true];
 
                 if !(_kidneyArrest) then {
                     private _random = random 1;
@@ -111,27 +114,15 @@ if ((isPlayer _unit) || (GVAR(aiEnableAdvanced))) then {
             params ["_args", "_idPFH"];
             _args params ["_unit"];
 
-            diag_log "WORKING4";
-
-            if !(isPlayer _unit) exitWith {
-                [_idPFH] call CBA_fnc_removePerFrameHandler;
-            };
-
             private _alive = alive _unit;
 
             if !(_alive) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
 
-            diag_log "WORKING3";
-
             private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, []];
-            private _pulse =  _unit getVariable [VAR_HEART_RATE, 60];
+            private _pulse =  _unit getVariable [VAR_HEART_RATE, 80];
             private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
-
-            diag_log _openWounds;
-            diag_log _pulse;
-            diag_log _coagulationFactor;
 
             if (_openWounds isEqualTo []) exitWith {};
             if (_pulse < 20) exitWith {};
@@ -139,14 +130,11 @@ if ((isPlayer _unit) || (GVAR(aiEnableAdvanced))) then {
 
             private _count = [_unit, "TXA"] call ace_medical_status_fnc_getMedicationCount;
 
-            diag_log "WORKING2";
-
             if (_count == 0) exitWith {
                 {
                     _x params ["", "_bodyPart", "_amount", "_bleeding"];
 
                     if (_amount * _bleeding > 0) exitWith {
-                        diag_log "WORKING";
                         private _part = ALL_BODY_PARTS select _bodyPart;
                         ["ace_medical_treatment_bandageLocal", [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
                         _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
