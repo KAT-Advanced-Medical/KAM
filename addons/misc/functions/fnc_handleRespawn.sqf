@@ -80,8 +80,6 @@ _unit setVariable ["kat_surgery_debridement", [0,0,0,0,0,0], true];
 _unit setVariable ["kat_surgery_fractures", [0,0,0,0,0,0], true];
 _unit setVariable ["kat_surgery_lidocaine", false, true];
 _unit setVariable ["kat_surgery_etomidate", false, true];
-_unit setVariable ["kat_surgery_sedated", false, true];
-
 
 // Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten
 _unit spawn {
@@ -164,7 +162,7 @@ if ((isPlayer _unit) || "kat_pharma_aiEnableAdvanced") then {
         }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
     };
 
-    if (GVAR(coagulation)) then {
+    if ("kat_pharma_coagulation") then {
         [{
             params ["_args", "_idPFH"];
             _args params ["_unit"];

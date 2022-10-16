@@ -474,7 +474,7 @@ PREP_RECOMPILE_END;
 	QGVAR(kidneyAction),
 	"CHECKBOX",
 	[LLSTRING(SETTING_Kidney_Action), LLSTRING(SETTING_Kidney_Action_DESC)],
-	CBA_SETTINGS_CAT,
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Kidney)],
 	[false],
 	true
 ] call CBA_Settings_fnc_init;
