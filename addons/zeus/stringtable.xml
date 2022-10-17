@@ -52,7 +52,7 @@
             <Czech>Hemopneumotorax: </Czech>
             <French>Hémopneumothorax: </French>
             <Polish>Krwiak opłucnej: </Polish>
-            <Spanish>Hemoneumotórax: </Spanish>
+            <Spanish>Hemotórax: </Spanish>
             <Korean>혈기흉 활성화: </Korean>
             <Chinese>血气胸:</Chinese>
             <Turkish>Hemopnömotoraks: </Turkish>
@@ -112,7 +112,7 @@
             <Czech>Množství krve: </Czech>
             <French>Volume sanguin: </French>
             <Polish>Ilość krwi: </Polish>
-            <Spanish>Volumen sanguíneo: </Spanish>
+            <Spanish>Volumen de sangre: </Spanish>
             <Chinese>血量。</Chinese>
             <Korean>혈액량: </Korean>
             <Turkish>Kan basıncı: </Turkish>
@@ -142,7 +142,7 @@
             <Czech>Změnit krevní skupinu / množství</Czech>
             <French>Changer groupe sanguin / volume</French>
             <Polish>Zmień grupę / ilość krwi</Polish>
-            <Spanish>Cambiar grupo/volumen sanguíneo</Spanish>
+            <Spanish>Cambiar grupo/volumen de sangre</Spanish>
             <Chinese>改变血型/血量</Chinese>
             <Korean>혈액형/혈액량 변경</Korean>
             <Turkish>Kan grubunu / hacmini değiştir</Turkish>
