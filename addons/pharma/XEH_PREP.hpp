@@ -24,6 +24,8 @@ PREP(treatmentAdvanced_EACA);
 PREP(treatmentAdvanced_EACALocal);
 PREP(treatmentAdvanced_Flumazenil);
 PREP(treatmentAdvanced_FlumazenilLocal);
+PREP(treatmentAdvanced_Flush);
+PREP(treatmentAdvanced_FlushLocal);
 PREP(treatmentAdvanced_Lorazepam);
 PREP(treatmentAdvanced_LorazepamLocal);
 PREP(treatmentAdvanced_medication);
