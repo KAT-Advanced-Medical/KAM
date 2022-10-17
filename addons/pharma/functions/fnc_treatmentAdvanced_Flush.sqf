@@ -19,9 +19,9 @@
 params ["_medic", "_patient", "_bodyPart"];
 
 if (local _patient) then {
-    ["flushLocal", [_medic, _patient, _bodyPart]] call CBA_fnc_localEvent;
+    [QGVAR(flushLocal), [_medic, _patient, _bodyPart]] call CBA_fnc_localEvent;
 } else {
-    ["flushLocal", [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+    [QGVAR(flushLocal), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
 };
 
 true;
