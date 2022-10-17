@@ -1,6 +1,14 @@
 class ADDON {
 	class Medication {
         class Epinephrine {
+            painReduce = 0;
+            hrIncreaseLow[] = {10, 20};
+            hrIncreaseNormal[] = {10, 50};
+            hrIncreaseHigh[] = {10, 40};
+            timeInSystem = 120;
+            timeTillMaxEffect = 10;
+            maxDose = 10;
+            incompatibleMedication[] = {};
             alphaFactor = 0.15;
         };
         class Carbonate {
