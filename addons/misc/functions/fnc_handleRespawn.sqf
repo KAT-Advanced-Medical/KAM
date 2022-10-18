@@ -29,7 +29,7 @@ _unit setVariable ["kat_airway_overstretch", false, true];
 _unit setVariable ["kat_airway_startTime", 0, true];
 _unit setVariable ['kat_AEDinUse', false, true];
 KAT_forceWakeup = false;
-_unit setVariable [QGVAR(recovery), false, true];
+_unit setVariable [QEGVAR(airway,recovery), false, true];
 
 // KAT Breathing
 
