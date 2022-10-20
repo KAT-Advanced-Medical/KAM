@@ -35,9 +35,9 @@ class ADDON {
         };
         class Norepinephrine {
             painReduce = 0;
-            hrIncreaseLow[] = {0, 0};
-            hrIncreaseNormal[] = {0, 0};
-            hrIncreaseHigh[] = {0, 0};
+            hrIncreaseLow[] = {0, 5};
+            hrIncreaseNormal[] = {5, 15};
+            hrIncreaseHigh[] = {5, 10};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
             maxDose = 12;
@@ -115,9 +115,9 @@ class ADDON {
         };
         class Atropine {
             painReduce = 0;
-            hrIncreaseLow[] = {0, 0, 0};
-            hrIncreaseNormal[] = {0, 0, 0};
-            hrIncreaseHigh[] = {0, 0, 0};
+            hrIncreaseLow[] = {20, 40};
+            hrIncreaseNormal[] = {10, 25};
+            hrIncreaseHigh[] = {5, 15};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
             maxDose = 4;
@@ -187,7 +187,7 @@ class ADDON {
             timeTillMaxEffect = 5;
             maxDose = 3;
             incompatibleMedication[] = {};
-            viscosityChange = 0;
+            viscosityChange = -15;
         };
     };
 };
