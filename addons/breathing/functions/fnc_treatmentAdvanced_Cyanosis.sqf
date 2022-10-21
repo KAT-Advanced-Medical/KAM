@@ -6,6 +6,7 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <NUMBER>
  *
  * Return Value:
  * None
@@ -18,4 +19,4 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-[QGVAR(cyanosisLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+[QGVAR(cyanosisLocal), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;

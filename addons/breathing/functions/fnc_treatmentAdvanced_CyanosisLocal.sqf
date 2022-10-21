@@ -6,6 +6,7 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <NUMBER>
  *
  * Return Value:
  * None
@@ -29,7 +30,7 @@ if (alive _patient) then {
 private _messageCyanosis = LLSTRING(CyanosisStatus_N);
 private _spO2Output = LSTRING(CyanosisStatus_N);
 
-[_patient, "quick_view", "STR_kat_breathing_CheckCyanosis_log"] call EFUNC(circulation,removeLog);
+[_patient, "quick_view", "STR_kat_breathing_CheckCyanosis_Log"] call EFUNC(circulation,removeLog);
 
 if (!([_patient,_bodyPart] call ace_medical_treatment_fnc_hasTourniquetAppliedTo)) then {
     
@@ -51,8 +52,6 @@ if (!([_patient,_bodyPart] call ace_medical_treatment_fnc_hasTourniquetAppliedTo
     _spO2Output = LSTRING(CyanosisStatus_Severe);
     _messageCyanosis = LLSTRING(CyanosisStatus_Severe);
 };
-
-
 
 private _message = format ["%1",_messageCyanosis];
 [_message, 2, _medic] call ace_common_fnc_displayTextStructured;
