@@ -20,11 +20,9 @@
 params ["_medic", "_patient", "_bodyPart"];
 
 private _spO2 = 0;
-private _HR = 0;
 
 if (alive _patient) then {
     _spO2 = _patient getVariable ["KAT_medical_airwayStatus", 100];
-    _HR = GET_HEART_RATE(_patient);
 };
 
 private _messageCyanosis = LLSTRING(CyanosisStatus_N);

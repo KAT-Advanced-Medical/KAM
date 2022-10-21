@@ -33,12 +33,12 @@ _patient setVariable [QGVAR(pulseoximeter), true, true];
         [_patient, "quick_view", "STR_kat_breathing_pulseoxi_Log"] call kat_circulation_fnc_removeLog;
     };
 
-    private _HR = 0;
-    private _SpO2 = 0;
+    private _HR = GET_HEART_RATE(_patient);
+    private _SpO2 = _patient getVariable ["KAT_medical_airwayStatus", 100];
 
-    if (!([_patient,_bodyPart] call ace_medical_treatment_fnc_hasTourniquetAppliedTo)) then {
-        _HR = GET_HEART_RATE(_patient);
-        _SpO2 = _patient getVariable ["KAT_medical_airwayStatus", 100];
+    if (([_patient,_bodyPart] call ace_medical_treatment_fnc_hasTourniquetAppliedTo)) then {
+        _HR = 0;
+        _SpO2 = 0;
     };
 
 
