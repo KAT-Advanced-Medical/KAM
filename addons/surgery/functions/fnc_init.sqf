@@ -21,6 +21,7 @@ _unit setVariable [QGVAR(debridement), [0,0,0,0,0,0], true];
 _unit setVariable [QGVAR(fractures), [0,0,0,0,0,0], true];
 _unit setVariable [QGVAR(lidocaine), false, true];
 _unit setVariable [QGVAR(etomidate), false, true];
+_unit setVariable [QGVAR(sedated), false, true];
 
 /*
 * 0 = Unaffected

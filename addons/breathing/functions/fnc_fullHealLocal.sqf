@@ -77,7 +77,6 @@ _patient setVariable ["kat_pharma_IV", [0,0,0,0,0,0], true];
 _patient setVariable ["kat_pharma_IVpfh", [0,0,0,0,0,0], true];
 _patient setVariable ["kat_pharma_active", false, true];
 _patient setVariable ["kat_IVPharma_PFH", nil, true];
-_patient setVariable ["kat_pharma_sedated", false, true];
 _patient setVariable ["kat_pharma_pH", 1500, true];
 _patient setVariable ["kat_pharma_kidneyFail", false, true];
 _patient setVariable ["kat_pharma_kidneyArrest", false, true];
@@ -89,6 +88,7 @@ _patient setVariable ["kat_surgery_debridement", [0,0,0,0,0,0], true];
 _patient setVariable ["kat_surgery_fractures", [0,0,0,0,0,0], true];
 _patient setVariable ["kat_surgery_lidocaine", false, true];
 _patient setVariable ["kat_surgery_etomidate", false, true];
+_patient setVariable ["kat_surgery_sedated", false, true];
 
 // Damage storage
 _patient setVariable ["ace_medical_bodyPartDamage", [0,0,0,0,0,0], true];

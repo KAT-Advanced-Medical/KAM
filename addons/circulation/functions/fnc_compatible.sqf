@@ -18,7 +18,7 @@
 
 params ["_unit", "_className"];
 
-private _bloodType = _unit getVariable [QGVAR(bloodtype), "O-"];
+private _bloodType = _unit getVariable [QGVAR(bloodtype), "O_N"];
 private _compatibility = getArray (configFile >> "ACE_Medical_Advanced" >> "Treatment" >> "IV" >> _className >> "compatibility");
 if (_bloodType in _compatibility) exitWith {true};
 false
