@@ -1,7 +1,18 @@
 #include "script_component.hpp"
-///////////////////
-
-//////////////////
+/*
+ * Author: DiGii
+ * 
+ * Arguments:
+ * 0: Target <OBJECT>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [] call kat_chemical_fnc_createSealAction;
+ *
+ * Public: No
+*/
 params["_object"];
 
 private _action = [

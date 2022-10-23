@@ -1,4 +1,20 @@
-//[getPosASL player, 25, 60] call digi_fnc_spawnGasSmoke
+/*
+ * Author: DiGii
+ * Spawns Patricles for the Gas zone
+ *
+ * Arguments:
+ * 0: Postiton <VECTOR3>
+ * 1: Radius <Number>
+ * 2: lifetime <Number>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [getPosASL player, 25, 60] call kat_chemical_fnc_spawnGasSmoke;
+ *
+ * Public: No
+*/
 
 params ["_position", "_radius", "_lifetime"];
 

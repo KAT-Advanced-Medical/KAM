@@ -1,7 +1,19 @@
 #include "script_component.hpp"
-////////////////////////
-
-////////////////////////
+/*
+ * Author: DiGii
+ * Initializes placed Module 
+ *
+ * Arguments:
+ * 0: Logic <MODULE>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [logic] call kat_chemical_fnc_initModule;
+ *
+ * Public: No
+*/
 
 params ["_logic"];
 

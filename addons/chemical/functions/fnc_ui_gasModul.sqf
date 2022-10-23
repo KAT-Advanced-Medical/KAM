@@ -1,4 +1,19 @@
 #include "script_component.hpp"
+/*
+ * Author: DiGii
+ * Creates the UI for the Zeus Module
+ *
+ * Arguments:
+ * 0: Control <NUMBER>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [1105] call kat_chemical_fnc_spawnGasSmoke;
+ *
+ * Public: No
+*/
 
 params["_control"];
 

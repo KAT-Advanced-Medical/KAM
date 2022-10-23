@@ -1,7 +1,24 @@
 #include "script_component.hpp"
-////////////////////////////////////////
-
-////////////////////////////////////////
+/*
+ * Author: DiGii
+ * 
+ *
+ * Arguments:
+ * 0: Player <OBJECT>
+ * 1: Unit <OBJECT>
+ * 2: Boddypart <STRING>
+ * 3: Classname <STRING>
+ * 4:
+ * 5: Item <STRING>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [] call kat_chemical_fnc_medication;
+ *
+ * Public: No
+*/
 
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 

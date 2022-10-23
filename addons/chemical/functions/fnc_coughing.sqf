@@ -1,7 +1,18 @@
 #include "script_component.hpp"
-///////////////////////////////
-
-///////////////////////////////
+/*
+ * Author: DiGii
+ * 
+ * Arguments:
+ * NONE
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [] call kat_chemical_fnc_coughing;
+ *
+ * Public: No
+*/
 
 
 waitUntil{ player getVariable["kat_chemical_airPoisend",false] };

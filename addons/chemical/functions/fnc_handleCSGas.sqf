@@ -1,7 +1,19 @@
 #include "script_component.hpp"
-////////////////////////////////
-
-////////////////////////////////
+/*
+ * Author: DiGii
+ * 
+ * Arguments:
+ * 0: Logic <MODULE>
+ * 1: Raduis <NUMBER>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [logic, 10] call kat_chemical_fnc_handleCSGas;
+ *
+ * Public: No
+*/
 params ["_logic","_radius"];
 [{
 	params["_params","_handler"];

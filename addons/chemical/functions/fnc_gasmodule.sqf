@@ -1,5 +1,20 @@
 #include "script_component.hpp"
-
+/*
+ * Author: DiGii
+ * This cant be called manualy!
+ * 
+ * Arguments:
+ * 0: Logic <LOGIC>
+ * 1: Activated <BOOL>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [] call kat_chemical_fnc_gasmodule;
+ *
+ * Public: No
+*/
 
 private _logic = param [0,objNull,[objNull]];
 private _activated = param [2,true,[true]];

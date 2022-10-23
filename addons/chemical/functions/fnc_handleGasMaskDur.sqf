@@ -1,7 +1,18 @@
 #include "script_component.hpp"
-/////////////////////
-//[] spawn kat_fnc_handleGasMaskDur;
-/////////////////////
+/*
+ * Author: DiGii
+ * 
+ * Arguments:
+ * 0:
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [] call kat_chemical_fnc_handleGasMAskDur;
+ *
+ * Public: No
+*/
 uiSleep 5;
 waitUntil{!isNil "kat_chemical_avail_gasmask" && player getVariable ["kat_medical_enteredPoisen", false]};
 

@@ -32,7 +32,7 @@ private _gastype = "";
             _gastype = "Toxic";
         };
     };
-if(_gastype == "CS") then {[getPosASL _logic, _radius, _lifetime] call FUNC(spawnGasSmoke);};
+if(_gastype isEqualTo "CS") then {[getPosASL _logic, _radius, _lifetime] call FUNC(spawnGasSmoke);};
     
 [_logic,_pos,_radius,0,_gastype] call FUNC(gasCheck);
 private _currentTime = CBA_missionTime;

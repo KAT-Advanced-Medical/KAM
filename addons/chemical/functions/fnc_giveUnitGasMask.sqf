@@ -1,7 +1,19 @@
 #include "script_component.hpp"
-//////////////////////////
-
-//////////////////////////
+/*
+ * Author: DiGii
+ * 
+ * Arguments:
+ * 0: Player <Player>
+ * 1: Target <OBJECT>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [player, cursorTarget] call kat_chemical_fnc_giveUnitGasMask;
+ *
+ * Public: No
+*/
 
 params ["_medic", "_patient"];
 

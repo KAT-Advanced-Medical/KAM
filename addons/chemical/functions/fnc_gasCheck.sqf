@@ -1,11 +1,28 @@
 #include "script_component.hpp"
-/////////////////////
-
-/////////////////////
+/*
+ * Author: DiGii
+ * This cant be called manualy!
+ *
+ * 
+ * Arguments:
+ * 0: Module <Logic>
+ * 1: Position <Position>
+ * 2: Max_Radius <NUMBER>
+ * 3: Min_Radius <Number>
+ * 4: GasType <STRING>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [] call kat_chemical_fnc_gasCheck;
+ *
+ * Public: No
+*/
 
 params ["_logic","_pos","_radius_max","_radius_min","_gastype"];
-if(_gastype == "") then {_gastype = "Toxic"};
-if(_radius_min == 0) then {_radius_min = _radius_max / 2};
+if(_gastype isEqualTo "") then {_gastype = "Toxic"};
+if(_radius_min isEqualTo 0) then {_radius_min = _radius_max / 2};
 _logic setVariable ["kat_chemical_gas_active", true,true];
 _logic setVariable ["kat_gas_playerArr",[],true];
 _logic setVariable ["kat_pos",_pos,true];

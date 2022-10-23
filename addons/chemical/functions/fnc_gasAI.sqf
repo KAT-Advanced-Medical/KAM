@@ -1,7 +1,24 @@
 #include "script_component.hpp"
-/////////////////////
-
-/////////////////////
+/*
+ * Author: DiGii
+ * This cant be called manualy!
+ * Handles the Gas effect for the AI
+ * 
+ * Arguments:
+ * 0: Target <OBJECT>
+ * 1: Module <Logic>
+ * 2: Position <Position>
+ * 3: Radius <NUMBER>
+ * 4: GasTyoe <STRING>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [] call kat_chemical_fnc_gasAI;
+ *
+ * Public: No
+*/
 
 params ["_unit","_logic","_pos","_radius_max","_gastype"];
 private _unitt = _unit;
@@ -25,7 +42,7 @@ while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) 
 		private _fnc_afterwait = {
 			params["_unit","_gastype","_pos","_skill"];
 			if !(goggles _unit in KAT_AVAIL_GASMASK) exitWith {
-				if(_gastype == "CS") then {
+				if(_gastype isEqualTo "CS") then {
 					while{_unit distance _pos < 10 && _unit getVariable["kat_medical_enteredPoisen",false]} do {
 						_unit say3D "cough_1";
 						_unit setSkill ["aimingAccuracy",0.001];
@@ -51,7 +68,7 @@ while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) 
 				[_unit,_gastype,_pos,_skill] spawn _fnc_afterwait;
 				_i = 2;
 			};
-			if(_gastype == "CS") exitWith {
+			if(_gastype isEqualTo "CS") exitWith {
 				[_unit,_gastype,_pos,_skill] spawn _fnc_afterwait;
 				_i = 2;
 			};

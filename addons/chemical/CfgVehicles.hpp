@@ -12,7 +12,7 @@ class cfgVehicles {
                     icon = QPATHTOF(ui\Gasmask_icon.paa);
                 };
                 class KAT_ChangeGasMaskFilter {
-                    displayName = CSTRING(ChangeGasMaskFilter);
+                    displayName = CSTRING(ChangeGasMaskFilter); 
                     condition = QUOTE([_player] call FUNC(canRelpaceFilter));
                     exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     statement = QUOTE(_this call FUNC(changeGasMaskFilter));

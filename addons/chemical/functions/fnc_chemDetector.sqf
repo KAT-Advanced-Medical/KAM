@@ -1,7 +1,18 @@
 #include "script_component.hpp"
-///////////////////
-
-///////////////////
+/*
+ * Author: DiGii
+ * 
+ * Arguments:
+ * NONE
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [] call kat_chemical_fnc_chemDetector;
+ *
+ * Public: No
+*/
 "KAT_CHEM_DETECTOR" cutRsc ["RscWeaponChemicalDetector", "PLAIN", 1, false];
 private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
 private _obj = _ui displayCtrl 101;

@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 //Events
-["kat_fnc_medicationLocal", {_this call FUNC(medicationLocal)}] call CBA_fnc_addEventHandler;
+[QGVAR(medicationLocal), {_this call FUNC(medicationLocal)}] call CBA_fnc_addEventHandler;
 ["kat_fnc_gas", {_this call FUNC(gasCheck)}] call CBA_fnc_addEventHandler;
 ["kat_fnc_gas_local", {_this spawn FUNC(gasCheckLocal)}] call CBA_fnc_addEventHandler;
 ["kat_fnc_gas_ai", {_this spawn FUNC(gasAI)}] call CBA_fnc_addEventHandler;

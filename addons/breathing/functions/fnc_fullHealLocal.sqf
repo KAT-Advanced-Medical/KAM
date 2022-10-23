@@ -41,6 +41,14 @@ if (_patient getVariable ["ace_medical_inCardiacArrest", false]) then {
 _patient setVariable ["ace_medical_pain", 0, true];
 _patient setVariable ["ace_medical_bloodVolume", 6.0, true];
 
+// GAS
+_patient setVariable ["kat_medical_enteredPoisen",false,true];
+_patient setVariable ["kat_chemical_airPoisend",false,true];
+_patient setVariable ["kat_chemical_CS",false,true];
+if (_patient getVariable ["KAT_PAIN_EFFECT",0] != 0) then {
+		KAT_PAIN_EFFECT ppEffectEnable false;
+	};
+
 // Tourniquets
 {
     if (_x != 0) then {

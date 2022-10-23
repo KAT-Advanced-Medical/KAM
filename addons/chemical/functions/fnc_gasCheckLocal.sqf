@@ -1,7 +1,25 @@
 #include "script_component.hpp"
-//////////////////////////
-
-//////////////////////////
+/*
+ * Author: DiGii
+ * This cant be called manualy!
+ * Handles the Gas effect for the Player
+ * 
+ * Arguments:
+ * 0: Target <OBJECT>
+ * 1: Module <Logic>
+ * 2: Position <Position>
+ * 3: Max_Radius <NUMBER>
+ * 4: Min_Radius <NUMBER>
+ * 5: GasTyoe <STRING>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [] call kat_chemical_fnc_gasCheckLocal;
+ *
+ * Public: No
+*/
 
 params ["_unit","_logic","_pos","_radius_max","_radius_min","_gastype"];
 
@@ -51,16 +69,16 @@ while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) 
 
 						if !(goggles _unit in KAT_AVAIL_GASMASK && _timeleft > 0) then {
 							_unit setVariable ["kat_medical_poisenType",_gastype,true];
-							if(_gastype == "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
-							if(_gastype == "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
+							if(_gastype isEqualTo "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
+							if(_gastype isEqualTo "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
 							[_unit] call KAT_breathing_fnc_handleBreathing;
 							_isinGas = false;
 						};
 
 						if(_timeleft <= 0 && _unit getVariable ["kat_medical_enteredPoisen",false]) then {
 							_unit setVariable ["kat_medical_poisenType",_gastype,true];
-							if(_gastype == "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
-							if(_gastype == "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
+							if(_gastype isEqualTo "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
+							if(_gastype isEqualTo "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
 							[_unit] call KAT_breathing_fnc_handleBreathing;
 							_isinGas = false;
 						};
@@ -76,8 +94,8 @@ while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) 
 			} else {
 				if(_unit getVariable ["kat_medical_enteredPoisen",false]) then {
 					_unit setVariable ["kat_medical_poisenType",_gastype,true];
-					if(_gastype == "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
-					if(_gastype == "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
+					if(_gastype isEqualTo "Toxic") then {_unit setVariable ["kat_chemical_airPoisend",true,true];};
+					if(_gastype isEqualTo "CS") then {_unit setVariable ["kat_chemical_CS",true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
 					[_unit] call KAT_breathing_fnc_handleBreathing;
 				};
 			};
@@ -112,7 +130,7 @@ while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) 
 					_i = 2;
 				};
 
-				if(_gastype == "CS") exitWith {
+				if(_gastype isEqualTo "CS") exitWith {
 					_i = 2;
 					[_unit,_timeEntered,_logic,_gastype,_radius_max] spawn _fnc_kat_afterwait;
 				};

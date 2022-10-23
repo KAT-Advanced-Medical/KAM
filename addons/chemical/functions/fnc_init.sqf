@@ -1,9 +1,18 @@
 #include "script_component.hpp"
-///////////////////
-
-///////////////////
-
-//INIT Gasmasks
+/*
+ * Author: DiGii
+ * 
+ * Arguments:
+ * 0: 
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [] call kat_chemical_fnc_init;
+ *
+ * Public: No
+*/
 
 [] spawn {
 	waitUntil {!isNil "kat_chemical_avail_gasmask" && time > 1};
@@ -27,10 +36,6 @@ if(hasInterface) then {
 	[] spawn FUNC(chemDetector);
 	[player] spawn FUNC(breathing);
 	kat_lastpoisend = 0;
-	player addEventHandler ["killed", {call kat_chemical_fnc_handleRespawn}];
-	[] spawn {
-		call kat_chemical_fnc_handleRespawn;
-	};
 	player setVariable["kat_gas_timeleft",missionNamespace getVariable ["kat_medical_infectTime",60],true];
 	player setVariable ["kat_medical_enteredPoisen",false,true];
 	player setVariable ["kat_gasmask_durability",10,true];

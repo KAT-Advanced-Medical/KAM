@@ -14,6 +14,10 @@
  * Public: No
 */
 
-params["_target"];
+params ["_target"];
 
-goggles _target in KAT_AVAIL_GASMASK && 'kat_gasmaskFilter' in items _target
+if (goggles _target in KAT_AVAIL_GASMASK && 'kat_gasmaskFilter' in items _target) then {
+	true
+} else {
+	false
+}

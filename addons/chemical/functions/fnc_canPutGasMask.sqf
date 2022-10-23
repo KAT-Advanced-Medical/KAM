@@ -1,9 +1,21 @@
 #include "script_component.hpp"
-//////////////////////////
+/*
+ * Author: DiGii
+ * 
+ * Arguments:
+ * 0: Target <OBJECT>
+ * 1: Target <OBJECT>
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [player, cursorTarget] call kat_chemical_fnc_canPutGasMask;
+ *
+ * Public: No
+*/
 
-//////////////////////////
+params ["_medic", "_patient"];
 
-params ["_player", "_patient"];
 
-//abfrage ob gasmaske vorhanden hinzufügen
-!(_patient call ACE_common_fnc_isAwake) && ([_player,_patient] call FUNC(hasGasmask)) && !(goggles _patient in KAT_AVAIL_GASMASK)
+!(_patient call ACE_common_fnc_isAwake) && ([_medic,_patient] call FUNC(hasGasmask)) && !(goggles _patient in KAT_AVAIL_GASMASK)

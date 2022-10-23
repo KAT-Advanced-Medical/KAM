@@ -1,7 +1,19 @@
 #include "script_component.hpp"
-////////////////////
+/*
+ * Author: DiGii
+ * 
+ *
+ * Return Value:
+ * NONE
+ *
+ * Example:
+ * [] call kat_chemical_fnc_AttributeRadius;
+ *
+ * Public: No
+ *
+ *
+*/
 
-////////////////////
 
 params ["_control"];
 private _display = ctrlParent _control;
