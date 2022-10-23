@@ -7,12 +7,4 @@ class CfgFunctions {
             };
         };
     };
-    class overwrite_medicalStatus {
-        tag = "ace_medical_status";
-        class ace_medical_status {
-            class hasStableVitals {
-                file = QPATHTOF(functions\fnc_hasStableVitals.sqf);
-            };
-        };
-    };
 };
