@@ -44,6 +44,11 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_ketamine,20);
             MACRO_ADDITEM(kat_fentanyl,20);
             MACRO_ADDITEM(kat_nalbuphine,20);
+            MACRO_ADDITEM(kat_lorazepam,20);
+            MACRO_ADDITEM(kat_flumazenil,20);
+            MACRO_ADDITEM(kat_etomidate,20);
+            MACRO_ADDITEM(kat_naloxone,20);
+            MACRO_ADDITEM(kat_EACA,20);
         };
         class TransportMagazines: TransportMagazines {
             MACRO_ADDMAGAZINE(kat_Carbonate,10);

@@ -20,7 +20,7 @@
             <English>Attaching IV</English>
             <German>IV wird angehangen</German>
             <Polish>Zakładanie IV</Polish>
-            <Spanish>Administrando IV</Spanish>
+            <Spanish>Colocando IV</Spanish>
             <Chinese>注射點滴</Chinese>
             <Chinesesimp>IV注射</Chinesesimp>
             <Czech>Připojuji IV</Czech>
@@ -155,7 +155,7 @@
             <English>Use condition limit wounds</English>
             <German>Bendingung für limitierte Wunden</German>
             <Polish>Stosować rany ograniczające stan zdrowia</Polish>
-            <Spanish>Usar condición para límite de heridas</Spanish>
+            <Spanish>Condición de uso del límite de heridas</Spanish>
             <Chinese>以條件來限制傷口</Chinese>
             <Chinesesimp>用条件来限制伤口</Chinesesimp>
             <Czech>Použít podmínku omezených ran</Czech>
@@ -185,7 +185,7 @@
             <English>Attach to</English>
             <German>Anhängen an</German>
             <Polish>Przyczep do</Polish>
-            <Spanish>Poner en</Spanish>
+            <Spanish>Adjuntar a</Spanish>
             <Chinese>掛在</Chinese>
             <Chinesesimp>附加到</Chinesesimp>
             <Czech>Připevnit k</Czech>
@@ -215,7 +215,7 @@
             <English>Lower Stretcher By 10m</English>
             <Polish>Opuść nosze o 10m</Polish>
             <German>Trage um 10m absenken</German>
-            <Spanish>Camilla inferior en 10 m</Spanish>
+            <Spanish>Bajar la camilla 10m</Spanish>
             <Chinese>下担架 10m</Chinese>
             <Chinesesimp>担架下降 10m</Chinesesimp>
             <Czech>Snížit nosítka o 10m</Czech>
@@ -230,7 +230,7 @@
             <English>Raise Stretcher By 10m</English>
             <Polish>Wciągnij nosze o 10m</Polish>
             <German>Trage um 10m anheben</German>
-            <Spanish>Levantar la camilla 10 m</Spanish>
+            <Spanish>Subir la camilla 10 m</Spanish>
             <Chinese>将担架抬高 10m</Chinese>
             <Chinesesimp>担架抬高 10m</Chinesesimp>
             <Czech>Vytáhnout nosítka o 10m</Czech>
@@ -245,7 +245,7 @@
             <English>Raise Stretcher</English>
             <Polish>Wciągnij nosze</Polish>
             <German>Trage anheben</German>
-            <Spanish>Levantar camilla</Spanish>
+            <Spanish>Subir la camilla</Spanish>
             <Chinese>AA抬起担架AA</Chinese>
             <Chinesesimp>抬起担架</Chinesesimp>
             <Czech>Vytáhnout nosítka</Czech>
@@ -260,7 +260,7 @@
             <English>Lower Stretcher</English>
             <Polish>Opuść nosze</Polish>
             <German>Trage absenken</German>
-            <Spanish>Camilla inferior</Spanish>
+            <Spanish>Bajar la camilla</Spanish>
             <Chinese>下担架</Chinese>
             <Chinesesimp>放下担架</Chinesesimp>
             <Czech>Snížit nosítka</Czech>
@@ -275,7 +275,7 @@
             <English>Flip Stretcher</English>
             <Polish>Obróć nosze</Polish>
             <German>Trage flippen</German>
-            <Spanish>Camilla Flip</Spanish>
+            <Spanish>Voltear camilla</Spanish>
             <Chinese>翻转担架</Chinese>
             <Chinesesimp>翻转担架</Chinesesimp>
             <Czech>Otočit nosítka</Czech>
@@ -290,7 +290,7 @@
             <English>The vehicle you are looking at is not a helicopter!</English>
             <Polish>Pojazd na który patrzysz nie jest śmigłowcem!</Polish>
             <German>Dieses Fahrzeug ist kein Helikopter!</German>
-            <Spanish>¡El vehículo que está mirando no es un helicóptero!</Spanish>
+            <Spanish>¡El vehículo al que estás mirando no es un helicóptero!</Spanish>
             <Chinese>您正在查看的车辆不是直升机！</Chinese>
             <Chinesesimp>您正在注视的载具不是直升机！</Chinesesimp>
             <Czech>Vozidlo na které se díváte není helikoptéra!</Czech>
@@ -305,7 +305,7 @@
             <English>You must be within 15m of the helicopter and look at it!</English>
             <Polish>Musisz być w zasięgu 15m od śmigłowca i patrzeć w jego kierunku!</Polish>
             <German>Sie müssen sich in einem Umkreis von 15 Metern um den Hubschrauber aufhalten und ihn anschauen!</German>
-            <Spanish>¡Debes estar a menos de 15 m del helicóptero y míralo!</Spanish>
+            <Spanish>¡Debes estar a menos de 15 m del helicóptero y viéndolo!</Spanish>
             <Chinese>你必须在直升机 15m 以内并看它！</Chinese>
             <Chinesesimp>你必须在直升机 15m 以内并注视它！</Chinesesimp>
             <Czech>Musíte být v rámci 15m od helikoptéry a dívat se na ni!</Czech>
@@ -320,7 +320,7 @@
             <English>Attachable Helistretcher</English>
             <Polish>Nosze śmigłowcowe</Polish>
             <German>Anbringbare Helitrage</German>
-            <Spanish>Helicamilla acoplable</Spanish>
+            <Spanish>Camilla de helicóptero adjuntable</Spanish>
             <Chinese>可连接直升机</Chinese>
             <Chinesesimp>可连接担架</Chinesesimp>
             <Czech>Připevnitelná helinosítka</Czech>
@@ -335,7 +335,7 @@
             <English>Allows you to attach a stretcher to a helicopter(Double click)</English>
             <Polish>Pozwala podczepić nosze do śmigłowca(Podwójne kliknięcie)</Polish>
             <German>Ermöglicht das Anbringen einer Trage am Hubschrauber (Doppelklick)</German>
-            <Spanish>Le permite colocar una camilla en helicóptero (doble clic)</Spanish>
+            <Spanish>Le permite adjuntar una camilla a un helicóptero (doble clic)</Spanish>
             <Chinese>允许您在直升机上附加担架（双击）</Chinese>
             <Chinesesimp>允许您在直升机上附加担架（双击）</Chinesesimp>
             <Czech>Umožňuje připevnit nosítka na helikoptéru(Dvojtým kliknutím)</Czech>
@@ -355,6 +355,7 @@
             <French>Avertissement d'addon incompatible</French>
             <Italian>Avviso di addon incompatibile.</Italian>
             <Polish>Ostrzeżenie o niekompatybilnym modzie</Polish>
+            <Spanish>Advertencia: Addon incompatible</Spanish>
         </Key>
         <Key ID="STR_kat_misc_SETTING_incompatibilityWarning_Desc">
             <English>Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that could negatively affect correct functionality of KAT are used.\n Warning disappears after 60 seconds.</English>
@@ -365,6 +366,7 @@
             <French>Affiche un avertissement et ajoute une ligne au log RPT si des addons incompatibles (Listés par nous - les développeurs) qui pourraient affecter négativement le fonctionnement correct de KAT sont utilisés.\n L'avertissement disparaîtra après 60 secondes.  </French>
             <Italian>Mostra un allerta e aggiungi una line al file RPT log se l'addon è incompatibile (elencato da noi sviluppatori) che possa influenzare negativamente sul corretto utilizzo della KAT \n L'avviso sparisce dopo 60 secondi.</Italian>
             <Polish>Pokazuje error i dodaje log do RPT jeśli niekompatybilny mod (podane przez developerów KAT), który może powodować błędy jest używany. \nPowiadomienie znika po 60 sekundach.</Polish>
+            <Spanish>Muestra una advertencia y agrega una lina al log RPT si hay addons incompatibles(Listados por los desarolladores) que podrian afectar negativamente el funcionamiento de KAT.\n La advertencia desaparece 60 segundos mas tarde.</Spanish>
         </Key>
         <Key ID="STR_kat_misc_incompatibilityWarning_Desc">
             <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
@@ -375,6 +377,7 @@
             <French>[AVERTISSEMENT KAM] Un(des) addon(s) incompatible(s) pouvant affecter le fonctionnement correct de KAT ont été détectés. L'équipe de développement de KAT - Advanced Medical REWRITE recommande fortement de retirer ces addons : %1 </French>
             <Italian>[AVVISO KAM]  E' stata rilevato almeno un addon che potrebbe influenzare negativamente il corretto funzionamenot della KAT. Gli sviluppatori della KAT consigliando vivamente di rumuovere questi addons.</Italian>
             <Polish>[KAM WARNING] Niekompatybilny mod, który może wywoływać błędy został wykryty. Zespół deweloperski KAT - Advanced Medical REWRITE stanowczo odradza użycie następujących modów: %1 </Polish>
+            <Spanish>[ADVERTENCIA DE KAM] Addon(s) incompatibles que podrían afectar negativamente el funcionamiento del mod fueron detectados. El equipo de desarollo de KAT - Advanced Medical REWRITE recomienda fuertemente de remover estos addons. %1</Spanish>
         </Key>
         <Key ID="STR_kat_misc_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -386,18 +389,21 @@
             <German>Grundeinstellungen</German>
             <Chinesesimp>基础设置</Chinesesimp>
             <Japanese>基本設定</Japanese>
+            <Spanish>Parámetros básicos</Spanish>
         </Key>
         <Key ID="STR_kat_misc_SETTING_arsenalMedCategory">
             <English>Arsenal Medical category</English>
             <Czech>Zdravotnická kategorie arzenálu</Czech>
             <French>Catégorie médicale pour l'arsenal</French>
             <Japanese>武器庫医療分類</Japanese>
+            <Spanish>Categoria médica en Arsenal</Spanish>
         </Key>
         <Key ID="STR_kat_misc_SETTING_arsenalMedCategory_Desc">
             <English>Enable medical category for arsenal and relocate all medical related items to it?</English>
             <Czech>Povolit zdravotnickou kategorii pro arzenál a přemístit do ní všechny zdravotnické věci?</Czech>
             <French>Active la catégorie médicale pour l'arsenal et y affecte tous les objets médicaux ?</French>
             <Japanese>武器庫の医療分類を有効にして、すべての医療関連アイテムをそこに再配置しますか?</Japanese>
+            <Spanish>Habilitar la categoría médica para el arsenal y mover todos los elementos médicos a este?</Spanish>
         </Key>
     </Package>
 </Project>

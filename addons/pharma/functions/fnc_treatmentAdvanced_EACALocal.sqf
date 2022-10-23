@@ -17,23 +17,24 @@
 
 params ["_patient"];
 
-private _IVsite = _patient getVariable [QGVAR(IVsite), 0];
+private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
+private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+private _IVactual = _IVarray select _partIndex;
+private _block = false;
 
-if (_IVsite > 1) then {
+if (_IVactual > 1) then {
     private _randomNumber = random 100;
-    private _flush = _patient getVariable [QGVAR(IVflush), false];
-    private _block = _patient getVariable [QGVAR(IVblock), false];
 
-    if !(_flush) then {
+    if (_IVactual != 4) exitWith {
         if (_randomNumber < GVAR(blockChance)) then {
+            _IVarray set [_partIndex, 3];
+            _patient setVariable [QGVAR(IV), _IVarray, true];
             _block = true;
-            _patient setVariable [QGVAR(IVblock), true, true];
         };
     };
 
-    if (_block) exitWith {};
-
-    _patient setVariable [QGVAR(IVflush), false, false];
+    _IVarray set [_partIndex, 2];
+    _patient setVariable [QGVAR(IV), _IVarray, true];
 };
 
 [{
@@ -48,7 +49,7 @@ if (_IVsite > 1) then {
     };
 
     private _random = random 750;
-    private _ph = (_patient getVariable [QGVAR(ph), 1500]) - 750;
+    private _ph = (_patient getVariable [QGVAR(pH), 1500]) - 750;
 
     if (_random <= _ph) then {
         private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);

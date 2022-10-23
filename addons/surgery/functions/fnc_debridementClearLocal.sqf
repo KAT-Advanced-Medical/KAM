@@ -42,3 +42,7 @@ _patient setVariable [QGVAR(debridement), _debridement, true];
     };
 
 } forEach GET_BANDAGED_WOUNDS(_patient);
+
+[_patient] call ace_medical_engine_fnc_updateDamageEffects;
+[_patient] call ace_medical_engine_fnc_updateWoundBleedLoss;
+
