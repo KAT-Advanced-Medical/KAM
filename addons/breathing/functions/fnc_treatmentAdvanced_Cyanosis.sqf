@@ -6,6 +6,7 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <NUMBER>
  *
  * Return Value:
  * None
@@ -16,12 +17,6 @@
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["_medic", "_patient", "_bodyPart"];
 
-if (local _target) then {
-    ["treatmentCyanosis", [_player, _target]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentCyanosis", [_player, _target], _target] call CBA_fnc_targetEvent;
-};
-
-true;
+[QGVAR(cyanosisLocal), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;

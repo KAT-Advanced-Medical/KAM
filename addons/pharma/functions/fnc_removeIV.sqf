@@ -10,7 +10,7 @@
  * 2: Body Part <STRING>
  *
  * Return Value:
- * None
+ * Remove IV <BOOLEAN>
  *
  * Example:
  * [player, cursorObject, "LeftLeg"] call kat_pharma_fnc_removeIV;
@@ -21,10 +21,11 @@
 params ["_medic", "_patient", "_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
-private _IV = _patient getVariable [QGVAR(IVsite), 0];
+private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+private _IVactual = _IVarray select _partIndex;
 private _return = false;
 
-if ((_IV isEqualTo _partIndex) && (_patient getVariable [QGVAR(IVplaced), false])) then {
+if (_IVactual > 0) then {
     _return = true;
 };
 

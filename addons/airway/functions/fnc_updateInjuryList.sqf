@@ -38,19 +38,21 @@ if (IS_BLEEDING(_target)) then {
     _entries pushBack [localize "STR_ACE_medical_gui_Status_Bleeding", [1, 0, 0, 1]];
 };
 
-// Give a qualitative description of the blood volume lost
-switch (GET_HEMORRHAGE(_target)) do {
-    case 1: {
-        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood1", [1, 1, 0, 1]];
-    };
-    case 2: {
-        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood2", [1, 0.67, 0, 1]];
-    };
-    case 3: {
-        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood3", [1, 0.33, 0, 1]];
-    };
-    case 4: {
-        _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood4", [1, 0, 0, 1]];
+if(ace_medical_gui_showBloodLossEntry) then {
+    // Give a qualitative description of the blood volume lost
+    switch (GET_HEMORRHAGE(_target)) do {
+        case 1: {
+            _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood1", [1, 1, 0, 1]];
+        };
+        case 2: {
+            _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood2", [1, 0.67, 0, 1]];
+        };
+        case 3: {
+            _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood3", [1, 0.33, 0, 1]];
+        };
+        case 4: {
+            _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood4", [1, 0, 0, 1]];
+        };
     };
 };
 
@@ -214,16 +216,16 @@ if (_totalIvVolume >= 1) then {
 };
 
 //Handle IV placement
-private _placed = _target getVariable [QEGVAR(pharma,IVplaced), false];
-private _site = _target getVariable [QEGVAR(pharma,IVsite), 0];
+private _placed = _target getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0]];
+private _IVactual = _placed select _selectionN;
 
-if (_placed && {_site == _selectionN}) then {
-    if (_site > 1) then {
-        private _text = format ["STR_kat_pharma_%1_Display", "IV_16"];
-        _woundEntries pushback [localize _text, [0.3, 0.3, 0.5, 1]];
-    } else {
+if (_IVactual > 0) then {
+    if (_IVactual == 1) then {
         private _text = format ["STR_kat_pharma_%1_Display", "IO_45"];
-        _woundEntries pushback [localize _text, [0.3, 0.3, 0.5, 1]];
+        _entries pushBack [localize _text, [0.3, 0.6, 0.3, 1]];
+    } else {
+        private _text = format ["STR_kat_pharma_%1_Display", "IV_16"];
+        _entries pushBack [localize _text, [0.3, 0.6, 0.3, 1]];
     };
 };
 

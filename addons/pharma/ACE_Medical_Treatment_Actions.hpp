@@ -6,18 +6,48 @@ class ACE_Medical_Treatment_Actions {
     class Morphine;
     class CheckPulse;
     class CPR;
+    class Defibrillator;
+    class Defibrillator_AED_X_Vehicle;
 
     class BloodIV: BasicBandage {
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        medicRequired = QUOTE(ace_medical_medicIV);
-        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(RequireInsIV)));
+        medicRequired = QUOTE(ace_medical_treatment_medicIV);
+        condition = QUOTE(!(GVAR(RequireInsIV)) || FUNC(removeIV));
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 800, 12] call kat_pharma_fnc_fluid;";
+    };
+    class BloodIV_500: BloodIV {
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 400, 8] call kat_pharma_fnc_fluid;";
+    };
+    class BloodIV_250: BloodIV {
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 200, 4] call kat_pharma_fnc_fluid;";
+    };
+    class SalineIV: BloodIV {
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -750, 0] call kat_pharma_fnc_fluid;";
+    };
+    class SalineIV_500: SalineIV {
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -350, 0] call kat_pharma_fnc_fluid;";
+    };
+    class SalineIV_250: SalineIV {
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, -150, 0] call kat_pharma_fnc_fluid;";
+    };
+    class PlasmaIV: BloodIV {
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 500, 15] call kat_pharma_fnc_fluid;";
+    };
+    class PlasmaIV_500: PlasmaIV {
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 250, 10] call kat_pharma_fnc_fluid;";
+    };
+    class PlasmaIV_250: PlasmaIV {
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 100, 5] call kat_pharma_fnc_fluid;";
+    };
+    class Epinephrine: Morphine{
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
     class Painkillers: Morphine {
         displayName = CSTRING(Inject_Box_Painkillers);
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         items[] = {};
-        callbackSuccess = QUOTE([ARR_5('kat_Painkiller', _medic, _patient, _bodyPart, 'Painkillers')] call FUNC(removeItemfromMag); [_patient] call EFUNC(circulation,wrongBloodTreatment););
+        callbackSuccess = QFUNC(treatmentAdvanced_Painkillers);
         condition = "[_medic, 'kat_Painkiller'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Painkiller'] call ace_common_fnc_hasMagazine";
         litter[] = {};
         icon = QPATHTOF(ui\icon_painkillers_action.paa);
@@ -32,100 +62,158 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = 0;
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_Carbonate);
+        treatmentTime = QGVAR(treatmentTime_Carbonate);
         items[] = {};
+        litter[] = {};
         condition = "[_medic, 'kat_Carbonate'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Carbonate'] call ace_common_fnc_hasMagazine";
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Carbonate')] call FUNC(treatmentAdvanced_Carbonate));
+        callbackSuccess = QFUNC(treatmentAdvanced_Carbonate);
     };
     class Naloxone: Carbonate {
         displayName = CSTRING(Take_Naloxone);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_Naloxone);
+        treatmentTime = QGVAR(treatmentTime_Naloxone);
         items[] = {"kat_naloxone"};
-        condition = QGVAR(naloxoneActive);
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Naloxone')] call FUNC(treatmentAdvanced_Naloxone));
+        condition = "true";
+        callbackSuccess = QFUNC(treatmentAdvanced_Naloxone);
     };
-    class TXA: Carbonate {
+    class EACA: Carbonate {
+        displayName = CSTRING(Take_EACA);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_EACA);
+        treatmentTime = QGVAR(treatmentTime_EACA);
+        items[] = {"kat_EACA"};
+        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
+        callbackSuccess = QFUNC(treatmentAdvanced_EACA);
+    };
+    class TXA: EACA {
         displayName = CSTRING(Take_TXA);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = QGVAR(PushTime);
+        medicRequired = QGVAR(medLvl_TXA);
+        treatmentTime = QGVAR(treatmentTime_TXA);
         items[] = {"kat_TXA"};
-        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && GVAR(txaActive) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_TXA));
+        callbackSuccess = QFUNC(treatmentAdvanced_TXA);
     };
-    class Norepinephrine: Carbonate {
+    class SalineFlush: Carbonate {
+        displayName = CSTRING(Saline_Flush);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = 1;
+        treatmentTime = 3;
+        items[] = {};
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(salineCheck));
+        callbackSuccess = QFUNC(treatmentAdvanced_Flush);
+    };
+    class Inspect: Carbonate {
+        displayName = CSTRING(Inspect_Catheter);
+        category = "examine";
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = 1;
+        treatmentTime = 2;
+        items[] = {};
+        condition = QFUNC(removeIV);
+        callbackSuccess = QFUNC(inspectCatheter);
+        animationMedic = "";
+        animationMedicProne = "";
+    };
+    class BreathCheck: Carbonate {
+        displayName = CSTRING(Check_Breath);
+        category = "examine";
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 1;
+        medicRequired = 1;
+        treatmentTime = 2;
+        items[] = {};
+        condition = true;
+        callbackSuccess = QFUNC(inspectBreath);
+        animationMedic = "";
+        animationMedicProne = "";
+    };
+    class Norepinephrine: EACA {
         displayName = CSTRING(Take_Norep);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = QGVAR(PushTime);
+        medicRequired = QGVAR(medLvl_Norepinephrine);
+        treatmentTime = QGVAR(treatmentTime_Norepinephrine);
         items[] = {"kat_norepinephrine"};
-        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
-        patientStateCondition = 0;
-        callbackSuccess = "ace_medical_treatment_fnc_medication";
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
-    class Phenylephrine: Carbonate {
+    class Phenylephrine: EACA {
         displayName = CSTRING(Take_Phenyl);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = QGVAR(PushTime);
+        medicRequired = QGVAR(medLvl_Phenylephrine);
+        treatmentTime = QGVAR(treatmentTime_Phenylephrine);
         items[] = {"kat_phenylephrine"};
-        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
-        patientStateCondition = 0;
-        callbackSuccess = "ace_medical_treatment_fnc_medication";
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
-    class Nitroglycerin: Carbonate {
+    class Nitroglycerin: EACA {
         displayName = CSTRING(Take_Nitro);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = QGVAR(PushTime);
+        medicRequired = QGVAR(medLvl_Nitroglicerin);
+        treatmentTime = QGVAR(treatmentTime_Nitroglycerin);
         items[] = {"kat_nitroglycerin"};
-        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
-        patientStateCondition = 0;
-        callbackSuccess = "ace_medical_treatment_fnc_medication";
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
-    class Amiodarone: Carbonate {
+    class Amiodarone: EACA {
         displayName = CSTRING(Take_Amiodarone);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_Amiodarone);
+        treatmentTime = QGVAR(treatmentTime_Amiodarone);
         items[] = {"kat_amiodarone"};
-        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Amiodarone')] call FUNC(treatmentAdvanced_Generic));
+        callbackSuccess = QFUNC(treatmentAdvanced_Amiodarone);
     };
-    class Lidocaine: Carbonate {
+    class Lidocaine: EACA {
         displayName = CSTRING(Take_Lidocaine);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_Lidocain);
+        treatmentTime = QGVAR(treatmentTime_Lidocaine);
         items[] = {"kat_lidocaine"};
-        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Lidocaine')] call FUNC(treatmentAdvanced_Generic));
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
-    class Atropine: Carbonate {
+    class Atropine: EACA {
         displayName = CSTRING(Take_Atropine);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_Atropine);
+        treatmentTime = QGVAR(treatmentTime_Atropine);
         items[] = {"kat_atropine"};
-        condition = QUOTE(((_patient getVariable [ARR_2(QQGVAR(IVplaced), true)]) && FUNC(removeIV)) || !(GVAR(MedicationsRequireInsIV)));
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_3(_player, _patient, 'Atropine')] call FUNC(treatmentAdvanced_Atropine));
+        callbackSuccess = QFUNC(treatmentAdvanced_Atropine);
+    };
+    class Ketamine: EACA {
+        displayName = CSTRING(Take_Ketamine);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_Ketamine);
+        treatmentTime = QGVAR(treatmentTime_Ketamine);
+        items[] = {"kat_ketamine"};
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+    };
+    class Fentanyl: EACA {
+        displayName = CSTRING(Take_Fentanyl);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_Fentanyl);
+        treatmentTime = QGVAR(treatmentTime_Fentanyl);
+        items[] = {"kat_fentanyl"};
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+    };
+    class Nalbuphine: EACA {
+        displayName = CSTRING(Take_Nalbuphine);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_Nalbuphine);
+        treatmentTime = QGVAR(treatmentTime_Nalbuphine);
+        items[] = {"kat_nalbuphine"};
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
     class Reorientation: Carbonate {
         displayName = CSTRING(Take_Reorient);
@@ -133,36 +221,35 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_Reorientation);
-        treatmentTime = 1;
+        treatmentTime = QGVAR(treatmentTime_Reorientation);
         items[] = {};
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && GVAR(Reorientation_Enable));
-        patientStateCondition = 0;
         litter[] = {};
-        callbackSuccess = QUOTE([ARR_2(_player, _patient)] call FUNC(treatmentAdvanced_Reorientation));
+        callbackSuccess = QFUNC(treatmentAdvanced_Reorientation);
         animationMedic = "AinvPknlMstpSnonWnonDnon_medicUp4";
         animationMedicProne = "AinvPknlMstpSnonWnonDnon_medicUp4";
     };
     class ApplyIV: ApplyTourniquet {
         displayName = CSTRING(Apply_IV_16);
         displayNameProgress = CSTRING(Applying_IV);
-        medicRequired = QGVAR(IVmedic);
+        medicRequired = QGVAR(medLvl_ApplyIV);
         category = "advanced";
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         items[] = {"kat_IV_16"};
-        condition = QUOTE((!(_patient getVariable [ARR_2(QQGVAR(IVplaced), false)])) && FUNC(checkIV));
-        treatmentTime = QGVAR(IVestablish);
+        condition = QUOTE(!([ARR_3(_player, _patient, _bodyPart)] call FUNC(removeIV)));
+        treatmentTime = QGVAR(treatmentTime_ApplyIV);
         callbackSuccess = QUOTE([ARR_4(_player, _patient, _bodyPart, 'kat_IV_16')] call FUNC(applyIV));
         litter[] = {};
     };
     class ApplyIO: ApplyIV {
         displayName = CSTRING(Apply_IO_45);
         displayNameProgress = CSTRING(Applying_IV);
-        medicRequired = QGVAR(IVmedic);
+        medicRequired = QGVAR(medLvl_ApplyIO);
         category = "advanced";
         allowedSelections[] = {"Body"};
         items[] = {"kat_IO_FAST"};
-        condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(IVplaced), false)]));
-        treatmentTime = QGVAR(IOestablish);
+        condition = QUOTE(!([ARR_3(_player, _patient, _bodyPart)] call FUNC(removeIV)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        treatmentTime = QGVAR(treatmentTime_ApplyIO);
         callbackSuccess = QUOTE([ARR_4(_player, _patient, _bodyPart, 'kat_IO_FAST')] call FUNC(applyIV));
         litter[] = {};
     };
@@ -174,5 +261,52 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         condition = QFUNC(removeIV);
         callbackSuccess = QFUNC(retrieveIV);
+    };
+    class Etomidate: EACA {
+        displayName = CSTRING(Etomidate_Use);
+        category = "surgery";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_Etomidate);
+        treatmentTime = QGVAR(treatmentTime_Etomidate);
+        items[] = {"kat_etomidate"};
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+    };
+    class Lorazepam: EACA {
+        displayName = CSTRING(Lorazepam_Use);
+        category = "surgery";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_Lorazepam);
+        treatmentTime = QGVAR(treatmentTime_Lorazepam);
+        items[] = {"kat_lorazepam"};
+        callbackSuccess = QFUNC(treatmentAdvanced_Lorazepam);
+    };
+    class Flumazenil: EACA {
+        displayName = CSTRING(Flumazenil_Use);
+        category = "surgery";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_Flumezenil);
+        treatmentTime = QGVAR(treatmentTime_Flumazenil);
+        items[] = {"kat_flumazenil"};
+        callbackSuccess = QFUNC(treatmentAdvanced_Flumazenil);
+    };
+    class Dialysis: Defibrillator_AED_X_vehicle {
+        displayName = CSTRING(Dialysis_DisplayName);
+        displayNameProgress = CSTRING(Dialysis_DisplayNameProgress);
+        category = "surgery";
+        items[] = {};
+        condition = QFUNC(vehicleCheckDialysis);
+        treatmentTime = 15;
+        medicRequired = 1;
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_Dialysis));
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
 };

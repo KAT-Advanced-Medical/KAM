@@ -7,7 +7,7 @@
             <Polish>ACE-Czy zaawansowane krążenie ma być włączone?</Polish>
             <Spanish>¿Activar ACE-Circulación?</Spanish>
             <Chinese>啟用ACE-血型循環系統？</Chinese>
-            <Chinesesimp>启用ACE-血型循环系统？</Chinesesimp>
+            <Chinesesimp>启用ACE-血型循环系统</Chinesesimp>
             <Czech>ACE-Circulation aktivováno?</Czech>
             <Korean>순환계통 시스템 활성화</Korean>
             <French>Ace-Circulation activé?</French>
@@ -24,7 +24,7 @@
             <Korean>고급 리듬이 활성화 되었습니까?</Korean>
             <Turkish>Gelişmiş Ritim etkinleştirildi mi?</Turkish>
             <Chinese>先进的节奏被激活？</Chinese>
-            <Chinesesimp>是否启用高级心率？</Chinesesimp>
+            <Chinesesimp>是否启用高级心率</Chinesesimp>
             <Italian>Ritmo avanzato attivato?</Italian>
             <Spanish>¿Ritmo avanzado activado?</Spanish>
             <Czech>Pokročilý rytmus aktivován?</Czech>
@@ -37,7 +37,7 @@
             <Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
             <Spanish>¿Pulso cardíaco depende de metabolismo?</Spanish>
             <Chinese>依心率來決定代謝率？</Chinese>
-            <Chinesesimp>依心率来决定代谢率？</Chinesesimp>
+            <Chinesesimp>依心率来决定代谢率</Chinesesimp>
             <Czech>Metabolismus závislý na tepu?</Czech>
             <Korean>신체대사량에 따라 심박수가 결정됩니까?</Korean>
             <French>Le pouls dépend du métabolisme?</French>
@@ -804,9 +804,9 @@
             <Turkish>Ritmi Kontrol Et</Turkish>
             <Chinese>检查节奏</Chinese>
             <Chinesesimp>检查心率曲线</Chinesesimp>
-            <French>Vérifier le pouls</French>
+            <French>Vérifier le rythme cardiaque</French>
             <Italian>Controllare il ritmo</Italian>
-            <Spanish>Comprobar el ritmo</Spanish>
+            <Spanish>Comprobar el pulso</Spanish>
             <Czech>Zkontrolovat rytmus</Czech>
             <Japanese>心室細動を確認する</Japanese>
             <Russian>Проверьте ритм</Russian>
@@ -860,7 +860,7 @@
             <English>AED X-Series</English>
             <German>AED X-Series</German>
             <Polish>AED X-Series</Polish>
-            <Spanish>DEA Serie X</Spanish>
+            <Spanish>DEA Serie-X</Spanish>
             <Chinese>自動體外心臟除顫器 X系列</Chinese>
             <Chinesesimp>AED-X除颤仪</Chinesesimp>
             <Czech>AED X-Series</Czech>
@@ -905,7 +905,7 @@
             <English>Use AED defibrillator</English>
             <German>Benutze AED Defibrillator</German>
             <Polish>Użyj defibrylatora AED</Polish>
-            <Spanish>Utilice el desfibrilador AED</Spanish>
+            <Spanish>Utilice el desfibrilador DEA</Spanish>
             <Chinese>使用AED除顫器</Chinese>
             <Chinesesimp>使用AED除颤器</Chinesesimp>
             <Czech>Použít AED defibrilátor</Czech>
@@ -920,7 +920,7 @@
             <English>Use AED Station</English>
             <German>Benutze AED Station</German>
             <Polish>Użyj stacji AED</Polish>
-            <Spanish>Utilice el estación AED</Spanish>
+            <Spanish>Utilice el estación DEA</Spanish>
             <Chinese>使用AED除顫器</Chinese>
             <Chinesesimp>使用AED除颤器</Chinesesimp>
             <Czech>Použít AED stanici</Czech>
@@ -950,7 +950,7 @@
             <English>Use AED-X defibrillator</English>
             <German>Benutze AED-X Defibrillator</German>
             <Polish>Użyj defibrylatora AED-X</Polish>
-            <Spanish>Utilice el desfibrilador AED-X</Spanish>
+            <Spanish>Utilice el desfibrilador DEA-X</Spanish>
             <Chinese>使用AED-X除顫器</Chinese>
             <Chinesesimp>使用AED-X除颤器</Chinesesimp>
             <Czech>Použít AED-X defibrilátor</Czech>
@@ -965,7 +965,7 @@
             <English>Remove monitoring</English>
             <German>Entferne Überwachung</German>
             <Polish>Przestań monitorować</Polish>
-            <Spanish>Quitar monitoreo</Spanish>
+            <Spanish>Remover monitoreo</Spanish>
             <Chinese>移除監控</Chinese>
             <Chinesesimp>移除监控</Chinesesimp>
             <Czech>Odstranit monitorování</Czech>
@@ -1025,7 +1025,7 @@
             <English>Using AED-X defibrillator</English>
             <German>Benutze AED-X Defibrillator</German>
             <Polish>Korzystanie z defibrylatora AED-X</Polish>
-            <Spanish>Yo uso un desfibrilador AED-X</Spanish>
+            <Spanish>Usando el desfibrilador DEA-X</Spanish>
             <Chinese>我使用AED-X除顫器</Chinese>
             <Chinesesimp>使用AED-X除颤器</Chinesesimp>
             <Czech>Používám AED-X defibrilátor</Czech>
@@ -1068,7 +1068,7 @@
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_removeSound">
             <English>Turn down volume of AED X</English>
-            <German>X-AED stumm schalten</German>
+            <German>AED-X leiser schalten</German>
             <Polish>Wycisz dźwięki AED X</Polish>
             <Spanish>Bajar el volúmen del DEA X</Spanish>
             <Chinese>降低AED X音量</Chinese>
@@ -1083,7 +1083,7 @@
         </Key>
         <Key ID="STR_KAT_circulation_X_Action_addSound">
             <English>Turn up volume of AED X</English>
-            <German>X-AED laut schalten</German>
+            <German>AED-X lauter schalten</German>
             <Polish>Włącz dźwięki AED X</Polish>
             <Spanish>Subir el volúmen del DEA X</Spanish>
             <Chinese>提高AED X音量</Chinese>
@@ -1145,7 +1145,7 @@
             <English>Place AED</English>
             <German>AED platzieren</German>
             <Polish>Połóż AED</Polish>
-            <Spanish>Sitio AED</Spanish>
+            <Spanish>Colocar DEA</Spanish>
             <Chinese>打開血型相容表</Chinese>
             <Chinesesimp>放置AED</Chinesesimp>
             <Czech>Místo AED</Czech>
@@ -1175,7 +1175,7 @@
             <English>Blood groups cheat sheet</English>
             <German>Blutgruppentabelle</German>
             <Polish>Tabela grup krwi</Polish>
-            <Spanish>Tabla de grupos sanguíneos</Spanish>
+            <Spanish>Tabla de compatibilidad sanguíneos</Spanish>
             <Chinese>血型相容表</Chinese>
             <Chinesesimp>血型相容表</Chinesesimp>
             <Czech>tahák krevních skupin</Czech>
@@ -1222,7 +1222,7 @@
             <Chinese>AED使用場合</Chinese>
             <Chinesesimp>AED使用场合</Chinesesimp>
             <Polish>Miejsca użycia AED</Polish>
-            <Spanish>Ubicación del DAE</Spanish>
+            <Spanish>Ubicación del DEA</Spanish>
             <Czech>Oblasti pro AED</Czech>
             <Korean>자동제세동기 배치</Korean>
             <French>Lieux de l'AED</French>
@@ -1237,7 +1237,7 @@
             <Chinese>哪裡可以使用AED?</Chinese>
             <Chinesesimp>哪里可以使用AED?</Chinesesimp>
             <Polish>Gdzie można użyć AED?</Polish>
-            <Spanish>¿Dónde se puede usar el DAE?</Spanish>
+            <Spanish>¿Dónde se puede usar el DEA?</Spanish>
             <Czech>Kde může být AED použito?</Czech>
             <Korean>자동제세동기가 어디에 사용되겠나요?</Korean>
             <French>Où l'AED peut être utilisé?</French>
@@ -1279,8 +1279,8 @@
         <Key ID="STR_ACE_Medical_Treatment_Activity_AED">
             <English>%1 performed AED</English>
             <Polish>%1 wykonał cykl AED</Polish>
-            <German>%1 hat ein AED durchgeführt</German>
-            <Spanish>%1 realicó AED</Spanish>
+            <German>%1 hat den AED benutzt</German>
+            <Spanish>%1 utilizó el DEA</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
             <Chinesesimp>%1 已使用AED</Chinesesimp>
             <Czech>%1 použito AED</Czech>
@@ -1294,8 +1294,8 @@
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDS">
             <English>%1 performed AED Station</English>
             <Polish>%1 wykonał cykl AED Station</Polish>
-            <German>%1 hat ein AED Station durchgeführt</German>
-            <Spanish>%1 realicó AED Station</Spanish>
+            <German>%1 hat die AED Station benutzt</German>
+            <Spanish>%1 utilizó la estación DEA</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
             <Chinesesimp>%1 已使用固定式AED</Chinesesimp>
             <Czech>%1 použita AED stanice</Czech>
@@ -1309,8 +1309,8 @@
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDX">
             <English>%1 performed AED-X</English>
             <Polish>%1 wykonał cykl AED-X</Polish>
-            <German>%1 hat ein AED-X durchgeführt</German>
-            <Spanish>%1 realicó AED-X</Spanish>
+            <German>%1 hat den AED-X benutzt</German>
+            <Spanish>%1 utilizó AED-X</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
             <Chinesesimp>%1 已使用AED-X</Chinesesimp>
             <Czech>%1 použito AED-X</Czech>
@@ -1321,41 +1321,51 @@
             <Italian>%1 ha utilizzato un DAE-X</Italian>
             <Japanese>%1 はAED-Xを実行しました</Japanese>
         </Key>
-        <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED_X">
-            <English>Success chance for AED-X</English>
-            <Polish>Szansa na udaną defybrilację dla AED-X</Polish>
-            <German>Erfolgsrate für AED-X</German>
-            <Spanish>Posibilidad de éxito para AED-X</Spanish>
-            <Chinese>AED-X成功的機會</Chinese>
-            <Chinesesimp>AED-X成功的几率</Chinesesimp>
-            <Czech>Šance úspěchu pro AED-X</Czech>
-            <Korean>X-시리즈 AED 성공 확률</Korean>
-            <French>Chances de succès pour l'AED-X</French>
-            <Turkish>AED-X için başarı şansı</Turkish>
-            <Russian>Шанс на успех для AED-X</Russian>
-            <Italian>Probabilità di successo del DAE-X</Italian>
-            <Japanese>AED-Xの蘇生成功率</Japanese>
+        <Key ID="STR_KAT_circulation_AED_X_MaxChance">
+            <English>Max Success chance for AED-X</English>
+            <Italian>Massima probabilità di successo per DAE-X</Italian>
+            <Czech>Max šance úspěchu pro AED-X</Czech>
+            <French>Chance maximale de succès de l'AED-X</French>
+            <Korean>X-시리즈 AED의 최대 성공 확률</Korean>
+            <German>Maximale Erfolgschance für den AED-X</German>
+            <Japanese>AED-Xの最大成功率</Japanese>
+            <Spanish>Probabilidad máxima de éxito para DEA-X</Spanish>
         </Key>
-        <Key ID="STR_KAT_circulation_SUCESSCHANCE_AED">
-            <English>Success chance for AED</English>
-            <Polish>Szansa na udaną defybrilację dla AED</Polish>
-            <German>Erfolgsrate für AED</German>
-            <Spanish>Posibilidad de éxito para AED</Spanish>
-            <Chinese>AED成功的機會</Chinese>
-            <Chinesesimp>AED成功的几率</Chinesesimp>
-            <Czech>Šance úspěchu pro AED</Czech>
-            <Korean>자동제세동기 성공 확률</Korean>
-            <French>Chances de succès pour l'AED</French>
-            <Turkish>AED için başarı şansı</Turkish>
-            <Russian>Шанс успеха для AED</Russian>
-            <Italian>Probabilità di successo del DAE</Italian>
-            <Japanese>AEDの蘇生成功率</Japanese>
+        <Key ID="STR_KAT_circulation_AED_MaxChance">
+            <English>Max Success chance for AED</English>
+            <Italian>Massima probabilità di successo per DAE</Italian>
+            <Czech>Max šance úspěchu pro AED</Czech>
+            <French>Chance maximale de succès de l'AED</French>
+            <Korean>자동제세동기의 최대 성공 확률</Korean>
+            <German>Maximale Erfolgschance für den AED</German>
+            <Japanese>AEDの最大成功率</Japanese>
+            <Spanish>Probabilidad máxima de éxito para DEA</Spanish>
+        </Key>
+        <Key ID="STR_KAT_circulation_AED_X_MinChance">
+            <English>Min Success chance for AED-X</English>
+            <Italian>Minima probabilità di successo per DAE-X</Italian>
+            <Czech>Min šance úspěchu pro AED-X</Czech>
+            <French>Chance minimale de succès de l'AED-X</French>
+            <Korean>X-시리즈 AED의 최소 성공 확률</Korean>
+            <German>Minimale Erfolgschance für den AED-X</German>
+            <Japanese>AED-Xの最小成功確率</Japanese>
+            <Spanish>Probabilidad mínima de éxito para DEA-X</Spanish>
+        </Key>
+        <Key ID="STR_KAT_circulation_AED_MinChance">
+            <English>Min Success chance for AED</English>
+            <Italian>Minima probabilità di successo per DAE</Italian>
+            <Czech>Min šance úspěchu pro AED</Czech>
+            <French>Chance minimale de succès de l'AED</French>
+            <Korean>자동제세동기의 최소 성공 확률</Korean>
+            <German>Minimale Erfolgschance für den AED</German>
+            <Japanese>AEDの最小成功確率</Japanese>
+            <Spanish>Probabilidad mínima de éxito para DEA</Spanish>
         </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED">
             <English>Allow AED</English>
             <Polish>Ograniczenie użycia AED</Polish>
             <German>AED erlauben</German>
-            <Spanish>Permitir AED</Spanish>
+            <Spanish>Permitir DEA</Spanish>
             <Chinese>允許AED</Chinese>
             <Chinesesimp>允许AED</Chinesesimp>
             <Czech>Povolit AED</Czech>
@@ -1369,8 +1379,8 @@
         <Key ID="STR_KAT_circulation_TRAINING_LEVEL_AED">
             <English>Training level required to use an AED</English>
             <Polish>Poziom wyszkolenia wymagany do korzystania z AED</Polish>
-            <German>Benötigtes Training Level um den  AED zu nutzen</German>
-            <Spanish>Nivel de entrenamiento requerido para usar un AED</Spanish>
+            <German>Benötigtes Trainingslevel, um den AED zu nutzen</German>
+            <Spanish>Nivel de entrenamiento requerido para usar un DEA</Spanish>
             <Chinese>使用AED所需的培訓水平</Chinese>
             <Chinesesimp>使用AED所需的医疗培训水平</Chinesesimp>
             <Czech>Úroveň výcviku nutná k použití AED</Czech>
@@ -1385,7 +1395,7 @@
             <English>Allow AED-X</English>
             <Polish>Ograniczenie użycia AED-X</Polish>
             <German>AED-X erlauben</German>
-            <Spanish>Permitir AED-X</Spanish>
+            <Spanish>Permitir DEA-X</Spanish>
             <Chinese>允許AED-X</Chinese>
             <Chinesesimp>允许AED-X</Chinesesimp>
             <Czech>Povolit AED-X</Czech>
@@ -1399,8 +1409,8 @@
         <Key ID="STR_KAT_circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
             <Polish>Poziom wyszkolenia wymagany do korzystania z AED-X</Polish>
-            <German>Benötigtes Training Level um den  AED-X zu nutzen</German>
-            <Spanish>Nivel de entrenamiento requerido para usar un AED-X</Spanish>
+            <German>Benötigtes Trainingslevel, um den AED-X zu nutzen</German>
+            <Spanish>Nivel de entrenamiento requerido para usar un DEA-X</Spanish>
             <Chinese>使用AED-X所需的培訓水平</Chinese>
             <Chinesesimp>使用AED-X的医疗培训水平</Chinesesimp>
             <Czech>Úroveň výcviku nutná k použití AED-X</Czech>
@@ -1414,10 +1424,10 @@
         <Key ID="STR_KAT_circulation_DISTANCELIMIT_AED_X">
             <English>Distance limit for AED-X in meters</English>
             <Polish>Limit odległości dla AED-X w metrach</Polish>
-            <German>Distanz Grenze für den AED-X in Meter</German>
-            <Spanish>Límite de distancia para AED-X en metros</Spanish>
+            <German>Maximale Entfernung für den AED-X in Meter</German>
+            <Spanish>Límite de distancia para DEA-X en metros</Spanish>
             <Chinese>AED-X的距離限制，以米為單位</Chinese>
-            <Chinesesimp>AED-X的距离限制，以米为单位</Chinesesimp>
+            <Chinesesimp>AED-X的距离限制, 以米为单位</Chinesesimp>
             <Czech>Vzdálenostní limit pro AED-X v metrech</Czech>
             <Korean>X-시리즈 AED 사용가능거리 설정 (미터)</Korean>
             <French>Distance maximum en mètres pour l'AED-X</French>
@@ -1429,10 +1439,10 @@
         <Key ID="STR_KAT_circulation_TIMELIMIT_AED_X">
             <English>Time limit for monitor of AED-X in seconds</English>
             <Polish>Limit czasu dla monitora AED-X w sekundach</Polish>
-            <German>Zeitbegrenzung für die Werteüberwachung vom AED-X in Sekunden</German>
-            <Spanish>Límite de tiempo para monitor de AED-X en segundos</Spanish>
+            <German>Zeitlimit der Überwachung des AED-X in Sekunden</German>
+            <Spanish>Límite de tiempo para el monitor del DEA-X en segundos</Spanish>
             <Chinese>監視AED-X的時間限制（以秒為單位）</Chinese>
-            <Chinesesimp>AED-X监视的时间限制（以秒为单位）</Chinesesimp>
+            <Chinesesimp>AED-X监视的时间限制(以秒为单位)</Chinesesimp>
             <Czech>Časový limit pro monitoring pomocí AED-X v sekundách</Czech>
             <Korean>X-시리즈 AED 모니터링 시간 제한 (초)</Korean>
             <French>Limite de temps pour monitorer l'AED-X en secondes</French>
@@ -1445,7 +1455,7 @@
             <English>Deactivate Monitor while using AED-X</English>
             <Polish>Dezaktywuj monitor podczas korzystania z AED-X</Polish>
             <German>AED-X Monitor während dem defibrillieren deaktivieren</German>
-            <Spanish>Desactive el monitor mientras usa AED-X</Spanish>
+            <Spanish>Desactivar el monitor mientras usa DEA-X</Spanish>
             <Chinese>使用AED-X時停用顯示器</Chinese>
             <Chinesesimp>使用AED-X时停用显示器</Chinesesimp>
             <Czech>Deaktivovat monitoring při použití AED-X</Czech>
@@ -1460,9 +1470,9 @@
             <English>Enable different CPR chances per medical level</English>
             <Polish>Włącz różne szanse resuscytacji, zależne od wyszkolenia medycznego</Polish>
             <German>Aktiviere verschiedene HLW Erfolgsraten für verschiedene Medic Level</German>
-            <Spanish>Permita diferentes posibilidades de RCP por nivel médico</Spanish>
+            <Spanish>Permite diferentes probabilidades de RCP exitoso por nivel médico</Spanish>
             <Chinese>每個醫療級別啟用不同的CPR機會</Chinese>
-            <Chinesesimp>每个医疗培训水平启用不同的CPR几率</Chinesesimp>
+            <Chinesesimp>每个医疗水平启用不同的CPR几率</Chinesesimp>
             <Czech>Povolit různé šance pro resuscitaci dle úrovně zdravotnického výcviku</Czech>
             <Korean>의료레벨에 따라 CPR 성공 확률을 다르게 하도록 설정</Korean>
             <French>Activer différentes chances de réussite de RCP par niveau médical </French>
@@ -1471,50 +1481,77 @@
             <Russian>Включить разные шансы СЛР для каждого медицинского уровня</Russian>
             <Japanese>医療レベルごとにCPRの成功率を変更する</Japanese>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DOCTOR">
-            <English>CPR Chance for Doctors</English>
-            <Polish>Szansa na udaną resuscytację dla doktorów</Polish>
-            <German>HLW Erfolgsrate für Doktoren</German>
-            <Spanish>Posibilidad de RCP para médicos</Spanish>
-            <Chinese>醫生的CPR機會</Chinese>
-            <Chinesesimp>医生的CPR几率</Chinesesimp>
-            <Czech>Šance resuscitace pro doktory</Czech>
-            <Korean>군의관 CPR 성공 확률</Korean>
-            <French>Chances de RCP pour les Docteurs</French>
-            <Turkish>Doktorlar için CPR Şansı</Turkish>
-            <Italian>Probabilità di RCP per i dottori</Italian>
-            <Russian>Шанс СЛР для врачей</Russian>
-            <Japanese>医師のCPR蘇生成功率</Japanese>
+        <Key ID="STR_KAT_circulation_CPR_MaxChance_Doctor">
+            <English>Max CPR Chance for Doctors</English>
+            <Italian>Massima probabilità RCP per i dottori.</Italian>
+            <Czech>Max šance úspěchu resuscitace pro Doktory</Czech>
+            <French>Chance maximale de succès de la RCP pour les médecins</French>
+            <Polish>Maksymalna szansa CPR dla Doktorów</Polish>
+            <Korean>군의관의 최대 CPR 확률</Korean>
+            <German>Maximale HLW-Erfolgsrate für Ärzte</German>
+            <Chinesesimp>医生的最大心肺复苏几率</Chinesesimp>
+            <Japanese>医師の最大CPR成功率</Japanese>
+            <Spanish>Probabilidad exitosa max. de RCP para doctores</Spanish>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_REGULARMEDIC">
-            <English>CPR Chance for Regular medics</English>
-            <Polish>Szansa na udaną resuscytację dla zwykłych medyków</Polish>
-            <German>HLW Erfolgsrate für normale Medics</German>
-            <Spanish>Posibilidad de RCP para médicos regulares</Spanish>
-            <Chinese>常規醫生的CPR機會</Chinese>
-            <Chinesesimp>军医的CPR几率</Chinesesimp>
-            <Czech>Šance resuscitace pro regulérní zdravotníky</Czech>
-            <Korean>의무병 CPR 성공 확률</Korean>
-            <French>Chances de RCP pour les médecins</French>
-            <Turkish>İlk yardım uzmanları için CPR Şansı</Turkish>
-            <Italian>Probabilità di RCP per i medici</Italian>
-            <Russian>Шанс СЛР для обычных медиков</Russian>
-            <Japanese>衛生兵のCPR蘇生成功率</Japanese>
+        <Key ID="STR_KAT_circulation_CPR_MaxChance_RegularMedic">
+            <English>Max CPR Chance for Regular medics</English>
+            <Italian>Massima probabilità RCP per i medici.</Italian>
+            <Czech>Max šance úspěchu resuscitace Polní zdravotníky</Czech>
+            <French>Chance maximale de succès de la RCP pour les infirmiers</French>
+            <Polish>Maksymalna szansa CPR dla Medyków</Polish>
+            <Korean>의무병의 최대 CPR 확률</Korean>
+            <German>Maximale HLW-Erfolgsrate für reguläre Sanitäter</German>
+            <Chinesesimp>军医的最大心肺复苏几率</Chinesesimp>
+            <Japanese>衛生兵の最大CPR成功率</Japanese>
+            <Spanish>Probabilidad exitosa max. de RCP para médicos</Spanish>
         </Key>
-        <Key ID="STR_KAT_circulation_SETTING_CPR_CHANCE_DEFAULT">
-            <English>CPR Chance for Default</English>
-            <Polish>Szansa resuscytacji domyślnie</Polish>
-            <German>Standard HLW Erfolgsrate</German>
-            <Spanish>Posibilidad de RCP por incumplimiento</Spanish>
-            <Chinese>預設CPR機會</Chinese>
-            <Chinesesimp>预设CPR几率</Chinesesimp>
-            <Czech>Šance resuscitace pro základní</Czech>
-            <Korean>일반 전투병 CPR 성공 확률</Korean>
-            <French>Chances de RCP par défaut</French>
-            <Turkish>Varsayılan CPR Şansı</Turkish>
-            <Italian>Probabilità di RCP per default</Italian>
-            <Russian>Шанс СЛР по умолчанию</Russian>
-            <Japanese>デフォルトのCPR蘇生成功率</Japanese>
+        <Key ID="STR_KAT_circulation_CPR_MaxChance_Default">
+            <English>Max CPR Chance for Default</English>
+            <Italian>Massima probabilità RCP per i default.</Italian>
+            <Czech>Max šance úspěchu resuscitace pro Základní</Czech>
+            <French>Chance maximale de succès de la RCP par défaut</French>
+            <Polish>Maksymalna szansa domyślnie</Polish>
+            <Korean>일반병의 최대 CPR 확률</Korean>
+            <German>Maximale Standard HLW-Erfolgsrate</German>
+            <Chinesesimp>默认的最大心肺复苏几率</Chinesesimp>
+            <Japanese>一般兵の最大CPR成功率</Japanese>
+            <Spanish>Probabilidad exitosa max. de RCP para el resto</Spanish>
+        </Key>
+        <Key ID="STR_KAT_circulation_CPR_MinChance_Doctor">
+            <English>Min CPR Chance for Doctors</English>
+            <Italian>Minima probabilità RCP per i dottori.</Italian>
+            <Czech>Min šance úspěchu resuscitace pro Doktory</Czech>
+            <French>Chance minimale de succès de la RCP pour les médecins</French>
+            <Polish>Minimalna szansa CPR dla Doktorów</Polish>
+            <Korean>군의관의 최소 CPR 확률</Korean>
+            <German>Minimale HLW-Erfolgsrate für Ärzte</German>
+            <Chinesesimp>医生的最小心肺复苏几率</Chinesesimp>
+            <Japanese>医師の最小CPR成功率</Japanese>
+            <Spanish>Probabilidad exitosa min. de RCP para doctores</Spanish>
+        </Key>
+        <Key ID="STR_KAT_circulation_CPR_MinChance_RegularMedic">
+            <English>Min CPR Chance for Regular medics</English>
+            <Italian>Minima probabilità RCP per i medici.</Italian>
+            <Czech>Min šance úspěchu resuscitace Polní zdravotníky</Czech>
+            <French>Chance minimale de succès de la RCP pour les infirmiers</French>
+            <Polish>Minimalna szansa CPR dla Medyków</Polish>
+            <Korean>의무병의 최소 CPR 확률</Korean>
+            <German>Minimale HLW-Erfolgsrate für reguläre Sanitäter</German>
+            <Chinesesimp>军医的最小心肺复苏几率</Chinesesimp>
+            <Japanese>衛生兵の最小CPR成功率</Japanese>
+            <Spanish>Probabilidad exitosa min. de RCP para médicos</Spanish>
+        </Key>
+        <Key ID="STR_KAT_circulation_CPR_MinChance_Default">
+            <English>Min CPR Chance for Default</English>
+            <Italian>Minima probabilità RCP per i default.</Italian>
+            <Czech>Min šance úspěchu resuscitace pro Základní</Czech>
+            <French>Chance minimale de succès de la RCP par défaut</French>
+            <Polish>Minimalna szansa CPR domyślnie</Polish>
+            <Korean>일반병의 최소 CPR 확률</Korean>
+            <German>Minimale Standard HLW-Erfolgsrate</German>
+            <Chinesesimp>默认的最小心肺复苏几率</Chinesesimp>
+            <Japanese>一般兵の最小CPR成功率</Japanese>
+            <Spanish>Probabilidad exitosa min. de RCP para el resto</Spanish>
         </Key>
         <Key ID="STR_KAT_circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -1552,7 +1589,7 @@
             <German>Ermöglicht die Entnahme von Blut und dessen Verwendung</German>
             <Spanish>Te permite sacar sangre y usarla. </Spanish>
             <Chinese>允许你抽血并使用它 </Chinese>
-            <Chinesesimp>允许你抽血并使用它 </Chinesesimp>
+            <Chinesesimp>允许你抽出血液并使用它 </Chinesesimp>
             <Czech>Umožňuje odebírat krev a použít ji</Czech>
             <Korean>피를 채혈해서 사용할 수 있게 합니다</Korean>
             <French>Permet de prélever du sang et de l'utiliser </French>
@@ -1572,7 +1609,7 @@
             <Korean>혈액 채혈 (500ml)</Korean>
             <French>Prélèvement de sang (500 ml) </French>
             <Turkish>Kan Al (500ml) </Turkish>
-            <Italian>Disegna sangue (500 ml) </Italian>
+            <Italian>Estrai sangue dal corpo (500 ml) </Italian>
             <Russian>Взять кровь (500 мл)</Russian>
             <Japanese>採血する (500ml)</Japanese>
         </Key>
@@ -1587,7 +1624,7 @@
             <Korean>혈액 채혈 (250ml)</Korean>
             <French>Prélèvement de sang (250 ml) </French>
             <Turkish>Kan Al (250ml) </Turkish>
-            <Italian>Disegna sangue (250 ml) </Italian>
+            <Italian>Estrai sangue dal corpo (250 ml) </Italian>
             <Russian>Взять кровь (250 мл)</Russian>
             <Japanese>採血する (250ml)</Japanese>
         </Key>
@@ -1595,9 +1632,9 @@
             <English>Drawing Blood</English>
             <Polish>Pobieranie krwi</Polish>
             <German>Entnehme Blut</German>
-            <Spanish>Dibujando sangre</Spanish>
+            <Spanish>Sacando sangre</Spanish>
             <Chinese>抽血 </Chinese>
-            <Chinesesimp>抽血中...</Chinesesimp>
+            <Chinesesimp>抽血中</Chinesesimp>
             <Czech>Odebírání krve</Czech>
             <Korean>혈액 채혈 중</Korean>
             <French>Prélèvement de sang </French>
@@ -1640,14 +1677,14 @@
             <English>Drawing time for 500ml Kit</English>
             <Polish>Czas pobierania 500ml krwi</Polish>
             <German>Blutentnahmezeit für 500ml Kit</German>
-            <Spanish>Tiempo de dibujo para el kit de 500ml  </Spanish>
+            <Spanish>Tiempo de extracción para el kit de 500ml  </Spanish>
             <Chinese>500 毫升套件的绘制时间  </Chinese>
             <Chinesesimp>500 mL的抽取时间  </Chinesesimp>
             <Czech>Odebírací čas pro 500ml Kit</Czech>
             <Korean>500ml 키트의 채혈 시간</Korean>
             <French>Temps de prélèvement pour le kit 500ml </French>
             <Turkish>500ml Kit için çizim süresi </Turkish>
-            <Italian>Tempo di disegno per Kit 500ml </Italian>
+            <Italian>Tempo per estrarre sangue dal corpo Kit 500ml </Italian>
             <Russian>Время нанесения для набора 500 мл</Russian>
             <Japanese>500mlキットの採血時間</Japanese>
         </Key>
@@ -1655,14 +1692,14 @@
             <English>Drawing time for 250ml Kit</English>
             <Polish>Czas pobierania 250ml krwi</Polish>
             <German>Blutentnahmezeit für 250ml Kit</German>
-            <Spanish>Tiempo de dibujo para el kit de 250ml </Spanish>
+            <Spanish>Tiempo de extracción para el kit de 250ml </Spanish>
             <Chinese>250 毫升套件的绘制时间 </Chinese>
             <Chinesesimp>250 mL的抽取时间  </Chinesesimp>
             <Czech>Odebírací čas pro 250ml Kit</Czech>
             <Korean>250ml 키트의 채혈 시간</Korean>
             <French>Temps de prélèvement pour le kit 250ml </French>
             <Turkish>250ml Kit için çizim süresi </Turkish>
-            <Italian>Tempo di disegno per Kit 250ml </Italian>
+            <Italian>Tempo per estrarre sangue dal corpo Kit 250ml </Italian>
             <Russian>Время нанесения для набора 250 мл</Russian>
             <Japanese>250mlキットの採血時間</Japanese>
         </Key>
@@ -1700,7 +1737,7 @@
             <English>AED Beep and Charge sound</English>
             <Polish>Dźwięki defibrylacji AED</Polish>
             <German>AED Signal- und Ladeton</German>
-            <Spanish>Sonido de carga y pitido del DEA </Spanish>
+            <Spanish>Sonidos del DEA </Spanish>
             <Chinese>AED 蜂鸣声和充电声 </Chinese>
             <Chinesesimp>AED 蜂鸣声和充电声 </Chinesesimp>
             <Czech>Zvuk AED pípání a nabíjení</Czech>
@@ -1715,7 +1752,7 @@
             <English>Enables Beep and Charge sound for AED/AED-X</English>
             <Polish>Włącza dźwięki defibrylacji AED/AED-X</Polish>
             <German>Aktiviert Signal- und Ladeton für AED/AED-X</German>
-            <Spanish>Habilita el sonido de Beep y Charge para AED / AED-X </Spanish>
+            <Spanish>Habilita el sonido de  descarga y el pitido para el DEA / DEA-X </Spanish>
             <Chinese>为 AED/AED-X 启用蜂鸣和充电声音 </Chinese>
             <Chinesesimp>为 AED/AED-X 启用蜂鸣和充电声 </Chinesesimp>
             <Czech>Zvuk AED pípání a nabíjení</Czech>
@@ -1735,11 +1772,59 @@
             <Chinesesimp>检查心率曲线</Chinesesimp>
             <Czech>Kontroluji rytmus</Czech>
             <Korean>리듬 확인하기</Korean>
-            <French>Vérification du rythme</French>
+            <French>Vérification du rythme cardiaque</French>
             <Turkish>Ritmi Kontrol Etmek</Turkish>
             <Italian>Controllando il ritmo</Italian>
             <Russian>Проверка ритма</Russian>
             <Japanese>心室細動を確認する</Japanese>
+        </Key>
+        <Key ID="STR_kat_circulation_SubCategory_Basic">
+            <English>Basic Settings</English>
+            <Polish>Podstawowe Ustawienia</Polish>
+            <Italian>Impostazioni base</Italian>
+            <Czech>Základní nastavení</Czech>
+            <French>Paramètres basiques</French>
+            <Korean>일반 설정</Korean>
+            <German>Grundeinstellungen</German>
+            <Chinesesimp>基础设置</Chinesesimp>
+            <Japanese>基本設定</Japanese>
+            <Spanish>Parámetros básicos</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_SubCategory_AED">
+            <English>AED + AED-X Settings</English>
+            <Italian>Impostazioni DAE e DAE-X</Italian>
+            <Czech>Nastavení AED + AED-X</Czech>
+            <French>Paramètres de l'AED + AED-X</French>
+            <Polish>Ustawienia dla AED + AED-X</Polish>
+            <Korean>자동제세동기 + X-시리즈 AED 설정</Korean>
+            <German>AED und AED-X Einstellungen</German>
+            <Chinesesimp>AED和AED-X设置</Chinesesimp>
+            <Japanese>AEDとAED-X設定</Japanese>
+            <Spanish>Parámetros del DEA / DEA-X</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_SubCategory_CPR">
+            <English>CPR Settings</English>
+            <Italian>Impostazioni RCP</Italian>
+            <Czech>Nastavení resuscitace</Czech>
+            <French>Paramètres de la RCP</French>
+            <Polish>Ustawienia CPR</Polish>
+            <Korean>심폐소생술 설정</Korean>
+            <German>HLW Einstellungen</German>
+            <Chinesesimp>CPR设置</Chinesesimp>
+            <Japanese>CPR設定</Japanese>
+            <Spanish>Parámetros del RCP</Spanish>
+        </Key>
+        <Key ID="STR_kat_circulation_SubCategory_BloodDraw">
+            <English>Blood draw Settings</English>
+            <Italian>Impostazioni prelievo sangue</Italian>
+            <Czech>Nastavení odběru krve</Czech>
+            <French>Paramètres des prises de sang</French>
+            <Polish>Ustawienia pobierania krwi</Polish>
+            <Korean>채혈 설정</Korean>
+            <German>Blutabnahmeeinstellungen</German>
+            <Chinesesimp>抽血设置</Chinesesimp>
+            <Japanese>採血設定</Japanese>
+            <Spanish>Parámetros de extracción de sangre</Spanish>
         </Key>
     </Package>
 </Project>

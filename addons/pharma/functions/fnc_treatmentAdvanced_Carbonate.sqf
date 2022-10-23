@@ -6,25 +6,25 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Item Classname <STRING>
+ * 2: Body Part <STRING>
+ * 3: Treatment <STRING>
+ * 4: Item User (not used) <OBJECT>
+ * 5: Used Item <STRING>
  *
  * Return Value:
- * Succesful treatment started <BOOL>
+ * None
  *
  * Example:
- * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_Carbonate;
+ * [player, cursorObject, "RightArm", classname, objNull, "kat_Carbonate"] call kat_pharma_fnc_treatmentAdvanced_Carbonate;
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_medication"];
+params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
-["kat_Carbonate", _medic, _patient, "head", "Carbonate"] call FUNC(removeItemfromMag);
+[_patient, _classname] call ace_medical_treatment_fnc_addToTriageCard;
+[_patient, "activity", LSTRING(Activity_usedItem), [[_medic] call ace_common_fnc_getName, _classname]] call ace_medical_treatment_fnc_addToLog;
 
-if (local _patient) then {
-    ["treatmentCarbonate", [_medic, _patient, _medication]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentCarbonate", [_medic, _patient, _medication], _patient] call CBA_fnc_targetEvent;
-};
-
-true;
+[_medic, 'kat_Carbonate'] call FUNC(removeItemfromMag);
+[QGVAR(medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+[QGVAR(carbonateLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;

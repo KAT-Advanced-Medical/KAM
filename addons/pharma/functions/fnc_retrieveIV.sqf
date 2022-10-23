@@ -16,22 +16,21 @@
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", "_bodyPart"];
 
-private _site = _patient getVariable [QGVAR(IVsite), 0];
+private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
+private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+private _newArray = _patient getVariable ["ace_medical_ivBags", []];
+private _IVactual = _IVarray select _partIndex;
 
-if (GVAR(IVreuse)) then {
-    if (_site isEqualTo 1) then {
-        _medic addItem "kat_IO_FAST";
-    } else {
-        _medic addItem "kat_IV_16";
-    };
+if (_IVactual == 1) then {
+    _patient addItem "kat_IO_FAST";
+} else {
+    _patient addItem "kat_IV_16";
 };
 
-_patient setVariable [QGVAR(IVplaced), false, true];
-_patient setVariable [QGVAR(IVsite), 0, true];
-_patient setVariable [QGVAR(active), false, true];
-_patient setVariable ["kat_IVPharma_PFH", nil];
+_IVarray set [_partIndex, 0];
+_patient setVariable [QGVAR(IV), _IVarray, true];
 
 private _totalIvVolume = 0;
 private _saline = 0;
@@ -39,16 +38,20 @@ private _blood = 0;
 private _plasma = 0;
 
 {
-    _x params ["_volumeRemaining", "_type"];
-    switch (_type) do {
-        case ("Saline"): {
-            _saline = _saline + _volumeRemaining;
-        };
-        case ("Blood"): {
-            _blood = _blood + _volumeRemaining;
-        };
-        case ("Plasma"): {
-            _plasma = _plasma + _volumeRemaining;
+    _x params ["_volumeRemaining", "_type", "_partIndex2"];
+    if (_partIndex2 == _partIndex) then {
+        _newArray deleteAt _forEachIndex;
+
+        switch (_type) do {
+            case ("Saline"): {
+                _saline = _saline + _volumeRemaining;
+            };
+            case ("Blood"): {
+                _blood = _blood + _volumeRemaining;
+            };
+            case ("Plasma"): {
+                _plasma = _plasma + _volumeRemaining;
+            };
         };
     };
     _totalIvVolume = _totalIvVolume + _volumeRemaining;
@@ -120,4 +123,4 @@ if (_totalIvVolume >= 1) then {
     };
 };
 
-_patient setVariable ["ace_medical_ivBags", nil, true];
+_patient setVariable ["ace_medical_ivBags", _newArray, true];

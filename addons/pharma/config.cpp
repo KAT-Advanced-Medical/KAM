@@ -16,6 +16,7 @@ class CfgPatches {
             "kat_Carbonate",
             "kat_CarbonateItem",
             "kat_naloxone",
+            "kat_EACA",
             "kat_TXA",
             "kat_X_AED",
             "kat_norepinephrine",
@@ -23,7 +24,13 @@ class CfgPatches {
             "kat_nitroglycerin",
             "kat_amiodarone",
             "kat_lidocane",
-            "kat_atropine"
+            "kat_atropine",
+            "kat_ketamine",
+            "kat_fentanyl",
+            "kat_nalbuphine",
+            "kat_flumazenil",
+            "kat_lorazepam",
+            "kat_etomidate"
         };
         magazines[] = { };
         requiredAddons[] = {
@@ -42,7 +49,7 @@ class CfgPatches {
             "cba_settings"
         };
         author = "Katalam";
-        authors[] = {"Katalam", "2LT.Mazinski"};
+        authors[] = {"Katalam", "2LT.Mazinski", "MiszczuZPolski"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };
@@ -53,6 +60,6 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgFunctions.hpp"
 #include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
-#include "ACE_Medical_Advanced.hpp"

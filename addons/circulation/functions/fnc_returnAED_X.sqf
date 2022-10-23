@@ -22,8 +22,24 @@ private _output = localize LSTRING(X_Action_Remove);
 
 _patient setVariable [QGVAR(X), false, true];
 
-if (_patient getVariable ["ace_medical_heartRate", 0] >= 40) then {
-    _patient setVariable [QGVAR(asystole), 0, true];
+private _bloodLoss = _patient getVariable ["ace_medical_bloodVolume", 6.0];
+private _asystole = _patient getVariable [QGVAR(asystole), 1];
+
+if !(GVAR(AdvRhythm)) then {
+    _patient setVariable [QGVAR(asystole), 1, true];
+    _asystole = _patient getVariable [QGVAR(asystole), 1];
+    } else {
+    if (_bloodLoss > 3.6) then {
+        _patient setVariable [QGVAR(asystole), 1, true];
+        _asystole = _patient getVariable [QGVAR(asystole), 1];
+    } else {
+        _patient setVariable [QGVAR(asystole), 2, true];
+        _asystole = _patient getVariable [QGVAR(asystole), 2];
+    };
+};
+
+if ((_patient getVariable ["ace_medical_heartRate", 0] >= 40) && GVAR(AdvRhythm)) then {
+    _patient setVariable [QGVAR(asystole), 1, true];
 };
 
 if (_AEDreturn) then {

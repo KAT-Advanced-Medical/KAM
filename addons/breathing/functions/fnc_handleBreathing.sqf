@@ -88,7 +88,11 @@ if (!local _unit) then {
             _output = -0.3 * _multiplierNegative;
 
             if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) || _breathing)) then {
-                _output = 0.15 * _multiplierPositive;
+                if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
+                    _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
+                } else {
+                    _output = 0.15 * _multiplierPositive;
+                };
             };
 
             _finalOutput = _status + _output;
