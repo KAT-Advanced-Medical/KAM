@@ -2239,5 +2239,17 @@
             <English>Performing</English>
             <Polish>Dializa w toku...</Polish>
         </Key>
+        <Key ID="STR_kat_pharma_dialysis_log">
+            <English>%1 performed dialysis</English>
+            <Chinesesimp>%1 进行了透析</Chinesesimp>
+            <Italian>%1 ha eseguito la dialisi</Italian>
+            <Polish>%1 przeprowadził dializę</Polish>
+            <Czech>%1 provedl dialýzu</Czech>
+            <French>%1 a effectué une dialyse</French>
+            <Korean>%1 이(가) 투석을 수행했습니다</Korean>
+            <German>%1 hat eine Dialyse durchgeführt</German>
+            <Japanese>%1 は透析を行いました</Japanese>
+            <Spanish>%1 realizó una dialisis</Spanish>
+        </Key>
     </Package>
 </Project>
