@@ -47,7 +47,7 @@ class BloodIV_O_500: BloodIV_500 {
 };
 class BloodIV_O_N_500: BloodIV_500 {
     displayName = CSTRING(Action_500_BloodIV_O_N);
-    items[] = {"kat_bloodIV_O_500_N"};
+    items[] = {"kat_bloodIV_O_N_500"};
     callbackSuccess = "[_medic, _patient, _bodyPart, _className, _usedItem] call kat_circulation_fnc_handleTreatment; [_patient, 400, 8] call kat_pharma_fnc_fluid;";
 };
 class BloodIV_A_500: BloodIV_500 {
@@ -57,7 +57,7 @@ class BloodIV_A_500: BloodIV_500 {
 };
 class BloodIV_A_N_500: BloodIV_500 {
     displayName = CSTRING(Action_500_BloodIV_A_N);
-    items[] = {"kat_bloodIV_A_500_N"};
+    items[] = {"kat_bloodIV_A_N_500"};
     callbackSuccess = "[_medic, _patient, _bodyPart, _className, _usedItem] call kat_circulation_fnc_handleTreatment; [_patient, 400, 8] call kat_pharma_fnc_fluid;";
 };
 class BloodIV_B_500: BloodIV_500 {
@@ -67,7 +67,7 @@ class BloodIV_B_500: BloodIV_500 {
 };
 class BloodIV_B_N_500: BloodIV_500 {
     displayName = CSTRING(Action_500_BloodIV_B_N);
-    items[] = {"kat_bloodIV_B_500_N"};
+    items[] = {"kat_bloodIV_B_N_500"};
     callbackSuccess = "[_medic, _patient, _bodyPart, _className, _usedItem] call kat_circulation_fnc_handleTreatment; [_patient, 400, 8] call kat_pharma_fnc_fluid;";
 };
 class BloodIV_AB_500: BloodIV_500 {
@@ -77,7 +77,7 @@ class BloodIV_AB_500: BloodIV_500 {
 };
 class BloodIV_AB_N_500: BloodIV_500 {
     displayName = CSTRING(Action_500_BloodIV_AB_N);
-    items[] = {"kat_bloodIV_AB_500_N"};
+    items[] = {"kat_bloodIV_AB_N_500"};
     callbackSuccess = "[_medic, _patient, _bodyPart, _className, _usedItem] call kat_circulation_fnc_handleTreatment; [_patient, 400, 8] call kat_pharma_fnc_fluid;";
 };
 class BloodIV_250;
@@ -88,7 +88,7 @@ class BloodIV_O_250: BloodIV_250 {
 };
 class BloodIV_O_N_250: BloodIV_250 {
     displayName = CSTRING(Action_250_BloodIV_O_N);
-    items[] = {"kat_bloodIV_O_250_N"};
+    items[] = {"kat_bloodIV_O_N_250"};
     callbackSuccess = "[_medic, _patient, _bodyPart, _className, _usedItem] call kat_circulation_fnc_handleTreatment; [_patient, 200, 4] call kat_pharma_fnc_fluid;";
 };
 class BloodIV_A_250: BloodIV_250 {
@@ -98,7 +98,7 @@ class BloodIV_A_250: BloodIV_250 {
 };
 class BloodIV_A_N_250: BloodIV_250 {
     displayName = CSTRING(Action_250_BloodIV_A_N);
-    items[] = {"kat_bloodIV_A_250_N"};
+    items[] = {"kat_bloodIV_A_N_250"};
     callbackSuccess = "[_medic, _patient, _bodyPart, _className, _usedItem] call kat_circulation_fnc_handleTreatment; [_patient, 200, 4] call kat_pharma_fnc_fluid;";
 };
 class BloodIV_B_250: BloodIV_250 {
@@ -108,7 +108,7 @@ class BloodIV_B_250: BloodIV_250 {
 };
 class BloodIV_B_N_250: BloodIV_250 {
     displayName = CSTRING(Action_250_BloodIV_B_N);
-    items[] = {"kat_bloodIV_B_250_N"};
+    items[] = {"kat_bloodIV_B_N_250"};
     callbackSuccess = "[_medic, _patient, _bodyPart, _className, _usedItem] call kat_circulation_fnc_handleTreatment; [_patient, 200, 4] call kat_pharma_fnc_fluid;";
 };
 class BloodIV_AB_250: BloodIV_250 {
@@ -118,7 +118,7 @@ class BloodIV_AB_250: BloodIV_250 {
 };
 class BloodIV_AB_N_250: BloodIV_250 {
     displayName = CSTRING(Action_250_BloodIV_AB_N);
-    items[] = {"kat_bloodIV_AB_250_N"};
+    items[] = {"kat_bloodIV_AB_N_250"};
     callbackSuccess = "[_medic, _patient, _bodyPart, _className, _usedItem] call kat_circulation_fnc_handleTreatment; [_patient, 200, 4] call kat_pharma_fnc_fluid;";
 };
 

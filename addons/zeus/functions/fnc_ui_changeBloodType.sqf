@@ -73,13 +73,13 @@ private _playerBloodyType = _unit getVariable [QEGVAR(circulation,bloodtype), "O
 private _select = switch (_playerBloodyType) do 
 {
     case "O+":  {0};
-      case "O-":  {1};
-     case "A+":  {2};
-      case "A-":  {3};
+    case "O-":  {1};
+    case "A+":  {2};
+    case "A-":  {3};
     case "B+":  {4};
     case "B-":  {5};
-     case "AB+":  {6};
-      case "AB-":  {7};
+    case "AB+":  {6};
+    case "AB-":  {7};
     default {0};
 };
 (_display displayCtrl 16107) lbSetCurSel _select;
@@ -95,11 +95,21 @@ private _fnc_onConfirm = {
 
     private _unit = attachedTo _logic;
     private _bloodtypeSel = lbCurSel (_display displayCtrl 16107);
-    private _bloodtype = ["O+","O-","A+","A-","B+","B-","AB+","AB-"] select _bloodtypeSel;
+    private _bloodtype = ["O","O_N","A","A_N","B","B_N","AB","AB_N"] select _bloodtypeSel;
     _unit setVariable [QEGVAR(circulation,bloodtype), _bloodtype, true];
     private _dogtagData = _unit getVariable "ace_dogtags_dogtagData";
     if(!isNil "_dogtagData") then {
-        _dogtagData set [2, _bloodtype];
+        switch (_bloodtype) do {
+            case "O": {_bloodtype = "O+"};
+            case "O_N": {_bloodtype = "O-"};
+            case "A": {_bloodtype = "A+"};
+            case "A_N": {_bloodtype = "A-"};
+            case "B": {_bloodtype = "B+"};
+            case "B_N": {_bloodtype = "B-"};
+            case "AB": {_bloodtype = "AB+"};
+            case "AB_N": {_bloodtype = "AB-"};
+        };
+        _dogtagData set [1, _bloodtype];
     };
 
     private _curBloodVol = _unit getVariable ["ace_medical_bloodVolume", 6.0];
