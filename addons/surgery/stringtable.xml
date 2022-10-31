@@ -487,11 +487,11 @@
             <Japanese>切除中</Japanese>
             <Spanish>Desbridando</Spanish>
         </Key>
-        <Key ID="STR_kat_surgery_Vacuum_DescShort">
+        <Key ID="STR_kat_surgery_Vacuum_displayName">
             <English>Dressing vacuum</English>
             <Chinesesimp>NPWT 敷料</Chinesesimp>
             <Italian>Sottovuoto per medicazione</Italian>
-            <Polish>Opatrunek próżniowy</Polish>
+            <Polish>NPWT</Polish>
             <Czech>Vakuový obvaz</Czech>
             <French>Pansement sous vide</French>
             <Korean>진공 드레싱</Korean>
@@ -499,7 +499,7 @@
             <Japanese>ドレッシングの吸引</Japanese>
             <Spanish>Vendaje al vacío</Spanish>
         </Key>
-        <Key ID="STR_kat_surgery_Vacuum_DescUse">
+        <Key ID="STR_kat_surgery_Vacuum_DescShort">
             <English>Used to completely dress and seal wounds</English>
             <Chinesesimp>用于完全包扎和密封伤口</Chinesesimp>
             <Italian>Usato per coprire e sigillare completamente le ferite</Italian>
@@ -509,12 +509,13 @@
             <German>Zum vollständigen Verbinden und Abdichten von Wunden</German>
             <Japanese>傷を完全に包んで封印するために使用</Japanese>
             <Spanish>Usado para vendar y sellar heridas completamente</Spanish>
+            <Polish>Używany do całkowitego uzdrowienia ran</Polish>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_Use">
             <English>Apply NPWT Dressing</English>
             <Chinesesimp>施用 NPWT 敷料</Chinesesimp>
             <Italian>Applicare la medicazione terapia a pressione negativa (NPWT)</Italian>
-            <Polish>Nałóż opatrunek próżniowy</Polish>
+            <Polish>Użyj zestawu NPWT</Polish>
             <Czech>Použít NPWT obvaz</Czech>
             <French>Appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용</Korean>
@@ -526,7 +527,7 @@
             <English>Applying</English>
             <Chinesesimp>施用中</Chinesesimp>
             <Italian>Applicando</Italian>
-            <Polish>Nakładanie</Polish>
+            <Polish>Używanie</Polish>
             <Czech>Používání</Czech>
             <French>Application</French>
             <Korean>적용 중</Korean>
