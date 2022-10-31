@@ -143,7 +143,7 @@ if ((isPlayer _unit) || (EGVAR(pharma,aiEnableAdvanced))) then {
                     private _random = random 1;
 
                     if (_random >= 0.5) then {
-                        [_unit, true] call ace_medical_status_fnc_setCardiacArrestState;
+                        ["ace_medical_FatalVitals", _unit] call CBA_fnc_localEvent;
                         _unit setVariable [QEGVAR(pharma,kidneyArrest), true, true];
                     };
                 };
