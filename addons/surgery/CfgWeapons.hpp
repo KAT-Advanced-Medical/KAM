@@ -48,11 +48,10 @@ class CfgWeapons {
     };
     class kat_vacuum: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(Vacuum_DescShort); //Not an error - it has the same description as display name
+        displayName = CSTRING(Vacuum_displayName); //Not an error - it has the same description as display name
         picture = QPATHTOF(ui\vacuum.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Vacuum_DescShort);
-        descriptionUse = CSTRING(Vacuum_DescUse);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 5;
         };
