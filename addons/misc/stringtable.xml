@@ -397,6 +397,7 @@
             <French>Catégorie médicale pour l'arsenal</French>
             <Japanese>武器庫医療分類</Japanese>
             <Spanish>Categoria médica en Arsenal</Spanish>
+            <Italian>Categoria medica nell'Arsenale</Italian>
         </Key>
         <Key ID="STR_kat_misc_SETTING_arsenalMedCategory_Desc">
             <English>Enable medical category for arsenal and relocate all medical related items to it?</English>
@@ -404,6 +405,7 @@
             <French>Active la catégorie médicale pour l'arsenal et y affecte tous les objets médicaux ?</French>
             <Japanese>武器庫の医療分類を有効にして、すべての医療関連アイテムをそこに再配置しますか?</Japanese>
             <Spanish>Habilitar la categoría médica para el arsenal y mover todos los elementos médicos a este?</Spanish>
+            <Italian>Abilita la categoria medica nell'arsernale e muovi tutti gli oggetti medici in questa categoria?</Italian>
         </Key>
     </Package>
 </Project>

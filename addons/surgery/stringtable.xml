@@ -360,7 +360,7 @@
         <Key ID="STR_kat_surgery_Clamp_displayName">
             <English>Clamp</English>
             <Chinesesimp>夹钳</Chinesesimp>
-            <Italian>Clampando</Italian>
+            <Italian>Pinza clamp</Italian>
             <Polish>Zacisk chirurgiczny</Polish>
             <Czech>Svorka</Czech>
             <French>Clamp</French>
@@ -372,7 +372,7 @@
         <Key ID="STR_kat_surgery_Clamp_DescShort">
             <English>Fracture Clamp</English>
             <Chinesesimp>骨折夹钳</Chinesesimp>
-            <Italian>Clamp per frattura</Italian>
+            <Italian>Pinza clamp per frattura</Italian>
             <Polish>Zaciska złamania</Polish>
             <Czech>Svorka na zlomeniny</Czech>
             <French>Clamp pour fracture</French>
@@ -443,7 +443,7 @@
         <Key ID="STR_kat_surgery_Plate_DescShort">
             <English>Bone Plate</English>
             <Chinesesimp>骨板</Chinesesimp>
-            <Italian>Piastre ossee</Italian>
+            <Italian>Placche di fissaggio osseo</Italian>
             <Polish>Płytka chirurgiczna</Polish>
             <Czech>Kostní deska</Czech>
             <French>Plaque à os</French>
