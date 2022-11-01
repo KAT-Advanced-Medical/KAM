@@ -212,7 +212,7 @@
             <French>%1 %2 la fracture sur le %3</French>
             <Korean>%1 은(는) %3 의 골절을 %2 (으)로 수행하였습니다</Korean>
             <German>%1 %2 der Bruch an der %3</German>
-            <Japanese>%1 は %3 の骨折を %2</Japanese>
+            <Japanese>%1 は %3 の骨折に %2</Japanese>
             <Spanish>%1 %2 la fractura sobre el/la %3</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_incision_log">
@@ -248,7 +248,7 @@
             <French>Echec du pansement</French>
             <Korean>상처 치료 실패</Korean>
             <German>Wundverband fehlgeschlagen</German>
-            <Japanese>創傷被覆材の失敗</Japanese>
+            <Japanese>創傷被覆に失敗しました</Japanese>
             <Spanish>Vendaje al vacío falló</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_displayName">
@@ -496,7 +496,7 @@
             <French>Pansement sous vide</French>
             <Korean>진공 드레싱</Korean>
             <German>Vakuumverband</German>
-            <Japanese>ドレッシングの吸引</Japanese>
+            <Japanese>吸引ドレッシング</Japanese>
             <Spanish>Vendaje al vacío</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_DescShort">
@@ -507,7 +507,7 @@
             <French>Utilisé pour panser et sceller compètement les plaies</French>
             <Korean>상처를 완전히 치료하고 봉합하는 데 사용됩니다</Korean>
             <German>Zum vollständigen Verbinden und Abdichten von Wunden</German>
-            <Japanese>傷を完全に包んで封印するために使用</Japanese>
+            <Japanese>傷を完全に包んで封印するために使用される</Japanese>
             <Spanish>Usado para vendar y sellar heridas completamente</Spanish>
             <Polish>Używany do całkowitego uzdrowienia ran</Polish>
         </Key>
@@ -520,7 +520,7 @@
             <French>Appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용</Korean>
             <German>NPWT-Verband anlegen</German>
-            <Japanese>NPWTドレッシングを適用する</Japanese>
+            <Japanese>陰圧閉鎖療法(NPWT)を適用する</Japanese>
             <Spanish>Colocar vendaje al vacío</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_Action">

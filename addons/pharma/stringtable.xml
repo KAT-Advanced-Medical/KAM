@@ -409,7 +409,7 @@
             <Korean>혈전 형성 촉진</Korean>
             <Turkish>Pıhtı oluşumunu teşvik eder</Turkish>
             <Czech>Podporuje tvorbu sraženin</Czech>
-            <Japanese>血液凝固を促進し、出血を抑えます。</Japanese>
+            <Japanese>血液凝固を促進し、出血を抑えます</Japanese>
             <Russian>Способствует образованию тромбов</Russian>
         </Key>
         <Key ID="STR_kat_pharma_TXA_Box_Display">
@@ -1162,7 +1162,7 @@
             <Polish>Środek wybudzający z Lorazepamu</Polish>
             <Korean>로라제팜의 반대 약물</Korean>
             <German>Antagonist zu Lorazepam</German>
-            <Japanese>ロルゼパムへの拮抗薬</Japanese>
+            <Japanese>ロラゼパムへの拮抗薬</Japanese>
             <Spanish>Contrarresta el Lorazepam</Spanish>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_DescUse">
@@ -2100,9 +2100,11 @@
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Coagulation">
             <English>Enable Coagulation</English>
+            <Japanese>血液凝固を有効にする</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Coagulation_DESC">
             <English>Enables advanced coagulation features and modifies TXA and EACA behaviour accordingly.</English>
+            <Japanese>高度な血液凝固機能を有効にし、それに応じて TXA と EACA の動作を変更します。</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_EACA_Display">
             <English>EACA</English>
@@ -2137,7 +2139,7 @@
             <German>Fördert die Gerinnungsbildung</German>
             <Chinesesimp>促进凝块形成</Chinesesimp>
             <Polish>Wspomaga powstawanie skrzepów</Polish>
-            <Japanese>血栓形成を促進する</Japanese>
+            <Japanese>血液凝固を促進し、出血を抑えます</Japanese>
             <Spanish>Favorece la coagulación</Spanish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_aiEnabled">
@@ -2234,10 +2236,12 @@
         <Key ID="STR_kat_pharma_Dialysis_DisplayName">
             <English>Perform Dialysis</English>
             <Polish>Przeprowadź Dializę</Polish>
+            <Japanese>透析を行う</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Dialysis_DisplayNameProgress">
             <English>Performing</English>
             <Polish>Dializa w toku...</Polish>
+            <Japanese>実施中</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_dialysis_log">
             <English>%1 performed dialysis</English>
