@@ -2218,5 +2218,9 @@
             <Japanese>%1 は透析を行いました</Japanese>
             <Spanish>%1 realizó una dialisis</Spanish>
         </Key>
+        <Key ID="STR_kat_pharma_pharmaSupplyCrate_displayName">
+            <English>[KAM] Medicines crate</English>
+            <Polish>[KAM] Skrzynia z lekami</Polish>
+        </Key>
     </Package>
 </Project>

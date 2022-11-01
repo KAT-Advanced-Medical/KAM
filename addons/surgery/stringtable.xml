@@ -1003,5 +1003,9 @@
             <Japanese>腎臓設定</Japanese>
             <Spanish>Parámetros para riñones</Spanish>
         </Key>
+        <Key ID="STR_kat_surgery_surgeryToolbox">
+            <English>[KAM] Surgery Box</English>
+            <Polish>[KAM] Skrzynia chirugiczna</Polish>
+        </Key>
     </Package>
 </Project>
