@@ -1075,7 +1075,7 @@
             <Turkish>Kurtarma pozisyonu oluşturuldu</Turkish>
             <Italian>In posizione laterale di sicurezza.</Italian>
             <Czech>Uveden do stabilizované polohy</Czech>
-            <Spanish>Posición lateral reclinada establecida</Spanish>
+            <Spanish>Posición lateral de seguridad establecida</Spanish>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayName">
             <English>Establish recovery position</English>
@@ -1088,7 +1088,7 @@
             <Turkish>Kurtarma pozisyonu oluşturun</Turkish>
             <Italian>Metti in posizione laterale di sicurezza.</Italian>
             <Czech>Uvést do stabilizované polohy</Czech>
-            <Spanish>Establecer posición lateral reclinada</Spanish>
+            <Spanish>Establecer posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
             <English>Establishing recovery position</English>
@@ -1101,7 +1101,7 @@
             <Turkish>Kurtarma pozisyonu oluşturuluyor</Turkish>
             <Italian>Mettendo in posizione laterale di sicurezza.</Italian>
             <Czech>Uvádím do stabilizované polohy</Czech>
-            <Spanish>Moviendo a posición lateral reclinada</Spanish>
+            <Spanish>Moviendo a posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Info">
             <English>Recovery position established successfully</English>
@@ -1114,7 +1114,7 @@
             <Turkish>Kurtarma pozisyonu başarıyla kuruldu</Turkish>
             <Italian>Messo in posizione laterale di sicurezza. </Italian>
             <Czech>Stabilizovaná poloha uvedena úspěšně</Czech>
-            <Spanish>Posición lateral reclinada establecida</Spanish>
+            <Spanish>Posición lateral de seguridad establecida</Spanish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Cancel">
             <English>Recovery position cancelled</English>
@@ -1140,7 +1140,7 @@
             <Turkish>Kurtarma pozisyonu %1 oluşturuldu</Turkish>
             <Italian>%1 messo in posizione laterale di sicurezza. </Italian>
             <Czech>%1 uvedl do stabilizované polohy</Czech>
-            <Spanish>%1 estableció la posición lateral reclinada</Spanish>
+            <Spanish>%1 estableció la posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY">
             <English>Time for recovery position</English>
@@ -1153,7 +1153,7 @@
             <Turkish>Kurtarma pozisyonu için zaman</Turkish>
             <Italian>Tempo per mettere in posizione laterale di sicurezza. </Italian>
             <Czech>Doba pro stabilizovanou polohu</Czech>
-            <Spanish>Tiempo para establecer en posición lateral reclinada</Spanish>
+            <Spanish>Tiempo para establecer en posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
@@ -1166,10 +1166,7 @@
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
             <Italian>Tempo necessario per mettere in posizione laterale di sicurezza. </Italian>
             <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
-            <Spanish>Cuanto tiempo tomará establecer la posición de recuperación
-
-
-</Spanish>
+            <Spanish>Cuanto tiempo tomará establecer la posición de lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayName">
             <English>Cancel recovery position</English>
@@ -1182,7 +1179,7 @@
             <Turkish>Kurtarma pozisyonunu iptal et</Turkish>
             <Italian>Cancella la posizione laterale di sicurezza. </Italian>
             <Czech>Zrušit stabilizovanou polohu</Czech>
-            <Spanish>Cancelar posición lateral reclinada</Spanish>
+            <Spanish>Cancelar posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayNameProgress">
             <English>Cancelling recovery position</English>
@@ -1195,7 +1192,7 @@
             <Turkish>Kurtarma pozisyonu iptal ediliyor</Turkish>
             <Italian>Cancellando la posizione laterale di sicurezza.</Italian>
             <Czech>Ruším stabilizovanou polohu</Czech>
-            <Spanish>Cancelando la posición lateral reclinada</Spanish>
+            <Spanish>Cancelando la posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY">
             <English>Time for cancelling recovery position</English>
@@ -1208,7 +1205,7 @@
             <Turkish>Kurtarma pozisyonunu iptal etmek için zaman</Turkish>
             <Italian>Tempo per cancellare la  posizione laterale di sicurezza. </Italian>
             <Czech>Doba pro zrušení stabilizované polohy</Czech>
-            <Spanish>Tiempo para cancelar la posición lateral reclinada</Spanish>
+            <Spanish>Tiempo para cancelar la posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
@@ -1221,10 +1218,7 @@
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
             <Italian>Tempo necessario per annullare la posizione laterale di sicurezza. </Italian>
             <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
-            <Spanish>Cuanto tiempo tomará cancelar la posición de recuperación
-
-
-</Spanish>
+            <Spanish>Cuanto tiempo tomará cancelar la posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_noObstruction">
             <English>Not obstructed</English>
@@ -1275,10 +1269,7 @@
             <German>Wiederherstellungsposition + Überdehnungseinstellungen</German>
             <Chinesesimp>恢复体态设置</Chinesesimp>
             <Japanese>回復体位設定</Japanese>
-            <Spanish>Parámetros de posición de recuperación e hiperextensión
- de cabeza
-
-</Spanish>
+            <Spanish>Parámetros de posición lateral de seguridad e hiperextensión de cabeza</Spanish>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
