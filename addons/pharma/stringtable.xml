@@ -63,7 +63,7 @@
             <Korean>IV/IO를 떼어내는 시간 활성화</Korean>
             <French>Activer les délais d'attente pour les IV/IO</French>
             <Turkish>IV/IO bırakma sürelerini etkinleştir</Turkish>
-            <Italian>Abilitare i tempi di caduta IV/IO</Italian>
+            <Italian>Abilitare i tempi di staccamento IV/IO</Italian>
             <Japanese>IV/IO針の時間経過での脱落</Japanese>
             <Russian>Включает время сброса IV/IO</Russian>
         </Key>
@@ -74,7 +74,7 @@
             <French>Temps au bout du quel l'IV/IO tombe du patient</French>
             <Chinese>改变病人的静脉注射/IOs脱落的时间</Chinese>
             <Chinesesimp>IVs/IOs 脱落的时间</Chinesesimp>
-            <Italian>Cambia il tempo in cui le IV/IO cadono da un paziente</Italian>
+            <Italian>Cambia il tempo in cui le IV/IO si staccano da un paziente</Italian>
             <Spanish>Cambia el tiempo en el que las IVs/IOs se caen de un paciente</Spanish>
             <Korean>IV/IO가 환자에게서 떼지는 시간 변경</Korean>
             <Turkish>IV'lerin/IO'ların bir hastadan düştüğü zamanı değiştirir</Turkish>
@@ -1263,7 +1263,7 @@
         <Key ID="STR_KAT_pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
             <Chinesesimp>推注纳布啡</Chinesesimp>
-            <Italian>Inietta</Italian>
+            <Italian>Inietta Nalbufina (Nubain) </Italian>
             <Czech>Vstříknout Nalbuphine</Czech>
             <French>Administrer de la nalbuphine</French>
             <Polish>Wstrzyknij Nalbufinę</Polish>
@@ -1275,7 +1275,7 @@
         <Key ID="STR_KAT_pharma_Nalbuphine_Box_Display">
             <English>Nalbuphine</English>
             <Chinesesimp>纳布啡</Chinesesimp>
-            <Italian>Spingi Nalbufina (Nubain)</Italian>
+            <Italian>Nalbufina (Nubain)</Italian>
             <Czech>Nalbuphine</Czech>
             <French>Nalbuphine</French>
             <Polish>Nalbufina</Polish>
@@ -1413,7 +1413,7 @@
             <English>Medical level required for Norepinephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
             <Chinesesimp>去甲肾上腺素所需的医疗水平</Chinesesimp>
-            <Italian>Livello medico richiesto per la noradrenalina</Italian>
+            <Italian>Livello medico richiesto per la norepinefrina</Italian>
             <Czech>Lékařská úroveň potřebná pro norepinefrin</Czech>
             <French>Niveau médical requis pour la Noradrénaline</French>
             <Korean>노르에피네프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
@@ -1425,7 +1425,7 @@
             <English>Treatment time for Norepinephrine</English>
             <Polish>Czas na wstrzyknięcie Noradrenaliny</Polish>
             <Chinesesimp>去甲肾上腺素的治疗时间</Chinesesimp>
-            <Italian>Tempo di trattamento per la noradrenalina</Italian>
+            <Italian>Tempo di trattamento per la norepinefrina</Italian>
             <Czech>Doba léčby na norepinefrin</Czech>
             <French>Temps de traitement de la Noradrénaline</French>
             <Korean>노르에피네프린으로 치료하는 시간</Korean>
@@ -2101,10 +2101,12 @@
         <Key ID="STR_kat_pharma_SETTING_Coagulation">
             <English>Enable Coagulation</English>
             <Japanese>血液凝固を有効にする</Japanese>
+            <Italian>Abilita sistema di coagulazione.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Coagulation_DESC">
             <English>Enables advanced coagulation features and modifies TXA and EACA behaviour accordingly.</English>
             <Japanese>高度な血液凝固機能を有効にし、それに応じて TXA と EACA の動作を変更します。</Japanese>
+            <Italian>Abilita la coagulazione avanzata e modifica di conseguenza il comportamento di TXA e EACA.</Italian>
         </Key>
         <Key ID="STR_kat_pharma_EACA_Display">
             <English>EACA</English>
@@ -2237,11 +2239,13 @@
             <English>Perform Dialysis</English>
             <Polish>Przeprowadź Dializę</Polish>
             <Japanese>透析を行う</Japanese>
+            <Italian>Esegui Dialisi</Italian>
         </Key>
         <Key ID="STR_kat_pharma_Dialysis_DisplayNameProgress">
             <English>Performing</English>
             <Polish>Dializa w toku...</Polish>
             <Japanese>実施中</Japanese>
+            <Italian>Eseguendo</Italian>
         </Key>
         <Key ID="STR_kat_pharma_dialysis_log">
             <English>%1 performed dialysis</English>
