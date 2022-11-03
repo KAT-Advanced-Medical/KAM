@@ -16,24 +16,24 @@ class ACE_Medical_Treatment {
             volume = 500;
             ratio[] = {"Plasma", 1};
         };
-        class BloodIV_O_500_N : BloodIV_O_500{};
+        class BloodIV_O_N_500 : BloodIV_O_500{};
         class BloodIV_A_500: BloodIV_O_500 {};
-        class BloodIV_A_500_N: BloodIV_O_500 {};
+        class BloodIV_A_N_500: BloodIV_O_500 {};
         class BloodIV_B_500: BloodIV_O_500 {};
-        class BloodIV_B_500_N: BloodIV_O_500 {};
+        class BloodIV_B_N_500: BloodIV_O_500 {};
         class BloodIV_AB_500: BloodIV_O_500 {};
-        class BloodIV_AB_500_N: BloodIV_O_500 {};
+        class BloodIV_AB_N_500: BloodIV_O_500 {};
         
         class BloodIV_O_250 {
             volume = 250;
             ratio[] = {"Plasma", 1};
         };
-        class BloodIV_O_250_N : BloodIV_O_250{};
+        class BloodIV_O_N_250 : BloodIV_O_250{};
         class BloodIV_A_250: BloodIV_O_250 {};
-        class BloodIV_A_250_N: BloodIV_O_250 {};
+        class BloodIV_A_N_250: BloodIV_O_250 {};
         class BloodIV_B_250: BloodIV_O_250 {};
-        class BloodIV_B_250_N: BloodIV_O_250 {};
+        class BloodIV_B_N_250: BloodIV_O_250 {};
         class BloodIV_AB_250: BloodIV_O_250 {};
-        class BloodIV_AB_250_N: BloodIV_O_250 {};
+        class BloodIV_AB_N_250: BloodIV_O_250 {};
     };
 };

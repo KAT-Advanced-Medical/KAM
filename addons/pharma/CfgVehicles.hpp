@@ -54,4 +54,25 @@ class CfgVehicles {
             MACRO_ADDMAGAZINE(kat_Carbonate,10);
         };
     };
+    class kat_pharmaMedicalCrate: ACE_medicalSupplyCrate {
+        displayName = CSTRING(pharmaSupplyCrate_displayName);
+        class TransportItems: TransportItems {
+            MACRO_ADDITEM(kat_amiodarone,15);
+            MACRO_ADDITEM(kat_atropine,15);
+            MACRO_ADDITEM(kat_EACA,15);
+            MACRO_ADDITEM(kat_fentanyl,15);
+            MACRO_ADDITEM(kat_ketamine,15);
+            MACRO_ADDITEM(kat_lidocaine,15);
+            MACRO_ADDITEM(kat_nalbuphine,15);
+            MACRO_ADDITEM(kat_naloxone,15);
+            MACRO_ADDITEM(kat_norepinephrine,15);
+            MACRO_ADDITEM(kat_phenylephrine,15);
+            MACRO_ADDITEM(kat_TXA,15);
+            MACRO_ADDITEM(kat_nitroglycerin,15);
+        };
+        class TransportMagazines: TransportMagazines {
+            MACRO_ADDMAGAZINE(kat_Carbonate,15);
+            MACRO_ADDMAGAZINE(kat_Painkiller,15);
+        };
+    };
 };

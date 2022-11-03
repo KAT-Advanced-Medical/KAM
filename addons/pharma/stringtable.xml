@@ -2144,28 +2144,6 @@
             <Japanese>血液凝固を促進し、出血を抑えます</Japanese>
             <Spanish>Favorece la coagulación</Spanish>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_aiEnabled">
-            <English>Enable Advanced Medical for AI</English>
-            <Italian>Abilita Advanced Medical per l'IA</Italian>
-            <Czech>Povolte pokročilé zdravotníctví pro AI</Czech>
-            <French>Activer la médecine avancée pour l'IA</French>
-            <Korean>인공지능에게 고급 의료 활성화</Korean>
-            <German>Erweiterte Sanität KI aktivieren</German>
-            <Chinesesimp>为 AI 启用高级医疗</Chinesesimp>
-            <Japanese>AI向けの高度な医療を有効にする</Japanese>
-            <Spanish>Activar la medicina avanzada para la IA</Spanish>
-        </Key>
-        <Key ID="STR_kat_pharma_SETTING_aiEnabled_DESC">
-            <English>Enables kidney actions and blood pressure PFHs for AI</English>
-            <Italian>Abilita le funzioni renali e la pressione sanguigna PFH per l'IA</Italian>
-            <Czech>Umožňuje účinky ledvin a krevní tlak PFHs pro AI</Czech>
-            <French>Autorise des actions rénales et des PFH de pression artérielle pour l’IA</French>
-            <Korean>인공지능에게 신장 작용 및 혈압 PFH 활성화</Korean>
-            <German>Ermöglicht Nierenaktionen und Blutdruck Vorgeschichten für die KI</German>
-            <Chinesesimp>为 AI 启用肾脏和血压功能</Chinesesimp>
-            <Japanese>AIの腎臓作用と血圧PFHを有効にします</Japanese>
-            <Spanish>Activa acciones renales y presión sanguínea (PFH) para la IA</Spanish>
-        </Key>
         <Key ID="STR_kat_pharma_Check_Breath">
             <English>Check Breath</English>
             <Italian>Controlla il respiro</Italian>
@@ -2224,17 +2202,6 @@
             <Japanese>あまりにも損傷した手足に点滴を適用できるかどうか。デフォルトでは無効。</Japanese>
             <Spanish>Si se puede o no aplicar una IV en extramidades demasiado dañadas. En predeterminado, esto esta desactivado.</Spanish>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Kidney">
-            <English>Kidney Settings</English>
-            <Chinesesimp>肾脏设置</Chinesesimp>
-            <Italian>Impostazioni renali</Italian>
-            <Polish>Ustawienia Nerek</Polish>
-            <Czech>Nastavení ledvin</Czech>
-            <French>Paramètres des reins</French>
-            <Korean>신장 설정</Korean>
-            <Japanese>腎臓の設定</Japanese>
-            <Spanish>Parámetros renales</Spanish>
-        </Key>
         <Key ID="STR_kat_pharma_Dialysis_DisplayName">
             <English>Perform Dialysis</English>
             <Polish>Przeprowadź Dializę</Polish>
@@ -2258,6 +2225,10 @@
             <German>%1 hat eine Dialyse durchgeführt</German>
             <Japanese>%1 は透析を行いました</Japanese>
             <Spanish>%1 realizó una dialisis</Spanish>
+        </Key>
+        <Key ID="STR_kat_pharma_pharmaSupplyCrate_displayName">
+            <English>[KAM] Medicines crate</English>
+            <Polish>[KAM] Skrzynia z lekami</Polish>
         </Key>
     </Package>
 </Project>

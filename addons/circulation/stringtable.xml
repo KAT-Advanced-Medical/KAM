@@ -1112,19 +1112,19 @@
             <Japanese>%1 は空になりました</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_bloodbank">
-            <English>Medical Blood bank</English>
-            <German>Medizinische Blutbank</German>
-            <Polish>Bank krwi</Polish>
-            <Spanish>Banco de sangre</Spanish>
-            <Chinese>血庫</Chinese>
-            <Chinesesimp>医用血库</Chinesesimp>
-            <Czech>Lékařská krevní banka</Czech>
-            <Korean>의료용 혈액은행</Korean>
-            <French>Réserve médicale de sang</French>
-            <Turkish>Tıbbi Kan bankası</Turkish>
-            <Italian>Banca del sangue</Italian>
-            <Russian>Банк медицинской крови</Russian>
-            <Japanese>医療血液バンク</Japanese>
+            <English>[KAM] Medical Blood bank</English>
+            <German>[KAM] Medizinische Blutbank</German>
+            <Polish>[KAM] Bank krwi</Polish>
+            <Spanish>[KAM] Banco de sangre</Spanish>
+            <Chinese>[KAM] 血庫</Chinese>
+            <Chinesesimp>[KAM] 医用血库</Chinesesimp>
+            <Czech>[KAM] Lékařská krevní banka</Czech>
+            <Korean>[KAM] 의료용 혈액은행</Korean>
+            <French>[KAM] Réserve médicale de sang</French>
+            <Turkish>[KAM] Tıbbi Kan bankası</Turkish>
+            <Italian>[KAM] Banca del sangue</Italian>
+            <Russian>[KAM] Банк медицинской крови</Russian>
+            <Japanese>[KAM] 医療血液バンク</Japanese>
         </Key>
         <Key ID="STR_KAT_circulation_open_crosspanel">
             <English>Open blood groups cheat sheet</English>

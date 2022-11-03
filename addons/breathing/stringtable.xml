@@ -1295,5 +1295,9 @@
             <Japanese>チアノーゼの設定</Japanese>
             <Spanish>Parámetros para la cianosis</Spanish>
         </Key>
+        <Key ID="STR_kat_breathing_basicSupplyCrate_display">
+            <English>[KAM] General Items</English>
+            <Polish>[KAM] Podstawowe przedmioty</Polish>
+        </Key>
     </Package>
 </Project>

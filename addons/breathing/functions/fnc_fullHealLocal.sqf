@@ -81,6 +81,7 @@ _patient setVariable ["kat_pharma_pH", 1500, true];
 _patient setVariable ["kat_pharma_kidneyFail", false, true];
 _patient setVariable ["kat_pharma_kidneyArrest", false, true];
 _patient setVariable ["kat_pharma_kidneyPressure", false, true];
+_patient setVariable ["kat_pharma_coagulationFactor", 10, true];
 
 //KAT Surgery
 
