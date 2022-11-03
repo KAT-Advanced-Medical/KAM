@@ -45,6 +45,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(openTime);
         items[] = {"kat_plate"};
+        consumeItem = 1;
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.5)] call FUNC(openFractureCheck));
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(openFracture));
     };
