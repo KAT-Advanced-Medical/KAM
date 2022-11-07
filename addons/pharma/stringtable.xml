@@ -16,7 +16,7 @@
         <Key ID="STR_kat_pharma_medLvl_ApplyIV_Desc">
             <English>Changes what medical level is required to set IVs</English>
             <German>Ändert, welcher medizinische Grad für das Legen von IVs erforderlich ist</German>
-            <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia IV</Polish>
+            <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia kaniul IV</Polish>
             <French>Niveau nécessaire pour poser une IV</French>
             <Chinese>改变设置静脉注射所需的医疗级别</Chinese>
             <Chinesesimp>改变设置 IV 所需的医疗级别</Chinesesimp>
@@ -729,7 +729,7 @@
         <Key ID="STR_kat_pharma_IV_DescShort">
             <English>Intravenous Needle</English>
             <German>Intravenöse Kanüle</German>
-            <Polish>Kaniula dożylna</Polish>
+            <Polish>Kaniula dożylna (wenflon)</Polish>
             <Spanish>Catéter Intravenoso</Spanish>
             <Chinese>用於舒緩疼痛</Chinese>
             <Chinesesimp>静脉注射(IV)针头</Chinesesimp>
@@ -1081,6 +1081,7 @@
             <German>Wird als allgemeines Anästhetikum bei chirurgischen Eingriffen verwendet</German>
             <Japanese>外科的処置のための全身麻酔薬として使用される</Japanese>
             <Spanish>Usado como anestesia general para procedimientos quirúrgicos</Spanish>
+            <Polish>Stosowany jako znieczulenie ogólne do zabiegów chirurgicznych</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Etomidate_Use">
             <English>Push Etomidate</English>
@@ -1128,6 +1129,7 @@
             <German>Zur Sedierung von Patienten und zur Vorbereitung auf eine Operation</German>
             <Japanese>患者を鎮静させ、手術の準備をするために使用されます</Japanese>
             <Spanish>Usado para sedar pacientes y preparalos para cirugía</Spanish>
+            <Polish>Służy do uspokajania pacjentów i przygotowywania ich do operacji - usypia</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Lorazepam_Use">
             <English>Push Lorazepam</English>
@@ -1175,6 +1177,7 @@
             <German>Wird verwendet, um Patienten aus der Sedierung zu holen</German>
             <Japanese>患者を鎮静状態から解放するために使用</Japanese>
             <Spanish>Usado para sacar a los pacientes de la sedación</Spanish>
+            <Polish>Służy do wyprowadzania pacjentów z sedacji</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Flumazenil_Use">
             <English>Push Flumazenil</English>
@@ -2007,6 +2010,7 @@
             <Chinesesimp>病人的呼吸是沙哑的</Chinesesimp>
             <Japanese>患者の息はひどく金属的だ</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
+            <Polish>Oddech pacjenta jest ostry i metaliczny</Polish>
         </Key>
         <Key ID="STR_kat_pharma_breath_mild">
             <English>Patient's breath is slightly fruity</English>
@@ -2018,6 +2022,7 @@
             <Chinesesimp>病人的呼吸是平和的</Chinesesimp>
             <Japanese>患者の息は少しフルーティーです</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
+            <Polish>Oddech pacjenta jest lekko owocowy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_breath_good">
             <English>Patient's breath is ok</English>
@@ -2029,6 +2034,7 @@
             <Chinesesimp>病人的呼吸是正常的</Chinesesimp>
             <Japanese>患者の息は問題ありません</Japanese>
             <Spanish>El aliento del paciente es normal</Spanish>
+            <Polish>Oddech pacjenta jest w porządku</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -2064,6 +2070,7 @@
             <Chinesesimp>IV 阻塞几率</Chinesesimp>
             <Japanese>IV閉塞の確率</Japanese>
             <Spanish>Probabilidad del bloquéo de IV</Spanish>
+            <Polish>Szansa na zablokowanie IV</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Block_Chance_DESC">
             <English>Chance of IV blockage due to medication pushes without saline flush</English>
@@ -2075,6 +2082,7 @@
             <Chinesesimp>由于没有盐水协助的药物注射导致 IV 阻塞的机会</Chinesesimp>
             <Japanese>生理食塩水を流さずに薬を注入することによるIV閉塞の可能性</Japanese>
             <Spanish>Probabilidad de que una IV se bloquée por administrar fármacos sin enjuagar con salino</Spanish>
+            <Polish>Szansa na zablokowanie IV z powodu podawania leków bez przepłukiwania roztworem soli fizjologicznej</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Max_Stack">
             <English>Maximum Fluid Bag Stack</English>
@@ -2086,6 +2094,7 @@
             <Chinesesimp>注射液堆叠上限</Chinesesimp>
             <Japanese>最大輸液袋スタック数</Japanese>
             <Spanish>Máxima cantidad de bolsas de fluidos simultaneas</Spanish>
+            <Polish>Maksymalna ilość worków z płynami dla jednego pajenta</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Max_Stack_DESC">
             <English>The maximum amount of fluid bags that can be stacked to increase IV flow rate</English>
@@ -2097,16 +2106,19 @@
             <Chinesesimp>可堆叠的最大液体袋量以增加 IV 流速</Chinesesimp>
             <Japanese>IV流量を増やすために積み重ねることができる輸液袋の最大量</Japanese>
             <Spanish>La cantidad máxima de bolsas de fluido que se pueden apilar para aumentar el flujo de IV</Spanish>
+            <Polish>Maksymalna ilość worków z płynem, które można przypiąć w tym samym momencie, aby zwiększyć szybkość przepływu IV</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Coagulation">
             <English>Enable Coagulation</English>
             <Japanese>血液凝固を有効にする</Japanese>
             <Italian>Abilita sistema di coagulazione.</Italian>
+            <Polish>Włącz krzepnięcie</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Coagulation_DESC">
             <English>Enables advanced coagulation features and modifies TXA and EACA behaviour accordingly.</English>
             <Japanese>高度な血液凝固機能を有効にし、それに応じて TXA と EACA の動作を変更します。</Japanese>
             <Italian>Abilita la coagulazione avanzata e modifica di conseguenza il comportamento di TXA e EACA.</Italian>
+            <Polish>Włącza zaawansowane funkcje krzepnięcia oraz odpowiednie modyfikacje zachowania TXA i EACA.</Polish>
         </Key>
         <Key ID="STR_kat_pharma_EACA_Display">
             <English>EACA</English>
@@ -2190,6 +2202,7 @@
             <Chinesesimp>IV 检查肢体损伤</Chinesesimp>
             <Japanese>IVの四肢損傷の確認</Japanese>
             <Spanish>Permitir inserción de IV en extremidad dañada</Spanish>
+            <Polish>Sprawdzanie obrażeń kończyn do IV</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage_DESC">
             <English>Whether or not you can apply the IV to the too damaged limb. In default, this is disabled.</English>
@@ -2201,6 +2214,7 @@
             <Chinesesimp>是否可以将 IV 应用于受损的肢体。 默认情况下，这是禁用的。</Chinesesimp>
             <Japanese>あまりにも損傷した手足に点滴を適用できるかどうか。デフォルトでは無効。</Japanese>
             <Spanish>Si se puede o no aplicar una IV en extramidades demasiado dañadas. En predeterminado, esto esta desactivado.</Spanish>
+            <Polish>Czy można zastosować IV na zbyt uszkodzoną kończynę. Domyślnie jest to wyłączone.</Polish>
         </Key>
         <Key ID="STR_kat_pharma_Dialysis_DisplayName">
             <English>Perform Dialysis</English>

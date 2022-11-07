@@ -348,7 +348,7 @@
         <Key ID="STR_kat_airway_Airway_turnaroundSuccess">
             <English>Occlusion removed</English>
             <German>Verstopfung entfernt</German>
-            <Polish>Zablokowanie usunięte</Polish>
+            <Polish>Zator usunięty</Polish>
             <Spanish>Oclusión eliminada</Spanish>
             <Chinese>遮擋移除</Chinese>
             <Chinesesimp>气道异物移除</Chinesesimp>
@@ -1093,7 +1093,7 @@
         <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
             <English>Establishing recovery position</English>
             <German>In die stabile Seitenlage legen</German>
-            <Polish>Układanie w pozycji</Polish>
+            <Polish>Układanie w pozycji bezpiecznej</Polish>
             <Chinesesimp>正在建立恢复体态</Chinesesimp>
             <Japanese>回復体位にしています</Japanese>
             <Korean>회복자세 교정 중</Korean>
@@ -1270,6 +1270,7 @@
             <Chinesesimp>恢复体态设置</Chinesesimp>
             <Japanese>回復体位設定</Japanese>
             <Spanish>Parámetros de posición lateral de seguridad e hiperextensión de cabeza</Spanish>
+            <Polish>Opcje - Pozycja bezpieczna + odchylanie głowy</Polish>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1281,6 +1282,7 @@
             <Chinesesimp>气道物品设置</Chinesesimp>
             <Japanese>気道アイテム設定</Japanese>
             <Spanish>Parámetros de las herramientas (vias aéreas)</Spanish>
+            <Polish>Opcje przedmiotów - Drogi oddechowe</Polish>
         </Key>
     </Package>
 </Project>
