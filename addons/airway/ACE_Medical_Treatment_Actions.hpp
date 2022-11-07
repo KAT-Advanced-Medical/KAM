@@ -11,7 +11,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_larynx"};
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]));
         patientStateCondition = 0;
-        callbackSuccess = QFUNC(treatmentAdvanced_airway));
+        callbackSuccess = QFUNC(treatmentAdvanced_airway);
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;

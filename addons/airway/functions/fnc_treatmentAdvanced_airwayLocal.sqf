@@ -17,12 +17,12 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_className"];
+params ["_medic", "_patient", "_usedItem"];
 
 if (_patient getVariable [QGVAR(occluded), false]) exitWith {
     private _output = localize LSTRING(Airway_NotClearForItem);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
-    if (_className isEqualTo "Guedeltubus") then {
+    if (_usedItem isEqualTo "Guedeltubus") then {
         [_medic, "kat_guedel"] call ace_common_fnc_addToInventory;
     } else {
     [_medic, "kat_larynx"] call ace_common_fnc_addToInventory;    
@@ -36,7 +36,7 @@ if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") exitWith {
     false;
 };
 
-if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "guedel" && (_className isEqualTo "Guedeltubus")) exitWith {
+if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "guedel" && (_usedItem isEqualTo "Guedeltubus")) exitWith {
     private _output = localize LSTRING(Airway_already);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
     false;
@@ -48,7 +48,7 @@ _patient setVariable [QGVAR(obstruction), false, true];
 private _item = LSTRING(Larynx_Display);
 _patient setVariable [QGVAR(airway_item), "larynx", true];
 
-if (_className isEqualTo "Guedeltubus") then {
+if (_usedItem isEqualTo "Guedeltubus") then {
     _item = LSTRING(Guedel_Display);
     _patient setVariable [QGVAR(airway_item), "guedel", true];
 };
