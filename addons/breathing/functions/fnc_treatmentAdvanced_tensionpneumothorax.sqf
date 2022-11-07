@@ -19,4 +19,4 @@
 
 params ["_medic", "_patient"];
 
-["treatmentTensionpneumothorax", [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+[QGVAR(tensionpneumothoraxLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;

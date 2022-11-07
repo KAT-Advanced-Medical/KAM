@@ -18,7 +18,7 @@ if !(GVAR(enable)) exitWith {};
     private _alive = alive _unit;
     if ((!_alive) || (_unit getVariable [GVAR(string_exit), ""] isEqualTo "keko_wasPunched") || KAT_forceWakeup) exitWith {};
     if (EGVAR(breathing,enable)) then {
-        ["handleBreathing", [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
+        [QEGVAR(breathing,handleBreathing), [_unit, CBA_missionTime], _unit] call CBA_fnc_targetEvent;
     };
     [_unit] call FUNC(handleAirway);
     [_unit] call FUNC(handlePuking);

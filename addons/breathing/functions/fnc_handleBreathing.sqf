@@ -22,7 +22,7 @@ if ((_unit getVariable ["kat_O2Breathing_PFH", false]) || !(GVAR(enable)) || (_u
 _unit setVariable ["kat_O2Breathing_PFH", true];
 
 if (!local _unit) then {
-    ["handleBreathing", [_unit], _unit] call CBA_fnc_targetEvent;
+    [QGVAR(handleBreathing), [_unit], _unit] call CBA_fnc_targetEvent;
 };
 
 [{

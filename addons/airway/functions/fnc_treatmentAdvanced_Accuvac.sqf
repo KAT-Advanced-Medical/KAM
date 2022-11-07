@@ -16,11 +16,13 @@
  * Public: Yes
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", "_className"];
 
 if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
     private _output = localize LSTRING(Accuvac_NA);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 };
+
+[_patient, _className] call ace_medical_treatment_fnc_addToTriageCard;
 
 [QGVAR(accuvacLocal), [_patient, "Accuvac"], _patient] call CBA_fnc_targetEvent;

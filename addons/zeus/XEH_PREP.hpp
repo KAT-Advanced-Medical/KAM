@@ -1,4 +1,3 @@
-PREP(init);
 PREP(emptyFunction);
 PREP(showMessage);
 PREP(zeusAttributes);

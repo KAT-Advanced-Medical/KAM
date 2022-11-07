@@ -19,4 +19,4 @@
 
 params ["_medic", "_patient"];
 
-["treatmentChestSeal", [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+[QGVAR(chestSealLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;

@@ -21,12 +21,10 @@ params ["_medic", "_patient"];
 if (_patient getVariable [QGVAR(overstretch), false]) exitWith {
     private _output = localize LSTRING(Airway_already);
     [_output, 2, _medic] call ace_common_fnc_displayTextStructured;
-    false;
 };
 if !(_patient getVariable [QGVAR(obstruction), false]) exitWith {
     private _output = localize LSTRING(Airway_NA);
     [_output, 2, _medic] call ace_common_fnc_displayTextStructured;
-    false;
 };
 
 _patient setVariable [QGVAR(overstretch), true, true];
@@ -50,5 +48,3 @@ private _output = localize LSTRING(overstretch_info);
     _output = localize LSTRING(overstretch_cancel);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 }] call CBA_fnc_waitUntilAndExecute;
-
-true;
