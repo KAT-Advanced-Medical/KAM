@@ -2022,7 +2022,7 @@
             <Chinesesimp>病人的呼吸是平和的</Chinesesimp>
             <Japanese>患者の息は少しフルーティーです</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
-            <Polish>Oddech pacjenta lekko owocowy</Polish>
+            <Polish>Oddech pacjenta jest lekko owocowy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_breath_good">
             <English>Patient's breath is ok</English>
