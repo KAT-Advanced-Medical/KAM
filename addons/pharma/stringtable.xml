@@ -2022,7 +2022,7 @@
             <Chinesesimp>病人的呼吸是平和的</Chinesesimp>
             <Japanese>患者の息は少しフルーティーです</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
-            <Polish>Patient's breath is slightly fruity</Polish>
+            <Polish>Oddech pacjenta lekko owocowy</Polish>
         </Key>
         <Key ID="STR_kat_pharma_breath_good">
             <English>Patient's breath is ok</English>
@@ -2070,7 +2070,7 @@
             <Chinesesimp>IV 阻塞几率</Chinesesimp>
             <Japanese>IV閉塞の確率</Japanese>
             <Spanish>Probabilidad del bloquéo de IV</Spanish>
-            <Polish>IV szansa na blokadę</Polish>
+            <Polish>Szansa na zablokowanie IV</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Block_Chance_DESC">
             <English>Chance of IV blockage due to medication pushes without saline flush</English>
@@ -2202,7 +2202,7 @@
             <Chinesesimp>IV 检查肢体损伤</Chinesesimp>
             <Japanese>IVの四肢損傷の確認</Japanese>
             <Spanish>Permitir inserción de IV en extremidad dañada</Spanish>
-            <Polish>Sprawdzanie czy IV na mocnych ranach</Polish>
+            <Polish>Sprawdzanie obrażeń kończyn do IV</Polish>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage_DESC">
             <English>Whether or not you can apply the IV to the too damaged limb. In default, this is disabled.</English>

@@ -20,7 +20,7 @@
             <English>Advanced Rhythm activated?</English>
             <German>Fortgeschrittenen Rhythmus aktivieren?</German>
             <French>Activer rythme avancé?</French>
-            <Polish>ACE-Czy zaawansowane krążenie ma być włączone?</Polish>
+            <Polish>Zaawansowane Rytmy</Polish>
             <Korean>고급 리듬이 활성화 되었습니까?</Korean>
             <Turkish>Gelişmiş Ritim etkinleştirildi mi?</Turkish>
             <Chinese>先进的节奏被激活？</Chinese>
@@ -1266,7 +1266,7 @@
             <German>Stellt Puls wieder her</German>
             <Chinese>用來甦醒玩家</Chinese>
             <Chinesesimp>使用电击来唤醒玩家</Chinesesimp>
-            <Polish>Automatyczny Defibrylator Zewnętrzny</Polish>
+            <Polish>Używany do reanimacji</Polish>
             <Spanish>Úsalo para resucitar a un jugador</Spanish>
             <Czech>Použít k resuscitaci hráče</Czech>
             <Korean>의식불명의 부상자에게 사용됩니다</Korean>
