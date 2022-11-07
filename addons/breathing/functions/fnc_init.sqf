@@ -17,7 +17,6 @@
 
 params ["_unit"];
 
-// KAT_medical_airwayStatus - oxygen saturation
 _unit setVariable [QGVAR(airwayStatus), 100, true];
 _unit setVariable [QGVAR(pneumothorax), false, true];
 _unit setVariable [QGVAR(hemopneumothorax), false, true];

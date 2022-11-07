@@ -31,7 +31,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(Guedeltubus_time);
         items[] = {"kat_guedel"};
         icon = QPATHTOF(ui\guedel.paa);
-        callbackSuccess = QFUNC(treatmentAdvanced_airway));
+        callbackSuccess = QFUNC(treatmentAdvanced_airway);
     };
     class Accuvac: Larynxtubus {
         displayName = "Accuvac";
@@ -41,7 +41,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 0;
         medicRequired = QGVAR(medLvl_Accuvac);
         callbackSuccess = QFUNC(treatmentAdvanced_accuvac));
-        callbackProgress = QFUNC(accuvacSound));
+        callbackProgress = QFUNC(accuvacSound);
     };
     class Overstretch: Larynxtubus {
         displayName = CSTRING(overstretch);
@@ -51,7 +51,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         icon = "";
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && !(_patient getVariable [ARR_2(QQGVAR(overstretch), false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
-        callbackSuccess = QFUNC(treatmentAdvanced_overstretchHead));
+        callbackSuccess = QFUNC(treatmentAdvanced_overstretchHead);
     };
     class TurnAround: Larynxtubus {
         displayName = CSTRING(turnaround);
@@ -60,7 +60,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         items[] = {};
         icon = "";
-        callbackSuccess = QFUNC(treatmentAdvanced_turnaroundHead));
+        callbackSuccess = QFUNC(treatmentAdvanced_turnaroundHead);
     };
     class RecoveryPosition: Larynxtubus {
         displayName = CSTRING(RecoveryPosition_displayName);
@@ -72,7 +72,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         condition = QUOTE((!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)])) && FUNC(checkRecovery));
         icon = "";
-        callbackSuccess = QFUNC(treatmentAdvanced_RecoveryPosition));
+        callbackSuccess = QFUNC(treatmentAdvanced_RecoveryPosition);
     };
     class CancelRecoveryPosition: Larynxtubus {
         displayName = CSTRING(CancelRecoveryPosition_displayName);
@@ -84,7 +84,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         condition = QUOTE((!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(recovery),false)])));
         icon = "";
-        callbackSuccess = QFUNC(treatmentAdvanced_CancelRecoveryPosition));
+        callbackSuccess = QFUNC(treatmentAdvanced_CancelRecoveryPosition);
     };
     class CheckPulse;
     class CheckAirway: checkPulse {
@@ -94,7 +94,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(CheckAirway_time);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
-        callbackSuccess = QFUNC(checkAirway));
+        callbackSuccess = QFUNC(checkAirway);
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
     };
 };

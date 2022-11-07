@@ -17,10 +17,10 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_className"];
+params ["_medic", "_patient", "_usedItem"];
 
-[_patient, _className] call ace_medical_treatment_fnc_addToTriageCard;
-[_patient, "activity", LSTRING(airway_log), [[_medic] call ace_common_fnc_getName, _className]] call ace_medical_treatment_fnc_addToLog;
-[_patient, "activity_view", LSTRING(airway_log), [[_medic] call ace_common_fnc_getName, _className]] call ace_medical_treatment_fnc_addToLog;
+[_patient, _usedItem] call ace_medical_treatment_fnc_addToTriageCard;
+[_patient, "activity", LSTRING(airway_log), [[_medic] call ace_common_fnc_getName, _usedItem]] call ace_medical_treatment_fnc_addToLog;
+[_patient, "activity_view", LSTRING(airway_log), [[_medic] call ace_common_fnc_getName, _usedItem]] call ace_medical_treatment_fnc_addToLog;
 
-[QGVAR(airwayLocal), [_medic, _patient, _className], _patient] call CBA_fnc_targetEvent;
+[QGVAR(airwayLocal), [_medic, _patient, _usedItem], _patient] call CBA_fnc_targetEvent;

@@ -42,4 +42,3 @@ private _message = format ["%1, %2", _messageairwayobstruction, _messageairwayOc
 [_message, 2, _medic] call ace_common_fnc_displayTextStructured;
 
 [_patient, "activity", LSTRING(checkAirway_log), [[_medic] call ace_common_fnc_getName, _obstruction, _occluded]] call ace_medical_treatment_fnc_addToLog;
-

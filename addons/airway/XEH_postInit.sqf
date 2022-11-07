@@ -5,7 +5,7 @@ if !(GVAR(enable)) exitWith {};
 [QGVAR(larynxLocal), LINKFUNC(treatmentAdvanced_larynxLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(airwayLocal), LINKFUNC(treatmentAdvanced_airwayLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(guedelLocal), LINKFUNC(treatmentAdvanced_guedelLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(accuvacLocal), LINKFUNC(treatmentAdvanced_accuvacLocal)}] call CBA_fnc_addEventHandler;
+[QGVAR(accuvacLocal), LINKFUNC(treatmentAdvanced_accuvacLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(recoveryPositionLocal), LINKFUNC(treatmentAdvanced_RecoveryPositionLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(cancelRecoveryPositionLocal), LINKFUNC(treatmentAdvanced_CancelRecoveryPositionLocal)] call CBA_fnc_addEventHandler;
 

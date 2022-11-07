@@ -34,7 +34,7 @@ if (_bloodPressureL < 50 || {_bloodPressureH < 60}) exitWith { false };
 private _heartRate = GET_HEART_RATE(_unit);
 if (_heartRate < 40) exitWith { false };
 
-private _o2 = _unit getVariable ["KAT_medical_airwayStatus", 100];
+private _o2 = _unit getVariable [QEGVAR(breathing,airwayStatus), 100];
 if (_o2 < EGVAR(breathing,Stable_spo2)) exitWith { false };
 
 true

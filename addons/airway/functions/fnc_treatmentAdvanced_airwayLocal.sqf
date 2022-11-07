@@ -52,7 +52,3 @@ if (_className isEqualTo "Guedeltubus") then {
     _item = LSTRING(Guedel_Display);
     _patient setVariable [QGVAR(airway_item), "guedel", true];
 };
-
-
-
-true;

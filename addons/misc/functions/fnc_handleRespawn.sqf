@@ -23,64 +23,58 @@ if (!local _unit) exitWith {};
 
 // KAT Airway
 
-_unit setVariable ["kat_airway_obstruction", false, true]; // predelat aby to bylo vic citelné
-_unit setVariable ["kat_airway_airway", false, true];
-_unit setVariable ["kat_airway_overstretch", false, true];
-_unit setVariable ["kat_airway_startTime", 0, true];
+_unit setVariable [QEGVAR(airway,obstruction), false, true];
+_unit setVariable [QEGVAR(airway,airway), false, true];
+_unit setVariable [QEGVAR(airway,occluded), false, true];
+_unit setVariable [QEGVAR(airway,overstretch), false, true];
 _unit setVariable ['kat_AEDinUse', false, true];
 KAT_forceWakeup = false;
 _unit setVariable [QEGVAR(airway,recovery), false, true];
 
 // KAT Breathing
 
-_unit setVariable ["KAT_medical_airwayStatus", 100, true];
-_unit setVariable ["KAT_medical_airwayOccluded", false, true];
-_unit setVariable ["KAT_medical_pneumothorax", false, true];
-_unit setVariable ["KAT_medical_hemopneumothorax", false, true];
-_unit setVariable ["KAT_medical_tensionpneumothorax", false, true];
+_unit setVariable [QEGVAR(breathing,airwayStatus), 100, true];
+_unit setVariable [QEGVAR(breathing,pneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,hemopneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,tensionpneumothorax), false, true];
 _unit setVariable ["KAT_medical_activeChestSeal", false, true];
 
 _unit setVariable ["kat_breathing_pulseoximeter", false, true];
 _unit setVariable ["kat_PulseoxiInUse_PFH", nil];
-_unit setVariable ["kat_breathing_o2", false, true];
-_unit setVariable ["KAT_circulation_X", false, true];
 
 // KAT Circulation
 
-_unit setVariable ["KAT_circulation_IV_counts", 0, true];
-_unit setVariable ["KAT_circulation_X", false, true];
+_unit setVariable [QEGVAR(circulation,IV_counts), 0, true];
+_unit setVariable [QEGVAR(circulation,X), false, true];
 _unit setVariable ["kat_AEDXPatient_PFH", nil];
 _unit setVariable ["KAT_circulation_X_sound1", "x\kat\addons\circulation\sounds\noheartrate.wav", true];
 _unit setVariable ["KAT_circulation_X_sound2", "x\kat\addons\circulation\sounds\heartrate.wav", true];
-_unit setVariable ["KAT_circulation_use", false, true];
-_unit setVariable ["KAT_circulation_returnedAED", false, true];
-_unit setVariable ["KAT_circulation_asystole", 1, true];
-_unit setVariable ["KAT_circulation_CPRcount", 2, true];
+_unit setVariable [QEGVAR(circulation,use), false, true];
+_unit setVariable [QEGVAR(circulation,returnedAED), false, true];
+_unit setVariable [QEGVAR(circulation,asystole), 1, true];
+_unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 
 // KAT Pharmacy
 
-_unit setVariable ["kat_pharma_alphaAction", 1, true];
-_unit setVariable ["kat_pharma_IV", [0,0,0,0,0,0], true];
-_unit setVariable ["kat_pharma_IVpfh", [0,0,0,0,0,0], true];
-_unit setVariable ["kat_pharma_active", false, true];
-_unit setVariable ["kat_pharma_PFH", nil, true];
-_unit setVariable ["kat_pharma_alphaAction", 1];
-_unit setVariable ["kat_pharma_sedated", false, true];
+_unit setVariable [QEGVAR(pharma,alphaAction), 1, true];
+_unit setVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0], true];
+_unit setVariable [QEGVAR(pharma,IVpfh), [0,0,0,0,0,0], true];
+_unit setVariable [QEGVAR(pharma,active), false, true];
+_unit setVariable [QEGVAR(pharma,IVPharma_PFH), nil, true];
 
-_unit setVariable ["kat_pharma_TXA", 1, true];
 _unit setVariable ["kat_pharma_ondUse", false, true];
 
-_unit setVariable ["kat_pharma_pH", 1500, true];
-_unit setVariable ["kat_pharma_kidneyFail", false, true];
-_unit setVariable ["kat_pharma_kidneyArrest", false, true];
-_unit setVariable ["kat_pharma_kidneyPressure", false, true];
-
+_unit setVariable [QEGVAR(pharma,pH), 1500, true];
+_unit setVariable [QEGVAR(pharma,kidneyFail), false, true];
+_unit setVariable [QEGVAR(pharma,kidneyArrest), false, true];
+_unit setVariable [QEGVAR(pharma,kidneyPressure), false, true];
 //KAT Surgery
 
-_unit setVariable ["kat_surgery_debridement", [0,0,0,0,0,0], true];
-_unit setVariable ["kat_surgery_fractures", [0,0,0,0,0,0], true];
-_unit setVariable ["kat_surgery_lidocaine", false, true];
-_unit setVariable ["kat_surgery_etomidate", false, true];
+_unit setVariable [QEGVAR(surgery,debridement), [0,0,0,0,0,0], true];
+_unit setVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0], true];
+_unit setVariable [QEGVAR(surgery,lidocaine), false, true];
+_unit setVariable [QEGVAR(surgery,etomidate), false, true];
+_unit setVariable [QEGVAR(surgery,sedated), false, true];
 
 
 // Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten

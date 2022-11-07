@@ -33,6 +33,6 @@ if (_patient getVariable ["KAT_medical_activeChestSeal", false]) then {
     _patient setVariable [QGVAR(hemopneumothorax), false, true];
 };
 
-if (!(_patient getVariable ["KAT_medical_pneumothorax", false]) && {!(_patient getVariable [QGVAR(hemopneumothorax), false]) && {!(_patient getVariable [QGVAR(tensionpneumothorax), false])}}) then {
+if (!(_patient getVariable [QGVAR(pneumothorax), false]) && {!(_patient getVariable [QGVAR(hemopneumothorax), false]) && {!(_patient getVariable [QGVAR(tensionpneumothorax), false])}}) then {
     _patient setVariable ["KAT_medical_activeChestSeal", false, true];
 };
