@@ -2,12 +2,12 @@
 
 if !(GVAR(enable)) exitWith {};
 
-["treatmentLarynx", {_this call FUNC(treatmentAdvanced_larynxLocal)}] call CBA_fnc_addEventHandler;
-["treatmentAirway", {_this call FUNC(treatmentAdvanced_airwayLocal)}] call CBA_fnc_addEventHandler;
-["treatmentGuedel", {_this call FUNC(treatmentAdvanced_guedelLocal)}] call CBA_fnc_addEventHandler;
-["treatmentAccuvac", {_this call FUNC(treatmentAdvanced_accuvacLocal)}] call CBA_fnc_addEventHandler;
-["treatmentRecoveryPosition", {_this call FUNC(treatmentAdvanced_RecoveryPositionLocal)}] call CBA_fnc_addEventHandler;
-["treatmentCancelRecoveryPosition", {_this call FUNC(treatmentAdvanced_CancelRecoveryPositionLocal)}] call CBA_fnc_addEventHandler;
+[QGVAR(larynxLocal), LINKFUNC(treatmentAdvanced_larynxLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(airwayLocal), LINKFUNC(treatmentAdvanced_airwayLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(guedelLocal), LINKFUNC(treatmentAdvanced_guedelLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(accuvacLocal), LINKFUNC(treatmentAdvanced_accuvacLocal)}] call CBA_fnc_addEventHandler;
+[QGVAR(recoveryPositionLocal), LINKFUNC(treatmentAdvanced_RecoveryPositionLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(cancelRecoveryPositionLocal), LINKFUNC(treatmentAdvanced_CancelRecoveryPositionLocal)] call CBA_fnc_addEventHandler;
 
 ["ace_unconscious", {
     params ["_unit", "_state"];

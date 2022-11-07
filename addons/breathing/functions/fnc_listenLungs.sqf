@@ -24,7 +24,7 @@ if ((_patient getVariable ["ace_medical_heartRate", 80]) isEqualTo 0) exitWith {
 
 _random = round random 1;
 
-if (_patient getVariable ["KAT_medical_pneumothorax", false]) exitWith {
+if (_patient getVariable [QGVAR(pneumothorax), false]) exitWith {
   if (_random >= 0.5) then {
     playSound "tensionpneumothorax";
     sleep 7;
@@ -36,7 +36,7 @@ if (_patient getVariable ["KAT_medical_pneumothorax", false]) exitWith {
   };
 };
 
-if (_patient getVariable ["KAT_medical_hemopneumothorax", false]) exitWith {
+if (_patient getVariable [QGVAR(hemopneumothorax), false]) exitWith {
   if (_random >= 0.5) then {
     playSound "hemothoraxbreathing";
     sleep 7;
@@ -48,7 +48,7 @@ if (_patient getVariable ["KAT_medical_hemopneumothorax", false]) exitWith {
   };
 };
 
-if (_patient getVariable ["KAT_medical_tensionpneumothorax", false]) exitWith {
+if (_patient getVariable [QGVAR(tensionpneumothorax), false]) exitWith {
   if (_random >= 0.5) then {
     playSound "tensionpneumothorax";
     sleep 7;

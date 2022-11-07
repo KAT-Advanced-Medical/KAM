@@ -18,6 +18,7 @@
 params ["_unit"];
 
 _unit setVariable [QGVAR(obstruction), false, true];
+_unit setVariable [QGVAR(occluded), false, true];
 _unit setVariable [QGVAR(airway), false, true];
 _unit setVariable [QGVAR(overstretch), false, true];
 _unit setVariable [QGVAR(startTime), 0, true];

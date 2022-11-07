@@ -17,12 +17,10 @@
  * Public: No
  */
 
-params ["_caller", "_target", "_className"];
+params ["_medic", "_patient", "_className"];
 
-if (local _target) then {
-    ["treatmentAirway", [_caller, _target, _className]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentAirway", [_caller, _target, _className], _target] call CBA_fnc_targetEvent;
-};
+[_patient, _className] call ace_medical_treatment_fnc_addToTriageCard;
+[_patient, "activity", LSTRING(airway_log), [[_medic] call ace_common_fnc_getName, _className]] call ace_medical_treatment_fnc_addToLog;
+[_patient, "activity_view", LSTRING(airway_log), [[_medic] call ace_common_fnc_getName, _className]] call ace_medical_treatment_fnc_addToLog;
 
-true;
+[QGVAR(airwayLocal), [_medic, _patient, _className], _patient] call CBA_fnc_targetEvent;
