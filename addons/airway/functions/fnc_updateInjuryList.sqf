@@ -158,20 +158,20 @@ if (_target getVariable [QGVAR(recovery), false]) then {
 
 private _tensionhemothorax = false;
 if (!(kat_breathing_showPneumothorax_dupe)) then {
-    if ((_target getVariable ["KAT_medical_tensionpneumothorax", false]) || (_target getVariable ["KAT_medical_hemopneumothorax", false])) then {
+    if ((_target getVariable [QEGVAR(breathing,hemopneumothorax), false]) || (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false])) then {
             _tensionhemothorax = true;
     };
 };
 
-if (_target getVariable ["KAT_medical_pneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_pneumothorax_hardcore) && !(_tensionhemothorax)) then {
+if (_target getVariable [QEGVAR(breathing,pneumothorax), false] && _selectionN isEqualTo 1 && !(kat_breathing_pneumothorax_hardcore) && !(_tensionhemothorax)) then {
     _woundEntries pushback [localize ELSTRING(breathing,pneumothorax_mm), [1,1,1,1]];
 };
 
-if (_target getVariable ["KAT_medical_hemopneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_tensionhemothorax_hardcore)) then {
+if (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false] && _selectionN isEqualTo 1 && !(kat_breathing_tensionhemothorax_hardcore)) then {
     _woundEntries pushback [localize ELSTRING(breathing,hemopneumothorax_mm), [1,1,1,1]];
 };
 
-if (_target getVariable ["KAT_medical_tensionpneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_tensionhemothorax_hardcore)) then {
+if (_target getVariable [QEGVAR(breathing,hemopneumothorax), false] && _selectionN isEqualTo 1 && !(kat_breathing_tensionhemothorax_hardcore)) then {
     _woundEntries pushback [localize ELSTRING(breathing,tensionpneumothorax_mm), [1,1,1,1]];
 };
 

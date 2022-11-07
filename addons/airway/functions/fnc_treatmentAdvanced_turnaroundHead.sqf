@@ -19,14 +19,14 @@
 params ["_player", "_target"];
 
 if !(_target getVariable [QGVAR(occluded), false]) exitWith {
-    private _output = localize LSTRING(Airway_turnaroundSuccess);
+    private _output = LLSTRING(Airway_turnaroundSuccess);
     [_output, 2, _player] call ace_common_fnc_displayTextStructured;
     false;
 };
 
 // TO-DO: head turning animation
 
-private _output = localize LSTRING(turnaround_info);
+private _output = LLSTRING(turnaround_info);
 [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
 
 if (random 100 < GVAR(probability_headturning)) then {
