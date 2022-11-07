@@ -20,7 +20,7 @@
             <English>Advanced Rhythm activated?</English>
             <German>Fortgeschrittenen Rhythmus aktivieren?</German>
             <French>Activer rythme avancé?</French>
-            <Polish>Zaawansowane Rytmy włączone?</Polish>
+            <Polish>ACE-Czy zaawansowane krążenie ma być włączone?</Polish>
             <Korean>고급 리듬이 활성화 되었습니까?</Korean>
             <Turkish>Gelişmiş Ritim etkinleştirildi mi?</Turkish>
             <Chinese>先进的节奏被激活？</Chinese>
@@ -49,7 +49,7 @@
         <Key ID="STR_kat_circulation_SETTING_loadout">
             <English>Different loadoutname</English>
             <German>Anderer Loadoutname</German>
-            <Polish>Inny  loadoutname</Polish>
+            <Polish>Inna nazwa sprzętu</Polish>
             <Spanish>Diferente nombre de equipamiento</Spanish>
             <Chinese>不同配置名稱</Chinese>
             <Chinesesimp>不同配置名称</Chinesesimp>
@@ -1251,7 +1251,7 @@
             <German>Automatisierter Externer Defibrillator</German>
             <Chinese>自動體外除顫器</Chinese>
             <Chinesesimp>AED除颤器</Chinesesimp>
-            <Polish>Automatyczny Zewnętrzny Defibrylator</Polish>
+            <Polish>Automatyczny Defibrylator Zewnętrzny</Polish>
             <Spanish>Desfibrilador Externo Automático</Spanish>
             <Czech>Automatický externí defibrilátor</Czech>
             <Korean>자동제세동기</Korean>
@@ -1266,7 +1266,7 @@
             <German>Stellt Puls wieder her</German>
             <Chinese>用來甦醒玩家</Chinese>
             <Chinesesimp>使用电击来唤醒玩家</Chinesesimp>
-            <Polish>Użyj do reanimacji</Polish>
+            <Polish>Automatyczny Defibrylator Zewnętrzny</Polish>
             <Spanish>Úsalo para resucitar a un jugador</Spanish>
             <Czech>Použít k resuscitaci hráče</Czech>
             <Korean>의식불명의 부상자에게 사용됩니다</Korean>
@@ -1278,7 +1278,7 @@
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AED">
             <English>%1 performed AED</English>
-            <Polish>%1 wykonał cykl AED</Polish>
+            <Polish>%1 użył AED</Polish>
             <German>%1 hat den AED benutzt</German>
             <Spanish>%1 utilizó el DEA</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
@@ -1293,7 +1293,7 @@
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDS">
             <English>%1 performed AED Station</English>
-            <Polish>%1 wykonał cykl AED Station</Polish>
+            <Polish>%1 użył stacji AED</Polish>
             <German>%1 hat die AED Station benutzt</German>
             <Spanish>%1 utilizó la estación DEA</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
@@ -1308,7 +1308,7 @@
         </Key>
         <Key ID="STR_ACE_Medical_Treatment_Activity_AEDX">
             <English>%1 performed AED-X</English>
-            <Polish>%1 wykonał cykl AED-X</Polish>
+            <Polish>%1 użył AED-X</Polish>
             <German>%1 hat den AED-X benutzt</German>
             <Spanish>%1 utilizó AED-X</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
@@ -1330,6 +1330,7 @@
             <German>Maximale Erfolgschance für den AED-X</German>
             <Japanese>AED-Xの最大成功率</Japanese>
             <Spanish>Probabilidad máxima de éxito para DEA-X</Spanish>
+            <Polish>Maksymalna szansa na sukces dla AED-X</Polish>
         </Key>
         <Key ID="STR_KAT_circulation_AED_MaxChance">
             <English>Max Success chance for AED</English>
@@ -1340,6 +1341,7 @@
             <German>Maximale Erfolgschance für den AED</German>
             <Japanese>AEDの最大成功率</Japanese>
             <Spanish>Probabilidad máxima de éxito para DEA</Spanish>
+            <Polish>Maksymalna szansa na sukces dla AED</Polish>
         </Key>
         <Key ID="STR_KAT_circulation_AED_X_MinChance">
             <English>Min Success chance for AED-X</English>
@@ -1350,6 +1352,7 @@
             <German>Minimale Erfolgschance für den AED-X</German>
             <Japanese>AED-Xの最小成功確率</Japanese>
             <Spanish>Probabilidad mínima de éxito para DEA-X</Spanish>
+            <Polish>Minimalna szansa na sukces dla AED-X</Polish>
         </Key>
         <Key ID="STR_KAT_circulation_AED_MinChance">
             <English>Min Success chance for AED</English>
@@ -1360,6 +1363,7 @@
             <German>Minimale Erfolgschance für den AED</German>
             <Japanese>AEDの最小成功確率</Japanese>
             <Spanish>Probabilidad mínima de éxito para DEA</Spanish>
+            <Polish>Minimalna szansa na sukces dla AED</Polish>
         </Key>
         <Key ID="STR_KAT_circulation_ALLOW_AED">
             <English>Allow AED</English>
@@ -1486,7 +1490,7 @@
             <Italian>Massima probabilità RCP per i dottori.</Italian>
             <Czech>Max šance úspěchu resuscitace pro Doktory</Czech>
             <French>Chance maximale de succès de la RCP pour les médecins</French>
-            <Polish>Maksymalna szansa CPR dla Doktorów</Polish>
+            <Polish>Maksymalna szansa RKO dla Doktorów</Polish>
             <Korean>군의관의 최대 CPR 확률</Korean>
             <German>Maximale HLW-Erfolgsrate für Ärzte</German>
             <Chinesesimp>医生的最大心肺复苏几率</Chinesesimp>
@@ -1498,7 +1502,7 @@
             <Italian>Massima probabilità RCP per i medici.</Italian>
             <Czech>Max šance úspěchu resuscitace Polní zdravotníky</Czech>
             <French>Chance maximale de succès de la RCP pour les infirmiers</French>
-            <Polish>Maksymalna szansa CPR dla Medyków</Polish>
+            <Polish>Maksymalna szansa RKO dla Medyków</Polish>
             <Korean>의무병의 최대 CPR 확률</Korean>
             <German>Maximale HLW-Erfolgsrate für reguläre Sanitäter</German>
             <Chinesesimp>军医的最大心肺复苏几率</Chinesesimp>
@@ -1522,7 +1526,7 @@
             <Italian>Minima probabilità RCP per i dottori.</Italian>
             <Czech>Min šance úspěchu resuscitace pro Doktory</Czech>
             <French>Chance minimale de succès de la RCP pour les médecins</French>
-            <Polish>Minimalna szansa CPR dla Doktorów</Polish>
+            <Polish>Minimalna szansa RKO dla Doktorów</Polish>
             <Korean>군의관의 최소 CPR 확률</Korean>
             <German>Minimale HLW-Erfolgsrate für Ärzte</German>
             <Chinesesimp>医生的最小心肺复苏几率</Chinesesimp>
@@ -1534,7 +1538,7 @@
             <Italian>Minima probabilità RCP per i medici.</Italian>
             <Czech>Min šance úspěchu resuscitace Polní zdravotníky</Czech>
             <French>Chance minimale de succès de la RCP pour les infirmiers</French>
-            <Polish>Minimalna szansa CPR dla Medyków</Polish>
+            <Polish>Minimalna szansa RKO dla Medyków</Polish>
             <Korean>의무병의 최소 CPR 확률</Korean>
             <German>Minimale HLW-Erfolgsrate für reguläre Sanitäter</German>
             <Chinesesimp>军医的最小心肺复苏几率</Chinesesimp>
@@ -1546,7 +1550,7 @@
             <Italian>Minima probabilità RCP per i default.</Italian>
             <Czech>Min šance úspěchu resuscitace pro Základní</Czech>
             <French>Chance minimale de succès de la RCP par défaut</French>
-            <Polish>Minimalna szansa CPR domyślnie</Polish>
+            <Polish>Minimalna szansa RKO domyślnie</Polish>
             <Korean>일반병의 최소 CPR 확률</Korean>
             <German>Minimale Standard HLW-Erfolgsrate</German>
             <Chinesesimp>默认的最小心肺复苏几率</Chinesesimp>
@@ -1807,7 +1811,7 @@
             <Italian>Impostazioni RCP</Italian>
             <Czech>Nastavení resuscitace</Czech>
             <French>Paramètres de la RCP</French>
-            <Polish>Ustawienia CPR</Polish>
+            <Polish>Ustawienia RKO</Polish>
             <Korean>심폐소생술 설정</Korean>
             <German>HLW Einstellungen</German>
             <Chinesesimp>CPR设置</Chinesesimp>
