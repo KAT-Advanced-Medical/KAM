@@ -41,7 +41,7 @@ private _output = LLSTRING(overstretch_info);
     _patient setVariable [QGVAR(overstretch), false, true];
     _output = LLSTRING(overstretch_cancel);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
-}, [_medic, _patient], 600, {
+}, [_medic, _patient], 3600, {
     params ["_medic", "_patient"];
     if (_patient getVariable [QGVAR(recovery), false]) exitWith {};
     _patient setVariable [QGVAR(overstretch), false, true];

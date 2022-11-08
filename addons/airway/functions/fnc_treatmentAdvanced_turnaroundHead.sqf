@@ -21,7 +21,6 @@ params ["_medic", "_patient"];
 if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
     private _output = LLSTRING(Airway_turnaroundSuccess);
     [_output, 2, _medic] call ace_common_fnc_displayTextStructured;
-    false;
 };
 
 // TO-DO: head turning animation
@@ -32,5 +31,3 @@ private _output = LLSTRING(turnaround_info);
 if (random 100 < GVAR(probability_headturning)) then {
     _patient setVariable [QGVAR(occluded), false, true];
 };
-
-true;

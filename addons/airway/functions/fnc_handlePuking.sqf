@@ -28,7 +28,7 @@ _unit setVariable ["kat_pukeActive_PFH", true];
     private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
     private _recovery = _unit getVariable [QGVAR(recovery), false];
 
-    if ((!(alive _unit)) || !_isUnconscious || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") || _recovery) exitWith {
+    if ((!(alive _unit)) || !_isUnconscious || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") || _recovery) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_pukeActive_PFH", nil];
     };

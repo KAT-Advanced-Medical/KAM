@@ -16,6 +16,6 @@
  * Public: No
  */
 
-params ["_patient"];
+params ["_medic","_patient"];
 
 playsound3D [QPATHTOF_SOUND(sounds\suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
