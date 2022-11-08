@@ -121,4 +121,3 @@ class BloodIV_AB_N_250: BloodIV_250 {
     items[] = {"kat_bloodIV_AB_N_250"};
     callbackSuccess = "[_medic, _patient, _bodyPart, _className, _usedItem] call kat_circulation_fnc_handleTreatment; [_patient, 200, 4] call kat_pharma_fnc_fluid;";
 };
-

@@ -37,7 +37,7 @@ _unit setVariable [QEGVAR(breathing,airwayStatus), 100, true];
 _unit setVariable [QEGVAR(breathing,pneumothorax), false, true];
 _unit setVariable [QEGVAR(breathing,hemopneumothorax), false, true];
 _unit setVariable [QEGVAR(breathing,tensionpneumothorax), false, true];
-_unit setVariable ["KAT_medical_activeChestSeal", false, true];
+_unit setVariable [QEGVAR(breathing,activeChestSeal), false, true];
 
 _unit setVariable ["kat_breathing_pulseoximeter", false, true];
 _unit setVariable ["kat_PulseoxiInUse_PFH", nil];

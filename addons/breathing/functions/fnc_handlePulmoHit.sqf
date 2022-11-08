@@ -26,7 +26,7 @@ if ((_damage < GVAR(pneumothoraxDamageThreshold)) || (GVAR(pneumothorax) isEqual
 private _hemo = _unit getVariable [QGVAR(hemopneumothorax), false];
 private _tension = _unit getVariable [QGVAR(tensionpneumothorax), false];
 
-if (random 100 <= GVAR(pneumothorax)) then {
+if (random 100 <= GVAR(pneumothoraxChance)) then {
     // add breathing sound
     [_unit, 0.5] call ace_medical_status_fnc_adjustPainLevel;
     [_unit] call FUNC(handleBreathing);
