@@ -1178,7 +1178,7 @@
             <Spanish>Tabla de compatibilidad sanguíneos</Spanish>
             <Chinese>血型相容表</Chinese>
             <Chinesesimp>血型相容表</Chinesesimp>
-            <Czech>tahák krevních skupin</Czech>
+            <Czech>Tahák krevních skupin</Czech>
             <Korean>혈액형 비교표</Korean>
             <French>Fiche d'indication des groupes sanguins</French>
             <Turkish>Kan Grubu Tablosu</Turkish>
@@ -1283,7 +1283,7 @@
             <Spanish>%1 utilizó el DEA</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
             <Chinesesimp>%1 已使用AED</Chinesesimp>
-            <Czech>%1 použito AED</Czech>
+            <Czech>%1 použil AED</Czech>
             <Korean>%1 은(는) 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED</French>
             <Turkish>%1 AED gerçekleştirdi</Turkish>
@@ -1298,7 +1298,7 @@
             <Spanish>%1 utilizó la estación DEA</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
             <Chinesesimp>%1 已使用固定式AED</Chinesesimp>
-            <Czech>%1 použita AED stanice</Czech>
+            <Czech>%1 použil AED stanici</Czech>
             <Korean>%1 은(는) 비치형 자동제세동기가 사용되었습니다</Korean>
             <French>%1 a utilisé une station AED</French>
             <Turkish>%1 gerçekleştirilen AED İstasyonu</Turkish>
@@ -1313,7 +1313,7 @@
             <Spanish>%1 utilizó AED-X</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
             <Chinesesimp>%1 已使用AED-X</Chinesesimp>
-            <Czech>%1 použito AED-X</Czech>
+            <Czech>%1 použil AED-X</Czech>
             <Korean>%1 은(는) X 시리즈 AED가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED-X</French>
             <Russian>%1 выполнил AED-X</Russian>
@@ -1500,7 +1500,7 @@
         <Key ID="STR_KAT_circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
             <Italian>Massima probabilità RCP per i medici.</Italian>
-            <Czech>Max šance úspěchu resuscitace Polní zdravotníky</Czech>
+            <Czech>Max šance úspěchu resuscitace pro Zdravotníky</Czech>
             <French>Chance maximale de succès de la RCP pour les infirmiers</French>
             <Polish>Maksymalna szansa RKO dla Medyków</Polish>
             <Korean>의무병의 최대 CPR 확률</Korean>
@@ -1536,7 +1536,7 @@
         <Key ID="STR_KAT_circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
             <Italian>Minima probabilità RCP per i medici.</Italian>
-            <Czech>Min šance úspěchu resuscitace Polní zdravotníky</Czech>
+            <Czech>Min šance úspěchu resuscitace Zdravotníky</Czech>
             <French>Chance minimale de succès de la RCP pour les infirmiers</French>
             <Polish>Minimalna szansa RKO dla Medyków</Polish>
             <Korean>의무병의 최소 CPR 확률</Korean>

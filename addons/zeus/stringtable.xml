@@ -4,7 +4,7 @@
         <Key ID="STR_kat_zeus_ModuleManageAirway_Obstruction">
             <English>Airway obstruction: </English>
             <German>Atemwegsobstruktion: </German>
-            <Czech>Zablokování dýchacích cest: </Czech>
+            <Czech>Obstrukce dýchacích cest: </Czech>
             <French>Obstruction des voies aériennes: </French>
             <Polish>Zator dróg oddechowych: </Polish>
             <Spanish>Obstrucción de vías aéreas: </Spanish>
@@ -19,7 +19,7 @@
         <Key ID="STR_kat_zeus_ModuleManageAirway_Occlusion">
             <English>Airway occlusion: </English>
             <German>Atemwegsverstopfung: </German>
-            <Czech>Uzavření dýchacích cest: </Czech>
+            <Czech>Okluze dýchacích cest: </Czech>
             <Polish>Zablokowanie dróg oddechowych: </Polish>
             <Spanish>Oclusión de vías aéreas: </Spanish>
             <French>Occlusion des voies aériennes:</French>
@@ -214,7 +214,7 @@
         <Key ID="STR_kat_zeus_shockablestate_Module_non_shockable">
             <English>non-shockable (Asystole)</English>
             <German>Nicht-Schockbar (Asystolie)</German>
-            <Czech>Nešokovatelný (Asystola)</Czech>
+            <Czech>Nešokovatelný (Asystolie)</Czech>
             <French>Non-choquable (Asystolie) </French>
             <Polish>Niedefibrylacyjny (Asystolia)</Polish>
             <Spanish>No desfibrilable (Asístolia)</Spanish>

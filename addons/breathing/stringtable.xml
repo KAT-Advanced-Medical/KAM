@@ -312,7 +312,7 @@
                 %1呼吸道是否暢通？
                 %1Sp02 大於 70% -&gt; 是
                 %1Sp02 低於 70% -&gt; 不是 -&gt; ass. 呼吸道</Chinese>
-            <Czech>Breathing
+            <Czech>Dýchání
                 %1Dostatečně ventilovaný?
                 %1Sp02 přes 70% -&gt; Ano
                 %1Sp02 pod 70% -&gt; Ne -&gt; ass. Dýchání</Czech>
@@ -346,7 +346,7 @@
             <Polish>Jeżeli udrożniłeś drogi oddechowe przy pomocy rurki krtaniowej, omiń to.</Polish>
             <Spanish>Si trataste las vías aéreas con un tubo laríngeo, omite esto</Spanish>
             <Chinese>如果妳已經使用喉管暢通的話那就跳過這個。</Chinese>
-            <Czech>Pokud si zajistil/zachránil dýchací cesty pomocí larynxtube, vynechej to</Czech>
+            <Czech>Pokud si zajistil / zachránil dýchací cesty pomocí laryngeální tuby, vynechej to</Czech>
             <Korean>만약 기관내삽관으로 기도를 확보하였다면 건너뛰십시오</Korean>
             <French>Si vous avez sauvegardé les voies respiratoires avec un tube laryngé passez l'action</French>
             <Turkish>Solunum yolunu bir Laringeal Tüp ile kaydettiyseniz bunu atlayın</Turkish>
@@ -361,7 +361,7 @@
             <Polish>%1 wyleczył odmę opłucnową</Polish>
             <Chinese>%1 已經治癒氣胸</Chinese>
             <Chinesesimp>%1 已治愈气胸</Chinesesimp>
-            <Czech>%1 vyléčen pneumotorax</Czech>
+            <Czech>%1 ošetřil pneumotorax</Czech>
             <Korean>%1 은(는) 기흉 치료 완료</Korean>
             <French>%1 a traité un pneumothorax</French>
             <Turkish>%1 pnömotoraksı tedavi etti</Turkish>
@@ -436,7 +436,7 @@
             <Spanish>El sello torácico es un parche diseñado para tratar y sellar heridas abiertas en el pecho bajo la mayoría de circustancias.</Spanish>
             <Chinese>臨時氣胸密封貼在大多數情況下用途於治癒、密封或者二度密封因為胸腔受傷破裂導致的氣胸</Chinese>
             <Chinesesimp>临时气胸密封贴用于治疗,密封或二次密封因胸腔破损导致的气胸</Chinesesimp>
-            <Czech>Hrudní krytí je navrženo pro léčení, zakrytí a odkrytí otevřených ran na hrudníku ve většině situací.</Czech>
+            <Czech>Hrudní krytí je navrženo pro léčení, zakrytí a uzavření otevřených ran na hrudníku ve většině situací.</Czech>
             <Korean>체스트 씰은 대부분의 상황에서 흉부 개방 상처를 치료, 봉인 및 재봉인하도록 설계되었습니다.</Korean>
             <French>Le pansement thoracique est conçu pour traiter et refermer une blessure thoracique dans la majorité des cas</French>
             <Turkish>Chest Seal, çoğu durumda açık göğüs yaralarını tedavi etmek, kapatmak ve yeniden kapatmak için tasarlanmıştır.</Turkish>
@@ -466,7 +466,7 @@
             <Spanish>Nivel de entrenamiento requerido para usar un oxímetro de pulso</Spanish>
             <Chinese>使用脈搏血氧儀所需的培訓水平</Chinese>
             <Chinesesimp>使用脉搏血氧仪所需的医疗培训水平</Chinesesimp>
-            <Czech>Úroveň výcviku nutná k použití pulzního oxymetru</Czech>
+            <Czech>Úroveň výcviku nutná k použití Pulzního oxymetru</Czech>
             <Korean>맥박산소측정기를 사용하는 데 필요한 의료 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser un oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresi kullanmak için gerekli eğitim seviyesi</Turkish>
@@ -481,7 +481,7 @@
             <Spanish>Permitir sello torácico</Spanish>
             <Chinese>允許胸部</Chinese>
             <Chinesesimp>允许临时气胸密封贴</Chinesesimp>
-            <Czech>Povolit hrudní krytí</Czech>
+            <Czech>Povolit Hrudní krytí</Czech>
             <Korean>체스트 씰 허가</Korean>
             <French>Autoriser le pansement thoracique</French>
             <Turkish>Chest Seal'a izin ver</Turkish>
@@ -496,7 +496,7 @@
             <Spanish>Nivel de entrenamiento requerido para usar un sello torácico</Spanish>
             <Chinese>使用胸膜所需的訓練水平</Chinese>
             <Chinesesimp>使用临时气胸密封贴所需的医疗培训水平</Chinesesimp>
-            <Czech>Úroveň výcviku nutná k použití hrudního krytí</Czech>
+            <Czech>Úroveň výcviku nutná k použití Hrudního krytí</Czech>
             <Korean>체스트 씰을 사용하는 데 필요한 의료 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser un pansement thoracique</French>
             <Turkish>Chest Seal kullanmak için gerekli eğitim seviyesi</Turkish>
@@ -513,7 +513,7 @@
             <French>Autoriser le pansement thoracique sur soi-même</French>
             <Polish>Pozwól na samo leczenie przy użyciu Chest Seala</Polish>
             <Italian>Permetti automedicazione con Chest Seal.</Italian>
-            <Czech>Povolit vlastní léčení pomocí hrudního krytí</Czech>
+            <Czech>Povolit vlastní léčení pomocí Hrudního krytí</Czech>
             <German>Erlauben die Selbstbehandlung mit Chest Seal</German>
             <Spanish>Permitir autotratarse con un sello torácico</Spanish>
         </Key>
@@ -569,7 +569,7 @@
             <Polish>%1 wyleczył Krwiaka opłucnej</Polish>
             <Chinese>%1 治疗了血气胸</Chinese>
             <Chinesesimp>%1 治愈了血气胸</Chinesesimp>
-            <Czech>%1 léčil hemopneumotorax</Czech>
+            <Czech>%1 ošetřill hemopneumotorax</Czech>
             <Korean>%1 은(는) 혈기흉 치료 완료</Korean>
             <French>%1 a traité un hémopneumothorax</French>
             <Turkish>%1 Hemopnömotoraksı tedavi etti</Turkish>
@@ -614,7 +614,7 @@
             <Polish>%1 wyleczył Odmę prężną</Polish>
             <Chinese>%1 治疗了血气胸</Chinese>
             <Chinesesimp>%1 治愈了张力性气胸</Chinesesimp>
-            <Czech>%1 léčil hemopneumotorax</Czech>
+            <Czech>%1 ošetřil hemopneumotorax</Czech>
             <Korean>%1 은(는) 긴장성 기흉 치료 완료</Korean>
             <French>%1 a traité un pneumothorax sous tension</French>
             <Turkish>%1 Gerilim Pnömotoraks'ı tedavi edildi</Turkish>
@@ -659,7 +659,7 @@
             <Spanish>El kit de tratamiento avanzado de las vías aéreas es un kit de un solo uso diseñado para tratar afecciones avanzadas de las vías respiratorias, como el hemotórax.</Spanish>
             <Chinese>高級氣道治療套件是一次性使用的套件，用於治療氣道血氣胸等高級氣道疾病</Chinese>
             <Chinesesimp>AAT Kit即高级气道治疗套件,用于处理与气胸相关问题</Chinesesimp>
-            <Czech>The AAT Kit is designed to treat hemopneumothorax</Czech>
+            <Czech>AAT Sada je navržena pro ošetření hemotoraxu a tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
             <Korean>AAT 키트(Advanced Airway Treatment Kit)는 혈기흉 같은 고급기도이상을 치료하도록 설계된 일회용 키트입니다.</Korean>
             <French>Le Kit de Traitement médical d’urgence des voies aériennes est un kit à usage unique, désigné pour traiter les blessures urgentes des voies aériennes comme des hémo-pneumothorax.</French>
             <Turkish>Gelişmiş Hava Yolu Tedavi Kiti, hemopnömotoraks gibi gelişmiş hava yolu koşullarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
@@ -674,7 +674,7 @@
             <Spanish>Probabilidad de hemotórax/neumotórax a tensión</Spanish>
             <Chinese>血胸胸機會</Chinese>
             <Chinesesimp>血气胸/张力性气胸概率</Chinesesimp>
-            <Czech>Šance na hemopneumotorax</Czech>
+            <Czech>Šance na hemotorax / tenzní pneumotorax</Czech>
             <Korean>혈기흉 발생 확률</Korean>
             <French>Chance d'avoir un hémopneumothorax / pneumothorax sous tension</French>
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Şansı</Turkish>
@@ -689,7 +689,7 @@
             <Spanish>La probabilidad de que un paciente sufra un hemotórax/neumotórax a tensión al mismo tiempo que padece un neumotórax. El tratamiento requiere el uso de un kit AAT.</Spanish>
             <Chinese>患者患氣胸的同時患上血胸的機會百分比。 處理需要使用AAT套件排出流體。</Chinese>
             <Chinesesimp>患者在接受气胸治疗后是否有能患血气胸或张力性气胸,需要使用AAT Kit排出胸腔液体</Chinesesimp>
-            <Czech>Procentní šance, že pacient bude trpět hemotoraxem současně s pneumotoraxem. Léčba vyžaduje vypouštění tekutin pomocí sady AAT.</Czech>
+            <Czech>Procentní šance, že pacient bude trpět hemotoraxem současně s pneumotoraxem. Léčba vyžaduje odsátí tekutin pomocí sady AAT.</Czech>
             <Korean>환자가 혈기흉을 앓을 확률입니다. 치료에는 AAT 키트를 사용하여 체액을 배출해야합니다.</Korean>
             <French>Le pourcentage de chance qu'un patient souffre d'un hémopneumothorax ou un pneumothorax sous tension en même temps qu'un pneumothorax. Le traitement necessitera d'évacuer les fluides en utilisant un kit AAT</French>
             <Turkish>Bir hastanın pnömotoraks tedavisi gördükten sonra hemotoraks veya tansiyon pnömotorakstan muzdarip olma şansı yüzdesi. Tedavi, sıvıların bir AAT Kiti kullanılarak boşaltılmasını gerektirir.</Turkish>
@@ -719,7 +719,7 @@
             <Spanish>El nivel médico mínimo requerido para que alguien pueda usar un AAT Kit, que se utiliza para tratar un hemotórax/neumotórax a tensión</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
             <Chinesesimp>使用胸腔穿刺减压所需的医疗培训水平</Chinesesimp>
-            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT kitu a používá se k léčbě hemopneumotoraxu.</Czech>
+            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT sady a používá se k léčbě hemotoraxu či tenzního pneumotoraxu.</Czech>
             <Korean>혈기흉 치료에 사용되는 바늘 감압 치료 조치를 수행할 수 있는 사람에게 필요한 최소 의료레벨 수준입니다.</Korean>
             <French>Niveau médical minimum requis pour effectuer une aiguille de décompression et une aspiration des fluides, pour traiter un hémopneumothorax ou un pneumothorax sous tension </French>
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
@@ -734,7 +734,7 @@
             <Spanish>Umbral de daño para neumotórax</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
             <Chinesesimp>使用排出胸腔液体所需的医疗培训水平</Chinesesimp>
-            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT kitu a používá se k léčbě hemopneumotoraxu.</Czech>
+            <Czech>Práh poškození pneumotoraxem</Czech>
             <Korean>기흉 발생 가능성의 데미지 척도</Korean>
             <French>Seuil de dégâts d'un pneumothorax</French>
             <Turkish>Pnömotoraks Hasar Eşiği</Turkish>
@@ -749,7 +749,7 @@
             <Spanish>La cantidad de daño necesario en un solo impacto, en una escala de 0 a 1 que se necesita antes de que haya una probabilidad para un neumotórax. Mientras mas bajo sea un valor, mas probable sera que se cree un neumotórax. Un valor muy bajo o cero puede llegar a causar un comportamiento extraño, resultando en neumotorax que provienen de lesiones incoherentes.</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
             <Chinesesimp>患者在接受气胸治疗后患血气胸或张力性气胸的几率</Chinesesimp>
-            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT kitu a používá se k léčbě hemopneumotoraxu.</Czech>
+            <Czech>Úroveň poškození jednotlivým účinkem na škále 0 - 1, ke kterému musí dojít, aby se aktivovala šance na pneumotorax. Nižší hodnoty znamenají vyšší pravděpodobnost způsobení pneumotoraxu. Nastavení velmi nízké hodnoty, či nuly, může způsobit neočekávané chování či způsobení pneumotoraxu z nesouvisejících zranění. </Czech>
             <Korean>기흉이 발생할 확률 이전에 발생해야 하는 0~1 확률의 단일 피해량. 값이 낮을수록 기흉 발생 확률이 높아집니다. 값을 매우 낮게 하거나 0으로 설정하면 예기치 않은 부상으로부터 예기치 못한 행동이나 부상이 발생할 수 있습니다.</Korean>
             <French>La quantité de dégâts nécessaires en un seul impact, sur une échelle de 0 à 1, pour qu'un pneumothorax puisse avoir lieu. Une valeur basse signifie qu'un pneumothorax pourra arriver plus fréquemment. Mettre à la valeur très basse, ou à zero, pourrait causer des problèmes inattendus ou un pneumothorax de blessures inattendues.</French>
             <Turkish>Pnömotoraks olasılığı olmadan önce meydana gelmesi gereken, 0 ila 1 ölçeğinde tek bir darbede hasar miktarı. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya sıfır olarak ayarlanması, beklenmedik yaralanmalardan kaynaklanan beklenmedik davranışlara veya pnömotoraksa neden olabilir.</Turkish>
@@ -779,7 +779,7 @@
             <Spanish>Modifica la dificultad para que el neumotórax no aparezca en el menú médico: se deberá usar un estetoscopio</Spanish>
             <Chinese>通过不让它出现在医疗菜单中来启用气胸的核心模块 - 听诊器可能会有所帮助</Chinese>
             <Chinesesimp>通过不让气胸直接显示在医疗诊断中来提高难度,使用听诊器能间接诊断气胸</Chinesesimp>
-            <Czech>Povoluje obtížný režim pro pneumotorax, který jej nezobrazí ve zdravotnické nabídnce - Stetoskop by mohl být nápomocný</Czech>
+            <Czech>Povoluje obtížný režim pro pneumotorax, který jej nezobrazí ve zdravotnické nabídce - Stetoskop by mohl být nápomocný</Czech>
             <Korean>기흉을 의료 메뉴에 표시되지 않게 하는 모드 활성화 - 청진기가 도움이 될 수 있음</Korean>
             <French>Active le mod hardcore pour le pneumothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile </French>
             <Turkish>Tıbbi menüde görünmesini sağlamayarak pnömotoraks için hardcore modunu etkinleştirir - Stetoskop yardımcı olabilir </Turkish>
@@ -794,7 +794,7 @@
             <Spanish>Neumotórax a tensión y hemotórax  extremos</Spanish>
             <Chinese>硬核张力性气胸和血胸</Chinese>
             <Chinesesimp>硬核张力性气胸和血气胸</Chinesesimp>
-            <Czech>Obtížný tezní pneumothorax a hemotorax</Czech>
+            <Czech>Obtížný tezní pneumotorax a hemotorax</Czech>
             <Korean>하드코어 긴장성 기흉과 혈기흉</Korean>
             <French>Hémopneumothorax et pneumothorax sous tension  hardcore </French>
             <Turkish>Sert tansiyon pnömotoraks ve hemotoraks</Turkish>
@@ -809,7 +809,7 @@
             <Spanish>Modifica la dificultad para que el neumotórax a tensión y hemotórax no aparezcan en el menú médico: se deberá usar un estetoscopio</Spanish>
             <Chinese>通过不在医疗菜单中显示来启用紧张和血胸的硬核模块 - 听诊器可能会有所帮助</Chinese>
             <Chinesesimp>通过不让张力性气胸和血气胸直接显示在医疗诊断中来提高难度,使用听诊器能间接诊断张力性气胸和血气胸</Chinesesimp>
-            <Czech>Povoluje obtížný režim pro tezní pneumothorax a hemotorax, který jej nezobrazí ve zdravotnické nabídnce - Stetoskop by mohl být nápomocný</Czech>
+            <Czech>Povoluje obtížný režim pro tezní pneumotorax a hemotorax, který jej nezobrazí ve zdravotnické nabídce - Stetoskop by mohl být nápomocný</Czech>
             <Korean>긴장성 기흉과 혈기흉을 의료 메뉴에 표시되지 않게 하는 모드 활성화 - 청진기가 도움이 될 수 있음</Korean>
             <French>Active le mod hardcore pour le pneumothorax sous tension  et l'hémopneumothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile</French>
             <Turkish>Medikal menüde görünmeyerek tansiyon ve hemotoraks için hardcore modu etkinleştirir - Stetoskop yardımcı olabilir</Turkish>
@@ -899,7 +899,7 @@
             <Spanish>Determina qué tan fuertes son los sonidos del tórax cuando se usa el estetoscopio</Spanish>
             <Chinese>确定使用听诊器时胸部声音的响度</Chinese>
             <Chinesesimp>确定使用听诊器时胸部声音的响度</Chinesesimp>
-            <Czech>Určuje jak moc jsou torax zvuky hlasité při používání stetoskopu</Czech>
+            <Czech>Určuje jak moc jsou zvuky toraxu hlasité při používání stetoskopu</Czech>
             <Korean>청진기를 사용할 때 폐음의 크기를 결정합니다.</Korean>
             <French>Détermine à quel point les sons du thorax sont forts lors de l'utilisation du stéthoscope</French>
             <Turkish>Stetoskop kullanırken toraks seslerinin ne kadar yüksek olduğunu belirler</Turkish>
@@ -952,7 +952,7 @@
         </Key>
         <Key ID="STR_kat_breathing_showPneumothorax_dupe_DESC">
             <English>Default is disabled. If enabled, units with tension pneumothorax or hemopneumothorax will also have pneumothorax injury displayed in medical menu.</English>
-            <Czech>Výchozí nastavení zakázáno. Pokud povoleno, jednotky s tenzním pneumotoraxem a nebo hemopneumotoraxem budou mít též zranění pneumotorax ukázán ve zdravotnické nabídce.</Czech>
+            <Czech>Výchozí nastavení zakázáno. Pokud povoleno, jednotky s tenzním pneumotoraxem a nebo hemotoraxem budou mít též zranění pneumotorax ukázán ve zdravotnické nabídce.</Czech>
             <German>Standardmäßig ist diese Option deaktiviert. Wenn aktiviert, wird bei Einheiten mit Spannungspneumothorax oder Hämopneumothorax auch die Pneumothorax-Verletzung im medizinischen Menü angezeigt.</German>
             <Japanese>デフォルトは無効です。有効にすると、緊張性気胸または血気胸のあるユニットでも、医療メニューに発生した他の気胸が表示されます。</Japanese>
             <Chinesesimp>默认值处于禁用状态.如果启用,张力性气胸或血气胸的单位也会在医疗菜单中显示气胸损伤</Chinesesimp>
@@ -1183,7 +1183,7 @@
             <French>Niveau médical minimum pour contrôler la cyanose</French>
             <Turkish>Siyanoz minimum düzeyini kontrol edin</Turkish>
             <Italian>Controlla livello minimo di cianosi.</Italian>
-            <Czech>Minimální level ke zkontrolování cyanózy</Czech>
+            <Czech>Minimální úroveň ke zkontrolování cyanózy</Czech>
             <Spanish>Nivel médico minimo requerido para analizar la cianosis</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_CYANOSIS_TREATMENT_LEVEL_DESCRIPTION">
@@ -1298,6 +1298,7 @@
         <Key ID="STR_kat_breathing_basicSupplyCrate_display">
             <English>[KAM] General Items</English>
             <Polish>[KAM] Podstawowe przedmioty</Polish>
+            <Czech>[KAM] Obecné předměty</Czech>
         </Key>
     </Package>
 </Project>
