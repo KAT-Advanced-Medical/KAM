@@ -423,15 +423,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(ketamineTimer),
-    "SLIDER",
-    [LLSTRING(repeat_Ketamine)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
-    [0.1, 120, 10, 1],
-    true
-] call CBA_Settings_fnc_init;
-
 //Fentanyl Settings Category
 [
     QGVAR(medLvl_Fentanyl),
@@ -474,16 +465,7 @@ PREP_RECOMPILE_END;
 	QGVAR(kidneyAction),
 	"CHECKBOX",
 	[LLSTRING(SETTING_Kidney_Action), LLSTRING(SETTING_Kidney_Action_DESC)],
-	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Kidney)],
-	[false],
-	true
-] call CBA_Settings_fnc_init;
-
-[
-	QGVAR(aiEnableAdvanced),
-	"CHECKBOX",
-	[LLSTRING(SETTING_aiEnabled), LLSTRING(SETTING_aiEnabled_DESC)],
-	CBA_SETTINGS_CAT,
+	[CBA_SETTINGS_CAT],
 	[false],
 	true
 ] call CBA_Settings_fnc_init;

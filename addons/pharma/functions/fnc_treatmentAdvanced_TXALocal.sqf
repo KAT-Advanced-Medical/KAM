@@ -47,6 +47,10 @@ if !(GVAR(coagulation)) then {
             private _alive = alive _patient;
             private _exit = true;
 
+            if !(GVAR(kidneyAction)) then {
+                _patient setVariable [QGVAR(pH), 1500, true];
+            };
+
             private _random = random 1000;
             private _ph = (_patient getVariable [QGVAR(pH), 1500]) - 500;
 
@@ -56,7 +60,7 @@ if !(GVAR(coagulation)) then {
 
                     if (_amount * _bleeding > 0) exitWith {
                         private _part = ALL_BODY_PARTS select _bodyPart;
-                        ["ace_medical_treatment_bandageLocal", [_patient, _part, "PackingBandage"], _patient] call CBA_fnc_patientEvent;
+                        ["ace_medical_treatment_bandageLocal", [_patient, _part, "PackingBandage"], _patient] call CBA_fnc_targetEvent;
                         _exit = false;
                     };
                 } forEach _openWounds;

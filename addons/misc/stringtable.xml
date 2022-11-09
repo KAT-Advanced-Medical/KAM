@@ -124,7 +124,7 @@
         <Key ID="STR_kat_misc_SETTING_LIMITWOUNDS_ENABLE">
             <English>Enable limited wounds</English>
             <German>Aktiviere limitierte Wunden</German>
-            <Polish>Umożliwiają ograniczone rany</Polish>
+            <Polish>Umożliwia ograniczanie ran</Polish>
             <Spanish>Habilitar límite de heridas</Spanish>
             <Chinese>開啟傷口限制</Chinese>
             <Chinesesimp>开启伤口限制</Chinesesimp>
@@ -154,7 +154,7 @@
         <Key ID="STR_kat_misc_Condition_limitWounds_Display">
             <English>Use condition limit wounds</English>
             <German>Bendingung für limitierte Wunden</German>
-            <Polish>Stosować rany ograniczające stan zdrowia</Polish>
+            <Polish>Warunek ograniczenia rany</Polish>
             <Spanish>Condición de uso del límite de heridas</Spanish>
             <Chinese>以條件來限制傷口</Chinese>
             <Chinesesimp>用条件来限制伤口</Chinesesimp>
@@ -398,6 +398,7 @@
             <Japanese>武器庫医療分類</Japanese>
             <Spanish>Categoria médica en Arsenal</Spanish>
             <Italian>Categoria medica nell'Arsenale</Italian>
+            <Polish>Kategoria medyczna w Arsenale</Polish>
         </Key>
         <Key ID="STR_kat_misc_SETTING_arsenalMedCategory_Desc">
             <English>Enable medical category for arsenal and relocate all medical related items to it?</English>
@@ -406,6 +407,7 @@
             <Japanese>武器庫の医療分類を有効にして、すべての医療関連アイテムをそこに再配置しますか?</Japanese>
             <Spanish>Habilitar la categoría médica para el arsenal y mover todos los elementos médicos a este?</Spanish>
             <Italian>Abilita la categoria medica nell'arsernale e muovi tutti gli oggetti medici in questa categoria?</Italian>
+            <Polish>Włączyć kategorię medyczną dla arsenału i przenieść do niej wszystkie przedmioty związane z medycyną?</Polish>
         </Key>
     </Package>
 </Project>

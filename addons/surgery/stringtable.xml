@@ -285,6 +285,7 @@
             <German>Für das Anlegen von Inzisionen und das Debridieren von Wunden</German>
             <Japanese>切開創と創面切除に使用</Japanese>
             <Spanish>Usado para crear incisiones y desbridar heridas</Spanish>
+            <Polish>Służy do tworzenia nacięć i oczyszczania ran</Polish>
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_Use">
             <English>Perform Incision</English>
@@ -332,6 +333,7 @@
             <German>Zur Erweiterung und Freilegung von Frakturen</German>
             <Japanese>骨折を広げて露出させるために使用されます</Japanese>
             <Spanish>Usado para expandir y exponer heridas</Spanish>
+            <Polish>Służy do rozszerzania i odsłonień złamań</Polish>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_Use">
             <English>Expose Fracture</English>
@@ -391,6 +393,7 @@
             <German>Zum Klemmen von Trümmerfrakturen</German>
             <Japanese>粉砕骨折をクランプするために使用</Japanese>
             <Spanish>Usada para sujetar las fracturas conminutas</Spanish>
+            <Polish>Służy do zaciskania skomplikowanych złamań</Polish>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_Use">
             <English>Clamp Fracture</English>
@@ -462,6 +465,7 @@
             <German>Zur Vervollständigung aller komplexen Frakturtypen</German>
             <Japanese>全ての複雑骨折に使われます</Japanese>
             <Spanish>Usada para fijar todas las fracturas avanzadas</Spanish>
+            <Polish>Służy do łączenia wszystkich złożonych typów złamań</Polish>
         </Key>
         <Key ID="STR_kat_surgery_Debride_Use">
             <English>Debride Wounds</English>
@@ -755,7 +759,8 @@
             <English>Time to apply an NPWT dressing</English>
             <Chinesesimp>施用 NPWT 敷料的时间</Chinesesimp>
             <Italian>Tempo per applicare una medicazione NPWT</Italian>
-            <Polish>Czas potrzebny do nałożenie opatrunku próżniowego</Polish>
+            <Polish>Czas potrzebny do nałożenie opatrunku próżniowego</Polish>            
+            <Polish>Czas potrzebny do nałożenie opatrunku próżniowego (NPWT)</Polish>
             <Czech>Čask použití NPWT</Czech>
             <French>Temps pour appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용 시간</Korean>
@@ -1002,6 +1007,10 @@
             <German>Niereneinstellungen</German>
             <Japanese>腎臓設定</Japanese>
             <Spanish>Parámetros para riñones</Spanish>
+        </Key>
+        <Key ID="STR_kat_surgery_surgeryToolbox">
+            <English>[KAM] Surgery Box</English>
+            <Polish>[KAM] Skrzynia chirugiczna</Polish>
         </Key>
     </Package>
 </Project>

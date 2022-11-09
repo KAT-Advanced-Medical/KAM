@@ -349,7 +349,7 @@
         <Key ID="STR_kat_airway_Airway_turnaroundSuccess">
             <English>Occlusion removed</English>
             <German>Verstopfung entfernt</German>
-            <Polish>Zablokowanie usunięte</Polish>
+            <Polish>Zator usunięty</Polish>
             <Spanish>Oclusión eliminada</Spanish>
             <Chinese>遮擋移除</Chinese>
             <Chinesesimp>气道异物移除</Chinesesimp>
@@ -560,7 +560,7 @@
             <English>The King LT is used to save the airways</English>
             <German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
             <Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
-            <Spanish>El tubo laríngeo remueve obstrucciones y previene oclusiones</Spanish>
+            <Spanish>El tubo laríngeo previene obstrucciones y oclusiones</Spanish>
             <Chinese>喉管是用於拯救呼吸道</Chinese>
             <Chinesesimp>King LT-D是一种无菌的一次性声门上气道装置,是气管插管或面罩通气的替代方法.</Chinesesimp>
             <Czech>King LT je používán na záchranu dýchacích cest</Czech>
@@ -575,7 +575,7 @@
             <English>The King LT is used to save the airways</English>
             <German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
             <Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
-            <Spanish>El tubo laríngeo remueve obstrucciones y previene oclusiones</Spanish>
+            <Spanish>El tubo laríngeo previene obstrucciones y oclusiones</Spanish>
             <Chinese>喉管是用於拯救呼吸道</Chinese>
             <Chinesesimp>King LT-D是一种无菌的一次性声门上气道装置,是气管插管或面罩通气的替代方法,经过特殊设计,可最大限度地减少气道创伤.</Chinesesimp>
             <Czech>King LT je používán na záchranu dýchacích cest</Czech>
@@ -605,7 +605,7 @@
             <English>The Guedel Tube is used to save the airways</English>
             <German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
             <Polish>Rurka ustno-gardłowa zabezpiecza drogi oddechowe</Polish>
-            <Spanish>La cánula de Guedel remueve obstrucciones</Spanish>
+            <Spanish>La cánula de Guedel impide obstrucciones</Spanish>
             <Chinese>抽吸管用於拯救呼吸道</Chinese>
             <Chinesesimp>Guedel是一种气道辅助通气装置,同时集成了舌垫可防止气道阻塞.</Chinesesimp>
             <Czech>Geudel tuba je používán na záchranu dýchacích cest</Czech>
@@ -620,7 +620,7 @@
             <English>The Guedel Tube is used to save the airways</English>
             <German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
             <Polish>Rurka ustno-gardłowa służy do podtrzymywania języka przed blokowaniem dróg oddechowych</Polish>
-            <Spanish>La cánula de Guedel remueve obstrucciones</Spanish>
+            <Spanish>La cánula de Guedel impide obstrucciones</Spanish>
             <Chinese>抽吸管用於拯救呼吸道</Chinese>
             <Chinesesimp>Guedel是一种气道辅助通气装置,同时集成了舌垫可防止气道阻塞.</Chinesesimp>
             <Czech>King LT je používán na záchranu dýchacích cest</Czech>
@@ -635,7 +635,7 @@
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
             <German>Der ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
-            <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
+            <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado por una batería, permitiendo movilidad ante una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>
             <Chinesesimp>ACCUVAC是紧急情况下使用的电池驱动的便携式医疗抽吸装置</Chinesesimp>
             <Czech>ACCUVAC je lékařské odsávací zařízení pro odsávání dýchacích cest s pohonem na baterky pro mobilní použití v pohotovostní medicíně.</Czech>
@@ -650,7 +650,7 @@
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
             <German>Der ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
-            <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado con batería, lo que le permiten movilidad en una emergencia médica.</Spanish>
+            <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado por una batería, permitiendo movilidad ante una emergencia médica.</Spanish>
             <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>
             <Chinesesimp>ACCUVAC是紧急情况下使用的电池驱动的便携式医疗抽吸装置</Chinesesimp>
             <Czech>ACCUVAC je lékařské odsávací zařízení pro odsávání dýchacích cest s pohonem na baterky pro mobilní použití v pohotovostní medicíně.</Czech>
@@ -739,7 +739,7 @@
             <English>Success probability for head-turning</English>
             <German>Erfolgsrate für Kopf zur Seite drehen</German>
             <Polish>Prawdopodobieństwo sukcesu w obróceniu głowy</Polish>
-            <Spanish>Probabilidad de éxito para llamar la atención</Spanish>
+            <Spanish>Probabilidad de éxito al girar la cabeza</Spanish>
             <Chinese>轉頭成功的可能性</Chinese>
             <Chinesesimp>清理气道异物的成功几率</Chinesesimp>
             <Czech>Pravděpodobnost úspěchu při otáčení hlavy</Czech>
@@ -1076,7 +1076,7 @@
             <Turkish>Kurtarma pozisyonu oluşturuldu</Turkish>
             <Italian>In posizione laterale di sicurezza</Italian>
             <Czech>Uveden do stabilizované polohy</Czech>
-            <Spanish>Posición lateral reclinada establecida</Spanish>
+            <Spanish>Posición lateral de seguridad establecida</Spanish>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayName">
             <English>Establish recovery position</English>
@@ -1089,12 +1089,12 @@
             <Turkish>Kurtarma pozisyonu oluşturun</Turkish>
             <Italian>Metti in posizione laterale di sicurezza</Italian>
             <Czech>Uvést do stabilizované polohy</Czech>
-            <Spanish>Establecer posición lateral reclinada</Spanish>
+            <Spanish>Establecer posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
             <English>Establishing recovery position</English>
             <German>In die stabile Seitenlage legen</German>
-            <Polish>Układanie w pozycji</Polish>
+            <Polish>Układanie w pozycji bezpiecznej</Polish>
             <Chinesesimp>正在建立恢复体态</Chinesesimp>
             <Japanese>回復体位にしています</Japanese>
             <Korean>회복자세 교정 중</Korean>
@@ -1102,7 +1102,7 @@
             <Turkish>Kurtarma pozisyonu oluşturuluyor</Turkish>
             <Italian>Mettendo in posizione laterale di sicurezza</Italian>
             <Czech>Uvádím do stabilizované polohy</Czech>
-            <Spanish>Moviendo a posición lateral reclinada</Spanish>
+            <Spanish>Moviendo a posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Info">
             <English>Recovery position established successfully</English>
@@ -1115,7 +1115,7 @@
             <Turkish>Kurtarma pozisyonu başarıyla kuruldu</Turkish>
             <Italian>Messo in posizione laterale di sicurezza</Italian>
             <Czech>Stabilizovaná poloha uvedena úspěšně</Czech>
-            <Spanish>Posición lateral reclinada establecida</Spanish>
+            <Spanish>Posición lateral de seguridad establecida</Spanish>
         </Key>
         <Key ID="STR_kat_airway_Recovery_Cancel">
             <English>Recovery position cancelled</English>
@@ -1141,7 +1141,7 @@
             <Turkish>Kurtarma pozisyonu %1 oluşturuldu</Turkish>
             <Italian>%1 messo in posizione laterale di sicurezza</Italian>
             <Czech>%1 uvedl do stabilizované polohy</Czech>
-            <Spanish>%1 estableció la posición lateral reclinada</Spanish>
+            <Spanish>%1 estableció la posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY">
             <English>Time for recovery position</English>
@@ -1154,7 +1154,7 @@
             <Turkish>Kurtarma pozisyonu için zaman</Turkish>
             <Italian>Tempo per mettere in posizione laterale di sicurezza</Italian>
             <Czech>Doba pro stabilizovanou polohu</Czech>
-            <Spanish>Tiempo para establecer en posición lateral reclinada</Spanish>
+            <Spanish>Tiempo para establecer en posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_TIME_RECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
@@ -1167,10 +1167,7 @@
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
             <Italian>Tempo necessario per mettere in posizione laterale di sicurezza</Italian>
             <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
-            <Spanish>Cuanto tiempo tomará establecer la posición de recuperación
-
-
-</Spanish>
+            <Spanish>Cuanto tiempo tomará establecer la posición de lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayName">
             <English>Cancel recovery position</English>
@@ -1183,7 +1180,7 @@
             <Turkish>Kurtarma pozisyonunu iptal et</Turkish>
             <Italian>Cancella la posizione laterale di sicurezza</Italian>
             <Czech>Zrušit stabilizovanou polohu</Czech>
-            <Spanish>Cancelar posición lateral reclinada</Spanish>
+            <Spanish>Cancelar posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_CancelRecoveryPosition_displayNameProgress">
             <English>Cancelling recovery position</English>
@@ -1196,7 +1193,7 @@
             <Turkish>Kurtarma pozisyonu iptal ediliyor</Turkish>
             <Italian>Cancellando la posizione laterale di sicurezza</Italian>
             <Czech>Ruším stabilizovanou polohu</Czech>
-            <Spanish>Cancelando la posición lateral reclinada</Spanish>
+            <Spanish>Cancelando la posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY">
             <English>Time for cancelling recovery position</English>
@@ -1209,7 +1206,7 @@
             <Turkish>Kurtarma pozisyonunu iptal etmek için zaman</Turkish>
             <Italian>Tempo per cancellare la  posizione laterale di sicurezza </Italian>
             <Czech>Doba pro zrušení stabilizované polohy</Czech>
-            <Spanish>Tiempo para cancelar la posición lateral reclinada</Spanish>
+            <Spanish>Tiempo para cancelar la posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_TIME_CANCELRECOVERY_DESC">
             <English>How long it will take to establish recovery position</English>
@@ -1222,10 +1219,7 @@
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
             <Italian>Tempo necessario per annullare la posizione laterale di sicurezza</Italian>
             <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
-            <Spanish>Cuanto tiempo tomará cancelar la posición de recuperación
-
-
-</Spanish>
+            <Spanish>Cuanto tiempo tomará cancelar la posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_noObstruction">
             <English>Not obstructed</English>
@@ -1276,10 +1270,8 @@
             <German>Wiederherstellungsposition + Überdehnungseinstellungen</German>
             <Chinesesimp>恢复体态设置</Chinesesimp>
             <Japanese>回復体位設定</Japanese>
-            <Spanish>Parámetros de posición de recuperación e hiperextensión
- de cabeza
-
-</Spanish>
+            <Spanish>Parámetros de posición lateral de seguridad e hiperextensión de cabeza</Spanish>
+            <Polish>Opcje - Pozycja bezpieczna + odchylanie głowy</Polish>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1291,6 +1283,7 @@
             <Chinesesimp>气道物品设置</Chinesesimp>
             <Japanese>気道アイテム設定</Japanese>
             <Spanish>Parámetros de las herramientas (vias aéreas)</Spanish>
+            <Polish>Opcje przedmiotów - Drogi oddechowe</Polish>
         </Key>
     </Package>
 </Project>

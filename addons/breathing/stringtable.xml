@@ -130,7 +130,7 @@
             <English>Probability for a pneumothorax</English>
             <German>Wahrscheinlichkeit für einen Pneumothorax</German>
             <Spanish>Probabilidad de un neumotórax</Spanish>
-            <Polish>Szansa na odmę płucną</Polish>
+            <Polish>Szansa na odmę opłucnową</Polish>
             <Chinese>氣胸的機率</Chinese>
             <Chinesesimp>气胸几率</Chinesesimp>
             <Czech>Pravděpodobnost pneumotoraxu</Czech>
@@ -358,7 +358,7 @@
             <English>%1 treated a pneumothorax</English>
             <German>%1 behandelte einen Pneumothorax</German>
             <Spanish>%1 trató un neumotórax</Spanish>
-            <Polish>%1 wyleczył odmę płucną</Polish>
+            <Polish>%1 wyleczył odmę opłucnową</Polish>
             <Chinese>%1 已經治癒氣胸</Chinese>
             <Chinesesimp>%1 已治愈气胸</Chinesesimp>
             <Czech>%1 vyléčen pneumotorax</Czech>
@@ -387,7 +387,7 @@
         <Key ID="STR_kat_breathing_pneumothorax_mm">
             <English>1x Pneumothorax</English>
             <German>1x Pneumothorax</German>
-            <Polish>1x Odma płucna</Polish>
+            <Polish>1x Odma opłucnowa</Polish>
             <Spanish>1x Neumotórax</Spanish>
             <Chinese>1等氣胸</Chinese>
             <Chinesesimp>1x 气胸</Chinesesimp>
@@ -432,7 +432,7 @@
         <Key ID="STR_kat_breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
             <German>Das Chest Seal ist so konzipiert, dass offene Brustwunden in den meisten Fällen behandelt, versiegelt und sie wieder verschlossen werden.</German>
-            <Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach. Leczy odmę płucną.</Polish>
+            <Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach. Leczy odmę opłucnową.</Polish>
             <Spanish>El sello torácico es un parche diseñado para tratar y sellar heridas abiertas en el pecho bajo la mayoría de circustancias.</Spanish>
             <Chinese>臨時氣胸密封貼在大多數情況下用途於治癒、密封或者二度密封因為胸腔受傷破裂導致的氣胸</Chinese>
             <Chinesesimp>临时气胸密封贴用于治疗,密封或二次密封因胸腔破损导致的气胸</Chinesesimp>
@@ -535,7 +535,7 @@
         <Key ID="STR_kat_breathing_DESCRIPTION_STABLE_SPO2">
             <English>After reaching more than selected value (default 85), only then patient can get conscious</English>
             <German>Wenn mehr als der ausgewählte Wert (Standard 85) erreicht ist, kann der Patient erst dann das Bewusstsein wieder erlangen</German>
-            <Polish>Po osiągnięciu wartości większej niż wybrana, pacjent może stać się przytomny. (Domyślna wartość to 85)</Polish>
+            <Polish>Po osiągnięciu wartości większej niż wybrana, pacjent może stać się przytomny. (Domyślna wartość to 85%)</Polish>
             <Spanish>Después de alcanzar más del valor seleccionado (valor predeterminado 85), solo entonces el paciente puede recuperar conciencia</Spanish>
             <Chinese>達到選定值以上（默認值85）後，患者才能清醒</Chinese>
             <Chinesesimp>达到设定值以上(默认85)之后,患者才能苏醒</Chinesesimp>
@@ -655,7 +655,7 @@
         <Key ID="STR_kat_breathing_aatKit_desc">
             <English>The Advanced Airway Treatment Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
             <German>Das erweiterte Atemwegsbehandlung-Kit ist ein Einweg-Kit zur Behandlung fortgeschrittener Atemwegserkrankungen wie Hämatopneumothorax</German>
-            <Polish>"Zaawansowany zestaw do leczenia dróg oddechowych" to zestaw jednorazowego użytku przeznaczony do leczenia zaawansowanych chorób dróg oddechowych, takich jak krwiak opłucnej lub odmę prężną.</Polish>
+            <Polish>"Zaawansowany zestaw do leczenia dróg oddechowych" to zestaw jednorazowego użytku przeznaczony do leczenia zaawansowanych chorób dróg oddechowych, takich jak krwiak opłucnej lub odmę prężną. Zawiera igłę do odbarczania oraz drenażu</Polish>
             <Spanish>El kit de tratamiento avanzado de las vías aéreas es un kit de un solo uso diseñado para tratar afecciones avanzadas de las vías respiratorias, como el hemotórax.</Spanish>
             <Chinese>高級氣道治療套件是一次性使用的套件，用於治療氣道血氣胸等高級氣道疾病</Chinese>
             <Chinesesimp>AAT Kit即高级气道治疗套件,用于处理与气胸相关问题</Chinesesimp>
@@ -685,7 +685,7 @@
         <Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>The percentage chance that a patient will suffer from a hemopneumotorax or tension pneumothorax after they are treated for a pneumothorax. Treatment requires the draining of fluids with the use of an AAT Kit.</English>
             <German>Die prozentuale Chance, dass ein Patient einen Hämatothorax oder einen Spannungspneumothorax bekommt. Die Behandlung benötigt das Entfernen von Flüssigkeit und das AAT Kit.</German>
-            <Polish>Procentowa szansa, że pacjent będzie cierpieć na krwiaka opłucnej lub odmę prężną w tym samym czasie, gdy cierpi na odmę płucną. Zabieg wymaga drenażu opłucnej za pomocą zestawu AAT.</Polish>
+            <Polish>Procentowa szansa, że pacjent będzie cierpieć na krwiaka opłucnej lub odmę prężną w tym samym czasie, gdy cierpi na odmę opłucnową. Zabieg wymaga drenażu opłucnej za pomocą zestawu AAT.</Polish>
             <Spanish>La probabilidad de que un paciente sufra un hemotórax/neumotórax a tensión al mismo tiempo que padece un neumotórax. El tratamiento requiere el uso de un kit AAT.</Spanish>
             <Chinese>患者患氣胸的同時患上血胸的機會百分比。 處理需要使用AAT套件排出流體。</Chinese>
             <Chinesesimp>患者在接受气胸治疗后是否有能患血气胸或张力性气胸,需要使用AAT Kit排出胸腔液体</Chinesesimp>
@@ -730,7 +730,7 @@
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
             <English>Pneumothorax Damage Threshold</English>
             <German>Schadensschwellwert Pneumothorax</German>
-            <Polish>Próg obrażeń, aby wystąpiła odma płucna</Polish>
+            <Polish>Próg obrażeń, aby wystąpiła odma opłucnowa</Polish>
             <Spanish>Umbral de daño para neumotórax</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
             <Chinesesimp>使用排出胸腔液体所需的医疗培训水平</Chinesesimp>
@@ -745,7 +745,7 @@
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION">
             <English>The amount of damage in a single impact, on a scale of 0 to 1, that needs to occur before there is a chance of pneumothorax. Lower values means that pneumothorax is more likely to occurr. Setting the value very low, or to zero, may cause unexpected behavior or pneumothorax from unexpected injuries.</English>
             <German>Die Höhe des Schadens bei einem einzigen Aufprall, welcher auf einer Skala von 0 bis 1 auftreten muss, bevor die Chance eines Pneumothoraxes besteht. Niedrigere Werte bedeuten, dass ein Pneumothorax wahrscheinlicher ist. Wird der Wert sehr niedrig oder auf null gesetzt, kann dies zu unerwartetem Verhalten oder zu einem Pneumothorax aufgrund unerwarteter Verletzungen führen.</German>
-            <Polish>Poziom obrażeń w jednym uderzeniu w skali od 0 do 1, który musi wystąpić, zanim zaistnieje odma płucna. Niższa wartość skutkuje większą szansą wystąpienia odmy. Ustawienie wartości bliskiej lub równej zeru może spowodować nieoczekiwane zachowanie lub skutkować uzyskaniem odmy płucnej od niewłaściwych ran.</Polish>
+            <Polish>Poziom obrażeń w jednym uderzeniu w skali od 0 do 1, który musi wystąpić, zanim zaistnieje odma opłucnowa. Niższa wartość skutkuje większą szansą wystąpienia odmy. Ustawienie wartości bliskiej lub równej zeru może spowodować nieoczekiwane zachowanie lub skutkować uzyskaniem odmy płucnej od niewłaściwych ran.</Polish>
             <Spanish>La cantidad de daño necesario en un solo impacto, en una escala de 0 a 1 que se necesita antes de que haya una probabilidad para un neumotórax. Mientras mas bajo sea un valor, mas probable sera que se cree un neumotórax. Un valor muy bajo o cero puede llegar a causar un comportamiento extraño, resultando en neumotorax que provienen de lesiones incoherentes.</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
             <Chinesesimp>患者在接受气胸治疗后患血气胸或张力性气胸的几率</Chinesesimp>
@@ -759,7 +759,7 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore">
             <English>Hardcore pneumothorax</English>
-            <Polish>Trudna odma płucna</Polish>
+            <Polish>Trudna odma opłucnowa</Polish>
             <German>Erweitertes Pneumothoraxsystem</German>
             <Spanish>Neumotórax extremo</Spanish>
             <Chinese>硬核气胸</Chinese>
@@ -774,7 +774,7 @@
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore_DESC">
             <English>Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might be helpful</English>
-            <Polish>Włącza tryb trudny dla odmy płucnej przez nie pojawianie się w menu medycznym - Stetoskop może być pomocny</Polish>
+            <Polish>Włącza tryb trudny dla odmy opłucnowej przez nie pojawianie się w menu medycznym - Stetoskop może być pomocny</Polish>
             <German>Aktiviert das erweiterte Pneumothoraxsystem, indem der Pneumothorax nicht im medizinischen Menü erscheint - Stethoskop könnte hilfreich sein</German>
             <Spanish>Modifica la dificultad para que el neumotórax no aparezca en el menú médico: se deberá usar un estetoscopio</Spanish>
             <Chinese>通过不让它出现在医疗菜单中来启用气胸的核心模块 - 听诊器可能会有所帮助</Chinese>
@@ -948,6 +948,7 @@
             <Turkish>Pnömotoraks kopyasını göster</Turkish>
             <Polish>Pokaż duplikat odmy płucnej</Polish>
             <Italian>Mostra la duplicazione del pneumotorace</Italian>
+            <Polish>Pokaż duplikat odmy opłucnowej</Polish>     
             <Spanish>Mostrar neumotórax duplicada</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_showPneumothorax_dupe_DESC">
@@ -959,7 +960,7 @@
             <Korean>기본값은 비활성화입니다. 활성화 시 긴장성 기흉 또는 혈기흉이 있는 유닛도 의료 메뉴에 기흉 부상으로 표시됩니다.</Korean>
             <French>Désactivé par défaut. Si activé, les unités avec des pneumothorax sous tension ou des hémopneumothorax auront également le pneumothorax affiché dans leur menu médical.</French>
             <Turkish>Varsayılan devre dışıdır. Etkinleştirilirse, tansiyon pnömotorakslı veya hemopnömotorakslı ünitelerde medikal menüde pnömotoraks yaralanması da görüntülenir.</Turkish>
-            <Polish>Domyślnie wyłączone. Jeśli włączone, jednostki z odmą prężną lub krwiakiem opłucnej będą również wyświetlać odmę płucną w menu medycznym.</Polish>
+            <Polish>Domyślnie wyłączone. Jeśli włączone, jednostki z odmą prężną lub krwiakiem opłucnej będą również wyświetlać odmę opłucnową w menu medycznym.</Polish>
             <Italian>In default è disabilitato. Se attivato, le unità con pneumotorace iperteso o emopneumotorace avranno questi segnati sul menu medico.</Italian>
             <Spanish>Deshabilitado en predeterminado. Si se habilita, las unidades con hemotórax/neumotórax a tensión tambien tendran la herida neumotórax mostrada en el menú médico.</Spanish>
         </Key>
@@ -1204,7 +1205,7 @@
             <Italian>Possibilità di deterioramento del pneumotorace</Italian>
             <Czech>Šance na zhoršení pneumotoraxu</Czech>
             <French>Chance de détérioration d'un pneumothorax</French>
-            <Polish>Szansa na pogorszenie się odmy płucnej</Polish>
+            <Polish>Szansa na pogorszenie się odmy opłucnowej</Polish>
             <Korean>기흉 악화 확률</Korean>
             <German>Wahrscheinlichkeit einer Pneumothorax-Verschlechterung</German>
             <Chinesesimp>气胸恶化几率</Chinesesimp>
@@ -1216,7 +1217,7 @@
             <Italian>Possibilità che il pneumotorace possa peggiorare in pneumotorace tensivo</Italian>
             <Czech>Šance na zhoršení pneumotoraxu do tenzního pneumotoraxu</Czech>
             <French>Chance qu'un pneumothorax se détériore en un pneumothorax sous tension</French>
-            <Polish>Szansa na pogorszenie się odmy płucnej w odmę prężną</Polish>
+            <Polish>Szansa na pogorszenie się odmy opłucnowej w odmę prężną</Polish>
             <Korean>기흉이 긴장성 기흉으로 악화될 확률</Korean>
             <German>Wahrscheinlichkeit, dass sich der Pneumothorax zu einem Spannungspneumothorax entwickelt</German>
             <Chinesesimp>气胸恶化至张力性气胸几率</Chinesesimp>
@@ -1240,7 +1241,7 @@
             <Italian>Dopo questo conto alla rovescia verrà lanciata una possibilità se il pneumotorace si deteriorerà o meno in pneumotorace tensivo</Italian>
             <Czech>Poté co proběhne tento odpočet bude zkontrolována šance, zda se pneumotorax zhorší na tenzní pneumotorax</Czech>
             <French>Après ce compte à rebours, il y aura une chance aléatoire qu'un pneumothorax empire ou non en un pneumothorax sous tension</French>
-            <Polish>Po tym odliczaniu zostanie wyliczona szansa na to, czy odma płucna przekształci się w odmę prężną.</Polish>
+            <Polish>Po tym odliczaniu zostanie wyliczona szansa na to, czy odma opłucnowa przekształci się w odmę prężną.</Polish>
             <Korean>이 카운트다운이 끝나면 기흉이 긴장성 기흉으로 악화되는지 여부가 결정됩니다.</Korean>
             <German>Nach diesem Countdown wird gewürfelt, ob sich der Pneumothorax zu einem Spannungspneumothorax entwickelt oder nicht.</German>
             <Chinesesimp>在此倒计时后，将气胸有机率恶化为张力性气胸</Chinesesimp>
@@ -1294,6 +1295,10 @@
             <German>Zyanose-Einstellungen</German>
             <Japanese>チアノーゼの設定</Japanese>
             <Spanish>Parámetros para la cianosis</Spanish>
+        </Key>
+        <Key ID="STR_kat_breathing_basicSupplyCrate_display">
+            <English>[KAM] General Items</English>
+            <Polish>[KAM] Podstawowe przedmioty</Polish>
         </Key>
     </Package>
 </Project>
