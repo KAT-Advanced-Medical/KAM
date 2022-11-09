@@ -512,7 +512,7 @@
             <Korean>체스트 씰로 자가치료 허용 여부</Korean>
             <French>Autoriser le pansement thoracique sur soi-même</French>
             <Polish>Pozwól na samo leczenie przy użyciu Chest Seala</Polish>
-            <Italian>Permetti automedicazione con Chest Seal.</Italian>
+            <Italian>Permetti automedicazione con Chest Seal</Italian>
             <Czech>Povolit vlastní léčení pomocí hrudního krytí</Czech>
             <German>Erlauben die Selbstbehandlung mit Chest Seal</German>
             <Spanish>Permitir autotratarse con un sello torácico</Spanish>
@@ -768,7 +768,7 @@
             <Korean>하드코어 기흉</Korean>
             <French>Pneumothorax hardcore</French>
             <Turkish>sert pnömotoraks </Turkish>
-            <Italian>Pneumotorace estremo </Italian>
+            <Italian>Pneumotorace hardcore</Italian>
             <Russian>Система расширенного пневмоторакса</Russian>
             <Japanese>高度な気胸診断を有効化</Japanese>
         </Key>
@@ -798,7 +798,7 @@
             <Korean>하드코어 긴장성 기흉과 혈기흉</Korean>
             <French>Hémopneumothorax et pneumothorax sous tension  hardcore </French>
             <Turkish>Sert tansiyon pnömotoraks ve hemotoraks</Turkish>
-            <Italian>Pneumotorace da tensione hardcore ed emotorace</Italian>
+            <Italian>Pneumotorace da tensione ed emotorace hardcore</Italian>
             <Russian>Усовершенствованная система для напряженного пневмоторакса/гемопневмоторакса</Russian>
             <Japanese>高度な緊張性気胸と血気胸診断を有効化</Japanese>
         </Key>
@@ -947,7 +947,7 @@
             <French>Montrer la duplication du pneumothorax</French>
             <Turkish>Pnömotoraks kopyasını göster</Turkish>
             <Polish>Pokaż duplikat odmy płucnej</Polish>
-            <Italian>Mostra la duplicazione del pneumotorace.</Italian>
+            <Italian>Mostra la duplicazione del pneumotorace</Italian>
             <Spanish>Mostrar neumotórax duplicada</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_showPneumothorax_dupe_DESC">
@@ -973,7 +973,7 @@
             <Korean>치아노제 확인</Korean>
             <French>Contrôler la cyanose</French>
             <Turkish>Siyanozu kontrol et</Turkish>
-            <Italian>Controlla la cianosi.</Italian>
+            <Italian>Controlla la cianosi</Italian>
             <Czech>Zkontrolovat cyanózu</Czech>
             <Spanish>Controlar Cianosis</Spanish>
         </Key>
@@ -987,7 +987,7 @@
             <Korean>치아노제 확인 중</Korean>
             <French>Controle de la cyanose</French>
             <Turkish>Siyanoz kontrol ediliyor</Turkish>
-            <Italian>Controllando la cianosi.</Italian>
+            <Italian>Controllando la cianosi</Italian>
             <Czech>Kontroluji cyanózu</Czech>
             <Spanish>Buscando signos de Cianosis</Spanish>
         </Key>
@@ -1015,7 +1015,7 @@
             <Korean>치아노제 없음</Korean>
             <French>Aucune cyanose</French>
             <Turkish>Siyanoz yok</Turkish>
-            <Italian>Nessuna traccia di cianosi,</Italian>
+            <Italian>Nessuna traccia di cianosi</Italian>
             <Czech>Žádná cyanóza</Czech>
             <Spanish>No hay Cianosis</Spanish>
         </Key>
@@ -1029,7 +1029,7 @@
             <Korean>미미한 치아노제 증상</Korean>
             <French>Cyanose légère</French>
             <Turkish>Hafif Siyanoz</Turkish>
-            <Italian>Leggera cianosi.</Italian>
+            <Italian>Leggera cianosi</Italian>
             <Czech>Nepatrná cyanóza</Czech>
             <Spanish>Cianosis ligera</Spanish>
         </Key>
@@ -1043,7 +1043,7 @@
             <Korean>가벼운 치아노제 증상</Korean>
             <French>Cyanose moyenne</French>
             <Turkish>Orta derece Siyanoz</Turkish>
-            <Italian>Moderata cianosi.</Italian>
+            <Italian>Moderata cianosi</Italian>
             <Czech>Mírná cyanóza</Czech>
             <Spanish>Cianosis intermedia</Spanish>
         </Key>
@@ -1057,7 +1057,7 @@
             <Korean>심각한 치아노제 증상</Korean>
             <French>Cyanose grave</French>
             <Turkish>Şiddetli Siyanoz</Turkish>
-            <Italian>Grave cianosi.</Italian>
+            <Italian>Grave cianosi</Italian>
             <Czech>Vážná cyanóza</Czech>
             <Spanish>Cianosis severa</Spanish>
         </Key>
@@ -1071,7 +1071,7 @@
             <Korean>치아노제 진단 사용</Korean>
             <French>Autoriser le diagnostique de la cyanose</French>
             <Turkish>Siyanoz tanısını etkinleştir</Turkish>
-            <Italian>Abilita la diagnosi della cianosi.</Italian>
+            <Italian>Abilita la diagnosi della cianosi</Italian>
             <Czech>Povolit diagnózu cyanózy</Czech>
             <Spanish>Permitir el diagnóstico de cianosis</Spanish>
         </Key>
@@ -1085,7 +1085,7 @@
             <Korean>치아노제(청색증)의 진단을 사용합니다</Korean>
             <French>Autorise le diagnostique de la cyanose</French>
             <Turkish>Siyanoz teşhisini etkinleştirir</Turkish>
-            <Italian>Abilita la diagnosi della cianosi.</Italian>
+            <Italian>Abilita la diagnosi della cianosi</Italian>
             <Czech>Povolí diagnózu cyanózy</Czech>
             <Spanish>Permitir el diagnóstico de cianosis</Spanish>
         </Key>
@@ -1099,7 +1099,7 @@
             <Korean>미미한 치아노제 증상 값</Korean>
             <French>Valeur de SpO2 de la cyanose légère</French>
             <Turkish>Hafif Siyanoz SpO2 değeri</Turkish>
-            <Italian>Valore di SpO2 della cianosi leggera.</Italian>
+            <Italian>Valore di SpO2 della cianosi leggera</Italian>
             <Czech>SpO2 hodnota nepatrné cyanózy</Czech>
             <Spanish>Valor SpO2 de Cianosis ligera</Spanish>
         </Key>
@@ -1113,7 +1113,7 @@
             <Korean>미미한 치아노제의 값입니다 - 기본값은 SpO2 90</Korean>
             <French>Valeur de la cyanose légère - 90 SpO2 par défaut</French>
             <Turkish>Hafif Siyanoz değeri - varsayılan 90 SpO2</Turkish>
-            <Italian>Valore di cianosi leggera - default SpO2 90 .</Italian>
+            <Italian>Valore di cianosi leggera - default SpO2 90 </Italian>
             <Czech>Hodnota nepatrné cyanózy - základní hodnota SpO2 90</Czech>
             <Spanish>Valor SpO2 de Cianosis ligera - Predeterminado en 90 SpO2</Spanish>
         </Key>
@@ -1127,7 +1127,7 @@
             <Korean>가벼운 치아노제 증상 값</Korean>
             <French>Valeur de SpO2 de la cyanose moyenne</French>
             <Turkish>Orta derece Siyanoz SpO2 değeri</Turkish>
-            <Italian>Valore di SpO2 della cianosi media.</Italian>
+            <Italian>Valore di SpO2 della cianosi media</Italian>
             <Czech>SpO2 hodnota mírné cyanózy</Czech>
             <Spanish>Valor SpO2 de Cianosis intermedia</Spanish>
         </Key>
@@ -1141,7 +1141,7 @@
             <Korean>가벼운 치아노제의 값입니다 - 기본값은 SpO2 75</Korean>
             <French>Valeur de la cyanose moyenne - 75 SpO2 par défaut</French>
             <Turkish>Orta derece Siyanoz değeri - varsayılan 75 SpO2</Turkish>
-            <Italian>Valore di cianosi media - default SpO2 75 .</Italian>
+            <Italian>Valore di cianosi media - default SpO2 75 </Italian>
             <Czech>Hodnota mírné cyanózy - základní hodnota SpO2 75</Czech>
             <Spanish>Valor SpO2 de Cianosis intermedia - Predeterminado en 75 SpO2</Spanish>
         </Key>
@@ -1182,7 +1182,7 @@
             <Korean>치아노제 증상 확인 최소 수준</Korean>
             <French>Niveau médical minimum pour contrôler la cyanose</French>
             <Turkish>Siyanoz minimum düzeyini kontrol edin</Turkish>
-            <Italian>Controlla livello minimo di cianosi.</Italian>
+            <Italian>Controlla livello minimo di cianosi</Italian>
             <Czech>Minimální level ke zkontrolování cyanózy</Czech>
             <Spanish>Nivel médico minimo requerido para analizar la cianosis</Spanish>
         </Key>
@@ -1195,7 +1195,7 @@
             <Korean>치아노제 증상을 확인할 수 있는 사람의 최소 의료레벨 수준입니다.</Korean>
             <French>Le niveau médical minimum nécessaire pour pouvoir contrôler la cyanose</French>
             <Turkish>Bir kişinin Siyanozu kontrol edebilmesi için gereken minimum tıbbi seviye.</Turkish>
-            <Italian>Il livello minimo richiesto per poter diagnosticare la cianosi.</Italian>
+            <Italian>Il livello minimo richiesto per poter diagnosticare la cianosi</Italian>
             <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl zkontrolovat cyanózu</Czech>
             <Spanish>Nivel médico minimo requerido para que alguien pueda analizar la cianosis</Spanish>
         </Key>

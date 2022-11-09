@@ -225,7 +225,7 @@
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
             <Japanese>軽減された</Japanese>
-            <Italian>Ostruzione attenuata.</Italian>
+            <Italian>Ostruzione rimossa</Italian>
             <Czech>Zmírněné zablokování</Czech>
             <Korean>막힘 완화됨</Korean>
             <German>Geringe Obstruktion</German>
@@ -239,6 +239,7 @@
             <French>L'obstruction a été temporairement atténuée</French>
             <Japanese>閉塞は一時的に軽減されています</Japanese>
             <Spanish>Obstrucción siendo temporalmente mitigada</Spanish>
+            <Italian>L'ostruzione è stata temporaneamente rimossa.</Italian>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
@@ -1073,7 +1074,7 @@
             <Korean>회복자세 교정</Korean>
             <French>En position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturuldu</Turkish>
-            <Italian>In posizione laterale di sicurezza.</Italian>
+            <Italian>In posizione laterale di sicurezza</Italian>
             <Czech>Uveden do stabilizované polohy</Czech>
             <Spanish>Posición lateral reclinada establecida</Spanish>
         </Key>
@@ -1086,7 +1087,7 @@
             <Korean>회복자세 교정해주기</Korean>
             <French>Mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturun</Turkish>
-            <Italian>Metti in posizione laterale di sicurezza.</Italian>
+            <Italian>Metti in posizione laterale di sicurezza</Italian>
             <Czech>Uvést do stabilizované polohy</Czech>
             <Spanish>Establecer posición lateral reclinada</Spanish>
         </Key>
@@ -1099,7 +1100,7 @@
             <Korean>회복자세 교정 중</Korean>
             <French>Mise en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturuluyor</Turkish>
-            <Italian>Mettendo in posizione laterale di sicurezza.</Italian>
+            <Italian>Mettendo in posizione laterale di sicurezza</Italian>
             <Czech>Uvádím do stabilizované polohy</Czech>
             <Spanish>Moviendo a posición lateral reclinada</Spanish>
         </Key>
@@ -1112,7 +1113,7 @@
             <Korean>회복자세 교정 성공</Korean>
             <French>Mise en position latérale de sécurité réussie</French>
             <Turkish>Kurtarma pozisyonu başarıyla kuruldu</Turkish>
-            <Italian>Messo in posizione laterale di sicurezza. </Italian>
+            <Italian>Messo in posizione laterale di sicurezza</Italian>
             <Czech>Stabilizovaná poloha uvedena úspěšně</Czech>
             <Spanish>Posición lateral reclinada establecida</Spanish>
         </Key>
@@ -1125,7 +1126,7 @@
             <Korean>회복자세 교정 취소됨</Korean>
             <French>Mise en position latérale de sécurité annulée</French>
             <Turkish>Kurtarma pozisyonu iptal edildi</Turkish>
-            <Italian>Posizione laterale di sicurezza annullata.</Italian>
+            <Italian>Posizione laterale di sicurezza annullata</Italian>
             <Czech>Stabilizovaná poloha zrušena</Czech>
             <Spanish>Cambio de posición cancelado</Spanish>
         </Key>
@@ -1138,7 +1139,7 @@
             <Korean>%1 이(가) 회복자세를 교정했습니다</Korean>
             <French>%1 a mis en place la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu %1 oluşturuldu</Turkish>
-            <Italian>%1 messo in posizione laterale di sicurezza. </Italian>
+            <Italian>%1 messo in posizione laterale di sicurezza</Italian>
             <Czech>%1 uvedl do stabilizované polohy</Czech>
             <Spanish>%1 estableció la posición lateral reclinada</Spanish>
         </Key>
@@ -1151,7 +1152,7 @@
             <Korean>회복자세 교정 시간</Korean>
             <French>Temps pour mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu için zaman</Turkish>
-            <Italian>Tempo per mettere in posizione laterale di sicurezza. </Italian>
+            <Italian>Tempo per mettere in posizione laterale di sicurezza</Italian>
             <Czech>Doba pro stabilizovanou polohu</Czech>
             <Spanish>Tiempo para establecer en posición lateral reclinada</Spanish>
         </Key>
@@ -1164,7 +1165,7 @@
             <Korean>회복자세를 교정해주는 데 걸리는 시간입니다.</Korean>
             <French>Temps nécessaire pour mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
-            <Italian>Tempo necessario per mettere in posizione laterale di sicurezza. </Italian>
+            <Italian>Tempo necessario per mettere in posizione laterale di sicurezza</Italian>
             <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
             <Spanish>Cuanto tiempo tomará establecer la posición de recuperación
 
@@ -1180,7 +1181,7 @@
             <Korean>회복자세 교정 취소</Korean>
             <French>Annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunu iptal et</Turkish>
-            <Italian>Cancella la posizione laterale di sicurezza. </Italian>
+            <Italian>Cancella la posizione laterale di sicurezza</Italian>
             <Czech>Zrušit stabilizovanou polohu</Czech>
             <Spanish>Cancelar posición lateral reclinada</Spanish>
         </Key>
@@ -1193,7 +1194,7 @@
             <Korean>회복자세 교정 취소 중</Korean>
             <French>Annulation de la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu iptal ediliyor</Turkish>
-            <Italian>Cancellando la posizione laterale di sicurezza.</Italian>
+            <Italian>Cancellando la posizione laterale di sicurezza</Italian>
             <Czech>Ruším stabilizovanou polohu</Czech>
             <Spanish>Cancelando la posición lateral reclinada</Spanish>
         </Key>
@@ -1206,7 +1207,7 @@
             <Korean>회복자세 교정 취소 시간</Korean>
             <French>Temps pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunu iptal etmek için zaman</Turkish>
-            <Italian>Tempo per cancellare la  posizione laterale di sicurezza. </Italian>
+            <Italian>Tempo per cancellare la  posizione laterale di sicurezza </Italian>
             <Czech>Doba pro zrušení stabilizované polohy</Czech>
             <Spanish>Tiempo para cancelar la posición lateral reclinada</Spanish>
         </Key>
@@ -1219,7 +1220,7 @@
             <Korean>회복자세 교정을 취소하는 데 걸리는 시간입니다</Korean>
             <French>Temps nécessaire pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
-            <Italian>Tempo necessario per annullare la posizione laterale di sicurezza. </Italian>
+            <Italian>Tempo necessario per annullare la posizione laterale di sicurezza</Italian>
             <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
             <Spanish>Cuanto tiempo tomará cancelar la posición de recuperación
 

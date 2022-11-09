@@ -146,7 +146,7 @@
         <Key ID="STR_kat_surgery_fracture_check">
             <English>Check Fracture</English>
             <Chinesesimp>检查骨折</Chinesesimp>
-            <Italian>Controlla frattura</Italian>
+            <Italian>Controllare la frattura</Italian>
             <Polish>Sprawdź złamanie</Polish>
             <Czech>Zkontrolovat zlomeninu</Czech>
             <French>Vérifier la fracture</French>
@@ -170,7 +170,7 @@
         <Key ID="STR_kat_surgery_fracture_closed">
             <English>Perform Closed Reduction</English>
             <Chinesesimp>封闭伤口</Chinesesimp>
-            <Italian>Esegui la riduzione chiusa</Italian>
+            <Italian>Esegui la riduzione ortopedica chiusa</Italian>
             <Polish>Przeprowadź zamkniętą redukcję</Polish>
             <Czech>Provést otevřenou redukci</Czech>
             <French>Effectuer une réduction fermée</French>
@@ -182,7 +182,7 @@
         <Key ID="STR_kat_surgery_fracture_open">
             <English>Perform Open Reduction</English>
             <Chinesesimp>开放伤口</Chinesesimp>
-            <Italian>Esegui la riduzione aperta</Italian>
+            <Italian>Esegui la riduzione a cielo aperto</Italian>
             <Polish>Przeprowadź otwartą redukcję</Polish>
             <Czech>Proveďte otevřené snížení</Czech>
             <French>Effectuer une réduction ouverte</French>
@@ -266,7 +266,7 @@
         <Key ID="STR_kat_surgery_Scalpel_DescShort">
             <English>Create incisions and debrides wounds</English>
             <Chinesesimp>对伤口进行清创</Chinesesimp>
-            <Italian>Crea incisioni e sbriglia le ferite</Italian>
+            <Italian>Creare incisioni e sbrigliare le ferite</Italian>
             <Polish>Tworzy nacięcia i oczyszcza rany</Polish>
             <Czech>Vytvořit řezy a očistit rány</Czech>
             <French>Incise et débride les plaies</French>
@@ -289,7 +289,7 @@
         <Key ID="STR_kat_surgery_Scalpel_Use">
             <English>Perform Incision</English>
             <Chinesesimp>创建切口</Chinesesimp>
-            <Italian>Esegui incisione</Italian>
+            <Italian>Eseguire Incisione</Italian>
             <Polish>Wykonaj nacięcie</Polish>
             <Czech>Provést řez</Czech>
             <French>Inciser</French>
@@ -336,7 +336,7 @@
         <Key ID="STR_kat_surgery_Retractor_Use">
             <English>Expose Fracture</English>
             <Chinesesimp>暴露骨折</Chinesesimp>
-            <Italian>Esponi la frattura</Italian>
+            <Italian>Divaricare la zona di frattura</Italian>
             <Polish>Odsłoń złamanie</Polish>
             <Czech>Odhalit zlomeninu</Czech>
             <French>Exposer la fracture</French>
@@ -348,7 +348,7 @@
         <Key ID="STR_kat_surgery_Retractor_Action">
             <English>Exposing</English>
             <Chinesesimp>暴露</Chinesesimp>
-            <Italian>Esponendo</Italian>
+            <Italian>Divaricando</Italian>
             <Polish>Odsłanianie</Polish>
             <Czech>Odhalování</Czech>
             <French>Exposition</French>
@@ -384,7 +384,7 @@
         <Key ID="STR_kat_surgery_Clamp_DescUse">
             <English>Used to clamp comminuted fractures</English>
             <Chinesesimp>用于夹紧粉碎性骨折</Chinesesimp>
-            <Italian>Usato per bloccare le fratture pluriframmentarie</Italian>
+            <Italian>Usato per clampare le fratture pluriframmentarie</Italian>
             <Czech>Používá se k upnutí rozdrcených zlomenin</Czech>
             <French>Utilisé pour clamper les fractures comminutives</French>
             <Korean>분쇄 골절을 클램프하는 데 사용됩니다</Korean>
@@ -395,7 +395,7 @@
         <Key ID="STR_kat_surgery_Clamp_Use">
             <English>Clamp Fracture</English>
             <Chinesesimp>夹紧骨折</Chinesesimp>
-            <Italian>Clampa la frattura</Italian>
+            <Italian>Clampare la frattura</Italian>
             <Polish>Zaciśnij złamanie</Polish>
             <Czech>Upnout zlomeninu</Czech>
             <French>Clamper la fracture</French>
@@ -466,7 +466,7 @@
         <Key ID="STR_kat_surgery_Debride_Use">
             <English>Debride Wounds</English>
             <Chinesesimp>清创伤口</Chinesesimp>
-            <Italian>Raschia le ferite</Italian>
+            <Italian>Sbrigliare la zona ferita</Italian>
             <Polish>Oczyść rany</Polish>
             <Czech>Vyčistit rány</Czech>
             <French>Débrider les plaies</French>
@@ -478,7 +478,7 @@
         <Key ID="STR_kat_surgery_Debride_Action">
             <English>Debriding</English>
             <Chinesesimp>清创中</Chinesesimp>
-            <Italian>Raschiando</Italian>
+            <Italian>Sbrigliando</Italian>
             <Polish>Oczyszczanie</Polish>
             <Czech>Čištění</Czech>
             <French>Débridement</French>
@@ -514,7 +514,7 @@
         <Key ID="STR_kat_surgery_Vacuum_Use">
             <English>Apply NPWT Dressing</English>
             <Chinesesimp>施用 NPWT 敷料</Chinesesimp>
-            <Italian>Applicare la medicazione terapia a pressione negativa (NPWT)</Italian>
+            <Italian>Applicare la medicazione NPWT</Italian>
             <Polish>Użyj zestawu NPWT</Polish>
             <Czech>Použít NPWT obvaz</Czech>
             <French>Appliquer un pansement par pression négative</French>
@@ -658,7 +658,7 @@
         <Key ID="STR_kat_surgery_CLOSED_TIMER">
             <English>Time to perform closed reductions</English>
             <Chinesesimp>执行封闭伤口的时间</Chinesesimp>
-            <Italian>Tempo per eseguire riduzioni chiuse</Italian>
+            <Italian>Tempo per eseguire riduzioni ortopediche chiuse</Italian>
             <Polish>Czas potrzebny na wykonanie zamkniętej redukcji</Polish>
             <Czech>Čas provádění uzavřené redukce</Czech>
             <French>Temps pour effectuer une réduction fermée</French>
@@ -670,7 +670,7 @@
         <Key ID="STR_kat_surgery_OPEN_TIMER">
             <English>Time to perform open reductions</English>
             <Chinesesimp>执行开放伤口的时间</Chinesesimp>
-            <Italian>Tempo per eseguire riduzioni aperte</Italian>
+            <Italian>Tempo per eseguire riduzioni a cielo aperto</Italian>
             <Polish>Czas potrzebny na wykonanie otwartej redukcji</Polish>
             <Czech>Čas provádění otevřené redukce</Czech>
             <French>Temps pour effectuer une réduction ouverte</French>
@@ -754,7 +754,7 @@
         <Key ID="STR_kat_surgery_NPWT_TIMER">
             <English>Time to apply an NPWT dressing</English>
             <Chinesesimp>施用 NPWT 敷料的时间</Chinesesimp>
-            <Italian>Tempo per applicare una medicazione di terapia a pressione negativa (NPWT)</Italian>
+            <Italian>Tempo per applicare una medicazione NPWT</Italian>
             <Polish>Czas potrzebny do nałożenie opatrunku próżniowego</Polish>
             <Czech>Čask použití NPWT</Czech>
             <French>Temps pour appliquer un pansement par pression négative</French>
@@ -790,7 +790,7 @@
         <Key ID="STR_kat_surgery_CLOSED_REDUCTION_MEDLEVEL">
             <English>Medical level required for closed reduction</English>
             <Chinesesimp>闭合复位所需的医疗水平</Chinesesimp>
-            <Italian>Livello medico richiesto per la riduzione chiusa</Italian>
+            <Italian>Livello medico richiesto per la riduzione ortopedica chiusa</Italian>
             <Polish>Poziom wyszkolenia medycznego potrzebny do zamkniętej redukcji</Polish>
             <Czech>Lékařská úroveň potřebná pro uzavřenou redukci</Czech>
             <French>Niveau médical requis pour effectuer une réduction fermée</French>
@@ -838,7 +838,7 @@
         <Key ID="STR_kat_surgery_SURGICAL_LOCATION">
             <English>Open reduction/Surgical location</English>
             <Chinesesimp>开放伤口/手术的位置</Chinesesimp>
-            <Italian>Apri localizzazione chirurgica/riduzione aperta</Italian>
+            <Italian>Zona chirurgica/Riduzione aperta</Italian>
             <Polish>Lokalizacja dla otwartej redukcji/akcji chirurgicznych</Polish>
             <Czech>Otevřená redukce/chirurgická poloha</Czech>
             <French>Lieu des réductions ouvertes / chirurgies</French>
