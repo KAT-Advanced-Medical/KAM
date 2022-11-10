@@ -13,7 +13,7 @@
             <Chinese>气道闭塞: </Chinese>
             <Japanese>気道閉塞:</Japanese>
             <Russian>Обструкция дыхательных путей:</Russian>
-            <Italian>Ostruzione delle vie aeree.</Italian>
+            <Italian>Ostruzione delle vie aeree</Italian>
             <Chinesesimp>气道闭塞:</Chinesesimp>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Occlusion">
@@ -28,7 +28,7 @@
             <Turkish>Hava yolu tıkanıklığı: </Turkish>
             <Japanese>気道異物:</Japanese>
             <Russian>Окклюзия дыхательных путей:</Russian>
-            <Italian>Occlusione delle vie aeree.</Italian>
+            <Italian>Occlusione delle vie aeree</Italian>
             <Chinesesimp>气道阻塞:</Chinesesimp>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Pneumothorax">
