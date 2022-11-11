@@ -238,13 +238,13 @@
             <Polish>Drogi oddechowe są ręcznie udrożnione</Polish>
             <French>L'obstruction a été temporairement atténuée</French>
             <Japanese>閉塞は一時的に軽減されています</Japanese>
-            <Spanish>Obstrucción siendo temporalmente mitigada</Spanish>
+            <Spanish>Obstrucción temporalmente mitigada</Spanish>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
             <German>Atemwege sind frei</German>
             <Polish>Drogi oddechowe są czyste</Polish>
-            <Spanish>Las vías aéreas están despejadas</Spanish>
+            <Spanish>Vías aéreas despejadas</Spanish>
             <Chinese>航線暢通</Chinese>
             <Chinesesimp>气道通畅</Chinesesimp>
             <Czech>Dýchací cesty jsou volné</Czech>
@@ -274,7 +274,7 @@
             <English>Airway management needed</English>
             <German>Atemwegsmanagement erforderlich</German>
             <Polish>Potrzebne udrażnianie dróg oddechowych</Polish>
-            <Spanish>Requiere manejo de vías aéreas</Spanish>
+            <Spanish>Hay que desobstruir las vías aéreas</Spanish>
             <Chinese>需要呼吸道控制</Chinese>
             <Chinesesimp>需要气道管理</Chinesesimp>
             <Czech>Je třeba se postarat o dýchací cesty</Czech>
@@ -364,7 +364,7 @@
             <English>Item could not be used, airways are not clear</English>
             <German>Gegenstand konnte nicht verwendet werden, Atemwege sind nicht frei</German>
             <Polish>Przedmiot nie może zostać użyty, drogi oddechowe nie są czyste</Polish>
-            <Spanish>El artículo no se pudo usar, las vías aéreas no están despejadas</Spanish>
+            <Spanish>No se pudo usar, las vías aéreas no están despejadas</Spanish>
             <Chinese>物品无法使用，气道不明</Chinese>
             <Chinesesimp>物品无法使用,气道仍不通畅</Chinesesimp>
             <Czech>Předmět nemohl být použit, dýchací cesty nejsou volné</Czech>
@@ -454,7 +454,7 @@
             <English>Head turn performed, airways are still not clear</English>
             <German>Kopfdrehung durchgeführt, Atemwege sind noch nicht frei</German>
             <Polish>Obrót głowy wykonany, drogi oddechowe wciąż nie są czyste</Polish>
-            <Spanish>Giro de cabeza realizado, las vías aéreas aún no están despejadas</Spanish>
+            <Spanish>Giro de cabeza realizado, vías aéreas aún sin despejadar</Spanish>
             <Chinese>转头，气道仍不清楚</Chinese>
             <Chinesesimp>尝试清理气道异物失败, 异物仍存在</Chinesesimp>
             <Czech>Hlavou se otočilo, dýchací cesty stále nejsou volné</Czech>
