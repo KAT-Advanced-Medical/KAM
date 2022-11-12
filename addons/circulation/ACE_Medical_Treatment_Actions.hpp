@@ -84,7 +84,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = "[_medic, _patient, 'AED'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
         callbackFailure = "call ace_medical_treatment_fnc_cprFailure; _medic setVariable ['kat_soundplayed', false, true]; _patient setVariable ['kat_AEDinUse', false, true];";
         animationMedic = "AinvPknlMstpSnonWnonDr_medic0";
-        treatmentLocations = "GVAR(useLocation_AED)";
+        treatmentLocations = QGVAR(useLocation_AED);
         medicRequired = QGVAR(medLvl_AED);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
@@ -102,8 +102,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(AED_X_Action_Progress);
         items[] = {};
         callbackSuccess = "[_medic, _patient, 'AED-X'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_AEDinUse', false, true];";
-        //condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) || [ARR_2(_medic, 'kat_AED')] call ace_common_fnc_hasItem || [ARR_2(_medic, 'kat_X_AED')] call ace_common_fnc_hasItem);
-        condition = "kat_circulation_fnc_AEDXCondition";
+        condition = QFUNC(AEDXCondition);
         medicRequired = QGVAR(medLvl_AED_X);
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };

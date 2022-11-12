@@ -22,13 +22,19 @@ params ["_medic", "_patient","_classname", "_usedItem"];
 if (_patient getVariable [QGVAR(occluded), false]) exitWith {
     private _output = LLSTRING(Airway_NotClearForItem);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
-    [_medic, _usedItem] call ace_common_fnc_addToInventory;    
+    [_medic, _usedItem] call ace_common_fnc_addToInventory;
 };
 
-if (_patient getVariable [QGVAR(airway_item), ""] in ["Larynxtubus", "Guedeltubus"]) exitWith {
+if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") exitWith {
     private _output = LLSTRING(Airway_already);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
-    [_medic, _usedItem] call ace_common_fnc_addToInventory;    
+    [_medic, _usedItem] call ace_common_fnc_addToInventory;
+};
+
+if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "Guedeltubus" && _usedItem isEqualTo "kat_guedel") exitWith {
+    private _output = LLSTRING(Airway_already);
+    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+    [_medic, _usedItem] call ace_common_fnc_addToInventory;
 };
 
 _patient setVariable [QGVAR(airway), true, true];

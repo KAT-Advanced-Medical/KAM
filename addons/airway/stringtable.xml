@@ -540,7 +540,7 @@
             <Russian>Размещение</Russian>
             <Japanese>装着中</Japanese>
         </Key>
-        <Key ID="STR_kat_airway_Larynx_Display">
+        <Key ID="STR_kat_airway_Larynxtubus_Display">
             <English>King LT</English>
             <German>Larynxtubus</German>
             <Polish>Rurka krtaniowa</Polish>
@@ -585,7 +585,7 @@
             <Russian>Ларингеальная трубка – это устройство для обеспечения проходимости дыхательных путей.</Russian>
             <Japanese>King LTは気道を保護するために使用されます</Japanese>
         </Key>
-        <Key ID="STR_kat_airway_Guedel_Display">
+        <Key ID="STR_kat_airway_Guedeltubus_Display">
             <English>Guedel Tube</English>
             <German>Guedeltubus</German>
             <Polish>Rurka ustno-gardłowa</Polish>

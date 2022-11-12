@@ -91,24 +91,12 @@ class CfgVehicles {
             class ACE_Head {
                 class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
             };
-            class ACE_ArmLeft {
-                #include "Blood_ArmL.hpp"
-            };
-            class ACE_ArmRight {
-                #include "Blood_ArmR.hpp"
-            };
-            class ACE_LegLeft {
-                #include "Blood_LegL.hpp"
-            };
-            class ACE_LegRight {
-                #include "Blood_LegR.hpp"
-            };
         };
         class ACE_SelfActions {
             class Medical {
-            class ACE_Head {
-            class CheckBloodPressure {};
-            };
+                class ACE_Head {
+                    class CheckBloodPressure {};
+                };
             };
             class ACE_Equipment {
                 class removeSound {

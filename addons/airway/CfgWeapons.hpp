@@ -5,7 +5,7 @@ class CfgWeapons {
     class kat_larynx: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
-        displayName= CSTRING(Larynx_Display);
+        displayName= CSTRING(Larynxtubus_Display);
         descriptionShort = CSTRING(Larynx_Desc_Short);
         descriptionUse = CSTRING(Larynx_Desc_Use);
         picture = QPATHTOF(ui\larynx_normal.paa);
@@ -17,7 +17,7 @@ class CfgWeapons {
     class kat_guedel: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
-        displayName= CSTRING(Guedel_Display);
+        displayName= CSTRING(Guedeltubus_Display);
         descriptionShort =  CSTRING(Guedel_Desc_Short);
         descriptionUse = CSTRING(Guedel_Desc_Use);
         picture = QPATHTOF(ui\guedel_normal.paa);

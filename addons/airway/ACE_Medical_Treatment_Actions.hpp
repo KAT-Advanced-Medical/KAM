@@ -1,6 +1,6 @@
 class ACE_Medical_Treatment_Actions {
     class Larynxtubus {
-        displayName = CSTRING(Larynx_Display);
+        displayName = CSTRING(Larynxtubus_Display);
         displayNameProgress = CSTRING(action_placing);
         category = "airway";
         treatmentLocations = 0;
@@ -25,7 +25,7 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\larynx.paa);
     };
     class Guedeltubus: Larynxtubus {
-        displayName = CSTRING(Guedel_Display);
+        displayName = CSTRING(Guedeltubus_Display);
         medicRequired = QGVAR(medLvl_Guedeltubus);
         treatmentTime = QGVAR(Guedeltubus_time);
         items[] = {"kat_guedel"};
@@ -39,8 +39,8 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\accuvac.paa);
         consumeItem = 0;
         medicRequired = QGVAR(medLvl_Accuvac);
-        callbackSuccess = QFUNC(treatmentAdvanced_accuvac));
-        callbackProgress = QFUNC(accuvacSound);
+        callbackSuccess = QFUNC(treatmentAdvanced_accuvac);
+        sounds[] = {{QPATHTO_R(sounds\Suctiov.wav),6,1,15}};
     };
     class Overstretch: Larynxtubus {
         displayName = CSTRING(overstretch);
