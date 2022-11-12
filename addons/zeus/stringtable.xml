@@ -4,7 +4,7 @@
         <Key ID="STR_kat_zeus_ModuleManageAirway_Obstruction">
             <English>Airway obstruction: </English>
             <German>Atemwegsobstruktion: </German>
-            <Czech>Zablokování dýchacích cest: </Czech>
+            <Czech>Obstrukce dýchacích cest: </Czech>
             <French>Obstruction des voies aériennes: </French>
             <Polish>Zator dróg oddechowych: </Polish>
             <Spanish>Obstrucción de vías aéreas: </Spanish>
@@ -13,13 +13,13 @@
             <Chinese>气道闭塞: </Chinese>
             <Japanese>気道閉塞:</Japanese>
             <Russian>Обструкция дыхательных путей:</Russian>
-            <Italian>Ostruzione delle vie aeree.</Italian>
+            <Italian>Ostruzione delle vie aeree</Italian>
             <Chinesesimp>气道闭塞:</Chinesesimp>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Occlusion">
             <English>Airway occlusion: </English>
             <German>Atemwegsverstopfung: </German>
-            <Czech>Uzavření dýchacích cest: </Czech>
+            <Czech>Okluze dýchacích cest: </Czech>
             <Polish>Zablokowanie dróg oddechowych: </Polish>
             <Spanish>Oclusión de vías aéreas: </Spanish>
             <French>Occlusion des voies aériennes:</French>
@@ -28,7 +28,7 @@
             <Turkish>Hava yolu tıkanıklığı: </Turkish>
             <Japanese>気道異物:</Japanese>
             <Russian>Окклюзия дыхательных путей:</Russian>
-            <Italian>Occlusione delle vie aeree.</Italian>
+            <Italian>Occlusione delle vie aeree</Italian>
             <Chinesesimp>气道阻塞:</Chinesesimp>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Pneumothorax">
@@ -214,7 +214,7 @@
         <Key ID="STR_kat_zeus_shockablestate_Module_non_shockable">
             <English>non-shockable (Asystole)</English>
             <German>Nicht-Schockbar (Asystolie)</German>
-            <Czech>Nešokovatelný (Asystola)</Czech>
+            <Czech>Nešokovatelný (Asystolie)</Czech>
             <French>Non-choquable (Asystolie) </French>
             <Polish>Niedefibrylacyjny (Asystolia)</Polish>
             <Spanish>No desfibrilable (Asístolia)</Spanish>
