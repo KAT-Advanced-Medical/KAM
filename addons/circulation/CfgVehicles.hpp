@@ -124,7 +124,7 @@ class CfgVehicles {
                     icon = "";
                 };
                 class placeAED {
-                    displayName="$STR_KAT_circulation_place_AED";
+                    displayName=CSTRING(place_AED);
                     condition="'kat_AED' in (items ACE_player)";
                     exceptions[]=
                     {

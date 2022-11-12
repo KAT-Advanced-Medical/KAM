@@ -4,10 +4,11 @@
  * Handle the IV for the patient with blood types. Have to be local to avoid effect on all clients.
  *
  * Arguments:
- * 0: Unit <OBJECT>
+ * 0: Classname <STRING>
+ * 1: Unit <OBJECT>
  *
  * Return Value:
- * 0: Successful <BOOLEAN>
+ * None
  *
  * Example:
  * ['Blood_IV_A', cursorTarget] call kat_circulation_fnc_treatmentAdvanced_IV

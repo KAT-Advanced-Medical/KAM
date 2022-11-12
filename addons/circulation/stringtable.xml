@@ -1830,5 +1830,9 @@
             <Japanese>採血設定</Japanese>
             <Spanish>Parámetros de extracción de sangre</Spanish>
         </Key>
+        <Key ID="STR_kat_circulation_AEDX_StatusLog">
+            <English>AED-X: HR: %1 RR: %2/%3 SpO2: %4</English>
+            <Polish>AED-X: HR: %1 RR: %2/%3 SpO2: %4</Polish>
+        </Key>
     </Package>
 </Project>

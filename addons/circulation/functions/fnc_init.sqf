@@ -25,6 +25,7 @@ _unit setVariable [QGVAR(use), false, true];
 _unit setVariable [QGVAR(returnedAED), false, true];
 _unit setVariable [QGVAR(asystole), 1, true];
 _unit setVariable [QGVAR(CPRcount), 2, true];
+_unit setVariable [QGVAR(AEDinUse), false, true];
 
 _unit setVariable[QGVAR(AEDvehicleName), "", true];
 _unit setVariable[QGVAR(vehicleTrue), false, true];

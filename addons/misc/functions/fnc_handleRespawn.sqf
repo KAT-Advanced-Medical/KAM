@@ -27,7 +27,6 @@ _unit setVariable [QEGVAR(airway,obstruction), false, true];
 _unit setVariable [QEGVAR(airway,airway), false, true];
 _unit setVariable [QEGVAR(airway,occluded), false, true];
 _unit setVariable [QEGVAR(airway,overstretch), false, true];
-_unit setVariable ['kat_AEDinUse', false, true];
 KAT_forceWakeup = false;
 _unit setVariable [QEGVAR(airway,recovery), false, true];
 
@@ -53,6 +52,7 @@ _unit setVariable [QEGVAR(circulation,use), false, true];
 _unit setVariable [QEGVAR(circulation,returnedAED), false, true];
 _unit setVariable [QEGVAR(circulation,asystole), 1, true];
 _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
+_unit setVariable [QEGVAR(circulation,AEDinUse), false, true];
 
 // KAT Pharmacy
 
