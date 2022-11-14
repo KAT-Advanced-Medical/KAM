@@ -806,7 +806,7 @@
             <Chinesesimp>检查心率曲线</Chinesesimp>
             <French>Vérifier le rythme cardiaque</French>
             <Italian>Controllare il ritmo</Italian>
-            <Spanish>Comprobar el pulso</Spanish>
+            <Spanish>Comprobar desfibrabilidad</Spanish>
             <Czech>Zkontrolovat rytmus</Czech>
             <Japanese>心室細動を確認する</Japanese>
             <Russian>Проверьте ритм</Russian>
@@ -890,7 +890,7 @@
             <English>Monitor vitals</English>
             <German>Überwache Werte</German>
             <Polish>Monitoruj parametry życiowe</Polish>
-            <Spanish>Monitorear vitales</Spanish>
+            <Spanish>Monitorear constantes vitales</Spanish>
             <Chinese>監控生命跡象</Chinese>
             <Chinesesimp>监控生命迹象</Chinesesimp>
             <Czech>Monitorování vitálních funkcí</Czech>
@@ -905,7 +905,7 @@
             <English>Use AED defibrillator</English>
             <German>Benutze AED Defibrillator</German>
             <Polish>Użyj defibrylatora AED</Polish>
-            <Spanish>Utilice el desfibrilador DEA</Spanish>
+            <Spanish>Usar el desfibrilador DEA</Spanish>
             <Chinese>使用AED除顫器</Chinese>
             <Chinesesimp>使用AED除颤器</Chinesesimp>
             <Czech>Použít AED defibrilátor</Czech>
@@ -920,7 +920,7 @@
             <English>Use AED Station</English>
             <German>Benutze AED Station</German>
             <Polish>Użyj stacji AED</Polish>
-            <Spanish>Utilice el estación DEA</Spanish>
+            <Spanish>Usar la estación DEA</Spanish>
             <Chinese>使用AED除顫器</Chinese>
             <Chinesesimp>使用AED除颤器</Chinesesimp>
             <Czech>Použít AED stanici</Czech>
@@ -950,7 +950,7 @@
             <English>Use AED-X defibrillator</English>
             <German>Benutze AED-X Defibrillator</German>
             <Polish>Użyj defibrylatora AED-X</Polish>
-            <Spanish>Utilice el desfibrilador DEA-X</Spanish>
+            <Spanish>Usar el desfibrilador DEA-X</Spanish>
             <Chinese>使用AED-X除顫器</Chinese>
             <Chinesesimp>使用AED-X除颤器</Chinesesimp>
             <Czech>Použít AED-X defibrilátor</Czech>
@@ -965,7 +965,7 @@
             <English>Remove monitoring</English>
             <German>Entferne Überwachung</German>
             <Polish>Przestań monitorować</Polish>
-            <Spanish>Remover monitoreo</Spanish>
+            <Spanish>Retirar monitoreo</Spanish>
             <Chinese>移除監控</Chinese>
             <Chinesesimp>移除监控</Chinesesimp>
             <Czech>Odstranit monitorování</Czech>

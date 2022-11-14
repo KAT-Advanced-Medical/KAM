@@ -976,7 +976,7 @@
             <Turkish>Siyanozu kontrol et</Turkish>
             <Italian>Controlla la cianosi</Italian>
             <Czech>Zkontrolovat cyanózu</Czech>
-            <Spanish>Controlar Cianosis</Spanish>
+            <Spanish>Diagnosticar Cianosis</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_CheckCyanosis_Progress">
             <English>Checking Cyanosis</English>
@@ -1046,7 +1046,7 @@
             <Turkish>Orta derece Siyanoz</Turkish>
             <Italian>Moderata cianosi</Italian>
             <Czech>Mírná cyanóza</Czech>
-            <Spanish>Cianosis intermedia</Spanish>
+            <Spanish>Cianosis moderada</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_CyanosisStatus_Severe">
             <English>Severe Cyanosis</English>
@@ -1130,7 +1130,7 @@
             <Turkish>Orta derece Siyanoz SpO2 değeri</Turkish>
             <Italian>Valore di SpO2 della cianosi media</Italian>
             <Czech>SpO2 hodnota mírné cyanózy</Czech>
-            <Spanish>Valor SpO2 de Cianosis intermedia</Spanish>
+            <Spanish>Valor SpO2 de Cianosis moderada</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_mildValue_DESC">
             <English>Mild cyanosis value - default 75 SpO2</English>
