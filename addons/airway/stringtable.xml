@@ -110,7 +110,7 @@
             <Spanish>La comunidad llamada Keko tenía un addon para los jugadores AFK. Se les ponía inconscientes para que otros pudieran arrastrarlos. Eso disparó las posibilidades de problemas en las vías respiratorias. Esta cadena evita que eso suceda cuando quedan inconscientes por ese addon de AFK.</Spanish>
             <Chinese>名为keko的社区有AFK玩家的附加功能。他们被置于无意识状态，所以其他人可以将他们拖走。这引发了气道问题的机会。这个字符串可以防止他们被AFK插件弄昏的情况发生。</Chinese>
             <Chinesesimp>一个名为keko的社区有为AFK玩家提供的附加功能。处于AFK状态下的玩家被调整为无意识状态，所以其他人可以将他们拖走。这引发了与气道相关的问题。这个设定可以防止他们被AFK插件杀死的情况发生。</Chinesesimp>
-            <Czech>Komunita zvaná keko měla addon pro AFK hráče. Ti byli dáni do bezvědomí, takže je ostatní mohli odtáhnout pryč. To ale vyvolalo problémy, které mohly ohrozit jejich dýchací cesty. Tento string zabrání dýchacím potížím, pokud je hráč tímto AFK addonem dán do bezvědomí.</Czech>
+            <Czech>Komunia zvaná keko měla addon pro AFK hráče. Ti byli dáni do bezvědomí, takže je ostatní mohli odtáhnout pryč. To ale vyvolalo problémy, které mohli ohrozit jejich dýchací cesty. Tento string zabrání dýchacím potížím, pokud je hráč tímto AFK addonemm dán do bezvědomí.</Czech>
             <Korean>keko라는 커뮤니티에는 잠수 플레이어를 위한 애드온이 있었습니다. 그 애드온은 다른 사람들이 그들을 끌고 갈 수 있도록 그들을 의식불명으로 만듭니다. 그러나 그것은 기도 이상의 확률을 발생시켰습니다. 이 문자열은 그 애드온에 의해 의식불명이 발생하는 것을 방지합니다.</Korean>
             <French>Le membre de la communauté appelé Keko avait un addon pour les joueurs AFK. Ils étaient passés inconscients et pouvaient être trainés. Ce qui déclenchait les chances de problèmes respiratoires. Cette option empêche cela de se produire quand ils deviennent inconscients par cet addon AFK.</French>
             <Turkish>Keko adlı topluluğun AFK oyuncuları için eklentileri vardı. Başkalarının onları uzaklaştırabilmesi için bilinçsiz bırakıldılar. Bu, hava yolu problemleri olasılığını tetikledi. Bu dize, AFK eklentisi tarafından bilinçsiz hale geldiklerinde bunun olmasını engeller.</Turkish>
@@ -168,7 +168,7 @@
             <Spanish>Ocluída</Spanish>
             <Chinese>閉塞</Chinese>
             <Chinesesimp>异物阻塞</Chinesesimp>
-            <Czech>Okluze</Czech>
+            <Czech>Uzavřeno</Czech>
             <Korean>구토</Korean>
             <French>Occludées</French>
             <Turkish>Tıkalı</Turkish>
@@ -198,7 +198,7 @@
             <Spanish>Obstruída</Spanish>
             <Chinese>阻塞</Chinese>
             <Chinesesimp>闭塞</Chinesesimp>
-            <Czech>Obstrukce</Czech>
+            <Czech>Zablokováno</Czech>
             <Korean>혀로 인한 기도 폐쇄</Korean>
             <French>Obstruées</French>
             <Turkish>Kapanma</Turkish>
@@ -225,8 +225,8 @@
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
             <Japanese>軽減された</Japanese>
-            <Czech>Zmírněná obstrukce</Czech>
-            <Italian>Ostruzione rimossa</Italian>
+            <Italian>Ostruzione attenuata.</Italian>
+            <Czech>Zmírněné zablokování</Czech>
             <Korean>막힘 완화됨</Korean>
             <German>Geringe Obstruktion</German>
             <Chinesesimp>减轻阻塞</Chinesesimp>
@@ -238,15 +238,13 @@
             <Polish>Drogi oddechowe są ręcznie udrożnione</Polish>
             <French>L'obstruction a été temporairement atténuée</French>
             <Japanese>閉塞は一時的に軽減されています</Japanese>
-            <Spanish>Obstrucción siendo temporalmente mitigada</Spanish>
-            <Czech>Obstrukce je dočasně zmírněna</Czech>
-            <Italian>L'ostruzione è stata temporaneamente rimossa.</Italian>
+            <Spanish>Obstrucción temporalmente mitigada</Spanish>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
             <German>Atemwege sind frei</German>
             <Polish>Drogi oddechowe są czyste</Polish>
-            <Spanish>Las vías aéreas están despejadas</Spanish>
+            <Spanish>Vías aéreas despejadas</Spanish>
             <Chinese>航線暢通</Chinese>
             <Chinesesimp>气道通畅</Chinesesimp>
             <Czech>Dýchací cesty jsou volné</Czech>
@@ -276,7 +274,7 @@
             <English>Airway management needed</English>
             <German>Atemwegsmanagement erforderlich</German>
             <Polish>Potrzebne udrażnianie dróg oddechowych</Polish>
-            <Spanish>Requiere manejo de vías aéreas</Spanish>
+            <Spanish>Hay que desobstruir las vías aéreas</Spanish>
             <Chinese>需要呼吸道控制</Chinese>
             <Chinesesimp>需要气道管理</Chinesesimp>
             <Czech>Je třeba se postarat o dýchací cesty</Czech>
@@ -350,11 +348,11 @@
         <Key ID="STR_kat_airway_Airway_turnaroundSuccess">
             <English>Occlusion removed</English>
             <German>Verstopfung entfernt</German>
-            <Polish>Zator usunięty</Polish>
+            <Polish>Zablokowanie usunięte</Polish>
             <Spanish>Oclusión eliminada</Spanish>
             <Chinese>遮擋移除</Chinese>
             <Chinesesimp>气道异物移除</Chinesesimp>
-            <Czech>Okluze odstraněna</Czech>
+            <Czech>Uzavření odstraněno</Czech>
             <Korean>구토 제거 성공</Korean>
             <French>Occlusion supprimée</French>
             <Turkish>Tıkanıklık kaldırıldı</Turkish>
@@ -366,7 +364,7 @@
             <English>Item could not be used, airways are not clear</English>
             <German>Gegenstand konnte nicht verwendet werden, Atemwege sind nicht frei</German>
             <Polish>Przedmiot nie może zostać użyty, drogi oddechowe nie są czyste</Polish>
-            <Spanish>El artículo no se pudo usar, las vías aéreas no están despejadas</Spanish>
+            <Spanish>No se pudo usar, las vías aéreas no están despejadas</Spanish>
             <Chinese>物品无法使用，气道不明</Chinese>
             <Chinesesimp>物品无法使用,气道仍不通畅</Chinesesimp>
             <Czech>Předmět nemohl být použit, dýchací cesty nejsou volné</Czech>
@@ -456,7 +454,7 @@
             <English>Head turn performed, airways are still not clear</English>
             <German>Kopfdrehung durchgeführt, Atemwege sind noch nicht frei</German>
             <Polish>Obrót głowy wykonany, drogi oddechowe wciąż nie są czyste</Polish>
-            <Spanish>Giro de cabeza realizado, las vías aéreas aún no están despejadas</Spanish>
+            <Spanish>Giro de cabeza realizado, vías aéreas aún sin despejadar</Spanish>
             <Chinese>转头，气道仍不清楚</Chinese>
             <Chinesesimp>尝试清理气道异物失败, 异物仍存在</Chinesesimp>
             <Czech>Hlavou se otočilo, dýchací cesty stále nejsou volné</Czech>
@@ -504,7 +502,7 @@
             <Spanish>No se necesita succión médica</Spanish>
             <Chinese>不需要醫療抽吸</Chinese>
             <Chinesesimp>不需要医疗抽吸</Chinesesimp>
-            <Czech>Odsávání není třeba</Czech>
+            <Czech>Sání není třeba</Czech>
             <Korean>의료용 석션 불필요</Korean>
             <French>Aspiration médicale non requise</French>
             <Turkish>Tıbbi aspirasyona gerek yok</Turkish>
@@ -594,7 +592,7 @@
             <Spanish>Cánula de Guedel</Spanish>
             <Chinese>抽吸管</Chinese>
             <Chinesesimp>口咽通气管(Guedel)</Chinesesimp>
-            <Czech>Guedel Tuba</Czech>
+            <Czech>Geudel Tuba</Czech>
             <Korean>게델튜브</Korean>
             <French>Canule de Guedel</French>
             <Turkish>Guedel Tüpü</Turkish>
@@ -609,7 +607,7 @@
             <Spanish>La cánula de Guedel impide obstrucciones</Spanish>
             <Chinese>抽吸管用於拯救呼吸道</Chinese>
             <Chinesesimp>Guedel是一种气道辅助通气装置,同时集成了舌垫可防止气道阻塞.</Chinesesimp>
-            <Czech>Guedel tuba je používán na záchranu dýchacích cest</Czech>
+            <Czech>Geudel tuba je používán na záchranu dýchacích cest</Czech>
             <Korean>게델튜브는 응급처치현장에서 신속하며 간편하게 기도확보하기 위해 사용됩니다</Korean>
             <French>La canule de Guedel est utilisée pour protéger les voies aériennes</French>
             <Turkish>Guedel Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
@@ -744,7 +742,7 @@
             <Spanish>Permitir tubo laríngeo</Spanish>
             <Chinese>允許喉頭</Chinese>
             <Chinesesimp>允许使用喉管(King LT-D)</Chinesesimp>
-            <Czech>Povolit Laryngeální Tubus</Czech>
+            <Czech>Povolit Larynx tubu</Czech>
             <Korean>기관삽입기 허용</Korean>
             <French>Autoriser le tube laryngé</French>
             <Turkish>Laringeal Tüp'e izin ver</Turkish>
@@ -759,7 +757,7 @@
             <Spanish>Nivel de entrenamiento requerido para usar un tubo laríngeo</Spanish>
             <Chinese>使用喉管所需的培訓水平-KingLT</Chinese>
             <Chinesesimp>使用喉管所需的医疗培训水平</Chinesesimp>
-            <Czech>Úroveň výcviku potřebná k použití Laryngeální Tuby - King LT</Czech>
+            <Czech>Úroveň výcviku potřebná k použití Larynx tuby - King LT</Czech>
             <Korean>기관삽입기를 사용하기 위해 필요한 의료레벨 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser un tube laryngé</French>
             <Turkish>Laringeal Tüp'ü kullanmak için gerekli eğitim seviyesi</Turkish>
@@ -954,7 +952,7 @@
             <Spanish>Tiempo para tubo laríngeo</Spanish>
             <Chinese>喉頭時間</Chinese>
             <Chinesesimp>喉管時間</Chinesesimp>
-            <Czech>Čas pro Laryngeální Tubus</Czech>
+            <Czech>Čas pro Larynx tubu</Czech>
             <Korean>기관삽입기 사용에 걸리는 시간</Korean>
             <French>Durée d'intubation avec le tube laryngé</French>
             <Turkish>Laringeal Tüp için Zaman</Turkish>
@@ -969,7 +967,7 @@
             <Spanish>Cuánto tiempo tomará usar tubo laríngeo</Spanish>
             <Chinese>使用喉頭需要多長時間</Chinese>
             <Chinesesimp>使用喉管的所需時間</Chinesesimp>
-            <Czech>Jak dlouho zabere použití Laryngeální Tuby</Czech>
+            <Czech>Jak dlouho zabere použití Larynx tuby</Czech>
             <Korean>기관삽입기 사용에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour placer un tube laryngé</French>
             <Turkish>Laringeal Tüp'ü kullanmak ne kadar sürecek</Turkish>
@@ -1014,7 +1012,7 @@
             <Spanish>Registros de actividad de color (DEA-X/Oximetro)</Spanish>
             <Chinese>彩色活动记录(AED-X/脉冲氧饱和度仪)</Chinese>
             <Chinesesimp>允许彩色活动记录(AED-X/脉搏血氧仪)</Chinesesimp>
-            <Czech>Barevné protokoly aktivit (AED-X / Pulzní Oxymetr)</Czech>
+            <Czech>Barevné protokoly aktivit (AED-X / Pulseoximeter)</Czech>
             <Korean>컬러 활동 기록 (AED-X / 맥박 측정기)</Korean>
             <French>Registres d'activité colorés (AED-X/Pulseoximeter)</French>
             <Turkish>Renkli aktivite günlükleri (AED-X / Pulseoximeter)</Turkish>
@@ -1029,7 +1027,7 @@
             <Spanish>Marca los registros de actividad del DEA-X o del Oximetro en rojo, si algún valor es crítico</Spanish>
             <Chinese>将AED-X或Pulseoximeter的Activitylogs染成红色，如果任何值是临界值。</Chinese>
             <Chinesesimp>若任何生命处于危险中(处于临界值以下),则将AED-X或脉搏血氧仪的数值显示为红色</Chinesesimp>
-            <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulzního Oxymetru červeně</Czech>
+            <Czech>Pokud je nějaká hodnota kritická, vybarví Activitylogy AED-X nebo Pulseoximeter červeně</Czech>
             <Korean>중요한 값이있는 경우 AED-X 또는 맥박산소측정기의 활동 로그를 빨간색으로 표시합니다.</Korean>
             <French>Colore les registres d'activité de l'AED-X ou de l'oxymètre de pouls en rouge, si une valeur est critique</French>
             <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
@@ -1046,7 +1044,7 @@
             <Korean>회복자세 교정</Korean>
             <French>En position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturuldu</Turkish>
-            <Italian>In posizione laterale di sicurezza</Italian>
+            <Italian>In posizione laterale di sicurezza.</Italian>
             <Czech>Uveden do stabilizované polohy</Czech>
             <Spanish>Posición lateral de seguridad establecida</Spanish>
         </Key>
@@ -1059,20 +1057,20 @@
             <Korean>회복자세 교정해주기</Korean>
             <French>Mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturun</Turkish>
-            <Italian>Metti in posizione laterale di sicurezza</Italian>
+            <Italian>Metti in posizione laterale di sicurezza.</Italian>
             <Czech>Uvést do stabilizované polohy</Czech>
             <Spanish>Establecer posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_kat_airway_RecoveryPosition_displayNameProgress">
             <English>Establishing recovery position</English>
             <German>In die stabile Seitenlage legen</German>
-            <Polish>Układanie w pozycji bezpiecznej</Polish>
+            <Polish>Układanie w pozycji</Polish>
             <Chinesesimp>正在建立恢复体态</Chinesesimp>
             <Japanese>回復体位にしています</Japanese>
             <Korean>회복자세 교정 중</Korean>
             <French>Mise en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu oluşturuluyor</Turkish>
-            <Italian>Mettendo in posizione laterale di sicurezza</Italian>
+            <Italian>Mettendo in posizione laterale di sicurezza.</Italian>
             <Czech>Uvádím do stabilizované polohy</Czech>
             <Spanish>Moviendo a posición lateral de seguridad</Spanish>
         </Key>
@@ -1085,7 +1083,7 @@
             <Korean>회복자세 교정 성공</Korean>
             <French>Mise en position latérale de sécurité réussie</French>
             <Turkish>Kurtarma pozisyonu başarıyla kuruldu</Turkish>
-            <Italian>Messo in posizione laterale di sicurezza</Italian>
+            <Italian>Messo in posizione laterale di sicurezza. </Italian>
             <Czech>Stabilizovaná poloha uvedena úspěšně</Czech>
             <Spanish>Posición lateral de seguridad establecida</Spanish>
         </Key>
@@ -1098,7 +1096,7 @@
             <Korean>회복자세 교정 취소됨</Korean>
             <French>Mise en position latérale de sécurité annulée</French>
             <Turkish>Kurtarma pozisyonu iptal edildi</Turkish>
-            <Italian>Posizione laterale di sicurezza annullata</Italian>
+            <Italian>Posizione laterale di sicurezza annullata.</Italian>
             <Czech>Stabilizovaná poloha zrušena</Czech>
             <Spanish>Cambio de posición cancelado</Spanish>
         </Key>
@@ -1111,7 +1109,7 @@
             <Korean>%1 이(가) 회복자세를 교정했습니다</Korean>
             <French>%1 a mis en place la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu %1 oluşturuldu</Turkish>
-            <Italian>%1 messo in posizione laterale di sicurezza</Italian>
+            <Italian>%1 messo in posizione laterale di sicurezza. </Italian>
             <Czech>%1 uvedl do stabilizované polohy</Czech>
             <Spanish>%1 estableció la posición lateral de seguridad</Spanish>
         </Key>
@@ -1124,7 +1122,7 @@
             <Korean>회복자세 교정 시간</Korean>
             <French>Temps pour mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu için zaman</Turkish>
-            <Italian>Tempo per mettere in posizione laterale di sicurezza</Italian>
+            <Italian>Tempo per mettere in posizione laterale di sicurezza. </Italian>
             <Czech>Doba pro stabilizovanou polohu</Czech>
             <Spanish>Tiempo para establecer en posición lateral de seguridad</Spanish>
         </Key>
@@ -1137,7 +1135,7 @@
             <Korean>회복자세를 교정해주는 데 걸리는 시간입니다.</Korean>
             <French>Temps nécessaire pour mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
-            <Italian>Tempo necessario per mettere in posizione laterale di sicurezza</Italian>
+            <Italian>Tempo necessario per mettere in posizione laterale di sicurezza. </Italian>
             <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
             <Spanish>Cuanto tiempo tomará establecer la posición de lateral de seguridad</Spanish>
         </Key>
@@ -1150,7 +1148,7 @@
             <Korean>회복자세 교정 취소</Korean>
             <French>Annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunu iptal et</Turkish>
-            <Italian>Cancella la posizione laterale di sicurezza</Italian>
+            <Italian>Cancella la posizione laterale di sicurezza. </Italian>
             <Czech>Zrušit stabilizovanou polohu</Czech>
             <Spanish>Cancelar posición lateral de seguridad</Spanish>
         </Key>
@@ -1163,7 +1161,7 @@
             <Korean>회복자세 교정 취소 중</Korean>
             <French>Annulation de la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu iptal ediliyor</Turkish>
-            <Italian>Cancellando la posizione laterale di sicurezza</Italian>
+            <Italian>Cancellando la posizione laterale di sicurezza.</Italian>
             <Czech>Ruším stabilizovanou polohu</Czech>
             <Spanish>Cancelando la posición lateral de seguridad</Spanish>
         </Key>
@@ -1176,7 +1174,7 @@
             <Korean>회복자세 교정 취소 시간</Korean>
             <French>Temps pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunu iptal etmek için zaman</Turkish>
-            <Italian>Tempo per cancellare la  posizione laterale di sicurezza </Italian>
+            <Italian>Tempo per cancellare la  posizione laterale di sicurezza. </Italian>
             <Czech>Doba pro zrušení stabilizované polohy</Czech>
             <Spanish>Tiempo para cancelar la posición lateral de seguridad</Spanish>
         </Key>
@@ -1189,7 +1187,7 @@
             <Korean>회복자세 교정을 취소하는 데 걸리는 시간입니다</Korean>
             <French>Temps nécessaire pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
-            <Italian>Tempo necessario per annullare la posizione laterale di sicurezza</Italian>
+            <Italian>Tempo necessario per annullare la posizione laterale di sicurezza. </Italian>
             <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
             <Spanish>Cuanto tiempo tomará cancelar la posición lateral de seguridad</Spanish>
         </Key>
@@ -1199,7 +1197,7 @@
             <Polish>Drożne</Polish>
             <Spanish>No obstruída</Spanish>
             <Chinese>無 阻塞</Chinese>
-            <Czech>Bez obstrukce</Czech>
+            <Czech>Není zablokováno</Czech>
             <Korean>혀에 의해 막히지 않음</Korean>
             <French>Non obstruées</French>
             <Turkish>Değil Kapanma</Turkish>
@@ -1213,7 +1211,7 @@
             <Polish>Brak zatoru</Polish>
             <Spanish>No ocluída</Spanish>
             <Chinese>無 閉塞</Chinese>
-            <Czech>Bez okluze</Czech>
+            <Czech>Není uzavřeno</Czech>
             <Korean>구토에 의해 막히지 않음</Korean>
             <French>Non occludées</French>
             <Turkish>Değil Tıkalı</Turkish>
@@ -1243,7 +1241,6 @@
             <Chinesesimp>恢复体态设置</Chinesesimp>
             <Japanese>回復体位設定</Japanese>
             <Spanish>Parámetros de posición lateral de seguridad e hiperextensión de cabeza</Spanish>
-            <Polish>Opcje - Pozycja bezpieczna + odchylanie głowy</Polish>
         </Key>
         <Key ID="STR_kat_airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1255,7 +1252,6 @@
             <Chinesesimp>气道物品设置</Chinesesimp>
             <Japanese>気道アイテム設定</Japanese>
             <Spanish>Parámetros de las herramientas (vias aéreas)</Spanish>
-            <Polish>Opcje przedmiotów - Drogi oddechowe</Polish>
         </Key>
     </Package>
 </Project>
