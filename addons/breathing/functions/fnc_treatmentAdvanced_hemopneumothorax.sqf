@@ -17,10 +17,6 @@
  * Public: No
  */
 
-params ["_player", "_target"];
-// systemChat "Treating Hemopneumothorax";
-if (local _target) then {
-    ["treatmentHemopneumothorax", [_player, _target]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentHemopneumothorax", [_player, _target], _target] call CBA_fnc_targetEvent;
-};
+params ["_medic", "_patient"];
+
+[QGVAR(hemopneumothoraxLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;

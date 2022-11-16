@@ -11,7 +11,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         items[] = {"kat_Pulseoximeter"};
         condition = "kat_breathing_enable && !(_patient getVariable ['kat_breathing_pulseoximeter', false])";
-        patientStateCondition = 0;
         callbackSuccess = QFUNC(treatmentAdvanced_pulseoximeter);
         callbackFailure = "";
         callbackProgress = "";
@@ -36,7 +35,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         items[] = {};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(pulseoximeter), false)]);
-        patientStateCondition = 0;
         callbackSuccess = QFUNC(treatmentAdvanced_removePulseoximeter);
         callbackFailure = "";
         callbackProgress = "";
@@ -61,8 +59,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 7;
         items[] = {"kat_chestSeal"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_chestSeal));
+        callbackSuccess = QFUNC(treatmentAdvanced_chestSeal);
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -86,8 +83,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_hemopneumothorax));
+        callbackSuccess = QFUNC(treatmentAdvanced_hemopneumothorax);
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -111,8 +107,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_tensionpneumothorax));
+        callbackSuccess = QFUNC(treatmentAdvanced_tensionpneumothorax);
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;

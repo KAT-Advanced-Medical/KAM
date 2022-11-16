@@ -17,10 +17,6 @@
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["_medic", "_patient"];
 
-if (local _target) then {
-    ["treatmentChestSeal", [_player, _target]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentChestSeal", [_player, _target], _target] call CBA_fnc_targetEvent;
-};
+[QGVAR(chestSealLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;

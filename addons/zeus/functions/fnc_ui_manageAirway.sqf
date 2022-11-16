@@ -55,23 +55,23 @@ private _fnc_sliderMove = {
     private _idc = ctrlIDC _slider;
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     private _unit = attachedTo _logic;
-    private _curVal = _unit getVariable ["KAT_medical_airwayStatus", 50];
-    _slider ctrlSetTooltip format [localize "STR_kat_zeus_sliderFormat13was23", round(sliderPosition _slider), round _curVal, "%"];
+    private _curVal = _unit getVariable [QEGVAR(breathing,airwayStatus), 50];
+    _slider ctrlSetTooltip format [LLSTRING(sliderFormat13was23), round(sliderPosition _slider), round _curVal, "%"];
 };
 
 private _slider = _display displayCtrl 16106;
 _slider sliderSetRange [0, 100];
 _slider sliderSetSpeed [1,10];
-private _curSpO2Val = _unit getVariable ["KAT_medical_airwayStatus", 50];
+private _curSpO2Val = _unit getVariable [QEGVAR(breathing,airwayStatus), 50];
 _slider sliderSetPosition (round _curSpO2Val);
 _slider ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove];
 [_slider,_curSpO2Val] call _fnc_sliderMove;
 
 (_display displayCtrl 16101) cbSetChecked (_unit getVariable [QEGVAR(airway,obstruction), false]);
-(_display displayCtrl 16102) cbSetChecked (_unit getVariable ["KAT_medical_airwayOccluded", false]);
-(_display displayCtrl 16103) cbSetChecked (_unit getVariable ["KAT_medical_pneumothorax", false]);
-(_display displayCtrl 16104) cbSetChecked (_unit getVariable ["KAT_medical_hemopneumothorax", false]);
-(_display displayCtrl 16105) cbSetChecked (_unit getVariable ["KAT_medical_tensionpneumothorax", false]);
+(_display displayCtrl 16102) cbSetChecked (_unit getVariable [QEGVAR(airway,occluded), false]);
+(_display displayCtrl 16103) cbSetChecked (_unit getVariable [QEGVAR(breathing,pneumothorax), false]);
+(_display displayCtrl 16104) cbSetChecked (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false]);
+(_display displayCtrl 16105) cbSetChecked (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]);
 
 
 
@@ -93,14 +93,14 @@ private _fnc_onConfirm = {
     } forEach [16101,16102,16103,16104,16105];
 
     _unit setVariable [QEGVAR(airway,obstruction), _valueArr select 0, true];
-    _unit setVariable ["KAT_medical_airwayOccluded", _valueArr select 1, true];
-    _unit setVariable ["KAT_medical_pneumothorax", _valueArr select 2, true];
-    _unit setVariable ["KAT_medical_hemopneumothorax", _valueArr select 3, true];
-    _unit setVariable ["KAT_medical_tensionpneumothorax", _valueArr select 4, true];
-    private _curSpO2Val = _unit getVariable ["KAT_medical_airwayStatus", 50];
+    _unit setVariable [QEGVAR(airway,occluded), _valueArr select 1, true];
+    _unit setVariable [QEGVAR(breathing,pneumothorax), _valueArr select 2, true];
+    _unit setVariable [QEGVAR(breathing,hemopneumothorax), _valueArr select 3, true];
+    _unit setVariable [QEGVAR(breathing,tensionpneumothorax), _valueArr select 4, true];
+    private _curSpO2Val = _unit getVariable [QEGVAR(breathing,airwayStatus), 50];
     private _sliderValue = sliderPosition (_display displayCtrl 16106);
     
-    _unit setVariable ["KAT_medical_airwayStatus", round(_sliderValue), true]; 
+    _unit setVariable [QEGVAR(breathing,airwayStatus), round(_sliderValue), true]; 
     if(_curSpO2Val isEqualTo 100) then { 
         [_unit] call EFUNC(breathing,handleBreathing);
     };

@@ -13,7 +13,6 @@ PREP(handleTreatment);
 PREP(init);
 PREP(onCloseDialog);
 PREP(placeAED);
-PREP(removeEffect_IV);
 PREP(returnAED_X);
 PREP(removeLog);
 PREP(treatment);

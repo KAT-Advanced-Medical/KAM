@@ -21,12 +21,10 @@ params ["_medic", "_patient"];
 
 _patient setVariable [QGVAR(recovery), true, true];
 _patient setVariable [QGVAR(overstretch), true, true];
-_patient setVariable ["KAT_medical_airwayOccluded", false, true];
+_patient setVariable [QGVAR(occluded), false, true];
 
-private _output = localize LSTRING(Recovery_Info);
+private _output = LLSTRING(Recovery_Info);
 [_output, 2, _medic] call ace_common_fnc_displayTextStructured;
-
-[_patient, "activity", LSTRING(RecoveryPosition_Log), [[_medic] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
 
 [{
     params ["_medic", "_patient"];
@@ -36,15 +34,13 @@ private _output = localize LSTRING(Recovery_Info);
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
 
-    _output = localize LSTRING(Recovery_Cancel);
+    _output = LLSTRING(Recovery_Cancel);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 }, [_medic, _patient], 3600, {
     params ["_medic","patient"];
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
     
-    _output = localize LSTRING(Recovery_Cancel);
+    _output = LLSTRING(Recovery_Cancel);
     [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 }] call CBA_fnc_waitUntilAndExecute;
-
-true;

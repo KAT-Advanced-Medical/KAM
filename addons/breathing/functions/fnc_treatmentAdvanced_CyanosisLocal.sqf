@@ -22,7 +22,7 @@ params ["_medic", "_patient", "_bodyPart"];
 private _spO2 = 0;
 
 if (alive _patient) then {
-    _spO2 = _patient getVariable ["KAT_medical_airwayStatus", 100];
+    _spO2 = _patient getVariable [QGVAR(airwayStatus), 100];
 };
 
 private _messageCyanosis = LLSTRING(CyanosisStatus_N);

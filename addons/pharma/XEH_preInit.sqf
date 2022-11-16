@@ -480,20 +480,11 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(maxStack),
-	"SLIDER",
-	[LLSTRING(SETTING_Max_Stack), LLSTRING(SETTING_Max_Stack_DESC)],
-	CBA_SETTINGS_CAT,
-	[1, 10, 5, 0],
-	true
-] call CBA_Settings_fnc_init;
-
-[
 	QGVAR(coagulation),
 	"CHECKBOX",
 	[LLSTRING(SETTING_Coagulation), LLSTRING(SETTING_Coagulation_DESC)],
 	CBA_SETTINGS_CAT,
-	[true],
+	[false],
 	true
 ] call CBA_Settings_fnc_init;
 

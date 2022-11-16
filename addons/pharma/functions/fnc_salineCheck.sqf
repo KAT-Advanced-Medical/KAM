@@ -6,17 +6,23 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+* 2: Body Part <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [_medic, _patient] call kat_pharma_fnc_salineCheck;
+ * [_medic, _patient, "RightArm"] call kat_pharma_fnc_salineCheck;
  *
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", "_bodypart"];
+
+private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
+private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+private _IVactual = _IVarray select _partIndex;
+if (_IVactual != 3) exitWith {false};
 
 private _fluidCheck = _patient getVariable ["ace_medical_ivBags", []];
 private _check = false;
