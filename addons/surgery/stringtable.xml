@@ -759,7 +759,6 @@
             <English>Time to apply an NPWT dressing</English>
             <Chinesesimp>施用 NPWT 敷料的时间</Chinesesimp>
             <Italian>Tempo per applicare una medicazione NPWT</Italian>
-            <Polish>Czas potrzebny do nałożenie opatrunku próżniowego</Polish>            
             <Polish>Czas potrzebny do nałożenie opatrunku próżniowego (NPWT)</Polish>
             <Czech>Čas k použití NPWT</Czech>
             <French>Temps pour appliquer un pansement par pression négative</French>
@@ -1012,6 +1011,7 @@
             <English>[KAM] Surgery Box</English>
             <Polish>[KAM] Skrzynia chirugiczna</Polish>
             <Czech>[KAM] Chirurgický Box</Czech>
+            <German>[KAM] Chirurgie-Box</German>
         </Key>
     </Package>
 </Project>

@@ -1087,8 +1087,6 @@
             <English>Push Etomidate</English>
             <Chinesesimp>推注依托咪酯</Chinesesimp>
             <Italian>Inietta Etomidato</Italian>
-            <Czech>Aplikovat Etomidát</Czech>
-            <Italian>Iniettare Etomidato</Italian>
             <Czech>Vstříknout etomidát</Czech>
             <French>Administrer de l'étomidate</French>
             <Polish>Wstrzyknij Etomidat</Polish>
@@ -1912,8 +1910,6 @@
             <Chinesesimp>芬太尼设置</Chinesesimp>
             <Italian>Impostazioni del fentanil</Italian>
             <Czech>Nastavení Fentanylu</Czech>
-            <Italian>Impostazioni del Fentanil</Italian>
-            <Czech>Nastavení fentanylu</Czech>
             <French>Paramètres du Fentanyl</French>
             <Korean>펜타닐 설정</Korean>
             <German>Fentanyl Einstellungen</German>
@@ -2118,6 +2114,7 @@
             <Italian>Abilita sistema di coagulazione</Italian>
             <Polish>Włącz krzepnięcie</Polish>
             <Czech>Povolit Koagulaci</Czech>
+            <German>Gerinnung</German>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Coagulation_DESC">
             <English>Enables advanced coagulation features and modifies TXA and EACA behaviour accordingly.</English>
@@ -2125,6 +2122,7 @@
             <Italian>Abilita la coagulazione avanzata e modifica di conseguenza il comportamento di TXA e EACA.</Italian>
             <Polish>Włącza zaawansowane funkcje krzepnięcia oraz odpowiednie modyfikacje zachowania TXA i EACA.</Polish>
             <Czech>Povolí funkci pokročilé koagulace (srážlivost) krve a modifikuje chování TXA a EACA.</Czech>
+            <German>Aktiviert erweiterte Gerinnung und modifiziert das verhalten von TXA &amp; EACA (ε-Aminocapronsäure) entsprechend.</German>
         </Key>
         <Key ID="STR_kat_pharma_EACA_Display">
             <English>EACA</English>
@@ -2228,6 +2226,7 @@
             <Japanese>透析を行う</Japanese>
             <Italian>Esegui Dialisi</Italian>
             <Czech>Provést dialýzu</Czech>
+            <German>Dialyse durchführen</German>
         </Key>
         <Key ID="STR_kat_pharma_Dialysis_DisplayNameProgress">
             <English>Performing</English>
@@ -2235,6 +2234,7 @@
             <Japanese>実施中</Japanese>
             <Italian>Eseguendo</Italian>
             <Czech>Provádění dialýzy</Czech>
+            <German>Durchführung</German>
         </Key>
         <Key ID="STR_kat_pharma_dialysis_log">
             <English>%1 performed dialysis</English>
@@ -2252,6 +2252,7 @@
             <English>[KAM] Medicines crate</English>
             <Polish>[KAM] Skrzynia z lekami</Polish>
             <Czech>[KAM] Bedna s medikamenty</Czech>
+            <German>[KAM] Medikamentenkiste</German>
         </Key>
     </Package>
 </Project>
