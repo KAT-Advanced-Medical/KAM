@@ -27,13 +27,12 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-private _type = round random(7);
 [
     QGVAR(bloodgroup),
     "LIST",
     LLSTRING(client_bt),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], _type],
+    [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], 7],
     2,
     {
         player setVariable [QGVAR(bloodtype), _this, true];

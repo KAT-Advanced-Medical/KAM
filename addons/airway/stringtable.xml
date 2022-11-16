@@ -541,7 +541,7 @@
             <Russian>Размещение</Russian>
             <Japanese>装着中</Japanese>
         </Key>
-        <Key ID="STR_kat_airway_Larynx_Display">
+        <Key ID="STR_kat_airway_Larynxtubus_Display">
             <English>King LT</English>
             <German>Larynxtubus</German>
             <Polish>Rurka krtaniowa</Polish>
@@ -586,7 +586,7 @@
             <Russian>Ларингеальная трубка – это устройство для обеспечения проходимости дыхательных путей.</Russian>
             <Japanese>King LTは気道を保護するために使用されます</Japanese>
         </Key>
-        <Key ID="STR_kat_airway_Guedel_Display">
+        <Key ID="STR_kat_airway_Guedeltubus_Display">
             <English>Guedel Tube</English>
             <German>Guedeltubus</German>
             <Polish>Rurka ustno-gardłowa</Polish>
@@ -690,35 +690,6 @@
             <Italian>Aspirazione medica</Italian>
             <Russian>Медицинский отсос</Russian>
             <Japanese>医療吸引</Japanese>
-        </Key>
-        <Key ID="STR_kat_airway_hint_name">
-            <English>Treatment</English>
-            <German>Behandlung</German>
-            <Polish>Leczenie</Polish>
-            <Spanish>Tratamiento</Spanish>
-            <Chinese>治療</Chinese>
-            <Chinesesimp>治疗</Chinesesimp>
-            <Czech>Léčba</Czech>
-            <Korean>치료</Korean>
-            <French>Soins</French>
-            <Turkish>Tedavi</Turkish>
-            <Italian>Trattamento</Italian>
-            <Russian>Уход</Russian>
-            <Japanese>治療</Japanese>
-        </Key>
-        <Key ID="STR_kat_airway_hint_desc">
-            <English>When a patient enters the unconscious state, there are two things that can happen. First of all the airway can collapse. In medical sense this mean, the airway can be blocked from your tongue muscle, 'cause of the missing muscle tone. For example in real life, this will happen to nearly every unconscious person lying on the back. The second thing that can happen is the the airway occluded state. When a patient is lying on the back and the body puke, it will not leave the mouth space. It will stay in there and can block the airway too. The right treatment here, is to remove this vomit. In real life, this will happen sometimes, not quiet often.</English>
-            <German>Wenn eine Person bewusstlos wird, gibt es zwei Dinge, die passieren können. Erstens, die Atemwege können obstruiert sein. Durch den nicht mehr vorhandenen Muskeltonus kann der Zungengrund den Luftweg blockieren. Im echten Leben kann man davon ausgehen, wenn ein Patient bewusstlos ist und auf dem Rücken liegt, dass er eine Atemwegsverlegung hat. Zweitens, es ist möglich, dass der Patient erbricht und flüssige und feste Stoffe dann in die Atemwege gelangen und diese dann "verstopfen". Im echten Leben passiert das nicht besonders häufig</German>
-            <Polish>Kiedy pacjent staję się nieprzytomny, mogą stać się dwie rzeczy. Pierwszą jest zapadnięcie się dróg oddechowych. Z medycznego punktu widzenia drogi oddechowe mogą być zablokowane przez język. Na przykład w prawdziwym życiu zdarzy się to praktycznie w każdym przypadku osoby nieprzytomnej leżącej na plecach. Drugą rzeczą która może się zdarzyć to niedrożność dróg oddechowych. Kiedy pacjent leży na plecach i ciało będzie wymiotowało/odkrztuszało to zawartość nie opuści buzi. Zostanie tam i będzie mogło blokować drogi oddechowe. Odpowiednim leczniem jest tu usunięcie wymiocin. W prawdziwym życiu też może się to zdarzyć ale nie jest to częste.</Polish>
-            <Spanish>Cuando un paciente entra en un estado de inconciencia, hay dos posibles escenarios. Lo primero, las vías aéreas pueden colapsar. En términos médicos, esto significa que las vías aéreas pueden bloquearse con el músculo de la lengua por la falta de tono muscular (tensión). Por ejemplo, en la vida real, esto le pasará a casi cualquier persona inconciente que esté sobre su espalda. Lo segundo que puede pasar es una oclusión de las vías aéreas. Cuando un paciente está sobre su espalda y éste vomita, el vómito no abandonará el área de la boca, permanecerá ahí y esto puede bloquear las vías aéreas también. El correcto tratamiento sería eliminar el vómito. En la vida real este último sólo ocurrirá a veces, no muy frecuentemente.</Spanish>
-            <Chinese>當患者陷入無意識狀態時，有兩件事情可能會發生。首先呼吸道可能會塌陷，以醫學角度來看，因為舌部肌肉失去張力而導致阻擋住呼吸道。舉個例子，在現實生活中每一個失去意識的人幾乎都會發生這個。再來就是會發生的就是呼吸道閉塞。當病人倒地並嘔吐的時候，會讓嘴部沒有空間，也會導致呼吸道阻塞。有一個治療方法，那就是清除嘔吐物。在現實生活中，這偶爾會發生，但不常見</Chinese>
-            <Czech>Když pacient vstoupí do stavu bezvědomí, mohou nastat dvě věci. Nejprve se mohou zhroutit dýchací cesty. V lékařském smyslu to znamená, že dýchací cesty mohou být blokovány vaším jazykovým svalem, protože mu chybí svalový tón. Například v reálném životě se to stane téměř každému, který v bezvědomí leží na zádech. Druhou věcí, která se může stát, je zablokovaný stav dýchacích cest, když pacient leží na zádech a zvrací. Zvratky neopustí prostor v ústech a ty mohou také blokovat dýchací cesty. Pro stabilizaci je třeba zvratky odstranit. Ve skutečném životě se v těchto stavech občas člověk pozvrací, ale nestává se to tak často.</Czech>
-            <Korean>환자가 기절하면 두 가지 일이 발생할 수 있다. 먼저 기도가 혀 근육의 힘이 빠져 기도를 막는다(중력에 의해 내려가고 기도를 막음). 이는 기절한 환자에게서 거의 대부분 볼 수 있는 증상이다. 두 번째로 구토를 하여 기도에 내용물이 가득차 기도폐쇄를 유발할 수 있으며, 이 경우 치료법은 구토물을 제거하는 것이다. 다만 두 번째 경우는 일반적이지는 않은 경우이다.</Korean>
-            <French>Quand un patient devient inconscient, deux choses peuvent se produire. La première, les voies aériennes peuvent s'affaisser. D'un point de vue médical, les voies aériennes peuvent être bloquées par la langue. Par exemple en situation réelle, cela se produira quasiment systématiquement pour toute personne inconsciente allongée sur le dos. La deuxième chose qui peut arriver est un état d'occlusion des voies aériennes. Quand un patient est allongé sur le dos et qu'il vomit, il pourra boucher ses voies aériennes. La bonne méthode dans ce cas est de retirer le vomi.</French>
-            <Turkish>Hasta bilinçsiz duruma girdiğinde olabilecek iki şey vardır. Öncelikle hava yolu çökebilir. Tıbbi anlamda bu, eksik kas tonusu nedeniyle hava yolunun dil kasınızdan bloke edilebileceği anlamına gelir. Örneğin gerçek hayatta, sırt üstü yatan hemen hemen her bilinçsiz insanın başına gelecek.Olabilecek ikinci şey, hava yolu tıkalı durumudur. Hasta sırtüstü yatarken ve vücudu kustuğunda ağız boşluğunu terk etmeyecektir. Orada kalacak ve hava yolunu da tıkayabilir. Buradaki doğru tedavi, bu kusmuğu çıkarmaktır. Gerçek hayatta bu bazen olur, sık sık değil.</Turkish>
-            <Italian>Quando un paziente entra in stato d'incoscienza, possono accadere due cose. La prima, possono collassare le vie aeree. In termini medici significa che, a causa della mancanza del tono muscolare, le vie aeree possono venir bloccate dalla lingua. Ad esempio nella vita reale, questo accade a quasi ogni persona svenuta distesa sulla schiena. La seconda cosa che può accadere è l'ostruzione delle vie aeree. Quando un paziente è disteso sulla schiena e vomita, il vomito rimane nella bocca e può bloccare le vie aeree. Il trattamento qui consiste nella rimozione del vomito. Nella vita reale, questo non accade molto spesso.</Italian>
-            <Russian>Когда пациент входит в бессознательное состояние, могут произойти две вещи. В первую очередь могут разрушиться дыхательные пути. В медицинском смысле это означает, что дыхательные пути могут быть заблокированы мышцей языка из-за отсутствия мышечного тонуса. Например, в реальной жизни это произойдет почти с каждым человеком без сознания, лежащим на спине. Второе, что может произойти, это состояние закупорки дыхательных путей. Когда больной лежит на спине и его рвет, он не покидает ротовое пространство. Он останется там и может заблокировать дыхательные пути. Правильное лечение здесь, чтобы удалить эту рвоту. В реальной жизни это будет происходить иногда, но не часто.</Russian>
-            <Japanese>患者が意識不明の状態に入ると、2つのことが起こり得ます。まず第一に、気道が崩壊する可能性があります。医学的な意味では、これは、筋肉の緊張が失われるために、気道が舌の筋肉から遮断される可能性があることを意味します。たとえば、実生活では、これは背中に横たわっているほとんどすべての意識不明の人に起こります。起こり得る2番目のことは、気道閉塞状態です。患者が仰向けになって体を吐くと、口のスペースを離れることはありません。それはそこにとどまり、気道も塞ぐ可能性があります。ここでの正しい治療法は、この嘔吐物を取り除くことです。実生活では、これは時々起こりますが、静かではありません。</Japanese>
         </Key>
         <Key ID="STR_kat_airway_Vomit_Display">
             <English>Vomit (Small)</English>

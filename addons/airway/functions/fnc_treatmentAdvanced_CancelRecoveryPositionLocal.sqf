@@ -23,5 +23,3 @@ _patient setVariable [QGVAR(overstretch), false, true];
 
 private _output = localize LSTRING(Recovery_Cancel);
 [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
-
-true;

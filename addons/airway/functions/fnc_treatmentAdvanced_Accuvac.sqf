@@ -16,17 +16,13 @@
  * Public: Yes
  */
 
-params ["_caller", "_target"];
+params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
-if !(_target getVariable ["KAT_medical_airwayOccluded", false]) exitWith {
+if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
     private _output = localize LSTRING(Accuvac_NA);
-    [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
+    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 };
 
-if (local _target) then {
-    ["treatmentAccuvac", [_target, "Accuvac"]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentAccuvac", [_target, "Accuvac"], _target] call CBA_fnc_targetEvent;
-};
+[_patient, _classname] call ace_medical_treatment_fnc_addToTriageCard;
 
-true;
+[QGVAR(accuvacLocal), _patient, _patient] call CBA_fnc_targetEvent;

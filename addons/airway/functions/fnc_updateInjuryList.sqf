@@ -149,30 +149,30 @@ if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then 
 };
 
 if (_target getVariable [QGVAR(overstretch), false] && _selectionN isEqualTo 0) then {
-    _woundEntries pushback [localize LSTRING(overstretched), [0.1, 1, 1, 1]];
+    _woundEntries pushback [LLSTRING(overstretched), [0.1, 1, 1, 1]];
 };
 
 if (_target getVariable [QGVAR(recovery), false]) then {
-    _entries pushback [localize LSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
+    _entries pushback [LLSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
 };
 
 private _tensionhemothorax = false;
-if (!(kat_breathing_showPneumothorax_dupe)) then {
-    if ((_target getVariable ["KAT_medical_tensionpneumothorax", false]) || (_target getVariable ["KAT_medical_hemopneumothorax", false])) then {
-            _tensionhemothorax = true;
+if (!(EGVAR(breathing,showPneumothorax_dupe))) then {
+    if ((_target getVariable [QEGVAR(breathing,hemopneumothorax), false]) || (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false])) then {
+        _tensionhemothorax = true;
     };
 };
 
-if (_target getVariable ["KAT_medical_pneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_pneumothorax_hardcore) && !(_tensionhemothorax)) then {
-    _woundEntries pushback [localize ELSTRING(breathing,pneumothorax_mm), [1,1,1,1]];
+if (_target getVariable [QEGVAR(breathing,pneumothorax), false] && _selectionN isEqualTo 1 && !(EGVAR(breathing,pneumothorax_hardcore)) && !(_tensionhemothorax)) then {
+    _woundEntries pushback [LELSTRING(breathing,pneumothorax_mm), [1,1,1,1]];
 };
 
-if (_target getVariable ["KAT_medical_hemopneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_tensionhemothorax_hardcore)) then {
-    _woundEntries pushback [localize ELSTRING(breathing,hemopneumothorax_mm), [1,1,1,1]];
+if (_target getVariable [QEGVAR(breathing,hemopneumothorax), false] && _selectionN isEqualTo 1 && !(EGVAR(breathing,tensionhemothorax_hardcore))) then {
+    _woundEntries pushback [LELSTRING(breathing,hemopneumothorax_mm), [1,1,1,1]];
 };
 
-if (_target getVariable ["KAT_medical_tensionpneumothorax", false] && _selectionN isEqualTo 1 && !(kat_breathing_tensionhemothorax_hardcore)) then {
-    _woundEntries pushback [localize ELSTRING(breathing,tensionpneumothorax_mm), [1,1,1,1]];
+if (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false] && _selectionN isEqualTo 1 && !(EGVAR(breathing,tensionhemothorax_hardcore))) then {
+    _woundEntries pushback [LELSTRING(breathing,tensionpneumothorax_mm), [1,1,1,1]];
 };
 
 // Show receiving IV volume remaining
@@ -215,11 +215,9 @@ private _IVactual = _placed select _selectionN;
 
 if (_IVactual > 0) then {
     if (_IVactual == 1) then {
-        private _text = format ["STR_kat_pharma_%1_Display", "IO_45"];
-        _entries pushBack [localize _text, [0.3, 0.6, 0.3, 1]];
+        _entries pushBack [LELSTRING(pharma,IO_45_Display), [0.3, 0.6, 0.3, 1]];
     } else {
-        private _text = format ["STR_kat_pharma_%1_Display", "IV_16"];
-        _entries pushBack [localize _text, [0.3, 0.6, 0.3, 1]];
+        _entries pushBack [LELSTRING(pharma,IV_16_Display), [0.3, 0.6, 0.3, 1]];
     };
 };
 

@@ -16,21 +16,18 @@
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["_medic", "_patient"];
 
-if !(_target getVariable ["KAT_medical_airwayOccluded", false]) exitWith {
-    private _output = localize LSTRING(Airway_turnaroundSuccess);
-    [_output, 2, _player] call ace_common_fnc_displayTextStructured;
-    false;
+if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
+    private _output = LLSTRING(Airway_turnaroundSuccess);
+    [_output, 2, _medic] call ace_common_fnc_displayTextStructured;
 };
 
 // TO-DO: head turning animation
 
-private _output = localize LSTRING(turnaround_info);
-[_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
+private _output = LLSTRING(turnaround_info);
+[_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
 
 if (random 100 < GVAR(probability_headturning)) then {
-    _target setVariable ["KAT_medical_airwayOccluded", false, true];
+    _patient setVariable [QGVAR(occluded), false, true];
 };
-
-true;
