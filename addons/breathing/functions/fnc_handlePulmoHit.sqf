@@ -23,33 +23,33 @@ if (!(GVAR(enable)) || !(_bodyPart isEqualTo "Body") || !(_ammo isKindOF "Bullet
 //Other mods can utilise KAT_Pneumothorax_Exclusion variable to prevent Pneumothorax from happening
 if ((_damage < GVAR(pneumothoraxDamageThreshold)) || (GVAR(pneumothorax) isEqualTo 0) || (_unit getVariable ["KAT_Pneumothorax_Exclusion", false])) exitWith {};
 
-private _hemo = _unit getVariable ["KAT_medical_hemopneumothorax", false];
-private _tension = _unit getVariable ["KAT_medical_tensionpneumothorax", false];
+private _hemo = _unit getVariable [QGVAR(hemopneumothorax), false];
+private _tension = _unit getVariable [QGVAR(tensionpneumothorax), false];
 
-if (random 100 <= GVAR(pneumothorax)) then {
+if (random 100 <= GVAR(pneumothoraxChance)) then {
     // add breathing sound
     [_unit, 0.5] call ace_medical_status_fnc_adjustPainLevel;
     [_unit] call FUNC(handleBreathing);
-    _unit setVariable ["KAT_medical_pneumothorax", true, true];
+    _unit setVariable [QGVAR(pneumothorax), true, true];
 
     // Prevent the patient from getting both hemothorax and tension pneumothorax at the same time
     if (random 100 <= GVAR(hemopneumothoraxChance) && !(_hemo || _tension)) then {
         [_unit, 0.7] call ace_medical_status_fnc_adjustPainLevel;
 
         if (random 100 < 50) then {
-            _unit setVariable ["KAT_medical_hemopneumothorax", true, true];
+            _unit setVariable [QGVAR(hemopneumothorax), true, true];
         } else {
-            _unit setVariable ["KAT_medical_tensionpneumothorax", true, true];
+            _unit setVariable [QGVAR(tensionpneumothorax), true, true];
         };
     };
 };
 
-if ((random(100) <= GVAR(deterioratingPneumothorax_chance)) && (_unit getVariable ["KAT_medical_pneumothorax", false])) then {
+if ((random(100) <= GVAR(deterioratingPneumothorax_chance)) && (_unit getVariable [QGVAR(pneumothorax), false])) then {
     [{
         params ["_unit"];
-        if ((_hemo || _tension || !(alive _unit)) || !(_unit getVariable ["KAT_medical_pneumothorax", false])) exitWith {};
+        if ((_hemo || _tension || !(alive _unit)) || !(_unit getVariable [QGVAR(pneumothorax), false])) exitWith {};
         [_unit, 0.7] call ace_medical_status_fnc_adjustPainLevel;
         [_unit] call FUNC(handleBreathing);
-        _unit setVariable ["KAT_medical_tensionpneumothorax", true, true];
+        _unit setVariable [QGVAR(tensionpneumothorax), true, true];
     }, [_unit], GVAR(deterioratingPneumothorax_countdown)] call CBA_fnc_waitAndExecute;
 };

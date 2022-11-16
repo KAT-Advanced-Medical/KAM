@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_patient"];
+params ["_patient","_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];

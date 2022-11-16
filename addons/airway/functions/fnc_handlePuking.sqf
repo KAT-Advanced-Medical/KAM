@@ -24,15 +24,18 @@ _unit setVariable ["kat_pukeActive_PFH", true];
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];
+
     private _isUnconscious = _unit getVariable ["ACE_isUnconscious", false];
     private _recovery = _unit getVariable [QGVAR(recovery), false];
-    if ((!(alive _unit)) || !_isUnconscious || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "larynx") || _recovery) exitWith {
+
+    if ((!(alive _unit)) || !_isUnconscious || (_unit getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") || _recovery) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_pukeActive_PFH", nil];
     };
+    
     if (random(100) <= GVAR(probability_occluded)) then {
-        if !(_unit getVariable ["KAT_medical_airwayOccluded", false]) then {
-            _unit setVariable ["KAT_medical_airwayOccluded", true, true];
+        if !(_unit getVariable [QGVAR(occluded), false]) then {
+            _unit setVariable [QGVAR(occluded), true, true];
             if (GVAR(checkbox_puking_sound)) then {
                 playsound3D [selectRandom [QPATHTOF_SOUND(sounds\puking1.wav),QPATHTOF_SOUND(sounds\puking2.wav),QPATHTOF_SOUND(sounds\puking3.wav)], _unit, false, getPosASL _unit, 8, 1, 15];
             };

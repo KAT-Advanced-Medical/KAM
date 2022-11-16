@@ -131,7 +131,7 @@ PREP_RECOMPILE_END;
 // breathing probability for a pneumothorax
 // a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
 [
-    QGVAR(pneumothorax),
+    QGVAR(pneumothoraxChance),
     "SLIDER",
     LLSTRING(SETTING_pneumothorax),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],

@@ -104,11 +104,11 @@ class CfgWeapons {
     class kat_AED: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
-        displayName = "$STR_KAT_circulation_AED_DISPLAYNAME";
+        displayName = CSTRING(AED_DISPLAYNAME);
         picture = QPATHTOF(ui\defib.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
-        descriptionShort = "$STR_KAT_circulation_AED_DESCRIPTION";
-        descriptionUse = "$STR_KAT_circulation_AED_DESCRIPTION";
+        descriptionShort = CSTRING(AED_DESCRIPTION);
+        descriptionUse = CSTRING(AED_DESCRIPTION);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 30;
         };

@@ -1,4 +1,3 @@
-PREP(accuvacSound);
 PREP(checkAirway);
 PREP(checkRecovery);
 PREP(displayPatientInformation);

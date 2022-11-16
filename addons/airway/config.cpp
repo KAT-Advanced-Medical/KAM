@@ -40,7 +40,6 @@ class CfgPatches {
 };
 
 #include "CfgSounds.hpp"
-#include "CfgHints.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgWeapons.hpp"

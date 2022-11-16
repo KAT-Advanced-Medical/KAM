@@ -19,20 +19,20 @@
 
 params ["_medic", "_patient"];
 
-if !(kat_breathing_tensionhemothorax_hardcore) exitWith {
-    if ((_patient getVariable ["KAT_medical_tensionpneumothorax", false]) && {_patient getVariable ["KAT_medical_activeChestSeal", false]}) then {
-        _patient setVariable ["KAT_medical_tensionpneumothorax", false, true];
+if !(GVAR(tensionhemothorax_hardcore)) exitWith {
+    if ((_patient getVariable [QGVAR(tensionpneumothorax), false]) && {_patient getVariable [QGVAR(activeChestSeal), false]}) then {
+        _patient setVariable [QGVAR(tensionpneumothorax), false, true];
         [_patient, "activity", LSTRING(tensionpneumothorax), [[_medic] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
-        if (!(_patient getVariable ["KAT_medical_pneumothorax", false]) && {!(_patient getVariable ["KAT_medical_hemopneumothorax", false]) && {!(_patient getVariable ["KAT_medical_tensionpneumothorax", false])}}) then {
-            _patient setVariable ["KAT_medical_activeChestSeal", false, true];
+        if (!(_patient getVariable [QGVAR(pneumothorax), false]) && {!(_patient getVariable [QGVAR(hemopneumothorax), false]) && {!(_patient getVariable [QGVAR(tensionpneumothorax), false])}}) then {
+            _patient setVariable [QGVAR(activeChestSeal), false, true];
         };
     };
 };
 
-if (_patient getVariable ["KAT_medical_activeChestSeal", false]) then {
-    _patient setVariable ["KAT_medical_tensionpneumothorax", false, true];
+if (_patient getVariable [QGVAR(activeChestSeal), false]) then {
+    _patient setVariable [QGVAR(tensionpneumothorax), false, true];
 };
 
-if (!(_patient getVariable ["KAT_medical_pneumothorax", false]) && {!(_patient getVariable ["KAT_medical_hemopneumothorax", false]) && {!(_patient getVariable ["KAT_medical_tensionpneumothorax", false])}}) then {
-    _patient setVariable ["KAT_medical_activeChestSeal", false, true];
+if (!(_patient getVariable [QGVAR(pneumothorax), false]) && {!(_patient getVariable [QGVAR(hemopneumothorax), false]) && {!(_patient getVariable [QGVAR(tensionpneumothorax), false])}}) then {
+    _patient setVariable [QGVAR(activeChestSeal), false, true];
 };
