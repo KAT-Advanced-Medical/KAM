@@ -239,7 +239,7 @@
             <French>L'obstruction a été temporairement atténuée</French>
             <Japanese>閉塞は一時的に軽減されています</Japanese>
             <Spanish>Obstrucción temporalmente mitigada</Spanish>
-            <German>Die Obstruktion ist kurzzeitig gelindert.</German>
+            <German>Die Obstruktion ist temporär gemildert</German>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>

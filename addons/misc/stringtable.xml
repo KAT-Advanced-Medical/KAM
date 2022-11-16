@@ -399,6 +399,7 @@
             <Spanish>Categoria médica en Arsenal</Spanish>
             <Italian>Categoria medica nell'Arsenale</Italian>
             <Polish>Kategoria medyczna w Arsenale</Polish>
+            <German>Arsenal Medizin-Kategorie</German>
         </Key>
         <Key ID="STR_kat_misc_SETTING_arsenalMedCategory_Desc">
             <English>Enable medical category for arsenal and relocate all medical related items to it?</English>
@@ -408,6 +409,7 @@
             <Spanish>Habilitar la categoría médica para el arsenal y mover todos los elementos médicos a este?</Spanish>
             <Italian>Abilita la categoria medica nell'arsernale e muovi tutti gli oggetti medici in questa categoria?</Italian>
             <Polish>Włączyć kategorię medyczną dla arsenału i przenieść do niej wszystkie przedmioty związane z medycyną?</Polish>
+            <German>Aktiviere Medizin-Kategorie für das Arsenal und verschiebe alle medizinischen Gegenstände dort hin?</German>
         </Key>
     </Package>
 </Project>

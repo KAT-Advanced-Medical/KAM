@@ -946,9 +946,8 @@
             <Korean>기흉 중복 표시</Korean>
             <French>Montrer la duplication du pneumothorax</French>
             <Turkish>Pnömotoraks kopyasını göster</Turkish>
-            <Polish>Pokaż duplikat odmy płucnej</Polish>
             <Italian>Mostra la duplicazione del pneumotorace</Italian>
-            <Polish>Pokaż duplikat odmy opłucnowej</Polish>     
+            <Polish>Pokaż duplikat odmy opłucnowej</Polish>
             <Spanish>Mostrar neumotórax duplicada</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_showPneumothorax_dupe_DESC">
@@ -1300,6 +1299,7 @@
             <English>[KAM] General Items</English>
             <Polish>[KAM] Podstawowe przedmioty</Polish>
             <Czech>[KAM] Obecné předměty</Czech>
+            <German>[KAM] Allgemeine Gegenstände</German>
         </Key>
     </Package>
 </Project>
