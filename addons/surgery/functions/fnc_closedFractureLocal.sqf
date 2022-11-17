@@ -44,6 +44,6 @@ _fractureArray set [_part, 0];
 
 _patient setVariable [QGVAR(fractures), _fractureArray, true];
 _patient setVariable [VAR_FRACTURES, _activeFracture, true];
-_patient setVariable [QACEGCAR(medical,isLimping), false, true];
+_patient setVariable [QACEGVAR(medical,isLimping), false, true];
 [_patient, "blockSprint", QACEGVAR(medical,fracture), false] call ACEFUNC(common,statusEffect_set);
 [_patient] call ACEFUNC(medical_engine,updateDamageEffects);
