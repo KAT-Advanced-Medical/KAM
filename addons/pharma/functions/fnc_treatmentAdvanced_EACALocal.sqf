@@ -41,7 +41,7 @@ if (_IVactual > 1) then {
     params ["_args", "_idPFH"];
     _args params ["_patient"];
 
-    private _stitchableWounds = _patient call ace_medical_treatment_fnc_getStitchableWounds;
+    private _stitchableWounds = _patient call ACEFUNC(medical_treatment,getStitchableWounds);
     private _alive = alive _patient;
 
     if ((!_alive) || (_stitchableWounds isEqualTo [])) exitWith {

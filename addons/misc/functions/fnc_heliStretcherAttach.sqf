@@ -12,12 +12,12 @@
  */
 
  if !(_h isKindOf "Helicopter") exitWith {
-   [LLSTRING(helistretcher_attention1), 2, ace_player, 10] call ace_common_fnc_displayTextStructured;
+   [LLSTRING(helistretcher_attention1), 2, ace_player, 10] call ACEFUNC(common,displayTextStructured);
    player addItem "Attachable_Helistretcher"
  };
 
  if !(player distance2D _h <= 15) exitWith {
-   [LLSTRING(helistretcher_attention2), 2, ace_player, 10] call ace_common_fnc_displayTextStructured;
+   [LLSTRING(helistretcher_attention2), 2, ace_player, 10] call ACEFUNC(common,displayTextStructured);
    player addItem "Attachable_Helistretcher"
  };
 

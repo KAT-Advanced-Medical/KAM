@@ -20,7 +20,7 @@ params ["_medic", "_patient", "_bodyPart", "_className", "_usedItem"];
 private _return = false;
 _usedItem = "kat_" + _className;
 
-[_medic, _patient, _bodyPart, _className, objNull, _usedItem] call ace_medical_treatment_fnc_ivBag;
+[_medic, _patient, _bodyPart, _className, objNull, _usedItem] call ACEFUNC(medical_treatment,ivBag);
 
 if ([_patient, _className] call FUNC(compatible)) exitWith {};
 

@@ -60,7 +60,7 @@ if !(GVAR(coagulation)) then {
 
                     if (_amount * _bleeding > 0) exitWith {
                         private _part = ALL_BODY_PARTS select _bodyPart;
-                        ["ace_medical_treatment_bandageLocal", [_patient, _part, "PackingBandage"], _patient] call CBA_fnc_targetEvent;
+                        [QACEGVAR(medical_treatment,bandageLocal), [_patient, _part, "PackingBandage"], _patient] call CBA_fnc_targetEvent;
                         _exit = false;
                     };
                 } forEach _openWounds;

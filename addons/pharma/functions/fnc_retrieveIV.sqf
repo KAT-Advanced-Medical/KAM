@@ -20,7 +20,7 @@ params ["_medic", "_patient", "_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
-private _newArray = _patient getVariable ["ace_medical_ivBags", []];
+private _newArray = _patient getVariable [QACEGVAR(medical,ivBags), []];
 private _IVactual = _IVarray select _partIndex;
 
 if (_IVactual == 1) then {
@@ -55,7 +55,7 @@ private _plasma = 0;
         };
     };
     _totalIvVolume = _totalIvVolume + _volumeRemaining;
-} forEach (_patient getVariable ["ace_medical_ivBags", []]);
+} forEach (_patient getVariable [QACEGVAR(medical,ivBags), []]);
 
 if (_totalIvVolume >= 1) then {
     if (_saline > 1) then {
@@ -123,4 +123,4 @@ if (_totalIvVolume >= 1) then {
     };
 };
 
-_patient setVariable ["ace_medical_ivBags", _newArray, true];
+_patient setVariable [QACEGVAR(medical,ivBags), _newArray, true];

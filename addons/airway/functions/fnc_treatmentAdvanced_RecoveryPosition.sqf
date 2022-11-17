@@ -18,6 +18,6 @@
 
 params ["_medic", "_patient"];
 
-[_patient, "activity", LSTRING(RecoveryPosition_Log), [[_medic] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+[_patient, "activity", LSTRING(RecoveryPosition_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 
 [QGVAR(recoveryPositionLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;

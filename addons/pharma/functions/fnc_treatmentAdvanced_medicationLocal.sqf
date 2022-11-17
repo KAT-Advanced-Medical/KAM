@@ -37,7 +37,7 @@ if (!GVAR(advancedMedication)) exitWith {
         case "Epinephrine": {
             private _sedated = _patient getVariable [QEGVAR(surgery,sedated), false];
             if !(_sedated) then {
-                ["ace_medical_WakeUp", _patient] call CBA_fnc_localEvent;
+                [QACEGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
             };
             
             [_patient, -0.15] call kat_pharma_fnc_alphaAction;
@@ -52,9 +52,9 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 
 if (HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) exitWith {
     TRACE_1("unit has tourniquets blocking blood flow on injection site",_tourniquets);
-    private _occludedMedications = _patient getVariable [ace_medical_occludedMedications, []];
+    private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname];
-    _patient setVariable [ace_medical_occludedMedications, _occludedMedications, true];
+    _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };
 
 // Get adjustment attributes for used medication
@@ -79,10 +79,10 @@ private _heartRateChange = _minIncrease + random (_maxIncrease - _minIncrease);
 
 // Adjust the medication effects and add the medication to the list
 TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
-[_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange] call ace_medical_status_fnc_addMedicationAdjustment;
+[_patient, _className, _timeTillMaxEffect, _timeInSystem, _heartRateChange, _painReduce, _viscosityChange] call ACEFUNC(medical_status,addMedicationAdjustment);
 
 // Check for medication compatiblity
-[_patient, _className, _maxDose, _incompatibleMedication] call ace_medical_treatment_fnc_onMedicationUsage;
+[_patient, _className, _maxDose, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
 
 //Change Alpha Factor
 [_patient, _alphaFactor] call FUNC(alphaAction);

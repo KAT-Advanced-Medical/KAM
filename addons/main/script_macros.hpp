@@ -60,6 +60,18 @@
     count = COUNT; \
 }
 
+// ACE3 reference macros
+#define ACE_PREFIX ace
+
+#define ACEGVAR(module,var)         TRIPLES(ACE_PREFIX,module,var)
+#define QACEGVAR(module,var)        QUOTE(ACEGVAR(module,var))
+
+#define ACEFUNC(module,function)    TRIPLES(DOUBLES(ACE_PREFIX,module),fnc,function)
+#define QACEFUNC(module,function)   QUOTE(ACEFUNC(module,function))
+
+#define ACELSTRING(module,string)   QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,module),string))
+#define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))
+
 // item types
 #define TYPE_DEFAULT 0
 #define TYPE_MUZZLE 101

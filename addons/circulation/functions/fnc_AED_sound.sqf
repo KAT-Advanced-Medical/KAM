@@ -29,6 +29,6 @@ if !(_medic getVariable ["kat_soundplayed", false]) then {
 
 //return:
 
-private _return = if !([_patient] call ace_common_fnc_isAwake) then {true} else {false};
+private _return = if !([_patient] call ACEFUNC(common,isAwake)) then {true} else {false};
 
 _return;

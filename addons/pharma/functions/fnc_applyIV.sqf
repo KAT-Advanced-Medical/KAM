@@ -43,18 +43,18 @@ if (_usedItem isEqualTo "kat_IV_16") then {
     _IVarray set [_partIndex, 2];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 
-    [_patient, "activity", LSTRING(iv_log), [[_medic] call ace_common_fnc_getName, "16g IV"]] call ace_medical_treatment_fnc_addToLog;
-    [_patient, "16g IV"] call ace_medical_treatment_fnc_addToTriageCard;
+    [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "16g IV"]] call ACEFUNC(medical_treatment,addToLog);
+    [_patient, "16g IV"] call ACEFUNC(medical_treatment,addToTriageCard);
 } else {
     _IVarray set [_partIndex, 1];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 
-    private _count = [_patient, "Lidocaine"] call ace_medical_status_fnc_getMedicationCount;
-    private _count2 = [_patient, "Morphine"] call ace_medical_status_fnc_getMedicationCount;
-    if (_count == 0 && _count2 == 0) then {[_patient, 0.8] call ace_medical_status_fnc_adjustPainLevel};
+    private _count = [_patient, "Lidocaine"] call ACEFUNC(medical_status,getMedicationCount);
+    private _count2 = [_patient, "Morphine"] call ACEFUNC(medical_status,getMedicationCount);
+    if (_count == 0 && _count2 == 0) then {[_patient, 0.8] call ACEFUNC(medical_status,adjustPainLevel)};
 
-    [_patient, "activity", LSTRING(iv_log), [[_medic] call ace_common_fnc_getName, "FAST IO"]] call ace_medical_treatment_fnc_addToLog;
-    [_patient, "FAST IO"] call ace_medical_treatment_fnc_addToTriageCard;
+    [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
+    [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);
 };
 
 if (GVAR(IVdropEnable) && (_usedItem isEqualTo "kat_IV_16")) then {
@@ -73,7 +73,7 @@ if (GVAR(IVdropEnable) && (_usedItem isEqualTo "kat_IV_16")) then {
                 _IVpfh set [_partIndex, _idPFH];
                 _patient setVariable [QGVAR(IVpfh), _IVpfh, true];
 
-                private _bloodBags = _patient getVariable ["ace_medical_ivBags", []];
+                private _bloodBags = _patient getVariable [QACEGVAR(medical,ivBags), []];
 
                 if (_bloodBags isEqualTo []) exitWith {
                     [_idPFH] call CBA_fnc_removePerFrameHandler;

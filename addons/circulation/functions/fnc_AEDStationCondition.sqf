@@ -18,7 +18,7 @@
 
 params ["_medic", "_patient"];
 
-private _canCPR = ["",_patient] call ace_medical_treatment_fnc_canCPR;
+private _canCPR = ["",_patient] call ACEFUNC(medical_treatment,canCPR);
 private _classNameObjects = [];
 {
     if (typeOf _x in ["kat_AEDItem", "Land_Defibrillator_F"]) then {

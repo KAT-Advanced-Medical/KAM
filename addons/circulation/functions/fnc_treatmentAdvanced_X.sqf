@@ -24,7 +24,7 @@ _patient setVariable ["kat_AEDXPatient_PFH", true];
 // if there is already a connected x-series exitWith a hint
 if (_patient getVariable [QGVAR(X), false]) exitWith {
     private _output = localize LSTRING(X_already);
-    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
 // connect the x-series
@@ -32,7 +32,7 @@ _patient setVariable [QGVAR(X), true, true];
 _medic setVariable [QGVAR(use), true, true];
 _medic setVariable [QGVAR(returnedAED), false, true];
 
-private _bloodLoss = _patient getVariable ["ace_medical_bloodVolume", 6.0];
+private _bloodLoss = _patient getVariable [QACEGVAR(medical,bloodVolume), 6.0];
 private _asystole = _patient getVariable [QGVAR(asystole), 1];
 
 if !(GVAR(AdvRhythm)) then {
@@ -52,7 +52,7 @@ if !(GVAR(AdvRhythm)) then {
 playsound3D [QPATHTOF_SOUND(sounds\analyse.wav), _patient, false, getPosASL _patient, 5, 1, 15];
 
 // wait for the analyse and give the advise
-if ((_patient getVariable ["ace_medical_heartRate", 0] isEqualTo 0) && {_patient getVariable [QGVAR(asystole), 1] < 2}) then {
+if ((_patient getVariable [QACEGVAR(medical,heartRate), 0] isEqualTo 0) && {_patient getVariable [QGVAR(asystole), 1] < 2}) then {
     [{
         params ["_patient"];
         playsound3D [QPATHTOF_SOUND(sounds\shock.wav), _patient, false, getPosASL _patient, 6, 1, 15];
@@ -81,10 +81,10 @@ if ((_patient getVariable ["ace_medical_heartRate", 0] isEqualTo 0) && {_patient
 
     [_patient, "quick_view", LSTRING(AEDX_StatusLog)] call FUNC(removeLog);
     [_patient, "quick_view", LSTRING(AEDX_StatusLog),
-    [round (_patient getVariable ["ace_medical_heartRate", 0]),
-    (round (_patient getVariable ["ace_medical_bloodPressure", [0,0]] select 1)),
-    (round (_patient getVariable ["ace_medical_bloodPressure", [80,120]] select 0)),
-    (_patient getVariable [QEGVAR(breathing,airwayStatus), 100])]] call ace_medical_treatment_fnc_addToLog;
+    [round (_patient getVariable [QACEGVAR(medical,heartRate), 0]),
+    (round (_patient getVariable [QACEGVAR(medical,bloodPressure), [0,0]] select 1)),
+    (round (_patient getVariable [QACEGVAR(medical,bloodPressure), [80,120]] select 0)),
+    (_patient getVariable [QEGVAR(breathing,airwayStatus), 100])]] call ACEFUNC(medical_treatment,addToLog);
 }, 1, [_patient]] call CBA_fnc_addPerFrameHandler;
 
 
@@ -110,7 +110,7 @@ if !(GVAR(AED_BeepsAndCharge)) exitWith {};
         if (GVAR(DeactMon_whileAED_X) && _patient getVariable [QGVAR(AEDinUse), false]) then {
         //No Beep for you atm
         } else {
-            private _hr = _patient getVariable ["ace_medical_heartRate", 80];
+            private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
             if (_hr <= 0) then {
                 private _soundPath1 = _medic getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
                 playsound3D [_soundPath1, _patient, false, getPosASL _patient, 2, 1, 15];

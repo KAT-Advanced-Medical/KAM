@@ -15,5 +15,5 @@
 [QGVAR(flushLocal), LINKFUNC(treatmentAdvanced_FlushLocal)] call CBA_fnc_addEventHandler;
 
 
-["kat_PainkillerItem", "kat_Painkiller"] call ace_common_fnc_registerItemReplacement;
-["kat_CarbonateItem", "kat_Carbonate"] call ace_common_fnc_registerItemReplacement;
+["kat_PainkillerItem", "kat_Painkiller"] call ACEFUNC(common,registerItemReplacement);
+["kat_CarbonateItem", "kat_Carbonate"] call ACEFUNC(common,registerItemReplacement);

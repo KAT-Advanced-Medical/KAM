@@ -23,4 +23,4 @@ private _volume = getNumber (configFile >> "ACE_Medical_Treatment" >> "IV" >> _c
 
 private _hradjust = -(_volume / 4);
 
-[_target, "BloodPoisoning", 150, 300, _hradjust, 0, -10] call ace_medical_status_fnc_addMedicationAdjustment;
+[_target, "BloodPoisoning", 150, 300, _hradjust, 0, -10] call ACEFUNC(medical_status,addMedicationAdjustment);

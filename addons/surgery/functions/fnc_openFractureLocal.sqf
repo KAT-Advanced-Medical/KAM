@@ -32,14 +32,14 @@ if ((_liveFracture == 2.5) || (_liveFracture == 3.5)) exitWith {
 
     _patient setVariable [QGVAR(fractures), _fractureArray, true];
     _patient setVariable [VAR_FRACTURES, _activeFracture, true];
-    _patient setVariable ["ace_medical_isLimping", false, true];
-    [_patient, "blockSprint", "ace_medical_fracture", false] call ace_common_fnc_statusEffect_set;
-    [_patient] call ace_medical_engine_fnc_updateDamageEffects;
+    _patient setVariable [QACEGVAR(medical,isLimping), false, true];
+    [_patient, "blockSprint", QACEGVAR(medical,fracture), false] call ACEFUNC(common,statusEffect_set);
+    [_patient] call ACEFUNC(medical_engine,updateDamageEffects);
 
-    [_patient, true] call ace_dragging_fnc_setCarryable;
-    [_patient, true] call ace_dragging_fnc_setDraggable;
+    [_patient, true] call ACEFUNC(dragging,setCarryable);
+    [_patient, true] call ACEFUNC(dragging,setDraggable);
 };
 
-private _output = localize LSTRING(fracture_fail);
-[_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+private _output = LLSTRING(fracture_fail);
+[_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 

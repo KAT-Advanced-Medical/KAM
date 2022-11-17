@@ -22,5 +22,5 @@
 
 if !(GVAR(enable)) exitWith {false};
 
-if ([_player] call ace_medical_treatment_fnc_isMedic && _classname in items _player) exitWith {true};
+if ([_player] call ACEFUNC(medical_treatment,isMedic) && _classname in items _player) exitWith {true};
 false;

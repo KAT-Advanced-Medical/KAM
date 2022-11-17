@@ -32,28 +32,28 @@ private _actions = [];
             "A3\ui_f\data\IGUI\RscIngameUI\RscUnitInfo\role_commander_ca.paa"
         ] select (([driver _vehicle, gunner _vehicle, commander _vehicle] find _unit) + 1);
 
-        private _triage = _unit getVariable ["ace_medical_triageLevel", 0];
+        private _triage = _unit getVariable [QACEGVAR(medical,triageLevel), 0];
         if (_triage > 1 && _triage < 4) then {
             _icon = ["\z\ace\addons\medical\UI\icons\medical_crossYellow.paa", "\z\ace\addons\medical\UI\icons\medical_crossRed"] select (_triage - 2);
         };
 
-        if (_unit getVariable ["ace_captives_isHandcuffed", false]) then {
+        if (_unit getVariable [QACEGVAR(captives,isHandcuffed), false]) then {
             _icon = "\z\ace\addons\captives\UI\handcuff_ca.paa";
         };
 
         _actions pushBack [
             [
                 format ["%1", _unit],
-                [_unit, true] call ace_common_fnc_getName,
+                [_unit, true] call ACEFUNC(common,getName),
                 _icon,
                 {
                     //statement (Run on hover) - reset the cache so we will insert actions immedietly when hovering over new unit
-                    [vehicle _target, "ace_interact_menu_ATCache_ACE_SelfActions"] call ace_common_fnc_eraseCache;
+                    [vehicle _target, "ace_interact_menu_ATCache_ACE_SelfActions"] call ACEFUNC(common,eraseCache);
                 },
                 {true},
                 {
-                    if (ace_interact_menu_selectedTarget isEqualTo _target) then {
-                        _this call ace_interaction_fnc_addPassengerActions;
+                    if (ACEGVAR(interact_menu,selectedTarget) isEqualTo _target) then {
+                        _this call ACEFUNC(interaction,addPassengerActions);
                     } else {
                         [] //not selected, don't waste time on actions
                     };
@@ -62,7 +62,7 @@ private _actions = [];
                 {[0, 0, 0]},
                 2,
                 [false,false,false,true,false] //add run on hover (4th bit true)
-                ] call ace_interact_menu_fnc_createAction,
+                ] call ACEFUNC(interact_menu,createAction),
                 [],
                 _unit
             ];

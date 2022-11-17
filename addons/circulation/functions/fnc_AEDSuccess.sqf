@@ -29,8 +29,8 @@ if (vehicle _patient isEqualTo _patient) then {
     { [_x, 0.2] remoteExec ["ace_medical_fnc_adjustPainLevel",_x]; nil; } count _bystanders;
 };
 
-_patient setVariable ["ace_medical_CPR_provider", objNull, true];
+_patient setVariable [QACEGVAR(medical,CPR_provider), objNull, true];
 
-if (alive _patient && {_patient getVariable ["ace_medical_inCardiacArrest", false]}) then {
-    ["ace_medical_treatment_cprLocal", [_medic, _patient, _reviveObject], _patient] call CBA_fnc_targetEvent;
+if (alive _patient && {_patient getVariable [QACEGVAR(medical,inCardiacArrest), false]}) then {
+    [QACEGVAR(medical_treatment,cprLocal), [_medic, _patient, _reviveObject], _patient] call CBA_fnc_targetEvent;
 };
