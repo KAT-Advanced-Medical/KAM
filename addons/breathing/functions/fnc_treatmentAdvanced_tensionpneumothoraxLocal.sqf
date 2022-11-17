@@ -22,7 +22,7 @@ params ["_medic", "_patient"];
 if !(GVAR(tensionhemothorax_hardcore)) exitWith {
     if ((_patient getVariable [QGVAR(tensionpneumothorax), false]) && {_patient getVariable [QGVAR(activeChestSeal), false]}) then {
         _patient setVariable [QGVAR(tensionpneumothorax), false, true];
-        [_patient, "activity", LSTRING(tensionpneumothorax), [[_medic] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+        [_patient, "activity", LSTRING(tensionpneumothorax), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
         if (!(_patient getVariable [QGVAR(pneumothorax), false]) && {!(_patient getVariable [QGVAR(hemopneumothorax), false]) && {!(_patient getVariable [QGVAR(tensionpneumothorax), false])}}) then {
             _patient setVariable [QGVAR(activeChestSeal), false, true];
         };

@@ -32,7 +32,6 @@ _unit setVariable [QGVAR(active), false, true];
 _unit setVariable [QGVAR(alphaAction), 1];
 
 _unit setVariable [QGVAR(TXA), 1, true];
-_unit setVariable [QGVAR(ondUse), false, true];
 
 _unit setVariable [QGVAR(pH), 1500, true];
 _unit setVariable [QGVAR(coagulationFactor), 10, true];
@@ -50,7 +49,7 @@ _unit setVariable [QGVAR(kidneyPressure), false, true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    private _medicationArray = _unit getVariable ["ace_medical_medications", []];
+    private _medicationArray = _unit getVariable [QACEGVAR(medical,medications), []];
     private _action = false;
 
     {
@@ -96,7 +95,7 @@ if (GVAR(kidneyAction)) then {
                 private _random = random 1;
 
                 if (_random >= 0.5) then {
-                    ["ace_medical_FatalVitals", _unit] call CBA_fnc_localEvent;
+                    [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
                     _unit setVariable [QGVAR(kidneyArrest), true, true];
                 };
             };
@@ -108,7 +107,7 @@ if (GVAR(kidneyAction)) then {
 
             if !(_kidneyPressure) then {
                 _unit setVariable [QGVAR(kidneyPressure), true, true];
-                [_unit, "KIDNEY", 15, 1200, 30, 0, 15] call ace_medical_status_fnc_addMedicationAdjustment;
+                [_unit, "KIDNEY", 15, 1200, 30, 0, 15] call ACEFUNC(medical_status,addMedicationAdjustment);
             };
         };
 
@@ -136,7 +135,7 @@ if (GVAR(coagulation)) then {
         if (_pulse < 20) exitWith {};
         if (_coagulationFactor == 0) exitWith {};
 
-        private _count = [_unit, "TXA"] call ace_medical_status_fnc_getMedicationCount;
+        private _count = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
 
         if (_count == 0) exitWith {
             {
@@ -144,7 +143,7 @@ if (GVAR(coagulation)) then {
 
                 if (_amount * _bleeding > 0) exitWith {
                     private _part = ALL_BODY_PARTS select _bodyPart;
-                    ["ace_medical_treatment_bandageLocal", [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
+                    [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
                     _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
                 };
             } forEach _openWounds;
@@ -156,7 +155,7 @@ if (GVAR(coagulation)) then {
 
                 if (_amount * _bleeding > 0) exitWith {
                     private _part = ALL_BODY_PARTS select _bodyPart;
-                    ["ace_medical_treatment_bandageLocal", [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
+                    [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
                     _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
                 };
             } forEach _openWounds;

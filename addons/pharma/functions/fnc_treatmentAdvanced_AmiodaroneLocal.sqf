@@ -19,5 +19,5 @@ params ["_patient"];
 
 private _random = random 3;
 if (_random <= 1) then {
-    [_patient, "BRADYCARDIA", 120, 1200, -40, 0, 0] call ace_medical_status_fnc_addMedicationAdjustment;
+    [_patient, "BRADYCARDIA", 120, 1200, -40, 0, 0] call ACEFUNC(medical_status,addMedicationAdjustment);
 };

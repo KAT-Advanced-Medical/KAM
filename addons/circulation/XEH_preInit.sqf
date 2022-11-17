@@ -36,7 +36,7 @@ PREP_RECOMPILE_END;
     2,
     {
         player setVariable [QGVAR(bloodtype), _this, true];
-        player setVariable ["ace_dogtags_dogtagData", nil, true];
+        player setVariable [QACEGVAR(dogtags,dogtagData), nil, true];
     },
     true
 ] call CBA_Settings_fnc_init;

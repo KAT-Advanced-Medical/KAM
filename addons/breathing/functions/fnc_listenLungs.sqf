@@ -20,7 +20,7 @@ params ["_medic","_patient"];
 
 //[14, [], {}, {}, "Listening"] call ace_common_fnc_progressBar;
 
-if ((_patient getVariable ["ace_medical_heartRate", 80]) isEqualTo 0) exitWith {};
+if ((_patient getVariable [QACEGVAR(medical,heartRate), 80]) isEqualTo 0) exitWith {};
 
 _random = round random 1;
 

@@ -18,11 +18,11 @@
 
 params ["_medic", "_patient"];
 
-_patient setVariable ["ace_medical_medications", [], true];
+_patient setVariable [QACEGVAR(medical,medications), [], true];
 _patient setVariable [QGVAR(pH), 1000, true];
 _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];
 
-[_patient, "Dialysis"] call ace_medical_treatment_fnc_addToTriageCard;
-[_patient, "activity", LSTRING(dialysis_log), [[_medic] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+[_patient, "Dialysis"] call ACEFUNC(medical_treatment,addToTriageCard);
+[_patient, "activity", LSTRING(dialysis_log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);

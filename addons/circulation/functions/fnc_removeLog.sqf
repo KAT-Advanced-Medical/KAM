@@ -21,7 +21,7 @@ params ["_target", "_type", "_message"];
 
 private _logVarName = format ["ace_medical_log_%1", _type];
 
-private _logs = _target getVariable ["ace_medical_allLogs", []];
+private _logs = _target getVariable [QACEGVAR(medical,allLogs), []];
 if !(_logVarName in _logs) exitWith {false};
 
 private _log = _target getVariable [_logVarName, []];

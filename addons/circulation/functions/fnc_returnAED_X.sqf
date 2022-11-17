@@ -22,7 +22,7 @@ private _output = localize LSTRING(X_Action_Remove);
 
 _patient setVariable [QGVAR(X), false, true];
 
-private _bloodLoss = _patient getVariable ["ace_medical_bloodVolume", 6.0];
+private _bloodLoss = _patient getVariable [QACEGVAR(medical,bloodVolume), 6.0];
 private _asystole = _patient getVariable [QGVAR(asystole), 1];
 
 if !(GVAR(AdvRhythm)) then {
@@ -38,14 +38,14 @@ if !(GVAR(AdvRhythm)) then {
     };
 };
 
-if ((_patient getVariable ["ace_medical_heartRate", 0] >= 40) && GVAR(AdvRhythm)) then {
+if ((_patient getVariable [QACEGVAR(medical,heartRate), 0] >= 40) && GVAR(AdvRhythm)) then {
     _patient setVariable [QGVAR(asystole), 1, true];
 };
 
 if (_AEDreturn) then {
     _player setVariable [QGVAR(use), false, true];
-    [_output, 1.5, _player] call ace_common_fnc_displayTextStructured;
-    [_player, "kat_X_AED"] call ace_common_fnc_addToInventory;
+    [_output, 1.5, _player] call ACEFUNC(common,displayTextStructured);
+    [_player, "kat_X_AED"] call ACEFUNC(common,addToInventory);
     _player setVariable [QGVAR(returnedAED), true, true];
 } else {
     _patient setVariable [QGVAR(AEDvehicle), "", true];

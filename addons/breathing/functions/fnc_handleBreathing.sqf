@@ -46,8 +46,8 @@ if (!local _unit) then {
 
     private _status = _unit getVariable [QGVAR(airwayStatus), 100];
     private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
-    private _heartRate = _unit getVariable ["ace_medical_heartRate", 0];
-    private _blockDeath = _unit getVariable ["ace_medical_deathblocked", false];
+    private _heartRate = _unit getVariable [QACEGVAR(medical,heartRate), 0];
+    private _blockDeath = _unit getVariable [QACEGVAR(medical,deathblocked), false];
 
     private _output = 0;
     private _finalOutput = 0;
@@ -57,7 +57,7 @@ if (!local _unit) then {
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && { GVAR(SpO2_dieActive) && { !_blockDeath } }) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
-        [_unit, "terminal_SpO2_death"] call ace_medical_status_fnc_setDead;
+        [_unit, "terminal_SpO2_death"] call ACEFUNC(medical,setDead);
         _unit setVariable ["kat_O2Breathing_PFH", nil];
     };
 
@@ -68,7 +68,7 @@ if (!local _unit) then {
         _unit setVariable ["kat_O2Breathing_PFH", nil];
     };
 
-    if !([_unit] call ace_common_fnc_isAwake) exitWith {
+    if !([_unit] call ACEFUNC(common,isAwake)) exitWith {
         if !(_breathing) exitWith {
             _output = -0.3 * _multiplierNegative;
             _finalOutput = _status + _output;
@@ -129,7 +129,7 @@ if (!local _unit) then {
         _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
     };
 
-    if ([_unit] call ace_common_fnc_isAwake) exitWith {
+    if ([_unit] call ACEFUNC(common,isAwake)) exitWith {
         if !(_breathing) then {
             _output = -0.2 * _multiplierNegative;
         } else {
@@ -144,7 +144,7 @@ if (!local _unit) then {
 
         _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
     if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(SpO2_unconscious)}) then {
-            ["ace_medical_CriticalVitals", _unit] call CBA_fnc_localEvent;
+            [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
         };
     };
 

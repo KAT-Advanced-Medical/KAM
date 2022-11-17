@@ -30,15 +30,15 @@ if (_patient getVariable [QGVAR(obstruction), false]) then {
         _messageairwayobstruction = LLSTRING(message_obstructionTemporarilyMitigated);
         _obstruction = LLSTRING(mitigatedObstruction);
     };
-    _patient setVariable ["ace_medical_triageLevel", 3, true];
+    _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
 };
 if (_patient getVariable [QGVAR(occluded), false]) then {
     _messageairwayOccluded = LLSTRING(message_Occluded_yes);
     _occluded = LSTRING(Occluded);
-    _patient setVariable ["ace_medical_triageLevel", 3, true];
+    _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
 };
-if !(_patient getVariable [QGVAR(occluded), false] && _patient getVariable [QGVAR(obstruction), false]) then {_patient setVariable ["ace_medical_triageLevel", 0, true]};
+if !(_patient getVariable [QGVAR(occluded), false] && _patient getVariable [QGVAR(obstruction), false]) then {_patient setVariable [QACEGVAR(medical,triageLevel), 0, true]};
 private _message = format ["%1, %2", _messageairwayobstruction, _messageairwayOccluded];
-[_message, 2, _medic] call ace_common_fnc_displayTextStructured;
+[_message, 2, _medic] call ACEFUNC(common,displayTextStructured);
 
-[_patient, "activity", LSTRING(checkAirway_log), [[_medic] call ace_common_fnc_getName, _obstruction, _occluded]] call ace_medical_treatment_fnc_addToLog;
+[_patient, "activity", LSTRING(checkAirway_log), [[_medic] call ACEFUNC(common,getName), _obstruction, _occluded]] call ACEFUNC(medical_treatment,addToLog);

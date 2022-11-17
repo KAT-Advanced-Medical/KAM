@@ -29,7 +29,7 @@ _fnc_random = {
 if !(GVAR(pneumothorax_hardcore)) exitWith {
     if (_patient getVariable [QGVAR(pneumothorax), false]) then {
         _patient setVariable [QGVAR(pneumothorax), false, true];
-        [_patient, "activity", LSTRING(pneumothorax), [[_medic] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+        [_patient, "activity", LSTRING(pneumothorax), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
         call _fnc_random;
         if (!(_patient getVariable [QGVAR(pneumothorax), false]) && {!(_patient getVariable [QGVAR(hemopneumothorax), false]) && {!(_patient getVariable [QGVAR(tensionpneumothorax), false])}}) then {
             _patient setVariable [QGVAR(activeChestSeal), false, true];

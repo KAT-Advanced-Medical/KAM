@@ -12,7 +12,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        callbackSuccess = "[_medic, _patient] call ace_dogtags_fnc_checkDogtag";
+        callbackSuccess = QACEFUNC(dogtags,checkDogtag);
         condition = "true";
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
@@ -31,7 +31,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         items[] = {"kat_AED", "kat_X_AED"};
         condition = "true";
-        callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDanalyze));
+        callbackStart = QFUNC(AEDanalyze);
         callbackSuccess = "";
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
@@ -78,7 +78,7 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\defib.paa);
         items[] = {"kat_AED"};
         treatmentTime = 10;
-        condition = QUOTE(([_medic,_patient] call ace_medical_treatment_fnc_canCPR) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        condition = QUOTE(([_medic,_patient] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackStart = "call ace_medical_treatment_fnc_cprStart; _patient setVariable ['kat_circulation_AEDinUse', true, true];";
         callbackProgress = "call ace_medical_treatment_fnc_cprProgress; call kat_circulation_fnc_AED_sound;";
         callbackSuccess = "[_medic, _patient, 'AED'] call kat_circulation_fnc_AEDSuccess; _patient setVariable ['kat_circulation_AEDinUse', false, true];";

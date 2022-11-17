@@ -24,8 +24,8 @@ private _IVactual = _IVarray select _partIndex;
 
 if (_IVactual == 3) exitWith {
     private _output = LLSTRING(IVblock_closed);
-    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
 private _output = LLSTRING(IVblock_clear);
-[_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+[_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);

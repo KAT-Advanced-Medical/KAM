@@ -24,7 +24,7 @@ private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
 if (_IVactual != 3) exitWith {false};
 
-private _fluidCheck = _patient getVariable ["ace_medical_ivBags", []];
+private _fluidCheck = _patient getVariable [QACEGVAR(medical,ivBags), []];
 private _check = false;
 
 {

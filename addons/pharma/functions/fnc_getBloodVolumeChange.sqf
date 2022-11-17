@@ -19,14 +19,14 @@
 
 params ["_unit", "_deltaT", "_syncValues"];
 
-private _bloodLoss = [_unit] call ace_medical_status_fnc_getBloodLoss;
+private _bloodLoss = [_unit] call ACEFUNC(medical_status,getBloodLoss);
 private _bloodVolumeChange = -_deltaT * _bloodLoss;
 
-if (!isNil {_unit getVariable ["ace_medical_ivBags",[]]}) then {
-    private _bloodBags = _unit getVariable ["ace_medical_ivBags", []];
+if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
+    private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
     private _tourniquets = GET_TOURNIQUETS(_unit);
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0]];
-    private _flowCalculation = ace_medical_ivFlowRate * (_unit getVariable [QGVAR(alphaAction), 1]) * _deltaT * 4.16;
+    private _flowCalculation = ACEGVAR(medical,ivFlowRate) * (_unit getVariable [QGVAR(alphaAction), 1]) * _deltaT * 4.16;
 
     if (GET_HEART_RATE(_unit) < 20) then {
         _flowCalculation = _flowCalculation / 1.5;
@@ -51,9 +51,9 @@ if (!isNil {_unit getVariable ["ace_medical_ivBags",[]]}) then {
     _bloodBags = _bloodBags - [[]]; // remove empty bags
 
     if (_bloodBags isEqualTo []) then {
-        _unit setVariable ["ace_medical_ivBags", nil, true]; // no bags left - clear variable (always globaly sync this)
+        _unit setVariable [QACEGVAR(medical,ivBags), nil, true]; // no bags left - clear variable (always globaly sync this)
     } else {
-        _unit setVariable ["ace_medical_ivBags", _bloodBags, _syncValues];
+        _unit setVariable [QACEGVAR(medical,ivBags), _bloodBags, _syncValues];
     };
 };
 

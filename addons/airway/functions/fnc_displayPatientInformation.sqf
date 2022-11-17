@@ -20,11 +20,11 @@
 
 params ["_target", "_selectionN"];
 
-private _display = uiNamespace getVariable ["ace_medical_gui_RscPatientInfo", displayNull];
+private _display = uiNamespace getVariable [QACEGVAR(medical_gui,RscPatientInfo), displayNull];
 
 if (isNull _display) then {
-    "ace_medical_gui_RscPatientInfo" cutRsc ["ace_medical_gui_RscPatientInfo", "PLAIN", -1, false];
-    _display = uiNamespace getVariable ["ace_medical_gui_RscPatientInfo", displayNull];
+    QACEGVAR(medical_gui,RscPatientInfo) cutRsc [QACEGVAR(medical_gui,RscPatientInfo), "PLAIN", -1, false];
+    _display = uiNamespace getVariable [QACEGVAR(medical_gui,RscPatientInfo), displayNull];
 
     [{
         params ["_display", "_pfhID"];
@@ -33,33 +33,33 @@ if (isNull _display) then {
             [_pfhID] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _target = _display getVariable ["ace_medical_gui_target", objNull];
-        private _selectionN = _display getVariable ["ace_medical_gui_selectionN", 0];
+        private _target = _display getVariable [QACEGVAR(medical_gui,target), objNull];
+        private _selectionN = _display getVariable [QACEGVAR(medical_gui,selectionN), 0];
 
         // Close display if target moved too far away (ignore if in same vehicle)
         if (ACE_player distance _target > MAX_DISTANCE && {vehicle _target != vehicle ACE_player}) exitWith {
             [_pfhID] call CBA_fnc_removePerFrameHandler;
-            "ace_medical_gui_RscPatientInfo" cutFadeOut 0.3;
-            [["ace_medical_DistanceToFar", _target call ace_common_fnc_getName], 2] call ace_common_fnc_displayTextStructured;
+            QACEGVAR(medical_gui,RscPatientInfo) cutFadeOut 0.3;
+            [[QACEGVAR(medical,DistanceToFar), _target call ACEFUNC(common,getName)], 2] call ACEFUNC(common,displayTextStructured);
         };
 
         // Update body image
         private _ctrlBodyImage = _display displayCtrl IDC_BODY_GROUP;
-        [_ctrlBodyImage, _target] call ace_medical_gui_fnc_updateBodyImage;
+        [_ctrlBodyImage, _target] call ACEFUNC(medical_gui,updateBodyImage);
 
         // Update injury list
         private _ctrlInjuries = _display displayCtrl IDC_INJURIES;
-        [_ctrlInjuries, _target, _selectionN] call ace_medical_gui_fnc_updateInjuryList;
+        [_ctrlInjuries, _target, _selectionN] call ACEFUNC(medical_gui,updateInjuryList);
 
         // Update activity log
         private _ctrlActivityLog = _display displayCtrl IDC_ACTIVITY;
         private _activityLog = _target getVariable [MED_LOG_VARNAME("activity"), []];
-        [_ctrlActivityLog, _activityLog] call ace_medical_gui_fnc_updateLogList;
+        [_ctrlActivityLog, _activityLog] call ACEFUNC(medical_gui,updateLogList);
 
         // Update triage status
-        [_display, _target] call ace_medical_gui_fnc_updateTriageStatus;
+        [_display, _target] call ACEFUNC(medical_gui,updateTriageStatus);
     }, 0, _display] call CBA_fnc_addPerFrameHandler;
 };
 
-_display setVariable ["ace_medical_gui_target", _target];
-_display setVariable ["ace_medical_gui_selectionN", _selectionN];
+_display setVariable [QACEGVAR(medical_gui,target), _target];
+_display setVariable [QACEGVAR(medical_gui,selectionN), _selectionN];
