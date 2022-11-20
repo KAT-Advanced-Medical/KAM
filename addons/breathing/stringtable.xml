@@ -1222,6 +1222,7 @@
             <Polish>[KAM] Podstawowe przedmioty</Polish>
             <Czech>[KAM] Obecné předměty</Czech>
             <German>[KAM] Allgemeine Gegenstände</German>
+            <Italian>[KAM] Oggetti generali</Italian>
         </Key>
     </Package>
 </Project>
