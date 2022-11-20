@@ -1833,6 +1833,7 @@
         <Key ID="STR_kat_circulation_AEDX_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>
             <Polish>AED-X: HR: %1 BP: %2/%3 SpO2: %4</Polish>
+            <Italian>AED-X: FC: %1 PS: %2/%3 SpO2: %4</Italian>
         </Key>
     </Package>
 </Project>

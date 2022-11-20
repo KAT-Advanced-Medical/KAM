@@ -252,7 +252,7 @@
             <German>Naloxone verwenden</German>
             <Polish>Użyj Naloksonu</Polish>
             <French>Administrer Naloxone</French>
-            <Italian>Somministra Naloxone</Italian>
+            <Italian>Somministrare Naloxone</Italian>
             <Spanish>Administrar Naloxona</Spanish>
             <Chinese>使用纳洛酮</Chinese>
             <Chinesesimp>使用纳洛酮</Chinesesimp>
@@ -1086,7 +1086,7 @@
         <Key ID="STR_kat_pharma_Etomidate_Use">
             <English>Push Etomidate</English>
             <Chinesesimp>推注依托咪酯</Chinesesimp>
-            <Italian>Inietta Etomidato</Italian>
+            <Italian>Iniettare Etomidato</Italian>
             <Czech>Vstříknout etomidát</Czech>
             <French>Administrer de l'étomidate</French>
             <Polish>Wstrzyknij Etomidat</Polish>
@@ -2253,6 +2253,7 @@
             <Polish>[KAM] Skrzynia z lekami</Polish>
             <Czech>[KAM] Bedna s medikamenty</Czech>
             <German>[KAM] Medikamentenkiste</German>
+            <Italian>[KAT] Cassa medicinali</Italian>
         </Key>
     </Package>
 </Project>
