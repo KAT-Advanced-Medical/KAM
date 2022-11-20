@@ -225,7 +225,7 @@
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
             <Japanese>軽減された</Japanese>
-            <Italian>Ostruzione attenuata.</Italian>
+            <Italian>Ostruzione attenuata</Italian>
             <Czech>Zmírněné zablokování</Czech>
             <Korean>막힘 완화됨</Korean>
             <German>Geringe Obstruktion</German>
@@ -240,7 +240,7 @@
             <Japanese>閉塞は一時的に軽減されています</Japanese>
             <Spanish>Obstrucción temporalmente mitigada</Spanish>
             <German>Die Obstruktion ist temporär gemildert</German>
-            <Italian>Ostruzione è momentaneamente attenuata.</Italian>
+            <Italian>Ostruzione è momentaneamente attenuata</Italian>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
