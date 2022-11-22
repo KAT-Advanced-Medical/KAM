@@ -5,20 +5,21 @@
  * Note: Patient may not be local
  *
  * Arguments:
- * 0: Player <OBJECT>
+ * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Return <BOOL>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_circulation_fnc_returnAED_X;
+ * [player, cursorObject, true] call kat_circulation_fnc_returnAED_X;
  *
  * Public: No
  */
 
-params ["_player", "_patient", "_AEDreturn"];
-private _output = localize LSTRING(X_Action_Remove);
+params ["_medic", "_patient", "_AEDreturn"];
+private _output = LLSTRING(X_Action_Remove);
 
 _patient setVariable [QGVAR(X), false, true];
 

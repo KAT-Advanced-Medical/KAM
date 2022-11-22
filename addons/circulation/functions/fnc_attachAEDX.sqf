@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
- * Handle the X Series Defi for the patient in a vehicle.
+ * Author: Katalam, modified by YetheSamartaka
+ * Handle the X Series Defi for the patient.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -11,26 +11,26 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call FUNC(treatment)Advanced_X_Vehicle;
+ * [player, cursorTarget] call kat_circulation_fnc_treatmentAdvanced_X;
  *
  * Public: No
  */
 
 params ["_medic", "_patient"];
 
-_vehicle = _patient getVariable [QGVAR(AEDvehicleName), ""];
-
 if (_patient getVariable ["kat_AEDXPatient_PFH", false]) exitWith {};
 _patient setVariable ["kat_AEDXPatient_PFH", true];
 
 // if there is already a connected x-series exitWith a hint
 if (_patient getVariable [QGVAR(X), false]) exitWith {
-    private _output = localize LSTRING(X_already);
+    private _output = LLSTRING(X_already);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
 // connect the x-series
 _patient setVariable [QGVAR(X), true, true];
+_medic setVariable [QGVAR(use), true, true];
+_medic setVariable [QGVAR(returnedAED), false, true];
 
 private _bloodLoss = _patient getVariable [QACEGVAR(medical,bloodVolume), 6.0];
 private _asystole = _patient getVariable [QGVAR(asystole), 1];
@@ -88,21 +88,22 @@ if ((_patient getVariable [QACEGVAR(medical,heartRate), 0] isEqualTo 0) && {_pat
 }, 1, [_patient]] call CBA_fnc_addPerFrameHandler;
 
 
-
 // Distance limit for AED-X and time limit for monitoring.
 // disconnect the x-series
 [{
-    params ["_vehicle", "_patient"];
-    ((_patient distance2D _vehicle) > GVAR(distanceLimit_AEDX))
+    params ["_medic", "_patient"];
+    ((_patient distance2D _medic) > GVAR(distanceLimit_AEDX)) || _medic getVariable [QGVAR(returnedAED), true]
 }, {
-    params ["_vehicle", "_patient"];
-    [_vehicle, _patient, false] call FUNC(returnAED_X);
-}, [_vehicle, _patient], GVAR(timeLimit_AEDX), {
-    params ["_vehicle", "_patient"];
-    [_vehicle, _patient, false] call FUNC(returnAED_X);
+    params ["_medic", "_patient"];
+    if (_medic getVariable [QGVAR(returnedAED), true]) exitWith {};
+    [_medic, _patient, true] call FUNC(returnAED_X);
+}, [_medic, _patient], GVAR(timeLimit_AEDX), {
+    params ["_medic", "_patient"];
+    [_medic, _patient, true] call FUNC(returnAED_X);
 }] call CBA_fnc_waitUntilAndExecute;
 
-// spawns the heart rate beep.
+// spawns the heart rate beep if enabled in CBA settings
+if !(GVAR(AED_BeepsAndCharge)) exitWith {};
 [_patient, _medic] spawn {
     params ["_patient", "_medic"];
     while {_patient getVariable [QGVAR(X), false]} do {
@@ -111,12 +112,12 @@ if ((_patient getVariable [QACEGVAR(medical,heartRate), 0] isEqualTo 0) && {_pat
         } else {
             private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
             if (_hr <= 0) then {
-                private _soundPath1 = _patient getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
+                private _soundPath1 = _medic getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
                 playsound3D [_soundPath1, _patient, false, getPosASL _patient, 2, 1, 15];
                 sleep 1.478;
             } else {
                 private _sleep = 60 / _hr;
-                private _soundPath2 = _patient getVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav)];
+                private _soundPath2 = _medic getVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav)];
                 playsound3D [_soundPath2, _patient, false, getPosASL _patient, 5, 1, 15];
                 sleep 0.25;
                 sleep _sleep;
