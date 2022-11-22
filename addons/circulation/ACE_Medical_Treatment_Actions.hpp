@@ -30,7 +30,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Body"};
         treatmentTime = 2;
         items[] = {};
-        condition = QUOTE((_patient getVariable [ARR_2(QGVAR(X),false)]) || ([ARR_2(_medic,'kat_AED')] call ACEFUNC(common,hasItem)));
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X),false)]) || ([ARR_2(_medic,'kat_AED')] call ACEFUNC(common,hasItem)));
         callbackStart = QFUNC(AEDanalyze);
         callbackSuccess = "";
         animationPatient = "";

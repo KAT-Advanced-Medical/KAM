@@ -25,5 +25,5 @@ _args params ["_medic", "_patient"];
 // Cancel AED if patient wakes up
 
 !(_patient call ACEFUNC(common,isAwake))
-&& {(ACEGVAR(advancedDiagnose) != 0) || {IN_CRDC_ARRST(_patient)}} // if basic diagnose, then only show action if appropriate (they can't tell difference between uncon/ca)
+&& {(ACEGVAR(medical_treatment,advancedDiagnose) != 0) || {IN_CRDC_ARRST(_patient)}} // if basic diagnose, then only show action if appropriate (they can't tell difference between uncon/ca)
 && {_medic == (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull])}

@@ -23,31 +23,11 @@ private _output = LLSTRING(X_Action_Remove);
 
 _patient setVariable [QGVAR(X), false, true];
 
-private _bloodLoss = _patient getVariable [QACEGVAR(medical,bloodVolume), 6.0];
-private _asystole = _patient getVariable [QGVAR(asystole), 1];
-
-if !(GVAR(AdvRhythm)) then {
-    _patient setVariable [QGVAR(asystole), 1, true];
-    _asystole = _patient getVariable [QGVAR(asystole), 1];
-    } else {
-    if (_bloodLoss > 3.6) then {
-        _patient setVariable [QGVAR(asystole), 1, true];
-        _asystole = _patient getVariable [QGVAR(asystole), 1];
-    } else {
-        _patient setVariable [QGVAR(asystole), 2, true];
-        _asystole = _patient getVariable [QGVAR(asystole), 2];
-    };
-};
-
-if ((_patient getVariable [QACEGVAR(medical,heartRate), 0] >= 40) && GVAR(AdvRhythm)) then {
-    _patient setVariable [QGVAR(asystole), 1, true];
-};
-
 if (_AEDreturn) then {
-    _player setVariable [QGVAR(use), false, true];
-    [_output, 1.5, _player] call ACEFUNC(common,displayTextStructured);
-    [_player, "kat_X_AED"] call ACEFUNC(common,addToInventory);
-    _player setVariable [QGVAR(returnedAED), true, true];
+    _medic setVariable [QGVAR(use), false, true];
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+    [_medic, "kat_X_AED"] call ACEFUNC(common,addToInventory);
+    _medic setVariable [QGVAR(returnedAED), true, true];
 } else {
     _patient setVariable [QGVAR(AEDvehicle), "", true];
     _patient setVariable [QGVAR(vehicleTrue), false, true];
