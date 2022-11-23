@@ -138,9 +138,9 @@ class ACE_Medical_Treatment_Actions {
     class AttachAEDXVehicle: AttachAEDX {
         displayName = CSTRING(Vehicle_X_Action_Use);
         displayNameProgress = CSTRING(X_Action_Progress);
-        items[] = {"kat_X_AED"};
+        items[] = {};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), false)]) && FUNC(vehicleCheck));
-        consumeItem = 1;
+        consumeItem = 0;
         medicRequired = QGVAR(medLvl_AED_X);
         callbackSuccess = QFUNC(attachAEDXVehicle);
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
