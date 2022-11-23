@@ -22,7 +22,7 @@ if !(_object isKindOf "kat_stretcher") exitWith {false};
 [_object] call ACEFUNC(dragging,initObject);
 
 [_object, 0, ["ACE_MainActions"],
-    [QGVAR(disassemble), localize LSTRING(disassemble_stretcher_display), "", {
+    [QGVAR(disassemble), LLSTRING(disassemble_stretcher_display), "", {
         params [["_object", objNull, [objNull]]];
         "kat_stretcherBag" createVehicle (getPos _object); // TODO create at exact position
         deleteVehicle _object;
@@ -34,7 +34,7 @@ if !(_object isKindOf "kat_stretcher") exitWith {false};
 ] call ACEFUNC(interact_menu,addActionToObject);
 
 [_object, 0, ["ACE_MainActions"],
-    [QGVAR(attach), localize LSTRING(disassemble_attach_display), "", {}, {true}, {[_target] call FUNC(attachStretcher)}] call ACEFUNC(interact_menu,createAction)
+    [QGVAR(attach), LLSTRING(disassemble_attach_display), "", {}, {true}, {[_target] call FUNC(attachStretcher)}] call ACEFUNC(interact_menu,createAction)
 ] call ACEFUNC(interact_menu,addActionToObject);
 
 true

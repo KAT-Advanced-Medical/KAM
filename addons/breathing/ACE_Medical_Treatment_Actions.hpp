@@ -49,7 +49,7 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
     };
     class ChestSeal {
-        displayName = CSTRING(pneumothorax_display);
+        displayName = CSTRING(chestseal_display);
         displayNameProgress = CSTRING(treating);
         category = "airway";
         treatmentLocations = 0;

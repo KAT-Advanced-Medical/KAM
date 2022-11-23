@@ -121,51 +121,6 @@
             <Russian>Подставка: Физиологический раствор IV (250 мл)</Russian>
             <Japanese>スタンド: 生理食塩水IV (250ml)</Japanese>
         </Key>
-        <Key ID="STR_kat_misc_SETTING_LIMITWOUNDS_ENABLE">
-            <English>Enable limited wounds</English>
-            <German>Aktiviere limitierte Wunden</German>
-            <Polish>Umożliwia ograniczanie ran</Polish>
-            <Spanish>Habilitar límite de heridas</Spanish>
-            <Chinese>開啟傷口限制</Chinese>
-            <Chinesesimp>开启伤口限制</Chinesesimp>
-            <Czech>Povolit omezené rány</Czech>
-            <Korean>제한된 상처 활성화</Korean>
-            <French>Activer une limite de blessures</French>
-            <Turkish>Sınırlı yaraları etkinleştirin</Turkish>
-            <Italian>Attivare un limite di ferite</Italian>
-            <Russian>Включить ограниченные раны</Russian>
-            <Japanese>制限された負傷を有効にする</Japanese>
-        </Key>
-        <Key ID="STR_kat_misc_LIMITWOUNDS_Display">
-            <English>Bandage wounds</English>
-            <German>Behandle Wunden</German>
-            <Polish>Rany opatrunkowe</Polish>
-            <Spanish>Vendar heridas</Spanish>
-            <Chinese>包紮傷口</Chinese>
-            <Chinesesimp>包扎伤口</Chinesesimp>
-            <Czech>Zavázat rány</Czech>
-            <Korean>붕대 감기</Korean>
-            <French>Panser les blessures</French>
-            <Turkish>Bandaj yaraları</Turkish>
-            <Italian>Bendare le ferite</Italian>
-            <Russian>Перевязка ран</Russian>
-            <Japanese>包帯の負傷</Japanese>
-        </Key>
-        <Key ID="STR_kat_misc_Condition_limitWounds_Display">
-            <English>Use condition limit wounds</English>
-            <German>Bendingung für limitierte Wunden</German>
-            <Polish>Warunek ograniczenia rany</Polish>
-            <Spanish>Condición de uso del límite de heridas</Spanish>
-            <Chinese>以條件來限制傷口</Chinese>
-            <Chinesesimp>用条件来限制伤口</Chinesesimp>
-            <Czech>Použít podmínku omezených ran</Czech>
-            <Korean>상태 제한 상처사용</Korean>
-            <French>Condition d'utilisation pour la limite de blessures</French>
-            <Turkish>Durum sınırı yaralarını kullanın</Turkish>
-            <Italian>Condizione d'utilizzo per limite delle ferite</Italian>
-            <Russian>Использовать раны ограничения состояния</Russian>
-            <Japanese>制限された負傷の条件</Japanese>
-        </Key>
         <Key ID="STR_kat_misc_disassemble_stretcher_display">
             <English>Disassemble stretcher</English>
             <German>Trage einklappen</German>

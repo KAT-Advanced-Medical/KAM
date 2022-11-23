@@ -264,18 +264,6 @@
             <Spanish>Bisturí</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Scalpel_DescShort">
-            <English>Create incisions and debrides wounds</English>
-            <Chinesesimp>对伤口进行清创</Chinesesimp>
-            <Italian>Creare incisioni e sbrigliare le ferite</Italian>
-            <Polish>Tworzy nacięcia i oczyszcza rany</Polish>
-            <Czech>Vytvořit řezy a očistit rány</Czech>
-            <French>Incise et débride les plaies</French>
-            <Korean>절개 생성 및 상처 제거에 사용</Korean>
-            <German>Anlegen von Einschnitten und Debridieren von Wunden</German>
-            <Japanese>切開創を作成し、傷を清拭します</Japanese>
-            <Spanish>Crea incisiones y desbrida heridas</Spanish>
-        </Key>
-        <Key ID="STR_kat_surgery_Scalpel_DescUse">
             <English>Used for creating incisions and debriding wounds</English>
             <Chinesesimp>用于创建切口和伤口清创</Chinesesimp>
             <Italian>Usato per creare incisioni e sbrigliare ferite</Italian>
@@ -312,18 +300,6 @@
             <Spanish>Retractor</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_DescShort">
-            <English>Wound Expander</English>
-            <Chinesesimp>伤口扩张器</Chinesesimp>
-            <Italian>Espansore della ferita</Italian>
-            <Polish>Rozszerza rany</Polish>
-            <Czech>Rána roztažena</Czech>
-            <French>Expanseur de plaies</French>
-            <Korean>상처 확장기</Korean>
-            <German>Wundspreizer</German>
-            <Japanese>創傷を広げます</Japanese>
-            <Spanish>Expansor de heridas</Spanish>
-        </Key>
-        <Key ID="STR_kat_surgery_Retractor_DescUse">
             <English>Used to expand and expose fractures</English>
             <Chinesesimp>用于扩大和暴露骨折创面</Chinesesimp>
             <Italian>Usato per espandere ed esporre fratture</Italian>
@@ -372,18 +348,6 @@
             <Spanish>Pinza de sujeción</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_DescShort">
-            <English>Fracture Clamp</English>
-            <Chinesesimp>骨折夹钳</Chinesesimp>
-            <Italian>Pinza clamp per frattura</Italian>
-            <Polish>Zaciska złamania</Polish>
-            <Czech>Svorka na zlomeniny</Czech>
-            <French>Clamp pour fracture</French>
-            <Korean>골절을 클램프함</Korean>
-            <German>Knochenklammern</German>
-            <Japanese>骨折クランプ</Japanese>
-            <Spanish>Pinza de sujeción de huesos</Spanish>
-        </Key>
-        <Key ID="STR_kat_surgery_Clamp_DescUse">
             <English>Used to clamp comminuted fractures</English>
             <Chinesesimp>用于夹紧粉碎性骨折</Chinesesimp>
             <Italian>Usato per clampare le fratture pluriframmentarie</Italian>
@@ -443,7 +407,7 @@
             <Japanese>洗浄中</Japanese>
             <Spanish>Irrigando</Spanish>
         </Key>
-        <Key ID="STR_kat_surgery_Plate_DescShort">
+        <Key ID="STR_kat_surgery_Plate_Display">
             <English>Bone Plate</English>
             <Chinesesimp>骨板</Chinesesimp>
             <Italian>Placche di fissaggio osseo</Italian>
@@ -455,7 +419,7 @@
             <Japanese>ボーンプレート</Japanese>
             <Spanish>Placa de fijación</Spanish>
         </Key>
-        <Key ID="STR_kat_surgery_Plate_DescUse">
+        <Key ID="STR_kat_surgery_Plate_DescShort">
             <English>Used to complete all complex fracture types</English>
             <Chinesesimp>用于完成所有复杂骨折类型</Chinesesimp>
             <Italian>Utilizzato per risolvere tutti i tipi di fratture complesse</Italian>

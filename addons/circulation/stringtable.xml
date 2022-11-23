@@ -31,36 +31,6 @@
             <Japanese>高度な心房細動 を有効化しますか?</Japanese>
             <Russian>Продвинутый ритм активирован?</Russian>
         </Key>
-        <Key ID="STR_kat_circulation_SETTING_variableHR_ENABLE">
-            <English>Metabolism Dependent heartrate?</English>
-            <German>Stoffwechselabhängiger Puls?</German>
-            <Polish>Czy tętno ma być zależne od metabolizmu?</Polish>
-            <Spanish>¿Pulso cardíaco depende de metabolismo?</Spanish>
-            <Chinese>依心率來決定代謝率？</Chinese>
-            <Chinesesimp>依心率来决定代谢率</Chinesesimp>
-            <Czech>Metabolismus závislý na tepu?</Czech>
-            <Korean>신체대사량에 따라 심박수가 결정됩니까?</Korean>
-            <French>Le pouls dépend du métabolisme?</French>
-            <Turkish>Metabolizmaya Bağımlı kalp hızı?</Turkish>
-            <Italian>La frequenza cardiaca dipende dal metabolismo?</Italian>
-            <Russian>Метаболизм Зависимый сердечный ритм?</Russian>
-            <Japanese>代謝に依存する心拍数 を有効化しますか?</Japanese>
-        </Key>
-        <Key ID="STR_kat_circulation_SETTING_loadout">
-            <English>Different loadoutname</English>
-            <German>Anderer Loadoutname</German>
-            <Polish>Inna nazwa sprzętu</Polish>
-            <Spanish>Diferente nombre de equipamiento</Spanish>
-            <Chinese>不同配置名稱</Chinese>
-            <Chinesesimp>不同配置名称</Chinesesimp>
-            <Czech>Jiný název vybavení</Czech>
-            <Korean>다른 로드아웃 이름</Korean>
-            <French>Nom d'équipement différent</French>
-            <Turkish>Farklı ekipman adı</Turkish>
-            <Italian>Loadoutname diverso</Italian>
-            <Russian>Другое Лоадут имя</Russian>
-            <Japanese>別のロードアウト名</Japanese>
-        </Key>
         <Key ID="STR_KAT_circulation_BloodIV_O">
             <English>Blood IV (1000ml) BT: 0+</English>
             <German>Blut IV (1000ml) BG: 0+</German>
@@ -1096,21 +1066,6 @@
             <Russian>Увеличьте громкость AED X</Russian>
             <Japanese>AED Xの音量を上げる</Japanese>
         </Key>
-        <Key ID="STR_KAT_circulation_Pain_empty">
-            <English>%1 is now empty</English>
-            <German>%1 ist nun leer</German>
-            <Polish>%1 jest pusty</Polish>
-            <Spanish>%1 está vacío ahora</Spanish>
-            <Chinese>%1 目前用完了</Chinese>
-            <Chinesesimp>%1 用完了</Chinesesimp>
-            <Czech>%1 je prázdná</Czech>
-            <Korean>%1 은(는) 현재 비어 있음</Korean>
-            <French>%1 est maintenant vide</French>
-            <Turkish>%1 artık boş</Turkish>
-            <Russian>%1 сейчас пуст</Russian>
-            <Italian>%1 è vuota</Italian>
-            <Japanese>%1 は空になりました</Japanese>
-        </Key>
         <Key ID="STR_KAT_circulation_bloodbank">
             <English>[KAM] Medical Blood bank</English>
             <German>[KAM] Medizinische Blutbank</German>
@@ -1276,7 +1231,7 @@
             <Russian>Используйте, чтобы реанимировать игрока</Russian>
             <Japanese>人を蘇生させるために使用されます</Japanese>
         </Key>
-        <Key ID="STR_ACE_Medical_Treatment_Activity_AED">
+        <Key ID="STR_KAT_circulation_Activity_AED">
             <English>%1 performed AED</English>
             <Polish>%1 użył AED</Polish>
             <German>%1 hat den AED benutzt</German>
@@ -1291,7 +1246,7 @@
             <Italian>%1 ha utilizzato un DAE</Italian>
             <Japanese>%1 はAEDを実行しました</Japanese>
         </Key>
-        <Key ID="STR_ACE_Medical_Treatment_Activity_AEDS">
+        <Key ID="STR_KAT_circulation_Activity_AEDS">
             <English>%1 performed AED Station</English>
             <Polish>%1 użył stacji AED</Polish>
             <German>%1 hat die AED Station benutzt</German>
@@ -1306,7 +1261,7 @@
             <Italian>%1 ha utilizzato una stazione DAE</Italian>
             <Japanese>%1 はAEDステーションを実行しました</Japanese>
         </Key>
-        <Key ID="STR_ACE_Medical_Treatment_Activity_AEDX">
+        <Key ID="STR_KAT_circulation_Activity_AEDX">
             <English>%1 performed AED-X</English>
             <Polish>%1 użył AED-X</Polish>
             <German>%1 hat den AED-X benutzt</German>

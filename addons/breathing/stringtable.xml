@@ -46,36 +46,6 @@
             <Russian>Активировать летальное значение SpO2</Russian>
             <Japanese>致命的なSpO2値を有効化</Japanese>
         </Key>
-        <Key ID="STR_kat_breathing_SETTING_Value_Before">
-            <English>Small value to add / remove Sp02 (smaller treatment or injuries)</English>
-            <German>Kleiner Wert zum Hinzufügen / Entfernen von Sp02 (kleinere Behandlung oder Verletzungen)</German>
-            <Polish>Mała wartość do dodania / usunięcia SpO2 (mniejsze zabiegi lub urazy)</Polish>
-            <Spanish>Pequeño valor para añadir / quitar Sp02 (tratamiento o lesiones menores)</Spanish>
-            <Chinese>增加/删除Sp02的价值很小（较小的治疗或伤害）。</Chinese>
-            <Chinesesimp>SpO2值调整乘数很小(较小的治疗或伤害)</Chinesesimp>
-            <Czech>Malá hodnota pro přidání / odebrání Sp02 (menší ošetření nebo zranění)</Czech>
-            <Korean>SPO2 값을 추가/제거하는 최소값(소형 치료 또는 부상)</Korean>
-            <French>Faible valeur à ajouter/supprimer à la SpO2 (traitement ou blessures de moindre importance)</French>
-            <Turkish>Sp02 eklemek / çıkarmak için küçük değer (daha küçük tedavi veya yaralanmalar)</Turkish>
-            <Italian>Piccolo valore da aggiungere/rimuovere Sp02 (trattamento minore o lesioni)</Italian>
-            <Russian>Небольшое значение для добавления/удаления Sp02 (меньшее лечение или травмы)</Russian>
-            <Japanese>小さいSpO2値の上下変動 (軽症時)</Japanese>
-        </Key>
-        <Key ID="STR_kat_breathing_SETTING_Value_After">
-            <English>Big value to add / remove Sp02 (bigger treatment or injuries)</English>
-            <German>Großer Wert zum Hinzufügen / Entfernen von Sp02 (größere Behandlung oder Verletzungen)</German>
-            <Polish>Duża wartość do dodania / usunięcia SpO2 (większe leczenie lub urazy)</Polish>
-            <Spanish>Gran valor para añadir / eliminar Sp02 (mayor tratamiento o lesiones)</Spanish>
-            <Chinese>大价值的增加/删除Sp02（更大的治疗或伤害）。</Chinese>
-            <Chinesesimp>SpO2值调整乘数很大(较大的治疗或伤害)</Chinesesimp>
-            <Czech>Velká hodnota pro přidání / odstranění Sp02 (větší léčba nebo zranění)</Czech>
-            <Korean>SPO2 값을 추가/제거하는 최대값(대형 치료 또는 부상)</Korean>
-            <French>Grande valeur pour ajouter / supprimer à la SpO2 (traitement ou blessures plus importantes)</French>
-            <Turkish>Sp02 eklemek / çıkarmak için büyük değer (daha büyük tedavi veya yaralanmalar)</Turkish>
-            <Italian>Grande valore da aggiungere / rimuovere Sp02 (trattamento più grande o lesioni)</Italian>
-            <Russian>Большое значение для добавления/удаления Sp02 (более серьезное лечение или травмы)</Russian>
-            <Japanese>大きいSpO2値の上下変動 (重症時)</Japanese>
-        </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
             <German>SpO2 positiver Multiplikator</German>
@@ -186,21 +156,6 @@
             <Russian>Пульсоксиметр</Russian>
             <Japanese>パルスオキシメーター</Japanese>
         </Key>
-        <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Use">
-            <English>Pulse Oximeter</English>
-            <German>Pulsoximeter</German>
-            <Polish>Pulsoksymetr</Polish>
-            <Spanish>Oxímetro de pulso</Spanish>
-            <Chinese>心率監測器</Chinese>
-            <Chinesesimp>脉搏血氧仪</Chinesesimp>
-            <Czech>Pulzní oxymetr</Czech>
-            <Korean>맥박산소측정기</Korean>
-            <French>Oxymètre de pouls</French>
-            <Turkish>Nabız Oksimetresi</Turkish>
-            <Italian>Pulsossimetro</Italian>
-            <Russian>Пульсоксиметр</Russian>
-            <Japanese>パルスオキシメーター</Japanese>
-        </Key>
         <Key ID="STR_kat_breathing_placing">
             <English>Placing</English>
             <German>Anlegen</German>
@@ -230,21 +185,6 @@
             <Italian>Rimuovendo</Italian>
             <Russian>Развязать</Russian>
             <Japanese>取り外し中</Japanese>
-        </Key>
-        <Key ID="STR_kat_breathing_pulseoxi_NA">
-            <English>Pulse Oximeter already connected</English>
-            <German>Pulsoximeter bereits vorhanden</German>
-            <Polish>Pulsoksymetr jest już założony</Polish>
-            <Spanish>El oxímetro de pulso ya está conectado</Spanish>
-            <Chinese>心率監測器已經連接了</Chinese>
-            <Chinesesimp>已连接脉搏血氧仪, 无法连接</Chinesesimp>
-            <Czech>Pulzní oxymetr je již připojen</Czech>
-            <Korean>맥박산소측정기가 이미 연결되어 있음</Korean>
-            <French>Oxymètre de pouls déjà installé</French>
-            <Turkish>Nabız Oksimetresi zaten bağlı</Turkish>
-            <Italian>Pulsossimetro già collegato</Italian>
-            <Russian>Пульсоксиметр уже подключен</Russian>
-            <Japanese>パルスオキシメータはすでに接続されています</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log">
             <English>Pulse Oximeter: HR: %1 Sp02: %2</English>
@@ -290,21 +230,6 @@
             <Italian>%1 ha trattato un pneumotorace</Italian>
             <Russian>%1 лечили пневмоторакс</Russian>
             <Japanese>%1 は気胸を治療しました</Japanese>
-        </Key>
-        <Key ID="STR_kat_breathing_pneumothorax_display">
-            <English>Chest Seal</English>
-            <German>Chest Seal</German>
-            <Polish>Chest Seal</Polish>
-            <Spanish>Sello torácico</Spanish>
-            <Chinese>臨時氣胸密封貼</Chinese>
-            <Chinesesimp>临时气胸密封贴</Chinesesimp>
-            <Czech>Hrudní krytí</Czech>
-            <Korean>체스트 씰</Korean>
-            <French>Pansement thoracique</French>
-            <Turkish>Chest Seal</Turkish>
-            <Italian>Chest Seal</Italian>
-            <Russian>Чест Сеал </Russian>
-            <Japanese>チェストシール</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pneumothorax_mm">
             <English>1x Pneumothorax</English>
@@ -1167,10 +1092,7 @@
             <German>Nach diesem Countdown wird gewürfelt, ob sich der Pneumothorax zu einem Spannungspneumothorax entwickelt oder nicht.</German>
             <Chinesesimp>在此倒计时后，将气胸有机率恶化为张力性气胸</Chinesesimp>
             <Japanese>この時間の後、気胸が緊張性気胸に悪化するかどうかが判定されます</Japanese>
-            <Spanish>Después de esta cuenta atrás, entrará la posibilidad de que un neumotórax deteriore a un neumotórax a tensión
-
-
-</Spanish>
+            <Spanish>Después de esta cuenta atrás, entrará la posibilidad de que un neumotórax deteriore a un neumotórax a tensión</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Basic">
             <English>Basic Settings</English>

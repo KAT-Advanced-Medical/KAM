@@ -74,7 +74,7 @@ class ACE_Medical_Treatment_Actions {
     
     class AED: CPR {
         displayName = CSTRING(Defib_Action_Use);
-        displayNameProgress = "$STR_KAT_circulation_AED_PROGRESS";
+        displayNameProgress = CSTRING(AED_PROGRESS);
         icon = QPATHTOF(ui\defib.paa);
         items[] = {"kat_AED"};
         treatmentTime = 10;
