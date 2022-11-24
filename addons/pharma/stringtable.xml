@@ -2122,7 +2122,7 @@
             <Italian>Abilita la coagulazione avanzata e modifica di conseguenza il comportamento di TXA e EACA.</Italian>
             <Polish>Włącza zaawansowane funkcje krzepnięcia oraz odpowiednie modyfikacje zachowania TXA i EACA.</Polish>
             <Czech>Povolí funkci pokročilé koagulace (srážlivost) krve a modifikuje chování TXA a EACA.</Czech>
-            <German>Aktiviert erweiterte Gerinnung und modifiziert das verhalten von TXA &amp; EACA (ε-Aminocapronsäure) entsprechend.</German>
+            <German>Aktiviert erweiterte Gerinnung und modifiziert das verhalten von TXA &amp; EACA (E-Aminocapronsäure) entsprechend.</German>
         </Key>
         <Key ID="STR_kat_pharma_EACA_Display">
             <English>EACA</English>
@@ -2130,7 +2130,7 @@
             <Czech>EACA</Czech>
             <French>Acide aminocaproïque</French>
             <Korean>아미노카프로산</Korean>
-            <German>ε-Aminocapronsäure</German>
+            <German>E-Aminocapronsäure</German>
             <Chinesesimp>EACA</Chinesesimp>
             <Polish>EACA</Polish>
             <Japanese>EACA</Japanese>
