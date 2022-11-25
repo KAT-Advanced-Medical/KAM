@@ -81,7 +81,6 @@ class CfgWeapons {
     {
         displayName = CSTRING(FieldBloodTK500_Display);
         descriptionShort = CSTRING(FieldBloodTK_Desc);
-        descriptionUse = CSTRING(FieldBloodTK_Desc);
         picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
         author = "Battlekeeper";
         hiddenSelectionsTextures[] = {QPATHTOF(ui\IVBag_blood_500ml_empty_ca.paa)};
@@ -93,7 +92,6 @@ class CfgWeapons {
     {
         displayName = CSTRING(FieldBloodTK250_Display);
         descriptionShort = CSTRING(FieldBloodTK_Desc);
-        descriptionUse = CSTRING(FieldBloodTK_Desc);
         picture = QPATHTOF(ui\bloodIV_empty_ca.paa);
         author = "Battlekeeper";
         hiddenSelectionsTextures[] = {QPATHTOF(ui\IVBag_blood_500ml_empty_ca.paa)};
@@ -108,7 +106,6 @@ class CfgWeapons {
         picture = QPATHTOF(ui\defib.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
         descriptionShort = CSTRING(AED_DESCRIPTION);
-        descriptionUse = CSTRING(AED_DESCRIPTION);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 30;
         };
@@ -119,7 +116,6 @@ class CfgWeapons {
         picture = QPATHTOF(ui\x-series.paa);
         model = QPATHTOF(models\aedx\aedx.p3d);
         descriptionShort = CSTRING(X_Desc);
-        descriptionUse = CSTRING(X_Desc);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 40;
         };

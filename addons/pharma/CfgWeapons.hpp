@@ -166,7 +166,6 @@ class CfgWeapons {
         picture = QPATHTOF(ui\icon_lorazepam.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Lorazepam_DescShort);
-        descriptionUse = CSTRING(Lorazepam_DescUse);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
         }; 
@@ -177,7 +176,6 @@ class CfgWeapons {
         picture = QPATHTOF(ui\icon_flumazenil.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Flumazenil_DescShort);
-        descriptionUse = CSTRING(Flumazenil_DescUse);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
         }; 
@@ -188,7 +186,6 @@ class CfgWeapons {
         picture = QPATHTOF(ui\icon_etomidate.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Etomidate_DescShort);
-        descriptionUse = CSTRING(Etomidate_DescUse);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
         }; 

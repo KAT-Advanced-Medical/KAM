@@ -43,11 +43,10 @@ _unit setVariable ["kat_PulseoxiInUse_PFH", nil];
 
 // KAT Circulation
 
-_unit setVariable [QEGVAR(circulation,IV_counts), 0, true];
 _unit setVariable [QEGVAR(circulation,X), false, true];
 _unit setVariable ["kat_AEDXPatient_PFH", nil];
-_unit setVariable ["KAT_circulation_X_sound1", "x\kat\addons\circulation\sounds\noheartrate.wav", true];
-_unit setVariable ["KAT_circulation_X_sound2", "x\kat\addons\circulation\sounds\heartrate.wav", true];
+_unit setVariable [QEGVAR(circulation,X_sound1), "x\kat\addons\circulation\sounds\noheartrate.wav", true];
+_unit setVariable [QEGVAR(circulation,X_sound2), "x\kat\addons\circulation\sounds\heartrate.wav", true];
 _unit setVariable [QEGVAR(circulation,use), false, true];
 _unit setVariable [QEGVAR(circulation,returnedAED), false, true];
 _unit setVariable [QEGVAR(circulation,asystole), 1, true];

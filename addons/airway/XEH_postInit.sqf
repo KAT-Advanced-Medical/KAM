@@ -23,11 +23,3 @@ if !(GVAR(enable)) exitWith {};
     [_unit] call FUNC(handleAirway);
     [_unit] call FUNC(handlePuking);
 }] call CBA_fnc_addEventHandler;
-
-["ace_treatmentSucceded",{
-    params ["", "_target", "", "_className"];
-    if (toUpper _className isEqualTo "PERSONALAIDKIT" && local _target) exitWith {
-        _target call FUNC(init);
-        _target setVariable [QEGVAR(circulation,IV_counts), 0, true];
-    };
- }] call CBA_fnc_addEventHandler;

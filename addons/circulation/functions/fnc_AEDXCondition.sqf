@@ -23,7 +23,7 @@ private _hasMonitor = _patient getVariable [QGVAR(X), false];
 private _recovery = _patient getVariable[QEGVAR(airway,recovery),false];
 
 if (((_hasMonitor)
-|| ([_medic, 'kat_X_AED'] call ACEFUNC(common,hasItem)))
+|| ([_medic, "kat_X_AED"] call ACEFUNC(common,hasItem)))
 && {!_recovery}
 && {_canCPR}) exitWith {true};
 

@@ -26,6 +26,6 @@ class CfgMods {
         hideName = "true";
         actionName = "Website";
         action = CSTRING(URL);
-        description = "Issue Tracker: https://github.com/Katalam/kat_aceAdvMedical/issues";
+        description = "Issue Tracker: https://github.com/Tomcat-SG/KAM/issues";
     };
 };

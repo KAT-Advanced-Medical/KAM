@@ -21,7 +21,7 @@ class CfgVehicles {
     class kat_AEDItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_KAT_circulation_AED_DISPLAYNAME";
+        displayName = CSTRING(AED_DISPLAYNAME);
         author = "Katalam";
         vehicleClass = "Items";
         model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";

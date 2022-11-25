@@ -69,7 +69,8 @@ _slider ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove];
 [_slider,_curBloodVol] call _fnc_sliderMove;
 
 
-private _playerBloodyType = _unit getVariable [QEGVAR(circulation,bloodtype), "O"];
+private _playerBloodyType = _unit getVariable [QEGVAR(circulation,bloodtype), "O_N"];
+private _playerBloodyTypeIndex = ["O","O_N","A","A_N","B","B_N","AB","AB_N"] find _playerBloodyType;
 private _select = switch (_playerBloodyType) do 
 {
     case "O+":  {0};
@@ -80,7 +81,7 @@ private _select = switch (_playerBloodyType) do
     case "B-":  {5};
     case "AB+":  {6};
     case "AB-":  {7};
-    default {0};
+    default {_playerBloodyTypeIndex};
 };
 (_display displayCtrl 16107) lbSetCurSel _select;
 
