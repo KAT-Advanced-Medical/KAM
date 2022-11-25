@@ -13,6 +13,7 @@ PREP(canCheckDogtag);
 PREP(canDraw);
 PREP(compatible);
 PREP(cprLocal);
+PREP(cprSuccess);
 PREP(drawBlood);
 PREP(getDogtagData);
 PREP(groupID);
