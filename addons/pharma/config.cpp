@@ -55,6 +55,29 @@ class CfgPatches {
     };
 };
 
+class CfgWeapons
+{
+	class ACE_ItemCore;
+	class CBA_MiscItem_ItemInfo;
+	class kat_IV_16: ACE_ItemCore
+	{
+		scope=2;
+		displayName="$STR_kat_pharma_IV_16_Display";
+		picture="\x\kat\addons\pharma\ui\icon_IV_16.paa";
+		model="\x\kat\addons\pharma\models\iv\kat_iv.p3d";
+		descriptionShort="$STR_kat_pharma_IV_DescShort";
+		hiddenSelections[]={"0"};
+        hiddenSelectionsTextures[]=
+        {
+            "\x\kat\addons\pharma\models\iv\kat_iv.paa"
+        };
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass=0.5;
+		};
+	};
+};
+
 #include "CfgEventHandlers.hpp"
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"
