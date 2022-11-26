@@ -4,14 +4,14 @@
  * Checks for AED-Xs in vehicle inventories and allows them to be used on patients both in and around the vehicle.
  *
  * Arguments:
- * 0: Medic <OBJECT>
+ * 0: Medic (not used) <OBJECT>
  * 1: Patient <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg", "", objNull, "kat_IV_20"] call kat_circulation_fnc_vehicleCheck;
+ * [player, cursorObject] call kat_circulation_fnc_vehicleCheck;
  *
  * Public: No
  */

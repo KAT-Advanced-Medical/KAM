@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [player, cursorObject] call ace_medical_treatment_fnc_cprSuccess
+ * [player, cursorObject, "Body", "CPR"] call ace_medical_treatment_fnc_cprSuccess
  *
  * Public: No
  */

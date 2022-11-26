@@ -32,5 +32,3 @@ if (_AEDreturn) then {
     _patient setVariable [QGVAR(AEDvehicle), "", true];
     _patient setVariable [QGVAR(vehicleTrue), false, true];
 };
-
-true;

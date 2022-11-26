@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", classname, objNull, "kat_Carbonate"] call kat_pharma_fnc_treatmentAdvanced_Carbonate;
+ * [player, cursorObject, "RightArm", "Painkillers", objNull, "kat_Carbonate"] call kat_pharma_fnc_treatmentAdvanced_Carbonate;
  *
  * Public: No
  */

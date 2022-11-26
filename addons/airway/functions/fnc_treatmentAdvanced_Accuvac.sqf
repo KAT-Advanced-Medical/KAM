@@ -6,12 +6,16 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
+ * 3: Treatment <STRING>
+ * 4: Item User (not used) <OBJECT>
+ * 5: Used Item <STRING>
  *
  * Return Value:
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_accuvac;
+ * [player, cursorTarget, "Head", "Accuvac", objNull, "kat_accuvac"] call kat_airway_fnc_treatmentAdvanced_accuvac;
  *
  * Public: Yes
  */

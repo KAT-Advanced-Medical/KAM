@@ -6,12 +6,13 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [_medic, _patient] call kat_pharma_fnc_inspectCatheter;
+ * [_medic, _patient, "LeftArm"] call kat_pharma_fnc_inspectCatheter;
  *
  * Public: No
  */

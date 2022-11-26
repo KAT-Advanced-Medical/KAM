@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * call kat_breathing_fnc_checkCyanosisLocal
+ * call kat_breathing_fnc_CyanosisLocal
  *
  * Public: No
  */

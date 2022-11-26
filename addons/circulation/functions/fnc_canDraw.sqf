@@ -12,7 +12,7 @@
  * <BOOLEAN>
  *
  * Example:
- * _allowedToDraw = [medic, medic, 500] call kat_circulation_fnc_canDraw;
+ * [medic, medic, 500] call kat_circulation_fnc_canDraw;
  *
  * Public: No
  */

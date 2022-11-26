@@ -48,5 +48,3 @@ if (_patient getVariable [QACEGVAR(medical,heartRate), 0] isEqualTo 0 && {_asyst
         playsound3D [QPATHTOF_SOUND(sounds\noshock.wav), _patient, false, getPosASL _patient, 6, 1, 15];
     }, [_patient], 2] call CBA_fnc_waitAndExecute;
 };
-
-true

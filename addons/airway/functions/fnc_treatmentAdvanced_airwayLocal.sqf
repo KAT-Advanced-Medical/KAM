@@ -7,12 +7,13 @@
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
  * 2: Treatment classname <STRING>
+ * 3: Used Item <STRING>
  *
  * Return Value:
- * Succesful treatment <BOOL>
+ * None
  *
  * Example:
- * [player, cursorTarget, "Larynxtubus"] call kat_airway_fnc_treatmentAdvanced_airwayLocal;
+ * [player, cursorTarget, "Larynxtubus", "kat_larynx"] call kat_airway_fnc_treatmentAdvanced_airwayLocal;
  *
  * Public: No
  */

@@ -6,13 +6,12 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
-
  *
  * Return Value:
- * Successful treatment
+ * None
  *
  * Example:
- * call kat_airway_fnc_RecoveryPositionLocal
+ * [player, cursorTarget] call kat_airway_fnc_RecoveryPositionLocal
  *
  * Public: No
  */
