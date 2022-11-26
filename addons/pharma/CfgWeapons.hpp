@@ -24,6 +24,11 @@ class CfgWeapons {
         picture = QPATHTOF(ui\icon_IV_16.paa);
         model = QPATHTOF(models\iv\kat_iv.p3d);
         descriptionShort = CSTRING(IV_DescShort);
+        hiddenSelections[]={"0"};
+        hiddenSelectionsTextures[]=
+        {
+            QPATHTOF(models\iv\kat_iv.paa);
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
