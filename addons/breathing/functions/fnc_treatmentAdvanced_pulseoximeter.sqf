@@ -7,16 +7,22 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
+ * 3: Treatment <STRING>
+ * 4: Item User (not used) <OBJECT>
+ * 5: Used Item <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * call kat_breathing_fnc_treatmentAdvanced_pulseoximeter;
+ * [player, cursorObject, "LeftArm", "Pulseoximeter", objNull, "kat_Pulseoximeter"] call kat_breathing_fnc_treatmentAdvanced_hemopneumothorax;
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart"];
+params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
+
+[_patient, _usedItem] call ACEFUNC(medical_treatment,addToTriageCard);
 
 [QGVAR(pulseoxLocal), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;

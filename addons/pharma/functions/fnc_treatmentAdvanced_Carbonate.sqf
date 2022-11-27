@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", classname, objNull, "kat_Carbonate"] call kat_pharma_fnc_treatmentAdvanced_Carbonate;
+ * [player, cursorObject, "RightArm", "Painkillers", objNull, "kat_Carbonate"] call kat_pharma_fnc_treatmentAdvanced_Carbonate;
  *
  * Public: No
  */
@@ -23,7 +23,7 @@
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
 [_patient, _classname] call ACEFUNC(medical_treatment,addToTriageCard);
-[_patient, "activity", LSTRING(Activity_usedItem), [[_medic] call ACEFUNC(common,getName), _classname]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), _classname]] call ACEFUNC(medical_treatment,addToLog);
 
 [_medic, 'kat_Carbonate'] call FUNC(removeItemfromMag);
 [QGVAR(medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;

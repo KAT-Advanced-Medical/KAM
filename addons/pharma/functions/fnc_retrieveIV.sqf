@@ -6,12 +6,13 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject] call kat_pharma_fnc_retrieveIV;
+ * [player, cursorObject, "LeftArm"] call kat_pharma_fnc_retrieveIV;
  *
  * Public: No
  */
@@ -24,9 +25,9 @@ private _newArray = _patient getVariable [QACEGVAR(medical,ivBags), []];
 private _IVactual = _IVarray select _partIndex;
 
 if (_IVactual == 1) then {
-    _patient addItem "kat_IO_FAST";
+    _medic addItem "kat_IO_FAST";
 } else {
-    _patient addItem "kat_IV_16";
+    _medic addItem "kat_IV_16";
 };
 
 _IVarray set [_partIndex, 0];

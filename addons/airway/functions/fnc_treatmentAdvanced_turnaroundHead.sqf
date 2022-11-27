@@ -4,11 +4,11 @@
  * Turns the head of the patient for airway management without items
  *
  * Arguments:
- * 0: Soldier <OBJECT>
+ * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
  *
  * Return Value:
- * Succesful treatment <BOOL>
+ * None
  *
  * Example:
  * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_turnaroundHead;

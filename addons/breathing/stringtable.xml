@@ -216,21 +216,6 @@
             <Russian>%1 подключен пульсоксиметр</Russian>
             <Japanese>%1 がパルスオキシメーターを装着</Japanese>
         </Key>
-        <Key ID="STR_kat_breathing_pneumothorax">
-            <English>%1 treated a pneumothorax</English>
-            <German>%1 behandelte einen Pneumothorax</German>
-            <Spanish>%1 trató un neumotórax</Spanish>
-            <Polish>%1 wyleczył odmę opłucnową</Polish>
-            <Chinese>%1 已經治癒氣胸</Chinese>
-            <Chinesesimp>%1 已治愈气胸</Chinesesimp>
-            <Czech>%1 ošetřil pneumotorax</Czech>
-            <Korean>%1 은(는) 기흉 치료 완료</Korean>
-            <French>%1 a traité un pneumothorax</French>
-            <Turkish>%1 pnömotoraksı tedavi etti</Turkish>
-            <Italian>%1 ha trattato un pneumotorace</Italian>
-            <Russian>%1 лечили пневмоторакс</Russian>
-            <Japanese>%1 は気胸を治療しました</Japanese>
-        </Key>
         <Key ID="STR_kat_breathing_pneumothorax_mm">
             <English>1x Pneumothorax</English>
             <German>1x Pneumothorax</German>
@@ -409,21 +394,6 @@
             <Russian>Слить жидкость</Russian>
             <Japanese>胸腔排液治療</Japanese>
         </Key>
-        <Key ID="STR_kat_breathing_hemopneumothorax">
-            <English>%1 treated a Hemopneumothorax</English>
-            <German>%1 hat einen Hämatopneumothorax behandelt</German>
-            <Spanish>%1 trató un Hemotórax</Spanish>
-            <Polish>%1 wyleczył Krwiaka opłucnej</Polish>
-            <Chinese>%1 治疗了血气胸</Chinese>
-            <Chinesesimp>%1 治愈了血气胸</Chinesesimp>
-            <Czech>%1 ošetřill hemopneumotorax</Czech>
-            <Korean>%1 은(는) 혈기흉 치료 완료</Korean>
-            <French>%1 a traité un hémopneumothorax</French>
-            <Turkish>%1 Hemopnömotoraksı tedavi etti</Turkish>
-            <Italian>%1 ha trattato un emopneumotorace</Italian>
-            <Russian>%1 лечили гемопневмоторакс</Russian>
-            <Japanese>%1 は血気胸を治療しました</Japanese>
-        </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax_mm">
             <English>1x Hemopneumothorax</English>
             <German>1x Hämatopneumothorax</German>
@@ -453,21 +423,6 @@
             <Italian>Decompressione con ago</Italian>
             <Russian>Декомпрессия иглы</Russian>
             <Japanese>胸腔穿刺減圧</Japanese>
-        </Key>
-        <Key ID="STR_kat_breathing_tensionpneumothorax">
-            <English>%1 treated a Tension Pneumothorax</English>
-            <German>%1 hat einen Spannungspneumothorax behandelt</German>
-            <Spanish>%1 trató un Neumotórax a tensión</Spanish>
-            <Polish>%1 wyleczył Odmę prężną</Polish>
-            <Chinese>%1 治疗了血气胸</Chinese>
-            <Chinesesimp>%1 治愈了张力性气胸</Chinesesimp>
-            <Czech>%1 ošetřil hemopneumotorax</Czech>
-            <Korean>%1 은(는) 긴장성 기흉 치료 완료</Korean>
-            <French>%1 a traité un pneumothorax sous tension</French>
-            <Turkish>%1 Gerilim Pnömotoraks'ı tedavi edildi</Turkish>
-            <Italian>%1 ha trattato uno pneumotorace iperteso</Italian>
-            <Russian>%1 лечили напряженный пневмоторакс</Russian>
-            <Japanese>%1 は緊張性気胸を治療しました</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>

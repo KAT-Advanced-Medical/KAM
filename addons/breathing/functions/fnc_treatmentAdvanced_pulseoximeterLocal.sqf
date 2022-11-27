@@ -46,6 +46,5 @@ _patient setVariable [QGVAR(pulseoximeter), true, true];
     [_patient, "quick_view", LSTRING(pulseoxi_Log), [round _HR, round _SpO2]] call ACEFUNC(medical_treatment,addToLog);
 }, 1, [_patient, _bodyPart]] call CBA_fnc_addPerFrameHandler;
 
-[_patient, "quick_view", LSTRING(pulseoxi_Log), [round _HR, round _SpO2]] call ACEFUNC(medical_treatment,addToLog);
 [_patient, "activity", LSTRING(pulseoxi_Log_2), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 [_patient, "Pulseoximeter"] call ACEFUNC(medical_treatment,addToTriageCard);

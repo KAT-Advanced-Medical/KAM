@@ -4,7 +4,7 @@
  * Checks Limb Damage before and IV can be used.
  *
  * Arguments:
- * 0: Medic <OBJECT>
+ * 0: Medic (not used) <OBJECT>
  * 1: Patient <OBJECT>
  * 2: Body Part <STRING>
  *

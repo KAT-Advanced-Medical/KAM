@@ -4,13 +4,14 @@
  * Local function for EACA treatment
  *
  * Arguments:
- * 0: Medic <OBJECT>
+ * 0: Patient <OBJECT>
+ * 1: Body Part <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [_patient] call kat_pharma_fnc_treatmentAdvanced_EACALocal;
+ * [_patient, "LeftArm"] call kat_pharma_fnc_treatmentAdvanced_EACALocal;
  *
  * Public: No
  */

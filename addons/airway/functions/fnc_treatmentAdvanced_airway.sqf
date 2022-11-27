@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget, "Larynxtubus"] call kat_airway_fnc_treatmentAdvanced_airway;
+ * [player, cursorTarget, "Head", "Larynxtubus", objNull, "kat_larynx"] call kat_airway_fnc_treatmentAdvanced_airway;
  *
  * Public: No
  */

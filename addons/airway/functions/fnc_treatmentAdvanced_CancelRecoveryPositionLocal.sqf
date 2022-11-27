@@ -8,10 +8,10 @@
  * 1: Patient <OBJECT>
  *
  * Return Value:
- * Successful treatment
+ * None
  *
  * Example:
- * call kat_airway_fnc_CancelRecoveryPositionLocal
+ * [player, cursorTarget] call kat_airway_fnc_CancelRecoveryPositionLocal
  *
  * Public: No
  */

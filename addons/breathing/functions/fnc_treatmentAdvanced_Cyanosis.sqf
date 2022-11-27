@@ -6,13 +6,13 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Body Part <NUMBER>
+ * 2: Body Part <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * call kat_breathing_fnc_checkCyanosis
+ * [player, cursorTarget, "Body"] call kat_breathing_fnc_Cyanosis
  *
  * Public: No
  */

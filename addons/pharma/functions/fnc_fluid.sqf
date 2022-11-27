@@ -4,16 +4,15 @@
  * Starts ph treatment
  *
  * Arguments:
- * 0: Medic <OBJECT>
- * 1: Patient <OBJECT>
- * 2: Body Part <STRING>
- * 3: PH <NUMBER>
+ * 0: Patient <OBJECT>
+ * 1: pH value <NUMBER>
+ * 2: Coagulation factors value <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", "Flumazenil", objNull, "kat_flumazenil"] call kat_pharma_fnc_treatmentAdvanced_Amiodaron;
+ * [player, 500, 10] call kat_pharma_fnc_fluid;
  *
  * Public: No
  */

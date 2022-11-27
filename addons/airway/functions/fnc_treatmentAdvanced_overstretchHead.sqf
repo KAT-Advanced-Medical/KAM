@@ -4,7 +4,7 @@
  * Overstretch the head of the patient for airway management without items
  *
  * Arguments:
- * 0: Soldier <OBJECT>
+ * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
  *
  * Return Value:

@@ -4,14 +4,18 @@
  * Called when a unit is damaged.
  *
  * Arguments:
- * 0: Unit <OBJECT>
- * 1: Selection <STRING>
+ * 0: Unit That Was Hit <OBJECT>
+ * 1: Damage done to each body part <ARRAY>
+ *  0: Damage <NUMBER>
+ *  1: Bodypart <STRING>
+ * 2: Shooter <OBJECT>
+ * 3: Ammo classname or damage type <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [cursorTarget, "body", 1, ""] call kat_breathing_fnc_handlePulmoHit;
+ * [cursorTarget, [1, "Body"], objNull, "BulletBase"] call kat_breathing_fnc_handlePulmoHit;
  *
  * Public: No
  */
