@@ -25,6 +25,7 @@ class CfgWeapons {
         model = QPATHTOF(models\iv\kat_iv.p3d);
         descriptionShort = CSTRING(IV_DescShort);
         hiddenSelections[]={"0"};
+        hiddenSelectionsMaterials[] = {QPATHTOF(models\iv\kat_iv.rvmat)};
         hiddenSelectionsTextures[]=
         {
             QPATHTOF(models\iv\kat_iv.paa);
