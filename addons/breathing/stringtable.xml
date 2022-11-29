@@ -469,6 +469,14 @@
             <Russian>Набор ААТ</Russian>
             <Japanese>AATキットは、血気胸などの高度な呼吸器の状態を治療するために設計された使い捨てキットです。</Japanese>
         </Key>
+            <Key ID="STR_kat_breathing_ncdKit_display">
+            <English>NDC Kit</English>
+            <German>NDK Kit</German>
+        </Key>
+        <Key ID="STR_kat_breathing_ncdKit_desc">
+            <English>The Needle Chest Decompression Kit is a single use kit desinged to treat a tentionpneumotorax injurie.</English>
+            <German>Das Nadeldekompressions Kit ist ein Einweg-Kit das zur Behandlung eines Spannungspneumothorax vorgesehen ist.</German>
+        </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemothorax / Tension Pneumothorax Chance</English>
             <German>Hämatopneumothorax / Spannungspneumothorax Chance</German>
