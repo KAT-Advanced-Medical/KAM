@@ -26,6 +26,7 @@ class CfgVehicles {
     class NATO_Box_Base;
     class ACE_medicalSupplyCrate: NATO_Box_Base {
         class TransportItems;
+        class TransportMagazines;
     };
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
         class TransportItems: TransportItems {
@@ -54,10 +55,6 @@ class CfgVehicles {
             MACRO_ADDITEM(KAT_Empty_bloodIV_500,7);
             MACRO_ADDITEM(kat_AED,2);
             MACRO_ADDITEM(kat_X_AED,2);
-        };
-        class TransportMagazines: TransportMagazines {
-            MACRO_ADDMAGAZINE(kat_Carbonate,15);
-            MACRO_ADDMAGAZINE(kat_Painkiller,15);
         };
     };
 };

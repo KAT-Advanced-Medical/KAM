@@ -470,7 +470,7 @@
             <Japanese>AATキットは、血気胸などの高度な呼吸器の状態を治療するために設計された使い捨てキットです。</Japanese>
         </Key>
             <Key ID="STR_kat_breathing_ncdKit_display">
-            <English>NDC Kit</English>
+            <English>NCD Kit</English>
             <German>NDK Kit</German>
         </Key>
         <Key ID="STR_kat_breathing_ncdKit_desc">
