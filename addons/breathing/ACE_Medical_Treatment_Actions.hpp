@@ -120,6 +120,30 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
+    class ncdKit: TensionpneumothoraxTreatment {
+        displayName = CSTRING(tensionpneumothoraxNCDKit_display);
+        displayNameProgress = CSTRING(treating);
+        category = "airway";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
+        treatmentTime = 7;
+        items[] = {"kat_ncdKit"};
+        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        callbackSuccess = QFUNC(treatmentAdvanced_tensionpneumothorax);
+        callbackFailure = "";
+        callbackProgress = "";
+        consumeItem = 1;
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
+        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        litter[] = {};
+    };
     class listentolungs: CheckPulse {
         displayName = CSTRING(auscultateLung_display);
         displayNameProgress = CSTRING(listening_progress);

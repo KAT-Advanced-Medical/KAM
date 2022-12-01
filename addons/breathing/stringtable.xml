@@ -424,6 +424,11 @@
             <Russian>Декомпрессия иглы</Russian>
             <Japanese>胸腔穿刺減圧</Japanese>
         </Key>
+        <Key ID="STR_kat_breathing_tensionpneumothoraxNCDKit_display">
+            <English>Needle Decompression (NCD Kit)</English>
+            <German>Nadel Dekompression (NDK Kit)</German>
+            <Polish>Igła dekompresyjna (NCD Kit)</Polish>
+        </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
             <German>1x Spannungspneumothorax</German>
@@ -468,6 +473,16 @@
             <Italian>Il kit per il Trattamento Avanzato delle vie Aeree è un kit ad uso singolo per il trattamento avanzato di condizioni alle vie aeree, come l'emopneumotorace</Italian>
             <Russian>Набор ААТ</Russian>
             <Japanese>AATキットは、血気胸などの高度な呼吸器の状態を治療するために設計された使い捨てキットです。</Japanese>
+        </Key>
+            <Key ID="STR_kat_breathing_ncdKit_display">
+            <English>NCD Kit</English>
+            <German>NDK Kit</German>
+            <Polish>Zestaw NCD</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_ncdKit_desc">
+            <English>The Needle Chest Decompression Kit is a single use kit designed to treat a tensionpneumothorax.</English>
+            <German>Das Nadeldekompressions Kit ist ein Einweg-Kit das zur Behandlung eines Spannungspneumothorax vorgesehen ist.</German>
+            <Polish>Zestaw NCD to zestaw jednorazowego użytku przeznaczony do leczenia odmy prężnej.</Polish>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemothorax / Tension Pneumothorax Chance</English>

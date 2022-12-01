@@ -39,6 +39,18 @@ class CfgWeapons {
             mass = 5;
         };
     };
+    class kat_ncdKit: ACE_ItemCore {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        author = "MissHeda";
+        displayName= CSTRING(ncdKit_display);
+        descriptionShort = CSTRING(ncdKit_desc);
+        picture = QPATHTOF(ui\ndcKit.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 2;
+        };
+    };
     class kat_stethoscope: ACE_ItemCore    {
         scope = 2;
         scopeCurator = 2;
