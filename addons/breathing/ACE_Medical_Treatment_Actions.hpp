@@ -121,7 +121,7 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
     };
     class ncdKit: TensionpneumothoraxTreatment {
-        displayName = CSTRING(ncdKit_display);
+        displayName = CSTRING(tensionpneumothoraxNCDKit_display);
         displayNameProgress = CSTRING(treating);
         category = "airway";
         treatmentLocations = 0;

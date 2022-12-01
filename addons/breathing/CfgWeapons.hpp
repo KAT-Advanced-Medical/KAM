@@ -46,7 +46,7 @@ class CfgWeapons {
         author = "MissHeda";
         displayName= CSTRING(ncdKit_display);
         descriptionShort = CSTRING(ncdKit_desc);
-        picture = QPATHTOF(ui\ncdkit.paa);
+        picture = QPATHTOF(ui\ndcKit.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 2;
         };

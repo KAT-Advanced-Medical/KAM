@@ -424,6 +424,10 @@
             <Russian>Декомпрессия иглы</Russian>
             <Japanese>胸腔穿刺減圧</Japanese>
         </Key>
+        <Key ID="STR_kat_breathing_tensionpneumothoraxNCDKit_display">
+            <English>Needle Decompression (NCD Kit)</English>
+            <German>Nadel Dekompression (NDK Kit)</German>
+        </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
             <German>1x Spannungspneumothorax</German>
