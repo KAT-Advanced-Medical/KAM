@@ -427,6 +427,7 @@
         <Key ID="STR_kat_breathing_tensionpneumothoraxNCDKit_display">
             <English>Needle Decompression (NCD Kit)</English>
             <German>Nadel Dekompression (NDK Kit)</German>
+            <Polish>Igła dekompresyjna (NCD Kit)</Polish>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
@@ -476,10 +477,12 @@
             <Key ID="STR_kat_breathing_ncdKit_display">
             <English>NCD Kit</English>
             <German>NDK Kit</German>
+            <Polish>Zestaw NCD</Polish>
         </Key>
         <Key ID="STR_kat_breathing_ncdKit_desc">
-            <English>The Needle Chest Decompression Kit is a single use kit desinged to treat a tentionpneumotorax injurie.</English>
+            <English>The Needle Chest Decompression Kit is a single use kit designed to treat a tensionpneumothorax.</English>
             <German>Das Nadeldekompressions Kit ist ein Einweg-Kit das zur Behandlung eines Spannungspneumothorax vorgesehen ist.</German>
+            <Polish>Zestaw NCD to zestaw jednorazowego użytku przeznaczony do leczenia odmy prężnej.</Polish>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemothorax / Tension Pneumothorax Chance</English>
