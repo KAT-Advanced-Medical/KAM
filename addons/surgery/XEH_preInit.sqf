@@ -45,6 +45,15 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+	QGVAR(closedReductionFailChance),
+	"SLIDER",
+	[LLSTRING(CLOSED_REDUCTION_FAIL),LLSTRING(CLOSED_REDUCTION_FAIL_DESC)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Fractures)],
+	[0,100,10,0],
+	true
+] call CBA_Settings_fnc_init;
+
+[
 	QGVAR(compoundChance),
 	"SLIDER",
 	[LLSTRING(COMPOUND_FRACTURE_CHANCE) ,LLSTRING(COMPOUND_FRACTURE_CHANCE_DESC)],
