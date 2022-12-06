@@ -43,7 +43,7 @@ class CfgWeapons {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        author = "MissHeda";
+        author = "Miss Heda";
         displayName= CSTRING(ncdKit_display);
         descriptionShort = CSTRING(ncdKit_desc);
         picture = QPATHTOF(ui\ndcKit.paa);

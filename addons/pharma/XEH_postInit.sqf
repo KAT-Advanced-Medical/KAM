@@ -13,7 +13,9 @@
 [QGVAR(lorazepamLocal), LINKFUNC(treatmentAdvanced_LorazepamLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(fluidLocal), LINKFUNC(fluidLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(flushLocal), LINKFUNC(treatmentAdvanced_FlushLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(pervitinLocal), LINKFUNC(treatmentAdvanced_PervitinLocal)] call CBA_fnc_addEventHandler;
 
 
 ["kat_PainkillerItem", "kat_Painkiller"] call ACEFUNC(common,registerItemReplacement);
 ["kat_CarbonateItem", "kat_Carbonate"] call ACEFUNC(common,registerItemReplacement);
+["kat_PervitinItem", "kat_Pervitin"] call ACEFUNC(common,registerItemReplacement);

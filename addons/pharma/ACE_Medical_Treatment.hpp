@@ -189,5 +189,16 @@ class ADDON {
             incompatibleMedication[] = {};
             viscosityChange = -15;
         };
+        class Pervitin {
+            painReduce = 0.5;
+            hrIncreaseLow[] = {-10, 20};
+            hrIncreaseNormal[] = {-10, 35};
+            hrIncreaseHigh[] = {-10, 15};
+            timeInSystem = 600;
+            timeTillMaxEffect = 5;
+            maxDose = 4;
+            incompatibleMedication[] = {};
+            viscosityChange = 5;
+        }
     };
 };

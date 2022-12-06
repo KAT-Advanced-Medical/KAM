@@ -54,6 +54,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),6,1,15}};
     };
     class Carbonate: Morphine {
         displayName = CSTRING(Take_Carbonate);
@@ -68,6 +69,19 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
         condition = "[_medic, 'kat_Carbonate'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Carbonate'] call ace_common_fnc_hasMagazine";
         callbackSuccess = QFUNC(treatmentAdvanced_Carbonate);
+    };
+    class Pervitin: Morphine {
+        displayName = CSTRING(Take_Pervitin);
+        displayNameProgress = CSTRING(Using);
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_Pervitin);
+        treatmentTime = QGVAR(treatmentTime_Pervitin);
+        items[] = {};
+        litter[] = {};
+        condition = "[_medic, 'kat_Pervitin'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Pervitin'] call ace_common_fnc_hasMagazine";
+        callbackSuccess = QFUNC(treatmentAdvanced_Pervitin);
+        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),6,1,15}};
     };
     class Naloxone: Carbonate {
         displayName = CSTRING(Take_Naloxone);

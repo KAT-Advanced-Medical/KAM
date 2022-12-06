@@ -38,4 +38,6 @@ PREP(treatmentAdvanced_Reorientation);
 PREP(treatmentAdvanced_ReorientationLocal);
 PREP(treatmentAdvanced_TXA);
 PREP(treatmentAdvanced_TXALocal);
+PREP(treatmentAdvanced_Pervitin);
+PREP(treatmentAdvanced_PervitinLocal);
 PREP(vehicleCheckDialysis);

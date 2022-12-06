@@ -20,6 +20,17 @@ class CfgWeapons {
             mass = 1;
         };
     };
+    class kat_PervitinItem: ACE_ItemCore {
+        scope = 2; //This item is not actually used and it is replaced by ace_common_fnc_registerItemReplacement 
+        author = Miss Heda;
+        displayName = CSTRING(Pervitin_Capsule_Display);
+        picture = QPATHTOF(ui\icon_Pervitin.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Pervitin_Capsule_DescShort);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.1;
+        }; 
+    };
     class kat_IV_16: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(IV_16_Display);

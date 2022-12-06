@@ -252,6 +252,25 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Pervitin Settings Category
+[
+    QGVAR(medLvl_Pervitin),
+    "LIST",
+    [LLSTRING(medLvl_Pervitin)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_Pervitin),
+    "SLIDER",
+    [LLSTRING(treatmentTime_Pervitin)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // TXA Settings Category
 [
     QGVAR(medLvl_TXA),
