@@ -81,83 +81,83 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	/// ACE Fatigue Weapon Sway
 
-	if (isNil QGVAR(originalSwayFactor)) then {
-		QGVAR(originalSwayFactor) = ace_advanced_fatigue_swayFactor;
+	if (isNil GVAR(originalSwayFactor)) then {
+		GVAR(originalSwayFactor) = ace_advanced_fatigue_swayFactor;
 	};
 
 	[{
 		params ["_patient"];
-		ace_advanced_fatigue_swayFactor = QGVAR(originalSwayFactor) * 0.3;
+		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 0.3;
 	},
 	[_patient], 15] call CBA_fnc_waitAndExecute;
 
 
 	[{
 		params ["_patient"];
-		ace_advanced_fatigue_swayFactor = QGVAR(originalSwayFactor) * 0.5 ;
+		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 0.5 ;
 	},
 	[_patient], 60] call CBA_fnc_waitAndExecute;
 
 	
 	[{
 		params ["_patient"];
-		ace_advanced_fatigue_swayFactor = QGVAR(originalSwayFactor) * 1;
+		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 1;
 	},
 	[_patient], 90] call CBA_fnc_waitAndExecute;
 
 
 	[{
 		params ["_patient"];
-		ace_advanced_fatigue_swayFactor = (QGVAR(originalSwayFactor) * 1.3) min 2;
+		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.3) min 2;
 	},
 	[_patient], 120] call CBA_fnc_waitAndExecute; /// 2m
 
 
 	[{
 		params ["_patient"];
-		ace_advanced_fatigue_swayFactor = (QGVAR(originalSwayFactor) * 1.5) min 2;
+		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.5) min 2;
 	},
 	[_patient], 150] call CBA_fnc_waitAndExecute;
 
 
 	[{
 		params ["_patient"];
-		ace_advanced_fatigue_swayFactor = (QGVAR(originalSwayFactor) * 1.7) min 2;
+		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.7) min 2;
 	},
 	[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
 
 
 	[{
 		params ["_patient"];
-		ace_advanced_fatigue_swayFactor = (QGVAR(originalSwayFactor) * 2) min 2;
+		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 2) min 2;
 	},
 	[_patient], 210] call CBA_fnc_waitAndExecute;
 
 
 	[{
 		params ["_patient"];
-		ace_advanced_fatigue_swayFactor = (KQGVAR(originalSwayFactor) * 1.7) min 2;
+		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.7) min 2;
 	},
 	[_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
 
 
 	[{
 		params ["_patient"];
-		ace_advanced_fatigue_swayFactor = (QGVAR(originalSwayFactor) * 1.4) min 2;
+		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.4) min 2;
 	},
 	[_patient], 300] call CBA_fnc_waitAndExecute; /// 5m
 
 
 	[{
 		params ["_patient"];
-		ace_advanced_fatigue_swayFactor = (QGVAR(originalSwayFactor) * 1.2) min 2;
+		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.2) min 2;
 	},
 	[_patient], 420] call CBA_fnc_waitAndExecute; /// 7m
 
 
 	[{
 		params ["_patient"];
-		ace_advanced_fatigue_swayFactor = QGVAR(originalSwayFactor);
+		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor);
 	},
 	[_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
 

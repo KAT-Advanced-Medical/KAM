@@ -43,7 +43,7 @@ class CfgMagazines {
         picture = QPATHTOF(ui\icon_Pervitin.paa);
 
         ammo = "";
-        count = 6;
+        count = 8;
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
