@@ -19,3 +19,39 @@
 ["kat_PainkillerItem", "kat_Painkiller"] call ACEFUNC(common,registerItemReplacement);
 ["kat_CarbonateItem", "kat_Carbonate"] call ACEFUNC(common,registerItemReplacement);
 ["kat_PervitinItem", "kat_Pervitin"] call ACEFUNC(common,registerItemReplacement);
+
+
+["ace_treatmentSucceded", {
+    params ["_medic", "_patient", "_bodyPart", "_classname"];
+    if (!local _patient) exitWith {["ace_treatmentSucceded", _this, _patient] call CBA_fnc_targetEvent};
+    if (_classname == "Epinephrine") then {
+        [_medic, _patient] call ace_medical_treatment_fnc_cprSuccess;
+        _patient setVariable [QGVAR(Epinephrine), 1, true];
+
+		if (ACEGVAR(advanced_fatigue,enabled)) then {
+			params ["_patient"];
+			ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + 1000;
+			["EDF", 0.5] call ace_advanced_fatigue_fnc_addDutyFactor;
+
+			[{
+				params ["_patient"];
+				["EDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
+			},
+			[_patient],
+			120] call CBA_fnc_waitAndExecute;
+		
+		} else {
+			
+			params ["_patient"];
+			_patient setAnimSpeedCoef 1.2;
+			_patient setStamina 180;
+			
+			[{
+				params ["_patient"];
+				_patient setAnimSpeedCoef 1;
+			},
+			[_patient],
+			120] call CBA_fnc_waitAndExecute;
+		};
+    };
+}] call CBA_fnc_addEventHandler;
