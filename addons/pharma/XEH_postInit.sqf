@@ -25,9 +25,7 @@
     params ["_medic", "_patient", "_bodyPart", "_classname"];
     if (!local _patient) exitWith {["ace_treatmentSucceded", _this, _patient] call CBA_fnc_targetEvent};
     if (_classname == "Epinephrine") then {
-        [_medic, _patient] call ace_medical_treatment_fnc_cprSuccess;
-        _patient setVariable [QGVAR(Epinephrine), 1, true];
-
+		
 		if (ACEGVAR(advanced_fatigue,enabled)) then {
 			params ["_patient"];
 			ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + 1000;
