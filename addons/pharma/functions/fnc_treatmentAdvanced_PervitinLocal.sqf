@@ -88,7 +88,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	/// ACE Fatigue Weapon Sway
 
-	if (isNil "QGVAR(originalSwayFactor)")    then {
+	if (isNil QGVAR(originalSwayFactor))    then {
 		QGVAR(originalSwayFactor) = ace_advanced_fatigue_swayFactor;};
 
 
