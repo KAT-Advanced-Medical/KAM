@@ -209,7 +209,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Ketamine);
         treatmentTime = QGVAR(treatmentTime_Ketamine);
         items[] = {"kat_ketamine"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(treatmentAdvanced_Ketamine);
     };
     class Fentanyl: EACA {
         displayName = CSTRING(Take_Fentanyl);
@@ -218,7 +218,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Fentanyl);
         treatmentTime = QGVAR(treatmentTime_Fentanyl);
         items[] = {"kat_fentanyl"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(treatmentAdvanced_Fentanyl);
     };
     class Nalbuphine: EACA {
         displayName = CSTRING(Take_Nalbuphine);

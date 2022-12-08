@@ -307,7 +307,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
     { 
         params ["_patient"];
 
-        ["ChromAberration", 200, [ 0.05, 0.05, true ], _patient] spawn {
+        ["ChromAberration", 200, [ 0.03, 0.03, true ], _patient] spawn {
 
             params["_name", "_priority", "_effect", "_patient"];
             private "_handle";
