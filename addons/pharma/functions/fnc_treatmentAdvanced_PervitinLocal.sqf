@@ -38,7 +38,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		["PDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
 		[LLSTRING(Pervitin_mid), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
-	[_patient], 120] call CBA_fnc_waitAndExecute; /// 2m
+	[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
 
 
 	[{
@@ -48,7 +48,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		["PDF", 0.4] call ace_advanced_fatigue_fnc_addDutyFactor;
 		[LLSTRING(Pervitin_mid2), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
-	[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
+	[_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
 
 
 	[{

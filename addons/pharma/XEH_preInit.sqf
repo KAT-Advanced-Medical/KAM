@@ -271,6 +271,25 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Caffeine Settings Category
+[
+    QGVAR(medLvl_Caffeine),
+    "LIST",
+    [LLSTRING(medLvl_Caffeine)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Caffeine)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_Caffeine),
+    "SLIDER",
+    [LLSTRING(treatmentTime_Caffeine)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Caffeine)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // TXA Settings Category
 [
     QGVAR(medLvl_TXA),

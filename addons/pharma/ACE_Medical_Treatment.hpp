@@ -199,6 +199,17 @@ class ADDON {
             maxDose = 2;
             incompatibleMedication[] = {};
             viscosityChange = 5;
+        };
+        class Caffeine {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 5};
+            hrIncreaseNormal[] = {5, 10};
+            hrIncreaseHigh[] = {5, 15};
+            timeInSystem = 2700;
+            timeTillMaxEffect = 5;
+            maxDose = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
         }
     };
 };

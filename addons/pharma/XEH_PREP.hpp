@@ -17,6 +17,8 @@ PREP(treatmentAdvanced_Amiodarone);
 PREP(treatmentAdvanced_AmiodaroneLocal);
 PREP(treatmentAdvanced_Atropine);
 PREP(treatmentAdvanced_AtropineLocal);
+PREP(treatmentAdvanced_Caffeine);
+PREP(treatmentAdvanced_CaffeineLocal);
 PREP(treatmentAdvanced_Carbonate);
 PREP(treatmentAdvanced_CarbonateLocal);
 PREP(treatmentAdvanced_Dialysis);

@@ -1379,6 +1379,14 @@
             <English>Medical level required for Pervitin</English>
             <German>Erforderliches medizinisches Level für die Gabe von Pervitin</German>
         </Key>
+        <Key ID="STR_kat_pharma_treatmentTime_Caffeine">
+            <English>Treatment time for Caffeine</English>
+            <German>Anwendungszeit für Koffein</German>
+        </Key>
+        <Key ID="STR_kat_pharma_medLvl_Caffeine">
+            <English>Medical level required for Caffeine</English>
+            <German>Erforderliches medizinisches Level für die Gabe von Koffein</German>
+        </Key>
         <Key ID="STR_kat_pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
             <Polish>Poziom wyszkolenia medycznego dla TXA</Polish>
@@ -1791,6 +1799,10 @@
             <English>Pervitin Settings</English>
             <German>Pervitin Einstellungen </German>
         </Key>
+        <Key ID="STR_kat_pharma_SubCategory_Caffeine">
+            <English>Caffeine Settings</English>
+            <German>Koffein Einstellungen </German>
+        </Key>
         <Key ID="STR_kat_pharma_SubCategory_TXA">
             <English>TXA Settings</English>
             <Polish>Ustawienia TXA</Polish>
@@ -2190,6 +2202,18 @@
         <Key ID="STR_kat_pharma_Pervitin_chrom3">
             <English>Your head starts to clear up and you stop twitching...</English>
             <German>Dein Kopf wird klarer und du hörst auf zu zucken...</German>
+        </Key>
+        <Key ID="STR_kat_pharma_Caffeine_Bottle_Display">
+            <English>Caffeine bottle</English>
+            <German>Koffein Kapsel</German>
+        </Key>
+        <Key ID="STR_kat_pharma_Caffeine_Bottle_DescShort">
+            <English>Keeps you awake</English>
+            <German>Hällt dich wach</German>
+        </Key>
+        <Key ID="STR_kat_pharma_Take_Caffeine">
+            <English>Take Caffeine</English>
+            <German>Koffein einnehmen</German>
         </Key>
         <Key ID="STR_kat_pharma_EACA_DescShort">
             <English>Encourages clot formation</English>

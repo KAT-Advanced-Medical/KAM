@@ -83,6 +83,19 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_Pervitin);
         sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),6,1,15}};
     };
+    class Caffeine: Morphine {
+        displayName = CSTRING(Take_Caffeine);
+        displayNameProgress = CSTRING(Using);
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_Caffeine);
+        treatmentTime = QGVAR(treatmentTime_Caffeine);
+        items[] = {};
+        litter[] = {};
+        condition = "[_medic, 'kat_Caffeine'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Caffeine'] call ace_common_fnc_hasMagazine";
+        callbackSuccess = QFUNC(treatmentAdvanced_Caffeine);
+        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),6,1,15}};
+    };
     class Naloxone: Carbonate {
         displayName = CSTRING(Take_Naloxone);
         allowedSelections[] = {"Head"};

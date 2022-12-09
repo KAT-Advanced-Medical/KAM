@@ -49,4 +49,20 @@ class CfgMagazines {
         lastRoundsTracer = 0;
         mass = 1;
     };
+        class kat_Caffeine: CA_Magazine {
+        author = "Miss Heda";
+        
+        scope = 2;
+        displayName = CSTRING(Caffeine_Bottle_Display);
+        descriptionShort = CSTRING(Caffeine_Bottle_DescShort);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        picture = QPATHTOF(ui\icon_Caffeine.paa);
+
+        ammo = "";
+        count = 15;
+        initSpeed = 0;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+        mass = 1;
+    };
 };
