@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: MiszczuZPolski edited by Miss Heda
- * Starts Lorazepam treatment
+ * Starts Ketamine treatment
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", "Lorazepam", objNull, "kat_lorazepam"] call kat_pharma_fnc_treatmentAdvanced_Lorazepam;
+ * [player, cursorObject, "RightArm", "Ketamine", objNull, "kat_ketamine"] call kat_pharma_fnc_treatmentAdvanced_Ketamine;
  *
  * Public: No
  */

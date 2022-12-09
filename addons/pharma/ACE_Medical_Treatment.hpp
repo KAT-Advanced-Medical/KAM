@@ -210,6 +210,6 @@ class ADDON {
             maxDose = 6;
             incompatibleMedication[] = {};
             viscosityChange = 0;
-        }
+        };
     };
 };

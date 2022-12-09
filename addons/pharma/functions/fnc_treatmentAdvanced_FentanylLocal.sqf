@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * -
+* [player] call kat_pharma_fnc_treatmentAdvanced_FentanylLocal;
  *
  * Public: No
  */

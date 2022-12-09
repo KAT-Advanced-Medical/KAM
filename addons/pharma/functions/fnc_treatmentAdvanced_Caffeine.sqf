@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Miss Heda
- * Begins Pervitin Treatment
+ * Begins Caffeine Treatment
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", "Pervitin", objNull, "kat_pervitin"] call kat_pharma_fnc_treatmentAdvanced_Pervitin;
+ * [player, cursorObject, "RightArm", "Pervitin", objNull, "kat_pervitin"] call kat_pharma_fnc_treatmentAdvanced_Caffeine;
  *
  * Public: No
  */
