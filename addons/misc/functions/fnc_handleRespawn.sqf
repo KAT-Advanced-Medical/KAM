@@ -201,3 +201,42 @@ if (EGVAR(pharma,coagulation)) then {
         };
     }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
+
+/// Clear Stamina 
+if (ACEGVAR(advanced_fatigue,enabled)) then {
+    
+    ["PDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
+	["EDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
+
+} else {
+
+    params ["_patient"];
+
+    _patient enableStamina true;
+	_patient setAnimSpeedCoef 1;
+
+};
+
+/// Clear chroma effect
+
+["ChromAberration", 200, [ 0, 0, true ]] spawn
+{
+    params["_name", "_priority", "_effect", "_handle"];
+    while
+    {
+        _handle = ppEffectCreate[_name, _priority];
+        _handle < 0
+    }
+    do
+    {
+        _priority = _priority + 1;
+    };
+    _handle ppEffectEnable true;
+    _handle ppEffectAdjust _effect;
+    _handle ppEffectCommit 0;
+    waitUntil{ppEffectCommitted _handle};
+    _handle ppEffectEnable false;
+    ppEffectDestroy _handle;
+};
+
+/// Terminate script
