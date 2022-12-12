@@ -202,11 +202,12 @@ if (EGVAR(pharma,coagulation)) then {
     }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
 
-/// Clear Stamina 
+/// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     
     ["PDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
 	["EDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
+    ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor);
 
 } else {
 
@@ -214,6 +215,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
     _patient enableStamina true;
 	_patient setAnimSpeedCoef 1;
+    _patient setCustomAimCoef 1;
 
 };
 
@@ -234,6 +236,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
     _handle ppEffectEnable true;
     _handle ppEffectAdjust _effect;
     _handle ppEffectCommit 0;
+    addCamShake[0, 0, 50];
     waitUntil{ppEffectCommitted _handle};
     _handle ppEffectEnable false;
     ppEffectDestroy _handle;
