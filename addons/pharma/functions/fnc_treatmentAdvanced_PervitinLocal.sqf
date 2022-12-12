@@ -25,6 +25,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + 3000;
 		["PDF", 0] call ace_advanced_fatigue_fnc_addDutyFactor;
 		[LLSTRING(Pervitin_start), 2, _patient] call ACEFUNC(common,displayTextStructured); 
@@ -35,6 +36,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		["PDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
 		[LLSTRING(Pervitin_mid), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
@@ -44,6 +46,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + 3000;
 		["PDF", 0.4] call ace_advanced_fatigue_fnc_addDutyFactor;
 		[LLSTRING(Pervitin_mid2), 2, _patient] call ACEFUNC(common,displayTextStructured);
@@ -54,6 +57,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + 3000;
 		["PDF", 0.6] call ace_advanced_fatigue_fnc_addDutyFactor;
 		[LLSTRING(Pervitin_mid3), 2, _patient] call ACEFUNC(common,displayTextStructured);
@@ -64,6 +68,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		["PDF", 2] call ace_advanced_fatigue_fnc_addDutyFactor;
 		[LLSTRING(Pervitin_mid4), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
@@ -73,6 +78,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		["PDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
 		[LLSTRING(Pervitin_end), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
@@ -87,6 +93,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 0.3;
 	},
 	[_patient], 15] call CBA_fnc_waitAndExecute;
@@ -94,6 +101,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 0.5 ;
 	},
 	[_patient], 60] call CBA_fnc_waitAndExecute;
@@ -101,6 +109,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 1;
 	},
 	[_patient], 90] call CBA_fnc_waitAndExecute;
@@ -108,6 +117,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.3) min 2;
 	},
 	[_patient], 120] call CBA_fnc_waitAndExecute; /// 2m
@@ -115,6 +125,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.5) min 2;
 	},
 	[_patient], 150] call CBA_fnc_waitAndExecute;
@@ -122,6 +133,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.7) min 2;
 	},
 	[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
@@ -129,6 +141,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 2) min 2;
 	},
 	[_patient], 210] call CBA_fnc_waitAndExecute;
@@ -136,6 +149,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.7) min 2;
 	},
 	[_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
@@ -143,6 +157,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.4) min 2;
 	},
 	[_patient], 300] call CBA_fnc_waitAndExecute; /// 5m
@@ -150,6 +165,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.2) min 2;
 	},
 	[_patient], 420] call CBA_fnc_waitAndExecute; /// 7m
@@ -157,6 +173,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor);
 	},
 	[_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
@@ -167,6 +184,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		_patient setAnimSpeedCoef 1.2;
 		_patient enableStamina false;
 		[LLSTRING(Pervitin_start), 2, _patient] call ACEFUNC(common,displayTextStructured);
@@ -177,6 +195,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		_patient enableStamina true;
 		_patient setAnimSpeedCoef 1;
 		[LLSTRING(Pervitin_mid), 2, _patient] call ACEFUNC(common,displayTextStructured);
@@ -187,6 +206,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		_patient setStamina(getStamina _patient + 300);
 		[LLSTRING(Pervitin_mid2), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
@@ -196,6 +216,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		_patient setStamina(getStamina _patient + 150);
 		[LLSTRING(Pervitin_mid3), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
@@ -205,6 +226,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		_patient setStamina(getStamina _patient - 60);
 		[LLSTRING(Pervitin_end), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
@@ -215,6 +237,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		_patient setCustomAimCoef 1;
 		_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.7;
 		[LLSTRING(Pervitin_WeaponSway), 2, _patient] call ACEFUNC(common,displayTextStructured);
@@ -223,18 +246,21 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.2;
 	},
 	[_patient], 60] call CBA_fnc_waitAndExecute;
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.5;
 	},
 	[_patient], 90] call CBA_fnc_waitAndExecute;
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.3;
 	},
 	[_patient], 120] call CBA_fnc_waitAndExecute; /// 2m
@@ -242,6 +268,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.5;
 	},
 	[_patient], 150] call CBA_fnc_waitAndExecute;
@@ -249,6 +276,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{
 		params ["_patient"];
+		if !(alive _patient) exitWith {};
 		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.2;
 	},
 	[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
@@ -257,6 +285,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.3;
 		[LLSTRING(Pervitin_WeaponSway2), 2, _patient] call ACEFUNC(common,displayTextStructured);
 
@@ -267,6 +296,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.3;
 
 	},
@@ -276,6 +306,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.3;
 
 	},
@@ -285,6 +316,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.2;
 
 	},
@@ -294,6 +326,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	[{
 		params ["_patient"];
 
+		if !(alive _patient) exitWith {};
 		_patient setCustomAimCoef 1;
 		[LLSTRING(Pervitin_WeaponSway3), 2, _patient] call ACEFUNC(common,displayTextStructured);
 
@@ -307,6 +340,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
     { 
         params ["_patient"];
 
+		if !(alive _patient) exitWith {};
         ["ChromAberration", 200, [ 0.03, 0.03, true ], _patient] spawn {
 
             params["_name", "_priority", "_effect", "_patient"];
@@ -326,6 +360,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
                 {
                     params["_name", "_priority", "_effect", "_handle","_patient"];
 
+					if !(alive _patient) exitWith {};
                     [LLSTRING(Pervitin_chrom2), 2, _patient] call ACEFUNC(common,displayTextStructured);
                     addCamShake[0.7, 240, 2]; /// Wearoff after 9m
 					[

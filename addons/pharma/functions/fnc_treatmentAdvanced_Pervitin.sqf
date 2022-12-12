@@ -28,3 +28,4 @@ params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 [_medic, 'kat_Pervitin'] call FUNC(removeItemfromMag);
 [QGVAR(medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
 [QGVAR(pervitinLocal), _patient, _patient] call CBA_fnc_targetEvent;
+

@@ -31,6 +31,7 @@
 		
 		if (ACEGVAR(advanced_fatigue,enabled)) then {
 			params ["_patient"];
+			if !(alive _patient) exitWith {};
 			ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + 300;
 			["EDF", 0.5] call ace_advanced_fatigue_fnc_addDutyFactor;
 
@@ -44,6 +45,8 @@
 		} else {
 			
 			params ["_patient"];
+
+			if !(alive _patient) exitWith {};
 			_patient setAnimSpeedCoef 1.2;
 			_patient setStamina 180;
 			

@@ -19,7 +19,8 @@
 [
     { 
         params ["_patient"];
-
+        
+        if !(alive _patient) exitWith {};
         ["ChromAberration", 200, [ 0.03, 0.03, true ], _patient] spawn {
 
             params["_name", "_priority", "_effect", "_patient"];
