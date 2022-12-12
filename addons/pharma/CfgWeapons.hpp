@@ -25,7 +25,6 @@ class CfgWeapons {
         author = "Miss Heda";
         displayName = CSTRING(Pervitin_Capsule_Display);
         picture = QPATHTOF(ui\icon_Pervitin.paa);
-        model = QPATHTOF(models\pervitin\pervitin.p3d);
         descriptionShort = CSTRING(Pervitin_Capsule_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;
@@ -36,7 +35,6 @@ class CfgWeapons {
         author = "Miss Heda";
         displayName = CSTRING(Caffeine_Bottle_Display);
         picture = QPATHTOF(ui\icon_Caffeine.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Caffeine_Bottle_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;

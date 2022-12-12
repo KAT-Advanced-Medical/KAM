@@ -55,7 +55,7 @@ class CfgMagazines {
         scope = 2;
         displayName = CSTRING(Caffeine_Bottle_Display);
         descriptionShort = CSTRING(Caffeine_Bottle_DescShort);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\caffeine\caffeine.p3d);
         picture = QPATHTOF(ui\icon_Caffeine.paa);
 
         ammo = "";
