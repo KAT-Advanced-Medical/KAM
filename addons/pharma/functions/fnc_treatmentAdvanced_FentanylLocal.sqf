@@ -43,7 +43,7 @@
 					_handle ppEffectEnable false;
 					ppEffectDestroy _handle;
 				},
-				[_handle, _patient]
+				[_handle]
             ] call CBA_fnc_waitUntilAndExecute;
         };
     },

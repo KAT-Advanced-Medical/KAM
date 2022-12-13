@@ -207,11 +207,9 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
     
     ["PDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
 	["EDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
-    ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor);
+    ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
 
 } else {
-
-    params ["_patient"];
 
     _patient enableStamina true;
 	_patient setAnimSpeedCoef 1;
@@ -241,5 +239,3 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
     _handle ppEffectEnable false;
     ppEffectDestroy _handle;
 };
-
-/// Terminate script
