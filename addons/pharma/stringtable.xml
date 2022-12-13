@@ -1375,17 +1375,9 @@
             <English>Treatment time for Pervitin</English>
             <German>Anwendungszeit für Pervitin</German>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Pervitin">
-            <English>Medical level required for Pervitin</English>
-            <German>Erforderliches medizinisches Level für die Gabe von Pervitin</German>
-        </Key>
         <Key ID="STR_kat_pharma_treatmentTime_Caffeine">
             <English>Treatment time for Caffeine</English>
             <German>Anwendungszeit für Koffein</German>
-        </Key>
-        <Key ID="STR_kat_pharma_medLvl_Caffeine">
-            <English>Medical level required for Caffeine</English>
-            <German>Erforderliches medizinisches Level für die Gabe von Koffein</German>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
@@ -2214,6 +2206,10 @@
         <Key ID="STR_kat_pharma_Take_Caffeine">
             <English>Take Caffeine</English>
             <German>Koffein einnehmen</German>
+        </Key>
+        <Key ID="STR_kat_pharma_NoSelfTreatment">
+            <English>You can only use that on yourself!</English>
+            <German>Du kannst das nur selbst benutzen!</German>
         </Key>
         <Key ID="STR_kat_pharma_EACA_DescShort">
             <English>Encourages clot formation</English>

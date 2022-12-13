@@ -75,7 +75,6 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        medicRequired = QGVAR(medLvl_Pervitin);
         treatmentTime = QGVAR(treatmentTime_Pervitin);
         items[] = {};
         litter[] = {};
@@ -88,7 +87,6 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        medicRequired = QGVAR(medLvl_Caffeine);
         treatmentTime = QGVAR(treatmentTime_Caffeine);
         items[] = {};
         litter[] = {};

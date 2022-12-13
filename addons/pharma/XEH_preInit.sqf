@@ -254,15 +254,6 @@ PREP_RECOMPILE_END;
 
 // Pervitin Settings Category
 [
-    QGVAR(medLvl_Pervitin),
-    "LIST",
-    [LLSTRING(medLvl_Pervitin)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
     QGVAR(treatmentTime_Pervitin),
     "SLIDER",
     [LLSTRING(treatmentTime_Pervitin)],
@@ -272,15 +263,6 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 // Caffeine Settings Category
-[
-    QGVAR(medLvl_Caffeine),
-    "LIST",
-    [LLSTRING(medLvl_Caffeine)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Caffeine)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-    true
-] call CBA_Settings_fnc_init;
-
 [
     QGVAR(treatmentTime_Caffeine),
     "SLIDER",

@@ -22,9 +22,16 @@
 
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
-[_patient, _classname] call ACEFUNC(medical_treatment,addToTriageCard);
-[_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), _classname]] call ACEFUNC(medical_treatment,addToLog);
+if (ACE_Player != _patient) then {
 
-[_medic, 'kat_Caffeine'] call FUNC(removeItemfromMag);
-[QGVAR(medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
-[QGVAR(caffeineLocal), _patient, _patient] call CBA_fnc_targetEvent;
+	[LLSTRING(NoSelfTreatment), 2, _medic] call ACEFUNC(common,displayTextStructured);
+
+} else {
+
+	[_patient, _classname] call ACEFUNC(medical_treatment,addToTriageCard);
+	[_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), _classname]] call ACEFUNC(medical_treatment,addToLog);
+
+	[_medic, 'kat_Caffeine'] call FUNC(removeItemfromMag);
+	[QGVAR(medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+	[QGVAR(caffeineLocal), _patient, _patient] call CBA_fnc_targetEvent;
+};
