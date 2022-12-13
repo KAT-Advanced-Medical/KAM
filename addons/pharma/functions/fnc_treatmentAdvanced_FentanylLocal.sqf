@@ -24,7 +24,7 @@
         ["ChromAberration", 200, [ 0.04, 0.04, true ], _patient] spawn {
 
             params["_name", "_priority", "_effect", "_patient"];
-            private "_handle";
+            _patient "_handle";
             while {
                 _handle = ppEffectCreate[_name, _priority];
                 _handle < 0
