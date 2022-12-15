@@ -560,7 +560,7 @@
             <French>Chance de fracture simple</French>
             <Korean>단순 골절 확률</Korean>
             <German>Chance auf einfachen Bruch</German>
-            <Japanese>閉鎖骨折の確率</Japanese>
+            <Japanese>単純骨折の確率</Japanese>
             <Spanish>Probabilidad de fractura simple</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_CHANCE_DESC">
@@ -572,7 +572,7 @@
             <French>Règle la chance de fractures simples. Règle également la chance de fractures complexes (60% simple = 40% complexe)</French>
             <Korean>단순 골절의 확률을 설정합니다. 또한 복잡한 골절의 확률을 설정합니다. (단순 60% = 복잡 40%)</Korean>
             <German>Legt die Wahrscheinlichkeit für einfache Frakturen fest. Legt auch die Wahrscheinlichkeit für komplexe Frakturen fest (60% einfach = 40% komplex).</German>
-            <Japanese>閉鎖骨折の可能性を設定します。また、開放骨折の可能性を設定します (閉鎖骨折60% = 開放骨折40%)</Japanese>
+            <Japanese>単純骨折の可能性を設定します。また、開放骨折の可能性を設定します (単純骨折60% = 開放骨折40%)</Japanese>
             <Spanish>Establece la probabilidad para fracturas simples. También establece la probabilidad de fracturas complejas (60% Simple - 40% Compleja)</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
@@ -896,7 +896,7 @@
             <French>Fracture simple</French>
             <Korean>단순 골절</Korean>
             <German>Einfache Fraktur</German>
-            <Japanese>閉鎖骨折</Japanese>
+            <Japanese>単純骨折</Japanese>
             <Spanish>Fractura Simple</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_uncon_requieredForActions">
