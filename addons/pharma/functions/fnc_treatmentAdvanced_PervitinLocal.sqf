@@ -18,6 +18,7 @@
 
 params ["_patient"];
 
+if (ACE_Player != _patient) exitWith {};
 
 /// ACE Fatigue 
 if (ACEGVAR(advanced_fatigue,enabled)) then {
@@ -387,7 +388,6 @@ if (GVAR(chromatic_aberration_checkbox_pervitin)) then {
 					275 /// Trigger after 5m
 				] call CBA_fnc_waitAndExecute;
 			};
-
 		},
 		[_patient],
 		25 ///25s chroma start

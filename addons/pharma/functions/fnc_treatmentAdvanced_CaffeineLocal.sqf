@@ -16,8 +16,9 @@
 
 params ["_patient"];
 
-/// ACE Fatigue 
+if (ACE_Player != _patient) exitWith {};
 
+/// ACE Fatigue 
 if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	[{

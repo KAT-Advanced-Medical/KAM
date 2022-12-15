@@ -255,11 +255,20 @@ PREP_RECOMPILE_END;
 // Pervitin Settings Category
 
 [
+    QGVAR(medLvl_Pervitin),
+    "LIST",
+    [LLSTRING(medLvl_Pervitin)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(treatmentTime_Pervitin),
     "SLIDER",
     [LLSTRING(treatmentTime_Pervitin)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
-    [0.1, 10, 7, 1],
+    [0.1, 10, 5, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -288,16 +297,6 @@ PREP_RECOMPILE_END;
 	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
 	[true],
 	true
-] call CBA_Settings_fnc_init;
-
-// Caffeine Settings Category
-[
-    QGVAR(treatmentTime_Caffeine),
-    "SLIDER",
-    [LLSTRING(treatmentTime_Caffeine)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Caffeine)],
-    [0.1, 10, 7, 1],
-    true
 ] call CBA_Settings_fnc_init;
 
 // TXA Settings Category

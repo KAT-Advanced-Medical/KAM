@@ -75,6 +75,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_Pervitin);
         treatmentTime = QGVAR(treatmentTime_Pervitin);
         items[] = {};
         litter[] = {};
@@ -87,7 +88,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        treatmentTime = QGVAR(treatmentTime_Caffeine);
+        treatmentTime = 5;
         items[] = {};
         litter[] = {};
         condition = "[_medic, 'kat_Caffeine'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Caffeine'] call ace_common_fnc_hasMagazine";
