@@ -16,35 +16,38 @@
 
 
 /// ChromAberration effect
-[
-    { 
-        params ["_patient"];
 
-        if !(alive _patient) exitWith {};
-        ["ChromAberration", 200, [ 0.04, 0.04, true ], _patient] spawn {
+if (GVAR(chromatic_aberration_fentanyl)) then {
+    [
+        { 
+            params ["_patient"];
 
-            params["_name", "_priority", "_effect", "_patient"];
-            private _handle;
-            while {
-                _handle = ppEffectCreate[_name, _priority];
-                _handle < 0
-            } do {
-                _priority = _priority + 1;
+            if !(alive _patient) exitWith {};
+            ["ChromAberration", 200, [ 0.02, 0.02, true ], _patient] spawn {
+
+                params["_name", "_priority", "_effect", "_patient"];
+                private _handle;
+                while {
+                    _handle = ppEffectCreate[_name, _priority];
+                    _handle < 0
+                } do {
+                    _priority = _priority + 1;
+                };
+                _handle ppEffectEnable true;
+                _handle ppEffectAdjust _effect;
+                _handle ppEffectCommit 660; /// Wearoff after 13m (after injection)
+
+                [
+                    { 	params ["_handle"];
+                        ppEffectCommitted _handle;
+                    },
+                    {	params ["_handle"];
+                        _handle ppEffectEnable false;
+                        ppEffectDestroy _handle;
+                    },
+                    [_handle]
+                ] call CBA_fnc_waitUntilAndExecute;
             };
-            _handle ppEffectEnable true;
-            _handle ppEffectAdjust _effect;
-            _handle ppEffectCommit 660; /// Wearoff after 13m (after injection)
-
-            [
-				{ 	params ["_handle"];
-					ppEffectCommitted _handle;
-				},
-				{	params ["_handle"];
-					_handle ppEffectEnable false;
-					ppEffectDestroy _handle;
-				},
-				[_handle]
-            ] call CBA_fnc_waitUntilAndExecute;
-        };
-    },
-[_patient],120] call CBA_fnc_waitAndExecute; /// chroma start 2m
+        },
+    [_patient],120] call CBA_fnc_waitAndExecute; /// chroma start 2m
+};

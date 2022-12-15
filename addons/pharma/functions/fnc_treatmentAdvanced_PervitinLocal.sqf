@@ -87,96 +87,99 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	/// ACE Fatigue Weapon Sway
 
-	if (isNil GVAR(originalSwayFactor)) then {
-		GVAR(originalSwayFactor) = ace_advanced_fatigue_swayFactor;
+	if (GVAR(weapon_sway_pervitin)) then {
+
+		if (isNil GVAR(originalSwayFactor)) then {
+			GVAR(originalSwayFactor) = ace_advanced_fatigue_swayFactor;
+		};
+
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 0.3;
+		},
+		[_patient], 15] call CBA_fnc_waitAndExecute;
+
+
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 0.5 ;
+		},
+		[_patient], 60] call CBA_fnc_waitAndExecute;
+
+		
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 1;
+		},
+		[_patient], 90] call CBA_fnc_waitAndExecute;
+
+
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.3) min 2;
+		},
+		[_patient], 120] call CBA_fnc_waitAndExecute; /// 2m
+
+
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.5) min 2;
+		},
+		[_patient], 150] call CBA_fnc_waitAndExecute;
+
+
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.7) min 2;
+		},
+		[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
+
+
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 2) min 2;
+		},
+		[_patient], 210] call CBA_fnc_waitAndExecute;
+
+
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.7) min 2;
+		},
+		[_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
+
+
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.4) min 2;
+		},
+		[_patient], 300] call CBA_fnc_waitAndExecute; /// 5m
+
+
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.2) min 2;
+		},
+		[_patient], 420] call CBA_fnc_waitAndExecute; /// 7m
+
+
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor);
+		},
+		[_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
 	};
-
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 0.3;
-	},
-	[_patient], 15] call CBA_fnc_waitAndExecute;
-
-
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 0.5 ;
-	},
-	[_patient], 60] call CBA_fnc_waitAndExecute;
-
-	
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 1;
-	},
-	[_patient], 90] call CBA_fnc_waitAndExecute;
-
-
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.3) min 2;
-	},
-	[_patient], 120] call CBA_fnc_waitAndExecute; /// 2m
-
-
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.5) min 2;
-	},
-	[_patient], 150] call CBA_fnc_waitAndExecute;
-
-
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.7) min 2;
-	},
-	[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
-
-
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 2) min 2;
-	},
-	[_patient], 210] call CBA_fnc_waitAndExecute;
-
-
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.7) min 2;
-	},
-	[_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
-
-
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.4) min 2;
-	},
-	[_patient], 300] call CBA_fnc_waitAndExecute; /// 5m
-
-
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.2) min 2;
-	},
-	[_patient], 420] call CBA_fnc_waitAndExecute; /// 7m
-
-
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor);
-	},
-	[_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
 
 } else {
 	/// Normal Stamina & Weapon Sway
@@ -234,154 +237,159 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 	///Weapon sway normal arma
 
-	[{
-		params ["_patient"];
+	if (GVAR(weapon_sway_pervitin)) then {
 
-		if !(alive _patient) exitWith {};
-		_patient setCustomAimCoef 1;
-		_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.7;
-		[LLSTRING(Pervitin_WeaponSway), 2, _patient] call ACEFUNC(common,displayTextStructured);
-	},
-	[_patient], 15] call CBA_fnc_waitAndExecute;
+		[{
+			params ["_patient"];
 
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.2;
-	},
-	[_patient], 60] call CBA_fnc_waitAndExecute;
+			if !(alive _patient) exitWith {};
+			_patient setCustomAimCoef 1;
+			_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.7;
+			[LLSTRING(Pervitin_WeaponSway), 2, _patient] call ACEFUNC(common,displayTextStructured);
+		},
+		[_patient], 15] call CBA_fnc_waitAndExecute;
 
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.5;
-	},
-	[_patient], 90] call CBA_fnc_waitAndExecute;
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.2;
+		},
+		[_patient], 60] call CBA_fnc_waitAndExecute;
 
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.3;
-	},
-	[_patient], 120] call CBA_fnc_waitAndExecute; /// 2m
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.5;
+		},
+		[_patient], 90] call CBA_fnc_waitAndExecute;
 
-
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.5;
-	},
-	[_patient], 150] call CBA_fnc_waitAndExecute;
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.3;
+		},
+		[_patient], 120] call CBA_fnc_waitAndExecute; /// 2m
 
 
-	[{
-		params ["_patient"];
-		if !(alive _patient) exitWith {};
-		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.2;
-	},
-	[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.5;
+		},
+		[_patient], 150] call CBA_fnc_waitAndExecute;
 
 
-	[{
-		params ["_patient"];
-
-		if !(alive _patient) exitWith {};
-		_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.3;
-		[LLSTRING(Pervitin_WeaponSway2), 2, _patient] call ACEFUNC(common,displayTextStructured);
-
-	},
-	[_patient], 210] call CBA_fnc_waitAndExecute;
+		[{
+			params ["_patient"];
+			if !(alive _patient) exitWith {};
+			_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.2;
+		},
+		[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
 
 
-	[{
-		params ["_patient"];
+		[{
+			params ["_patient"];
 
-		if !(alive _patient) exitWith {};
-		_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.3;
+			if !(alive _patient) exitWith {};
+			_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.3;
+			[LLSTRING(Pervitin_WeaponSway2), 2, _patient] call ACEFUNC(common,displayTextStructured);
 
-	},
-	[_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
-
-
-	[{
-		params ["_patient"];
-
-		if !(alive _patient) exitWith {};
-		_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.3;
-
-	},
-	[_patient], 300] call CBA_fnc_waitAndExecute; /// 5m
+		},
+		[_patient], 210] call CBA_fnc_waitAndExecute;
 
 
-	[{
-		params ["_patient"];
+		[{
+			params ["_patient"];
 
-		if !(alive _patient) exitWith {};
-		_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.2;
+			if !(alive _patient) exitWith {};
+			_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.3;
 
-	},
-	[_patient], 420] call CBA_fnc_waitAndExecute; /// 7m
+		},
+		[_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
 
 
-	[{
-		params ["_patient"];
+		[{
+			params ["_patient"];
 
-		if !(alive _patient) exitWith {};
-		_patient setCustomAimCoef 1;
-		[LLSTRING(Pervitin_WeaponSway3), 2, _patient] call ACEFUNC(common,displayTextStructured);
+			if !(alive _patient) exitWith {};
+			_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.3;
 
-	},
-	[_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
+		},
+		[_patient], 300] call CBA_fnc_waitAndExecute; /// 5m
+
+
+		[{
+			params ["_patient"];
+
+			if !(alive _patient) exitWith {};
+			_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.2;
+
+		},
+		[_patient], 420] call CBA_fnc_waitAndExecute; /// 7m
+
+
+		[{
+			params ["_patient"];
+
+			if !(alive _patient) exitWith {};
+			_patient setCustomAimCoef 1;
+			[LLSTRING(Pervitin_WeaponSway3), 2, _patient] call ACEFUNC(common,displayTextStructured);
+
+		},
+		[_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
+	};
 };
 
-
 /// ChromAberration effect
-[
-    { 
-        params ["_patient"];
 
-		if !(alive _patient) exitWith {};
-        ["ChromAberration", 200, [ 0.03, 0.03, true ], _patient] spawn {
+if (GVAR(chromatic_aberration_pervitin)) then {
+	[
+		{
+			params ["_patient"];
 
-            params["_name", "_priority", "_effect", "_patient"];
-            private "_handle";
-            while {
-                _handle = ppEffectCreate[_name, _priority];
-                _handle < 0
-            } do {
-                _priority = _priority + 1;
-            };
-            _handle ppEffectEnable true;
-            _handle ppEffectAdjust _effect;
-            _handle ppEffectCommit 515; /// Wearoff after 9m
-            [LLSTRING(Pervitin_chrom), 2, _patient] call ACEFUNC(common,displayTextStructured);
-            
-            [
-                {
-                    params["_name", "_priority", "_effect", "_handle","_patient"];
+			if !(alive _patient) exitWith {};
+			["ChromAberration", 200, [ 0.015, 0.015, true ], _patient] spawn {
 
-					if !(alive _patient) exitWith {};
-                    [LLSTRING(Pervitin_chrom2), 2, _patient] call ACEFUNC(common,displayTextStructured);
-                    addCamShake[0.7, 240, 2]; /// Wearoff after 9m
-					[
-						{ 	params ["_handle"];
-							ppEffectCommitted _handle;
-							
-						},
-						{	params ["_handle", "_patient"];
-							[LLSTRING(Pervitin_chrom3), 2, _patient] call ACEFUNC(common,displayTextStructured);
-							_handle ppEffectEnable false;
-							ppEffectDestroy _handle;
-						},
-						[_handle, _patient]
-                    ] call CBA_fnc_waitUntilAndExecute;
-                },
-                [_name, _priority, _effect, _handle, _patient],
-                275 /// Trigger after 5m
-            ] call CBA_fnc_waitAndExecute;
-        };
+				params["_name", "_priority", "_effect", "_patient"];
+				private "_handle";
+				while {
+					_handle = ppEffectCreate[_name, _priority];
+					_handle < 0
+				} do {
+					_priority = _priority + 1;
+				};
+				_handle ppEffectEnable true;
+				_handle ppEffectAdjust _effect;
+				_handle ppEffectCommit 515; /// Wearoff after 9m
+				[LLSTRING(Pervitin_chrom), 2, _patient] call ACEFUNC(common,displayTextStructured);
+				
+				[
+					{
+						params["_name", "_priority", "_effect", "_handle","_patient"];
 
-    },
-    [_patient],
-    25 ///chroma start
-] call CBA_fnc_waitAndExecute;
+						if !(alive _patient) exitWith {};
+						[LLSTRING(Pervitin_chrom2), 2, _patient] call ACEFUNC(common,displayTextStructured);
+						addCamShake[0.7, 240, 2]; /// Wearoff after 9m
+						[
+							{ 	params ["_handle"];
+								ppEffectCommitted _handle;
+								
+							},
+							{	params ["_handle", "_patient"];
+								[LLSTRING(Pervitin_chrom3), 2, _patient] call ACEFUNC(common,displayTextStructured);
+								_handle ppEffectEnable false;
+								ppEffectDestroy _handle;
+							},
+							[_handle, _patient]
+						] call CBA_fnc_waitUntilAndExecute;
+					},
+					[_name, _priority, _effect, _handle, _patient],
+					275 /// Trigger after 5m
+				] call CBA_fnc_waitAndExecute;
+			};
+
+		},
+		[_patient],
+		25 ///25s chroma start
+	] call CBA_fnc_waitAndExecute;
+};

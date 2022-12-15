@@ -1035,6 +1035,38 @@
             <Japanese>患者を刺激を与えるために訓練レベルを必要とさせます。</Japanese>
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
         </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Pervitin">
+            <English>Enable Chromatic Aberration</English>
+            <German>Aktiviere Chromatische Abweichungen</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Pervitin_DESC">
+            <English>Enables if pervitin should influance your vision with chromatic aberration</English>
+            <German>Aktiviert ob Pervitin deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Weapon_Sway_Pervitin">
+            <English>Enable Weapon Sway</English>
+            <German>Aktiviere Waffen Schwanken</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Weapon_Sway_Pervitin_DESC">
+            <English>Enables if pervitin should influance your weapon sway</English>
+            <German>Aktiviert ob Pervitin dein Waffen schwanken beinflussen soll</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Ketamine">
+            <English>Enable Chromatic Aberration</English>
+            <German>Aktiviere Chromatische Abweichungen</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Ketamine_DESC">
+            <English>Enables if ketamine should influance your vision with chromatic aberration</English>
+            <German>Aktiviert ob Ketamin deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Fentanyl">
+            <English>Enable Chromatic Aberration</English>
+            <German>Aktiviere Chromatische Abweichungen</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Fentanyl_DESC">
+            <English>Enables if fentanyl should influance your vision with chromatic aberration</English>
+            <German>Aktiviert ob Fentanyl deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+        </Key>
         <Key ID="STR_KAT_pharma_treatmentTime_Reorientation">
             <English>Treatment time for reorientation</English>
             <Polish>Czas cucenia</Polish>

@@ -262,6 +262,24 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+	QGVAR(chromatic_aberration_pervitin),
+	"CHECKBOX",
+	[LLSTRING(SETTING_Chromatic_Aberration_Pervitin), LLSTRING(SETTING_Chromatic_Aberration_Pervitin_DESC)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+	[true],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(weapon_sway_pervitin),
+	"CHECKBOX",
+	[LLSTRING(SETTING_Weapon_Sway_Pervitin), LLSTRING(SETTING_Weapon_Sway_Pervitin_DESC)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+	[true],
+	true
+] call CBA_Settings_fnc_init;
+
 // Caffeine Settings Category
 [
     QGVAR(treatmentTime_Caffeine),
@@ -443,6 +461,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+	QGVAR(chromatic_aberration_ketamine),
+	"CHECKBOX",
+	[LLSTRING(SETTING_Chromatic_Aberration_Ketamine), LLSTRING(SETTING_Chromatic_Aberration_Ketamine_DESC)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
+	[true],
+	true
+] call CBA_Settings_fnc_init;
+
 //Fentanyl Settings Category
 [
     QGVAR(medLvl_Fentanyl),
@@ -460,6 +487,15 @@ PREP_RECOMPILE_END;
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
     [0.1, 10, 7, 1],
     true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(chromatic_aberration_fentanyl),
+	"CHECKBOX",
+	[LLSTRING(SETTING_Chromatic_Aberration_Fentanyl), LLSTRING(SETTING_Chromatic_Aberration_Fentanyl_DESC)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
+	[true],
+	true
 ] call CBA_Settings_fnc_init;
 
 //Nalbuphine Settings Category

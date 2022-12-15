@@ -191,9 +191,9 @@ class ADDON {
         };
         class Pervitin {
             painReduce = 0.5;
-            hrIncreaseLow[] = {-10, 20};
-            hrIncreaseNormal[] = {-10, 35};
-            hrIncreaseHigh[] = {-10, 15};
+            hrIncreaseLow[] = {15, 25};
+            hrIncreaseNormal[] = {15, 30};
+            hrIncreaseHigh[] = {15, 25};
             timeInSystem = 600;
             timeTillMaxEffect = 5;
             maxDose = 2;
