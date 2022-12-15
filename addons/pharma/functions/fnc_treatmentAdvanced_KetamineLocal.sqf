@@ -17,13 +17,14 @@
 
 /// ChromAberration effect
 
-if (GVAR(chromatic_aberration_ketamine)) then {
+if (GVAR(chromatic_aberration_checkbox_ketamine)) then {
     [
         { 
             params ["_patient"];
             
+            if (ACE_Player != _patient) exitWith {};
             if !(alive _patient) exitWith {};
-            ["ChromAberration", 200, [ 0.015, 0.015, true ], _patient] spawn {
+            ["ChromAberration", 200, [(GVAR(chromatic_aberration_slider_ketamine)/100), (GVAR(chromatic_aberration_slider_ketamine)/100), true ], _patient] spawn {
 
                 params["_name", "_priority", "_effect", "_patient"];
                 private "_handle";

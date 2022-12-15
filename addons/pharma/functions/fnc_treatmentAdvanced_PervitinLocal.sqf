@@ -342,13 +342,13 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 /// ChromAberration effect
 
-if (GVAR(chromatic_aberration_pervitin)) then {
+if (GVAR(chromatic_aberration_checkbox_pervitin)) then {
 	[
 		{
 			params ["_patient"];
 
 			if !(alive _patient) exitWith {};
-			["ChromAberration", 200, [ 0.015, 0.015, true ], _patient] spawn {
+			["ChromAberration", 200, [ (GVAR(chromatic_aberration_slider_pervitin)/100), (GVAR(chromatic_aberration_slider_pervitin)/100), true ], _patient] spawn {
 
 				params["_name", "_priority", "_effect", "_patient"];
 				private "_handle";

@@ -1035,13 +1035,21 @@
             <Japanese>患者を刺激を与えるために訓練レベルを必要とさせます。</Japanese>
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Pervitin">
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Pervitin">
             <English>Enable Chromatic Aberration</English>
             <German>Aktiviere Chromatische Abweichungen</German>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Pervitin_DESC">
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Pervitin_DESC">
             <English>Enables if pervitin should influance your vision with chromatic aberration</English>
             <German>Aktiviert ob Pervitin deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Pervitin">
+            <English>Chromatic Aberration Strength</English>
+            <German>Chromatische Abweichungs Stärke</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Pervitin_DESC">
+            <English>Changes the strength of the chromatic aberration</English>
+            <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Weapon_Sway_Pervitin">
             <English>Enable Weapon Sway</English>
@@ -1051,21 +1059,37 @@
             <English>Enables if pervitin should influance your weapon sway</English>
             <German>Aktiviert ob Pervitin dein Waffen schwanken beinflussen soll</German>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Ketamine">
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>
             <German>Aktiviere Chromatische Abweichungen</German>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Ketamine_DESC">
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine_DESC">
             <English>Enables if ketamine should influance your vision with chromatic aberration</English>
             <German>Aktiviert ob Ketamin deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Fentanyl">
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Ketamine">
+            <English>Chromatic Aberration Strength</English>
+            <German>Chromatische Abweichungs Stärke</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Ketamine_DESC">
+            <English>Changes the strength of the chromatic aberration</English>
+            <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl">
             <English>Enable Chromatic Aberration</English>
             <German>Aktiviere Chromatische Abweichungen</German>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Fentanyl_DESC">
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl_DESC">
             <English>Enables if fentanyl should influance your vision with chromatic aberration</English>
             <German>Aktiviert ob Fentanyl deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl">
+            <English>Chromatic Aberration Strength</English>
+            <German>Chromatische Abweichungs Stärke</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl_DESC">
+            <English>Changes the strength of the chromatic aberration</English>
+            <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
         </Key>
         <Key ID="STR_KAT_pharma_treatmentTime_Reorientation">
             <English>Treatment time for reorientation</English>

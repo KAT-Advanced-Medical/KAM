@@ -17,16 +17,17 @@
 
 /// ChromAberration effect
 
-if (GVAR(chromatic_aberration_fentanyl)) then {
+if (GVAR(chromatic_aberration_checkbox_fentanyl)) then {
     [
         { 
             params ["_patient"];
 
+            if (ACE_Player != _patient) exitWith {};
             if !(alive _patient) exitWith {};
-            ["ChromAberration", 200, [ 0.02, 0.02, true ], _patient] spawn {
+            ["ChromAberration", 200, [(GVAR(chromatic_aberration_slider_fentanyl)/100), (GVAR(chromatic_aberration_slider_fentanyl)/100), true ], _patient] spawn {
 
                 params["_name", "_priority", "_effect", "_patient"];
-                private _handle;
+                private "_handle";
                 while {
                     _handle = ppEffectCreate[_name, _priority];
                     _handle < 0
