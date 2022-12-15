@@ -187,18 +187,18 @@
             <Japanese>取り外し中</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log">
-            <English>Pulse Oximeter: HR: %1 Sp02: %2</English>
+            <English>Pulse Oximeter: HR: %1 SpO2: %2</English>
             <German>Pulsoximeter: HR: %1 SpO2: %2</German>
-            <Polish>Pulsoksymetr: HR: %1 Sp02: %2</Polish>
-            <Spanish>Oxímetro de pulso: HR: %1 Sp02: %2</Spanish>
+            <Polish>Pulsoksymetr: HR: %1 SpO2: %2</Polish>
+            <Spanish>Oxímetro de pulso: HR: %1 SpO2: %2</Spanish>
             <Chinese>心率監測器: 心率: %1 血氧量: %2</Chinese>
             <Chinesesimp>脉搏血氧仪: 心率: %1 SpO2: %2</Chinesesimp>
-            <Czech>Pulzní oxymetr: HR: %1 Sp02: %2</Czech>
-            <Korean>맥박 산소포화도: HR: %1 Sp02: %2</Korean>
+            <Czech>Pulzní oxymetr: HR: %1 SpO2: %2</Czech>
+            <Korean>맥박 산소포화도: HR: %1 SpO2: %2</Korean>
             <French>Oxymètre de pouls: HR: %1 SpO2: %2</French>
-            <Turkish>Nabız Oksimetresi: HR: %1 Sp02: %2</Turkish>
-            <Italian>Pulsossimetro: HR: %1 sp02: %2</Italian>
-            <Russian>Пульсоксиметр: ЧСС: %1 Sp02: %2</Russian>
+            <Turkish>Nabız Oksimetresi: HR: %1 SpO2: %2</Turkish>
+            <Italian>Pulsossimetro: HR: %1 SpO2: %2</Italian>
+            <Russian>Пульсоксиметр: ЧСС: %1 SpO2: %2</Russian>
             <Japanese>パルスオキシメータ: HR: %1 SpO2: %2</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
