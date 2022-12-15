@@ -199,7 +199,7 @@
             <Turkish>Nabız Oksimetresi: HR: %1 Sp02: %2</Turkish>
             <Italian>Pulsossimetro: HR: %1 sp02: %2</Italian>
             <Russian>Пульсоксиметр: ЧСС: %1 Sp02: %2</Russian>
-            <Japanese>パルスオキシメータ: HR: %1 Sp02: %2</Japanese>
+            <Japanese>パルスオキシメータ: HR: %1 SpO2: %2</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -274,7 +274,7 @@
             <Turkish>Chest Seal, çoğu durumda açık göğüs yaralarını tedavi etmek, kapatmak ve yeniden kapatmak için tasarlanmıştır.</Turkish>
             <Italian>Il Chest Seal è progettato per trattare, sigillare e risigillare ferite aperte al torace nella maggior parte delle circostanze</Italian>
             <Russian>Чест Сеал разработан для лечения, герметизации и повторной герметизации открытых ран грудной клетки в большинстве случаев.</Russian>
-            <Japanese>チェストシールは、ほとんどの状況で開いた胸部の傷を治療、シール、および再シールするように設計されています。</Japanese>
+            <Japanese>チェストシールはほとんどの状況下で、胸部への穿通創の閉塞と開放による治療ができるように設計されています。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_ALLOW_PULSEOXIMETER">
             <English>Allow Pulseoximeter</English>
@@ -377,7 +377,7 @@
             <Turkish>Seçilen değerden (varsayılan 85) daha fazlasına ulaştıktan sonra, ancak o zaman hasta bilincini geri kazanabilir</Turkish>
             <Italian>Dopo aver raggiunto un valore sufficiente (default 85), il paziente può riprendere conoscienza</Italian>
             <Russian>Только после достижения значения, превышающего выбранное (по умолчанию 85), пациент может прийти в сознание.</Russian>
-            <Japanese>選択した値(デフォルトは85)を超えた後、患者は意識を取り戻すことができます</Japanese>
+            <Japanese>設定した値 (デフォルトは85)を超えた後、患者は意識を取り戻すことができます</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax_display">
             <English>Drain Fluid</English>
@@ -428,6 +428,7 @@
             <English>Needle Decompression (NCD Kit)</English>
             <German>Nadel Dekompression (NDK Kit)</German>
             <Polish>Igła dekompresyjna (NCD Kit)</Polish>
+            <Japanese>胸腔穿刺減圧 (NCDキット)</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
@@ -472,17 +473,19 @@
             <Turkish>Gelişmiş Hava Yolu Tedavi Kiti, hemopnömotoraks gibi gelişmiş hava yolu koşullarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
             <Italian>Il kit per il Trattamento Avanzato delle vie Aeree è un kit ad uso singolo per il trattamento avanzato di condizioni alle vie aeree, come l'emopneumotorace</Italian>
             <Russian>Набор ААТ</Russian>
-            <Japanese>AATキットは、血気胸などの高度な呼吸器の状態を治療するために設計された使い捨てキットです。</Japanese>
+            <Japanese>AATキット (Advanced Airway Treatment, 高度気道治療)は、血気胸などの重度な呼吸器症状を治療するために設計された使い捨てキットです。</Japanese>
         </Key>
-            <Key ID="STR_kat_breathing_ncdKit_display">
+        <Key ID="STR_kat_breathing_ncdKit_display">
             <English>NCD Kit</English>
             <German>NDK Kit</German>
             <Polish>Zestaw NCD</Polish>
+            <Japanese>NCDキット</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_ncdKit_desc">
             <English>The Needle Chest Decompression Kit is a single use kit designed to treat a tensionpneumothorax.</English>
             <German>Das Nadeldekompressions Kit ist ein Einweg-Kit das zur Behandlung eines Spannungspneumothorax vorgesehen ist.</German>
             <Polish>Zestaw NCD to zestaw jednorazowego użytku przeznaczony do leczenia odmy prężnej.</Polish>
+            <Japanese>NCDキット (Needle Chest Decompression, 胸部針減圧術)は、緊張性気胸の治療用に設計された使い捨てキットです。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemothorax / Tension Pneumothorax Chance</English>
@@ -981,7 +984,7 @@
             <German>Schwere Zyanose - Standardwert 66 SpO2 \nSollte etwas höher sein als der tödliche SpO2-Wert</German>
             <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
             <Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO2 \nДолжно быть немного выше летального значения SpO2</Russian>
-            <Japanese>重度のチアノーゼが発症するSpO2の値 - デフォルトSpO2 66\n致命的なSpO2値より少し高く設定する必要があります</Japanese>
+            <Japanese>重度のチアノーゼが発症するSpO2の値 - デフォルトはSpO2 66\n致命的なSpO2値より少し高く設定する必要があります</Japanese>
             <Chinesesimp>面色发紫的SpO2值 -默认66\n致命的SpO2值至少要低于此值</Chinesesimp>
             <Korean>심각한 치아노제의 값입니다 - 기본값은 SpO2 66 \n반드시 사망하게 되는 SpO2 값보다 아주 조금 높아야 합니다</Korean>
             <French>Valeur de la cyanose grave - 66 SpO2 par défaut \nCette valeur devrait être un peu plus haute que la valeur de SpO2 létale.</French>
@@ -1025,7 +1028,7 @@
             <Korean>기흉 악화 확률</Korean>
             <German>Wahrscheinlichkeit einer Pneumothorax-Verschlechterung</German>
             <Chinesesimp>气胸恶化几率</Chinesesimp>
-            <Japanese>気胸悪化の可能性</Japanese>
+            <Japanese>気胸の悪化の可能性</Japanese>
             <Spanish>Probabilidad de deterioro de un neumotórax</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_chance_Desc">
@@ -1049,7 +1052,7 @@
             <Korean>기흉 악화 카운트다운</Korean>
             <German>Verschlechterung des Pneumothorax-Countdowns</German>
             <Chinesesimp>气胸恶化冷却时间</Chinesesimp>
-            <Japanese>気胸悪化に掛る時間</Japanese>
+            <Japanese>気胸の悪化に掛る時間</Japanese>
             <Spanish>Tiempo para la deterioración de un neumotórax</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_deterioratingPneumothorax_countdown_Desc">
@@ -1095,7 +1098,7 @@
             <Polish>Ustawienia dla obrażeń klatki piersiowej</Polish>
             <Korean>흉부 부상 설정</Korean>
             <German>Thoraxverletzungs-Einstellungen</German>
-            <Japanese>胸部負傷の設定</Japanese>
+            <Japanese>胸腔負傷の設定</Japanese>
             <Spanish>Parámetros para las heridas del pecho</Spanish>
         </Key>
         <Key ID="STR_kat_breathing_SubCategory_Cyanosis">
@@ -1115,6 +1118,7 @@
             <Czech>[KAM] Obecné předměty</Czech>
             <German>[KAM] Allgemeine Gegenstände</German>
             <Italian>[KAM] Oggetti generali</Italian>
+            <Japanese>[KAM] 一般物資箱</Japanese>
         </Key>
     </Package>
 </Project>

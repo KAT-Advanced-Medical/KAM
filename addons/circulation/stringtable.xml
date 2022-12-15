@@ -28,7 +28,7 @@
             <Italian>Ritmo avanzato attivato?</Italian>
             <Spanish>¿Ritmo avanzado activado?</Spanish>
             <Czech>Pokročilý rytmus aktivován?</Czech>
-            <Japanese>高度な心房細動 を有効化しますか?</Japanese>
+            <Japanese>高度な心電図検査 を有効化しますか?</Japanese>
             <Russian>Продвинутый ритм активирован?</Russian>
         </Key>
         <Key ID="STR_kat_circulation_BloodIV_O">
@@ -778,7 +778,7 @@
             <Italian>Controllare il ritmo</Italian>
             <Spanish>Comprobar desfibrabilidad</Spanish>
             <Czech>Zkontrolovat rytmus</Czech>
-            <Japanese>心室細動を確認する</Japanese>
+            <Japanese>心電図を検査する</Japanese>
             <Russian>Проверьте ритм</Russian>
         </Key>
         <Key ID="STR_kat_circulation_DogTag">
@@ -1393,7 +1393,7 @@
             <Turkish>Metre cinsinden AED-X için mesafe sınırı</Turkish>
             <Russian>Ограничение расстояния для AED-X в метрах</Russian>
             <Italian>Distanza massima in metri per il DAE-X</Italian>
-            <Japanese>AED-Xの距離制限(メートル単位)</Japanese>
+            <Japanese>AED-Xの距離制限 (メートル単位)</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_TIMELIMIT_AED_X">
             <English>Time limit for monitor of AED-X in seconds</English>
@@ -1408,7 +1408,7 @@
             <Turkish>AED-X'in saniye cinsinden izlenmesi için zaman sınırı</Turkish>
             <Russian>Ограничение времени для монитора AED-X в секундах</Russian>
             <Italian>Limite di tempo in secondi per il monitoraggio del DAE-X</Italian>
-            <Japanese>AED-Xのモニターの制限時間(秒単位)</Japanese>
+            <Japanese>AED-Xのモニターの制限時間 (秒単位)</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_DEACTIVATE_MONITOR_WHILEAED_X">
             <English>Deactivate Monitor while using AED-X</English>
@@ -1735,7 +1735,7 @@
             <Turkish>Ritmi Kontrol Etmek</Turkish>
             <Italian>Controllando il ritmo</Italian>
             <Russian>Проверка ритма</Russian>
-            <Japanese>心室細動を確認する</Japanese>
+            <Japanese>心電図を検査中</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -1789,6 +1789,7 @@
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>
             <Polish>AED-X: HR: %1 BP: %2/%3 SpO2: %4</Polish>
             <Italian>AED-X: FC: %1 PS: %2/%3 SpO2: %4</Italian>
+            <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4</Japanese>
         </Key>
     </Package>
 </Project>
