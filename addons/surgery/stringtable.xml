@@ -80,7 +80,7 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の息はひどく金属的だ</Japanese>
+            <Japanese>患者の息はきつく金属的です</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_breath_stink">
@@ -92,7 +92,7 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の息はひどく金属的だ</Japanese>
+            <Japanese>患者の息はきつく金属的です</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_breath_mild">
@@ -104,7 +104,7 @@
             <French>L'haleine du patient est légèrement fruitée</French>
             <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
             <German>Der Atem des Patienten ist leicht fruchtig</German>
-            <Japanese>患者の息は少しフルーティーです</Japanese>
+            <Japanese>患者の息は少し酸っぱく果物的です</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_breath_good">
@@ -116,7 +116,7 @@
             <French>L'haleine du patient est bonne</French>
             <Korean>환자의 호흡이 정상입니다</Korean>
             <German>Der Atem des Patienten ist in Ordnung</German>
-            <Japanese>患者の息は問題ありません</Japanese>
+            <Japanese>患者の息は普通です</Japanese>
             <Spanish>El aliento del paciente es normal</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_dialysis">
@@ -271,7 +271,7 @@
             <French>Utilisé pour inciser et débrider les plaies</French>
             <Korean>절개 부위를 생성하고 상처를 제거하는 데 사용됩니다.</Korean>
             <German>Für das Anlegen von Inzisionen und das Debridieren von Wunden</German>
-            <Japanese>切開創と創面切除に使用</Japanese>
+            <Japanese>切開と創面切除に使用</Japanese>
             <Spanish>Usado para crear incisiones y desbridar heridas</Spanish>
             <Polish>Służy do tworzenia nacięć i oczyszczania ran</Polish>
         </Key>
@@ -392,7 +392,7 @@
             <French>Irriguer la plaie</French>
             <Korean>상처 세척</Korean>
             <German>Wunde spülen</German>
-            <Japanese>創傷を洗浄する</Japanese>
+            <Japanese>創面を洗浄する</Japanese>
             <Spanish>Irrigar herida</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Irrigate_Action">
@@ -416,7 +416,7 @@
             <French>Plaque à os</French>
             <Korean>본 플레이트</Korean>
             <German>Knochenplatte</German>
-            <Japanese>ボーンプレート</Japanese>
+            <Japanese>骨接合プレート</Japanese>
             <Spanish>Placa de fijación</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Plate_DescShort">
@@ -427,7 +427,7 @@
             <French>Utilisé pour compléter tous les types de fractures complexes</French>
             <Korean>모든 복잡한 골절 유형을 완전하게 하는 데 사용됩니다</Korean>
             <German>Zur Vervollständigung aller komplexen Frakturtypen</German>
-            <Japanese>全ての複雑骨折に使われます</Japanese>
+            <Japanese>全ての開放骨折に使われます</Japanese>
             <Spanish>Usada para fijar todas las fracturas avanzadas</Spanish>
             <Polish>Służy do łączenia wszystkich złożonych typów złamań</Polish>
         </Key>
@@ -440,7 +440,7 @@
             <French>Débrider les plaies</French>
             <Korean>상처 제거</Korean>
             <German>Wunddebridement</German>
-            <Japanese>創面の切除</Japanese>
+            <Japanese>創面を切除する</Japanese>
             <Spanish>Desbridar heridas</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Debride_Action">
@@ -475,7 +475,7 @@
             <French>Utilisé pour panser et sceller compètement les plaies</French>
             <Korean>상처를 완전히 치료하고 봉합하는 데 사용됩니다</Korean>
             <German>Zum vollständigen Verbinden und Abdichten von Wunden</German>
-            <Japanese>傷を完全に包んで封印するために使用される</Japanese>
+            <Japanese>傷を完全に包んで密封するために使用される</Japanese>
             <Spanish>Usado para vendar y sellar heridas completamente</Spanish>
             <Polish>Używany do całkowitego uzdrowienia ran</Polish>
         </Key>
@@ -524,7 +524,7 @@
             <French>Autorise les dégâts rénaux causés par une surutilisation de solution saline</French>
             <Korean>식염수 과다 사용으로 인한 신장 손상 활성화</Korean>
             <German>Ermöglicht Nierenschäden, die durch übermäßigen Gebrauch von Kochsalzlösung verursacht werden</German>
-            <Japanese>生理食塩水の過剰使用による腎臓の損傷を可能にします</Japanese>
+            <Japanese>生理食塩水の過剰投与(浸透圧過剰)による腎臓の損傷を可能にします</Japanese>
             <Spanish>Permite el daño de los riñones causado por uso excesivo de salino</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_DIALYSIS_TIMER">
@@ -572,7 +572,7 @@
             <French>Règle la chance de fractures simples. Règle également la chance de fractures complexes (60% simple = 40% complexe)</French>
             <Korean>단순 골절의 확률을 설정합니다. 또한 복잡한 골절의 확률을 설정합니다. (단순 60% = 복잡 40%)</Korean>
             <German>Legt die Wahrscheinlichkeit für einfache Frakturen fest. Legt auch die Wahrscheinlichkeit für komplexe Frakturen fest (60% einfach = 40% komplex).</German>
-            <Japanese>単純骨折の可能性を設定します。また、複雑な骨折の可能性を設定します (60% 単純 = 40% 複雑)</Japanese>
+            <Japanese>単純骨折の可能性を設定します。また、開放骨折の可能性を設定します (単純骨折60% = 開放骨折40%)</Japanese>
             <Spanish>Establece la probabilidad para fracturas simples. También establece la probabilidad de fracturas complejas (60% Simple - 40% Compleja)</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
@@ -584,7 +584,7 @@
             <French>Chance de fracture ouverte</French>
             <Korean>복합 골절 확률</Korean>
             <German>Wahrscheinlichkeit eines zusammengesetzten Bruchs</German>
-            <Japanese>複雑骨折の確率</Japanese>
+            <Japanese>開放骨折の確率</Japanese>
             <Spanish>Probabilidad de fractura compuesta</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE_DESC">
@@ -596,7 +596,7 @@
             <French>Règle la chance de fracture ouverte. Règle également la chance de fractures comminutives (60% ouvertes = 40 % comminutives)</French>
             <Korean>복합 골절의 확률을 설정합니다. 또한 분쇄 골절의 확률을 설정합니다. (복합 60% = 분쇄 40%)</Korean>
             <German>Legt die Wahrscheinlichkeit für zusammengesetzte Frakturen fest. Legt auch die Wahrscheinlichkeit für Trümmerfrakturen fest (60% zusammengesetzte Frakturen = 40% Trümmerfrakturen)</German>
-            <Japanese>複雑骨折の可能性を設定します。粉砕骨折の可能性も設定します (60% 複雑 = 40% 粉砕)</Japanese>
+            <Japanese>開放骨折の可能性を設定します。粉砕骨折の可能性も設定します (開放骨折60% = 粉砕骨折40%)</Japanese>
             <Spanish>Establece la probabilidad para fracturas compuestas. También establece la probabilidad de fracturas conminutas (60% Compuesta - 40% Conminuta)</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_ETOMIDATE_TIMER">
@@ -884,7 +884,7 @@
             <French>Fracture ouverte</French>
             <Korean>복합 골절</Korean>
             <German>Zusammengesetzte Fraktur</German>
-            <Japanese>複雑骨折</Japanese>
+            <Japanese>開放骨折</Japanese>
             <Spanish>Fractura Compuesta</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_SIMPLE_FRACTURE">
@@ -977,6 +977,7 @@
             <Czech>[KAM] Chirurgický Box</Czech>
             <German>[KAM] Chirurgie-Box</German>
             <Italian>[KAT]  Box chirurgico</Italian>
+            <Japanese>[KAM] 手術用品箱</Japanese>
         </Key>
     </Package>
 </Project>

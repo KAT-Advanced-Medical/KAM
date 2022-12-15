@@ -345,7 +345,7 @@
             <Turkish>Uzatılmış</Turkish>
             <Italian>Estendendo</Italian>
             <Russian>Гиперэкстензия головы</Russian>
-            <Japanese>気道確保中</Japanese>
+            <Japanese>気道確保実施中</Japanese>
         </Key>
         <Key ID="STR_kat_airway_overstretch_cancel">
             <English>Hyperextending Head canceled</English>
@@ -360,7 +360,7 @@
             <Turkish>Hyperextension İptal Edildi</Turkish>
             <Italian>Iperestensione della testa annullata</Italian>
             <Russian>Гиперэкстензия головы отменена</Russian>
-            <Japanese>気道確保が中止されました</Japanese>
+            <Japanese>気道確保が中断されました</Japanese>
         </Key>
         <Key ID="STR_kat_airway_overstretch_info">
             <English>Don't run away, you're saving a life!</English>
@@ -480,7 +480,7 @@
             <Turkish>Laringeal Tüp</Turkish>
             <Italian>Tubo laringeo</Italian>
             <Russian>Гортанная трубка</Russian>
-            <Japanese>King LT 喉頭気道チューブ</Japanese>
+            <Japanese>King LT (喉頭エアウェイ)</Japanese>
         </Key>
         <Key ID="STR_kat_airway_Larynx_Desc_Short">
             <English>The King LT is used to save the airways</English>
@@ -495,7 +495,7 @@
             <Turkish>Laringeal Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
             <Italian>Il tubo laringeo viene usato per salvare le vie aeree</Italian>
             <Russian>Ларингеальная трубка – это устройство для обеспечения проходимости дыхательных путей.</Russian>
-            <Japanese>King LTは気道を保護するために使用されます</Japanese>
+            <Japanese>King LT (喉頭エアウェイ)は気道を確保するために使用されます</Japanese>
         </Key>
         <Key ID="STR_kat_airway_Guedeltubus_Display">
             <English>Guedel Tube</English>
@@ -510,7 +510,7 @@
             <Turkish>Guedel Tüpü</Turkish>
             <Italian>Canula di Guedel</Italian>
             <Russian>Трубка Геделя</Russian>
-            <Japanese>Guedel 経口気道チューブ</Japanese>
+            <Japanese>ゲデルチューブ (口咽頭エアウェイ)</Japanese>
         </Key>
         <Key ID="STR_kat_airway_Guedel_Desc_Short">
             <English>The Guedel Tube is used to save the airways</English>
@@ -525,7 +525,7 @@
             <Turkish>Guedel Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
             <Italian>La canula di Guedel viene usata per salvare le vie aeree</Italian>
             <Russian>Трубка Геделя используется для сохранения дыхательных путей.</Russian>
-            <Japanese>Guedelチューブは気道を保護するために使用されます</Japanese>
+            <Japanese>ゲデルチューブ (口咽頭エアウェイ)は気道を確保するために使用されます</Japanese>
         </Key>
         <Key ID="STR_kat_airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
@@ -630,7 +630,7 @@
             <Turkish>Guedel Tüp'e izin ver</Turkish>
             <Italian>Permetti la canula di Guedel</Italian>
             <Russian>Разрешить гедельтубус</Russian>
-            <Japanese>Guedelチューブの許可</Japanese>
+            <Japanese>ゲデルチューブの許可</Japanese>
         </Key>
         <Key ID="STR_kat_airway_ALLOW_GUEDELTUBUS_DESC">
             <English>Training level required to use a Guedeltubus</English>
@@ -645,7 +645,7 @@
             <Turkish>Guedel Tüp'ü kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare la canula di Guedel</Italian>
             <Russian>Уровень подготовки, необходимый для использования тубуса Геделя.</Russian>
-            <Japanese>Guedelチューブの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>ゲデルチューブの使用に訓練レベルを必要とさせます。</Japanese>
         </Key>
         <Key ID="STR_kat_airway_ALLOW_ACCUVAC">
             <English>Allow Accuvac</English>
@@ -840,7 +840,7 @@
             <Turkish>Geudel Tüp zamanı</Turkish>
             <Italian>Tempo per la canula di Guedel</Italian>
             <Russian>Время для Гедель Тубус</Russian>
-            <Japanese>Guedelチューブにかかる時間</Japanese>
+            <Japanese>ゲデルチューブにかかる時間</Japanese>
         </Key>
         <Key ID="STR_kat_airway_TIME_GUEDELTUBUS_DESC">
             <English>How long it will take to use Guedeltubus</English>
@@ -855,7 +855,7 @@
             <Turkish>Guedel Tüp'ü kullanmak ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per posizionare una canula di Guedel</Italian>
             <Russian>Сколько времени потребуется, чтобы использовать Гедель Тубус</Russian>
-            <Japanese>Guedelチューブを使用するのにどのくらい時間がかかるか設定します</Japanese>
+            <Japanese>ゲデルチューブを使用するのにどのくらい時間がかかるか設定します</Japanese>
         </Key>
         <Key ID="STR_kat_airway_COLORED_LOGS">
             <English>Colored activitylogs (AED-X/Pulseoximeter)</English>
@@ -870,7 +870,7 @@
             <Turkish>Renkli aktivite günlükleri (AED-X / Pulseoximeter)</Turkish>
             <Italian>Logs di attività colorati (AED-X/Pulsossimetro)</Italian>
             <Russian>Цветные журналы активности (AED-X/пульсоксиметр)</Russian>
-            <Japanese>色付きの活動ログ(AED-X /パルスオキシメーター)</Japanese>
+            <Japanese>色付きの活動ログ (AED-X /パルスオキシメーター)</Japanese>
         </Key>
         <Key ID="STR_kat_airway_COLORED_LOGS_DESC">
             <English>Colors the Activitylogs of AED-X or Pulseoximeter red, if any value is critical</English>

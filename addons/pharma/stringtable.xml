@@ -274,7 +274,7 @@
             <Korean>심장 마비 퇴치를 위해 사용</Korean>
             <Turkish>Kalp durmasıyla mücadele için kullanılır</Turkish>
             <Czech>Používá se k léčení srdeční zástavy</Czech>
-            <Japanese>心停止と戦うために使用されます</Japanese>
+            <Japanese>心停止に対応する為に使用されます</Japanese>
             <Russian>Используется для борьбы с остановкой сердца</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Amiodarone_Box_Display">
@@ -319,7 +319,7 @@
             <Korean>심장 마비 퇴치를 위해 사용</Korean>
             <Turkish>Kalp durmasıyla mücadele için kullanılır</Turkish>
             <Czech>Používá se k léčení srdeční zástavy</Czech>
-            <Japanese>心停止と戦うために使用されます</Japanese>
+            <Japanese>心停止に対応する為に使用されます</Japanese>
             <Russian>Используется для борьбы с остановкой сердца</Russian>
         </Key>
         <Key ID="STR_KAT_pharma_Lidocaine_Box_Display">
@@ -1872,7 +1872,7 @@
             <French>Paramètres de l'Acide Aminocaproïque</French>
             <Korean>아미노카프로산 설정</Korean>
             <German>Aminocapronsäure Einstellungen</German>
-            <Japanese>Ε-アミノカプロン酸 (EACA)</Japanese>
+            <Japanese>EACA設定</Japanese>
             <Spanish>Parámetros del EACA</Spanish>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Ketamine">
@@ -1991,7 +1991,7 @@
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
             <Chinesesimp>病人的呼吸是沙哑的</Chinesesimp>
-            <Japanese>患者の息はひどく金属的だ</Japanese>
+            <Japanese>患者の息はきつく金属的です</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
             <Polish>Oddech pacjenta jest ostry i metaliczny</Polish>
         </Key>
@@ -2003,7 +2003,7 @@
             <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
             <German>Der Atem des Patienten ist leicht fruchtig</German>
             <Chinesesimp>病人的呼吸是平和的</Chinesesimp>
-            <Japanese>患者の息は少しフルーティーです</Japanese>
+            <Japanese>患者の息は少し酸っぱく果物的です</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
             <Polish>Oddech pacjenta jest lekko owocowy</Polish>
         </Key>
@@ -2015,7 +2015,7 @@
             <Korean>환자의 호흡은 정상이다</Korean>
             <German>Der Atem des Patienten ist in Ordnung</German>
             <Chinesesimp>病人的呼吸是正常的</Chinesesimp>
-            <Japanese>患者の息は問題ありません</Japanese>
+            <Japanese>患者の息は普通です</Japanese>
             <Spanish>El aliento del paciente es normal</Spanish>
             <Polish>Oddech pacjenta jest w porządku</Polish>
         </Key>
@@ -2116,7 +2116,7 @@
             <German>E-Aminocapronsäure</German>
             <Chinesesimp>EACA</Chinesesimp>
             <Polish>EACA</Polish>
-            <Japanese>EACA</Japanese>
+            <Japanese>Ε-アミノカプロン酸 (EACA)</Japanese>
             <Spanish>EACA</Spanish>
         </Key>
         <Key ID="STR_kat_pharma_Take_EACA">
@@ -2128,7 +2128,7 @@
             <German>Verabreiche Aminocapronsäure</German>
             <Chinesesimp>推注EACA</Chinesesimp>
             <Polish>Wstrzyknij EACA</Polish>
-            <Japanese>EACAを注入</Japanese>
+            <Japanese>Ε-アミノカプロン酸 (EACA)を注入</Japanese>
             <Spanish>Administrar EACA</Spanish>
         </Key>
         <Key ID="STR_kat_pharma_EACA_DescShort">
@@ -2152,7 +2152,7 @@
             <Korean>호흡 확인</Korean>
             <German>Überprüfe Atem</German>
             <Chinesesimp>检查呼吸</Chinesesimp>
-            <Japanese>呼吸の確認</Japanese>
+            <Japanese>吸気臭の確認</Japanese>
             <Spanish>Revisar aliento</Spanish>
         </Key>
         <Key ID="STR_kat_pharma_Inspect_Catheter">
@@ -2237,6 +2237,7 @@
             <Czech>[KAM] Bedna s medikamenty</Czech>
             <German>[KAM] Medikamentenkiste</German>
             <Italian>[KAT] Cassa medicinali</Italian>
+            <Japanese>[KAM] 医薬品箱</Japanese>
         </Key>
     </Package>
 </Project>
