@@ -68,6 +68,10 @@
             <Russian>Включает время сброса IV/IO</Russian>
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP">
+            <English>IV/IO drop time</English>
+            <German>IOs/IVs Herausfallzeit</German>
+        </Key>
+        <Key ID="STR_kat_pharma_IV_DROP_TIME_DESC">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
             <German>Ändert den Zeitpunkt, zu dem IVs/IOs aus einem Patienten herausfallen</German>
             <Polish>Czas samoistnego wypadnięcia IV/IO z pacjenta</Polish>

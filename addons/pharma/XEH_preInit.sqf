@@ -39,7 +39,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(IVdrop),
     "SLIDER",
-    [LLSTRING(IV_DROP)],
+    [LLSTRING(IV_DROP),LLSTRING(IV_DROP_TIME_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [60, 1200, 600, 0],
     true

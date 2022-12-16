@@ -204,7 +204,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		_patient setAnimSpeedCoef 1;
 		[LLSTRING(Pervitin_mid), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
-	[_patient], 120] call CBA_fnc_waitAndExecute; /// 2m
+	[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
 
 
 	[{
@@ -214,7 +214,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		_patient setStamina(getStamina _patient + 300);
 		[LLSTRING(Pervitin_mid2), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
-	[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
+	[_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
 
 
 	[{
@@ -234,7 +234,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		_patient setStamina(getStamina _patient - 60);
 		[LLSTRING(Pervitin_end), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
-	[_patient], 510] call CBA_fnc_waitAndExecute;
+	[_patient], 510] call CBA_fnc_waitAndExecute; /// 8:30m
 
 	///Weapon sway normal arma
 
