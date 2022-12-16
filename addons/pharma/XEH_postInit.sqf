@@ -29,9 +29,9 @@
     if (!local _patient) exitWith {["ace_treatmentSucceded", _this, _patient] call CBA_fnc_targetEvent};
     if (_classname == "Epinephrine") then {
 
+		if (ACE_Player != _patient) exitWith {};
 		if (ACEGVAR(advanced_fatigue,enabled)) then {
 			params ["_patient"];
-			if (ACE_Player != _patient) exitWith {};
 			if !(alive _patient) exitWith {};
 			ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + 300;
 			["EDF", 0.5] call ace_advanced_fatigue_fnc_addDutyFactor;
@@ -47,7 +47,6 @@
 			
 			params ["_patient"];
 
-			if (ACE_Player != _patient) exitWith {};
 			if !(alive _patient) exitWith {};
 			_patient setAnimSpeedCoef 1.2;
 			_patient setStamina 180;
