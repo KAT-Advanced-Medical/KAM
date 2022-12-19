@@ -40,5 +40,7 @@ if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "Guedeltubus" && _us
 
 _patient setVariable [QGVAR(airway), true, true];
 _patient setVariable [QGVAR(obstruction), false, true];
-
 _patient setVariable [QGVAR(airway_item), _classname, true];
+
+[_patient, _usedItem] call ACEFUNC(medical_treatment,addToTriageCard);
+[_patient, "activity", LSTRING(airway_log), [[_medic] call ACEFUNC(common,getName), getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);
