@@ -60,35 +60,41 @@ while{_logic getVariable [QGVAR(gas_active), false] && !(isNull _logic) && _unit
 				private _maskTime = missionNamespace getVariable[QGVAR(gasmask_durability),900];
 				private _isinGas = true; 
 				while {_isinGas} do {
-						private _timeleft = _unit getVariable[QGVAR(gasmask_durability),10];
-						_pos = _logic getVariable [QGVAR(gas_pos),[0,0,0]];
-						if ( _unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active),false]) || isNull _logic ) exitWith {
-							_unit setVariable[QGVAR(enteredPoisen),false,true];
-							_isinGas = false;
-						};
+					[
+						{
+							params["_unit","_timeEntered","_logic","_gastype","_radius_max"];
+							private _timeleft = _unit getVariable[QGVAR(gasmask_durability),10];
+							_pos = _logic getVariable [QGVAR(gas_pos),[0,0,0]];
+							if ( _unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active),false]) || isNull _logic ) exitWith {
+								_unit setVariable[QGVAR(enteredPoisen),false,true];
+								_isinGas = false;
+							};
 
-						if !(goggles _unit in KAT_AVAIL_GASMASK && _timeleft > 0) then {
-							_unit setVariable [QGVAR(poisenType),_gastype,true];
-							if(_gastype isEqualTo "Toxic") then {_unit setVariable [QGVAR(airPoisend),true,true];};
-							if(_gastype isEqualTo "CS") then {_unit setVariable [QGVAR(CS),true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
-							[_unit] call KAT_breathing_fnc_handleBreathing;
-							_isinGas = false;
-						};
+							if !(goggles _unit in KAT_AVAIL_GASMASK && _timeleft > 0) then {
+								_unit setVariable [QGVAR(poisenType),_gastype,true];
+								if(_gastype isEqualTo "Toxic") then {_unit setVariable [QGVAR(airPoisend),true,true];};
+								if(_gastype isEqualTo "CS") then {_unit setVariable [QGVAR(CS),true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
+								[_unit] call KAT_breathing_fnc_handleBreathing;
+								_isinGas = false;
+							};
 
-						if(_timeleft <= 0 && _unit getVariable [QGVAR(enteredPoisen),false]) then {
-							_unit setVariable [QGVAR(poisenType),_gastype,true];
-							if(_gastype isEqualTo "Toxic") then {_unit setVariable [QGVAR(airPoisend),true,true];};
-							if(_gastype isEqualTo "CS") then {_unit setVariable [QGVAR(CS),true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
-							[_unit] call KAT_breathing_fnc_handleBreathing;
-							_isinGas = false;
-						};
+							if(_timeleft <= 0 && _unit getVariable [QGVAR(enteredPoisen),false]) then {
+								_unit setVariable [QGVAR(poisenType),_gastype,true];
+								if(_gastype isEqualTo "Toxic") then {_unit setVariable [QGVAR(airPoisend),true,true];};
+								if(_gastype isEqualTo "CS") then {_unit setVariable [QGVAR(CS),true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};
+								[_unit] call KAT_breathing_fnc_handleBreathing;
+								_isinGas = false;
+							};
 
-						if (!(_unit getVariable [QGVAR(enteredPoisen),false]) || !(_logic getVariable[QGVAR(gas_active),false])) then {
-							
-							_isinGas = false;
-							_unit setVariable [QGVAR(enteredPoisen),false];
-						};
-						uiSleep 1;
+							if (!(_unit getVariable [QGVAR(enteredPoisen),false]) || !(_logic getVariable[QGVAR(gas_active),false])) then {
+								
+								_isinGas = false;
+								_unit setVariable [QGVAR(enteredPoisen),false];
+							};
+						},
+						[_unit,_timeEntered,_logic,_gastype,_radius_max],
+						1
+					] call CBA_fnc_waitAndExecute;
 				};
 
 			} else {
@@ -104,37 +110,43 @@ while{_logic getVariable [QGVAR(gas_active), false] && !(isNull _logic) && _unit
 
 			private _prozent = 1;
 			for "_i" from 0 to 1 step 0 do {
-				_pos = _logic getVariable [QGVAR(gas_pos),[0,0,0]];
-				private _distance = _unit distance _pos;
-				private _min_to_max = _radius_max - _radius_min;
-				private _dis_to_min = _distance - _radius_min;
-				if(_distance > _radius_min) then {
-					_prozent = 1-(_dis_to_min/_min_to_max);
-					if(_prozent > 1) then {_prozent = 1};
-				} else {
-					_prozent = 1;
-				};
-				_unitTime = _unit getVariable [QGVAR(timeleft),60];
-				_unitTime = _unitTime - _prozent;
-				_unit setVariable [QGVAR(timeleft),_unitTime];
-				_unit setVariable [QGVAR(gasPercentage),_prozent];
-				if(_unitTime <= 0) exitWith {
-					[_unit,_timeEntered,_logic,_gastype,_radius_max] spawn _fnc_kat_afterwait;
-					_unit setVariable [QGVAR(timeleft),0];
-					_i = 2;
-				};
+				[
+					{
+						params["_prozent","_radius_max","_radius_min","_unit","_timeEntered","_logic","_gastype"];
+						_pos = _logic getVariable [QGVAR(gas_pos),[0,0,0]];
+						private _distance = _unit distance _pos;
+						private _min_to_max = _radius_max - _radius_min;
+						private _dis_to_min = _distance - _radius_min;
+						if(_distance > _radius_min) then {
+							_prozent = 1-(_dis_to_min/_min_to_max);
+							if(_prozent > 1) then {_prozent = 1};
+						} else {
+							_prozent = 1;
+						};
+						_unitTime = _unit getVariable [QGVAR(timeleft),60];
+						_unitTime = _unitTime - _prozent;
+						_unit setVariable [QGVAR(timeleft),_unitTime];
+						_unit setVariable [QGVAR(gasPercentage),_prozent];
+						if(_unitTime <= 0) exitWith {
+							[_unit,_timeEntered,_logic,_gastype,_radius_max] spawn _fnc_kat_afterwait;
+							_unit setVariable [QGVAR(timeleft),0];
+							_i = 2;
+						};
+							
+						if ( _unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active),false]) || isNull _logic ) exitWith {
+							_unit setVariable[QGVAR(enteredPoisen),false,true];
+							_i = 2;
+						};
 
-					
-				if ( _unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active),false]) || isNull _logic ) exitWith {
-					_unit setVariable[QGVAR(enteredPoisen),false,true];
-					_i = 2;
-				};
-
-				if(_gastype isEqualTo "CS") exitWith {
-					_i = 2;
-					[_unit,_timeEntered,_logic,_gastype,_radius_max] spawn _fnc_kat_afterwait;
-				};
-				uiSleep 1;
+						if(_gastype isEqualTo "CS") exitWith {
+							_i = 2;
+							[_unit,_timeEntered,_logic,_gastype,_radius_max] spawn _fnc_kat_afterwait;
+						};
+					},
+					[_prozent,_radius_max,_radius_min,_unit,_timeEntered,_logic,_gastype],
+					1
+				] call CBA_fnc_waitAndExecute;
+				
 			};
 
 	};

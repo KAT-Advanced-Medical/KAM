@@ -31,7 +31,7 @@
 
 if(hasInterface) then {
 
-	[] spawn FUNC(coughing);
+	[] call FUNC(coughing);
 	[] spawn FUNC(handleGasMaskDur);
 	[] spawn FUNC(chemDetector);
 	[player] spawn FUNC(breathing);

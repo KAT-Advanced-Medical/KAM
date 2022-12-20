@@ -18,7 +18,7 @@
 [
 	{ 
 		params["_player"];
-		_player getVariable [QGVAR(airPoisend),false];
+		_player getVariable [QGVAR(airPoisend),false]
 	},
 	{
 		params["_player"];
@@ -62,9 +62,11 @@
 				
 			};
 		};
+		if(!(_player getVariable [QGVAR(airPoisend),false])) then {
+			[] call FUNC(coughing);
+		};
 	},
 	[player]
 ] call CBA_fnc_waitUntilAndExecute;
 
-if(player getVariable [QGVAR(airPoisend),false]) exitWith {};
-[] call FUNC(coughing);
+
