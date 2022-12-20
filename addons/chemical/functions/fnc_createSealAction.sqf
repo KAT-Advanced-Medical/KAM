@@ -13,7 +13,7 @@
  *
  * Public: No
 */
-params["_object"];
+params["_target"];
 
 private _action = [
 	"kat_gas_interaction",
@@ -31,7 +31,7 @@ private _action = [
 			{
 				params["_args"];
 				_args params ["_target","_player"];
-				_target setVariable ["kat_chemical_gas_active", false,true];
+				_target setVariable [QGVAR(gas_active), false,true];
 				[_target, 0, ["ACE_MainActions", "kat_gas_interaction"]] call ace_interact_menu_fnc_removeActionFromObject;
 				[_player, "kat_sealant"] call ace_common_fnc_useItem;
 			},
@@ -55,4 +55,4 @@ private _action = [
 	{},
 	[]
 ] call ace_interact_menu_fnc_createAction;
-[_object, 0, ["ACE_MainActions"],_action] call ace_interact_menu_fnc_addActionToObject;
+[_target, 0, ["ACE_MainActions"],_action] call ace_interact_menu_fnc_addActionToObject;

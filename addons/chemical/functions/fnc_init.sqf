@@ -36,22 +36,22 @@ if(hasInterface) then {
 	[] spawn FUNC(chemDetector);
 	[player] spawn FUNC(breathing);
 	kat_lastpoisend = 0;
-	player setVariable["kat_gas_timeleft",missionNamespace getVariable ["kat_medical_infectTime",60],true];
-	player setVariable ["kat_medical_enteredPoisen",false,true];
-	player setVariable ["kat_gasmask_durability",10,true];
-	player setVariable ["kat_gasmask_durability_reset", false, true];
+	player setVariable[QGVAR(timeleft),missionNamespace getVariable [QGVAR(infectTime),60],true];
+	player setVariable [QGVAR(enteredPoisen),false,true];
+	player setVariable [QGVAR(gasmask_durability),10,true];
+	player setVariable [QGVAR(gasmask_durability_reset), false, true];
 	
 
 	[{
-		private _playertime = player getVariable["kat_gas_timeleft",60];
-		private _maxtime = missionNamespace getVariable ["kat_medical_infectTime",60];
-		if (!(player getVariable["kat_medical_enteredPoisen",false]) ) then {
-			if(_playertime < missionNamespace getVariable ["kat_medical_infectTime",60]) then {
+		private _playertime = player getVariable[QGVAR(timeleft),60];
+		private _maxtime = missionNamespace getVariable [QGVAR(infectTime),60];
+		if (!(player getVariable[QGVAR(enteredPoisen),false]) ) then {
+			if(_playertime < missionNamespace getVariable [QGVAR(infectTime),60]) then {
 				_playertime = _playertime + 1;
 				if(_playertime >= _maxtime) then {
 					_playertime = _maxtime;
 				};
-				player setVariable["kat_gas_timeleft",_playertime,true];
+				player setVariable[QGVAR(timeleft),_playertime,true];
 			};
 		};
 	},2,[]]call CBA_fnc_addPerFrameHandler;
@@ -60,7 +60,7 @@ if(hasInterface) then {
 		"KAT_CHEM_DETECTOR" cutRsc ["RscWeaponChemicalDetector", "PLAIN", 1, false];
 		private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
 		private _obj = _ui displayCtrl 101;
-		if (!(player getVariable["kat_medical_enteredPoisen",false]) ) then { 
+		if (!(player getVariable[QGVAR(enteredPoisen),false]) ) then { 
 			_obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
 		};
 	},2,[]]call CBA_fnc_addPerFrameHandler;

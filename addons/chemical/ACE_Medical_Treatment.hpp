@@ -1,17 +1,5 @@
 class ACE_Medical_Treatment {
     class Medication {
-        class Antidot {
-            painReduce = 0;
-            hrIncreaseLow[] = {5, 10};
-            hrIncreaseNormal[] = {5, 10};
-            hrIncreaseHigh[] = {5, 10};
-            timeInSystem = 1800;
-            timeTillMaxEffect = 30;
-            maxDose = 3;
-            incompatibleMedication[] = {"Morphine"};
-            viscosityChange = -10;
-        };
-
         class PoisenBP {
             painReduce = 0;
             hrIncreaseLow[] = {-10, -13};

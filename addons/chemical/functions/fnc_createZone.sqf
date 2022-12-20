@@ -40,11 +40,12 @@ private _currentTime = CBA_missionTime;
 
 [{
 	//condition
-	(CBA_missionTime - (_this select 2)) > (_this select 1)
+    params["_logic","_lifetime","_currentTime"];
+	(CBA_missionTime - (_currentTime)) > _lifetime
 },
 {
 	//code
-	private _logic = _this select 0;
-	_logic setVariable ["kat_chemical_gas_active",false,true];
+    params["_logic"];
+	_logic setVariable [QGVAR(gas_active),false,true];
 	deleteVehicle _logic;
 },[_logic,_lifetime,_currentTime]]call CBA_fnc_waitUntilAndExecute;

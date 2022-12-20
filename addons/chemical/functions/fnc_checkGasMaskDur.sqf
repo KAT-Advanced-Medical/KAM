@@ -3,8 +3,8 @@
  * Author: DiGii
  * 
  * Arguments:
- * 0: Target <OBJECT>
- * 1: Target <OBJECT>
+ * 0: Patient <OBJECT>
+ * 1: Medic <OBJECT>
  *
  * Return Value:
  * NONE
@@ -15,11 +15,11 @@
  * Public: No
 */
 
-params ["_target","_medic"];
+params ["_patient","_medic"];
 
 
-if (_medic isEqualTo _target) then {
+if (_medic isEqualTo _patient) then {
     [_medic, "Gear", 1] call ace_common_fnc_doGesture;
 };
  
-[{_this call FUNC(displayGasMaskDur)}, [_target], 1] call CBA_fnc_waitAndExecute;
+[{_this call FUNC(displayGasMaskDur)}, [_patient], 1] call CBA_fnc_waitAndExecute;

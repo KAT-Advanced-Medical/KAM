@@ -14,27 +14,34 @@
  *
  * Public: No
 */
-params ["_player"];
-uiSleep 5;
-
-waitUntil {goggles _player in KAT_AVAIL_GASMASK};
+params ["_unit"];
 
 [
 	{
-		params["_args","_handler"];
-		_args params ["_player"];
-		if !(goggles _player in KAT_AVAIL_GASMASK || !(alive player) || _player getVariable["ace_medical_heartrate",80] <= 0) then {
-			[_handler] call CBA_fnc_removePerFrameHandler;
-			[_player] spawn FUNC(breathing);
- 		} else {
-			if(GET_PAIN_PERCEIVED(_player) >= 0.4 || _player getVariable["ace_medical_heartrate",80] >= 105) then {
-				_player say3D "mask_breath_heavy";
-			} else {
-				private _random = selectRandom["mask_breath_1","mask_breath_2"];
-				_player say3D _random;
-			};
-		};
+		params ["_unit"];
+		goggles _unit in KAT_AVAIL_GASMASK
 	},
-	5,
-	[_player]
-]call CBA_fnc_addPerFrameHandler;
+	{
+		params ["_unit"];
+		[
+		{
+			params["_args","_handler"];
+			_args params ["_unit"];
+			if !(goggles _unit in KAT_AVAIL_GASMASK || !(alive player) || _unit getVariable["ace_medical_heartrate",80] <= 0) then {
+				[_handler] call CBA_fnc_removePerFrameHandler;
+				[_unit] spawn FUNC(breathing);
+			} else {
+				if(GET_PAIN_PERCEIVED(_unit) >= 0.4 || _unit getVariable["ace_medical_heartrate",80] >= 105) then {
+					_unit say3D "mask_breath_heavy";
+				} else {
+					private _random = selectRandom["mask_breath_1","mask_breath_2"];
+					_unit say3D _random;
+				};
+			};
+		},
+		5,
+		[_unit]
+		]call CBA_fnc_addPerFrameHandler;
+	},
+	[_unit]
+] call CBA_fnc_waitUntilAndExecute;

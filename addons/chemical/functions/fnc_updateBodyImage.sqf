@@ -20,7 +20,7 @@ params ["_ctrlGroup", "_target"];
 // Get tourniquets, damage, and blood loss for target
 private _tourniquets = GET_TOURNIQUETS(_target);
 private _fractures = GET_FRACTURES(_target);
-private _infectedtype = _target getVariable ["kat_medical_poisenType",""];
+private _infectedtype = _target getVariable [QGVAR(poisenType),""];
 private _bodyPartDamage = _target getVariable ["ace_medical_bodyPartDamage", [0, 0, 0, 0, 0, 0]];
 private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
 
@@ -34,7 +34,7 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
 
 	if (_infectedIDC != -1) then {
     private _ctrlairInfected = _ctrlGroup controlsGroupCtrl _infectedIDC;
-        if(_target getVariable ["kat_chemical_airPoisend",false]) then{
+        if(_target getVariable [QGVAR(airPoisend),false]) then{
             _ctrlairInfected ctrlShow true;
         } else {
             _ctrlairInfected ctrlShow false;

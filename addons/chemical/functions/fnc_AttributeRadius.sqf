@@ -61,7 +61,7 @@ private _fnc_onKeyUp = {
     } else {
         _maxEdit ctrlSetTooltip "";
         _maxEdit ctrlSetTextColor [1,1,1,1];
-		_display setVariable ["kat_ui_radiusMax",_maxradius];
+		_display setVariable [QGVAR(ui_radiusMax),_maxradius];
     };
 
 	if (_minradius == 0) then {
@@ -74,7 +74,7 @@ private _fnc_onKeyUp = {
         } else {
             _minEdit ctrlSetTooltip "";
             _minEdit ctrlSetTextColor [1,1,1,1];
-            _display setVariable ["kat_ui_radiusMin",_minradius];
+            _display setVariable [QGVAR(ui_radiusMin),_minradius];
         };
     };
 };
@@ -83,7 +83,7 @@ private _fnc_onCheckChange = {
     params["_sealCheckBox"];
     _display = ctrlParent _sealCheckBox;
     private _cansealed = cbChecked(_display displayCtrl 1613);
-    _display setVariable ["kat_ui_sealable",_cansealed];
+    _display setVariable [QGVAR(ui_sealable),_cansealed];
 };
 
 private _fnc_onLBSelChange = {
@@ -91,7 +91,7 @@ private _fnc_onLBSelChange = {
     _display = ctrlParent _gasTypeCombo;
     private _gastype = lbCurSel _gasTypeCombo;
 
-    _display setVariable ["kat_ui_gastype",_gastype];
+    _display setVariable [QGVAR(ui_gastype),_gastype];
 };
 
 [_display] call _fnc_onKeyUp;

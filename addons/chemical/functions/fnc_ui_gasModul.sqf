@@ -67,7 +67,7 @@ private _fnc_onConfirm = {
     private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
     if (isNull _logic) exitWith {};
 
-    private _gasTypeValue = _display getVariable["kat_ui_gastype",0];
+    private _gasTypeValue = _display getVariable[QGVAR(ui_gastype),0];
     private _gastype = "";
     switch (_gasTypeValue) do {
         case 1: { //CS
@@ -78,8 +78,8 @@ private _fnc_onConfirm = {
         };
     };
 
-    private _radius_max = _display getVariable["kat_ui_radiusMax", 20];
-    private _radius_min = _display getVariable["kat_ui_radiusMin", 10]; 
+    private _radius_max = _display getVariable[QGVAR(ui_radiusMax), 20];
+    private _radius_min = _display getVariable[QGVAR(ui_radiusMin), 10]; 
     if(_radius_min > _radius_max) then {
         [CSTRING(GasModule_Needbigger)] call ace_zeus_fnc_showMessage;
     } else {
@@ -93,7 +93,7 @@ private _fnc_onConfirm = {
             
             [_logic,_position,_radius_max,_radius_min,_gastype] spawn FUNC(gasCheck);
 
-            if(_display getVariable["kat_ui_sealable",false]) then {
+            if(_display getVariable[QGVAR(ui_sealable),false]) then {
                 [_object] call FUNC(createSealAction);
             };
 

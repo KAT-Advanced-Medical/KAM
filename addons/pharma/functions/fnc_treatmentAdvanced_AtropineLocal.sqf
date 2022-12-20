@@ -28,3 +28,10 @@ private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), 
 } forEach (_medicationArray);
 
 _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];
+
+_patient setVariable [QEGVAR(chemical,airPoisned) ,false,true];
+		_patient setVariable [QEGVAR(chemical,isThreated) ,true,true];
+		_patient setVariable [QEGVAR(chemical,enteredPoisen),false,true];
+		if (_patient getVariable [QEGVAR(chemical,painEffect),0] != 0) then {
+			KAT_PAIN_EFFECT ppEffectEnable false;
+		};

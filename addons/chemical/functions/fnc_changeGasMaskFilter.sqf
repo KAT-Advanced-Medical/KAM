@@ -14,11 +14,11 @@
  * Public: No
 */
 
-params ["_player"];
+params ["_target"];
 
-[_player, "AinvPknlMstpSlayWlnrDnon_medicOther"] call ace_common_fnc_doAnimation;
-_player removeItem "kat_gasmaskFilter";
+[_target, "AinvPknlMstpSlayWlnrDnon_medicOther"] call ace_common_fnc_doAnimation;
+_target removeItem "kat_gasmaskFilter";
 
-_player setVariable ["kat_gasmask_durability",10,true];
+_target setVariable [QGVAR(gasmask_durability),10,true];
 
-_player setVariable ["kat_gasmask_durability_reset", true, true];
+_target setVariable [QGVAR(gasmask_durability_reset), true, true];

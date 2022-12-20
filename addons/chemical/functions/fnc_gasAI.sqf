@@ -21,39 +21,51 @@
 */
 
 params ["_unit","_logic","_pos","_radius_max","_gastype"];
-private _unitt = _unit;
 [
 	{
 		params["_args","_handler"];
-		_args params ["_logic","_unit","_unitt"];
-		if(!(_logic getVariable["kat_chemical_gas_active",false]) || !(alive _unit) || isNull _unit) then {
-			_unit setVariable["kat_medical_enteredPoisen",false,true];
+		_args params ["_logic","_unit"];
+		if(!(_logic getVariable[QGVAR(gas_active),false]) || !(alive _unit) || isNull _unit) then {
+			_unit setVariable[QGVAR(enteredPoisen),false,true];
 			[_handler] call CBA_fnc_removePerFrameHandler;
 		};
 	},
 	3,
-	[_logic,_unit,_unitt]
+	[_logic,_unit]
 ]call CBA_fnc_addPerFrameHandler;
 private _skill = _unit skill "aimingAccuracy";
-while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) && alive _unit && !(_unit getVariable ["ACE_isUnconscious",false])} do { 
-	_pos = _logic getVariable ["kat_pos",[0,0,0]];
-	if((_unit distance _pos) <= _radius_max && !(_unit getVariable["kat_medical_enteredPoisen",false])) then {
-		_unit setVariable["kat_medical_enteredPoisen",true,true];
+while{_logic getVariable [QGVAR(gas_active), false] && !(isNull _logic) && alive _unit && !(_unit getVariable ["ACE_isUnconscious",false])} do { 
+	_pos = _logic getVariable [QGVAR(gas_pos),[0,0,0]];
+	if((_unit distance _pos) <= _radius_max && !(_unit getVariable[QGVAR(enteredPoisen),false])) then {
+		_unit setVariable[QGVAR(enteredPoisen),true,true];
 		private _fnc_afterwait = {
 			params["_unit","_gastype","_pos","_skill"];
 			if !(goggles _unit in KAT_AVAIL_GASMASK) exitWith {
 				if(_gastype isEqualTo "CS") then {
-					while{_unit distance _pos < 10 && _unit getVariable["kat_medical_enteredPoisen",false]} do {
+					while{_unit distance _pos < 10 && _unit getVariable[QGVAR(enteredPoisen),false]} do {
 						_unit say3D "cough_1";
 						_unit setSkill ["aimingAccuracy",0.001];
-						uiSleep 2;
-						_unit setSkill ["aimingAccuracy",_skill];
+						[
+							{
+								params["_unit","_skill"];
+								_unit setSkill ["aimingAccuracy",_skill];
+							},
+							[_unit, _skill],
+							2
+						] call CBA_fnc_waitAndExecute;
+						
 					};
 				}else{
 					if(ace_medical_statemachine_AIUnconsciousness) then {
 						for "_i" from 0 to 10 step 1 do {
-							[_unit, "RightArm", "PoisenBP"] call FUNC(medicationLocal);
-							uiSleep 5;
+							[
+								{
+									params["_unit"];
+									//[_unit, "RightArm", "PoisenBP"] call FUNC(medicationLocal);
+								},
+								[_unit],
+								5
+							] call CBA_fnc_waitAndExecute;
 						};
 					} else {
 						[{private _unit = _this select 0;  _unit setDamage 1;},[_unit], 20]call CBA_fnc_waitAndExecute;
@@ -72,9 +84,9 @@ while{_logic getVariable ["kat_chemical_gas_active", false] && !(isNull _logic) 
 				[_unit,_gastype,_pos,_skill] spawn _fnc_afterwait;
 				_i = 2;
 			};
-			_pos = _logic getVariable ["kat_pos",[0,0,0]];
-			if ( _unit distance _pos > _radius_max || !(_logic getVariable["kat_chemical_gas_active",false]) || isNull _logic ) exitWith {
-				_unit setVariable["kat_medical_enteredPoisen",false,true];
+			_pos = _logic getVariable [QGVAR(gas_pos),[0,0,0]];
+			if ( _unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active),false]) || isNull _logic ) exitWith {
+				_unit setVariable[QGVAR(enteredPoisen),false,true];
 				_i = 2;
 			};
 			uiSleep 1;

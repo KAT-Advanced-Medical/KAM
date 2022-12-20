@@ -26,8 +26,6 @@ PREP(hasGasmask);
 PREP(hasGasMaskON);
 PREP(init);
 PREP(initModule);
-PREP(medication);
-PREP(medicationLocal);
 PREP(spawnGasSmoke);
 PREP(spawnSmoke);
 PREP(throwGrenade);

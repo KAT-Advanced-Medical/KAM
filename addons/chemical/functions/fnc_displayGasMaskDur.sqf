@@ -16,7 +16,7 @@
 
 params ["_target"];
 
-private _durability = _target getVariable["kat_gasmask_durability",10];
+private _durability = _target getVariable[QGVAR(gasmask_durability),10];
 
 
 

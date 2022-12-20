@@ -140,8 +140,8 @@ private _fnc_getWoundDescription = {
 } forEach GET_STITCHED_WOUNDS(_target);
 
 //INTOXICATION by DiGii
-private _poisentype = _target getVariable ["kat_medical_poisenType",""];
-if(_target getVariable ["kat_chemical_airPoisend",false]) then{
+private _poisentype = _target getVariable [QEGVAR(chemical,poisenType),""];
+if(_target getVariable [QGVAR(airPoisend),false]) then{
     _woundEntries pushBack [localize "STR_kat_chemical_Intoxikation", [0.4,0,0.5,1]];
 };
 
