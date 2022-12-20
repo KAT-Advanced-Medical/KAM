@@ -5,10 +5,10 @@
  * it will randomly assign it thus saving setting unnecesary variable.
  *
  * Arguments:
- * 0: unit <OBJECT>
+ * 0: Unit <OBJECT>
  *
  * Return Value:
- * 0: Blood type <STRING>
+ * None
  *
  * Example:
  * [cursorTarget] call kat_circulation_fnc_bloodType;
@@ -16,14 +16,14 @@
  * Public: No
  */
 
-params ["_target"];
+params ["_unit"];
 
-if (_target != player) then {
-	  if (isNil {_target getVariable QGVAR(bloodtype)}) then {
+if (_unit != player) then {
+	  if (isNil {_unit getVariable QGVAR(bloodtype)}) then {
 	  private _randomBloodType = selectRandomWeighted ["O",0.35,"O_N",0.13,"A",0.3,"A_N",0.08,"B",0.08,"B_N",0.02,"AB",0.02,"AB_N",0.01];
-	  _target setVariable [QGVAR(bloodtype), _randomBloodType, true];
-	  _target setVariable ["ace_dogtags_dogtagData", nil, true];
+	  _unit setVariable [QGVAR(bloodtype), _randomBloodType, true];
+	  _unit setVariable [QACEGVAR(dogtags,dogtagData), nil, true];
     };
 };
 
-_target getVariable [QGVAR(bloodtype), "O_N"];
+_unit getVariable [QGVAR(bloodtype), "O_N"];

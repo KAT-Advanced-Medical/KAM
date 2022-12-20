@@ -6,22 +6,19 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 1: ReviveObject <STRING> ()
+ * 2: Body part <STRING>
+ * 3: CPR type <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject] call ace_medical_treatment_fnc_cprSuccess
+ * [player, cursorObject, "Body", "AED"] call kat_circulation_fnc_AEDSuccess
  *
  * Public: No
  */
 
-params [
-    ["_medic",objNull,[objNull]],
-    ["_patient",objNull,[objNull]],
-    ["_reviveObject","CPR",[""]]
-];
+params ["_medic", "_patient", "_bodyPart", "_reviveObject"];
 
 //pain will be added to all units standing too close to caller or target.
 if (vehicle _patient isEqualTo _patient) then {
@@ -29,8 +26,9 @@ if (vehicle _patient isEqualTo _patient) then {
     { [_x, 0.2] remoteExec ["ace_medical_fnc_adjustPainLevel",_x]; nil; } count _bystanders;
 };
 
-_patient setVariable ["ace_medical_CPR_provider", objNull, true];
+_patient setVariable [QACEGVAR(medical,CPR_provider), objNull, true];
+_patient setVariable [QGVAR(AEDinUse), false, true];
 
-if (alive _patient && {_patient getVariable ["ace_medical_inCardiacArrest", false]}) then {
-    ["ace_medical_treatment_cprLocal", [_medic, _patient, _reviveObject], _patient] call CBA_fnc_targetEvent;
+if (alive _patient && {_patient getVariable [QACEGVAR(medical,inCardiacArrest), false]}) then {
+    [QACEGVAR(medical_treatment,cprLocal), [_medic, _patient, _reviveObject], _patient] call CBA_fnc_targetEvent;
 };

@@ -6,12 +6,13 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject] call kat_pharma_fnc_retrieveIV;
+ * [player, cursorObject, "LeftArm"] call kat_pharma_fnc_retrieveIV;
  *
  * Public: No
  */
@@ -20,13 +21,13 @@ params ["_medic", "_patient", "_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
-private _newArray = _patient getVariable ["ace_medical_ivBags", []];
+private _newArray = _patient getVariable [QACEGVAR(medical,ivBags), []];
 private _IVactual = _IVarray select _partIndex;
 
 if (_IVactual == 1) then {
-    _patient addItem "kat_IO_FAST";
+    _medic addItem "kat_IO_FAST";
 } else {
-    _patient addItem "kat_IV_16";
+    _medic addItem "kat_IV_16";
 };
 
 _IVarray set [_partIndex, 0];
@@ -55,7 +56,7 @@ private _plasma = 0;
         };
     };
     _totalIvVolume = _totalIvVolume + _volumeRemaining;
-} forEach (_patient getVariable ["ace_medical_ivBags", []]);
+} forEach (_patient getVariable [QACEGVAR(medical,ivBags), []]);
 
 if (_totalIvVolume >= 1) then {
     if (_saline > 1) then {
@@ -123,4 +124,4 @@ if (_totalIvVolume >= 1) then {
     };
 };
 
-_patient setVariable ["ace_medical_ivBags", _newArray, true];
+_patient setVariable [QACEGVAR(medical,ivBags), _newArray, true];

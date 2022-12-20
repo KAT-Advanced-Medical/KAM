@@ -29,4 +29,4 @@ if (_ph > 750) then {
     _output = LLSTRING(breath_good);
 };
 
-[_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+[_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);

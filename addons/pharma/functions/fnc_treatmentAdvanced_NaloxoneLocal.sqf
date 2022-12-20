@@ -4,21 +4,20 @@
  * Locates and Removes 1x Morphine after the administration of Naloxone.
  *
  * Arguments:
- * 0: Medic <OBJECT>
- * 1: Item Classname <STRING>
+ * 0: Patient <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, "Naloxone"] call kat_pharma_fnc_treatmentAdvanced_NaloxoneLocal;
+ * [player] call kat_pharma_fnc_treatmentAdvanced_NaloxoneLocal;
  *
  * Public: No
  */
 
 params ["_patient"];
 
-private _medicationArray = _patient getVariable ["ace_medical_medications", []];
+private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
 
 {
     _x params ["_medication"];
@@ -28,4 +27,4 @@ private _medicationArray = _patient getVariable ["ace_medical_medications", []];
     };
 } forEach (_medicationArray);
 
-_patient setVariable ["ace_medical_medications", _medicationArray, true];
+_patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];

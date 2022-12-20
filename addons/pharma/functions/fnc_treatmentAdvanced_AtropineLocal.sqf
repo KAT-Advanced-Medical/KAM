@@ -17,7 +17,7 @@
  
 params ["_patient"];
 
-private _medicationArray = _patient getVariable ["ace_medical_medications", []];
+private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
 
 {
     _x params ["_medication"];
@@ -27,4 +27,4 @@ private _medicationArray = _patient getVariable ["ace_medical_medications", []];
     };
 } forEach (_medicationArray);
 
-_patient setVariable ["ace_medical_medications", _medicationArray, true];
+_patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];

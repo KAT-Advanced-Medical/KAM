@@ -19,41 +19,41 @@
 
 // Check if menu should stay open for target
 if(isNUll findDisplay 312) then {
-    if !([ACE_player, ace_medical_gui_target, ["isNotInside", "isNotSwimming"]] call ace_common_fnc_canInteractWith && {[ACE_player, ace_medical_gui_target] call ace_medical_gui_fnc_canOpenMenu}) then {
+    if !([ACE_player, ACEGVAR(medical_gui,target), ["isNotInside", "isNotSwimming"]] call ACEFUNC(common,canInteractWith) && {[ACE_player, ACEGVAR(medical_gui,target)] call ACEFUNC(medical_gui,canOpenMenu)}) then {
         closeDialog 0;
         // Show hint if distance condition failed
-        if ((ACE_player distance ace_medical_gui_target > ace_medical_gui_maxDistance) && {vehicle ACE_player != vehicle ace_medical_gui_target}) then {
-            [["$STR_ACE_Medical_DistanceToFar", ace_medical_gui_target call ace_common_fnc_getName], 2] call ace_common_fnc_displayTextStructured;
+        if ((ACE_player distance ACEGVAR(medical_gui,target) > ACEGVAR(medical_gui,maxDistance)) && {vehicle ACE_player != vehicle ACEGVAR(medical_gui,target)}) then {
+            [[ACECSTRING(Medical,DistanceToFar), ACEGVAR(medical_gui,target) call ACEFUNC(common,getName)], 2] call ACEFUNC(common,displayTextStructured);
         };
     };
 };
 
 // Get the Medical Menu display
-private _display = uiNamespace getVariable ["ace_medical_gui_menuDisplay", displayNull];
+private _display = uiNamespace getVariable [QACEGVAR(medical_gui,menuDisplay), displayNull];
 if (isNull _display) exitWith {};
 
 // Update treatment category buttons
-[_display] call ace_medical_gui_fnc_updateCategories;
+[_display] call ACEFUNC(medical_gui,updateCategories);
 
 // Update treatment actions for current category
-[_display] call ace_medical_gui_fnc_updateActions;
+[_display] call ACEFUNC(medical_gui,updateActions);
 
 // Update injury list
 private _ctrlInjuries = _display displayCtrl IDC_INJURIES;
-[_ctrlInjuries, ace_medical_gui_target, ace_medical_gui_selectedBodyPart] call ace_medical_gui_fnc_updateInjuryList;
+[_ctrlInjuries, ACEGVAR(medical_gui,target), ACEGVAR(medical_gui,selectedBodyPart)] call ACEFUNC(medical_gui,updateInjuryList);
 
 // Update body image
 private _ctrlBodyImage = _display displayCtrl IDC_BODY_GROUP;
-[_ctrlBodyImage, ace_medical_gui_target] call ace_medical_gui_fnc_updateBodyImage;
+[_ctrlBodyImage, ACEGVAR(medical_gui,target)] call ACEFUNC(medical_gui,updateBodyImage);
 
 // Update activity and quick view logs
 private _ctrlActivityLog = _display displayCtrl IDC_ACTIVITY;
-private _activityLog = ace_medical_gui_target getVariable [MED_LOG_VARNAME("activity"), []];
-[_ctrlActivityLog, _activityLog] call ace_medical_gui_fnc_updateLogList;
+private _activityLog = ACEGVAR(medical_gui,target) getVariable [MED_LOG_VARNAME("activity"), []];
+[_ctrlActivityLog, _activityLog] call ACEFUNC(medical_gui,updateLogList);
 
 private _ctrlQuickView = _display displayCtrl IDC_QUICKVIEW;
-private _quickView = ace_medical_gui_target getVariable [MED_LOG_VARNAME("quick_view"), []];
-[_ctrlQuickView, _quickView] call ace_medical_gui_fnc_updateLogList;
+private _quickView = ACEGVAR(medical_gui,target) getVariable [MED_LOG_VARNAME("quick_view"), []];
+[_ctrlQuickView, _quickView] call ACEFUNC(medical_gui,updateLogList);
 
 // Update triage status
-[_display, ace_medical_gui_target] call ace_medical_gui_fnc_updateTriageStatus;
+[_display, ACEGVAR(medical_gui,target)] call ACEFUNC(medical_gui,updateTriageStatus);

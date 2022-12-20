@@ -4,18 +4,19 @@
  * Local function for EACA treatment
  *
  * Arguments:
- * 0: Medic <OBJECT>
+ * 0: Patient <OBJECT>
+ * 1: Body Part <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [_patient] call kat_pharma_fnc_treatmentAdvanced_EACALocal;
+ * [_patient, "LeftArm"] call kat_pharma_fnc_treatmentAdvanced_EACALocal;
  *
  * Public: No
  */
 
-params ["_patient"];
+params ["_patient","_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
@@ -41,7 +42,7 @@ if (_IVactual > 1) then {
     params ["_args", "_idPFH"];
     _args params ["_patient"];
 
-    private _stitchableWounds = _patient call ace_medical_treatment_fnc_getStitchableWounds;
+    private _stitchableWounds = _patient call ACEFUNC(medical_treatment,getStitchableWounds);
     private _alive = alive _patient;
 
     if ((!_alive) || (_stitchableWounds isEqualTo [])) exitWith {

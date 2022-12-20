@@ -6,22 +6,17 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
  *
  * Return Value:
- * Succesful treatment started <BOOL>
+ * None
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_accuvac;
+ * [player, cursorTarget, "LeftArm"] call kat_airway_fnc_treatmentAdvanced_accuvac;
  *
  * Public: Yes
  */
 
 params ["_medic", "_patient", "_bodyPart"];
 
-if (local _patient) then {
-    [QGVAR(flushLocal), [_medic, _patient, _bodyPart]] call CBA_fnc_localEvent;
-} else {
-    [QGVAR(flushLocal), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
-};
-
-true;
+[QGVAR(flushLocal), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;

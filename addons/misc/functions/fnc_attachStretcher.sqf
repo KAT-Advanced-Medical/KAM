@@ -41,7 +41,7 @@ private _actions = [];
                 {true},
                 {},
                 [_x]
-            ] call ace_interact_menu_fnc_createAction,
+            ] call ACEFUNC(interact_menu,createAction),
             [],
             _target
         ];

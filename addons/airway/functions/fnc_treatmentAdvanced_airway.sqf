@@ -6,23 +6,24 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Treatment classname <STRING>
+ * 2: Body Part <STRING>
+ * 3: Treatment <STRING>
+ * 4: Item User (not used) <OBJECT>
+ * 5: Used Item <STRING>
  *
  * Return Value:
- * Succesful treatment started <BOOL>
+ * None
  *
  * Example:
- * [player, cursorTarget, "Larynxtubus"] call kat_airway_fnc_treatmentAdvanced_airway;
+ * [player, cursorTarget, "Head", "Larynxtubus", objNull, "kat_larynx"] call kat_airway_fnc_treatmentAdvanced_airway;
  *
  * Public: No
  */
 
-params ["_caller", "_target", "_className"];
+params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
-if (local _target) then {
-    ["treatmentAirway", [_caller, _target, _className]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentAirway", [_caller, _target, _className], _target] call CBA_fnc_targetEvent;
-};
+[_patient, _usedItem] call ACEFUNC(medical_treatment,addToTriageCard);
+[_patient, "activity", LSTRING(airway_log), [[_medic] call ACEFUNC(common,getName), getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "activity_view", LSTRING(airway_log), [[_medic] call ACEFUNC(common,getName), getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);
 
-true;
+[QGVAR(airwayLocal), [_medic, _patient, _classname, _usedItem], _patient] call CBA_fnc_targetEvent;

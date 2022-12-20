@@ -20,7 +20,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(fractureCheck_Time);
         items[] = {};
         condition = QUOTE(([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(fractureCheck)) && (GVAR(enable_fracture)));
-        patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(fractureSelect));
     };
     class ClosedReduction: CheckFracture {
@@ -34,7 +33,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(closedTime);
         items[] = {};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 1)] call FUNC(fractureCheck));
-        patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(closedFracture));
     };
     class OpenReduction: CheckFracture {
@@ -47,8 +45,8 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(openTime);
         items[] = {"kat_plate"};
+        consumeItem = 1;
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.5)] call FUNC(openFractureCheck));
-        patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(openFracture));
     };
     class Expose: BasicBandage {
@@ -63,7 +61,6 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_retractor"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openFractureCheck));
         consumeItem = 0;
-        patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openFractureProgress));
     };
     class Incision: BasicBandage {
@@ -77,7 +74,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(incisionTime);
         items[] = {"kat_scalpel"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(openFractureCheck));
-        patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, _bodyPart)] call FUNC(openFractureIncision));
     };
     class Clamp: BasicBandage {
@@ -92,7 +88,6 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_clamp"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call FUNC(openFractureCheck));
         consumeItem = 0;
-        patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call FUNC(openFractureProgress));
     };
     class Irrigate: BasicBandage {
@@ -106,7 +101,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"ACE_salineIV_250"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openFractureCheck));
-        patientStateCondition = 0;
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openFractureProgress));
     };
     class Debridement: BasicBandage {

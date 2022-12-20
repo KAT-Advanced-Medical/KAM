@@ -37,7 +37,7 @@ if (_liveFracture != 0) exitWith {
     if (_liveFracture == 1) then {
         _fractureString = LSTRING(SIMPLE_FRACTURE);
     };
-    [_patient, "quick_view", LSTRING(fracture_log), [_fractureString, STRING_BODY_PARTS select _part]] call ace_medical_treatment_fnc_addToLog;  
+    [_patient, "quick_view", LSTRING(fracture_log), [_fractureString, STRING_BODY_PARTS select _part]] call ACEFUNC(medical_treatment,addToLog);  
 };
 
 private _value = random 100;
@@ -56,7 +56,7 @@ if (_value <= GVAR(simpleChance)) then {
     };
 };
 
-[_patient, "quick_view", LSTRING(fracture_log), [_fractureString, STRING_BODY_PARTS select _part]] call ace_medical_treatment_fnc_addToLog;
+[_patient, "quick_view", LSTRING(fracture_log), [_fractureString, STRING_BODY_PARTS select _part]] call ACEFUNC(medical_treatment,addToLog);
 _fractureArray set [_part, _liveFracture];
 
 _patient setVariable [QGVAR(fractures), _fractureArray, true];

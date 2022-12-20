@@ -4,7 +4,7 @@ class CfgVehicles {
     class kat_larynxItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= CSTRING(Larynx_Display);
+        displayName= CSTRING(Larynxtubus_Display);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
@@ -14,7 +14,7 @@ class CfgVehicles {
     class kat_guedelItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= CSTRING(Guedel_Display);
+        displayName= CSTRING(Guedeltubus_Display);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {

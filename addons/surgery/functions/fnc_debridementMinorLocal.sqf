@@ -24,12 +24,12 @@ private _debridement = _patient getVariable [QGVAR(debridement), [0,0,0,0,0,0]];
 
 if ((_debridement select _part) != 1) exitWith {
     private _output = localize LSTRING(debridement_fail);
-    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
-private _count1 = [_patient, "Lidocaine"] call ace_medical_status_fnc_getMedicationCount;
-private _count2 = [_patient, "Morphine"] call ace_medical_status_fnc_getMedicationCount;
-private _damage = _patient getVariable ["ace_medical_bodyPartDamage", [0,0,0,0,0,0]];
+private _count1 = [_patient, "Lidocaine"] call ACEFUNC(medical_status,getMedicationCount);
+private _count2 = [_patient, "Morphine"] call ACEFUNC(medical_status,getMedicationCount);
+private _damage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), [0,0,0,0,0,0]];
 
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
 private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
@@ -79,7 +79,7 @@ _patient setVariable [QGVAR(debridement), _debridement, true];
 
 if !(_remainder) then {
     _damage set [_part, 0];
-    _patient setVariable ["ace_medical_bodyPartDamage", _damage, true];
+    _patient setVariable [QACEGVAR(medical,bodyPartDamage), _damage, true];
 
     {
         _x params ["_id", "_bodyPart", "_amount"];
@@ -93,5 +93,5 @@ if !(_remainder) then {
     _patient setVariable [VAR_OPEN_WOUNDS, _open, true];
 };
 
-[_patient] call ace_medical_engine_fnc_updateDamageEffects;
-[_patient] call ace_medical_engine_fnc_updateWoundBleedLoss;
+[_patient] call ACEFUNC(medical_engine,updateDamageEffects);
+[_patient] call ACEFUNC(medical_engine,updateWoundBleedLoss);

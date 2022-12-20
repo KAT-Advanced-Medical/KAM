@@ -4,7 +4,7 @@
         <Key ID="STR_kat_zeus_ModuleManageAirway_Obstruction">
             <English>Airway obstruction: </English>
             <German>Atemwegsobstruktion: </German>
-            <Czech>Zablokování dýchacích cest: </Czech>
+            <Czech>Obstrukce dýchacích cest: </Czech>
             <French>Obstruction des voies aériennes: </French>
             <Polish>Zator dróg oddechowych: </Polish>
             <Spanish>Obstrucción de vías aéreas: </Spanish>
@@ -13,13 +13,13 @@
             <Chinese>气道闭塞: </Chinese>
             <Japanese>気道閉塞:</Japanese>
             <Russian>Обструкция дыхательных путей:</Russian>
-            <Italian>Ostruzione delle vie aeree.</Italian>
+            <Italian>Ostruzione delle vie aeree</Italian>
             <Chinesesimp>气道闭塞:</Chinesesimp>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Occlusion">
             <English>Airway occlusion: </English>
             <German>Atemwegsverstopfung: </German>
-            <Czech>Uzavření dýchacích cest: </Czech>
+            <Czech>Okluze dýchacích cest: </Czech>
             <Polish>Zablokowanie dróg oddechowych: </Polish>
             <Spanish>Oclusión de vías aéreas: </Spanish>
             <French>Occlusion des voies aériennes:</French>
@@ -28,7 +28,7 @@
             <Turkish>Hava yolu tıkanıklığı: </Turkish>
             <Japanese>気道異物:</Japanese>
             <Russian>Окклюзия дыхательных путей:</Russian>
-            <Italian>Occlusione delle vie aeree.</Italian>
+            <Italian>Occlusione delle vie aeree</Italian>
             <Chinesesimp>气道阻塞:</Chinesesimp>
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_Pneumothorax">
@@ -36,7 +36,7 @@
             <German>Pneumothorax: </German>
             <Czech>Pneumotorax: </Czech>
             <French>Pneumothorax: </French>
-            <Polish>Odma opłucna: </Polish>
+            <Polish>Odma opłucnowa: </Polish>
             <Spanish>Neumotórax: </Spanish>
             <Korean>기흉 활성화: </Korean>
             <Chinese>气胸:</Chinese>
@@ -206,7 +206,7 @@
             <Chinese>可休克(VF/PVT)</Chinese>
             <Korean>쇼크성 심정지(VF/PVT)</Korean>
             <Turkish>Şok Edilebilir (VF/PVT)</Turkish>
-            <Japanese>ショック可能(VF/PVT)</Japanese>
+            <Japanese>ショック可能 (VF/PVT)</Japanese>
             <Russian>Шокирующий (VF/PVT)</Russian>
             <Italian>Defibrillabile (VF/PVT)</Italian>
             <Chinesesimp>电击类型(VF/PVT)</Chinesesimp>
@@ -214,14 +214,14 @@
         <Key ID="STR_kat_zeus_shockablestate_Module_non_shockable">
             <English>non-shockable (Asystole)</English>
             <German>Nicht-Schockbar (Asystolie)</German>
-            <Czech>Nešokovatelný (Asystola)</Czech>
+            <Czech>Nešokovatelný (Asystolie)</Czech>
             <French>Non-choquable (Asystolie) </French>
             <Polish>Niedefibrylacyjny (Asystolia)</Polish>
             <Spanish>No desfibrilable (Asístolia)</Spanish>
             <Chinese>非休克性 (Asystole)</Chinese>
             <Korean>비-쇼크성 심정지(심부전수축)</Korean>
             <Turkish>şoklanamaz (Asistoli)</Turkish>
-            <Japanese>ショック不可(心静止)</Japanese>
+            <Japanese>ショック不要 (心静止)</Japanese>
             <Russian>Без шока (асистолия)</Russian>
             <Italian>Non defibrillabile (Asistolia)</Italian>
             <Chinesesimp>非电击类型(心搏停止)</Chinesesimp>
@@ -236,7 +236,7 @@
             <Chinese>放在一个单元上。</Chinese>
             <Korean>유닛에 배치하십시오.</Korean>
             <Turkish>Bir üniteye yerleştirin.</Turkish>
-            <Japanese>ユニットに置きます。</Japanese>
+            <Japanese>ユニットに置いてください。</Japanese>
             <Russian>Поместите на единицу.</Russian>
             <Italian>Piazza su un'unità</Italian>
             <Chinesesimp>放置在一个单元上</Chinesesimp>
@@ -289,7 +289,7 @@
         <Key ID="STR_kat_zeus_sliderFormat13was23">
             <English>%1%3 (was %2%3)</English>
             <German>%1%3 (war %2%3)</German>
-            <Czech>%1%3 (bylo %2%3)</Czech>
+            <Czech>%1%3 (było %2%3)</Czech>
             <French>%1%3 (était %2%3)</French>
             <Polish>%1%3 (było %2%3)</Polish>
             <Spanish>%1%3 (era %2%3)</Spanish>

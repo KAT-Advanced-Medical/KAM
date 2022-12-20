@@ -21,7 +21,7 @@ class CfgVehicles {
     class kat_AEDItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_KAT_circulation_AED_DISPLAYNAME";
+        displayName = CSTRING(AED_DISPLAYNAME);
         author = "Katalam";
         vehicleClass = "Items";
         model = "\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d";
@@ -53,33 +53,35 @@ class CfgVehicles {
     class kat_medicalSupplyCrate: ACE_medicalSupplyCrate {
         displayName = CSTRING(bloodbank);
         class TransportItems: TransportItems {
-            MACRO_ADDITEM(kat_crossPanel,5);
-            MACRO_ADDITEM(kat_bloodIV_O,5);
-            MACRO_ADDITEM(kat_bloodIV_O_N,5);
-            MACRO_ADDITEM(kat_bloodIV_A,10);
-            MACRO_ADDITEM(kat_bloodIV_A_N,10);
-            MACRO_ADDITEM(kat_bloodIV_B,10);
-            MACRO_ADDITEM(kat_bloodIV_B_N,10);
-            MACRO_ADDITEM(kat_bloodIV_AB,10);
-            MACRO_ADDITEM(kat_bloodIV_AB_N,10);
-            MACRO_ADDITEM(kat_bloodIV_O_500,5);
-            MACRO_ADDITEM(kat_bloodIV_O_500_N,5);
-            MACRO_ADDITEM(kat_bloodIV_A_500,10);
-            MACRO_ADDITEM(kat_bloodIV_A_500_N,10);
-            MACRO_ADDITEM(kat_bloodIV_B_500,10);
-            MACRO_ADDITEM(kat_bloodIV_B_500_N,10);
-            MACRO_ADDITEM(kat_bloodIV_AB_500,10);
-            MACRO_ADDITEM(kat_bloodIV_AB_500_N,10);
-            MACRO_ADDITEM(kat_bloodIV_O_250,5);
-            MACRO_ADDITEM(kat_bloodIV_O_250_N,5);
-            MACRO_ADDITEM(kat_bloodIV_A_250,10);
-            MACRO_ADDITEM(kat_bloodIV_A_250_N,10);
-            MACRO_ADDITEM(kat_bloodIV_B_250,10);
-            MACRO_ADDITEM(kat_bloodIV_B_250_N,10);
-            MACRO_ADDITEM(kat_bloodIV_AB_250,10);
-            MACRO_ADDITEM(kat_bloodIV_AB_250_N,10);
-            MACRO_ADDITEM(KAT_Empty_bloodIV_500,10);
-            MACRO_ADDITEM(KAT_Empty_bloodIV_250,20);
+            MACRO_ADDITEM(kat_crossPanel,2);
+            MACRO_ADDITEM(kat_IO_FAST,15);
+            MACRO_ADDITEM(kat_IV_16,15);
+            MACRO_ADDITEM(KAT_Empty_bloodIV_250,7);
+            MACRO_ADDITEM(KAT_Empty_bloodIV_500,7);
+            MACRO_ADDITEM(kat_bloodIV_O,7);
+            MACRO_ADDITEM(kat_bloodIV_O_N,7);
+            MACRO_ADDITEM(kat_bloodIV_A,7);
+            MACRO_ADDITEM(kat_bloodIV_A_N,7);
+            MACRO_ADDITEM(kat_bloodIV_B,7);
+            MACRO_ADDITEM(kat_bloodIV_B_N,7);
+            MACRO_ADDITEM(kat_bloodIV_AB,7);
+            MACRO_ADDITEM(kat_bloodIV_AB_N,7);
+            MACRO_ADDITEM(kat_bloodIV_O_500,7);
+            MACRO_ADDITEM(kat_bloodIV_O_N_500,7);
+            MACRO_ADDITEM(kat_bloodIV_A_500,7);
+            MACRO_ADDITEM(kat_bloodIV_A_N_500,7);
+            MACRO_ADDITEM(kat_bloodIV_B_500,7);
+            MACRO_ADDITEM(kat_bloodIV_B_N_500,7);
+            MACRO_ADDITEM(kat_bloodIV_AB_500,7);
+            MACRO_ADDITEM(kat_bloodIV_AB_N_500,7);
+            MACRO_ADDITEM(kat_bloodIV_O_250,7);
+            MACRO_ADDITEM(kat_bloodIV_O_N_250,7);
+            MACRO_ADDITEM(kat_bloodIV_A_250,7);
+            MACRO_ADDITEM(kat_bloodIV_A_N_250,7);
+            MACRO_ADDITEM(kat_bloodIV_B_250,7);
+            MACRO_ADDITEM(kat_bloodIV_B_N_250,7);
+            MACRO_ADDITEM(kat_bloodIV_AB_250,7);
+            MACRO_ADDITEM(kat_bloodIV_AB_N_250,7);
         };
     };
 
@@ -89,24 +91,12 @@ class CfgVehicles {
             class ACE_Head {
                 class CheckBloodPressure {}; // Remove the ability to check blood pressure at the head
             };
-            class ACE_ArmLeft {
-                #include "Blood_ArmL.hpp"
-            };
-            class ACE_ArmRight {
-                #include "Blood_ArmR.hpp"
-            };
-            class ACE_LegLeft {
-                #include "Blood_LegL.hpp"
-            };
-            class ACE_LegRight {
-                #include "Blood_LegR.hpp"
-            };
         };
         class ACE_SelfActions {
             class Medical {
-            class ACE_Head {
-            class CheckBloodPressure {};
-            };
+                class ACE_Head {
+                    class CheckBloodPressure {};
+                };
             };
             class ACE_Equipment {
                 class removeSound {
@@ -134,7 +124,7 @@ class CfgVehicles {
                     icon = "";
                 };
                 class placeAED {
-                    displayName="$STR_KAT_circulation_place_AED";
+                    displayName=CSTRING(place_AED);
                     condition="'kat_AED' in (items ACE_player)";
                     exceptions[]=
                     {

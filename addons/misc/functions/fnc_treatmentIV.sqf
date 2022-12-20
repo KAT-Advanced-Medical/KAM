@@ -32,4 +32,4 @@ switch (_className) do {
 };
 
 [_player, _value] call FUNC(removeIVbag);
-[_player, _target, _bodyPart, _className, objNull, _item] call ace_medical_treatment_fnc_ivBag;
+[_player, _target, _bodyPart, _className, objNull, _item] call ACEFUNC(medical_treatment,ivBag);

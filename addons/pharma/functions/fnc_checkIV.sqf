@@ -4,7 +4,7 @@
  * Checks Limb Damage before and IV can be used.
  *
  * Arguments:
- * 0: Medic <OBJECT>
+ * 0: Medic (not used) <OBJECT>
  * 1: Patient <OBJECT>
  * 2: Body Part <STRING>
  *
@@ -23,7 +23,7 @@ if !(GVAR(ivCheckLimbDamage)) exitWith {
     true
 };
 
-private _bodyPartDamage = _patient getVariable ["ace_medical_bodyPartDamage", [0, 0, 0, 0, 0, 0]];
+private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0]];
 private _compare = ALL_BODY_PARTS find toLower _bodyPart;
 private _final2 = 0;
 private _return = false;

@@ -77,3 +77,5 @@ releases/*
 keys/*
 .hemtt/local
 ####
+hemtt.exe
+ArmaScriptCompiler.exe

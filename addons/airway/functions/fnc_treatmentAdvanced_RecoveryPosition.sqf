@@ -11,17 +11,13 @@
  * None
  *
  * Example:
- * call kat_breathing_fnc_RecoveryPosition
+ * [player, cursorTarget] call kat_airway_fnc_RecoveryPosition
  *
  * Public: No
  */
 
 params ["_medic", "_patient"];
 
-if (local _patient) then {
-    ["treatmentRecoveryPosition", [_medic, _patient]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentRecoveryPosition", [_medic, _patient], _patient] call CBA_fnc_targetEvent;
-};
+[_patient, "activity", LSTRING(RecoveryPosition_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 
-true;
+[QGVAR(recoveryPositionLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;

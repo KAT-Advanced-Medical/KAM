@@ -29,7 +29,7 @@ if !(local _logic) exitWith {};
         if !(_unit isKindOf "CAManBase") then {
             [LSTRING(OnlyInfantry)] call FUNC(showMessage);
         } else {
-            [_unit] call ace_medical_gui_fnc_openMenu;
+            [_unit] call ACEFUNC(medical_gui,openMenu);
         };
     };
 

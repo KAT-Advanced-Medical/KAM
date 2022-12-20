@@ -23,7 +23,7 @@ params ["_medic", "_patient", "_bodyPart", "_entry"];
 if (GVAR(uncon_requieredForAction)) then {
     if !(IS_UNCONSCIOUS(_patient)) exitWith {
         private _output = LLSTRING(fracture_fail);
-        [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+        [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
     };
 };
 
@@ -47,7 +47,7 @@ if (_liveFracture > 3) then {
 
 if (_entry == 2.3 && _reduce) exitWith {
     private _output = LLSTRING(fracture_fail);
-    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
 if (_number == _liveFracture) exitWith {
@@ -63,7 +63,7 @@ if (_number == _liveFracture) exitWith {
         };
     };
 
-    [_patient, "quick_view", LSTRING(surgery_log), [[_medic] call ace_common_fnc_getName, _surgeryString, STRING_BODY_PARTS select _part]] call ace_medical_treatment_fnc_addToLog;  
+    [_patient, "quick_view", LSTRING(surgery_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select _part]] call ACEFUNC(medical_treatment,addToLog);  
 
     _liveFracture = _liveFracture + 0.2;
 
@@ -76,4 +76,4 @@ if (_number == _liveFracture) exitWith {
 };
 
 private _output = LLSTRING(fracture_fail);
-[_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+[_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);

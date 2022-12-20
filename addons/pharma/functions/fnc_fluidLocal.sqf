@@ -5,13 +5,14 @@
  *
  * Arguments:
  * 0: Patient <OBJECT>
- * 1: PH Value <NUMBER>
+ * 1: pH value <NUMBER>
+ * 2: Coagulation factors value <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, 10] call aceP_circulation_fnc_coagulationLocal;
+ * [player, 500, 10] call kat_pharma_fnc_fluidLocal;
  *
  * Public: No
  */

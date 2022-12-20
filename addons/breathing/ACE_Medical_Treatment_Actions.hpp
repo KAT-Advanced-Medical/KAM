@@ -11,7 +11,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         items[] = {"kat_Pulseoximeter"};
         condition = "kat_breathing_enable && !(_patient getVariable ['kat_breathing_pulseoximeter', false])";
-        patientStateCondition = 0;
         callbackSuccess = QFUNC(treatmentAdvanced_pulseoximeter);
         callbackFailure = "";
         callbackProgress = "";
@@ -36,7 +35,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         items[] = {};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(pulseoximeter), false)]);
-        patientStateCondition = 0;
         callbackSuccess = QFUNC(treatmentAdvanced_removePulseoximeter);
         callbackFailure = "";
         callbackProgress = "";
@@ -51,7 +49,7 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
     };
     class ChestSeal {
-        displayName = CSTRING(pneumothorax_display);
+        displayName = CSTRING(chestseal_display);
         displayNameProgress = CSTRING(treating);
         category = "airway";
         treatmentLocations = 0;
@@ -61,8 +59,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 7;
         items[] = {"kat_chestSeal"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_chestSeal));
+        callbackSuccess = QFUNC(treatmentAdvanced_chestSeal);
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -86,8 +83,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_hemopneumothorax));
+        callbackSuccess = QFUNC(treatmentAdvanced_hemopneumothorax);
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -111,8 +107,31 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
-        patientStateCondition = 0;
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_tensionpneumothorax));
+        callbackSuccess = QFUNC(treatmentAdvanced_tensionpneumothorax);
+        callbackFailure = "";
+        callbackProgress = "";
+        consumeItem = 1;
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
+        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        litter[] = {};
+    };
+    class ncdKit: TensionpneumothoraxTreatment {
+        displayName = CSTRING(tensionpneumothoraxNCDKit_display);
+        displayNameProgress = CSTRING(treating);
+        category = "airway";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
+        treatmentTime = 7;
+        items[] = {"kat_ncdKit"};
+        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        callbackSuccess = QFUNC(treatmentAdvanced_tensionpneumothorax);
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
