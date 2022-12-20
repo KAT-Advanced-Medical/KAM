@@ -206,7 +206,7 @@
             <Chinese>可休克(VF/PVT)</Chinese>
             <Korean>쇼크성 심정지(VF/PVT)</Korean>
             <Turkish>Şok Edilebilir (VF/PVT)</Turkish>
-            <Japanese>ショック可能(VF/PVT)</Japanese>
+            <Japanese>ショック可能 (VF/PVT)</Japanese>
             <Russian>Шокирующий (VF/PVT)</Russian>
             <Italian>Defibrillabile (VF/PVT)</Italian>
             <Chinesesimp>电击类型(VF/PVT)</Chinesesimp>
@@ -221,7 +221,7 @@
             <Chinese>非休克性 (Asystole)</Chinese>
             <Korean>비-쇼크성 심정지(심부전수축)</Korean>
             <Turkish>şoklanamaz (Asistoli)</Turkish>
-            <Japanese>ショック不可(心静止)</Japanese>
+            <Japanese>ショック不要 (心静止)</Japanese>
             <Russian>Без шока (асистолия)</Russian>
             <Italian>Non defibrillabile (Asistolia)</Italian>
             <Chinesesimp>非电击类型(心搏停止)</Chinesesimp>
@@ -236,7 +236,7 @@
             <Chinese>放在一个单元上。</Chinese>
             <Korean>유닛에 배치하십시오.</Korean>
             <Turkish>Bir üniteye yerleştirin.</Turkish>
-            <Japanese>ユニットに置きます。</Japanese>
+            <Japanese>ユニットに置いてください。</Japanese>
             <Russian>Поместите на единицу.</Russian>
             <Italian>Piazza su un'unità</Italian>
             <Chinesesimp>放置在一个单元上</Chinesesimp>
