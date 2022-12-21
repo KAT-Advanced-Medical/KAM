@@ -68,4 +68,4 @@ params ["_target", "_player", "_newML"];
 
         // use item
         [_player, _player, [_classNameItem]] call ACEFUNC(medical_treatment,useItem);
-    }, {}, localize LSTRING(Action_add_IV)] call ACEFUNC(common,progressBar);
+    }, {}, LLSTRING(Action_add_IV)] call ACEFUNC(common,progressBar);

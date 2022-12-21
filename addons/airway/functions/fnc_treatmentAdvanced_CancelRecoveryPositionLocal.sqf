@@ -21,5 +21,5 @@ params ["_medic", "_patient"];
 _patient setVariable [QGVAR(recovery), false, true];
 _patient setVariable [QGVAR(overstretch), false, true];
 
-private _output = localize LSTRING(Recovery_Cancel);
+private _output = LLSTRING(Recovery_Cancel);
 [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);

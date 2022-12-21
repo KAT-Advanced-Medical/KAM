@@ -21,7 +21,7 @@ params ["_medic", "_patient", "_bodyPart"];
 
 if (GVAR(uncon_requieredForAction)) then {
     if !(IS_UNCONSCIOUS(_patient)) exitWith {
-        private _output = localize LSTRING(fracture_fail);
+        private _output = LLSTRING(fracture_fail);
         [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
     };
 };

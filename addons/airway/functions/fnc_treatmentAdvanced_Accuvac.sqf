@@ -23,7 +23,7 @@
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
 if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
-    private _output = localize LSTRING(Accuvac_NA);
+    private _output = LLSTRING(Accuvac_NA);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
