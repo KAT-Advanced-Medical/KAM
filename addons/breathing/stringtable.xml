@@ -488,23 +488,31 @@
             <Japanese>NCDキット (Needle Chest Decompression, 胸部針減圧術)は、緊張性気胸の治療用に設計された使い捨てキットです。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
-            <English>Hemothorax / Tension Pneumothorax Chance</English>
-            <German>Hämatopneumothorax / Spannungspneumothorax Chance</German>
-            <Polish>Szansa na wystąpienie krwiaka opłucnej lub odmy prężnej</Polish>
-            <Spanish>Probabilidad de hemotórax/neumotórax a tensión</Spanish>
-            <Chinese>血胸胸機會</Chinese>
-            <Chinesesimp>血气胸/张力性气胸概率</Chinesesimp>
-            <Czech>Šance na hemotorax / tenzní pneumotorax</Czech>
-            <Korean>혈기흉 발생 확률</Korean>
-            <French>Chance d'avoir un hémopneumothorax / pneumothorax sous tension</French>
-            <Turkish>Hemotoraks / Gerilim Pnömotoraks Şansı</Turkish>
-            <Italian>Probabilità di un emo/pneumotorace iperteso</Italian>
-            <Russian>Гемоторакс / Напряженный пневмоторакс Вероятность</Russian>
-            <Japanese>血気胸/緊張性気胸の可能性</Japanese>
+            <English>Hemopneumothorax Chance</English>
+            <German>Hämatopneumothorax Chance</German>
+            <Polish>Szansa na wystąpienie krwiaka opłucnej</Polish>
+            <Spanish>Probabilidad de hemotórax</Spanish>
+            <Czech>Šance na hemotorax</Czech>
+            <French>Chance d'avoir un hémopneumothorax</French>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
+            <English>Sets the chance for hemopneumothorax. Also sets the chance for tenstion pneumothorax (60% Hemo = 40% Tension)</English>
+            <Polish>Ustawia szansę na krwiaka opłucnej. \nPonadto ustawia szansę dla odmy prężnej (60% Krwiak = 40% Prężna)</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_ADVANCED_PTX_OPTION">
+            <English>Enable Advanced Pneumothoraxes</English>
+            <Polish>Włącz zaawansowane odmiany odmy opłucnowej</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_DESCRIPTION_ADVANCED_PTX_OPTION">
+            <English>Enables advanced pneumothoraxes - hemopneumothorax and tensionpneumothorax</English>
+            <Polish>Włącza zaawansowane odmiany odmy opłucnowej - krwiaka opłucnej oraz odmę prężną</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_ADVANCED_PTX_CHANCE_OPTION">
+            <English>Advanced Pneumothorax Chance</English>
+            <Polish>Szansa na wystąpienie zaawansowanych odmian odmy</Polish>
+        </Key>
+        <Key ID="STR_kat_breathing_DESCRIPTION_ADVANCED_PTX_CHANCE_OPTION">
             <English>The percentage chance that a patient will suffer from a hemopneumotorax or tension pneumothorax after they are treated for a pneumothorax. Treatment requires the draining of fluids with the use of an AAT Kit.</English>
-            <German>Die prozentuale Chance, dass ein Patient einen Hämatothorax oder einen Spannungspneumothorax bekommt. Die Behandlung benötigt das Entfernen von Flüssigkeit und das AAT Kit.</German>
             <Polish>Procentowa szansa, że pacjent będzie cierpieć na krwiaka opłucnej lub odmę prężną w tym samym czasie, gdy cierpi na odmę opłucnową. Zabieg wymaga drenażu opłucnej za pomocą zestawu AAT.</Polish>
             <Spanish>La probabilidad de que un paciente sufra un hemotórax/neumotórax a tensión al mismo tiempo que padece un neumotórax. El tratamiento requiere el uso de un kit AAT.</Spanish>
             <Chinese>患者患氣胸的同時患上血胸的機會百分比。 處理需要使用AAT套件排出流體。</Chinese>
