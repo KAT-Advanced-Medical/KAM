@@ -139,7 +139,17 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// % Chance of Hemopneumothorax and Tension Pneumothorax
+// % Chance of Hemopneumothorax and Tension Pneumothorax happening when a Pneumothorax happens
+[
+    QGVAR(advPtxChance),
+    "SLIDER",
+    [LLSTRING(ADVANCED_PTX_CHANCE_OPTION), LLSTRING(DESCRIPTION_ADVANCED_PTX_CHANCE_OPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0, 100, 5, 0, false],
+    true
+] call CBA_Settings_fnc_init;
+
+// % Chance of Hemopneumothorax (rest of % is chance for tension)
 [
     QGVAR(hptxChance),
     "SLIDER",
@@ -151,7 +161,7 @@ PREP_RECOMPILE_END;
 
 //Enable Advanced Pneumothorax
 [
-    QGVAR(advPtxChance),
+    QGVAR(advPtxEnable),
     "CHECKBOX",
     [LLSTRING(ADVANCED_PTX_OPTION), LLSTRING(DESCRIPTION_ADVANCED_PTX_OPTION)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
