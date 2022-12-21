@@ -37,7 +37,7 @@ if (random 100 <= GVAR(pneumothoraxChance)) then {
     _unit setVariable [QGVAR(pneumothorax), true, true];
 
     // Prevent the patient from getting both hemothorax and tension pneumothorax at the same time
-    if (GVAR(advPtxChance) && !(_hemo || _tension) && GVAR(advPtxEnable)) then {
+    if (random 100 <= GVAR(advPtxChance) && !(_hemo || _tension) && GVAR(advPtxEnable)) then {
         [_unit, 0.7] call ACEFUNC(medical_status,adjustPainLevel);
 
         if (random 100 <= GVAR(hptxChance)) then {
