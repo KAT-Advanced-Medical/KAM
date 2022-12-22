@@ -12,6 +12,7 @@ PREP(inspectCatheter);
 PREP(removeItemfromMag);
 PREP(removeIV);
 PREP(retrieveIV);
+PREP(painkillerStart);
 PREP(salineCheck);
 PREP(treatmentAdvanced_Amiodarone);
 PREP(treatmentAdvanced_AmiodaroneLocal);
@@ -47,3 +48,4 @@ PREP(treatmentAdvanced_ReorientationLocal);
 PREP(treatmentAdvanced_TXA);
 PREP(treatmentAdvanced_TXALocal);
 PREP(vehicleCheckDialysis);
+

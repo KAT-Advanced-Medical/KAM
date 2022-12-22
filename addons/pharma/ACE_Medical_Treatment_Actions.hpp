@@ -54,7 +54,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),6,1,15}};
+        callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(painkillerStart));
     };
     class Carbonate: Morphine {
         displayName = CSTRING(Take_Carbonate);
@@ -69,6 +69,7 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
         condition = "[_medic, 'kat_Carbonate'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Carbonate'] call ace_common_fnc_hasMagazine";
         callbackSuccess = QFUNC(treatmentAdvanced_Carbonate);
+        callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(painkillerStart));
     };
     class Pervitin: Morphine {
         displayName = CSTRING(Take_Pervitin);
@@ -81,7 +82,7 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
         condition = "[_medic, 'kat_Pervitin'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Pervitin'] call ace_common_fnc_hasMagazine";
         callbackSuccess = QFUNC(treatmentAdvanced_Pervitin);
-        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),6,1,15}};
+        callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(painkillerStart));
     };
     class Caffeine: Morphine {
         displayName = CSTRING(Take_Caffeine);
@@ -93,7 +94,7 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
         condition = "[_medic, 'kat_Caffeine'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Caffeine'] call ace_common_fnc_hasMagazine";
         callbackSuccess = QFUNC(treatmentAdvanced_Caffeine);
-        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),6,1,15}};
+        callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(painkillerStart));
     };
     class Naloxone: Carbonate {
         displayName = CSTRING(Take_Naloxone);
