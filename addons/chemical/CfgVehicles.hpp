@@ -22,16 +22,7 @@ class cfgVehicles {
             }; 
         };
     };
- 
 
-    class Thing;
-    class ACE_MedicalLitter_antidot: Thing {
-        scope = 1;
-        scopeCurator = 0;
-        displayName = " ";
-        destrType = "DestructNo";
-        icon = QPATHTOF(data\littergeneric_antidote.p3d);
-    };
     class ACE_MedicalLitter_PoisenBP: Thing {
         scope = 1;
         scopeCurator = 0;
@@ -41,22 +32,6 @@ class cfgVehicles {
     };
 
     class Item_Base_F;
-
-    class kat_Antidot_Item: Item_Base_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = CSTRING(AntidotItem);
-        author = "DiGii";
-        vehicleClass = "Items";
-        editorCategory = "EdCat_Equipment";
-        editorSubcategory = "EdSubcat_InventoryItems";
-        class TransportItems {
-            class _xx_kat_Antidot {
-                name = "kat_Antidot";
-                count = 1;
-            };
-        };
-    };
 
     class kat_sealant_Item: Item_Base_F {
         scope = 2;
@@ -123,25 +98,25 @@ class cfgVehicles {
         {
             class Raduis_MAX 
             {
-                displayName = "Maximum Range: ";
+                displayName = CSTRING(UI_max_range);
                 tooltip = CSTRING(GasModule_min_radius_dcs);
                 typeName = "NUMBER";
                 defaultValue = 20;
             };
             class Raduis_MIN
             {
-                displayName = "Minimal Range: ";
+                displayName = CSTRING(UI_min_range);
                 tooltip = CSTRING(GasModule_max_radius_dcs);
                 typeName = "NUMBER";
                 defaultValue = 10;
             };
             class GAS_Type
             {
-                displayName = "Gas Type: ";
+                displayName = CSTRING(UI_gasType);
                 typeName = "STRING";
                 class values {
                     class toxicgas {
-                        name = "Toxic gas (Level 1)";
+                        name = CSTRING(LvL1_Gas);
                         value = "Toxic";
                         default = 1;
                     };
@@ -153,8 +128,8 @@ class cfgVehicles {
             };
             class ISSealabe
             {
-                displayName = "Is sealable?";
-                toolTip = "ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!";
+                displayName = CSTRING(UI_sealable);
+                toolTip = CSTRING(UI_sealable_tooltip);
                 typeName = "BOOL";
                 defaultValue = 0;
             };

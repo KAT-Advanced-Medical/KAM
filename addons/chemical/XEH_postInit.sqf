@@ -1,9 +1,9 @@
 #include "script_component.hpp"
 
 //Events
-[QGVAR(gasCheck), {_this call FUNC(gasCheck)}] call CBA_fnc_addEventHandler;
-[QGVAR(gasCheck_local), {_this call FUNC(gasCheckLocal)}] call CBA_fnc_addEventHandler;
-[QGVAR(gasCheck_ai), {_this call FUNC(gasAI)}] call CBA_fnc_addEventHandler;
+[QGVAR(gasCheck), {LINKFUNC(gasCheck)}] call CBA_fnc_addEventHandler;
+[QGVAR(gasCheck_local), {LINKFUNC(gasCheckLocal)}] call CBA_fnc_addEventHandler;
+[QGVAR(gasCheck_ai), {LINKFUNC(gasAI)}] call CBA_fnc_addEventHandler;
 
 //Mortar Events
 ["Mortar_01_base_F", "fired", {call FUNC(handleFired)}] call CBA_fnc_addClassEventHandler;
@@ -11,9 +11,9 @@ KAT_ProjectileChache = ("([_x, 'KAT_porjectile', 0] call BIS_fnc_returnConfigEnt
 [] call FUNC(addLoadAction);
 
 //Grenade Events
-["ace_firedPlayer", {_this call FUNC(throwGrenade)}] call CBA_fnc_addEventHandler;
-["ace_firedPlayerNonLocal", {_this call FUNC(throwGrenade)}] call CBA_fnc_addEventHandler;
-["ace_firedNonPlayer", {_this call FUNC(throwGrenade)}] call CBA_fnc_addEventHandler;
+["ace_firedPlayer", {LINKFUNC(throwGrenade)}] call CBA_fnc_addEventHandler;
+["ace_firedPlayerNonLocal", {LINKFUNC(throwGrenade)}] call CBA_fnc_addEventHandler;
+["ace_firedNonPlayer", {LINKFUNC(throwGrenade)}] call CBA_fnc_addEventHandler;
 
 ppBlur_priority = 399;
 [{

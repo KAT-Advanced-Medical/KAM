@@ -18,19 +18,6 @@ class cfgWeapons {
         };
     };
 
-    class kat_Antidot : ACE_ItemCore {
-        scope = 2;
-        author = "DiGii";
-        displayName = CSTRING(AntidotItem);
-        model = QPATHTOF(data\antidote.p3d);
-        picture = QPATHTOF(ui\antidote_ca.paa);
-        descriptionShort = CSTRING(AntidotItem_desc);
-        descriptionUse = CSTRING(AntidotItem_desc);
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
-    };
-
     class kat_sealant : ACE_ItemCore {
         scope = 2;
         author = "DiGii";

@@ -45,13 +45,13 @@ if!(isNull attachedTo _logic) then {
     private _object = attachedTo _logic;
     switch (true) do {
         case (isNull _object): {
-            ["STR_ACE_Zeus_NothingSelected"] call _fnc_errorAndClose;
+            [ACELSTRING(zeus,NothingSelected)] call _fnc_errorAndClose;
         };
         case (isPlayer _object): {
             ["str_a3_cfgvehicles_moduleremotecontrol_f_errorPlayer"] call _fnc_errorAndClose;
         };
         case (!alive _object): {
-            ["STR_ACE_Zeus_OnlyAlive"] call _fnc_errorAndClose;
+            [ACELSTRING(zeus,OnlyAlive)] call _fnc_errorAndClose;
         };
         default {};
     };

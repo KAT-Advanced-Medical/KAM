@@ -10,13 +10,13 @@
  * 2: Position <Position>
  * 3: Max_Radius <NUMBER>
  * 4: Min_Radius <NUMBER>
- * 5: GasTyoe <STRING>
+ * 5: GasType <STRING>
  *
  * Return Value:
  * NONE
  *
  * Example:
- * [] call kat_chemical_fnc_gasCheckLocal;
+ * [player, logic, getpos player, 50, 20, 1] call kat_chemical_fnc_gasCheckLocal;
  *
  * Public: No
 */

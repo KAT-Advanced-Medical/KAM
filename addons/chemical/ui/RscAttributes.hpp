@@ -36,7 +36,7 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
     class controls {
         class Title1: RscText {
             idc = 16109;
-            text = "Maximum Range";
+            text = CSTRING(UI_max_range);
             toolTip = CSTRING(GasModule_max_radius_dcs);
             x = 0;
             y = 0;
@@ -53,7 +53,7 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
         };
         class Title2: Title1 {
             idc = 16108;
-            text = "Minimal Range";
+            text = CSTRING(UI_min_range);
             toolTip = CSTRING(GasModule_min_radius_dcs);
             y = H_PART(1.1);
         };
@@ -63,7 +63,7 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
         };
         class Title3: Title1 {
             idc = 1614;
-            text = "Is sealable";
+            text = CSTRING(UI_sealable);
             toolTip = "";
             y = H_PART(2.2);
         };
@@ -76,7 +76,7 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
         };
         class Title4: Title1 {
             idc = -1;
-            text = "Select Gas: ";
+            text = CSTRING(UI_selectGas);
             toolTip = "";
             y = H_PART(3.3);
         };
@@ -89,26 +89,22 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
             colorBackground[] = {0, 0, 0, 0.7};
             class Items {
                 class type1 {
-                    text = "Toxic gas (Level 1)";
+                    text = CSTRING(LvL1_Gas);
                     pricture = "";
                     default = 1;
                 };
-                /*class type2 {
-                    text = "CS-Gas (Level 2)";
-                    pricture = "";
-                };*/
             };
         };
         class Title6: Title1 {
             idc = 1616;
-            text = "You are about to create a contaminated Zone";
+            text = CSTRING(createContaminatedZone);
             toolTip = "";
             y = H_PART(4.4);
             w = W_PART(25);
         };
         class Title5: Title1 {
             idc = -1;
-            text = "To create a contaminated object place the module on a empty object";
+            text = CSTRING(placeModuleOnObject);
             toolTip = "";
             y = H_PART(5.5);
             w = W_PART(25);

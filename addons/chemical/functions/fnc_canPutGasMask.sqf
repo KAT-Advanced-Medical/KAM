@@ -3,7 +3,7 @@
  * Author: DiGii
  * 
  * Arguments:
- * 0: Target <OBJECT>
+ * 0: Player <OBJECT>
  * 1: Target <OBJECT>
  *
  * Return Value:

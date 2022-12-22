@@ -15,7 +15,7 @@
  * NONE
  *
  * Example:
- * [] call kat_chemical_fnc_gasCheck;
+ * [logic, getpos player, 50, 20, 1] call kat_chemical_fnc_gasCheck;
  *
  * Public: No
 */
@@ -32,7 +32,7 @@ private _checkplayers = [{
 	params ["_args"];
 	_args params ["_logic","_pos","_radius_max","_radius_min","_gastype"];
 	private _playerARR = _logic getVariable [QGVAR(gas_playerArr),[]];
-	private _allUnits = if (missionNamespace getVariable ["kat_medical_affectAI",false]) then {allUnits} else {if(isMultiplayer) then {playableUnits} else {[ACE_Player]};};
+	private _allUnits = if (missionNamespace getVariable [QGVAR(affectAI),false]) then {allUnits} else {if(isMultiplayer) then {playableUnits} else {[ACE_Player]};};
 	{
 		private _posString = toString(_pos);
 		private _logicPos = toString(getpos _logic);

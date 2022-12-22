@@ -1,5 +1,21 @@
 #include "script_component.hpp"
-
+/*
+* Author: mharis001
+* Updates injury list for given body part for the target.
+*
+* Arguments:
+* 0: injury list <CONTROL>
+* 1: Target <OBJECT>
+* 2: Body part <NUMBER>
+*
+* Return Value:
+* None
+*
+* Example:
+* [_ctrlinjuries, _target, 0] call ace_medical_gui_fnc_updateinjurylist
+*
+* Public: No
+*/
 
 [] spawn {
 	disableSerialization;

@@ -1,30 +1,29 @@
 #include "script_component.hpp"
 /*
- * Author: DiGii
- * 
- * Arguments:
- * 
- *
- * Return Value:
- * NONE
- *
- * Example:
- * [player] call kat_chemical_fnc_throwGrenade;
- *
- * Public: No
+* Author: DiGii
+*
+* Arguments:
+*
+*
+* Return Value:
+* NONE
+*
+* Example:
+* Cant be called manualy.
+*
+* Public: No
 */
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
 
+private _config = configFile >> "Cfgammo" >> _ammo;
+if (getNumber (_config >> "KAT_csGas") != 1) exitwith {};
+if!(local _unit) exitwith {};
 
-private _config = configFile >> "CfgAmmo" >> _ammo;
-if(getNumber (_config >> "KAT_csGas") != 1) exitWith {};
-if!(local _unit) exitWith {};
+private _fuzetimeBase = getNumber (_config >> "explosiontime");
 
-
-private _fuzeTimeBase = getNumber (_config >> "explosionTime");
-
-private _fuzeTime = _fuzeTimeBase + random[-0.8,0,1.2];
-private _currenTime = CBA_missionTime;
-waitUntil{(CBA_missionTime - _currenTime) > _fuzeTime};
-[_projectile] call FUNC(csGrenadeThrownFuze);
-
+private _fuzetime = _fuzetimeBase + random[-0.8, 0, 1.2];
+private _currentime = CBA_missiontime;
+waitUntil{
+    (CBA_missiontime - _currentime) > _fuzetime
+};
+[_projectile] call FUNC(csGrenadethrownFuze);

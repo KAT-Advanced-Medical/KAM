@@ -35,7 +35,7 @@
 						params["_player"];
 						if (_player getVariable [QGVAR(airPoisend),false]) then {
 							_lastcought = CBA_missionTime;
-							_player say3D "cough_1";
+_player say3D QGVAR(cough_1);
 							addCamShake [3, 4, 0];
 
 							private _effect = ppEffectCreate ["ChromAberration",2005];

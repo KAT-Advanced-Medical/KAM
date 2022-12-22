@@ -5,14 +5,12 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            "kat_Antidot_Item",
             "kat_sealant_Item",
             "kat_module_gas",
             "kat_module_zeus_gas",
             "KAT_Gas_TripWireMine"
         };
         weapons[] = {
-            "kat_Antidot",
             "kat_sealant",
             "kat_gasmaskFilter",
             "ACE_mortar_82mm",

@@ -76,23 +76,23 @@ _unit setVariable [QEGVAR(surgery,sedated), false, true];
 
 //KAT chemical
 
-player setVariable [QEGVAR(chemical,enteredPoisen),false,true];
-player setVariable [QEGVAR(chemical,timeleft),missionNamespace getVariable [QEGVAR(chemical,infectTime),60],true];
-player setVariable [QEGVAR(chemical,poisenType),"",true];
-player setVariable [QEGVAR(chemical,airPoisend),false,true];
-player setVariable [QEGVAR(chemical,CS),false,true];
-player setVariable [QEGVAR(chemical,gasmask_durability),10,true];
+_unit setVariable [QEGVAR(chemical,enteredPoisen),false,true];
+_unit setVariable [QEGVAR(chemical,timeleft),missionNamespace getVariable [QEGVAR(chemical,infectTime),60],true];
+_unit setVariable [QEGVAR(chemical,poisenType),"",true];
+_unit setVariable [QEGVAR(chemical,airPoisend),false,true];
+_unit setVariable [QEGVAR(chemical,CS),false,true];
+_unit setVariable [QEGVAR(chemical,gasmask_durability),10,true];
 
 "kat_CHEM_DETECTOR" cutRsc ["RscWeaponChemicalDetector", "PLAIN", 1, false];
 private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
 private _obj = _ui displayCtrl 101;
 _obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
-if (player getVariable [QEGVAR(chemical,painEffect),0] != 0) then {
+if (_unit getVariable [QEGVAR(chemical,painEffect),0] != 0) then {
     KAT_PAIN_EFFECT ppEffectEnable false;
 };
-player setVariable [QEGVAR(chemical,isRespawned),true,true];
+_unit setVariable [QEGVAR(chemical,isRespawned),true,true];
 [{
-    player setVariable [QEGVAR(chemical,isRespawned),false,true];
+    _unit setVariable [QEGVAR(chemical,isRespawned),false,true];
 },[],10]call CBA_fnc_waitAndExecute;
 
 

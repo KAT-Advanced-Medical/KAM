@@ -9,7 +9,7 @@
  * NONE
  *
  * Example:
- * [player] call kat_chemical_fnc_csGrenadeThrownFuze;
+ * [projectile] call kat_chemical_fnc_csGrenadeThrownFuze;
  *
  * Public: No
 */

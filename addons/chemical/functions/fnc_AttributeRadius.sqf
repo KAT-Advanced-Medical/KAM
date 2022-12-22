@@ -29,11 +29,11 @@ if!(isNull attachedTo _logic) then {
     _sealCheckBox ctrlShow true;
     _sealText ctrlShow true;
 
-    _placeText ctrlSetText "You are about to create a contaminated Object";
+    _placeText ctrlSetText CSTRING(createContaminatedObject);
 } else {
     _sealCheckBox ctrlShow false;
     _sealText ctrlShow false;
-    _placeText ctrlSetText "You are about to create a contaminated Zone";
+    _placetext ctrlSetText CSTRING(createContaminatedZone);
 };
 
 private _gasTypeCombo = _display displayCtrl 1615;

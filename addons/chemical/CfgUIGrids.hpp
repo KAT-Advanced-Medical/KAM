@@ -19,8 +19,8 @@ class CfgUIGrids {
 
         class Variables {
             class ace_medical_gui_patientInfo {
-                displayName = "$STR_ACE_medical_Category";
-                description = "$STR_ACE_medical_gui_IGUI_PatientInfo";
+                displayName = ACECSTRING(medical,Category);
+                description = ACECSTRING(medical_gui,IGUI_PatientInfo);
                 preview = "\z\ace\addons\medical_gui\ui\patient_info_preview_ca";
                 saveToProfile[] = {0, 1};
                 canResize = 0;

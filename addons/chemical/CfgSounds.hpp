@@ -1,6 +1,6 @@
 class CfgSounds {
-    class cough_1 {
-        name = "cough_1";
+    class GVAR(cough_1) {
+        name = QGVAR(cough_1);
         sound[] = 
         {
             QPATHTOF(audio\cough_1.ogg),
@@ -11,8 +11,8 @@ class CfgSounds {
         titles[] = {};
     };
 
-    class mask_breath_1 {
-        name = "mask_breath_1";
+    class GVAR(mask_breath_1) {
+        name = QGVAV(mask_breath_1);
         sound[] =
         {
             QPATHTOF(audio\breath1.ogg),
@@ -23,8 +23,8 @@ class CfgSounds {
         titles[] = {};
     };
 
-    class mask_breath_2 {
-        name = "mask_breath_2";
+    class GVAR(mask_breath_2) {
+        name = QGVAR(mask_breath_2);
         sound[] =
         {
             QPATHTOF(audio\breath2.ogg),
@@ -35,8 +35,8 @@ class CfgSounds {
         titles[] = {};
     };
 
-    class mask_breath_heavy {
-        name = "mask_breath_heavy";
+    class GVAR(mask_breath_heavy) {
+        name = QGVAR(mask_breath_heavy);
         sound[] =
         {
             QPATHTOF(audio\heavyBreath.ogg),
