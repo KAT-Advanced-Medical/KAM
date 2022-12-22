@@ -23,7 +23,7 @@ private _part = ALL_BODY_PARTS find toLower _bodyPart;
 private _debridement = _patient getVariable [QGVAR(debridement), [0,0,0,0,0,0]];
 
 if ((_debridement select _part) != 1) exitWith {
-    private _output = localize LSTRING(debridement_fail);
+    private _output = LLSTRING(debridement_fail);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
