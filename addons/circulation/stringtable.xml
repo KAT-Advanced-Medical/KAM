@@ -1790,6 +1790,7 @@
             <Polish>AED-X: HR: %1 BP: %2/%3 SpO2: %4</Polish>
             <Italian>AED-X: FC: %1 PS: %2/%3 SpO2: %4</Italian>
             <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4</Japanese>
+            <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4</French>
         </Key>
     </Package>
 </Project>
