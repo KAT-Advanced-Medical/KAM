@@ -430,6 +430,7 @@
             <Polish>Igła dekompresyjna (NCD Kit)</Polish>
             <Japanese>胸腔穿刺減圧 (NCDキット)</Japanese>
             <Czech>Dekompresní jehla (NCD Kit)</Czech>
+            <French>Aiguille de décompression (NCD kit)</French>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
@@ -482,6 +483,7 @@
             <Polish>Zestaw NCD</Polish>
             <Japanese>NCDキット</Japanese>
             <Czech>NCD Kit</Czech>
+            <French>NCD kit</French>
         </Key>
         <Key ID="STR_kat_breathing_ncdKit_desc">
             <English>The Needle Chest Decompression Kit is a single use kit designed to treat a tensionpneumothorax.</English>
@@ -489,6 +491,7 @@
             <Polish>Zestaw NCD to zestaw jednorazowego użytku przeznaczony do leczenia odmy prężnej.</Polish>
             <Japanese>NCDキット (Needle Chest Decompression, 胸部針減圧術)は、緊張性気胸の治療用に設計された使い捨てキットです。</Japanese>
             <Czech>NCD Kit je sada pro ošetření tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
+            <French>L'aiguille de décompression thoracique est un kit à usage unique designé pour traiter les pneumothorax sous tension</French>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemopneumothorax Chance</English>
@@ -504,24 +507,28 @@
             <Polish>Ustawia szansę na krwiaka opłucnej. \nPonadto ustawia szansę dla odmy prężnej (60% Krwiak = 40% Prężna)</Polish>
             <Japanese>血気胸の発生確率を設定します。 緊張性気胸の発生確率も設定します。 (60% 血気胸 = 40% 緊張性)</Japanese>
             <Czech>Nastavuje šanci hemopneumotoraxu. Zároveň nastavuje šanci tenzního pneumotoraxu (60% Hemo = 40% Tenzní)</Czech>
+            <French>Règle la chance d'avoir un hémopneumothorax. Règle également la chance d'un pneumothorax sous tension (60% Hémo = 40% Tension)</French>
         </Key>
         <Key ID="STR_kat_breathing_ADVANCED_PTX_OPTION">
             <English>Enable Advanced Pneumothoraxes</English>
             <Polish>Włącz zaawansowane odmiany odmy opłucnowej</Polish>
             <Japanese>高度な気胸を有効化</Japanese>
             <Czech>Povolit pokročilé pneumotoraxy</Czech>
+            <French>Activer les pneumothorax avancés</French>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_ADVANCED_PTX_OPTION">
             <English>Enables advanced pneumothoraxes - hemopneumothorax and tensionpneumothorax</English>
             <Polish>Włącza zaawansowane odmiany odmy opłucnowej - krwiaka opłucnej oraz odmę prężną</Polish>
             <Japanese>血気胸および緊張性気胸を有効化します</Japanese>
             <Czech>Povolí pokročilé pneumotoraxy - hemopneumotorax a tenzní pneumotorax.</Czech>
+            <French>Active les pneumothorax avancés - Hémopneumothorax et pneumothorax sous tension</French>
         </Key>
         <Key ID="STR_kat_breathing_ADVANCED_PTX_CHANCE_OPTION">
             <English>Advanced Pneumothorax Chance</English>
             <Polish>Szansa na wystąpienie zaawansowanych odmian odmy</Polish>
             <Japanese>高度な気胸の発生確率</Japanese>
             <Czech>Šance pokročilých pneumotoraxů</Czech>
+            <French>Chance de pneumothorax avancé</French>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_ADVANCED_PTX_CHANCE_OPTION">
             <English>The percentage chance that a patient will suffer from a hemopneumotorax or tension pneumothorax after they are treated for a pneumothorax. Treatment requires the draining of fluids with the use of an AAT Kit.</English>
@@ -1139,6 +1146,7 @@
             <German>[KAM] Allgemeine Gegenstände</German>
             <Italian>[KAM] Oggetti generali</Italian>
             <Japanese>[KAM] 一般物資箱</Japanese>
+            <French>[KAM] Objets généraux</French>
         </Key>
     </Package>
 </Project>
