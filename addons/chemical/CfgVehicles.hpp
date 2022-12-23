@@ -1,4 +1,4 @@
-class cfgVehicles {
+class CfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_SelfActions {
@@ -21,14 +21,6 @@ class cfgVehicles {
                 };
             }; 
         };
-    };
-
-    class ACE_MedicalLitter_PoisenBP: Thing {
-        scope = 1;
-        scopeCurator = 0;
-        displayName = " ";
-        destrType = "DestructNo";
-        model = "";
     };
 
     class Item_Base_F;
@@ -64,8 +56,6 @@ class cfgVehicles {
             };
         };
     };
-
-
 
     class Logic;
     class Module_F: Logic

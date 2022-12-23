@@ -52,7 +52,7 @@ private _skill = _unit skill "aimingAccuracy";
                 if !(goggles _unit in KAT_AVAIL_GASMASK) exitwith {
                     if (_gastype isEqualto "CS") then {
                         while {_unit distance _pos < 10 && _unit getVariable[QGVAR(enteredPoisen), false]} do {
-_unit say3D QGVAR(cough_1);
+                            _unit say3D QGVAR(cough_1);
                             _unit setskill ["aimingAccuracy", 0.001];
                             [
                                 {
