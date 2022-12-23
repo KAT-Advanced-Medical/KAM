@@ -20,7 +20,7 @@ class cfgMagazines
 		ammo="Sh_82mm_AMOS_TypeCS";
 		displayNameMFDFormat= CSTRIG(CSGas_MFDNAME);
 		displayNameShort= CSTRIG(CSGas_MFDNAME);
-		displayName= CSTRING(CSGas_DisplayName)"82mm CS-Gas Round";
+		displayName= CSTRING(CSGas_DisplayName);
     };
     class KAT_3Rnd_82mm_Mo_TypeCS_AI: KAT_1Rnd_82mm_Mo_TypeCS 
     {

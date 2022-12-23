@@ -14,5 +14,6 @@
 * Public: No
 *
 * Creates effects when Trip wire explodes.
+* Cant be called manualy!
 */
 [FUNC(spawnSmoke), _this] call CBA_fnc_directcall;

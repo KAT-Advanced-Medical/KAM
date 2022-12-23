@@ -4,7 +4,7 @@
 * This cant be called manualy!
 *
 * Arguments:
-* 0: logic <logIC>
+* 0: Logic <LOGIC>
 * 1: Activated <BOOL>
 *
 * Return Value:
