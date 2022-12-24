@@ -12,7 +12,6 @@ PREP(inspectCatheter);
 PREP(removeItemfromMag);
 PREP(removeIV);
 PREP(retrieveIV);
-PREP(painkillerStart);
 PREP(salineCheck);
 PREP(treatmentAdvanced_Amiodarone);
 PREP(treatmentAdvanced_AmiodaroneLocal);
