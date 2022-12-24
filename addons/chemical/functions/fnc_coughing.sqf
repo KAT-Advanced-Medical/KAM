@@ -18,7 +18,7 @@ params ["_unit"];
 [
 	{ 
 		params["_unit"];
-		_unit getVariable [QGVAR(airPoisend),false]
+		_unit getVariable [QGVAR(airPoisend),false];
 	},
 	{
 		params["__unit"];

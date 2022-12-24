@@ -55,7 +55,7 @@ while{_logic getVariable [QGVAR(gas_active), false] && !(isNull _logic) && _unit
 		_fnc_kat_afterwait = {
 			params["_unit","_timeEntered","_logic","_gastype","_radius_max"];
 			 
-			if(goggles _unit in KAT_AVAIL_GASMASK) then {
+			if(goggles _unit in GVAR(availGasmaskList)) then {
 
 				private _maskTime = missionNamespace getVariable[QGVAR(gasmask_durability),900];
 				private _isinGas = true; 
@@ -70,7 +70,7 @@ while{_logic getVariable [QGVAR(gas_active), false] && !(isNull _logic) && _unit
 								_isinGas = false;
 							};
 
-							if !(goggles _unit in KAT_AVAIL_GASMASK && _timeleft > 0) then {
+							if !(goggles _unit in GVAR(availGasmaskList) && _timeleft > 0) then {
 								_unit setVariable [QGVAR(poisenType),_gastype,true];
 								if(_gastype isEqualTo "Toxic") then {_unit setVariable [QGVAR(airPoisend),true,true];};
 								if(_gastype isEqualTo "CS") then {_unit setVariable [QGVAR(CS),true,true]; [_logic,_radius_max] spawn FUNC(handleCSGas);};

@@ -32,7 +32,7 @@ params ["_unit","_logic","_pos","_radius_max","_gastype"];
     },
     3,
     [_logic,_unit]
-]call CBA_fnc_addPerFrameHandler;
+] call CBA_fnc_addPerFrameHandler;
 private _skill = _unit skill "aimingAccuracy";
 
 [
@@ -49,7 +49,7 @@ private _skill = _unit skill "aimingAccuracy";
             _unit setVariable[QGVAR(enteredPoisen), true, true];
             private _fnc_afterwait = {
                 params["_unit", "_gastype", "_pos", "_skill"];
-                if !(goggles _unit in KAT_AVAIL_GASMASK) exitwith {
+                if !(goggles _unit in GVAR(availGasmaskList)) exitwith {
                     if (_gastype isEqualto "CS") then {
                         while {_unit distance _pos < 10 && _unit getVariable[QGVAR(enteredPoisen), false]} do {
                             _unit say3D QGVAR(cough_1);

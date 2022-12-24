@@ -20,7 +20,7 @@ params ["_logic","_radius"];
 	_params params["_unit"];
 	if(_unit getVariable[QGVAR(enteredPoisen),false]) then {
 		if (_unit getVariable ["ace_medical_pain", -1] < 0.25) then {_unit setVariable ["ace_medical_pain", 0.41]};
-		if(goggles _unit in KAT_AVAIL_GASMASK) then {_unit setVariable[QGVAR(enteredPoisen),false,true]};
+		if(goggles _unit in GVAR(availGasmaskList)) then {_unit setVariable[QGVAR(enteredPoisen),false,true]};
 		_unit setVariable [QGVAR(CS),true,true];
 		_unit say3D QGVAR(cough_1);
 		private _rndBlur = selectRandom[5,6,7,8];

@@ -28,15 +28,15 @@ private _durabilityStructuredText = if(_durability >= 0) then {
     for "_a" from 1 to _durability do {
         _string = _string + "|";
     };
-    private _text = [_string, _color] call ace_common_fnc_stringToColoredText;
+    private _text = [_string, _color] call ACEFUNC(common,stringToColoredText);
 
     _string = "";
     for "_a" from (_durability + 1) to (10) do {
         _string = _string + "|";
     };
 
-    composeText [_text, [_string, "#808080"] call ace_common_fnc_stringToColoredText];
+    composeText [_text, [_string, "#808080"] call ACEFUNC(common,stringToColoredText)];
 
 };
 private _picture = QPATHTOF(ui\Gasmask_icon.paa);
-[_durabilityStructuredText, _picture] call ace_common_fnc_displayTextPicture;
+[_durabilityStructuredText, _picture] call ACEFUNC(common,displayTextPicture);

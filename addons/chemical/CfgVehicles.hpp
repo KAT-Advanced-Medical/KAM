@@ -13,7 +13,7 @@ class CfgVehicles {
                 };
                 class KAT_ChangeGasMaskFilter {
                     displayName = CSTRING(ChangeGasMaskFilter); 
-                    condition = QUOTE([_player] call FUNC(canRelpaceFilter));
+                    condition = QUOTE([_player] call FUNC(canReplaceFilter));
                     exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     statement = QUOTE(_this call FUNC(changeGasMaskFilter));
                     showDisabled = 0;

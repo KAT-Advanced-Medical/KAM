@@ -16,16 +16,16 @@
 
 params["_unit"];
 
-waitUntil{!isNil "kat_chemical_avail_gasmask" && _unit getVariable [QGVAR(enteredPoisen), false]};
+waitUntil{!isNil "kat_chemical_availGasmask" && _unit getVariable [QGVAR(enteredPoisen), false]};
 
 [
 	{
 		params["_unit"];
-		!isNil "kat_chemical_avail_gasmask" && _unit getVariable [QGVAR(enteredPoisen), false]
+		!isNil "kat_chemical_availGasmask" && _unit getVariable [QGVAR(enteredPoisen), false]
 	},
 	{
 		params["_unit"];
-		if(_unit getVariable [QGVAR(enteredPoisen), false] && goggles _unit in KAT_AVAIL_GASMASK) then {
+		if(_unit getVariable [QGVAR(enteredPoisen), false] && goggles _unit in GVAR(availGasmaskList)) then {
 			private _timeEntered = CBA_missionTime;
 			private _maxTime = missionNamespace getVariable[QGVAR(gasmask_durability),900];
 			private _maxDura = 10;
@@ -64,7 +64,7 @@ waitUntil{!isNil "kat_chemical_avail_gasmask" && _unit getVariable [QGVAR(entere
 			[
 				{
 					params["_unit"];
-					!(_unit getVariable [QGVAR(enteredPoisen), false]) || goggles _unit in KAT_AVAIL_GASMASK
+					!(_unit getVariable [QGVAR(enteredPoisen), false]) || goggles _unit in GVAR(availGasmaskList)
 				},
 				{
 					[_unit] call FUNC(handleGasMaskDur);

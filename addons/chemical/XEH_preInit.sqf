@@ -9,7 +9,7 @@ PREP_RECOMPILE_END;
 #define CBA_SETTINGS_CHEM "KAT - ADV Medical: Chemical"
 
 [
-    QGVAR(avail_gasmask),
+    QGVAR(availGasmask),
     "EDITBOX",
     [LLSTRING(SETTING_AVAIL_GASMASK), LLSTRING(SETTING_AVAIL_GASMASK_DISC)],
     CBA_SETTINGS_CHEM,

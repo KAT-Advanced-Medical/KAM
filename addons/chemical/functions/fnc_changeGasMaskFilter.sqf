@@ -16,7 +16,7 @@
 
 params ["_target"];
 
-[_target, "AinvPknlMstpSlayWlnrDnon_medicOther"] call ace_common_fnc_doAnimation;
+[_target, "AinvPknlMstpSlayWlnrDnon_medicOther"] call ACEFUNC(common,doAnimation);
 _target removeItem "kat_gasmaskFilter";
 
 _target setVariable [QGVAR(gasmask_durability),10,true];

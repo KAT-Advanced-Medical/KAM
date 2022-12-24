@@ -13,6 +13,8 @@
  *
  * Public: No
 */
+params ["_unit"];
+
 "KAT_CHEM_DETECTOR" cutRsc ["RscWeaponChemicalDetector", "PLAIN", 1, false];
 private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
 private _obj = _ui displayCtrl 101;
@@ -20,7 +22,7 @@ private _obj = _ui displayCtrl 101;
 _fnc_showThreat = {
 	params ["_unit","_obj"];
 
-	if(_unit getVariable[QGVAR(enteredPoisen),false]) then {
+	if(_unit getVariable [QGVAR(enteredPoisen),false]) then {
 		_obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
 	};
 
@@ -44,5 +46,4 @@ _fnc_showThreat = {
 	] call CBA_fnc_waitUntilAndExecute;
 };
 
-
-[player,_obj] call _fnc_showThreat;
+[_unit,_obj] call _fnc_showThreat;

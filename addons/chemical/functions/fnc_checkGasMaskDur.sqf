@@ -19,7 +19,7 @@ params ["_patient","_medic"];
 
 
 if (_medic isEqualTo _patient) then {
-    [_medic, "Gear", 1] call ace_common_fnc_doGesture;
+    [_medic, "Gear", 1] call ACEFUNC(common,doGesture);
 };
  
 [{_this call FUNC(displayGasMaskDur)}, [_patient], 1] call CBA_fnc_waitAndExecute;

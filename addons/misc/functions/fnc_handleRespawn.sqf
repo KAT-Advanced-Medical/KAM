@@ -74,14 +74,14 @@ _unit setVariable [QEGVAR(surgery,lidocaine), false, true];
 _unit setVariable [QEGVAR(surgery,etomidate), false, true];
 _unit setVariable [QEGVAR(surgery,sedated), false, true];
 
-//KAT chemical
+//KAT Chemical
 
-_unit setVariable [QEGVAR(chemical,enteredPoisen),false,true];
-_unit setVariable [QEGVAR(chemical,timeleft),missionNamespace getVariable [QEGVAR(chemical,infectTime),60],true];
-_unit setVariable [QEGVAR(chemical,poisenType),"",true];
-_unit setVariable [QEGVAR(chemical,airPoisend),false,true];
-_unit setVariable [QEGVAR(chemical,CS),false,true];
-_unit setVariable [QEGVAR(chemical,gasmask_durability),10,true];
+_unit setVariable [QEGVAR(chemical,enteredPoisen), false, true];
+_unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime),60], true];
+_unit setVariable [QEGVAR(chemical,poisenType), "", true];
+_unit setVariable [QEGVAR(chemical,airPoisend), false, true];
+_unit setVariable [QEGVAR(chemical,CS), false, true];
+_unit setVariable [QEGVAR(chemical,gasmask_durability), 10, true];
 
 "kat_CHEM_DETECTOR" cutRsc ["RscWeaponChemicalDetector", "PLAIN", 1, false];
 private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";

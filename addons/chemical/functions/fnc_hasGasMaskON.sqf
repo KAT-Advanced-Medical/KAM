@@ -16,4 +16,4 @@
 
 params ["_target"];
 
-goggles _target in KAT_AVAIL_GASMASK
+goggles _target in GVAR(availGasmaskList)

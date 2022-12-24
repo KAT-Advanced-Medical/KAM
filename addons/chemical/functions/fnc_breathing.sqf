@@ -21,7 +21,7 @@ params ["_unit"];
 [
     {
         params ["_unit"];
-        goggles _unit in KAT_AVAIL_GASMASK
+        goggles _unit in GVAR(availGasmaskList)
     },
     {
         params ["_unit"];
@@ -29,7 +29,7 @@ params ["_unit"];
             {
                 params["_args", "_handler"];
                 _args params ["_unit"];
-                if !(goggles _unit in KAT_AVAIL_GASMASK || !(alive player) || _unit getVariable[QACEGVAR(medical, heartrate), 80] <= 0) then {
+                if !(goggles _unit in GVAR(availGasmaskList) || !(alive player) || _unit getVariable[QACEGVAR(medical, heartrate), 80] <= 0) then {
                     [_handler] call CBA_fnc_removePerFrameHandler;
                     [_unit] spawn FUNC(breathing);
                 } else {
