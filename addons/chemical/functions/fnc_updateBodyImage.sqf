@@ -1,21 +1,20 @@
 #include "script_component.hpp"
 /*
-* Author: mharis001
-* Updates injury list for given body part for the target.
-*
-* Arguments:
-* 0: injury list <CONTROL>
-* 1: Target <OBJECT>
-* 2: Body part <NUMBER>
-*
-* Return Value:
-* None
-*
-* Example:
-* [_ctrlinjuries, _target, 0] call ace_medical_gui_fnc_updateinjurylist
-*
-* Public: No
-*/
+ * Author: Glowbal, SilentSpike, mharis001
+ * Updates the body image for given target.
+ *
+ * Arguments:
+ * 0: Body image controls group <CONTROL>
+ * 1: Target <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [CONTROL, _target] call ace_medical_gui_fnc_updateBodyImage
+ *
+ * Public: No
+ */
 
 [] spawn {
 	disableSerialization;
@@ -37,7 +36,7 @@ params ["_ctrlGroup", "_target"];
 private _tourniquets = GET_TOURNIQUETS(_target);
 private _fractures = GET_FRACTURES(_target);
 private _infectedtype = _target getVariable [QGVAR(poisenType),""];
-private _bodyPartDamage = _target getVariable ["ace_medical_bodyPartDamage", [0, 0, 0, 0, 0, 0]];
+private _bodyPartDamage = _target getVariable [QACEGVAR(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0]];
 private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
 
 {
@@ -54,7 +53,6 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
             _ctrlairInfected ctrlShow true;
         } else {
             _ctrlairInfected ctrlShow false;
-
         };
 			
 	};
@@ -91,10 +89,10 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
     // Update body part color based on blood loss and damage
     private _bloodLoss = _bodyPartBloodLoss select _forEachIndex;
     private _bodyPartColor = if (_bloodLoss > 0) then {
-        [_bloodLoss] call ace_medical_gui_fnc_bloodLossToRGBA;
+        [_bloodLoss] call ACEFUNC(medical_gui,bloodLossToRGBA);
     } else {
         private _damage = _bodyPartDamage select _forEachIndex;
-        [_damage] call ace_medical_gui_fnc_damageToRGBA;
+        [_damage] call ACEFUNC(medical_gui,damageToRGBA);
     };
 
     private _ctrlBodyPart = _ctrlGroup controlsGroupCtrl _bodyPartIDC;

@@ -69,7 +69,7 @@ private _skill = _unit skill "aimingAccuracy";
                                 [
                                     {
                                         params["_unit"];
-                                        [_unit, "PoisenBP", 300, 30, -10, 0, -10] call ACEFUNC(medical_status, addMedicationAdjustment);
+                                        [_unit, "PoisenBP", 300, 30, -10, 0, -10] call ACEFUNC(medical_status,addMedicationAdjustment);
                                     },
                                     [_unit],
                                     5

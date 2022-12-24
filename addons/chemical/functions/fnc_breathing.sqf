@@ -33,7 +33,7 @@ params ["_unit"];
                     [_handler] call CBA_fnc_removePerFrameHandler;
                     [_unit] spawn FUNC(breathing);
                 } else {
-                    if (GET_Pain_PERCEIVED(_unit) >= 0.4 || _unit getVariable[QACEGVAR(medical, heartrate), 80] >= 105) then {
+                    if (GET_PAIN_PERCEIVED(_unit) >= 0.4 || {_unit getVariable[QACEGVAR(medical, heartrate), 80] >= 105}) then {
                         _unit say3D QGVAR(mask_breath_heavy);
                     } else {
                         private _random = selectRandom[QGVAR(mask_breath_1), QGVAR(mask_breath_2)];
@@ -46,4 +46,4 @@ params ["_unit"];
         ]call CBA_fnc_addPerFrameHandler;
     },
     [_unit]
-] call CBA_fnc_waitUntilandexecute;
+] call CBA_fnc_waitUntilAndExecute;

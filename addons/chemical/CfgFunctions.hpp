@@ -1,5 +1,5 @@
 class CfgFunctions {
-    class kat_chemical_gui_updatebody_overrite {
+    class overwrite_ace_medical_gui {
         tag = "ace_medical_gui";
         class ace_medical_gui {
             class updateBodyImage {

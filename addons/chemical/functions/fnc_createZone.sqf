@@ -48,4 +48,4 @@ private _currentTime = CBA_missionTime;
     params["_logic"];
 	_logic setVariable [QGVAR(gas_active),false,true];
 	deleteVehicle _logic;
-},[_logic,_lifetime,_currentTime]]call CBA_fnc_waitUntilAndExecute;
+},[_logic,_lifetime,_currentTime]] call CBA_fnc_waitUntilAndExecute;

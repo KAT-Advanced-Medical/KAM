@@ -33,8 +33,8 @@ params["_unit"];
 };
 
 if (hasinterface) then {
-    [] call FUNC(coughing);
-    [] spawn FUNC(handleGasMaskDur);
+    [_unit] call FUNC(coughing);
+    [_unit] spawn FUNC(handleGasMaskDur);
     [] spawn FUNC(chemDetector);
     [_unit] spawn FUNC(breathing);
     kat_lastpoisend = 0;
