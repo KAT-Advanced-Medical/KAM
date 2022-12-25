@@ -29,11 +29,11 @@ if!(isNull attachedTo _logic) then {
     _sealCheckBox ctrlShow true;
     _sealText ctrlShow true;
 
-    _placeText ctrlSetText CSTRING(createContaminatedObject);
+    _placeText ctrlSetText CSTRING(GasModule_createContaminatedObject);
 } else {
     _sealCheckBox ctrlShow false;
     _sealText ctrlShow false;
-    _placetext ctrlSetText CSTRING(createContaminatedZone);
+    _placetext ctrlSetText CSTRING(GasModule_createContaminatedZone);
 };
 
 private _gasTypeCombo = _display displayCtrl 1615;

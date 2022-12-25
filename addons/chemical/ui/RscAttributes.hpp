@@ -97,14 +97,14 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
         };
         class Title6: Title1 {
             idc = 1616;
-            text = CSTRING(createContaminatedZone);
+            text = CSTRING(GasModule_createContaminatedZone);
             toolTip = "";
             y = H_PART(4.4);
             w = W_PART(25);
         };
         class Title5: Title1 {
             idc = -1;
-            text = CSTRING(placeModuleOnObject);
+            text = CSTRING(GasModule_placeModuleOnObject);
             toolTip = "";
             y = H_PART(5.5);
             w = W_PART(25);
