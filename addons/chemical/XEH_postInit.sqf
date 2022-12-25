@@ -4,6 +4,7 @@
 [QGVAR(gasCheck), LINKFUNC(gasCheck)] call CBA_fnc_addEventHandler;
 [QGVAR(gasCheck_local), LINKFUNC(gasCheckLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(gasCheck_ai), LINKFUNC(gasAI)] call CBA_fnc_addEventHandler;
+[QGVAR(afterWait), LINKFUNC(afterWait)] call CBA_fnc_addEventHandler;
 
 //Mortar Events
 ["Mortar_01_base_F", "fired", {call FUNC(handleFired)}] call CBA_fnc_addClassEventHandler;

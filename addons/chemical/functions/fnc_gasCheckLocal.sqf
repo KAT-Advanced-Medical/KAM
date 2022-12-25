@@ -51,83 +51,9 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
         if (_unit distance _pos <= _radius_max && !(_unit getVariable[QGVAR(enteredPoisen), false]) && !(_unit getVariable ["ACE_isUnconscious", false])) then {
             _unit setVariable [QGVAR(enteredPoisen), true, true];
             _unit setVariable [QGVAR(Poisen_logic), _logic, true];
-            private _timeEntered = CBA_missiontime;
-            
-            _fnc_kat_afterwait = {
-                params ["_unit", "_timeEntered", "_logic", "_gastype", "_radius_max"];
-                
-                if (goggles _unit in GVAR(availGasmasklist)) then {
-                    private _isinGas = true;
-                    [
-                        {
-                            params["_args", "_pfhHandler"];
-                            _args params["_unit", "_timeEntered", "_logic", "_gastype", "_radius_max", "_isinGas"];
-                            
-                            if !(_isinGas) exitwith {
-                                [_pfhHandler] call CBA_fnc_removePerFrameHandler;
-                            };
-                            
-                            private _timeleft = _unit getVariable[QGVAR(gasmask_durability), 10];
-                            _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
-                            if (_unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active), false]) || isNull _logic) exitwith {
-                                _unit setVariable[QGVAR(enteredPoisen), false, true];
-                                _isinGas = false;
-                            };
-                            
-                            if !(goggles _unit in GVAR(availGasmasklist) && _timeleft > 0) then {
-                                _unit setVariable [QGVAR(poisentype), _gastype, true];
-                                switch (_gastype) do {
-                                    case "Toxic": {
-                                        _unit setVariable [QGVAR(airPoisend), true, true];
-                                    };
-                                    case "CS": {
-                                        _unit setVariable [QGVAR(CS), true, true];
-                                        [_logic, _radius_max] spawn FUNC(handleCSGas);
-                                    };
-                                };
-                                [_unit] call KAT_breathing_fnc_handleBreathing;
-                                _isinGas = false;
-                            };
-                            
-                            if (_timeleft <= 0 && _unit getVariable [QGVAR(enteredPoisen), false]) then {
-                                _unit setVariable [QGVAR(poisentype), _gastype, true];
-                                if (_gastype isEqualto "toxic") then {
-                                    _unit setVariable [QGVAR(airPoisend), true, true];
-                                };
-                                if (_gastype isEqualto "CS") then {
-                                    _unit setVariable [QGVAR(CS), true, true];
-                                    [_logic, _radius_max] spawn FUNC(handleCSGas);
-                                };
-                                [_unit] call KAT_breathing_fnc_handleBreathing;
-                                _isinGas = false;
-                            };
-                            
-                            if (!(_unit getVariable [QGVAR(enteredPoisen), false]) || !(_logic getVariable [QGVAR(gas_active), false])) then {
-                                _isinGas = false;
-                                _unit setVariable [QGVAR(enteredPoisen), false];
-                            };
-                        },
-                        1,
-                        [_unit, _timeEntered, _logic, _gastype, _radius_max, _isinGas]
-                    ] call CBA_fnc_addPerFrameHandler;
-                } else {
-                    if (_unit getVariable [QGVAR(enteredPoisen), false]) then {
-                        _unit setVariable [QGVAR(poisentype), _gastype, true];
-                        switch (_gastype) do {
-                            case "Toxic": {
-                                _unit setVariable [QGVAR(airPoisend), true, true];
-                            };
-                            case "CS": {
-                                _unit setVariable [QGVAR(CS), true, true];
-                                [_logic, _radius_max] spawn FUNC(handleCSGas);
-                            };
-                        };
-                        [_unit] call EFUNC(breathing,handleBreathing);
-                    };
-                };
-            };
-            
+            private _timeEntered = CBA_missiontime;            
             private _prozent = 1;
+
             [
                 {
                     params["_args", "_pfhandler"];
@@ -149,7 +75,7 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
                     _unit setVariable [QGVAR(timeleft), _unittime];
                     _unit setVariable [QGVAR(gasPercentage), _prozent];
                     if (_unittime <= 0) exitwith {
-                        [_unit, _timeEntered, _logic, _gastype, _radius_max] call _fnc_kat_afterwait;
+                        [QGVAR(afterWait), [_unit, _timeEntered, _logic, _gastype, _radius_max], _unit] call CBA_fnc_targetEvent;
                         _unit setVariable [QGVAR(timeleft), 0];
                         [_pfhandler] call CBA_fnc_removePerFrameHandler;
                     };
@@ -161,7 +87,7 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
                     
                     if (_gastype isEqualto "CS") exitwith {
                         [_pfhandler] call CBA_fnc_removePerFrameHandler;
-                        [_unit, _timeEntered, _logic, _gastype, _radius_max] call _fnc_kat_afterwait;
+                        [QGVAR(afterWait), [_unit, _timeEntered, _logic, _gastype, _radius_max], _unit] call CBA_fnc_targetEvent;
                     };
                 },
                 1,

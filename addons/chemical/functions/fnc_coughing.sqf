@@ -21,18 +21,18 @@ params ["_unit"];
 		_unit getVariable [QGVAR(airPoisend),false];
 	},
 	{
-		params["__unit"];
+		params["_unit"];
 		private _lastcought = 0;
 		while {_unit getVariable [QGVAR(airPoisend),false]} do {
 			if(!(_unit getVariable ["ACE_isUnconscious",false]) && alive _unit) then {
 				private _nextcought = random [20,50,80];
 				[
 					{
-						params["__unit","_lastcought","_nextcought"];
+						params["_unit","_lastcought","_nextcought"];
 						(CBA_missionTime - _lastcought) > _nextcought;
 					},
 					{
-						params["__unit"];
+						params["_unit"];
 						if (_unit getVariable [QGVAR(airPoisend),false]) then {
 							_lastcought = CBA_missionTime;
 							_unit say3D QGVAR(cough_1);
@@ -63,7 +63,7 @@ params ["_unit"];
 			};
 		};
 		if(!(_unit getVariable [QGVAR(airPoisend),false])) then {
-			[] call FUNC(coughing);
+			[_unit] call FUNC(coughing);
 		};
 	},
 	[_unit]
