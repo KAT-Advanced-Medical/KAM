@@ -27,8 +27,8 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		params ["_patient"];
 
 		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + 3000;
-		["PDF", 0] call ace_advanced_fatigue_fnc_addDutyFactor;
+		ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 3000;
+		["PDF", 0] call ACEFUNC(advanced_fatigue,addDutyFactor);
 		[LLSTRING(Pervitin_start), 2, _patient] call ACEFUNC(common,displayTextStructured); 
 	},
 	[_patient], 10] call CBA_fnc_waitAndExecute;
@@ -38,7 +38,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		params ["_patient"];
 
 		if !(alive _patient) exitWith {};
-		["PDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
+		["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
 		[LLSTRING(Pervitin_mid), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
 	[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
@@ -48,8 +48,8 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		params ["_patient"];
 
 		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + 3000;
-		["PDF", 0.4] call ace_advanced_fatigue_fnc_addDutyFactor;
+		ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 3000;
+		["PDF", 0.4] call ACEFUNC(advanced_fatigue,addDutyFactor);
 		[LLSTRING(Pervitin_mid2), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
 	[_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
@@ -59,8 +59,8 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		params ["_patient"];
 
 		if !(alive _patient) exitWith {};
-		ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + 3000;
-		["PDF", 0.6] call ace_advanced_fatigue_fnc_addDutyFactor;
+		ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 3000;
+		["PDF", 0.6] call ACEFUNC(advanced_fatigue,addDutyFactor);
 		[LLSTRING(Pervitin_mid3), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
 	[_patient], 360] call CBA_fnc_waitAndExecute; /// 6m
@@ -70,7 +70,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		params ["_patient"];
 
 		if !(alive _patient) exitWith {};
-		["PDF", 2] call ace_advanced_fatigue_fnc_addDutyFactor;
+		["PDF", 2] call ACEFUNC(advanced_fatigue,addDutyFactor);
 		[LLSTRING(Pervitin_mid4), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
 	[_patient], 510] call CBA_fnc_waitAndExecute; /// 8:30m
@@ -80,7 +80,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		params ["_patient"];
 
 		if !(alive _patient) exitWith {};
-		["PDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
+		["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
 		[LLSTRING(Pervitin_end), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
 	[_patient], 600] call CBA_fnc_waitAndExecute; /// 10m
@@ -91,13 +91,13 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	if (GVAR(weapon_sway_pervitin)) then {
 
 		if (isNil GVAR(originalSwayFactor)) then {
-			GVAR(originalSwayFactor) = ace_advanced_fatigue_swayFactor;
+			GVAR(originalSwayFactor) = ACEGVAR(advanced_fatigue, swayFactor);
 		};
 
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 0.3;
+			ACEGVAR(advanced_fatigue, swayFactor) = GVAR(originalSwayFactor) * 0.3;
 		},
 		[_patient], 15] call CBA_fnc_waitAndExecute;
 
@@ -105,7 +105,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 0.5 ;
+			ACEGVAR(advanced_fatigue, swayFactor) = GVAR(originalSwayFactor) * 0.5 ;
 		},
 		[_patient], 60] call CBA_fnc_waitAndExecute;
 
@@ -113,7 +113,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor) * 1;
+			ACEGVAR(advanced_fatigue, swayFactor) = GVAR(originalSwayFactor) * 1;
 		},
 		[_patient], 90] call CBA_fnc_waitAndExecute;
 
@@ -121,7 +121,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.3) min 2;
+			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.3) min 2;
 		},
 		[_patient], 120] call CBA_fnc_waitAndExecute; /// 2m
 
@@ -129,7 +129,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.5) min 2;
+			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.5) min 2;
 		},
 		[_patient], 150] call CBA_fnc_waitAndExecute;
 
@@ -137,7 +137,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.7) min 2;
+			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.7) min 2;
 		},
 		[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
 
@@ -145,7 +145,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 2) min 2;
+			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 2) min 2;
 		},
 		[_patient], 210] call CBA_fnc_waitAndExecute;
 
@@ -153,7 +153,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.7) min 2;
+			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.7) min 2;
 		},
 		[_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
 
@@ -161,7 +161,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.4) min 2;
+			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.4) min 2;
 		},
 		[_patient], 300] call CBA_fnc_waitAndExecute; /// 5m
 
@@ -169,7 +169,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_swayFactor = (GVAR(originalSwayFactor) * 1.2) min 2;
+			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.2) min 2;
 		},
 		[_patient], 420] call CBA_fnc_waitAndExecute; /// 7m
 
@@ -177,7 +177,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_swayFactor = GVAR(originalSwayFactor);
+			ACEGVAR(advanced_fatigue, swayFactor) = GVAR(originalSwayFactor);
 		},
 		[_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
 	};

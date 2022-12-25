@@ -235,7 +235,15 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
     _handle ppEffectAdjust _effect;
     _handle ppEffectCommit 0;
     addCamShake[0, 0, 50];
-    waitUntil{ppEffectCommitted _handle};
-    _handle ppEffectEnable false;
-    ppEffectDestroy _handle;
+    [
+        {
+            params["_handle"];
+            ppEffectCommitted _handle
+        },
+        {
+            params["_handle"];
+            _handle ppEffectEnable false;
+            ppEffectDestroy _handle;
+        },
+    [_handle]] call CBA_fnc_waitUntilAndExecute;
 };

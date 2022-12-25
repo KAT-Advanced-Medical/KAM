@@ -33,12 +33,12 @@
 		if (ACEGVAR(advanced_fatigue,enabled)) then {
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + 300;
-			["EDF", 0.5] call ace_advanced_fatigue_fnc_addDutyFactor;
+			ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 300;
+			["EDF", 0.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
 
 			[{
 				params ["_patient"];
-				["EDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
+				["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
 			},
 			[_patient],
 			120] call CBA_fnc_waitAndExecute;
