@@ -19,7 +19,7 @@ params["_unit"];
 [
 	{
 		params["_unit"];
-		!isNil GVAR(availGasmaskList) && _unit getVariable [QGVAR(enteredPoisen), false]
+		!isNil QGVAR(availGasmaskList) && _unit getVariable [QGVAR(enteredPoisen), false]
 	},
 	{
 		params["_unit"];
