@@ -1,4 +1,5 @@
 PREP(addLoadAction);
+PREP(afterWait);
 PREP(AttributeRadius);
 PREP(breathing);
 PREP(canPutGasMask);
