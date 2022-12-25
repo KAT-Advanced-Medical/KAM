@@ -91,13 +91,13 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 	if (GVAR(weapon_sway_pervitin)) then {
 
 		if (isNil GVAR(originalSwayFactor)) then {
-			GVAR(originalSwayFactor) = ACEGVAR(advanced_fatigue, swayFactor);
+			GVAR(originalSwayFactor) = ACEGVAR(advanced_fatigue,swayFactor);
 		};
 
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue, swayFactor) = GVAR(originalSwayFactor) * 0.3;
+			ACEGVAR(advanced_fatigue,swayFactor) = GVAR(originalSwayFactor) * 0.3;
 		},
 		[_patient], 15] call CBA_fnc_waitAndExecute;
 
@@ -105,7 +105,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue, swayFactor) = GVAR(originalSwayFactor) * 0.5 ;
+			ACEGVAR(advanced_fatigue,swayFactor) = GVAR(originalSwayFactor) * 0.5 ;
 		},
 		[_patient], 60] call CBA_fnc_waitAndExecute;
 
@@ -113,7 +113,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue, swayFactor) = GVAR(originalSwayFactor) * 1;
+			ACEGVAR(advanced_fatigue,swayFactor) = GVAR(originalSwayFactor) * 1;
 		},
 		[_patient], 90] call CBA_fnc_waitAndExecute;
 
@@ -121,7 +121,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.3) min 2;
+			ACEGVAR(advanced_fatigue,swayFactor) = (GVAR(originalSwayFactor) * 1.3) min 2;
 		},
 		[_patient], 120] call CBA_fnc_waitAndExecute; /// 2m
 
@@ -129,7 +129,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.5) min 2;
+			ACEGVAR(advanced_fatigue,swayFactor) = (GVAR(originalSwayFactor) * 1.5) min 2;
 		},
 		[_patient], 150] call CBA_fnc_waitAndExecute;
 
@@ -137,7 +137,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.7) min 2;
+			ACEGVAR(advanced_fatigue,swayFactor) = (GVAR(originalSwayFactor) * 1.7) min 2;
 		},
 		[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
 
@@ -145,7 +145,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 2) min 2;
+			ACEGVAR(advanced_fatigue,swayFactor) = (GVAR(originalSwayFactor) * 2) min 2;
 		},
 		[_patient], 210] call CBA_fnc_waitAndExecute;
 
@@ -153,7 +153,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.7) min 2;
+			ACEGVAR(advanced_fatigue,swayFactor) = (GVAR(originalSwayFactor) * 1.7) min 2;
 		},
 		[_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
 
@@ -161,7 +161,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.4) min 2;
+			ACEGVAR(advanced_fatigue,swayFactor) = (GVAR(originalSwayFactor) * 1.4) min 2;
 		},
 		[_patient], 300] call CBA_fnc_waitAndExecute; /// 5m
 
@@ -169,7 +169,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue, swayFactor) = (GVAR(originalSwayFactor) * 1.2) min 2;
+			ACEGVAR(advanced_fatigue,swayFactor) = (GVAR(originalSwayFactor) * 1.2) min 2;
 		},
 		[_patient], 420] call CBA_fnc_waitAndExecute; /// 7m
 
@@ -177,7 +177,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		[{
 			params ["_patient"];
 			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue, swayFactor) = GVAR(originalSwayFactor);
+			ACEGVAR(advanced_fatigue,swayFactor) = GVAR(originalSwayFactor);
 		},
 		[_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
 	};
