@@ -16,12 +16,10 @@
 
 params["_unit"];
 
-waitUntil{!isNil "kat_chemical_availGasmask" && _unit getVariable [QGVAR(enteredPoisen), false]};
-
 [
 	{
 		params["_unit"];
-		!isNil "kat_chemical_availGasmask" && _unit getVariable [QGVAR(enteredPoisen), false]
+		!isNil GVAR(availGasmaskList) && _unit getVariable [QGVAR(enteredPoisen), false]
 	},
 	{
 		params["_unit"];
