@@ -21,51 +21,54 @@
 */
 
 params ["_logic","_pos","_radius_max","_radius_min","_gastype"];
+
 if(_gastype isEqualTo "") then {_gastype = "Toxic"};
 if(_radius_min isEqualTo 0) then {_radius_min = _radius_max / 2};
-_logic setVariable [QGVAR(gas_active), true,true];
-_logic setVariable [QGVAR(gas_playerArr),[],true];
-_logic setVariable [QGVAR(gas_pos),_pos,true];
+_logic setVariable [QGVAR(gas_active), true, true];
+_logic setVariable [QGVAR(gas_playerArr), [], true];
+_logic setVariable [QGVAR(gas_pos), _pos, true];
 
 
 private _checkplayers = [{
 	params ["_args"];
 	_args params ["_logic","_pos","_radius_max","_radius_min","_gastype"];
 	private _playerARR = _logic getVariable [QGVAR(gas_playerArr),[]];
-	private _allUnits = if (missionNamespace getVariable [QGVAR(affectAI),false]) then {allUnits} else {if(isMultiplayer) then {playableUnits} else {[ACE_Player]};};
+	private _allUnits = if (missionNamespace getVariable [QGVAR(affectAI), false]) then {allUnits} else {allPlayers};
 	{
-		private _posString = toString(_pos);
-		private _logicPos = toString(getpos _logic);
-		if(_posString != _logicPos) then { _pos = getpos _logic; _logic setVariable [QGVAR(gas_pos),_pos,true];};
+		private _posString = toString (_pos);
+		private _logicPos = toString (getpos _logic);
+		if (_posString != _logicPos) then { _pos = getpos _logic; _logic setVariable [QGVAR(gas_pos), _pos, true];};
 		private _distance = position _x distance _pos;
-		if(isPlayer _x) then {
+		if (isPlayer _x) then {
 
-			if (_x getVariable [QGVAR(isRespawned),false] || _x getVariable [QGVAR(isThreated),false]) then {
-				_x setVariable [QGVAR(isRespawned),false,true];
-				_x setVariable [QGVAR(isThreated),false];
-				private _arr = _playerARR find _x;
-				_playerARR deleteAt _arr;
-				_logic setVariable [QGVAR(gas_playerArr),_playerARR,true];
+			if (_x getVariable [QGVAR(isThreated), false]) then {
+				_x setVariable [QGVAR(isThreated), false, true];
+				private _arrPos = _playerARR find _x;
+				_playerARR deleteAt _arrPos;
+				_logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
 			};
+
 			if(_x in _playerARR && _distance > _radius_max) then {
-				private _arr = _playerARR find _x;
-				_playerARR deleteAt _arr;
-				_logic setVariable [QGVAR(gas_playerArr),_playerARR,true];
+				private _arrPos = _playerARR find _x;
+				_playerARR deleteAt _arrPos;
+				_logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
 			};
+
 			if (!(_x in _playerARR) && _distance < _radius_max) then {
 
 				_playerARR pushBack _x;			
-				_logic setVariable [QGVAR(gas_playerArr),_playerARR,true];
-				[QGVAR(gasCheck_local), [_x,_logic,_pos,_radius_max,_radius_min,_gastype], _x] call CBA_fnc_targetEvent;
+				_logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
+				[QGVAR(gasCheck_local), [_x, _logic, _pos, _radius_max, _radius_min, _gastype], _x] call CBA_fnc_targetEvent;
 			};
+
 		} else {
-			if (_distance < _radius_max && alive _x && !(_x getVariable[QGVAR(enteredPoisen),false])) then {
-				[QGVAR(gasCheck_ai), [_x,_logic,_pos,_radius_max,_gastype], _x] call CBA_fnc_targetEvent; 
+			if (_distance < _radius_max && alive _x && !(_x getVariable [QGVAR(enteredPoisen), false])) then {
+				[QGVAR(gasCheck_ai), [_x, _logic, _pos, _radius_max, _gastype], _x] call CBA_fnc_targetEvent; 
 			};
 		};
 	} forEach _allUnits;
 
-},3,[_logic,_pos,_radius_max,_radius_min,_gastype]] call CBA_fnc_addPerFrameHandler;
+}, 3, [_logic,_pos,_radius_max,_radius_min,_gastype]] call CBA_fnc_addPerFrameHandler;
 
 
 
@@ -77,4 +80,4 @@ private _checkplayers = [{
 		[_checkplayers] call CBA_fnc_removePerFrameHandler;
 		[_pfhHandle] call CBA_fnc_removePerFrameHandler;
 	};
-},0,[_logic,_checkplayers]]call CBA_fnc_addPerFrameHandler;
+}, 0, [_logic,_checkplayers]]call CBA_fnc_addPerFrameHandler;

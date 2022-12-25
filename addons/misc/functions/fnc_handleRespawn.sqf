@@ -90,10 +90,6 @@ _obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
 if (_unit getVariable [QEGVAR(chemical,painEffect),0] != 0) then {
     KAT_PAIN_EFFECT ppEffectEnable false;
 };
-_unit setVariable [QEGVAR(chemical,isRespawned),true,true];
-[{
-    _unit setVariable [QEGVAR(chemical,isRespawned),false,true];
-},[],10]call CBA_fnc_waitAndExecute;
 
 
 // Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten

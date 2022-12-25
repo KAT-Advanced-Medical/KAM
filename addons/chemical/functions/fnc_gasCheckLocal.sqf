@@ -27,23 +27,21 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
     {
         params["_args", "_handler"];
         _args params ["_logic", "_unit", "_pos"];
-        private _posstring = toString(_logic getVariable [QGVAR(gas_pos), [0, 0, 0]]);
-        private _logicPos = toString(getPos _logic);
-        if!(_logic getVariable [QGVAR(gas_active), false]) then {
+        private _posstring = toString (_logic getVariable [QGVAR(gas_pos), [0, 0, 0]]);
+        private _logicPos = toString (getPos _logic);
+        if !(_logic getVariable [QGVAR(gas_active), false]) then {
             if (_unit getVariable [QGVAR(enteredPoisen), false]) then {
                 _unit setVariable [QGVAR(enteredPoisen), false, true];
                 [_handler] call CBA_fnc_removePerFrameHandler;
             };
         };
-    },
-    3,
-    [_logic, _unit, _pos]
-]call CBA_fnc_addPerFrameHandler;
+    }, 3, [_logic, _unit, _pos]
+] call CBA_fnc_addPerFrameHandler;
 
 [
     {
         params["_args", "_handler"];
-        _args params["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
+        _args params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
         
         if (!(_logic getVariable [QGVAR(gas_active), false]) || isNull _logic || !(_unit in (_logic getVariable [QGVAR(gas_playerArr), []]))) then {
             [_handler] call CBA_fnc_removePerFrameHandler;
@@ -56,18 +54,17 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
             private _timeEntered = CBA_missiontime;
             
             _fnc_kat_afterwait = {
-                params["_unit", "_timeEntered", "_logic", "_gastype", "_radius_max"];
+                params ["_unit", "_timeEntered", "_logic", "_gastype", "_radius_max"];
                 
                 if (goggles _unit in GVAR(availGasmasklist)) then {
-                    private _masktime = missionnamespace getVariable [QGVAR(gasmask_durability), 900];
                     private _isinGas = true;
                     [
                         {
-                            params["_args", "_pfhhandler"];
+                            params["_args", "_pfhHandler"];
                             _args params["_unit", "_timeEntered", "_logic", "_gastype", "_radius_max", "_isinGas"];
                             
                             if !(_isinGas) exitwith {
-                                [_pfhhandler] call CBA_fnc_removePerFrameHandler;
+                                [_pfhHandler] call CBA_fnc_removePerFrameHandler;
                             };
                             
                             private _timeleft = _unit getVariable[QGVAR(gasmask_durability), 10];
@@ -79,12 +76,14 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
                             
                             if !(goggles _unit in GVAR(availGasmasklist) && _timeleft > 0) then {
                                 _unit setVariable [QGVAR(poisentype), _gastype, true];
-                                if (_gastype isEqualto "toxic") then {
-                                    _unit setVariable [QGVAR(airPoisend), true, true];
-                                };
-                                if (_gastype isEqualto "CS") then {
-                                    _unit setVariable [QGVAR(CS), true, true];
-                                    [_logic, _radius_max] spawn FUNC(handleCSGas);
+                                switch (_gastype) do {
+                                    case "Toxic": {
+                                        _unit setVariable [QGVAR(airPoisend), true, true];
+                                    };
+                                    case "CS": {
+                                        _unit setVariable [QGVAR(CS), true, true];
+                                        [_logic, _radius_max] spawn FUNC(handleCSGas);
+                                    };
                                 };
                                 [_unit] call KAT_breathing_fnc_handleBreathing;
                                 _isinGas = false;
@@ -114,14 +113,16 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
                 } else {
                     if (_unit getVariable [QGVAR(enteredPoisen), false]) then {
                         _unit setVariable [QGVAR(poisentype), _gastype, true];
-                        if (_gastype isEqualto "toxic") then {
-                            _unit setVariable [QGVAR(airPoisend), true, true];
+                        switch (_gastype) do {
+                            case "Toxic": {
+                                _unit setVariable [QGVAR(airPoisend), true, true];
+                            };
+                            case "CS": {
+                                _unit setVariable [QGVAR(CS), true, true];
+                                [_logic, _radius_max] spawn FUNC(handleCSGas);
+                            };
                         };
-                        if (_gastype isEqualto "CS") then {
-                            _unit setVariable [QGVAR(CS), true, true];
-                            [_logic, _radius_max] spawn FUNC(handleCSGas);
-                        };
-                        [_unit] call KAT_breathing_fnc_handleBreathing;
+                        [_unit] call EFUNC(breathing,handleBreathing);
                     };
                 };
             };
