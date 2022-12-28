@@ -134,7 +134,7 @@ _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 // Reset triage card since medication is reset
 _unit setVariable [QACEGVAR(medical,triageCard), [], true];
 
-[_unit] call ACEFUNC(medical_engine,updateDamageEfects);
+[_unit] call ACEFUNC(medical_engine,updateDamageEffects);
 
 // Reset damage
 _unit setDamage 0;

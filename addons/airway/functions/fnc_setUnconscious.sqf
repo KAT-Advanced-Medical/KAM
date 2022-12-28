@@ -59,7 +59,7 @@ if (_knockOut) then {
             }, [_unit], _minWaitingTime] call CBA_fnc_waitAndExecute;
         };
         if (ACEGVAR(medical,spontaneousWakeUpChance) > 0) then {
-            _unit setVariable [QACEGVAR(medical,lastWakeUp), CBA_missionTime + _minWaitingTime - 15];
+            _unit setVariable [QACEGVAR(medical,lastWakeUpCheck), CBA_missionTime + _minWaitingTime - 15];
         };
     };
 

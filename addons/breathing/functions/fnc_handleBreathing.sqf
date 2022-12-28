@@ -57,7 +57,7 @@ if (!local _unit) then {
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && { GVAR(SpO2_dieActive) && { !_blockDeath } }) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
-        [_unit, "terminal_SpO2_death"] call ACEFUNC(medical,setDead);
+        [_unit, "terminal_SpO2_death"] call ACEFUNC(medical_status,setDead);
         _unit setVariable ["kat_O2Breathing_PFH", nil];
     };
 
