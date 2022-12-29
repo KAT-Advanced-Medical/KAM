@@ -23,7 +23,15 @@ private _fuzetimeBase = getNumber (_config >> "explosiontime");
 
 private _fuzetime = _fuzetimeBase + random[-0.8, 0, 1.2];
 private _currentime = CBA_missiontime;
-waitUntil{
-    (CBA_missiontime - _currentime) > _fuzetime
-};
-[_projectile] call FUNC(csGrenadethrownFuze);
+
+[
+    {
+        params["_currentime", "_fuzetime"];
+        (CBA_missiontime - _currentime) > _fuzetime
+    },
+    {
+        params["_currentime", "_fuzetime", "_projectile"];
+        [_projectile] call FUNC(csGrenadethrownFuze);
+    },
+    [_currentime, _fuzetime, _projectile]
+] call CBA_fnc_waitUntilandExecute;

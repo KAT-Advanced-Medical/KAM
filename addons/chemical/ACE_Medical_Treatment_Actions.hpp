@@ -7,5 +7,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         callbackSuccess = FUNC(giveUnitGasMask);
         condition = QUOTE([ARR_2(_player, _patient)] call FUNC(canPutGasMask));
+        icon = QPATHTOF(ui\Gasmask_icon.paa);
     };
 };

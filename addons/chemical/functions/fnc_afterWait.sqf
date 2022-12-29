@@ -45,7 +45,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
                 _unit setVariable [QGVAR(poisentype), _gastype, true];
                 switch (_gastype) do {
                     case "Toxic": {
-                        _unit setVariable [QGVAR(airPoisend), true, true];
+                        _unit setVariable [QGVAR(airPoisoning), true, true];
                     };
                     case "CS": {
                         _unit setVariable [QGVAR(CS), true, true];
@@ -60,7 +60,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
                 _unit setVariable [QGVAR(poisentype), _gastype, true];
                 switch (_gastype) do {
                     case "Toxic": {
-                        _unit setVariable [QGVAR(airPoisend), true, true];
+                        _unit setVariable [QGVAR(airPoisoning), true, true];
                     };
                     case "CS": {
                         _unit setVariable [QGVAR(CS), true, true];
@@ -84,7 +84,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
         _unit setVariable [QGVAR(poisentype), _gastype, true];
         switch (_gastype) do {
             case "Toxic": {
-                _unit setVariable [QGVAR(airPoisend), true, true];
+                _unit setVariable [QGVAR(airPoisoning), true, true];
             };
             case "CS": {
                 _unit setVariable [QGVAR(CS), true, true];

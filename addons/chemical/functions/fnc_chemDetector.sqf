@@ -19,31 +19,51 @@ params ["_unit"];
 private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
 private _obj = _ui displayCtrl 101;
 
-_fnc_showThreat = {
-	params ["_unit","_obj"];
+if(!(_unit getVariable [QGVAR(enteredPoisen),false])) then {
+	_obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
+};
 
-	if(_unit getVariable [QGVAR(enteredPoisen),false]) then {
-		_obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
-	};
-
-	[
-		{
-			params["_unit"];
-			_unit getVariable[QGVAR(enteredPoisen),false]
-		},
-		{
-			params["_unit"];
-			if ("ChemicalDetector_01_watch_F" in (assigneditems _unit)) then {
-				private _prozent = _unit getVariable [QGVAR(gasPercentage),0];
-				private _thread = parseNumber (_prozent toFixed 1);
+[
+	{
+		params["_unit"];
+		_unit getVariable[QGVAR(enteredPoisen),false]
+	},
+	{
+		params["_unit", "_obj"];		
+		[
+			{
+				params["_args", "_pfhHandler"];
+				_args params ["_unit", "_obj"];
+				
+				private _percent = _unit getVariable [QGVAR(gasPercentage),0];
+				private _thread = parseNumber (_percent toFixed 1);
 				if(_thread < 0) then { _thread = 0};
 				if(_thread > 1) then { _thread = 1};
 				_obj ctrlAnimateModel ["Threat_Level_Source", _thread, true];
-			};
-			[] call FUNC(chemDetector);
-		},
-		[_unit]
-	] call CBA_fnc_waitUntilAndExecute;
-};
 
-[_unit,_obj] call _fnc_showThreat;
+				if (!("ChemicalDetector_01_watch_F" in (assigneditems _unit)) || !(_unit getVariable[QGVAR(enteredPoisen),false])) exitWith {
+					[_pfhHandler] call CBA_fnc_removePerFrameHandler;
+					[_unit] call FUNC(chemDetector);
+				};
+			}, 
+		1, [_unit, _obj]] call CBA_fnc_addPerFramehandler;
+		[
+			{
+				params["_args", "_pfhHandler"];
+				_args params ["_unit"];
+
+				if(_unit getVariable [QGVAR(chemDetectorState), true] && _unit getVariable [QGVAR(gasPercentage), 0] >= 0.1) then {
+					//_unit say3D QGVAR(chemDetectorSound);
+					playSound3D [QPATHTOF(audio\chemDetector.ogg), _unit, false, getPosASL _unit, 4, 1, 10];
+				};
+
+				if (!("ChemicalDetector_01_watch_F" in (assigneditems _unit)) || !(_unit getVariable[QGVAR(enteredPoisen),false])) exitWith {
+					[_pfhHandler] call CBA_fnc_removePerFrameHandler;
+				};
+
+			},
+		6, [_unit]] call CBA_fnc_addPerFramehandler;
+	},
+	[_unit, _obj]
+] call CBA_fnc_waitUntilAndExecute;
+

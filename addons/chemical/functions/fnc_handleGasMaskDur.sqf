@@ -40,13 +40,13 @@ params["_unit"];
 				};
 
 				private _timeLeft = _maxTime - (CBA_missionTime - _timeEntered);
-				private _prozent = round((10/_maxTime)*_timeLeft);
+				private _percent = round((10/_maxTime)*_timeLeft);
 				
-				if(_currentDura != _prozent) then {
-					_unit setVariable[QGVAR(gasmask_durability),_prozent];
+				if(_currentDura != _percent) then {
+					_unit setVariable[QGVAR(gasmask_durability),_percent];
 				};
 		
-				if(_currentDura <= 0 || _prozent <= 0 || !(alive _unit)) exitWith {
+				if(_currentDura <= 0 || _percent <= 0 || !(alive _unit)) exitWith {
 					[_handler] call CBA_fnc_removePerFrameHandler;
 					_unit setVariable[QGVAR(gasmask_durability),0];
 					[_unit] spawn FUNC(handleGasMaskDur);
@@ -62,7 +62,7 @@ params["_unit"];
 			[
 				{
 					params["_unit"];
-					!(_unit getVariable [QGVAR(enteredPoisen), false]) || goggles _unit in GVAR(availGasmaskList)
+					_unit getVariable [QGVAR(enteredPoisen), false] || goggles _unit in GVAR(availGasmaskList)
 				},
 				{
 					[_unit] call FUNC(handleGasMaskDur);

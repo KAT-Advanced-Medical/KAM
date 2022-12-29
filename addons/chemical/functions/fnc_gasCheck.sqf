@@ -41,8 +41,8 @@ private _checkplayers = [{
 		private _distance = position _x distance _pos;
 		if (isPlayer _x) then {
 
-			if (_x getVariable [QGVAR(isThreated), false]) then {
-				_x setVariable [QGVAR(isThreated), false, true];
+			if (_x getVariable [QGVAR(isTreated), false]) then {
+				_x setVariable [QGVAR(isTreated), false, true];
 				private _arrPos = _playerARR find _x;
 				_playerARR deleteAt _arrPos;
 				_logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
@@ -55,7 +55,6 @@ private _checkplayers = [{
 			};
 
 			if (!(_x in _playerARR) && _distance < _radius_max) then {
-
 				_playerARR pushBack _x;			
 				_logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
 				[QGVAR(gasCheck_local), [_x, _logic, _pos, _radius_max, _radius_min, _gastype], _x] call CBA_fnc_targetEvent;

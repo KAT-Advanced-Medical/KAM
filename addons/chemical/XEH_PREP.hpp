@@ -18,6 +18,7 @@ PREP(gasCheck);
 PREP(gasCheckLocal);
 PREP(gasmodule);
 PREP(GasTripEffect);
+PREP(getChemDetectorState);
 PREP(getList);
 PREP(giveUnitGasMask);
 PREP(handleCSGas);

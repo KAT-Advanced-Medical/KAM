@@ -6,7 +6,7 @@ class CfgSounds {
             QPATHTOF(audio\cough_1.ogg),
             2,
             1,
-            100
+            10
         };
         titles[] = {};
     };
@@ -40,6 +40,18 @@ class CfgSounds {
         sound[] =
         {
             QPATHTOF(audio\heavyBreath.ogg),
+            4,
+            1.0,
+            10
+        };
+        titles[] = {};
+    };
+
+    class GVAR(chemDetectorSound) {
+        name = QGVAR(chemDetectorSound);
+        sound[] =
+        {
+            QPATHTOF(audio\chemDetector.ogg),
             4,
             1.0,
             10

@@ -66,6 +66,14 @@
             <English>Replace gas mask filter</English>
             <German>Gasmasken Filter austauschen</German>
         </Key>
+        <Key ID="STR_kat_chemical_ChemDetector_Mute">
+            <English>Mute Chemical Detector.</English>
+            <German>Chemischen Detektor Stummschalten.</German>
+        </Key>
+        <Key ID="STR_kat_chemical_ChemDetector_Unmute">
+            <English>Unmute Chemical Detector.</English>
+            <German>Chemischen Detektor entmuten.</German>
+        </Key>
         <Key ID="STR_kat_chemical_GasModule_Displayname">
             <English>Create contaminated area / object</English>
             <German>Kontaminierten Bereich / Gegenstand erstellen</German>

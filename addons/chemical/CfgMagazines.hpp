@@ -18,8 +18,8 @@ class cfgMagazines
     {
         author="DiGii";
 		ammo="Sh_82mm_AMOS_TypeCS";
-		displayNameMFDFormat= CSTRIG(CSGas_MFDNAME);
-		displayNameShort= CSTRIG(CSGas_MFDNAME);
+		displayNameMFDFormat= CSTRING(CSGas_MFDNAME);
+		displayNameShort= CSTRING(CSGas_MFDNAME);
 		displayName= CSTRING(CSGas_DisplayName);
     };
     class KAT_3Rnd_82mm_Mo_TypeCS_AI: KAT_1Rnd_82mm_Mo_TypeCS 
@@ -34,7 +34,7 @@ class cfgMagazines
 		author = "DiGi";
 		displayname = CSTRING(M7A3_CSGrenade_DisplayName);
 		descriptionShort = CSTRING(M7A3_DcsShort);
-		displayNameShort = CSTING(M7A3_CSGrenade_ShortName);
+		displayNameShort = CSTRING(M7A3_CSGrenade_ShortName);
 		model = QPATHTOF(ui\m7a3.p3d);
 		picture = QPATHTOF(ui\KAT_m7a3_ca.paa);        
 		ammo = "KAT_G_M7A3";

@@ -17,7 +17,7 @@
 */
 
 private _logic = param [0, objNull, [objNull]];
-private _activated = param [1, true, [true]];
+private _activated = param [2, true, [true]];
 private _radius_max = _logic getVariable ["raduis_max", 20];
 private _radius_min = _logic getVariable ["raduis_min", 10];
 private _gastype = _logic getVariable ["GAS_type", "toxic"];

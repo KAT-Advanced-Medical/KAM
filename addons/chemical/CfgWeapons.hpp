@@ -44,9 +44,7 @@ class CfgWeapons {
 	    magazines[] +=
 	    {
 		    "KAT_1Rnd_82mm_Mo_Type0",
-            "KAT_5Rnd_82mm_Mo_Type0_AI",
-            "KAT_1Rnd_82mm_Mo_TypeCS",
-            "KAT_3Rnd_82mm_Mo_TypeCS_AI"
+            "KAT_1Rnd_82mm_Mo_TypeCS"
 	    };
 	};
 
