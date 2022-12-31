@@ -37,7 +37,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
             private _timeleft = _unit getVariable[QGVAR(gasmask_durability), 10];
             _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
             if (_unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active), false]) || isNull _logic) exitwith {
-                _unit setVariable[QGVAR(enteredPoisen), false, true];
+                _unit setVariable[QGVAR(enteredPoison), false, true];
                 _isinGas = false;
             };
             
@@ -56,7 +56,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
                 _isinGas = false;
             };
             
-            if (_timeleft <= 0 && _unit getVariable [QGVAR(enteredPoisen), false]) then {
+            if (_timeleft <= 0 && _unit getVariable [QGVAR(enteredPoison), false]) then {
                 _unit setVariable [QGVAR(poisentype), _gastype, true];
                 switch (_gastype) do {
                     case "Toxic": {
@@ -71,16 +71,16 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
                 _isinGas = false;
             };
             
-            if (!(_unit getVariable [QGVAR(enteredPoisen), false]) || !(_logic getVariable [QGVAR(gas_active), false])) then {
+            if (!(_unit getVariable [QGVAR(enteredPoison), false]) || !(_logic getVariable [QGVAR(gas_active), false])) then {
                 _isinGas = false;
-                _unit setVariable [QGVAR(enteredPoisen), false];
+                _unit setVariable [QGVAR(enteredPoison), false];
             };
         },
         1,
         [_unit, _timeEntered, _logic, _gastype, _radius_max, _isinGas]
     ] call CBA_fnc_addPerFrameHandler;
 } else {
-    if (_unit getVariable [QGVAR(enteredPoisen), false]) then {
+    if (_unit getVariable [QGVAR(enteredPoison), false]) then {
         _unit setVariable [QGVAR(poisentype), _gastype, true];
         switch (_gastype) do {
             case "Toxic": {

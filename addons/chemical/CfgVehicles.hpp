@@ -100,14 +100,14 @@ class CfgVehicles {
 
         class Arguments: AttributesBase
         {
-            class Raduis_MAX 
+            class Radius_Max 
             {
                 displayName = CSTRING(UI_max_range);
                 tooltip = CSTRING(GasModule_min_radius_dcs);
                 typeName = "NUMBER";
                 defaultValue = 20;
             };
-            class Raduis_MIN
+            class Radius_Min
             {
                 displayName = CSTRING(UI_min_range);
                 tooltip = CSTRING(GasModule_max_radius_dcs);

@@ -27,7 +27,7 @@ params ["_unit"];
 			{
 				params ["_args", "_pfhID"];
 				_args params ["_unit", "_lastcought"];
-				if(_unit getVariable ["ACE_isUnconscious",false] || !(alive _unit) || !(_unit getVariable [QGVAR(airPoisoning),false])) exitWith {
+				if (_unit getVariable ["ACE_isUnconscious", false] || !(alive _unit) || !(_unit getVariable [QGVAR(airPoisoning), false])) exitWith {
 					[_pfhID] call CBA_fnc_removePerFrameHandler;
 					[_unit] call FUNC(coughing);
 				};

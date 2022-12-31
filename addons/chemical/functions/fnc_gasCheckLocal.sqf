@@ -33,8 +33,8 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
             [_handler] call CBA_fnc_removePerFrameHandler;
         };
         if !(_logic getVariable [QGVAR(gas_active), false]) then {
-            if (_unit getVariable [QGVAR(enteredPoisen), false]) then {
-                _unit setVariable [QGVAR(enteredPoisen), false, true];
+            if (_unit getVariable [QGVAR(enteredPoison), false]) then {
+                _unit setVariable [QGVAR(enteredPoison), false, true];
                 [_handler] call CBA_fnc_removePerFrameHandler;
             };
         };
@@ -73,13 +73,13 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
         params["_args", "_pfhandler"];
         _args params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
         
-        if (!(_logic getVariable [QGVAR(gas_active), false]) || isNull _logic || !(_unit in (_logic getVariable [QGVAR(gas_playerArr), []])) || !(_unit getVariable[QGVAR(enteredPoisen), false])) then {
+        if (!(_logic getVariable [QGVAR(gas_active), false]) || isNull _logic || !(_unit in (_logic getVariable [QGVAR(gas_playerArr), []])) || !(_unit getVariable[QGVAR(enteredPoison), false])) then {
             [_pfhandler] call CBA_fnc_removePerFrameHandler;
         };
         
         _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
-        if (_unit distance _pos <= _radius_max && !(_unit getVariable[QGVAR(enteredPoisen), false]) && !(_unit getVariable ["ACE_isUnconscious", false])) then {
-            _unit setVariable [QGVAR(enteredPoisen), true, true];
+        if (_unit distance _pos <= _radius_max && !(_unit getVariable[QGVAR(enteredPoison), false]) && !(_unit getVariable ["ACE_isUnconscious", false])) then {
+            _unit setVariable [QGVAR(enteredPoison), true, true];
             _unit setVariable [QGVAR(Poisen_logic), _logic, true];
             private _timeEntered = CBA_missiontime;      
 
@@ -99,7 +99,7 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
                     };
                     
                     if (_unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active), false]) || isNull _logic) exitwith {
-                        _unit setVariable[QGVAR(enteredPoisen), false, true];
+                        _unit setVariable[QGVAR(enteredPoison), false, true];
                         [_pfhandler] call CBA_fnc_removePerFrameHandler;
                     };
                     

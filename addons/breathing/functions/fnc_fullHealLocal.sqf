@@ -42,7 +42,7 @@ _unit setVariable [QACEGVAR(medical,pain), 0, true];
 _unit setVariable [QACEGVAR(medical,bloodVolume), 6.0, true];
 
 // GAS
-_unit setVariable [QEGVAR(chemical, enteredPoisen), false, true];
+_unit setVariable [QEGVAR(chemical, enteredPoison), false, true];
 _unit setVariable [QEGVAR(chemical,airPoisoning), false, true];
 _unit setVariable [QEGVAR(chemical,isTreated) ,true,true];
 _unit setVariable [QEGVAR(chemical, CS), false, true];

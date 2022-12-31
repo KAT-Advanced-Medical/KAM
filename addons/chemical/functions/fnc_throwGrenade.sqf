@@ -17,7 +17,7 @@ params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projecti
 
 private _config = configFile >> "Cfgammo" >> _ammo;
 if (getNumber (_config >> "KAT_csGas") != 1) exitwith {};
-if!(local _unit) exitwith {};
+if !(local _unit) exitwith {};
 
 private _fuzetimeBase = getNumber (_config >> "explosiontime");
 
@@ -26,11 +26,11 @@ private _currentime = CBA_missiontime;
 
 [
     {
-        params["_currentime", "_fuzetime"];
+        params ["_currentime", "_fuzetime"];
         (CBA_missiontime - _currentime) > _fuzetime
     },
     {
-        params["_currentime", "_fuzetime", "_projectile"];
+        params ["_currentime", "_fuzetime", "_projectile"];
         [_projectile] call FUNC(csGrenadethrownFuze);
     },
     [_currentime, _fuzetime, _projectile]

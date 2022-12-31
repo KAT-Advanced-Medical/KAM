@@ -26,7 +26,7 @@ if (hasinterface) then {
     [_unit] spawn FUNC(breathing);
 
     _unit setVariable [QGVAR(timeleft), missionNamespace getVariable [QGVAR(infectionTime), 60], true];
-    _unit setVariable [QGVAR(enteredPoisen), false, true];
+    _unit setVariable [QGVAR(enteredPoison), false, true];
     _unit setVariable [QGVAR(gasmask_durability), 10, true];
     _unit setVariable [QGVAR(gasmask_durability_reset), false, true];
     _unit setVariable [QGVAR(chemDetectorState), true , true];
@@ -36,7 +36,7 @@ if (hasinterface) then {
         _args params ["_unit"];
         private _playertime = _unit getVariable [QGVAR(timeleft), 60];
         private _maxtime = missionnamespace getVariable [QGVAR(infectionTime), 60];
-        if (!(_unit getVariable [QGVAR(enteredPoisen), false])) then {
+        if (!(_unit getVariable [QGVAR(enteredPoison), false])) then {
             if (_playertime < missionnamespace getVariable [QGVAR(infectionTime), 60]) then {
                 _playertime = _playertime + 1;
                 if (_playertime >= _maxtime) then {
@@ -54,7 +54,7 @@ if (hasinterface) then {
         "KAT_CHEM_DETECtor" cutRsc ["RscWeaponChemicalDetector", "PLAin", 1, false];
         private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
         private _obj = _ui displayCtrl 101;
-        if (!(_unit getVariable[QGVAR(enteredPoisen), false])) then {
+        if (!(_unit getVariable[QGVAR(enteredPoison), false])) then {
             _obj ctrlAnimatemodel ["Threat_Level_Source", 0, true];
         };
     }, 2, [_unit]]call CBA_fnc_addPerFrameHandler;

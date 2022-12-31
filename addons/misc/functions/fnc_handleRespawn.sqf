@@ -76,7 +76,7 @@ _unit setVariable [QEGVAR(surgery,sedated), false, true];
 
 //KAT Chemical
 
-_unit setVariable [QEGVAR(chemical,enteredPoisen), false, true];
+_unit setVariable [QEGVAR(chemical,enteredPoison), false, true];
 _unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime),60], true];
 _unit setVariable [QEGVAR(chemical,poisenType), "", true];
 _unit setVariable [QEGVAR(chemical,airPoisoning), false, true];

@@ -61,7 +61,7 @@ private _checkplayers = [{
 			};
 
 		} else {
-			if (_distance < _radius_max && alive _x && !(_x getVariable [QGVAR(enteredPoisen), false])) then {
+			if (_distance < _radius_max && alive _x && !(_x getVariable [QGVAR(enteredPoison), false])) then {
 				[QGVAR(gasCheck_ai), [_x, _logic, _pos, _radius_max, _gastype], _x] call CBA_fnc_targetEvent; 
 			};
 		};

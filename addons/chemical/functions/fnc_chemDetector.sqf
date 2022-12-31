@@ -19,14 +19,14 @@ params ["_unit"];
 private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
 private _obj = _ui displayCtrl 101;
 
-if(!(_unit getVariable [QGVAR(enteredPoisen),false])) then {
+if(!(_unit getVariable [QGVAR(enteredPoison),false])) then {
 	_obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
 };
 
 [
 	{
 		params["_unit"];
-		_unit getVariable[QGVAR(enteredPoisen),false]
+		_unit getVariable[QGVAR(enteredPoison),false]
 	},
 	{
 		params["_unit", "_obj"];		
@@ -41,7 +41,7 @@ if(!(_unit getVariable [QGVAR(enteredPoisen),false])) then {
 				if(_thread > 1) then { _thread = 1};
 				_obj ctrlAnimateModel ["Threat_Level_Source", _thread, true];
 
-				if (!("ChemicalDetector_01_watch_F" in (assigneditems _unit)) || !(_unit getVariable[QGVAR(enteredPoisen),false])) exitWith {
+				if (!("ChemicalDetector_01_watch_F" in (assigneditems _unit)) || !(_unit getVariable[QGVAR(enteredPoison),false])) exitWith {
 					[_pfhHandler] call CBA_fnc_removePerFrameHandler;
 					[_unit] call FUNC(chemDetector);
 				};
@@ -52,12 +52,12 @@ if(!(_unit getVariable [QGVAR(enteredPoisen),false])) then {
 				params["_args", "_pfhHandler"];
 				_args params ["_unit"];
 
-				if(_unit getVariable [QGVAR(chemDetectorState), true] && _unit getVariable [QGVAR(gasPercentage), 0] >= 0.1) then {
+				if (_unit getVariable [QGVAR(chemDetectorState), true] && _unit getVariable [QGVAR(gasPercentage), 0] >= 0.1) then {
 					//_unit say3D QGVAR(chemDetectorSound);
 					playSound3D [QPATHTOF(audio\chemDetector.ogg), _unit, false, getPosASL _unit, 4, 1, 10];
 				};
 
-				if (!("ChemicalDetector_01_watch_F" in (assigneditems _unit)) || !(_unit getVariable[QGVAR(enteredPoisen),false])) exitWith {
+				if (!("ChemicalDetector_01_watch_F" in (assigneditems _unit)) || !(_unit getVariable[QGVAR(enteredPoison),false])) exitWith {
 					[_pfhHandler] call CBA_fnc_removePerFrameHandler;
 				};
 

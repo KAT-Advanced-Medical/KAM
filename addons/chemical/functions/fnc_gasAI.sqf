@@ -26,7 +26,7 @@ params ["_unit","_logic","_pos","_radius_max","_gastype"];
         params["_args","_handler"];
         _args params ["_logic","_unit"];
         if(!(_logic getVariable[QGVAR(gas_active),false]) || !(alive _unit) || isNull _unit) then {
-            _unit setVariable[QGVAR(enteredPoisen),false,true];
+            _unit setVariable[QGVAR(enteredPoison),false,true];
             [_handler] call CBA_fnc_removePerFrameHandler;
         };
     },
@@ -44,14 +44,13 @@ private _skill = _unit skill "aimingAccuracy";
             [_handler] call CBA_fnc_removePerFrameHandler;
         };
 
-        _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
-        if ((_unit distance _pos) <= _radius_max && !(_unit getVariable[QGVAR(enteredPoisen), false])) then {
-            _unit setVariable[QGVAR(enteredPoisen), true, true];
+        if ((_unit distance _pos) <= _radius_max && !(_unit getVariable[QGVAR(enteredPoison), false])) then {
+            _unit setVariable[QGVAR(enteredPoison), true, true];
             private _fnc_afterwait = {
                 params["_unit", "_gastype", "_pos", "_skill"];
                 if !(goggles _unit in GVAR(availGasmaskList)) exitwith {
                     if (_gastype isEqualto "CS") then {
-                        while {_unit distance _pos < 10 && _unit getVariable[QGVAR(enteredPoisen), false]} do {
+                        while {_unit distance _pos < 10 && _unit getVariable[QGVAR(enteredPoison), false]} do {
                             _unit say3D QGVAR(cough_1);
                             _unit setskill ["aimingAccuracy", 0.001];
                             [
@@ -97,7 +96,7 @@ private _skill = _unit skill "aimingAccuracy";
                 };
                 _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
                 if (_unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active), false]) || isNull _logic) exitwith {
-                    _unit setVariable[QGVAR(enteredPoisen), false, true];
+                    _unit setVariable[QGVAR(enteredPoison), false, true];
                     _i = 2;
                 };
             };
