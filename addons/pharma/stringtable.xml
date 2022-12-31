@@ -2098,6 +2098,7 @@
             <Polish>Włącz krzepnięcie</Polish>
             <Czech>Povolit Koagulaci</Czech>
             <German>Gerinnung</German>
+            <French>Activer la coagulation</French>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Coagulation_DESC">
             <English>Enables advanced coagulation features and modifies TXA and EACA behaviour accordingly.</English>
@@ -2106,6 +2107,7 @@
             <Polish>Włącza zaawansowane funkcje krzepnięcia oraz odpowiednie modyfikacje zachowania TXA i EACA.</Polish>
             <Czech>Povolí funkci pokročilé koagulace (srážlivost) krve a modifikuje chování TXA a EACA.</Czech>
             <German>Aktiviert erweiterte Gerinnung und modifiziert das verhalten von TXA &amp; EACA (E-Aminocapronsäure) entsprechend.</German>
+            <French>Active la coagulation avancée et modifie l'effet de l'Acide Tranexamique et de l'Acide Aminocaproïque en conséquence</French>
         </Key>
         <Key ID="STR_kat_pharma_EACA_Display">
             <English>EACA</English>
@@ -2210,6 +2212,7 @@
             <Italian>Esegui Dialisi</Italian>
             <Czech>Provést dialýzu</Czech>
             <German>Dialyse durchführen</German>
+            <French>Effectuer une dialyse</French>
         </Key>
         <Key ID="STR_kat_pharma_Dialysis_DisplayNameProgress">
             <English>Performing</English>
@@ -2218,6 +2221,7 @@
             <Italian>Eseguendo</Italian>
             <Czech>Provádění dialýzy</Czech>
             <German>Durchführung</German>
+            <French>Dialyse en cours</French>
         </Key>
         <Key ID="STR_kat_pharma_dialysis_log">
             <English>%1 performed dialysis</English>
@@ -2238,6 +2242,7 @@
             <German>[KAM] Medikamentenkiste</German>
             <Italian>[KAT] Cassa medicinali</Italian>
             <Japanese>[KAM] 医薬品箱</Japanese>
+            <French>[KAM] Caisse de médicaments</French>
         </Key>
     </Package>
 </Project>
