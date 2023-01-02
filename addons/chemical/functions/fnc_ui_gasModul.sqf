@@ -15,7 +15,7 @@
  * Public: No
 */
 
-params["_control"];
+params ["_control"];
 
 private _display = ctrlParent _control;
 private _ctrlButtonOK = _display displayCtrl 1;
@@ -64,7 +64,7 @@ private _fnc_onConfirm = {
     private _display = ctrlParent _ctrlButtonOK;
     if (isNull _display) exitWith {};
 
-    private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
+    private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
     if (isNull _logic) exitWith {};
 
     private _gasTypeValue = _display getVariable[QGVAR(ui_gastype),0];
@@ -78,12 +78,12 @@ private _fnc_onConfirm = {
         };
     };
 
-    private _radius_max = _display getVariable[QGVAR(ui_radiusMax), 20];
-    private _radius_min = _display getVariable[QGVAR(ui_radiusMin), 10]; 
+    private _radius_max = _display getVariable [QGVAR(ui_radiusMax), 20];
+    private _radius_min = _display getVariable [QGVAR(ui_radiusMin), 10]; 
     if(_radius_min > _radius_max) then {
-        [CSTRING(GasModule_Needbigger)] call ace_zeus_fnc_showMessage;
+        [CSTRING(GasModule_Needbigger)] call ACEFUNC(zeus,showMessage);
     } else {
-        private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
+        private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
         if (isNull _logic) exitWith {};
         
         

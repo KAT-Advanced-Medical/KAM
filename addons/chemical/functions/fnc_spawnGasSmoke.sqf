@@ -5,7 +5,7 @@
  * Arguments:
  * 0: Postiton <VECTOR3>
  * 1: Radius <Number>
- * 2: lifetime <Number>
+ * 2: Lifetime <Number>
  *
  * Return Value:
  * NONE

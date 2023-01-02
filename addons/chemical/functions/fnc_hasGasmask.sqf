@@ -18,11 +18,11 @@
 params [["_player", objNull, [objNull]],["_patient", objNull, [objNull]]];
 
 
-private _playerarr = _player call ace_common_fnc_uniqueItems;
+private _playerarr = _player call ACEFUNC(common,uniqueItems);
 private _playerhasGasmask = false;
 { if(_x in GVAR(availGasmaskList)) then {_playerhasGasmask = true} } forEach _playerarr;
 
-private _patientarr = _patient call ace_common_fnc_uniqueItems;
+private _patientarr = _patient call ACEFUNC(common,uniqueItems);
 private _patienthasGasmask = false;
 { if(_x in GVAR(availGasmaskList)) then {_patienthasGasmask = true} } forEach _patientarr;
 

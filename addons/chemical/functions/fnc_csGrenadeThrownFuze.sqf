@@ -3,7 +3,7 @@
  * Author: DiGii
  * 
  * Arguments:
- * 0: Porjectile <OBJECT>
+ * 0: Projectile <OBJECT>
  *
  * Return Value:
  * NONE

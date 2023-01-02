@@ -5,7 +5,8 @@
 *
 * Arguments:
 * 0: Logic <LOGIC>
-* 1: Activated <BOOL>
+* 1: Affected Units (not used) <ARRAY>
+* 2: Activated <BOOL>
 *
 * Return Value:
 * NONE

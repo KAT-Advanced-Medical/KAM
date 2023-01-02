@@ -3,7 +3,7 @@
  * Author: DiGii
  * 
  * Arguments:
- * 0: Player <OBJECT>
+ * 0: Caller <OBJECT>
  * 1: Target <OBJECT>
  *
  * Return Value:
@@ -16,6 +16,5 @@
 */
 
 params ["_medic", "_patient"];
-
 
 !(_patient call ACE_common_fnc_isAwake) && ([_medic,_patient] call FUNC(hasGasmask)) && !(goggles _patient in GVAR(availGasmaskList))

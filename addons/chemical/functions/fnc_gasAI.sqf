@@ -15,26 +15,27 @@
  * NONE
  *
  * Example:
- * [] call kat_chemical_fnc_gasAI;
+ * [player, logic, getPos player, 50, "Toxic"] call kat_chemical_fnc_gasAI;
  *
  * Public: No
 */
 
-params ["_unit","_logic","_pos","_radius_max","_gastype"];
+params ["_unit", "_logic", "_pos", "_radius_max", "_gastype"];
+
 [
     {
         params["_args","_handler"];
         _args params ["_logic","_unit"];
-        if(!(_logic getVariable[QGVAR(gas_active),false]) || !(alive _unit) || isNull _unit) then {
-            _unit setVariable[QGVAR(enteredPoison),false,true];
+        if(!(_logic getVariable [QGVAR(gas_active),false]) || !(alive _unit) || isNull _unit) then {
+            _unit setVariable [QGVAR(enteredPoison),false,true];
             [_handler] call CBA_fnc_removePerFrameHandler;
         };
     },
     3,
     [_logic,_unit]
 ] call CBA_fnc_addPerFrameHandler;
-private _skill = _unit skill "aimingAccuracy";
 
+private _skill = _unit skill "aimingAccuracy";
 [
 	{
 	    params["_args","_handler"];
@@ -44,13 +45,13 @@ private _skill = _unit skill "aimingAccuracy";
             [_handler] call CBA_fnc_removePerFrameHandler;
         };
 
-        if ((_unit distance _pos) <= _radius_max && !(_unit getVariable[QGVAR(enteredPoison), false])) then {
+        if ((_unit distance _pos) <= _radius_max && !(_unit getVariable [QGVAR(enteredPoison), false])) then {
             _unit setVariable[QGVAR(enteredPoison), true, true];
             private _fnc_afterwait = {
                 params["_unit", "_gastype", "_pos", "_skill"];
                 if !(goggles _unit in GVAR(availGasmaskList)) exitwith {
                     if (_gastype isEqualto "CS") then {
-                        while {_unit distance _pos < 10 && _unit getVariable[QGVAR(enteredPoison), false]} do {
+                        while {_unit distance _pos < 10 && _unit getVariable [QGVAR(enteredPoison), false]} do {
                             _unit say3D QGVAR(cough_1);
                             _unit setskill ["aimingAccuracy", 0.001];
                             [
@@ -60,10 +61,10 @@ private _skill = _unit skill "aimingAccuracy";
                                 },
                                 [_unit, _skill],
                                 2
-                            ] call CBA_fnc_waitandexecute;
+                            ] call CBA_fnc_waitAndExecute;
                         };
                     } else {
-                        if (ace_medical_statemachine_AIUnconsciousness) then {
+                        if (GVAR(medical_statemachine,AIUnconsciousness)) then {
                             for "_i" from 0 to 10 step 1 do {
                                 [
                                     {
@@ -72,13 +73,13 @@ private _skill = _unit skill "aimingAccuracy";
                                     },
                                     [_unit],
                                     5
-                                ] call CBA_fnc_waitandexecute;
+                                ] call CBA_fnc_waitAndExecute;
                             };
                         } else {
                             [{
                                 private _unit = _this select 0;
                                 _unit setDamage 1;
-                            }, [_unit], 20]call CBA_fnc_waitandexecute;
+                            }, [_unit], 20]call CBA_fnc_waitAndExecute;
                         };
                     };
                 };
@@ -95,8 +96,8 @@ private _skill = _unit skill "aimingAccuracy";
                     _i = 2;
                 };
                 _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
-                if (_unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active), false]) || isNull _logic) exitwith {
-                    _unit setVariable[QGVAR(enteredPoison), false, true];
+                if (_unit distance _pos > _radius_max || !(_logic getVariable [QGVAR(gas_active), false]) || isNull _logic) exitwith {
+                    _unit setVariable [QGVAR(enteredPoison), false, true];
                     _i = 2;
                 };
             };

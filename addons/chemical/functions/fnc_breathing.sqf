@@ -1,10 +1,9 @@
 #include "script_component.hpp"
-
 /*
 * Author: DiGii
 *
 * Arguments:
-* 0: player <OBJECT>
+* 0: Unit <OBJECT>
 *
 * Return Value:
 * NONE
@@ -29,11 +28,11 @@ params ["_unit"];
             {
                 params["_args", "_handler"];
                 _args params ["_unit"];
-                if !(goggles _unit in GVAR(availGasmaskList) || !(alive player) || _unit getVariable[QACEGVAR(medical, heartrate), 80] <= 0) then {
+                if !(goggles _unit in GVAR(availGasmaskList) || !(alive player) || _unit getVariable [QACEGVAR(medical,heartrate), 80] <= 0) then {
                     [_handler] call CBA_fnc_removePerFrameHandler;
                     [_unit] spawn FUNC(breathing);
                 } else {
-                    if (GET_PAIN_PERCEIVED(_unit) >= 0.4 || {_unit getVariable[QACEGVAR(medical, heartrate), 80] >= 105}) then {
+                    if (GET_PAIN_PERCEIVED(_unit) >= 0.4 || {_unit getVariable[QACEGVAR(medical,heartrate), 80] >= 105}) then {
                         _unit say3D QGVAR(mask_breath_heavy);
                     } else {
                         private _random = selectRandom[QGVAR(mask_breath_1), QGVAR(mask_breath_2)];
@@ -43,7 +42,7 @@ params ["_unit"];
             },
             5,
             [_unit]
-        ]call CBA_fnc_addPerFrameHandler;
+        ] call CBA_fnc_addPerFrameHandler;
     },
     [_unit]
 ] call CBA_fnc_waitUntilAndExecute;

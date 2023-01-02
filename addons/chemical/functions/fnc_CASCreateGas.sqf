@@ -3,7 +3,7 @@
 * Author: DiGii
 *
 * Arguments:
-* 0: position <ARRAY>
+* 0: Position <ARRAY>
 *
 * Return Value:
 * NONE

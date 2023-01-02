@@ -3,13 +3,13 @@
  * Author: DiGii
  * 
  * Arguments:
- * NONE
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * NONE
  *
  * Example:
- * [] call kat_chemical_fnc_coughing;
+ * [player] call kat_chemical_fnc_coughing;
  *
  * Public: No
 */

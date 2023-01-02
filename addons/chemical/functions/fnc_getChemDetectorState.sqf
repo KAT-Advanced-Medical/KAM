@@ -3,7 +3,8 @@
  * Author: DiGii
  * 
  * Arguments:
- * NONE
+ * 0: Unit <OBJECT>
+ * 1: Is On/Off <BOOL>
  *
  * Return Value:
  * NONE

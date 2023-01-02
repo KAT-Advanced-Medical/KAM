@@ -5,7 +5,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(giveGasMask_progress);
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
-        callbackSuccess = FUNC(giveUnitGasMask);
+        callbackSuccess = QFUNC(giveUnitGasMask);
         condition = QUOTE([ARR_2(_player, _patient)] call FUNC(canPutGasMask));
         icon = QPATHTOF(ui\Gasmask_icon.paa);
     };

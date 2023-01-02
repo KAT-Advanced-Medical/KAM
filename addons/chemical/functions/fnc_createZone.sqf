@@ -19,16 +19,14 @@
 */
 params["_pos","_lifetime","_radius","_gasLvL"];
 
-
 private _logic = "ACE_LogicDummy" createVehicle _pos;
-
 
 private _gastype = "";
     switch (_gasLvL) do {
         case 1: { //CS
             _gastype = "CS";
         }; 
-        default { //toxic gas (standart)
+        default { //toxic gas (standard)
             _gastype = "Toxic";
         };
     };

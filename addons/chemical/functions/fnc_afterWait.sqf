@@ -5,30 +5,28 @@
 * Handles the Gas effect for the player
 *
 * Arguments:
-* 0: Target <OBJECT>
-* 1: module <logic>
-* 2: position <position>
-* 3: max_radius <NUMBER>
-* 4: min_radius <NUMBER>
-* 5: Gastype <strinG>
+* 0: Unit <OBJECT>
+* 1: Module <LOGIC>
+* 2: Gastype <STRING>
+* 3: Max_radius <NUMBER>
 *
 * Return Value:
 * NONE
 *
 * Example:
-* [player, logic, getPos player, 50, 20, 1] call kat_chemical_fnc_gasChecklocal;
+* [player, logic, "Toxic", 50] call kat_chemical_fnc_gasChecklocal;
 *
 * Public: No
 */
 
-params ["_unit", "_timeEntered", "_logic", "_gastype", "_radius_max"];
+params ["_unit", "_logic", "_gastype", "_radius_max"];
 
 if (goggles _unit in GVAR(availGasmasklist)) then {
     private _isinGas = true;
     [
         {
             params["_args", "_pfhHandler"];
-            _args params["_unit", "_timeEntered", "_logic", "_gastype", "_radius_max", "_isinGas"];
+            _args params["_unit", "_logic", "_gastype", "_radius_max", "_isinGas"];
             
             if !(_isinGas) exitwith {
                 [_pfhHandler] call CBA_fnc_removePerFrameHandler;
@@ -77,7 +75,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
             };
         },
         1,
-        [_unit, _timeEntered, _logic, _gastype, _radius_max, _isinGas]
+        [_unit, _logic, _gastype, _radius_max, _isinGas]
     ] call CBA_fnc_addPerFrameHandler;
 } else {
     if (_unit getVariable [QGVAR(enteredPoison), false]) then {
