@@ -143,9 +143,66 @@ if (!local _unit) then {
         };
 
         _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
-    if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(SpO2_unconscious)}) then {
+        if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(SpO2_unconscious)}) then {
             [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
         };
-    };
+        
+        if (GVAR(enableSPO2Flashing)) then {
+            if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= 90}) then {
+                ["ColorCorrections", 1500, [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]]] spawn
+                {
+                    params ["_name", "_priority", "_effect", "_handle"];
+                    while {
+                        _handle = ppEffectCreate [_name, _priority];
+                        _handle < 0
+                    } do {
+                        _priority = _priority + 1;
+                    };
+                    _handle ppEffectEnable true;
+                    _handle ppEffectAdjust _effect;
+                    _handle ppEffectCommit 0.7;
 
+                    [{  params["_handle"];
+                        ppEffectCommitted _handle
+                    }, 
+                    {   params["_handle"];           
+                        _handle ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.5], [1, 1, 1, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
+                        _handle ppEffectCommit 0.7;
+
+                        [{  params["_handle"];
+                            ppEffectCommitted _handle
+                        }, 
+                        {   params["_handle"];
+                            _handle ppEffectAdjust [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
+                            _handle ppEffectCommit 1.6;       
+                            
+                            [{  params["_handle"];
+                                ppEffectCommitted _handle
+                            }, 
+                            {   params["_handle"];           
+                                _handle ppEffectEnable false;
+                                ppEffectDestroy _handle;
+                            }, [_handle]] call CBA_fnc_waitUntilAndExecute;
+
+                        }, [_handle]] call CBA_fnc_waitUntilAndExecute;
+
+                    }, [_handle]] call CBA_fnc_waitUntilAndExecute;
+                };
+            };
+        };
+
+        if(GVAR(staminaLossAtLowSPO2)) then {
+            if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= 90}) then {
+                if (ACEGVAR(advanced_fatigue,enabled)) then {
+                    
+                    ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) - 30;
+
+                } else {
+                    
+                    _unit setStamina(getStamina _unit - 3);
+
+                };
+            };
+        };
+    };
 }, 3, [_unit]] call CBA_fnc_addPerFrameHandler;
