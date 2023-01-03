@@ -149,7 +149,7 @@ if (!local _unit) then {
         
         if (GVAR(enableSPO2Flashing)) then {
             if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= 90}) then {
-                ["ColorCorrections", 1500, [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]]] spawn
+                ["ColorCorrections", 1500, [1, 1, 0, [0, 0, 0, 0], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]]] spawn
                 {
                     params ["_name", "_priority", "_effect", "_handle"];
                     while {
@@ -165,15 +165,15 @@ if (!local _unit) then {
                     [{  params["_handle"];
                         ppEffectCommitted _handle
                     }, 
-                    {   params["_handle"];           
-                        _handle ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.5], [1, 1, 1, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
+                    {   params["_handle"];          
+                        _handle ppEffectAdjust [1, 1, 0, [0, 0, 0, 0.9], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
                         _handle ppEffectCommit 0.7;
 
                         [{  params["_handle"];
                             ppEffectCommitted _handle
                         }, 
                         {   params["_handle"];
-                            _handle ppEffectAdjust [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
+                            _handle ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
                             _handle ppEffectCommit 1.6;       
                             
                             [{  params["_handle"];
