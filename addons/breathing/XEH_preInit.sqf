@@ -311,7 +311,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Enable stamina loss by low SPO2 (under 90%)
+//Enable stamina loss by low SPO2
 [
     QGVAR(staminaLossAtLowSPO2),
     "CHECKBOX",
@@ -320,5 +320,15 @@ PREP_RECOMPILE_END;
     [true],
     true
 ]   call CBA_Settings_fnc_init;
+
+//low SPO2 Warning Level
+[
+    QGVAR(lowSPO2Level),
+    "SLIDER",
+    [LLSTRING(SETTING_lowSPO2Level_display), LLSTRING(SETTING_lowSPO2Level_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [0, 100, 90, 1],
+    true
+] call CBA_Settings_fnc_init;
 
 ADDON = true;

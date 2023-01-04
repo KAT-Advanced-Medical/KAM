@@ -148,7 +148,7 @@ if (!local _unit) then {
         };
         
         if (GVAR(enableSPO2Flashing)) then {
-            if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= 90}) then {
+            if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(lowSPO2Level)}) then {
                 ["ColorCorrections", 1500, [1, 1, 0, [0, 0, 0, 0], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]]] spawn
                 {
                     params ["_name", "_priority", "_effect", "_handle"];
@@ -192,15 +192,11 @@ if (!local _unit) then {
         };
 
         if(GVAR(staminaLossAtLowSPO2)) then {
-            if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= 90}) then {
+            if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(lowSPO2Level)}) then {
                 if (ACEGVAR(advanced_fatigue,enabled)) then {
-                    
                     ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) - 30;
-
                 } else {
-                    
                     _unit setStamina(getStamina _unit - 3);
-
                 };
             };
         };
