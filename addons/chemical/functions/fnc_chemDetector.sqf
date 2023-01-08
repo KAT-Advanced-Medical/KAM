@@ -52,8 +52,7 @@ if(!(_unit getVariable [QGVAR(enteredPoison),false])) then {
 				params["_args", "_pfhHandler"];
 				_args params ["_unit"];
 
-				if (_unit getVariable [QGVAR(chemDetectorState), true] && _unit getVariable [QGVAR(gasPercentage), 0] >= 0.1) then {
-					//_unit say3D QGVAR(chemDetectorSound);
+				if (_unit getVariable [QGVAR(chemDetectorState), true] && _unit getVariable [QGVAR(gasPercentage), 0] >= 0.1 && "ChemicalDetector_01_watch_F" in (assigneditems _unit)) then {
 					playSound3D [QPATHTOF(audio\chemDetector.ogg), _unit, false, getPosASL _unit, 4, 1, 10];
 				};
 
