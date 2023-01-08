@@ -189,5 +189,27 @@ class ADDON {
             incompatibleMedication[] = {};
             viscosityChange = -15;
         };
+        class Pervitin {
+            painReduce = 0.5;
+            hrIncreaseLow[] = {15, 25};
+            hrIncreaseNormal[] = {15, 30};
+            hrIncreaseHigh[] = {15, 25};
+            timeInSystem = 600;
+            timeTillMaxEffect = 5;
+            maxDose = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = 5;
+        };
+        class Caffeine {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 5};
+            hrIncreaseNormal[] = {5, 10};
+            hrIncreaseHigh[] = {5, 15};
+            timeInSystem = 1800;
+            timeTillMaxEffect = 5;
+            maxDose = 6;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+        };
     };
 };

@@ -301,4 +301,34 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 */
 
+//Enables White Flashing on Below 90% SPO2
+[
+    QGVAR(enableSPO2Flashing),
+    "CHECKBOX",
+    [LLSTRING(SETTING_SPO2Flashing_display), LLSTRING(SETTING_SPO2Flashing_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+//Enable stamina loss by low SPO2
+[
+    QGVAR(staminaLossAtLowSPO2),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Stamina_Loss_SPO2_display), LLSTRING(SETTING_Stamina_Loss_SPO2_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
+    true
+]   call CBA_Settings_fnc_init;
+
+//low SPO2 Warning Level
+[
+    QGVAR(lowSPO2Level),
+    "SLIDER",
+    [LLSTRING(SETTING_lowSPO2Level_display), LLSTRING(SETTING_lowSPO2Level_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [0, 100, 90, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

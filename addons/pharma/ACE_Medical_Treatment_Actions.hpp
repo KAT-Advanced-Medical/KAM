@@ -54,6 +54,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
     };
     class Carbonate: Morphine {
         displayName = CSTRING(Take_Carbonate);
@@ -68,6 +69,32 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
         condition = "[_medic, 'kat_Carbonate'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Carbonate'] call ace_common_fnc_hasMagazine";
         callbackSuccess = QFUNC(treatmentAdvanced_Carbonate);
+        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+    };
+    class Pervitin: Morphine {
+        displayName = CSTRING(Take_Pervitin);
+        displayNameProgress = CSTRING(Using);
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_Pervitin);
+        treatmentTime = QGVAR(treatmentTime_Pervitin);
+        items[] = {};
+        litter[] = {};
+        condition = "[_medic, 'kat_Pervitin'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Pervitin'] call ace_common_fnc_hasMagazine";
+        callbackSuccess = QFUNC(treatmentAdvanced_Pervitin);
+        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+    };
+    class Caffeine: Morphine {
+        displayName = CSTRING(Take_Caffeine);
+        displayNameProgress = CSTRING(Using);
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 1;
+        treatmentTime = 5;
+        items[] = {};
+        litter[] = {};
+        condition = "[_medic, 'kat_Caffeine'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Caffeine'] call ace_common_fnc_hasMagazine";
+        callbackSuccess = QFUNC(treatmentAdvanced_Caffeine);
+        sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
     };
     class Naloxone: Carbonate {
         displayName = CSTRING(Take_Naloxone);
@@ -195,7 +222,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Ketamine);
         treatmentTime = QGVAR(treatmentTime_Ketamine);
         items[] = {"kat_ketamine"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(treatmentAdvanced_Ketamine);
     };
     class Fentanyl: EACA {
         displayName = CSTRING(Take_Fentanyl);
@@ -204,7 +231,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Fentanyl);
         treatmentTime = QGVAR(treatmentTime_Fentanyl);
         items[] = {"kat_fentanyl"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(treatmentAdvanced_Fentanyl);
     };
     class Nalbuphine: EACA {
         displayName = CSTRING(Take_Nalbuphine);
