@@ -86,7 +86,7 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
             [
                 {
                     params["_args", "_pfhandler"];
-                    _args params[ "_radius_max", "_radius_min", "_unit", "_timeEntered", "_logic", "_gastype"];
+                    _args params[ "_radius_max", "_radius_min", "_unit", "_logic", "_gastype"];
                     _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
                     _unittime = _unit getVariable [QGVAR(timeleft), 60];
                     _percent = _unit getVariable [QGVAR(gasPercentage), 0];
