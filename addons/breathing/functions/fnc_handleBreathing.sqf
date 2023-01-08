@@ -36,7 +36,7 @@ if (!local _unit) then {
     private _airway = true;
     private _breathing = true;
 
-    if ((_unit getVariable [QGVAR(tensionpneumothorax), false]) || (_unit getVariable [QGVAR(hemopneumothorax), false]) || (_unit getVariable [QGVAR(pneumothorax), false])) then {
+    if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QGVAR(tensionpneumothorax), false]) || (_unit getVariable [QGVAR(hemopneumothorax), false]) || (_unit getVariable [QGVAR(pneumothorax), false])) then {
         _breathing = false;
     };
 
