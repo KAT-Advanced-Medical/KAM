@@ -202,3 +202,29 @@ if (!local _unit) then {
         };
     };
 }, 3, [_unit]] call CBA_fnc_addPerFrameHandler;
+
+
+
+[{
+    params ["_args", "_idPFH"];
+    _args params ["_unit"];
+
+    private _status = _unit getVariable [QGVAR(airwayStatus), 100];
+
+    if(!(alive _unit) || _status > 100 || _unit getVariable ["ACE_isUnconscious", false]) exitwith {
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+    };
+
+    if (_unit getVariable [QGVAR(pneumothorax), false]) then {
+        _unit say3D QGVAR(pneumothoraxcough);
+    };
+
+    if (_unit getVariable [QGVAR(hemopneumothorax), false]) then {
+        _unit say3D QGVAR(pneumothoraxcough);
+    };
+
+    if (_unit getVariable [QGVAR(tensionpneumothorax), false]) then {
+        _unit say3D QGVAR(pneumothoraxcough);
+    };
+
+}, 30, [_unit]] call CBA_fnc_addPerFrameHandler;
