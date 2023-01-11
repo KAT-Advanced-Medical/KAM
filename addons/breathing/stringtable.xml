@@ -1151,26 +1151,32 @@
         <Key ID="STR_kat_breathing_SETTING_SPO2Flashing_display">
             <English>Enable low SPO2 warning</English>
             <German>Aktiviere Schwarz aufleuchten bei niedrigen SPO2</German>
+            <French>Autoriser les alertes de SpO2 basse</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SPO2Flashing_DESC">
             <English>Makes your Screen flash black if you are below 90% SPO2 (default value)</English>
             <German>Lässt deinen Bildschirm Schwarz aufleuchten wenn du unter 90% SPO2 bist (Standard Wert)</German>
+            <French>Fait flasher l'écran en noir si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Stamina_Loss_SPO2_display">
             <English>Enable Stamina loss on low SPO2</English>
             <German>Aktiviere Ausdauer verlust bei niedrigem SPO2</German>
+            <French>Autoriser la perte d'endurance en cas de SpO2 basse</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Stamina_Loss_SPO2_DESC">
             <English>Makes you lose stamina if you are under 90% SPO2 (default value)</English>
             <German>Lässt dich Ausdauer verlieren wenn du unter 90% SPO2 bist (Standard Wert)</German>
+            <French>Fait perdre de l'endurance si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_lowSPO2Level_display">
             <English>Low SPO2 warning level</English>
             <German>Niedrige SPO2 warn Level</German>
+            <French>Niveau d'alerte de SpO2 basse</French>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_lowSPO2Level_DESC">
             <English>Lets you change the SPO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
             <German>Lässt dich das SPO2 Wert änder ab wann du das Schwarze aufleuchten und den Ausdauer verlust bekommst</German>
+            <French>Règle la valeur de SpO2 à laquelle les flashs d'alerte et la perte d'endurance apparaissent</French>
         </Key>
     </Package>
 </Project>
