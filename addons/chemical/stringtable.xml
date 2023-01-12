@@ -46,6 +46,10 @@
             <German>Gasmaskenfilter</German>
             <French>Filtre de masque à gaz</French>
         </Key>
+        <Key ID="STR_kat_chemical_GasFilterItem_desc">
+            <English></English>
+            <German></German>
+            <French></French>
         <Key ID="STR_kat_chemical_sealantItem">
             <English>Sealant tube</English>
             <German>Dichtmitteltube</German>
