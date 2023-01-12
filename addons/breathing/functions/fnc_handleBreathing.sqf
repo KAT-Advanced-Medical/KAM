@@ -211,7 +211,7 @@ if (!local _unit) then {
 
     private _status = _unit getVariable [QGVAR(airwayStatus), 100];
 
-    if(!(alive _unit) || _status > 100 || _unit getVariable ["ACE_isUnconscious", false]) exitwith {
+    if(!(alive _unit) || _status > 100 || IS_UNCONSCIOUS(_unit)) exitwith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
