@@ -211,12 +211,11 @@ if (!local _unit) then {
 
     private _status = _unit getVariable [QGVAR(airwayStatus), 100];
 
-    if(!(alive _unit) || _status > 100 || IS_UNCONSCIOUS(_unit)) exitwith {
+    if (!(alive _unit) || _status == 100 || IS_UNCONSCIOUS(_unit)) exitwith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
     if (_unit getVariable [QGVAR(pneumothorax), false] || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false]) then {
         _unit say3D QGVAR(pneumothoraxcough);
     };
-    
 }, 30, [_unit]] call CBA_fnc_addPerFrameHandler;
