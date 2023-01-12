@@ -215,16 +215,8 @@ if (!local _unit) then {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (_unit getVariable [QGVAR(pneumothorax), false]) then {
+    if (_unit getVariable [QGVAR(pneumothorax), false] || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false]) then {
         _unit say3D QGVAR(pneumothoraxcough);
     };
-
-    if (_unit getVariable [QGVAR(hemopneumothorax), false]) then {
-        _unit say3D QGVAR(pneumothoraxcough);
-    };
-
-    if (_unit getVariable [QGVAR(tensionpneumothorax), false]) then {
-        _unit say3D QGVAR(pneumothoraxcough);
-    };
-
+    
 }, 30, [_unit]] call CBA_fnc_addPerFrameHandler;
