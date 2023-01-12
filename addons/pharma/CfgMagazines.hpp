@@ -33,4 +33,36 @@ class CfgMagazines {
         lastRoundsTracer = 0;
         mass = 1;
     };
+    class kat_Pervitin: CA_Magazine {
+        author = "Miss Heda";
+        
+        scope = 2;
+        displayName = CSTRING(Pervitin_Capsule_Display);
+        descriptionShort = CSTRING(Pervitin_Capsule_DescShort);
+        model = QPATHTOF(models\pervitin\pervitin.p3d);
+        picture = QPATHTOF(ui\icon_Pervitin.paa);
+
+        ammo = "";
+        count = 8;
+        initSpeed = 0;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+        mass = 1;
+    };
+        class kat_Caffeine: CA_Magazine {
+        author = "Miss Heda";
+        
+        scope = 2;
+        displayName = CSTRING(Caffeine_Bottle_Display);
+        descriptionShort = CSTRING(Caffeine_Bottle_DescShort);
+        model = QPATHTOF(models\caffeine\caffeine.p3d);
+        picture = QPATHTOF(ui\icon_Caffeine.paa);
+
+        ammo = "";
+        count = 15;
+        initSpeed = 0;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+        mass = 1;
+    };
 };

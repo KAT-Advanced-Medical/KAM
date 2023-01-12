@@ -74,6 +74,23 @@ _unit setVariable [QEGVAR(surgery,lidocaine), false, true];
 _unit setVariable [QEGVAR(surgery,etomidate), false, true];
 _unit setVariable [QEGVAR(surgery,sedated), false, true];
 
+//KAT Chemical
+
+_unit setVariable [QEGVAR(chemical,enteredPoison), false, true];
+_unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime),60], true];
+_unit setVariable [QEGVAR(chemical,poisenType), "", true];
+_unit setVariable [QEGVAR(chemical,airPoisoning), false, true];
+_unit setVariable [QEGVAR(chemical,CS), false, true];
+_unit setVariable [QEGVAR(chemical,gasmask_durability), 10, true];
+
+"kat_CHEM_DETECTOR" cutRsc ["RscWeaponChemicalDetector", "PLAIN", 1, false];
+private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
+private _obj = _ui displayCtrl 101;
+_obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
+if (_unit getVariable [QEGVAR(chemical,painEffect),0] != 0) then {
+    KAT_PAIN_EFFECT ppEffectEnable false;
+};
+
 
 // Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten
 _unit spawn {
@@ -200,4 +217,50 @@ if (EGVAR(pharma,coagulation)) then {
             } forEach _openWounds;
         };
     }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;
+};
+
+/// Clear Stamina & weapon sway
+if (ACEGVAR(advanced_fatigue,enabled)) then {
+    
+    ["PDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
+	["EDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
+    ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
+
+} else {
+
+    _patient enableStamina true;
+	_patient setAnimSpeedCoef 1;
+    _patient setCustomAimCoef 1;
+
+};
+
+/// Clear chroma effect
+
+["ChromAberration", 200, [ 0, 0, true ]] spawn
+{
+    params["_name", "_priority", "_effect", "_handle"];
+    while
+    {
+        _handle = ppEffectCreate[_name, _priority];
+        _handle < 0
+    }
+    do
+    {
+        _priority = _priority + 1;
+    };
+    _handle ppEffectEnable true;
+    _handle ppEffectAdjust _effect;
+    _handle ppEffectCommit 0;
+    addCamShake[0, 0, 50];
+    [
+        {
+            params["_handle"];
+            ppEffectCommitted _handle
+        },
+        {
+            params["_handle"];
+            _handle ppEffectEnable false;
+            ppEffectDestroy _handle;
+        },
+    [_handle]] call CBA_fnc_waitUntilAndExecute;
 };

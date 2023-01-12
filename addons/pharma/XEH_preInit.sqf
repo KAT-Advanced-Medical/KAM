@@ -39,7 +39,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(IVdrop),
     "SLIDER",
-    [LLSTRING(IV_DROP)],
+    [LLSTRING(IV_DROP),LLSTRING(IV_DROP_TIME_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [60, 1200, 600, 0],
     true
@@ -60,7 +60,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_ApplyIV), LLSTRING(medlLvl_ApplyIV_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -88,7 +88,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_ApplyIO), LLSTRING(medlLvl_ApplyIO_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIO)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -116,7 +116,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(SETTING_Allow_Reorientation),LLSTRING(Allow_Reorientation_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Reorientation)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_settings_fnc_init;
 
@@ -154,7 +154,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_Carbonate)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Carbonate)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -182,7 +182,7 @@ PREP_RECOMPILE_END;
 	"LIST",
 	[LLSTRING(medLvl_Lorazepam)],
 	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Lorazepam)],
-	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+	[[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
 	true
 ] call CBA_Settings_fnc_init;
 
@@ -201,7 +201,7 @@ PREP_RECOMPILE_END;
 	"LIST",
 	[LLSTRING(medLvl_Etomidate)],
 	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Etomidate)],
-	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+	[[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
 	true
 ] call CBA_Settings_fnc_init;
 
@@ -220,7 +220,7 @@ PREP_RECOMPILE_END;
 	"LIST",
 	[LLSTRING(medLvl_Flumazenil)],
 	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Flumazenil)],
-	[[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+	[[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
 	true
 ] call CBA_Settings_fnc_init;
 
@@ -239,7 +239,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_Naloxone)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Naloxone)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -252,13 +252,60 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Pervitin Settings Category
+
+[
+    QGVAR(medLvl_Pervitin),
+    "LIST",
+    [LLSTRING(medLvl_Pervitin)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_Pervitin),
+    "SLIDER",
+    [LLSTRING(treatmentTime_Pervitin)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+    [0.1, 10, 5, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(chromatic_aberration_checkbox_pervitin),
+	"CHECKBOX",
+	[LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Pervitin), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Pervitin_DESC)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+	[true],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(chromatic_aberration_slider_pervitin),
+    "SLIDER",
+	[LLSTRING(SETTING_Chromatic_Aberration_Slider_Pervitin), LLSTRING(SETTING_Chromatic_Aberration_Slider_Pervitin_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+    [0.1, 10, 1.5, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+	QGVAR(weapon_sway_pervitin),
+	"CHECKBOX",
+	[LLSTRING(SETTING_Weapon_Sway_Pervitin), LLSTRING(SETTING_Weapon_Sway_Pervitin_DESC)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+	[true],
+	true
+] call CBA_Settings_fnc_init;
+
 // TXA Settings Category
 [
     QGVAR(medLvl_TXA),
     "LIST",
     [LLSTRING(medLvl_TXA)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -277,7 +324,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_Norepinephrine)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Norepinephrine)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -296,7 +343,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_Phenylephrine)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Phenylephrine)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -315,7 +362,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_Nitroglycerin)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nitroglycerin)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -334,7 +381,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_Amiodarone)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Amiodarone)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -353,7 +400,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_Lidocaine)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Lidocaine)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -372,7 +419,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_Atropine)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Atropine)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -391,7 +438,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_EACA)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_EACA)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -410,7 +457,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(medLvl_Ketamine)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -423,13 +470,31 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+	QGVAR(chromatic_aberration_checkbox_ketamine),
+	"CHECKBOX",
+	[LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Ketamine), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Ketamine_DESC)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
+	[true],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(chromatic_aberration_slider_ketamine),
+    "SLIDER",
+	[LLSTRING(SETTING_Chromatic_Aberration_Slider_Ketamine), LLSTRING(SETTING_Chromatic_Aberration_Slider_Ketamine_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
+    [0.1, 10, 1.5, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 //Fentanyl Settings Category
 [
     QGVAR(medLvl_Fentanyl),
     "LIST",
     [LLSTRING(medLvl_Fentanyl)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -442,13 +507,31 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+	QGVAR(chromatic_aberration_checkbox_fentanyl),
+	"CHECKBOX",
+	[LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Fentanyl), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Fentanyl_DESC)],
+	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
+	[true],
+	true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(chromatic_aberration_slider_fentanyl),
+    "SLIDER",
+	[LLSTRING(SETTING_Chromatic_Aberration_Slider_Fentanyl), LLSTRING(SETTING_Chromatic_Aberration_Slider_Fentanyl_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
+    [0.1, 10, 2, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 //Nalbuphine Settings Category
 [
     QGVAR(medLvl_Nalbuphine),
     "LIST",
     [LLSTRING(medLvl_Nalbuphine)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nalbuphine)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], [ACELSTRING(advanced_fatigue,Anyone), ACELSTRING(advanced_fatigue,Medics), ACELSTRING(advanced_fatigue,Doctors)], 0],
     true
 ] call CBA_Settings_fnc_init;
 

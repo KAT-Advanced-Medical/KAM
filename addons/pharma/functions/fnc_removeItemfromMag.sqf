@@ -28,4 +28,3 @@ if ((_oldMag select 1) > 1) then {
     [format [LLSTRING(Pain_empty), getText (configFile >> "CfgMagazines" >> _mag >> "displayName")], 2.5, _player] call ACEFUNC(common,displayTextStructured);
 };
 
-playsound3D [QPATHTOF_SOUND(sounds\take_painkillers.wav), _player, false, getPosASL _player, 8, 1, 15];
