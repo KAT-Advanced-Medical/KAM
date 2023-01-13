@@ -200,22 +200,19 @@ if (!local _unit) then {
                 };
             };
         };
+        
+        if (_unit getVariable [QGVAR(pneumothorax), false] || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false]) then {
+            if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false])) then {
+                if (!(_unit getVariable [QGVAR(PneumoBreathCooldownOn), false])) then {
+                    _unit setVariable [QGVAR(PneumoBreathCooldownOn), true, true];
+                    _unit say3D QGVAR(pneumothoraxcough);
+                    [{
+                        params["_unit"];
+                        _unit setVariable [QGVAR(PneumoBreathCooldownOn), false];
+                    },
+                    [_unit], 30] call CBA_fnc_waitAndExecute;
+                };
+            };
+        };
     };
 }, 3, [_unit]] call CBA_fnc_addPerFrameHandler;
-
-
-
-[{
-    params ["_args", "_idPFH"];
-    _args params ["_unit"];
-
-    private _status = _unit getVariable [QGVAR(airwayStatus), 100];
-
-    if (!(alive _unit) || _status == 100 || IS_UNCONSCIOUS(_unit)) exitwith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
-    };
-
-    if (_unit getVariable [QGVAR(pneumothorax), false] || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false]) then {
-        _unit say3D QGVAR(pneumothoraxcough);
-    };
-}, 30, [_unit]] call CBA_fnc_addPerFrameHandler;

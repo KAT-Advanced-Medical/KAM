@@ -26,7 +26,7 @@ class CfgSounds
         name = QGVAR(pneumothoraxcough);
 
         // filename, volume, pitch, distance (optional)
-        sound[] = { QPATHTOF(audio\pneumothoraxcough.ogg), 3.5, 1, 2 };
+        sound[] = { QPATHTOF(audio\pneumothoraxcough.ogg), 5, 1, 2 };
         titles[] = {};
     };
 };  
