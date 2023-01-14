@@ -163,7 +163,7 @@ if (_target getVariable [QGVAR(recovery), false]) then {
 };
 
 // Display cyanosis in overview tab, only when head/arms are selected
-if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN isEqualTo 0 || _selectionN isEqualTo 2 || _selectionN isEqualTo 3)) then {
+if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
 	private _spO2 = 0;
 	
 	if (alive _target) then {
@@ -173,16 +173,16 @@ if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN isEqualTo 0 || _selectio
     if (_spO2 <= EGVAR(breathing,slightValue)) then {
         private _cyanosisArr = switch (true) do {
             case (_spO2 <= EGVAR(breathing,severeValue)): {
-                ["STR_kat_breathing_CyanosisStatus_Severe",[0.16, 0.16, 1, 1]];
+                [LELSTRING(breathing,CyanosisStatus_Severe), [0.16, 0.16, 1, 1]];
             };
             case (_spO2 <= EGVAR(breathing,mildValue)): {
-                ["STR_kat_breathing_CyanosisStatus_Mild",[0.16, 0.315, 1, 1]];
+                [LELSTRING(breathing,CyanosisStatus_Mild), [0.16, 0.315, 1, 1]];
             };
             default {
-                ["STR_kat_breathing_CyanosisStatus_Slight",[0.16, 0.47, 1, 1]];
+                [LELSTRING(breathing,CyanosisStatus_Slight), [0.16, 0.47, 1, 1]];
             };
         };
-        _entries pushBack [localize (_cyanosisArr select 0), (_cyanosisArr select 1)];
+        _entries pushBack [(_cyanosisArr select 0), (_cyanosisArr select 1)];
     };   
 };
 
