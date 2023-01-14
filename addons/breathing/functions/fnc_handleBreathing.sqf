@@ -29,8 +29,8 @@ if (!local _unit) then {
     params ["_args", "_idPFH"];
     _args params ["_unit"];
     if !(alive _unit) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_O2Breathing_PFH", nil];
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
     private _airway = true;
@@ -197,6 +197,20 @@ if (!local _unit) then {
                     ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) - 30;
                 } else {
                     _unit setStamina(getStamina _unit - 3);
+                };
+            };
+        };
+        
+        if (_unit getVariable [QGVAR(pneumothorax), false] || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false]) then {
+            if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false])) then {
+                if (!(_unit getVariable [QGVAR(PneumoBreathCooldownOn), false])) then {
+                    _unit setVariable [QGVAR(PneumoBreathCooldownOn), true, true];
+                    _unit say3D QGVAR(pneumothoraxcough);
+                    [{
+                        params["_unit"];
+                        _unit setVariable [QGVAR(PneumoBreathCooldownOn), false];
+                    },
+                    [_unit], 30] call CBA_fnc_waitAndExecute;
                 };
             };
         };
