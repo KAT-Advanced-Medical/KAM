@@ -8,10 +8,9 @@ files = [
     "mod.cpp",
     "README.md",
     "LICENSE.md",
-    "Arma3_workshop_addon.png",
-    "larynx.paa",
-    "AUTHORS.txt",
-    "logo.jpg"
+    "KAMLogoLowRes.paa",
+    "KAMLogoHighRes.paa",
+    "AUTHORS.txt"
     ]
 folder_optionals = true
 sig_version = 3
