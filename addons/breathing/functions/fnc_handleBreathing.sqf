@@ -29,8 +29,8 @@ if (!local _unit) then {
     params ["_args", "_idPFH"];
     _args params ["_unit"];
     if !(alive _unit) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_O2Breathing_PFH", nil];
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
     private _airway = true;
