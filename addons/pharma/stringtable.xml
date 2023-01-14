@@ -70,6 +70,7 @@
         <Key ID="STR_kat_pharma_IV_DROP">
             <English>IV/IO drop time</English>
             <German>IOs/IVs Herausfallzeit</German>
+            <French>Temps de chute de l'IV/IO</French>
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP_TIME_DESC">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
@@ -1042,58 +1043,72 @@
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Pervitin">
             <English>Enable Chromatic Aberration</English>
             <German>Aktiviere Chromatische Abweichungen</German>
+            <French>Activer l'aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Pervitin_DESC">
             <English>Enables if pervitin should influance your vision with chromatic aberration</English>
             <German>Aktiviert ob Pervitin deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+            <French>Définie si la pervitine devrait influancer la vision avec une aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Pervitin">
             <English>Chromatic Aberration Strength</English>
             <German>Chromatische Abweichungs Stärke</German>
+            <French>Intensité de l'aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Pervitin_DESC">
             <English>Changes the strength of the chromatic aberration</English>
             <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
+            <French>Définie l'intensité de l'aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Weapon_Sway_Pervitin">
             <English>Enable Weapon Sway</English>
             <German>Aktiviere Waffen Schwanken</German>
+            <French>Activer l'oscillation de l'arme</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Weapon_Sway_Pervitin_DESC">
             <English>Enables if pervitin should influance your weapon sway</English>
             <German>Aktiviert ob Pervitin dein Waffen schwanken beinflussen soll</German>
+            <French>Définie si la pervitine influance l'oscillation de l'arme</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>
             <German>Aktiviere Chromatische Abweichungen</German>
+            <French>Activer l'aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine_DESC">
             <English>Enables if ketamine should influance your vision with chromatic aberration</English>
             <German>Aktiviert ob Ketamin deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+            <French>Définie si la kétamine devrait influancer la vision avec une aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Ketamine">
             <English>Chromatic Aberration Strength</English>
             <German>Chromatische Abweichungs Stärke</German>
+            <French>Intensité de l'aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Ketamine_DESC">
             <English>Changes the strength of the chromatic aberration</English>
             <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
+            <French>Définie l'intensité de l'aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl">
             <English>Enable Chromatic Aberration</English>
             <German>Aktiviere Chromatische Abweichungen</German>
+            <French>Activer l'aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl_DESC">
             <English>Enables if fentanyl should influance your vision with chromatic aberration</English>
             <German>Aktiviert ob Fentanyl deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+            <French>Définie si le fentanyl devrait influancer la vision avec une aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl">
             <English>Chromatic Aberration Strength</English>
             <German>Chromatische Abweichungs Stärke</German>
+            <French>Intensité de l'aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl_DESC">
             <English>Changes the strength of the chromatic aberration</English>
             <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
+            <French>Définie l'intensité de l'aberration chromatique</French>
         </Key>
         <Key ID="STR_KAT_pharma_treatmentTime_Reorientation">
             <English>Treatment time for reorientation</English>
@@ -1434,10 +1449,12 @@
         <Key ID="STR_kat_pharma_treatmentTime_Pervitin">
             <English>Treatment time for Pervitin</English>
             <German>Anwendungszeit für Pervitin</German>
+            <French>Temps de traitement de la Pervitine</French>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Pervitin">
             <English>Medical level required for Pervitin</English>
             <German>Erforderliches medizinisches Level für die Gabe von Pervitin</German>
+            <French>Niveau médical requis pour la Pervitine</French>
         </Key>
         <Key ID="STR_kat_pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
@@ -1850,10 +1867,12 @@
         <Key ID="STR_kat_pharma_SubCategory_Pervitin">
             <English>Pervitin Settings</English>
             <German>Pervitin Einstellungen </German>
+            <French>Paramètres de la Pervitine</French>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
             <German>Koffein Einstellungen </German>
+            <French>Paramètres de la Caféine</French>
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_TXA">
             <English>TXA Settings</English>
@@ -2212,62 +2231,77 @@
         <Key ID="STR_kat_pharma_Pervitin_Capsule_Display">
             <English>Pervitin capsule</English>
             <German>Pervitin Kapsel</German>
+            <French>Capsule de pervitine</French>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_Capsule_DescShort">
             <English>Performance enhancing drug</English>
             <German>Leistungssteigerndes Medikament</German>
+            <French>Drogue améliorant les performances</French>
         </Key>
         <Key ID="STR_kat_pharma_Take_Pervitin">
             <English>Take Pervitin</English>
             <German> Pervitin einnehmen </German>
+            <French>Prendre la pervitine</French>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_start">
             <English>The pervitin makes you feel awake and full of endless POWER</English>
             <German>Das Pervitin macht dich wach und du fühlst dich durchflutet mit unendlich POWER</German>
+            <French>La pervitine vous fait vous sentir éveillé et plein d'une puissance INFINIE</French>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid">
             <English>You begin to lose your breath...</English>
             <German>Deine Kraft lässt langsam nach...</German>
+            <French>Vous commencez à perdre votre souffle...</French>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid2">
             <English>You gain a sudden rush!</English>
             <German>Du bekommst einen spontanan Rush...</German>
+            <French>Vous sentez un élan soudain !</French>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid3">
             <English>You gain another rush!</English>
             <German>Du bekommst einen weiteren Rush...</German>
+            <French>Vous sentez un autre élan !</French>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid4">
             <English>The exhaustion starts to settle in...</English>
             <German>Die Erschöpfung macht sich breit ...</German>
+            <French>L'épuisement commence à se faire sentir...</French>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_end">
             <English>You start to feel normal again</English>
             <German>Du beginnst dich wieder normal zu fühlen.</German>
+            <French>Vous commencez à vous sentir à nouveau normal</French>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_chrom">
             <English>You start to see everything twice.</English>
             <German>Du siehst alles Zweimal.</German>
+            <French>Vous commencez à voir tout en double</French>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_chrom2">
             <English>You start to twitch...</English>
             <German>Du fängst an zu zucken...</German>
+            <French>Vous commencez à trembler...</French>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_chrom3">
             <English>Your head starts to clear up and you stop twitching...</English>
             <German>Dein Kopf wird klarer und du hörst auf zu zucken...</German>
+            <French>Vos idées commencent à s'éclaircir et vous arrêtez de trembler...</French>
         </Key>
         <Key ID="STR_kat_pharma_Caffeine_Bottle_Display">
             <English>Caffeine bottle</English>
             <German>Koffein Kapsel</German>
+            <French>Bouteille de caféine</French>
         </Key>
         <Key ID="STR_kat_pharma_Caffeine_Bottle_DescShort">
             <English>Keeps you awake</English>
             <German>Hällt dich wach</German>
+            <French>Vous tient éveillé</French>
         </Key>
         <Key ID="STR_kat_pharma_Take_Caffeine">
             <English>Take Caffeine</English>
             <German>Koffein einnehmen</German>
+            <French>Prendre la caféine</French>
         </Key>
         <Key ID="STR_kat_pharma_EACA_DescShort">
             <English>Encourages clot formation</English>

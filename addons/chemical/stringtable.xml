@@ -4,219 +4,272 @@
         <Key ID="STR_kat_chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
             <German>Akzeptierte Gasmasken</German>
+            <French>Masques à gaz acceptés</French>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_AVAIL_GASMASK_DISC">
             <English>Enter here the classname of the masks that should work with the system.</English>
             <German>Hier die classname der Masken eintragen die mit dem System funktionieren sollen.</German>
+            <French>Entrez ici le classname des masques à gaz fonctionnant avec le système</French>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_GASMASK_DURABILITY">
             <English>Gas masks durability</English>
             <German>Gasmasken Haltbarkeit</German>
+            <French>Durabilité des masques à gaz</French>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_GASMASK_DURABILITY_DISC">
             <English>Determines how long you can stand in the gas with a gas mask without getting infected.</English>
             <German>Bestimmt wie lange man mit einer Gasmaske im Gas stehen kann ohne infiziert zu werden.</German>
+            <French>Détermine la durée où vous pouvez tenir dans un gaz avec un masque à gaz sans être infecté</French>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_infection_time">
             <English>Time until infection</English>
             <German>Zeit bis Infektion</German>
+            <French>Durée avec l'infection</French>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_infection_time_disc">
             <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
             <German>Zeit die man im Gas stehen kann bevor man infiziert wird bzw eine Gasmaske benötigt.</German>
+            <French>Durée où vous pouvez tenir dans un gaz avant d'être infecté ou d'avoir besoin d'un masque à gaz</French>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_affectAI">
             <English>Gas Affects AI</English>
             <German>Gas betrifft KI</German>
+            <French>Le gaz affecte les IA</French>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_affectAI_disc">
             <English>Determines if AI is affected by gas (If you are running this on a local server this can cause perfomance problems)</English>
             <German>Betimmt ob KI von Gas betroffen ist(Wenn dies auf einem lokalen Server ausgeführt wird, kann es zu Leistungsproblemen führen)</German>
+            <French>Détermine si les IA sont affectées par le gaz (Si cette option est activée sur des serveurs locaux cela peut créer des problèmes de performance)</French>
         </Key>
-
         <Key ID="STR_kat_chemical_GasFilterItem">
             <English>Gas mask filter</English>
             <German>Gasmaskenfilter</German>
+            <French>Filtre de masque à gaz</French>
         </Key>
         <Key ID="STR_kat_chemical_GasFilterItem_desc">
             <English></English>
             <German></German>
+            <French></French>
         </Key>
         <Key ID="STR_kat_chemical_sealantItem">
             <English>Sealant tube</English>
             <German>Dichtmitteltube</German>
+            <French>Tube de mastic</French>
         </Key>
         <Key ID="STR_kat_chemical_sealantItem_desc">
             <English>Sealant which is used to seal objects when e.g. a toxic substance leaks out</English>
             <German>Dichtmittel welches zum abdichen von objekten genutzt wird wenn z.b. ein giftstoff austritt</German>
+            <French>Mastic servant à sceller les objets quand par exemple une substance toxique en sort</French>
         </Key>
         <Key ID="STR_kat_chemical_giveGasMask_action">
             <English>Put on gas mask</English>
             <German>Gasmaske aufsetzen</German>
+            <French>Mettre le masque à gaz</French>
         </Key>
         <Key ID="STR_kat_chemical_giveGasMask_progress">
             <English>Put on gas mask...</English>
             <German>Setzte gasmaske auf...</German>
+            <French>Mise en place du masque à gaz...</French>
         </Key>
         <Key ID="STR_kat_chemical_CheckGasMaskDurability">
             <English>Check gas mask durability</English>
             <German>Haltbarkeit der Gasmaske prüfen</German>
+            <French>Vérifier la durabilité du masque à gaz</French>
         </Key>
         <Key ID="STR_kat_chemical_ChangeGasMaskFilter">
             <English>Replace gas mask filter</English>
             <German>Gasmasken Filter austauschen</German>
+            <French>Remplacer le filtre du masque à gaz</French>
         </Key>
         <Key ID="STR_kat_chemical_ChemDetector_Mute">
             <English>Mute Chemical Detector.</English>
             <German>Chemischen Detektor Stummschalten.</German>
+            <French>Désactiver le son du détecteur de produits chimiques</French>
         </Key>
         <Key ID="STR_kat_chemical_ChemDetector_Unmute">
             <English>Unmute Chemical Detector.</English>
             <German>Chemischen Detektor entmuten.</German>
+            <French>Activer le son du détecteur de produits chimiques</French>
         </Key>
         <Key ID="STR_kat_chemical_GasModule_Displayname">
             <English>Create contaminated area / object</English>
             <German>Kontaminierten Bereich / Gegenstand erstellen</German>
+            <French>Créer une zone / objet contaminé.e</French>
         </Key>
         <Key ID="STR_kat_chemical_GasModule_description">
             <English>Raduis around the module which is filled with gas.</English>
             <German>Raduis um das Modul welcher mit Gas gefüllt ist.</German>
+            <French>Zone autour du module remplie de gaz</French>
         </Key>
         <Key ID="STR_kat_chemical_GasModule_min_radius_dcs">
             <English>The Minimal Range describes the area around the module where the gas is most lethal</English>
             <German>Der Minimal Rangebeschreibt den bereich um das modul herum in dem das Gas am tötlichsten ist</German>
+            <French>Le rayon minimal décrit la zone autour du module ou le gaz est le plus létal</French>
         </Key>
         <Key ID="STR_kat_chemical_GasModule_max_radius_dcs">
             <English>The Maximum Range is a range around the Minimal Range where the gas is less lethal and you have a longer chance of survival.(distance from module to outer ring)</English>
             <German>Der Maximum Rangeist ein bereich um den Minimal Range in dem das Gas weniger tötlich ist und man eine längere überlebens chance hat. (distanz von modul bis äußerer ring)</German>
+            <French>Le rayon maximal est le rayon autour du rayon minimal où le gaz est moins létal et où vous avez une plus longue chance de survie. (Distance depuis le module jusqu'au cercle extérieur)</French>
         </Key>
         <Key ID="STR_kat_chemical_GasModule_createContaminatedObject">
             <English>You are about to create a contaminated Object.</English>
             <German>Du erstellst gerade einen Kontaminierten Gegenstand.</German>
+            <French>Vous êtes sur le point de créer un objet contaminé.</French>
         </Key>
         <Key ID="STR_kat_chemical_GasModule_createContaminatedZone">
             <English>You are about to create a contaminated Zone.</English>
             <German>Du erstellst gerade eine Kontaminierte Zone.</German>
+            <French>Vous êtes sur le point de créer une zone contaminée.</French>
         </Key>
         <Key ID="STR_kat_chemical_GasModule_placeModuleOnObject">
             <English>To create a contaminated object place the module on a empty object.</English>
             <German>Um einen Kontaminierten Gegenstand zu erstellen, platziere das Modul auf einem leeren Object.</German>
+            <French>Pour créer un objet contaminé placez le module sur un objet vide.</French>
         </Key>
         <Key ID="STR_kat_chemical_sealLeak">
             <English>Seal leack</English>
             <German>Leck versiegeln</German>
+            <French>Sceller la fuite</French>
         </Key>
         <Key ID="STR_kat_chemical_GasModule_SealLeak">
             <English>Seal leak</English>
             <German>Leck abdichten</German>
+            <French>Sceller la fuite</French>
         </Key>
         <Key ID="STR_kat_chemical_GasModule_Needbigger">
             <English>Minimal Range need to be less than Maximum Range!</English>
             <German>Minimal Range muss kleiner als Maximum Range sein!</German>
+            <French>Le rayon minimal a besoin d'être plus petit que le rayon maximal !</French>
         </Key>
         <Key ID="STR_kat_chemical_Intoxikation">
             <English>Intoxication</English>
             <German>Intoxikation</German>
+            <French>Intoxication</French>
         </Key>
         <Key ID="STR_kat_chemical_GasBox_Displayname">
             <English>[ACE] 82mm Gas Rounds Box</English>
             <German>[ACE] 82mm Gaspatronenkiste</German>
+            <French>[ACE] Boîte de cartouches de gaz de 82mm</French>
         </Key>
         <Key ID="STR_kat_chemical_M7A3_DcsShort">
             <English>The M7A3 CS gas grenade is a non-lethal tear gas grenade that causes severe burning of the mucous membranes and eyes on contact.</English>
             <German>Die M7A3 CS Gas Granate ist eine nicht tödliche Tränen Gas Granate die bei Kontakt starkes Brennen der Schleimhäute und Augen auslöst.</German>
+            <French>La grenade à gaz M7A3 CS est une grenade à gaz lacrymogène non-létale qui crée de graves brûlures sur les membranes muqueuses et les yeux au contact.</French>
         </Key>
         <Key ID="STR_kat_chemical_TriWire_Gas_Name">
             <English>Tripwire Gas</English>
             <German>Stolperdraht-Gas</German>
+            <French>Grenade Tripwire</French>
         </Key>
         <Key ID="STR_kat_chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>
             <German>Typ: Stolperdraht-Gas - Versprüht bei Auslösung ein gifitges Gas.&lt;br /&gt;Ladungen: 1&lt;br /&gt;Benutzt auf: Boden</German>
+            <French>Type : Gaz Tripwire - Spraye un gaz empoisonné quand activé.&lt;br /&gt;Munitions: 1&lt;br /&gt;Utilisé sur : le sol</French>
         </Key>
         <Key ID="STR_kat_chemical_ToxicGas_MFDNAME">
             <English>Toxic gas</English>
             <German>Toxic gas</German>
+            <French>Gaz toxique</French>
         </Key>
         <Key ID="STR_kat_chemical_ToxicGas_DisplayName">
             <English>82mm Toxic Gas Round</English>
             <German>82mm Senf Gas Patrone</German>
+            <French>Cartouche de 82mm de gaz toxique</French>
         </Key>
         <Key ID="STR_kat_chemical_CSGas_MFDNAME">
             <English>CS-Gas</English>
             <German>CS-Gas</German>
+            <French>Gaz CS</French>
         </Key>
         <Key ID="STR_kat_chemical_CSGas_DisplayName">
             <English>82mm CS-Gas Round</English>
             <German>82mm CS-Gas MörserGranate</German>
+            <French>Cartouche de 82mm de gaz CS</French>
         </Key>
         <Key ID="STR_kat_chemical_M7A3_CSGrenade_DisplayName">
             <English>M7A3 Riot CS gas grenade</English>
             <German>M7A3 Riot CS gas grenade</German>
+            <French>Grenace à gaz CS anti-émeute M7A3</French>
         </Key>
         <Key ID="STR_kat_chemical_M7A3_CSGrenade_ShortName">
             <English>M7A3</English>
             <German>M7A3</German>
+            <French>M7A3</French>
         </Key>
         <Key ID="STR_kat_chemical_M43_DisplayName_1x">
             <English>M43 BZ LGB</English>
             <German>M43 BZ LGB</German>
+            <French>M43 BZ LGB</French>
         </Key>
         <Key ID="STR_kat_chemical_M43_ShortName_1x">
             <English>M43 BZ LGB</English>
             <German>M43 BZ LGB</German>
+            <French>M43 BZ LGB</French>
         </Key>
         <Key ID="STR_kat_chemical_M43_desc">
             <English>Laser Guided Cluster Bomb with an chemical gas payload.</English>
             <German>Laser gelenkte Senfgas Cluster Bombe.</German>
+            <French>Bombe à sous-munitions à guidée laser contenant un gaz chimique.</French>
         </Key>
         <Key ID="STR_kat_chemical_M43_DisplayName_2x">
             <English>2x M43 BZ LGB</English>
             <German>2x M43 BZ LGB</German>
+            <French>2x M43 BZ LGB</French>
         </Key>
         <Key ID="STR_kat_chemical_M43_ShortName_2x">
             <English>2x M43 BZ LGB</English>
             <German>2x M43 BZ LGB</German>
+            <French>2x M43 BZ LGB</French>
         </Key>
         <Key ID="STR_kat_chemical_HydraGas_desc">
             <English>Unguided rockets with Toxic-gas warhead.</English>
             <German>Ungelengte Racketen mit Senfgas sprengkopf.</German>
+            <French>Roquettes non-guidées contenant un gaz toxique</French>
         </Key>
         <Key ID="STR_kat_chemical_HydraGas_DisplayName">
             <English>Hydra GAS 19x</English>
             <German>Hydra GAS 19x</German>
+            <French>Hydra GAS 19x</French>
         </Key>
         <Key ID="STR_kat_chemical_HydraGas_ShortName">
             <English>70mm GAS</English>
             <German>70mm GAS</German>
+            <French>70mm GAS</French>
         </Key>
         <Key ID="STR_kat_chemical_LvL1_Gas">
             <English>Toxic gas (Level 1)</English>
             <German>Toxic gas (Level 1)</German>
+            <French>Gaz toxique (Niveau 1)</French>
         </Key>
         <Key ID="STR_kat_chemical_UI_max_range">
             <English>Maximum Range.</English>
             <German>Maximale Reichweite.</German>
+            <French>Portée maximum</French>
         </Key>
         <Key ID="STR_kat_chemical_UI_min_range">
             <English>Minimal Range.</English>
             <German>Minimale Reichweite.</German>
+            <French>Portée minimale</French>
         </Key>
         <Key ID="STR_kat_chemical_UI_sealable">
             <English>Is sealable?</English>
             <German>Versiegelbar?</German>
+            <French>Scellable ?</French>
         </Key>
         <Key ID="STR_kat_chemical_UI_sealable_tooltip">
             <English>ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!</English>
             <German>Funktioniert nur wenn das modul auf einem object ist!</German>
+            <French>FONTIONNE UNIQUEMENT SI LE MODULE EST SYNCHRONISE AVEC UN OBJET!</French>
         </Key>
         <Key ID="STR_kat_chemical_UI_selectGas">
             <English>Select Gas:</English>
             <German>Gas wählen:</German>
+            <French>Gaz sélectionné:</French>
         </Key>
         <Key ID="STR_kat_chemical_UI_gasType">
             <English>Gas Type:</English>
             <German>Gas Typ:</German>
+            <French>Type de gaz:</French>
         </Key>
     </Package>
 </Project>
