@@ -2114,6 +2114,9 @@
             <Spanish>El aliento del paciente es normal</Spanish>
             <Polish>Oddech pacjenta jest w porządku</Polish>
         </Key>
+        <Key ID="STR_kat_pharma_breath_none">
+            <English>Patient is not breathing</English>
+        </Key>
         <Key ID="STR_kat_pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
             <Italian>Rene danneggiato/collassato</Italian>
