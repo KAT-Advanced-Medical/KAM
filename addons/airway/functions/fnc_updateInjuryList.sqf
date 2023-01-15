@@ -170,8 +170,9 @@ if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
         _spO2 = GET_SPO2(_target);
 	};
 	
-    if (_spO2 <= EGVAR(breathing,slightValue)) then {
+    if (_spO2 <= EGVAR(breathing,slightValue) || HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
         private _cyanosisArr = switch (true) do {
+            case (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN));
             case (_spO2 <= EGVAR(breathing,severeValue)): {
                 [LELSTRING(breathing,CyanosisStatus_Severe), [0.16, 0.16, 1, 1]];
             };
