@@ -64,7 +64,7 @@ private _skill = _unit skill "aimingAccuracy";
                             ] call CBA_fnc_waitAndExecute;
                         };
                     } else {
-                        if (GVAR(medical_statemachine,AIUnconsciousness)) then {
+                        if (ACEGVAR(medical_statemachine,AIUnconsciousness)) then {
                             for "_i" from 0 to 10 step 1 do {
                                 [
                                     {

@@ -72,7 +72,7 @@ dssignfile = ""
 prefix = "kat"
 pbo_name_prefix = "kat_"
 signature_blacklist = []
-importantFiles = ["mod.cpp", "larynx.paa"]
+importantFiles = ["mod.cpp", "KAMLogoHighRes.paa", "KAMLogoLowRes.paa"]
 versionFiles = ["mod.cpp"]
 
 ciBuild = False # Used for CI builds
