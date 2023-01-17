@@ -30,6 +30,7 @@ if !(GVAR(tensionhemothorax_hardcore)) exitWith {
 
 if (_patient getVariable [QGVAR(activeChestSeal), false]) then {
     _patient setVariable [QGVAR(hemopneumothorax), false, true];
+    [_patient] call EFUNC(circulation,updateInternalBleeding);
 };
 
 if (!(_patient getVariable [QGVAR(pneumothorax), false]) && {!(_patient getVariable [QGVAR(hemopneumothorax), false]) && {!(_patient getVariable [QGVAR(tensionpneumothorax), false])}}) then {
