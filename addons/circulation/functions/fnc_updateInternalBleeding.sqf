@@ -23,4 +23,4 @@ if (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false]) then {
     _internalBleeding = _internalBleeding + EGVAR(breathing,HPTXBleedAmount);
 };
 
-_unit setVariable [VAR_INTERNAL_BLEEDING, _internalBleeding, 0];
+_unit setVariable [VAR_INTERNAL_BLEEDING, _internalBleeding, true];
