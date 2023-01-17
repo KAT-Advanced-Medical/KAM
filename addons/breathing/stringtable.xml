@@ -936,6 +936,12 @@
             <Czech>Povolí diagnózu cyanózy</Czech>
             <Spanish>Permitir el diagnóstico de cianosis</Spanish>
         </Key>
+        <Key ID="STR_kat_breathing_SETTING_Cyanosis_ShowInMenu">
+            <English>Show cyanosis in overview tab</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_Cyanosis_ShowInMenu_DESC">
+            <English>Shows cyanosis of patient in overview tab and hides cyanosis diagnose action</English>
+        </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
             <German>Leichter Zyanose SpO2-Wert</German>

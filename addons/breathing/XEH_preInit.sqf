@@ -249,6 +249,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Enables displaying cyanosis in overview tab and hides cyanosis diagnose action
+[
+    QGVAR(cyanosisShowInMenu),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Cyanosis_ShowInMenu), LLSTRING(SETTING_Cyanosis_ShowInMenu_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Cyanosis)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 //Settable list for checking Cyanosis per medical class
 [
     QGVAR(medLvl_Cyanosis),
