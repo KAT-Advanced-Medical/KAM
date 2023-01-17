@@ -604,6 +604,12 @@
             <Russian>Количество повреждений при одном ударе по шкале от 0 до 1, которое должно произойти, прежде чем возникнет вероятность пневмоторакса. Более низкие значения означают, что пневмоторакс более вероятен. Установка очень низкого значения или нуля может привести к неожиданному поведению или пневмотораксу из-за неожиданных травм.</Russian>
             <Japanese>一度の負傷で発生する気胸へのダメージ。値が低いほど、気胸が発生する可能性が高くなります。値を非常に低く設定するか、0に設定すると、予期しない動作や予期しない怪我による気胸を引き起こす可能性があります。</Japanese>
         </Key>
+        <Key ID="STR_kat_breathing_SETTING_HPTX_BleedAmount">
+            <English>Hemopneumothorax internal bleeding amount</English>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_HPTX_BleedAmount_DESC">
+            <English>Sets amount of internal bleeding that is applied while suffering from hemopneumothorax</English>
+        </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore">
             <English>Hardcore pneumothorax</English>
             <Polish>Trudna odma opłucnowa</Polish>

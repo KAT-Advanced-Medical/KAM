@@ -189,6 +189,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets how much internal bleeding is applied while suffering from hemopneumothorax
+[
+    QGVAR(HPTXBleedAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_HPTX_BleedAmount), LLSTRING(SETTING_HPTX_BleedAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0, 1, 0.06, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 // Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might help
 [
     QGVAR(pneumothorax_hardcore),

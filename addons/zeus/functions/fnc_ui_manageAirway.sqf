@@ -104,7 +104,8 @@ private _fnc_onConfirm = {
     if(_curSpO2Val isEqualTo 100) then { 
         [_unit] call EFUNC(breathing,handleBreathing);
     };
-
+    
+    [_unit] call EFUNC(circulation,updateInternalBleeding);
 };
 
 _display displayAddEventHandler ["unload", _fnc_onUnload];

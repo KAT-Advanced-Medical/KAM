@@ -42,6 +42,7 @@ if (random 100 <= GVAR(pneumothoraxChance)) then {
 
         if (random 100 <= GVAR(hptxChance)) then {
             _unit setVariable [QGVAR(hemopneumothorax), true, true];
+            [_unit] call EFUNC(circulation,updateInternalBleeding);
         } else {
             _unit setVariable [QGVAR(tensionpneumothorax), true, true];
         };

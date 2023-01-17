@@ -27,3 +27,4 @@ PREP(treatment);
 PREP(treatmentAdvanced_IV);
 PREP(vehicleCheck);
 PREP(wrongBloodTreatment);
+PREP(updateInternalBleeding);

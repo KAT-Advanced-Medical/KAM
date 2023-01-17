@@ -81,6 +81,7 @@ _unit setVariable [QGVAR(tensionpneumothorax), false, true];
 
 // Update wound bleeding
 [_unit] call ACEFUNC(medical_status,updateWoundBloodLoss);
+[_unit] call EFUNC(circulation,updateInternalBleeding);
 
 // Vitals
 _unit setVariable [QACEGVAR(medical,heartRate), 80, true];
