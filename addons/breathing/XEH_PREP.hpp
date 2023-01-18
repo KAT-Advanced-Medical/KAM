@@ -1,3 +1,4 @@
+PREP(effectLowOxygen);
 PREP(fullHealLocal);
 PREP(handleBreathing);
 PREP(handleEffects);
