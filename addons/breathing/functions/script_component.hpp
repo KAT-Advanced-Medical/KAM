@@ -21,6 +21,9 @@
 #define VAR_FRACTURES         "ACE_medical_fractures"
 #define STRING_BODY_PARTS ["head", "body", "left arm", "right arm", "left leg", "right leg"]
 
+#define VAR_SPO2              QEGVAR(breathing,airwayStatus)
+#define GET_SPO2(unit)        (unit getVariable [VAR_SPO2, 100])
+
 #define GET_BLOOD_LOSS(unit)  ([unit] call EFUNC(pharma,getBloodLoss))
 
 #define ICON_BLOODVOLUME_IDX_MIN 0
