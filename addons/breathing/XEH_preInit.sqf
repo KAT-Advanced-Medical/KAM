@@ -309,18 +309,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// sound volume for Stethoscope
-/*
-[
-    QGVAR(StethoscopeSoundVolume),
-    "SLIDER",
-    [LLSTRING(SETTING_StethoscopeSoundVolume), LLSTRING(DESCRIPTION_StethoscopeSoundVolume)],
-    CBA_SETTINGS_CAT,
-    [1, 4, 1, 0],
-    true
-] call CBA_Settings_fnc_init;
-*/
-
 //Enables White Flashing on Below 90% SPO2
 [
     QGVAR(enableSPO2Flashing),
@@ -348,6 +336,20 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_lowSPO2Level_display), LLSTRING(SETTING_lowSPO2Level_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [0, 100, 90, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets sound volume of stethoscope
+[
+    QGVAR(StethoscopeSoundVolume),
+    "SLIDER",
+    [LLSTRING(SETTING_StethoscopeSoundVolume), LLSTRING(SETTING_StethoscopeSoundVolume_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [0, 4, 2, 1],
+    2,
+    {
+        player setVariable [QGVAR(StethoscopeSoundVolume), _this, true];
+    },
     true
 ] call CBA_Settings_fnc_init;
 
