@@ -732,7 +732,7 @@
             <Russian>Прослушивание</Russian>
             <Japanese>聴診中</Japanese>
         </Key>
-        <Key ID="STR_kat_breathing_SETTING_StethoscopeSoundVolume">
+        <Key ID="STR_kat_breathing_SETTING_stethoscopeSoundVolume">
             <English>Stethoscope Sound Volume</English>
             <Polish>Głośność Stetoskopu</Polish>
             <German>Stethoskop Lautstärke</German>
@@ -747,8 +747,8 @@
             <Russian>Громкость звука стетоскопа</Russian>
             <Japanese>聴診器の音量</Japanese>
         </Key>
-        <Key ID="STR_kat_breathing_DESCRIPTION_StethoscopeSoundVolume">
-            <English>Determines how loud the thorax sounds are when using Stethoscope</English>
+        <Key ID="STR_kat_breathing_SETTING_stethoscopeSoundVolume_DESC">
+            <English>Determines how loud the breathing sounds are when using the stethoscope</English>
             <Polish>Określa jak głośne są dźwięki klatki piersiowej podczas używania Stetoskopu</Polish>
             <German>Bestimmt, wie laut die Thoraxgeräusche bei der Verwendung des Stethoskops sind</German>
             <Spanish>Determina qué tan fuertes son los sonidos del tórax cuando se usa el estetoscopio</Spanish>

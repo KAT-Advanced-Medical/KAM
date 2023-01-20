@@ -341,14 +341,14 @@ PREP_RECOMPILE_END;
 
 // Sets sound volume of stethoscope
 [
-    QGVAR(StethoscopeSoundVolume),
+    QGVAR(stethoscopeSoundVolume),
     "SLIDER",
-    [LLSTRING(SETTING_StethoscopeSoundVolume), LLSTRING(SETTING_StethoscopeSoundVolume_DESC)],
+    [LLSTRING(SETTING_stethoscopeSoundVolume), LLSTRING(SETTING_stethoscopeSoundVolume_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [0, 4, 2, 1],
     2,
     {
-        player setVariable [QGVAR(StethoscopeSoundVolume), _this, true];
+        player setVariable [QGVAR(stethoscopeSoundVolume), _this, true];
     },
     true
 ] call CBA_Settings_fnc_init;
