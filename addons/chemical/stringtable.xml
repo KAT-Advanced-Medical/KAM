@@ -54,6 +54,12 @@
             <French>Filtre de masque à gaz</French>
             <Japanese>ガスマスクフィルター</Japanese>
         </Key>
+        <Key ID="STR_kat_chemical_GasFilterItem_desc">
+            <English>Replacement filter for gas mask</English>
+            <French>Filtre de rechange pour masque à gaz</French>
+            <German>Ersatzfilter für Gasmaske</German>
+            <Japanese>ガスマスクの為の交換用フィルター</Japanese>
+        </Key>
         <Key ID="STR_kat_chemical_sealantItem">
             <English>Sealant tube</English>
             <German>Dichtmitteltube</German>
@@ -317,12 +323,6 @@
             <German>Gas Typ:</German>
             <French>Type de gaz:</French>
             <Japanese>ガスの種類:</Japanese>
-        </Key>
-        <Key ID="STR_kat_chemical_GasFilterItem_desc">
-            <English>Replacement filter for gas mask</English>
-            <French>Filtre de rechange pour masque à gaz</French>
-            <German>Ersatzfilter für Gasmaske</German>
-            <Japanese>ガスマスクの為の交換用フィルター</Japanese>
         </Key>
     </Package>
 </Project>
