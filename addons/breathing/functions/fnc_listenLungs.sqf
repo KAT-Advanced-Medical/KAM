@@ -22,7 +22,7 @@ params ["_medic","_patient"];
 
 if ((_patient getVariable [QACEGVAR(medical,heartRate), 80]) isEqualTo 0) exitWith {};
 
-private _volume = GVAR(StethoscopeSoundVolume);
+private _volume = GVAR(stethoscopeSoundVolume);
 
 _random = round random 1;
 
