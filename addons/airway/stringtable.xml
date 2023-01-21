@@ -182,6 +182,7 @@
             <German>Die Obstruktion ist temporär gemildert</German>
             <Italian>Ostruzione è momentaneamente attenuata</Italian>
             <Czech>Zablokování je dočasně zmírněno</Czech>
+            <Korean>혀막힘이 일시적으로 완화되었습니다.</Korean>
         </Key>
         <Key ID="STR_kat_airway_message_obstruction_no">
             <English>Airways are clear</English>
