@@ -30,3 +30,5 @@ _unit setVariable [QGVAR(soundPlayed), false, true];
 _unit setVariable [QGVAR(AEDvehicleName), "", true];
 _unit setVariable [QGVAR(vehicleTrue), false, true];
 _unit setVariable [QGVAR(AEDvehicle), false, true];
+
+_unit setVariable [QGVAR(bloodtype), [_unit, nil] call FUNC(generateBloodType), true];

@@ -27,18 +27,39 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets how player bloodtype is designated
 [
-    QGVAR(bloodgroup),
+    QGVAR(bloodTypeSetting),
     "LIST",
-    LLSTRING(client_bt),
+    [LLSTRING(SETTING_bloodtype_server), LLSTRING(SETTING_bloodtype_server_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [[0,1,2,3,4],[LSTRING(SETTING_bloodtype_player), LSTRING(SETTING_bloodtype_player_forced), LSTRING(SETTING_bloodtype_random), LSTRING(SETTING_bloodtype_randomOnJoin), LSTRING(SETTING_bloodtype_steamid)],0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets if randomizer should be weighed (according to bloodtype commonness)
+[
+    QGVAR(bloodTypeRandomWeighed),
+    "CHECKBOX",
+    [LLSTRING(SETTING_bloodtype_random_weighed), LLSTRING(SETTING_bloodtype_random_weighed_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets the player's desired bloodtype
+[
+    QGVAR(bloodTypeSettingPlayer),
+    "LIST",
+    LLSTRING(SETTING_bloodtype_player),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], 7],
     2,
     {
-        player setVariable [QGVAR(bloodtype), _this, true];
+        //player setVariable [QGVAR(bloodtype), _this, true];
         player setVariable [QACEGVAR(dogtags,dogtagData), nil, true];
     },
-    true
+    false
 ] call CBA_Settings_fnc_init;
 
 //location for AED - Defi:
