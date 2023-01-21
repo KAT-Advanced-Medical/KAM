@@ -89,7 +89,7 @@
             <English>Check gas mask durability</English>
             <German>Haltbarkeit der Gasmaske prüfen</German>
             <French>Vérifier la durabilité du masque à gaz</French>
-            <Japanese>ガスマスクフィルターの寿命を確認</Japanese>
+            <Japanese>ガスマスクの寿命を確認</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_ChangeGasMaskFilter">
             <English>Replace gas mask filter</English>
