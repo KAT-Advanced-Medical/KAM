@@ -5,6 +5,7 @@
             <English>Accepted gas masks</English>
             <German>Akzeptierte Gasmasken</German>
             <French>Masques à gaz acceptés</French>
+            <Japanese>許可された防毒マスク</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_AVAIL_GASMASK_DISC">
             <English>Enter here the classname of the masks that should work with the system.</English>
@@ -16,13 +17,13 @@
             <English>Gas masks durability</English>
             <German>Gasmasken Haltbarkeit</German>
             <French>Durabilité des masques à gaz</French>
-            <Japanese>防毒マスクの耐久性</Japanese>
+            <Japanese>ガスマスクの耐久寿命</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_GASMASK_DURABILITY_DISC">
             <English>Determines how long you can stand in the gas with a gas mask without getting infected.</English>
             <German>Bestimmt wie lange man mit einer Gasmaske im Gas stehen kann ohne infiziert zu werden.</German>
             <French>Détermine la durée où vous pouvez tenir dans un gaz avec un masque à gaz sans être infecté</French>
-            <Japanese>防毒マスクを使用しながらガスの中にどれだけ長く感染せずにいられるかを設定します。</Japanese>
+            <Japanese>ガスマスクを使用しながらガスの中にどれだけ長く感染せずにいられるかを設定します。</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_infection_time">
             <English>Time until infection</English>
@@ -34,7 +35,7 @@
             <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
             <German>Zeit die man im Gas stehen kann bevor man infiziert wird bzw eine Gasmaske benötigt.</German>
             <French>Durée où vous pouvez tenir dans un gaz avant d'être infecté ou d'avoir besoin d'un masque à gaz</French>
-            <Japanese>感染せず防毒マスクを使わずに、ガスの中に立つことができる時間。</Japanese>
+            <Japanese>ガスマスクを使わずに、感染せずガスの中に立つことができる時間を設定します。</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_affectAI">
             <English>Gas Affects AI</English>
@@ -52,7 +53,7 @@
             <English>Gas mask filter</English>
             <German>Gasmaskenfilter</German>
             <French>Filtre de masque à gaz</French>
-            <Japanese>ガスマスクフィルター</Japanese>
+            <Japanese>ガスマスク用フィルター</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_GasFilterItem_desc">
             <English>Replacement filter for gas mask</English>
@@ -64,43 +65,43 @@
             <English>Sealant tube</English>
             <German>Dichtmitteltube</German>
             <French>Tube de mastic</French>
-            <Japanese>シーラントチューブ</Japanese>
+            <Japanese>シーリング材チューブ</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_sealantItem_desc">
             <English>Sealant which is used to seal objects when e.g. a toxic substance leaks out</English>
             <German>Dichtmittel welches zum abdichen von objekten genutzt wird wenn z.b. ein giftstoff austritt</German>
             <French>Mastic servant à sceller les objets quand par exemple une substance toxique en sort</French>
-            <Japanese>毒物が漏れ出した際などに対象物をシールするために使用されるシーラント。 </Japanese>
+            <Japanese>毒物が漏れ出した際などに対象物をシールするために使用されるシーリング材入りチューブ。</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_giveGasMask_action">
             <English>Put on gas mask</English>
             <German>Gasmaske aufsetzen</German>
             <French>Mettre le masque à gaz</French>
-            <Japanese>ガスマスクを装備</Japanese>
+            <Japanese>ガスマスクを装備させる</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_giveGasMask_progress">
             <English>Put on gas mask...</English>
             <German>Setzte gasmaske auf...</German>
             <French>Mise en place du masque à gaz...</French>
-            <Japanese>ガスマスクを装備しています…</Japanese>
+            <Japanese>ガスマスクを装備させています…</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_CheckGasMaskDurability">
             <English>Check gas mask durability</English>
             <German>Haltbarkeit der Gasmaske prüfen</German>
             <French>Vérifier la durabilité du masque à gaz</French>
-            <Japanese>防毒マスクの耐久性をチェック</Japanese>
+            <Japanese>ガスマスクフィルターの寿命を確認</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_ChangeGasMaskFilter">
             <English>Replace gas mask filter</English>
             <German>Gasmasken Filter austauschen</German>
             <French>Remplacer le filtre du masque à gaz</French>
-            <Japanese>ガスマスクフィルターを交換する</Japanese>
+            <Japanese>フィルターを交換する</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_ChemDetector_Mute">
             <English>Mute Chemical Detector.</English>
             <German>Chemischen Detektor Stummschalten.</German>
             <French>Désactiver le son du détecteur de produits chimiques</French>
-            <Japanese>化学検知器をミュートする</Japanese>
+            <Japanese>化学検知器をミュート</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_ChemDetector_Unmute">
             <English>Unmute Chemical Detector.</English>
@@ -154,13 +155,13 @@
             <English>Seal leack</English>
             <German>Leck versiegeln</German>
             <French>Sceller la fuite</French>
-            <Japanese>漏れをシール</Japanese>
+            <Japanese>ガス漏れをシールする</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_GasModule_SealLeak">
             <English>Seal leak</English>
             <German>Leck abdichten</German>
             <French>Sceller la fuite</French>
-            <Japanese>漏れをシール</Japanese>
+            <Japanese>ガス漏れをシールする</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_GasModule_Needbigger">
             <English>Minimal Range need to be less than Maximum Range!</English>
@@ -238,7 +239,7 @@
             <English>M43 BZ LGB</English>
             <German>M43 BZ LGB</German>
             <French>M43 BZ LGB</French>
-            <Japanese>M43 BZ LGB</Japanese>
+            <Japanese>M43 BZガス クラスターLGB</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_M43_ShortName_1x">
             <English>M43 BZ LGB</English>
@@ -256,7 +257,7 @@
             <English>2x M43 BZ LGB</English>
             <German>2x M43 BZ LGB</German>
             <French>2x M43 BZ LGB</French>
-            <Japanese>2x M43 BZ LGB</Japanese>
+            <Japanese>2x M43 BZガス クラスターLGB</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_M43_ShortName_2x">
             <English>2x M43 BZ LGB</English>
@@ -280,7 +281,7 @@
             <English>70mm GAS</English>
             <German>70mm GAS</German>
             <French>70mm GAS</French>
-            <Japanese>70mm ガス</Japanese>
+            <Japanese>70mm 有毒ガス</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_LvL1_Gas">
             <English>Toxic gas (Level 1)</English>
@@ -304,7 +305,7 @@
             <English>Is sealable?</English>
             <German>Versiegelbar?</German>
             <French>Scellable ?</French>
-            <Japanese>密閉可能ですか?</Japanese>
+            <Japanese>シーリング可能かどうか</Japanese>
         </Key>
         <Key ID="STR_kat_chemical_UI_sealable_tooltip">
             <English>ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!</English>
