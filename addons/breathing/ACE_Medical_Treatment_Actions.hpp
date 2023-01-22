@@ -169,7 +169,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head", "LeftArm", "RightArm"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Cyanosis);
-        condition = QGVAR(enableCyanosis);
+        condition = QUOTE(GVAR(enableCyanosis) && !(GVAR(cyanosisShowInMenu)));
         callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);
     };
 };

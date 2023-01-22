@@ -24,7 +24,7 @@ if IN_CRDC_ARRST(_unit) exitWith { false };
 if (_unit getVariable [QEGVAR(surgery,sedated), false]) exitWith { false };
 
 private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);
-private _bloodLoss = _unit call ACEFUNC(medical_status,getBloodLoss);
+private _bloodLoss = _unit call EFUNC(pharma,getBloodLoss);
 if (_bloodLoss > (ACEGVAR(medical,const_bloodLossKnockOutThreshold) * _cardiacOutput / 2)) exitWith { false };
 
 private _bloodPressure = [_unit] call ACEFUNC(medical_status,getBloodPressure);

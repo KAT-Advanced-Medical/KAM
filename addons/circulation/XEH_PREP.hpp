@@ -25,5 +25,6 @@ PREP(removeLog);
 PREP(returnAED_X);
 PREP(treatment);
 PREP(treatmentAdvanced_IV);
+PREP(updateInternalBleeding);
 PREP(vehicleCheck);
 PREP(wrongBloodTreatment);

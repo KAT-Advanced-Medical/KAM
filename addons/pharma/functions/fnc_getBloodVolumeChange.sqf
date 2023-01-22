@@ -19,7 +19,7 @@
 
 params ["_unit", "_deltaT", "_syncValues"];
 
-private _bloodLoss = [_unit] call ACEFUNC(medical_status,getBloodLoss);
+private _bloodLoss = [_unit] call EFUNC(pharma,getBloodLoss);
 private _bloodVolumeChange = -_deltaT * _bloodLoss;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {

@@ -162,6 +162,31 @@ if (_target getVariable [QGVAR(recovery), false]) then {
     _entries pushback [LLSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
 };
 
+// Display cyanosis in overview tab, only when head/arms are selected
+if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
+	private _spO2 = 0;
+	
+	if (alive _target) then {
+        _spO2 = GET_SPO2(_target);
+	};
+	
+    if (_spO2 <= EGVAR(breathing,slightValue) || HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
+        private _cyanosisArr = switch (true) do {
+            case (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN));
+            case (_spO2 <= EGVAR(breathing,severeValue)): {
+                [LELSTRING(breathing,CyanosisStatus_Severe), [0.16, 0.16, 1, 1]];
+            };
+            case (_spO2 <= EGVAR(breathing,mildValue)): {
+                [LELSTRING(breathing,CyanosisStatus_Mild), [0.16, 0.315, 1, 1]];
+            };
+            default {
+                [LELSTRING(breathing,CyanosisStatus_Slight), [0.16, 0.47, 1, 1]];
+            };
+        };
+        _entries pushBack [(_cyanosisArr select 0), (_cyanosisArr select 1)];
+    };   
+};
+
 private _tensionhemothorax = false;
 if (!(EGVAR(breathing,showPneumothorax_dupe))) then {
     if ((_target getVariable [QEGVAR(breathing,hemopneumothorax), false]) || (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false])) then {

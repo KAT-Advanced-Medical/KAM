@@ -189,6 +189,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets how much internal bleeding is applied while suffering from hemopneumothorax
+[
+    QGVAR(HPTXBleedAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_HPTX_BleedAmount), LLSTRING(SETTING_HPTX_BleedAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0, 1, 0.06, 2],
+    true
+] call CBA_Settings_fnc_init;
+
 // Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might help
 [
     QGVAR(pneumothorax_hardcore),
@@ -246,6 +256,16 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_Cyanosis), LLSTRING(SETTING_Cyanosis_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Cyanosis)],
     [true],
+    true
+] call CBA_Settings_fnc_init;
+
+//Enables displaying cyanosis in overview tab and hides cyanosis diagnose action
+[
+    QGVAR(cyanosisShowInMenu),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Cyanosis_ShowInMenu), LLSTRING(SETTING_Cyanosis_ShowInMenu_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Cyanosis)],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 

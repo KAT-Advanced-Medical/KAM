@@ -152,7 +152,8 @@ if (vehicle _medic == _medic && {_medicAnim != ""}) then {
 };
 
 // Play a random treatment sound globally if defined
-if (isArray (_config >> "sounds")) then {
+// Don't attempt to play if sounds array is empty
+if (isArray (_config >> "sounds") && count (_config >> "sounds") != 0) then {
     selectRandom getArray (_config >> "sounds") params ["_file", ["_volume", 1], ["_pitch", 1], ["_distance", 10]];
     playSound3D [_file, objNull, false, getPosASL _medic, _volume, _pitch, _distance];
 };

@@ -604,6 +604,14 @@
             <Russian>Количество повреждений при одном ударе по шкале от 0 до 1, которое должно произойти, прежде чем возникнет вероятность пневмоторакса. Более низкие значения означают, что пневмоторакс более вероятен. Установка очень низкого значения или нуля может привести к неожиданному поведению или пневмотораксу из-за неожиданных травм.</Russian>
             <Japanese>一度の負傷で発生する気胸へのダメージ。値が低いほど、気胸が発生する可能性が高くなります。値を非常に低く設定するか、0に設定すると、予期しない動作や予期しない怪我による気胸を引き起こす可能性があります。</Japanese>
         </Key>
+        <Key ID="STR_kat_breathing_SETTING_HPTX_BleedAmount">
+            <English>Hemopneumothorax internal bleeding amount</English>
+            <Japanese>血気胸時の内出血量</Japanese>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_HPTX_BleedAmount_DESC">
+            <English>Sets amount of internal bleeding that is applied while suffering from hemopneumothorax</English>
+            <Japanese>血気胸時に発生する内出血の流出量を設定します</Japanese>
+        </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore">
             <English>Hardcore pneumothorax</English>
             <Polish>Trudna odma opłucnowa</Polish>
@@ -857,7 +865,7 @@
             <German>Keine Zyanose</German>
             <Polish>Brak sinicy</Polish>
             <Russian>Нет цианоза</Russian>
-            <Japanese>なし</Japanese>
+            <Japanese>チアノーゼ症状なし</Japanese>
             <Chinesesimp>红润</Chinesesimp>
             <Korean>치아노제 없음</Korean>
             <French>Aucune cyanose</French>
@@ -871,7 +879,7 @@
             <German>Leichte Zyanose</German>
             <Polish>Lekka sinica</Polish>
             <Russian>Легкий цианоз</Russian>
-            <Japanese>わずか</Japanese>
+            <Japanese>わずかなチアノーゼ</Japanese>
             <Chinesesimp>发白</Chinesesimp>
             <Korean>미미한 치아노제 증상</Korean>
             <French>Cyanose légère</French>
@@ -885,7 +893,7 @@
             <German>Mittelschwere Zyanose</German>
             <Polish>Umiarkowana sinica</Polish>
             <Russian>средний цианоз</Russian>
-            <Japanese>軽度</Japanese>
+            <Japanese>軽度のチアノーゼ</Japanese>
             <Chinesesimp>惨白</Chinesesimp>
             <Korean>가벼운 치아노제 증상</Korean>
             <French>Cyanose moyenne</French>
@@ -899,7 +907,7 @@
             <German>Schwere Zyanose</German>
             <Polish>Ciężka sinica</Polish>
             <Russian>Тяжелый цианоз</Russian>
-            <Japanese>重度</Japanese>
+            <Japanese>重度のチアノーゼ</Japanese>
             <Chinesesimp>发紫</Chinesesimp>
             <Korean>심각한 치아노제 증상</Korean>
             <French>Cyanose grave</French>
@@ -935,6 +943,14 @@
             <Italian>Abilita la diagnosi della cianosi</Italian>
             <Czech>Povolí diagnózu cyanózy</Czech>
             <Spanish>Permitir el diagnóstico de cianosis</Spanish>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_Cyanosis_ShowInMenu">
+            <English>Show cyanosis in overview tab</English>
+            <Japanese>オーバービューにチアノーゼの症状を表示</Japanese>
+        </Key>
+        <Key ID="STR_kat_breathing_SETTING_Cyanosis_ShowInMenu_DESC">
+            <English>Shows cyanosis of patient in overview tab and hides cyanosis diagnose action</English>
+            <Japanese>オーバービューに患者のチアノーゼの症状を表示し、チアノーゼ診断アクションを非表示にします</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -1152,31 +1168,37 @@
             <English>Enable low SPO2 warning</English>
             <German>Aktiviere Schwarz aufleuchten bei niedrigen SPO2</German>
             <French>Autoriser les alertes de SpO2 basse</French>
+            <Japanese>低SpO2警告を有効にする</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SPO2Flashing_DESC">
             <English>Makes your Screen flash black if you are below 90% SPO2 (default value)</English>
             <German>Lässt deinen Bildschirm Schwarz aufleuchten wenn du unter 90% SPO2 bist (Standard Wert)</German>
             <French>Fait flasher l'écran en noir si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
+            <Japanese>SpO2が(デフォルトの値では)90%未満の場合、画面が黒く点滅します。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Stamina_Loss_SPO2_display">
             <English>Enable Stamina loss on low SPO2</English>
             <German>Aktiviere Ausdauer verlust bei niedrigem SPO2</German>
             <French>Autoriser la perte d'endurance en cas de SpO2 basse</French>
+            <Japanese>低SpO2でのスタミナ損失を有効にする</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Stamina_Loss_SPO2_DESC">
             <English>Makes you lose stamina if you are under 90% SPO2 (default value)</English>
             <German>Lässt dich Ausdauer verlieren wenn du unter 90% SPO2 bist (Standard Wert)</German>
             <French>Fait perdre de l'endurance si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
+            <Japanese>SpO2が(デフォルトの値では)90%未満の場合、スタミナを失います。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_lowSPO2Level_display">
             <English>Low SPO2 warning level</English>
             <German>Niedrige SPO2 warn Level</German>
             <French>Niveau d'alerte de SpO2 basse</French>
+            <Japanese>低SpO2警告のレベル</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_lowSPO2Level_DESC">
             <English>Lets you change the SPO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
             <German>Lässt dich das SPO2 Wert änder ab wann du das Schwarze aufleuchten und den Ausdauer verlust bekommst</German>
             <French>Règle la valeur de SpO2 à laquelle les flashs d'alerte et la perte d'endurance apparaissent</French>
+            <Japanese>低SpO2警告が発生するSpO2のしきい値を変更します。(デフォルトでは90%)</Japanese>
         </Key>
     </Package>
 </Project>
