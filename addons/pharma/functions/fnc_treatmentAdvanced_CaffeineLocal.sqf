@@ -25,7 +25,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		params ["_patient"];
 		ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 1500;
 	},
-	[_patient], 5] call CBA_fnc_waitAndExecute;
+	[_patient], 2.5] call CBA_fnc_waitAndExecute;
 	
 } else {
 
@@ -33,6 +33,6 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		params ["_patient"];
 		_patient setStamina(getStamina _patient + 300);
 	},
-	[_patient], 5] call CBA_fnc_waitAndExecute;
+	[_patient], 2.5] call CBA_fnc_waitAndExecute;
 
 };
