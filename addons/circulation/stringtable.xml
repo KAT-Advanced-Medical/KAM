@@ -1156,8 +1156,35 @@
             <Russian>Неправильное сочетание донорской и реципиентной крови может иметь смертельные последствия.</Russian>
             <Japanese>ドナーと患者の血液の間違った組み合わせは、致命的な結果をもたらす可能性さえあります。</Japanese>
         </Key>
-        <Key ID="STR_kat_circulation_client_bt">
-            <English>Blood group</English>
+        <Key ID="STR_kat_circulation_SETTING_bloodtype_assign">
+            <English>Blood Type Assignment</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_bloodtype_assign_DESC">
+            <English>Sets how players' blood type is assigned:\nPlayer chosen: Player chooses their own blood type\nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning\nRandom: Blood type is random each respawn\nRandom (on join): Blood type is random, but doesn't change upon respawning\nSteamID: Blood type is decided based on player's steamID</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_bloodtype_assign_player">
+            <English>Player chosen</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_bloodtype_assign_player_forced">
+            <English>Player chosen (forced)</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_bloodtype_assign_random">
+            <English>Random</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_bloodtype_assign_random_onJoin">
+            <English>Random (on join)</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_bloodtype_assign_steamid">
+            <English>SteamID</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_bloodtype_random_weighted">
+            <English>Weighted Randomizer</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_bloodtype_random_weighted_DESC">
+            <English>Sets if random blood type given will be weighted according to blood type commonness</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_bloodtype_player">
+            <English>Blood Type</English>
             <German>Blutgruppe</German>
             <Polish>Grupa krwi</Polish>
             <Spanish>Grupo sanguíneo</Spanish>

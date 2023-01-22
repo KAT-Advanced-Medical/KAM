@@ -31,7 +31,7 @@ switch(GVAR(bloodTypeSetting)) do {
         };
     };
     case 2: {// random bloodtype
-        if(GVAR(bloodTypeRandomWeighed)) then {
+        if(GVAR(bloodTypeRandomWeighted)) then {
             _b = selectRandomWeighted ["A", 0.3, "A_N", 0.08, "B", 0.09, "B_N", 0.02, "AB", 0.02, "AB_N", 0.01, "O", 0.35, "O_N", 0.13];
         } else {
             _b = selectRandom ["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"];
@@ -39,7 +39,7 @@ switch(GVAR(bloodTypeSetting)) do {
     };
     case 3: {// random bloodtype on join (once)
         if(isNull _body) then {
-            if(GVAR(bloodTypeRandomWeighed)) then {
+            if(GVAR(bloodTypeRandomWeighted)) then {
                 _b = selectRandomWeighted ["A", 0.3, "A_N", 0.08, "B", 0.09, "B_N", 0.02, "AB", 0.02, "AB_N", 0.01, "O", 0.35, "O_N", 0.13];
             } else {
                 _b = selectRandom ["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"];
