@@ -31,11 +31,19 @@ switch(GVAR(bloodTypeSetting)) do {
         };
     };
     case 2: {// random bloodtype
-        _b = selectRandomWeighted ["A", 0.3, "A_N", 0.08, "B", 0.09, "B_N", 0.02, "AB", 0.02, "AB_N", 0.01, "O", 0.35, "O_N", 0.13];
+        if(GVAR(bloodTypeRandomWeighed)) then {
+            _b = selectRandomWeighted ["A", 0.3, "A_N", 0.08, "B", 0.09, "B_N", 0.02, "AB", 0.02, "AB_N", 0.01, "O", 0.35, "O_N", 0.13];
+        } else {
+            _b = selectRandom ["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"];
+        };
     };
     case 3: {// random bloodtype on join (once)
         if(isNull _body) then {
-            _b = selectRandomWeighted ["A", 0.3, "A_N", 0.08, "B", 0.09, "B_N", 0.02, "AB", 0.02, "AB_N", 0.01, "O", 0.35, "O_N", 0.13];
+            if(GVAR(bloodTypeRandomWeighed)) then {
+                _b = selectRandomWeighted ["A", 0.3, "A_N", 0.08, "B", 0.09, "B_N", 0.02, "AB", 0.02, "AB_N", 0.01, "O", 0.35, "O_N", 0.13];
+            } else {
+                _b = selectRandom ["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"];
+            };
         } else {
             _b = _body getVariable [QGVAR(bloodtype), GVAR(bloodTypeSettingPlayer)];
         };
@@ -53,7 +61,7 @@ switch(GVAR(bloodTypeSetting)) do {
                 case (95 <= _id && _id <= 96): {_b = "AB"};
                 case (97 <= _id && _id <= 98): {_b = "B_N"};
                 default {_b = "AB_N"};
-            }
+            };
 
         } else {
             _b = GVAR(bloodTypeSettingPlayer); 
