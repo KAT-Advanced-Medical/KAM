@@ -66,7 +66,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(bloodTypeCustomList),
     "EDITBOX",
-    [LLSTRING(SETTING_bloodtype_custom_list), LLSTRING(SETTING_bloodtype_custom_list_DESC)]
+    [LLSTRING(SETTING_bloodtype_custom_list), LLSTRING(SETTING_bloodtype_custom_list_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     "O,O,A,A,O_N,B,A_N,AB,B_N,AB_N",
     true
