@@ -33,7 +33,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(SETTING_bloodtype_assign), LLSTRING(SETTING_bloodtype_assign_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [[0,1,2,3,4,5],[LSTRING(SETTING_bloodtype_assign_player), LSTRING(SETTING_bloodtype_assign_player_forced), LSTRING(SETTING_bloodtype_assign_random), LSTRING(SETTING_bloodtype_assign_random_onJoin), LSTRING(SETTING_bloodtype_assign_steamid), LSTRING(SETTING_bloodtype_assign_steamid_custom)],0],
+    [[0,1,2,3,4,5],[LSTRING(SETTING_bloodtype_assign_player), LSTRING(SETTING_bloodtype_assign_player_forced), LSTRING(SETTING_bloodtype_assign_random), LSTRING(SETTING_bloodtype_assign_random_onJoin), LSTRING(SETTING_bloodtype_assign_steamid), LSTRING(SETTING_bloodtype_assign_steamid_custom)],4],
     true
 ] call CBA_Settings_fnc_init;
 
