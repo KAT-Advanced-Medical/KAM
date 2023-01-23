@@ -33,7 +33,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(SETTING_bloodtype_assign), LLSTRING(SETTING_bloodtype_assign_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [[0,1,2,3,4],[LSTRING(SETTING_bloodtype_assign_player), LSTRING(SETTING_bloodtype_assign_player_forced), LSTRING(SETTING_bloodtype_assign_random), LSTRING(SETTING_bloodtype_assign_random_onJoin), LSTRING(SETTING_bloodtype_assign_steamid)],0],
+    [[0,1,2,3,4,5],[LSTRING(SETTING_bloodtype_assign_player), LSTRING(SETTING_bloodtype_assign_player_forced), LSTRING(SETTING_bloodtype_assign_random), LSTRING(SETTING_bloodtype_assign_random_onJoin), LSTRING(SETTING_bloodtype_assign_steamid), LSTRING(SETTING_bloodtype_assign_steamid_custom)],0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -60,6 +60,16 @@ PREP_RECOMPILE_END;
         player setVariable [QACEGVAR(dogtags,dogtagData), nil, true];
     },
     false
+] call CBA_Settings_fnc_init;
+
+// Custom bloodtype list to use with custom steamid option
+[
+    QGVAR(bloodTypeCustomList),
+    "EDITBOX",
+    LLSTRING(SETTING_bloodtype_custom_list),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    "O,O,A,A,O_N,B,A_N,AB,B_N,AB_N",
+    true
 ] call CBA_Settings_fnc_init;
 
 //location for AED - Defi:

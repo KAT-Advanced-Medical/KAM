@@ -67,6 +67,15 @@ switch(GVAR(bloodTypeSetting)) do {
             _b = GVAR(bloodTypeSettingPlayer); 
         }; 
     };
+    case 5: {// steamid custom list bloodtype
+        if(isMultiplayer) then {
+            private _id = parseNumber (getPlayerUID _unit select [16,1]);
+            private _bl = GVAR(bloodTypeCustomList) splitString ",";
+            _b = _bl select _id;
+        } else {
+            _b = GVAR(bloodTypeSettingPlayer); 
+        }; 
+    };
     default { _b = GVAR(bloodTypeSettingPlayer); };
 };
 
