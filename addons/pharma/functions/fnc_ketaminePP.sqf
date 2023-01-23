@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_pharma_ketaminePP;
+ * [player] call kat_pharma_fnc_ketaminePP;
  *
  * Public: No
  */
