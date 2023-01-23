@@ -2284,8 +2284,8 @@
             <English>Performance enhancing drug</English>
             <German>Leistungssteigerndes Medikament</German>
             <French>Drogue améliorant les performances</French>
-            <Japanese>覚醒剤</Japanese>
-            <Korean>각성제</Korean>
+            <Korean>운동능력 향상 약물</Korean>
+            <Japanese>疲労の防止と回復に!</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Take_Pervitin">
             <English>Take Pervitin</English>
@@ -2298,64 +2298,64 @@
             <English>The pervitin makes you feel awake and full of endless POWER</English>
             <German>Das Pervitin macht dich wach und du fühlst dich durchflutet mit unendlich POWER</German>
             <French>La pervitine vous fait vous sentir éveillé et plein d'une puissance INFINIE</French>
-            <Japanese>ペルビチンはあなたを覚醒させ、無限のチカラに満ち満ちた気分にさせます</Japanese>
             <Korean>페르피틴이 당신을 깨어있게 하고 끝없는 빠와로 가득 차게 합니다</Korean>
+            <Japanese>ペルビチンはあなたを覚醒させ、無限のチカラに満ち満ちた気分にさせます!</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid">
             <English>You begin to lose your breath...</English>
             <German>Deine Kraft lässt langsam nach...</German>
             <French>Vous commencez à perdre votre souffle...</French>
-            <Japanese>あなたは急に息が出来なくなりました...</Japanese>
-            <Korean>숨을 쉴 수가 없게 됐다...</Korean>
+            <Korean>숨을 쉬기 힘들어진다...</Korean>
+            <Japanese>あなたは急に息苦しさを感じはじめた...</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid2">
             <English>You gain a sudden rush!</English>
             <German>Du bekommst einen spontanan Rush...</German>
             <French>Vous sentez un élan soudain !</French>
-            <Japanese>あなたは突如興奮し始めた!</Japanese>
-            <Korean>갑자기 흥분된다!</Korean>
+            <Korean>갑자기 심하게 두근거린다!</Korean>
+            <Japanese>あなたを突如激しい動悸が襲う!</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid3">
             <English>You gain another rush!</English>
             <German>Du bekommst einen weiteren Rush...</German>
             <French>Vous sentez un autre élan !</French>
-            <Japanese>あなたは更に興奮した!</Japanese>
-            <Korean>더더욱 흥분된다!</Korean>
+            <Korean>두근거림이 더 격렬해진다!</Korean>
+            <Japanese>動悸は激しさを増してゆく!</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid4">
             <English>The exhaustion starts to settle in...</English>
             <German>Die Erschöpfung macht sich breit ...</German>
             <French>L'épuisement commence à se faire sentir...</French>
-            <Japanese>疲れが落ち着き始めた...</Japanese>
-            <Korean>피로가 가시려 한다...</Korean>
+            <Korean>두근거림이 가라앉으려 한다...</Korean>
+            <Japanese>動悸が落ち着き始めた...</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_end">
             <English>You start to feel normal again</English>
             <German>Du beginnst dich wieder normal zu fühlen.</German>
             <French>Vous commencez à vous sentir à nouveau normal</French>
-            <Japanese>あなたの感性は元に戻った</Japanese>
-            <Korean>느낌이 다시 원상태로 돌아오기 시작한다</Korean>
+            <Korean>몸이 다시 원상태로 돌아오기 시작한다</Korean>
+            <Japanese>身体は元の落ち着きを取り戻した</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_chrom">
             <English>You start to see everything twice.</English>
             <German>Du siehst alles Zweimal.</German>
             <French>Vous commencez à voir tout en double</French>
-            <Japanese>あなたは全てが二重に見える...</Japanese>
-            <Korean>모든 개 두 개로 보이기 시작한다.</Korean>
+            <Korean>모든 게 두 개로 보이기 시작한다.</Korean>
+            <Japanese>全てが二重に見える...</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_chrom2">
             <English>You start to twitch...</English>
             <German>Du fängst an zu zucken...</German>
             <French>Vous commencez à trembler...</French>
-            <Japanese>あなたは痙攣し始めた</Japanese>
-            <Korean>경련이 일어나기 시작한다...</Korean>
+            <Korean>경련이 멈추지 않는다...</Korean>
+            <Japanese>身体の震えが止まらなくなった...</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_chrom3">
             <English>Your head starts to clear up and you stop twitching...</English>
             <German>Dein Kopf wird klarer und du hörst auf zu zucken...</German>
             <French>Vos idées commencent à s'éclaircir et vous arrêtez de trembler...</French>
-            <Japanese>あなたは痙攣がおさまり、頭がすっきりしてきた</Japanese>
             <Korean>정신이 맑아지기 시작하고 경련이 멈추었다...</Korean>
+            <Japanese>震えがおさまり、頭がすっきりしてきた</Japanese>
         </Key>
         <Key ID="STR_kat_pharma_Caffeine_Bottle_Display">
             <English>Caffeine bottle</English>
@@ -2399,7 +2399,7 @@
             <Korean>호흡 확인</Korean>
             <German>Überprüfe Atem</German>
             <Chinesesimp>检查呼吸</Chinesesimp>
-            <Japanese>吸気臭の確認</Japanese>
+            <Japanese>呼吸の確認</Japanese>
             <Spanish>Revisar aliento</Spanish>
         </Key>
         <Key ID="STR_kat_pharma_Inspect_Catheter">
