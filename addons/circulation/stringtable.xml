@@ -1160,7 +1160,7 @@
             <English>Blood Type Assignment</English>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_bloodtype_assign_DESC">
-            <English>Sets how players' blood type is assigned:\nPlayer chosen: Player chooses their own blood type\nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning\nRandom: Blood type is random each respawn\nRandom (on join): Blood type is random, but doesn't change upon respawning\nSteamID: Blood type is decided based on player's steamID\nSteamID (custom list): Blood type is decided based on player's steamID, assigned according to custom list</English>
+            <English>Sets how players' blood type is assigned:\nPlayer chosen: Player chooses their own blood type\nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning\nRandom: Blood type is random each respawn\nRandom (on join): Blood type is random, but doesn't change upon respawning\nSteamID: Blood type is decided based on player's steamID\nSteamID (custom list): Blood type is decided based on player's steamID and custom list</English>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_bloodtype_assign_player">
             <English>Player chosen</English>
@@ -1202,10 +1202,10 @@
             <Japanese>血液型</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_bloodtype_custom_list">
-            <English>Bloodtype Custom List</English>
+            <English>Blood Type Custom List</English>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_bloodtype_custom_list_DESC">
-            <English>Sets bloodtypes that will be assigned to players based on their SteamID\nBloodtypes are seperated by a comma (","), list should contain a total of 10 bloodtypes</English>
+            <English>Sets blood types that will be assigned to players based on their SteamID\nBlood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
         </Key>
         <Key ID="STR_kat_circulation_LOCATION_AED">
             <English>Locations AED</English>
