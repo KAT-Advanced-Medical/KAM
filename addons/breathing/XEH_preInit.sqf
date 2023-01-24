@@ -350,7 +350,7 @@ PREP_RECOMPILE_END;
     {
         player setVariable [QGVAR(stethoscopeSoundVolume), _this, true];
     },
-    true
+    false
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;
