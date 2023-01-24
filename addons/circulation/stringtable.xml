@@ -834,7 +834,7 @@
             <Chinese>自動體外心臟除顫器 X系列</Chinese>
             <Chinesesimp>AED-X除颤仪</Chinesesimp>
             <Czech>AED X-Series</Czech>
-            <Korean>X 시리즈 AED</Korean>
+            <Korean>X-시리즈 AED</Korean>
             <French>AED X-Series</French>
             <Turkish>AED X-Serisi</Turkish>
             <Italian>DAE Serie X</Italian>
@@ -1269,7 +1269,7 @@
             <Chinese>%1 已執行心肺復甦術</Chinese>
             <Chinesesimp>%1 已使用AED-X</Chinesesimp>
             <Czech>%1 použil AED-X</Czech>
-            <Korean>%1 은(는) X 시리즈 AED가 사용되었습니다</Korean>
+            <Korean>%1 은(는) X-시리즈 AED가 사용되었습니다</Korean>
             <French>%1 a utilisé un AED-X</French>
             <Russian>%1 выполнил AED-X</Russian>
             <Turkish>%1 AED-X gerçekleştirdi</Turkish>
@@ -1791,6 +1791,7 @@
             <Italian>AED-X: FC: %1 PS: %2/%3 SpO2: %4</Italian>
             <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4</Japanese>
             <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4</French>
+            <Korean>X-시리즈 AED: 맥박: %1 혈압: %2 /%3 산소포화도: %4</Korean>
         </Key>
     </Package>
 </Project>
