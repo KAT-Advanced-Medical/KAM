@@ -198,7 +198,7 @@
             <Polish>%1 znajduje się na %2</Polish>
             <Czech>%1 přítomno na %2</Czech>
             <French>%1 présent sur %2</French>
-            <Korean>%1 은(는) 현재 %2 상태이다.</Korean>
+            <Korean>%2 은(는) 현재 %1 상태이다.</Korean>
             <German>%1 vorhanden auf %2</German>
             <Japanese>%1 が %2 に存在します</Japanese>
             <Spanish>%1 presente en %2</Spanish>
@@ -979,6 +979,7 @@
             <Italian>[KAT]  Box chirurgico</Italian>
             <Japanese>[KAM] 手術用品箱</Japanese>
             <French>[KAM] Boîte de chirurgie</French>
+            <Korean>[KAM] 수술도구 상자</Korean>
         </Key>
     </Package>
 </Project>
