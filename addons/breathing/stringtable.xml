@@ -432,6 +432,7 @@
             <Czech>Dekompresní jehla (NCD Kit)</Czech>
             <French>Aiguille de décompression (NCD kit)</French>
             <Korean>바늘 감압(NCD 키트)</Korean>
+            <Italian>Decompressione con ago (NCD Kit)</Italian>
         </Key>
         <Key ID="STR_kat_breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
@@ -486,6 +487,7 @@
             <Czech>NCD Kit</Czech>
             <French>NCD kit</French>
             <Korean>NCD 키트</Korean>
+            <Italian>NCD Kit</Italian>
         </Key>
         <Key ID="STR_kat_breathing_ncdKit_desc">
             <English>The Needle Chest Decompression Kit is a single use kit designed to treat a tensionpneumothorax.</English>
@@ -495,6 +497,7 @@
             <Czech>NCD Kit je sada pro ošetření tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
             <French>L'aiguille de décompression thoracique est un kit à usage unique designé pour traiter les pneumothorax sous tension</French>
             <Korean>NCD(흉부 바늘 감압) 키트는 긴장성 기흉을 치료하도록 설계된 일회용 키트입니다.</Korean>
+            <Italian>Il kit decompressione con ago è un kit a singolo uso adibito al trattamento del pneumotorace da tensione.</Italian>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemopneumothorax Chance</English>
@@ -505,6 +508,7 @@
             <French>Chance d'avoir un hémopneumothorax</French>
             <Japanese>血気胸の発生確率</Japanese>
             <Korean>혈기흉 확률</Korean>
+            <Italian>Probabilità Emopneumotorace</Italian>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Sets the chance for hemopneumothorax. Also sets the chance for tenstion pneumothorax (60% Hemo = 40% Tension)</English>
@@ -513,6 +517,7 @@
             <Czech>Nastavuje šanci hemopneumotoraxu. Zároveň nastavuje šanci tenzního pneumotoraxu (60% Hemo = 40% Tenzní)</Czech>
             <French>Règle la chance d'avoir un hémopneumothorax. Règle également la chance d'un pneumothorax sous tension (60% Hémo = 40% Tension)</French>
             <Korean>혈기흉의 확률을 설정합니다. 또한 긴장성 기흉의 확률을 설정합니다. (혈기흉 60% = 긴장성 기흉 40%)</Korean>
+            <Italian>Imposta la probabilità per l'emopneumotorace. Imposta inoltre la probabilità per pneumotorace da tensione. (60% Emopn. =  40% Pneum. tensione)</Italian>
         </Key>
         <Key ID="STR_kat_breathing_ADVANCED_PTX_OPTION">
             <English>Enable Advanced Pneumothoraxes</English>
@@ -521,6 +526,7 @@
             <Czech>Povolit pokročilé pneumotoraxy</Czech>
             <French>Activer les pneumothorax avancés</French>
             <Korean>고급 기흉 활성화</Korean>
+            <Italian>Abilità pneumotorace avanzato</Italian>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_ADVANCED_PTX_OPTION">
             <English>Enables advanced pneumothoraxes - hemopneumothorax and tensionpneumothorax</English>
@@ -529,6 +535,7 @@
             <Czech>Povolí pokročilé pneumotoraxy - hemopneumotorax a tenzní pneumotorax.</Czech>
             <French>Active les pneumothorax avancés - Hémopneumothorax et pneumothorax sous tension</French>
             <Korean>고급 기흉을 활성화합니다. - 혈기흉 및 긴장성 기흉</Korean>
+            <Italian>Abilità la pneumotorace avanzato - emopneumotorace e pneumotorace da tensione</Italian>
         </Key>
         <Key ID="STR_kat_breathing_ADVANCED_PTX_CHANCE_OPTION">
             <English>Advanced Pneumothorax Chance</English>
@@ -537,6 +544,7 @@
             <Czech>Šance pokročilých pneumotoraxů</Czech>
             <French>Chance de pneumothorax avancé</French>
             <Korean>고급 기흉 확률</Korean>
+            <Italian>Probabilità di pneumotorace avanzato</Italian>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_ADVANCED_PTX_CHANCE_OPTION">
             <English>The percentage chance that a patient will suffer from a hemopneumotorax or tension pneumothorax after they are treated for a pneumothorax. Treatment requires the draining of fluids with the use of an AAT Kit.</English>
@@ -616,11 +624,13 @@
             <English>Hemopneumothorax internal bleeding amount</English>
             <Japanese>血気胸時の内出血量</Japanese>
             <Korean>혈기흉 내 출혈량</Korean>
+            <Italian>Quantità di sanguinamento interno da emopneumotorace</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_HPTX_BleedAmount_DESC">
             <English>Sets amount of internal bleeding that is applied while suffering from hemopneumothorax</English>
             <Japanese>血気胸時に発生する内出血の流出量を設定します</Japanese>
             <Korean>혈기흉을 앓는 동안 적용되는 내부 출혈량으 설정합니다.</Korean>
+            <Italian>Imposta la quantità di sanguinamento interno che avviene quando hai un emopneumotorace</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_pneumothorax_hardcore">
             <English>Hardcore pneumothorax</English>
@@ -958,11 +968,13 @@
             <English>Show cyanosis in overview tab</English>
             <Japanese>オーバービューにチアノーゼの症状を表示</Japanese>
             <Korean>개요 탭에 치아노제 표시</Korean>
+            <Italian>Mostra la cianosi nella tabella di overview</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Cyanosis_ShowInMenu_DESC">
             <English>Shows cyanosis of patient in overview tab and hides cyanosis diagnose action</English>
             <Japanese>オーバービューに患者のチアノーゼの症状を表示し、チアノーゼ診断アクションを非表示にします</Japanese>
             <Korean>개요 탭에 환자의 치아노제를 표시하고 치아노제 진단 행동을 숨깁니다.</Korean>
+            <Italian>Mostra la cianosi del paziente nella tabella overview e nascondi l'azione di diagnosi della cianosi</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -1183,6 +1195,7 @@
             <French>Autoriser les alertes de SpO2 basse</French>
             <Japanese>低SpO2警告を有効にする</Japanese>
             <Korean>낮은 산소포화도 경고 활성화</Korean>
+            <Italian>Abilità l'allerta di basso SPO2</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SPO2Flashing_DESC">
             <English>Makes your Screen flash black if you are below 90% SPO2 (default value)</English>
@@ -1190,6 +1203,7 @@
             <French>Fait flasher l'écran en noir si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
             <Japanese>SpO2が(デフォルトの値では)90%未満の場合、画面が黒く点滅します。</Japanese>
             <Korean>산소포화도가 90%(기본값) 미만인 경우 화면이 검은색으로 깜빡입니다.</Korean>
+            <Italian>Rendi lampeggiante il tuo schermo se sei sotto al 90% di SPO2 (valore standard)</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Stamina_Loss_SPO2_display">
             <English>Enable Stamina loss on low SPO2</English>
@@ -1197,6 +1211,7 @@
             <French>Autoriser la perte d'endurance en cas de SpO2 basse</French>
             <Japanese>低SpO2でのスタミナ損失を有効にする</Japanese>
             <Korean>낮은 산소포화도에서 스태미나 손실 활성화</Korean>
+            <Italian>Abilita la perdità di stamina con bassa pressione SPO2</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_Stamina_Loss_SPO2_DESC">
             <English>Makes you lose stamina if you are under 90% SPO2 (default value)</English>
@@ -1204,6 +1219,7 @@
             <French>Fait perdre de l'endurance si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
             <Japanese>SpO2が(デフォルトの値では)90%未満の場合、スタミナを失います。</Japanese>
             <Korean>산소포화도가 90%(기본값) 미만이면 스태미나가 떨어집니다.</Korean>
+            <Italian>Perdi stamina se sei sotto il 90% SPO2 (valore standard)</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_lowSPO2Level_display">
             <English>Low SPO2 warning level</English>
@@ -1211,6 +1227,7 @@
             <French>Niveau d'alerte de SpO2 basse</French>
             <Japanese>低SpO2警告のレベル</Japanese>
             <Korean>낮은 산소포화도 경고 수준</Korean>
+            <Italian>Livello di allerta bassa SPO2</Italian>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_lowSPO2Level_DESC">
             <English>Lets you change the SPO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
@@ -1218,6 +1235,7 @@
             <French>Règle la valeur de SpO2 à laquelle les flashs d'alerte et la perte d'endurance apparaissent</French>
             <Japanese>低SpO2警告が発生するSpO2のしきい値を変更します。(デフォルトでは90%)</Japanese>
             <Korean>깜빡임 경고 표시 및 스태미나 손실 효과를 얻게 되는 산소포화도 값을 변경합니다.</Korean>
+            <Italian>Ti permette di cambiare il valore di SPO2 al quale ricevi l'indicatore lampeggiante d'allerta e l'effetto di perdita della stamina </Italian>
         </Key>
     </Package>
 </Project>
