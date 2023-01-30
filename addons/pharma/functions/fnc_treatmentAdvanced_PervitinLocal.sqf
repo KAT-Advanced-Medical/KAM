@@ -267,7 +267,6 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 			if !(alive _patient) exitWith {};
 			_patient setCustomAimCoef 1;
 			_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.7;
-			[LLSTRING(Pervitin_WeaponSway), 2, _patient] call ACEFUNC(common,displayTextStructured);
 		},
 		[_patient], 15] call CBA_fnc_waitAndExecute;
 
@@ -314,7 +313,6 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 			if !(alive _patient) exitWith {};
 			_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.3;
-			[LLSTRING(Pervitin_WeaponSway2), 2, _patient] call ACEFUNC(common,displayTextStructured);
 
 		},
 		[_patient], 210] call CBA_fnc_waitAndExecute;
@@ -355,7 +353,6 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 			if !(alive _patient) exitWith {};
 			_patient setCustomAimCoef 1;
-			[LLSTRING(Pervitin_WeaponSway3), 2, _patient] call ACEFUNC(common,displayTextStructured);
 
 		},
 		[_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
