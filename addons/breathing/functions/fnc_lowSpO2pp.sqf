@@ -18,56 +18,46 @@
 
 params ["_target"];
 
-_target setVariable [QGVAR(lowSpO2ppActive), true, true];
+_currentSpO2 = _target getVariable [QGVAR(airwayStatus), 100];
 
-[{
+if (!(alive _target) || !([_target] call ACEFUNC(common,isAwake)) || _currentSpO2 > GVAR(lowSPO2Level)) exitWith {};
 
-	params ["_args", "_idPFH"];
-    _args params ["_target"];
+["ColorCorrections", 1500, [1, 1, 0, [0, 0, 0, 0], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]]] spawn {
 
-	_currentSpO2 = _target getVariable [QGVAR(airwayStatus), 100];
-	if (!(alive _target) || !([_target] call ACEFUNC(common,isAwake)) || _currentSpO2 > GVAR(lowSPO2Level)) exitWith {
-		_target setVariable [QGVAR(lowSpO2ppActive), false, true];
-    	[_idPFH] call CBA_fnc_removePerFrameHandler;
+    params ["_name", "_priority", "_effect", "_handle"];
+    while {
+        _handle = ppEffectCreate [_name, _priority];
+        _handle < 0
+    } do {
+        _priority = _priority + 1;
     };
+    _handle ppEffectEnable true;
+    _handle ppEffectAdjust _effect;
+    _handle ppEffectCommit 0.7;
 
-    ["ColorCorrections", 1500, [1, 1, 0, [0, 0, 0, 0], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]]] spawn
-                {
-                    params ["_name", "_priority", "_effect", "_handle"];
-                    while {
-                        _handle = ppEffectCreate [_name, _priority];
-                        _handle < 0
-                    } do {
-                        _priority = _priority + 1;
-                    };
-                    _handle ppEffectEnable true;
-                    _handle ppEffectAdjust _effect;
-                    _handle ppEffectCommit 0.7;
+    [{  params["_handle"];
+        ppEffectCommitted _handle
+    }, 
+    {   params["_handle"];          
+        _handle ppEffectAdjust [1, 1, 0, [0, 0, 0, 0.9], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
+        _handle ppEffectCommit 0.7;
 
-                    [{  params["_handle"];
-                        ppEffectCommitted _handle
-                    }, 
-                    {   params["_handle"];          
-                        _handle ppEffectAdjust [1, 1, 0, [0, 0, 0, 0.9], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
-                        _handle ppEffectCommit 0.7;
+        [{  params["_handle"];
+            ppEffectCommitted _handle
+        }, 
+        {   params["_handle"];
+            _handle ppEffectAdjust [1, 1, 0, [0, 0, 0, 0.1], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
+            _handle ppEffectCommit 1.6;       
+            
+            [{  params["_handle"];
+                ppEffectCommitted _handle
+            }, 
+            {   params["_handle"];           
+                _handle ppEffectEnable false;
+                ppEffectDestroy _handle;
+            }, [_handle]] call CBA_fnc_waitUntilAndExecute;
 
-                        [{  params["_handle"];
-                            ppEffectCommitted _handle
-                        }, 
-                        {   params["_handle"];
-                            _handle ppEffectAdjust [1, 1, 0, [0, 0, 0, 0.1], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
-                            _handle ppEffectCommit 1.6;       
-                            
-                            [{  params["_handle"];
-                                ppEffectCommitted _handle
-                            }, 
-                            {   params["_handle"];           
-                                _handle ppEffectEnable false;
-                                ppEffectDestroy _handle;
-                            }, [_handle]] call CBA_fnc_waitUntilAndExecute;
+        }, [_handle]] call CBA_fnc_waitUntilAndExecute;
 
-                        }, [_handle]] call CBA_fnc_waitUntilAndExecute;
-
-                    }, [_handle]] call CBA_fnc_waitUntilAndExecute;
-                };
-}, 3, [_target]] call CBA_fnc_addPerFrameHandler;
+    }, [_handle]] call CBA_fnc_waitUntilAndExecute;
+};
