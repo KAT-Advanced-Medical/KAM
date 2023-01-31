@@ -108,6 +108,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(X_Action_Use);
         displayNameProgress = CSTRING(X_Action_Progress);
         items[] = {"kat_X_AED"};
+        treatmentTime = QGVAR(AED_X_AttachTime);
         condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), false)]));
         consumeItem = 1;
         medicRequired = QGVAR(medLvl_AED_X);
@@ -122,7 +123,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(X_Remove_Action_Progress);
         items[] = {};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)] && !(_patient getVariable [ARR_2(QQGVAR(vehicleTrue), false)]));
-        treatmentTime = 5;
+        treatmentTime = QUOTE(GVAR(AED_X_AttachTime)/2);
         medicRequired = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, true)] call FUNC(returnAED_X));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);

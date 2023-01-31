@@ -111,6 +111,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
+// Sets time required to attach AED-X monitor
+[
+    QGVAR(AED_X_AttachTime),
+    "SLIDER",
+    LLSTRING(SETTING_AED_X_AttachTime),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [1, 60, 10, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 //Distance limit for AED-X
 [
     QGVAR(distanceLimit_AEDX),
