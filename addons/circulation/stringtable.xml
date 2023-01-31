@@ -1380,6 +1380,9 @@
             <Italian>Livello d'addestramento richiesto per usare il DAE-X</Italian>
             <Japanese>AED-Xの使用に訓練レベルを必要とさせます。</Japanese>
         </Key>
+		<Key ID="STR_kat_circulation_SETTING_AED_X_AttachTime">
+            <English>Time required to attach AED-X monitor</English>
+        </Key>
         <Key ID="STR_kat_circulation_DISTANCELIMIT_AED_X">
             <English>Distance limit for AED-X in meters</English>
             <Polish>Limit odległości dla AED-X w metrach</Polish>
