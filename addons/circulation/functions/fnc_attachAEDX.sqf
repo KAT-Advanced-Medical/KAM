@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_circulation_fnc_treatmentAdvanced_X;
+ * [player, cursorTarget] call kat_circulation_fnc_attachAEDX;
  *
  * Public: No
  */
@@ -29,6 +29,7 @@ if (_patient getVariable [QGVAR(X), false]) exitWith {
 
 // connect the x-series
 _patient setVariable [QGVAR(X), true, true];
+_patient setVariable [QGVAR(AED_X_VolumePatient), _medic getVariable QGVAR(AED_X_Volume), true];
 _medic setVariable [QGVAR(use), true, true];
 _medic setVariable [QGVAR(returnedAED), false, true];
 
@@ -106,21 +107,35 @@ if ((_patient getVariable [QACEGVAR(medical,heartRate), 0] isEqualTo 0) && {_pat
 if !(GVAR(AED_BeepsAndCharge)) exitWith {};
 [_patient, _medic] spawn {
     params ["_patient", "_medic"];
-    while {_patient getVariable [QGVAR(X), false]} do {
+    while {_patient getVariable [QGVAR(X), false] && _patient getVariable [QGVAR(AED_X_VolumePatient), false]} do {
         if (GVAR(DeactMon_whileAED_X) && _patient getVariable [QGVAR(AEDinUse), false]) then {
         //No Beep for you atm
         } else {
             private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
+            private _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];
             if (_hr <= 0) then {
-                private _soundPath1 = _medic getVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav)];
-                playsound3D [_soundPath1, _patient, false, getPosASL _patient, 2, 1, 15];
+                playsound3D [QPATHTOF_SOUND(sounds\noheartrate.wav), _patient, false, getPosASL _patient, 2, 1, 15];
                 sleep 1.478;
             } else {
                 private _sleep = 60 / _hr;
-                private _soundPath2 = _medic getVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav)];
-                playsound3D [_soundPath2, _patient, false, getPosASL _patient, 5, 1, 15];
+                playsound3D [QPATHTOF_SOUND(sounds\heartrate.wav), _patient, false, getPosASL _patient, 5, 1, 15];
                 sleep 0.25;
                 sleep _sleep;
+            };
+        };
+    };
+};
+
+[_patient, _medic] spawn {
+    params ["_patient", "_medic"];
+    while {_patient getVariable [QGVAR(X), false] && _patient getVariable [QGVAR(AED_X_VolumePatient), false]} do {
+        if (GVAR(DeactMon_whileAED_X) && _patient getVariable [QGVAR(AEDinUse), false]) then {
+        } else {
+            private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
+            private _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];
+            if(_spO2 < 85 && _hr != 0) then {
+                playSound3D [QPATHTOF_SOUND(sounds\spo2warning.wav), _patient, false, getPosASL _patient, 5, 1, 15];
+                sleep 2;
             };
         };
     };

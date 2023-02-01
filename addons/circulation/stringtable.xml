@@ -1037,7 +1037,7 @@
             <Japanese>切断中</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_X_Action_removeSound">
-            <English>Turn down volume of AED X</English>
+            <English>Disable AED-X monitor audio</English>
             <German>AED-X leiser schalten</German>
             <Polish>Wycisz dźwięki AED X</Polish>
             <Spanish>Bajar el volúmen del DEA X</Spanish>
@@ -1052,7 +1052,7 @@
             <Japanese>AED Xの音量を下げる</Japanese>
         </Key>
         <Key ID="STR_kat_circulation_X_Action_addSound">
-            <English>Turn up volume of AED X</English>
+            <English>Enable AED-X monitor audio</English>
             <German>AED-X lauter schalten</German>
             <Polish>Włącz dźwięki AED X</Polish>
             <Spanish>Subir el volúmen del DEA X</Spanish>
