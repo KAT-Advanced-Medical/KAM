@@ -170,6 +170,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets SpO2 level threshold for audible warning
+[
+    QGVAR(AED_X_Monitor_SpO2Warning),
+    "SLIDER",
+    LELSTRING(breathing,SETTING_Threshold_SpO2Warning),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [1, 100, 85, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 //Enable different CPR chances per medical level
 [
     QGVAR(enable_CPR_Chances),

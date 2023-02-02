@@ -128,6 +128,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets SpO2 level threshold for audible warning
+[
+    QGVAR(PulseOximeter_SpO2Warning),
+    "SLIDER",
+    LLSTRING(SETTING_Threshold_SpO2Warning),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 100, 85, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // breathing probability for a pneumothorax
 // a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
 [

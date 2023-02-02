@@ -160,7 +160,7 @@ if !(GVAR(AED_BeepsAndCharge)) exitWith {};
             } else {
                 private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
                 private _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];
-                if(_spO2 < 85 && _hr != 0) then {
+                if(_spO2 < GVAR(AED_X_Monitor_SpO2Warning) && _hr != 0) then {
                     playSound3D [QPATHTOF_SOUND(sounds\spo2warning.wav), _patient, false, getPosASL _patient, 5, 1, 15];
                     sleep 2;
                 };

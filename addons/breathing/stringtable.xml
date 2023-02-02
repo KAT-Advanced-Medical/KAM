@@ -1243,5 +1243,8 @@
         <Key ID="STR_kat_breathing_PulseOximeter_Action_removeSound">
             <English>Disable Pulse Oximeter Alarm</English>
         </Key>
+        <Key ID="STR_kat_breathing_SETTING_Threshold_SpO2Warning">
+            <English>SpO2 warning threshold</English>
+        </Key>
     </Package>
 </Project>

@@ -54,7 +54,7 @@ _patient setVariable [QGVAR(PulseOximeter_VolumePatient), _medic getVariable QGV
         if(_patient getVariable [QGVAR(PulseOximeter_VolumePatient), false]) then {
             private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
             private _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];
-            if(_spO2 < 85 && _hr != 0) then {
+            if(_spO2 < GVAR(PulseOximeter_SpO2Warning) && _hr != 0) then {
                 playSound3D [QPATHTOF_SOUND(audio\pulseoximeter_warning.wav), _patient, false, getPosASL _patient, 4, 1, 15];
                 sleep 3;
             };
