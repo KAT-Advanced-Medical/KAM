@@ -160,6 +160,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets type of tone played on AED-X monitor when patient has no heart rate
+[
+    QGVAR(AED_X_Monitor_NoHeartRate),
+    "LIST",
+    [LLSTRING(SETTING_AED_X_Monitor_NoHeartRate)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [[0, 1], [LLSTRING(SETTING_AED_X_Monitor_NoHeartRate_Continous), LLSTRING(SETTING_AED_X_Monitor_NoHeartRate_Alternating)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
 //Enable different CPR chances per medical level
 [
     QGVAR(enable_CPR_Chances),

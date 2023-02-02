@@ -1796,5 +1796,14 @@
             <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4</French>
             <Korean>X-시리즈 AED: 맥박: %1 혈압: %2 /%3 산소포화도: %4</Korean>
         </Key>
+        <Key ID="STR_kat_circulation_SETTING_AED_X_Monitor_NoHeartRate">
+            <English>AED-X Monitor no heart rate beep type</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_AED_X_Monitor_NoHeartRate_Continous">
+            <English>Continous tone</English>
+        </Key>
+        <Key ID="STR_kat_circulation_SETTING_AED_X_Monitor_NoHeartRate_Alternating">
+            <English>Alternating tone</English>
+        </Key>
     </Package>
 </Project>
