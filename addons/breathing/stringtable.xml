@@ -1237,5 +1237,11 @@
             <Korean>깜빡임 경고 표시 및 스태미나 손실 효과를 얻게 되는 산소포화도 값을 변경합니다.</Korean>
             <Italian>Ti permette di cambiare il valore di SPO2 al quale ricevi l'indicatore lampeggiante d'allerta e l'effetto di perdita della stamina </Italian>
         </Key>
+        <Key ID="STR_kat_breathing_PulseOximeter_Action_addSound">
+            <English>Enable Pulse Oximeter Alarm</English>
+        </Key>
+        <Key ID="STR_kat_breathing_PulseOximeter_Action_removeSound">
+            <English>Disable Pulse Oximeter Alarm</English>
+        </Key>
     </Package>
 </Project>

@@ -19,5 +19,6 @@
 params ["_medic", "_patient"];
 
 _patient setVariable [QGVAR(pulseoximeter), false, true];
+_medic setVariable [QGVAR(PulseOximeter_Volume), _patient getVariable QGVAR(PulseOximeter_VolumePatient), true];
 
 [_medic, "kat_Pulseoximeter", 1] call ACEFUNC(common,addToInventory);
