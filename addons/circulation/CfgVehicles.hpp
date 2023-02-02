@@ -105,7 +105,7 @@ class CfgVehicles {
                     statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_Volume), false, true)]);
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
-                    icon = "";
+                    icon = QPATHTOF(ui\X_Series-Device_W.paa);
                 };
                 class addSound {
                     displayName = CSTRING(X_Action_addSound);
@@ -113,7 +113,7 @@ class CfgVehicles {
                     statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_Volume), true, true)]);
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
-                    icon = "";
+                    icon = QPATHTOF(ui\X_Series-Device_W.paa);
                 };
                 class openCrossPanel {
                     displayName = CSTRING(open_crosspanel);

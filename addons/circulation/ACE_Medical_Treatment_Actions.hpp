@@ -5,7 +5,6 @@ class ACE_Medical_Treatment_Actions {
     class CPR {
         condition = QUOTE(([ARR_2(_medic,_patient)] call ace_medical_treatment_fnc_canCPR) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
     };
-
     class CheckDogtags: CheckPulse {
         displayName = CSTRING(DogTag);
         displayNameProgress = CSTRING(DogTag_Action);
@@ -152,5 +151,25 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(vehicleTrue), true)]) && (_patient getVariable [ARR_2(QQGVAR(X), true)]));
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, false)] call FUNC(returnAED_X));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
+    };
+    class DisableAEDXAudio: CheckPulse {
+        displayName = CSTRING(X_Action_removeSound);
+        displayNameProgress = "";
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+        allowedSelections[] = {"Body"};
+        treatmentTime = 0.01;
+        allowSelfTreatment = 0;
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) && (_patient getVariable [ARR_2(QQGVAR(AED_X_VolumePatient), false)]));
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(AED_X_VolumePatient), false, true)]);
+        animationPatient = "";
+        animationMedic = "";
+    };
+    class EnableAEDXAudio: DisableAEDXAudio {
+        displayName = CSTRING(X_Action_addSound);
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) && !(_patient getVariable [ARR_2(QQGVAR(AED_X_VolumePatient), false)]));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(AED_X_VolumePatient), true, true)]);
     };
 };

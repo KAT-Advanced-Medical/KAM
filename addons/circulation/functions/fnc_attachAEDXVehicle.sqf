@@ -106,8 +106,8 @@ if ((_patient getVariable [QACEGVAR(medical,heartRate), 0] isEqualTo 0) && {_pat
 // spawns the heart rate beep.
 [_patient, _medic] spawn {
     params ["_patient", "_medic"];
-    while {_patient getVariable [QGVAR(X), false] && _patient getVariable [QGVAR(AED_X_VolumePatient), false]} do {
-        if (GVAR(DeactMon_whileAED_X) && _patient getVariable [QGVAR(AEDinUse), false]) then {
+    while {_patient getVariable [QGVAR(X), false]} do {
+        if (GVAR(DeactMon_whileAED_X) && _patient getVariable [QGVAR(AEDinUse), false] || !(_patient getVariable [QGVAR(AED_X_VolumePatient), false])) then {
         //No Beep for you atm
         } else {
             private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
@@ -126,8 +126,8 @@ if ((_patient getVariable [QACEGVAR(medical,heartRate), 0] isEqualTo 0) && {_pat
 
 [_patient, _medic] spawn {
     params ["_patient", "_medic"];
-    while {_patient getVariable [QGVAR(X), false] && _patient getVariable [QGVAR(AED_X_VolumePatient), false]} do {
-        if (GVAR(DeactMon_whileAED_X) && _patient getVariable [QGVAR(AEDinUse), false]) then {
+    while {_patient getVariable [QGVAR(X), false]} do {
+        if (GVAR(DeactMon_whileAED_X) && _patient getVariable [QGVAR(AEDinUse), false] || !(_patient getVariable [QGVAR(AED_X_VolumePatient), false])) then {
         } else {
             private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
             private _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];
