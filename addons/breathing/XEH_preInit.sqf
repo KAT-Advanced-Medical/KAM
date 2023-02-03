@@ -185,7 +185,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(PNEUMOTHORAX_DAMAGE_THRESHOLD), LLSTRING(PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [0, 1, 0.4, 1],
+    [0, 1, 0.4, 2],
     true
 ] call CBA_Settings_fnc_init;
 

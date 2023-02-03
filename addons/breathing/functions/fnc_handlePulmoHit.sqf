@@ -25,7 +25,7 @@
 
 if (!(GVAR(enable)) || !(_bodyPart isEqualTo "Body") || !(_ammo isKindOF "BulletBase")) exitWith {};
 //Other mods can utilise KAT_Pneumothorax_Exclusion variable to prevent Pneumothorax from happening
-if ((_damage < GVAR(pneumothoraxDamageThreshold)) || (GVAR(pneumothorax) isEqualTo 0) || (_unit getVariable ["KAT_Pneumothorax_Exclusion", false])) exitWith {};
+if ((_damage < GVAR(pneumothoraxDamageThreshold)) || (_unit getVariable ["KAT_Pneumothorax_Exclusion", false])) exitWith {};
 
 private _hemo = _unit getVariable [QGVAR(hemopneumothorax), false];
 private _tension = _unit getVariable [QGVAR(tensionpneumothorax), false];
