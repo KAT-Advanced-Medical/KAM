@@ -20,14 +20,15 @@ params ["_unit","_body"];
 
 if (_unit != player) exitWith {};
 
+private _pb = _unit getVariable [QGVAR(bloodTypePlayer), "O"];
 private _b = "O";
 
 switch(GVAR(bloodTypeSetting)) do {
     case 1: {// forced player bloodtype
         if(isNull _body) then {
-            _b = GVAR(bloodTypeSettingPlayer);
+            _b = _pb;
         } else {
-            _b = _body getVariable [QGVAR(bloodtype), GVAR(bloodTypeSettingPlayer)];
+            _b = _body getVariable [QGVAR(bloodtype), _pb];
         };
     };
     case 2: {// random bloodtype
@@ -45,7 +46,7 @@ switch(GVAR(bloodTypeSetting)) do {
                 _b = selectRandom ["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"];
             };
         } else {
-            _b = _body getVariable [QGVAR(bloodtype), GVAR(bloodTypeSettingPlayer)];
+            _b = _body getVariable [QGVAR(bloodtype), _pb];
         };
     };
     case 4: {// steamid bloodtype
@@ -64,7 +65,7 @@ switch(GVAR(bloodTypeSetting)) do {
             };
 
         } else {
-            _b = GVAR(bloodTypeSettingPlayer); 
+            _b = _pb; 
         }; 
     };
     case 5: {// steamid custom list bloodtype
@@ -73,10 +74,10 @@ switch(GVAR(bloodTypeSetting)) do {
             private _bl = GVAR(bloodTypeCustomList) splitString ",";
             _b = _bl select _id;
         } else {
-            _b = GVAR(bloodTypeSettingPlayer); 
+            _b = _pb; 
         }; 
     };
-    default { _b = GVAR(bloodTypeSettingPlayer); };
+    default { _b = _pb; };
 };
 
 _b;

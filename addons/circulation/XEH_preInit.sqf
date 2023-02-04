@@ -56,7 +56,7 @@ PREP_RECOMPILE_END;
     [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], 7],
     2,
     {
-        //player setVariable [QGVAR(bloodtype), _this, true];
+        player setVariable [QGVAR(bloodTypePlayer), _this, true];
         player setVariable [QACEGVAR(dogtags,dogtagData), nil, true];
     },
     false
