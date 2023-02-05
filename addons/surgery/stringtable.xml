@@ -575,6 +575,12 @@
             <Japanese>単純骨折の可能性を設定します。また、開放骨折の可能性を設定します (単純骨折60% = 開放骨折40%)</Japanese>
             <Spanish>Establece la probabilidad para fracturas simples. También establece la probabilidad de fracturas complejas (60% Simple - 40% Compleja)</Spanish>
         </Key>
+        <Key ID="STR_kat_surgery_CLOSED_REDUCTION_FAIL">
+            <English>Closed reduction fail chance</English>
+        </Key>
+        <Key ID="STR_kat_surgery_CLOSED_REDUCTION_FAIL_DESC">
+            <English>Chance that closed reduction will fail. Default value 10%</English>
+        </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
             <Chinesesimp>复合骨折几率</Chinesesimp>
