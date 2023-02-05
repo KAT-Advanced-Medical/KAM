@@ -224,20 +224,22 @@ if (EGVAR(pharma,coagulation)) then {
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     
-    ["PDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
-	["EDF"] call ace_advanced_fatigue_fnc_removeDutyFactor;
+    ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+	["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
 
 } else {
 
-    _patient enableStamina true;
-	_patient setAnimSpeedCoef 1;
-    _patient setCustomAimCoef 1;
+    _unit enableStamina true;
+	_unit setAnimSpeedCoef 1;
+    _unit setCustomAimCoef 1;
 
 };
 
-/// Clear chroma effect
+/// Clear chroma effect & camera shake
 
+resetCamShake;
 ["ChromAberration", 200, [ 0, 0, true ]] spawn
 {
     params["_name", "_priority", "_effect", "_handle"];
@@ -253,7 +255,6 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
     _handle ppEffectEnable true;
     _handle ppEffectAdjust _effect;
     _handle ppEffectCommit 0;
-    addCamShake[0, 0, 50];
     [
         {
             params["_handle"];
@@ -265,4 +266,13 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
             ppEffectDestroy _handle;
         },
     [_handle]] call CBA_fnc_waitUntilAndExecute;
+};
+
+// Reenable ace fatige animationspeed override
+
+if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
+    _index = ACEGVAR(advanced_fatigue,setAnimExclusions) find "PervitinOverride";
+    if (_index != -1) then {
+        ACEGVAR(advanced_fatigue,setAnimExclusions) deleteAt _index;
+    };
 };

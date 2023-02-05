@@ -1091,6 +1091,14 @@
             <Korean>페르피틴이 무기의 흔들림에 영향을 미치는지의 여부를 활성화합니다.</Korean>
             <Italian>Attiva se il pervitin debba influenzare l'oscillazione dell'arma</Italian>
         </Key>
+        <Key ID="STR_KAT_pharma_SETTING_PervitinSpeed_displayName">
+            <English>Pervitin Speed Boost</English>
+            <German>Pervitin Geschwindigkeits Boost</German>
+        </Key>
+        <Key ID="STR_KAT_pharma_SETTING_PervitinSpeed_DESC">
+            <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
+            <German>Geschindigkeit die in Phase 1 von Pervitin gesetzt wird. (1 = normal, 2 = doppelt)</German>
+        </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>
             <German>Aktiviere Chromatische Abweichungen</German>

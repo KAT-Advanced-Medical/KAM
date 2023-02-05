@@ -30,6 +30,11 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 3000;
 		["PDF", 0] call ACEFUNC(advanced_fatigue,addDutyFactor);
 		[LLSTRING(Pervitin_start), 2, _patient] call ACEFUNC(common,displayTextStructured); 
+
+		if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
+        	ACEGVAR(advanced_fatigue,setAnimExclusions) pushBack "PervitinOverride";
+    	};
+		_patient setAnimSpeedCoef (GVAR(pervitinSpeed));
 	},
 	[_patient], 10] call CBA_fnc_waitAndExecute;
 
@@ -40,6 +45,14 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		if !(alive _patient) exitWith {};
 		["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
 		[LLSTRING(Pervitin_mid), 2, _patient] call ACEFUNC(common,displayTextStructured);
+
+		_patient setAnimSpeedCoef 1;
+		if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
+			_index = ACEGVAR(advanced_fatigue,setAnimExclusions) find "PervitinOverride";
+			if (_index != -1) then {
+				ACEGVAR(advanced_fatigue,setAnimExclusions) deleteAt _index;
+			};
+		};
 	},
 	[_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
 
@@ -189,7 +202,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		params ["_patient"];
 
 		if !(alive _patient) exitWith {};
-		_patient setAnimSpeedCoef 1.2;
+		_patient setAnimSpeedCoef (GVAR(pervitinSpeed));
 		_patient enableStamina false;
 		[LLSTRING(Pervitin_start), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
@@ -221,20 +234,28 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 		params ["_patient"];
 
 		if !(alive _patient) exitWith {};
-		_patient setStamina(getStamina _patient + 150);
+		_patient setStamina(getStamina _patient + 300);
 		[LLSTRING(Pervitin_mid3), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
 	[_patient], 360] call CBA_fnc_waitAndExecute; /// 6m
-
 
 	[{
 		params ["_patient"];
 
 		if !(alive _patient) exitWith {};
 		_patient setStamina(getStamina _patient - 60);
-		[LLSTRING(Pervitin_end), 2, _patient] call ACEFUNC(common,displayTextStructured);
+		[LLSTRING(Pervitin_mid4), 2, _patient] call ACEFUNC(common,displayTextStructured);
 	},
 	[_patient], 510] call CBA_fnc_waitAndExecute; /// 8:30m
+
+
+	[{
+		params ["_patient"];
+
+		if !(alive _patient) exitWith {};
+		[LLSTRING(Pervitin_end), 2, _patient] call ACEFUNC(common,displayTextStructured);
+	},
+	[_patient], 600] call CBA_fnc_waitAndExecute; /// 10m
 
 	///Weapon sway normal arma
 
@@ -246,7 +267,6 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 			if !(alive _patient) exitWith {};
 			_patient setCustomAimCoef 1;
 			_patient setCustomAimCoef(getCustomAimCoef _patient) - 0.7;
-			[LLSTRING(Pervitin_WeaponSway), 2, _patient] call ACEFUNC(common,displayTextStructured);
 		},
 		[_patient], 15] call CBA_fnc_waitAndExecute;
 
@@ -293,7 +313,6 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 			if !(alive _patient) exitWith {};
 			_patient setCustomAimCoef(getCustomAimCoef _patient) + 0.3;
-			[LLSTRING(Pervitin_WeaponSway2), 2, _patient] call ACEFUNC(common,displayTextStructured);
 
 		},
 		[_patient], 210] call CBA_fnc_waitAndExecute;
@@ -334,62 +353,12 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
 			if !(alive _patient) exitWith {};
 			_patient setCustomAimCoef 1;
-			[LLSTRING(Pervitin_WeaponSway3), 2, _patient] call ACEFUNC(common,displayTextStructured);
 
 		},
 		[_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
 	};
 };
 
-/// ChromAberration effect
+/// ChromAberration & CamShake effect
 
-if (GVAR(chromatic_aberration_checkbox_pervitin)) then {
-	[
-		{
-			params ["_patient"];
-
-			if !(alive _patient) exitWith {};
-			["ChromAberration", 200, [ (GVAR(chromatic_aberration_slider_pervitin)/100), (GVAR(chromatic_aberration_slider_pervitin)/100), true ], _patient] spawn {
-
-				params["_name", "_priority", "_effect", "_patient"];
-				private "_handle";
-				while {
-					_handle = ppEffectCreate[_name, _priority];
-					_handle < 0
-				} do {
-					_priority = _priority + 1;
-				};
-				_handle ppEffectEnable true;
-				_handle ppEffectAdjust _effect;
-				_handle ppEffectCommit 515; /// Wearoff after 9m
-				[LLSTRING(Pervitin_chrom), 2, _patient] call ACEFUNC(common,displayTextStructured);
-				
-				[
-					{
-						params["_name", "_priority", "_effect", "_handle","_patient"];
-
-						if !(alive _patient) exitWith {};
-						[LLSTRING(Pervitin_chrom2), 2, _patient] call ACEFUNC(common,displayTextStructured);
-						addCamShake[0.7, 240, 2]; /// Wearoff after 9m
-						[
-							{ 	params ["_handle"];
-								ppEffectCommitted _handle;
-								
-							},
-							{	params ["_handle", "_patient"];
-								[LLSTRING(Pervitin_chrom3), 2, _patient] call ACEFUNC(common,displayTextStructured);
-								_handle ppEffectEnable false;
-								ppEffectDestroy _handle;
-							},
-							[_handle, _patient]
-						] call CBA_fnc_waitUntilAndExecute;
-					},
-					[_name, _priority, _effect, _handle, _patient],
-					275 /// Trigger after 5m
-				] call CBA_fnc_waitAndExecute;
-			};
-		},
-		[_patient],
-		25 ///25s chroma start
-	] call CBA_fnc_waitAndExecute;
-};
+[QGVAR(pervitinPP), [_patient], _patient] call CBA_fnc_targetEvent;
