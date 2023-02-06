@@ -104,7 +104,7 @@
             <French>L'haleine du patient est légèrement fruitée</French>
             <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
             <German>Der Atem des Patienten ist leicht fruchtig</German>
-            <Japanese>患者の息は少し酸っぱく果物的です</Japanese>
+            <Japanese>患者の息は少し果物的です</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_breath_good">
@@ -176,7 +176,7 @@
             <French>Effectuer une réduction fermée</French>
             <Korean>골절 폐쇄정복 수행</Korean>
             <German>Geschlossene Reduktion durchführen</German>
-            <Japanese>非観血的整復を実行</Japanese>
+            <Japanese>非観血的整復術を実行</Japanese>
             <Spanish>Realizar Reducción Cerrada</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_fracture_open">
@@ -188,7 +188,7 @@
             <French>Effectuer une réduction ouverte</French>
             <Korean>골절 개방정복 수행</Korean>
             <German>Offene Reduktion durchführen</German>
-            <Japanese>観血的整復を実行</Japanese>
+            <Japanese>観血的整復術を実行</Japanese>
             <Spanish>Realizar Reducción Abierta</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_fracture_log">
@@ -296,7 +296,7 @@
             <French>Rétracteur</French>
             <Korean>리트랙터</Korean>
             <German>Retraktor</German>
-            <Japanese>開創器</Japanese>
+            <Japanese>開創器 (ランゲンベック)</Japanese>
             <Spanish>Retractor</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Retractor_DescShort">
@@ -307,7 +307,7 @@
             <French>Utilisé pour séparer les bords d'une plaie et exposer les factures</French>
             <Korean>골절 확장 및 노출하는 데 사용됩니다.</Korean>
             <German>Zur Erweiterung und Freilegung von Frakturen</German>
-            <Japanese>骨折を広げて露出させるために使用されます</Japanese>
+            <Japanese>傷口を広げて骨折部を露出させるために使用されます</Japanese>
             <Spanish>Usado para expandir y exponer heridas</Spanish>
             <Polish>Służy do rozszerzania i odsłonień złamań</Polish>
         </Key>
@@ -416,7 +416,7 @@
             <French>Plaque à os</French>
             <Korean>본 플레이트</Korean>
             <German>Knochenplatte</German>
-            <Japanese>骨接合プレート</Japanese>
+            <Japanese>骨接合板</Japanese>
             <Spanish>Placa de fijación</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Plate_DescShort">
@@ -440,7 +440,7 @@
             <French>Débrider les plaies</French>
             <Korean>상처 제거</Korean>
             <German>Wunddebridement</German>
-            <Japanese>創面を切除する</Japanese>
+            <Japanese>創面切除</Japanese>
             <Spanish>Desbridar heridas</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Debride_Action">
@@ -464,7 +464,7 @@
             <French>Pansement sous vide</French>
             <Korean>진공 드레싱</Korean>
             <German>Vakuumverband</German>
-            <Japanese>吸引ドレッシング</Japanese>
+            <Japanese>吸引ドレッシング(NPWT)</Japanese>
             <Spanish>Vendaje al vacío</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_DescShort">
@@ -475,7 +475,7 @@
             <French>Utilisé pour panser et sceller compètement les plaies</French>
             <Korean>상처를 완전히 치료하고 봉합하는 데 사용됩니다</Korean>
             <German>Zum vollständigen Verbinden und Abdichten von Wunden</German>
-            <Japanese>傷を完全に包んで密封するために使用される</Japanese>
+            <Japanese>傷を完全に包んで密封する陰圧閉鎖療法のために使用される</Japanese>
             <Spanish>Usado para vendar y sellar heridas completamente</Spanish>
             <Polish>Używany do całkowitego uzdrowienia ran</Polish>
         </Key>
@@ -488,7 +488,7 @@
             <French>Appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용</Korean>
             <German>NPWT-Verband anlegen</German>
-            <Japanese>陰圧閉鎖療法(NPWT)を適用する</Japanese>
+            <Japanese>吸引ドレッシング(NPWT)を使う</Japanese>
             <Spanish>Colocar vendaje al vacío</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Vacuum_Action">
@@ -577,9 +577,11 @@
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_REDUCTION_FAIL">
             <English>Closed reduction fail chance</English>
+            <Japanese>非観血的整復術の失敗率</Japanese>
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
+            <Japanese>非観血的整復術の失敗率を設定します。デフォルト値は10%です</Japanese>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
@@ -638,7 +640,7 @@
             <French>Temps pour effectuer une réduction fermée</French>
             <Korean>폐쇄 정복 수행 시간</Korean>
             <German>Zeit für die Durchführung geschlossener Repositionen</German>
-            <Japanese>非観血的整復にかかる時間</Japanese>
+            <Japanese>非観血的整復術にかかる時間</Japanese>
             <Spanish>Tiempo para realizar reducciones cerradas</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_OPEN_TIMER">
@@ -650,7 +652,7 @@
             <French>Temps pour effectuer une réduction ouverte</French>
             <Korean>개방정복 수행 시간</Korean>
             <German>Zeit für die Durchführung offener Repositionen</German>
-            <Japanese>観血的整復にかかる時間</Japanese>
+            <Japanese>観血的整復術にかかる時間</Japanese>
             <Spanish>Tiempo para realizar reducciones abiertas</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_SURGICAL_TIMER">
@@ -770,7 +772,7 @@
             <French>Niveau médical requis pour effectuer une réduction fermée</French>
             <Korean>폐쇄정복을 하는 데 필요한 의료 레벨 수준</Korean>
             <German>Erforderliches medizinisches Training für die geschlossene Reposition</German>
-            <Japanese>非観血的整復に必要な医療レベル</Japanese>
+            <Japanese>非観血的整復術に必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para realizar una reducción cerrada</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_SURGICAL_ACTION_MEDLEVEL">
@@ -818,7 +820,7 @@
             <French>Lieu des réductions ouvertes / chirurgies</French>
             <Korean>개방정복 및 수술 장소</Korean>
             <German>Ort für die offene Reposition/chirurgischer Eingriff</German>
-            <Japanese>観血的整復・手術が可能な場所</Japanese>
+            <Japanese>観血的整復術・手術が可能な場所</Japanese>
             <Spanish>Zona para reducciones abiertas/Acciones quirúrgicas</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_SETTING_SELF_CHECKFRACTURE">

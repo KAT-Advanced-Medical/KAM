@@ -29,7 +29,7 @@
             <Turkish>Ölümcül SpO2 değeri</Turkish>
             <Italian>Valore letale di SpO2</Italian>
             <Russian>Смертельное значение SpO2</Russian>
-            <Japanese>致命的なSpO2値</Japanese>
+            <Japanese>SpO2の致命値</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_SpO2_dieActive">
             <English>Activate lethal SpO2 value</English>
@@ -44,7 +44,7 @@
             <Turkish>Ölümcül SpO2 değerini etkinleştir</Turkish>
             <Italian>Attivare il valore letale di SpO2</Italian>
             <Russian>Активировать летальное значение SpO2</Russian>
-            <Japanese>致命的なSpO2値を有効化</Japanese>
+            <Japanese>SpO2の致命値を有効化</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
@@ -124,7 +124,7 @@
             <Turkish>Nabız Oksimetresini Takın&gt;</Turkish>
             <Italian>Collegare pulsossimetro</Italian>
             <Russian>Прикрепите пульсоксиметр</Russian>
-            <Japanese>パルスオキシメータを取り付ける</Japanese>
+            <Japanese>パルスオキシメーターを取り付ける</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Display_Remove">
             <English>Remove Pulse Oximeter</English>
@@ -139,7 +139,7 @@
             <Turkish>Nabız Oksimetresini Çıkarın</Turkish>
             <Italian>Rimuovere pulsossimetro</Italian>
             <Russian>Удалить пульсоксиметр</Russian>
-            <Japanese>パルスオキシメータを取り外します</Japanese>
+            <Japanese>パルスオキシメーターを取り外します</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_Pulseoximeter_Desc_Short">
             <English>Pulse Oximeter</English>
@@ -199,7 +199,7 @@
             <Turkish>Nabız Oksimetresi: HR: %1 SpO2: %2</Turkish>
             <Italian>Pulsossimetro: HR: %1 SpO2: %2</Italian>
             <Russian>Пульсоксиметр: ЧСС: %1 SpO2: %2</Russian>
-            <Japanese>パルスオキシメータ: HR: %1 SpO2: %2</Japanese>
+            <Japanese>パルスオキシメーター: HR: %1 SpO2: %2</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -392,7 +392,7 @@
             <Turkish>Sıvıyı Boşaltın</Turkish>
             <Italian>Drenare il liquido</Italian>
             <Russian>Слить жидкость</Russian>
-            <Japanese>胸腔排液治療</Japanese>
+            <Japanese>胸腔ドレナージ</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_hemopneumothorax_mm">
             <English>1x Hemopneumothorax</English>
@@ -588,7 +588,7 @@
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Italian>Il livello medico minimo richiesto per eseguire la decompressione con ago e il drenaggio dei fluidi, necessari per il trattamento di un emotorace o pneumotorace iperteso</Italian>
             <Russian>Минимальный медицинский уровень, необходимый для того, чтобы кто-то мог выполнять лечебные действия «Декомпрессия иглой» и «Дренаж жидкости», используемые для лечения гемоторакса или напряженного пневмоторакса.</Russian>
-            <Japanese>胸腔穿刺減圧および胸腔排液治療に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>胸腔穿刺減圧および胸腔ドレナージに訓練レベルを必要とさせます。</Japanese>
         </Key>
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
             <English>Pneumothorax Damage Threshold</English>
@@ -1051,7 +1051,7 @@
             <German>Schwere Zyanose - Standardwert 66 SpO2 \nSollte etwas höher sein als der tödliche SpO2-Wert</German>
             <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
             <Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO2 \nДолжно быть немного выше летального значения SpO2</Russian>
-            <Japanese>重度のチアノーゼが発症するSpO2の値 - デフォルトはSpO2 66\n致命的なSpO2値より少し高く設定する必要があります</Japanese>
+            <Japanese>重度のチアノーゼが発症するSpO2の値 - デフォルトはSpO2 66\nSpO2の致命値より少し高く設定する必要があります</Japanese>
             <Chinesesimp>面色发紫的SpO2值 -默认66\n致命的SpO2值至少要低于此值</Chinesesimp>
             <Korean>심각한 치아노제의 값입니다 - 기본값은 SpO2 66 \n반드시 사망하게 되는 SpO2 값보다 아주 조금 높아야 합니다</Korean>
             <French>Valeur de la cyanose grave - 66 SpO2 par défaut \nCette valeur devrait être un peu plus haute que la valeur de SpO2 létale.</French>
