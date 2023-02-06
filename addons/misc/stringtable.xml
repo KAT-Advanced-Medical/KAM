@@ -368,5 +368,13 @@
             <German>Aktiviere Medizin-Kategorie für das Arsenal und verschiebe alle medizinischen Gegenstände dort hin?</German>
             <Korean>아스널의 의료 카테고리를 활성화하고 모든 의료 관련 아이템을 아스널로 재배치합니까?</Korean>
         </Key>
+        <Key ID="STR_kat_misc_Stretcher_Display">
+            <English>Stretcher</English>
+            <Japanese>担架</Japanese>
+        </Key>
+        <Key ID="STR_kat_misc_StretcherPacked_Display">
+            <English>Stretcher (Packed)</English>
+            <Japanese>担架(折り畳み)</Japanese>
+        </Key>
     </Package>
 </Project>

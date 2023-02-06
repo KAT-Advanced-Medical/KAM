@@ -48,7 +48,7 @@ class CfgVehicles {
     class weapon_bag_base;
     class kat_stretcherBag: weapon_bag_base {
         class assembleInfo {
-            displayName = "Stretcher";
+            displayName = CSTRING(Stretcher_Display);
             assembleTo = "kat_stretcher";
             base = "";
             primary = 1;
@@ -58,7 +58,7 @@ class CfgVehicles {
         scope = 2;
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_DismantledWeapons";
-        displayName = "Stretcher (Packed)";
+        displayName = CSTRING(StretcherPacked_Display);
         mass = 60;
     };
 
@@ -77,7 +77,7 @@ class CfgVehicles {
         accuracy = 0.001;
         camouflage = 10;
         armor = 20;
-        displayName = "Stretcher";
+        displayName = CSTRING(Stretcher_Display);
         model = QPATHTOF(models\stretcher\vurtual_stretcher.p3d);
         simulation = "tankX";
         crewVulnerable = 1;
