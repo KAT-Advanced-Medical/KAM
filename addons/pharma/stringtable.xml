@@ -1094,10 +1094,12 @@
         <Key ID="STR_KAT_pharma_SETTING_PervitinSpeed_displayName">
             <English>Pervitin Speed Boost</English>
             <German>Pervitin Geschwindigkeits Boost</German>
+            <Korean>페르피틴 속도 부스트</Korean>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_PervitinSpeed_DESC">
             <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
             <German>Geschindigkeit die in Phase 1 von Pervitin gesetzt wird. (1 = normal, 2 = doppelt)</German>
+            <Korean>페르피틴 효과 1단계에서 설정되는 애니메이션 속도. (1 = 정상, 2 = 두 배)</Korean>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>

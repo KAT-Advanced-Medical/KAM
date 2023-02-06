@@ -577,9 +577,11 @@
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_REDUCTION_FAIL">
             <English>Closed reduction fail chance</English>
+            <Korean>폐쇄정복 실패 확률</Korean>
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
+            <Korean>폐쇄정복을 실패할 확률입니다. 기본값은 10%</Korean>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
