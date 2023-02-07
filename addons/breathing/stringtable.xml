@@ -809,7 +809,7 @@
             <French>Valeur SpO2 sous laquelle on tombe inconscient</French>
             <Turkish>Bu değerin altına düştüğünde bilinç kaybına neden olacak SpO2 değeri</Turkish>
             <Italian>Valore di SpO2 sotto il quale causa la perdita di coscienza</Italian>
-            <Japanese>SpO2(血中酸素濃度)が設定した値を下回ると気絶し、無意識状態に陥ります。</Japanese>
+            <Japanese>SpO2(血酸素飽和度)が設定した値を下回ると気絶し、無意識状態に陥ります。</Japanese>
             <Russian>Значение SpO2, которое приведет к потере сознания при падении ниже этого значения</Russian>
         </Key>
         <Key ID="STR_kat_breathing_showPneumothorax_dupe">

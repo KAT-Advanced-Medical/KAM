@@ -80,7 +80,7 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の息はきつく金属的です</Japanese>
+            <Japanese>患者の息はきつく金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_breath_stink">
@@ -92,7 +92,7 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の息はきつく金属的です</Japanese>
+            <Japanese>患者の息はきつく金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_breath_mild">
@@ -104,7 +104,7 @@
             <French>L'haleine du patient est légèrement fruitée</French>
             <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
             <German>Der Atem des Patienten ist leicht fruchtig</German>
-            <Japanese>患者の息は少し果物的です</Japanese>
+            <Japanese>患者の息は少し果物臭がします</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_breath_good">
@@ -344,7 +344,7 @@
             <French>Clamp</French>
             <Korean>클램프</Korean>
             <German>Klemme</German>
-            <Japanese>クランプ</Japanese>
+            <Japanese>鉗子 (クランプ)</Japanese>
             <Spanish>Pinza de sujeción</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_DescShort">
@@ -368,7 +368,7 @@
             <French>Clamper la fracture</French>
             <Korean>골절 클램프하기</Korean>
             <German>Klammern der Fraktur</German>
-            <Japanese>骨折をクランプする</Japanese>
+            <Japanese>骨折をクランプ (箝搾) する</Japanese>
             <Spanish>Alinear trozos</Spanish>
         </Key>
         <Key ID="STR_kat_surgery_Clamp_Action">
