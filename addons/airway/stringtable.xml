@@ -872,7 +872,7 @@
             <Turkish>Renkli aktivite günlükleri (AED-X / Pulseoximeter)</Turkish>
             <Italian>Logs di attività colorati (AED-X/Pulsossimetro)</Italian>
             <Russian>Цветные журналы активности (AED-X/пульсоксиметр)</Russian>
-            <Japanese>色付きの活動ログ (AED-X /パルスオキシメーター)</Japanese>
+            <Japanese>色付きの活動ログ(AED-X /パルスオキシメーター)</Japanese>
         </Key>
         <Key ID="STR_kat_airway_COLORED_LOGS_DESC">
             <English>Colors the Activitylogs of AED-X or Pulseoximeter red, if any value is critical</English>
