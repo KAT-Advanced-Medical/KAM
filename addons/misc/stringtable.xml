@@ -371,10 +371,32 @@
         <Key ID="STR_kat_misc_Stretcher_Display">
             <English>Stretcher</English>
             <Japanese>担架</Japanese>
+            <Chinese>擔架</Chinese>
+            <Chinesesimp>担架</Chinesesimp>
+            <Czech>Nosítka</Czech>
+            <French>Civière</French>
+            <German>Krankentrage</German>
+            <Italian>Barella</Italian>
+            <Korean>담가</Korean>
+            <Polish>Nosze</Polish>
+            <Russian>Носилки</Russian>
+            <Spanish>Camilla</Spanish>
+            <Turkish>Sedye</Turkish>
         </Key>
         <Key ID="STR_kat_misc_StretcherPacked_Display">
             <English>Stretcher (Packed)</English>
-            <Japanese>担架(折り畳み)</Japanese>
+            <Japanese>担架 (折り畳み)</Japanese>
+            <Chinese>擔架（打包）</Chinese>
+            <Chinesesimp>担架（打包）</Chinesesimp>
+            <Czech>Nosítka (Zabalená)</Czech>
+            <French>Civière (Emballée)</French>
+            <German>Krankentrage (Gepackt)</German>
+            <Italian>Barella (Imballo)</Italian>
+            <Korean>들것 (포장됨)</Korean>
+            <Polish>Nosze (Zapakowane)</Polish>
+            <Russian>Носилки (упакованные)</Russian>
+            <Spanish>Camilla (Empacada)</Spanish>
+            <Turkish>Sedye (Paketli)</Turkish>
         </Key>
     </Package>
 </Project>
