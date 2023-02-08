@@ -9,7 +9,7 @@
             <Chinese>服用中</Chinese>
             <Chinesesimp>使用中</Chinesesimp>
             <Czech>Používám</Czech>
-            <Korean>사용중</Korean>
+            <Korean>사용 중</Korean>
             <French>Utilisation</French>
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Usando</Italian>
@@ -23,7 +23,7 @@
             <Chinese>服用中</Chinese>
             <Chinesesimp>推注中</Chinesesimp>
             <Czech>Aplikuji</Czech>
-            <Korean>사용중</Korean>
+            <Korean>사용 중</Korean>
             <French>Administration</French>
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Somministrando</Italian>
@@ -37,7 +37,7 @@
             <Chinese>%1 被插入一個 %2</Chinese>
             <Chinesesimp>%1 被推注 %2</Chinesesimp>
             <Czech>%1 aplikoval %2</Czech>
-            <Korean>%1 삽입됨 %2</Korean>
+            <Korean>%2 부위에 %1 사용됨</Korean>
             <French>%1 a administré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
@@ -51,7 +51,7 @@
             <Chinese>%1 被插入一個 %2</Chinese>
             <Chinesesimp>%1 被注射 %2</Chinesesimp>
             <Czech>%1 aplikoval %2</Czech>
-            <Korean>%1 삽입됨 %2</Korean>
+            <Korean>%2 부위에 %1 주사됨</Korean>
             <French>%1 a injecté un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
@@ -65,7 +65,7 @@
             <Chinese>%1 被插入一個 %2</Chinese>
             <Chinesesimp>%1 被使用 %2</Chinesesimp>
             <Czech>%1 aplikoval %2</Czech>
-            <Korean>%1 삽입됨 %2</Korean>
+            <Korean>%2 부위에 %1 사용됨</Korean>
             <French>%1 a utilisé un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
