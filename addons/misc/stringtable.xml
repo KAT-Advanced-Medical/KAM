@@ -9,7 +9,7 @@
             <Chinese>啟用ACE-雜項?</Chinese>
             <Chinesesimp>启用ACE-杂项</Chinesesimp>
             <Czech>ACE-Misc aktivováno?</Czech>
-            <Korean>ACE 음악 활성화</Korean>
+            <Korean>ACE-기타 활성화</Korean>
             <French>ACE-Misc activé?</French>
             <Turkish>ACE-Misc activated?</Turkish>
             <Italian>Attivare ACE-Misc?</Italian>
@@ -279,7 +279,7 @@
             <Chinese>可连接直升机</Chinese>
             <Chinesesimp>可连接担架</Chinesesimp>
             <Czech>Připevnitelná helinosítka</Czech>
-            <Korean>부착형 헬리스트레처</Korean>
+            <Korean>부착형 헬기용 들것</Korean>
             <French>Hélicivière amovible </French>
             <Turkish>Helitakılabilir sedye</Turkish>
             <Italian>Elibarella agganciabile</Italian>
@@ -294,7 +294,7 @@
             <Chinese>允许您在直升机上附加担架（双击）</Chinese>
             <Chinesesimp>允许您在直升机上附加担架（双击）</Chinesesimp>
             <Czech>Umožňuje připevnit nosítka na helikoptéru(Dvojtým kliknutím)</Czech>
-            <Korean>헬리콥터에 들것 부착 가능(더블 클릭)</Korean>
+            <Korean>헬기에 들것을 부착할 수 있습니다(더블 클릭)</Korean>
             <French>Vous permet d'attacher une civière sur hélicoptère (double clic)</French>
             <Turkish>Helikoptere sedye takmanızı sağlar(Çift tıklama)</Turkish>
             <Italian>Consente di collegare una barella sull'elicottero (doppio clic)</Italian>
