@@ -432,7 +432,7 @@
             <Korean>TXA</Korean>
             <Turkish>TXA</Turkish>
             <Czech>TXA</Czech>
-            <Japanese>トラネキサム酸(TXA)</Japanese>
+            <Japanese>トラネキサム酸 (TXA)</Japanese>
             <Russian>TXA</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Take_TXA">
@@ -447,7 +447,7 @@
             <Korean>TXA 투여</Korean>
             <Turkish>TXA'yı itin</Turkish>
             <Czech>Aplikovat TXA</Czech>
-            <Japanese>トラネキサム酸(TXA)を注入</Japanese>
+            <Japanese>トラネキサム酸 (TXA)を注入</Japanese>
             <Russian>Ввести TXA</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Norep_DescShort">
@@ -776,7 +776,7 @@
             <French>Cathéther intra-osseux</French>
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Sistema d'infusione intraossea</Italian>
-            <Japanese>骨内注射針</Japanese>
+            <Japanese>骨髄穿刺注射針</Japanese>
             <Russian>Внутривенное игла</Russian>
         </Key>
         <Key ID="STR_kat_pharma_Apply_IV_16">
@@ -1094,10 +1094,12 @@
         <Key ID="STR_KAT_pharma_SETTING_PervitinSpeed_displayName">
             <English>Pervitin Speed Boost</English>
             <German>Pervitin Geschwindigkeits Boost</German>
+            <Japanese>ペルビチン速度上昇</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_PervitinSpeed_DESC">
             <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
             <German>Geschindigkeit die in Phase 1 von Pervitin gesetzt wird. (1 = normal, 2 = doppelt)</German>
+            <Japanese>ペルビチン効果の第一段階でのアニメーションの再生速度を設定します (1 = 通常、2 = 2倍速)</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>
@@ -2128,7 +2130,7 @@
             <Korean>환자의 IV가 막힘</Korean>
             <German>Die IV des Patienten ist blockiert</German>
             <Chinesesimp>患者的IV受到阻塞</Chinesesimp>
-            <Japanese>患者の IV は閉塞している</Japanese>
+            <Japanese>患者のIVは閉塞している</Japanese>
             <Spanish>La IV del paciente esta bloqueada</Spanish>
         </Key>
         <Key ID="STR_kat_pharma_IVblock_clear">
@@ -2151,7 +2153,7 @@
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
             <Chinesesimp>病人的呼吸是沙哑的</Chinesesimp>
-            <Japanese>患者の息はきつく金属的です</Japanese>
+            <Japanese>患者の息はきつく金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
             <Polish>Oddech pacjenta jest ostry i metaliczny</Polish>
         </Key>
@@ -2163,7 +2165,7 @@
             <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
             <German>Der Atem des Patienten ist leicht fruchtig</German>
             <Chinesesimp>病人的呼吸是平和的</Chinesesimp>
-            <Japanese>患者の息は少し酸っぱく果物的です</Japanese>
+            <Japanese>患者の息は少し果物臭がします</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
             <Polish>Oddech pacjenta jest lekko owocowy</Polish>
         </Key>
