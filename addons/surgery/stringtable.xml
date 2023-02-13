@@ -583,7 +583,6 @@
         <Key ID="STR_kat_surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
             <Korean>폐쇄정복을 실패할 확률입니다. 기본값은 10%</Korean>
-
             <Japanese>非観血的整復術の失敗率を設定します。デフォルト値は10%です</Japanese>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
