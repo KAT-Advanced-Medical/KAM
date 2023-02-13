@@ -164,7 +164,7 @@
         <Key ID="STR_kat_airway_mitigatedObstruction">
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
-            <Japanese>軽減された</Japanese>
+            <Japanese>閉塞軽減中</Japanese>
             <Italian>Ostruzione attenuata</Italian>
             <Czech>Zmírněné zablokování</Czech>
             <Korean>막힘 완화됨</Korean>
@@ -602,7 +602,7 @@
             <Turkish>Laringeal Tüp'e izin ver</Turkish>
             <Italian>Permetti il tubo laringeo</Italian>
             <Russian>Разрешить гортанную трубку</Russian>
-            <Japanese>King LTの許可</Japanese>
+            <Japanese>喉頭エアウェイ(King LT)の許可</Japanese>
         </Key>
         <Key ID="STR_kat_airway_ALLOW_LARYNXTUBUS_DESC">
             <English>Training level required to use a Larynxtubus - KingLT</English>
@@ -617,7 +617,7 @@
             <Turkish>Laringeal Tüp'ü kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare il tubo laringeo</Italian>
             <Russian>Уровень подготовки, необходимый для использования гортанной трубки</Russian>
-            <Japanese>King LTの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>喉頭エアウェイ(King LT)の使用に訓練レベルを必要とさせます。</Japanese>
         </Key>
         <Key ID="STR_kat_airway_ALLOW_GUEDELTUBUS">
             <English>Allow Guedeltubus</English>
@@ -632,7 +632,7 @@
             <Turkish>Guedel Tüp'e izin ver</Turkish>
             <Italian>Permetti la canula di Guedel</Italian>
             <Russian>Разрешить гедельтубус</Russian>
-            <Japanese>ゲデルチューブの許可</Japanese>
+            <Japanese>口咽頭エアウェイ(ゲデルチューブ)の許可</Japanese>
         </Key>
         <Key ID="STR_kat_airway_ALLOW_GUEDELTUBUS_DESC">
             <English>Training level required to use a Guedeltubus</English>
@@ -647,7 +647,7 @@
             <Turkish>Guedel Tüp'ü kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare la canula di Guedel</Italian>
             <Russian>Уровень подготовки, необходимый для использования тубуса Геделя.</Russian>
-            <Japanese>ゲデルチューブの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>口咽頭エアウェイ(ゲデルチューブ)の使用に訓練レベルを必要とさせます。</Japanese>
         </Key>
         <Key ID="STR_kat_airway_ALLOW_ACCUVAC">
             <English>Allow Accuvac</English>
@@ -812,7 +812,7 @@
             <Turkish>Laringeal Tüp için Zaman</Turkish>
             <Italian>Tempo per il tubo laringeo</Italian>
             <Russian>Время гортанной трубки</Russian>
-            <Japanese>King LTにかかる時間</Japanese>
+            <Japanese>喉頭エアウェイ(King LT)にかかる時間</Japanese>
         </Key>
         <Key ID="STR_kat_airway_TIME_LARYNXTUBUS_DESC">
             <English>How long it will take to use Larynxtubus</English>
@@ -827,7 +827,7 @@
             <Turkish>Laringeal Tüp'ü kullanmak ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per posizionare il tubo laringeo</Italian>
             <Russian>Сколько времени потребуется, чтобы использовать гортанную трубку</Russian>
-            <Japanese>King LTを使用するのにどのくらい時間がかかるか設定します</Japanese>
+            <Japanese>喉頭エアウェイ(King LT)を使用するのにどのくらい時間がかかるか設定します</Japanese>
         </Key>
         <Key ID="STR_kat_airway_TIME_GUEDELTUBUS">
             <English>Time for Geudeltubus</English>
@@ -842,7 +842,7 @@
             <Turkish>Geudel Tüp zamanı</Turkish>
             <Italian>Tempo per la canula di Guedel</Italian>
             <Russian>Время для Гедель Тубус</Russian>
-            <Japanese>ゲデルチューブにかかる時間</Japanese>
+            <Japanese>口咽頭エアウェイ(ゲデルチューブ)にかかる時間</Japanese>
         </Key>
         <Key ID="STR_kat_airway_TIME_GUEDELTUBUS_DESC">
             <English>How long it will take to use Guedeltubus</English>
@@ -857,7 +857,7 @@
             <Turkish>Guedel Tüp'ü kullanmak ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per posizionare una canula di Guedel</Italian>
             <Russian>Сколько времени потребуется, чтобы использовать Гедель Тубус</Russian>
-            <Japanese>ゲデルチューブを使用するのにどのくらい時間がかかるか設定します</Japanese>
+            <Japanese>口咽頭エアウェイ(ゲデルチューブ)を使用するのにどのくらい時間がかかるか設定します</Japanese>
         </Key>
         <Key ID="STR_kat_airway_COLORED_LOGS">
             <English>Colored activitylogs (AED-X/Pulseoximeter)</English>
@@ -872,7 +872,7 @@
             <Turkish>Renkli aktivite günlükleri (AED-X / Pulseoximeter)</Turkish>
             <Italian>Logs di attività colorati (AED-X/Pulsossimetro)</Italian>
             <Russian>Цветные журналы активности (AED-X/пульсоксиметр)</Russian>
-            <Japanese>色付きの活動ログ (AED-X /パルスオキシメーター)</Japanese>
+            <Japanese>色付きの活動ログ(AED-X /パルスオキシメーター)</Japanese>
         </Key>
         <Key ID="STR_kat_airway_COLORED_LOGS_DESC">
             <English>Colors the Activitylogs of AED-X or Pulseoximeter red, if any value is critical</English>
