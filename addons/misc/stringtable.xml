@@ -377,7 +377,7 @@
             <French>Civière</French>
             <German>Krankentrage</German>
             <Italian>Barella</Italian>
-            <Korean>담가</Korean>
+            <Korean>들것</Korean>
             <Polish>Nosze</Polish>
             <Russian>Носилки</Russian>
             <Spanish>Camilla</Spanish>
@@ -392,10 +392,10 @@
             <French>Civière (Emballée)</French>
             <German>Krankentrage (Gepackt)</German>
             <Italian>Barella (Imballo)</Italian>
-            <Korean>들것 (포장됨)</Korean>
+            <Korean>들것 (포장되다)</Korean>
             <Polish>Nosze (Zapakowane)</Polish>
             <Russian>Носилки (упакованные)</Russian>
-            <Spanish>Camilla (Empacada)</Spanish>
+            <Spanish>Camilla (Plegada)</Spanish>
             <Turkish>Sedye (Paketli)</Turkish>
         </Key>
     </Package>
