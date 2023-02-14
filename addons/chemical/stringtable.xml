@@ -131,11 +131,11 @@
         </Key>
         <Key ID="STR_kat_chemical_ToxicGas_MFDNAME">
             <English>Toxic gas</English>
-            <German>Giftgas</German>
+            <German>Senfgas</German>
         </Key>
         <Key ID="STR_kat_chemical_ToxicGas_DisplayName">
             <English>82mm Toxic Gas Round</English>
-            <German>82mm Giftgas Mörser Granate</German>
+            <German>82mm Senfgas Mörser Granate</German>
         </Key>
         <Key ID="STR_kat_chemical_CSGas_MFDNAME">
             <English>CS-Gas</English>
@@ -163,7 +163,7 @@
         </Key>
         <Key ID="STR_kat_chemical_M43_desc">
             <English>Laser Guided Cluster Bomb with an chemical gas payload.</English>
-            <German>Laser gelenkte Streubombe mit Giftgas Sprengkopf.</German>
+            <German>Laser gelenkte Streubombe mit Senfgas Sprengkopf.</German>
         </Key>
         <Key ID="STR_kat_chemical_M43_DisplayName_2x">
             <English>2x M43 BZ LGB</English>
@@ -175,7 +175,7 @@
         </Key>
         <Key ID="STR_kat_chemical_HydraGas_desc">
             <English>Unguided rockets with Toxic-gas warhead.</English>
-            <German>Ungelengte Raketen mit Giftgas Sprengkopf.</German>
+            <German>Ungelengte Raketen mit Senfgas Sprengkopf.</German>
         </Key>
         <Key ID="STR_kat_chemical_HydraGas_DisplayName">
             <English>Hydra GAS 19x</English>
