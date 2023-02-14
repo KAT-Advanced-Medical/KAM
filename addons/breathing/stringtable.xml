@@ -532,7 +532,7 @@
             <French>L'aiguille de décompression thoracique est un kit à usage unique designé pour traiter les pneumothorax sous tension</French>
             <Korean>NCD(흉부 바늘 감압) 키트는 긴장성 기흉을 치료하도록 설계된 일회용 키트입니다.</Korean>
             <Italian>Il kit decompressione con ago è un kit a singolo uso adibito al trattamento del pneumotorace da tensione.</Italian>
-            <Portuguese>O NCD é um kit de único uso projetado para tratar o pneumotórax tensional</Portuguese>
+            <Portuguese>O NCD é um kit de único uso projetado para tratar o pneumotórax hipertensivo</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Hemopneumothorax Chance</English>
@@ -554,7 +554,7 @@
             <French>Règle la chance d'avoir un hémopneumothorax. Règle également la chance d'un pneumothorax sous tension (60% Hémo = 40% Tension)</French>
             <Korean>혈기흉의 확률을 설정합니다. 또한 긴장성 기흉의 확률을 설정합니다. (혈기흉 60% = 긴장성 기흉 40%)</Korean>
             <Italian>Imposta la probabilità per l'emopneumotorace. Imposta inoltre la probabilità per pneumotorace da tensione. (60% Emopn. =  40% Pneum. tensione)</Italian>
-            <Portuguese>Define a chance de hemopneumotórax. Também define a chance de pneumotórax tensional (60% Hemo = 40% Tensional)</Portuguese>
+            <Portuguese>Define a chance de hemopneumotórax. Também define a chance de pneumotórax hipertensivo (60% Hemo = 40% Hipertensivo)</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_ADVANCED_PTX_OPTION">
             <English>Enable Advanced Pneumothoraxes</English>
@@ -574,7 +574,7 @@
             <French>Active les pneumothorax avancés - Hémopneumothorax et pneumothorax sous tension</French>
             <Korean>고급 기흉을 활성화합니다. - 혈기흉 및 긴장성 기흉</Korean>
             <Italian>Abilità la pneumotorace avanzato - emopneumotorace e pneumotorace da tensione</Italian>
-            <Portuguese>Permite pneumotóraxes avançados - hemopneumotórax e pneumotórax tensional</Portuguese>
+            <Portuguese>Permite pneumotóraxes avançados - hemopneumotórax e pneumotórax hipertensivo</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_ADVANCED_PTX_CHANCE_OPTION">
             <English>Advanced Pneumothorax Chance</English>
@@ -615,7 +615,7 @@
             <Italian>Livello minimo per il trattamento di un emo/pneumotorace iperteso</Italian>
             <Russian>Лечение гемоторакса/напряженного пневмоторакса Минимальный уровень</Russian>
             <Japanese>血気胸/緊張性気胸治療の許可</Japanese>
-            <Portuguese>Nível mínimo exigido para tratar hemopneumotórax/pneumotórax tensional</Portuguese>
+            <Portuguese>Nível mínimo exigido para tratar hemopneumotórax/pneumotórax hipertensivo</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to perform the Needle Decompression and Drain Fluids treatment actions, used to treat Hemothorax or Tension Pneumothorax.</English>
@@ -631,7 +631,7 @@
             <Italian>Il livello medico minimo richiesto per eseguire la decompressione con ago e il drenaggio dei fluidi, necessari per il trattamento di un emotorace o pneumotorace iperteso</Italian>
             <Russian>Минимальный медицинский уровень, необходимый для того, чтобы кто-то мог выполнять лечебные действия «Декомпрессия иглой» и «Дренаж жидкости», используемые для лечения гемоторакса или напряженного пневмоторакса.</Russian>
             <Japanese>胸腔穿刺減圧および胸腔ドレナージに訓練レベルを必要とさせます。</Japanese>
-            <Portuguese>O nível médico mínimo exigido para que alguém possa realizar as ações de tratamento de Descompressão de Agulha e Drenagem de Fluidos, usados ​​para tratar Hemotórax ou Pneumotórax Tensional.</Portuguese>
+            <Portuguese>O nível médico mínimo exigido para que alguém possa realizar as ações de tratamento de Descompressão de Agulha e Drenagem de Fluidos, usados ​​para tratar Hemotórax ou Pneumotórax Hipertensivo.</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
             <English>Pneumothorax Damage Threshold</English>
@@ -725,7 +725,7 @@
             <Italian>Pneumotorace da tensione ed emotorace hardcore</Italian>
             <Russian>Усовершенствованная система для напряженного пневмоторакса/гемопневмоторакса</Russian>
             <Japanese>高度な緊張性気胸と血気胸診断を有効化</Japanese>
-            <Portuguese>Hemopneumotórax/pneumotórax tensional hardcore</Portuguese>
+            <Portuguese>Hemopneumotórax/pneumotórax hipertensivo hardcore</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_SETTING_tensionhemothorax_hardcore_DESC">
             <English>Enables hardcore mod for tension and hemothorax by not making it appear in medical menu - Stethoscope might be helpful</English>
@@ -741,7 +741,7 @@
             <Italian>Abilita la mod hardcore per la tensione e l'emotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile</Italian>
             <Russian>Активирует расширенную систему для напряженного пневмоторакса / гемопневмоторакса, не отображая напряженный пневмоторакс / гемопневмоторакс в медицинском меню - может помочь стетоскоп</Russian>
             <Japanese>緊張性気胸診断と血気胸診断のハードコアモードを有効にします。それらが発生しても医療メニューに表示しません。-聴診器が役立つ場合があります</Japanese>
-            <Portuguese>Ativa o modo hardcore para hemopneumotórax e pneumotórax tensional que os tornam identificáveis apenas com uso de estetoscópio (não aparecem no menu médico)</Portuguese>
+            <Portuguese>Ativa o modo hardcore para hemopneumotórax e pneumotórax hipertensivo que os tornam identificáveis apenas com uso de estetoscópio (não aparecem no menu médico)</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_Stethoscope_display">
             <English>Stethoscope</English>
