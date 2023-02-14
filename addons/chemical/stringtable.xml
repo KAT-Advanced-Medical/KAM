@@ -7,7 +7,7 @@
         </Key>
         <Key ID="STR_kat_chemical_SETTING_AVAIL_GASMASK_DISC">
             <English>Enter here the classname of the masks that should work with the system.</English>
-            <German>Hier die classname der Masken eintragen die mit dem System funktionieren sollen.</German>
+            <German>Hier können die classname der Masken eintragen werden, welche als Gasmaske integriert werden sollen.</German>
         </Key>
         <Key ID="STR_kat_chemical_SETTING_GASMASK_DURABILITY">
             <English>Gas masks durability</English>
@@ -31,7 +31,7 @@
         </Key>
         <Key ID="STR_kat_chemical_SETTING_affectAI_disc">
             <English>Determines if AI is affected by gas (If you are running this on a local server this can cause perfomance problems)</English>
-            <German>Betimmt ob KI von Gas betroffen ist (Kann auf lokalen Servern zu Leistungsproblemen führen).</German>
+            <German>Betimmt ob KI von Gas beinflusst wird (Kann auf lokalen Servern zu Leistungsproblemen führen).</German>
         </Key>
         <Key ID="STR_kat_chemical_GasFilterItem">
             <English>Gas mask filter</English>
@@ -51,11 +51,11 @@
         </Key>
         <Key ID="STR_kat_chemical_giveGasMask_progress">
             <English>Put on gas mask...</English>
-            <German>Setzte Gasmaske auf...</German>
+            <German>Gasmaske wird aufgesetzt...</German>
         </Key>
         <Key ID="STR_kat_chemical_CheckGasMaskDurability">
             <English>Check gas mask durability</English>
-            <German>Haltbarkeit der Gasmaske prüfen</German>
+            <German>Haltbarkeit des Gasmaskenfilters prüfen</German>
         </Key>
         <Key ID="STR_kat_chemical_ChangeGasMaskFilter">
             <English>Replace gas mask filter</English>
