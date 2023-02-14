@@ -108,7 +108,7 @@
         </Key>
         <Key ID="STR_kat_zeus_ModuleManageAirway_bloodVolume">
             <English>Blood volume: </English>
-            <German>blutvolumen: </German>
+            <German>Blutvolumen: </German>
             <Czech>Množství krve: </Czech>
             <French>Volume sanguin: </French>
             <Polish>Ilość krwi: </Polish>
@@ -243,7 +243,7 @@
         </Key>
         <Key ID="STR_kat_zeus_OnlyInfantry">
             <English>Unit must be infantry.</English>
-            <German>Nur bei Infanterie verwendbar.</German>
+            <German>Nur bei abgesessener Infanterie verwendbar.</German>
             <Czech>Jednotka musí být pěchota.</Czech>
             <French>L'unité doit être une infanterie.</French>
             <Polish>Jednostką musi być piechota.</Polish>
@@ -273,7 +273,7 @@
         </Key>
         <Key ID="STR_kat_zeus_NotUnconscious">
             <English>Unit must be unconscious.</English>
-            <German>Einheit muss Ohnmächtig sein.</German>
+            <German>Einheit muss bewusstlos sein.</German>
             <Czech>Jednotka musí být při vědomí.</Czech>
             <French>L'unité doit être inconsciente.</French>
             <Polish>Jednostka musi być nieprzytomna.</Polish>
