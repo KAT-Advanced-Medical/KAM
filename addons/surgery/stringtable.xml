@@ -343,7 +343,7 @@
             <Czech>Svorka</Czech>
             <French>Clamp</French>
             <Korean>클램프</Korean>
-            <German>Klemme</German>
+            <German>Klammern</German>
             <Japanese>鉗子 (クランプ)</Japanese>
             <Spanish>Pinza de sujeción</Spanish>
         </Key>
@@ -354,7 +354,7 @@
             <Czech>Používá se k upnutí rozdrcených zlomenin</Czech>
             <French>Utilisé pour clamper les fractures comminutives</French>
             <Korean>분쇄 골절을 클램프하는 데 사용됩니다</Korean>
-            <German>Zum Klemmen von Trümmerfrakturen</German>
+            <German>Zum Klammern von Trümmerfrakturen</German>
             <Japanese>粉砕骨折をクランプするために使用</Japanese>
             <Spanish>Usada para sujetar las fracturas conminutas</Spanish>
             <Polish>Służy do zaciskania skomplikowanych złamań</Polish>
@@ -379,7 +379,7 @@
             <Czech>Upínání</Czech>
             <French>Clampage</French>
             <Korean>클램프 중</Korean>
-            <German>Abklemmen</German>
+            <German>Klammern</German>
             <Japanese>クランプ中</Japanese>
             <Spanish>Alineando trozos</Spanish>
         </Key>
