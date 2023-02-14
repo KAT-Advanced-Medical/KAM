@@ -439,7 +439,7 @@
             <Czech>Vyčistit rány</Czech>
             <French>Débrider les plaies</French>
             <Korean>상처 제거</Korean>
-            <German>Wunddebridement</German>
+            <German>Wunde debridieren</German>
             <Japanese>創面切除</Japanese>
             <Spanish>Desbridar heridas</Spanish>
         </Key>
@@ -451,7 +451,7 @@
             <Czech>Čištění</Czech>
             <French>Débridement</French>
             <Korean>제거 중</Korean>
-            <German>Debridement </German>
+            <German>Debridement</German>
             <Japanese>切除中</Japanese>
             <Spanish>Desbridando</Spanish>
         </Key>
@@ -499,7 +499,7 @@
             <Czech>Aplikování</Czech>
             <French>Application</French>
             <Korean>적용 중</Korean>
-            <German>Anwendung</German>
+            <German>Lege an</German>
             <Japanese>適用中</Japanese>
             <Spanish>Colocando</Spanish>
         </Key>
@@ -579,11 +579,13 @@
             <English>Closed reduction fail chance</English>
             <Korean>폐쇄정복 실패 확률</Korean>
             <Japanese>非観血的整復術の失敗率</Japanese>
+            <German>Chance das die geschlossene Reduktion fehlschlägt</German>
         </Key>
         <Key ID="STR_kat_surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
             <Korean>폐쇄정복을 실패할 확률입니다. 기본값은 10%</Korean>
             <Japanese>非観血的整復術の失敗率を設定します。デフォルト値は10%です</Japanese>
+            <German> Legt die Chance fest, dass die geschlossene Reduktion fehlschlägt. Standard: 10%</German>
         </Key>
         <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
@@ -593,7 +595,7 @@
             <Czech>Šance na otevřenou zlomeninu</Czech>
             <French>Chance de fracture ouverte</French>
             <Korean>복합 골절 확률</Korean>
-            <German>Wahrscheinlichkeit eines zusammengesetzten Bruchs</German>
+            <German>Wahrscheinlichkeit einer offenen Fraktur</German>
             <Japanese>開放骨折の確率</Japanese>
             <Spanish>Probabilidad de fractura compuesta</Spanish>
         </Key>
@@ -605,7 +607,7 @@
             <Czech>Nastavuje šanci na otevřené zlomeniny. Také nastavuje šanci na rozdrcené zlomeniny (60% otevřené = 40% rozdrcené)</Czech>
             <French>Règle la chance de fracture ouverte. Règle également la chance de fractures comminutives (60% ouvertes = 40 % comminutives)</French>
             <Korean>복합 골절의 확률을 설정합니다. 또한 분쇄 골절의 확률을 설정합니다. (복합 60% = 분쇄 40%)</Korean>
-            <German>Legt die Wahrscheinlichkeit für zusammengesetzte Frakturen fest. Legt auch die Wahrscheinlichkeit für Trümmerfrakturen fest (60% zusammengesetzte Frakturen = 40% Trümmerfrakturen)</German>
+            <German>Legt die Wahrscheinlichkeit für offene Frakturen fest. Legt auch die Wahrscheinlichkeit für Trümmerfrakturen fest (60% offene Frakturen = 40% Trümmerfrakturen)</German>
             <Japanese>開放骨折の可能性を設定します。粉砕骨折の可能性も設定します (開放骨折60% = 粉砕骨折40%)</Japanese>
             <Spanish>Establece la probabilidad para fracturas compuestas. También establece la probabilidad de fracturas conminutas (60% Compuesta - 40% Conminuta)</Spanish>
         </Key>
@@ -641,7 +643,7 @@
             <Czech>Čas provádění uzavřené repozice</Czech>
             <French>Temps pour effectuer une réduction fermée</French>
             <Korean>폐쇄 정복 수행 시간</Korean>
-            <German>Zeit für die Durchführung geschlossener Repositionen</German>
+            <German>Zeit für die Durchführung geschlossener Reduktionen</German>
             <Japanese>非観血的整復術にかかる時間</Japanese>
             <Spanish>Tiempo para realizar reducciones cerradas</Spanish>
         </Key>
@@ -653,7 +655,7 @@
             <Czech>Čas provádění otevřené repozice</Czech>
             <French>Temps pour effectuer une réduction ouverte</French>
             <Korean>개방정복 수행 시간</Korean>
-            <German>Zeit für die Durchführung offener Repositionen</German>
+            <German>Zeit für die Durchführung offener Reduktionen</German>
             <Japanese>観血的整復術にかかる時間</Japanese>
             <Spanish>Tiempo para realizar reducciones abiertas</Spanish>
         </Key>
@@ -773,7 +775,7 @@
             <Czech>Zdravotnická úroveň potřebná pro uzavřenou repozici</Czech>
             <French>Niveau médical requis pour effectuer une réduction fermée</French>
             <Korean>폐쇄정복을 하는 데 필요한 의료 레벨 수준</Korean>
-            <German>Erforderliches medizinisches Training für die geschlossene Reposition</German>
+            <German>Erforderliches medizinisches Training für die geschlossene Reduktion</German>
             <Japanese>非観血的整復術に必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para realizar una reducción cerrada</Spanish>
         </Key>
@@ -809,7 +811,7 @@
             <Czech>Umístění uzavřené repozice</Czech>
             <French>Lieu des réductions fermées</French>
             <Korean>폐쇄정복 장소</Korean>
-            <German>Ort für die geschlossene Reposition</German>
+            <German>Ort für die geschlossene Reduktion</German>
             <Japanese>非観血的整復が可能な場所</Japanese>
             <Spanish>Zona para reducciones cerradas</Spanish>
         </Key>
@@ -821,7 +823,7 @@
             <Czech>Otevřená repozice/chirurgická poloha</Czech>
             <French>Lieu des réductions ouvertes / chirurgies</French>
             <Korean>개방정복 및 수술 장소</Korean>
-            <German>Ort für die offene Reposition/chirurgischer Eingriff</German>
+            <German>Ort für die offene Reduktion/chirurgischer Eingriffe</German>
             <Japanese>観血的整復術・手術が可能な場所</Japanese>
             <Spanish>Zona para reducciones abiertas/Acciones quirúrgicas</Spanish>
         </Key>
@@ -845,7 +847,7 @@
             <Czech>Roztaženo</Czech>
             <French>exposé(e)</French>
             <Korean>노출됨</Korean>
-            <German>freiliegend</German>
+            <German>freigelegt</German>
             <Japanese>露出した</Japanese>
             <Spanish>expuesto/a</Spanish>
         </Key>
@@ -869,7 +871,7 @@
             <Czech>Upnuto</Czech>
             <French>clampé(e)</French>
             <Korean>클램프됨</Korean>
-            <German>abgeklemmt</German>
+            <German>geklammert</German>
             <Japanese>クランプした</Japanese>
             <Spanish>alineado/a</Spanish>
         </Key>
@@ -893,7 +895,7 @@
             <Czech>Otevřená zlomenina</Czech>
             <French>Fracture ouverte</French>
             <Korean>복합 골절</Korean>
-            <German>Zusammengesetzte Fraktur</German>
+            <German>Offene Fraktur</German>
             <Japanese>開放骨折</Japanese>
             <Spanish>Fractura Compuesta</Spanish>
         </Key>
