@@ -60,8 +60,7 @@
             <Czech>Opakovač uzavření dýchacích cest</Czech>
             <Chinesesimp>气道异物再发冷却时间</Chinesesimp>
             <Spanish>Tiempo de repetición de las oclusiones</Spanish>
-            <Portuguese>Temporizador de repetição de oclusão
-</Portuguese>
+            <Portuguese>Temporizador de repetição de oclusão</Portuguese>
         </Key>
         <Key ID="STR_kat_airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -77,8 +76,7 @@
             <Italian>Attivare il suono del vomito?</Italian>
             <Russian>Активировать звук рвоты?</Russian>
             <Japanese>嘔吐音を再生しますか?</Japanese>
-            <Portuguese>Ativar o som de vomitar?
-</Portuguese>
+            <Portuguese>Ativar o som de vomitar?</Portuguese>
         </Key>
         <Key ID="STR_kat_airway_SETTING_exit">
             <English>Community called keko had addon for AFK players. They were put unconscious so others could drag them away. That triggered chances for airway problems. This string prevents that from happening when they get unconscious by that AFK addon.</English>
