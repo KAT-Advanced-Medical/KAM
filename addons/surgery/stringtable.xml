@@ -3,7 +3,7 @@
     <Package name="surgery">
         <Key ID="STR_kat_surgery_Using">
             <English>Using</English>
-            <German>Schlucke</German>
+            <German>Verwenden</German>
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
             <Chinese>服用中</Chinese>
@@ -31,7 +31,7 @@
         </Key>
         <Key ID="STR_kat_surgery_push_log">
             <English>%1 pushed %2</English>
-            <German>%1 intubierte mit %2</German>
+            <German>%1 verabreichte %2</German>
             <Polish>%1 wstrzyknął %2</Polish>
             <Spanish>%1 administró %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -45,7 +45,7 @@
         </Key>
         <Key ID="STR_kat_surgery_inject_log">
             <English>%1 injected %2</English>
-            <German>%1 intubierte mit %2</German>
+            <German>%1 injizierte %2</German>
             <Polish>%1 włożył %2</Polish>
             <Spanish>%1 inyectó %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -59,7 +59,7 @@
         </Key>
         <Key ID="STR_kat_surgery_use_log">
             <English>%1 used %2</English>
-            <German>%1 intubierte mit %2</German>
+            <German>%1 verwendete %2</German>
             <Polish>%1 użył %2</Polish>
             <Spanish>%1 usó %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -211,7 +211,7 @@
             <Czech>%1 %2 zlomenina na %3</Czech>
             <French>%1 %2 la fracture sur le %3</French>
             <Korean>%1 은(는) %3 의 골절을 %2 (으)로 수행하였습니다</Korean>
-            <German>%1 %2 der Bruch an der %3</German>
+            <German>%1 %2 des Bruches an dem %3</German>
             <Japanese>%1 は %3 の骨折に %2</Japanese>
             <Spanish>%1 %2 la fractura sobre el/la %3</Spanish>
         </Key>
@@ -223,7 +223,7 @@
             <Czech>%1 provedl řez na %2</Czech>
             <French>%1 a effectuée une incision sur le %2</French>
             <Korean>%1 이(가) %2 을(를) 절개했습니다</Korean>
-            <German>%1 hat einen Einschnitt an der %2</German>
+            <German>%1 hat einen Einschnitt an dem %2 vorgenommen</German>
             <Japanese>%1 が %2 を切開しました</Japanese>
             <Spanish>%1 hizo una incisión sobre el/la %2</Spanish>
         </Key>
@@ -270,7 +270,7 @@
             <Czech>Používá se pro vytváření řezů a čištění ran</Czech>
             <French>Utilisé pour inciser et débrider les plaies</French>
             <Korean>절개 부위를 생성하고 상처를 제거하는 데 사용됩니다.</Korean>
-            <German>Für das Anlegen von Inzisionen und das Debridieren von Wunden</German>
+            <German>Für das Durchführen von Inzisionen und das Debridieren von Wunden</German>
             <Japanese>切開と創面切除に使用</Japanese>
             <Spanish>Usado para crear incisiones y desbridar heridas</Spanish>
             <Polish>Służy do tworzenia nacięć i oczyszczania ran</Polish>
@@ -331,7 +331,7 @@
             <Czech>Odhalování</Czech>
             <French>Exposition</French>
             <Korean>노출 중</Korean>
-            <German>Freilegen</German>
+            <German>Lege Frei</German>
             <Japanese>露出させています</Japanese>
             <Spanish>Exponiendo</Spanish>
         </Key>
