@@ -1247,7 +1247,7 @@
             <Italian>Gruppo sanguigno</Italian>
             <Russian>Группа крови</Russian>
             <Japanese>血液型</Japanese>
-            <Portuguese>Grupo sanguíneo</Portuguese>
+            <Portuguese>Tipo sanguíneo</Portuguese>
         </Key>
         <Key ID="STR_kat_circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -1725,7 +1725,7 @@
             <Czech>Použít krevní skupiny pro odebírání krve?</Czech>
             <Japanese>採血に血液型を使用しますか?</Japanese>
             <Russian>Использовать группы крови для забора крови?</Russian>
-            <Portuguese>Usar grupos sanguíneos para extração de sangue?</Portuguese>
+            <Portuguese>Usar tipos sanguíneos para extração de sangue?</Portuguese>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_SELF_BLOOD_DRAW">
             <English>Enable self blood draw</English>
