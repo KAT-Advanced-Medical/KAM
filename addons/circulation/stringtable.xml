@@ -1487,7 +1487,7 @@
             <Russian>Ограничение расстояния для AED-X в метрах</Russian>
             <Italian>Distanza massima in metri per il DAE-X</Italian>
             <Japanese>AED-Xの距離制限 (メートル単位)</Japanese>
-            <Portuguese>Limite de distância para AED-X em metros</Portuguese>
+            <Portuguese>Limite de distância para DEA-X em metros</Portuguese>
         </Key>
         <Key ID="STR_kat_circulation_TIMELIMIT_AED_X">
             <English>Time limit for monitor of AED-X in seconds</English>
@@ -1519,7 +1519,7 @@
             <Russian>Деактивируйте монитор при использовании AED-X</Russian>
             <Italian>Disattivare il monitoraggio durante l'utilizzo del DAE-X</Italian>
             <Japanese>AED-Xの使用中にモニターを非アクティブ化する</Japanese>
-            <Portuguese>Desativar o Monitor enquanto estiver usando o AED-X</Portuguese>
+            <Portuguese>Desativar o Monitor enquanto estiver usando o DEA-X</Portuguese>
         </Key>
         <Key ID="STR_kat_circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -1879,7 +1879,7 @@
             <Chinesesimp>AED和AED-X设置</Chinesesimp>
             <Japanese>AEDとAED-X設定</Japanese>
             <Spanish>Parámetros del DEA / DEA-X</Spanish>
-            <Portuguese>Configurações de AED/AED-X</Portuguese>
+            <Portuguese>Configurações de DEA/DEA-X</Portuguese>
         </Key>
         <Key ID="STR_kat_circulation_SubCategory_CPR">
             <English>CPR Settings</English>

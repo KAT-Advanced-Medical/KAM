@@ -933,7 +933,7 @@
             <Italian>Logs di attività colorati (AED-X/Pulsossimetro)</Italian>
             <Russian>Цветные журналы активности (AED-X/пульсоксиметр)</Russian>
             <Japanese>色付きの活動ログ(AED-X /パルスオキシメーター)</Japanese>
-            <Portuguese>Registros de atividade colorizados (AED-X\Oxímetro)</Portuguese>
+            <Portuguese>Registros de atividade colorizados (DEA-X\Oxímetro)</Portuguese>
         </Key>
         <Key ID="STR_kat_airway_COLORED_LOGS_DESC">
             <English>Colors the Activitylogs of AED-X or Pulseoximeter red, if any value is critical</English>
