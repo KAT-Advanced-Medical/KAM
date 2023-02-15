@@ -77,7 +77,7 @@
         </Key>
         <Key ID="STR_kat_pharma_IV_DROP_TIME_DESC">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
-            <German>Ändert den Zeitpunkt, zu dem IVs/IOs aus einem Patienten herausfallen</German>
+            <German>Ändert den Zeitpunkt, nachdem IVs/IOs aus einem Patienten herausfallen</German>
             <Polish>Czas samoistnego wypadnięcia IV/IO z pacjenta</Polish>
             <French>Temps au bout du quel l'IV/IO tombe du patient</French>
             <Chinese>改变病人的静脉注射/IOs脱落的时间</Chinese>
@@ -811,7 +811,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Applying_IV">
             <English>Establishing IV/IO</English>
-            <German>IV/IO einrichten</German>
+            <German>IV legen</German>
             <Polish>Zakładanie IV</Polish>
             <Spanish>Colocando IV</Spanish>
             <Czech>Zavádím IV</Czech>
@@ -826,7 +826,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Applying_IO">
             <English>Establishing IO</English>
-            <German>IO einrichten</German>
+            <German>IO legen</German>
             <Polish>Zakładanie IO</Polish>
             <Spanish>Colocando IO</Spanish>
             <Czech>Zavádím IO</Czech>
@@ -841,7 +841,7 @@
         </Key>
         <Key ID="STR_kat_pharma_iv_log">
             <English>%1 established a %2</English>
-            <German>%1 errichtet eine %2</German>
+            <German>%1 legte ein %2</German>
             <Polish>%1 założył %2</Polish>
             <Spanish>%1 ha colocado %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -1031,7 +1031,7 @@
         <Key ID="STR_KAT_pharma_SETTING_Allow_Reorientation_DESC">
             <English>Medical level required for reorientation</English>
             <Polish>Poziom wyszkolenia wymagany do cucenia</Polish>
-            <German>Erforderliches Medic Level zum Umorientieren</German>
+            <German>Erforderlicher medizinischer Grad zum Umorientieren</German>
             <Spanish>Nivel médico requerido para la bofetada</Spanish>
             <Chinese>调整方向所需的医疗水平</Chinese>
             <Chinesesimp>刺激患者所需的医疗水平</Chinesesimp>
@@ -1053,7 +1053,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Pervitin_DESC">
             <English>Enables if pervitin should influance your vision with chromatic aberration</English>
-            <German>Aktiviert ob Pervitin deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+            <German>Aktiviert, ob Pervitin deine Sicht mit chromatischen Abweichungen beeinflussen soll</German>
             <French>Définie si la pervitine devrait influancer la vision avec une aberration chromatique</French>
             <Japanese>ペルビチン服用時に色収差で視覚に影響を与えるかどうかを有効にします</Japanese>
             <Korean>페르피틴이 색수차로 시력에 영향을 미치는지의 여부를 활성화합니다.</Korean>
@@ -1061,7 +1061,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Pervitin">
             <English>Chromatic Aberration Strength</English>
-            <German>Chromatische Abweichungs Stärke</German>
+            <German>Chromatische Abweichung-Stärke</German>
             <French>Intensité de l'aberration chromatique</French>
             <Japanese>色収差強度</Japanese>
             <Korean>색수차 강도(페르피틴)</Korean>
@@ -1069,7 +1069,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Pervitin_DESC">
             <English>Changes the strength of the chromatic aberration</English>
-            <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
+            <German>Bestimmt die Stärke von den chromatischen Abweichungen</German>
             <French>Définie l'intensité de l'aberration chromatique</French>
             <Japanese>色収差の強さを変更します</Japanese>
             <Korean>페르피틴의 색수차의 강도를 변경합니다.</Korean>
@@ -1085,7 +1085,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Weapon_Sway_Pervitin_DESC">
             <English>Enables if pervitin should influance your weapon sway</English>
-            <German>Aktiviert ob Pervitin dein Waffen schwanken beinflussen soll</German>
+            <German>Aktiviert, ob Pervitin das Schwanken deiner Waffen beeinflussen soll</German>
             <French>Définie si la pervitine influance l'oscillation de l'arme</French>
             <Japanese>ペルビチンが武器の揺れに影響を与えるかどうかを有効にします</Japanese>
             <Korean>페르피틴이 무기의 흔들림에 영향을 미치는지의 여부를 활성화합니다.</Korean>
@@ -1093,19 +1093,19 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_PervitinSpeed_displayName">
             <English>Pervitin Speed Boost</English>
-            <German>Pervitin Geschwindigkeits Boost</German>
+            <German>Pervitin Geschwindigkeit Boost</German>
             <Korean>페르피틴 속도 부스트</Korean>
             <Japanese>ペルビチン速度上昇</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_PervitinSpeed_DESC">
             <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
-            <German>Geschindigkeit die in Phase 1 von Pervitin gesetzt wird. (1 = normal, 2 = doppelt)</German>
+            <German>Geschwindigkeit, die in Phase 1 von Pervitin gesetzt wird. (1 = normal, 2 = doppelt)</German>
             <Korean>페르피틴 효과 1단계에서 설정되는 애니메이션 속도. (1 = 정상, 2 = 두 배)</Korean>
             <Japanese>ペルビチン効果の第一段階でのアニメーションの再生速度を設定します (1 = 通常、2 = 2倍速)</Japanese>
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>
-            <German>Aktiviere Chromatische Abweichungen</German>
+            <German>Aktiviere chromatische Abweichungen</German>
             <French>Activer l'aberration chromatique</French>
             <Japanese>色収差を有効にする</Japanese>
             <Korean>색수차 활성화(케타민)</Korean>
@@ -1113,7 +1113,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine_DESC">
             <English>Enables if ketamine should influance your vision with chromatic aberration</English>
-            <German>Aktiviert ob Ketamin deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+            <German>Aktiviert, ob Ketamin deine Sicht, mit chromatischen Abweichungen beeinflussen soll</German>
             <French>Définie si la kétamine devrait influancer la vision avec une aberration chromatique</French>
             <Japanese>ケタミン服用時に色収差で視覚に影響を与えるかどうかを有効にします</Japanese>
             <Korean>케타민이 색수차로 시력에 영향을 미치는 지의 여부를 활성화합니다.</Korean>
@@ -1121,7 +1121,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Ketamine">
             <English>Chromatic Aberration Strength</English>
-            <German>Chromatische Abweichungs Stärke</German>
+            <German>Chromatische Abweichung-Stärke</German>
             <French>Intensité de l'aberration chromatique</French>
             <Japanese>色収差強度</Japanese>
             <Korean>색수차 강도(케타민)</Korean>
@@ -1129,7 +1129,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Ketamine_DESC">
             <English>Changes the strength of the chromatic aberration</English>
-            <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
+            <German>Bestimmt die Stärke von den chromatischen Abweichungen</German>
             <French>Définie l'intensité de l'aberration chromatique</French>
             <Japanese>色収差の強さを変更します</Japanese>
             <Korean>케타민의 색수차의 강도를 변경합니다.</Korean>
@@ -1137,7 +1137,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl">
             <English>Enable Chromatic Aberration</English>
-            <German>Aktiviere Chromatische Abweichungen</German>
+            <German>Aktiviere chromatische Abweichungen</German>
             <French>Activer l'aberration chromatique</French>
             <Japanese>色収差を有効にする</Japanese>
             <Korean>색수차 활성화(펜타닐)</Korean>
@@ -1145,7 +1145,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl_DESC">
             <English>Enables if fentanyl should influance your vision with chromatic aberration</English>
-            <German>Aktiviert ob Fentanyl deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+            <German>Aktiviert, ob Fentanyl deine Sicht mit chromatischen Abweichungen beeinflussen soll</German>
             <French>Définie si le fentanyl devrait influancer la vision avec une aberration chromatique</French>
             <Japanese>フェンタニル服用時に色収差で視覚に影響を与えるかどうかを有効にします</Japanese>
             <Korean>펜타닐이 색수차로 시력에 영향을 미치는지의 여부를 활성화합니다.</Korean>
@@ -1153,7 +1153,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl">
             <English>Chromatic Aberration Strength</English>
-            <German>Chromatische Abweichungs Stärke</German>
+            <German>Chromatische Abweichung-Stärke</German>
             <French>Intensité de l'aberration chromatique</French>
             <Japanese>色収差強度</Japanese>
             <Korean>색수차 강도(펜타닐)</Korean>
@@ -1161,7 +1161,7 @@
         </Key>
         <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl_DESC">
             <English>Changes the strength of the chromatic aberration</English>
-            <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
+            <German>Bestimmt die Stärke von den chromatischen Abweichungen</German>
             <French>Définie l'intensité de l'aberration chromatique</French>
             <Japanese>色収差の強さを変更します</Japanese>
             <Korean>펜타닐의 색수차의 강도를 변경합니다.</Korean>
@@ -1199,7 +1199,7 @@
             <French>Anesthésie générale</French>
             <Polish>Anestetyk</Polish>
             <Korean>일반적인 마취제</Korean>
-            <German>Allgemeinanästhesie</German>
+            <German>Allgemeines Anästhetikum</German>
             <Japanese>全身麻酔</Japanese>
             <Spanish>Anestesia general</Spanish>
         </Key>
@@ -1487,7 +1487,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Naloxon</Czech>
             <French>Niveau médical requis pour la Naloxone</French>
             <Korean>날록손을 사용할 수 있는 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Naloxon </German>
+            <German>Erforderlicher medizinischer Grad für die Gabe von Naloxon</German>
             <Japanese>ナロキソンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Naloxona</Spanish>
         </Key>
@@ -1513,7 +1513,7 @@
         </Key>
         <Key ID="STR_kat_pharma_medLvl_Pervitin">
             <English>Medical level required for Pervitin</English>
-            <German>Erforderliches medizinisches Level für die Gabe von Pervitin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Pervitin</German>
             <French>Niveau médical requis pour la Pervitine</French>
             <Japanese>ペルビチンに必要な医療レベル</Japanese>
             <Korean>페르피틴을 사용하는데 필요한 의료 레벨 수준 변경</Korean>
@@ -1527,7 +1527,7 @@
             <Czech>Zdravotnická úroveň potřebná pro TXA</Czech>
             <French>Niveau médical requis pour l'Acide Tranexamique</French>
             <Korean>TXA를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von TXA</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von TXA</German>
             <Japanese>TXAに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el ATX</Spanish>
         </Key>
@@ -1551,7 +1551,7 @@
             <Italian>Livello medico richiesto per la Norepinefrina</Italian>
             <French>Niveau médical requis pour la Noradrénaline</French>
             <Korean>노르에피네프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Norepinephrin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Norepinephrin</German>
             <Japanese>ノルアドレナリンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Norepinefrina</Spanish>
         </Key>
@@ -1575,7 +1575,7 @@
             <Italian>Livello medico richiesto per la Fenilefrina</Italian>
             <French>Niveau médical requis pour la Phényléphrine</French>
             <Korean>페닐에프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Phenylephrin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Phenylephrin</German>
             <Japanese>フェニレフリンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Fenilefrina</Spanish>
         </Key>
@@ -1611,7 +1611,7 @@
             <Italian>Tempo di trattamento per la Nitroglicerina</Italian>
             <French>Temps de traitement de la Nitroglycérine</French>
             <Korean>니트로글리세린으로 치료하는 시간</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Nitroglycerin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Nitroglycerin</German>
             <Japanese>ニトログリセリンの治療時間</Japanese>
             <Spanish>Tiempo para uso de la Nitroglicerina</Spanish>
         </Key>
@@ -1635,7 +1635,7 @@
             <Czech>Doba léčby pro Amiodaron</Czech>
             <French>Temps de traitement de l'Amiodarone</French>
             <Korean>아미오다론으로 치료하는 시간</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Amiodaron</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Amiodaron</German>
             <Japanese>アミオダロンの治療時間</Japanese>
             <Spanish>Tiempo para uso de la Amiodarona</Spanish>
         </Key>
@@ -1647,7 +1647,7 @@
             <Italian>Livello medico richiesto per la Lidocaina</Italian>
             <French>Niveau médical requis pour la Lidocaïne</French>
             <Korean>리도카인을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Lidocain</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Lidocain</German>
             <Japanese>リドカインに必​​要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Lidocaína</Spanish>
         </Key>
@@ -1671,7 +1671,7 @@
             <Italian>Livello medico richiesto per l'Atropina</Italian>
             <French>Niveau médical requis pour l'Atropine</French>
             <Korean>아트로핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Atropin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Atropin</German>
             <Japanese>アトロピンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Atropina</Spanish>
         </Key>
@@ -1695,7 +1695,7 @@
             <Czech>Zdravotnická úroveň potřebná pro EACA</Czech>
             <French>Niveau médical requis pour l'Acide Aminocaproïque</French>
             <Korean>아미노카프로산을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Aminocapronsäure</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Aminocapronsäure</German>
             <Japanese>EACAに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el EACA</Spanish>
         </Key>
@@ -1718,7 +1718,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Flumazenil</Czech>
             <French>Niveau médical requis pour le Flumazénil</French>
             <Korean>플루마제닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Flumazenil</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Flumazenil</German>
             <Polish>Poziom wyszkolenia medycznego dla Flumazenilu</Polish>
             <Japanese>フルマゼニルに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el Flumazenil</Spanish>
@@ -1742,7 +1742,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Lorazepam</Czech>
             <French>Niveau médical requis pour le Lorazépam</French>
             <Korean>로라제팜을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Lorazepam</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Lorazepam</German>
             <Polish>Poziom wyszkolenia medycznego dla Lorazepamu</Polish>
             <Japanese>ロラゼパムに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el Lorazepam</Spanish>
@@ -1766,7 +1766,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Etomidát</Czech>
             <French>Niveau médical requis pour l'Étomidate</French>
             <Korean>에토미데이트를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Etomidat</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Etomidat</German>
             <Polish>Poziom wyszkolenia medycznego dla Etomidatu</Polish>
             <Japanese>エトミダートに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el Etomidato</Spanish>
@@ -1791,7 +1791,7 @@
             <Italian>Livello medico richiesto per la Ketamina</Italian>
             <French>Niveau médical requis pour la Kétamine</French>
             <Korean>케타민을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Ketamin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Ketamin</German>
             <Japanese>ケタミンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Ketamina</Spanish>
         </Key>
@@ -1815,7 +1815,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Fentanyl</Czech>
             <French>Niveau médical requis pour le Fentanyl</French>
             <Korean>펜타닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Fentayl</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Fentanyl</German>
             <Japanese>フェンタニルに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el Fentalino</Spanish>
         </Key>
@@ -1827,7 +1827,7 @@
             <Czech>Doba léčby pro Fentanyl</Czech>
             <French>Temps de traitement du Fentanyl</French>
             <Korean>펜타닐로 치료하는 시간</Korean>
-            <German>Anwendungszeit für Fentayl</German>
+            <German>Anwendungszeit für Fentanyl</German>
             <Japanese>フェンタニルの治療時間</Japanese>
             <Spanish>Tiempo para uso del Fentalino</Spanish>
         </Key>
@@ -1839,7 +1839,7 @@
             <Italian>Livello medico richiesto per Nalbufina (nubain)</Italian>
             <French>Niveau médical requis pour la Nalbuphine</French>
             <Korean>날부핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Nalbuphin </German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Nalbuphin </German>
             <Japanese>ナルブフィンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Nalbufina</Spanish>
         </Key>
@@ -1937,7 +1937,7 @@
         </Key>
         <Key ID="STR_kat_pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
-            <German>Koffein Einstellungen </German>
+            <German>Koffein Einstellungen</German>
             <French>Paramètres de la Caféine</French>
             <Japanese>カフェイン設定</Japanese>
             <Korean>카페인 설정</Korean>
@@ -2188,6 +2188,7 @@
             <Japanese>患者は呼吸していません</Japanese>
             <Korean>환자가 숨을 쉬지 않습니다</Korean>
             <Italian>Il paziente non sta respirando</Italian>
+            <German>Patient atmet nicht</German>
         </Key>
         <Key ID="STR_kat_pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -2323,7 +2324,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Take_Pervitin">
             <English>Take Pervitin</English>
-            <German> Pervitin einnehmen </German>
+            <German>Pervitin einnehmen</German>
             <French>Prendre la pervitine</French>
             <Japanese>ペルビチンを服用する</Japanese>
             <Korean>페르피틴 복용</Korean>
@@ -2347,7 +2348,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid2">
             <English>You gain a sudden rush!</English>
-            <German>Du bekommst einen spontanan Rush...</German>
+            <German>Du bekommst einen spontanen Schub...</German>
             <French>Vous sentez un élan soudain !</French>
             <Korean>갑자기 심하게 두근거린다!</Korean>
             <Japanese>あなたを突如激しい動悸が襲う!</Japanese>
@@ -2355,7 +2356,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid3">
             <English>You gain another rush!</English>
-            <German>Du bekommst einen weiteren Rush...</German>
+            <German>Du bekommst einen weiteren Schub...</German>
             <French>Vous sentez un autre élan !</French>
             <Korean>두근거림이 더 격렬해진다!</Korean>
             <Japanese>動悸は激しさを増してゆく!</Japanese>
@@ -2379,7 +2380,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_chrom">
             <English>You start to see everything twice.</English>
-            <German>Du siehst alles Zweimal.</German>
+            <German>Du siehst alles doppelt.</German>
             <French>Vous commencez à voir tout en double</French>
             <Korean>모든 게 두 개로 보이기 시작한다.</Korean>
             <Japanese>全てが二重に見える...</Japanese>
@@ -2411,7 +2412,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Caffeine_Bottle_DescShort">
             <English>Keeps you awake</English>
-            <German>Hällt dich wach</German>
+            <German>Hält dich wach</German>
             <French>Vous tient éveillé</French>
             <Japanese>眠気防止に役立つ</Japanese>
             <Korean>계속 깨어 있게 해줍니다.</Korean>
