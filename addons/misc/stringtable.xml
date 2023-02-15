@@ -303,7 +303,7 @@
         </Key>
         <Key ID="STR_kat_misc_SETTING_incompatibilityWarning">
             <English>Incompatible addon warning</English>
-            <German>Inkompatible Mods Warnung</German>
+            <German>Warnung inkompatibler Erweiterungen</German>
             <Czech>Varování nekompatibilního addonu</Czech>
             <Korean>호환되지 않는 애드온 경고</Korean>
             <Japanese>互換性のないアドオンの警告</Japanese>
