@@ -1338,7 +1338,7 @@
         <Key ID="STR_kat_circulation_TRAINING_LEVEL_AED">
             <English>Training level required to use an AED</English>
             <Polish>Poziom wyszkolenia wymagany do korzystania z AED</Polish>
-            <German>Benötigtes Trainingslevel, um den AED zu nutzen</German>
+            <German>Benötigter medizinischer Grad, um den AED zu nutzen</German>
             <Spanish>Nivel de entrenamiento requerido para usar un DEA</Spanish>
             <Chinese>使用AED所需的培訓水平</Chinese>
             <Chinesesimp>使用AED所需的医疗培训水平</Chinesesimp>
@@ -1368,7 +1368,7 @@
         <Key ID="STR_kat_circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
             <Polish>Poziom wyszkolenia wymagany do korzystania z AED-X</Polish>
-            <German>Benötigtes Trainingslevel, um den AED-X zu nutzen</German>
+            <German>Benötigter medizinischer Grad, um den AED-X zu nutzen</German>
             <Spanish>Nivel de entrenamiento requerido para usar un DEA-X</Spanish>
             <Chinese>使用AED-X所需的培訓水平</Chinese>
             <Chinesesimp>使用AED-X的医疗培训水平</Chinesesimp>
@@ -1428,7 +1428,7 @@
         <Key ID="STR_kat_circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
             <Polish>Włącz różne szanse resuscytacji, zależne od wyszkolenia medycznego</Polish>
-            <German>Aktiviere verschiedene HLW Erfolgsraten für verschiedene Medic Level</German>
+            <German>Aktiviere verschiedene HLW Erfolgsraten für verschiedene medizinische Grade</German>
             <Spanish>Permite diferentes probabilidades de RCP exitoso por nivel médico</Spanish>
             <Chinese>每個醫療級別啟用不同的CPR機會</Chinese>
             <Chinesesimp>每个医疗水平启用不同的CPR几率</Chinesesimp>
@@ -1792,6 +1792,7 @@
             <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4</Japanese>
             <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4</French>
             <Korean>X-시리즈 AED: 맥박: %1 혈압: %2 /%3 산소포화도: %4</Korean>
+            <German>AED-X: HR: %1 BP: %2/%3 SpO2: %4</German>
         </Key>
     </Package>
 </Project>
