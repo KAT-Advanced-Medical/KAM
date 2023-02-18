@@ -1,17 +1,18 @@
 #include "script_component.hpp"
 /*
  * Author: 2LT.Mazinski
- * Locates and Removes 1x Morphine after the administration of Naloxone.
+ * Flushing IV access with saline
  *
  * Arguments:
  * 0: Medic <OBJECT>
- * 1: Medication <STRING>
+ * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, "Naloxone"] call aceP_circulation_fnc_treatmentAdvanced_NaloxoneLocal;
+ * [player, cursorTarget, "LeftArm"] call kat_pharma_fnc_treatmentAdvanced_FlushLocal;
  *
  * Public: No
  */
