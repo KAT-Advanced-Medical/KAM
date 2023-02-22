@@ -102,7 +102,6 @@
         </Key>
         <Key ID="STR_kat_chemical_sealantItem_desc">
             <English>Sealant which is used to seal objects when e.g. a toxic substance leaks out</English>
-            <German>Dichtmittel, welches zum Abdichten von Objekten genutzt wird, wenn z.b. ein Giftstoff austritt.</German>
             <German>Dichtmittel, welches zum Abdichen von Gegenständen genutzt wird. z.B. bei Austritt von Giftstoffen</German>
             <French>Mastic servant à sceller les objets quand par exemple une substance toxique en sort</French>
             <Korean>독성 물질이 누출될 때 물체를 밀봉하는 데 사용되는 밀봉제</Korean>
