@@ -57,7 +57,7 @@
         </Key>
         <Key ID="STR_kat_chemical_SETTING_affectAI">
             <English>Gas Affects AI</English>
-            <German>Gas betrifft KI</German>
+            <German>Gas beeinflusst KI</German>
             <French>Le gaz affecte les IA</French>
             <Japanese>ガスがAIに影響を与えるか</Japanese>
             <Korean>가스가 인공지능에게도 영향을 미침</Korean>
@@ -156,7 +156,7 @@
         </Key>
         <Key ID="STR_kat_chemical_ChemDetector_Unmute">
             <English>Unmute Chemical Detector.</English>
-            <German>Chemischen Detektor laut schalten..</German>
+            <German>Chemischen Detektor laut schalten.</German>
             <French>Activer le son du détecteur de produits chimiques</French>
             <Japanese>化学検知器をミュート解除</Japanese>
             <Korean>화학물 탐지기 음소거 해제</Korean>
@@ -174,7 +174,7 @@
         </Key>
         <Key ID="STR_kat_chemical_GasModule_description">
             <English>Raduis around the module which is filled with gas.</English>
-            <German>Raduis um das Modul welcher mit Gas gefüllt ist.</German>
+            <German>Radius um das Modul, welcher mit Gas gefüllt ist.</German>
             <French>Zone autour du module remplie de gaz</French>
             <Japanese>モジュール周囲の半径がガスで満たされます</Japanese>
             <Korean>가스로 채워진 모듈 주변 반경을 설정합니다.</Korean>
@@ -273,7 +273,7 @@
         </Key>
         <Key ID="STR_kat_chemical_M7A3_DcsShort">
             <English>The M7A3 CS gas grenade is a non-lethal tear gas grenade that causes severe burning of the mucous membranes and eyes on contact.</English>
-            <German>Die M7A3 CS Reizgas Granate ist eine nicht tödliche Tränengas Granate die bei Kontakt starkes Brennen der Schleimhäute und Augen auslöst.</German>
+            <German>Die M7A3 CS Reizgas Granate ist eine nicht tödliche Tränengas Granate, die bei Kontakt starkes Brennen der Schleimhäute und Augen auslöst.</German>
             <French>La grenade à gaz M7A3 CS est une grenade à gaz lacrymogène non-létale qui crée de graves brûlures sur les membranes muqueuses et les yeux au contact.</French>
             <Japanese>M7A3 CSガス手榴弾は、接触すると粘膜や目に激しい火傷のような痛みを負わせる非致死性の催涙ガス手榴弾である。</Japanese>
             <Korean>M7A3 CS 가스 수류탄은 접촉 시 점막과 눈에 심한 화상을 입히는 비치명적 최루탄입니다.</Korean>
@@ -371,7 +371,7 @@
             <Portuguese>M43 BZ LGB</Portuguese>
         </Key>
         <Key ID="STR_kat_chemical_M43_desc">
-            <English>Laser Guided Cluster Bomb with an chemical gas payload.</English>
+            <English>Laser Guided Cluster Bomb with a chemical gas payload.</English>
             <German>Laser gelenkte Streubombe mit Senfgas Gefechtskopf.</German>
             <French>Bombe à sous-munitions à guidée laser contenant un gaz chimique.</French>
             <Japanese>化学ガスを搭載したレーザー誘導クラスター爆弾。</Japanese>
@@ -426,7 +426,7 @@
         </Key>
         <Key ID="STR_kat_chemical_LvL1_Gas">
             <English>Toxic gas (Level 1)</English>
-            <German>Toxic gas (Level 1)</German>
+            <German>Senfgas (Level 1)</German>
             <French>Gaz toxique (Niveau 1)</French>
             <Japanese>有毒ガス (レベル1)</Japanese>
             <Korean>유독가스 (레벨 1)</Korean>
@@ -462,7 +462,7 @@
         </Key>
         <Key ID="STR_kat_chemical_UI_sealable_tooltip">
             <English>ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!</English>
-            <German>Funktioniert nur wenn das Modul mit einem Objekt synkronisiert ist!</German>
+            <German>FUNKTIONIERT NUR, WENN DAS MODUL MIT EINEM OBJEKT SYNCHRONISIERT IST!</German>
             <French>FONTIONNE UNIQUEMENT SI LE MODULE EST SYNCHRONISE AVEC UN OBJET!</French>
             <Japanese>ロジックがオブジェクトと同期している場合にのみ機能します!</Japanese>
             <Korean>논리가 개체와 동기화된 경우에만 작동합니다!</Korean>
