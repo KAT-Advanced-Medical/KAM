@@ -120,7 +120,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(npwtTime);
         items[] = {"kat_vacuum"};
-        condition = QFUNC(debridementCheck));
+        condition = QFUNC(debridementCheck);
         consumeItem = 0;
         sounds[] = {{QPATHTO_R(sounds\vacuum.ogg),8,1,15}};
         callbackSuccess = QFUNC(npwtTreatment);

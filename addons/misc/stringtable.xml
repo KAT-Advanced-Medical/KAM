@@ -15,6 +15,7 @@
             <Italian>Attivare ACE-Misc?</Italian>
             <Russian>ACE-Misc активирован?</Russian>
             <Japanese>KAM-Misc を有効化しますか?</Japanese>
+            <Portuguese>ACE - Miscelâneo ativado?</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV">
             <English>Attaching IV</English>
@@ -30,6 +31,7 @@
             <Italian>Somministrando EV</Italian>
             <Russian>Присоединить IV</Russian>
             <Japanese>IVを取り付ける</Japanese>
+            <Portuguese>Colocando IV</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display">
             <English>Attach IV (1000ml)</English>
@@ -45,6 +47,7 @@
             <Italian>Somministrare EV (1000ml)</Italian>
             <Russian>Присоединить IV  (1000 мл)</Russian>
             <Japanese>IVを取り付ける (1000ml)</Japanese>
+            <Portuguese>Administrar IV (1000ml)</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_500">
             <English>Attach IV (500ml)</English>
@@ -60,6 +63,7 @@
             <Italian>Somministrare EV (500ml)</Italian>
             <Russian>Прикрепить IV (500 мл)</Russian>
             <Japanese>IVを取り付ける (500ml)</Japanese>
+            <Portuguese>Administrar IV (500ml)</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_Action_add_IV_Display_250">
             <English>Attach IV (250ml)</English>
@@ -75,6 +79,7 @@
             <Italian>Somministrare EV (250ml)</Italian>
             <Russian>Прикрепить IV (250 мл)</Russian>
             <Japanese>IVを取り付ける (250ml)</Japanese>
+            <Portuguese>Administrar IV (250ml)</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand">
             <English>Stand: Saline IV (1000ml)</English>
@@ -90,6 +95,7 @@
             <Italian>Supporto: Fisiologica EV (1000ml)</Italian>
             <Russian>Подставка: Физиологический раствор IV (1000 мл)</Russian>
             <Japanese>スタンド: 生理食塩水IV (1000ml)</Japanese>
+            <Portuguese>Suporte: Soro fisiológico IV (1000ml)</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_500">
             <English>Stand: Saline IV (500ml)</English>
@@ -105,6 +111,7 @@
             <Italian>Supporto: Fisiologica EV (500ml)</Italian>
             <Russian>Подставка: Физиологический раствор IV (500 мл)</Russian>
             <Japanese>スタンド: 生理食塩水IV (500ml)</Japanese>
+            <Portuguese>Suporte: Soro fisiológico IV (500ml)</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_Display_IVStand_250">
             <English>Stand: Saline IV (250ml)</English>
@@ -120,6 +127,7 @@
             <Italian>Supporto: Fisiologica EV (250ml)</Italian>
             <Russian>Подставка: Физиологический раствор IV (250 мл)</Russian>
             <Japanese>スタンド: 生理食塩水IV (250ml)</Japanese>
+            <Portuguese>Suporte: Soro fisiológico IV (250ml)</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_disassemble_stretcher_display">
             <English>Disassemble stretcher</English>
@@ -135,6 +143,7 @@
             <Italian>Smonta la barella</Italian>
             <Russian>Разобрать носилки</Russian>
             <Japanese>担架を分解する</Japanese>
+            <Portuguese>Desmontar maca</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_disassemble_attach_display">
             <English>Attach to</English>
@@ -150,6 +159,7 @@
             <Italian>Collega a</Italian>
             <Russian>Приложить к</Russian>
             <Japanese>取り付ける</Japanese>
+            <Portuguese>Anexar a</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_attach">
             <English>Attach Stretcher</English>
@@ -165,6 +175,7 @@
             <Italian>Attacca la barella</Italian>
             <Russian>Прикрепить носилки</Russian>
             <Japanese>担架を取り付ける</Japanese>
+            <Portuguese>Anexar maca</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_lower10m">
             <English>Lower Stretcher By 10m</English>
@@ -180,6 +191,7 @@
             <Italian>Barella inferiore di 10 m</Italian>
             <Russian>Нижние носилки на 10 м</Russian>
             <Japanese>担架を10m下げる</Japanese>
+            <Portuguese>Abaixar a maca em 10m</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_raise10m">
             <English>Raise Stretcher By 10m</English>
@@ -195,6 +207,7 @@
             <Italian>Alzare la barella di 10 m</Italian>
             <Russian>Поднимите носилки на 10 м</Russian>
             <Japanese>担架を10m上げる</Japanese>
+            <Portuguese>Elevar a maca em 10m</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_raise">
             <English>Raise Stretcher</English>
@@ -210,6 +223,7 @@
             <Italian>Alzare la barella</Italian>
             <Russian>Поднимите носилки</Russian>
             <Japanese>担架を載せる</Japanese>
+            <Portuguese>Elevar a maca</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_lower">
             <English>Lower Stretcher</English>
@@ -225,6 +239,7 @@
             <Italian>Barella inferiore</Italian>
             <Russian>Нижние носилки</Russian>
             <Japanese>担架を降ろす</Japanese>
+            <Portuguese>Abaixar a maca</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_flip">
             <English>Flip Stretcher</English>
@@ -240,6 +255,7 @@
             <Italian>Flip Barella</Italian>
             <Russian>Флип носилки</Russian>
             <Japanese>担架をひっくり返す</Japanese>
+            <Portuguese>Virar a maca</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_attention1">
             <English>The vehicle you are looking at is not a helicopter!</English>
@@ -255,6 +271,7 @@
             <Italian>Il veicolo che stai guardando non è un elicottero!</Italian>
             <Russian>Транспортное средство, на которое вы смотрите, не является вертолетом!</Russian>
             <Japanese>あなたが見ている車両はヘリコプターではありません!</Japanese>
+            <Portuguese>O veículo que você está olhando não é um helicóptero!</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_helistretcher_attention2">
             <English>You must be within 15m of the helicopter and look at it!</English>
@@ -270,6 +287,7 @@
             <Italian>Devi essere a meno di 15 metri dall'elicottero e guardarlo!</Italian>
             <Russian>Вы должны находиться в пределах 15 м от вертолета и смотреть на него!</Russian>
             <Japanese>あなたはヘリコプターから15メートル以内にいて、視線を合わせる必要があります!</Japanese>
+            <Portuguese>Você deve estar a 15m do helicóptero e olhando para ele!</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_Helistretcher_Display">
             <English>Attachable Helistretcher</English>
@@ -285,6 +303,7 @@
             <Italian>Elibarella agganciabile</Italian>
             <Russian>Вы должны находиться в пределах 15 м от вертолета и посмотри на это!</Russian>
             <Japanese>ヘリコプター用担架</Japanese>
+            <Portuguese>Maca de helicóptero acoplável</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_Helistretcher_Desc">
             <English>Allows you to attach a stretcher to a helicopter(Double click)</English>
@@ -300,6 +319,7 @@
             <Italian>Consente di collegare una barella sull'elicottero (doppio clic)</Italian>
             <Russian>Позволяет прикрепить носилки к вертолету (двойной щелчок)</Russian>
             <Japanese>ヘリコプターに担架を取り付けることができます(ダブルクリック)</Japanese>
+            <Portuguese>Permite anexar uma maca a um helicóptero (clique duplo)</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_SETTING_incompatibilityWarning">
             <English>Incompatible addon warning</English>
@@ -311,6 +331,7 @@
             <Italian>Avviso di addon incompatibile.</Italian>
             <Polish>Ostrzeżenie o niekompatybilnym modzie</Polish>
             <Spanish>Advertencia: Addon incompatible</Spanish>
+            <Portuguese>Aviso de addon incompatível</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_SETTING_incompatibilityWarning_Desc">
             <English>Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that could negatively affect correct functionality of KAT are used.\n Warning disappears after 60 seconds.</English>
@@ -322,6 +343,7 @@
             <Italian>Mostra un allerta e aggiungi una line al file RPT log se l'addon è incompatibile (elencato da noi sviluppatori) che possa influenzare negativamente sul corretto utilizzo della KAT \n L'avviso sparisce dopo 60 secondi.</Italian>
             <Polish>Pokazuje error i dodaje log do RPT jeśli niekompatybilny mod (podane przez developerów KAT), który może powodować błędy jest używany. \nPowiadomienie znika po 60 sekundach.</Polish>
             <Spanish>Muestra una advertencia y agrega una lina al log RPT si hay addons incompatibles(Listados por los desarolladores) que podrian afectar negativamente el funcionamiento de KAT.\n La advertencia desaparece 60 segundos mas tarde.</Spanish>
+            <Portuguese>Mostra um aviso e adiciona uma linha ao log do RPT se forem usados ​​complementos incompatíveis (listados por nós - desenvolvedores) que podem afetar negativamente a funcionalidade correta do KAT.\n O aviso desaparece após 60 segundos.</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_incompatibilityWarning_Desc">
             <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
@@ -333,6 +355,7 @@
             <Italian>[AVVISO KAM]  E' stata rilevato almeno un addon che potrebbe influenzare negativamente il corretto funzionamenot della KAT. Gli sviluppatori della KAT consigliando vivamente di rumuovere questi addons.</Italian>
             <Polish>[KAM WARNING] Niekompatybilny mod, który może wywoływać błędy został wykryty. Zespół deweloperski KAT - Advanced Medical REWRITE stanowczo odradza użycie następujących modów: %1 </Polish>
             <Spanish>[ADVERTENCIA DE KAM] Addon(s) incompatibles que podrían afectar negativamente el funcionamiento del mod fueron detectados. El equipo de desarollo de KAT - Advanced Medical REWRITE recomienda fuertemente de remover estos addons. %1</Spanish>
+            <Portuguese>[AVISO DE KAM] Detectados addons incompatíveis que podem afetar negativamente a funcionalidade correta. KAT - A equipe de desenvolvimento do Advanced Medical REWRITE recomenda fortemente a remoção destes complementos: %1</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -345,6 +368,7 @@
             <Chinesesimp>基础设置</Chinesesimp>
             <Japanese>基本設定</Japanese>
             <Spanish>Parámetros básicos</Spanish>
+            <Portuguese>Configurações básicas</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_SETTING_arsenalMedCategory">
             <English>Arsenal Medical category</English>
@@ -356,6 +380,7 @@
             <Polish>Kategoria medyczna w Arsenale</Polish>
             <German>Arsenal Medizin-Kategorie</German>
             <Korean>아스널 의료 카테고리</Korean>
+            <Portuguese>Categoria Médica do Arsenal</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_SETTING_arsenalMedCategory_Desc">
             <English>Enable medical category for arsenal and relocate all medical related items to it?</English>
@@ -367,6 +392,7 @@
             <Polish>Włączyć kategorię medyczną dla arsenału i przenieść do niej wszystkie przedmioty związane z medycyną?</Polish>
             <German>Aktiviere Medizin-Kategorie für das Arsenal und verschiebe alle medizinischen Gegenstände dort hin?</German>
             <Korean>아스널의 의료 카테고리를 활성화하고 모든 의료 관련 아이템을 아스널로 재배치합니까?</Korean>
+            <Portuguese>Ativar categoria médica para arsenal e realocar todos os itens médicos relacionados a ela?</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_Stretcher_Display">
             <English>Stretcher</English>
@@ -382,6 +408,7 @@
             <Russian>Носилки</Russian>
             <Spanish>Camilla</Spanish>
             <Turkish>Sedye</Turkish>
+            <Portuguese>Maca</Portuguese>
         </Key>
         <Key ID="STR_kat_misc_StretcherPacked_Display">
             <English>Stretcher (Packed)</English>
@@ -397,6 +424,7 @@
             <Russian>Носилки (упакованные)</Russian>
             <Spanish>Camilla (Plegada)</Spanish>
             <Turkish>Sedye (Paketli)</Turkish>
+            <Portuguese>Maca (Embalada)</Portuguese>
         </Key>
     </Package>
 </Project>
