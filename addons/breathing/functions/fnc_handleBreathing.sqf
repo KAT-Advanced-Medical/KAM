@@ -29,8 +29,12 @@ if (!local _unit) then {
     params ["_args", "_idPFH"];
     _args params ["_unit"];
     if !(alive _unit) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_O2Breathing_PFH", nil];
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+    };
+
+    if (!(_unit getVariable [QGVAR(lowSpO2ppActive), false]) && hasInterface && ACE_Player == _unit) then {
+        [QGVAR(lowSpO2pp), [_unit], _unit] call CBA_fnc_targetEvent;
     };
 
     private _airway = true;
@@ -146,57 +150,29 @@ if (!local _unit) then {
         if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(SpO2_unconscious)}) then {
             [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
         };
-        
-        if (GVAR(enableSPO2Flashing)) then {
-            if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(lowSPO2Level)}) then {
-                ["ColorCorrections", 1500, [1, 1, 0, [0, 0, 0, 0], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]]] spawn
-                {
-                    params ["_name", "_priority", "_effect", "_handle"];
-                    while {
-                        _handle = ppEffectCreate [_name, _priority];
-                        _handle < 0
-                    } do {
-                        _priority = _priority + 1;
-                    };
-                    _handle ppEffectEnable true;
-                    _handle ppEffectAdjust _effect;
-                    _handle ppEffectCommit 0.7;
-
-                    [{  params["_handle"];
-                        ppEffectCommitted _handle
-                    }, 
-                    {   params["_handle"];          
-                        _handle ppEffectAdjust [1, 1, 0, [0, 0, 0, 0.9], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
-                        _handle ppEffectCommit 0.7;
-
-                        [{  params["_handle"];
-                            ppEffectCommitted _handle
-                        }, 
-                        {   params["_handle"];
-                            _handle ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]];
-                            _handle ppEffectCommit 1.6;       
-                            
-                            [{  params["_handle"];
-                                ppEffectCommitted _handle
-                            }, 
-                            {   params["_handle"];           
-                                _handle ppEffectEnable false;
-                                ppEffectDestroy _handle;
-                            }, [_handle]] call CBA_fnc_waitUntilAndExecute;
-
-                        }, [_handle]] call CBA_fnc_waitUntilAndExecute;
-
-                    }, [_handle]] call CBA_fnc_waitUntilAndExecute;
-                };
-            };
-        };
-
+            
         if(GVAR(staminaLossAtLowSPO2)) then {
             if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(lowSPO2Level)}) then {
                 if (ACEGVAR(advanced_fatigue,enabled)) then {
-                    ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) - 30;
+                    ["LSDF", 1.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
                 } else {
                     _unit setStamina(getStamina _unit - 3);
+                };
+            } else {
+                ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+            };
+        };
+        
+        if (_unit getVariable [QGVAR(pneumothorax), false] || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false]) then {
+            if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false])) then {
+                if (!(_unit getVariable [QGVAR(PneumoBreathCooldownOn), false])) then {
+                    _unit setVariable [QGVAR(PneumoBreathCooldownOn), true, true];
+                    _unit say3D QGVAR(pneumothoraxcough);
+                    [{
+                        params["_unit"];
+                        _unit setVariable [QGVAR(PneumoBreathCooldownOn), false];
+                    },
+                    [_unit], 30] call CBA_fnc_waitAndExecute;
                 };
             };
         };

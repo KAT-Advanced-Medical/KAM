@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_debridementMinorLocal;
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_npwtTreatmentLocal;
  *
  * Public: No
  */
@@ -41,7 +41,7 @@ private _remainder = false;
 
 if (_count1 == 0 && _count2 == 0) then {
     private _pain = random [0.7, 0.8, 0.9];
-    [_patient, _pain] remoteExec ["ace_medical_fnc_adjustPainLevel", _patient];
+    [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
 };
 
 {

@@ -9,7 +9,7 @@
             <Chinese>啟用ACE-雜項?</Chinese>
             <Chinesesimp>启用ACE-杂项</Chinesesimp>
             <Czech>ACE-Misc aktivováno?</Czech>
-            <Korean>ACE 음악 활성화</Korean>
+            <Korean>ACE-기타 활성화</Korean>
             <French>ACE-Misc activé?</French>
             <Turkish>ACE-Misc activated?</Turkish>
             <Italian>Attivare ACE-Misc?</Italian>
@@ -279,7 +279,7 @@
             <Chinese>可连接直升机</Chinese>
             <Chinesesimp>可连接担架</Chinesesimp>
             <Czech>Připevnitelná helinosítka</Czech>
-            <Korean>부착형 헬리스트레처</Korean>
+            <Korean>부착형 헬기용 들것</Korean>
             <French>Hélicivière amovible </French>
             <Turkish>Helitakılabilir sedye</Turkish>
             <Italian>Elibarella agganciabile</Italian>
@@ -294,7 +294,7 @@
             <Chinese>允许您在直升机上附加担架（双击）</Chinese>
             <Chinesesimp>允许您在直升机上附加担架（双击）</Chinesesimp>
             <Czech>Umožňuje připevnit nosítka na helikoptéru(Dvojtým kliknutím)</Czech>
-            <Korean>헬리콥터에 들것 부착 가능(더블 클릭)</Korean>
+            <Korean>헬기에 들것을 부착할 수 있습니다(더블 클릭)</Korean>
             <French>Vous permet d'attacher une civière sur hélicoptère (double clic)</French>
             <Turkish>Helikoptere sedye takmanızı sağlar(Çift tıklama)</Turkish>
             <Italian>Consente di collegare una barella sull'elicottero (doppio clic)</Italian>
@@ -355,6 +355,7 @@
             <Italian>Categoria medica nell'Arsenale</Italian>
             <Polish>Kategoria medyczna w Arsenale</Polish>
             <German>Arsenal Medizin-Kategorie</German>
+            <Korean>아스널 의료 카테고리</Korean>
         </Key>
         <Key ID="STR_kat_misc_SETTING_arsenalMedCategory_Desc">
             <English>Enable medical category for arsenal and relocate all medical related items to it?</English>
@@ -365,6 +366,37 @@
             <Italian>Abilita la categoria medica nell'arsernale e muovi tutti gli oggetti medici in questa categoria?</Italian>
             <Polish>Włączyć kategorię medyczną dla arsenału i przenieść do niej wszystkie przedmioty związane z medycyną?</Polish>
             <German>Aktiviere Medizin-Kategorie für das Arsenal und verschiebe alle medizinischen Gegenstände dort hin?</German>
+            <Korean>아스널의 의료 카테고리를 활성화하고 모든 의료 관련 아이템을 아스널로 재배치합니까?</Korean>
+        </Key>
+        <Key ID="STR_kat_misc_Stretcher_Display">
+            <English>Stretcher</English>
+            <Japanese>担架</Japanese>
+            <Chinese>擔架</Chinese>
+            <Chinesesimp>担架</Chinesesimp>
+            <Czech>Nosítka</Czech>
+            <French>Civière</French>
+            <German>Krankentrage</German>
+            <Italian>Barella</Italian>
+            <Korean>들것</Korean>
+            <Polish>Nosze</Polish>
+            <Russian>Носилки</Russian>
+            <Spanish>Camilla</Spanish>
+            <Turkish>Sedye</Turkish>
+        </Key>
+        <Key ID="STR_kat_misc_StretcherPacked_Display">
+            <English>Stretcher (Packed)</English>
+            <Japanese>担架 (折り畳み)</Japanese>
+            <Chinese>擔架（打包）</Chinese>
+            <Chinesesimp>担架（打包）</Chinesesimp>
+            <Czech>Nosítka (Zabalená)</Czech>
+            <French>Civière (Emballée)</French>
+            <German>Krankentrage (Gepackt)</German>
+            <Italian>Barella (Imballo)</Italian>
+            <Korean>들것 (포장되다)</Korean>
+            <Polish>Nosze (Zapakowane)</Polish>
+            <Russian>Носилки (упакованные)</Russian>
+            <Spanish>Camilla (Plegada)</Spanish>
+            <Turkish>Sedye (Paketli)</Turkish>
         </Key>
     </Package>
 </Project>
