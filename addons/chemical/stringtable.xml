@@ -251,7 +251,7 @@
         </Key>
         <Key ID="STR_kat_chemical_TriWire_Gas_Name">
             <English>Tripwire Gas</English>
-            <German>Stolperdraht-Mine Gas</German>
+            <German>Stolperdraht-Falle Senfgas</German>
             <French>Grenade Tripwire</French>
             <Japanese>仕掛け型ガス地雷</Japanese>
             <Korean>인계철선 가스지뢰</Korean>
@@ -259,7 +259,7 @@
         </Key>
         <Key ID="STR_kat_chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>
-            <German>Typ: Stolperdraht-Gas - Versprüht bei Auslösung ein gifitges Gas.&lt;br /&gt;Ladungen: 1&lt;br /&gt;Benutzt auf: Boden</German>
+            <German>Typ: Stolperdraht-Falle Senfgas - Versprüht bei Auslösung ein gifitges Gas.&lt;br /&gt;Ladungen: 1&lt;br /&gt;Benutzt auf: Boden</German>
             <French>Type : Gaz Tripwire - Spraye un gaz empoisonné quand activé.&lt;br /&gt;Munitions: 1&lt;br /&gt;Utilisé sur : le sol</French>
             <Japanese>タイプ: 対人仕掛け線ガス地雷 - 作動で毒ガスを噴霧します&lt;br /&gt;弾薬: 1&lt;br /&gt;使用: 地上</Japanese>
             <Korean>유형: 인계철선 가스 - 작동 시 독가스를 분사합니다.&lt;br /&gt;탄수: 1&lt;br /&gt;사용: 지상</Korean>
