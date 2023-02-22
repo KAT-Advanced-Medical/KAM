@@ -86,7 +86,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_CancelRecoveryPosition);
     };
     class CheckPulse;
-    class CheckAirway: checkPulse {
+    class CheckAirway: CheckPulse {
         displayName = CSTRING(checkAirway);
         displayNameProgress = CSTRING(action_checking);
         category = "airway";
