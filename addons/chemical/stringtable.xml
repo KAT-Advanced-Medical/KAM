@@ -183,7 +183,6 @@
         </Key>
         <Key ID="STR_kat_chemical_GasModule_min_radius_dcs">
             <English>The Minimal Range describes the area around the module where the gas is most lethal</English>
-            <German>Die minimale Reichweite beschreibt den Bereich um das Modul herum, in dem das Gas am tödlichsten ist</German>
             <German>Die minimale Reichweite beschreibt den Bereich im Umkreis des Moduls, in dem das Gas am tötlichsten wirkt.</German>
             <French>Le rayon minimal décrit la zone autour du module ou le gaz est le plus létal</French>
             <Japanese>最小範囲は、ガスが最も致死的であるモジュールの周辺を表します。</Japanese>
