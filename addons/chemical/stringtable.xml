@@ -464,7 +464,6 @@
         </Key>
         <Key ID="STR_kat_chemical_UI_sealable_tooltip">
             <English>ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!</English>
-            <German>FUNKTIONIERT NUR, WENN DAS MODUL AUF EINEM OBJEKT IST!</German>
             <German>FUNKTIONIERT NUR, WENN DAS MODUL MIT EINEM OBJEKT SYNCHRONISIERT IST!</German>
             <French>FONTIONNE UNIQUEMENT SI LE MODULE EST SYNCHRONISE AVEC UN OBJET!</French>
             <Japanese>ロジックがオブジェクトと同期している場合にのみ機能します!</Japanese>
