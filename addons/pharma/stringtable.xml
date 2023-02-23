@@ -2537,7 +2537,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid2">
             <English>You gain a sudden rush!</English>
-            <German>Du bekommst einen spontanen Schub...</German>
+            <German>Du bekommst einen spontanen Rush...</German>
             <French>Vous sentez un élan soudain !</French>
             <Korean>갑자기 심하게 두근거린다!</Korean>
             <Japanese>あなたを突如激しい動悸が襲う!</Japanese>
@@ -2546,7 +2546,7 @@
         </Key>
         <Key ID="STR_kat_pharma_Pervitin_mid3">
             <English>You gain another rush!</English>
-            <German>Du bekommst einen weiteren Schub...</German>
+            <German>Du bekommst einen weiteren Rush...</German>
             <French>Vous sentez un autre élan !</French>
             <Korean>두근거림이 더 격렬해진다!</Korean>
             <Japanese>動悸は激しさを増してゆく!</Japanese>
