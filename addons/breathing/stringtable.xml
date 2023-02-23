@@ -525,7 +525,7 @@
         </Key>
         <Key ID="STR_kat_breathing_ncdKit_desc">
             <English>The Needle Chest Decompression Kit is a single use kit designed to treat a tensionpneumothorax.</English>
-            <German>Das Nadeldekompressions Kit ist ein Einweg-Kit das zur Behandlung eines Spannungspneumothorax vorgesehen ist.</German>
+            <German>Das Nadeldekompressions-Kit ist ein Einweg-Kit, das zur Behandlung eines Spannungspneumothorax vorgesehen ist.</German>
             <Polish>Zestaw NCD to zestaw jednorazowego użytku przeznaczony do leczenia odmy prężnej.</Polish>
             <Japanese>NCDキット (Needle Chest Decompression, 胸部針減圧術)は、緊張性気胸の治療用に設計された使い捨てキットです。</Japanese>
             <Czech>NCD Kit je sada pro ošetření tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
@@ -554,6 +554,7 @@
             <French>Règle la chance d'avoir un hémopneumothorax. Règle également la chance d'un pneumothorax sous tension (60% Hémo = 40% Tension)</French>
             <Korean>혈기흉의 확률을 설정합니다. 또한 긴장성 기흉의 확률을 설정합니다. (혈기흉 60% = 긴장성 기흉 40%)</Korean>
             <Italian>Imposta la probabilità per l'emopneumotorace. Imposta inoltre la probabilità per pneumotorace da tensione. (60% Emopn. =  40% Pneum. tensione)</Italian>
+            <German>Legt die Wahrscheinlichkeit für einen Hämatopneumothorax fest. Legt auch die Wahrscheinlichkeit auf einen Spannungspneumothorax fest(60 % Hämo = 40 % Spannungspneu</German>
             <Portuguese>Define a chance de hemopneumotórax. Também define a chance de pneumotórax hipertensivo (60% Hemo = 40% Hipertensivo)</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_ADVANCED_PTX_OPTION">
@@ -564,6 +565,7 @@
             <French>Activer les pneumothorax avancés</French>
             <Korean>고급 기흉 활성화</Korean>
             <Italian>Abilità pneumotorace avanzato</Italian>
+            <German>Ausgeprägte Pneumothoraces aktivieren</German>
             <Portuguese>Habilitar pneumotóraxes avançados</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_ADVANCED_PTX_OPTION">
@@ -574,6 +576,7 @@
             <French>Active les pneumothorax avancés - Hémopneumothorax et pneumothorax sous tension</French>
             <Korean>고급 기흉을 활성화합니다. - 혈기흉 및 긴장성 기흉</Korean>
             <Italian>Abilità la pneumotorace avanzato - emopneumotorace e pneumotorace da tensione</Italian>
+            <German>Aktiviert Ausgeprägte Pneumothoraces - Hämatopneumothoraces und Spannungspneumothoraces</German>
             <Portuguese>Permite pneumotóraxes avançados - hemopneumotórax e pneumotórax hipertensivo</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_ADVANCED_PTX_CHANCE_OPTION">
@@ -584,6 +587,7 @@
             <French>Chance de pneumothorax avancé</French>
             <Korean>고급 기흉 확률</Korean>
             <Italian>Probabilità di pneumotorace avanzato</Italian>
+            <German>Wahrscheinlichkeit für ausgeprägten Pneumothorax</German>
             <Portuguese>Probabilidade de pneumotórax avançado</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_ADVANCED_PTX_CHANCE_OPTION">
