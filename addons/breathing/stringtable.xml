@@ -565,7 +565,7 @@
             <French>Activer les pneumothorax avancés</French>
             <Korean>고급 기흉 활성화</Korean>
             <Italian>Abilità pneumotorace avanzato</Italian>
-            <German>Erweiterte Pneumothoraces aktivieren</German>
+            <German>Ausgeprägte Pneumothoraces aktivieren</German>
             <Portuguese>Habilitar pneumotóraxes avançados</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_ADVANCED_PTX_OPTION">
@@ -576,7 +576,7 @@
             <French>Active les pneumothorax avancés - Hémopneumothorax et pneumothorax sous tension</French>
             <Korean>고급 기흉을 활성화합니다. - 혈기흉 및 긴장성 기흉</Korean>
             <Italian>Abilità la pneumotorace avanzato - emopneumotorace e pneumotorace da tensione</Italian>
-            <German>Aktiviert erweiterte Pneumothoraces - Hämatopneumothoraces und Spannungspneumothoraces</German>
+            <German>Aktiviert Ausgeprägte Pneumothoraces - Hämatopneumothoraces und Spannungspneumothoraces</German>
             <Portuguese>Permite pneumotóraxes avançados - hemopneumotórax e pneumotórax hipertensivo</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_ADVANCED_PTX_CHANCE_OPTION">
@@ -587,7 +587,7 @@
             <French>Chance de pneumothorax avancé</French>
             <Korean>고급 기흉 확률</Korean>
             <Italian>Probabilità di pneumotorace avanzato</Italian>
-            <German>Wahrscheinlichkeit für erweiterte Pneumothorax</German>
+            <German>Wahrscheinlichkeit für ausgeprägten Pneumothorax</German>
             <Portuguese>Probabilidade de pneumotórax avançado</Portuguese>
         </Key>
         <Key ID="STR_kat_breathing_DESCRIPTION_ADVANCED_PTX_CHANCE_OPTION">
