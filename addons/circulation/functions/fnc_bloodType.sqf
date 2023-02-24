@@ -19,10 +19,10 @@
 params ["_unit"];
 
 if (_unit != player) then {
-	  if (isNil {_unit getVariable QGVAR(bloodtype)}) then {
-	  private _randomBloodType = selectRandomWeighted ["O",0.35,"O_N",0.13,"A",0.3,"A_N",0.08,"B",0.08,"B_N",0.02,"AB",0.02,"AB_N",0.01];
-	  _unit setVariable [QGVAR(bloodtype), _randomBloodType, true];
-	  _unit setVariable [QACEGVAR(dogtags,dogtagData), nil, true];
+        if (isNil {_unit getVariable QGVAR(bloodtype)}) then {
+        private _randomBloodType = selectRandomWeighted ["O",0.35,"O_N",0.13,"A",0.3,"A_N",0.08,"B",0.08,"B_N",0.02,"AB",0.02,"AB_N",0.01];
+        _unit setVariable [QGVAR(bloodtype), _randomBloodType, true];
+        _unit setVariable [QACEGVAR(dogtags,dogtagData), nil, true];
     };
 };
 

@@ -30,34 +30,34 @@
     if (!local _patient) exitWith {["ace_treatmentSucceded", _this, _patient] call CBA_fnc_targetEvent};
     if (_classname == "Epinephrine") then {
 
-		if (ACE_Player != _patient) exitWith {};
-		if (ACEGVAR(advanced_fatigue,enabled)) then {
-			params ["_patient"];
-			if !(alive _patient) exitWith {};
-			ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 300;
-			["EDF", 0.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
+        if (ACE_Player != _patient) exitWith {};
+        if (ACEGVAR(advanced_fatigue,enabled)) then {
+            params ["_patient"];
+            if !(alive _patient) exitWith {};
+            ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 300;
+            ["EDF", 0.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
 
-			[{
-				params ["_patient"];
-				["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-			},
-			[_patient],
-			120] call CBA_fnc_waitAndExecute;
-		
-		} else {
-			
-			params ["_patient"];
+            [{
+                params ["_patient"];
+                ["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+            },
+            [_patient],
+            120] call CBA_fnc_waitAndExecute;
 
-			if !(alive _patient) exitWith {};
-			_patient setAnimSpeedCoef 1.2;
-			_patient setStamina 180;
-			
-			[{
-				params ["_patient"];
-				_patient setAnimSpeedCoef 1;
-			},
-			[_patient],
-			120] call CBA_fnc_waitAndExecute;
-		};
+        } else {
+
+            params ["_patient"];
+
+            if !(alive _patient) exitWith {};
+            _patient setAnimSpeedCoef 1.2;
+            _patient setStamina 180;
+
+            [{
+                params ["_patient"];
+                _patient setAnimSpeedCoef 1;
+            },
+            [_patient],
+            120] call CBA_fnc_waitAndExecute;
+        };
     };
 }] call CBA_fnc_addEventHandler;

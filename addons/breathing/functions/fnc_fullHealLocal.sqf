@@ -48,8 +48,8 @@ _unit setVariable [QEGVAR(chemical,isTreated) ,true,true];
 _unit setVariable [QEGVAR(chemical, CS), false, true];
 _unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime), 60], true];
 if (_unit getVariable [QEGVAR(chemical, painEffect), 0] != 0) then {
-		KAT_PAIN_EFFECT ppEffectEnable false;
-	};
+        KAT_PAIN_EFFECT ppEffectEnable false;
+};
 
 // Tourniquets
 {
@@ -150,14 +150,14 @@ TRACE_1("after FullHeal",_state);
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     
     ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-	["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
 
 } else {
 
     _unit enableStamina true;
-	_unit setAnimSpeedCoef 1;
+    _unit setAnimSpeedCoef 1;
     _unit setCustomAimCoef 1;
 
 };

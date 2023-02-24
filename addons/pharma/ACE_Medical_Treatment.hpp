@@ -1,5 +1,5 @@
 class ADDON {
-	class Medication {
+    class Medication {
         class Epinephrine {
             painReduce = 0;
             hrIncreaseLow[] = {10, 20};

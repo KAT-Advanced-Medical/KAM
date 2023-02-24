@@ -17,14 +17,14 @@
  */
 
 [] spawn {
-	disableSerialization;
-	private _display = uiNamespace getVariable ["ace_medical_gui_menuDisplay", displayNull];
-	private _ctrlBodyImage = _display displayCtrl IDC_BODY_GROUP;
-	private _torso_infectet = _display ctrlCreate ["RscPicture", 6011,_ctrlBodyImage];
-	_torso_infectet ctrlShow false;
-	_torso_infectet ctrlSetText QPATHTOF(data\body_image\torso_i.paa);
-	_torso_infectet ctrlSetPosition[0,0,POS_W(12.33),POS_H(12.33)];
-	_torso_infectet ctrlCommit 0;
+    disableSerialization;
+    private _display = uiNamespace getVariable ["ace_medical_gui_menuDisplay", displayNull];
+    private _ctrlBodyImage = _display displayCtrl IDC_BODY_GROUP;
+    private _torso_infectet = _display ctrlCreate ["RscPicture", 6011,_ctrlBodyImage];
+    _torso_infectet ctrlShow false;
+    _torso_infectet ctrlSetText QPATHTOF(data\body_image\torso_i.paa);
+    _torso_infectet ctrlSetPosition[0,0,POS_W(12.33),POS_H(12.33)];
+    _torso_infectet ctrlCommit 0;
 };
 
 
@@ -47,15 +47,15 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
 {
     _x params ["_bodyPartIDC", ["_tourniquetIDC", -1], ["_fractureIDC", -1], ["_infectedIDC", -1]];
 
-	if (_infectedIDC != -1) then {
+    if (_infectedIDC != -1) then {
     private _ctrlairInfected = _ctrlGroup controlsGroupCtrl _infectedIDC;
         if(_target getVariable [QGVAR(airPoisoning),false]) then{
             _ctrlairInfected ctrlShow true;
         } else {
             _ctrlairInfected ctrlShow false;
         };
-			
-	};
+            
+    };
 
     // Show or hide the tourniquet icon
     if (_tourniquetIDC != -1) then {

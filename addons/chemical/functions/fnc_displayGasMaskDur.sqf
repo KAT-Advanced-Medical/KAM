@@ -21,7 +21,7 @@ private _durabilityStructuredText = if(_durability >= 0) then {
     
     private _color = [((2 * (1 - _durability / 10)) min 1), ((2 * _durability / 10) min 1), 0];
 
-	private _string = "";
+    private _string = "";
     for "_a" from 1 to _durability do {
         _string = _string + "|";
     };
