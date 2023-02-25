@@ -18,11 +18,11 @@ KAT_ProjectileChache = ("([_x, 'KAT_porjectile', 0] call BIS_fnc_returnConfigEnt
 
 ppBlur_priority = 399;
 [{
-	ppBlur_priority = ppBlur_priority + 1;
-	ppBlur = ppEffectCreate ["DynamicBlur", ppBlur_priority];
-	ppBlur != -1
+    ppBlur_priority = ppBlur_priority + 1;
+    ppBlur = ppEffectCreate ["DynamicBlur", ppBlur_priority];
+    ppBlur != -1
 }, {
-	ppBlur ppEffectEnable false;
-	ppBlurAmount = 0;
-	ppBluring = false;
+    ppBlur ppEffectEnable false;
+    ppBlurAmount = 0;
+    ppBluring = false;
 }] call CBA_fnc_waitUntilAndExecute;
