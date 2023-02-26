@@ -36,13 +36,13 @@ if(_gastype isEqualTo "CS") then {[getPosASL _logic, _radius, _lifetime] call FU
 private _currentTime = CBA_missionTime;
 
 [{
-	//condition
+    //condition
     params["_logic","_lifetime","_currentTime"];
-	(CBA_missionTime - (_currentTime)) > _lifetime
+    (CBA_missionTime - (_currentTime)) > _lifetime
 },
 {
-	//code
+    //code
     params["_logic"];
-	_logic setVariable [QGVAR(gas_active),false,true];
-	deleteVehicle _logic;
+    _logic setVariable [QGVAR(gas_active),false,true];
+    deleteVehicle _logic;
 },[_logic,_lifetime,_currentTime]] call CBA_fnc_waitUntilAndExecute;

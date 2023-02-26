@@ -16,14 +16,14 @@
  * This adds the function to Load gas mortar rounds into a mortar using the CSW function from ace
 */
 private _condition = { //IGNORE_PRIVATE_WARNING ["_target", "_player"];
-	// If magazine handling is enabled or weapon assembly/disassembly is enabled we enable ammo handling
-	if ((ace_csw_ammoHandling == 0) && {!([false, true, true, ace_csw_defaultAssemblyMode] select (_target getVariable [ace_csw_assemblyMode, 3]))}) exitWith { false };
-	[_player, _target, ["isNotSwimming", "isNotSitting"]] call ace_common_canInteractWith;
+    // If magazine handling is enabled or weapon assembly/disassembly is enabled we enable ammo handling
+    if ((ace_csw_ammoHandling == 0) && {!([false, true, true, ace_csw_defaultAssemblyMode] select (_target getVariable [ace_csw_assemblyMode, 3]))}) exitWith { false };
+    [_player, _target, ["isNotSwimming", "isNotSitting"]] call ace_common_canInteractWith;
 };
 
 private _childenCode = {
-	private _ret = (call ace_csw_reload_actionsLoad) + (call ace_csw_reload_actionsUnload);
-	_ret
+    private _ret = (call ace_csw_reload_actionsLoad) + (call ace_csw_reload_actionsUnload);
+    _ret
 };
 
 private _magazineLocation = getText (configFile >> "CfgVehicles" >> "Mortar_01_base_F" >> "ace_csw" >> "magazineLocation");
