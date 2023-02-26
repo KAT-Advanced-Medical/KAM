@@ -7,34 +7,32 @@
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
  * 2: Body Part <STRING>
- * 3: Entry <STRING>
  *
  * Return Value:
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg", "_entry"] call kat_surgery_fnc_closedFractureLocal
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_closedReductionLocal
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart", "_entry"];
+params ["_medic", "_patient", "_bodyPart"];
 
 private _part = ALL_BODY_PARTS find toLower _bodyPart;
 private _activeFracture = GET_FRACTURES(_patient);
 private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
 private _count1 = [_patient, "Lidocaine"] call ACEFUNC(medical_status,getMedicationCount);
 private _count2 = [_patient, "Morphine"] call ACEFUNC(medical_status,getMedicationCount);
-private _number = _entry;
 
 if (_count1 == 0 && _count2 == 0) then {
     private _pain = random [0.7, 0.8, 0.9];
-    [_patient, _pain] remoteExec ["ace_medical_fnc_adjustPainLevel", _patient];
+    [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
 };
 
 playsound3D [QPATHTOF_SOUND(sounds\reduction.wav), _patient, false, getPosASL _patient, 8, 1, 15];
 
-if (_number < 3) exitWith {
+if (random 100 < GVAR(closedReductionFailChance)) exitWith {
     private _output = LLSTRING(fracture_fail);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };

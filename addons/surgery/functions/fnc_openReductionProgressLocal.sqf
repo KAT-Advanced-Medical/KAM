@@ -51,15 +51,15 @@ if (_entry == 2.3 && _reduce) exitWith {
 };
 
 if (_number == _liveFracture) exitWith {
-    switch (true) do {
-        case (_entry == 2.1): {
-        _surgeryString = LSTRING(EXPOSED);
+    switch (_entry) do {
+        case (2.1):{
+            _surgeryString = LSTRING(EXPOSED);
         };
-        case (_entry == 2.3): {
-        _surgeryString = LSTRING(IRRIGATED);
+        case (2.3):{
+            _surgeryString = LSTRING(IRRIGATED);
         };
-        case (_entry == 3.3): {
-        _surgeryString = LSTRING(CLAMPED);
+        case (3.3):{
+            _surgeryString = LSTRING(CLAMPED);
         };
     };
 

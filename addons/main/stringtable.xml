@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="main">
-        <Key ID="STR_kat_main_URL">
+<Project name="KAT">
+    <Package name="Main">
+        <Key ID="STR_KAT_Main_URL">
             <English>https://github.com/Tomcat-SG/KAM</English>
         </Key>
     </Package>

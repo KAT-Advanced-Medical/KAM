@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: 1LT.Mazinski.H
- * Selects the patient's fracture state
+ * Starts the surgical process for a fracture
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -12,11 +12,11 @@
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_fractureSelect
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_incision
  *
  * Public: No
  */
 
 params ["_medic", "_patient", "_bodyPart"];
 
-[QGVAR(fractureSelect), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+[QGVAR(incision), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;

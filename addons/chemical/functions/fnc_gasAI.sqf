@@ -37,8 +37,8 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_gastype"];
 
 private _skill = _unit skill "aimingAccuracy";
 [
-	{
-	    params["_args","_handler"];
+    {
+        params["_args","_handler"];
         _args params ["_unit", "_logic", "_pos", "_radius_max", "_gastype"];
 
         if(!(_logic getVariable [QGVAR(gas_active), false]) || isNull _logic || !(alive _unit) || _unit getVariable ["ACE_isUnconscious", false]) exitWith {
@@ -102,7 +102,7 @@ private _skill = _unit skill "aimingAccuracy";
                 };
             };
         };
-	},
+    },
     5,
     [_unit,_logic,_pos,_radius_max,_gastype]
 ] call CBA_fnc_addPerFrameHandler;

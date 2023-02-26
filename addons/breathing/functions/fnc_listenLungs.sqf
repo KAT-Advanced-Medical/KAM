@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Battlekeeper, modified by YetheSamartaka and Tomcat
- * Handles listeting to Lungs.
+ * Handles listening to lungs.
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -22,44 +22,46 @@ params ["_medic","_patient"];
 
 if ((_patient getVariable [QACEGVAR(medical,heartRate), 80]) isEqualTo 0) exitWith {};
 
+private _volume = GVAR(stethoscopeSoundVolume);
+
 _random = round random 1;
 
 if (_patient getVariable [QGVAR(pneumothorax), false]) exitWith {
   if (_random >= 0.5) then {
-    playSound "tensionpneumothorax";
+    playSoundUI ["tensionpneumothoraxbreathing", _volume, 1];
     sleep 7;
-    playSound "normalbreathing";
+    playSoundUI ["normalbreathing", _volume, 1];
   } else {
-    playSound "normalbreathing";
+    playSoundUI ["normalbreathing", _volume, 1];
     sleep 7;
-    playSound "tensionpneumothorax";
+    playSoundUI ["tensionpneumothoraxbreathing", _volume, 1];
   };
 };
 
 if (_patient getVariable [QGVAR(hemopneumothorax), false]) exitWith {
   if (_random >= 0.5) then {
-    playSound "hemothoraxbreathing";
+    playSoundUI ["hemothoraxbreathing", _volume, 1];
     sleep 7;
-    playSound "normalbreathing";
+    playSoundUI ["normalbreathing", _volume, 1];
   } else {
-    playSound "normalbreathing";
+    playSoundUI ["normalbreathing", _volume ,1];
     sleep 7;
-    playSound "hemothoraxbreathing";
+    playSoundUI ["hemothoraxbreathing", _volume, 1];
   };
 };
 
 if (_patient getVariable [QGVAR(tensionpneumothorax), false]) exitWith {
   if (_random >= 0.5) then {
-    playSound "tensionpneumothorax";
+    playSoundUI ["tensionpneumothoraxbreathing", _volume, 1];
     sleep 7;
-    playSound "normalbreathing";
+    playSoundUI ["normalbreathing", _volume, 1];
   } else {
-    playSound "normalbreathing";
+    playSoundUI ["normalbreathing", _volume, 1];
     sleep 7;
-    playSound "tensionpneumothorax";
+    playSoundUI ["tensionpneumothoraxbreathing", _volume, 1];
   };
 };
 
-playSound "normalbreathing";
+playSoundUI ["normalbreathing", _volume, 1];
 sleep 7;
-playSound "normalbreathing";
+playSoundUI ["normalbreathing", _volume, 1];

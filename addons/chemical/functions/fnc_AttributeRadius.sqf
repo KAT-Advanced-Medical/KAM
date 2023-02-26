@@ -50,9 +50,9 @@ private _fnc_onKeyUp = {
 
 
     private _maxEdit = _display displayCtrl 1611;
-	private _minEdit = _display displayCtrl 1612;
+    private _minEdit = _display displayCtrl 1612;
     private _maxradius = parseNumber (ctrlText _maxEdit);
-	private _minradius = parseNumber (ctrlText _minEdit);
+    private _minradius = parseNumber (ctrlText _minEdit);
 
     // Handle invalid radius (non-numerical input)
     if (_maxradius == 0) then {
@@ -61,10 +61,10 @@ private _fnc_onKeyUp = {
     } else {
         _maxEdit ctrlSetTooltip "";
         _maxEdit ctrlSetTextColor [1,1,1,1];
-		_display setVariable [QGVAR(ui_radiusMax),_maxradius];
+        _display setVariable [QGVAR(ui_radiusMax),_maxradius];
     };
 
-	if (_minradius == 0) then {
+    if (_minradius == 0) then {
         _minEdit ctrlSetTooltip (localize "STR_ACE_Zeus_AttributeRadiusInvalid");
         _minEdit ctrlSetTextColor [1,0,0,1];
     } else {

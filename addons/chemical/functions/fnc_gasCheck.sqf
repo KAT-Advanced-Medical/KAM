@@ -30,53 +30,53 @@ _logic setVariable [QGVAR(gas_pos), _pos, true];
 
 
 private _checkplayers = [{
-	params ["_args"];
-	_args params ["_logic","_pos","_radius_max","_radius_min","_gastype"];
-	private _playerARR = _logic getVariable [QGVAR(gas_playerArr),[]];
-	private _allUnits = if (missionNamespace getVariable [QGVAR(affectAI), false]) then {allUnits} else {allPlayers};
-	{
-		private _posString = toString (_pos);
-		private _logicPos = toString (getpos _logic);
-		if (_posString != _logicPos) then { _pos = getpos _logic; _logic setVariable [QGVAR(gas_pos), _pos, true];};
-		private _distance = position _x distance _pos;
-		if (isPlayer _x) then {
+    params ["_args"];
+    _args params ["_logic","_pos","_radius_max","_radius_min","_gastype"];
+    private _playerARR = _logic getVariable [QGVAR(gas_playerArr),[]];
+    private _allUnits = if (missionNamespace getVariable [QGVAR(affectAI), false]) then {allUnits} else {allPlayers};
+    {
+        private _posString = toString (_pos);
+        private _logicPos = toString (getpos _logic);
+        if (_posString != _logicPos) then { _pos = getpos _logic; _logic setVariable [QGVAR(gas_pos), _pos, true];};
+        private _distance = position _x distance _pos;
+        if (isPlayer _x) then {
 
-			if (_x getVariable [QGVAR(isTreated), false]) then {
-				_x setVariable [QGVAR(isTreated), false, true];
-				private _arrPos = _playerARR find _x;
-				_playerARR deleteAt _arrPos;
-				_logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
-			};
+            if (_x getVariable [QGVAR(isTreated), false]) then {
+                _x setVariable [QGVAR(isTreated), false, true];
+                private _arrPos = _playerARR find _x;
+                _playerARR deleteAt _arrPos;
+                _logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
+            };
 
-			if(_x in _playerARR && _distance > _radius_max) then {
-				private _arrPos = _playerARR find _x;
-				_playerARR deleteAt _arrPos;
-				_logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
-			};
+            if(_x in _playerARR && _distance > _radius_max) then {
+                private _arrPos = _playerARR find _x;
+                _playerARR deleteAt _arrPos;
+                _logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
+            };
 
-			if (!(_x in _playerARR) && _distance < _radius_max) then {
-				_playerARR pushBack _x;			
-				_logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
-				[QGVAR(gasCheck_local), [_x, _logic, _pos, _radius_max, _radius_min, _gastype], _x] call CBA_fnc_targetEvent;
-			};
+            if (!(_x in _playerARR) && _distance < _radius_max) then {
+                _playerARR pushBack _x;            
+                _logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
+                [QGVAR(gasCheck_local), [_x, _logic, _pos, _radius_max, _radius_min, _gastype], _x] call CBA_fnc_targetEvent;
+            };
 
-		} else {
-			if (_distance < _radius_max && alive _x && !(_x getVariable [QGVAR(enteredPoison), false])) then {
-				[QGVAR(gasCheck_ai), [_x, _logic, _pos, _radius_max, _gastype], _x] call CBA_fnc_targetEvent; 
-			};
-		};
-	} forEach _allUnits;
+        } else {
+            if (_distance < _radius_max && alive _x && !(_x getVariable [QGVAR(enteredPoison), false])) then {
+                [QGVAR(gasCheck_ai), [_x, _logic, _pos, _radius_max, _gastype], _x] call CBA_fnc_targetEvent; 
+            };
+        };
+    } forEach _allUnits;
 
 }, 3, [_logic,_pos,_radius_max,_radius_min,_gastype]] call CBA_fnc_addPerFrameHandler;
 
 
 
 [{
-	params["_args","_pfhHandle"];
-	_args params["_logic","_checkplayers"];
-	if (isNull _logic || !alive _logic || !(_logic getVariable [QGVAR(gas_active),false])) exitWith {
-		_logic setVariable [QGVAR(gas_active), false, true];
-		[_checkplayers] call CBA_fnc_removePerFrameHandler;
-		[_pfhHandle] call CBA_fnc_removePerFrameHandler;
-	};
+    params["_args","_pfhHandle"];
+    _args params["_logic","_checkplayers"];
+    if (isNull _logic || !alive _logic || !(_logic getVariable [QGVAR(gas_active),false])) exitWith {
+        _logic setVariable [QGVAR(gas_active), false, true];
+        [_checkplayers] call CBA_fnc_removePerFrameHandler;
+        [_pfhHandle] call CBA_fnc_removePerFrameHandler;
+    };
 }, 0, [_logic,_checkplayers]]call CBA_fnc_addPerFrameHandler;

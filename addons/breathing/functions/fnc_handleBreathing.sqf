@@ -25,16 +25,16 @@ if (!local _unit) then {
     [QGVAR(handleBreathing), [_unit], _unit] call CBA_fnc_targetEvent;
 };
 
-if (!(_unit getVariable [QGVAR(lowSpO2ppActive), false]) && hasInterface && ACE_Player == _unit) then {
-    [QGVAR(lowSpO2pp), [_unit], _unit] call CBA_fnc_targetEvent;
-};
-
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];
     if !(alive _unit) exitWith {
         _unit setVariable ["kat_O2Breathing_PFH", nil];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
+    };
+
+    if (!(_unit getVariable [QGVAR(lowSpO2ppActive), false]) && hasInterface && ACE_Player == _unit) then {
+        [QGVAR(lowSpO2pp), [_unit], _unit] call CBA_fnc_targetEvent;
     };
 
     private _airway = true;
