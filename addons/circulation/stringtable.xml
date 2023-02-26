@@ -1920,13 +1920,13 @@
             <German>AED-X: HR: %1 BP: %2/%3 SpO2: %4</German>
             <Portuguese>DEA-X: HR: %1 BP: %2/%3 SpO2: %4</Portuguese>
         </Key>
-        <Key ID="STR_kat_circulation_SETTING_AED_X_Monitor_NoHeartRate">
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate">
             <English>AED-X Monitor no heart rate beep type</English>
         </Key>
-        <Key ID="STR_kat_circulation_SETTING_AED_X_Monitor_NoHeartRate_Continous">
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Continous">
             <English>Continous tone</English>
         </Key>
-        <Key ID="STR_kat_circulation_SETTING_AED_X_Monitor_NoHeartRate_Alternating">
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Alternating">
             <English>Alternating tone</English>
         </Key>
     </Package>
