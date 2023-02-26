@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="gui">
-        <Key ID="STR_kat_gui_dummy">
+<Project name="KAT">
+    <Package name="Gui">
+        <Key ID="STR_KAT_Gui_dummy">
             <English>dummy for tabler application</English>
         </Key>
     </Package>

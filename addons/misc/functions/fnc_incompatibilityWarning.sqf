@@ -21,8 +21,8 @@ private _foundIncompatibleAddons = [];
 //Checks if incompatible addons are loaded
 { if (isClass(configFile >> "CfgPatches" >> _x)) then {
     _foundIncompatibleAddons append [_x];
-             //Incompatible addons
-         //Here is the Wiki page with current list: https://github.com/Tomcat-SG/KAM/wiki/Incompatible-addons
+    //Incompatible addons
+    //Here is the Wiki page with current list: https://github.com/Tomcat-SG/KAM/wiki/Incompatible-addons
 }; } forEach ["KATMEDICALSTATIC","kat_evac","KATMEDICALsteth","adv_aceCPR","aceP_main"];
 
 if ((count _foundIncompatibleAddons) > 0) then {
