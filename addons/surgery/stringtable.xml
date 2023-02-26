@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="surgery">
-        <Key ID="STR_kat_surgery_Using">
+<Project name="KAT">
+    <Package name="Surgery">
+        <Key ID="STR_KAT_Surgery_Using">
             <English>Using</English>
-            <German>Schlucke</German>
+            <German>Verwenden</German>
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
             <Chinese>服用中</Chinese>
             <Chinesesimp>使用中</Chinesesimp>
             <Czech>Používám</Czech>
-            <Korean>사용중</Korean>
+            <Korean>사용 중</Korean>
             <French>Utilisation</French>
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Usando</Italian>
             <Japanese>使用中</Japanese>
+            <Portuguese>Usando</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Pushing">
+        <Key ID="STR_KAT_Surgery_Pushing">
             <English>Pushing</English>
             <German>Verabreiche</German>
             <Polish>Wstrzykiwanie</Polish>
@@ -23,55 +24,59 @@
             <Chinese>服用中</Chinese>
             <Chinesesimp>推注中</Chinesesimp>
             <Czech>Aplikuji</Czech>
-            <Korean>사용중</Korean>
+            <Korean>사용 중</Korean>
             <French>Administration</French>
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Somministrando</Italian>
             <Japanese>注入中</Japanese>
+            <Portuguese>Administrando</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_push_log">
+        <Key ID="STR_KAT_Surgery_push_log">
             <English>%1 pushed %2</English>
-            <German>%1 intubierte mit %2</German>
+            <German>%1 verabreichte %2</German>
             <Polish>%1 wstrzyknął %2</Polish>
             <Spanish>%1 administró %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
             <Chinesesimp>%1 被推注 %2</Chinesesimp>
             <Czech>%1 aplikoval %2</Czech>
-            <Korean>%1 삽입됨 %2</Korean>
+            <Korean>%2 부위에 %1 사용됨</Korean>
             <French>%1 a administré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
             <Japanese>%1 が %2を注入</Japanese>
+            <Portuguese>%1 administrou %2</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_inject_log">
+        <Key ID="STR_KAT_Surgery_inject_log">
             <English>%1 injected %2</English>
-            <German>%1 intubierte mit %2</German>
+            <German>%1 injizierte %2</German>
             <Polish>%1 włożył %2</Polish>
             <Spanish>%1 inyectó %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
             <Chinesesimp>%1 被注射 %2</Chinesesimp>
             <Czech>%1 aplikoval %2</Czech>
-            <Korean>%1 삽입됨 %2</Korean>
+            <Korean>%2 부위에 %1 주사됨</Korean>
             <French>%1 a injecté un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
             <Japanese>%1 が %2を注射</Japanese>
+            <Portuguese>%1 injetou %2</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_use_log">
+        <Key ID="STR_KAT_Surgery_use_log">
             <English>%1 used %2</English>
-            <German>%1 intubierte mit %2</German>
+            <German>%1 verwendete %2</German>
             <Polish>%1 użył %2</Polish>
             <Spanish>%1 usó %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
             <Chinesesimp>%1 被使用 %2</Chinesesimp>
             <Czech>%1 aplikoval %2</Czech>
-            <Korean>%1 삽입됨 %2</Korean>
+            <Korean>%2 부위에 %1 사용됨</Korean>
             <French>%1 a utilisé un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
             <Japanese>%1 が %2を使用</Japanese>
+            <Portuguese>%1 usou %2</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_breath_check">
+        <Key ID="STR_KAT_Surgery_breath_check">
             <English>Patient's breath is harsh and metallic</English>
             <Chinesesimp>病人的呼吸是刺耳的</Chinesesimp>
             <Italian>Il respiro del paziente è faticoso e metallico</Italian>
@@ -80,10 +85,11 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の息はきつく金属的です</Japanese>
+            <Japanese>患者の息はきつく金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
+            <Portuguese>O hálito do paciente é aspero e metálico</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_breath_stink">
+        <Key ID="STR_KAT_Surgery_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
             <Chinesesimp>病人的呼吸是沙哑的</Chinesesimp>
             <Italian>Il respiro del paziente è faticoso e metallico</Italian>
@@ -92,10 +98,11 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の息はきつく金属的です</Japanese>
+            <Japanese>患者の息はきつく金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
+            <Portuguese>O hálito do paciente é aspero e metálico</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_breath_mild">
+        <Key ID="STR_KAT_Surgery_breath_mild">
             <English>Patient's breath is slightly fruity</English>
             <Chinesesimp>病人的呼吸是平和的</Chinesesimp>
             <Italian>Il respiro del paziente è leggermente fruttato</Italian>
@@ -104,10 +111,11 @@
             <French>L'haleine du patient est légèrement fruitée</French>
             <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
             <German>Der Atem des Patienten ist leicht fruchtig</German>
-            <Japanese>患者の息は少し酸っぱく果物的です</Japanese>
+            <Japanese>患者の息は少し果物臭がします</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
+            <Portuguese>O hálito do paciente é ligeiramente frutado</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_breath_good">
+        <Key ID="STR_KAT_Surgery_breath_good">
             <English>Patient's breath is ok</English>
             <Chinesesimp>病人的呼吸是正常的</Chinesesimp>
             <Italian>Il respiro del paziente è ok</Italian>
@@ -118,8 +126,9 @@
             <German>Der Atem des Patienten ist in Ordnung</German>
             <Japanese>患者の息は普通です</Japanese>
             <Spanish>El aliento del paciente es normal</Spanish>
+            <Portuguese>O hálito do paciente é normal</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_dialysis">
+        <Key ID="STR_KAT_Surgery_dialysis">
             <English>Perform Dialysis</English>
             <Chinesesimp>进行透析</Chinesesimp>
             <Italian>Eseguire la dialisi</Italian>
@@ -130,8 +139,9 @@
             <German>Dialyse durchführen</German>
             <Japanese>透析を行う</Japanese>
             <Spanish>Realizar dialisis</Spanish>
+            <Portuguese>Realizar diálise</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_perform">
+        <Key ID="STR_KAT_Surgery_perform">
             <English>Performing</English>
             <Chinesesimp>透析中</Chinesesimp>
             <Italian>Esecuzione</Italian>
@@ -142,8 +152,9 @@
             <German>Durchführen</German>
             <Japanese>実行中</Japanese>
             <Spanish>Realizando</Spanish>
+            <Portuguese>Realizando</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_fracture_check">
+        <Key ID="STR_KAT_Surgery_fracture_check">
             <English>Check Fracture</English>
             <Chinesesimp>检查骨折</Chinesesimp>
             <Italian>Controllare la frattura</Italian>
@@ -154,8 +165,9 @@
             <German>Fraktur prüfen</German>
             <Japanese>骨折を確認</Japanese>
             <Spanish>Revisar fractura</Spanish>
+            <Portuguese>Verificar fratura</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_fracture_checking">
+        <Key ID="STR_KAT_Surgery_fracture_checking">
             <English>Checking</English>
             <Chinesesimp>检查中</Chinesesimp>
             <Italian>Controllando</Italian>
@@ -166,8 +178,9 @@
             <German>Überprüfe</German>
             <Japanese>確認中</Japanese>
             <Spanish>Revisando</Spanish>
+            <Portuguese>Verificando</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_fracture_closed">
+        <Key ID="STR_KAT_Surgery_fracture_closed">
             <English>Perform Closed Reduction</English>
             <Chinesesimp>封闭伤口</Chinesesimp>
             <Italian>Esegui la riduzione ortopedica chiusa</Italian>
@@ -176,10 +189,11 @@
             <French>Effectuer une réduction fermée</French>
             <Korean>골절 폐쇄정복 수행</Korean>
             <German>Geschlossene Reduktion durchführen</German>
-            <Japanese>非観血的整復を実行</Japanese>
+            <Japanese>非観血的整復術を実行</Japanese>
             <Spanish>Realizar Reducción Cerrada</Spanish>
+            <Portuguese>Realizar redução fechada</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_fracture_open">
+        <Key ID="STR_KAT_Surgery_fracture_open">
             <English>Perform Open Reduction</English>
             <Chinesesimp>开放伤口</Chinesesimp>
             <Italian>Esegui la riduzione a cielo aperto</Italian>
@@ -188,10 +202,11 @@
             <French>Effectuer une réduction ouverte</French>
             <Korean>골절 개방정복 수행</Korean>
             <German>Offene Reduktion durchführen</German>
-            <Japanese>観血的整復を実行</Japanese>
+            <Japanese>観血的整復術を実行</Japanese>
             <Spanish>Realizar Reducción Abierta</Spanish>
+            <Portuguese>Realizar redução aberta</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_fracture_log">
+        <Key ID="STR_KAT_Surgery_fracture_log">
             <English>%1 present on %2</English>
             <Chinesesimp>%1 存在于 %2</Chinesesimp>
             <Italian>%1 presente su %2</Italian>
@@ -202,8 +217,9 @@
             <German>%1 vorhanden auf %2</German>
             <Japanese>%1 が %2 に存在します</Japanese>
             <Spanish>%1 presente en %2</Spanish>
+            <Portuguese>%1 presente em %2</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_surgery_log">
+        <Key ID="STR_KAT_Surgery_surgery_log">
             <English>%1 %2 the fracture on the %3</English>
             <Chinesesimp>在 %3 上有一处 %1 %2</Chinesesimp>
             <Italian>%1 %2 la frattura sul %3</Italian>
@@ -211,11 +227,12 @@
             <Czech>%1 %2 zlomenina na %3</Czech>
             <French>%1 %2 la fracture sur le %3</French>
             <Korean>%1 은(는) %3 의 골절을 %2 (으)로 수행하였습니다</Korean>
-            <German>%1 %2 der Bruch an der %3</German>
+            <German>%1 %2 des Bruches an dem %3</German>
             <Japanese>%1 は %3 の骨折に %2</Japanese>
             <Spanish>%1 %2 la fractura sobre el/la %3</Spanish>
+            <Portuguese>%1 %2 a fratura sobre %3</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_incision_log">
+        <Key ID="STR_KAT_Surgery_incision_log">
             <English>%1 made an incision on the %2</English>
             <Chinesesimp>%1 在 %2 上做了一个切口</Chinesesimp>
             <Italian>%1 ha fatto un'incisione su %2</Italian>
@@ -223,11 +240,12 @@
             <Czech>%1 provedl řez na %2</Czech>
             <French>%1 a effectuée une incision sur le %2</French>
             <Korean>%1 이(가) %2 을(를) 절개했습니다</Korean>
-            <German>%1 hat einen Einschnitt an der %2</German>
+            <German>%1 hat einen Einschnitt an dem %2 vorgenommen</German>
             <Japanese>%1 が %2 を切開しました</Japanese>
             <Spanish>%1 hizo una incisión sobre el/la %2</Spanish>
+            <Portuguese>%1 fez uma incisão em %2</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_fracture_fail">
+        <Key ID="STR_KAT_Surgery_fracture_fail">
             <English>Surgical Action Failed</English>
             <Chinesesimp>手术失败</Chinesesimp>
             <Italian>Azione chirurgica fallita</Italian>
@@ -238,8 +256,9 @@
             <German>Chirurgische Maßnahme fehlgeschlagen</German>
             <Japanese>外科的措置は失敗しました</Japanese>
             <Spanish>La acción quirúrgico falló</Spanish>
+            <Portuguese>Falha na ação cirúrgica</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_debridement_fail">
+        <Key ID="STR_KAT_Surgery_debridement_fail">
             <English>Wound Dressing Failed</English>
             <Chinesesimp>伤口清创失败</Chinesesimp>
             <Italian>Medicazione delle ferite non riuscita</Italian>
@@ -250,8 +269,9 @@
             <German>Wundverband fehlgeschlagen</German>
             <Japanese>創傷被覆に失敗しました</Japanese>
             <Spanish>Vendaje al vacío falló</Spanish>
+            <Portuguese>Falha no curativo da ferida</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Scalpel_displayName">
+        <Key ID="STR_KAT_Surgery_Scalpel_displayName">
             <English>Scalpel</English>
             <Chinesesimp>手术刀</Chinesesimp>
             <Italian>Bisturi</Italian>
@@ -262,20 +282,22 @@
             <German>Skalpell</German>
             <Japanese>メス</Japanese>
             <Spanish>Bisturí</Spanish>
+            <Portuguese>Bisturi</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Scalpel_DescShort">
+        <Key ID="STR_KAT_Surgery_Scalpel_DescShort">
             <English>Used for creating incisions and debriding wounds</English>
             <Chinesesimp>用于创建切口和伤口清创</Chinesesimp>
             <Italian>Usato per creare incisioni e sbrigliare ferite</Italian>
             <Czech>Používá se pro vytváření řezů a čištění ran</Czech>
             <French>Utilisé pour inciser et débrider les plaies</French>
             <Korean>절개 부위를 생성하고 상처를 제거하는 데 사용됩니다.</Korean>
-            <German>Für das Anlegen von Inzisionen und das Debridieren von Wunden</German>
+            <German>Für das Durchführen von Inzisionen und das Debridieren von Wunden</German>
             <Japanese>切開と創面切除に使用</Japanese>
             <Spanish>Usado para crear incisiones y desbridar heridas</Spanish>
             <Polish>Służy do tworzenia nacięć i oczyszczania ran</Polish>
+            <Portuguese>Usado para criar incisões e desbridar feridas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Scalpel_Use">
+        <Key ID="STR_KAT_Surgery_Scalpel_Use">
             <English>Perform Incision</English>
             <Chinesesimp>创建切口</Chinesesimp>
             <Italian>Eseguire Incisione</Italian>
@@ -286,8 +308,9 @@
             <German>Einschnitt vornehmen</German>
             <Japanese>切開を行う</Japanese>
             <Spanish>Realizar incisión</Spanish>
+            <Portuguese>Realizar incisão</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Retractor_displayName">
+        <Key ID="STR_KAT_Surgery_Retractor_displayName">
             <English>Retractor</English>
             <Chinesesimp>扩张器</Chinesesimp>
             <Italian>Divaricatore</Italian>
@@ -296,10 +319,11 @@
             <French>Rétracteur</French>
             <Korean>리트랙터</Korean>
             <German>Retraktor</German>
-            <Japanese>開創器</Japanese>
+            <Japanese>開創器 (ランゲンベック)</Japanese>
             <Spanish>Retractor</Spanish>
+            <Portuguese>Retrator</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Retractor_DescShort">
+        <Key ID="STR_KAT_Surgery_Retractor_DescShort">
             <English>Used to expand and expose fractures</English>
             <Chinesesimp>用于扩大和暴露骨折创面</Chinesesimp>
             <Italian>Usato per espandere ed esporre fratture</Italian>
@@ -307,11 +331,12 @@
             <French>Utilisé pour séparer les bords d'une plaie et exposer les factures</French>
             <Korean>골절 확장 및 노출하는 데 사용됩니다.</Korean>
             <German>Zur Erweiterung und Freilegung von Frakturen</German>
-            <Japanese>骨折を広げて露出させるために使用されます</Japanese>
+            <Japanese>傷口を広げて骨折部を露出させるために使用されます</Japanese>
             <Spanish>Usado para expandir y exponer heridas</Spanish>
             <Polish>Służy do rozszerzania i odsłonień złamań</Polish>
+            <Portuguese>Usado para expandir e expor fraturas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Retractor_Use">
+        <Key ID="STR_KAT_Surgery_Retractor_Use">
             <English>Expose Fracture</English>
             <Chinesesimp>暴露骨折</Chinesesimp>
             <Italian>Divaricare la zona di frattura</Italian>
@@ -322,8 +347,9 @@
             <German>Fraktur freilegen</German>
             <Japanese>骨折を露出させる</Japanese>
             <Spanish>Exponer fractura</Spanish>
+            <Portuguese>Expor fratura</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Retractor_Action">
+        <Key ID="STR_KAT_Surgery_Retractor_Action">
             <English>Exposing</English>
             <Chinesesimp>暴露</Chinesesimp>
             <Italian>Divaricando</Italian>
@@ -331,11 +357,12 @@
             <Czech>Odhalování</Czech>
             <French>Exposition</French>
             <Korean>노출 중</Korean>
-            <German>Freilegen</German>
+            <German>Lege Frei</German>
             <Japanese>露出させています</Japanese>
             <Spanish>Exponiendo</Spanish>
+            <Portuguese>Expondo</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Clamp_displayName">
+        <Key ID="STR_KAT_Surgery_Clamp_displayName">
             <English>Clamp</English>
             <Chinesesimp>夹钳</Chinesesimp>
             <Italian>Pinza clamp</Italian>
@@ -344,22 +371,24 @@
             <French>Clamp</French>
             <Korean>클램프</Korean>
             <German>Klemme</German>
-            <Japanese>クランプ</Japanese>
+            <Japanese>鉗子 (クランプ)</Japanese>
             <Spanish>Pinza de sujeción</Spanish>
+            <Portuguese>Braçadeira</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Clamp_DescShort">
+        <Key ID="STR_KAT_Surgery_Clamp_DescShort">
             <English>Used to clamp comminuted fractures</English>
             <Chinesesimp>用于夹紧粉碎性骨折</Chinesesimp>
             <Italian>Usato per clampare le fratture pluriframmentarie</Italian>
             <Czech>Používá se k upnutí rozdrcených zlomenin</Czech>
             <French>Utilisé pour clamper les fractures comminutives</French>
             <Korean>분쇄 골절을 클램프하는 데 사용됩니다</Korean>
-            <German>Zum Klemmen von Trümmerfrakturen</German>
+            <German>Zum Abklemmen von Trümmerfrakturen</German>
             <Japanese>粉砕骨折をクランプするために使用</Japanese>
             <Spanish>Usada para sujetar las fracturas conminutas</Spanish>
             <Polish>Służy do zaciskania skomplikowanych złamań</Polish>
+            <Portuguese>Usado para fixar fraturas cominutivas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Clamp_Use">
+        <Key ID="STR_KAT_Surgery_Clamp_Use">
             <English>Clamp Fracture</English>
             <Chinesesimp>夹紧骨折</Chinesesimp>
             <Italian>Clampare la frattura</Italian>
@@ -368,10 +397,11 @@
             <French>Clamper la fracture</French>
             <Korean>골절 클램프하기</Korean>
             <German>Klammern der Fraktur</German>
-            <Japanese>骨折をクランプする</Japanese>
+            <Japanese>骨折をクランプ (箝搾) する</Japanese>
             <Spanish>Alinear trozos</Spanish>
+            <Portuguese>Fixar fratura</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Clamp_Action">
+        <Key ID="STR_KAT_Surgery_Clamp_Action">
             <English>Clamping</English>
             <Chinesesimp>夹紧中</Chinesesimp>
             <Italian>Clampando</Italian>
@@ -382,8 +412,9 @@
             <German>Abklemmen</German>
             <Japanese>クランプ中</Japanese>
             <Spanish>Alineando trozos</Spanish>
+            <Portuguese>Fixando</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Irrigate_Use">
+        <Key ID="STR_KAT_Surgery_Irrigate_Use">
             <English>Irrigate Wound</English>
             <Chinesesimp>冲洗伤口</Chinesesimp>
             <Italian>Lava e pulisci la ferita</Italian>
@@ -394,8 +425,9 @@
             <German>Wunde spülen</German>
             <Japanese>創面を洗浄する</Japanese>
             <Spanish>Irrigar herida</Spanish>
+            <Portuguese>Irrigar ferida</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Irrigate_Action">
+        <Key ID="STR_KAT_Surgery_Irrigate_Action">
             <English>Irrigating</English>
             <Chinesesimp>冲洗中</Chinesesimp>
             <Italian>Lavando e pulendo</Italian>
@@ -406,8 +438,9 @@
             <German>Spülen</German>
             <Japanese>洗浄中</Japanese>
             <Spanish>Irrigando</Spanish>
+            <Portuguese>Irrigando</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Plate_Display">
+        <Key ID="STR_KAT_Surgery_Plate_Display">
             <English>Bone Plate</English>
             <Chinesesimp>骨板</Chinesesimp>
             <Italian>Placche di fissaggio osseo</Italian>
@@ -416,10 +449,11 @@
             <French>Plaque à os</French>
             <Korean>본 플레이트</Korean>
             <German>Knochenplatte</German>
-            <Japanese>骨接合プレート</Japanese>
+            <Japanese>骨接合板</Japanese>
             <Spanish>Placa de fijación</Spanish>
+            <Portuguese>Placa de fixação óssea</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Plate_DescShort">
+        <Key ID="STR_KAT_Surgery_Plate_DescShort">
             <English>Used to complete all complex fracture types</English>
             <Chinesesimp>用于完成所有复杂骨折类型</Chinesesimp>
             <Italian>Utilizzato per risolvere tutti i tipi di fratture complesse</Italian>
@@ -430,8 +464,9 @@
             <Japanese>全ての開放骨折に使われます</Japanese>
             <Spanish>Usada para fijar todas las fracturas avanzadas</Spanish>
             <Polish>Służy do łączenia wszystkich złożonych typów złamań</Polish>
+            <Portuguese>Usado para corrigir todas as fraturas avançadas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Debride_Use">
+        <Key ID="STR_KAT_Surgery_Debride_Use">
             <English>Debride Wounds</English>
             <Chinesesimp>清创伤口</Chinesesimp>
             <Italian>Sbrigliare la zona ferita</Italian>
@@ -439,11 +474,12 @@
             <Czech>Vyčistit rány</Czech>
             <French>Débrider les plaies</French>
             <Korean>상처 제거</Korean>
-            <German>Wunddebridement</German>
-            <Japanese>創面を切除する</Japanese>
+            <German>Wunde debridieren</German>
+            <Japanese>創面切除</Japanese>
             <Spanish>Desbridar heridas</Spanish>
+            <Portuguese>Desbridar feridas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Debride_Action">
+        <Key ID="STR_KAT_Surgery_Debride_Action">
             <English>Debriding</English>
             <Chinesesimp>清创中</Chinesesimp>
             <Italian>Sbrigliando</Italian>
@@ -451,11 +487,12 @@
             <Czech>Čištění</Czech>
             <French>Débridement</French>
             <Korean>제거 중</Korean>
-            <German>Debridement </German>
+            <German>Debridement</German>
             <Japanese>切除中</Japanese>
             <Spanish>Desbridando</Spanish>
+            <Portuguese>Desbridando</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Vacuum_displayName">
+        <Key ID="STR_KAT_Surgery_Vacuum_displayName">
             <English>Dressing vacuum</English>
             <Chinesesimp>NPWT 敷料</Chinesesimp>
             <Italian>Sottovuoto per medicazione</Italian>
@@ -464,10 +501,11 @@
             <French>Pansement sous vide</French>
             <Korean>진공 드레싱</Korean>
             <German>Vakuumverband</German>
-            <Japanese>吸引ドレッシング</Japanese>
+            <Japanese>吸引ドレッシング (NPWT)</Japanese>
             <Spanish>Vendaje al vacío</Spanish>
+            <Portuguese>Bandagem a vácuo</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Vacuum_DescShort">
+        <Key ID="STR_KAT_Surgery_Vacuum_DescShort">
             <English>Used to completely dress and seal wounds</English>
             <Chinesesimp>用于完全包扎和密封伤口</Chinesesimp>
             <Italian>Usato per coprire e sigillare completamente le ferite</Italian>
@@ -475,11 +513,12 @@
             <French>Utilisé pour panser et sceller compètement les plaies</French>
             <Korean>상처를 완전히 치료하고 봉합하는 데 사용됩니다</Korean>
             <German>Zum vollständigen Verbinden und Abdichten von Wunden</German>
-            <Japanese>傷を完全に包んで密封するために使用される</Japanese>
+            <Japanese>傷を完全に包んで密封する陰圧閉鎖療法のために使用される</Japanese>
             <Spanish>Usado para vendar y sellar heridas completamente</Spanish>
             <Polish>Używany do całkowitego uzdrowienia ran</Polish>
+            <Portuguese>Usado para enfaixar e selar feridas completamente</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Vacuum_Use">
+        <Key ID="STR_KAT_Surgery_Vacuum_Use">
             <English>Apply NPWT Dressing</English>
             <Chinesesimp>施用 NPWT 敷料</Chinesesimp>
             <Italian>Applicare la medicazione NPWT</Italian>
@@ -488,10 +527,11 @@
             <French>Appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용</Korean>
             <German>NPWT-Verband anlegen</German>
-            <Japanese>陰圧閉鎖療法(NPWT)を適用する</Japanese>
+            <Japanese>吸引ドレッシング(NPWT)を使う</Japanese>
             <Spanish>Colocar vendaje al vacío</Spanish>
+            <Portuguese>Aplicar curativo NPWT</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_Vacuum_Action">
+        <Key ID="STR_KAT_Surgery_Vacuum_Action">
             <English>Applying</English>
             <Chinesesimp>施用中</Chinesesimp>
             <Italian>Applicando</Italian>
@@ -499,11 +539,12 @@
             <Czech>Aplikování</Czech>
             <French>Application</French>
             <Korean>적용 중</Korean>
-            <German>Anwendung</German>
+            <German>Lege an</German>
             <Japanese>適用中</Japanese>
             <Spanish>Colocando</Spanish>
+            <Portuguese>Aplicando</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_KIDNEY_ACTION">
+        <Key ID="STR_KAT_Surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>
             <Chinesesimp>肾损伤/衰竭</Chinesesimp>
             <Italian>Danno/insufficienza renale</Italian>
@@ -514,8 +555,9 @@
             <German>Nierenschäden/-versagen</German>
             <Japanese>腎臓の損傷/機能不全</Japanese>
             <Spanish>Insuficiencia/Daño renal</Spanish>
+            <Portuguese>Dano/falha renal</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_KIDNEY_ACTION_DESC">
+        <Key ID="STR_KAT_Surgery_KIDNEY_ACTION_DESC">
             <English>Enables kidney damage caused by overuse of saline</English>
             <Chinesesimp>启用因过度使用生理盐水而造成的肾脏损害</Chinesesimp>
             <Italian>Consente danni renali causati da un uso eccessivo di soluzione salina</Italian>
@@ -526,8 +568,9 @@
             <German>Ermöglicht Nierenschäden, die durch übermäßigen Gebrauch von Kochsalzlösung verursacht werden</German>
             <Japanese>生理食塩水の過剰投与(浸透圧過剰)による腎臓の損傷を可能にします</Japanese>
             <Spanish>Permite el daño de los riñones causado por uso excesivo de salino</Spanish>
+            <Portuguese>Permite dano renal causado pelo uso excessivo de soro fisiológico</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_DIALYSIS_TIMER">
+        <Key ID="STR_KAT_Surgery_DIALYSIS_TIMER">
             <English>Time to perform dialysis</English>
             <Chinesesimp>进行透析的时间</Chinesesimp>
             <Italian>Tempo necessario per eseguire la dialisi</Italian>
@@ -538,8 +581,9 @@
             <German>Zeit zur Durchführung der Dialyse</German>
             <Japanese>透析を行うのにかかる時間</Japanese>
             <Spanish>Tiempo para realizar dialisis</Spanish>
+            <Portuguese>Duração de diálise</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_ADVANCED_FRACTURE">
+        <Key ID="STR_KAT_Surgery_ADVANCED_FRACTURE">
             <English>Enables advanced fractures</English>
             <Chinesesimp>启用高级骨折</Chinesesimp>
             <Italian>Abilita fratture avanzate</Italian>
@@ -550,8 +594,9 @@
             <German>Aktiviert erweiterte Frakturen</German>
             <Japanese>高度な骨折を有効にします</Japanese>
             <Spanish>Permite fracturas avanzadas</Spanish>
+            <Portuguese>Permite fraturas avançadas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_CHANCE">
+        <Key ID="STR_KAT_Surgery_SIMPLE_FRACTURE_CHANCE">
             <English>Simple fracture chance</English>
             <Chinesesimp>简单骨折几率</Chinesesimp>
             <Italian>Possibilità di frattura semplice</Italian>
@@ -562,8 +607,9 @@
             <German>Chance auf einfachen Bruch</German>
             <Japanese>単純骨折の確率</Japanese>
             <Spanish>Probabilidad de fractura simple</Spanish>
+            <Portuguese>Probabilidade de fratura simples</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_SIMPLE_FRACTURE_CHANCE_DESC">
+        <Key ID="STR_KAT_Surgery_SIMPLE_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for simple fractures. Also sets the chance for complex fractures (60% Simple = 40% Complex)</English>
             <Chinesesimp>设置简单骨折的几率,同时设置了复合骨折的几率 (60% 简单 = 40% 复杂)</Chinesesimp>
             <Italian>Imposta la possibilità di fratture semplici. Imposta anche la possibilità di fratture complesse (60% semplice = 40% complesso)</Italian>
@@ -574,8 +620,23 @@
             <German>Legt die Wahrscheinlichkeit für einfache Frakturen fest. Legt auch die Wahrscheinlichkeit für komplexe Frakturen fest (60% einfach = 40% komplex).</German>
             <Japanese>単純骨折の可能性を設定します。また、開放骨折の可能性を設定します (単純骨折60% = 開放骨折40%)</Japanese>
             <Spanish>Establece la probabilidad para fracturas simples. También establece la probabilidad de fracturas complejas (60% Simple - 40% Compleja)</Spanish>
+            <Portuguese>Define a probabilidade de fraturas simples. Também estabelece a probabilidade de fraturas complexas (60% Simples - 40% Complexas)</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE">
+        <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL">
+            <English>Closed reduction fail chance</English>
+            <Korean>폐쇄정복 실패 확률</Korean>
+            <Japanese>非観血的整復術の失敗率</Japanese>
+            <German>Chance das die geschlossene Reduktion fehlschlägt</German>
+            <Portuguese>Probabilidade de falha de redução fechada</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL_DESC">
+            <English>Chance that closed reduction will fail. Default value 10%</English>
+            <Korean>폐쇄정복을 실패할 확률입니다. 기본값은 10%</Korean>
+            <Japanese>非観血的整復術の失敗率を設定します。デフォルト値は10%です</Japanese>
+            <German> Legt die Chance fest, dass die geschlossene Reduktion fehlschlägt. Standard: 10%</German>
+            <Portuguese>Probabilidade de falha na redução fechada. Valor padrão 10%</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
             <Chinesesimp>复合骨折几率</Chinesesimp>
             <Italian>Possibilità di frattura composta</Italian>
@@ -583,11 +644,12 @@
             <Czech>Šance na otevřenou zlomeninu</Czech>
             <French>Chance de fracture ouverte</French>
             <Korean>복합 골절 확률</Korean>
-            <German>Wahrscheinlichkeit eines zusammengesetzten Bruchs</German>
+            <German>Wahrscheinlichkeit einer offenen Fraktur</German>
             <Japanese>開放骨折の確率</Japanese>
             <Spanish>Probabilidad de fractura compuesta</Spanish>
+            <Portuguese>Probabilidade de fratura composta</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE_CHANCE_DESC">
+        <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for compound fractures. Also sets the chance for comminuted fractures (60% Compound = 40% Comminuted)</English>
             <Chinesesimp>设置复合骨折的机会,同时设置粉碎骨折的几率 (60% 复合 = 40% 粉碎)</Chinesesimp>
             <Italian>Imposta la possibilità di fratture composte. Imposta anche la possibilità di fratture comminute (60% composto = 40% sminuzzato)</Italian>
@@ -595,11 +657,12 @@
             <Czech>Nastavuje šanci na otevřené zlomeniny. Také nastavuje šanci na rozdrcené zlomeniny (60% otevřené = 40% rozdrcené)</Czech>
             <French>Règle la chance de fracture ouverte. Règle également la chance de fractures comminutives (60% ouvertes = 40 % comminutives)</French>
             <Korean>복합 골절의 확률을 설정합니다. 또한 분쇄 골절의 확률을 설정합니다. (복합 60% = 분쇄 40%)</Korean>
-            <German>Legt die Wahrscheinlichkeit für zusammengesetzte Frakturen fest. Legt auch die Wahrscheinlichkeit für Trümmerfrakturen fest (60% zusammengesetzte Frakturen = 40% Trümmerfrakturen)</German>
+            <German>Legt die Wahrscheinlichkeit für offene Frakturen fest. Legt auch die Wahrscheinlichkeit für Trümmerfrakturen fest (60% offene Frakturen = 40% Trümmerfrakturen)</German>
             <Japanese>開放骨折の可能性を設定します。粉砕骨折の可能性も設定します (開放骨折60% = 粉砕骨折40%)</Japanese>
             <Spanish>Establece la probabilidad para fracturas compuestas. También establece la probabilidad de fracturas conminutas (60% Compuesta - 40% Conminuta)</Spanish>
+            <Portuguese>Define a probabilidade de fraturas compostas. Também estabelece a probabilidade de fraturas cominutivas (60% Composite - 40% Cominutive)</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_ETOMIDATE_TIMER">
+        <Key ID="STR_KAT_Surgery_ETOMIDATE_TIMER">
             <English>Etomidate cycle timer</English>
             <Chinesesimp>依托咪酯循环计时器</Chinesesimp>
             <Italian>Timer ciclo Etomidato</Italian>
@@ -610,8 +673,9 @@
             <German>Etomidat-Zyklus-Timer</German>
             <Japanese>エトミダートの効果時間</Japanese>
             <Spanish>Tiempo para ciclo del Etomidato</Spanish>
+            <Portuguese>Tempo de ciclo do Etomidato</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_ETOMIDATE_TIMER_DESC">
+        <Key ID="STR_KAT_Surgery_ETOMIDATE_TIMER_DESC">
             <English>Determines how long each dose of etomidate stays in a patient</English>
             <Chinesesimp>确定依托咪酯在患者体内的停留时间</Chinesesimp>
             <Italian>Determina per quanto tempo ciascuna dose di etomidato rimane in un paziente</Italian>
@@ -622,8 +686,9 @@
             <German>Bestimmt, wie lange jede Etomidat-Dosis im Patienten verbleibt</German>
             <Japanese>エトミダートが患者に留まる時間を設定します</Japanese>
             <Spanish>Determina la duración de cada dosis de Etomidato en el paciente</Spanish>
+            <Portuguese>Determina a duração de cada dose de Etomidato no paciente</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_CLOSED_TIMER">
+        <Key ID="STR_KAT_Surgery_CLOSED_TIMER">
             <English>Time to perform closed reductions</English>
             <Chinesesimp>执行封闭伤口的时间</Chinesesimp>
             <Italian>Tempo per eseguire riduzioni ortopediche chiuse</Italian>
@@ -631,11 +696,12 @@
             <Czech>Čas provádění uzavřené repozice</Czech>
             <French>Temps pour effectuer une réduction fermée</French>
             <Korean>폐쇄 정복 수행 시간</Korean>
-            <German>Zeit für die Durchführung geschlossener Repositionen</German>
-            <Japanese>非観血的整復にかかる時間</Japanese>
+            <German>Zeit für die Durchführung geschlossener Reduktionen</German>
+            <Japanese>非観血的整復術にかかる時間</Japanese>
             <Spanish>Tiempo para realizar reducciones cerradas</Spanish>
+            <Portuguese>Duração de reduções fechadas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_OPEN_TIMER">
+        <Key ID="STR_KAT_Surgery_OPEN_TIMER">
             <English>Time to perform open reductions</English>
             <Chinesesimp>执行开放伤口的时间</Chinesesimp>
             <Italian>Tempo per eseguire riduzioni a cielo aperto</Italian>
@@ -643,11 +709,12 @@
             <Czech>Čas provádění otevřené repozice</Czech>
             <French>Temps pour effectuer une réduction ouverte</French>
             <Korean>개방정복 수행 시간</Korean>
-            <German>Zeit für die Durchführung offener Repositionen</German>
-            <Japanese>観血的整復にかかる時間</Japanese>
+            <German>Zeit für die Durchführung offener Reduktionen</German>
+            <Japanese>観血的整復術にかかる時間</Japanese>
             <Spanish>Tiempo para realizar reducciones abiertas</Spanish>
+            <Portuguese>Duração de reduções abertas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_SURGICAL_TIMER">
+        <Key ID="STR_KAT_Surgery_SURGICAL_TIMER">
             <English>Time to perform surgical actions</English>
             <Chinesesimp>执行手术的时间</Chinesesimp>
             <Italian>Tempo per eseguire azioni chirurgiche</Italian>
@@ -658,8 +725,9 @@
             <German>Zeit für die Durchführung chirurgischer Maßnahmen</German>
             <Japanese>外科的処置にかかる時間</Japanese>
             <Spanish>Tiempo para realizar acciones quirúrgicas</Spanish>
+            <Portuguese>Duração de ações cirúrgicas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_INCISION_TIMER">
+        <Key ID="STR_KAT_Surgery_INCISION_TIMER">
             <English>Time to perform incisions</English>
             <Chinesesimp>进行切口的时间</Chinesesimp>
             <Italian>Tempo per eseguire le incisioni</Italian>
@@ -670,8 +738,9 @@
             <German>Zeit für die Durchführung von Inzisionen</German>
             <Japanese>切開にかかる時間</Japanese>
             <Spanish>Tiempo para realizar incisiones</Spanish>
+            <Portuguese>Duração de incisões</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_BREATH_CHECK_TIME">
+        <Key ID="STR_KAT_Surgery_BREATH_CHECK_TIME">
             <English>Time to perform breath check</English>
             <Chinesesimp>进行呼吸检查的时间</Chinesesimp>
             <Italian>Tempo per eseguire il controllo del respiro</Italian>
@@ -682,8 +751,9 @@
             <German>Zeit für die Durchführung der Atemkontrolle</German>
             <Japanese>呼吸確認にかかる時間</Japanese>
             <Spanish>Tiempo para checar el aliento</Spanish>
+            <Portuguese>Duração da verificação de hálito</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_INTERMEDIATE_TIMER">
+        <Key ID="STR_KAT_Surgery_INTERMEDIATE_TIMER">
             <English>Time to perform intermediate actions</English>
             <Chinesesimp>进行中间操作的时间</Chinesesimp>
             <Italian>Tempo per eseguire azioni intermedie</Italian>
@@ -694,8 +764,9 @@
             <German>Zeit für die Durchführung von Zwischenmaßnahmen</German>
             <Japanese>中間処置にかかる時間</Japanese>
             <Spanish>Tiempo para realizar acciones intermediarias</Spanish>
+            <Portuguese>Duração de ações intermediárias</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_INTERMEDIATE_TIMER_DESC">
+        <Key ID="STR_KAT_Surgery_INTERMEDIATE_TIMER_DESC">
             <English>Sets how long it takes to perform intermediate surgical actions such as exposing and irrigation</English>
             <Chinesesimp>设置执行手术中间操作（例如暴露和冲洗）所需的时间</Chinesesimp>
             <Italian>Imposta il tempo necessario per eseguire azioni chirurgiche intermedie come l'esposizione ed il lavaggio/pulizia </Italian>
@@ -706,8 +777,9 @@
             <German>Legt fest, wie lange es dauert, chirurgische Zwischenschritte wie Freilegung und Spülung durchzuführen</German>
             <Japanese>露出や洗浄などの中間の外科的処置を実行するのにかかる時間を設定します</Japanese>
             <Spanish>Establece cuanto tiempo tarda realizar acciones quirúrgicas como exponer o irrigar.</Spanish>
+            <Portuguese>Estabelece quanto tempo leva para realizar ações cirúrgicas, como expor ou irrigar.</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_DEBRIDE_TIMER">
+        <Key ID="STR_KAT_Surgery_DEBRIDE_TIMER">
             <English>Time to debride a patient</English>
             <Chinesesimp>进行伤口清创的时间</Chinesesimp>
             <Italian>Tempo per sbrigliare un paziente</Italian>
@@ -718,8 +790,9 @@
             <German>Zeit für die Debridierung eines Patienten</German>
             <Japanese>創面切除にかかる時間</Japanese>
             <Spanish>Tiempo para desbridar un paciente</Spanish>
+            <Portuguese>Duração do desbridamento de um paciente</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_NPWT_TIMER">
+        <Key ID="STR_KAT_Surgery_NPWT_TIMER">
             <English>Time to apply an NPWT dressing</English>
             <Chinesesimp>施用 NPWT 敷料的时间</Chinesesimp>
             <Italian>Tempo per applicare una medicazione NPWT</Italian>
@@ -730,8 +803,9 @@
             <German>Zeit zum Anlegen eines NPWT-Verbandes</German>
             <Japanese>NPWTドレッシングにかかる時間</Japanese>
             <Spanish>Tiempo para colocar un vendaje al vacío</Spanish>
+            <Portuguese>Duração do aplique de curativo a vácuo</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_FRACTURE_CHECK_TIMER">
+        <Key ID="STR_KAT_Surgery_FRACTURE_CHECK_TIMER">
             <English>Fracture check timer</English>
             <Chinesesimp>骨折检查计时器</Chinesesimp>
             <Italian>Timer per il controllo delle fratture</Italian>
@@ -742,8 +816,9 @@
             <German>Zeit zur Prüfung einer Fraktur</German>
             <Japanese>骨折確認にかかる時間</Japanese>
             <Spanish>Tiempo para analizar una fractura</Spanish>
+            <Portuguese>Duração da análise de fratura</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_FRACTURE_CHECK_MEDLEVEL">
+        <Key ID="STR_KAT_Surgery_FRACTURE_CHECK_MEDLEVEL">
             <English>Medical level required for someone to check fracture</English>
             <Chinesesimp>检查骨折所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto a qualcuno per controllare la frattura</Italian>
@@ -754,8 +829,9 @@
             <German>Erforderliches medizinisches Training für die Prüfung einer Fraktur</German>
             <Japanese>骨折を確認するために必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para analizar la fractura de alguien</Spanish>
+            <Portuguese>Nível médico necessário para analisar a fratura de alguém</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_CLOSED_REDUCTION_MEDLEVEL">
+        <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_MEDLEVEL">
             <English>Medical level required for closed reduction</English>
             <Chinesesimp>闭合复位所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per la riduzione ortopedica chiusa</Italian>
@@ -763,11 +839,12 @@
             <Czech>Zdravotnická úroveň potřebná pro uzavřenou repozici</Czech>
             <French>Niveau médical requis pour effectuer une réduction fermée</French>
             <Korean>폐쇄정복을 하는 데 필요한 의료 레벨 수준</Korean>
-            <German>Erforderliches medizinisches Training für die geschlossene Reposition</German>
-            <Japanese>非観血的整復に必要な医療レベル</Japanese>
+            <German>Erforderliches medizinisches Training für die geschlossene Reduktion</German>
+            <Japanese>非観血的整復術に必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para realizar una reducción cerrada</Spanish>
+            <Portuguese>Nível médico necessário para realizar uma redução fechada</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_SURGICAL_ACTION_MEDLEVEL">
+        <Key ID="STR_KAT_Surgery_SURGICAL_ACTION_MEDLEVEL">
             <English>Medical level required for Surgical action</English>
             <Chinesesimp>手术所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per l'azione chirurgica</Italian>
@@ -778,8 +855,9 @@
             <German>Erforderliches medizinisches Training für chirurgische Maßnahmen</German>
             <Japanese>手術に必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para realizar una acción quirúrgica</Spanish>
+            <Portuguese>Nível médico exigido para realizar uma ação cirúrgica</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_BREATH_CHECK_MEDLEVEL">
+        <Key ID="STR_KAT_Surgery_BREATH_CHECK_MEDLEVEL">
             <English>Medical level required for Breath check</English>
             <Chinesesimp>呼吸检查所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per il controllo del respiro</Italian>
@@ -790,8 +868,9 @@
             <German>Erforderliches medizinisches Training für die Prüfung des Atems</German>
             <Japanese>呼吸確認に必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para analizar el aliento</Spanish>
+            <Portuguese>Nível médico necessário para analisar a o hálito</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_CLOSED_LOCATION">
+        <Key ID="STR_KAT_Surgery_CLOSED_LOCATION">
             <English>Closed reduction location</English>
             <Chinesesimp>封闭伤口的位置</Chinesesimp>
             <Italian>Luogo di riduzione chiusa</Italian>
@@ -799,11 +878,12 @@
             <Czech>Umístění uzavřené repozice</Czech>
             <French>Lieu des réductions fermées</French>
             <Korean>폐쇄정복 장소</Korean>
-            <German>Ort für die geschlossene Reposition</German>
+            <German>Ort für die geschlossene Reduktion</German>
             <Japanese>非観血的整復が可能な場所</Japanese>
             <Spanish>Zona para reducciones cerradas</Spanish>
+            <Portuguese>Locação para reduções fechadas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_SURGICAL_LOCATION">
+        <Key ID="STR_KAT_Surgery_SURGICAL_LOCATION">
             <English>Open reduction/Surgical location</English>
             <Chinesesimp>开放伤口/手术的位置</Chinesesimp>
             <Italian>Zona chirurgica/Riduzione aperta</Italian>
@@ -811,11 +891,12 @@
             <Czech>Otevřená repozice/chirurgická poloha</Czech>
             <French>Lieu des réductions ouvertes / chirurgies</French>
             <Korean>개방정복 및 수술 장소</Korean>
-            <German>Ort für die offene Reposition/chirurgischer Eingriff</German>
-            <Japanese>観血的整復・手術が可能な場所</Japanese>
+            <German>Ort für die offene Reduktion/chirurgischer Eingriffe</German>
+            <Japanese>観血的整復術・手術が可能な場所</Japanese>
             <Spanish>Zona para reducciones abiertas/Acciones quirúrgicas</Spanish>
+            <Portuguese>Locação para reduções abertas/cirúrgicas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_SETTING_SELF_CHECKFRACTURE">
+        <Key ID="STR_KAT_Surgery_SETTING_SELF_CHECKFRACTURE">
             <English>Allow self check fracture</English>
             <Chinesesimp>允许自检骨折</Chinesesimp>
             <Italian>Consenti autodiagnosi frattura </Italian>
@@ -826,8 +907,9 @@
             <German>Erlaubt es eigene Frakturen zu prüfen</German>
             <Japanese>骨折の自己診断を許可する</Japanese>
             <Spanish>Permitir revisarse fracturas propias</Spanish>
+            <Portuguese>Permitir verificar as próprias fraturas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_EXPOSED">
+        <Key ID="STR_KAT_Surgery_EXPOSED">
             <English>exposed</English>
             <Chinesesimp>暴露</Chinesesimp>
             <Italian>Esposta</Italian>
@@ -835,11 +917,12 @@
             <Czech>Roztaženo</Czech>
             <French>exposé(e)</French>
             <Korean>노출됨</Korean>
-            <German>freiliegend</German>
+            <German>freigelegt</German>
             <Japanese>露出した</Japanese>
             <Spanish>expuesto/a</Spanish>
+            <Portuguese>exposto(a)</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_IRRIGATED">
+        <Key ID="STR_KAT_Surgery_IRRIGATED">
             <English>irrigated</English>
             <Chinesesimp>清洗</Chinesesimp>
             <Italian>Pulita e lavata</Italian>
@@ -850,8 +933,9 @@
             <German>gespült</German>
             <Japanese>洗浄した</Japanese>
             <Spanish>irrigado/a</Spanish>
+            <Portuguese>irrigado(a)</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_CLAMPED">
+        <Key ID="STR_KAT_Surgery_CLAMPED">
             <English>clamped</English>
             <Chinesesimp>钳住</Chinesesimp>
             <Italian>Clampata</Italian>
@@ -862,8 +946,9 @@
             <German>abgeklemmt</German>
             <Japanese>クランプした</Japanese>
             <Spanish>alineado/a</Spanish>
+            <Portuguese>fixado(a)</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_COMMINUTED_FRACTURE">
+        <Key ID="STR_KAT_Surgery_COMMINUTED_FRACTURE">
             <English>Comminuted Fracture</English>
             <Chinesesimp>粉碎性骨折</Chinesesimp>
             <Italian>Frattura pluriframmentaria</Italian>
@@ -874,8 +959,9 @@
             <German>Trümmerfraktur</German>
             <Japanese>粉砕骨折</Japanese>
             <Spanish>Fractura Conminuta</Spanish>
+            <Portuguese>Fratura cominutiva</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_COMPOUND_FRACTURE">
+        <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE">
             <English>Compound Fracture</English>
             <Chinesesimp>复合性骨折</Chinesesimp>
             <Italian>Frattura composta</Italian>
@@ -883,11 +969,12 @@
             <Czech>Otevřená zlomenina</Czech>
             <French>Fracture ouverte</French>
             <Korean>복합 골절</Korean>
-            <German>Zusammengesetzte Fraktur</German>
+            <German>Offene Fraktur</German>
             <Japanese>開放骨折</Japanese>
             <Spanish>Fractura Compuesta</Spanish>
+            <Portuguese>Fratura composta</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_SIMPLE_FRACTURE">
+        <Key ID="STR_KAT_Surgery_SIMPLE_FRACTURE">
             <English>Simple Fracture</English>
             <Chinesesimp>简单骨折</Chinesesimp>
             <Italian>Frattura semplice</Italian>
@@ -898,8 +985,9 @@
             <German>Einfache Fraktur</German>
             <Japanese>単純骨折</Japanese>
             <Spanish>Fractura Simple</Spanish>
+            <Portuguese>Fratura simples</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_uncon_requieredForActions">
+        <Key ID="STR_KAT_Surgery_uncon_requieredForActions">
             <English>Unconsciouness Requierement</English>
             <Chinesesimp>要求无意识</Chinesesimp>
             <Italian>Requisito di incoscienza</Italian>
@@ -910,8 +998,9 @@
             <German>Bewusstlosigkeit vorausgesetzt</German>
             <Japanese>無意識状態の要求</Japanese>
             <Spanish>Requiere inconsciencia</Spanish>
+            <Portuguese>Requer inconsciência</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_uncon_requieredForActions_DESC">
+        <Key ID="STR_KAT_Surgery_uncon_requieredForActions_DESC">
             <English>Whether or not is unconsciousness requiered to perform some surgery actions</English>
             <Chinesesimp>进行某些手术动作是否需要无意识</Chinesesimp>
             <Italian>Decidere se l'incoscienza sia richiesta o meno per eseguire alcune azioni chirurgiche</Italian>
@@ -922,8 +1011,9 @@
             <German>Ist Bewusstlosigkeit für die Durchführung bestimmter chirurgischer Eingriffe erforderlich</German>
             <Japanese>いくつかの手術行為を行うために無意識状態が必要かどうか</Japanese>
             <Spanish>Si se necesita o no que el paciente esté inconsciente para realizar acciones quirúrgicas</Spanish>
+            <Portuguese>Se a inconsciência é ou não necessária para realizar algumas ações cirúrgicas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_SubCategory_Basic">
+        <Key ID="STR_KAT_Surgery_SubCategory_Basic">
             <English>Basic Settings</English>
             <Chinesesimp>基本设置</Chinesesimp>
             <Polish>Podstawowe Ustawienia</Polish>
@@ -934,8 +1024,9 @@
             <German>Grundeinstellungen</German>
             <Japanese>基本設定</Japanese>
             <Spanish>Parámetros básicos</Spanish>
+            <Portuguese>Configurações básicas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_SubCategory_SurgicalActions">
+        <Key ID="STR_KAT_Surgery_SubCategory_SurgicalActions">
             <English>Surgical actions Settings</English>
             <Chinesesimp>手术操作设置</Chinesesimp>
             <Italian>Impostazioni delle azioni chirurgiche</Italian>
@@ -946,8 +1037,9 @@
             <German>Chirurgische Maßnahmen Einstellungen</German>
             <Japanese>手術設定</Japanese>
             <Spanish>Parámetros para acciones quirúrgicas</Spanish>
+            <Portuguese>Configurações de ações cirúrgicas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_SubCategory_Fractures">
+        <Key ID="STR_KAT_Surgery_SubCategory_Fractures">
             <English>Fractures Settings</English>
             <Chinesesimp>骨折设置</Chinesesimp>
             <Italian>Impostazioni fratture</Italian>
@@ -958,8 +1050,9 @@
             <German>Frakturen Einstellungen</German>
             <Japanese>骨折設定</Japanese>
             <Spanish>Parámetros para fracturas</Spanish>
+            <Portuguese>Configurações de fraturas</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_SubCategory_Kidney">
+        <Key ID="STR_KAT_Surgery_SubCategory_Kidney">
             <English>Kidney Settings</English>
             <Chinesesimp>肾脏设置</Chinesesimp>
             <Italian>Impostazioni renali</Italian>
@@ -970,8 +1063,9 @@
             <German>Niereneinstellungen</German>
             <Japanese>腎臓設定</Japanese>
             <Spanish>Parámetros para riñones</Spanish>
+            <Portuguese>Configurações do rim</Portuguese>
         </Key>
-        <Key ID="STR_kat_surgery_surgeryToolbox">
+        <Key ID="STR_KAT_Surgery_surgeryToolbox">
             <English>[KAM] Surgery Box</English>
             <Polish>[KAM] Skrzynia chirugiczna</Polish>
             <Czech>[KAM] Chirurgický Box</Czech>
@@ -980,6 +1074,7 @@
             <Japanese>[KAM] 手術用品箱</Japanese>
             <French>[KAM] Boîte de chirurgie</French>
             <Korean>[KAM] 수술도구 상자</Korean>
+            <Portuguese>[KAM] Caixa cirúrgica</Portuguese>
         </Key>
     </Package>
 </Project>

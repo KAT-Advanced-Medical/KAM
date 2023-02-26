@@ -34,7 +34,7 @@ class CfgWeapons {
     };
     class kat_plate: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(Plate_Display); //Not an error - it has the same description as display name
+        displayName = CSTRING(Plate_Display);
         picture = QPATHTOF(ui\plate.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Plate_DescShort);
@@ -44,7 +44,7 @@ class CfgWeapons {
     };
     class kat_vacuum: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(Vacuum_displayName); //Not an error - it has the same description as display name
+        displayName = CSTRING(Vacuum_displayName);
         picture = QPATHTOF(ui\vacuum.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Vacuum_DescShort);

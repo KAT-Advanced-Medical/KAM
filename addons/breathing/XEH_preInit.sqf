@@ -195,7 +195,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(PNEUMOTHORAX_DAMAGE_THRESHOLD), LLSTRING(PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [0, 1, 0.4, 1],
+    [0, 1, 0.4, 2],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -319,18 +319,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// sound volume for Stethoscope
-/*
-[
-    QGVAR(StethoscopeSoundVolume),
-    "SLIDER",
-    [LLSTRING(SETTING_StethoscopeSoundVolume), LLSTRING(DESCRIPTION_StethoscopeSoundVolume)],
-    CBA_SETTINGS_CAT,
-    [1, 4, 1, 0],
-    true
-] call CBA_Settings_fnc_init;
-*/
-
 //Enables White Flashing on Below 90% SPO2
 [
     QGVAR(enableSPO2Flashing),
@@ -359,6 +347,20 @@ PREP_RECOMPILE_END;
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [0, 100, 90, 1],
     true
+] call CBA_Settings_fnc_init;
+
+// Sets sound volume of stethoscope
+[
+    QGVAR(stethoscopeSoundVolume),
+    "SLIDER",
+    [LLSTRING(SETTING_stethoscopeSoundVolume), LLSTRING(SETTING_stethoscopeSoundVolume_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [0, 4, 2, 1],
+    2,
+    {
+        player setVariable [QGVAR(stethoscopeSoundVolume), _this, true];
+    },
+    false
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;

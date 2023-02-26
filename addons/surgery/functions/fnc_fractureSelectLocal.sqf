@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg", "", objNull, "kat_IV_20"] call kat_surgery_fnc_fractureSelectLocal;
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_fractureSelectLocal;
  *
  * Public: No
  */
@@ -40,14 +40,11 @@ if (_liveFracture != 0) exitWith {
     [_patient, "quick_view", LSTRING(fracture_log), [_fractureString, STRING_BODY_PARTS select _part]] call ACEFUNC(medical_treatment,addToLog);  
 };
 
-private _value = random 100;
-
-if (_value <= GVAR(simpleChance)) then {
+if (random 100 <= GVAR(simpleChance)) then {
     _liveFracture = 1;
     _fractureString = LSTRING(SIMPLE_FRACTURE);
 } else {
-    private _subValue = random 100;
-    if (_subValue <= GVAR(compoundChance)) then {
+    if (random 100 <= GVAR(compoundChance)) then {
         _liveFracture = 2;
         _fractureString = LSTRING(COMPOUND_FRACTURE);
     } else {

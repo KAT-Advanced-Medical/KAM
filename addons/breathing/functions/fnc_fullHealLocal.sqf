@@ -48,8 +48,8 @@ _unit setVariable [QEGVAR(chemical,isTreated) ,true,true];
 _unit setVariable [QEGVAR(chemical, CS), false, true];
 _unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime), 60], true];
 if (_unit getVariable [QEGVAR(chemical, painEffect), 0] != 0) then {
-		KAT_PAIN_EFFECT ppEffectEnable false;
-	};
+    KAT_PAIN_EFFECT ppEffectEnable false;
+};
 
 // Tourniquets
 {
@@ -145,3 +145,59 @@ _unit setDamage 0;
 [QACEGVAR(medical,FullHeal), _unit] call CBA_fnc_localEvent;
 _state = [_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState;
 TRACE_1("after FullHeal",_state);
+
+/// Clear Stamina & weapon sway
+if (ACEGVAR(advanced_fatigue,enabled)) then {
+    
+    ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
+
+} else {
+
+    _unit enableStamina true;
+    _unit setAnimSpeedCoef 1;
+    _unit setCustomAimCoef 1;
+
+};
+
+/// Clear chroma effect & camera shake
+
+resetCamShake;
+["ChromAberration", 200, [ 0, 0, true ]] spawn
+{
+    params["_name", "_priority", "_effect", "_handle"];
+    while
+    {
+        _handle = ppEffectCreate[_name, _priority];
+        _handle < 0
+    }
+    do
+    {
+        _priority = _priority + 1;
+    };
+    _handle ppEffectEnable true;
+    _handle ppEffectAdjust _effect;
+    _handle ppEffectCommit 0;
+    [
+        {
+            params["_handle"];
+            ppEffectCommitted _handle
+        },
+        {
+            params["_handle"];
+            _handle ppEffectEnable false;
+            ppEffectDestroy _handle;
+        },
+    [_handle]] call CBA_fnc_waitUntilAndExecute;
+};
+
+// Reenable ace fatige animationspeed override
+
+if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
+    _index = ACEGVAR(advanced_fatigue,setAnimExclusions) find "PervitinOverride";
+    if (_index != -1) then {
+        ACEGVAR(advanced_fatigue,setAnimExclusions) deleteAt _index;
+    };
+};

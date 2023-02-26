@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_openFractureIncisionLocal
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_incisionLocal
  *
  * Public: No
  */

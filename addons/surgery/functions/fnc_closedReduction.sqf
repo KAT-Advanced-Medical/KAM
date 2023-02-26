@@ -12,15 +12,11 @@
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_closedFracture
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_closedReduction
  *
  * Public: No
  */
 
 params ["_medic", "_patient", "_bodyPart"];
 
-if (local _patient) then {
-    ["treatmentClosedFracture", [_medic, _patient, _bodyPart]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentClosedFracture", [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
-};
+[QGVAR(closedReduction), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
