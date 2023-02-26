@@ -21,7 +21,7 @@ jobs:
     - name: Check Strings
       run: python3 tools/check_strings.py
     - name: Check for BOM
-        uses: arma-actions/bom-check@master
+      uses: arma-actions/bom-check@master
 
   lint:
     runs-on: ubuntu-latest
@@ -36,6 +36,8 @@ jobs:
     steps:
     - name: Checkout the source code
       uses: actions/checkout@master
+      with:
+        fetch-depth: 1
     - name: Build using HEMTT
       uses: arma-actions/hemtt@master
       with:
