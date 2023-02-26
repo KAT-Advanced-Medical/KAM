@@ -43,15 +43,15 @@
             },
             [_patient],
             120] call CBA_fnc_waitAndExecute;
-
+        
         } else {
-
+            
             params ["_patient"];
 
             if !(alive _patient) exitWith {};
             _patient setAnimSpeedCoef 1.2;
             _patient setStamina 180;
-
+            
             [{
                 params ["_patient"];
                 _patient setAnimSpeedCoef 1;
