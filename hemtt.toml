@@ -3,7 +3,6 @@ prefix = "kat"
 author = "Katalam, Tomcat, Kygan, YetheSamartaka, Battlekeeper, MJSTIC, Digii / Julian and MiszczuZPolski"
 template = "cba"
 mainprefix = "x"
-include = ["./include"]
 files = [
     "mod.cpp",
     "README.md",
