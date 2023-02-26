@@ -3,7 +3,7 @@ name: Arma
 on:
   push:
     branches:
-    - dev-Tomcat
+    - master
   pull_request:
 
 jobs:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
-      uses: actions/checkout@dev-Tomcat
+      uses: actions/checkout@master
     - name: Validate SQF
       run: python3 tools/sqf_validator.py
     - name: Validate Config
@@ -25,17 +25,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
-      uses: actions/checkout@dev-Tomcat
+      uses: actions/checkout@master
     - name: Lint (sqflint)
-      uses: arma-actions/sqflint@dev-Tomcat
+      uses: arma-actions/sqflint@master
       continue-on-error: true # No failure due to many false-positives
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
-      uses: actions/checkout@dev-Tomcat
+      uses: actions/checkout@master
     - name: Build using HEMTT
-      uses: arma-actions/hemtt@dev-Tomcat
+      uses: arma-actions/hemtt@master
       with:
         command: build --release --ci
     - name: Upload Artifact
