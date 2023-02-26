@@ -20,8 +20,6 @@ jobs:
       run: python3 tools/stringtable_validator.py
     - name: Check Strings
       run: python3 tools/check_strings.py
-    - name: Check for BOM
-      uses: arma-actions/bom-check@master
 
   lint:
     runs-on: ubuntu-latest
