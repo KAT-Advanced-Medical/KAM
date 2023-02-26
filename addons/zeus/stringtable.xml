@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="zeus">
+<Project name="KAT">
+    <Package name="Zeus">
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Obstruction">
             <English>Airway obstruction: </English>
             <German>Atemwegsobstruktion: </German>

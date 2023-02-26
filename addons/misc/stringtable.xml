@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="misc">
+<Project name="KAT">
+    <Package name="Misc">
         <Key ID="STR_KAT_Misc_SETTING_ENABLE">
             <English>ACE-Misc activated?</English>
             <German>ACE-Sonstiges aktivieren?</German>

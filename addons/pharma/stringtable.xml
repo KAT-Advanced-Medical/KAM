@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="pharma">
+<Project name="KAT">
+    <Package name="Pharma">
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV">
             <English>Allow applying IV</English>
             <Polish>Poziom wyszkolenia medycznego dla IV</Polish>

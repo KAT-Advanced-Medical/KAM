@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="breathing">
+<Project name="KAT">
+    <Package name="Breathing">
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE">
             <English>ACE-Breathing activated?</English>
             <German>ACE-Atmung aktiviert?</German>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="circulation">
+<Project name="KAT">
+    <Package name="Circulation">
         <Key ID="STR_KAT_Circulation_SETTING_ENABLE">
             <English>ACE-Circulation activated?</English>
             <German>ACE-Kreislauf aktivieren?</German>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="surgery">
+<Project name="KAT">
+    <Package name="Surgery">
         <Key ID="STR_KAT_Surgery_Using">
             <English>Using</English>
             <German>Verwenden</German>

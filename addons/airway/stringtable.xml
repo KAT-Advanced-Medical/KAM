@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="airway">
+<Project name="KAT">
+    <Package name="Airway">
         <Key ID="STR_KAT_Airway_SETTING_ENABLE">
             <English>ACE-Airway injuries activated?</English>
             <German>ACE-Atemwegverletzungen aktiviert?</German>
