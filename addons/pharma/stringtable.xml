@@ -2361,6 +2361,8 @@
             <Japanese>患者は呼吸していません</Japanese>
             <Korean>환자가 숨을 쉬지 않습니다</Korean>
             <Italian>Il paziente non sta respirando</Italian>
+            <German>Patient atmet nicht</German>
+            <Portuguese>O paciente não está respirando</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
