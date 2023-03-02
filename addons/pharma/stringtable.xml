@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="pharma">
-        <Key ID="STR_kat_pharma_medLvl_ApplyIV">
+<Project name="KAT">
+    <Package name="Pharma">
+        <Key ID="STR_KAT_Pharma_medLvl_ApplyIV">
             <English>Allow applying IV</English>
             <Polish>Poziom wyszkolenia medycznego dla IV</Polish>
             <Chinesesimp>允许使用IV</Chinesesimp>
@@ -14,7 +14,7 @@
             <Spanish>Permitir colocar IV</Spanish>
             <Portuguese>Permitir aplicar IV</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_ApplyIV_Desc">
+        <Key ID="STR_KAT_Pharma_medLvl_ApplyIV_Desc">
             <English>Changes what medical level is required to set IVs</English>
             <German>Ändert, welcher medizinische Grad für das Legen von IVs erforderlich ist</German>
             <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia kaniul IV</Polish>
@@ -30,7 +30,7 @@
             <Russian>Изменяет медицинский уровень, необходимый для установки IV.</Russian>
             <Portuguese>Muda qual nível médico é necessário para aplicar IVs</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_ApplyIO">
+        <Key ID="STR_KAT_Pharma_medLvl_ApplyIO">
             <English>Allow applying IO</English>
             <Polish>Poziom wyszkolenia medycznego dla IO</Polish>
             <Chinesesimp>允许使用IO</Chinesesimp>
@@ -43,7 +43,7 @@
             <Spanish>Permitir colocar IO</Spanish>
             <Portuguese>Permitir aplicar IO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_ApplyIO_Desc">
+        <Key ID="STR_KAT_Pharma_medLvl_ApplyIO_Desc">
             <English>Changes what medical level is required to set IOs</English>
             <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia IO</Polish>
             <Chinesesimp>更改设置 IO 所需的医疗级别</Chinesesimp>
@@ -56,7 +56,7 @@
             <Spanish>Cambia el nivel médico que se requiere para colocar las IOs</Spanish>
             <Portuguese>Muda qual nível médico é necessário para aplicar IOs</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_IV_DROP_ENABLE">
+        <Key ID="STR_KAT_Pharma_IV_DROP_ENABLE">
             <English>Enables IV/IO drop times</English>
             <German>Aktiviert das herausfallen von IOs/IVs</German>
             <Polish>Włącz wypadanie IV/IO</Polish>
@@ -72,7 +72,7 @@
             <Russian>Включает время сброса IV/IO</Russian>
             <Portuguese>Habilita tempo de queda de IV/IO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_IV_DROP">
+        <Key ID="STR_KAT_Pharma_IV_DROP">
             <English>IV/IO drop time</English>
             <German>IOs/IVs Herausfallzeit</German>
             <French>Temps de chute de l'IV/IO</French>
@@ -81,9 +81,9 @@
             <Italian>Tempo di staccamento IV/IO</Italian>
             <Portuguese>Tempo de queda de IV/IO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_IV_DROP_TIME_DESC">
+        <Key ID="STR_KAT_Pharma_IV_DROP_TIME_DESC">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
-            <German>Ändert den Zeitpunkt, zu dem IVs/IOs aus einem Patienten herausfallen</German>
+            <German>Ändert den Zeitpunkt, nachdem IVs/IOs aus einem Patienten herausfallen</German>
             <Polish>Czas samoistnego wypadnięcia IV/IO z pacjenta</Polish>
             <French>Temps au bout du quel l'IV/IO tombe du patient</French>
             <Chinese>改变病人的静脉注射/IOs脱落的时间</Chinese>
@@ -97,7 +97,7 @@
             <Russian>Изменяет время выпадения IV/IO капельниц у пациента</Russian>
             <Portuguese>Altera o tempo em que IVs/IOs caem de um paciente</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_IV_REUSE">
+        <Key ID="STR_KAT_Pharma_IV_REUSE">
             <English>Sets if IV/IO needles are reusable</English>
             <German>Ändert ob IVs/IOs wiederverwendbar sind</German>
             <Polish>Czy igły IV/IO są do ponownego użytku</Polish>
@@ -113,7 +113,7 @@
             <Russian>Устанавливает, можно ли использовать иглы для IV/IO повторно</Russian>
             <Portuguese>Define se as agulhas IV/IO são reutilizáveis</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_ApplyIV">
+        <Key ID="STR_KAT_Pharma_treatmentTime_ApplyIV">
             <English>Time to establish IVs</English>
             <German>Zeit zum Anlegen von IVs</German>
             <Polish>Czas zakładania IV</Polish>
@@ -129,7 +129,7 @@
             <Russian>Время устанавливать IV</Russian>
             <Portuguese>Tempo de estabelecimento de IV</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_ApplyIO">
+        <Key ID="STR_KAT_Pharma_treatmentTime_ApplyIO">
             <English>Time to establish IOs</English>
             <German>Zeit zum Anlegen von IOs</German>
             <Polish>Czas zakładania IO</Polish>
@@ -145,7 +145,7 @@
             <Russian>Время устанавливать IO</Russian>
             <Portuguese>Tempo de estabelecimento de IO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Painkillers_DescShort">
+        <Key ID="STR_KAT_Pharma_Painkillers_DescShort">
             <English>Used to suppress pain</English>
             <German>Zur Unterdrückung von Schmerzen</German>
             <Polish>Używany do zwalczania bólu</Polish>
@@ -161,7 +161,7 @@
             <Russian>Используется для подавления боли</Russian>
             <Portuguese>Utilizado para suprimir a dor</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Painkillers_Box_Display">
+        <Key ID="STR_KAT_Pharma_Painkillers_Box_Display">
             <English>Painkillers</English>
             <Polish>Lek przeciwbólowy</Polish>
             <Chinese>止痛藥</Chinese>
@@ -177,7 +177,7 @@
             <Russian>Обезболивающие</Russian>
             <Portuguese>Analgésicos</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Inject_Box_Painkillers">
+        <Key ID="STR_KAT_Pharma_Inject_Box_Painkillers">
             <English>Push Painkillers</English>
             <Polish>Użyj leku przeciwbólowego</Polish>
             <Chinese>服用止痛藥</Chinese>
@@ -193,7 +193,7 @@
             <Russian>Принимайте обезболивающие</Russian>
             <Portuguese>Administrar analgésicos</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Carbonate_DescShort">
+        <Key ID="STR_KAT_Pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
             <German>Wird zur Wiederherstellung des Bewusstseins verwendet</German>
             <Polish>Używane w celu przywrócenia przytomności</Polish>
@@ -209,7 +209,7 @@
             <Russian>Используется для восстановления сознания</Russian>
             <Portuguese>Usado para restaurar a consciência</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Carbonate_Box_Display">
+        <Key ID="STR_KAT_Pharma_Carbonate_Box_Display">
             <English>Ammonium Carbonate</English>
             <German>Ammoniumkarbonat</German>
             <Polish>Sole trzeźwiące</Polish>
@@ -225,7 +225,7 @@
             <Russian>Карбонат аммония</Russian>
             <Portuguese>Carbonato de Amônio</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Take_Carbonate">
+        <Key ID="STR_KAT_Pharma_Take_Carbonate">
             <English>Use Carbonate</English>
             <German>Ammoniumkarbonat verwenden</German>
             <Polish>Użyj soli trzeźwiących</Polish>
@@ -241,7 +241,7 @@
             <Russian>Используйте карбонат</Russian>
             <Portuguese>Administrar Carbonato de Amônio</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Naloxone_DescShort">
+        <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
             <German>Zur Umkehrung einer Opioid-Überdosis</German>
             <Polish>Używany do zwalczania przedawkowania opioidów</Polish>
@@ -257,7 +257,7 @@
             <Russian>Используется для устранения передозировок опиоидами.</Russian>
             <Portuguese>Usado para reverter overdoses de opioides</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Naloxone_Box_Display">
+        <Key ID="STR_KAT_Pharma_Naloxone_Box_Display">
             <English>Naloxone</English>
             <German>Naloxone</German>
             <Polish>Nalokson</Polish>
@@ -273,7 +273,7 @@
             <Russian>Налоксон</Russian>
             <Portuguese>Naloxona</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Take_Naloxone">
+        <Key ID="STR_KAT_Pharma_Take_Naloxone">
             <English>Use Naloxone</English>
             <German>Naloxone verwenden</German>
             <Polish>Użyj Naloksonu</Polish>
@@ -289,7 +289,7 @@
             <Russian>Используйте налоксон</Russian>
             <Portuguese>Administrar Naloxona</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Amiodarone_DescShort">
+        <Key ID="STR_KAT_Pharma_Amiodarone_DescShort">
             <English>Used to combat cardiac arrest</English>
             <German>Einsatz zur Bekämpfung des Herzstillstands</German>
             <Polish>Używany do zwalczania zatrzymania akcji serca</Polish>
@@ -305,7 +305,7 @@
             <Russian>Используется для борьбы с остановкой сердца</Russian>
             <Portuguese>Usado para combater a parada cardíaca</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Amiodarone_Box_Display">
+        <Key ID="STR_KAT_Pharma_Amiodarone_Box_Display">
             <English>Amiodarone</English>
             <German>Amiodaron</German>
             <Polish>Amiodaron</Polish>
@@ -321,7 +321,7 @@
             <Russian>Амиодарон</Russian>
             <Portuguese>Amiodarona</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Take_Amiodarone">
+        <Key ID="STR_KAT_Pharma_Take_Amiodarone">
             <English>Push Amiodarone</English>
             <German>Amiodaron verabreichen</German>
             <Polish>Wstrzyknij Amiodaron</Polish>
@@ -337,7 +337,7 @@
             <Russian>Ввести амиодарон</Russian>
             <Portuguese>Administrar Amiodarona</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Lidocaine_DescShort">
+        <Key ID="STR_KAT_Pharma_Lidocaine_DescShort">
             <English>Used to combat cardiac arrest</English>
             <German>Einsatz zur Bekämpfung des Herzstillstands</German>
             <Polish>Używany do zwalczania zatrzymania akcji serca</Polish>
@@ -353,7 +353,7 @@
             <Russian>Используется для борьбы с остановкой сердца</Russian>
             <Portuguese>Usado para combater a parada cardíaca</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Lidocaine_Box_Display">
+        <Key ID="STR_KAT_Pharma_Lidocaine_Box_Display">
             <English>Lidocaine</English>
             <German>Lidocain</German>
             <Polish>Lidokaina</Polish>
@@ -369,7 +369,7 @@
             <Russian>Лидокаин</Russian>
             <Portuguese>Lidocaína</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Take_Lidocaine">
+        <Key ID="STR_KAT_Pharma_Take_Lidocaine">
             <English>Push Lidocaine</English>
             <German>Lidocain verabreichen</German>
             <Polish>Wstrzyknij Lidokainę</Polish>
@@ -385,7 +385,7 @@
             <Russian>Ввести Лидокаин</Russian>
             <Portuguese>Administrar Lidocaína</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Atropine_DescShort">
+        <Key ID="STR_KAT_Pharma_Atropine_DescShort">
             <English>Used to treat bradycardia</English>
             <German>Zur Behandlung von Bradykardie</German>
             <Polish>Używany do zwalczania bradykardii</Polish>
@@ -401,7 +401,7 @@
             <Russian>Используется для лечения брадикардии</Russian>
             <Portuguese>Usado para tratar bradicardia</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Atropine_Box_Display">
+        <Key ID="STR_KAT_Pharma_Atropine_Box_Display">
             <English>Atropine</English>
             <German>Atropin</German>
             <Polish>Atropina</Polish>
@@ -417,7 +417,7 @@
             <Russian>Атропин</Russian>
             <Portuguese>Atropina</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Take_Atropine">
+        <Key ID="STR_KAT_Pharma_Take_Atropine">
             <English>Push Atropine</English>
             <German>Atropin verabreichen</German>
             <Polish>Wstrzyknij Atropinę</Polish>
@@ -433,7 +433,7 @@
             <Russian>Ввести Атропин</Russian>
             <Portuguese>Administrar Atropina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_TXA_DescShort">
+        <Key ID="STR_KAT_Pharma_TXA_DescShort">
             <English>Encourages clot formation</English>
             <German>Fördert die Gerinnungsbildung</German>
             <Polish>Wspomaga tworzenie skrzepów</Polish>
@@ -449,7 +449,7 @@
             <Russian>Способствует образованию тромбов</Russian>
             <Portuguese>Favorece a coagulação</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_TXA_Box_Display">
+        <Key ID="STR_KAT_Pharma_TXA_Box_Display">
             <English>TXA</English>
             <German>TXA</German>
             <Polish>TXA</Polish>
@@ -465,7 +465,7 @@
             <Russian>TXA</Russian>
             <Portuguese>TXA</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Take_TXA">
+        <Key ID="STR_KAT_Pharma_Take_TXA">
             <English>Push TXA</English>
             <German>TXA verabreichen</German>
             <Polish>Wstrzyknij TXA</Polish>
@@ -481,7 +481,7 @@
             <Russian>Ввести TXA</Russian>
             <Portuguese>Administrar TXA</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Norep_DescShort">
+        <Key ID="STR_KAT_Pharma_Norep_DescShort">
             <English>Used to raise blood pressure</English>
             <German>Wird zur Erhöhung des Blutdrucks verwendet</German>
             <Polish>Używana do podniesienia ciśnienia krwi</Polish>
@@ -497,7 +497,7 @@
             <Russian>Используется для повышения артериального давления</Russian>
             <Portuguese>Usado para aumentar a pressão arterial</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Norep_Box_Display">
+        <Key ID="STR_KAT_Pharma_Norep_Box_Display">
             <English>Norepinephrine</English>
             <German>Noradrenalin</German>
             <Polish>Noradrenalina</Polish>
@@ -513,7 +513,7 @@
             <Russian>Норадреналин</Russian>
             <Portuguese>Norepinefrina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Take_Norep">
+        <Key ID="STR_KAT_Pharma_Take_Norep">
             <English>Push Norepinephrine</English>
             <German>Noradrenalin verabreichen</German>
             <Polish>Wstrzyknij Noradrenalinę</Polish>
@@ -529,7 +529,7 @@
             <Russian>Ввести Норадреналин</Russian>
             <Portuguese>Administrar Norepinefrina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Phenyl_DescShort">
+        <Key ID="STR_KAT_Pharma_Phenyl_DescShort">
             <English>Used to raise blood pressure</English>
             <German>Wird zur Erhöhung des Blutdrucks verwendet</German>
             <Polish>Używana do podniesienia ciśnienia krwi</Polish>
@@ -545,7 +545,7 @@
             <Russian>Используется для повышения артериального давления</Russian>
             <Portuguese>Usado para aumentar a pressão arterial</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Phenyl_Box_Display">
+        <Key ID="STR_KAT_Pharma_Phenyl_Box_Display">
             <English>Phenylephrine</English>
             <German>Phenylephrin</German>
             <Polish>Fenylefryna</Polish>
@@ -561,7 +561,7 @@
             <Russian>Фенилэфрин</Russian>
             <Portuguese>Fenilefrina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Take_Phenyl">
+        <Key ID="STR_KAT_Pharma_Take_Phenyl">
             <English>Push Phenylephrine</English>
             <German>Phenylephrin verabreichen</German>
             <Polish>Wstrzyknij Fenylefrynę</Polish>
@@ -577,7 +577,7 @@
             <Russian>Ввести Фенилэфрин</Russian>
             <Portuguese>Administrar Fenilefrina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Nitro_DescShort">
+        <Key ID="STR_KAT_Pharma_Nitro_DescShort">
             <English>Used to lower blood pressure</English>
             <German>Zur Senkung des Blutdrucks</German>
             <Polish>Używana do obniżenia ciśnienia krwi</Polish>
@@ -593,7 +593,7 @@
             <Russian>Используется для снижения артериального давления</Russian>
             <Portuguese>Usado para baixar a pressão arterial</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Nitro_Box_Display">
+        <Key ID="STR_KAT_Pharma_Nitro_Box_Display">
             <English>Nitroglycerin</English>
             <German>Nitroglycerin</German>
             <Polish>Nitrogliceryna</Polish>
@@ -609,7 +609,7 @@
             <Russian>Нитроглицерин</Russian>
             <Portuguese>Nitroglicerina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Take_Nitro">
+        <Key ID="STR_KAT_Pharma_Take_Nitro">
             <English>Push Nitroglycerin</English>
             <German>Nitroglycerin verabreichen</German>
             <Polish>Wstrzyknij Nitroglicerynę</Polish>
@@ -625,7 +625,7 @@
             <Russian>Ввести Нитроглицерин</Russian>
             <Portuguese>Administrar Nitroglicerina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Take_Reorient">
+        <Key ID="STR_KAT_Pharma_Take_Reorient">
             <English>Reorient Patient</English>
             <German>Patient umorientieren</German>
             <Polish>Ocuć pacjenta</Polish>
@@ -640,7 +640,7 @@
             <Russian>Переориентация пациента</Russian>
             <Portuguese>Reorientar Paciente</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Reorienting">
+        <Key ID="STR_KAT_Pharma_Reorienting">
             <English>Reorienting</English>
             <German>Umorientieren</German>
             <Polish>Cucenie</Polish>
@@ -656,7 +656,7 @@
             <Russian>Переориентация</Russian>
             <Portuguese>Reorientando</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Reorienting_Info">
+        <Key ID="STR_KAT_Pharma_Reorienting_Info">
             <English>You hit the cheek, but patient still asleep!</English>
             <German>Du hast die Wange getroffen, aber Patient schläft noch!</German>
             <Polish>Uderzyłeś w policzek, ale pacjent nadal śpi!</Polish>
@@ -672,7 +672,7 @@
             <Japanese>あなたは頬を叩きましたが、患者はまだ眠っています!</Japanese>
             <Portuguese>Após a bofetada, o paciente continua desacordado! </Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_ReorientingSuccess">
+        <Key ID="STR_KAT_Pharma_ReorientingSuccess">
             <English>Patient woke up with a hard hit!</English>
             <German>Patient wachte mit einem harten Schlag auf!</German>
             <Polish>Pacjent obudził się z mocnym uderzeniem!</Polish>
@@ -688,7 +688,7 @@
             <Japanese>患者は強打で飛び起きた!</Japanese>
             <Portuguese>O bofetão acorda o paciente!</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Using">
+        <Key ID="STR_KAT_Pharma_Using">
             <English>Using</English>
             <German>Benutzen</German>
             <Polish>Używanie</Polish>
@@ -704,7 +704,7 @@
             <Russian>С использованием</Russian>
             <Portuguese>Usando</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pushing">
+        <Key ID="STR_KAT_Pharma_Pushing">
             <English>Pushing</English>
             <German>Verabreichen</German>
             <Polish>Wstrzykiwanie</Polish>
@@ -720,7 +720,7 @@
             <Russian>Ввести </Russian>
             <Portuguese>Administrando</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_push_log">
+        <Key ID="STR_KAT_Pharma_push_log">
             <English>%1 pushed %2</English>
             <German>%1 verabreichte %2</German>
             <Polish>%1 wstrzyknął %2</Polish>
@@ -736,7 +736,7 @@
             <Russian>%1 нажал %2</Russian>
             <Portuguese>%1 administrou %2</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_inject_log">
+        <Key ID="STR_KAT_Pharma_inject_log">
             <English>%1 injected %2</English>
             <German>%1 verabreichte %2</German>
             <Polish>%1 włożył %2</Polish>
@@ -752,7 +752,7 @@
             <Russian>%1 введено %2</Russian>
             <Portuguese>%1 injetou %2</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_use_log">
+        <Key ID="STR_KAT_Pharma_use_log">
             <English>%1 used %2</English>
             <German>%1 nutzte %2</German>
             <Polish>%1 użył %2</Polish>
@@ -768,7 +768,7 @@
             <Russian>%1 использует %2</Russian>
             <Portuguese>%1 usou %1</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_IV_16_Display">
+        <Key ID="STR_KAT_Pharma_IV_16_Display">
             <English>16g IV</English>
             <German>16g IV</German>
             <Polish>16g IV</Polish>
@@ -784,7 +784,7 @@
             <Russian>16г IV</Russian>
             <Portuguese>16g IV</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_IV_DescShort">
+        <Key ID="STR_KAT_Pharma_IV_DescShort">
             <English>Intravenous Needle</English>
             <German>Intravenöse Kanüle</German>
             <Polish>Kaniula dożylna (wenflon)</Polish>
@@ -800,7 +800,7 @@
             <Russian>Внутривенное игла</Russian>
             <Portuguese>Cateter Intravenoso</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_IO_45_Display">
+        <Key ID="STR_KAT_Pharma_IO_45_Display">
             <English>FAST IO</English>
             <German>FAST IO</German>
             <Polish>FAST IO</Polish>
@@ -816,7 +816,7 @@
             <Russian>FAST IO</Russian>
             <Portuguese>FAST IO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_IO_DescShort">
+        <Key ID="STR_KAT_Pharma_IO_DescShort">
             <English>Intraosseous Needle</English>
             <German>Intraossäre Kanüle</German>
             <Polish>Igła doszpikowa</Polish>
@@ -832,7 +832,7 @@
             <Russian>Внутривенное игла</Russian>
             <Portuguese>Infusão Intraóssea</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Apply_IV_16">
+        <Key ID="STR_KAT_Pharma_Apply_IV_16">
             <English>Establish 16g IV</English>
             <German>16g IV einrichten</German>
             <Polish>Załóż 16G IV</Polish>
@@ -848,7 +848,7 @@
             <Russian>Настройка 16г IV</Russian>
             <Portuguese>Inserir 16g IV</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Apply_IO_45">
+        <Key ID="STR_KAT_Pharma_Apply_IO_45">
             <English>Establish FAST IO</English>
             <German>FAST IO einrichten</German>
             <Polish>Załóż FAST IO</Polish>
@@ -864,9 +864,9 @@
             <Russian>Установить 16г IV</Russian>
             <Portuguese>Inserir FAST IO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Applying_IV">
+        <Key ID="STR_KAT_Pharma_Applying_IV">
             <English>Establishing IV/IO</English>
-            <German>IV/IO einrichten</German>
+            <German>IV legen</German>
             <Polish>Zakładanie IV</Polish>
             <Spanish>Colocando IV</Spanish>
             <Czech>Zavádím IV</Czech>
@@ -880,9 +880,9 @@
             <Russian>Настройка IV/IO </Russian>
             <Portuguese>Inserindo IV</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Applying_IO">
+        <Key ID="STR_KAT_Pharma_Applying_IO">
             <English>Establishing IO</English>
-            <German>IO einrichten</German>
+            <German>IO legen</German>
             <Polish>Zakładanie IO</Polish>
             <Spanish>Colocando IO</Spanish>
             <Czech>Zavádím IO</Czech>
@@ -896,9 +896,9 @@
             <Russian>Настройка IO</Russian>
             <Portuguese>Inserindo IO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_iv_log">
+        <Key ID="STR_KAT_Pharma_iv_log">
             <English>%1 established a %2</English>
-            <German>%1 errichtet eine %2</German>
+            <German>%1 legte ein %2</German>
             <Polish>%1 założył %2</Polish>
             <Spanish>%1 ha colocado %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
@@ -912,7 +912,7 @@
             <Russian>%1 Настройка %2</Russian>
             <Portuguese>%1 inseriu %2</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Remove_IV">
+        <Key ID="STR_KAT_Pharma_Remove_IV">
             <English>Remove IV/IO</English>
             <German>IV/IO entfernen</German>
             <Polish>Zdejmij IV/IO</Polish>
@@ -928,7 +928,7 @@
             <Russian>Удалить IV/IO</Russian>
             <Portuguese>Retirar IV/IO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Removing_IV">
+        <Key ID="STR_KAT_Pharma_Removing_IV">
             <English>Removing</English>
             <German>Entferne</German>
             <Polish>Zdejmowanie</Polish>
@@ -944,7 +944,7 @@
             <Russian>Удаление</Russian>
             <Portuguese>Removendo</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pain_empty">
+        <Key ID="STR_KAT_Pharma_Pain_empty">
             <English>%1 is now empty</English>
             <German>%1 ist nun leer</German>
             <Polish>%1 jest pusty</Polish>
@@ -960,7 +960,7 @@
             <Russian>%1 сейчас пуст</Russian>
             <Portuguese>%1 agora está vazio</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV">
+        <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV">
             <English>Require inserted IV/IO</English>
             <German>Erfordert eingefügtes IV/IO</German>
             <Polish>Wymagaj włożonego IV/IO</Polish>
@@ -976,7 +976,7 @@
             <Russian>Требовать вставки IV/IO</Russian>
             <Portuguese>Requerer inserção de IV/IO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma.\n If false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
             <German>Standardeinstellung falsch. Wenn wahr, müssen Sie zuerst eine IV/IO einführen, bevor Sie jemandem Kochsalzlösung/Blut/Plasma geben können.\n Wenn falsch, behält es das Standard-ACE-Verhalten für die Verwendung von Kochsalzlösung/Blut/Plasma bei.</German>
             <Polish>Domyślnie wyłączone. Jeśli włączone, należy najpierw umieścić IV/IO przed podaniem płynów. \nJeśli wyłączone, mechanika będzie taka sama jak w ACE przy podawaniu soli fizjologicznej/krwi/osocza.</Polish>
@@ -992,7 +992,7 @@
             <Russian>Истина по умолчанию. Если это правда, вам нужно будет сначала ввести IV/IO, прежде чем вы сможете дать кому-то физиологический раствор/кровь/плазму.\n Если false, он сохраняет стандартное поведение ACE для использования физиологического раствора/крови/плазмы.</Russian>
             <Portuguese>Falso, por padrão. Se verdadeiro, você precisará inserir IV/IO primeiro antes de poder administrar solução salina/sangue/plasma a alguém.\n Se falso, mantém o comportamento padrão do ACE para uso de solução salina/sangue/plasma.</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV_Medications">
+        <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_Medications">
             <English>Medications Require IV/IO</English>
             <Japanese>薬液にIV/IO刺入を要求しますか</Japanese>
             <French>Les médicaments nécessitent une IV/IO</French>
@@ -1005,7 +1005,7 @@
             <Spanish>Requerir IV/IO para fármacos</Spanish>
             <Portuguese>Medicamentos requerem IV/IO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_REQUIRE_INS_IV_Medications_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_Medications_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone medications.\n If false, you can give them without it.</English>
             <Japanese>KATデフォルトではfalseです。trueの場合、薬液注射を行う前にIV/IOを刺入する必要があります。\nfalseの場合は薬品だけで投与可能になります。</Japanese>
             <French>Faux par défaut. Si vrai, il sera nécessaire d'insérer une IV/IO avant de pouvoir donner des médicaments à quelqu'un.\n Si faux, ils pourront être donnés sans</French>
@@ -1018,7 +1018,7 @@
             <Spanish>Predeterminado desactivado. Si se activa, se necesitará insertar una IV/IO primero antes de poder suministrar fármacos. \n Si esta desactivado, se podrán suministrar sin IV/IO.</Spanish>
             <Portuguese>Falso, por padrão. Se verdadeiro, você precisará inserir IV/IO primeiro antes de poder administrar medicamentos a alguém.\n Se falso, você pode administrá-los sem ele.</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Reorientation_Slap">
+        <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
             <Polish>Dźwięk przy cuceniu</Polish>
             <German>Slap-Sound für Umorientieren</German>
@@ -1034,7 +1034,7 @@
             <Russian>Звук пощечины при переориентации</Russian>
             <Portuguese>Som de tapa durante reorientação</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Reorientation_Slap_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap_DESC">
             <English>Enables slap sound for reorientation</English>
             <Polish>Włącza dźwięk uderzenia przy cuceniu</Polish>
             <German>Aktiviert Slap-Sound für Umorientieren</German>
@@ -1050,7 +1050,7 @@
             <Russian>Включает звук пощечины для переориентации</Russian>
             <Portuguese>Ativa o som de tapa durante reorientação</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Reorientation_Enable">
+        <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Enable">
             <English>Reorientation enabled?</English>
             <Polish>Cucenie dostępne?</Polish>
             <German>Umorientieren aktiviert?</German>
@@ -1066,7 +1066,7 @@
             <Russian>Переориентация включена?</Russian>
             <Portuguese>Reorientação habilitada?</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Reorientation_Enable_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Enable_DESC">
             <English>Enables reorientation</English>
             <Polish>Pozwala na cucenie</Polish>
             <German>Aktiviert das Umorientieren</German>
@@ -1082,7 +1082,7 @@
             <Russian>Включает переориентация</Russian>
             <Portuguese>Habilita a reorientação</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Allow_Reorientation">
+        <Key ID="STR_KAT_Pharma_SETTING_Allow_Reorientation">
             <English>Allow reorientation</English>
             <Polish>Pozwól na cucenie</Polish>
             <German>Umorientieren zulassen</German>
@@ -1098,10 +1098,10 @@
             <Russian>Разрешить переориентацию</Russian>
             <Portuguese>Permitir reorientação</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Allow_Reorientation_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Allow_Reorientation_DESC">
             <English>Medical level required for reorientation</English>
             <Polish>Poziom wyszkolenia wymagany do cucenia</Polish>
-            <German>Erforderliches Medic Level zum Umorientieren</German>
+            <German>Erforderlicher medizinischer Grad zum Umorientieren</German>
             <Spanish>Nivel médico requerido para la bofetada</Spanish>
             <Chinese>调整方向所需的医疗水平</Chinese>
             <Chinesesimp>刺激患者所需的医疗水平</Chinesesimp>
@@ -1114,7 +1114,7 @@
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
             <Portuguese>Nível médico necessário para reorientação</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Pervitin">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Pervitin">
             <English>Enable Chromatic Aberration</English>
             <German>Aktiviere Chromatische Abweichungen</German>
             <French>Activer l'aberration chromatique</French>
@@ -1123,34 +1123,34 @@
             <Italian>Attiva aberrazione cromatica</Italian>
             <Portuguese>Ativar Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Pervitin_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Pervitin_DESC">
             <English>Enables if pervitin should influance your vision with chromatic aberration</English>
-            <German>Aktiviert ob Pervitin deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+            <German>Aktiviert, ob Pervitin deine Sicht mit chromatischen Abweichungen beeinflussen soll</German>
             <French>Définie si la pervitine devrait influancer la vision avec une aberration chromatique</French>
             <Japanese>ペルビチン服用時に色収差で視覚に影響を与えるかどうかを有効にします</Japanese>
             <Korean>페르피틴이 색수차로 시력에 영향을 미치는지의 여부를 활성화합니다.</Korean>
             <Italian>Attiva se il pervitin debba influenzare la tua visuale con l'aberrazione cromatica</Italian>
             <Portuguese>Ativa se o Pervitin deve influenciar sua visão com Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Pervitin">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Pervitin">
             <English>Chromatic Aberration Strength</English>
-            <German>Chromatische Abweichungs Stärke</German>
+            <German>Chromatische Abweichung-Stärke</German>
             <French>Intensité de l'aberration chromatique</French>
             <Japanese>色収差強度</Japanese>
             <Korean>색수차 강도(페르피틴)</Korean>
             <Italian>Intensità dell'aberrazione cromatica</Italian>
             <Portuguese>Intensidade de Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Pervitin_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Pervitin_DESC">
             <English>Changes the strength of the chromatic aberration</English>
-            <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
+            <German>Bestimmt die Stärke von den chromatischen Abweichungen</German>
             <French>Définie l'intensité de l'aberration chromatique</French>
             <Japanese>色収差の強さを変更します</Japanese>
             <Korean>페르피틴의 색수차의 강도를 변경합니다.</Korean>
             <Italian>Cambia l'intensità dell'aberrazione cromatica</Italian>
             <Portuguese>Altera a intensidade da Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Weapon_Sway_Pervitin">
+        <Key ID="STR_KAT_Pharma_SETTING_Weapon_Sway_Pervitin">
             <English>Enable Weapon Sway</English>
             <German>Aktiviere Waffen Schwanken</German>
             <French>Activer l'oscillation de l'arme</French>
@@ -1159,102 +1159,102 @@
             <Italian>Abilita l'oscillazione dell'arma</Italian>
             <Portuguese>Ativar balanço da arma</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Weapon_Sway_Pervitin_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Weapon_Sway_Pervitin_DESC">
             <English>Enables if pervitin should influance your weapon sway</English>
-            <German>Aktiviert ob Pervitin dein Waffen schwanken beinflussen soll</German>
+            <German>Aktiviert, ob Pervitin das Schwanken deiner Waffen beeinflussen soll</German>
             <French>Définie si la pervitine influance l'oscillation de l'arme</French>
             <Japanese>ペルビチンが武器の揺れに影響を与えるかどうかを有効にします</Japanese>
             <Korean>페르피틴이 무기의 흔들림에 영향을 미치는지의 여부를 활성화합니다.</Korean>
             <Italian>Attiva se il pervitin debba influenzare l'oscillazione dell'arma</Italian>
             <Portuguese>Ativa se o Pervitin influenciar o balanço da sua arma</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_PervitinSpeed_displayName">
+        <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_displayName">
             <English>Pervitin Speed Boost</English>
-            <German>Pervitin Geschwindigkeits Boost</German>
+            <German>Pervitin Geschwindigkeit Boost</German>
             <Korean>페르피틴 속도 부스트</Korean>
             <Japanese>ペルビチン速度上昇</Japanese>
             <Portuguese>Aumento de velocidade do Pervitin</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_PervitinSpeed_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_DESC">
             <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
-            <German>Geschindigkeit die in Phase 1 von Pervitin gesetzt wird. (1 = normal, 2 = doppelt)</German>
+            <German>Geschwindigkeit, die in Phase 1 von Pervitin gesetzt wird. (1 = normal, 2 = doppelt)</German>
             <Korean>페르피틴 효과 1단계에서 설정되는 애니메이션 속도. (1 = 정상, 2 = 두 배)</Korean>
             <Japanese>ペルビチン効果の第一段階でのアニメーションの再生速度を設定します (1 = 通常、2 = 2倍速)</Japanese>
             <Portuguese>A velocidade da animação definida no Estágio 1 do Pervitin. (1 = normal, 2 = duas vezes)</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>
-            <German>Aktiviere Chromatische Abweichungen</German>
+            <German>Aktiviere chromatische Abweichungen</German>
             <French>Activer l'aberration chromatique</French>
             <Japanese>色収差を有効にする</Japanese>
             <Korean>색수차 활성화(케타민)</Korean>
             <Italian>Attiva aberrazione cromatica</Italian>
             <Portuguese>Ativar Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine_DESC">
             <English>Enables if ketamine should influance your vision with chromatic aberration</English>
-            <German>Aktiviert ob Ketamin deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+            <German>Aktiviert, ob Ketamin deine Sicht, mit chromatischen Abweichungen beeinflussen soll</German>
             <French>Définie si la kétamine devrait influancer la vision avec une aberration chromatique</French>
             <Japanese>ケタミン服用時に色収差で視覚に影響を与えるかどうかを有効にします</Japanese>
             <Korean>케타민이 색수차로 시력에 영향을 미치는 지의 여부를 활성화합니다.</Korean>
             <Italian>Attiva se la ketamina debba influenzare la tua visuale con l'aberrazione cromatica</Italian>
             <Portuguese>Ativa se a Cetamina deve influenciar sua visão com Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Ketamine">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Ketamine">
             <English>Chromatic Aberration Strength</English>
-            <German>Chromatische Abweichungs Stärke</German>
+            <German>Chromatische Abweichung-Stärke</German>
             <French>Intensité de l'aberration chromatique</French>
             <Japanese>色収差強度</Japanese>
             <Korean>색수차 강도(케타민)</Korean>
             <Italian>Intensità dell'aberrazione cromatica</Italian>
             <Portuguese>Intensidade de Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Ketamine_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Ketamine_DESC">
             <English>Changes the strength of the chromatic aberration</English>
-            <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
+            <German>Bestimmt die Stärke von den chromatischen Abweichungen</German>
             <French>Définie l'intensité de l'aberration chromatique</French>
             <Japanese>色収差の強さを変更します</Japanese>
             <Korean>케타민의 색수차의 강도를 변경합니다.</Korean>
             <Italian>Cambia l'intensità dell'aberrazione cromatica</Italian>
             <Portuguese>Altera a intensidade da Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl">
             <English>Enable Chromatic Aberration</English>
-            <German>Aktiviere Chromatische Abweichungen</German>
+            <German>Aktiviere chromatische Abweichungen</German>
             <French>Activer l'aberration chromatique</French>
             <Japanese>色収差を有効にする</Japanese>
             <Korean>색수차 활성화(펜타닐)</Korean>
             <Italian>Attiva aberrazione cromatica</Italian>
             <Portuguese>Ativar Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl_DESC">
             <English>Enables if fentanyl should influance your vision with chromatic aberration</English>
-            <German>Aktiviert ob Fentanyl deine Sicht beinflussen soll mit chromatischen Abweichungen</German>
+            <German>Aktiviert, ob Fentanyl deine Sicht mit chromatischen Abweichungen beeinflussen soll</German>
             <French>Définie si le fentanyl devrait influancer la vision avec une aberration chromatique</French>
             <Japanese>フェンタニル服用時に色収差で視覚に影響を与えるかどうかを有効にします</Japanese>
             <Korean>펜타닐이 색수차로 시력에 영향을 미치는지의 여부를 활성화합니다.</Korean>
             <Italian>Attiva se il fentanil debba influenzare la tua visuale con l'aberrazione cromatica</Italian>
             <Portuguese>Ativa se o Fentanil deve influenciar sua visão com Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl">
             <English>Chromatic Aberration Strength</English>
-            <German>Chromatische Abweichungs Stärke</German>
+            <German>Chromatische Abweichung-Stärke</German>
             <French>Intensité de l'aberration chromatique</French>
             <Japanese>色収差強度</Japanese>
             <Korean>색수차 강도(펜타닐)</Korean>
             <Italian>Attiva aberrazione cromatica</Italian>
             <Portuguese>Intensidade de Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl_DESC">
             <English>Changes the strength of the chromatic aberration</English>
-            <German>Bestimmt die Stärke von den Chromatischen Abweichungen</German>
+            <German>Bestimmt die Stärke von den chromatischen Abweichungen</German>
             <French>Définie l'intensité de l'aberration chromatique</French>
             <Japanese>色収差の強さを変更します</Japanese>
             <Korean>펜타닐의 색수차의 강도를 변경합니다.</Korean>
             <Italian>Cambia l'intensità dell'aberrazione cromatica</Italian>
             <Portuguese>Altera a intensidade da Aberração Cromática</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_treatmentTime_Reorientation">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Reorientation">
             <English>Treatment time for reorientation</English>
             <Polish>Czas cucenia</Polish>
             <Chinesesimp>恢复体态的治疗时间</Chinesesimp>
@@ -1267,7 +1267,7 @@
             <Spanish>Tiempo para bofetada</Spanish>
             <Portuguese>Tempo de tratamento para reorientação</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Etomidate_displayName">
+        <Key ID="STR_KAT_Pharma_Etomidate_displayName">
             <English>Etomidate</English>
             <Chinesesimp>依托咪酯</Chinesesimp>
             <Italian>Etomidato</Italian>
@@ -1280,7 +1280,7 @@
             <Spanish>Etomidato</Spanish>
             <Portuguese>Etomidato</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Etomidate_DescShort">
+        <Key ID="STR_KAT_Pharma_Etomidate_DescShort">
             <English>General Anesthetic</English>
             <Chinesesimp>全身麻醉</Chinesesimp>
             <Italian>Anestesia generale</Italian>
@@ -1288,12 +1288,12 @@
             <French>Anesthésie générale</French>
             <Polish>Anestetyk</Polish>
             <Korean>일반적인 마취제</Korean>
-            <German>Allgemeinanästhesie</German>
+            <German>Allgemeines Anästhetikum</German>
             <Japanese>全身麻酔</Japanese>
             <Spanish>Anestesia general</Spanish>
             <Portuguese>Anestésico Geral</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Etomidate_DescUse">
+        <Key ID="STR_KAT_Pharma_Etomidate_DescUse">
             <English>Used as a general anesthetic for surgical procedures</English>
             <Chinesesimp>用作外科手术的全身麻醉剂</Chinesesimp>
             <Italian>Usato come anestetico generale per procedure chirurgiche</Italian>
@@ -1306,7 +1306,7 @@
             <Polish>Stosowany jako znieczulenie ogólne do zabiegów chirurgicznych</Polish>
             <Portuguese>Usado como um anestésico geral para procedimentos cirúrgicos</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Etomidate_Use">
+        <Key ID="STR_KAT_Pharma_Etomidate_Use">
             <English>Push Etomidate</English>
             <Chinesesimp>推注依托咪酯</Chinesesimp>
             <Italian>Iniettare Etomidato</Italian>
@@ -1319,7 +1319,7 @@
             <Spanish>Administrar Etomidato</Spanish>
             <Portuguese>Administrar Etomidato</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Lorazepam_displayName">
+        <Key ID="STR_KAT_Pharma_Lorazepam_displayName">
             <English>Lorazepam</English>
             <Chinesesimp>劳拉西泮</Chinesesimp>
             <Italian>Lorazepam</Italian>
@@ -1332,7 +1332,7 @@
             <Spanish>Lorazepam</Spanish>
             <Portuguese>Lorazepam</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Lorazepam_DescShort">
+        <Key ID="STR_KAT_Pharma_Lorazepam_DescShort">
             <English>Sedtation medication</English>
             <Chinesesimp>镇静药物</Chinesesimp>
             <Italian>Farmaco sedativo</Italian>
@@ -1345,7 +1345,7 @@
             <Spanish>Fármaco sedante</Spanish>
             <Portuguese>Medicamento sedativo</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Lorazepam_DescUse">
+        <Key ID="STR_KAT_Pharma_Lorazepam_DescUse">
             <English>Used to sedate patients and prepare them for surgery</English>
             <Chinesesimp>用于镇静患者并为手术做好准备</Chinesesimp>
             <Italian>Usato per sedare i pazienti e prepararli per un intervento chirurgico</Italian>
@@ -1358,7 +1358,7 @@
             <Polish>Służy do uspokajania pacjentów i przygotowywania ich do operacji - usypia</Polish>
             <Portuguese>Usado para sedar pacientes e prepará-los para a cirurgia</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Lorazepam_Use">
+        <Key ID="STR_KAT_Pharma_Lorazepam_Use">
             <English>Push Lorazepam</English>
             <Chinesesimp>推注劳拉西泮</Chinesesimp>
             <Italian>Iniettare Lorazepam</Italian>
@@ -1371,7 +1371,7 @@
             <Spanish>Administrar Lorazepam</Spanish>
             <Portuguese>Administrar Lorazepam</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Flumazenil_displayName">
+        <Key ID="STR_KAT_Pharma_Flumazenil_displayName">
             <English>Flumazenil</English>
             <Chinesesimp>氟马西尼</Chinesesimp>
             <Italian>Flumazenil</Italian>
@@ -1384,7 +1384,7 @@
             <Spanish>Flumazenil</Spanish>
             <Portuguese>Flumazenil</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Flumazenil_DescShort">
+        <Key ID="STR_KAT_Pharma_Flumazenil_DescShort">
             <English>Counter to Lorzaepam</English>
             <Chinesesimp>用于对抗劳拉西泮</Chinesesimp>
             <Italian>Antagonista del Lorazepam</Italian>
@@ -1397,7 +1397,7 @@
             <Spanish>Contrarresta el Lorazepam</Spanish>
             <Portuguese>Antídoto para Lorzaepam</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Flumazenil_DescUse">
+        <Key ID="STR_KAT_Pharma_Flumazenil_DescUse">
             <English>Used to bring patients out of sedation</English>
             <Chinesesimp>用于使患者脱离镇静状态</Chinesesimp>
             <Italian>Usato per portare i pazienti fuori dalla sedazione</Italian>
@@ -1410,7 +1410,7 @@
             <Polish>Służy do wyprowadzania pacjentów z sedacji</Polish>
             <Portuguese>Usado para tirar os pacientes da sedação</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Flumazenil_Use">
+        <Key ID="STR_KAT_Pharma_Flumazenil_Use">
             <English>Push Flumazenil</English>
             <Chinesesimp>推注氟马西尼</Chinesesimp>
             <Italian>Iniettare Flumazenil</Italian>
@@ -1423,7 +1423,7 @@
             <Spanish>Administrar Flumazenil</Spanish>
             <Portuguese>Administrar Flumazenil</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Take_Ketamine">
+        <Key ID="STR_KAT_Pharma_Take_Ketamine">
             <English>Push Ketamine</English>
             <Chinesesimp>推注氯胺酮</Chinesesimp>
             <Czech>Aplikovat Ketamin</Czech>
@@ -1436,7 +1436,7 @@
             <Spanish>Administrar Ketamina</Spanish>
             <Portuguese>Administrar Cetamina</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Ketamine_Box_Display">
+        <Key ID="STR_KAT_Pharma_Ketamine_Box_Display">
             <English>Ketamine</English>
             <Chinesesimp>氯胺酮</Chinesesimp>
             <Italian>Ketamina</Italian>
@@ -1449,7 +1449,7 @@
             <Spanish>Ketamina</Spanish>
             <Portuguese>Cetamina</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Ketamine_DescShort">
+        <Key ID="STR_KAT_Pharma_Ketamine_DescShort">
             <English>Suppress pain</English>
             <Chinesesimp>用于抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
@@ -1462,7 +1462,7 @@
             <Spanish>Suprime el dolor</Spanish>
             <Portuguese>Suprime a dor</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Take_Fentanyl">
+        <Key ID="STR_KAT_Pharma_Take_Fentanyl">
             <English>Push Fentanyl</English>
             <Chinesesimp>推注芬太尼</Chinesesimp>
             <Czech>Aplikovat Fentanyl</Czech>
@@ -1475,7 +1475,7 @@
             <Spanish>Administrar Fentanilo</Spanish>
             <Portuguese>Administrar Fentanil</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Fentanyl_Box_Display">
+        <Key ID="STR_KAT_Pharma_Fentanyl_Box_Display">
             <English>Fentanyl</English>
             <Chinesesimp>芬太尼</Chinesesimp>
             <Italian>Fentanil</Italian>
@@ -1488,7 +1488,7 @@
             <Spanish>Fentanilo</Spanish>
             <Portuguese>Fentanil</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Fentanyl_DescShort">
+        <Key ID="STR_KAT_Pharma_Fentanyl_DescShort">
             <English>Suppress pain</English>
             <Chinesesimp>用于抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
@@ -1501,7 +1501,7 @@
             <Spanish>Suprime el dolor</Spanish>
             <Portuguese>Suprime a dor</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Take_Nalbuphine">
+        <Key ID="STR_KAT_Pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
             <Chinesesimp>推注纳布啡</Chinesesimp>
             <Czech>Aplikovat Nalbufin</Czech>
@@ -1514,7 +1514,7 @@
             <Spanish>Administrar Nalbufina</Spanish>
             <Portuguese>Administrar Nalbufina</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Nalbuphine_Box_Display">
+        <Key ID="STR_KAT_Pharma_Nalbuphine_Box_Display">
             <English>Nalbuphine</English>
             <Chinesesimp>纳布啡</Chinesesimp>
             <Italian>Nalbufina (Nubain)</Italian>
@@ -1527,7 +1527,7 @@
             <Spanish>Nalbufina</Spanish>
             <Portuguese>Nalbufina</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_Nalbuphine_DescShort">
+        <Key ID="STR_KAT_Pharma_Nalbuphine_DescShort">
             <English>Suppress pain</English>
             <Chinesesimp>用于抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
@@ -1540,7 +1540,7 @@
             <Spanish>Suprime el dolor</Spanish>
             <Portuguese>Suprime a dor</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_reorientationChance">
+        <Key ID="STR_KAT_Pharma_SETTING_reorientationChance">
             <English>Chance for succesful reorientation</English>
             <Polish>Szansa na pomyślne ocucenie</Polish>
             <Chinesesimp>成功进行恢复体态的几率</Chinesesimp>
@@ -1553,7 +1553,7 @@
             <Spanish>Probabilidad para una reorientación exitosa</Spanish>
             <Portuguese>Chance de reorientação bem-sucedida</Portuguese>
         </Key>
-        <Key ID="STR_KAT_pharma_SETTING_carbonateChance">
+        <Key ID="STR_KAT_Pharma_SETTING_carbonateChance">
             <English>Chance for succesful Carbonate use</English>
             <Polish>Szansa na pomyślne użycie soli trzeźwiących</Polish>
             <Chinesesimp>成功使用碳酸盐的几率</Chinesesimp>
@@ -1566,7 +1566,7 @@
             <Spanish>Probabilidad para un uso exitoso del Carbonato</Spanish>
             <Portuguese>Possibilidade de uso bem-sucedido de Carbonato</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Carbonate">
+        <Key ID="STR_KAT_Pharma_medLvl_Carbonate">
             <English>Allow using Carbonate</English>
             <Polish>Poziom wyszkolenia medycznego dla soli trzeźwiących</Polish>
             <Chinesesimp>允许使用碳酸盐</Chinesesimp>
@@ -1579,7 +1579,7 @@
             <Spanish>Habilitar el uso del Carbonato</Spanish>
             <Portuguese>Permitir o uso de Carbonato</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Carbonate">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Carbonate">
             <English>Treatment time for Carbonate</English>
             <Polish>Czas na użycie soli trzeźwiących</Polish>
             <Chinesesimp>碳酸盐的治疗时间</Chinesesimp>
@@ -1592,7 +1592,7 @@
             <Spanish>Tiempo para uso del Carbonato</Spanish>
             <Portuguese>Tempo de uso de Carbonato</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Naloxone">
+        <Key ID="STR_KAT_Pharma_medLvl_Naloxone">
             <English>Medical level required for Naloxone</English>
             <Polish>Poziom wyszkolenia medycznego dla Naloksonu</Polish>
             <Chinesesimp>纳洛酮所需的医疗水平</Chinesesimp>
@@ -1600,12 +1600,12 @@
             <Czech>Zdravotnická úroveň potřebná pro Naloxon</Czech>
             <French>Niveau médical requis pour la Naloxone</French>
             <Korean>날록손을 사용할 수 있는 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Naloxon </German>
+            <German>Erforderlicher medizinischer Grad für die Gabe von Naloxon</German>
             <Japanese>ナロキソンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Naloxona</Spanish>
             <Portuguese>Nível médico exigido para administrar Naloxona</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Naloxone">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Naloxone">
             <English>Treatment time for Naloxone</English>
             <Polish>Czas na wstrzyknięcie Naloksonu</Polish>
             <Chinesesimp>纳洛酮的治疗时间</Chinesesimp>
@@ -1618,7 +1618,7 @@
             <Spanish>Tiempo para uso de la Naloxona</Spanish>
             <Portuguese>Tempo de uso de Naloxona</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Pervitin">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Pervitin">
             <English>Treatment time for Pervitin</English>
             <German>Anwendungszeit für Pervitin</German>
             <French>Temps de traitement de la Pervitine</French>
@@ -1627,16 +1627,16 @@
             <Italian>Tempo di trattamento per il Pervitin</Italian>
             <Portuguese>Tempo de uso de Pervitin</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Pervitin">
+        <Key ID="STR_KAT_Pharma_medLvl_Pervitin">
             <English>Medical level required for Pervitin</English>
-            <German>Erforderliches medizinisches Level für die Gabe von Pervitin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Pervitin</German>
             <French>Niveau médical requis pour la Pervitine</French>
             <Japanese>ペルビチンに必要な医療レベル</Japanese>
             <Korean>페르피틴을 사용하는데 필요한 의료 레벨 수준 변경</Korean>
             <Italian>Livello medico richiesto per il Pervitin</Italian>
             <Portuguese>Nível médico exigido para administrar Pervitin</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_TXA">
+        <Key ID="STR_KAT_Pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
             <Polish>Poziom wyszkolenia medycznego dla TXA</Polish>
             <Chinesesimp>TXA所需的医疗水平</Chinesesimp>
@@ -1644,12 +1644,12 @@
             <Czech>Zdravotnická úroveň potřebná pro TXA</Czech>
             <French>Niveau médical requis pour l'Acide Tranexamique</French>
             <Korean>TXA를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von TXA</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von TXA</German>
             <Japanese>TXAに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el ATX</Spanish>
             <Portuguese>Nível médico exigido para administrar TXA</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_TXA">
+        <Key ID="STR_KAT_Pharma_treatmentTime_TXA">
             <English>Treatment time for TXA</English>
             <Polish>Czas na wstrzyknięcie TXA</Polish>
             <Chinesesimp>TXA的治疗时间</Chinesesimp>
@@ -1662,7 +1662,7 @@
             <Spanish>Tiempo para uso del ATX</Spanish>
             <Portuguese>Tempo de uso de TXA</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Norepinephrine">
+        <Key ID="STR_KAT_Pharma_medLvl_Norepinephrine">
             <English>Medical level required for Norepinephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
             <Chinesesimp>去甲肾上腺素所需的医疗水平</Chinesesimp>
@@ -1670,12 +1670,12 @@
             <Italian>Livello medico richiesto per la Norepinefrina</Italian>
             <French>Niveau médical requis pour la Noradrénaline</French>
             <Korean>노르에피네프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Norepinephrin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Norepinephrin</German>
             <Japanese>ノルアドレナリンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Norepinefrina</Spanish>
             <Portuguese>Nível médico exigido para uso de Norepinefrina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Norepinephrine">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Norepinephrine">
             <English>Treatment time for Norepinephrine</English>
             <Polish>Czas na wstrzyknięcie Noradrenaliny</Polish>
             <Chinesesimp>去甲肾上腺素的治疗时间</Chinesesimp>
@@ -1688,7 +1688,7 @@
             <Spanish>Tiempo para uso de la Norepinefrina</Spanish>
             <Portuguese>Tempo de uso de Norepinefrina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Phenylephrine">
+        <Key ID="STR_KAT_Pharma_medLvl_Phenylephrine">
             <English>Medical level required for Phenylephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Fenylefryny</Polish>
             <Chinesesimp>苯肾上腺素所需的医疗水平</Chinesesimp>
@@ -1696,12 +1696,12 @@
             <Italian>Livello medico richiesto per la Fenilefrina</Italian>
             <French>Niveau médical requis pour la Phényléphrine</French>
             <Korean>페닐에프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Phenylephrin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Phenylephrin</German>
             <Japanese>フェニレフリンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Fenilefrina</Spanish>
             <Portuguese>Nível médico exigido para uso de Fenilefrina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Phenylephrine">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Phenylephrine">
             <English>Treatment time for Phenylephrine</English>
             <Polish>Czas na wstrzyknięcie Fenylefryny</Polish>
             <Chinesesimp>苯肾上腺素的治疗时间</Chinesesimp>
@@ -1714,7 +1714,7 @@
             <Spanish>Tiempo para uso de la Fenilefrina</Spanish>
             <Portuguese>Tempo de uso de Fenilefrina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Nitroglycerin">
+        <Key ID="STR_KAT_Pharma_medLvl_Nitroglycerin">
             <English>Medical level required for Nitroglycerin</English>
             <Polish>Poziom wyszkolenia medycznego dla Nitrogliceryny</Polish>
             <Chinesesimp>硝酸甘油所需的医疗水平</Chinesesimp>
@@ -1727,7 +1727,7 @@
             <Spanish>Nivel médico requerido para la Nitroglicerina</Spanish>
             <Portuguese>Nível médico exigido para uso de Nitroglicerina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Nitroglycerin">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Nitroglycerin">
             <English>Treatment time for Nitroglycerin</English>
             <Polish>Czas na wstrzyknięcie Nitrogliceryny</Polish>
             <Chinesesimp>硝酸甘油的治疗时间</Chinesesimp>
@@ -1735,12 +1735,12 @@
             <Italian>Tempo di trattamento per la Nitroglicerina</Italian>
             <French>Temps de traitement de la Nitroglycérine</French>
             <Korean>니트로글리세린으로 치료하는 시간</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Nitroglycerin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Nitroglycerin</German>
             <Japanese>ニトログリセリンの治療時間</Japanese>
             <Spanish>Tiempo para uso de la Nitroglicerina</Spanish>
             <Portuguese>Tempo de uso de Nitroglicerina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Amiodarone">
+        <Key ID="STR_KAT_Pharma_medLvl_Amiodarone">
             <English>Medical level required for Amiodarone</English>
             <Polish>Poziom wyszkolenia medycznego dla Amiodaronu</Polish>
             <Chinesesimp>胺碘酮所需的医疗水平</Chinesesimp>
@@ -1753,7 +1753,7 @@
             <Spanish>Nivel médico requerido para la Amiodarona</Spanish>
             <Portuguese>Nível médico exigido para uso de Amiodarona</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Amiodarone">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Amiodarone">
             <English>Treatment time for Amiodarone</English>
             <Polish>Czas na wstrzyknięcie Amiodaronu</Polish>
             <Chinesesimp>胺碘酮的治疗时间</Chinesesimp>
@@ -1761,12 +1761,12 @@
             <Czech>Doba léčby pro Amiodaron</Czech>
             <French>Temps de traitement de l'Amiodarone</French>
             <Korean>아미오다론으로 치료하는 시간</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Amiodaron</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Amiodaron</German>
             <Japanese>アミオダロンの治療時間</Japanese>
             <Spanish>Tiempo para uso de la Amiodarona</Spanish>
             <Portuguese>Tempo de uso de Amiodarona</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Lidocaine">
+        <Key ID="STR_KAT_Pharma_medLvl_Lidocaine">
             <English>Medical level required for Lidocaine</English>
             <Polish>Poziom wyszkolenia medycznego dla Lidokainy</Polish>
             <Chinesesimp>利多卡因所需的医疗水平</Chinesesimp>
@@ -1774,12 +1774,12 @@
             <Italian>Livello medico richiesto per la Lidocaina</Italian>
             <French>Niveau médical requis pour la Lidocaïne</French>
             <Korean>리도카인을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Lidocain</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Lidocain</German>
             <Japanese>リドカインに必​​要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Lidocaína</Spanish>
             <Portuguese>Nível médico exigido para uso de Lidocaína</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Lidocaine">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Lidocaine">
             <English>Treatment time for Lidocaine</English>
             <Polish>Czas na wstrzyknięcie Lidokainy</Polish>
             <Chinesesimp>利多卡因的治疗时间</Chinesesimp>
@@ -1792,7 +1792,7 @@
             <Spanish>Tiempo para uso de la Lidocaína</Spanish>
             <Portuguese>Tempo de uso de Lidocaína</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Atropine">
+        <Key ID="STR_KAT_Pharma_medLvl_Atropine">
             <English>Medical level required for Atropine</English>
             <Polish>Poziom wyszkolenia medycznego dla Atropiny</Polish>
             <Chinesesimp>阿托品所需的医疗水平</Chinesesimp>
@@ -1800,12 +1800,12 @@
             <Italian>Livello medico richiesto per l'Atropina</Italian>
             <French>Niveau médical requis pour l'Atropine</French>
             <Korean>아트로핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Atropin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Atropin</German>
             <Japanese>アトロピンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Atropina</Spanish>
             <Portuguese>Nível médico exigido para uso de Atropina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Atropine">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Atropine">
             <English>Treatment time for Atropine</English>
             <Polish>Czas na wstrzyknięcie Atropiny</Polish>
             <Chinesesimp>阿托品的治疗时间</Chinesesimp>
@@ -1818,7 +1818,7 @@
             <Spanish>Tiempo para uso de la Atropina</Spanish>
             <Portuguese>Tempo de uso de Atropina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_EACA">
+        <Key ID="STR_KAT_Pharma_medLvl_EACA">
             <English>Medical level required for EACA</English>
             <Polish>Poziom wyszkolenia medycznego dla EACA</Polish>
             <Chinesesimp>EACA所需的医疗水平</Chinesesimp>
@@ -1826,12 +1826,12 @@
             <Czech>Zdravotnická úroveň potřebná pro EACA</Czech>
             <French>Niveau médical requis pour l'Acide Aminocaproïque</French>
             <Korean>아미노카프로산을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Aminocapronsäure</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Aminocapronsäure</German>
             <Japanese>EACAに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el EACA</Spanish>
             <Portuguese>Nível médico exigido para uso de EACA</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_EACA">
+        <Key ID="STR_KAT_Pharma_treatmentTime_EACA">
             <English>Treatment time for EACA</English>
             <Polish>Czas na wstrzyknięcie EACA</Polish>
             <Chinesesimp>EACA的治疗时间</Chinesesimp>
@@ -1844,20 +1844,20 @@
             <Spanish>Tiempo para uso del EACA</Spanish>
             <Portuguese>Tempo de uso de EACA</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Flumazenil">
+        <Key ID="STR_KAT_Pharma_medLvl_Flumazenil">
             <English>Medical level required for Flumazenil</English>
             <Chinesesimp>氟马西尼所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per Flumazenil</Italian>
             <Czech>Zdravotnická úroveň potřebná pro Flumazenil</Czech>
             <French>Niveau médical requis pour le Flumazénil</French>
             <Korean>플루마제닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Flumazenil</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Flumazenil</German>
             <Polish>Poziom wyszkolenia medycznego dla Flumazenilu</Polish>
             <Japanese>フルマゼニルに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el Flumazenil</Spanish>
             <Portuguese>Nível médico exigido para uso de Flumazenil</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Flumazenil">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Flumazenil">
             <English>Treatment time for Flumazenil</English>
             <Polish>Czas na wstrzyknięcie Flumazenilu</Polish>
             <Chinesesimp>氟马西尼的治疗时间</Chinesesimp>
@@ -1870,20 +1870,20 @@
             <Spanish>Tiempo para uso del Flumazenil</Spanish>
             <Portuguese>Tempo de uso de Flumazenil</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Lorazepam">
+        <Key ID="STR_KAT_Pharma_medLvl_Lorazepam">
             <English>Medical level required for Lorazepam</English>
             <Chinesesimp>劳拉西泮所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per Lorazepam</Italian>
             <Czech>Zdravotnická úroveň potřebná pro Lorazepam</Czech>
             <French>Niveau médical requis pour le Lorazépam</French>
             <Korean>로라제팜을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Lorazepam</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Lorazepam</German>
             <Polish>Poziom wyszkolenia medycznego dla Lorazepamu</Polish>
             <Japanese>ロラゼパムに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el Lorazepam</Spanish>
             <Portuguese>Nível médico exigido para uso de Lorazepam</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Lorazepam">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Lorazepam">
             <English>Treatment time for Lorazepam</English>
             <Polish>Czas na wstrzyknięcie Lorazepamu</Polish>
             <Chinesesimp>劳拉西泮的治疗时间</Chinesesimp>
@@ -1896,20 +1896,20 @@
             <Spanish>Tiempo para uso del Lorazepam</Spanish>
             <Portuguese>Tempo de uso de Lorazepam</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Etomidate">
+        <Key ID="STR_KAT_Pharma_medLvl_Etomidate">
             <English>Medical level required for Etomidate</English>
             <Chinesesimp>依托咪酯所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per Etomidato</Italian>
             <Czech>Zdravotnická úroveň potřebná pro Etomidát</Czech>
             <French>Niveau médical requis pour l'Étomidate</French>
             <Korean>에토미데이트를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Etomidat</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Etomidat</German>
             <Polish>Poziom wyszkolenia medycznego dla Etomidatu</Polish>
             <Japanese>エトミダートに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el Etomidato</Spanish>
             <Portuguese>Nível médico exigido para uso de Etomidato</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Etomidate">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Etomidate">
             <English>Treatment time for Etomidate</English>
             <Polish>Czas na wstrzyknięcie Etomidatu</Polish>
             <Chinesesimp>依托咪酯的治疗时间</Chinesesimp>
@@ -1922,7 +1922,7 @@
             <Spanish>Tiempo para uso del Etomidato</Spanish>
             <Portuguese>Tempo de uso de Etomidato</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Ketamine">
+        <Key ID="STR_KAT_Pharma_medLvl_Ketamine">
             <English>Medical level required for Ketamine</English>
             <Polish>Poziom wyszkolenia medycznego dla Ketaminy</Polish>
             <Chinesesimp>氯胺酮所需的医疗水平</Chinesesimp>
@@ -1930,12 +1930,12 @@
             <Italian>Livello medico richiesto per la Ketamina</Italian>
             <French>Niveau médical requis pour la Kétamine</French>
             <Korean>케타민을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Ketamin</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Ketamin</German>
             <Japanese>ケタミンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Ketamina</Spanish>
             <Portuguese>Nível médico exigido para uso de Cetamina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Ketamine">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Ketamine">
             <English>Treatment time for Ketamine</English>
             <Polish>Czas na wstrzyknięcie Ketaminy</Polish>
             <Chinesesimp>氯胺酮的治疗时间</Chinesesimp>
@@ -1948,7 +1948,7 @@
             <Spanish>Tiempo para uso de la Ketamina</Spanish>
             <Portuguese>Tempo de uso de Cetamina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Fentanyl">
+        <Key ID="STR_KAT_Pharma_medLvl_Fentanyl">
             <English>Medical level required for Fentanyl</English>
             <Polish>Poziom wyszkolenia medycznego dla Fentanylu</Polish>
             <Chinesesimp>芬太尼所需的医疗水平</Chinesesimp>
@@ -1956,12 +1956,12 @@
             <Czech>Zdravotnická úroveň potřebná pro Fentanyl</Czech>
             <French>Niveau médical requis pour le Fentanyl</French>
             <Korean>펜타닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Fentayl</German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Fentanyl</German>
             <Japanese>フェンタニルに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el Fentalino</Spanish>
             <Portuguese>Nível médico exigido para uso de Fentanil</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Fentanyl">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Fentanyl">
             <English>Treatment time for Fentanyl</English>
             <Polish>Czas na wstrzyknięcie Fentanylu</Polish>
             <Chinesesimp>芬太尼的治疗时间</Chinesesimp>
@@ -1969,12 +1969,12 @@
             <Czech>Doba léčby pro Fentanyl</Czech>
             <French>Temps de traitement du Fentanyl</French>
             <Korean>펜타닐로 치료하는 시간</Korean>
-            <German>Anwendungszeit für Fentayl</German>
+            <German>Anwendungszeit für Fentanyl</German>
             <Japanese>フェンタニルの治療時間</Japanese>
             <Spanish>Tiempo para uso del Fentalino</Spanish>
             <Portuguese>Tempo de uso de Fentanil</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_medLvl_Nalbuphine">
+        <Key ID="STR_KAT_Pharma_medLvl_Nalbuphine">
             <English>Medical level required for Nalbuphine</English>
             <Polish>Poziom wyszkolenia medycznego dla Nalbuphinu</Polish>
             <Chinesesimp>纳布啡所需的医疗水平</Chinesesimp>
@@ -1982,12 +1982,12 @@
             <Italian>Livello medico richiesto per Nalbufina (nubain)</Italian>
             <French>Niveau médical requis pour la Nalbuphine</French>
             <Korean>날부핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinisches Level für die Gabe von Nalbuphin </German>
+            <German>Erforderliches medizinischer Grad für die Gabe von Nalbuphin </German>
             <Japanese>ナルブフィンに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para la Nalbufina</Spanish>
             <Portuguese>Nível médico exigido para uso de Nalbufina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_treatmentTime_Nalbuphine">
+        <Key ID="STR_KAT_Pharma_treatmentTime_Nalbuphine">
             <English>Treatment time for Nalbuphine</English>
             <Polish>Czas na wstrzyknięcie Nalbuphinu</Polish>
             <Chinesesimp>纳布啡的治疗时间</Chinesesimp>
@@ -2000,7 +2000,7 @@
             <Spanish>Tiempo para uso de la Nalbufina</Spanish>
             <Portuguese>Tempo de uso de Nalbufina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Basic">
+        <Key ID="STR_KAT_Pharma_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
             <Chinesesimp>基础设置</Chinesesimp>
@@ -2013,7 +2013,7 @@
             <Spanish>Parámetros básicos</Spanish>
             <Portuguese>Configurações básicas</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_ApplyIV">
+        <Key ID="STR_KAT_Pharma_SubCategory_ApplyIV">
             <English>IV Settings</English>
             <Polish>Ustawienia IV</Polish>
             <Chinesesimp>IV设置</Chinesesimp>
@@ -2026,7 +2026,7 @@
             <Spanish>Parámetros de la IV</Spanish>
             <Portuguese>Configurações de IV</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_ApplyIO">
+        <Key ID="STR_KAT_Pharma_SubCategory_ApplyIO">
             <English>IO Settings</English>
             <Polish>Ustawienia IO</Polish>
             <Chinesesimp>IO设置</Chinesesimp>
@@ -2039,7 +2039,7 @@
             <Spanish>Parámetros de la IO</Spanish>
             <Portuguese>Configurações de IO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Reorientation">
+        <Key ID="STR_KAT_Pharma_SubCategory_Reorientation">
             <English>Reorientation Settings</English>
             <Polish>Ustawienia Cucenia</Polish>
             <Chinesesimp>刺激患者设置</Chinesesimp>
@@ -2052,7 +2052,7 @@
             <Spanish>Parámetros de la reorientación</Spanish>
             <Portuguese>Configurações de reorientação</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Carbonate">
+        <Key ID="STR_KAT_Pharma_SubCategory_Carbonate">
             <English>Carbonate Settings</English>
             <Polish>Ustawienia Soli Trzeźwiących</Polish>
             <Chinesesimp>碳酸盐设置</Chinesesimp>
@@ -2065,7 +2065,7 @@
             <Spanish>Parámetros del Carbonato</Spanish>
             <Portuguese>Configurações de Carbonato</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Naloxone">
+        <Key ID="STR_KAT_Pharma_SubCategory_Naloxone">
             <English>Naloxone Settings</English>
             <Polish>Ustawienia Naloksonu</Polish>
             <Chinesesimp>纳洛酮设置</Chinesesimp>
@@ -2078,7 +2078,7 @@
             <Spanish>Parámetros de la Naloxona</Spanish>
             <Portuguese>Configurações de Naloxona</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Pervitin">
+        <Key ID="STR_KAT_Pharma_SubCategory_Pervitin">
             <English>Pervitin Settings</English>
             <German>Pervitin Einstellungen </German>
             <French>Paramètres de la Pervitine</French>
@@ -2087,16 +2087,16 @@
             <Italian>Impostazioni del Pervitin</Italian>
             <Portuguese>Configurações do Pervitin</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Caffeine">
+        <Key ID="STR_KAT_Pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
-            <German>Koffein Einstellungen </German>
+            <German>Koffein Einstellungen</German>
             <French>Paramètres de la Caféine</French>
             <Japanese>カフェイン設定</Japanese>
             <Korean>카페인 설정</Korean>
             <Italian>Impostazioni della Caffeina</Italian>
             <Portuguese>Configurações de Cafeína</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_TXA">
+        <Key ID="STR_KAT_Pharma_SubCategory_TXA">
             <English>TXA Settings</English>
             <Polish>Ustawienia TXA</Polish>
             <Chinesesimp>血栓素设置</Chinesesimp>
@@ -2109,7 +2109,7 @@
             <Spanish>Parámetros del ATX</Spanish>
             <Portuguese>Configurações de TXA</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Norepinephrine">
+        <Key ID="STR_KAT_Pharma_SubCategory_Norepinephrine">
             <English>Norepinephrine Settings</English>
             <Polish>Ustawienia Noradrenaliny</Polish>
             <Chinesesimp>去甲肾上腺素设置</Chinesesimp>
@@ -2122,7 +2122,7 @@
             <Spanish>Parámetros de la Norepinefrina</Spanish>
             <Portuguese>Configurações de Norepinefrina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Phenylephrine">
+        <Key ID="STR_KAT_Pharma_SubCategory_Phenylephrine">
             <English>Phenylephrine Settings</English>
             <Polish>Ustawienia Fenylefryny</Polish>
             <Chinesesimp>苯肾上腺素设置</Chinesesimp>
@@ -2135,7 +2135,7 @@
             <Spanish>Parámetros de la Fenilefrina</Spanish>
             <Portuguese>Configurações de Fenilefrina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Nitroglycerin">
+        <Key ID="STR_KAT_Pharma_SubCategory_Nitroglycerin">
             <English>Nitroglycerin Settings</English>
             <Polish>Ustawienia Nitrogliceryny</Polish>
             <Chinesesimp>硝酸甘油设置</Chinesesimp>
@@ -2148,7 +2148,7 @@
             <Spanish>Parámetros de la Nitroglicerina</Spanish>
             <Portuguese>Configurações de Nitroglicerina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Amiodarone">
+        <Key ID="STR_KAT_Pharma_SubCategory_Amiodarone">
             <English>Amiodarone Settings</English>
             <Polish>Ustawienia Amiodarone</Polish>
             <Chinesesimp>胺碘酮设置</Chinesesimp>
@@ -2161,7 +2161,7 @@
             <Spanish>Parámetros de la Amiodarona</Spanish>
             <Portuguese>Configurações de Amiodarona</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Lidocaine">
+        <Key ID="STR_KAT_Pharma_SubCategory_Lidocaine">
             <English>Lidocaine Settings</English>
             <Polish>Ustawienia Lidokainy</Polish>
             <Chinesesimp>利多卡因设置</Chinesesimp>
@@ -2174,7 +2174,7 @@
             <Spanish>Parámetros de la Lidocaína</Spanish>
             <Portuguese>Configurações de Lidocaína</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Atropine">
+        <Key ID="STR_KAT_Pharma_SubCategory_Atropine">
             <English>Atropine Settings</English>
             <Polish>Ustawienia Atropiny</Polish>
             <Chinesesimp>阿托品设置</Chinesesimp>
@@ -2187,7 +2187,7 @@
             <Spanish>Parámetros de la Atropina</Spanish>
             <Portuguese>Configurações de Atropina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_EACA">
+        <Key ID="STR_KAT_Pharma_SubCategory_EACA">
             <English>EACA Settings</English>
             <Polish>Ustawienia EACA</Polish>
             <Chinesesimp>EACA设置</Chinesesimp>
@@ -2200,7 +2200,7 @@
             <Spanish>Parámetros del EACA</Spanish>
             <Portuguese>Configurações de EACA</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Ketamine">
+        <Key ID="STR_KAT_Pharma_SubCategory_Ketamine">
             <English>Ketamine Settings</English>
             <Polish>Ustawienia Ketaminy</Polish>
             <Chinesesimp>氯胺酮设置</Chinesesimp>
@@ -2213,7 +2213,7 @@
             <Spanish>Parámetros de la Ketamina</Spanish>
             <Portuguese>Configurações de Cetamina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Fentanyl">
+        <Key ID="STR_KAT_Pharma_SubCategory_Fentanyl">
             <English>Fentanyl Settings</English>
             <Polish>Ustawienia Fentanylu</Polish>
             <Chinesesimp>芬太尼设置</Chinesesimp>
@@ -2226,7 +2226,7 @@
             <Spanish>Parámetros del Fentalino</Spanish>
             <Portuguese>Configurações de Fentanil</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Nalbuphine">
+        <Key ID="STR_KAT_Pharma_SubCategory_Nalbuphine">
             <English>Nalbuphine Settings</English>
             <Polish>Ustawienia Nalbuphinu</Polish>
             <Chinesesimp>纳布啡设置</Chinesesimp>
@@ -2239,7 +2239,7 @@
             <Spanish>Parámetros de la Nalbufina</Spanish>
             <Portuguese>Configurações de Nalbufina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Flumazenil">
+        <Key ID="STR_KAT_Pharma_SubCategory_Flumazenil">
             <English>Flumazenil Settings</English>
             <Polish>Ustawienia Flumazenilu</Polish>
             <Chinesesimp>氟马西尼设置</Chinesesimp>
@@ -2252,7 +2252,7 @@
             <Spanish>Parámetros del Flumazenil</Spanish>
             <Portuguese>Configurações de Flumazenil</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Lorazepam">
+        <Key ID="STR_KAT_Pharma_SubCategory_Lorazepam">
             <English>Lorazepam Settings</English>
             <Polish>Ustawienia Lorazepamu</Polish>
             <Chinesesimp>劳拉西泮设置</Chinesesimp>
@@ -2265,7 +2265,7 @@
             <Spanish>Parámetros del Lorazepam</Spanish>
             <Portuguese>Configurações de Lorazepam</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SubCategory_Etomidate">
+        <Key ID="STR_KAT_Pharma_SubCategory_Etomidate">
             <English>Etomidate Settings</English>
             <Polish>Ustawienia Etomidatu</Polish>
             <Chinesesimp>依托咪酯设置</Chinesesimp>
@@ -2278,7 +2278,7 @@
             <Spanish>Parámetros del Etomidato</Spanish>
             <Portuguese>Configurações de Etomidato</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_flush_log">
+        <Key ID="STR_KAT_Pharma_flush_log">
             <English>%1 performed a saline flush on %2</English>
             <Italian>%1 ha eseguito uno sciacquo salino su %2</Italian>
             <Czech>%1 provedl vypláchnutí fyziologickým roztokem na %2</Czech>
@@ -2291,7 +2291,7 @@
             <Spanish>%1 realizó un enjuague con salino en %2</Spanish>
             <Portuguese>%1 fez lavagem salínica em %2</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_IVblock_closed">
+        <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
             <Italian>La IV del paziente è ostruita/bloccata</Italian>
             <Czech>IV pacienta je blokována</Czech>
@@ -2304,7 +2304,7 @@
             <Spanish>La IV del paciente esta bloqueada</Spanish>
             <Portuguese>IV do paciente está bloqueado</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_IVblock_clear">
+        <Key ID="STR_KAT_Pharma_IVblock_clear">
             <English>Patient's IV is clear</English>
             <Italian>La IV del paziente è pulita</Italian>
             <Czech>IV pacienta je čistá</Czech>
@@ -2317,7 +2317,7 @@
             <Spanish>La IV del paciente esta funcionando correctamente</Spanish>
             <Portuguese>IV do paciente está funcionando corretamente</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_breath_stink">
+        <Key ID="STR_KAT_Pharma_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
             <Czech>Dech pacienta je trpký a kovový</Czech>
             <Italian>Il respiro del paziente è anormale e affannoso</Italian>
@@ -2330,7 +2330,7 @@
             <Polish>Oddech pacjenta jest ostry i metaliczny</Polish>
             <Portuguese>O hálito do paciente está áspero e metálico</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_breath_mild">
+        <Key ID="STR_KAT_Pharma_breath_mild">
             <English>Patient's breath is slightly fruity</English>
             <Italian>Il respiro del paziente è leggermente fruttato</Italian>
             <Czech>Dech pacienta je mírně ovocný</Czech>
@@ -2343,7 +2343,7 @@
             <Polish>Oddech pacjenta jest lekko owocowy</Polish>
             <Portuguese>O hálito do paciente está ligeiramente frutado</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_breath_good">
+        <Key ID="STR_KAT_Pharma_breath_good">
             <English>Patient's breath is ok</English>
             <Italian>Il respiro del paziente è ok</Italian>
             <Czech>Dech pacienta je v pořádku</Czech>
@@ -2356,14 +2356,13 @@
             <Polish>Oddech pacjenta jest w porządku</Polish>
             <Portuguese>O hálito do paciente está normal</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_breath_none">
+        <Key ID="STR_KAT_Pharma_breath_none">
             <English>Patient is not breathing</English>
             <Japanese>患者は呼吸していません</Japanese>
             <Korean>환자가 숨을 쉬지 않습니다</Korean>
             <Italian>Il paziente non sta respirando</Italian>
-            <Portuguese>O paciente não está respirando</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_Kidney_Action">
+        <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
             <Italian>Rene danneggiato/collassato</Italian>
             <Czech>Poškození/selhání ledvin</Czech>
@@ -2376,7 +2375,7 @@
             <Spanish>Insuficiencia/Daño Renal</Spanish>
             <Portuguese>Dano/insuficiência renal</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_Kidney_Action_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action_DESC">
             <English>Enables kidney damage caused by overuse of saline</English>
             <Italian>Abilita danni renali causati da un overdose di soluzione salina</Italian>
             <Czech>Umožňuje poškození ledvin způsobené nadužíváním fyziologického roztoku</Czech>
@@ -2389,7 +2388,7 @@
             <Spanish>Permite el daño de los riñones causado por uso excesivo de salino</Spanish>
             <Portuguese>Permite dano renal causado pelo uso excessivo de solução salina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_Block_Chance">
+        <Key ID="STR_KAT_Pharma_SETTING_Block_Chance">
             <English>IV Block Chance</English>
             <Italian>Possibilità di ostruzione della IV</Italian>
             <Czech>IV blok šance</Czech>
@@ -2402,7 +2401,7 @@
             <Polish>Szansa na zablokowanie IV</Polish>
             <Portuguese>Chance de Bloqueio IV</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_Block_Chance_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Block_Chance_DESC">
             <English>Chance of IV blockage due to medication pushes without saline flush</English>
             <Czech>Šance na blokaci IV v důsledku aplikování léčiv bez proplachování fyziologickým roztokem.</Czech>
             <Italian>Possibilità di ostruzione della IV senza prima aver svolto uno sciacquo salino</Italian>
@@ -2415,7 +2414,7 @@
             <Polish>Szansa na zablokowanie IV z powodu podawania leków bez przepłukiwania roztworem soli fizjologicznej</Polish>
             <Portuguese>Probabilidade de bloqueio intravenoso devido a injeções de medicamentos sem solução salina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_Max_Stack">
+        <Key ID="STR_KAT_Pharma_SETTING_Max_Stack">
             <English>Maximum Fluid Bag Stack</English>
             <Czech>Maximální počet vaků s tekutinou</Czech>
             <Italian>Stack massimo della sacca per fluidi</Italian>
@@ -2428,7 +2427,7 @@
             <Polish>Maksymalna ilość worków z płynami dla jednego pajenta</Polish>
             <Portuguese>Pilha Máxima de Sacos de Fluidos</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_Max_Stack_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Max_Stack_DESC">
             <English>The maximum amount of fluid bags that can be stacked to increase IV flow rate</English>
             <Italian>La quantità massima di sacche per fluidi che possono essere accorpate per aumentare la portata (flow rate) della  IV</Italian>
             <Czech>Maximální množství vaků s tekutinou, které lze zavést pacientovi za účelem zrychlení průtoku skrze IV.</Czech>
@@ -2441,7 +2440,7 @@
             <Polish>Maksymalna ilość worków z płynem, które można przypiąć w tym samym momencie, aby zwiększyć szybkość przepływu IV</Polish>
             <Portuguese>A quantidade máxima de bolsas de fluido que podem ser empilhadas para aumentar a taxa de fluxo IV</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_Coagulation">
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation">
             <English>Enable Coagulation</English>
             <Japanese>血液凝固を有効にする</Japanese>
             <Italian>Abilita sistema di coagulazione</Italian>
@@ -2452,7 +2451,7 @@
             <Korean>혈응고 활성화</Korean>
             <Portuguese>Ativar Coagulação</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_Coagulation_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_DESC">
             <English>Enables advanced coagulation features and modifies TXA and EACA behaviour accordingly.</English>
             <Japanese>高度な血液凝固機能を有効にし、それに応じて TXA と EACA の動作を変更します。</Japanese>
             <Italian>Abilita la coagulazione avanzata e modifica di conseguenza il comportamento di TXA e EACA.</Italian>
@@ -2463,7 +2462,7 @@
             <Korean>고급 혈응고 기능을 활성화하고 그에 따라 TXA 및 아미노카프로산의 동작을 수정합니다.</Korean>
             <Portuguese>Habilita recursos avançados de coagulação e modifica o comportamento de TXA e EACA de acordo.</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_EACA_Display">
+        <Key ID="STR_KAT_Pharma_EACA_Display">
             <English>EACA</English>
             <Italian>EACA (Acido aminocaproico Epsilon)</Italian>
             <Czech>EACA</Czech>
@@ -2476,7 +2475,7 @@
             <Spanish>EACA</Spanish>
             <Portuguese>EACA</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Take_EACA">
+        <Key ID="STR_KAT_Pharma_Take_EACA">
             <English>Push EACA</English>
             <Czech>Aplikovat EACA</Czech>
             <Italian>Iniettare EACA</Italian>
@@ -2489,7 +2488,7 @@
             <Spanish>Administrar EACA</Spanish>
             <Portuguese>Administrar EACA</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pervitin_Capsule_Display">
+        <Key ID="STR_KAT_Pharma_Pervitin_Capsule_Display">
             <English>Pervitin capsule</English>
             <German>Pervitin Kapsel</German>
             <French>Capsule de pervitine</French>
@@ -2498,7 +2497,7 @@
             <Italian>Capsula di Pervitin</Italian>
             <Portuguese>Cápsula de Pervitin</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pervitin_Capsule_DescShort">
+        <Key ID="STR_KAT_Pharma_Pervitin_Capsule_DescShort">
             <English>Performance enhancing drug</English>
             <German>Leistungssteigerndes Medikament</German>
             <French>Drogue améliorant les performances</French>
@@ -2507,16 +2506,16 @@
             <Italian>Sostanza che aumenta la performance</Italian>
             <Portuguese>Droga para aumento de performance</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Take_Pervitin">
+        <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
-            <German> Pervitin einnehmen </German>
+            <German>Pervitin einnehmen</German>
             <French>Prendre la pervitine</French>
             <Japanese>ペルビチンを服用する</Japanese>
             <Korean>페르피틴 복용</Korean>
             <Italian>Assumi Pervitin</Italian>
             <Portuguese>Tomar Pervitin</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pervitin_start">
+        <Key ID="STR_KAT_Pharma_Pervitin_start">
             <English>The pervitin makes you feel awake and full of endless POWER</English>
             <German>Das Pervitin macht dich wach und du fühlst dich durchflutet mit unendlich POWER</German>
             <French>La pervitine vous fait vous sentir éveillé et plein d'une puissance INFINIE</French>
@@ -2525,7 +2524,7 @@
             <Italian>Il Pervitin ti fa sembrare più attento e dotato di una forza senza uguali</Italian>
             <Portuguese>O pervitin faz você se sentir acordado e cheio de poder INFINITO</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pervitin_mid">
+        <Key ID="STR_KAT_Pharma_Pervitin_mid">
             <English>You begin to lose your breath...</English>
             <German>Deine Kraft lässt langsam nach...</German>
             <French>Vous commencez à perdre votre souffle...</French>
@@ -2534,16 +2533,16 @@
             <Italian>Stai iniziando a perdere fiato...</Italian>
             <Portuguese>Você começa a perder o fôlego...</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pervitin_mid2">
+        <Key ID="STR_KAT_Pharma_Pervitin_mid2">
             <English>You gain a sudden rush!</English>
-            <German>Du bekommst einen spontanan Rush...</German>
+            <German>Du bekommst einen spontanen Rush...</German>
             <French>Vous sentez un élan soudain !</French>
             <Korean>갑자기 심하게 두근거린다!</Korean>
             <Japanese>あなたを突如激しい動悸が襲う!</Japanese>
             <Italian>Ottieni una corsa improvvisa!</Italian>
             <Portuguese>Você sente uma ânimo repentino!</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pervitin_mid3">
+        <Key ID="STR_KAT_Pharma_Pervitin_mid3">
             <English>You gain another rush!</English>
             <German>Du bekommst einen weiteren Rush...</German>
             <French>Vous sentez un autre élan !</French>
@@ -2552,7 +2551,7 @@
             <Italian>Ottieni un'altra corsa improvvisa!</Italian>
             <Portuguese>Você sente um ânimo novamente!</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pervitin_mid4">
+        <Key ID="STR_KAT_Pharma_Pervitin_mid4">
             <English>The exhaustion starts to settle in...</English>
             <German>Die Erschöpfung macht sich breit ...</German>
             <French>L'épuisement commence à se faire sentir...</French>
@@ -2561,7 +2560,7 @@
             <Italian>La stanchezza inizia a farsi sentire...</Italian>
             <Portuguese>Você começa a sentir a exaustão...</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pervitin_end">
+        <Key ID="STR_KAT_Pharma_Pervitin_end">
             <English>You start to feel normal again</English>
             <German>Du beginnst dich wieder normal zu fühlen.</German>
             <French>Vous commencez à vous sentir à nouveau normal</French>
@@ -2570,16 +2569,16 @@
             <Italian>Inizi a sentirti di nuovo normale</Italian>
             <Portuguese>Você começa a se sentir normal novamente</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pervitin_chrom">
+        <Key ID="STR_KAT_Pharma_Pervitin_chrom">
             <English>You start to see everything twice.</English>
-            <German>Du siehst alles Zweimal.</German>
+            <German>Du siehst alles doppelt.</German>
             <French>Vous commencez à voir tout en double</French>
             <Korean>모든 게 두 개로 보이기 시작한다.</Korean>
             <Japanese>全てが二重に見える...</Japanese>
             <Italian>Inizi a vedere tutto due volte.</Italian>
             <Portuguese>Você começa a ver em dobro.</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pervitin_chrom2">
+        <Key ID="STR_KAT_Pharma_Pervitin_chrom2">
             <English>You start to twitch...</English>
             <German>Du fängst an zu zucken...</German>
             <French>Vous commencez à trembler...</French>
@@ -2588,7 +2587,7 @@
             <Italian>Inizi a tremare...</Italian>
             <Portuguese>Você começa a tremer na base...</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Pervitin_chrom3">
+        <Key ID="STR_KAT_Pharma_Pervitin_chrom3">
             <English>Your head starts to clear up and you stop twitching...</English>
             <German>Dein Kopf wird klarer und du hörst auf zu zucken...</German>
             <French>Vos idées commencent à s'éclaircir et vous arrêtez de trembler...</French>
@@ -2597,7 +2596,7 @@
             <Italian>La tua testa inizia a schiarirsi e smetti di tremare...</Italian>
             <Portuguese>Sua cabeça começa a clarear e você pára de tremer...</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Caffeine_Bottle_Display">
+        <Key ID="STR_KAT_Pharma_Caffeine_Bottle_Display">
             <English>Caffeine bottle</English>
             <German>Koffein Kapsel</German>
             <French>Bouteille de caféine</French>
@@ -2606,16 +2605,16 @@
             <Italian>Bottiglia di Caffeina</Italian>
             <Portuguese>Garrafa de cafeína</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Caffeine_Bottle_DescShort">
+        <Key ID="STR_KAT_Pharma_Caffeine_Bottle_DescShort">
             <English>Keeps you awake</English>
-            <German>Hällt dich wach</German>
+            <German>Hält dich wach</German>
             <French>Vous tient éveillé</French>
             <Japanese>眠気防止に役立つ</Japanese>
             <Korean>계속 깨어 있게 해줍니다.</Korean>
             <Italian>Ti tiene sveglio</Italian>
             <Portuguese>Mantém você desperto</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Take_Caffeine">
+        <Key ID="STR_KAT_Pharma_Take_Caffeine">
             <English>Take Caffeine</English>
             <German>Koffein einnehmen</German>
             <French>Prendre la caféine</French>
@@ -2624,7 +2623,7 @@
             <Italian>Assumi Caffeina</Italian>
             <Portuguese>Tomar Cafeína</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_EACA_DescShort">
+        <Key ID="STR_KAT_Pharma_EACA_DescShort">
             <English>Encourages clot formation</English>
             <Czech>Podporuje tvorbu sraženin</Czech>
             <Italian>Favorisce la formazione di coaguli</Italian>
@@ -2637,7 +2636,7 @@
             <Spanish>Favorece la coagulación</Spanish>
             <Portuguese>Favorece a coagulação</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Check_Breath">
+        <Key ID="STR_KAT_Pharma_Check_Breath">
             <English>Check Breath</English>
             <Italian>Controlla il respiro</Italian>
             <Czech>Zkontrolovat dech</Czech>
@@ -2650,7 +2649,7 @@
             <Spanish>Revisar aliento</Spanish>
             <Portuguese>Checar hálito</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Inspect_Catheter">
+        <Key ID="STR_KAT_Pharma_Inspect_Catheter">
             <English>Inspect Catheter</English>
             <Italian>Ispeziona il catetere</Italian>
             <Czech>Zkontrolovat katetr</Czech>
@@ -2663,7 +2662,7 @@
             <Spanish>Inspeccionar Catéter</Spanish>
             <Portuguese>Inspecionar catéter</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Saline_Flush">
+        <Key ID="STR_KAT_Pharma_Saline_Flush">
             <English>Saline Flush</English>
             <Czech>Vypláchnutí fyziologickým roztokem</Czech>
             <Italian>Risciaquo acqua salina</Italian>
@@ -2676,7 +2675,7 @@
             <Spanish>Enjuague con salino</Spanish>
             <Portuguese>Lavagem salina</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage">
+        <Key ID="STR_KAT_Pharma_SETTING_ivCheckLimbDamage">
             <English>IV Check limb damage</English>
             <Italian>IV Controllare il danno agli arti</Italian>
             <Czech>IV Kontrola poškození končetin</Czech>
@@ -2689,7 +2688,7 @@
             <Polish>Sprawdzanie obrażeń kończyn do IV</Polish>
             <Portuguese>Verificação dos danos ao membro para o IV</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_SETTING_ivCheckLimbDamage_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_ivCheckLimbDamage_DESC">
             <English>Whether or not you can apply the IV to the too damaged limb. In default, this is disabled.</English>
             <Italian>Puoi o no applicare la flebo all'arto troppo danneggiato. Nel default, questo è disabilitato.</Italian>
             <Czech>Zda můžete aplikovat IV na příliš poškozenou končetinu. Ve výchozím nastavení je toto zakázáno.</Czech>
@@ -2702,7 +2701,7 @@
             <Polish>Czy można zastosować IV na zbyt uszkodzoną kończynę. Domyślnie jest to wyłączone.</Polish>
             <Portuguese>Se você pode ou não aplicar o IV ao membro muito danificado. Por padrão, isto é desativado.</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Dialysis_DisplayName">
+        <Key ID="STR_KAT_Pharma_Dialysis_DisplayName">
             <English>Perform Dialysis</English>
             <Polish>Przeprowadź Dializę</Polish>
             <Japanese>透析を行う</Japanese>
@@ -2713,7 +2712,7 @@
             <Korean>투석 수행</Korean>
             <Portuguese>Realizar Diálise</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_Dialysis_DisplayNameProgress">
+        <Key ID="STR_KAT_Pharma_Dialysis_DisplayNameProgress">
             <English>Performing</English>
             <Polish>Dializa w toku...</Polish>
             <Japanese>実施中</Japanese>
@@ -2724,7 +2723,7 @@
             <Korean>수행 중</Korean>
             <Portuguese>Realizando</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_dialysis_log">
+        <Key ID="STR_KAT_Pharma_dialysis_log">
             <English>%1 performed dialysis</English>
             <Chinesesimp>%1 进行了透析</Chinesesimp>
             <Italian>%1 ha eseguito la dialisi</Italian>
@@ -2737,7 +2736,7 @@
             <Spanish>%1 realizó una dialisis</Spanish>
             <Portuguese>%1 realizou diálise</Portuguese>
         </Key>
-        <Key ID="STR_kat_pharma_pharmaSupplyCrate_displayName">
+        <Key ID="STR_KAT_Pharma_pharmaSupplyCrate_displayName">
             <English>[KAM] Medicines crate</English>
             <Polish>[KAM] Skrzynia z lekami</Polish>
             <Czech>[KAM] Bedna s medikamenty</Czech>

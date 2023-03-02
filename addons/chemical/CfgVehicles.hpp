@@ -73,19 +73,19 @@ class CfgVehicles {
 
     class Logic;
     class Module_F: Logic
-	{
-		class AttributesBase
-		{
+    {
+        class AttributesBase
+        {
             class Default;
-			class Edit;					// Default edit box (i.e., text input field)
-			class Combo;				// Default combo box (i.e., drop-down menu)
-			class Checkbox;				// Default checkbox (returned value is Boolean)
-			class CheckboxNumber;		// Default checkbox (returned value is Number)
-			class ModuleDescription;	// Module description
-			class Units;	
-		};
+            class Edit;                    // Default edit box (i.e., text input field)
+            class Combo;                // Default combo box (i.e., drop-down menu)
+            class Checkbox;                // Default checkbox (returned value is Boolean)
+            class CheckboxNumber;        // Default checkbox (returned value is Number)
+            class ModuleDescription;    // Module description
+            class Units;    
+        };
         class ModuleDescription;
-	};
+    };
 
     class kat_module_gas: Module_F
     {
@@ -94,7 +94,7 @@ class CfgVehicles {
         displayName = CSTRING(GasModule_Displayname);
         category = QEGVAR(zeus,KAM);
         function = QFUNC(gasmodule);
-    	isTriggerActivated = 0;
+        isTriggerActivated = 0;
         functionPriority = 1;
         isGlobal = 1;
 
@@ -161,7 +161,7 @@ class CfgVehicles {
         displayName = CSTRING(GasModule_Displayname);
         category = QEGVAR(zeus,KAM);
         curatorInfoType = QGVAR(kat_RscGasModul);
-    	isTriggerActivated = 0;
+        isTriggerActivated = 0;
         functionPriority = 1;
         isGlobal = 1;
     };

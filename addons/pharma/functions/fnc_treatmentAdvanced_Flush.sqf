@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam
- * Airway Management for occluding
+ * Author: 2LT.Mazinski
+ * Flushing IV access with saline
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget, "LeftArm"] call kat_airway_fnc_treatmentAdvanced_accuvac;
+ * [player, cursorTarget, "LeftArm"] call kat_pharma_fnc_treatmentAdvanced_Flush;
  *
  * Public: Yes
  */

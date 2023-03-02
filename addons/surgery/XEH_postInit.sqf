@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-[QGVAR(selectFracture), LINKFUNC(fractureSelectLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(fractureSelect), LINKFUNC(fractureSelectLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(closedReduction), LINKFUNC(closedFractureLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(openReduction), LINKFUNC(openReductionLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(incision), LINKFUNC(openFractureIncisionLocal)] call CBA_fnc_addEventHandler;
