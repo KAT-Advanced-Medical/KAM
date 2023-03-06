@@ -121,6 +121,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets time required to detach AED-X monitor
+[
+    QGVAR(AED_X_DetachTime),
+    "SLIDER",
+    LLSTRING(SETTING_AED_X_DetachTime),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [1, 60, 5, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 //Distance limit for AED-X
 [
     QGVAR(distanceLimit_AEDX),

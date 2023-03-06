@@ -1476,6 +1476,9 @@
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_AttachTime">
             <English>Time required to attach AED-X monitor</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_DetachTime">
+            <English>Time required to detach AED-X monitor</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_DISTANCELIMIT_AED_X">
             <English>Distance limit for AED-X in meters</English>
             <Polish>Limit odległości dla AED-X w metrach</Polish>
