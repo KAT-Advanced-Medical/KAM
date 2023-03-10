@@ -18,8 +18,8 @@
 
 params ["_unit","_body",["_respawned",false]];
 
-private _playerBloodType = _unit getVariable [QGVAR(bloodTypePlayer), "O"];
-private _bloodType = "O";
+private _bloodType = "O_N";
+private _playerBloodType = _unit getVariable [QGVAR(bloodTypePlayer), _bloodType];
 
 switch(GVAR(bloodTypeSetting)) do {
     case 1: {// forced player bloodtype
