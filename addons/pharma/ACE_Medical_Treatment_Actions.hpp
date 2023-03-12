@@ -344,19 +344,20 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_Flumazenil);
         sounds[] = {};
     };
-    class Dialysis: Defibrillator_AED_X_vehicle {
+    class Dialysis: BasicBandage {
         displayName = CSTRING(Dialysis_DisplayName);
         displayNameProgress = CSTRING(Dialysis_DisplayNameProgress);
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
         category = "surgery";
+        consumeItem = 0;
         items[] = {};
+        medicRequired = 1;
         condition = QFUNC(vehicleCheckDialysis);
         treatmentTime = 15;
-        medicRequired = 1;
         callbackProgress = "";
         callbackStart = "";
         callbackFailure = "";
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(treatmentAdvanced_Dialysis));
-        icon = QPATHTOF(ui\X_Series-Device_W.paa);
-        sounds[] = {};
+        litter[] = {};
     };
 };
