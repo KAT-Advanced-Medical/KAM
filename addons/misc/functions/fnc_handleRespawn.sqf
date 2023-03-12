@@ -54,6 +54,7 @@ _unit setVariable [QEGVAR(circulation,returnedAED), false, true];
 _unit setVariable [QEGVAR(circulation,asystole), 1, true];
 _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 _unit setVariable [QEGVAR(circulation,AEDinUse), false, true];
+_unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUNC(circulation,generateBloodType), true];
 
 // KAT Pharmacy
 
@@ -68,6 +69,7 @@ _unit setVariable [QEGVAR(pharma,pH), 1500, true];
 _unit setVariable [QEGVAR(pharma,kidneyFail), false, true];
 _unit setVariable [QEGVAR(pharma,kidneyArrest), false, true];
 _unit setVariable [QEGVAR(pharma,kidneyPressure), false, true];
+
 //KAT Surgery
 
 _unit setVariable [QEGVAR(surgery,debridement), [0,0,0,0,0,0], true];
