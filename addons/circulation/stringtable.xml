@@ -1235,33 +1235,43 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign">
             <English>Blood Type Assignment</English>
+            <Korean>혈액형 할당</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_DESC">
             <English>Sets how players' blood type is assigned:\nPlayer chosen: Player chooses their own blood type\nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning\nRandom: Blood type is random each respawn\nRandom (on join): Blood type is random, but doesn't change upon respawning\nSteamID: Blood type is decided based on player's steamID\nSteamID (custom list): Blood type is decided based on player's steamID and custom list</English>
+            <Korean>플레이어의 혈액형 할당 방식을 설정합니다:\n플레이어가 선택: 플레이어가 자신의 혈액형을 선택합니다\n플레이어가 선택(강제): 플레이어가 자신의 혈액형을 선택하지만 재투입해도 변하지 않습니다.\n무작위: 혈액형은 재투입할 때마다 무작위로 변합니다.\n무작위 (게임 참가 때만):혈액형은 무작위이지만 재투입해도 변하지 않습니다.\nSteamID:혈액형은 플레이어의 SteamID을 기반으로 결정됩니다.\nSteamID (커스텀 목록): 혈액형은 플레이어의 SteamID와 커스텀 목록을 기반으로 결정됩니다.</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player">
             <English>Player chosen</English>
+            <Korean>플레이어가 선택</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player_forced">
             <English>Player chosen (forced)</English>
+            <Korean>플레이어가 선택(강제)</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random">
             <English>Random</English>
+            <Korean>무작위</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random_onJoin">
             <English>Random (on join)</English>
+            <Korean>무작위 (게임 참가 때만)</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid">
             <English>SteamID</English>
+            <Korean>SteamID</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid_custom">
             <English>SteamID (custom list)</English>
+            <Korean>SteamID (커스텀 목록)</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted">
             <English>Weighted Randomizer</English>
+            <Korean>혈액형 무작위화 가중</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted_DESC">
             <English>Sets if random blood type given will be weighted according to blood type commonness</English>
+            <Korean>주어진 임의의 혈액형이 혈액형의 공통성에 따라 가중치가 부여되는지 여부를 설정합니다.</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player">
             <English>Blood group</English>
@@ -1281,9 +1291,11 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list">
             <English>Blood Type Custom List</English>
+            <Korean>혈액형 커스텀 목록</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list_DESC">
             <English>Sets blood types that will be assigned to players based on their SteamID\nBlood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
+            <Korean>SteamID를 기반으로 플레이어에게 할당할 혈액형을 설정합니다.\n혈액형은 쉼표(",")로 구분되며, 목록에는 총 10개의 혈액형이 포함되어야 합니다.</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
