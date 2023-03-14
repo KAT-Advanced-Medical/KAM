@@ -48,7 +48,7 @@ _patient setVariable [QGVAR(PulseOximeter_VolumePatient), _medic getVariable QGV
 
 [{
     params ["_args", "_idPFH"];
-    _args params ["_patient"];
+    _args params ["_patient", "_bodyPart"];
     if !(_patient getVariable [QGVAR(pulseoximeter), false]) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
@@ -56,11 +56,9 @@ _patient setVariable [QGVAR(PulseOximeter_VolumePatient), _medic getVariable QGV
     private _HR = GET_HEART_RATE(_patient);
     private _SpO2 = _patient getVariable [QGVAR(airwayStatus), 100];
 
-    if(!(_patient getVariable [QGVAR(PulseOximeter_VolumePatient), false]) || _SpO2 > GVAR(PulseOximeter_SpO2Warning) || _HR == 0) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
+    if(_patient getVariable [QGVAR(PulseOximeter_VolumePatient), false] && _SpO2 < GVAR(PulseOximeter_SpO2Warning) && !([_patient,_bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo))) then {
+        playSound3D [QPATHTOF_SOUND(audio\pulseoximeter_warning.wav), _patient, false, getPosASL _patient, 4, 1, 15];
     };
-
-    playSound3D [QPATHTOF_SOUND(audio\pulseoximeter_warning.wav), _patient, false, getPosASL _patient, 4, 1, 15];
-}, 3, [_patient]] call CBA_fnc_addPerFrameHandler;
+}, 3, [_patient, _bodyPart]] call CBA_fnc_addPerFrameHandler;
 
 [_patient, "activity", LSTRING(pulseoxi_Log_2), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
