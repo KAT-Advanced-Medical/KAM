@@ -131,7 +131,7 @@ PREP_RECOMPILE_END;
 // breathing probability for a pneumothorax
 // a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
 [
-    QGVAR(pneumothorax),
+    QGVAR(pneumothoraxChance),
     "SLIDER",
     LLSTRING(SETTING_pneumothorax),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
@@ -139,13 +139,33 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// % Chance of Hemopneumothorax
+// % Chance of Hemopneumothorax and Tension Pneumothorax happening when a Pneumothorax happens
 [
-    QGVAR(hemopneumothoraxChance),
+    QGVAR(advPtxChance),
+    "SLIDER",
+    [LLSTRING(ADVANCED_PTX_CHANCE_OPTION), LLSTRING(DESCRIPTION_ADVANCED_PTX_CHANCE_OPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0, 100, 5, 0, false],
+    true
+] call CBA_Settings_fnc_init;
+
+// % Chance of Hemopneumothorax (rest of % is chance for tension)
+[
+    QGVAR(hptxChance),
     "SLIDER",
     [LLSTRING(HEMOPNEUMOTHORAX_CHANCE_OPTION), LLSTRING(DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [0, 95, 5, 0, false],
+    [0, 100, 5, 0, false],
+    true
+] call CBA_Settings_fnc_init;
+
+//Enable Advanced Pneumothorax
+[
+    QGVAR(advPtxEnable),
+    "CHECKBOX",
+    [LLSTRING(ADVANCED_PTX_OPTION), LLSTRING(DESCRIPTION_ADVANCED_PTX_OPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -165,7 +185,17 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(PNEUMOTHORAX_DAMAGE_THRESHOLD), LLSTRING(PNEUMOTHORAX_DAMAGE_THRESHOLD_DESCRIPTION)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [0, 1, 0.4, 1],
+    [0, 1, 0.4, 2],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets how much internal bleeding is applied while suffering from hemopneumothorax
+[
+    QGVAR(HPTXBleedAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_HPTX_BleedAmount), LLSTRING(SETTING_HPTX_BleedAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0, 1, 0.06, 2],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -229,6 +259,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Enables displaying cyanosis in overview tab and hides cyanosis diagnose action
+[
+    QGVAR(cyanosisShowInMenu),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Cyanosis_ShowInMenu), LLSTRING(SETTING_Cyanosis_ShowInMenu_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Cyanosis)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 //Settable list for checking Cyanosis per medical class
 [
     QGVAR(medLvl_Cyanosis),
@@ -269,16 +309,48 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// sound volume for Stethoscope
-/*
+//Enables White Flashing on Below 90% SPO2
 [
-    QGVAR(StethoscopeSoundVolume),
-    "SLIDER",
-    [LLSTRING(SETTING_StethoscopeSoundVolume), LLSTRING(DESCRIPTION_StethoscopeSoundVolume)],
-    CBA_SETTINGS_CAT,
-    [1, 4, 1, 0],
+    QGVAR(enableSPO2Flashing),
+    "CHECKBOX",
+    [LLSTRING(SETTING_SPO2Flashing_display), LLSTRING(SETTING_SPO2Flashing_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
     true
 ] call CBA_Settings_fnc_init;
-*/
+
+//Enable stamina loss by low SPO2
+[
+    QGVAR(staminaLossAtLowSPO2),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Stamina_Loss_SPO2_display), LLSTRING(SETTING_Stamina_Loss_SPO2_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
+    true
+]   call CBA_Settings_fnc_init;
+
+//low SPO2 Warning Level
+[
+    QGVAR(lowSPO2Level),
+    "SLIDER",
+    [LLSTRING(SETTING_lowSPO2Level_display), LLSTRING(SETTING_lowSPO2Level_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [0, 100, 90, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets sound volume of stethoscope
+[
+    QGVAR(stethoscopeSoundVolume),
+    "SLIDER",
+    [LLSTRING(SETTING_stethoscopeSoundVolume), LLSTRING(SETTING_stethoscopeSoundVolume_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [0, 4, 2, 1],
+    2,
+    {
+        player setVariable [QGVAR(stethoscopeSoundVolume), _this, true];
+    },
+    false
+] call CBA_Settings_fnc_init;
 
 ADDON = true;

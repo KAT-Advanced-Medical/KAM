@@ -18,12 +18,12 @@
 
 params ["_medic", "_patient"];
 
-private _canCPR = ["",_patient] call ace_medical_treatment_fnc_canCPR;
+private _canCPR = ["",_patient] call ACEFUNC(medical_treatment,canCPR);
 private _hasMonitor = _patient getVariable [QGVAR(X), false];
 private _recovery = _patient getVariable[QEGVAR(airway,recovery),false];
 
 if (((_hasMonitor)
-|| ([_medic, 'kat_X_AED'] call ace_common_fnc_hasItem))
+|| ([_medic, "kat_X_AED"] call ACEFUNC(common,hasItem)))
 && {!_recovery}
 && {_canCPR}) exitWith {true};
 

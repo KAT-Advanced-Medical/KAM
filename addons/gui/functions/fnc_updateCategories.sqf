@@ -21,7 +21,7 @@ params ["_display"];
     _x params ["_idc", "_category"];
 
     private _ctrl = _display displayCtrl _idc;
-    private _enable = ace_medical_gui_actions findIf {_category == _x select 1 && {call (_x select 2)}} > -1;
+    private _enable = ACEGVAR(medical_gui,actions) findIf {_category == _x select 1 && {call (_x select 2)}} > -1;
     _ctrl ctrlEnable _enable;
 
     private _color = [[0.4, 0.4, 0.4, 1], [1, 1, 1, 1]] select _enable;

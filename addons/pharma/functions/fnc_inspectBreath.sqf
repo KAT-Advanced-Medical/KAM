@@ -19,6 +19,7 @@
 params ["_medic", "_patient"];
 
 private _ph = _patient getVariable [QGVAR(pH), 1500];
+private _hr = GET_HEART_RATE(_patient);
 private _output = LLSTRING(breath_stink);
 
 if (_ph > 250) then {
@@ -29,4 +30,8 @@ if (_ph > 750) then {
     _output = LLSTRING(breath_good);
 };
 
-[_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+if (_hr == 0 || !(alive _patient)) then {
+    _output = LLSTRING(breath_none);
+};
+
+[_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);

@@ -17,5 +17,10 @@
 
 params ["_patient"];
 
-_patient setVariable [QGVAR(sedated), true, true];
-[_patient, true] call ace_medical_fnc_setUnconscious;
+private _random = random 3;
+if (_random <= 1) then {
+    [_patient, "BRADYCARDIA", 120, 1200, -40, 0, 0] call ACEFUNC(medical_status,addMedicationAdjustment);
+};
+
+_patient setVariable [QEGVAR(surgery,sedated), true, true];
+[_patient, true] call ACEFUNC(medical,setUnconscious);

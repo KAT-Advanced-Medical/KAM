@@ -67,5 +67,5 @@ params ["_target", "_player", "_newML"];
         };
 
         // use item
-        [_player, _player, [_classNameItem]] call ace_medical_treatment_fnc_useItem;
-    }, {}, localize LSTRING(Action_add_IV)] call ace_common_fnc_progressBar;
+        [_player, _player, [_classNameItem]] call ACEFUNC(medical_treatment,useItem);
+    }, {}, LLSTRING(Action_add_IV)] call ACEFUNC(common,progressBar);

@@ -27,18 +27,48 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-private _type = round random(7);
+// Sets how player bloodtype is designated
 [
-    QGVAR(bloodgroup),
+    QGVAR(bloodTypeSetting),
     "LIST",
-    LLSTRING(client_bt),
+    [LLSTRING(SETTING_bloodtype_assign), LLSTRING(SETTING_bloodtype_assign_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], _type],
+    [[0,1,2,3,4,5],[LSTRING(SETTING_bloodtype_assign_player), LSTRING(SETTING_bloodtype_assign_player_forced), LSTRING(SETTING_bloodtype_assign_random), LSTRING(SETTING_bloodtype_assign_random_onJoin), LSTRING(SETTING_bloodtype_assign_steamid), LSTRING(SETTING_bloodtype_assign_steamid_custom)],4],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets if randomizer should be weighted (according to bloodtype commonness)
+[
+    QGVAR(bloodTypeRandomWeighted),
+    "CHECKBOX",
+    [LLSTRING(SETTING_bloodtype_random_weighted), LLSTRING(SETTING_bloodtype_random_weighted_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets the player's desired bloodtype
+[
+    QGVAR(bloodTypeSettingPlayer),
+    "LIST",
+    LLSTRING(SETTING_bloodtype_player),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], 7],
     2,
     {
-        player setVariable [QGVAR(bloodtype), _this, true];
-        player setVariable ["ace_dogtags_dogtagData", nil, true];
+        player setVariable [QGVAR(bloodTypePlayer), _this, true];
+        player setVariable [QACEGVAR(dogtags,dogtagData), nil, true];
     },
+    false
+] call CBA_Settings_fnc_init;
+
+// Custom bloodtype list to use with custom steamid option
+[
+    QGVAR(bloodTypeCustomList),
+    "EDITBOX",
+    [LLSTRING(SETTING_bloodtype_custom_list), LLSTRING(SETTING_bloodtype_custom_list_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    "O,O,A,A,O_N,B,A_N,AB,B_N,AB_N",
     true
 ] call CBA_Settings_fnc_init;
 

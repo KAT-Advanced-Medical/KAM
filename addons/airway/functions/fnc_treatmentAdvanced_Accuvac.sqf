@@ -6,27 +6,27 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
+ * 3: Treatment <STRING>
+ * 4: Item User (not used) <OBJECT>
+ * 5: Used Item <STRING>
  *
  * Return Value:
  * Succesful treatment started <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_accuvac;
+ * [player, cursorTarget, "Head", "Accuvac", objNull, "kat_accuvac"] call kat_airway_fnc_treatmentAdvanced_accuvac;
  *
  * Public: Yes
  */
 
-params ["_caller", "_target"];
+params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
-if !(_target getVariable ["KAT_medical_airwayOccluded", false]) exitWith {
-    private _output = localize LSTRING(Accuvac_NA);
-    [_output, 1.5, _caller] call ace_common_fnc_displayTextStructured;
+if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
+    private _output = LLSTRING(Accuvac_NA);
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
-if (local _target) then {
-    ["treatmentAccuvac", [_target, "Accuvac"]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentAccuvac", [_target, "Accuvac"], _target] call CBA_fnc_targetEvent;
-};
+[_patient, _classname] call ACEFUNC(medical_treatment,addToTriageCard);
 
-true;
+[QGVAR(accuvacLocal), _patient, _patient] call CBA_fnc_targetEvent;

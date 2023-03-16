@@ -6,13 +6,12 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
-
  *
  * Return Value:
- * Successful treatment
+ * None
  *
  * Example:
- * call kat_airway_fnc_RecoveryPositionLocal
+ * [player, cursorTarget] call kat_airway_fnc_RecoveryPositionLocal
  *
  * Public: No
  */
@@ -21,30 +20,26 @@ params ["_medic", "_patient"];
 
 _patient setVariable [QGVAR(recovery), true, true];
 _patient setVariable [QGVAR(overstretch), true, true];
-_patient setVariable ["KAT_medical_airwayOccluded", false, true];
+_patient setVariable [QGVAR(occluded), false, true];
 
-private _output = localize LSTRING(Recovery_Info);
-[_output, 2, _medic] call ace_common_fnc_displayTextStructured;
-
-[_patient, "activity", LSTRING(RecoveryPosition_Log), [[_medic] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+private _output = LLSTRING(Recovery_Info);
+[_output, 2, _medic] call ACEFUNC(common,displayTextStructured);
 
 [{
     params ["_medic", "_patient"];
-    (_patient call ace_medical_status_fnc_isBeingDragged) || (_patient call ace_medical_status_fnc_isBeingCarried) || !(isNull objectParent _patient);
+    (_patient call ACEFUNC(medical_status,isBeingDragged)) || (_patient call ACEFUNC(medical_status,isBeingCarried)) || !(isNull objectParent _patient);
 }, {
     params ["_medic", "_patient"];
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
 
-    _output = localize LSTRING(Recovery_Cancel);
-    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+    _output = LLSTRING(Recovery_Cancel);
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 }, [_medic, _patient], 3600, {
     params ["_medic","patient"];
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
     
-    _output = localize LSTRING(Recovery_Cancel);
-    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+    _output = LLSTRING(Recovery_Cancel);
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 }] call CBA_fnc_waitUntilAndExecute;
-
-true;

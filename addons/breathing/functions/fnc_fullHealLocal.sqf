@@ -16,115 +16,188 @@
  * Public: No
  */
 
-params ["_patient"];
-TRACE_1("fullHealLocal",_patient);
+params ["_unit"];
+TRACE_1("fullHealLocal",_unit);
 
-if (!alive _patient) exitWith {};
+if (!alive _unit) exitWith {};
 
 // check if on fire, then put out the fire before healing
-if ((["ace_fire"] call ace_common_fnc_isModLoaded) && {[_patient] call ace_fire_fnc_isBurning}) then {
-    _patient setVariable ["ace_fire_intensity", 0, true];
+if ((["ace_fire"] call ACEFUNC(common,isModLoaded)) && {[_unit] call ACEFUNC(fire,isBurning)}) then {
+    _unit setVariable [QACEGVAR(fire,intensity), 0, true];
 };
 
-private _state = [_patient, ace_medical_STATE_MACHINE] call CBA_statemachine_fnc_getCurrentState;
+private _state = [_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState;
 TRACE_1("start",_state);
 
 // Treatment conditions would normally limit full heal to non-unconscious units
 // However, this may be called externally (through Zeus)
-if (_patient getVariable ["ace_medical_inCardiacArrest", false]) then {
-    TRACE_1("Exiting cardiac arrest",_patient);
-    ["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
-    _state = [_patient, ace_medical_STATE_MACHINE] call CBA_statemachine_fnc_getCurrentState;
+if (_unit getVariable [QACEGVAR(medical,inCardiacArrest), false]) then {
+    TRACE_1("Exiting cardiac arrest",_unit);
+    [QACEGVAR(medical,CPRSucceeded), _unit] call CBA_fnc_localEvent;
+    _state = [_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState;
     TRACE_1("after CPRSucceeded",_state);
 };
 
-_patient setVariable ["ace_medical_pain", 0, true];
-_patient setVariable ["ace_medical_bloodVolume", 6.0, true];
+_unit setVariable [QACEGVAR(medical,pain), 0, true];
+_unit setVariable [QACEGVAR(medical,bloodVolume), 6.0, true];
+
+// GAS
+_unit setVariable [QEGVAR(chemical, enteredPoison), false, true];
+_unit setVariable [QEGVAR(chemical,airPoisoning), false, true];
+_unit setVariable [QEGVAR(chemical,isTreated) ,true,true];
+_unit setVariable [QEGVAR(chemical, CS), false, true];
+_unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime), 60], true];
+if (_unit getVariable [QEGVAR(chemical, painEffect), 0] != 0) then {
+    KAT_PAIN_EFFECT ppEffectEnable false;
+};
 
 // Tourniquets
 {
     if (_x != 0) then {
-        [_patient, "ACE_tourniquet"] call ace_common_fnc_addToInventory;
+        [_unit, "ACE_tourniquet"] call ACEFUNC(common,addToInventory);
     };
-} forEach (_patient getVariable ["ace_medical_tourniquets", [0,0,0,0,0,0]]);
-_patient setVariable ["ace_medical_tourniquets", [0,0,0,0,0,0], true];
-_patient setVariable ["ace_medical_treatment_occludedMedications", nil, true];
+} forEach (_unit getVariable [QACEGVAR(medical,tourniquets), [0,0,0,0,0,0]]);
+_unit setVariable [QACEGVAR(medical,tourniquets), [0,0,0,0,0,0], true];
+_unit setVariable [QACEGVAR(medical_treatment,occludedMedications), nil, true];
 
 // Wounds and Injuries
-_patient setVariable ["ace_medical_openWounds", [], true];
-_patient setVariable ["ace_medical_bandagedWounds", [], true];
-_patient setVariable ["ace_medical_stitchedWounds", [], true];
-_patient setVariable ["ace_medical_isLimping", false, true];
-_patient setVariable ["ace_medical_fractures", [0,0,0,0,0,0], true];
-_patient setVariable ["KAT_medical_airwayStatus", 100, true];
-_patient setVariable ["KAT_medical_airwayOccluded", false, true];
-_patient setVariable ["KAT_medical_pneumothorax", false, true];
-_patient setVariable ["KAT_medical_hemopneumothorax", false, true];
-_patient setVariable ["KAT_medical_tensionpneumothorax", false, true];
+_unit setVariable [QACEGVAR(medical,openWounds), [], true];
+_unit setVariable [QACEGVAR(medical,bandagedWounds), [], true];
+_unit setVariable [QACEGVAR(medical,stitchedWounds), [], true];
+_unit setVariable [QACEGVAR(medical,isLimping), false, true];
+_unit setVariable [QACEGVAR(medical,fractures), [0,0,0,0,0,0], true];
+
+//KAT Airway
+_unit setVariable [QEGVAR(airway,occluded), false, true];
+_unit setVariable [QEGVAR(airway,obstruction), false, true];
+_unit setVariable [QEGVAR(airway,recovery), false, true];
+_unit setVariable [QEGVAR(airway,overstretch), false, true];
+
+//KAT Breathing
+_unit setVariable [QGVAR(airwayStatus), 100, true];
+_unit setVariable [QGVAR(pneumothorax), false, true];
+_unit setVariable [QGVAR(hemopneumothorax), false, true];
+_unit setVariable [QGVAR(tensionpneumothorax), false, true];
 
 // Update wound bleeding
-[_patient] call ace_medical_status_fnc_updateWoundBloodLoss;
+[_unit] call ACEFUNC(medical_status,updateWoundBloodLoss);
+[_unit] call EFUNC(circulation,updateInternalBleeding);
 
 // Vitals
-_patient setVariable ["ace_medical_heartRate", 80, true];
-_patient setVariable ["ace_medical_bloodPressure", [80, 120], true];
-_patient setVariable ["ace_medical_peripheralResistance", 100, true];
+_unit setVariable [QACEGVAR(medical,heartRate), 80, true];
+_unit setVariable [QACEGVAR(medical,bloodPressure), [80, 120], true];
+_unit setVariable [QACEGVAR(medical,peripheralResistance), 100, true];
 
-// IVs
-_patient setVariable ["ace_medical_ivBags", nil, true];
-_patient setVariable ["kat_pharma_alphaAction", 1, true];
-_patient setVariable ["kat_pharma_IV", [0,0,0,0,0,0], true];
-_patient setVariable ["kat_pharma_IVpfh", [0,0,0,0,0,0], true];
-_patient setVariable ["kat_pharma_active", false, true];
-_patient setVariable ["kat_IVPharma_PFH", nil, true];
+//KAT Pharmacy
+_unit setVariable [QACEGVAR(medical,ivBags), nil, true];
+_unit setVariable [QEGVAR(pharma,alphaAction), 1, true];
+_unit setVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0], true];
+_unit setVariable [QEGVAR(pharma,IVpfh), [0,0,0,0,0,0], true];
+_unit setVariable [QEGVAR(pharma,active), false, true];
+_unit setVariable [QEGVAR(pharma,IVPharma_PFH), nil, true];
+_unit setVariable [QEGVAR(pharma,pH), 1500, true];
+_unit setVariable [QEGVAR(pharma,kidneyFail), false, true];
+_unit setVariable [QEGVAR(pharma,kidneyArrest), false, true];
+_unit setVariable [QEGVAR(pharma,kidneyPressure), false, true];
+_unit setVariable [QEGVAR(pharma,coagulationFactor), 10, true];
 
 //KAT Surgery
 
-_patient setVariable ["kat_surgery_pH", 1500, true];
-_patient setVariable ["kat_surgery_kidneyFail", false, true];
-_patient setVariable ["kat_surgery_kidneyArrest", false, true];
-_patient setVariable ["kat_surgery_kidneyPressure", false, true];
-
-_patient setVariable ["kat_surgery_debridement", [0,0,0,0,0,0], true];
-_patient setVariable ["kat_surgery_fractures", [0,0,0,0,0,0], true];
-_patient setVariable ["kat_surgery_lidocaine", false, true];
-_patient setVariable ["kat_surgery_etomidate", false, true];
-_patient setVariable ["kat_surgery_sedated", false, true];
+_unit setVariable [QEGVAR(surgery,debridement), [0,0,0,0,0,0], true];
+_unit setVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0], true];
+_unit setVariable [QEGVAR(surgery,lidocaine), false, true];
+_unit setVariable [QEGVAR(surgery,etomidate), false, true];
+_unit setVariable [QEGVAR(surgery,sedated), false, true];
 
 // Damage storage
-_patient setVariable ["ace_medical_bodyPartDamage", [0,0,0,0,0,0], true];
+_unit setVariable [QACEGVAR(medical,bodyPartDamage), [0,0,0,0,0,0], true];
 
 // wakeup needs to be done after achieving stable vitals, but before manually reseting unconc var
-if (_patient getVariable ["ACE_isUnconscious", false]) then {
-    if (!([_patient] call ace_medical_status_fnc_hasStableVitals)) then { ERROR_2("fullheal [unit %1][state %2] did not restore stable vitals",_patient,_state); };
-    TRACE_1("Waking up",_patient);
-    ["ace_medical_WakeUp", _patient] call CBA_fnc_localEvent;
-    _state = [_patient, ace_medical_STATE_MACHINE] call CBA_statemachine_fnc_getCurrentState;
+if (_unit getVariable ["ACE_isUnconscious", false]) then {
+    if (!([_unit] call ACEFUNC(medical_status,hasStableVitals))) then { ERROR_2("fullheal [unit %1][state %2] did not restore stable vitals",_unit,_state); };
+    TRACE_1("Waking up",_unit);
+    [QACEGVAR(medical,WakeUp), _unit] call CBA_fnc_localEvent;
+    _state = [_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState;
     TRACE_1("after WakeUp",_state);
-    if (_patient getVariable ["ACE_isUnconscious", false]) then { ERROR_2("fullheal [unit %1][state %2] failed to wake up patient",_patient,_state); };
+    if (_unit getVariable ["ACE_isUnconscious", false]) then { ERROR_2("fullheal [unit %1][state %2] failed to wake up patient",_unit,_state); };
 };
 
 // Generic medical admin
-// _patient setVariable [VAR_CRDC_ARRST, false, true]; // this should be set by statemachine transition
-// _patient setVariable [VAR_UNCON, false, true]; // this should be set by statemachine transition
-_patient setVariable ["ace_medical_hemorrhage", 0, true];
-_patient setVariable ["ace_medical_inPain", false, true];
-_patient setVariable ["ace_medical_painSuppress", 0, true];
+// _unit setVariable [VAR_CRDC_ARRST, false, true]; // this should be set by statemachine transition
+// _unit setVariable [VAR_UNCON, false, true]; // this should be set by statemachine transition
+_unit setVariable [QACEGVAR(medical,hemorrhage), 0, true];
+_unit setVariable [QACEGVAR(medical,inPain), false, true];
+_unit setVariable [QACEGVAR(medical,painSuppress), 0, true];
 
 // Medication
-_patient setVariable ["ace_medical_medications", [], true];
-_patient setVariable ["kat_pharma_ondUse", false, true];
-_patient setVariable ["kat_circulation_asystole", 0, true];
-_patient setVariable ["kat_circulation_CPRcount", 2, true];
+_unit setVariable [QACEGVAR(medical,medications), [], true];
+_unit setVariable [QEGVAR(circulation,asystole), 0, true];
+_unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 
 // Reset triage card since medication is reset
-_patient setVariable ["ace_medical_triageCard", [], true];
+_unit setVariable [QACEGVAR(medical,triageCard), [], true];
 
-[_patient] call ace_medical_engine_fnc_updateDamageEffects;
+[_unit] call ACEFUNC(medical_engine,updateDamageEffects);
 
 // Reset damage
-_patient setDamage 0;
+_unit setDamage 0;
 
-["ace_medical_FullHeal", _patient] call CBA_fnc_localEvent;
-_state = [_patient, ace_medical_STATE_MACHINE] call CBA_statemachine_fnc_getCurrentState;
+[QACEGVAR(medical,FullHeal), _unit] call CBA_fnc_localEvent;
+_state = [_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState;
 TRACE_1("after FullHeal",_state);
+
+/// Clear Stamina & weapon sway
+if (ACEGVAR(advanced_fatigue,enabled)) then {
+    
+    ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
+
+} else {
+
+    _unit enableStamina true;
+    _unit setAnimSpeedCoef 1;
+    _unit setCustomAimCoef 1;
+
+};
+
+/// Clear chroma effect & camera shake
+
+resetCamShake;
+["ChromAberration", 200, [ 0, 0, true ]] spawn
+{
+    params["_name", "_priority", "_effect", "_handle"];
+    while
+    {
+        _handle = ppEffectCreate[_name, _priority];
+        _handle < 0
+    }
+    do
+    {
+        _priority = _priority + 1;
+    };
+    _handle ppEffectEnable true;
+    _handle ppEffectAdjust _effect;
+    _handle ppEffectCommit 0;
+    [
+        {
+            params["_handle"];
+            ppEffectCommitted _handle
+        },
+        {
+            params["_handle"];
+            _handle ppEffectEnable false;
+            ppEffectDestroy _handle;
+        },
+    [_handle]] call CBA_fnc_waitUntilAndExecute;
+};
+
+// Reenable ace fatige animationspeed override
+
+if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
+    _index = ACEGVAR(advanced_fatigue,setAnimExclusions) find "PervitinOverride";
+    if (_index != -1) then {
+        ACEGVAR(advanced_fatigue,setAnimExclusions) deleteAt _index;
+    };
+};

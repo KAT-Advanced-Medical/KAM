@@ -17,7 +17,7 @@
 
 params ["_display"];
 
-private _selectedCategory = ace_medical_gui_selectedCategory;
+private _selectedCategory = ACEGVAR(medical_gui,selectedCategory);
 
 // Clear all action buttons
 {
@@ -34,7 +34,7 @@ _ctrlTriage ctrlEnable _showTriage;
 lbClear _ctrlTriage;
 
 if (_showTriage) exitWith {
-    [_ctrlTriage, ace_medical_gui_target] call ace_medical_gui_fnc_updateTriageCard;
+    [_ctrlTriage, ACEGVAR(medical_gui,target)] call ACEFUNC(medical_gui,updateTriageCard);
 };
 
 // Show treatment options on action buttons
@@ -50,8 +50,8 @@ private _idcIndex = 0;
         _ctrl ctrlShow true;
 
         _ctrl ctrlAddEventHandler ["ButtonClick", _statement];
-        _ctrl ctrlAddEventHandler ["ButtonClick", {ace_medical_gui_pendingReopen = true}];
+        _ctrl ctrlAddEventHandler ["ButtonClick", {ACEGVAR(medical_gui,pendingReopen) = true}];
 
         _idcIndex = _idcIndex + 1;
     };
-} forEach ace_medical_gui_actions;
+} forEach ACEGVAR(medical_gui,actions);

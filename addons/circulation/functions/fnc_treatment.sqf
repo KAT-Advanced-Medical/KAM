@@ -21,11 +21,11 @@
 params ["_medic", "_patient", "_bodyPart", "_classname"];
 
 // Delay by a frame if cursor menu is open to prevent progress bar failing
-if (uiNamespace getVariable ["ace_interact_menu_cursorMenuOpened", false]) exitWith {
-    [ace_medical_treatment_fnc_treatment, _this] call CBA_fnc_execNextFrame;
+if (uiNamespace getVariable [QACEGVAR(interact_menu,cursorMenuOpened), false]) exitWith {
+    [ACEFUNC(medical_treatment,treatment), _this] call CBA_fnc_execNextFrame;
 };
 
-if !(_this call ace_medical_treatment_fnc_canTreat) exitWith {false};
+if !(_this call ACEFUNC(medical_treatment,canTreat)) exitWith {false};
 
 private _config = configFile >> "ace_medical_treatment_actions" >> _classname;
 
@@ -47,7 +47,7 @@ if (_treatmentTime == 0) exitWith {false};
 // Consume one of the treatment items if needed
 // Store item user so that used item can be returned on failure
 private _userAndItem = if (GET_NUMBER_ENTRY(_config >> "consumeItem") == 1) then {
-    [_medic, _patient, getArray (_config >> "items")] call ace_medical_treatment_fnc_useItem;
+    [_medic, _patient, getArray (_config >> "items")] call ACEFUNC(medical_treatment,useItem);
 } else {
     [objNull, ""]; // Treatment does not require items to be consumed
 };
@@ -65,9 +65,9 @@ if (alive _patient) then {
 
     if (_medic != _patient && {vehicle _patient == _patient} && {_patientAnim != ""}) then {
         if (_patient getVariable ["ACE_isUnconscious", false]) then {
-            [_patient, _patientAnim, 2] call ace_common_fnc_doAnimation;
+            [_patient, _patientAnim, 2] call ACEFUNC(common,doAnimation);
         } else {
-            [_patient, _patientAnim, 1] call ace_common_fnc_doAnimation;
+            [_patient, _patientAnim, 1] call ACEFUNC(common,doAnimation);
         };
     };
 };
@@ -80,7 +80,7 @@ private _medicAnim = if (_medic isEqualTo _patient) then {
     getText (_config >> ["animationMedic", "animationMedicProne"] select (stance _medic == "PRONE"));
 };
 
-_medic setVariable ["ace_medical_treatment_selectedWeaponOnTreatment", weaponState _medic];
+_medic setVariable [QACEGVAR(medical_treatment,selectedWeaponOnTreatment), weaponState _medic];
 
 // Adjust animation based on the current weapon of the medic
 private _wpn = ["non", "rfl", "lnr", "pst"] param [["", primaryWeapon _medic, secondaryWeapon _medic, handgunWeapon _medic] find currentWeapon _medic, "non"];
@@ -92,7 +92,7 @@ if (_medicAnim == "AinvPknlMstpSlayWlnrDnon_medic") then {
 };
 
 // Determine the animation length
-private _animDuration = ace_medical_treatment_animDurations getVariable _medicAnim;
+private _animDuration = ACEGVAR(medical_treatment,animDurations) getVariable _medicAnim;
 if (isNil "_animDuration") then {
     WARNING_2("animation [%1] for [%2] has no duration defined",_medicAnim,_classname);
     _animDuration = 10;
@@ -126,7 +126,7 @@ if (vehicle _medic == _medic && {_medicAnim != ""}) then {
     // Skip animation enitrely if progress bar too quick.
     if (_animRatio > ANIMATION_SPEED_MAX_COEFFICIENT) exitWith {};
 
-    ["ace_common_setAnimSpeedCoef", [_medic, _animRatio]] call CBA_fnc_globalEvent;
+    [QACEGVAR(common,setAnimSpeedCoef), [_medic, _animRatio]] call CBA_fnc_globalEvent;
 
     // Play animation
     private _endInAnim = "AmovP[pos]MstpS[stn]W[wpn]Dnon";
@@ -142,17 +142,18 @@ if (vehicle _medic == _medic && {_medicAnim != ""}) then {
     _endInAnim = [_endInAnim, "[stn]", _stn] call CBA_fnc_replace;
     _endInAnim = [_endInAnim, "[wpn]", _wpn] call CBA_fnc_replace;
 
-    [_medic, _medicAnim] call ace_common_fnc_doAnimation;
-    [_medic, _endInAnim] call ace_common_fnc_doAnimation;
-    _medic setVariable ["ace_medical_treatment_endInAnim", _endInAnim];
+    [_medic, _medicAnim] call ACEFUNC(common,doAnimation);
+    [_medic, _endInAnim] call ACEFUNC(common,doAnimation);
+    _medic setVariable [QACEGVAR(medical_treatment,endInAnim), _endInAnim];
 
-    if (!isNil "ace_advanced_fatigue_setAnimExclusions") then {
-        ace_advanced_fatigue_setAnimExclusions pushBack "ace_medical_treatment";
+    if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
+        ACEGVAR(advanced_fatigue,setAnimExclusions) pushBack "ace_medical_treatment";
     };
 };
 
 // Play a random treatment sound globally if defined
-if (isArray (_config >> "sounds")) then {
+// Don't attempt to play if sounds array is empty
+if (isArray (_config >> "sounds") && count getArray (_config >> "sounds") != 0) then {
     selectRandom getArray (_config >> "sounds") params ["_file", ["_volume", 1], ["_pitch", 1], ["_distance", 10]];
     playSound3D [_file, objNull, false, getPosASL _medic, _volume, _pitch, _distance];
 };
@@ -169,11 +170,11 @@ if (_callbackProgress isEqualTo {}) then {
 [
     _treatmentTime,
     [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem],
-    ace_medical_treatment_fnc_treatmentSuccess,
-    ace_medical_treatment_fnc_treatmentFailure,
+    ACEFUNC(medical_treatment,treatmentSuccess),
+    ACEFUNC(medical_treatment,treatmentFailure),
     getText (_config >> "displayNameProgress"),
     _callbackProgress,
     ["isNotInside"]
-] call ace_common_fnc_progressBar;
+] call ACEFUNC(common,progressBar);
 
 true

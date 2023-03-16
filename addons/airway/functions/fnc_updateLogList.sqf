@@ -40,14 +40,14 @@ lbClear _ctrl;
 
     //Color the logs if enabled by Airway Settings of KAM
     if (GVAR(Colored_logs)) then {
-        if (_messageWOlocalization isEqualTo "STR_kat_breathing_pulseoxi_Log") then {
+        if (_messageWOlocalization isEqualTo ELSTRING(breathing,pulseoxi_Log)) then {
             if (((_arguments select 0) < 45 )
             || ((_arguments select 0) > 120 )
             || ((_arguments select 1) < 75 )) then {
                 _ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
             };
         };
-        if (_messageWOlocalization isEqualTo "HR: %1 RR: %2/%3 SpO2: %4") then {
+        if (_messageWOlocalization isEqualTo ELSTRING(circulation,AEDX_StatusLog)) then {
             if (((_arguments select 0) < 45 )
             || ((_arguments select 0) > 120 )
             || ((_arguments select 1) < 50 )

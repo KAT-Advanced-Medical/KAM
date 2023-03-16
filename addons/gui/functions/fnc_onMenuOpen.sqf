@@ -18,8 +18,8 @@
 params ["_display"];
 
 // Create background effects based on interact menu setting
-if (ace_interact_menu_menuBackground == 1) then {["ace_medical_gui_id", true] call ace_common_blurScreen};
-if (ace_interact_menu_menuBackground == 2) then {0 cutRsc ["ace_interact_menu_menuBackground", "PLAIN", 1, false]};
+if (ACEGVAR(interact_menu,menuBackground) == 1) then {[QACEGVAR(medical_gui,id), true] call ACEFUNC(common,blurScreen)};
+if (ACEGVAR(interact_menu,menuBackground) == 2) then {0 cutRsc [QACEGVAR(interact_menu,menuBackground), "PLAIN", 1, false]};
 
 // Fix mouse moving randomly
 [{
@@ -28,20 +28,20 @@ if (ace_interact_menu_menuBackground == 2) then {0 cutRsc ["ace_interact_menu_me
 
 // Set target name as title
 private _ctrlTitle = _display displayCtrl IDC_TITLE;
-_ctrlTitle ctrlSetText ([ace_medical_gui_target] call ace_common_fnc_getName);
+_ctrlTitle ctrlSetText ([ACEGVAR(medical_gui,target)] call ACEFUNC(common,getName));
 
 // Initially hide the triage select buttons
-[_display] call ace_medical_gui_fnc_toggleTriageSelect;
+[_display] call ACEFUNC(medical_gui,toggleTriageSelect);
 
 // Store display and add PFH to update it
-uiNamespace setVariable ["ace_medical_gui_menuDisplay", _display];
-["ace_medicalMenuOpened", [ACE_player, ace_medical_gui_target, _display]] call CBA_fnc_localEvent;
+uiNamespace setVariable [QACEGVAR(medical_gui,menuDisplay), _display];
+["ace_medicalMenuOpened", [ACE_player, ACEGVAR(medical_gui,target), _display]] call CBA_fnc_localEvent;
 
-if (ace_medical_gui_menuPFH != -1) exitWith {
-    TRACE_1("Menu PFH already running",ace_medical_gui_menuPFH);
+if (ACEGVAR(medical_gui,menuPFH) != -1) exitWith {
+    TRACE_1("Menu PFH already running",ACEGVAR(medical_gui,menuPFH));
 };
 
-ace_medical_gui_menuPFH = [ace_medical_gui_fnc_menuPFH, 0, []] call CBA_fnc_addPerFrameHandler;
+ACEGVAR(medical_gui,menuPFH) = [ACEFUNC(medical_gui,menuPFH), 0, []] call CBA_fnc_addPerFrameHandler;
 
 // Hide categories if they don't have any actions (airway)
 private _list = [
@@ -57,7 +57,7 @@ private _list = [
 ];
 private _countEnabled = {
     _x params ["", "_category"];
-    if (_category isEqualType "") then { _x set [1, (ace_medical_gui_actions findIf {_category == _x select 1}) > -1]; };
+    if (_category isEqualType "") then { _x set [1, (ACEGVAR(medical_gui,actions) findIf {_category == _x select 1}) > -1]; };
     _x select 1
 } count _list;
 private _offsetX = POS_X(1.5) + 0.5 * (POS_X(12) - POS_X(_countEnabled * 1.5));

@@ -20,8 +20,8 @@
  */
 
 // only run this after the settings are initialized
-if !(ace_common_settingsInitFinished) exitWith {
-    ace_common_runAtSettingsInitialized pushBack [ace_medical_fnc_setUnconscious, _this];
+if !(ACEGVAR(common,settingsInitFinished)) exitWith {
+    ACEGVAR(common,runAtSettingsInitialized) pushBack [ACEFUNC(medical,setUnconscious), _this];
 };
 
 params [["_unit", objNull, [objNull]], ["_knockOut", true, [false]], ["_minWaitingTime", 0, [0]], ["_forcedWakup", false, [false]]];
@@ -31,7 +31,7 @@ if ((isNull _unit) || {!alive _unit} || {!(_unit isKindOf "CAManBase")}) exitWit
 };
 
 if (!local _unit) exitWith {
-    ["ace_medical_setUnconscious", _this, _unit] call CBA_fnc_targetEvent;
+    [QACEGVAR(medical,setUnconscious), _this, _unit] call CBA_fnc_targetEvent;
     true
 };
 
@@ -50,22 +50,22 @@ if (_knockOut) then {
             KAT_forceWakeup = true;
             [{
                 params [["_unit", objNull]];
-                if ((alive _unit) && {_unit call ace_medical_status_fnc_hasStableVitals}) then {
-                    ["ace_medical_WakeUp", _unit] call CBA_fnc_localEvent;
+                if ((alive _unit) && {_unit call ACEFUNC(medical_status,hasStableVitals)}) then {
+                    [QACEGVAR(medical,WakeUp), _unit] call CBA_fnc_localEvent;
                     KAT_forceWakeup = false;
                 } else {
                     KAT_forceWakeup = false;
                 };
             }, [_unit], _minWaitingTime] call CBA_fnc_waitAndExecute;
         };
-        if (ace_medical_spontaneousWakeUpChance > 0) then {
-            _unit setVariable ["ace_medical_lastWakeUpCheck", CBA_missionTime + _minWaitingTime - 15];
+        if (ACEGVAR(medical,spontaneousWakeUpChance) > 0) then {
+            _unit setVariable [QACEGVAR(medical,lastWakeUpCheck), CBA_missionTime + _minWaitingTime - 15];
         };
     };
 
-    ["ace_medical_knockOut", _unit] call CBA_fnc_localEvent;
+    [QACEGVAR(medical,knockOut), _unit] call CBA_fnc_localEvent;
 } else {
-    ["ace_medical_WakeUp", _unit] call CBA_fnc_localEvent;
+    [QACEGVAR(medical,WakeUp), _unit] call CBA_fnc_localEvent;
 };
 
 true

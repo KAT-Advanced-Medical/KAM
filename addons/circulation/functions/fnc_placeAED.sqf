@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
 *     Author: Tomcat
 * 
@@ -19,7 +20,7 @@ private _AED = createVehicle ["kat_AEDItem", position ACE_player, [], 0, "NONE"]
 [_AED, true, [0, 1, 0]] remoteExecCall ["ace_dragging_fnc_setDraggable", 0, true];
 [_AED, true, [0, 1, 0]] remoteExecCall ["ace_dragging_fnc_setCarryable", 0, true];
 
-[player, _AED] call ace_dragging_fnc_carryObject;
+[player, _AED] call ACEFUNC(dragging,carryObject);
 
 private _pickupAED = [
     "AED_pickupAction",
@@ -32,6 +33,6 @@ private _pickupAED = [
         _player addItem "kat_AED";
     },
     {true}
-] call ace_interact_menu_fnc_createAction;
+] call ACEFUNC(interact_menu,createAction);
 
 [_AED, 0, ["ACE_MainActions"], _pickupAED] remoteExecCall ["ace_interact_menu_fnc_addActionToObject", 0, true];

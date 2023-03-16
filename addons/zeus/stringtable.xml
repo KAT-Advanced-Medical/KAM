@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="kat">
-    <Package name="zeus">
-        <Key ID="STR_kat_zeus_ModuleManageAirway_Obstruction">
+<Project name="KAT">
+    <Package name="Zeus">
+        <Key ID="STR_KAT_Zeus_ModuleManageAirway_Obstruction">
             <English>Airway obstruction: </English>
             <German>Atemwegsobstruktion: </German>
-            <Czech>Zablokování dýchacích cest: </Czech>
+            <Czech>Obstrukce dýchacích cest: </Czech>
             <French>Obstruction des voies aériennes: </French>
             <Polish>Zator dróg oddechowych: </Polish>
             <Spanish>Obstrucción de vías aéreas: </Spanish>
@@ -13,12 +13,14 @@
             <Chinese>气道闭塞: </Chinese>
             <Japanese>気道閉塞:</Japanese>
             <Russian>Обструкция дыхательных путей:</Russian>
-            <Italian>Ostruzione delle vie aeree.</Italian>
+            <Italian>Ostruzione delle vie aeree</Italian>
+            <Chinesesimp>气道闭塞:</Chinesesimp>
+            <Portuguese>Obstrução de vias aéreas:</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_ModuleManageAirway_Occlusion">
+        <Key ID="STR_KAT_Zeus_ModuleManageAirway_Occlusion">
             <English>Airway occlusion: </English>
             <German>Atemwegsverstopfung: </German>
-            <Czech>Uzavření dýchacích cest: </Czech>
+            <Czech>Okluze dýchacích cest: </Czech>
             <Polish>Zablokowanie dróg oddechowych: </Polish>
             <Spanish>Oclusión de vías aéreas: </Spanish>
             <French>Occlusion des voies aériennes:</French>
@@ -27,14 +29,16 @@
             <Turkish>Hava yolu tıkanıklığı: </Turkish>
             <Japanese>気道異物:</Japanese>
             <Russian>Окклюзия дыхательных путей:</Russian>
-            <Italian>Occlusione delle vie aeree.</Italian>
+            <Italian>Occlusione delle vie aeree</Italian>
+            <Chinesesimp>气道阻塞:</Chinesesimp>
+            <Portuguese>Oclusão das vias aéreas:</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_ModuleManageAirway_Pneumothorax">
+        <Key ID="STR_KAT_Zeus_ModuleManageAirway_Pneumothorax">
             <English>Pneumothorax: </English>
             <German>Pneumothorax: </German>
             <Czech>Pneumotorax: </Czech>
             <French>Pneumothorax: </French>
-            <Polish>Odma opłucna: </Polish>
+            <Polish>Odma opłucnowa: </Polish>
             <Spanish>Neumotórax: </Spanish>
             <Korean>기흉 활성화: </Korean>
             <Chinese>气胸:</Chinese>
@@ -42,22 +46,26 @@
             <Japanese>気胸:</Japanese>
             <Russian>Пневмоторакс:</Russian>
             <Italian>Pneumotorace</Italian>
+            <Chinesesimp>气胸:</Chinesesimp>
+            <Portuguese>Pneumotórax:</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_ModuleManageAirway_Hemopneumothorax">
+        <Key ID="STR_KAT_Zeus_ModuleManageAirway_Hemopneumothorax">
             <English>Hemopneumothorax: </English>
             <German>Hämopneumothorax: </German>
             <Czech>Hemopneumotorax: </Czech>
             <French>Hémopneumothorax: </French>
             <Polish>Krwiak opłucnej: </Polish>
-            <Spanish>Hemoneumotórax: </Spanish>
+            <Spanish>Hemotórax: </Spanish>
             <Korean>혈기흉 활성화: </Korean>
             <Chinese>血气胸:</Chinese>
             <Turkish>Hemopnömotoraks: </Turkish>
             <Japanese>血気胸:</Japanese>
             <Russian>Гемопневмоторакс:</Russian>
             <Italian>Emopneumotorace</Italian>
+            <Chinesesimp>血气胸:</Chinesesimp>
+            <Portuguese>Hemopneumotórax:</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_ModuleManageAirway_Tensionpneumothorax">
+        <Key ID="STR_KAT_Zeus_ModuleManageAirway_Tensionpneumothorax">
             <English>Tension pneumothorax: </English>
             <German>Spannungspneumothorax: </German>
             <Czech>Tenzní pneumotorax: </Czech>
@@ -70,8 +78,10 @@
             <Japanese>緊張性気胸:</Japanese>
             <Russian>Напряженный пневмоторакс:</Russian>
             <Italian>Pneumotorace iperteso</Italian>
+            <Chinesesimp>张力性气胸:</Chinesesimp>
+            <Portuguese>Pneumotórax hipertensivo:</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_ModuleManageAirway_SpO2Value">
+        <Key ID="STR_KAT_Zeus_ModuleManageAirway_SpO2Value">
             <English>SpO2 value: </English>
             <German>SpO2-Wert: </German>
             <Czech>Hodnota SpO2: </Czech>
@@ -84,8 +94,10 @@
             <Japanese>SpO2値:</Japanese>
             <Russian>Значение SpO2:</Russian>
             <Italian>Valore di SpO2</Italian>
+            <Chinesesimp>SpO2值:</Chinesesimp>
+            <Portuguese>Valor de SpO2:</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_ModuleManageAirway_bloodGroup">
+        <Key ID="STR_KAT_Zeus_ModuleManageAirway_bloodGroup">
             <English>Blood group: </English>
             <German>Blutgruppe: </German>
             <Czech>Krevní skupina: </Czech>
@@ -98,22 +110,26 @@
             <Japanese>血液型:</Japanese>
             <Russian>Группа крови:</Russian>
             <Italian>Gruppo sanguigno</Italian>
+            <Chinesesimp>血型:</Chinesesimp>
+            <Portuguese>Tipo sanguíneo:</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_ModuleManageAirway_bloodVolume">
+        <Key ID="STR_KAT_Zeus_ModuleManageAirway_bloodVolume">
             <English>Blood volume: </English>
-            <German>blutvolumen: </German>
+            <German>Blutvolumen: </German>
             <Czech>Množství krve: </Czech>
             <French>Volume sanguin: </French>
             <Polish>Ilość krwi: </Polish>
-            <Spanish>Volumen sanguíneo: </Spanish>
+            <Spanish>Volumen de sangre: </Spanish>
             <Chinese>血量。</Chinese>
             <Korean>혈액량: </Korean>
             <Turkish>Kan basıncı: </Turkish>
             <Japanese>血液量:</Japanese>
             <Russian>Объем крови:</Russian>
             <Italian>Volume di sangue</Italian>
+            <Chinesesimp>血液量:</Chinesesimp>
+            <Portuguese>Volume de sangue:</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_manageAirway_Module_displayname">
+        <Key ID="STR_KAT_Zeus_manageAirway_Module_displayname">
             <English>Manage Airways</English>
             <German>Atemwege verwalten</German>
             <Czech>Upravit dýchací cesty</Czech>
@@ -126,22 +142,26 @@
             <Japanese>気道を管理する</Japanese>
             <Russian>Управление авиалиниями</Russian>
             <Italian>Gestisci le vie aeree</Italian>
+            <Chinesesimp>气道管理:</Chinesesimp>
+            <Portuguese>Gerenciar vias aéreas</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_bloodType_Module_displayname">
+        <Key ID="STR_KAT_Zeus_bloodType_Module_displayname">
             <English>Change blood group / volume</English>
             <German>Blutgruppe / volumen ändern</German>
             <Czech>Změnit krevní skupinu / množství</Czech>
             <French>Changer groupe sanguin / volume</French>
             <Polish>Zmień grupę / ilość krwi</Polish>
-            <Spanish>Cambiar grupo/volumen sanguíneo</Spanish>
+            <Spanish>Cambiar grupo/volumen de sangre</Spanish>
             <Chinese>改变血型/血量</Chinese>
             <Korean>혈액형/혈액량 변경</Korean>
             <Turkish>Kan grubunu / hacmini değiştir</Turkish>
             <Japanese>血液型/容量を変更する</Japanese>
             <Russian>Изменить группу/объем крови</Russian>
             <Italian>Cambia gruppo sanguigno e volume</Italian>
+            <Chinesesimp>改变血型/血液量:</Chinesesimp>
+            <Portuguese>Alterar tipo sanguíneo/volume</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_shockablestate_Module_displayname">
+        <Key ID="STR_KAT_Zeus_shockablestate_Module_displayname">
             <English>Change shockable state</English>
             <German>Schockzustand ändern</German>
             <Czech>Změnit šokovatelný stav</Czech>
@@ -154,8 +174,10 @@
             <Japanese>ショック状態を変える</Japanese>
             <Russian>Изменить шоковое состояние</Russian>
             <Italian>Cambia stato defibrillabile</Italian>
+            <Chinesesimp>改变电击状态:</Chinesesimp>
+            <Portuguese>Alterar estado de fibrilação cardíaca</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_checkmedical_Module_displayname">
+        <Key ID="STR_KAT_Zeus_checkmedical_Module_displayname">
             <English>Open unit medical menu</English>
             <German>Medic Menü der Einheit öffnen</German>
             <Czech>Otevřít zdravotnickou nabídku jednotky</Czech>
@@ -168,8 +190,10 @@
             <Japanese>医療メニューを開く</Japanese>
             <Russian>Медицинское меню открытого блока</Russian>
             <Italian>Apri il menu medico</Italian>
+            <Chinesesimp>打开单位医疗菜单</Chinesesimp>
+            <Portuguese>Abra o menu médico da unidade</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_shockablestate_Module_state">
+        <Key ID="STR_KAT_Zeus_shockablestate_Module_state">
             <English>State: </English>
             <German>Wert: </German>
             <Czech>Stav: </Czech>
@@ -182,8 +206,10 @@
             <Japanese>状態:</Japanese>
             <Russian>Состояние:</Russian>
             <Italian>Stato: </Italian>
+            <Chinesesimp>状态:</Chinesesimp>
+            <Portuguese>Estado:</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_shockablestate_Module_shockable">
+        <Key ID="STR_KAT_Zeus_shockablestate_Module_shockable">
             <English>Shockable (VF/PVT)</English>
             <German>Schockbar (VF/PVT)</German>
             <Czech>Šokovatelný (VF/PVT)</Czech>
@@ -193,25 +219,29 @@
             <Chinese>可休克(VF/PVT)</Chinese>
             <Korean>쇼크성 심정지(VF/PVT)</Korean>
             <Turkish>Şok Edilebilir (VF/PVT)</Turkish>
-            <Japanese>ショック可能(VF/PVT)</Japanese>
+            <Japanese>ショック可能 (VF/PVT)</Japanese>
             <Russian>Шокирующий (VF/PVT)</Russian>
             <Italian>Defibrillabile (VF/PVT)</Italian>
+            <Chinesesimp>电击类型(VF/PVT)</Chinesesimp>
+            <Portuguese>Desfibrilável (FV/TV)</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_shockablestate_Module_non_shockable">
+        <Key ID="STR_KAT_Zeus_shockablestate_Module_non_shockable">
             <English>non-shockable (Asystole)</English>
             <German>Nicht-Schockbar (Asystolie)</German>
-            <Czech>Nešokovatelný (Asystola)</Czech>
+            <Czech>Nešokovatelný (Asystolie)</Czech>
             <French>Non-choquable (Asystolie) </French>
             <Polish>Niedefibrylacyjny (Asystolia)</Polish>
             <Spanish>No desfibrilable (Asístolia)</Spanish>
             <Chinese>非休克性 (Asystole)</Chinese>
             <Korean>비-쇼크성 심정지(심부전수축)</Korean>
             <Turkish>şoklanamaz (Asistoli)</Turkish>
-            <Japanese>ショック不可(心静止)</Japanese>
+            <Japanese>ショック不要 (心静止)</Japanese>
             <Russian>Без шока (асистолия)</Russian>
             <Italian>Non defibrillabile (Asistolia)</Italian>
+            <Chinesesimp>非电击类型(心搏停止)</Chinesesimp>
+            <Portuguese>Não chocável (Assistolia)</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_NothingSelected">
+        <Key ID="STR_KAT_Zeus_NothingSelected">
             <English>Place on a unit.</English>
             <German>Es wurde nichts ausgewählt.</German>
             <Czech>Položte na jednotku.</Czech>
@@ -221,13 +251,15 @@
             <Chinese>放在一个单元上。</Chinese>
             <Korean>유닛에 배치하십시오.</Korean>
             <Turkish>Bir üniteye yerleştirin.</Turkish>
-            <Japanese>ユニットに置きます。</Japanese>
+            <Japanese>ユニットに置いてください。</Japanese>
             <Russian>Поместите на единицу.</Russian>
             <Italian>Piazza su un'unità</Italian>
+            <Chinesesimp>放置在一个单元上</Chinesesimp>
+            <Portuguese>Coloque em uma unidade.</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_OnlyInfantry">
+        <Key ID="STR_KAT_Zeus_OnlyInfantry">
             <English>Unit must be infantry.</English>
-            <German>Nur bei Infanterie verwendbar.</German>
+            <German>Nur bei abgesessener Infanterie verwendbar.</German>
             <Czech>Jednotka musí být pěchota.</Czech>
             <French>L'unité doit être une infanterie.</French>
             <Polish>Jednostką musi być piechota.</Polish>
@@ -238,8 +270,10 @@
             <Japanese>ユニットは歩兵でなければなりません。</Japanese>
             <Russian>Юнит должен быть пехотным.</Russian>
             <Italian>L'unità deve essere di fanteria.</Italian>
+            <Chinesesimp>单位必须是步兵</Chinesesimp>
+            <Portuguese>A unidade deve ser de infantaria.</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_MustBeAlive">
+        <Key ID="STR_KAT_Zeus_MustBeAlive">
             <English>Unit must be alive.</English>
             <German>Einheit muss am Leben sein.</German>
             <Czech>Jednotka musí být naživu.</Czech>
@@ -252,10 +286,12 @@
             <Japanese>ユニットは生きている必要があります。</Japanese>
             <Russian>Юнит должен быть жив.</Russian>
             <Italian>L'unità deve essere viva</Italian>
+            <Chinesesimp>单位必须处于存活状态</Chinesesimp>
+            <Portuguese>A unidade deve estar viva.</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_NotUnconscious">
+        <Key ID="STR_KAT_Zeus_NotUnconscious">
             <English>Unit must be unconscious.</English>
-            <German>Einheit muss Ohnmächtig sein.</German>
+            <German>Einheit muss bewusstlos sein.</German>
             <Czech>Jednotka musí být při vědomí.</Czech>
             <French>L'unité doit être inconsciente.</French>
             <Polish>Jednostka musi być nieprzytomna.</Polish>
@@ -266,11 +302,13 @@
             <Japanese>ユニットは意識を失っている必要があります。</Japanese>
             <Russian>Юнит должен быть без сознания.</Russian>
             <Italian>L'unità deve essere viva.</Italian>
+            <Chinesesimp>单位必须是无意识的</Chinesesimp>
+            <Portuguese>A unidade deve estar inconsciente.</Portuguese>
         </Key>
-        <Key ID="STR_kat_zeus_sliderFormat13was23">
+        <Key ID="STR_KAT_Zeus_sliderFormat13was23">
             <English>%1%3 (was %2%3)</English>
             <German>%1%3 (war %2%3)</German>
-            <Czech>%1%3 (bylo %2%3)</Czech>
+            <Czech>%1%3 (było %2%3)</Czech>
             <French>%1%3 (était %2%3)</French>
             <Polish>%1%3 (było %2%3)</Polish>
             <Spanish>%1%3 (era %2%3)</Spanish>
@@ -279,7 +317,9 @@
             <Turkish>%1%3 (oldu %2%3)</Turkish>
             <Japanese>%1%3 (以前は %2%3)</Japanese>
             <Russian>%1%3 (было %2%3)</Russian>
-            <Italian>%1%3 (was %2%3)</Italian>
+            <Italian>%1%3 (era %2%3)</Italian>
+            <Chinesesimp>%1%3 (以前是 %2%3)</Chinesesimp>
+            <Portuguese>%1%3 (era %2%3)</Portuguese>
         </Key>
     </Package>
 </Project>

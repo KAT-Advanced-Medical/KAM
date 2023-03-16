@@ -1,5 +1,5 @@
 #define COMPONENT pharma
-#define COMPONENT_BEAUTIFIED ACE - Pharma
+#define COMPONENT_BEAUTIFIED KAT - Pharma
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
@@ -34,3 +34,6 @@
     } else { \
         getNumber (cfg); \
     }
+    
+#define VAR_INTERNAL_BLEEDING QEGVAR(circulation,internalBleeding)
+#define GET_INTERNAL_BLEEDING(unit) (unit getVariable [VAR_INTERNAL_BLEEDING, 0])

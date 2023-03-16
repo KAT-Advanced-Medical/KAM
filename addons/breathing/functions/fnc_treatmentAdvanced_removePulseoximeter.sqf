@@ -4,8 +4,8 @@
  * Removes a pulseoximeter for a patient and adds Item to the caller
  *
  * Arguments:
- * 0: medic <OBJECT>
- * 1: patient <OBJECT>
+ * 0: Medic <OBJECT>
+ * 1: Patient <OBJECT>
  *
  * Return Value:
  * None
@@ -16,13 +16,8 @@
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["_medic", "_patient"];
 
-_target setVariable [QGVAR(pulseoximeter), false, true];
+_patient setVariable [QGVAR(pulseoximeter), false, true];
 
-if (_player canAdd "kat_Pulseoximeter") then {
-    _player addItem "kat_Pulseoximeter";
-} else {
-    private _groundHolder = createVehicle ["WeaponHolderSimulated", _target, [], 0.5, "CAN_COLLIDE"];
-    _groundHolder addItemCargoGlobal ["kat_Pulseoximeter", 1];
-};
+[_medic, "kat_Pulseoximeter", 1] call ACEFUNC(common,addToInventory);

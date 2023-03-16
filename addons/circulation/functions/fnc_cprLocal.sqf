@@ -18,13 +18,9 @@
  * Public: No
  */
 
-params [
-    ["_medic",objNull,[objNull]],
-    ["_patient",objNull,[objNull]],
-    ["_reviveObject","CPR",[""]]
-];
+params ["_medic", "_patient", "_reviveObject"];
 
-private _bloodLoss = _patient getVariable ["ace_medical_bloodVolume", 6.0];
+private _bloodLoss = _patient getVariable [QACEGVAR(medical,bloodVolume), 6.0];
 
 private _chance = 0;
 private _random = random 100;
@@ -67,13 +63,13 @@ if !(GVAR(AdvRhythm)) then {
         _lidoBoost = _lidoBoost + 8;
         };
     };
-} forEach (_patient getVariable ["ace_medical_medications", []]);
+} forEach (_patient getVariable [QACEGVAR(medical,medications), []]);
 
 switch (_reviveObject) do {
     case "CPR": {
-        [_patient, "activity", "STR_ACE_medical_treatment_Activity_CPR", [[_medic, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+        [_patient, "activity", ACELSTRING(medical_treatment,Activity_CPR), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
         if (GVAR(enable_CPR_Chances)) then {
-            switch (_medic getVariable ["ace_medical_medicClass",0]) do {
+            switch (_medic getVariable [QACEGVAR(medical,medicClass),0]) do {
                 case 0: {
                     _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(CPR_MinChance_Default), GVAR(CPR_MaxChance_Default), true];
                 };
@@ -87,24 +83,28 @@ switch (_reviveObject) do {
         };
     };
     case "AED": {
-        [_patient, "activity", "STR_ACE_Medical_Treatment_Activity_AED", [[_medic, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+        [_patient, "activity", LSTRING(Activity_AED), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
         _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_MinChance), GVAR(AED_MaxChance), true];
     };
-    case "AED-Station": {
-        [_patient, "activity", "STR_ACE_Medical_Treatment_Activity_AEDS", [[_medic, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+    case "AEDStation": {
+        [_patient, "activity", LSTRING(Activity_AEDS), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
         _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_MinChance), GVAR(AED_MaxChance), true];
     };
-    case "AED-X": {
-        [_patient, "activity", "STR_ACE_Medical_Treatment_Activity_AEDX", [[_medic, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+    case "AEDX": {
+        [_patient, "activity", LSTRING(Activity_AEDX), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
+        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_X_MinChance), GVAR(AED_X_MaxChance), true];
+    };
+    case "AEDXVehicle": {
+        [_patient, "activity", LSTRING(Activity_AEDX), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
         _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_X_MinChance), GVAR(AED_X_MaxChance), true];
     };
 };
 
-if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AED-X" || _reviveObject isEqualTo "AED-Station") exitWith {
+if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AEDX" || _reviveObject isEqualTo "AEDStation" || _reviveObject isEqualTo "AEDXVehicle") exitWith {
     _chance = _chance + (_amiBoost + _lidoBoost * _epiBoost);
 
     if ((_random <= _chance) && (_asystole isEqualTo 1)) then {
-        ["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
+        [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
         if (GVAR(AdvRhythm)) then {
         _patient setVariable [QGVAR(asystole), 1, true];
         };
@@ -113,13 +113,13 @@ if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AED-X" || _reviveO
 };
 
 if !(GVAR(enable_CPR_Chances)) then {
-    private _min = ace_medical_treatment_cprSuccessChanceMin;
-    private _max = ace_medical_treatment_cprSuccessChanceMax;
+    private _min = ACEGVAR(medical_treatment,cprSuccessChanceMin);
+    private _max = ACEGVAR(medical_treatment,cprSuccessChanceMax);
     _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), _min, _max, true];
     // ACE Medical settings are percentages (decimals, 0 <= x <= 1) instead of integers
 
     if ((random 1) <= _chance) then {
-        ["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
+        [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
         if (GVAR(AdvRhythm)) then {
         _patient setVariable [QGVAR(asystole), 1, true];
         };
@@ -138,7 +138,7 @@ if !(GVAR(enable_CPR_Chances)) then {
             _patient setVariable [QGVAR(asystole), 1, true];
             };
         } else {
-            ["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
+            [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
             if (GVAR(AdvRhythm)) then {
             _patient setVariable [QGVAR(asystole), 1, true];
             };

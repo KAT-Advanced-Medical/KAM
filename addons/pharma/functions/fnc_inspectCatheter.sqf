@@ -6,24 +6,27 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Body Part <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [_medic, _patient] call kat_pharma_fnc_inspectCatheter;
+ * [_medic, _patient, "LeftArm"] call kat_pharma_fnc_inspectCatheter;
  *
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", "_bodyPart"];
 
-private _block = _patient getVariable [QGVAR(IVblock), false];
+private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
+private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
+private _IVactual = _IVarray select _partIndex;
 
-if (_block) exitWith {
+if (_IVactual == 3) exitWith {
     private _output = LLSTRING(IVblock_closed);
-    [_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
 private _output = LLSTRING(IVblock_clear);
-[_output, 1.5, _medic] call ace_common_fnc_displayTextStructured;
+[_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);

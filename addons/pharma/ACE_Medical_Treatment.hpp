@@ -1,6 +1,14 @@
 class ADDON {
-	class Medication {
+    class Medication {
         class Epinephrine {
+            painReduce = 0;
+            hrIncreaseLow[] = {10, 20};
+            hrIncreaseNormal[] = {10, 50};
+            hrIncreaseHigh[] = {10, 40};
+            timeInSystem = 120;
+            timeTillMaxEffect = 10;
+            maxDose = 10;
+            incompatibleMedication[] = {};
             alphaFactor = 0.15;
         };
         class Carbonate {
@@ -27,9 +35,9 @@ class ADDON {
         };
         class Norepinephrine {
             painReduce = 0;
-            hrIncreaseLow[] = {0, 0};
-            hrIncreaseNormal[] = {0, 0};
-            hrIncreaseHigh[] = {0, 0};
+            hrIncreaseLow[] = {0, 5};
+            hrIncreaseNormal[] = {5, 15};
+            hrIncreaseHigh[] = {5, 10};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
             maxDose = 12;
@@ -63,14 +71,14 @@ class ADDON {
         };
         class Fentanyl {
             painReduce = 1;
-            hrIncreaseLow[] = {-25, -20};
-            hrIncreaseNormal[] = {-30, -25};
-            hrIncreaseHigh[] = {-35, -25};
-            timeInSystem = 1800;
-            timeTillMaxEffect = 60;
+            hrIncreaseLow[] = {-10, -5};
+            hrIncreaseNormal[] = {-15, -10};
+            hrIncreaseHigh[] = {-20, -10};
+            timeInSystem = 900;
+            timeTillMaxEffect = 20;
             maxDose = 2;
             incompatibleMedication[] = {};
-            viscosityChange = -35;
+            viscosityChange = -10;
         };
         class Ketamine {
             painReduce = 0.8;
@@ -107,9 +115,9 @@ class ADDON {
         };
         class Atropine {
             painReduce = 0;
-            hrIncreaseLow[] = {0, 0, 0};
-            hrIncreaseNormal[] = {0, 0, 0};
-            hrIncreaseHigh[] = {0, 0, 0};
+            hrIncreaseLow[] = {20, 40};
+            hrIncreaseNormal[] = {10, 25};
+            hrIncreaseHigh[] = {5, 15};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
             maxDose = 4;
@@ -178,6 +186,28 @@ class ADDON {
             timeInSystem = 60;
             timeTillMaxEffect = 5;
             maxDose = 3;
+            incompatibleMedication[] = {};
+            viscosityChange = -15;
+        };
+        class Pervitin {
+            painReduce = 0.5;
+            hrIncreaseLow[] = {15, 25};
+            hrIncreaseNormal[] = {15, 30};
+            hrIncreaseHigh[] = {15, 25};
+            timeInSystem = 600;
+            timeTillMaxEffect = 5;
+            maxDose = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = 5;
+        };
+        class Caffeine {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 5};
+            hrIncreaseNormal[] = {5, 10};
+            hrIncreaseHigh[] = {5, 15};
+            timeInSystem = 1800;
+            timeTillMaxEffect = 5;
+            maxDose = 6;
             incompatibleMedication[] = {};
             viscosityChange = 0;
         };

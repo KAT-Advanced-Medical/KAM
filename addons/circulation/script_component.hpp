@@ -34,3 +34,6 @@
     } else { \
         getNumber (cfg); \
     }
+
+#define VAR_INTERNAL_BLEEDING QGVAR(internalBleeding)
+#define GET_INTERNAL_BLEEDING(unit) (unit getVariable [VAR_INTERNAL_BLEEDING, 0])

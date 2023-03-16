@@ -21,5 +21,5 @@ params ["", "_target"];
 if (isNull _target) exitWith {false};
 
 // check if disabled for faction
-if ([ace_dogtags_disabledFactions getVariable faction _target] param [0, false]) exitWith {false};
-true;
+if ([ACEGVAR(dogtags,disabledFactions) getVariable faction _target] param [0, false]) exitWith {false};
+true

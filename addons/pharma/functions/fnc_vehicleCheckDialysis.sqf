@@ -22,7 +22,7 @@ private _checkArray = _patient nearEntities 10;
 private _return = false;
 
 {
-    if (_x getVariable ["ace_medical_isMedicalVehicle", false]) exitWith {
+    if (_x getVariable [QACEGVAR(medical,isMedicalVehicle), false]) exitWith {
         _return = true;
     };
 } forEach _checkArray;

@@ -21,11 +21,11 @@
 params ["_target"];
 
 // Check if the data was already created
-private _dogTagData = _target getVariable "ace_dogtags_dogtagData";
+private _dogTagData = _target getVariable QACEGVAR(dogtags,dogtagData);
 if (!isNil "_dogTagData") exitWith {_dogTagData};
 
 // Create dog tag data once for the unit: nickname, code (eg. 135-13-900) and blood type
-private _targetName = [_target, false, true] call ace_common_fnc_getName;
+private _targetName = [_target, false, true] call ACEFUNC(common,getName);
 private _targetBlood = _target call FUNC(bloodType);
 
 switch (_targetBlood) do {
@@ -45,5 +45,5 @@ private _dogTagData = [
     _target call FUNC(groupID) //EDIT changed called function, old: ace_dogtags_fnc_ssns
 ];
 // Store it
-_target setVariable ["ace_dogtags_dogtagData", _dogTagData, true];
+_target setVariable [QACEGVAR(dogtags,dogtagData), _dogTagData, true];
 _dogTagData

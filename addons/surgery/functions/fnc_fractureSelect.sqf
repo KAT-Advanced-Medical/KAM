@@ -19,8 +19,4 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-if (local _patient) then {
-    ["treatmentFractureSelect", [_medic, _patient, _bodyPart]] call CBA_fnc_localEvent;
-} else {
-    ["treatmentFractureSelect", [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
-};
+[QGVAR(fractureSelect), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;

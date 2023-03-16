@@ -17,4 +17,4 @@
 
 params ["_patient"];
 
-_patient setVariable [QGVAR(sedated), false, true];
+_patient setVariable [QEGVAR(surgery,sedated), false, true];

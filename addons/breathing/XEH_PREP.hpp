@@ -1,7 +1,6 @@
 PREP(fullHealLocal);
 PREP(handleBreathing);
 PREP(handlePulmoHit);
-PREP(hasStableVitals);
 PREP(init);
 PREP(treatmentAdvanced_chestSeal);
 PREP(treatmentAdvanced_chestSealLocal);
@@ -15,3 +14,4 @@ PREP(treatmentAdvanced_removePulseoximeter);
 PREP(treatmentAdvanced_tensionpneumothorax);
 PREP(treatmentAdvanced_tensionpneumothoraxLocal);
 PREP(listenLungs);
+PREP(lowSpO2pp);
