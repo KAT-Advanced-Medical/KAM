@@ -31,7 +31,7 @@ private _return = false;
 _final2 = _bodyPartDamage select _compare;
 
 if (_final2 < 7) then {
-    _return = true;
+    _return = "true";
 };
 
 _return

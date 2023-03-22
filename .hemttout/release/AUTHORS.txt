@@ -1,0 +1,38 @@
+# KAT Advanced Medical CONTRIBUTOR LIST
+# 
+# If you contributed, but are not listed here, contact us.
+# 
+# Feel free to add yourself to this when creating a PR.
+
+
+# CORE TEAM - CURRENT MAINTAINERS
+Tomcat (https://github.com/Tomcat-SG)
+Kygan (https://github.com/Conrimaceogain)
+YetheSamartaka (https://github.com/YetheSamartaka)
+Battlekeeper (https://github.com/Battlekeeper)
+MJSTIC (https://github.com/mazinskihenry)
+Digii / Julian (https://github.com/AtrixZockt)
+
+
+# ORIGINAL AUTHOR
+Katalam (https://github.com/Katalam)
+
+# CONTRIBUTORS
+Schwaggot
+corp-0
+dfr1238
+Kofeina101
+3DSFreaker
+Grampalo
+regiregi22
+goguryeo1
+MiszczuZPolski
+Skrax and [TFH] Team
+Fanrod & his associate group called K.H.4
+ReanaPatrol_IT
+[TEN] skythunder_
+[MOS] PRODIGY
+DMKR
+[MCOE] Kile
+Nilia
+Eughenos

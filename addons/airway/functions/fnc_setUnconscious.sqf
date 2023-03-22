@@ -47,7 +47,7 @@ if (_knockOut) then {
     if (_minWaitingTime > 0) then {
         if (_forcedWakup) then {
             // If unit still has stable vitals at min waiting time, then force wake up
-            KAT_forceWakeup = true;
+            KAT_forceWakeup = "true";
             [{
                 params [["_unit", objNull]];
                 if ((alive _unit) && {_unit call ACEFUNC(medical_status,hasStableVitals)}) then {

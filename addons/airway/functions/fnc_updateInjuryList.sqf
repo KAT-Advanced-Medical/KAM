@@ -67,8 +67,8 @@ switch (GET_FRACTURES(_target) select _selectionN) do {
         _entries pushBack [localize "STR_ACE_medical_gui_Status_Fractured", [1, 0, 0, 1]];
     };
     case -1: {
-        if ((ACEGVAR(medical,fractures)) in [2, 3]) then { 
-            _entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [0.2, 0.2, 1, 1]];    
+        if ((ACEGVAR(medical,fractures)) in [2, 3]) then {
+            _entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [0.2, 0.2, 1, 1]];
         };
     };
 };
@@ -165,11 +165,11 @@ if (_target getVariable [QGVAR(recovery), false]) then {
 // Display cyanosis in overview tab, only when head/arms are selected
 if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
     private _spO2 = 0;
-    
+
     if (alive _target) then {
         _spO2 = GET_SPO2(_target);
     };
-    
+
     if (_spO2 <= EGVAR(breathing,slightValue) || HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
         private _cyanosisArr = switch (true) do {
             case (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN));
@@ -184,13 +184,13 @@ if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
             };
         };
         _entries pushBack [(_cyanosisArr select 0), (_cyanosisArr select 1)];
-    };   
+    };
 };
 
 private _tensionhemothorax = false;
 if (!(EGVAR(breathing,showPneumothorax_dupe))) then {
     if ((_target getVariable [QEGVAR(breathing,hemopneumothorax), false]) || (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false])) then {
-        _tensionhemothorax = true;
+        _tensionhemothorax = "true";
     };
 };
 

@@ -31,6 +31,6 @@ if ([_patient, _className] call FUNC(compatible)) exitWith {};
 
 [_className, _patient] call FUNC(treatmentAdvanced_IV);
 
-_return = true;
+_return = "true";
 
 _return

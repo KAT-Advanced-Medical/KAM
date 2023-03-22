@@ -1,0 +1,14 @@
+name = "KAT - Advanced Medical";
+dir = "@kat_aceAdvMedical";
+picture = "KAMLogoHighRes.paa";
+actionName = "Github";
+action = "https://github.com/Tomcat-SG/KAM";
+logo = "KAMLogoLowRes.paa";
+logoOver = "KAMLogoLowRes.paa";
+tooltip = "KAT - Advanced Medical";
+tooltipOwned = "KAT - Advanced Medical";
+overview = "KAT Advanced Medical introduces a whole new world to the ACE medical system. We make medical personnel matter while not hindering the medical experience for regular soldiers. KAM is almost entirely customizable through vast addon options. YOU are in charge of your gameplay experience.";
+author = "KAM Team";
+overviewPicture = "KAMLogoLowRes.paa";
+overviewText = "KAT - Advanced Medical";
+overviewFootnote = "";

@@ -30,7 +30,7 @@ if (_IVactual > 1) then {
         if (_randomNumber < GVAR(blockChance)) then {
             _IVarray set [_partIndex, 3];
             _patient setVariable [QGVAR(IV), _IVarray, true];
-            _block = true;
+            _block = "true";
         };
     };
 

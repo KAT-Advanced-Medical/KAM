@@ -121,7 +121,7 @@ _unit spawn {
         _x params ["_medication"];
 
         if (_medication in ["Epinephrine", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
-            _action = true;
+            _action = "true";
         };
     } forEach (_medicationArray);
 
@@ -225,7 +225,7 @@ if (EGVAR(pharma,coagulation)) then {
 
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
-    
+
     ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);

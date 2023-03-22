@@ -31,7 +31,7 @@ private _check = false;
     _x params ["_bagVolumeRemaining", "_type"];
 
     if (_type isEqualTo "Saline" && _bagVolumeRemaining >= 30) exitWith {
-        _check = true;
+        _check = "true";
     };
 } forEach _fluidCheck;
 
