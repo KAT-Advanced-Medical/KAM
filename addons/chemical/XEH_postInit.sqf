@@ -16,7 +16,7 @@ KAT_ProjectileChache = ("([_x, 'KAT_porjectile', 0] call BIS_fnc_returnConfigEnt
 ["ace_firedPlayerNonLocal", LINKFUNC(throwGrenade)] call CBA_fnc_addEventHandler;
 ["ace_firedNonPlayer", LINKFUNC(throwGrenade)] call CBA_fnc_addEventHandler;
 
-ppBlur_priority = 399;
+ppBlur_priority = 2649;
 [{
     ppBlur_priority = ppBlur_priority + 1;
     ppBlur = ppEffectCreate ["DynamicBlur", ppBlur_priority];
