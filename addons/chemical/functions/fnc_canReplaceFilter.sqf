@@ -16,7 +16,7 @@
 
 params ["_target"];
 
-if (goggles _target in GVAR(availGasmaskList) && 'kat_gasmaskFilter' in items _target) then {
+if (!isNil QGVAR(availGasmaskList) && goggles _target in GVAR(availGasmaskList) && 'kat_gasmaskFilter' in items _target) then {
     true
 } else {
     false

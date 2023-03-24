@@ -17,5 +17,5 @@
 */
 
 private _pos = [_this select 0, _this select 1, _this select 2];
-[_pos, 240, 15, 0] spawn FUNC(createZone);
+[QGVAR(createZone), [_pos, 240, 15, 0]] call CBA_fnc_serverEvent;
 nil

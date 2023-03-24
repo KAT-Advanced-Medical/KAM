@@ -12,7 +12,7 @@ class CfgSounds {
     };
 
     class GVAR(mask_breath_1) {
-        name = QGVAV(mask_breath_1);
+        name = QGVAR(mask_breath_1);
         sound[] =
         {
             QPATHTOF(audio\breath1.ogg),

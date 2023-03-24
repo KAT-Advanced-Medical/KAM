@@ -16,4 +16,10 @@
 
 params ["_target"];
 
-goggles _target in GVAR(availGasmaskList)
+if(!isNil QGVAR(availGasmaskList) && goggles _target in GVAR(availGasmaskList)) then 
+{
+	true
+} else 
+{
+	false
+};
