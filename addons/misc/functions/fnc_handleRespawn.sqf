@@ -121,7 +121,7 @@ _unit spawn {
         _x params ["_medication"];
 
         if (_medication in ["Epinephrine", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
-            _action = "true";
+            _action = true;
         };
     } forEach (_medicationArray);
 

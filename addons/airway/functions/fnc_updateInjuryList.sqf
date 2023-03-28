@@ -190,7 +190,7 @@ if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
 private _tensionhemothorax = false;
 if (!(EGVAR(breathing,showPneumothorax_dupe))) then {
     if ((_target getVariable [QEGVAR(breathing,hemopneumothorax), false]) || (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false])) then {
-        _tensionhemothorax = "true";
+        _tensionhemothorax = true;
     };
 };
 

@@ -22,7 +22,7 @@
 params ["_unit", "_logic", "_gastype", "_radius_max"];
 
 if (goggles _unit in GVAR(availGasmasklist)) then {
-    private _isinGas = "true";
+    private _isinGas = true;
     [
         {
             params["_args", "_pfhHandler"];

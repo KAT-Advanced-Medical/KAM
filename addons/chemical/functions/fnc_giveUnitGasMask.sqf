@@ -20,7 +20,7 @@ params ["_medic", "_patient"];
 private _itemArr = _medic call ACEFUNC(common,uniqueItems);
 private _playerhasGasmask = false;
 private _playerGasMask = "";
-{ if(_x in GVAR(availGasmaskList)) then {_playerhasGasmask = "true"; _playerGasMask = _x} } forEach _itemArr;
+{ if(_x in GVAR(availGasmaskList)) then {_playerhasGasmask = true; _playerGasMask = _x} } forEach _itemArr;
 
 private _fnc_replaceItem = {
     params["_medic","_patient","_playerGasMask"];

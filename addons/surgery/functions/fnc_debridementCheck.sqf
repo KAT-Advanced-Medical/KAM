@@ -27,7 +27,7 @@ private _check = false;
     _x params ["", "_bodyPartN", "_amountOf", "_bleeding"];
 
     if (_bodyPartN == _compare && (_amountOf > 0)) exitWith {
-        _check = "true";
+        _check true;
     };
 
 } forEach GET_STITCHED_WOUNDS(_patient);
@@ -38,7 +38,7 @@ if (_check) exitWith {true};
     _x params ["", "_bodyPartN", "_amountOf", "_bleeding"];
 
     if (_bodyPartN == _compare && (_amountOf > 0)) exitWith {
-        _check = "true";
+        _check true;
     };
 
 } forEach GET_BANDAGED_WOUNDS(_patient);
@@ -49,7 +49,7 @@ if (_check) exitWith {true};
     _x params ["", "_bodyPartN", "_amountOf", "_bleeding"];
 
     if (_bodyPartN == _compare && (_amountOf > 0)) exitWith {
-        _check = "true";
+        _check true;
     };
 
 } forEach GET_OPEN_WOUNDS(_patient);

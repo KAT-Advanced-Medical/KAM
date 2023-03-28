@@ -26,7 +26,7 @@ private _IVactual = _IVarray select _partIndex;
 private _return = false;
 
 if (_IVactual > 0) then {
-    _return = "true";
+    _return true;
 };
 
 _return

@@ -18,7 +18,7 @@
 
 params ["_medic", "_patient"];
 
-private _return = "true";
+private _return = true;
 
 //check if patient has inserted larynx or guedeltube
 if ((_patient getVariable [QGVAR(airway_item), ""] in ["Larynxtubus","Guedeltubus"]) || !(isNull objectParent _patient)) then {
