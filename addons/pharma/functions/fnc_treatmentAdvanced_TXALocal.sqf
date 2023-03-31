@@ -29,7 +29,7 @@ if (_IVactual > 1) then {
         if (_randomNumber < GVAR(blockChance)) then {
             _IVarray set [_partIndex, 3];
             _patient setVariable [QGVAR(IV), _IVarray, true];
-            _block true;
+            _block = true;
         };
     };
 
@@ -45,7 +45,7 @@ if !(GVAR(coagulation)) then {
 
             private _openWounds = GET_OPEN_WOUNDS(_patient);
             private _alive = alive _patient;
-            private _exit true;
+            private _exit = true;
 
             if !(GVAR(kidneyAction)) then {
                 _patient setVariable [QGVAR(pH), 1500, true];

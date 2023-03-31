@@ -72,7 +72,7 @@ _patient setVariable [QGVAR(debridement), _debridement, true];
     _x params ["_id", "_bodyPart", "_amount"];
 
     if (_bodyPart == _part) exitWith {
-        _remainder true;
+        _remainder = true;
     };
 
 } forEach _openWounds;
