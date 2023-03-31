@@ -18,7 +18,7 @@
 
 /// ChromAberration effect
 
-if (GVAR(chromatic_aberration_checkbox_pervitin)) then {
+if (GVAR(chromatic_aberration_checkbox_fentanyl)) then {
     [{
         params ["_target"];
 
