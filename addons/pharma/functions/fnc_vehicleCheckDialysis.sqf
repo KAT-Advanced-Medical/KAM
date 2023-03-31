@@ -23,7 +23,7 @@ private _return = false;
 
 {
     if (_x getVariable [QACEGVAR(medical,isMedicalVehicle), false]) exitWith {
-        _return true;
+        _return = true;
     };
 } forEach _checkArray;
 

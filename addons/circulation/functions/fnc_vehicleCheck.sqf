@@ -28,7 +28,7 @@ private _inventory = [];
     if (_x isKindOf "LandVehicle" || _x isKindOf "Helicopter") then {
         {
             if (_x isEqualTo "kat_X_AED") then {
-                _return true;
+                _return = true;
             };
         } forEach _inventory;
 
