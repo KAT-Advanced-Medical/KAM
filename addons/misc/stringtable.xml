@@ -426,5 +426,9 @@
             <Turkish>Sedye (Paketli)</Turkish>
             <Portuguese>Maca (Embalada)</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Misc_NeckTourniquetDescription">
+            <English>Neck Tourniquet</English>
+            <Polish>Staza na szyi</Polish>
+        </Key>
     </Package>
 </Project>

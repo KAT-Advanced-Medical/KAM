@@ -18,6 +18,17 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+
+[
+    QGVAR(neckTourniquet),
+    "CHECKBOX",
+    [LLSTRING(neckTourniquetDescription)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+
 //Incompatibility Warning with other addons
 [
     QGVAR(incompatibilityWarning),
@@ -37,7 +48,6 @@ PREP_RECOMPILE_END;
     [true],
     true
 ] call CBA_Settings_fnc_init;
-
 
 if (GVAR(arsenalMedCategory)) then {
     [
