@@ -24,7 +24,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     [LLSTRING(neckTourniquetDescription)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [true],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
