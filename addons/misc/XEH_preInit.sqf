@@ -18,6 +18,14 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(treatmentTimeDetachTourniquet),
+    "SLIDER",
+    [LLSTRING(SETTING_treatmentTimeDetachTourniquet)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [1, 60, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
 
 [
     QGVAR(neckTourniquet),
