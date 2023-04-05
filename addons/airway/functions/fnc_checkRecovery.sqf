@@ -25,4 +25,8 @@ if ((_patient getVariable [QGVAR(airway_item), ""] in ["Larynxtubus","Guedeltubu
     _return = false;
 };
 
+if(_patient getVariable [QEGVAR(BVM), false]) then {
+    _return = false;
+};
+
 _return

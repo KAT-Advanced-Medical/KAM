@@ -1,3 +1,5 @@
+PREP(attachBVM);
+PREP(detachBVM);
 PREP(fullHealLocal);
 PREP(handleBreathing);
 PREP(handlePulmoHit);

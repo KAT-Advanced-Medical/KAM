@@ -63,4 +63,25 @@ class CfgWeapons {
             mass = 5;
         };
     };
+
+    class kat_BVM: ACE_ItemCore {
+        scope = 2;
+        author = "Blue";
+        displayName= "BVM";
+        descriptionShort = "Bag-Valve-Mask, used to assist with breathing of unconscious patients";//CSTRING(BVM_Desc_Short);
+        picture = QPATHTOF(ui\bvm.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 7;
+        };
+    };
+    class kat_BVMPocket: ACE_ItemCore {
+        scope = 2;
+        author = "Blue";
+        displayName= "Pocket BVM";
+        descriptionShort = "Compact version of the Bag-Valve-Mask."; //CSTRING(BVMPocket_Desc_Short);
+        picture = QPATHTOF(ui\bvm_pocket.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 3;
+        };
+    };
 };

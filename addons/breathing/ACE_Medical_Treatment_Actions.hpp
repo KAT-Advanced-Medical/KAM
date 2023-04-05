@@ -172,4 +172,60 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(GVAR(enableCyanosis) && !(GVAR(cyanosisShowInMenu)));
         callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);
     };
+
+    class AttachBVM {
+        displayName = "Attach BVM";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Attaching BVM";//CSTRING(listening_progress);
+        category = "airway";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 0;
+        medicRequired = 0;
+        treatmentTime = 5;
+        consumeItem = 1;
+        items[] = {"kat_BVM"};
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && !(_patient getVariable [ARR_2(QQGVAR(BVM),false)]));
+        callbackSuccess = QFUNC(attachBVM);
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        litter[] = {};
+    };
+    class DetachBVM: AttachBVM {
+        displayName = "Detach BVM";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Detaching BVM";//CSTRING(listening_progress);
+        treatmentTime = 3;
+        medicRequired = 0;
+        consumeItem = 0;
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(BVM),false)] && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]));
+        callbackSuccess = QFUNC(detachBVM);
+        items[] = {};
+    };
+
+    class UseBVM {
+        displayName = "Squeeze BVM Bag";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Squeezing BVM Bag";//CSTRING(listening_progress);
+        category = "airway";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 0;
+        medicRequired = 0;
+        treatmentTime = 15;
+        consumeItem = 0;
+        condition = QUOTE(!(_patient call ace_common_fnc_isAwake) && (_patient getVariable [ARR_2(QQGVAR(BVM),false)]) && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]));
+        callbackStart = QUOTE([ARR_3(_patient, _medic, true)] call FUNC(handleBVMUsage)/*; [ARR_2(_medic, _patient)] call FUNC(useBVM)*/);
+        callbackSuccess = QUOTE([ARR_2(_patient, _medic)] call FUNC(handleBVMUsage));
+        callbackFailure = QUOTE([ARR_2(_patient, _medic)] call FUNC(handleBVMUsage));
+        callbackProgress = "";
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        litter[] = {};
+    };
 };

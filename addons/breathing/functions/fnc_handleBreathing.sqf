@@ -52,6 +52,7 @@ if (!local _unit) then {
     private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
     private _heartRate = _unit getVariable [QACEGVAR(medical,heartRate), 0];
     private _blockDeath = _unit getVariable [QACEGVAR(medical,deathblocked), false];
+    private _BVMInUse = _unit getVariable [QGVAR(BVMInUse), false];
 
     private _output = 0;
     private _finalOutput = 0;
@@ -93,12 +94,20 @@ if (!local _unit) then {
 
             if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) || _breathing)) then {
                 if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
-                    _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
+                    if( _BVMInUse) then {
+                        _output = -0.12 * GVAR(SpO2_PerfusionMultiplier);
+                    } else {
+                        _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
+                    };
                 } else {
-                    _output = 0.15 * _multiplierPositive;
+                    if (_BVMInUse) then {
+                        _output = 0.2 * _multiplierPositive;
+                    } else {
+                        _output = 0.12 * _multiplierPositive;
+                    };
                 };
             };
-
+            
             _finalOutput = _status + _output;
 
             if (_finalOutput > 100) then {
@@ -113,11 +122,20 @@ if (!local _unit) then {
         };
 
         if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
-            _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
+            if(_BVMInUse) then {
+                _output = -0.1 * GVAR(SpO2_PerfusionMultiplier);
+                } else {
+                _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
+            };
+            
         };
 
         if (_heartRate >= 25) then {
-            _output = 0.3 * _multiplierPositive;
+            if(_BVMInUse) then {
+                _output = 0.4 * _multiplierPositive;
+                } else {
+                _output = 0.2 * _multiplierPositive;
+            };
         };
 
         _finalOutput = _status + _output;
@@ -175,6 +193,12 @@ if (!local _unit) then {
                     [_unit], 30] call CBA_fnc_waitAndExecute;
                 };
             };
+        };
+
+        // Drop BVM if awoken with one on
+        if(_unit getVariable [QGVAR(BVM), false]) then {
+            private _weaponHolder = createVehicle ["Weapon_Empty", getPosATL player, [], 0, "CAN_COLLIDE"];
+            _weaponHolder addItemCargo ["kat_BVM", 1];
         };
     };
 }, 3, [_unit]] call CBA_fnc_addPerFrameHandler;

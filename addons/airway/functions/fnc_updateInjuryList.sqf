@@ -154,6 +154,14 @@ if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then 
     };
 };
 
+if (_target getVariable [QEGVAR(breathing,BVM), false] && _selectionN isEqualTo 0) then {
+    if(QGVAR(airway_item) == "Larynxtubus") then {
+        _entries pushback ["BVM Attached"/*LLSTRING(BVMAttached)*/, [0.1, 1, 1, 1]];
+    } else {
+        _entries pushback ["Wearing BVM"/*LLSTRING(BVMAttached)*/, [0.1, 1, 1, 1]];
+    };
+};
+
 if (_target getVariable [QGVAR(overstretch), false] && _selectionN isEqualTo 0) then {
     _woundEntries pushback [LLSTRING(overstretched), [0.1, 1, 1, 1]];
 };
