@@ -144,18 +144,19 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
-    class listentolungs: CheckPulse {
+    class ListenToLungs: CheckPulse {
         displayName = CSTRING(auscultateLung_display);
         displayNameProgress = CSTRING(listening_progress);
-        treatmentTime = 14;
+        treatmentTime = 15;
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
         category = "airway";
         medicRequired = 0;
         consumeItem = 0;
-        callbackStart = QUOTE([ARR_2(_medic, _patient)] spawn FUNC(listenLungs));
-        callbackSuccess = "";
+        callbackStart = QUOTE([ARR_2(_medic,true)] call FUNC(handleListenLungs); [ARR_2(_medic, _patient)] spawn FUNC(listenLungs));
+        callbackSuccess = QUOTE([ARR_2(_medic,false)] call FUNC(handleListenLungs));
         callbackProgress = "";
+        callbackFailure = QUOTE([ARR_2(_medic,false)] call FUNC(handleListenLungs));
         condition = "true";
         items[] = {"kat_stethoscope"};
         animationPatient = "";
