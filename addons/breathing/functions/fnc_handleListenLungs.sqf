@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Blue
- * Handles listening to lungs.
+ * Sets if unit is listening to lungs with stethoscope.
  *
  * Arguments:
  * 0: Medic <OBJECT>

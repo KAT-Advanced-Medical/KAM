@@ -42,37 +42,42 @@ variantDelay = 0;
 
     _random = round random 1;
     
+    private _type = 3;
+
+    if(_hemo && _random >= 0.5) then {_type = 1};
+    if(_tension && _random >= 0.5) then {_type = 2};
+
     if(!(soundPlaying)) then {
-        if(_hemo) then {//hemopneumothorax
-            if (round random 1 >= 0.5) then {
-                playSoundUI [QPATHTOF(audio\hemo_inhale1.ogg), _volume, 1];
-                variantDelay = 1.65;
-            } else {
-                playSoundUI [QPATHTOF(audio\hemo_inhale2.ogg), _volume, 1];
-                variantDelay = 1.7;
-            };
-            soundPlaying = true;
-            [{
-                params ["_medic","_patient","_volume","_breathDelay"];
-
-                if (_medic getVariable [QGVAR(usingStethoscope), false] && (alive _patient)) then {
-                    if (round random 1 >= 0.5) then {
-                        playSoundUI [QPATHTOF(audio\hemo_exhale1.ogg), _volume, 1];
-                        variantDelay = 0.85;
-                    } else {
-                        playSoundUI [QPATHTOF(audio\hemo_exhale2.ogg), _volume, 1];
-                        variantDelay = 0.8;
-                    }; 
-                    [{
-                        soundPlaying = false;
-                    }, [], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;
+        switch (_type) do {
+            case 1: { // hemopneumothorax
+                if (round random 1 >= 0.5) then {
+                    playSoundUI [QPATHTOF(audio\hemo_inhale1.ogg), _volume, 1];
+                    variantDelay = 1.65;
                 } else {
-                    soundPlaying = false;
+                    playSoundUI [QPATHTOF(audio\hemo_inhale2.ogg), _volume, 1];
+                    variantDelay = 1.7;
                 };
-            }, [_medic,_patient,_volume,_breathDelay], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;
+                soundPlaying = true;
+                [{
+                    params ["_medic","_patient","_volume","_breathDelay"];
 
-        } else { // tension/pneumothorax
-            if(_tension) then {
+                    if (_medic getVariable [QGVAR(usingStethoscope), false] && (alive _patient)) then {
+                        if (round random 1 >= 0.5) then {
+                            playSoundUI [QPATHTOF(audio\hemo_exhale1.ogg), _volume, 1];
+                            variantDelay = 0.85;
+                        } else {
+                            playSoundUI [QPATHTOF(audio\hemo_exhale2.ogg), _volume, 1];
+                            variantDelay = 0.8;
+                        }; 
+                        [{
+                            soundPlaying = false;
+                        }, [], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;
+                    } else {
+                        soundPlaying = false;
+                    };
+                }, [_medic,_patient,_volume,_breathDelay], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;
+            };
+            case 2: { // tension/pneumothorax
                 playSoundUI [QPATHTOF(audio\tension_inhale1.ogg), _volume, 1];
                 variantDelay = 0.67;
                 soundPlaying = true;
@@ -89,8 +94,9 @@ variantDelay = 0;
                         soundPlaying = false;
                     };
                 }, [_medic,_patient,_volume,_breathDelay], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;
-
-            } else { //clear
+            };
+            case 3;
+            default { // clear
                 if (round random 1 >= 0.5) then {
                     playSoundUI [QPATHTOF(audio\clear_inhale1.ogg), _volume, 1];
                     variantDelay = 1.46;

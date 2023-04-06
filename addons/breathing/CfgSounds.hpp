@@ -23,12 +23,6 @@ class CfgSounds
         titles[] = {};
     };
 
-    /*class clear_inhale {
-        name = "clear_inhale";
-        sound[] = { QPATHTOF(audio\clear_inhale1.ogg), 2, 1, 3 };
-        titles[] = {};
-    };*/
-
     class GVAR(pneumothoraxcough) {
         name = QGVAR(pneumothoraxcough);
 
