@@ -189,6 +189,7 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
         animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
@@ -248,5 +249,38 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
+    };
+
+    class AttachOxygenTank {
+        displayName = "Connect Oxygen to Self-Inflating Bag";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Connecting Oxygen";//CSTRING(listening_progress);
+        category = "airway";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 0;
+        medicRequired = 0;
+        treatmentTime = 3;
+        consumeItem = 1;
+        items[] = {};
+        //items[] = {"kat_oxygenTank"}; 
+        condition = QUOTE((_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)) && !([_patient] call ace_common_fnc_isAwake) && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]) && _patient getVariable [ARR_2(QQGVAR(BVM),false)] && !(_patient getVariable [ARR_2(QQGVAR(oxygenTankConnected),false)]));
+        callbackSuccess = QUOTE([ARR_2(_patient,true)] call FUNC(connectOxygenTank));
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
+        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        litter[] = {};
+    };
+
+    class DetachOxygenTank: AttachOxygenTank {
+        displayName = "Disconnect Oxygen from Self-Inflating Bag";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Disconnecting Oxygen";//CSTRING(listening_progress);
+        treatmentTime = 3;
+        consumeItem = 0;
+        condition = QUOTE((_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)) && !([_patient] call ace_common_fnc_isAwake) && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]) && _patient getVariable [ARR_2(QQGVAR(oxygenTankConnected),false)]);
+        callbackSuccess = QUOTE([ARR_2(_patient,false)] call FUNC(connectOxygenTank));
     };
 };

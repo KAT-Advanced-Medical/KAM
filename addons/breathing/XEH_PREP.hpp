@@ -1,4 +1,5 @@
 PREP(attachBVM);
+PREP(connectOxygen);
 PREP(detachBVM);
 PREP(fullHealLocal);
 PREP(handleBreathing);

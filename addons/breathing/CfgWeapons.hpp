@@ -81,7 +81,17 @@ class CfgWeapons {
         descriptionShort = "Compact version of the Bag-Valve-Mask."; //CSTRING(PocketBVM_Desc_Short);
         picture = QPATHTOF(ui\pocketBVM.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 5;
+            mass = 4;
+        };
+    };
+    class kat_oxygenTank: ACE_ItemCore {
+        scope = 2;
+        author = "Blue";
+        displayName= "Portable Oxygen Tank (100L)";
+        //descriptionShort = "Compact version of the Bag-Valve-Mask."; //CSTRING(PocketBVM_Desc_Short);
+        picture = QPATHTOF(ui\oxygenTank.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 20;
         };
     };
 };
