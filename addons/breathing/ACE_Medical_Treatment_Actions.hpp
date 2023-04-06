@@ -174,8 +174,8 @@ class ACE_Medical_Treatment_Actions {
     };
 
     class AttachBVM {
-        displayName = "Attach BVM";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Attaching BVM";//CSTRING(listening_progress);
+        displayName = "Put on BVM";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Putting on BVM";//CSTRING(listening_progress);
         category = "airway";
         treatmentLocations = 0;
         allowedSelections[] = {"Head"};
@@ -184,8 +184,8 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 5;
         consumeItem = 1;
         items[] = {"kat_BVM"};
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && !(_patient getVariable [ARR_2(QQGVAR(BVM),false)]));
-        callbackSuccess = QFUNC(attachBVM);
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && !(_patient call FUNC(hasBVM)));
+        callbackSuccess = QUOTE([ARR_2(_patient,false)] call FUNC(attachBVM));
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
@@ -195,19 +195,40 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
     };
     class DetachBVM: AttachBVM {
-        displayName = "Detach BVM";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Detaching BVM";//CSTRING(listening_progress);
+        displayName = "Take off BVM";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Taking off BVM";//CSTRING(listening_progress);
         treatmentTime = 3;
         medicRequired = 0;
         consumeItem = 0;
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(BVM),false)] && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]));
-        callbackSuccess = QFUNC(detachBVM);
         items[] = {};
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(BVM),false)] && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,false)] call FUNC(detachBVM));
+    };
+
+    class AttachPocketBVM: AttachBVM {
+        displayName = "Put on Pocket BVM";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Putting on Pocket BVM";//CSTRING(listening_progress);
+        treatmentTime = 5;
+        medicRequired = 0;
+        consumeItem = 1;
+        items[] = {"kat_pocketBVM"};
+        callbackSuccess = QUOTE([ARR_2(_patient,true)] call FUNC(attachBVM));
+    };
+
+    class DetachPocketBVM: AttachPocketBVM {
+        displayName = "Take off Pocket BVM";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Taking off Pocket";//CSTRING(listening_progress);
+        treatmentTime = 3;
+        medicRequired = 0;
+        consumeItem = 0;
+        items[] = {};
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(pocketBVM),false)] && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]));
+        callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call FUNC(detachBVM));
     };
 
     class UseBVM {
-        displayName = "Squeeze BVM Bag";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Squeezing BVM Bag";//CSTRING(listening_progress);
+        displayName = "Squeeze Self-Inflating Bag";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Squeezing Self-Inflating Bag";//CSTRING(listening_progress);
         category = "airway";
         treatmentLocations = 0;
         allowedSelections[] = {"Head"};
@@ -215,8 +236,8 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         treatmentTime = 15;
         consumeItem = 0;
-        condition = QUOTE(!(_patient call ace_common_fnc_isAwake) && (_patient getVariable [ARR_2(QQGVAR(BVM),false)]) && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]));
-        callbackStart = QUOTE([ARR_3(_patient, _medic, true)] call FUNC(handleBVMUsage)/*; [ARR_2(_medic, _patient)] call FUNC(useBVM)*/);
+        condition = QUOTE(!(_patient call ace_common_fnc_isAwake) && (_patient call FUNC(hasBVM)) && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]));
+        callbackStart = QUOTE([ARR_3(_patient, _medic, true)] call FUNC(handleBVMUsage));
         callbackSuccess = QUOTE([ARR_2(_patient, _medic)] call FUNC(handleBVMUsage));
         callbackFailure = QUOTE([ARR_2(_patient, _medic)] call FUNC(handleBVMUsage));
         callbackProgress = "";

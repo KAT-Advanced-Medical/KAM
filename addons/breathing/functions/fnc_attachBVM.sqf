@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_patient","_pocket"];
 
-//_medic RemoveItem "kat_BVM";
+if(_pocket) exitWith {_patient setVariable [QGVAR(pocketBVM), true, true];};
 _patient setVariable [QGVAR(BVM), true, true];

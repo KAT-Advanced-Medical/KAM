@@ -94,7 +94,7 @@ if (!local _unit) then {
 
             if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) || _breathing)) then {
                 if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
-                    if( _BVMInUse) then {
+                    if(_BVMInUse) then {
                         _output = -0.12 * GVAR(SpO2_PerfusionMultiplier);
                     } else {
                         _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
@@ -132,7 +132,7 @@ if (!local _unit) then {
 
         if (_heartRate >= 25) then {
             if(_BVMInUse) then {
-                _output = 0.4 * _multiplierPositive;
+                _output = 0.45 * _multiplierPositive;
                 } else {
                 _output = 0.2 * _multiplierPositive;
             };
@@ -195,10 +195,17 @@ if (!local _unit) then {
             };
         };
 
-        // Drop BVM if awoken with one on
-        if(_unit getVariable [QGVAR(BVM), false]) then {
-            private _weaponHolder = createVehicle ["Weapon_Empty", getPosATL player, [], 0, "CAN_COLLIDE"];
-            _weaponHolder addItemCargo ["kat_BVM", 1];
+        // Drop BVM if woken up with one on
+        if(_unit call FUNC(hasBVM)) then {
+            private _weaponHolder = createVehicle ["Weapon_Empty", getPosATL _unit, [], 0, "CAN_COLLIDE"];
+            if(_unit getVariable [QGVAR(pocketBVM), false]) then {
+                _unit setVariable [QGVAR(pocketBVM), false, true];
+                _weaponHolder addItemCargo ["kat_pocketBVM", 1];
+            } else {
+                _unit setVariable [QGVAR(BVM), false, true];
+                _weaponHolder addItemCargo ["kat_BVM", 1];
+            };
+            
         };
     };
 }, 3, [_unit]] call CBA_fnc_addPerFrameHandler;

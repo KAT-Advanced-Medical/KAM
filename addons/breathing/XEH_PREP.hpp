@@ -3,6 +3,7 @@ PREP(detachBVM);
 PREP(fullHealLocal);
 PREP(handleBreathing);
 PREP(handlePulmoHit);
+PREP(hasBVM);
 PREP(init);
 PREP(treatmentAdvanced_chestSeal);
 PREP(treatmentAdvanced_chestSealLocal);

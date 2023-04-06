@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Larynxtubus);
         treatmentTime = QGVAR(Larynxtubus_time);
         items[] = {"kat_larynx"};
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQEGVAR(BVM),false)]));
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient call EFUNC(breathing,hasBVM)));
         callbackSuccess = QFUNC(treatmentAdvanced_airway);
         callbackFailure = "";
         callbackProgress = "";

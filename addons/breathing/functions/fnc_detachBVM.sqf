@@ -16,7 +16,11 @@
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", "_pocket"];
 
+if(_pocket) exitWith {
+	[_medic, "kat_pocketBVM"] call ACEFUNC(common,addToInventory);
+	_patient setVariable [QGVAR(pocketBVM), false, true];
+};
 [_medic, "kat_BVM"] call ACEFUNC(common,addToInventory);
 _patient setVariable [QGVAR(BVM), false, true];
