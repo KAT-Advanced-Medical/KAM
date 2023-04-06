@@ -147,7 +147,7 @@ class ACE_Medical_Treatment_Actions {
     class ListenToLungs: CheckPulse {
         displayName = CSTRING(auscultateLung_display);
         displayNameProgress = CSTRING(listening_progress);
-        treatmentTime = 15;
+        treatmentTime = QGVAR(stethoscopeListeningTime);
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
         category = "airway";
