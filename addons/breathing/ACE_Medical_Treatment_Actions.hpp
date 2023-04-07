@@ -154,9 +154,9 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         consumeItem = 0;
         callbackStart = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), true, true)]; [ARR_2(_medic, _patient)] spawn FUNC(listenLungs));
-        callbackSuccess = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), false, true));
+        callbackSuccess = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), false, true)]);
         callbackProgress = "";
-        callbackFailure = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), false, true));
+        callbackFailure = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), false, true)]);
         condition = "true";
         items[] = {"kat_stethoscope"};
         animationPatient = "";
