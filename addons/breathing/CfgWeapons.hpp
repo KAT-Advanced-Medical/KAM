@@ -84,7 +84,7 @@ class CfgWeapons {
             mass = 3;
         };
     };
-    class kat_oxygenTank_300: ACE_ItemCore {
+    class kat_oxygenTank_300_Item: ACE_ItemCore {
         scope = 2;
         author = "Blue";
         displayName = "Portable Oxygen Tank (300L)";
@@ -94,7 +94,7 @@ class CfgWeapons {
             mass = 20;
         };
     };
-    class kat_oxygenTank_150: ACE_ItemCore {
+    class kat_oxygenTank_150_Item: ACE_ItemCore {
         scope = 2;
         author = "Blue";
         displayName = "Portable Oxygen Tank (150L)";

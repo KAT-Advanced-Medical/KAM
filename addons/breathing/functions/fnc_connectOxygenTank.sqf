@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Blue
- * Sets if oxygen is connected to patient BVM
+ * Sets if (vehicle) oxygen tank is connected to patient BVM
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [cursorTarget, true] call kat_breathing_fnc_connectOxygen;
+ * [cursorTarget, true] call kat_breathing_fnc_connectOxygenTank;
  *
  * Public: No
  */
