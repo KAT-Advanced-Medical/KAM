@@ -6,12 +6,13 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Is pocket BVM <BOOL>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_breathing_fnc_detachBVM;
+ * [player, cursorTarget, false] call kat_breathing_fnc_detachBVM;
  *
  * Public: No
  */

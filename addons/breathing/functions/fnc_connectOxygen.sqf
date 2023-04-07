@@ -1,11 +1,11 @@
 #include "script_component.hpp"
 /*
  * Author: Blue
- * Attaches BVM to patient
+ * Sets if oxygen is connected to patient BVM
  *
  * Arguments:
- * 0: Medic <OBJECT>
- * 1: Patient <OBJECT>
+ * 0: Patient <OBJECT>
+ * 1: Is connected <BOOL>
  *
  * Return Value:
  * None

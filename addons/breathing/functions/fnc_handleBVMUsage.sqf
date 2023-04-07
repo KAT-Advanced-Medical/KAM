@@ -1,11 +1,11 @@
 #include "script_component.hpp"
 /*
  * Author: Blue
- * Handles BVM usage
+ * Sets if BVM is in use.
  *
  * Arguments:
  * 0: Medic <OBJECT>
- * 1: Patient <OBJECT>
+ * 1: Is in use <OBJECT>
  *
  * Return Value:
  * None
