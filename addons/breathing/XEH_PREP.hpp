@@ -1,6 +1,5 @@
 PREP(fullHealLocal);
 PREP(handleBreathing);
-PREP(handleListenLungs);
 PREP(handlePulmoHit);
 PREP(init);
 PREP(treatmentAdvanced_chestSeal);
