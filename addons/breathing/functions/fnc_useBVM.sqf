@@ -25,21 +25,31 @@ params ["_medic", "_patient"];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (_patient getVariable [QGVAR(portableOxygenTankConnected), false] && _patient getVariable [QGVAR(oxygenTankProvider), nil] != nil) then {
-        private _oxygenProvider = _patient getVariable QGVAR(oxygenTankProvider);
+    if (_patient getVariable [QGVAR(portableOxygenTankConnected), false]) then {
+        if !(isNull (_patient getVariable QGVAR(oxygenTankProvider))) then {
+            private _oxygenProvider = _patient getVariable QGVAR(oxygenTankProvider);
 
-    	if((_patient distance _oxygenProvider) > 10) exitWith {
+            if ([_medic, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine)) then {
+                [_medic, "kat_oxygenTank_300"] call EFUNC(pharma,removeItemfromMag);
+            } else {
+                if([_medic, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine)) then {
+                    [_medic, "kat_oxygenTank_150"] call EFUNC(pharma,removeItemfromMag);
+                } else {
+                    _patient setVariable [QGVAR(portableOxygenTankConnected), false, false];
+                };
+            };
+        } else {
             _patient setVariable [QGVAR(portableOxygenTankConnected), false, false];
-    	};
-
-    	if([_medic, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine)) then {
-    		[_medic, "kat_oxygenTank_300"] call EFUNC(pharma,removeItemfromMag);
-    	} else {
-    		if([_medic, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine)) then {
-    			[_medic, "kat_oxygenTank_150"] call EFUNC(pharma,removeItemfromMag);
-    		} else {
-    			_patient setVariable [QGVAR(portableOxygenTankConnected), false, false];
-    		};
-    	};
+        };
     };
+
+    /*if(_patient getVariable [QGVAR(pocketBVM), false]) then {
+        playsound3D [QPATHTOF_SOUND(sounds\squeeze_pocketBVM.ogg), _patient, false, getPosASL _patient, 5, 1, 8];
+    } else {
+        if(_patient getVariable [QGVAR(BVM), false] && _patient getVariable [QGVAR(portableOxygenTankConnected), false]) then {
+            playsound3D [QPATHTOF_SOUND(sounds\squeeze_BVMOxygen.ogg), _patient, false, getPosASL _patient, 5, 1, 8];
+        } else {
+            playsound3D [QPATHTOF_SOUND(sounds\squeeze_BVM.ogg), _patient, false, getPosASL _patient, 5, 1, 8];
+        };
+    };*/
 }, 3, [_medic,_patient]] call CBA_fnc_addPerFrameHandler;

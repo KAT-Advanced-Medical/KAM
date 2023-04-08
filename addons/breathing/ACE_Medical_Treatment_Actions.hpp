@@ -292,7 +292,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         treatmentTime = 3;
         consumeItem = 0;
-        items[] = {"kat_oxygenTank_150","kat_oxygenTank_300"}; 
+        items[] = {}; 
         condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && _patient getVariable [ARR_2(QQGVAR(BVM),false)] && _medic call FUNC(hasOxygenTank) && !(_patient getVariable [ARR_2(QQGVAR(oxygenTankConnected),false)]));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call FUNC(connectPortableOxygenTank));
         animationPatient = "";

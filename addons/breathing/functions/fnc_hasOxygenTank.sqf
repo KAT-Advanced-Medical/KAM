@@ -1,10 +1,10 @@
 #include "script_component.hpp"
 /*
  * Author: Blue
- * Check if medic has any kind of oxygen tank
+ * Check if unit has any kind of oxygen tank
  *
  * Arguments:
- * 0: Medic <OBJECT>
+ * 0: Unit <OBJECT>
  * 
  * Return Value:
  * Has oxygen tank <BOOLEAN>
@@ -15,8 +15,8 @@
  * Public: No
  */
 
-params ["_medic"];
+params ["_unit"];
 
-if ([_medic, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine) || [_medic, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine)) exitWith {true};
+if ([_unit, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine) || [_unit, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine)) exitWith {true};
 
 false
