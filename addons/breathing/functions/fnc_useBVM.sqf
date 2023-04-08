@@ -25,16 +25,21 @@ params ["_medic", "_patient"];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-	if (_patient getVariable [QGVAR(portableOxygenTankConnected),false]) then {
-		if([_medic, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine)) then {
-			[_medic, "kat_oxygenTank_300"] call EFUNC(pharma,removeItemfromMag);
-		} else {
-			if([_medic, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine)) then {
-				[_medic, "kat_oxygenTank_150"] call EFUNC(pharma,removeItemfromMag); 
-			} else {
-				_patient setVariable [QGVAR(portableOxygenTankConnected),false,false];
-			};
-		};
-	};
+    if (_patient getVariable [QGVAR(portableOxygenTankConnected), false] && _patient getVariable [QGVAR(oxygenTankProvider), nil] != nil) then {
+        private _oxygenProvider = _patient getVariable QGVAR(oxygenTankProvider);
 
+    	if((_patient distance _oxygenProvider) > 10) exitWith {
+            _patient setVariable [QGVAR(portableOxygenTankConnected), false, false];
+    	};
+
+    	if([_medic, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine)) then {
+    		[_medic, "kat_oxygenTank_300"] call EFUNC(pharma,removeItemfromMag);
+    	} else {
+    		if([_medic, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine)) then {
+    			[_medic, "kat_oxygenTank_150"] call EFUNC(pharma,removeItemfromMag);
+    		} else {
+    			_patient setVariable [QGVAR(portableOxygenTankConnected), false, false];
+    		};
+    	};
+    };
 }, 3, [_medic,_patient]] call CBA_fnc_addPerFrameHandler;
