@@ -65,7 +65,7 @@ class CfgVehicles {
                 class Refill_OxygenTank_150_Facility {
                     displayName = "Refill Portable Oxygen Tank (150L)"//CSTRING();
                     condition = QUOTE('kat_oxygenTank_150_Empty' in (items _player) && _player call ACEFUNC(medical_treatment,isInMedicalFacility));
-                    statement = QUOTE([ARR_2(_player,'kat_oxygenTank_150')] call FUNC(refillOxygenTank));
+                    statement = QUOTE([ARR_3(_player,'kat_oxygenTank_150',5)] call FUNC(refillOxygenTank));
                     showDisabled = 0;
                     exceptions[] = 
                     {
@@ -81,14 +81,13 @@ class CfgVehicles {
                 class Refill_OxygenTank_300_Facility: Refill_OxygenTank_150_Facility {
                     displayName = "Refill Portable Oxygen Tank (300L)"//CSTRING();
                     condition = QUOTE('kat_oxygenTank_300_Empty' in (items _player) && _player call ACEFUNC(medical_treatment,isInMedicalFacility));
-                    statement = QUOTE([ARR_2(_player,'kat_oxygenTank_300')] call FUNC(refillOxygenTank));
+                    statement = QUOTE([ARR_3(_player,'kat_oxygenTank_300',10)] call FUNC(refillOxygenTank));
                 };
             };
         };
     };
 
-    class LandVehicle;
-    class Car: LandVehicle {
+    class LandVehicle {
         class ACE_Actions {
             class ACE_MainActions {
                 class RefillActionsVehicle {
@@ -96,13 +95,13 @@ class CfgVehicles {
                     class Refill_OxygenTank_150_Vehicle {
                         displayName = "Refill Portable Oxygen Tank (150L)"//CSTRING();
                         condition = QUOTE('kat_oxygenTank_150_Empty' in (items _player) && _target call ACEFUNC(medical_treatment,isMedicalVehicle));
-                        statement = QUOTE([ARR_2(_player,'kat_oxygenTank_150')] call FUNC(refillOxygenTank));
+                        statement = QUOTE([ARR_3(_player,'kat_oxygenTank_150',5] call FUNC(refillOxygenTank));
                         icon = "";
                     };
                     class Refill_OxygenTank_300_Vehicle: Refill_OxygenTank_150_Vehicle {
-                        displayName = "Refill Portable Oxygen Tank (150L)"//CSTRING();
+                        displayName = "Refill Portable Oxygen Tank (300L)"//CSTRING();
                         condition = QUOTE('kat_oxygenTank_300_Empty' in (items _player) && _target call ACEFUNC(medical_treatment,isMedicalVehicle));
-                        statement = QUOTE([ARR_2(_player,'kat_oxygenTank_300')] call FUNC(refillOxygenTank));
+                        statement = QUOTE([ARR_3(_player,'kat_oxygenTank_300',10] call FUNC(refillOxygenTank));
                     };
                 };
             };

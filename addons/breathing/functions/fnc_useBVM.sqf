@@ -37,13 +37,13 @@ params ["_medic", "_patient"];
                 };
             } forEach magazinesAmmo _oxygenProvider;
 
-            if(count _carriedTanks > 0) then {
+            if (count _carriedTanks > 0) then {
                 private _tank = _carriedTanks select (count _carriedTanks - 1);
                 private _tankClassName = (_tank select 0);
                 private _oxygenLeft = (_tank select 1) - 1;
                 if(_oxygenLeft > 0) then {
-                _oxygenProvider removeMagazine _tankClassName;
-                _oxygenProvider addMagazine [_tankClassName, _oxygenLeft];
+                    _oxygenProvider removeMagazine _tankClassName;
+                    _oxygenProvider addMagazine [_tankClassName, _oxygenLeft];
                 } else {
                     _oxygenProvider addItem [_tankClassName,"Empty"] joinString "_";
                 };
