@@ -145,23 +145,17 @@ if(_target getVariable [QEGVAR(chemical,airPoisoning),false]) then{
     _woundEntries pushBack [LELSTRING(chemical,Intoxikation), [0.4,0,0.5,1]];
 };
 
-private _airwayItem = _target getVariable [QGVAR(airway_item), ""];
-private _hasBVM = _target call EFUNC(breathing,hasBVM);
-if((_airwayItem != "" || _target call EFUNC(breathing,hasBVM)) && _selectionN isEqualTo 0) then {
-    if(_airwayItem != "" && !_hasBVM) then {
-        _entries pushback [localize format [LSTRING(%1_Display),_airwayItem], [0.1, 1, 1, 1]];
-    };
-    if (_hasBVM) then {
-        if(_airwayItem == "Larynxtubus") then {
-            _entries pushback ["BVM (King LT)"/*LLSTRING(BVMAttached)*/, [0.1, 1, 1, 1]];
-        } else {
-            _entries pushback ["BVM"/*LLSTRING(BVMAttached)*/, [0.1, 1, 1, 1]]; 
-        };
+// EDIT by Katalam & Tomcat
+if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then {
+    private _a = _target getVariable [QGVAR(airway_item), ""];
+    if !(_a isEqualTo "") then {
+        private _text = format [LSTRING(%1_Display), _a];
+        _woundEntries pushback [localize _text, [0.1, 1, 1, 1]];
     };
 };
 
 if (_target getVariable [QGVAR(overstretch), false] && _selectionN isEqualTo 0) then {
-    _entries pushback [LLSTRING(overstretched), [0.1, 1, 1, 1]];
+    _woundEntries pushback [LLSTRING(overstretched), [0.1, 1, 1, 1]];
 };
 
 if (_target getVariable [QGVAR(recovery), false]) then {

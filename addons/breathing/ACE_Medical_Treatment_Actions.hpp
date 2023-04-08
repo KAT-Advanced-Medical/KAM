@@ -173,63 +173,9 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);
     };
 
-    class AttachBVM {
-        displayName = "Put on BVM";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Putting on BVM";//CSTRING(listening_progress);
-        category = "airway";
-        treatmentLocations = 0;
-        allowedSelections[] = {"Head"};
-        allowSelfTreatment = 0;
-        medicRequired = 0;
-        treatmentTime = 5;
-        consumeItem = 1;
-        items[] = {"kat_BVM"};
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && !(_patient call FUNC(hasBVM)));
-        callbackSuccess = QUOTE([ARR_2(_patient,false)] call FUNC(attachBVM));
-        animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
-        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
-        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
-        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
-        litter[] = {};
-    };
-    class DetachBVM: AttachBVM {
-        displayName = "Take off BVM";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Taking off BVM";//CSTRING(listening_progress);
-        treatmentTime = 3;
-        medicRequired = 0;
-        consumeItem = 0;
-        items[] = {};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(BVM),false)] && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]));
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,false)] call FUNC(detachBVM));
-    };
-
-    class AttachPocketBVM: AttachBVM {
-        displayName = "Put on Pocket BVM";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Putting on Pocket BVM";//CSTRING(listening_progress);
-        treatmentTime = 5;
-        medicRequired = 0;
-        consumeItem = 1;
-        items[] = {"kat_pocketBVM"};
-        callbackSuccess = QUOTE([ARR_2(_patient,true)] call FUNC(attachBVM));
-    };
-
-    class DetachPocketBVM: AttachPocketBVM {
-        displayName = "Take off Pocket BVM";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Taking off Pocket";//CSTRING(listening_progress);
-        treatmentTime = 3;
-        medicRequired = 0;
-        consumeItem = 0;
-        items[] = {};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(pocketBVM),false)] && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]));
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call FUNC(detachBVM));
-    };
-
     class UseBVM {
-        displayName = "Squeeze Self-Inflating Bag";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Squeezing Self-Inflating Bag";//CSTRING(listening_progress);
+        displayName = "Use BVM";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Using BVM";//CSTRING(listening_progress);
         category = "airway";
         treatmentLocations = 0;
         allowedSelections[] = {"Head"};
@@ -237,7 +183,8 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         treatmentTime = 15;
         consumeItem = 0;
-        condition = QUOTE(!(_patient call ACEFUNC(common,isAwake)) && (_patient call FUNC(hasBVM)) && !(_patient getVariable [ARR_2(QQGVAR(BVMInUse),false)]));
+        items[] = {"kat_BVM"};
+        condition = QUOTE(_patient call FUNC(canUseBVM));
         callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(useBVM); _patient setVariable [ARR_3(QQGVAR(BVMInUse), true, true)]);
         callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
         callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
@@ -250,66 +197,34 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
-
-    class AttachOxygenTank {
-        displayName = "Connect Oxygen to Self-Inflating Bag";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Connecting Oxygen";//CSTRING(listening_progress);
-        category = "airway";
-        treatmentLocations = 0;
-        allowedSelections[] = {"Head"};
-        allowSelfTreatment = 0;
+    class UsePocketBVM: UseBVM {
+        displayName = "Use Pocket BVM";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Using Pocket BVM";//CSTRING(listening_progress);
         medicRequired = 0;
-        treatmentTime = 3;
-        consumeItem = 0;
-        items[] = {};
-        condition = QUOTE((_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)) && !([_patient] call ACEFUNC(common,isAwake)) && _patient getVariable [ARR_2(QQGVAR(BVM),false)] && !(_patient getVariable [ARR_2(QQGVAR(oxygenTankConnected),false)]));
-        callbackSuccess = QUOTE([ARR_2(_patient,true)] call FUNC(connectOxygenTank));
-        animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
-        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
-        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
-        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
-        litter[] = {};
+        items[] = {"kat_pocketBVM"};
+        condition = QUOTE(_patient call FUNC(canUseBVM));
+        callbackStart = QUOTE([ARR_3(_medic, _patient, true, false)] call FUNC(useBVM); _patient setVariable [ARR_3(QQGVAR(BVMInUse), true, true)]);
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
     };
-    class DetachOxygenTank: AttachOxygenTank {
-        displayName = "Disconnect Oxygen from Self-Inflating Bag";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Disconnecting Oxygen";//CSTRING(listening_progress);
-        treatmentTime = 3;
-        consumeItem = 0;
-        condition = QUOTE((_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)) && !([_patient] call ACEFUNC(common,isAwake)) && _patient getVariable [ARR_2(QQGVAR(oxygenTankConnected),false)]);
-        callbackSuccess = QUOTE([ARR_2(_patient,false)] call FUNC(connectOxygenTank));
-    };
-
-    class AttachPortableOxygenTank {
-        displayName = "Connect Portable Oxygen Tank to Self-Inflating Bag";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Connecting Portable Oxygen Tank";//CSTRING(listening_progress);
-        category = "airway";
-        treatmentLocations = 0;
-        allowedSelections[] = {"Head"};
-        allowSelfTreatment = 0;
+    class UseBVMPortableOxygen: UseBVM {
+        displayName = "Use BVM with Oxygen Tank";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Using BVM with Oxygen Tank";//CSTRING(listening_progress);
         medicRequired = 0;
-        treatmentTime = 3;
-        consumeItem = 0;
-        items[] = {}; 
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && _patient getVariable [ARR_2(QQGVAR(BVM),false)] && _medic call FUNC(hasOxygenTank) && !(_patient getVariable [ARR_2(QQGVAR(oxygenTankConnected),false)]));
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call FUNC(connectPortableOxygenTank));
-        animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
-        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
-        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
-        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
-        litter[] = {};
+        items[] = {"kat_BVM"};
+        condition = QUOTE(_patient call FUNC(canUseBVM) && _medic call FUNC(hasOxygenTank));
+        callbackStart = QUOTE([ARR_5(_medic, _patient, false, true, true)] call FUNC(useBVM); _patient setVariable [ARR_3(QQGVAR(BVMInUse), true, true)]);
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
     };
-    class DetachPortableOxygenTank: AttachPortableOxygenTank {
-        displayName = "Disconnect Portable Oxygen Tank from Self-Inflating Bag";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Disconnecting Portable Oxygen Tank";//CSTRING(listening_progress);
-        treatmentTime = 3;
-        consumeItem = 0;
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && _patient getVariable [ARR_2(QQGVAR(oxygenTankConnected),false)]);
-        callbackSuccess = QUOTE([ARR_3(_medic,_patient,false)] call FUNC(connectPortableOxygenTank));
+    class UseBVMOxygen: UseBVM {
+        displayName = "Use BVM with Oxygen";//CSTRING(auscultateLung_display);
+        displayNameProgress = "Using BVM with Oxygen";//CSTRING(listening_progress);
+        medicRequired = 0;
+        items[] = {"kat_BVM"};
+        condition = QUOTE(_patient call FUNC(canUseBVM) && (_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)));
+        callbackStart = QUOTE([ARR_4(_medic, _patient, false, true)] call FUNC(useBVM); _patient setVariable [ARR_3(QQGVAR(BVMInUse), true, true)]);
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
     };
 };

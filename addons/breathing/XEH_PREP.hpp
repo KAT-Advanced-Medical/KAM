@@ -1,7 +1,4 @@
-PREP(attachBVM);
-PREP(connectOxygenTank);
-PREP(connectPortableOxygenTank);
-PREP(detachBVM);
+PREP(canUseBVM);
 PREP(fullHealLocal);
 PREP(handleBreathing);
 PREP(handlePulmoHit);
