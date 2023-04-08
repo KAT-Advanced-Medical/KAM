@@ -10,7 +10,7 @@
 
 [QGVAR(playCough), {
     params ["_unit"];
-	_unit say3D [QGVAR(pneumothoraxcough), 15];
+    _unit say3D [QGVAR(pneumothoraxcough), 15];
 }] call CBA_fnc_addEventHandler;
 
 [QACEGVAR(medical,woundReceived),LINKFUNC(handlePulmoHit)] call CBA_fnc_addEventHandler;
