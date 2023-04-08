@@ -29,15 +29,28 @@ params ["_medic", "_patient"];
         if !(isNull (_patient getVariable QGVAR(oxygenTankProvider))) then {
             private _oxygenProvider = _patient getVariable QGVAR(oxygenTankProvider);
 
-            if ([_medic, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine)) then {
-                [_medic, "kat_oxygenTank_300"] call EFUNC(pharma,removeItemfromMag);
-            } else {
-                if([_medic, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine)) then {
-                    [_medic, "kat_oxygenTank_150"] call EFUNC(pharma,removeItemfromMag);
-                } else {
-                    _patient setVariable [QGVAR(portableOxygenTankConnected), false, false];
+            private _carriedTanks = [];
+
+            {
+                if(_x select 0 in ["kat_oxygenTank_150","kat_oxygenTank_300"]) then {
+                    _carriedTanks pushBack _x;
                 };
+            } forEach magazinesAmmo _oxygenProvider;
+
+            if(count _carriedTanks > 0) then {
+                private _tank = _carriedTanks select (count _carriedTanks - 1);
+                private _tankClassName = (_tank select 0);
+                private _oxygenLeft = (_tank select 1) - 1;
+                if(_oxygenLeft > 0) then {
+                _oxygenProvider removeMagazine _tankClassName;
+                _oxygenProvider addMagazine [_tankClassName, _oxygenLeft];
+                } else {
+                    _oxygenProvider addItem [_tankClassName,"Empty"] joinString "_";
+                };
+            } else {
+                _patient setVariable [QGVAR(portableOxygenTankConnected), false, false];
             };
+
         } else {
             _patient setVariable [QGVAR(portableOxygenTankConnected), false, false];
         };

@@ -25,3 +25,11 @@ if(_pocket) exitWith {
 };
 [_medic, "kat_BVM"] call ACEFUNC(common,addToInventory);
 _patient setVariable [QGVAR(BVM), false, true];
+
+if (_patient getVariable [QGVAR(oxygenTankConnected), false]) then {
+    _patient setVariable [QGVAR(oxygenTankConnected), false, true];
+};
+if (_patient getVariable [QGVAR(portableOxygenTankConnected), false]) then {
+    _patient setVariable [QGVAR(portableOxygenTankConnected), false, true];
+    _patient setVariable [QGVAR(oxygenTankProvider), nil, true];
+};

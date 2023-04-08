@@ -16,6 +16,14 @@
 
     // Drop BVM if woken up with one on
     if(_unit call FUNC(hasBVM)) then {
+        if (_patient getVariable [QGVAR(oxygenTankConnected), false]) then {
+            _patient setVariable [QGVAR(oxygenTankConnected), false, true];
+        };
+        if (_patient getVariable [QGVAR(portableOxygenTankConnected), false]) then {
+            _patient setVariable [QGVAR(portableOxygenTankConnected), false, true];
+            _patient setVariable [QGVAR(oxygenTankProvider), nil, true];
+        };
+
         private _weaponHolder = createVehicle ["Weapon_Empty", getPosATL _unit, [], 0, "CAN_COLLIDE"];
         if(_unit getVariable [QGVAR(pocketBVM), false]) then {
             _unit setVariable [QGVAR(pocketBVM), false, true];

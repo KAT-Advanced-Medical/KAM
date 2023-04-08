@@ -84,6 +84,16 @@ class CfgWeapons {
             mass = 3;
         };
     };
+    class kat_oxygenTank_150_Item: ACE_ItemCore {
+        scope = 2;
+        author = "Blue";
+        displayName = "Portable Oxygen Tank (150L)";
+        descriptionShort = "Portable Oxygen Tank, containing 150L of oxygen\n Connect to BVM to further assist with breathing of critical patients"; //CSTRING(PocketBVM_Desc_Short);
+        picture = QPATHTOF(ui\oxygenTank.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 10;
+        };
+    };
     class kat_oxygenTank_300_Item: ACE_ItemCore {
         scope = 2;
         author = "Blue";
@@ -94,14 +104,24 @@ class CfgWeapons {
             mass = 20;
         };
     };
-    class kat_oxygenTank_150_Item: ACE_ItemCore {
+    class kat_oxygenTank_150_Empty: ACE_ItemCore {
         scope = 2;
         author = "Blue";
-        displayName = "Portable Oxygen Tank (150L)";
-        descriptionShort = "Portable Oxygen Tank, containing 150L of oxygen\n Connect to BVM to further assist with breathing of critical patients"; //CSTRING(PocketBVM_Desc_Short);
+        displayName = "Empty Portable Oxygen Tank (150L)";
+        descriptionShort = "Empty Portable Oxygen Tank, refill at a medical vehicle or facility"; //CSTRING(PocketBVM_Desc_Short);
         picture = QPATHTOF(ui\oxygenTank.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 10;
+        };
+    };
+    class kat_oxygenTank_300_Empty: ACE_ItemCore {
+        scope = 2;
+        author = "Blue";
+        displayName = "Empty Portable Oxygen Tank (300L)";
+        descriptionShort = "Empty Portable Oxygen Tank, refill at a medical vehicle or facility"; //CSTRING(PocketBVM_Desc_Short);
+        picture = QPATHTOF(ui\oxygenTank.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 20;
         };
     };
 };
