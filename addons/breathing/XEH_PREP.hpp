@@ -15,4 +15,3 @@ PREP(treatmentAdvanced_tensionpneumothorax);
 PREP(treatmentAdvanced_tensionpneumothoraxLocal);
 PREP(listenLungs);
 PREP(lowSpO2pp);
-PREP(playCough);
