@@ -8,6 +8,7 @@
  * 1: Patient <OBJECT>
  * 2: Is pocket BVM <BOOL>
  * 3: Use oxygen <BOOL>
+ * 4: Oxygen is carred by medic <BOOL>
  *
  * Return Value:
  * None

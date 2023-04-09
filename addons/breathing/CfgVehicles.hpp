@@ -76,7 +76,7 @@ class CfgVehicles {
                         "isNotSwimming",
                         "isNotOnLadder"
                     };
-                    icon = "";
+                    icon = QPATHTOF(ui\oxygenTank_ui.paa);
                 };
                 class Refill_OxygenTank_300_Facility: Refill_OxygenTank_150_Facility {
                     displayName = "Refill Portable Oxygen Tank (300L)"//CSTRING();
@@ -96,7 +96,7 @@ class CfgVehicles {
                         displayName = "Refill Portable Oxygen Tank (150L)"//CSTRING();
                         condition = QUOTE('kat_oxygenTank_150_Empty' in (items _player) && _target call ACEFUNC(medical_treatment,isMedicalVehicle));
                         statement = QUOTE([ARR_3(_player,'kat_oxygenTank_150',5] call FUNC(refillOxygenTank));
-                        icon = "";
+                        icon = QPATHTOF(ui\oxygenTank_ui.paa);
                     };
                     class Refill_OxygenTank_300_Vehicle: Refill_OxygenTank_150_Vehicle {
                         displayName = "Refill Portable Oxygen Tank (300L)"//CSTRING();

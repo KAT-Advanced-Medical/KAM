@@ -196,6 +196,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
+        icon = QPATHTOF(ui\BVM_ui.paa);
     };
     class UsePocketBVM: UseBVM {
         displayName = "Use Pocket BVM";//CSTRING(auscultateLung_display);
