@@ -353,4 +353,13 @@ PREP_RECOMPILE_END;
     false
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(BVMTime),
+    "SLIDER",
+    [LLSTRING(SETTING_BVMTime), LLSTRING(SETTING_BVMTime_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [0.1, 60, 15, 1],
+    false
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

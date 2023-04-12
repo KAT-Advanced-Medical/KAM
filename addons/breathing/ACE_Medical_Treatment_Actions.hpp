@@ -181,7 +181,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
         medicRequired = 0;
-        treatmentTime = 15;
+        treatmentTime = QGVAR(BVMTime);
         consumeItem = 0;
         items[] = {"kat_BVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM));

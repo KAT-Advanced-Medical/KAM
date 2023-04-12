@@ -1414,20 +1414,11 @@
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_Empty_Desc_Short">
             <English>Empty Portable Oxygen Tank, refill at a medical vehicle or facility</English>
         </Key>
-
-        <Key ID="STR_KAT_Breathing_SETTING_BVM_Time">
-            <English></English>
+        <Key ID="STR_KAT_Breathing_SETTING_BVMTime">
+            <English>BVM Use Time</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_BVM_Time_DESC">
-            <English></English>
-        </Key>
-        <Key ID="STR_KAT_Breathing_">
-            <English></English>
-        </Key>
-
-
-        <Key ID="STR_KAT_Breathing_">
-            <English></English>
+        <Key ID="STR_KAT_Breathing_SETTING_BVMTime_DESC">
+            <English>Sets how long the BVM usage period is</English>
         </Key>
     </Package>
 </Project>
