@@ -174,8 +174,8 @@ class ACE_Medical_Treatment_Actions {
     };
 
     class UseBVM {
-        displayName = "Use BVM";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Using BVM";//CSTRING(listening_progress);
+        displayName = CSTRING(UseBVM);
+        displayNameProgress = CSTRING(UseBVM_Progress);
         category = "airway";
         treatmentLocations = 0;
         allowedSelections[] = {"Head"};
@@ -198,8 +198,8 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\BVM_ui.paa);
     };
     class UsePocketBVM: UseBVM {
-        displayName = "Use Pocket BVM";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Using Pocket BVM";//CSTRING(listening_progress);
+        displayName = CSTRING(UsePocketBVM);
+        displayNameProgress = CSTRING(UsePocketBVM_Progress);
         medicRequired = 0;
         items[] = {"kat_pocketBVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM));
@@ -208,8 +208,8 @@ class ACE_Medical_Treatment_Actions {
         callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
     };
     class UseBVMPortableOxygen: UseBVM {
-        displayName = "Use BVM with Oxygen Tank";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Using BVM with Oxygen Tank";//CSTRING(listening_progress);
+        displayName = CSTRING(UseBVM_PortableOxygen);
+        displayNameProgress = CSTRING(UseBVM_PortableOxygen_Progress);
         medicRequired = 0;
         items[] = {"kat_BVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM) && _medic call FUNC(hasOxygenTank) && !(_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)));
@@ -218,8 +218,8 @@ class ACE_Medical_Treatment_Actions {
         callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
     };
     class UseBVMOxygen: UseBVM {
-        displayName = "Use BVM with Oxygen";//CSTRING(auscultateLung_display);
-        displayNameProgress = "Using BVM with Oxygen";//CSTRING(listening_progress);
+        displayName = CSTRING(UseBVM_Oxygen);
+        displayNameProgress = CSTRING(UseBVM_Oxygen_Progress);
         medicRequired = 0;
         items[] = {"kat_BVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM) && (_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)));

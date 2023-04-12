@@ -54,7 +54,7 @@ timeOut = false;
                 } else {
                     _medic removeMagazine _tankClassName;
                     _medic addItem ([_tankClassName,"Empty"] joinString "_");
-                    [/*LLSTRING(X_already)*/"Oxygen tank disconnected (empty)", 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                    [LLSTRING(PortableOxygenTankDisconnected_Empty), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
                 };
             } else {
                 _patient setVariable [QGVAR(oxygenTankConnected), false, true];

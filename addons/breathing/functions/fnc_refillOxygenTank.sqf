@@ -29,13 +29,13 @@ _unit removeItem _emptyTank;
     _args params ["_unit","_tank"];
 
     _unit addMagazine _tank;
-    ["Oxygen Tank Refill Complete", 1.5, _unit] call ACEFUNC(common,displayTextStructured);
+    [LLSTRING(RefillPortableOxygenTank_Complete), 1.5, _unit] call ACEFUNC(common,displayTextStructured);
 }, 
 {
     params["_args"];
     _args params ["_unit","_emptyTank"];
 
     _unit addItem _emptyTank;
-    ["Oxygen Tank Refill Cancelled", 1.5, _unit] call ACEFUNC(common,displayTextStructured);
+    [LLSTRING(RefillPortableOxygenTank_Cancel), 1.5, _unit] call ACEFUNC(common,displayTextStructured);
 }, 
-"Refilling Portable Oxygen Tank"] call ACEFUNC(common,progressBar);
+LLSTRING(RefillPortableOxygenTank_Progress)] call ACEFUNC(common,progressBar);

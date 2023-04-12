@@ -1336,5 +1336,98 @@
             <Italian>Ti permette di cambiare il valore di SPO2 al quale ricevi l'indicatore lampeggiante d'allerta e l'effetto di perdita della stamina </Italian>
             <Portuguese>Permite alterar o valor SpO2 no qual você é avisado e sofre perda de stamina</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Breathing_UseBVM">
+            <English>Use BVM</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_UseBVM_Progress">
+            <English>Using BVM</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_UsePocketBVM">
+            <English>Use Pocket BVM</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_UsePocketBVM_Progress">
+            <English>Using Pocket BVM</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen">
+            <English>Use BVM with Oxygen Tank</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Progress">
+            <English>Using BVM with Oxygen Tank</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_UseBVM_Oxygen">
+            <English>Use BVM with Oxygen</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_UseBVM_Oxygen_Progress">
+            <English>Using BVM with Oxygen</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
+            <English>Oxygen tank disconnected (empty)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Progress">
+            <English>Refilling Portable Oxygen Tank</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Complete">
+            <English>Oxygen Tank Refill Complete</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Cancel">
+            <English>Oxygen Tank Refill Cancelled</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_RefillPortableOxygenTanks">
+            <English>Refill Portable Oxygen Tank</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_150">
+            <English>Refill Portable Oxygen Tank (150L)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_300">
+            <English>Refill Portable Oxygen Tank (300L)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_BVM_Display">
+            <English>BVM</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Desc_Short">
+            <English>Bag-Valve-Mask, used to assist with breathing of unconscious patients</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PocketBVM_Display">
+            <English>Pocket BVM</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PocketBVM_Desc_Short">
+            <English>Compact version of the Bag-Valve-Mask</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Display">
+            <English>Portable Oxygen Tank (150L)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Desc_Short">
+            <English>Portable Oxygen Tank, containing 150L of oxygen\n Connect to BVM to further assist with breathing of critical patients</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Display">
+            <English>Portable Oxygen Tank (300L)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Desc_Short">
+            <English>Portable Oxygen Tank, containing 300L of oxygen\n Connect to BVM to further assist with breathing of critical patients</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
+            <English>Empty Portable Oxygen Tank (150L)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Empty_Display">
+            <English>Empty Portable Oxygen Tank (300L)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PortableOxygenTank_Empty_Desc_Short">
+            <English>Empty Portable Oxygen Tank, refill at a medical vehicle or facility</English>
+        </Key>
+
+        <Key ID="STR_KAT_Breathing_SETTING_BVM_Time">
+            <English></English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_BVM_Time_DESC">
+            <English></English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_">
+            <English></English>
+        </Key>
+
+
+        <Key ID="STR_KAT_Breathing_">
+            <English></English>
+        </Key>
     </Package>
 </Project>

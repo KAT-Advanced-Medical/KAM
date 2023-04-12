@@ -67,8 +67,8 @@ class CfgWeapons {
     class kat_BVM: ACE_ItemCore {
         scope = 2;
         author = "Blue";
-        displayName = "BVM";
-        descriptionShort = "Bag-Valve-Mask, used to assist with breathing of unconscious patients";//CSTRING(BVM_Desc_Short);
+        displayName = CSTRING(BVM_Display);
+        descriptionShort = CSTRING(BVM_Desc_Short);
         picture = QPATHTOF(ui\BVM.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 8;
@@ -77,8 +77,8 @@ class CfgWeapons {
     class kat_pocketBVM: ACE_ItemCore {
         scope = 2;
         author = "Blue";
-        displayName = "Pocket BVM";
-        descriptionShort = "Compact version of the Bag-Valve-Mask"; //CSTRING(PocketBVM_Desc_Short);
+        displayName = CSTRING(PocketBVM_Display);
+        descriptionShort = CSTRING(PocketBVM_Desc_Short);
         picture = QPATHTOF(ui\pocketBVM.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 3;
@@ -87,8 +87,8 @@ class CfgWeapons {
     class kat_oxygenTank_150_Item: ACE_ItemCore {
         scope = 2;
         author = "Blue";
-        displayName = "Portable Oxygen Tank (150L)";
-        descriptionShort = "Portable Oxygen Tank, containing 150L of oxygen\n Connect to BVM to further assist with breathing of critical patients"; //CSTRING(PocketBVM_Desc_Short);
+        displayName = CSTRING(PortableOxygenTank_150_Display);
+        descriptionShort = CSTRING(PortableOxygenTank_150_Desc_Short);
         picture = QPATHTOF(ui\oxygenTank.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 10;
@@ -97,8 +97,8 @@ class CfgWeapons {
     class kat_oxygenTank_300_Item: ACE_ItemCore {
         scope = 2;
         author = "Blue";
-        displayName = "Portable Oxygen Tank (300L)";
-        descriptionShort = "Portable Oxygen Tank, containing 300L of oxygen\n Connect to BVM to further assist with breathing of critical patients"; //CSTRING(PocketBVM_Desc_Short);
+        displayName = CSTRING(PortableOxygenTank_300_Display);
+        descriptionShort = CSTRING(PortableOxygenTank_300_Desc_Short);
         picture = QPATHTOF(ui\oxygenTank.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 20;
@@ -107,8 +107,8 @@ class CfgWeapons {
     class kat_oxygenTank_150_Empty: ACE_ItemCore {
         scope = 2;
         author = "Blue";
-        displayName = "Empty Portable Oxygen Tank (150L)";
-        descriptionShort = "Empty Portable Oxygen Tank, refill at a medical vehicle or facility"; //CSTRING(PocketBVM_Desc_Short);
+        displayName = CSTRING(PortableOxygenTank_150_Empty_Display);
+        descriptionShort = CSTRING(PortableOxygenTank_Empty_Desc_Short);
         picture = QPATHTOF(ui\oxygenTank.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 10;
@@ -117,8 +117,8 @@ class CfgWeapons {
     class kat_oxygenTank_300_Empty: ACE_ItemCore {
         scope = 2;
         author = "Blue";
-        displayName = "Empty Portable Oxygen Tank (300L)";
-        descriptionShort = "Empty Portable Oxygen Tank, refill at a medical vehicle or facility"; //CSTRING(PocketBVM_Desc_Short);
+        displayName = CSTRING(PortableOxygenTank_300_Empty_Display);
+        descriptionShort = CSTRING(PortableOxygenTank_Empty_Desc_Short);
         picture = QPATHTOF(ui\oxygenTank.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 20;

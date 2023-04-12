@@ -4,9 +4,8 @@ class CfgMagazines {
     class kat_oxygenTank_300: CA_Magazine {
         scope = 2;
         author = "Blue";
-        displayName = "Portable Oxygen Tank (300L)";
-        descriptionShort = "Portable Oxygen Tank, containing 300L of oxygen\n Connect to BVM to further assist with breathing of critical patients"; //CSTRING(PocketBVM_Desc_Short);
-        //model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        displayName = CSTRING(PortableOxygenTank_300_Display);
+        descriptionShort = CSTRING(PortableOxygenTank_300_Desc_Short);
         picture = QPATHTOF(ui\oxygenTank.paa);
         
         ammo = "";
@@ -19,9 +18,8 @@ class CfgMagazines {
     class kat_oxygenTank_150: CA_Magazine {
         scope = 2;
         author = "Blue";
-        displayName = "Portable Oxygen Tank (150L)";
-        descriptionShort = "Portable Oxygen Tank, containing 150L of oxygen\n Connect to BVM to further assist with breathing of critical patients"; //CSTRING(PocketBVM_Desc_Short);
-        //model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        displayName = CSTRING(PortableOxygenTank_150_Display);
+        descriptionShort = CSTRING(PortableOxygenTank_150_Desc_Short);
         picture = QPATHTOF(ui\oxygenTank.paa);
         
         ammo = "";
