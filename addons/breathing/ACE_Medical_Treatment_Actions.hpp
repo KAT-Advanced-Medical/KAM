@@ -192,9 +192,8 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
-        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
-        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        animationMedic = "AinvPknlMstpSnonWnonDr_medic0";
+        animationMedicProne = "AinvPknlMstpSnonWnonDr_medic0";
         litter[] = {};
         icon = QPATHTOF(ui\BVM_ui.paa);
     };
@@ -204,7 +203,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         items[] = {"kat_pocketBVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM));
-        callbackStart = QUOTE([ARR_3(_medic, _patient, true, false)] call FUNC(useBVM); _patient setVariable [ARR_3(QQGVAR(BVMInUse), true, true)]);
+        callbackStart = QUOTE([ARR_4(_medic, _patient, true, false)] call FUNC(useBVM); _patient setVariable [ARR_3(QQGVAR(BVMInUse), true, true)]);
         callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
         callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
     };
@@ -213,7 +212,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = "Using BVM with Oxygen Tank";//CSTRING(listening_progress);
         medicRequired = 0;
         items[] = {"kat_BVM"};
-        condition = QUOTE(_patient call FUNC(canUseBVM) && _medic call FUNC(hasOxygenTank));
+        condition = QUOTE(_patient call FUNC(canUseBVM) && _medic call FUNC(hasOxygenTank) && !(_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)));
         callbackStart = QUOTE([ARR_5(_medic, _patient, false, true, true)] call FUNC(useBVM); _patient setVariable [ARR_3(QQGVAR(BVMInUse), true, true)]);
         callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
         callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);

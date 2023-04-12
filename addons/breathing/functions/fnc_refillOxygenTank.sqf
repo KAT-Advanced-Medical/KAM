@@ -19,20 +19,23 @@
 
 params ["_unit","_tank","_refillTime"];
 
-_unit removeItem [_tank,"Empty"] joinString "_";
-[_unit, "PutDown"] call EFUNC(common,doGesture);
-playsound3D [QPATHTOF_SOUND(sounds\oxygentank_refill_start.ogg), _unit, false, getPosASL _unit, 5, 1, 8];
+private _emptyTank = [_tank,"Empty"] joinString "_";
 
-[_refillTime, ["_unit","_tank"], 
+_unit removeItem _emptyTank;
+
+[_refillTime, [_unit,_tank,_emptyTank], 
 {
+    params["_args"];
+    _args params ["_unit","_tank"];
+
     _unit addMagazine _tank;
-    [_unit, "PutDown"] call EFUNC(common,doGesture);
-    playsound3D [QPATHTOF_SOUND(sounds\oxygentank_refill_done.ogg), _unit, false, getPosASL _unit, 5, 1, 8];
+    ["Oxygen Tank Refill Complete", 1.5, _unit] call ACEFUNC(common,displayTextStructured);
 }, 
 {
-    _unit addItem [_tank,"Empty"] joinString "_";
+    params["_args"];
+    _args params ["_unit","_emptyTank"];
+
+    _unit addItem _emptyTank;
+    ["Oxygen Tank Refill Cancelled", 1.5, _unit] call ACEFUNC(common,displayTextStructured);
 }, 
-"Refilling Portable Oxygen Tank",
-{
-    _tank in (items _unit);
-}] call ACEFUNC(common,progressBar);
+"Refilling Portable Oxygen Tank"] call ACEFUNC(common,progressBar);

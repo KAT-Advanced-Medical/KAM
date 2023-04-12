@@ -10,7 +10,7 @@ class CfgMagazines {
         picture = QPATHTOF(ui\oxygenTank.paa);
         
         ammo = "";
-        count = 400;
+        count = 200;
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
@@ -25,7 +25,7 @@ class CfgMagazines {
         picture = QPATHTOF(ui\oxygenTank.paa);
         
         ammo = "";
-        count = 200;
+        count = 100;
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
