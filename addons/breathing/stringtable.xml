@@ -1384,7 +1384,7 @@
         <Key ID="STR_KAT_Breathing_BVM_Display">
             <English>BVM</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_Desc_Short">
+        <Key ID="STR_KAT_Breathing_BVM_Desc_Short">
             <English>Bag-Valve-Mask, used to assist with breathing of unconscious patients</English>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Display">
@@ -1397,13 +1397,13 @@
             <English>Portable Oxygen Tank (150L)</English>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Desc_Short">
-            <English>Portable Oxygen Tank, containing 150L of oxygen\n Connect to BVM to further assist with breathing of critical patients</English>
+            <English>Portable Oxygen Tank, containing 150L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Display">
             <English>Portable Oxygen Tank (300L)</English>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Desc_Short">
-            <English>Portable Oxygen Tank, containing 300L of oxygen\n Connect to BVM to further assist with breathing of critical patients</English>
+            <English>Portable Oxygen Tank, containing 300L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
             <English>Empty Portable Oxygen Tank (150L)</English>
