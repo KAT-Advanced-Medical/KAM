@@ -33,16 +33,29 @@ timeOut = false;
 
     if !(timeOut) then {
         timeOut = true;
-
         if (_useOxygen && !_pocket) then {
             if(_carriedOxygen) then {
                 private _carriedTanks = [];
+                private _heldPreferredTanks = [];
+                private _medicPreferredTank = _medic getVariable [QGVAR(oxygenTankPreferred), ""];
 
-                {
-                    if(_x select 0 in ["kat_oxygenTank_150","kat_oxygenTank_300"]) then {
-                        _carriedTanks pushBack _x;
+                if(_medicPreferredTank != "") then {
+                    {
+                        if(_x select 0 == _medicPreferredTank) then {
+                            _heldPreferredTanks pushBack _x;
+                        };
+                    } forEach magazinesAmmo _medic;
+                    
+                    if (count _heldPreferredTanks > 0) then {
+                        _carriedTanks = _heldPreferredTanks;
                     };
-                } forEach magazinesAmmo _medic;
+                } else {
+                    {
+                        if(_x select 0 in ["kat_oxygenTank_150","kat_oxygenTank_300"]) then {
+                            _carriedTanks pushBack _x;
+                        };
+                    } forEach magazinesAmmo _medic;
+                };
 
                 if (count _carriedTanks > 0) then {
                     _patient setVariable [QGVAR(oxygenTankConnected), true, true];

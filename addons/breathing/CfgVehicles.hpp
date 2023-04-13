@@ -62,6 +62,27 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_SelfActions {
             class ACE_Equipment {
+                class SetPreferred_OxygenTank_150 {
+                    displayName = CSTRING(SetPreferredOxygenTank_150);
+                    condition = QUOTE([ARR_2(_player, 'kat_oxygenTank_150')] call ACEFUNC(common,hasMagazine));
+                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(oxygenTankPreferred),'kat_oxygenTank_150', true)]);
+                    showDisabled = 0;
+                    exceptions[] = 
+                    {
+                        "notOnMap",
+                        "isNotInside",
+                        "isNotHandcuffed",
+                        "isNotSurrendering",
+                        "isNotSwimming",
+                        "isNotOnLadder"
+                    };
+                    icon = QPATHTOF(ui\oxygenTank_ui.paa);
+                };
+                class SetPreferred_OxygenTank_300: SetPreferred_OxygenTank_150 {
+                    displayName = CSTRING(SetPreferredOxygenTank_300);
+                    condition = QUOTE([ARR_2(_player, 'kat_oxygenTank_300')] call ACEFUNC(common,hasMagazine));
+                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(oxygenTankPreferred),'kat_oxygenTank_300', true)]);
+                };
                 class Refill_OxygenTank_150_Facility {
                     displayName = CSTRING(RefillPortableOxygenTank_150);
                     condition = QUOTE('kat_oxygenTank_150_Empty' in (items _player) && _player call ACEFUNC(medical_treatment,isInMedicalFacility));

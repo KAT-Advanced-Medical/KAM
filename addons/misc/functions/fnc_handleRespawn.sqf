@@ -41,6 +41,7 @@ _unit setVariable [QEGVAR(breathing,PneumoBreathCooldownOn), false, true];
 
 _unit setVariable [QEGVAR(breathing,BVMInUse), false, true];
 _unit setVariable [QEGVAR(breathing,oxygenTankConnected), false, true];
+_unit setVariable [QEGVAR(breathing,oxygenTankPreferred), "", true];
 
 _unit setVariable ["kat_breathing_pulseoximeter", false, true];
 _unit setVariable ["kat_PulseoxiInUse_PFH", nil];

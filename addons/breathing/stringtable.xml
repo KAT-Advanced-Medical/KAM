@@ -1444,5 +1444,11 @@
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime_DESC">
             <English>Sets time required to refill Oxygen Tank (150L)</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_150">
+            <English>Set Portable Oxygen Tank (150L) as preferred</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_300">
+            <English>Set Portable Oxygen Tank (300L) as preferred</English>
+        </Key>
     </Package>
 </Project>
