@@ -353,6 +353,7 @@ PREP_RECOMPILE_END;
     false
 ] call CBA_Settings_fnc_init;
 
+// Sets BVM use period
 [
     QGVAR(BVMTime),
     "SLIDER",
@@ -361,5 +362,55 @@ PREP_RECOMPILE_END;
     [0.1, 60, 15, 1],
     false
 ] call CBA_Settings_fnc_init;
+
+// Sets required medical level for BVM usage
+[
+    QGVAR(medLvl_BVM),
+    "LIST",
+    [LLSTRING(SETTING_BVM_MedLvl),LLSTRING(SETTING_BVM_MedLvl_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Sets required medical level for Pocket BVM usage
+[
+    QGVAR(medLvl_PocketBVM),
+    "LIST",
+    [LLSTRING(SETTING_PocketBVM_MedLvl),LLSTRING(SETTING_PocketBVM_MedLvl_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Sets required medical level for BVM with oxygen usage
+[
+    QGVAR(medLvl_BVM_Oxygen),
+    "LIST",
+    [LLSTRING(SETTING_BVM_Oxygen_MedLvl),LLSTRING(SETTING_BVM_Oxygen_MedLvl_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Sets required medical level for BVM with oxygen usage
+[
+    QGVAR(medLvl_BVM_Oxygen),
+    "LIST",
+    [LLSTRING(SETTING_BVM_Oxygen_MedLvl),LLSTRING(SETTING_BVM_Oxygen_MedLvl_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Sets time required to refill oxygen tank
+[
+    QGVAR(PortableOxygenTank_RefillTime),
+    "SLIDER",
+    [LLSTRING(SETTING_PortableOxygenTank_RefillTime),LLSTRING(SETTING_PortableOxygenTank_RefillTime_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [0.1, 60, 5, 1],
+    true
+] call CBA_settings_fnc_init;
 
 ADDON = true;

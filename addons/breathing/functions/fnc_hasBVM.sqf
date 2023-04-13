@@ -17,8 +17,4 @@
 
 params ["_patient"];
 
-if(_patient getVariable [QGVAR(BVM), false] || _patient getVariable [QGVAR(pocketBVM), false]) exitWith {
-    true;
-};
-
-false
+_patient getVariable [QGVAR(BVM), false] || _patient getVariable [QGVAR(pocketBVM), false];

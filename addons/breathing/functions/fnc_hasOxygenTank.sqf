@@ -17,6 +17,4 @@
 
 params ["_unit"];
 
-if ([_unit, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine) || [_unit, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine)) exitWith {true};
-
-false
+[_unit, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine) || [_unit, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine);

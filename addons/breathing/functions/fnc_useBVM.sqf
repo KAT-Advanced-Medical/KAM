@@ -19,7 +19,9 @@
  * Public: No
  */
 
-params ["_medic", "_patient", ["_pocket",false], ["_useOxygen",false], ["_carriedOxygen",false]];
+params ["_medic", "_patient", ["_pocket", false], ["_useOxygen", false], ["_carriedOxygen", false]];
+
+_patient setVariable [QGVAR(BVMInUse), true, true];
 
 timeOut = false;
 [{
@@ -32,36 +34,41 @@ timeOut = false;
     if !(timeOut) then {
         timeOut = true;
 
-        if (_useOxygen && _carriedOxygen && !_pocket) then {
-            private _carriedTanks = [];
+        if (_useOxygen && !_pocket) then {
+            if(_carriedOxygen) then {
+                private _carriedTanks = [];
 
-            {
-                if(_x select 0 in ["kat_oxygenTank_150","kat_oxygenTank_300"]) then {
-                    _carriedTanks pushBack _x;
-                };
-            } forEach magazinesAmmo _medic;
+                {
+                    if(_x select 0 in ["kat_oxygenTank_150","kat_oxygenTank_300"]) then {
+                        _carriedTanks pushBack _x;
+                    };
+                } forEach magazinesAmmo _medic;
 
-            if (count _carriedTanks > 0) then {
-                _patient setVariable [QGVAR(oxygenTankConnected), true, true];
+                if (count _carriedTanks > 0) then {
+                    _patient setVariable [QGVAR(oxygenTankConnected), true, true];
 
-                private _tank = _carriedTanks select (count _carriedTanks - 1);
-                private _tankClassName = (_tank select 0);
-                private _oxygenLeft = (_tank select 1) - 1;
-
-                if(_oxygenLeft > 0) then {
-                    _medic removeMagazine _tankClassName;
-                    _medic addMagazine [_tankClassName, _oxygenLeft];
+                    private _tank = _carriedTanks select (count _carriedTanks - 1);
+                    _tank params ["_tankClassName", "_oxygenLeft"];
+                    
+                    if(_oxygenLeft > 1) then {
+                        _medic removeMagazine _tankClassName;
+                        _medic addMagazine [_tankClassName, _oxygenLeft - 1];
+                    } else {
+                        _medic removeMagazine _tankClassName;
+                        _medic addItem ([_tankClassName,"Empty"] joinString "_");
+                        [LLSTRING(PortableOxygenTankDisconnected_Empty), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                    };
                 } else {
-                    _medic removeMagazine _tankClassName;
-                    _medic addItem ([_tankClassName,"Empty"] joinString "_");
-                    [LLSTRING(PortableOxygenTankDisconnected_Empty), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                    _patient setVariable [QGVAR(oxygenTankConnected), false, true];
                 };
             } else {
-                _patient setVariable [QGVAR(oxygenTankConnected), false, true];
+                _patient setVariable [QGVAR(oxygenTankConnected), true, true];
             };
+        } else {
+            _patient setVariable [QGVAR(oxygenTankConnected), false, true];
         };
 
-        playsound3D [QPATHTOF_SOUND(audio\squeeze_BVM.ogg), _patient, false, getPosASL _patient, 12, 1, 6];
+        playsound3D [QPATHTOF_SOUND(audio\squeeze_BVM.ogg), _patient, false, getPosASL _patient, 8, 1, 15];
         
         [{
             params ["_patient"];

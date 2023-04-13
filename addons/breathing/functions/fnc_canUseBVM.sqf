@@ -17,6 +17,4 @@
 
 params ["_patient"];
 
-if (!(_patient call ACEFUNC(common,isAwake)) && !(_patient getVariable [QGVAR(BVMInUse), false])) exitWith {true};
-
-false
+!(_patient call ACEFUNC(common,isAwake)) && !(_patient getVariable [QGVAR(BVMInUse), false]);
