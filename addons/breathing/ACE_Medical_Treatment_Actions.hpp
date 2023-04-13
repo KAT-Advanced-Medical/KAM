@@ -172,23 +172,28 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(GVAR(enableCyanosis) && !(GVAR(cyanosisShowInMenu)));
         callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);
     };
-    class DisablePulseOximeterAudio: CheckPulse {
+    class DisablePulseOximeterAudio {
         displayName = CSTRING(PulseOximeter_Action_removeSound);
         displayNameProgress = "";
         icon = "";
+        category = "examine";
+        treatmentLocations = 0;
+        medicRequired = 0;
+        allowSelfTreatment = 1;
         allowedSelections[] = {"LeftArm", "RightArm"};
         treatmentTime = 0.01;
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(pulseoximeter), false)]) && (_patient getVariable [ARR_2(QQGVAR(PulseOximeter_VolumePatient), false)]));
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter) && _patient getVariable [ARR_2(QQGVAR(PulseOximeter_VolumePatient), false)]);
         callbackProgress = "";
         callbackStart = "";
         callbackFailure = "";
         callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(PulseOximeter_VolumePatient), false, true)]);
         animationPatient = "";
         animationMedic = "";
+        litter[] = {};
     };
     class EnablePulseOximeterAudio: DisablePulseOximeterAudio {
         displayName = CSTRING(PulseOximeter_Action_addSound);
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(pulseoximeter), false)]) && !(_patient getVariable [ARR_2(QQGVAR(PulseOximeter_VolumePatient), false)]));
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter) && !(_patient getVariable [ARR_2(QQGVAR(PulseOximeter_VolumePatient), false)]));
         callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(PulseOximeter_VolumePatient), true, true)]);
     };
 };

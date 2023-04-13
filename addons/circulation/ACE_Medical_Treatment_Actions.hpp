@@ -152,10 +152,13 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, false)] call FUNC(returnAED_X));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
-    class DisableAEDXAudio: CheckPulse {
+    class DisableAEDXAudio {
         displayName = CSTRING(X_Action_removeSound);
         displayNameProgress = "";
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
+        category = "examine";
+        treatmentLocations = 0;
+        medicRequired = 0;
         allowedSelections[] = {"Body"};
         treatmentTime = 0.01;
         allowSelfTreatment = 0;
