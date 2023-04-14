@@ -161,7 +161,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 2;
         items[] = {};
-        condition = true;
+        condition = "true";
         callbackSuccess = QFUNC(inspectBreath);
         animationMedic = "";
         animationMedicProne = "";

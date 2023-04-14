@@ -23,52 +23,52 @@ private _entries = [];
 
 // Add selected body part name
 private _bodyPartName = [
-    "STR_ACE_medical_gui_Head",
-    "STR_ACE_medical_gui_Torso",
-    "STR_ACE_medical_gui_LeftArm",
-    "STR_ACE_medical_gui_RightArm",
-    "STR_ACE_medical_gui_LeftLeg",
-    "STR_ACE_medical_gui_RightLeg"
+    ACELSTRING(medical_gui,Head),
+    ACELSTRING(medical_gui,Torso),
+    ACELSTRING(medical_gui,LeftArm),
+    ACELSTRING(medical_gui,RightArm),
+    ACELSTRING(medical_gui,LeftLeg),
+    ACELSTRING(medical_gui,RightLeg)
 ] select _selectionN;
 
 _entries pushBack [localize _bodyPartName, [1, 1, 1, 1]];
 
 // Indicate if unit is bleeding at all
 if (IS_BLEEDING(_target)) then {
-    _entries pushBack [localize "STR_ACE_medical_gui_Status_Bleeding", [1, 0, 0, 1]];
+    _entries pushBack [localize ACELSTRING(medical_gui,Status_Bleeding), [1, 0, 0, 1]];
 };
 
 if(ACEGVAR(medical_gui,showBloodLossEntry)) then {
     // Give a qualitative description of the blood volume lost
     switch (GET_HEMORRHAGE(_target)) do {
         case 1: {
-            _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood1", [1, 1, 0, 1]];
+            _entries pushBack [localize ACELSTRING(medical_gui,Lost_Blood1), [1, 1, 0, 1]];
         };
         case 2: {
-            _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood2", [1, 0.67, 0, 1]];
+            _entries pushBack [localize ACELSTRING(medical_gui,Lost_Blood2), [1, 0.67, 0, 1]];
         };
         case 3: {
-            _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood3", [1, 0.33, 0, 1]];
+            _entries pushBack [localize ACELSTRING(medical_gui,Lost_Blood3), [1, 0.33, 0, 1]];
         };
         case 4: {
-            _entries pushBack [localize "STR_ACE_medical_gui_Lost_Blood4", [1, 0, 0, 1]];
+            _entries pushBack [localize ACELSTRING(medical_gui,Lost_Blood4), [1, 0, 0, 1]];
         };
     };
 };
 
 // Indicate if a tourniquet is applied
 if (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
-    _entries pushBack [localize "STR_ACE_medical_gui_Status_Tourniquet_Applied", [0.77, 0.51, 0.08, 1]];
+    _entries pushBack [localize ACELSTRING(medical_gui,Status_Tourniquet_Applied), [0.77, 0.51, 0.08, 1]];
 };
 
 // Indicate current body part fracture status
 switch (GET_FRACTURES(_target) select _selectionN) do {
     case 1: {
-        _entries pushBack [localize "STR_ACE_medical_gui_Status_Fractured", [1, 0, 0, 1]];
+        _entries pushBack [localize ACELSTRING(medical_gui,Status_Fractured), [1, 0, 0, 1]];
     };
     case -1: {
-        if ((ACEGVAR(medical,fractures)) in [2, 3]) then { 
-            _entries pushBack [localize "STR_ACE_medical_gui_Status_SplintApplied", [0.2, 0.2, 1, 1]];    
+        if ((ACEGVAR(medical,fractures)) in [2, 3]) then {
+            _entries pushBack [localize ACELSTRING(medical_gui,Status_SplintApplied), [0.2, 0.2, 1, 1]];
         };
     };
 };
@@ -79,13 +79,13 @@ if (_target call ACEFUNC(common,isAwake)) then {
     if (_pain > 0) then {
         private _painText = switch (true) do {
             case (_pain > 0.5): {
-                "STR_ACE_medical_treatment_Status_SeverePain";
+                ACELSTRING(medical_treatment,Status_SeverePain);
             };
             case (_pain > 0.1): {
-                "STR_ACE_medical_treatment_Status_Pain";
+                ACELSTRING(medical_treatment,Status_Pain);
             };
             default {
-                "STR_ACE_medical_treatment_Status_MildPain";
+                ACELSTRING(medical_treatment,Status_MildPain);
             };
         };
         _entries pushBack [localize _painText, [1, 1, 1, 1]];
@@ -104,7 +104,7 @@ private _fnc_getWoundDescription = {
     if (_amountOf >= 1) then {
         format ["%1x %2", ceil _amountOf, _woundName];
     } else {
-        format [localize "STR_ACE_medical_gui_PartialX", _woundName];
+        format [localize ACELSTRING(medical_gui,PartialX), _woundName];
     };
 };
 
@@ -165,11 +165,11 @@ if (_target getVariable [QGVAR(recovery), false]) then {
 // Display cyanosis in overview tab, only when head/arms are selected
 if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
     private _spO2 = 0;
-    
+
     if (alive _target) then {
         _spO2 = GET_SPO2(_target);
     };
-    
+
     if (_spO2 <= EGVAR(breathing,slightValue) || HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
         private _cyanosisArr = switch (true) do {
             case (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN));
@@ -184,7 +184,7 @@ if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
             };
         };
         _entries pushBack [(_cyanosisArr select 0), (_cyanosisArr select 1)];
-    };   
+    };
 };
 
 private _tensionhemothorax = false;
@@ -230,13 +230,13 @@ private _plasma = 0;
 
 if (_totalIvVolume >= 1) then {
     if (_saline > 1) then {
-        _entries pushBack ["Saline: " + (format [localize "STR_ACE_medical_treatment_receivingIvVolume", floor _saline]), [1, 1, 1, 1]];
+        _entries pushBack ["Saline: " + (format [localize ACELSTRING(medical_treatment,receivingIvVolume), floor _saline]), [1, 1, 1, 1]];
     };
     if (_blood > 1) then {
-        _entries pushBack ["Blood: " + (format [localize "STR_ACE_medical_treatment_receivingIvVolume", floor _blood]), [1, 1, 1, 1]];
+        _entries pushBack ["Blood: " + (format [localize ACELSTRING(medical_treatment,receivingIvVolume), floor _blood]), [1, 1, 1, 1]];
     };
     if (_plasma > 1) then {
-        _entries pushBack ["Plasma: " + (format [localize "STR_ACE_medical_treatment_receivingIvVolume", floor _plasma]), [1, 1, 1, 1]];
+        _entries pushBack ["Plasma: " + (format [localize ACELSTRING(medical_treatment,receivingIvVolume), floor _plasma]), [1, 1, 1, 1]];
     };
 };
 
@@ -254,7 +254,7 @@ if (_IVactual > 0) then {
 
 // Handle no wound entries
 if (_woundEntries isEqualTo []) then {
-    _entries pushBack [localize "STR_ACE_medical_treatment_NoInjuriesBodypart", [1, 1, 1, 1]];
+    _entries pushBack [localize ACELSTRING(medical_treatment,NoInjuriesBodypart), [1, 1, 1, 1]];
 } else {
     _entries append _woundEntries;
 };
