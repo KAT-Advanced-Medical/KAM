@@ -1,0 +1,62 @@
+name = "KAM"
+prefix = "kat"
+author = "Katalam, Tomcat, Kygan, YetheSamartaka, Battlekeeper, MJSTIC, Digii / Julian and MiszczuZPolski"
+mainprefix = "x"
+
+#modname = "{{prefix}}_mods"
+#key_name = "{{prefix}}_{{version}}"
+#authority = "{{prefix}}_{{version}}"
+
+[files]
+include = [
+    "mod.cpp",
+    "README.md",
+    "LICENSE.md",
+    "KAMLogoLowRes.paa",
+    "KAMLogoHighRes.paa",
+    "AUTHORS.txt"
+]
+
+[version]
+git_hash = 0
+
+#[properties]
+#version = "{{git \"id 8\"}}"
+
+[lint.sqf]
+enabled = true # Default: true
+exclude = [
+    "a3/3DEN/UI/macroexecs.inc",
+    "a3/ui_f/hpp/defineResincl.inc",
+    "a3/ui_f/hpp/defineDIKCodes.inc",
+    "a3/ui_f/hpp/defineCommonGrids.inc",
+    "a3/ui_f/hpp/defineCommonColors.inc",
+]
+
+
+
+[asc]
+enabled = true
+exclude = [
+    "/initsettings.sqf",
+    "/initkeybinds.sqf",
+    "/xeh_prep.sqf",
+    "/surgery/XEH_preInit.sqf",
+    "/pharma/XEH_preInit.sqf",
+    "fnc_showMessage.sqf",
+    "fnc_updateCategories.sqf",
+    "/chemical/functions/fnc_chemDetector.sqf",
+    "/circulation/functions/fnc_treatment.sqf",
+    "/misc/functions/fnc_handleRespawn.sqf",
+    "/chemical/functions/fnc_gasCheck.sqf",
+    "/breathing/functions/fnc_fullHealLocal.sqf"
+]
+
+[hemtt.config]
+preset = "Hemtt"
+
+[hemtt.launch]
+workshop = [
+    "450814997", # CBA_A3's Workshop ID
+    "463939057", # ACE3's Workshop ID
+]
