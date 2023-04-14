@@ -18,6 +18,25 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(treatmentTimeDetachTourniquet),
+    "SLIDER",
+    [LLSTRING(SETTING_treatmentTimeDetachTourniquet)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [1, 60, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(neckTourniquet),
+    "CHECKBOX",
+    [LLSTRING(neckTourniquetDescription)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+
 //Incompatibility Warning with other addons
 [
     QGVAR(incompatibilityWarning),
@@ -37,7 +56,6 @@ PREP_RECOMPILE_END;
     [true],
     true
 ] call CBA_Settings_fnc_init;
-
 
 if (GVAR(arsenalMedCategory)) then {
     [

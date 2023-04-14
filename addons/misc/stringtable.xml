@@ -370,6 +370,9 @@
             <Spanish>Parámetros básicos</Spanish>
             <Portuguese>Configurações básicas</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
+            <English>Time to take off tourniquet</English>
+        </Key>
         <Key ID="STR_KAT_Misc_SETTING_arsenalMedCategory">
             <English>Arsenal Medical category</English>
             <Czech>Zdravotnická kategorie arzenálu</Czech>
@@ -425,6 +428,10 @@
             <Spanish>Camilla (Plegada)</Spanish>
             <Turkish>Sedye (Paketli)</Turkish>
             <Portuguese>Maca (Embalada)</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Misc_NeckTourniquetDescription">
+            <English>Neck Tourniquet</English>
+            <Polish>Staza na szyi</Polish>
         </Key>
     </Package>
 </Project>

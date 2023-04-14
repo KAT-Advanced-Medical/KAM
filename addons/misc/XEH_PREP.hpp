@@ -6,6 +6,8 @@ PREP(attachStretcher);
 PREP(conditionIV);
 PREP(conditionIVstand);
 PREP(handleRespawn);
+PREP(headTourniquet);
+PREP(headTourniquetLocal);
 PREP(heliAddActionDeploy);
 PREP(heliStretcherAttach);
 PREP(incompatibilityWarning);

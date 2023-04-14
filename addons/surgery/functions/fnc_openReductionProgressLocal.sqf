@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg", 2.1] call kat_surgery_fnc_openFractureProgressLocal;
+ * [player, cursorObject, "LeftLeg", 2.1] call kat_surgery_fnc_openReductionProgressLocal;
  *
  * Public: No
  */
@@ -63,11 +63,11 @@ if (_number == _liveFracture) exitWith {
         };
     };
 
-    [_patient, "quick_view", LSTRING(surgery_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select _part]] call ACEFUNC(medical_treatment,addToLog);  
+    [_patient, "quick_view", LSTRING(surgery_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select _part]] call ACEFUNC(medical_treatment,addToLog);
 
     _liveFracture = _liveFracture + 0.2;
 
-    if (_reduce == true) then {
+    if (_reduce) then {
         _liveFracture = _liveFracture + 1;
     };
 

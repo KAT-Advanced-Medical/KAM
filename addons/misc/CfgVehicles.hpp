@@ -90,7 +90,7 @@ class CfgVehicles {
         tf_isolatedAmount = 0;
         numberPhysicalWheels = 0;
         hideProxyInCombat = 0;
-        hideWeaponsCargo = true;
+        hideWeaponsCargo = "true";
         ejectDeadCargo = 0;
         class Damage {
             tex[] = {};

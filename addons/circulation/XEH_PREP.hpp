@@ -15,6 +15,7 @@ PREP(compatible);
 PREP(cprLocal);
 PREP(cprSuccess);
 PREP(drawBlood);
+PREP(generateBloodType);
 PREP(getDogtagData);
 PREP(groupID);
 PREP(handleTreatment);

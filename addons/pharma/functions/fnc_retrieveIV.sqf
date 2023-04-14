@@ -24,10 +24,12 @@ private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _newArray = _patient getVariable [QACEGVAR(medical,ivBags), []];
 private _IVactual = _IVarray select _partIndex;
 
-if (_IVactual == 1) then {
-    _medic addItem "kat_IO_FAST";
-} else {
-    _medic addItem "kat_IV_16";
+if(GVAR(IVreuse)) then {
+    if (_IVactual == 1) then {
+        _medic addItem "kat_IO_FAST";
+    } else {
+        _medic addItem "kat_IV_16";
+    };
 };
 
 _IVarray set [_partIndex, 0];
