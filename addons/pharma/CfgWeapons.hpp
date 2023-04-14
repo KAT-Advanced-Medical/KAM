@@ -44,7 +44,7 @@ class CfgWeapons {
         scope = 2;
         displayName = CSTRING(IV_16_Display);
         picture = QPATHTOF(ui\icon_IV_16.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\kat_iv.p3d);
         descriptionShort = CSTRING(IV_DescShort);
         hiddenSelections[]={"0"};
         hiddenSelectionsMaterials[] = {QPATHTOF(models\iv\kat_iv.rvmat)};
