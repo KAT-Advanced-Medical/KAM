@@ -150,7 +150,7 @@ if (!local _unit) then {
         if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(SpO2_unconscious)}) then {
             [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
         };
-            
+
         if(GVAR(staminaLossAtLowSPO2)) then {
             if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(lowSPO2Level)}) then {
                 if (ACEGVAR(advanced_fatigue,enabled)) then {
@@ -162,7 +162,7 @@ if (!local _unit) then {
                 ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
             };
         };
-        
+
         if (_unit getVariable [QGVAR(pneumothorax), false] || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false]) then {
             if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false])) then {
                 if (!(_unit getVariable [QGVAR(PneumoBreathCooldownOn), false])) then {

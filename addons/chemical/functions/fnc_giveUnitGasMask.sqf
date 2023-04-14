@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Player <Player>
  * 1: Target <OBJECT>
@@ -26,15 +26,15 @@ private _fnc_replaceItem = {
     params["_medic","_patient","_playerGasMask"];
     if(goggles _patient == "") then {
         _patient linkItem _playerGasMask;
-    } else { 
+    } else {
         private _pCurGoggles = goggles _patient;
-        if(_patient canAdd _pCurGoggles) then{ 
-            _patient addItem _pCurGoggles 
+        if(_patient canAdd _pCurGoggles) then{
+            _patient addItem _pCurGoggles
         } else {
             if(_medic canAdd _pCurGoggles) then { _medic addItem _pCurGoggles} else {
                 private _weaponHolder = createVehicle ["Weapon_Empty", getPosATL player, [], 0, "CAN_COLLIDE"];
                 _weaponHolder addItemCargo [_pCurGoggles, 1];
-            }; 
+            };
         };
         _patient linkItem _playerGasMask;
     };
