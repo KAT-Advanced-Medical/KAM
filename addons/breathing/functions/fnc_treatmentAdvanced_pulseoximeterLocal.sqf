@@ -58,10 +58,13 @@ _patient setVariable [QGVAR(PulseOximeter_Attached), _attachedPulseOximeter, tru
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    private _HR = GET_HEART_RATE(_patient);
     private _SpO2 = _patient getVariable [QGVAR(airwayStatus), 100];
 
-    if(_patient getVariable [QGVAR(PulseOximeter_VolumePatient), false] && _SpO2 < GVAR(PulseOximeter_SpO2Warning) && !([_patient,_bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo))) then {
+    if (([_patient,_bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo))) then {
+        _SpO2 = 0;
+    };
+
+    if(_patient getVariable [QGVAR(PulseOximeter_VolumePatient), false] && _SpO2 < GVAR(PulseOximeter_SpO2Warning)) then {
         playSound3D [QPATHTOF_SOUND(audio\pulseoximeter_warning.wav), _patient, false, getPosASL _patient, 4, 1, 15];
     };
 }, 3, [_patient, _bodyPart]] call CBA_fnc_addPerFrameHandler;
