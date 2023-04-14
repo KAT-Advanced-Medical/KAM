@@ -101,7 +101,7 @@ class CfgVehicles {
             class ACE_Equipment {
                 class AED_X_removeSound {
                     displayName = CSTRING(X_Action_removeSound);
-                    condition = QUOTE('kat_X_AED' in (items _player) && (_player getVariable [QQGVAR(AED_X_Volume), false]));
+                    condition = QUOTE('kat_X_AED' in (items _player) && (_player getVariable [ARR_2(QQGVAR(AED_X_Volume), false])));
                     statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_Volume), false, true)]);
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
@@ -109,7 +109,7 @@ class CfgVehicles {
                 };
                 class AED_X_addSound : AED_X_removeSound {
                     displayName = CSTRING(X_Action_addSound);
-                    condition = QUOTE('kat_X_AED' in (items _player) && !(_player getVariable [QQGVAR(AED_X_Volume), false]));
+                    condition = QUOTE('kat_X_AED' in (items _player) && !(_player getVariable [ARR_2(QQGVAR(AED_X_Volume), false])));
                     statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_Volume), true, true)]);
                 };
                 class openCrossPanel {

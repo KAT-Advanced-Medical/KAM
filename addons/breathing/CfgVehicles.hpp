@@ -64,7 +64,7 @@ class CfgVehicles {
             class ACE_Equipment {
                 class PulseOximeter_removeSound {
                     displayName = CSTRING(PulseOximeter_Action_removeSound);
-                    condition = QUOTE('kat_Pulseoximeter' in (items _player) && (_player getVariable [QQGVAR(PulseOximeter_Volume), false]));
+                    condition = QUOTE('kat_Pulseoximeter' in (items _player) && (_player getVariable [ARR_2(QQGVAR(PulseOximeter_Volume), false])));
                     statement = QUOTE(_player setVariable [ARR_3(QQGVAR(PulseOximeter_Volume), false, true)]);
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
@@ -72,7 +72,7 @@ class CfgVehicles {
                 };
                 class PulseOximeter_addSound : PulseOximeter_removeSound {
                     displayName = CSTRING(PulseOximeter_Action_addSound);
-                    condition = QUOTE('kat_Pulseoximeter' in (items _player) && !(_player getVariable [QQGVAR(PulseOximeter_Volume), false]));
+                    condition = QUOTE('kat_Pulseoximeter' in (items _player) && !(_player getVariable [ARR_2(QQGVAR(PulseOximeter_Volume), false])));
                     statement = QUOTE(_player setVariable [ARR_3(QQGVAR(PulseOximeter_Volume), true, true)]);
                 };
             };
