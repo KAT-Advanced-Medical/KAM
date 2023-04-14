@@ -5,13 +5,13 @@ class CfgUIGrids {
                 class Variables {
                     ace_medical_gui_patientInfo[] = {
                         {
-                            PATIENT_INFO_IGUI_BASE_X,
-                            PATIENT_INFO_IGUI_BASE_Y,
-                            POS_W(9),
-                            POS_H(20)
+                            "PATIENT_INFO_IGUI_BASE_X",
+                            "PATIENT_INFO_IGUI_BASE_Y",
+                            "POS_W(9)",
+                            "POS_H(20)"
                         },
-                        GUI_GRID_W,
-                        GUI_GRID_H
+                        "GUI_GRID_W",
+                        "GUI_GRID_H"
                     };
                 };
             };
