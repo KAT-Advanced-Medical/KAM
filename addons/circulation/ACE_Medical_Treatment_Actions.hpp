@@ -3,7 +3,7 @@ class ACE_Medical_Treatment_Actions {
     class Morphine;
     class CheckPulse;
     class CPR {
-        condition = QUOTE(([ARR_2(_medic,_patient)] call ace_medical_treatment_fnc_canCPR) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
     };
 
     class CheckDogtags: CheckPulse {
@@ -18,13 +18,13 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
-    class CheckBloodPressure: CheckPulse { 
+    class CheckBloodPressure: CheckPulse {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
-    class CheckRhythm: CheckPulse { 
+    class CheckRhythm: CheckPulse {
         displayName = CSTRING(Rhythm);
         displayNameProgress = CSTRING(Checking_Rhythm);
         allowedSelections[] = {"Body"};
@@ -40,9 +40,9 @@ class ACE_Medical_Treatment_Actions {
     class KAT_DrawBlood500: CheckPulse {
         displayName = CSTRING(DrawBlood500_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
-        treatmentTime = GVAR(blood_drawTime_500ml);
+        treatmentTime = QGVAR(blood_drawTime_500ml);
         allowedSelections[] = {"LeftArm", "RightArm"};
-        allowSelfTreatment = GVAR(enable_selfBloodDraw);
+        allowSelfTreatment = QGVAR(enable_selfBloodDraw);
         category = "advanced";
         medicRequired = 0;
         consumeItem = 1;
@@ -56,9 +56,9 @@ class ACE_Medical_Treatment_Actions {
     class KAT_DrawBlood250: CheckPulse {
         displayName = CSTRING(DrawBlood250_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
-        treatmentTime = GVAR(blood_drawTime_250ml);
+        treatmentTime = QGVAR(blood_drawTime_250ml);
         allowedSelections[] = {"LeftArm", "RightArm"};
-        allowSelfTreatment = GVAR(enable_selfBloodDraw);
+        allowSelfTreatment = QGVAR(enable_selfBloodDraw);
         category = "advanced";
         medicRequired = 0;
         consumeItem = 1;
@@ -71,14 +71,14 @@ class ACE_Medical_Treatment_Actions {
     };
 
     #include "Blood_Medical.hpp"
-    
+
     class AED: CPR {
         displayName = CSTRING(Defib_Action_Use);
         displayNameProgress = CSTRING(AED_PROGRESS);
         icon = QPATHTOF(ui\defib.paa);
         items[] = {"kat_AED"};
         treatmentTime = 10;
-        condition = QUOTE(([_medic,_patient] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackStart = QFUNC(AEDStart);
         callbackProgress = QFUNC(AEDProgress);
         callbackSuccess = QFUNC(AEDSuccess);

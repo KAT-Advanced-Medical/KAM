@@ -225,7 +225,7 @@ if (EGVAR(pharma,coagulation)) then {
 
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
-    
+
     ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
