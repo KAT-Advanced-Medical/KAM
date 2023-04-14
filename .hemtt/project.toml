@@ -36,7 +36,7 @@ exclude = [
 
 
 [asc]
-enabled = false # need to fix the repeats in the varables before enabled
+enabled = true
 exclude = [
     "/initsettings.sqf",
     "/initkeybinds.sqf",
@@ -60,11 +60,3 @@ workshop = [
     "450814997", # CBA_A3's Workshop ID
     "463939057", # ACE3's Workshop ID
 ]
-parameters = [
-    "-skipIntro",           # These parameters are passed to the Arma 3 executable
-    "-noSplash",            # They do not need to be added to your list
-    "-showScriptErrors",    # You can add additional parameters here
-    "-debug",
-    "-filePatching",
-]
-
