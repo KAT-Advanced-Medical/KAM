@@ -40,16 +40,7 @@ enabled = true
 exclude = [
     "/initsettings.sqf",
     "/initkeybinds.sqf",
-    "/xeh_prep.sqf",
-    "/surgery/XEH_preInit.sqf",
-    "/pharma/XEH_preInit.sqf",
-    "fnc_showMessage.sqf",
-    "fnc_updateCategories.sqf",
-    "/chemical/functions/fnc_chemDetector.sqf",
-    "/circulation/functions/fnc_treatment.sqf",
-    "/misc/functions/fnc_handleRespawn.sqf",
-    "/chemical/functions/fnc_gasCheck.sqf",
-    "/breathing/functions/fnc_fullHealLocal.sqf"
+    "/xeh_prep.sqf"
 ]
 
 [hemtt.config]
