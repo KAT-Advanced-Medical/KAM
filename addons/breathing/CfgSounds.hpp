@@ -22,6 +22,7 @@ class CfgSounds
         sound[] = { QPATHTOF(audio\hemo_sounds.ogg), 2, 1, 3 };
         titles[] = {};
     };
+
     class GVAR(pneumothoraxcough) {
         name = QGVAR(pneumothoraxcough);
 

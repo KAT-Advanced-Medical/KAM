@@ -843,6 +843,12 @@
             <Japanese>聴診器を使用した際の呼吸音の音の大きさを設定します</Japanese>
             <Portuguese>Determina quão altos são os sons respiratórios ao usar o estetoscópio</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_stethoscopeListeningTime">
+            <English>Stethoscope Listening Time</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_stethoscopeListeningTime_DESC">
+            <English>Sets how long the stethoscope listening period is</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_unconscious">
             <English>Unconscious SpO2 value</English>
             <Polish>Wartość SpO2 powodująca nieprzytomność</Polish>
@@ -1335,6 +1341,15 @@
             <Korean>깜빡임 경고 표시 및 스태미나 손실 효과를 얻게 되는 산소포화도 값을 변경합니다.</Korean>
             <Italian>Ti permette di cambiare il valore di SPO2 al quale ricevi l'indicatore lampeggiante d'allerta e l'effetto di perdita della stamina </Italian>
             <Portuguese>Permite alterar o valor SpO2 no qual você é avisado e sofre perda de stamina</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PulseOximeter_Action_addSound">
+            <English>Enable Pulse Oximeter Alarm</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PulseOximeter_Action_removeSound">
+            <English>Disable Pulse Oximeter Alarm</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning">
+            <English>Pulse Oximeter Alarm SpO2 Threshold</English>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM">
             <English>Use BVM</English>

@@ -62,6 +62,19 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_SelfActions {
             class ACE_Equipment {
+               class PulseOximeter_removeSound {
+                    displayName = CSTRING(PulseOximeter_Action_removeSound);
+                    condition = QUOTE('kat_Pulseoximeter' in (items _player) && (_player getVariable [ARR_2(QQGVAR(PulseOximeter_Volume), false])));
+                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(PulseOximeter_Volume), false, true)]);
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                    icon = "";
+                };
+                class PulseOximeter_addSound : PulseOximeter_removeSound {
+                    displayName = CSTRING(PulseOximeter_Action_addSound);
+                    condition = QUOTE('kat_Pulseoximeter' in (items _player) && !(_player getVariable [ARR_2(QQGVAR(PulseOximeter_Volume), false])));
+                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(PulseOximeter_Volume), true, true)]);
+                };
                 class SetPreferred_OxygenTank_150 {
                     displayName = CSTRING(SetPreferredOxygenTank_150);
                     condition = QUOTE([ARR_2(_player, 'kat_oxygenTank_150')] call ACEFUNC(common,hasMagazine));

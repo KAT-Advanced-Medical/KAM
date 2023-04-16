@@ -142,6 +142,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
+// Sets time required to attach AED-X monitor
+[
+    QGVAR(AED_X_AttachTime),
+    "SLIDER",
+    LLSTRING(SETTING_AED_X_AttachTime),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [1, 60, 10, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets time required to detach AED-X monitor
+[
+    QGVAR(AED_X_DetachTime),
+    "SLIDER",
+    LLSTRING(SETTING_AED_X_DetachTime),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [1, 60, 5, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 //Distance limit for AED-X
 [
     QGVAR(distanceLimit_AEDX),
@@ -178,6 +198,26 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_AED_BeepsAndCharge), LLSTRING(SETTING_AED_BeepsAndCharge_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets type of tone played on AED-X monitor when patient has no heart rate
+[
+    QGVAR(AED_X_Monitor_NoHeartRate),
+    "LIST",
+    [LLSTRING(SETTING_AED_X_Monitor_NoHeartRate)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [[0, 1], [LLSTRING(SETTING_AED_X_Monitor_NoHeartRate_Continous), LLSTRING(SETTING_AED_X_Monitor_NoHeartRate_Alternating)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets SpO2 level threshold for audible warning
+[
+    QGVAR(AED_X_Monitor_SpO2Warning),
+    "SLIDER",
+    LELSTRING(breathing,SETTING_Threshold_SpO2Warning),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [1, 100, 85, 1],
     true
 ] call CBA_Settings_fnc_init;
 
