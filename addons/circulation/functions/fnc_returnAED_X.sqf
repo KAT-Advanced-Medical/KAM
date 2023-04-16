@@ -22,6 +22,7 @@ params ["_medic", "_patient", "_AEDreturn"];
 private _output = LLSTRING(X_Action_Remove);
 
 _patient setVariable [QGVAR(X), false, true];
+_medic setVariable [QGVAR(AED_X_Volume), _patient getVariable [QGVAR(AED_X_VolumePatient), false], true];
 
 if (_AEDreturn) then {
     _medic setVariable [QGVAR(use), false, true];

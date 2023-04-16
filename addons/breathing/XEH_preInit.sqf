@@ -128,6 +128,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets SpO2 level threshold for audible warning
+[
+    QGVAR(PulseOximeter_SpO2Warning),
+    "SLIDER",
+    LLSTRING(SETTING_Threshold_SpO2Warning),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 100, 85, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // breathing probability for a pneumothorax
 // a pneumothorax is the presence of air or gas in the cavity between the lungs and the chest wall
 [
@@ -344,7 +354,7 @@ PREP_RECOMPILE_END;
     QGVAR(stethoscopeSoundVolume),
     "SLIDER",
     [LLSTRING(SETTING_stethoscopeSoundVolume), LLSTRING(SETTING_stethoscopeSoundVolume_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [0, 4, 2, 1],
     2,
     {
@@ -352,5 +362,75 @@ PREP_RECOMPILE_END;
     },
     false
 ] call CBA_Settings_fnc_init;
+
+// Sets how long stethoscope listening action lasts
+[
+    QGVAR(stethoscopeListeningTime),
+    "SLIDER",
+    [LLSTRING(SETTING_stethoscopeListeningTime), LLSTRING(SETTING_stethoscopeListeningTime_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 60, 15, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets BVM use period
+[
+    QGVAR(BVMTime),
+    "SLIDER",
+    [LLSTRING(SETTING_BVMTime), LLSTRING(SETTING_BVMTime_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [0.1, 60, 15, 1],
+    false
+] call CBA_Settings_fnc_init;
+
+// Sets required medical level for BVM usage
+[
+    QGVAR(medLvl_BVM),
+    "LIST",
+    [LLSTRING(SETTING_BVM_MedLvl),LLSTRING(SETTING_BVM_MedLvl_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Sets required medical level for Pocket BVM usage
+[
+    QGVAR(medLvl_PocketBVM),
+    "LIST",
+    [LLSTRING(SETTING_PocketBVM_MedLvl),LLSTRING(SETTING_PocketBVM_MedLvl_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Sets required medical level for BVM with oxygen usage
+[
+    QGVAR(medLvl_BVM_Oxygen),
+    "LIST",
+    [LLSTRING(SETTING_BVM_Oxygen_MedLvl),LLSTRING(SETTING_BVM_Oxygen_MedLvl_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Sets required medical level for BVM with oxygen usage
+[
+    QGVAR(medLvl_BVM_Oxygen),
+    "LIST",
+    [LLSTRING(SETTING_BVM_Oxygen_MedLvl),LLSTRING(SETTING_BVM_Oxygen_MedLvl_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Sets time required to refill oxygen tank
+[
+    QGVAR(PortableOxygenTank_RefillTime),
+    "SLIDER",
+    [LLSTRING(SETTING_PortableOxygenTank_RefillTime),LLSTRING(SETTING_PortableOxygenTank_RefillTime_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [0.1, 60, 5, 1],
+    true
+] call CBA_settings_fnc_init;
 
 ADDON = true;

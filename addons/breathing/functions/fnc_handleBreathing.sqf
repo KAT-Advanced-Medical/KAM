@@ -52,6 +52,8 @@ if (!local _unit) then {
     private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
     private _heartRate = _unit getVariable [QACEGVAR(medical,heartRate), 0];
     private _blockDeath = _unit getVariable [QACEGVAR(medical,deathblocked), false];
+    private _BVMInUse = _unit getVariable [QGVAR(BVMInUse), false];
+    private _oxygenAssisted = _unit getVariable [QGVAR(oxygenTankConnected), false];
 
     private _output = 0;
     private _finalOutput = 0;
@@ -73,8 +75,28 @@ if (!local _unit) then {
     };
 
     if !([_unit] call ACEFUNC(common,isAwake)) exitWith {
-        if !(_breathing) exitWith {
+        if (!_breathing && !_BVMInUse) exitWith {
             _output = -0.3 * _multiplierNegative;
+            _finalOutput = _status + _output;
+
+            if (_finalOutput > 100) then {
+                _finalOutput = 100;
+            };
+
+            if (_finalOutput < 1) then {
+                _finalOutput = 1;
+            };
+
+            _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
+        };
+
+        if (!_breathing && _BVMInUse) exitWith {
+            if(_oxygenAssisted) then {
+                _output = -0.05 * _multiplierNegative;
+            } else {
+                _output = -0.1 * _multiplierNegative;
+            };
+            
             _finalOutput = _status + _output;
 
             if (_finalOutput > 100) then {
@@ -93,12 +115,28 @@ if (!local _unit) then {
 
             if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) || _breathing)) then {
                 if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
-                    _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
+                    if(_BVMInUse) then {
+                        if(_oxygenAssisted) then {
+                            _output = -0.01 * GVAR(SpO2_PerfusionMultiplier);
+                        } else {
+                            _output = -0.12 * GVAR(SpO2_PerfusionMultiplier);
+                        };
+                    } else {
+                        _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
+                    };
                 } else {
-                    _output = 0.15 * _multiplierPositive;
+                    if (_BVMInUse) then {
+                        if(_oxygenAssisted) then {
+                            _output = 0.5 * _multiplierPositive;
+                        } else {
+                            _output = 0.2 * _multiplierPositive;
+                        };
+                    } else {
+                        _output = 0.12 * _multiplierPositive;
+                    };
                 };
             };
-
+            
             _finalOutput = _status + _output;
 
             if (_finalOutput > 100) then {
@@ -113,11 +151,28 @@ if (!local _unit) then {
         };
 
         if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
-            _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
+            if(_BVMInUse) then {
+                if(_oxygenAssisted) then {
+                    _output = -0.01 * GVAR(SpO2_PerfusionMultiplier);
+                } else {
+                    _output = -0.1 * GVAR(SpO2_PerfusionMultiplier);
+                };
+            } else {
+                _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
+            };
+            
         };
 
         if (_heartRate >= 25) then {
-            _output = 0.3 * _multiplierPositive;
+            if(_BVMInUse) then {
+                if(_oxygenAssisted) then {
+                    _output = 0.8 * _multiplierPositive;
+                } else {
+                    _output = 0.45 * _multiplierPositive;
+                };
+            } else {
+                _output = 0.2 * _multiplierPositive;
+            };
         };
 
         _finalOutput = _status + _output;
@@ -167,10 +222,16 @@ if (!local _unit) then {
             if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false])) then {
                 if (!(_unit getVariable [QGVAR(PneumoBreathCooldownOn), false])) then {
                     _unit setVariable [QGVAR(PneumoBreathCooldownOn), true, true];
-                    _unit say3D QGVAR(pneumothoraxcough);
+
+                    private _soundTargets = allPlayers inAreaArray [ASLToAGL getPosASL _unit, 15, 15, 0, false, 15];
+
+                    if !(_soundTargets isEqualTo []) then {
+                        [QGVAR(playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
+                    };
+                    
                     [{
                         params["_unit"];
-                        _unit setVariable [QGVAR(PneumoBreathCooldownOn), false];
+                        _unit setVariable [QGVAR(PneumoBreathCooldownOn), false, true];
                     },
                     [_unit], 30] call CBA_fnc_waitAndExecute;
                 };

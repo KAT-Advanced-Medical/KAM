@@ -154,6 +154,12 @@ if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then 
     };
 };
 
+if(_target getVariable [QEGVAR(breathing,pulseoximeter), false] && _selectionN in [2,3]) then {
+    if((_target getVariable [QEGVAR(breathing,PulseOximeter_Attached), [0,0]] select (_selectionN - 2)) > 0) then {
+        _entries pushback [LELSTRING(breathing,Pulseoximeter_Desc_Short), [0.3, 0.8, 0.8, 1]];
+    };
+};
+
 if (_target getVariable [QGVAR(overstretch), false] && _selectionN isEqualTo 0) then {
     _woundEntries pushback [LLSTRING(overstretched), [0.1, 1, 1, 1]];
 };

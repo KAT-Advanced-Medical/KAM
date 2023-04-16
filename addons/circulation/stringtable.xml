@@ -1106,7 +1106,7 @@
             <Portuguese>Disconectando</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_X_Action_removeSound">
-            <English>Turn down volume of AED X</English>
+            <English>Disable AED-X monitor audio</English>
             <German>AED-X leiser schalten</German>
             <Polish>Wycisz dźwięki AED X</Polish>
             <Spanish>Bajar el volúmen del DEA X</Spanish>
@@ -1122,7 +1122,7 @@
             <Portuguese>Abaixar o volume do DEA-X</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_X_Action_addSound">
-            <English>Turn up volume of AED X</English>
+            <English>Enable AED-X monitor audio</English>
             <German>AED-X lauter schalten</German>
             <Polish>Włącz dźwięki AED X</Polish>
             <Spanish>Subir el volúmen del DEA X</Spanish>
@@ -1532,6 +1532,12 @@
             <Italian>Livello d'addestramento richiesto per usare il DAE-X</Italian>
             <Japanese>AED-Xの使用に訓練レベルを必要とさせます。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um DEA-X</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_AttachTime">
+            <English>Time required to attach AED-X monitor</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_DetachTime">
+            <English>Time required to detach AED-X monitor</English>
         </Key>
         <Key ID="STR_KAT_Circulation_DISTANCELIMIT_AED_X">
             <English>Distance limit for AED-X in meters</English>
@@ -1976,6 +1982,15 @@
             <Korean>X-시리즈 AED: 맥박: %1 혈압: %2 /%3 산소포화도: %4</Korean>
             <German>AED-X: HR: %1 BP: %2/%3 SpO2: %4</German>
             <Portuguese>DEA-X: HR: %1 BP: %2/%3 SpO2: %4</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate">
+            <English>AED-X Monitor no heart rate beep type</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Continous">
+            <English>Continous tone</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Alternating">
+            <English>Alternating tone</English>
         </Key>
     </Package>
 </Project>

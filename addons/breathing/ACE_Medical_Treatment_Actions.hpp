@@ -10,7 +10,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Pulseoximeter);
         treatmentTime = 2;
         items[] = {"kat_Pulseoximeter"};
-        condition = "kat_breathing_enable && !(_patient getVariable ['kat_breathing_pulseoximeter', false])";
+        condition = QUOTE(missionNamespace getVariable [ARR_2(QQGVAR(enable),true)] && !(_patient getVariable [ARR_2(QQGVAR(pulseoximeter), false)]) && !([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter)));
         callbackSuccess = QFUNC(treatmentAdvanced_pulseoximeter);
         callbackFailure = "";
         callbackProgress = "";
@@ -34,7 +34,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Pulseoximeter);
         treatmentTime = 2;
         items[] = {};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(pulseoximeter), false)]);
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter));
         callbackSuccess = QFUNC(treatmentAdvanced_removePulseoximeter);
         callbackFailure = "";
         callbackProgress = "";
@@ -144,18 +144,19 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
-    class listentolungs: CheckPulse {
+    class ListenToLungs: CheckPulse {
         displayName = CSTRING(auscultateLung_display);
         displayNameProgress = CSTRING(listening_progress);
-        treatmentTime = 14;
+        treatmentTime = QGVAR(stethoscopeListeningTime);
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
         category = "airway";
         medicRequired = 0;
         consumeItem = 0;
-        callbackStart = QUOTE([ARR_2(_medic, _patient)] spawn FUNC(listenLungs));
-        callbackSuccess = "";
+        callbackStart = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), true, true)]; [ARR_2(_medic, _patient)] spawn FUNC(listenLungs));
+        callbackSuccess = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), false, true)]);
         callbackProgress = "";
+        callbackFailure = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), false, true)]);
         condition = "true";
         items[] = {"kat_stethoscope"};
         animationPatient = "";
@@ -171,5 +172,83 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Cyanosis);
         condition = QUOTE(GVAR(enableCyanosis) && !(GVAR(cyanosisShowInMenu)));
         callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);
+    };
+    class DisablePulseOximeterAudio {
+        displayName = CSTRING(PulseOximeter_Action_removeSound);
+        displayNameProgress = "";
+        icon = "";
+        category = "examine";
+        treatmentLocations = 0;
+        medicRequired = 0;
+        allowSelfTreatment = 1;
+        allowedSelections[] = {"LeftArm", "RightArm"};
+        treatmentTime = 0.01;
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter) && _patient getVariable [ARR_2(QQGVAR(PulseOximeter_VolumePatient), false)]);
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(PulseOximeter_VolumePatient), false, true)]);
+        animationPatient = "";
+        animationMedic = "";
+        litter[] = {};
+    };
+    class EnablePulseOximeterAudio: DisablePulseOximeterAudio {
+        displayName = CSTRING(PulseOximeter_Action_addSound);
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter) && !(_patient getVariable [ARR_2(QQGVAR(PulseOximeter_VolumePatient), false)]));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(PulseOximeter_VolumePatient), true, true)]);
+    };
+    class UseBVM {
+        displayName = CSTRING(UseBVM);
+        displayNameProgress = CSTRING(UseBVM_Progress);
+        category = "airway";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_BVM);
+        treatmentTime = QGVAR(BVMTime);
+        consumeItem = 0;
+        items[] = {"kat_BVM"};
+        condition = QUOTE(_patient call FUNC(canUseBVM));
+        callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(useBVM));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+        callbackProgress = "";
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationMedic = "AinvPknlMstpSnonWnonDr_medic0";
+        animationMedicProne = "AinvPknlMstpSnonWnonDr_medic0";
+        litter[] = {};
+        icon = QPATHTOF(ui\BVM_ui.paa);
+    };
+    class UsePocketBVM: UseBVM {
+        displayName = CSTRING(UsePocketBVM);
+        displayNameProgress = CSTRING(UsePocketBVM_Progress);
+        medicRequired = QGVAR(medLvl_PocketBVM);
+        items[] = {"kat_pocketBVM"};
+        condition = QUOTE(_patient call FUNC(canUseBVM));
+        callbackStart = QUOTE([ARR_4(_medic, _patient, true, false)] call FUNC(useBVM));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+    };
+    class UseBVMPortableOxygen: UseBVM {
+        displayName = CSTRING(UseBVM_PortableOxygen);
+        displayNameProgress = CSTRING(UseBVM_PortableOxygen_Progress);
+        medicRequired = QGVAR(medLvl_BVM_Oxygen);
+        items[] = {"kat_BVM"};
+        condition = QUOTE(_patient call FUNC(canUseBVM) && _medic call FUNC(hasOxygenTank) && !(_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)));
+        callbackStart = QUOTE([ARR_5(_medic, _patient, false, true, true)] call FUNC(useBVM));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+    };
+    class UseBVMOxygen: UseBVM {
+        displayName = CSTRING(UseBVM_Oxygen);
+        displayNameProgress = CSTRING(UseBVM_Oxygen_Progress);
+        medicRequired = QGVAR(medLvl_BVM_Oxygen);
+        items[] = {"kat_BVM"};
+        condition = QUOTE(_patient call FUNC(canUseBVM) && (_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)));
+        callbackStart = QUOTE([ARR_4(_medic, _patient, false, true)] call FUNC(useBVM));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
     };
 };
