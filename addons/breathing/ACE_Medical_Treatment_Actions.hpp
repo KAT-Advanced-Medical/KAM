@@ -10,7 +10,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Pulseoximeter);
         treatmentTime = 2;
         items[] = {"kat_Pulseoximeter"};
-        condition = "kat_breathing_enable && !(_patient getVariable ['kat_breathing_pulseoximeter', false])";
+        condition = QUOTE(missionNamespace getVariable [ARR_2(QQGVAR(enable),true)] && !(_patient getVariable [ARR_2(QQGVAR(pulseoximeter), false)]) && !([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter)));
         callbackSuccess = QFUNC(treatmentAdvanced_pulseoximeter);
         callbackFailure = "";
         callbackProgress = "";
@@ -34,7 +34,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Pulseoximeter);
         treatmentTime = 2;
         items[] = {};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(pulseoximeter), false)]);
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter));
         callbackSuccess = QFUNC(treatmentAdvanced_removePulseoximeter);
         callbackFailure = "";
         callbackProgress = "";
@@ -171,5 +171,29 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Cyanosis);
         condition = QUOTE(GVAR(enableCyanosis) && !(GVAR(cyanosisShowInMenu)));
         callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);
+    };
+    class DisablePulseOximeterAudio {
+        displayName = CSTRING(PulseOximeter_Action_removeSound);
+        displayNameProgress = "";
+        icon = "";
+        category = "examine";
+        treatmentLocations = 0;
+        medicRequired = 0;
+        allowSelfTreatment = 1;
+        allowedSelections[] = {"LeftArm", "RightArm"};
+        treatmentTime = 0.01;
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter) && _patient getVariable [ARR_2(QQGVAR(PulseOximeter_VolumePatient), false)]);
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(PulseOximeter_VolumePatient), false, true)]);
+        animationPatient = "";
+        animationMedic = "";
+        litter[] = {};
+    };
+    class EnablePulseOximeterAudio: DisablePulseOximeterAudio {
+        displayName = CSTRING(PulseOximeter_Action_addSound);
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter) && !(_patient getVariable [ARR_2(QQGVAR(PulseOximeter_VolumePatient), false)]));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(PulseOximeter_VolumePatient), true, true)]);
     };
 };

@@ -57,4 +57,25 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_X_AED,2);
         };
     };
+
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class ACE_Equipment {
+                class PulseOximeter_removeSound {
+                    displayName = CSTRING(PulseOximeter_Action_removeSound);
+                    condition = QUOTE('kat_Pulseoximeter' in (items _player) && (_player getVariable [ARR_2(QQGVAR(PulseOximeter_Volume), false])));
+                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(PulseOximeter_Volume), false, true)]);
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                    icon = "";
+                };
+                class PulseOximeter_addSound : PulseOximeter_removeSound {
+                    displayName = CSTRING(PulseOximeter_Action_addSound);
+                    condition = QUOTE('kat_Pulseoximeter' in (items _player) && !(_player getVariable [ARR_2(QQGVAR(PulseOximeter_Volume), false])));
+                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(PulseOximeter_Volume), true, true)]);
+                };
+            };
+        };
+    };
 };

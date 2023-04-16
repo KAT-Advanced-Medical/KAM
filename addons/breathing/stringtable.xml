@@ -1336,5 +1336,14 @@
             <Italian>Ti permette di cambiare il valore di SPO2 al quale ricevi l'indicatore lampeggiante d'allerta e l'effetto di perdita della stamina </Italian>
             <Portuguese>Permite alterar o valor SpO2 no qual você é avisado e sofre perda de stamina</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Breathing_PulseOximeter_Action_addSound">
+            <English>Enable Pulse Oximeter Alarm</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PulseOximeter_Action_removeSound">
+            <English>Disable Pulse Oximeter Alarm</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning">
+            <English>Pulse Oximeter Alarm SpO2 Threshold</English>
+        </Key>
     </Package>
 </Project>

@@ -18,8 +18,8 @@
 params ["_unit"];
 
 _unit setVariable [QGVAR(X), false, true];
-_unit setVariable [QGVAR(X_sound1), QPATHTOF_SOUND(sounds\noheartrate.wav), true];
-_unit setVariable [QGVAR(X_sound2), QPATHTOF_SOUND(sounds\heartrate.wav), true];
+_unit setVariable [QGVAR(AED_X_Volume), true, true];
+_unit setVariable [QGVAR(AED_X_VolumePatient), false, true];
 _unit setVariable [QGVAR(use), false, true];
 _unit setVariable [QGVAR(returnedAED), false, true];
 _unit setVariable [QGVAR(asystole), 1, true];

@@ -1,3 +1,4 @@
+PREP(checkPulseOximeter);
 PREP(fullHealLocal);
 PREP(handleBreathing);
 PREP(handlePulmoHit);
