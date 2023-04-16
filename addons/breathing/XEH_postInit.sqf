@@ -8,4 +8,9 @@
 [QGVAR(cyanosisLocal), LINKFUNC(treatmentAdvanced_CyanosisLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(lowSpO2pp), LINKFUNC(lowSpO2pp)] call CBA_fnc_addEventHandler;
 
+[QGVAR(playCough), {
+    params ["_unit"];
+    _unit say3D [QGVAR(pneumothoraxcough), 15];
+}] call CBA_fnc_addEventHandler;
+
 [QACEGVAR(medical,woundReceived),LINKFUNC(handlePulmoHit)] call CBA_fnc_addEventHandler;
