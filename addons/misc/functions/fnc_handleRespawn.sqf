@@ -48,6 +48,8 @@ _unit setVariable ["kat_breathing_pulseoximeter", false, true];
 _unit setVariable ["kat_PulseoxiInUse_PFH", nil];
 _unit setVariable ["kat_O2Breathing_PFH", nil];
 
+_unit setVariable [QEGVAR(breathing,usingStethoscope), nil];
+
 // KAT Circulation
 
 _unit setVariable [QEGVAR(circulation,X), false, true];

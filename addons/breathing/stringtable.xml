@@ -843,6 +843,12 @@
             <Japanese>聴診器を使用した際の呼吸音の音の大きさを設定します</Japanese>
             <Portuguese>Determina quão altos são os sons respiratórios ao usar o estetoscópio</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_stethoscopeListeningTime">
+            <English>Stethoscope Listening Time</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_stethoscopeListeningTime_DESC">
+            <English>Sets how long the stethoscope listening period is</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_unconscious">
             <English>Unconscious SpO2 value</English>
             <Polish>Wartość SpO2 powodująca nieprzytomność</Polish>

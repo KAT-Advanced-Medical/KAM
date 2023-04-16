@@ -354,13 +354,23 @@ PREP_RECOMPILE_END;
     QGVAR(stethoscopeSoundVolume),
     "SLIDER",
     [LLSTRING(SETTING_stethoscopeSoundVolume), LLSTRING(SETTING_stethoscopeSoundVolume_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [0, 4, 2, 1],
     2,
     {
         player setVariable [QGVAR(stethoscopeSoundVolume), _this, true];
     },
     false
+] call CBA_Settings_fnc_init;
+
+// Sets how long stethoscope listening action lasts
+[
+    QGVAR(stethoscopeListeningTime),
+    "SLIDER",
+    [LLSTRING(SETTING_stethoscopeListeningTime), LLSTRING(SETTING_stethoscopeListeningTime_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 60, 15, 1],
+    true
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;
