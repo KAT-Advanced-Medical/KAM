@@ -14,3 +14,6 @@
 }] call CBA_fnc_addEventHandler;
 
 [QACEGVAR(medical,woundReceived),LINKFUNC(handlePulmoHit)] call CBA_fnc_addEventHandler;
+
+["kat_oxygenTank_300_Item", "kat_oxygenTank_300"] call ACEFUNC(common,registerItemReplacement);
+["kat_oxygenTank_150_Item", "kat_oxygenTank_150"] call ACEFUNC(common,registerItemReplacement);
