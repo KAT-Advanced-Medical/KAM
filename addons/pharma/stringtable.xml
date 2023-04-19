@@ -1174,6 +1174,7 @@
             <Korean>페르피틴 속도 부스트</Korean>
             <Japanese>ペルビチン速度上昇</Japanese>
             <Portuguese>Aumento de velocidade do Pervitin</Portuguese>
+            <French>Boost de vitesse de la pervitine</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_DESC">
             <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
@@ -1181,6 +1182,7 @@
             <Korean>페르피틴 효과 1단계에서 설정되는 애니메이션 속도. (1 = 정상, 2 = 두 배)</Korean>
             <Japanese>ペルビチン効果の第一段階でのアニメーションの再生速度を設定します (1 = 通常、2 = 2倍速)</Japanese>
             <Portuguese>A velocidade da animação definida no Estágio 1 do Pervitin. (1 = normal, 2 = duas vezes)</Portuguese>
+            <French>La vitesse de déplacement étant redéfinie durant le stage 1 de la pervitine. (1 = normal, 2 = doublée)1</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>
@@ -2363,6 +2365,7 @@
             <Italian>Il paziente non sta respirando</Italian>
             <German>Patient atmet nicht</German>
             <Portuguese>O paciente não está respirando</Portuguese>
+            <French>Le patient ne respire pas</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>

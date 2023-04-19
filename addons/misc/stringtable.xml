@@ -372,6 +372,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>
+            <French>Temps pour retirer un garrot</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_arsenalMedCategory">
             <English>Arsenal Medical category</English>
@@ -432,6 +433,7 @@
         <Key ID="STR_KAT_Misc_NeckTourniquetDescription">
             <English>Neck Tourniquet</English>
             <Polish>Staza na szyi</Polish>
+            <French>Garrot de cou</French>
         </Key>
     </Package>
 </Project>
