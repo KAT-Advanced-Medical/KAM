@@ -43,5 +43,5 @@ jobs:
       - name: Upload Release
         uses: actions/upload-artifact@v2
         with:
-        name: '@kat'
-        path: '.hemttout/release/*'    
+          name: '@kat'
+          path: '.hemttout/release/*'    
