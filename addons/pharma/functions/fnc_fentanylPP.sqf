@@ -34,7 +34,7 @@ if (GVAR(chromatic_aberration_checkbox_fentanyl)) then {
             };
             _handle ppEffectEnable true;
             _handle ppEffectAdjust _effect;
-            _handle ppEffectCommit 360;
+            _handle ppEffectCommit 360; // 6m for max chroma
             
             [{    params["_handle"];
                 
@@ -43,7 +43,7 @@ if (GVAR(chromatic_aberration_checkbox_fentanyl)) then {
                 }, 
                 {    params["_handle"];
                     _handle ppEffectAdjust [0.005, 0.005, false];
-                    _handle ppEffectCommit 480; //lowering until 15m
+                    _handle ppEffectCommit 480; // lowering until 15m
 
                     [{  params["_handle"];
                         ppEffectCommitted _handle
@@ -59,5 +59,5 @@ if (GVAR(chromatic_aberration_checkbox_fentanyl)) then {
             [_handle], 360] call CBA_fnc_waitAndExecute; // wait until 7m for change to lower again
         };
     },
-    [_target], 60] call CBA_fnc_waitAndExecute; // 60s chroma start
+    [_target], 60] call CBA_fnc_waitAndExecute; // chroma start after 60s
 };
