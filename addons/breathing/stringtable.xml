@@ -675,6 +675,7 @@
             <Korean>혈기흉 내 출혈량</Korean>
             <Italian>Quantità di sanguinamento interno da emopneumotorace</Italian>
             <Portuguese>Quantidade de hemorragia interna causada por hemopneumotórax</Portuguese>
+            <French>Quantité de saignements internes de l'hémopneumothorax</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount_DESC">
             <English>Sets amount of internal bleeding that is applied while suffering from hemopneumothorax</English>
@@ -682,6 +683,7 @@
             <Korean>혈기흉을 앓는 동안 적용되는 내부 출혈량으 설정합니다.</Korean>
             <Italian>Imposta la quantità di sanguinamento interno che avviene quando hai un emopneumotorace</Italian>
             <Portuguese>Define a quantidade de hemorragia interna que ocorre enquanto sofre de hemopneumotórax</Portuguese>
+            <French>Règle la quantité de saignements internes subis lorsqu'une personne souffre d'un hémopneumothorax</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_hardcore">
             <English>Hardcore pneumothorax</English>
@@ -845,9 +847,11 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_stethoscopeListeningTime">
             <English>Stethoscope Listening Time</English>
+            <French>Temps d'écoute du stéthoscope</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_stethoscopeListeningTime_DESC">
             <English>Sets how long the stethoscope listening period is</English>
+            <French>Règle la durée d'une période d'écoute avec un stéthoscope</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_unconscious">
             <English>Unconscious SpO2 value</English>
@@ -1050,6 +1054,7 @@
             <Korean>개요 탭에 치아노제 표시</Korean>
             <Italian>Mostra la cianosi nella tabella di overview</Italian>
             <Portuguese>Mostrar cianose na guia de visão geral</Portuguese>
+            <French>Afficher la cyanose dans la vue d'ensemble</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Cyanosis_ShowInMenu_DESC">
             <English>Shows cyanosis of patient in overview tab and hides cyanosis diagnose action</English>
@@ -1057,6 +1062,7 @@
             <Korean>개요 탭에 환자의 치아노제를 표시하고 치아노제 진단 행동을 숨깁니다.</Korean>
             <Italian>Mostra la cianosi del paziente nella tabella overview e nascondi l'azione di diagnosi della cianosi</Italian>
             <Portuguese>Mostra a cianose do paciente na guia de visão geral e oculta a ação de diagnóstico de cianose</Portuguese>
+            <French>Affiche la cyanose dans la vue d'ensemble du patient et cache l'action de contrôle de la cyanose</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -1344,126 +1350,167 @@
         </Key>
         <Key ID="STR_KAT_Breathing_PulseOximeter_Action_addSound">
             <English>Enable Pulse Oximeter Alarm</English>
+            <French>Activer l'alarme de l'oxymètre de pouls</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PulseOximeter_Action_removeSound">
             <English>Disable Pulse Oximeter Alarm</English>
+            <French>Désactiver l'alarme de l'oxymètre de pouls</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning">
             <English>Pulse Oximeter Alarm SpO2 Threshold</English>
+            <French>Niveau de SpO2 déclenchant l'alarme de l'oxymètre de pouls</French>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM">
             <English>Use BVM</English>
+            <French>Utiliser le BVM</French>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Progress">
             <English>Using BVM</English>
+            <French>BVM en cours d'utilisation</French>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM">
             <English>Use Pocket BVM</English>
+            <French>Utiliser le BVM de poche</French>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM_Progress">
             <English>Using Pocket BVM</English>
+            <French>BVM de poche en cours d'utilisation</French>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen">
             <English>Use BVM with Oxygen Tank</English>
+            <French>Utiliser le BVM avec un réservoir à oxygène</French>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Progress">
             <English>Using BVM with Oxygen Tank</English>
+            <French>Utilisation du BVM avec un réservoir à oxygène</French>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Oxygen">
             <English>Use BVM with Oxygen</English>
+            <French>Utiliser le BVM avec de l'oxygène</French>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Oxygen_Progress">
             <English>Using BVM with Oxygen</English>
+            <French>Utilisation du BVM avec de l'oxygène</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
+            <French>Réservoir à oxygène déconnecté (vide)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Progress">
             <English>Refilling Portable Oxygen Tank</English>
+            <French>Remplissage du réservoir à oxygène portable</French>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Complete">
             <English>Oxygen Tank Refill Complete</English>
+            <French>Remplissage du réservoir à oxygène terminé</French>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Cancel">
             <English>Oxygen Tank Refill Cancelled</English>
+            <French>Remplissage du réservoir à oxygène annulé</French>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTanks">
             <English>Refill Portable Oxygen Tank</English>
+            <French>Remplir le réservoir à oxygène portable</French>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_150">
             <English>Refill Portable Oxygen Tank (150L)</English>
+            <French>Remplir le réservoir à oxygène portable (150L)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_300">
             <English>Refill Portable Oxygen Tank (300L)</English>
+            <French>Remplir le réservoir à oxygène portable (300L)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Display">
             <English>BVM</English>
+            <French>BVM</French>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Desc_Short">
             <English>Bag-Valve-Mask, used to assist with breathing of unconscious patients</English>
+            <French>Ballon-masque, utilisé pour assister la respiration de patients inconscients</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Display">
             <English>Pocket BVM</English>
+            <French>BVM de poche</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Desc_Short">
             <English>Compact version of the Bag-Valve-Mask</English>
+            <French>Version compacte du ballon-masque</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Display">
             <English>Portable Oxygen Tank (150L)</English>
+            <French>Réservoir à oxygène portable (150L)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Desc_Short">
             <English>Portable Oxygen Tank, containing 150L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
+            <French>Réservoir à oxygène portable, contenant 150L d'oxygène. Connectez le à un BVM pour assister la respiration de patients en état critique</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Display">
             <English>Portable Oxygen Tank (300L)</English>
+            <French>Réservoir à oxygène portable (300L)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Desc_Short">
             <English>Portable Oxygen Tank, containing 300L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
+            <French>Réservoir à oxygène portable, contenant 300L d'oxygène. Connectez le à un BVM pour assister la respiration de patients en état critique</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
             <English>Empty Portable Oxygen Tank (150L)</English>
+            <French>Réservoir à oxygène portable vide (150L)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Empty_Display">
             <English>Empty Portable Oxygen Tank (300L)</English>
+            <French>Réservoir à oxygène portable vide (300L)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_Empty_Desc_Short">
             <English>Empty Portable Oxygen Tank, refill at a medical vehicle or facility</English>
+            <French>Réservoir à oxygène portable vide, remplissez le dans un véhicule ou un lieu médicalisé</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMTime">
             <English>BVM Use Time</English>
+            <French>Temps d'utilisation du BVM</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMTime_DESC">
             <English>Sets BVM usage period length</English>
+            <French>Règle le temps nécessaire pour utiliser le BVM</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
+            <French>Autoriser le BVM</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl_DESC">
             <English>Sets required medical level to use BVM</English>
+            <French>Règle le niveau médical requis pour utiliser le BVM</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PocketBVM_MedLvl">
             <English>Allow Pocket BVM</English>
+            <French>Autoriser le BVM de poche</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PocketBVM_MedLvl_DESC">
             <English>Sets required medical level to use Pocket BVM</English>
+            <French>Règle le niveau médical requis pour utiliser le BVM de poche</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_Oxygen_MedLvl">
             <English>Allow BVM with oxygen</English>
+            <French>Autoriser le BVM avec oxygène</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_Oxygen_MedLvl_DESC">
             <English>Sets required medical level to use BVM with oxygen</English>
+            <French>Règle le niveau médical requis pour utiliser le BVM avec oxygène</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime">
             <English>Portable Oxygen Tank Base Refill Time</English>
+            <French>Temps de remplissage d'un réservoir à oxygène portable</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime_DESC">
             <English>Sets time required to refill Oxygen Tank (150L)</English>
+            <French>Règle le temps requis pour remplir un réservoir à oxygène (150L)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_150">
             <English>Set Portable Oxygen Tank (150L) as preferred</English>
+            <French>Définir le réservoir à oxygène portable (150L) comme privilégié</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_300">
             <English>Set Portable Oxygen Tank (300L) as preferred</English>
+            <French>Définir le réservoir à oxygène portable (300L) comme privilégié</French>
         </Key>
     </Package>
 </Project>
