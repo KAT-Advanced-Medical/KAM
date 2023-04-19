@@ -17,6 +17,7 @@
 
 
 /// ChromAberration effect
+params ["_target"];
 
 if (GVAR(chromatic_aberration_checkbox_fentanyl)) then {
     [{
@@ -35,19 +36,19 @@ if (GVAR(chromatic_aberration_checkbox_fentanyl)) then {
             _handle ppEffectEnable true;
             _handle ppEffectAdjust _effect;
             _handle ppEffectCommit 360; // 6m for max chroma
-            
+
             [{    params["_handle"];
-                
+
                 [{  params["_handle"];
                     ppEffectCommitted _handle
-                }, 
+                },
                 {    params["_handle"];
                     _handle ppEffectAdjust [0.005, 0.005, false];
                     _handle ppEffectCommit 480; // lowering until 15m
 
                     [{  params["_handle"];
                         ppEffectCommitted _handle
-                    }, 
+                    },
                     {    params["_handle"];
                         _handle ppEffectEnable false;
                         ppEffectDestroy _handle;
