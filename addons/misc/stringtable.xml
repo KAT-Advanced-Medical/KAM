@@ -374,6 +374,7 @@
             <English>Time to take off tourniquet</English>
             <French>Temps pour retirer un garrot</French>
             <Korean>지혈대를 풀어내는 시간</Korean>
+            <Japanese>止血帯を取り外すのにかかる時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_arsenalMedCategory">
             <English>Arsenal Medical category</English>
@@ -436,6 +437,7 @@
             <Polish>Staza na szyi</Polish>
             <French>Garrot de cou</French>
             <Korean>목 지혈대</Korean>
+            <Japanese>首に止血帯を使う</Japanese>
         </Key>
     </Package>
 </Project>
