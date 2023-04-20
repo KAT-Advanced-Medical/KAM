@@ -1548,10 +1548,12 @@
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_AttachTime">
             <English>Time required to attach AED-X monitor</English>
             <French>Temps nécessaire pour attacher le moniteur de l'AED-X</French>
+            <Korean>X-시리즈 AED를 연결하는 데 필요한 시간</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_DetachTime">
             <English>Time required to detach AED-X monitor</English>
             <French>Temps nécessaire pour détacher le moniteur de l'AED-X</French>
+            <Korean>X-시리즈 AED를 떼어내는 데 필요한 시간</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_DISTANCELIMIT_AED_X">
             <English>Distance limit for AED-X in meters</English>
@@ -2000,14 +2002,17 @@
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate">
             <English>AED-X Monitor no heart rate beep type</English>
             <French>Type de bip du moniteur de l'AED-X en cas d'absence de rythme cardiaque</French>
+            <Korean>X-시리즈 AED 모니터 심박수 소리 유형 없음</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Continous">
             <English>Continous tone</English>
             <French>Bip continu</French>
+            <Korean>연속음</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Alternating">
             <English>Alternating tone</English>
             <French>Bip alternant</French>
+            <Korean>교대음</Korean>
         </Key>
     </Package>
 </Project>
