@@ -6,7 +6,7 @@
             <German>Akzeptierte Gasmasken</German>
             <French>Masques à gaz acceptés</French>
             <Korean>방독면 허용</Korean>
-            <Japanese>許可された防毒マスク</Japanese>
+            <Japanese>認証済みのガスマスク</Japanese>
             <Italian>Maschere a gas accettate</Italian>
             <Portuguese>Permitir máscaras de gás</Portuguese>
         </Key>
@@ -14,7 +14,7 @@
             <English>Enter here the classname of the masks that should work with the system.</English>
             <German>Um externe Gasmasken zu integrieren, hier Classnames eintragen.</German>
             <French>Entrez ici le classname des masques à gaz fonctionnant avec le système</French>
-            <Japanese>システムで動作するマスクのクラス名をここに入力します。</Japanese>
+            <Japanese>システムで動作させたいガスマスクのクラス名をここに入力します。</Japanese>
             <Korean>시스템에서 작동해야 하는 마스크의 클래스네임을 입력합니다.</Korean>
             <Italian>Inserisci qui la classname delle maschere a gas che dovrebbero funzionare con il sistema.</Italian>
             <Portuguese>Digite aqui o classname das máscaras que devem funcionar com o sistema.</Portuguese>
@@ -132,7 +132,7 @@
             <German>Haltbarkeit der Gasmaske prüfen</German>
             <French>Vérifier la durabilité du masque à gaz</French>
             <Korean>방독면 지속시간 확인</Korean>
-            <Japanese>ガスマスクの寿命を確認</Japanese>
+            <Japanese>ガスマスクの耐久寿命を確認</Japanese>
             <Italian>Controlla la durabilità della maschera a gas</Italian>
             <Portuguese>Checar a durabilidade da máscara de gás</Portuguese>
         </Key>
@@ -158,7 +158,7 @@
             <English>Unmute Chemical Detector.</English>
             <German>Chemischen Detektor laut schalten.</German>
             <French>Activer le son du détecteur de produits chimiques</French>
-            <Japanese>化学検知器をミュート解除</Japanese>
+            <Japanese>化学検知器のミュート解除</Japanese>
             <Korean>화학물 탐지기 음소거 해제</Korean>
             <Italian>Smuta il rilevatore chimico</Italian>
             <Portuguese>Ativar som de detector químico</Portuguese>
