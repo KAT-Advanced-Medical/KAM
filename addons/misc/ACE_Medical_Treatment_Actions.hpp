@@ -33,11 +33,4 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(headTourniquet);
         litter[] = {};
     };
-    class RemoveNeckTourniquet: ApplyNeckTourniquet {
-        displayName = ACECSTRING(medical_treatment,Actions_RemoveTourniquet);
-        displayNameProgress = ACECSTRING(medical_treatment,RemovingTourniquet);
-        items[] = {};
-        condition = QUOTE([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo));
-        callbackSuccess = QACEFUNC(medical_treatment,tourniquetRemove);
-    };
 };
