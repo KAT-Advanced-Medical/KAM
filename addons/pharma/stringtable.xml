@@ -1173,7 +1173,7 @@
             <Korean>페르피틴이 무기의 흔들림에 영향을 미치는지의 여부를 활성화합니다.</Korean>
             <Italian>Attiva se il pervitin debba influenzare l'oscillazione dell'arma</Italian>
             <Portuguese>Ativa se o Pervitin influenciar o balanço da sua arma</Portuguese>
-            <Polish>Włącza efekt zmiany kołysania broni po spożycui pervitinu</Polish>
+            <Polish>Włącza efekt zmiany kołysania broni po spożyciu pervitinu</Polish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_displayName">
             <English>Pervitin Speed Boost</English>
@@ -1191,7 +1191,7 @@
             <Japanese>ペルビチン効果の第一段階でのアニメーションの再生速度を設定します (1 = 通常、2 = 2倍速)</Japanese>
             <Portuguese>A velocidade da animação definida no Estágio 1 do Pervitin. (1 = normal, 2 = duas vezes)</Portuguese>
             <French>La vitesse de déplacement étant redéfinie durant le stage 1 de la pervitine. (1 = normal, 2 = doublée)1</French>
-            <Polish>Prędkość animacji po zażyciu pervitinu (1 = nromalnie, 2 = podwójnie)</Polish>
+            <Polish>Prędkość animacji po zażyciu pervitinu (1 = normalnie, 2 = podwójnie)</Polish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>
@@ -2543,7 +2543,7 @@
             <Korean>페르피틴 복용</Korean>
             <Italian>Assumi Pervitin</Italian>
             <Portuguese>Tomar Pervitin</Portuguese>
-            <Polish>Zażyj Pervitinu</Polish>
+            <Polish>Użyj Pervitin</Polish>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_start">
             <English>The pervitin makes you feel awake and full of endless POWER</English>
@@ -2663,7 +2663,7 @@
             <Korean>카페인 복용</Korean>
             <Italian>Assumi Caffeina</Italian>
             <Portuguese>Tomar Cafeína</Portuguese>
-            <Polish>Zażyj kofeinę</Polish>
+            <Polish>Użyj kofeinę</Polish>
         </Key>
         <Key ID="STR_KAT_Pharma_EACA_DescShort">
             <English>Encourages clot formation</English>
