@@ -686,7 +686,7 @@
             <Italian>Imposta la quantità di sanguinamento interno che avviene quando hai un emopneumotorace</Italian>
             <Portuguese>Define a quantidade de hemorragia interna que ocorre enquanto sofre de hemopneumotórax</Portuguese>
             <French>Règle la quantité de saignements internes subis lorsqu'une personne souffre d'un hémopneumothorax</French>
-            <German>Legt die menge an Blutverlust fest die der Patient verliert wärend ein Hämopneumothorax anwesend ist</German>
+            <German>Legt die menge an Blutverlust fest die der Patient verliert wärend ein Hämopneumothorax vorhanden ist</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_hardcore">
             <English>Hardcore pneumothorax</English>
@@ -1420,7 +1420,7 @@
             <French>Utilisation du BVM avec un réservoir à oxygène</French>
             <Korean>산소 탱크가 달린 인공호흡기 사용 중</Korean>
             <Japanese>BVMと酸素ボンベを使用中</Japanese>
-            <German>Beatme mit BVM &amp; Sauerstofftank</German>
+            <German>Beatme mit BVM & Sauerstofftank</German>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Oxygen">
             <English>Use BVM with Oxygen</English>
@@ -1434,7 +1434,7 @@
             <French>Utilisation du BVM avec de l'oxygène</French>
             <Korean>산소 연결 인공호흡기 사용 중</Korean>
             <Japanese>BVMと酸素を使用中</Japanese>
-            <German>Beatme mit BVM &amp; Sauerstoff</German>
+            <German>Beatme mit BVM & Sauerstoff</German>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
