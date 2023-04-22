@@ -1637,14 +1637,14 @@
             <French>Définir le réservoir à oxygène portable (150L) comme privilégié</French>
             <Korean>휴대용 산소 탱크 (150L)를 선호</Korean>
             <Japanese>携帯用酸素ボンベ (150L) を優先に設定</Japanese>
-            <German>Definiere den 150L variante als bevorzugten Sauerstofftank fest</German>
+            <German>Definiere den 150L Variante als bevorzugten Sauerstofftank fest</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_300">
             <English>Set Portable Oxygen Tank (300L) as preferred</English>
             <French>Définir le réservoir à oxygène portable (300L) comme privilégié</French>
             <Korean>휴대용 산소 탱크 (300L)를 선호</Korean>
             <Japanese>携帯用酸素ボンベ (300L) を優先に設定</Japanese>
-            <German>Definiere die 300L variante als bevorzugten Sauerstofftank fest</German>
+            <German>Definiere die 300L Variante als bevorzugten Sauerstofftank fest</German>
         </Key>
     </Package>
 </Project>
