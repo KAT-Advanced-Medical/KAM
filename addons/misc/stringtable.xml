@@ -375,7 +375,7 @@
             <French>Temps pour retirer un garrot</French>
             <Korean>지혈대를 풀어내는 시간</Korean>
             <Japanese>止血帯を取り外すのにかかる時間</Japanese>
-            <German>Tourniquet entfern Zeit</German>
+            <German>Erforderliche Zeit zum Entfernen des Tourniquet</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_arsenalMedCategory">
             <English>Arsenal Medical category</English>

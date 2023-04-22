@@ -313,7 +313,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_TRAININGLEVEL_PULSEOXIMETER">
             <English>Training level required to use a Pulseoximeter</English>
-            <German>Benötigtes Trainings Level um ein Pulsoximeter zu nutzen</German>
+            <German>Benötigter medizinischer Grad, um das Pulsoximeter zu nutzen</German>
             <Polish>Poziom wyszkolenia wymagany do korzystania z pulsoksymetru</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar un oxímetro de pulso</Spanish>
             <Chinese>使用脈搏血氧儀所需的培訓水平</Chinese>
@@ -345,7 +345,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_TRAININGLEVEL_CHESTSEAL">
             <English>Training level required to use a Chest Seal</English>
-            <German>Benötigtes Trainings Level um ein Chest Seal zu nutzen</German>
+            <German>Benötigter medizinischer Grad, um ein Chest Seal zu nutzen</German>
             <Polish>Poziom wyszkolenia wymagany do korzystania z Chest Seal'a</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar un sello torácico</Spanish>
             <Chinese>使用胸膜所需的訓練水平</Chinese>
@@ -686,7 +686,7 @@
             <Italian>Imposta la quantità di sanguinamento interno che avviene quando hai un emopneumotorace</Italian>
             <Portuguese>Define a quantidade de hemorragia interna que ocorre enquanto sofre de hemopneumotórax</Portuguese>
             <French>Règle la quantité de saignements internes subis lorsqu'une personne souffre d'un hémopneumothorax</French>
-            <German>Legt die menge an Blutverlust fest die der Patient verliert wärend ein Hämopneumothorax vorhanden ist</German>
+            <German>Definiert die Menge des Blutverlustes, welche der Patient während eines Hämopneumothorax verliert.</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_hardcore">
             <English>Hardcore pneumothorax</English>
@@ -1073,7 +1073,7 @@
             <Italian>Mostra la cianosi del paziente nella tabella overview e nascondi l'azione di diagnosi della cianosi</Italian>
             <Portuguese>Mostra a cianose do paciente na guia de visão geral e oculta a ação de diagnóstico de cianose</Portuguese>
             <French>Affiche la cyanose dans la vue d'ensemble du patient et cache l'action de contrôle de la cyanose</French>
-            <German>Zeigt Zyanose in der Verletzungsliste an (oben rechts), deaktiviert die Zyanose-Diagnose aktion </German>
+            <German>Zeigt Zyanose in der Verletzungsliste an (oben rechts), deaktiviert die Zyanose-Diagnose Aktion </German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -1181,7 +1181,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_CYANOSIS_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to check cyanosis.</English>
-            <German>Das Medic Level, das erforderlich ist, damit jemand eine Zyanose feststellen kann.</German>
+            <German>Benötigter medizinischer Grad, um eine Zyanose feststellen </German>
             <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie sprawdzić sinicę.</Polish>
             <Japanese>チアノーゼの確認に訓練レベルを必要とさせます。</Japanese>
             <Chinesesimp>允许检查面色所需的医疗培训水平</Chinesesimp>
@@ -1497,7 +1497,7 @@
             <French>Ballon-masque, utilisé pour assister la respiration de patients inconscients</French>
             <Korean>의식불명인 환자의 호흡을 보조하는 데 사용되는 인공호흡기</Korean>
             <Japanese>意識を失った患者の呼吸補助に使用</Japanese>
-            <German>Die Beutelventilmaske wird benutzt um das Atmen von bewustlosen Personen zu erleichtern</German>
+            <German>Die Beutelventilmaske wird benutzt um die Atmung von bewustlosen Patienten zu unterstützen</German>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Display">
             <English>Pocket BVM</English>
@@ -1588,7 +1588,7 @@
             <French>Règle le niveau médical requis pour utiliser le BVM</French>
             <Korean>인공호흡기를 사용하는 데 필요한 의료 레벨 수준을 설정합니다</Korean>
             <Japanese>BVMの使用に必要な医療レベルを設定します</Japanese>
-            <German>Das Medic Level, das erforderlich ist, um die BVM benutzen zu können</German>
+            <German>Benötigter medizinischer Grad, um die BVM zu nutzen</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PocketBVM_MedLvl">
             <English>Allow Pocket BVM</English>
@@ -1602,7 +1602,7 @@
             <French>Règle le niveau médical requis pour utiliser le BVM de poche</French>
             <Korean>인공호흡기 (포켓형)을 사용하는 데 필요한 의료 레벨 수준을 설정합니다</Korean>
             <Japanese>ポケットBVMの使用に必要な医療レベルを設定します</Japanese>
-            <German>Das Medic Level, das erforderlich ist, um die Taschen BVM benutzen zu können</German>
+            <German>Benötigter medizinischer Grad, um die Taschen BVM zu nutzen</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_Oxygen_MedLvl">
             <English>Allow BVM with oxygen</English>
@@ -1616,7 +1616,7 @@
             <French>Règle le niveau médical requis pour utiliser le BVM avec oxygène</French>
             <Korean>산소 연결 인공호흡기를 사용하는 데 필요한 의료 레벨 수준을 설정합니다</Korean>
             <Japanese>酸素で BVM を使用するために必要な医療レベルを設定します</Japanese>
-            <German>Das Medic Level, das erforderlich ist, um die BVM mit Sauerstoff benutzen zu können</German>
+            <German>Benötigter medizinischer Grad, um die BVM mit Sauerstoff zu nutzen</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime">
             <English>Portable Oxygen Tank Base Refill Time</English>
@@ -1630,21 +1630,21 @@
             <French>Règle le temps requis pour remplir un réservoir à oxygène (150L)</French>
             <Korean>산소 탱크 (150L)를 재충전하는 데 필요한 시간을 설정합니다</Korean>
             <Japanese>携帯用酸素ボンベ (150L) の補充にかかる時間を設定します</Japanese>
-            <German>Legt die Zeit fest wie lange das Nachfüllen des 150L Sauerstofftanks benötigt</German>
+            <German>Legt die Dauer des Nachfüllens eines 150L Sauerstofftanks fest</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_150">
             <English>Set Portable Oxygen Tank (150L) as preferred</English>
             <French>Définir le réservoir à oxygène portable (150L) comme privilégié</French>
             <Korean>휴대용 산소 탱크 (150L)를 선호</Korean>
             <Japanese>携帯用酸素ボンベ (150L) を優先に設定</Japanese>
-            <German>Lege 150L Sauerstofftank als bevorzugt fest</German>
+            <German>Definiere den 150L variante als bevorzugten Sauerstofftank fest</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_300">
             <English>Set Portable Oxygen Tank (300L) as preferred</English>
             <French>Définir le réservoir à oxygène portable (300L) comme privilégié</French>
             <Korean>휴대용 산소 탱크 (300L)를 선호</Korean>
             <Japanese>携帯用酸素ボンベ (300L) を優先に設定</Japanese>
-            <German>Lege 300L Sauerstofftank als bevorzugt fest</German>
+            <German>Definiere die 300L variante als bevorzugten Sauerstofftank fest</German>
         </Key>
     </Package>
 </Project>
