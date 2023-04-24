@@ -6,9 +6,9 @@ call FUNC(initKeybinds);
 
 GVAR(ppEffectPrioriry) = 399;
 [{
-	GVAR(ppEffectPrioriry) = GVAR(ppEffectPrioriry) + 1;
-	GVAR(ppBlur) = ppEffectCreate ["DynamicBlur", GVAR(ppEffectPrioriry)];
-	GVAR(ppBlur) != -1
+    GVAR(ppEffectPrioriry) = GVAR(ppEffectPrioriry) + 1;
+    GVAR(ppBlur) = ppEffectCreate ["DynamicBlur", GVAR(ppEffectPrioriry)];
+    GVAR(ppBlur) != -1
 }, {
-	GVAR(ppBlur) ppEffectEnable false;
+    GVAR(ppBlur) ppEffectEnable false;
 }] call CBA_fnc_waitUntilAndExecute;

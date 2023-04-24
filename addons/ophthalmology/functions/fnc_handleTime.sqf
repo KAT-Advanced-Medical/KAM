@@ -19,7 +19,7 @@ if !(GVAR(enable)) exitWith {};
 private _lastBlink = _player getVariable [QGVAR(lastBlink), 0];
 
 if (CBA_missionTime > _lastBlink + GVAR(blink_duration)) then {
-	GVAR(ppBlur) ppEffectEnable true;
-	GVAR(ppBlur) ppEffectAdjust [GVAR(blink_effect_intensity)];
-	GVAR(ppBlur) ppEffectCommit GVAR(blink_duration);
+    GVAR(ppBlur) ppEffectEnable true;
+    GVAR(ppBlur) ppEffectAdjust [GVAR(blink_effect_intensity)];
+    GVAR(ppBlur) ppEffectCommit GVAR(blink_duration);
 };
