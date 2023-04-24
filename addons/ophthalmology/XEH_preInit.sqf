@@ -14,7 +14,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     LLSTRING(SETTING_ENABLE),
     [CBA_SETTINGS_CAT, LSTRING(SETTING_SubCategory_Manual)],
-    [true],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
