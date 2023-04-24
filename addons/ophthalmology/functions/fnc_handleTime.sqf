@@ -8,13 +8,11 @@
  * None
  *
  * Public: No
- *
- * https://community.bistudio.com/wiki/DIK_KeyCodes
  */
 
 params ["_player", "_pfhID"];
 
-if !(GVAR(enable)) exitWith {};
+if !(GVAR(enableManualBlinking)) exitWith {};
 
 private _lastBlink = _player getVariable [QGVAR(lastBlink), 0];
 

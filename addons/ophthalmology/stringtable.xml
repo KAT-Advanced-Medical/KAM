@@ -2,10 +2,16 @@
 <Project name="KAT">
     <Package name="Ophthalmology">
         <Key ID="STR_KAT_Ophthalmology_blinking">
-            <English>Blink</English>
+            <English>Manual blinking</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_SETTING_SubCategory_Injury">
+            <English>Manual blinking</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_SETTING_SubCategory_Manual">
             <English>Manual blinking</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_SETTING_ENABLE_MANUAL_BLINKING">
+            <English>Activate manual blinking</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_SETTING_ENABLE">
             <English>Activate manual blinking</English>
@@ -15,6 +21,15 @@
         </Key>
         <Key ID="STR_KAT_Ophthalmology_SETTING_BLINK_EFFECT_INTENSITY">
             <English>Intensity of the pp effect</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_SETTING_DUST_EFFECT_INTENSITY">
+            <English>Intensity of the pp effect for dust in eyes</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_Blink_Display">
+            <English>Blink</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_blink_action">
+            <English>Blinking</English>
         </Key>
     </Package>
 </Project>

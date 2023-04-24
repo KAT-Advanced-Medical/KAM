@@ -19,3 +19,4 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "ACE_Medical_Treatment_Actions.hpp"
