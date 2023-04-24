@@ -4,7 +4,7 @@
 
 call FUNC(initKeybinds);
 
-GVAR(ppEffectPrioriry) = 399;
+GVAR(ppEffectPrioriry) = 1111;
 [{
     GVAR(ppEffectPrioriry) = GVAR(ppEffectPrioriry) + 1;
     GVAR(ppBlur) = ppEffectCreate ["DynamicBlur", GVAR(ppEffectPrioriry)];
