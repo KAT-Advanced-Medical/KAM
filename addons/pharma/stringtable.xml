@@ -1182,7 +1182,7 @@
             <Japanese>ペルビチン速度上昇</Japanese>
             <Portuguese>Aumento de velocidade do Pervitin</Portuguese>
             <French>Boost de vitesse de la pervitine</French>
-            <Polish>Zwiększenie prędkości</Polish>
+            <Polish>Zwiększenie prędkości ruchu</Polish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_DESC">
             <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
@@ -1645,7 +1645,7 @@
             <Korean>페르피틴으로 치료하는 시간</Korean>
             <Italian>Tempo di trattamento per il Pervitin</Italian>
             <Portuguese>Tempo de uso de Pervitin</Portuguese>
-            <Polish>Czas na użyciu Pervitinu</Polish>
+            <Polish>Czas na użycie Pervitinu</Polish>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Pervitin">
             <English>Medical level required for Pervitin</English>
@@ -2533,7 +2533,7 @@
             <Japanese>疲労の防止と回復に!</Japanese>
             <Italian>Sostanza che aumenta la performance</Italian>
             <Portuguese>Droga para aumento de performance</Portuguese>
-            <Polish>Lek zwiększający wydolność</Polish>
+            <Polish>Środek zwiększający wydolność</Polish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
