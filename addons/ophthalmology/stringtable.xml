@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Ophthalmology">
+        <Key ID="STR_KAT_Ophthalmology_blinking">
+            <English>Blink</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_SETTING_SubCategory_Manual">
+            <English>Manual blinking</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_SETTING_ENABLE">
+            <English>Activate manual blinking</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_SETTING_BLINK_DURATION">
+            <English>How long will one blink last</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_SETTING_BLINK_EFFECT_INTENSITY">
+            <English>Intensity of the pp effect</English>
+        </Key>
+    </Package>
+</Project>
