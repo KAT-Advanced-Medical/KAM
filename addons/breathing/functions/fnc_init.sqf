@@ -23,3 +23,5 @@ _unit setVariable [QGVAR(hemopneumothorax), false, true];
 _unit setVariable [QGVAR(tensionpneumothorax), false, true];
 
 _unit setVariable [QGVAR(pulseoximeter), false, true];
+_unit setVariable [QGVAR(PulseOximeter_Volume), true, true];
+_unit setVariable [QGVAR(PulseOximeter_VolumePatient), false, true];

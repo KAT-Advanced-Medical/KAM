@@ -3,9 +3,8 @@ class ACE_Medical_Treatment_Actions {
     class Morphine;
     class CheckPulse;
     class CPR {
-        condition = QUOTE(([ARR_2(_medic,_patient)] call ace_medical_treatment_fnc_canCPR) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
     };
-
     class CheckDogtags: CheckPulse {
         displayName = CSTRING(DogTag);
         displayNameProgress = CSTRING(DogTag_Action);
@@ -18,13 +17,13 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
-    class CheckBloodPressure: CheckPulse { 
+    class CheckBloodPressure: CheckPulse {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
-    class CheckRhythm: CheckPulse { 
+    class CheckRhythm: CheckPulse {
         displayName = CSTRING(Rhythm);
         displayNameProgress = CSTRING(Checking_Rhythm);
         allowedSelections[] = {"Body"};
@@ -40,9 +39,9 @@ class ACE_Medical_Treatment_Actions {
     class KAT_DrawBlood500: CheckPulse {
         displayName = CSTRING(DrawBlood500_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
-        treatmentTime = GVAR(blood_drawTime_500ml);
+        treatmentTime = QGVAR(blood_drawTime_500ml);
         allowedSelections[] = {"LeftArm", "RightArm"};
-        allowSelfTreatment = GVAR(enable_selfBloodDraw);
+        allowSelfTreatment = QGVAR(enable_selfBloodDraw);
         category = "advanced";
         medicRequired = 0;
         consumeItem = 1;
@@ -56,9 +55,9 @@ class ACE_Medical_Treatment_Actions {
     class KAT_DrawBlood250: CheckPulse {
         displayName = CSTRING(DrawBlood250_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
-        treatmentTime = GVAR(blood_drawTime_250ml);
+        treatmentTime = QGVAR(blood_drawTime_250ml);
         allowedSelections[] = {"LeftArm", "RightArm"};
-        allowSelfTreatment = GVAR(enable_selfBloodDraw);
+        allowSelfTreatment = QGVAR(enable_selfBloodDraw);
         category = "advanced";
         medicRequired = 0;
         consumeItem = 1;
@@ -71,14 +70,14 @@ class ACE_Medical_Treatment_Actions {
     };
 
     #include "Blood_Medical.hpp"
-    
+
     class AED: CPR {
         displayName = CSTRING(Defib_Action_Use);
         displayNameProgress = CSTRING(AED_PROGRESS);
         icon = QPATHTOF(ui\defib.paa);
         items[] = {"kat_AED"};
         treatmentTime = 10;
-        condition = QUOTE(([_medic,_patient] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackStart = QFUNC(AEDStart);
         callbackProgress = QFUNC(AEDProgress);
         callbackSuccess = QFUNC(AEDSuccess);
@@ -108,6 +107,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(X_Action_Use);
         displayNameProgress = CSTRING(X_Action_Progress);
         items[] = {"kat_X_AED"};
+        treatmentTime = QGVAR(AED_X_AttachTime);
         condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), false)]));
         consumeItem = 1;
         medicRequired = QGVAR(medLvl_AED_X);
@@ -122,7 +122,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(X_Remove_Action_Progress);
         items[] = {};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)] && !(_patient getVariable [ARR_2(QQGVAR(vehicleTrue), false)]));
-        treatmentTime = 5;
+        treatmentTime = QGVAR(AED_X_DetachTime);
         medicRequired = 0;
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, true)] call FUNC(returnAED_X));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
@@ -151,5 +151,28 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(vehicleTrue), true)]) && (_patient getVariable [ARR_2(QQGVAR(X), true)]));
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, false)] call FUNC(returnAED_X));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
+    };
+    class DisableAEDXAudio {
+        displayName = CSTRING(X_Action_removeSound);
+        displayNameProgress = "";
+        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+        category = "examine";
+        treatmentLocations = 0;
+        medicRequired = 0;
+        allowedSelections[] = {"Body"};
+        treatmentTime = 0.01;
+        allowSelfTreatment = 0;
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) && (_patient getVariable [ARR_2(QQGVAR(AED_X_VolumePatient), false)]));
+        callbackProgress = "";
+        callbackStart = "";
+        callbackFailure = "";
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(AED_X_VolumePatient), false, true)]);
+        animationPatient = "";
+        animationMedic = "";
+    };
+    class EnableAEDXAudio: DisableAEDXAudio {
+        displayName = CSTRING(X_Action_addSound);
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) && !(_patient getVariable [ARR_2(QQGVAR(AED_X_VolumePatient), false)]));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(AED_X_VolumePatient), true, true)]);
     };
 };

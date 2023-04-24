@@ -10,8 +10,8 @@ Fast Recompiling via function
     #define PREP_RECOMPILE_END      }; call _recomp; KAT_RECOMPILES pushBack _recomp;
 #else
     #define LINKFUNC(x) FUNC(x)
-    #define PREP_RECOMPILE_START /* */
-    #define PREP_RECOMPILE_END /* */
+    #define PREP_RECOMPILE_START; /* disabled */
+    #define PREP_RECOMPILE_END; /* disabled */
 #endif
 
 

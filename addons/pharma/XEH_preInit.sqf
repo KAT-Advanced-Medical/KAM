@@ -178,12 +178,12 @@ PREP_RECOMPILE_END;
 
 //Lorazepam Settings Category
 [
-	QGVAR(medLvl_Lorazepam),
-	"LIST",
-	[LLSTRING(medLvl_Lorazepam)],
-	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Lorazepam)],
-	[[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-	true
+    QGVAR(medLvl_Lorazepam),
+    "LIST",
+    [LLSTRING(medLvl_Lorazepam)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Lorazepam)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
 ] call CBA_Settings_fnc_init;
 
 [
@@ -197,12 +197,12 @@ PREP_RECOMPILE_END;
 
 //Etomidate Settings Category
 [
-	QGVAR(medLvl_Etomidate),
-	"LIST",
-	[LLSTRING(medLvl_Etomidate)],
-	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Etomidate)],
-	[[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-	true
+    QGVAR(medLvl_Etomidate),
+    "LIST",
+    [LLSTRING(medLvl_Etomidate)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Etomidate)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
 ] call CBA_Settings_fnc_init;
 
 [
@@ -216,12 +216,12 @@ PREP_RECOMPILE_END;
 
 //FLumazenil Settings Category
 [
-	QGVAR(medLvl_Flumezenil),
-	"LIST",
-	[LLSTRING(medLvl_Flumazenil)],
-	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Flumazenil)],
-	[[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-	true
+    QGVAR(medLvl_Flumezenil),
+    "LIST",
+    [LLSTRING(medLvl_Flumazenil)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Flumazenil)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
 ] call CBA_Settings_fnc_init;
 
 [
@@ -273,27 +273,27 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(weapon_sway_pervitin),
-	"CHECKBOX",
-	[LLSTRING(SETTING_Weapon_Sway_Pervitin), LLSTRING(SETTING_Weapon_Sway_Pervitin_DESC)],
-	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
-	[true],
-	true
+    QGVAR(weapon_sway_pervitin),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Weapon_Sway_Pervitin), LLSTRING(SETTING_Weapon_Sway_Pervitin_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+    [true],
+    true
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(chromatic_aberration_checkbox_pervitin),
-	"CHECKBOX",
-	[LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Pervitin), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Pervitin_DESC)],
-	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
-	[true],
-	true
+    QGVAR(chromatic_aberration_checkbox_pervitin),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Pervitin), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Pervitin_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
+    [true],
+    true
 ] call CBA_Settings_fnc_init;
 
 [
     QGVAR(chromatic_aberration_slider_pervitin),
     "SLIDER",
-	[LLSTRING(SETTING_Chromatic_Aberration_Slider_Pervitin), LLSTRING(SETTING_Chromatic_Aberration_Slider_Pervitin_DESC)],
+    [LLSTRING(SETTING_Chromatic_Aberration_Slider_Pervitin), LLSTRING(SETTING_Chromatic_Aberration_Slider_Pervitin_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
     [0.1, 10, 1, 1],
     true
@@ -302,7 +302,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(pervitinSpeed),
     "SLIDER",
-	[LLSTRING(SETTING_PervitinSpeed_displayName), LLSTRING(SETTING_PervitinSpeed_DESC)],
+    [LLSTRING(SETTING_PervitinSpeed_displayName), LLSTRING(SETTING_PervitinSpeed_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Pervitin)],
     [1, 1.5, 1.15, 2],
     true
@@ -481,18 +481,18 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(chromatic_aberration_checkbox_ketamine),
-	"CHECKBOX",
-	[LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Ketamine), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Ketamine_DESC)],
-	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
-	[true],
-	true
+    QGVAR(chromatic_aberration_checkbox_ketamine),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Ketamine), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Ketamine_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
+    [true],
+    true
 ] call CBA_Settings_fnc_init;
 
 [
     QGVAR(chromatic_aberration_slider_ketamine),
     "SLIDER",
-	[LLSTRING(SETTING_Chromatic_Aberration_Slider_Ketamine), LLSTRING(SETTING_Chromatic_Aberration_Slider_Ketamine_DESC)],
+    [LLSTRING(SETTING_Chromatic_Aberration_Slider_Ketamine), LLSTRING(SETTING_Chromatic_Aberration_Slider_Ketamine_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Ketamine)],
     [0.1, 10, 0.8, 1],
     true
@@ -518,18 +518,18 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(chromatic_aberration_checkbox_fentanyl),
-	"CHECKBOX",
-	[LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Fentanyl), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Fentanyl_DESC)],
-	[CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
-	[true],
-	true
+    QGVAR(chromatic_aberration_checkbox_fentanyl),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Fentanyl), LLSTRING(SETTING_Chromatic_Aberration_Checkbox_Fentanyl_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
+    [true],
+    true
 ] call CBA_Settings_fnc_init;
 
 [
     QGVAR(chromatic_aberration_slider_fentanyl),
     "SLIDER",
-	[LLSTRING(SETTING_Chromatic_Aberration_Slider_Fentanyl), LLSTRING(SETTING_Chromatic_Aberration_Slider_Fentanyl_DESC)],
+    [LLSTRING(SETTING_Chromatic_Aberration_Slider_Fentanyl), LLSTRING(SETTING_Chromatic_Aberration_Slider_Fentanyl_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Fentanyl)],
     [0.1, 10, 1, 1],
     true
@@ -555,30 +555,30 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(kidneyAction),
-	"CHECKBOX",
-	[LLSTRING(SETTING_Kidney_Action), LLSTRING(SETTING_Kidney_Action_DESC)],
-	[CBA_SETTINGS_CAT],
-	[false],
-	true
+    QGVAR(kidneyAction),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Kidney_Action), LLSTRING(SETTING_Kidney_Action_DESC)],
+    [CBA_SETTINGS_CAT],
+    [false],
+    true
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(blockChance),
-	"SLIDER",
-	[LLSTRING(SETTING_Block_Chance), LLSTRING(SETTING_Block_Chance_DESC)],
-	CBA_SETTINGS_CAT,
-	[0, 100, 20, 0],
-	true
+    QGVAR(blockChance),
+    "SLIDER",
+    [LLSTRING(SETTING_Block_Chance), LLSTRING(SETTING_Block_Chance_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 100, 20, 0],
+    true
 ] call CBA_Settings_fnc_init;
 
 [
-	QGVAR(coagulation),
-	"CHECKBOX",
-	[LLSTRING(SETTING_Coagulation), LLSTRING(SETTING_Coagulation_DESC)],
-	CBA_SETTINGS_CAT,
-	[false],
-	true
+    QGVAR(coagulation),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation), LLSTRING(SETTING_Coagulation_DESC)],
+    CBA_SETTINGS_CAT,
+    [false],
+    true
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;

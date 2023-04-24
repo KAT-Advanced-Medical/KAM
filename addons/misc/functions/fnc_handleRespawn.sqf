@@ -39,21 +39,33 @@ _unit setVariable [QEGVAR(breathing,tensionpneumothorax), false, true];
 _unit setVariable [QEGVAR(breathing,activeChestSeal), false, true];
 _unit setVariable [QEGVAR(breathing,PneumoBreathCooldownOn), false, true];
 
+_unit setVariable [QEGVAR(breathing,BVMInUse), false, true];
+_unit setVariable [QEGVAR(breathing,oxygenTankConnected), false, true];
+_unit setVariable [QEGVAR(breathing,oxygenTankPreferred), "", true];
+
+_unit setVariable [QEGVAR(breathing,PulseOximeter_Volume), true, true];
+_unit setVariable [QEGVAR(breathing,PulseOximeter_VolumePatient), false, true];
+_unit setVariable [QEGVAR(breathing,PulseOximeter_Attached), [0,0], true];
+
+
 _unit setVariable ["kat_breathing_pulseoximeter", false, true];
 _unit setVariable ["kat_PulseoxiInUse_PFH", nil];
 _unit setVariable ["kat_O2Breathing_PFH", nil];
+
+_unit setVariable [QEGVAR(breathing,usingStethoscope), nil];
 
 // KAT Circulation
 
 _unit setVariable [QEGVAR(circulation,X), false, true];
 _unit setVariable ["kat_AEDXPatient_PFH", nil];
-_unit setVariable [QEGVAR(circulation,X_sound1), "x\kat\addons\circulation\sounds\noheartrate.wav", true];
-_unit setVariable [QEGVAR(circulation,X_sound2), "x\kat\addons\circulation\sounds\heartrate.wav", true];
+_unit setVariable [QEGVAR(circulation,AED_X_Volume), true, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VolumePatient), false, true];
 _unit setVariable [QEGVAR(circulation,use), false, true];
 _unit setVariable [QEGVAR(circulation,returnedAED), false, true];
 _unit setVariable [QEGVAR(circulation,asystole), 1, true];
 _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 _unit setVariable [QEGVAR(circulation,AEDinUse), false, true];
+_unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUNC(circulation,generateBloodType), true];
 
 // KAT Pharmacy
 
@@ -68,6 +80,7 @@ _unit setVariable [QEGVAR(pharma,pH), 1500, true];
 _unit setVariable [QEGVAR(pharma,kidneyFail), false, true];
 _unit setVariable [QEGVAR(pharma,kidneyArrest), false, true];
 _unit setVariable [QEGVAR(pharma,kidneyPressure), false, true];
+
 //KAT Surgery
 
 _unit setVariable [QEGVAR(surgery,debridement), [0,0,0,0,0,0], true];
@@ -223,16 +236,16 @@ if (EGVAR(pharma,coagulation)) then {
 
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
-    
+
     ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-	["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
 
 } else {
 
     _unit enableStamina true;
-	_unit setAnimSpeedCoef 1;
+    _unit setAnimSpeedCoef 1;
     _unit setCustomAimCoef 1;
 
 };
