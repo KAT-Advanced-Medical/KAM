@@ -1239,6 +1239,7 @@
             <Japanese>血液型割り当て</Japanese>
             <French>Attribution du groupe sanguin</French>
             <Polish>Przypisywanie grupy krwi</Polish>
+            <German>Blutgruppen Zugehörigkeit</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_DESC">
             <English>Sets how players' blood type is assigned:\nPlayer chosen: Player chooses their own blood type\nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning\nRandom: Blood type is random each respawn\nRandom (on join): Blood type is random, but doesn't change upon respawning\nSteamID: Blood type is decided based on player's steamID\nSteamID (custom list): Blood type is decided based on player's steamID and custom list</English>
@@ -1246,6 +1247,7 @@
             <Japanese>プレイヤーの血液型の割り振り方法を設定します:\nプレイヤー選択: プレイヤーが自分で選択できます。\nプレイヤー選択(強制): プレイヤーが自分で選択できます、リスポーン時に変更しません。\nランダム: リスポーン毎にランダムに指定されます。\nランダム(参加時): ランダムに指定されます。リスポーン時に変化しません。\nSteamID: プレイヤーのSteamIDを基に決定されます。\nSteamID(カスタムリスト): プレイヤーのSteamIDとカスタムリストの設定に基づいて決定されます。</Japanese>
             <French>Définit comme le groupe sanguin des joueurs est attribué :\nChoix du joueur : chaque joueur choisit son propre groupe sanguin\nChoix du joueur (forcé) : chaque joueur choisit son propre groupe sanguin, mais il ne changera pas au respawn.\nAléatoire : le groupe sanguin est choisit aléatoirement à chaque réapparition\nAléatoire (défini): le groupe sanguin est aléatoire, mais ne changera pas à la réapparition\nSteamID : le groupe groupe sanguin est basé sur le steamID des joueurs\nSteamID (liste personnalisée) : le groupe sanguin est basé sur le steamID des joueurs ainsi qu'une liste personnalisée </French>
             <Polish>Ustala w jaki sposób grupa krwi jest przydzielana: \nWybrana przez gracza: Gracz wybiera samemu grupę krwi. \nWybrana przez gracza (wymuszona): Gracz wybiera samemu grupę krwi, ale nie może jej zmienić. \nLosowo: Grupa krwi jest losowana przy każdym odrodzeniu. \nLosowo (przy dołączeniu): Grupa krwi jest losowana, ale nie zmieniana przy odrodzeniu. \nSteamID: Grupa krwi jest wybierana na podstawie steamID gracza. \nSteamID (llista): Grupa krwi jest wybierana na podstawie steamID gracza oraz listy.</Polish>
+            <German>Legt fest, wie die Blutgruppe des Spielers zugewiesen wird:\nSpieler gewählt: Der Spieler wählt seine eigene Blutgruppe\nSpieler gewählt (erzwungen): Der Spieler wählt seine eigene Blutgruppe, aber sie ändert sich beim Respawn nicht\nZufällig: Die Blutgruppe ist bei jedem Respawn zufällig \nZufällig (beim Beitritt): Die Blutgruppe ist zufällig, ändert sich aber beim Respawn nicht\nSteamID: Die Blutgruppe wird basierend auf der SteamID des Spielers festgelegt\nSteamID (benutzerdefinierte Liste): Die Blutgruppe wird basierend auf der SteamID und der benutzerdefinierten Liste des Spielers festgelegt</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player">
             <English>Player chosen</English>
@@ -1253,6 +1255,7 @@
             <Japanese>プレイヤー選択</Japanese>
             <French>Choix du joueur</French>
             <Polish>Wybrana przez gracza</Polish>
+            <German>Spieler gewählt</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player_forced">
             <English>Player chosen (forced)</English>
@@ -1260,6 +1263,7 @@
             <Japanese>プレイヤー選択(強制)</Japanese>
             <French>Choix du joueur (forcé)</French>
             <Polish>Wybrana przez gracza (wymuszona)</Polish>
+            <German>Spieler gewählt (erzwungen)</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random">
             <English>Random</English>
@@ -1267,6 +1271,7 @@
             <Japanese>ランダム</Japanese>
             <French>Aléatoire</French>
             <Polish>Losowo</Polish>
+            <German>Zufällig</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random_onJoin">
             <English>Random (on join)</English>
@@ -1274,6 +1279,7 @@
             <Japanese>ランダム(参加時)</Japanese>
             <French>Aléatoire (défini)</French>
             <Polish>Losowa (przy dołączeniu)</Polish>
+            <German>Zufällig (beim Beitritt)</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid">
             <English>SteamID</English>
@@ -1281,6 +1287,7 @@
             <Japanese>SteamID</Japanese>
             <French>SteamID</French>
             <Polish>SteamID</Polish>
+            <German>SteamID</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid_custom">
             <English>SteamID (custom list)</English>
@@ -1288,6 +1295,7 @@
             <Japanese>SteamID(カスタムリスト)</Japanese>
             <French>SteamID (liste personnalisée)</French>
             <Polish>SteamID (lista)</Polish>
+            <German>SteamID (benutzerdefinierte Liste)</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted">
             <English>Weighted Randomizer</English>
@@ -1295,6 +1303,7 @@
             <Japanese>重み付けランダム化</Japanese>
             <French>Poids aléatoire</French>
             <Polish>Losowanie ważone</Polish>
+            <German>Blutgruppen seltenheits Randomizer</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted_DESC">
             <English>Sets if random blood type given will be weighted according to blood type commonness</English>
@@ -1302,6 +1311,7 @@
             <Japanese>血液型が完全なランダム化か、希少性を基に重み付けられたランダム化をされるかを選択できます。</Japanese>
             <French>Définit si le groupe sanguin aléatoire donné est difini par les chances réalistes de groupe sanguin</French>
             <Polish>Ustala czy losowa grupa krwi będzie losowana przy użyciu ważonych szans, zgodnych z powszechnością danych grup krwi</Polish>
+            <German>Legt fest, ob zufällige Blutgruppen, die vergeben werden, unter Einfluss der Seltenheit von bestimmten Blutgruppen stehen sollen.</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player">
             <English>Blood group</English>
@@ -1325,6 +1335,7 @@
             <Japanese>血液型カスタムリスト</Japanese>
             <French>Liste personnalisée de groupe sanguin</French>
             <Polish>Lista grup krwi</Polish>
+            <German>Benutzerdefinierte Blutgruppenliste</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list_DESC">
             <English>Sets blood types that will be assigned to players based on their SteamID\nBlood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
@@ -1332,6 +1343,7 @@
             <Japanese>SteamIDによってプレイヤーに割り振られる血液型を設定します。\n血液型はカンマ(",")で区切られ、リストには合計10種の血液型が含まれる必要があります。</Japanese>
             <French>Attribue les groupes sanguins pouvant être attribués aux joueurs en se basant sur leur SteamID\n Les groupes sanguins sont séparés par des virgules (","), la liste devrait contenir un total de 10 groupes sanguins.</French>
             <Polish>Określa listę grup krwi, które na podstawie SteamID zostaną przydzielone do graczy. \nGrupy krwi są rozdzielone przy użyciu przecinka (","), lista powinna zawierać w sumie 10 zdefiniowanych elementów</Polish>
+            <German>Legt Blutgruppen fest, die Spielern basierend auf ihrer SteamID zugewiesen werden\nBlutgruppen werden durch ein Komma (",") getrennt, die Liste sollte insgesamt 10 Blutgruppen enthalten</German>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -1562,12 +1574,16 @@
             <French>Temps nécessaire pour attacher le moniteur de l'AED-X</French>
             <Korean>X-시리즈 AED를 연결하는 데 필요한 시간</Korean>
             <Polish>Czas potrzebny do podłączenia monitorowania AED-X</Polish>
+            <Japanese>AED-Xモニターの取り付けにかかる時間</Japanese>
+            <German>Erforderliche Zeit zum Anbringen des AED-X-Monitors</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_DetachTime">
             <English>Time required to detach AED-X monitor</English>
             <French>Temps nécessaire pour détacher le moniteur de l'AED-X</French>
             <Korean>X-시리즈 AED를 떼어내는 데 필요한 시간</Korean>
             <Polish>Czas potrzebny do rozłączenia monitorowania AED-X</Polish>
+            <Japanese>AED-Xモニターの取り外しにかかる時間</Japanese>
+            <German>Erforderliche Zeit zum Entfernen des AED-X-Monitors</German>
         </Key>
         <Key ID="STR_KAT_Circulation_DISTANCELIMIT_AED_X">
             <English>Distance limit for AED-X in meters</English>
@@ -2018,18 +2034,24 @@
             <French>Type de bip du moniteur de l'AED-X en cas d'absence de rythme cardiaque</French>
             <Korean>X-시리즈 AED 모니터 심박수 소리 유형 없음</Korean>
             <Polish>Rodzaj sygnału dźwiękowego w trakcie braku tętna (AEDX)</Polish>
+            <Japanese>AED-Xモニターの心拍停止時ビープ音の種類</Japanese>
+            <German>AED-X Monitor kein Herzfrequenz-Pieptyp</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Continous">
             <English>Continous tone</English>
             <French>Bip continu</French>
             <Korean>연속음</Korean>
             <Polish>Dźwięk ciągły</Polish>
+            <Japanese>連続音</Japanese>
+            <German>Dauerton</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Alternating">
             <English>Alternating tone</English>
             <French>Bip alternant</French>
             <Korean>교대음</Korean>
             <Polish>Dźwięk alternatywny</Polish>
+            <Japanese>交互音</Japanese>
+            <German>Alternativer Ton</German>
         </Key>
     </Package>
 </Project>
