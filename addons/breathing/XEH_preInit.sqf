@@ -380,7 +380,7 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_BVMTime), LLSTRING(SETTING_BVMTime_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
     [0.1, 60, 15, 1],
-    false
+    true
 ] call CBA_Settings_fnc_init;
 
 // Sets required medical level for BVM usage
