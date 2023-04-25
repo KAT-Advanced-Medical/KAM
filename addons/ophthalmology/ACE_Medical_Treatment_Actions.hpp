@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         treatmentTime = 2;
         items[] = {};
-        condition = QUOTE(missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]);
+        condition = QGETGVAR(enable,true);
         callbackSuccess = QFUNC(treatmentAdvanced_blink);
         callbackFailure = "";
         callbackProgress = "";
