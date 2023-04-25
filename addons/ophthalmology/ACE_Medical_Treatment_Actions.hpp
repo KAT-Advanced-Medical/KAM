@@ -75,7 +75,7 @@ class ACE_Medical_Treatment_Actions {
     };
 
     class EyewashItem: Eyewash {
-        displayName = CSTRING(eyewash_display_item);
+        displayName = CSTRING(eyewasher_display_item);
         callbackSuccess = QFUNC(treatmentAdvanced_eyewasher);
         items[] = {};
         condition = QUOTE([ARR_2(_medic, 'KAT_Eyewasher')] call ACEFUNC(common,hasMagazine) || [ARR_2(_medic, 'KAT_Eyewasher')] call ACEFUNC(common,hasMagazine));
