@@ -52,5 +52,17 @@
         <Key ID="STR_KAT_Ophthalmology_eyewash_action">
             <English>Washing</English>
         </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewash_item">
+            <English>Eye Wash</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewasher_display">
+            <English>Eye Washer</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewasher_display_item">
+            <English>Wash eyes</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewasher_desc">
+            <English>Eyewash bottles allow an individual to flush the injured area immediately</English>
+        </Key>
     </Package>
 </Project>

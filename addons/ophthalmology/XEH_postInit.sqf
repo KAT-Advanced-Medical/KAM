@@ -32,3 +32,5 @@ GVAR(ppEffectPriority) = 1111;
 }, {
     GVAR(ppBlurBlink) ppEffectEnable false;
 }] call CBA_fnc_waitUntilAndExecute;
+
+["KAT_EyewasherItem", "KAT_Eyewasher"] call ACEFUNC(common,registerItemReplacement);

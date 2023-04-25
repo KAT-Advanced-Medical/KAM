@@ -5,7 +5,10 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {};
-        weapons[] = {};
+        weapons[] = {
+            "KAT_Eyewasher",
+            "KAT_EyewasherItem"
+        };
         magazines[] = { };
         requiredAddons[] = {
             "kat_main",
@@ -19,4 +22,6 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgMagazines.hpp"
+#include "CfgWeapons.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
