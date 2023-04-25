@@ -4,3 +4,4 @@ PREP(handleTime);
 PREP(init);
 PREP(initKeybinds);
 PREP(treatmentAdvanced_blink);
+PREP(treatmentAdvanced_eyewash);

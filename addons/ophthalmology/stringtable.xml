@@ -37,5 +37,20 @@
         <Key ID="STR_KAT_Ophthalmology_blink_display">
             <English>Blink</English>
         </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewash_display">
+            <English>Wash eyes with 1000 ml</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewash_display_500">
+            <English>Wash eyes with 500 ml</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewash_display_250">
+            <English>Wash eyes with 250 ml</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewash_display_water">
+            <English>Wash eyes with water</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewash_action">
+            <English>Washing</English>
+        </Key>
     </Package>
 </Project>
