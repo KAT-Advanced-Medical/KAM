@@ -1,6 +1,6 @@
 class ACE_Medical_Treatment_Actions {
     class Blink {
-        displayName = CSTRING(Blink_Display);
+        displayName = CSTRING(blink_display);
         displayNameProgress = CSTRING(blink_action);
         category = "bandage";
         treatmentLocations = 0;
