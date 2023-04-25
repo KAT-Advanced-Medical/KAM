@@ -13,7 +13,9 @@
 *
 * Public: No
 */
-params["_unit"];
+params ["_unit", ["_isRespawn", true]];
+
+if (!local _unit) exitWith {};
 
 private _items = missionNamespace getVariable [QGVAR(availGasmask), """G_AirPurifyingRespirator_01_F"""];
 private _item_arr = [_items, "CfgGlasses"] call FUNC(getlist);
@@ -30,7 +32,7 @@ if (hasinterface) then {
     _unit setVariable [QGVAR(gasmask_durability), 10, true];
     _unit setVariable [QGVAR(gasmask_durability_reset), false, true];
     _unit setVariable [QGVAR(chemDetectorState), true , true];
-    
+
     [{
         params ["_args", "_pfhID"];
         _args params ["_unit"];
@@ -46,7 +48,7 @@ if (hasinterface) then {
             };
         };
     }, 2, _unit]call CBA_fnc_addPerFrameHandler;
-    
+
     [{
         params ["_args", "_pfhID"];
         _args params ["_unit"];
