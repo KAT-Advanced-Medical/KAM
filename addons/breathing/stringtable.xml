@@ -1399,7 +1399,7 @@
             <English>Use BVM</English>
             <French>Utiliser le BVM</French>
             <Korean>인공호흡기 사용</Korean>
-            <Polish>Użyj BVM</Polish>
+            <Polish>Użyj worka samorozprężalnego</Polish>
             <Japanese>BVMを使用する</Japanese>
             <German>Benutze BVM</German>
         </Key>
@@ -1415,7 +1415,7 @@
             <English>Use Pocket BVM</English>
             <French>Utiliser le BVM de poche</French>
             <Korean>인공호흡기 (포켓형) 사용</Korean>
-            <Polish>Uzyj Kieszonkowego BVM</Polish>
+            <Polish>Uzyj kieszonkowego worka samorozprężalnego</Polish>
             <Japanese>ポケットBVMを使用する</Japanese>
             <German>Benutze Tachen BVM </German>
         </Key>
@@ -1431,7 +1431,7 @@
             <English>Use BVM with Oxygen Tank</English>
             <French>Utiliser le BVM avec un réservoir à oxygène</French>
             <Korean>산소 탱크가 달린 인공호흡기 사용</Korean>
-            <Polish>Użyj BVM z butlą z tlenem</Polish>
+            <Polish>Użyj worka z butlą z tlenem</Polish>
             <Japanese>BVMと酸素ボンベを使用する</Japanese>
             <German>Benutze BVM mit Sauerstofftank</German>
         </Key>
@@ -1447,7 +1447,7 @@
             <English>Use BVM with Oxygen</English>
             <French>Utiliser le BVM avec de l'oxygène</French>
             <Korean>산소 연결 인공호흡기 사용</Korean>
-            <Polish>Użyj Worka samorozprężalnego z tlenem</Polish>
+            <Polish>Użyj worka z tlenem</Polish>
             <Japanese>BVMと酸素を使用する</Japanese>
             <German>Benutze BVM mit Sauerstoff</German>
         </Key>
