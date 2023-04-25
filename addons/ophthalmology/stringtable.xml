@@ -1,35 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Ophthalmology">
-        <Key ID="STR_KAT_Ophthalmology_blinking">
+        <Key ID="STR_KAT_Ophthalmology_setting_enable">
+            <English>Enable eye injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_subcategory_injury">
+            <English>Eye injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_probability_dust">
+            <English>Probability to get eye injury</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_probability_dust_heavy">
+            <English>Probability to get heavy eye injury</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_probability_treatment_dust">
+            <English>Probability to treat (non-heavy) eye injury with blinking</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_dust_effect_intensity">
+            <English>Intensity of the pp effect for eye injury</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_subcategory_manual_blink">
             <English>Manual blinking</English>
         </Key>
-        <Key ID="STR_KAT_Ophthalmology_SETTING_SubCategory_Injury">
-            <English>Manual blinking</English>
+        <Key ID="STR_KAT_Ophthalmology_setting_enable_manual_blinking">
+            <English>Enable manual blinking</English>
         </Key>
-        <Key ID="STR_KAT_Ophthalmology_SETTING_SubCategory_Manual">
-            <English>Manual blinking</English>
-        </Key>
-        <Key ID="STR_KAT_Ophthalmology_SETTING_ENABLE_MANUAL_BLINKING">
-            <English>Activate manual blinking</English>
-        </Key>
-        <Key ID="STR_KAT_Ophthalmology_SETTING_ENABLE">
-            <English>Activate manual blinking</English>
-        </Key>
-        <Key ID="STR_KAT_Ophthalmology_SETTING_BLINK_DURATION">
+        <Key ID="STR_KAT_Ophthalmology_setting_blink_renew_duration">
             <English>How long will one blink last</English>
         </Key>
-        <Key ID="STR_KAT_Ophthalmology_SETTING_BLINK_EFFECT_INTENSITY">
-            <English>Intensity of the pp effect</English>
-        </Key>
-        <Key ID="STR_KAT_Ophthalmology_SETTING_DUST_EFFECT_INTENSITY">
-            <English>Intensity of the pp effect for dust in eyes</English>
-        </Key>
-        <Key ID="STR_KAT_Ophthalmology_Blink_Display">
-            <English>Blink</English>
+        <Key ID="STR_KAT_Ophthalmology_setting_blink_effect_intensity">
+            <English>Intensity of the pp effect for missing blink</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_blink_action">
             <English>Blinking</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_blink_display">
+            <English>Blink</English>
         </Key>
     </Package>
 </Project>

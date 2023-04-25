@@ -12,8 +12,8 @@ PREP_RECOMPILE_END;
 [
     QGVAR(enable),
     "CHECKBOX",
-    LLSTRING(SETTING_ENABLE),
-    [CBA_SETTINGS_CAT, LSTRING(SETTING_SubCategory_Injury)],
+    LLSTRING(setting_enable),
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_injury)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -22,8 +22,8 @@ PREP_RECOMPILE_END;
 [
     QGVAR(probability_dust),
     "SLIDER",
-    [LLSTRING(SETTING_BLINK_EFFECT_INTENSITY)],
-    [CBA_SETTINGS_CAT, LSTRING(SETTING_SubCategory_Injury)],
+    [LLSTRING(setting_probability_dust)],
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_injury)],
     [1, 100, 5, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -32,8 +32,8 @@ PREP_RECOMPILE_END;
 [
     QGVAR(probability_dust_heavy),
     "SLIDER",
-    [LLSTRING(SETTING_BLINK_EFFECT_INTENSITY)],
-    [CBA_SETTINGS_CAT, LSTRING(SETTING_SubCategory_Injury)],
+    [LLSTRING(setting_probability_dust_heavy)],
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_injury)],
     [1, 100, 1, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -42,8 +42,8 @@ PREP_RECOMPILE_END;
 [
     QGVAR(probability_treatment_dust),
     "SLIDER",
-    [LLSTRING(SETTING_BLINK_EFFECT_INTENSITY)],
-    [CBA_SETTINGS_CAT, LSTRING(SETTING_SubCategory_Injury)],
+    [LLSTRING(setting_probability_treatment_dust)],
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_injury)],
     [1, 100, 20, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -52,8 +52,8 @@ PREP_RECOMPILE_END;
 [
     QGVAR(dust_effect_intensity),
     "SLIDER",
-    [LLSTRING(SETTING_DUST_EFFECT_INTENSITY)],
-    [CBA_SETTINGS_CAT, LSTRING(SETTING_SubCategory_Injury)],
+    [LLSTRING(setting_dust_effect_intensity)],
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_injury)],
     [1, 10, 3, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -62,8 +62,8 @@ PREP_RECOMPILE_END;
 [
     QGVAR(enableManualBlinking),
     "CHECKBOX",
-    LLSTRING(SETTING_ENABLE_MANUAL_BLINKING),
-    [CBA_SETTINGS_CAT, LSTRING(SETTING_SubCategory_Manual)],
+    LLSTRING(setting_enable_manual_blinking),
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
     [false],
     true
 ] call CBA_Settings_fnc_init;
@@ -72,8 +72,8 @@ PREP_RECOMPILE_END;
 [
     QGVAR(blink_duration),
     "SLIDER",
-    [LLSTRING(SETTING_BLINK_DURATION)],
-    [CBA_SETTINGS_CAT, LSTRING(SETTING_SubCategory_Manual)],
+    [LLSTRING(setting_blink_renew_duration)],
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
     [1, 600, 60, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -83,7 +83,7 @@ PREP_RECOMPILE_END;
     QGVAR(blink_effect_intensity),
     "SLIDER",
     [LLSTRING(SETTING_BLINK_EFFECT_INTENSITY)],
-    [CBA_SETTINGS_CAT, LSTRING(SETTING_SubCategory_Manual)],
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
     [1, 10, 5, 0],
     true
 ] call CBA_Settings_fnc_init;

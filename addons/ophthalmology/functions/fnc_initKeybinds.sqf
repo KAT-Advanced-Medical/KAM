@@ -14,7 +14,7 @@
 
 if (!hasInterface) exitWith {};
 
-[QUOTE(COMPONENT_BEAUTIFIED), QGVAR(blinking), LLSTRING(blinking),
+[QUOTE(COMPONENT_BEAUTIFIED), QGVAR(blinking), LLSTRING(blink_action),
 {
     ACE_PLAYER setVariable [QGVAR(lastBlink), CBA_missionTime];
     GVAR(ppBlur) ppEffectEnable false;
