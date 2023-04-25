@@ -18,6 +18,6 @@ if (GVAR(enable)) then {
     [FUNC(handleDustInjuryEffects), 1, _unit] call CBA_fnc_addPerFrameHandler;
 };
 
-if (GVAR(enableManualBlinking)) then {	
+if (GVAR(enableManualBlinking)) then {
     [FUNC(handleTime), 1, _unit] call CBA_fnc_addPerFrameHandler;
 };
