@@ -121,7 +121,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
-            <German>Benutze Pulsoximeter</German>
+            <German>Verwende Pulsoximeter</German>
             <Polish>Załóż Pulsoksymetr</Polish>
             <Spanish>Usar oxímetro de pulso</Spanish>
             <Chinese>掛載心率監測器</Chinese>
@@ -1307,7 +1307,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SPO2Flashing_display">
             <English>Enable low SPO2 warning</English>
-            <German>Aktiviere Schwarz aufleuchten bei niedrigen SPO2</German>
+            <German>Aktiviere visuellen Effekt bei niedrigem SPO2 Wert</German>
             <French>Autoriser les alertes de SpO2 basse</French>
             <Japanese>低SpO2警告を有効にする</Japanese>
             <Korean>낮은 산소포화도 경고 활성화</Korean>
@@ -1316,7 +1316,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SPO2Flashing_DESC">
             <English>Makes your Screen flash black if you are below 90% SPO2 (default value)</English>
-            <German>Lässt deinen Bildschirm Schwarz aufleuchten wenn du unter 90% SPO2 bist (Standard Wert)</German>
+            <German>Dunkelt den Bildschirm ab wenn dein SPO2 Wert unter unter 90% ist (Standard Wert)</German>
             <French>Fait flasher l'écran en noir si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
             <Japanese>SpO2が(デフォルトの値では)90%未満の場合、画面が黒く点滅します。</Japanese>
             <Korean>산소포화도가 90%(기본값) 미만인 경우 화면이 검은색으로 깜빡입니다.</Korean>
@@ -1325,7 +1325,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_display">
             <English>Enable Stamina loss on low SPO2</English>
-            <German>Aktiviere Ausdauer verlust bei niedrigem SPO2</German>
+            <German>Aktiviere Verlust von Ausdauer bei niedrigem SPO2 Wert</German>
             <French>Autoriser la perte d'endurance en cas de SpO2 basse</French>
             <Japanese>低SpO2でのスタミナ損失を有効にする</Japanese>
             <Korean>낮은 산소포화도에서 스태미나 손실 활성화</Korean>
@@ -1343,7 +1343,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lowSPO2Level_display">
             <English>Low SPO2 warning level</English>
-            <German>Niedrige SPO2 warn Level</German>
+            <German>Schwellwert für niedrigen SPO2</German>
             <French>Niveau d'alerte de SpO2 basse</French>
             <Japanese>低SpO2警告のレベル</Japanese>
             <Korean>낮은 산소포화도 경고 수준</Korean>
@@ -1352,7 +1352,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lowSPO2Level_DESC">
             <English>Lets you change the SPO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
-            <German>Lässt dich das SPO2 Wert änder ab wann du das Schwarze aufleuchten und den Ausdauer verlust bekommst</German>
+            <German>Definiert den SPO2 Wert, bei welchem der Ausdauerverlust und der visuelle Effekt (schwarzes "flackern") eintritt</German>
             <French>Règle la valeur de SpO2 à laquelle les flashs d'alerte et la perte d'endurance apparaissent</French>
             <Japanese>低SpO2警告が発生するSpO2のしきい値を変更します。(デフォルトでは90%)</Japanese>
             <Korean>깜빡임 경고 표시 및 스태미나 손실 효과를 얻게 되는 산소포화도 값을 변경합니다.</Korean>
@@ -1385,7 +1385,7 @@
             <French>Utiliser le BVM</French>
             <Korean>인공호흡기 사용</Korean>
             <Japanese>BVMを使用する</Japanese>
-            <German>Benutze BVM</German>
+            <German>Verwende BVM</German>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Progress">
             <English>Using BVM</English>
@@ -1399,7 +1399,7 @@
             <French>Utiliser le BVM de poche</French>
             <Korean>인공호흡기 (포켓형) 사용</Korean>
             <Japanese>ポケットBVMを使用する</Japanese>
-            <German>Benutze Tachen BVM </German>
+            <German>Verwende Tachen BVM </German>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM_Progress">
             <English>Using Pocket BVM</English>
@@ -1413,7 +1413,7 @@
             <French>Utiliser le BVM avec un réservoir à oxygène</French>
             <Korean>산소 탱크가 달린 인공호흡기 사용</Korean>
             <Japanese>BVMと酸素ボンベを使用する</Japanese>
-            <German>Benutze BVM mit Sauerstofftank</German>
+            <German>Verwende BVM mit Sauerstofftank</German>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Progress">
             <English>Using BVM with Oxygen Tank</English>
@@ -1427,7 +1427,7 @@
             <French>Utiliser le BVM avec de l'oxygène</French>
             <Korean>산소 연결 인공호흡기 사용</Korean>
             <Japanese>BVMと酸素を使用する</Japanese>
-            <German>Benutze BVM mit Sauerstoff</German>
+            <German>Verwende BVM mit Sauerstoff</German>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Oxygen_Progress">
             <English>Using BVM with Oxygen</English>
@@ -1623,7 +1623,7 @@
             <French>Temps de remplissage d'un réservoir à oxygène portable</French>
             <Korean>휴대용 산소 탱크 기본 재충전 시간</Korean>
             <Japanese>携帯用酸素ボンベの補充にかかる基準時間</Japanese>
-            <German>  Tragbarer Sauerstofftank Basis Nachfüllzeit</German>
+            <German>  Tragbarer Sauerstofftank Grundlegende Nachfüllzeit</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime_DESC">
             <English>Sets time required to refill Oxygen Tank (150L)</English>
@@ -1637,14 +1637,14 @@
             <French>Définir le réservoir à oxygène portable (150L) comme privilégié</French>
             <Korean>휴대용 산소 탱크 (150L)를 선호</Korean>
             <Japanese>携帯用酸素ボンベ (150L) を優先に設定</Japanese>
-            <German>Definiere den 150L Variante als bevorzugten Sauerstofftank fest</German>
+            <German>Definiere die 150L Variante als bevorzugten Sauerstofftank</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_300">
             <English>Set Portable Oxygen Tank (300L) as preferred</English>
             <French>Définir le réservoir à oxygène portable (300L) comme privilégié</French>
             <Korean>휴대용 산소 탱크 (300L)를 선호</Korean>
             <Japanese>携帯用酸素ボンベ (300L) を優先に設定</Japanese>
-            <German>Definiere die 300L Variante als bevorzugten Sauerstofftank fest</German>
+            <German>Definiere die 300L Variante als bevorzugten Sauerstofftank</German>
         </Key>
     </Package>
 </Project>

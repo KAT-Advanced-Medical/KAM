@@ -931,7 +931,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Defib_Action_Use">
             <English>Use AED defibrillator</English>
-            <German>Benutze AED Defibrillator</German>
+            <German>Verwende AED Defibrillator</German>
             <Polish>Użyj defibrylatora AED</Polish>
             <Spanish>Usar el desfibrilador DEA</Spanish>
             <Chinese>使用AED除顫器</Chinese>
@@ -947,7 +947,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_DefibS_Action_Use">
             <English>Use AED Station</English>
-            <German>Benutze AED Station</German>
+            <German>Verwende AED Station</German>
             <Polish>Użyj stacji AED</Polish>
             <Spanish>Usar la estación DEA</Spanish>
             <Chinese>使用AED除顫器</Chinese>
@@ -979,7 +979,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_Action_Use">
             <English>Use AED-X defibrillator</English>
-            <German>Benutze AED-X Defibrillator</German>
+            <German>Verwende AED-X Defibrillator</German>
             <Polish>Użyj defibrylatora AED-X</Polish>
             <Spanish>Usar el desfibrilador DEA-X</Spanish>
             <Chinese>使用AED-X除顫器</Chinese>
@@ -1059,7 +1059,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_Action_Progress">
             <English>Using AED-X defibrillator</English>
-            <German>Benutze AED-X Defibrillator</German>
+            <German>Verwende AED-X Defibrillator</German>
             <Polish>Korzystanie z defibrylatora AED-X</Polish>
             <Spanish>Usando el desfibrilador DEA-X</Spanish>
             <Chinese>我使用AED-X除顫器</Chinese>
