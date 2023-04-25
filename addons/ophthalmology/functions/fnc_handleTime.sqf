@@ -10,11 +10,11 @@
  * Public: No
  */
 
-params ["_player", "_pfhID"];
+params ["_unit", "_pfhID"];
 
 if !(GVAR(enableManualBlinking)) exitWith {};
 
-private _lastBlink = _player getVariable [QGVAR(lastBlink), 0];
+private _lastBlink = _unit getVariable [QGVAR(lastBlink), 0];
 
 if (CBA_missionTime > _lastBlink + GVAR(blink_duration)) then {
     GVAR(ppBlur) ppEffectEnable true;
