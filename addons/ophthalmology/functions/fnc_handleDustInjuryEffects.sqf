@@ -9,12 +9,12 @@
  * Public: No
  */
 
-params ["_player", "_pfhID"];
+params ["_unit", "_pfhID"];
 
 if !(GVAR(enable)) exitWith {};
 
-private _dustInjury = _player getVariable [QGVAR(dust_injury), false];
-private _dustInjuryHeavy = _player getVariable [QGVAR(dust_injury_heavy), false];
+private _dustInjury = _unit getVariable [QGVAR(dust_injury), false];
+private _dustInjuryHeavy = _unit getVariable [QGVAR(dust_injury_heavy), false];
 
 // no injuries?
 if (!_dustInjury && !_dustInjuryHeavy) exitWith {};

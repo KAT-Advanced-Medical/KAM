@@ -9,7 +9,7 @@
  * Public: No
  */
 
-params ["_player", "_pfhID"];
+params ["_unit", "_pfhID"];
 
 if !(GVAR(enable)) exitWith {};
 
@@ -22,7 +22,7 @@ if (headgear _unit != "") then {
 
 // if the headgear is not enough to protect, we check the goggles
 if (!_safe) then {
-    _safe = _player call ACEFUNC(goggles,isGogglesVisible);
+    _safe = _unit call ACEFUNC(goggles,isGogglesVisible);
 };
 
 // if protected, do nothing
@@ -35,9 +35,9 @@ private _random = floor(random [0, 50, 100]);
 // we only need to set the variables
 // pp effect will be added through extra pfh
 if (_random <= GVAR(probability_dust_heavy)) exitWith {
-    _player setVariable [QGVAR(dust_injury_heavy), true, true];
+    _unit setVariable [QGVAR(dust_injury_heavy), true, true];
 };
 
 if (_random <= GVAR(probability_dust)) exitWith {
-    _player setVariable [QGVAR(dust_injury), true, true];
+    _unit setVariable [QGVAR(dust_injury), true, true];
 };
