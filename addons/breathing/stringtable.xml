@@ -375,7 +375,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
-            <German>Stabiler SpO2-Wert, um Bewusstsein zu erlangen</German>
+            <German>Stabiler SpO2 Wert, um Bewusstsein zu erlangen</German>
             <Polish>Stabilna wartość SpO2 żeby odzyskać przytomność</Polish>
             <Spanish>Valor estable de SpO2 para recuperar conciencia</Spanish>
             <Chinese>穩定的SpO2值以提高意識</Chinese>
@@ -1306,8 +1306,8 @@
             <Portuguese>[KAM] Itens gerais</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SPO2Flashing_display">
-            <English>Enable low SPO2 warning</English>
-            <German>Aktiviere visuellen Effekt bei niedrigem SPO2 Wert</German>
+            <English>Enable low SpO2 warning</English>
+            <German>Aktiviere visuellen Effekt bei niedrigen SpO2 Wert</German>
             <French>Autoriser les alertes de SpO2 basse</French>
             <Japanese>低SpO2警告を有効にする</Japanese>
             <Korean>낮은 산소포화도 경고 활성화</Korean>
@@ -1315,8 +1315,8 @@
             <Portuguese>Habilita aviso de baixo nível de SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SPO2Flashing_DESC">
-            <English>Makes your Screen flash black if you are below 90% SPO2 (default value)</English>
-            <German>Dunkelt den Bildschirm ab wenn dein SPO2 Wert unter unter 90% ist (Standard Wert)</German>
+            <English>Makes your Screen flash black if you are below 90% SpO2 (default value)</English>
+            <German>Dunkle, pulsierende Vignettierung wenn dein SpO2 Wert unter unter 90% ist (Standard Wert)</German>
             <French>Fait flasher l'écran en noir si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
             <Japanese>SpO2が(デフォルトの値では)90%未満の場合、画面が黒く点滅します。</Japanese>
             <Korean>산소포화도가 90%(기본값) 미만인 경우 화면이 검은색으로 깜빡입니다.</Korean>
@@ -1324,8 +1324,8 @@
             <Portuguese>Faz sua tela piscar em preto se você estiver abaixo de 90% de SpO2 (valor padrão)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_display">
-            <English>Enable Stamina loss on low SPO2</English>
-            <German>Aktiviere Verlust von Ausdauer bei niedrigem SPO2 Wert</German>
+            <English>Enable Stamina loss on low SpO2</English>
+            <German>Aktiviere Verlust von Ausdauer bei niedrigen SpO2 Wert</German>
             <French>Autoriser la perte d'endurance en cas de SpO2 basse</French>
             <Japanese>低SpO2でのスタミナ損失を有効にする</Japanese>
             <Korean>낮은 산소포화도에서 스태미나 손실 활성화</Korean>
@@ -1333,8 +1333,8 @@
             <Portuguese>Ativar perda de stamina sob baixo SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_DESC">
-            <English>Makes you lose stamina if you are under 90% SPO2 (default value)</English>
-            <German>Lässt dich Ausdauer verlieren wenn du unter 90% SPO2 bist (Standard Wert)</German>
+            <English>Makes you lose stamina if you are under 90% SpO2 (default value)</English>
+            <German>Lässt dich Ausdauer verlieren wenn du unter 90% SpO2 bist (Standard Wert)</German>
             <French>Fait perdre de l'endurance si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
             <Japanese>SpO2が(デフォルトの値では)90%未満の場合、スタミナを失います。</Japanese>
             <Korean>산소포화도가 90%(기본값) 미만이면 스태미나가 떨어집니다.</Korean>
@@ -1342,8 +1342,8 @@
             <Portuguese>Faz você perder stamina se estiver abaixo de 90% SpO2 (valor padrão)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lowSPO2Level_display">
-            <English>Low SPO2 warning level</English>
-            <German>Schwellwert für niedrigen SPO2</German>
+            <English>Low SpO2 warning level</English>
+            <German>Schwellwert für niedrigen SpO2</German>
             <French>Niveau d'alerte de SpO2 basse</French>
             <Japanese>低SpO2警告のレベル</Japanese>
             <Korean>낮은 산소포화도 경고 수준</Korean>
@@ -1351,8 +1351,8 @@
             <Portuguese>Nível de alerta de SpO2 baixo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lowSPO2Level_DESC">
-            <English>Lets you change the SPO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
-            <German>Definiert den SPO2 Wert, bei welchem der Ausdauerverlust und der visuelle Effekt (schwarzes "flackern") eintritt</German>
+            <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
+            <German>Definiert den SpO2 Wert, bei welchem der Ausdauerverlust und der visuelle Effekt (schwarzes "flackern") eintritt</German>
             <French>Règle la valeur de SpO2 à laquelle les flashs d'alerte et la perte d'endurance apparaissent</French>
             <Japanese>低SpO2警告が発生するSpO2のしきい値を変更します。(デフォルトでは90%)</Japanese>
             <Korean>깜빡임 경고 표시 및 스태미나 손실 효과를 얻게 되는 산소포화도 값을 변경합니다.</Korean>
