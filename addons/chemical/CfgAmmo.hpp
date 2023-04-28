@@ -29,11 +29,11 @@ class cfgAmmo
     };
 
     class SmokeShell;
-	class KAT_G_M7A3: SmokeShell 
-	{
-		KAT_csGas = 1;
-		model = QPATHTOF(ui\m7a3_throw.p3d);
-		dangerRadiusHit = -1;
+    class KAT_G_M7A3: SmokeShell 
+    {
+        KAT_csGas = 1;
+        model = QPATHTOF(ui\m7a3_throw.p3d);
+        dangerRadiusHit = -1;
         suppressionRadiusHit = 20;
         typicalSpeed = 22;
         cost = 40;
@@ -46,8 +46,8 @@ class cfgAmmo
         smokeColor[] = {0,0,0,0};
         effectsSmoke = "ACE_M84FlashbangEffect";
         whistleDist = 0;
-		grenadeFireSound[] = {};
-	};
+        grenadeFireSound[] = {};
+    };
 
     class APERSTripMine_Wire_Ammo;
     class KAT_Gas_TripWireMine_Ammo: APERSTripMine_Wire_Ammo {
@@ -75,45 +75,45 @@ class cfgAmmo
     };
 
     class BombCore;
-	//class Bo_GBU12_LGB;
+    //class Bo_GBU12_LGB;
     class BombCluster_01_Ammo_F;
     class KAT_CAS_M43_Ammo: BombCluster_01_Ammo_F {
-		aiAmmoUsageFlags = "64 + 128 + 512";
-		allowAgainstInfantry = 1;
-		autoSeekTarget = 1;
-		canLock=1;
-		cameraViewAvailable = 1;
-		CraterEffects = "BombCrater";
-		CraterWaterEffects = "ImpactEffectsWaterExplosion";
-		cost = 0.1;
-		explosionTime = 2;
-		explosionForceCoef = 5;
-		explosive = 0.95;
-		ExplosionEffects = "BombExplosion"; 
-		flightProfiles[] = {"LoalAltitude"};
-		hit = 0;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		irLock = 0;
-		laserLock = 1;
-		lightColor[] = {1, 0.15, 0, 1};
-		maneuvrability = 16;
-		model = "\A3\Weapons_F\Ammo\Bomb_01_fly_F";
-		nvLock = 1;
-		simulation = "shotMissile";
-		soundFly[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Fly_RPG32",1,1,500};
-		weaponLockSystem = 4;
-		weaponType = "Default";
+        aiAmmoUsageFlags = "64 + 128 + 512";
+        allowAgainstInfantry = 1;
+        autoSeekTarget = 1;
+        canLock=1;
+        cameraViewAvailable = 1;
+        CraterEffects = "BombCrater";
+        CraterWaterEffects = "ImpactEffectsWaterExplosion";
+        cost = 0.1;
+        explosionTime = 2;
+        explosionForceCoef = 5;
+        explosive = 0.95;
+        ExplosionEffects = "BombExplosion"; 
+        flightProfiles[] = {"LoalAltitude"};
+        hit = 0;
+        indirectHit = 0;
+        indirectHitRange = 0;
+        irLock = 0;
+        laserLock = 1;
+        lightColor[] = {1, 0.15, 0, 1};
+        maneuvrability = 16;
+        model = "\A3\Weapons_F\Ammo\Bomb_01_fly_F";
+        nvLock = 1;
+        simulation = "shotMissile";
+        soundFly[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Fly_RPG32",1,1,500};
+        weaponLockSystem = 4;
+        weaponType = "Default";
         triggerDistance = 250;
         triggerSpeedCoef[] = {0.8,1};
         submunitionAmmo="KAT_CAS_M43_Ammo_sub";
-		class CamShakeExplode
-		{
-			power = 20;
-			duration = 2;
-			frequency = 5;
-			distance = 250;
-		};
+        class CamShakeExplode
+        {
+            power = 20;
+            duration = 2;
+            frequency = 5;
+            distance = 250;
+        };
 
         
     };

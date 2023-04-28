@@ -27,17 +27,48 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets how player bloodtype is designated
 [
-    QGVAR(bloodgroup),
+    QGVAR(bloodTypeSetting),
     "LIST",
-    LLSTRING(client_bt),
+    [LLSTRING(SETTING_bloodtype_assign), LLSTRING(SETTING_bloodtype_assign_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [[0,1,2,3,4,5],[LSTRING(SETTING_bloodtype_assign_player), LSTRING(SETTING_bloodtype_assign_player_forced), LSTRING(SETTING_bloodtype_assign_random), LSTRING(SETTING_bloodtype_assign_random_onJoin), LSTRING(SETTING_bloodtype_assign_steamid), LSTRING(SETTING_bloodtype_assign_steamid_custom)],4],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets if randomizer should be weighted (according to bloodtype commonness)
+[
+    QGVAR(bloodTypeRandomWeighted),
+    "CHECKBOX",
+    [LLSTRING(SETTING_bloodtype_random_weighted), LLSTRING(SETTING_bloodtype_random_weighted_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets the player's desired bloodtype
+[
+    QGVAR(bloodTypeSettingPlayer),
+    "LIST",
+    LLSTRING(SETTING_bloodtype_player),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], 7],
     2,
     {
-        player setVariable [QGVAR(bloodtype), _this, true];
+        player setVariable [QGVAR(bloodTypePlayer), _this, true];
         player setVariable [QACEGVAR(dogtags,dogtagData), nil, true];
     },
+    false
+] call CBA_Settings_fnc_init;
+
+// Custom bloodtype list to use with custom steamid option
+[
+    QGVAR(bloodTypeCustomList),
+    "EDITBOX",
+    [LLSTRING(SETTING_bloodtype_custom_list), LLSTRING(SETTING_bloodtype_custom_list_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    "O,O,A,A,O_N,B,A_N,AB,B_N,AB_N",
     true
 ] call CBA_Settings_fnc_init;
 
@@ -111,6 +142,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
+// Sets time required to attach AED-X monitor
+[
+    QGVAR(AED_X_AttachTime),
+    "SLIDER",
+    LLSTRING(SETTING_AED_X_AttachTime),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [1, 60, 10, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets time required to detach AED-X monitor
+[
+    QGVAR(AED_X_DetachTime),
+    "SLIDER",
+    LLSTRING(SETTING_AED_X_DetachTime),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [1, 60, 5, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 //Distance limit for AED-X
 [
     QGVAR(distanceLimit_AEDX),
@@ -147,6 +198,26 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_AED_BeepsAndCharge), LLSTRING(SETTING_AED_BeepsAndCharge_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets type of tone played on AED-X monitor when patient has no heart rate
+[
+    QGVAR(AED_X_Monitor_NoHeartRate),
+    "LIST",
+    [LLSTRING(SETTING_AED_X_Monitor_NoHeartRate)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [[0, 1], [LLSTRING(SETTING_AED_X_Monitor_NoHeartRate_Continous), LLSTRING(SETTING_AED_X_Monitor_NoHeartRate_Alternating)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets SpO2 level threshold for audible warning
+[
+    QGVAR(AED_X_Monitor_SpO2Warning),
+    "SLIDER",
+    LELSTRING(breathing,SETTING_Threshold_SpO2Warning),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [1, 100, 85, 1],
     true
 ] call CBA_Settings_fnc_init;
 

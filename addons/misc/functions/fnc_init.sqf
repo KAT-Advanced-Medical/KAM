@@ -15,4 +15,6 @@
  * Public: No
  */
 
-params ["_unit"];
+params ["_unit", ["_isRespawn", true]];
+
+if (!local _unit) exitWith {};

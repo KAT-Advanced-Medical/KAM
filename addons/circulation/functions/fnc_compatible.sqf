@@ -18,7 +18,8 @@
 
 params ["_unit", "_className"];
 
-private _bloodType = _unit getVariable [QGVAR(bloodtype), "O_N"];
+private _bloodType = [_unit] call FUNC(bloodType);
 private _compatibility = getArray (configFile >> "ACE_Medical_Treatment" >> "IV" >> _className >> "compatibility");
 if (_bloodType in _compatibility) exitWith {true};
+
 false

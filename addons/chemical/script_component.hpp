@@ -77,7 +77,7 @@
 
 #define VAR_OPEN_WOUNDS             "ace_medical_openWounds"
 #define GET_OPEN_WOUNDS(unit)       (unit getVariable [VAR_OPEN_WOUNDS, []])
-#define VAR_BANDAGED_WOUNDS         "ace_medical_bandagedWounds" 
+#define VAR_BANDAGED_WOUNDS         "ace_medical_bandagedWounds"
 #define GET_BANDAGED_WOUNDS(unit)   (unit getVariable [VAR_BANDAGED_WOUNDS, []])
 #define VAR_STITCHED_WOUNDS         "ace_medical_stitchedWounds"
 #define GET_STITCHED_WOUNDS(unit)   (unit getVariable [VAR_STITCHED_WOUNDS, []])

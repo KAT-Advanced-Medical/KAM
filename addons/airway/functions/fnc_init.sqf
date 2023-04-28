@@ -15,7 +15,10 @@
  * Public: No
  */
 
-params ["_unit"];
+params ["_unit", ["_isRespawn", true]];
+
+if (!local _unit) exitWith {};
+if !(GVAR(enable)) exitWith {};
 
 _unit setVariable [QGVAR(obstruction), false, true];
 _unit setVariable [QGVAR(occluded), false, true];
