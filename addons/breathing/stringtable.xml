@@ -18,78 +18,78 @@
             <Portuguese>ACE - Respiração ativada?</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">
-            <English>Lethal SpO₂ value</English>
-            <German>Tödlicher SpO₂ Wert</German>
-            <Polish>Wartość śmiertelna SpO₂</Polish>
-            <Spanish>Valor letal de SpO₂</Spanish>
+            <English>Lethal SpO2 value</English>
+            <German>Tödlicher SpO2 Wert</German>
+            <Polish>Wartość śmiertelna SpO2</Polish>
+            <Spanish>Valor letal de SpO2</Spanish>
             <Chinese>致命的SpO2值</Chinese>
             <Chinesesimp>致命的SpO2值</Chinesesimp>
-            <Czech>Smrtelná hodnota SpO₂</Czech>
-            <Korean>사망하게 되는 SpO₂ 값</Korean>
-            <French>Valeur létale de la SpO₂</French>
-            <Turkish>Ölümcül SpO₂ değeri</Turkish>
-            <Italian>Valore letale di SpO₂</Italian>
-            <Russian>Смертельное значение SpO₂</Russian>
+            <Czech>Smrtelná hodnota SpO2</Czech>
+            <Korean>사망하게 되는 SpO2 값</Korean>
+            <French>Valeur létale de la SpO2</French>
+            <Turkish>Ölümcül SpO2 değeri</Turkish>
+            <Italian>Valore letale di SpO2</Italian>
+            <Russian>Смертельное значение SpO2</Russian>
             <Japanese>SpO2の致命値</Japanese>
-            <Portuguese>Valor letal de SpO₂</Portuguese>
+            <Portuguese>Valor letal de SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieActive">
-            <English>Activate lethal SpO₂ value</English>
-            <German>Tödlichen SpO₂ Wert aktivieren</German>
-            <Polish>Aktywuj śmiertelną wartość SpO₂</Polish>
-            <Spanish>Activar valor letal de SpO₂</Spanish>
+            <English>Activate lethal SpO2 value</English>
+            <German>Tödlichen SpO2 Wert aktivieren</German>
+            <Polish>Aktywuj śmiertelną wartość SpO2</Polish>
+            <Spanish>Activar valor letal de SpO2</Spanish>
             <Chinese>激活致命的SpO2值</Chinese>
             <Chinesesimp>激活致命的SpO2值</Chinesesimp>
-            <Czech>Aktivace smrtelné hodnoty SpO₂</Czech>
-            <Korean>사망하게 되는 SpO₂ 값 활성화</Korean>
-            <French>Activer la valeur létale de la SpO₂</French>
-            <Turkish>Ölümcül SpO₂ değerini etkinleştir</Turkish>
-            <Italian>Attivare il valore letale di SpO₂</Italian>
-            <Russian>Активировать летальное значение SpO₂</Russian>
+            <Czech>Aktivace smrtelné hodnoty SpO2</Czech>
+            <Korean>사망하게 되는 SpO2 값 활성화</Korean>
+            <French>Activer la valeur létale de la SpO2</French>
+            <Turkish>Ölümcül SpO2 değerini etkinleştir</Turkish>
+            <Italian>Attivare il valore letale di SpO2</Italian>
+            <Russian>Активировать летальное значение SpO2</Russian>
             <Japanese>SpO2の致命値を有効化</Japanese>
-            <Portuguese>Ativar o valor letal de SpO₂</Portuguese>
+            <Portuguese>Ativar o valor letal de SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive">
-            <English>SpO₂ positive multiplier</English>
-            <German>SpO₂ positiver Multiplikator</German>
+            <English>SpO2 positive multiplier</English>
+            <German>SpO2 positiver Multiplikator</German>
             <Japanese>SpO2正の乗数</Japanese>
             <Chinesesimp>SpO2值正乘数</Chinesesimp>
-            <Russian>Положительный множитель SpO₂</Russian>
+            <Russian>Положительный множитель SpO2</Russian>
             <Korean>SpO2의 회복 배율</Korean>
-            <French>Multiplicateur positif de la SpO₂</French>
-            <Polish>Dodatni mnożnik SpO₂</Polish>
-            <Italian>Moltiplicatore positivo della SpO₂</Italian>
-            <Czech>Pozitivní násobič SpO₂</Czech>
-            <Spanish>Multiplicador positivo de SpO₂</Spanish>
-            <Portuguese>Multiplicador positivo de SpO₂</Portuguese>
+            <French>Multiplicateur positif de la SpO2</French>
+            <Polish>Dodatni mnożnik SpO2</Polish>
+            <Italian>Moltiplicatore positivo della SpO2</Italian>
+            <Czech>Pozitivní násobič SpO2</Czech>
+            <Spanish>Multiplicador positivo de SpO2</Spanish>
+            <Portuguese>Multiplicador positivo de SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyNegative">
-            <English>SpO₂ negative multiplier</English>
-            <German>SpO₂ negativer Multiplikator</German>
+            <English>SpO2 negative multiplier</English>
+            <German>SpO2 negativer Multiplikator</German>
             <Japanese>SpO2負の乗数</Japanese>
             <Chinesesimp>SpO2值负乘数</Chinesesimp>
-            <Russian>Отрицательный множитель SpO₂</Russian>
+            <Russian>Отрицательный множитель SpO2</Russian>
             <Korean>SpO2의 감소 배율</Korean>
-            <French>Multiplicateur négatif de la SpO₂</French>
-            <Polish>Ujemny mnożnik SpO₂</Polish>
-            <Italian>Moltiplicatore negativo della SpO₂</Italian>
-            <Czech>Negativní násobič SpO₂</Czech>
-            <Spanish>Multiplicador negativo de SpO₂</Spanish>
-            <Portuguese>Multiplicador negativo de SpO₂</Portuguese>
+            <French>Multiplicateur négatif de la SpO2</French>
+            <Polish>Ujemny mnożnik SpO2</Polish>
+            <Italian>Moltiplicatore negativo della SpO2</Italian>
+            <Czech>Negativní násobič SpO2</Czech>
+            <Spanish>Multiplicador negativo de SpO2</Spanish>
+            <Portuguese>Multiplicador negativo de SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_Perfusion">
-            <English>Enable cardiac arrest SpO₂ reduction</English>
-            <German>Aktivieren von SpO₂-Verlust bei Herzstillstand</German>
+            <English>Enable cardiac arrest SpO2 reduction</English>
+            <German>Aktivieren von SpO2-Verlust bei Herzstillstand</German>
             <Japanese>心停止時のSpO2低下を有効化</Japanese>
             <Chinesesimp>心脏骤停时减少SpO2的下降</Chinesesimp>
-            <Russian>Включить снижение SpO₂ при остановке сердца</Russian>
-            <Korean>심정지 중 SpO₂ 감소 활성화</Korean>
-            <French>Autoriser la réduction de la SpO₂ d’arrêt cardiaque</French>
-            <Polish>Włącz utratę SpO₂ w trakcie zatrzymania akcji serca</Polish>
-            <Italian>Autorizza la riduzione della SpO₂ nell'arresto cardiaco.</Italian>
-            <Czech>Povolit redukci SpO₂ při zástavě srdce</Czech>
-            <Spanish>Habilitar la reducción de SpO₂ en paro cardiaco</Spanish>
-            <Portuguese>Habilitar a redução de SpO₂ na parada cardíaca</Portuguese>
+            <Russian>Включить снижение SpO2 при остановке сердца</Russian>
+            <Korean>심정지 중 SpO2 감소 활성화</Korean>
+            <French>Autoriser la réduction de la SpO2 d’arrêt cardiaque</French>
+            <Polish>Włącz utratę SpO2 w trakcie zatrzymania akcji serca</Polish>
+            <Italian>Autorizza la riduzione della SpO2 nell'arresto cardiaco.</Italian>
+            <Czech>Povolit redukci SpO2 při zástavě srdce</Czech>
+            <Spanish>Habilitar la reducción de SpO2 en paro cardiaco</Spanish>
+            <Portuguese>Habilitar a redução de SpO2 na parada cardíaca</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PerfusionMultiplier">
             <English>Perfusion multiplier</English>
@@ -200,20 +200,20 @@
             <Portuguese>Removendo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_pulseoxi_Log">
-            <English>Pulse Oximeter: HR: %1 SpO₂: %2</English>
-            <German>Pulsoximeter: HR: %1 SpO₂: %2</German>
-            <Polish>Pulsoksymetr: HR: %1 SpO₂: %2</Polish>
-            <Spanish>Oxímetro de pulso: HR: %1 SpO₂: %2</Spanish>
+            <English>Pulse Oximeter: HR: %1 SpO2: %2</English>
+            <German>Pulsoximeter: HR: %1 SpO2: %2</German>
+            <Polish>Pulsoksymetr: HR: %1 SpO2: %2</Polish>
+            <Spanish>Oxímetro de pulso: HR: %1 SpO2: %2</Spanish>
             <Chinese>心率監測器: 心率: %1 血氧量: %2</Chinese>
-            <Chinesesimp>脉搏血氧仪: 心率: %1 SpO₂: %2</Chinesesimp>
-            <Czech>Pulzní oxymetr: HR: %1 SpO₂: %2</Czech>
-            <Korean>맥박 산소포화도: HR: %1 SpO₂: %2</Korean>
-            <French>Oxymètre de pouls: HR: %1 SpO₂: %2</French>
-            <Turkish>Nabız Oksimetresi: HR: %1 SpO₂: %2</Turkish>
-            <Italian>Pulsossimetro: HR: %1 SpO₂: %2</Italian>
-            <Russian>Пульсоксиметр: ЧСС: %1 SpO₂: %2</Russian>
-            <Japanese>パルスオキシメーター: HR: %1 SpO₂: %2</Japanese>
-            <Portuguese>Oxímetro de Pulso: HR: %1 SpO₂: %2</Portuguese>
+            <Chinesesimp>脉搏血氧仪: 心率: %1 SpO2: %2</Chinesesimp>
+            <Czech>Pulzní oxymetr: HR: %1 SpO2: %2</Czech>
+            <Korean>맥박 산소포화도: HR: %1 SpO2: %2</Korean>
+            <French>Oxymètre de pouls: HR: %1 SpO2: %2</French>
+            <Turkish>Nabız Oksimetresi: HR: %1 SpO2: %2</Turkish>
+            <Italian>Pulsossimetro: HR: %1 SpO2: %2</Italian>
+            <Russian>Пульсоксиметр: ЧСС: %1 SpO2: %2</Russian>
+            <Japanese>パルスオキシメーター: HR: %1 SpO2: %2</Japanese>
+            <Portuguese>Oxímetro de Pulso: HR: %1 SpO2: %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -374,20 +374,20 @@
             <Portuguese>Permitir auto-tratamento com Selo Torácico</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_STABLE_SPO2">
-            <English>Stable SpO₂ value to gain consciousness</English>
-            <German>Stabiler SpO₂ Wert, um Bewusstsein zu erlangen</German>
-            <Polish>Stabilna wartość SpO₂ żeby odzyskać przytomność</Polish>
-            <Spanish>Valor estable de SpO₂ para recuperar conciencia</Spanish>
+            <English>Stable SpO2 value to gain consciousness</English>
+            <German>Stabiler SpO2 Wert, um Bewusstsein zu erlangen</German>
+            <Polish>Stabilna wartość SpO2 żeby odzyskać przytomność</Polish>
+            <Spanish>Valor estable de SpO2 para recuperar conciencia</Spanish>
             <Chinese>穩定的SpO2值以提高意識</Chinese>
             <Chinesesimp>允许意识清醒的最低SpO2值</Chinesesimp>
-            <Czech>Stabilní hodnota SpO₂ pro získání vědomí</Czech>
+            <Czech>Stabilní hodnota SpO2 pro získání vědomí</Czech>
             <Korean>의식이 돌아오는 SpO2의 값</Korean>
-            <French>Valeur stable de SpO₂ requise pour reprendre conscience</French>
-            <Turkish>Bilinç kazanmak için gerekli SpO₂ değeri</Turkish>
+            <French>Valeur stable de SpO2 requise pour reprendre conscience</French>
+            <Turkish>Bilinç kazanmak için gerekli SpO2 değeri</Turkish>
             <Italian>Valore stabile di Sp02 per riprendere conoscienza</Italian>
-            <Russian>Стабильное значение SpO₂ для прихода в сознание</Russian>
+            <Russian>Стабильное значение SpO2 для прихода в сознание</Russian>
             <Japanese>意識を取り戻すために必要なSpO2値</Japanese>
-            <Portuguese>Valor estável de SpO₂ para recuperar consciência</Portuguese>
+            <Portuguese>Valor estável de SpO2 para recuperar consciência</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_STABLE_SPO2">
             <English>After reaching more than selected value (default 85), only then patient can get conscious</English>
@@ -863,36 +863,36 @@
             <German>Legt fest, wie lange es dauert um mit dem Stethoskop abzuhören</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_unconscious">
-            <English>Unconscious SpO₂ value</English>
-            <Polish>Wartość SpO₂ powodująca nieprzytomność</Polish>
-            <German>SpO₂ Grenzwert für Bewusstlosigkeit</German>
-            <Spanish>Valor SpO₂ para inconsciencia</Spanish>
+            <English>Unconscious SpO2 value</English>
+            <Polish>Wartość SpO2 powodująca nieprzytomność</Polish>
+            <German>SpO2 Grenzwert für Bewusstlosigkeit</German>
+            <Spanish>Valor SpO2 para inconsciencia</Spanish>
             <Chinese>无意识的SpO2值</Chinese>
             <Chinesesimp>无意识的SpO2值</Chinesesimp>
-            <Czech>Hodnota SpO₂ pro bezvědomí</Czech>
-            <Korean>의식불명에 빠질 SpO₂ 값</Korean>
-            <French>Valeur SpO₂ pour tomber inconscient</French>
-            <Turkish>Bilinçsiz SpO₂ değeri</Turkish>
-            <Italian>Valore SpO₂ per perdita di coscienza</Italian>
+            <Czech>Hodnota SpO2 pro bezvědomí</Czech>
+            <Korean>의식불명에 빠질 SpO2 값</Korean>
+            <French>Valeur SpO2 pour tomber inconscient</French>
+            <Turkish>Bilinçsiz SpO2 değeri</Turkish>
+            <Italian>Valore SpO2 per perdita di coscienza</Italian>
             <Japanese>意識を失うSpO2の値</Japanese>
-            <Russian>Бессознательное значение SpO₂</Russian>
-            <Portuguese>Valor de SpO₂ para inconsciência</Portuguese>
+            <Russian>Бессознательное значение SpO2</Russian>
+            <Portuguese>Valor de SpO2 para inconsciência</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_unconscious_Desc">
-            <English>SpO₂ value that will cause unconscious when dropped below that value</English>
-            <Polish>Powoduje nieprzytomność gdy SpO₂ spadnie poniżej tej wartości</Polish>
-            <German>Verursacht Ohnmacht, wenn SpO₂ wert unter diesen Wert fällt</German>
-            <Spanish>La unidad caerá en la inconsciencia cuando el valor SpO₂ sea menor a este</Spanish>
+            <English>SpO2 value that will cause unconscious when dropped below that value</English>
+            <Polish>Powoduje nieprzytomność gdy SpO2 spadnie poniżej tej wartości</Polish>
+            <German>Verursacht Ohnmacht, wenn SpO2 wert unter diesen Wert fällt</German>
+            <Spanish>La unidad caerá en la inconsciencia cuando el valor SpO2 sea menor a este</Spanish>
             <Chinese>当下降到低于该值时，会引起不舒服的SpO2值</Chinese>
             <Chinesesimp>当下降到低于该值时, 会令人昏迷的SpO2值</Chinesesimp>
-            <Czech>Hodnota SpO₂, která způsobí bezvědomí, pokud se pod ní dostane</Czech>
-            <Korean>의식불명에 빠지기 시작하는 SpO₂(산소포화도)의 값</Korean>
-            <French>Valeur SpO₂ sous laquelle on tombe inconscient</French>
-            <Turkish>Bu değerin altına düştüğünde bilinç kaybına neden olacak SpO₂ değeri</Turkish>
-            <Italian>Valore di SpO₂ sotto il quale causa la perdita di coscienza</Italian>
-            <Japanese>SpO₂(血酸素飽和度)が設定した値を下回ると気絶し、無意識状態に陥ります。</Japanese>
-            <Russian>Значение SpO₂, которое приведет к потере сознания при падении ниже этого значения</Russian>
-            <Portuguese>Valores de SpO₂ abaixo deste resultam em perda de consciência</Portuguese>
+            <Czech>Hodnota SpO2, která způsobí bezvědomí, pokud se pod ní dostane</Czech>
+            <Korean>의식불명에 빠지기 시작하는 SpO2(산소포화도)의 값</Korean>
+            <French>Valeur SpO2 sous laquelle on tombe inconscient</French>
+            <Turkish>Bu değerin altına düştüğünde bilinç kaybına neden olacak SpO2 değeri</Turkish>
+            <Italian>Valore di SpO2 sotto il quale causa la perdita di coscienza</Italian>
+            <Japanese>SpO2(血酸素飽和度)が設定した値を下回ると気絶し、無意識状態に陥ります。</Japanese>
+            <Russian>Значение SpO2, которое приведет к потере сознания при падении ниже этого значения</Russian>
+            <Portuguese>Valores de SpO2 abaixo deste resultam em perda de consciência</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_showPneumothorax_dupe">
             <English>Show pneumothorax duplicate</English>
@@ -1076,94 +1076,94 @@
             <German>Zeigt Zyanose in der Verletzungsliste an (oben rechts), deaktiviert die Zyanose-Diagnose Aktion </German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
-            <English>Slight cyanosis SpO₂ value</English>
-            <German>Leichter Zyanose SpO₂-Wert</German>
-            <Polish>Poziom SpO₂ dla lekkiej sinicy</Polish>
-            <Russian>Легкий цианоз Значение SpO₂</Russian>
+            <English>Slight cyanosis SpO2 value</English>
+            <German>Leichter Zyanose SpO2-Wert</German>
+            <Polish>Poziom SpO2 dla lekkiej sinicy</Polish>
+            <Russian>Легкий цианоз Значение SpO2</Russian>
             <Japanese>わずかなチアノーゼが発症するSpO2値</Japanese>
             <Chinesesimp>面色发白的SpO2值</Chinesesimp>
             <Korean>미미한 치아노제 증상 값</Korean>
-            <French>Valeur de SpO₂ de la cyanose légère</French>
-            <Turkish>Hafif Siyanoz SpO₂ değeri</Turkish>
-            <Italian>Valore di SpO₂ della cianosi leggera</Italian>
-            <Czech>SpO₂ hodnota nepatrné cyanózy</Czech>
-            <Spanish>Valor SpO₂ de Cianosis ligera</Spanish>
-            <Portuguese>Valor de SpO₂ para cianose ligeira</Portuguese>
+            <French>Valeur de SpO2 de la cyanose légère</French>
+            <Turkish>Hafif Siyanoz SpO2 değeri</Turkish>
+            <Italian>Valore di SpO2 della cianosi leggera</Italian>
+            <Czech>SpO2 hodnota nepatrné cyanózy</Czech>
+            <Spanish>Valor SpO2 de Cianosis ligera</Spanish>
+            <Portuguese>Valor de SpO2 para cianose ligeira</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue_DESC">
-            <English>Slight cyanosis value - default 90 SpO₂</English>
-            <German>Leichte Zyanose - Standardwert 90 SpO₂</German>
-            <Polish>Poziom SpO₂ dla lekkiej sinicy - domyślnie 90 SpO₂</Polish>
-            <Russian>Значение легкого цианоза - по умолчанию 90 SpO₂</Russian>
+            <English>Slight cyanosis value - default 90 SpO2</English>
+            <German>Leichte Zyanose - Standardwert 90 SpO2</German>
+            <Polish>Poziom SpO2 dla lekkiej sinicy - domyślnie 90 SpO2</Polish>
+            <Russian>Значение легкого цианоза - по умолчанию 90 SpO2</Russian>
             <Japanese>わずかなチアノーゼが発症するSpO2の値 - デフォルトはSpO2 90</Japanese>
             <Chinesesimp>面色发白的SpO2值 -默认90</Chinesesimp>
-            <Korean>미미한 치아노제의 값입니다 - 기본값은 SpO₂ 90</Korean>
-            <French>Valeur de la cyanose légère - 90 SpO₂ par défaut</French>
-            <Turkish>Hafif Siyanoz değeri - varsayılan 90 SpO₂</Turkish>
-            <Italian>Valore di cianosi leggera - default SpO₂ 90 </Italian>
-            <Czech>Hodnota nepatrné cyanózy - základní hodnota SpO₂ 90</Czech>
-            <Spanish>Valor SpO₂ de Cianosis ligera - Predeterminado en 90 SpO₂</Spanish>
-            <Portuguese>Valor de SpO₂ para cianose ligeira - predeterminado em 90 SpO₂</Portuguese>
+            <Korean>미미한 치아노제의 값입니다 - 기본값은 SpO2 90</Korean>
+            <French>Valeur de la cyanose légère - 90 SpO2 par défaut</French>
+            <Turkish>Hafif Siyanoz değeri - varsayılan 90 SpO2</Turkish>
+            <Italian>Valore di cianosi leggera - default SpO2 90 </Italian>
+            <Czech>Hodnota nepatrné cyanózy - základní hodnota SpO2 90</Czech>
+            <Spanish>Valor SpO2 de Cianosis ligera - Predeterminado en 90 SpO2</Spanish>
+            <Portuguese>Valor de SpO2 para cianose ligeira - predeterminado em 90 SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_mildValue">
-            <English>Mild cyanosis SpO₂ value</English>
-            <German>Mittelschwere Zyanose SpO₂-Wert</German>
-            <Polish>Poziom SpO₂ dla umiarkowanej sinicy</Polish>
-            <Russian>Средний значение цианоза SpO₂</Russian>
+            <English>Mild cyanosis SpO2 value</English>
+            <German>Mittelschwere Zyanose SpO2-Wert</German>
+            <Polish>Poziom SpO2 dla umiarkowanej sinicy</Polish>
+            <Russian>Средний значение цианоза SpO2</Russian>
             <Japanese>軽度のチアノーゼが発症するSpO2値</Japanese>
             <Chinesesimp>面色惨白的SpO2值</Chinesesimp>
             <Korean>가벼운 치아노제 증상 값</Korean>
-            <French>Valeur de SpO₂ de la cyanose moyenne</French>
-            <Turkish>Orta derece Siyanoz SpO₂ değeri</Turkish>
-            <Italian>Valore di SpO₂ della cianosi media</Italian>
-            <Czech>SpO₂ hodnota mírné cyanózy</Czech>
-            <Spanish>Valor SpO₂ de Cianosis moderada</Spanish>
-            <Portuguese>Valor de SpO₂ para cianose média</Portuguese>
+            <French>Valeur de SpO2 de la cyanose moyenne</French>
+            <Turkish>Orta derece Siyanoz SpO2 değeri</Turkish>
+            <Italian>Valore di SpO2 della cianosi media</Italian>
+            <Czech>SpO2 hodnota mírné cyanózy</Czech>
+            <Spanish>Valor SpO2 de Cianosis moderada</Spanish>
+            <Portuguese>Valor de SpO2 para cianose média</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_mildValue_DESC">
-            <English>Mild cyanosis value - default 75 SpO₂</English>
-            <German>Mittelschwere Zyanose - Standardwert 75 SpO₂</German>
-            <Polish>Poziom SpO₂ dla umiarkowanej sinicy - domyślnie 75 SpO₂</Polish>
-            <Russian>Значение Средней цианоза — по умолчанию 75 SpO₂</Russian>
+            <English>Mild cyanosis value - default 75 SpO2</English>
+            <German>Mittelschwere Zyanose - Standardwert 75 SpO2</German>
+            <Polish>Poziom SpO2 dla umiarkowanej sinicy - domyślnie 75 SpO2</Polish>
+            <Russian>Значение Средней цианоза — по умолчанию 75 SpO2</Russian>
             <Japanese>軽度のチアノーゼが発症するSpO2の値 - デフォルトはSpO2 75</Japanese>
             <Chinesesimp>面色惨白的SpO2值 -默认75</Chinesesimp>
-            <Korean>가벼운 치아노제의 값입니다 - 기본값은 SpO₂ 75</Korean>
-            <French>Valeur de la cyanose moyenne - 75 SpO₂ par défaut</French>
-            <Turkish>Orta derece Siyanoz değeri - varsayılan 75 SpO₂</Turkish>
-            <Italian>Valore di cianosi media - default SpO₂ 75 </Italian>
-            <Czech>Hodnota mírné cyanózy - základní hodnota SpO₂ 75</Czech>
-            <Spanish>Valor SpO₂ de Cianosis intermedia - Predeterminado en 75 SpO₂</Spanish>
-            <Portuguese>Valor de SpO₂ para cianose média - predeterminado em 75 SpO₂</Portuguese>
+            <Korean>가벼운 치아노제의 값입니다 - 기본값은 SpO2 75</Korean>
+            <French>Valeur de la cyanose moyenne - 75 SpO2 par défaut</French>
+            <Turkish>Orta derece Siyanoz değeri - varsayılan 75 SpO2</Turkish>
+            <Italian>Valore di cianosi media - default SpO2 75 </Italian>
+            <Czech>Hodnota mírné cyanózy - základní hodnota SpO2 75</Czech>
+            <Spanish>Valor SpO2 de Cianosis intermedia - Predeterminado en 75 SpO2</Spanish>
+            <Portuguese>Valor de SpO2 para cianose média - predeterminado em 75 SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_severeValue">
-            <English>Severe cyanosis SpO₂ value</English>
-            <German>Schwere Zyanose SpO₂-Wert</German>
-            <Polish>Poziom SpO₂ dla ciężkiej sinicy</Polish>
-            <Russian>Тяжелый цианоз Значение SpO₂</Russian>
+            <English>Severe cyanosis SpO2 value</English>
+            <German>Schwere Zyanose SpO2-Wert</German>
+            <Polish>Poziom SpO2 dla ciężkiej sinicy</Polish>
+            <Russian>Тяжелый цианоз Значение SpO2</Russian>
             <Japanese>重度のチアノーゼが発症するSpO2値</Japanese>
             <Chinesesimp>面色发紫的SpO2值</Chinesesimp>
             <Korean>심각한 치아노제 증상 값</Korean>
-            <French>Valeur de SpO₂ de la cyanose grave</French>
-            <Turkish>Şiddetli Siyanoz SpO₂ değeri</Turkish>
-            <Italian>Valore di SpO₂ della cianosi grave</Italian>
-            <Czech>SpO₂ hodnota vážné cyanózy</Czech>
-            <Spanish>Valor SpO₂ de Cianosis severa</Spanish>
-            <Portuguese>Valor de SpO₂ para cianose severa</Portuguese>
+            <French>Valeur de SpO2 de la cyanose grave</French>
+            <Turkish>Şiddetli Siyanoz SpO2 değeri</Turkish>
+            <Italian>Valore di SpO2 della cianosi grave</Italian>
+            <Czech>SpO2 hodnota vážné cyanózy</Czech>
+            <Spanish>Valor SpO2 de Cianosis severa</Spanish>
+            <Portuguese>Valor de SpO2 para cianose severa</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_severeValue_DESC">
-            <English>Severe cyanosis value - default 66 SpO₂ \nShould be little bit higher than lethal SpO₂ value</English>
-            <German>Schwere Zyanose - Standardwert 66 SpO₂ \nSollte etwas höher sein als der tödliche SpO₂-Wert</German>
-            <Polish>Poziom SpO₂ dla ciężkiej sinicy - domyślnie 66 SpO₂ \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO₂</Polish>
-            <Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO₂ \nДолжно быть немного выше летального значения SpO₂</Russian>
+            <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
+            <German>Schwere Zyanose - Standardwert 66 SpO2 \nSollte etwas höher sein als der tödliche SpO2-Wert</German>
+            <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
+            <Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO2 \nДолжно быть немного выше летального значения SpO2</Russian>
             <Japanese>重度のチアノーゼが発症するSpO2の値 - デフォルトはSpO2 66\nSpO2の致命値より少し高く設定する必要があります</Japanese>
             <Chinesesimp>面色发紫的SpO2值 -默认66\n致命的SpO2值至少要低于此值</Chinesesimp>
-            <Korean>심각한 치아노제의 값입니다 - 기본값은 SpO₂ 66 \n반드시 사망하게 되는 SpO₂ 값보다 아주 조금 높아야 합니다</Korean>
-            <French>Valeur de la cyanose grave - 66 SpO₂ par défaut \nCette valeur devrait être un peu plus haute que la valeur de SpO₂ létale.</French>
-            <Turkish>Şiddetli Siyanoz değeri - varsayılan 66 SpO₂ \nÖlümcül SpO₂ değerinden biraz daha yüksek olmalıdır</Turkish>
-            <Italian>Valore di cianosi grave- default SpO₂ 66. (Dovrebbe essere un pochino più alta del valore letate di SpO₂</Italian>
-            <Czech>Hodnota vážné cyanózy - základní hodnota SpO₂ 66 \nMěla by být mírně vyšší, než smrtelná hodnota SpO₂</Czech>
-            <Spanish>Valor SpO₂ de Cianosis severa - Predeterminado en 66 SpO₂ \nEste valor deberia de ser un poco mas alto que el valor letal de SpO₂</Spanish>
-            <Portuguese>Valor de SpO₂ para cianose severa - predeterminado em 66 SpO₂\nDeve estar um pouco acima do valor letal de SpO₂</Portuguese>
+            <Korean>심각한 치아노제의 값입니다 - 기본값은 SpO2 66 \n반드시 사망하게 되는 SpO2 값보다 아주 조금 높아야 합니다</Korean>
+            <French>Valeur de la cyanose grave - 66 SpO2 par défaut \nCette valeur devrait être un peu plus haute que la valeur de SpO2 létale.</French>
+            <Turkish>Şiddetli Siyanoz değeri - varsayılan 66 SpO2 \nÖlümcül SpO2 değerinden biraz daha yüksek olmalıdır</Turkish>
+            <Italian>Valore di cianosi grave- default SpO2 66. (Dovrebbe essere un pochino più alta del valore letate di SpO2</Italian>
+            <Czech>Hodnota vážné cyanózy - základní hodnota SpO2 66 \nMěla by být mírně vyšší, než smrtelná hodnota SpO2</Czech>
+            <Spanish>Valor SpO2 de Cianosis severa - Predeterminado en 66 SpO2 \nEste valor deberia de ser un poco mas alto que el valor letal de SpO2</Spanish>
+            <Portuguese>Valor de SpO2 para cianose severa - predeterminado em 66 SpO2\nDeve estar um pouco acima do valor letal de SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_CYANOSIS_TREATMENT_LEVEL">
             <English>Check Cyanosis Minimum Level</English>
@@ -1306,58 +1306,58 @@
             <Portuguese>[KAM] Itens gerais</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SPO2Flashing_display">
-            <English>Enable low SpO₂ warning</English>
-            <German>Aktiviere visuellen Effekt bei niedrigen SpO₂ Wert</German>
-            <French>Autoriser les alertes de SpO₂ basse</French>
+            <English>Enable low SpO2 warning</English>
+            <German>Aktiviere visuellen Effekt bei niedrigen SpO2 Wert</German>
+            <French>Autoriser les alertes de SpO2 basse</French>
             <Japanese>低SpO2警告を有効にする</Japanese>
             <Korean>낮은 산소포화도 경고 활성화</Korean>
             <Italian>Abilità l'allerta di basso SPO2</Italian>
-            <Portuguese>Habilita aviso de baixo nível de SpO₂</Portuguese>
+            <Portuguese>Habilita aviso de baixo nível de SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SPO2Flashing_DESC">
-            <English>Makes your Screen flash black if you are below 90% SpO₂ (default value)</English>
-            <German>Dunkle, pulsierende Vignettierung wenn dein SpO₂ Wert unter unter 90% ist (Standard Wert)</German>
-            <French>Fait flasher l'écran en noir si la valeur de SpO₂ est en dessous de 90% (Valeur par défaut)</French>
+            <English>Makes your Screen flash black if you are below 90% SpO2 (default value)</English>
+            <German>Dunkle, pulsierende Vignettierung wenn dein SpO2 Wert unter unter 90% ist (Standard Wert)</German>
+            <French>Fait flasher l'écran en noir si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
             <Japanese>SpO2が(デフォルトの値では)90%未満の場合、画面が黒く点滅します。</Japanese>
             <Korean>산소포화도가 90%(기본값) 미만인 경우 화면이 검은색으로 깜빡입니다.</Korean>
             <Italian>Rendi lampeggiante il tuo schermo se sei sotto al 90% di SPO2 (valore standard)</Italian>
-            <Portuguese>Faz sua tela piscar em preto se você estiver abaixo de 90% de SpO₂ (valor padrão)</Portuguese>
+            <Portuguese>Faz sua tela piscar em preto se você estiver abaixo de 90% de SpO2 (valor padrão)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_display">
-            <English>Enable Stamina loss on low SpO₂</English>
-            <German>Aktiviere Verlust von Ausdauer bei niedrigen SpO₂ Wert</German>
-            <French>Autoriser la perte d'endurance en cas de SpO₂ basse</French>
+            <English>Enable Stamina loss on low SpO2</English>
+            <German>Aktiviere Verlust von Ausdauer bei niedrigen SpO2 Wert</German>
+            <French>Autoriser la perte d'endurance en cas de SpO2 basse</French>
             <Japanese>低SpO2でのスタミナ損失を有効にする</Japanese>
             <Korean>낮은 산소포화도에서 스태미나 손실 활성화</Korean>
             <Italian>Abilita la perdità di stamina con bassa pressione SPO2</Italian>
-            <Portuguese>Ativar perda de stamina sob baixo SpO₂</Portuguese>
+            <Portuguese>Ativar perda de stamina sob baixo SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_DESC">
-            <English>Makes you lose stamina if you are under 90% SpO₂ (default value)</English>
-            <German>Lässt dich Ausdauer verlieren wenn du unter 90% SpO₂ bist (Standard Wert)</German>
-            <French>Fait perdre de l'endurance si la valeur de SpO₂ est en dessous de 90% (Valeur par défaut)</French>
+            <English>Makes you lose stamina if you are under 90% SpO2 (default value)</English>
+            <German>Lässt dich Ausdauer verlieren wenn du unter 90% SpO2 bist (Standard Wert)</German>
+            <French>Fait perdre de l'endurance si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
             <Japanese>SpO2が(デフォルトの値では)90%未満の場合、スタミナを失います。</Japanese>
             <Korean>산소포화도가 90%(기본값) 미만이면 스태미나가 떨어집니다.</Korean>
             <Italian>Perdi stamina se sei sotto il 90% SPO2 (valore standard)</Italian>
-            <Portuguese>Faz você perder stamina se estiver abaixo de 90% SpO₂ (valor padrão)</Portuguese>
+            <Portuguese>Faz você perder stamina se estiver abaixo de 90% SpO2 (valor padrão)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lowSPO2Level_display">
-            <English>Low SpO₂ warning level</English>
-            <German>Schwellwert für niedrigen SpO₂</German>
-            <French>Niveau d'alerte de SpO₂ basse</French>
+            <English>Low SpO2 warning level</English>
+            <German>Schwellwert für niedrigen SpO2</German>
+            <French>Niveau d'alerte de SpO2 basse</French>
             <Japanese>低SpO2警告のレベル</Japanese>
             <Korean>낮은 산소포화도 경고 수준</Korean>
             <Italian>Livello di allerta bassa SPO2</Italian>
-            <Portuguese>Nível de alerta de SpO₂ baixo</Portuguese>
+            <Portuguese>Nível de alerta de SpO2 baixo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lowSPO2Level_DESC">
-            <English>Lets you change the SpO₂ Value at which you get the Flashing warning indicator and stamina loss effect</English>
-            <German>Definiert den SpO₂ Wert, bei welchem der Ausdauerverlust und der visuelle Effekt (schwarzes "flackern") eintritt</German>
-            <French>Règle la valeur de SpO₂ à laquelle les flashs d'alerte et la perte d'endurance apparaissent</French>
+            <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
+            <German>Definiert den SpO2 Wert, bei welchem der Ausdauerverlust und der visuelle Effekt (schwarzes "flackern") eintritt</German>
+            <French>Règle la valeur de SpO2 à laquelle les flashs d'alerte et la perte d'endurance apparaissent</French>
             <Japanese>低SpO2警告が発生するSpO2のしきい値を変更します。(デフォルトでは90%)</Japanese>
             <Korean>깜빡임 경고 표시 및 스태미나 손실 효과를 얻게 되는 산소포화도 값을 변경합니다.</Korean>
             <Italian>Ti permette di cambiare il valore di SPO2 al quale ricevi l'indicatore lampeggiante d'allerta e l'effetto di perdita della stamina </Italian>
-            <Portuguese>Permite alterar o valor SpO₂ no qual você é avisado e sofre perda de stamina</Portuguese>
+            <Portuguese>Permite alterar o valor SpO2 no qual você é avisado e sofre perda de stamina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PulseOximeter_Action_addSound">
             <English>Enable Pulse Oximeter Alarm</English>
@@ -1374,8 +1374,8 @@
             <German>Deaktiviere Pulsoximeter Alarm</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning">
-            <English>Pulse Oximeter Alarm SpO₂ Threshold</English>
-            <French>Niveau de SpO₂ déclenchant l'alarme de l'oxymètre de pouls</French>
+            <English>Pulse Oximeter Alarm SpO2 Threshold</English>
+            <French>Niveau de SpO2 déclenchant l'alarme de l'oxymètre de pouls</French>
             <Korean>맥박산소측정기의 알람이 울리는 SpO2의 임계값</Korean>
             <Japanese>パルスオキシメータのアラームのSpO2しきい値</Japanese>
             <German>Pulsoximeter Alarm Grenzwert</German>
