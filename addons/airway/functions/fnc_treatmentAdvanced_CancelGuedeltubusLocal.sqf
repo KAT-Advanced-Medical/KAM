@@ -22,10 +22,10 @@ _patient setVariable [QGVAR(guedeltubusisSet), false, true];
 _patient setVariable [QGVAR(airway_item), "", true];
 _patient call FUNC(handleAirway);
 
-if (GVAR(reusableAirwayItems)) then {
-	if (_medic canAdd "kat_guedel") then {
-		_medic addItem "kat_guedel";
-	} else {
-		_patient addItem "kat_guedel";
-	};
+if (GVAR(reusableAirwayItems)) exitWith {
+    if (_medic canAdd "kat_guedel") then {
+        _medic addItem "kat_guedel";
+    } else {
+        _patient addItem "kat_guedel";
+    };
 };
