@@ -1184,5 +1184,18 @@
             <Spanish>Parámetros de las herramientas (vias aéreas)</Spanish>
             <Portuguese>Configurações de itens de vias aéreas</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Airway_Cancel_Larynxtubus">
+            <English>Remove KingLT</English>
+            <German>Entferne Larynxtubus</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_Cancel_Guedeltubus">
+            <English>Remove Guedel Tube</English>
+            <German>Entferne Guedeltubus</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_action_removing">
+            <English>Removing</English>
+            <German>Entferne</German>
+        </Key>
+        
     </Package>
 </Project>

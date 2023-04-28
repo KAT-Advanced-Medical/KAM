@@ -1,5 +1,7 @@
 PREP(checkAirway);
 PREP(checkRecovery);
+PREP(checkRecoveryLarynxtubus);
+PREP(checkRecoveryGuedeltubus);
 PREP(displayPatientInformation);
 PREP(handleAirway);
 PREP(handlePuking);
