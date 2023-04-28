@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam, edited by MiszczuZPolski
+ * Author: Katalam, edited by MiszczuZPolski & Miss Heda
  * Airway Management for collapsing local
  *
  * Arguments:
@@ -33,6 +33,14 @@ if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") exitW
 if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "Guedeltubus" && _usedItem isEqualTo "kat_guedel") exitWith {
     [QGVAR(airwayFeedback), [_medic, LLSTRING(Airway_already)], _medic] call CBA_fnc_targetEvent;
     [_medic, _usedItem] call ACEFUNC(common,addToInventory);
+};
+
+if (_usedItem == "kat_larynx") then {
+    _patient setVariable [QGVAR(kingLTisSet), true, true];
+};
+
+if (_usedItem == "kat_guedel") then {
+    _patient setVariable [QGVAR(guedeltubusisSet), true, true];
 };
 
 _patient setVariable [QGVAR(airway), true, true];

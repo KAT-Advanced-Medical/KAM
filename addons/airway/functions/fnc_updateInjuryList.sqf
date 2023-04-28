@@ -149,8 +149,19 @@ if(_target getVariable [QEGVAR(chemical,airPoisoning),false]) then{
 if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then {
     private _a = _target getVariable [QGVAR(airway_item), ""];
     if !(_a isEqualTo "") then {
-        private _text = format [LSTRING(%1_Display), _a];
-        _woundEntries pushback [localize _text, [0.1, 1, 1, 1]];
+        if (_a == "Larynxtubus") then {
+            if (_target getVariable [QGVAR(kingLTisSet), false]) then {
+                private _text = format [LSTRING(%1_Display), _a];
+                _woundEntries pushback [localize _text, [0.1, 1, 1, 1]];
+            };
+        };
+
+        if (_a == "Guedeltubus") then {
+            if (_target getVariable [QGVAR(guedeltubusisSet), false]) then {
+                private _text = format [LSTRING(%1_Display), _a];
+                _woundEntries pushback [localize _text, [0.1, 1, 1, 1]];
+            };
+        };
     };
 };
 

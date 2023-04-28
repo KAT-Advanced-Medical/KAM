@@ -1185,7 +1185,7 @@
             <Portuguese>Configurações de itens de vias aéreas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_Cancel_Larynxtubus">
-            <English>Remove KingLT</English>
+            <English>Remove King LT</English>
             <German>Entferne Larynxtubus</German>
         </Key>
         <Key ID="STR_KAT_Airway_Cancel_Guedeltubus">
@@ -1196,6 +1196,13 @@
             <English>Removing</English>
             <German>Entferne</German>
         </Key>
-        
+        <Key ID="STR_KAT_Airway_Reusable_AirwayItems">
+            <English>Reusable Airway Items</English>
+            <German>Wieder Benutzbare Atemwegsobjekte</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_Reusable_AirwayItems_DESC">
+            <English>Regain the KingLT or Guedel Tube when manually removing them</English>
+            <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
+        </Key>
     </Package>
 </Project>

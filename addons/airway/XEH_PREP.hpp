@@ -1,7 +1,5 @@
 PREP(checkAirway);
 PREP(checkRecovery);
-PREP(checkRecoveryLarynxtubus);
-PREP(checkRecoveryGuedeltubus);
 PREP(displayPatientInformation);
 PREP(handleAirway);
 PREP(handlePuking);
@@ -11,6 +9,10 @@ PREP(treatmentAdvanced_Accuvac);
 PREP(treatmentAdvanced_AccuvacLocal);
 PREP(treatmentAdvanced_airway);
 PREP(treatmentAdvanced_airwayLocal);
+PREP(treatmentAdvanced_CancelGuedeltubus);
+PREP(treatmentAdvanced_CancelGuedeltubusLocal);
+PREP(treatmentAdvanced_CancelLarynxtubus);
+PREP(treatmentAdvanced_CancelLarynxtubusLocal);
 PREP(treatmentAdvanced_CancelRecoveryPosition);
 PREP(treatmentAdvanced_CancelRecoveryPositionLocal);
 PREP(treatmentAdvanced_overstretchHead);
