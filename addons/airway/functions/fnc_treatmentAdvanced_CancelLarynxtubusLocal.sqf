@@ -23,7 +23,7 @@ _patient setVariable [QGVAR(airway_item), "", true];
 _patient call FUNC(handleAirway);
 _patient call FUNC(handlePuking);
 
-if (GVAR(reusableAirwayItems)) exitWith {
+if (GVAR(reusableAirwayItems)) then {
 	if (_medic canAdd "kat_larynx") then {
 		_medic addItem "kat_larynx";
 	} else {
