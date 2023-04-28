@@ -1316,7 +1316,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SPO2Flashing_DESC">
             <English>Makes your Screen flash black if you are below 90% SpO2 (default value)</English>
-            <German>Dunkle, pulsierende Vignettierung wenn dein SpO2 Wert unter unter 90% ist (Standard Wert)</German>
+            <German>Dunkle, pulsierende Vignettierung wenn der SpO2 Wert unter 90% ist (Standard Wert)</German>
             <French>Fait flasher l'écran en noir si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
             <Japanese>SpO2が(デフォルトの値では)90%未満の場合、画面が黒く点滅します。</Japanese>
             <Korean>산소포화도가 90%(기본값) 미만인 경우 화면이 검은색으로 깜빡입니다.</Korean>
