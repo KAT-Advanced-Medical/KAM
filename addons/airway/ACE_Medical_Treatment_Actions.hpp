@@ -37,7 +37,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Guedeltubus_Display);
         medicRequired = QGVAR(medLvl_Guedeltubus);
         treatmentTime = QGVAR(Guedeltubus_time);
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(guedeltubusisSet), false)]) && !(_patient getVariable [ARR_2(QQGVAR(kingLTisSet), false)]));
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && missionNamespace getVariable [ARR_2(QQGVAR(enable),true)] && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(guedeltubusisSet), false)]) && !(_patient getVariable [ARR_2(QQGVAR(kingLTisSet), false)]));
         items[] = {"kat_guedel"};
         icon = QPATHTOF(ui\guedel.paa);
         callbackSuccess = QFUNC(treatmentAdvanced_airway);
