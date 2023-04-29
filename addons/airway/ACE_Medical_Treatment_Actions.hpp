@@ -24,6 +24,15 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
         icon = QPATHTOF(ui\larynx.paa);
     };
+    class RemoveAirwayItem: Larynxtubus {
+        displayName = CSTRING(RemoveAirwayItem_Display);
+        displayNameProgress = CSTRING(action_removing);
+        treatmentTime = QGVAR(RemoveAirwayItem_time);
+        items[] = {};
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(airway),false)]));
+        consumeItem = 0;
+        callbackSuccess = QFUNC(treatmentAdvanced_removeAirwayItem);
+    };
     class Guedeltubus: Larynxtubus {
         displayName = CSTRING(Guedeltubus_Display);
         medicRequired = QGVAR(medLvl_Guedeltubus);

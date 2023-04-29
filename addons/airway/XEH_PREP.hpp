@@ -14,6 +14,8 @@ PREP(treatmentAdvanced_CancelRecoveryPositionLocal);
 PREP(treatmentAdvanced_overstretchHead);
 PREP(treatmentAdvanced_RecoveryPosition);
 PREP(treatmentAdvanced_RecoveryPositionLocal);
+PREP(treatmentAdvanced_RemoveAirwayItem);
+PREP(treatmentAdvanced_RemoveAirwayItemLocal);
 PREP(treatmentAdvanced_turnaroundHead);
 PREP(updateInjuryList);
 PREP(updateLogList);

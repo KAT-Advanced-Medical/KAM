@@ -208,4 +208,14 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+//Settable treatment time for removing airway item
+[
+    QGVAR(RemoveAirwayItem_time),
+    "SLIDER",
+    [LLSTRING(TIME_AIRWAYITEM),LLSTRING(TIME_AIRWAYITEM_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 10, 3, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

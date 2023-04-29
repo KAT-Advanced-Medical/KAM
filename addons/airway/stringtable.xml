@@ -1184,5 +1184,25 @@
             <Spanish>Parámetros de las herramientas (vias aéreas)</Spanish>
             <Portuguese>Configurações de itens de vias aéreas</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Airway_TIME_AIRWAYITEM">
+            <English>Time for removing airway item</English>
+            <Polish>Czas na usunięcie przedmiotu z dróg oddechowych</Polish>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_AIRWAYITEM_DESC">
+            <English>How long it will take to remove airway item</English>
+            <Polish>Jak długo potrwa usunięcie przedmiotu z dróg oddechowych</Polish>
+        </Key>
+        <Key ID="STR_KAT_Airway_RemoveAirwayItem_Display">
+            <English>Remove airway item</English>
+            <Polish>Usuń przedmiot z dróg oddechowych</Polish>
+        </Key>
+        <Key ID="STR_KAT_Airway_action_removing">
+            <English>Removing...</English>
+            <Polish>Wyciąganie...</Polish>
+        </Key>
+        <Key ID="STR_KAT_Airway_RemoveAirwayItem_Log">
+            <English>%1 removed airway item</English>
+            <Polish>%1 usunął rurkę z dróg oddechowych</Polish>
+        </Key>
     </Package>
 </Project>
