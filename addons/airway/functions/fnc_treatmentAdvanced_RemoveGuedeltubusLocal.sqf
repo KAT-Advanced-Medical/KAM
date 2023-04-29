@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_CancelGuedeltubusLocal;
+ * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_RemoveGuedeltubusLocal;
  *
  * Public: No
  */
@@ -22,7 +22,7 @@ _patient setVariable [QGVAR(guedeltubusisSet), false, true];
 _patient setVariable [QGVAR(airway_item), "", true];
 _patient call FUNC(handleAirway);
 
-if (GVAR(reusableAirwayItems)) exitWith {
+if (GVAR(ReusableAirwayItems)) exitWith {
     if (_medic canAdd "kat_guedel") then {
         _medic addItem "kat_guedel";
     } else {

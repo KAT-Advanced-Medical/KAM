@@ -180,7 +180,7 @@ In real life, this will happen sometimes, not quiet often.
 
 // Enable reuasble Larynxtubus & Guedeltubus
 [
-    QGVAR(reusableAirwayItems),
+    QGVAR(ReusableAirwayItems),
     "CHECKBOX",
     [LLSTRING(Reusable_AirwayItems),LLSTRING(Reusable_AirwayItems_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],

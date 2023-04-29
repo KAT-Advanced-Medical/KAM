@@ -8,8 +8,8 @@ if !(GVAR(enable)) exitWith {};
 [QGVAR(accuvacLocal), LINKFUNC(treatmentAdvanced_accuvacLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(recoveryPositionLocal), LINKFUNC(treatmentAdvanced_RecoveryPositionLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(cancelRecoveryPositionLocal), LINKFUNC(treatmentAdvanced_CancelRecoveryPositionLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(cancelLarynxtubus), LINKFUNC(treatmentAdvanced_CancelLarynxtubusLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(cancelGuedeltubus), LINKFUNC(treatmentAdvanced_CancelGuedeltubusLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(removeLarynxtubus), LINKFUNC(treatmentAdvanced_RemoveLarynxtubusLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(removeGuedeltubus), LINKFUNC(treatmentAdvanced_RemoveGuedeltubusLocal)] call CBA_fnc_addEventHandler;
 
 [QGVAR(airwayFeedback), {
     params ["_medic","_output"];

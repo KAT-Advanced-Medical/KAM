@@ -25,16 +25,6 @@ if (_patient getVariable [QGVAR(occluded), false]) exitWith {
     [_medic, _usedItem] call ACEFUNC(common,addToInventory);
 };
 
-if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") exitWith {
-    [QGVAR(airwayFeedback), [_medic, LLSTRING(Airway_already)], _medic] call CBA_fnc_targetEvent;
-    [_medic, _usedItem] call ACEFUNC(common,addToInventory);
-};
-
-if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "Guedeltubus" && _usedItem isEqualTo "kat_guedel") exitWith {
-    [QGVAR(airwayFeedback), [_medic, LLSTRING(Airway_already)], _medic] call CBA_fnc_targetEvent;
-    [_medic, _usedItem] call ACEFUNC(common,addToInventory);
-};
-
 if (_usedItem == "kat_larynx") then {
     _patient setVariable [QGVAR(kingLTisSet), true, true];
 };

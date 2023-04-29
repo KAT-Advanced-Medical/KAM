@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Larynxtubus);
         treatmentTime = QGVAR(Larynxtubus_time);
         items[] = {"kat_larynx"};
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(kingLTisSet), false)]));
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(kingLTisSet), false)]) && !(_patient getVariable [ARR_2(QQGVAR(guedeltubusisSet), false)]));
         callbackSuccess = QFUNC(treatmentAdvanced_airway);
         callbackFailure = "";
         callbackProgress = "";
@@ -24,41 +24,25 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
         icon = QPATHTOF(ui\larynx.paa);
     };
-    class CancelLarynxtubus {
+    class RemoveLarynxtubus: Larynxtubus {
         displayName = CSTRING(Cancel_Larynxtubus);
         displayNameProgress = CSTRING(action_removing);
-        category = "airway";
-        treatmentLocations = 0;
-        allowedSelections[] = {"Head"};
-        allowSelfTreatment = 0;
         medicRequired = QGVAR(medLvl_Larynxtubus);
         treatmentTime = QGVAR(Larynxtubus_time);
         items[] = {};
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && _patient getVariable [ARR_2(QQGVAR(kingLTisSet), false)]);
-        callbackSuccess = QFUNC(treatmentAdvanced_CancelLarynxtubus);
-        callbackFailure = "";
-        callbackProgress = "";
-        consumeItem = 0;
-        animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
-        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
-        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
-        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
-        litter[] = {};
-        icon = QPATHTOF(ui\larynx.paa);
+        callbackSuccess = QFUNC(treatmentAdvanced_RemoveLarynxtubus);
     };
     class Guedeltubus: Larynxtubus {
         displayName = CSTRING(Guedeltubus_Display);
         medicRequired = QGVAR(medLvl_Guedeltubus);
         treatmentTime = QGVAR(Guedeltubus_time);
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(guedeltubusisSet), false)]));
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(guedeltubusisSet), false)]) && !(_patient getVariable [ARR_2(QQGVAR(kingLTisSet), false)]));
         items[] = {"kat_guedel"};
         icon = QPATHTOF(ui\guedel.paa);
         callbackSuccess = QFUNC(treatmentAdvanced_airway);
     };
-    class CancelGuedeltubus: CancelLarynxtubus {
+    class RemoveGuedeltubus: RemoveLarynxtubus {
         displayName = CSTRING(Cancel_Guedeltubus);
         displayNameProgress = CSTRING(action_removing);
         medicRequired = QGVAR(medLvl_Guedeltubus);
@@ -66,7 +50,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         icon = QPATHTOF(ui\guedel.paa);
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && _patient getVariable [ARR_2(QQGVAR(guedeltubusisSet), false)]);
-        callbackSuccess = QFUNC(treatmentAdvanced_CancelGuedeltubus);
+        callbackSuccess = QFUNC(treatmentAdvanced_RemoveGuedeltubus);
     };
     class Accuvac: Larynxtubus {
         displayName = "Accuvac";

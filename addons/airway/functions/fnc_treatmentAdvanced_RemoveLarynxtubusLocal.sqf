@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_CancelLarynxtubusLocal;
+ * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_RemoveLarynxtubusLocal;
  *
  * Public: No
  */
@@ -23,7 +23,7 @@ _patient setVariable [QGVAR(airway_item), "", true];
 _patient call FUNC(handleAirway);
 _patient call FUNC(handlePuking);
 
-if (GVAR(reusableAirwayItems)) exitWith {
+if (GVAR(ReusableAirwayItems)) exitWith {
     if (_medic canAdd "kat_larynx") then {
         _medic addItem "kat_larynx";
     } else {

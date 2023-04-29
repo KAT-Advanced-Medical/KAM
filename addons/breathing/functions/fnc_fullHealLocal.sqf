@@ -72,6 +72,8 @@ _unit setVariable [QEGVAR(airway,occluded), false, true];
 _unit setVariable [QEGVAR(airway,obstruction), false, true];
 _unit setVariable [QEGVAR(airway,recovery), false, true];
 _unit setVariable [QEGVAR(airway,overstretch), false, true];
+_unit setVariable [QEGVAR(airway,kingLTisSet), false, true];
+_unit setVariable [QEGVAR(airway,guedeltubusisSet), false, true];
 
 //KAT Breathing
 _unit setVariable [QGVAR(airwayStatus), 100, true];

@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Miss Heda
- * Removing Larynxtubus
+ * Removing Guedeltubus
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -11,11 +11,11 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_CancelLarynxtubus.sqf
+ * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_RemoveGuedeltubus;
  *
  * Public: No
  */
 
 params ["_medic", "_patient"];
 
-[QGVAR(cancelLarynxtubus), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+[QGVAR(removeGuedeltubus), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
