@@ -15,7 +15,10 @@
  * Public: No
  */
 
-params ["_unit"];
+params ["_unit", ["_isRespawn", true]];
+
+if (!local _unit) exitWith {};
+if !(GVAR(enable)) exitWith {};
 
 _unit setVariable [QGVAR(airwayStatus), 100, true];
 _unit setVariable [QGVAR(pneumothorax), false, true];

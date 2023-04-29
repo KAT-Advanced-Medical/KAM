@@ -15,7 +15,9 @@
  * Public: No
  */
 
-params ["_unit"];
+params ["_unit", ["_isRespawn", true]];
+
+if (!local _unit) exitWith {};
 
 _unit setVariable [QGVAR(X), false, true];
 _unit setVariable [QGVAR(AED_X_Volume), true, true];
