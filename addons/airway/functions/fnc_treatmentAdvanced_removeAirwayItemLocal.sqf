@@ -21,11 +21,11 @@ params ["_medic", "_patient"];
 private _item = _patient getVariable [QGVAR(airway_item), ""];
 
 if (GVAR(reusableAirwayItem)) then {
-	if (_item isEqualTo "Larynxtubus") then {
-		[_medic, "kat_larynx"] call ACEFUNC(common,addToInventory);
-	} else {
-		[_medic, "kat_guedel"] call ACEFUNC(common,addToInventory);
-	};
+    if (_item isEqualTo "Larynxtubus") then {
+	    [_medic, "kat_larynx"] call ACEFUNC(common,addToInventory);
+    } else {
+	    [_medic, "kat_guedel"] call ACEFUNC(common,addToInventory);
+    };
 };
 
 _patient setVariable [QGVAR(airway), false, true];
