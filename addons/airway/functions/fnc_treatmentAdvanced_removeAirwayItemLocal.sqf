@@ -11,12 +11,22 @@
  * None
  *
  * Example:
- * [player] call kat_airway_fnc_treatmentAdvanced_removeAirwayItemLocal;
+ * [player, cursorObject] call kat_airway_fnc_treatmentAdvanced_removeAirwayItemLocal;
  *
  * Public: No
  */
 
-params ["_patient"];
+params ["_medic", "_patient"];
+
+private _item = _patient getVariable [QGVAR(airway_item), ""];
+
+if (GVAR(reusableAirwayItem)) then {
+	if (_item isEqualTo "Larynxtubus") then {
+		[_medic, "kat_larynx"] call ACEFUNC(common,addToInventory);
+	} else {
+		[_medic, "kat_guedel"] call ACEFUNC(common,addToInventory);
+	};
+};
 
 _patient setVariable [QGVAR(airway), false, true];
 _patient setVariable [QGVAR(airway_item), "", true];

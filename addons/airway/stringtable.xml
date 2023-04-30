@@ -1194,7 +1194,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_RemoveAirwayItem_Display">
             <English>Remove airway item</English>
-            <Polish>Usuń przedmiot z dróg oddechowych</Polish>
+            <Polish>Usuń rurkę z dróg oddechowych</Polish>
         </Key>
         <Key ID="STR_KAT_Airway_action_removing">
             <English>Removing...</English>
@@ -1203,6 +1203,10 @@
         <Key ID="STR_KAT_Airway_RemoveAirwayItem_Log">
             <English>%1 removed airway item</English>
             <Polish>%1 usunął rurkę z dróg oddechowych</Polish>
+        </Key>
+        <Key ID="STR_KAT_Airway_REUSABLE_AIRWAYITEMS">
+            <English>Sets if KingLT/Guedel is reusable</English>
+            <Polish>Czy rurka krtaniowa/ustno-gardłowa jest do ponownego użytku</Polish>
         </Key>
     </Package>
 </Project>

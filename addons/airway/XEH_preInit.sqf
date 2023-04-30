@@ -218,4 +218,14 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+//Reusable Airway items
+[
+    QGVAR(reusableAirwayItem),
+    "CHECKBOX",
+    [LLSTRING(REUSABLE_AIRWAYITEMS)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
