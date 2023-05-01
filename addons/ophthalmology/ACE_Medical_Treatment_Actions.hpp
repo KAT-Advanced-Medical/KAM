@@ -31,7 +31,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
         medicRequired = 0;
-        treatmentTime = 2;
+        treatmentTime = GVAR(eyewash_treatment_time);
         items[] = {
             "ACE_salineIV",
             "ACE_salineIV_500",

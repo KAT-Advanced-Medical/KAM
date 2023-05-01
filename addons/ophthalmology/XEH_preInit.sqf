@@ -64,7 +64,17 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(setting_blink_treatment_time)],
     [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
-    [1, 10, 5, 0],
+    [1, 10, 2, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Eye Wash treatment time
+[
+    QGVAR(eyewash_treatment_time),
+    "SLIDER",
+    [LLSTRING(setting_eyewash_treatment_time)],
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
+    [1, 10, 2, 0],
     true
 ] call CBA_Settings_fnc_init;
 

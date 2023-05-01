@@ -34,6 +34,9 @@
         <Key ID="STR_KAT_Ophthalmology_setting_blink_treatment_time">
             <English>Treatment time of blink</English>
         </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_eyewash_treatment_time">
+            <English>Treatment time of Eye Wash</English>
+        </Key>
         <Key ID="STR_KAT_Ophthalmology_blink_action">
             <English>Blinking</English>
         </Key>
