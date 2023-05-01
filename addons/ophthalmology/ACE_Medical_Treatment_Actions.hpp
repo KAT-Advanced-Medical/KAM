@@ -7,7 +7,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
         medicRequired = 0;
-        treatmentTime = GVAR(blink_treatment_time);
+        treatmentTime = QGVAR(blink_treatment_time);
         items[] = {};
         condition = QGETGVAR(enable,true);
         callbackSuccess = QFUNC(treatmentAdvanced_blink);
@@ -30,8 +30,8 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = 0;
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        medicRequired = GVAR(eyewash_medic_required);
-        treatmentTime = GVAR(eyewash_treatment_time);
+        medicRequired = QGVAR(eyewash_medic_required);
+        treatmentTime = QGVAR(eyewash_treatment_time);
         items[] = {
             "ACE_salineIV",
             "ACE_salineIV_500",
