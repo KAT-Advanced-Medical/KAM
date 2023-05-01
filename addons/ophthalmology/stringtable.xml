@@ -31,6 +31,9 @@
         <Key ID="STR_KAT_Ophthalmology_setting_blink_effect_intensity">
             <English>Intensity of the pp effect for missing blink</English>
         </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_blink_treatment_time">
+            <English>Treatment time of blink</English>
+        </Key>
         <Key ID="STR_KAT_Ophthalmology_blink_action">
             <English>Blinking</English>
         </Key>

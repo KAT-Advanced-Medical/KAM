@@ -58,6 +58,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Blinking treatment time
+[
+    QGVAR(blink_treatment_time),
+    "SLIDER",
+    [LLSTRING(setting_blink_treatment_time)],
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
+    [1, 10, 5, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 // Enable manual blinking
 [
     QGVAR(enableManualBlinking),

@@ -7,7 +7,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
         medicRequired = 0;
-        treatmentTime = 2;
+        treatmentTime = GVAR(blink_treatment_time);
         items[] = {};
         condition = QGETGVAR(enable,true);
         callbackSuccess = QFUNC(treatmentAdvanced_blink);
