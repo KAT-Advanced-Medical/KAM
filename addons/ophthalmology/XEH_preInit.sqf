@@ -79,6 +79,7 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 // Eye Wash medic required
+[
     QGVAR(eyewash_medic_required),
     "SLIDER",
     [LLSTRING(setting_eyewash_medic_required)],
