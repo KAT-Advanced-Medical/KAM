@@ -12,7 +12,7 @@ class ACE_Medical_Treatment_Actions {
     class BloodIV: BasicBandage {
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         medicRequired = QUOTE(ace_medical_treatment_medicIV);
-        condition = QUOTE(!(GVAR(RequireInsIV)) || FUNC(removeIV));
+        condition = QUOTE(!(GVAR(RequireInsIV)) || FUNC(hasIV));
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 800, 12] call kat_pharma_fnc_fluid;";
     };
     class BloodIV_500: BloodIV {
@@ -114,7 +114,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
         items[] = {"kat_EACA"};
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
+        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(hasIV));
         callbackSuccess = QFUNC(treatmentAdvanced_EACA);
         sounds[] = {};
     };
@@ -147,7 +147,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 1;
         treatmentTime = 2;
         items[] = {};
-        condition = QFUNC(removeIV);
+        condition = QFUNC(hasIV);
         callbackSuccess = QFUNC(inspectCatheter);
         animationMedic = "";
         animationMedicProne = "";
@@ -279,7 +279,7 @@ class ACE_Medical_Treatment_Actions {
         category = "advanced";
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         items[] = {"kat_IV_16"};
-        condition = QUOTE(!([ARR_3(_player, _patient, _bodyPart)] call FUNC(removeIV)));
+        condition = QUOTE(!([ARR_3(_player, _patient, _bodyPart)] call FUNC(hasIV)));
         treatmentTime = QGVAR(treatmentTime_ApplyIV);
         callbackSuccess = QUOTE([ARR_4(_player, _patient, _bodyPart, 'kat_IV_16')] call FUNC(applyIV));
         litter[] = {};
@@ -292,7 +292,7 @@ class ACE_Medical_Treatment_Actions {
         category = "advanced";
         allowedSelections[] = {"Body"};
         items[] = {"kat_IO_FAST"};
-        condition = QUOTE(!([ARR_3(_player, _patient, _bodyPart)] call FUNC(removeIV)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        condition = QUOTE(!([ARR_3(_player, _patient, _bodyPart)] call FUNC(hasIV)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         treatmentTime = QGVAR(treatmentTime_ApplyIO);
         callbackSuccess = QUOTE([ARR_4(_player, _patient, _bodyPart, 'kat_IO_FAST')] call FUNC(applyIV));
         litter[] = {};
@@ -304,7 +304,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         treatmentTime = 3;
         items[] = {};
-        condition = QFUNC(removeIV);
+        condition = QFUNC(hasIV);
         callbackSuccess = QFUNC(retrieveIV);
         sounds[] = {};
     };
