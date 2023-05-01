@@ -8,6 +8,7 @@ PREP(getBloodLoss);
 PREP(getBloodVolumeChange);
 PREP(hasStableVitals);
 PREP(init);
+PREP(insertChildrenSyringe);
 PREP(inspectBreath);
 PREP(inspectCatheter);
 PREP(ketaminePP);
