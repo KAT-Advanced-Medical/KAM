@@ -78,6 +78,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Eye Wash medic required
+    QGVAR(eyewash_medic_required),
+    "SLIDER",
+    [LLSTRING(setting_eyewash_medic_required)],
+    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
+    [0, 2, 0, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 // Enable manual blinking
 [
     QGVAR(enableManualBlinking),
