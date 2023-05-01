@@ -17,7 +17,7 @@
             <English>Probability to treat (non-heavy) eye injury with blinking</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_dust_effect_intensity">
-            <English>Intensity of the pp effect for eye injury</English>
+            <English>Intensity of the effect for eye injury</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_subcategory_manual_blink">
             <English>Manual blinking</English>
@@ -38,13 +38,7 @@
             <English>Blink</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_display">
-            <English>Wash eyes with 1000 ml</English>
-        </Key>
-        <Key ID="STR_KAT_Ophthalmology_eyewash_display_500">
-            <English>Wash eyes with 500 ml</English>
-        </Key>
-        <Key ID="STR_KAT_Ophthalmology_eyewash_display_250">
-            <English>Wash eyes with 250 ml</English>
+            <English>Wash eyes with saline</English>
         </Key>
         <Key ID="STR_KAT_Ophthalmology_eyewash_display_water">
             <English>Wash eyes with water</English>

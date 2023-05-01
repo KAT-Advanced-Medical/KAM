@@ -23,7 +23,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
-    class Eyewash {
+    class EyeWash {
         displayName = CSTRING(eyewash_display);
         displayNameProgress = CSTRING(eyewash_action);
         category = "bandage";
@@ -34,6 +34,8 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         items[] = {
             "ACE_salineIV",
+            "ACE_salineIV_500",
+            "ACE_salineIV_250",
         };
         condition = QGETGVAR(enable,true);
         callbackSuccess = QFUNC(treatmentAdvanced_eyewash);
@@ -50,21 +52,7 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
     };
 
-    class Eyewash500: Eyewash {
-        displayName = CSTRING(eyewash_display_500);
-        items[] = {
-            "ACE_salineIV_500",
-        };
-    };
-
-    class Eyewash250: Eyewash {
-        displayName = CSTRING(eyewash_display_250);
-        items[] = {
-            "ACE_salineIV_250",
-        };
-    };
-
-    class EyewashWater: Eyewash {
+    class EyeWashWater: EyeWash {
         displayName = CSTRING(eyewash_display_water);
         items[] = {
             "ACE_Canteen",
@@ -74,7 +62,7 @@ class ACE_Medical_Treatment_Actions {
         };
     };
 
-    class EyewashItem: Eyewash {
+    class EyeWasher: EyeWash {
         displayName = CSTRING(eyewasher_display_item);
         callbackSuccess = QFUNC(treatmentAdvanced_eyewasher);
         items[] = {};

@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-[QGVAR(handleTime), LINKFUNC(handleTime)] call CBA_fnc_addEventHandler;
+if (!hasInterface) exitWith {};
 
 call FUNC(initKeybinds);
 

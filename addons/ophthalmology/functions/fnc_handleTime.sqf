@@ -4,8 +4,15 @@
  * Handles the current moment if blinking was needed in the past
  * and ands pp effects if needed
  *
+ * Arguments:
+ * 0: Player Object <OBJECT>
+ * 1: Framehandler Id <INTEGER>
+ *
  * Return Value:
  * None
+ *
+ * Example:
+ * [kat_ophthalmonology_fnc_handleTime, 1, player] call CBA_fnc_addPerFrameHandler;
  *
  * Public: No
  */

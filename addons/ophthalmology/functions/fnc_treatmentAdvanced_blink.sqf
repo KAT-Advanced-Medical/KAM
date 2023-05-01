@@ -25,8 +25,4 @@ if (_random <= GVAR(probability_treatment_dust)) then {
     GVAR(ppBlurDustInjury) ppEffectEnable false;
     GVAR(ppBlurDustInjury) ppEffectAdjust [0];
     GVAR(ppBlurDustInjury) ppEffectCommit 0;
-
-    true;
 };
-
-false;

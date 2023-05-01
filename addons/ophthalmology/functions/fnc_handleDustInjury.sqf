@@ -3,8 +3,15 @@
  * Author: Katalam
  * Handles the possibility to have dust in the eye.
  *
+ * Arguments:
+ * 0: Player Object <OBJECT>
+ * 1: Framehandler Id <INTEGER>
+ *
  * Return Value:
  * None
+ *
+ * Example:
+ * [kat_ophthalmonology_fnc_handleDustInjury, 60, player] call CBA_fnc_addPerFrameHandler;
  *
  * Public: No
  */
