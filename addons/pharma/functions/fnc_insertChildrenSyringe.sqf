@@ -39,10 +39,10 @@ private _allMedications = [
 // filter the players items to get all medicines
 private _medications = [];
 {
-    if (_x in _allMedications) exitWith {
+    if (_x in _allMedications) then {
         _medications pushBackUnique _x;
     };
-    // fallback for additonal mods
+    // fallback for additional mods
     if ((getNumber (configFile >> "CfgWeapons" >> _x >> "isMedication")) > 0) then {
         _medications pushBackUnique _x;
     };
