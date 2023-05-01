@@ -118,6 +118,10 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_EACA);
         sounds[] = {};
     };
+    class EACASyringe: EACA {
+        items[] = {"kat_EACASyringe"};
+        condition = "";
+    };
     class TXA: EACA {
         displayName = CSTRING(Take_TXA);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -127,6 +131,10 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_TXA"};
         callbackSuccess = QFUNC(treatmentAdvanced_TXA);
         sounds[] = {};
+    };
+    class TXASyringe: TXA {
+        items[] = {"kat_TXASyringe"};
+        condition = "";
     };
     class SalineFlush: Carbonate {
         displayName = CSTRING(Saline_Flush);
@@ -177,6 +185,10 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
     };
+    class NorepinephrineSyringe: Norepinephrine {
+        items[] = {"kat_norepinephrineSyringe"};
+        condition = "";
+    };
     class Phenylephrine: EACA {
         displayName = CSTRING(Take_Phenyl);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -186,6 +198,10 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_phenylephrine"};
         callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
+    };
+    class PhenylephrineSyringe: Phenylephrine {
+        items[] = {"kat_phenylephrineSyringe"};
+        condition = "";
     };
     class Nitroglycerin: EACA {
         displayName = CSTRING(Take_Nitro);
@@ -197,6 +213,10 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
     };
+    class NitroglycerinSyringe: Nitroglycerin {
+        items[] = {"kat_nitroglycerinSyringe"};
+        condition = "";
+    };
     class Amiodarone: EACA {
         displayName = CSTRING(Take_Amiodarone);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -206,6 +226,10 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_amiodarone"};
         callbackSuccess = QFUNC(treatmentAdvanced_Amiodarone);
         sounds[] = {};
+    };
+    class AmiodaroneSyringe: Amiodarone {
+        items[] = {"kat_amiodaroneSyringe"};
+        condition = "";
     };
     class Lidocaine: EACA {
         displayName = CSTRING(Take_Lidocaine);
@@ -217,6 +241,10 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
     };
+    class LidocaineSyringe: Lidocaine {
+        items[] = {"kat_lidocaineSyringe"};
+        condition = "";
+    };
     class Atropine: EACA {
         displayName = CSTRING(Take_Atropine);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -226,6 +254,10 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_atropine"};
         callbackSuccess = QFUNC(treatmentAdvanced_Atropine);
         sounds[] = {};
+    };
+    class AtropineSyringe: Atropine {
+        items[] = {"kat_atropineSyringe"};
+        condition = "";
     };
     class Ketamine: EACA {
         displayName = CSTRING(Take_Ketamine);
@@ -237,6 +269,10 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_Ketamine);
         sounds[] = {};
     };
+    class KetamineSyringe: Ketamine {
+        items[] = {"kat_ketamineSyringe"};
+        condition = "";
+    };
     class Fentanyl: EACA {
         displayName = CSTRING(Take_Fentanyl);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -247,6 +283,10 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_Fentanyl);
         sounds[] = {};
     };
+    class FentanylSyringe: Fentanyl {
+        items[] = {"kat_fentanylSyringe"};
+        condition = "";
+    };
     class Nalbuphine: EACA {
         displayName = CSTRING(Take_Nalbuphine);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -256,6 +296,10 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_nalbuphine"};
         callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
+    };
+    class NalbuphineSyringe: Nalbuphine {
+        items[] = {"kat_nalbuphineSyringe"};
+        condition = "";
     };
     class Reorientation: Carbonate {
         displayName = CSTRING(Take_Reorient);
