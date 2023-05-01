@@ -55,8 +55,7 @@ private _condition = {true};
 {
     private _displayName = getText (configFile >> "CfgWeapons" >> _x >> "displayName");
     private _actionVarName = format [QGVAR(syringe_action_%1), _x];
-
-    private _action = [_actionVarName, _displayName, "", {true}, _condition, {}, _x] call ACEFUNC(interact_menu,createAction);
+    private _action = [_actionVarName, _displayName, "", FUNC(prepareSyringe), _condition, {}, _x] call ACEFUNC(interact_menu,createAction);
 
     _actions pushBack [_action, [], _target];
 } forEach _medications;

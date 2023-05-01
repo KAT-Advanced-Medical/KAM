@@ -13,6 +13,7 @@ PREP(inspectBreath);
 PREP(inspectCatheter);
 PREP(ketaminePP);
 PREP(pervitinPP);
+PREP(prepareSyringe);
 PREP(removeItemfromMag);
 PREP(removeIV);
 PREP(retrieveIV);
