@@ -20,7 +20,6 @@
 params ["_target", "_player", "_params"];
 
 private _allMedications = [
-    "kat_naloxone",
     "kat_EACA",
     "kat_TXA",
     "kat_norepinephrine",

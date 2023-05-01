@@ -78,10 +78,6 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
-    class kat_naloxoneSyringe: kat_syringeBase {
-        displayName = CSTRING(Naloxone_Box_Display);
-        descriptionShort = CSTRING(Naloxone_DescShort);
-    };
     class kat_EACA: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(EACA_Display);
