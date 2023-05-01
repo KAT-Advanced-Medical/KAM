@@ -21,7 +21,7 @@ class CfgVehicles {
     class kat_PainkillerItem: WeaponHolder_Single_limited_item_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= CSTRING(Painkillers_Box_Display);
+        displayName = CSTRING(Painkillers_Box_Display);
         author = "Katalam";
         vehicleClass = "Magazines";
         class TransportItems {

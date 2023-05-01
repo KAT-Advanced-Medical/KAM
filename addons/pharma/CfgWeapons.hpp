@@ -28,7 +28,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Pervitin_Capsule_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;
-        }; 
+        };
     };
     class kat_CaffeineItem: ACE_ItemCore {
         scope = 2; //This item is not actually used and it is replaced by ace_common_fnc_registerItemReplacement 
@@ -38,7 +38,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Caffeine_Bottle_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;
-        }; 
+        };
     };
     class kat_IV_16: ACE_ItemCore {
         scope = 2;
@@ -48,7 +48,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(IV_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_IO_FAST: ACE_ItemCore {
         scope = 2;
@@ -58,7 +58,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(IO_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_naloxone: ACE_ItemCore {
         scope = 2;
@@ -68,7 +68,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Naloxone_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_EACA: ACE_ItemCore {
         scope = 2;
@@ -88,7 +88,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(TXA_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_norepinephrine: ACE_ItemCore {
         scope = 2;
@@ -98,7 +98,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Norep_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_phenylephrine: ACE_ItemCore {
         scope = 2;
@@ -108,7 +108,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Phenyl_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_nitroglycerin: ACE_ItemCore {
         scope = 2;
@@ -118,7 +118,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Nitro_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_amiodarone: ACE_ItemCore {
         scope = 2;
@@ -128,7 +128,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Amiodarone_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_lidocaine: ACE_ItemCore {
         scope = 2;
@@ -138,7 +138,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Lidocaine_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_atropine: ACE_ItemCore {
         scope = 2;
@@ -148,7 +148,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Atropine_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_ketamine: ACE_ItemCore {
         scope = 2;
@@ -158,7 +158,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Ketamine_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_fentanyl: ACE_ItemCore {
         scope = 2;
@@ -168,7 +168,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Fentanyl_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
     class kat_nalbuphine: ACE_ItemCore {
         scope = 2;
@@ -178,9 +178,9 @@ class CfgWeapons {
         descriptionShort = CSTRING(Nalbuphine_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
-        }; 
+        };
     };
-        class kat_lorazepam: ACE_ItemCore {
+    class kat_lorazepam: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Lorazepam_displayName);
         picture = QPATHTOF(ui\icon_lorazepam.paa);
@@ -188,7 +188,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Lorazepam_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
-        }; 
+        };
     };
     class kat_flumazenil: ACE_ItemCore {
         scope = 2;
@@ -198,7 +198,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Flumazenil_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
-        }; 
+        };
     };
     class kat_etomidate: ACE_ItemCore {
         scope = 2;
