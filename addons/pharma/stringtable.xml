@@ -1321,6 +1321,12 @@
             <Spanish>Administrar Etomidato</Spanish>
             <Portuguese>Administrar Etomidato</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_displayName">
+            <English>Syringe</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_DescUse">
+            <English>A syringe is a simple reciprocating pump consisting of a plunger that fits tightly within a cylindrical tube called a barrel.</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_Lorazepam_displayName">
             <English>Lorazepam</English>
             <Chinesesimp>劳拉西泮</Chinesesimp>

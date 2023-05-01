@@ -208,6 +208,14 @@ class CfgWeapons {
         descriptionShort = CSTRING(Etomidate_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
-        }; 
+        };
+    };
+    class kat_syringe: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Syringe_displayName);
+        descriptionShort = CSTRING(Syringe_DescUse);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.2;
+        };
     };
 };
