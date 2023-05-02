@@ -29,15 +29,7 @@ if (_item isEqualTo "Larynxtubus") then {
 if !(GVAR(ReusableAirwayItems)) exitwith {};
     
 if (_item isEqualTo "Larynxtubus") then {
-    if (_medic canAdd "kat_larynx") then {
-        _medic addItem "kat_larynx";
-    } else {
-        _patient addItem "kat_larynx";
-    };
+    [_medic, "kat_larynx"] call ACEFUNC(common,addToInventory);
 } else {
-    if (_medic canAdd "kat_guedel") then {
-        _medic addItem "kat_guedel";
-    } else {
-        _patient addItem "kat_guedel";
-    };
+    [_medic, "kat_guedel"] call ACEFUNC(common,addToInventory);
 };
