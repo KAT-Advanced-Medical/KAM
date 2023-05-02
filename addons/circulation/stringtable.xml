@@ -1318,7 +1318,6 @@
 			<Spanish>Grupo sanguineo</Spanish>
             <German>Blutgruppe</German>
             <Polish>Grupa krwi</Polish>
-            <Spanish>Grupo sanguíneo</Spanish>
             <Chinese>血型</Chinese>
             <Chinesesimp>血型</Chinesesimp>
             <Czech>Krevní skupina</Czech>
@@ -1572,7 +1571,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_AttachTime">
             <English>Time required to attach AED-X monitor</English>
-			<English>Tiempo requerido para acoplar el monitor del DEA-X</English>
+			<Spanish>Tiempo requerido para acoplar el monitor del DEA-X</Spanish>
             <French>Temps nécessaire pour attacher le moniteur de l'AED-X</French>
             <Korean>X-시리즈 AED를 연결하는 데 필요한 시간</Korean>
             <Japanese>AED-Xモニターの取り付けにかかる時間</Japanese>
@@ -1580,7 +1579,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_DetachTime">
             <English>Time required to detach AED-X monitor</English>
-			<English>Tiempo requerido para desacoplar el monitor del DEA-X</English>
+			<Spanish>Tiempo requerido para desacoplar el monitor del DEA-X</Spanish>
             <French>Temps nécessaire pour détacher le moniteur de l'AED-X</French>
             <Korean>X-시리즈 AED를 떼어내는 데 필요한 시간</Korean>
             <Japanese>AED-Xモニターの取り外しにかかる時間</Japanese>
