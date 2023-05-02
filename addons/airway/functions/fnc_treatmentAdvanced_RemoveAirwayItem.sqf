@@ -21,9 +21,9 @@ params ["_medic", "_patient"];
 private _item = _patient getVariable [QGVAR(airway_item), ""];
 
 if (_item isEqualTo "Larynxtubus") then {
-	[_patient, "activity", LSTRING(RemoveLarynxtubus_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
+    [_patient, "activity", LSTRING(RemoveLarynxtubus_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 } else {
-	[_patient, "activity", LSTRING(RemoveGuedeltubus_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
+    [_patient, "activity", LSTRING(RemoveGuedeltubus_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 };
 
 [QGVAR(removeAirwayItemLocal), [_medic, _patient, _item], _patient] call CBA_fnc_targetEvent;
