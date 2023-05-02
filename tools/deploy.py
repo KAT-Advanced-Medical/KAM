@@ -9,7 +9,6 @@
 
 import os
 import sys
-import shutil
 import traceback
 import subprocess as sp
 from github import Github
@@ -25,8 +24,6 @@ TRANSLATIONBODY = """**[ACE3 Translation Guide](http://ace3.acemod.org/wiki/deve
 REPOUSER = "Tomcat-SG"
 REPONAME = "KAM"
 REPOPATH = "{}/{}".format(REPOUSER,REPONAME)
-
-BRANCH = "master"
 
 
 def update_translations(repo):
