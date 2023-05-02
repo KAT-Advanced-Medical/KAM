@@ -13,7 +13,7 @@
 params ["_medic", "_patient"];
 
 // get a random integer
-private _random = floor(random [0, 50, 100]);
+private _random = floor(random 100);
 
 // heavy dust injury?
 if (_patient getVariable [QGVAR(dust_injury_heavy), false]) exitWith {};
