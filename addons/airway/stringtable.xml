@@ -1204,5 +1204,13 @@
             <English>Regain the KingLT or Guedel Tube when manually removing them</English>
             <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
         </Key>
+        <Key ID="STR_KAT_Airway_RemoveLarynxtubus_Log">
+            <English>%1 removed KingLT</English>
+            <German>%1 hat Larynxtubus entfernt</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_RemoveGuedeltubus_Log">
+            <English>%1 removed Guedel Tube</English>
+            <German>%1 hat Guedeltubus entfernt</German>
+        </Key>
     </Package>
 </Project>

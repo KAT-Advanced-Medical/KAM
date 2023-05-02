@@ -16,13 +16,25 @@
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", "_item"];
 
-_patient setVariable [QGVAR(guedeltubusisSet), false, true];
 _patient setVariable [QGVAR(airway_item), "", true];
+_patient setVariable [QGVAR(airway), false, true];
 _patient call FUNC(handleAirway);
 
-if (GVAR(ReusableAirwayItems)) exitWith {
+if (_item isEqualTo "Larynxtubus") then {
+    _patient call FUNC(handlePuking);
+};
+
+if !(GVAR(ReusableAirwayItems)) exitwith {};
+    
+if (_item isEqualTo "Larynxtubus") then {
+    if (_medic canAdd "kat_larynx") then {
+        _medic addItem "kat_larynx";
+    } else {
+        _patient addItem "kat_larynx";
+    };
+} else {
     if (_medic canAdd "kat_guedel") then {
         _medic addItem "kat_guedel";
     } else {

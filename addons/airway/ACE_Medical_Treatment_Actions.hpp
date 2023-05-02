@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Larynxtubus);
         treatmentTime = QGVAR(Larynxtubus_time);
         items[] = {"kat_larynx"};
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(kingLTisSet), false)]) && !(_patient getVariable [ARR_2(QQGVAR(guedeltubusisSet), false)]));
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus') && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus'));
         callbackSuccess = QFUNC(treatmentAdvanced_airway);
         callbackFailure = "";
         callbackProgress = "";
@@ -30,14 +30,14 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Larynxtubus);
         treatmentTime = QGVAR(Larynxtubus_time);
         items[] = {};
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && _patient getVariable [ARR_2(QQGVAR(kingLTisSet), false)]);
-        callbackSuccess = QFUNC(treatmentAdvanced_RemoveLarynxtubus);
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus'));
+        callbackSuccess = QFUNC(treatmentAdvanced_RemoveAirwayItem);
     };
     class Guedeltubus: Larynxtubus {
         displayName = CSTRING(Guedeltubus_Display);
         medicRequired = QGVAR(medLvl_Guedeltubus);
         treatmentTime = QGVAR(Guedeltubus_time);
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && missionNamespace getVariable [ARR_2(QQGVAR(enable),true)] && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(guedeltubusisSet), false)]) && !(_patient getVariable [ARR_2(QQGVAR(kingLTisSet), false)]));
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && missionNamespace getVariable [ARR_2(QQGVAR(enable),true)] && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus') && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus'));
         items[] = {"kat_guedel"};
         icon = QPATHTOF(ui\guedel.paa);
         callbackSuccess = QFUNC(treatmentAdvanced_airway);
@@ -49,8 +49,8 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(Guedeltubus_time);
         items[] = {};
         icon = QPATHTOF(ui\guedel.paa);
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && _patient getVariable [ARR_2(QQGVAR(guedeltubusisSet), false)]);
-        callbackSuccess = QFUNC(treatmentAdvanced_RemoveGuedeltubus);
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus'));
+        callbackSuccess = QFUNC(treatmentAdvanced_RemoveAirwayItem);
     };
     class Accuvac: Larynxtubus {
         displayName = "Accuvac";

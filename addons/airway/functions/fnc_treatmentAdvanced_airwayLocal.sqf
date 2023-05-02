@@ -25,14 +25,6 @@ if (_patient getVariable [QGVAR(occluded), false]) exitWith {
     [_medic, _usedItem] call ACEFUNC(common,addToInventory);
 };
 
-if (_usedItem == "kat_larynx") then {
-    _patient setVariable [QGVAR(kingLTisSet), true, true];
-};
-
-if (_usedItem == "kat_guedel") then {
-    _patient setVariable [QGVAR(guedeltubusisSet), true, true];
-};
-
 _patient setVariable [QGVAR(airway), true, true];
 _patient setVariable [QGVAR(obstruction), false, true];
 _patient setVariable [QGVAR(airway_item), _classname, true];
