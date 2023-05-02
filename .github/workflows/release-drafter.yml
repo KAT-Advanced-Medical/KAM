@@ -13,4 +13,4 @@ jobs:
         if: github.repository == 'Tomcat-SG/KAM'
         uses: release-drafter/release-drafter@v5
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
