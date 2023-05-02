@@ -1189,7 +1189,7 @@
             <English>Pickup AED</English>
             <German>AED aufheben</German>
             <Polish>Podnieś AED</Polish>
-            <Spanish>Recoger AED</Spanish>
+            <Spanish>Recoger DEA</Spanish>
             <Chinese>打開血型相容表</Chinese>
             <Chinesesimp>捡起AED</Chinesesimp>
             <Czech>Vyzvednout AED</Czech>
@@ -1205,7 +1205,7 @@
             <English>Blood groups cheat sheet</English>
             <German>Blutgruppentabelle</German>
             <Polish>Tabela grup krwi</Polish>
-            <Spanish>Tabla de compatibilidad sanguíneos</Spanish>
+            <Spanish>Tabla de compatibilidad sanguínea</Spanish>
             <Chinese>血型相容表</Chinese>
             <Chinesesimp>血型相容表</Chinesesimp>
             <Czech>Tahák krevních skupin</Czech>
@@ -1235,6 +1235,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign">
             <English>Blood Type Assignment</English>
+            <Spanish>Asignaación de tipo de sangre</Spanish>
             <Korean>혈액형 할당</Korean>
             <Japanese>血液型割り当て</Japanese>
             <French>Attribution du groupe sanguin</French>
@@ -1242,6 +1243,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_DESC">
             <English>Sets how players' blood type is assigned:\nPlayer chosen: Player chooses their own blood type\nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning\nRandom: Blood type is random each respawn\nRandom (on join): Blood type is random, but doesn't change upon respawning\nSteamID: Blood type is decided based on player's steamID\nSteamID (custom list): Blood type is decided based on player's steamID and custom list</English>
+            <Spanish>Fija como se asigna el tipo de sangre:\nElegido por jugador: El jugador elige su tipo de sangre.\nElegido por jugador (forzado): El jugador elige su tipo de sangre, pero no cambia al reaparecer\nAleatorio: El tipo de sangre es aleatorio en cada reaparición\nAleatorio (al unirse): El tipo de sangre es aleatorio, y no cambia con cada reaparición\nSteamID: El tipo de sangre se decide en base al SteamID del jugador\nSteam ID (Lista personalizada): El tipo de sangre es seleccionado en base al Steam ID del jugador y de una lista personalizada</Spanish>
             <Korean>플레이어의 혈액형 할당 방식을 설정합니다:\n플레이어가 선택: 플레이어가 자신의 혈액형을 선택합니다\n플레이어가 선택(강제): 플레이어가 자신의 혈액형을 선택하지만 재투입해도 변하지 않습니다.\n무작위: 혈액형은 재투입할 때마다 무작위로 변합니다.\n무작위 (게임 참가 때만):혈액형은 무작위이지만 재투입해도 변하지 않습니다.\nSteamID:혈액형은 플레이어의 SteamID을 기반으로 결정됩니다.\nSteamID (커스텀 목록): 혈액형은 플레이어의 SteamID와 커스텀 목록을 기반으로 결정됩니다.</Korean>
             <Japanese>プレイヤーの血液型の割り振り方法を設定します:\nプレイヤー選択: プレイヤーが自分で選択できます。\nプレイヤー選択(強制): プレイヤーが自分で選択できます、リスポーン時に変更しません。\nランダム: リスポーン毎にランダムに指定されます。\nランダム(参加時): ランダムに指定されます。リスポーン時に変化しません。\nSteamID: プレイヤーのSteamIDを基に決定されます。\nSteamID(カスタムリスト): プレイヤーのSteamIDとカスタムリストの設定に基づいて決定されます。</Japanese>
             <French>Définit comme le groupe sanguin des joueurs est attribué :\nChoix du joueur : chaque joueur choisit son propre groupe sanguin\nChoix du joueur (forcé) : chaque joueur choisit son propre groupe sanguin, mais il ne changera pas au respawn.\nAléatoire : le groupe sanguin est choisit aléatoirement à chaque réapparition\nAléatoire (défini): le groupe sanguin est aléatoire, mais ne changera pas à la réapparition\nSteamID : le groupe groupe sanguin est basé sur le steamID des joueurs\nSteamID (liste personnalisée) : le groupe sanguin est basé sur le steamID des joueurs ainsi qu'une liste personnalisée </French>
@@ -1249,6 +1251,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player">
             <English>Player chosen</English>
+            <Spanish>Elegida por el jugador</Spanish>
             <Korean>플레이어가 선택</Korean>
             <Japanese>プレイヤー選択</Japanese>
             <French>Choix du joueur</French>
@@ -1256,6 +1259,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player_forced">
             <English>Player chosen (forced)</English>
+            <Spanish>Elegido por el jugador (forzado)</Spanish>
             <Korean>플레이어가 선택(강제)</Korean>
             <Japanese>プレイヤー選択(強制)</Japanese>
             <French>Choix du joueur (forcé)</French>
@@ -1263,6 +1267,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random">
             <English>Random</English>
+            <Spanish>Aleatorio</Spanish>
             <Korean>무작위</Korean>
             <Japanese>ランダム</Japanese>
             <French>Aléatoire</French>
@@ -1270,6 +1275,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random_onJoin">
             <English>Random (on join)</English>
+            <Spanish>Aleatorio (al unirse)</Spanish>
             <Korean>무작위 (게임 참가 때만)</Korean>
             <Japanese>ランダム(参加時)</Japanese>
             <French>Aléatoire (défini)</French>
@@ -1277,6 +1283,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid">
             <English>SteamID</English>
+            <Spanish>SteamID</Spanish>
             <Korean>SteamID</Korean>
             <Japanese>SteamID</Japanese>
             <French>SteamID</French>
@@ -1284,6 +1291,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid_custom">
             <English>SteamID (custom list)</English>
+            <Spanish>SteamID (Lista personalizada)</Spanish>
             <Korean>SteamID (커스텀 목록)</Korean>
             <Japanese>SteamID(カスタムリスト)</Japanese>
             <French>SteamID (liste personnalisée)</French>
@@ -1291,6 +1299,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted">
             <English>Weighted Randomizer</English>
+            <Spanish>Aleatoriedad condicionada</Spanish>
             <Korean>혈액형 무작위화 가중</Korean>
             <Japanese>重み付けランダム化</Japanese>
             <French>Poids aléatoire</French>
@@ -1298,6 +1307,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted_DESC">
             <English>Sets if random blood type given will be weighted according to blood type commonness</English>
+            <Spanish>Fija si el tipo de sangre es aleatorio, se balancee el tipo de sangre en estadisticas reales</Spanish>
             <Korean>주어진 임의의 혈액형이 혈액형의 공통성에 따라 가중치가 부여되는지 여부를 설정합니다.</Korean>
             <Japanese>血液型が完全なランダム化か、希少性を基に重み付けられたランダム化をされるかを選択できます。</Japanese>
             <French>Définit si le groupe sanguin aléatoire donné est difini par les chances réalistes de groupe sanguin</French>
@@ -1305,9 +1315,9 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player">
             <English>Blood group</English>
+            <Spanish>Grupo sanguineo</Spanish>
             <German>Blutgruppe</German>
             <Polish>Grupa krwi</Polish>
-            <Spanish>Grupo sanguíneo</Spanish>
             <Chinese>血型</Chinese>
             <Chinesesimp>血型</Chinesesimp>
             <Czech>Krevní skupina</Czech>
@@ -1321,6 +1331,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list">
             <English>Blood Type Custom List</English>
+            <Spanish>Lista personalizada de tipo de sangre</Spanish>
             <Korean>혈액형 커스텀 목록</Korean>
             <Japanese>血液型カスタムリスト</Japanese>
             <French>Liste personnalisée de groupe sanguin</French>
@@ -1328,6 +1339,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list_DESC">
             <English>Sets blood types that will be assigned to players based on their SteamID\nBlood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
+            <Spanish>Fija el tipo de sangre con el que aparecen los jugadores en base a su Steam ID\nLos tipos de sangre son separados por comas (","), la lista debe contener 10 tipos de sangre en total</Spanish>
             <Korean>SteamID를 기반으로 플레이어에게 할당할 혈액형을 설정합니다.\n혈액형은 쉼표(",")로 구분되며, 목록에는 총 10개의 혈액형이 포함되어야 합니다.</Korean>
             <Japanese>SteamIDによってプレイヤーに割り振られる血液型を設定します。\n血液型はカンマ(",")で区切られ、リストには合計10種の血液型が含まれる必要があります。</Japanese>
             <French>Attribue les groupes sanguins pouvant être attribués aux joueurs en se basant sur leur SteamID\n Les groupes sanguins sont séparés par des virgules (","), la liste devrait contenir un total de 10 groupes sanguins.</French>
@@ -1433,7 +1445,7 @@
             <English>%1 performed AED-X</English>
             <Polish>%1 użył AED-X</Polish>
             <German>%1 hat den AED-X benutzt</German>
-            <Spanish>%1 utilizó AED-X</Spanish>
+            <Spanish>%1 utilizó el DEA-X</Spanish>
             <Chinese>%1 已執行心肺復甦術</Chinese>
             <Chinesesimp>%1 已使用AED-X</Chinesesimp>
             <Czech>%1 použil AED-X</Czech>
@@ -1453,7 +1465,7 @@
             <Korean>X-시리즈 AED의 최대 성공 확률</Korean>
             <German>Maximale Erfolgschance für den AED-X</German>
             <Japanese>AED-Xの最大成功率</Japanese>
-            <Spanish>Probabilidad máxima de éxito para DEA-X</Spanish>
+            <Spanish>Probabilidad máxima de éxito para el DEA-X</Spanish>
             <Polish>Maksymalna szansa na sukces dla AED-X</Polish>
             <Portuguese>Probabilidade máxima de sucesso para DEA-X</Portuguese>
         </Key>
@@ -1465,7 +1477,7 @@
             <Korean>자동제세동기의 최대 성공 확률</Korean>
             <German>Maximale Erfolgschance für den AED</German>
             <Japanese>AEDの最大成功率</Japanese>
-            <Spanish>Probabilidad máxima de éxito para DEA</Spanish>
+            <Spanish>Probabilidad máxima de éxito para el DEA</Spanish>
             <Polish>Maksymalna szansa na sukces dla AED</Polish>
             <Portuguese>Probabilidade máxima de sucesso para DEA</Portuguese>
         </Key>
@@ -1477,7 +1489,7 @@
             <Korean>X-시리즈 AED의 최소 성공 확률</Korean>
             <German>Minimale Erfolgschance für den AED-X</German>
             <Japanese>AED-Xの最小成功確率</Japanese>
-            <Spanish>Probabilidad mínima de éxito para DEA-X</Spanish>
+            <Spanish>Probabilidad mínima de éxito para el DEA-X</Spanish>
             <Polish>Minimalna szansa na sukces dla AED-X</Polish>
             <Portuguese>Probabilidade mínima de sucesso para DEA-X</Portuguese>
         </Key>
@@ -1489,7 +1501,7 @@
             <Korean>자동제세동기의 최소 성공 확률</Korean>
             <German>Minimale Erfolgschance für den AED</German>
             <Japanese>AEDの最小成功確率</Japanese>
-            <Spanish>Probabilidad mínima de éxito para DEA</Spanish>
+            <Spanish>Probabilidad mínima de éxito para el DEA</Spanish>
             <Polish>Minimalna szansa na sukces dla AED</Polish>
             <Portuguese>Probabilidade mínima de sucesso para DEA</Portuguese>
         </Key>
@@ -1497,7 +1509,7 @@
             <English>Allow AED</English>
             <Polish>Ograniczenie użycia AED</Polish>
             <German>AED erlauben</German>
-            <Spanish>Permitir DEA</Spanish>
+            <Spanish>Permitir el DEA</Spanish>
             <Chinese>允許AED</Chinese>
             <Chinesesimp>允许AED</Chinesesimp>
             <Czech>Povolit AED</Czech>
@@ -1559,6 +1571,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_AttachTime">
             <English>Time required to attach AED-X monitor</English>
+            <Spanish>Tiempo requerido para acoplar el monitor del DEA-X</Spanish>
             <French>Temps nécessaire pour attacher le moniteur de l'AED-X</French>
             <Korean>X-시리즈 AED를 연결하는 데 필요한 시간</Korean>
             <Japanese>AED-Xモニターの取り付けにかかる時間</Japanese>
@@ -1566,6 +1579,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_DetachTime">
             <English>Time required to detach AED-X monitor</English>
+            <Spanish>Tiempo requerido para desacoplar el monitor del DEA-X</Spanish>
             <French>Temps nécessaire pour détacher le moniteur de l'AED-X</French>
             <Korean>X-시리즈 AED를 떼어내는 데 필요한 시간</Korean>
             <Japanese>AED-Xモニターの取り外しにかかる時間</Japanese>
@@ -1607,7 +1621,7 @@
             <English>Deactivate Monitor while using AED-X</English>
             <Polish>Dezaktywuj monitor podczas korzystania z AED-X</Polish>
             <German>AED-X Monitor während dem defibrillieren deaktivieren</German>
-            <Spanish>Desactivar el monitor mientras usa DEA-X</Spanish>
+            <Spanish>Desactivar el monitor mientras usa el DEA-X</Spanish>
             <Chinese>使用AED-X時停用顯示器</Chinese>
             <Chinesesimp>使用AED-X时停用显示器</Chinesesimp>
             <Czech>Deaktivovat monitoring při použití AED-X</Czech>
@@ -1749,7 +1763,7 @@
             <English>Allows you to draw blood and use it</English>
             <Polish>Pozwala pobierać krew i używać jej</Polish>
             <German>Ermöglicht die Entnahme von Blut und dessen Verwendung</German>
-            <Spanish>Te permite sacar sangre y usarla. </Spanish>
+            <Spanish>Permite sacar sangre y usarla</Spanish>
             <Chinese>允许你抽血并使用它 </Chinese>
             <Chinesesimp>允许你抽出血液并使用它 </Chinesesimp>
             <Czech>Umožňuje odebírat krev a použít ji</Czech>
@@ -1765,7 +1779,7 @@
             <English>Draw Blood (500ml)</English>
             <Polish>Pobierz krew (500ml)</Polish>
             <German>Blut abnehmen (500ml)</German>
-            <Spanish>Extraer sangre (500 ml) </Spanish>
+            <Spanish>Extraer sangre (500ml) </Spanish>
             <Chinese>抽血 (500ml) </Chinese>
             <Chinesesimp>抽血 (500ml) </Chinesesimp>
             <Czech>Odebrat krev (500ml)</Czech>
@@ -1781,7 +1795,7 @@
             <English>Draw Blood (250ml)</English>
             <Polish>Pobierz krew (250ml)</Polish>
             <German>Blut abnehmen (250ml)</German>
-            <Spanish>Extraer sangre (250 ml) </Spanish>
+            <Spanish>Extraer sangre (250ml) </Spanish>
             <Chinese>抽血 (250ml) </Chinese>
             <Chinesesimp>抽血 (250ml) </Chinesesimp>
             <Czech>Odebrat krev (250ml)</Czech>
@@ -1845,7 +1859,7 @@
             <English>Drawing time for 500ml Kit</English>
             <Polish>Czas pobierania 500ml krwi</Polish>
             <German>Blutentnahmezeit für 500ml Kit</German>
-            <Spanish>Tiempo de extracción para el kit de 500ml  </Spanish>
+            <Spanish>Tiempo de extracción para el kit de 500ml</Spanish>
             <Chinese>500 毫升套件的绘制时间  </Chinese>
             <Chinesesimp>500 mL的抽取时间  </Chinesesimp>
             <Czech>Odebírací čas pro 500ml Kit</Czech>
@@ -1861,7 +1875,7 @@
             <English>Drawing time for 250ml Kit</English>
             <Polish>Czas pobierania 250ml krwi</Polish>
             <German>Blutentnahmezeit für 250ml Kit</German>
-            <Spanish>Tiempo de extracción para el kit de 250ml </Spanish>
+            <Spanish>Tiempo de extracción para el kit de 250ml</Spanish>
             <Chinese>250 毫升套件的绘制时间 </Chinese>
             <Chinesesimp>250 mL的抽取时间  </Chinesesimp>
             <Czech>Odebírací čas pro 250ml Kit</Czech>
@@ -1883,7 +1897,7 @@
             <Chinese>献血者的最小血量（升）</Chinese>
             <Chinesesimp>献血者的最小血容量（L）</Chinesesimp>
             <Italian>Volume minimo di sangue per il donatore (litri)</Italian>
-            <Spanish>Volúmen mínimo de sangre para el donante (litro)</Spanish>
+            <Spanish>Volúmen mínimo de sangre para el donante (litros)</Spanish>
             <Czech>Minimální objem krve pro dárce (litry)</Czech>
             <Russian>Минимальный объем крови для донора (литры)</Russian>
             <Japanese>採血できる最小血液量(リットル)</Japanese>
@@ -1909,7 +1923,7 @@
             <English>AED Beep and Charge sound</English>
             <Polish>Dźwięki defibrylacji AED</Polish>
             <German>AED Signal- und Ladeton</German>
-            <Spanish>Sonidos del DEA </Spanish>
+            <Spanish>Sonidos del DEA</Spanish>
             <Chinese>AED 蜂鸣声和充电声 </Chinese>
             <Chinesesimp>AED 蜂鸣声和充电声 </Chinesesimp>
             <Czech>Zvuk AED pípání a nabíjení</Czech>
@@ -1925,7 +1939,7 @@
             <English>Enables Beep and Charge sound for AED/AED-X</English>
             <Polish>Włącza dźwięki defibrylacji AED/AED-X</Polish>
             <German>Aktiviert Signal- und Ladeton für AED/AED-X</German>
-            <Spanish>Habilita el sonido de  descarga y el pitido para el DEA / DEA-X </Spanish>
+            <Spanish>Habilita el sonido de  descarga y el pitido para el DEA/DEA-X</Spanish>
             <Chinese>为 AED/AED-X 启用蜂鸣和充电声音 </Chinese>
             <Chinesesimp>为 AED/AED-X 启用蜂鸣和充电声 </Chinesesimp>
             <Czech>Zvuk AED pípání a nabíjení</Czech>
@@ -1976,7 +1990,7 @@
             <German>AED und AED-X Einstellungen</German>
             <Chinesesimp>AED和AED-X设置</Chinesesimp>
             <Japanese>AEDとAED-X設定</Japanese>
-            <Spanish>Parámetros del DEA / DEA-X</Spanish>
+            <Spanish>Parámetros del DEA/DEA-X</Spanish>
             <Portuguese>Configurações de DEA/DEA-X</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_CPR">
@@ -2007,6 +2021,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>
+            <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4</Spanish>
             <Polish>AED-X: HR: %1 BP: %2/%3 SpO2: %4</Polish>
             <Italian>AED-X: FC: %1 PS: %2/%3 SpO2: %4</Italian>
             <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4</Japanese>
@@ -2017,6 +2032,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate">
             <English>AED-X Monitor no heart rate beep type</English>
+            <Spanish>Tipo de beep cuando no hay ritmo cardiaco en el monitor DEA-X</Spanish>
             <French>Type de bip du moniteur de l'AED-X en cas d'absence de rythme cardiaque</French>
             <Korean>X-시리즈 AED 모니터 심박수 소리 유형 없음</Korean>
             <Japanese>AED-Xモニターの心拍停止時ビープ音の種類</Japanese>
@@ -2024,6 +2040,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Continous">
             <English>Continous tone</English>
+            <Spanish>Tono continuo</Spanish>
             <French>Bip continu</French>
             <Korean>연속음</Korean>
             <Japanese>連続音</Japanese>
@@ -2031,6 +2048,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Alternating">
             <English>Alternating tone</English>
+            <Spanish>Tono alternado</Spanish>
             <French>Bip alternant</French>
             <Korean>교대음</Korean>
             <Japanese>交互音</Japanese>
