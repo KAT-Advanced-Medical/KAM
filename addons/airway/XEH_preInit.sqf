@@ -178,6 +178,16 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+// Enable reuasble Larynxtubus & Guedeltubus
+[
+    QGVAR(ReusableAirwayItems),
+    "CHECKBOX",
+    [LLSTRING(Reusable_AirwayItems),LLSTRING(Reusable_AirwayItems_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 // Settable action time for Head overstretching
 [
     QGVAR(Overstretch_time),
