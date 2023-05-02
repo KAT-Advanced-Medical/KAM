@@ -35,7 +35,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {
             "ACE_salineIV",
             "ACE_salineIV_500",
-            "ACE_salineIV_250",
+            "ACE_salineIV_250"
         };
         condition = QGETGVAR(enable,true);
         callbackSuccess = QFUNC(treatmentAdvanced_eyewash);
@@ -58,7 +58,7 @@ class ACE_Medical_Treatment_Actions {
             "ACE_Canteen",
             "ACE_Canteen_Half",
             "ACE_WaterBottle",
-            "ACE_WaterBottle_Half",
+            "ACE_WaterBottle_Half"
         };
     };
 
