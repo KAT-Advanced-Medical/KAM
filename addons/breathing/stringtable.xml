@@ -685,6 +685,7 @@
             <Italian>Quantità di sanguinamento interno da emopneumotorace</Italian>
             <Portuguese>Quantidade de hemorragia interna causada por hemopneumotórax</Portuguese>
             <French>Quantité de saignements internes de l'hémopneumothorax</French>
+            <Polish>Siła krwawienia krwiaka</Polish>
             <German>Hämopneumothorax inneres Bluten menge </German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount_DESC">
@@ -695,6 +696,7 @@
             <Italian>Imposta la quantità di sanguinamento interno che avviene quando hai un emopneumotorace</Italian>
             <Portuguese>Define a quantidade de hemorragia interna que ocorre enquanto sofre de hemopneumotórax</Portuguese>
             <French>Règle la quantité de saignements internes subis lorsqu'une personne souffre d'un hémopneumothorax</French>
+            <Polish>Określa siłę krwawienia wewnętrznego, wywołanego przez krwiaka opłucnej</Polish>
             <German>Definiert die Menge des Blutverlustes, welche der Patient während eines Hämopneumothorax verliert.</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_hardcore">
@@ -862,6 +864,7 @@
             <Spanish>Tiempo de escucha del estetoscopio</Spanish>
             <French>Temps d'écoute du stéthoscope</French>
             <Korean>청진기 청진 시간</Korean>
+            <Polish>Czas osłuchiwania płuc</Polish>
             <Japanese>聴診器での聴診にかかる時間</Japanese>
             <German>Stethoskop-Hörzeit</German>
         </Key>
@@ -869,6 +872,7 @@
             <English>Sets how long the stethoscope listening period is</English>
             <French>Règle la durée d'une période d'écoute avec un stéthoscope</French>
             <Korean>청진기의 청진 시간 길이를 설정합니다</Korean>
+            <Polish>Określa jak długo będą osłuchiwane płuca przy pomocy stetoskopu</Polish>
             <Spanish>Fija cuanto tiempo dura el periodo de escucha del estetoscopio</Spanish>
             <Japanese>聴診器での聴診を実行するのにかかる時間を設定します</Japanese>
             <German>Legt fest, wie lange es dauert um mit dem Stethoskop abzuhören</German>
@@ -1076,6 +1080,7 @@
             <Italian>Mostra la cianosi nella tabella di overview</Italian>
             <Portuguese>Mostrar cianose na guia de visão geral</Portuguese>
             <French>Afficher la cyanose dans la vue d'ensemble</French>
+            <Polish>Pokaż sinicę w opisie</Polish>
             <German>Zeigt Zyanose in der Verletzungsliste an</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Cyanosis_ShowInMenu_DESC">
@@ -1086,6 +1091,7 @@
             <Italian>Mostra la cianosi del paziente nella tabella overview e nascondi l'azione di diagnosi della cianosi</Italian>
             <Portuguese>Mostra a cianose do paciente na guia de visão geral e oculta a ação de diagnóstico de cianose</Portuguese>
             <French>Affiche la cyanose dans la vue d'ensemble du patient et cache l'action de contrôle de la cyanose</French>
+            <Polish>Pokazuje sinicę w opisie pacjenta oraz ukrywa akcję sprawdzenia sinicy</Polish>
             <German>Zeigt Zyanose in der Verletzungsliste an (oben rechts), deaktiviert die Zyanose-Diagnose Aktion </German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
@@ -1328,6 +1334,7 @@
             <Korean>낮은 산소포화도 경고 활성화</Korean>
             <Italian>Abilità l'allerta di basso SPO2</Italian>
             <Portuguese>Habilita aviso de baixo nível de SpO2</Portuguese>
+            <Polish>Włącz ostrzeżenie o niskim SpO2</Polish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SPO2Flashing_DESC">
             <English>Makes your Screen flash black if you are below 90% SpO2 (default value)</English>
@@ -1338,6 +1345,7 @@
             <Korean>산소포화도가 90%(기본값) 미만인 경우 화면이 검은색으로 깜빡입니다.</Korean>
             <Italian>Rendi lampeggiante il tuo schermo se sei sotto al 90% di SPO2 (valore standard)</Italian>
             <Portuguese>Faz sua tela piscar em preto se você estiver abaixo de 90% de SpO2 (valor padrão)</Portuguese>
+            <Polish>Sprawia, że ekran miga na czarno, jeśli SpO2 jest niższe niż 90% (domyślna wartość)</Polish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_display">
             <English>Enable Stamina loss on low SpO2</English>
@@ -1348,6 +1356,7 @@
             <Korean>낮은 산소포화도에서 스태미나 손실 활성화</Korean>
             <Italian>Abilita la perdità di stamina con bassa pressione SPO2</Italian>
             <Portuguese>Ativar perda de stamina sob baixo SpO2</Portuguese>
+            <Polish>Włącz utratę staminy przy niskim SpO2</Polish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_DESC">
             <English>Makes you lose stamina if you are under 90% SpO2 (default value)</English>
@@ -1358,6 +1367,7 @@
             <Korean>산소포화도가 90%(기본값) 미만이면 스태미나가 떨어집니다.</Korean>
             <Italian>Perdi stamina se sei sotto il 90% SPO2 (valore standard)</Italian>
             <Portuguese>Faz você perder stamina se estiver abaixo de 90% SpO2 (valor padrão)</Portuguese>
+            <Polish>Sprawia, że tracimy staminę, jeśli SpO2 jest niższe niż 90% (domyślna wartość) </Polish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lowSPO2Level_display">
             <English>Low SpO2 warning level</English>
@@ -1368,6 +1378,7 @@
             <Korean>낮은 산소포화도 경고 수준</Korean>
             <Italian>Livello di allerta bassa SPO2</Italian>
             <Portuguese>Nível de alerta de SpO2 baixo</Portuguese>
+            <Polish>Ostrzeżenie o niskim SpO2</Polish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lowSPO2Level_DESC">
             <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
@@ -1378,12 +1389,14 @@
             <Korean>깜빡임 경고 표시 및 스태미나 손실 효과를 얻게 되는 산소포화도 값을 변경합니다.</Korean>
             <Italian>Ti permette di cambiare il valore di SPO2 al quale ricevi l'indicatore lampeggiante d'allerta e l'effetto di perdita della stamina </Italian>
             <Portuguese>Permite alterar o valor SpO2 no qual você é avisado e sofre perda de stamina</Portuguese>
+            <Polish>Pozwala zmienić poziom SpO2, poniżej którego będzie widać ostrzeżenie w postaci migotania ekranu i zmniejszonej staminy</Polish>
         </Key>
         <Key ID="STR_KAT_Breathing_PulseOximeter_Action_addSound">
             <English>Enable Pulse Oximeter Alarm</English>
             <Spanish>Habilita alarma del Oxímetro de pulso</Spanish>
             <French>Activer l'alarme de l'oxymètre de pouls</French>
             <Korean>맥박산소측정기 알람 활성화</Korean>
+            <Polish>Włącz alarm w Pulsoksymetrze</Polish>
             <Japanese>パルスオキシメータのアラーム有効化</Japanese>
             <German>Aktiviere Pulsoximeter Alarm</German>
         </Key>
@@ -1392,6 +1405,7 @@
             <Spanish>Deshabilita alarma del Oxímetro de pulso</Spanish>
             <French>Désactiver l'alarme de l'oxymètre de pouls</French>
             <Korean>맥박산소측정기 알람 비활성화</Korean>
+            <Polish>Wyłącz alarm w Pulsoksymetrze</Polish>
             <Japanese>パルスオキシメータのアラーム無効化</Japanese>
             <German>Deaktiviere Pulsoximeter Alarm</German>
         </Key>
@@ -1400,6 +1414,7 @@
             <Spanish>Nivel de Sp02 para alarma del Oxímetro de pulso</Spanish>
             <French>Niveau de SpO2 déclenchant l'alarme de l'oxymètre de pouls</French>
             <Korean>맥박산소측정기의 알람이 울리는 SpO2의 임계값</Korean>
+            <Polish>Wartość ostrzegania Pulsoksymetru</Polish>
             <Japanese>パルスオキシメータのアラームのSpO2しきい値</Japanese>
             <German>Pulsoximeter Alarm Grenzwert</German>
         </Key>
@@ -1408,6 +1423,7 @@
             <Spanish>Usar Ambú</Spanish>
             <French>Utiliser le BVM</French>
             <Korean>인공호흡기 사용</Korean>
+            <Polish>Użyj worka samorozprężalnego</Polish>
             <Japanese>BVMを使用する</Japanese>
             <German>Verwende BVM</German>
         </Key>
@@ -1416,6 +1432,7 @@
             <Spanish>Usando Ambú</Spanish>
             <French>BVM en cours d'utilisation</French>
             <Korean>인공호흡기 사용 중</Korean>
+            <Polish>BVM w użyciu</Polish>
             <Japanese>BVMを使用中</Japanese>
             <German>Beatme mit BVM</German>
         </Key>
@@ -1424,6 +1441,7 @@
             <Spanish>Usar Ambú compacto</Spanish>
             <French>Utiliser le BVM de poche</French>
             <Korean>인공호흡기 (포켓형) 사용</Korean>
+            <Polish>Uzyj kieszonkowego worka samorozprężalnego</Polish>
             <Japanese>ポケットBVMを使用する</Japanese>
             <German>Verwende Tachen BVM </German>
         </Key>
@@ -1432,6 +1450,7 @@
             <Spanish>Usando Ambú compacto</Spanish>
             <French>BVM de poche en cours d'utilisation</French>
             <Korean>인공호흡기 (포켓형) 사용 중</Korean>
+            <Polish>Kieszonkowy BVM w użyciu</Polish>
             <Japanese>ポケットBVMを使用中</Japanese>
             <German>Beatme mit Taschen BVM</German>
         </Key>
@@ -1440,6 +1459,7 @@
             <Spanish>Usar Ambú con bombona de oxigeno</Spanish>
             <French>Utiliser le BVM avec un réservoir à oxygène</French>
             <Korean>산소 탱크가 달린 인공호흡기 사용</Korean>
+            <Polish>Użyj worka z butlą z tlenem</Polish>
             <Japanese>BVMと酸素ボンベを使用する</Japanese>
             <German>Verwende BVM mit Sauerstofftank</German>
         </Key>
@@ -1448,6 +1468,7 @@
             <Spanish>Usando Ambú con bombona de oxigeno</Spanish>
             <French>Utilisation du BVM avec un réservoir à oxygène</French>
             <Korean>산소 탱크가 달린 인공호흡기 사용 중</Korean>
+            <Polish>Używanie BVM z butlą z tlenem</Polish>
             <Japanese>BVMと酸素ボンベを使用中</Japanese>
             <German>Beatme mit BVM und Sauerstofftank</German>
         </Key>
@@ -1456,6 +1477,7 @@
             <Spanish>Usar Ambú con bombona de oxigeno</Spanish>
             <French>Utiliser le BVM avec de l'oxygène</French>
             <Korean>산소 연결 인공호흡기 사용</Korean>
+            <Polish>Użyj worka z tlenem</Polish>
             <Japanese>BVMと酸素を使用する</Japanese>
             <German>Verwende BVM mit Sauerstoff</German>
         </Key>
@@ -1464,6 +1486,7 @@
             <Spanish>Usando Ambú con bombona de oxigeno</Spanish>
             <French>Utilisation du BVM avec de l'oxygène</French>
             <Korean>산소 연결 인공호흡기 사용 중</Korean>
+            <Polish>Używanie BVM z Tlenem</Polish>
             <Japanese>BVMと酸素を使用中</Japanese>
             <German>Beatme mit BVM und Sauerstoff</German>
         </Key>
@@ -1472,6 +1495,7 @@
             <Spanish>Bombona de oxigeno desconectado (vacío)</Spanish>
             <French>Réservoir à oxygène déconnecté (vide)</French>
             <Korean>빈 산소 탱크 떼어냄</Korean>
+            <Polish>Butla z tlenem rozłączona (pusta)</Polish>
             <Japanese>酸素ボンベが切断されました (空)</Japanese>
             <German>Sauerstofftank entfernt (leer)</German>
         </Key>
@@ -1480,6 +1504,7 @@
             <Spanish>Rellenando bombona de oxigeno</Spanish>
             <French>Remplissage du réservoir à oxygène portable</French>
             <Korean>휴대용 산소 탱크 재충전 중</Korean>
+            <Polish>Napełnianie butli</Polish>
             <Japanese>携帯用酸素ボンベを補充中</Japanese>
             <German>Befülle tragbaren Sauerstofftank</German>
         </Key>
@@ -1488,6 +1513,7 @@
             <Spanish>Bombona de oxigeno rellenado</Spanish>
             <French>Remplissage du réservoir à oxygène terminé</French>
             <Korean>휴대용 산소 탱크 재충전 완료</Korean>
+            <Polish>Napełnianie zakończone</Polish>
             <Japanese>酸素ボンベの補充が完了しました</Japanese>
             <German>Sauerstofftank Befüllung abgeschlossen</German>
         </Key>
@@ -1496,6 +1522,7 @@
             <Spanish>Rellenado de bombona de oxigeno cancelado</Spanish>
             <French>Remplissage du réservoir à oxygène annulé</French>
             <Korean>휴대용 산소 탱크 재충전 취소</Korean>
+            <Polish>Napełnianie przerwane</Polish>
             <Japanese>酸素ボンベの補充が中断されました</Japanese>
             <German>Sauerstofftank Befüllung abgebrochen</German>
         </Key>
@@ -1504,6 +1531,7 @@
             <Spanish>Rellenar bombona de oxigeno portátil</Spanish>
             <French>Remplir le réservoir à oxygène portable</French>
             <Korean>휴대용 산소 탱크 재충전</Korean>
+            <Polish>Napełnij butlę</Polish>
             <Japanese>携帯用酸素ボンベ を補充する</Japanese>
             <German>Nachfüllen des tragbaren Sauerstofftanks</German>
         </Key>
@@ -1512,6 +1540,7 @@
             <Spanish>Rellenar bombona de oxigeno portátil (150L)</Spanish>
             <French>Remplir le réservoir à oxygène portable (150L)</French>
             <Korean>휴대용 산소 탱크 (150L) 재충전</Korean>
+            <Polish>Napełnij butlę (150L)</Polish>
             <Japanese>携帯用酸素ボンベ (150L) を補充</Japanese>
             <German>Nachfüllen des tragbaren Sauerstofftanks (150L)</German>
         </Key>
@@ -1520,6 +1549,7 @@
             <Spanish>Rellenar bombona de oxigeno portátil (300L)</Spanish>
             <French>Remplir le réservoir à oxygène portable (300L)</French>
             <Korean>휴대용 산소 탱크 (300L) 재충전</Korean>
+            <Polish>Napełnij butlę (300L)</Polish>
             <Japanese>携帯用酸素ボンベ (150L) を補充</Japanese>
             <German>Nachfüllen des tragbaren Sauerstofftanks (300L)</German>
         </Key>
@@ -1528,6 +1558,7 @@
             <Spanish>Ambú</Spanish>
             <French>BVM</French>
             <Korean>인공호흡기</Korean>
+            <Polish>Worek samorozprężalny</Polish>
             <Japanese>バッグバルブマスク (BVM)</Japanese>
             <German>BVM</German>
         </Key>
@@ -1536,6 +1567,7 @@
             <Spanish>Mascarilla con bolsa de ventilación, utilizada para ayudar a la respiración de pacientes inconscientes</Spanish>
             <French>Ballon-masque, utilisé pour assister la respiration de patients inconscients</French>
             <Korean>의식불명인 환자의 호흡을 보조하는 데 사용되는 인공호흡기</Korean>
+            <Polish>Worek samorozprężalny, używany w resuscytacji tlenowej na nieprzytomnym pacjencie</Polish>
             <Japanese>意識を失った患者の呼吸補助に使用</Japanese>
             <German>Die Beutelventilmaske wird benutzt um die Atmung von bewustlosen Patienten zu unterstützen</German>
         </Key>
@@ -1544,6 +1576,7 @@
             <Spanish>Ambú compacto</Spanish>
             <French>BVM de poche</French>
             <Korean>인공호흡기 (포켓형)</Korean>
+            <Polish>Kieszonkowy worek samorozprężalny</Polish>
             <Japanese>ポケットBVM</Japanese>
             <German>Taschen BVM</German>
         </Key>
@@ -1552,6 +1585,7 @@
             <Spanish>Versión compacta del Ambú</Spanish>
             <French>Version compacte du ballon-masque</French>
             <Korean>인공호흡기의 소형 버전</Korean>
+            <Polish>Mniejsza wersja Worka samorozprężalnego</Polish>
             <Japanese>バッグバルブマスク (Bag-Valve-Mask) の小型携帯版</Japanese>
             <German>Die kompakte Version der Beutelventilmaske</German>
         </Key>
@@ -1560,6 +1594,7 @@
             <Spanish>Bombona de oxigeno portátil (150L)</Spanish>
             <French>Réservoir à oxygène portable (150L)</French>
             <Korean>휴대용 산소 탱크 (150L)</Korean>
+            <Polish>Przenośna butla z tlenem (150L)</Polish>
             <Japanese>携帯用酸素ボンベ (150L)</Japanese>
             <German>Tragbarer Sauerstofftank (150L)</German>
         </Key>
@@ -1568,6 +1603,7 @@
             <Spanish>Bombona de oxigeno portátil, contiene 150L. Conectándolo a un Ambú aumenta la asistencia a la respiración.</Spanish>
             <French>Réservoir à oxygène portable, contenant 150L d'oxygène. Connectez le à un BVM pour assister la respiration de patients en état critique</French>
             <Korean>150L의 산소가 들어 있는 휴대용 산소 탱크. 인공호흡기에 연결하여 중환자의 호흡을 추가적으로 보조합니다.</Korean>
+            <Polish>Przenośna butla z tlenem, zawiera 150L tlenu. Może zostać podłączona do worka samorozprężalnego w celu resuscytacji tlenowej</Polish>
             <Japanese>150Lの酸素が入った携帯酸素ボンベ。BVMに接続し重篤患者の呼吸補助に使用。</Japanese>
             <German>Der tragbare Sauerstofftank enthält 150L Sauerstoff. Er ist ausgelegt, um an die BVM angeschlossen zu werden und bei der Beatmung zu helfen. </German>
         </Key>
@@ -1576,6 +1612,7 @@
             <Spanish>Bombona de oxigeno portátil (300L)</Spanish>
             <French>Réservoir à oxygène portable (300L)</French>
             <Korean>휴대용 산소 탱크 (300L)</Korean>
+            <Polish>Przenośna butla z tlenem (300L)</Polish>
             <Japanese>携帯用酸素ボンベ (150L)</Japanese>
             <German>Tragbarer Sauerstofftank (300L)</German>
         </Key>
@@ -1584,6 +1621,7 @@
             <Spanish>Bombona de oxigeno portátil, contiene 300L. Conectándolo a un Ambú aumenta la asistencia a la respiración.</Spanish>
             <French>Réservoir à oxygène portable, contenant 300L d'oxygène. Connectez le à un BVM pour assister la respiration de patients en état critique</French>
             <Korean>300L의 산소가 들어 있는 휴대용 산소 탱크. 인공호흡기에 연결하여 중환자의 호흡을 추가적으로 보조합니다.</Korean>
+            <Polish>Przenośna butla z tlenem, zawiera 300L tlenu. Może zostać podłączona do worka samorozprężalnego w celu resuscytacji tlenowej</Polish>
             <Japanese>150Lの酸素が入った携帯酸素ボンベ。BVMに接続し重篤患者の呼吸補助に使用。</Japanese>
             <German>Der tragbare Sauerstofftank enthält 300L Sauerstoff. Er ist ausgelegt, um an die BVM angeschlossen zu werden und bei der Beatmung zu helfen. </German>
         </Key>
@@ -1592,6 +1630,7 @@
             <Spanish>Bombona de oxigeno portátil vacío (150L)</Spanish>
             <French>Réservoir à oxygène portable vide (150L)</French>
             <Korean>빈 휴대용 산소 탱크 (150L)</Korean>
+            <Polish>Pusta butla z tlenem (150L)</Polish>
             <Japanese>空の携帯用酸素ボンベ (150L)</Japanese>
             <German>Leerer tragbarer Sauerstofftank (150L)</German>
         </Key>
@@ -1600,6 +1639,7 @@
             <Spanish>Bombona de oxigeno portátil vacío (300L)</Spanish>
             <French>Réservoir à oxygène portable vide (300L)</French>
             <Korean>빈 휴대용 산소 탱크 (300L)</Korean>
+            <Polish>Pusta butla z tlenem (300L)</Polish>
             <Japanese>空の携帯用酸素ボンベ (150L)</Japanese>
             <German>Leerer tragbarer Sauerstofftank (300L)</German>
         </Key>
@@ -1608,6 +1648,7 @@
             <Spanish>Bombona de oxigeno portátil vacío, rellenar en una instalación o vehículo medico.</Spanish>
             <French>Réservoir à oxygène portable vide, remplissez le dans un véhicule ou un lieu médicalisé</French>
             <Korean>비어 있는 휴대용 산소 탱크로, 의료 차량 또는 시설에서 재충전 가능합니다</Korean>
+            <Polish>Pusta butla z tlenem, napełnij w budynku lub pojeździe medycznym</Polish>
             <Japanese>空になった携帯用酸素ボンベ。医療用車両または施設で補充可能。</Japanese>
             <German>Leere tragbarer Sauerstofftank und befülle ihn neu bei einem medizinischen Fahrzeug oder Einrichtung. </German>
         </Key>
@@ -1616,6 +1657,7 @@
             <Spanish>Tiempo de uso del Ambú</Spanish>
             <French>Temps d'utilisation du BVM</French>
             <Korean>인공호흡기 사용 시간</Korean>
+            <Polish>Czas użycia Worka samorozprężalnego</Polish>
             <Japanese>BVMの使用にかかる時間</Japanese>
             <German>BVM Benutzungszeit</German>
         </Key>
@@ -1624,6 +1666,7 @@
             <Spanish>Fija el tiempo de uso del Ambú</Spanish>
             <French>Règle le temps nécessaire pour utiliser le BVM</French>
             <Korean>인공호흡기 사용 시간 길이를 설정합니다</Korean>
+            <Polish>Ustawia czas użycia akcji</Polish>
             <Japanese>BVMの使用期間の長さを設定</Japanese>
             <German>Legt die Länge des BVM-Nutzungszeitraums fest</German>
         </Key>
@@ -1632,6 +1675,7 @@
             <Spanish>Permitir Ambú</Spanish>
             <French>Autoriser le BVM</French>
             <Korean>인공호흡기 허용</Korean>
+            <Polish>Pozwól na użycie Worka samorozprężalnego</Polish>
             <Japanese>BVMの許可</Japanese>
             <German>Erlaube BVM</German>
         </Key>
@@ -1640,6 +1684,7 @@
             <Spanish>Fija el nivel requerido para el uso del Ambú</Spanish>
             <French>Règle le niveau médical requis pour utiliser le BVM</French>
             <Korean>인공호흡기를 사용하는 데 필요한 의료 레벨 수준을 설정합니다</Korean>
+            <Polish>Ustawia wymagany poziom wyszkolenia medycznego do użycia Worka samorozprężalnego</Polish>
             <Japanese>BVMの使用に必要な医療レベルを設定します</Japanese>
             <German>Benötigter medizinischer Grad, um die BVM zu nutzen</German>
         </Key>
@@ -1648,6 +1693,7 @@
             <Spanish>Permitir Ambú compacto</Spanish>
             <French>Autoriser le BVM de poche</French>
             <Korean>인공호흡기 (포켓형) 허용</Korean>
+            <Polish>Pozwól na użycie Kieszonkowego worka samorozprężalnego</Polish>
             <Japanese>ポケットBVMの許可</Japanese>
             <German>Erlaube Taschen BVM</German>
         </Key>
@@ -1656,6 +1702,7 @@
             <Spanish>Fija el nivel requerido para el uso del Ambú compacto</Spanish>
             <French>Règle le niveau médical requis pour utiliser le BVM de poche</French>
             <Korean>인공호흡기 (포켓형)을 사용하는 데 필요한 의료 레벨 수준을 설정합니다</Korean>
+            <Polish>Ustawia wymagany poziom wyszkolenia medycznego do użycia Kieszonkowego worka samorozprężalnego</Polish>
             <Japanese>ポケットBVMの使用に必要な医療レベルを設定します</Japanese>
             <German>Benötigter medizinischer Grad, um die Taschen BVM zu nutzen</German>
         </Key>
@@ -1664,6 +1711,7 @@
             <Spanish>Permitir Ambú con oxigeno</Spanish>
             <French>Autoriser le BVM avec oxygène</French>
             <Korean>산소 연결 인공호흡기 허용</Korean>
+            <Polish>Pozwól na użycie Worka samorozprężalnego z butlą</Polish>
             <Japanese>BVMと酸素の併用の許可</Japanese>
             <German>Erlaube BVM mit Sauerstoff</German>
         </Key>
@@ -1672,6 +1720,7 @@
             <Spanish>Fija el nivel requerido para el uso del Ambú con oxigeno</Spanish>
             <French>Règle le niveau médical requis pour utiliser le BVM avec oxygène</French>
             <Korean>산소 연결 인공호흡기를 사용하는 데 필요한 의료 레벨 수준을 설정합니다</Korean>
+            <Polish>Ustawia wymagany poziom wyszkolenia medycznego do użycia Worka samorozprężalnego z tlenem</Polish>
             <Japanese>酸素で BVM を使用するために必要な医療レベルを設定します</Japanese>
             <German>Benötigter medizinischer Grad, um die BVM mit Sauerstoff zu nutzen</German>
         </Key>
@@ -1680,6 +1729,7 @@
             <Spanish>Tiempo para rellenar la bombona de oxigeno portátil</Spanish>
             <French>Temps de remplissage d'un réservoir à oxygène portable</French>
             <Korean>휴대용 산소 탱크 기본 재충전 시간</Korean>
+            <Polish>Czas napełnienia przenośnej butli z tlenem</Polish>
             <Japanese>携帯用酸素ボンベの補充にかかる基準時間</Japanese>
             <German>Tragbarer Sauerstofftank Grundlegende Nachfüllzeit</German>
         </Key>
@@ -1688,6 +1738,7 @@
             <Spanish>Fija el tiempo para rellenar la bombona de oxigeno portátil (150L)</Spanish>
             <French>Règle le temps requis pour remplir un réservoir à oxygène (150L)</French>
             <Korean>산소 탱크 (150L)를 재충전하는 데 필요한 시간을 설정합니다</Korean>
+            <Polish>Ustawia czas napełniania przenośnej butli z tlenem (150L)</Polish>
             <Japanese>携帯用酸素ボンベ (150L) の補充にかかる時間を設定します</Japanese>
             <German>Legt die Dauer des Nachfüllens eines 150L Sauerstofftanks fest</German>
         </Key>
@@ -1696,6 +1747,7 @@
             <Spanish>Fijar la bombona de oxigeno portátil (150L) como preferida</Spanish>
             <French>Définir le réservoir à oxygène portable (150L) comme privilégié</French>
             <Korean>휴대용 산소 탱크 (150L)를 선호</Korean>
+            <Polish>Ustaw Przenośną butlę z tlenem (150L) jako preferowaną</Polish>
             <Japanese>携帯用酸素ボンベ (150L) を優先に設定</Japanese>
             <German>Definiere den 150L Sauerstofftank als bevorzugte Variante</German>
         </Key>
@@ -1704,6 +1756,7 @@
             <Spanish>Fijar la bombona de oxigeno portátil (300L) como preferida</Spanish>
             <French>Définir le réservoir à oxygène portable (300L) comme privilégié</French>
             <Korean>휴대용 산소 탱크 (300L)를 선호</Korean>
+            <Polish>Ustaw Przenośną butlę z tlenem (300L) jako preferowaną</Polish>
             <Japanese>携帯用酸素ボンベ (300L) を優先に設定</Japanese>
             <German>Definiere den 300L Sauerstofftank als bevorzugte Variante</German>
         </Key>

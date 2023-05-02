@@ -1171,6 +1171,7 @@
             <Japanese>回復体位設定</Japanese>
             <Spanish>Parámetros de posición lateral de seguridad e hiperextensión de cabeza</Spanish>
             <Portuguese>Configurações de posição de recuperação + hiperextensão de cabeça</Portuguese>
+            <Polish>Ustawienia Pozycji bezpiecznej i Odchylania głowy</Polish>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1183,6 +1184,7 @@
             <Japanese>気道アイテム設定</Japanese>
             <Spanish>Parámetros de las herramientas (vias aéreas)</Spanish>
             <Portuguese>Configurações de itens de vias aéreas</Portuguese>
+            <Polish>Ustawienia przedmiotów do dróg oddechowych</Polish>
         </Key>
     </Package>
 </Project>
