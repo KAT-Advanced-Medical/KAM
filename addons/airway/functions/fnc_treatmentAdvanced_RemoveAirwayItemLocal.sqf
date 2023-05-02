@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_RemoveGuedeltubusLocal;
+ * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_RemoveAirwayItemLocal;
  *
  * Public: No
  */
