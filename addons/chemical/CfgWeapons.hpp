@@ -29,20 +29,16 @@ class CfgWeapons {
     };
 
     class CannonCore;
-    class mortar_82mm: CannonCore
-    {
-        magazines[]+=
-        {
+    class mortar_82mm: CannonCore {
+        magazines[] += {
             "KAT_1Rnd_82mm_Mo_Type0",
             "KAT_5Rnd_82mm_Mo_Type0_AI",
             "KAT_1Rnd_82mm_Mo_TypeCS",
             "KAT_3Rnd_82mm_Mo_TypeCS_AI"
         };
     };
-    class ACE_mortar_82mm: mortar_82mm
-    {
-        magazines[] +=
-        {
+    class ACE_mortar_82mm: mortar_82mm {
+        magazines[] += {
             "KAT_1Rnd_82mm_Mo_Type0",
             "KAT_1Rnd_82mm_Mo_TypeCS"
         };
@@ -50,7 +46,7 @@ class CfgWeapons {
 
     class GrenadeLauncher;
     class Throw: GrenadeLauncher {
-        muzzles[] += {ACE_M7A3Muzzle};
+        muzzles[] += {"ACE_M7A3Muzzle"};
 
         class ThrowMuzzle;
         class ACE_M7A3Muzzle: ThrowMuzzle {
@@ -59,17 +55,13 @@ class CfgWeapons {
     };
 
     class Default;
-    class Put: Default
-    {
-        muzzles[]+=
-        {
+    class Put: Default {
+        muzzles[]+= {
             "ace_explosives_muzzle"
         };
         class PutMuzzle: Default {};
-        class ace_explosives_muzzle: PutMuzzle
-        {
-            magazines[]+=
-            {
+        class ace_explosives_muzzle: PutMuzzle {
+            magazines[] += {
                 "KAT_Gas_TripWireMine_Mag"
             };
         };

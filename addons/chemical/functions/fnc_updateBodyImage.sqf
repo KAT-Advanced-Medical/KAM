@@ -27,9 +27,6 @@
     _torso_infectet ctrlCommit 0;
 };
 
-
- 
-
 params ["_ctrlGroup", "_target"];
 
 // Get tourniquets, damage, and blood loss for target
@@ -48,13 +45,12 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
     _x params ["_bodyPartIDC", ["_tourniquetIDC", -1], ["_fractureIDC", -1], ["_infectedIDC", -1]];
 
     if (_infectedIDC != -1) then {
-    private _ctrlairInfected = _ctrlGroup controlsGroupCtrl _infectedIDC;
+        private _ctrlairInfected = _ctrlGroup controlsGroupCtrl _infectedIDC;
         if(_target getVariable [QGVAR(airPoisoning),false]) then{
             _ctrlairInfected ctrlShow true;
         } else {
             _ctrlairInfected ctrlShow false;
         };
-            
     };
 
     // Show or hide the tourniquet icon
@@ -85,7 +81,7 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
             };
         };
     };
- 
+
     // Update body part color based on blood loss and damage
     private _bloodLoss = _bodyPartBloodLoss select _forEachIndex;
     private _bodyPartColor = if (_bloodLoss > 0) then {

@@ -29,3 +29,19 @@ jobs:
     - name: Lint (sqflint)
       uses: arma-actions/sqflint@master
       continue-on-error: true # No failure due to many false-positives
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+      - name: Run HEMTT Build
+        run: hemtt release
+      - name: Upload Release
+        uses: actions/upload-artifact@v2
+        with:
+          name: '@kat'
+          path: '.hemttout/release/*'    
