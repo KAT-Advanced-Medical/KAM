@@ -80,6 +80,8 @@
             <Korean>IV/IO를 떼어내는 시간</Korean>
             <Italian>Tempo di staccamento IV/IO</Italian>
             <Portuguese>Tempo de queda de IV/IO</Portuguese>
+            <Polish>Czas do wypadnięcia IV/IO</Polish>
+            <Spanish>Tiempo de caida de IV/IO</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_DROP_TIME_DESC">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
@@ -247,7 +249,7 @@
             <Polish>Używany do zwalczania przedawkowania opioidów</Polish>
             <French>Utilisé pour traiter les overdoses d'opiacés</French>
             <Italian>Usato per trattare le overdose da oppiacei</Italian>
-            <Spanish>Usado para tratar las sobredosis de opiáceos.</Spanish>
+            <Spanish>Usado para tratar las sobredosis de opiáceos</Spanish>
             <Chinese>用于逆转阿片类药物的过量使用</Chinese>
             <Chinesesimp>用于逆转阿片类药物的过量使用</Chinesesimp>
             <Korean>아편유사제 과다 복용을 역전시키는 데 사용</Korean>
@@ -690,7 +692,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Using">
             <English>Using</English>
-            <German>Benutzen</German>
+            <German>Verwenden</German>
             <Polish>Używanie</Polish>
             <Spanish>Usando</Spanish>
             <Chinese>服用中</Chinese>
@@ -1122,6 +1124,8 @@
             <Korean>색수차 활성화(페르피틴)</Korean>
             <Italian>Attiva aberrazione cromatica</Italian>
             <Portuguese>Ativar Aberração Cromática</Portuguese>
+            <Polish>Włącz Aberrację Chromatyczną</Polish>
+            <Spanish>Habilitar aberración cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Pervitin_DESC">
             <English>Enables if pervitin should influance your vision with chromatic aberration</English>
@@ -1131,6 +1135,8 @@
             <Korean>페르피틴이 색수차로 시력에 영향을 미치는지의 여부를 활성화합니다.</Korean>
             <Italian>Attiva se il pervitin debba influenzare la tua visuale con l'aberrazione cromatica</Italian>
             <Portuguese>Ativa se o Pervitin deve influenciar sua visão com Aberração Cromática</Portuguese>
+            <Polish>Włącza efekt wizualny po zażyciu pervitinu</Polish>
+            <Spanish>Habilitar si la pervitina influye en la vision con aberración cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Pervitin">
             <English>Chromatic Aberration Strength</English>
@@ -1140,6 +1146,8 @@
             <Korean>색수차 강도(페르피틴)</Korean>
             <Italian>Intensità dell'aberrazione cromatica</Italian>
             <Portuguese>Intensidade de Aberração Cromática</Portuguese>
+            <Polish>Siła Aberracji Chromatycznej</Polish>
+            <Spanish>Intensidad de la aberración cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Pervitin_DESC">
             <English>Changes the strength of the chromatic aberration</English>
@@ -1149,6 +1157,8 @@
             <Korean>페르피틴의 색수차의 강도를 변경합니다.</Korean>
             <Italian>Cambia l'intensità dell'aberrazione cromatica</Italian>
             <Portuguese>Altera a intensidade da Aberração Cromática</Portuguese>
+            <Polish>Zmienia siłę efektu</Polish>
+            <Spanish>Cambia la intensidad de la aberración cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Weapon_Sway_Pervitin">
             <English>Enable Weapon Sway</English>
@@ -1158,6 +1168,8 @@
             <Korean>무기 흔들림 사용(페르피틴)</Korean>
             <Italian>Abilita l'oscillazione dell'arma</Italian>
             <Portuguese>Ativar balanço da arma</Portuguese>
+            <Polish>Włącz kołysanie broni</Polish>
+            <Spanish>Habilita el balanceo del arma</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Weapon_Sway_Pervitin_DESC">
             <English>Enables if pervitin should influance your weapon sway</English>
@@ -1167,6 +1179,8 @@
             <Korean>페르피틴이 무기의 흔들림에 영향을 미치는지의 여부를 활성화합니다.</Korean>
             <Italian>Attiva se il pervitin debba influenzare l'oscillazione dell'arma</Italian>
             <Portuguese>Ativa se o Pervitin influenciar o balanço da sua arma</Portuguese>
+            <Polish>Włącza efekt zmiany kołysania broni po spożyciu pervitinu</Polish>
+            <Spanish>Habilita si la pervitina afecta al balanceo del arma</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_displayName">
             <English>Pervitin Speed Boost</English>
@@ -1175,6 +1189,8 @@
             <Japanese>ペルビチン速度上昇</Japanese>
             <Portuguese>Aumento de velocidade do Pervitin</Portuguese>
             <French>Boost de vitesse de la pervitine</French>
+            <Polish>Zwiększenie prędkości ruchu</Polish>
+            <Spanish>Aumento de velocidad de la pervitina</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_DESC">
             <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
@@ -1183,6 +1199,8 @@
             <Japanese>ペルビチン効果の第一段階でのアニメーションの再生速度を設定します (1 = 通常、2 = 2倍速)</Japanese>
             <Portuguese>A velocidade da animação definida no Estágio 1 do Pervitin. (1 = normal, 2 = duas vezes)</Portuguese>
             <French>La vitesse de déplacement étant redéfinie durant le stage 1 de la pervitine. (1 = normal, 2 = doublée)1</French>
+            <Polish>Prędkość animacji po zażyciu pervitinu (1 = normalnie, 2 = podwójnie)</Polish>
+            <Spanish>La velocidad de animacion que se fija en la fase 1 de la pervitina. (1 = Normal. 2 = Doble)</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>
@@ -1192,6 +1210,8 @@
             <Korean>색수차 활성화(케타민)</Korean>
             <Italian>Attiva aberrazione cromatica</Italian>
             <Portuguese>Ativar Aberração Cromática</Portuguese>
+            <Polish>Włącz Aberrację Chromatyczną</Polish>
+            <Spanish>Habilita aberracion cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine_DESC">
             <English>Enables if ketamine should influance your vision with chromatic aberration</English>
@@ -1201,6 +1221,8 @@
             <Korean>케타민이 색수차로 시력에 영향을 미치는 지의 여부를 활성화합니다.</Korean>
             <Italian>Attiva se la ketamina debba influenzare la tua visuale con l'aberrazione cromatica</Italian>
             <Portuguese>Ativa se a Cetamina deve influenciar sua visão com Aberração Cromática</Portuguese>
+            <Polish>Włącza efekt wizualny po zażyciu ketaminy</Polish>
+            <Spanish>Habilita si la ketamina influye tu vision con aberracion cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Ketamine">
             <English>Chromatic Aberration Strength</English>
@@ -1210,6 +1232,8 @@
             <Korean>색수차 강도(케타민)</Korean>
             <Italian>Intensità dell'aberrazione cromatica</Italian>
             <Portuguese>Intensidade de Aberração Cromática</Portuguese>
+            <Polish>Siła Aberracji Chromatycznej</Polish>
+            <Spanish>Intensidad de la aberracion cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Ketamine_DESC">
             <English>Changes the strength of the chromatic aberration</English>
@@ -1219,6 +1243,8 @@
             <Korean>케타민의 색수차의 강도를 변경합니다.</Korean>
             <Italian>Cambia l'intensità dell'aberrazione cromatica</Italian>
             <Portuguese>Altera a intensidade da Aberração Cromática</Portuguese>
+            <Polish>Zmienia siłę efektu</Polish>
+            <Spanish>Cambia la intensidad de la aberracion cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl">
             <English>Enable Chromatic Aberration</English>
@@ -1228,6 +1254,8 @@
             <Korean>색수차 활성화(펜타닐)</Korean>
             <Italian>Attiva aberrazione cromatica</Italian>
             <Portuguese>Ativar Aberração Cromática</Portuguese>
+            <Polish>Włącz Aberrację Chromatyczną</Polish>
+            <Spanish>Habilita la aberracion cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl_DESC">
             <English>Enables if fentanyl should influance your vision with chromatic aberration</English>
@@ -1237,6 +1265,8 @@
             <Korean>펜타닐이 색수차로 시력에 영향을 미치는지의 여부를 활성화합니다.</Korean>
             <Italian>Attiva se il fentanil debba influenzare la tua visuale con l'aberrazione cromatica</Italian>
             <Portuguese>Ativa se o Fentanil deve influenciar sua visão com Aberração Cromática</Portuguese>
+            <Polish>Włącza efekt wizualny po zażyciu fentanylu</Polish>
+            <Spanish>Habilita si el fentanilo influye tu vision con aberracion cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl">
             <English>Chromatic Aberration Strength</English>
@@ -1246,6 +1276,8 @@
             <Korean>색수차 강도(펜타닐)</Korean>
             <Italian>Attiva aberrazione cromatica</Italian>
             <Portuguese>Intensidade de Aberração Cromática</Portuguese>
+            <Polish>Siła Aberracji Chromatycznej</Polish>
+            <Spanish>Intensidad de la aberracion cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl_DESC">
             <English>Changes the strength of the chromatic aberration</English>
@@ -1255,6 +1287,8 @@
             <Korean>펜타닐의 색수차의 강도를 변경합니다.</Korean>
             <Italian>Cambia l'intensità dell'aberrazione cromatica</Italian>
             <Portuguese>Altera a intensidade da Aberração Cromática</Portuguese>
+            <Polish>Zmienia siłę efektu</Polish>
+            <Spanish>Cambia la intensidad de la aberracion cromatica</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Reorientation">
             <English>Treatment time for reorientation</English>
@@ -1628,6 +1662,8 @@
             <Korean>페르피틴으로 치료하는 시간</Korean>
             <Italian>Tempo di trattamento per il Pervitin</Italian>
             <Portuguese>Tempo de uso de Pervitin</Portuguese>
+            <Polish>Czas na użycie Pervitinu</Polish>
+            <Spanish>Tiempo de uso de la pervitina</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Pervitin">
             <English>Medical level required for Pervitin</English>
@@ -1637,6 +1673,8 @@
             <Korean>페르피틴을 사용하는데 필요한 의료 레벨 수준 변경</Korean>
             <Italian>Livello medico richiesto per il Pervitin</Italian>
             <Portuguese>Nível médico exigido para administrar Pervitin</Portuguese>
+            <Polish>Poziom wyszkolenia medycznego dla Pervitinu</Polish>
+            <Spanish>Nivel médico requerido para la Pervitina</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
@@ -2088,6 +2126,8 @@
             <Korean>페르피틴 설정</Korean>
             <Italian>Impostazioni del Pervitin</Italian>
             <Portuguese>Configurações do Pervitin</Portuguese>
+            <Polish>Ustawienia Pervitinu</Polish>
+            <Spanish>Parámetros de la Pervitina</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
@@ -2097,6 +2137,8 @@
             <Korean>카페인 설정</Korean>
             <Italian>Impostazioni della Caffeina</Italian>
             <Portuguese>Configurações de Cafeína</Portuguese>
+            <Polish>Ustawienia Kofeiny</Polish>
+            <Spanish>Parámetros de la Cafeina</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_TXA">
             <English>TXA Settings</English>
@@ -2366,6 +2408,8 @@
             <German>Patient atmet nicht</German>
             <Portuguese>O paciente não está respirando</Portuguese>
             <French>Le patient ne respire pas</French>
+            <Polish>Pacjent nie oddycha</Polish>
+            <Spanish>El paciente no esta respirando</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -2455,6 +2499,7 @@
             <French>Activer la coagulation</French>
             <Korean>혈응고 활성화</Korean>
             <Portuguese>Ativar Coagulação</Portuguese>
+            <Spanish>Habilitar coagulación</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_DESC">
             <English>Enables advanced coagulation features and modifies TXA and EACA behaviour accordingly.</English>
@@ -2466,6 +2511,7 @@
             <French>Active la coagulation avancée et modifie l'effet de l'Acide Tranexamique et de l'Acide Aminocaproïque en conséquence</French>
             <Korean>고급 혈응고 기능을 활성화하고 그에 따라 TXA 및 아미노카프로산의 동작을 수정합니다.</Korean>
             <Portuguese>Habilita recursos avançados de coagulação e modifica o comportamento de TXA e EACA de acordo.</Portuguese>
+            <Spanish>Habilita la coagulación avanzada, modificando los efectos del ATX y del EACA.</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_EACA_Display">
             <English>EACA</English>
@@ -2501,6 +2547,8 @@
             <Korean>페르피틴 알약</Korean>
             <Italian>Capsula di Pervitin</Italian>
             <Portuguese>Cápsula de Pervitin</Portuguese>
+            <Polish>Pervitin</Polish>
+            <Spanish>Capsula de pervitina</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_DescShort">
             <English>Performance enhancing drug</English>
@@ -2510,6 +2558,8 @@
             <Japanese>疲労の防止と回復に!</Japanese>
             <Italian>Sostanza che aumenta la performance</Italian>
             <Portuguese>Droga para aumento de performance</Portuguese>
+            <Polish>Środek zwiększający wydolność</Polish>
+            <Spanish>Droga de mejora del desempeño</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
@@ -2519,6 +2569,8 @@
             <Korean>페르피틴 복용</Korean>
             <Italian>Assumi Pervitin</Italian>
             <Portuguese>Tomar Pervitin</Portuguese>
+            <Polish>Użyj Pervitin</Polish>
+            <Spanish>Tomar Pervitina</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_start">
             <English>The pervitin makes you feel awake and full of endless POWER</English>
@@ -2528,6 +2580,8 @@
             <Japanese>ペルビチンはあなたを覚醒させ、無限のチカラに満ち満ちた気分にさせます!</Japanese>
             <Italian>Il Pervitin ti fa sembrare più attento e dotato di una forza senza uguali</Italian>
             <Portuguese>O pervitin faz você se sentir acordado e cheio de poder INFINITO</Portuguese>
+            <Polish>Pervitin sprawia, że czujesz się pobudzony i pełny ENERGII</Polish>
+            <Spanish>La pervitina hace que te sientas despierto y con una capacidad infinita de ENERGIA</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid">
             <English>You begin to lose your breath...</English>
@@ -2537,6 +2591,8 @@
             <Japanese>あなたは急に息苦しさを感じはじめた...</Japanese>
             <Italian>Stai iniziando a perdere fiato...</Italian>
             <Portuguese>Você começa a perder o fôlego...</Portuguese>
+            <Polish>Zaczynasz czuć zadyszkę...</Polish>
+            <Spanish>Empiezas a perder el aliento</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid2">
             <English>You gain a sudden rush!</English>
@@ -2546,6 +2602,8 @@
             <Japanese>あなたを突如激しい動悸が襲う!</Japanese>
             <Italian>Ottieni una corsa improvvisa!</Italian>
             <Portuguese>Você sente uma ânimo repentino!</Portuguese>
+            <Polish>Zyskujesz nagły skok energii!</Polish>
+            <Spanish>¡Te entra un subidon repentino!</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid3">
             <English>You gain another rush!</English>
@@ -2555,6 +2613,8 @@
             <Japanese>動悸は激しさを増してゆく!</Japanese>
             <Italian>Ottieni un'altra corsa improvvisa!</Italian>
             <Portuguese>Você sente um ânimo novamente!</Portuguese>
+            <Polish>Zyskujesz nagły skok energii!</Polish>
+            <Spanish>¡Te entra otro subidon!</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid4">
             <English>The exhaustion starts to settle in...</English>
@@ -2564,6 +2624,8 @@
             <Japanese>動悸が落ち着き始めた...</Japanese>
             <Italian>La stanchezza inizia a farsi sentire...</Italian>
             <Portuguese>Você começa a sentir a exaustão...</Portuguese>
+            <Polish>Zmęczenie zaczyna narastać...</Polish>
+            <Spanish>El agotamiento comienza a sentirse...</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_end">
             <English>You start to feel normal again</English>
@@ -2573,6 +2635,8 @@
             <Japanese>身体は元の落ち着きを取り戻した</Japanese>
             <Italian>Inizi a sentirti di nuovo normale</Italian>
             <Portuguese>Você começa a se sentir normal novamente</Portuguese>
+            <Polish>Zaczynasz czuć się normalnie </Polish>
+            <Spanish>Comienzas a sentirte bien de nuevo</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom">
             <English>You start to see everything twice.</English>
@@ -2582,6 +2646,8 @@
             <Japanese>全てが二重に見える...</Japanese>
             <Italian>Inizi a vedere tutto due volte.</Italian>
             <Portuguese>Você começa a ver em dobro.</Portuguese>
+            <Polish>Zaczynasz widzieć podwójnie</Polish>
+            <Spanish>Empiezas a ver todo doble</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom2">
             <English>You start to twitch...</English>
@@ -2591,6 +2657,8 @@
             <Japanese>身体の震えが止まらなくなった...</Japanese>
             <Italian>Inizi a tremare...</Italian>
             <Portuguese>Você começa a tremer na base...</Portuguese>
+            <Polish>Zaczynasz drżeć</Polish>
+            <Spanish>Comienzas a temblar</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom3">
             <English>Your head starts to clear up and you stop twitching...</English>
@@ -2600,6 +2668,8 @@
             <Japanese>震えがおさまり、頭がすっきりしてきた</Japanese>
             <Italian>La tua testa inizia a schiarirsi e smetti di tremare...</Italian>
             <Portuguese>Sua cabeça começa a clarear e você pára de tremer...</Portuguese>
+            <Polish>Twoja głowa zaczyna się oczyszczać i przestajesz drżeć...</Polish>
+            <Spanish>Empiezas a tener la cabeza despejada y dejas de temblar</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_Display">
             <English>Caffeine bottle</English>
@@ -2609,6 +2679,8 @@
             <Korean>카페인 병</Korean>
             <Italian>Bottiglia di Caffeina</Italian>
             <Portuguese>Garrafa de cafeína</Portuguese>
+            <Polish>Kofeina</Polish>
+            <Spanish>Bote de cafeina</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_DescShort">
             <English>Keeps you awake</English>
@@ -2618,6 +2690,8 @@
             <Korean>계속 깨어 있게 해줍니다.</Korean>
             <Italian>Ti tiene sveglio</Italian>
             <Portuguese>Mantém você desperto</Portuguese>
+            <Polish>Pozwala ci nie czuć zmęczenia</Polish>
+            <Spanish>Te mantiene despierto</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Caffeine">
             <English>Take Caffeine</English>
@@ -2627,6 +2701,8 @@
             <Korean>카페인 복용</Korean>
             <Italian>Assumi Caffeina</Italian>
             <Portuguese>Tomar Cafeína</Portuguese>
+            <Polish>Użyj kofeinę</Polish>
+            <Spanish>Tomar cafeina</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_EACA_DescShort">
             <English>Encourages clot formation</English>
@@ -2716,6 +2792,7 @@
             <French>Effectuer une dialyse</French>
             <Korean>투석 수행</Korean>
             <Portuguese>Realizar Diálise</Portuguese>
+            <Spanish>Efectuar dialisis</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Dialysis_DisplayNameProgress">
             <English>Performing</English>
@@ -2727,6 +2804,7 @@
             <French>Dialyse en cours</French>
             <Korean>수행 중</Korean>
             <Portuguese>Realizando</Portuguese>
+            <Spanish>Efectuando</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_dialysis_log">
             <English>%1 performed dialysis</English>
@@ -2751,6 +2829,7 @@
             <French>[KAM] Caisse de médicaments</French>
             <Korean>[KAM] 의약품 상자</Korean>
             <Portuguese>[KAM] Caixa de medicamentos</Portuguese>
+            <Spanish>[KAM] Caja de medicina</Spanish>
         </Key>
     </Package>
 </Project>

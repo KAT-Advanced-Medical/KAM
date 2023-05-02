@@ -39,7 +39,7 @@ class ACE_Medical_Treatment_Actions {
     class PlasmaIV_250: PlasmaIV {
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 100, 5] call kat_pharma_fnc_fluid;";
     };
-    class Epinephrine: Morphine{
+    class Epinephrine: Morphine {
         callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };
     class Painkillers: Morphine {
