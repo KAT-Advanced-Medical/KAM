@@ -80,10 +80,12 @@ if (GVAR(IVdropEnable) && (_usedItem isEqualTo "kat_IV_16")) then {
                     private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
                     private _IVactual = _IVarray select _partIndex;
 
-                    if (_IVactual == 1) then {
-                        _patient addItem "kat_IO_FAST";
-                    } else {
-                        _patient addItem "kat_IV_16";
+                    if(GVAR(IVreuse)) then {
+                        if (_IVactual == 1) then {
+                            _patient addItem "kat_IO_FAST";
+                        } else {
+                            _patient addItem "kat_IV_16";
+                        };
                     };
 
                     _IVarray set [_partIndex, 0];
