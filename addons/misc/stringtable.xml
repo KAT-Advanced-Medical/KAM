@@ -372,7 +372,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>
-			<Spanish>Tiempo para retirar un torniquete</Spanish>
+            <Spanish>Tiempo para retirar un torniquete</Spanish>
             <French>Temps pour retirer un garrot</French>
             <Korean>지혈대를 풀어내는 시간</Korean>
             <Japanese>止血帯を取り外すのにかかる時間</Japanese>
@@ -436,7 +436,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_NeckTourniquetDescription">
             <English>Neck Tourniquet</English>
-			<Spanish>Torniquete de cuello</Spanish>
+            <Spanish>Torniquete de cuello</Spanish>
             <Polish>Staza na szyi</Polish>
             <French>Garrot de cou</French>
             <Korean>목 지혈대</Korean>

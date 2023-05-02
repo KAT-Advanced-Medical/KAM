@@ -3,7 +3,7 @@
     <Package name="Chemical">
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
-			<Spanish>Máscara de gas aceptada</Spanish>
+            <Spanish>Máscara de gas aceptada</Spanish>
             <German>Akzeptierte Gasmasken</German>
             <French>Masques à gaz acceptés</French>
             <Korean>방독면 허용</Korean>
@@ -13,7 +13,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK_DISC">
             <English>Enter here the classname of the masks that should work with the system.</English>
-			<Spanish>Introduce aqui los classnames de las máscaras para que funcionen</Spanish>
+            <Spanish>Introduce aqui los classnames de las máscaras para que funcionen</Spanish>
             <German>Um externe Gasmasken zu integrieren, hier Classnames eintragen.</German>
             <French>Entrez ici le classname des masques à gaz fonctionnant avec le système</French>
             <Japanese>システムで動作させたいガスマスクのクラス名をここに入力します。</Japanese>
@@ -23,7 +23,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY">
             <English>Gas masks durability</English>
-			<Spanish>Durabilida de la máscara de gas</Spanish>
+            <Spanish>Durabilida de la máscara de gas</Spanish>
             <German>Haltbarkeit der Gasmaske</German>
             <French>Durabilité des masques à gaz</French>
             <Korean>방독면의 지속시간</Korean>
@@ -33,7 +33,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY_DISC">
             <English>Determines how long you can stand in the gas with a gas mask without getting infected.</English>
-			<Spanish>Determina cuanto puedes resistir en el gas sin mascara de gas y no resultando infectado</Spanish>
+            <Spanish>Determina cuanto puedes resistir en el gas sin mascara de gas y no resultando infectado</Spanish>
             <German>Bestimmt die Dauer mit welcher man mit Gasmaske im Gas stehen kann ohne infiziert zu werden.</German>
             <French>Détermine la durée où vous pouvez tenir dans un gaz avec un masque à gaz sans être infecté</French>
             <Korean>방독면을 사용하여 중독되지 않고 가스에 얼마나 오래 있을 수 있는지 결정합니다.</Korean>
@@ -43,7 +43,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infection_time">
             <English>Time until infection</English>
-			<Spanish>Tiempo hasta la infeccion</Spanish>
+            <Spanish>Tiempo hasta la infeccion</Spanish>
             <German>Zeit bis zur Infektion</German>
             <French>Durée avec l'infection</French>
             <Japanese>感染までの時間</Japanese>
@@ -53,7 +53,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infection_time_disc">
             <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
-			<Spanish>Tiempo que puedes resistir en el gas hasta que resultes infectado o requieras una mascara de gas</Spanish>
+            <Spanish>Tiempo que puedes resistir en el gas hasta que resultes infectado o requieras una mascara de gas</Spanish>
             <German>Zeit die man im Gas stehen kann bevor man infiziert wird bzw eine Gasmaske benötigt.</German>
             <French>Durée où vous pouvez tenir dans un gaz avant d'être infecté ou d'avoir besoin d'un masque à gaz</French>
             <Korean>당신이 중독되거나 방독면이 필요하기 전에 가스 속에서 견딜 수 있는 시간입니다.</Korean>
@@ -63,7 +63,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_affectAI">
             <English>Gas Affects AI</English>
-			<Spanish>El gas afecta a la IA</Spanish>
+            <Spanish>El gas afecta a la IA</Spanish>
             <German>Gas beeinflusst KI</German>
             <French>Le gaz affecte les IA</French>
             <Japanese>ガスがAIに影響を与えるか</Japanese>
@@ -73,7 +73,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_affectAI_disc">
             <English>Determines if AI is affected by gas (If you are running this on a local server this can cause perfomance problems)</English>
-			<Spanish>Determina si la IA es afectada por el gas (Si estas ejecutando esto en un server local, puede causar problemas de rendimiento)</Spanish>
+            <Spanish>Determina si la IA es afectada por el gas (Si estas ejecutando esto en un server local, puede causar problemas de rendimiento)</Spanish>
             <German>Bestimmt ob KI von Gas beinflusst wird (Kann auf lokalen Servern zu Leistungsproblemen führen)</German>
             <French>Détermine si les IA sont affectées par le gaz (Si cette option est activée sur des serveurs locaux cela peut créer des problèmes de performance)</French>
             <Japanese>AIがガスの影響を受けるかどうか設定します (ローカル サーバーで実行している場合、パフォーマンスに影響する可能性があります)</Japanese>
@@ -83,7 +83,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem">
             <English>Gas mask filter</English>
-			<Spanish>Filtro de la mascara de gas</Spanish>
+            <Spanish>Filtro de la mascara de gas</Spanish>
             <German>Gasmaskenfilter</German>
             <French>Filtre de masque à gaz</French>
             <Korean>방독면 정화통</Korean>
@@ -93,7 +93,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem_desc">
             <English>Replacement filter for gas mask</English>
-			<Spanish>Recambio de filtro para la mascara de gas</Spanish>
+            <Spanish>Recambio de filtro para la mascara de gas</Spanish>
             <French>Filtre de rechange pour masque à gaz</French>
             <German>Ersatzfilter für Gasmaske</German>
             <Japanese>ガスマスクの為の交換用フィルター</Japanese>
@@ -103,7 +103,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_sealantItem">
             <English>Sealant tube</English>
-			<Spanish>Tubo sellante</Spanish>
+            <Spanish>Tubo sellante</Spanish>
             <German>Dichtmitteltube</German>
             <French>Tube de mastic</French>
             <Korean>밀봉 튜브</Korean>
@@ -113,7 +113,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_sealantItem_desc">
             <English>Sealant which is used to seal objects when e.g. a toxic substance leaks out</English>
-			<Spanish>Sellante que se usa para sellar los objetos por ejemplo cuanto tienen una fuga de gas toxico</Spanish>
+            <Spanish>Sellante que se usa para sellar los objetos por ejemplo cuanto tienen una fuga de gas toxico</Spanish>
             <German>Dichtmittel, welches zum Abdichen von Gegenständen genutzt wird. z.B. bei Austritt von Giftstoffen</German>
             <French>Mastic servant à sceller les objets quand par exemple une substance toxique en sort</French>
             <Korean>독성 물질이 누출될 때 물체를 밀봉하는 데 사용되는 밀봉제</Korean>
@@ -123,7 +123,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
-			<Spanish>Poner mascara de gas</Spanish>
+            <Spanish>Poner mascara de gas</Spanish>
             <German>Gasmaske aufsetzen</German>
             <French>Mettre le masque à gaz</French>
             <Korean>방독면 착용시키기</Korean>
@@ -133,7 +133,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_progress">
             <English>Put on gas mask...</English>
-			<Spanish>Colocando mascara de gas...</Spanish>
+            <Spanish>Colocando mascara de gas...</Spanish>
             <German>Gasmaske wird aufgesetzt...</German>
             <French>Mise en place du masque à gaz...</French>
             <Korean>방독면 착용시키는 중...</Korean>
@@ -143,7 +143,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_CheckGasMaskDurability">
             <English>Check gas mask durability</English>
-			<Spanish>Revisar durabilidad de la mascara</Spanish>
+            <Spanish>Revisar durabilidad de la mascara</Spanish>
             <German>Haltbarkeit der Gasmaske prüfen</German>
             <French>Vérifier la durabilité du masque à gaz</French>
             <Korean>방독면 지속시간 확인</Korean>
@@ -153,7 +153,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ChangeGasMaskFilter">
             <English>Replace gas mask filter</English>
-			<Spanish>Reemplazar filtro de la mascara</Spanish>
+            <Spanish>Reemplazar filtro de la mascara</Spanish>
             <German>Gasmasken Filter austauschen</German>
             <French>Remplacer le filtre du masque à gaz</French>
             <Korean>방독면 정화통 교체</Korean>
@@ -163,7 +163,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ChemDetector_Mute">
             <English>Mute Chemical Detector.</English>
-			<Spanish>Silenciar Detector Quimico</Spanish>
+            <Spanish>Silenciar Detector Quimico</Spanish>
             <German>Chemischen Detektor stumm schalten..</German>
             <French>Désactiver le son du détecteur de produits chimiques</French>
             <Korean>화학물 탐지기 음소거</Korean>
@@ -173,7 +173,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ChemDetector_Unmute">
             <English>Unmute Chemical Detector.</English>
-			<Spanish>Desilenciar Detector Quimico</Spanish>
+            <Spanish>Desilenciar Detector Quimico</Spanish>
             <German>Chemischen Detektor laut schalten.</German>
             <French>Activer le son du détecteur de produits chimiques</French>
             <Japanese>化学検知器のミュート解除</Japanese>
@@ -183,7 +183,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_Displayname">
             <English>Create contaminated area / object</English>
-			<Spanish>Crear area contaminada / objeto</Spanish>
+            <Spanish>Crear area contaminada / objeto</Spanish>
             <German>Kontaminierten Bereich / Gegenstand erstellen</German>
             <French>Créer une zone / objet contaminé.e</French>
             <Japanese>汚染エリア/オブジェクトの作成</Japanese>
@@ -193,7 +193,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_description">
             <English>Raduis around the module which is filled with gas.</English>
-			<Spanish>Radio alrededor del modulo que se llenará de gas</Spanish>
+            <Spanish>Radio alrededor del modulo que se llenará de gas</Spanish>
             <German>Radius um das Modul, welcher mit Gas gefüllt ist.</German>
             <French>Zone autour du module remplie de gaz</French>
             <Japanese>モジュール周囲の半径がガスで満たされます</Japanese>
@@ -203,7 +203,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_min_radius_dcs">
             <English>The Minimal Range describes the area around the module where the gas is most lethal</English>
-			<Spanish>El rango minimo describe el area alrededor del modulo en el cual el gas sera mas letal</Spanish>
+            <Spanish>El rango minimo describe el area alrededor del modulo en el cual el gas sera mas letal</Spanish>
             <German>Die minimale Reichweite beschreibt den Bereich im Umkreis des Moduls, in dem das Gas am tötlichsten wirkt.</German>
             <French>Le rayon minimal décrit la zone autour du module ou le gaz est le plus létal</French>
             <Japanese>最小範囲は、ガスが最も致死的であるモジュールの周辺を表します。</Japanese>
@@ -213,7 +213,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_max_radius_dcs">
             <English>The Maximum Range is a range around the Minimal Range where the gas is less lethal and you have a longer chance of survival.(distance from module to outer ring)</English>
-			<Spanish>El rango maximo es el rango alrededor del rango minimo en el cual el gas es menos letal y tienes mas posibilidades de sobrevivir (distancia desde el modulo al anillo exterior)</Spanish>
+            <Spanish>El rango maximo es el rango alrededor del rango minimo en el cual el gas es menos letal y tienes mas posibilidades de sobrevivir (distancia desde el modulo al anillo exterior)</Spanish>
             <German>Die maximale Reichweite ist der Bereich über der minimalen Reichweite hinaus, in welcher das Gas weniger tötlich wirkt und man eine längere Überlebenschance hat (Distanz von Modul bis äußerer Ring).</German>
             <French>Le rayon maximal est le rayon autour du rayon minimal où le gaz est moins létal et où vous avez une plus longue chance de survie. (Distance depuis le module jusqu'au cercle extérieur)</French>
             <Japanese>最大範囲は、ガスの致死量が少なく、生存率が高くなる最小範囲の周辺を指します(モジュールから外周範囲までの距離)</Japanese>
@@ -223,7 +223,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_createContaminatedObject">
             <English>You are about to create a contaminated Object.</English>
-			<Spanish>Estas creando un objeto contaminado</Spanish>
+            <Spanish>Estas creando un objeto contaminado</Spanish>
             <German>Du erstellst gerade einen kontaminierten Gegenstand.</German>
             <French>Vous êtes sur le point de créer un objet contaminé.</French>
             <Japanese>汚染されたオブジェクトを作成しようとしています。</Japanese>
@@ -233,7 +233,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_createContaminatedZone">
             <English>You are about to create a contaminated Zone.</English>
-			<Spanish>Estas creando una zona contaminada</Spanish>
+            <Spanish>Estas creando una zona contaminada</Spanish>
             <German>Du erstellst gerade eine kontaminierte Zone.</German>
             <French>Vous êtes sur le point de créer une zone contaminée.</French>
             <Japanese>汚染されたゾーンを作成しようとしています。</Japanese>
@@ -243,7 +243,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_placeModuleOnObject">
             <English>To create a contaminated object place the module on a empty object.</English>
-			<Spanish>Para crear un objeto contaminado situa el modulo en un objeto vacio</Spanish>
+            <Spanish>Para crear un objeto contaminado situa el modulo en un objeto vacio</Spanish>
             <German>Um einen kontaminierten Gegenstand zu erstellen, platziere das Modul auf einem leeren Objekt.</German>
             <French>Pour créer un objet contaminé placez le module sur un objet vide.</French>
             <Japanese>汚染されたオブジェクトを作成するには、モジュールを空のオブジェクトに配置します。</Japanese>
@@ -253,7 +253,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_sealLeak">
             <English>Seal leack</English>
-			<Spanish>Sellar fuga</Spanish>
+            <Spanish>Sellar fuga</Spanish>
             <German>Leck versiegeln</German>
             <French>Sceller la fuite</French>
             <Korean>누출 밀봉</Korean>
@@ -263,7 +263,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_SealLeak">
             <English>Seal leak</English>
-			<Spanish>Sellar fuga</Spanish>
+            <Spanish>Sellar fuga</Spanish>
             <German>Leck abdichten</German>
             <French>Sceller la fuite</French>
             <Korean>누출 밀봉</Korean>
@@ -273,7 +273,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_Needbigger">
             <English>Minimal Range need to be less than Maximum Range!</English>
-			<Spanish>¡El rango minimo tiene que ser menor al rango maximo!</Spanish>
+            <Spanish>¡El rango minimo tiene que ser menor al rango maximo!</Spanish>
             <German>Minimale Reichweite muss kleiner als maximale Reichweite sein!</German>
             <French>Le rayon minimal a besoin d'être plus petit que le rayon maximal !</French>
             <Japanese>最小範囲は最大範囲よりも小さくする必要があります!</Japanese>
@@ -283,7 +283,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_Intoxikation">
             <English>Intoxication</English>
-			<Spanish>Intoxicación</Spanish>
+            <Spanish>Intoxicación</Spanish>
             <German>Intoxikation</German>
             <French>Intoxication</French>
             <Japanese>中毒</Japanese>
@@ -293,7 +293,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_GasBox_Displayname">
             <English>[ACE] 82mm Gas Rounds Box</English>
-			<Spanish>[ACE] Caja de rondas de 82mm de gas</Spanish>
+            <Spanish>[ACE] Caja de rondas de 82mm de gas</Spanish>
             <German>[ACE] 82mm Gaspatronenkiste</German>
             <French>[ACE] Boîte de cartouches de gaz de 82mm</French>
             <Japanese>[ACE] 82mm ガス弾入り弾薬箱</Japanese>
@@ -303,7 +303,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_DcsShort">
             <English>The M7A3 CS gas grenade is a non-lethal tear gas grenade that causes severe burning of the mucous membranes and eyes on contact.</English>
-			<Spanish>La granada M7A3 CS es una granada no-letal que se utiliza para causar quemaduras severas en las membranas mucosas y en los ojos al contacto.</Spanish>
+            <Spanish>La granada M7A3 CS es una granada no-letal que se utiliza para causar quemaduras severas en las membranas mucosas y en los ojos al contacto.</Spanish>
             <German>Die M7A3 CS Reizgas Granate ist eine nicht tödliche Tränengas Granate, die bei Kontakt starkes Brennen der Schleimhäute und Augen auslöst.</German>
             <French>La grenade à gaz M7A3 CS est une grenade à gaz lacrymogène non-létale qui crée de graves brûlures sur les membranes muqueuses et les yeux au contact.</French>
             <Japanese>M7A3 CSガス手榴弾は、接触すると粘膜や目に激しい火傷のような痛みを負わせる非致死性の催涙ガス手榴弾である。</Japanese>
@@ -313,7 +313,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Name">
             <English>Tripwire Gas</English>
-			<Spanish>Cable trampa de Gas</Spanish>
+            <Spanish>Cable trampa de Gas</Spanish>
             <German>Stolperdraht-Falle Senfgas</German>
             <French>Grenade Tripwire</French>
             <Japanese>仕掛け型ガス地雷</Japanese>
@@ -323,7 +323,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>
-			<Spanish>Tipo: Cable trampa de Gas - Cuando se activa despliega un gas toxico. &lt;br /&gt;Rondas: 1&lt;br /&gt;Usado en: Tierra</Spanish>
+            <Spanish>Tipo: Cable trampa de Gas - Cuando se activa despliega un gas toxico. &lt;br /&gt;Rondas: 1&lt;br /&gt;Usado en: Tierra</Spanish>
             <German>Typ: Stolperdraht-Falle Senfgas - Versprüht bei Auslösung ein gifitges Gas.&lt;br /&gt;Ladungen: 1&lt;br /&gt;Benutzt auf: Boden</German>
             <French>Type : Gaz Tripwire - Spraye un gaz empoisonné quand activé.&lt;br /&gt;Munitions: 1&lt;br /&gt;Utilisé sur : le sol</French>
             <Japanese>タイプ: 対人仕掛け線ガス地雷 - 作動で毒ガスを噴霧します&lt;br /&gt;弾薬: 1&lt;br /&gt;使用: 地上</Japanese>
@@ -333,7 +333,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_MFDNAME">
             <English>Toxic gas</English>
-			<Spanish>Gas toxico</Spanish>
+            <Spanish>Gas toxico</Spanish>
             <German>Senfgas (Giftgas)</German>
             <French>Gaz toxique</French>
             <Japanese>有毒ガス</Japanese>
@@ -343,7 +343,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_DisplayName">
             <English>82mm Toxic Gas Round</English>
-			<Spanish>Ronda de 82mm de gas toxico</Spanish>
+            <Spanish>Ronda de 82mm de gas toxico</Spanish>
             <German>[CSW] 82mm Senfgas Mörser Granate</German>
             <French>Cartouche de 82mm de gaz toxique</French>
             <Japanese>[CSW] 82mm 有毒ガス弾</Japanese>
@@ -353,7 +353,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_CSGas_MFDNAME">
             <English>CS-Gas</English>
-			<Spanish>Gas lacrimogeno</Spanish>
+            <Spanish>Gas lacrimogeno</Spanish>
             <German>CS-Gas (Reizgas)</German>
             <French>Gaz CS</French>
             <Japanese>CSガス</Japanese>
@@ -363,7 +363,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_CSGas_DisplayName">
             <English>82mm CS-Gas Round</English>
-			<Spanish>Granada lacrimogena de 82mm</Spanish>
+            <Spanish>Granada lacrimogena de 82mm</Spanish>
             <German>[CSW] 82mm Reizgas Mörser Granate</German>
             <French>Cartouche de 82mm de gaz CS</French>
             <Japanese>[CSW] 82mm CSガス弾</Japanese>
@@ -373,7 +373,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_CSGrenade_DisplayName">
             <English>M7A3 Riot CS gas grenade</English>
-			<Spanish>Granada antidisturbios de gas lacrimogeno M7A3</Spanish>
+            <Spanish>Granada antidisturbios de gas lacrimogeno M7A3</Spanish>
             <German>M7A3 CS Reizgas Granate</German>
             <French>Grenace à gaz CS anti-émeute M7A3</French>
             <Japanese>M7A3 鎮圧CSガス手榴弾</Japanese>
@@ -383,7 +383,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_CSGrenade_ShortName">
             <English>M7A3</English>
-			<Spanish>M7A3</Spanish>
+            <Spanish>M7A3</Spanish>
             <German>M7A3</German>
             <French>M7A3</French>
             <Japanese>M7A3</Japanese>
@@ -393,7 +393,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_1x">
             <English>M43 BZ LGB</English>
-			<Spanish>M43 BZ LGB</Spanish>
+            <Spanish>M43 BZ LGB</Spanish>
             <German>M43 BZ LGB</German>
             <French>M43 BZ LGB</French>
             <Korean>M43 BZ LGB 집속탄</Korean>
@@ -403,7 +403,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_M43_ShortName_1x">
             <English>M43 BZ LGB</English>
-			<Spanish>M43 BZ LGB</Spanish>
+            <Spanish>M43 BZ LGB</Spanish>
             <German>M43 BZ LGB</German>
             <French>M43 BZ LGB</French>
             <Japanese>M43 BZ LGB</Japanese>
@@ -413,7 +413,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_M43_desc">
             <English>Laser Guided Cluster Bomb with a chemical gas payload.</English>
-			<Spanish>Bomba de fragmentacion guiada por laser con una carga de gas toxico</Spanish>
+            <Spanish>Bomba de fragmentacion guiada por laser con una carga de gas toxico</Spanish>
             <German>Laser gelenkte Streubombe mit Senfgas Gefechtskopf.</German>
             <French>Bombe à sous-munitions à guidée laser contenant un gaz chimique.</French>
             <Japanese>化学ガスを搭載したレーザー誘導クラスター爆弾。</Japanese>
@@ -423,7 +423,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_2x">
             <English>2x M43 BZ LGB</English>
-			<Spanish>2x M43 BZ LGB</Spanish>
+            <Spanish>2x M43 BZ LGB</Spanish>
             <German>2x M43 BZ LGB</German>
             <French>2x M43 BZ LGB</French>
             <Korean>2x M43 BZ LGB 집속탄</Korean>
@@ -433,7 +433,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_M43_ShortName_2x">
             <English>2x M43 BZ LGB</English>
-			<Spanish>2x M43 BZ LGB</Spanish>
+            <Spanish>2x M43 BZ LGB</Spanish>
             <German>2x M43 BZ LGB</German>
             <French>2x M43 BZ LGB</French>
             <Japanese>2x M43 BZ LGB</Japanese>
@@ -443,7 +443,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_desc">
             <English>Unguided rockets with Toxic-gas warhead.</English>
-			<Spanish>Cohetes no-guiados con cabeza de gas toxico</Spanish>
+            <Spanish>Cohetes no-guiados con cabeza de gas toxico</Spanish>
             <German>Ungelenkte Raketen mit Senfgas Gefechtskopf.</German>
             <French>Roquettes non-guidées contenant un gaz toxique</French>
             <Japanese>有毒ガス弾頭を搭載した無誘導ロケット。</Japanese>
@@ -453,7 +453,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_DisplayName">
             <English>Hydra GAS 19x</English>
-			<Spanish>Hydra GAS 19x</Spanish>
+            <Spanish>Hydra GAS 19x</Spanish>
             <German>Hydra GAS 19x</German>
             <French>Hydra GAS 19x</French>
             <Japanese>ハイドラ 有毒ガス 19x</Japanese>
@@ -463,7 +463,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_ShortName">
             <English>70mm GAS</English>
-			<Spanish>70mm GAS</Spanish>
+            <Spanish>70mm GAS</Spanish>
             <German>70mm GAS</German>
             <French>70mm GAS</French>
             <Korean>70mm 독가스</Korean>
@@ -473,7 +473,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_LvL1_Gas">
             <English>Toxic gas (Level 1)</English>
-			<Spanish>Gas toxico (Nivel 1)</Spanish>
+            <Spanish>Gas toxico (Nivel 1)</Spanish>
             <German>Senfgas (Level 1)</German>
             <French>Gaz toxique (Niveau 1)</French>
             <Japanese>有毒ガス (レベル1)</Japanese>
@@ -483,7 +483,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_UI_max_range">
             <English>Maximum Range.</English>
-			<Spanish>Rango maximo</Spanish>
+            <Spanish>Rango maximo</Spanish>
             <German>Maximale Reichweite.</German>
             <French>Portée maximum</French>
             <Japanese>最大範囲</Japanese>
@@ -493,7 +493,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_UI_min_range">
             <English>Minimal Range.</English>
-			<Spanish>Rango minimo</Spanish>
+            <Spanish>Rango minimo</Spanish>
             <German>Minimale Reichweite.</German>
             <French>Portée minimale</French>
             <Japanese>最小範囲</Japanese>
@@ -503,7 +503,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable">
             <English>Is sealable?</English>
-			<Spanish>¿Es sellable?</Spanish>
+            <Spanish>¿Es sellable?</Spanish>
             <German>Versiegelbar?</German>
             <French>Scellable ?</French>
             <Korean>밀봉가능 개체입니까?</Korean>
@@ -513,7 +513,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable_tooltip">
             <English>ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!</English>
-			<Spanish>SOLO FUNCIONA SI LA LOGICA ESTA SINCRONIZADA CON UN OBJETO</Spanish>
+            <Spanish>SOLO FUNCIONA SI LA LOGICA ESTA SINCRONIZADA CON UN OBJETO</Spanish>
             <German>FUNKTIONIERT NUR, WENN DAS MODUL MIT EINEM OBJEKT SYNCHRONISIERT IST!</German>
             <French>FONTIONNE UNIQUEMENT SI LE MODULE EST SYNCHRONISE AVEC UN OBJET!</French>
             <Japanese>ロジックがオブジェクトと同期している場合にのみ機能します!</Japanese>
@@ -523,7 +523,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_UI_selectGas">
             <English>Select Gas:</English>
-			<Spanish>Seleccionar Gas:</Spanish>
+            <Spanish>Seleccionar Gas:</Spanish>
             <German>Gas wählen:</German>
             <French>Gaz sélectionné:</French>
             <Japanese>ガスを選択:</Japanese>
@@ -533,7 +533,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_UI_gasType">
             <English>Gas Type:</English>
-			<Spanish>Tipo de gas:</Spanish>
+            <Spanish>Tipo de gas:</Spanish>
             <German>Gas Typ:</German>
             <French>Type de gaz:</French>
             <Japanese>ガスの種類:</Japanese>
