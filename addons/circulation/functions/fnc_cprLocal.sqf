@@ -101,7 +101,7 @@ switch (_reviveObject) do {
 };
 
 if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AEDX" || _reviveObject isEqualTo "AEDStation" || _reviveObject isEqualTo "AEDXVehicle") exitWith {
-    _chance = _chance + (_amiBoost + _lidoBoost * _epiBoost);
+    _chance = _chance + (_amiBoost + (1 max _lidoBoost) * _epiBoost);
 
     if ((_random <= _chance) && (_asystole isEqualTo 1)) then {
         [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
