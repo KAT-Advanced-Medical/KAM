@@ -629,6 +629,8 @@
             <German>Chance das die geschlossene Reduktion fehlschlägt</German>
             <Portuguese>Probabilidade de falha de redução fechada</Portuguese>
             <French>Chance d'échec de la réduction fermée</French>
+            <Polish>Szansa na niepowodzenie przy zamkniętej redukcji</Polish>
+            <Spanish>Probabilidad de fallo de reducción cerrada</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
@@ -637,6 +639,8 @@
             <German> Legt die Chance fest, dass die geschlossene Reduktion fehlschlägt. Standard: 10%</German>
             <Portuguese>Probabilidade de falha na redução fechada. Valor padrão 10%</Portuguese>
             <French>Chance que la réduction fermée échoue. Valeur par défaut à 10%</French>
+            <Polish>Szansa, że zamknięta redukcja nie powiedzie się. Domyślna wartość 10%</Polish>
+            <Spanish>Probabilidad de fallo de la reducción cerrada. Valor predeterminado 10%</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
@@ -1077,6 +1081,7 @@
             <French>[KAM] Boîte de chirurgie</French>
             <Korean>[KAM] 수술도구 상자</Korean>
             <Portuguese>[KAM] Caixa cirúrgica</Portuguese>
+            <Spanish>[KAM] Caja quirurgica</Spanish>
         </Key>
     </Package>
 </Project>
