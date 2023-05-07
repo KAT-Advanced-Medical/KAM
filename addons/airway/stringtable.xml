@@ -1171,6 +1171,7 @@
             <Japanese>回復体位設定</Japanese>
             <Spanish>Parámetros de posición lateral de seguridad e hiperextensión de cabeza</Spanish>
             <Portuguese>Configurações de posição de recuperação + hiperextensão de cabeça</Portuguese>
+            <Polish>Ustawienia Pozycji bezpiecznej i Odchylania głowy</Polish>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1183,6 +1184,35 @@
             <Japanese>気道アイテム設定</Japanese>
             <Spanish>Parámetros de las herramientas (vias aéreas)</Spanish>
             <Portuguese>Configurações de itens de vias aéreas</Portuguese>
+            <Polish>Ustawienia przedmiotów do dróg oddechowych</Polish>
+        </Key>
+        <Key ID="STR_KAT_Airway_Cancel_Larynxtubus">
+            <English>Remove King LT</English>
+            <German>Entferne Larynxtubus</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_Cancel_Guedeltubus">
+            <English>Remove Guedel Tube</English>
+            <German>Entferne Guedeltubus</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_action_removing">
+            <English>Removing</English>
+            <German>Entferne</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_Reusable_AirwayItems">
+            <English>Reusable Airway Items</English>
+            <German>Wieder Benutzbare Atemwegsobjekte</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_Reusable_AirwayItems_DESC">
+            <English>Regain the KingLT or Guedel Tube when manually removing them</English>
+            <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_RemoveLarynxtubus_Log">
+            <English>%1 removed KingLT</English>
+            <German>%1 hat Larynxtubus entfernt</German>
+        </Key>
+        <Key ID="STR_KAT_Airway_RemoveGuedeltubus_Log">
+            <English>%1 removed Guedel Tube</English>
+            <German>%1 hat Guedeltubus entfernt</German>
         </Key>
     </Package>
 </Project>

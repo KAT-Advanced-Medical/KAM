@@ -40,7 +40,7 @@ if (!GVAR(advancedMedication)) exitWith {
                 [QACEGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
             };
             
-            [_patient, -0.15] call kat_pharma_fnc_alphaAction;
+            [_patient, -0.15] call FUNC(alphaAction);
         };
     };
 };
