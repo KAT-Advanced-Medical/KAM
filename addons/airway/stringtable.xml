@@ -34,7 +34,7 @@
             <Portuguese>Probabilidade de obstrução das vias aéreas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_obstruction_DESC">
-            <English>Probability for an obstructed airway in persentage that gets rolled every:\n- Falling unconscious\n- Removing KingLT / Guedel Tube</English>
+            <English>Probability for an obstructed airway in percentage that gets rolled every:\n- Falling unconscious\n- Removing KingLT / Guedel Tube</English>
             <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern:\n- Bewustlos werden\n- Das Entfernen von Larynxtubus / Guedeltubus\n- Abbrechen der Stabile Seitenlage</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
