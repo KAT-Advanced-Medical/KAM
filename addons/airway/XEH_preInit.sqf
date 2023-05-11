@@ -42,9 +42,9 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(probability_obstruction),
     "SLIDER",
-    LLSTRING(SETTING_obstruction),
+    [LLSTRING(SETTING_obstruction),LLSTRING(SETTING_obstruction_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [0, 100, 15, 0],
+    [0, 100, 40, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -52,7 +52,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(probability_occluded),
     "SLIDER",
-    LLSTRING(SETTING_occluded),
+    [LLSTRING(SETTING_occluded),LLSTRING(SETTING_occluded_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [0, 100, 10, 0],
     true
