@@ -38,7 +38,7 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
 [_patient, false] call ACEFUNC(dragging,setCarryable);
 [_patient, false] call ACEFUNC(dragging,setDraggable);
 
-[_patient, "quick_view", LSTRING(incision_log), [[_medic] call ACEFUNC(common,getName), STRING_BODY_PARTS select _part]] call ACEFUNC(medical_treatment,addToLog);  
+[_patient, "quick_view", LSTRING(incision_log), [[_medic] call ACEFUNC(common,getName), STRING_BODY_PARTS select _part]] call ACEFUNC(medical_treatment,addToLog);
 
 [{
     params ["_args", "_idPFH"];
@@ -56,7 +56,7 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
 
     if (_count == 0 || !(IS_UNCONSCIOUS(_patient))) then {
         [_patient, "Pain", 10, 40, 200, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
-        [_target, true] call ACEFUNC(medical,setUnconscious);
+        [QACEGVAR(medical,knockOut), _patient] call CBA_fnc_localEvent;
     };
 
 }, GVAR(etomidateTime), [_patient, _part]] call CBA_fnc_addPerFrameHandler;

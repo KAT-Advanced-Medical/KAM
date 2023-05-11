@@ -23,4 +23,4 @@ if (_random <= 1) then {
 };
 
 _patient setVariable [QEGVAR(surgery,sedated), true, true];
-[_patient, true] call ACEFUNC(medical,setUnconscious);
+[QACEGVAR(medical,knockOut), _patient] call CBA_fnc_localEvent;
