@@ -33,6 +33,10 @@
             <Japanese>気道閉塞の確率</Japanese>
             <Portuguese>Probabilidade de obstrução das vias aéreas</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Airway_SETTING_obstruction_DESC">
+            <English>Probability for an obstructed airway in percentage that gets rolled every:\n- Falling unconscious\n- Removing KingLT / Guedel Tube</English>
+            <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern:\n- Bewustlos werden\n- Das Entfernen von Larynxtubus / Guedeltubus\n- Abbrechen der Stabile Seitenlage</German>
+        </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
             <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes</German>
@@ -48,6 +52,10 @@
             <Russian>Вероятность закупорки дыхательных путей</Russian>
             <Japanese>気道異物の確率</Japanese>
             <Portuguese>Probabilidade de oclusão das vias aéreas</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occluded_DESC">
+            <English>Probability for an occlusion in percentage that gets rolled Setting:[Occlusion repeat timer] (default every 60s)</English>
+            <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes in prozent die durch Einstellung:[Zeit für die Wiederholung des Erbrechens] (standard alle 60s) berechnet wird.</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>

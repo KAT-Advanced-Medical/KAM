@@ -20,6 +20,7 @@ params ["_medic", "_patient"];
 
 _patient setVariable [QGVAR(recovery), false, true];
 _patient setVariable [QGVAR(overstretch), false, true];
+_patient call FUNC(handlePuking);
 
 private _output = LLSTRING(Recovery_Cancel);
 [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
