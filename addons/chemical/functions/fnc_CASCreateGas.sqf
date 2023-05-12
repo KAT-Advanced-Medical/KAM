@@ -16,6 +16,5 @@
 * Gets position of droped bombs and creates a Gas zone there
 */
 
-private _pos = [_this select 0, _this select 1, _this select 2];
-[_pos, 240, 15, 0] spawn FUNC(createZone);
-nil
+params ["_posX", "_posY", "_posZ"];
+[[_posX, _posY, _posZ], 240, 15, 0] call FUNC(createZone);

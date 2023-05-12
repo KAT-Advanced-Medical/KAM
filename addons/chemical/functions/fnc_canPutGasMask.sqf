@@ -17,4 +17,4 @@
 
 params ["_medic", "_patient"];
 
-!(_patient call ACE_common_fnc_isAwake) && ([_medic,_patient] call FUNC(hasGasmask)) && !(goggles _patient in GVAR(availGasmaskList))
+!(_patient call ACEFUNC(common,isAwake)) && ([_medic,_patient] call FUNC(hasGasmask)) && !(goggles _patient in GVAR(availGasmaskList))
