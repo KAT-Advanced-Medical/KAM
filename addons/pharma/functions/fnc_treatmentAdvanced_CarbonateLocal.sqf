@@ -24,6 +24,6 @@ if (_sedated) exitWith {};
 private _bloodPressure = [_patient] call ACEFUNC(medical_status,getBloodPressure);
 _bloodPressureH = _bloodPressure select 1;
 
-if (_bloodPressureH >= 110 && _bloodPressureH <= 130 && (random 100 <= GVAR(carbonateChance))) then {
-    [_patient, false] call ACEFUNC(medical_status,setUnconsciousState);
+if (_bloodPressureH >= 100 && _bloodPressureH <= 140 && (random 100 <= GVAR(carbonateChance)) && {[_patient] call ACEFUNC(medical_status,hasStableVitals)}  ) then {
+    [_patient, false] call ACEFUNC(medical,setUnconscious);
 };
