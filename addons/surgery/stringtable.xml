@@ -631,6 +631,7 @@
             <French>Chance d'échec de la réduction fermée</French>
             <Polish>Szansa na niepowodzenie przy zamkniętej redukcji</Polish>
             <Spanish>Probabilidad de fallo de reducción cerrada</Spanish>
+            <Czech>Šance na neúspěch uzavřené repozice</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
@@ -641,6 +642,7 @@
             <French>Chance que la réduction fermée échoue. Valeur par défaut à 10%</French>
             <Polish>Szansa, że zamknięta redukcja nie powiedzie się. Domyślna wartość 10%</Polish>
             <Spanish>Probabilidad de fallo de la reducción cerrada. Valor predeterminado 10%</Spanish>
+            <Czech>Šance, že se uzavřená repozice nepovede. Výchozí hodnota 10%</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
