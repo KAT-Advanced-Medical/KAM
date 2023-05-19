@@ -170,14 +170,14 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-/*[
-    QGVAR(uncon_requieredForActions),
+[
+    QGVAR(uncon_requieredForAction),
     "CHECKBOX",
     [LLSTRING(uncon_requieredForActions), LLSTRING(uncon_requieredForActions_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [false],
     true
-] call CBA_Settings_fnc_init;*/
+] call CBA_Settings_fnc_init;
 
 // Sets time to debride a patient
 [
