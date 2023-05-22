@@ -11,6 +11,7 @@
             <Italian>Maschere a gas accettate</Italian>
             <Portuguese>Permitir máscaras de gás</Portuguese>
             <Polish>Dozwolone maski gazowe</Polish>
+            <Czech>Povolené plynové masky</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK_DISC">
             <English>Enter here the classname of the masks that should work with the system.</English>
@@ -22,6 +23,7 @@
             <Italian>Inserisci qui la classname delle maschere a gas che dovrebbero funzionare con il sistema.</Italian>
             <Portuguese>Digite aqui o classname das máscaras que devem funcionar com o sistema.</Portuguese>
             <Polish>Wpisz classname maski, która ma działać z systemem</Polish>
+            <Czech>Zde vložte "classname" plynových masek, které mají spolupracovat s tímto systémem.</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY">
             <English>Gas masks durability</English>
@@ -33,6 +35,7 @@
             <Italian>Durabilità delle maschere a gas</Italian>
             <Portuguese>Durabilidade das máscaras de gás</Portuguese>
             <Polish>Wytrzymałość maski gazowej</Polish>
+            <Czech>Odolnost Plynových masek</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY_DISC">
             <English>Determines how long you can stand in the gas with a gas mask without getting infected.</English>
@@ -44,6 +47,7 @@
             <Italian>Determina per quanto tempo puoi stare nel gas con la maschera a gas prima di risultare intossicato.</Italian>
             <Portuguese>Determina quanto tempo você pode ficar no gás com uma máscara de gás sem ser infectado.</Portuguese>
             <Polish>Ustala jak długo możesz stać w gazie z maską bez zagrożenia infekcją</Polish>
+            <Czech>Určuje jak dlouho můžete stát v plynu s plynovou maskou bez následků.</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infection_time">
             <English>Time until infection</English>
@@ -55,6 +59,7 @@
             <Italian>Tempo massimo prima dell'intossicazione</Italian>
             <Portuguese>Tempo até a infecção</Portuguese>
             <Polish>Czas do infekcji</Polish>
+            <Czech>Čas do infekce</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_infection_time_disc">
             <English>Time you can stand in the gas before you get infected or need a gas mask.</English>
@@ -66,6 +71,7 @@
             <Italian>Tempo che puoi restare nel gas prima di rimanere intossicato o aver bisogno di una maschera a gas.</Italian>
             <Portuguese>Tempo que você pode ficar no gás antes de ser infectado ou precisar de uma máscara de gás.</Portuguese>
             <Polish>Ustala jak długo możesz stać w gazie zanim zostaniesz zainfekowany lub będziesz potrzebował maski gazowej.</Polish>
+            <Czech>Čas po který můžete stát v plynu bez infikování se či potřeby plynové masky</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_affectAI">
             <English>Gas Affects AI</English>
@@ -77,6 +83,7 @@
             <Italian>Il gas è efficace contro la AI</Italian>
             <Portuguese>O gás afeta a IA</Portuguese>
             <Polish>Gaz wpływa na AI</Polish>
+            <Czech>Plyn ovlivňuje AI</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_affectAI_disc">
             <English>Determines if AI is affected by gas (If you are running this on a local server this can cause perfomance problems)</English>
@@ -88,6 +95,7 @@
             <Italian>Determina se la AI subisce il gas (se stai eseguendo questo in un server locale questa può causare problemi di prestazioni)</Italian>
             <Portuguese>Determina se a IA é afetada pelo gás (se você estiver executando isso em um servidor local, isso pode causar problemas de desempenho)</Portuguese>
             <Polish>Ustala czy AI może być zainfekowane (Może powodować problemy z wydajnością)</Polish>
+            <Czech>Určuje, zda je AI ovlivněno plynem (může způsobovat problémy s výkonem pokud bude spuštěno na lokálním serveru)</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem">
             <English>Gas mask filter</English>
@@ -99,6 +107,7 @@
             <Italian>Filtro della maschera a gas</Italian>
             <Portuguese>Filtro de máscara de gás</Portuguese>
             <Polish>Filtr do maski gazowej</Polish>
+            <Czech>Filtr Plynových masek</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem_desc">
             <English>Replacement filter for gas mask</English>
@@ -110,6 +119,7 @@
             <Italian>Filtro di ricambio per la maschera a gas</Italian>
             <Portuguese>Filtro substituto para máscara de gás</Portuguese>
             <Polish>Filtr zastępczy do maski gazowej</Polish>
+            <Czech>Náhradní filtr pro Plynové masky</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_sealantItem">
             <English>Sealant tube</English>
@@ -121,6 +131,7 @@
             <Italian>Tubo sigillante</Italian>
             <Portuguese>Tubo de vedação</Portuguese>
             <Polish>Uszczelniacz</Polish>
+            <Czech>Těsnící hmota</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_sealantItem_desc">
             <English>Sealant which is used to seal objects when e.g. a toxic substance leaks out</English>
@@ -132,6 +143,7 @@
             <Italian>Sigillante che è utilizzato per sigillare oggetti quanto per esemipo la sostanza tossica fuoriesce.</Italian>
             <Portuguese>Selante que é usado para selar objetos quando, por exemplo, há vazamento de substância tóxica</Portuguese>
             <Polish>Uszczelniacz używany do uszczelniania przedmiotów, na przykład w przypadku wycieków toksycznych gazów</Polish>
+            <Czech>Hmota používaná k utěsnění objektů např. při úniku toxických substancí</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_action">
             <English>Put on gas mask</English>
@@ -143,6 +155,7 @@
             <Italian>Indossa la maschera a gas</Italian>
             <Portuguese>Colocar máscara de gás</Portuguese>
             <Polish>Załóż maskę gazową</Polish>
+            <Czech>Nasadit Plynovou masku</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_giveGasMask_progress">
             <English>Put on gas mask...</English>
@@ -154,6 +167,7 @@
             <Italian>Indossando la maschera a gas...</Italian>
             <Portuguese>Colocando máscara de gás...</Portuguese>
             <Polish>Zakładanie maski...</Polish>
+            <Czech>Nasazování Plynové masky</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_CheckGasMaskDurability">
             <English>Check gas mask durability</English>
@@ -165,6 +179,7 @@
             <Italian>Controlla la durabilità della maschera a gas</Italian>
             <Portuguese>Checar a durabilidade da máscara de gás</Portuguese>
             <Polish>Sprawdź wytrzymałość maski gazowej</Polish>
+            <Czech>Zkontrolovat odolnost Plynové masky</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_ChangeGasMaskFilter">
             <English>Replace gas mask filter</English>
@@ -176,6 +191,7 @@
             <Italian>Sostituisci il filtro della maschera a gas</Italian>
             <Portuguese>Substituir o filtro da máscara de gás</Portuguese>
             <Polish>Wymień filtr</Polish>
+            <Czech>Vyměnit filtr Plynové masky</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemDetector_Mute">
             <English>Mute Chemical Detector.</English>
@@ -187,6 +203,7 @@
             <Italian>Silenzia il rilevatore chimico</Italian>
             <Portuguese>Silenciar detector químico</Portuguese>
             <Polish>Wycisz Detektor chemiczny</Polish>
+            <Czech>Ztlumit Chemický Detektor</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_ChemDetector_Unmute">
             <English>Unmute Chemical Detector.</English>
@@ -198,6 +215,7 @@
             <Italian>Smuta il rilevatore chimico</Italian>
             <Portuguese>Ativar som de detector químico</Portuguese>
             <Polish>Odcisz Detektor chemiczny</Polish>
+            <Czech>Zapnout zvuk Chemického Detektoru</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_Displayname">
             <English>Create contaminated area / object</English>
@@ -209,6 +227,7 @@
             <Italian>Crea un oggetto/zona contaminata</Italian>
             <Portuguese>Criar área/objeto contaminado</Portuguese>
             <Polish>Stwórz skażony obszar/obiekt</Polish>
+            <Czech>Vytvořit kontaminovanou oblast / objekt</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_description">
             <English>Radius around the module which is filled with gas.</English>
@@ -220,6 +239,7 @@
             <Italian>Raggio attorno al modulo che sarà riempito di gas.</Italian>
             <Portuguese>Raio ao redor do módulo que está cheio de gás.</Portuguese>
             <Polish>Zasięg wokół modułu, który jest skażony</Polish>
+            <Czech>Poloměr kolem modulu která bude zamořen plynem</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_min_radius_dcs">
             <English>The Minimal Range describes the area around the module where the gas is most lethal</English>
@@ -231,6 +251,7 @@
             <Italian>Il raggio minimo descrive l'area attorno al modulo dove il gas è più letale</Italian>
             <Portuguese>O Alcance Mínimo descreve a área ao redor do módulo onde o gás é mais letal</Portuguese>
             <Polish>Minimalny zasięg określa obszar wokół modułu, gdzie gaz jest bardziej śmiertelny</Polish>
+            <Czech>Minimální vzdálenost vyjadřuje oblast kolem modulu kde je plyn nejvíce smrtící</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_max_radius_dcs">
             <English>The Maximum Range is a range around the Minimal Range where the gas is less lethal and you have a longer chance of survival.(distance from module to outer ring)</English>
@@ -242,6 +263,7 @@
             <Italian>Il raggio massimo è un raggio attorno al raggio minimo dove il gas è meno letale e hai una possibilità maggiore di sopravvivenza (distanza dal modulo all'anello esterno)</Italian>
             <Portuguese>O Alcance Máximo é um alcance ao redor do Alcance Mínimo onde o gás é menos letal e você tem uma chance maior de sobrevivência (distância do módulo ao anel externo)</Portuguese>
             <Polish>Maksymalny zasięg określa obszar wokół modułu, gdzie gaz jest mniej zabójczy i masz większe szanse na przeżycie (odległość od modułu do zewnętrznego pierścienia)</Polish>
+            <Czech>Maximální vzdálenost je vzdálenost kolem Minimální vzdálenosti kde je plyn méně smrtící a máte větší šanci na přežití (vzdálenost od modulu k vnějšímu kruhu).</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_createContaminatedObject">
             <English>You are about to create a contaminated Object.</English>
@@ -253,6 +275,7 @@
             <Italian>Stai creando un oggetto contaminato.</Italian>
             <Portuguese>Você está prestes a criar um objeto contaminado.</Portuguese>
             <Polish>Zaraz stworzysz skażony obiekt</Polish>
+            <Czech>Chystáte se vytvořit kontaminovaný objekt</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_createContaminatedZone">
             <English>You are about to create a contaminated Zone.</English>
@@ -264,6 +287,7 @@
             <Italian>Stao creando una zona contaminata.</Italian>
             <Portuguese>Você está prestes a criar uma zona contaminada.</Portuguese>
             <Polish>Zaraz stworzysz skażony obszar</Polish>
+            <Czech>Chystáte se vytvořit kontaminovou oblast</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_placeModuleOnObject">
             <English>To create a contaminated object place the module on a empty object.</English>
@@ -275,6 +299,7 @@
             <Italian>Per creare un oggetto contaminato piazza il modulo su un oggetto vuoto.</Italian>
             <Portuguese>Para criar um objeto contaminado, coloque o módulo em um objeto vazio.</Portuguese>
             <Polish>Aby stworzyć skażony obiekt, umieść moduł na pustym obiekcie.</Polish>
+            <Czech>Pro vytvoření kontaminovaného objektu položte modul na prázdný objekt.</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_sealLeak">
             <English>Seal leak</English>
@@ -286,6 +311,7 @@
             <Italian>Fuga di gas</Italian>
             <Portuguese>Vazamento de gás</Portuguese>
             <Polish>Uszczelnij wyciek</Polish>
+            <Czech>Utěsnit netěsnost</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_SealLeak">
             <English>Seal leak</English>
@@ -297,6 +323,7 @@
             <Italian>Fuga di gas</Italian>
             <Portuguese>Vazamento de gás</Portuguese>
             <Polish>Uszczelnij wyciek</Polish>
+            <Czech>Utěsnit netěsnost</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_Needbigger">
             <English>Minimal Range need to be less than Maximum Range!</English>
@@ -308,6 +335,7 @@
             <Italian>Il raggio minimo deve essere minore del raggio massimo!</Italian>
             <Portuguese>O Alcance Mínimo precisa ser menor que o Alcance Máximo!</Portuguese>
             <Polish>Minimalny zasięg musi być mniejszy niż maksymalny zasięg</Polish>
+            <Czech>Minimální vzdálenost musí být menší než Maximální vzdálenost!</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_Intoxikation">
             <English>Intoxication</English>
@@ -319,6 +347,7 @@
             <Italian>Intossicazione</Italian>
             <Portuguese>Intoxicação</Portuguese>
             <Polish>Zatrucie</Polish>
+            <Czech>Intoxikace</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_GasBox_Displayname">
             <English>[ACE] 82mm Gas Rounds Box</English>
@@ -341,6 +370,7 @@
             <Italian>La granata a gas M7A3 CS  è una granata con gas non letale che causa bruciature importanti alle membrane mucose e al contatto con gli occhi.</Italian>
             <Portuguese>A granada de gás M7A3 CS é uma granada de gás lacrimogêneo não letal que causa queimaduras graves nas membranas mucosas e nos olhos ao entrar em contato.</Portuguese>
             <Polish>Granat gazowy M7A3 CS to nieśmiercionośny granat z gazem łzawiącym, który przy kontakcie powoduje silne pieczenie błon śluzowych i oczu.</Polish>
+            <Czech>M7A3 CS je plynový granát s nesmrtícím slzným plynem, který způsobuje závažná popálení sliznic a očí při kontaktu s nimi.</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Name">
             <English>Tripwire Gas</English>
@@ -352,6 +382,7 @@
             <Italian>Innesco a cavo GAS</Italian>
             <Portuguese>Gás Tripwire</Portuguese>
             <Polish>Pułapka gazowa na linkę</Polish>
+            <Czech>Nástražný drát s plynovým granátem</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_TriWire_Gas_Desc">
             <English>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</English>
@@ -363,6 +394,7 @@
             <Italian>Tipo: Innesco a cavo GAS - Spruzza un gas velenoso quando innescato  &lt;br /&gt;Colpi: 1&lt;br /&gt;Usabile: Suolo</Italian>
             <Portuguese>Tipo: Tripwire gas - Espalha um gás venenoso quando acionado.&lt;br /&gt;Projéteis: 1&lt;br /&gt;Usado em: Solo</Portuguese>
             <Polish>Po aktywowaniu rozpyla trujący gaz. &lt;br/&gt; Ilość: 1&lt;br/&gt;Używać na ziemi</Polish>
+            <Czech>Typ: Nástražný drát s plynovým granátem - Při aktivaci vypustí do ovzduší jedovatý plyn.&lt;br/&gt;Ran: 1&lt;br/&gt;Použití: Země</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_MFDNAME">
             <English>Toxic gas</English>
@@ -374,6 +406,7 @@
             <Italian>Gas tossico</Italian>
             <Portuguese>Gás tóxico</Portuguese>
             <Polish>Toksyczny gaz</Polish>
+            <Czech>Toxický plyn</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_ToxicGas_DisplayName">
             <English>82mm Toxic Gas Round</English>
@@ -385,6 +418,7 @@
             <Italian>Colpo 82mm di gas tossico</Italian>
             <Portuguese>Cartucho de gás tóxico de 82mm</Portuguese>
             <Polish>Pocisk gazu toksycznego kal.82mm</Polish>
+            <Czech>82mm Granát s Toxickým Plynem</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_CSGas_MFDNAME">
             <English>CS-Gas</English>
@@ -396,6 +430,7 @@
             <Italian>CS-Gas</Italian>
             <Portuguese>Gás CS</Portuguese>
             <Polish>Gaz łzawiący</Polish>
+            <Czech>CS-Plyn</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_CSGas_DisplayName">
             <English>82mm CS-Gas Round</English>
@@ -407,6 +442,7 @@
             <Italian>Colpo 82mm di CS-Gas</Italian>
             <Portuguese>Cartucho de gás CS de 82mm</Portuguese>
             <Polish>Pocisk gazu łzawiącego kal.82mm</Polish>
+            <Czech>82mm Granát s CS-Plynem</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_CSGrenade_DisplayName">
             <English>M7A3 Riot CS gas grenade</English>
@@ -418,6 +454,7 @@
             <Italian>Granate CS-Gas antisommossa M7A3 </Italian>
             <Portuguese>Granada de gás CS M7A3</Portuguese>
             <Polish>M7A3 Granat gazowy</Polish>
+            <Czech>Granát M7A3 s CS-Plynem</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_M7A3_CSGrenade_ShortName">
             <English>M7A3</English>
@@ -429,6 +466,7 @@
             <Italian>M7A3</Italian>
             <Portuguese>M7A3</Portuguese>
             <Polish>M7A3</Polish>
+            <Czech>M7A3</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_1x">
             <English>M43 BZ LGB</English>
@@ -440,6 +478,7 @@
             <Italian>M43 BZ LGB</Italian>
             <Portuguese>M43 BZ LGB</Portuguese>
             <Polish>M43 BZ LGB</Polish>
+            <Czech>M43 BZ LGB</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_ShortName_1x">
             <English>M43 BZ LGB</English>
@@ -451,6 +490,7 @@
             <Italian>M43 BZ LGB</Italian>
             <Portuguese>M43 BZ LGB</Portuguese>
             <Polish>M43 BZ LGB</Polish>
+            <Czech>M43 BZ LGB</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_desc">
             <English>Laser Guided Cluster Bomb with a chemical gas payload.</English>
@@ -462,6 +502,7 @@
             <Italian>Bombe cluster laser guidate con un carico di gas tossico.</Italian>
             <Portuguese>Bomba de fragmentação guiada por laser com uma carga útil de gás químico.</Portuguese>
             <Polish>Laser Guided Cluster Bomb z ładunkiem chemicznym</Polish>
+            <Czech>Laserem naváděná kazetová munice s obsahem chemického plynu</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_DisplayName_2x">
             <English>2x M43 BZ LGB</English>
@@ -473,6 +514,7 @@
             <Italian>2x M43 BZ LGB</Italian>
             <Portuguese>2x M43 BZ LGB</Portuguese>
             <Polish>2x M43 BZ LGB</Polish>
+            <Czech>2x M43 BZ LGB</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_M43_ShortName_2x">
             <English>2x M43 BZ LGB</English>
@@ -484,6 +526,7 @@
             <Italian>2x M43 BZ LGB</Italian>
             <Portuguese>2x M43 BZ LGB</Portuguese>
             <Polish>2x M43 BZ LGB</Polish>
+            <Czech>2x M43 BZ LGB</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_desc">
             <English>Unguided rockets with Toxic-gas warhead.</English>
@@ -495,6 +538,7 @@
             <Italian>Razzo non guidato con una carica di gas tossico.</Italian>
             <Portuguese>Foguetes não guiados com ogiva de gás tóxico.</Portuguese>
             <Polish>Rakiety niekierowane z głowicą zawierającą toksyczny gaz</Polish>
+            <Czech>Neřízené rakety s bojovou hlavicí s toxickým plynem</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_DisplayName">
             <English>Hydra GAS 19x</English>
@@ -506,6 +550,7 @@
             <Italian>Hydra GAS 19x</Italian>
             <Portuguese>Hydra GAS 19x</Portuguese>
             <Polish>Hydra GAS 19x</Polish>
+            <Czech>Hydra GAS 19x</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_HydraGas_ShortName">
             <English>70mm GAS</English>
@@ -517,6 +562,7 @@
             <Italian>70mm GAS</Italian>
             <Portuguese>70mm GAS</Portuguese>
             <Polish>70mm GAS</Polish>
+            <Czech>70mm GAS</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_LvL1_Gas">
             <English>Toxic gas (Level 1)</English>
@@ -528,6 +574,7 @@
             <Italian>Gas tossico (Livello 1)</Italian>
             <Portuguese>Gás tóxico (Nível 1)</Portuguese>
             <Polish>Toksyczny gaz ( Poziom 1)</Polish>
+            <Czech>Toxický plyn (Úroveň 1)</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_max_range">
             <English>Maximum Range.</English>
@@ -539,6 +586,7 @@
             <Italian>Raggio massimo.</Italian>
             <Portuguese>Alcance Máximo</Portuguese>
             <Polish>Maksymalny zasięg</Polish>
+            <Czech>Maximální vzdálenost.</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_min_range">
             <English>Minimal Range.</English>
@@ -550,6 +598,7 @@
             <Italian>Raggio minimo.</Italian>
             <Portuguese>Alcance Mínimo</Portuguese>
             <Polish>Minimalny zasięg</Polish>
+            <Czech>Minimální vzdálenost.</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable">
             <English>Is sealable?</English>
@@ -561,6 +610,7 @@
             <Italian>E' perforabile? (creare una fuga di gas)</Italian>
             <Portuguese>É vedável?</Portuguese>
             <Polish>Można uszczelnić?</Polish>
+            <Czech>Lze utěsnit?</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_sealable_tooltip">
             <English>ONLY WORKS IF LOGIC IS SYNCED WITH AN OBJECT!</English>
@@ -572,6 +622,7 @@
             <Italian>FUNZIONA SOLO SE LA LOGICA E' LEGATA CON UN OGGETTO!</Italian>
             <Portuguese>SÓ FUNCIONA SE A LÓGICA ESTIVER SINCRONIZADA COM UM OBJETO!</Portuguese>
             <Polish>DZIAŁA TYLKO GDY LOGIKA JEST ZSYNCHRONIZOWANA Z OBIEKTEM!</Polish>
+            <Czech>FUNGUJE POUZE POKUD JE LOGIKA SPOJENA S OBJEKTEM!</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_selectGas">
             <English>Select Gas:</English>
@@ -583,6 +634,7 @@
             <Italian>Seleziona Gas:</Italian>
             <Portuguese>Seleção de Gás:</Portuguese>
             <Polish>Wybierz Gaz:</Polish>
+            <Czech>Vybrat plyn:</Czech>
         </Key>
         <Key ID="STR_KAT_Chemical_UI_gasType">
             <English>Gas Type:</English>
@@ -594,6 +646,7 @@
             <Italian>Tipologia di Gas:</Italian>
             <Portuguese>Tipo de Gás:</Portuguese>
             <Polish>Rodzaj Gazu:</Polish>
+            <Czech>Typ plynu:</Czech>
         </Key>
     </Package>
 </Project>
