@@ -167,46 +167,46 @@ class CfgVehicles {
         };
     };
     class Items_base_F;
-	class Kat_armbandRC: Items_base_F {
-		scope = 2;
+    class Kat_armbandRC: Items_base_F {
+        scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
+        author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
         editorPreview = QPATHTOF(ui\ArmbandWhiteCross.paa);
         model = QPATHTOF(models\armband\Armband.p3d);
         hiddenSelections[] = {"Armband"};
         hiddenSelectionsTextures[] = {QPATHTOF(models\armband\ArmbandWC.paa)};
-	};
-	class Kat_armbandRCM: Kat_armbandRC {
-		author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
+    };
+    class Kat_armbandRCM: Kat_armbandRC {
+        author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
         editorPreview = QPATHTOF(ui\ArmbandWhiteCrossMedic.paa);
         model = QPATHTOF(models\armband\Armband.p3d);
         hiddenSelectionsTextures[] = {QPATHTOF(models\armband\ArmbandWCM.paa)};
-	};
-	class Kat_armbandRCD: Kat_armbandRC {
-		author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
+    };
+    class Kat_armbandRCD: Kat_armbandRC {
+        author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
         editorPreview = QPATHTOF(ui\ArmbandWhiteCrossDoctor.paa);
         model = QPATHTOF(models\armband\Armband.p3d);
         hiddenSelectionsTextures[] = {QPATHTOF(models\armband\ArmbandWCD.paa)};
-	};
-	class Kat_armbandKAT: Kat_armbandRC {
-		author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
+    };
+    class Kat_armbandKAT: Kat_armbandRC {
+        author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
         editorPreview = QPATHTOF(ui\ArmbandKat.paa);
         model = QPATHTOF(models\armband\Armband.p3d);
         hiddenSelectionsTextures[] = {QPATHTOF(models\armband\ArmbandKAT.paa)};
-	};
+    };
     class Man;
     class CAManBase: Man {
         class ACE_SelfActions
-		{
-			class ACE_Equipment
-			{
+        {
+            class ACE_Equipment
+            {
                 class Armband {
-					displayName = CSTRING(Armband_Sling);
-					condition = QUOTE([ARR_2(_player, ""kat_armband_red_cross"")] call ACEFUNC(common,hasItem) || [ARR_2(_player, ""kat_armband_medic"")] call ACEFUNC(common,hasItem) || [ARR_2(_player, ""kat_armband_doctor"")] call ACEFUNC(common,hasItem) || [ARR_2(_player, ""kat_armband_kat"")] call ACEFUNC(common,hasItem) || !(_player getVariable [ARR_2(QQGVAR(isLeftArmFree), false)]) || !(_player getVariable [ARR_2(QQGVAR(isRightArmFree), false)]) || !(_player getVariable [ARR_2(QQGVAR(isLeftLegFree), false)]) || !(_player getVariable [ARR_2(QQGVAR(isRightLegFree), false)]));
-					statement = "";
-					icon = QPATHTOF(ui\ArmbandWhiteCross.paa);
-					showDisabled = 1;
+                    displayName = CSTRING(Armband_Sling);
+                    condition = QUOTE([ARR_2(_player, ""kat_armband_red_cross"")] call ACEFUNC(common,hasItem) || [ARR_2(_player, ""kat_armband_medic"")] call ACEFUNC(common,hasItem) || [ARR_2(_player, ""kat_armband_doctor"")] call ACEFUNC(common,hasItem) || [ARR_2(_player, ""kat_armband_kat"")] call ACEFUNC(common,hasItem) || !(_player getVariable [ARR_2(QQGVAR(isLeftArmFree), false)]) || !(_player getVariable [ARR_2(QQGVAR(isRightArmFree), false)]) || !(_player getVariable [ARR_2(QQGVAR(isLeftLegFree), false)]) || !(_player getVariable [ARR_2(QQGVAR(isRightLegFree), false)]));
+                    statement = "";
+                    icon = QPATHTOF(ui\ArmbandWhiteCross.paa);
+                    showDisabled = 1;
 
                     class LeftArm {
                         displayName = CSTRING(Armband_Sling_Left_Arm);
@@ -425,7 +425,7 @@ class CfgVehicles {
                     };
                 };
             };
-		};
+        };
         class ACE_Actions {
             class ACE_ArmLeft {
                 class SalineIV;
