@@ -10,6 +10,7 @@ class CfgGlasses
 		model = QPATHTOF(models\armband\Armband.p3d);
 		picture = QPATHTOF(ui\ArmbandWhiteCross.paa);
 		mass = 2;
+		identityTypes[] = {};
 	};
 
 	class kat_armband_medic: kat_armband_red_cross
