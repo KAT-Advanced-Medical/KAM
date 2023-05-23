@@ -82,6 +82,7 @@
             <Portuguese>Tempo de queda de IV/IO</Portuguese>
             <Polish>Czas do wypadnięcia IV/IO</Polish>
             <Spanish>Tiempo de caida de IV/IO</Spanish>
+            <Czech>Čas vypadnutí IV/IO</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_IV_DROP_TIME_DESC">
             <English>Changes the time at which IVs/IOs fall out of a patient</English>
@@ -1126,6 +1127,7 @@
             <Portuguese>Ativar Aberração Cromática</Portuguese>
             <Polish>Włącz Aberrację Chromatyczną</Polish>
             <Spanish>Habilitar aberración cromatica</Spanish>
+            <Czech>Povolit Chromatickou Aberaci</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Pervitin_DESC">
             <English>Enables if pervitin should influance your vision with chromatic aberration</English>
@@ -1137,6 +1139,7 @@
             <Portuguese>Ativa se o Pervitin deve influenciar sua visão com Aberração Cromática</Portuguese>
             <Polish>Włącza efekt wizualny po zażyciu pervitinu</Polish>
             <Spanish>Habilitar si la pervitina influye en la vision con aberración cromatica</Spanish>
+            <Czech>Povoluje, zda pervitin ovlivní Vaše vidění chromatickou aberací</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Pervitin">
             <English>Chromatic Aberration Strength</English>
@@ -1148,6 +1151,7 @@
             <Portuguese>Intensidade de Aberração Cromática</Portuguese>
             <Polish>Siła Aberracji Chromatycznej</Polish>
             <Spanish>Intensidad de la aberración cromatica</Spanish>
+            <Czech>Síla Chromatické Aberace</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Pervitin_DESC">
             <English>Changes the strength of the chromatic aberration</English>
@@ -1159,6 +1163,7 @@
             <Portuguese>Altera a intensidade da Aberração Cromática</Portuguese>
             <Polish>Zmienia siłę efektu</Polish>
             <Spanish>Cambia la intensidad de la aberración cromatica</Spanish>
+            <Czech>Mění sílu chromatické aberace</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Weapon_Sway_Pervitin">
             <English>Enable Weapon Sway</English>
@@ -1170,6 +1175,7 @@
             <Portuguese>Ativar balanço da arma</Portuguese>
             <Polish>Włącz kołysanie broni</Polish>
             <Spanish>Habilita el balanceo del arma</Spanish>
+            <Czech>Povolit Houpání Zbraně</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Weapon_Sway_Pervitin_DESC">
             <English>Enables if pervitin should influance your weapon sway</English>
@@ -1181,6 +1187,7 @@
             <Portuguese>Ativa se o Pervitin influenciar o balanço da sua arma</Portuguese>
             <Polish>Włącza efekt zmiany kołysania broni po spożyciu pervitinu</Polish>
             <Spanish>Habilita si la pervitina afecta al balanceo del arma</Spanish>
+            <Czech>Povoluje, zda pervitin ovlivní Vaše houpání zbraně</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_displayName">
             <English>Pervitin Speed Boost</English>
@@ -1191,6 +1198,7 @@
             <French>Boost de vitesse de la pervitine</French>
             <Polish>Zwiększenie prędkości ruchu</Polish>
             <Spanish>Aumento de velocidad de la pervitina</Spanish>
+            <Czech>Pervitin Speed Boost</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_DESC">
             <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
@@ -1201,6 +1209,7 @@
             <French>La vitesse de déplacement étant redéfinie durant le stage 1 de la pervitine. (1 = normal, 2 = doublée)1</French>
             <Polish>Prędkość animacji po zażyciu pervitinu (1 = normalnie, 2 = podwójnie)</Polish>
             <Spanish>La velocidad de animacion que se fija en la fase 1 de la pervitina. (1 = Normal. 2 = Doble)</Spanish>
+            <Czech>Rychlost animace efektu pervitinu v jeho první fázi. (1 = normální, 2 = dvojnásobná)</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>
@@ -1212,6 +1221,7 @@
             <Portuguese>Ativar Aberração Cromática</Portuguese>
             <Polish>Włącz Aberrację Chromatyczną</Polish>
             <Spanish>Habilita aberracion cromatica</Spanish>
+            <Czech>Povolit Chromatickou Aberaci</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine_DESC">
             <English>Enables if ketamine should influance your vision with chromatic aberration</English>
@@ -1223,6 +1233,7 @@
             <Portuguese>Ativa se a Cetamina deve influenciar sua visão com Aberração Cromática</Portuguese>
             <Polish>Włącza efekt wizualny po zażyciu ketaminy</Polish>
             <Spanish>Habilita si la ketamina influye tu vision con aberracion cromatica</Spanish>
+            <Czech>Povoluje, zda ketamin ovlivní Vaše vidění chromatickou aberací</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Ketamine">
             <English>Chromatic Aberration Strength</English>
@@ -1234,6 +1245,7 @@
             <Portuguese>Intensidade de Aberração Cromática</Portuguese>
             <Polish>Siła Aberracji Chromatycznej</Polish>
             <Spanish>Intensidad de la aberracion cromatica</Spanish>
+            <Czech>Síla Chromatické Aberace</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Ketamine_DESC">
             <English>Changes the strength of the chromatic aberration</English>
@@ -1245,6 +1257,7 @@
             <Portuguese>Altera a intensidade da Aberração Cromática</Portuguese>
             <Polish>Zmienia siłę efektu</Polish>
             <Spanish>Cambia la intensidad de la aberracion cromatica</Spanish>
+            <Czech>Mění sílu chromatické aberace</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl">
             <English>Enable Chromatic Aberration</English>
@@ -1256,6 +1269,7 @@
             <Portuguese>Ativar Aberração Cromática</Portuguese>
             <Polish>Włącz Aberrację Chromatyczną</Polish>
             <Spanish>Habilita la aberracion cromatica</Spanish>
+            <Czech>Povolit Chromatickou Aberaci</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Fentanyl_DESC">
             <English>Enables if fentanyl should influance your vision with chromatic aberration</English>
@@ -1267,6 +1281,7 @@
             <Portuguese>Ativa se o Fentanil deve influenciar sua visão com Aberração Cromática</Portuguese>
             <Polish>Włącza efekt wizualny po zażyciu fentanylu</Polish>
             <Spanish>Habilita si el fentanilo influye tu vision con aberracion cromatica</Spanish>
+            <Czech>Povoluje, zda fentanyl ovlivní Vaše vidění chromatickou aberací</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl">
             <English>Chromatic Aberration Strength</English>
@@ -1278,6 +1293,7 @@
             <Portuguese>Intensidade de Aberração Cromática</Portuguese>
             <Polish>Siła Aberracji Chromatycznej</Polish>
             <Spanish>Intensidad de la aberracion cromatica</Spanish>
+            <Czech>Síla Chromatické Aberace</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Slider_Fentanyl_DESC">
             <English>Changes the strength of the chromatic aberration</English>
@@ -1289,6 +1305,7 @@
             <Portuguese>Altera a intensidade da Aberração Cromática</Portuguese>
             <Polish>Zmienia siłę efektu</Polish>
             <Spanish>Cambia la intensidad de la aberracion cromatica</Spanish>
+            <Czech>Mění sílu chromatické aberace</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_Reorientation">
             <English>Treatment time for reorientation</English>
@@ -1664,6 +1681,7 @@
             <Portuguese>Tempo de uso de Pervitin</Portuguese>
             <Polish>Czas na użycie Pervitinu</Polish>
             <Spanish>Tiempo de uso de la pervitina</Spanish>
+            <Czech>Doba podání Pervitinu</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Pervitin">
             <English>Medical level required for Pervitin</English>
@@ -1675,6 +1693,7 @@
             <Portuguese>Nível médico exigido para administrar Pervitin</Portuguese>
             <Polish>Poziom wyszkolenia medycznego dla Pervitinu</Polish>
             <Spanish>Nivel médico requerido para la Pervitina</Spanish>
+            <Czech>Zdravotnická úroveň potřebná k použití Pervitinu</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_TXA">
             <English>Medical level required for TXA</English>
@@ -2128,6 +2147,7 @@
             <Portuguese>Configurações do Pervitin</Portuguese>
             <Polish>Ustawienia Pervitinu</Polish>
             <Spanish>Parámetros de la Pervitina</Spanish>
+            <Czech>Nastavení Pervitinu</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Caffeine">
             <English>Caffeine Settings</English>
@@ -2139,6 +2159,7 @@
             <Portuguese>Configurações de Cafeína</Portuguese>
             <Polish>Ustawienia Kofeiny</Polish>
             <Spanish>Parámetros de la Cafeina</Spanish>
+            <Czech>Nastavení Kofeinu</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_TXA">
             <English>TXA Settings</English>
@@ -2410,6 +2431,7 @@
             <French>Le patient ne respire pas</French>
             <Polish>Pacjent nie oddycha</Polish>
             <Spanish>El paciente no esta respirando</Spanish>
+            <Czech>Pacient nedýchá</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -2549,6 +2571,7 @@
             <Portuguese>Cápsula de Pervitin</Portuguese>
             <Polish>Pervitin</Polish>
             <Spanish>Capsula de pervitina</Spanish>
+            <Czech>Pervitinová kapsle</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_DescShort">
             <English>Performance enhancing drug</English>
@@ -2560,6 +2583,7 @@
             <Portuguese>Droga para aumento de performance</Portuguese>
             <Polish>Środek zwiększający wydolność</Polish>
             <Spanish>Droga de mejora del desempeño</Spanish>
+            <Czech>Droga zvyšující výkon</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
@@ -2571,6 +2595,7 @@
             <Portuguese>Tomar Pervitin</Portuguese>
             <Polish>Użyj Pervitin</Polish>
             <Spanish>Tomar Pervitina</Spanish>
+            <Czech>Vzít si Pervitin</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_start">
             <English>The pervitin makes you feel awake and full of endless POWER</English>
@@ -2582,6 +2607,7 @@
             <Portuguese>O pervitin faz você se sentir acordado e cheio de poder INFINITO</Portuguese>
             <Polish>Pervitin sprawia, że czujesz się pobudzony i pełny ENERGII</Polish>
             <Spanish>La pervitina hace que te sientas despierto y con una capacidad infinita de ENERGIA</Spanish>
+            <Czech>Díky pervitinu se cítíš bdělý a plný nekonečné SÍLY</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid">
             <English>You begin to lose your breath...</English>
@@ -2593,6 +2619,7 @@
             <Portuguese>Você começa a perder o fôlego...</Portuguese>
             <Polish>Zaczynasz czuć zadyszkę...</Polish>
             <Spanish>Empiezas a perder el aliento</Spanish>
+            <Czech>Ztrácíš dech...</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid2">
             <English>You gain a sudden rush!</English>
@@ -2604,6 +2631,7 @@
             <Portuguese>Você sente uma ânimo repentino!</Portuguese>
             <Polish>Zyskujesz nagły skok energii!</Polish>
             <Spanish>¡Te entra un subidon repentino!</Spanish>
+            <Czech>Dostal jsi se do rauše!</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid3">
             <English>You gain another rush!</English>
@@ -2615,6 +2643,7 @@
             <Portuguese>Você sente um ânimo novamente!</Portuguese>
             <Polish>Zyskujesz nagły skok energii!</Polish>
             <Spanish>¡Te entra otro subidon!</Spanish>
+            <Czech>Dostal jsi se do dalšího rauše!</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_mid4">
             <English>The exhaustion starts to settle in...</English>
@@ -2626,6 +2655,7 @@
             <Portuguese>Você começa a sentir a exaustão...</Portuguese>
             <Polish>Zmęczenie zaczyna narastać...</Polish>
             <Spanish>El agotamiento comienza a sentirse...</Spanish>
+            <Czech>Začíná se projevovat vyčerpání...</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_end">
             <English>You start to feel normal again</English>
@@ -2637,6 +2667,7 @@
             <Portuguese>Você começa a se sentir normal novamente</Portuguese>
             <Polish>Zaczynasz czuć się normalnie </Polish>
             <Spanish>Comienzas a sentirte bien de nuevo</Spanish>
+            <Czech>Opět se začínáš cítit normálně</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom">
             <English>You start to see everything twice.</English>
@@ -2648,6 +2679,7 @@
             <Portuguese>Você começa a ver em dobro.</Portuguese>
             <Polish>Zaczynasz widzieć podwójnie</Polish>
             <Spanish>Empiezas a ver todo doble</Spanish>
+            <Czech>Začínáš vše vidět dvojitě</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom2">
             <English>You start to twitch...</English>
@@ -2659,6 +2691,7 @@
             <Portuguese>Você começa a tremer na base...</Portuguese>
             <Polish>Zaczynasz drżeć</Polish>
             <Spanish>Comienzas a temblar</Spanish>
+            <Czech>Začínáš sebou škubat...</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_chrom3">
             <English>Your head starts to clear up and you stop twitching...</English>
@@ -2670,6 +2703,7 @@
             <Portuguese>Sua cabeça começa a clarear e você pára de tremer...</Portuguese>
             <Polish>Twoja głowa zaczyna się oczyszczać i przestajesz drżeć...</Polish>
             <Spanish>Empiezas a tener la cabeza despejada y dejas de temblar</Spanish>
+            <Czech>Začíná se ti vyjasňovat a přestáváš sebou škubat...</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_Display">
             <English>Caffeine bottle</English>
@@ -2681,6 +2715,7 @@
             <Portuguese>Garrafa de cafeína</Portuguese>
             <Polish>Kofeina</Polish>
             <Spanish>Bote de cafeina</Spanish>
+            <Czech>Kofeinová lahev</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_DescShort">
             <English>Keeps you awake</English>
@@ -2692,6 +2727,7 @@
             <Portuguese>Mantém você desperto</Portuguese>
             <Polish>Pozwala ci nie czuć zmęczenia</Polish>
             <Spanish>Te mantiene despierto</Spanish>
+            <Czech>Udrží tě vzhůru</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Caffeine">
             <English>Take Caffeine</English>
@@ -2703,6 +2739,7 @@
             <Portuguese>Tomar Cafeína</Portuguese>
             <Polish>Użyj kofeinę</Polish>
             <Spanish>Tomar cafeina</Spanish>
+            <Czech>Dát si Kofein</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_EACA_DescShort">
             <English>Encourages clot formation</English>
