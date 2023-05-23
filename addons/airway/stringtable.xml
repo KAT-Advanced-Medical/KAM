@@ -37,6 +37,7 @@
             <English>Probability for an obstructed airway in percentage that gets rolled every:\n- Falling unconscious\n- Removing KingLT / Guedel Tube</English>
             <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern:\n- Bewustlos werden\n- Das Entfernen von Larynxtubus / Guedeltubus\n- Abbrechen der Stabile Seitenlage</German>
             <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém:\n- Upadnutí do bezvědomí\n- Odstranění KingLT / GuedelTuby</Czech>
+            <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que:\n- Cae inconsciente \n- Se quita KingLT / Tubo de Guedel</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
@@ -58,6 +59,7 @@
             <English>Probability for an occlusion in percentage that gets rolled Setting:[Occlusion repeat timer] (default every 60s)</English>
             <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes in prozent die durch Einstellung:[Zeit für die Wiederholung des Erbrechens] (standard alle 60s) berechnet wird.</German>
             <Czech>Pravděpodobnost zablokování dýchacích cest v procentech, která se vylosuje při Nastavení:[Časovač opakovaného ucpání dýchacích cest](defaultně každých 60s)</Czech>
+            <Spanish>Porcentaje de probabilidad de que suceda una oclusión Opciones:[tiempo de repeticion de oclusión] (por defecto cada 60s)</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
@@ -1200,36 +1202,43 @@
             <English>Remove King LT</English>
             <German>Entferne Larynxtubus</German>
             <Czech>Odstranit King LT</Czech>
+            <Spanish>Quitando KingLT</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_Cancel_Guedeltubus">
             <English>Remove Guedel Tube</English>
             <German>Entferne Guedeltubus</German>
             <Czech>Odstranit Guedel Tubu</Czech>
+            <Spanish>Quitando Tubo de Guedel</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_action_removing">
             <English>Removing</English>
             <German>Entferne</German>
             <Czech>Odstraňování</Czech>
+            <Spanish>Quitando</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems">
             <English>Reusable Airway Items</English>
             <German>Wieder Benutzbare Atemwegsobjekte</German>
             <Czech>Znovupoužitelné předměty pro dýchací cesty</Czech>
+            <Spanish>Objetos reutilizables de vías aéreas</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems_DESC">
             <English>Regain the KingLT or Guedel Tube when manually removing them</English>
             <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
             <Czech>Vrácení KingLT nebo Guedel Tuby při jejich manuálním odebrání</Czech>
+            <Spanish>Obtener de nuevo el KingLT o el Tubo de Guedel cuando se quitan manualmente</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveLarynxtubus_Log">
             <English>%1 removed KingLT</English>
             <German>%1 hat Larynxtubus entfernt</German>
             <Czech>%1 odstranil KingLT</Czech>
+            <Spanish>Quitados %1 KingLT</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveGuedeltubus_Log">
             <English>%1 removed Guedel Tube</English>
             <German>%1 hat Guedeltubus entfernt</German>
             <Czech>%1 odstranil Guedel Tubu</Czech>
+            <Spanish>Quitados %1 Tubo de Guedel</Spanish>
         </Key>
     </Package>
 </Project>
