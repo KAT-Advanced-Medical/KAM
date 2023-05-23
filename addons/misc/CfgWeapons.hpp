@@ -18,7 +18,7 @@ class CfgWeapons
     };
 
     class ItemCore;
-	class kat_Armband_Red_Cross_Item: ItemCore {
+    class kat_Armband_Red_Cross_Item: ItemCore {
 
         detectRange = -1;
         author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
