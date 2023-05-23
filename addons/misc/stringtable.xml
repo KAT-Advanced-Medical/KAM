@@ -514,55 +514,55 @@
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slinged, to the right leg.</English>
             <German>Defeniert die Rotation (yaw, pitch, roll) des Armbandes am rechten Bein.</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_Red_Cross_ItemName">
+        <Key ID="STR_KAT_Misc_Red_Cross_ItemName">
             <English>Armband Red Cross</English>
             <German>Armband Rotes Kreuz</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_Medic_ItemName">
+        <Key ID="STR_KAT_Misc_Medic_ItemName">
             <English>Armband Medic</English>
             <German>Armband Medic</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_Doctor_ItemName">
+        <Key ID="STR_KAT_Misc_Doctor_ItemName">
             <English>Armband Doctor</English>
             <German>Armband Doctor</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_Kat_ItemName">
+        <Key ID="STR_KAT_Misc_Kat_ItemName">
             <English>Armband KAT</English>
             <German>Armband KAT</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_Sling">
+        <Key ID="STR_KAT_Misc_Sling">
             <English>Armband</English>
             <German>Armband</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_Sling_Left_Arm">
+        <Key ID="STR_KAT_Misc_Sling_Left_Arm">
             <English>Sling to left arm</English>
             <German>Binde an den linker Arm</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_Sling_Right_Arm">
+        <Key ID="STR_KAT_Misc_Sling_Right_Arm">
             <English>Sling to right arm</English>
             <German>Binde an den rechter Arm</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_Sling_Left_Leg">
+        <Key ID="STR_KAT_Misc_Sling_Left_Leg">
             <English>Sling to left leg</English>
             <German>Binde an das linkes Bein</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_Sling_Right_Leg">
+        <Key ID="STR_KAT_Misc_Sling_Right_Leg">
             <English>Sling to right leg</English>
             <German>Binde an das rechtes Bein</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_UnSling_Left_Arm">
+        <Key ID="STR_KAT_Misc_UnSling_Left_Arm">
             <English>Unsling left arm</English>
             <German>Vom linken Arm abmachen</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_UnSling_Right_Arm">
+        <Key ID="STR_KAT_Misc_UnSling_Right_Arm">
             <English>Unsling right arm</English>
             <German>Vom rechten Arm abmachen</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_UnSling_Left_Leg">
+        <Key ID="STR_KAT_Misc_UnSling_Left_Leg">
             <English>Unsling left leg</English>
             <German>Vom linken Bein abmachen</German>
         </Key>
-        <Key ID="STR_kat_misc_Armband_UnSling_Right_Leg">
+        <Key ID="STR_KAT_Misc_UnSling_Right_Leg">
             <English>Unsling right leg</English>
             <German>Vom rechten Bein abmachen</German>
         </Key>
