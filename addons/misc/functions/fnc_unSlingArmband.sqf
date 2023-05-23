@@ -24,7 +24,7 @@ params [
 switch (_limbnumber) do 
 {
     case 0: { 
-        private	_objectLA = _unit getVariable [QGVAR(whichArmabndisSlingedLA), ObjNull];
+        private _objectLA = _unit getVariable [QGVAR(whichArmabndisSlingedLA), ObjNull];
 
         switch (typeOf _objectLA) do
         {
@@ -55,7 +55,7 @@ switch (_limbnumber) do
     };
 
     case 1: {
-        private	_objectRA = _unit getVariable [QGVAR(whichArmabndisSlingedRA), ObjNull];
+        private _objectRA = _unit getVariable [QGVAR(whichArmabndisSlingedRA), ObjNull];
 
         switch (typeOf _objectRA) do
         {
@@ -86,7 +86,7 @@ switch (_limbnumber) do
     };
 
     case 2: {
-        private	_objectLL = _unit getVariable [QGVAR(whichArmabndisSlingedLL), ObjNull];
+        private _objectLL = _unit getVariable [QGVAR(whichArmabndisSlingedLL), ObjNull];
 
         switch (typeOf _objectLL) do
         {
@@ -117,7 +117,7 @@ switch (_limbnumber) do
     };
 
     case 3: {
-        private	_objectRL = _unit getVariable [QGVAR(whichArmabndisSlingedRL), ObjNull];
+        private _objectRL = _unit getVariable [QGVAR(whichArmabndisSlingedRL), ObjNull];
 
         switch (typeOf _objectRL) do
         {
