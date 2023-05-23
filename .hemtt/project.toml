@@ -50,4 +50,11 @@ preset = "Hemtt"
 workshop = [
     "450814997", # CBA_A3's Workshop ID
     "463939057", # ACE3's Workshop ID
+    "1779063631",
+    "2018593688",
+    "2369477168",
+    "1352873741"
+]
+parameters = [
+    '"C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia\mpmissions\mission.Stratis\mission.sqm"'
 ]

@@ -13,5 +13,8 @@ PREP(heliStretcherAttach);
 PREP(incompatibilityWarning);
 PREP(init);
 PREP(removeIVbag);
+PREP(slingArmband);
 PREP(stretcher);
+PREP(stringToArray);
 PREP(treatmentIV);
+PREP(unSlingArmband);

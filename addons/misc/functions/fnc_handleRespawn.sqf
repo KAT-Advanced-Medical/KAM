@@ -67,6 +67,13 @@ _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 _unit setVariable [QEGVAR(circulation,AEDinUse), false, true];
 _unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUNC(circulation,generateBloodType), true];
 
+// KAT Misc
+
+_unit setVariable [QEGVAR(misc,isLeftArmFree), true, true];
+_unit setVariable [QEGVAR(misc,isRightArmFree), true, true];
+_unit setVariable [QEGVAR(misc,isLeftLegFree), true, true];
+_unit setVariable [QEGVAR(misc,isRightLegFree), true, true];
+
 // KAT Pharmacy
 
 _unit setVariable [QEGVAR(pharma,alphaAction), 1, true];
