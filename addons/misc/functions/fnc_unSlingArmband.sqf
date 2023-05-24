@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Miss Heda
- * Unattaches a armband from a previously attached limb.
+ * Detaches a armband from a previously attached limb.
  *
  * Arguments:
  * 0: Player <OBJECT>
@@ -11,15 +11,12 @@
  * None
  *
  * Example:
- * [player, 0] call kat_misc_fnc_slingArmband;
+ * [player, 0] call kat_misc_fnc_unSlingArmband;
  *
  * Public: No
  */
 
-params [
-    "_unit",
-    "_limbnumber"
-];
+params ["_unit", "_limbnumber"];
 
 switch (_limbnumber) do 
 {

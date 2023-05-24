@@ -59,8 +59,8 @@ switch (_limbnumber) do
         {
             case "kat_armband_red_cross": { 
                 _armbandLA = "Kat_armbandRC" createVehicle position _unit;
-                _armbandLA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftArmPos), [0,0,0]],"leftforearm",true];
-                [_armbandLA, _unit getVariable [QGVAR(armbandSlingLeftArmRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandLA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftArmPos), [0, 0, 0]], "leftforearm", true];
+                [_armbandLA, _unit getVariable [QGVAR(armbandSlingLeftArmRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isLeftArmFree), false, true];
@@ -69,8 +69,8 @@ switch (_limbnumber) do
 
             case "kat_armband_medic": {
                 _armbandLA = "Kat_armbandRCM" createVehicle position _unit;
-                _armbandLA attachTo [_unit,_unit getVariable [QGVAR(armbandSlingLeftArmPos), [0,0,0]],"leftforearm",true];
-                [_armbandLA, _unit getVariable [QGVAR(armbandSlingLeftArmRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandLA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftArmPos), [0, 0, 0]], "leftforearm", true];
+                [_armbandLA, _unit getVariable [QGVAR(armbandSlingLeftArmRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isLeftArmFree), false, true];
@@ -79,8 +79,8 @@ switch (_limbnumber) do
 
             case "kat_armband_doctor": {
                 _armbandLA = "Kat_armbandRCD" createVehicle position _unit;
-                _armbandLA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftArmPos), [0,0,0]],"leftforearm",true];
-                [_armbandLA, _unit getVariable [QGVAR(armbandSlingLeftArmRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandLA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftArmPos), [0, 0, 0]], "leftforearm", true];
+                [_armbandLA, _unit getVariable [QGVAR(armbandSlingLeftArmRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isLeftArmFree), false, true];
@@ -89,8 +89,8 @@ switch (_limbnumber) do
 
             case "kat_armband_kat": {
                 _armbandLA = "Kat_armbandKAT" createVehicle position _unit;
-                _armbandLA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftArmPos), [0,0,0]],"leftforearm",true];
-                [_armbandLA, _unit getVariable [QGVAR(armbandSlingLeftArmRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandLA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftArmPos), [0, 0, 0]], "leftforearm", true];
+                [_armbandLA, _unit getVariable [QGVAR(armbandSlingLeftArmRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isLeftArmFree), false, true];
@@ -105,8 +105,8 @@ switch (_limbnumber) do
         {
             case "kat_armband_red_cross": { 
                 _armbandRA = "Kat_armbandRC" createVehicle position _unit;
-                _armbandRA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightArmPos), [0,0,0]],"rightforearm",true];
-                [_armbandRA, _unit getVariable [QGVAR(armbandSlingRightArmRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandRA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightArmPos), [0, 0, 0]], "rightforearm", true];
+                [_armbandRA, _unit getVariable [QGVAR(armbandSlingRightArmRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isRightArmFree), false, true];
@@ -115,8 +115,8 @@ switch (_limbnumber) do
 
             case "kat_armband_medic": {
                 _armbandRA = "Kat_armbandRCM" createVehicle position _unit;
-                _armbandRA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightArmPos), [0,0,0]],"rightforearm",true];
-                [_armbandRA, _unit getVariable [QGVAR(armbandSlingRightArmRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandRA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightArmPos), [0, 0, 0]], "rightforearm", true];
+                [_armbandRA, _unit getVariable [QGVAR(armbandSlingRightArmRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isRightArmFree), false, true];
@@ -125,8 +125,8 @@ switch (_limbnumber) do
 
             case "kat_armband_doctor": {
                 _armbandRA = "Kat_armbandRCD" createVehicle position _unit;
-                _armbandRA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightArmPos), [0,0,0]],"rightforearm",true];
-                [_armbandRA, _unit getVariable [QGVAR(armbandSlingRightArmRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandRA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightArmPos), [0, 0, 0]], "rightforearm", true];
+                [_armbandRA, _unit getVariable [QGVAR(armbandSlingRightArmRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isRightArmFree), false, true];
@@ -135,8 +135,8 @@ switch (_limbnumber) do
 
             case "kat_armband_kat": {
                 _armbandRA = "Kat_armbandKAT" createVehicle position _unit;
-                _armbandRA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightArmPos), [0,0,0]],"rightforearm",true];
-                [_armbandRA, _unit getVariable [QGVAR(armbandSlingRightArmRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandRA attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightArmPos), [0, 0, 0]], "rightforearm", true];
+                [_armbandRA, _unit getVariable [QGVAR(armbandSlingRightArmRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isRightArmFree), false, true];
@@ -151,8 +151,8 @@ switch (_limbnumber) do
         {
             case "kat_armband_red_cross": { 
                 _armbandLL = "Kat_armbandRC" createVehicle position _unit;
-                _armbandLL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftLegPos), [0,0,0]],"LeftUpLeg",true];  
-                [_armbandLL, _unit getVariable [QGVAR(armbandSlingLeftLegRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandLL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftLegPos), [0, 0, 0]], "LeftUpLeg", true];  
+                [_armbandLL, _unit getVariable [QGVAR(armbandSlingLeftLegRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isLeftLegFree), false, true];
@@ -161,8 +161,8 @@ switch (_limbnumber) do
 
             case "kat_armband_medic": {
                 _armbandLL = "Kat_armbandRCM" createVehicle position _unit;
-                _armbandLL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftLegPos), [0,0,0]],"LeftUpLeg",true];  
-                [_armbandLL, _unit getVariable [QGVAR(armbandSlingLeftLegRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandLL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftLegPos), [0, 0, 0]], "LeftUpLeg", true];  
+                [_armbandLL, _unit getVariable [QGVAR(armbandSlingLeftLegRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isLeftLegFree), false, true];
@@ -171,8 +171,8 @@ switch (_limbnumber) do
 
             case "kat_armband_doctor": {
                 _armbandLL = "Kat_armbandRCD" createVehicle position _unit;
-                _armbandLL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftLegPos), [0,0,0]],"LeftUpLeg",true];  
-                [_armbandLL, _unit getVariable [QGVAR(armbandSlingLeftLegRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandLL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftLegPos), [0, 0, 0]], "LeftUpLeg", true];  
+                [_armbandLL, _unit getVariable [QGVAR(armbandSlingLeftLegRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isLeftLegFree), false, true];
@@ -181,8 +181,8 @@ switch (_limbnumber) do
 
             case "kat_armband_kat": {
                 _armbandLL = "Kat_armbandKAT" createVehicle position _unit;
-                _armbandLL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftLegPos), [0,0,0]],"LeftUpLeg",true];  
-                [_armbandLL, _unit getVariable [QGVAR(armbandSlingLeftLegRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandLL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingLeftLegPos), [0, 0, 0]], "LeftUpLeg", true];  
+                [_armbandLL, _unit getVariable [QGVAR(armbandSlingLeftLegRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isLeftLegFree), false, true];
@@ -197,8 +197,8 @@ switch (_limbnumber) do
         {
             case "kat_armband_red_cross": { 
                 _armbandRL = "Kat_armbandRC" createVehicle position _unit;
-                _armbandRL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightLegPos), [0,0,0]],"RightUpLeg",true];
-                [_armbandRL, _unit getVariable [QGVAR(armbandSlingRightLegRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandRL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightLegPos), [0, 0, 0]], "RightUpLeg", true];
+                [_armbandRL, _unit getVariable [QGVAR(armbandSlingRightLegRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isRightLegFree), false, true];
@@ -207,8 +207,8 @@ switch (_limbnumber) do
 
             case "kat_armband_medic": {
                 _armbandRL = "Kat_armbandRCM" createVehicle position _unit;
-                _armbandRL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightLegPos), [0,0,0]],"RightUpLeg",true];
-                [_armbandRL, _unit getVariable [QGVAR(armbandSlingRightLegRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandRL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightLegPos), [0, 0, 0]], "RightUpLeg", true];
+                [_armbandRL, _unit getVariable [QGVAR(armbandSlingRightLegRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isRightLegFree), false, true];
@@ -217,8 +217,8 @@ switch (_limbnumber) do
 
             case "kat_armband_doctor": {
                 _armbandRL = "Kat_armbandRCD" createVehicle position _unit;
-                _armbandRL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightLegPos), [0,0,0]],"RightUpLeg",true];
-                [_armbandRL, _unit getVariable [QGVAR(armbandSlingRightLegRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandRL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightLegPos), [0, 0, 0]], "RightUpLeg", true];
+                [_armbandRL, _unit getVariable [QGVAR(armbandSlingRightLegRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isRightLegFree), false, true];
@@ -227,8 +227,8 @@ switch (_limbnumber) do
 
             case "kat_armband_kat": {
                 _armbandRL = "Kat_armbandKAT" createVehicle position _unit;
-                _armbandRL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightLegPos), [0,0,0]],"RightUpLeg",true];
-                [_armbandRL, _unit getVariable [QGVAR(armbandSlingRightLegRot), [0,0,0]]] call BIS_fnc_setObjectRotation;
+                _armbandRL attachTo [_unit, _unit getVariable [QGVAR(armbandSlingRightLegPos), [0, 0, 0]], "RightUpLeg", true];
+                [_armbandRL, _unit getVariable [QGVAR(armbandSlingRightLegRot), [0, 0, 0]]] call BIS_fnc_setObjectRotation;
 
                 _unit removeItem _armbanditem;
                 _unit setVariable [QGVAR(isRightLegFree), false, true];
