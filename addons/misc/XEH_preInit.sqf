@@ -83,7 +83,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingRightArmPos_Display), LLSTRING(SETTING_ArmbandSlingRightArmPos_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "-0.228, -0.087, -0.45",
+    "-0.228, -0.1, -0.43",
     2
 ] call CBA_Settings_fnc_init;
 
