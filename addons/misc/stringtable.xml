@@ -514,19 +514,19 @@
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slinged, to the right leg.</English>
             <German>Defeniert die Rotation (yaw, pitch, roll) des Armbandes am rechten Bein.</German>
         </Key>
-        <Key ID="STR_KAT_Misc_Red_Cross_ItemName">
+        <Key ID="STR_KAT_Misc_Armband_Red_Cross_ItemName">
             <English>Armband Red Cross</English>
             <German>Armband Rotes Kreuz</German>
         </Key>
-        <Key ID="STR_KAT_Misc_Medic_ItemName">
+        <Key ID="STR_KAT_Misc_Armband_Medic_ItemName">
             <English>Armband Medic</English>
             <German>Armband Medic</German>
         </Key>
-        <Key ID="STR_KAT_Misc_Doctor_ItemName">
+        <Key ID="STR_KAT_Misc_Armband_Doctor_ItemName">
             <English>Armband Doctor</English>
             <German>Armband Doctor</German>
         </Key>
-        <Key ID="STR_KAT_Misc_Kat_ItemName">
+        <Key ID="STR_KAT_Misc_Armband_Kat_ItemName">
             <English>Armband KAT</English>
             <German>Armband KAT</German>
         </Key>

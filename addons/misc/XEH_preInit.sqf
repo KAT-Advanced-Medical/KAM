@@ -63,7 +63,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingLeftArmPos_Display), LLSTRING(SETTING_ArmbandSlingLeftArmPos_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "0.23, 0.088, -0.45",
+    "0.2, -0.39, -0.2",
     2
 ] call CBA_Settings_fnc_init;
 
@@ -73,7 +73,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingLeftArmRot_Display), LLSTRING(SETTING_ArmbandSlingLeftArmRot_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "180, -5, 0",
+    "240, 33, 26",
     2
 ] call CBA_Settings_fnc_init;
 
