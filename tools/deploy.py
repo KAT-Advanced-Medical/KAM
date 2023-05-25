@@ -21,7 +21,7 @@ TRANSLATIONBODY = """**[ACE3 Translation Guide](http://ace3.acemod.org/wiki/deve
 """
 
 
-REPOUSER = "Tomcat-SG"
+REPOUSER = "KAT-Advanced-Medica"
 REPONAME = "KAM"
 REPOPATH = "{}/{}".format(REPOUSER,REPONAME)
 
