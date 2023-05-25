@@ -1226,7 +1226,7 @@
             <English>Regain the KingLT or Guedel Tube when manually removing them</English>
             <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
             <Czech>Vrácení KingLT nebo Guedel Tuby při jejich manuálním odebrání</Czech>
-            <Spanish>Obtener de nuevo el KingLT o el Tubo de Guedel cuando se quitan manualmente</Spanish>
+            <Spanish>Recuperar el Tubo laríngeo o la Cánula de Guedel cuando se quitan manualmente</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveLarynxtubus_Log">
             <English>%1 removed KingLT</English>
