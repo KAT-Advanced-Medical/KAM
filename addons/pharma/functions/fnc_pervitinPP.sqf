@@ -18,7 +18,7 @@
 params ["_target"];
 
 if !(alive _target) exitWith {};
-if (ACE_Player != _patient) exitWith {};
+if (ACE_Player != _target) exitWith {};
 
 if (GVAR(chromatic_aberration_checkbox_pervitin)) then {
     [{
