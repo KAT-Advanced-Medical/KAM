@@ -60,5 +60,5 @@ jobs:
     - name: Update Translation issue
       if: github.repository == 'Tomcat-SG/KAM' && ! contains(github.event.head_commit.message, '[ci skip]')
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        KAM_TOKEN: ${{ secrets.KAM_TOKEN }}
       run: python3 tools/deploy.py
