@@ -1232,7 +1232,7 @@
             <English>%1 removed KingLT</English>
             <German>%1 hat Larynxtubus entfernt</German>
             <Czech>%1 odstranil KingLT</Czech>
-            <Spanish>Quitados %1 KingLT</Spanish>
+            <Spanish>%1 retiró el tubo laringeo</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveGuedeltubus_Log">
             <English>%1 removed Guedel Tube</English>
