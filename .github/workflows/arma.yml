@@ -58,7 +58,7 @@ jobs:
         pip3 install pygithub
         pip3 install pygithub3
     - name: Update Translation issue
-      if: github.repository == 'Tomcat-SG/KAM' && ! contains(github.event.head_commit.message, '[ci skip]')
+      if: github.repository == 'KAT-Advanced-Medical/KAM' && ! contains(github.event.head_commit.message, '[ci skip]')
       env:
         KAM_TOKEN: ${{ secrets.KAM_TOKEN }}
       run: python3 tools/deploy.py
