@@ -60,5 +60,5 @@ jobs:
     - name: Update Translation issue
       if: github.repository == 'KAT-Advanced-Medical/KAM' && ! contains(github.event.head_commit.message, '[ci skip]')
       env:
-        KAM_TOKEN: ${{ secrets.KAM_TOKEN }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: python3 tools/deploy.py

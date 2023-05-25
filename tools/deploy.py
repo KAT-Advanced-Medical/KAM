@@ -36,7 +36,7 @@ def update_translations(repo):
 def main():
     print("Obtaining token ...")
     try:
-        token = os.environ["KAM_TOKEN"]
+        token = os.environ["GH_TOKEN"]
         repo = Github(token).get_repo(REPOPATH)
     except:
         print("Could not obtain token.")
