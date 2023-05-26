@@ -1023,9 +1023,11 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_MedLevel">
             <English>Allow Debridement</English>
+            <Spanish>Permitir desbridamiento</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_Location">
             <English>Locations Debridement</English>
+            <Spanish>Lugares para el desbridamiento</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_Basic">
             <English>Basic Settings</English>
