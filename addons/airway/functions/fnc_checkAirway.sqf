@@ -30,14 +30,18 @@ if (_patient getVariable [QGVAR(obstruction), false]) then {
         _messageairwayobstruction = LLSTRING(message_obstructionTemporarilyMitigated);
         _obstruction = LLSTRING(mitigatedObstruction);
     };
-    _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
+    if (GVAR(autoTriage)) then {
+        _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
+    };
 };
 if (_patient getVariable [QGVAR(occluded), false]) then {
     _messageairwayOccluded = LLSTRING(message_Occluded_yes);
     _occluded = LSTRING(Occluded);
-    _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
+    if (GVAR(autoTriage)) then {
+        _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
+    };
 };
-if !(_patient getVariable [QGVAR(occluded), false] && _patient getVariable [QGVAR(obstruction), false]) then {_patient setVariable [QACEGVAR(medical,triageLevel), 0, true]};
+if (!(_patient getVariable [QGVAR(occluded), false] && _patient getVariable [QGVAR(obstruction), false]) && GVAR(autoTriage)) then {_patient setVariable [QACEGVAR(medical,triageLevel), 0, true]};
 private _message = format ["%1, %2", _messageairwayobstruction, _messageairwayOccluded];
 [_message, 2, _medic] call ACEFUNC(common,displayTextStructured);
 

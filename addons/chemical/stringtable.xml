@@ -3,7 +3,7 @@
     <Package name="Chemical">
         <Key ID="STR_KAT_Chemical_SETTING_AVAIL_GASMASK">
             <English>Accepted gas masks</English>
-            <Spanish>Máscara de gas aceptada</Spanish>
+            <Spanish>Máscaras de gas aceptadas</Spanish>
             <German>Akzeptierte Gasmasken</German>
             <French>Masques à gaz acceptés</French>
             <Korean>방독면 허용</Korean>
@@ -27,7 +27,7 @@
         </Key>
         <Key ID="STR_KAT_Chemical_SETTING_GASMASK_DURABILITY">
             <English>Gas masks durability</English>
-            <Spanish>Durabilida de la máscara de gas</Spanish>
+            <Spanish>Durabilida de las máscaras de gas</Spanish>
             <German>Haltbarkeit der Gasmaske</German>
             <French>Durabilité des masques à gaz</French>
             <Korean>방독면의 지속시간</Korean>

@@ -37,6 +37,8 @@
             <English>Probability for an obstructed airway in percentage that gets rolled every:\n- Falling unconscious\n- Removing KingLT / Guedel Tube</English>
             <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern:\n- Bewustlos werden\n- Das Entfernen von Larynxtubus / Guedeltubus\n- Abbrechen der Stabile Seitenlage</German>
             <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém:\n- Upadnutí do bezvědomí\n- Odstranění KingLT / GuedelTuby</Czech>
+            <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que:\n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
+            <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n- 意識不明になった時\n- KingLT/ゲデルチューブが外れた時</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
@@ -58,13 +60,15 @@
             <English>Probability for an occlusion in percentage that gets rolled Setting:[Occlusion repeat timer] (default every 60s)</English>
             <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes in prozent die durch Einstellung:[Zeit für die Wiederholung des Erbrechens] (standard alle 60s) berechnet wird.</German>
             <Czech>Pravděpodobnost zablokování dýchacích cest v procentech, která se vylosuje při Nastavení:[Časovač opakovaného ucpání dýchacích cest](defaultně každých 60s)</Czech>
+            <Spanish>Porcentaje de probabilidad de que suceda una oclusión Opciones:[tiempo de repeticion de oclusión] (por defecto cada 60s)</Spanish>
+            <Japanese>気道異物の確率(%) [異物再発までの時間]の設定時間毎に計算されます (デフォルトでは60秒毎)</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
             <German>Zeit für die Wiederholung des Erbrechens</German>
             <Korean>구토 반복 타이머</Korean>
             <Polish>Czas powtarzania zablokowania</Polish>
-            <Japanese>異物の再発する時間</Japanese>
+            <Japanese>異物再発までの時間</Japanese>
             <French>Temps de répétition des occlusions</French>
             <Italian>Tempo di ripetizione per l'occlusione</Italian>
             <Czech>Časovač opakovaného ucpání dýchacích cest</Czech>
@@ -956,7 +960,7 @@
             <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
             <Italian>Colora gli Logs di attività di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
             <Russian>Окрашивает журналы активности AED-X или пульсоксиметра в красный цвет, если какое-либо значение является критическим.</Russian>
-            <Japanese>値が重要な場合は、AED-Xまたはパルスオキシメーターのアクティビティログを赤に着色します</Japanese>
+            <Japanese>異常値の場合、AED-Xやパルスオキシメーターの活動ログを赤色にします</Japanese>
             <Portuguese>Exibe os registros de atividade em vermelhos se algum valor for crítico</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_RecoveryPosition">
@@ -1200,36 +1204,58 @@
             <English>Remove King LT</English>
             <German>Entferne Larynxtubus</German>
             <Czech>Odstranit King LT</Czech>
+            <Spanish>Retirando tubo laringeo</Spanish>
+            <Japanese>King LTを取り除く</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Cancel_Guedeltubus">
             <English>Remove Guedel Tube</English>
             <German>Entferne Guedeltubus</German>
             <Czech>Odstranit Guedel Tubu</Czech>
+            <Spanish>Retirando Cánula de Guedel</Spanish>
+            <Japanese>ゲデルチューブを取り除く</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_action_removing">
             <English>Removing</English>
             <German>Entferne</German>
             <Czech>Odstraňování</Czech>
+            <Spanish>Quitando</Spanish>
+            <Japanese>取り除いています</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems">
             <English>Reusable Airway Items</English>
             <German>Wieder Benutzbare Atemwegsobjekte</German>
             <Czech>Znovupoužitelné předměty pro dýchací cesty</Czech>
+            <Spanish>Objetos reutilizables de vías aéreas</Spanish>
+            <Japanese>繰り返し使用できる気道アイテム</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems_DESC">
             <English>Regain the KingLT or Guedel Tube when manually removing them</English>
             <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
             <Czech>Vrácení KingLT nebo Guedel Tuby při jejich manuálním odebrání</Czech>
+            <Spanish>Recuperar el Tubo laríngeo o la Cánula de Guedel cuando se quitan manualmente</Spanish>
+            <Japanese>KingLTまたはゲデルチューブを取り除いた際、再使用できるようにします。</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveLarynxtubus_Log">
             <English>%1 removed KingLT</English>
             <German>%1 hat Larynxtubus entfernt</German>
             <Czech>%1 odstranil KingLT</Czech>
+            <Spanish>%1 retiró el tubo laringeo</Spanish>
+            <Japanese>%1 が King LT を取り除きました</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveGuedeltubus_Log">
             <English>%1 removed Guedel Tube</English>
             <German>%1 hat Guedeltubus entfernt</German>
             <Czech>%1 odstranil Guedel Tubu</Czech>
+            <Spanish>%1 retiró la Canula de Guedel</Spanish>
+            <Japanese>%1 が ゲデルチューブ を取り除きました</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_AutoTriage">
+            <English>Auto Triage Airways</English>
+            <Japanese>気道による自動トリアージ</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_AutoTriage_Desc">
+            <English>Sets if checking airways can override current triage level</English>
+            <Japanese>気道の検査をすることで現在のトリアージレベルを自動で上書き設定します</Japanese>
         </Key>
     </Package>
 </Project>
