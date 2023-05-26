@@ -4,8 +4,6 @@ on:
   push:
     branches:
     - master
-  permission:
-    issues: write
   pull_request:
 
 jobs:
