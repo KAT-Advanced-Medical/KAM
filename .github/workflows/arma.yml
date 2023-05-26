@@ -47,6 +47,7 @@ jobs:
           path: '.hemttout/release/*'
 
   stringtables:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
