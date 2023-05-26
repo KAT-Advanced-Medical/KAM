@@ -1231,5 +1231,11 @@
             <German>%1 hat Guedeltubus entfernt</German>
             <Czech>%1 odstranil Guedel Tubu</Czech>
         </Key>
+        <Key ID="STR_KAT_Airway_AutoTriage">
+            <English>Auto Triage Airways</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_AutoTriage_Desc">
+            <English>Sets if checking airways can override current triage level</English>
+        </Key>
     </Package>
 </Project>
