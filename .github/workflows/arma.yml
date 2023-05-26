@@ -48,7 +48,6 @@ jobs:
 
   stringtables:
     runs-on: ubuntu-latest
-    permissions: write-all
     steps:
     - name: Checkout the source code
       uses: actions/checkout@v3
