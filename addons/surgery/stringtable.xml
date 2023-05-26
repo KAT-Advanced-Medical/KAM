@@ -631,6 +631,7 @@
             <French>Chance d'échec de la réduction fermée</French>
             <Polish>Szansa na niepowodzenie przy zamkniętej redukcji</Polish>
             <Spanish>Probabilidad de fallo de reducción cerrada</Spanish>
+            <Czech>Šance na neúspěch uzavřené repozice</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
@@ -641,6 +642,7 @@
             <French>Chance que la réduction fermée échoue. Valeur par défaut à 10%</French>
             <Polish>Szansa, że zamknięta redukcja nie powiedzie się. Domyślna wartość 10%</Polish>
             <Spanish>Probabilidad de fallo de la reducción cerrada. Valor predeterminado 10%</Spanish>
+            <Czech>Šance, že se uzavřená repozice nepovede. Výchozí hodnota 10%</Czech>
         </Key>
         <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
@@ -695,7 +697,7 @@
             <Portuguese>Determina a duração de cada dose de Etomidato no paciente</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_TIMER">
-            <English>Time to perform closed reductions</English>
+            <English>Closed Reduction Time</English>
             <Chinesesimp>执行封闭伤口的时间</Chinesesimp>
             <Italian>Tempo per eseguire riduzioni ortopediche chiuse</Italian>
             <Polish>Czas potrzebny na wykonanie zamkniętej redukcji</Polish>
@@ -708,7 +710,7 @@
             <Portuguese>Duração de reduções fechadas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_OPEN_TIMER">
-            <English>Time to perform open reductions</English>
+            <English>Open Reduction Time</English>
             <Chinesesimp>执行开放伤口的时间</Chinesesimp>
             <Italian>Tempo per eseguire riduzioni a cielo aperto</Italian>
             <Polish>Czas potrzebny na wykonanie otwartej redukcji</Polish>
@@ -721,7 +723,7 @@
             <Portuguese>Duração de reduções abertas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SURGICAL_TIMER">
-            <English>Time to perform surgical actions</English>
+            <English>Surgical Action Time</English>
             <Chinesesimp>执行手术的时间</Chinesesimp>
             <Italian>Tempo per eseguire azioni chirurgiche</Italian>
             <Polish>Czas potrzebny na wykonanie zabiegów chirurgicznych</Polish>
@@ -734,7 +736,7 @@
             <Portuguese>Duração de ações cirúrgicas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_INCISION_TIMER">
-            <English>Time to perform incisions</English>
+            <English>Perform Incision Time</English>
             <Chinesesimp>进行切口的时间</Chinesesimp>
             <Italian>Tempo per eseguire le incisioni</Italian>
             <Polish>Czas potrzebny na wykonanie nacięć</Polish>
@@ -747,7 +749,7 @@
             <Portuguese>Duração de incisões</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_BREATH_CHECK_TIME">
-            <English>Time to perform breath check</English>
+            <English>Breath Check Time</English>
             <Chinesesimp>进行呼吸检查的时间</Chinesesimp>
             <Italian>Tempo per eseguire il controllo del respiro</Italian>
             <Polish>Czas potrzebny na sprawdzenie oddechu</Polish>
@@ -785,34 +787,8 @@
             <Spanish>Establece cuanto tiempo tarda realizar acciones quirúrgicas como exponer o irrigar.</Spanish>
             <Portuguese>Estabelece quanto tempo leva para realizar ações cirúrgicas, como expor ou irrigar.</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Surgery_DEBRIDE_TIMER">
-            <English>Time to debride a patient</English>
-            <Chinesesimp>进行伤口清创的时间</Chinesesimp>
-            <Italian>Tempo per sbrigliare un paziente</Italian>
-            <Polish>Czas potrzebny na oczyszczenie rany</Polish>
-            <Czech>Čas čištění rány pacienta</Czech>
-            <French>Temps pour débrider un patient</French>
-            <Korean>환자의 상처 제거 시간</Korean>
-            <German>Zeit für die Debridierung eines Patienten</German>
-            <Japanese>創面切除にかかる時間</Japanese>
-            <Spanish>Tiempo para desbridar un paciente</Spanish>
-            <Portuguese>Duração do desbridamento de um paciente</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Surgery_NPWT_TIMER">
-            <English>Time to apply an NPWT dressing</English>
-            <Chinesesimp>施用 NPWT 敷料的时间</Chinesesimp>
-            <Italian>Tempo per applicare una medicazione NPWT</Italian>
-            <Polish>Czas potrzebny do nałożenie opatrunku próżniowego (NPWT)</Polish>
-            <Czech>Čas k použití NPWT</Czech>
-            <French>Temps pour appliquer un pansement par pression négative</French>
-            <Korean>음압상처치료 적용 시간</Korean>
-            <German>Zeit zum Anlegen eines NPWT-Verbandes</German>
-            <Japanese>NPWTドレッシングにかかる時間</Japanese>
-            <Spanish>Tiempo para colocar un vendaje al vacío</Spanish>
-            <Portuguese>Duração do aplique de curativo a vácuo</Portuguese>
-        </Key>
         <Key ID="STR_KAT_Surgery_FRACTURE_CHECK_TIMER">
-            <English>Fracture check timer</English>
+            <English>Fracture Check Time</English>
             <Chinesesimp>骨折检查计时器</Chinesesimp>
             <Italian>Timer per il controllo delle fratture</Italian>
             <Polish>Czas potrzebny na sprawdzenie złamania</Polish>
@@ -825,7 +801,7 @@
             <Portuguese>Duração da análise de fratura</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_FRACTURE_CHECK_MEDLEVEL">
-            <English>Medical level required for someone to check fracture</English>
+            <English>Allow Check Fracture</English>
             <Chinesesimp>检查骨折所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto a qualcuno per controllare la frattura</Italian>
             <Polish>Poziom wyszkolenia medycznego potrzebny do sprawdzenia złamania</Polish>
@@ -838,7 +814,7 @@
             <Portuguese>Nível médico necessário para analisar a fratura de alguém</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_MEDLEVEL">
-            <English>Medical level required for closed reduction</English>
+            <English>Allow Closed Reduction</English>
             <Chinesesimp>闭合复位所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per la riduzione ortopedica chiusa</Italian>
             <Polish>Poziom wyszkolenia medycznego potrzebny do zamkniętej redukcji</Polish>
@@ -851,7 +827,7 @@
             <Portuguese>Nível médico necessário para realizar uma redução fechada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SURGICAL_ACTION_MEDLEVEL">
-            <English>Medical level required for Surgical action</English>
+            <English>Allow Surgery</English>
             <Chinesesimp>手术所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per l'azione chirurgica</Italian>
             <Polish>Poziom wyszkolenia medycznego potrzebny do akcji chirurgicznych</Polish>
@@ -864,7 +840,7 @@
             <Portuguese>Nível médico exigido para realizar uma ação cirúrgica</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_BREATH_CHECK_MEDLEVEL">
-            <English>Medical level required for Breath check</English>
+            <English>Allow Breath Check</English>
             <Chinesesimp>呼吸检查所需的医疗水平</Chinesesimp>
             <Italian>Livello medico richiesto per il controllo del respiro</Italian>
             <Polish>Poziom wyszkolenia medycznego potrzebny do sprawdzenia oddechu</Polish>
@@ -877,7 +853,7 @@
             <Portuguese>Nível médico necessário para analisar a o hálito</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_LOCATION">
-            <English>Closed reduction location</English>
+            <English>Locations Closed Reduction</English>
             <Chinesesimp>封闭伤口的位置</Chinesesimp>
             <Italian>Luogo di riduzione chiusa</Italian>
             <Polish>Lokalizacja dla zamkniętej redukcji</Polish>
@@ -890,7 +866,7 @@
             <Portuguese>Locação para reduções fechadas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SURGICAL_LOCATION">
-            <English>Open reduction/Surgical location</English>
+            <English>Locations Surgery</English>
             <Chinesesimp>开放伤口/手术的位置</Chinesesimp>
             <Italian>Zona chirurgica/Riduzione aperta</Italian>
             <Polish>Lokalizacja dla otwartej redukcji/akcji chirurgicznych</Polish>
@@ -1018,6 +994,38 @@
             <Japanese>いくつかの手術行為を行うために無意識状態が必要かどうか</Japanese>
             <Spanish>Si se necesita o no que el paciente esté inconsciente para realizar acciones quirúrgicas</Spanish>
             <Portuguese>Se a inconsciência é ou não necessária para realizar algumas ações cirúrgicas</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Surgery_SETTING_DebrideTime">
+            <English>Debride Patient Time</English>
+            <Chinesesimp>进行伤口清创的时间</Chinesesimp>
+            <Italian>Tempo per sbrigliare un paziente</Italian>
+            <Polish>Czas potrzebny na oczyszczenie rany</Polish>
+            <Czech>Čas čištění rány pacienta</Czech>
+            <French>Temps pour débrider un patient</French>
+            <Korean>환자의 상처 제거 시간</Korean>
+            <German>Zeit für die Debridierung eines Patienten</German>
+            <Japanese>創面切除にかかる時間</Japanese>
+            <Spanish>Tiempo para desbridar un paciente</Spanish>
+            <Portuguese>Duração do desbridamento de um paciente</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Surgery_SETTING_NPWTTime">
+            <English>Apply NPWT Dressing Time</English>
+            <Chinesesimp>施用 NPWT 敷料的时间</Chinesesimp>
+            <Italian>Tempo per applicare una medicazione NPWT</Italian>
+            <Polish>Czas potrzebny do nałożenie opatrunku próżniowego (NPWT)</Polish>
+            <Czech>Čas k použití NPWT</Czech>
+            <French>Temps pour appliquer un pansement par pression négative</French>
+            <Korean>음압상처치료 적용 시간</Korean>
+            <German>Zeit zum Anlegen eines NPWT-Verbandes</German>
+            <Japanese>NPWTドレッシングにかかる時間</Japanese>
+            <Spanish>Tiempo para colocar un vendaje al vacío</Spanish>
+            <Portuguese>Duração do aplique de curativo a vácuo</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_MedLevel">
+            <English>Allow Debridement</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_Location">
+            <English>Locations Debridement</English>
         </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_Basic">
             <English>Basic Settings</English>
