@@ -126,7 +126,7 @@
             <Spanish>Usar oxímetro de pulso</Spanish>
             <Chinese>掛載心率監測器</Chinese>
             <Chinesesimp>连接脉搏血氧仪</Chinesesimp>
-            <Czech>Připojit Pulzní oxymetr</Czech>
+            <Czech>Připojit Pulzní Oxymetr</Czech>
             <Korean>맥박산소측정기 부착</Korean>
             <French>Placer l'oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresini Takın&gt;</Turkish>
@@ -142,7 +142,7 @@
             <Spanish>Quitar oxímetro de pulso</Spanish>
             <Chinese>移除心率監測器</Chinese>
             <Chinesesimp>移除脉搏血氧仪</Chinesesimp>
-            <Czech>Odstranit Pulzní oxymetr</Czech>
+            <Czech>Odstranit Pulzní Oxymetr</Czech>
             <Korean>맥박산소측정기 제거</Korean>
             <French>Retirer l'oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresini Çıkarın</Turkish>
@@ -158,7 +158,7 @@
             <Spanish>Oxímetro de pulso</Spanish>
             <Chinese>心率監測器</Chinese>
             <Chinesesimp>脉搏血氧仪</Chinesesimp>
-            <Czech>Pulzní oxymetr</Czech>
+            <Czech>Pulzní Oxymetr</Czech>
             <Korean>맥박산소측정기</Korean>
             <French>Oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresi</Turkish>
@@ -206,7 +206,7 @@
             <Spanish>Oxímetro de pulso: RC: %1 SpO2: %2</Spanish>
             <Chinese>心率監測器: 心率: %1 血氧量: %2</Chinese>
             <Chinesesimp>脉搏血氧仪: 心率: %1 SpO2: %2</Chinesesimp>
-            <Czech>Pulzní oxymetr: HR: %1 SpO2: %2</Czech>
+            <Czech>Pulzní Oxymetr: HR: %1 SpO2: %2</Czech>
             <Korean>맥박 산소포화도: HR: %1 SpO2: %2</Korean>
             <French>Oxymètre de pouls: HR: %1 SpO2: %2</French>
             <Turkish>Nabız Oksimetresi: HR: %1 SpO2: %2</Turkish>
@@ -222,7 +222,7 @@
             <Spanish>%1 conectó un oxímetro de pulso</Spanish>
             <Chinese>%1 連接著心率監測器</Chinese>
             <Chinesesimp>%1 已连接脉搏血氧仪</Chinesesimp>
-            <Czech>%1 připojený Pulzní oxymetr</Czech>
+            <Czech>%1 připojený Pulzní Oxymetr</Czech>
             <Korean>%1 이(가) 맥박산소측정기가 연결했습니다</Korean>
             <French>%1 a connecté l'oxymètre de pouls</French>
             <Turkish>%1 bağlı Nabız Ölçer</Turkish>
@@ -270,7 +270,7 @@
             <Spanish>Sello torácico</Spanish>
             <Chinese>臨時氣胸密封貼</Chinese>
             <Chinesesimp>临时气胸密封贴</Chinesesimp>
-            <Czech>Hrudní krytí</Czech>
+            <Czech>Hrudní Chlopeň</Czech>
             <Korean>체스트 씰</Korean>
             <French>Pansement thoracique</French>
             <Turkish>Chest Seal</Turkish>
@@ -286,7 +286,7 @@
             <Spanish>El sello torácico es un parche diseñado para tratar y sellar heridas abiertas en el pecho bajo la mayoría de circustancias.</Spanish>
             <Chinese>臨時氣胸密封貼在大多數情況下用途於治癒、密封或者二度密封因為胸腔受傷破裂導致的氣胸</Chinese>
             <Chinesesimp>临时气胸密封贴用于治疗,密封或二次密封因胸腔破损导致的气胸</Chinesesimp>
-            <Czech>Hrudní krytí je navrženo pro léčení, zakrytí a uzavření otevřených ran na hrudníku ve většině situací.</Czech>
+            <Czech>Hrudní Chlopeň je navržena pro léčení, zakrytí a uzavření otevřených ran na hrudníku ve většině situací.</Czech>
             <Korean>체스트 씰은 대부분의 상황에서 흉부 개방 상처를 치료, 봉인 및 재봉인하도록 설계되었습니다.</Korean>
             <French>Le pansement thoracique est conçu pour traiter et refermer une blessure thoracique dans la majorité des cas</French>
             <Turkish>Chest Seal, çoğu durumda açık göğüs yaralarını tedavi etmek, kapatmak ve yeniden kapatmak için tasarlanmıştır.</Turkish>
@@ -302,7 +302,7 @@
             <Spanish>Permitir oxímetro de pulso</Spanish>
             <Chinese>允許脈搏血氧儀</Chinese>
             <Chinesesimp>允许脉搏血氧仪</Chinesesimp>
-            <Czech>Povolit Pulzní oxymetr</Czech>
+            <Czech>Povolit Pulzní Oxymetr</Czech>
             <Korean>맥박산소측정기 허가</Korean>
             <French>Autoriser l'oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresine izin ver</Turkish>
@@ -318,7 +318,7 @@
             <Spanish>Nivel de entrenamiento requerido para usar un oxímetro de pulso</Spanish>
             <Chinese>使用脈搏血氧儀所需的培訓水平</Chinese>
             <Chinesesimp>使用脉搏血氧仪所需的医疗培训水平</Chinesesimp>
-            <Czech>Úroveň výcviku nutná k použití Pulzního oxymetru</Czech>
+            <Czech>Úroveň výcviku nutná k použití Pulzního Oxymetru</Czech>
             <Korean>맥박산소측정기를 사용하는 데 필요한 의료 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser un oxymètre de pouls</French>
             <Turkish>Nabız Oksimetresi kullanmak için gerekli eğitim seviyesi</Turkish>
@@ -334,7 +334,7 @@
             <Spanish>Permitir sello torácico</Spanish>
             <Chinese>允許胸部</Chinese>
             <Chinesesimp>允许临时气胸密封贴</Chinesesimp>
-            <Czech>Povolit Hrudní krytí</Czech>
+            <Czech>Povolit Hrudní Chlopeň</Czech>
             <Korean>체스트 씰 허가</Korean>
             <French>Autoriser le pansement thoracique</French>
             <Turkish>Chest Seal'a izin ver</Turkish>
@@ -350,7 +350,7 @@
             <Spanish>Nivel de entrenamiento requerido para usar un sello torácico</Spanish>
             <Chinese>使用胸膜所需的訓練水平</Chinese>
             <Chinesesimp>使用临时气胸密封贴所需的医疗培训水平</Chinesesimp>
-            <Czech>Úroveň výcviku nutná k použití Hrudního krytí</Czech>
+            <Czech>Úroveň výcviku nutná k použití Hrudní Chlopně</Czech>
             <Korean>체스트 씰을 사용하는 데 필요한 의료 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser un pansement thoracique</French>
             <Turkish>Chest Seal kullanmak için gerekli eğitim seviyesi</Turkish>
@@ -367,7 +367,7 @@
             <Korean>체스트 씰로 자가치료 허용 여부</Korean>
             <French>Autoriser le pansement thoracique sur soi-même</French>
             <Polish>Pozwól na samo leczenie przy użyciu Chest Seala</Polish>
-            <Czech>Povolit vlastní léčení pomocí Hrudního krytí</Czech>
+            <Czech>Povolit vlastní léčení pomocí Hrudní Chlopně</Czech>
             <Italian>Permetti automedicazione con Chest Seal</Italian>
             <German>Erlauben die Selbstbehandlung mit Chest Seal</German>
             <Spanish>Permitir autotratarse con un sello torácico</Spanish>
@@ -396,7 +396,7 @@
             <Spanish>Después de alcanzar más del valor seleccionado (valor predeterminado 85), solo entonces el paciente puede recuperar la consciencia</Spanish>
             <Chinese>達到選定值以上（默認值85）後，患者才能清醒</Chinese>
             <Chinesesimp>达到设定值以上(默认85)之后,患者才能苏醒</Chinesesimp>
-            <Czech>Po dosažení více než vybrané hodnoty (výchozí hodnota 85) může pacient získat vědomí</Czech>
+            <Czech>Po dosažení více než vybrané hodnoty (výchozí hodnota 85) může pacient nabýt vědomí</Czech>
             <Korean>선택한 수치 이상(기본수치 85) 도달하면 환자의 의식이 돌아옵니다</Korean>
             <French>Après avoir dépassé la valeur définie (par défaut 85), le patient pourra reprendre connaissance</French>
             <Turkish>Seçilen değerden (varsayılan 85) daha fazlasına ulaştıktan sonra, ancak o zaman hasta bilincini geri kazanabilir</Turkish>
@@ -444,7 +444,7 @@
             <Polish>Igła dekompresyjna</Polish>
             <Chinese>针减压</Chinese>
             <Chinesesimp>胸腔穿刺减压</Chinesesimp>
-            <Czech>Dekompresní jehla</Czech>
+            <Czech>Dekompresní Jehla</Czech>
             <Korean>바늘 감압</Korean>
             <French>Aiguille de décompression</French>
             <Turkish>İğne Dekompresyonu</Turkish>
@@ -459,7 +459,7 @@
             <Spanish>Descomprensión con aguja (Kit NCD)</Spanish>
             <Polish>Igła dekompresyjna (NCD Kit)</Polish>
             <Japanese>胸腔穿刺減圧 (NCDキット)</Japanese>
-            <Czech>Dekompresní jehla (NCD Kit)</Czech>
+            <Czech>Dekompresní Jehla (NCD Kit)</Czech>
             <French>Aiguille de décompression (NCD kit)</French>
             <Korean>바늘 감압(NCD 키트)</Korean>
             <Italian>Decompressione con ago (NCD Kit)</Italian>
@@ -488,7 +488,7 @@
             <Spanish>Kit AAT</Spanish>
             <Chinese>AAT Kit</Chinese>
             <Chinesesimp>AAT Kit</Chinesesimp>
-            <Czech>AAT Kit</Czech>
+            <Czech>AAT Sada</Czech>
             <Korean>AAT 키트</Korean>
             <French>AAT kit</French>
             <Turkish>AAT Kiti</Turkish>
@@ -519,7 +519,7 @@
             <German>NDK Kit</German>
             <Polish>Zestaw NCD</Polish>
             <Japanese>NCDキット</Japanese>
-            <Czech>NCD Kit</Czech>
+            <Czech>NCD Sada</Czech>
             <French>NCD kit</French>
             <Korean>NCD 키트</Korean>
             <Italian>NCD Kit</Italian>
@@ -531,7 +531,7 @@
             <German>Das Nadeldekompressions-Kit ist ein Einweg-Kit, das zur Behandlung eines Spannungspneumothorax vorgesehen ist.</German>
             <Polish>Zestaw NCD to zestaw jednorazowego użytku przeznaczony do leczenia odmy prężnej.</Polish>
             <Japanese>NCDキット (Needle Chest Decompression, 胸部針減圧術)は、緊張性気胸の治療用に設計された使い捨てキットです。</Japanese>
-            <Czech>NCD Kit je sada pro ošetření tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
+            <Czech>NCD Sada je sada pro ošetření tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
             <French>L'aiguille de décompression thoracique est un kit à usage unique designé pour traiter les pneumothorax sous tension</French>
             <Korean>NCD(흉부 바늘 감압) 키트는 긴장성 기흉을 치료하도록 설계된 일회용 키트입니다.</Korean>
             <Italian>Il kit decompressione con ago è un kit a singolo uso adibito al trattamento del pneumotorace da tensione.</Italian>
@@ -620,7 +620,7 @@
             <Spanish>Nivel mínimo requerido para el tratamiento de un hemotórax/neumotórax a tensión</Spanish>
             <Chinese>血氣胸治療最低水平</Chinese>
             <Chinesesimp>血气胸/张力性气胸的最低治愈水平</Chinesesimp>
-            <Czech>Minimální úroveň zdravotního výcviku</Czech>
+            <Czech>Minimální úroveň zdravotnického výcviku</Czech>
             <Korean>혈기흉 치료를 위한 최소 의료레벨 수준</Korean>
             <French>Niveau minimum de soins d'un hémopneumothorax / pneumothorax sous tension</French>
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Tedavisi Minimum Seviye</Turkish>
@@ -636,7 +636,7 @@
             <Spanish>El nivel médico mínimo requerido para que alguien pueda usar un AAT Kit, que se utiliza para tratar un hemotórax/neumotórax a tensión</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
             <Chinesesimp>使用胸腔穿刺减压所需的医疗培训水平</Chinesesimp>
-            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření dekompresní jehlou, která je součástí AAT sady a používá se k léčbě hemotoraxu či tenzního pneumotoraxu.</Czech>
+            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření Dekompresní Jehlou, která je součástí AAT Sady a používá se k léčbě hemotoraxu či tenzního pneumotoraxu.</Czech>
             <Korean>혈기흉 치료에 사용되는 바늘 감압 치료 조치를 수행할 수 있는 사람에게 필요한 최소 의료레벨 수준입니다.</Korean>
             <French>Niveau médical minimum requis pour effectuer une aiguille de décompression et une aspiration des fluides, pour traiter un hémopneumothorax ou un pneumothorax sous tension </French>
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
@@ -687,6 +687,7 @@
             <French>Quantité de saignements internes de l'hémopneumothorax</French>
             <Polish>Siła krwawienia krwiaka</Polish>
             <German>Hämopneumothorax inneres Bluten menge </German>
+            <Czech>Míra vnitřního krvácení při hemotoraxu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount_DESC">
             <English>Sets amount of internal bleeding that is applied while suffering from hemopneumothorax</English>
@@ -698,6 +699,7 @@
             <French>Règle la quantité de saignements internes subis lorsqu'une personne souffre d'un hémopneumothorax</French>
             <Polish>Określa siłę krwawienia wewnętrznego, wywołanego przez krwiaka opłucnej</Polish>
             <German>Definiert die Menge des Blutverlustes, welche der Patient während eines Hämopneumothorax verliert.</German>
+            <Czech>Nastavuje míru vnitřního krvácení v případě hemotoraxu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_hardcore">
             <English>Hardcore pneumothorax</English>
@@ -867,6 +869,7 @@
             <Polish>Czas osłuchiwania płuc</Polish>
             <Japanese>聴診器での聴診にかかる時間</Japanese>
             <German>Stethoskop-Hörzeit</German>
+            <Czech>Čas poslechu Stetoskopem</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_stethoscopeListeningTime_DESC">
             <English>Sets how long the stethoscope listening period is</English>
@@ -876,6 +879,7 @@
             <Spanish>Fija cuanto tiempo dura el periodo de escucha del estetoscopio</Spanish>
             <Japanese>聴診器での聴診を実行するのにかかる時間を設定します</Japanese>
             <German>Legt fest, wie lange es dauert um mit dem Stethoskop abzuhören</German>
+            <Czech>Nastavuje dobu trvání poslechu Stetoskopem</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_unconscious">
             <English>Unconscious SpO2 value</English>
@@ -1008,7 +1012,7 @@
             <French>Cyanose légère</French>
             <Turkish>Hafif Siyanoz</Turkish>
             <Italian>Leggera cianosi</Italian>
-            <Czech>Nepatrná cyanóza</Czech>
+            <Czech>Lehká cyanóza</Czech>
             <Spanish>Cianosis ligera</Spanish>
             <Portuguese>Cianose ligeira</Portuguese>
         </Key>
@@ -1023,7 +1027,7 @@
             <French>Cyanose moyenne</French>
             <Turkish>Orta derece Siyanoz</Turkish>
             <Italian>Moderata cianosi</Italian>
-            <Czech>Mírná cyanóza</Czech>
+            <Czech>Střední cyanóza</Czech>
             <Spanish>Cianosis moderada</Spanish>
             <Portuguese>Cianose média</Portuguese>
         </Key>
@@ -1038,7 +1042,7 @@
             <French>Cyanose grave</French>
             <Turkish>Şiddetli Siyanoz</Turkish>
             <Italian>Grave cianosi</Italian>
-            <Czech>Vážná cyanóza</Czech>
+            <Czech>Těžká cyanóza</Czech>
             <Spanish>Cianosis severa</Spanish>
             <Portuguese>Cianose severa</Portuguese>
         </Key>
@@ -1082,6 +1086,7 @@
             <French>Afficher la cyanose dans la vue d'ensemble</French>
             <Polish>Pokaż sinicę w opisie</Polish>
             <German>Zeigt Zyanose in der Verletzungsliste an</German>
+            <Czech>Zobrazit cyanózu v tabulce přehledu</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Cyanosis_ShowInMenu_DESC">
             <English>Shows cyanosis of patient in overview tab and hides cyanosis diagnose action</English>
@@ -1093,6 +1098,7 @@
             <French>Affiche la cyanose dans la vue d'ensemble du patient et cache l'action de contrôle de la cyanose</French>
             <Polish>Pokazuje sinicę w opisie pacjenta oraz ukrywa akcję sprawdzenia sinicy</Polish>
             <German>Zeigt Zyanose in der Verletzungsliste an (oben rechts), deaktiviert die Zyanose-Diagnose Aktion </German>
+            <Czech>Zobrazí cyanózu v tabulce přehledu pacienta a skryje možnost diagnostikování cyanózy jako akce</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -1105,7 +1111,7 @@
             <French>Valeur de SpO2 de la cyanose légère</French>
             <Turkish>Hafif Siyanoz SpO2 değeri</Turkish>
             <Italian>Valore di SpO2 della cianosi leggera</Italian>
-            <Czech>SpO2 hodnota nepatrné cyanózy</Czech>
+            <Czech>SpO2 hodnota lehké cyanózy</Czech>
             <Spanish>Valor SpO2 de Cianosis ligera</Spanish>
             <Portuguese>Valor de SpO2 para cianose ligeira</Portuguese>
         </Key>
@@ -1120,7 +1126,7 @@
             <French>Valeur de la cyanose légère - 90 SpO2 par défaut</French>
             <Turkish>Hafif Siyanoz değeri - varsayılan 90 SpO2</Turkish>
             <Italian>Valore di cianosi leggera - default SpO2 90 </Italian>
-            <Czech>Hodnota nepatrné cyanózy - základní hodnota SpO2 90</Czech>
+            <Czech>Hodnota lehké cyanózy - výchozí hodnota SpO2 90</Czech>
             <Spanish>Valor SpO2 de Cianosis ligera - Predeterminado en 90 SpO2</Spanish>
             <Portuguese>Valor de SpO2 para cianose ligeira - predeterminado em 90 SpO2</Portuguese>
         </Key>
@@ -1135,7 +1141,7 @@
             <French>Valeur de SpO2 de la cyanose moyenne</French>
             <Turkish>Orta derece Siyanoz SpO2 değeri</Turkish>
             <Italian>Valore di SpO2 della cianosi media</Italian>
-            <Czech>SpO2 hodnota mírné cyanózy</Czech>
+            <Czech>SpO2 hodnota střední cyanózy</Czech>
             <Spanish>Valor SpO2 de Cianosis moderada</Spanish>
             <Portuguese>Valor de SpO2 para cianose média</Portuguese>
         </Key>
@@ -1150,7 +1156,7 @@
             <French>Valeur de la cyanose moyenne - 75 SpO2 par défaut</French>
             <Turkish>Orta derece Siyanoz değeri - varsayılan 75 SpO2</Turkish>
             <Italian>Valore di cianosi media - default SpO2 75 </Italian>
-            <Czech>Hodnota mírné cyanózy - základní hodnota SpO2 75</Czech>
+            <Czech>Hodnota střední cyanózy - výchozí hodnota SpO2 75</Czech>
             <Spanish>Valor SpO2 de Cianosis intermedia - Predeterminado en 75 SpO2</Spanish>
             <Portuguese>Valor de SpO2 para cianose média - predeterminado em 75 SpO2</Portuguese>
         </Key>
@@ -1165,7 +1171,7 @@
             <French>Valeur de SpO2 de la cyanose grave</French>
             <Turkish>Şiddetli Siyanoz SpO2 değeri</Turkish>
             <Italian>Valore di SpO2 della cianosi grave</Italian>
-            <Czech>SpO2 hodnota vážné cyanózy</Czech>
+            <Czech>SpO2 hodnota těžké cyanózy</Czech>
             <Spanish>Valor SpO2 de Cianosis severa</Spanish>
             <Portuguese>Valor de SpO2 para cianose severa</Portuguese>
         </Key>
@@ -1180,7 +1186,7 @@
             <French>Valeur de la cyanose grave - 66 SpO2 par défaut \nCette valeur devrait être un peu plus haute que la valeur de SpO2 létale.</French>
             <Turkish>Şiddetli Siyanoz değeri - varsayılan 66 SpO2 \nÖlümcül SpO2 değerinden biraz daha yüksek olmalıdır</Turkish>
             <Italian>Valore di cianosi grave- default SpO2 66. (Dovrebbe essere un pochino più alta del valore letate di SpO2</Italian>
-            <Czech>Hodnota vážné cyanózy - základní hodnota SpO2 66 \nMěla by být mírně vyšší, než smrtelná hodnota SpO2</Czech>
+            <Czech>Hodnota těžké cyanózy - výchozí hodnota SpO2 66 \nMěla by být mírně vyšší, než smrtelná hodnota SpO2</Czech>
             <Spanish>Valor SpO2 de Cianosis severa - Predeterminado en 66 SpO2 \nEste valor deberia de ser un poco mas alto que el valor letal de SpO2</Spanish>
             <Portuguese>Valor de SpO2 para cianose severa - predeterminado em 66 SpO2\nDeve estar um pouco acima do valor letal de SpO2</Portuguese>
         </Key>
@@ -1280,7 +1286,7 @@
         <Key ID="STR_KAT_Breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
             <Italian>Impostazioni oggetti respirazione </Italian>
-            <Czech>Nastavení dýchacích předmětů</Czech>
+            <Czech>Nastavení předmětů pro dýchací cesty</Czech>
             <French>Paramètres des objets de respiration</French>
             <Polish>Ustawienia dla przedmiotów</Polish>
             <Korean>호흡기 관련 아이템 설정</Korean>
@@ -1335,6 +1341,7 @@
             <Italian>Abilità l'allerta di basso SPO2</Italian>
             <Portuguese>Habilita aviso de baixo nível de SpO2</Portuguese>
             <Polish>Włącz ostrzeżenie o niskim SpO2</Polish>
+            <Czech>Povolit varování při nízkém SpO2</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SPO2Flashing_DESC">
             <English>Makes your Screen flash black if you are below 90% SpO2 (default value)</English>
@@ -1346,6 +1353,7 @@
             <Italian>Rendi lampeggiante il tuo schermo se sei sotto al 90% di SPO2 (valore standard)</Italian>
             <Portuguese>Faz sua tela piscar em preto se você estiver abaixo de 90% de SpO2 (valor padrão)</Portuguese>
             <Polish>Sprawia, że ekran miga na czarno, jeśli SpO2 jest niższe niż 90% (domyślna wartość)</Polish>
+            <Czech>Černé problikávání obrazovky při hodnotě SpO2 nižší než 90% (výchozí hodnota)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_display">
             <English>Enable Stamina loss on low SpO2</English>
@@ -1357,6 +1365,7 @@
             <Italian>Abilita la perdità di stamina con bassa pressione SPO2</Italian>
             <Portuguese>Ativar perda de stamina sob baixo SpO2</Portuguese>
             <Polish>Włącz utratę staminy przy niskim SpO2</Polish>
+            <Czech>Povolit ztrátu Staminy při nízkém SpO2</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_DESC">
             <English>Makes you lose stamina if you are under 90% SpO2 (default value)</English>
@@ -1368,6 +1377,7 @@
             <Italian>Perdi stamina se sei sotto il 90% SPO2 (valore standard)</Italian>
             <Portuguese>Faz você perder stamina se estiver abaixo de 90% SpO2 (valor padrão)</Portuguese>
             <Polish>Sprawia, że tracimy staminę, jeśli SpO2 jest niższe niż 90% (domyślna wartość) </Polish>
+            <Czech>Ztrácení staminy pří hodnotě SpO2 nižší než 90% (výchozí hodnota)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lowSPO2Level_display">
             <English>Low SpO2 warning level</English>
@@ -1379,6 +1389,7 @@
             <Italian>Livello di allerta bassa SPO2</Italian>
             <Portuguese>Nível de alerta de SpO2 baixo</Portuguese>
             <Polish>Ostrzeżenie o niskim SpO2</Polish>
+            <Czech>Hodnota SpO2 pro varování o nízkém SpO2</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_lowSPO2Level_DESC">
             <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
@@ -1390,6 +1401,7 @@
             <Italian>Ti permette di cambiare il valore di SPO2 al quale ricevi l'indicatore lampeggiante d'allerta e l'effetto di perdita della stamina </Italian>
             <Portuguese>Permite alterar o valor SpO2 no qual você é avisado e sofre perda de stamina</Portuguese>
             <Polish>Pozwala zmienić poziom SpO2, poniżej którego będzie widać ostrzeżenie w postaci migotania ekranu i zmniejszonej staminy</Polish>
+            <Czech>Nastavení hodnoty SpO2 při které se aktivují varovné efekty problikávání obrazovky a ztráta staminy</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PulseOximeter_Action_addSound">
             <English>Enable Pulse Oximeter Alarm</English>
@@ -1399,6 +1411,7 @@
             <Polish>Włącz alarm w Pulsoksymetrze</Polish>
             <Japanese>パルスオキシメータのアラーム有効化</Japanese>
             <German>Aktiviere Pulsoximeter Alarm</German>
+            <Czech>Zapnout alarm Pulzního Oxymetru</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PulseOximeter_Action_removeSound">
             <English>Disable Pulse Oximeter Alarm</English>
@@ -1408,6 +1421,7 @@
             <Polish>Wyłącz alarm w Pulsoksymetrze</Polish>
             <Japanese>パルスオキシメータのアラーム無効化</Japanese>
             <German>Deaktiviere Pulsoximeter Alarm</German>
+            <Czech>Vypnout alarm Pulzního Oxymetru</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning">
             <English>Pulse Oximeter Alarm SpO2 Threshold</English>
@@ -1417,6 +1431,7 @@
             <Polish>Wartość ostrzegania Pulsoksymetru</Polish>
             <Japanese>パルスオキシメータのアラームのSpO2しきい値</Japanese>
             <German>Pulsoximeter Alarm Grenzwert</German>
+            <Czech>Práh SpO2 pro aktivaci alarmu Pulzního Oxymetru</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM">
             <English>Use BVM</English>
@@ -1426,6 +1441,7 @@
             <Polish>Użyj worka samorozprężalnego</Polish>
             <Japanese>BVMを使用する</Japanese>
             <German>Verwende BVM</German>
+            <Czech>Použít RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Progress">
             <English>Using BVM</English>
@@ -1435,6 +1451,7 @@
             <Polish>BVM w użyciu</Polish>
             <Japanese>BVMを使用中</Japanese>
             <German>Beatme mit BVM</German>
+            <Czech>Používání RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM">
             <English>Use Pocket BVM</English>
@@ -1444,6 +1461,7 @@
             <Polish>Uzyj kieszonkowego worka samorozprężalnego</Polish>
             <Japanese>ポケットBVMを使用する</Japanese>
             <German>Verwende Tachen BVM </German>
+            <Czech>Použít Kapesní RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM_Progress">
             <English>Using Pocket BVM</English>
@@ -1453,6 +1471,7 @@
             <Polish>Kieszonkowy BVM w użyciu</Polish>
             <Japanese>ポケットBVMを使用中</Japanese>
             <German>Beatme mit Taschen BVM</German>
+            <Czech>Používání Kapesního RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen">
             <English>Use BVM with Oxygen Tank</English>
@@ -1462,6 +1481,7 @@
             <Polish>Użyj worka z butlą z tlenem</Polish>
             <Japanese>BVMと酸素ボンベを使用する</Japanese>
             <German>Verwende BVM mit Sauerstofftank</German>
+            <Czech>Použít RV s Kyslíkovou Lahví</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Progress">
             <English>Using BVM with Oxygen Tank</English>
@@ -1471,6 +1491,7 @@
             <Polish>Używanie BVM z butlą z tlenem</Polish>
             <Japanese>BVMと酸素ボンベを使用中</Japanese>
             <German>Beatme mit BVM und Sauerstofftank</German>
+            <Czech>Používání RV s Kyslíkovou Lahví</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Oxygen">
             <English>Use BVM with Oxygen</English>
@@ -1480,6 +1501,7 @@
             <Polish>Użyj worka z tlenem</Polish>
             <Japanese>BVMと酸素を使用する</Japanese>
             <German>Verwende BVM mit Sauerstoff</German>
+            <Czech>Použít RV s Kyslíkem</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Oxygen_Progress">
             <English>Using BVM with Oxygen</English>
@@ -1489,6 +1511,7 @@
             <Polish>Używanie BVM z Tlenem</Polish>
             <Japanese>BVMと酸素を使用中</Japanese>
             <German>Beatme mit BVM und Sauerstoff</German>
+            <Czech>Používání RV s Kyslíkem</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
@@ -1498,6 +1521,7 @@
             <Polish>Butla z tlenem rozłączona (pusta)</Polish>
             <Japanese>酸素ボンベが切断されました (空)</Japanese>
             <German>Sauerstofftank entfernt (leer)</German>
+            <Czech>Kyslíková Lahev odpojena (prázdná)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Progress">
             <English>Refilling Portable Oxygen Tank</English>
@@ -1507,6 +1531,7 @@
             <Polish>Napełnianie butli</Polish>
             <Japanese>携帯用酸素ボンベを補充中</Japanese>
             <German>Befülle tragbaren Sauerstofftank</German>
+            <Czech>Plnění přenosné Kyslíkové Lahve</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Complete">
             <English>Oxygen Tank Refill Complete</English>
@@ -1516,6 +1541,7 @@
             <Polish>Napełnianie zakończone</Polish>
             <Japanese>酸素ボンベの補充が完了しました</Japanese>
             <German>Sauerstofftank Befüllung abgeschlossen</German>
+            <Czech>Plnění Kyslíkové Lahve dokončeno</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Cancel">
             <English>Oxygen Tank Refill Cancelled</English>
@@ -1525,6 +1551,7 @@
             <Polish>Napełnianie przerwane</Polish>
             <Japanese>酸素ボンベの補充が中断されました</Japanese>
             <German>Sauerstofftank Befüllung abgebrochen</German>
+            <Czech>Plnění Kyslíkové Lahve zrušeno</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTanks">
             <English>Refill Portable Oxygen Tank</English>
@@ -1534,6 +1561,7 @@
             <Polish>Napełnij butlę</Polish>
             <Japanese>携帯用酸素ボンベ を補充する</Japanese>
             <German>Nachfüllen des tragbaren Sauerstofftanks</German>
+            <Czech>Naplnit přenosnou Kyslíkovou Lahev</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_150">
             <English>Refill Portable Oxygen Tank (150L)</English>
@@ -1543,6 +1571,7 @@
             <Polish>Napełnij butlę (150L)</Polish>
             <Japanese>携帯用酸素ボンベ (150L) を補充</Japanese>
             <German>Nachfüllen des tragbaren Sauerstofftanks (150L)</German>
+            <Czech>Naplnit přenosnou Kyslíkovou Lahev (150L)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_300">
             <English>Refill Portable Oxygen Tank (300L)</English>
@@ -1552,6 +1581,7 @@
             <Polish>Napełnij butlę (300L)</Polish>
             <Japanese>携帯用酸素ボンベ (150L) を補充</Japanese>
             <German>Nachfüllen des tragbaren Sauerstofftanks (300L)</German>
+            <Czech>Naplnit přenosnou Kyslíkovou Lahev (300L)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Display">
             <English>BVM</English>
@@ -1561,6 +1591,7 @@
             <Polish>Worek samorozprężalny</Polish>
             <Japanese>バッグバルブマスク (BVM)</Japanese>
             <German>BVM</German>
+            <Czech>RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Desc_Short">
             <English>Bag-Valve-Mask, used to assist with breathing of unconscious patients</English>
@@ -1570,6 +1601,7 @@
             <Polish>Worek samorozprężalny, używany w resuscytacji tlenowej na nieprzytomnym pacjencie</Polish>
             <Japanese>意識を失った患者の呼吸補助に使用</Japanese>
             <German>Die Beutelventilmaske wird benutzt um die Atmung von bewustlosen Patienten zu unterstützen</German>
+            <Czech>Resuscitační Vak, používá se k pomoci s dýcháním pacientů v bezvědomí</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Display">
             <English>Pocket BVM</English>
@@ -1579,6 +1611,7 @@
             <Polish>Kieszonkowy worek samorozprężalny</Polish>
             <Japanese>ポケットBVM</Japanese>
             <German>Taschen BVM</German>
+            <Czech>Kapesní RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Desc_Short">
             <English>Compact version of the Bag-Valve-Mask</English>
@@ -1588,6 +1621,7 @@
             <Polish>Mniejsza wersja Worka samorozprężalnego</Polish>
             <Japanese>バッグバルブマスク (Bag-Valve-Mask) の小型携帯版</Japanese>
             <German>Die kompakte Version der Beutelventilmaske</German>
+            <Czech>Kompaktní verze Resuscitačního Vaku</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Display">
             <English>Portable Oxygen Tank (150L)</English>
@@ -1597,6 +1631,7 @@
             <Polish>Przenośna butla z tlenem (150L)</Polish>
             <Japanese>携帯用酸素ボンベ (150L)</Japanese>
             <German>Tragbarer Sauerstofftank (150L)</German>
+            <Czech>Přenosná Kyslíková Lahev (150L)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Desc_Short">
             <English>Portable Oxygen Tank, containing 150L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
@@ -1606,6 +1641,7 @@
             <Polish>Przenośna butla z tlenem, zawiera 150L tlenu. Może zostać podłączona do worka samorozprężalnego w celu resuscytacji tlenowej</Polish>
             <Japanese>150Lの酸素が入った携帯酸素ボンベ。BVMに接続し重篤患者の呼吸補助に使用。</Japanese>
             <German>Der tragbare Sauerstofftank enthält 150L Sauerstoff. Er ist ausgelegt, um an die BVM angeschlossen zu werden und bei der Beatmung zu helfen. </German>
+            <Czech>Přenosná Kyslíková Lahev, obsahuje 150L kyslíku. Připojením k RV lze zajistit dýchání pacientům v kritickém stavu.</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Display">
             <English>Portable Oxygen Tank (300L)</English>
@@ -1615,6 +1651,7 @@
             <Polish>Przenośna butla z tlenem (300L)</Polish>
             <Japanese>携帯用酸素ボンベ (150L)</Japanese>
             <German>Tragbarer Sauerstofftank (300L)</German>
+            <Czech>Přenosná Kyslíková Lahev (300L)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Desc_Short">
             <English>Portable Oxygen Tank, containing 300L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
@@ -1624,6 +1661,7 @@
             <Polish>Przenośna butla z tlenem, zawiera 300L tlenu. Może zostać podłączona do worka samorozprężalnego w celu resuscytacji tlenowej</Polish>
             <Japanese>150Lの酸素が入った携帯酸素ボンベ。BVMに接続し重篤患者の呼吸補助に使用。</Japanese>
             <German>Der tragbare Sauerstofftank enthält 300L Sauerstoff. Er ist ausgelegt, um an die BVM angeschlossen zu werden und bei der Beatmung zu helfen. </German>
+            <Czech>Přenosná Kyslíková Lahev, obsahuje 300L kyslíku. Připojením k RV lze zajistit dýchání pacientům v kritickém stavu.</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
             <English>Empty Portable Oxygen Tank (150L)</English>
@@ -1633,6 +1671,7 @@
             <Polish>Pusta butla z tlenem (150L)</Polish>
             <Japanese>空の携帯用酸素ボンベ (150L)</Japanese>
             <German>Leerer tragbarer Sauerstofftank (150L)</German>
+            <Czech>Prázdná Kyslíková Lahev (150L)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Empty_Display">
             <English>Empty Portable Oxygen Tank (300L)</English>
@@ -1642,6 +1681,7 @@
             <Polish>Pusta butla z tlenem (300L)</Polish>
             <Japanese>空の携帯用酸素ボンベ (150L)</Japanese>
             <German>Leerer tragbarer Sauerstofftank (300L)</German>
+            <Czech>Prázdná Kyslíková Lahev (300L)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_Empty_Desc_Short">
             <English>Empty Portable Oxygen Tank, refill at a medical vehicle or facility</English>
@@ -1651,6 +1691,7 @@
             <Polish>Pusta butla z tlenem, napełnij w budynku lub pojeździe medycznym</Polish>
             <Japanese>空になった携帯用酸素ボンベ。医療用車両または施設で補充可能。</Japanese>
             <German>Leere tragbarer Sauerstofftank und befülle ihn neu bei einem medizinischen Fahrzeug oder Einrichtung. </German>
+            <Czech>Prázdná Kyslíková Lahev, lze doplnit u zdravotnického vozidla či zařízení.</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMTime">
             <English>BVM Use Time</English>
@@ -1660,6 +1701,7 @@
             <Polish>Czas użycia Worka samorozprężalnego</Polish>
             <Japanese>BVMの使用にかかる時間</Japanese>
             <German>BVM Benutzungszeit</German>
+            <Czech>Doba použití RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMTime_DESC">
             <English>Sets BVM usage period length</English>
@@ -1669,6 +1711,7 @@
             <Polish>Ustawia czas użycia akcji</Polish>
             <Japanese>BVMの使用期間の長さを設定</Japanese>
             <German>Legt die Länge des BVM-Nutzungszeitraums fest</German>
+            <Czech>Nastavuje dobu k použití RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
@@ -1678,6 +1721,7 @@
             <Polish>Pozwól na użycie Worka samorozprężalnego</Polish>
             <Japanese>BVMの許可</Japanese>
             <German>Erlaube BVM</German>
+            <Czech>Povolit RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl_DESC">
             <English>Sets required medical level to use BVM</English>
@@ -1687,6 +1731,7 @@
             <Polish>Ustawia wymagany poziom wyszkolenia medycznego do użycia Worka samorozprężalnego</Polish>
             <Japanese>BVMの使用に必要な医療レベルを設定します</Japanese>
             <German>Benötigter medizinischer Grad, um die BVM zu nutzen</German>
+            <Czech>Nastavuje požadovanou zdravotnickou úroveň pro použití RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PocketBVM_MedLvl">
             <English>Allow Pocket BVM</English>
@@ -1696,6 +1741,7 @@
             <Polish>Pozwól na użycie Kieszonkowego worka samorozprężalnego</Polish>
             <Japanese>ポケットBVMの許可</Japanese>
             <German>Erlaube Taschen BVM</German>
+            <Czech>Povolit Kapesní RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PocketBVM_MedLvl_DESC">
             <English>Sets required medical level to use Pocket BVM</English>
@@ -1705,6 +1751,7 @@
             <Polish>Ustawia wymagany poziom wyszkolenia medycznego do użycia Kieszonkowego worka samorozprężalnego</Polish>
             <Japanese>ポケットBVMの使用に必要な医療レベルを設定します</Japanese>
             <German>Benötigter medizinischer Grad, um die Taschen BVM zu nutzen</German>
+            <Czech>Nastavuje požadovanou zdravotnickou úroveň pro použití Kapesního RV</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_Oxygen_MedLvl">
             <English>Allow BVM with oxygen</English>
@@ -1714,6 +1761,7 @@
             <Polish>Pozwól na użycie Worka samorozprężalnego z butlą</Polish>
             <Japanese>BVMと酸素の併用の許可</Japanese>
             <German>Erlaube BVM mit Sauerstoff</German>
+            <Czech>Povolit RV s Kyslíkem</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_Oxygen_MedLvl_DESC">
             <English>Sets required medical level to use BVM with oxygen</English>
@@ -1723,6 +1771,7 @@
             <Polish>Ustawia wymagany poziom wyszkolenia medycznego do użycia Worka samorozprężalnego z tlenem</Polish>
             <Japanese>酸素で BVM を使用するために必要な医療レベルを設定します</Japanese>
             <German>Benötigter medizinischer Grad, um die BVM mit Sauerstoff zu nutzen</German>
+            <Czech>Nastavuje požadovanou zdravotnickou úroveň pro použití RV s kyslíkem</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime">
             <English>Portable Oxygen Tank Base Refill Time</English>
@@ -1732,6 +1781,7 @@
             <Polish>Czas napełnienia przenośnej butli z tlenem</Polish>
             <Japanese>携帯用酸素ボンベの補充にかかる基準時間</Japanese>
             <German>Tragbarer Sauerstofftank Grundlegende Nachfüllzeit</German>
+            <Czech>Základní čas pro naplnění přenosné Kyslíkové Lahve</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime_DESC">
             <English>Sets time required to refill Oxygen Tank (150L)</English>
@@ -1741,6 +1791,7 @@
             <Polish>Ustawia czas napełniania przenośnej butli z tlenem (150L)</Polish>
             <Japanese>携帯用酸素ボンベ (150L) の補充にかかる時間を設定します</Japanese>
             <German>Legt die Dauer des Nachfüllens eines 150L Sauerstofftanks fest</German>
+            <Czech>Nastavuje čas požadovaný k naplnění Kyslíkové Lahve (150L)</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_150">
             <English>Set Portable Oxygen Tank (150L) as preferred</English>
@@ -1750,6 +1801,7 @@
             <Polish>Ustaw Przenośną butlę z tlenem (150L) jako preferowaną</Polish>
             <Japanese>携帯用酸素ボンベ (150L) を優先に設定</Japanese>
             <German>Definiere den 150L Sauerstofftank als bevorzugte Variante</German>
+            <Czech>Nastavit přenosnou Kyslíkovou Lahev (150L) jako preferovanou</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_300">
             <English>Set Portable Oxygen Tank (300L) as preferred</English>
@@ -1759,6 +1811,7 @@
             <Polish>Ustaw Przenośną butlę z tlenem (300L) jako preferowaną</Polish>
             <Japanese>携帯用酸素ボンベ (300L) を優先に設定</Japanese>
             <German>Definiere den 300L Sauerstofftank als bevorzugte Variante</German>
+            <Czech>Nastavit přenosnou Kyslíkovou Lahev (300L) jako preferovanou</Czech>
         </Key>
     </Package>
 </Project>

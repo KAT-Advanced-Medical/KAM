@@ -27,8 +27,8 @@ if ((_debridement select _part) != 1) exitWith {
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
-private _count1 = [_patient, "Lidocaine"] call ACEFUNC(medical_status,getMedicationCount);
-private _count2 = [_patient, "Morphine"] call ACEFUNC(medical_status,getMedicationCount);
+private _lidocaine = [_patient, "Lidocaine"] call ACEFUNC(medical_status,getMedicationCount);
+private _morphine = [_patient, "Morphine"] call ACEFUNC(medical_status,getMedicationCount);
 private _damage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), [0,0,0,0,0,0]];
 
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
@@ -36,10 +36,11 @@ private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
 private _openWounds = GET_OPEN_WOUNDS(_patient);
 private _bandaged = [];
 private _stitched = [];
+private _open = [];
 
 private _remainder = false;
 
-if (_count1 == 0 && _count2 == 0) then {
+if (_lidocaine == 0 && _morphine == 0) then {
     private _pain = random [0.7, 0.8, 0.9];
     [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
 };
@@ -71,7 +72,7 @@ _patient setVariable [QGVAR(debridement), _debridement, true];
 {
     _x params ["_id", "_bodyPart", "_amount"];
 
-    if (_bodyPart == _part) exitWith {
+    if (_bodyPart == _part && _amount > 0) exitWith {
         _remainder = true;
     };
 
@@ -84,13 +85,29 @@ if !(_remainder) then {
     {
         _x params ["_id", "_bodyPart", "_amount"];
 
-        if (_bodyPart != _part) then {
+        if (_bodyPart != _part && _amount > 0) then {
             _open pushBack _x;
         };
 
     } forEach _openWounds;
 
     _patient setVariable [VAR_OPEN_WOUNDS, _open, true];
+};
+
+switch (_part) do {
+    case 0: {
+        [_patient, true, false, false, false] call ACEFUNC(medical_engine,updateBodyPartVisuals);
+    };
+    case 1: {
+        [_patient, false, true, false, false] call ACEFUNC(medical_engine,updateBodyPartVisuals);
+    };
+    case 2;
+    case 3: {
+        [_patient, false, false, true, false] call ACEFUNC(medical_engine,updateBodyPartVisuals);
+    };
+    default {
+        [_patient, false, false, false, true] call ACEFUNC(medical_engine,updateBodyPartVisuals);
+    };
 };
 
 [_patient] call ACEFUNC(medical_engine,updateDamageEffects);

@@ -17,11 +17,13 @@
 
 params ["_target"];
 
+if !(alive _target) exitWith {};
+if (ACE_Player != _target) exitWith {};
+
 if (GVAR(chromatic_aberration_checkbox_pervitin)) then {
     [{
         params ["_target"];
 
-        if !(alive _target) exitWith {};
         ["ChromAberration", 200, [ (GVAR(chromatic_aberration_slider_pervitin)/100), (GVAR(chromatic_aberration_slider_pervitin)/100), true ], "", _target] spawn {
 
             params ["_name", "_priority", "_effect", "_handle", "_target"];
