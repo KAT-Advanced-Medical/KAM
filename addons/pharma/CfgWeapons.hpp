@@ -48,7 +48,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(IV_DescShort);
         hiddenSelections[]={"0"};
         hiddenSelectionsMaterials[] = {QPATHTOF(models\iv\kat_iv.rvmat)};
-        hiddenSelectionsTextures[] = {QPATHTOF(models\iv\kat_iv.paa)};
+        hiddenSelectionsTextures[] = {QPATHTOF(models\iv\kat_iv_co.paa)};
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
