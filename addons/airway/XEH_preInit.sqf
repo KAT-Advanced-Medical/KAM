@@ -218,4 +218,13 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(autoTriage),
+    "CHECKBOX",
+    [LLSTRING(AutoTriage),LLSTRING(AutoTriage_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
