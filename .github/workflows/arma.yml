@@ -6,6 +6,8 @@ on:
     - master
   pull_request:
 
+permissions: write-all
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -47,7 +49,6 @@ jobs:
           path: '.hemttout/release/*'
 
   stringtables:
-    permissions: write-all
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
