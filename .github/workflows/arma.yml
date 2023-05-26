@@ -48,6 +48,8 @@ jobs:
 
   stringtables:
     permissions:
+      contents: 'read'
+      id-token: 'write'
       issues: 'write'
     runs-on: ubuntu-latest
     steps:
