@@ -1252,10 +1252,12 @@
         <Key ID="STR_KAT_Airway_AutoTriage">
             <English>Auto Triage Airways</English>
             <Japanese>気道による自動トリアージ</Japanese>
+            <German>Auto Triage Atemwege</German>
         </Key>
         <Key ID="STR_KAT_Airway_AutoTriage_Desc">
             <English>Sets if checking airways can override current triage level</English>
             <Japanese>気道の検査をすることで現在のトリアージレベルを自動で上書き設定します</Japanese>
+            <German>Setzt, ob die aktuelle triage Karte übershrieben werden soll durch das checken der Atemwege</German>
         </Key>
     </Package>
 </Project>
