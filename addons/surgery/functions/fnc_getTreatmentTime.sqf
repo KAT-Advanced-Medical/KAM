@@ -27,15 +27,15 @@ private _classnameTime = format [QGVAR(%1_treatmentTime), _classname];
 private _treatmentTime = missionNamespace getVariable [_classnameTime, 5];
 
 switch (_medicLvl) do {
-	case 0: {
-		_treatmentTime = _treatmentTime;
-	};
-	case 1: {
-		_treatmentTime = _treatmentTime * GVAR(medicMultiplier);
-	};
-	case 2: {
-		_treatmentTime = _treatmentTime * GVAR(doctorMultiplier);
-	};
+    case 0: {
+        _treatmentTime = _treatmentTime;
+    };
+    case 1: {
+        _treatmentTime = _treatmentTime * GVAR(medicMultiplier);
+    };
+    case 2: {
+        _treatmentTime = _treatmentTime * GVAR(doctorMultiplier);
+    };
 };
 
 _treatmentTime
