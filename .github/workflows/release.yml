@@ -36,9 +36,9 @@ jobs:
             body: ${{ github.event.release.body }}
         - uses: arma-actions/workshop-upload@v1
           with:
-            itemId: '2020940806'
+            itemId: '2841189207'
             contentPath: './@Kat_Advanced_Medical_*.zip'
-            changelog: 'https://github.com/KAT-Advanced-Medical/KAM/releases/tag/${{ github.event.release.tag_name }}'
+            changelog: 'https://github.com/MiszczuZPolski/KAM/releases/tag/${{ github.event.release.tag_name }}'
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
             STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
