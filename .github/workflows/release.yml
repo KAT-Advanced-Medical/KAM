@@ -22,7 +22,7 @@ jobs:
           uses: softprops/action-gh-release@v1
           with:
             files: |
-              ./home/runner/work/KAM/KAM/releases/kam_*.zip
+              /home/runner/work/KAM/KAM/releases/kam_*.zip
             draft: true
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -35,7 +35,7 @@ jobs:
         - uses: arma-actions/workshop-upload@v1
           with:
             itemId: '2841189207'
-            contentPath: './home/runner/work/KAM/KAM/releases/kam_*.zip'
+            contentPath: '/home/runner/work/KAM/KAM/releases/kam_*.zip'
             changelog: |
               https://github.com/MiszczuZPolski/KAM/releases/tag/v${{ github.event.ref }}
 
