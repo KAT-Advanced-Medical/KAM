@@ -19,22 +19,28 @@ jobs:
         - name: Run HEMTT build
           run: hemtt release
         - name: Update Release with Files
-          id: create_version_release
-          uses: ncipollo/release-action@v1
+          uses: softprops/action-gh-release@v1
           with:
-            allowUpdates: true # Set this to false if you want to prevent updating existing releases
-            name: ${{ github.event.release.name }}
-            draft: ${{ github.event.release.unpublished }}
-            prerelease: ${{ github.event.release.prerelease }}
-            token: ${{ secrets.GITHUB_TOKEN }}
-            artifacts: "./@kam_*.zip"
-            tag: ${{ github.event.release.tag_name }}
-            body: ${{ github.event.release.body }}
+            files: |
+              ./@kam_*.zip
+            draft: true
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        - name: Get Release Changelog
+          id: get_changelog
+          run: |
+            release_tag=$(git desribe --tags --abbrev=0)
+            changelog=$(git log --pretty=format:"- %s" $release_tag..HEAD)
+            echo "::set-output name=changelog::${changelog}"
         - uses: arma-actions/workshop-upload@v1
           with:
             itemId: '2841189207'
             contentPath: './@kam_*.zip'
-            changelog: 'https://github.com/MiszczuZPolski/KAM/releases/tag/v${{ github.event.release.tag_name }}'
+            changelog: |
+              https://github.com/MiszczuZPolski/KAM/releases/tag/v${{ github.event.ref }}
+
+              Changelog:
+              ${{ steps.get_changelog.outputs.changelog }}
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
             STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
