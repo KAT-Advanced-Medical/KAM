@@ -1,9 +1,8 @@
 name: Release
 
 on:
-  push:
-    tags:
-      - 'v*'
+  release:
+    types: [published]
 
 permissions:
   contents: write
@@ -18,10 +17,6 @@ jobs:
           uses: arma-actions/hemtt@v1
         - name: Run HEMTT build
           run: hemtt release
-        - name: Move Release
-          run: |
-            version="${{ github.event.release.tag_name }}"
-            mv releases/kat-latest.zip "@Kat_Advanced_Medical_${version//[.]/_}.zip"
         - name: Update Release with Files
           id: create_version_release
           uses: ncipollo/release-action@v1
@@ -38,7 +33,7 @@ jobs:
           with:
             itemId: '2841189207'
             contentPath: './@Kat_Advanced_Medical_*.zip'
-            changelog: 'https://github.com/MiszczuZPolski/KAM/releases/tag/${{ github.event.release.tag_name }}'
+            changelog: 'https://github.com/MiszczuZPolski/KAM/releases/tag/v${{ github.event.release.tag_name }}'
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
             STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
