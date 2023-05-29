@@ -29,7 +29,7 @@ jobs:
         - name: Get Release Changelog
           id: get_changelog
           run: |
-            release_tag=$(git desribe --tags --abbrev=0)
+            release_tag=$(git describe --tags --abbrev=0)
             changelog=$(git log --pretty=format:"- %s" $release_tag..HEAD)
             echo "::set-output name=changelog::${changelog}"
         - uses: arma-actions/workshop-upload@v1
