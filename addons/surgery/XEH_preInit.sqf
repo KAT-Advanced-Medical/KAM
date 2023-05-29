@@ -90,7 +90,7 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(closedTime),
+    QGVAR(ClosedReduction_treatmentTime),
     "SLIDER",
     LLSTRING(CLOSED_TIMER),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
@@ -99,7 +99,7 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(incisionTime),
+    QGVAR(Incision_treatmentTime),
     "SLIDER",
     LLSTRING(INCISION_TIMER),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
@@ -108,16 +108,34 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(intermediateTime),
+    QGVAR(Expose_treatmentTime),
     "SLIDER",
-    [LLSTRING(INTERMEDIATE_TIMER), LLSTRING(INTERMEDIATE_TIMER_DESC)],
+    LLSTRING(EXPOSE_TIMER),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [0,100,8,0],
     true
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(openTime),
+    QGVAR(Clamp_treatmentTime),
+    "SLIDER",
+    LLSTRING(CLAMP_TIMER),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [0,100,8,0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(Irrigate_treatmentTime),
+    "SLIDER",
+    LLSTRING(IRRIGATE_TIMER),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [0,100,8,0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(openReduction_treatmentTime),
     "SLIDER",
     LLSTRING(OPEN_TIMER),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
@@ -126,7 +144,7 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(fractureCheck_Time),
+    QGVAR(CheckFracture_treatmentTime),
     "SLIDER",
     LLSTRING(FRACTURE_CHECK_TIMER),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
@@ -181,7 +199,7 @@ PREP_RECOMPILE_END;
 
 // Sets time to debride a patient
 [
-    QGVAR(debrideTime),
+    QGVAR(Debridement_treatmentTime),
     "SLIDER",
     LLSTRING(SETTING_DebrideTime),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
@@ -191,7 +209,7 @@ PREP_RECOMPILE_END;
 
 // Sets time to apply NPWT dressing
 [
-    QGVAR(npwtTime),
+    QGVAR(NPWT_treatmentTime),
     "SLIDER",
     LLSTRING(SETTING_NPWTTime),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
@@ -219,6 +237,22 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(medicMultiplier),
+    "SLIDER",
+    LLSTRING(medicMultiplier),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [0,1,0.5,2],
+    true
+] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(doctorMultiplier),
+    "SLIDER",
+    LLSTRING(doctorMultiplier),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [0,1,0.3,2],
+    true
+] call CBA_Settings_fnc_init;
 
 ADDON = true;

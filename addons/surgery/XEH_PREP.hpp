@@ -6,6 +6,7 @@ PREP(debridementLocal);
 PREP(fractureCheck);
 PREP(fractureSelect);
 PREP(fractureSelectLocal);
+PREP(getTreatmentTime);
 PREP(incision);
 PREP(incisionLocal);
 PREP(init);

@@ -761,31 +761,20 @@
             <Spanish>Tiempo para checar el aliento</Spanish>
             <Portuguese>Duração da verificação de hálito</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Surgery_INTERMEDIATE_TIMER">
-            <English>Time to perform intermediate actions</English>
-            <Chinesesimp>进行中间操作的时间</Chinesesimp>
-            <Italian>Tempo per eseguire azioni intermedie</Italian>
-            <Polish>Czas potrzebny do wykonania natychmiastowych akcji</Polish>
-            <Czech>Čas provádění středně těžkých akcí</Czech>
-            <French>Temps pour effectuer des actions intermédiaires</French>
-            <Korean>중간 작업 수행 시간</Korean>
-            <German>Zeit für die Durchführung von Zwischenmaßnahmen</German>
-            <Japanese>中間処置にかかる時間</Japanese>
-            <Spanish>Tiempo para realizar acciones intermediarias</Spanish>
-            <Portuguese>Duração de ações intermediárias</Portuguese>
+        <Key ID="STR_KAT_Surgery_EXPOSE_TIMER">
+            <English>Expose Time</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_INTERMEDIATE_TIMER_DESC">
-            <English>Sets how long it takes to perform intermediate surgical actions such as exposing and irrigation</English>
-            <Chinesesimp>设置执行手术中间操作（例如暴露和冲洗）所需的时间</Chinesesimp>
-            <Italian>Imposta il tempo necessario per eseguire azioni chirurgiche intermedie come l'esposizione ed il lavaggio/pulizia </Italian>
-            <Polish>Ustala jak długo zajmuje wykonanie natychmiastowych zabiegów chirurgicznych, takich jak odsłonienie i opłukanie</Polish>
-            <Czech>Nastavuje, jak dlouho trvá provádění středně těžkých chirurgických akcí, jako je roztahování a vyplachování.</Czech>
-            <French>Règle le temps nécessaire pour effectuer des actions chirurgicales intermédiaires, comme exposer ou irriguer</French>
-            <Korean>노출 및 세척같은 중간 수술 조치를 수행하는 데 걸리는 시간을 설정합니다.</Korean>
-            <German>Legt fest, wie lange es dauert, chirurgische Zwischenschritte wie Freilegung und Spülung durchzuführen</German>
-            <Japanese>露出や洗浄などの中間の外科的処置を実行するのにかかる時間を設定します</Japanese>
-            <Spanish>Establece cuanto tiempo tarda realizar acciones quirúrgicas como exponer o irrigar.</Spanish>
-            <Portuguese>Estabelece quanto tempo leva para realizar ações cirúrgicas, como expor ou irrigar.</Portuguese>
+        <Key ID="STR_KAT_Surgery_CLAMP_TIMER">
+            <English>Clamp Time</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_IRRIGATE_TIMER">
+            <English>Irrigate Time</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_medicMultiplier">
+            <English>Medic Multiplier</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_doctorMultiplier">
+            <English>Doctor Multiplier</English>
         </Key>
         <Key ID="STR_KAT_Surgery_FRACTURE_CHECK_TIMER">
             <English>Fracture Check Time</English>

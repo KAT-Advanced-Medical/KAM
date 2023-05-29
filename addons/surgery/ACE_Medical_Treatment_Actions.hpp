@@ -10,7 +10,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = QGVAR(enable_selfCheckFracture);
         medicRequired = QGVAR(fractureCheck_MedLevel);
-        treatmentTime = QGVAR(fractureCheck_Time);
+        treatmentTime = QFUNC(getTreatmentTime);
         items[] = {};
         condition = QUOTE(([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(fractureCheck)) && (GVAR(enable_fracture)));
         callbackSuccess = QFUNC(fractureSelect);
@@ -23,7 +23,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(closedReduction_MedLevel);
-        treatmentTime = QGVAR(closedTime);
+        treatmentTime = QFUNC(getTreatmentTime);
         items[] = {};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 1)] call FUNC(fractureCheck));
         callbackSuccess = QFUNC(closedReduction);
@@ -36,7 +36,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(openTime);
+        treatmentTime = QFUNC(getTreatmentTime);
         items[] = {"kat_plate"};
         consumeItem = 1;
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.5)] call FUNC(openReductionCheck));
@@ -50,7 +50,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(intermediateTime);
+        treatmentTime = QFUNC(getTreatmentTime);
         items[] = {"kat_retractor"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openReductionCheck));
         consumeItem = 0;
@@ -64,7 +64,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(incisionTime);
+        treatmentTime = QFUNC(getTreatmentTime);
         items[] = {"kat_scalpel"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(openReductionCheck));
         callbackSuccess = QFUNC(incision);
@@ -77,7 +77,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(intermediateTime);
+        treatmentTime = QFUNC(getTreatmentTime);
         items[] = {"kat_clamp"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call FUNC(openReductionCheck));
         consumeItem = 0;
@@ -91,7 +91,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(intermediateTime);
+        treatmentTime = QFUNC(getTreatmentTime);
         items[] = {"ACE_salineIV_250"};
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openReductionCheck));
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openReductionProgress));
@@ -104,7 +104,7 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"All"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(debridementAction_MedLevel);
-        treatmentTime = QGVAR(debrideTime);
+        treatmentTime = QFUNC(getTreatmentTime);
         items[] = {"kat_scalpel"};
         condition = QFUNC(debridementCheck);
         consumeItem = 0;
@@ -113,7 +113,7 @@ class ACE_Medical_Treatment_Actions {
     class NPWT: Debridement {
         displayName = CSTRING(Vacuum_Use);
         displayNameProgress = CSTRING(Vacuum_Action);
-        treatmentTime = QGVAR(npwtTime);
+        treatmentTime = QFUNC(getTreatmentTime);
         items[] = {"kat_vacuum"};
         sounds[] = {{QPATHTO_R(sounds\vacuum.ogg),8,1,15}};
         callbackSuccess = QFUNC(npwtTreatment);
