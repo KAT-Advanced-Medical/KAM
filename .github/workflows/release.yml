@@ -30,14 +30,13 @@ jobs:
           id: get_changelog
           run: |
             release_tag=$(git describe --tags --abbrev=0)
-            changelog=$(git log --pretty=format:"- %s" $release_tag..HEAD)
+            changelog=$(git log --pretty=format:"- %s" ${release_tag}..HEAD)
             echo "::set-output name=changelog::${changelog}"
         - uses: arma-actions/workshop-upload@v1
           with:
             itemId: '2841189207'
             contentPath: '/home/runner/work/KAM/KAM/releases/kam_*.zip'
             changelog: |
-              https://github.com/MiszczuZPolski/KAM/releases/tag/v${{ github.event.ref }}
 
               Changelog:
               ${{ steps.get_changelog.outputs.changelog }}
