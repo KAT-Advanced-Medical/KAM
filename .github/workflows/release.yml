@@ -27,13 +27,13 @@ jobs:
             draft: ${{ github.event.release.unpublished }}
             prerelease: ${{ github.event.release.prerelease }}
             token: ${{ secrets.GITHUB_TOKEN }}
-            artifacts: "./@Kat_Advanced_Medical_*.zip"
+            artifacts: "./@kam_*.zip"
             tag: ${{ github.event.release.tag_name }}
             body: ${{ github.event.release.body }}
         - uses: arma-actions/workshop-upload@v1
           with:
             itemId: '2841189207'
-            contentPath: './@Kat_Advanced_Medical_*.zip'
+            contentPath: './@kam_*.zip'
             changelog: 'https://github.com/MiszczuZPolski/KAM/releases/tag/v${{ github.event.release.tag_name }}'
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
