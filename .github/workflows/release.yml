@@ -22,7 +22,7 @@ jobs:
           uses: softprops/action-gh-release@v1
           with:
             files: |
-              KAM/release//@kam_*.zip
+              KAM/releases/@kam_*.zip
             draft: true
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
