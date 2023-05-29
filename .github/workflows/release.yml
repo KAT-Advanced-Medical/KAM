@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release-addon:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout the source code
+          uses: actions/checkout@v2
+        - name: Setup HEMTT
+          uses: arma-actions/hemtt@v1
+        - name: Run HEMTT build
+          run: hemtt release
+        - name: Move Release
+          run: |
+            version="${{ github.event.release.tag_name }}"
+            mv releases/kat-latest.zip "@Kat_Advanced_Medical_${version//[.]/_}.zip"
+        - name: Update Release with Files
+          id: create_version_release
+          uses: ncipollo/release-action@v1
+          with:
+            allowUpdates: true # Set this to false if you want to prevent updating existing releases
+            name: ${{ github.event.release.name }}
+            draft: ${{ github.event.release.unpublished }}
+            prerelease: ${{ github.event.release.prerelease }}
+            token: ${{ secrets.GITHUB_TOKEN }}
+            artifacts: "./@Kat_Advanced_Medical_*.zip"
+            tag: ${{ github.event.release.tag_name }}
+            body: ${{ github.event.release.body }}
+        - uses: arma-actions/workshop-upload@v1
+          with:
+            itemId: '2020940806'
+            contentPath: './@Kat_Advanced_Medical_*.zip'
+            changelog: 'https://github.com/KAT-Advanced-Medical/KAM/releases/tag/${{ github.event.release.tag_name }}'
+          env:
+            STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+            STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
