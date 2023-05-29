@@ -31,7 +31,7 @@ jobs:
           run: |
             release_tag=$(git describe --tags --abbrev=0)
             changelog=$(git log --pretty=format:"- %s" ${release_tag}..HEAD)
-            echo "::set-output name=changelog::${changelog}"
+            echo "{name}={value}" >> $GITHUB_OUTPUT
         - uses: arma-actions/workshop-upload@v1
           with:
             itemId: '2841189207'
@@ -39,7 +39,7 @@ jobs:
             changelog: |
 
               Changelog:
-              ${{ steps.get_changelog.outputs.changelog }}
+              ${{ steps.get_changelog.outputs.GITHUB_OUTPUT }}
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
             STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
