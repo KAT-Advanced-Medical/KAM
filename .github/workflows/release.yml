@@ -43,8 +43,9 @@ jobs:
             itemId: '2841189207'
             contentPath: './@Kat-Advanced-Medical-*.zip'
             changelog: |
-              'https://github.com/MiszczuZPolski/KAM/releases/tag/v${{ env.VERSION }}'
-              ${{ env.CHANGELOG }}
+              https://github.com/MiszczuZPolski/KAM/releases/tag/v${{ env.VERSION }}
+              
+              ${{ github.event.release.body }}
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
             STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
