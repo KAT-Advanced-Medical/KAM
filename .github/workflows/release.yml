@@ -30,11 +30,21 @@ jobs:
             draft: true
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        - uses: arma-actions/workshop-upload@v1
+        - name: Fetch Release Changelog
+          id: fetch_changelog
+          run: |
+            release_info=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+                          "https://api.github.com/repos/MiszczuZPolski/KAM/releases/tags/${{ env.VERSION }}")
+            changelog=$(echo "$release_info" | jq -r '.body')
+            echo "::set-output name=changelog::$changelog"
+        - name: Update to Steam Workshop
+          uses: arma-actions/workshop-upload@v1
           with:
             itemId: '2841189207'
             contentPath: './@Kat-Advanced-Medical-*.zip'
-            changelog: 'https://github.com/MiszczuZPolski/KAM/releases/tag/v${{ env.VERSION }}'
+            changelog: |
+              'https://github.com/MiszczuZPolski/KAM/releases/tag/v${{ env.VERSION }}'
+              ${{ steps.fetch_changelog.outputs.changelog }}
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
             STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
