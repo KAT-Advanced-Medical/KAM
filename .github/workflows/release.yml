@@ -30,8 +30,6 @@ jobs:
         - name: Set VERSION env
           run: echo "VERSION=${GITHUB_REF:11}" >> $GITHUB_ENV
         - uses: actions/download-artifact@v2
-          with:
-            name: releases
         - name: Update Release with Files
           uses: softprops/action-gh-release@v1
           with:
