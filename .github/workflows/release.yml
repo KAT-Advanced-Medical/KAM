@@ -34,14 +34,14 @@ jobs:
           uses: softprops/action-gh-release@v1
           with:
             files: |
-              releases/*
+              home/runner/work/KAM/KAM/artifact/*
             draft: true
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         - uses: arma-actions/workshop-upload@v1
           with:
             itemId: '2841189207'
-            contentPath: 'releases/kam_*.zip'
+            contentPath: 'home/runner/work/KAM/KAM/artifact/*'
             changelog: 'https://github.com/MiszczuZPolski/KAM/releases/tag/v${{ env.VERSION }}'
           env:
             STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
