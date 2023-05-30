@@ -22,7 +22,7 @@ jobs:
         - name: Move release to releases folder
           run:
             version="${{ github.event.release.tag_name }}"
-            mv release/kat-latest.zip "@Kat-Advanced-Medical-${version//[.]/_}.zip"
+            mv releases/kat-latest.zip "@Kat-Advanced-Medical-${version//[.]/_}.zip"
         - name: Update Release with Files
           uses: softprops/action-gh-release@v1
           with:
