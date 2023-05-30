@@ -3,9 +3,8 @@ name: Documentation
 on:
   push:
     branches:
-    - master
-  workflow_dispatch:
-
+    - master 
+    
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -23,3 +22,13 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: python3 tools/deploy.py
+
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release Drafter
+        if: github.repository == 'KAT-Advanced-Medical/KAM'
+        uses: release-drafter/release-drafter@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
