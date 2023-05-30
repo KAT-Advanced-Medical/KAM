@@ -100,28 +100,21 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Debride_Use);
         displayNameProgress = CSTRING(Debride_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
+        treatmentLocations = QGVAR(debridementAction_Location);
         allowedSelections[] = {"All"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
+        medicRequired = QGVAR(debridementAction_MedLevel);
         treatmentTime = QGVAR(debrideTime);
         items[] = {"kat_scalpel"};
         condition = QFUNC(debridementCheck);
         consumeItem = 0;
         callbackSuccess = QFUNC(debridement);
     };
-    class NPWT: BasicBandage {
+    class NPWT: Debridement {
         displayName = CSTRING(Vacuum_Use);
         displayNameProgress = CSTRING(Vacuum_Action);
-        category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
-        allowedSelections[] = {"All"};
-        allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(npwtTime);
         items[] = {"kat_vacuum"};
-        condition = QFUNC(debridementCheck);
-        consumeItem = 0;
         sounds[] = {{QPATHTO_R(sounds\vacuum.ogg),8,1,15}};
         callbackSuccess = QFUNC(npwtTreatment);
     };
