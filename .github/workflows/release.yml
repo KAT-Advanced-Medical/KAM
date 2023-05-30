@@ -35,7 +35,7 @@ jobs:
         - uses: arma-actions/workshop-upload@v1
           with:
             itemId: '2841189207'
-            contentPath: 'home/runner/work/KAM/KAM/releases/kam_*.zip'
+            contentPath: './home/runner/work/KAM/KAM/releases/kam_*.zip'
             changelog: |
 
               Changelog:
