@@ -23,6 +23,8 @@ jobs:
           run:
             version="${{ github.event.release.tag_name }}"
             mv releases "@Kat-Advanced-Medical-${{ env.VERSION }}"
+        - name: Zip release files for GitHub
+          run: zip -r "@Kat-Advanced-Medical-${{ env.VERSION }}.zip" "@Kat-Advanced-Medical-${{ env.VERSION }}"
         - name: Update Release with Files
           uses: softprops/action-gh-release@v1
           with:
