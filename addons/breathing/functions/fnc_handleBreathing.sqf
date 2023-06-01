@@ -111,9 +111,42 @@ if (!local _unit) then {
         };
 
         if !(_airway) exitWith {
-            _output = -0.3 * _multiplierNegative;
+            // If either occluded or unmitigated obstruction
+            if ( (!_overstretch && (_unit getVariable [QEGVAR(airway,obstruction), false])) || (_unit getVariable [QEGVAR(airway,occluded), false])) then {
+                if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
+                    if(_BVMInUse) then {
+                        if(_oxygenAssisted) then {
+                            _output = -0.05 * GVAR(SpO2_PerfusionMultiplier);
+                        } else {
+                            _output = -0.15 * GVAR(SpO2_PerfusionMultiplier);
+                        };
+                    } else {
+                        _output = -0.3 * GVAR(SpO2_PerfusionMultiplier);
+                    };
+                } else {
+                    if (_BVMInUse) then {
+                        if(_oxygenAssisted) then {
+                            _output = -0.01 * _multiplierNegative;
+                        } else {
+                            _output = -0.12 * _multiplierNegative;
+                        };
+                    } else {
+                        _output =  -0.2 * _multiplierNegative;
+                    };
+                };
 
-            if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) || _breathing)) then {
+                _finalOutput = _status + _output;
+
+                if (_finalOutput > 100) then {
+                    _finalOutput = 100;
+                };
+
+                if (_finalOutput < 1) then {
+                    _finalOutput = 1;
+                };
+
+                _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
+            } else{
                 if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
                     if(_BVMInUse) then {
                         if(_oxygenAssisted) then {
@@ -127,27 +160,27 @@ if (!local _unit) then {
                 } else {
                     if (_BVMInUse) then {
                         if(_oxygenAssisted) then {
-                            _output = 0.5 * _multiplierPositive;
+                            _output = 0.5 * _multiplierNegative;
                         } else {
-                            _output = 0.2 * _multiplierPositive;
+                            _output = 0.2 * _multiplierNegative;
                         };
                     } else {
-                        _output = 0.12 * _multiplierPositive;
+                        _output =  0.12 * _multiplierNegative;
                     };
                 };
-            };
-            
-            _finalOutput = _status + _output;
 
-            if (_finalOutput > 100) then {
-                _finalOutput = 100;
-            };
+                _finalOutput = _status + _output;
 
-            if (_finalOutput < 1) then {
-                _finalOutput = 1;
-            };
+                if (_finalOutput > 100) then {
+                    _finalOutput = 100;
+                };
 
-            _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
+                if (_finalOutput < 1) then {
+                    _finalOutput = 1;
+                };
+
+                _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
+            }
         };
 
         if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
