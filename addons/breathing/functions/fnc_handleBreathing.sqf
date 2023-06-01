@@ -111,7 +111,7 @@ if (!local _unit) then {
         };
 
         if !(_airway) exitWith {
-            // If either occluded or unmitigated obstruction
+            // Check if airway has unmitigated obstruction or is occluded
             if ( (!_overstretch && (_unit getVariable [QEGVAR(airway,obstruction), false])) || (_unit getVariable [QEGVAR(airway,occluded), false])) then {
                 if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
                     if(_BVMInUse) then {
