@@ -93,7 +93,7 @@ _unit setVariable [QEGVAR(surgery,sedated), false, true];
 
 _unit setVariable [QEGVAR(chemical,enteredPoison), false, true];
 _unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime),60], true];
-_unit setVariable [QEGVAR(chemical,poisenType), "", true];
+_unit setVariable [QEGVAR(chemical,poisonType), "", true];
 _unit setVariable [QEGVAR(chemical,airPoisoning), false, true];
 _unit setVariable [QEGVAR(chemical,CS), false, true];
 _unit setVariable [QEGVAR(chemical,gasmask_durability), 10, true];

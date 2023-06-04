@@ -27,7 +27,7 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_gastype"];
         params["_args","_handler"];
         _args params ["_logic","_unit"];
         if(!(_logic getVariable [QGVAR(gas_active),false]) || !(alive _unit) || isNull _unit) then {
-            _unit setVariable [QGVAR(enteredPoison),false,true];
+            _unit setVariable [QGVAR(enteredPoison), false, true];
             [_handler] call CBA_fnc_removePerFrameHandler;
         };
     },
@@ -46,11 +46,11 @@ private _skill = _unit skill "aimingAccuracy";
         };
 
         if ((_unit distance _pos) <= _radius_max && !(_unit getVariable [QGVAR(enteredPoison), false])) then {
-            _unit setVariable[QGVAR(enteredPoison), true, true];
+            _unit setVariable [QGVAR(enteredPoison), true, true];
             private _fnc_afterwait = {
-                params["_unit", "_gastype", "_pos", "_skill"];
+                params ["_unit", "_gastype", "_pos", "_skill"];
                 if !(goggles _unit in GVAR(availGasmaskList)) exitwith {
-                    if (_gastype isEqualto "CS") then {
+                    if (_gastype isEqualTo "CS") then {
                         while {_unit distance _pos < 10 && _unit getVariable [QGVAR(enteredPoison), false]} do {
                             _unit say3D QGVAR(cough_1);
                             _unit setskill ["aimingAccuracy", 0.001];
@@ -88,11 +88,11 @@ private _skill = _unit skill "aimingAccuracy";
             for "_i" from 0 to 1 step 0 do {
                 _timeleft = _timeleft - 1;
                 if (_timeleft <= 0) exitwith {
-                    [_unit, _gastype, _pos, _skill] spawn _fnc_afterwait;
+                    [_unit, _gastype, _pos, _skill] call _fnc_afterwait;
                     _i = 2;
                 };
                 if (_gastype isEqualto "CS") exitwith {
-                    [_unit, _gastype, _pos, _skill] spawn _fnc_afterwait;
+                    [_unit, _gastype, _pos, _skill] call _fnc_afterwait;
                     _i = 2;
                 };
                 _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];

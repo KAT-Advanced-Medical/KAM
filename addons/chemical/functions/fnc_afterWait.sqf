@@ -40,7 +40,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
             };
 
             if !(goggles _unit in GVAR(availGasmasklist) && _timeleft > 0) then {
-                _unit setVariable [QGVAR(poisentype), _gastype, true];
+                _unit setVariable [QGVAR(poisonType), _gastype, true];
                 switch (_gastype) do {
                     case "Toxic": {
                         _unit setVariable [QGVAR(airPoisoning), true, true];
@@ -55,7 +55,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
             };
 
             if (_timeleft <= 0 && _unit getVariable [QGVAR(enteredPoison), false]) then {
-                _unit setVariable [QGVAR(poisentype), _gastype, true];
+                _unit setVariable [QGVAR(poisonType), _gastype, true];
                 switch (_gastype) do {
                     case "Toxic": {
                         _unit setVariable [QGVAR(airPoisoning), true, true];
@@ -79,7 +79,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
     ] call CBA_fnc_addPerFrameHandler;
 } else {
     if (_unit getVariable [QGVAR(enteredPoison), false]) then {
-        _unit setVariable [QGVAR(poisentype), _gastype, true];
+        _unit setVariable [QGVAR(poisonType), _gastype, true];
         switch (_gastype) do {
             case "Toxic": {
                 _unit setVariable [QGVAR(airPoisoning), true, true];

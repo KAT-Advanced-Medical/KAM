@@ -9,16 +9,14 @@
 * 1: configname (CfgGlasses) <strinG>
 *
 * Return Value:
-* list <ARRAY>
+* List <ARRAY>
 *
 * Example:
 * [backpack player, "Cfgweapons"] call kat_chemical_fnc_getlist;
 *
 * Public: No
 */
-params [
-    "_str", ["_cfg", "", [""]]
-];
+params ["_str", ["_cfg", "", [""]]];
 
 private _clipstring = _str splitstring ", ""[]()'";
 private _array = [];

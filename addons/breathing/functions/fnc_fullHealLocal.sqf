@@ -42,10 +42,10 @@ _unit setVariable [QACEGVAR(medical,pain), 0, true];
 _unit setVariable [QACEGVAR(medical,bloodVolume), 6.0, true];
 
 // GAS
-_unit setVariable [QEGVAR(chemical, enteredPoison), false, true];
+_unit setVariable [QEGVAR(chemical,enteredPoison), false, true];
 _unit setVariable [QEGVAR(chemical,airPoisoning), false, true];
 _unit setVariable [QEGVAR(chemical,isTreated) ,true,true];
-_unit setVariable [QEGVAR(chemical, CS), false, true];
+_unit setVariable [QEGVAR(chemical,CS), false, true];
 _unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime), 60], true];
 if (_unit getVariable [QEGVAR(chemical, painEffect), 0] != 0) then {
     KAT_PAIN_EFFECT ppEffectEnable false;

@@ -337,7 +337,7 @@
             <Polish>Minimalny zasięg musi być mniejszy niż maksymalny zasięg</Polish>
             <Czech>Minimální vzdálenost musí být menší než Maximální vzdálenost!</Czech>
         </Key>
-        <Key ID="STR_KAT_Chemical_Intoxikation">
+        <Key ID="STR_KAT_Chemical_Intoxication">
             <English>Intoxication</English>
             <Spanish>Intoxicación</Spanish>
             <German>Intoxikation</German>
