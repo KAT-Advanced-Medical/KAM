@@ -4,5 +4,5 @@
 
 ### IMPORTANT
 
-- [ ] [Development Guidelines](https://ace3.acemod.org/wiki/development/) are read, understood and applied.
-- [ ] Title of this PR uses our standard template `Component - Add|Fix|Improve|Change|Make|Remove {changes}`.
+- [Development Guidelines](https://ace3.acemod.org/wiki/development/) are read, understood and applied.
+- Title of this PR uses our standard template `Component - Add|Fix|Improve|Change|Make|Remove {changes}`.
