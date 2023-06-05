@@ -28,8 +28,7 @@ _control ctrlRemoveAllEventHandlers "SetFocus";
 private _fnc_onUnload = {
     private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
     if (isNull _logic) exitWith {};
-    if!(isNull attachedTo _logic) then {
-    };
+    if !(isNull attachedTo _logic) then {};
 };
 
 scopeName "Main";
@@ -37,11 +36,11 @@ private _fnc_errorAndClose = {
     params ["_msg"];
     _display closeDisplay 0;
     deleteVehicle _logic;
-    [_msg] call ace_zeus_fnc_showMessage;
+    [_msg] call ACEFUNC(zeus,showMessage);
     breakOut "Main";
 };
 
-if!(isNull attachedTo _logic) then {
+if !(isNull attachedTo _logic) then {
     private _object = attachedTo _logic;
     switch (true) do {
         case (isNull _object): {
@@ -87,19 +86,19 @@ private _fnc_onConfirm = {
         if (isNull _logic) exitWith {};
         
         
-        if!(isNull attachedTo _logic) then {
+        if !(isNull attachedTo _logic) then {
             private _object = attachedto _logic;
             private _position = getPos _object;
             
-            [_logic,_position,_radius_max,_radius_min,_gastype] spawn FUNC(gasCheck);
+            [_logic,_position,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
 
-            if(_display getVariable[QGVAR(ui_sealable),false]) then {
+            if (_display getVariable[QGVAR(ui_sealable),false]) then {
                 [_object] call FUNC(createSealAction);
             };
 
         } else {
             private _position = getPos _logic;
-            [_logic,_position,_radius_max,_radius_min,_gastype] spawn FUNC(gasCheck);
+            [_logic,_position,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
         };
     };
 };

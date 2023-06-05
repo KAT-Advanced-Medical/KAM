@@ -9,7 +9,7 @@ class CfgCloudlets {
 
     class CAS_GAS_Explosion_FX_Script: Default {
         lifeTime = 0;
-        beforeDestroyScript= QPATHTOF(functions\fnc_CASCreateGas.sqf); 
+        beforeDestroyScript = QPATHTOF(functions\fnc_CASCreateGas.sqf); 
     };
     
     class CAS_GAS_Explosion_FX: Default {

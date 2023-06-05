@@ -10,13 +10,12 @@
  * NONE
  *
  * Example:
- * [player] call kat_chemical_fnc_checkGasMaskDur;
+ * [player, cursorObject] call kat_chemical_fnc_checkGasMaskDur;
  *
  * Public: No
 */
 
 params ["_patient","_medic"];
-
 
 if (_medic isEqualTo _patient) then {
     [_medic, "Gear", 1] call ACEFUNC(common,doGesture);

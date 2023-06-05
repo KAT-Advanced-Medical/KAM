@@ -2089,5 +2089,9 @@
             <German>Alternativer Ton</German>
             <Czech>Střídavý tón</Czech>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
+            <English>AED-X alarm SpO2 threshold</English>
+            <Czech>Práh AED-X pro aktivaci alarmu Pulzního Oxymetru</Czech>
+        </Key>
     </Package>
 </Project>
