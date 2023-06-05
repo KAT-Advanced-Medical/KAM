@@ -20,11 +20,11 @@
     disableSerialization;
     private _display = uiNamespace getVariable ["ace_medical_gui_menuDisplay", displayNull];
     private _ctrlBodyImage = _display displayCtrl IDC_BODY_GROUP;
-    private _torso_infectet = _display ctrlCreate ["RscPicture", 6011,_ctrlBodyImage];
-    _torso_infectet ctrlShow false;
-    _torso_infectet ctrlSetText QPATHTOF(data\body_image\torso_i.paa);
-    _torso_infectet ctrlSetPosition[0,0,POS_W(12.33),POS_H(12.33)];
-    _torso_infectet ctrlCommit 0;
+    private _torso_infected = _display ctrlCreate ["RscPicture", 6011,_ctrlBodyImage];
+    _torso_infected ctrlShow false;
+    _torso_infected ctrlSetText QPATHTOF(data\body_image\torso_i.paa);
+    _torso_infected ctrlSetPosition[0,0,POS_W(12.33),POS_H(12.33)];
+    _torso_infected ctrlCommit 0;
 };
 
 params ["_ctrlGroup", "_target"];
@@ -32,7 +32,7 @@ params ["_ctrlGroup", "_target"];
 // Get tourniquets, damage, and blood loss for target
 private _tourniquets = GET_TOURNIQUETS(_target);
 private _fractures = GET_FRACTURES(_target);
-private _infectedtype = _target getVariable [QGVAR(poisenType),""];
+private _infectedtype = _target getVariable [QGVAR(poisonType),""];
 private _bodyPartDamage = _target getVariable [QACEGVAR(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0]];
 private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
 

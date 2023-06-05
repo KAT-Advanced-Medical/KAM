@@ -22,8 +22,8 @@
 
 params ["_logic","_pos","_radius_max","_radius_min","_gastype"];
 
-if(_gastype isEqualTo "") then {_gastype = "Toxic"};
-if(_radius_min isEqualTo 0) then {_radius_min = _radius_max / 2};
+if (_gastype isEqualTo "") then {_gastype = "Toxic"};
+if (_radius_min isEqualTo 0) then {_radius_min = _radius_max / 2};
 _logic setVariable [QGVAR(gas_active), true, true];
 _logic setVariable [QGVAR(gas_playerArr), [], true];
 _logic setVariable [QGVAR(gas_pos), _pos, true];
@@ -31,8 +31,8 @@ _logic setVariable [QGVAR(gas_pos), _pos, true];
 
 private _checkplayers = [{
     params ["_args"];
-    _args params ["_logic","_pos","_radius_max","_radius_min","_gastype"];
-    private _playerARR = _logic getVariable [QGVAR(gas_playerArr),[]];
+    _args params ["_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
+    private _playerARR = _logic getVariable [QGVAR(gas_playerArr), []];
     private _allUnits = if (missionNamespace getVariable [QGVAR(affectAI), false]) then {allUnits} else {allPlayers};
     {
         private _posString = toString (_pos);
@@ -48,7 +48,7 @@ private _checkplayers = [{
                 _logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
             };
 
-            if(_x in _playerARR && _distance > _radius_max) then {
+            if (_x in _playerARR && _distance > _radius_max) then {
                 private _arrPos = _playerARR find _x;
                 _playerARR deleteAt _arrPos;
                 _logic setVariable [QGVAR(gas_playerArr), _playerARR, true];

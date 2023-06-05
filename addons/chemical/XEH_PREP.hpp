@@ -31,5 +31,5 @@ PREP(initModule);
 PREP(spawnGasSmoke);
 PREP(spawnSmoke);
 PREP(throwGrenade);
-PREP(ui_gasModul);
+PREP(ui_gasModule);
 PREP(updateBodyImage);
