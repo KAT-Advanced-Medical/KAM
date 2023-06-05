@@ -126,7 +126,7 @@ class GVAR(kat_RscGasModul): RscDisplayAttributes {
             };
         };
         class ButtonOK: ButtonOK {
-            onSetFocus = QUOTE(_this call FUNC(ui_gasModul));
+            onSetFocus = QUOTE(_this call FUNC(ui_gasModule));
         };
         class ButtonCancel: ButtonCancel {};
     };
