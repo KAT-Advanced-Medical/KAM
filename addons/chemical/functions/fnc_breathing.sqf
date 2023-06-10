@@ -20,7 +20,7 @@ params ["_unit"];
 [
     {
         params ["_unit"];
-        goggles _unit in GVAR(availGasmaskList)
+        (goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList),[]])
     },
     {
         params ["_unit"];
@@ -28,7 +28,7 @@ params ["_unit"];
             {
                 params["_args", "_handler"];
                 _args params ["_unit"];
-                if !(goggles _unit in GVAR(availGasmaskList) || !(alive _unit) || _unit getVariable [QACEGVAR(medical,heartrate), 80] <= 0) then {
+                if (!(goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList),[]])) || !(alive player) || _unit getVariable [QACEGVAR(medical,heartrate), 80] <= 0) then {
                     [_handler] call CBA_fnc_removePerFrameHandler;
                     [_unit] call FUNC(breathing);
                 } else {

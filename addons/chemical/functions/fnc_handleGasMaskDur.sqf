@@ -19,11 +19,11 @@ params ["_unit"];
 [
     {
         params["_unit"];
-        !isNil QGVAR(availGasmaskList) && _unit getVariable [QGVAR(enteredPoison), false]
+        !(missionNamespace getVariable [QGVAR(availGasmaskList),[]] isEqualTo []) && _unit getVariable [QGVAR(enteredPoison), false]
     },
     {
         params["_unit"];
-        if(_unit getVariable [QGVAR(enteredPoison), false] && goggles _unit in GVAR(availGasmaskList)) then {
+        if(_unit getVariable [QGVAR(enteredPoison), false] && (goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList),[]])) then {
             private _timeEntered = CBA_missionTime;
             private _maxTime = missionNamespace getVariable [QGVAR(gasmask_durability),900];
             private _currentDurability = _unit getVariable [QGVAR(gasmask_durability),10];
@@ -61,7 +61,7 @@ params ["_unit"];
             [
                 {
                     params["_unit"];
-                    _unit getVariable [QGVAR(enteredPoison), false] || goggles _unit in GVAR(availGasmaskList)
+                    _unit getVariable [QGVAR(enteredPoison), false] || (goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList),[]])
                 },
                 {
                     [_unit] call FUNC(handleGasMaskDur);

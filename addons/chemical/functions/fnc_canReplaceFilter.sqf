@@ -16,8 +16,6 @@
 
 params ["_target"];
 
-if (goggles _target in GVAR(availGasmaskList) && 'kat_gasmaskFilter' in items _target) then {
-    true
-} else {
-    false
-};
+if (missionNamespace getVariable [QGVAR(availGasmaskList),[]] isEqualTo []) exitWith {false};
+
+(goggles _target) in (missionNamespace getVariable [QGVAR(availGasmaskList),[]]) && 'kat_gasmaskFilter' in (items _target);

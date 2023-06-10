@@ -49,7 +49,7 @@ private _skill = _unit skill "aimingAccuracy";
             _unit setVariable [QGVAR(enteredPoison), true, true];
             private _fnc_afterwait = {
                 params ["_unit", "_gastype", "_pos", "_skill"];
-                if !(goggles _unit in GVAR(availGasmaskList)) exitwith {
+                if !((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList),[]])) exitwith {
                     if (_gastype isEqualTo "CS") then {
                         while {_unit distance _pos < 10 && _unit getVariable [QGVAR(enteredPoison), false]} do {
                             _unit say3D QGVAR(cough_1);
