@@ -14,8 +14,8 @@
  * Public: No
 */
 
-params ["_target"];
+params ["_unit"];
 
-if (missionNamespace getVariable [QGVAR(availGasmaskList),[]] isEqualTo []) exitWith {false};
+if (missionNamespace getVariable [QGVAR(availGasmaskList), []] isEqualTo []) exitWith {false};
 
-(goggles _target) in (missionNamespace getVariable [QGVAR(availGasmaskList),[]]) && 'kat_gasmaskFilter' in (items _target);
+(goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []]) && 'kat_gasmaskFilter' in (items _unit);
