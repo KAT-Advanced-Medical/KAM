@@ -98,7 +98,7 @@ class CfgVehicles {
                 };
                 class Refill_OxygenTank_150_Facility {
                     displayName = CSTRING(RefillPortableOxygenTank_150);
-                    condition = QUOTE('kat_oxygenTank_150_Empty' in (items _player) && _player call ACEFUNC(medical_treatment,isInMedicalFacility));
+                    condition = QUOTE((GVAR(locationProvideOxygen) in [ARR_2(2,3)]) && 'kat_oxygenTank_150_Empty' in (items _player) && _player call ACEFUNC(medical_treatment,isInMedicalFacility));
                     statement = QUOTE([ARR_3(_player,'kat_oxygenTank_150', GVAR(PortableOxygenTank_RefillTime))] call FUNC(refillOxygenTank));
                     showDisabled = 0;
                     exceptions[] = 
@@ -114,7 +114,7 @@ class CfgVehicles {
                 };
                 class Refill_OxygenTank_300_Facility: Refill_OxygenTank_150_Facility {
                     displayName = CSTRING(RefillPortableOxygenTank_300);
-                    condition = QUOTE('kat_oxygenTank_300_Empty' in (items _player) && _player call ACEFUNC(medical_treatment,isInMedicalFacility));
+                    condition = QUOTE((GVAR(locationProvideOxygen) in [ARR_2(2,3)]) && 'kat_oxygenTank_300_Empty' in (items _player) && _player call ACEFUNC(medical_treatment,isInMedicalFacility));
                     statement = QUOTE([ARR_3(_player,'kat_oxygenTank_300', GVAR(PortableOxygenTank_RefillTime)*2)] call FUNC(refillOxygenTank));
                 };
             };
@@ -128,6 +128,7 @@ class CfgVehicles {
                 class RefillActionsVehicle {
                     displayName = CSTRING(RefillPortableOxygenTanks);
                     icon = QPATHTOF(ui\oxygenTank_ui.paa);
+                    condition = QUOTE(GVAR(locationProvideOxygen) in [ARR_2(1,3)]);
                     class Refill_OxygenTank_150_Vehicle {
                         displayName = CSTRING(RefillPortableOxygenTank_150);
                         condition = QUOTE('kat_oxygenTank_150_Empty' in (items _player) && _target call ACEFUNC(medical_treatment,isMedicalVehicle));

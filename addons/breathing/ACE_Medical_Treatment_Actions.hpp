@@ -236,7 +236,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(UseBVM_PortableOxygen_Progress);
         medicRequired = QGVAR(medLvl_BVM_Oxygen);
         items[] = {"kat_BVM"};
-        condition = QUOTE(_patient call FUNC(canUseBVM) && _medic call FUNC(hasOxygenTank) && !(_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)));
+        condition = QUOTE(_patient call FUNC(canUseBVM) && _medic call FUNC(hasOxygenTank) && (GVAR(locationProvideOxygen) isEqualTo 0 || !((GVAR(locationProvideOxygen) in [ARR_2(2,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalFacility)) || ((GVAR(locationProvideOxygen) in [ARR_2(1,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalVehicle))))));
         callbackStart = QUOTE([ARR_5(_medic, _patient, false, true, true)] call FUNC(useBVM));
         callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
         callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
@@ -246,7 +246,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(UseBVM_Oxygen_Progress);
         medicRequired = QGVAR(medLvl_BVM_Oxygen);
         items[] = {"kat_BVM"};
-        condition = QUOTE(_patient call FUNC(canUseBVM) && (_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)));
+        condition = QUOTE(_patient call FUNC(canUseBVM) && ((GVAR(locationProvideOxygen) in [ARR_2(2,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalFacility)) || (GVAR(locationProvideOxygen) in [ARR_2(1,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalVehicle))));
         callbackStart = QUOTE([ARR_4(_medic, _patient, false, true)] call FUNC(useBVM));
         callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
         callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
