@@ -46,9 +46,8 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Inject_Box_Painkillers);
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
-        items[] = {};
+        items[] = {"kat_Painkiller"};
         callbackSuccess = QFUNC(treatmentAdvanced_Painkillers);
-        condition = "[_medic, 'kat_Painkiller'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Painkiller'] call ace_common_fnc_hasMagazine";
         litter[] = {};
         icon = QPATHTOF(ui\icon_painkillers_action.paa);
         animationPatient = "";
@@ -65,9 +64,8 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Carbonate);
         treatmentTime = QGVAR(treatmentTime_Carbonate);
-        items[] = {};
+        items[] = {"kat_Carbonate"};
         litter[] = {};
-        condition = "[_medic, 'kat_Carbonate'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Carbonate'] call ace_common_fnc_hasMagazine";
         callbackSuccess = QFUNC(treatmentAdvanced_Carbonate);
         sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
     };
@@ -78,9 +76,8 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Pervitin);
         treatmentTime = QGVAR(treatmentTime_Pervitin);
-        items[] = {};
+        items[] = {"kat_Pervitin"};
         litter[] = {};
-        condition = "[_medic, 'kat_Pervitin'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Pervitin'] call ace_common_fnc_hasMagazine";
         callbackSuccess = QFUNC(treatmentAdvanced_Pervitin);
         sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
     };
@@ -90,9 +87,8 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
         treatmentTime = 5;
-        items[] = {};
+        items[] = {"kat_Caffeine"};
         litter[] = {};
-        condition = "[_medic, 'kat_Caffeine'] call ace_common_fnc_hasMagazine || [_patient, 'kat_Caffeine'] call ace_common_fnc_hasMagazine";
         callbackSuccess = QFUNC(treatmentAdvanced_Caffeine);
         sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
     };
