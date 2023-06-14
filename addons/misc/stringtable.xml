@@ -453,7 +453,7 @@
             <English>Sets whether vehicle's medical supplies can be used while treating and in which order</English>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicle">
-            <English>Vehicle's Equipment First (except self-treatment)</English>
+            <English>Vehicle's Equipment First (Except self-treatment)</English>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleAlways">
             <English>Vehicle's Equipment First (Always)</English>
