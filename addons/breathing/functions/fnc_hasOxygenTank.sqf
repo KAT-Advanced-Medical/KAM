@@ -19,7 +19,7 @@
 params ["_target",["_isVehicle",false]];
 
 if !(_isVehicle) exitWith {
-	[_target, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine) || [_target, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine);
+    [_target, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine) || [_target, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine);
 };
 
 "kat_oxygenTank_150" in (magazineCargo _target) || "kat_oxygenTank_300" in (magazineCargo _target);
