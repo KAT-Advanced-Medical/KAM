@@ -237,7 +237,17 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_BVM_Oxygen);
         items[] = {"kat_BVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM) && _medic call FUNC(hasOxygenTank) && !(_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)));
-        callbackStart = QUOTE([ARR_5(_medic, _patient, false, true, true)] call FUNC(useBVM));
+        callbackStart = QUOTE([ARR_5(_medic, _patient, false, true, 1)] call FUNC(useBVM));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
+    };
+    class UseBVMPortableOxygenVehicle: UseBVM {
+        displayName = CSTRING(UseBVM_PortableOxygen_Vehicle);
+        displayNameProgress = CSTRING(UseBVM_PortableOxygen_Vehicle_Progress);
+        medicRequired = QGVAR(medLvl_BVM_Oxygen);
+        items[] = {"kat_BVM"};
+        condition = QUOTE(_patient call FUNC(canUseBVM) && [ARR_2((vehicle _medic),true)] call FUNC(hasOxygenTank) && ((vehicle _medic) != _medic) && (vehicle _medic) isEqualTo (vehicle _medic));
+        callbackStart = QUOTE([ARR_5(_medic, _patient, false, true, 2)] call FUNC(useBVM));
         callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
         callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), false, true)]);
     };
