@@ -209,12 +209,12 @@ if (!local _unit) then {
         if(GVAR(staminaLossAtLowSPO2)) then {
             if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(lowSPO2Level)}) then {
                 if (ACEGVAR(advanced_fatigue,enabled)) then {
-                    ["LSDF", 1.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
+                    ["kat_LSDF", 1.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
                 } else {
                     _unit setStamina(getStamina _unit - 3);
                 };
             } else {
-                ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+                ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
             };
         };
 
