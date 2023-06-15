@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="skn_nbc_units\data\m04_mask_glass_dry_smdi.paa";
+	texture="x\kat\addons\chemical\models\kat_mask_m04_texture.paa";
 	uvSource="tex";
 	class uvTransform
 	{
