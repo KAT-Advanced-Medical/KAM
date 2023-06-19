@@ -203,7 +203,7 @@ class CfgVehicles {
             {
                 class Armband {
                     displayName = CSTRING(Armband_Sling);
-                    condition = QUOTE([ARR_2(_player, ""kat_armband_red_cross"")] call ACEFUNC(common,hasItem) || [ARR_2(_player, ""kat_armband_medic"")] call ACEFUNC(common,hasItem) || [ARR_2(_player, ""kat_armband_doctor"")] call ACEFUNC(common,hasItem) || [ARR_2(_player, ""kat_armband_kat"")] call ACEFUNC(common,hasItem) || !(_player getVariable [ARR_2(QQGVAR(isLeftArmFree), false)]) || !(_player getVariable [ARR_2(QQGVAR(isRightArmFree), false)]) || !(_player getVariable [ARR_2(QQGVAR(isLeftLegFree), false)]) || !(_player getVariable [ARR_2(QQGVAR(isRightLegFree), false)]));
+                    condition = QUOTE(_player call FUNC(checkArmbandCondition));
                     statement = "";
                     icon = QPATHTOF(ui\ArmbandWhiteCross.paa);
                     showDisabled = 1;

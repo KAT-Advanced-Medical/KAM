@@ -16,9 +16,9 @@
  * Public: No
  */
 
-params ["_unit", "_limbnumber"];
+params ["_unit", "_limbNumber"];
 
-switch (_limbnumber) do 
+switch (_limbNumber) do 
 {
     case 0: { 
         private _objectLA = _unit getVariable [QGVAR(whichArmabndisSlingedLA), ObjNull];

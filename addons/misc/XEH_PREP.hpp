@@ -3,6 +3,7 @@ PREP(addActionRaise);
 PREP(addIVbag);
 PREP(addPassengersActions);
 PREP(attachStretcher);
+PREP(checkArmbandCondition);
 PREP(conditionIV);
 PREP(conditionIVstand);
 PREP(handleRespawn);
