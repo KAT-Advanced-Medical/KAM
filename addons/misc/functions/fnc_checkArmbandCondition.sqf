@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Miss Heda
- * Checks if conditions are met for armband sling option to be displayed
+ * Checks if conditions are met for armband parent option to be displayed
  *
  * Arguments:
  * 0: Unit <OBJECT>

@@ -536,19 +536,19 @@
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Left_Arm">
             <English>Sling to left arm</English>
-            <German>Binde an den linker Arm</German>
+            <German>Binde an den linken Arm</German>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Right_Arm">
             <English>Sling to right arm</English>
-            <German>Binde an den rechter Arm</German>
+            <German>Binde an den rechten Arm</German>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Left_Leg">
             <English>Sling to left leg</English>
-            <German>Binde an das linkes Bein</German>
+            <German>Binde an das linke Bein</German>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Right_Leg">
             <English>Sling to right leg</English>
-            <German>Binde an das rechtes Bein</German>
+            <German>Binde an das rechte Bein</German>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Left_Arm">
             <English>Unsling left arm</English>
