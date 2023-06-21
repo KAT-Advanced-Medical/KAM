@@ -18,6 +18,9 @@ params ["_logic","_radius"];
 [{
     params["_params","_handler"];
     _params params["_unit"];
+    if (!isDamageAllowed _unit) exitWith {
+        [_unit] call FUNC(clearChemicalInjuriesLocal);    
+    };
     if (_unit getVariable[QGVAR(enteredPoison),false]) then {
         if (_unit getVariable [QACEGVAR(medical,pain), 0] < 0.25) then {_unit setVariable [QACEGVAR(medical,pain), 0.41]};
         if (goggles _unit in GVAR(availGasmaskList)) then {_unit setVariable [QGVAR(enteredPoison), false, true]};
@@ -35,15 +38,18 @@ params ["_logic","_radius"];
         [_handler] call CBA_fnc_removePerFrameHandler;
         
     };
-}, 5, [player]] call CBA_fnc_addPerFrameHandler;
+}, 5, [_unit]] call CBA_fnc_addPerFrameHandler;
 
 //Pos Check
 [{
     params ["_param","_handler"];
     _param params ["_logic","_radius","_unit"];
+    if (!isDamageAllowed _unit) exitWith {
+        [_unit] call FUNC(clearChemicalInjuriesLocal);
+    };
     private _pos = _logic getVariable [QGVAR(gas_pos),[0,0,0]];
     if ( _unit distance _pos > _radius || !(_logic getVariable[QGVAR(gas_active),false]) || isNull _logic ) exitWith {
         _unit setVariable[QGVAR(enteredPoison), false, true];
         [_handler] call CBA_fnc_removePerFrameHandler;
     };
-},2,[_logic, _radius, player]] call CBA_fnc_addPerFrameHandler;
+},2,[_logic, _radius, _unit]] call CBA_fnc_addPerFrameHandler;

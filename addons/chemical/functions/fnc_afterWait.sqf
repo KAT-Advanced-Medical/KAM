@@ -21,6 +21,10 @@
 
 params ["_unit", "_logic", "_gastype", "_radius_max"];
 
+if (!isDamageAllowed _unit) exitWith {
+    [_unit] call FUNC(clearChemicalInjuriesLocal);    
+};
+
 if (goggles _unit in GVAR(availGasmasklist)) then {
     private _isinGas = true;
     [
