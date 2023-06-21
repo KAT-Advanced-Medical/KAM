@@ -113,7 +113,7 @@ if (!local _unit) then {
         if !(_airway) exitWith {
             _output = -0.3 * _multiplierNegative;
 
-            if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) || _breathing)) then {
+            if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) && !(_unit getVariable [QEGVAR(airway,occluded), false])) ) then {
                 if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
                     if(_BVMInUse) then {
                         if(_oxygenAssisted) then {
