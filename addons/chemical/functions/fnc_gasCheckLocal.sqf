@@ -23,6 +23,10 @@
 
 params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
 
+if (!isDamageAllowed _unit) exitWith {
+    [_unit] call FUNC(clearChemicalInjuriesLocal);
+};
+
 [
     {
         params["_args", "_handler"];

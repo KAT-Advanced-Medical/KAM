@@ -35,6 +35,11 @@ private _checkplayers = [{
     private _playerARR = _logic getVariable [QGVAR(gas_playerArr), []];
     private _allUnits = if (missionNamespace getVariable [QGVAR(affectAI), false]) then {allUnits} else {allPlayers};
     {
+        if (!isDamageAllowed _x) then {
+            [_x] call FUNC(clearChemicalInjuriesLocal);
+            continue;
+        };
+
         private _posString = toString (_pos);
         private _logicPos = toString (getpos _logic);
         if (_posString != _logicPos) then { _pos = getpos _logic; _logic setVariable [QGVAR(gas_pos), _pos, true];};
