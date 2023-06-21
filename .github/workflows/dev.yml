@@ -35,7 +35,7 @@ jobs:
         - name: Update to Steam Workshop (dev)
           uses: arma-actions/workshop-upload@v1
           with:
-            itemId: '2841189207'
+            itemId: '2774641073'
             contentPath: './@Kat-Advanced-Medical-${{ env.VERSION }}'
             changelog: |
               https://github.com/KAT-Advanced-Medical/KAM/releases/tag/v${{ env.VERSION }}
