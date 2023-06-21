@@ -66,9 +66,10 @@ _unit setVariable [QEGVAR(circulation,asystole), 1, true];
 _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 _unit setVariable [QEGVAR(circulation,AEDinUse), false, true];
 _unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUNC(circulation,generateBloodType), true];
+_unit setVariable [QEGVAR(circulation,internalBleeding), 0, true];
+
 
 // KAT Misc
-
 _unit setVariable [QEGVAR(misc,isLeftArmFree), true, true];
 _unit setVariable [QEGVAR(misc,isRightArmFree), true, true];
 _unit setVariable [QEGVAR(misc,isLeftLegFree), true, true];
@@ -244,9 +245,9 @@ if (EGVAR(pharma,coagulation)) then {
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
 
-    ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
 
 } else {
