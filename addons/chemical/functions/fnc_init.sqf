@@ -17,10 +17,6 @@ params ["_unit", ["_isRespawn", true]];
 
 if (!local _unit) exitWith {};
 
-private _items = missionNamespace getVariable [QGVAR(availGasmask), """G_AirPurifyingRespirator_01_F"""];
-private _item_arr = [_items, "CfgGlasses"] call FUNC(getList);
-GVAR(availGasmaskList) = _item_arr;
-
 if (hasinterface) then {
     [_unit] call FUNC(coughing);
     [_unit] call FUNC(handleGasMaskDur);
