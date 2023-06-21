@@ -40,13 +40,13 @@ params ["_logic","_radius"];
         [_handler] call CBA_fnc_removePerFrameHandler;
         
     };
-}, 5, [_unit]] call CBA_fnc_addPerFrameHandler;
+}, 5, [player]] call CBA_fnc_addPerFrameHandler;
 
 //Pos Check
 [{
     params ["_param","_handler"];
     _param params ["_logic","_radius","_unit"];
-    
+
     if (!isDamageAllowed _unit) exitWith {
         [_unit] call FUNC(clearChemicalInjuriesLocal);
     };
@@ -56,4 +56,4 @@ params ["_logic","_radius"];
         _unit setVariable[QGVAR(enteredPoison), false, true];
         [_handler] call CBA_fnc_removePerFrameHandler;
     };
-},2,[_logic, _radius, _unit]] call CBA_fnc_addPerFrameHandler;
+},2,[_logic, _radius, player]] call CBA_fnc_addPerFrameHandler;
