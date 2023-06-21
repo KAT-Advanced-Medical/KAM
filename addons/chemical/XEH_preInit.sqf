@@ -13,7 +13,11 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_AVAIL_GASMASK), LLSTRING(SETTING_AVAIL_GASMASK_DISC)],
     CBA_SETTINGS_CHEM,
-    """G_AirPurifyingRespirator_01_F""",
+    "G_AirPurifyingRespirator_01_F",
+    1,
+    {
+        missionNamespace setVariable [QGVAR(availGasmaskList), _this splitString ",", true];
+    },
     true
 ] call CBA_Settings_fnc_init;
 

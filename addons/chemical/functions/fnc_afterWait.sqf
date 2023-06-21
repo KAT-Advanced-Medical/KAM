@@ -25,7 +25,7 @@ if (!isDamageAllowed _unit) exitWith {
     [_unit] call FUNC(clearChemicalInjuriesLocal);    
 };
 
-if (goggles _unit in GVAR(availGasmasklist)) then {
+if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {
     private _isinGas = true;
     [
         {
@@ -43,7 +43,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
                 _isinGas = false;
             };
 
-            if !(goggles _unit in GVAR(availGasmasklist) && _timeleft > 0) then {
+            if !((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []]) && _timeleft > 0) then {
                 _unit setVariable [QGVAR(poisonType), _gastype, true];
                 switch (_gastype) do {
                     case "Toxic": {
