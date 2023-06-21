@@ -96,6 +96,7 @@ if (!isDamageAllowed _unit) exitWith {
                     _percent = _unit getVariable [QGVAR(gasPercentage), 0];
                     _unittime = _unittime - _percent;
                     _unit setVariable [QGVAR(timeleft), _unittime];
+
                     if (_unittime <= 0) exitwith {
                         [QGVAR(afterWait), [_unit, _logic, _gastype, _radius_max], _unit] call CBA_fnc_targetEvent;
                         _unit setVariable [QGVAR(timeleft), 0];

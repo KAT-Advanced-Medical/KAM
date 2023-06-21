@@ -10,11 +10,11 @@
  * NONE
  *
  * Example:
- * [logic, 10] call kat_chemical_fnc_handleCSGas;
+ * [player, logic, 10] call kat_chemical_fnc_handleCSGas;
  *
  * Public: No
 */
-params ["_logic","_radius"];
+params ["_unit", "_logic", "_radius"];
 [{
     params["_params","_handler"];
     _params params["_unit"];
