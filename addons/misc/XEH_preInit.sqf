@@ -24,7 +24,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(SETTING_allowSharedVehicleEquipment), LLSTRING(SETTING_allowSharedVehicleEquipment_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [[0, 1, 2, 3], ["STR_ACE_Common_No", "STR_ACE_Medical_Treatment_AllowSharedEquipment_PriorityMedic", LLSTRING(SETTING_allowSharedVehicleEquipment_PriorityVehicle), LLSTRING(SETTING_allowSharedVehicleEquipment_PriorityVehicleAlways)], 0],
+    [[0, 1, 2, 3, 4], ["STR_ACE_Common_No", "STR_ACE_Medical_Treatment_AllowSharedEquipment_PriorityMedic", LLSTRING(SETTING_allowSharedVehicleEquipment_PriorityVehicleNoSelfTreatment), LLSTRING(SETTING_allowSharedVehicleEquipment_PriorityVehicleExceptSelfTreatment), LLSTRING(SETTING_allowSharedVehicleEquipment_PriorityVehicleAlways)], 0],
     true
 ] call CBA_fnc_addSetting;
 
