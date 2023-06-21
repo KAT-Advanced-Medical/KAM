@@ -51,7 +51,7 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
                     };
                     case "CS": {
                         _unit setVariable [QGVAR(CS), true, true];
-                        [_logic, _radius_max] spawn FUNC(handleCSGas);
+                        [_unit, _logic, _radius_max] call FUNC(handleCSGas);
                     };
                 };
                 [_unit] call EFUNC(breathing,handleBreathing);
@@ -66,7 +66,7 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
                     };
                     case "CS": {
                         _unit setVariable [QGVAR(CS), true, true];
-                        [_logic, _radius_max] spawn FUNC(handleCSGas);
+                        [_unit, _logic, _radius_max] call FUNC(handleCSGas);
                     };
                 };
                 [_unit] call EFUNC(breathing,handleBreathing);
@@ -83,6 +83,7 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
     ] call CBA_fnc_addPerFrameHandler;
 } else {
     if (_unit getVariable [QGVAR(enteredPoison), false]) then {
+        systemChat str _gastype;
         _unit setVariable [QGVAR(poisonType), _gastype, true];
         switch (_gastype) do {
             case "Toxic": {
@@ -90,7 +91,7 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
             };
             case "CS": {
                 _unit setVariable [QGVAR(CS), true, true];
-                [_logic, _radius_max] spawn FUNC(handleCSGas);
+                [_unit, _logic, _radius_max] call FUNC(handleCSGas);
             };
         };
         [_unit] call EFUNC(breathing,handleBreathing);
