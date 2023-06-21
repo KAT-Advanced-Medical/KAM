@@ -17,9 +17,11 @@
 
 params ["_unit"];
 
+if (!local _unit) exitWith {};
+
 _unit setVariable [QEGVAR(chemical,enteredPoison), false, true];
 _unit setVariable [QEGVAR(chemical,airPoisoning), false, true];
-_unit setVariable [QEGVAR(chemical,isTreated) ,true,true];
+_unit setVariable [QEGVAR(chemical,isTreated), true, true];
 _unit setVariable [QEGVAR(chemical,CS), false, true];
 _unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime), 60], true];
 
