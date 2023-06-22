@@ -149,9 +149,9 @@ TRACE_1("after FullHeal",_state);
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     
-    ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
 
 } else {
