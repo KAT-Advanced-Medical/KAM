@@ -460,6 +460,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleAlways">
             <English>Vehicle's Equipment First (Always)</English>
+		</Key>
         <Key ID="STR_KAT_Misc_SubCategory_Armband">
             <English>Armband</English>
             <German>Armband</German>
