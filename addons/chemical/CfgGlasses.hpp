@@ -1,33 +1,7 @@
 class cfgGlasses
 {
-	class G_RegulatorMask_base_F;
-	class G_RegulatorMask_F: G_RegulatorMask_base_F
-	{
-		ACE_Overlay = QPATHTOF(ui\overlay_style_m50.paa);
-	};
-	
-	class G_AirPurifyingRespirator_02_base_F;
-	class G_AirPurifyingRespirator_02_black_F :G_AirPurifyingRespirator_02_base_F
-	{
-		ACE_Overlay = QPATHTOF(ui\overlay_style_m50.paa);
-	};
-	
-	class G_AirPurifyingRespirator_02_olive_F :G_AirPurifyingRespirator_02_base_F
-	{
-		ACE_Overlay = QPATHTOF(ui\overlay_style_m50.paa);
-	};
-	
-	class G_AirPurifyingRespirator_02_sand_F :G_AirPurifyingRespirator_02_base_F
-	{
-		ACE_Overlay = QPATHTOF(ui\overlay_style_m50.paa);
-	};
-	
-	class G_AirPurifyingRespirator_01_F :G_AirPurifyingRespirator_02_base_F
-	{
-		ACE_Overlay = QPATHTOF(ui\overlay_style_m50.paa);
-	};
-	
-	class G_CBRN_M50: G_RegulatorMask_F
+	class G_RegulatorMask_F;
+	class kat_mask_M50: G_RegulatorMask_F
 	{
 		author = "Assaultboy";
 		displayname = "M50 Promask";
@@ -35,9 +9,10 @@ class cfgGlasses
 		picture = QPATHTOF(ui\maskM50.paa);
 		identityTypes[] = {};
 		mass = 4;
+
 	};
 	
-	class G_CBRN_M04: G_CBRN_M50
+	class kat_mask_M04: kat_mask_M50
 	{
 		author = "Assaultboy";
 		displayname = "M04 Promask";
