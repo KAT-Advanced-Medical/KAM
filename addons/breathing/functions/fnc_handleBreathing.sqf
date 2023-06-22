@@ -113,7 +113,7 @@ if (!local _unit) then {
         if !(_airway) exitWith {
             _output = -0.3 * _multiplierNegative;
 
-            if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) || _breathing)) then {
+            if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) && !(_unit getVariable [QEGVAR(airway,occluded), false])) ) then {
                 if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
                     if(_BVMInUse) then {
                         if(_oxygenAssisted) then {
@@ -209,12 +209,12 @@ if (!local _unit) then {
         if(GVAR(staminaLossAtLowSPO2)) then {
             if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(lowSPO2Level)}) then {
                 if (ACEGVAR(advanced_fatigue,enabled)) then {
-                    ["LSDF", 1.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
+                    ["kat_LSDF", 1.5] call ACEFUNC(advanced_fatigue,addDutyFactor);
                 } else {
                     _unit setStamina(getStamina _unit - 3);
                 };
             } else {
-                ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+                ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
             };
         };
 
