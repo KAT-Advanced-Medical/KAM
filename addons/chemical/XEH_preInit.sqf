@@ -13,7 +13,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_AVAIL_GASMASK), LLSTRING(SETTING_AVAIL_GASMASK_DISC)],
     CBA_SETTINGS_CHEM,
-    "kat_mask_M50, kat_mask_M04",
+    "'G_AirPurifyingRespirator_01_F','kat_mask_M50', 'kat_mask_M04'",
     1,
     {
         missionNamespace setVariable [QGVAR(availGasmaskList), _this splitString ",", true];
