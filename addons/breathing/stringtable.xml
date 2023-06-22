@@ -1513,6 +1513,12 @@
             <German>Beatme mit BVM und Sauerstoff</German>
             <Czech>Používání RV s Kyslíkem</Czech>
         </Key>
+        <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle">
+            <English>Use BVM with Oxygen Tank (Vehicle)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
+            <English>Using BVM with Oxygen Tank (Vehicle)</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
             <Spanish>Bombona de oxigeno desconectado (vacío)</Spanish>
