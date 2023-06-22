@@ -1819,5 +1819,11 @@
             <German>Definiere den 300L Sauerstofftank als bevorzugte Variante</German>
             <Czech>Nastavit přenosnou Kyslíkovou Lahev (300L) jako preferovanou</Czech>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen">
+            <English>Location Provide Oxygen</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen_DESC">
+            <English>Sets if medical vehicles/facilites can provide oxygen</English>
+        </Key>
     </Package>
 </Project>

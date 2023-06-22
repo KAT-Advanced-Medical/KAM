@@ -10,6 +10,7 @@ PREP(checkGasMaskDur);
 PREP(chemDetector);
 PREP(coughing);
 PREP(createSealAction);
+PREP(clearChemicalInjuriesLocal);
 PREP(createZone);
 PREP(csGrenadeThrownFuze);
 PREP(displayGasMaskDur);

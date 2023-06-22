@@ -26,3 +26,6 @@ ppBlur_priority = 399;
     ppBlurAmount = 0;
     ppBluring = false;
 }] call CBA_fnc_waitUntilAndExecute;
+
+private _items = missionNamespace getVariable [QGVAR(availGasmask), "G_AirPurifyingRespirator_01_F"];
+missionNamespace setVariable [QGVAR(availGasmaskList), _items splitString ",", true];
