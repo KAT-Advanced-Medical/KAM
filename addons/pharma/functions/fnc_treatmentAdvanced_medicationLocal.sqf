@@ -23,7 +23,7 @@
 params ["_patient", "_bodyPart", "_classname"];
 TRACE_3("medicationLocal",_patient,_bodyPart,_classname);
 
-
+systemChat _classname;
 // Medication has no effects on dead units
 if (!alive _patient) exitWith {};
 
