@@ -55,4 +55,17 @@ class CfgWeapons
         editorPreview = QPATHTOF(ui\ArmbandKat.paa);
         picture = QPATHTOF(ui\ArmbandKat.paa);
     };
+
+    class kat_Bubble_Wrap_Item: kat_Armband_Red_Cross_Item {
+
+        author = "Miss Heda";
+        displayName = CSTRING(Bubble_Wrap_Display);
+        descriptionShort = CSTRING(Bubble_Wrap_Desc);
+        cost = 0.1;
+        editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa);
+        picture = QPATHTOF(ui\Bubble_Wrap_Item.paa);
+        class ItemInfo: InventoryItem_Base_F {
+            mass = 0.1;
+        };
+    };
 };

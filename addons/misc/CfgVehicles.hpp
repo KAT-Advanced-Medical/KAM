@@ -426,7 +426,7 @@ class CfgVehicles {
                 };
 
                 class BubbleWrapPopping {
-                    displayName = "POP"; // CSTRING(Pop_Bubble_Wrap); //TODO
+                    displayName = CSTRING(Bubble_Wrap_Ace_Action);
                     condition = QUOTE([ARR_2(_player, ""kat_Bubble_Wrap"")] call ACEFUNC(common,hasMagazine));
                     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                     statement = QUOTE(_player call FUNC(BubbleWrap));

@@ -212,11 +212,11 @@ class ADDON {
             viscosityChange = 0;
         };
         class BubbleWrap {
-            painReduce = 1.05;
+            painReduce = 0.05;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
             hrIncreaseHigh[] = {0, 0};
-            timeInSystem = 60;
+            timeInSystem = 300;
             timeTillMaxEffect = 5;
             maxDose = 999;
             incompatibleMedication[] = {};
