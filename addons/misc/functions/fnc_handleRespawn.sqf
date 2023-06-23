@@ -29,6 +29,7 @@ _unit setVariable [QEGVAR(airway,occluded), false, true];
 _unit setVariable [QEGVAR(airway,overstretch), false, true];
 KAT_forceWakeup = false;
 _unit setVariable [QEGVAR(airway,recovery), false, true];
+_unit setVariable [QEGVAR(airway,airway_item), "", true];
 
 // KAT Breathing
 
@@ -112,15 +113,6 @@ private _obj = _ui displayCtrl 101;
 _obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
 if (_unit getVariable [QEGVAR(chemical,painEffect),0] != 0) then {
     KAT_PAIN_EFFECT ppEffectEnable false;
-};
-
-
-// Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten
-_unit spawn {
-    _unit = param [0,objNull,[objNull]];
-    sleep 2;
-    if (_unit getVariable ["ACE_isUnconscious", false]) exitWith {};
-    _unit setVariable [QGVAR(airway_item), "", true];
 };
 
 [{
