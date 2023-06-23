@@ -8,7 +8,7 @@ class CfgSounds
         titles[] = {};
     };
     
-	class GVAR(BubblePoppingSound2) {
+    class GVAR(BubblePoppingSound2) {
         name = QGVAR(BubblePoppingSound2);
 
         // filename, volume, pitch, distance (optional)
