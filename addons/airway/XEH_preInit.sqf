@@ -88,6 +88,16 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+// Blocks head turning if patient has Guedel Tube or KingLT inserted
+[
+    QGVAR(block_turnAround_ifAirwayItem),
+    "CHECKBOX",
+    [LLSTRING(BLOCK_HEADTURNING),LLSTRING(BLOCK_HEADTURNING_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 // airway puking sound yes or no?
 // somebody told me that the sound which is played then someone is puking is super annoying and now you can remove it easily
 [
@@ -195,6 +205,16 @@ In real life, this will happen sometimes, not quiet often.
     [LLSTRING(TIME_OVERSTRETCH),LLSTRING(TIME_OVERSTRETCH_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionOverstretch)],
     [1, 10, 3, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Blocks Overstretch if patient has Guedel Tube or KingLT inserted
+[
+    QGVAR(block_overstretch_ifAirwayItem),
+    "CHECKBOX",
+    [LLSTRING(BLOCK_OVERSTRETCH),LLSTRING(BLOCK_OVERSTRETCH_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 

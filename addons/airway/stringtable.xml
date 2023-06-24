@@ -1270,5 +1270,17 @@
             <German>Setzt, ob die aktuelle triage Karte übershrieben werden soll durch das checken der Atemwege</German>
             <French>Définit si l'inspection des voies aériennes modifie le niveau actuel de triage</French>
         </Key>
+        <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING">
+            <English>Block head turning</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING_DESC">
+            <English>Blocks head turning if patient has Guedel Tube or KingLT inserted</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_BLOCK_OVERSTRETCH">
+            <English>Overstretch turning</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_BLOCK_OVERSTRETCH_DESC">
+            <English>Overstretch turning if patient has Guedel Tube or KingLT inserted</English>
+        </Key>
     </Package>
 </Project>
