@@ -69,7 +69,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         items[] = {};
         icon = "";
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && !(_patient getVariable [ARR_2(QQGVAR(overstretch), false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && ((!(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus') && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus')) || (missionNamespace getVariable [ARR_2(QQGVAR(block_overstretch_ifAirwayItem),true)])));
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && !(_patient getVariable [ARR_2(QQGVAR(overstretch), false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus') && (!(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus') || !(missionNamespace getVariable [ARR_2(QQGVAR(block_overstretch_ifAirwayItem),true)]))););
         callbackSuccess = QFUNC(treatmentAdvanced_overstretchHead);
     };
     class TurnAround: Larynxtubus {
@@ -79,7 +79,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         items[] = {};
         icon = "";
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && ((!(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus') && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus')) || (missionNamespace getVariable [ARR_2(QQGVAR(block_turnAround_ifAirwayItem),true)])));
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus') && (!(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus') || !(missionNamespace getVariable [ARR_2(QQGVAR(block_turnAround_ifAirwayItem),true)])));
         callbackSuccess = QFUNC(treatmentAdvanced_turnaroundHead);
     };
     class RecoveryPosition: Larynxtubus {
