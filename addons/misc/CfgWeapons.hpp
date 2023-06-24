@@ -1,6 +1,7 @@
 class CfgWeapons
 {
     class ToolKit;
+    class ACE_ItemCore;
     class Attachable_Helistretcher: ToolKit
     {
         author = "Battlekeeper";
@@ -17,7 +18,6 @@ class CfgWeapons
         };
     };
 
-    class ItemCore;
     class kat_Armband_Red_Cross_Item: ACE_ItemCore {
 
         author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
