@@ -593,5 +593,37 @@
             <English>A Bubble Wrap that you can squeeze to relive some pain</English>
             <German>Eine Luftpolsterfolie die du zerdrücken kannst um etwas Schmerz los zu werden</German>
         </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_A_P">
+            <English>Blood Group Patch A+</English>
+            <German>Blutgruppen Aufnäher A+</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_A_N">
+            <English>Blood Group Patch A-</English>
+            <German>Blutgruppen Aufnäher A-</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_B_P">
+            <English>Blood Group Patch B+</English>
+            <German>Blutgruppen Aufnäher B+</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_B_N">
+            <English>Blood Group Patch B-</English>
+            <German>Blutgruppen Aufnäher B-</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_0_P">
+            <English>Blood Group Patch 0+</English>
+            <German>Blutgruppen Aufnäher 0+</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_0_N">
+            <English>Blood Group Patch 0-</English>
+            <German>Blutgruppen Aufnäher 0-</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_AB_P">
+            <English>Blood Group Patch AB+</English>
+            <German>Blutgruppen Aufnäher AB+</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_AB_N">
+            <English>Blood Group Patch AB-</English>
+            <German>Blutgruppen Aufnäher AB-</German>
+        </Key>
     </Package>
 </Project>
