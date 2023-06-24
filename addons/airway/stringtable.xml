@@ -1274,13 +1274,13 @@
             <English>Block head turning</English>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING_DESC">
-            <English>Blocks head turning if patient has Guedel Tube or KingLT inserted</English>
+            <English>Blocks head turning if patient has Guedel Tube inserted</English>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_OVERSTRETCH">
-            <English>Overstretch turning</English>
+            <English>Block Overstretch</English>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_OVERSTRETCH_DESC">
-            <English>Overstretch turning if patient has Guedel Tube or KingLT inserted</English>
+            <English>Blocks Overstretch if patient has Guedel Tube inserted</English>
         </Key>
     </Package>
 </Project>
