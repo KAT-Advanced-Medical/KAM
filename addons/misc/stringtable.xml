@@ -5,7 +5,7 @@
             <English>ACE-Misc activated?</English>
             <German>ACE-Sonstiges aktivieren?</German>
             <Polish>ACE-Inne aktywowane?</Polish>
-            <Spanish>¿Activar ACE-Misceláneos?</Spanish>
+            <Spanish>¿Activar ACE-Misceláneo?</Spanish>
             <Chinese>啟用ACE-雜項?</Chinese>
             <Chinesesimp>启用ACE-杂项</Chinesesimp>
             <Czech>ACE-Misc aktivováno?</Czech>
@@ -165,7 +165,7 @@
             <English>Attach Stretcher</English>
             <Polish>Przyczep nosze</Polish>
             <German>Trage befestigen</German>
-            <Spanish>Adjuntar camilla </Spanish>
+            <Spanish>Adjuntar camilla</Spanish>
             <Chinese>附加担架 </Chinese>
             <Chinesesimp>连接担架 </Chinesesimp>
             <Czech>Připevnit nosítka</Czech>
@@ -197,7 +197,7 @@
             <English>Raise Stretcher By 10m</English>
             <Polish>Wciągnij nosze o 10m</Polish>
             <German>Trage um 10m anheben</German>
-            <Spanish>Subir la camilla 10 m</Spanish>
+            <Spanish>Subir la camilla 10m</Spanish>
             <Chinese>将担架抬高 10m</Chinese>
             <Chinesesimp>担架抬高 10m</Chinesesimp>
             <Czech>Vytáhnout nosítka o 10m</Czech>
@@ -277,7 +277,7 @@
             <English>You must be within 15m of the helicopter and look at it!</English>
             <Polish>Musisz być w zasięgu 15m od śmigłowca i patrzeć w jego kierunku!</Polish>
             <German>Sie müssen sich in einem Umkreis von 15 Metern um den Hubschrauber aufhalten und ihn anschauen!</German>
-            <Spanish>¡Debes estar a menos de 15 m del helicóptero y viéndolo!</Spanish>
+            <Spanish>¡Debes estar a menos de 15m del helicóptero y viéndolo!</Spanish>
             <Chinese>你必须在直升机 15m 以内并看它！</Chinese>
             <Chinesesimp>你必须在直升机 15m 以内并注视它！</Chinesesimp>
             <Czech>Musíte být v rámci 15m od helikoptéry a dívat se na ni!</Czech>
@@ -342,7 +342,7 @@
             <French>Affiche un avertissement et ajoute une ligne au log RPT si des addons incompatibles (Listés par nous - les développeurs) qui pourraient affecter négativement le fonctionnement correct de KAT sont utilisés.\n L'avertissement disparaîtra après 60 secondes.  </French>
             <Italian>Mostra un allerta e aggiungi una line al file RPT log se l'addon è incompatibile (elencato da noi sviluppatori) che possa influenzare negativamente sul corretto utilizzo della KAT \n L'avviso sparisce dopo 60 secondi.</Italian>
             <Polish>Pokazuje error i dodaje log do RPT jeśli niekompatybilny mod (podane przez developerów KAT), który może powodować błędy jest używany. \nPowiadomienie znika po 60 sekundach.</Polish>
-            <Spanish>Muestra una advertencia y agrega una lina al log RPT si hay addons incompatibles(Listados por los desarolladores) que podrian afectar negativamente el funcionamiento de KAT.\n La advertencia desaparece 60 segundos mas tarde.</Spanish>
+            <Spanish>Muestra una advertencia y agrega una linea al log RPT si hay addons incompatibles(Listados por los desarolladores) que podrian afectar negativamente el funcionamiento de KAT.\n La advertencia desaparece 60 segundos mas tarde.</Spanish>
             <Portuguese>Mostra um aviso e adiciona uma linha ao log do RPT se forem usados ​​complementos incompatíveis (listados por nós - desenvolvedores) que podem afetar negativamente a funcionalidade correta do KAT.\n O aviso desaparece após 60 segundos.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_incompatibilityWarning_Desc">
@@ -354,7 +354,7 @@
             <French>[AVERTISSEMENT KAM] Un(des) addon(s) incompatible(s) pouvant affecter le fonctionnement correct de KAT ont été détectés. L'équipe de développement de KAT - Advanced Medical REWRITE recommande fortement de retirer ces addons : %1 </French>
             <Italian>[AVVISO KAM]  E' stata rilevato almeno un addon che potrebbe influenzare negativamente il corretto funzionamenot della KAT. Gli sviluppatori della KAT consigliando vivamente di rumuovere questi addons.</Italian>
             <Polish>[KAM WARNING] Niekompatybilny mod, który może wywoływać błędy został wykryty. Zespół deweloperski KAT - Advanced Medical REWRITE stanowczo odradza użycie następujących modów: %1 </Polish>
-            <Spanish>[ADVERTENCIA DE KAM] Addon(s) incompatibles que podrían afectar negativamente el funcionamiento del mod fueron detectados. El equipo de desarollo de KAT - Advanced Medical REWRITE recomienda fuertemente de remover estos addons. %1</Spanish>
+            <Spanish>[ADVERTENCIA DE KAM] Addon(s) incompatibles que podrían afectar negativamente el funcionamiento del mod fueron detectados. El equipo de desarollo de KAT - Advanced Medical REWRITE recomienda fuertemente remover estos addons. %1</Spanish>
             <Portuguese>[AVISO DE KAM] Detectados addons incompatíveis que podem afetar negativamente a funcionalidade correta. KAT - A equipe de desenvolvimento do Advanced Medical REWRITE recomenda fortemente a remoção destes complementos: %1</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_Basic">
@@ -372,10 +372,13 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>
+            <Spanish>Tiempo para retirar un torniquete</Spanish>
             <French>Temps pour retirer un garrot</French>
             <Korean>지혈대를 풀어내는 시간</Korean>
+            <Polish>Czas potrzebny do zdjęcia stazy</Polish>
             <Japanese>止血帯を取り外すのにかかる時間</Japanese>
             <German>Erforderliche Zeit zum Entfernen des Tourniquet</German>
+            <Czech>Čas pro sundání turniketu</Czech>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_arsenalMedCategory">
             <English>Arsenal Medical category</English>
@@ -394,7 +397,7 @@
             <Czech>Povolit zdravotnickou kategorii pro arzenál a přemístit do ní všechny zdravotnické věci?</Czech>
             <French>Active la catégorie médicale pour l'arsenal et y affecte tous les objets médicaux ?</French>
             <Japanese>武器庫の医療分類を有効にして、すべての医療関連アイテムをそこに再配置しますか?</Japanese>
-            <Spanish>Habilitar la categoría médica para el arsenal y mover todos los elementos médicos a este?</Spanish>
+            <Spanish>¿Habilitar la categoría médica para el arsenal y mover todos los elementos médicos a este?</Spanish>
             <Italian>Abilita la categoria medica nell'arsernale e muovi tutti gli oggetti medici in questa categoria?</Italian>
             <Polish>Włączyć kategorię medyczną dla arsenału i przenieść do niej wszystkie przedmioty związane z medycyną?</Polish>
             <German>Aktiviere Medizin-Kategorie für das Arsenal und verschiebe alle medizinischen Gegenstände dort hin?</German>
@@ -435,11 +438,192 @@
         </Key>
         <Key ID="STR_KAT_Misc_NeckTourniquetDescription">
             <English>Neck Tourniquet</English>
+            <Spanish>Torniquete de cuello</Spanish>
             <Polish>Staza na szyi</Polish>
             <French>Garrot de cou</French>
             <Korean>목 지혈대</Korean>
             <Japanese>首に止血帯を使う</Japanese>
             <German>Nacken Tourniquet</German>
+            <Czech>Škrtidlo na krk</Czech>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment">
+            <English>Allow Shared Vehicle Equipment</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_DESC">
+            <English>Sets whether vehicle's medical supplies can be used while treating and in which order</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleNoSelfTreatment">
+            <English>Vehicle's Equipment First (No self-treatment)</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleExceptSelfTreatment">
+            <English>Vehicle's Equipment First (Except self-treatment)</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleAlways">
+            <English>Vehicle's Equipment First (Always)</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SubCategory_Armband">
+            <English>Armband</English>
+            <German>Armband</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmPos_Display">
+            <English>Armband position left arm</English>
+            <German>Armband Position linker Arm</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmPos_Desc">
+            <English>Defines the position (x, y, z) where the armband is slinged to, at the left arm.</English>
+            <German>Defeniert die Position (x, y, z) wo das Armband rangebunden wird am linken Arm.</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmRot_Display">
+            <English>Armband rotation left arm</English>
+            <German>Armband Rotation linker Arm</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmRot_Desc">
+            <English>Defines the rotation (yaw, pitch, roll) of the armband that is slinged, to the left arm.</English>
+            <German>Defeniert die Rotation (yaw, pitch, roll) des Armbandes am linken Arm.</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmPos_Display">
+            <English>Armband position right arm</English>
+            <German>Armband Position rechter Arm</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmPos_Desc">
+            <English>Defines the position (x, y, z) where the armband is slinged to, at the right arm.</English>
+            <German>Defeniert die Position (x, y, z) wo das Armband rangebunden wird am rechten Arm.</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmRot_Display">
+            <English>Armband rotation right arm</English>
+            <German>Armband Rotation rechten Arm</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmRot_Desc">
+            <English>Defines the rotation (yaw, pitch, roll) of the armband that is slinged, to the right arm.</English>
+            <German>Defeniert die Rotation (yaw, pitch, roll) des Armbandes am rechten Arm.</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegPos_Display">
+            <English>Armband position left leg</English>
+            <German>Armband Position linkes Bein</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegPos_Desc">
+            <English>Defines the position (x, y, z) where the armband is slinged to, at the left leg.</English>
+            <German>Defeniert die Position (x, y, z) wo das Armband rangebunden wird am linken bein.</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegRot_Display">
+            <English>Armband rotation left leg</English>
+            <German>Armband Rotation linkes Bein</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegRot_Desc">
+            <English>Defines the rotation (yaw, pitch, roll) of the armband that is slinged, to the left leg.</English>
+            <German>Defeniert die Rotation (yaw, pitch, roll) des Armbandes am linken Bein.</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegPos_Display">
+            <English>Armband position right leg</English>
+            <German>Armband Position rechtes Bein</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegPos_Desc">
+            <English>Defines the position (x, y, z) where the armband is slinged to, at the right leg.</English>
+            <German>Defeniert die Position (x, y, z) wo das Armband rangebunden wird am rechten bein.</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegRot_Display">
+            <English>Armband rotation right leg</English>
+            <German>Armband Rotation rechtes Bein</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegRot_Desc">
+            <English>Defines the rotation (yaw, pitch, roll) of the armband that is slinged, to the right leg.</English>
+            <German>Defeniert die Rotation (yaw, pitch, roll) des Armbandes am rechten Bein.</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_Red_Cross_ItemName">
+            <English>Armband Red Cross</English>
+            <German>Armband Rotes Kreuz</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_Medic_ItemName">
+            <English>Armband Medic</English>
+            <German>Armband Medic</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_Doctor_ItemName">
+            <English>Armband Doctor</English>
+            <German>Armband Doctor</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_Kat_ItemName">
+            <English>Armband KAT</English>
+            <German>Armband KAT</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_Sling">
+            <English>Armband</English>
+            <German>Armband</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_Sling_Left_Arm">
+            <English>Sling to left arm</English>
+            <German>Binde an den linken Arm</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_Sling_Right_Arm">
+            <English>Sling to right arm</English>
+            <German>Binde an den rechten Arm</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_Sling_Left_Leg">
+            <English>Sling to left leg</English>
+            <German>Binde an das linke Bein</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_Sling_Right_Leg">
+            <English>Sling to right leg</English>
+            <German>Binde an das rechte Bein</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_UnSling_Left_Arm">
+            <English>Unsling left arm</English>
+            <German>Vom linken Arm abmachen</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_UnSling_Right_Arm">
+            <English>Unsling right arm</English>
+            <German>Vom rechten Arm abmachen</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_UnSling_Left_Leg">
+            <English>Unsling left leg</English>
+            <German>Vom linken Bein abmachen</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Armband_UnSling_Right_Leg">
+            <English>Unsling right leg</English>
+            <German>Vom rechten Bein abmachen</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Bubble_Wrap_Ace_Action">
+            <English>Pop a Bubble</English>
+            <German>Pop ein Luftpolster</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Bubble_Wrap_Display">
+            <English>Bubble Wrap</English>
+            <German>Luftpolsterfolie</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Bubble_Wrap_Desc">
+            <English>A Bubble Wrap that you can squeeze to relive some pain</English>
+            <German>Eine Luftpolsterfolie die du zerdrücken kannst um etwas Schmerz los zu werden</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_A_P">
+            <English>Blood Group Patch A+</English>
+            <German>Blutgruppen Aufnäher A+</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_A_N">
+            <English>Blood Group Patch A-</English>
+            <German>Blutgruppen Aufnäher A-</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_B_P">
+            <English>Blood Group Patch B+</English>
+            <German>Blutgruppen Aufnäher B+</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_B_N">
+            <English>Blood Group Patch B-</English>
+            <German>Blutgruppen Aufnäher B-</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_0_P">
+            <English>Blood Group Patch 0+</English>
+            <German>Blutgruppen Aufnäher 0+</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_0_N">
+            <English>Blood Group Patch 0-</English>
+            <German>Blutgruppen Aufnäher 0-</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_AB_P">
+            <English>Blood Group Patch AB+</English>
+            <German>Blutgruppen Aufnäher AB+</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_BloodGroupPatch_AB_N">
+            <English>Blood Group Patch AB-</English>
+            <German>Blutgruppen Aufnäher AB-</German>
         </Key>
     </Package>
 </Project>

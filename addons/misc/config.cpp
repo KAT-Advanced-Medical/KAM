@@ -36,7 +36,11 @@ class CfgPatches {
 
 #include "CfgMoves.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgGlasses.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "CfgSounds.hpp"
+#include "CfgMagazines.hpp"
+#include "CfgBloodGroupsInsignia.hpp"

@@ -140,9 +140,9 @@ private _fnc_getWoundDescription = {
 } forEach GET_STITCHED_WOUNDS(_target);
 
 //INTOXICATION by DiGii
-private _poisentype = _target getVariable [QEGVAR(chemical,poisenType),""];
+private _poisontype = _target getVariable [QEGVAR(chemical,poisonType),""];
 if(_target getVariable [QEGVAR(chemical,airPoisoning),false]) then{
-    _woundEntries pushBack [LELSTRING(chemical,Intoxikation), [0.4,0,0.5,1]];
+    _woundEntries pushBack [LELSTRING(chemical,Intoxication), [0.4,0,0.5,1]];
 };
 
 // EDIT by Katalam & Tomcat

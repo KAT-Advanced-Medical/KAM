@@ -8,7 +8,7 @@
 
 //Mortar Events
 ["Mortar_01_base_F", "fired", {call FUNC(handleFired)}] call CBA_fnc_addClassEventHandler;
-KAT_ProjectileChache = ("([_x, 'KAT_porjectile', 0] call BIS_fnc_returnConfigEntry) != 0" configClasses (configFile >> "cfgAmmo")) apply {configName _x};
+KAT_ProjectileCache = ("([_x, 'KAT_projectile', 0] call BIS_fnc_returnConfigEntry) != 0" configClasses (configFile >> "cfgAmmo")) apply {configName _x};
 [] call FUNC(addLoadAction);
 
 //Grenade Events
@@ -26,3 +26,7 @@ ppBlur_priority = 399;
     ppBlurAmount = 0;
     ppBluring = false;
 }] call CBA_fnc_waitUntilAndExecute;
+
+private _items = missionNamespace getVariable [QGVAR(availGasmask), "'G_AirPurifyingRespirator_01_F'"];
+private _array = [_items, "CfgGlasses"] call FUNC(getList);
+missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
