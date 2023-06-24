@@ -15,7 +15,9 @@
  * Public: No
  */
 
-params ["_unit"];
+params ["_unit", ["_isRespawn", true]];
+
+if (!local _unit) exitWith {};
 
 _unit setVariable [QGVAR(IV), [0,0,0,0,0,0], true];
 _unit setVariable [QGVAR(IVpfh), [0,0,0,0,0,0], true];

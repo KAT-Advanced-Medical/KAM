@@ -3,6 +3,7 @@
     <Package name="Gui">
         <Key ID="STR_KAT_Gui_dummy">
             <English>dummy for tabler application</English>
+            <German>Platzhalter für die tabler app</German>
         </Key>
     </Package>
 </Project>

@@ -130,7 +130,7 @@ class CfgVehicles {
                     };*/
                 };
             };
-            class ISSealabe
+            class IsSealable
             {
                 displayName = CSTRING(UI_sealable);
                 toolTip = CSTRING(UI_sealable_tooltip);

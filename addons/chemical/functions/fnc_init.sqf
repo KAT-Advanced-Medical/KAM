@@ -13,15 +13,13 @@
 *
 * Public: No
 */
-params["_unit"];
+params ["_unit", ["_isRespawn", true]];
 
-private _items = missionNamespace getVariable [QGVAR(availGasmask), """G_AirPurifyingRespirator_01_F"""];
-private _item_arr = [_items, "CfgGlasses"] call FUNC(getlist);
-GVAR(availGasmaskList) = _item_arr;
+if (!local _unit) exitWith {};
 
 if (hasinterface) then {
     [_unit] call FUNC(coughing);
-    [_unit] spawn FUNC(handleGasMaskDur);
+    [_unit] call FUNC(handleGasMaskDur);
     [_unit] spawn FUNC(chemDetector);
     [_unit] spawn FUNC(breathing);
 
@@ -30,7 +28,7 @@ if (hasinterface) then {
     _unit setVariable [QGVAR(gasmask_durability), 10, true];
     _unit setVariable [QGVAR(gasmask_durability_reset), false, true];
     _unit setVariable [QGVAR(chemDetectorState), true , true];
-    
+
     [{
         params ["_args", "_pfhID"];
         _args params ["_unit"];
@@ -46,12 +44,12 @@ if (hasinterface) then {
             };
         };
     }, 2, _unit]call CBA_fnc_addPerFrameHandler;
-    
+
     [{
         params ["_args", "_pfhID"];
         _args params ["_unit"];
 
-        "KAT_CHEM_DETECtor" cutRsc ["RscWeaponChemicalDetector", "PLAin", 1, false];
+        "KAT_CHEM_DETECTOR" cutRsc ["RscWeaponChemicalDetector", "PLAIN", 1, false];
         private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
         private _obj = _ui displayCtrl 101;
         if (!(_unit getVariable[QGVAR(enteredPoison), false])) then {

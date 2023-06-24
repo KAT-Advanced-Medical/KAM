@@ -49,7 +49,7 @@ class CfgMagazines {
         lastRoundsTracer = 0;
         mass = 1;
     };
-        class kat_Caffeine: CA_Magazine {
+    class kat_Caffeine: CA_Magazine {
         author = "Miss Heda";
         
         scope = 2;

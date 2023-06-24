@@ -8,7 +8,7 @@ class RscControlsGroupNoScrollbars;
 
 class ace_medical_gui_TriageToggle: RscButton {
     x = QUOTE(POS_X(14.33));
-    w = "POS_W(10.3)";
+    w = QUOTE(POS_W(10.3));
 };
 
 class ace_medical_gui_TriageSelect: RscControlsGroupNoScrollbars {
@@ -16,7 +16,7 @@ class ace_medical_gui_TriageSelect: RscControlsGroupNoScrollbars {
     w = QUOTE(POS_W(10.3));
     class controls {
         class None: RscButton {
-            w = "POS_W(10.3)";
+            w = QUOTE(POS_W(10.3));
         };
     };
 };
