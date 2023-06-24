@@ -2092,6 +2092,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
             <Czech>Práh AED-X pro aktivaci alarmu Pulzního Oxymetru</Czech>
+            <German>AED-X Sättigungsalarm Grenzwert</German>
         </Key>
     </Package>
 </Project>

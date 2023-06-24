@@ -448,18 +448,23 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment">
             <English>Allow Shared Vehicle Equipment</English>
+            <German>Erlaube geteilte Fahrzeugausrüstung</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_DESC">
             <English>Sets whether vehicle's medical supplies can be used while treating and in which order</English>
+            <German>Legt fest, ob und in welcher Reihenfolge die medizinischen Hilfsmittel des Fahrzeugs während der Behandlung verwendet werden können</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleNoSelfTreatment">
             <English>Vehicle's Equipment First (No self-treatment)</English>
+            <German> Ausrüstung des Fahrzeuges zuerst (Keine Selbstbehandlung)</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleExceptSelfTreatment">
             <English>Vehicle's Equipment First (Except self-treatment)</English>
+            <German> Ausrüstung des Fahrzeuges zuerst (außer für Selbstbehandlung)</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleAlways">
             <English>Vehicle's Equipment First (Always)</English>
+            <German> Ausrüstung des Fahrzeuges immer zuerst</German>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_Armband">
             <English>Armband</English>
@@ -471,7 +476,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slinged to, at the left arm.</English>
-            <German>Defeniert die Position (x, y, z) wo das Armband rangebunden wird am linken Arm.</German>
+            <German>Definiert die Position (x, y, z) wo das Armband am linken Arm angebunden wird.</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmRot_Display">
             <English>Armband rotation left arm</English>
@@ -479,7 +484,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slinged, to the left arm.</English>
-            <German>Defeniert die Rotation (yaw, pitch, roll) des Armbandes am linken Arm.</German>
+            <German>Definiert die Rotation (yaw, pitch, roll) des Armbandes am linken Arm.</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmPos_Display">
             <English>Armband position right arm</English>
@@ -487,7 +492,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slinged to, at the right arm.</English>
-            <German>Defeniert die Position (x, y, z) wo das Armband rangebunden wird am rechten Arm.</German>
+            <German>Definiert die Position (x, y, z) wo das Armband am rechten Arm angebunden wird.</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmRot_Display">
             <English>Armband rotation right arm</English>
@@ -495,7 +500,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slinged, to the right arm.</English>
-            <German>Defeniert die Rotation (yaw, pitch, roll) des Armbandes am rechten Arm.</German>
+            <German>Definiert die Rotation (yaw, pitch, roll) des Armbandes am rechten Arm.</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegPos_Display">
             <English>Armband position left leg</English>
@@ -503,7 +508,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slinged to, at the left leg.</English>
-            <German>Defeniert die Position (x, y, z) wo das Armband rangebunden wird am linken bein.</German>
+            <German>Definiert die Position (x, y, z) wo das Armband am linken Bein angebunden wird.</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegRot_Display">
             <English>Armband rotation left leg</English>
@@ -511,7 +516,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slinged, to the left leg.</English>
-            <German>Defeniert die Rotation (yaw, pitch, roll) des Armbandes am linken Bein.</German>
+            <German>Definiert die Rotation (yaw, pitch, roll) des Armbandes am linken Bein.</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegPos_Display">
             <English>Armband position right leg</English>
@@ -519,7 +524,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slinged to, at the right leg.</English>
-            <German>Defeniert die Position (x, y, z) wo das Armband rangebunden wird am rechten bein.</German>
+            <German>Definiert die Position (x, y, z) wo das Armband am rechten Bein angebunden wird.</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegRot_Display">
             <English>Armband rotation right leg</English>
@@ -527,7 +532,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slinged, to the right leg.</English>
-            <German>Defeniert die Rotation (yaw, pitch, roll) des Armbandes am rechten Bein.</German>
+            <German>Definiert die Rotation (yaw, pitch, roll) des Armbandes am rechten Bein.</German>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Red_Cross_ItemName">
             <English>Armband Red Cross</English>
@@ -539,7 +544,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Doctor_ItemName">
             <English>Armband Doctor</English>
-            <German>Armband Doctor</German>
+            <German>Armband Doktor</German>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Kat_ItemName">
             <English>Armband KAT</English>
@@ -567,19 +572,19 @@
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Left_Arm">
             <English>Unsling left arm</English>
-            <German>Vom linken Arm abmachen</German>
+            <German>Von linkem Arm abmachen</German>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Right_Arm">
             <English>Unsling right arm</English>
-            <German>Vom rechten Arm abmachen</German>
+            <German>Von rechtem Arm abmachen</German>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Left_Leg">
             <English>Unsling left leg</English>
-            <German>Vom linken Bein abmachen</German>
+            <German>Von linkem Bein abmachen</German>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Right_Leg">
             <English>Unsling right leg</English>
-            <German>Vom rechten Bein abmachen</German>
+            <German>Von rechtem Bein abmachen</German>
         </Key>
         <Key ID="STR_KAT_Misc_Bubble_Wrap_Ace_Action">
             <English>Pop a Bubble</English>
@@ -591,7 +596,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_Bubble_Wrap_Desc">
             <English>A Bubble Wrap that you can squeeze to relive some pain</English>
-            <German>Eine Luftpolsterfolie die du zerdrücken kannst um etwas Schmerz los zu werden</German>
+            <German>Eine Luftpolsterfolie, die du zerdrücken kannst, um etwas Schmerz zu lindern</German>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_A_P">
             <English>Blood Group Patch A+</English>

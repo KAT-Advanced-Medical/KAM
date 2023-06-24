@@ -1228,7 +1228,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems">
             <English>Reusable Airway Items</English>
-            <German>Wieder Benutzbare Atemwegsobjekte</German>
+            <German>Wiederverwendbare Atemwegsobjekte</German>
             <Czech>Znovupoužitelné předměty pro dýchací cesty</Czech>
             <Spanish>Objetos reutilizables de vías aéreas</Spanish>
             <Japanese>繰り返し使用できる気道アイテム</Japanese>
@@ -1267,7 +1267,7 @@
         <Key ID="STR_KAT_Airway_AutoTriage_Desc">
             <English>Sets if checking airways can override current triage level</English>
             <Japanese>気道の検査をすることで現在のトリアージレベルを自動で上書き設定します</Japanese>
-            <German>Setzt, ob die aktuelle triage Karte übershrieben werden soll durch das checken der Atemwege</German>
+            <German>Setzt, ob die aktuelle Triage Karte überschrieben werden soll durch das Prüfen der Atemwege</German>
             <French>Définit si l'inspection des voies aériennes modifie le niveau actuel de triage</French>
         </Key>
     </Package>
