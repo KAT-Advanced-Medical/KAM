@@ -56,12 +56,16 @@ class CfgWeapons
         picture = QPATHTOF(ui\ArmbandKat.paa);
     };
 
-    class kat_Bubble_Wrap_Item: kat_Armband_Red_Cross_Item {
+    class kat_Bubble_Wrap_Item: ItemCore {
 
+        detectRange = -1;
         author = "Miss Heda";
+        simulation = "ItemMineDetector";
         displayName = CSTRING(Bubble_Wrap_Display);
         descriptionShort = CSTRING(Bubble_Wrap_Desc);
+        scope = 2;
         cost = 0.1;
+        side = 3;
         editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa);
         picture = QPATHTOF(ui\Bubble_Wrap_Item.paa);
         class ItemInfo: InventoryItem_Base_F {
