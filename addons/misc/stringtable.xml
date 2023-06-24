@@ -581,6 +581,18 @@
             <English>Unsling right leg</English>
             <German>Vom rechten Bein abmachen</German>
         </Key>
+        <Key ID="STR_KAT_Misc_Bubble_Wrap_Ace_Action">
+            <English>Pop a Bubble</English>
+            <German>Pop ein Luftpolster</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Bubble_Wrap_Display">
+            <English>Bubble Wrap</English>
+            <German>Luftpolsterfolie</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_Bubble_Wrap_Desc">
+            <English>A Bubble Wrap that you can squeeze to relive some pain</English>
+            <German>Eine Luftpolsterfolie die du zerdrücken kannst um etwas Schmerz los zu werden</German>
+        </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_A_P">
             <English>Blood Group Patch A+</English>
             <German>Blutgruppen Aufnäher A+</German>

@@ -18,15 +18,11 @@ class CfgWeapons
     };
 
     class ItemCore;
-    class kat_Armband_Red_Cross_Item: ItemCore {
+    class kat_Armband_Red_Cross_Item: ACE_ItemCore {
 
-        detectRange = -1;
         author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
-        simulation = "ItemMineDetector";
         displayName = CSTRING(Armband_Red_Cross_ItemName);
         scope = 2;
-        cost = 2;
-        side = 3;
         model = QPATHTOF(models\armband\armband.p3d);
         editorPreview = QPATHTOF(ui\ArmbandWhiteCross.paa);
         picture = QPATHTOF(ui\ArmbandWhiteCross.paa);
@@ -54,5 +50,18 @@ class CfgWeapons
         displayName = CSTRING(Armband_Kat_ItemName);
         editorPreview = QPATHTOF(ui\ArmbandKat.paa);
         picture = QPATHTOF(ui\ArmbandKat.paa);
+    };
+
+    class kat_Bubble_Wrap_Item: ACE_ItemCore {
+
+        author = "Miss Heda";
+        displayName = CSTRING(Bubble_Wrap_Display);
+        descriptionShort = CSTRING(Bubble_Wrap_Desc);
+        scope = 2;
+        editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa);
+        picture = QPATHTOF(ui\Bubble_Wrap_Item.paa);
+        class ItemInfo: InventoryItem_Base_F {
+            mass = 0.1;
+        };
     };
 };
