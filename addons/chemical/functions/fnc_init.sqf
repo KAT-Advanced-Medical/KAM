@@ -17,8 +17,6 @@ params ["_unit", ["_isRespawn", true]];
 
 if (!local _unit) exitWith {};
 
-if (hasinterface) then {
-
     _unit setVariable [QGVAR(timeleft), missionNamespace getVariable [QGVAR(infectionTime), 60], true];
     _unit setVariable [QGVAR(enteredPoison), false, true];
     _unit setVariable [QGVAR(gasmask_durability), 10, true];
@@ -29,7 +27,6 @@ if (hasinterface) then {
 
     [_unit] call FUNC(coughing);
     [_unit] call FUNC(handleGasMaskDur);
-    //[_unit] call FUNC(chemDetector);
     [_unit] call FUNC(breathing);
 
     [{
@@ -47,4 +44,3 @@ if (hasinterface) then {
             };
         };
     }, 2, _unit]call CBA_fnc_addPerFrameHandler;
-};
