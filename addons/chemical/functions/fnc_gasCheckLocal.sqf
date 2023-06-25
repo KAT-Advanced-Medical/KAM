@@ -84,6 +84,7 @@ if (!isDamageAllowed _unit) exitWith {
         _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
         if (_unit distance _pos <= _radius_max && !(_unit getVariable [QGVAR(enteredPoison), false]) && !(_unit getVariable ["ACE_isUnconscious", false])) then {
             _unit setVariable [QGVAR(enteredPoison), true, true];
+            [QGVAR(enteredPoisonEvent), [_unit], _unit] call CBA_fnc_targetEvent;
             _unit setVariable [QGVAR(Poisen_logic), _logic, true];
             private _timeEntered = CBA_missiontime;      
 

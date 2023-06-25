@@ -14,7 +14,7 @@
 * NONE
 *
 * Example:
-* [player, logic, "Toxic", 50] call kat_chemical_fnc_gasChecklocal;
+* [player, logic, "Toxic", 50] call kat_chemical_fnc_afterWait;
 *
 * Public: No
 */
@@ -83,7 +83,6 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
     ] call CBA_fnc_addPerFrameHandler;
 } else {
     if (_unit getVariable [QGVAR(enteredPoison), false]) then {
-        systemChat str _gastype;
         _unit setVariable [QGVAR(poisonType), _gastype, true];
         switch (_gastype) do {
             case "Toxic": {
