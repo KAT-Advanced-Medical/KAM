@@ -1272,15 +1272,11 @@
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING">
             <English>Block head turning</English>
+            <Czech>Blokování otáčení hlavou</Czech>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING_DESC">
             <English>Blocks head turning if patient has Guedel Tube inserted</English>
-        </Key>
-        <Key ID="STR_KAT_Airway_BLOCK_OVERSTRETCH">
-            <English>Block Overstretch</English>
-        </Key>
-        <Key ID="STR_KAT_Airway_BLOCK_OVERSTRETCH_DESC">
-            <English>Blocks Overstretch if patient has Guedel Tube inserted</English>
+            <Czech>Blokuje otáčení hlavou pokud má pacient zavedenou Guedel tubu</Czech>
         </Key>
     </Package>
 </Project>

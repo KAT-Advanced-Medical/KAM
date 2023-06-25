@@ -208,16 +208,6 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
-// Blocks Overstretch if patient has Guedel Tube or KingLT inserted
-[
-    QGVAR(block_overstretch_ifAirwayItem),
-    "CHECKBOX",
-    [LLSTRING(BLOCK_OVERSTRETCH),LLSTRING(BLOCK_OVERSTRETCH_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
 // Settable action time for Recovery position
 [
     QGVAR(RecoveryPosition_Time),
