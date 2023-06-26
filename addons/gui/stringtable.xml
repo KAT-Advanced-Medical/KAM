@@ -4,6 +4,7 @@
         <Key ID="STR_KAT_Gui_dummy">
             <English>dummy for tabler application</English>
             <German>Platzhalter für die tabler app</German>
+            <Japanese>tablerのためのダミー文字列です</Japanese>
         </Key>
     </Package>
 </Project>

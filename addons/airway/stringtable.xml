@@ -107,7 +107,7 @@
             <Turkish>Keko adlı topluluğun AFK oyuncuları için eklentileri vardı. Başkalarının onları uzaklaştırabilmesi için bilinçsiz bırakıldılar. Bu, hava yolu problemleri olasılığını tetikledi. Bu dize, AFK eklentisi tarafından bilinçsiz hale geldiklerinde bunun olmasını engeller.</Turkish>
             <Italian>La comunità chiamata keko aveva un addon per i giocatori AFK. Venivano resi inconscenti così che gli altri potessero trascinarli via. Questo aveva la possibilità di causare problemi alle vie aeree. Questa stringa previene che ciò succeda quando vengono resi incoscenti da questo addon AFK.</Italian>
             <Russian>У сообщества под названием Keko был аддон для игроков AFK. Они были лишены сознания, чтобы другие могли их вытащить. Это спровоцировало риск респираторных заболеваний. Эта строка предотвратит это, когда они потеряют сознание из-за этого аддона AFK.</Russian>
-            <Japanese>kekoというコミュニティにはAFKプレーヤー用のアドオンがありました。他の人がそれらを引き離すことができるように、彼らは無意識に置かれました。それが気道の問題の可能性を引き起こしました。この文字列は、AFKアドオンによって意識が失われたときにそれが発生するのを防ぎます。</Japanese>
+            <Japanese>kekoというコミュニティにはAFKプレーヤー用のアドオンがありました。他の人がAFKプレイヤーを移動できるように、そのプレイヤー無意識にします。しかしそれが気道の問題を発生させる可能性があります。この文字列は、AFKアドオンによって意識が失われたときにそれが発生するのを防ぎます。</Japanese>
             <Portuguese>A comunidade Keko tinha um addon para os jogadores AFK. Eles foram colocados inconscientes para que outros pudessem arrastá-los. Isso desencadeou chances de problemas nas vias aéreas. Esta corda evita que isso aconteça quando eles ficam inconscientes por causa do addon.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
@@ -1273,10 +1273,12 @@
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING">
             <English>Block head turning</English>
             <Czech>Blokování otáčení hlavou</Czech>
+            <Japanese>異物の除去の阻害</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING_DESC">
             <English>Blocks head turning if patient has Guedel Tube inserted</English>
             <Czech>Blokuje otáčení hlavou pokud má pacient zavedenou Guedel tubu</Czech>
+            <Japanese>患者にゲデルチューブが挿管されている時に異物の除去を出来ないようにします</Japanese>
         </Key>
     </Package>
 </Project>
