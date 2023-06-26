@@ -1516,10 +1516,12 @@
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle">
             <English>Use BVM with Oxygen Tank (Vehicle)</English>
             <German>Verwende BVM mit Sauerstoff (Fahrzeug)</German>
+            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용</Korean>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
             <English>Using BVM with Oxygen Tank (Vehicle)</English>
             <German>Beatme mit BVM und Sauerstoff (vom Fahrzeug)</German>
+            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용 중</Korean>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
@@ -1823,9 +1825,11 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen">
             <English>Location Provide Oxygen</English>
+            <Korean>산소 공급 위치</Korean>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen_DESC">
             <English>Sets if medical vehicles/facilites can provide oxygen</English>
+            <Korean>의료 차량/시설이 산소를 공급할 수 있는지 여부를 결정합니다.</Korean>
         </Key>
     </Package>
 </Project>
