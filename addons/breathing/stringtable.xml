@@ -1517,11 +1517,13 @@
             <English>Use BVM with Oxygen Tank (Vehicle)</English>
             <German>Verwende BVM mit Sauerstoff (Fahrzeug)</German>
             <Japanese>BVMと車両の酸素ボンベを使用する</Japanese>
+            <French>Utiliser le BVM avec un réservoir d'oxygène (Véhicule)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
             <English>Using BVM with Oxygen Tank (Vehicle)</English>
             <German>Beatme mit BVM und Sauerstoff (vom Fahrzeug)</German>
             <Japanese>BVMと車両の酸素ボンベを使用中</Japanese>
+            <French>Utilisation du BVM avec un réservoir d'oxygène (Véhicule)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
@@ -1826,10 +1828,12 @@
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen">
             <English>Location Provide Oxygen</English>
             <Japanese>酸素を提供する場所</Japanese>
+            <French>Lieu fournissant de l'oxygène</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen_DESC">
             <English>Sets if medical vehicles/facilites can provide oxygen</English>
             <Japanese>医療車両もしくは建物が酸素を提供可能にするかを設定します</Japanese>
+            <French>Règle si les zones/véhicules médicaux peuvent fournir de l'oxygène</French>
         </Key>
     </Package>
 </Project>

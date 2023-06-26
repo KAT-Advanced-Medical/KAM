@@ -1274,11 +1274,13 @@
             <English>Block head turning</English>
             <Czech>Blokování otáčení hlavou</Czech>
             <Japanese>異物の除去の阻害</Japanese>
+            <French>Bloquer la rotation de la tête</French>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING_DESC">
             <English>Blocks head turning if patient has Guedel Tube inserted</English>
             <Czech>Blokuje otáčení hlavou pokud má pacient zavedenou Guedel tubu</Czech>
             <Japanese>患者にゲデルチューブが挿管されている時に異物の除去を出来ないようにします</Japanese>
+            <French>Bloque la rotation de la tête si le patient a une canule de Guedel insérée</French>
         </Key>
     </Package>
 </Project>
