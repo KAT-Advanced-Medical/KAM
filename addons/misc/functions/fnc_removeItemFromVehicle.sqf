@@ -12,12 +12,12 @@
  * None
  *
  * Example:
- * [player,"ACE_elasticBandage"] call kat_misc_fnc_removeItemFromVehicle
+ * [player, "ACE_elasticBandage"] call kat_misc_fnc_removeItemFromVehicle
  *
  * Public: No
  */
 
-params ["_vehicle","_item",["_isMagazine",false]];
+params ["_vehicle", "_item", ["_isMagazine", false]];
 
 if !(_isMagazine) then {
     private _cargoItems = getItemCargo _vehicle;
