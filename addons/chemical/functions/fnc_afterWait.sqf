@@ -14,14 +14,18 @@
 * NONE
 *
 * Example:
-* [player, logic, "Toxic", 50] call kat_chemical_fnc_gasChecklocal;
+* [player, logic, "Toxic", 50] call kat_chemical_fnc_afterWait;
 *
 * Public: No
 */
 
 params ["_unit", "_logic", "_gastype", "_radius_max"];
 
-if (goggles _unit in GVAR(availGasmasklist)) then {
+if (!isDamageAllowed _unit) exitWith {
+    [_unit] call FUNC(clearChemicalInjuriesLocal);    
+};
+
+if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {
     private _isinGas = true;
     [
         {
@@ -39,7 +43,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
                 _isinGas = false;
             };
 
-            if !(goggles _unit in GVAR(availGasmasklist) && _timeleft > 0) then {
+            if !((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []]) && _timeleft > 0) then {
                 _unit setVariable [QGVAR(poisonType), _gastype, true];
                 switch (_gastype) do {
                     case "Toxic": {
@@ -47,7 +51,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
                     };
                     case "CS": {
                         _unit setVariable [QGVAR(CS), true, true];
-                        [_logic, _radius_max] spawn FUNC(handleCSGas);
+                        [_unit, _logic, _radius_max] call FUNC(handleCSGas);
                     };
                 };
                 [_unit] call EFUNC(breathing,handleBreathing);
@@ -62,7 +66,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
                     };
                     case "CS": {
                         _unit setVariable [QGVAR(CS), true, true];
-                        [_logic, _radius_max] spawn FUNC(handleCSGas);
+                        [_unit, _logic, _radius_max] call FUNC(handleCSGas);
                     };
                 };
                 [_unit] call EFUNC(breathing,handleBreathing);
@@ -86,7 +90,7 @@ if (goggles _unit in GVAR(availGasmasklist)) then {
             };
             case "CS": {
                 _unit setVariable [QGVAR(CS), true, true];
-                [_logic, _radius_max] spawn FUNC(handleCSGas);
+                [_unit, _logic, _radius_max] call FUNC(handleCSGas);
             };
         };
         [_unit] call EFUNC(breathing,handleBreathing);

@@ -18,15 +18,17 @@ jobs:
         - name: Setup HEMTT
           uses: arma-actions/hemtt@v1
         - name: Run HEMTT build
-          run: hemtt release
+          run: hemtt release --no-archive
         - name: Move release to releases folder
           run:
             version="${{ github.event.release.tag_name }}"
-            mv releases/kat-latest.zip "@Kat-Advanced-Medical-${{ env.VERSION }}.zip"
+            mv .hemttout/release "@Kat-Advanced-Medical-${{ env.VERSION }}"
+        - name: Zip release
+          run: zip -r "@Kat-Advanced-Medical-${{ env.VERSION }}.zip" ./@Kat-Advanced-Medical-${{ env.VERSION }}
         - name: Update Release with Files
           uses: softprops/action-gh-release@v1
           with:
-            files: ./@Kat-Advanced-Medical-*.zip
+            files: ./@Kat-Advanced-Medical-${{ env.VERSION }}.zip
             draft: true
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -34,7 +36,7 @@ jobs:
           uses: arma-actions/workshop-upload@v1
           with:
             itemId: '2020940806'
-            contentPath: './@Kat-Advanced-Medical-*.zip'
+            contentPath: './@Kat-Advanced-Medical-${{ env.VERSION }}'
             changelog: |
               https://github.com/KAT-Advanced-Medical/KAM/releases/tag/v${{ env.VERSION }}
 
@@ -46,7 +48,7 @@ jobs:
           uses: arma-actions/workshop-upload@v1
           with:
             itemId: '2774641073'
-            contentPath: './@Kat-Advanced-Medical-*.zip'
+            contentPath: './@Kat-Advanced-Medical-${{ env.VERSION }}'
             changelog: |
               https://github.com/KAT-Advanced-Medical/KAM/releases/tag/v${{ env.VERSION }}
 

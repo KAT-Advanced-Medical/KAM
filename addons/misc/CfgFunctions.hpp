@@ -7,4 +7,15 @@ class CfgFunctions {
             };
         };
     };
+    class overwrite_medical_treatment {
+        tag = "ace_medical_treatment";
+        class ace_medical_treatment {
+            class hasItem {
+                file = QPATHTOF(functions\fnc_hasItem.sqf);
+            };
+            class useItem {
+                file = QPATHTOF(functions\fnc_useItem.sqf);
+            };
+        };
+    };
 };

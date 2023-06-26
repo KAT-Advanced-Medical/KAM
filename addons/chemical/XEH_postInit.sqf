@@ -5,6 +5,7 @@
 [QGVAR(gasCheck_local), LINKFUNC(gasCheckLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(gasCheck_ai), LINKFUNC(gasAI)] call CBA_fnc_addEventHandler;
 [QGVAR(afterWait), LINKFUNC(afterWait)] call CBA_fnc_addEventHandler;
+[QGVAR(enteredPoisonEvent), LINKFUNC(chemDetector)] call CBA_fnc_addEventHandler;
 
 //Mortar Events
 ["Mortar_01_base_F", "fired", {call FUNC(handleFired)}] call CBA_fnc_addClassEventHandler;
@@ -26,3 +27,7 @@ ppBlur_priority = 399;
     ppBlurAmount = 0;
     ppBluring = false;
 }] call CBA_fnc_waitUntilAndExecute;
+
+private _items = missionNamespace getVariable [QGVAR(availGasmask), "'G_AirPurifyingRespirator_01_F'"];
+private _array = [_items, "CfgGlasses"] call FUNC(getList);
+missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
