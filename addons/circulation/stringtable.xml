@@ -2094,6 +2094,7 @@
             <Czech>Práh AED-X pro aktivaci alarmu Pulzního Oxymetru</Czech>
             <German>AED-X Sättigungsalarm Grenzwert</German>
             <Japanese>AED-XのSpO2警告音のしきい値</Japanese>
+            <French>Seuil d'alarme de SpO2 de l'AED-X</French>
         </Key>
     </Package>
 </Project>
