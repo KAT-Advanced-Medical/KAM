@@ -1516,12 +1516,14 @@
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle">
             <English>Use BVM with Oxygen Tank (Vehicle)</English>
             <German>Verwende BVM mit Sauerstoff (Fahrzeug)</German>
+            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용</Korean>
             <Japanese>BVMと車両の酸素ボンベを使用する</Japanese>
             <French>Utiliser le BVM avec un réservoir d'oxygène (Véhicule)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
             <English>Using BVM with Oxygen Tank (Vehicle)</English>
             <German>Beatme mit BVM und Sauerstoff (vom Fahrzeug)</German>
+            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용 중</Korean>
             <Japanese>BVMと車両の酸素ボンベを使用中</Japanese>
             <French>Utilisation du BVM avec un réservoir d'oxygène (Véhicule)</French>
         </Key>
@@ -1827,11 +1829,13 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen">
             <English>Location Provide Oxygen</English>
+            <Korean>산소 공급 위치</Korean>
             <Japanese>酸素を提供する場所</Japanese>
             <French>Lieu fournissant de l'oxygène</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen_DESC">
             <English>Sets if medical vehicles/facilites can provide oxygen</English>
+            <Korean>의료 차량/시설이 산소를 공급할 수 있는지 여부를 결정합니다.</Korean>
             <Japanese>医療車両もしくは建物が酸素を提供可能にするかを設定します</Japanese>
             <French>Règle si les zones/véhicules médicaux peuvent fournir de l'oxygène</French>
         </Key>
