@@ -455,7 +455,7 @@
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_DESC">
             <English>Sets whether vehicle's medical supplies can be used while treating and in which order</English>
             <German>Legt fest, ob und in welcher Reihenfolge die medizinischen Hilfsmittel des Fahrzeugs während der Behandlung verwendet werden können</German>
-            <Korean>치료 중에 차량 내 의료용품을 사용할 수 있는지 여부와 어떤 순서로 사용할 것인지 설정합니다.</Korean
+            <Korean>치료 중에 차량 내 의료용품을 사용할 수 있는지 여부와 어떤 순서로 사용할 것인지 설정합니다.</Korean>
             <Japanese>車両の医療物資を治療時に使用可能か、およびその使用順を設定します</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleNoSelfTreatment">
