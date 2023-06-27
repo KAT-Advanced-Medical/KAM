@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, "ACE_elasticBandage"] call kat_misc_fnc_removeItemFromVehicle
+ * [vehicle player, "kat_Painkiller", true] call kat_misc_fnc_removeItemFromVehicle
  *
  * Public: No
  */
