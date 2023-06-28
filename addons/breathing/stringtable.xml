@@ -1832,12 +1832,14 @@
             <Korean>산소 공급 위치</Korean>
             <Japanese>酸素を提供する場所</Japanese>
             <French>Lieu fournissant de l'oxygène</French>
+            <German>Ort der Sauerstoff Quelle</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen_DESC">
             <English>Sets if medical vehicles/facilites can provide oxygen</English>
             <Korean>의료 차량/시설이 산소를 공급할 수 있는지 여부를 결정합니다.</Korean>
             <Japanese>医療車両もしくは建物が酸素を提供可能にするかを設定します</Japanese>
             <French>Règle si les zones/véhicules médicaux peuvent fournir de l'oxygène</French>
+            <German>Bestimmt ob medizinische Fahrzeuge / Gebäude Sauerstoff beherbergen</German>
         </Key>
     </Package>
 </Project>

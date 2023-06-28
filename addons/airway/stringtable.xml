@@ -1287,6 +1287,7 @@
             <Korean>고개 돌리기 막기</Korean>
             <Japanese>異物の除去の阻害</Japanese>
             <French>Bloquer la rotation de la tête</French>
+            <German>Blockiere Kopf zur Seite drehen</German>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING_DESC">
             <English>Blocks head turning if patient has Guedel Tube inserted</English>
@@ -1294,6 +1295,7 @@
             <Korean>환자가 게델튜브를 삽입한 경우 고개 돌리기를 막습니다.</Korean>
             <Japanese>患者にゲデルチューブが挿管されている時に異物の除去を出来ないようにします</Japanese>
             <French>Bloque la rotation de la tête si le patient a une canule de Guedel insérée</French>
+            <German>Blockiert das zur Seite drehen des Kopfes wenn ein Guedetubus eingeführt ist</German>
         </Key>
     </Package>
 </Project>
