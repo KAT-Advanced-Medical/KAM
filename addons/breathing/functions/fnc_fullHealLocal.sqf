@@ -2,7 +2,7 @@
 /*
  * Author: Glowbal
  * Edit: Tomcat --> added heal of airway damage
- * Local callback for fully healing a patient. 
+ * Local callback for fully healing a patient.
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -61,9 +61,9 @@ _unit setVariable [QACEGVAR(medical,tourniquets), [0,0,0,0,0,0], true];
 _unit setVariable [QACEGVAR(medical_treatment,occludedMedications), nil, true];
 
 // Wounds and Injuries
-_unit setVariable [QACEGVAR(medical,openWounds), [], true];
-_unit setVariable [QACEGVAR(medical,bandagedWounds), [], true];
-_unit setVariable [QACEGVAR(medical,stitchedWounds), [], true];
+_unit setVariable [QACEGVAR(medical,openWounds), createHashMap, true];
+_unit setVariable [QACEGVAR(medical,bandagedWounds), createHashMap, true];
+_unit setVariable [QACEGVAR(medical,stitchedWounds), createHashMap, true];
 _unit setVariable [QACEGVAR(medical,isLimping), false, true];
 _unit setVariable [QACEGVAR(medical,fractures), [0,0,0,0,0,0], true];
 
@@ -148,7 +148,7 @@ TRACE_1("after FullHeal",_state);
 
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
-    
+
     ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["kat_EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);

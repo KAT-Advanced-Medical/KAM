@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_patient","_bodyPart"];
+params ["_patient", "_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
@@ -42,10 +42,11 @@ if (_IVactual > 1) then {
     params ["_args", "_idPFH"];
     _args params ["_patient"];
 
-    private _stitchableWounds = _patient call ACEFUNC(medical_treatment,getStitchableWounds);
+    private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
     private _alive = alive _patient;
 
-    if ((!_alive) || (_stitchableWounds isEqualTo [])) exitWith {
+    if ((!_alive) || (_bandagedWounds isEqualTo [])) exitWith {
+        systemChat "Removing PFH";
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
@@ -53,27 +54,33 @@ if (_IVactual > 1) then {
     private _ph = (_patient getVariable [QGVAR(pH), 1500]) - 750;
 
     if (_random <= _ph) then {
-        private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
-        private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
+        {
+            private _part = _x;
+            {
+                _x params ["_classID", "_amountOf", "", "_damageOf"];
+                private _bandagedWoundsOnPart = _bandagedWounds get _part;
+                private _treatedWound = _bandagedWoundsOnPart deleteAt (count _bandagedWoundsOnPart - 1);
+                _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
 
-        private _treatedWound = _bandagedWounds deleteAt (_bandagedWounds find (_stitchableWounds select 0));
-        _treatedWound params ["_treatedID", "_treatedBodyPartN", "_treatedAmountOf"];
+                private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
+                private _stitchedWoundsOnPart = _stitchedWounds getOrDefault [_part, [], true];
 
-        private _woundIndex = _stitchedWounds findIf {
-            _x params ["_classID", "_bodyPartN"];
+                private _woundIndex = _stitchedWoundsOnPart findIf {
+                    _x params ["_classID"];
+                    _classID == _treatedID
+                };
 
-            _classID == _treatedID && {_bodyPartN == _treatedBodyPartN}
-        };
+                if (_woundIndex == -1) then {
+                    _stitchedWoundsOnPart pushBack _treatedWound;
+                } else {
+                    private _wound = _stitchedWoundsOnPart select _woundIndex;
+                    _wound set [1, (_wound select 1) + _treatedAmountOf];
+                };
 
-        if (_woundIndex == -1) then {
-            _stitchedWounds pushBack _treatedWound;
-        } else {
-            private _wound = _stitchedWounds select _woundIndex;
-            _wound set [2, (_wound select 2) + _treatedAmountOf];
-        };
-
-        _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
-        _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
+                _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
+                _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
+            } forEach _y;
+        } forEach _bandagedWounds;
     };
 
 }, 6, [_patient]] call CBA_fnc_addPerFrameHandler;
