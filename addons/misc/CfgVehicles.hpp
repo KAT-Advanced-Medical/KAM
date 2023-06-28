@@ -424,6 +424,15 @@ class CfgVehicles {
                         icon = QPATHTOF(ui\ArmbandRightLeg.paa);
                     };
                 };
+
+                class BubbleWrapPopping {
+                    displayName = CSTRING(Bubble_Wrap_Ace_Action);
+                    condition = QUOTE([ARR_2(_player, ""kat_Bubble_Wrap"")] call ACEFUNC(common,hasMagazine));
+                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    statement = QUOTE(_player call FUNC(BubbleWrap));
+                    showDisabled = 0;
+                    icon = QPATHTOF(ui\Bubble_Wrap_Item.paa);
+                };
             };
         };
         class ACE_Actions {

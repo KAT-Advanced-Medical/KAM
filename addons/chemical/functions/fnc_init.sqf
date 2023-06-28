@@ -17,17 +17,17 @@ params ["_unit", ["_isRespawn", true]];
 
 if (!local _unit) exitWith {};
 
-if (hasinterface) then {
-    [_unit] call FUNC(coughing);
-    [_unit] call FUNC(handleGasMaskDur);
-    [_unit] spawn FUNC(chemDetector);
-    [_unit] spawn FUNC(breathing);
-
     _unit setVariable [QGVAR(timeleft), missionNamespace getVariable [QGVAR(infectionTime), 60], true];
     _unit setVariable [QGVAR(enteredPoison), false, true];
     _unit setVariable [QGVAR(gasmask_durability), 10, true];
     _unit setVariable [QGVAR(gasmask_durability_reset), false, true];
     _unit setVariable [QGVAR(chemDetectorState), true , true];
+    _unit setVariable [QGVAR(airPoisoning), false, true];
+    _unit setVariable [QGVAR(CS), false, true];
+
+    [_unit] call FUNC(coughing);
+    [_unit] call FUNC(handleGasMaskDur);
+    [_unit] call FUNC(breathing);
 
     [{
         params ["_args", "_pfhID"];
@@ -44,16 +44,3 @@ if (hasinterface) then {
             };
         };
     }, 2, _unit]call CBA_fnc_addPerFrameHandler;
-
-    [{
-        params ["_args", "_pfhID"];
-        _args params ["_unit"];
-
-        "KAT_CHEM_DETECTOR" cutRsc ["RscWeaponChemicalDetector", "PLAIN", 1, false];
-        private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
-        private _obj = _ui displayCtrl 101;
-        if (!(_unit getVariable[QGVAR(enteredPoison), false])) then {
-            _obj ctrlAnimatemodel ["Threat_Level_Source", 0, true];
-        };
-    }, 2, [_unit]]call CBA_fnc_addPerFrameHandler;
-};
