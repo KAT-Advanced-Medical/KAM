@@ -45,8 +45,7 @@ if (_IVactual > 1) then {
     private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
     private _alive = alive _patient;
 
-    if ((!_alive) || (_bandagedWounds isEqualTo [])) exitWith {
-        systemChat "Removing PFH";
+    if (!_alive) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
@@ -59,6 +58,7 @@ if (_IVactual > 1) then {
             {
                 _x params ["_classID", "_amountOf", "", "_damageOf"];
                 private _bandagedWoundsOnPart = _bandagedWounds get _part;
+                if (_bandagedWoundsOnPart isEqualTo []) exitWith {[_idPFH] call CBA_fnc_removePerFrameHandler;};
                 private _treatedWound = _bandagedWoundsOnPart deleteAt (count _bandagedWoundsOnPart - 1);
                 _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
 
