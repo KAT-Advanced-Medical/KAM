@@ -40,6 +40,7 @@
             <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que:\n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
             <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n- 意識不明になった時\n- KingLT/ゲデルチューブが外れた時</Japanese>
             <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque :\n- la personne tombe inconsciente\n- Une canule de Guedel/tube laryngé est retiré</French>
+            <Korean>다음 조건에 의해 매번 발생되는 혀막힘 확률(%):\n- 의식불명이 될 시\n- 기관삽입기 / 게델튜브 제거 시</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
@@ -64,6 +65,7 @@
             <Spanish>Porcentaje de probabilidad de que suceda una oclusión Opciones:[tiempo de repeticion de oclusión] (por defecto cada 60s)</Spanish>
             <Japanese>気道異物の確率(%) [異物再発までの時間]の設定時間毎に計算されます (デフォルトでは60秒毎)</Japanese>
             <French>La probabilité d'occlusion des voies aériennes en pourcentage qui est tirée aléatoirement selon le paramètre : [Temps de répétition des occlusions] (Par défaut toutes les 60s)</French>
+            <Korean>매번 발생되는 구토막힘 확률(%): [구토 반복 타이머] (기본값: 매 60초 마다)</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
@@ -107,7 +109,7 @@
             <Turkish>Keko adlı topluluğun AFK oyuncuları için eklentileri vardı. Başkalarının onları uzaklaştırabilmesi için bilinçsiz bırakıldılar. Bu, hava yolu problemleri olasılığını tetikledi. Bu dize, AFK eklentisi tarafından bilinçsiz hale geldiklerinde bunun olmasını engeller.</Turkish>
             <Italian>La comunità chiamata keko aveva un addon per i giocatori AFK. Venivano resi inconscenti così che gli altri potessero trascinarli via. Questo aveva la possibilità di causare problemi alle vie aeree. Questa stringa previene che ciò succeda quando vengono resi incoscenti da questo addon AFK.</Italian>
             <Russian>У сообщества под названием Keko был аддон для игроков AFK. Они были лишены сознания, чтобы другие могли их вытащить. Это спровоцировало риск респираторных заболеваний. Эта строка предотвратит это, когда они потеряют сознание из-за этого аддона AFK.</Russian>
-            <Japanese>kekoというコミュニティにはAFKプレーヤー用のアドオンがありました。他の人がそれらを引き離すことができるように、彼らは無意識に置かれました。それが気道の問題の可能性を引き起こしました。この文字列は、AFKアドオンによって意識が失われたときにそれが発生するのを防ぎます。</Japanese>
+            <Japanese>kekoというコミュニティにはAFKプレーヤー用のアドオンがありました。他の人がAFKプレイヤーを移動できるように、そのプレイヤー無意識にします。しかしそれが気道の問題を発生させる可能性があります。この文字列は、AFKアドオンによって意識が失われたときにそれが発生するのを防ぎます。</Japanese>
             <Portuguese>A comunidade Keko tinha um addon para os jogadores AFK. Eles foram colocados inconscientes para que outros pudessem arrastá-los. Isso desencadeou chances de problemas nas vias aéreas. Esta corda evita que isso aconteça quando eles ficam inconscientes por causa do addon.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
@@ -1209,6 +1211,7 @@
             <Spanish>Retirando tubo laringeo</Spanish>
             <Japanese>King LTを取り除く</Japanese>
             <French>Retirer le tube laryngé</French>
+            <Korean>기관삽입기 제거</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_Cancel_Guedeltubus">
             <English>Remove Guedel Tube</English>
@@ -1217,6 +1220,7 @@
             <Spanish>Retirando Cánula de Guedel</Spanish>
             <Japanese>ゲデルチューブを取り除く</Japanese>
             <French>Retirer la canule de Guedel</French>
+            <Korean>게델튜브 제거</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_action_removing">
             <English>Removing</English>
@@ -1225,6 +1229,7 @@
             <Spanish>Quitando</Spanish>
             <Japanese>取り除いています</Japanese>
             <French>Retrait</French>
+            <Korean>제거 중</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems">
             <English>Reusable Airway Items</English>
@@ -1233,6 +1238,7 @@
             <Spanish>Objetos reutilizables de vías aéreas</Spanish>
             <Japanese>繰り返し使用できる気道アイテム</Japanese>
             <French>Objets lié aux voies aériennes réutilisables</French>
+            <Korean>기도 관련 아이템 재사용 가능</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems_DESC">
             <English>Regain the KingLT or Guedel Tube when manually removing them</English>
@@ -1241,6 +1247,7 @@
             <Spanish>Recuperar el Tubo laríngeo o la Cánula de Guedel cuando se quitan manualmente</Spanish>
             <Japanese>KingLTまたはゲデルチューブを取り除いた際、再使用できるようにします。</Japanese>
             <French>Récupère le tube laryngé ou la canule de guedel lorsque ceux-ci sont retirés manuellement</French>
+            <Korean>기관삽입기나 게델튜브를 수동으로 제거하면 재사용을 가능케 할지 여부입니다.</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveLarynxtubus_Log">
             <English>%1 removed KingLT</English>
@@ -1249,6 +1256,7 @@
             <Spanish>%1 retiró el tubo laringeo</Spanish>
             <Japanese>%1 が King LT を取り除きました</Japanese>
             <French>%1 a retiré la tube laryngé</French>
+            <Korean>%1(이)가 기관삽입기를 제거했습니다</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveGuedeltubus_Log">
             <English>%1 removed Guedel Tube</English>
@@ -1257,26 +1265,37 @@
             <Spanish>%1 retiró la Canula de Guedel</Spanish>
             <Japanese>%1 が ゲデルチューブ を取り除きました</Japanese>
             <French>%1 a retiré la canule de Guedel</French>
+            <Korean>%1(이)가 게델튜브를 제거했습니다</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_AutoTriage">
             <English>Auto Triage Airways</English>
             <Japanese>気道による自動トリアージ</Japanese>
             <German>Auto Triage Atemwege</German>
             <French>Triage automatique des voies aériennes</French>
+            <Korean>기도 확인으로 부상자 자동 분류</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_AutoTriage_Desc">
             <English>Sets if checking airways can override current triage level</English>
             <Japanese>気道の検査をすることで現在のトリアージレベルを自動で上書き設定します</Japanese>
             <German>Setzt, ob die aktuelle Triage Karte überschrieben werden soll durch das Prüfen der Atemwege</German>
             <French>Définit si l'inspection des voies aériennes modifie le niveau actuel de triage</French>
+            <Korean>기도 확인이 현재 부상자 분류 레벨을 덮어 쓸지의 여부를 결정합니다.</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING">
             <English>Block head turning</English>
             <Czech>Blokování otáčení hlavou</Czech>
+            <Korean>고개 돌리기 막기</Korean>
+            <Japanese>異物の除去の阻害</Japanese>
+            <French>Bloquer la rotation de la tête</French>
+            <German>Verhindert das Drehen des Kopfes</German>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING_DESC">
             <English>Blocks head turning if patient has Guedel Tube inserted</English>
             <Czech>Blokuje otáčení hlavou pokud má pacient zavedenou Guedel tubu</Czech>
+            <Korean>환자가 게델튜브를 삽입한 경우 고개 돌리기를 막습니다.</Korean>
+            <Japanese>患者にゲデルチューブが挿管されている時に異物の除去を出来ないようにします</Japanese>
+            <French>Bloque la rotation de la tête si le patient a une canule de Guedel insérée</French>
+            <German>Verhindert das zur Seite Drehen des Kopfes während ein Guedetubus eingeführt ist</German>
         </Key>
     </Package>
 </Project>
