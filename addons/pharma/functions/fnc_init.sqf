@@ -141,25 +141,27 @@ if (GVAR(coagulation)) then {
 
         if (_count == 0) exitWith {
             {
-                _x params ["", "_bodyPart", "_amount", "_bleeding"];
-
-                if (_amount * _bleeding > 0) exitWith {
-                    private _part = ALL_BODY_PARTS select _bodyPart;
-                    [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
-                    _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
-                };
+                private _part = _x;
+                {
+                    _x params ["", "_amountOf", "_bleeding"];
+                    if (_amountOf * _bleeding > 0) exitWith {
+                        [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
+                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
+                    };
+                } forEach _y;
             } forEach _openWounds;
         };
 
         if (_count > 0) exitWith {
             {
-                _x params ["", "_bodyPart", "_amount", "_bleeding"];
-
-                if (_amount * _bleeding > 0) exitWith {
-                    private _part = ALL_BODY_PARTS select _bodyPart;
-                    [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
-                    _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
-                };
+                private _part = _x;
+                {
+                    _x params ["", "_amountOf", "_bleeding"];
+                    if (_amountOf * _bleeding > 0) exitWith {
+                        [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
+                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
+                    };
+                } forEach _y;
             } forEach _openWounds;
         };
     }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;
