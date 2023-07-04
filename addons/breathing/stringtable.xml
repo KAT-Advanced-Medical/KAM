@@ -1346,7 +1346,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_SPO2Flashing_DESC">
             <English>Makes your Screen flash black if you are below 90% SpO2 (default value)</English>
             <Spanish>Parpadeos negros del monitor que avisan de un Sp02 menor a 90% (valor predeterminado)</Spanish>
-            <German>Dunkle, pulsierende Vignettierung wenn der SpO2 Wert unter 90% ist (Standard Wert)</German>
+            <German>Dunkle, pulsierende Vignettierung, wenn der SpO2 Wert unter 90% ist (Standardwert)</German>
             <French>Fait flasher l'écran en noir si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
             <Japanese>SpO2が(デフォルトの値では)90%未満の場合、画面が黒く点滅します。</Japanese>
             <Korean>산소포화도가 90%(기본값) 미만인 경우 화면이 검은색으로 깜빡입니다.</Korean>
@@ -1370,7 +1370,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_Stamina_Loss_SPO2_DESC">
             <English>Makes you lose stamina if you are under 90% SpO2 (default value)</English>
             <Spanish>Te hace perder resistencia al tener el Sp02 por debajo del 90% (valor predeterminado)</Spanish>
-            <German>Lässt dich Ausdauer verlieren wenn du unter 90% SpO2 bist (Standard Wert)</German>
+            <German>Lässt dich Ausdauer verlieren, wenn du unter 90% SpO2 bist (Standardwert)</German>
             <French>Fait perdre de l'endurance si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
             <Japanese>SpO2が(デフォルトの値では)90%未満の場合、スタミナを失います。</Japanese>
             <Korean>산소포화도가 90%(기본값) 미만이면 스태미나가 떨어집니다.</Korean>
@@ -1394,7 +1394,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_lowSPO2Level_DESC">
             <English>Lets you change the SpO2 Value at which you get the Flashing warning indicator and stamina loss effect</English>
             <Spanish>Te permite bajar el nivel de Sp02 a partir del cual se empiezan a efectuar flashazos negros y se pierde resistencia</Spanish>
-            <German>Definiert den SpO2 Wert, bei welchem der Ausdauerverlust und der visuelle Effekt (Dunkle, pulsierende Vignettierung) eintritt</German>
+            <German>Definiert den SpO2 Wert, bei welchem der Ausdauerverlust und der visuelle Effekt (dunkle, pulsierende Vignettierung) eintritt</German>
             <French>Règle la valeur de SpO2 à laquelle les flashs d'alerte et la perte d'endurance apparaissent</French>
             <Japanese>低SpO2警告が発生するSpO2のしきい値を変更します。(デフォルトでは90%)</Japanese>
             <Korean>깜빡임 경고 표시 및 스태미나 손실 효과를 얻게 되는 산소포화도 값을 변경합니다.</Korean>
@@ -1515,9 +1515,17 @@
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle">
             <English>Use BVM with Oxygen Tank (Vehicle)</English>
+            <German>Verwende BVM mit Sauerstoff (Fahrzeug)</German>
+            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용</Korean>
+            <Japanese>BVMと車両の酸素ボンベを使用する</Japanese>
+            <French>Utiliser le BVM avec un réservoir d'oxygène (Véhicule)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
             <English>Using BVM with Oxygen Tank (Vehicle)</English>
+            <German>Beatme mit BVM und Sauerstoff (vom Fahrzeug)</German>
+            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용 중</Korean>
+            <Japanese>BVMと車両の酸素ボンベを使用中</Japanese>
+            <French>Utilisation du BVM avec un réservoir d'oxygène (Véhicule)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
@@ -1606,7 +1614,7 @@
             <Korean>의식불명인 환자의 호흡을 보조하는 데 사용되는 인공호흡기</Korean>
             <Polish>Worek samorozprężalny, używany w resuscytacji tlenowej na nieprzytomnym pacjencie</Polish>
             <Japanese>意識を失った患者の呼吸補助に使用</Japanese>
-            <German>Die Beutelventilmaske wird benutzt um die Atmung von bewustlosen Patienten zu unterstützen</German>
+            <German>Die Beutelventilmaske wird benutzt, um die Atmung von bewusstlosen Patienten zu unterstützen</German>
             <Czech>Resuscitační Vak, používá se k pomoci s dýcháním pacientů v bezvědomí</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Display">
@@ -1646,7 +1654,7 @@
             <Korean>150L의 산소가 들어 있는 휴대용 산소 탱크. 인공호흡기에 연결하여 중환자의 호흡을 추가적으로 보조합니다.</Korean>
             <Polish>Przenośna butla z tlenem, zawiera 150L tlenu. Może zostać podłączona do worka samorozprężalnego w celu resuscytacji tlenowej</Polish>
             <Japanese>150Lの酸素が入った携帯酸素ボンベ。BVMに接続し重篤患者の呼吸補助に使用。</Japanese>
-            <German>Der tragbare Sauerstofftank enthält 150L Sauerstoff. Er ist ausgelegt, um an die BVM angeschlossen zu werden und bei der Beatmung zu helfen. </German>
+            <German>Der tragbare Sauerstofftank enthält 150L Sauerstoff. Er ist dazu ausgelegt, an die BVM angeschlossen zu werden und bei der Beatmung zu helfen.</German>
             <Czech>Přenosná Kyslíková Lahev, obsahuje 150L kyslíku. Připojením k RV lze zajistit dýchání pacientům v kritickém stavu.</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Display">
@@ -1666,7 +1674,7 @@
             <Korean>300L의 산소가 들어 있는 휴대용 산소 탱크. 인공호흡기에 연결하여 중환자의 호흡을 추가적으로 보조합니다.</Korean>
             <Polish>Przenośna butla z tlenem, zawiera 300L tlenu. Może zostać podłączona do worka samorozprężalnego w celu resuscytacji tlenowej</Polish>
             <Japanese>150Lの酸素が入った携帯酸素ボンベ。BVMに接続し重篤患者の呼吸補助に使用。</Japanese>
-            <German>Der tragbare Sauerstofftank enthält 300L Sauerstoff. Er ist ausgelegt, um an die BVM angeschlossen zu werden und bei der Beatmung zu helfen. </German>
+            <German>Der tragbare Sauerstofftank enthält 300L Sauerstoff. Er ist dazu ausgelegt, an die BVM angeschlossen zu werden und bei der Beatmung zu helfen.</German>
             <Czech>Přenosná Kyslíková Lahev, obsahuje 300L kyslíku. Připojením k RV lze zajistit dýchání pacientům v kritickém stavu.</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
@@ -1786,7 +1794,7 @@
             <Korean>휴대용 산소 탱크 기본 재충전 시간</Korean>
             <Polish>Czas napełnienia przenośnej butli z tlenem</Polish>
             <Japanese>携帯用酸素ボンベの補充にかかる基準時間</Japanese>
-            <German>Tragbarer Sauerstofftank Grundlegende Nachfüllzeit</German>
+            <German>Grundlegende Nachfüllzeit des tragbaren Sauerstofftanks</German>
             <Czech>Základní čas pro naplnění přenosné Kyslíkové Lahve</Czech>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime_DESC">
@@ -1821,9 +1829,17 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen">
             <English>Location Provide Oxygen</English>
+            <Korean>산소 공급 위치</Korean>
+            <Japanese>酸素を提供する場所</Japanese>
+            <French>Lieu fournissant de l'oxygène</French>
+            <German>Bereitstellung Sauerstoff durch Fahrzeuge/Gebäude</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen_DESC">
             <English>Sets if medical vehicles/facilites can provide oxygen</English>
+            <Korean>의료 차량/시설이 산소를 공급할 수 있는지 여부를 결정합니다.</Korean>
+            <Japanese>医療車両もしくは建物が酸素を提供可能にするかを設定します</Japanese>
+            <French>Règle si les zones/véhicules médicaux peuvent fournir de l'oxygène</French>
+            <German>Bestimmt, ob medizinische Fahrzeuge oder Gebäude Sauerstoff bereitstellen können</German>
         </Key>
     </Package>
 </Project>

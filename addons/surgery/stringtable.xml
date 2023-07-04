@@ -473,7 +473,7 @@
             <Polish>Oczyść rany</Polish>
             <Czech>Vyčistit rány</Czech>
             <French>Débrider les plaies</French>
-            <Korean>상처 제거</Korean>
+            <Korean>괴사조직 제거</Korean>
             <German>Wunde debridieren</German>
             <Japanese>創面切除</Japanese>
             <Spanish>Desbridar heridas</Spanish>
@@ -1027,6 +1027,7 @@
             <Japanese>創面切除に必要な医療レベル</Japanese>
             <German>Benötigter medizinischer Grad, um Debridement &amp; NPWT-Verband zu nutzen</German>
             <French>Autoriser le débridement</French>
+            <Korean>괴사조직 제거 허용</Korean>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_Location">
             <English>Locations Debridement</English>
@@ -1034,6 +1035,7 @@
             <Japanese>創面切除が可能な場所</Japanese>
             <German>Ort für die durchführung von Debridement &amp; NPWT-Verband</German>
             <French>Lieux permettant le débridement</French>
+            <Korean>괴사조직 위치</Korean>
         </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_Basic">
             <English>Basic Settings</English>
