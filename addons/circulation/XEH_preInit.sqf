@@ -17,16 +17,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Advanced Rhythms
-[
-    QGVAR(AdvRhythm),
-    "CHECKBOX",
-    LLSTRING(RHYTHM_ENABLE),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
 // Sets how player bloodtype is designated
 [
     QGVAR(bloodTypeSetting),
@@ -142,6 +132,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
+//Sets medical level required to pick up/use placed AED/X Station
+[
+    QGVAR(medLvl_AED_Station_Interact),
+    "LIST",
+    [LLSTRING(SETTING_AEDStation_AllowInteraction),LLSTRING(SETTING_AEDStation_AllowInteraction_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
 // Sets time required to attach AED-X monitor
 [
     QGVAR(AED_X_AttachTime),
@@ -162,13 +162,13 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Distance limit for AED-X
+// Distance limit for AED
 [
-    QGVAR(distanceLimit_AEDX),
+    QGVAR(Defibrillator_DistanceLimit),
     "SLIDER",
-    LLSTRING(DISTANCELIMIT_AED_X),
+    LLSTRING(SETTING_Defibrillator_DistanceLimit),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [2, 100, 30, 0],
+    [2, 15, 6, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -201,13 +201,13 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Sets type of tone played on AED-X monitor when patient has no heart rate
+// Sets sounds played by AED-X vitals monitor
 [
-    QGVAR(AED_X_Monitor_NoHeartRate),
+    QGVAR(AED_X_VitalsMonitor_SoundsSelect),
     "LIST",
-    [LLSTRING(SETTING_AED_X_Monitor_NoHeartRate)],
+    [LLSTRING(SETTING_AED_X_VitalsMonitor_SoundsSelect)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [[0, 1], [LLSTRING(SETTING_AED_X_Monitor_NoHeartRate_Continous), LLSTRING(SETTING_AED_X_Monitor_NoHeartRate_Alternating)], 0],
+    [[0, 1], [LLSTRING(SETTING_AED_X_VitalsMonitor_SoundsSelect_Original), LLSTRING(SETTING_AED_X_VitalsMonitor_SoundsSelect_Default)], 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -291,13 +291,115 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Blood draw uses blood groups
+//Advanced Rhythms
 [
-    QGVAR(bloodGroups),
+    QGVAR(AdvRhythm),
     "CHECKBOX",
-    LLSTRING(SETTING_DRAW_BLOODGROUPS),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_BloodDraw)],
+    LLSTRING(SETTING_AdvRhythm_Enable),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets if cardiac arrest rhythms can deteriorate
+[
+    QGVAR(AdvRhythm_canDeteriorate),
+    "CHECKBOX",
+    LLSTRING(SETTING_AdvRhythm_canDeteriorate),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets time weight for cardiac arrest rhythm deterioration time randomizer // should be less than ace cardiac arrest time
+[
+    QGVAR(AdvRhythm_deteriorateTimeWeight),
+    "SLIDER",
+    LLSTRING(SETTING_AdvRhythm_deteriorateTimeWeight),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [10,3600,180,0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets chance for Pulseless Electrical Activity / Asystole
+[
+    QGVAR(AdvRhythm_PEAChance),
+    "SLIDER",
+    LLSTRING(SETTING_AdvRhythm_PEAChance),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [0,100,50,0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets chance for Ventricular Tachycardia / Ventricular Fibrillation
+[
+    QGVAR(AdvRhythm_VTChance),
+    "SLIDER",
+    LLSTRING(SETTING_AdvRhythm_VTChance),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [0,100,50,0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Non-shockable Bloodloss Threshold
+[
+    QGVAR(AdvRhythm_asystoleBloodlossThreshold),
+    "SLIDER",
+    LLSTRING(SETTING_AdvRhythm_asystoleBloodlossThreshold),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [3.0,6.0,3.6,1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets if cardiac arrest rhythm can deteriorate after CPR/AED treatment
+[
+    QGVAR(AdvRhythm_deteriorateAfterTreatment),
+    "CHECKBOX",
+    LLSTRING(SETTING_AdvRhythm_deteriorateAfterTreatment),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets chance for Return Of Spontaneous Circulation after CPR
+[
+    QGVAR(AdvRhythm_CPR_ROSC_Chance),
+    "SLIDER",
+    LLSTRING(SETTING_AdvRhythm_CPR_ROSC_Chance),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [0,100,5,0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets chance for Return Of Spontaneous Circulation after AED
+[
+    QGVAR(AdvRhythm_AED_ROSC_Chance),
+    "SLIDER",
+    LLSTRING(SETTING_AdvRhythm_AED_ROSC_Chance),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [0,100,50,0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets if hardcore cardiac arrest rhythm behaviours are enabled
+// Incorrect AED usage (stable/non-shockable) has chance to kill patient or deteriorate rhythm
+// Chance for cardiac arrest rhythm to deteriorate from shockable straight to non-shockable
+[
+    QGVAR(AdvRhythm_Hardcore_Enable),
+    "CHECKBOX",
+    LLSTRING(SETTING_AdvRhythm_Hardcore_Enable),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets chance for cardiac arrest rhythm to deteriorate from shockable straight to non-shockable
+[
+    QGVAR(AdvRhythm_hardcoreDeteriorationChance),
+    "SLIDER",
+    LLSTRING(SETTING_AdvRhythm_hardcoreDeteriorationChance),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [0,100,10,0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -308,6 +410,16 @@ PREP_RECOMPILE_END;
     LLSTRING(SETTING_SELF_BLOOD_DRAW),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_BloodDraw)],
     [[0, 1], ["STR_ACE_common_No", "STR_ACE_common_Yes"], 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//Blood draw uses blood groups
+[
+    QGVAR(bloodGroups),
+    "CHECKBOX",
+    LLSTRING(SETTING_DRAW_BLOODGROUPS),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_BloodDraw)],
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 

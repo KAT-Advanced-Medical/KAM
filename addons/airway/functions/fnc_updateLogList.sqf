@@ -47,7 +47,7 @@ lbClear _ctrl;
                 _ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
             };
         };
-        if (_messageWOlocalization isEqualTo ELSTRING(circulation,AEDX_StatusLog)) then {
+        if (_messageWOlocalization isEqualTo ELSTRING(circulation,VitalsMonitor_StatusLog)) then {
             if (((_arguments select 0) < 45 )
             || ((_arguments select 0) > 120 )
             || ((_arguments select 1) < 50 )
@@ -55,6 +55,12 @@ lbClear _ctrl;
             || ((_arguments select 2) < 60 )
             || ((_arguments select 2) > 145 )
             || ((_arguments select 3) < 75 )) then {
+                _ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
+            };
+        };
+        if (_messageWOlocalization isEqualTo ELSTRING(circulation,VitalsMonitorInactive_StatusLog)) then {
+            if (((_arguments select 0) < 45 )
+            || ((_arguments select 0) > 120 )) then {
                 _ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
             };
         };

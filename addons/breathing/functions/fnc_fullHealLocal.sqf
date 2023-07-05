@@ -87,6 +87,7 @@ _unit setVariable [QGVAR(tensionpneumothorax), false, true];
 _unit setVariable [QACEGVAR(medical,heartRate), 80, true];
 _unit setVariable [QACEGVAR(medical,bloodPressure), [80, 120], true];
 _unit setVariable [QACEGVAR(medical,peripheralResistance), 100, true];
+_unit setVariable [QEGVAR(circulation,cardiacArrestType), nil];
 
 //KAT Pharmacy
 _unit setVariable [QACEGVAR(medical,ivBags), nil, true];
@@ -131,7 +132,6 @@ _unit setVariable [QACEGVAR(medical,painSuppress), 0, true];
 
 // Medication
 _unit setVariable [QACEGVAR(medical,medications), [], true];
-_unit setVariable [QEGVAR(circulation,asystole), 0, true];
 _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 
 // Reset triage card since medication is reset

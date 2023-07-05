@@ -1,16 +1,16 @@
 #include "script_component.hpp"
 /*
- * Author: DiGi
- * Initalizes the "Change Shockable State" Zeus module.
+ * Author: DiGi, Blue
+ * Initalizes the "Change Cardiac State" Zeus module.
  *
  * Arguments:
- * 0: changeShockableState controls group <CONTROL>
+ * 0: changeCardiacState controls group <CONTROL>
  *
  * Return Value:
  * None
  *
  * Example:
- * [control] call kat_zeus_fnc_ui_changeAsystole
+ * [control] call kat_zeus_fnc_ui_changeCardiacState
  *
  * Public: No
  */
@@ -50,10 +50,7 @@ private _fnc_onUnload = {
     deleteVehicle _logic;
 };
 
-private _state = _unit getVariable [QEGVAR(circulation,asystole), 0];
-
-(_display displayCtrl 16112) lbSetCurSel _select;
-
+(_display displayCtrl 16112) lbSetCurSel (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0]);
 
 private _fnc_onConfirm = {
     params [["_ctrlButtonOK", controlNull, [controlNull]]];
@@ -65,9 +62,18 @@ private _fnc_onConfirm = {
     if (isNull _logic) exitWith {};
 
     private _unit = attachedTo _logic;
-    private _asystolestate = lbCurSel (_display displayCtrl 16112);
-    _unit setVariable [QEGVAR(circulation,asystole), _asystolestate, true];
-    
+
+    private _currentState = _unit getVariable [QEGVAR(circulation,cardiacArrestType), 0];
+
+    private _state = lbCurSel (_display displayCtrl 16112);
+    if (_state isEqualTo 0) then {
+        [QACEGVAR(medical,CPRSucceeded), _unit] call CBA_fnc_localEvent;
+    } else {
+        if (_state > 0 && _currentState isEqualTo 0) then {
+            [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+        };
+    };
+    _unit setVariable [QEGVAR(circulation,cardiacArrestType), _state, true];
 };
 
 _display displayAddEventHandler ["unload", _fnc_onUnload];

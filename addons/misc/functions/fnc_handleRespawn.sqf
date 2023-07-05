@@ -56,15 +56,18 @@ _unit setVariable [QEGVAR(breathing,usingStethoscope), nil];
 
 // KAT Circulation
 
-_unit setVariable [QEGVAR(circulation,X), false, true];
-_unit setVariable ["kat_AEDXPatient_PFH", nil];
-_unit setVariable [QEGVAR(circulation,AED_X_Volume), true, true];
-_unit setVariable [QEGVAR(circulation,AED_X_VolumePatient), false, true];
-_unit setVariable [QEGVAR(circulation,use), false, true];
-_unit setVariable [QEGVAR(circulation,returnedAED), false, true];
-_unit setVariable [QEGVAR(circulation,asystole), 1, true];
+_unit setVariable ["kat_AEDXPatient_PFH", nil, true];
+_unit setVariable [QEGVAR(circulation,Defibrillator_Charged), false, true];
+_unit setVariable [QEGVAR(circulation,DefibrillatorPads_Connected), false, true];
+_unit setVariable [QEGVAR(circulation,AED_X_MedicVitalsMonitor_Connected), false, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Connected), false, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Volume), true, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_VolumePatient), false, true];
+_unit setVariable [QEGVAR(circulation,Defibrillator_Provider), nil, true];
+_unit setVariable [QEGVAR(circulation,DefibrillatorInUse), false, true];
+_unit setVariable [QEGVAR(circulation,MedicDefibrillatorInUse), false, true];
+_unit setVariable [QEGVAR(circulation,cardiacArrestType), nil, true];
 _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
-_unit setVariable [QEGVAR(circulation,AEDinUse), false, true];
 _unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUNC(circulation,generateBloodType), true];
 
 // KAT Pharmacy
