@@ -21,14 +21,12 @@ params ["_medic", "_patient", ["_defibrillatorType","AED"]];
 
 private _soundSource = _medic;
 
-private _defibProvider = _patient getVariable [QGVAR(Defibrillator_Provider), objNull];
+private _defibProvider = _patient getVariable QGVAR(Defibrillator_Provider);
 
-if !(_defibProvider isEqualTo objNull) then {
-    if (((_patient getVariable QGVAR(Defibrillator_Provider) select 1) in [0,1])) then {
-        _soundSource = (_patient getVariable QGVAR(Defibrillator_Provider)) select 0;
-    } else {
-        _soundSource = _patient;
-    };
+switch (_defibProvider select 1) do {
+    case 1: {_soundSource = _defibProvider select 0;};
+    case 2: {_soundSource = _patient;};
+    default {};
 };
 
 _patient setVariable [QGVAR(DefibrillatorInUse), true, true];

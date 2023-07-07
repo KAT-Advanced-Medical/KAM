@@ -20,14 +20,12 @@ params ["_medic", "_patient"];
 
 private _soundSource = _medic;
 
-private _defibProvider = _patient getVariable [QGVAR(Defibrillator_Provider), objNull];
+private _defibProvider = _patient getVariable QGVAR(Defibrillator_Provider);
 
-if !(defibProvider isEqualTo objNull) then {
-    if ((_patient getVariable QGVAR(Defibrillator_Provider) select 1) in [0,1]) then {
-        _soundSource = (_patient getVariable QGVAR(Defibrillator_Provider)) select 0;
-    } else {
-        _soundSource = _patient;
-    };
+switch (_defibProvider select 1) do {
+    case 1: {_soundSource = _defibProvider select 0;};
+    case 2: {_soundSource = _patient;};
+    default {};
 };
 
 _patient setVariable [QGVAR(DefibrillatorInUse), true, true];
@@ -60,10 +58,11 @@ playsound3D [QPATHTOF_SOUND(sounds\charging.wav), _soundSource, false, getPosASL
 
         _patient setVariable [QGVAR(Defibrillator_Charged), false, true];
         [{ // Defibrillator disarmed
-            params ["_soundSource"];
+            params ["_soundSource", "_patient"];
 
             playsound3D [QPATHTOF_SOUND(sounds\3beep.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
-        }, [_soundSource], 0.5] call CBA_fnc_waitAndExecute;
+            _patient setVariable [QGVAR(DefibrillatorInUse), false, true];
+        }, [_soundSource, _patient], 0.5] call CBA_fnc_waitAndExecute;
     }] call CBA_fnc_waitUntilAndExecute;
 
     [{ // Ready to shock, play alarm

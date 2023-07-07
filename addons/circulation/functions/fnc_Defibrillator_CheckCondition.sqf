@@ -28,15 +28,15 @@ _defibProvider select 0;
 private _condition = false;
 
 switch (_defibProvider select 1) do {
-	case 1: {
-		_condition = (_patient distance2D (_defibProvider select 0)) <= GVAR(Defibrillator_DistanceLimit);
-	};
-	case 2: {
-		_condition = (vehicle _patient != _patient) && (vehicle _patient isEqualTo vehicle _medic) && !((itemCargo vehicle _patient) findIf {_x isEqualTo (_defibProvider select 2)} isEqualTo -1);
-	};
-	default {
-		_condition = [_medic, _medic, [(_defibProvider select 2)]] call ACEFUNC(medical_treatment,hasItem);
-	};
+    case 1: {
+        _condition = (_patient distance2D (_defibProvider select 0)) <= GVAR(Defibrillator_DistanceLimit);
+    };
+    case 2: {
+        _condition = (vehicle _patient != _patient) && (vehicle _patient isEqualTo vehicle _medic) && !((itemCargo vehicle _patient) findIf {_x isEqualTo (_defibProvider select 2)} isEqualTo -1);
+    };
+    default {
+        _condition = [_medic, _medic, [(_defibProvider select 2)]] call ACEFUNC(medical_treatment,hasItem);
+    };
 };
 
 _condition && (_allowInUse || !(_patient getVariable [QGVAR(DefibrillatorInUse), false])) && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {["",_patient] call ACEFUNC(medical_treatment,canCPR)};

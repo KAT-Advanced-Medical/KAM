@@ -29,7 +29,7 @@ PREP(handleCardiacArrest);
 PREP(handleTreatment);
 PREP(init);
 PREP(onCloseDialog);
-PREP(openEKG);
+PREP(AEDX_ViewMonitor);
 PREP(placeAED);
 PREP(removeLog);
 PREP(treatment);

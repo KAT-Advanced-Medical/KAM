@@ -144,21 +144,41 @@ PREP_RECOMPILE_END;
 
 // Sets time required to attach AED-X monitor
 [
-    QGVAR(AED_X_AttachTime),
+    QGVAR(AEDX_VitalsMonitor_AttachTime),
     "SLIDER",
-    LLSTRING(SETTING_AED_X_AttachTime),
+    LLSTRING(SETTING_AEDX_VitalsMonitor_AttachTime),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [1, 60, 10, 1],
+    [1, 60, 8, 1],
     true
 ] call CBA_Settings_fnc_init;
 
 // Sets time required to detach AED-X monitor
 [
-    QGVAR(AED_X_DetachTime),
+    QGVAR(AEDX_VitalsMonitor_DetachTime),
     "SLIDER",
-    LLSTRING(SETTING_AED_X_DetachTime),
+    LLSTRING(SETTING_AEDX_VitalsMonitor_DetachTime),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [1, 60, 5, 1],
+    [1, 60, 4, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets time required to attach defibrillator pads
+[
+    QGVAR(DefibrillatorPads_AttachTime),
+    "SLIDER",
+    LLSTRING(SETTING_DefibrillatorPads_AttachTime),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [1, 60, 6, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets time required to detach defibrillator pads
+[
+    QGVAR(DefibrillatorPads_DetachTime),
+    "SLIDER",
+    LLSTRING(SETTING_DefibrillatorPads_DetachTime),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [1, 60, 3, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -169,35 +189,6 @@ PREP_RECOMPILE_END;
     LLSTRING(SETTING_Defibrillator_DistanceLimit),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [2, 15, 6, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-//Time limit for monitor of AED-X
-[
-    QGVAR(timeLimit_AEDX),
-    "SLIDER",
-    LLSTRING(TIMELIMIT_AED_X),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [60, 14400, 1800, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(DeactMon_whileAED_X),
-    "CHECKBOX",
-    LLSTRING(DEACTIVATE_MONITOR_WHILEAED_X),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
-//No aggresive AED Sounds (Beeps and charging)
-[
-    QGVAR(AED_BeepsAndCharge),
-    "CHECKBOX",
-    [LLSTRING(SETTING_AED_BeepsAndCharge), LLSTRING(SETTING_AED_BeepsAndCharge_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [true],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -382,7 +373,7 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 // Sets if hardcore cardiac arrest rhythm behaviours are enabled
-// Incorrect AED usage (stable/non-shockable) has chance to kill patient or deteriorate rhythm
+// Incorrect AED usage (stable/non-shockable) has chance to deteriorate rhythm
 // Chance for cardiac arrest rhythm to deteriorate from shockable straight to non-shockable
 [
     QGVAR(AdvRhythm_Hardcore_Enable),

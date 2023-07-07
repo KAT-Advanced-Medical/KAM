@@ -1479,11 +1479,17 @@
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
             <English>Medical level required to pick up/interact with placed AED/X station</English>
         </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AED_X_AttachTime">
+        <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Time required to attach AED-X vitals monitor</English>
         </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AED_X_DetachTime">
+        <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime">
             <English>Time required to detach AED-X vitals monitor</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime">
+            <English>Time required to attach defibrillator pads</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime">
+            <English>Time required to detach defibrillator pads</English>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit">
             <English>Distance limit for defibrillators in meters</English>
@@ -1789,38 +1795,6 @@
             <Russian>Минимальный объем крови, разрешенный для слива донора, чтобы игнорировать этот параметр, установленный на 0</Russian>
             <Japanese>ドナーから採血できる最小量の血液。0に設定で無視。</Japanese>
             <Portuguese>O volume mínimo de sangue que um doador pode retirar. Para ignorar este parâmetro é definido como 0</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AED_BeepsAndCharge">
-            <English>AED Beep and Charge sound</English>
-            <Polish>Dźwięki defibrylacji AED</Polish>
-            <German>AED Signal- und Ladeton</German>
-            <Spanish>Sonidos del DEA</Spanish>
-            <Chinese>AED 蜂鸣声和充电声 </Chinese>
-            <Chinesesimp>AED 蜂鸣声和充电声 </Chinesesimp>
-            <Czech>Zvuk AED pípání a nabíjení</Czech>
-            <Korean>AED 경고음 및 충전음</Korean>
-            <French>Bip AED et son de charge </French>
-            <Turkish>AED Bip ve Şarj sesi </Turkish>
-            <Russian>Звуковой сигнал AED и звук зарядки</Russian>
-            <Italian>Segnale acustico DAE e suono di carica </Italian>
-            <Japanese>AEDビープ音と充電音</Japanese>
-            <Portuguese>Som de bipe e carga do DEA</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_AED_BeepsAndCharge_DESC">
-            <English>Enables Beep and Charge sound for AED/AED-X</English>
-            <Polish>Włącza dźwięki defibrylacji AED/AED-X</Polish>
-            <German>Aktiviert Signal- und Ladeton für AED/AED-X</German>
-            <Spanish>Habilita el sonido de  descarga y el pitido para el DEA/DEA-X</Spanish>
-            <Chinese>为 AED/AED-X 启用蜂鸣和充电声音 </Chinese>
-            <Chinesesimp>为 AED/AED-X 启用蜂鸣和充电声 </Chinesesimp>
-            <Czech>Zvuk AED pípání a nabíjení</Czech>
-            <Korean>AED/X-시리즈 AED에 대한 경고음 및 충전음 활성화</Korean>
-            <French>Active le bip et le son de charge pour AED/AED-X </French>
-            <Turkish>AED/AED-X için Bip ve Şarj sesini etkinleştirir </Turkish>
-            <Russian>Включает звуковой сигнал и звук зарядки для AED/AED-X</Russian>
-            <Italian>Abilita il segnale acustico e il suono di carica per DAE/DAE-X </Italian>
-            <Japanese>AED/AED-Xのビープ音と充電音を有効にします</Japanese>
-            <Portuguese>Ativa o som de bipe e carga para DEA/DEA-X</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_Basic">
             <English>Basic Settings</English>

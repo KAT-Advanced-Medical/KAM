@@ -198,7 +198,7 @@ class GVAR(AEDX_Monitor_Dialog) {
         class DateAndTime: RscText {
             idc = 69017;
             x = QUOTE(pxToScreen_X(505));
-            y = QUOTE(pxToScreen_Y(620));
+            y = QUOTE(pxToScreen_Y(618));
             w = QUOTE(pxToScreen_W(400));
             h = QUOTE(pxToScreen_H(80));
             type = 0;
@@ -209,6 +209,17 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorBackground[] = {0,0,0,0};
             colorText[] = {1,1,1,1};
             text = "04/10/2023               23:49";
+        };
+        class Battery: RscPicture {
+            idc = -1;
+            x = QUOTE(pxToScreen_X(1256));
+            y = QUOTE(pxToScreen_Y(642));
+            w = QUOTE(pxToScreen_W(64));
+            h = QUOTE(pxToScreen_H(64));
+            style = 48;
+            colorBackground[] = {0,0,0,0};
+            colorText[] = {1,1,1,1};
+            text = QPATHTOF(ui\battery.paa);
         };
         class ElapsedTime: DateAndTime {
             idc = 69018;

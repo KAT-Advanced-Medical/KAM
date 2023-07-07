@@ -93,7 +93,7 @@ if !((_patient getVariable ["kat_AEDXPatient_PFH", -1]) isEqualTo -1) then {
     [{
         params ["_medic", "_patient", "_provider"];
         [_medic, _patient, _provider] call FUNC(AEDX_VitalsMonitor);
-    }, [_medic, _patient, _provider], 0.2] call CBA_fnc_waitAndExecute;
+    }, [_medic, _patient, _provider], 0.5] call CBA_fnc_waitAndExecute;
 } else {
     _patient setVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), (_provider getVariable [QGVAR(AED_X_VitalsMonitor_Volume), false]), true];
 };

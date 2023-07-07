@@ -98,7 +98,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Defibrillator_Action_PlacePads_Progress);
         icon = QPATHTOF(ui\defib.paa);
         items[] = {"kat_AED"};
-        treatmentTime = 5;
+        treatmentTime = QGVAR(DefibrillatorPads_AttachTime);
         condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)]) && !(_medic getVariable [ARR_2(QQGVAR(MedicDefibrillatorInUse),false)]));
         consumeItem = 0;
         callbackStart = "";
@@ -161,7 +161,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Defibrillator_Action_RemovePads);
         displayNameProgress = CSTRING(Defibrillator_Action_RemovePads_Progress);
         items[] = {};
-        treatmentTime = 2.5;
+        treatmentTime = QGVAR(DefibrillatorPads_DetachTime);
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)]);
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(Defibrillator_RemovePads));
         animationMedic = "AinvPknlMstpSnonWnonDr_medic0";
@@ -174,7 +174,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(AEDX_Action_ConnectMonitor);
         displayNameProgress = CSTRING(AEDX_Action_Connecting_Progress);
         items[] = {"kat_X_AED"};
-        treatmentTime = QGVAR(AED_X_AttachTime);
+        treatmentTime = QGVAR(AEDX_VitalsMonitor_AttachTime);
         condition = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDX_VitalsMonitor_CheckCondition));
         callbackSuccess = QUOTE([ARR_3(_medic, _patient, 0)] call FUNC(AEDX_ConnectVitalsMonitor));
     };
@@ -194,7 +194,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(AEDX_Action_DisconnectMonitor);
         displayNameProgress = CSTRING(AEDX_Action_Disconnecting_Progress);
         items[] = {};
-        treatmentTime = QGVAR(AED_X_DetachTime);
+        treatmentTime = QGVAR(AEDX_VitalsMonitor_DetachTime);
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Connected), false)]);
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDX_DisconnectVitalsMonitor));
     };
@@ -232,7 +232,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 0;
         condition = QUOTE([ARR_3(_medic, _patient, true)] call FUNC(Defibrillator_CheckCondition));
         callbackStart = "";
-        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(openEKG));
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDX_ViewMonitor));
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};

@@ -32,7 +32,7 @@ private _vitalsMonitorPFH = [{
     };
 
     //No Values for your Monitor atm
-    if (GVAR(DeactMon_whileAED_X) && _patient getVariable [QGVAR(DefibrillatorInUse), false]) exitWith {};
+    if (_patient getVariable [QGVAR(DefibrillatorInUse), false]) exitWith {};
 
     // Clear previous log entry before adding new one
     [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog)] call FUNC(removeLog);
@@ -66,8 +66,7 @@ private _PFHArray = [_vitalsMonitorPFH,-1,-1];
 
 _patient setVariable ["kat_AEDXPatient_PFH", _PFHArray, true];
 
-// attach heart rate beep PFH if enabled in CBA settings
-if !(GVAR(AED_BeepsAndCharge)) exitWith {};
+// attach heart rate beep PFH
 
 AEDBeepPlaying = false;
 if(GVAR(AED_X_VitalsMonitor_SoundsSelect) == 0) then {
@@ -79,7 +78,7 @@ if(GVAR(AED_X_VitalsMonitor_SoundsSelect) == 0) then {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
-        if (!(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false]) || GVAR(DeactMon_whileAED_X) && _patient getVariable [QGVAR(DefibrillatorInUse), false]) exitWith {};
+        if (!(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false]) || _patient getVariable [QGVAR(DefibrillatorInUse), false]) exitWith {};
         if (AEDBeepPlaying) exitWith {};
 
         private _hr = 80;
@@ -117,7 +116,7 @@ if(GVAR(AED_X_VitalsMonitor_SoundsSelect) == 0) then {
         if(!(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false])) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
-        if (!(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false]) || GVAR(DeactMon_whileAED_X) && _patient getVariable [QGVAR(DefibrillatorInUse), false]) exitWith {
+        if (!(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false]) || _patient getVariable [QGVAR(DefibrillatorInUse), false]) exitWith {
             analyzeDelay = false;
             playedAudio = false;
         };
@@ -203,7 +202,7 @@ if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
         if !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
-        if (GVAR(DeactMon_whileAED_X) && _patient getVariable [QGVAR(DefibrillatorInUse), false] || !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false])) then {
+        if (_patient getVariable [QGVAR(DefibrillatorInUse), false] || !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false])) then {
         } else {
             private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
             private _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];

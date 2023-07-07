@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "Body", "AED"] call kat_circulation_fnc_AED_Shock
+ * [player, cursorObject, "AED"] call kat_circulation_fnc_AED_Shock
  *
  * Public: No
  */
