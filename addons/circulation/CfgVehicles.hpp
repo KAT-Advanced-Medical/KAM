@@ -79,8 +79,8 @@ class CfgVehicles {
                 condition = "true";
                 class AED_X_ViewMonitor {
                     displayName = CSTRING(ViewMonitor);
-                    condition = QUOTE([ARR_3(_player, _target, 8)] call FUNC(AEDXPlaced_CheckCondition));
-                    statement = QUOTE([ARR_2(_player, (_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient), nil)]))] call FUNC(AEDX_ViewMonitor));
+                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic));
+                    statement = QUOTE([ARR_3(_player, _target, 1)] call FUNC(AEDX_ViewMonitor));
                     showDisabled = 0;
                     //icon = QPATHTOF(ui\X_Series-Device_W.paa);
                 };
@@ -214,19 +214,6 @@ class CfgVehicles {
                 };
             };
             class ACE_Equipment {
-                class AED_X_removeSound {
-                    displayName = CSTRING(AEDX_Action_DisableAudio);
-                    condition = QUOTE('kat_X_AED' in (items _player) && (_player getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false])));
-                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), false, true)]);
-                    showDisabled = 0;
-                    exceptions[] = {"isNotInside", "isNotSitting"};
-                    icon = QPATHTOF(ui\X_Series-Device_W.paa);
-                };
-                class AED_X_addSound : AED_X_removeSound {
-                    displayName = CSTRING(AEDX_Action_EnableAudio);
-                    condition = QUOTE('kat_X_AED' in (items _player) && !(_player getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false])));
-                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), true, true)]);
-                };
                 class openCrossPanel {
                     displayName = CSTRING(open_crosspanel);
                     condition = "('kat_crossPanel' in (uniformItems _player)) || ('kat_crossPanel' in (vestItems _player))";
@@ -257,9 +244,9 @@ class CfgVehicles {
                     statement = QUOTE([ARR_2(_player,'kat_X_AED')] call FUNC(placeAED));
                     icon = QPATHTOF(ui\X_Series-Device_W.paa);
                 };
-                class AEDX_ViewMonitor {
-                    displayName = "Open EKG";//CSTRING(place_AEDX);
-                    condition = QUOTE('kat_X_AED' in (items _player));
+                class AEDX_Interactions {
+                    displayName = CSTRING(AED_X);
+                    condition = "true";
                     exceptions[] =
                     {
                         "notOnMap",
@@ -269,8 +256,25 @@ class CfgVehicles {
                         "isNotSwimming",
                         "isNotOnLadder"
                     };
-                    statement = QUOTE(createDialog QQGVAR(AEDX_Monitor_Dialog));
-                    showDisabled = 0;
+                    icon = QPATHTOF(ui\X_Series-Device_W.paa);
+                    class AEDX_ViewMonitor {
+                        displayName = CSTRING(ViewMonitor);
+                        condition = QUOTE('kat_X_AED' in (items _player));
+                        statement = QUOTE([ARR_3(_player, objNull, 2)] call FUNC(AEDX_ViewMonitor));
+                        showDisabled = 0;
+                        //icon = QPATHTOF(ui\X_Series-Device_W.paa);
+                    };
+                    class AED_X_removeSound {
+                        displayName = CSTRING(AEDX_Action_DisableAudio);
+                        condition = QUOTE('kat_X_AED' in (items _player) && (_player getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false])));
+                        statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), false, true)]);
+                        showDisabled = 0;
+                    };
+                    class AED_X_addSound : AED_X_removeSound {
+                        displayName = CSTRING(AEDX_Action_EnableAudio);
+                        condition = QUOTE('kat_X_AED' in (items _player) && !(_player getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false])));
+                        statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), true, true)]);
+                    };
                 };
             };
         };

@@ -188,7 +188,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_Defibrillator_DistanceLimit),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [2, 15, 6, 0],
+    [2, 15, 8, 0],
     true
 ] call CBA_Settings_fnc_init;
 

@@ -1311,6 +1311,9 @@
         <Key ID="STR_KAT_Circulation_AED">
             <English>AED</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_AED_X">
+            <English>AED-X</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_AED_DISPLAYNAME">
             <English>Automated External Defibrillator</English>
             <German>Automatisierter Externer Defibrillator</German>

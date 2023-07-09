@@ -67,7 +67,6 @@ private _PFHArray = [_vitalsMonitorPFH,-1,-1];
 _patient setVariable ["kat_AEDXPatient_PFH", _PFHArray, true];
 
 // attach heart rate beep PFH
-
 AEDBeepPlaying = false;
 if(GVAR(AED_X_VitalsMonitor_SoundsSelect) == 0) then {
     private _vitalsMonitorBeepPFH = [{

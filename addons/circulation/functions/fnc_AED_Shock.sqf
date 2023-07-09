@@ -21,7 +21,7 @@ params ["_medic", "_patient", "_defibType"];
 
 //pain will be added to all units standing too close to caller or target.
 if (vehicle _patient isEqualTo _patient) then {
-    private _bystanders = ( allUnits select {_x distance _patient < 1.1} ) - [_medic];
+    private _bystanders = (allUnits select {_x distance _patient < 1} ) - [_medic];
     {
         [_x, 0.2] call ACEFUNC(medical_status,adjustPainLevel);
     } forEach _bystanders;

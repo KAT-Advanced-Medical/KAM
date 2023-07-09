@@ -45,11 +45,8 @@ switch (_check) do {
     case 6: { // Manual charge
         _condition = _patientExists && {_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && !(_patient getVariable [QGVAR(DefibrillatorInUse), false]) && !(_patient getVariable [QGVAR(Defibrillator_Charged), false])};
     };
-    case 7: { // Cancel charge
+    default { // Cancel charge
         _condition = _patientExists && {_patient getVariable [QGVAR(Defibrillator_Charged), false]};
-    };
-    default { // View vitals monitor
-        _condition = _patientExists && {_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]};
     };
 };
 

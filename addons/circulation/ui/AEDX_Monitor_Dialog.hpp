@@ -208,7 +208,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             shadow = 0;
             colorBackground[] = {0,0,0,0};
             colorText[] = {1,1,1,1};
-            text = "04/10/2023               23:49";
+            text = "00/00/0000               00:00";
         };
         class Battery: RscPicture {
             idc = -1;
@@ -226,7 +226,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             x = QUOTE(pxToScreen_X(1335));
             w = QUOTE(pxToScreen_W(130));
             style = 2;
-            text = "00:10:20";
+            text = "00:00:00";
         };
         class topMiddleText: RscText {
             idc = 69021;
@@ -243,6 +243,18 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorText[] = {0,1,0,1};
             text = "Check Pads";
         };
+        /*class ShockButtonReady: RscPicture {
+            idc = 69022;
+            x = QUOTE(pxToScreen_X(1487));
+            y = QUOTE(pxToScreen_Y(1380));
+            w = QUOTE(pxToScreen_W(256));
+            h = QUOTE(pxToScreen_H(256));
+            style = 48;
+            shadow = 0;
+            colorBackground[] = {0,0,0,0};
+            colorText[] = {1,1,1,1};
+            text = "";
+        };*/
     };
 
     class Controls {
@@ -257,7 +269,6 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorBorder[] = {0,0,0,0};
             soundEnter[] = {};
             soundPush[] = {};
-            soundClick[] = {};
             soundEscape[] = {};
             idc = -1;
             style = 0;

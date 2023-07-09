@@ -78,6 +78,7 @@ switch (_source) do {
     default { // Medic
         _provider = _medic;
         _medic setVariable [QGVAR(MedicDefibrillatorInUse), true, true];
+        _medic setVariable [QGVAR(MedicDefibrillator_Patient), _patient, true];
 
         [{ // Remove pads if patient gets too far
             params ["_medic", "_patient"];
