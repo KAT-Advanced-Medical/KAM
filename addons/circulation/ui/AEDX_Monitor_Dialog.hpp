@@ -312,7 +312,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             y = QUOTE(pxToScreen_Y(802));
             w = QUOTE(pxToScreen_W(91));
             h = QUOTE(pxToScreen_H(73));
-            onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull)) then {if (GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false)]) then {GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false, true)]} else {GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_VolumePatient), true, true)]}});
+            onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull)) then {if (GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false)]) then {GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false, true)]; [ARR_2((GVAR(AEDX_MonitorTarget) getVariable QQGVAR(Defibrillator_Provider)) select 0, false)] call FUNC(AEDXPlaced_VitalsMonitor_SetVolume)} else {GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_VolumePatient), true, true)]; [ARR_2((GVAR(AEDX_MonitorTarget) getVariable QQGVAR(Defibrillator_Provider)) select 0, true)] call FUNC(AEDXPlaced_VitalsMonitor_SetVolume)}});
             tooltip = CSTRING(AEDX_Monitor_ToggleVolume);
         };
     };

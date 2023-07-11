@@ -208,18 +208,18 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Body"};
         treatmentTime = 0.01;
         allowSelfTreatment = 0;
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected), false)] || _patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Connected), false)]) && (_patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false)]));
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected), false)] || _patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Connected), false)]) && ((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), nil)]) select 2 isEqualTo 'kat_X_AED') && (_patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false)]));
         callbackProgress = "";
         callbackStart = "";
         callbackFailure = "";
-        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false, true)]);
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false, true)]; if((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), [ARR_3(-1,-1,-1)])]) select 1 isEqualTo 1) then {[ARR_2(((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), nil)]) select 0), false)] call FUNC(AEDXPlaced_VitalsMonitor_SetVolume)});
         animationPatient = "";
         animationMedic = "";
     };
     class EnableAEDXAudio: DisableAEDXAudio {
         displayName = CSTRING(AEDX_Action_EnableAudio);
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected), false)] || _patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Connected), false)]) && !(_patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false)]));
-        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_VolumePatient), true, true)]);
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected), false)] || _patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Connected), false)]) && ((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), nil)]) select 2 isEqualTo 'kat_X_AED') && !(_patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false)]));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_VolumePatient), true, true)]; if((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), [ARR_3(-1,-1,-1)])]) select 1 isEqualTo 1) then {[ARR_2(((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), nil)]) select 0), true)] call FUNC(AEDXPlaced_VitalsMonitor_SetVolume)});
     };
     class ViewMonitor: CheckPulse {
         displayName = CSTRING(ViewMonitor);
@@ -230,7 +230,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 0.01;
         items[] = {};
         consumeItem = 0;
-        condition = QUOTE([ARR_3(_medic, _patient, true)] call FUNC(Defibrillator_CheckCondition));
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)] && ((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), nil)]) select 2 isEqualTo 'kat_X_AED'));
         callbackStart = "";
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDX_ViewMonitor));
         animationPatient = "";

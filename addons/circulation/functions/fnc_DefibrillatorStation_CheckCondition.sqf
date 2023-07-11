@@ -12,7 +12,7 @@
  * Can use defibrillator <BOOL>
  *
  * Example:
- * [player, cursorObject] call kat_circulation_fnc_DefibrillatorStation_CheckCondition
+ * [player, cursorObject,'kat_AEDItem'] call kat_circulation_fnc_DefibrillatorStation_CheckCondition
  *
  * Public: No
  */

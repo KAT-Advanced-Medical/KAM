@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [[player, cursorObject, "Body"], 0] call kat_circulation_fnc_Defibrillator_AttachPads //TODO HEADER
+ * [player, cursorObject, 1, 'kat_AEDItem'] call kat_circulation_fnc_Defibrillator_AttachPads //TODO HEADER
  *
  * Public: No
  */

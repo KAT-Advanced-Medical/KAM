@@ -40,27 +40,32 @@ private _action = ["AED_pickupAction",
 _pickUpText,
 "",
 {
-    params ["_AED", "_unit", "_args"];
+    params ["_AED", "_medic", "_args"];
     _args params ["_AEDClassName"];
 
     _AED setVariable [QGVAR(DefibrillatorInUse), false, true];
 
     if (_AEDClassName == "kat_X_AED") then {
         _AED setVariable [QGVAR(AED_X_VitalsMonitor), false, true];
-        _unit setVariable [QGVAR(AED_X_VitalsMonitor_Volume), _AED getVariable [QGVAR(AED_X_VitalsMonitor_Volume), false], true];
+        _medic setVariable [QGVAR(AED_X_VitalsMonitor_Volume), _AED getVariable [QGVAR(AED_X_VitalsMonitor_Volume), false], true];
     };
 
     private _patient = _AED getVariable [QGVAR(Defibrillator_Patient), objNull];
 
-    if (isNull _patient) then {
+    if (_patient isEqualTo objNull) then {
         _patient = _AED getVariable [QGVAR(AED_X_VitalsMonitor_Patient), objNull];
     };
 
-    [_medic, _patient] call FUNC(Defibrillator_RemovePads);
-    [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+    if !(_patient isEqualTo objNull) then {
+        [_medic, _patient] call FUNC(Defibrillator_RemovePads);
+    
+        if(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+            [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+        };
+    };
 
     deleteVehicle _AED;
-    _unit addItem _AEDClassName;
+    _medic addItem _AEDClassName;
 },
 {
     params ["_AED", "_unit"];

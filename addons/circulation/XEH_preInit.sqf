@@ -148,7 +148,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_AEDX_VitalsMonitor_AttachTime),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [1, 60, 8, 1],
+    [1, 60, 6, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -158,7 +158,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_AEDX_VitalsMonitor_DetachTime),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [1, 60, 4, 1],
+    [1, 60, 3, 1],
     true
 ] call CBA_Settings_fnc_init;
 
