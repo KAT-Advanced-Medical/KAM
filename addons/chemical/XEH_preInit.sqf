@@ -13,7 +13,12 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_AVAIL_GASMASK), LLSTRING(SETTING_AVAIL_GASMASK_DISC)],
     CBA_SETTINGS_CHEM,
-    """G_AirPurifyingRespirator_01_F""",
+    "'G_AirPurifyingRespirator_01_F', 'kat_mask_M50', 'kat_mask_M04'",
+    1,
+    {
+        private _array = [_this, "CfgGlasses"] call FUNC(getList);
+        missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
+    },
     true
 ] call CBA_Settings_fnc_init;
 

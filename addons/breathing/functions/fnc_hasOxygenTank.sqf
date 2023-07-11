@@ -1,20 +1,25 @@
 #include "script_component.hpp"
 /*
  * Author: Blue
- * Check if unit has any kind of oxygen tank
+ * Check if target has any kind of oxygen tank
  *
  * Arguments:
- * 0: Unit <OBJECT>
+ * 0: Target <OBJECT>
+ * 1: Target is vehicle <BOOL>
  * 
  * Return Value:
  * Has oxygen tank <BOOLEAN>
  *
  * Example:
- * [medic] call kat_breathing_fnc_hasOxygenTank;
+ * [target] call kat_breathing_fnc_hasOxygenTank;
  *
  * Public: No
  */
 
-params ["_unit"];
+params ["_target",["_isVehicle",false]];
 
-[_unit, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine) || [_unit, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine);
+if !(_isVehicle) exitWith {
+    [_target, "kat_oxygenTank_150"] call ACEFUNC(common,hasMagazine) || [_target, "kat_oxygenTank_300"] call ACEFUNC(common,hasMagazine);
+};
+
+"kat_oxygenTank_150" in (magazineCargo _target) || "kat_oxygenTank_300" in (magazineCargo _target);

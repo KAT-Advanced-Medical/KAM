@@ -29,6 +29,7 @@ _unit setVariable [QEGVAR(airway,occluded), false, true];
 _unit setVariable [QEGVAR(airway,overstretch), false, true];
 KAT_forceWakeup = false;
 _unit setVariable [QEGVAR(airway,recovery), false, true];
+_unit setVariable [QEGVAR(airway,airway_item), "", true];
 
 // KAT Breathing
 
@@ -70,6 +71,14 @@ _unit setVariable [QEGVAR(circulation,MedicDefibrillator_Patient), nil, true];
 _unit setVariable [QEGVAR(circulation,cardiacArrestType), nil, true];
 _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 _unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUNC(circulation,generateBloodType), true];
+_unit setVariable [QEGVAR(circulation,internalBleeding), 0, true];
+
+
+// KAT Misc
+_unit setVariable [QEGVAR(misc,isLeftArmFree), true, true];
+_unit setVariable [QEGVAR(misc,isRightArmFree), true, true];
+_unit setVariable [QEGVAR(misc,isLeftLegFree), true, true];
+_unit setVariable [QEGVAR(misc,isRightLegFree), true, true];
 
 // KAT Pharmacy
 
@@ -97,7 +106,7 @@ _unit setVariable [QEGVAR(surgery,sedated), false, true];
 
 _unit setVariable [QEGVAR(chemical,enteredPoison), false, true];
 _unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime),60], true];
-_unit setVariable [QEGVAR(chemical,poisenType), "", true];
+_unit setVariable [QEGVAR(chemical,poisonType), "", true];
 _unit setVariable [QEGVAR(chemical,airPoisoning), false, true];
 _unit setVariable [QEGVAR(chemical,CS), false, true];
 _unit setVariable [QEGVAR(chemical,gasmask_durability), 10, true];
@@ -108,15 +117,6 @@ private _obj = _ui displayCtrl 101;
 _obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
 if (_unit getVariable [QEGVAR(chemical,painEffect),0] != 0) then {
     KAT_PAIN_EFFECT ppEffectEnable false;
-};
-
-
-// Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten
-_unit spawn {
-    _unit = param [0,objNull,[objNull]];
-    sleep 2;
-    if (_unit getVariable ["ACE_isUnconscious", false]) exitWith {};
-    _unit setVariable [QGVAR(airway_item), "", true];
 };
 
 [{
@@ -241,9 +241,9 @@ if (EGVAR(pharma,coagulation)) then {
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
 
-    ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
 
 } else {

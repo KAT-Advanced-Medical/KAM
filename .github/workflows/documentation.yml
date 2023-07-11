@@ -1,0 +1,34 @@
+name: Documentation
+
+on:
+  push:
+    branches:
+    - dev-Tomcat
+    
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout the source code
+      uses: actions/checkout@v3
+    - name: Install Python packages
+      run: |
+        pip3 install wheel
+        pip3 install setuptools
+        pip3 install pygithub
+        pip3 install pygithub3
+    - name: Update Translation issue
+      if: github.repository == 'KAT-Advanced-Medical/KAM' && ! contains(github.event.head_commit.message, '[ci skip]')
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: python3 tools/deploy.py
+
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release Drafter
+        if: github.repository == 'KAT-Advanced-Medical/KAM'
+        uses: release-drafter/release-drafter@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    

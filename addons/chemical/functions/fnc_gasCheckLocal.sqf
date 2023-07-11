@@ -23,6 +23,10 @@
 
 params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
 
+if (!isDamageAllowed _unit) exitWith {
+    [_unit] call FUNC(clearChemicalInjuriesLocal);
+};
+
 [
     {
         params["_args", "_handler"];
@@ -80,6 +84,7 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
         _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
         if (_unit distance _pos <= _radius_max && !(_unit getVariable [QGVAR(enteredPoison), false]) && !(_unit getVariable ["ACE_isUnconscious", false])) then {
             _unit setVariable [QGVAR(enteredPoison), true, true];
+            [QGVAR(enteredPoisonEvent), [_unit], _unit] call CBA_fnc_targetEvent;
             _unit setVariable [QGVAR(Poisen_logic), _logic, true];
             private _timeEntered = CBA_missiontime;      
 
@@ -92,6 +97,7 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
                     _percent = _unit getVariable [QGVAR(gasPercentage), 0];
                     _unittime = _unittime - _percent;
                     _unit setVariable [QGVAR(timeleft), _unittime];
+
                     if (_unittime <= 0) exitwith {
                         [QGVAR(afterWait), [_unit, _logic, _gastype, _radius_max], _unit] call CBA_fnc_targetEvent;
                         _unit setVariable [QGVAR(timeleft), 0];

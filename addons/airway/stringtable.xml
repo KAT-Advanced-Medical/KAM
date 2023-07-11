@@ -24,7 +24,7 @@
             <Spanish>Probabilidad de obstrucción de las vías aéreas</Spanish>
             <Chinese>呼吸道阻塞機率</Chinese>
             <Chinesesimp>气道闭塞几率</Chinesesimp>
-            <Czech>Pravděpodobnost zablokování dýchacích cest</Czech>
+            <Czech>Pravděpodobnost obstrukce dýchacích cest</Czech>
             <Korean>기도가 혀에 의해 막힐 확률</Korean>
             <French>Probabilité d'obstruction des voies aériennes</French>
             <Turkish>Tıkanmış bir hava yolu olasılığı</Turkish>
@@ -33,6 +33,16 @@
             <Japanese>気道閉塞の確率</Japanese>
             <Portuguese>Probabilidade de obstrução das vias aéreas</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Airway_SETTING_obstruction_DESC">
+            <English>Probability for an obstructed airway in percentage that gets rolled every:\n- Falling unconscious\n- Removing KingLT / Guedel Tube</English>
+            <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern:\n- Bewustlos werden\n- Das Entfernen von Larynxtubus / Guedeltubus\n- Abbrechen der Stabile Seitenlage</German>
+            <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém:\n- Upadnutí do bezvědomí\n- Odstranění KingLT / GuedelTuby</Czech>
+            <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que:\n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
+            <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n- 意識不明になった時\n- KingLT/ゲデルチューブが外れた時</Japanese>
+            <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque :\n- la personne tombe inconsciente\n- Une canule de Guedel/tube laryngé est retiré</French>
+            <Korean>다음 조건에 의해 매번 발생되는 혀막힘 확률(%):\n- 의식불명이 될 시\n- 기관삽입기 / 게델튜브 제거 시</Korean>
+            <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni :\n- Caduta priva di sensi \n- Rimozione KingLT / Guedel Tube</Italian>
+        </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
             <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes</German>
@@ -40,7 +50,7 @@
             <Spanish>Probabilidad de oclusión en las vías aéreas</Spanish>
             <Chinese>呼吸道閉塞機率</Chinese>
             <Chinesesimp>气道异物几率</Chinesesimp>
-            <Czech>Pravděpodobnost uzavření dýchacích cest</Czech>
+            <Czech>Pravděpodobnost ucpání dýchacích cest</Czech>
             <Korean>기도가 구토에 의해 막힐 확률</Korean>
             <French>Probabilité d'occlusion des voies aériennes</French>
             <Turkish>Hava yolunu tıkama olasılığı</Turkish>
@@ -49,15 +59,25 @@
             <Japanese>気道異物の確率</Japanese>
             <Portuguese>Probabilidade de oclusão das vias aéreas</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occluded_DESC">
+            <English>Probability for an occlusion in percentage that gets rolled Setting:[Occlusion repeat timer] (default every 60s)</English>
+            <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes in prozent die durch Einstellung:[Zeit für die Wiederholung des Erbrechens] (standard alle 60s) berechnet wird.</German>
+            <Czech>Pravděpodobnost zablokování dýchacích cest v procentech, která se vylosuje při Nastavení:[Časovač opakovaného ucpání dýchacích cest](defaultně každých 60s)</Czech>
+            <Spanish>Porcentaje de probabilidad de que suceda una oclusión Opciones:[tiempo de repeticion de oclusión] (por defecto cada 60s)</Spanish>
+            <Japanese>気道異物の確率(%) [異物再発までの時間]の設定時間毎に計算されます (デフォルトでは60秒毎)</Japanese>
+            <French>La probabilité d'occlusion des voies aériennes en pourcentage qui est tirée aléatoirement selon le paramètre : [Temps de répétition des occlusions] (Par défaut toutes les 60s)</French>
+            <Korean>매번 발생되는 구토막힘 확률(%): [구토 반복 타이머] (기본값: 매 60초 마다)</Korean>
+            <Italian>Probabilità di un'occlusione in percentuale che viene sorteggiata. Impostazione: [Timer ripetizione occlusione] (default ogni 60 secondi)</Italian>
+        </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
             <German>Zeit für die Wiederholung des Erbrechens</German>
             <Korean>구토 반복 타이머</Korean>
             <Polish>Czas powtarzania zablokowania</Polish>
-            <Japanese>異物の再発する時間</Japanese>
+            <Japanese>異物再発までの時間</Japanese>
             <French>Temps de répétition des occlusions</French>
             <Italian>Tempo di ripetizione per l'occlusione</Italian>
-            <Czech>Opakovač uzavření dýchacích cest</Czech>
+            <Czech>Časovač opakovaného ucpání dýchacích cest</Czech>
             <Chinesesimp>气道异物再发冷却时间</Chinesesimp>
             <Spanish>Tiempo de repetición de las oclusiones</Spanish>
             <Portuguese>Temporizador de repetição de oclusão</Portuguese>
@@ -91,7 +111,7 @@
             <Turkish>Keko adlı topluluğun AFK oyuncuları için eklentileri vardı. Başkalarının onları uzaklaştırabilmesi için bilinçsiz bırakıldılar. Bu, hava yolu problemleri olasılığını tetikledi. Bu dize, AFK eklentisi tarafından bilinçsiz hale geldiklerinde bunun olmasını engeller.</Turkish>
             <Italian>La comunità chiamata keko aveva un addon per i giocatori AFK. Venivano resi inconscenti così che gli altri potessero trascinarli via. Questo aveva la possibilità di causare problemi alle vie aeree. Questa stringa previene che ciò succeda quando vengono resi incoscenti da questo addon AFK.</Italian>
             <Russian>У сообщества под названием Keko был аддон для игроков AFK. Они были лишены сознания, чтобы другие могли их вытащить. Это спровоцировало риск респираторных заболеваний. Эта строка предотвратит это, когда они потеряют сознание из-за этого аддона AFK.</Russian>
-            <Japanese>kekoというコミュニティにはAFKプレーヤー用のアドオンがありました。他の人がそれらを引き離すことができるように、彼らは無意識に置かれました。それが気道の問題の可能性を引き起こしました。この文字列は、AFKアドオンによって意識が失われたときにそれが発生するのを防ぎます。</Japanese>
+            <Japanese>kekoというコミュニティにはAFKプレーヤー用のアドオンがありました。他の人がAFKプレイヤーを移動できるように、そのプレイヤー無意識にします。しかしそれが気道の問題を発生させる可能性があります。この文字列は、AFKアドオンによって意識が失われたときにそれが発生するのを防ぎます。</Japanese>
             <Portuguese>A comunidade Keko tinha um addon para os jogadores AFK. Eles foram colocados inconscientes para que outros pudessem arrastá-los. Isso desencadeou chances de problemas nas vias aéreas. Esta corda evita que isso aconteça quando eles ficam inconscientes por causa do addon.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
@@ -116,7 +136,7 @@
             <Polish>%1 sprawdził drogi oddechowe: %2, %3</Polish>
             <Spanish>%1 comprobó las vías aéreas: %2, %3</Spanish>
             <Chinese>%1 檢查呼吸道: %2, %3</Chinese>
-            <Czech>Zkontrolovány dýchací cesty: %2, %3</Czech>
+            <Czech>%1 zkontroloval dýchací cesty: %2, %3</Czech>
             <Korean>%1 기도 확인됨: %2, %3</Korean>
             <French>%1 a vérifié les voies aériennes : %2, %3</French>
             <Turkish>%1 kontrol edilmiş havayolları: %2, %3</Turkish>
@@ -131,7 +151,7 @@
             <Spanish>%1 intubó con %2</Spanish>
             <Chinese>%1 被插入一個 %2</Chinese>
             <Chinesesimp>%1 被插入 %2</Chinesesimp>
-            <Czech>%1 vložil %2</Czech>
+            <Czech>%1 intuboval %2</Czech>
             <Korean>%1 은(는) %2 을(를) 삽입했습니다</Korean>
             <French>%1 a intubé avec un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
@@ -147,7 +167,7 @@
             <Spanish>Ocluída</Spanish>
             <Chinese>閉塞</Chinese>
             <Chinesesimp>异物阻塞</Chinesesimp>
-            <Czech>Uzavřeno</Czech>
+            <Czech>Ucpané</Czech>
             <Korean>구토</Korean>
             <French>Occludées</French>
             <Turkish>Tıkalı</Turkish>
@@ -163,7 +183,7 @@
             <Spanish>Obstruída</Spanish>
             <Chinese>阻塞</Chinese>
             <Chinesesimp>闭塞</Chinesesimp>
-            <Czech>Zablokováno</Czech>
+            <Czech>Obstrukce</Czech>
             <Korean>혀로 인한 기도 폐쇄</Korean>
             <French>Obstruées</French>
             <Turkish>Kapanma</Turkish>
@@ -177,7 +197,7 @@
             <Polish>Ręcznie udrożnione</Polish>
             <Japanese>閉塞軽減中</Japanese>
             <Italian>Ostruzione attenuata</Italian>
-            <Czech>Zmírněné zablokování</Czech>
+            <Czech>Zmírněná obstrukce</Czech>
             <Korean>막힘 완화됨</Korean>
             <German>Geringe Obstruktion</German>
             <Chinesesimp>减轻阻塞</Chinesesimp>
@@ -193,7 +213,7 @@
             <Spanish>Obstrucción temporalmente mitigada</Spanish>
             <German>Die Obstruktion ist temporär gemildert</German>
             <Italian>Ostruzione è momentaneamente attenuata</Italian>
-            <Czech>Zablokování je dočasně zmírněno</Czech>
+            <Czech>Obstrukce je dočasně zmírněna</Czech>
             <Korean>혀막힘이 일시적으로 완화되었습니다.</Korean>
             <Portuguese>Obstrução temporariamente mitigada</Portuguese>
         </Key>
@@ -300,7 +320,7 @@
             <Spanish>Oclusión eliminada</Spanish>
             <Chinese>遮擋移除</Chinese>
             <Chinesesimp>气道异物移除</Chinesesimp>
-            <Czech>Uzavření odstraněno</Czech>
+            <Czech>Ucpání odstraněno</Czech>
             <Korean>구토 제거 성공</Korean>
             <French>Occlusion supprimée</French>
             <Turkish>Tıkanıklık kaldırıldı</Turkish>
@@ -524,7 +544,7 @@
             <Spanish>El tubo laríngeo previene obstrucciones y oclusiones</Spanish>
             <Chinese>喉管是用於拯救呼吸道</Chinese>
             <Chinesesimp>King LT-D是一种无菌的一次性声门上气道装置,是气管插管或面罩通气的替代方法.</Chinesesimp>
-            <Czech>King LT je používán na záchranu dýchacích cest</Czech>
+            <Czech>King LT je používán k zajištění dýchacích cest</Czech>
             <Korean>기관삽입기는 기도를 확보하기 위해 사용됩니다.</Korean>
             <French>Le tube laryngé est utilisé pour protéger les voies aériennes</French>
             <Turkish>Laringeal Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
@@ -556,7 +576,7 @@
             <Spanish>La cánula de Guedel impide obstrucciones</Spanish>
             <Chinese>抽吸管用於拯救呼吸道</Chinese>
             <Chinesesimp>Guedel是一种气道辅助通气装置,同时集成了舌垫可防止气道阻塞.</Chinesesimp>
-            <Czech>Guedel tuba je používána na zajištění dýchacích cest</Czech>
+            <Czech>Guedel tuba je používána k zajištění dýchacích cest</Czech>
             <Korean>게델튜브는 응급처치현장에서 신속하며 간편하게 기도확보하기 위해 사용됩니다</Korean>
             <French>La canule de Guedel est utilisée pour protéger les voies aériennes</French>
             <Turkish>Guedel Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
@@ -668,7 +688,7 @@
             <Spanish>Permitir cánula de Guedel</Spanish>
             <Chinese>允許瓜德爾圖布斯</Chinese>
             <Chinesesimp>允许使用口咽通气道(Guedel)</Chinesesimp>
-            <Czech>Povolit Guedel tubu</Czech>
+            <Czech>Povolit Guedel Tubu</Czech>
             <Korean>게델튜브 허용</Korean>
             <French>Autoriser la canule de Guedel</French>
             <Turkish>Guedel Tüp'e izin ver</Turkish>
@@ -684,7 +704,7 @@
             <Spanish>Nivel de entrenamiento requerido para usar una cánula de Guedel</Spanish>
             <Chinese>使用Guedeltubus所需的培訓水平</Chinese>
             <Chinesesimp>使用口咽通气道所需的医疗培训水平</Chinesesimp>
-            <Czech>Úroveň výcviku potřebná k použití Guedel tuby</Czech>
+            <Czech>Úroveň výcviku potřebná k použití Guedel Tuby</Czech>
             <Korean>게델튜브를 사용하기 위한 의료레벨 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser une canule de Guedel</French>
             <Turkish>Guedel Tüp'ü kullanmak için gerekli eğitim seviyesi</Turkish>
@@ -892,7 +912,7 @@
             <Spanish>Tiempo para cánula de Guedel</Spanish>
             <Chinese>Geudeltubus的時間</Chinese>
             <Chinesesimp>口咽通气道時間</Chinesesimp>
-            <Czech>Čas pro Guedel tubu</Czech>
+            <Czech>Čas pro Guedel Tubu</Czech>
             <Korean>게델튜브 사용에 걸리는 시간</Korean>
             <French>Durée d'installation de la canule de Guedel</French>
             <Turkish>Geudel Tüp zamanı</Turkish>
@@ -908,7 +928,7 @@
             <Spanish>Cuánto tiempo tomará usar cánula de Guedel</Spanish>
             <Chinese>使用Guedeltubus需要多長時間</Chinese>
             <Chinesesimp>使用口咽通气道的所需时间</Chinesesimp>
-            <Czech>Jak dlouho zabere použití Guedel tuby</Czech>
+            <Czech>Jak dlouho zabere použití Guedel Tuby</Czech>
             <Korean>게델튜브 사용에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour placer une canule de Guedel</French>
             <Turkish>Guedel Tüp'ü kullanmak ne kadar sürecek</Turkish>
@@ -946,7 +966,7 @@
             <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
             <Italian>Colora gli Logs di attività di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
             <Russian>Окрашивает журналы активности AED-X или пульсоксиметра в красный цвет, если какое-либо значение является критическим.</Russian>
-            <Japanese>値が重要な場合は、AED-Xまたはパルスオキシメーターのアクティビティログを赤に着色します</Japanese>
+            <Japanese>異常値の場合、AED-Xやパルスオキシメーターの活動ログを赤色にします</Japanese>
             <Portuguese>Exibe os registros de atividade em vermelhos se algum valor for crítico</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_RecoveryPosition">
@@ -1123,7 +1143,7 @@
             <Polish>Drożne</Polish>
             <Spanish>No obstruída</Spanish>
             <Chinese>無 阻塞</Chinese>
-            <Czech>Není zablokováno</Czech>
+            <Czech>Bez obstrukce</Czech>
             <Korean>혀에 의해 막히지 않음</Korean>
             <French>Non obstruées</French>
             <Turkish>Değil Kapanma</Turkish>
@@ -1138,7 +1158,7 @@
             <Polish>Brak zatoru</Polish>
             <Spanish>No ocluída</Spanish>
             <Chinese>無 閉塞</Chinese>
-            <Czech>Není uzavřeno</Czech>
+            <Czech>Není ucpáno</Czech>
             <Korean>구토에 의해 막히지 않음</Korean>
             <French>Non occludées</French>
             <Turkish>Değil Tıkalı</Turkish>
@@ -1189,30 +1209,106 @@
         <Key ID="STR_KAT_Airway_Cancel_Larynxtubus">
             <English>Remove King LT</English>
             <German>Entferne Larynxtubus</German>
+            <Czech>Odstranit King LT</Czech>
+            <Spanish>Retirando tubo laringeo</Spanish>
+            <Japanese>King LTを取り除く</Japanese>
+            <French>Retirer le tube laryngé</French>
+            <Korean>기관삽입기 제거</Korean>
+            <Italian>Rimuovi King LT</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Cancel_Guedeltubus">
             <English>Remove Guedel Tube</English>
             <German>Entferne Guedeltubus</German>
+            <Czech>Odstranit Guedel Tubu</Czech>
+            <Spanish>Retirando Cánula de Guedel</Spanish>
+            <Japanese>ゲデルチューブを取り除く</Japanese>
+            <French>Retirer la canule de Guedel</French>
+            <Korean>게델튜브 제거</Korean>
+            <Italian>Rimuovi canula di Guedel</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_action_removing">
             <English>Removing</English>
             <German>Entferne</German>
+            <Czech>Odstraňování</Czech>
+            <Spanish>Quitando</Spanish>
+            <Japanese>取り除いています</Japanese>
+            <French>Retrait</French>
+            <Korean>제거 중</Korean>
+            <Italian>Rimuovendo</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems">
             <English>Reusable Airway Items</English>
-            <German>Wieder Benutzbare Atemwegsobjekte</German>
+            <German>Wiederverwendbare Atemwegsobjekte</German>
+            <Czech>Znovupoužitelné předměty pro dýchací cesty</Czech>
+            <Spanish>Objetos reutilizables de vías aéreas</Spanish>
+            <Japanese>繰り返し使用できる気道アイテム</Japanese>
+            <French>Objets lié aux voies aériennes réutilisables</French>
+            <Korean>기도 관련 아이템 재사용 가능</Korean>
+            <Italian>Oggetti delle vie aeree riutilizzabili</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems_DESC">
             <English>Regain the KingLT or Guedel Tube when manually removing them</English>
             <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
+            <Czech>Vrácení KingLT nebo Guedel Tuby při jejich manuálním odebrání</Czech>
+            <Spanish>Recuperar el Tubo laríngeo o la Cánula de Guedel cuando se quitan manualmente</Spanish>
+            <Japanese>KingLTまたはゲデルチューブを取り除いた際、再使用できるようにします。</Japanese>
+            <French>Récupère le tube laryngé ou la canule de guedel lorsque ceux-ci sont retirés manuellement</French>
+            <Korean>기관삽입기나 게델튜브를 수동으로 제거하면 재사용을 가능케 할지 여부입니다.</Korean>
+            <Italian>Riguadagna il KingLT o la canula di Guedel quando li rimuovi manualmente</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveLarynxtubus_Log">
             <English>%1 removed KingLT</English>
             <German>%1 hat Larynxtubus entfernt</German>
+            <Czech>%1 odstranil KingLT</Czech>
+            <Spanish>%1 retiró el tubo laringeo</Spanish>
+            <Japanese>%1 が King LT を取り除きました</Japanese>
+            <French>%1 a retiré la tube laryngé</French>
+            <Korean>%1(이)가 기관삽입기를 제거했습니다</Korean>
+            <Italian>%1 rimosso KingLT</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveGuedeltubus_Log">
             <English>%1 removed Guedel Tube</English>
             <German>%1 hat Guedeltubus entfernt</German>
+            <Czech>%1 odstranil Guedel Tubu</Czech>
+            <Spanish>%1 retiró la Canula de Guedel</Spanish>
+            <Japanese>%1 が ゲデルチューブ を取り除きました</Japanese>
+            <French>%1 a retiré la canule de Guedel</French>
+            <Korean>%1(이)가 게델튜브를 제거했습니다</Korean>
+            <Italian>%1 rimosso Guedel Tube</Italian>
+        </Key>
+        <Key ID="STR_KAT_Airway_AutoTriage">
+            <English>Auto Triage Airways</English>
+            <Japanese>気道による自動トリアージ</Japanese>
+            <German>Auto Triage Atemwege</German>
+            <French>Triage automatique des voies aériennes</French>
+            <Korean>기도 확인으로 부상자 자동 분류</Korean>
+            <Italian>Triage automatico delle vie aeree</Italian>
+        </Key>
+        <Key ID="STR_KAT_Airway_AutoTriage_Desc">
+            <English>Sets if checking airways can override current triage level</English>
+            <Japanese>気道の検査をすることで現在のトリアージレベルを自動で上書き設定します</Japanese>
+            <German>Setzt, ob die aktuelle Triage Karte überschrieben werden soll durch das Prüfen der Atemwege</German>
+            <French>Définit si l'inspection des voies aériennes modifie le niveau actuel de triage</French>
+            <Korean>기도 확인이 현재 부상자 분류 레벨을 덮어 쓸지의 여부를 결정합니다.</Korean>
+            <Italian>Imposta se il controllo delle vie aeree può sovrascrivere il livello di triage corrente</Italian>
+        </Key>
+        <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING">
+            <English>Block head turning</English>
+            <Czech>Blokování otáčení hlavou</Czech>
+            <Korean>고개 돌리기 막기</Korean>
+            <Japanese>異物の除去の阻害</Japanese>
+            <French>Bloquer la rotation de la tête</French>
+            <German>Verhindert das Drehen des Kopfes</German>
+            <Italian>Blocca la rotazione della testa</Italian>
+        </Key>
+        <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING_DESC">
+            <English>Blocks head turning if patient has Guedel Tube inserted</English>
+            <Czech>Blokuje otáčení hlavou pokud má pacient zavedenou Guedel tubu</Czech>
+            <Korean>환자가 게델튜브를 삽입한 경우 고개 돌리기를 막습니다.</Korean>
+            <Japanese>患者にゲデルチューブが挿管されている時に異物の除去を出来ないようにします</Japanese>
+            <French>Bloque la rotation de la tête si le patient a une canule de Guedel insérée</French>
+            <German>Verhindert das zur Seite Drehen des Kopfes während ein Guedetubus eingeführt ist</German>
+            <Italian>Blocca la rotazione della testa se il paziente ha la canula di Guedel inserita</Italian>
         </Key>
     </Package>
 </Project>

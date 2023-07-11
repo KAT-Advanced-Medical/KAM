@@ -46,7 +46,8 @@ PREP_RECOMPILE_END;
     [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], 7],
     2,
     {
-        player setVariable [QGVAR(bloodTypePlayer), _this, true];
+        profileNamespace setVariable [QGVAR(preferredBloodType), _this];
+        saveProfileNamespace;
         player setVariable [QACEGVAR(dogtags,dogtagData), nil, true];
     },
     false
@@ -206,7 +207,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(AED_X_Monitor_SpO2Warning),
     "SLIDER",
-    LELSTRING(breathing,SETTING_Threshold_SpO2Warning),
+    LLSTRING(SETTING_Threshold_SpO2Warning),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
     [1, 100, 85, 1],
     true
