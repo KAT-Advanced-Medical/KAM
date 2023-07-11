@@ -1199,6 +1199,7 @@
             <Polish>Zwiększenie prędkości ruchu</Polish>
             <Spanish>Aumento de velocidad de la pervitina</Spanish>
             <Czech>Pervitin Speed Boost</Czech>
+            <Italian>Boost velocità Pervitin</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_DESC">
             <English>The animation speed that gets set in Stage 1 of Pervitin. (1 = normal, 2 = twice)</English>
@@ -1210,6 +1211,7 @@
             <Polish>Prędkość animacji po zażyciu pervitinu (1 = normalnie, 2 = podwójnie)</Polish>
             <Spanish>La velocidad de animacion que se fija en la fase 1 de la pervitina. (1 = Normal. 2 = Doble)</Spanish>
             <Czech>Rychlost animace efektu pervitinu v jeho první fázi. (1 = normální, 2 = dvojnásobná)</Czech>
+            <Italian>La velocità di animazione impostata nella Fase 1 di Pervitin. (1 = normale, 2 = due volte)</Italian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Chromatic_Aberration_Checkbox_Ketamine">
             <English>Enable Chromatic Aberration</English>
