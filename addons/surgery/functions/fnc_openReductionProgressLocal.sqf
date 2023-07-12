@@ -20,11 +20,9 @@
 
 params ["_medic", "_patient", "_bodyPart", "_entry"];
 
-if (GVAR(unconSurgery_requieredForAction == 1)) then {
-    if !(IS_UNCONSCIOUS(_patient)) exitWith {
-        private _output = LLSTRING(fracture_fail);
-        [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-    };
+if (GVAR(unconSurgery_requieredForAction) == 1 && !(IS_UNCONSCIOUS(_patient))) exitWith {
+    private _output = LLSTRING(fracture_fail);
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
 private _part = ALL_BODY_PARTS find toLower _bodyPart;
