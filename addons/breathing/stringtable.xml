@@ -1533,6 +1533,7 @@
             <Japanese>BVMと車両の酸素ボンベを使用する</Japanese>
             <French>Utiliser le BVM avec un réservoir d'oxygène (Véhicule)</French>
             <Italian>Usa maschera ambu con la bombola d'ossigeno (veicolo)</Italian>
+            <Spanish>Usar la BVM con un tanque de oxígeno (vehículo)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
             <English>Using BVM with Oxygen Tank (Vehicle)</English>
@@ -1541,6 +1542,7 @@
             <Japanese>BVMと車両の酸素ボンベを使用中</Japanese>
             <French>Utilisation du BVM avec un réservoir d'oxygène (Véhicule)</French>
             <Italian>Usando maschera ambu con la bombola d'ossigeno (veicolo)</Italian>
+            <Spanish>Usando la BVM con un tanque de oxígeno (vehículo)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
@@ -1879,6 +1881,7 @@
             <French>Lieu fournissant de l'oxygène</French>
             <German>Bereitstellung Sauerstoff durch Fahrzeuge/Gebäude</German>
             <Italian>Luogo di ricarica d'ossigeno.</Italian>
+            <Spanish>Ubicación provee oxígeno</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen_DESC">
             <English>Sets if medical vehicles/facilites can provide oxygen</English>
@@ -1887,6 +1890,7 @@
             <French>Règle si les zones/véhicules médicaux peuvent fournir de l'oxygène</French>
             <German>Bestimmt, ob medizinische Fahrzeuge oder Gebäude Sauerstoff bereitstellen können</German>
             <Italian>Imposta se i veicoli med o strutture mediche possono fornire ossigeno.</Italian>
+            <Spanish>Establece si los vehículos o instalaciones médicas pueden suministrar oxígeno</Spanish>
         </Key>
     </Package>
 </Project>
