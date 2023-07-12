@@ -971,32 +971,6 @@
             <Spanish>Fractura Simple</Spanish>
             <Portuguese>Fratura simples</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Surgery_uncon_requieredForActions">
-            <English>Unconsciouness Requierement</English>
-            <Chinesesimp>要求无意识</Chinesesimp>
-            <Italian>Requisito di incoscienza</Italian>
-            <Polish>Nieprzytomność wymagana</Polish>
-            <Czech>Vyžadování bezvědomí</Czech>
-            <French>Inconscience requise</French>
-            <Korean>의식불명 요구</Korean>
-            <German>Bewusstlosigkeit vorausgesetzt</German>
-            <Japanese>無意識状態の要求</Japanese>
-            <Spanish>Requiere inconsciencia</Spanish>
-            <Portuguese>Requer inconsciência</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Surgery_uncon_requieredForActions_DESC">
-            <English>Whether or not is unconsciousness requiered to perform some surgery actions</English>
-            <Chinesesimp>进行某些手术动作是否需要无意识</Chinesesimp>
-            <Italian>Decidere se l'incoscienza sia richiesta o meno per eseguire alcune azioni chirurgiche</Italian>
-            <Polish>Czy nieprzytomność jest wymagana do przeprowadzenia niektórych akcji chirurgicznych</Polish>
-            <Czech>Zda je či není vyžadováno bezvědomí, aby bylo možno provést některé chirurgické akce</Czech>
-            <French>Définie si l'inconscience est nécessaire ou non pour effectuer des actions chirurgicales</French>
-            <Korean>일부 수술 조치를 수행하기 위해 의식불명이 필요한 지 여부</Korean>
-            <German>Ist Bewusstlosigkeit für die Durchführung bestimmter chirurgischer Eingriffe erforderlich</German>
-            <Japanese>いくつかの手術行為を行うために無意識状態が必要かどうか</Japanese>
-            <Spanish>Si se necesita o no que el paciente esté inconsciente para realizar acciones quirúrgicas</Spanish>
-            <Portuguese>Se a inconsciência é ou não necessária para realizar algumas ações cirúrgicas</Portuguese>
-        </Key>
         <Key ID="STR_KAT_Surgery_SETTING_DebrideTime">
             <English>Debride Patient Time</English>
             <Chinesesimp>进行伤口清创的时间</Chinesesimp>
@@ -1104,6 +1078,22 @@
             <Korean>[KAM] 수술도구 상자</Korean>
             <Portuguese>[KAM] Caixa cirúrgica</Portuguese>
             <Spanish>[KAM] Caja quirurgica</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Surgery_unconSurgery_requieredForAction">
+            <English>Surgery Consciousness Controls</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Causes_Unconsciouness">
+            <English>Surgery Causes Unconsciouness</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Unconsciouness_Required">
+            <English>Unconsciouness Required for Surgery</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_No_Unconsciouness">
+            <English>No Unconsciouness from Surgery</English>
+        </Key>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Surgery_Anesthesia">
+            <English>Surgery Anesthesia</English>
         </Key>
     </Package>
 </Project>

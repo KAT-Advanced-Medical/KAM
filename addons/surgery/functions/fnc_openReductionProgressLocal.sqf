@@ -20,7 +20,7 @@
 
 params ["_medic", "_patient", "_bodyPart", "_entry"];
 
-if (GVAR(uncon_requieredForAction)) then {
+if (GVAR(unconSurgery_requieredForAction == 1)) then {
     if !(IS_UNCONSCIOUS(_patient)) exitWith {
         private _output = LLSTRING(fracture_fail);
         [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);

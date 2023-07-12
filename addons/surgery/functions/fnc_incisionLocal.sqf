@@ -19,7 +19,7 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-if (GVAR(uncon_requieredForAction)) then {
+if (GVAR(unconSurgery_requieredForAction) == 1) then {
     if !(IS_UNCONSCIOUS(_patient)) exitWith {
         private _output = LLSTRING(fracture_fail);
         [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
@@ -54,9 +54,27 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
+    //Check if unconSurgery_requiredForAction is set to "No Unconsciousness", and if so, 
+    //exit with minor pain and a slightly high heart rate. Skip this if the setting is not "No Unconsciousness".
+    if (GVAR(unconSurgery_requieredForAction) == 2) exitWith {
+        [_patient, 0.4] call ACEFUNC(medical_status,adjustPainLevel);
+        [_patient, "Pain", 10, 40, 30, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
+    };
+
+    // Check if unconSurgery_requiredForAction is set to "Surgery Anesthesia" and no Etomidate is in the patient's system. 
+    //It will then exit with an added heart rate of 200 to the patient, forcing them unconscious. This is skipped if Etomidate 
+    //is in the system, and the setting is not "Surgery Anesthesia".
+    if (GVAR(unconSurgery_requieredForAction) == 3 && _count == 0) exitWith {
+        [_patient, "Pain", 10, 40, 200, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
+        [_target, true] call ACEFUNC(medical,setUnconscious);
+    };
+
+    //If unconSurgery_requiredForAction is set to "Unconsciousness Required", continue with the normal process, 
+    //which adds 200 beats per minute to the patient's heart rate and forces them unconscious if Patient is not sedated and unconscious. 
     if (_count == 0 || !(IS_UNCONSCIOUS(_patient))) then {
         [_patient, "Pain", 10, 40, 200, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
         [_target, true] call ACEFUNC(medical,setUnconscious);
     };
 
+    
 }, GVAR(etomidateTime), [_patient, _part]] call CBA_fnc_addPerFrameHandler;

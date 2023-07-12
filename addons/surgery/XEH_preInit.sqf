@@ -169,13 +169,16 @@ PREP_RECOMPILE_END;
     [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
     true
 ] call CBA_Settings_fnc_init;
-
+//0Surgery Causes Unconsciouness: If you do an insision you will be knocked Unconsciouness from a CA
+//1Unconsciouness Required for Surgery: Pationt must be Unconsciouness to do Surgery
+//2No Unconsciouness from Surgery: They will not be knocked Unconsciouness when an insision in performed
+//3Surgery Anesthesia: The patient is able to stay awake through the entirety of the surgery. If Etomidate has not been applied, then the patient will lose consciousness.
 [
-    QGVAR(uncon_requieredForAction),
-    "CHECKBOX",
-    [LLSTRING(uncon_requieredForActions), LLSTRING(uncon_requieredForActions_DESC)],
+    QGVAR(unconSurgery_requieredForAction),
+    "LIST",
+    LLSTRING(unconSurgery_requieredForAction),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [false],
+    [[0, 1, 2, 3], ["STR_KAT_Surgery_Causes_Unconsciouness", "STR_KAT_Surgery_Unconsciouness_Required", "STR_KAT_Surgery_No_Unconsciouness", "STR_KAT_Surgery_Surgery_Anesthesia"], 1],
     true
 ] call CBA_Settings_fnc_init;
 
