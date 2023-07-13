@@ -39,11 +39,15 @@ switch (_source) do {
         }, {
             params ["_medic", "_patient", "_provider"];
         
-            [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+            if(_patient setVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+                [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+            };
         }, [_medic, _patient, _placedDefibrillator], 3600, {
             params ["_medic", "_patient", "_provider"];
         
-            [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+            if(_patient setVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+                [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+            };
         }] call CBA_fnc_waitUntilAndExecute;
     };
     case 2: { // Vehicle

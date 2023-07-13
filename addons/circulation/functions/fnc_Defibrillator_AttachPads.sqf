@@ -40,13 +40,17 @@ switch (_source) do {
         }, {
             params ["_medic", "_patient", "_provider"];
         
-            [_medic, _patient] call FUNC(Defibrillator_RemovePads);
-            [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+            if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                [_medic, _patient] call FUNC(Defibrillator_RemovePads);
+                [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+            };
         }, [_medic, _patient, _placedDefibrillator], 3600, {
             params ["_medic", "_patient", "_provider"];
         
-            [_medic, _patient] call FUNC(Defibrillator_RemovePads);
-            [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+            if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                [_medic, _patient] call FUNC(Defibrillator_RemovePads);
+                [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+            };
         }] call CBA_fnc_waitUntilAndExecute;
     };
     case 2: { // Vehicle
