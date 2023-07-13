@@ -1079,24 +1079,23 @@
             <Portuguese>[KAM] Caixa cirúrgica</Portuguese>
             <Spanish>[KAM] Caja quirurgica</Spanish>
         </Key>
-        <Key ID="STR_KAT_Surgery_unconSurgery_requieredForAction">
+        <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement">
             <English>Surgery Consciousness Controls</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_Causes_Unconsciouness">
-            <English>Surgery Causes Unconsciouness</English>
+        <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
+            <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. &#10;Unconsciousness Required for Surgery: Surgery requires patient to be unconscious. &#10;No Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. &#10;Surgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_Unconsciouness_Required">
-            <English>Unconsciouness Required for Surgery</English>
+        <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
+            <English>Surgery Causes Unconsciousness</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_No_Unconsciouness">
-            <English>No Unconsciouness from Surgery</English>
+        <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
+            <English>Unconsciousness Required for Surgery</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_Surgery_Anesthesia">
+        <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
+            <English>No Unconsciousness from Surgery</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_unconSurgery_requieredForAction_DESC">
-            <English>Surgery Causes Unconsciousness: Surgery results in unconsciousness from a CA. &#10;Unconsciousness Required for Surgery: Surgery requires patient unconsciousness. &#10;No Unconsciousness from Surgery: Surgery doesn't induce unconsciousness. &#10;Surgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
-        </Key>
-        
     </Package>
 </Project>

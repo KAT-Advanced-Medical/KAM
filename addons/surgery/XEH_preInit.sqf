@@ -169,16 +169,17 @@ PREP_RECOMPILE_END;
     [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
     true
 ] call CBA_Settings_fnc_init;
-//0Surgery Causes Unconsciouness: If you do an insision you will be knocked Unconsciouness from a CA
-//1Unconsciouness Required for Surgery: Pationt must be Unconsciouness to do Surgery
-//2No Unconsciouness from Surgery: They will not be knocked Unconsciouness when an insision in performed
-//3Surgery Anesthesia: The patient is able to stay awake through the entirety of the surgery. If Etomidate has not been applied, then the patient will lose consciousness.
+
+// 0 Surgery Causes Unconsciousness: If you do an incision (without anesthesia & sedative) patient will go into CA
+// 1 Unconsciousness Required for Surgery: Surgery fails unless patient is unconscious, needs anesthesia
+// 2 No Unconsciousness from Surgery: Patient can stay awake without anesthesia, causes pain
+// 3 Surgery Anesthesia: The patient is able to stay awake through the entirety of the surgery. If Etomidate has not been applied, then the patient will lose consciousness.
 [
-    QGVAR(unconSurgery_requieredForAction),
+    QGVAR(Surgery_ConsciousnessRequirement),
     "LIST",
-    [LLSTRING(unconSurgery_requieredForAction), LLSTRING(unconSurgery_requieredForAction_DESC)],
+    [LLSTRING(SETTING_ConsciousnessRequirement), LLSTRING(SETTING_ConsciousnessRequirement_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [[0, 1, 2, 3], ["STR_KAT_Surgery_Causes_Unconsciouness", "STR_KAT_Surgery_Unconsciouness_Required", "STR_KAT_Surgery_No_Unconsciouness", "STR_KAT_Surgery_Surgery_Anesthesia"], 1],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Causes_Unconsciousness), LLSTRING(SETTING_Unconsciousness_Required), LLSTRING(SETTING_No_Unconsciousness), LLSTRING(SETTING_Anesthesia)], 1],
     true
 ] call CBA_Settings_fnc_init;
 
