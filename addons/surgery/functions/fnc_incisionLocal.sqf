@@ -19,11 +19,9 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-if (GVAR(unconSurgery_requieredForAction) == 1) then {
-    if !(IS_UNCONSCIOUS(_patient)) exitWith {
-        private _output = LLSTRING(fracture_fail);
-        [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-    };
+if (GVAR(unconSurgery_requieredForAction) == 1 && !(IS_UNCONSCIOUS(_patient))) exitWith {
+    private _output = LLSTRING(fracture_fail);
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
 
@@ -72,7 +70,7 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
             [_target, true] call ACEFUNC(medical,setUnconscious);
         };
     };
-    
+
     if ((GVAR(unconSurgery_requieredForAction) == 0 && !(IS_UNCONSCIOUS(_patient)) && _count == 0) || (GVAR(unconSurgery_requieredForAction) == 3 && _count == 0)) exitWith {
         [_patient, "Pain", 10, 40, 200, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
         [_target, true] call ACEFUNC(medical,setUnconscious);
