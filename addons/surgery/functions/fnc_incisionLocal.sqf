@@ -51,30 +51,12 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
     if ((!_alive) || (_liveFracture == 0)) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-    switch (true) do
-    {
-        case (GVAR(unconSurgery_requieredForAction) == 2): 
-        {
-            [_patient, 0.4] call ACEFUNC(medical_status,adjustPainLevel);
-            [_patient, "Pain", 10, 40, 30, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
-        };
-        case (GVAR(unconSurgery_requieredForAction) == 3 && _count == 0): 
-        {
-            [_patient, "Pain", 10, 40, 200, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
-            [_target, true] call ACEFUNC(medical,setUnconscious);
-        };
-        case (GVAR(unconSurgery_requieredForAction) == 3): {};
-        case ((_count == 0 || !(IS_UNCONSCIOUS(_patient))) && (GVAR(unconSurgery_requieredForAction) == 0)): 
-        {
-            [_patient, "Pain", 10, 40, 200, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
-            [_target, true] call ACEFUNC(medical,setUnconscious);
-        };
-    };
-
+    
     if ((GVAR(unconSurgery_requieredForAction) == 0 && !(IS_UNCONSCIOUS(_patient)) && _count == 0) || (GVAR(unconSurgery_requieredForAction) == 3 && _count == 0)) exitWith {
         [_patient, "Pain", 10, 40, 200, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
         [_target, true] call ACEFUNC(medical,setUnconscious);
     };
+    
     if (GVAR(unconSurgery_requieredForAction) == 2 && _count == 0) then {
         [_patient, 0.4] call ACEFUNC(medical_status,adjustPainLevel);
         [_patient, "Pain", 10, 40, 30, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
