@@ -1507,35 +1507,19 @@
             <English>Medical level required to pick up/interact with placed AED/X station</English>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
-            <English>Time required to attach AED-X vitals monitor</English>
+            <English>Attach AED-X Vitals Monitor Time</English>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime">
-            <English>Time required to detach AED-X vitals monitor</English>
+            <English>Detach AED-X Vitals Monitor Time</English>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime">
-            <English>Time required to attach defibrillator pads</English>
+            <English>Attach Defibrillator Pads Time</English>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime">
-            <English>Time required to detach defibrillator pads</English>
+            <English>Detach Defibrillator Pads Time</English>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit">
             <English>Distance limit for defibrillators in meters</English>
-        </Key>
-        <Key ID="STR_KAT_Circulation_DEACTIVATE_MONITOR_WHILEAED_X">
-            <English>Deactivate Monitor while using AED-X</English>
-            <Polish>Dezaktywuj monitor podczas korzystania z AED-X</Polish>
-            <German>AED-X Monitor während dem defibrillieren deaktivieren</German>
-            <Spanish>Desactivar el monitor mientras usa el DEA-X</Spanish>
-            <Chinese>使用AED-X時停用顯示器</Chinese>
-            <Chinesesimp>使用AED-X时停用显示器</Chinesesimp>
-            <Czech>Deaktivovat monitoring při použití AED-X</Czech>
-            <Korean>X-시리즈 AED 사용 시 모니터 비활성화</Korean>
-            <French>Désactiver le moniteur pendant l'utilisation de l'AED-X</French>
-            <Turkish>AED-X kullanırken Monitörü re dışı bırakın</Turkish>
-            <Russian>Деактивируйте монитор при использовании AED-X</Russian>
-            <Italian>Disattivare il monitoraggio durante l'utilizzo del DAE-X</Italian>
-            <Japanese>AED-Xの使用中にモニターを非アクティブ化する</Japanese>
-            <Portuguese>Desativar o Monitor enquanto estiver usando o DEA-X</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -1939,6 +1923,16 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Default">
             <English>Default</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
+            <English>AED-X alarm SpO2 threshold</English>
+            <Czech>Práh AED-X pro aktivaci alarmu Pulzního Oxymetru</Czech>
+            <German>AED-X Sättigungsalarm Grenzwert</German>
+            <Korean>X-시리즈 AED의 SpO2 알람 임계값</Korean>
+            <Japanese>AED-XのSpO2警告音のしきい値</Japanese>
+            <French>Seuil d'alarme de SpO2 de l'AED-X</French>
+            <Italian>Soglia di allarme della SpO2 del AED-X</Italian>
+            <Spanish>Umbral de alarma de SpO2 del AED-X</Spanish>
         </Key>
     </Package>
 </Project>
