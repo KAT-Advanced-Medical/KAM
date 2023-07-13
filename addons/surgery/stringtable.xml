@@ -1094,5 +1094,9 @@
         <Key ID="STR_KAT_Surgery_Surgery_Anesthesia">
             <English>Surgery Anesthesia</English>
         </Key>
+        <Key ID="STR_KAT_Surgery_unconSurgery_requieredForAction_DESC">
+            <English>Surgery Causes Unconsciousness: Surgery results in unconsciousness from a CA. &#10;Unconsciousness Required for Surgery: Surgery requires patient unconsciousness. &#10;No Unconsciousness from Surgery: Surgery doesn't induce unconsciousness. &#10;Surgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
+        </Key>
+        
     </Package>
 </Project>

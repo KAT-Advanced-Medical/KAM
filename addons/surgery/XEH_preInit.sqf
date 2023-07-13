@@ -176,7 +176,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(unconSurgery_requieredForAction),
     "LIST",
-    LLSTRING(unconSurgery_requieredForAction),
+    [LLSTRING(unconSurgery_requieredForAction), LLSTRING(unconSurgery_requieredForAction_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
     [[0, 1, 2, 3], ["STR_KAT_Surgery_Causes_Unconsciouness", "STR_KAT_Surgery_Unconsciouness_Required", "STR_KAT_Surgery_No_Unconsciouness", "STR_KAT_Surgery_Surgery_Anesthesia"], 1],
     true
