@@ -39,6 +39,15 @@ class ACE_Medical_Treatment_Actions {
     class PlasmaIV_250: PlasmaIV {
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 100, 5] call kat_pharma_fnc_fluid;";
     };
+    class GelofusineIV: BloodIV {
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 500, 16] call kat_pharma_fnc_fluid;";
+    };
+    class GelofusineIV_500: GelofusineIV {
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 250, 8] call kat_pharma_fnc_fluid;";
+    };
+    class GelofusineIV_250: GelofusineIV {
+        callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 100, 4] call kat_pharma_fnc_fluid;";
+    };
     class Epinephrine: Morphine {
         callbackSuccess = QFUNC(treatmentAdvanced_medication);
     };

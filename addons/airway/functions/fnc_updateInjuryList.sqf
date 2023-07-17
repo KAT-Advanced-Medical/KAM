@@ -217,6 +217,7 @@ private _totalIvVolume = 0;
 private _saline = 0;
 private _blood = 0;
 private _plasma = 0;
+private _gelofusine = 0;
 
 {
     _x params ["_volumeRemaining", "_type"];
@@ -229,6 +230,9 @@ private _plasma = 0;
         };
         case ("Plasma"): {
         _plasma = _plasma + _volumeRemaining;
+        };
+        case ("Gelofusine"): {
+        _gelofusine = _gelofusine + _volumeRemaining;
         };
     };
     _totalIvVolume = _totalIvVolume + _volumeRemaining;
@@ -243,6 +247,9 @@ if (_totalIvVolume >= 1) then {
     };
     if (_plasma > 1) then {
         _entries pushBack ["Plasma: " + (format [localize ACELSTRING(medical_treatment,receivingIvVolume), floor _plasma]), [1, 1, 1, 1]];
+    };
+    if (_gelofusine > 1) then {
+        _entries pushBack ["Gelofusine: " + (format [localize ACELSTRING(medical_treatment,receivingIvVolume), floor _gelofusine]), [1, 1, 1, 1]];
     };
 };
 
