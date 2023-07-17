@@ -81,7 +81,7 @@ private _dlg = findDisplay 69000;
         GVAR(AEDX_MonitorTarget) = objNull;
     };
     
-    //private _shockButton = "";
+    private _shockButton = "";
 
     if !(_pads) then {
         ctrlSetText [69021, "Check Pads"];
@@ -106,12 +106,12 @@ private _dlg = findDisplay 69000;
 
         ctrlSetText [69020, _ekgDisplay];
         
-        /*if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_Charged), false]) then {
+        if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_Charged), false]) then {
             _shockButton = QPATHTOF(ui\shockbutton.paa);
-        };*/
+        };
     };
 
-    //ctrlSetText [69022, _shockButton];
+    ctrlSetText [69022, _shockButton];
 
     // Handle date and time display - [year,month,day,hour,min]
 
