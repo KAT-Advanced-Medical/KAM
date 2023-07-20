@@ -79,7 +79,7 @@ ctrlShow [69060, false];
     };
 
     private _slider = _dlg displayCtrl 69010;
-
+    
     _slider ctrlSetPosition [pxToScreen_X(250), (ctrlPosition _slider) select 1, (ctrlPosition _slider) select 2, (ctrlPosition _slider) select 3];
     _slider ctrlCommit 0;
 
@@ -125,7 +125,23 @@ ctrlShow [69060, false];
                 if(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,inCardiacArrest), false] || !(alive GVAR(AEDX_MonitorTarget))) then {
                     _ekgDisplay = QPATHTOF(ui\ekg_asystole.paa);
                 } else {
-                    _ekgDisplay = QPATHTOF(ui\ekg_sinus.paa);
+                    private _hr = 0;
+                    if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 2) then {
+                        _hr = GVAR(AEDX_MonitorTarget) call FUNC(getCardiacArrestHeartRate);
+                    } else {
+                        _hr = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
+                    };
+                    
+                    switch (true) do {
+                        case (_hr > 130): {_ekgDisplay = QPATHTOF(ui\ekg_sinus_130.paa);};
+                        case (_hr > 110 && _hr < 130): {_ekgDisplay = QPATHTOF(ui\ekg_sinus_120.paa);};
+                        case (_hr > 90 && _hr < 110): {_ekgDisplay = QPATHTOF(ui\ekg_sinus_100.paa);};
+                        case (_hr > 70 && _hr < 90): {_ekgDisplay = QPATHTOF(ui\ekg_sinus.paa);};
+                        case (_hr > 50 && _hr < 70): {_ekgDisplay = QPATHTOF(ui\ekg_sinus_60.paa);};
+                        default {
+                            _ekgDisplay = QPATHTOF(ui\ekg_sinus_40.paa);
+                        };
+                    };
                 };
             };
         };
