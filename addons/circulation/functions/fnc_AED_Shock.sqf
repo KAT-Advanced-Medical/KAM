@@ -32,6 +32,8 @@ if (vehicle _patient isEqualTo _patient) then {
     _patient setVariable [QGVAR(DefibrillatorInUse), false, true];
 }, [_patient], 1] call CBA_fnc_waitAndExecute;
 
+_patient setVariable [QGVAR(Defibrillator_ShockAmount), (_patient getVariable [QGVAR(Defibrillator_ShockAmount), 0]) + 1, true];
+
 if (alive _patient && {_patient getVariable [QACEGVAR(medical,inCardiacArrest), false]}) then {
     [QACEGVAR(medical_treatment,cprLocal), [_medic, _patient, _defibType], _patient] call CBA_fnc_targetEvent;
 };

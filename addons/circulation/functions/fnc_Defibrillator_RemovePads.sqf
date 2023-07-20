@@ -38,6 +38,8 @@ _patient setVariable [QGVAR(Defibrillator_Provider), nil, true];
 _patient setVariable [QGVAR(DefibrillatorInUse), false, true];
 _patient setVariable [QGVAR(Defibrillator_Charged), false, true];
 
+_patient setVariable [QGVAR(Defibrillator_ShockAmount), 0, true];
+
 [_patient, "activity", LSTRING(Activity_RemovePads), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 
 if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {

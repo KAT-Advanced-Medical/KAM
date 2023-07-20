@@ -127,20 +127,6 @@ class GVAR(AEDX_Monitor_Dialog) {
             font = "RobotoCondensedLight";
             text = "%";
         };
-        class AEDBackground: RscPicture {
-            idc = -1;
-            x = QUOTE(GUI_GRID_X);
-            y = QUOTE(GUI_GRID_Y);
-            w = QUOTE(GUI_GRID_W);
-            h = QUOTE(GUI_GRID_H);
-            type = 0;
-            style = 48;
-            font = "TahomaB";
-            size = 0;
-            colorBackground[] = {0,0,0,0};
-            colorText[] = {1,1,1,1};
-            text = QPATHTOF(ui\zoll.paa);
-        };
         class HeartRateDisplay: RscText {
             idc = 69011;
             x = QUOTE(pxToScreen_X(552));
@@ -200,7 +186,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             x = QUOTE(pxToScreen_X(505));
             y = QUOTE(pxToScreen_Y(618));
             w = QUOTE(pxToScreen_W(400));
-            h = QUOTE(pxToScreen_H(80));
+            h = QUOTE(pxToScreen_H(40));
             type = 0;
             style = 0;
             font = "RobotoCondensed";
@@ -213,7 +199,7 @@ class GVAR(AEDX_Monitor_Dialog) {
         class Battery: RscPicture {
             idc = -1;
             x = QUOTE(pxToScreen_X(1256));
-            y = QUOTE(pxToScreen_Y(642));
+            y = QUOTE(pxToScreen_Y(622));
             w = QUOTE(pxToScreen_W(64));
             h = QUOTE(pxToScreen_H(64));
             style = 48;
@@ -254,6 +240,219 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorText[] = {1,1,1,1};
             text = "";
         };
+        class ChargingStatusBlackBackground: BlackBackground {
+            idc = 69030;
+            x = QUOTE(pxToScreen_X(478));
+            y = QUOTE(pxToScreen_Y(1119));
+            w = QUOTE(pxToScreen_W(1000));
+            h = QUOTE(pxToScreen_H(250));
+        };
+        class ChargingStatusBlackBackground2: BlackBackground {
+            idc = 69031;
+            x = QUOTE(pxToScreen_X(1336));
+            y = QUOTE(pxToScreen_Y(601));
+            w = QUOTE(pxToScreen_W(145));
+            h = QUOTE(pxToScreen_H(768));
+        };
+        class ChargingStatusDefibrillator: RscText {
+            idc = 69032;
+            x = QUOTE(pxToScreen_X(579));
+            y = QUOTE(pxToScreen_Y(1137));
+            w = QUOTE(pxToScreen_W(400));
+            h = QUOTE(pxToScreen_H(50));
+            type = 0;
+            style = 2;
+            font = "RobotoCondensed";
+            sizeEx = QUOTE(GRID_H * 0.8);
+            shadow = 0;
+            colorBackground[] = {0.05,0.85,0.36,1};
+            colorText[] = {0,0,0,1};
+            text = "Defibrillator";
+        };
+        class ChargingStatus: ChargingStatusDefibrillator {
+            idc = 69033;
+            y = QUOTE(pxToScreen_Y(1189));
+            w = QUOTE(pxToScreen_W(400));
+            h = QUOTE(pxToScreen_H(172));
+            sizeEx = QUOTE(GRID_H * 1.5);
+            colorBackground[] = {1,0.35,0,1};
+            colorText[] = {0,0,0,1};
+            text = "CHARGING";
+        };
+        class ChargingStatusEnergySelect: ChargingStatusDefibrillator {
+            idc = 69034;
+            x = QUOTE(pxToScreen_X(1065));
+            w = QUOTE(pxToScreen_W(270));
+            text = "Selected energy";
+        };
+        class ChargingStatusEnergySelectAmount: ChargingStatus {
+            idc = 69035;
+            x = QUOTE(pxToScreen_X(1065));
+            w = QUOTE(pxToScreen_W(270));
+            font = "RobotoCondensedBold";
+            sizeEx = QUOTE(GRID_H * 2.5);
+            colorText[] = {0,0,0,1};
+            text = "150 J";
+        };
+
+        class ChargingStatusBarCharged: RscText {
+            idc = 69036;
+            x = QUOTE(pxToScreen_X(1344));
+            y = QUOTE(pxToScreen_Y(1360));
+            w = QUOTE(pxToScreen_W(126));
+            h = QUOTE(pxToScreen_H(1));
+            type = 0;
+            style = 0;
+            shadow = 0;
+            colorBackground[] = {1,1,1,1};
+            colorText[] = {1,1,1,0};
+        };
+
+        class ChargingStatusBar1: RscText {
+            idc = 69041;
+            x = QUOTE(pxToScreen_X(1345));
+            y = QUOTE(pxToScreen_Y(1328));
+            w = QUOTE(pxToScreen_W(123));
+            h = QUOTE(pxToScreen_H(28));
+            type = 0;
+            style = 2;
+            font = "RobotoCondensedBold";
+            sizeEx = QUOTE(GRID_H * 0.6);
+            shadow = 0;
+            colorBackground[] = {0,0,0,0};
+            colorText[] = {1,1,1,1};
+            text = "1";
+        };
+        class ChargingStatusBar2: ChargingStatusBar1 {
+            idc = 69042;
+            y = QUOTE(pxToScreen_Y(1294));
+            text = "2";
+        };
+        class ChargingStatusBar3: ChargingStatusBar1 {
+            idc = 69043;
+            y = QUOTE(pxToScreen_Y(1260));
+            text = "3";
+        };
+        class ChargingStatusBar4: ChargingStatusBar1 {
+            idc = 69044;
+            y = QUOTE(pxToScreen_Y(1226));
+            text = "4";
+        };
+        class ChargingStatusBar5: ChargingStatusBar1 {
+            idc = 69045;
+            y = QUOTE(pxToScreen_Y(1192));
+            text = "5";
+        };
+        class ChargingStatusBar6: ChargingStatusBar1 {
+            idc = 69046;
+            y = QUOTE(pxToScreen_Y(1158));
+            text = "6";
+        };
+        class ChargingStatusBar7: ChargingStatusBar1 {
+            idc = 69047;
+            y = QUOTE(pxToScreen_Y(1124));
+            text = "7";
+        };
+        class ChargingStatusBar8: ChargingStatusBar1 {
+            idc = 69048;
+            y = QUOTE(pxToScreen_Y(1090));
+            text = "8";
+        };
+        class ChargingStatusBar9: ChargingStatusBar1 {
+            idc = 69049;
+            y = QUOTE(pxToScreen_Y(1056));
+            text = "9";
+        };
+        class ChargingStatusBar10: ChargingStatusBar1 {
+            idc = 69050;
+            y = QUOTE(pxToScreen_Y(1022));
+            text = "10";
+        };
+        class ChargingStatusBar15: ChargingStatusBar1 {
+            idc = 69051;
+            y = QUOTE(pxToScreen_Y(988));
+            text = "15";
+        };
+        class ChargingStatusBar20: ChargingStatusBar1 {
+            idc = 69052;
+            y = QUOTE(pxToScreen_Y(954));
+            text = "20";
+        };
+        class ChargingStatusBar30: ChargingStatusBar1 {
+            idc = 69053;
+            y = QUOTE(pxToScreen_Y(920));
+            text = "30";
+        };
+        class ChargingStatusBar50: ChargingStatusBar1 {
+            idc = 69054;
+            y = QUOTE(pxToScreen_Y(886));
+            text = "50";
+        };
+        class ChargingStatusBar70: ChargingStatusBar1 {
+            idc = 69055;
+            y = QUOTE(pxToScreen_Y(852));
+            text = "70";
+        };
+        class ChargingStatusBar85: ChargingStatusBar1 {
+            idc = 69056;
+            y = QUOTE(pxToScreen_Y(818));
+            text = "85";
+        };
+        class ChargingStatusBar100: ChargingStatusBar1 {
+            idc = 69057;
+            y = QUOTE(pxToScreen_Y(784));
+            text = "100";
+        };
+        class ChargingStatusBar120: ChargingStatusBar1 {
+            idc = 69058;
+            y = QUOTE(pxToScreen_Y(750));
+            text = "120";
+        };
+        class ChargingStatusBar150: ChargingStatusBar1 {
+            idc = 69059;
+            y = QUOTE(pxToScreen_Y(682));
+            h = QUOTE(pxToScreen_H(66));
+            sizeEx = QUOTE(GRID_H * 1.5);
+            text = "150";
+        };
+        class ChargingStatusBar200: ChargingStatusBar1 {
+            idc = 69060;
+            y = QUOTE(pxToScreen_Y(648));
+            text = "200";
+        };
+        class ChargingStatusBackground: EKG {
+            idc = 69040;
+            text = QPATHTOF(ui\chargingstatus_bg.paa);
+        };
+        class ShockTally: RscText {
+            idc = 69037;
+            x = QUOTE(pxToScreen_X(980));
+            y = QUOTE(pxToScreen_Y(1282));
+            w = QUOTE(pxToScreen_W(84));
+            h = QUOTE(pxToScreen_H(46));
+            type = 0;
+            style = 2;
+            font = "RobotoCondensedBold";
+            sizeEx = QUOTE(GRID_H);
+            shadow = 0;
+            colorBackground[] = {0,0,0,0};
+            colorText[] = {1,1,1,1};
+            text = "0";
+        };
+        class AEDBackground: RscPicture {
+            idc = -1;
+            x = QUOTE(GUI_GRID_X);
+            y = QUOTE(GUI_GRID_Y);
+            w = QUOTE(GUI_GRID_W);
+            h = QUOTE(GUI_GRID_H);
+            type = 0;
+            style = 48;
+            font = "TahomaB";
+            size = 0;
+            colorBackground[] = {0,0,0,0};
+            colorText[] = {1,1,1,1};
+            text = QPATHTOF(ui\zoll.paa);
+        };
     };
 
     class Controls {
@@ -278,7 +477,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             shadow = 0;
             font = "RobotoCondensed";
             sizeEx = QUOTE(GRID_H);
-            onButtonClick = QUOTE(if !(GVAR(AEDX_MonitorTarget) isEqualTo objNull) then {if(GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(Defibrillator_Charged), false)]) then {GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(Defibrillator_Charged), false, true)]}});
+            onButtonClick = QUOTE(if !(GVAR(AEDX_MonitorTarget) isEqualTo objNull) then {if(GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(Defibrillator_Charged), false)]) then {GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(Defibrillator_Charged), false, true)]; GVAR(AEDX_MonitorCharged) = false; GVAR(AEDX_MonitorShockAdministered) = true}});
             tooltip = CSTRING(Defibrillator_Action_Shock);
         };
         class AnalyzeButton: ShockButton {
@@ -293,7 +492,7 @@ class GVAR(AEDX_Monitor_Dialog) {
         class ChargeButton: AnalyzeButton {
             idc = -1;
             x = QUOTE(pxToScreen_X(1316));
-            onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull) && !(GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(DefibrillatorInUse), false)])) then {[ARR_2(player, GVAR(AEDX_MonitorTarget))] call FUNC(Defibrillator_ManualCharge)});
+            onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull) && !(GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(DefibrillatorInUse), false)])) then {[ARR_2(player, GVAR(AEDX_MonitorTarget))] call FUNC(Defibrillator_ManualCharge); [] call FUNC(AEDX_ViewMonitor_Charging)});
             tooltip = CSTRING(Defibrillator_Action_Charge);
         };
         class CancelChargeButton: ShockButton {
@@ -302,7 +501,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             y = QUOTE(pxToScreen_Y(1453));
             w = QUOTE(pxToScreen_W(119));
             h = QUOTE(pxToScreen_H(169));
-            onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull) && (GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(Defibrillator_Charged), false)])) then {GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(DefibrillatorInUse), false, true)]; GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(Defibrillator_Charged), false, true)]});
+            onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull) && (GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(Defibrillator_Charged), false)])) then {GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(DefibrillatorInUse), false, true)]; GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(Defibrillator_Charged), false, true)]; GVAR(AEDX_MonitorCharged) = false; GVAR(AEDX_MonitorShockAdministered) = false});
             tooltip = CSTRING(Defibrillator_Action_CancelCharge);
         };
         class ToggleVolumeButton: ShockButton {

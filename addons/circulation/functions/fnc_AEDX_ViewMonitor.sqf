@@ -19,11 +19,6 @@
 
 params ["_medic", "_target", ["_source", 0]];
 
-#define __GUI_GRID_W (safezoneW * 0.55)
-#define __GUI_GRID_H (__GUI_GRID_W * 4/3)
-#define __GUI_GRID_X (safezoneX + (safezoneW - __GUI_GRID_W) / 2)
-#define __GUI_GRID_Y (safezoneY + (safezoneH - __GUI_GRID_H) / 2)
-
 ACEGVAR(medical_gui,pendingReopen) = false; // Prevent medical menu from reopening
  
 if (dialog) then { // If another dialog is open (medical menu) close it
@@ -43,6 +38,37 @@ GVAR(AEDX_MonitorTarget) = _patient;
 createDialog QGVAR(AEDX_Monitor_Dialog);
 
 private _dlg = findDisplay 69000;
+
+ctrlShow [69030, false];
+ctrlShow [69031, false];
+ctrlShow [69032, false];
+ctrlShow [69033, false];
+ctrlShow [69034, false];
+ctrlShow [69035, false];
+ctrlShow [69036, false];
+ctrlShow [69037, false];
+
+ctrlShow [69040, false];
+ctrlShow [69041, false];
+ctrlShow [69042, false];
+ctrlShow [69043, false];
+ctrlShow [69044, false];
+ctrlShow [69045, false];
+ctrlShow [69046, false];
+ctrlShow [69047, false];
+ctrlShow [69048, false];
+ctrlShow [69049, false];
+ctrlShow [69050, false];
+ctrlShow [69051, false];
+ctrlShow [69052, false];
+ctrlShow [69053, false];
+ctrlShow [69054, false];
+ctrlShow [69055, false];
+ctrlShow [69056, false];
+ctrlShow [69057, false];
+ctrlShow [69058, false];
+ctrlShow [69059, false];
+ctrlShow [69060, false];
 
 [{
     params ["_args", "_idPFH"];
@@ -166,3 +192,15 @@ private _dlg = findDisplay 69000;
         ctrlSetText [69016, format["%1", round(GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,airwayStatus), 100])]];
     };
 }, 1, [_dlg]] call CBA_fnc_addPerFrameHandler;
+
+[{
+    params ["_dlg"];
+
+    isNull _dlg || GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_Charged), false];
+}, {
+    params ["_dlg", "_chargeBar"];
+
+    if !(isNull _dlg) then {
+        [true] call FUNC(AEDX_ViewMonitor_Charging);
+    };
+}, [_dlg, _chargeBar], 4, {}] call CBA_fnc_waitUntilAndExecute;
