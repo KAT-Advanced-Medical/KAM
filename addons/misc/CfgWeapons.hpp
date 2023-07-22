@@ -57,5 +57,16 @@ class CfgWeapons
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;
         };
+
+    class kat_IFAK: ACE_ItemCore {
+        author = "Miss Heda";
+        displayName = "IFAK"; //STRING
+        descriptionShort = "CSTRING(Bubble_Wrap_Desc)";  //STRING
+        scope = 2;
+        editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa); //Change
+        picture = QPATHTOF(ui\Bubble_Wrap_Item.paa); // Change
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 25;
+        };
     };
 };

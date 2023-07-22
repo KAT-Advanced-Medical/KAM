@@ -433,6 +433,15 @@ class CfgVehicles {
                     showDisabled = 0;
                     icon = QPATHTOF(ui\Bubble_Wrap_Item.paa);
                 };
+
+                class UnpackIfak {
+                    isplayName = "Unpack Ifak"; // STRING
+                    condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call ACEFUNC(common,hasItem));
+                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    statement = QUOTE([ARR_3(_player, ""kat_IFAK"", 0)] call FUNC(unpackFAK));
+                    showDisabled = 0;
+                    icon = QPATHTOF(ui\Bubble_Wrap_Item.paa); //CHange
+                };
             };
         };
         class ACE_Actions {
