@@ -28,4 +28,11 @@ private _firstSlotAmountAFAK = missionNamespace getVariable [QGVAR(IFAKFirstSlot
 private _firstSlotItemMFAK = missionNamespace getVariable [QGVAR(IfakFirstSlotItem), []];
 private _firstSlotAmountMFAK = missionNamespace getVariable [QGVAR(IFAKFirstSlotAmount), []];
 
+
+
+
+
+
+
+
 [_unit, _firstSlotItemIFAK, "", _firstSlotAmountIFAK] call ACEFUNC(common,addToInventory);

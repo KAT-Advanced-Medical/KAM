@@ -149,21 +149,157 @@ PREP_RECOMPILE_END;
 
 //IFAK First Slot Item
 [
-    QGVAR(IfakFirstSlotItem),
+    QGVAR(IFAKFirstSlotItem),
     "EDITBOX",
-    [LLSTRING(SETTING_ArmbandSlingRightLegRot_Display), LLSTRING(SETTING_ArmbandSlingRightLegRot_Desc)], //CHANGE
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_First_Aid_Kits)],
+    [LLSTRING(SETTING_IFAK_FirstSlot_Item)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     "'kat_Bubble_Wrap_Item'",
 ] call CBA_Settings_fnc_init;
 
+//IFAK First Slot Amount
 [
     QGVAR(IFAKFirstSlotAmount),
     "SLIDER",
-    [LLSTRING(SETTING_treatmentTimeDetachTourniquet)],// Change
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_First_Aid_Kits)],
+    [LLSTRING(SETTING_IFAK_FirstSlot_Amount)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     [1, 50, 20, 1],
     true
 ] call CBA_Settings_fnc_init;
+
+//IFAK Second Slot Item
+[
+    QGVAR(IFAKSecondSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_IFAK_SecondSlot_Item)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    "'kat_Bubble_Wrap_Item'",
+] call CBA_Settings_fnc_init;
+
+//IFAK Second Slot Amount
+[
+    QGVAR(IFAKSecondSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_IFAK_SecondSlot_Amount)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [1, 50, 20, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//IFAK Third Slot Item
+[
+    QGVAR(IFAKThirdtSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_IFAK_ThirdSlot_Item)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    "'kat_Bubble_Wrap_Item'",
+] call CBA_Settings_fnc_init;
+
+//IFAK Third Slot Amount
+[
+    QGVAR(IFAKThirdSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_IFAK_ThirdSlot_Amount)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [1, 50, 20, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//IFAK Fourth Item
+[
+    QGVAR(IFAKFourthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_IFAK_FourthSlot_Item)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    "'kat_Bubble_Wrap_Item'",
+] call CBA_Settings_fnc_init;
+
+// IFAK Fourth Amount
+[
+    QGVAR(IFAKFourthSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_IFAK_FourthSlot_Amount)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [1, 50, 20, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//MFAK First Slot Item
+[
+    QGVAR(MFAKFirstSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_MFAK_FirstSlot_Item)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    "'kat_Bubble_Wrap_Item'",
+] call CBA_Settings_fnc_init;
+
+//MFAK First Slot Amount
+[
+    QGVAR(MFAKFirstSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_IFAK_FirstSlot_Amount)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [1, 50, 20, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//MFAK Second Slot Item
+[
+    QGVAR(MFAKSecondSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_IFAK_SecondSlot_Item)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    "'kat_Bubble_Wrap_Item'",
+] call CBA_Settings_fnc_init;
+
+//MFAK Second Slot Amount
+[
+    QGVAR(MFAKSecondSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_IFAK_SecondSlot_Amount)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [1, 50, 20, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//MFAK Third Slot Item
+[
+    QGVAR(MFAKThirdtSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_IFAK_ThirdSlot_Item)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    "'kat_Bubble_Wrap_Item'",
+] call CBA_Settings_fnc_init;
+
+//MFAK Third Slot Amount
+[
+    QGVAR(MFAKThirdSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_IFAK_ThirdSlot_Amount)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [1, 50, 20, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//MFAK Fourth Item
+[
+    QGVAR(MFAKFourthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_IFAK_FourthSlot_Item)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    "'kat_Bubble_Wrap_Item'",
+] call CBA_Settings_fnc_init;
+
+//MFAK Fourth Amount
+[
+    QGVAR(MFAKFourthSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_IFAK_FourthSlot_Amount)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [1, 50, 20, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+
 
 
 if (GVAR(arsenalMedCategory)) then {

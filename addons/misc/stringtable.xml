@@ -862,5 +862,85 @@
             <Italian>Toppa per gruppo sanguigno AB-</Italian>
             <Spanish>Parche de grupo sanguíneo AB-</Spanish>
         </Key>
+        <Key ID="STR_KAT_Misc_SubCategory_IFAK">
+            <English>Industrial First Aid Kit</English>
+            <German>Industrie Erste Hilfe Kit</German>
+        </key>
+        <Key ID="STR_KAT_Misc_SubCategory_MFAK">
+            <English>Military First Aid Kit</English>
+            <German>Militär Erste Hilfe Kit</German>
+        </key>
+        <Key ID="STR_KAT_Misc_SubCategory_AFAK">
+            <English>Advanced First Aid Kit</English>
+            <German>Erweitertes Erste Hilfe Kit</German>
+        </key>
+        <Key ID="STR_KAT_Misc_SETTING_FirstSlot_Item">
+            <English>First Slot Item</English>
+            <German>Erste Tasche Gegenstand</German>
+        </key>
+        <Key ID="STR_KAT_Misc_SETTING_FirstSlot_Amount">
+            <English>First Slot Amount</English>
+            <German>Erster Tasche Anzahl</German>
+        </key>
+        <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Item">
+            <English>Second Slot Item</English>
+            <German>Zweite Tasche Anzahl</German>
+        </key>
+        <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Amount">
+            <English>Second Slot Amount</English>
+            <German>Zweite Tasche Anzahl</German>
+        </key>
+        <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Item">
+            <English>Third Slot Item</English>
+            <German>Dritte Tasche Anzahl</German>
+        </key>
+        <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Amount">a
+            <English>Third Slot Amount</English>
+            <German>Dritte Tasche Anzahl</German>
+        </key>
+        <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Item">
+            <English>Fourth Slot Item</English>
+            <German>Dritte Tasche Anzahl</German>
+        </key>
+        <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Amount">
+            <English>Fourth Slot Amount</English>
+            <German>Dritte Tasche Anzahl</German>
+        </key>
+        <Key ID="STR_KAT_Misc_IFAK_Display">
+            <English>Industrial First Aid Kit</English>
+            <German>Industrie Erste Hilfe Kit</German>
+        </key>
+        <Key ID="STR_KAT_Misc_IFAK_DESC">
+            <English>The IFAK can be unpacked to provide usefull medical items</English>
+            <German>Das IEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
+        </key>
+        <Key ID="STR_KAT_Misc_MFAK_Display">
+            <English>Military First Aid Kit</English>
+            <German>Militär Erste Hilfe Kit</German>
+        </key>
+        <Key ID="STR_KAT_Misc_MFAK_DESC">
+            <English>The MFAK can be unpacked to provide usefull medical items</English>
+            <German>Das MEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
+        </key>
+        <Key ID="STR_KAT_Misc_AFAK_DisplayName">
+            <English>Advanced First Aid Kit</English>
+            <German>Erweitertes Erste Hilfe Kit</German>
+        </key>
+        <Key ID="STR_KAT_Misc_AFAK_DESC">
+            <English>The AFAK can be unpacked to provide usefull medical items</English>
+            <German>Das EEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
+        </key>
+        <Key ID="STR_KAT_Misc_IFAK_Unpack">
+            <English>Unpack IFAK</English>
+            <German>Entpacke IEHK</German>
+        </key>
+        <Key ID="STR_KAT_Misc_MFAK_Unpack">
+            <English>Unpack MFAK</English>
+            <German>Entpacke MEHK</German>
+        </key>
+        <Key ID="STR_KAT_Misc_AFAK_Unpack">
+            <English>Unpack AFAK</English>
+            <German>Entpacke EEHK</German>
+        </key>
     </Package>
 </Project>

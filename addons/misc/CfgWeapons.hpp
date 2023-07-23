@@ -60,13 +60,37 @@ class CfgWeapons
 
     class kat_IFAK: ACE_ItemCore {
         author = "Miss Heda";
-        displayName = "IFAK"; //STRING
-        descriptionShort = "CSTRING(Bubble_Wrap_Desc)";  //STRING
+        displayName = CSTRING(IFAK_Display);
+        descriptionShort = CSTRING(IFAK_DESC);
         scope = 2;
         editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa); //Change
         picture = QPATHTOF(ui\Bubble_Wrap_Item.paa); // Change
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 25;
+        };
+    };
+
+    class kat_MFAK: ACE_ItemCore {
+        author = "Miss Heda";
+        displayName = CSTRING(MFAK_Display);
+        descriptionShort = CSTRING(MFAK_DESC);
+        scope = 2;
+        editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa); //Change
+        picture = QPATHTOF(ui\Bubble_Wrap_Item.paa); // Change
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 30;
+        };
+    };
+
+    class kat_AFAK: ACE_ItemCore {
+        author = "Miss Heda";
+        displayName = CSTRING(AFAK_Display);
+        descriptionShort = CSTRING(AFAK_DESC);
+        scope = 2;
+        editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa); //Change
+        picture = QPATHTOF(ui\Bubble_Wrap_Item.paa); // Change
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 35;
         };
     };
 };
