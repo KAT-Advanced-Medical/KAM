@@ -435,30 +435,30 @@ class CfgVehicles {
                 };
 
                 class UnpackIfak {
-                    isplayName = CSTRING(IFAK_Unpack);
+                    displayName = CSTRING(IFAK_Unpack);
                     condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call ACEFUNC(common,hasItem));
                     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                     statement = QUOTE([ARR_2(_player, ""kat_IFAK"")] call FUNC(unpackFAK));
                     showDisabled = 0;
-                    icon = QPATHTOF(ui\Bubble_Wrap_Item.paa); //CHange
+                    icon = QPATHTOF(ui\FAK.paa);
                 };
 
                 class UnpackMfak {
-                    isplayName = CSTRING(MFAK_Unpack);
+                    displayName = CSTRING(MFAK_Unpack);
                     condition = QUOTE([ARR_2(_player, ""kat_MFAK"")] call ACEFUNC(common,hasItem));
                     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                     statement = QUOTE([ARR_2(_player, ""kat_MFAK"")] call FUNC(unpackFAK));
                     showDisabled = 0;
-                    icon = QPATHTOF(ui\Bubble_Wrap_Item.paa); //CHange
+                    icon = QPATHTOF(ui\FAK.paa);
                 };
 
                 class UnpackAfak {
-                    isplayName = CSTRING(AFAK_Unpack);
+                    displayName = CSTRING(AFAK_Unpack);
                     condition = QUOTE([ARR_2(_player, ""kat_AFAK"")] call ACEFUNC(common,hasItem));
                     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                     statement = QUOTE([ARR_2(_player, ""kat_AFAK"")] call FUNC(unpackFAK));
                     showDisabled = 0;
-                    icon = QPATHTOF(ui\Bubble_Wrap_Item.paa); //CHange
+                    icon = QPATHTOF(ui\FAK.paa);
                 };
             };
         };

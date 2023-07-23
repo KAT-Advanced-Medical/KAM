@@ -57,38 +57,35 @@ class CfgWeapons
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;
         };
+    };
 
     class kat_IFAK: ACE_ItemCore {
         author = "Miss Heda";
         displayName = CSTRING(IFAK_Display);
         descriptionShort = CSTRING(IFAK_DESC);
         scope = 2;
-        editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa); //Change
-        picture = QPATHTOF(ui\Bubble_Wrap_Item.paa); // Change
+        editorPreview = QPATHTOF(ui\IFAK.paa);
+        picture = QPATHTOF(ui\IFAK.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 25;
         };
     };
 
-    class kat_MFAK: ACE_ItemCore {
-        author = "Miss Heda";
+    class kat_MFAK: kat_IFAK {
         displayName = CSTRING(MFAK_Display);
         descriptionShort = CSTRING(MFAK_DESC);
-        scope = 2;
-        editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa); //Change
-        picture = QPATHTOF(ui\Bubble_Wrap_Item.paa); // Change
+        editorPreview = QPATHTOF(ui\MFAK.paa);
+        picture = QPATHTOF(ui\MFAK.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 30;
         };
     };
 
-    class kat_AFAK: ACE_ItemCore {
-        author = "Miss Heda";
+    class kat_AFAK: kat_IFAK {
         displayName = CSTRING(AFAK_Display);
         descriptionShort = CSTRING(AFAK_DESC);
-        scope = 2;
-        editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa); //Change
-        picture = QPATHTOF(ui\Bubble_Wrap_Item.paa); // Change
+        editorPreview = QPATHTOF(ui\AFAK.paa);
+        picture = QPATHTOF(ui\AFAK.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 35;
         };
