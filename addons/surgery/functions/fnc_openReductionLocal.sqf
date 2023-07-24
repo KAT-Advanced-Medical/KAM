@@ -42,4 +42,3 @@ if ((_liveFracture == 2.5) || (_liveFracture == 3.5)) exitWith {
 
 private _output = LLSTRING(fracture_fail);
 [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-

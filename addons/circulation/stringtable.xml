@@ -1242,6 +1242,7 @@
             <Polish>Przypisywanie grupy krwi</Polish>
             <German>Blutgruppen Zugehörigkeit</German>
             <Czech>Přirazení Krevní Skupiny</Czech>
+            <Italian>Assegnazione del gruppo sanguigno</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_DESC">
             <English>Sets how players' blood type is assigned:\nPlayer chosen: Player chooses their own blood type\nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning\nRandom: Blood type is random each respawn\nRandom (on join): Blood type is random, but doesn't change upon respawning\nSteamID: Blood type is decided based on player's steamID\nSteamID (custom list): Blood type is decided based on player's steamID and custom list</English>
@@ -1252,6 +1253,7 @@
             <Polish>Ustala w jaki sposób grupa krwi jest przydzielana: \nWybrana przez gracza: Gracz wybiera samemu grupę krwi. \nWybrana przez gracza (wymuszona): Gracz wybiera samemu grupę krwi, ale nie może jej zmienić. \nLosowo: Grupa krwi jest losowana przy każdym odrodzeniu. \nLosowo (przy dołączeniu): Grupa krwi jest losowana, ale nie zmieniana przy odrodzeniu. \nSteamID: Grupa krwi jest wybierana na podstawie steamID gracza. \nSteamID (llista): Grupa krwi jest wybierana na podstawie steamID gracza oraz listy.</Polish>
             <German>Legt fest, wie die Blutgruppe des Spielers zugewiesen wird:\nSpieler gewählt: Der Spieler wählt seine eigene Blutgruppe\nSpieler gewählt (erzwungen): Der Spieler wählt seine eigene Blutgruppe, aber sie ändert sich beim Respawn nicht\nZufällig: Die Blutgruppe ist bei jedem Respawn zufällig \nZufällig (beim Beitritt): Die Blutgruppe ist zufällig, ändert sich aber beim Respawn nicht\nSteamID: Die Blutgruppe wird basierend auf der SteamID des Spielers festgelegt\nSteamID (benutzerdefinierte Liste): Die Blutgruppe wird basierend auf der SteamID und der benutzerdefinierten Liste des Spielers festgelegt</German>
             <Czech>Nastavuje, jak se hráčům přiřadí Krevní Skupina:n\Vybráno hráčem: Hráč si sám zvolí svou Krevní Skupinu\nVybráno hráčem (vynuceno): Hráč si sám zvolí svou krevní skupinu, která se při respawnutí nemění\nNáhodně: Krevní Skupina se přiřadí náhodně při každém respawnu\nNáhodně (při připojení): Krevní Skupina se přiřadí náhodně, ale nemění se při respawnu\nSteamID: Krevní Skupina se přiřadí na základě hráčovo SteamID\nSteamID (vlastní seznam): Krevní Skupina se přiřadí na základě hráčovo SteamID a vlastního seznamu</Czech>
+            <Italian>Imposta la modalità di assegnazione del gruppo sanguigno dei giocatori:\nGiocatore scelto: il giocatore sceglie il proprio gruppo sanguigno\nGiocatore scelto (obbligato): il giocatore sceglie il proprio gruppo sanguigno, ma non cambia al momento del respawn\nCasuale: il gruppo sanguigno è casuale a ogni respawn \nCasuale (all'accesso): il gruppo sanguigno è casuale, ma non cambia al momento del respawn\nSteamID: il gruppo sanguigno viene deciso in base allo SteamID del giocatore\nSteamID (elenco personalizzato): il gruppo sanguigno viene deciso in base allo SteamID del giocatore e all'elenco personalizzato</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player">
             <English>Player chosen</English>
@@ -1262,6 +1264,7 @@
             <Polish>Wybrana przez gracza</Polish>
             <German>Spieler gewählt</German>
             <Czech>Vybráno hráčem</Czech>
+            <Italian>Giocatore scelto</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player_forced">
             <English>Player chosen (forced)</English>
@@ -1272,6 +1275,7 @@
             <Polish>Wybrana przez gracza (wymuszona)</Polish>
             <German>Spieler gewählt (erzwungen)</German>
             <Czech>Vybráno hráčem (vynuceno)</Czech>
+            <Italian>Giocatore scelto (obbligato)</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random">
             <English>Random</English>
@@ -1282,6 +1286,7 @@
             <Polish>Losowo</Polish>
             <German>Zufällig</German>
             <Czech>Náhodně</Czech>
+            <Italian>Casuale</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random_onJoin">
             <English>Random (on join)</English>
@@ -1292,6 +1297,7 @@
             <Polish>Losowa (przy dołączeniu)</Polish>
             <German>Zufällig (beim Beitritt)</German>
             <Czech>Náhodně (při připojení)</Czech>
+            <Italian>Casuale (all'accesso)</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid">
             <English>SteamID</English>
@@ -1302,6 +1308,7 @@
             <Polish>SteamID</Polish>
             <German>SteamID</German>
             <Czech>SteamID</Czech>
+            <Italian>SteamID</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid_custom">
             <English>SteamID (custom list)</English>
@@ -1312,6 +1319,7 @@
             <Polish>SteamID (lista)</Polish>
             <German>SteamID (benutzerdefinierte Liste)</German>
             <Czech>SteamID (vlastní seznam)</Czech>
+            <Italian>SteamID (elenco personalizzato)</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted">
             <English>Weighted Randomizer</English>
@@ -1322,6 +1330,7 @@
             <Polish>Losowanie ważone</Polish>
             <German>Blutgruppen seltenheits Randomizer</German>
             <Czech>Vážený Randomizér</Czech>
+            <Italian>Randomizzatore ponderato</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted_DESC">
             <English>Sets if random blood type given will be weighted according to blood type commonness</English>
@@ -1332,6 +1341,7 @@
             <Polish>Ustala czy losowa grupa krwi będzie losowana przy użyciu ważonych szans, zgodnych z powszechnością danych grup krwi</Polish>
             <German>Legt fest, ob zufällige Blutgruppen, die vergeben werden, unter Einfluss der Seltenheit von bestimmten Blutgruppen stehen sollen.</German>
             <Czech>Nastavuje, zda náhodně přiřazená krevní skupina bude vážena podle běžnosti krevních skupiny</Czech>
+            <Italian>Imposta se il gruppo sanguigno casuale dato sarà ponderato in base alla comunanza del gruppo sanguigno</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player">
             <English>Blood group</English>
@@ -1358,6 +1368,7 @@
             <Polish>Lista grup krwi</Polish>
             <German>Benutzerdefinierte Blutgruppenliste</German>
             <Czech>Vlastní Seznam Krevních Skupin</Czech>
+            <Italian>Elenco personalizzato dei gruppi sanguigni</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list_DESC">
             <English>Sets blood types that will be assigned to players based on their SteamID\nBlood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
@@ -1368,6 +1379,7 @@
             <Polish>Określa listę grup krwi, które na podstawie SteamID zostaną przydzielone do graczy. \nGrupy krwi są rozdzielone przy użyciu przecinka (","), lista powinna zawierać w sumie 10 zdefiniowanych elementów</Polish>
             <German>Legt Blutgruppen fest, die Spielern basierend auf ihrer SteamID zugewiesen werden\nBlutgruppen werden durch ein Komma (",") getrennt, die Liste sollte insgesamt 10 Blutgruppen enthalten</German>
             <Czech>Nastavuje krevní skupiny které budou přiřazeny hráčům podle jejich SteamID\nKrevní Skupiny jsou oddělené čárkou (","), seznam by měl obsahovat celkem 10 Krevních Skupin</Czech>
+            <Italian>Imposta i gruppi sanguigni che verranno assegnati ai giocatori in base al loro SteamID\nI gruppi sanguigni sono separati da una virgola (","), l'elenco deve contenere un totale di 10 gruppi sanguigni</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -1602,6 +1614,7 @@
             <Japanese>AED-Xモニターの取り付けにかかる時間</Japanese>
             <German>Erforderliche Zeit zum Anbringen des AED-X-Monitors</German>
             <Czech>Čas potřebný k připojení AED-X </Czech>
+            <Italian>Tempo necessario per collegare il monitor AED-X</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_DetachTime">
             <English>Time required to detach AED-X monitor</English>
@@ -1612,6 +1625,7 @@
             <Japanese>AED-Xモニターの取り外しにかかる時間</Japanese>
             <German>Erforderliche Zeit zum Entfernen des AED-X-Monitors</German>
             <Czech>Čas potřebný k odpojení AED-X</Czech>
+            <Italian>Tempo necessario per staccare il monitor AED-X</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_DISTANCELIMIT_AED_X">
             <English>Distance limit for AED-X in meters</English>
@@ -2068,6 +2082,7 @@
             <Japanese>AED-Xモニターの心拍停止時ビープ音の種類</Japanese>
             <German>AED-X Monitor kein Herzfrequenz-Pieptyp</German>
             <Czech>Typ zvukového upozornění AED-X na nulovou tepovou frekvenci</Czech>
+            <Italian>Tipo di beep no battito cardiaco nel monitor AED-X</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Continous">
             <English>Continous tone</English>
@@ -2078,6 +2093,7 @@
             <Japanese>連続音</Japanese>
             <German>Dauerton</German>
             <Czech>Nepřetržitý tón</Czech>
+            <Italian>Tono continuo</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_Monitor_NoHeartRate_Alternating">
             <English>Alternating tone</English>
@@ -2088,6 +2104,7 @@
             <Japanese>交互音</Japanese>
             <German>Alternativer Ton</German>
             <Czech>Střídavý tón</Czech>
+            <Italian>Tono alternato</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
@@ -2096,6 +2113,8 @@
             <Korean>X-시리즈 AED의 SpO2 알람 임계값</Korean>
             <Japanese>AED-XのSpO2警告音のしきい値</Japanese>
             <French>Seuil d'alarme de SpO2 de l'AED-X</French>
+            <Italian>Soglia di allarme della SpO2 del AED-X</Italian>
+            <Spanish>Umbral de alarma de SpO2 del AED-X</Spanish>
         </Key>
     </Package>
 </Project>
