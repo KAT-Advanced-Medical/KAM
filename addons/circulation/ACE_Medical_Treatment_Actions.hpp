@@ -3,7 +3,15 @@ class ACE_Medical_Treatment_Actions {
     class Morphine;
     class CheckPulse;
     class CPR {
+        displayName = "Begin CPR";//CSTRING(DogTag);
+        treatmentTime = 0.01;
+        callbackStart = "";
+        callbackProgress = "";
+        callbackFailure = "";
+        callbackSuccess = QFUNC(CPRStart);
         condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
     class CheckDogtags: CheckPulse {
         displayName = CSTRING(DogTag);

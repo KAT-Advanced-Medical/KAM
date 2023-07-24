@@ -84,7 +84,6 @@ private _fnc_advRhythm = {
 
 switch (_reviveObject) do {
     case "CPR": {
-        [_patient, "activity", ACELSTRING(medical_treatment,Activity_CPR), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
         if (GVAR(enable_CPR_Chances)) then {
             switch (_medic getVariable [QACEGVAR(medical,medicClass),0]) do {
                 case 0: {

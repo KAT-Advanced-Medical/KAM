@@ -13,6 +13,7 @@ PREP(canDraw);
 PREP(compatible);
 PREP(cprLocal);
 PREP(cprSuccess);
+PREP(CPRStart);
 PREP(Defibrillator_AttachPads);
 PREP(Defibrillator_CheckCondition);
 PREP(AEDX_ConnectVitalsMonitor);

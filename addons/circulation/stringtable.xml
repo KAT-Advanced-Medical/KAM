@@ -1934,5 +1934,8 @@
             <Italian>Soglia di allarme della SpO2 del AED-X</Italian>
             <Spanish>Umbral de alarma de SpO2 del AED-X</Spanish>
         </Key>
+        <Key ID="STR_KAT_Circulation_Activity_CPR">
+            <English>%1 performed CPR (%2)</English>
+        </Key>
     </Package>
 </Project>
