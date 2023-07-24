@@ -67,17 +67,7 @@ class CfgWeapons
         editorPreview = QPATHTOF(ui\IFAK.paa);
         picture = QPATHTOF(ui\IFAK.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 25;
-        };
-    };
-
-    class kat_MFAK: kat_IFAK {
-        displayName = CSTRING(MFAK_Display);
-        descriptionShort = CSTRING(MFAK_DESC);
-        editorPreview = QPATHTOF(ui\MFAK.paa);
-        picture = QPATHTOF(ui\MFAK.paa);
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 30;
+            mass = 20;
         };
     };
 
@@ -88,6 +78,16 @@ class CfgWeapons
         picture = QPATHTOF(ui\AFAK.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 35;
+        };
+    };
+
+    class kat_MFAK: kat_IFAK {
+        displayName = CSTRING(MFAK_Display);
+        descriptionShort = CSTRING(MFAK_DESC);
+        editorPreview = QPATHTOF(ui\MFAK.paa);
+        picture = QPATHTOF(ui\MFAK.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 30;
         };
     };
 };

@@ -163,7 +163,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_FirstSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    [1, 50, 4, 0],
+    [1, 20, 2, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -183,7 +183,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_SecondSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    [1, 50, 10, 0],
+    [1, 20, 10, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -203,7 +203,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_ThirdSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    [1, 50, 10, 0],
+    [1, 20, 5, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -213,7 +213,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    "ACE_elasticBandage",
+    "kat_chestSeal",
     1
 ] call CBA_Settings_fnc_init;
 
@@ -223,7 +223,167 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_FourthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    [1, 50, 10, 0],
+    [1, 20, 1, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//AFAK First Slot Item
+[
+    QGVAR(AFAKFirstSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_FirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "ACE_tourniquet",
+    1
+] call CBA_Settings_fnc_init;
+
+//AFAK First Slot Amount
+[
+    QGVAR(AFAKFirstSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_FirstSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [1, 30, 2, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//AFAK Second Slot Item
+[
+    QGVAR(AFAKSecondSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "ACE_packingBandage",
+    1
+] call CBA_Settings_fnc_init;
+
+//AFAK Second Slot Amount
+[
+    QGVAR(AFAKSecondSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_SecondSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [1, 30, 10, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//AFAK Third Slot Item
+[
+    QGVAR(AFAKThirdtSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "ACE_quikclot",
+    1
+] call CBA_Settings_fnc_init;
+
+//AFAK Third Slot Amount
+[
+    QGVAR(AFAKThirdSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_ThirdSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [1, 30, 10, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//AFAK Fourth Item
+[
+    QGVAR(AFAKFourthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "ACE_elasticBandage",
+    1
+] call CBA_Settings_fnc_init;
+
+//AFAK Fourth Amount
+[
+    QGVAR(AFAKFourthSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_FourthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [1, 30, 10, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//AFAK Fifth Item
+[
+    QGVAR(AFAKFifthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_FifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "kat_chestSeal",
+    1
+] call CBA_Settings_fnc_init;
+
+//AFAK Fifth Amount
+[
+    QGVAR(AFAKFifthSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_FifthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [1, 30, 2, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//AFAK Sixth Item
+[
+    QGVAR(AFAKSixthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "kat_ncdKit",
+    1
+] call CBA_Settings_fnc_init;
+
+//AFAK Sixth Amount
+[
+    QGVAR(AFAKSixthSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_SixthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [1, 30, 4, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//AFAK Seventh Item
+[
+    QGVAR(AFAKSeventhSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_SeventhSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "kat_larynx",
+    1
+] call CBA_Settings_fnc_init;
+
+//AFAK Seventh Amount
+[
+    QGVAR(AFAKSeventhSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_SeventhSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [1, 30, 4, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//AFAK Eighth Item
+[
+    QGVAR(AFAKEighthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_EighthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "ACE_morphine",
+    1
+] call CBA_Settings_fnc_init;
+
+//AFAK Eighth Amount
+[
+    QGVAR(AFAKEighthSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_EighthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [1, 30, 4, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -243,7 +403,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_FirstSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    [1, 50, 4, 0],
+    [1, 50, 8, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -283,7 +443,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_ThirdSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    [1, 50, 10, 0],
+    [1, 50, 15, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -293,7 +453,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "ACE_splint",
+    "kat_chestSeal",
     1
 ] call CBA_Settings_fnc_init;
 
@@ -313,7 +473,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "ACE_morphine",
+    "kat_aatKit",
     1
 ] call CBA_Settings_fnc_init;
 
@@ -333,7 +493,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "kat_Painkiller",
+    "kat_larynx",
     1
 ] call CBA_Settings_fnc_init;
 
@@ -343,166 +503,86 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_SixthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    [1, 50, 1, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-//AFAK First Slot Item
-[
-    QGVAR(AFAKFirstSlotItem),
-    "EDITBOX",
-    [LLSTRING(SETTING_FirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "ACE_tourniquet",
-    1
-] call CBA_Settings_fnc_init;
-
-//AFAK First Slot Amount
-[
-    QGVAR(AFAKFirstSlotAmount),
-    "SLIDER",
-    [LLSTRING(SETTING_FirstSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     [1, 50, 8, 0],
     true
 ] call CBA_Settings_fnc_init;
 
-//AFAK Second Slot Item
+//MFAK Seventh Item
 [
-    QGVAR(AFAKSecondSlotItem),
+    QGVAR(MFAKSeventhSlotItem),
     "EDITBOX",
-    [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "ACE_elasticBandage",
-    1
-] call CBA_Settings_fnc_init;
-
-//AFAK Second Slot Amount
-[
-    QGVAR(AFAKSecondSlotAmount),
-    "SLIDER",
-    [LLSTRING(SETTING_SecondSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 50, 20, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-//AFAK Third Slot Item
-[
-    QGVAR(AFAKThirdtSlotItem),
-    "EDITBOX",
-    [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "kat_chestSeal",
-    1
-] call CBA_Settings_fnc_init;
-
-//AFAK Third Slot Amount
-[
-    QGVAR(AFAKThirdSlotAmount),
-    "SLIDER",
-    [LLSTRING(SETTING_ThirdSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 50, 5, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-//AFAK Fourth Item
-[
-    QGVAR(AFAKFourthSlotItem),
-    "EDITBOX",
-    [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "kat_aatKit",
-    1
-] call CBA_Settings_fnc_init;
-
-//AFAK Fourth Amount
-[
-    QGVAR(AFAKFourthSlotAmount),
-    "SLIDER",
-    [LLSTRING(SETTING_FourthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 50, 3, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-//AFAK Fifth Item
-[
-    QGVAR(AFAKFifthSlotItem),
-    "EDITBOX",
-    [LLSTRING(SETTING_FifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "kat_larynx",
-    1
-] call CBA_Settings_fnc_init;
-
-//AFAK Fifth Amount
-[
-    QGVAR(AFAKFifthSlotAmount),
-    "SLIDER",
-    [LLSTRING(SETTING_FifthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 50, 8, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-//AFAK Sixth Item
-[
-    QGVAR(AFAKSixthSlotItem),
-    "EDITBOX",
-    [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [LLSTRING(SETTING_SeventhSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
     "ACE_morphine",
     1
 ] call CBA_Settings_fnc_init;
 
-//AFAK Sixth Amount
+//MFAK Seventh Amount
 [
-    QGVAR(AFAKSixthSlotAmount),
+    QGVAR(MFAKSeventhSlotAmount),
     "SLIDER",
-    [LLSTRING(SETTING_SixthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 50, 8, 0],
+    [LLSTRING(SETTING_SeventhSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    [1, 50, 4, 0],
     true
 ] call CBA_Settings_fnc_init;
 
-//AFAK Seventh Item
+//MFAK Eighth Item
 [
-    QGVAR(AFAKSeventhSlotItem),
+    QGVAR(MFAKEighthSlotItem),
     "EDITBOX",
-    [LLSTRING(SETTING_SeventhSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [LLSTRING(SETTING_EighthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
     "ACE_epinephrine",
     1
 ] call CBA_Settings_fnc_init;
 
-//AFAK Seventh Amount
+//MFAK Eighth Amount
 [
-    QGVAR(AFAKSeventhSlotAmount),
+    QGVAR(MFAKEighthSlotAmount),
     "SLIDER",
-    [LLSTRING(SETTING_SeventhSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 50, 8, 0],
+    [LLSTRING(SETTING_EighthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    [1, 50, 4, 0],
     true
 ] call CBA_Settings_fnc_init;
 
-//AFAK Eighth Item
+//MFAK Ninth Item
 [
-    QGVAR(AFAKEighthSlotItem),
+    QGVAR(MFAKNinthSlotItem),
     "EDITBOX",
-    [LLSTRING(SETTING_EighthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [LLSTRING(SETTING_NinthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    "kat_Painkiller",
+    1
+] call CBA_Settings_fnc_init;
+
+//MFAK Ninth Amount
+[
+    QGVAR(MFAKNinthSlotAmount),
+    "SLIDER",
+    [LLSTRING(SETTING_NinthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    [1, 50, 3, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//MFAK Tenth Item
+[
+    QGVAR(MFAKTenthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_TenthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
     "kat_pocketBVM",
     1
 ] call CBA_Settings_fnc_init;
 
-//AFAK Eighth Amount
+//MFAK Tenth Amount
 [
-    QGVAR(AFAKEighthSlotAmount),
+    QGVAR(MFAKTenthSlotAmount),
     "SLIDER",
-    [LLSTRING(SETTING_EighthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [LLSTRING(SETTING_TenthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
     [1, 50, 1, 0],
     true
 ] call CBA_Settings_fnc_init;

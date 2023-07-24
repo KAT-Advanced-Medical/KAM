@@ -864,11 +864,11 @@
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_IFAK">
             <English>(IFAK) Industrial First Aid Kit</English>
-            <German>(IEHK) Industrie Erste Hilfe Kit</German>
+            <German>(IEHK) Individuelles Erste Hilfe Kit</German>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_MFAK">
-            <English>(MFAK) Military First Aid Kit</English>
-            <German>(MEHK) Militär Erste Hilfe Kit</German>
+            <English>(MFAK) Multiple First Aid Kit</English>
+            <German>(MEHK) Mehrfaches Erste Hilfe Kit</German>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_AFAK">
             <English>(AFAK) Advanced First Aid Kit</English>
@@ -892,7 +892,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Item">
             <English>Second Slot Item</English>
-            <German>Zweite Tasche Anzahl</German>
+            <German>Zweite Tasche Gegenstand</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Amount">
             <English>Second Slot Amount</English>
@@ -900,7 +900,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Item">
             <English>Third Slot Item</English>
-            <German>Dritte Tasche Anzahl</German>
+            <German>Dritte Tasche Gegenstand</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Amount">a
             <English>Third Slot Amount</English>
@@ -908,7 +908,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Item">
             <English>Fourth Slot Item</English>
-            <German>Vierte Tasche Anzahl</German>
+            <German>Vierte Tasche Gegenstand</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Amount">
             <English>Fourth Slot Amount</English>
@@ -916,7 +916,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FifthSlot_Item">
             <English>Fifth Slot Amount</English>
-            <German>Fünfte Tasche Anzahl</German>
+            <German>Fünfte Tasche Gegenstand</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FifthSlot_Amount">
             <English>Fifth Slot Amount</English>
@@ -924,7 +924,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SixthSlot_Item">
             <English>Sixth Slot Item</English>
-            <German>Sechste Tasche Anzahl</German>
+            <German>Sechste Tasche Gegenstand</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SixthSlot_Amount">
             <English>Sixth Slot Amount</English>
@@ -932,7 +932,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SeventhSlot_Item">
             <English>Seventh Slot Item</English>
-            <German>Siebte Tasche Anzahl</German>
+            <German>Siebte Tasche Gegenstand</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SeventhSlot_Amount">
             <English>Seventh Slot Amount</English>
@@ -940,23 +940,39 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EighthSlot_Item">
             <English>Eighth Slot Item</English>
-            <German>Achte Tasche Anzahl</German>
+            <German>Achte Tasche Gegenstand</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EighthSlot_Amount">
             <English>Eighth Slot Amount</English>
             <German>Achte Tasche Anzahl</German>
         </Key>
+        <Key ID="STR_KAT_Misc_SETTING_NinthSlot_Item">
+            <English>Ninth Slot Item</English>
+            <German>Neunte Tasche Gegenstand</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_NinthSlot_Amount">
+            <English>Ninth Slot Amount</English>
+            <German>Neunte Tasche Anzahl</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_TenthSlot_Item">
+            <English>Tenth Slot Item</English>
+            <German>Zehnte Tasche Gegenstand</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_TenthSlot_Amount">
+            <English>Tenth Slot Amount</English>
+            <German>Achte Tasche Anzahl</German>
+        </Key>
         <Key ID="STR_KAT_Misc_IFAK_Display">
-            <English>Industrial First Aid Kit</English>
-            <German>Industrie Erste Hilfe Kit</German>
+            <English>Individuell First Aid Kit</English>
+            <German>Individuelles Erste Hilfe Kit</German>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_DESC">
             <English>The IFAK can be unpacked to provide usefull medical items</English>
             <German>Das IEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Display">
-            <English>Military First Aid Kit</English>
-            <German>Militär Erste Hilfe Kit</German>
+            <English>Multiple First Aid Kit</English>
+            <German>Mehrfaches Erste Hilfe Kit</German>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_DESC">
             <English>The MFAK can be unpacked to provide usefull medical items</English>
