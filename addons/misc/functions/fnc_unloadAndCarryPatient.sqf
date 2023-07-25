@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Blue
- * 
+ * Unload patient from vehicle and carry (skip animation)
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_misc_fnc_unloadAndCarryPatient
+ * [player, cursorTarget] call kat_misc_fnc_unloadAndCarryPatient;
  *
  * Public: No
  */
