@@ -24,20 +24,14 @@ fnc_getFreeSeats = {
     
     // From ace_common_fnc_nearestVehiclesFreeSeat
     private _canSitInCargo = (getNumber (configOf _vehicle >> "ejectDeadCargo")) == 0;
-    
-    private _emptySeats = [];
 
-    private _seats = fullCrew [_vehicle, "", true];
-
-    {
+    private _seatIndex = (fullCrew [_vehicle, "", true]) findIf {
         _x params ["_body", "_role", "_cargoIndex"];
 
-        if((isNull _body) && {_role != "DRIVER"} && {_canSitInCargo || {_cargoIndex == -1}}) then {
-            _emptySeats pushBack _cargoIndex;
-        };
-    } forEach _seats;
+        (isNull _body) && {_role != "DRIVER"} && {_canSitInCargo || {_cargoIndex == -1}}
+    };
 
-    _emptySeats;
+    _seatIndex;
 };
 
 private _action = [format ["KAT_MainActions_%1", _type],
@@ -52,7 +46,7 @@ ACELLSTRING(Interaction,MainAction),
         ACELLSTRING(medical_gui,LoadPatient),
         QACEPATHTOF(medical_gui,ui\cross.paa),
         {[((_this select 2) select 1), (((_this select 2) select 1) getVariable [QACEGVAR(dragging,carriedObject), objNull]), ((_this select 2) select 0)] call ACEFUNC(medical_treatment,loadUnit)},
-        {!(([((_this select 2) select 0)] call fnc_getFreeSeats) isEqualTo [])},
+        {([((_this select 2) select 0)] call fnc_getFreeSeats) != -1},
         {},
         [(_this select 0), (_this select 1)]
         ] call ACEFUNC(interact_menu,createAction),
