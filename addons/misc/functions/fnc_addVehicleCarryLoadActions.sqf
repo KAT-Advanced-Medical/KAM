@@ -40,18 +40,6 @@ fnc_getFreeSeats = {
     _emptySeats;
 };
 
-fnc_loadPatient = {
-    params ["_vehicle", "_medic", "_patient"];
-
-    [_medic, _patient] call ACEFUNC(dragging,dropObject_carry);
-
-    [{
-        params ["_vehicle", "_medic", "_patient"];
-
-        [_medic, _patient, _vehicle, ([_vehicle] call fnc_getFreeSeats), true] call ACEFUNC(common,loadPerson);
-    }, [_vehicle, _medic, _patient], 0.5] call CBA_fnc_waitAndExecute;
-};
-
 private _action = [format ["KAT_MainActions_%1", _type],
 ACELLSTRING(Interaction,MainAction),
 "",
@@ -62,7 +50,7 @@ ACELLSTRING(Interaction,MainAction),
     _loadAction pushBack [
         [format ["KAT_LoadCarriedPatient"],
         "Load Carried Patient",
-        "",
+        QACEPATHTOF(medical_gui,ui\cross.paa),
         {[((_this select 2) select 1), (((_this select 2) select 1) getVariable [QACEGVAR(dragging,carriedObject), objNull]), ((_this select 2) select 0)] call ACEFUNC(medical_treatment,loadUnit)},
         {!(([((_this select 2) select 0)] call fnc_getFreeSeats) isEqualTo [])},
         {},

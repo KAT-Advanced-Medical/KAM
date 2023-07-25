@@ -74,6 +74,9 @@
 #define ACELLSTRING(module,string)  localize ACELSTRING(module,string)
 #define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))
 
+#define ACEPATHTOF(component,path) \z\ace\addons\component\path
+#define QACEPATHTOF(component,path) QUOTE(ACEPATHTOF(component,path))
+
 // item types
 #define TYPE_DEFAULT 0
 #define TYPE_MUZZLE 101

@@ -508,6 +508,31 @@ class CfgVehicles {
                     statement = "[_player, _target, 'leg_r', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_treatment";
                 };
             };
+            class ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = "Unload And Carry Patient";//CSTRING(UnloadPatient);
+                    condition = QUOTE(_target getVariable [ARR_2('ACE_isUnconscious', false)] && {!(isNull (objectParent _target))} && {isNull (objectParent _player)});
+                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
+                    statement = QUOTE([ARR_2(_player, _target)] call FUNC(unloadAndCarryPatient));
+                    icon = QACEPATHTOF(dragging,UI\icons\person_carry.paa);
+                };
+            };
+        };
+    };
+
+    class LandVehicle;
+    class Car: LandVehicle {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = "Unload And Carry";//CSTRING(UnloadPatient);
+                    condition = QUOTE(alive _target);
+                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
+                    statement = "";
+                    insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
+            };
         };
     };
 };
