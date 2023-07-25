@@ -2114,6 +2114,7 @@
             <Japanese>AED-XのSpO2警告音のしきい値</Japanese>
             <French>Seuil d'alarme de SpO2 de l'AED-X</French>
             <Italian>Soglia di allarme della SpO2 del AED-X</Italian>
+            <Spanish>Umbral de alarma de SpO2 del AED-X</Spanish>
         </Key>
     </Package>
 </Project>

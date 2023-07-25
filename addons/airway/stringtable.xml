@@ -1283,6 +1283,7 @@
             <French>Triage automatique des voies aériennes</French>
             <Korean>기도 확인으로 부상자 자동 분류</Korean>
             <Italian>Triage automatico delle vie aeree</Italian>
+            <Spanish>Triaje automático de la vía aérea</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_AutoTriage_Desc">
             <English>Sets if checking airways can override current triage level</English>
@@ -1291,6 +1292,7 @@
             <French>Définit si l'inspection des voies aériennes modifie le niveau actuel de triage</French>
             <Korean>기도 확인이 현재 부상자 분류 레벨을 덮어 쓸지의 여부를 결정합니다.</Korean>
             <Italian>Imposta se il controllo delle vie aeree può sovrascrivere il livello di triage corrente</Italian>
+            <Spanish>Establece si la comprobación de las vías respiratorias puede anular el nivel de triaje actual.</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING">
             <English>Block head turning</English>
@@ -1300,6 +1302,7 @@
             <French>Bloquer la rotation de la tête</French>
             <German>Verhindert das Drehen des Kopfes</German>
             <Italian>Blocca la rotazione della testa</Italian>
+            <Spanish>Bloquear la rotación de la cabeza</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING_DESC">
             <English>Blocks head turning if patient has Guedel Tube inserted</English>
@@ -1309,6 +1312,7 @@
             <French>Bloque la rotation de la tête si le patient a une canule de Guedel insérée</French>
             <German>Verhindert das zur Seite Drehen des Kopfes während ein Guedetubus eingeführt ist</German>
             <Italian>Blocca la rotazione della testa se il paziente ha la canula di Guedel inserita</Italian>
+            <Spanish>Bloquea el giro de la cabeza si el paciente tiene insertado un tubo de Guedel.</Spanish>
         </Key>
     </Package>
 </Project>
