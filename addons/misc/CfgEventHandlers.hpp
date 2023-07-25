@@ -40,3 +40,11 @@ class Extended_Respawn_EventHandlers {
         };
     };
 };
+
+class Extended_InitPost_EventHandlers {
+    class LandVehicle {
+        class ADDON {
+            init = QUOTE(_this call FUNC(addVehicleCarryLoadActions));
+        };
+    };
+};
