@@ -510,7 +510,7 @@ class CfgVehicles {
             };
             class ACE_MainActions {
                 class KAT_UnloadAndCarryPatient {
-                    displayName = "Unload And Carry Patient";//CSTRING(UnloadPatient);
+                    displayName = CSTRING(CarryPatient);
                     condition = QUOTE(_target getVariable [ARR_2('ACE_isUnconscious', false)] && {!(isNull (objectParent _target))} && {isNull (objectParent _player)});
                     exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
                     statement = QUOTE([ARR_2(_player, _target)] call FUNC(unloadAndCarryPatient));
@@ -525,7 +525,7 @@ class CfgVehicles {
         class ACE_Actions {
             class ACE_MainActions {
                 class KAT_UnloadAndCarryPatient {
-                    displayName = "Unload And Carry";//CSTRING(UnloadPatient);
+                    displayName = CSTRING(CarryPatient);
                     condition = QUOTE(alive _target);
                     exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
                     statement = "";

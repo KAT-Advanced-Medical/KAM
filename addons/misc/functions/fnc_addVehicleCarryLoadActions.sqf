@@ -48,13 +48,13 @@ ACELLSTRING(Interaction,MainAction),
 {
     private _loadAction = [];
     _loadAction pushBack [
-        [format ["KAT_LoadCarriedPatient"],
-        "Load Carried Patient",
+        [format ["KAT_LoadCarriedPatient_%1", _type],
+        ACELLSTRING(medical_gui,LoadPatient),
         QACEPATHTOF(medical_gui,ui\cross.paa),
         {[((_this select 2) select 1), (((_this select 2) select 1) getVariable [QACEGVAR(dragging,carriedObject), objNull]), ((_this select 2) select 0)] call ACEFUNC(medical_treatment,loadUnit)},
         {!(([((_this select 2) select 0)] call fnc_getFreeSeats) isEqualTo [])},
         {},
-        [(_this select 0),(_this select 1)]
+        [(_this select 0), (_this select 1)]
         ] call ACEFUNC(interact_menu,createAction),
         [],
         (_this select 1)
