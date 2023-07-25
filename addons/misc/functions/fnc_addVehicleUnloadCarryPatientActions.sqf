@@ -28,7 +28,7 @@ private _actions = [];
     if(IS_UNCONSCIOUS(_unit)) then {
         _actions pushBack [[format ["KAT_UnloadAndCarryPatient_%1", _unit],
         [_unit, true] call ACEFUNC(common,getName),
-        QACEPATHTOF(dragging,UI\icons\person_carry.paa),
+        "",
         {
             params ["_vehicle", "_medic", "_args"];
             _args params ["_patient"];
