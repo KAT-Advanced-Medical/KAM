@@ -29,8 +29,8 @@ switch (_AEDOrigin) do {
         _condition = !(nearestObjects [position _patient, ["kat_AEDItem"], GVAR(Defibrillator_DistanceLimit)] findIf {typeOf _x isEqualTo "kat_X_AEDItem"} isEqualTo -1);
     };
     case 2: {
-        if (vehicle _patient != _patient) then {
-            _condition = !((itemCargo vehicle _patient) findIf {_x isEqualTo "kat_X_AED"} isEqualTo -1);
+        if !(isNull objectParent _patient) then {
+            _condition = !((itemCargo objectParent _patient) findIf {_x isEqualTo "kat_X_AED"} isEqualTo -1);
         };
     };
     default {

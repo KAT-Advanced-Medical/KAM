@@ -51,13 +51,13 @@ switch (_source) do {
         }] call CBA_fnc_waitUntilAndExecute;
     };
     case 2: { // Vehicle
-        _provider = vehicle _patient;
+        _provider = objectParent _patient;
         _soundSource = _patient;
 
         [{ // Disconnect monitoring if patient exits vehicle
             params ["_medic", "_patient", "_provider"];
         
-            !((vehicle _patient) isEqualTo _provider);
+            !((objectParent _patient) isEqualTo _provider);
         }, {
             params ["_medic", "_patient", "_provider"];
 

@@ -18,9 +18,9 @@
 
 params ["_patient", "_AEDClassname"];
 
-private _vehicle = vehicle _patient;
+private _vehicle = objectParent _patient;
 
-if (_vehicle == _patient) exitWith {false};
+if (isNull _vehicle) exitWith {false};
 
 if((itemCargo _vehicle) findIf {_x isEqualTo _AEDClassname} isEqualTo -1) exitWith {false};
 
