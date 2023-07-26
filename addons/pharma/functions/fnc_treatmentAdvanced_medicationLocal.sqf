@@ -54,7 +54,7 @@ if (HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) exitWith {
     TRACE_1("unit has tourniquets blocking blood flow on injection site",_tourniquets);
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname];
-    systemChat format ["%1",_occludedMedications];
+    
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };
 
