@@ -46,15 +46,20 @@ if (!GVAR(advancedMedication)) exitWith {
 };
 TRACE_1("Running treatmentMedicationLocal with Advanced configuration for",_patient);
 
-
-// Handle tourniquet on body part blocking blood flow at injection site
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 
+// Handle IV blockage
+if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 3) exitWith {
+    private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
+    _occludedMedications pushBack [_partIndex, _classname];
+    _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
+};
+
+// Handle tourniquet on body part blocking blood flow at injection site
 if (HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) exitWith {
     TRACE_1("unit has tourniquets blocking blood flow on injection site",_tourniquets);
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname];
-    
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
 };
 
@@ -87,3 +92,32 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 
 //Change Alpha Factor
 [_patient, _alphaFactor] call FUNC(alphaAction);
+
+switch (_className) do {
+    case "Lorazepam": {
+        [QGVAR(lorazepamLocal), _patient, _patient] call CBA_fnc_targetEvent;
+    };
+    case "Fentanyl": {
+        [QGVAR(fentanylPP), _patient, _patient] call CBA_fnc_targetEvent;
+    };
+    case "Ketamine": {
+        [QGVAR(ketaminePP), _patient, _patient] call CBA_fnc_targetEvent;
+    };
+    case "EACA": {
+        [QGVAR(eacaLocal), [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+    };
+    case "TXA": {
+        [QGVAR(txaLocal), [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+    };
+    case "Atropine": {
+        [QGVAR(atropineLocal), _patient, _patient] call CBA_fnc_targetEvent;
+    };
+    case "Amiodarone": {
+        [QGVAR(amiodaroneLocal), _patient, _patient] call CBA_fnc_targetEvent;
+    };
+    case "Flumazenil": {
+        [QGVAR(flumazenilLocal), _patient, _patient] call CBA_fnc_targetEvent;
+    };
+    default {};
+};
+

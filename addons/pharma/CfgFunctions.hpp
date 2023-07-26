@@ -20,6 +20,9 @@ class CfgFunctions {
             class medicationLocal {
                 file = QPATHTOF(functions\fnc_treatmentAdvanced_medicationLocal.sqf);
             };
+            class tourniquetRemove {
+                file = QPATHTOF(functions\fnc_tourniquetRemove.sqf);
+            };
         };
     };
 };
