@@ -8,25 +8,34 @@
  * 1: Patient <OBJECT>
  * 2: Defibrillator Source Type <INT>
  * 3: Defibrillator Classname <STRING>
+ * 4: Extra Arguments <ARRAY>
+ *   0: Placed AED <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject, 1, 'kat_AEDItem'] call kat_circulation_fnc_Defibrillator_AttachPads
+ * [player, cursorObject, 1, 'kat_AEDItem'] call kat_circulation_fnc_Defibrillator_AttachPads;
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_source", "_defibClassname"];
+params ["_medic", "_patient", "_source", "_defibClassname", ["_extraArgs",[]]];
+_extraArgs params [["_placedAED",objNull]];
 
 private _provider = objNull;
 private _soundSource = _medic;
 
 switch (_source) do {
     case 1: { // Placed
-        private _nearObjects = nearestObjects [position _patient, ["kat_AEDItem"], GVAR(Defibrillator_DistanceLimit)];
-        private _placedDefibrillator = _nearObjects select (_nearObjects findIf {typeOf _x isEqualTo _defibClassname});
+        private _placedDefibrillator = objNull;
+
+        if (_placedAED isEqualTo objNull) then {
+            private _nearObjects = nearestObjects [position _patient, ["kat_AEDItem"], GVAR(Defibrillator_DistanceLimit)];
+            _placedDefibrillator = _nearObjects select (_nearObjects findIf {typeOf _x isEqualTo _defibClassname});
+        } else {
+            _placedDefibrillator = _placedAED;
+        };
 
         _provider = _placedDefibrillator;
         _soundSource = _placedDefibrillator;

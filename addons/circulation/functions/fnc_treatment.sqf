@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Glowbal, KoffeinFlummi, mharis001
+ * Modified: Blue
  * Starts the treatment process.
  *
  * Arguments:
@@ -8,6 +9,7 @@
  * 1: Patient <OBJECT>
  * 2: Body Part <STRING>
  * 3: Treatment <STRING>
+ * 4: Extra Arguments <ARRAY>
  *
  * Return Value:
  * Treatment Started <BOOL>
@@ -18,14 +20,14 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart", "_classname"];
+params ["_medic", "_patient", "_bodyPart", "_classname", ["_extraArgs",[]]];
 
 // Delay by a frame if cursor menu is open to prevent progress bar failing
 if (uiNamespace getVariable [QACEGVAR(interact_menu,cursorMenuOpened), false]) exitWith {
     [ACEFUNC(medical_treatment,treatment), _this] call CBA_fnc_execNextFrame;
 };
 
-if !(_this call ACEFUNC(medical_treatment,canTreat)) exitWith {false};
+if !(_this call FUNC(canTreat)) exitWith {false};
 
 private _config = configFile >> "ace_medical_treatment_actions" >> _classname;
 
@@ -165,13 +167,13 @@ if (_callbackProgress isEqualTo {}) then {
     _callbackProgress = {true};
 };
 
-[_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem] call _callbackStart;
+[_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _extraArgs] call _callbackStart;
 
-["ace_treatmentStarted", [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem]] call CBA_fnc_localEvent;
+["ace_treatmentStarted", [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _extraArgs]] call CBA_fnc_localEvent;
 
 [
     _treatmentTime,
-    [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem],
+    [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _extraArgs],
     ACEFUNC(medical_treatment,treatmentSuccess),
     ACEFUNC(medical_treatment,treatmentFailure),
     getText (_config >> "displayNameProgress"),

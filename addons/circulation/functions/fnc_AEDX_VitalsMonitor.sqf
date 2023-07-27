@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam, modified by YetheSamartaka, Blue
+ * Author: Katalam
+ * Modified: YetheSamartaka, Blue
  * Handle monitoring vitals
  *
  * Arguments:

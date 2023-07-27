@@ -12,7 +12,7 @@
  * ACE actions <ARRAY>
  *
  * Example:
- * [player, cursorObject] call kat_circulation_fnc_addDefibrillatorActions
+ * [player, cursorObject] call kat_circulation_fnc_addDefibrillatorActions;
  *
  * Public: No
  */
@@ -32,7 +32,7 @@ switch (_type) do {
                     params ["_medic", "","_args"];
                     _args params ["_patient","_defibObject"];
 
-                    [_medic, _patient, "body", "AEDXStationPlacePads"] call ACEFUNC(medical_treatment,treatment);
+                    [_medic, _patient, "body", "AEDXStationPlacePads", [_defibObject]] call FUNC(treatment);
                 },
                 {
                     true;
@@ -74,7 +74,7 @@ switch (_type) do {
                     params ["_medic", "","_args"];
                     _args params ["_patient","_defibObject"];
 
-                    [_medic, _patient, "body", "AEDStationPlacePads"] call ACEFUNC(medical_treatment,treatment);
+                    [_medic, _patient, "body", "AEDStationPlacePads", [_defibObject]] call FUNC(treatment);
                 },
                 {
                     true;

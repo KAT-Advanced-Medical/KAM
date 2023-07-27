@@ -76,6 +76,7 @@ class ACE_Medical_Treatment_Actions {
     class AEDShock: CheckPulse {
         displayName = CSTRING(Defibrillator_Action_Shock);
         displayNameProgress = "";
+        allowedSelections[] = {"Body"};
         icon = QPATHTOF(ui\defib.paa);
         category = "advanced";
         items[] = {};
@@ -115,8 +116,8 @@ class ACE_Medical_Treatment_Actions {
     class AEDStationPlacePads: AEDPlacePads {
         displayName = CSTRING(AEDStation_Action_PlacePads);
         items[] = {};
-        condition = QUOTE([ARR_2(_medic, _patient)] call FUNC(DefibrillatorStation_CheckCondition) && !(_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)]));
-        callbackSuccess = QUOTE([ARR_4(_medic, _patient, 1, 'kat_AED')] call FUNC(Defibrillator_AttachPads));
+        condition = QUOTE([ARR_4(_medic, _patient, 'kat_AEDItem', _extraArgs)] call FUNC(DefibrillatorStation_CheckCondition) && !(_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)]));
+        callbackSuccess = QUOTE([ARR_5(_medic, _patient, 1, 'kat_AED', _extraArgs)] call FUNC(Defibrillator_AttachPads));
     };
     class AEDVehiclePlacePads: AEDPlacePads {
         displayName = CSTRING(AEDVehicle_Action_PlacePads);
@@ -148,8 +149,8 @@ class ACE_Medical_Treatment_Actions {
     class AEDXStationPlacePads: AEDXPlacePads {
         displayName = CSTRING(AEDXStation_Action_PlacePads);
         items[] = {};
-        condition = QUOTE([ARR_3(_medic, _patient, 'kat_X_AEDItem')] call FUNC(DefibrillatorStation_CheckCondition) && !(_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)]));
-        callbackSuccess = QUOTE([ARR_4(_medic, _patient, 1, 'kat_X_AED')] call FUNC(Defibrillator_AttachPads));
+        condition = QUOTE([ARR_4(_medic, _patient, 'kat_X_AEDItem', _extraArgs)] call FUNC(DefibrillatorStation_CheckCondition) && !(_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)]));
+        callbackSuccess = QUOTE([ARR_5(_medic, _patient, 1, 'kat_X_AED', _extraArgs)] call FUNC(Defibrillator_AttachPads));
     };
     class AEDXVehiclePlacePads: AEDXPlacePads {
         displayName = CSTRING(AEDXVehicle_Action_PlacePads);
@@ -181,8 +182,8 @@ class ACE_Medical_Treatment_Actions {
     class AEDXStationConnectVitalsMonitor: AEDXConnectVitalsMonitor {
         displayName = CSTRING(AEDXStation_Action_ConnectMonitor);
         items[] = {};
-        condition = QUOTE([ARR_3(_medic, _patient, 1)] call FUNC(AEDX_VitalsMonitor_CheckCondition));
-        callbackSuccess = QUOTE([ARR_3(_medic, _patient, 1)] call FUNC(AEDX_ConnectVitalsMonitor));
+        condition = QUOTE([ARR_4(_medic, _patient, 1, _extraArgs)] call FUNC(AEDX_VitalsMonitor_CheckCondition));
+        callbackSuccess = QUOTE([ARR_4(_medic, _patient, 1, _extraArgs)] call FUNC(AEDX_ConnectVitalsMonitor));
     };
     class AEDXVehicleConnectVitalsMonitor: AEDXConnectVitalsMonitor {
         displayName = CSTRING(AEDXVehicle_Action_ConnectMonitor);

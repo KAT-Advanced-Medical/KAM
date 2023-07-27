@@ -7,25 +7,34 @@
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
  * 2: Source <INT>
+ * 3: Extra Arguments <ARRAY>
+ *   0: Placed AED <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject,  0] call kat_circulation_fnc_AEDX_ConnectVitalsMonitor
+ * [player, cursorObject,  0] call kat_circulation_fnc_AEDX_ConnectVitalsMonitor;
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_source"];
+params ["_medic", "_patient", "_source", ["_extraArgs",[]]];
+_extraArgs params [["_placedAED",objNull]];
 
 private _provider = objNull;
 private _soundSource = _medic;
 
 switch (_source) do {
     case 1: { // Placed
-        private _nearObjects = nearestObjects [position _patient, ["kat_AEDItem"], GVAR(Defibrillator_DistanceLimit)];
-        private _placedDefibrillator = _nearObjects select (_nearObjects findIf {typeOf _x isEqualTo "kat_X_AEDItem"});
+        private _placedDefibrillator = objNull;
+
+        if (_placedAED isEqualTo objNull) then {
+            private _nearObjects = nearestObjects [position _patient, ["kat_AEDItem"], GVAR(Defibrillator_DistanceLimit)];
+            _placedDefibrillator = _nearObjects select (_nearObjects findIf {typeOf _x isEqualTo "kat_X_AEDItem"});
+        } else {
+            _placedDefibrillator = _placedAED;
+        };
 
         _provider = _placedDefibrillator;
         _soundSource = _placedDefibrillator;
