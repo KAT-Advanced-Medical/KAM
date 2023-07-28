@@ -6,27 +6,33 @@
  * Arguments:
  * 0: Player <OBJECT>
  * 1: String
+ * 2: Number
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, "kat_IFAK"] call kat_misc_fnc_unpackFAK;
+ * [player, "kat_IFAK", 0] call kat_misc_fnc_unpackFAK;
  *
  * Public: No
  */
 
-params ["_unit", "_item"];
+params ["_unit", "_item", "_slotsToGive"];
 
 //IFAK
 private _firstSlotItemIFAK = missionNamespace getVariable [QGVAR(IFAKFirstSlotItem), []];
-private _firstSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKFirstSlotAmount), []];
+//private _firstSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKFirstSlotAmount), []];
 private _secondSlotItemIFAK = missionNamespace getVariable [QGVAR(IFAKSecondSlotItem), []];
-private _secondSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKSecondSlotAmount), []];
+//private _secondSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKSecondSlotAmount), []];
 private _thirdSlotItemIFAK = missionNamespace getVariable [QGVAR(IFAKThirdtSlotItem), []];
-private _thirdSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKThirdSlotAmount), []];
+//private _thirdSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKThirdSlotAmount), []];
 private _fourthSlotItemIFAK = missionNamespace getVariable [QGVAR(IFAKFourthSlotItem), []];
-private _fourthSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKFourthSlotAmount), []];
+//private _fourthSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKFourthSlotAmount), []];
+
+// {
+//     _firstSlotItemIFAK set [_forEachIndex, [_x,_firstSlotAmountIFAK]]; 
+// } forEach _firstSlotItemIFAK;
+
 
 //AFAK
 private _firstSlotItemAFAK = missionNamespace getVariable [QGVAR(AFAKFirstSlotItem), []];
@@ -69,51 +75,214 @@ private _tenthSlotItemMFAK = missionNamespace getVariable [QGVAR(MFAKTenthSlotIt
 private _tenthSlotAmountMFAK = missionNamespace getVariable [QGVAR(MFAKTenthSlotAmount), []];
 
 switch (_item) do {
-    case "kat_IFAK": { 
+    case "kat_IFAK": {
+        switch (_slotsToGive) do {
+            case 0: {
 
-        while {_firstSlotItemIFAK isNotEqualTo ""} do {
-            private _loopCount = _firstSlotAmountIFAK; 
-            private _i = 0; 
-            while {_i < _loopCount} do { 
-                [_unit, _firstSlotItemIFAK] call ACEFUNC(common,addToInventory);
-                _i = _i + 1; 
-            };
-            _firstSlotItemIFAK = "";
-        };
+                {
+                    for "_i" from 0 to (_x select 1) do
+                    {
+                        [_unit, _x select 0] call ACEFUNC(common,addToInventory);
+                    } 
+                } foreach _firstSlotItemIFAK;
 
-        while {_secondSlotItemIFAK isNotEqualTo ""} do {
-            private _loopCount = _secondSlotAmountIFAK; 
-            private _i = 0; 
-            while {_i < _loopCount} do { 
-                [_unit, _secondSlotItemIFAK] call ACEFUNC(common,addToInventory);
-                _i = _i + 1; 
+                {
+                    for "_i" from 0 to (_x select 1) do
+                    {
+                        [_unit, _x select 0] call ACEFUNC(common,addToInventory);
+                    } 
+                } foreach _secondSlotItemIFAK;
+
+                {
+                    for "_i" from 0 to (_x select 1) do
+                    {
+                        [_unit, _x select 0] call ACEFUNC(common,addToInventory);
+                    } 
+                } foreach _thirdSlotItemIFAK;
+
+                {
+                    for "_i" from 0 to (_x select 1) do
+                    {
+                        [_unit, _x select 0] call ACEFUNC(common,addToInventory);
+                    } 
+                } foreach _fourthSlotItemIFAK;
+
+                // {
+                //     private _loopCount = _firstSlotAmountIFAK; 
+                //     private _i = 0; 
+                //     while {_i < _loopCount} do { 
+                //         [_unit, _x] call ACEFUNC(common,addToInventory);
+                //         _i = _i + 1; 
+                //     };
+                // } forEach _firstSlotItemIFAK;
+
+                // while {_secondSlotItemIFAK isNotEqualTo ""} do {
+                //     private _loopCount = _secondSlotAmountIFAK; 
+                //     private _i = 0; 
+                //     while {_i < _loopCount} do { 
+                //         [_unit, _secondSlotItemIFAK] call ACEFUNC(common,addToInventory);
+                //         _i = _i + 1; 
+                //     };
+                //     _secondSlotItemIFAK = "";
+                // };
+                // 
+                // while {_thirdSlotItemIFAK isNotEqualTo ""} do {
+                //     private _loopCount = _thirdSlotAmountIFAK; 
+                //     private _i = 0; 
+                //     while {_i < _loopCount} do { 
+                //         [_unit, _thirdSlotItemIFAK] call ACEFUNC(common,addToInventory);
+                //         _i = _i + 1; 
+                //     };
+                //     _thirdSlotItemIFAK = "";
+                // };
+                // 
+                // while {_fourthSlotItemIFAK isNotEqualTo ""} do {
+                //     private _loopCount = _fourthSlotAmountIFAK; 
+                //     private _i = 0; 
+                //     while {_i < _loopCount} do { 
+                //         [_unit, _fourthSlotItemIFAK] call ACEFUNC(common,addToInventory);
+                //         _i = _i + 1; 
+                //     };
+                //     _fourthSlotItemIFAK = "";
+                // };
+                _unit removeItem _item;
             };
-            _secondSlotItemIFAK = "";
-        };
-        
-        while {_thirdSlotItemIFAK isNotEqualTo ""} do {
-            private _loopCount = _thirdSlotAmountIFAK; 
-            private _i = 0; 
-            while {_i < _loopCount} do { 
-                [_unit, _thirdSlotItemIFAK] call ACEFUNC(common,addToInventory);
-                _i = _i + 1; 
+
+            case 1: {
+                
+                {
+                    private _loopCount = _firstSlotAmountIFAK; 
+                    private _i = 0; 
+                    while {_i < _loopCount} do { 
+                        [_unit, _x] call ACEFUNC(common,addToInventory);
+                        _i = _i + 1; 
+                    };
+                } forEach _firstSlotItemIFAK;
+
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_used", "", 75] call ACEFUNC(common,addToInventory);
             };
-            _thirdSlotItemIFAK = "";
-        };
-        
-        while {_fourthSlotItemIFAK isNotEqualTo ""} do {
-            private _loopCount = _fourthSlotAmountIFAK; 
-            private _i = 0; 
-            while {_i < _loopCount} do { 
-                [_unit, _fourthSlotItemIFAK] call ACEFUNC(common,addToInventory);
-                _i = _i + 1; 
+
+            case 2: {
+                
+                while {_secondSlotItemIFAK isNotEqualTo ""} do {
+                    private _loopCount = _secondSlotAmountIFAK; 
+                    private _i = 0; 
+                    while {_i < _loopCount} do { 
+                        [_unit, _secondSlotItemIFAK] call ACEFUNC(common,addToInventory);
+                        _i = _i + 1; 
+                    };
+                    _secondSlotItemIFAK = "";
+                };
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S2_used", "", 75] call ACEFUNC(common,addToInventory);
             };
-            _fourthSlotItemIFAK = "";
+
+            case 3: {
+                
+                while {_thirdSlotItemIFAK isNotEqualTo ""} do {
+                    private _loopCount = _thirdSlotAmountIFAK; 
+                    private _i = 0; 
+                    while {_i < _loopCount} do { 
+                        [_unit, _thirdSlotItemIFAK] call ACEFUNC(common,addToInventory);
+                        _i = _i + 1; 
+                    };
+                    _thirdSlotItemIFAK = "";
+                };
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S3_used", "", 75] call ACEFUNC(common,addToInventory);
+            };
+
+            case 4: {
+                
+                while {_fourthSlotItemIFAK isNotEqualTo ""} do {
+                    private _loopCount = _fourthSlotAmountIFAK; 
+                    private _i = 0; 
+                    while {_i < _loopCount} do { 
+                        [_unit, _fourthSlotItemIFAK] call ACEFUNC(common,addToInventory);
+                        _i = _i + 1; 
+                    };
+                    _fourthSlotItemIFAK = "";
+                };
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S4_used", "", 75] call ACEFUNC(common,addToInventory);
+            };
         };
-        
-        _unit removeItem _item;
     };
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     case "kat_AFAK": { 
 
         while {_firstSlotItemAFAK isNotEqualTo ""} do {

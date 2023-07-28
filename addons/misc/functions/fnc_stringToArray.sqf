@@ -19,6 +19,10 @@
 
 params ["_str", "_spliter", "_returnNumber"];
 
+if (typeName _str == "ARRAY") exitWith {
+    _str
+};
+
 private _clipstring = _str splitstring _spliter;
 private _array = [];
 

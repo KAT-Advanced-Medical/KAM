@@ -154,7 +154,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_FirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     "ACE_tourniquet",
-    1
+    1,
+    {
+        private _array = [_this, ","" ", false] call FUNC(stringToArray);
+        private _amount = missionNamespace getVariable [QGVAR(IFAKFirstSlotAmount), []];
+        {
+            _array set [_forEachIndex, [_x,_amount]]; 
+        } forEach _array;
+        missionNamespace setVariable [QGVAR(IFAKFirstSlotItem), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //IFAK First Slot Amount
@@ -164,7 +172,25 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_FirstSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     [1, 20, 2, 0],
-    true
+    1,
+    {
+        [
+            QGVAR(IFAKFirstSlotItem),
+            "EDITBOX",
+            [LLSTRING(SETTING_FirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+            [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+            "ACE_tourniquet",
+            1,
+            {
+                private _array = [_this, ","" ", false] call FUNC(stringToArray);
+                private _amount = missionNamespace getVariable [QGVAR(IFAKFirstSlotAmount), []];
+                {
+                    _array set [_forEachIndex, [_x,_amount]]; 
+                } forEach _array;
+                missionNamespace setVariable [QGVAR(IFAKFirstSlotItem), _array, true];
+            }
+        ] call CBA_Settings_fnc_init;
+    }
 ] call CBA_Settings_fnc_init;
 
 //IFAK Second Slot Item
@@ -174,7 +200,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     "ACE_packingBandage",
-    1
+    1,
+    {
+        private _array = [_this, ","" ", false] call FUNC(stringToArray);
+        private _amount = missionNamespace getVariable [QGVAR(IFAKSecondSlotAmount), []];
+        {
+            _array set [_forEachIndex, [_x,_amount]]; 
+        } forEach _array;
+        missionNamespace setVariable [QGVAR(IFAKSecondSlotItem), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //IFAK Second Slot Amount
@@ -184,7 +218,25 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_SecondSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     [1, 20, 10, 0],
-    true
+    1,
+    {
+        [
+            QGVAR(IFAKSecondSlotItem),
+            "EDITBOX",
+            [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+            [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+            "ACE_packingBandage",
+            1,
+            {
+                private _array = [_this, ","" ", false] call FUNC(stringToArray);
+                private _amount = missionNamespace getVariable [QGVAR(IFAKSecondSlotAmount), []];
+                {
+                    _array set [_forEachIndex, [_x,_amount]]; 
+                } forEach _array;
+                missionNamespace setVariable [QGVAR(IFAKSecondSlotItem), _array, true];
+            }
+        ] call CBA_Settings_fnc_init;
+    }
 ] call CBA_Settings_fnc_init;
 
 //IFAK Third Slot Item
@@ -194,7 +246,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     "ACE_quikclot",
-    1
+    1,
+    {
+        private _array = [_this, ","" ", false] call FUNC(stringToArray);
+        private _amount = missionNamespace getVariable [QGVAR(IFAKThirdSlotAmount), []];
+        {
+            _array set [_forEachIndex, [_x,_amount]]; 
+        } forEach _array;
+        missionNamespace setVariable [QGVAR(IFAKThirdtSlotItem), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //IFAK Third Slot Amount
@@ -204,7 +264,25 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_ThirdSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     [1, 20, 5, 0],
-    true
+    1,
+    {
+        [
+            QGVAR(IFAKThirdtSlotItem),
+            "EDITBOX",
+            [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+            [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+            "ACE_quikclot",
+            1,
+            {
+                private _array = [_this, ","" ", false] call FUNC(stringToArray);
+                private _amount = missionNamespace getVariable [QGVAR(IFAKThirdSlotAmount), []];
+                {
+                    _array set [_forEachIndex, [_x,_amount]]; 
+                } forEach _array;
+                missionNamespace setVariable [QGVAR(IFAKThirdtSlotItem), _array, true];
+            }
+        ] call CBA_Settings_fnc_init;
+    }
 ] call CBA_Settings_fnc_init;
 
 //IFAK Fourth Item
@@ -214,7 +292,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     "kat_chestSeal",
-    1
+    1,
+    {
+        private _array = [_this, ","" ", false] call FUNC(stringToArray);
+        private _amount = missionNamespace getVariable [QGVAR(IFAKFourthSlotAmount), []];
+        {
+            _array set [_forEachIndex, [_x,_amount]]; 
+        } forEach _array;
+        missionNamespace setVariable [QGVAR(IFAKFourthSlotItem), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 // IFAK Fourth Amount
@@ -224,7 +310,25 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_FourthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     [1, 20, 1, 0],
-    true
+    1,
+    {
+        [
+            QGVAR(IFAKFourthSlotItem),
+            "EDITBOX",
+            [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+            [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+            "kat_chestSeal",
+            1,
+            {
+                private _array = [_this, ","" ", false] call FUNC(stringToArray);
+                private _amount = missionNamespace getVariable [QGVAR(IFAKFourthSlotAmount), []];
+                {
+                    _array set [_forEachIndex, [_x,_amount]]; 
+                } forEach _array;
+                missionNamespace setVariable [QGVAR(IFAKFourthSlotItem), _array, true];
+            }
+        ] call CBA_Settings_fnc_init;
+    }
 ] call CBA_Settings_fnc_init;
 
 //AFAK First Slot Item
