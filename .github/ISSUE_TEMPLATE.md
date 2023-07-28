@@ -8,6 +8,7 @@
 - CBA_A3
 - ace
 - Kat
+(if you use a lot of mods feel free to add preset file)
 ```
 
 **Description:**
