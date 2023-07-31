@@ -31,8 +31,7 @@ GVAR(CPRCancel_MouseID) = [0xF1, [false, false, false], {
     GVAR(CPRTarget) setVariable [QACEGVAR(medical,CPR_provider), objNull, true];
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
 
-CPRTime = -5;
-CPRStartTime = CBA_missionTime - 5;
+CPRStartTime = CBA_missionTime + 2.5;
 
 private _inVehicle = vehicle _medic isEqualTo _medic;
 
@@ -70,11 +69,12 @@ if (_inVehicle) then {
             _medic setVariable [QGVAR(isPerformingCPR), false, true];
 
             // Format time to minutes:seconds
-            private _time = format ["%1:%2",(if ((floor(((CPRTime/3600) - floor(CPRTime/3600)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((CPRTime/3600) - floor(CPRTime/3600)) * 60)), (if ((floor(((CPRTime/60) - floor(CPRTime/60)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((CPRTime/60) - floor(CPRTime/60)) * 60))];
+            private _CPRTime = CBA_missionTime - CPRStartTime;
+            private _time = format ["%1:%2",(if ((floor(((_CPRTime/3600) - floor(_CPRTime/3600)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((_CPRTime/3600) - floor(_CPRTime/3600)) * 60)), (if ((floor(((_CPRTime/60) - floor(_CPRTime/60)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((_CPRTime/60) - floor(_CPRTime/60)) * 60))];
 
             [_patient, "activity", LSTRING(Activity_CPR), [[_medic, false, true] call ACEFUNC(common,getName), _time]] call ACEFUNC(medical_treatment,addToLog);
 
-            if (CPRStartTime < CBA_missionTime - 18) then {
+            if (CPRStartTime <= CBA_missionTime - 18) then {
                 _patient setVariable [QGVAR(OxygenationPeriod), CBA_missionTime, true];
             };
         };
@@ -106,6 +106,5 @@ if (_inVehicle) then {
         };
 
         [_medic, _patient] call FUNC(cprSuccess);
-        CPRTime = CPRTime + 5;
-    }, 5, [_medic, _patient]] call CBA_fnc_addPerFrameHandler;
-}, [_medic, _patient], 5 + 5] call CBA_fnc_waitAndExecute;
+    }, GVAR(CPR_ChanceInterval), [_medic, _patient]] call CBA_fnc_addPerFrameHandler;
+}, [_medic, _patient], GVAR(CPR_ChanceInterval) + 2.5] call CBA_fnc_waitAndExecute;

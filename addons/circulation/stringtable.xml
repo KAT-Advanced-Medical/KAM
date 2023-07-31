@@ -1615,6 +1615,12 @@
             <Spanish>Probabilidad exitosa min. de RCP para el resto</Spanish>
             <Portuguese>Probabilidade mínima de êxito de SBV para não-médicos</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval">
+            <English>CPR Chance Interval</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod">
+            <English>Oxygenation Period</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
             <Polish>Zestaw do pobierania krwi w terenie (500ml)</Polish>

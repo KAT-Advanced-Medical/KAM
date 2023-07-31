@@ -54,7 +54,7 @@ if (!local _unit) then {
     private _blockDeath = _unit getVariable [QACEGVAR(medical,deathblocked), false];
     private _BVMInUse = _unit getVariable [QGVAR(BVMInUse), false];
     private _oxygenAssisted = _unit getVariable [QGVAR(oxygenTankConnected), false];
-    private _oxygenationPeriod = (_unit getVariable [QEGVAR(circulation,OxygenationPeriod), 0] + 15) > CBA_missionTime;
+    private _oxygenationPeriod = (_unit getVariable [QEGVAR(circulation,OxygenationPeriod), 0] + GVAR(CPR_OxygenationPeriod)) > CBA_missionTime;
 
     private _output = 0;
     private _finalOutput = 0;
