@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class ADDON    {
+    class ADDON {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
@@ -70,3 +70,4 @@ class CfgPatches {
 #include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
 #include "ui\CrossPanel_Dialog.hpp"
+#include "ui\AEDX_Monitor_Dialog.hpp"

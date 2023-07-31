@@ -1,13 +1,14 @@
 class cfgAmmo
 {
-    class Smoke_82mm_AMOS_White;
     class SmokeShellArty;
     class KAT_SmokeShellArty: SmokeShellArty{
         smokeColor[] = {0,0,0,0};
     };
+    
+    class Smoke_82mm_AMOS_White;
     class Sh_82mm_AMOS_Type0: Smoke_82mm_AMOS_White 
     {
-        KAT_porjectile = 1;
+        KAT_projectile = 1;
         KAT_lifetime = 90;
         KAT_radius = 10;
         KAT_toxicLvL = 0;
@@ -22,7 +23,7 @@ class cfgAmmo
     };
     class Sh_82mm_AMOS_TypeCS: Sh_82mm_AMOS_Type0
     {
-        KAT_porjectile = 1;
+        KAT_projectile = 1;
         KAT_lifetime = 60;
         KAT_radius = 10;
         KAT_toxicLvL = 1; //cs

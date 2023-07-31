@@ -29,9 +29,9 @@ if (_vehicle distance ACE_player > 8000) exitwith {
     false
 };
 
-if !(_ammo in KAT_ProjectileChache) exitwith {};
+if !(_ammo in KAT_ProjectileCache) exitwith {};
 
-private _configClass = (configFile >> "cfgammo" >> _ammo);
+private _configClass = (configFile >> "CfgAmmo" >> _ammo);
 
 private _lifetime = [_configClass, "KAT_lifetime", 60] call BIS_fnc_returnConfigEntry;
 private _radius = [_configClass, "KAT_radius", 10] call BIS_fnc_returnConfigEntry;

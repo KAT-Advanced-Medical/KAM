@@ -463,4 +463,14 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
+// Sets whether medical facilites and/or vehicles provide direct oxygen and refill capability 
+[
+    QGVAR(locationProvideOxygen),
+    "LIST",
+    [LLSTRING(SETTING_locationProvideOxygen), LLSTRING(SETTING_locationProvideOxygen_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2, 3], ["STR_ACE_Common_None", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"], 3],
+    true
+] call CBA_settings_fnc_init;
+
 ADDON = true;

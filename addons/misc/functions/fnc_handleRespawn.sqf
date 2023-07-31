@@ -29,6 +29,7 @@ _unit setVariable [QEGVAR(airway,occluded), false, true];
 _unit setVariable [QEGVAR(airway,overstretch), false, true];
 KAT_forceWakeup = false;
 _unit setVariable [QEGVAR(airway,recovery), false, true];
+_unit setVariable [QEGVAR(airway,airway_item), "", true];
 
 // KAT Breathing
 
@@ -57,15 +58,30 @@ _unit setVariable [QEGVAR(breathing,usingStethoscope), nil];
 
 // KAT Circulation
 
-_unit setVariable [QEGVAR(circulation,X), false, true];
-_unit setVariable ["kat_AEDXPatient_PFH", nil];
-_unit setVariable [QEGVAR(circulation,AED_X_Volume), true, true];
-_unit setVariable [QEGVAR(circulation,AED_X_VolumePatient), false, true];
-_unit setVariable [QEGVAR(circulation,AED_X_Connected), false, true];
-_unit setVariable [QEGVAR(circulation,asystole), 1, true];
+_unit setVariable ["kat_AEDXPatient_PFH", nil, true];
+_unit setVariable [QEGVAR(circulation,Defibrillator_Charged), false, true];
+_unit setVariable [QEGVAR(circulation,DefibrillatorPads_Connected), false, true];
+_unit setVariable [QEGVAR(circulation,AED_X_MedicVitalsMonitor_Connected), false, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Connected), false, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Volume), true, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_VolumePatient), false, true];
+_unit setVariable [QEGVAR(circulation,Defibrillator_Provider), nil, true];
+_unit setVariable [QEGVAR(circulation,Defibrillator_ShockAmount), 0, true];
+_unit setVariable [QEGVAR(circulation,DefibrillatorInUse), false, true];
+_unit setVariable [QEGVAR(circulation,MedicDefibrillatorInUse), false, true];
+_unit setVariable [QEGVAR(circulation,MedicDefibrillator_Patient), nil, true];
+_unit setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
 _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
-_unit setVariable [QEGVAR(circulation,AEDinUse), false, true];
 _unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUNC(circulation,generateBloodType), true];
+_unit setVariable [QEGVAR(circulation,internalBleeding), 0, true];
+_unit setVariable [QEGVAR(circulation,StoredBloodPressure), [0,0], true];
+
+
+// KAT Misc
+_unit setVariable [QEGVAR(misc,isLeftArmFree), true, true];
+_unit setVariable [QEGVAR(misc,isRightArmFree), true, true];
+_unit setVariable [QEGVAR(misc,isLeftLegFree), true, true];
+_unit setVariable [QEGVAR(misc,isRightLegFree), true, true];
 
 _unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 
@@ -95,7 +111,7 @@ _unit setVariable [QEGVAR(surgery,sedated), false, true];
 
 _unit setVariable [QEGVAR(chemical,enteredPoison), false, true];
 _unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime),60], true];
-_unit setVariable [QEGVAR(chemical,poisenType), "", true];
+_unit setVariable [QEGVAR(chemical,poisonType), "", true];
 _unit setVariable [QEGVAR(chemical,airPoisoning), false, true];
 _unit setVariable [QEGVAR(chemical,CS), false, true];
 _unit setVariable [QEGVAR(chemical,gasmask_durability), 10, true];
@@ -106,15 +122,6 @@ private _obj = _ui displayCtrl 101;
 _obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
 if (_unit getVariable [QEGVAR(chemical,painEffect),0] != 0) then {
     KAT_PAIN_EFFECT ppEffectEnable false;
-};
-
-
-// Part of KAT Airway: This is a temp workaround till the adjustSPO2 part is rewritten
-_unit spawn {
-    _unit = param [0,objNull,[objNull]];
-    sleep 2;
-    if (_unit getVariable ["ACE_isUnconscious", false]) exitWith {};
-    _unit setVariable [QGVAR(airway_item), "", true];
 };
 
 [{
@@ -239,9 +246,9 @@ if (EGVAR(pharma,coagulation)) then {
 /// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
 
-    ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ["EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ["LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+    ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
 
 } else {

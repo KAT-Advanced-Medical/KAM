@@ -126,24 +126,6 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(debrideTime),
-    "SLIDER",
-    LLSTRING(DEBRIDE_TIMER),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [0,100,20,0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(npwtTime),
-    "SLIDER",
-    LLSTRING(NPWT_TIMER),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [0,100,20,0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
     QGVAR(fractureCheck_Time),
     "SLIDER",
     LLSTRING(FRACTURE_CHECK_TIMER),
@@ -157,7 +139,7 @@ PREP_RECOMPILE_END;
     "LIST",
     LLSTRING(CLOSED_REDUCTION_MEDLEVEL),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -166,7 +148,7 @@ PREP_RECOMPILE_END;
     "LIST",
     LLSTRING(SURGICAL_ACTION_MEDLEVEL),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -184,17 +166,63 @@ PREP_RECOMPILE_END;
     "LIST",
     LLSTRING(SURGICAL_LOCATION),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],0],
+    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
     true
 ] call CBA_Settings_fnc_init;
 
+// 0 Surgery Causes Unconsciousness: If you do an incision (without anesthesia & sedative) patient will go into CA
+// 1 Unconsciousness Required for Surgery: Surgery fails unless patient is unconscious, needs anesthesia
+// 2 No Unconsciousness from Surgery: Patient can stay awake without anesthesia, causes pain
+// 3 Surgery Anesthesia: The patient is able to stay awake through the entirety of the surgery. If Etomidate has not been applied, then the patient will lose consciousness.
 [
-    QGVAR(uncon_requieredForActions),
-    "CHECKBOX",
-    [LLSTRING(uncon_requieredForActions), LLSTRING(uncon_requieredForActions_DESC)],
+    QGVAR(Surgery_ConsciousnessRequirement),
+    "LIST",
+    [LLSTRING(SETTING_ConsciousnessRequirement), LLSTRING(SETTING_ConsciousnessRequirement_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [false],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Causes_Unconsciousness), LLSTRING(SETTING_Unconsciousness_Required), LLSTRING(SETTING_No_Unconsciousness), LLSTRING(SETTING_Anesthesia)], 1],
     true
 ] call CBA_Settings_fnc_init;
+
+// Sets time to debride a patient
+[
+    QGVAR(debrideTime),
+    "SLIDER",
+    LLSTRING(SETTING_DebrideTime),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [0,100,20,0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets time to apply NPWT dressing
+[
+    QGVAR(npwtTime),
+    "SLIDER",
+    LLSTRING(SETTING_NPWTTime),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [0,100,20,0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets med level required to do debridement actions
+[
+    QGVAR(debridementAction_MedLevel),
+    "LIST",
+    LLSTRING(SETTING_DebridementAction_MedLevel),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets allowed location for debridement actions
+[
+    QGVAR(debridementAction_Location),
+    "LIST",
+    LLSTRING(SETTING_DebridementAction_Location),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
+    true
+] call CBA_Settings_fnc_init;
+
+
 
 ADDON = true;

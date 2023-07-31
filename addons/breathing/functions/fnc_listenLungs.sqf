@@ -30,7 +30,7 @@ variantDelay = 0;
 
     private _HR = GET_HEART_RATE(_patient);
 
-    if !(_medic getVariable [QGVAR(usingStethoscope), false] || !(alive _patient) || _HR isEqualTo 0) exitWith {
+    if (!(_medic getVariable [QGVAR(usingStethoscope), false]) || !(alive _patient) || _HR isEqualTo 0) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
     

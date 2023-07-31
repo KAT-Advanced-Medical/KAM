@@ -7,7 +7,7 @@ class CfgPatches {
         units[] = {
             QGVAR(manageAirway_module),
             QGVAR(bloodType_module),
-            QGVAR(asystole_module),
+            QGVAR(cardiacState_module),
             QGVAR(checkmedical_module)
         };
         weapons[] = {};
@@ -21,17 +21,6 @@ class CfgPatches {
         authors[] = {"Katalam"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
-    };
-};
-
-class CfgFunctions {
-    class overwrite_menuPFH {
-        tag = "ace_medical_gui";
-        class ace_medical_gui {
-            class menuPFH {
-                file = QPATHTOF(functions\fnc_menuPFH.sqf);
-            };
-        };
     };
 };
 

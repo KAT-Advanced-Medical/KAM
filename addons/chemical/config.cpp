@@ -50,7 +50,6 @@ class CfgPatches {
     };
 };
 
-#include "CfgFunctions.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgMagazineGroups.hpp"
 #include "CfgAmmo.hpp"
@@ -62,3 +61,4 @@ class CfgPatches {
 #include "CfgSounds.hpp"
 #include "ui\RscAttributes.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "CfgGlasses.hpp"
