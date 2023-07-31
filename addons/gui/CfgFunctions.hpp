@@ -11,6 +11,9 @@ class CfgFunctions {
             class updateActions {
                 file = QPATHTOF(functions\fnc_updateActions.sqf);
             };
+            class updateBodyImage {
+                file = QPATHTOF(functions\fnc_updateBodyImage.sqf);
+            };
             class updateCategories {
                 file = QPATHTOF(functions\fnc_updateCategories.sqf);
             };
