@@ -79,6 +79,10 @@ _unit setVariable [QGVAR(pneumothorax), false, true];
 _unit setVariable [QGVAR(hemopneumothorax), false, true];
 _unit setVariable [QGVAR(tensionpneumothorax), false, true];
 
+// KAT Circulation
+_unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
+_unit setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
+
 // Update wound bleeding
 [_unit] call ACEFUNC(medical_status,updateWoundBloodLoss);
 [_unit] call EFUNC(circulation,updateInternalBleeding);
@@ -87,7 +91,6 @@ _unit setVariable [QGVAR(tensionpneumothorax), false, true];
 _unit setVariable [QACEGVAR(medical,heartRate), 80, true];
 _unit setVariable [QACEGVAR(medical,bloodPressure), [80, 120], true];
 _unit setVariable [QACEGVAR(medical,peripheralResistance), 100, true];
-_unit setVariable [QEGVAR(circulation,cardiacArrestType), nil];
 
 //KAT Pharmacy
 _unit setVariable [QACEGVAR(medical,ivBags), nil, true];
