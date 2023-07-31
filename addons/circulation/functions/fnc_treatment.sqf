@@ -24,7 +24,7 @@ params ["_medic", "_patient", "_bodyPart", "_classname", ["_extraArgs",[]]];
 
 // Delay by a frame if cursor menu is open to prevent progress bar failing
 if (uiNamespace getVariable [QACEGVAR(interact_menu,cursorMenuOpened), false]) exitWith {
-    [ACEFUNC(medical_treatment,treatment), _this] call CBA_fnc_execNextFrame;
+    [FUNC(treatment), _this] call CBA_fnc_execNextFrame;
 };
 
 if !(_this call FUNC(canTreat)) exitWith {false};

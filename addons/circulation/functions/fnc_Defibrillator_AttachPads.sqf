@@ -26,16 +26,22 @@ _extraArgs params [["_placedAED",objNull]];
 private _provider = objNull;
 private _soundSource = _medic;
 
+private _exit = false;
+
 switch (_source) do {
     case 1: { // Placed
         private _placedDefibrillator = objNull;
 
         if (_placedAED isEqualTo objNull) then {
             private _nearObjects = nearestObjects [position _patient, ["kat_AEDItem"], GVAR(Defibrillator_DistanceLimit)];
-            _placedDefibrillator = _nearObjects select (_nearObjects findIf {typeOf _x isEqualTo _defibClassname});
+            private _index = _nearObjects findIf {typeOf _x isEqualTo "kat_X_AEDItem"};
+            if(_index isEqualTo -1) exitWith {_exit = true;};
+            _placedDefibrillator = _nearObjects select (_nearObjects findIf {typeOf _x isEqualTo "kat_X_AEDItem"});
         } else {
             _placedDefibrillator = _placedAED;
         };
+
+        if(_exit) exitWith {[LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);};
 
         _provider = _placedDefibrillator;
         _soundSource = _placedDefibrillator;
