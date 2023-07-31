@@ -19,6 +19,7 @@
 params ["_medic", "_patient"];
 
 _patient setVariable [QACEGVAR(medical,CPR_provider), _medic, true];
+_medic setVariable [QGVAR(isPerformingCPR), true, true];
 
 GVAR(CPRTarget) = _patient;
 
@@ -26,7 +27,7 @@ GVAR(CPRCancel_EscapeID) = [0x01, [false, false, false], {
     GVAR(CPRTarget) setVariable [QACEGVAR(medical,CPR_provider), objNull, true];
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
 
-GVAR(CPRCancel_MouseID) = [0xF0, [false, false, false], { // 0xF1
+GVAR(CPRCancel_MouseID) = [0xF1, [false, false, false], {
     GVAR(CPRTarget) setVariable [QACEGVAR(medical,CPR_provider), objNull, true];
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
 
@@ -44,13 +45,13 @@ if (_inVehicle) then {
 [{
     params ["_medic", "_patient", "_inVehicle"];
 
-    ["Stop CPR", "", ""] call ACEFUNC(interaction,showMouseHint);
+    ["", LLSTRING(StopCPR), ""] call ACEFUNC(interaction,showMouseHint);
 
     [{
         params ["_args", "_idPFH"];
         _args params ["_medic", "_patient", "_inVehicle"];
     
-        if (!(alive _medic) || IS_UNCONSCIOUS(_medic) || (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull) exitWith {
+        if (!(alive _medic) || IS_UNCONSCIOUS(_medic) || (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull) exitWith { // Stop CPR
             [_idPFH] call CBA_fnc_removePerFrameHandler;
 
             if(_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo _medic) then {
@@ -64,6 +65,8 @@ if (_inVehicle) then {
             if (_inVehicle) then {
                 _medic switchMove "AinvPknlMstpSnonWnonDnon_medicEnd";
             };
+
+            _medic setVariable [QGVAR(isPerformingCPR), false, true];
 
             // Format time to minutes:seconds
             private _time = format ["%1:%2",(if ((floor(((CPRTime/3600) - floor(CPRTime/3600)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((CPRTime/3600) - floor(CPRTime/3600)) * 60)), (if ((floor(((CPRTime/60) - floor(CPRTime/60)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((CPRTime/60) - floor(CPRTime/60)) * 60))];

@@ -3,7 +3,7 @@ class ACE_Medical_Treatment_Actions {
     class Morphine;
     class CheckPulse;
     class CPR {
-        displayName = "Begin CPR";//CSTRING(DogTag);
+        displayNameProgress = "";
         treatmentTime = 0.01;
         callbackStart = "";
         callbackProgress = "";
