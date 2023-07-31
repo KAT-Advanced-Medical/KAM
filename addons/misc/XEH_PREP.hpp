@@ -7,6 +7,7 @@ PREP(BubbleWrap);
 PREP(checkArmbandCondition);
 PREP(conditionIV);
 PREP(conditionIVstand);
+PREP(fullHealLocal);
 PREP(getUniqueItems);
 PREP(handleRespawn);
 PREP(hasItem);
