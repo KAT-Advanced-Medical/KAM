@@ -199,6 +199,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted
+[
+    QGVAR(deepPenetratingInjuryChance),
+    "SLIDER",
+    [LLSTRING(SETTING_deepPenetratingInjuryChance), LLSTRING(SETTING_deepPenetratingInjuryChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0, 100, 50, 0, false],
+    true
+] call CBA_Settings_fnc_init;
+
 // Sets how much internal bleeding is applied while suffering from hemopneumothorax
 [
     QGVAR(HPTXBleedAmount),
@@ -209,31 +219,11 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might help
-[
-    QGVAR(pneumothorax_hardcore),
-    "CHECKBOX",
-    [LLSTRING(SETTING_pneumothorax_hardcore), LLSTRING(SETTING_pneumothorax_hardcore_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [false],
-    true
-] call CBA_Settings_fnc_init;
-
-// Enables hardcore mod for tension and hemopneumothorax by not making it appear in medical menu - Stethoscope might help
-[
-    QGVAR(tensionhemothorax_hardcore),
-    "CHECKBOX",
-    [LLSTRING(SETTING_tensionhemothorax_hardcore), LLSTRING(SETTING_tensionhemothorax_hardcore_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [false],
-    true
-] call CBA_Settings_fnc_init;
-
 //Chance for pneumothorax to deteriorate into tension pneumothorax
 [
     QGVAR(deterioratingPneumothorax_chance),
     "SLIDER",
-    [LLSTRING(SETTING_deterioratingPneumothorax_chance), LLSTRING(SETTING_deterioratingPneumothorax_chance_Desc)],
+    [LLSTRING(SETTING_deterioratingPneumothorax_chance), LLSTRING(SETTING_deterioratingPneumothorax_chance_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [0, 100, 10, 0],
     true
@@ -241,11 +231,31 @@ PREP_RECOMPILE_END;
 
 //Deteriorating pneumothorax countdown
 [
-    QGVAR(deterioratingPneumothorax_countdown),
+    QGVAR(deterioratingPneumothorax_interval),
     "SLIDER",
-    [LLSTRING(SETTING_deterioratingPneumothorax_countdown), LLSTRING(SETTING_deterioratingPneumothorax_countdown_Desc)],
+    [LLSTRING(SETTING_deterioratingPneumothorax_interval), LLSTRING(SETTING_deterioratingPneumothorax_interval_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [1, 3600, 120, 0],
+    [1, 3600, 60, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might help
+[
+    QGVAR(pneumothorax_easymode),
+    "CHECKBOX",
+    [LLSTRING(SETTING_pneumothorax_easymode), LLSTRING(SETTING_pneumothorax_easymode_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+// Enables hardcore mod for tension and hemopneumothorax by not making it appear in medical menu - Stethoscope might help
+[
+    QGVAR(tensionhemothorax_easymode),
+    "CHECKBOX",
+    [LLSTRING(SETTING_tensionhemothorax_easymode), LLSTRING(SETTING_tensionhemothorax_easymode_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -256,6 +266,26 @@ PREP_RECOMPILE_END;
     [LLSTRING(showPneumothorax_dupe),LLSTRING(showPneumothorax_dupe_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [false],
+    true
+] call CBA_Settings_fnc_init;
+
+//Settable list for using Pulseoximeter per medical class
+[
+    QGVAR(medLvl_inspectChest),
+    "LIST",
+    LLSTRING(SETTING_inspectChest_medLvl),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Sets chest inspect action time
+[
+    QGVAR(inspectChest_time),
+    "SLIDER",
+    [LLSTRING(SETTING_inspectChest_time)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [1, 60, 3, 1],
     true
 ] call CBA_Settings_fnc_init;
 

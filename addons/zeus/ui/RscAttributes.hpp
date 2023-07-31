@@ -159,9 +159,12 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                             toolTip = "";
                             y = QUOTE(H_PART(2.2));
                         };
-                        class Pneumothorax: Obstruction {
-                            idc = 16103;
+                        class PneumothoraxValue: RscXSliderH {
+                            idc = 16105;
+                            x = QUOTE(W_PART(10.1));
                             y = QUOTE(H_PART(2.2));
+                            w = QUOTE(W_PART(15.9));
+                            h = QUOTE(H_PART(1));
                         };
                         class Title4: Title1 {
                             idc = -1;

@@ -33,8 +33,8 @@ private _asystole = _patient getVariable [QGVAR(asystole), 1];
 private _CPRcount = _patient getVariable [QGVAR(CPRcount), 0];
 
 if !(GVAR(AdvRhythm)) then {
-    _patient setVariable [QGVAR(asystole), 1, true];
-    _asystole = _patient getVariable [QGVAR(asystole), 1];
+        _patient setVariable [QGVAR(asystole), 1, true];
+        _asystole = _patient getVariable [QGVAR(asystole), 1];
     } else {
     if (_bloodLoss > 3.6) then {
         _patient setVariable [QGVAR(asystole), 1, true];
@@ -52,15 +52,15 @@ if !(GVAR(AdvRhythm)) then {
     {
         case "Epinephrine": 
         {
-        _epiBoost = 1.5;
+            _epiBoost = 1.5;
         };
         case "Amiodarone": 
         {
-        _amiBoost = _amiBoost + (random [8,14,20]);
+            _amiBoost = _amiBoost + (random [8,14,20]);
         };
         case "Lidocaine":
         {
-        _lidoBoost = _lidoBoost + 8;
+            _lidoBoost = _lidoBoost + 8;
         };
     };
 } forEach (_patient getVariable [QACEGVAR(medical,medications), []]);
@@ -82,31 +82,27 @@ switch (_reviveObject) do {
             };
         };
     };
+    case "AEDStation";
+    case "AEDVehicle";
     case "AED": {
         [_patient, "activity", LSTRING(Activity_AED), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
         _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_MinChance), GVAR(AED_MaxChance), true];
     };
-    case "AEDStation": {
-        [_patient, "activity", LSTRING(Activity_AEDS), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
-        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_MinChance), GVAR(AED_MaxChance), true];
-    };
+    case "AEDXPlaced";
+    case "AEDXVehicle";
     case "AEDX": {
-        [_patient, "activity", LSTRING(Activity_AEDX), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
-        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_X_MinChance), GVAR(AED_X_MaxChance), true];
-    };
-    case "AEDXVehicle": {
         [_patient, "activity", LSTRING(Activity_AEDX), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
         _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_X_MinChance), GVAR(AED_X_MaxChance), true];
     };
 };
 
-if (_reviveObject isEqualTo "AED" || _reviveObject isEqualTo "AEDX" || _reviveObject isEqualTo "AEDStation" || _reviveObject isEqualTo "AEDXVehicle") exitWith {
-    _chance = _chance + (_amiBoost + _lidoBoost * _epiBoost);
+if (_reviveObject in ["AED","AEDStation","AEDVehicle","AEDX","AEDPlaced","AEDXVehicle"]) exitWith {
+    _chance = _chance + (_amiBoost + (1 max _lidoBoost) * _epiBoost);
 
     if ((_random <= _chance) && (_asystole isEqualTo 1)) then {
         [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
         if (GVAR(AdvRhythm)) then {
-        _patient setVariable [QGVAR(asystole), 1, true];
+            _patient setVariable [QGVAR(asystole), 1, true];
         };
         _patient setVariable [QGVAR(CPRcount), 2, true];
     };

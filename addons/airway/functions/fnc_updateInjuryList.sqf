@@ -168,6 +168,19 @@ if (_target getVariable [QGVAR(recovery), false]) then {
     _entries pushback [LLSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
 };
 
+if (_target getVariable [QGVAR(recovery), false]) then {
+    _entries pushback [LLSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
+};
+
+if (!(EGVAR(breathing,pneumothorax_easymode)) && _selectionN isEqualTo 1) then {
+    if (_target getVariable [QEGVAR(breathing,deepPenetratingInjury), false]) then {
+        _entries pushBack [LELSTRING(breathing,DeepPenetratingInjury), [1,0,0,1]];
+    };
+    if (_target getVariable [QEGVAR(breathing,activeChestSeal), false]) then {
+        _entries pushBack [LELSTRING(breathing,ChestSealApplied), [1,0.95,0,1]];
+    };
+};
+
 // Display cyanosis in overview tab, only when head/arms are selected
 if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
     private _spO2 = 0;
@@ -200,15 +213,15 @@ if (!(EGVAR(breathing,showPneumothorax_dupe))) then {
     };
 };
 
-if (_target getVariable [QEGVAR(breathing,pneumothorax), false] && _selectionN isEqualTo 1 && !(EGVAR(breathing,pneumothorax_hardcore)) && !(_tensionhemothorax)) then {
+if ((_target getVariable [QEGVAR(breathing,pneumothorax), 0] > 0) && _selectionN isEqualTo 1 && (EGVAR(breathing,pneumothorax_easymode)) && !(_tensionhemothorax)) then {
     _woundEntries pushback [LELSTRING(breathing,pneumothorax_mm), [1,1,1,1]];
 };
 
-if (_target getVariable [QEGVAR(breathing,hemopneumothorax), false] && _selectionN isEqualTo 1 && !(EGVAR(breathing,tensionhemothorax_hardcore))) then {
+if (_target getVariable [QEGVAR(breathing,hemopneumothorax), false] && _selectionN isEqualTo 1 && (EGVAR(breathing,tensionhemothorax_easymode))) then {
     _woundEntries pushback [LELSTRING(breathing,hemopneumothorax_mm), [1,1,1,1]];
 };
 
-if (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false] && _selectionN isEqualTo 1 && !(EGVAR(breathing,tensionhemothorax_hardcore))) then {
+if (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false] && _selectionN isEqualTo 1 && (EGVAR(breathing,tensionhemothorax_easymode))) then {
     _woundEntries pushback [LELSTRING(breathing,tensionpneumothorax_mm), [1,1,1,1]];
 };
 

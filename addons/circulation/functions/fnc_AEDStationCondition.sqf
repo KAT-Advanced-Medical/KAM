@@ -8,7 +8,7 @@
  * 1: Patient <OBJECT>
  *
  * Return Value:
- * Can CPR <BOOL>
+ * Can use AED <BOOL>
  *
  * Example:
  * [player, cursorObject] call kat_circulation_fnc_AEDStationCondition
@@ -19,14 +19,5 @@
 params ["_medic", "_patient"];
 
 private _canCPR = ["",_patient] call ACEFUNC(medical_treatment,canCPR);
-private _classNameObjects = [];
-{
-    if (typeOf _x in ["kat_AEDItem", "Land_Defibrillator_F"]) then {
-        _className = typeOf _x; 
-        _classNameObjects pushBack _className;
-    };
-} forEach nearestObjects [position _patient, [], 3];
 
-if (!(_classNameObjects isEqualTo []) && {_canCPR}) exitWith {true};
-
-false
+!(nearestObjects [position _patient, ["kat_AEDItem"], GVAR(distanceLimit_AEDX)] findIf {typeOf _x in ["kat_AEDItem","Land_Defibrillator_F"]} isEqualTo -1) && {_canCPR};

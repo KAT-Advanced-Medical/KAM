@@ -34,6 +34,8 @@
     } else { \
         getNumber (cfg); \
     }
-    
+
+#define GET_BLOOD_PRESSURE(unit) ([unit] call EFUNC(circulation,getBloodPressure))
+
 #define VAR_INTERNAL_BLEEDING QEGVAR(circulation,internalBleeding)
 #define GET_INTERNAL_BLEEDING(unit) (unit getVariable [VAR_INTERNAL_BLEEDING, 0])

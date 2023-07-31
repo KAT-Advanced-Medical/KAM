@@ -72,14 +72,15 @@ class ACE_Medical_Treatment_Actions {
     #include "Blood_Medical.hpp"
 
     class AED: CPR {
-        displayName = CSTRING(Defib_Action_Use);
-        displayNameProgress = CSTRING(AED_PROGRESS);
+        displayName = CSTRING(AED_Action_Use);
+        displayNameProgress = CSTRING(AED_Action_Progress);
         icon = QPATHTOF(ui\defib.paa);
         items[] = {"kat_AED"};
         treatmentTime = 10;
         condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        consumeItem = 0;
         callbackStart = QFUNC(AEDStart);
-        callbackProgress = QFUNC(AEDProgress);
+        callbackProgress = QUOTE([ARR_4(_args, _elapsedTime, _totalTime, _errorCode)] call FUNC(AEDProgress));
         callbackSuccess = QFUNC(AEDSuccess);
         callbackFailure = QFUNC(AEDFailure);
         animationMedic = "AinvPknlMstpSnonWnonDr_medic0";
@@ -90,70 +91,74 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
     class AEDStation: AED {
-        displayName = CSTRING(DefibS_Action_Use);
+        displayName = CSTRING(AEDStation_Action_Use);
         items[] = {};
-        condition = QFUNC(AEDStationCondition);
+        callbackProgress = QUOTE([ARR_5(_args, _elapsedTime, _totalTime, _errorCode, 1)] call FUNC(AEDProgress));
+        condition = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDStationCondition));
         treatmentLocations = 0;
     };
-    class AEDX: AED {
-        displayName = CSTRING(AED_X_Action_Use);
-        displayNameProgress = CSTRING(AED_X_Action_Progress);
+    class AEDVehicle: AED {
+        displayName = CSTRING(AEDVehicle_Action_Use);
         items[] = {};
-        condition = QFUNC(AEDXCondition);
+        condition = QUOTE([ARR_2(_patient,'kat_AED')] call FUNC(AEDVehicleCondition));
+        callbackProgress = QUOTE([ARR_5(_args, _elapsedTime, _totalTime, _errorCode, 2)] call FUNC(AEDProgress));
+    };
+    class AEDX: AED {
+        displayName = CSTRING(AEDX_Action_Use);
+        displayNameProgress = CSTRING(AEDX_Action_Progress);
+        items[] = {"kat_X_AED"};
+        condition = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDXCondition));
         medicRequired = QGVAR(medLvl_AED_X);
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
-    class AttachAEDX: AED {
-        displayName = CSTRING(X_Action_Use);
-        displayNameProgress = CSTRING(X_Action_Progress);
-        items[] = {"kat_X_AED"};
+    class AEDXPlaced: AEDX {
+        displayName = CSTRING(AEDXStation_Action_Use);
+        items[] = {};
+        condition = QUOTE([ARR_3(_medic, _patient, true)] call FUNC(AEDXCondition));
+        callbackProgress = QUOTE([ARR_5(_args, _elapsedTime, _totalTime, _errorCode, 1)] call FUNC(AEDProgress));
+    };
+    class AttachAEDX: AEDX {
+        displayName = CSTRING(AEDX_Action_ConnectMonitor);
+        displayNameProgress = CSTRING(AEDX_Action_Connecting_Progress);
         treatmentTime = QGVAR(AED_X_AttachTime);
-        condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), false)]));
-        consumeItem = 1;
+        condition = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDXMonitorCondition));
         medicRequired = QGVAR(medLvl_AED_X);
         callbackProgress = "";
         callbackStart = "";
         callbackFailure = "";
-        callbackSuccess = QFUNC(attachAEDX);
+        callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(attachAEDX));
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
     };
-    class DetachAEDX: AttachAEDX {
-        displayName = CSTRING(X_Action_Remove);
-        displayNameProgress = CSTRING(X_Remove_Action_Progress);
+    class AEDXVehicle: AEDX {
+        displayName = CSTRING(AEDXVehicle_Action_Use);
         items[] = {};
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), true)] && !(_patient getVariable [ARR_2(QQGVAR(vehicleTrue), false)]));
-        treatmentTime = QGVAR(AED_X_DetachTime);
-        medicRequired = 0;
-        callbackSuccess = QUOTE([ARR_3(_medic, _patient, true)] call FUNC(returnAED_X));
-        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+        condition = QUOTE([ARR_2(_patient,'kat_X_AED')] call FUNC(AEDVehicleCondition));
+        callbackProgress = QUOTE([ARR_5(_args, _elapsedTime, _totalTime, _errorCode, 2)] call FUNC(AEDProgress));
     };
-    class AEDXVehicle: AED {
-        displayName = CSTRING(Vehicle_AED_X_Action_Use);
-        displayNameProgress = CSTRING(AED_X_Action_Progress);
+    class AttachAEDXPlaced: AttachAEDX {
+        displayName = CSTRING(AEDXStation_Action_ConnectMonitor);
         items[] = {};
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(vehicleTrue), true)]) && (_patient getVariable [ARR_2(QQGVAR(X), true)]));
+        condition = QUOTE([ARR_3(_medic, _patient, 1)] call FUNC(AEDXMonitorCondition));
         medicRequired = QGVAR(medLvl_AED_X);
-        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+        callbackSuccess = QUOTE([ARR_3(_medic, _patient, 1)] call FUNC(attachAEDX));
     };
     class AttachAEDXVehicle: AttachAEDX {
-        displayName = CSTRING(Vehicle_X_Action_Use);
-        displayNameProgress = CSTRING(X_Action_Progress);
+        displayName = CSTRING(AEDXVehicle_Action_ConnectMonitor);
         items[] = {};
-        condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), false)]) && FUNC(vehicleCheck));
-        consumeItem = 0;
-        medicRequired = QGVAR(medLvl_AED_X);
-        callbackSuccess = QFUNC(attachAEDXVehicle);
-        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+        condition = QUOTE([ARR_3(_medic, _patient, 2)] call FUNC(AEDXMonitorCondition) && [ARR_2(_patient,'kat_X_AED')] call FUNC(AEDVehicleCondition));
+        callbackSuccess = QUOTE([ARR_3(_medic, _patient, 2)] call FUNC(attachAEDX));
     };
-    class DetachAEDXVehicle: DetachAEDX {
-        displayName = CSTRING(Vehicle_X_Action_Remove);
-        displayNameProgress = CSTRING(X_Remove_Action_Progress);
-        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(vehicleTrue), true)]) && (_patient getVariable [ARR_2(QQGVAR(X), true)]));
-        callbackSuccess = QUOTE([ARR_3(_medic, _patient, false)] call FUNC(returnAED_X));
-        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+    class DetachAEDX: AttachAEDX {
+        displayName = CSTRING(AEDX_Action_DisconnectMonitor);
+        displayNameProgress = CSTRING(AEDX_Action_Disconnecting_Progress);
+        items[] = {};
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(X), false)]);
+        treatmentTime = QGVAR(AED_X_DetachTime);
+        medicRequired = 0;
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(X), false, true)]);
     };
     class DisableAEDXAudio {
-        displayName = CSTRING(X_Action_removeSound);
+        displayName = CSTRING(AEDX_Action_DisableAudio);
         displayNameProgress = "";
         icon = QPATHTOF(ui\X_Series-Device_W.paa);
         category = "examine";
@@ -171,7 +176,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedic = "";
     };
     class EnableAEDXAudio: DisableAEDXAudio {
-        displayName = CSTRING(X_Action_addSound);
+        displayName = CSTRING(AEDX_Action_EnableAudio);
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X), false)]) && !(_patient getVariable [ARR_2(QQGVAR(AED_X_VolumePatient), false)]));
         callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(AED_X_VolumePatient), true, true)]);
     };

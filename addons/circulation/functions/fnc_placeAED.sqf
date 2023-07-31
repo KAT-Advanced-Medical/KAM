@@ -1,38 +1,59 @@
 #include "script_component.hpp"
 /*
-*     Author: Tomcat
-* 
-*     Place the AED in front of the player
-*
-*     Arguments:
-*         0: Item <STRING> 
-*         1: Classname <STRING>
-*
-*     Return Value:
-*     None
-*
-*/
+ * Author: Tomcat, Blue
+ * Place the AED/X in front of unit
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ * 1: AED Classname <STRING>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [player, 'kat_AED'] call kat_circulation_fnc_placeAED;
+ *
+ * Public: No
+ */
 
-ACE_player removeItem "kat_AED";
+params ["_unit", "_AEDClassName"];
 
-private _AED = createVehicle ["kat_AEDItem", position ACE_player, [], 0, "NONE"];
+_unit removeItem _AEDClassName;
 
-[_AED, true, [0, 1, 0]] remoteExecCall ["ace_dragging_fnc_setDraggable", 0, true];
-[_AED, true, [0, 1, 0]] remoteExecCall ["ace_dragging_fnc_setCarryable", 0, true];
+private _AED = ([_AEDClassName,"Item"] joinString "") createVehicle (position _unit);
 
-[player, _AED] call ACEFUNC(dragging,carryObject);
+[_AED, true] call ACEFUNC(dragging,setDraggable);
+[_AED, true] call ACEFUNC(dragging,setCarryable);
 
-private _pickupAED = [
-    "AED_pickupAction",
-    localize "STR_KAT_circulation_PickUpAction",
-    "",
-    {
-        params ["_target", "_player"];
-        
-        deleteVehicle _target;
-        _player addItem "kat_AED";
-    },
-    {true}
+[_unit, _AED] call ACEFUNC(dragging,carryObject);
+
+if (_AEDClassName == "kat_X_AED") then {
+    _AED setVariable [QGVAR(AED_X_Volume), _unit getVariable [QGVAR(AED_X_Volume), false], true];
+    _AED setVariable [QGVAR(AED_X_Connected), false, true];
+};
+
+private _action = ["AED_pickupAction",
+LLSTRING(PickUpAction),
+"",
+{
+    params ["_AED", "_unit", "_args"];
+    _args params ["_AEDClassName"];
+
+    _AED setVariable [QGVAR(AEDinUse), false, true];
+
+    if (_AEDClassName == "kat_X_AED") then {
+        _AED setVariable [QGVAR(AED_X_Connected), false, true];
+        _unit setVariable [QGVAR(AED_X_Volume), _AED getVariable [QGVAR(AED_X_Volume), false], true];
+    };
+
+    deleteVehicle _AED;
+    _unit addItem _AEDClassName;
+},
+{
+    params ["_AED", "_unit"];
+    [_unit, GVAR(medLvl_AED_Station_Interact)] call ACEFUNC(medical_treatment,isMedic)
+},
+{},
+[_AEDClassName]
 ] call ACEFUNC(interact_menu,createAction);
-
-[_AED, 0, ["ACE_MainActions"], _pickupAED] remoteExecCall ["ace_interact_menu_fnc_addActionToObject", 0, true];
+[_AED, 0, ["ACE_MainActions"], _action] call ACEFUNC(interact_menu,addActionToObject);

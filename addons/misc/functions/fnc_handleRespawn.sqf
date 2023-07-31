@@ -33,10 +33,11 @@ _unit setVariable [QEGVAR(airway,recovery), false, true];
 // KAT Breathing
 
 _unit setVariable [QEGVAR(breathing,airwayStatus), 100, true];
-_unit setVariable [QEGVAR(breathing,pneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,pneumothorax), 0, true];
 _unit setVariable [QEGVAR(breathing,hemopneumothorax), false, true];
 _unit setVariable [QEGVAR(breathing,tensionpneumothorax), false, true];
 _unit setVariable [QEGVAR(breathing,activeChestSeal), false, true];
+_unit setVariable [QEGVAR(breathing,deepPenetratingInjury), false, true];
 _unit setVariable [QEGVAR(breathing,PneumoBreathCooldownOn), false, true];
 
 _unit setVariable [QEGVAR(breathing,BVMInUse), false, true];
@@ -60,12 +61,13 @@ _unit setVariable [QEGVAR(circulation,X), false, true];
 _unit setVariable ["kat_AEDXPatient_PFH", nil];
 _unit setVariable [QEGVAR(circulation,AED_X_Volume), true, true];
 _unit setVariable [QEGVAR(circulation,AED_X_VolumePatient), false, true];
-_unit setVariable [QEGVAR(circulation,use), false, true];
-_unit setVariable [QEGVAR(circulation,returnedAED), false, true];
+_unit setVariable [QEGVAR(circulation,AED_X_Connected), false, true];
 _unit setVariable [QEGVAR(circulation,asystole), 1, true];
 _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 _unit setVariable [QEGVAR(circulation,AEDinUse), false, true];
 _unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUNC(circulation,generateBloodType), true];
+
+_unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 
 // KAT Pharmacy
 

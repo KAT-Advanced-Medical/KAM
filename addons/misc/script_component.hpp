@@ -21,3 +21,6 @@
 #define VAR_TOURNIQUET              "ACE_medical_tourniquets"
 #define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
 #define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
+
+#define VAR_BLOODPRESSURE_CHANGE QEGVAR(circulation,BPChange)
+#define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])

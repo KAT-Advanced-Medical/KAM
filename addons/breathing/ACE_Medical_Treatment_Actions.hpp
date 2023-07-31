@@ -1,5 +1,18 @@
 class ACE_Medical_Treatment_Actions {
     class CheckPulse;
+    class InspectChest: CheckPulse {
+        displayName = CSTRING(inspectChest_display);
+        displayNameProgress = CSTRING(inspectChest_progress);
+        category = "examine";
+        treatmentTime = QGVAR(InspectChest_time);
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_inspectChest);
+        callbackSuccess = QFUNC(inspectChest);
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+    };
     class Pulseoximeter {
         displayName = CSTRING(Pulseoximeter_Display);
         displayNameProgress = CSTRING(placing);

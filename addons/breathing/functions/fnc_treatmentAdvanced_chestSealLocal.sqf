@@ -19,25 +19,9 @@
 params ["_medic", "_patient"];
 
 _patient setVariable [QGVAR(activeChestSeal), true, true];
+_patient setVariable [QGVAR(deepPenetratingInjury), false, true];
+_patient setVariable [QGVAR(pneumothorax), 0, true];
 
-_fnc_random = {
-    if (random 100 <= GVAR(hemopneumothoraxChance)) then {
-        _patient setVariable [QGVAR(hemopneumothorax), true, true];
-    };
-};
-
-if !(GVAR(pneumothorax_hardcore)) exitWith {
-    if (_patient getVariable [QGVAR(pneumothorax), false]) then {
-        _patient setVariable [QGVAR(pneumothorax), false, true];
-        call _fnc_random;
-        if (!(_patient getVariable [QGVAR(pneumothorax), false]) && {!(_patient getVariable [QGVAR(hemopneumothorax), false]) && {!(_patient getVariable [QGVAR(tensionpneumothorax), false])}}) then {
-            _patient setVariable [QGVAR(activeChestSeal), false, true];
-        };
-    };
-};
-
-_patient setVariable [QGVAR(pneumothorax), false, true];
-
-if (!(_patient getVariable [QGVAR(pneumothorax), false]) && {!(_patient getVariable [QGVAR(hemopneumothorax), false]) && {!(_patient getVariable [QGVAR(tensionpneumothorax), false])}}) then {
-    _patient setVariable [QGVAR(activeChestSeal), false, true];
+if (!(_patient getVariable [QGVAR(hemopneumothorax), false]) && !(_patient getVariable [QGVAR(tensionpneumothorax), false])) then {
+    [_patient, 0, 0, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
 };

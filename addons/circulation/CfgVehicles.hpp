@@ -36,6 +36,47 @@ class CfgVehicles {
         class TransportItems {
             MACRO_ADDITEM(kat_X_AED,1);
         };
+
+        class ACE_Actions {
+            class ACE_MainActions {
+                selection = "interaction_point";
+                distance = 4;
+                displayName = "AED-X";
+                condition = "true";
+                class AED_X_Shock {
+                    displayName = CSTRING(AEDXStation_Action_Shock);
+                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic) && _target getVariable [ARR_2(QQGVAR(AED_X_Connected), false)] && !(_target getVariable [ARR_2(QQGVAR(AEDInUse), false)]) && {!((_target getVariable QQGVAR(AED_X_Patient)) getVariable [ARR_2(QQEGVAR(airway,recovery),false)])});
+                    statement = QUOTE([ARR_4(_player, (_target getVariable QQGVAR(AED_X_Patient)), 'body', 'AEDXPlaced')] call ACEFUNC(medical_treatment,treatment));
+                    showDisabled = 0;
+                    //icon = QPATHTOF(ui\X_Series-Device_W.paa);
+                };
+                class AED_X_ConnectMonitor {
+                    displayName = CSTRING(AEDX_Action_ConnectMonitor);
+                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic) && !(_target getVariable [ARR_2(QQGVAR(AED_X_Connected), false)]) && !(_target getVariable [ARR_2(QQGVAR(AEDInUse), false)]));
+                    statement = "";
+                    insertChildren = QUOTE([ARR_2(_player, _target)] call FUNC(addAEDXActions));
+                    showDisabled = 0;
+                };
+                class AED_X_DisconnectMonitor {
+                    displayName = CSTRING(AEDX_Action_DisconnectMonitor);
+                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic) && _target getVariable [ARR_2(QQGVAR(AED_X_Connected), false)] && !(_target getVariable [ARR_2(QQGVAR(AEDInUse), false)]));
+                    statement = QUOTE(_target setVariable [ARR_3(QQGVAR(AED_X_Connected), false, true)]);
+                    showDisabled = 0;
+                };
+                class AED_X_EnableAudio {
+                    displayName = CSTRING(AEDX_Action_EnableAudio);
+                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic) && !(_target getVariable [ARR_2(QQGVAR(AED_X_Volume), false)]));
+                    statement = QUOTE(_target setVariable [ARR_3(QQGVAR(AED_X_Volume), true, true)]; if !(isNull (_target getVariable [ARR_2(QQGVAR(AED_X_Patient), objNull)])) then {(_target getVariable QQGVAR(AED_X_Patient)) setVariable [ARR_3(QQGVAR(AED_X_VolumePatient), true, true)]});
+                    showDisabled = 0;
+                };
+                class AED_X_DisableAudio {
+                    displayName = CSTRING(AEDX_Action_DisableAudio);
+                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic) && _target getVariable [ARR_2(QQGVAR(AED_X_Volume), false)]);
+                    statement = QUOTE(_target setVariable [ARR_3(QQGVAR(AED_X_Volume), false, true)]; if !(isNull (_target getVariable [ARR_2(QQGVAR(AED_X_Patient), objNull)])) then {(_target getVariable QQGVAR(AED_X_Patient)) setVariable [ARR_3(QQGVAR(AED_X_VolumePatient), false, true)]});
+                    showDisabled = 0;
+                };
+            };
+        };
     };
 
     class ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {
@@ -100,7 +141,7 @@ class CfgVehicles {
             };
             class ACE_Equipment {
                 class AED_X_removeSound {
-                    displayName = CSTRING(X_Action_removeSound);
+                    displayName = CSTRING(AEDX_Action_addSound);
                     condition = QUOTE('kat_X_AED' in (items _player) && (_player getVariable [ARR_2(QQGVAR(AED_X_Volume), false])));
                     statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_Volume), false, true)]);
                     showDisabled = 0;
@@ -108,7 +149,7 @@ class CfgVehicles {
                     icon = QPATHTOF(ui\X_Series-Device_W.paa);
                 };
                 class AED_X_addSound : AED_X_removeSound {
-                    displayName = CSTRING(X_Action_addSound);
+                    displayName = CSTRING(AEDX_Action_removeSound);
                     condition = QUOTE('kat_X_AED' in (items _player) && !(_player getVariable [ARR_2(QQGVAR(AED_X_Volume), false])));
                     statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_Volume), true, true)]);
                 };
@@ -121,9 +162,9 @@ class CfgVehicles {
                     icon = "";
                 };
                 class placeAED {
-                    displayName=CSTRING(place_AED);
-                    condition="'kat_AED' in (items ACE_player)";
-                    exceptions[]=
+                    displayName = CSTRING(place_AED);
+                    condition = QUOTE('kat_AED' in (items _player));
+                    exceptions[] =
                     {
                         "notOnMap",
                         "isNotInside",
@@ -132,9 +173,15 @@ class CfgVehicles {
                         "isNotSwimming",
                         "isNotOnLadder"
                     };
-                    statement="call kat_circulation_fnc_placeAED";
-                    icon="";
-                    showDisabled=0;
+                    statement = QUOTE([ARR_2(_player,'kat_AED')] call FUNC(placeAED));
+                    icon = "";
+                    showDisabled = 0;
+                };
+                class placeAEDX : placeAED {
+                    displayName = "Place AED-X";//CSTRING(place_AEDX);
+                    condition = QUOTE('kat_X_AED' in (items _player));
+                    statement = QUOTE([ARR_2(_player,'kat_X_AED')] call FUNC(placeAED));
+                    icon = QPATHTOF(ui\X_Series-Device_W.paa);
                 };
             };
         };

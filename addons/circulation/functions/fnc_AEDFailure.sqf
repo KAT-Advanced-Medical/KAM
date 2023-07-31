@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorObject] call kat_circulation_fnc_AEDStart
+ * [player, cursorObject] call kat_circulation_fnc_AEDFailure
  *
  * Public: No
  */
@@ -20,4 +20,4 @@ params ["_medic", "_patient"];
 
 _patient setVariable [QACEGVAR(medical,CPR_provider), objNull, true];
 _patient setVariable [QGVAR(AEDinUse), false, true];
-_patient setVariable [QGVAR(soundPlayed), false, true];
+_patient setVariable [QGVAR(AEDSoundPlaying), false, true];

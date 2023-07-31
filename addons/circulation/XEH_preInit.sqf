@@ -142,6 +142,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
+//Sets medical level required to pick up/use placed AED/X Station
+[
+    QGVAR(medLvl_AED_Station_Interact),
+    "LIST",
+    [LLSTRING(SETTING_AEDStation_AllowInteraction),LLSTRING(SETTING_AEDStation_AllowInteraction_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
 // Sets time required to attach AED-X monitor
 [
     QGVAR(AED_X_AttachTime),
@@ -168,7 +178,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(DISTANCELIMIT_AED_X),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [2, 100, 30, 0],
+    [2, 15, 5, 0],
     true
 ] call CBA_Settings_fnc_init;
 

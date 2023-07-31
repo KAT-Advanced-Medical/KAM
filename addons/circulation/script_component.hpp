@@ -37,3 +37,8 @@
 
 #define VAR_INTERNAL_BLEEDING QGVAR(internalBleeding)
 #define GET_INTERNAL_BLEEDING(unit) (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
+
+#define GET_BLOOD_PRESSURE(unit) ([unit] call EFUNC(circulation,getBloodPressure))
+
+#define VAR_BLOODPRESSURE_CHANGE QGVAR(BPChange)
+#define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])

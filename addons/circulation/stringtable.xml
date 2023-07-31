@@ -913,23 +913,7 @@
             <Japanese>バイタルの値を監視し、人を蘇生させるために使用されます</Japanese>
             <Portuguese>Usado para monitorar valores vitais e para ressuscitar pessoas</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_X_Action_Use">
-            <English>Monitor vitals</English>
-            <German>Überwache Werte</German>
-            <Polish>Monitoruj parametry życiowe</Polish>
-            <Spanish>Monitorear constantes vitales</Spanish>
-            <Chinese>監控生命跡象</Chinese>
-            <Chinesesimp>监控生命迹象</Chinesesimp>
-            <Czech>Monitorování vitálních funkcí</Czech>
-            <Korean>모니터링 연결하기</Korean>
-            <French>Monitorer les constantes vitales</French>
-            <Turkish>Monitor vitals</Turkish>
-            <Italian>Monitorare parametri vitali</Italian>
-            <Russian>Мониторинг основных показателей</Russian>
-            <Japanese>バイタルを監視する</Japanese>
-            <Portuguese>Monitorar sinais vitais</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Circulation_Defib_Action_Use">
+        <Key ID="STR_KAT_Circulation_AED_Action_Use">
             <English>Use AED defibrillator</English>
             <German>Verwende AED Defibrillator</German>
             <Polish>Użyj defibrylatora AED</Polish>
@@ -945,7 +929,7 @@
             <Japanese>AED 除細動器を使用する</Japanese>
             <Portuguese>Usar desfibrilador DEA</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_DefibS_Action_Use">
+        <Key ID="STR_KAT_Circulation_AEDStation_Action_Use">
             <English>Use AED Station</English>
             <German>Verwende AED Station</German>
             <Polish>Użyj stacji AED</Polish>
@@ -961,8 +945,11 @@
             <Japanese>AEDステーションを使用する</Japanese>
             <Portuguese>Usar estação DEA</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_AED_PROGRESS">
-            <English>Using the defibrillator...</English>
+        <Key ID="STR_KAT_Circulation_AEDVehicle_Action_Use">
+            <English>Vehicle: Use AED</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AED_Action_Progress">
+            <English>Using AED</English>
             <German>Setze Defibrillator ein...</German>
             <Chinese>使用除顫器中...</Chinese>
             <Chinesesimp>使用除颤器中...</Chinesesimp>
@@ -977,8 +964,8 @@
             <Japanese>除細動器の使用...</Japanese>
             <Portuguese>Usando o desfibrilador...</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_AED_X_Action_Use">
-            <English>Use AED-X defibrillator</English>
+        <Key ID="STR_KAT_Circulation_AEDX_Action_Use">
+            <English>Use AED-X</English>
             <German>Verwende AED-X Defibrillator</German>
             <Polish>Użyj defibrylatora AED-X</Polish>
             <Spanish>Usar el desfibrilador DEA-X</Spanish>
@@ -993,23 +980,10 @@
             <Japanese>AED-X 除細動器を使用する</Japanese>
             <Portuguese>Usar desfibrilador DEA-X</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_X_Action_Remove">
-            <English>Remove monitoring</English>
-            <German>Entferne Überwachung</German>
-            <Polish>Przestań monitorować</Polish>
-            <Spanish>Retirar monitoreo</Spanish>
-            <Chinese>移除監控</Chinese>
-            <Chinesesimp>移除监控</Chinesesimp>
-            <Czech>Odstranit monitorování</Czech>
-            <Korean>모니터링 해제</Korean>
-            <French>Retirer le moniteur</French>
-            <Turkish>İzlemeyi kaldır</Turkish>
-            <Italian>Rimuovere il monitoraggio</Italian>
-            <Russian>Удалить мониторинг</Russian>
-            <Japanese>モニターを取り外す</Japanese>
-            <Portuguese>Remover monitoramento</Portuguese>
+        <Key ID="STR_KAT_Circulation_AEDXStation_Action_Use">
+            <English>Use AED-X Station</English>
         </Key>
-        <Key ID="STR_KAT_Circulation_Vehicle_AED_X_Action_Use">
+        <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_Use">
             <English>Vehicle: Use AED-X</English>
             <German>Fahrzeug: AED-X nutzen</German>
             <Polish>Pojazd: Użyj AED-X</Polish>
@@ -1025,8 +999,27 @@
             <Russian>Транспортное средство: Используйте AED-X</Russian>
             <Portuguese>Veículo: Utilizar DEA-X</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_Vehicle_X_Action_Use">
-            <English>Vehicle: Attach AED-X</English>
+        <Key ID="STR_KAT_Circulation_AEDX_Action_ConnectMonitor">
+            <English>Monitor Vitals</English>
+            <German>Überwache Werte</German>
+            <Polish>Monitoruj parametry życiowe</Polish>
+            <Spanish>Monitorear constantes vitales</Spanish>
+            <Chinese>監控生命跡象</Chinese>
+            <Chinesesimp>监控生命迹象</Chinesesimp>
+            <Czech>Monitorování vitálních funkcí</Czech>
+            <Korean>모니터링 연결하기</Korean>
+            <French>Monitorer les constantes vitales</French>
+            <Turkish>Monitor vitals</Turkish>
+            <Italian>Monitorare parametri vitali</Italian>
+            <Russian>Мониторинг основных показателей</Russian>
+            <Japanese>バイタルを監視する</Japanese>
+            <Portuguese>Monitorar sinais vitais</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDXStation_Action_ConnectMonitor">
+            <English>Station: Connect Vitals Monitor</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_ConnectMonitor">
+            <English>Vehicle: Connect Vitals Monitor</English>
             <German>Fahrzeug: AED-X anschließen</German>
             <Polish>Pojazd: Podłącz AED-X</Polish>
             <French>Véhicule: Attacher AED-X</French>
@@ -1041,24 +1034,33 @@
             <Russian>Транспортное средство: прикрепите AED-X</Russian>
             <Portuguese>Veículo: Colocar DEA-X</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_Vehicle_X_Action_Remove">
-            <English>Vehicle: Remove AED-X</English>
-            <German>Fahrzeug: AED-X entfernen</German>
-            <Polish>Pojazd: Odłącz AED-X</Polish>
-            <French>Véhicule: Retirer AED-X</French>
-            <Korean>차량: X-시리즈 AED 제거</Korean>
-            <Turkish>Araç: AED-X'i kaldırın</Turkish>
-            <Chinese>车辆。移除AED-X</Chinese>
-            <Chinesesimp>载具: 移除AED-X</Chinesesimp>
-            <Italian>Veicolo: Rimuovere DAE-X</Italian>
-            <Spanish>Vehículo: Retirar DEA-X</Spanish>
-            <Czech>Vozidlo: Odstranit AED-X</Czech>
-            <Japanese>車両: AED-Xを取り外します</Japanese>
-            <Russian>Транспортное средство: удалить AED-X</Russian>
-            <Portuguese>Veículo: Remover DEA-X</Portuguese>
+        <Key ID="STR_KAT_Circulation_AEDX_Action_DisconnectMonitor">
+            <English>Disconnect Vitals Monitor</English>
+            <German>Entferne Überwachung</German>
+            <Polish>Przestań monitorować</Polish>
+            <Spanish>Retirar monitoreo</Spanish>
+            <Chinese>移除監控</Chinese>
+            <Chinesesimp>移除监控</Chinesesimp>
+            <Czech>Odstranit monitorování</Czech>
+            <Korean>모니터링 해제</Korean>
+            <French>Retirer le moniteur</French>
+            <Turkish>İzlemeyi kaldır</Turkish>
+            <Italian>Rimuovere il monitoraggio</Italian>
+            <Russian>Удалить мониторинг</Russian>
+            <Japanese>モニターを取り外す</Japanese>
+            <Portuguese>Remover monitoramento</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_AED_X_Action_Progress">
-            <English>Using AED-X defibrillator</English>
+        <Key ID="STR_KAT_Circulation_AEDXStation_Action_Shock">
+            <English>Administer Shock</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Action_EnableAudio">
+            <English>Vitals Monitor Audio ON</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Action_DisableAudio">
+            <English>Vitals Monitor Audio OFF</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Action_Progress">
+            <English>Using AED-X Defibrillator</English>
             <German>Verwende AED-X Defibrillator</German>
             <Polish>Korzystanie z defibrylatora AED-X</Polish>
             <Spanish>Usando el desfibrilador DEA-X</Spanish>
@@ -1073,7 +1075,7 @@
             <Japanese>AED-X 除細動器の使用</Japanese>
             <Portuguese>Usando desfibrilador DEA-X</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_X_Action_Progress">
+        <Key ID="STR_KAT_Circulation_AEDX_Action_Connecting_Progress">
             <English>Connecting</English>
             <German>Anschließen</German>
             <Polish>Łączenie</Polish>
@@ -1089,7 +1091,7 @@
             <Japanese>接続中</Japanese>
             <Portuguese>Conectando</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_X_Remove_Action_Progress">
+        <Key ID="STR_KAT_Circulation_AEDX_Action_Disconnecting_Progress">
             <English>Disconnecting</English>
             <German>Entfernen</German>
             <Polish>Rozłączanie</Polish>
@@ -1105,8 +1107,8 @@
             <Japanese>切断中</Japanese>
             <Portuguese>Disconectando</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_X_Action_removeSound">
-            <English>Disable AED-X monitor audio</English>
+        <Key ID="STR_KAT_Circulation_AEDX_Action_removeSound">
+            <English>AED-X Vitals Monitor Audio OFF</English>
             <German>AED-X leiser schalten</German>
             <Polish>Wycisz dźwięki AED X</Polish>
             <Spanish>Bajar el volúmen del DEA X</Spanish>
@@ -1121,8 +1123,8 @@
             <Japanese>AED Xの音量を下げる</Japanese>
             <Portuguese>Abaixar o volume do DEA-X</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_X_Action_addSound">
-            <English>Enable AED-X monitor audio</English>
+        <Key ID="STR_KAT_Circulation_AEDX_Action_addSound">
+            <English>AED-X Vitals Monitor Audio ON</English>
             <German>AED-X lauter schalten</German>
             <Polish>Włącz dźwięki AED X</Polish>
             <Spanish>Subir el volúmen del DEA X</Spanish>
@@ -1186,7 +1188,7 @@
             <Portuguese>Colocar DEA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_PickUpAction">
-            <English>Pickup AED</English>
+            <English>Pick Up AED</English>
             <German>AED aufheben</German>
             <Polish>Podnieś AED</Polish>
             <Spanish>Recoger DEA</Spanish>
@@ -1580,6 +1582,12 @@
             <Italian>Livello d'addestramento richiesto per usare il DAE-X</Italian>
             <Japanese>AED-Xの使用に訓練レベルを必要とさせます。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um DEA-X</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
+            <English>Allow AED/X Station Interaction</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
+            <English>Medical level required to pick up/interact with placed AED/X station</English>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_AttachTime">
             <English>Time required to attach AED-X monitor</English>

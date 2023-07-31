@@ -11,7 +11,7 @@
  * <BOOLEAN>
  *
  * Example:
- * [player, cursorTarget] call kat_circulation_fnc_AED_analyze;
+ * [player, cursorTarget] call kat_circulation_fnc_AEDanalyze;
  *
  * Public: No
  */
