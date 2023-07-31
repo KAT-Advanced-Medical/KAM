@@ -32,6 +32,7 @@ GVAR(CPRCancel_MouseID) = [0xF1, [false, false, false], {
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
 
 CPRTime = -5;
+CPRStartTime = CBA_missionTime - 5;
 
 private _inVehicle = vehicle _medic isEqualTo _medic;
 
@@ -51,7 +52,7 @@ if (_inVehicle) then {
         params ["_args", "_idPFH"];
         _args params ["_medic", "_patient", "_inVehicle"];
     
-        if (!(alive _medic) || IS_UNCONSCIOUS(_medic) || (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull) exitWith { // Stop CPR
+        if (!(alive _medic) || IS_UNCONSCIOUS(_medic) || !(IS_UNCONSCIOUS(_patient)) || (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull) exitWith { // Stop CPR
             [_idPFH] call CBA_fnc_removePerFrameHandler;
 
             if(_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo _medic) then {
@@ -72,6 +73,10 @@ if (_inVehicle) then {
             private _time = format ["%1:%2",(if ((floor(((CPRTime/3600) - floor(CPRTime/3600)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((CPRTime/3600) - floor(CPRTime/3600)) * 60)), (if ((floor(((CPRTime/60) - floor(CPRTime/60)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((CPRTime/60) - floor(CPRTime/60)) * 60))];
 
             [_patient, "activity", LSTRING(Activity_CPR), [[_medic, false, true] call ACEFUNC(common,getName), _time]] call ACEFUNC(medical_treatment,addToLog);
+
+            if (CPRStartTime < CBA_missionTime - 18) then {
+                _patient setVariable [QGVAR(OxygenationPeriod), CBA_missionTime, true];
+            };
         };
 
         if (loopCPR) then {
@@ -90,13 +95,17 @@ if (_inVehicle) then {
 }, [_medic, _patient, _inVehicle], 2.1] call CBA_fnc_waitAndExecute;
 
 [{
-    params ["_args", "_idPFH"];
-    _args params ["_medic", "_patient"];
+    params ["_medic", "_patient"];
 
-    if ((_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
-    };
+    [{
+        params ["_args", "_idPFH"];
+        _args params ["_medic", "_patient"];
 
-    [_medic, _patient] call FUNC(cprSuccess);
-    CPRTime = CPRTime + 5;
-}, 5, [_medic, _patient]] call CBA_fnc_addPerFrameHandler;
+        if ((_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull) exitWith {
+            [_idPFH] call CBA_fnc_removePerFrameHandler;
+        };
+
+        [_medic, _patient] call FUNC(cprSuccess);
+        CPRTime = CPRTime + 5;
+    }, 5, [_medic, _patient]] call CBA_fnc_addPerFrameHandler;
+}, [_medic, _patient], 5 + 5] call CBA_fnc_waitAndExecute;
