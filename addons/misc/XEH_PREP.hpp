@@ -15,6 +15,7 @@ PREP(getUniqueItems);
 PREP(groupID);
 PREP(handleRespawn);
 PREP(hasItem);
+PREP(hasStableVitals);
 PREP(headTourniquet);
 PREP(headTourniquetLocal);
 PREP(heliAddActionDeploy);

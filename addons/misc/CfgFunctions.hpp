@@ -38,6 +38,14 @@ class CfgFunctions {
             };
         };
     };
+    class overwrite_ace_medical_status {
+        tag = "ace_medical_status";
+        class ace_medical_status {
+            class hasStableVitals {
+                file = QPATHTOF(functions\fnc_hasStableVitals.sqf);
+            };
+        };
+    };
     class overwrite_dogtags {
         tag = "ace_dogtags";
         class ace_dogtags {
