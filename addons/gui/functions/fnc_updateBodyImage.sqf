@@ -16,7 +16,7 @@
  * Public: No
  */
 
-[] spawn {
+[] spawn { // TODO get rid of spawn
     disableSerialization;
     private _display = uiNamespace getVariable ["ace_medical_gui_menuDisplay", displayNull];
     private _ctrlBodyImage = _display displayCtrl IDC_BODY_GROUP;

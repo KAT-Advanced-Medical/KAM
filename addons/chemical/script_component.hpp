@@ -22,25 +22,6 @@
 #include "\a3\ui_f\hpp\defineCommonGrids.inc"
 #include "\a3\ui_f\hpp\defineCommonColors.inc"
 
-// Returns a text config entry as compiled code or variable from missionNamespace
-#define GET_FUNCTION(var,cfg) \
-    private var = getText (cfg); \
-    if (isNil var) then { \
-        var = compile var; \
-    } else { \
-        var = missionNamespace getVariable var; \
-    }
-
-// Returns a number config entry with default value of 0
-// If entry is a string, will get the variable from missionNamespace
-#define GET_NUMBER_ENTRY(cfg) \
-    if (isText (cfg)) then { \
-        missionNamespace getVariable [getText (cfg), 0]; \
-    } else { \
-        getNumber (cfg); \
-    }
-
-
 // Default versioning level
 #define DEFAULT_VERSIONING_LEVEL 2
 
