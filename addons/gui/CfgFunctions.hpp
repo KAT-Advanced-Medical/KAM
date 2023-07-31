@@ -5,6 +5,9 @@ class CfgFunctions {
             class displayPatientInformation {
                 file = QPATHTOF(functions\fnc_displayPatientInformation.sqf);
             };
+            class menuPFH {
+                file = QPATHTOF(functions\fnc_menuPFH.sqf);
+            };
             class onMenuOpen {
                 file = QPATHTOF(functions\fnc_onMenuOpen.sqf);
             };

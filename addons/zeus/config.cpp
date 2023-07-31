@@ -24,17 +24,6 @@ class CfgPatches {
     };
 };
 
-class CfgFunctions {
-    class overwrite_menuPFH {
-        tag = "ace_medical_gui";
-        class ace_medical_gui {
-            class menuPFH {
-                file = QPATHTOF(functions\fnc_menuPFH.sqf);
-            };
-        };
-    };
-};
-
 #include "CfgVehicles.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgEventHandlers.hpp"
