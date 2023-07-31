@@ -158,6 +158,13 @@ class CfgVehicles {
                     statement = QUOTE(_target setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), false, true)]; [ARR_2(_target, false)] call FUNC(AEDXPlaced_VitalsMonitor_SetVolume));
                     icon = QPATHTOF(ui\icon_aedx_volume_off.paa);
                 };
+                class AED_X_MeasureBloodPressure {
+                    displayName = CSTRING(AEDX_Monitor_MeasureBloodPressure);
+                    condition = QUOTE(!(_target getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Patient), objNull)] isEqualTo objNull) && {(missionNamespace getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_BloodPressureInterval), 0)] > 0)});
+                    statement = QUOTE(_target getVariable QQGVAR(AED_X_VitalsMonitor_Patient) call FUNC(measureBloodPressure));
+                    showDisabled = 0;
+                    icon = QPATHTOF(ui\icon_aed_pads.paa);
+                };
             };
         };
     };

@@ -32,6 +32,7 @@ PREP(groupID);
 PREP(handleCardiacArrest);
 PREP(handleTreatment);
 PREP(init);
+PREP(measureBloodPressure);
 PREP(onCloseDialog);
 PREP(placeAED);
 PREP(removeLog);

@@ -213,6 +213,29 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets vitals monitor blood pressure measurement behaviour
+// Automatic Instant - every second along with HR
+// Automatic - use set time interval to update and store BP for patient
+// Manual - must manually push to measure BP on AED-X
+[
+    QGVAR(AED_X_VitalsMonitor_BloodPressureInterval),
+    "LIST",
+    [LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [[0, 1, 2], [LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_AutomaticInstant), LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Automatic), LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Manual)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Set vitals monitor blood pressure measurement time interval
+[
+    QGVAR(AED_X_VitalsMonitor_BloodPressureInterval_Time),
+    "SLIDER",
+    [LLSTRING(SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [30, 300, 30, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 //Enable different CPR chances per medical level
 [
     QGVAR(enable_CPR_Chances),

@@ -224,6 +224,14 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected), false)] || _patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Connected), false)]) && ((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), nil)]) select 2 isEqualTo 'kat_X_AED') && !(_patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false)]));
         callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_VolumePatient), true, true)]; if((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), [ARR_3(-1,-1,-1)])]) select 1 isEqualTo 1) then {[ARR_2(((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), nil)]) select 0), true)] call FUNC(AEDXPlaced_VitalsMonitor_SetVolume)});
     };
+    class AEDXMeasureBloodPressure: AnalyzeRhythm {
+        displayName = CSTRING(AEDX_Monitor_MeasureBloodPressure);
+        allowedSelections[] = {"Head","LeftArm","RightArm","Body","LeftLeg","RightLeg"};
+        icon = QPATHTOF(ui\icon_aed_pads.paa);
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Connected), false)] && (missionNamespace getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_BloodPressureInterval), 0)] > 0));
+        callbackSuccess = QUOTE(_patient call FUNC(measureBloodPressure));
+        medicRequired = QGVAR(medLvl_AED_X);
+    };
     class ViewMonitor: CheckPulse {
         displayName = CSTRING(ViewMonitor);
         displayNameProgress = "";
