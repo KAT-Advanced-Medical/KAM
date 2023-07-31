@@ -120,9 +120,10 @@ ctrlShow [69060, false];
         switch (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0]) do {
             case 4: {_ekgDisplay = QPATHTOF(ui\ekg_vt.paa);};
             case 3: {_ekgDisplay = QPATHTOF(ui\ekg_vf.paa);};
+            case 2: {_ekgDisplay = QPATHTOF(ui\ekg_sinus.paa);};
             case 1: {_ekgDisplay = QPATHTOF(ui\ekg_asystole.paa);};
             default {
-                if(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,inCardiacArrest), false] || !(alive GVAR(AEDX_MonitorTarget))) then {
+                if((GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,inCardiacArrest), false] && !(GVAR(AdvRhythm))) || !(alive GVAR(AEDX_MonitorTarget))) then {
                     _ekgDisplay = QPATHTOF(ui\ekg_asystole.paa);
                 } else {
                     private _hr = 0;
