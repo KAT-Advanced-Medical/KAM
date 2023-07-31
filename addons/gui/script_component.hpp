@@ -69,6 +69,7 @@
 #define IDC_BODY_GROUP      6000
 #define IDC_BODY_HEAD       6005
 #define IDC_BODY_TORSO      6010
+#define IDC_BODY_TORSO_I    6011 // Chemical
 #define IDC_BODY_ARMLEFT    6015
 #define IDC_BODY_ARMRIGHT   6020
 #define IDC_BODY_LEGLEFT    6025
