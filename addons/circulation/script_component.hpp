@@ -29,9 +29,3 @@
 #define pxToScreen_H(X) (X / 2048 * GUI_GRID_H)
 
 #define GRID_H ((((safezoneW / safezoneH) min 1.2) / 1.2) / 22)
-
-#define GET_BLOOD_PRESSURE(unit) ([unit] call EFUNC(circulation,getBloodPressure))
-
-#define VAR_BLOODPRESSURE_CHANGE QGVAR(BPChange)
-#define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])
-

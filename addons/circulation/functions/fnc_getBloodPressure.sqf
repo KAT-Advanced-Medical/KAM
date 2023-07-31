@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Glowbal
+ * Modified: Blue
  * Calculate the blood pressure of a unit.
  *
  * Arguments:

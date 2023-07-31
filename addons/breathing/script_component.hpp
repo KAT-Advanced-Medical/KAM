@@ -16,6 +16,3 @@
 
 #include "\x\kat\addons\main\script_macros.hpp"
 #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
-
-#define VAR_BLOODPRESSURE_CHANGE QEGVAR(circulation,BPChange)
-#define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])

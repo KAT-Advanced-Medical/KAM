@@ -196,9 +196,13 @@
 #include "script_debug.hpp"
 
 // Airway
-#define VAR_SPO2                    QEGVAR(breathing,airwayStatus)
-#define GET_SPO2(unit)              (unit getVariable [VAR_SPO2, 100])
+#define VAR_SPO2                       QEGVAR(breathing,airwayStatus)
+#define GET_SPO2(unit)                 (unit getVariable [VAR_SPO2, 100])
 
 // Circulation
-#define VAR_INTERNAL_BLEEDING       QEGVAR(circulation,internalBleeding)
-#define GET_INTERNAL_BLEEDING(unit) (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
+#define VAR_INTERNAL_BLEEDING          QEGVAR(circulation,internalBleeding)
+#define GET_INTERNAL_BLEEDING(unit)    (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
+
+#define GET_BLOOD_PRESSURE(unit)       ([unit] call EFUNC(circulation,getBloodPressure))
+#define VAR_BLOODPRESSURE_CHANGE       QEGVAR(circulation,bloodPressureChange)
+#define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])
