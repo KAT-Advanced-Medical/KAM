@@ -146,10 +146,10 @@ if(_target getVariable [QEGVAR(chemical,airPoisoning),false]) then{
 };
 
 // EDIT by Katalam & Tomcat
-if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then {
-    private _a = _target getVariable [QGVAR(airway_item), ""];
+if (_target getVariable [QEGVAR(airway,airway), false] && _selectionN isEqualTo 0) then {
+    private _a = _target getVariable [QEGVAR(airway,airway_item), ""];
     if !(_a isEqualTo "") then {
-        private _text = format [LSTRING(%1_Display), _a];
+        private _text = format [LELSTRING(airway,%1_Display), _a];
         _woundEntries pushback [localize _text, [0.1, 1, 1, 1]];
     };
 };
@@ -160,12 +160,12 @@ if(_target getVariable [QEGVAR(breathing,pulseoximeter), false] && _selectionN i
     };
 };
 
-if (_target getVariable [QGVAR(overstretch), false] && _selectionN isEqualTo 0) then {
-    _woundEntries pushback [LLSTRING(overstretched), [0.1, 1, 1, 1]];
+if (_target getVariable [QEGVAR(airway,overstretch), false] && _selectionN isEqualTo 0) then {
+    _woundEntries pushback [LELSTRING(airway,overstretched), [0.1, 1, 1, 1]];
 };
 
-if (_target getVariable [QGVAR(recovery), false]) then {
-    _entries pushback [LLSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
+if (_target getVariable [QEGVAR(airway,recovery), false]) then {
+    _entries pushback [LELSTRING(airway,RecoveryPosition), [0.1, 1, 1, 1]];
 };
 
 // Display cyanosis in overview tab, only when head/arms are selected

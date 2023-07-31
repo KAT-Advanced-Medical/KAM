@@ -18,6 +18,7 @@ PREP(incompatibilityWarning);
 PREP(init);
 PREP(removeItemFromVehicle);
 PREP(removeIVbag);
+PREP(setUnconscious);
 PREP(slingArmband);
 PREP(stretcher);
 PREP(stringToArray);

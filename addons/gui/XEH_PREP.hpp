@@ -1,3 +1,6 @@
+PREP(displayPatientInformation);
 PREP(onMenuOpen);
-PREP(updateCategories);
 PREP(updateActions);
+PREP(updateCategories);
+PREP(updateInjuryList);
+PREP(updateLogList);

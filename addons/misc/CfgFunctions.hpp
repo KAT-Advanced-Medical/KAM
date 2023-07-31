@@ -18,4 +18,12 @@ class CfgFunctions {
             };
         };
     };
+    class ace_medical {
+        tag = "ace_medical";
+        class ace_medical {
+            class setUnconscious {
+                file = QPATHTOF(functions\fnc_setUnconscious.sqf);
+            };
+        };
+    };
 };
