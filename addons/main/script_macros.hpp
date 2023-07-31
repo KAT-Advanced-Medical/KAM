@@ -70,7 +70,6 @@
 
 #define ACEFUNC(module,function)    TRIPLES(DOUBLES(ACE_PREFIX,module),fnc,function)
 #define QACEFUNC(module,function)   QUOTE(ACEFUNC(module,function))
-#define DACEFUNC(module,function)   TRIPLES(DOUBLES(ACE_PREFIX,module),fnc,function)
 
 #define ACELSTRING(module,string)   QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,module),string))
 #define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))

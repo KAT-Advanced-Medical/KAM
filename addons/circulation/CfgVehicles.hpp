@@ -40,12 +40,14 @@ class CfgVehicles {
                     condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player, _target, 1)] call FUNC(AEDXPlaced_CheckCondition));
                     statement = QUOTE([ARR_2(_player, (_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient), nil)]))] call FUNC(AED_Analyze));
                     showDisabled = 0;
+                    icon = QPATHTOF(ui\icon_aed_shock.paa);
                 };
                 class AED_Shock {
                     displayName = CSTRING(Defibrillator_Action_Shock);
                     condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player, _target, 2)] call FUNC(AEDXPlaced_CheckCondition));
                     statement = QUOTE((_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient), nil)]) setVariable [ARR_3(QQGVAR(Defibrillator_Charged), false, true)]);
                     showDisabled = 0;
+                    icon = QPATHTOF(ui\icon_aed_shock.paa);
                 };
                 class AED_PlacePads {
                     displayName = CSTRING(AED_Action_PlacePads);
@@ -53,6 +55,7 @@ class CfgVehicles {
                     statement = "";
                     insertChildren = QUOTE([ARR_2(_player, _target)] call FUNC(addDefibrillatorActions));
                     showDisabled = 0;
+                    icon = QPATHTOF(ui\icon_aed_pads.paa);
                 };
                 class AED_RemovePads: AED_PlacePads {
                     displayName = CSTRING(Defibrillator_Action_RemovePads);
@@ -82,35 +85,35 @@ class CfgVehicles {
                     condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic));
                     statement = QUOTE([ARR_3(_player, _target, 1)] call FUNC(AEDX_ViewMonitor));
                     showDisabled = 0;
-                    //icon = QPATHTOF(ui\X_Series-Device_W.paa);
+                    icon = QPATHTOF(ui\icon_aedx_monitor.paa);
                 };
                 class AED_X_ManualCharge {
                     displayName = CSTRING(Defibrillator_Action_Charge);
                     condition = QUOTE([ARR_3(_player, _target, 6)] call FUNC(AEDXPlaced_CheckCondition));
                     statement = QUOTE([ARR_2(_player, (_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient), nil)]))] call FUNC(Defibrillator_ManualCharge));
                     showDisabled = 0;
-                    //icon = QPATHTOF(ui\X_Series-Device_W.paa);
+                    icon = QPATHTOF(ui\icon_aed_shock.paa);
                 };
                 class AED_X_CancelCharge {
                     displayName = CSTRING(Defibrillator_Action_CancelCharge);
                     condition = QUOTE([ARR_3(_player, _target, 7)] call FUNC(AEDXPlaced_CheckCondition));
                     statement = QUOTE((_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient), nil)]) setVariable [ARR_3(QQGVAR(DefibrillatorInUse), false, true)]; (_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient), nil)]) setVariable [ARR_3(QQGVAR(Defibrillator_Charged), false, true)]);
                     showDisabled = 0;
-                    //icon = QPATHTOF(ui\X_Series-Device_W.paa);
+                    icon = QPATHTOF(ui\icon_aed_shock.paa);
                 };
                 class AED_X_Shock {
                     displayName = CSTRING(Defibrillator_Action_Shock);
                     condition = QUOTE([ARR_3(_player, _target, 2)] call FUNC(AEDXPlaced_CheckCondition));
                     statement = QUOTE((_target getVariable QQGVAR(Defibrillator_Patient)) setVariable [ARR_3(QQGVAR(Defibrillator_Charged), false, true)]);
                     showDisabled = 0;
-                    //icon = QPATHTOF(ui\X_Series-Device_W.paa);
+                    icon = QPATHTOF(ui\icon_aed_shock.paa);
                 };
                 class AED_X_AnalyzeRhythm {
                     displayName = CSTRING(AnalyzeRhythm);
                     condition = QUOTE([ARR_3(_player, _target, 1)] call FUNC(AEDXPlaced_CheckCondition));
                     statement = QUOTE([ARR_3(_player, (_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient), nil)]), 'AEDX')] call FUNC(AED_Analyze));
                     showDisabled = 0;
-                    //icon = QPATHTOF(ui\X_Series-Device_W.paa);
+                    icon = QPATHTOF(ui\icon_aed_shock.paa);
                 };
                 class AED_X_PlacePads {
                     displayName = CSTRING(AEDX_Action_PlacePads);
@@ -118,12 +121,14 @@ class CfgVehicles {
                     statement = "";
                     insertChildren = QUOTE([ARR_3(_player, _target, 1)] call FUNC(addDefibrillatorActions));
                     showDisabled = 0;
+                    icon = QPATHTOF(ui\icon_aed_pads.paa);
                 };
                 class AED_X_RemovePads: AED_X_PlacePads {
                     displayName = CSTRING(Defibrillator_Action_RemovePads);
                     condition = QUOTE([ARR_3(_player, _target, 3)] call FUNC(AEDXPlaced_CheckCondition));
                     statement = QUOTE([ARR_4(_player, (_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient), nil)]), 'body', 'DefibrillatorRemovePads')] call ace_medical_treatment_fnc_treatment);
                     insertChildren = "";
+                    icon = QPATHTOF(ui\icon_aed_pads.paa);
                 };
                 class AED_X_ConnectMonitor {
                     displayName = CSTRING(AEDX_Action_ConnectMonitor);
@@ -131,23 +136,27 @@ class CfgVehicles {
                     statement = QUOTE([ARR_4(_player, (_target getVariable QQGVAR(Defibrillator_Patient)), 'body', 'AEDXStationConnectVitalsMonitor')] call ACEFUNC(medical_treatment,treatment););
                     //insertChildren = QUOTE([ARR_3(_player, _target, 2)] call FUNC(addDefibrillatorActions));
                     showDisabled = 0;
+                    icon = QPATHTOF(ui\icon_aed_pads.paa);
                 };
                 class AED_X_DisconnectMonitor: AED_X_ConnectMonitor {
                     displayName = CSTRING(AEDX_Action_DisconnectMonitor);
                     condition = QUOTE([ARR_3(_player, _target, 5)] call FUNC(AEDXPlaced_CheckCondition));
                     statement = QUOTE([ARR_4(_player, (_target getVariable QQGVAR(AED_X_VitalsMonitor_Patient)), 'body', 'AEDXDisconnectVitalsMonitor')] call ACEFUNC(medical_treatment,treatment));
                     //insertChildren = "";
+                    icon = QPATHTOF(ui\icon_aed_pads.paa);
                 };
                 class AED_X_EnableAudio {
                     displayName = CSTRING(AEDX_Action_EnableAudio);
                     condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic) && !(_target getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false)]));
                     statement = QUOTE(_target setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), true, true)]; [ARR_2(_target, true)] call FUNC(AEDXPlaced_VitalsMonitor_SetVolume));
                     showDisabled = 0;
+                    icon = QPATHTOF(ui\icon_aedx_volume_on.paa);
                 };
                 class AED_X_DisableAudio: AED_X_EnableAudio {
                     displayName = CSTRING(AEDX_Action_DisableAudio);
                     condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED_X))] call ACEFUNC(medical_treatment,isMedic) && _target getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false)]);
                     statement = QUOTE(_target setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), false, true)]; [ARR_2(_target, false)] call FUNC(AEDXPlaced_VitalsMonitor_SetVolume));
+                    icon = QPATHTOF(ui\icon_aedx_volume_off.paa);
                 };
             };
         };
@@ -242,7 +251,7 @@ class CfgVehicles {
                     displayName = CSTRING(place_AEDX);
                     condition = QUOTE('kat_X_AED' in (items _player));
                     statement = QUOTE([ARR_2(_player,'kat_X_AED')] call FUNC(placeAED));
-                    icon = QPATHTOF(ui\X_Series-Device_W.paa);
+                    icon = QPATHTOF(ui\icon_aedx.paa);
                 };
                 class AEDX_Interactions {
                     displayName = CSTRING(AED_X);
@@ -256,24 +265,26 @@ class CfgVehicles {
                         "isNotSwimming",
                         "isNotOnLadder"
                     };
-                    icon = QPATHTOF(ui\X_Series-Device_W.paa);
+                    icon = QPATHTOF(ui\icon_aedx.paa);
                     class AEDX_ViewMonitor {
                         displayName = CSTRING(ViewMonitor);
                         condition = QUOTE('kat_X_AED' in (items _player));
                         statement = QUOTE([ARR_3(_player, objNull, 2)] call FUNC(AEDX_ViewMonitor));
                         showDisabled = 0;
-                        //icon = QPATHTOF(ui\X_Series-Device_W.paa);
+                        icon = QPATHTOF(ui\icon_aedx_monitor.paa);
                     };
                     class AED_X_removeSound {
                         displayName = CSTRING(AEDX_Action_DisableAudio);
                         condition = QUOTE('kat_X_AED' in (items _player) && (_player getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false])));
                         statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), false, true)]);
                         showDisabled = 0;
+                        icon = QPATHTOF(ui\icon_aedx_volume_off.paa);
                     };
                     class AED_X_addSound : AED_X_removeSound {
                         displayName = CSTRING(AEDX_Action_EnableAudio);
                         condition = QUOTE('kat_X_AED' in (items _player) && !(_player getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false])));
                         statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), true, true)]);
+                        icon = QPATHTOF(ui\icon_aedx_volume_on.paa);
                     };
                 };
             };
