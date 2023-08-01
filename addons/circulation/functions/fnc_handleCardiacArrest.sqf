@@ -56,10 +56,10 @@ if(_initial) then {
 if(GVAR(AdvRhythm_canDeteriorate)) then {
     private _timeToDeteriorate = 0;
 
-    if(GVAR(AdvRhythm_deteriorateTimeWeight) < ACEGVAR(medical_statemachine,cardiacArrestTime)) then {
-        _timeToDeteriorate = random [10, GVAR(AdvRhythm_deteriorateTimeWeight), ACEGVAR(medical_statemachine,cardiacArrestTime)];
+    if(GVAR(AdvRhythm_deteriorateTimeWeight) < GVAR(AdvRhythm_deteriorateTimeWeight)) then {
+        _timeToDeteriorate = random [20, GVAR(AdvRhythm_deteriorateTimeWeight), GVAR(AdvRhythm_deteriorateTimeWeight)];
     } else {
-        _timeToDeteriorate = random [10, ACEGVAR(medical_statemachine,cardiacArrestTime) / 2, ACEGVAR(medical_statemachine,cardiacArrestTime)];
+        _timeToDeteriorate = random [20, GVAR(AdvRhythm_deteriorateTimeWeight) / 2, GVAR(AdvRhythm_deteriorateTimeWeight)];
     };
 
     switch (_cardiacArrestType) do {
@@ -79,7 +79,7 @@ if(GVAR(AdvRhythm_canDeteriorate)) then {
             [_unit], _timeToDeteriorate,
             {
                 // chance to deteriorate straight into asystole (PEA)
-                if(GVAR(AdvRhythm_Hardcore_Enable) && {floor (random 100) < GVAR(AdvRhythm_hardcoreDeteriorationChance)} && {_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 4}) then {
+                if(GVAR(AdvRhythm_Hardcore_Enable) && {floor (random 100) < GVAR(AdvRhythm_hardcoreDeteriorationChance) && {_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 4}}) then {
                     _unit setVariable [QGVAR(cardiacArrestType), 2, true];
                     [_unit, nil, false] call FUNC(handleCardiacArrest);
                 };
