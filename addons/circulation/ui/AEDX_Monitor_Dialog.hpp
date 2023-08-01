@@ -229,17 +229,6 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorText[] = {0,1,0,1};
             text = "Check Pads";
         };
-        class ShockButtonBackground: RscPicture {
-            idc = 69022;
-            x = QUOTE(pxToScreen_X(1487));
-            y = QUOTE(pxToScreen_Y(1380));
-            w = QUOTE(pxToScreen_W(256));
-            h = QUOTE(pxToScreen_H(256));
-            style = 48;
-            colorBackground[] = {0,0,0,0};
-            colorText[] = {1,1,1,1};
-            text = "";
-        };
         class ChargingStatusBlackBackground: BlackBackground {
             idc = 69030;
             x = QUOTE(pxToScreen_X(478));
@@ -452,6 +441,17 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorBackground[] = {0,0,0,0};
             colorText[] = {1,1,1,1};
             text = QPATHTOF(ui\zoll.paa);
+        };
+        class ShockButtonBackground: RscPicture {
+            idc = 69022;
+            x = QUOTE(pxToScreen_X(1487));
+            y = QUOTE(pxToScreen_Y(1380));
+            w = QUOTE(pxToScreen_W(256));
+            h = QUOTE(pxToScreen_H(256));
+            style = 48;
+            colorBackground[] = {0,0,0,0};
+            colorText[] = {1,1,1,1};
+            text = "";
         };
     };
 

@@ -117,10 +117,10 @@ ctrlShow [69060, false];
         ctrlSetText [69021, ""];
         private _ekgDisplay = QPATHTOF(ui\ekg_off.paa);
 
-        if !(_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
+        if !(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
             _ekgDisplay = QPATHTOF(ui\ekg_cpr.paa);
         } else {
-            if !(_patient getVariable [QGVAR(HeartRestart), false]) then {
+            if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(HeartRestart), false]) then {
                 switch (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0]) do {
                     case 4: {_ekgDisplay = QPATHTOF(ui\ekg_vt.paa);};
                     case 3: {_ekgDisplay = QPATHTOF(ui\ekg_vf.paa);};
@@ -195,7 +195,7 @@ ctrlShow [69060, false];
         ctrlSetText [69014, ""];
         ctrlSetText [69016, "---"];
     };
-    if !(_patient getVariable [QGVAR(HeartRestart), false]) then {
+    if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(HeartRestart), false]) then {
         if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
             _hr = GVAR(AEDX_MonitorTarget) call FUNC(getCardiacArrestHeartRate);
 
