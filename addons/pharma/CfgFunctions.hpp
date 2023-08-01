@@ -13,4 +13,13 @@ class CfgFunctions {
             };
         };
     };
+
+    class overwrite_medicalTreatment {
+        tag = "ace_medical_treatment";
+        class ace_medical_treatment {
+            class medicationLocal {
+                file = QPATHTOF(functions\fnc_treatmentAdvanced_medicationLocal.sqf);
+            };
+        };
+    };
 };
