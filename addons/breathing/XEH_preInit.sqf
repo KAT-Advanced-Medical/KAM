@@ -239,21 +239,21 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might help
+// Set if pneumothorax injury should always be visible in medical menu
 [
-    QGVAR(pneumothorax_easymode),
+    QGVAR(PneumothoraxAlwaysVisible),
     "CHECKBOX",
-    [LLSTRING(SETTING_pneumothorax_easymode), LLSTRING(SETTING_pneumothorax_easymode_DESC)],
+    [LLSTRING(SETTING_PneumothoraxAlwaysVisible), LLSTRING(SETTING_PneumothoraxAlwaysVisible_DESCRIPTION)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [false],
     true
 ] call CBA_Settings_fnc_init;
 
-// Enables hardcore mod for tension and hemopneumothorax by not making it appear in medical menu - Stethoscope might help
+// Set if tension/hemopneumothorax injury should always be visible in medical menu
 [
-    QGVAR(tensionhemothorax_easymode),
+    QGVAR(TensionHemothoraxAlwaysVisible),
     "CHECKBOX",
-    [LLSTRING(SETTING_tensionhemothorax_easymode), LLSTRING(SETTING_tensionhemothorax_easymode_DESC)],
+    [LLSTRING(SETTING_TensionHemothoraxAlwaysVisible), LLSTRING(SETTING_TensionHemothoraxAlwaysVisible_DESCRIPTION)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [false],
     true
