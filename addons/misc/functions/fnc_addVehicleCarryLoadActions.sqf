@@ -19,7 +19,7 @@ params ["_vehicle"];
 
 private _type = (typeOf _vehicle);
 
-fnc_getFreeSeats = {
+private _fnc_getFreeSeats = {
     params ["_vehicle"];
     
     // From ace_common_fnc_nearestVehiclesFreeSeat
@@ -38,17 +38,34 @@ private _action = [format ["KAT_MainActions_%1", _type],
 ACELLSTRING(Interaction,MainAction),
 "",
 {},
-{!((_this select 1) getVariable [QACEGVAR(dragging,carriedObject), objNull] isEqualTo objNull) && {(_this select 1) getVariable [QACEGVAR(dragging,carriedObject), objNull] isKindOf 'CAManBase'}},
 {
+    params ["_vehicle", "_medic", "_args"];
+    
+    !(_medic getVariable [QACEGVAR(dragging,carriedObject), objNull] isEqualTo objNull) && {_medic getVariable [QACEGVAR(dragging,carriedObject), objNull] isKindOf 'CAManBase'}
+},
+{
+    params ["_vehicle", "_medic", "_args"];
+    _args params ["_type", "_fnc_getFreeSeats"];
+    
     private _loadAction = [];
     _loadAction pushBack [
         [format ["KAT_LoadCarriedPatient_%1", _type],
         ACELLSTRING(medical_gui,LoadPatient),
         QACEPATHTOF(medical_gui,ui\cross.paa),
-        {[((_this select 2) select 1), (((_this select 2) select 1) getVariable [QACEGVAR(dragging,carriedObject), objNull]), ((_this select 2) select 0)] call ACEFUNC(medical_treatment,loadUnit)},
-        {([((_this select 2) select 0)] call fnc_getFreeSeats) != -1},
+        {
+            params ["", "", "_args"];
+            _args params ["_vehicle", "_medic", "_fnc_getFreeSeats"];
+
+            [_medic, (_medic getVariable [QACEGVAR(dragging,carriedObject), objNull]), _vehicle] call ACEFUNC(medical_treatment,loadUnit);
+        },
+        {
+            params ["", "", "_args"];
+            _args params ["_vehicle", "_medic", "_fnc_getFreeSeats"];
+
+            ([_vehicle] call _fnc_getFreeSeats) != -1;
+        },
         {},
-        [(_this select 0), (_this select 1)]
+        [_vehicle, _medic, _fnc_getFreeSeats]
         ] call ACEFUNC(interact_menu,createAction),
         [],
         (_this select 1)
@@ -56,7 +73,7 @@ ACELLSTRING(Interaction,MainAction),
 
     _loadAction;
 },
-[],
+[_type, _fnc_getFreeSeats],
 {call ACEFUNC(interaction,getVehiclePos)}, 4] call ACEFUNC(interact_menu,createAction);
 
 [_type, 0, [], _action] call ACEFUNC(interact_menu,addActionToClass);

@@ -25,7 +25,7 @@ private _actions = [];
 
 {
     private _unit = _x select 0;
-    if(IS_UNCONSCIOUS(_unit)) then {
+    if (IS_UNCONSCIOUS(_unit)) then {
         _actions pushBack [[format ["KAT_UnloadAndCarryPatient_%1", _unit],
         [_unit, true] call ACEFUNC(common,getName),
         "",
