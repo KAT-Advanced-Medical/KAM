@@ -76,26 +76,15 @@ if (!local _unit) then {
     };
 
     if !([_unit] call ACEFUNC(common,isAwake)) exitWith {
-        if (!_breathing && !_BVMInUse) exitWith {
-            _output = -0.3 * _multiplierNegative;
-            _finalOutput = _status + _output;
-
-            if (_finalOutput > 100) then {
-                _finalOutput = 100;
-            };
-
-            if (_finalOutput < 1) then {
-                _finalOutput = 1;
-            };
-
-            _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
-        };
-
-        if (!_breathing && _BVMInUse) exitWith {
-            if(_oxygenAssisted) then {
-                _output = -0.05 * _multiplierNegative;
+        if (!_breathing) exitWith {
+            if(_BVMInUse) then {
+                if(_oxygenAssisted) then {
+                    _output = -0.05 * _multiplierNegative;
+                } else {
+                    _output = -0.1 * _multiplierNegative;
+                };
             } else {
-                _output = -0.1 * _multiplierNegative;
+                _output = -0.3 * _multiplierNegative;
             };
             
             _finalOutput = _status + _output;
@@ -114,18 +103,8 @@ if (!local _unit) then {
         if !(_airway) exitWith {
             _output = -0.3 * _multiplierNegative;
 
-            if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) && !(_unit getVariable [QEGVAR(airway,occluded), false])) ) then {
-                if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
-                    if(_BVMInUse) then {
-                        if(_oxygenAssisted) then {
-                            _output = -0.01 * GVAR(SpO2_PerfusionMultiplier);
-                        } else {
-                            _output = -0.12 * GVAR(SpO2_PerfusionMultiplier);
-                        };
-                    } else {
-                        _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
-                    };
-                } else {
+            if (_overstretch && (_unit getVariable [QEGVAR(airway,obstruction), false]) && !(_unit getVariable [QEGVAR(airway,occluded), false])) then {
+                if (_heartRate > 20) then {
                     if (_BVMInUse) then {
                         if(_oxygenAssisted) then {
                             _output = 0.5 * _multiplierPositive;
@@ -134,6 +113,28 @@ if (!local _unit) then {
                         };
                     } else {
                         _output = 0.12 * _multiplierPositive;
+                    };
+                } else {
+                    if (GVAR(SpO2_perfusion)) then {
+                        if(_BVMInUse) then {
+                            if (_oxygenationPeriod) then {
+                                if(_oxygenAssisted) then {
+                                    _output = 0.5 * _multiplierPositive;
+                                } else {
+                                    _output = 0.2 * _multiplierPositive;
+                                };
+                            } else {
+                                if(_oxygenAssisted) then {
+                                    _output = -0.01 * GVAR(SpO2_PerfusionMultiplier);
+                                } else {
+                                    _output = -0.12 * GVAR(SpO2_PerfusionMultiplier);
+                                };
+                            };
+                        } else {
+                            _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
+                        };
+                    } else {
+                        _output = 0;
                     };
                 };
             };
@@ -153,15 +154,22 @@ if (!local _unit) then {
 
         if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
             if(_BVMInUse) then {
-                if(_oxygenAssisted) then {
-                    _output = -0.01 * GVAR(SpO2_PerfusionMultiplier);
+                if(_oxygenationPeriod) then {
+                    if(_oxygenAssisted) then {
+                        _output = 0.5 * _multiplierPositive;
+                    } else {
+                        _output = 0.2 * _multiplierPositive;
+                    };
                 } else {
-                    _output = -0.1 * GVAR(SpO2_PerfusionMultiplier);
+                    if(_oxygenAssisted) then {
+                        _output = -0.01 * GVAR(SpO2_PerfusionMultiplier);
+                    } else {
+                        _output = -0.1 * GVAR(SpO2_PerfusionMultiplier);
+                    };
                 };
             } else {
                 _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
             };
-            
         };
 
         if (_heartRate >= 25) then {
