@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Glowbal
- * Edit: Tomcat, Blue
+ * Modified: Tomcat, Blue
  * Overwrites the cprLocal of ACE to add the success chance for CPR/AED/AED-X
  *
  * Arguments:

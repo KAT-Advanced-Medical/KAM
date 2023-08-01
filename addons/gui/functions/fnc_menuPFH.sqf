@@ -18,7 +18,7 @@
  */
 
 // Check if menu should stay open for target
-if(isNUll findDisplay 312) then {
+if(isNull findDisplay 312) then {
     if !([ACE_player, ACEGVAR(medical_gui,target), ["isNotInside", "isNotSwimming"]] call ACEFUNC(common,canInteractWith) && {[ACE_player, ACEGVAR(medical_gui,target)] call ACEFUNC(medical_gui,canOpenMenu)}) then {
         closeDialog 0;
         // Show hint if distance condition failed

@@ -120,9 +120,10 @@ ctrlShow [69060, false];
         switch (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0]) do {
             case 4: {_ekgDisplay = QPATHTOF(ui\ekg_vt.paa);};
             case 3: {_ekgDisplay = QPATHTOF(ui\ekg_vf.paa);};
+            case 2: {_ekgDisplay = QPATHTOF(ui\ekg_sinus.paa);};
             case 1: {_ekgDisplay = QPATHTOF(ui\ekg_asystole.paa);};
             default {
-                if(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,inCardiacArrest), false] || !(alive GVAR(AEDX_MonitorTarget))) then {
+                if((GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,inCardiacArrest), false] && !(GVAR(AdvRhythm))) || !(alive GVAR(AEDX_MonitorTarget))) then {
                     _ekgDisplay = QPATHTOF(ui\ekg_asystole.paa);
                 } else {
                     private _hr = 0;
@@ -187,16 +188,20 @@ ctrlShow [69060, false];
         ctrlSetText [69016, "---"];
     };
 
-    if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] in [2,4]) then {
+    if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
         _hr = GVAR(AEDX_MonitorTarget) call FUNC(getCardiacArrestHeartRate);
-        _bp = [0,0];
 
-        if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] isEqualTo [4]) then {
-            _bp = [random [0,4,10], random [4,12,20]];
+        if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
+            _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
         };
     } else {
         _hr = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
-        _bp = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+        
+        if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
+            _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
+        } else {
+            _bp = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+        };
     };
 
     ctrlSetText [69011, format["%1", round(_hr)]];

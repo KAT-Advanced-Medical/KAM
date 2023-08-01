@@ -74,10 +74,14 @@ _unit setVariable [QEGVAR(airway,recovery), false, true];
 _unit setVariable [QEGVAR(airway,overstretch), false, true];
 
 //KAT Breathing
-_unit setVariable [QGVAR(airwayStatus), 100, true];
-_unit setVariable [QGVAR(pneumothorax), false, true];
-_unit setVariable [QGVAR(hemopneumothorax), false, true];
-_unit setVariable [QGVAR(tensionpneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,airwayStatus), 100, true];
+_unit setVariable [QEGVAR(breathing,pneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,hemopneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,tensionpneumothorax), false, true];
+
+// KAT Circulation
+_unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
+_unit setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
 
 // KAT Circulation
 _unit setVariable [QEGVAR(circulation,isPerformingCPR), false, true];

@@ -69,10 +69,11 @@ _unit setVariable [QEGVAR(circulation,Defibrillator_ShockAmount), 0, true];
 _unit setVariable [QEGVAR(circulation,DefibrillatorInUse), false, true];
 _unit setVariable [QEGVAR(circulation,MedicDefibrillatorInUse), false, true];
 _unit setVariable [QEGVAR(circulation,MedicDefibrillator_Patient), nil, true];
-_unit setVariable [QEGVAR(circulation,cardiacArrestType), nil, true];
+_unit setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
 _unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 _unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUNC(circulation,generateBloodType), true];
 _unit setVariable [QEGVAR(circulation,internalBleeding), 0, true];
+_unit setVariable [QEGVAR(circulation,StoredBloodPressure), [0,0], true];
 
 _unit setVariable [QEGVAR(circulation,isPerformingCPR), false, true];
 _unit setVariable [QEGVAR(circulation,OxygenationPeriod), 0, true];

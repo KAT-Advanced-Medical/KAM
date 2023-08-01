@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam, modified by YetheSamartaka, Blue
+ * Author: Katalam
+ * Modified: YetheSamartaka, Blue
  * Handle monitoring vitals
  *
  * Arguments:
@@ -19,8 +20,14 @@
 
 params ["_medic", "_patient", "_soundSource"];
 
+if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) isEqualTo 1) then { 
+    BPInterval = true;
+} else {
+    BPInterval = false;
+};
+
 // medical menu log
-// logs the heart rate and the blood pressure every second.
+// logs the heart rate and the blood pressure
 private _vitalsMonitorPFH = [{
     params ["_args", "_idPFH"];
     _args params ["_patient"];
@@ -41,16 +48,20 @@ private _vitalsMonitorPFH = [{
     private _hr = 0;
     private _bp = [0,0];
 
-    if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [2,4]) then {
+    if (_patient getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
         _hr = _patient call FUNC(getCardiacArrestHeartRate);
-        _bp = [0,0];
 
-        if (_patient getVariable [QGVAR(cardiacArrestType), 0] isEqualTo [4]) then {
-            _bp = [random [0,4,10], random [4,12,20]];
+        if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
+            _bp = _patient getVariable [QGVAR(StoredBloodPressure), [0,0]];
         };
     } else {
         _hr = _patient getVariable [QACEGVAR(medical,heartRate), 0];
-        _bp = _patient getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+        
+        if(GVAR(AED_X_VitalsMonitor_BloodPressureInterval) isEqualTo 0) then {
+            _bp = _patient getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+        } else {
+            _bp = _patient getVariable [QGVAR(StoredBloodPressure), [0,0]];
+        };
     };
 
     // If vitals are being monitored (pressure cuff + pulse oximeter) list all vitals, otherwise only heart rate
@@ -59,6 +70,15 @@ private _vitalsMonitorPFH = [{
         [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog), [round(_hr), round(_bp select 1), round(_bp select 0), round(_patient getVariable [QEGVAR(breathing,airwayStatus), 100])]] call ACEFUNC(medical_treatment,addToLog);
     } else {
         [_patient, "quick_view", LSTRING(VitalsMonitorInactive_StatusLog), [round(_hr)]] call ACEFUNC(medical_treatment,addToLog);
+    };
+
+    if(BPInterval) then { // Store new BP
+        _patient setVariable [QGVAR(StoredBloodPressure), (_patient getVariable [QACEGVAR(medical,bloodPressure), [0,0]]), true];
+        [{
+            BPInterval = true;
+        }, [], GVAR(AED_X_VitalsMonitor_BloodPressureInterval_Time)] call CBA_fnc_waitAndExecute;
+
+        BPInterval = false;
     };
 }, 1, [_patient]] call CBA_fnc_addPerFrameHandler;
 
@@ -83,7 +103,7 @@ if(GVAR(AED_X_VitalsMonitor_SoundsSelect) == 0) then {
         private _hr = 80;
         AEDBeepPlaying = true;
 
-        if (GVAR(AdvRhythm) && (_patient getVariable [QGVAR(cardiacArrestType), 0] in [2,4])) then {
+        if (GVAR(AdvRhythm) && (_patient getVariable [QGVAR(cardiacArrestType), 0] > 1)) then {
             _hr = _patient call FUNC(getCardiacArrestHeartRate);
         } else {
             _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
@@ -103,6 +123,7 @@ if(GVAR(AED_X_VitalsMonitor_SoundsSelect) == 0) then {
             AEDBeepPlaying = false;
         }, [_patient], _delay] call CBA_fnc_waitAndExecute;
     }, 0, [_patient, _soundSource]] call CBA_fnc_addPerFrameHandler;
+
     private _PFHArray = _patient getVariable ["kat_AEDXPatient_PFH", [-1,-1,-1]];
     _PFHArray set [1,_vitalsMonitorBeepPFH];
     _patient setVariable ["kat_AEDXPatient_PFH", _PFHArray, true];
@@ -112,28 +133,35 @@ if(GVAR(AED_X_VitalsMonitor_SoundsSelect) == 0) then {
     private _vitalsMonitorBeepPFH = [{
         params ["_args", "_idPFH"];
         _args params ["_patient", "_soundSource"];
+
         if(!(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false])) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
+
         if (!(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false]) || _patient getVariable [QGVAR(DefibrillatorInUse), false]) exitWith {
             analyzeDelay = false;
             playedAudio = false;
         };
+
         if (AEDBeepPlaying) exitWith {};
         private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
+
         if (GVAR(AdvRhythm)) then {
             private _cardiacState = _patient getVariable [QGVAR(cardiacArrestType), 0]; 
+
             if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [2,4]) then {
                 _hr = _patient call FUNC(getCardiacArrestHeartRate);
             } else {
                 _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
             };
+
             if (!(_patient getVariable [QGVAR(cardiacArrestType), 0] in [0,2]) && !analyzeDelay) then {
                 [{
                     params ["_patient"];
                     analyzeDelay = true;
                 }, [_patient], 2] call CBA_fnc_waitAndExecute;
             };
+
             if (alive _patient && (_cardiacState in [0,2] || (_cardiacState isEqualTo 4 && !analyzeDelay))) then {
                 AEDBeepPlaying = true;
                 private _delay = 60 / _hr;
@@ -164,6 +192,7 @@ if(GVAR(AED_X_VitalsMonitor_SoundsSelect) == 0) then {
         } else {
             AEDBeepPlaying = true;
             _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
+
             if (_hr > 0) then {
                 private _delay = 60 / _hr;
                 playsound3D [QPATHTOF_SOUND(sounds\heartrate_AED.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
@@ -174,6 +203,7 @@ if(GVAR(AED_X_VitalsMonitor_SoundsSelect) == 0) then {
                 playedAudio = false;
             } else {
                 private _delayAEDBeepPlaying = 1.835;
+
                 if (!(playedAudio)) then {
                     playsound3D [QPATHTOF_SOUND(sounds\checkpatient.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
                     playedAudio = true;
@@ -188,6 +218,7 @@ if(GVAR(AED_X_VitalsMonitor_SoundsSelect) == 0) then {
             };
         };
     }, 0, [_patient, _soundSource]] call CBA_fnc_addPerFrameHandler;
+
     private _PFHArray = _patient getVariable ["kat_AEDXPatient_PFH", [-1,-1,-1]];
     _PFHArray set [1,_vitalsMonitorBeepPFH];
     _patient setVariable ["kat_AEDXPatient_PFH", _PFHArray, true];

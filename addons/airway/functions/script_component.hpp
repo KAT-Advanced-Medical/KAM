@@ -20,7 +20,3 @@
 #define VAR_IN_PAIN           "ACE_medical_inPain"
 #define VAR_TOURNIQUET        "ACE_medical_tourniquets"
 #define VAR_FRACTURES         "ACE_medical_fractures"
-
-//
-#define VAR_SPO2              QEGVAR(breathing,airwayStatus)
-#define GET_SPO2(unit)        (unit getVariable [VAR_SPO2, 100])

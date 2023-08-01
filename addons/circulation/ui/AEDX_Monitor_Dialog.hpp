@@ -513,5 +513,11 @@ class GVAR(AEDX_Monitor_Dialog) {
             onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull)) then {if (GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false)]) then {GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false, true)]; [ARR_2((GVAR(AEDX_MonitorTarget) getVariable QQGVAR(Defibrillator_Provider)) select 0, false)] call FUNC(AEDXPlaced_VitalsMonitor_SetVolume)} else {GVAR(AEDX_MonitorTarget) setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_VolumePatient), true, true)]; [ARR_2((GVAR(AEDX_MonitorTarget) getVariable QQGVAR(Defibrillator_Provider)) select 0, true)] call FUNC(AEDXPlaced_VitalsMonitor_SetVolume)}});
             tooltip = CSTRING(AEDX_Monitor_ToggleVolume);
         };
+        class ManualBloodPressureMeasurement: ToggleVolumeButton {
+            idc = -1;
+            y = QUOTE(pxToScreen_Y(1251));
+            onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull) && (missionNamespace getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_BloodPressureInterval), 0)] > 0)) then {GVAR(AEDX_MonitorTarget) call FUNC(measureBloodPressure)});
+            tooltip = CSTRING(AEDX_Monitor_MeasureBloodPressure);
+        };
     };
 };

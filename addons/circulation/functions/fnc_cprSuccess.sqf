@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Glowbal
+ * Modified: Blue
  * Handles finishing performing CPR on the patient.
  *
  * Arguments:
