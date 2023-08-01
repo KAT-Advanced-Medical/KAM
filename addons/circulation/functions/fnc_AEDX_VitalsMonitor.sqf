@@ -47,20 +47,22 @@ private _vitalsMonitorPFH = [{
 
     private _hr = 0;
     private _bp = [0,0];
+    
+    if !(_patient getVariable [QGVAR(HeartRestart), false]) then {
+        if (_patient getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
+            _hr = _patient call FUNC(getCardiacArrestHeartRate);
 
-    if (_patient getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
-        _hr = _patient call FUNC(getCardiacArrestHeartRate);
-
-        if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
-            _bp = _patient getVariable [QGVAR(StoredBloodPressure), [0,0]];
-        };
-    } else {
-        _hr = _patient getVariable [QACEGVAR(medical,heartRate), 0];
-        
-        if(GVAR(AED_X_VitalsMonitor_BloodPressureInterval) isEqualTo 0) then {
-            _bp = _patient getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+            if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
+                _bp = _patient getVariable [QGVAR(StoredBloodPressure), [0,0]];
+            };
         } else {
-            _bp = _patient getVariable [QGVAR(StoredBloodPressure), [0,0]];
+            _hr = _patient getVariable [QACEGVAR(medical,heartRate), 0];
+
+            if(GVAR(AED_X_VitalsMonitor_BloodPressureInterval) isEqualTo 0) then {
+                _bp = _patient getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+            } else {
+                _bp = _patient getVariable [QGVAR(StoredBloodPressure), [0,0]];
+            };
         };
     };
 
