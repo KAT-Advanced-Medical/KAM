@@ -27,8 +27,17 @@ if (isNull objectParent _patient) then {
     } forEach _bystanders;
 };
 
+_patient setVariable [QEGVAR(circulation,HeartRestart), true, true];
+
 [{
     params ["_patient"];
+
+    _patient setVariable [QGVAR(HeartRestart), false, true];
+}, [_patient], 2] call CBA_fnc_waitAndExecute;
+
+[{
+    params ["_patient"];
+
     _patient setVariable [QGVAR(DefibrillatorInUse), false, true];
 }, [_patient], 1] call CBA_fnc_waitAndExecute;
 
