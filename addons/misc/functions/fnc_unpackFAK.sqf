@@ -20,19 +20,11 @@
 params ["_unit", "_item", "_slotsToGive"];
 
 //IFAK
+private _container = missionNamespace getVariable [QGVAR(IFAK_Container), []];
 private _firstSlotItemIFAK = missionNamespace getVariable [QGVAR(IFAKFirstSlotItem), []];
-//private _firstSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKFirstSlotAmount), []];
 private _secondSlotItemIFAK = missionNamespace getVariable [QGVAR(IFAKSecondSlotItem), []];
-//private _secondSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKSecondSlotAmount), []];
 private _thirdSlotItemIFAK = missionNamespace getVariable [QGVAR(IFAKThirdtSlotItem), []];
-//private _thirdSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKThirdSlotAmount), []];
 private _fourthSlotItemIFAK = missionNamespace getVariable [QGVAR(IFAKFourthSlotItem), []];
-//private _fourthSlotAmountIFAK = missionNamespace getVariable [QGVAR(IFAKFourthSlotAmount), []];
-
-// {
-//     _firstSlotItemIFAK set [_forEachIndex, [_x,_firstSlotAmountIFAK]]; 
-// } forEach _firstSlotItemIFAK;
-
 
 //AFAK
 private _firstSlotItemAFAK = missionNamespace getVariable [QGVAR(AFAKFirstSlotItem), []];
@@ -79,164 +71,388 @@ switch (_item) do {
         switch (_slotsToGive) do {
             case 0: {
 
-                {
-                    for "_i" from 0 to (_x select 1) do
-                    {
-                        [_unit, _x select 0] call ACEFUNC(common,addToInventory);
-                    } 
-                } foreach _firstSlotItemIFAK;
-
-                {
-                    for "_i" from 0 to (_x select 1) do
-                    {
-                        [_unit, _x select 0] call ACEFUNC(common,addToInventory);
-                    } 
-                } foreach _secondSlotItemIFAK;
-
-                {
-                    for "_i" from 0 to (_x select 1) do
-                    {
-                        [_unit, _x select 0] call ACEFUNC(common,addToInventory);
-                    } 
-                } foreach _thirdSlotItemIFAK;
-
-                {
-                    for "_i" from 0 to (_x select 1) do
-                    {
-                        [_unit, _x select 0] call ACEFUNC(common,addToInventory);
-                    } 
-                } foreach _fourthSlotItemIFAK;
-
-                // {
-                //     private _loopCount = _firstSlotAmountIFAK; 
-                //     private _i = 0; 
-                //     while {_i < _loopCount} do { 
-                //         [_unit, _x] call ACEFUNC(common,addToInventory);
-                //         _i = _i + 1; 
-                //     };
-                // } forEach _firstSlotItemIFAK;
-
-                // while {_secondSlotItemIFAK isNotEqualTo ""} do {
-                //     private _loopCount = _secondSlotAmountIFAK; 
-                //     private _i = 0; 
-                //     while {_i < _loopCount} do { 
-                //         [_unit, _secondSlotItemIFAK] call ACEFUNC(common,addToInventory);
-                //         _i = _i + 1; 
-                //     };
-                //     _secondSlotItemIFAK = "";
-                // };
-                // 
-                // while {_thirdSlotItemIFAK isNotEqualTo ""} do {
-                //     private _loopCount = _thirdSlotAmountIFAK; 
-                //     private _i = 0; 
-                //     while {_i < _loopCount} do { 
-                //         [_unit, _thirdSlotItemIFAK] call ACEFUNC(common,addToInventory);
-                //         _i = _i + 1; 
-                //     };
-                //     _thirdSlotItemIFAK = "";
-                // };
-                // 
-                // while {_fourthSlotItemIFAK isNotEqualTo ""} do {
-                //     private _loopCount = _fourthSlotAmountIFAK; 
-                //     private _i = 0; 
-                //     while {_i < _loopCount} do { 
-                //         [_unit, _fourthSlotItemIFAK] call ACEFUNC(common,addToInventory);
-                //         _i = _i + 1; 
-                //     };
-                //     _fourthSlotItemIFAK = "";
-                // };
                 _unit removeItem _item;
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
             };
 
             case 1: {
                 
-                {
-                    private _loopCount = _firstSlotAmountIFAK; 
-                    private _i = 0; 
-                    while {_i < _loopCount} do { 
-                        [_unit, _x] call ACEFUNC(common,addToInventory);
-                        _i = _i + 1; 
-                    };
-                } forEach _firstSlotItemIFAK;
-
                 _unit removeItem _item;
                 [_unit, "kat_IFAK_S1_used", "", 75] call ACEFUNC(common,addToInventory);
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
             };
 
             case 2: {
                 
-                while {_secondSlotItemIFAK isNotEqualTo ""} do {
-                    private _loopCount = _secondSlotAmountIFAK; 
-                    private _i = 0; 
-                    while {_i < _loopCount} do { 
-                        [_unit, _secondSlotItemIFAK] call ACEFUNC(common,addToInventory);
-                        _i = _i + 1; 
-                    };
-                    _secondSlotItemIFAK = "";
-                };
                 _unit removeItem _item;
                 [_unit, "kat_IFAK_S2_used", "", 75] call ACEFUNC(common,addToInventory);
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
             };
 
             case 3: {
                 
-                while {_thirdSlotItemIFAK isNotEqualTo ""} do {
-                    private _loopCount = _thirdSlotAmountIFAK; 
-                    private _i = 0; 
-                    while {_i < _loopCount} do { 
-                        [_unit, _thirdSlotItemIFAK] call ACEFUNC(common,addToInventory);
-                        _i = _i + 1; 
-                    };
-                    _thirdSlotItemIFAK = "";
-                };
                 _unit removeItem _item;
                 [_unit, "kat_IFAK_S3_used", "", 75] call ACEFUNC(common,addToInventory);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
             };
 
             case 4: {
                 
-                while {_fourthSlotItemIFAK isNotEqualTo ""} do {
-                    private _loopCount = _fourthSlotAmountIFAK; 
-                    private _i = 0; 
-                    while {_i < _loopCount} do { 
-                        [_unit, _fourthSlotItemIFAK] call ACEFUNC(common,addToInventory);
-                        _i = _i + 1; 
-                    };
-                    _fourthSlotItemIFAK = "";
-                };
                 _unit removeItem _item;
                 [_unit, "kat_IFAK_S4_used", "", 75] call ACEFUNC(common,addToInventory);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
             };
         };
     };
     
+    case "kat_IFAK_S1_used": {
+        switch (_slotsToGive) do {
+            case 0: {
 
+                _unit removeItem _item;
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
 
+            case 2: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S2_used", "", 50] call ACEFUNC(common,addToInventory);
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
 
+            case 3: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S3_used", "", 50] call ACEFUNC(common,addToInventory);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
 
+            case 4: {
 
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S4_used", "", 50] call ACEFUNC(common,addToInventory);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
 
+    case "kat_IFAK_S2_used": {
+        switch (_slotsToGive) do {
+            case 0: {
 
+                _unit removeItem _item;
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
 
+            case 1: {
 
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S2_used", "", 75] call ACEFUNC(common,addToInventory);
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
 
+            case 3: {
 
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S2_S3_used", "", 50] call ACEFUNC(common,addToInventory);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
 
+            case 4: {
 
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S2_S4_used", "", 50] call ACEFUNC(common,addToInventory);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
 
+    case "kat_IFAK_S3_used": {
+        switch (_slotsToGive) do {
+            case 0: {
 
+                _unit removeItem _item;
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
 
+            case 1: {
 
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S3_used", "", 50] call ACEFUNC(common,addToInventory);
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
 
+            case 2: {
 
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S2_S3_used", "", 50] call ACEFUNC(common,addToInventory);
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
 
+            case 4: {
 
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S3_S4_used", "", 50] call ACEFUNC(common,addToInventory);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
 
+    case "kat_IFAK_S4_used": {
+        switch (_slotsToGive) do {
+            case 0: {
 
+                _unit removeItem _item;
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
 
+            case 1: {
 
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S4_used", "", 50] call ACEFUNC(common,addToInventory);
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
 
+            case 2: {
 
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S2_S4_used", "", 50] call ACEFUNC(common,addToInventory);
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 3: {
+
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S3_S4_used", "", 50] call ACEFUNC(common,addToInventory);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
+
+    case "kat_IFAK_S1_S2_used": {
+        switch (_slotsToGive) do {
+            case 0: {
+
+                _unit removeItem _item;
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 3: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S2_S3_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 4: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S2_S4_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
+
+    case "kat_IFAK_S1_S3_used": {
+        switch (_slotsToGive) do {
+            case 0: {
+
+                _unit removeItem _item;
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 2: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S2_S3_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 4: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S3_S4_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
+
+    case "kat_IFAK_S1_S4_used": {
+        switch (_slotsToGive) do {
+            case 0: {
+
+                _unit removeItem _item;
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 2: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S2_S4_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 3: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S3_S4_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
+
+    case "kat_IFAK_S2_S3_used": {
+        switch (_slotsToGive) do {
+            case 0: {
+
+                _unit removeItem _item;
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 1: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S2_S3_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 4: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S2_S3_S4_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
+
+    case "kat_IFAK_S2_S4_used": {
+        switch (_slotsToGive) do {
+            case 0: {
+
+                _unit removeItem _item;
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 1: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S2_S4_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 3: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S2_S3_S4_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
+
+    case "kat_IFAK_S3_S4_used": {
+        switch (_slotsToGive) do {
+            case 0: {
+
+                _unit removeItem _item;
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 1: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S1_S3_S4_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 2: {
+                
+                _unit removeItem _item;
+                [_unit, "kat_IFAK_S2_S3_S4_used", "", 25] call ACEFUNC(common,addToInventory);
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
+
+    case "kat_IFAK_S1_S2_S3_used": {
+        switch (_slotsToGive) do {
+            case 0: {
+
+                _unit removeItem _item;
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 4: {
+                
+                _unit removeItem _item;
+                [_unit, _fourthSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
+
+    case "kat_IFAK_S2_S3_S4_used": {
+        switch (_slotsToGive) do {
+            case 0: {
+
+                _unit removeItem _item;
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 1: {
+                
+                _unit removeItem _item;
+                [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
+
+    case "kat_IFAK_S1_S3_S4_used": {
+        switch (_slotsToGive) do {
+            case 0: {
+
+                _unit removeItem _item;
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 2: {
+                
+                _unit removeItem _item;
+                [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
+
+    case "kat_IFAK_S1_S2_S4_used": {
+        switch (_slotsToGive) do {
+            case 0: {
+
+                _unit removeItem _item;
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+
+            case 3: {
+                
+                _unit removeItem _item;
+                [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
+            };
+        };
+    };
 
 
 
