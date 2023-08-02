@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "..\defines.hpp"
 /*
  * Author: Blue
  * Open AED-X Vitals Monitor dialog
@@ -37,38 +38,38 @@ GVAR(AEDX_MonitorTarget) = _patient;
 
 createDialog QGVAR(AEDX_Monitor_Dialog);
 
-private _dlg = findDisplay 69000;
+private _dlg = findDisplay IDC_AEDX_MONITOR;
 
-ctrlShow [69030, false];
-ctrlShow [69031, false];
-ctrlShow [69032, false];
-ctrlShow [69033, false];
-ctrlShow [69034, false];
-ctrlShow [69035, false];
-ctrlShow [69036, false];
-ctrlShow [69037, false];
+ctrlShow [IDC_CHARGE_BBACKGROUND, false];
+ctrlShow [IDC_CHARGE_BBACKGROUND2, false];
+ctrlShow [IDC_CHARGE_STATUS_TITLE, false];
+ctrlShow [IDC_CHARGE_STATUS, false];
+ctrlShow [IDC_CHARGE_ENERGY_SELECT, false];
+ctrlShow [IDC_CHARGE_ENERGY_AMOUNT, false];
+ctrlShow [IDC_CHARGE_BAR_BACKGROUND, false];
+ctrlShow [IDC_CHARGE_SHOCKTOTAL, false];
 
-ctrlShow [69040, false];
-ctrlShow [69041, false];
-ctrlShow [69042, false];
-ctrlShow [69043, false];
-ctrlShow [69044, false];
-ctrlShow [69045, false];
-ctrlShow [69046, false];
-ctrlShow [69047, false];
-ctrlShow [69048, false];
-ctrlShow [69049, false];
-ctrlShow [69050, false];
-ctrlShow [69051, false];
-ctrlShow [69052, false];
-ctrlShow [69053, false];
-ctrlShow [69054, false];
-ctrlShow [69055, false];
-ctrlShow [69056, false];
-ctrlShow [69057, false];
-ctrlShow [69058, false];
-ctrlShow [69059, false];
-ctrlShow [69060, false];
+ctrlShow [IDC_CHARGE_BACKGROUND, false];
+ctrlShow [IDC_CHARGE_BAR_1, false];
+ctrlShow [IDC_CHARGE_BAR_2, false];
+ctrlShow [IDC_CHARGE_BAR_3, false];
+ctrlShow [IDC_CHARGE_BAR_4, false];
+ctrlShow [IDC_CHARGE_BAR_5, false];
+ctrlShow [IDC_CHARGE_BAR_6, false];
+ctrlShow [IDC_CHARGE_BAR_7, false];
+ctrlShow [IDC_CHARGE_BAR_8, false];
+ctrlShow [IDC_CHARGE_BAR_9, false];
+ctrlShow [IDC_CHARGE_BAR_10, false];
+ctrlShow [IDC_CHARGE_BAR_15, false];
+ctrlShow [IDC_CHARGE_BAR_20, false];
+ctrlShow [IDC_CHARGE_BAR_30, false];
+ctrlShow [IDC_CHARGE_BAR_50, false];
+ctrlShow [IDC_CHARGE_BAR_70, false];
+ctrlShow [IDC_CHARGE_BAR_85, false];
+ctrlShow [IDC_CHARGE_BAR_100, false];
+ctrlShow [IDC_CHARGE_BAR_120, false];
+ctrlShow [IDC_CHARGE_BAR_150, false];
+ctrlShow [IDC_CHARGE_BAR_200, false];
 
 [{
     params ["_args", "_idPFH"];
@@ -78,7 +79,7 @@ ctrlShow [69060, false];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    private _slider = _dlg displayCtrl 69010;
+    private _slider = _dlg displayCtrl IDC_EKG_SLIDER;
     
     _slider ctrlSetPosition [pxToScreen_X(250), (ctrlPosition _slider) select 1, (ctrlPosition _slider) select 2, (ctrlPosition _slider) select 3];
     _slider ctrlCommit 0;
@@ -110,11 +111,11 @@ ctrlShow [69060, false];
     private _shockButton = "";
 
     if !(_pads) then {
-        ctrlSetText [69021, "Check Pads"];
-        ctrlSetText [69020, QPATHTOF(ui\ekg_off.paa)];
+        ctrlSetText [IDC_EKG_DISPLAY_MIDTEXT, "Check Pads"];
+        ctrlSetText [IDC_EKG_DISPLAY, QPATHTOF(ui\ekg_off.paa)];
         GVAR(AEDX_MonitorTarget) = objNull;
     } else {
-        ctrlSetText [69021, ""];
+        ctrlSetText [IDC_EKG_DISPLAY_MIDTEXT, ""];
         private _ekgDisplay = QPATHTOF(ui\ekg_off.paa);
 
         if !(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
@@ -155,19 +156,19 @@ ctrlShow [69060, false];
             };
         };
 
-        ctrlSetText [69020, _ekgDisplay];
+        ctrlSetText [IDC_EKG_DISPLAY, _ekgDisplay];
         
         if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_Charged), false]) then {
             _shockButton = QPATHTOF(ui\shockbutton.paa);
         };
     };
 
-    ctrlSetText [69022, _shockButton];
+    ctrlSetText [IDC_SHOCKBUTTON, _shockButton];
 
     // Handle date and time display - [year,month,day,hour,min]
 
-    ctrlSetText [69017, format ["%1/%2/%3               %4:%5", (if (date select 2 < 10) then { "0" } else { "" }) + str (date select 2), (if (date select 1 < 10) then { "0" } else { "" }) + str (date select 1), date select 0, (if (date select 3 < 10) then { "0" } else { "" }) + str (date select 3), (if (date select 4 < 10) then { "0" } else { "" }) + str (date select 4)]];
-    ctrlSetText [69018, format ["%1:%2:%3", (if ((floor(time/3600)) < 10) then { "0" } else { "" }) + str (floor(time/3600)), (if ((floor(((time/3600) - floor(time/3600)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((time/3600) - floor(time/3600)) * 60)), (if ((floor(((time/60) - floor(time/60)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((time/60) - floor(time/60)) * 60))]];
+    ctrlSetText [IDC_DISPLAY_DATEANDTIME, format ["%1/%2/%3               %4:%5", (if (date select 2 < 10) then { "0" } else { "" }) + str (date select 2), (if (date select 1 < 10) then { "0" } else { "" }) + str (date select 1), date select 0, (if (date select 3 < 10) then { "0" } else { "" }) + str (date select 3), (if (date select 4 < 10) then { "0" } else { "" }) + str (date select 4)]];
+    ctrlSetText [IDC_DISPLAY_ELAPSEDTIME, format ["%1:%2:%3", (if ((floor(time/3600)) < 10) then { "0" } else { "" }) + str (floor(time/3600)), (if ((floor(((time/3600) - floor(time/3600)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((time/3600) - floor(time/3600)) * 60)), (if ((floor(((time/60) - floor(time/60)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((time/60) - floor(time/60)) * 60))]];
     
 }, 0, [_dlg, _target, _source]] call CBA_fnc_addPerFrameHandler;
 
@@ -189,11 +190,11 @@ ctrlShow [69060, false];
     };
 
     if !(_pads) exitWith {
-        ctrlSetText [69011, "---"];
-        ctrlSetText [69012, "---"];
-        ctrlSetText [69013, "---"];
-        ctrlSetText [69014, ""];
-        ctrlSetText [69016, "---"];
+        ctrlSetText [IDC_DISPLAY_HEARTRATE, "---"];
+        ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_T, "---"];
+        ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_B, "---"];
+        ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_M, ""];
+        ctrlSetText [IDC_DISPLAY_SPO2, "---"];
     };
     if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(HeartRestart), false]) then {
         if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
@@ -213,13 +214,13 @@ ctrlShow [69060, false];
         };
     };
 
-    ctrlSetText [69011, format["%1", round(_hr)]];
+    ctrlSetText [IDC_DISPLAY_HEARTRATE, format["%1", round(_hr)]];
 
     if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
-        ctrlSetText [69012, format["%1", round(_bp select 1)]];
-        ctrlSetText [69013, format["%1", round(_bp select 0)]];
-        ctrlSetText [69014, format["(%1)", round(((_bp select 1) - (_bp select 0))/3 + (_bp select 0))]];
-        ctrlSetText [69016, format["%1", round(GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,airwayStatus), 100])]];
+        ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_T, format["%1", round(_bp select 1)]];
+        ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_B, format["%1", round(_bp select 0)]];
+        ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_M, format["(%1)", round(((_bp select 1) - (_bp select 0))/3 + (_bp select 0))]];
+        ctrlSetText [IDC_DISPLAY_SPO2, format["%1", round(GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,airwayStatus), 100])]];
     };
 }, 1, [_dlg]] call CBA_fnc_addPerFrameHandler;
 

@@ -37,16 +37,3 @@
 
 #define VAR_INTERNAL_BLEEDING QGVAR(internalBleeding)
 #define GET_INTERNAL_BLEEDING(unit) (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
-
-// UI stuff
-#define GUI_GRID_W (safezoneW * 0.55)
-#define GUI_GRID_H (GUI_GRID_W * 4/3)
-#define GUI_GRID_X (safezoneX + (safezoneW - GUI_GRID_W) / 2)
-#define GUI_GRID_Y (safezoneY + (safezoneH - GUI_GRID_H) / 2)
-
-#define pxToScreen_X(X) (X / 2048 * GUI_GRID_W + GUI_GRID_X)
-#define pxToScreen_Y(X) (X / 2048 * GUI_GRID_H + GUI_GRID_Y)
-#define pxToScreen_W(X) (X / 2048 * GUI_GRID_W)
-#define pxToScreen_H(X) (X / 2048 * GUI_GRID_H)
-
-#define GRID_H ((((safezoneW / safezoneH) min 1.2) / 1.2) / 22)
