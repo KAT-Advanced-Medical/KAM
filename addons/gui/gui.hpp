@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 class RscText;
 class RscButton;
 class RscPicture;
@@ -17,6 +18,18 @@ class ace_medical_gui_TriageSelect: RscControlsGroupNoScrollbars {
     class controls {
         class None: RscButton {
             w = QUOTE(POS_W(10.3));
+        };
+    };
+};
+
+class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
+    class controls {
+        class Background;
+        class Torso_Infected: Background {
+            idc = IDC_BODY_TORSO_I;
+            text = QPATHTOF(data\body_image\torso_i.paa);
+            colorText[] = {1, 1, 1, 1};
+            show = 0;
         };
     };
 };
