@@ -59,7 +59,7 @@ _pickUpText,
     if !(_patient isEqualTo objNull) then {
         [_medic, _patient] call FUNC(Defibrillator_RemovePads);
     
-        if(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+        if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
             [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
         };
     };

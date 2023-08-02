@@ -5,12 +5,13 @@
  *
  * Arguments:
  * 0: Placed AED-X <OBJECT>
+ * 1: Volume enabled <BOOL>
  *
  * Return Value:
  * None
  *
  * Example:
- * [cursorObject] call kat_circulation_fnc_AEDXPlaced_VitalsMonitor_SetVolume
+ * [cursorObject, true] call kat_circulation_fnc_AEDXPlaced_VitalsMonitor_SetVolume;
  *
  * Public: No
  */

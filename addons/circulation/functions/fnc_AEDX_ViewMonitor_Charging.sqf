@@ -94,7 +94,7 @@ if (_skip) then { // Skip visual charging process
     GVAR(AEDX_MonitorCharged) = true;
 
     [{
-        if(GVAR(AEDX_MonitorCharged)) then {
+        if (GVAR(AEDX_MonitorCharged)) then {
             GVAR(AEDX_MonitorCharged) = false;
         };
     }, [], 20] call CBA_fnc_waitAndExecute;
@@ -156,7 +156,7 @@ if (_skip) then { // Skip visual charging process
         GVAR(AEDX_MonitorCharging) = false;
         GVAR(AEDX_MonitorCharged) = true;
         [{ // Auto disarm timer
-            if(GVAR(AEDX_MonitorCharged) && !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_Charged), false])) then {
+            if (GVAR(AEDX_MonitorCharged) && !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_Charged), false])) then {
                 GVAR(AEDX_MonitorCharged) = false;
                 GVAR(AEDX_MonitorShockAdministered) = false;
             };
@@ -258,7 +258,7 @@ if (_skip) then { // Skip visual charging process
     params ["_dlg", "_chargeBar", "_fnc_showDialog"];
 
     if !(isNull _dlg) then {
-        if(GVAR(AEDX_MonitorShockAdministered)) then {
+        if (GVAR(AEDX_MonitorShockAdministered)) then {
             ctrlSetText [IDC_CHARGE_STATUS, "Delivered Energy"];
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [0.05, 0.85, 0.36, 1];
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetFontHeight (GRID_H * 1.1);

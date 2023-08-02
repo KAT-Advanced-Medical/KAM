@@ -15,7 +15,7 @@
  * Can Treat <BOOL>
  *
  * Example:
- * [player, cursorObject, "Head", "SurgicalKit"] call ace_medical_treatment_fnc_canTreat
+ * [player, cursorObject, "Head", "SurgicalKit", []] call ace_medical_treatment_fnc_canTreat
  *
  * Public: No
  */

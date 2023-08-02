@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * [player, cursorObject,  0] call kat_circulation_fnc_AEDX_ConnectVitalsMonitor;
+ * [player, cursorObject,  0, []] call kat_circulation_fnc_AEDX_ConnectVitalsMonitor;
  *
  * Public: No
  */
@@ -34,13 +34,13 @@ switch (_source) do {
         if (_placedAED isEqualTo objNull) then {
             private _nearObjects = nearestObjects [position _patient, ["kat_AEDItem"], GVAR(Defibrillator_DistanceLimit)];
             private _index = _nearObjects findIf {typeOf _x isEqualTo "kat_X_AEDItem"};
-            if(_index isEqualTo -1) exitWith {_exit = true;};
+            if (_index isEqualTo -1) exitWith {_exit = true;};
             _placedDefibrillator = _nearObjects select (_nearObjects findIf {typeOf _x isEqualTo "kat_X_AEDItem"});
         } else {
             _placedDefibrillator = _placedAED;
         };
 
-        if(_exit) exitWith {[LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);};
+        if (_exit) exitWith {[LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);};
 
         _provider = _placedDefibrillator;
         _soundSource = _placedDefibrillator;
@@ -54,13 +54,13 @@ switch (_source) do {
         }, {
             params ["_medic", "_patient", "_provider"];
         
-            if(_patient setVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+            if (_patient setVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
                 [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
             };
         }, [_medic, _patient, _placedDefibrillator], 3600, {
             params ["_medic", "_patient", "_provider"];
         
-            if(_patient setVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+            if (_patient setVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
                 [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
             };
         }] call CBA_fnc_waitUntilAndExecute;

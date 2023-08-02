@@ -26,14 +26,14 @@ private _randomAmi = random 4;
 private _epiBoost = 1;
 private _amiBoost = 0;
 private _lidoBoost = 0;
-private _CPRcount = _patient getVariable [QGVAR(CPRcount), 0];
+private _CPRcount = _patient getVariable [QGVAR(cprCount), 0];
 
 private _fnc_advRhythm = {
-    params ["_patient",["_CPR",false]];
+    params ["_patient", ["_CPR",false]];
 
     private _patientState = _patient getVariable [QGVAR(cardiacArrestType), 0];
     
-    if(_CPR) then {
+    if (_CPR) then {
         if (floor (random 100) <= GVAR(AdvRhythm_CPR_ROSC_Chance)) then {
             _patient setVariable [QGVAR(cardiacArrestType), 0, true];
         } else {
@@ -53,7 +53,7 @@ private _fnc_advRhythm = {
         };
     };
 
-    if(_patient getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 0) exitWith {
+    if (_patient getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 0) exitWith {
         [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
     };
 
@@ -114,12 +114,12 @@ if (_reviveObject in ["AED", "AEDX"]) exitWith {
 
     private _patientState = _patient getVariable [QGVAR(cardiacArrestType), 0];
 
-    if(GVAR(AdvRhythm)) then {
+    if (GVAR(AdvRhythm)) then {
         if (_patientState > 2) then {
             if (_random <= _chance) then {
                 [_patient] call _fnc_advRhythm;
             };
-            _patient setVariable [QGVAR(CPRcount), 2, true];
+            _patient setVariable [QGVAR(cprCount), 2, true];
         } else {
             if (GVAR(AdvRhythm_Hardcore_Enable) && _patientState < 3) then {
                 if (floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
@@ -155,7 +155,7 @@ if !(GVAR(enable_CPR_Chances)) then {
         _chance = _chance + (2 ^ _CPRcount);
 
         _CPRcount = _CPRcount + 1;
-        _patient setVariable [QGVAR(CPRcount), _CPRcount, true];
+        _patient setVariable [QGVAR(cprCount), _CPRcount, true];
     };
 
     if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [4,3] && _randomAmi > 2) then {
@@ -168,6 +168,6 @@ if !(GVAR(enable_CPR_Chances)) then {
         } else {
             [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
         };
-        _patient setVariable [QGVAR(CPRcount), 2, true];
+        _patient setVariable [QGVAR(cprCount), 2, true];
     };
 };
