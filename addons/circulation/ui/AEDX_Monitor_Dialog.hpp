@@ -1,3 +1,5 @@
+#include "..\defines.hpp"
+
 class RscPicture;
 class RscLine;
 class RscText;
@@ -5,7 +7,7 @@ class RscBackground;
 class RscButton;
 
 class GVAR(AEDX_Monitor_Dialog) {
-    idd = 69000;
+    idd = IDC_AEDX_MONITOR;
     movingEnable = 0;
     onLoad = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(AEDX_Monitor_Display), (_this select 0))]);
     onUnload = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(AEDX_Monitor_Display), nil)]);
@@ -26,7 +28,7 @@ class GVAR(AEDX_Monitor_Dialog) {
         };
         class Background: BlackBackground {};
         class EKG: RscPicture {
-            idc = 69020;
+            idc = IDC_EKG_DISPLAY;
             x = QUOTE(pxToScreen_X(475));
             y = QUOTE(pxToScreen_Y(534));
             w = QUOTE(pxToScreen_W(1024));
@@ -39,7 +41,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = QPATHTOF(ui\ekg_off.paa);
         };
         class EKGSlider: RscPicture {
-            idc = 69010;
+            idc = IDC_EKG_SLIDER;
             x = QUOTE(pxToScreen_X(250));
             y = QUOTE(pxToScreen_Y(726));
             w = QUOTE(pxToScreen_W(256));
@@ -128,7 +130,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = "%";
         };
         class HeartRateDisplay: RscText {
-            idc = 69011;
+            idc = IDC_DISPLAY_HEARTRATE;
             x = QUOTE(pxToScreen_X(552));
             y = QUOTE(pxToScreen_Y(1196));
             w = QUOTE(pxToScreen_W(190));
@@ -143,7 +145,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = "---";
         };
         class TopBloodPressureDisplay: HeartRateDisplay {
-            idc = 69012;
+            idc = IDC_DISPLAY_BLOODPRESSURE_T;
             style = 1;
             x = QUOTE(pxToScreen_X(760));
             w = QUOTE(pxToScreen_W(120));
@@ -153,13 +155,13 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = "---";
         };
         class BottomBloodPressureDisplay: TopBloodPressureDisplay {
-            idc = 69013;
+            idc = IDC_DISPLAY_BLOODPRESSURE_B;
             y = QUOTE(pxToScreen_Y(1290));
             colorText[] = {0.04,0.96,0.98,1};
             text = "---";
         };
         class MeanBloodPressureDisplay: TopBloodPressureDisplay {
-            idc = 69014;
+            idc = IDC_DISPLAY_BLOODPRESSURE_M;
             x = QUOTE(pxToScreen_X(910));
             w = QUOTE(pxToScreen_W(100));
             h = QUOTE(pxToScreen_H(60));
@@ -168,7 +170,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = "";
         };
         class RespirationRateDisplay: HeartRateDisplay {
-            idc = 69015;
+            idc = IDC_DISPLAY_RESP;
             x = QUOTE(pxToScreen_X(1010));
             h = QUOTE(pxToScreen_H(120));
             sizeEx = QUOTE(GRID_H * 0.7);
@@ -176,13 +178,13 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = "Resp off";
         };
         class SpO2Display: HeartRateDisplay {
-            idc = 69016;
+            idc = IDC_DISPLAY_SPO2;
             x = QUOTE(pxToScreen_X(1204));
             colorText[] = {0.99,0.97,0.02,1};
             text = "---";
         };
         class DateAndTime: RscText {
-            idc = 69017;
+            idc = IDC_DISPLAY_DATEANDTIME;
             x = QUOTE(pxToScreen_X(505));
             y = QUOTE(pxToScreen_Y(618));
             w = QUOTE(pxToScreen_W(400));
@@ -208,14 +210,14 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = QPATHTOF(ui\battery.paa);
         };
         class ElapsedTime: DateAndTime {
-            idc = 69018;
+            idc = IDC_DISPLAY_ELAPSEDTIME;
             x = QUOTE(pxToScreen_X(1335));
             w = QUOTE(pxToScreen_W(130));
             style = 2;
             text = "00:00:00";
         };
         class topMiddleText: RscText {
-            idc = 69021;
+            idc = IDC_EKG_DISPLAY_MIDTEXT;
             x = QUOTE(pxToScreen_X(880));
             y = QUOTE(pxToScreen_Y(680));
             w = QUOTE(pxToScreen_W(200));
@@ -229,33 +231,22 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorText[] = {0,1,0,1};
             text = "Check Pads";
         };
-        class ShockButtonBackground: RscPicture {
-            idc = 69022;
-            x = QUOTE(pxToScreen_X(1487));
-            y = QUOTE(pxToScreen_Y(1380));
-            w = QUOTE(pxToScreen_W(256));
-            h = QUOTE(pxToScreen_H(256));
-            style = 48;
-            colorBackground[] = {0,0,0,0};
-            colorText[] = {1,1,1,1};
-            text = "";
-        };
         class ChargingStatusBlackBackground: BlackBackground {
-            idc = 69030;
+            idc = IDC_CHARGE_BBACKGROUND;
             x = QUOTE(pxToScreen_X(478));
             y = QUOTE(pxToScreen_Y(1119));
             w = QUOTE(pxToScreen_W(1000));
             h = QUOTE(pxToScreen_H(250));
         };
         class ChargingStatusBlackBackground2: BlackBackground {
-            idc = 69031;
+            idc = IDC_CHARGE_BBACKGROUND2;
             x = QUOTE(pxToScreen_X(1336));
             y = QUOTE(pxToScreen_Y(601));
             w = QUOTE(pxToScreen_W(145));
             h = QUOTE(pxToScreen_H(768));
         };
         class ChargingStatusDefibrillator: RscText {
-            idc = 69032;
+            idc = IDC_CHARGE_STATUS_TITLE;
             x = QUOTE(pxToScreen_X(579));
             y = QUOTE(pxToScreen_Y(1137));
             w = QUOTE(pxToScreen_W(400));
@@ -270,7 +261,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = "Defibrillator";
         };
         class ChargingStatus: ChargingStatusDefibrillator {
-            idc = 69033;
+            idc = IDC_CHARGE_STATUS;
             y = QUOTE(pxToScreen_Y(1189));
             w = QUOTE(pxToScreen_W(400));
             h = QUOTE(pxToScreen_H(172));
@@ -280,13 +271,13 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = "CHARGING";
         };
         class ChargingStatusEnergySelect: ChargingStatusDefibrillator {
-            idc = 69034;
+            idc = IDC_CHARGE_ENERGY_SELECT;
             x = QUOTE(pxToScreen_X(1065));
             w = QUOTE(pxToScreen_W(270));
             text = "Selected energy";
         };
         class ChargingStatusEnergySelectAmount: ChargingStatus {
-            idc = 69035;
+            idc = IDC_CHARGE_ENERGY_AMOUNT;
             x = QUOTE(pxToScreen_X(1065));
             w = QUOTE(pxToScreen_W(270));
             font = "RobotoCondensedBold";
@@ -296,7 +287,7 @@ class GVAR(AEDX_Monitor_Dialog) {
         };
 
         class ChargingStatusBarCharged: RscText {
-            idc = 69036;
+            idc = IDC_CHARGE_BAR_BACKGROUND;
             x = QUOTE(pxToScreen_X(1344));
             y = QUOTE(pxToScreen_Y(1360));
             w = QUOTE(pxToScreen_W(126));
@@ -309,7 +300,7 @@ class GVAR(AEDX_Monitor_Dialog) {
         };
 
         class ChargingStatusBar1: RscText {
-            idc = 69041;
+            idc = IDC_CHARGE_BAR_1;
             x = QUOTE(pxToScreen_X(1345));
             y = QUOTE(pxToScreen_Y(1328));
             w = QUOTE(pxToScreen_W(123));
@@ -324,108 +315,108 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = "1";
         };
         class ChargingStatusBar2: ChargingStatusBar1 {
-            idc = 69042;
+            idc = IDC_CHARGE_BAR_2;
             y = QUOTE(pxToScreen_Y(1294));
             text = "2";
         };
         class ChargingStatusBar3: ChargingStatusBar1 {
-            idc = 69043;
+            idc = IDC_CHARGE_BAR_3;
             y = QUOTE(pxToScreen_Y(1260));
             text = "3";
         };
         class ChargingStatusBar4: ChargingStatusBar1 {
-            idc = 69044;
+            idc = IDC_CHARGE_BAR_4;
             y = QUOTE(pxToScreen_Y(1226));
             text = "4";
         };
         class ChargingStatusBar5: ChargingStatusBar1 {
-            idc = 69045;
+            idc = IDC_CHARGE_BAR_5;
             y = QUOTE(pxToScreen_Y(1192));
             text = "5";
         };
         class ChargingStatusBar6: ChargingStatusBar1 {
-            idc = 69046;
+            idc = IDC_CHARGE_BAR_6;
             y = QUOTE(pxToScreen_Y(1158));
             text = "6";
         };
         class ChargingStatusBar7: ChargingStatusBar1 {
-            idc = 69047;
+            idc = IDC_CHARGE_BAR_7;
             y = QUOTE(pxToScreen_Y(1124));
             text = "7";
         };
         class ChargingStatusBar8: ChargingStatusBar1 {
-            idc = 69048;
+            idc = IDC_CHARGE_BAR_8;
             y = QUOTE(pxToScreen_Y(1090));
             text = "8";
         };
         class ChargingStatusBar9: ChargingStatusBar1 {
-            idc = 69049;
+            idc = IDC_CHARGE_BAR_9;
             y = QUOTE(pxToScreen_Y(1056));
             text = "9";
         };
         class ChargingStatusBar10: ChargingStatusBar1 {
-            idc = 69050;
+            idc = IDC_CHARGE_BAR_10;
             y = QUOTE(pxToScreen_Y(1022));
             text = "10";
         };
         class ChargingStatusBar15: ChargingStatusBar1 {
-            idc = 69051;
+            idc = IDC_CHARGE_BAR_15;
             y = QUOTE(pxToScreen_Y(988));
             text = "15";
         };
         class ChargingStatusBar20: ChargingStatusBar1 {
-            idc = 69052;
+            idc = IDC_CHARGE_BAR_20;
             y = QUOTE(pxToScreen_Y(954));
             text = "20";
         };
         class ChargingStatusBar30: ChargingStatusBar1 {
-            idc = 69053;
+            idc = IDC_CHARGE_BAR_30;
             y = QUOTE(pxToScreen_Y(920));
             text = "30";
         };
         class ChargingStatusBar50: ChargingStatusBar1 {
-            idc = 69054;
+            idc = IDC_CHARGE_BAR_50;
             y = QUOTE(pxToScreen_Y(886));
             text = "50";
         };
         class ChargingStatusBar70: ChargingStatusBar1 {
-            idc = 69055;
+            idc = IDC_CHARGE_BAR_70;
             y = QUOTE(pxToScreen_Y(852));
             text = "70";
         };
         class ChargingStatusBar85: ChargingStatusBar1 {
-            idc = 69056;
+            idc = IDC_CHARGE_BAR_85;
             y = QUOTE(pxToScreen_Y(818));
             text = "85";
         };
         class ChargingStatusBar100: ChargingStatusBar1 {
-            idc = 69057;
+            idc = IDC_CHARGE_BAR_100;
             y = QUOTE(pxToScreen_Y(784));
             text = "100";
         };
         class ChargingStatusBar120: ChargingStatusBar1 {
-            idc = 69058;
+            idc = IDC_CHARGE_BAR_120;
             y = QUOTE(pxToScreen_Y(750));
             text = "120";
         };
         class ChargingStatusBar150: ChargingStatusBar1 {
-            idc = 69059;
+            idc = IDC_CHARGE_BAR_150;
             y = QUOTE(pxToScreen_Y(682));
             h = QUOTE(pxToScreen_H(66));
             sizeEx = QUOTE(GRID_H * 1.5);
             text = "150";
         };
         class ChargingStatusBar200: ChargingStatusBar1 {
-            idc = 69060;
+            idc = IDC_CHARGE_BAR_200;
             y = QUOTE(pxToScreen_Y(648));
             text = "200";
         };
         class ChargingStatusBackground: EKG {
-            idc = 69040;
+            idc = IDC_CHARGE_BACKGROUND;
             text = QPATHTOF(ui\chargingstatus_bg.paa);
         };
         class ShockTally: RscText {
-            idc = 69037;
+            idc = IDC_CHARGE_SHOCKTOTAL;
             x = QUOTE(pxToScreen_X(980));
             y = QUOTE(pxToScreen_Y(1282));
             w = QUOTE(pxToScreen_W(84));
@@ -452,6 +443,17 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorBackground[] = {0,0,0,0};
             colorText[] = {1,1,1,1};
             text = QPATHTOF(ui\zoll.paa);
+        };
+        class ShockButtonBackground: RscPicture {
+            idc = IDC_SHOCKBUTTON;
+            x = QUOTE(pxToScreen_X(1487));
+            y = QUOTE(pxToScreen_Y(1380));
+            w = QUOTE(pxToScreen_W(256));
+            h = QUOTE(pxToScreen_H(256));
+            style = 48;
+            colorBackground[] = {0,0,0,0};
+            colorText[] = {1,1,1,1};
+            text = "";
         };
     };
 

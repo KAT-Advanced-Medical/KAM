@@ -27,7 +27,7 @@ if (isNull objectParent _patient) then {
     } forEach _bystanders;
 };
 
-_patient setVariable [QEGVAR(circulation,HeartRestart), true, true];
+_patient setVariable [QGVAR(HeartRestart), true, true];
 
 [{
     params ["_patient"];
