@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "..\defines.hpp"
 /*
  * Author: Blue
  * Handle monitor visuals while charging
@@ -17,7 +18,7 @@
 
 params [["_skip", false]];
 
-private _dlg = findDisplay 69000;
+private _dlg = findDisplay IDC_AEDX_MONITOR;
 
 GVAR(AEDX_MonitorCharging) = true;
 GVAR(AEDX_MonitorCharged) = false;
@@ -26,68 +27,68 @@ GVAR(AEDX_MonitorShockAdministered) = false;
 fnc_showDialog = {
     params ["_show"];
 
-    ctrlShow [69030, _show];
-    ctrlShow [69031, _show];
-    ctrlShow [69032, _show];
-    ctrlShow [69033, _show];
-    ctrlShow [69034, _show];
-    ctrlShow [69035, _show];
-    ctrlShow [69036, _show];
-    ctrlShow [69037, _show];
+    ctrlShow [IDC_CHARGE_BBACKGROUND, _show];
+    ctrlShow [IDC_CHARGE_BBACKGROUND2, _show];
+    ctrlShow [IDC_CHARGE_STATUS_TITLE, _show];
+    ctrlShow [IDC_CHARGE_STATUS, _show];
+    ctrlShow [IDC_CHARGE_ENERGY_SELECT, _show];
+    ctrlShow [IDC_CHARGE_ENERGY_AMOUNT, _show];
+    ctrlShow [IDC_CHARGE_BAR_BACKGROUND, _show];
+    ctrlShow [IDC_CHARGE_SHOCKTOTAL, _show];
 
-    ctrlShow [69040, _show];
-    ctrlShow [69041, _show];
-    ctrlShow [69042, _show];
-    ctrlShow [69043, _show];
-    ctrlShow [69044, _show];
-    ctrlShow [69045, _show];
-    ctrlShow [69046, _show];
-    ctrlShow [69047, _show];
-    ctrlShow [69048, _show];
-    ctrlShow [69049, _show];
-    ctrlShow [69050, _show];
-    ctrlShow [69051, _show];
-    ctrlShow [69052, _show];
-    ctrlShow [69053, _show];
-    ctrlShow [69054, _show];
-    ctrlShow [69055, _show];
-    ctrlShow [69056, _show];
-    ctrlShow [69057, _show];
-    ctrlShow [69058, _show];
-    ctrlShow [69059, _show];
-    ctrlShow [69060, _show];
+    ctrlShow [IDC_CHARGE_BACKGROUND, _show];
+    ctrlShow [IDC_CHARGE_BAR_1, _show];
+    ctrlShow [IDC_CHARGE_BAR_2, _show];
+    ctrlShow [IDC_CHARGE_BAR_3, _show];
+    ctrlShow [IDC_CHARGE_BAR_4, _show];
+    ctrlShow [IDC_CHARGE_BAR_5, _show];
+    ctrlShow [IDC_CHARGE_BAR_6, _show];
+    ctrlShow [IDC_CHARGE_BAR_7, _show];
+    ctrlShow [IDC_CHARGE_BAR_8, _show];
+    ctrlShow [IDC_CHARGE_BAR_9, _show];
+    ctrlShow [IDC_CHARGE_BAR_10, _show];
+    ctrlShow [IDC_CHARGE_BAR_15, _show];
+    ctrlShow [IDC_CHARGE_BAR_20, _show];
+    ctrlShow [IDC_CHARGE_BAR_30, _show];
+    ctrlShow [IDC_CHARGE_BAR_50, _show];
+    ctrlShow [IDC_CHARGE_BAR_70, _show];
+    ctrlShow [IDC_CHARGE_BAR_85, _show];
+    ctrlShow [IDC_CHARGE_BAR_100, _show];
+    ctrlShow [IDC_CHARGE_BAR_120, _show];
+    ctrlShow [IDC_CHARGE_BAR_150, _show];
+    ctrlShow [IDC_CHARGE_BAR_200, _show];
 };
 
 [true] call fnc_showDialog;
 
-private _chargeBar = (_dlg displayCtrl 69036);
+private _chargeBar = (_dlg displayCtrl IDC_CHARGE_BAR_BACKGROUND);
 
-ctrlSetText [69037, format ["%1", GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_ShockAmount), 0]]];
+ctrlSetText [IDC_CHARGE_SHOCKTOTAL, format ["%1", GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_ShockAmount), 0]]];
 
 if (_skip) then { // Skip visual charging process
     _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(681), (ctrlPosition _chargeBar) select 2, pxToScreen_H(679)];
     _chargeBar ctrlCommit 0;
 
-    (_dlg displayCtrl 69041) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69042) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69043) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69044) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69045) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69046) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69047) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69048) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69049) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69050) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69051) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69052) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69053) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69054) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69055) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69056) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69057) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69058) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69059) ctrlSetTextColor [0, 0, 0, 1];
-    (_dlg displayCtrl 69059) ctrlSetBackgroundColor [1, 0.35, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_1) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_2) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_3) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_4) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_5) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_6) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_7) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_8) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_9) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_10) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_15) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_20) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_30) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_50) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_70) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_85) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_100) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_120) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_150) ctrlSetTextColor [0, 0, 0, 1];
+    (_dlg displayCtrl IDC_CHARGE_BAR_150) ctrlSetBackgroundColor [1, 0.35, 0, 1];
 
     GVAR(AEDX_MonitorCharging) = false;
     GVAR(AEDX_MonitorCharged) = true;
@@ -110,24 +111,24 @@ if (_skip) then { // Skip visual charging process
         };
 
         if !(GVAR(AEDX_MonitorCharging)) exitWith {
-            (_dlg displayCtrl 69033) ctrlSetTextColor [0, 0, 0, 1];
-            (_dlg displayCtrl 69033) ctrlSetBackgroundColor [1, 0.35, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetTextColor [0, 0, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [1, 0.35, 0, 1];
 
-            (_dlg displayCtrl 69035) ctrlSetTextColor [0, 0, 0, 1];
-            (_dlg displayCtrl 69035) ctrlSetBackgroundColor [1, 0.35, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_ENERGY_AMOUNT) ctrlSetTextColor [0, 0, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_ENERGY_AMOUNT) ctrlSetBackgroundColor [1, 0.35, 0, 1];
 
-            ctrlSetText [69033, "CHARGED"];
+            ctrlSetText [IDC_CHARGE_STATUS, "CHARGED"];
 
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
         if (switchColor) then {
-            (_dlg displayCtrl 69033) ctrlSetTextColor [0, 0, 0, 1];
-            (_dlg displayCtrl 69033) ctrlSetBackgroundColor [1, 0.35, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetTextColor [0, 0, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [1, 0.35, 0, 1];
             switchColor = false;
         } else {
-            (_dlg displayCtrl 69033) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69033) ctrlSetBackgroundColor [0, 0, 0, 0];
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [0, 0, 0, 0];
             switchColor = true;
         };
     }, 0.5, [_dlg]] call CBA_fnc_addPerFrameHandler;
@@ -147,14 +148,14 @@ if (_skip) then { // Skip visual charging process
     [{
         params ["_dlg", "_chargeBar"];
 
-        (_dlg displayCtrl 69041) ctrlSetTextColor [0, 0, 0, 1];
-        (_dlg displayCtrl 69042) ctrlSetTextColor [0, 0, 0, 1];
-        (_dlg displayCtrl 69043) ctrlSetTextColor [0, 0, 0, 1];
-        (_dlg displayCtrl 69044) ctrlSetTextColor [0, 0, 0, 1];
-        (_dlg displayCtrl 69045) ctrlSetTextColor [0, 0, 0, 1];
-        (_dlg displayCtrl 69046) ctrlSetTextColor [0, 0, 0, 1];
-        (_dlg displayCtrl 69047) ctrlSetTextColor [0, 0, 0, 1];
-        (_dlg displayCtrl 69048) ctrlSetTextColor [0, 0, 0, 1];
+        (_dlg displayCtrl IDC_CHARGE_BAR_1) ctrlSetTextColor [0, 0, 0, 1];
+        (_dlg displayCtrl IDC_CHARGE_BAR_2) ctrlSetTextColor [0, 0, 0, 1];
+        (_dlg displayCtrl IDC_CHARGE_BAR_3) ctrlSetTextColor [0, 0, 0, 1];
+        (_dlg displayCtrl IDC_CHARGE_BAR_4) ctrlSetTextColor [0, 0, 0, 1];
+        (_dlg displayCtrl IDC_CHARGE_BAR_5) ctrlSetTextColor [0, 0, 0, 1];
+        (_dlg displayCtrl IDC_CHARGE_BAR_6) ctrlSetTextColor [0, 0, 0, 1];
+        (_dlg displayCtrl IDC_CHARGE_BAR_7) ctrlSetTextColor [0, 0, 0, 1];
+        (_dlg displayCtrl IDC_CHARGE_BAR_8) ctrlSetTextColor [0, 0, 0, 1];
 
         _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(1089), (ctrlPosition _chargeBar) select 2, pxToScreen_H(271)];
         _chargeBar ctrlCommit 0;
@@ -162,10 +163,10 @@ if (_skip) then { // Skip visual charging process
         [{
             params ["_dlg", "_chargeBar"];
 
-            (_dlg displayCtrl 69049) ctrlSetTextColor [0, 0, 0, 1];
-            (_dlg displayCtrl 69050) ctrlSetTextColor [0, 0, 0, 1];
-            (_dlg displayCtrl 69051) ctrlSetTextColor [0, 0, 0, 1];
-            (_dlg displayCtrl 69052) ctrlSetTextColor [0, 0, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_9) ctrlSetTextColor [0, 0, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_10) ctrlSetTextColor [0, 0, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_15) ctrlSetTextColor [0, 0, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_20) ctrlSetTextColor [0, 0, 0, 1];
 
             _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(953), (ctrlPosition _chargeBar) select 2, pxToScreen_H(407)];
             _chargeBar ctrlCommit 0;
@@ -173,7 +174,7 @@ if (_skip) then { // Skip visual charging process
             [{
                 params ["_dlg", "_chargeBar"];
 
-                (_dlg displayCtrl 69053) ctrlSetTextColor [0, 0, 0, 1];
+                (_dlg displayCtrl IDC_CHARGE_BAR_30) ctrlSetTextColor [0, 0, 0, 1];
 
                 _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(918), (ctrlPosition _chargeBar) select 2, pxToScreen_H(442)];
                 _chargeBar ctrlCommit 0;
@@ -181,7 +182,7 @@ if (_skip) then { // Skip visual charging process
                 [{
                     params ["_dlg", "_chargeBar"];
 
-                    (_dlg displayCtrl 69054) ctrlSetTextColor [0, 0, 0, 1];
+                    (_dlg displayCtrl IDC_CHARGE_BAR_50) ctrlSetTextColor [0, 0, 0, 1];
 
                     _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(884), (ctrlPosition _chargeBar) select 2, pxToScreen_H(476)];
                     _chargeBar ctrlCommit 0;
@@ -189,8 +190,8 @@ if (_skip) then { // Skip visual charging process
                     [{
                         params ["_dlg", "_chargeBar"];
 
-                        (_dlg displayCtrl 69055) ctrlSetTextColor [0, 0, 0, 1];
-                        (_dlg displayCtrl 69056) ctrlSetTextColor [0, 0, 0, 1];
+                        (_dlg displayCtrl IDC_CHARGE_BAR_70) ctrlSetTextColor [0, 0, 0, 1];
+                        (_dlg displayCtrl IDC_CHARGE_BAR_85) ctrlSetTextColor [0, 0, 0, 1];
 
                         _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(817), (ctrlPosition _chargeBar) select 2, pxToScreen_H(543)];
                         _chargeBar ctrlCommit 0;
@@ -198,7 +199,7 @@ if (_skip) then { // Skip visual charging process
                         [{
                             params ["_dlg", "_chargeBar"];
 
-                            (_dlg displayCtrl 69057) ctrlSetTextColor [0, 0, 0, 1];
+                            (_dlg displayCtrl IDC_CHARGE_BAR_100) ctrlSetTextColor [0, 0, 0, 1];
 
                             _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(782), (ctrlPosition _chargeBar) select 2, pxToScreen_H(578)];
                             _chargeBar ctrlCommit 0;
@@ -206,7 +207,7 @@ if (_skip) then { // Skip visual charging process
                             [{
                                 params ["_dlg", "_chargeBar"];
 
-                                (_dlg displayCtrl 69058) ctrlSetTextColor [0, 0, 0, 1];
+                                (_dlg displayCtrl IDC_CHARGE_BAR_120) ctrlSetTextColor [0, 0, 0, 1];
 
                                 _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(748), (ctrlPosition _chargeBar) select 2, pxToScreen_H(612)];
                                 _chargeBar ctrlCommit 0;
@@ -214,8 +215,8 @@ if (_skip) then { // Skip visual charging process
                                 [{
                                     params ["_dlg", "_chargeBar"];
 
-                                    (_dlg displayCtrl 69059) ctrlSetTextColor [0, 0, 0, 1];
-                                    (_dlg displayCtrl 69059) ctrlSetBackgroundColor [1, 0.35, 0, 1];
+                                    (_dlg displayCtrl IDC_CHARGE_BAR_150) ctrlSetTextColor [0, 0, 0, 1];
+                                    (_dlg displayCtrl IDC_CHARGE_BAR_150) ctrlSetBackgroundColor [1, 0.35, 0, 1];
 
                                     _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(680), (ctrlPosition _chargeBar) select 2, pxToScreen_H(680)];
                                     _chargeBar ctrlCommit 0;
@@ -239,12 +240,12 @@ if (_skip) then { // Skip visual charging process
 
     if !(isNull _dlg) then {
         if(GVAR(AEDX_MonitorShockAdministered)) then {
-            ctrlSetText [69033, "Delivered Energy"];
-            (_dlg displayCtrl 69033) ctrlSetBackgroundColor [0.05, 0.85, 0.36, 1];
-            (_dlg displayCtrl 69033) ctrlSetFontHeight (GRID_H * 1.1);
+            ctrlSetText [IDC_CHARGE_STATUS, "Delivered Energy"];
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [0.05, 0.85, 0.36, 1];
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetFontHeight (GRID_H * 1.1);
         } else {
-            ctrlSetText [69033, "DISARMED"];
-            (_dlg displayCtrl 69033) ctrlSetBackgroundColor [0.94, 0.94, 0.03, 1];
+            ctrlSetText [IDC_CHARGE_STATUS, "DISARMED"];
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [0.94, 0.94, 0.03, 1];
         };
 
         [{
@@ -252,40 +253,40 @@ if (_skip) then { // Skip visual charging process
 
             [false] call fnc_showDialog;
 
-            (_dlg displayCtrl 69033) ctrlSetBackgroundColor [1, 0.35, 0, 0];
-            ctrlSetText [69033, "CHARGING"];
-            (_dlg displayCtrl 69033) ctrlSetFontHeight (GRID_H * 1.5);
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [1, 0.35, 0, 0];
+            ctrlSetText [IDC_CHARGE_STATUS, "CHARGING"];
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetFontHeight (GRID_H * 1.5);
 
-            (_dlg displayCtrl 69035) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69035) ctrlSetBackgroundColor [0, 0, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_ENERGY_AMOUNT) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_ENERGY_AMOUNT) ctrlSetBackgroundColor [0, 0, 0, 1];
 
-            (_dlg displayCtrl 69041) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69042) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69043) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69044) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69045) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69046) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69047) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69048) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_1) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_2) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_3) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_4) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_5) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_6) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_7) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_8) ctrlSetTextColor [1, 1, 1, 1];
 
-            (_dlg displayCtrl 69049) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69050) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69051) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69052) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_9) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_10) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_15) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_20) ctrlSetTextColor [1, 1, 1, 1];
 
-            (_dlg displayCtrl 69053) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_30) ctrlSetTextColor [1, 1, 1, 1];
 
-            (_dlg displayCtrl 69054) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_50) ctrlSetTextColor [1, 1, 1, 1];
 
-            (_dlg displayCtrl 69055) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69056) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_70) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_85) ctrlSetTextColor [1, 1, 1, 1];
 
-            (_dlg displayCtrl 69057) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_100) ctrlSetTextColor [1, 1, 1, 1];
 
-            (_dlg displayCtrl 69058) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_120) ctrlSetTextColor [1, 1, 1, 1];
 
-            (_dlg displayCtrl 69059) ctrlSetTextColor [1, 1, 1, 1];
-            (_dlg displayCtrl 69059) ctrlSetBackgroundColor [0, 0, 0, 0];
+            (_dlg displayCtrl IDC_CHARGE_BAR_150) ctrlSetTextColor [1, 1, 1, 1];
+            (_dlg displayCtrl IDC_CHARGE_BAR_150) ctrlSetBackgroundColor [0, 0, 0, 0];
 
             _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(1360), (ctrlPosition _chargeBar) select 2, pxToScreen_H(1)];
             _chargeBar ctrlCommit 0;

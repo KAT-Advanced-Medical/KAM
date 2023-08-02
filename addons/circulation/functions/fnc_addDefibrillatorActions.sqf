@@ -35,7 +35,10 @@ switch (_type) do {
                     [_medic, _patient, "body", "AEDXStationPlacePads", [_defibObject]] call FUNC(treatment);
                 },
                 {
-                    true;
+                    params ["_medic", "","_args"];
+                    _args params ["_patient","_defibObject"];
+
+                    [_medic, _patient, "body", "AEDXStationPlacePads", [_defibObject]] call FUNC(canTreat);
                 },
                 {},
                 [_x,_defibObject]
@@ -77,7 +80,10 @@ switch (_type) do {
                     [_medic, _patient, "body", "AEDStationPlacePads", [_defibObject]] call FUNC(treatment);
                 },
                 {
-                    true;
+                    params ["_medic", "","_args"];
+                    _args params ["_patient","_defibObject"];
+
+                    [_medic, _patient, "body", "AEDStationPlacePads", [_defibObject]] call FUNC(canTreat);
                 },
                 {},
                 [_x,_defibObject]
