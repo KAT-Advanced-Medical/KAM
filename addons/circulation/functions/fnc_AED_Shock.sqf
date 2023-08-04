@@ -27,12 +27,12 @@ if (isNull objectParent _patient) then {
     } forEach _bystanders;
 };
 
-_patient setVariable [QGVAR(HeartRestart), true, true];
+_patient setVariable [QGVAR(heartRestart), true, true];
 
 [{
     params ["_patient"];
 
-    _patient setVariable [QGVAR(HeartRestart), false, true];
+    _patient setVariable [QGVAR(heartRestart), false, true];
 }, [_patient], 2] call CBA_fnc_waitAndExecute;
 
 [{

@@ -10,12 +10,14 @@
  *   0: Medic
  *   1: Placed
  *   2: Vehicle
+ * 3: Extra Arguments <ARRAY>
+ *   0: Placed AED <OBJECT>
  *
  * Return Value:
  * Can connect monitor <BOOL>
  *
  * Example:
- * [player, cursorObject, 0] call kat_circulation_fnc_AEDX_VitalsMonitor_CheckCondition;
+ * [player, cursorObject, 0, []] call kat_circulation_fnc_AEDX_VitalsMonitor_CheckCondition;
  *
  * Public: No
  */

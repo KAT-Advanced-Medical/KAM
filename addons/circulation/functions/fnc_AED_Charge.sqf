@@ -38,7 +38,7 @@ playsound3D [QPATHTOF_SOUND(sounds\charging.wav), _soundSource, false, getPosASL
         {
             params ["_medic", "_patient", "_soundSource", "_defibType"];
 
-            if(_patient getVariable [QGVAR(DefibrillatorInUse), false]) then { // Shock administered
+            if (_patient getVariable [QGVAR(DefibrillatorInUse), false]) then { // Shock administered
                 [_medic, _patient, _defibType] call FUNC(AED_Shock);
                 playsound3D [QPATHTOF_SOUND(sounds\bump.wav), _patient, false, getPosASL _patient, 6, 1, 15];
 
@@ -69,7 +69,7 @@ playsound3D [QPATHTOF_SOUND(sounds\charging.wav), _soundSource, false, getPosASL
             params ["_args", "_idPFH"];
             _args params ["_medic", "_patient", "_soundSource"];
 
-            if(!(_patient getVariable [QGVAR(Defibrillator_Charged), false])) exitWith {
+            if (!(_patient getVariable [QGVAR(Defibrillator_Charged), false])) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
 

@@ -31,17 +31,17 @@ private _cardiacArrestType = 0;
 
 if !(alive _unit) exitWith {};
 
-if(_initial) then {
+if (_initial) then {
     if !(_active) exitWith {};
 
-    if(_unit getVariable [QACEGVAR(medical,bloodVolume), 6.0] < GVAR(AdvRhythm_asystoleBloodlossThreshold)) then {
-        if(floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
+    if (_unit getVariable [QACEGVAR(medical,bloodVolume), 6.0] < GVAR(AdvRhythm_asystoleBloodlossThreshold)) then {
+        if (floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
             _cardiacArrestType = 2;
         } else {
             _cardiacArrestType = 1;
         };
     } else {
-        if(floor (random 100) < GVAR(AdvRhythm_VTChance)) then {
+        if (floor (random 100) < GVAR(AdvRhythm_VTChance)) then {
             _cardiacArrestType = 4;
         } else {
             _cardiacArrestType = 3;
@@ -53,10 +53,10 @@ if(_initial) then {
     _cardiacArrestType = _unit getVariable [QGVAR(cardiacArrestType), 0];
 };
 
-if(GVAR(AdvRhythm_canDeteriorate)) then {
+if (GVAR(AdvRhythm_canDeteriorate)) then {
     private _timeToDeteriorate = 0;
 
-    if(GVAR(AdvRhythm_deteriorateTimeWeight) < GVAR(AdvRhythm_deteriorateTimeWeight)) then {
+    if (GVAR(AdvRhythm_deteriorateTimeWeight) < GVAR(AdvRhythm_deteriorateTimeWeight)) then {
         _timeToDeteriorate = random [20, GVAR(AdvRhythm_deteriorateTimeWeight), GVAR(AdvRhythm_deteriorateTimeWeight)];
     } else {
         _timeToDeteriorate = random [20, GVAR(AdvRhythm_deteriorateTimeWeight) / 2, GVAR(AdvRhythm_deteriorateTimeWeight)];
@@ -69,7 +69,7 @@ if(GVAR(AdvRhythm_canDeteriorate)) then {
             },
             {
                 private _targetType = 1;
-                if(floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
+                if (floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
                     _targetType = 2;
                 } else {
                     _targetType = 1;
@@ -79,7 +79,7 @@ if(GVAR(AdvRhythm_canDeteriorate)) then {
             [_unit], _timeToDeteriorate,
             {
                 // chance to deteriorate straight into asystole (PEA)
-                if(GVAR(AdvRhythm_Hardcore_Enable) && {floor (random 100) < GVAR(AdvRhythm_hardcoreDeteriorationChance) && {_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 4}}) then {
+                if (GVAR(AdvRhythm_Hardcore_Enable) && {floor (random 100) < GVAR(AdvRhythm_hardcoreDeteriorationChance) && {_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 4}}) then {
                     _unit setVariable [QGVAR(cardiacArrestType), 2, true];
                     [_unit, nil, false] call FUNC(handleCardiacArrest);
                 };
@@ -96,7 +96,7 @@ if(GVAR(AdvRhythm_canDeteriorate)) then {
             },
             { // If past asystole bloodloss threshold
                 private _targetType = 1;
-                if(floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
+                if (floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
                     _targetType = 2;
                 } else {
                     _targetType = 1;
