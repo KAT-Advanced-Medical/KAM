@@ -33,19 +33,19 @@ private _occludedFlushed = false;
 [_patient, "activity", LLSTRING(flush_log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 
 if !(HAS_TOURNIQUET_APPLIED_ON(_patient, _partIndex)) then {
-	{
-		_x params ["_partIndexN", "_medication"];
+    {
+        _x params ["_partIndexN", "_medication"];
 
-		if(_partIndex isEqualTo _partIndexN) then {
-			[QGVAR(medicationLocal), [_patient, _bodyPart, _medication], _patient] call CBA_fnc_targetEvent;
+        if(_partIndex isEqualTo _partIndexN) then {
+            [QGVAR(medicationLocal), [_patient, _bodyPart, _medication], _patient] call CBA_fnc_targetEvent;
 
-			_occludedMedications set [_forEachIndex, []];
-			_occludedFlushed = true;
-		};
-	} forEach _occludedMedications;
+            _occludedMedications set [_forEachIndex, []];
+            _occludedFlushed = true;
+        };
+    } forEach _occludedMedications;
 
-	if (_occludedFlushed) then {
-		_occludedMedications = _occludedMedications - [[]];
-		_patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
-	};
+    if (_occludedFlushed) then {
+        _occludedMedications = _occludedMedications - [[]];
+        _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
+    };
 };
