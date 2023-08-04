@@ -111,8 +111,9 @@ private _dlg = findDisplay IDC_AEDX_MONITOR;
                                 case (_hr > 90 && _hr < 110): {_ekgDisplay = QPATHTOF(ui\ekg_sinus_100.paa);};
                                 case (_hr > 70 && _hr < 90): {_ekgDisplay = QPATHTOF(ui\ekg_sinus.paa);};
                                 case (_hr > 50 && _hr < 70): {_ekgDisplay = QPATHTOF(ui\ekg_sinus_60.paa);};
+                                case (_hr > 0): {_ekgDisplay = QPATHTOF(ui\ekg_sinus_40.paa);};
                                 default {
-                                    _ekgDisplay = QPATHTOF(ui\ekg_sinus_40.paa);
+                                    _ekgDisplay = QPATHTOF(ui\ekg_asystole.paa);
                                 };
                             };
                         };
@@ -163,20 +164,40 @@ private _dlg = findDisplay IDC_AEDX_MONITOR;
         ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_M, ""];
         ctrlSetText [IDC_DISPLAY_SPO2, "---"];
     };
-    if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(heartRestart), false]) then {
-        if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
-            _hr = GVAR(AEDX_MonitorTarget) call FUNC(getCardiacArrestHeartRate);
 
-            if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
-                _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
-            };
+    if !(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
+        
+        private _rhythmHR = 0;
+
+        if(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
+            _rhythmHR = GVAR(AEDX_MonitorTarget) call FUNC(getCardiacArrestHeartRate);
         } else {
-            _hr = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
+            _rhythmHR = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
+        };
+        
+        _hr = random [30, 30 + _rhythmHR / 2, _rhythmHR];
 
-            if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
-                _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
+        if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
+            _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
+        } else {
+            _bp = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+        };
+    } else {
+        if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(heartRestart), false]) then {
+            if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
+                _hr = GVAR(AEDX_MonitorTarget) call FUNC(getCardiacArrestHeartRate);
+
+                if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
+                    _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
+                };
             } else {
-                _bp = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+                _hr = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
+
+                if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
+                    _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];
+                } else {
+                    _bp = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,bloodPressure), [0,0]];
+                };
             };
         };
     };

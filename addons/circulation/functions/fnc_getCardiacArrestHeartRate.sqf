@@ -27,10 +27,10 @@ params ["_unit"];
 
 switch (_unit getVariable [QGVAR(cardiacArrestType), 0]) do {
     case 4: {
-         round (random [150, 180, 200]);
+         round (random [200, 220, 240]);
     };
     case 3: {
-        round (random [70, 100, 150]);
+        round (random [150, 170, 200]);
     };
     case 2: {
         round (random [70, 80, 100]);
