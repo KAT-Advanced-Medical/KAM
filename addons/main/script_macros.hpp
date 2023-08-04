@@ -126,6 +126,28 @@
 #define VAR_TOURNIQUET        QACEGVAR(medical,tourniquets)
 #define VAR_FRACTURES         QACEGVAR(medical,fractures)
 
+// - Unit Functions ---------------------------------------------------
+// Retrieval macros for common unit values
+// Defined for easy consistency and speed
+#define GET_SM_STATE(_unit)         ([_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState)
+#define GET_BLOOD_VOLUME(unit)      (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
+#define GET_WOUND_BLEEDING(unit)    (unit getVariable [VAR_WOUND_BLEEDING, 0])
+#define GET_HEART_RATE(unit)        (unit getVariable [VAR_HEART_RATE, DEFAULT_HEART_RATE])
+#define GET_HEMORRHAGE(unit)        (unit getVariable [VAR_HEMORRHAGE, 0])
+#define GET_PAIN(unit)              (unit getVariable [VAR_PAIN, 0])
+#define GET_PAIN_SUPPRESS(unit)     (unit getVariable [VAR_PAIN_SUPP, 0])
+#define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
+#define GET_FRACTURES(unit)         (unit getVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES])
+#define IN_CRDC_ARRST(unit)         (unit getVariable [VAR_CRDC_ARRST, false])
+#define IS_BLEEDING(unit)           (GET_WOUND_BLEEDING(unit) > 0)
+#define IS_IN_PAIN(unit)            (unit getVariable [VAR_IN_PAIN, false])
+#define IS_UNCONSCIOUS(unit)        (unit getVariable [VAR_UNCON, false])
+#define GET_OPEN_WOUNDS(unit)       (unit getVariable [VAR_OPEN_WOUNDS, []])
+#define GET_BANDAGED_WOUNDS(unit)   (unit getVariable [VAR_BANDAGED_WOUNDS, []])
+#define GET_STITCHED_WOUNDS(unit)   (unit getVariable [VAR_STITCHED_WOUNDS, []])
+#define GET_DAMAGE_THRESHOLD(unit)  (unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)])
+
+#define GET_PAIN_PERCEIVED(unit)    (0 max (GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1)
 // END ACE3 reference macros
 
 // item types

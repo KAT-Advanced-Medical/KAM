@@ -10,4 +10,12 @@ class CfgFunctions {
             };
         };
     };
+    class overwrite_medical_vitals {
+        tag = "ace_medical_vitals";
+        class ace_medical_treatment {
+            class updateHeartRate {
+                file = QPATHTOF(functions\fnc_updateHeartRate.sqf);
+            };
+        };
+    };
 };
