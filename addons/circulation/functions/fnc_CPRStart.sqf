@@ -108,3 +108,26 @@ if (_inVehicle) then {
         [_medic, _patient] call FUNC(cprSuccess);
     }, GVAR(CPR_ChanceInterval), [_medic, _patient]] call CBA_fnc_addPerFrameHandler;
 }, [_medic, _patient], GVAR(CPR_ChanceInterval) + 2.5] call CBA_fnc_waitAndExecute;
+
+if (_patient getVariable [QGVAR(RhythmAnalyzed), false]) then {
+    [{
+        params ["_medic", "_patient"];
+
+        if(!((_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull) && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && !(_patient getVariable [QGVAR(DefibrillatorInUse), false])) then {
+            private _provider = _patient getVariable QGVAR(Defibrillator_Provider);
+            private _source = _medic;
+
+            switch (_provider select 1) do {
+                case 1: {
+                    _source = _provider select 0;
+                };
+                case 2: {
+                    _source = _patient;
+                };
+                default {};
+            };
+
+            playSound3D [QPATHTOF_SOUND(sounds\checkpulse_nopulsepushanalyze.wav), _source, false, getPosASL _source, 6, 1, 15];
+        };
+    }, [_medic, _patient], 122.5] call CBA_fnc_waitAndExecute;
+};

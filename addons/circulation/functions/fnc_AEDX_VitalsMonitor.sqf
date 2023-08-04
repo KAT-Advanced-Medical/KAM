@@ -6,7 +6,7 @@
  *
  * Arguments:
  * 0: Unit <OBJECT>
- * 1: Target <OBJECT>
+ * 1: Patient <OBJECT>
  * 2: Sound source <OBJECT>
  *
  * Return Value:

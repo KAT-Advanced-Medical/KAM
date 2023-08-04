@@ -68,6 +68,7 @@ playsound3D [QPATHTOF_SOUND(sounds\analyzingnow.wav), _soundSource, false, getPo
         } else { // no shock advised
             playsound3D [QPATHTOF_SOUND(sounds\noshockadvised.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
             _patient setVariable [QGVAR(DefibrillatorInUse), false, true];
+            _patient setVariable [QGVAR(RhythmAnalyzed), true, true];
         };
     } else { // If advanced rhythms are disabled just check if patient is in cardiac arrest
         if (_patient getVariable [QACEGVAR(medical,heartRate), 0] isEqualTo 0) then {
@@ -79,6 +80,7 @@ playsound3D [QPATHTOF_SOUND(sounds\analyzingnow.wav), _soundSource, false, getPo
         } else {
             playsound3D [QPATHTOF_SOUND(sounds\noshockadvised.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
             _patient setVariable [QGVAR(DefibrillatorInUse), false, true];
+            _patient setVariable [QGVAR(RhythmAnalyzed), true, true];
         };
     };
 }] call CBA_fnc_waitUntilAndExecute;

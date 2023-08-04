@@ -120,6 +120,7 @@ switch (_source) do {
 _patient setVariable [QGVAR(DefibrillatorPads_Connected), true, true];
 _patient setVariable [QGVAR(Defibrillator_Provider), [_provider, _source, _defibClassname], true];
 _patient setVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), (_provider getVariable [QGVAR(AED_X_VitalsMonitor_Volume), false]), true];
+_patient setVariable [QGVAR(RhythmAnalyzed), false, true];
 
 [_patient, "activity", LSTRING(Activity_AttachPads), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 
