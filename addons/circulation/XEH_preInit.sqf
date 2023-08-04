@@ -330,7 +330,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(AdvRhythm_deteriorateTimeMax),
     "SLIDER",
-    LLSTRING(SETTING_AdvRhythm_deteriorateTimeWeightMax),
+    LLSTRING(SETTING_AdvRhythm_deteriorateTimeMax),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [30,3600,900,0],
     true
