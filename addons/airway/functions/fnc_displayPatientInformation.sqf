@@ -40,7 +40,7 @@ if (isNull _display) then {
         if (ACE_player distance _target > MAX_DISTANCE && {vehicle _target != vehicle ACE_player}) exitWith {
             [_pfhID] call CBA_fnc_removePerFrameHandler;
             QACEGVAR(medical_gui,RscPatientInfo) cutFadeOut 0.3;
-            [[QACEGVAR(medical,DistanceToFar), _target call ACEFUNC(common,getName)], 2] call ACEFUNC(common,displayTextStructured);
+            [[ACELLSTRING(medical,DistanceToFar), _target call ACEFUNC(common,getName)], 2] call ACEFUNC(common,displayTextStructured);
         };
 
         // Update body image
