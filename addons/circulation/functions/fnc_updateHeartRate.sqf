@@ -66,6 +66,4 @@ if IN_CRDC_ARRST(_unit) then {
 
 _unit setVariable [VAR_HEART_RATE, _heartRate, _syncValue];
 
-systemChat format ["%1 %2",_unit, _heartRate];
-
 _heartRate

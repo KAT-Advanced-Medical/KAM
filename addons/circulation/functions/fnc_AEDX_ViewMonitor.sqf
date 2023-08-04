@@ -175,7 +175,7 @@ private _dlg = findDisplay IDC_AEDX_MONITOR;
             _rhythmHR = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
         };
         
-        _hr = random [30, 30 + _rhythmHR / 2, _rhythmHR];
+        _hr = random [100, 100 + _rhythmHR / 2, _rhythmHR];
 
         if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
             _bp = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(StoredBloodPressure), [0,0]];

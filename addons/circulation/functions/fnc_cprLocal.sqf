@@ -168,5 +168,8 @@ if !(GVAR(enable_CPR_Chances)) then {
             [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
         };
         _patient setVariable [QGVAR(cprCount), 2, true];
+    } else {
+        _CPRcount = _CPRcount + 1;
+        _patient setVariable [QGVAR(cprCount), _CPRcount, true];
     };
 };
