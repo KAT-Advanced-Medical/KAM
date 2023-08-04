@@ -18,4 +18,4 @@
 
 params ["_medic", "_patient"];
 
-(_patient getVariable [QGVAR(DefibrillatorPads_Connected),false]) && (_patient getVariable [QGVAR(Defibrillator_Provider), nil]) select 2 isEqualTo "kat_X_AED";
+(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) && (_patient getVariable [QGVAR(Defibrillator_Provider), nil]) select 2 isEqualTo "kat_X_AED";

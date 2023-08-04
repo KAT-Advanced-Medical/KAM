@@ -40,37 +40,6 @@ createDialog QGVAR(AEDX_Monitor_Dialog);
 
 private _dlg = findDisplay IDC_AEDX_MONITOR;
 
-ctrlShow [IDC_CHARGE_BBACKGROUND, false];
-ctrlShow [IDC_CHARGE_BBACKGROUND2, false];
-ctrlShow [IDC_CHARGE_STATUS_TITLE, false];
-ctrlShow [IDC_CHARGE_STATUS, false];
-ctrlShow [IDC_CHARGE_ENERGY_SELECT, false];
-ctrlShow [IDC_CHARGE_ENERGY_AMOUNT, false];
-ctrlShow [IDC_CHARGE_BAR_BACKGROUND, false];
-ctrlShow [IDC_CHARGE_SHOCKTOTAL, false];
-
-ctrlShow [IDC_CHARGE_BACKGROUND, false];
-ctrlShow [IDC_CHARGE_BAR_1, false];
-ctrlShow [IDC_CHARGE_BAR_2, false];
-ctrlShow [IDC_CHARGE_BAR_3, false];
-ctrlShow [IDC_CHARGE_BAR_4, false];
-ctrlShow [IDC_CHARGE_BAR_5, false];
-ctrlShow [IDC_CHARGE_BAR_6, false];
-ctrlShow [IDC_CHARGE_BAR_7, false];
-ctrlShow [IDC_CHARGE_BAR_8, false];
-ctrlShow [IDC_CHARGE_BAR_9, false];
-ctrlShow [IDC_CHARGE_BAR_10, false];
-ctrlShow [IDC_CHARGE_BAR_15, false];
-ctrlShow [IDC_CHARGE_BAR_20, false];
-ctrlShow [IDC_CHARGE_BAR_30, false];
-ctrlShow [IDC_CHARGE_BAR_50, false];
-ctrlShow [IDC_CHARGE_BAR_70, false];
-ctrlShow [IDC_CHARGE_BAR_85, false];
-ctrlShow [IDC_CHARGE_BAR_100, false];
-ctrlShow [IDC_CHARGE_BAR_120, false];
-ctrlShow [IDC_CHARGE_BAR_150, false];
-ctrlShow [IDC_CHARGE_BAR_200, false];
-
 [{
     params ["_args", "_idPFH"];
     _args params ["_dlg"];
@@ -96,7 +65,7 @@ ctrlShow [IDC_CHARGE_BAR_200, false];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if(_source isEqualTo 1) then {
+    if (_source isEqualTo 1) then {
         GVAR(AEDX_MonitorTarget) = _target getVariable QGVAR(Defibrillator_Patient);
     };
 
@@ -107,8 +76,6 @@ ctrlShow [IDC_CHARGE_BAR_200, false];
     } else {
         GVAR(AEDX_MonitorTarget) = objNull;
     };
-    
-    private _shockButton = "";
 
     if !(_pads) then {
         ctrlSetText [IDC_EKG_DISPLAY_MIDTEXT, "Check Pads"];
@@ -121,14 +88,14 @@ ctrlShow [IDC_CHARGE_BAR_200, false];
         if !(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
             _ekgDisplay = QPATHTOF(ui\ekg_cpr.paa);
         } else {
-            if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(HeartRestart), false]) then {
+            if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(heartRestart), false]) then {
                 switch (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0]) do {
                     case 4: {_ekgDisplay = QPATHTOF(ui\ekg_vt.paa);};
                     case 3: {_ekgDisplay = QPATHTOF(ui\ekg_vf.paa);};
                     case 2: {_ekgDisplay = QPATHTOF(ui\ekg_sinus.paa);};
                     case 1: {_ekgDisplay = QPATHTOF(ui\ekg_asystole.paa);};
                     default {
-                        if((GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,inCardiacArrest), false] && !(GVAR(AdvRhythm))) || !(alive GVAR(AEDX_MonitorTarget))) then {
+                        if ((GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,inCardiacArrest), false] && !(GVAR(AdvRhythm))) || !(alive GVAR(AEDX_MonitorTarget))) then {
                             _ekgDisplay = QPATHTOF(ui\ekg_asystole.paa);
                         } else {
                             private _hr = 0;
@@ -159,11 +126,11 @@ ctrlShow [IDC_CHARGE_BAR_200, false];
         ctrlSetText [IDC_EKG_DISPLAY, _ekgDisplay];
         
         if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_Charged), false]) then {
-            _shockButton = QPATHTOF(ui\shockbutton.paa);
+            ctrlShow [IDC_SHOCKBUTTON, true];
+        } else {
+            ctrlShow [IDC_SHOCKBUTTON, false];
         };
     };
-
-    ctrlSetText [IDC_SHOCKBUTTON, _shockButton];
 
     // Handle date and time display - [year,month,day,hour,min]
 
@@ -196,7 +163,7 @@ ctrlShow [IDC_CHARGE_BAR_200, false];
         ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_M, ""];
         ctrlSetText [IDC_DISPLAY_SPO2, "---"];
     };
-    if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(HeartRestart), false]) then {
+    if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(heartRestart), false]) then {
         if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
             _hr = GVAR(AEDX_MonitorTarget) call FUNC(getCardiacArrestHeartRate);
 

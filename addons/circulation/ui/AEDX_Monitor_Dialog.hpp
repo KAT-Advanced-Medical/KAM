@@ -237,6 +237,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             y = QUOTE(pxToScreen_Y(1119));
             w = QUOTE(pxToScreen_W(1000));
             h = QUOTE(pxToScreen_H(250));
+            show = 0;
         };
         class ChargingStatusBlackBackground2: BlackBackground {
             idc = IDC_CHARGE_BBACKGROUND2;
@@ -244,6 +245,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             y = QUOTE(pxToScreen_Y(601));
             w = QUOTE(pxToScreen_W(145));
             h = QUOTE(pxToScreen_H(768));
+            show = 0;
         };
         class ChargingStatusDefibrillator: RscText {
             idc = IDC_CHARGE_STATUS_TITLE;
@@ -259,6 +261,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorBackground[] = {0.05,0.85,0.36,1};
             colorText[] = {0,0,0,1};
             text = "Defibrillator";
+            show = 0;
         };
         class ChargingStatus: ChargingStatusDefibrillator {
             idc = IDC_CHARGE_STATUS;
@@ -282,7 +285,8 @@ class GVAR(AEDX_Monitor_Dialog) {
             w = QUOTE(pxToScreen_W(270));
             font = "RobotoCondensedBold";
             sizeEx = QUOTE(GRID_H * 2.5);
-            colorText[] = {0,0,0,1};
+            colorBackground[] = {0,0,0,1};
+            colorText[] = {1,1,1,1};
             text = "150 J";
         };
 
@@ -297,6 +301,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             shadow = 0;
             colorBackground[] = {1,1,1,1};
             colorText[] = {1,1,1,0};
+            show = 0;
         };
 
         class ChargingStatusBar1: RscText {
@@ -313,6 +318,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorBackground[] = {0,0,0,0};
             colorText[] = {1,1,1,1};
             text = "1";
+            show = 0;
         };
         class ChargingStatusBar2: ChargingStatusBar1 {
             idc = IDC_CHARGE_BAR_2;
@@ -414,6 +420,7 @@ class GVAR(AEDX_Monitor_Dialog) {
         class ChargingStatusBackground: EKG {
             idc = IDC_CHARGE_BACKGROUND;
             text = QPATHTOF(ui\chargingstatus_bg.paa);
+            show = 0;
         };
         class ShockTally: RscText {
             idc = IDC_CHARGE_SHOCKTOTAL;
@@ -429,6 +436,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorBackground[] = {0,0,0,0};
             colorText[] = {1,1,1,1};
             text = "0";
+            show = 0;
         };
         class AEDBackground: RscPicture {
             idc = -1;
@@ -444,7 +452,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             colorText[] = {1,1,1,1};
             text = QPATHTOF(ui\zoll.paa);
         };
-        class ShockButtonBackground: RscPicture {
+        class ShockButton: RscPicture {
             idc = IDC_SHOCKBUTTON;
             x = QUOTE(pxToScreen_X(1487));
             y = QUOTE(pxToScreen_Y(1380));
@@ -453,7 +461,8 @@ class GVAR(AEDX_Monitor_Dialog) {
             style = 48;
             colorBackground[] = {0,0,0,0};
             colorText[] = {1,1,1,1};
-            text = "";
+            text = QPATHTOF(ui\shockbutton.paa);
+            show = 0;
         };
     };
 

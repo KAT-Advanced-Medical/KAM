@@ -24,7 +24,7 @@ GVAR(AEDX_MonitorCharging) = true;
 GVAR(AEDX_MonitorCharged) = false;
 GVAR(AEDX_MonitorShockAdministered) = false;
 
-fnc_showDialog = {
+private _fnc_showDialog = {
     params ["_show"];
 
     ctrlShow [IDC_CHARGE_BBACKGROUND, _show];
@@ -59,7 +59,7 @@ fnc_showDialog = {
     ctrlShow [IDC_CHARGE_BAR_200, _show];
 };
 
-[true] call fnc_showDialog;
+[true] call _fnc_showDialog;
 
 private _chargeBar = (_dlg displayCtrl IDC_CHARGE_BAR_BACKGROUND);
 
@@ -94,7 +94,7 @@ if (_skip) then { // Skip visual charging process
     GVAR(AEDX_MonitorCharged) = true;
 
     [{
-        if(GVAR(AEDX_MonitorCharged)) then {
+        if (GVAR(AEDX_MonitorCharged)) then {
             GVAR(AEDX_MonitorCharged) = false;
         };
     }, [], 20] call CBA_fnc_waitAndExecute;
@@ -134,10 +134,29 @@ if (_skip) then { // Skip visual charging process
     }, 0.5, [_dlg]] call CBA_fnc_addPerFrameHandler;
 
     [{
+        params ["_dlg"];
+    
+        isNull _dlg || !(GVAR(AEDX_MonitorCharging));
+    }, {
+        params ["_dlg"];
+
+        if !(isNull _dlg) then {
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetTextColor [0, 0, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [1, 0.35, 0, 1];
+
+            (_dlg displayCtrl IDC_CHARGE_ENERGY_AMOUNT) ctrlSetTextColor [0, 0, 0, 1];
+            (_dlg displayCtrl IDC_CHARGE_ENERGY_AMOUNT) ctrlSetBackgroundColor [1, 0.35, 0, 1];
+
+            ctrlSetText [IDC_CHARGE_STATUS, "CHARGED"];
+        };
+        
+    }, [_dlg], 60, {}] call CBA_fnc_waitUntilAndExecute;
+
+    [{
         GVAR(AEDX_MonitorCharging) = false;
         GVAR(AEDX_MonitorCharged) = true;
         [{ // Auto disarm timer
-            if(GVAR(AEDX_MonitorCharged) && !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_Charged), false])) then {
+            if (GVAR(AEDX_MonitorCharged) && !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_Charged), false])) then {
                 GVAR(AEDX_MonitorCharged) = false;
                 GVAR(AEDX_MonitorShockAdministered) = false;
             };
@@ -236,10 +255,10 @@ if (_skip) then { // Skip visual charging process
 
     isNull _dlg || (!(GVAR(AEDX_MonitorCharging)) && !(GVAR(AEDX_MonitorCharged)));
 }, {
-    params ["_dlg", "_chargeBar"];
+    params ["_dlg", "_chargeBar", "_fnc_showDialog"];
 
     if !(isNull _dlg) then {
-        if(GVAR(AEDX_MonitorShockAdministered)) then {
+        if (GVAR(AEDX_MonitorShockAdministered)) then {
             ctrlSetText [IDC_CHARGE_STATUS, "Delivered Energy"];
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [0.05, 0.85, 0.36, 1];
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetFontHeight (GRID_H * 1.1);
@@ -249,9 +268,9 @@ if (_skip) then { // Skip visual charging process
         };
 
         [{
-            params ["_dlg", "_chargeBar"];
+            params ["_dlg", "_chargeBar", "_fnc_showDialog"];
 
-            [false] call fnc_showDialog;
+            [false] call _fnc_showDialog;
 
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [1, 0.35, 0, 0];
             ctrlSetText [IDC_CHARGE_STATUS, "CHARGING"];
@@ -290,6 +309,6 @@ if (_skip) then { // Skip visual charging process
 
             _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(1360), (ctrlPosition _chargeBar) select 2, pxToScreen_H(1)];
             _chargeBar ctrlCommit 0;
-        }, [_dlg, _chargeBar], 1] call CBA_fnc_waitAndExecute;
+        }, [_dlg, _chargeBar, _fnc_showDialog], 1] call CBA_fnc_waitAndExecute;
     };
-}, [_dlg, _chargeBar], 3600, {}] call CBA_fnc_waitUntilAndExecute;
+}, [_dlg, _chargeBar, _fnc_showDialog], 3600, {}] call CBA_fnc_waitUntilAndExecute;

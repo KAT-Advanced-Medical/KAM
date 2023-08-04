@@ -25,7 +25,7 @@ params ["_unit"];
 4 ventricular tachycardia, fast pulse, shock
 */
 
-switch (_unit getVariable [QGVAR(cardiacArrestType),0]) do {
+switch (_unit getVariable [QGVAR(cardiacArrestType), 0]) do {
     case 4: {
          round (random [150, 180, 200]);
     };

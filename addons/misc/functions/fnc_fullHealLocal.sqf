@@ -80,8 +80,8 @@ _unit setVariable [QEGVAR(breathing,hemopneumothorax), false, true];
 _unit setVariable [QEGVAR(breathing,tensionpneumothorax), false, true];
 
 // KAT Circulation
-_unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
-_unit setVariable [QEGVAR(circulation,HeartRestart), false, true];
+_unit setVariable [QEGVAR(circulation,cprCount), 2, true];
+_unit setVariable [QEGVAR(circulation,heartRestart), false, true];
 _unit setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
 
 // Update wound bleeding
@@ -136,7 +136,6 @@ _unit setVariable [QACEGVAR(medical,painSuppress), 0, true];
 
 // Medication
 _unit setVariable [QACEGVAR(medical,medications), [], true];
-_unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
 
 // Reset triage card since medication is reset
 _unit setVariable [QACEGVAR(medical,triageCard), [], true];

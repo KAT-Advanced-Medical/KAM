@@ -17,7 +17,7 @@
  * Public: No
  */
 
-params ["_medic", "_patient", ["_defibrillatorType","AED"]];
+params ["_medic", "_patient", ["_defibrillatorType", "AED"]];
 
 private _soundSource = _medic;
 

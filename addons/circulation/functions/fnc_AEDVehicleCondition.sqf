@@ -22,6 +22,6 @@ private _vehicle = objectParent _patient;
 
 if (isNull _vehicle) exitWith {false};
 
-if((itemCargo _vehicle) findIf {_x isEqualTo _AEDClassname} isEqualTo -1) exitWith {false};
+if ((itemCargo _vehicle) findIf {_x isEqualTo _AEDClassname} isEqualTo -1) exitWith {false};
 
 ["",_patient] call ACEFUNC(medical_treatment,canCPR);

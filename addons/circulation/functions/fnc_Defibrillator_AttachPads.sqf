@@ -35,13 +35,13 @@ switch (_source) do {
         if (_placedAED isEqualTo objNull) then {
             private _nearObjects = nearestObjects [position _patient, ["kat_AEDItem"], GVAR(Defibrillator_DistanceLimit)];
             private _index = _nearObjects findIf {typeOf _x isEqualTo "kat_X_AEDItem"};
-            if(_index isEqualTo -1) exitWith {_exit = true;};
+            if (_index isEqualTo -1) exitWith {_exit = true;};
             _placedDefibrillator = _nearObjects select (_nearObjects findIf {typeOf _x isEqualTo "kat_X_AEDItem"});
         } else {
             _placedDefibrillator = _placedAED;
         };
 
-        if(_exit) exitWith {[LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);};
+        if (_exit) exitWith {[LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);};
 
         _provider = _placedDefibrillator;
         _soundSource = _placedDefibrillator;
