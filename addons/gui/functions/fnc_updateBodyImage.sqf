@@ -88,3 +88,19 @@ if (_target getVariable [QEGVAR(chemical,airPoisoning), false]) then {
 } else {
     _ctrlAirInfected ctrlShow false;
 };
+
+// Circulation
+private _ctrlAEDPads = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_AED_PADS;
+private _ctrlAEDVitalsMonitor = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_AED_VITALS;
+
+if (_target getVariable [QEGVAR(circulation,DefibrillatorPads_Connected), false]) then {
+    _ctrlAEDPads ctrlShow true;
+} else {
+    _ctrlAEDPads ctrlShow false;
+};
+
+if (_target getVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Connected), false]) then {
+    _ctrlAEDVitalsMonitor ctrlShow true;
+} else {
+    _ctrlAEDVitalsMonitor ctrlShow false;
+};
