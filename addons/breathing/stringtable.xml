@@ -1837,6 +1837,9 @@
             <Italian>Imposta se i veicoli med o strutture mediche possono fornire ossigeno.</Italian>
             <Spanish>Establece si los vehículos o instalaciones médicas pueden suministrar oxígeno</Spanish>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
+            <English>Enable Inspect Chest</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time">
             <English>Inspect Chest Time</English>
         </Key>

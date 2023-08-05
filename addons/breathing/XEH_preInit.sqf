@@ -269,9 +269,19 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Settable list for using Pulseoximeter per medical class
+// Sets if inspect chest action is enabled
 [
-    QGVAR(medLvl_inspectChest),
+    QGVAR(inspectChest_enable),
+    "CHECKBOX",
+    LLSTRING(SETTING_inspectChest_enable),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets medical level required to inspect chest
+[
+    QGVAR(inspectChest_medLvl),
     "LIST",
     LLSTRING(SETTING_inspectChest_medLvl),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
@@ -285,7 +295,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_inspectChest_time)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [1, 60, 3, 1],
+    [1, 60, 6, 1],
     true
 ] call CBA_Settings_fnc_init;
 

@@ -7,11 +7,12 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(InspectChest_time);
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(medLvl_inspectChest);
+        medicRequired = QGVAR(inspectChest_medLvl);
         callbackSuccess = QFUNC(inspectChest);
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
+        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (missionNamespace getVariable [ARR_2(QQGVAR(inspectChest_enable),true)]));
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationMedic = "AinvPknlMstpSnonWnonDr_medic4";
     };
     class Pulseoximeter {
         displayName = CSTRING(Pulseoximeter_Display);

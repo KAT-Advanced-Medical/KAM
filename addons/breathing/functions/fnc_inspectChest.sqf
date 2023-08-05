@@ -33,4 +33,4 @@ if (_patient getVariable [QGVAR(hemopneumothorax), false]) then {
 
 [_message, 2, _medic] call ACEFUNC(common,displayTextStructured);
 
-[_patient, "activity", LSTRING(inspectChest_log), [[_medic] call ACEFUNC(common,getName), _message]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "quick_view", LSTRING(inspectChest_log), [[_medic] call ACEFUNC(common,getName), _message]] call ACEFUNC(medical_treatment,addToLog);
