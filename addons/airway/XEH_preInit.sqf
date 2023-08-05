@@ -68,6 +68,16 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+// Set period during which patient cannot get another occlusion after last occlusion was cleared, disabled if 0
+[
+    QGVAR(occlusion_cooldownPeriod),
+    "SLIDER",
+    LLSTRING(SETTING_occlusion_cooldownPeriod),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [0, 60, 6, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // Succes for headturning
 [
     QGVAR(probability_headturning),

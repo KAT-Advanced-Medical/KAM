@@ -30,4 +30,8 @@ private _output = LLSTRING(turnaround_info);
 
 if (random 100 < GVAR(probability_headturning)) then {
     _patient setVariable [QGVAR(occluded), false, true];
+    
+    if (GVAR(occlusion_cooldownPeriod) > 0) then {
+        _patient setVariable [QGVAR(clearedTime), CBA_missionTime, true];
+    };
 };
