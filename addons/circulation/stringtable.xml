@@ -1630,6 +1630,9 @@
         <Key ID="STR_KAT_Circulation_StopCPR">
             <English>Stop CPR</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_CancelCPR">
+            <English>CPR Cancelled</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
             <Polish>Zestaw do pobierania krwi w terenie (500ml)</Polish>
