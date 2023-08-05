@@ -326,13 +326,23 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Sets time weight for cardiac arrest rhythm deterioration time randomizer // should be less than ace cardiac arrest time
+// Sets maximum time for cardiac arrest rhythm deterioration randomizer
+[
+    QGVAR(AdvRhythm_deteriorateTimeMax),
+    "SLIDER",
+    LLSTRING(SETTING_AdvRhythm_deteriorateTimeMax),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [30,3600,900,0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets time weight for cardiac arrest rhythm deterioration time randomizer // should be less than maximum
 [
     QGVAR(AdvRhythm_deteriorateTimeWeight),
     "SLIDER",
     LLSTRING(SETTING_AdvRhythm_deteriorateTimeWeight),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
-    [10,3600,180,0],
+    [20,3600,180,0],
     true
 ] call CBA_Settings_fnc_init;
 

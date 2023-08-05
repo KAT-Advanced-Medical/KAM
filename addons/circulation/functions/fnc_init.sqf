@@ -17,4 +17,4 @@
 
 params ["_unit"];
 
-_unit setVariable [QGVAR(CPRcount), 2, true];
+_unit setVariable [QGVAR(cprCount), 2, true];

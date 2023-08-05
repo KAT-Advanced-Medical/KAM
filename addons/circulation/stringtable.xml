@@ -1855,6 +1855,9 @@
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate">
             <English>Can Deteriorate</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeMax">
+            <English>Random Deteriorate Time Maximum</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeWeight">
             <English>Random Deteriorate Time Weight</English>
         </Key>

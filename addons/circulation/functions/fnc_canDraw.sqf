@@ -17,7 +17,7 @@
  * Public: No
  */
 
-params ["_medic","_patient","_volume"];
+params ["_medic", "_patient", "_volume"];
 
 private _bagItem = format ["ACE_bloodIV_%1", _volume];
 private _bloodVolume = (_patient getVariable [QACEGVAR(medical,bloodVolume), 6.0]);

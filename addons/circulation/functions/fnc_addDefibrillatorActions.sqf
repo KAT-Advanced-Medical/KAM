@@ -29,16 +29,19 @@ switch (_type) do {
                 [_x, true] call ACEFUNC(common,getName),
                 "",
                 {
-                    params ["_medic", "","_args"];
-                    _args params ["_patient","_defibObject"];
+                    params ["_medic", "", "_args"];
+                    _args params ["_patient", "_defibObject"];
 
                     [_medic, _patient, "body", "AEDXStationPlacePads", [_defibObject]] call FUNC(treatment);
                 },
                 {
-                    true;
+                    params ["_medic", "", "_args"];
+                    _args params ["_patient", "_defibObject"];
+
+                    [_medic, _patient, "body", "AEDXStationPlacePads", [_defibObject]] call FUNC(canTreat);
                 },
                 {},
-                [_x,_defibObject]
+                [_x, _defibObject]
                 ] call ACEFUNC(interact_menu,createAction),[], _medic];
             };
         } forEach (_defibObject nearEntities ["Man", GVAR(Defibrillator_DistanceLimit)]);
@@ -50,8 +53,8 @@ switch (_type) do {
                 [_x, true] call ACEFUNC(common,getName),
                 "",
                 {
-                    params ["_medic", "","_args"];
-                    _args params ["_patient","_defibObject"];
+                    params ["_medic", "", "_args"];
+                    _args params ["_patient", "_defibObject"];
 
                     [_medic, _patient, "body", "AEDXStationConnectVitalsMonitor"] call ACEFUNC(medical_treatment,treatment);
                 },
@@ -71,16 +74,19 @@ switch (_type) do {
                 [_x, true] call ACEFUNC(common,getName),
                 "",
                 {
-                    params ["_medic", "","_args"];
-                    _args params ["_patient","_defibObject"];
+                    params ["_medic", "", "_args"];
+                    _args params ["_patient", "_defibObject"];
 
                     [_medic, _patient, "body", "AEDStationPlacePads", [_defibObject]] call FUNC(treatment);
                 },
                 {
-                    true;
+                    params ["_medic", "", "_args"];
+                    _args params ["_patient", "_defibObject"];
+
+                    [_medic, _patient, "body", "AEDStationPlacePads", [_defibObject]] call FUNC(canTreat);
                 },
                 {},
-                [_x,_defibObject]
+                [_x, _defibObject]
                 ] call ACEFUNC(interact_menu,createAction),[], _medic];
             };
         } forEach (_defibObject nearEntities ["Man", GVAR(Defibrillator_DistanceLimit)]);

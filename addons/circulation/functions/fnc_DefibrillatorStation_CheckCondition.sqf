@@ -19,7 +19,7 @@
  * Public: No
  */
 
-params ["_medic", "_patient", ["_defibClassname","kat_AEDItem"], ["_extraArgs",[]]];
+params ["_medic", "_patient", ["_defibClassname", "kat_AEDItem"], ["_extraArgs",[]]];
 _extraArgs params [["_placedAED",objNull]];
 
 private _defib = objNull;

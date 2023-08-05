@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 class RscText;
 class RscButton;
 class RscPicture;
@@ -17,6 +18,28 @@ class ace_medical_gui_TriageSelect: RscControlsGroupNoScrollbars {
     class controls {
         class None: RscButton {
             w = QUOTE(POS_W(10.3));
+        };
+    };
+};
+
+class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
+    class controls {
+        class Background;
+        class Torso_Infected: Background {
+            idc = IDC_BODY_TORSO_I;
+            text = QPATHTOF(data\body_image\torso_i.paa);
+            colorText[] = {1, 1, 1, 1};
+            show = 0;
+        };
+        class Torso_AED_Pads: Background {
+            idc = IDC_BODY_TORSO_AED_PADS;
+            text = QPATHTOF(data\body_image\torso_aed_pads.paa);
+            colorText[] = {0.18, 0.6, 0.96, 1};
+            show = 0;
+        };
+        class Torso_AED_VitalsMonitor: Torso_AED_Pads {
+            idc = IDC_BODY_TORSO_AED_VITALS;
+            text = QPATHTOF(data\body_image\torso_aed_vitals_monitor.paa);
         };
     };
 };
