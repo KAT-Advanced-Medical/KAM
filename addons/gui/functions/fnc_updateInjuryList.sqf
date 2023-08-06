@@ -149,7 +149,7 @@ if(_target getVariable [QEGVAR(chemical,airPoisoning),false]) then{
 if (_target getVariable [QEGVAR(airway,airway), false] && _selectionN isEqualTo 0) then {
     private _a = _target getVariable [QEGVAR(airway,airway_item), ""];
     if !(_a isEqualTo "") then {
-        private _text = format [LELSTRING(airway,%1_Display), _a];
+        private _text = format [ELSTRING(airway,%1_Display), _a];
         _woundEntries pushback [localize _text, [0.1, 1, 1, 1]];
     };
 };
