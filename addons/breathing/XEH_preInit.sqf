@@ -373,16 +373,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Sets BVM use period
-[
-    QGVAR(BVMTime),
-    "SLIDER",
-    [LLSTRING(SETTING_BVMTime), LLSTRING(SETTING_BVMTime_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
-    [0.1, 60, 15, 1],
-    true
-] call CBA_Settings_fnc_init;
-
 // Sets required medical level for BVM usage
 [
     QGVAR(medLvl_BVM),
@@ -413,15 +403,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
-// Sets required medical level for BVM with oxygen usage
+// Sets BVM oxygen effectiveness multiplier
 [
-    QGVAR(medLvl_BVM_Oxygen),
-    "LIST",
-    [LLSTRING(SETTING_BVM_Oxygen_MedLvl),LLSTRING(SETTING_BVM_Oxygen_MedLvl_DESC)],
+    QGVAR(BVMOxygen_Multiplier),
+    "SLIDER",
+    LLSTRING(SETTING_BVMOxygen_Multiplier),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    [1, 10, 1, 1],
     true
-] call CBA_settings_fnc_init;
+] call CBA_Settings_fnc_init;
 
 // Sets time required to refill oxygen tank
 [

@@ -59,6 +59,7 @@ if (!local _unit) then {
     private _finalOutput = 0;
     private _multiplierPositive = GVAR(SpO2_MultiplyPositive);
     private _multiplierNegative = GVAR(SpO2_MultiplyNegative);
+    private _multiplierOxygen = GVAR(BVMOxygen_Multiplier);
 
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && { GVAR(SpO2_dieActive) && { !_blockDeath } }) exitWith {
@@ -127,7 +128,7 @@ if (!local _unit) then {
                 } else {
                     if (_BVMInUse) then {
                         if(_oxygenAssisted) then {
-                            _output = 0.5 * _multiplierPositive;
+                            _output = (0.5 * _multiplierPositive) * _multiplierOxygen;
                         } else {
                             _output = 0.2 * _multiplierPositive;
                         };
@@ -166,7 +167,7 @@ if (!local _unit) then {
         if (_heartRate >= 25) then {
             if(_BVMInUse) then {
                 if(_oxygenAssisted) then {
-                    _output = 0.8 * _multiplierPositive;
+                    _output = (0.8 * _multiplierPositive) * _multiplierOxygen;
                 } else {
                     _output = 0.45 * _multiplierPositive;
                 };

@@ -1743,7 +1743,7 @@
             <Italian>Bombola VUOTA di ossigeno portatile, riempirla presso un veicolo o una struttura medica</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier">
-            <English>BVM Oxygen Multiplier</English>
+            <English>BVM Oxygen Effectiveness Multiplier</English>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM">
             <English>%1 used %2 (x%3)</English>
