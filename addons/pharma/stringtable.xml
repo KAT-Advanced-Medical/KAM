@@ -2385,45 +2385,18 @@
             <Portuguese>IV do paciente está funcionando corretamente</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_breath_stink">
-            <English>Patient's breath is harsh and metallic</English>
-            <Czech>Dech pacienta je trpký a kovový</Czech>
-            <Italian>Il respiro del paziente è anormale e affannoso</Italian>
-            <French>L'haleine du patient est mauvaise et métallique</French>
-            <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
-            <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Chinesesimp>病人的呼吸是沙哑的</Chinesesimp>
-            <Japanese>患者の息はきつく金属臭がします</Japanese>
-            <Spanish>El aliento del paciente es áspero y metálico</Spanish>
-            <Polish>Oddech pacjenta jest ostry i metaliczny</Polish>
-            <Portuguese>O hálito do paciente está áspero e metálico</Portuguese>
+            <English>, harsh and metallic</English>
         </Key>
         <Key ID="STR_KAT_Pharma_breath_mild">
-            <English>Patient's breath is slightly fruity</English>
-            <Italian>Il respiro del paziente è leggermente fruttato</Italian>
-            <Czech>Dech pacienta je mírně ovocný</Czech>
-            <French>L'haleine du patient est légèrement fruitée</French>
-            <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
-            <German>Der Atem des Patienten ist leicht fruchtig</German>
-            <Chinesesimp>病人的呼吸是平和的</Chinesesimp>
-            <Japanese>患者の息は少し果物臭がします</Japanese>
-            <Spanish>El aliento del paciente es dulce</Spanish>
-            <Polish>Oddech pacjenta jest lekko owocowy</Polish>
-            <Portuguese>O hálito do paciente está ligeiramente frutado</Portuguese>
+            <English>, slightly fruity</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_breath_good">
-            <English>Patient's breath is ok</English>
-            <Italian>Il respiro del paziente è ok</Italian>
-            <Czech>Dech pacienta je v pořádku</Czech>
-            <French>L'haleine du patient est bonne</French>
-            <Korean>환자의 호흡은 정상이다</Korean>
-            <German>Der Atem des Patienten ist in Ordnung</German>
-            <Chinesesimp>病人的呼吸是正常的</Chinesesimp>
-            <Japanese>患者の息は普通です</Japanese>
-            <Spanish>El aliento del paciente es normal</Spanish>
-            <Polish>Oddech pacjenta jest w porządku</Polish>
-            <Portuguese>O hálito do paciente está normal</Portuguese>
+        <Key ID="STR_KAT_Pharma_breathing_isNormal">
+            <English>Patient is breathing normally</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_breath_none">
+        <Key ID="STR_KAT_Pharma_breathing_isShallow">
+            <English>Patient's breathing shallow</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_breathing_none">
             <English>Patient is not breathing</English>
             <Japanese>患者は呼吸していません</Japanese>
             <Korean>환자가 숨을 쉬지 않습니다</Korean>
@@ -2434,6 +2407,12 @@
             <Polish>Pacjent nie oddycha</Polish>
             <Spanish>El paciente no esta respirando</Spanish>
             <Czech>Pacient nedýchá</Czech>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckBreathing_Log">
+            <English>%1 checked breathing: %2</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_breathing_shallow">
+            <English>Shallow</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -2756,18 +2735,8 @@
             <Spanish>Favorece la coagulación</Spanish>
             <Portuguese>Favorece a coagulação</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Pharma_Check_Breath">
-            <English>Check Breath</English>
-            <Italian>Controlla il respiro</Italian>
-            <Czech>Zkontrolovat dech</Czech>
-            <French>Contrôler l'haleine</French>
-            <Polish>Sprawdź oddech</Polish>
-            <Korean>호흡 확인</Korean>
-            <German>Überprüfe Atem</German>
-            <Chinesesimp>检查呼吸</Chinesesimp>
-            <Japanese>呼吸の確認</Japanese>
-            <Spanish>Revisar aliento</Spanish>
-            <Portuguese>Checar hálito</Portuguese>
+        <Key ID="STR_KAT_Pharma_Check_Breathing">
+            <English>Check Breathing</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Inspect_Catheter">
             <English>Inspect Catheter</English>

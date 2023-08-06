@@ -149,9 +149,9 @@ class ACE_Medical_Treatment_Actions {
         animationMedicProne = "";
         sounds[] = {};
     };
-    class BreathCheck: Carbonate {
-        displayName = CSTRING(Check_Breath);
-        category = "examine";
+    class CheckBreathing: Carbonate {
+        displayName = CSTRING(Check_Breathing);
+        category = "airway";
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
         medicRequired = 1;
