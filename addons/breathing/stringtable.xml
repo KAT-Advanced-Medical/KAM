@@ -1742,27 +1742,14 @@
             <Czech>Prázdná Kyslíková Lahev, lze doplnit u zdravotnického vozidla či zařízení.</Czech>
             <Italian>Bombola VUOTA di ossigeno portatile, riempirla presso un veicolo o una struttura medica</Italian>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_BVMTime">
-            <English>BVM Use Time</English>
-            <Spanish>Tiempo de uso del Ambú</Spanish>
-            <French>Temps d'utilisation du BVM</French>
-            <Korean>인공호흡기 사용 시간</Korean>
-            <Polish>Czas użycia Worka samorozprężalnego</Polish>
-            <Japanese>BVMの使用にかかる時間</Japanese>
-            <German>BVM Benutzungszeit</German>
-            <Czech>Doba použití RV</Czech>
-            <Italian>Tempo di utilizzo maschera ambu</Italian>
+        <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier">
+            <English>BVM Oxygen Multiplier</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_BVMTime_DESC">
-            <English>Sets BVM usage period length</English>
-            <Spanish>Fija el tiempo de uso del Ambú</Spanish>
-            <French>Règle le temps nécessaire pour utiliser le BVM</French>
-            <Korean>인공호흡기 사용 시간 길이를 설정합니다</Korean>
-            <Polish>Ustawia czas użycia akcji</Polish>
-            <Japanese>BVMの使用期間の長さを設定</Japanese>
-            <German>Legt die Länge des BVM-Nutzungszeitraums fest</German>
-            <Czech>Nastavuje dobu k použití RV</Czech>
-            <Italian>Imposta la durata del periodo di utilizzo della maschera ambu</Italian>
+        <Key ID="STR_KAT_Breathing_Activity_BVM">
+            <English>%1 used %2 (x%3)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Activity_BVM_Oxygenated">
+            <English>%1 (Oxygenated)</English>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
