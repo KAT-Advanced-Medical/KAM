@@ -262,7 +262,7 @@ class CfgVehicles {
                 };
                 class AEDX_Interactions {
                     displayName = CSTRING(AED_X);
-                    condition = "true";
+                    condition = QUOTE('kat_X_AED' in (items _player));
                     exceptions[] =
                     {
                         "notOnMap",
@@ -275,21 +275,21 @@ class CfgVehicles {
                     icon = QPATHTOF(ui\icon_aedx.paa);
                     class AEDX_ViewMonitor {
                         displayName = CSTRING(ViewMonitor);
-                        condition = QUOTE('kat_X_AED' in (items _player));
+                        condition = "true";
                         statement = QUOTE([ARR_3(_player, objNull, 2)] call FUNC(AEDX_ViewMonitor));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\icon_aedx_monitor.paa);
                     };
                     class AED_X_removeSound {
                         displayName = CSTRING(AEDX_Action_DisableAudio);
-                        condition = QUOTE('kat_X_AED' in (items _player) && (_player getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false])));
+                        condition = QUOTE(_player getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false]));
                         statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), false, true)]);
                         showDisabled = 0;
                         icon = QPATHTOF(ui\icon_aedx_volume_off.paa);
                     };
                     class AED_X_addSound : AED_X_removeSound {
                         displayName = CSTRING(AEDX_Action_EnableAudio);
-                        condition = QUOTE('kat_X_AED' in (items _player) && !(_player getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false])));
+                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false])));
                         statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), true, true)]);
                         icon = QPATHTOF(ui\icon_aedx_volume_on.paa);
                     };

@@ -206,8 +206,8 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\icon_aedx_volume_off.paa);
         category = "examine";
         treatmentLocations = 0;
-        medicRequired = 0;
-        allowedSelections[] = {"Body"};
+        medicRequired = QGVAR(medLvl_AED_X);
+        allowedSelections[] = {"Head","LeftArm","RightArm","Body","LeftLeg","RightLeg"};
         treatmentTime = 0.01;
         allowSelfTreatment = 0;
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected), false)] || _patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Connected), false)]) && ((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), nil)]) select 2 isEqualTo 'kat_X_AED') && (_patient getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_VolumePatient), false)]));
@@ -237,11 +237,12 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = "";
         icon = QPATHTOF(ui\icon_aedx_monitor.paa);
         category = "examine";
+        medicRequired = QGVAR(medLvl_AED_X);
         allowedSelections[] = {"Head","LeftArm","RightArm","Body","LeftLeg","RightLeg"};
         treatmentTime = 0.01;
         items[] = {};
         consumeItem = 0;
-        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)] && ((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), nil)]) select 2 isEqualTo 'kat_X_AED'));
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)] && ((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), nil)] select 2) == 'kat_X_AED'));
         callbackStart = "";
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDX_ViewMonitor));
         animationPatient = "";
