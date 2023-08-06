@@ -151,6 +151,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class CheckBreathing: Carbonate {
         displayName = CSTRING(Check_Breathing);
+        displayNameProgress = CSTRING(Check_Breathing_Progress);
         category = "airway";
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
