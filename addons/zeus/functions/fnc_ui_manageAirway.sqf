@@ -110,8 +110,8 @@ private _fnc_onConfirm = {
 
     _unit setVariable [QEGVAR(airway,obstruction), _valueArr select 0, true];
     _unit setVariable [QEGVAR(airway,occluded), _valueArr select 1, true];
-    _unit setVariable [QEGVAR(breathing,hemopneumothorax), _valueArr select 3, true];
-    _unit setVariable [QEGVAR(breathing,tensionpneumothorax), _valueArr select 4, true];
+    _unit setVariable [QEGVAR(breathing,hemopneumothorax), _valueArr select 2, true];
+    _unit setVariable [QEGVAR(breathing,tensionpneumothorax), _valueArr select 3, true];
     private _curSpO2Val = _unit getVariable [QEGVAR(breathing,airwayStatus), 50];
 
     private _pneumothorax = round(sliderPosition (_display displayCtrl 16105));
@@ -122,11 +122,16 @@ private _fnc_onConfirm = {
     if(_curSpO2Val isEqualTo 100) then { 
         [_unit] call EFUNC(breathing,handleBreathing);
     };
-    
-    if (_pneumothorax isEqualTo 0 && !(_valueArr select 4) && !(_valueArr select 3)) then {
+
+    if (_pneumothorax isEqualTo 0 && !(_valueArr select 2) && !(_valueArr select 3)) then {
         [_unit, 0, 0, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
     } else {
-        [_unit, -15 * _pneumothorax, -15 * _pneumothorax, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+        [_unit, -15 * (_pneumothorax - 1), -15 * (_pneumothorax -1), "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+    };
+
+    if ((_valueArr select 2) || (_valueArr select 3)) then {
+        _unit setVariable [QEGVAR(breathing,pneumothorax), 4, true];
+        [_unit, -45, -45, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
     };
 
     [_unit] call EFUNC(circulation,updateInternalBleeding);

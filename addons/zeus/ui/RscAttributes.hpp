@@ -173,7 +173,7 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                             y = QUOTE(H_PART(3.3));
                         };
                         class Hemopneumothorax: Obstruction {
-                            idc = 16104;
+                            idc = 16103;
                             y = QUOTE(H_PART(3.3));
                         };
                         class Title5: Title1 {
@@ -183,7 +183,7 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                             y = QUOTE(H_PART(4.4));
                         };
                         class Tensionpneumothorax: Obstruction {
-                            idc = 16105;
+                            idc = 16104;
                             y = QUOTE(H_PART(4.4));
                         };
                         class Title6: Title1 {
