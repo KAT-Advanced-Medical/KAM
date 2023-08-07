@@ -65,6 +65,7 @@ timeOut = true;
             [_idPFH] call CBA_fnc_removePerFrameHandler;
 
             _patient setVariable [QGVAR(BVMInUse), false, true];
+            _patient setVariable [QGVAR(oxygenTankConnected), false, true];
 
             [] call ACEFUNC(interaction,hideMouseHint);
 
@@ -95,6 +96,7 @@ timeOut = true;
 
         if !(timeOut) then {
             timeOut = true;
+            
             if (_useOxygen && !_pocket) then {
                 switch (_oxygenOrigin) do {
                     case 1: { // Medic provided oxygen with carried oxygen tank
@@ -198,4 +200,6 @@ timeOut = true;
             }] call CBA_fnc_waitUntilAndExecute;
         };
     }, 0, [_medic, _patient, _pocket, _useOxygen, _oxygenOrigin, _notInVehicle]] call CBA_fnc_addPerFrameHandler;
+
+    [{timeOut = false;}, [], 1] call CBA_fnc_waitAndExecute;
 }, [_medic, _patient, _pocket, _useOxygen, _oxygenOrigin, _notInVehicle], 2] call CBA_fnc_waitAndExecute;
