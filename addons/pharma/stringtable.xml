@@ -2384,36 +2384,6 @@
             <Spanish>La IV del paciente esta funcionando correctamente</Spanish>
             <Portuguese>IV do paciente está funcionando corretamente</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Pharma_breath_stink">
-            <English>, harsh and metallic</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_breath_mild">
-            <English>, slightly fruity</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_breathing_isNormal">
-            <English>Patient is breathing normally</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_breathing_isShallow">
-            <English>Patient's breathing shallow</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_breathing_none">
-            <English>Patient is not breathing</English>
-            <Japanese>患者は呼吸していません</Japanese>
-            <Korean>환자가 숨을 쉬지 않습니다</Korean>
-            <Italian>Il paziente non sta respirando</Italian>
-            <German>Patient atmet nicht</German>
-            <Portuguese>O paciente não está respirando</Portuguese>
-            <French>Le patient ne respire pas</French>
-            <Polish>Pacjent nie oddycha</Polish>
-            <Spanish>El paciente no esta respirando</Spanish>
-            <Czech>Pacient nedýchá</Czech>
-        </Key>
-        <Key ID="STR_KAT_Pharma_CheckBreathing_Log">
-            <English>%1 checked breathing: %2</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_breathing_shallow">
-            <English>Shallow</English>
-        </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
             <Italian>Rene danneggiato/collassato</Italian>
@@ -2734,12 +2704,6 @@
             <Japanese>血液凝固を促進し、出血を抑えます</Japanese>
             <Spanish>Favorece la coagulación</Spanish>
             <Portuguese>Favorece a coagulação</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Check_Breathing">
-            <English>Check Breathing</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Check_Breathing_Progress">
-            <English>Checking Breathing</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Inspect_Catheter">
             <English>Inspect Catheter</English>

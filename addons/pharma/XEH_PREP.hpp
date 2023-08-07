@@ -7,7 +7,6 @@ PREP(fluidLocal);
 PREP(getBloodLoss);
 PREP(getBloodVolumeChange);
 PREP(init);
-PREP(inspectBreath);
 PREP(inspectCatheter);
 PREP(ketaminePP);
 PREP(pervitinPP);
