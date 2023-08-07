@@ -37,13 +37,9 @@ private _clearedWoundFromStitching = _stitchedWoundsOnPart deleteAt (count _stit
 _clearedWoundFromStitching params ["", "", "", "_clearedStitchDamage"];
 _stitchedOnPart deleteAt _clearedWoundFromStitching;
 
-systemChat str _clearedDebrideDamage;
-systemChat str _clearedStitchDamage;
-
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
 private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
 _bodyPartDamage set [_partIndex, (_bodyPartDamage select _partIndex) - (_clearedDebrideDamage + _clearedStitchDamage)];
-systemChat str _bodyPartDamage;
 _patient setVariable [QACEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
 
 switch (_bodyPart) do {
