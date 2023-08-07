@@ -77,14 +77,13 @@ _unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUN
 _unit setVariable [QEGVAR(circulation,internalBleeding), 0, true];
 _unit setVariable [QEGVAR(circulation,StoredBloodPressure), [0,0], true];
 
+_unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 
 // KAT Misc
 _unit setVariable [QEGVAR(misc,isLeftArmFree), true, true];
 _unit setVariable [QEGVAR(misc,isRightArmFree), true, true];
 _unit setVariable [QEGVAR(misc,isLeftLegFree), true, true];
 _unit setVariable [QEGVAR(misc,isRightLegFree), true, true];
-
-_unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 
 // KAT Pharmacy
 

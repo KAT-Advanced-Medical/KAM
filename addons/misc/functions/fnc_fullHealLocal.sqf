@@ -84,6 +84,8 @@ _unit setVariable [QEGVAR(circulation,cprCount), 2, true];
 _unit setVariable [QEGVAR(circulation,heartRestart), false, true];
 _unit setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
 
+_unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
+
 // Update wound bleeding
 [_unit] call ACEFUNC(medical_status,updateWoundBloodLoss);
 [_unit] call EFUNC(circulation,updateInternalBleeding);
