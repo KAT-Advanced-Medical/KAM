@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: 1LT.Mazinski.H
- * Clears all open wounds on a patient.
+ * Checks if debridement can be performed
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -9,14 +9,14 @@
  * 2: Body Part <STRING>
  *
  * Return Value:
- * Nothing
+ * Can Perform Debridement <BOOLEAN>
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_debridement
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_canDebride;
  *
  * Public: No
  */
 
 params ["_medic", "_patient", "_bodyPart"];
 
-[QGVAR(debridement), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+(GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo []

@@ -5,5 +5,3 @@
 [QGVAR(openReduction), LINKFUNC(openReductionLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(incision), LINKFUNC(incisionLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(openReductionProgress), LINKFUNC(openReductionProgressLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(debridement), LINKFUNC(debridementLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(NPWT), LINKFUNC(npwtTreatmentLocal)] call CBA_fnc_addEventHandler;

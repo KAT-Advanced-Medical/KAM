@@ -104,18 +104,20 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"All"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(debridementAction_MedLevel);
-        treatmentTime = QGVAR(debrideTime);
+        treatmentTime = QFUNC(getDebrideTime);
         items[] = {"kat_scalpel"};
-        condition = QFUNC(debridementCheck);
+        condition = QFUNC(canDebride);
         consumeItem = 0;
-        callbackSuccess = QFUNC(debridement);
+        callbackProgress = QFUNC(debridementProgress);
+        callbackSuccess = "";
     };
     class NPWT: Debridement {
         displayName = CSTRING(Vacuum_Use);
         displayNameProgress = CSTRING(Vacuum_Action);
-        treatmentTime = QGVAR(npwtTime);
+        condition = QFUNC(canNPWT);
+        treatmentTime = QFUNC(getNPWTTime);
         items[] = {"kat_vacuum"};
         sounds[] = {{QPATHTO_R(sounds\vacuum.ogg),8,1,15}};
-        callbackSuccess = QFUNC(npwtTreatment);
+        callbackProgress = QFUNC(npwtTreatmentProgress);
     };
 };

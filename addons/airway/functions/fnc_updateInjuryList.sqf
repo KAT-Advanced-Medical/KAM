@@ -33,12 +33,49 @@ private _bodyPartName = [
 
 _entries pushBack [localize _bodyPartName, [1, 1, 1, 1]];
 
+// Damage taken tooltip
+if (ACEGVAR(medical_gui,showDamageEntry)) then {
+    private _bodyPartDamage = (_target getVariable [QACEGVAR(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0]]) select _selectionN;
+    if (_bodyPartDamage > 0) then {
+        private _damageThreshold = _target getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer _target)];
+        switch (true) do {
+            case (_selectionN > 3): { // legs: index 4 & 5
+                _damageThreshold = ACEGVAR(medical,const_limpingDamageThreshold) * 4;
+            };
+            case (_selectionN > 1): { // arms: index 2 & 3
+                _damageThreshold = ACEGVAR(medical,const_fractureDamageThreshold) * 4;
+            };
+            case (_selectionN == 0): { // head: index 0
+                _damageThreshold = _damageThreshold * 1.25;
+            };
+            default { // torso: index 1
+                _damageThreshold = _damageThreshold * 1.5;
+            };
+        };
+        _bodyPartDamage = (_bodyPartDamage / _damageThreshold) min 1;
+        switch (true) do {
+            case (_bodyPartDamage isEqualTo 1): {
+                _entries pushBack [localize ACELSTRING(medical_gui,traumaSustained4), [_bodyPartDamage] call ACEFUNC(medical_gui,damageToRGBA)];
+            };
+            case (_bodyPartDamage >= 0.75): {
+                _entries pushBack [localize ACELSTRING(medical_gui,traumaSustained3), [_bodyPartDamage] call ACEFUNC(medical_gui,damageToRGBA)];
+            };
+            case (_bodyPartDamage >= 0.5): {
+                _entries pushBack [localize ACELSTRING(medical_gui,traumaSustained2), [_bodyPartDamage] call ACEFUNC(medical_gui,damageToRGBA)];
+            };
+            case (_bodyPartDamage >= 0.25): {
+                _entries pushBack [localize ACELSTRING(medical_gui,traumaSustained1), [_bodyPartDamage] call ACEFUNC(medical_gui,damageToRGBA)];
+            };
+        };
+    };
+};
+
 // Indicate if unit is bleeding at all
 if (IS_BLEEDING(_target)) then {
     _entries pushBack [localize ACELSTRING(medical_gui,Status_Bleeding), [1, 0, 0, 1]];
 };
 
-if(ACEGVAR(medical_gui,showBloodLossEntry)) then {
+if (ACEGVAR(medical_gui,showBloodLossEntry)) then {
     // Give a qualitative description of the blood volume lost
     switch (GET_HEMORRHAGE(_target)) do {
         case 1: {
@@ -78,10 +115,10 @@ if (_target call ACEFUNC(common,isAwake)) then {
     private _pain = GET_PAIN_PERCEIVED(_target);
     if (_pain > 0) then {
         private _painText = switch (true) do {
-            case (_pain > 0.5): {
+            case (_pain > ACEGVAR(medical,const_painUnconscious)): {
                 ACELSTRING(medical_treatment,Status_SeverePain);
             };
-            case (_pain > 0.1): {
+            case (_pain > (ACEGVAR(medical,const_painUnconscious)/5)): {
                 ACELSTRING(medical_treatment,Status_Pain);
             };
             default {
@@ -123,6 +160,7 @@ private _fnc_processWounds = {
 [GET_OPEN_WOUNDS(_target), "%1", [1, 1, 1, 1]] call _fnc_processWounds;
 [GET_BANDAGED_WOUNDS(_target), "[B] %1", [0.88, 0.7, 0.65, 1]] call _fnc_processWounds;
 [GET_STITCHED_WOUNDS(_target), "[S] %1", [0.7, 0.7, 0.7, 1]] call _fnc_processWounds;
+[GET_DEBRIDED_WOUNDS(_target), "[D] %1", [0.7, 0.7, 0.7, 1]] call _fnc_processWounds;
 
 //INTOXICATION by DiGii
 private _poisontype = _target getVariable [QEGVAR(chemical,poisonType),""];

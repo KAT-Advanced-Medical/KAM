@@ -34,3 +34,6 @@
     } else { \
         getNumber (cfg); \
     }
+
+#define GET_DEBRIDED_WOUNDS(unit)   (unit getVariable [VAR_DEBRIDED_WOUNDS, createHashMap])
+#define VAR_DEBRIDED_WOUNDS   QGVAR(debridedWounds)
