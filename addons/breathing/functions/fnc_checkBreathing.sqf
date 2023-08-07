@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject] call kat_surgery_fnc_inspectBreath;
+ * [player, cursorObject] call kat_breathing_fnc_checkBreathing;
  *
  * Public: No
  */
