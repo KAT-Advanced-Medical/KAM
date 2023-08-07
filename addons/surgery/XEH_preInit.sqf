@@ -170,12 +170,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// 0 Surgery Causes Unconsciousness: If you do an incision (without anesthesia & sedative) patient will go into CA
+// 1 Unconsciousness Required for Surgery: Surgery fails unless patient is unconscious, needs anesthesia
+// 2 No Unconsciousness from Surgery: Patient can stay awake without anesthesia, causes pain
+// 3 Surgery Anesthesia: The patient is able to stay awake through the entirety of the surgery. If Etomidate has not been applied, then the patient will lose consciousness.
 [
-    QGVAR(uncon_requieredForAction),
-    "CHECKBOX",
-    [LLSTRING(uncon_requieredForActions), LLSTRING(uncon_requieredForActions_DESC)],
+    QGVAR(Surgery_ConsciousnessRequirement),
+    "LIST",
+    [LLSTRING(SETTING_ConsciousnessRequirement), LLSTRING(SETTING_ConsciousnessRequirement_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [false],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Causes_Unconsciousness), LLSTRING(SETTING_Unconsciousness_Required), LLSTRING(SETTING_No_Unconsciousness), LLSTRING(SETTING_Anesthesia)], 1],
     true
 ] call CBA_Settings_fnc_init;
 

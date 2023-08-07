@@ -44,7 +44,8 @@ if (GVAR(allowSharedVehicleEquipment) > 0 && _vehicleCondition) then {
         };
         case 3: { // Vehicle's equipment first (except self-treatment)
             if(_medic isEqualTo _patient) then {
-                _useOrder = _sharedUseOrder + _vehicle;
+                _useOrder = _sharedUseOrder + [_vehicle];
+                _vehicleIndex = (count _useOrder) - 1;
             } else {
                 _useOrder = ([_vehicle] + _sharedUseOrder);
                 _vehicleIndex = 0;
