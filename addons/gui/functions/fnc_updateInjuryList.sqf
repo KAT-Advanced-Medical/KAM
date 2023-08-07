@@ -172,10 +172,11 @@ if (_target getVariable [QGVAR(recovery), false]) then {
     _entries pushback [LLSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
 };
 
-if (!(EGVAR(breathing,PneumothoraxAlwaysVisible)) && _selectionN isEqualTo 1) then {
-    if (_target getVariable [QEGVAR(breathing,deepPenetratingInjury), false]) then {
+if (_selectionN isEqualTo 1) then {
+    if (!(EGVAR(breathing,PneumothoraxAlwaysVisible)) && _target getVariable [QEGVAR(breathing,deepPenetratingInjury), false]) then {
         _entries pushBack [LELSTRING(breathing,DeepPenetratingInjury), [1,0,0,1]];
     };
+
     if (_target getVariable [QEGVAR(breathing,activeChestSeal), false]) then {
         _entries pushBack [LELSTRING(breathing,ChestSealApplied), [1,0.95,0,1]];
     };
