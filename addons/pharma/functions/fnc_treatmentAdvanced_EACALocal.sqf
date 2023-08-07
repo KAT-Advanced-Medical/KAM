@@ -44,10 +44,7 @@ if (_IVactual > 1) then {
 
     private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
     private _alive = alive _patient;
-
-    if (!_alive) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
-    };
+    private _exit = true;
 
     private _random = random 750;
     private _ph = (_patient getVariable [QGVAR(pH), 1500]) - 750;
@@ -58,7 +55,6 @@ if (_IVactual > 1) then {
             {
                 _x params ["_classID", "_amountOf", "", "_damageOf"];
                 private _bandagedWoundsOnPart = _bandagedWounds get _part;
-                if (_bandagedWoundsOnPart isEqualTo []) exitWith {[_idPFH] call CBA_fnc_removePerFrameHandler;};
                 private _treatedWound = _bandagedWoundsOnPart deleteAt (count _bandagedWoundsOnPart - 1);
                 _treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
 
@@ -79,8 +75,13 @@ if (_IVactual > 1) then {
 
                 _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
                 _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
+                _exit = false;
             } forEach _y;
         } forEach _bandagedWounds;
+    };
+
+    if ((!_alive) || (_exit)) exitWith {
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
 }, 6, [_patient]] call CBA_fnc_addPerFrameHandler;
