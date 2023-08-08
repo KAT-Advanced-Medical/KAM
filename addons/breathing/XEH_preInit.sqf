@@ -199,6 +199,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets if damage above pneumothorax damage threshold increases chance of inflicting pneumothorax or advanced pneumothorax
+[
+    QGVAR(pneumothoraxDamageThreshold_TakenDamage),
+    "CHECKBOX",
+    [LLSTRING(SETTING_PneumothoraxDamageThreshold_DamageTaken), LLSTRING(SETTING_PneumothoraxDamageThreshold_DamageTaken_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 // Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted
 [
     QGVAR(deepPenetratingInjuryChance),

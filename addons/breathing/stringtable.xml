@@ -677,6 +677,12 @@
             <Japanese>一度の負傷で発生する気胸へのダメージ。値が低いほど、気胸が発生する可能性が高くなります。値を非常に低く設定するか、0に設定すると、予期しない動作や予期しない怪我による気胸を引き起こす可能性があります。</Japanese>
             <Portuguese>A quantidade de dano em um único impacto, em uma escala de 0 a 1, que precisa ocorrer antes que haja uma chance de pneumotórax. Valores mais baixos significam que o pneumotórax é mais provável de ocorrer. Definir o valor muito baixo ou zero pode causar um comportamento inesperado ou pneumotórax devido a lesões inesperadas.</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken">
+            <English>Increase pneumothorax chance based on damage</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken_DESCRIPTION">
+            <English>Increase chance of a pneumothorax and advanced pneumothorax occuring based on damage taken if over the pneumothorax damage threshold</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance">
             <English>Deep Penetrating Injury Chance</English>
         </Key>

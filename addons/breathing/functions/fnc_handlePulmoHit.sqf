@@ -21,17 +21,17 @@
  */
 
 params ["_unit", "_allDamages", "", "_ammo"];
-_allDamages select 0 params ["_damage","_bodyPart"];
+_allDamages select 0 params ["_damage", "_bodyPart"];
 
 _fnc_inflictAdvancedPneumothorax = {
-    params ["_unit", ["_deteriorated", false]];
+    params ["_unit", "_chanceIncrease", ["_deteriorated", false]];
 
     // Prevent the patient from getting both hemothorax and tension pneumothorax at the same time
     private _hemo = _unit getVariable [QGVAR(hemopneumothorax), false];
     private _tension = _unit getVariable [QGVAR(tensionpneumothorax), false];
     
     // Roll chance to get advanced pneumothorax or skip chance if deteriorated
-    if ((floor (random 100) <= GVAR(advPtxChance) || _deteriorated) && !(_hemo || _tension)) then {
+    if ((floor (random 100) <= (GVAR(advPtxChance) + _chanceIncrease) || _deteriorated) && !(_hemo || _tension)) then {
         [_unit, 0.7] call ACEFUNC(medical_status,adjustPainLevel);
 
         if (floor (random 100) <= GVAR(hptxChance)) then {
@@ -49,7 +49,12 @@ if (!(GVAR(enable)) || !(_bodyPart isEqualTo "Body") || !(_ammo isKindOF "Bullet
 //Other mods can utilise KAT_Pneumothorax_Exclusion variable to prevent Pneumothorax from happening
 if ((_damage < GVAR(pneumothoraxDamageThreshold)) || (_unit getVariable ["KAT_Pneumothorax_Exclusion", false])) exitWith {};
 
-if (floor (random 100) <= GVAR(pneumothoraxChance)) then {
+private _chanceIncrease = 0;
+if (GVAR(pneumothoraxDamageThreshold_TakenDamage)) then {
+    _chanceIncrease = linearConversion [GVAR(pneumothoraxDamageThreshold), 3, _damage, 0, 30, true];
+};
+
+if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
     if(_unit getVariable [QGVAR(pneumothorax), 0] isEqualto 0 && !(_unit getVariable [QGVAR(tensionpneumothorax), false])) then { // Initial pneumothorax
         // add breathing sound
         [_unit, 0.2] call ACEFUNC(medical_status,adjustPainLevel);
@@ -65,7 +70,7 @@ if (floor (random 100) <= GVAR(pneumothoraxChance)) then {
                 // Try to deteriorate at set interval
                 [{
                     params ["_args", "_idPFH"];
-                    _args params ["_unit","_fnc_inflictAdvancedPneumothorax"];
+                    _args params ["_unit", "_fnc_inflictAdvancedPneumothorax"];
                     
                     // If patient is dead, already treated or has already deteriorated into advanced pneumothorax, kill the PFH
                     if(_unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false] || !(alive _unit) || _unit getVariable [QGVAR(pneumothorax), 0] isEqualTo 0) exitWith {
@@ -79,7 +84,7 @@ if (floor (random 100) <= GVAR(pneumothoraxChance)) then {
                         if (_ptxTarget > 4) exitWith {
                             if(GVAR(advPtxEnable)) then {
                                 
-                                [_unit, true] call _fnc_inflictAdvancedPneumothorax;
+                                [_unit, _chanceIncrease, true] call _fnc_inflictAdvancedPneumothorax;
                             };
                             [_idPFH] call CBA_fnc_removePerFrameHandler;
                         };
@@ -91,7 +96,7 @@ if (floor (random 100) <= GVAR(pneumothoraxChance)) then {
 
                 }, GVAR(deterioratingPneumothorax_interval), [_unit, _fnc_inflictAdvancedPneumothorax]] call CBA_fnc_addPerFrameHandler;
             };
-        }, [_unit,_fnc_inflictAdvancedPneumothorax], deterioratingPneumothorax_interval] call CBA_fnc_waitAndExecute;
+        }, [_unit, _fnc_inflictAdvancedPneumothorax], deterioratingPneumothorax_interval] call CBA_fnc_waitAndExecute;
     } else {
         if (_unit getVariable [QGVAR(tensionpneumothorax), false]) then { // If already afflicted with tensionpneumothorax -> fully deteriorate pneumothorax
             _unit setVariable [QGVAR(pneumothorax), 4, true];
@@ -99,7 +104,7 @@ if (floor (random 100) <= GVAR(pneumothoraxChance)) then {
         } else {
             if (GVAR(advPtxEnable)) then {
                 // Roll chance to get advanced pneumothorax while afflicted with early stage of pneumothorax
-                [_unit] call _fnc_inflictAdvancedPneumothorax;
+                [_unit, _chanceIncrease] call _fnc_inflictAdvancedPneumothorax;
             };
         };
     };
