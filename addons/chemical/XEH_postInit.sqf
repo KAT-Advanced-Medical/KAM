@@ -18,16 +18,16 @@ KAT_ProjectileCache = ("([_x, 'KAT_projectile', 0] call BIS_fnc_returnConfigEntr
 ["ace_firedNonPlayer", LINKFUNC(throwGrenade)] call CBA_fnc_addEventHandler;
 
 if (hasInterface) then {
-	ppBlur_priority = 399;
-	[{
-		ppBlur_priority = ppBlur_priority + 1;
-		ppBlur = ppEffectCreate ["DynamicBlur", ppBlur_priority];
-		ppBlur != -1
-	}, {
-		ppBlur ppEffectEnable false;
-		ppBlurAmount = 0;
-		ppBluring = false;
-	}] call CBA_fnc_waitUntilAndExecute;
+    ppBlur_priority = 399;
+    [{
+        ppBlur_priority = ppBlur_priority + 1;
+        ppBlur = ppEffectCreate ["DynamicBlur", ppBlur_priority];
+        ppBlur != -1
+    }, {
+        ppBlur ppEffectEnable false;
+        ppBlurAmount = 0;
+        ppBluring = false;
+    }] call CBA_fnc_waitUntilAndExecute;
 };
 
 private _items = missionNamespace getVariable [QGVAR(availGasmask), "'G_AirPurifyingRespirator_01_F'"];
