@@ -172,16 +172,6 @@ if (_target getVariable [QGVAR(recovery), false]) then {
     _entries pushback [LLSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
 };
 
-if (_selectionN isEqualTo 1) then {
-    if (!(EGVAR(breathing,PneumothoraxAlwaysVisible)) && _target getVariable [QEGVAR(breathing,deepPenetratingInjury), false]) then {
-        _entries pushBack [LELSTRING(breathing,DeepPenetratingInjury), [1,0,0,1]];
-    };
-
-    if (_target getVariable [QEGVAR(breathing,activeChestSeal), false]) then {
-        _entries pushBack [LELSTRING(breathing,ChestSealApplied), [1,0.95,0,1]];
-    };
-};
-
 // Display cyanosis in overview tab, only when head/arms are selected
 if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
     private _spO2 = 0;
@@ -207,23 +197,37 @@ if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
     };
 };
 
-private _tensionhemothorax = false;
-if (!(EGVAR(breathing,showPneumothorax_dupe))) then {
-    if ((_target getVariable [QEGVAR(breathing,hemopneumothorax), false]) || (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false])) then {
-        _tensionhemothorax = true;
+if (_selectionN isEqualTo 1) then {
+    private _tensionhemothorax = false;
+    if (!(EGVAR(breathing,showPneumothorax_dupe))) then {
+        if ((_target getVariable [QEGVAR(breathing,hemopneumothorax), false]) || (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false])) then {
+            _tensionhemothorax = true;
+        };
     };
-};
 
-if ((_target getVariable [QEGVAR(breathing,pneumothorax), 0] > 0) && _selectionN isEqualTo 1 && (EGVAR(breathing,PneumothoraxAlwaysVisible)) && !(_tensionhemothorax)) then {
-    _woundEntries pushback [LELSTRING(breathing,pneumothorax_mm), [1,1,1,1]];
-};
+    if (_target getVariable [QEGVAR(breathing,activeChestSeal), false]) then {
+        _entries pushBack [LELSTRING(breathing,ChestSealApplied), [1,0.95,0,1]];
+    };
 
-if (_target getVariable [QEGVAR(breathing,hemopneumothorax), false] && _selectionN isEqualTo 1 && (EGVAR(breathing,TensionHemothoraxAlwaysVisible))) then {
-    _woundEntries pushback [LELSTRING(breathing,hemopneumothorax_mm), [1,1,1,1]];
-};
+    if(EGVAR(breathing,PneumothoraxAlwaysVisible)) then {
+        if ((_target getVariable [QEGVAR(breathing,pneumothorax), 0] > 0) && !(_tensionhemothorax)) then {
+            _woundEntries pushback [LELSTRING(breathing,pneumothorax_mm), [1,1,1,1]];
+        };
+    } else {
+        if (_target getVariable [QEGVAR(breathing,deepPenetratingInjury), false]) then {
+            _entries pushBack [LELSTRING(breathing,DeepPenetratingInjury), [1,0,0,1]];
+        };
+    };
+    
+    if (EGVAR(breathing,TensionHemothoraxAlwaysVisible)) then {
+        if (_target getVariable [QEGVAR(breathing,hemopneumothorax), false]) then {
+            _woundEntries pushback [LELSTRING(breathing,hemopneumothorax_mm), [1,1,1,1]];
+        };
 
-if (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false] && _selectionN isEqualTo 1 && (EGVAR(breathing,TensionHemothoraxAlwaysVisible))) then {
-    _woundEntries pushback [LELSTRING(breathing,tensionpneumothorax_mm), [1,1,1,1]];
+        if (_target getVariable [QEGVAR(breathing,tensionpneumothorax), false]) then {
+            _woundEntries pushback [LELSTRING(breathing,tensionpneumothorax_mm), [1,1,1,1]];
+        };
+    };
 };
 
 // Show receiving IV volume remaining
