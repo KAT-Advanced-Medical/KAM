@@ -8,6 +8,9 @@ class CfgFunctions {
             class menuPFH {
                 file = QPATHTOF(functions\fnc_menuPFH.sqf);
             };
+            class onMenuClose {
+                file = QPATHTOF(functions\fnc_onMenuClose.sqf);
+            };
             class onMenuOpen {
                 file = QPATHTOF(functions\fnc_onMenuOpen.sqf);
             };

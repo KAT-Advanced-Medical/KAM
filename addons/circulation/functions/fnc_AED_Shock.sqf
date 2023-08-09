@@ -19,13 +19,12 @@
 
 params ["_medic", "_patient", "_defibType"];
 
-//pain will be added to all units standing too close to target.
-if (isNull objectParent _patient) then {
-    private _bystanders = (allUnits select {_x distance _patient < 1} ) - [_medic];
-    {
-        [_x, 0.2] call ACEFUNC(medical_status,adjustPainLevel);
-    } forEach _bystanders;
-};
+// Give pain to units with medical menu of patient open (except medic)
+private _bystanders = allPlayers inAreaArray [ASLToAGL getPosASL _patient, ACEGVAR(medical_gui,maxDistance), ACEGVAR(medical_gui,maxDistance), 0, false, ACEGVAR(medical_gui,maxDistance)];
+_bystanders = _bystanders - [_medic];
+{
+    [QGVAR(handleNearToAED), [_x, _patient], _x] call CBA_fnc_targetEvent;
+} forEach _bystanders;
 
 _patient setVariable [QGVAR(heartRestart), true, true];
 
