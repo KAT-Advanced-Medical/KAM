@@ -1,5 +1,26 @@
 class ADDON {
     class Medication {
+        class Adenosine {
+            painReduce = 0;
+            hrIncreaseLow[] = {-7, -10};
+            hrIncreaseNormal[] = {-15, -30};
+            hrIncreaseHigh[] = {-15, -35};
+            timeInSystem = 120;
+            timeTillMaxEffect = 15;
+            maxDose = 6;
+            incompatibleMedication[] = {};
+        };
+        class Morphine {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {-10, -20};
+            hrIncreaseNormal[] = {-10, -30};
+            hrIncreaseHigh[] = {-10, -35};
+            timeInSystem = 1800;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            incompatibleMedication[] = {};
+            viscosityChange = -10;
+        };
         class Epinephrine {
             painReduce = 0;
             hrIncreaseLow[] = {10, 20};
