@@ -41,8 +41,8 @@ switch (_AEDOrigin) do {
         };
     };
     default {
-        _condition = !(_medic getVariable [QGVAR(AED_X_MedicVitalsMonitor_Connected), false]) && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false];
+        _condition = !(_medic getVariable [QGVAR(AED_X_MedicVitalsMonitor_Connected), false]);
     };
 };
 
-_condition && !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) && !(_patient getVariable [QEGVAR(airway,recovery), false]) && {["",_patient] call ACEFUNC(medical_treatment,canCPR)};
+_condition && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) && !(_patient getVariable [QEGVAR(airway,recovery), false]) && {["",_patient] call ACEFUNC(medical_treatment,canCPR)};
