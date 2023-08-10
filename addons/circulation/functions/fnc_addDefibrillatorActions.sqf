@@ -21,7 +21,7 @@ params ["_medic", "_defibObject", ["_type", 0]];
 
 private _actions = [];
 
-switch (_type) do {
+switch (_type) do { // AED-X pads
     case 1: {
         {
             if !(_x isEqualTo _medic) then {
@@ -46,7 +46,7 @@ switch (_type) do {
             };
         } forEach (_defibObject nearEntities ["Man", GVAR(Defibrillator_DistanceLimit)]);
     };
-    /*case 2: {
+    /*case 2: { // AED-X vitals monitoring
         {
             if !(_x isEqualTo _medic) then {
                 _actions pushBack [[format ["AEDX_ConnectVitalsMonitor_%1", _x],
@@ -67,7 +67,7 @@ switch (_type) do {
             };
         } forEach (_defibObject nearEntities ["Man", GVAR(Defibrillator_DistanceLimit)]);
     };*/
-    default {
+    default { // AED pads
         {
             if !(_x isEqualTo _medic) then {
                 _actions pushBack [[format ["AED_PlacePads_%1", _x],

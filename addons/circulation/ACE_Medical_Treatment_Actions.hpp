@@ -128,7 +128,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class AEDXCharge: AEDShock {
         displayName = CSTRING(Defibrillator_Action_Charge);
-        condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]) && _patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)] && !(_patient getVariable [ARR_2(QQGVAR(Defibrillator_Charged),false)]) && !(_patient getVariable [ARR_2(QQGVAR(DefibrillatorInUse),false)]));
+        condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]) && _patient getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected),false)] && !(_patient getVariable [ARR_2(QQGVAR(Defibrillator_Charged),false)]) && !(_patient getVariable [ARR_2(QQGVAR(DefibrillatorInUse),false)]) && {((_patient getVariable [ARR_2(QQGVAR(Defibrillator_Provider), [])]) select 2) isEqualTo 'kat_X_AED'});
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(Defibrillator_ManualCharge));
         medicRequired = QGVAR(medLvl_AED_X);
     };

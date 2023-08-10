@@ -1377,10 +1377,10 @@
             <English>%1 administered shock (%2)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
-            <English>%1 attached defibrillator pads</English>
+            <English>%1 attached defibrillator pads (%2)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_RemovePads">
-            <English>%1 removed defibrillator pads</English>
+            <English>%1 removed defibrillator pads (%2)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_ConnectVitalsMonitor">
             <English>%1 connected vitals monitor</English>
