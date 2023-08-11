@@ -254,7 +254,7 @@
             <French>Echec de l'action chirurgicale</French>
             <Korean>수술 실패</Korean>
             <German>Chirurgische Maßnahme fehlgeschlagen</German>
-            <Japanese>外科的措置は失敗しました</Japanese>
+            <Japanese>手術に失敗しました</Japanese>
             <Spanish>La acción quirúrgico falló</Spanish>
             <Portuguese>Falha na ação cirúrgica</Portuguese>
         </Key>
@@ -267,7 +267,7 @@
             <French>Echec du pansement</French>
             <Korean>상처 치료 실패</Korean>
             <German>Wundverband fehlgeschlagen</German>
-            <Japanese>創傷被覆に失敗しました</Japanese>
+            <Japanese>創面切除に失敗しました</Japanese>
             <Spanish>Vendaje al vacío falló</Spanish>
             <Portuguese>Falha no curativo da ferida</Portuguese>
         </Key>
@@ -292,7 +292,7 @@
             <French>Utilisé pour inciser et débrider les plaies</French>
             <Korean>절개 부위를 생성하고 상처를 제거하는 데 사용됩니다.</Korean>
             <German>Für das Durchführen von Inzisionen und das Debridieren von Wunden</German>
-            <Japanese>切開と創面切除に使用</Japanese>
+            <Japanese>切開とデブリードマン(創面切除)に使用する</Japanese>
             <Spanish>Usado para crear incisiones y desbridar heridas</Spanish>
             <Polish>Służy do tworzenia nacięć i oczyszczania ran</Polish>
             <Portuguese>Usado para criar incisões e desbridar feridas</Portuguese>
@@ -319,7 +319,7 @@
             <French>Rétracteur</French>
             <Korean>리트랙터</Korean>
             <German>Retraktor</German>
-            <Japanese>開創器 (ランゲンベック)</Japanese>
+            <Japanese>開創器 (レトラクター)</Japanese>
             <Spanish>Retractor</Spanish>
             <Portuguese>Retrator</Portuguese>
         </Key>
@@ -331,7 +331,7 @@
             <French>Utilisé pour séparer les bords d'une plaie et exposer les factures</French>
             <Korean>골절 확장 및 노출하는 데 사용됩니다.</Korean>
             <German>Zur Erweiterung und Freilegung von Frakturen</German>
-            <Japanese>傷口を広げて骨折部を露出させるために使用されます</Japanese>
+            <Japanese>切開口を広げ骨折部を露出させるために使用する</Japanese>
             <Spanish>Usado para expandir y exponer heridas</Spanish>
             <Polish>Służy do rozszerzania i odsłonień złamań</Polish>
             <Portuguese>Usado para expandir e expor fraturas</Portuguese>
@@ -383,7 +383,7 @@
             <French>Utilisé pour clamper les fractures comminutives</French>
             <Korean>분쇄 골절을 클램프하는 데 사용됩니다</Korean>
             <German>Zum Abklemmen von Trümmerfrakturen</German>
-            <Japanese>粉砕骨折をクランプするために使用</Japanese>
+            <Japanese>粉砕骨折を留めるために使用する</Japanese>
             <Spanish>Usada para sujetar las fracturas conminutas</Spanish>
             <Polish>Służy do zaciskania skomplikowanych złamań</Polish>
             <Portuguese>Usado para fixar fraturas cominutivas</Portuguese>
@@ -397,7 +397,7 @@
             <French>Clamper la fracture</French>
             <Korean>골절 클램프하기</Korean>
             <German>Klammern der Fraktur</German>
-            <Japanese>骨折をクランプ (箝搾) する</Japanese>
+            <Japanese>骨折をクランプ</Japanese>
             <Spanish>Alinear trozos</Spanish>
             <Portuguese>Fixar fratura</Portuguese>
         </Key>
@@ -423,7 +423,7 @@
             <French>Irriguer la plaie</French>
             <Korean>상처 세척</Korean>
             <German>Wunde spülen</German>
-            <Japanese>創面を洗浄する</Japanese>
+            <Japanese>創面を洗浄</Japanese>
             <Spanish>Irrigar herida</Spanish>
             <Portuguese>Irrigar ferida</Portuguese>
         </Key>
@@ -461,7 +461,7 @@
             <French>Utilisé pour compléter tous les types de fractures complexes</French>
             <Korean>모든 복잡한 골절 유형을 완전하게 하는 데 사용됩니다</Korean>
             <German>Zur Vervollständigung aller komplexen Frakturtypen</German>
-            <Japanese>全ての開放骨折に使われます</Japanese>
+            <Japanese>あらゆる開放骨折に対応可能</Japanese>
             <Spanish>Usada para fijar todas las fracturas avanzadas</Spanish>
             <Polish>Służy do łączenia wszystkich złożonych typów złamań</Polish>
             <Portuguese>Usado para corrigir todas as fraturas avançadas</Portuguese>
@@ -475,7 +475,7 @@
             <French>Débrider les plaies</French>
             <Korean>괴사조직 제거</Korean>
             <German>Wunde debridieren</German>
-            <Japanese>創面切除</Japanese>
+            <Japanese>デブリードマン(創面切除)</Japanese>
             <Spanish>Desbridar heridas</Spanish>
             <Portuguese>Desbridar feridas</Portuguese>
         </Key>
@@ -488,7 +488,7 @@
             <French>Débridement</French>
             <Korean>제거 중</Korean>
             <German>Debridement</German>
-            <Japanese>切除中</Japanese>
+            <Japanese>創面切除中</Japanese>
             <Spanish>Desbridando</Spanish>
             <Portuguese>Desbridando</Portuguese>
         </Key>
@@ -513,7 +513,7 @@
             <French>Utilisé pour panser et sceller compètement les plaies</French>
             <Korean>상처를 완전히 치료하고 봉합하는 데 사용됩니다</Korean>
             <German>Zum vollständigen Verbinden und Abdichten von Wunden</German>
-            <Japanese>傷を完全に包んで密封する陰圧閉鎖療法のために使用される</Japanese>
+            <Japanese>傷を完全に包んで密封する陰圧閉鎖療法のために使用する</Japanese>
             <Spanish>Usado para vendar y sellar heridas completamente</Spanish>
             <Polish>Używany do całkowitego uzdrowienia ran</Polish>
             <Portuguese>Usado para enfaixar e selar feridas completamente</Portuguese>
@@ -540,7 +540,7 @@
             <French>Application</French>
             <Korean>적용 중</Korean>
             <German>Lege an</German>
-            <Japanese>適用中</Japanese>
+            <Japanese>施術中</Japanese>
             <Spanish>Colocando</Spanish>
             <Portuguese>Aplicando</Portuguese>
         </Key>
@@ -681,7 +681,7 @@
             <French>Durée du cycle de l'étomidate</French>
             <Korean>에토미데이트 약효 시간</Korean>
             <German>Etomidat-Zyklus-Timer</German>
-            <Japanese>エトミダートの効果時間</Japanese>
+            <Japanese>エトミデートの効果時間</Japanese>
             <Spanish>Tiempo para ciclo del Etomidato</Spanish>
             <Portuguese>Tempo de ciclo do Etomidato</Portuguese>
         </Key>
@@ -694,7 +694,7 @@
             <French>Détermine combien de temps chaque dose d'étomidate va rester dans le corps du patient</French>
             <Korean>에토미데이트의 각 투여량이 환자에게 얼마나 오래 가는지 결정합니다.</Korean>
             <German>Bestimmt, wie lange jede Etomidat-Dosis im Patienten verbleibt</German>
-            <Japanese>エトミダートが患者に留まる時間を設定します</Japanese>
+            <Japanese>エトミデートが患者に留まる時間を設定します</Japanese>
             <Spanish>Determina la duración de cada dosis de Etomidato en el paciente</Spanish>
             <Portuguese>Determina a duração de cada dose de Etomidato no paciente</Portuguese>
         </Key>
@@ -980,7 +980,7 @@
             <French>Temps pour débrider un patient</French>
             <Korean>환자의 상처 제거 시간</Korean>
             <German>Zeit für die Debridierung eines Patienten</German>
-            <Japanese>創面切除にかかる時間</Japanese>
+            <Japanese>デブリードマンにかかる時間</Japanese>
             <Spanish>Tiempo para desbridar un paciente</Spanish>
             <Portuguese>Duração do desbridamento de um paciente</Portuguese>
         </Key>
@@ -993,14 +993,14 @@
             <French>Temps pour appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용 시간</Korean>
             <German>Zeit zum Anlegen eines NPWT-Verbandes</German>
-            <Japanese>NPWTドレッシングにかかる時間</Japanese>
+            <Japanese>NPWTドレッシングを使うのにかかる時間</Japanese>
             <Spanish>Tiempo para colocar un vendaje al vacío</Spanish>
             <Portuguese>Duração do aplique de curativo a vácuo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_MedLevel">
             <English>Allow Debridement</English>
             <Spanish>Permitir desbridamiento</Spanish>
-            <Japanese>創面切除に必要な医療レベル</Japanese>
+            <Japanese>デブリードマンに必要な医療レベル</Japanese>
             <German>Benötigter medizinischer Grad, um Debridement &amp; NPWT-Verband zu nutzen</German>
             <French>Autoriser le débridement</French>
             <Korean>괴사조직 제거 허용</Korean>
@@ -1009,7 +1009,7 @@
         <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_Location">
             <English>Locations Debridement</English>
             <Spanish>Lugares para el desbridamiento</Spanish>
-            <Japanese>創面切除が可能な場所</Japanese>
+            <Japanese>デブリードマンが可能な場所</Japanese>
             <German>Ort für die durchführung von Debridement &amp; NPWT-Verband</German>
             <French>Lieux permettant le débridement</French>
             <Korean>괴사조직 위치</Korean>
@@ -1081,21 +1081,27 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement">
             <English>Surgery Consciousness Controls</English>
+            <Japanese>手術時の意識状態管理</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. &#10;Unconsciousness Required for Surgery: Surgery requires patient to be unconscious. &#10;No Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. &#10;Surgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
+            <Japanese>意識喪失あり: 手術時に麻酔と鎮静剤を使用しないと、心停止による意識喪失が発生します。 &#10;無意識状態が必要: 手術するには患者が意識を失っていることが必要になります。 &#10;意識喪失なし: 手術時に意識喪失や痛みが発生しなくなります。 &#10;手術麻酔: エトミデートを投与すると、手術中も患者が起きたままになります。</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
+            <Japanese>意識喪失あり</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
+            <Japanese>無意識状態が必要</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
+            <Japanese>意識喪失なし</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
+            <Japanese>手術麻酔</Japanese>
         </Key>
     </Package>
 </Project>
