@@ -61,6 +61,7 @@ _unit setVariable [QEGVAR(circulation,DefibrillatorPads_Connected), false, true]
 _unit setVariable [QEGVAR(circulation,AED_X_MedicVitalsMonitor_Connected), false, true];
 _unit setVariable [QEGVAR(circulation,AED_X_MedicVitalsMonitor_Patient), nil, true];
 _unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Connected), false, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Provider), nil, true];
 _unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Volume), true, true];
 _unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_VolumePatient), false, true];
 _unit setVariable [QEGVAR(circulation,Defibrillator_Provider), nil, true];
