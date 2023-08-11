@@ -26,14 +26,17 @@ params ["_medic", "_patient", ["_AEDOrigin",0], ["_extraArgs",[]]];
 _extraArgs params [["_placedAED",objNull]];
 
 private _condition = false;
+private _exit = false;
 
 switch (_AEDOrigin) do {
     case 1: {
         if (_placedAED isEqualTo objNull) then {
-            _condition = !(nearestObjects [position _patient, ["kat_AEDItem"], GVAR(Defibrillator_DistanceLimit)] findIf {typeOf _x isEqualTo "kat_X_AEDItem"} isEqualTo -1);
-        } else {
-            _condition = ((_patient distance2D _placedAED) < GVAR(Defibrillator_DistanceLimit));
+            private _nearbyObjects = nearestObjects [position _patient, ["kat_AEDItem"], GVAR(Defibrillator_DistanceLimit)];
+            if ((_nearbyObjects findIf {typeOf _x isEqualTo "kat_X_AEDItem"}) isEqualTo -1) exitWith {_exit = true};
+            _placedAED = _nearbyObjects select 0;
         };
+
+        _condition = ((_patient distance2D _placedAED) < GVAR(Defibrillator_DistanceLimit)) && (_placedAED getVariable [QGVAR(Defibrillator_Patient), objNull] in [objNull, _patient] || ((_patient getVariable [QGVAR(Defibrillator_Provider), [objNull, -1, -1]]) select 0) isEqualTo _placedAED);
     };
     case 2: {
         if !(isNull objectParent _patient) then {
@@ -41,8 +44,9 @@ switch (_AEDOrigin) do {
         };
     };
     default {
-        _condition = !(_medic getVariable [QGVAR(AED_X_MedicVitalsMonitor_Connected), false]);
+        _condition = !(_medic getVariable [QGVAR(AED_X_MedicVitalsMonitor_Connected), false]) && (_medic getVariable [QGVAR(MedicDefibrillator_Patient), objNull] in [objNull, _patient] || ((_patient getVariable [QGVAR(Defibrillator_Provider), [objNull, -1, -1]]) select 0) isEqualTo _medic);
     };
 };
 
-_condition && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) && !(_patient getVariable [QEGVAR(airway,recovery), false]) && {["",_patient] call ACEFUNC(medical_treatment,canCPR)};
+if (_exit) exitWith {false};
+_condition && !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) && !(_patient getVariable [QEGVAR(airway,recovery), false]) && {["",_patient] call ACEFUNC(medical_treatment,canCPR)};
