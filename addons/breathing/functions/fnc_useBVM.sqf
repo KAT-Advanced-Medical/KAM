@@ -47,7 +47,7 @@ totalProvided = 1;
 loopBVM = false;
 
 if (_notInVehicle) then {
-    _medic playMoveNow "AinvPknlMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon_medic";
+    [_medic, "AinvPknlMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon_medic", 1] call ACEFUNC(common,doAnimation);
     loopBVM = true;
 };
 
@@ -73,7 +73,7 @@ timeOut = true;
             [GVAR(CPRCancel_MouseID), "keydown"] call CBA_fnc_removeKeyHandler;
 
             if (_notInVehicle) then {
-                _medic switchMove "AinvPknlMstpSnonWnonDnon_medicEnd";
+                [_medic, "AinvPknlMstpSnonWnonDnon_medicEnd", 2] call ACEFUNC(common,doAnimation);
             };
 
             closeDialog 0;
@@ -189,7 +189,7 @@ timeOut = true;
         };
         
         if (loopBVM) then {
-            _medic switchMove "kat_BVM";
+            [QACEGVAR(common,switchMove), [_medic, "kat_CPR"]] call CBA_fnc_globalEvent;
             loopBVM = false;
 
             [{
