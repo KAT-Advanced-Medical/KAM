@@ -43,7 +43,7 @@ private _notInVehicle = isNull objectParent _medic;
 loopCPR = false;
 
 if (_notInVehicle) then {
-    _medic playMoveNow "AinvPknlMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon_medic";
+    [_medic, "AinvPknlMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon_medic", 1] call ACEFUNC(common,doAnimation);
     loopCPR = true;
 };
 
@@ -69,7 +69,7 @@ if (_notInVehicle) then {
             [GVAR(CPRCancel_MouseID), "keydown"] call CBA_fnc_removeKeyHandler;
 
             if (_notInVehicle) then {
-                _medic switchMove "AinvPknlMstpSnonWnonDnon_medicEnd";
+                [_medic, "AinvPknlMstpSnonWnonDnon_medicEnd", 2] call ACEFUNC(common,doAnimation);
             };
             
             // Format time to minutes:seconds
@@ -88,7 +88,7 @@ if (_notInVehicle) then {
         };
 
         if (loopCPR) then {
-            _medic switchMove "kat_CPR";
+            [QACEGVAR(common,switchMove), [_medic, "kat_CPR"]] call CBA_fnc_globalEvent;
             loopCPR = false;
 
             [{
