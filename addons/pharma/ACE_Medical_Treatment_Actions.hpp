@@ -92,6 +92,26 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_Caffeine);
         sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
     };
+    class Penthrox: Morphine {
+        displayName = CSTRING(Use_Penthrox);
+        displayNameProgress = CSTRING(Using);
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_Penthrox);
+        treatmentTime = QGVAR(treatmentTime_Penthrox);
+        items[] = {};
+        callbackSuccess = QFUNC(treatmentAdvanced_Penthrox);
+        condition = QUOTE([_patient] call ACEFUNC(common,isAwake) && ([ARR_2(_medic, 'kat_Penthrox')] call ACEFUNC(common,hasMagazine) || [ARR_2(_patient, 'kat_Penthrox')] call ACEFUNC(common,hasMagazine)));
+        litter[] = {};
+        //icon = QPATHTOF(ui\icon_penthrox_action.paa);
+        animationPatient = "";
+        animationPatientProne = "";
+        animationMedic = "";
+        animationMedicProne = "";
+        animationMedicSelf = "";
+        animationMedicSelfProne = "";
+        sounds[] = {};
+    };
     class Naloxone: Carbonate {
         displayName = CSTRING(Take_Naloxone);
         allowedSelections[] = {"Head"};

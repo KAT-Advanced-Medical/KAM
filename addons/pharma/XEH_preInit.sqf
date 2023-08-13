@@ -554,6 +554,25 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Penthrox Settings Category
+[
+    QGVAR(medLvl_Penthrox),
+    "LIST",
+    [LLSTRING(SETTING_medLvl_Penthrox)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Penthrox)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_Penthrox),
+    "SLIDER",
+    [LLSTRING(SETTING_treatmentTime_Penthrox)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Penthrox)],
+    [0.1, 10, 8, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 [
     QGVAR(kidneyAction),
     "CHECKBOX",
