@@ -1081,21 +1081,27 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement">
             <English>Surgery Consciousness Controls</English>
+            <Spanish>Controles de conciencia quirúrgica</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. &#10;Unconsciousness Required for Surgery: Surgery requires patient to be unconscious. &#10;No Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. &#10;Surgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
+            <Spanish>La cirugía provoca inconsciencia: La cirugía sin anestesia ni sedación provoca inconsciencia por IC. &#10;Inconsciencia necesaria para la cirugía: La cirugía requiere que el paciente esté inconsciente. &#10;La cirugía no provoca inconsciencia: La cirugía no induce inconsciencia, causa dolor. &#10;Anestesia quirúrgica: El paciente permanece despierto durante la cirugía si se le administra etomidato.</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
+            <Spanish>La cirugía causa inconsciencia</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
+            <Spanish>Unconsciousness Required for Surgery</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
+            <Spanish>No se pierde la consciencia por la cirugía</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
+            <Spanish>Anestesia quirúrgica</Spanish>
         </Key>
     </Package>
 </Project>
