@@ -91,6 +91,7 @@
 #define QACEFUNC(module,function)   QUOTE(ACEFUNC(module,function))
 
 #define ACELSTRING(module,string)   QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,module),string))
+#define ACELLSTRING(module,string)  localize ACELSTRING(module,string)
 #define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))
 
 // Macros for checking if unit is in medical vehicle or facility
@@ -125,6 +126,10 @@
 #define VAR_IN_PAIN           QACEGVAR(medical,inPain)
 #define VAR_TOURNIQUET        QACEGVAR(medical,tourniquets)
 #define VAR_FRACTURES         QACEGVAR(medical,fractures)
+
+#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
+#define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
+#define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
 
 // END ACE3 reference macros
 

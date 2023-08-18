@@ -53,9 +53,13 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             colorText[] = {0.18, 0.6, 0.96, 1};
             show = 0;
         };
-        class Torso_AED_VitalsMonitor: Torso_AED_Pads {
-            idc = IDC_BODY_TORSO_AED_VITALS;
-            text = QPATHTOF(data\body_image\torso_aed_vitals_monitor.paa);
+        class RightArm_AED_VitalsMonitor: Torso_AED_Pads {
+            idc = IDC_BODY_RIGHTARM_AED_VITALS;
+            text = QPATHTOF(data\body_image\rightarm_aed_vitals_monitor.paa);
+        };
+        class LeftArm_AED_VitalsMonitor: RightArm_AED_VitalsMonitor {
+            idc = IDC_BODY_LEFTARM_AED_VITALS;
+            text = QPATHTOF(data\body_image\leftarm_aed_vitals_monitor.paa);
         };
         class Torso_Pneumothorax: Torso_ChestSeal {
             idc = IDC_BODY_TORSO_PNEUMOTHORAX;

@@ -1377,7 +1377,7 @@
             <English>%1 administered shock (%2)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
-            <English>%1 attached defibrillator pads</English>
+            <English>%1 attached defibrillator pads (%2)</English>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_RemovePads">
             <English>%1 removed defibrillator pads</English>
@@ -1898,16 +1898,27 @@
             <Spanish>Parámetros de extracción de sangre</Spanish>
             <Portuguese>Configurações de extração de sangue</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_VitalsMonitorInactive_StatusLog">
+        <Key ID="STR_KAT_Circulation_VitalsMonitor_VMInactive_StatusLog">
             <English>AED-X: HR: %1 BP: --/-- SpO2: ---</English>
             <Spanish>DEA-X: RC: %1 PS: --/-- SpO2: ---</Spanish>
             <Polish>AED-X: HR: %1 BP: --/-- SpO2: ---</Polish>
             <Italian>AED-X: FC: %1 PS: --/-- SpO2: ---</Italian>
             <Japanese>AED-X: 心拍: %1 血圧: --/-- SpO2: ---</Japanese>
             <French>AED-X: HR: %1 BP: --/-- SpO2: ---</French>
-            <Korean>X-시리즈 AED: 맥박: %1 혈압: --/%3 산소포화도: ---</Korean>
+            <Korean>X-시리즈 AED: 맥박: %1 혈압: --/-- 산소포화도: ---</Korean>
             <German>AED-X: HR: %1 BP: --/-- SpO2: ---</German>
             <Portuguese>DEA-X: HR: %1 BP: --/-- SpO2: ---</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Circulation_VitalsMonitor_HRInactive_StatusLog">
+            <English>AED-X: HR: --- BP: %1/%2 SpO2: %3</English>
+            <Spanish>DEA-X: RC: --- PS: %1/%2 SpO2: %3</Spanish>
+            <Polish>AED-X: HR: --- BP: %1/%2 SpO2: %3</Polish>
+            <Italian>AED-X: FC: --- PS: %1/%2 SpO2: %3</Italian>
+            <Japanese>AED-X: 心拍: --- 血圧: %1/%2 SpO2: %3</Japanese>
+            <French>AED-X: HR: --- BP: %1/%2 SpO2: %3</French>
+            <Korean>X-시리즈 AED: 맥박: --- 혈압: %1/%2 산소포화도: %3</Korean>
+            <German>AED-X: HR: --- BP: %1/%2 SpO2: %3</German>
+            <Portuguese>DEA-X: HR: --- BP: %1/%2 SpO2: %3</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>

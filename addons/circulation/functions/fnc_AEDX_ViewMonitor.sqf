@@ -29,8 +29,18 @@ if (dialog) then { // If another dialog is open (medical menu) close it
 private _patient = _target;
 
 switch (_source) do {
-    case 1: {_patient = _target getVariable QGVAR(Defibrillator_Patient);}; // Placed
-    case 2: {_patient = _medic getVariable QGVAR(MedicDefibrillator_Patient);}; // Self-interaction (medic)
+    case 1: {
+        _patient = _target getVariable [QGVAR(Defibrillator_Patient), objNull];
+        if (_patient isEqualTo objNull) then {
+            _patient = _target getVariable [QGVAR(AED_X_VitalsMonitor_Patient), objNull];
+        };
+    }; // Placed
+    case 2: {
+        _patient = _medic getVariable [QGVAR(MedicDefibrillator_Patient), objNull];
+        if (_patient isEqualTo objNull) then {
+            _patient = _medic getVariable [QGVAR(AED_X_MedicVitalsMonitor_Patient), objNull];
+        };
+    }; // Self-interaction (medic)
     default {}; // Direct (patient)
 };
 
@@ -65,22 +75,15 @@ private _dlg = findDisplay IDC_AEDX_MONITOR;
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (_source isEqualTo 1) then {
-        GVAR(AEDX_MonitorTarget) = _target getVariable QGVAR(Defibrillator_Patient);
-    };
-
     private _pads = false;
 
     if !(GVAR(AEDX_MonitorTarget) isEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(DefibrillatorPads_Connected), false];
-    } else {
-        GVAR(AEDX_MonitorTarget) = objNull;
     };
 
     if !(_pads) then {
         ctrlSetText [IDC_EKG_DISPLAY_MIDTEXT, "Check Pads"];
         ctrlSetText [IDC_EKG_DISPLAY, QPATHTOF(ui\ekg_off.paa)];
-        GVAR(AEDX_MonitorTarget) = objNull;
     } else {
         ctrlSetText [IDC_EKG_DISPLAY_MIDTEXT, ""];
         private _ekgDisplay = QPATHTOF(ui\ekg_off.paa);
@@ -145,19 +148,22 @@ private _dlg = findDisplay IDC_AEDX_MONITOR;
     _args params ["_dlg"];
 
     private _pads = false;
+    private _vitalsMonitor = false;
 
     if !(GVAR(AEDX_MonitorTarget) isEqualTo objNull) then {
         _pads = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(DefibrillatorPads_Connected), false];
+        _vitalsMonitor = GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false];
     };
 
     private _hr = 0;
     private _bp = [0,0];
+    private _spO2 = 0;
 
     if (isNull _dlg) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if !(_pads) exitWith {
+    if (!_pads && !_vitalsMonitor) exitWith {
         ctrlSetText [IDC_DISPLAY_HEARTRATE, "---"];
         ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_T, "---"];
         ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_B, "---"];
@@ -202,13 +208,30 @@ private _dlg = findDisplay IDC_AEDX_MONITOR;
         };
     };
 
-    ctrlSetText [IDC_DISPLAY_HEARTRATE, format["%1", round(_hr)]];
+    private _partIndex = ((GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2);
 
-    if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+    if (HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget), _partIndex)) then {
+        _bp = [0,0];
+    } else {
+        _spO2 = GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,airwayStatus), 100];
+    };
+
+    if (_pads) then {
+        ctrlSetText [IDC_DISPLAY_HEARTRATE, format["%1", round(_hr)]];
+    } else {
+        ctrlSetText [IDC_DISPLAY_HEARTRATE, "---"];
+    };
+
+    if (_vitalsMonitor) then {
         ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_T, format["%1", round(_bp select 1)]];
         ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_B, format["%1", round(_bp select 0)]];
         ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_M, format["(%1)", round(((_bp select 1) - (_bp select 0))/3 + (_bp select 0))]];
-        ctrlSetText [IDC_DISPLAY_SPO2, format["%1", round(GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,airwayStatus), 100])]];
+        ctrlSetText [IDC_DISPLAY_SPO2, format["%1", round(_spO2)]];
+    } else {
+        ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_T, "---"];
+        ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_B, "---"];
+        ctrlSetText [IDC_DISPLAY_BLOODPRESSURE_M, ""];
+        ctrlSetText [IDC_DISPLAY_SPO2, "---"];
     };
 }, 1, [_dlg]] call CBA_fnc_addPerFrameHandler;
 
