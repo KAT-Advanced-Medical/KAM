@@ -93,31 +93,7 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 //Change Alpha Factor
 [_patient, _alphaFactor] call FUNC(alphaAction);
 
-switch (_className) do {
-    case "Lorazepam": {
-        [QGVAR(lorazepamLocal), _patient, _patient] call CBA_fnc_targetEvent;
-    };
-    case "Fentanyl": {
-        [QGVAR(fentanylPP), _patient, _patient] call CBA_fnc_targetEvent;
-    };
-    case "Ketamine": {
-        [QGVAR(ketaminePP), _patient, _patient] call CBA_fnc_targetEvent;
-    };
-    case "EACA": {
-        [QGVAR(eacaLocal), [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
-    };
-    case "TXA": {
-        [QGVAR(txaLocal), [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
-    };
-    case "Atropine": {
-        [QGVAR(atropineLocal), _patient, _patient] call CBA_fnc_targetEvent;
-    };
-    case "Amiodarone": {
-        [QGVAR(amiodaroneLocal), _patient, _patient] call CBA_fnc_targetEvent;
-    };
-    case "Flumazenil": {
-        [QGVAR(flumazenilLocal), _patient, _patient] call CBA_fnc_targetEvent;
-    };
-    default {};
-};
 
+if (_className in ["Lorazepam","Fentanyl","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
+    [QGVAR(((toLower _className) + 'Local')), [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+};
