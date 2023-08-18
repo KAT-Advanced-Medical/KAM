@@ -1885,5 +1885,14 @@
         <Key ID="STR_KAT_Breathing_Hemopneumothorax">
             <English>Hemopneumothorax</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_Pneumothorax_short">
+            <English>PTX</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_TensionPneumothorax_short">
+            <English>TPTX</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Hemopneumothorax_short">
+            <English>HPTX</English>
+        </Key>
     </Package>
 </Project>

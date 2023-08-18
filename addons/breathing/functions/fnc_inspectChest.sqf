@@ -35,15 +35,16 @@ if (_patient getVariable [QEGVAR(airway,airway), false] && !(_patient getVariabl
             _hintSize = 2;
             if (_simpleSetting) then {
                 _hintWidth = 13;
-                private _type = "";
+                private _type = LLSTRING(Pneumothorax);
+                private _type_log = LLSTRING(Pneumothorax_short);
+
                 if (_patient getVariable [QGVAR(hemopneumothorax), false]) then {
                     _type = LLSTRING(Hemopneumothorax);
-                } else {
-                    _type = LLSTRING(Pneumothorax);
+                    _type_log = LLSTRING(Hemopneumothorax_short);
                 };
 
                 _message = _message + "<br />" + format [LLSTRING(inspectChest_simple), _type];
-                _messageLog = _messageLog + format [" (%1)", _type];
+                _messageLog = _messageLog + format [" (%1)", _type_log];
             } else {
                 _message = format ["%1<br />%2", _message, LLSTRING(inspectChest_uneven)];
                 _messageLog = format ["%1%2", _messageLog, LLSTRING(inspectChest_uneven_log)];
@@ -57,15 +58,16 @@ if (_patient getVariable [QEGVAR(airway,airway), false] && !(_patient getVariabl
             if (_simpleSetting) then {
                 _hintSize = 2;
                 _hintWidth = 13;
-                private _type = "";
+                private _type = LLSTRING(Pneumothorax);
+                private _type_log = LLSTRING(Pneumothorax_short);
+
                 if (_patient getVariable [QGVAR(hemopneumothorax), false]) then {
                     _type = LLSTRING(Hemopneumothorax);
-                } else {
-                    _type = LLSTRING(Pneumothorax);
+                    _type_log = LLSTRING(Hemopneumothorax_short);
                 };
 
                 _message = _message + "<br />" + format [LLSTRING(inspectChest_simple), _type];
-                _messageLog = _messageLog + format [" (%1)", _type];
+                _messageLog = _messageLog + format [" (%1)", _type_log];
             };
         };
     };
