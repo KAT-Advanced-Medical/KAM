@@ -110,7 +110,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedicProne = "";
         animationMedicSelf = "";
         animationMedicSelfProne = "";
-        sounds[] = {};
+        sounds[] = {{QPATHTO_R(sounds\use_penthrox.wav),4,1,12}};
     };
     class Naloxone: Carbonate {
         displayName = CSTRING(Take_Naloxone);
