@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = QGVAR(inspectChest_medLvl);
         callbackSuccess = QFUNC(inspectChest);
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (missionNamespace getVariable [ARR_2(QQGVAR(inspectChest_enable),true)]));
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (missionNamespace getVariable [ARR_2(QQGVAR(inspectChest_enable),0)] > 0));
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
         animationMedic = "AinvPknlMstpSnonWnonDr_medic4";

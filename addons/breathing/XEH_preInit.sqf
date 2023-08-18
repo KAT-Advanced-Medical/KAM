@@ -282,10 +282,10 @@ PREP_RECOMPILE_END;
 // Sets if inspect chest action is enabled
 [
     QGVAR(inspectChest_enable),
-    "CHECKBOX",
+    "LIST",
     LLSTRING(SETTING_inspectChest_enable),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [true],
+    [[0, 1, 2], [ACELLSTRING(Common,Disabled), LLSTRING(SETTING_inspectChest_enable_simple), ACELLSTRING(Common,Enabled)], 2],
     true
 ] call CBA_Settings_fnc_init;
 

@@ -695,21 +695,6 @@
         <Key ID="STR_KAT_Breathing_ChestSealApplied">
             <English>Chest Seal Applied</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_inspectChest_log">
-            <English>%1 inspected chest: %2</English>
-        </Key>
-        <Key ID="STR_KAT_Breathing_inspectChest_normal">
-            <English>Chest rise and fall observed</English>
-        </Key>
-        <Key ID="STR_KAT_Breathing_inspectChest_none">
-            <English>No chest movement observed</English>
-        </Key>
-        <Key ID="STR_KAT_Breathing_inspectChest_uneven">
-            <English>Asymmetrical chest rise and fall</English>
-        </Key>
-        <Key ID="STR_KAT_Breathing_inspectChest_internalBleeding">
-            <English>Skin is hard and colored purple, looks bruised</English>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount">
             <English>Hemopneumothorax internal bleeding amount</English>
             <Japanese>血気胸時の内出血量</Japanese>
@@ -1846,6 +1831,12 @@
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
             <English>Enable Inspect Chest</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_simple">
+            <English>Simple</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_default">
+            <English>Default</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time">
             <English>Inspect Chest Time</English>
         </Key>
@@ -1857,6 +1848,42 @@
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_progress">
             <English>Inspecting Chest</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_log">
+            <English>%1 inspected chest: %2</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_normal">
+            <English>Chest rise and fall observed</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_none">
+            <English>No chest movement observed</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_none_log">
+            <English>No chest movement</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_uneven">
+            <English>Chest sides are uneven</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_uneven_log">
+            <English>, chest sides uneven</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_unevenMovement">
+            <English>Uneven chest rise and fall</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_internalBleeding">
+            <English>Skin is rigid, looks bruised</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_simple">
+            <English>Symptoms indicate %1</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Pneumothorax">
+            <English>Pneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_TensionPneumothorax">
+            <English>Tension Pneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Hemopneumothorax">
+            <English>Hemopneumothorax</English>
         </Key>
     </Package>
 </Project>
