@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject] call kat_circulation_fnc_Defibrillator_RemovePads
+ * [player, cursorObject, false] call kat_circulation_fnc_Defibrillator_RemovePads
  *
  * Public: No
  */

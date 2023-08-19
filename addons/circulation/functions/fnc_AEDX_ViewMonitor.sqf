@@ -78,7 +78,7 @@ private _dlg = findDisplay IDC_AEDX_MONITOR;
     };
 
     if !(_pads) then {
-        ctrlSetText [IDC_EKG_DISPLAY_MIDTEXT, "Check Pads"];
+        ctrlSetText [IDC_EKG_DISPLAY_MIDTEXT, LLSTRING(AEDX_Monitor_CheckPads)];
         ctrlSetText [IDC_EKG_DISPLAY, QPATHTOF(ui\ekg_off.paa)];
         GVAR(AEDX_MonitorTarget) = objNull;
     } else {
