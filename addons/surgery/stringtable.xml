@@ -1093,7 +1093,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
-            <Spanish>Unconsciousness Required for Surgery</Spanish>
+            <Spanish>Se requiere inconsciencia para la cirugía</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
