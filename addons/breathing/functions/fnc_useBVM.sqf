@@ -189,7 +189,7 @@ timeOut = true;
         };
         
         if (loopBVM) then {
-            [QACEGVAR(common,switchMove), [_medic, "kat_CPR"]] call CBA_fnc_globalEvent;
+            [QACEGVAR(common,switchMove), [_medic, "kat_BVM"]] call CBA_fnc_globalEvent;
             loopBVM = false;
 
             [{
