@@ -80,9 +80,9 @@ In real life, this will happen sometimes, not quiet often.
 
 // Settable action time for Head turning
 [
-    QGVAR(TurnAround_time),
+    QGVAR(HeadTurn_Interval),
     "SLIDER",
-    [LLSTRING(TIME_HEADTURNING),LLSTRING(TIME_HEADTURNING_DESC)],
+    [LLSTRING(SETTING_HeadTurning_Interval), LLSTRING(SETTING_HeadTurning_Interval_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
     [1, 10, 2, 0],
     true

@@ -777,22 +777,6 @@
             <Japanese>気道の確認を完了するのにどのくらい時間がかかるか設定します</Japanese>
             <Portuguese>Quanto tempo levará para verificar as vias aéreas</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Airway_TIME_HEADTURNING">
-            <English>Time for head turning</English>
-            <German>Zeit um den Kopf zu drehen</German>
-            <Polish>Czas na obrócenie głowy</Polish>
-            <Spanish>Tiempo para girar la cabeza</Spanish>
-            <Chinese>轉向時間</Chinese>
-            <Chinesesimp>清理气道异物的所需时间</Chinesesimp>
-            <Czech>Čas otočení hlavy</Czech>
-            <Korean>고개 돌리기에 걸리는 시간</Korean>
-            <French>Durée pour tourner la tête</French>
-            <Turkish>Baş döndürme zamanı</Turkish>
-            <Italian>Tempo per ruotare la testa</Italian>
-            <Russian>Время для поворота головы</Russian>
-            <Japanese>異物の除去にかかる時間</Japanese>
-            <Portuguese>Tempo para virar a cabeça</Portuguese>
-        </Key>
         <Key ID="STR_KAT_Airway_TIME_OVERSTRETCH">
             <English>Time for overstretch the head</English>
             <German>Zeit um den Kopf zu überstrecken</German>
@@ -825,21 +809,14 @@
             <Japanese>気道確保 (頭部後屈あご先挙上法) を完了するのにどのくらい時間がかかるか設定します</Japanese>
             <Portuguese>Quanto tempo demorará para hiperextender a cabeça</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Airway_TIME_HEADTURNING_DESC">
-            <English>How long it will take to turn head</English>
-            <German>Wie lange dauert es, den Kopf zur Seite zu drehen</German>
-            <Polish>Ile czasu zajmie obrócenie głowy</Polish>
-            <Spanish>Cuánto tiempo tomará hiperextender la cabeza</Spanish>
-            <Chinese>轉頭需要多長時間</Chinese>
-            <Chinesesimp>清理气道异物的所需时间</Chinesesimp>
-            <Czech>Jak dlouho zabere otočení hlavy</Czech>
-            <Korean>고개 돌리기에 얼마나 시간이 걸리는지 결정합니다</Korean>
-            <French>Combien de temps faudra t-il pour tourner la tête</French>
-            <Turkish>Kafayı çevirmek ne kadar sürecek</Turkish>
-            <Italian>Quanto tempo si impiega per ruotare la testa</Italian>
-            <Russian>Сколько времени потребуется, чтобы повернуть голову</Russian>
-            <Japanese>異物の除去を完了するのにどのくらい時間がかかるか設定します</Japanese>
-            <Portuguese>Quanto tempo demorará para virar a cabeça</Portuguese>
+        <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval">
+            <English>Head Turning Interval</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval_DESC">
+            <English>Time between head turning attempts</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Activity_HeadTurning">
+            <English>%1 finished head turning (x%2)</English>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC">
             <English>Time for Accuvac</English>
