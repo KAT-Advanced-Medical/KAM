@@ -28,8 +28,8 @@ params ["_unit", "_logic", "_radius"];
         if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_unit setVariable[QGVAR(enteredPoison), false, true]};
         _unit setVariable [QGVAR(CS), true, true];
         _unit say3D QGVAR(cough_1);
-        private _rndBlur = selectRandom [5, 6, 7, 8];
         if (hasInterface) then {
+        private _rndBlur = selectRandom [5, 6, 7, 8];
             ppBlur ppEffectAdjust [_rndBlur]; 
             ppBlur ppEffectEnable true;  
             ppBlur ppEffectCommit 5;
