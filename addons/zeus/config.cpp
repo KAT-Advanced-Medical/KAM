@@ -7,7 +7,7 @@ class CfgPatches {
         units[] = {
             QGVAR(manageAirway_module),
             QGVAR(bloodType_module),
-            QGVAR(asystole_module),
+            QGVAR(cardiacState_module),
             QGVAR(checkmedical_module)
         };
         weapons[] = {};
