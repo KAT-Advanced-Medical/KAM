@@ -343,7 +343,7 @@ class ACE_Medical_Treatment_Actions {
     class Dialysis: BasicBandage {
         displayName = CSTRING(Dialysis_DisplayName);
         displayNameProgress = CSTRING(Dialysis_DisplayNameProgress);
-        icon = QPATHTOF(ui\X_Series-Device_W.paa);
+        icon = QPATHTOF(ui\icon_aedx.paa);
         category = "surgery";
         consumeItem = 0;
         items[] = {};

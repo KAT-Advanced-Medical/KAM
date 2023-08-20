@@ -63,6 +63,8 @@
 // ACE3 reference macros
 #define ACE_PREFIX ace
 
+#define ACE_ADDON(component)        DOUBLES(ACE_PREFIX,component)
+
 #define ACEGVAR(module,var)         TRIPLES(ACE_PREFIX,module,var)
 #define QACEGVAR(module,var)        QUOTE(ACEGVAR(module,var))
 
@@ -72,6 +74,18 @@
 #define ACELSTRING(module,string)   QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,module),string))
 #define ACELLSTRING(module,string)  localize ACELSTRING(module,string)
 #define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))
+
+// Macros for checking if unit is in medical vehicle or facility
+// Defined mostly to make location check in canTreat more readable
+#define IN_MED_VEHICLE(unit)  (unit call ACEFUNC(medical_treatment,isInMedicalVehicle))
+#define IN_MED_FACILITY(unit) (unit call ACEFUNC(medical_treatment,isInMedicalFacility))
+
+#define TREATMENT_LOCATIONS_ALL 0
+#define TREATMENT_LOCATIONS_VEHICLES 1
+#define TREATMENT_LOCATIONS_FACILITIES 2
+#define TREATMENT_LOCATIONS_VEHICLES_AND_FACILITIES 3
+#define TREATMENT_LOCATIONS_NONE 4
+
 
 // item types
 #define TYPE_DEFAULT 0
