@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, cursorObject] call kat_circulation_fnc_AEDX_DisconnectVitalsMonitor
+ * [player, cursorObject, false] call kat_circulation_fnc_AEDX_DisconnectVitalsMonitor
  *
  * Public: No
  */

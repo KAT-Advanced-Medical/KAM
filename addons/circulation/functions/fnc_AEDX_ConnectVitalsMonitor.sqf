@@ -16,7 +16,7 @@
  * None
  *
  * Example:
- * [player, cursorObject,  0, []] call kat_circulation_fnc_AEDX_ConnectVitalsMonitor;
+ * [player, cursorObject, "rightarm", 0, [], false] call kat_circulation_fnc_AEDX_ConnectVitalsMonitor;
  *
  * Public: No
  */

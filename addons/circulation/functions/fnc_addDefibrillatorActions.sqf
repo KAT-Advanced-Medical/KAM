@@ -12,7 +12,7 @@
  * ACE actions <ARRAY>
  *
  * Example:
- * [player, cursorObject] call kat_circulation_fnc_addDefibrillatorActions;
+ * [player, cursorObject, 0] call kat_circulation_fnc_addDefibrillatorActions;
  *
  * Public: No
  */
