@@ -102,12 +102,22 @@ switch (_source) do {
             (_patient distance2D _medic) > GVAR(Defibrillator_DistanceLimit) || !((objectParent _medic) isEqualTo (objectParent _patient));
         }, {
             params ["_medic", "_patient"];
-        
-            [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+
+            if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+                [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+                if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                    [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                };
+            };
         }, [_medic, _patient], 3600, {
             params ["_medic", "_patient"];
-        
-            [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+
+            if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+                [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+                if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                    [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                };
+            };
         }] call CBA_fnc_waitUntilAndExecute;
     };
 };
