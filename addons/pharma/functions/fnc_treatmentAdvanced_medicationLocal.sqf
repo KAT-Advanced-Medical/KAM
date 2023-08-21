@@ -64,7 +64,7 @@ if (HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex)) exitWith {
 };
 
 // Get adjustment attributes for used medication
-private _defaultConfig = configFile >> QUOTE(ADDON) >> "Medication";
+private _defaultConfig = configFile >> QUOTE(ACE_ADDON(Medical_Treatment)) >> "Medication";
 private _medicationConfig = _defaultConfig >> _classname;
 
 private _painReduce             = GET_NUMBER(_medicationConfig >> "painReduce",getNumber (_defaultConfig >> "painReduce"));
