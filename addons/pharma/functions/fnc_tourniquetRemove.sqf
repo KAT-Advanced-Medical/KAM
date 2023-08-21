@@ -51,7 +51,7 @@ if !(((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqu
         _x params ["_bodyPartN", "_medication"];
 
         if (_partIndex == _bodyPartN) then {
-            TRACE_1("delayed medication call after tourniquet removeal",_x);
+            TRACE_1("delayed medication call after tourniquet removal",_x);
             [QGVAR(medicationLocal), [_patient, _bodyPart, _medication], _patient] call CBA_fnc_targetEvent;
             _occludedMedications set [_forEachIndex, []];
             _arrayModified = true;
