@@ -8,7 +8,6 @@ PREP(AEDXPlaced_CheckCondition);
 PREP(AEDXPlaced_VitalsMonitor_SetVolume);
 PREP(bloodType);
 PREP(canDraw);
-PREP(canTreat);
 PREP(compatible);
 PREP(cprLocal);
 PREP(cprSuccess);
