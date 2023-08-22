@@ -1082,26 +1082,32 @@
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement">
             <English>Surgery Consciousness Controls</English>
             <Japanese>手術時の意識状態管理</Japanese>
+            <Spanish>Controles de conciencia quirúrgica</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. &#10;Unconsciousness Required for Surgery: Surgery requires patient to be unconscious. &#10;No Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. &#10;Surgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
             <Japanese>意識喪失あり: 手術時に麻酔と鎮静剤を使用しないと、心停止による意識喪失が発生します。 &#10;無意識状態が必要: 手術するには患者が意識を失っていることが必要になります。 &#10;意識喪失なし: 手術時に意識喪失や痛みが発生しなくなります。 &#10;手術麻酔: エトミデートを投与すると、手術中も患者が起きたままになります。</Japanese>
+            <Spanish>La cirugía provoca inconsciencia: La cirugía sin anestesia ni sedación provoca inconsciencia por IC. &#10;Inconsciencia necesaria para la cirugía: La cirugía requiere que el paciente esté inconsciente. &#10;La cirugía no provoca inconsciencia: La cirugía no induce inconsciencia, causa dolor. &#10;Anestesia quirúrgica: El paciente permanece despierto durante la cirugía si se le administra etomidato.</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
             <Japanese>意識喪失あり</Japanese>
+            <Spanish>La cirugía causa inconsciencia</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
+            <Spanish>Se requiere inconsciencia para la cirugía</Spanish>
             <Japanese>無意識状態が必要</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
             <Japanese>意識喪失なし</Japanese>
+            <Spanish>No se pierde la consciencia por la cirugía</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
             <Japanese>手術麻酔</Japanese>
+            <Spanish>Anestesia quirúrgica</Spanish>
         </Key>
     </Package>
 </Project>
