@@ -18,7 +18,7 @@
  * Public: No
  */
 
-params ["_medic","_patient","_volume"];
+params ["_medic", "_patient", "_volume"];
 
 private _modStr = "ACE_";
 private _bloodtypeStr = "";
