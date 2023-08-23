@@ -2346,17 +2346,7 @@
             <Portuguese>Configurações de Etomidato</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
-            <English>%1 performed a saline flush on %2</English>
-            <Italian>%1 ha eseguito uno sciacquo salino su %2</Italian>
-            <Czech>%1 provedl vypláchnutí fyziologickým roztokem na %2</Czech>
-            <French>%1 a effectué un rinçage à la solution saline sur %2</French>
-            <Polish>%1 przeprowadził płukanie solą fizjologiczną na %2 </Polish>
-            <Korean>%1 이(가) %2 에게 식염수 주입을 수행했습니다.</Korean>
-            <German>%1 hat an %2 eine Spülung mit Kochsalzlösung durchgeführt</German>
-            <Chinesesimp>%1 对 %2 使用了盐水冲洗</Chinesesimp>
-            <Japanese>%1 は %2 に生理食塩水フラッシュを実行しました</Japanese>
-            <Spanish>%1 realizó un enjuague con salino en %2</Spanish>
-            <Portuguese>%1 fez lavagem salínica em %2</Portuguese>
+            <English>%1 performed a saline flush</English>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
