@@ -27,7 +27,7 @@ private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);
 private _bloodLoss = _unit call EFUNC(pharma,getBloodLoss);
 if (_bloodLoss > (ACEGVAR(medical,const_bloodLossKnockOutThreshold) * _cardiacOutput / 2)) exitWith { false };
 
-private _bloodPressure = [_unit] call ACEFUNC(medical_status,getBloodPressure);
+private _bloodPressure = GET_BLOOD_PRESSURE(_unit);
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 if (_bloodPressureL < 50 || {_bloodPressureH < 60}) exitWith { false };
 
