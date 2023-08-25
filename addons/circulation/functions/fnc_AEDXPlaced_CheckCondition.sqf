@@ -12,7 +12,7 @@
  * Can use defibrillator <BOOL>
  *
  * Example:
- * [player, cursorObject] call kat_circulation_fnc_AEDXPlaced_CheckCondition;
+ * [player, cursorObject, 0] call kat_circulation_fnc_AEDXPlaced_CheckCondition;
  *
  * Public: No
  */

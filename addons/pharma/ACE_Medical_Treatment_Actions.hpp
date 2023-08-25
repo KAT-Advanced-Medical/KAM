@@ -6,8 +6,6 @@ class ACE_Medical_Treatment_Actions {
     class Morphine;
     class CheckPulse;
     class CPR;
-    class Defibrillator;
-    class Defibrillator_AED_X_Vehicle;
 
     class BloodIV: BasicBandage {
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -131,7 +129,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(treatmentTime_EACA);
         items[] = {"kat_EACA"};
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        callbackSuccess = QFUNC(treatmentAdvanced_EACA);
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
     };
     class TXA: EACA {
@@ -141,7 +139,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_TXA);
         treatmentTime = QGVAR(treatmentTime_TXA);
         items[] = {"kat_TXA"};
-        callbackSuccess = QFUNC(treatmentAdvanced_TXA);
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
     };
     class SalineFlush: Carbonate {
@@ -220,7 +218,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Amiodarone);
         treatmentTime = QGVAR(treatmentTime_Amiodarone);
         items[] = {"kat_amiodarone"};
-        callbackSuccess = QFUNC(treatmentAdvanced_Amiodarone);
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
     };
     class Lidocaine: EACA {
@@ -240,7 +238,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Atropine);
         treatmentTime = QGVAR(treatmentTime_Atropine);
         items[] = {"kat_atropine"};
-        callbackSuccess = QFUNC(treatmentAdvanced_Atropine);
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
     };
     class Ketamine: EACA {
@@ -250,7 +248,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Ketamine);
         treatmentTime = QGVAR(treatmentTime_Ketamine);
         items[] = {"kat_ketamine"};
-        callbackSuccess = QFUNC(treatmentAdvanced_Ketamine);
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
     };
     class Fentanyl: EACA {
@@ -260,7 +258,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Fentanyl);
         treatmentTime = QGVAR(treatmentTime_Fentanyl);
         items[] = {"kat_fentanyl"};
-        callbackSuccess = QFUNC(treatmentAdvanced_Fentanyl);
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
     };
     class Nalbuphine: EACA {
@@ -345,7 +343,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Lorazepam);
         treatmentTime = QGVAR(treatmentTime_Lorazepam);
         items[] = {"kat_lorazepam"};
-        callbackSuccess = QFUNC(treatmentAdvanced_Lorazepam);
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
     };
     class Flumazenil: EACA {
@@ -357,7 +355,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Flumezenil);
         treatmentTime = QGVAR(treatmentTime_Flumazenil);
         items[] = {"kat_flumazenil"};
-        callbackSuccess = QFUNC(treatmentAdvanced_Flumazenil);
+        callbackSuccess = QFUNC(treatmentAdvanced_medication);
         sounds[] = {};
     };
     class Dialysis: BasicBandage {

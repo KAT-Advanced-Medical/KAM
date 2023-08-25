@@ -1340,7 +1340,7 @@
             <Polish>Etomidat</Polish>
             <Korean>에토미데이트</Korean>
             <German>Etomidat</German>
-            <Japanese>エトミダート</Japanese>
+            <Japanese>エトミデート</Japanese>
             <Spanish>Etomidato</Spanish>
             <Portuguese>Etomidato</Portuguese>
         </Key>
@@ -1379,7 +1379,7 @@
             <Polish>Wstrzyknij Etomidat</Polish>
             <Korean>에토미데이트 투여</Korean>
             <German>Verabreiche Etomidat</German>
-            <Japanese>エトミダートを注入</Japanese>
+            <Japanese>エトミデートを注入</Japanese>
             <Spanish>Administrar Etomidato</Spanish>
             <Portuguese>Administrar Etomidato</Portuguese>
         </Key>
@@ -1975,7 +1975,7 @@
             <Korean>에토미데이트를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Etomidat</German>
             <Polish>Poziom wyszkolenia medycznego dla Etomidatu</Polish>
-            <Japanese>エトミダートに必要な医療レベル</Japanese>
+            <Japanese>エトミデートに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el Etomidato</Spanish>
             <Portuguese>Nível médico exigido para uso de Etomidato</Portuguese>
         </Key>
@@ -1988,7 +1988,7 @@
             <French>Temps de traitement de l'Étomidate</French>
             <Korean>에토미데이트로 치료하는 시간</Korean>
             <German>Anwendungszeit für Etomidat</German>
-            <Japanese>エトミダートの施術時間</Japanese>
+            <Japanese>エトミデートの施術時間</Japanese>
             <Spanish>Tiempo para uso del Etomidato</Spanish>
             <Portuguese>Tempo de uso de Etomidato</Portuguese>
         </Key>
@@ -2356,7 +2356,7 @@
             <French>Paramètres de l'Étomidate</French>
             <Korean>에토미데이트 설정</Korean>
             <German>Etomidat Einstellungen</German>
-            <Japanese>エトミダート設定</Japanese>
+            <Japanese>エトミデート設定</Japanese>
             <Spanish>Parámetros del Etomidato</Spanish>
             <Portuguese>Configurações de Etomidato</Portuguese>
         </Key>
@@ -2364,17 +2364,7 @@
             <English>Penthrox Inhaler Settings</English>
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
-            <English>%1 performed a saline flush on %2</English>
-            <Italian>%1 ha eseguito uno sciacquo salino su %2</Italian>
-            <Czech>%1 provedl vypláchnutí fyziologickým roztokem na %2</Czech>
-            <French>%1 a effectué un rinçage à la solution saline sur %2</French>
-            <Polish>%1 przeprowadził płukanie solą fizjologiczną na %2 </Polish>
-            <Korean>%1 이(가) %2 에게 식염수 주입을 수행했습니다.</Korean>
-            <German>%1 hat an %2 eine Spülung mit Kochsalzlösung durchgeführt</German>
-            <Chinesesimp>%1 对 %2 使用了盐水冲洗</Chinesesimp>
-            <Japanese>%1 は %2 に生理食塩水フラッシュを実行しました</Japanese>
-            <Spanish>%1 realizó un enjuague con salino en %2</Spanish>
-            <Portuguese>%1 fez lavagem salínica em %2</Portuguese>
+            <English>%1 performed a saline flush</English>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>

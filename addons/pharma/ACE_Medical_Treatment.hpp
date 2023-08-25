@@ -1,4 +1,4 @@
-class ADDON {
+class ACE_ADDON(Medical_Treatment) {
     class Medication {
         class Epinephrine {
             painReduce = 0;
