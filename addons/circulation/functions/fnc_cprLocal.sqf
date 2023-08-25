@@ -99,8 +99,6 @@ switch (_reviveObject) do {
             };
         };
     };
-    case "AEDStation";
-    case "AEDVehicle";
     case "AED": {
         [_patient, "activity", LSTRING(Activity_Shock), [[_medic, false, true] call ACEFUNC(common,getName), "AED"]] call ACEFUNC(medical_treatment,addToLog);
         _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_MinChance), GVAR(AED_MaxChance), true];

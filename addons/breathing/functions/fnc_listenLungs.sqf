@@ -34,7 +34,6 @@ variantDelay = 0;
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
     
-    //private _pneumo = _patient getVariable [QGVAR(pneumothorax), false];
     private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), false] || (_patient getVariable [QGVAR(pneumothorax), 0] > 0));
     private _hemo = _patient getVariable [QGVAR(hemopneumothorax), false];
 
