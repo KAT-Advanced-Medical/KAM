@@ -117,7 +117,7 @@ if (_skip) then { // Skip visual charging process
             (_dlg displayCtrl IDC_CHARGE_ENERGY_AMOUNT) ctrlSetTextColor [0, 0, 0, 1];
             (_dlg displayCtrl IDC_CHARGE_ENERGY_AMOUNT) ctrlSetBackgroundColor [1, 0.35, 0, 1];
 
-            ctrlSetText [IDC_CHARGE_STATUS, "CHARGED"];
+            ctrlSetText [IDC_CHARGE_STATUS, LLSTRING(AEDX_Monitor_CHARGED)];
 
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
@@ -147,7 +147,7 @@ if (_skip) then { // Skip visual charging process
             (_dlg displayCtrl IDC_CHARGE_ENERGY_AMOUNT) ctrlSetTextColor [0, 0, 0, 1];
             (_dlg displayCtrl IDC_CHARGE_ENERGY_AMOUNT) ctrlSetBackgroundColor [1, 0.35, 0, 1];
 
-            ctrlSetText [IDC_CHARGE_STATUS, "CHARGED"];
+            ctrlSetText [IDC_CHARGE_STATUS, LLSTRING(AEDX_Monitor_CHARGED)];
         };
         
     }, [_dlg], 60, {}] call CBA_fnc_waitUntilAndExecute;
@@ -259,11 +259,11 @@ if (_skip) then { // Skip visual charging process
 
     if !(isNull _dlg) then {
         if (GVAR(AEDX_MonitorShockAdministered)) then {
-            ctrlSetText [IDC_CHARGE_STATUS, "Delivered Energy"];
+            ctrlSetText [IDC_CHARGE_STATUS, LLSTRING(AEDX_Monitor_DeliveredEnergy)];
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [0.05, 0.85, 0.36, 1];
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetFontHeight (GRID_H * 1.1);
         } else {
-            ctrlSetText [IDC_CHARGE_STATUS, "DISARMED"];
+            ctrlSetText [IDC_CHARGE_STATUS, LLSTRING(AEDX_Monitor_DISARMED)];
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [0.94, 0.94, 0.03, 1];
         };
 
@@ -273,7 +273,7 @@ if (_skip) then { // Skip visual charging process
             [false] call _fnc_showDialog;
 
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [1, 0.35, 0, 0];
-            ctrlSetText [IDC_CHARGE_STATUS, "CHARGING"];
+            ctrlSetText [IDC_CHARGE_STATUS, LLSTRING(AEDX_Monitor_CHARGING)];
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetFontHeight (GRID_H * 1.5);
 
             (_dlg displayCtrl IDC_CHARGE_ENERGY_AMOUNT) ctrlSetTextColor [1, 1, 1, 1];
