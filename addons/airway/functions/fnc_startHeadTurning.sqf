@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player] call kat_airway_fnc_startHeadTurning;
+ * [player, cursorTarget] call kat_airway_fnc_startHeadTurning;
  *
  * Public: No
  */
