@@ -259,7 +259,7 @@ if (_skip) then { // Skip visual charging process
 
     if !(isNull _dlg) then {
         if (GVAR(AEDX_MonitorShockAdministered)) then {
-            ctrlSetText [IDC_CHARGE_STATUS, LLSTRING(AEDX_Monitor_DeliveredEnergy)];, 
+            ctrlSetText [IDC_CHARGE_STATUS, LLSTRING(AEDX_Monitor_DeliveredEnergy)];
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetBackgroundColor [0.05, 0.85, 0.36, 1];
             (_dlg displayCtrl IDC_CHARGE_STATUS) ctrlSetFontHeight (GRID_H * 1.1);
         } else {
