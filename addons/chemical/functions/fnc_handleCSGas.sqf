@@ -28,14 +28,18 @@ params ["_unit", "_logic", "_radius"];
         if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_unit setVariable[QGVAR(enteredPoison), false, true]};
         _unit setVariable [QGVAR(CS), true, true];
         _unit say3D QGVAR(cough_1);
+        if (hasInterface) then {
         private _rndBlur = selectRandom [5, 6, 7, 8];
-        ppBlur ppEffectAdjust [_rndBlur]; 
-        ppBlur ppEffectEnable true;  
-        ppBlur ppEffectCommit 5;
+            ppBlur ppEffectAdjust [_rndBlur]; 
+            ppBlur ppEffectEnable true;  
+            ppBlur ppEffectCommit 5;
+        };
     } else {
-        ppBlur ppEffectAdjust [0]; 
-        ppBlur ppEffectEnable true; 
-        ppBlur ppEffectCommit 20;
+        if (hasInterface) then {
+            ppBlur ppEffectAdjust [0]; 
+            ppBlur ppEffectEnable true; 
+            ppBlur ppEffectCommit 20;
+        };
         _unit setVariable [QGVAR(CS), false, true];
         [_handler] call CBA_fnc_removePerFrameHandler;
         
