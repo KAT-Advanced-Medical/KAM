@@ -32,10 +32,33 @@ private _pickUpText = LLSTRING(PickUpAED);
 if (_AEDClassName == "kat_X_AED") then {
     _AED setVariable [QGVAR(AED_X_VitalsMonitor_Volume), _unit getVariable [QGVAR(AED_X_VitalsMonitor_Volume), false], true];
     _pickUpText = LLSTRING(PickUpAEDX);
+
+    private _patient = _unit getVariable [QGVAR(AED_X_MedicVitalsMonitor_Patient), objNull];
+
+    if !(_patient isEqualTo objNull) then {
+        private _monitorBodyPart = (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), []]) select 2;
+
+        [_unit, _patient, true] call FUNC(AEDX_DisconnectVitalsMonitor);
+
+        [{
+            params ["_unit", "_patient", "_AEDClassName", "_AED", "_monitorBodyPart"];
+
+            [_unit, _patient, _monitorBodyPart, 1, [_AED], true] call FUNC(AEDX_ConnectVitalsMonitor);
+        }, [_unit, _patient, _AEDClassName, _AED, _monitorBodyPart], 0.1] call CBA_fnc_waitAndExecute; 
+    };
 };
 
-//_AED setVariable [QGVAR(Defibrillator_Patient), objNull, true];
+private _patient = _unit getVariable [QGVAR(MedicDefibrillator_Patient), objNull];
 
+if !(_patient isEqualTo objNull) then {
+    [_unit, _patient, true] call FUNC(Defibrillator_RemovePads);
+
+    [{
+        params ["_unit", "_patient", "_AEDClassName", "_AED"];
+
+        [_unit, _patient, 1, _AEDClassName, [_AED], true] call FUNC(Defibrillator_AttachPads);
+    }, [_unit, _patient, _AEDClassName, _AED], 0.1] call CBA_fnc_waitAndExecute; 
+};
 private _action = ["AED_pickupAction",
 _pickUpText,
 "",
@@ -45,22 +68,35 @@ _pickUpText,
 
     _AED setVariable [QGVAR(DefibrillatorInUse), false, true];
 
+    private _patient = _AED getVariable [QGVAR(Defibrillator_Patient), objNull];
+    
+
+    if !(_patient isEqualTo objNull) then {
+        [_medic, _patient, true] call FUNC(Defibrillator_RemovePads);
+
+        [{
+            params ["_medic", "_patient", "_AEDClassName"];
+
+            [_medic, _patient, 0, _AEDClassName, [], true] call FUNC(Defibrillator_AttachPads);
+        }, [_medic, _patient, _AEDClassName], 0.1] call CBA_fnc_waitAndExecute;  
+    };
+
     if (_AEDClassName == "kat_X_AED") then {
         _AED setVariable [QGVAR(AED_X_VitalsMonitor), false, true];
         _medic setVariable [QGVAR(AED_X_VitalsMonitor_Volume), _AED getVariable [QGVAR(AED_X_VitalsMonitor_Volume), false], true];
-    };
 
-    private _patient = _AED getVariable [QGVAR(Defibrillator_Patient), objNull];
+        private _patientMonitor = _AED getVariable [QGVAR(AED_X_VitalsMonitor_Patient), objNull];
 
-    if (_patient isEqualTo objNull) then {
-        _patient = _AED getVariable [QGVAR(AED_X_VitalsMonitor_Patient), objNull];
-    };
+        if !(_patientMonitor isEqualTo objNull) then {
+            private _monitorBodyPart = (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), []]) select 2;
 
-    if !(_patient isEqualTo objNull) then {
-        [_medic, _patient] call FUNC(Defibrillator_RemovePads);
-    
-        if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
-            [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+            [_medic, _patientMonitor, true] call FUNC(AEDX_DisconnectVitalsMonitor);
+
+            [{
+                params ["_medic", "_patientMonitor", "_monitorBodyPart"];
+
+                [_medic, _patientMonitor, _monitorBodyPart, 0, [], true] call FUNC(AEDX_ConnectVitalsMonitor);
+            }, [_medic, _patientMonitor, _monitorBodyPart], 0.1] call CBA_fnc_waitAndExecute;  
         };
     };
 

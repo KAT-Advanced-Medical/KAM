@@ -23,8 +23,6 @@ private _defibProvider = _patient getVariable [QGVAR(Defibrillator_Provider), ob
 
 if (_defibProvider isEqualTo objNull) exitWith {false};
 
-_defibProvider select 0;
-
 private _condition = false;
 
 switch (_defibProvider select 1) do {

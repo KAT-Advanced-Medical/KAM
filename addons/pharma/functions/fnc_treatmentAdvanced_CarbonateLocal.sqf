@@ -21,9 +21,9 @@ params ["_medic", "_patient"];
 private _sedated = _patient getVariable [QEGVAR(surgery,sedated), false];
 if (_sedated) exitWith {};
 
-private _bloodPressure = [_patient] call ACEFUNC(medical_status,getBloodPressure);
+private _bloodPressure = GET_BLOOD_PRESSURE(_patient);
 _bloodPressureH = _bloodPressure select 1;
 
-if (_bloodPressureH >= 100 && _bloodPressureH <= 140 && (random 100 <= GVAR(carbonateChance)) && {[_patient] call ACEFUNC(medical_status,hasStableVitals)}  ) then {
+if (_bloodPressureH >= 100 && _bloodPressureH <= 140 && (random 100 <= GVAR(carbonateChance)) && {[_patient] call EFUNC(misc,hasStableVitals)}  ) then {
     [_patient, false] call ACEFUNC(medical,setUnconscious);
 };
