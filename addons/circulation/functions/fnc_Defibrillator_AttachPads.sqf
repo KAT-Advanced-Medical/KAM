@@ -10,6 +10,7 @@
  * 3: Defibrillator Classname <STRING>
  * 4: Extra Arguments <ARRAY>
  *   0: Placed AED <OBJECT>
+ * 5: Hide activity log <BOOL>
  *
  * Return Value:
  * None
@@ -20,7 +21,7 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_source", "_defibClassname", ["_extraArgs",[]]];
+params ["_medic", "_patient", "_source", "_defibClassname", ["_extraArgs",[]], ["_noLog", false]];
 _extraArgs params [["_placedAED",objNull]];
 
 private _provider = objNull;
@@ -34,9 +35,9 @@ switch (_source) do {
 
         if (_placedAED isEqualTo objNull) then {
             private _nearObjects = nearestObjects [position _patient, ["kat_AEDItem"], GVAR(Defibrillator_DistanceLimit)];
-            private _index = _nearObjects findIf {typeOf _x isEqualTo "kat_X_AEDItem"};
+            private _index = _nearObjects findIf {typeOf _x isEqualTo _defibClassname};
             if (_index isEqualTo -1) exitWith {_exit = true;};
-            _placedDefibrillator = _nearObjects select (_nearObjects findIf {typeOf _x isEqualTo "kat_X_AEDItem"});
+            _placedDefibrillator = _nearObjects select (_nearObjects findIf {typeOf _x isEqualTo _defibClassname});
         } else {
             _placedDefibrillator = _placedAED;
         };
@@ -51,7 +52,7 @@ switch (_source) do {
         [{ // Remove pads if patient gets too far
             params ["_medic", "_patient", "_provider"];
         
-            (_patient distance2D _provider) > GVAR(Defibrillator_DistanceLimit);
+            (_patient distance2D _provider) > GVAR(Defibrillator_DistanceLimit) || !((objectParent _medic) isEqualTo (objectParent _patient));
         }, {
             params ["_medic", "_patient", "_provider"];
         
@@ -102,33 +103,56 @@ switch (_source) do {
         [{ // Remove pads if patient gets too far
             params ["_medic", "_patient"];
         
-            (_patient distance2D _medic) > GVAR(Defibrillator_DistanceLimit);
+            (_patient distance2D _medic) > GVAR(Defibrillator_DistanceLimit) || !((objectParent _medic) isEqualTo (objectParent _patient));
         }, {
             params ["_medic", "_patient"];
-        
-            [_medic, _patient] call FUNC(Defibrillator_RemovePads);
-            [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+
+            if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                [_medic, _patient] call FUNC(Defibrillator_RemovePads);
+                [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+            };
         }, [_medic, _patient], 3600, {
             params ["_medic", "_patient"];
         
-            [_medic, _patient] call FUNC(Defibrillator_RemovePads);
-            [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+            if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                [_medic, _patient] call FUNC(Defibrillator_RemovePads);
+                [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+            };
         }] call CBA_fnc_waitUntilAndExecute;
     };
 };
 
 _patient setVariable [QGVAR(DefibrillatorPads_Connected), true, true];
 _patient setVariable [QGVAR(Defibrillator_Provider), [_provider, _source, _defibClassname], true];
-_patient setVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), (_provider getVariable [QGVAR(AED_X_VitalsMonitor_Volume), false]), true];
 
-[_patient, "activity", LSTRING(Activity_AttachPads), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
+if (_defibClassname isEqualTo "kat_X_AED") then {
+    if !((_patient getVariable ["kat_AEDXPatient_PFH", -1]) isEqualTo -1) then {
+        [(_patient getVariable "kat_AEDXPatient_PFH") select 0] call CBA_fnc_removePerFrameHandler;
+        [(_patient getVariable "kat_AEDXPatient_PFH") select 1] call CBA_fnc_removePerFrameHandler;
+        [(_patient getVariable "kat_AEDXPatient_PFH") select 2] call CBA_fnc_removePerFrameHandler;
+        [{
+            params ["_medic", "_patient", "_provider"];
 
-if (_defibClassname isEqualTo "kat_X_AED") exitWith {
-    [_medic, _patient, _provider] call FUNC(AEDX_VitalsMonitor);
+            [_medic, _patient, _provider] call FUNC(AEDX_VitalsMonitor);
+        }, [_medic, _patient, _provider], 0.5] call CBA_fnc_waitAndExecute;
+    } else {
+        [_medic, _patient, _provider] call FUNC(AEDX_VitalsMonitor);
+        _patient setVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), (_provider getVariable [QGVAR(AED_X_VitalsMonitor_Volume), false]), true];
+    };
 };
 
-[{ // Prompt to analyze after placing pads
-    params ["_soundSource"];
+if !(_noLog) then {
+    private _AEDType = LLSTRING(AED);
 
-    playsound3D [QPATHTOF_SOUND(sounds\pushanalyze.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
-}, [_soundSource], 1] call CBA_fnc_waitAndExecute;
+    if (_defibClassname isEqualTo "kat_X_AED") then {
+        _AEDType = LLSTRING(AED_X);
+    } else {
+        [{ // Prompt to analyze after placing pads (AED)
+            params ["_soundSource"];
+
+            playsound3D [QPATHTOF_SOUND(sounds\pushanalyze.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
+        }, [_soundSource], 1] call CBA_fnc_waitAndExecute;
+    };
+
+    [_patient, "activity", LSTRING(Activity_AttachPads), [[_medic, false, true] call ACEFUNC(common,getName), _AEDType]] call ACEFUNC(medical_treatment,addToLog);
+};

@@ -119,7 +119,7 @@ _unit setVariable [QACEGVAR(medical,bodyPartDamage), [0,0,0,0,0,0], true];
 
 // wakeup needs to be done after achieving stable vitals, but before manually reseting unconc var
 if (_unit getVariable ["ACE_isUnconscious", false]) then {
-    if (!([_unit] call ACEFUNC(medical_status,hasStableVitals))) then { ERROR_2("fullheal [unit %1][state %2] did not restore stable vitals",_unit,_state); };
+    if (!([_unit] call FUNC(hasStableVitals))) then { ERROR_2("fullheal [unit %1][state %2] did not restore stable vitals",_unit,_state); };
     TRACE_1("Waking up",_unit);
     [QACEGVAR(medical,WakeUp), _unit] call CBA_fnc_localEvent;
     _state = [_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState;

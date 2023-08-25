@@ -86,12 +86,17 @@
 
 #define ACEGVAR(module,var)         TRIPLES(ACE_PREFIX,module,var)
 #define QACEGVAR(module,var)        QUOTE(ACEGVAR(module,var))
+#define QQACEGVAR(module,var)       QUOTE(QACEGVAR(module,var))
 
 #define ACEFUNC(module,function)    TRIPLES(DOUBLES(ACE_PREFIX,module),fnc,function)
 #define QACEFUNC(module,function)   QUOTE(ACEFUNC(module,function))
 
 #define ACELSTRING(module,string)   QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,module),string))
+#define ACELLSTRING(module,string)  localize ACELSTRING(module,string)
 #define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))
+
+#define ACEPATHTOF(component,path) \z\ace\addons\component\path
+#define QACEPATHTOF(component,path) QUOTE(ACEPATHTOF(component,path))
 
 // Macros for checking if unit is in medical vehicle or facility
 // Defined mostly to make location check in canTreat more readable
@@ -125,6 +130,10 @@
 #define VAR_IN_PAIN           QACEGVAR(medical,inPain)
 #define VAR_TOURNIQUET        QACEGVAR(medical,tourniquets)
 #define VAR_FRACTURES         QACEGVAR(medical,fractures)
+
+#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
+#define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
+#define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
 
 // END ACE3 reference macros
 
@@ -202,3 +211,5 @@
 // Circulation
 #define VAR_INTERNAL_BLEEDING       QEGVAR(circulation,internalBleeding)
 #define GET_INTERNAL_BLEEDING(unit) (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
+
+#define GET_BLOOD_PRESSURE(unit)    ([unit] call ACEFUNC(medical_status,getBloodPressure))
