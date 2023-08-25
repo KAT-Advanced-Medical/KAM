@@ -211,3 +211,5 @@
 // Circulation
 #define VAR_INTERNAL_BLEEDING       QEGVAR(circulation,internalBleeding)
 #define GET_INTERNAL_BLEEDING(unit) (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
+
+#define GET_BLOOD_PRESSURE(unit)    ([unit] call ACEFUNC(medical_status,getBloodPressure))
