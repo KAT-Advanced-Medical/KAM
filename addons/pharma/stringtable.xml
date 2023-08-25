@@ -2860,8 +2860,5 @@
             <Portuguese>[KAM] Caixa de medicamentos</Portuguese>
             <Spanish>[KAM] Caja de medicina</Spanish>
         </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_cardiacArrestBleedRate">
-            <English>Cardiac Arrest Bleed Rate</English>
-        </Key>
     </Package>
 </Project>

@@ -1981,5 +1981,8 @@
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time">
             <English>AED-X Vitals Monitor BP Measurement Interval Time</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_cardiacArrestBleedRate">
+            <English>Cardiac Arrest Bleed Rate</English>
+        </Key>
     </Package>
 </Project>

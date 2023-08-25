@@ -581,13 +581,4 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(cardiacArrestBleedRate),
-    "SLIDER",
-    LLSTRING(SETTING_cardiacArrestBleedRate),
-    CBA_SETTINGS_CAT,
-    [0, 0.2, 0.05, 3],
-    true
-] call CBA_Settings_fnc_init;
-
 ADDON = true;
