@@ -29,32 +29,32 @@ _unit setVariable [QGVAR(GetOffActionID), [0xF1, [false, false, false], {
 [{
     params ["_carrier", "_unit"];
 
-	dialog || _carrier getVariable [QACEGVAR(dragging,carriedObject), objNull] isEqualTo objNull
+    dialog || _carrier getVariable [QACEGVAR(dragging,carriedObject), objNull] isEqualTo objNull
 }, {
-	params ["_carrier", "_unit"];
+    params ["_carrier", "_unit"];
 
     if !(_carrier getVariable [QACEGVAR(dragging,carriedObject), objNull] isEqualTo objNull) then {
         [format ["Stopped carrying %1", [(_this select 0), true] call ACEFUNC(common,getName)], 1.5, GVAR(Carrier)] call ACEFUNC(common,displayTextStructured);
-	    [QGVAR(dropObject_carryLocal), [GVAR(Carrier), (GVAR(Carrier) getVariable QACEGVAR(dragging,carriedObject))], GVAR(Carrier)] call CBA_fnc_targetEvent;
+        [QGVAR(dropObject_carryLocal), [GVAR(Carrier), (GVAR(Carrier) getVariable QACEGVAR(dragging,carriedObject))], GVAR(Carrier)] call CBA_fnc_targetEvent;
     };
 }, [_carrier, _unit], 3600, {}] call CBA_fnc_waitUntilAndExecute;
 
 [{
-	params ["_carrier"];
+    params ["_carrier"];
 
-	_carrier getVariable [QACEGVAR(dragging,carriedObject), objNull] isEqualTo objNull
+    _carrier getVariable [QACEGVAR(dragging,carriedObject), objNull] isEqualTo objNull
 }, {
-	params ["_carrier", "_unit"];
+    params ["_carrier", "_unit"];
 
-	[] call ACEFUNC(interaction,hideMouseHint);
-	GVAR(Carrier) = nil;
+    [] call ACEFUNC(interaction,hideMouseHint);
+    GVAR(Carrier) = nil;
     [_unit getVariable QGVAR(GetOffActionID), "keydown"] call CBA_fnc_removeKeyHandler;
-	_unit setVariable [QGVAR(GetOffActionID), nil];
+    _unit setVariable [QGVAR(GetOffActionID), nil];
 }, [_carrier, _unit], 3600, {
     params ["_carrier", "_unit"];
     
-	[] call ACEFUNC(interaction,hideMouseHint);
-	GVAR(Carrier) = nil;
+    [] call ACEFUNC(interaction,hideMouseHint);
+    GVAR(Carrier) = nil;
     [_unit getVariable QGVAR(GetOffActionID), "keydown"] call CBA_fnc_removeKeyHandler;
-	_unit setVariable [QGVAR(GetOffActionID), nil];
+    _unit setVariable [QGVAR(GetOffActionID), nil];
 }] call CBA_fnc_waitUntilAndExecute;
