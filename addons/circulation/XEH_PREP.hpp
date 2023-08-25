@@ -16,6 +16,7 @@ PREP(Defibrillator_AttachPads);
 PREP(Defibrillator_CheckCondition);
 PREP(AEDX_ConnectVitalsMonitor);
 PREP(AEDX_DisconnectVitalsMonitor);
+PREP(AEDX_ViewMonitor_AnalyzeFeedback);
 PREP(AEDX_ViewMonitor_Charging);
 PREP(AEDX_ViewMonitor_Condition);
 PREP(AEDX_ViewMonitor);
