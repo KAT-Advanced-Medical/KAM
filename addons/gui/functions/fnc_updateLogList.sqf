@@ -58,9 +58,18 @@ lbClear _ctrl;
                 _ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
             };
         };
-        if (_messageWOlocalization isEqualTo ELSTRING(circulation,VitalsMonitorInactive_StatusLog)) then {
+        if (_messageWOlocalization isEqualTo ELSTRING(circulation,VitalsMonitor_VMInactive_StatusLog)) then {
             if (((_arguments select 0) < 45 )
             || ((_arguments select 0) > 120 )) then {
+                _ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
+            };
+        };
+        if (_messageWOlocalization isEqualTo ELSTRING(circulation,VitalsMonitor_HRInactive_StatusLog)) then {
+            if (((_arguments select 0) < 50 )
+            || ((_arguments select 0) > 200 )
+            || ((_arguments select 1) < 60 )
+            || ((_arguments select 1) > 145 )
+            || ((_arguments select 2) < 75 )) then {
                 _ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
             };
         };

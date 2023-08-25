@@ -37,4 +37,4 @@ private _fnc_checkItems = {
 
 private _vehicleCondition = (vehicle _medic) != _medic && (vehicle _medic) isEqualTo (vehicle _patient);
 
-_medic call _fnc_checkItems || {ACEGVAR(medical_treatment,allowSharedEquipment) != 2 && {_patient call _fnc_checkItems}} || {_vehicleCondition && [(vehicle _medic),true] call _fnc_checkItems && (GVAR(allowSharedVehicleEquipment) in [1,3] || (GVAR(allowSharedVehicleEquipment) isEqualTo 2 && _patient != _medic))}
+_medic call _fnc_checkItems || {ACEGVAR(medical_treatment,allowSharedEquipment) != 2 && {_patient call _fnc_checkItems}} || {_vehicleCondition && [(vehicle _medic), true] call _fnc_checkItems && (GVAR(allowSharedVehicleEquipment) in [1,3,4] || (GVAR(allowSharedVehicleEquipment) isEqualTo 2 && _patient != _medic))}
