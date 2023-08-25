@@ -142,7 +142,6 @@
 #define GET_HEMORRHAGE(unit)        (unit getVariable [VAR_HEMORRHAGE, 0])
 #define GET_PAIN(unit)              (unit getVariable [VAR_PAIN, 0])
 #define GET_PAIN_SUPPRESS(unit)     (unit getVariable [VAR_PAIN_SUPP, 0])
-#define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
 #define GET_FRACTURES(unit)         (unit getVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES])
 #define IN_CRDC_ARRST(unit)         (unit getVariable [VAR_CRDC_ARRST, false])
 #define IS_BLEEDING(unit)           (GET_WOUND_BLEEDING(unit) > 0)
@@ -154,6 +153,9 @@
 #define GET_DAMAGE_THRESHOLD(unit)  (unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)])
 
 #define GET_PAIN_PERCEIVED(unit)    (0 max (GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1)
+
+#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
+#define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
 #define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
 
 // END ACE3 reference macros
