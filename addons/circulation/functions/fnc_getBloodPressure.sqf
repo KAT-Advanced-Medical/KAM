@@ -35,10 +35,10 @@ private _changeSystolic = 0;
 private _changeDiastolic = 0;
 
 if (count _BPChange > 0) then {
-	{
-		_changeSystolic = _changeSystolic + (_x select 0);
-		_changeDiastolic = _changeDiastolic + (_x select 1);
-	} forEach _BPChange;
+    {
+        _changeSystolic = _changeSystolic + (_x select 0);
+        _changeDiastolic = _changeDiastolic + (_x select 1);
+    } forEach _BPChange;
 };
 
 private _systolic = _bloodPressure * MODIFIER_BP_LOW;
