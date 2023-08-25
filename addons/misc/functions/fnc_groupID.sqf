@@ -11,7 +11,7 @@
  * 0: Groupname: unit class <STRING>
  *
  * Example:
- * [cursorTarget] call kat_circulation_fnc_groupID;
+ * [cursorTarget] call kat_misc_fnc_groupID;
  *
  * Public: No
  */

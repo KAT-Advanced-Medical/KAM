@@ -5,7 +5,6 @@ PREP(fluid);
 PREP(fluidLocal);
 PREP(getBloodLoss);
 PREP(getBloodVolumeChange);
-PREP(hasStableVitals);
 PREP(init);
 PREP(inspectBreath);
 PREP(inspectCatheter);

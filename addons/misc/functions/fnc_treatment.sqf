@@ -49,7 +49,7 @@ if (_treatmentTime == 0) exitWith {false};
 // Consume one of the treatment items if needed
 // Store item user so that used item can be returned on failure
 private _userAndItem = if (GET_NUMBER_ENTRY(_config >> "consumeItem") == 1) then {
-    [_medic, _patient, getArray (_config >> "items")] call EFUNC(misc,useItem);
+    [_medic, _patient, getArray (_config >> "items")] call FUNC(useItem);
 } else {
     [objNull, ""]; // Treatment does not require items to be consumed
 };

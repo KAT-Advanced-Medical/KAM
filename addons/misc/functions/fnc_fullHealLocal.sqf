@@ -74,10 +74,10 @@ _unit setVariable [QEGVAR(airway,recovery), false, true];
 _unit setVariable [QEGVAR(airway,overstretch), false, true];
 
 //KAT Breathing
-_unit setVariable [QGVAR(airwayStatus), 100, true];
-_unit setVariable [QGVAR(pneumothorax), false, true];
-_unit setVariable [QGVAR(hemopneumothorax), false, true];
-_unit setVariable [QGVAR(tensionpneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,airwayStatus), 100, true];
+_unit setVariable [QEGVAR(breathing,pneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,hemopneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,tensionpneumothorax), false, true];
 
 // KAT Circulation
 _unit setVariable [QEGVAR(circulation,cprCount), 2, true];
@@ -119,7 +119,7 @@ _unit setVariable [QACEGVAR(medical,bodyPartDamage), [0,0,0,0,0,0], true];
 
 // wakeup needs to be done after achieving stable vitals, but before manually reseting unconc var
 if (_unit getVariable ["ACE_isUnconscious", false]) then {
-    if (!([_unit] call ACEFUNC(medical_status,hasStableVitals))) then { ERROR_2("fullheal [unit %1][state %2] did not restore stable vitals",_unit,_state); };
+    if (!([_unit] call FUNC(hasStableVitals))) then { ERROR_2("fullheal [unit %1][state %2] did not restore stable vitals",_unit,_state); };
     TRACE_1("Waking up",_unit);
     [QACEGVAR(medical,WakeUp), _unit] call CBA_fnc_localEvent;
     _state = [_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState;

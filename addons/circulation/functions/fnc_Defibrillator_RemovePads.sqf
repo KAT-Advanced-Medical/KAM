@@ -43,15 +43,5 @@ _patient setVariable [QGVAR(Defibrillator_Charged), false, true];
 _patient setVariable [QGVAR(Defibrillator_ShockAmount), 0, true];
 
 if !(_noLog) then {
-    private _AEDType = LLSTRING(AED);
-
-    if (_defibClassname isEqualTo "kat_X_AED") then {
-        _AEDType = LLSTRING(AED_X);
-    };
-
-    [_patient, "activity", LSTRING(Activity_RemovePads), [[_medic, false, true] call ACEFUNC(common,getName), _AEDType]] call ACEFUNC(medical_treatment,addToLog);
-};
-
-if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
-    [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+    [_patient, "activity", LSTRING(Activity_RemovePads), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 };

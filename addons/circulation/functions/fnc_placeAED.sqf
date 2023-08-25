@@ -36,13 +36,15 @@ if (_AEDClassName == "kat_X_AED") then {
     private _patient = _unit getVariable [QGVAR(AED_X_MedicVitalsMonitor_Patient), objNull];
 
     if !(_patient isEqualTo objNull) then {
+        private _monitorBodyPart = (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), []]) select 2;
+
         [_unit, _patient, true] call FUNC(AEDX_DisconnectVitalsMonitor);
 
         [{
-            params ["_unit", "_patient", "_AEDClassName", "_AED"];
+            params ["_unit", "_patient", "_AEDClassName", "_AED", "_monitorBodyPart"];
 
-            [_unit, _patient, 1, [_AED], true] call FUNC(AEDX_ConnectVitalsMonitor);
-        }, [_unit, _patient, _AEDClassName, _AED], 0.1] call CBA_fnc_waitAndExecute; 
+            [_unit, _patient, _monitorBodyPart, 1, [_AED], true] call FUNC(AEDX_ConnectVitalsMonitor);
+        }, [_unit, _patient, _AEDClassName, _AED, _monitorBodyPart], 0.1] call CBA_fnc_waitAndExecute; 
     };
 };
 
@@ -86,13 +88,15 @@ _pickUpText,
         private _patientMonitor = _AED getVariable [QGVAR(AED_X_VitalsMonitor_Patient), objNull];
 
         if !(_patientMonitor isEqualTo objNull) then {
+            private _monitorBodyPart = (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), []]) select 2;
+
             [_medic, _patientMonitor, true] call FUNC(AEDX_DisconnectVitalsMonitor);
 
             [{
-                params ["_medic", "_patientMonitor"];
+                params ["_medic", "_patientMonitor", "_monitorBodyPart"];
 
-                [_medic, _patientMonitor, 0, [], true] call FUNC(AEDX_ConnectVitalsMonitor);
-            }, [_medic, _patientMonitor], 0.1] call CBA_fnc_waitAndExecute;  
+                [_medic, _patientMonitor, _monitorBodyPart, 0, [], true] call FUNC(AEDX_ConnectVitalsMonitor);
+            }, [_medic, _patientMonitor, _monitorBodyPart], 0.1] call CBA_fnc_waitAndExecute;  
         };
     };
 

@@ -6,21 +6,22 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Source <INT>
- * 3: Extra Arguments <ARRAY>
+ * 3: Body Part <STRING>
+ * 4: Source <INT>
+ * 5: Extra Arguments <ARRAY>
  *   0: Placed AED <OBJECT>
- * 4: Hide activity log <BOOL>
+ * 6: Hide activity log <BOOL>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject,  0, [], false] call kat_circulation_fnc_AEDX_ConnectVitalsMonitor;
+ * [player, cursorObject, "rightarm", 0, [], false] call kat_circulation_fnc_AEDX_ConnectVitalsMonitor;
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_source", ["_extraArgs",[]], ["_noLog", false]];
+params ["_medic", "_patient", "_bodyPart", "_source", ["_extraArgs",[]], ["_noLog", false]];
 _extraArgs params [["_placedAED",objNull]];
 
 private _provider = objNull;
@@ -57,12 +58,18 @@ switch (_source) do {
         
             if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
                 [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+                if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                    [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                };
             };
         }, [_medic, _patient, _placedDefibrillator], 3600, {
             params ["_medic", "_patient", "_provider"];
         
             if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
                 [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+                if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                    [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                };
             };
         }] call CBA_fnc_waitUntilAndExecute;
     };
@@ -95,27 +102,40 @@ switch (_source) do {
             (_patient distance2D _medic) > GVAR(Defibrillator_DistanceLimit) || !((objectParent _medic) isEqualTo (objectParent _patient));
         }, {
             params ["_medic", "_patient"];
-        
-            [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+
+            if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+                [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+                if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                    [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                };
+            };
         }, [_medic, _patient], 3600, {
             params ["_medic", "_patient"];
-        
-            [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+
+            if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+                [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+                if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                    [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                };
+            };
         }] call CBA_fnc_waitUntilAndExecute;
     };
 };
 
 _patient setVariable [QGVAR(AED_X_VitalsMonitor_Connected), true, true];
-_patient setVariable [QGVAR(AED_X_VitalsMonitor_Provider), [_provider, _source], true];
+_patient setVariable [QGVAR(AED_X_VitalsMonitor_Provider), [_provider, _source, (ALL_BODY_PARTS find toLower _bodyPart)], true];
 
 if !((_patient getVariable ["kat_AEDXPatient_PFH", -1]) isEqualTo -1) then {
     [(_patient getVariable "kat_AEDXPatient_PFH") select 0] call CBA_fnc_removePerFrameHandler;
     [(_patient getVariable "kat_AEDXPatient_PFH") select 1] call CBA_fnc_removePerFrameHandler;
+    [(_patient getVariable "kat_AEDXPatient_PFH") select 2] call CBA_fnc_removePerFrameHandler;
     [{
         params ["_medic", "_patient", "_provider"];
+
         [_medic, _patient, _provider] call FUNC(AEDX_VitalsMonitor);
     }, [_medic, _patient, _provider], 0.5] call CBA_fnc_waitAndExecute;
 } else {
+    [_medic, _patient, _provider] call FUNC(AEDX_VitalsMonitor);
     _patient setVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), (_provider getVariable [QGVAR(AED_X_VitalsMonitor_Volume), false]), true];
 };
 

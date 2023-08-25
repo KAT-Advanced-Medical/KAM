@@ -60,7 +60,26 @@
     count = COUNT; \
 }
 
-// ACE3 reference macros
+// Returns a text config entry as compiled code or variable from missionNamespace
+#define GET_FUNCTION(var,cfg) \
+    private var = getText (cfg); \
+    if (isNil var) then { \
+        var = compile var; \
+    } else { \
+        var = missionNamespace getVariable var; \
+    }
+
+// Returns a number config entry with default value of 0
+// If entry is a string, will get the variable from missionNamespace
+#define GET_NUMBER_ENTRY(cfg) \
+    if (isText (cfg)) then { \
+        missionNamespace getVariable [getText (cfg), 0]; \
+    } else { \
+        getNumber (cfg); \
+    }
+
+// BEGIN ACE3 reference macros
+
 #define ACE_PREFIX ace
 
 #define ACE_ADDON(component)        DOUBLES(ACE_PREFIX,component)
@@ -89,6 +108,34 @@
 #define TREATMENT_LOCATIONS_FACILITIES 2
 #define TREATMENT_LOCATIONS_VEHICLES_AND_FACILITIES 3
 #define TREATMENT_LOCATIONS_NONE 4
+
+// These variables get stored in object space and used across components
+// Defined here for easy consistency with GETVAR/SETVAR (also a list for reference)
+#define VAR_BLOOD_PRESS       QACEGVAR(medical,bloodPressure)
+#define VAR_BLOOD_VOL         QACEGVAR(medical,bloodVolume)
+#define VAR_WOUND_BLEEDING    QACEGVAR(medical,woundBleeding)
+#define VAR_CRDC_ARRST        QACEGVAR(medical,inCardiacArrest)
+#define VAR_HEART_RATE        QACEGVAR(medical,heartRate)
+#define VAR_PAIN              QACEGVAR(medical,pain)
+#define VAR_PAIN_SUPP         QACEGVAR(medical,painSuppress)
+#define VAR_PERIPH_RES        QACEGVAR(medical,peripheralResistance)
+#define VAR_UNCON             "ACE_isUnconscious"
+#define VAR_OPEN_WOUNDS       QACEGVAR(medical,openWounds)
+#define VAR_BANDAGED_WOUNDS   QACEGVAR(medical,bandagedWounds)
+#define VAR_STITCHED_WOUNDS   QACEGVAR(medical,stitchedWounds)
+// These variables track gradual adjustments (from medication, etc.)
+#define VAR_MEDICATIONS       QACEGVAR(medical,medications)
+// These variables track the current state of status values above
+#define VAR_HEMORRHAGE        QACEGVAR(medical,hemorrhage)
+#define VAR_IN_PAIN           QACEGVAR(medical,inPain)
+#define VAR_TOURNIQUET        QACEGVAR(medical,tourniquets)
+#define VAR_FRACTURES         QACEGVAR(medical,fractures)
+
+#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
+#define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
+#define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
+
+// END ACE3 reference macros
 
 // item types
 #define TYPE_DEFAULT 0
@@ -156,3 +203,13 @@
 #define QQPATHTOF_SOUND(var1) QUOTE(QPATHTOF_SOUND(var1))
 
 #include "script_debug.hpp"
+
+// Airway
+#define VAR_SPO2                    QEGVAR(breathing,airwayStatus)
+#define GET_SPO2(unit)              (unit getVariable [VAR_SPO2, 100])
+
+// Circulation
+#define VAR_INTERNAL_BLEEDING       QEGVAR(circulation,internalBleeding)
+#define GET_INTERNAL_BLEEDING(unit) (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
+
+#define GET_BLOOD_PRESSURE(unit)    ([unit] call ACEFUNC(medical_status,getBloodPressure))
