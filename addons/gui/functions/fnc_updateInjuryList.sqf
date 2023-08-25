@@ -168,10 +168,6 @@ if (_target getVariable [QEGVAR(airway,recovery), false]) then {
     _entries pushback [LELSTRING(airway,RecoveryPosition), [0.1, 1, 1, 1]];
 };
 
-if (_target getVariable [QGVAR(recovery), false]) then {
-    _entries pushback [LLSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
-};
-
 // Display cyanosis in overview tab, only when head/arms are selected
 if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
     private _spO2 = 0;

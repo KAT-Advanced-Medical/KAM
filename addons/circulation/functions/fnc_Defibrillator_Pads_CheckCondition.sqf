@@ -23,8 +23,8 @@
  * Public: No
  */
 
-params ["_medic", "_patient", ["_AEDOrigin",0], ["_AEDClassname", "kat_AED"], ["_extraArgs",[]]];
-_extraArgs params [["_placedAED",objNull]];
+params ["_medic", "_patient", ["_AEDOrigin", 0], ["_AEDClassname", "kat_AED"], ["_extraArgs", []]];
+_extraArgs params [["_placedAED", objNull]];
 
 private _condition = false;
 private _exit = false;

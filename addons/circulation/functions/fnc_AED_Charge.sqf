@@ -59,10 +59,11 @@ playsound3D [QPATHTOF_SOUND(sounds\charging.wav), _soundSource, false, getPosASL
 
             _patient setVariable [QGVAR(Defibrillator_Charged), false, true];
             [{ // Defibrillator disarmed
-                params ["_soundSource"];
+                params ["_patient", "_soundSource"];
 
                 playsound3D [QPATHTOF_SOUND(sounds\3beep.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
-            }, [_soundSource], 0.5] call CBA_fnc_waitAndExecute;
+                _patient setVariable [QGVAR(DefibrillatorInUse), false, true];
+            }, [_patient, _soundSource], 0.5] call CBA_fnc_waitAndExecute;
         }] call CBA_fnc_waitUntilAndExecute;
 
         [{ // Ready to shock, play alarm

@@ -508,6 +508,139 @@ class CfgVehicles {
                     statement = "[_player, _target, 'leg_r', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_treatment";
                 };
             };
+            class ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = CSTRING(CarryPatient);
+                    condition = QUOTE(_target getVariable [ARR_2('ACE_isUnconscious', false)] && {!(isNull (objectParent _target))} && {isNull (objectParent _player)});
+                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
+                    statement = QUOTE([ARR_2(_player, _target)] call FUNC(unloadAndCarryPatient));
+                    icon = QACEPATHTOF(dragging,UI\icons\person_carry.paa);
+                };
+            };
+        };
+    };
+
+    class LandVehicle;
+    class Car: LandVehicle {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = CSTRING(CarryPatient);
+                    condition = QUOTE(alive _target);
+                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
+                    statement = "";
+                    insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
+            };
+        };
+    };
+
+    class Car_F: Car {};
+    class Quadbike_01_base_F: Car_F {
+        class ACE_Actions: ACE_Actions {
+            class ACE_MainActions: ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = CSTRING(CarryPatient);
+                    condition = QUOTE(alive _target);
+                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
+                    statement = "";
+                    insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
+            };
+        };
+    };
+
+    class Kart_01_Base_F: Car_F {
+        class ACE_Actions: ACE_Actions {
+            class ACE_MainActions: ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = CSTRING(CarryPatient);
+                    condition = QUOTE(alive _target);
+                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
+                    statement = "";
+                    insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
+            };
+        };
+    };
+
+    class Tank: LandVehicle {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = CSTRING(CarryPatient);
+                    condition = QUOTE(alive _target);
+                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
+                    statement = "";
+                    insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
+            };
+        };
+    };
+
+    class Motorcycle: LandVehicle {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = CSTRING(CarryPatient);
+                    condition = QUOTE(alive _target);
+                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
+                    statement = "";
+                    insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
+            };
+        };
+    };
+
+    class Air;
+    class Helicopter: Air {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = CSTRING(CarryPatient);
+                    condition = QUOTE(alive _target);
+                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
+                    statement = "";
+                    insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
+            };
+        };
+    };
+
+    class Plane: Air {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = CSTRING(CarryPatient);
+                    condition = QUOTE(alive _target);
+                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
+                    statement = "";
+                    insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
+            };
+        };
+    };
+
+    class Ship;
+    class Ship_F: Ship {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = CSTRING(CarryPatient);
+                    condition = QUOTE(alive _target);
+                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
+                    statement = "";
+                    insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
+                    icon = QACEPATHTOF(dragging,UI\icons\person_carry.paa);
+                };
+            };
         };
     };
 };
