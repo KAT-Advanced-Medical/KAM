@@ -40,6 +40,15 @@ class CfgWeapons {
             mass = 0.1;
         }; 
     };
+    class kat_PenthroxItem: ACE_ItemCore {
+        scope = 2; //This item is not actually used and it is replaced by ace_common_fnc_registerItemReplacement 
+        author = "Blue";
+        displayName = CSTRING(Penthrox_Display);
+        picture = QPATHTOF(ui\icon_penthrox.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
     class kat_IV_16: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(IV_16_Display);
