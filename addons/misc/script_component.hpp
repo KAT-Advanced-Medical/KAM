@@ -16,3 +16,341 @@
 
 #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 #include "\x\kat\addons\main\script_macros.hpp"
+
+// -- IFAK STUFF --
+//1 Slot left
+#define SlotsLeft_1D_Min 1
+        #define Slot_1 1
+        #define Slot_2 2
+        #define Slot_3 3
+        #define Slot_4 4
+        #define Slot_5 5
+        #define Slot_6 6
+        #define Slot_7 7
+        #define Slot_8 8
+#define SlotsLeft_1D_Max 8
+
+//2 Slots left
+#define SlotsLeft_2D_Min 9
+    #define SlotsLeft_2D_1Min 9
+        #define Slot_1_2 9
+        #define Slot_1_3 10
+        #define Slot_1_4 11
+        #define Slot_1_5 12
+        #define Slot_1_6 13
+        #define Slot_1_7 14
+        #define Slot_1_8 15
+    #define SlotsLeft_2D_1Max 15
+    #define SlotsLeft_2D_2Min 16
+        #define Slot_2_3 16
+        #define Slot_2_4 17
+        #define Slot_2_5 18
+        #define Slot_2_6 19
+        #define Slot_2_7 20
+        #define Slot_2_8 21
+    #define SlotsLeft_2D_2Max 21
+    #define SlotsLeft_2D_3Min 22
+        #define Slot_3_4 22
+        #define Slot_3_5 23
+        #define Slot_3_6 24
+        #define Slot_3_7 25
+        #define Slot_3_8 26
+    #define SlotsLeft_2D_3Max 26
+    #define SlotsLeft_2D_4Min 27
+        #define Slot_4_5 27
+        #define Slot_4_6 28
+        #define Slot_4_7 29
+        #define Slot_4_8 30
+    #define SlotsLeft_2D_4Max 30
+    #define SlotsLeft_2D_5Min 31
+        #define Slot_5_6 31
+        #define Slot_5_7 32
+        #define Slot_5_8 33
+    #define SlotsLeft_2D_5Max 33
+    #define SlotsLeft_2D_6Min 34
+        #define Slot_6_7 34
+        #define Slot_6_8 35
+        #define Slot_7_8 36
+    #define SlotsLeft_2D_6Max 36
+#define SlotsLeft_2D_Max 36
+
+//3 slots left
+#define SlotsLeft_3D_Min 37
+    #define SlotsLeft_3D_1Min 37
+        #define Slot_1_2_3 37
+        #define Slot_1_2_4 38
+        #define Slot_1_2_5 39
+        #define Slot_1_2_6 40
+        #define Slot_1_2_7 41
+        #define Slot_1_2_8 42
+        #define Slot_1_3_4 43
+        #define Slot_1_3_5 44
+        #define Slot_1_3_6 45
+        #define Slot_1_3_7 46
+        #define Slot_1_3_8 47
+        #define Slot_1_4_5 48
+        #define Slot_1_4_6 49
+        #define Slot_1_4_7 50
+        #define Slot_1_4_8 51
+        #define Slot_1_5_6 52
+        #define Slot_1_5_7 53
+        #define Slot_1_5_8 54
+        #define Slot_1_6_7 55
+        #define Slot_1_6_8 56
+        #define Slot_1_7_8 57
+    #define SlotsLeft_3D_1Max 57
+    #define SlotsLeft_3D_2Min 58
+        #define Slot_2_3_4 58
+        #define Slot_2_3_5 59
+        #define Slot_2_3_6 60
+        #define Slot_2_3_7 61
+        #define Slot_2_3_8 62
+        #define Slot_2_4_5 63
+        #define Slot_2_4_6 64
+        #define Slot_2_4_7 65
+        #define Slot_2_4_8 66
+        #define Slot_2_5_6 67
+        #define Slot_2_5_7 68
+        #define Slot_2_5_8 69
+        #define Slot_2_6_7 70
+        #define Slot_2_6_8 71
+        #define Slot_2_7_8 72
+    #define SlotsLeft_3D_2Max 72
+    #define SlotsLeft_3D_3Min 73
+        #define Slot_3_4_5 73
+        #define Slot_3_4_6 74
+        #define Slot_3_4_7 75
+        #define Slot_3_4_8 76
+        #define Slot_3_5_6 77
+        #define Slot_3_5_7 78
+        #define Slot_3_5_8 79
+        #define Slot_3_6_7 80
+        #define Slot_3_6_8 81
+        #define Slot_3_7_8 82
+    #define SlotsLeft_3D_3Max 82
+    #define SlotsLeft_3D_4Min 83
+        #define Slot_4_5_6 83
+        #define Slot_4_5_7 84
+        #define Slot_4_5_8 85
+        #define Slot_4_6_7 86
+        #define Slot_4_6_8 87
+        #define Slot_4_7_8 88
+    #define SlotsLeft_3D_4Max 88
+    #define SlotsLeft_3D_5Min 89
+        #define Slot_5_6_7 89
+        #define Slot_5_6_8 90
+        #define Slot_5_7_8 91
+    #define SlotsLeft_3D_5Max 91
+    #define SlotsLeft_3D_6Min 92
+        #define Slot_6_7_8 92
+    #define SlotsLeft_3D_6Max 92
+#define SlotsLeft_3D_Max 92
+
+//4 slots left
+#define SlotsLeft_4D_Min 93
+    #define SlotsLeft_4D_1Min 93
+        #define Slot_1_2_3_4 93
+        #define Slot_1_2_3_5 94
+        #define Slot_1_2_3_6 95
+        #define Slot_1_2_3_7 96
+        #define Slot_1_2_3_8 97
+        #define Slot_1_2_4_5 98
+        #define Slot_1_2_4_6 99
+        #define Slot_1_2_4_7 100
+        #define Slot_1_2_4_8 101
+        #define Slot_1_2_5_6 102
+        #define Slot_1_2_5_7 103
+        #define Slot_1_2_5_8 104
+        #define Slot_1_2_6_7 105
+        #define Slot_1_2_6_8 106
+        #define Slot_1_2_7_8 107
+        #define Slot_1_3_4_5 108
+        #define Slot_1_3_4_6 109
+        #define Slot_1_3_4_7 110
+        #define Slot_1_3_4_8 111
+        #define Slot_1_3_5_6 112
+        #define Slot_1_3_5_7 113
+        #define Slot_1_3_5_8 114
+        #define Slot_1_3_6_7 115
+        #define Slot_1_3_6_8 116
+        #define Slot_1_3_7_8 117
+        #define Slot_1_4_5_6 118
+        #define Slot_1_4_5_7 119
+        #define Slot_1_4_5_8 120
+        #define Slot_1_4_6_7 121
+        #define Slot_1_4_6_8 122
+        #define Slot_1_4_7_8 123
+        #define Slot_1_5_6_7 124
+        #define Slot_1_5_6_8 125
+        #define Slot_1_5_7_8 126
+        #define Slot_1_6_7_8 127
+    #define SlotsLeft_4D_1Max 127
+    #define SlotsLeft_4D_2Min 128
+        #define Slot_2_3_4_5 128
+        #define Slot_2_3_4_6 129
+        #define Slot_2_3_4_7 130
+        #define Slot_2_3_4_8 131
+        #define Slot_2_3_5_6 132
+        #define Slot_2_3_5_7 133
+        #define Slot_2_3_5_8 134
+        #define Slot_2_3_6_7 135
+        #define Slot_2_3_6_8 136
+        #define Slot_2_3_7_8 137
+        #define Slot_2_4_5_6 138
+        #define Slot_2_4_5_7 139
+        #define Slot_2_4_5_8 140
+        #define Slot_2_4_6_7 141
+        #define Slot_2_4_6_8 142
+        #define Slot_2_4_7_8 143
+        #define Slot_2_5_6_7 144
+        #define Slot_2_5_6_8 145
+        #define Slot_2_5_7_8 146
+        #define Slot_2_6_7_8 147
+    #define SlotsLeft_4D_2Max 147
+    #define SlotsLeft_4D_3Min 148
+        #define Slot_3_4_5_6 148
+        #define Slot_3_4_5_7 149
+        #define Slot_3_4_5_8 150
+        #define Slot_3_4_6_7 151
+        #define Slot_3_4_6_8 152
+        #define Slot_3_4_7_8 153
+        #define Slot_3_5_6_7 154
+        #define Slot_3_5_6_8 155
+        #define Slot_3_5_7_8 156
+        #define Slot_3_6_7_8 157
+    #define SlotsLeft_4D_3Max 157
+    #define SlotsLeft_4D_4Min 158
+        #define Slot_4_5_6_7 158
+        #define Slot_4_5_6_8 159
+        #define Slot_4_5_7_8 160
+        #define Slot_4_6_7_8 161
+    #define SlotsLeft_4D_4Max 161
+    #define SlotsLeft_4D_5Min 162
+        #define Slot_5_6_7_8 162
+    #define SlotsLeft_4D_5Max 162
+#define SlotsLeft_4D_Max 162
+
+//5 slots left
+#define SlotsLeft_5D_Min 163
+    #define SlotsLeft_5D_1Min 163
+        #define Slot_1_2_3_4_5 163
+        #define Slot_1_2_3_4_6 164
+        #define Slot_1_2_3_4_7 165
+        #define Slot_1_2_3_4_8 166
+        #define Slot_1_2_3_5_6 167
+        #define Slot_1_2_3_5_7 168
+        #define Slot_1_2_3_5_8 169
+        #define Slot_1_2_3_6_7 170
+        #define Slot_1_2_3_6_8 171
+        #define Slot_1_2_3_7_8 172
+        #define Slot_1_2_4_5_6 173
+        #define Slot_1_2_4_5_7 174
+        #define Slot_1_2_4_5_8 175
+        #define Slot_1_2_4_6_7 176
+        #define Slot_1_2_4_6_8 177
+        #define Slot_1_2_4_7_8 178
+        #define Slot_1_2_5_6_7 179
+        #define Slot_1_2_5_6_8 180
+        #define Slot_1_2_5_7_8 181
+        #define Slot_1_2_6_7_8 182
+        #define Slot_1_3_4_5_6 183
+        #define Slot_1_3_4_5_7 184
+        #define Slot_1_3_4_5_8 185
+        #define Slot_1_3_4_6_7 186
+        #define Slot_1_3_4_6_8 187
+        #define Slot_1_3_4_7_8 188
+        #define Slot_1_3_5_6_7 189
+        #define Slot_1_3_5_6_8 190
+        #define Slot_1_3_5_7_8 191
+        #define Slot_1_3_6_7_8 192
+        #define Slot_1_4_5_6_7 193
+        #define Slot_1_4_5_6_8 194
+        #define Slot_1_4_5_7_8 195
+        #define Slot_1_4_6_7_8 196
+        #define Slot_1_5_6_7_8 197
+    #define SlotsLeft_5D_1Max 197
+    #define SlotsLeft_5D_2Min 198
+        #define Slot_2_3_4_5_6 198
+        #define Slot_2_3_4_5_7 199
+        #define Slot_2_3_4_5_8 200
+        #define Slot_2_3_4_6_7 201
+        #define Slot_2_3_4_6_8 202
+        #define Slot_2_3_4_7_8 203
+        #define Slot_2_3_5_6_7 204
+        #define Slot_2_3_5_6_8 205
+        #define Slot_2_3_5_7_8 206
+        #define Slot_2_3_6_7_8 207
+        #define Slot_2_4_5_6_7 208
+        #define Slot_2_4_5_6_8 209
+        #define Slot_2_4_5_7_8 210
+        #define Slot_2_4_6_7_8 211
+        #define Slot_2_5_6_7_8 212
+    #define SlotsLeft_5D_2Max 212
+    #define SlotsLeft_5D_3Min 213
+        #define Slot_3_4_5_6_7 213
+        #define Slot_3_4_5_6_8 214
+        #define Slot_3_4_5_7_8 215
+        #define Slot_3_4_6_7_8 216
+        #define Slot_3_5_6_7_8 217
+    #define SlotsLeft_5D_3Max 217
+    #define SlotsLeft_5D_4Min 218
+        #define Slot_4_5_6_7_8 218
+    #define SlotsLeft_5D_4Max 218
+#define SlotsLeft_5D_Max 218
+
+//6 slots left
+#define SlotsLeft_6D_Min 219
+    #define SlotsLeft_6D_1Min 219
+        #define Slot_1_2_3_4_5_6 219
+        #define Slot_1_2_3_4_5_7 220
+        #define Slot_1_2_3_4_5_8 221
+        #define Slot_1_2_3_4_6_7 222
+        #define Slot_1_2_3_4_6_8 223
+        #define Slot_1_2_3_4_7_8 224
+        #define Slot_1_2_3_5_6_7 225
+        #define Slot_1_2_3_5_6_8 226
+        #define Slot_1_2_3_5_7_8 227
+        #define Slot_1_2_3_6_7_8 228
+        #define Slot_1_2_4_5_6_7 229
+        #define Slot_1_2_4_5_6_8 230
+        #define Slot_1_2_4_5_7_8 231
+        #define Slot_1_2_4_6_7_8 232
+        #define Slot_1_2_5_6_7_8 233
+        #define Slot_1_3_4_5_6_7 234
+        #define Slot_1_3_4_5_6_8 235
+        #define Slot_1_3_4_5_7_8 236
+        #define Slot_1_3_4_6_7_8 237
+        #define Slot_1_3_5_6_7_8 238
+        #define Slot_1_4_5_6_7_8 239
+    #define SlotsLeft_6D_1Max 239
+    #define SlotsLeft_6D_2Min 240
+        #define Slot_2_3_4_5_6_7 240
+        #define Slot_2_3_4_5_6_8 241
+        #define Slot_2_3_4_5_7_8 242
+        #define Slot_2_3_4_6_7_8 243
+        #define Slot_2_3_5_6_7_8 244
+        #define Slot_2_4_5_6_7_8 245
+    #define SlotsLeft_6D_2Max 245
+    #define SlotsLeft_6D_3Min 246
+        #define Slot_3_4_5_6_7_8 246
+    #define SlotsLeft_6D_3Max 246
+#define SlotsLeft_6D_Max 246
+
+//7 slots left
+#define SlotsLeft_7D_Min 247
+    #define SlotsLeft_7D_1Min 247
+        #define Slot_1_2_3_4_5_6_7 247
+        #define Slot_1_2_3_4_5_6_8 248
+        #define Slot_1_2_3_4_5_7_8 249
+        #define Slot_1_2_3_4_6_7_8 250
+        #define Slot_1_2_3_5_6_7_8 251
+        #define Slot_1_2_4_5_6_7_8 252
+        #define Slot_1_3_4_5_6_7_8 253
+    #define SlotsLeft_7D_1Max 253
+    #define SlotsLeft_7D_2Min 254
+        #define Slot_2_3_4_5_6_7_8 254
+    #define SlotsLeft_7D_2Max 254
+#define SlotsLeft_7D_Max 254
+
+//All Slots left
+        #define Slot_1_2_3_4_5_6_7_8 255

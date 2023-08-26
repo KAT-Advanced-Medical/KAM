@@ -10,6 +10,7 @@ PREP(BubbleWrap);
 PREP(canCheckDogtag);
 PREP(canTreat);
 PREP(checkArmbandCondition);
+PREP(checkFAKSlot);
 PREP(conditionIV);
 PREP(conditionIVstand);
 PREP(fullHealLocal);
