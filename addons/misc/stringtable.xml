@@ -862,6 +862,9 @@
             <Italian>Toppa per gruppo sanguigno AB-</Italian>
             <Spanish>Parche de grupo sanguíneo AB-</Spanish>
         </Key>
+        <Key ID="STR_KAT_Misc_CarryPatient">
+            <English>Carry Patient</English>
+        </Key>    
         <Key ID="STR_KAT_Misc_SubCategory_IFAK">
             <English>(IFAK) Individual First Aid Kit</English>
             <German>(IEHK) Individuelles Erste Hilfe Kit</German>

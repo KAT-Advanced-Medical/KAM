@@ -1,10 +1,8 @@
 PREP(checkAirway);
 PREP(checkRecovery);
-PREP(displayPatientInformation);
 PREP(handleAirway);
 PREP(handlePuking);
 PREP(init);
-PREP(setUnconscious);
 PREP(treatmentAdvanced_Accuvac);
 PREP(treatmentAdvanced_AccuvacLocal);
 PREP(treatmentAdvanced_airway);
@@ -17,5 +15,3 @@ PREP(treatmentAdvanced_RecoveryPositionLocal);
 PREP(treatmentAdvanced_RemoveAirwayItem);
 PREP(treatmentAdvanced_RemoveAirwayItemLocal);
 PREP(treatmentAdvanced_turnaroundHead);
-PREP(updateInjuryList);
-PREP(updateLogList);

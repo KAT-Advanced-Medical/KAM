@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam, modified by YetheSamartaka, Blue
+ * Author: Katalam
+ * Modified: YetheSamartaka, Blue
  * Reports a blood type depending on the unit. If the unit is AI and it does not have blood type yet assigned
  * it will randomly assign it thus saving setting unnecessary variable.
  *

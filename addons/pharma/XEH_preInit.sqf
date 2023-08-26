@@ -58,7 +58,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(medLvl_ApplyIV),
     "LIST",
-    [LLSTRING(medLvl_ApplyIV), LLSTRING(medlLvl_ApplyIV_Desc)],
+    [LLSTRING(medLvl_ApplyIV), LLSTRING(medLvl_ApplyIV_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
     true
@@ -67,7 +67,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(treatmentTime_ApplyIV),
     "SLIDER",
-    [LLSTRING(treatmentTime_ApplyIV), LLSTRING(treatment_ApplyIV_Desc)],
+    [LLSTRING(treatmentTime_ApplyIV)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
     [0.1, 10, 7, 1],
     true
@@ -86,7 +86,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(medLvl_ApplyIO),
     "LIST",
-    [LLSTRING(medLvl_ApplyIO), LLSTRING(medlLvl_ApplyIO_Desc)],
+    [LLSTRING(medLvl_ApplyIO), LLSTRING(medLvl_ApplyIO_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIO)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
     true
@@ -95,7 +95,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(treatmentTime_ApplyIO),
     "SLIDER",
-    [LLSTRING(treatmentTime_ApplyIO), LLSTRING(treatmentTime_ApplyIO_Desc)],
+    [LLSTRING(treatmentTime_ApplyIO)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIO)],
     [0.1, 10, 7, 1],
     true
@@ -114,7 +114,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(medLvl_Reorientation),
     "LIST",
-    [LLSTRING(SETTING_Allow_Reorientation),LLSTRING(Allow_Reorientation_DESC)],
+    [LLSTRING(SETTING_Allow_Reorientation),LLSTRING(SETTING_Allow_Reorientation_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Reorientation)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
     true
@@ -551,6 +551,25 @@ PREP_RECOMPILE_END;
     [LLSTRING(treatmentTime_Nalbuphine)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nalbuphine)],
     [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Penthrox Settings Category
+[
+    QGVAR(medLvl_Penthrox),
+    "LIST",
+    [LLSTRING(SETTING_medLvl_Penthrox)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Penthrox)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_Penthrox),
+    "SLIDER",
+    [LLSTRING(SETTING_treatmentTime_Penthrox)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Penthrox)],
+    [0.1, 10, 8, 1],
     true
 ] call CBA_Settings_fnc_init;
 
