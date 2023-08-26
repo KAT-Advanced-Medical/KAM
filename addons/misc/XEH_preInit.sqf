@@ -147,6 +147,16 @@ PREP_RECOMPILE_END;
     2
 ] call CBA_Settings_fnc_init;
 
+//IFAK Container
+[
+    QGVAR(IFAK_Container),
+    "LIST",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [[0, 1, 2], [LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 2],
+    2
+] call CBA_fnc_addSetting;
+
 //IFAK First Slot Item
 [
     QGVAR(IFAKFirstSlotItem),
@@ -331,6 +341,16 @@ PREP_RECOMPILE_END;
     }
 ] call CBA_Settings_fnc_init;
 
+//AFAK Container
+[
+    QGVAR(AFAK_Container),
+    "LIST",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [[0, 1, 2], [LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 2],
+    2
+] call CBA_fnc_addSetting;
+
 //AFAK First Slot Item
 [
     QGVAR(AFAKFirstSlotItem),
@@ -338,7 +358,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_FirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     "ACE_tourniquet",
-    1
+    1,
+    {
+        private _array = [_this, ","" ", false] call FUNC(stringToArray);
+        private _amount = missionNamespace getVariable [QGVAR(AFAKFirstSlotAmount), []];
+        {
+            _array set [_forEachIndex, [_x,_amount]]; 
+        } forEach _array;
+        missionNamespace setVariable [QGVAR(AFAKFirstSlotItem), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //AFAK First Slot Amount
@@ -347,8 +375,26 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_FirstSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 30, 2, 0],
-    true
+    [1, 20, 2, 0],
+    1,
+    {
+        [
+            QGVAR(AFAKFirstSlotItem),
+            "EDITBOX",
+            [LLSTRING(SETTING_FirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+            [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+            "ACE_tourniquet",
+            1,
+            {
+                private _array = [_this, ","" ", false] call FUNC(stringToArray);
+                private _amount = missionNamespace getVariable [QGVAR(AFAKFirstSlotAmount), []];
+                {
+                    _array set [_forEachIndex, [_x,_amount]]; 
+                } forEach _array;
+                missionNamespace setVariable [QGVAR(AFAKFirstSlotItem), _array, true];
+            }
+        ] call CBA_Settings_fnc_init;
+    }
 ] call CBA_Settings_fnc_init;
 
 //AFAK Second Slot Item
@@ -358,7 +404,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     "ACE_packingBandage",
-    1
+    1,
+    {
+        private _array = [_this, ","" ", false] call FUNC(stringToArray);
+        private _amount = missionNamespace getVariable [QGVAR(AFAKSecondSlotAmount), []];
+        {
+            _array set [_forEachIndex, [_x,_amount]]; 
+        } forEach _array;
+        missionNamespace setVariable [QGVAR(AFAKSecondSlotItem), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //AFAK Second Slot Amount
@@ -367,8 +421,26 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_SecondSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 30, 10, 0],
-    true
+    [1, 20, 10, 0],
+    1,
+    {
+        [
+            QGVAR(AFAKSecondSlotItem),
+            "EDITBOX",
+            [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+            [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+            "ACE_packingBandage",
+            1,
+            {
+                private _array = [_this, ","" ", false] call FUNC(stringToArray);
+                private _amount = missionNamespace getVariable [QGVAR(AFAKSecondSlotAmount), []];
+                {
+                    _array set [_forEachIndex, [_x,_amount]]; 
+                } forEach _array;
+                missionNamespace setVariable [QGVAR(AFAKSecondSlotItem), _array, true];
+            }
+        ] call CBA_Settings_fnc_init;
+    }
 ] call CBA_Settings_fnc_init;
 
 //AFAK Third Slot Item
@@ -378,7 +450,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     "ACE_quikclot",
-    1
+    1,
+    {
+        private _array = [_this, ","" ", false] call FUNC(stringToArray);
+        private _amount = missionNamespace getVariable [QGVAR(AFAKThirdSlotAmount), []];
+        {
+            _array set [_forEachIndex, [_x,_amount]]; 
+        } forEach _array;
+        missionNamespace setVariable [QGVAR(AFAKThirdtSlotItem), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //AFAK Third Slot Amount
@@ -387,8 +467,26 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_ThirdSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 30, 10, 0],
-    true
+    [1, 20, 5, 0],
+    1,
+    {
+        [
+            QGVAR(AFAKThirdtSlotItem),
+            "EDITBOX",
+            [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+            [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+            "ACE_quikclot",
+            1,
+            {
+                private _array = [_this, ","" ", false] call FUNC(stringToArray);
+                private _amount = missionNamespace getVariable [QGVAR(AFAKThirdSlotAmount), []];
+                {
+                    _array set [_forEachIndex, [_x,_amount]]; 
+                } forEach _array;
+                missionNamespace setVariable [QGVAR(AFAKThirdtSlotItem), _array, true];
+            }
+        ] call CBA_Settings_fnc_init;
+    }
 ] call CBA_Settings_fnc_init;
 
 //AFAK Fourth Item
@@ -397,18 +495,44 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "ACE_elasticBandage",
-    1
+    "kat_chestSeal",
+    1,
+    {
+        private _array = [_this, ","" ", false] call FUNC(stringToArray);
+        private _amount = missionNamespace getVariable [QGVAR(AFAKFourthSlotAmount), []];
+        {
+            _array set [_forEachIndex, [_x,_amount]]; 
+        } forEach _array;
+        missionNamespace setVariable [QGVAR(AFAKFourthSlotItem), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
-//AFAK Fourth Amount
+// AFAK Fourth Amount
 [
     QGVAR(AFAKFourthSlotAmount),
     "SLIDER",
     [LLSTRING(SETTING_FourthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 30, 10, 0],
-    true
+    [1, 20, 1, 0],
+    1,
+    {
+        [
+            QGVAR(AFAKFourthSlotItem),
+            "EDITBOX",
+            [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+            [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+            "kat_chestSeal",
+            1,
+            {
+                private _array = [_this, ","" ", false] call FUNC(stringToArray);
+                private _amount = missionNamespace getVariable [QGVAR(AFAKFourthSlotAmount), []];
+                {
+                    _array set [_forEachIndex, [_x,_amount]]; 
+                } forEach _array;
+                missionNamespace setVariable [QGVAR(AFAKFourthSlotItem), _array, true];
+            }
+        ] call CBA_Settings_fnc_init;
+    }
 ] call CBA_Settings_fnc_init;
 
 //AFAK Fifth Item
@@ -418,7 +542,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_FifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     "kat_chestSeal",
-    1
+    1,
+    {
+        private _array = [_this, ","" ", false] call FUNC(stringToArray);
+        private _amount = missionNamespace getVariable [QGVAR(AFAKFifthSlotAmount), []];
+        {
+            _array set [_forEachIndex, [_x,_amount]]; 
+        } forEach _array;
+        missionNamespace setVariable [QGVAR(AFAKFifthSlotItem), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //AFAK Fifth Amount
@@ -428,7 +560,25 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_FifthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     [1, 30, 2, 0],
-    true
+    1,
+    {
+        [
+            QGVAR(AFAKFifthSlotItem),
+            "EDITBOX",
+            [LLSTRING(SETTING_FifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+            [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+            "kat_chestSeal",
+            1,
+            {
+                private _array = [_this, ","" ", false] call FUNC(stringToArray);
+                private _amount = missionNamespace getVariable [QGVAR(AFAKFifthSlotAmount), []];
+                {
+                    _array set [_forEachIndex, [_x,_amount]]; 
+                } forEach _array;
+                missionNamespace setVariable [QGVAR(AFAKFifthSlotItem), _array, true];
+            }
+        ] call CBA_Settings_fnc_init;
+    }
 ] call CBA_Settings_fnc_init;
 
 //AFAK Sixth Item
@@ -438,7 +588,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     "kat_ncdKit",
-    1
+    1,
+    {
+        private _array = [_this, ","" ", false] call FUNC(stringToArray);
+        private _amount = missionNamespace getVariable [QGVAR(AFAKSixthSlotAmount), []];
+        {
+            _array set [_forEachIndex, [_x,_amount]]; 
+        } forEach _array;
+        missionNamespace setVariable [QGVAR(AFAKSixthSlotItem), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //AFAK Sixth Amount
@@ -448,48 +606,36 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_SixthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     [1, 30, 4, 0],
-    true
+    1,
+    {
+        [
+            QGVAR(AFAKSixthSlotItem),
+            "EDITBOX",
+            [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+            [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+            "kat_ncdKit",
+            1,
+            {
+                private _array = [_this, ","" ", false] call FUNC(stringToArray);
+                private _amount = missionNamespace getVariable [QGVAR(AFAKSixthSlotAmount), []];
+                {
+                    _array set [_forEachIndex, [_x,_amount]]; 
+                } forEach _array;
+                missionNamespace setVariable [QGVAR(AFAKSixthSlotItem), _array, true];
+            }
+        ] call CBA_Settings_fnc_init;
+    }
 ] call CBA_Settings_fnc_init;
 
-//AFAK Seventh Item
+//MFAK Container
 [
-    QGVAR(AFAKSeventhSlotItem),
-    "EDITBOX",
-    [LLSTRING(SETTING_SeventhSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "kat_larynx",
-    1
-] call CBA_Settings_fnc_init;
-
-//AFAK Seventh Amount
-[
-    QGVAR(AFAKSeventhSlotAmount),
-    "SLIDER",
-    [LLSTRING(SETTING_SeventhSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 30, 4, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-//AFAK Eighth Item
-[
-    QGVAR(AFAKEighthSlotItem),
-    "EDITBOX",
-    [LLSTRING(SETTING_EighthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "ACE_morphine",
-    1
-] call CBA_Settings_fnc_init;
-
-//AFAK Eighth Amount
-[
-    QGVAR(AFAKEighthSlotAmount),
-    "SLIDER",
-    [LLSTRING(SETTING_EighthSlot_Amount), LLSTRING(SETTING_ItemAmount_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [1, 30, 4, 0],
-    true
-] call CBA_Settings_fnc_init;
+    QGVAR(MFAK_Container),
+    "LIST",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    [[0, 1, 2], [LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 2],
+    2
+] call CBA_fnc_addSetting;
 
 //MFAK First Slot Item
 [

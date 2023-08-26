@@ -874,6 +874,26 @@
             <English>(AFAK) Advanced First Aid Kit</English>
             <German>(EEHK) Erweitertes Erste Hilfe Kit</German>
         </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FAK_Container">
+            <English>Items unload Container</English>
+            <German>Gegenstands entlade Bereich</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FAK_Container_DESC">
+            <English>Defines where the items from the First Aid Kit are added into.\n If there is no space left they will be dropped on the ground.</English>
+            <German>Definiert wo die Gegenstände des Erste Hilfe Kits hinzufugefügt werden.\n Sofern kein Platz vorhanden ist wird es auf den Boden hingelegt.</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_Container_Uniform">
+            <English>Uniform</English>
+            <German>Uniform</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_Container_Vest">
+            <English>Vest</English>
+            <German>Weste</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_Container_Backpack">
+            <English>Backpack</English>
+            <German>Rucksack</German>
+        </Key>
         <Key ID="STR_KAT_Misc_SETTING_ItemSlot_DESC">
             <English>The Item that is given to the player.\n If you want to replace it, remove existing entry &amp; insert item name-tag. e.g. ACE_Banana</English>
             <German>Der Gegenstand den der Spieler erhält.\n Zum ändern des Gegenstandes den bestehenden Eintrag entfernen &amp; einen anderen Gegenstand mit dem name-tag hinzufügen. bsp: ACE_Banana</German>

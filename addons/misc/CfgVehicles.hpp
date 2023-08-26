@@ -856,6 +856,70 @@ class CfgVehicles {
                         icon = QPATHTOF(ui\FAK.paa);
                     };
                 };
+                // ------------------------------ AFAK ---------------------------
+
+                class Unpack_kat_AFAK {
+                    displayName = CSTRING(AFAK_Unpack);
+                    condition = QUOTE([ARR_2(_player, ""kat_AFAK"")] call ACEFUNC(common,hasItem));
+                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 0)] call FUNC(unpackFAK));
+                    showDisabled = 0;
+                    icon = QPATHTOF(ui\FAK.paa);
+
+                    class Slot1 {
+                        displayName = CSTRING(AFAK_Unpack);
+                        condition = QUOTE([ARR_2(_player, ""kat_AFAK"")] call ACEFUNC(common,hasItem));
+                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 1)] call FUNC(unpackFAK));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\FAK.paa);
+                    };
+
+                    class Slot2 {
+                        displayName = CSTRING(AFAK_Unpack);
+                        condition = QUOTE([ARR_2(_player, ""kat_AFAK"")] call ACEFUNC(common,hasItem));
+                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 2)] call FUNC(unpackFAK));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\FAK.paa);
+                    };
+
+                    class Slot3 {
+                        displayName = CSTRING(AFAK_Unpack);
+                        condition = QUOTE([ARR_2(_player, ""kat_AFAK"")] call ACEFUNC(common,hasItem));
+                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 3)] call FUNC(unpackFAK));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\FAK.paa);
+                    };
+
+                    class Slot4 {
+                        displayName = CSTRING(AFAK_Unpack);
+                        condition = QUOTE([ARR_2(_player, ""kat_AFAK"")] call ACEFUNC(common,hasItem));
+                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 4)] call FUNC(unpackFAK));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\FAK.paa);
+                    };
+
+                    class Slot5 {
+                        displayName = CSTRING(AFAK_Unpack);
+                        condition = QUOTE([ARR_2(_player, ""kat_AFAK"")] call ACEFUNC(common,hasItem));
+                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 5)] call FUNC(unpackFAK));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\FAK.paa);
+                    };
+
+                    class Slot6 {
+                        displayName = CSTRING(AFAK_Unpack);
+                        condition = QUOTE([ARR_2(_player, ""kat_AFAK"")] call ACEFUNC(common,hasItem));
+                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 6)] call FUNC(unpackFAK));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\FAK.paa);
+                    };
+                };
 
 
 
@@ -869,14 +933,7 @@ class CfgVehicles {
                     icon = QPATHTOF(ui\FAK.paa);
                 };
 
-                class UnpackAfak {
-                    displayName = CSTRING(AFAK_Unpack);
-                    condition = QUOTE([ARR_2(_player, ""kat_AFAK"")] call ACEFUNC(common,hasItem));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                    statement = QUOTE([ARR_2(_player, ""kat_AFAK"")] call FUNC(unpackFAK));
-                    showDisabled = 0;
-                    icon = QPATHTOF(ui\FAK.paa);
-                };
+                
             };
         };
         class ACE_Actions {
