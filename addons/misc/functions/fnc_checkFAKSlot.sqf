@@ -20,11 +20,34 @@ params ["_unit", "_item"];
 
 private _itemType = _item call BIS_fnc_itemType;
 private _itemType = _itemType select 0;
+private _return = false;
 
-if (_itemType == "Item") then {
-	if ([_unit, _item] call ACEFUNC(common,hasItem)) exitWith { };
-} else {
-	[_unit, _item] call ACEFUNC(common,hasMagazine);
+if (_itemType == "Item") exitWith {
+	[_unit, _item] call ACEFUNC(common,hasItem);
 };
 
-return = false;
+if (_itemType != "Magazine") exitWith {	_return };
+
+switch (_item) do {
+	case (_ammoCount >= 1 && _ammoCount <= 8): { };
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+case (_ammoCount >= 1 && _ammoCount <= 8) :

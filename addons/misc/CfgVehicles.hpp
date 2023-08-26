@@ -436,7 +436,7 @@ class CfgVehicles {
 
                 class Unpack_kat_IFAK {
                     displayName = CSTRING(IFAK_Unpack);
-                    condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call FUNC(checkFAKSlot) || [ARR_2(_player, ""kat_IFAK_Magazine"")] call FUNC(checkFAKSlot));
+                    condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call FUNC(checkFAKSlot));
                     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                     statement = QUOTE([ARR_3(_player, ""kat_IFAK"", 0)] call FUNC(unpackFAK));
                     showDisabled = 0;
@@ -444,7 +444,7 @@ class CfgVehicles {
 
                     class Slot1 {
                         displayName = CSTRING(IFAK_Unpack);
-                        condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call FUNC(checkFAKSlot) || [ARR_2(_player, ""kat_IFAK_Magazine"")] call FUNC(checkFAKSlot));
+                        condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call FUNC(checkFAKSlot));
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_IFAK"", 1)] call FUNC(unpackFAK));
                         showDisabled = 0;
@@ -453,7 +453,7 @@ class CfgVehicles {
 
                     class Slot2 {
                         displayName = CSTRING(IFAK_Unpack);
-                        condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call FUNC(checkFAKSlot) || [ARR_2(_player, ""kat_IFAK_Magazine"")] call FUNC(checkFAKSlot));
+                        condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call FUNC(checkFAKSlot));
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_IFAK"", 2)] call FUNC(unpackFAK));
                         showDisabled = 0;
@@ -462,7 +462,7 @@ class CfgVehicles {
 
                     class Slot3 {
                         displayName = CSTRING(IFAK_Unpack);
-                        condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call FUNC(checkFAKSlot) || [ARR_2(_player, ""kat_IFAK_Magazine"")] call FUNC(checkFAKSlot));
+                        condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call FUNC(checkFAKSlot));
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_IFAK"", 3)] call FUNC(unpackFAK));
                         showDisabled = 0;
@@ -471,7 +471,7 @@ class CfgVehicles {
 
                     class Slot4 {
                         displayName = CSTRING(IFAK_Unpack);
-                        condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call FUNC(checkFAKSlot) || [ARR_2(_player, ""kat_IFAK_Magazine"")] call FUNC(checkFAKSlot));
+                        condition = QUOTE([ARR_2(_player, ""kat_IFAK"")] call FUNC(checkFAKSlot));
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_IFAK"", 4)] call FUNC(unpackFAK));
                         showDisabled = 0;
