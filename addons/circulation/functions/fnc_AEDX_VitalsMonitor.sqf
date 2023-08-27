@@ -55,7 +55,7 @@ private _vitalsMonitorPFH = [{
     private _spO2 = 0;
     
     if !(_patient getVariable [QGVAR(heartRestart), false]) then {
-        if (_patient getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
+        if (_patient getVariable [QGVAR(cardiacArrestType), 0] > 0 && !(_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull)) then {
             _hr = _patient call FUNC(getCardiacArrestHeartRate);
 
             if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
