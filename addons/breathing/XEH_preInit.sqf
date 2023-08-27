@@ -215,7 +215,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_deepPenetratingInjuryChance), LLSTRING(SETTING_deepPenetratingInjuryChance_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [0, 100, 50, 0, false],
+    [0, 100, 30, 0, false],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -235,7 +235,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_deterioratingPneumothorax_chance), LLSTRING(SETTING_deterioratingPneumothorax_chance_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [0, 100, 10, 0],
+    [0, 100, 50, 0],
     true
 ] call CBA_Settings_fnc_init;
 

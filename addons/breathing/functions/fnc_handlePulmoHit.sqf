@@ -23,7 +23,7 @@
 params ["_unit", "_allDamages", "", "_ammo"];
 _allDamages select 0 params ["_damage", "_bodyPart"];
 
-_fnc_inflictAdvancedPneumothorax = {
+private _fnc_inflictAdvancedPneumothorax = {
     params ["_unit", "_chanceIncrease", ["_deteriorated", false]];
 
     // Prevent the patient from getting both hemothorax and tension pneumothorax at the same time
@@ -64,13 +64,13 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
 
         // Start deteriorating after delay
         [{
-            params["_unit","_fnc_inflictAdvancedPneumothorax"];
+            params ["_unit", "_chanceIncrease", "_fnc_inflictAdvancedPneumothorax"];
 
             if(_unit getVariable [QGVAR(pneumothorax), 0] > 0) then {
                 // Try to deteriorate at set interval
                 [{
                     params ["_args", "_idPFH"];
-                    _args params ["_unit", "_fnc_inflictAdvancedPneumothorax"];
+                    _args params ["_unit", "_chanceIncrease", "_fnc_inflictAdvancedPneumothorax"];
                     
                     // If patient is dead, already treated or has already deteriorated into advanced pneumothorax, kill the PFH
                     if(_unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false] || !(alive _unit) || _unit getVariable [QGVAR(pneumothorax), 0] isEqualTo 0) exitWith {
@@ -94,9 +94,9 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
                         [_unit, -15, -15, "ptx_tension"] call EFUNC(circulation,updateBloodPressureChange); // Emulate low blood pressure and high heart rate caused by pneumothorax
                     };
 
-                }, GVAR(deterioratingPneumothorax_interval), [_unit, _fnc_inflictAdvancedPneumothorax]] call CBA_fnc_addPerFrameHandler;
+                }, GVAR(deterioratingPneumothorax_interval), [_unit, _chanceIncrease, _fnc_inflictAdvancedPneumothorax]] call CBA_fnc_addPerFrameHandler;
             };
-        }, [_unit, _fnc_inflictAdvancedPneumothorax], deterioratingPneumothorax_interval] call CBA_fnc_waitAndExecute;
+        }, [_unit, _chanceIncrease, _fnc_inflictAdvancedPneumothorax], GVAR(deterioratingPneumothorax_interval)] call CBA_fnc_waitAndExecute;
     } else {
         if (_unit getVariable [QGVAR(tensionpneumothorax), false]) then { // If already afflicted with tensionpneumothorax -> fully deteriorate pneumothorax
             _unit setVariable [QGVAR(pneumothorax), 4, true];

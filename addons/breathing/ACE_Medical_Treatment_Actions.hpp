@@ -3,7 +3,7 @@ class ACE_Medical_Treatment_Actions {
     class InspectChest: CheckPulse {
         displayName = CSTRING(inspectChest_display);
         displayNameProgress = CSTRING(inspectChest_progress);
-        category = "examine";
+        category = "airway";
         treatmentTime = QGVAR(InspectChest_time);
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
