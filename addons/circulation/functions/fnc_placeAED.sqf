@@ -36,7 +36,7 @@ if (_AEDClassName == "kat_X_AED") then {
     private _patient = _unit getVariable [QGVAR(AED_X_MedicVitalsMonitor_Patient), objNull];
 
     if !(_patient isEqualTo objNull) then {
-        private _monitorBodyPart = (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), []]) select 2;
+        private _monitorBodyPart = ALL_BODY_PARTS select ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
 
         [_unit, _patient, true] call FUNC(AEDX_DisconnectVitalsMonitor);
 
@@ -88,7 +88,7 @@ _pickUpText,
         private _patientMonitor = _AED getVariable [QGVAR(AED_X_VitalsMonitor_Patient), objNull];
 
         if !(_patientMonitor isEqualTo objNull) then {
-            private _monitorBodyPart = (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), []]) select 2;
+            private _monitorBodyPart = ALL_BODY_PARTS select ((_patientMonitor getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
 
             [_medic, _patientMonitor, true] call FUNC(AEDX_DisconnectVitalsMonitor);
 
