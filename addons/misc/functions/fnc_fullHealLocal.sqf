@@ -95,7 +95,6 @@ _unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 // Vitals
 _unit setVariable [QACEGVAR(medical,heartRate), 80, true];
 _unit setVariable [QACEGVAR(medical,bloodPressure), [80, 120], true];
-_unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 _unit setVariable [QACEGVAR(medical,peripheralResistance), 100, true];
 
 //KAT Pharmacy
