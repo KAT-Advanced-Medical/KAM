@@ -21,9 +21,9 @@
 params ["_medic", "_patient", "_soundSource"];
 
 if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) isEqualTo 1) then { 
-    BPInterval = true;
+    GVAR(BPInterval) = true;
 } else {
-    BPInterval = false;
+    GVAR(BPInterval) = false;
 };
 
 // medical menu log
@@ -47,7 +47,7 @@ private _vitalsMonitorPFH = [{
     [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog)] call FUNC(removeLog);
     [_patient, "quick_view", LSTRING(VitalsMonitor_HRInactive_StatusLog)] call FUNC(removeLog);
     
-    private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2);
+    private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
     private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient, _partIndex);
 
     private _hr = 0;
@@ -90,17 +90,17 @@ private _vitalsMonitorPFH = [{
         };
     };
 
-    if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && BPInterval) then { // Store new BP
+    if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && GVAR(BPInterval)) then { // Store new BP
         if !(_tourniquetApplied) then {
             _patient setVariable [QGVAR(StoredBloodPressure), (_patient getVariable [QACEGVAR(medical,bloodPressure), [0,0]]), true];
         } else {
             _patient setVariable [QGVAR(StoredBloodPressure), [0,0], true];
         };
         [{
-            BPInterval = true;
+            GVAR(BPInterval) = true;
         }, [], GVAR(AED_X_VitalsMonitor_BloodPressureInterval_Time)] call CBA_fnc_waitAndExecute;
 
-        BPInterval = false;
+        GVAR(BPInterval) = false;
     };
 }, 1, [_patient]] call CBA_fnc_addPerFrameHandler;
 
@@ -111,7 +111,7 @@ _patient setVariable ["kat_AEDXPatient_PFH", _PFHArray, true];
 if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
 
     // attach heart rate beep PFH
-    AEDBeepPlaying = false;
+    GVAR(AEDBeepPlaying) = false;
     if (GVAR(AED_X_VitalsMonitor_SoundsSelect) == 0) then {
         private _vitalsMonitorBeepPFH = [{
             params ["_args", "_idPFH"];
@@ -125,7 +125,7 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
             if (AEDBeepPlaying) exitWith {};
 
             private _hr = 80;
-            AEDBeepPlaying = true;
+            GVAR(AEDBeepPlaying) = true;
 
             if (GVAR(AdvRhythm) && (_patient getVariable [QGVAR(cardiacArrestType), 0] > 1)) then {
                 _hr = _patient call FUNC(getCardiacArrestHeartRate);
@@ -144,7 +144,7 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
             [{
                 params ["_patient"];
 
-                AEDBeepPlaying = false;
+                GVAR(AEDBeepPlaying) = false;
             }, [_patient], _delay] call CBA_fnc_waitAndExecute;
         }, 0, [_patient, _soundSource]] call CBA_fnc_addPerFrameHandler;
 
@@ -187,18 +187,18 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
                 };
 
                 if (alive _patient && (_cardiacState in [0,2] || (_cardiacState isEqualTo 4 && !analyzeDelay))) then {
-                    AEDBeepPlaying = true;
+                    GVAR(AEDBeepPlaying) = true;
                     private _delay = 60 / _hr;
                     playsound3D [QPATHTOF_SOUND(sounds\heartrate_AED.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
                     [{
                         params ["_patient"];
-                        AEDBeepPlaying = false;
+                        GVAR(AEDBeepPlaying) = false;
                     }, [_patient], _delay] call CBA_fnc_waitAndExecute;
                     playedAudio = false;
                     analyzeDelay = false;
                 } else {
                     if (analyzeDelay) then {
-                        AEDBeepPlaying = true;
+                        GVAR(AEDBeepPlaying) = true;
                         private _delayAEDBeepPlaying = 1.835;
                         if (!(playedAudio)) then {
                             playsound3D [QPATHTOF_SOUND(sounds\checkpatient.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
@@ -209,12 +209,12 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
                         };
                         [{
                             params ["_patient"];
-                            AEDBeepPlaying = false;
+                            GVAR(AEDBeepPlaying) = false;
                         }, [_patient], _delayAEDBeepPlaying] call CBA_fnc_waitAndExecute;
                     };
                 };
             } else {
-                AEDBeepPlaying = true;
+                GVAR(AEDBeepPlaying) = true;
                 _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
 
                 if (_hr > 0) then {
@@ -222,7 +222,7 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
                     playsound3D [QPATHTOF_SOUND(sounds\heartrate_AED.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
                     [{
                         params ["_patient"];
-                        AEDBeepPlaying = false;
+                        GVAR(AEDBeepPlaying) = false;
                     }, [_patient], _delay] call CBA_fnc_waitAndExecute;
                     playedAudio = false;
                 } else {
@@ -237,7 +237,7 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
                     };
                     [{
                         params ["_patient"];
-                        AEDBeepPlaying = false;
+                        GVAR(AEDBeepPlaying) = false;
                     }, [_patient], _delayAEDBeepPlaying] call CBA_fnc_waitAndExecute;
                 };
             };

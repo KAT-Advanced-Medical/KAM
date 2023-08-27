@@ -101,7 +101,13 @@ _pickUpText,
     };
 
     deleteVehicle _AED;
-    _medic addItem _AEDClassName;
+    if (_medic canAddItemToUniform _AEDClassName || _medic canAddItemToVest _AEDClassName || _medic canAddItemToBackpack _AEDClassName) then {
+        _medic addItem _AEDClassName;
+    } else {
+        private _droppedAED = createVehicle ["Weapon_Empty", getPosATL _medic, [], 0, "CAN_COLLIDE"];
+        _droppedAED addItemCargo [_AEDClassName, 1];
+        [ACELLSTRING(Common,Inventory_Full), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+    };
 },
 {
     params ["_AED", "_unit"];
