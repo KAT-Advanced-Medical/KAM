@@ -18,7 +18,13 @@
 
 params ["_medic", "_patient"];
 
-_patient setVariable [QGVAR(activeChestSeal), true, true];
+if (GVAR(clearChestSealAfterTreatment)) then {
+    if (_patient getVariable [QGVAR(hemopneumothorax), false]) || (_patient getVariable [QGVAR(tensionpneumothorax), false]) then {
+        _patient setVariable [QGVAR(activeChestSeal), true, true];
+    };
+} else {
+    _patient setVariable [QGVAR(activeChestSeal), true, true];
+};
 _patient setVariable [QGVAR(deepPenetratingInjury), false, true];
 _patient setVariable [QGVAR(pneumothorax), 0, true];
 

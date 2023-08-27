@@ -128,6 +128,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Clear Chest Seal from medical menu after treatment
+[
+    QGVAR(clearChestSealAfterTreatment),
+    "CHECKBOX",
+    LLSTRING(SETTING_clearChestSealAfterTreatment),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 // Sets SpO2 level threshold for audible warning
 [
     QGVAR(PulseOximeter_SpO2Warning),

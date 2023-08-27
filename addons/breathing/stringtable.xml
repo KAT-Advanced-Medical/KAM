@@ -373,6 +373,9 @@
             <Spanish>Permitir autotratarse con un sello torácico</Spanish>
             <Portuguese>Permitir auto-tratamento com Selo Torácico</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment">
+            <English>Clear Chest Seal after treatment</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
             <German>Stabiler SpO2 Wert, um Bewusstsein zu erlangen</German>
