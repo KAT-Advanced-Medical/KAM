@@ -30,6 +30,7 @@ _unit setVariable [QEGVAR(airway,overstretch), false, true];
 KAT_forceWakeup = false;
 _unit setVariable [QEGVAR(airway,recovery), false, true];
 _unit setVariable [QEGVAR(airway,airway_item), "", true];
+_unit setVariable [QEGVAR(airway,clearedTime), 0, true];
 
 // KAT Breathing
 

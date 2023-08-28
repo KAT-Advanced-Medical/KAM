@@ -82,6 +82,9 @@
             <Spanish>Tiempo de repetición de las oclusiones</Spanish>
             <Portuguese>Temporizador de repetição de oclusão</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod">
+            <English>Occlusion Cooldown Period</English>
+        </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
             <German>Erbrechengeräusch abspielen?</German>
