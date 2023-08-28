@@ -63,6 +63,7 @@ class CfgPatches {
 };
 
 #include "CfgFunctions.hpp"
+#include "CfgMoves.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"

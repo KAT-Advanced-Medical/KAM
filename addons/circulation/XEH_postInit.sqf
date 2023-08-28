@@ -9,6 +9,8 @@ GVAR(AEDX_MonitorTarget) = objNull;
     _unit setVariable [QGVAR(bloodTypePlayer), (profileNamespace getVariable [QGVAR(preferredBloodType), "O_N"]), true];
 }] call CBA_fnc_addEventHandler;
 
+["isNotPerformingCPR", {!((_this select 0) getVariable [QGVAR(isPerformingCPR), false])}] call ACEFUNC(common,addCanInteractWithCondition);
+
 [QGVAR(handleNearToAED), {
     params ["_unit", "_patient"];
 

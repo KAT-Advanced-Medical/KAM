@@ -21,6 +21,7 @@
 
 
 ["kat_PainkillerItem", "kat_Painkiller"] call ACEFUNC(common,registerItemReplacement);
+["kat_PenthroxItem", "kat_Penthrox"] call ACEFUNC(common,registerItemReplacement);
 ["kat_CarbonateItem", "kat_Carbonate"] call ACEFUNC(common,registerItemReplacement);
 ["kat_PervitinItem", "kat_Pervitin"] call ACEFUNC(common,registerItemReplacement);
 ["kat_CaffeineItem", "kat_Caffeine"] call ACEFUNC(common,registerItemReplacement);

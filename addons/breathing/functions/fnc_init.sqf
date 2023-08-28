@@ -21,9 +21,6 @@ if (!local _unit) exitWith {};
 if !(GVAR(enable)) exitWith {};
 
 _unit setVariable [QGVAR(airwayStatus), 100, true];
-_unit setVariable [QGVAR(pneumothorax), false, true];
-_unit setVariable [QGVAR(hemopneumothorax), false, true];
-_unit setVariable [QGVAR(tensionpneumothorax), false, true];
 
 _unit setVariable [QGVAR(pulseoximeter), false, true];
 _unit setVariable [QGVAR(PulseOximeter_Volume), true, true];
