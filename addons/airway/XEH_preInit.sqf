@@ -90,17 +90,17 @@ In real life, this will happen sometimes, not quiet often.
 
 // Settable action time for Head turning
 [
-    QGVAR(TurnAround_time),
+    QGVAR(HeadTurn_Interval),
     "SLIDER",
-    [LLSTRING(TIME_HEADTURNING),LLSTRING(TIME_HEADTURNING_DESC)],
+    [LLSTRING(SETTING_HeadTurning_Interval), LLSTRING(SETTING_HeadTurning_Interval_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [1, 10, 2, 0],
+    [1, 30, 3, 0],
     true
 ] call CBA_Settings_fnc_init;
 
 // Blocks head turning if patient has Guedel Tube or KingLT inserted
 [
-    QGVAR(block_turnAround_ifAirwayItem),
+    QGVAR(block_headTurning_ifAirwayItem),
     "CHECKBOX",
     [LLSTRING(BLOCK_HEADTURNING),LLSTRING(BLOCK_HEADTURNING_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],

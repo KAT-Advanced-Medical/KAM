@@ -73,15 +73,16 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && !(_patient getVariable [ARR_2(QQGVAR(overstretch), false)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus') && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus'));
         callbackSuccess = QFUNC(treatmentAdvanced_overstretchHead);
     };
-    class TurnAround: Larynxtubus {
-        displayName = CSTRING(turnaround);
-        displayNameProgress = CSTRING(turnaround_action);
-        treatmentTime = QGVAR(TurnAround_time);
+    class BeginHeadTurning: Larynxtubus {
+        displayName = CSTRING(headTurning_begin);
+        displayNameProgress = "";
+        treatmentTime = 0.01;
         medicRequired = 0;
         items[] = {};
         icon = "";
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus') && (!(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus') || !(missionNamespace getVariable [ARR_2(QQGVAR(block_turnAround_ifAirwayItem),true)])));
-        callbackSuccess = QFUNC(treatmentAdvanced_turnaroundHead);
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus') && (!(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus') || !(missionNamespace getVariable [ARR_2(QQGVAR(block_headTurning_ifAirwayItem),true)])));
+        callbackSuccess = QFUNC(startHeadTurning);
+        sounds[] = {};
     };
     class RecoveryPosition: Larynxtubus {
         displayName = CSTRING(RecoveryPosition_displayName);
