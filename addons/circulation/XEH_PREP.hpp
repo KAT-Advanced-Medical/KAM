@@ -34,6 +34,7 @@ PREP(onCloseDialog);
 PREP(placeAED);
 PREP(removeLog);
 PREP(treatmentAdvanced_IV);
+PREP(updateBloodPressureChange);
 PREP(updateHeartRate);
 PREP(updateInternalBleeding);
 PREP(wrongBloodTreatment);

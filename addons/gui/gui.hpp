@@ -31,6 +31,22 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             colorText[] = {1, 1, 1, 1};
             show = 0;
         };
+        class Torso_ChestSeal: Background {
+            idc = IDC_BODY_TORSO_CHESTSEAL;
+            text = QPATHTOF(data\body_image\torso_chestseal.paa);
+            colorText[] = {1, 0.95, 0, 1};
+            show = 0;
+        };
+        class RightArm_PulseOximeter: Background {
+            idc = IDC_BODY_RIGHTARM_PULSEOX;
+            text = QPATHTOF(data\body_image\rightarm_pulseoximeter.paa);
+            colorText[] = {0.3, 0.8, 0.8, 1};
+            show = 0;
+        };
+        class LeftArm_PulseOximeter: RightArm_PulseOximeter {
+            idc = IDC_BODY_LEFTARM_PULSEOX;
+            text = QPATHTOF(data\body_image\leftarm_pulseoximeter.paa);
+        };
         class Torso_AED_Pads: Background {
             idc = IDC_BODY_TORSO_AED_PADS;
             text = QPATHTOF(data\body_image\torso_aed_pads.paa);
@@ -44,6 +60,11 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
         class LeftArm_AED_VitalsMonitor: RightArm_AED_VitalsMonitor {
             idc = IDC_BODY_LEFTARM_AED_VITALS;
             text = QPATHTOF(data\body_image\leftarm_aed_vitals_monitor.paa);
+        };
+        class Torso_Pneumothorax: Torso_ChestSeal {
+            idc = IDC_BODY_TORSO_PNEUMOTHORAX;
+            text = QPATHTOF(data\body_image\torso_pneumothorax.paa);
+            colorText[] = {1, 1, 1, 1};
         };
     };
 };
