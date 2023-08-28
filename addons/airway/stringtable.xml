@@ -313,22 +313,6 @@
             <Japanese>気道は確保されています</Japanese>
             <Portuguese>As vias aéreas estão limpas</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Airway_Airway_turnaroundSuccess">
-            <English>Occlusion removed</English>
-            <German>Verstopfung entfernt</German>
-            <Polish>Zablokowanie usunięte</Polish>
-            <Spanish>Oclusión eliminada</Spanish>
-            <Chinese>遮擋移除</Chinese>
-            <Chinesesimp>气道异物移除</Chinesesimp>
-            <Czech>Ucpání odstraněno</Czech>
-            <Korean>구토 제거 성공</Korean>
-            <French>Occlusion supprimée</French>
-            <Turkish>Tıkanıklık kaldırıldı</Turkish>
-            <Italian>Occlusione rimossa</Italian>
-            <Russian>Окклюзия удалена</Russian>
-            <Japanese>異物が除去されました</Japanese>
-            <Portuguese>Oclusão removida</Portuguese>
-        </Key>
         <Key ID="STR_KAT_Airway_Airway_NotClearForItem">
             <English>Item could not be used, airways are not clear</English>
             <German>Gegenstand konnte nicht verwendet werden, Atemwege sind nicht frei</German>
@@ -425,7 +409,7 @@
             <Japanese>移動しないでください、 あなたは気道確保中です!</Japanese>
             <Portuguese>Não fuja, você está salvando uma vida!</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Airway_turnaround_info">
+        <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
             <German>Kopfdrehung durchgeführt, Atemwege sind noch nicht frei</German>
             <Polish>Obrót głowy wykonany, drogi oddechowe wciąż nie są czyste</Polish>
@@ -441,37 +425,30 @@
             <Japanese>試みましたが、異物がまだ残っています</Japanese>
             <Portuguese>Giro de cabeça executada, as vias aéreas ainda estão bloqueadas</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Airway_turnaround">
-            <English>Head turning</English>
-            <German>Kopf zur Seite drehen</German>
-            <Polish>Obróć głowę</Polish>
-            <Spanish>Girar cabeza</Spanish>
-            <Chinese>扶正頭部</Chinese>
-            <Chinesesimp>尝试清理气道异物</Chinesesimp>
-            <Czech>Otáčet hlavou</Czech>
-            <Korean>고개 돌리기</Korean>
-            <French>Rotation de la tête</French>
-            <Turkish>Baş döndürme</Turkish>
-            <Italian>Rotazione testa</Italian>
-            <Russian>Повернуть голову в сторону</Russian>
-            <Japanese>異物の除去</Japanese>
-            <Portuguese>Virar cabeça</Portuguese>
+        <Key ID="STR_KAT_Airway_headTurning_success">
+            <English>Occlusion removed</English>
+            <German>Verstopfung entfernt</German>
+            <Polish>Zablokowanie usunięte</Polish>
+            <Spanish>Oclusión eliminada</Spanish>
+            <Chinese>遮擋移除</Chinese>
+            <Chinesesimp>气道异物移除</Chinesesimp>
+            <Czech>Ucpání odstraněno</Czech>
+            <Korean>구토 제거 성공</Korean>
+            <French>Occlusion supprimée</French>
+            <Turkish>Tıkanıklık kaldırıldı</Turkish>
+            <Italian>Occlusione rimossa</Italian>
+            <Russian>Окклюзия удалена</Russian>
+            <Japanese>異物が除去されました</Japanese>
+            <Portuguese>Oclusão removida</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Airway_turnaround_action">
-            <English>Turning the head</English>
-            <German>Kopf zur Seite drehen</German>
-            <Polish>Obracanie głowy</Polish>
-            <Spanish>Girando la cabeza</Spanish>
-            <Chinese>轉動頭部中</Chinese>
-            <Chinesesimp>尝试清理气道异物中</Chinesesimp>
-            <Czech>Otáčení hlavou</Czech>
-            <Korean>고개 돌리는 중</Korean>
-            <French>Rotation de la tête</French>
-            <Turkish>Kafayı çevir</Turkish>
-            <Italian>Ruotando la testa</Italian>
-            <Russian>Повернуть голову в сторону</Russian>
-            <Japanese>異物を除去しようとしています</Japanese>
-            <Portuguese>Virando a cabeça</Portuguese>
+        <Key ID="STR_KAT_Airway_headTurning_begin">
+            <English>Begin Head Turning</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_headTurning_cancelled">
+            <English>Head turning cancelled</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_headTurning_stop">
+            <English>Stop head turning</English>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_NA">
             <English>Medical suction not needed</English>

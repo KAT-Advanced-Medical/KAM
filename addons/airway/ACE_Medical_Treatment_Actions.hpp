@@ -73,13 +73,13 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_overstretchHead);
     };
     class BeginHeadTurning: Larynxtubus {
-        displayName = CSTRING(turnaround);
+        displayName = CSTRING(headTurning_begin);
         displayNameProgress = "";
         treatmentTime = 0.01;
         medicRequired = 0;
         items[] = {};
         icon = "";
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus') && (!(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus') || !(missionNamespace getVariable [ARR_2(QQGVAR(block_turnAround_ifAirwayItem),true)])));
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Larynxtubus') && (!(_patient getVariable [ARR_2(QQGVAR(airway_item), '')] == 'Guedeltubus') || !(missionNamespace getVariable [ARR_2(QQGVAR(block_headTurning_ifAirwayItem),true)])));
         callbackSuccess = QFUNC(startHeadTurning);
         sounds[] = {};
     };

@@ -52,12 +52,12 @@ GVAR(headTurn_timeOut) = true;
 [{
     params ["_medic", "_patient", "_notInVehicle"];
 
-    ["Stop head turning", "", ""] call ACEFUNC(interaction,showMouseHint);
+    [LLSTRING(headTurning_stop), "", ""] call ACEFUNC(interaction,showMouseHint);
     [{
         params ["_args", "_idPFH"];
         _args params ["_medic", "_patient", "_notInVehicle"];
 
-        if (!(alive _medic) || IS_UNCONSCIOUS(_medic) || !(IS_UNCONSCIOUS(_patient)) || !(_patient getVariable [QGVAR(headTurningActive), false]) || !(_patient getVariable [QGVAR(occluded), false]) || dialog || {!(objectParent _medic isEqualTo objectParent _patient) || {_patient distance2D _medic > ACEGVAR(medical_gui,maxDistance)}}) exitWith {
+        if (!(alive _medic) || IS_UNCONSCIOUS(_medic) || !(IS_UNCONSCIOUS(_patient)) || !(_patient getVariable [QGVAR(headTurningActive), false]) || dialog || {!(objectParent _medic isEqualTo objectParent _patient) || {_patient distance2D _medic > ACEGVAR(medical_gui,maxDistance)}}) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
 
             [] call ACEFUNC(interaction,hideMouseHint);
@@ -73,9 +73,7 @@ GVAR(headTurn_timeOut) = true;
 
             [_patient, "activity", LSTRING(Activity_HeadTurning), [[_medic, false, true] call ACEFUNC(common,getName), GVAR(headTurning_attempts)]] call ACEFUNC(medical_treatment,addToLog);
 
-            if (_patient getVariable [QGVAR(occluded), false]) then {
-                ["Head turning cancelled", 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-            };
+            [LLSTRING(headTurning_cancelled), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
         };
 
         if !(GVAR(headTurn_timeOut)) then {
@@ -92,11 +90,15 @@ GVAR(headTurn_timeOut) = true;
                 GVAR(headTurn_timeOut) = false;
                 GVAR(headTurning_attempts) = GVAR(headTurning_attempts) + 1;
 
-                if (random 100 < GVAR(probability_headturning)) then {
-                    _patient setVariable [QGVAR(occluded), false, true];
-                    _patient setVariable [QGVAR(headTurningActive), false, true];
-
-                    [LLSTRING(Airway_turnaroundSuccess), 2, _medic] call ACEFUNC(common,displayTextStructured);
+                if (_patient getVariable [QGVAR(occluded), false]) then {
+                    if(random 100 < GVAR(probability_headturning)) then {
+                        _patient setVariable [QGVAR(occluded), false, true];
+                        [LLSTRING(headTurning_success), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                    } else {
+                        [LLSTRING(headTurning_info), 2, _medic] call ACEFUNC(common,displayTextStructured);
+                    };
+                } else {
+                    [LLSTRING(headTurning_success), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
                 };
 
             }] call CBA_fnc_waitUntilAndExecute;
@@ -109,7 +111,7 @@ GVAR(headTurn_timeOut) = true;
             [{
                 params ["_patient"];
                 !(_patient getVariable [QGVAR(headTurningActive), false]);
-            }, {}, [_patient], 4.5, {
+            }, {}, [_patient], 7.6, {
                 GVAR(loopHeadturning) = true;
             }] call CBA_fnc_waitUntilAndExecute;
         };
