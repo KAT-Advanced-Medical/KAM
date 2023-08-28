@@ -244,6 +244,15 @@
             <Russian>Используйте карбонат</Russian>
             <Portuguese>Administrar Carbonato de Amônio</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Pharma_Penthrox_Display">
+            <English>Penthrox Inhaler</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Use_Penthrox">
+            <English>Use Penthrox Inhaler</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
+            <English>Used to manage moderate pain</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
             <German>Zur Umkehrung einer Opioid-Überdosis</German>
@@ -2061,6 +2070,12 @@
             <Spanish>Tiempo para uso de la Nalbufina</Spanish>
             <Portuguese>Tempo de uso de Nalbufina</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_medLvl_Penthrox">
+            <English>Medical level required for Penthrox Inhaler</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
+            <English>Treatment time for Penthrox Inhaler</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Basic">
             <English>Basic Settings</English>
             <Polish>Podstawowe Ustawienia</Polish>
@@ -2344,6 +2359,9 @@
             <Japanese>エトミデート設定</Japanese>
             <Spanish>Parámetros del Etomidato</Spanish>
             <Portuguese>Configurações de Etomidato</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Penthrox">
+            <English>Penthrox Inhaler Settings</English>
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
             <English>%1 performed a saline flush</English>

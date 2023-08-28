@@ -27,6 +27,7 @@ _bystanders = _bystanders - [_medic];
 } forEach _bystanders;
 
 _patient setVariable [QGVAR(heartRestart), true, true];
+_patient setVariable [QGVAR(RhythmAnalyzed), false, true];
 
 [{
     params ["_patient"];

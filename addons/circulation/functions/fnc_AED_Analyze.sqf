@@ -30,6 +30,7 @@ switch (_defibProvider select 1) do {
 };
 
 _patient setVariable [QGVAR(DefibrillatorInUse), true, true];
+_patient setVariable [QGVAR(RhythmAnalyzed), false, true];
 
 // Analyze rhythm
 
@@ -57,6 +58,8 @@ playsound3D [QPATHTOF_SOUND(sounds\analyzingnow.wav), _soundSource, false, getPo
 5 max (random 8), // Time to analyze
 {   
     params ["_medic", "_patient", "_defibrillatorType", "_soundSource"];
+
+    _patient setVariable [QGVAR(RhythmAnalyzed), true, true];
 
     if (GVAR(AdvRhythm)) then {
         if (_patient getVariable [QGVAR(cardiacArrestType), 0] > 2) then { // shock advised

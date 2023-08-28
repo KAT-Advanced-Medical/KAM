@@ -36,7 +36,7 @@ switch (_AEDOrigin) do {
             _placedAED = _nearbyObjects select 0;
         };
 
-        _condition = ((_patient distance2D _placedAED) < GVAR(Defibrillator_DistanceLimit)) && (_placedAED getVariable [QGVAR(Defibrillator_Patient), objNull] in [objNull, _patient] || ((_patient getVariable [QGVAR(Defibrillator_Provider), [objNull, -1, -1]]) select 0) isEqualTo _placedAED);
+        _condition = ((_patient distance _placedAED) < GVAR(Defibrillator_DistanceLimit)) && (_placedAED getVariable [QGVAR(Defibrillator_Patient), objNull] in [objNull, _patient] || ((_patient getVariable [QGVAR(Defibrillator_Provider), [objNull, -1, -1]]) select 0) isEqualTo _placedAED);
     };
     case 2: {
         if !(isNull objectParent _patient) then {

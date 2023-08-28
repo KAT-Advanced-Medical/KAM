@@ -76,14 +76,22 @@ _unit setVariable [QEGVAR(airway,clearedTime), 0, true];
 
 //KAT Breathing
 _unit setVariable [QEGVAR(breathing,airwayStatus), 100, true];
-_unit setVariable [QEGVAR(breathing,pneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,pneumothorax), 0, true];
 _unit setVariable [QEGVAR(breathing,hemopneumothorax), false, true];
 _unit setVariable [QEGVAR(breathing,tensionpneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,activeChestSeal), false, true];
+_unit setVariable [QEGVAR(breathing,deepPenetratingInjury), false, true];
 
 // KAT Circulation
 _unit setVariable [QEGVAR(circulation,cprCount), 2, true];
 _unit setVariable [QEGVAR(circulation,heartRestart), false, true];
 _unit setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
+
+_unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
+
+_unit setVariable [QEGVAR(circulation,isPerformingCPR), false, true];
+_unit setVariable [QEGVAR(circulation,OxygenationPeriod), 0, true];
+
 
 // Update wound bleeding
 [_unit] call ACEFUNC(medical_status,updateWoundBloodLoss);
