@@ -93,6 +93,9 @@ GVAR(headTurn_timeOut) = true;
                 if (_patient getVariable [QGVAR(occluded), false]) then {
                     if(random 100 < GVAR(probability_headturning)) then {
                         _patient setVariable [QGVAR(occluded), false, true];
+                        if (GVAR(occlusion_cooldownPeriod) > 0) then {
+                            _patient setVariable [QGVAR(clearedTime), CBA_missionTime, true];
+                        };
                         [LLSTRING(headTurning_success), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
                     } else {
                         [LLSTRING(headTurning_info), 2, _medic] call ACEFUNC(common,displayTextStructured);
