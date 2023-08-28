@@ -6,6 +6,7 @@ PREP(init);
 PREP(startHeadTurning);
 PREP(treatmentAdvanced_Accuvac);
 PREP(treatmentAdvanced_AccuvacLocal);
+PREP(treatmentAdvanced_AccuvacStart);
 PREP(treatmentAdvanced_airway);
 PREP(treatmentAdvanced_airwayLocal);
 PREP(treatmentAdvanced_CancelRecoveryPosition);

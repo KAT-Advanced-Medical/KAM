@@ -865,5 +865,11 @@
         <Key ID="STR_KAT_Misc_CarryPatient">
             <English>Carry Patient</English>
         </Key>
+        <Key ID="STR_KAT_Misc_CancelCarrying">
+            <English>Cancel Carrying</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_StoppedCarrying%1">
+            <English>Stopped carrying %1</English>
+        </Key>
     </Package>
 </Project>

@@ -59,8 +59,9 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\accuvac.paa);
         consumeItem = 0;
         medicRequired = QGVAR(medLvl_Accuvac);
+        callbackStart = QFUNC(treatmentAdvanced_AccuvacStart);
         callbackSuccess = QFUNC(treatmentAdvanced_accuvac);
-        sounds[] = {{QPATHTO_R(sounds\suction.wav),6,1,15}};
+        sounds[] = {{QPATHTO_R(sounds\accuvac.wav),6,1,15}};
     };
     class Overstretch: Larynxtubus {
         displayName = CSTRING(overstretch);
