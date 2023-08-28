@@ -1388,16 +1388,11 @@
             <Czech>Použít RV</Czech>
             <Italian>Usa maschera ambu</Italian>
         </Key>
-        <Key ID="STR_KAT_Breathing_UseBVM_Progress">
-            <English>Using BVM</English>
-            <Spanish>Usando Ambú</Spanish>
-            <French>BVM en cours d'utilisation</French>
-            <Korean>인공호흡기 사용 중</Korean>
-            <Polish>BVM w użyciu</Polish>
-            <Japanese>BVMを使用中</Japanese>
-            <German>Beatme mit BVM</German>
-            <Czech>Používání RV</Czech>
-            <Italian>Usando maschera ambu</Italian>
+        <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
+            <English>Put away BVM</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_UseBVM_Cancelled">
+            <English>Rescue Breaths Cancelled</English>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM">
             <English>Use Pocket BVM</English>
@@ -1410,17 +1405,6 @@
             <Czech>Použít Kapesní RV</Czech>
             <Italian>Usa maschera ambu portatile </Italian>
         </Key>
-        <Key ID="STR_KAT_Breathing_UsePocketBVM_Progress">
-            <English>Using Pocket BVM</English>
-            <Spanish>Usando Ambú compacto</Spanish>
-            <French>BVM de poche en cours d'utilisation</French>
-            <Korean>인공호흡기 (포켓형) 사용 중</Korean>
-            <Polish>Kieszonkowy BVM w użyciu</Polish>
-            <Japanese>ポケットBVMを使用中</Japanese>
-            <German>Beatme mit Taschen BVM</German>
-            <Czech>Používání Kapesního RV</Czech>
-            <Italian>Usando maschera ambu portatile </Italian>
-        </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen">
             <English>Use BVM with Oxygen Tank</English>
             <Spanish>Usar Ambú con bombona de oxigeno</Spanish>
@@ -1431,17 +1415,6 @@
             <German>Verwende BVM mit Sauerstofftank</German>
             <Czech>Použít RV s Kyslíkovou Lahví</Czech>
             <Italian>Usa maschera ambu con la bombola d'ossigeno</Italian>
-        </Key>
-        <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Progress">
-            <English>Using BVM with Oxygen Tank</English>
-            <Spanish>Usando Ambú con bombona de oxigeno</Spanish>
-            <French>Utilisation du BVM avec un réservoir à oxygène</French>
-            <Korean>산소 탱크가 달린 인공호흡기 사용 중</Korean>
-            <Polish>Używanie BVM z butlą z tlenem</Polish>
-            <Japanese>BVMと酸素ボンベを使用中</Japanese>
-            <German>Beatme mit BVM und Sauerstofftank</German>
-            <Czech>Používání RV s Kyslíkovou Lahví</Czech>
-            <Italian>Usando maschera ambu con la bombola d'ossigeno</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Oxygen">
             <English>Use BVM with Oxygen</English>
@@ -1454,17 +1427,6 @@
             <Czech>Použít RV s Kyslíkem</Czech>
             <Italian>Usa maschera ambu con l'ossigeno</Italian>
         </Key>
-        <Key ID="STR_KAT_Breathing_UseBVM_Oxygen_Progress">
-            <English>Using BVM with Oxygen</English>
-            <Spanish>Usando Ambú con bombona de oxigeno</Spanish>
-            <French>Utilisation du BVM avec de l'oxygène</French>
-            <Korean>산소 연결 인공호흡기 사용 중</Korean>
-            <Polish>Używanie BVM z Tlenem</Polish>
-            <Japanese>BVMと酸素を使用中</Japanese>
-            <German>Beatme mit BVM und Sauerstoff</German>
-            <Czech>Používání RV s Kyslíkem</Czech>
-            <Italian>Usando maschera ambu con l'ossigeno</Italian>
-        </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle">
             <English>Use BVM with Oxygen Tank (Vehicle)</English>
             <German>Verwende BVM mit Sauerstoff (Fahrzeug)</German>
@@ -1473,15 +1435,6 @@
             <French>Utiliser le BVM avec un réservoir d'oxygène (Véhicule)</French>
             <Italian>Usa maschera ambu con la bombola d'ossigeno (veicolo)</Italian>
             <Spanish>Usar la BVM con un tanque de oxígeno (vehículo)</Spanish>
-        </Key>
-        <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
-            <English>Using BVM with Oxygen Tank (Vehicle)</English>
-            <German>Beatme mit BVM und Sauerstoff (vom Fahrzeug)</German>
-            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용 중</Korean>
-            <Japanese>BVMと車両の酸素ボンベを使用中</Japanese>
-            <French>Utilisation du BVM avec un réservoir d'oxygène (Véhicule)</French>
-            <Italian>Usando maschera ambu con la bombola d'ossigeno (veicolo)</Italian>
-            <Spanish>Usando la BVM con un tanque de oxígeno (vehículo)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
@@ -1681,27 +1634,14 @@
             <Czech>Prázdná Kyslíková Lahev, lze doplnit u zdravotnického vozidla či zařízení.</Czech>
             <Italian>Bombola VUOTA di ossigeno portatile, riempirla presso un veicolo o una struttura medica</Italian>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_BVMTime">
-            <English>BVM Use Time</English>
-            <Spanish>Tiempo de uso del Ambú</Spanish>
-            <French>Temps d'utilisation du BVM</French>
-            <Korean>인공호흡기 사용 시간</Korean>
-            <Polish>Czas użycia Worka samorozprężalnego</Polish>
-            <Japanese>BVMの使用にかかる時間</Japanese>
-            <German>BVM Benutzungszeit</German>
-            <Czech>Doba použití RV</Czech>
-            <Italian>Tempo di utilizzo maschera ambu</Italian>
+        <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier">
+            <English>BVM Oxygen Effectiveness Multiplier</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_BVMTime_DESC">
-            <English>Sets BVM usage period length</English>
-            <Spanish>Fija el tiempo de uso del Ambú</Spanish>
-            <French>Règle le temps nécessaire pour utiliser le BVM</French>
-            <Korean>인공호흡기 사용 시간 길이를 설정합니다</Korean>
-            <Polish>Ustawia czas użycia akcji</Polish>
-            <Japanese>BVMの使用期間の長さを設定</Japanese>
-            <German>Legt die Länge des BVM-Nutzungszeitraums fest</German>
-            <Czech>Nastavuje dobu k použití RV</Czech>
-            <Italian>Imposta la durata del periodo di utilizzo della maschera ambu</Italian>
+        <Key ID="STR_KAT_Breathing_Activity_BVM">
+            <English>%1 used %2 (x%3)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Activity_BVM_Oxygenated">
+            <English>%1 (Oxygenated)</English>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
