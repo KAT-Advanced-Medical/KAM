@@ -79,6 +79,9 @@ _unit setVariable [QEGVAR(circulation,StoredBloodPressure), [0,0], true];
 
 _unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 
+_unit setVariable [QEGVAR(circulation,isPerformingCPR), false, true];
+_unit setVariable [QEGVAR(circulation,OxygenationPeriod), 0, true];
+
 // KAT Misc
 _unit setVariable [QEGVAR(misc,isLeftArmFree), true, true];
 _unit setVariable [QEGVAR(misc,isRightArmFree), true, true];

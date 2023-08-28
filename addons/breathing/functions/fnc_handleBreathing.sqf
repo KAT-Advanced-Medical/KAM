@@ -61,6 +61,7 @@ if (!local _unit) then {
     private _finalOutput = 0;
     private _multiplierPositive = GVAR(SpO2_MultiplyPositive);
     private _multiplierNegative = GVAR(SpO2_MultiplyNegative);
+	private _multiplierOxygen = GVAR(BVMOxygen_Multiplier);
     private _perfusionActive = false;
 
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
@@ -99,7 +100,7 @@ if (!local _unit) then {
                 if (_heartRate >= 25) exitWith {
                     if (_BVMInUse) then {
                         if(_oxygenAssisted) then {
-                            _output = 0.8;
+                            _output = 0.8 * _multiplierOxygen;
                         } else {
                             _output = 0.45;
                         };
@@ -113,7 +114,7 @@ if (!local _unit) then {
                 if (_overstretch && _unit getVariable [QEGVAR(airway,obstruction), false] && !(_unit getVariable [QEGVAR(airway,occlusion), false]) && _heartRate >= 25) exitWith {
                     if(_BVMInUse) then {
                         if(_oxygenAssisted) then {
-                            _output = 0.5;
+                            _output = 0.5 * _multiplierOxygen;
                         } else {
                             _output = 0.24;
                         };
