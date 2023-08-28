@@ -306,6 +306,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets interval at which CPR chance is rolled
+[
+    QGVAR(CPR_ChanceInterval),
+    "SLIDER",
+    LLSTRING(SETTING_CPR_ChanceInterval),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
+    [1 , 3600, 15, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets oxygenation period length after CPR has stopped
+[
+    QGVAR(CPR_OxygenationPeriod),
+    "SLIDER",
+    LLSTRING(SETTING_CPR_OxygenationPeriod),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
+    [0, 3600, 15, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 //Advanced Rhythms
 [
     QGVAR(AdvRhythm),
@@ -475,6 +495,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_MINIMUM_SAFE_DRAW),LLSTRING(SETTING_MINIMUM_SAFE_DRAW_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_BloodDraw)],
     [0, 6, 3.6, 1], // 3.6 default matches ACE Class IV hemorrhage 
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(cardiacArrestBleedRate),
+    "SLIDER",
+    LLSTRING(SETTING_cardiacArrestBleedRate),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [0, 0.2, 0.05, 3],
     true
 ] call CBA_Settings_fnc_init;
 

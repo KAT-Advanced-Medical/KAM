@@ -52,26 +52,22 @@ switch (_source) do {
         [{ // Disconnect monitoring if patient gets too far
             params ["_medic", "_patient", "_provider"];
         
-            (_patient distance2D _provider) > GVAR(Defibrillator_DistanceLimit) || !((objectParent _medic) isEqualTo (objectParent _patient));
+            (_patient distance _provider) > GVAR(Defibrillator_DistanceLimit) || !((objectParent _medic) isEqualTo (objectParent _patient));
         }, {
             params ["_medic", "_patient", "_provider"];
-        
-            if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
-                [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
-                if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
-                    [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+
+            if !(_patient isEqualTo objNull) then {
+                if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+                    [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+                    if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                        [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                    };
                 };
+            } else {
+                [_medic, objNull, true, 1, _provider] call FUNC(AEDX_DisconnectVitalsMonitor);
+                [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
             };
-        }, [_medic, _patient, _placedDefibrillator], 3600, {
-            params ["_medic", "_patient", "_provider"];
-        
-            if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
-                [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
-                if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
-                    [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-                };
-            };
-        }] call CBA_fnc_waitUntilAndExecute;
+        }, [_medic, _patient, _placedDefibrillator], 3600] call CBA_fnc_waitUntilAndExecute;
     };
     case 2: { // Vehicle
         _provider = objectParent _patient;
@@ -84,12 +80,14 @@ switch (_source) do {
         }, {
             params ["_medic", "_patient", "_provider"];
 
-            [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
-        }, [_medic, _patient, _provider], 3600, {
-            params ["_medic", "_patient", "_provider"];
-        
-            [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
-        }] call CBA_fnc_waitUntilAndExecute;
+            if !(_patient isEqualTo objNull) then {
+                [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+
+                if ((objectParent _medic) isEqualTo _provider && !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false])) then {
+                    [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                };
+            };
+        }, [_medic, _patient, _provider], 3600] call CBA_fnc_waitUntilAndExecute;
     };
     default { // Medic
         _provider = _medic;
@@ -99,26 +97,22 @@ switch (_source) do {
         [{ // Disconnect monitoring if patient gets too far
             params ["_medic", "_patient"];
         
-            (_patient distance2D _medic) > GVAR(Defibrillator_DistanceLimit) || !((objectParent _medic) isEqualTo (objectParent _patient));
+            (_patient distance _medic) > GVAR(Defibrillator_DistanceLimit) || !((objectParent _medic) isEqualTo (objectParent _patient));
         }, {
             params ["_medic", "_patient"];
 
-            if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
-                [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
-                if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
-                    [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+            if !(_patient isEqualTo objNull) then {
+                if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
+                    [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
+                    if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
+                        [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+                    };
                 };
+            } else {
+                [_medic, objNull, true, 0, _medic] call FUNC(AEDX_DisconnectVitalsMonitor);
+                [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
             };
-        }, [_medic, _patient], 3600, {
-            params ["_medic", "_patient"];
-
-            if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
-                [_medic, _patient] call FUNC(AEDX_DisconnectVitalsMonitor);
-                if !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
-                    [LLSTRING(Defibrillator_PatientDisconnected), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-                };
-            };
-        }] call CBA_fnc_waitUntilAndExecute;
+        }, [_medic, _patient], 3600] call CBA_fnc_waitUntilAndExecute;
     };
 };
 

@@ -32,6 +32,7 @@ PREP(treatmentAdvanced_medicationLocal);
 PREP(treatmentAdvanced_Naloxone);
 PREP(treatmentAdvanced_NaloxoneLocal);
 PREP(treatmentAdvanced_Painkillers);
+PREP(treatmentAdvanced_Penthrox);
 PREP(treatmentAdvanced_Pervitin);
 PREP(treatmentAdvanced_PervitinLocal);
 PREP(treatmentAdvanced_Reorientation);

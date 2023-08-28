@@ -222,5 +222,16 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 0;
         };
+        class Penthrox {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-0, -5};
+            hrIncreaseNormal[] = {-5, -10};
+            hrIncreaseHigh[] = {-5, -15};
+            timeInSystem = 300;
+            timeTillMaxEffect = 10;
+            maxDose = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = 5;
+        };
     };
 };

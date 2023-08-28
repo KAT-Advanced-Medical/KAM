@@ -130,6 +130,29 @@
 #define VAR_IN_PAIN           QACEGVAR(medical,inPain)
 #define VAR_TOURNIQUET        QACEGVAR(medical,tourniquets)
 #define VAR_FRACTURES         QACEGVAR(medical,fractures)
+#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
+
+// - Unit Functions ---------------------------------------------------
+// Retrieval macros for common unit values
+// Defined for easy consistency and speed
+#define GET_SM_STATE(_unit)         ([_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState)
+#define GET_BLOOD_VOLUME(unit)      (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
+#define GET_WOUND_BLEEDING(unit)    (unit getVariable [VAR_WOUND_BLEEDING, 0])
+#define GET_HEART_RATE(unit)        (unit getVariable [VAR_HEART_RATE, DEFAULT_HEART_RATE])
+#define GET_HEMORRHAGE(unit)        (unit getVariable [VAR_HEMORRHAGE, 0])
+#define GET_PAIN(unit)              (unit getVariable [VAR_PAIN, 0])
+#define GET_PAIN_SUPPRESS(unit)     (unit getVariable [VAR_PAIN_SUPP, 0])
+#define GET_FRACTURES(unit)         (unit getVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES])
+#define IN_CRDC_ARRST(unit)         (unit getVariable [VAR_CRDC_ARRST, false])
+#define IS_BLEEDING(unit)           (GET_WOUND_BLEEDING(unit) > 0)
+#define IS_IN_PAIN(unit)            (unit getVariable [VAR_IN_PAIN, false])
+#define IS_UNCONSCIOUS(unit)        (unit getVariable [VAR_UNCON, false])
+#define GET_OPEN_WOUNDS(unit)       (unit getVariable [VAR_OPEN_WOUNDS, []])
+#define GET_BANDAGED_WOUNDS(unit)   (unit getVariable [VAR_BANDAGED_WOUNDS, []])
+#define GET_STITCHED_WOUNDS(unit)   (unit getVariable [VAR_STITCHED_WOUNDS, []])
+#define GET_DAMAGE_THRESHOLD(unit)  (unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)])
+
+#define GET_PAIN_PERCEIVED(unit)    (0 max (GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1)
 
 #define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
 #define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
@@ -205,11 +228,13 @@
 #include "script_debug.hpp"
 
 // Airway
-#define VAR_SPO2                    QEGVAR(breathing,airwayStatus)
-#define GET_SPO2(unit)              (unit getVariable [VAR_SPO2, 100])
+#define VAR_SPO2                       QEGVAR(breathing,airwayStatus)
+#define GET_SPO2(unit)                 (unit getVariable [VAR_SPO2, 100])
 
 // Circulation
-#define VAR_INTERNAL_BLEEDING       QEGVAR(circulation,internalBleeding)
-#define GET_INTERNAL_BLEEDING(unit) (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
+#define VAR_INTERNAL_BLEEDING          QEGVAR(circulation,internalBleeding)
+#define GET_INTERNAL_BLEEDING(unit)    (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
 
-#define GET_BLOOD_PRESSURE(unit)    ([unit] call ACEFUNC(medical_status,getBloodPressure))
+#define GET_BLOOD_PRESSURE(unit)       ([unit] call EFUNC(circulation,getBloodPressure))
+#define VAR_BLOODPRESSURE_CHANGE       QEGVAR(circulation,bloodPressureChange)
+#define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])

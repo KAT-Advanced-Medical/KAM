@@ -65,4 +65,20 @@ class CfgMagazines {
         lastRoundsTracer = 0;
         mass = 1;
     };
+    class kat_Penthrox: CA_Magazine {
+        author = "Blue";
+        scope = 2;
+
+        displayName = CSTRING(Penthrox_Display);
+        descriptionShort = CSTRING(Penthrox_DescShort);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        picture = QPATHTOF(ui\icon_penthrox.paa);
+
+        ammo = "";
+        count = 10;
+        initSpeed = 0;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+        mass = 1;
+    };
 };
