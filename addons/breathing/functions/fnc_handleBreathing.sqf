@@ -61,7 +61,7 @@ if (!local _unit) then {
     private _finalOutput = 0;
     private _multiplierPositive = GVAR(SpO2_MultiplyPositive);
     private _multiplierNegative = GVAR(SpO2_MultiplyNegative);
-	private _multiplierOxygen = GVAR(BVMOxygen_Multiplier);
+    private _multiplierOxygen = GVAR(BVMOxygen_Multiplier);
     private _perfusionActive = false;
 
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
