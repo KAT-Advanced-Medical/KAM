@@ -18,11 +18,11 @@
 
 params ["_unit", "_carrier"];
 
-["", "Cancel Carrying", ""] call ACEFUNC(interaction,showMouseHint);
+["", LLSTRING(CancelCarrying), ""] call ACEFUNC(interaction,showMouseHint);
 GVAR(Carrier) = _carrier;
 
 _unit setVariable [QGVAR(GetOffActionID), [0xF1, [false, false, false], {
-    [format ["Stopped carrying %1", [(GVAR(Carrier) getVariable QACEGVAR(dragging,carriedObject)), true] call ACEFUNC(common,getName)], 1.5, GVAR(Carrier)] call ACEFUNC(common,displayTextStructured);
+    [format [LLSTRING(StoppedCarrying%1), [(GVAR(Carrier) getVariable QACEGVAR(dragging,carriedObject)), true] call ACEFUNC(common,getName)], 1.5, GVAR(Carrier)] call ACEFUNC(common,displayTextStructured);
     [QGVAR(dropObject_carryLocal), [GVAR(Carrier), (GVAR(Carrier) getVariable QACEGVAR(dragging,carriedObject))], GVAR(Carrier)] call CBA_fnc_targetEvent;
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler];
 
@@ -34,7 +34,7 @@ _unit setVariable [QGVAR(GetOffActionID), [0xF1, [false, false, false], {
     params ["_carrier", "_unit"];
 
     if !(_carrier getVariable [QACEGVAR(dragging,carriedObject), objNull] isEqualTo objNull) then {
-        [format ["Stopped carrying %1", [(_this select 0), true] call ACEFUNC(common,getName)], 1.5, GVAR(Carrier)] call ACEFUNC(common,displayTextStructured);
+        [format [LLSTRING(StoppedCarrying%1), [(_this select 0), true] call ACEFUNC(common,getName)], 1.5, GVAR(Carrier)] call ACEFUNC(common,displayTextStructured);
         [QGVAR(dropObject_carryLocal), [GVAR(Carrier), (GVAR(Carrier) getVariable QACEGVAR(dragging,carriedObject))], GVAR(Carrier)] call CBA_fnc_targetEvent;
     };
 }, [_carrier, _unit], 3600, {}] call CBA_fnc_waitUntilAndExecute;
