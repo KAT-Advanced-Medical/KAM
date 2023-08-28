@@ -56,7 +56,7 @@ timeOut = true;
 [{
     params ["_medic", "_patient", "_pocket", "_useOxygen", "_oxygenOrigin", "_notInVehicle"];
 
-    ["Put away BVM", "", ""] call ACEFUNC(interaction,showMouseHint);
+    [LLSTRING(UseBVM_PutAway), "", ""] call ACEFUNC(interaction,showMouseHint);
     [{
         params ["_args", "_idPFH"];
         _args params ["_medic", "_patient", "_pocket", "_useOxygen", "_oxygenOrigin", "_notInVehicle"];
@@ -91,7 +91,7 @@ timeOut = true;
             };
 
             [_patient, "activity", LSTRING(Activity_BVM), [[_medic, false, true] call ACEFUNC(common,getName), _bvmType, totalProvided]] call ACEFUNC(medical_treatment,addToLog);
-            ["Rescue Breaths Cancelled", 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+            [LLSTRING(UseBVM_Cancelled), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
         };
 
         if !(timeOut) then {

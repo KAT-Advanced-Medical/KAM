@@ -199,7 +199,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class UseBVM {
         displayName = CSTRING(UseBVM);
-        displayNameProgress = CSTRING(UseBVM_Progress);
+        displayNameProgress = "";
         category = "airway";
         treatmentLocations = 0;
         allowedSelections[] = {"Head"};
@@ -223,7 +223,6 @@ class ACE_Medical_Treatment_Actions {
     };
     class UsePocketBVM: UseBVM {
         displayName = CSTRING(UsePocketBVM);
-        displayNameProgress = CSTRING(UsePocketBVM_Progress);
         medicRequired = QGVAR(medLvl_PocketBVM);
         items[] = {"kat_pocketBVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM));
@@ -231,7 +230,6 @@ class ACE_Medical_Treatment_Actions {
     };
     class UseBVMPortableOxygen: UseBVM {
         displayName = CSTRING(UseBVM_PortableOxygen);
-        displayNameProgress = CSTRING(UseBVM_PortableOxygen_Progress);
         medicRequired = QGVAR(medLvl_BVM_Oxygen);
         items[] = {"kat_BVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM) && _medic call FUNC(hasOxygenTank) && (GVAR(locationProvideOxygen) isEqualTo 0 || !((GVAR(locationProvideOxygen) in [ARR_2(2,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalFacility)) || ((GVAR(locationProvideOxygen) in [ARR_2(1,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalVehicle))))));
@@ -239,7 +237,6 @@ class ACE_Medical_Treatment_Actions {
     };
     class UseBVMPortableOxygenVehicle: UseBVM {
         displayName = CSTRING(UseBVM_PortableOxygen_Vehicle);
-        displayNameProgress = CSTRING(UseBVM_PortableOxygen_Vehicle_Progress);
         medicRequired = QGVAR(medLvl_BVM_Oxygen);
         items[] = {"kat_BVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM) && [ARR_2((vehicle _medic),true)] call FUNC(hasOxygenTank) && ((vehicle _medic) != _medic) && (vehicle _medic) isEqualTo (vehicle _patient));
@@ -247,7 +244,6 @@ class ACE_Medical_Treatment_Actions {
     };
     class UseBVMOxygen: UseBVM {
         displayName = CSTRING(UseBVM_Oxygen);
-        displayNameProgress = CSTRING(UseBVM_Oxygen_Progress);
         medicRequired = QGVAR(medLvl_BVM_Oxygen);
         items[] = {"kat_BVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM) && ((GVAR(locationProvideOxygen) in [ARR_2(2,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalFacility)) || (GVAR(locationProvideOxygen) in [ARR_2(1,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalVehicle))));
