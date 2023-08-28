@@ -1,5 +1,22 @@
 class ACE_Medical_Treatment_Actions {
     class CheckPulse;
+    class CheckBreathing: CheckPulse {
+        displayName = CSTRING(Check_Breathing);
+        displayNameProgress = CSTRING(Check_Breathing_Progress);
+        category = "airway";
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 0;
+        medicRequired = 0;
+        treatmentTime = 2;
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)));
+        callbackSuccess = QFUNC(checkBreathing);
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationMedic = "";
+        animationMedicProne = "";
+        sounds[] = {};
+    };
     class InspectChest: CheckPulse {
         displayName = CSTRING(inspectChest_display);
         displayNameProgress = CSTRING(inspectChest_progress);

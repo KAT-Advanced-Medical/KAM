@@ -167,20 +167,6 @@ class ACE_Medical_Treatment_Actions {
         animationMedicProne = "";
         sounds[] = {};
     };
-    class BreathCheck: Carbonate {
-        displayName = CSTRING(Check_Breath);
-        category = "examine";
-        allowedSelections[] = {"Head"};
-        allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = 2;
-        items[] = {};
-        condition = "true";
-        callbackSuccess = QFUNC(inspectBreath);
-        animationMedic = "";
-        animationMedicProne = "";
-        sounds[] = {};
-    };
     class Norepinephrine: EACA {
         displayName = CSTRING(Take_Norep);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};

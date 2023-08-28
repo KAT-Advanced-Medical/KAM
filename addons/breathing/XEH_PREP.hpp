@@ -1,4 +1,5 @@
 PREP(canUseBVM);
+PREP(checkBreathing);
 PREP(checkPulseOximeter);
 PREP(handleBreathing);
 PREP(handlePulmoHit);

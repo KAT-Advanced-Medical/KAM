@@ -1771,6 +1771,42 @@
             <Italian>Imposta se i veicoli med o strutture mediche possono fornire ossigeno.</Italian>
             <Spanish>Establece si los vehículos o instalaciones médicas pueden suministrar oxígeno</Spanish>
         </Key>
+        <Key ID="STR_KAT_Breathing_Check_Breathing">
+            <English>Check Breathing</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Check_Breathing_Progress">
+            <English>Checking Breathing</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breath_stink">
+            <English>, harsh and metallic</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breath_mild">
+            <English>, slightly fruity</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isNormal">
+            <English>Patient is breathing normally</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isShallow">
+            <English>Patient's breathing is shallow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_shallow">
+            <English>Shallow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_none">
+            <English>Patient is not breathing</English>
+            <Japanese>患者は呼吸していません</Japanese>
+            <Korean>환자가 숨을 쉬지 않습니다</Korean>
+            <Italian>Il paziente non sta respirando</Italian>
+            <German>Patient atmet nicht</German>
+            <Portuguese>O paciente não está respirando</Portuguese>
+            <French>Le patient ne respire pas</French>
+            <Polish>Pacjent nie oddycha</Polish>
+            <Spanish>El paciente no esta respirando</Spanish>
+            <Czech>Pacient nedýchá</Czech>
+        </Key>
+        <Key ID="STR_KAT_Breathing_CheckBreathing_Log">
+            <English>%1 checked breathing: %2</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
             <English>Enable Inspect Chest</English>
         </Key>
