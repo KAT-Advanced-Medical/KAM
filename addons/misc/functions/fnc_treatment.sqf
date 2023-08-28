@@ -182,7 +182,7 @@ if (_callbackProgress isEqualTo {}) then {
 [
     _treatmentTime,
     [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _extraArgs],
-    ACEFUNC(medical_treatment,treatmentSuccess),
+    FUNC(treatmentSuccess),
     ACEFUNC(medical_treatment,treatmentFailure),
     getText (_config >> "displayNameProgress"),
     _callbackProgress,
