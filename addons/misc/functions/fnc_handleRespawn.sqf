@@ -34,10 +34,11 @@ _unit setVariable [QEGVAR(airway,airway_item), "", true];
 // KAT Breathing
 
 _unit setVariable [QEGVAR(breathing,airwayStatus), 100, true];
-_unit setVariable [QEGVAR(breathing,pneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,pneumothorax), 0, true];
 _unit setVariable [QEGVAR(breathing,hemopneumothorax), false, true];
 _unit setVariable [QEGVAR(breathing,tensionpneumothorax), false, true];
 _unit setVariable [QEGVAR(breathing,activeChestSeal), false, true];
+_unit setVariable [QEGVAR(breathing,deepPenetratingInjury), false, true];
 _unit setVariable [QEGVAR(breathing,PneumoBreathCooldownOn), false, true];
 
 _unit setVariable [QEGVAR(breathing,BVMInUse), false, true];
@@ -76,6 +77,10 @@ _unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUN
 _unit setVariable [QEGVAR(circulation,internalBleeding), 0, true];
 _unit setVariable [QEGVAR(circulation,StoredBloodPressure), [0,0], true];
 
+_unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
+
+_unit setVariable [QEGVAR(circulation,isPerformingCPR), false, true];
+_unit setVariable [QEGVAR(circulation,OxygenationPeriod), 0, true];
 
 // KAT Misc
 _unit setVariable [QEGVAR(misc,isLeftArmFree), true, true];

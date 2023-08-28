@@ -306,6 +306,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets interval at which CPR chance is rolled
+[
+    QGVAR(CPR_ChanceInterval),
+    "SLIDER",
+    LLSTRING(SETTING_CPR_ChanceInterval),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
+    [1 , 3600, 15, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets oxygenation period length after CPR has stopped
+[
+    QGVAR(CPR_OxygenationPeriod),
+    "SLIDER",
+    LLSTRING(SETTING_CPR_OxygenationPeriod),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_CPR)],
+    [0, 3600, 15, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 //Advanced Rhythms
 [
     QGVAR(AdvRhythm),

@@ -1126,17 +1126,44 @@
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CheckPads">
             <English>Check Pads</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_SHOCKADVISED">
+            <English>SHOCK ADVISED</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_NOSHOCKADVISED">
+            <English>NO SHOCK ADVISED</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_ANALYZINGEKG">
+            <English>ANALYZING EKG</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGED">
             <English>CHARGED</English>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGING">
             <English>CHARGING</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_AED_DISARMED">
+            <English>AED DISARMED</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DISARMED">
             <English>DISARMED</English>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DeliveredEnergy">
             <English>Delivered Energy</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
+            <English>ENERGY DELIVERED</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_StandClear">
+            <English>Stand Clear</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_PerformCPR">
+            <English>Perform CPR</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_PUSHSHOCK">
+            <English>PUSH SHOCK</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_PushAnalyze">
+            <English>Push Analyze</English>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -1632,6 +1659,21 @@
             <Japanese>一般兵の最小CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa min. de RCP para el resto</Spanish>
             <Portuguese>Probabilidade mínima de êxito de SBV para não-médicos</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval">
+            <English>CPR Chance Interval</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod">
+            <English>Oxygenation Period</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Activity_CPR">
+            <English>%1 performed CPR (%2)</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_StopCPR">
+            <English>Stop CPR</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_CancelCPR">
+            <English>CPR Cancelled</English>
         </Key>
         <Key ID="STR_KAT_Circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>

@@ -157,7 +157,15 @@ if (isNull objectParent _medic && {_medicAnim != ""}) then {
 // Don't attempt to play if sounds array is empty
 if (isArray (_config >> "sounds") && count getArray (_config >> "sounds") != 0) then {
     selectRandom getArray (_config >> "sounds") params ["_file", ["_volume", 1], ["_pitch", 1], ["_distance", 10]];
-    playSound3D [_file, objNull, false, getPosASL _medic, _volume, _pitch, _distance];
+    GVAR(TreatmentSound) = playSound3D [_file, objNull, false, getPosASL _medic, _volume, _pitch, _distance];
+    
+    [{
+        !dialog;
+    }, {
+        stopSound GVAR(TreatmentSound);
+    }, [], _treatmentTime, {
+        GVAR(TreatmentSound) = nil;
+    }] call CBA_fnc_waitUntilAndExecute;
 };
 
 GET_FUNCTION(_callbackStart,_config >> "callbackStart");
@@ -174,7 +182,7 @@ if (_callbackProgress isEqualTo {}) then {
 [
     _treatmentTime,
     [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _extraArgs],
-    ACEFUNC(medical_treatment,treatmentSuccess),
+    FUNC(treatmentSuccess),
     ACEFUNC(medical_treatment,treatmentFailure),
     getText (_config >> "displayNameProgress"),
     _callbackProgress,

@@ -128,6 +128,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Clear Chest Seal from medical menu after treatment
+[
+    QGVAR(clearChestSealAfterTreatment),
+    "CHECKBOX",
+    LLSTRING(SETTING_clearChestSealAfterTreatment),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 // Sets SpO2 level threshold for audible warning
 [
     QGVAR(PulseOximeter_SpO2Warning),
@@ -199,6 +209,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets if damage above pneumothorax damage threshold increases chance of inflicting pneumothorax or advanced pneumothorax
+[
+    QGVAR(pneumothoraxDamageThreshold_TakenDamage),
+    "CHECKBOX",
+    [LLSTRING(SETTING_PneumothoraxDamageThreshold_DamageTaken), LLSTRING(SETTING_PneumothoraxDamageThreshold_DamageTaken_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted
+[
+    QGVAR(deepPenetratingInjuryChance),
+    "SLIDER",
+    [LLSTRING(SETTING_deepPenetratingInjuryChance), LLSTRING(SETTING_deepPenetratingInjuryChance_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [0, 100, 30, 0, false],
+    true
+] call CBA_Settings_fnc_init;
+
 // Sets how much internal bleeding is applied while suffering from hemopneumothorax
 [
     QGVAR(HPTXBleedAmount),
@@ -209,43 +239,43 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might help
-[
-    QGVAR(pneumothorax_hardcore),
-    "CHECKBOX",
-    [LLSTRING(SETTING_pneumothorax_hardcore), LLSTRING(SETTING_pneumothorax_hardcore_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [false],
-    true
-] call CBA_Settings_fnc_init;
-
-// Enables hardcore mod for tension and hemopneumothorax by not making it appear in medical menu - Stethoscope might help
-[
-    QGVAR(tensionhemothorax_hardcore),
-    "CHECKBOX",
-    [LLSTRING(SETTING_tensionhemothorax_hardcore), LLSTRING(SETTING_tensionhemothorax_hardcore_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [false],
-    true
-] call CBA_Settings_fnc_init;
-
 //Chance for pneumothorax to deteriorate into tension pneumothorax
 [
     QGVAR(deterioratingPneumothorax_chance),
     "SLIDER",
-    [LLSTRING(SETTING_deterioratingPneumothorax_chance), LLSTRING(SETTING_deterioratingPneumothorax_chance_Desc)],
+    [LLSTRING(SETTING_deterioratingPneumothorax_chance), LLSTRING(SETTING_deterioratingPneumothorax_chance_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [0, 100, 10, 0],
+    [0, 100, 50, 0],
     true
 ] call CBA_Settings_fnc_init;
 
 //Deteriorating pneumothorax countdown
 [
-    QGVAR(deterioratingPneumothorax_countdown),
+    QGVAR(deterioratingPneumothorax_interval),
     "SLIDER",
-    [LLSTRING(SETTING_deterioratingPneumothorax_countdown), LLSTRING(SETTING_deterioratingPneumothorax_countdown_Desc)],
+    [LLSTRING(SETTING_deterioratingPneumothorax_interval), LLSTRING(SETTING_deterioratingPneumothorax_interval_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
-    [1, 3600, 120, 0],
+    [1, 3600, 60, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Set if pneumothorax injury should always be visible in medical menu
+[
+    QGVAR(PneumothoraxAlwaysVisible),
+    "CHECKBOX",
+    [LLSTRING(SETTING_PneumothoraxAlwaysVisible), LLSTRING(SETTING_PneumothoraxAlwaysVisible_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+// Set if tension/hemopneumothorax injury should always be visible in medical menu
+[
+    QGVAR(TensionHemothoraxAlwaysVisible),
+    "CHECKBOX",
+    [LLSTRING(SETTING_TensionHemothoraxAlwaysVisible), LLSTRING(SETTING_TensionHemothoraxAlwaysVisible_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -256,6 +286,36 @@ PREP_RECOMPILE_END;
     [LLSTRING(showPneumothorax_dupe),LLSTRING(showPneumothorax_dupe_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [false],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets if inspect chest action is enabled
+[
+    QGVAR(inspectChest_enable),
+    "LIST",
+    LLSTRING(SETTING_inspectChest_enable),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [[0, 1, 2], [ACELLSTRING(Common,Disabled), LLSTRING(SETTING_inspectChest_enable_simple), ACELLSTRING(Common,Enabled)], 2],
+    true
+] call CBA_Settings_fnc_init;
+
+// Sets medical level required to inspect chest
+[
+    QGVAR(inspectChest_medLvl),
+    "LIST",
+    LLSTRING(SETTING_inspectChest_medLvl),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Sets chest inspect action time
+[
+    QGVAR(inspectChest_time),
+    "SLIDER",
+    [LLSTRING(SETTING_inspectChest_time)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [1, 60, 6, 1],
     true
 ] call CBA_Settings_fnc_init;
 

@@ -40,7 +40,11 @@ private _fnc_advRhythm = {
             if (_patient getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 1) then {
                 _patient setVariable [QGVAR(cardiacArrestType), 3, true];
             } else {
-                _patient setVariable [QGVAR(cardiacArrestType), _patientState + 1, true];
+                if (_patient getVariable [QGVAR(cardiacArrestType), 0] < 4) then {
+                    _patient setVariable [QGVAR(cardiacArrestType), _patientState + 1, true];
+                } else {
+                    _patient setVariable [QGVAR(cardiacArrestType), 0, true];
+                };
             };
         };
     } else {
@@ -84,7 +88,6 @@ private _fnc_advRhythm = {
 
 switch (_reviveObject) do {
     case "CPR": {
-        [_patient, "activity", ACELSTRING(medical_treatment,Activity_CPR), [[_medic, false, true] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
         if (GVAR(enable_CPR_Chances)) then {
             switch (_medic getVariable [QACEGVAR(medical,medicClass),0]) do {
                 case 0: {
@@ -164,10 +167,15 @@ if !(GVAR(enable_CPR_Chances)) then {
 
     if (_random <= _chance) then {
         if (GVAR(AdvRhythm)) then {
-            [_patient, true] call _fnc_advRhythm;
+            if (_patient getVariable [QGVAR(cardiacArrestType), 0] != 0) then {
+                [_patient, true] call _fnc_advRhythm;
+            };
         } else {
             [QACEGVAR(medical,CPRSucceeded), _patient] call CBA_fnc_localEvent;
         };
         _patient setVariable [QGVAR(cprCount), 2, true];
+    } else {
+        _CPRcount = _CPRcount + 1;
+        _patient setVariable [QGVAR(cprCount), _CPRcount, true];
     };
 };
