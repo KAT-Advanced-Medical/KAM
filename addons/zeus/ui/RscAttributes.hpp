@@ -159,9 +159,12 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                             toolTip = "";
                             y = QUOTE(H_PART(2.2));
                         };
-                        class Pneumothorax: Obstruction {
-                            idc = 16103;
+                        class PneumothoraxValue: RscXSliderH {
+                            idc = 16105;
+                            x = QUOTE(W_PART(10.1));
                             y = QUOTE(H_PART(2.2));
+                            w = QUOTE(W_PART(15.9));
+                            h = QUOTE(H_PART(1));
                         };
                         class Title4: Title1 {
                             idc = -1;
@@ -170,7 +173,7 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                             y = QUOTE(H_PART(3.3));
                         };
                         class Hemopneumothorax: Obstruction {
-                            idc = 16104;
+                            idc = 16103;
                             y = QUOTE(H_PART(3.3));
                         };
                         class Title5: Title1 {
@@ -180,7 +183,7 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                             y = QUOTE(H_PART(4.4));
                         };
                         class Tensionpneumothorax: Obstruction {
-                            idc = 16105;
+                            idc = 16104;
                             y = QUOTE(H_PART(4.4));
                         };
                         class Title6: Title1 {
@@ -206,16 +209,16 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
 };
 
 
-class GVAR(RscAsystoleModule): RscDisplayAttributes {
-    onLoad = QUOTE([ARR_3('onLoad', _this, QQGVAR(RscAsystoleModule))] call FUNC(zeusAttributes));
-    onUnload = QUOTE([ARR_3('onUnload', _this, QQGVAR(RscAsystoleModule))] call FUNC(zeusAttributes));
+class GVAR(RscCardiacStateModule): RscDisplayAttributes {
+    onLoad = QUOTE([ARR_3('onLoad', _this, QQGVAR(RscCardiacStateModule))] call FUNC(zeusAttributes));
+    onUnload = QUOTE([ARR_3('onUnload', _this, QQGVAR(RscCardiacStateModule))] call FUNC(zeusAttributes));
     class Controls: Controls {
         class Background: Background {};
         class Title: Title {};
         class Content: Content {
             class Controls {
-                class changeShockableState: RscControlsGroupNoScrollbars {
-                    onSetFocus = QUOTE(_this call FUNC(ui_changeAsystole));
+                class changeCardiacState: RscControlsGroupNoScrollbars {
+                    onSetFocus = QUOTE(_this call FUNC(ui_changeCardiacState));
                     idc = 26424;
                     x = 0;
                     y = 0;
@@ -224,7 +227,7 @@ class GVAR(RscAsystoleModule): RscDisplayAttributes {
                     class controls {
                         class Title1: RscText {
                             idc = -1;
-                            text = CSTRING(shockablestate_Module_state);
+                            text = CSTRING(CardiacState_Module_State);
                             toolTip = "";
                             x = 0;
                             y = 0;
@@ -232,7 +235,7 @@ class GVAR(RscAsystoleModule): RscDisplayAttributes {
                             h = QUOTE(H_PART(1));
                             colorBackground[] = {0,0,0,0.5};
                         };
-                        class ShockableState: RscCombo {
+                        class CardiacState: RscCombo {
                             idc = 16112;
                             x = QUOTE(W_PART(10.1));
                             y = 0;
@@ -240,21 +243,26 @@ class GVAR(RscAsystoleModule): RscDisplayAttributes {
                             h = QUOTE(H_PART(1));
                             colorBackground[] = {0, 0, 0, 0.7};
                             class Items {
-                                class none {
+                                class None {
                                     text = "";
                                     default = 1;
                                 };
-                                class shockable {
-                                    text = CSTRING(shockablestate_Module_shockable);
+                                class Asystole {
+                                    text = CSTRING(CardiacState_Module_Asystole);
                                 };
-                                class non_shockable {
-                                    text = CSTRING(shockablestate_Module_non_shockable);
+                                class PEA {
+                                    text = CSTRING(CardiacState_Module_PEA);
+                                };
+                                class VF {
+                                    text = CSTRING(CardiacState_Module_VF);
+                                };
+                                class VT {
+                                    text = CSTRING(CardiacState_Module_VT);
                                 };
                             };
                         };
                     };
                 };
-
             };
         };
         class ButtonOK: ButtonOK {};

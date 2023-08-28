@@ -244,6 +244,15 @@
             <Russian>Используйте карбонат</Russian>
             <Portuguese>Administrar Carbonato de Amônio</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Pharma_Penthrox_Display">
+            <English>Penthrox Inhaler</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Use_Penthrox">
+            <English>Use Penthrox Inhaler</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
+            <English>Used to manage moderate pain</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
             <German>Zur Umkehrung einer Opioid-Überdosis</German>
@@ -1331,7 +1340,7 @@
             <Polish>Etomidat</Polish>
             <Korean>에토미데이트</Korean>
             <German>Etomidat</German>
-            <Japanese>エトミダート</Japanese>
+            <Japanese>エトミデート</Japanese>
             <Spanish>Etomidato</Spanish>
             <Portuguese>Etomidato</Portuguese>
         </Key>
@@ -1370,7 +1379,7 @@
             <Polish>Wstrzyknij Etomidat</Polish>
             <Korean>에토미데이트 투여</Korean>
             <German>Verabreiche Etomidat</German>
-            <Japanese>エトミダートを注入</Japanese>
+            <Japanese>エトミデートを注入</Japanese>
             <Spanish>Administrar Etomidato</Spanish>
             <Portuguese>Administrar Etomidato</Portuguese>
         </Key>
@@ -1966,7 +1975,7 @@
             <Korean>에토미데이트를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Etomidat</German>
             <Polish>Poziom wyszkolenia medycznego dla Etomidatu</Polish>
-            <Japanese>エトミダートに必要な医療レベル</Japanese>
+            <Japanese>エトミデートに必要な医療レベル</Japanese>
             <Spanish>Nivel médico requerido para el Etomidato</Spanish>
             <Portuguese>Nível médico exigido para uso de Etomidato</Portuguese>
         </Key>
@@ -1979,7 +1988,7 @@
             <French>Temps de traitement de l'Étomidate</French>
             <Korean>에토미데이트로 치료하는 시간</Korean>
             <German>Anwendungszeit für Etomidat</German>
-            <Japanese>エトミダートの施術時間</Japanese>
+            <Japanese>エトミデートの施術時間</Japanese>
             <Spanish>Tiempo para uso del Etomidato</Spanish>
             <Portuguese>Tempo de uso de Etomidato</Portuguese>
         </Key>
@@ -2060,6 +2069,12 @@
             <Japanese>ナルブフィンの治療時間</Japanese>
             <Spanish>Tiempo para uso de la Nalbufina</Spanish>
             <Portuguese>Tempo de uso de Nalbufina</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_medLvl_Penthrox">
+            <English>Medical level required for Penthrox Inhaler</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
+            <English>Treatment time for Penthrox Inhaler</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -2341,22 +2356,15 @@
             <French>Paramètres de l'Étomidate</French>
             <Korean>에토미데이트 설정</Korean>
             <German>Etomidat Einstellungen</German>
-            <Japanese>エトミダート設定</Japanese>
+            <Japanese>エトミデート設定</Japanese>
             <Spanish>Parámetros del Etomidato</Spanish>
             <Portuguese>Configurações de Etomidato</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Penthrox">
+            <English>Penthrox Inhaler Settings</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
-            <English>%1 performed a saline flush on %2</English>
-            <Italian>%1 ha eseguito uno sciacquo salino su %2</Italian>
-            <Czech>%1 provedl vypláchnutí fyziologickým roztokem na %2</Czech>
-            <French>%1 a effectué un rinçage à la solution saline sur %2</French>
-            <Polish>%1 przeprowadził płukanie solą fizjologiczną na %2 </Polish>
-            <Korean>%1 이(가) %2 에게 식염수 주입을 수행했습니다.</Korean>
-            <German>%1 hat an %2 eine Spülung mit Kochsalzlösung durchgeführt</German>
-            <Chinesesimp>%1 对 %2 使用了盐水冲洗</Chinesesimp>
-            <Japanese>%1 は %2 に生理食塩水フラッシュを実行しました</Japanese>
-            <Spanish>%1 realizó un enjuague con salino en %2</Spanish>
-            <Portuguese>%1 fez lavagem salínica em %2</Portuguese>
+            <English>%1 performed a saline flush</English>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
@@ -2383,57 +2391,6 @@
             <Japanese>患者のIVはクリアです</Japanese>
             <Spanish>La IV del paciente esta funcionando correctamente</Spanish>
             <Portuguese>IV do paciente está funcionando corretamente</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_breath_stink">
-            <English>Patient's breath is harsh and metallic</English>
-            <Czech>Dech pacienta je trpký a kovový</Czech>
-            <Italian>Il respiro del paziente è anormale e affannoso</Italian>
-            <French>L'haleine du patient est mauvaise et métallique</French>
-            <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
-            <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Chinesesimp>病人的呼吸是沙哑的</Chinesesimp>
-            <Japanese>患者の息はきつく金属臭がします</Japanese>
-            <Spanish>El aliento del paciente es áspero y metálico</Spanish>
-            <Polish>Oddech pacjenta jest ostry i metaliczny</Polish>
-            <Portuguese>O hálito do paciente está áspero e metálico</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_breath_mild">
-            <English>Patient's breath is slightly fruity</English>
-            <Italian>Il respiro del paziente è leggermente fruttato</Italian>
-            <Czech>Dech pacienta je mírně ovocný</Czech>
-            <French>L'haleine du patient est légèrement fruitée</French>
-            <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
-            <German>Der Atem des Patienten ist leicht fruchtig</German>
-            <Chinesesimp>病人的呼吸是平和的</Chinesesimp>
-            <Japanese>患者の息は少し果物臭がします</Japanese>
-            <Spanish>El aliento del paciente es dulce</Spanish>
-            <Polish>Oddech pacjenta jest lekko owocowy</Polish>
-            <Portuguese>O hálito do paciente está ligeiramente frutado</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_breath_good">
-            <English>Patient's breath is ok</English>
-            <Italian>Il respiro del paziente è ok</Italian>
-            <Czech>Dech pacienta je v pořádku</Czech>
-            <French>L'haleine du patient est bonne</French>
-            <Korean>환자의 호흡은 정상이다</Korean>
-            <German>Der Atem des Patienten ist in Ordnung</German>
-            <Chinesesimp>病人的呼吸是正常的</Chinesesimp>
-            <Japanese>患者の息は普通です</Japanese>
-            <Spanish>El aliento del paciente es normal</Spanish>
-            <Polish>Oddech pacjenta jest w porządku</Polish>
-            <Portuguese>O hálito do paciente está normal</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_breath_none">
-            <English>Patient is not breathing</English>
-            <Japanese>患者は呼吸していません</Japanese>
-            <Korean>환자가 숨을 쉬지 않습니다</Korean>
-            <Italian>Il paziente non sta respirando</Italian>
-            <German>Patient atmet nicht</German>
-            <Portuguese>O paciente não está respirando</Portuguese>
-            <French>Le patient ne respire pas</French>
-            <Polish>Pacjent nie oddycha</Polish>
-            <Spanish>El paciente no esta respirando</Spanish>
-            <Czech>Pacient nedýchá</Czech>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Kidney_Action">
             <English>Kidney damage/failure</English>
@@ -2755,19 +2712,6 @@
             <Japanese>血液凝固を促進し、出血を抑えます</Japanese>
             <Spanish>Favorece la coagulación</Spanish>
             <Portuguese>Favorece a coagulação</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Check_Breath">
-            <English>Check Breath</English>
-            <Italian>Controlla il respiro</Italian>
-            <Czech>Zkontrolovat dech</Czech>
-            <French>Contrôler l'haleine</French>
-            <Polish>Sprawdź oddech</Polish>
-            <Korean>호흡 확인</Korean>
-            <German>Überprüfe Atem</German>
-            <Chinesesimp>检查呼吸</Chinesesimp>
-            <Japanese>呼吸の確認</Japanese>
-            <Spanish>Revisar aliento</Spanish>
-            <Portuguese>Checar hálito</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Inspect_Catheter">
             <English>Inspect Catheter</English>

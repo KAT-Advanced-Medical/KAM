@@ -373,6 +373,9 @@
             <Spanish>Permitir autotratarse con un sello torácico</Spanish>
             <Portuguese>Permitir auto-tratamento com Selo Torácico</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment">
+            <English>Clear Chest Seal after treatment</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
             <German>Stabiler SpO2 Wert, um Bewusstsein zu erlangen</German>
@@ -677,6 +680,24 @@
             <Japanese>一度の負傷で発生する気胸へのダメージ。値が低いほど、気胸が発生する可能性が高くなります。値を非常に低く設定するか、0に設定すると、予期しない動作や予期しない怪我による気胸を引き起こす可能性があります。</Japanese>
             <Portuguese>A quantidade de dano em um único impacto, em uma escala de 0 a 1, que precisa ocorrer antes que haja uma chance de pneumotórax. Valores mais baixos significam que o pneumotórax é mais provável de ocorrer. Definir o valor muito baixo ou zero pode causar um comportamento inesperado ou pneumotórax devido a lesões inesperadas.</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken">
+            <English>Increase pneumothorax chance based on damage</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken_DESCRIPTION">
+            <English>Increase chance of a pneumothorax and advanced pneumothorax occuring based on damage taken if over the pneumothorax damage threshold</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance">
+            <English>Deep Penetrating Injury Chance</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance_DESC">
+            <English>Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_DeepPenetratingInjury">
+            <English>Deep Penetrating Injury</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_ChestSealApplied">
+            <English>Chest Seal Applied</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount">
             <English>Hemopneumothorax internal bleeding amount</English>
             <Japanese>血気胸時の内出血量</Japanese>
@@ -701,69 +722,17 @@
             <German>Definiert die Menge des Blutverlustes, welche der Patient während eines Hämopneumothorax verliert.</German>
             <Czech>Nastavuje míru vnitřního krvácení v případě hemotoraxu</Czech>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_hardcore">
-            <English>Hardcore pneumothorax</English>
-            <Polish>Trudna odma opłucnowa</Polish>
-            <German>Erweitertes Pneumothoraxsystem</German>
-            <Spanish>Neumotórax extremo</Spanish>
-            <Chinese>硬核气胸</Chinese>
-            <Chinesesimp>硬核气胸</Chinesesimp>
-            <Czech>Obtížný pneumotorax</Czech>
-            <Korean>하드코어 기흉</Korean>
-            <French>Pneumothorax hardcore</French>
-            <Turkish>sert pnömotoraks </Turkish>
-            <Italian>Pneumotorace hardcore</Italian>
-            <Russian>Система расширенного пневмоторакса</Russian>
-            <Japanese>高度な気胸診断を有効化</Japanese>
-            <Portuguese>Pneumotórax hardcore</Portuguese>
+        <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible">
+            <English>Pneumothorax always visible</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_pneumothorax_hardcore_DESC">
-            <English>Enables hardcore mod for pneumothorax by not making it appear in medical menu - Stethoscope might be helpful</English>
-            <Polish>Włącza tryb trudny dla odmy opłucnowej przez nie pojawianie się w menu medycznym - Stetoskop może być pomocny</Polish>
-            <German>Aktiviert das erweiterte Pneumothoraxsystem, indem der Pneumothorax nicht im medizinischen Menü erscheint - Stethoskop könnte hilfreich sein</German>
-            <Spanish>Modifica la dificultad para que el neumotórax no aparezca en el menú médico: se deberá usar un estetoscopio</Spanish>
-            <Chinese>通过不让它出现在医疗菜单中来启用气胸的核心模块 - 听诊器可能会有所帮助</Chinese>
-            <Chinesesimp>通过不让气胸直接显示在医疗诊断中来提高难度,使用听诊器能间接诊断气胸</Chinesesimp>
-            <Czech>Povoluje obtížný režim pro pneumotorax, který jej nezobrazí ve zdravotnické nabídce - Stetoskop by mohl být nápomocný</Czech>
-            <Korean>기흉을 의료 메뉴에 표시되지 않게 하는 모드 활성화 - 청진기가 도움이 될 수 있음</Korean>
-            <French>Active le mod hardcore pour le pneumothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile </French>
-            <Turkish>Tıbbi menüde görünmesini sağlamayarak pnömotoraks için hardcore modunu etkinleştirir - Stetoskop yardımcı olabilir </Turkish>
-            <Italian>Abilita la mod hardcore per il pneumotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile </Italian>
-            <Russian>Активирует расширенную систему пневмоторакса, не показывая пневмоторакс в медицинском меню — может помочь стетоскоп.</Russian>
-            <Japanese>気胸診断のハードコアモードを有効にします。気胸が発生しても医療メニューに表示しません。-聴診器が役立つ場合があります</Japanese>
-            <Portuguese>Ativa o modo hardcore para pneumotórax que o torna identificável apenas com uso de estetoscópio (não aparece no menu médico)</Portuguese>
+        <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible_DESCRIPTION">
+            <English>Sets if pneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x pneumothorax)</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_tensionhemothorax_hardcore">
-            <English>Hardcore tension pneumothorax and hemothorax</English>
-            <Polish>Trudna odma prężna i krwiak opłucnej</Polish>
-            <German>Erweitertes System für Spannungspneumothorax / Hemopneumothorax</German>
-            <Spanish>Neumotórax a tensión y hemotórax extremos</Spanish>
-            <Chinese>硬核张力性气胸和血胸</Chinese>
-            <Chinesesimp>硬核张力性气胸和血气胸</Chinesesimp>
-            <Czech>Obtížný tezní pneumotorax a hemotorax</Czech>
-            <Korean>하드코어 긴장성 기흉과 혈기흉</Korean>
-            <French>Hémopneumothorax et pneumothorax sous tension  hardcore </French>
-            <Turkish>Sert tansiyon pnömotoraks ve hemotoraks</Turkish>
-            <Italian>Pneumotorace da tensione ed emotorace hardcore</Italian>
-            <Russian>Усовершенствованная система для напряженного пневмоторакса/гемопневмоторакса</Russian>
-            <Japanese>高度な緊張性気胸と血気胸診断を有効化</Japanese>
-            <Portuguese>Hemopneumotórax/pneumotórax hipertensivo hardcore</Portuguese>
+        <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible">
+            <English>Tension pneumothorax and hemothorax always visible</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_tensionhemothorax_hardcore_DESC">
-            <English>Enables hardcore mod for tension and hemothorax by not making it appear in medical menu - Stethoscope might be helpful</English>
-            <Polish>Włącza tryb trudny dla odmy prężnej i krwiaka opłucnej przez nie pojawianie się w menu medycznym - Stetoskop może być pomocny</Polish>
-            <German>Aktiviert das erweiterte System für Spannungspneumothorax / Hemopneumothorax, indem der Spannungspneumothorax / Hemopneumothorax nicht im medizinischen Menü erscheint - Stethoskop könnte hilfreich sein</German>
-            <Spanish>Modifica la dificultad para que el neumotórax a tensión y hemotórax no aparezcan en el menú médico: se deberá usar un estetoscopio</Spanish>
-            <Chinese>通过不在医疗菜单中显示来启用紧张和血胸的硬核模块 - 听诊器可能会有所帮助</Chinese>
-            <Chinesesimp>通过不让张力性气胸和血气胸直接显示在医疗诊断中来提高难度,使用听诊器能间接诊断张力性气胸和血气胸</Chinesesimp>
-            <Czech>Povoluje obtížný režim pro tezní pneumotorax a hemotorax, který jej nezobrazí ve zdravotnické nabídce - Stetoskop by mohl být nápomocný</Czech>
-            <Korean>긴장성 기흉과 혈기흉을 의료 메뉴에 표시되지 않게 하는 모드 활성화 - 청진기가 도움이 될 수 있음</Korean>
-            <French>Active le mod hardcore pour le pneumothorax sous tension  et l'hémopneumothorax en ne le faisant pas apparaître dans le menu médical - Le stéthoscope peut être utile</French>
-            <Turkish>Medikal menüde görünmeyerek tansiyon ve hemotoraks için hardcore modu etkinleştirir - Stetoskop yardımcı olabilir</Turkish>
-            <Italian>Abilita la mod hardcore per la tensione e l'emotorace non facendola apparire nel menu medico - Lo stetoscopio potrebbe essere utile</Italian>
-            <Russian>Активирует расширенную систему для напряженного пневмоторакса / гемопневмоторакса, не отображая напряженный пневмоторакс / гемопневмоторакс в медицинском меню - может помочь стетоскоп</Russian>
-            <Japanese>緊張性気胸診断と血気胸診断のハードコアモードを有効にします。それらが発生しても医療メニューに表示しません。-聴診器が役立つ場合があります</Japanese>
-            <Portuguese>Ativa o modo hardcore para hemopneumotórax e pneumotórax hipertensivo que os tornam identificáveis apenas com uso de estetoscópio (não aparecem no menu médico)</Portuguese>
+        <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible_DESCRIPTION">
+            <English>Sets if tension pneumothorax and hemopneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x tensionpneumothorax/1x hemopneumothorax)</English>
         </Key>
         <Key ID="STR_KAT_Breathing_Stethoscope_display">
             <English>Stethoscope</English>
@@ -1233,44 +1202,14 @@
             <Spanish>Probabilidad de deterioro de un neumotórax</Spanish>
             <Portuguese>Probabilidade de deterioração do pneumotórax</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_chance_Desc">
-            <English>Chance for pneumothorax to deteriorate into tension pneumothorax</English>
-            <Italian>Possibilità che il pneumotorace possa peggiorare in pneumotorace tensivo</Italian>
-            <Czech>Šance na zhoršení pneumotoraxu do tenzního pneumotoraxu</Czech>
-            <French>Chance qu'un pneumothorax se détériore en un pneumothorax sous tension</French>
-            <Polish>Szansa na pogorszenie się odmy opłucnowej w odmę prężną</Polish>
-            <Korean>기흉이 긴장성 기흉으로 악화될 확률</Korean>
-            <German>Wahrscheinlichkeit, dass sich der Pneumothorax zu einem Spannungspneumothorax entwickelt</German>
-            <Chinesesimp>气胸恶化至张力性气胸几率</Chinesesimp>
-            <Japanese>気胸が緊張性気胸に悪化する可能性</Japanese>
-            <Spanish>Probabilidad que un neumotórax se deteriore a un neumotórax a tensión</Spanish>
-            <Portuguese>Probabilidade de pneumotórax se deteriorar em pneumotórax hipertensivo</Portuguese>
+        <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_chance_DESC">
+            <English>Chance for pneumothorax to deteriorate</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_countdown">
-            <English>Deteriorating pneumothorax countdown</English>
-            <Italian>Conto alla rovescia del pneumotorace in peggioramento</Italian>
-            <Czech>Odpočet pro zhoršení pneumotoraxu</Czech>
-            <French>Compte à rebours de détérioration d'un pneumothorax</French>
-            <Polish>Licznik do pogorszenia się odmy</Polish>
-            <Korean>기흉 악화 카운트다운</Korean>
-            <German>Verschlechterung des Pneumothorax-Countdowns</German>
-            <Chinesesimp>气胸恶化冷却时间</Chinesesimp>
-            <Japanese>気胸の悪化に掛る時間</Japanese>
-            <Spanish>Tiempo para el deterioro de un neumotórax</Spanish>
-            <Portuguese>Contagem regressiva para deterioração de um pneumotórax</Portuguese>
+        <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval">
+            <English>Deteriorating pneumothorax interval</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_countdown_Desc">
-            <English>After this countdown a chance will be rolled whether or not the pneumothorax will deteriorate into tension pneumothorax</English>
-            <Italian>Dopo questo conto alla rovescia verrà lanciata una possibilità se il pneumotorace si deteriorerà o meno in pneumotorace tensivo</Italian>
-            <Czech>Poté co proběhne tento odpočet bude zkontrolována šance, zda se pneumotorax zhorší na tenzní pneumotorax</Czech>
-            <French>Après ce compte à rebours, il y aura une chance aléatoire qu'un pneumothorax empire ou non en un pneumothorax sous tension</French>
-            <Polish>Po tym odliczaniu zostanie wyliczona szansa na to, czy odma opłucnowa przekształci się w odmę prężną.</Polish>
-            <Korean>이 카운트다운이 끝나면 기흉이 긴장성 기흉으로 악화되는지 여부가 결정됩니다.</Korean>
-            <German>Nach diesem Countdown wird gewürfelt, ob sich der Pneumothorax zu einem Spannungspneumothorax entwickelt oder nicht.</German>
-            <Chinesesimp>在此倒计时后，将气胸有机率恶化为张力性气胸</Chinesesimp>
-            <Japanese>この時間の後、気胸が緊張性気胸に悪化するかどうかが判定されます</Japanese>
-            <Spanish>Después de esta cuenta atrás, entrará la posibilidad de que un neumotórax deteriore a un neumotórax a tensión</Spanish>
-            <Portuguese>Após essa contagem regressiva, haverá uma chance de o pneumotórax se deteriorar ou não em pneumotórax hipertensivo.</Portuguese>
+        <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval_Desc">
+            <English>After each interval a chance will be rolled whether or not the pneumothorax will deteriorate</English>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -1449,16 +1388,11 @@
             <Czech>Použít RV</Czech>
             <Italian>Usa maschera ambu</Italian>
         </Key>
-        <Key ID="STR_KAT_Breathing_UseBVM_Progress">
-            <English>Using BVM</English>
-            <Spanish>Usando Ambú</Spanish>
-            <French>BVM en cours d'utilisation</French>
-            <Korean>인공호흡기 사용 중</Korean>
-            <Polish>BVM w użyciu</Polish>
-            <Japanese>BVMを使用中</Japanese>
-            <German>Beatme mit BVM</German>
-            <Czech>Používání RV</Czech>
-            <Italian>Usando maschera ambu</Italian>
+        <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
+            <English>Put away BVM</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_UseBVM_Cancelled">
+            <English>Rescue Breaths Cancelled</English>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM">
             <English>Use Pocket BVM</English>
@@ -1471,17 +1405,6 @@
             <Czech>Použít Kapesní RV</Czech>
             <Italian>Usa maschera ambu portatile </Italian>
         </Key>
-        <Key ID="STR_KAT_Breathing_UsePocketBVM_Progress">
-            <English>Using Pocket BVM</English>
-            <Spanish>Usando Ambú compacto</Spanish>
-            <French>BVM de poche en cours d'utilisation</French>
-            <Korean>인공호흡기 (포켓형) 사용 중</Korean>
-            <Polish>Kieszonkowy BVM w użyciu</Polish>
-            <Japanese>ポケットBVMを使用中</Japanese>
-            <German>Beatme mit Taschen BVM</German>
-            <Czech>Používání Kapesního RV</Czech>
-            <Italian>Usando maschera ambu portatile </Italian>
-        </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen">
             <English>Use BVM with Oxygen Tank</English>
             <Spanish>Usar Ambú con bombona de oxigeno</Spanish>
@@ -1492,17 +1415,6 @@
             <German>Verwende BVM mit Sauerstofftank</German>
             <Czech>Použít RV s Kyslíkovou Lahví</Czech>
             <Italian>Usa maschera ambu con la bombola d'ossigeno</Italian>
-        </Key>
-        <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Progress">
-            <English>Using BVM with Oxygen Tank</English>
-            <Spanish>Usando Ambú con bombona de oxigeno</Spanish>
-            <French>Utilisation du BVM avec un réservoir à oxygène</French>
-            <Korean>산소 탱크가 달린 인공호흡기 사용 중</Korean>
-            <Polish>Używanie BVM z butlą z tlenem</Polish>
-            <Japanese>BVMと酸素ボンベを使用中</Japanese>
-            <German>Beatme mit BVM und Sauerstofftank</German>
-            <Czech>Používání RV s Kyslíkovou Lahví</Czech>
-            <Italian>Usando maschera ambu con la bombola d'ossigeno</Italian>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Oxygen">
             <English>Use BVM with Oxygen</English>
@@ -1515,17 +1427,6 @@
             <Czech>Použít RV s Kyslíkem</Czech>
             <Italian>Usa maschera ambu con l'ossigeno</Italian>
         </Key>
-        <Key ID="STR_KAT_Breathing_UseBVM_Oxygen_Progress">
-            <English>Using BVM with Oxygen</English>
-            <Spanish>Usando Ambú con bombona de oxigeno</Spanish>
-            <French>Utilisation du BVM avec de l'oxygène</French>
-            <Korean>산소 연결 인공호흡기 사용 중</Korean>
-            <Polish>Używanie BVM z Tlenem</Polish>
-            <Japanese>BVMと酸素を使用中</Japanese>
-            <German>Beatme mit BVM und Sauerstoff</German>
-            <Czech>Používání RV s Kyslíkem</Czech>
-            <Italian>Usando maschera ambu con l'ossigeno</Italian>
-        </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle">
             <English>Use BVM with Oxygen Tank (Vehicle)</English>
             <German>Verwende BVM mit Sauerstoff (Fahrzeug)</German>
@@ -1534,15 +1435,6 @@
             <French>Utiliser le BVM avec un réservoir d'oxygène (Véhicule)</French>
             <Italian>Usa maschera ambu con la bombola d'ossigeno (veicolo)</Italian>
             <Spanish>Usar la BVM con un tanque de oxígeno (vehículo)</Spanish>
-        </Key>
-        <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
-            <English>Using BVM with Oxygen Tank (Vehicle)</English>
-            <German>Beatme mit BVM und Sauerstoff (vom Fahrzeug)</German>
-            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용 중</Korean>
-            <Japanese>BVMと車両の酸素ボンベを使用中</Japanese>
-            <French>Utilisation du BVM avec un réservoir d'oxygène (Véhicule)</French>
-            <Italian>Usando maschera ambu con la bombola d'ossigeno (veicolo)</Italian>
-            <Spanish>Usando la BVM con un tanque de oxígeno (vehículo)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
@@ -1742,27 +1634,14 @@
             <Czech>Prázdná Kyslíková Lahev, lze doplnit u zdravotnického vozidla či zařízení.</Czech>
             <Italian>Bombola VUOTA di ossigeno portatile, riempirla presso un veicolo o una struttura medica</Italian>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_BVMTime">
-            <English>BVM Use Time</English>
-            <Spanish>Tiempo de uso del Ambú</Spanish>
-            <French>Temps d'utilisation du BVM</French>
-            <Korean>인공호흡기 사용 시간</Korean>
-            <Polish>Czas użycia Worka samorozprężalnego</Polish>
-            <Japanese>BVMの使用にかかる時間</Japanese>
-            <German>BVM Benutzungszeit</German>
-            <Czech>Doba použití RV</Czech>
-            <Italian>Tempo di utilizzo maschera ambu</Italian>
+        <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier">
+            <English>BVM Oxygen Effectiveness Multiplier</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_BVMTime_DESC">
-            <English>Sets BVM usage period length</English>
-            <Spanish>Fija el tiempo de uso del Ambú</Spanish>
-            <French>Règle le temps nécessaire pour utiliser le BVM</French>
-            <Korean>인공호흡기 사용 시간 길이를 설정합니다</Korean>
-            <Polish>Ustawia czas użycia akcji</Polish>
-            <Japanese>BVMの使用期間の長さを設定</Japanese>
-            <German>Legt die Länge des BVM-Nutzungszeitraums fest</German>
-            <Czech>Nastavuje dobu k použití RV</Czech>
-            <Italian>Imposta la durata del periodo di utilizzo della maschera ambu</Italian>
+        <Key ID="STR_KAT_Breathing_Activity_BVM">
+            <English>%1 used %2 (x%3)</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Activity_BVM_Oxygenated">
+            <English>%1 (Oxygenated)</English>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
@@ -1891,6 +1770,108 @@
             <German>Bestimmt, ob medizinische Fahrzeuge oder Gebäude Sauerstoff bereitstellen können</German>
             <Italian>Imposta se i veicoli med o strutture mediche possono fornire ossigeno.</Italian>
             <Spanish>Establece si los vehículos o instalaciones médicas pueden suministrar oxígeno</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Check_Breathing">
+            <English>Check Breathing</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Check_Breathing_Progress">
+            <English>Checking Breathing</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breath_stink">
+            <English>, harsh and metallic</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breath_mild">
+            <English>, slightly fruity</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isNormal">
+            <English>Patient is breathing normally</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_isShallow">
+            <English>Patient's breathing is shallow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_shallow">
+            <English>Shallow</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_breathing_none">
+            <English>Patient is not breathing</English>
+            <Japanese>患者は呼吸していません</Japanese>
+            <Korean>환자가 숨을 쉬지 않습니다</Korean>
+            <Italian>Il paziente non sta respirando</Italian>
+            <German>Patient atmet nicht</German>
+            <Portuguese>O paciente não está respirando</Portuguese>
+            <French>Le patient ne respire pas</French>
+            <Polish>Pacjent nie oddycha</Polish>
+            <Spanish>El paciente no esta respirando</Spanish>
+            <Czech>Pacient nedýchá</Czech>
+        </Key>
+        <Key ID="STR_KAT_Breathing_CheckBreathing_Log">
+            <English>%1 checked breathing: %2</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
+            <English>Enable Inspect Chest</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_simple">
+            <English>Simple</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_default">
+            <English>Default</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time">
+            <English>Inspect Chest Time</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl">
+            <English>Allow Inspecting Chest</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_display">
+            <English>Inspect Chest</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_progress">
+            <English>Inspecting Chest</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_log">
+            <English>%1 inspected chest: %2</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_normal">
+            <English>Chest rise and fall observed</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_none">
+            <English>No chest movement observed</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_none_log">
+            <English>No chest movement</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_uneven">
+            <English>Chest sides are uneven</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_uneven_log">
+            <English>, chest sides uneven</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_unevenMovement">
+            <English>Uneven chest rise and fall</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_internalBleeding">
+            <English>Skin is rigid, looks bruised</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_inspectChest_simple">
+            <English>Symptoms indicate %1</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Pneumothorax">
+            <English>Pneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_TensionPneumothorax">
+            <English>Tension Pneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Hemopneumothorax">
+            <English>Hemopneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Pneumothorax_short">
+            <English>PTX</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_TensionPneumothorax_short">
+            <English>TPTX</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Hemopneumothorax_short">
+            <English>HPTX</English>
         </Key>
     </Package>
 </Project>

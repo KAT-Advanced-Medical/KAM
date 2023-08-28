@@ -161,21 +161,8 @@
             <Chinesesimp>改变血型/血液量:</Chinesesimp>
             <Portuguese>Alterar tipo sanguíneo/volume</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Zeus_shockablestate_Module_displayname">
-            <English>Change shockable state</English>
-            <German>Schockzustand ändern</German>
-            <Czech>Změnit šokovatelný stav</Czech>
-            <French>Changer rythme chocable/non-chocable</French>
-            <Polish>Zmień rytm serca</Polish>
-            <Spanish>Cambiar estado de fibrilación cardíaca</Spanish>
-            <Chinese>改变可冲击状态</Chinese>
-            <Korean>심정지 상태 변경</Korean>
-            <Turkish>Şok edilebilir durumu değiştir</Turkish>
-            <Japanese>ショック状態を変える</Japanese>
-            <Russian>Изменить шоковое состояние</Russian>
-            <Italian>Cambia stato defibrillabile</Italian>
-            <Chinesesimp>改变电击状态:</Chinesesimp>
-            <Portuguese>Alterar estado de fibrilação cardíaca</Portuguese>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_displayname">
+            <English>Change Cardiac State</English>
         </Key>
         <Key ID="STR_KAT_Zeus_checkmedical_Module_displayname">
             <English>Open unit medical menu</English>
@@ -193,53 +180,46 @@
             <Chinesesimp>打开单位医疗菜单</Chinesesimp>
             <Portuguese>Abra o menu médico da unidade</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Zeus_shockablestate_Module_state">
-            <English>State: </English>
-            <German>Wert: </German>
-            <Czech>Stav: </Czech>
-            <French>Etat: </French>
-            <Polish>Rytm: </Polish>
-            <Spanish>Estado: </Spanish>
-            <Chinese>州。</Chinese>
-            <Korean>상태: </Korean>
-            <Turkish>Belirtmek: </Turkish>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_State">
+            <English>State:</English>
+            <German>Wert:</German>
+            <Czech>Stav:</Czech>
+            <French>Etat:</French>
+            <Polish>Rytm:</Polish>
+            <Spanish>Estado:</Spanish>
+            <Chinese>州</Chinese>
+            <Korean>상태:</Korean>
+            <Turkish>Belirtmek:</Turkish>
             <Japanese>状態:</Japanese>
             <Russian>Состояние:</Russian>
-            <Italian>Stato: </Italian>
+            <Italian>Stato:</Italian>
             <Chinesesimp>状态:</Chinesesimp>
             <Portuguese>Estado:</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Zeus_shockablestate_Module_shockable">
-            <English>Shockable (VF/PVT)</English>
-            <German>Schockbar (VF/PVT)</German>
-            <Czech>Šokovatelný (VF/PVT)</Czech>
-            <French>Choquable (FV/TV)</French>
-            <Polish>Defibrylacyjny (VF/PVT)</Polish>
-            <Spanish>Desfibrilable (FV/TV)</Spanish>
-            <Chinese>可休克(VF/PVT)</Chinese>
-            <Korean>쇼크성 심정지(VF/PVT)</Korean>
-            <Turkish>Şok Edilebilir (VF/PVT)</Turkish>
-            <Japanese>ショック可能 (VF/PVT)</Japanese>
-            <Russian>Шокирующий (VF/PVT)</Russian>
-            <Italian>Defibrillabile (VF/PVT)</Italian>
-            <Chinesesimp>电击类型(VF/PVT)</Chinesesimp>
-            <Portuguese>Desfibrilável (FV/TV)</Portuguese>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_VT">
+            <English>Ventricular Tachycardia</English>
         </Key>
-        <Key ID="STR_KAT_Zeus_shockablestate_Module_non_shockable">
-            <English>non-shockable (Asystole)</English>
-            <German>Nicht-Schockbar (Asystolie)</German>
-            <Czech>Nešokovatelný (Asystolie)</Czech>
-            <French>Non-choquable (Asystolie) </French>
-            <Polish>Niedefibrylacyjny (Asystolia)</Polish>
-            <Spanish>No desfibrilable (Asístolia)</Spanish>
-            <Chinese>非休克性 (Asystole)</Chinese>
-            <Korean>비-쇼크성 심정지(심부전수축)</Korean>
-            <Turkish>şoklanamaz (Asistoli)</Turkish>
-            <Japanese>ショック不要 (心静止)</Japanese>
-            <Russian>Без шока (асистолия)</Russian>
-            <Italian>Non defibrillabile (Asistolia)</Italian>
-            <Chinesesimp>非电击类型(心搏停止)</Chinesesimp>
-            <Portuguese>Não chocável (Assistolia)</Portuguese>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_VF">
+            <English>Ventricular Fibrillation</English>
+        </Key>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_PEA">
+            <English>Pulseless Electrical Activity</English>
+        </Key>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_Asystole">
+            <English>Asystole</English>
+            <German>Asystolie</German>
+            <Czech>Asystolie</Czech>
+            <French>Asystolie</French>
+            <Polish>Asystolia</Polish>
+            <Spanish>Asístolia</Spanish>
+            <Chinese>Asystole</Chinese>
+            <Korean>심부전수축</Korean>
+            <Turkish>Asistoli</Turkish>
+            <Japanese>心静止</Japanese>
+            <Russian>асистолия</Russian>
+            <Italian>Asistolia</Italian>
+            <Chinesesimp>心搏停止</Chinesesimp>
+            <Portuguese>Assistolia</Portuguese>
         </Key>
         <Key ID="STR_KAT_Zeus_NothingSelected">
             <English>Place on a unit.</English>
