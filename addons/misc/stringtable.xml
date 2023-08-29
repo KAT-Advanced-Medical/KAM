@@ -337,11 +337,11 @@
             <English>Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that could negatively affect correct functionality of KAT are used. \n Warning disappears after 60 seconds.</English>
             <German>Wirft eine Warnung aus und fügt eine Zeile in das RPT-Protokoll ein, wenn inkompatible Addons (von uns aufgelistet - Entwickler) verwendet werden, die die korrekte Funktionalität von KAT beeinträchtigen könnten. Die Warnung verschwindet nach 60 Sekunden.</German>
             <Czech>Vyhodí varování a přidá řádek do RPT logu pokud jsou použity nekompatibilní addony(Zanesené námi - vývojáři), které by mohli negativně ovlivnit správnou funkcionalitu KATu. \n Varování zmizí po 60 sekundách. </Czech>
-            <Korean>KAT의 제대로 작동하는 기능에 부정적인 형향을 미칠 수 있는 호환되지 않는 애드온(개발자 목록 찾고)을 사용할 경우 경고를 보내고 rpt 로그에 라인을 추가합니다. \n경고는 60초 후에 사라집니다.</Korean>
+            <Korean>KAT의 제대로 작동하는 기능에 부정적인 형향을 미칠 수 있는 호환되지 않는 애드온(개발자 목록 찾고)을 사용할 경우 경고를 보내고 rpt 로그에 라인을 추가합니다. \n 경고는 60초 후에 사라집니다.</Korean>
             <Japanese>KATの正常な動作に悪影響を与える可能性のある互換性のない(開発チームによりリストされた)アドオンが使用された場合、警告を表示し、RPTログに行を追加します。 \n 警告は60秒後に消えます。</Japanese>
             <French>Affiche un avertissement et ajoute une ligne au log RPT si des addons incompatibles (Listés par nous - les développeurs) qui pourraient affecter négativement le fonctionnement correct de KAT sont utilisés. \n L'avertissement disparaîtra après 60 secondes.  </French>
             <Italian>Mostra un allerta e aggiungi una line al file RPT log se l'addon è incompatibile (elencato da noi sviluppatori) che possa influenzare negativamente sul corretto utilizzo della KAT \n L'avviso sparisce dopo 60 secondi.</Italian>
-            <Polish>Pokazuje error i dodaje log do RPT jeśli niekompatybilny mod (podane przez developerów KAT), który może powodować błędy jest używany. \nPowiadomienie znika po 60 sekundach.</Polish>
+            <Polish>Pokazuje error i dodaje log do RPT jeśli niekompatybilny mod (podane przez developerów KAT), który może powodować błędy jest używany. \n Powiadomienie znika po 60 sekundach.</Polish>
             <Spanish>Muestra una advertencia y agrega una linea al log RPT si hay addons incompatibles(Listados por los desarolladores) que podrian afectar negativamente el funcionamiento de KAT. \n La advertencia desaparece 60 segundos mas tarde.</Spanish>
             <Portuguese>Mostra um aviso e adiciona uma linha ao log do RPT se forem usados ​​complementos incompatíveis (listados por nós - desenvolvedores) que podem afetar negativamente a funcionalidade correta do KAT. \n O aviso desaparece após 60 segundos.</Portuguese>
         </Key>

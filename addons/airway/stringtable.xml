@@ -34,14 +34,14 @@
             <Portuguese>Probabilidade de obstrução das vias aéreas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_obstruction_DESC">
-            <English>Probability for an obstructed airway in percentage that gets rolled every: \n- Falling unconscious \n- Removing KingLT / Guedel Tube</English>
-            <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern: \n- Bewustlos werden \n- Das Entfernen von Larynxtubus / Guedeltubus \n- Abbrechen der Stabile Seitenlage</German>
-            <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém: \n- Upadnutí do bezvědomí \n- Odstranění KingLT / GuedelTuby</Czech>
-            <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que: \n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
-            <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n- 意識不明になった時 \n- KingLT/ゲデルチューブが外れた時</Japanese>
-            <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque : \n- la personne tombe inconsciente \n- Une canule de Guedel/tube laryngé est retiré</French>
-            <Korean>다음 조건에 의해 매번 발생되는 혀막힘 확률(%): \n- 의식불명이 될 시 \n- 기관삽입기 / 게델튜브 제거 시</Korean>
-            <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n- Caduta priva di sensi \n- Rimozione KingLT / Guedel Tube</Italian>
+            <English>Probability for an obstructed airway in percentage that gets rolled every: \n - Falling unconscious \n - Removing KingLT / Guedel Tube</English>
+            <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern: \n - Bewustlos werden \n - Das Entfernen von Larynxtubus / Guedeltubus \n - Abbrechen der Stabile Seitenlage</German>
+            <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém: \n - Upadnutí do bezvědomí \n - Odstranění KingLT / GuedelTuby</Czech>
+            <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que: \n - Cae inconsciente \n - Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
+            <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n - 意識不明になった時 \n - KingLT/ゲデルチューブが外れた時</Japanese>
+            <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque : \n - la personne tombe inconsciente \n - Une canule de Guedel/tube laryngé est retiré</French>
+            <Korean>다음 조건에 의해 매번 발생되는 혀막힘 확률(%): \n - 의식불명이 될 시 \n - 기관삽입기 / 게델튜브 제거 시</Korean>
+            <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n - Caduta priva di sensi \n - Rimozione KingLT / Guedel Tube</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
