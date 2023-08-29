@@ -43,7 +43,7 @@
             <German>Bestimmt die Dauer, mit welcher man mit Gasmaske im Gas stehen kann, ohne infiziert zu werden.</German>
             <French>Détermine la durée où vous pouvez tenir dans un gaz avec un masque à gaz sans être infecté</French>
             <Korean>방독면을 사용하여 중독되지 않고 가스에 얼마나 오래 있을 수 있는지 결정합니다.</Korean>
-            <Japanese>ガスマスクを使用しながらガスの中にどれだけ長く感染せずにいられるかを設定します。</Japanese>
+            <Japanese>ガスマスクを使用しながらガスの中にどれだけ長く感染せずにいられるかを設定します</Japanese>
             <Italian>Determina per quanto tempo puoi stare nel gas con la maschera a gas prima di risultare intossicato.</Italian>
             <Portuguese>Determina quanto tempo você pode ficar no gás com uma máscara de gás sem ser infectado.</Portuguese>
             <Polish>Ustala jak długo możesz stać w gazie z maską bez zagrożenia infekcją</Polish>
@@ -67,7 +67,7 @@
             <German>Die Zeit, in der man im Gas stehen kann, bevor man infiziert wird bzw. eine Gasmaske benötigt.</German>
             <French>Durée où vous pouvez tenir dans un gaz avant d'être infecté ou d'avoir besoin d'un masque à gaz</French>
             <Korean>당신이 중독되거나 방독면이 필요하기 전에 가스 속에서 견딜 수 있는 시간입니다.</Korean>
-            <Japanese>ガスマスクを使わずに、感染せずガスの中に立つことができる時間を設定します。</Japanese>
+            <Japanese>ガスマスクを使わずに、感染せずガスの中に立つことができる時間を設定します</Japanese>
             <Italian>Tempo che puoi restare nel gas prima di rimanere intossicato o aver bisogno di una maschera a gas.</Italian>
             <Portuguese>Tempo que você pode ficar no gás antes de ser infectado ou precisar de uma máscara de gás.</Portuguese>
             <Polish>Ustala jak długo możesz stać w gazie zanim zostaniesz zainfekowany lub będziesz potrzebował maski gazowej.</Polish>

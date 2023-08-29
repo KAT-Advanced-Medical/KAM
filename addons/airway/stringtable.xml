@@ -34,14 +34,14 @@
             <Portuguese>Probabilidade de obstrução das vias aéreas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_obstruction_DESC">
-            <English>Probability for an obstructed airway in percentage that gets rolled every:\n- Falling unconscious\n- Removing KingLT / Guedel Tube</English>
-            <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern:\n- Bewustlos werden\n- Das Entfernen von Larynxtubus / Guedeltubus\n- Abbrechen der Stabile Seitenlage</German>
-            <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém:\n- Upadnutí do bezvědomí\n- Odstranění KingLT / GuedelTuby</Czech>
-            <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que:\n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
-            <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n- 意識不明になった時\n- KingLT/ゲデルチューブが外れた時</Japanese>
-            <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque :\n- la personne tombe inconsciente\n- Une canule de Guedel/tube laryngé est retiré</French>
-            <Korean>다음 조건에 의해 매번 발생되는 혀막힘 확률(%):\n- 의식불명이 될 시\n- 기관삽입기 / 게델튜브 제거 시</Korean>
-            <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni :\n- Caduta priva di sensi \n- Rimozione KingLT / Guedel Tube</Italian>
+            <English>Probability for an obstructed airway in percentage that gets rolled every: \n- Falling unconscious \n- Removing KingLT / Guedel Tube</English>
+            <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern: \n- Bewustlos werden \n- Das Entfernen von Larynxtubus / Guedeltubus \n- Abbrechen der Stabile Seitenlage</German>
+            <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém: \n- Upadnutí do bezvědomí \n- Odstranění KingLT / GuedelTuby</Czech>
+            <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que: \n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
+            <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n- 意識不明になった時 \n- KingLT/ゲデルチューブが外れた時</Japanese>
+            <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque : \n- la personne tombe inconsciente \n- Une canule de Guedel/tube laryngé est retiré</French>
+            <Korean>다음 조건에 의해 매번 발생되는 혀막힘 확률(%): \n- 의식불명이 될 시 \n- 기관삽입기 / 게델튜브 제거 시</Korean>
+            <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n- Caduta priva di sensi \n- Rimozione KingLT / Guedel Tube</Italian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
@@ -84,6 +84,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod">
             <English>Occlusion Cooldown Period</English>
+            <Japanese>異物再発のクールダウン周期</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -144,7 +145,7 @@
             <French>%1 a vérifié les voies aériennes : %2, %3</French>
             <Turkish>%1 kontrol edilmiş havayolları: %2, %3</Turkish>
             <Italian>%1 ha controllato le vie aeree: %2, %3</Italian>
-            <Japanese>%1 が気道を確認しました: %2, %3</Japanese>
+            <Japanese>%1は気道を確認しました: %2、%3</Japanese>
             <Portuguese>%1 verificou as vias aéreas: %2, %3</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_airway_log">
@@ -160,7 +161,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha intubato con %2</Italian>
             <Russian>%1 вставил %2</Russian>
-            <Japanese>%1 は %2 を挿管しました</Japanese>
+            <Japanese>%1は%2を挿管しました</Japanese>
             <Portuguese>%1 intubou com %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_Occluded">
@@ -446,12 +447,15 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>
+            <Japanese>異物除去の開始</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
+            <Japanese>異物除去を中止しました</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
+            <Japanese>異物除去をやめる</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_NA">
             <English>Medical suction not needed</English>
@@ -738,7 +742,7 @@
             <Turkish>Havayollarını kontrol etme zamanı</Turkish>
             <Italian>Tempo per controllare le vie aeree</Italian>
             <Russian>Время проверить дыхательные пути</Russian>
-            <Japanese>気道の確認にかかる時間</Japanese>
+            <Japanese>気道の確認の所要時間</Japanese>
             <Portuguese>Tempo para verificar as vias aéreas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY_DESC">
@@ -770,7 +774,7 @@
             <Turkish>Kafayı aşırı germe zamanı</Turkish>
             <Italian>Tempo per iperestendere la testa</Italian>
             <Russian>Время перенапрягать голову</Russian>
-            <Japanese>気道確保にかかる時間</Japanese>
+            <Japanese>気道確保の所要時間</Japanese>
             <Portuguese>Tempo para hiperextender a cabeça</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_OVERSTRETCH_DESC">
@@ -791,12 +795,15 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval">
             <English>Head Turning Interval</English>
+            <Japanese>異物除去の間隔</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval_DESC">
             <English>Time between head turning attempts</English>
+            <Japanese>異物除去を実行する間隔</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Activity_HeadTurning">
             <English>%1 finished head turning (x%2)</English>
+            <Japanese>%1は異物除去を行った (x%2)</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC">
             <English>Time for Accuvac</English>
@@ -811,7 +818,7 @@
             <Turkish>Accuvac için Zaman</Turkish>
             <Italian>Tempo per l'ACCUVAC</Italian>
             <Russian>Время Аккувака</Russian>
-            <Japanese>Accuvacにかかる時間</Japanese>
+            <Japanese>Accuvacの使用時間</Japanese>
             <Portuguese>Tempo para ACCUVAC</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC_DESC">
@@ -843,7 +850,7 @@
             <Turkish>Laringeal Tüp için Zaman</Turkish>
             <Italian>Tempo per il tubo laringeo</Italian>
             <Russian>Время гортанной трубки</Russian>
-            <Japanese>喉頭エアウェイ(King LT)にかかる時間</Japanese>
+            <Japanese>喉頭エアウェイ(King LT)の使用時間</Japanese>
             <Portuguese>Tempo para Tubo Laríngeo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS_DESC">
@@ -875,7 +882,7 @@
             <Turkish>Geudel Tüp zamanı</Turkish>
             <Italian>Tempo per la canula di Guedel</Italian>
             <Russian>Время для Гедель Тубус</Russian>
-            <Japanese>口咽頭エアウェイ(ゲデルチューブ)にかかる時間</Japanese>
+            <Japanese>口咽頭エアウェイ(ゲデルチューブ)の使用時間</Japanese>
             <Portuguese>Tempo para usar uma Cânula de Guedel</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_GUEDELTUBUS_DESC">
@@ -1001,7 +1008,7 @@
             <German>%1 hat die stabile Seitenlage durchgeführt</German>
             <Polish>%1 ułożył w pozycji bezpiecznej</Polish>
             <Chinesesimp>%1 已建立恢复体态</Chinesesimp>
-            <Japanese>%1 が回復体位にしました</Japanese>
+            <Japanese>%1は回復体位にしました</Japanese>
             <Korean>%1 이(가) 회복자세를 교정했습니다</Korean>
             <French>%1 a mis en place la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu %1 oluşturuldu</Turkish>
@@ -1015,7 +1022,7 @@
             <German>Zeit für die stabile Seitenlage</German>
             <Polish>Czas na ułożenie w pozycji bezpiecznej</Polish>
             <Chinesesimp>建立恢复体态时间</Chinesesimp>
-            <Japanese>回復体位にかかる時間</Japanese>
+            <Japanese>回復体位の所要時間</Japanese>
             <Korean>회복자세 교정 시간</Korean>
             <French>Temps pour mettre en position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu için zaman</Turkish>
@@ -1071,7 +1078,7 @@
             <German>Die Zeit, wie lange es dauert, eine stabile Seitenlage abzubrechen</German>
             <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
             <Chinesesimp>取消恢复体态时间</Chinesesimp>
-            <Japanese>回復体位を崩すのにかかる時間</Japanese>
+            <Japanese>回復体位を崩すの所要時間</Japanese>
             <Korean>회복자세 교정 취소 시간</Korean>
             <French>Temps pour annuler la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonunu iptal etmek için zaman</Turkish>
@@ -1218,7 +1225,7 @@
             <German>%1 hat Larynxtubus entfernt</German>
             <Czech>%1 odstranil KingLT</Czech>
             <Spanish>%1 retiró el tubo laringeo</Spanish>
-            <Japanese>%1 が King LT を取り除きました</Japanese>
+            <Japanese>%1はKing LTを取り除きました</Japanese>
             <French>%1 a retiré la tube laryngé</French>
             <Korean>%1(이)가 기관삽입기를 제거했습니다</Korean>
             <Italian>%1 rimosso KingLT</Italian>
@@ -1228,7 +1235,7 @@
             <German>%1 hat Guedeltubus entfernt</German>
             <Czech>%1 odstranil Guedel Tubu</Czech>
             <Spanish>%1 retiró la Canula de Guedel</Spanish>
-            <Japanese>%1 が ゲデルチューブ を取り除きました</Japanese>
+            <Japanese>%1はゲデルチューブを取り除きました</Japanese>
             <French>%1 a retiré la canule de Guedel</French>
             <Korean>%1(이)가 게델튜브를 제거했습니다</Korean>
             <Italian>%1 rimosso Guedel Tube</Italian>
