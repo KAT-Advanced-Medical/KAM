@@ -8,7 +8,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = 0;
         treatmentTime = 2;
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)));
+        condition = "true";
         callbackSuccess = QFUNC(checkBreathing);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
