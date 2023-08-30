@@ -76,7 +76,7 @@
             <English>IV/IO drop time</English>
             <German>IOs/IVs Herausfallzeit</German>
             <French>Temps de chute de l'IV/IO</French>
-            <Japanese>IV/IO針が脱落する時間</Japanese>
+            <Japanese>IV/IO針の脱落までの時間</Japanese>
             <Korean>IV/IO를 떼어내는 시간</Korean>
             <Italian>Tempo di staccamento IV/IO</Italian>
             <Portuguese>Tempo de queda de IV/IO</Portuguese>
@@ -96,7 +96,7 @@
             <Korean>IV/IO가 환자에게서 떼지는 시간 변경</Korean>
             <Turkish>IV'lerin/IO'ların bir hastadan düştüğü zamanı değiştirir</Turkish>
             <Czech>Změní čas po kterém samovolně vypadnou IV/IO z pacienta</Czech>
-            <Japanese>患者からIV/IO針が抜け落ちるのにかかる時間を設定します。</Japanese>
+            <Japanese>患者からIV/IO針が抜け落ちるのにかかる時間を設定します</Japanese>
             <Russian>Изменяет время выпадения IV/IO капельниц у пациента</Russian>
             <Portuguese>Altera o tempo em que IVs/IOs caem de um paciente</Portuguese>
         </Key>
@@ -128,7 +128,7 @@
             <Korean>IV를 꽂는 시간 변경</Korean>
             <Turkish>IV'ler oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IV</Czech>
-            <Japanese>IV針の刺入にかかる時間</Japanese>
+            <Japanese>IV針の刺入所要時間</Japanese>
             <Russian>Время устанавливать IV</Russian>
             <Portuguese>Tempo de estabelecimento de IV</Portuguese>
         </Key>
@@ -144,7 +144,7 @@
             <Korean>IO를 꽂는 시간 변경</Korean>
             <Turkish>IO'ları oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IO</Czech>
-            <Japanese>IO針の刺入にかかる時間</Japanese>
+            <Japanese>IO針の刺入所要時間</Japanese>
             <Russian>Время устанавливать IO</Russian>
             <Portuguese>Tempo de estabelecimento de IO</Portuguese>
         </Key>
@@ -246,12 +246,15 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_Display">
             <English>Penthrox Inhaler</English>
+            <Japanese>ペンスロックス吸入器</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Use_Penthrox">
             <English>Use Penthrox Inhaler</English>
+            <Japanese>ペンスロックス吸入器を使う</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
             <English>Used to manage moderate pain</English>
+            <Japanese>中度の痛みの対処に使用されます</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -744,7 +747,7 @@
             <French>%1 a administré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
-            <Japanese>%1 が %2を注入</Japanese>
+            <Japanese>%1は%2を注入</Japanese>
             <Russian>%1 нажал %2</Russian>
             <Portuguese>%1 administrou %2</Portuguese>
         </Key>
@@ -760,7 +763,7 @@
             <French>%1 a injecté un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
-            <Japanese>%1 が %2を注射</Japanese>
+            <Japanese>%1は%2を注射</Japanese>
             <Russian>%1 введено %2</Russian>
             <Portuguese>%1 injetou %2</Portuguese>
         </Key>
@@ -776,7 +779,7 @@
             <French>%1 a utilisé un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
-            <Japanese>%1 が %2を使用</Japanese>
+            <Japanese>%1は%2を使用</Japanese>
             <Russian>%1 использует %2</Russian>
             <Portuguese>%1 usou %1</Portuguese>
         </Key>
@@ -920,7 +923,7 @@
             <French>%1 a inseré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha posizionato %2</Italian>
-            <Japanese>%1 は %2 を刺入しました</Japanese>
+            <Japanese>%1は%2を刺入しました</Japanese>
             <Russian>%1 Настройка %2</Russian>
             <Portuguese>%1 inseriu %2</Portuguese>
         </Key>
@@ -968,7 +971,7 @@
             <French>%1 est maintenant vide</French>
             <Turkish>% 1 artık boş</Turkish>
             <Italian>%1 è vuota</Italian>
-            <Japanese>%1 は空になりました</Japanese>
+            <Japanese>%1は空になりました</Japanese>
             <Russian>%1 сейчас пуст</Russian>
             <Portuguese>%1 agora está vazio</Portuguese>
         </Key>
@@ -989,20 +992,20 @@
             <Portuguese>Requerer inserção de IV/IO</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_DESC">
-            <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma.\n If false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
-            <German>Standardeinstellung falsch. Wenn wahr, müssen Sie zuerst eine IV/IO einführen, bevor Sie jemandem Kochsalzlösung/Blut/Plasma geben können.\n Wenn falsch, behält es das Standard-ACE-Verhalten für die Verwendung von Kochsalzlösung/Blut/Plasma bei.</German>
-            <Polish>Domyślnie wyłączone. Jeśli włączone, należy najpierw umieścić IV/IO przed podaniem płynów. \nJeśli wyłączone, mechanika będzie taka sama jak w ACE przy podawaniu soli fizjologicznej/krwi/osocza.</Polish>
+            <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma. \n If false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
+            <German>Standardeinstellung falsch. Wenn wahr, müssen Sie zuerst eine IV/IO einführen, bevor Sie jemandem Kochsalzlösung/Blut/Plasma geben können. \n Wenn falsch, behält es das Standard-ACE-Verhalten für die Verwendung von Kochsalzlösung/Blut/Plasma bei.</German>
+            <Polish>Domyślnie wyłączone. Jeśli włączone, należy najpierw umieścić IV/IO przed podaniem płynów. \n Jeśli wyłączone, mechanika będzie taka sama jak w ACE przy podawaniu soli fizjologicznej/krwi/osocza.</Polish>
             <Spanish>Predeterminado desactivado. Si se activa, se necesitará insertar una IV/IO primero antes de poder suministrar salino/sangre/plasma. \n Si esta desactivado, se mantiene el funcionamiento de ACE para aplicar salino/sangre/plasma.</Spanish>
-            <French>Par défaut désactivé. Si activé, vous avez besoin de poser une IV/IO avant de pouvoir administrer de la saline/sang/plasma.\n Si désactivé, le comportement standard de ACE pour l'usage de saline/sang plasma est utilisé.</French>
-            <Turkish>VDefault false. Doğruysa, birine salin/kan/plazma vermeden önce IV/IO eklemeniz gerekir.\n Yanlışsa, salin/kan/plazma kullanımı için standart ACE davranışını korur.</Turkish>
-            <Italian>Predefinito falso. Se è vero, dovrai prima inserire l'IV/IO per poter somministrare a qualcuno soluzione salina/sangue/plasma. \nSe falso, mantiene il comportamento ACE standard per l'utilizzo di soluzione salina/sangue/plasma.</Italian>
-            <Chinese>默认为真。 如果为 false，您需要先插入 IV/IO，然后才能给某人注射盐水/血液/血浆。\n 如果为 false，它保留使用盐水/血液/血浆的标准 ACE 行为。</Chinese>
-            <Chinesesimp>默认为真。 如果为 false, 您需要先建立 IV/IO, 然后才能给某人注射盐水/血液/血浆。\n 如果为 false, 它保留使用盐水/血液/血浆的标准 ACE 行为。</Chinesesimp>
-            <Korean>기본값은 참입니다. 참이면 식염수/혈액/혈장을 제공하기 전에 먼저 IV/IO를 삽입해야 합니다.\n 거짓이면 식염수/혈액/혈장 사용에 대한 표준 ACE 동작을 유지합니다.</Korean>
-            <Czech>Výchozí zakázáno. Pokud je povoleno, budete muset nejprve vložit IV/IO, než budete moci někomu podat fyziologický roztok/krev/plazmu.\n Pokud je zakázano, zachová standardní chování ACE pro použití fyziologického roztoku/krve/plazmy.</Czech>
-            <Japanese>KATデフォルトではfalseです。trueの場合、輸液を行う前にIV/IOを刺入する必要があります。\nfalseの場合はACEデフォルトの動作を保持します。</Japanese>
-            <Russian>Истина по умолчанию. Если это правда, вам нужно будет сначала ввести IV/IO, прежде чем вы сможете дать кому-то физиологический раствор/кровь/плазму.\n Если false, он сохраняет стандартное поведение ACE для использования физиологического раствора/крови/плазмы.</Russian>
-            <Portuguese>Falso, por padrão. Se verdadeiro, você precisará inserir IV/IO primeiro antes de poder administrar solução salina/sangue/plasma a alguém.\n Se falso, mantém o comportamento padrão do ACE para uso de solução salina/sangue/plasma.</Portuguese>
+            <French>Par défaut désactivé. Si activé, vous avez besoin de poser une IV/IO avant de pouvoir administrer de la saline/sang/plasma. \n Si désactivé, le comportement standard de ACE pour l'usage de saline/sang plasma est utilisé.</French>
+            <Turkish>VDefault false. Doğruysa, birine salin/kan/plazma vermeden önce IV/IO eklemeniz gerekir. \n Yanlışsa, salin/kan/plazma kullanımı için standart ACE davranışını korur.</Turkish>
+            <Italian>Predefinito falso. Se è vero, dovrai prima inserire l'IV/IO per poter somministrare a qualcuno soluzione salina/sangue/plasma. \n Se falso, mantiene il comportamento ACE standard per l'utilizzo di soluzione salina/sangue/plasma.</Italian>
+            <Chinese>默认为真。 如果为 false，您需要先插入 IV/IO，然后才能给某人注射盐水/血液/血浆。 \n 如果为 false，它保留使用盐水/血液/血浆的标准 ACE 行为。</Chinese>
+            <Chinesesimp>默认为真。 如果为 false, 您需要先建立 IV/IO, 然后才能给某人注射盐水/血液/血浆。 \n 如果为 false, 它保留使用盐水/血液/血浆的标准 ACE 行为。</Chinesesimp>
+            <Korean>기본값은 참입니다. 참이면 식염수/혈액/혈장을 제공하기 전에 먼저 IV/IO를 삽입해야 합니다. \n 거짓이면 식염수/혈액/혈장 사용에 대한 표준 ACE 동작을 유지합니다.</Korean>
+            <Czech>Výchozí zakázáno. Pokud je povoleno, budete muset nejprve vložit IV/IO, než budete moci někomu podat fyziologický roztok/krev/plazmu. \n Pokud je zakázano, zachová standardní chování ACE pro použití fyziologického roztoku/krve/plazmy.</Czech>
+            <Japanese>KATデフォルトではfalseです。trueの場合、輸液を行う前にIV/IOを刺入する必要があります。 \n falseの場合はACEデフォルトの動作を保持します。</Japanese>
+            <Russian>Истина по умолчанию. Если это правда, вам нужно будет сначала ввести IV/IO, прежде чем вы сможете дать кому-то физиологический раствор/кровь/плазму. \n Если false, он сохраняет стандартное поведение ACE для использования физиологического раствора/крови/плазмы.</Russian>
+            <Portuguese>Falso, por padrão. Se verdadeiro, você precisará inserir IV/IO primeiro antes de poder administrar solução salina/sangue/plasma a alguém. \n Se falso, mantém o comportamento padrão do ACE para uso de solução salina/sangue/plasma.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_Medications">
             <English>Medications Require IV/IO</English>
@@ -1018,17 +1021,17 @@
             <Portuguese>Medicamentos requerem IV/IO</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_Medications_DESC">
-            <English>Default false. If true, you will need to insert IV/IO first before being able to give someone medications.\n If false, you can give them without it.</English>
-            <Japanese>KATデフォルトではfalseです。trueの場合、薬液注射を行う前にIV/IOを刺入する必要があります。\nfalseの場合は薬品だけで投与可能になります。</Japanese>
-            <French>Faux par défaut. Si vrai, il sera nécessaire d'insérer une IV/IO avant de pouvoir donner des médicaments à quelqu'un.\n Si faux, ils pourront être donnés sans</French>
-            <Chinesesimp>默认假。 如果为真，您将需要先建立 IV/IO, 然后才能给某人注射药。\n 如果为假, 您可以在没有IV/IO的情况下注射药物他们。</Chinesesimp>
+            <English>Default false. If true, you will need to insert IV/IO first before being able to give someone medications. \n If false, you can give them without it.</English>
+            <Japanese>KATデフォルトではfalseです。trueの場合、薬液注射を行う前にIV/IOを刺入する必要があります。 \n falseの場合は薬品だけで投与可能になります。</Japanese>
+            <French>Faux par défaut. Si vrai, il sera nécessaire d'insérer une IV/IO avant de pouvoir donner des médicaments à quelqu'un. \n Si faux, ils pourront être donnés sans</French>
+            <Chinesesimp>默认假。 如果为真，您将需要先建立 IV/IO, 然后才能给某人注射药。 \n 如果为假, 您可以在没有IV/IO的情况下注射药物他们。</Chinesesimp>
             <Italian>Falso nel default. Se vero/true, dovrai prima inserire un IV/IO per poter effettuare alcune medicazioni. \n Se falso, potrai dargliele senza IV/IO. </Italian>
             <Czech>V základu vypnuto. Pokud zapnuto, budete potřebovat zavést IV/IO jako první, než budete moct někomu dávat léčiva \n Pokud vypnuto, tak je můžete dávat bez nich.</Czech>
             <Polish>Domyślnie wyłączone. Jeśli włączone leki będą wymagać założonego IV/IO \n Wyłączone pozwoli podać leki bez tego.</Polish>
-            <Korean>기본값은 false입니다. true일 경우 누군가에게 약을 주입하기 전에 먼저 주사를 꽂아야 합니다.\n false일 경우 주사없이 투약이 가능합니다.</Korean>
-            <German>Standardmäßig falsch. Bei "wahr" muss zuerst ein IV/IO gelegt sein, bevor jemandem Medikamente geben werden können.\n Bei "falsch" können Medikamente ohne IV/IO geben werden.</German>
+            <Korean>기본값은 false입니다. true일 경우 누군가에게 약을 주입하기 전에 먼저 주사를 꽂아야 합니다. \n false일 경우 주사없이 투약이 가능합니다.</Korean>
+            <German>Standardmäßig falsch. Bei "wahr" muss zuerst ein IV/IO gelegt sein, bevor jemandem Medikamente geben werden können. \n Bei "falsch" können Medikamente ohne IV/IO geben werden.</German>
             <Spanish>Predeterminado desactivado. Si se activa, se necesitará insertar una IV/IO primero antes de poder suministrar fármacos. \n Si esta desactivado, se podrán suministrar sin IV/IO.</Spanish>
-            <Portuguese>Falso, por padrão. Se verdadeiro, você precisará inserir IV/IO primeiro antes de poder administrar medicamentos a alguém.\n Se falso, você pode administrá-los sem ele.</Portuguese>
+            <Portuguese>Falso, por padrão. Se verdadeiro, você precisará inserir IV/IO primeiro antes de poder administrar medicamentos a alguém. \n Se falso, você pode administrá-los sem ele.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -1122,7 +1125,7 @@
             <French>Niveau médical requis pour stimulation</French>
             <Turkish>Yeniden oryantasyon için gerekli tıbbi seviye</Turkish>
             <Italian>Livello medico richiesto per stimolazione</Italian>
-            <Japanese>患者を刺激を与えるために訓練レベルを必要とさせます。</Japanese>
+            <Japanese>患者を刺激を与えるの使用に訓練レベルを必要とさせます。</Japanese>
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
             <Portuguese>Nível médico necessário para reorientação</Portuguese>
         </Key>
@@ -1327,7 +1330,7 @@
             <French>Temps de traitement pour réorienter</French>
             <Korean>뺨을 때리는 데 걸리는 시간</Korean>
             <German>Behandlungszeit für die Umorientierung</German>
-            <Japanese>患者に刺激を与えるのにかかる時間</Japanese>
+            <Japanese>患者に刺激を与える所要時間</Japanese>
             <Spanish>Tiempo para bofetada</Spanish>
             <Portuguese>Tempo de tratamento para reorientação</Portuguese>
         </Key>
@@ -1652,7 +1655,7 @@
             <French>Temps de traitement des Sels d'Ammoniac</French>
             <Korean>탄산암모늄으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Carbonat</German>
-            <Japanese>炭酸アンモニウムの使用にかかる時間</Japanese>
+            <Japanese>炭酸アンモニウムの使用時間</Japanese>
             <Spanish>Tiempo para uso del Carbonato</Spanish>
             <Portuguese>Tempo de uso de Carbonato</Portuguese>
         </Key>
@@ -1665,7 +1668,7 @@
             <French>Niveau médical requis pour la Naloxone</French>
             <Korean>날록손을 사용할 수 있는 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderlicher medizinischer Grad für die Gabe von Naloxon</German>
-            <Japanese>ナロキソンに必要な医療レベル</Japanese>
+            <Japanese>ナロキソンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Naloxona</Spanish>
             <Portuguese>Nível médico exigido para administrar Naloxona</Portuguese>
         </Key>
@@ -1678,7 +1681,7 @@
             <French>Temps de traitement de la Naloxone</French>
             <Korean>날록손으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Naloxon </German>
-            <Japanese>ナロキソンの治療時間</Japanese>
+            <Japanese>ナロキソンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Naloxona</Spanish>
             <Portuguese>Tempo de uso de Naloxona</Portuguese>
         </Key>
@@ -1686,7 +1689,7 @@
             <English>Treatment time for Pervitin</English>
             <German>Anwendungszeit für Pervitin</German>
             <French>Temps de traitement de la Pervitine</French>
-            <Japanese>ペルビチンの治療時間</Japanese>
+            <Japanese>ペルビチンの使用時間</Japanese>
             <Korean>페르피틴으로 치료하는 시간</Korean>
             <Italian>Tempo di trattamento per il Pervitin</Italian>
             <Portuguese>Tempo de uso de Pervitin</Portuguese>
@@ -1698,7 +1701,7 @@
             <English>Medical level required for Pervitin</English>
             <German>Erforderliches medizinischer Grad für die Gabe von Pervitin</German>
             <French>Niveau médical requis pour la Pervitine</French>
-            <Japanese>ペルビチンに必要な医療レベル</Japanese>
+            <Japanese>ペルビチンの許可</Japanese>
             <Korean>페르피틴을 사용하는데 필요한 의료 레벨 수준 변경</Korean>
             <Italian>Livello medico richiesto per il Pervitin</Italian>
             <Portuguese>Nível médico exigido para administrar Pervitin</Portuguese>
@@ -1715,7 +1718,7 @@
             <French>Niveau médical requis pour l'Acide Tranexamique</French>
             <Korean>TXA를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von TXA</German>
-            <Japanese>TXAに必要な医療レベル</Japanese>
+            <Japanese>TXAの許可</Japanese>
             <Spanish>Nivel médico requerido para el ATX</Spanish>
             <Portuguese>Nível médico exigido para administrar TXA</Portuguese>
         </Key>
@@ -1728,7 +1731,7 @@
             <French>Temps de traitement de l'Acide Tranexamique</French>
             <Korean>TXA로 치료하는 시간</Korean>
             <German>Anwendungszeit für TXA</German>
-            <Japanese>TXAの治療時間</Japanese>
+            <Japanese>TXAの使用時間</Japanese>
             <Spanish>Tiempo para uso del ATX</Spanish>
             <Portuguese>Tempo de uso de TXA</Portuguese>
         </Key>
@@ -1741,7 +1744,7 @@
             <French>Niveau médical requis pour la Noradrénaline</French>
             <Korean>노르에피네프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Norepinephrin</German>
-            <Japanese>ノルアドレナリンに必要な医療レベル</Japanese>
+            <Japanese>ノルアドレナリンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Norepinefrina</Spanish>
             <Portuguese>Nível médico exigido para uso de Norepinefrina</Portuguese>
         </Key>
@@ -1754,7 +1757,7 @@
             <French>Temps de traitement de la Noradrénaline</French>
             <Korean>노르에피네프린으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Norepinephrin</German>
-            <Japanese>ノルアドレナリンの治療時間</Japanese>
+            <Japanese>ノルアドレナリンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Norepinefrina</Spanish>
             <Portuguese>Tempo de uso de Norepinefrina</Portuguese>
         </Key>
@@ -1767,7 +1770,7 @@
             <French>Niveau médical requis pour la Phényléphrine</French>
             <Korean>페닐에프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Phenylephrin</German>
-            <Japanese>フェニレフリンに必要な医療レベル</Japanese>
+            <Japanese>フェニレフリンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Fenilefrina</Spanish>
             <Portuguese>Nível médico exigido para uso de Fenilefrina</Portuguese>
         </Key>
@@ -1780,7 +1783,7 @@
             <French>Temps de traitement de la Phényléphrine</French>
             <Korean>페닐에프린으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Phenylephrin</German>
-            <Japanese>フェニレフリンの治療時間</Japanese>
+            <Japanese>フェニレフリンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Fenilefrina</Spanish>
             <Portuguese>Tempo de uso de Fenilefrina</Portuguese>
         </Key>
@@ -1793,7 +1796,7 @@
             <French>Niveau médical requis pour la Nitroglycérine</French>
             <Korean>니트로글리세린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Anwendungszeit für Nitroglycerin</German>
-            <Japanese>ニトログリセリンに必要な医療レベル</Japanese>
+            <Japanese>ニトログリセリンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Nitroglicerina</Spanish>
             <Portuguese>Nível médico exigido para uso de Nitroglicerina</Portuguese>
         </Key>
@@ -1806,7 +1809,7 @@
             <French>Temps de traitement de la Nitroglycérine</French>
             <Korean>니트로글리세린으로 치료하는 시간</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Nitroglycerin</German>
-            <Japanese>ニトログリセリンの治療時間</Japanese>
+            <Japanese>ニトログリセリンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Nitroglicerina</Spanish>
             <Portuguese>Tempo de uso de Nitroglicerina</Portuguese>
         </Key>
@@ -1819,7 +1822,7 @@
             <French>Niveau médical requis pour l'Amiodarone</French>
             <Korean>아미오다론을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Anwendungszeit für Amiodaron</German>
-            <Japanese>アミオダロンに必要な医療レベル</Japanese>
+            <Japanese>アミオダロンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Amiodarona</Spanish>
             <Portuguese>Nível médico exigido para uso de Amiodarona</Portuguese>
         </Key>
@@ -1832,7 +1835,7 @@
             <French>Temps de traitement de l'Amiodarone</French>
             <Korean>아미오다론으로 치료하는 시간</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Amiodaron</German>
-            <Japanese>アミオダロンの治療時間</Japanese>
+            <Japanese>アミオダロンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Amiodarona</Spanish>
             <Portuguese>Tempo de uso de Amiodarona</Portuguese>
         </Key>
@@ -1845,7 +1848,7 @@
             <French>Niveau médical requis pour la Lidocaïne</French>
             <Korean>리도카인을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Lidocain</German>
-            <Japanese>リドカインに必​​要な医療レベル</Japanese>
+            <Japanese>リドカインの許可</Japanese>
             <Spanish>Nivel médico requerido para la Lidocaína</Spanish>
             <Portuguese>Nível médico exigido para uso de Lidocaína</Portuguese>
         </Key>
@@ -1858,7 +1861,7 @@
             <French>Temps de traitement de la Lidocaïne</French>
             <Korean>리도카인으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Lidocain</German>
-            <Japanese>リドカインの治療時間</Japanese>
+            <Japanese>リドカインの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Lidocaína</Spanish>
             <Portuguese>Tempo de uso de Lidocaína</Portuguese>
         </Key>
@@ -1871,7 +1874,7 @@
             <French>Niveau médical requis pour l'Atropine</French>
             <Korean>아트로핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Atropin</German>
-            <Japanese>アトロピンに必要な医療レベル</Japanese>
+            <Japanese>アトロピンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Atropina</Spanish>
             <Portuguese>Nível médico exigido para uso de Atropina</Portuguese>
         </Key>
@@ -1884,7 +1887,7 @@
             <French>Temps de traitement de l'Atropine</French>
             <Korean>아트로핀으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Atropin</German>
-            <Japanese>アトロピンの治療時間</Japanese>
+            <Japanese>アトロピンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Atropina</Spanish>
             <Portuguese>Tempo de uso de Atropina</Portuguese>
         </Key>
@@ -1897,7 +1900,7 @@
             <French>Niveau médical requis pour l'Acide Aminocaproïque</French>
             <Korean>아미노카프로산을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Aminocapronsäure</German>
-            <Japanese>EACAに必要な医療レベル</Japanese>
+            <Japanese>EACAの許可</Japanese>
             <Spanish>Nivel médico requerido para el EACA</Spanish>
             <Portuguese>Nível médico exigido para uso de EACA</Portuguese>
         </Key>
@@ -1910,7 +1913,7 @@
             <French>Temps de traitement de l'Acide Aminocaproïque</French>
             <Korean>아미노카프로산으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Aminocapronsäure</German>
-            <Japanese>EACAの治療時間</Japanese>
+            <Japanese>EACAの使用時間</Japanese>
             <Spanish>Tiempo para uso del EACA</Spanish>
             <Portuguese>Tempo de uso de EACA</Portuguese>
         </Key>
@@ -1923,7 +1926,7 @@
             <Korean>플루마제닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Flumazenil</German>
             <Polish>Poziom wyszkolenia medycznego dla Flumazenilu</Polish>
-            <Japanese>フルマゼニルに必要な医療レベル</Japanese>
+            <Japanese>フルマゼニルの許可</Japanese>
             <Spanish>Nivel médico requerido para el Flumazenil</Spanish>
             <Portuguese>Nível médico exigido para uso de Flumazenil</Portuguese>
         </Key>
@@ -1936,7 +1939,7 @@
             <French>Temps de traitement du Flumazénil</French>
             <Korean>플루마제닐로 치료하는 시간</Korean>
             <German>Anwendungszeit für Flumazenil</German>
-            <Japanese>フルマゼニルの治療時間</Japanese>
+            <Japanese>フルマゼニルの使用時間</Japanese>
             <Spanish>Tiempo para uso del Flumazenil</Spanish>
             <Portuguese>Tempo de uso de Flumazenil</Portuguese>
         </Key>
@@ -1949,7 +1952,7 @@
             <Korean>로라제팜을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Lorazepam</German>
             <Polish>Poziom wyszkolenia medycznego dla Lorazepamu</Polish>
-            <Japanese>ロラゼパムに必要な医療レベル</Japanese>
+            <Japanese>ロラゼパムの許可</Japanese>
             <Spanish>Nivel médico requerido para el Lorazepam</Spanish>
             <Portuguese>Nível médico exigido para uso de Lorazepam</Portuguese>
         </Key>
@@ -1962,7 +1965,7 @@
             <French>Temps de traitement du Lorazépam</French>
             <Korean>로라제팜으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Lorazepam</German>
-            <Japanese>ロラゼパムの治療時間</Japanese>
+            <Japanese>ロラゼパムの使用時間</Japanese>
             <Spanish>Tiempo para uso del Lorazepam</Spanish>
             <Portuguese>Tempo de uso de Lorazepam</Portuguese>
         </Key>
@@ -1975,7 +1978,7 @@
             <Korean>에토미데이트를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Etomidat</German>
             <Polish>Poziom wyszkolenia medycznego dla Etomidatu</Polish>
-            <Japanese>エトミデートに必要な医療レベル</Japanese>
+            <Japanese>エトミデートの許可</Japanese>
             <Spanish>Nivel médico requerido para el Etomidato</Spanish>
             <Portuguese>Nível médico exigido para uso de Etomidato</Portuguese>
         </Key>
@@ -1988,7 +1991,7 @@
             <French>Temps de traitement de l'Étomidate</French>
             <Korean>에토미데이트로 치료하는 시간</Korean>
             <German>Anwendungszeit für Etomidat</German>
-            <Japanese>エトミデートの施術時間</Japanese>
+            <Japanese>エトミデートの使用時間</Japanese>
             <Spanish>Tiempo para uso del Etomidato</Spanish>
             <Portuguese>Tempo de uso de Etomidato</Portuguese>
         </Key>
@@ -2001,7 +2004,7 @@
             <French>Niveau médical requis pour la Kétamine</French>
             <Korean>케타민을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Ketamin</German>
-            <Japanese>ケタミンに必要な医療レベル</Japanese>
+            <Japanese>ケタミンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Ketamina</Spanish>
             <Portuguese>Nível médico exigido para uso de Cetamina</Portuguese>
         </Key>
@@ -2014,7 +2017,7 @@
             <French>Temps de traitement de la Kétamine</French>
             <Korean>케타민으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Ketamin</German>
-            <Japanese>ケタミンの治療時間</Japanese>
+            <Japanese>ケタミンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Ketamina</Spanish>
             <Portuguese>Tempo de uso de Cetamina</Portuguese>
         </Key>
@@ -2027,7 +2030,7 @@
             <French>Niveau médical requis pour le Fentanyl</French>
             <Korean>펜타닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Fentanyl</German>
-            <Japanese>フェンタニルに必要な医療レベル</Japanese>
+            <Japanese>フェンタニルの許可</Japanese>
             <Spanish>Nivel médico requerido para el Fentalino</Spanish>
             <Portuguese>Nível médico exigido para uso de Fentanil</Portuguese>
         </Key>
@@ -2040,7 +2043,7 @@
             <French>Temps de traitement du Fentanyl</French>
             <Korean>펜타닐로 치료하는 시간</Korean>
             <German>Anwendungszeit für Fentanyl</German>
-            <Japanese>フェンタニルの治療時間</Japanese>
+            <Japanese>フェンタニルの使用時間</Japanese>
             <Spanish>Tiempo para uso del Fentalino</Spanish>
             <Portuguese>Tempo de uso de Fentanil</Portuguese>
         </Key>
@@ -2053,7 +2056,7 @@
             <French>Niveau médical requis pour la Nalbuphine</French>
             <Korean>날부핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Gabe von Nalbuphin </German>
-            <Japanese>ナルブフィンに必要な医療レベル</Japanese>
+            <Japanese>ナルブフィンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Nalbufina</Spanish>
             <Portuguese>Nível médico exigido para uso de Nalbufina</Portuguese>
         </Key>
@@ -2066,15 +2069,17 @@
             <French>Temps de traitement de la Nalbuphine</French>
             <Korean>날부핀으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Nalbuphin</German>
-            <Japanese>ナルブフィンの治療時間</Japanese>
+            <Japanese>ナルブフィンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Nalbufina</Spanish>
             <Portuguese>Tempo de uso de Nalbufina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_medLvl_Penthrox">
             <English>Medical level required for Penthrox Inhaler</English>
+            <Japanese>ペンスロックス吸入器の許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
             <English>Treatment time for Penthrox Inhaler</English>
+            <Japanese>ペンスロックス吸入器の使用時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -2362,9 +2367,11 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Penthrox">
             <English>Penthrox Inhaler Settings</English>
+            <Japanese>ペンスロックス吸入器設定</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
             <English>%1 performed a saline flush</English>
+            <Japanese>%1が生理食塩水フラッシュを実施</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
@@ -2798,7 +2805,7 @@
             <French>%1 a effectué une dialyse</French>
             <Korean>%1 이(가) 투석을 수행했습니다</Korean>
             <German>%1 hat eine Dialyse durchgeführt</German>
-            <Japanese>%1 は透析を行いました</Japanese>
+            <Japanese>%1は透析を行いました</Japanese>
             <Spanish>%1 realizó una dialisis</Spanish>
             <Portuguese>%1 realizou diálise</Portuguese>
         </Key>

@@ -29,7 +29,7 @@
             <Italian>Ritmo avanzato attivato?</Italian>
             <Spanish>¿Ritmo avanzado activado?</Spanish>
             <Czech>Pokročilý Rytmus aktivován?</Czech>
-            <Japanese>高度な心電図検査 を有効化しますか?</Japanese>
+            <Japanese>高度な心電図波形 を有効化しますか?</Japanese>
             <Russian>Продвинутый ритм активирован?</Russian>
             <Portuguese>Ritmo avançado ativado?</Portuguese>
         </Key>
@@ -819,6 +819,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AnalyzeRhythm">
             <English>Analyze Rhythm</English>
+            <Japanese>波形を測定</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_DogTag">
             <English>Check Dogtags</English>
@@ -902,48 +903,63 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AED_Action_PlacePads">
             <English>Place AED Pads</English>
+            <Japanese>AEDパッドを装着</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDStation_Action_PlacePads">
             <English>Station: Place AED Pads</English>
+            <Japanese>AEDパッドを装着(設置)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDVehicle_Action_PlacePads">
             <English>Vehicle: Place AED Pads</English>
+            <Japanese>AEDパッドを装着(車両)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_PlacePads">
             <English>Place AED-X Pads</English>
+            <Japanese>AED-Xパッドを装着</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_PlacePads">
             <English>Station: Place AED-X Pads</English>
+            <Japanese>AED-Xパッドを装着(設置)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_PlacePads">
             <English>Vehicle: Place AED-X Pads</English>
+            <Japanese>AED-Xパッドを装着(車両)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads">
             <English>Remove Defibrillator Pads</English>
+            <Japanese>除細動器パッドを取り外す</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_PlacePads_Progress">
             <English>Placing Defibrillator Pads</English>
+            <Japanese>除細動器パッドを装着しています</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads_Progress">
             <English>Removing Defibrillator Pads</English>
+            <Japanese>除細動器パッドを外しています</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Shock">
             <English>Administer Shock</English>
+            <Japanese>ショックを実施</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Charge">
             <English>Charge Defibrillator</English>
+            <Japanese>除細動器を充電</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
+            <Japanese>充電を取り消す</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_ViewMonitor">
             <English>View Monitor</English>
+            <Japanese>バイタルモニターを表示</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_ConnectMonitor">
             <English>Connect Vitals Monitor</English>
+            <Japanese>バイタルモニターの接続</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_ConnectMonitor">
             <English>Station: Connect Vitals Monitor</English>
+            <Japanese>バイタルモニターの接続(設置)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_ConnectMonitor">
             <English>Vehicle: Connect Vitals Monitor</English>
@@ -957,7 +973,7 @@
             <Italian>Veicolo: Attaccare DAE-X</Italian>
             <Spanish>Vehículo: Colocar DEA-X</Spanish>
             <Czech>Vozidlo: Připevnit AED-X</Czech>
-            <Japanese>車両: AED-Xを取り付ける</Japanese>
+            <Japanese>バイタルモニターの接続(車両)</Japanese>
             <Russian>Транспортное средство: прикрепите AED-X</Russian>
             <Portuguese>Veículo: Colocar DEA-X</Portuguese>
         </Key>
@@ -974,14 +990,16 @@
             <Turkish>İzlemeyi kaldır</Turkish>
             <Italian>Rimuovere il monitoraggio</Italian>
             <Russian>Удалить мониторинг</Russian>
-            <Japanese>モニターを取り外す</Japanese>
+            <Japanese>バイタルモニターの切断</Japanese>
             <Portuguese>Remover monitoramento</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_EnableAudio">
             <English>Vitals Monitor Audio ON</English>
+            <Japanese>モニター音声オン</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_DisableAudio">
             <English>Vitals Monitor Audio OFF</English>
+            <Japanese>モニター音声オフ</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_Connecting_Progress">
             <English>Connecting</English>
@@ -1028,7 +1046,7 @@
             <Turkish>AED X'in sesini kısın</Turkish>
             <Italian>Ridurre il volume del DAE-X</Italian>
             <Russian>Уменьшите громкость AED X</Russian>
-            <Japanese>AED Xの音量を下げる</Japanese>
+            <Japanese>AED-Xの音量を下げる</Japanese>
             <Portuguese>Abaixar o volume do DEA-X</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_addSound">
@@ -1044,7 +1062,7 @@
             <Turkish>AED X'in sesini arttırın</Turkish>
             <Italian>Aumentare il volume del DAE-X</Italian>
             <Russian>Увеличьте громкость AED X</Russian>
-            <Japanese>AED Xの音量を上げる</Japanese>
+            <Japanese>AED-Xの音量を上げる</Japanese>
             <Portuguese>Aumentar o volume do DEA-X</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_bloodbank">
@@ -1060,7 +1078,7 @@
             <Turkish>[KAM] Tıbbi Kan bankası</Turkish>
             <Italian>[KAM] Banca del sangue</Italian>
             <Russian>[KAM] Банк медицинской крови</Russian>
-            <Japanese>[KAM] 医療血液バンク</Japanese>
+            <Japanese>[KAM] 医療用血液バンク</Japanese>
             <Portuguese>[KAM] Banco de Sangue Médico</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_open_crosspanel">
@@ -1097,6 +1115,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_place_AEDX">
             <English>Place AED-X</English>
+            <Japanese>AED-Xを設置</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_PickUpAED">
             <English>Pick Up AED</English>
@@ -1116,54 +1135,71 @@
         </Key>
         <Key ID="STR_KAT_Circulation_PickUpAEDX">
             <English>Pick Up AED-X</English>
+            <Japanese>AED-Xを拾う</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ToggleVolume">
             <English>Toggle Volume</English>
+            <Japanese>音声オン/オフ</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_MeasureBloodPressure">
             <English>Measure Blood Pressure</English>
+            <Japanese>血圧を測定する</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CheckPads">
             <English>Check Pads</English>
+            <Japanese>ﾊﾟｯﾄﾞを確認してください</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SHOCKADVISED">
             <English>SHOCK ADVISED</English>
+            <Japanese>除細動ｼｮｯｸが必要です</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_NOSHOCKADVISED">
             <English>NO SHOCK ADVISED</English>
+            <Japanese>除細動ｼｮｯｸは不要です</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ANALYZINGEKG">
             <English>ANALYZING EKG</English>
+            <Japanese>ECG解析中</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGED">
             <English>CHARGED</English>
+            <Japanese>充電完了</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGING">
             <English>CHARGING</English>
+            <Japanese>充電中</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_AED_DISARMED">
             <English>AED DISARMED</English>
+            <Japanese>除細動器内部放電</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DISARMED">
             <English>DISARMED</English>
+            <Japanese>内部放電</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DeliveredEnergy">
             <English>Delivered Energy</English>
+            <Japanese>ｼｮｯｸ実施</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
+            <Japanese>ｼｮｯｸ実施</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_StandClear">
             <English>Stand Clear</English>
+            <Japanese>患者に触れないでください</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PerformCPR">
             <English>Perform CPR</English>
+            <Japanese>CPRを行ってください</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PUSHSHOCK">
             <English>PUSH SHOCK</English>
+            <Japanese>ｼｮｯｸﾎﾞﾀﾝを押します</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PushAnalyze">
             <English>Push Analyze</English>
+            <Japanese>解析ﾎﾞﾀﾝを押します</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -1209,15 +1245,15 @@
             <Italian>Assegnazione del gruppo sanguigno</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_DESC">
-            <English>Sets how players' blood type is assigned:\nPlayer chosen: Player chooses their own blood type\nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning\nRandom: Blood type is random each respawn\nRandom (on join): Blood type is random, but doesn't change upon respawning\nSteamID: Blood type is decided based on player's steamID\nSteamID (custom list): Blood type is decided based on player's steamID and custom list</English>
-            <Spanish>Fija como se asigna el tipo de sangre:\nElegido por jugador: El jugador elige su tipo de sangre.\nElegido por jugador (forzado): El jugador elige su tipo de sangre, pero no cambia al reaparecer\nAleatorio: El tipo de sangre es aleatorio en cada reaparición\nAleatorio (al unirse): El tipo de sangre es aleatorio, y no cambia con cada reaparición\nSteamID: El tipo de sangre se decide en base al SteamID del jugador\nSteam ID (Lista personalizada): El tipo de sangre es seleccionado en base al Steam ID del jugador y de una lista personalizada</Spanish>
-            <Korean>플레이어의 혈액형 할당 방식을 설정합니다:\n플레이어가 선택: 플레이어가 자신의 혈액형을 선택합니다\n플레이어가 선택(강제): 플레이어가 자신의 혈액형을 선택하지만 재투입해도 변하지 않습니다.\n무작위: 혈액형은 재투입할 때마다 무작위로 변합니다.\n무작위 (게임 참가 때만):혈액형은 무작위이지만 재투입해도 변하지 않습니다.\nSteamID:혈액형은 플레이어의 SteamID을 기반으로 결정됩니다.\nSteamID (커스텀 목록): 혈액형은 플레이어의 SteamID와 커스텀 목록을 기반으로 결정됩니다.</Korean>
-            <Japanese>プレイヤーの血液型の割り振り方法を設定します:\nプレイヤー選択: プレイヤーが自分で選択できます。\nプレイヤー選択(強制): プレイヤーが自分で選択できます、リスポーン時に変更しません。\nランダム: リスポーン毎にランダムに指定されます。\nランダム(参加時): ランダムに指定されます。リスポーン時に変化しません。\nSteamID: プレイヤーのSteamIDを基に決定されます。\nSteamID(カスタムリスト): プレイヤーのSteamIDとカスタムリストの設定に基づいて決定されます。</Japanese>
-            <French>Définit comme le groupe sanguin des joueurs est attribué :\nChoix du joueur : chaque joueur choisit son propre groupe sanguin\nChoix du joueur (forcé) : chaque joueur choisit son propre groupe sanguin, mais il ne changera pas au respawn.\nAléatoire : le groupe sanguin est choisit aléatoirement à chaque réapparition\nAléatoire (défini): le groupe sanguin est aléatoire, mais ne changera pas à la réapparition\nSteamID : le groupe groupe sanguin est basé sur le steamID des joueurs\nSteamID (liste personnalisée) : le groupe sanguin est basé sur le steamID des joueurs ainsi qu'une liste personnalisée </French>
-            <Polish>Ustala w jaki sposób grupa krwi jest przydzielana: \nWybrana przez gracza: Gracz wybiera samemu grupę krwi. \nWybrana przez gracza (wymuszona): Gracz wybiera samemu grupę krwi, ale nie może jej zmienić. \nLosowo: Grupa krwi jest losowana przy każdym odrodzeniu. \nLosowo (przy dołączeniu): Grupa krwi jest losowana, ale nie zmieniana przy odrodzeniu. \nSteamID: Grupa krwi jest wybierana na podstawie steamID gracza. \nSteamID (llista): Grupa krwi jest wybierana na podstawie steamID gracza oraz listy.</Polish>
-            <German>Legt fest, wie die Blutgruppe des Spielers zugewiesen wird:\nSpieler gewählt: Der Spieler wählt seine eigene Blutgruppe\nSpieler gewählt (erzwungen): Der Spieler wählt seine eigene Blutgruppe, aber sie ändert sich beim Respawn nicht\nZufällig: Die Blutgruppe ist bei jedem Respawn zufällig \nZufällig (beim Beitritt): Die Blutgruppe ist zufällig, ändert sich aber beim Respawn nicht\nSteamID: Die Blutgruppe wird basierend auf der SteamID des Spielers festgelegt\nSteamID (benutzerdefinierte Liste): Die Blutgruppe wird basierend auf der SteamID und der benutzerdefinierten Liste des Spielers festgelegt</German>
-            <Czech>Nastavuje, jak se hráčům přiřadí Krevní Skupina:n\Vybráno hráčem: Hráč si sám zvolí svou Krevní Skupinu\nVybráno hráčem (vynuceno): Hráč si sám zvolí svou krevní skupinu, která se při respawnutí nemění\nNáhodně: Krevní Skupina se přiřadí náhodně při každém respawnu\nNáhodně (při připojení): Krevní Skupina se přiřadí náhodně, ale nemění se při respawnu\nSteamID: Krevní Skupina se přiřadí na základě hráčovo SteamID\nSteamID (vlastní seznam): Krevní Skupina se přiřadí na základě hráčovo SteamID a vlastního seznamu</Czech>
-            <Italian>Imposta la modalità di assegnazione del gruppo sanguigno dei giocatori:\nGiocatore scelto: il giocatore sceglie il proprio gruppo sanguigno\nGiocatore scelto (obbligato): il giocatore sceglie il proprio gruppo sanguigno, ma non cambia al momento del respawn\nCasuale: il gruppo sanguigno è casuale a ogni respawn \nCasuale (all'accesso): il gruppo sanguigno è casuale, ma non cambia al momento del respawn\nSteamID: il gruppo sanguigno viene deciso in base allo SteamID del giocatore\nSteamID (elenco personalizzato): il gruppo sanguigno viene deciso in base allo SteamID del giocatore e all'elenco personalizzato</Italian>
+            <English>Sets how players' blood type is assigned: \n Player chosen: Player chooses their own blood type \n Player chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning \n Random: Blood type is random each respawn \n Random (on join): Blood type is random, but doesn't change upon respawning \n SteamID: Blood type is decided based on player's steamID \n SteamID (custom list): Blood type is decided based on player's steamID and custom list</English>
+            <Spanish>Fija como se asigna el tipo de sangre: \n Elegido por jugador: El jugador elige su tipo de sangre. \n Elegido por jugador (forzado): El jugador elige su tipo de sangre, pero no cambia al reaparecer \n Aleatorio: El tipo de sangre es aleatorio en cada reaparición \n Aleatorio (al unirse): El tipo de sangre es aleatorio, y no cambia con cada reaparición \n SteamID: El tipo de sangre se decide en base al SteamID del jugador \n Steam ID (Lista personalizada): El tipo de sangre es seleccionado en base al Steam ID del jugador y de una lista personalizada</Spanish>
+            <Korean>플레이어의 혈액형 할당 방식을 설정합니다: \n 플레이어가 선택: 플레이어가 자신의 혈액형을 선택합니다 \n 플레이어가 선택(강제): 플레이어가 자신의 혈액형을 선택하지만 재투입해도 변하지 않습니다. \n 무작위: 혈액형은 재투입할 때마다 무작위로 변합니다. \n 무작위 (게임 참가 때만):혈액형은 무작위이지만 재투입해도 변하지 않습니다. \n SteamID:혈액형은 플레이어의 SteamID을 기반으로 결정됩니다. \n SteamID (커스텀 목록): 혈액형은 플레이어의 SteamID와 커스텀 목록을 기반으로 결정됩니다.</Korean>
+            <Japanese>プレイヤーの血液型の割り振り方法を設定します: \n プレイヤー選択: プレイヤーが自分で選択できます。 \n プレイヤー選択(強制): プレイヤーが自分で選択できます、リスポーン時に変更しません。 \n ランダム: リスポーン毎にランダムに指定されます。 \n ランダム(参加時): ランダムに指定されます。リスポーン時に変化しません。 \n SteamID: プレイヤーのSteamIDを基に決定されます。 \n SteamID(カスタムリスト): プレイヤーのSteamIDとカスタムリストの設定に基づいて決定されます。</Japanese>
+            <French>Définit comme le groupe sanguin des joueurs est attribué : \n Choix du joueur : chaque joueur choisit son propre groupe sanguin \n Choix du joueur (forcé) : chaque joueur choisit son propre groupe sanguin, mais il ne changera pas au respawn. \n Aléatoire : le groupe sanguin est choisit aléatoirement à chaque réapparition \n Aléatoire (défini): le groupe sanguin est aléatoire, mais ne changera pas à la réapparition \n SteamID : le groupe groupe sanguin est basé sur le steamID des joueurs \n SteamID (liste personnalisée) : le groupe sanguin est basé sur le steamID des joueurs ainsi qu'une liste personnalisée </French>
+            <Polish>Ustala w jaki sposób grupa krwi jest przydzielana: \n Wybrana przez gracza: Gracz wybiera samemu grupę krwi. \n Wybrana przez gracza (wymuszona): Gracz wybiera samemu grupę krwi, ale nie może jej zmienić. \n Losowo: Grupa krwi jest losowana przy każdym odrodzeniu. \n Losowo (przy dołączeniu): Grupa krwi jest losowana, ale nie zmieniana przy odrodzeniu. \n SteamID: Grupa krwi jest wybierana na podstawie steamID gracza. \n SteamID (llista): Grupa krwi jest wybierana na podstawie steamID gracza oraz listy.</Polish>
+            <German>Legt fest, wie die Blutgruppe des Spielers zugewiesen wird: \n Spieler gewählt: Der Spieler wählt seine eigene Blutgruppe \n Spieler gewählt (erzwungen): Der Spieler wählt seine eigene Blutgruppe, aber sie ändert sich beim Respawn nicht \n Zufällig: Die Blutgruppe ist bei jedem Respawn zufällig \n Zufällig (beim Beitritt): Die Blutgruppe ist zufällig, ändert sich aber beim Respawn nicht \n SteamID: Die Blutgruppe wird basierend auf der SteamID des Spielers festgelegt \n SteamID (benutzerdefinierte Liste): Die Blutgruppe wird basierend auf der SteamID und der benutzerdefinierten Liste des Spielers festgelegt</German>
+            <Czech>Nastavuje, jak se hráčům přiřadí Krevní Skupina:n\Vybráno hráčem: Hráč si sám zvolí svou Krevní Skupinu \n Vybráno hráčem (vynuceno): Hráč si sám zvolí svou krevní skupinu, která se při respawnutí nemění \n Náhodně: Krevní Skupina se přiřadí náhodně při každém respawnu \n Náhodně (při připojení): Krevní Skupina se přiřadí náhodně, ale nemění se při respawnu \n SteamID: Krevní Skupina se přiřadí na základě hráčovo SteamID \n SteamID (vlastní seznam): Krevní Skupina se přiřadí na základě hráčovo SteamID a vlastního seznamu</Czech>
+            <Italian>Imposta la modalità di assegnazione del gruppo sanguigno dei giocatori: \n Giocatore scelto: il giocatore sceglie il proprio gruppo sanguigno \n Giocatore scelto (obbligato): il giocatore sceglie il proprio gruppo sanguigno, ma non cambia al momento del respawn \n Casuale: il gruppo sanguigno è casuale a ogni respawn \n Casuale (all'accesso): il gruppo sanguigno è casuale, ma non cambia al momento del respawn \n SteamID: il gruppo sanguigno viene deciso in base allo SteamID del giocatore \n SteamID (elenco personalizzato): il gruppo sanguigno viene deciso in base allo SteamID del giocatore e all'elenco personalizzato</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player">
             <English>Player chosen</English>
@@ -1335,15 +1371,15 @@
             <Italian>Elenco personalizzato dei gruppi sanguigni</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list_DESC">
-            <English>Sets blood types that will be assigned to players based on their SteamID\nBlood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
-            <Spanish>Fija el tipo de sangre con el que aparecen los jugadores en base a su Steam ID\nLos tipos de sangre son separados por comas (","), la lista debe contener 10 tipos de sangre en total</Spanish>
-            <Korean>SteamID를 기반으로 플레이어에게 할당할 혈액형을 설정합니다.\n혈액형은 쉼표(",")로 구분되며, 목록에는 총 10개의 혈액형이 포함되어야 합니다.</Korean>
-            <Japanese>SteamIDによってプレイヤーに割り振られる血液型を設定します。\n血液型はカンマ(",")で区切られ、リストには合計10種の血液型が含まれる必要があります。</Japanese>
-            <French>Attribue les groupes sanguins pouvant être attribués aux joueurs en se basant sur leur SteamID\n Les groupes sanguins sont séparés par des virgules (","), la liste devrait contenir un total de 10 groupes sanguins.</French>
-            <Polish>Określa listę grup krwi, które na podstawie SteamID zostaną przydzielone do graczy. \nGrupy krwi są rozdzielone przy użyciu przecinka (","), lista powinna zawierać w sumie 10 zdefiniowanych elementów</Polish>
-            <German>Legt Blutgruppen fest, die Spielern basierend auf ihrer SteamID zugewiesen werden\nBlutgruppen werden durch ein Komma (",") getrennt, die Liste sollte insgesamt 10 Blutgruppen enthalten</German>
-            <Czech>Nastavuje krevní skupiny které budou přiřazeny hráčům podle jejich SteamID\nKrevní Skupiny jsou oddělené čárkou (","), seznam by měl obsahovat celkem 10 Krevních Skupin</Czech>
-            <Italian>Imposta i gruppi sanguigni che verranno assegnati ai giocatori in base al loro SteamID\nI gruppi sanguigni sono separati da una virgola (","), l'elenco deve contenere un totale di 10 gruppi sanguigni</Italian>
+            <English>Sets blood types that will be assigned to players based on their SteamID \n Blood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
+            <Spanish>Fija el tipo de sangre con el que aparecen los jugadores en base a su Steam ID \n Los tipos de sangre son separados por comas (","), la lista debe contener 10 tipos de sangre en total</Spanish>
+            <Korean>SteamID를 기반으로 플레이어에게 할당할 혈액형을 설정합니다. \n 혈액형은 쉼표(",")로 구분되며, 목록에는 총 10개의 혈액형이 포함되어야 합니다.</Korean>
+            <Japanese>SteamIDによってプレイヤーに割り振られる血液型を設定します \n 血液型はカンマ(",")で区切られ、リストには合計10種の血液型が含まれる必要があります。</Japanese>
+            <French>Attribue les groupes sanguins pouvant être attribués aux joueurs en se basant sur leur SteamID \n Les groupes sanguins sont séparés par des virgules (","), la liste devrait contenir un total de 10 groupes sanguins.</French>
+            <Polish>Określa listę grup krwi, które na podstawie SteamID zostaną przydzielone do graczy. \n Grupy krwi są rozdzielone przy użyciu przecinka (","), lista powinna zawierać w sumie 10 zdefiniowanych elementów</Polish>
+            <German>Legt Blutgruppen fest, die Spielern basierend auf ihrer SteamID zugewiesen werden \n Blutgruppen werden durch ein Komma (",") getrennt, die Liste sollte insgesamt 10 Blutgruppen enthalten</German>
+            <Czech>Nastavuje krevní skupiny které budou přiřazeny hráčům podle jejich SteamID \n Krevní Skupiny jsou oddělené čárkou (","), seznam by měl obsahovat celkem 10 Krevních Skupin</Czech>
+            <Italian>Imposta i gruppi sanguigni che verranno assegnati ai giocatori in base al loro SteamID \n I gruppi sanguigni sono separati da una virgola (","), l'elenco deve contenere un totale di 10 gruppi sanguigni</Italian>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -1374,14 +1410,16 @@
             <Turkish>AED nerede kullanılabilir?</Turkish>
             <Russian>Где можно использовать AED?</Russian>
             <Italian>Dove può essere utilizzato il DAE</Italian>
-            <Japanese>AEDが使用できる場所を指定</Japanese>
+            <Japanese>AEDが使える場所を設定します</Japanese>
             <Portuguese>Onde o DEA pode ser usado?</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AED">
             <English>AED</English>
+            <Japanese>AED</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X">
             <English>AED-X</English>
+            <Japanese>AED-X</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_DISPLAYNAME">
             <English>Automated External Defibrillator</English>
@@ -1417,21 +1455,27 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_Shock">
             <English>%1 administered shock (%2)</English>
+            <Japanese>%1はショックを実施した (%2)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
+            <Japanese>%1は除細動器パッドを装着した (%2)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_RemovePads">
             <English>%1 removed defibrillator pads</English>
+            <Japanese>%1は除細動器パッドを取り外した</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_ConnectVitalsMonitor">
             <English>%1 connected vitals monitor</English>
+            <Japanese>%1はバイタルモニターを接続</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_DisconnectVitalsMonitor">
             <English>%1 disconnected vitals monitor</English>
+            <Japanese>%1はバイタルモニターを切断</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_PatientDisconnected">
             <English>Patient Disconnected</English>
+            <Japanese>患者から切断されました</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MaxChance">
             <English>Max Success chance for AED-X</English>
@@ -1547,24 +1591,31 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
             <English>Allow AED/X Station Interaction</English>
+            <Japanese>設置したAED/Xの許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
             <English>Medical level required to pick up/interact with placed AED/X station</English>
+            <Japanese>設置されたAED/Xの取得/使用に訓練レベルを必要とさせます。</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
+            <Japanese>AED-Xモニターの装着時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime">
             <English>Detach AED-X Vitals Monitor Time</English>
+            <Japanese>AED-Xモニターの取り外し時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime">
             <English>Attach Defibrillator Pads Time</English>
+            <Japanese>除細動器パッドの装着時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime">
             <English>Detach Defibrillator Pads Time</English>
+            <Japanese>除細動器パッドの取り外し時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit">
             <English>Distance limit for defibrillators in meters</English>
+            <Japanese>除細動器の制限距離 (メートル)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -1579,7 +1630,7 @@
             <Turkish>Tıbbi eğitim seviyesi başına farklı CPR şansı sağlayın</Turkish>
             <Italian>Attivare diverse possibilità di riuscita della RCP per livello medico</Italian>
             <Russian>Включить разные шансы СЛР для каждого медицинского уровня</Russian>
-            <Japanese>医療レベルごとにCPRの成功率を変更する</Japanese>
+            <Japanese>訓練レベルごとにCPRの成功率を変更する</Japanese>
             <Portuguese>Habilite diferentes chances de SBV por nível médico</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Doctor">
@@ -1662,18 +1713,23 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval">
             <English>CPR Chance Interval</English>
+            <Japanese>CPR実施間隔</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod">
             <English>Oxygenation Period</English>
+            <Japanese>酸素供給期間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_CPR">
             <English>%1 performed CPR (%2)</English>
+            <Japanese>%1はCPRを行いました (%2)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_StopCPR">
             <English>Stop CPR</English>
+            <Japanese>CPRをやめる</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
+            <Japanese>CPRを中止しました</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -1908,39 +1964,51 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_AdvRhythms">
             <English>Advanced Rhythms</English>
+            <Japanese>高度な心電図波形</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate">
             <English>Can Deteriorate</English>
+            <Japanese>心機能低下の可能性</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeMax">
             <English>Random Deteriorate Time Maximum</English>
+            <Japanese>心機能低下するランダムな時間の最大値</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeWeight">
             <English>Random Deteriorate Time Weight</English>
+            <Japanese>心機能低下するランダムな時間の重みづけ</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateAfterTreatment">
             <English>Deteriorate After Treatment</English>
+            <Japanese>治療後の心機能低下</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAChance">
             <English>PEA Chance</English>
+            <Japanese>無脈性電気活動(PEA)確率</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
             <English>VT Chance</English>
+            <Japanese>心室頻拍(VT)確率</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_asystoleBloodlossThreshold">
             <English>Asystole Bloodloss Threshold</English>
+            <Japanese>心静止時の失血しきい値</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_CPR_ROSC_Chance">
             <English>ROSC After CPR Chance</English>
+            <Japanese>CPR後の心拍再開の確率</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_AED_ROSC_Chance">
             <English>ROSC After AED Chance</English>
+            <Japanese>AED後の心拍再開の確率</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
+            <Japanese>ハードコア心電図波形</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_hardcoreDeteriorationChance">
             <English>Hardcore Deterioration Chance</English>
+            <Japanese>ハードコア心機能低下確率</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
@@ -1991,12 +2059,15 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
             <English>AED-X Vitals Monitor Sounds</English>
+            <Japanese>AED-Xモニター音</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Original">
             <English>Original</English>
+            <Japanese>オリジナル</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Default">
             <English>Default</English>
+            <Japanese>デフォルト</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
@@ -2010,21 +2081,27 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval">
             <English>AED-X Vitals Monitor BP Measurement Interval</English>
+            <Japanese>AED-Xモニター血圧測定間隔</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_AutomaticInstant">
             <English>Automatic Instant</English>
+            <Japanese>自動即時</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Automatic">
             <English>Automatic (Interval)</English>
+            <Japanese>自動間隔</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Manual">
             <English>Manual</English>
+            <Japanese>手動</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time">
             <English>AED-X Vitals Monitor BP Measurement Interval Time</English>
+            <Japanese>血圧測定間隔の時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_cardiacArrestBleedRate">
             <English>Cardiac Arrest Bleed Rate</English>
+            <Japanese>心停止時出血倍率</Japanese>
         </Key>
     </Package>
 </Project>
