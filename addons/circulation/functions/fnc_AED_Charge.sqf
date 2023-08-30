@@ -24,7 +24,7 @@ playsound3D [QPATHTOF_SOUND(sounds\charging.wav), _soundSource, false, getPosASL
 [{ // Charged
     params ["_medic", "_patient", "_soundSource", "_defibType"];
     
-    playsound3D [QPATHTOF_SOUND(sounds\pushtoshock.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
+    playsound3D [QPATHTOF_SOUND(sounds\standclear_pushtoshock.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
     [{ // Ready to shock
         params ["_medic", "_patient", "_soundSource", "_defibType"];
 
