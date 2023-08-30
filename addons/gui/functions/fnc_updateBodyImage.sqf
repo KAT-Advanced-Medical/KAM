@@ -81,6 +81,25 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
     [IDC_BODY_LEGRIGHT, IDC_BODY_LEGRIGHT_T, IDC_BODY_LEGRIGHT_B, -1]
 ];
 
+// Airway
+private _ctrlGuedelTube = _ctrlGroup controlsGroupCtrl IDC_BODY_HEAD_GUEDELTUBE;
+private _ctrlKingLT = _ctrlGroup controlsGroupCtrl IDC_BODY_HEAD_KINGLT;
+
+private _airwayItem = _target getVariable [QEGVAR(airway,airway_item), ""];
+
+if !(_airwayItem isEqualTo "") then {
+    if (_airwayItem isEqualTo "Larynxtubus") then {
+        _ctrlGuedelTube ctrlShow false;
+        _ctrlKingLT ctrlShow true;
+    } else {
+        _ctrlGuedelTube ctrlShow true;
+        _ctrlKingLT ctrlShow false;
+    };
+} else {
+    _ctrlGuedelTube ctrlShow false;
+    _ctrlKingLT ctrlShow false;
+};
+
 // Breathing
 private _ctrlPulseOximeterRight = _ctrlGroup controlsGroupCtrl IDC_BODY_RIGHTARM_PULSEOX;
 private _ctrlPulseOximeterLeft = _ctrlGroup controlsGroupCtrl IDC_BODY_LEFARM_PULSEOX;
@@ -153,4 +172,30 @@ if (_target getVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Connected), fals
 } else {
     _ctrlAEDVitalsMonitorRight ctrlShow false;
     _ctrlAEDVitalsMonitorLeft ctrlShow false;
+};
+
+// Pharmacy
+private _ctrlIVLeftArm = _ctrlGroup controlsGroupCtrl IDC_BODY_LEFTARM_IV;
+private _ctrlIVRightArm = _ctrlGroup controlsGroupCtrl IDC_BODY_RIGHTARM_IV;
+private _ctrlIVLeftLeg = _ctrlGroup controlsGroupCtrl IDC_BODY_LEFTLEG_IV;
+private _ctrlIVRightLeg = _ctrlGroup controlsGroupCtrl IDC_BODY_RIGHTLEG_IV;
+private _ctrlIO = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_IO;
+
+private _IVArray = _target getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0]];
+
+{
+    switch (_IVArray select (_forEachIndex + 2)) do {
+        case 0: {
+            _x ctrlShow false;
+        };
+        default {
+            _x ctrlShow true;
+        };
+    };
+} forEach [_ctrlIVLeftArm, _ctrlIVRightArm, _ctrlIVLeftLeg, _ctrlIVRightLeg];
+
+if ((_IVArray select 1) isEqualTo 1) then {
+    _ctrlIO ctrlShow true;
+} else {
+    _ctrlIO ctrlShow false;
 };

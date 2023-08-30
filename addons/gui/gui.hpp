@@ -37,6 +37,15 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             colorText[] = {1, 0.95, 0, 1};
             show = 0;
         };
+        class Head_GuedelTube: Torso_ChestSeal {
+            idc = IDC_BODY_HEAD_GUEDELTUBE;
+            text = QPATHTOF(data\body_image\head_guedeltube.paa);
+            colorText[] = {0.1, 1, 1, 1};
+        };
+        class Head_KingLT: Head_GuedelTube {
+            idc = IDC_BODY_HEAD_KINGLT;
+            text = QPATHTOF(data\body_image\head_kinglt.paa);
+        };
         class RightArm_PulseOximeter: Background {
             idc = IDC_BODY_RIGHTARM_PULSEOX;
             text = QPATHTOF(data\body_image\rightarm_pulseoximeter.paa);
@@ -61,10 +70,31 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             idc = IDC_BODY_LEFTARM_AED_VITALS;
             text = QPATHTOF(data\body_image\leftarm_aed_vitals_monitor.paa);
         };
+        class Torso_IO: Torso_ChestSeal {
+            idc = IDC_BODY_TORSO_IO;
+            text = QPATHTOF(data\body_image\torso_io.paa);
+            colorText[] = {0.3, 0.6, 0.3, 1};
+        };
         class Torso_Pneumothorax: Torso_ChestSeal {
             idc = IDC_BODY_TORSO_PNEUMOTHORAX;
             text = QPATHTOF(data\body_image\torso_pneumothorax.paa);
             colorText[] = {1, 1, 1, 1};
+        };
+        class RightArm_IV: Torso_IO {
+            idc = IDC_BODY_RIGHTARM_IV;
+            text = QPATHTOF(data\body_image\rightarm_iv.paa);
+        };
+        class LeftArm_IV: RightArm_IV {
+            idc = IDC_BODY_LEFTARM_IV;
+            text = QPATHTOF(data\body_image\leftarm_iv.paa);
+        };
+        class RightLeg_IV: RightArm_IV {
+            idc = IDC_BODY_RIGHTLEG_IV;
+            text = QPATHTOF(data\body_image\rightleg_iv.paa);
+        };
+        class LeftLeg_IV: RightArm_IV {
+            idc = IDC_BODY_LEFTLEG_IV;
+            text = QPATHTOF(data\body_image\leftleg_iv.paa);
         };
     };
 };
