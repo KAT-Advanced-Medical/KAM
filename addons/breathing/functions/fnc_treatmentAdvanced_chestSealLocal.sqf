@@ -19,7 +19,7 @@
 params ["_medic", "_patient"];
 
 if (GVAR(clearChestSealAfterTreatment)) then {
-    if (_patient getVariable [QGVAR(hemopneumothorax), false]) || (_patient getVariable [QGVAR(tensionpneumothorax), false]) then {
+    if (_patient getVariable [QGVAR(hemopneumothorax), false] || _patient getVariable [QGVAR(tensionpneumothorax), false]) then {
         _patient setVariable [QGVAR(activeChestSeal), true, true];
     };
 } else {

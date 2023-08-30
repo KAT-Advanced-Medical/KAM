@@ -134,7 +134,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     LLSTRING(SETTING_clearChestSealAfterTreatment),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
-    [true],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 

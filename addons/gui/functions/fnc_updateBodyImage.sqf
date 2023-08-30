@@ -100,7 +100,7 @@ if (EGVAR(breathing,PneumothoraxAlwaysVisible)) then {
         _ctrlChestInjury ctrlShow false;
     };
 } else {
-    if (_target getVariable [QEGVAR(breathing,deepPenetratingInjury), false]) then {
+    if (_target getVariable [QEGVAR(breathing,deepPenetratingInjury), false] || (_target getVariable [QEGVAR(breathing,pneumothorax), 0] > 0)) then {
         _ctrlChestInjury ctrlShow true;
     } else {
         _ctrlChestInjury ctrlShow false;
