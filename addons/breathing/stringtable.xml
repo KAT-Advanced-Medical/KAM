@@ -555,7 +555,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Sets the chance for hemopneumothorax. Also sets the chance for tenstion pneumothorax (60% Hemo = 40% Tension)</English>
-            <Polish>Ustawia szansę na krwiaka opłucnej. \n Ponadto ustawia szansę dla odmy prężnej (60% Krwiak = 40% Prężna)</Polish>
+            <Polish>Ustawia szansę na krwiaka opłucnej. \nPonadto ustawia szansę dla odmy prężnej (60% Krwiak = 40% Prężna)</Polish>
             <Japanese>血気胸の発生確率を設定します。緊張性気胸の発生確率も設定します (60% 血気胸 = 40% 緊張性)</Japanese>
             <Spanish>Fija la probabilidad para Hemotórax y para Neumotórax a tensión (60% Hemo = 40% Tensión)</Spanish>
             <Czech>Nastavuje šanci hemopneumotoraxu. Zároveň nastavuje šanci tenzního pneumotoraxu (60% Hemo = 40% Tenzní)</Czech>
@@ -1158,19 +1158,19 @@
             <Portuguese>Valor de SpO2 para cianose severa</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_severeValue_DESC">
-            <English>Severe cyanosis value - default 66 SpO2 \n Should be little bit higher than lethal SpO2 value</English>
-            <German>Schwere Zyanose - Standardwert 66 SpO2 \n Sollte etwas höher sein als der tödliche SpO2-Wert</German>
-            <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \n Powinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
-            <Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO2 \n Должно быть немного выше летального значения SpO2</Russian>
-            <Japanese>重度のチアノーゼが発症するSpO2の値 - デフォルトはSpO2 66 \n SpO2の致命値より少し高く設定する必要があります</Japanese>
-            <Chinesesimp>面色发紫的SpO2值 -默认66 \n 致命的SpO2值至少要低于此值</Chinesesimp>
-            <Korean>심각한 치아노제의 값입니다 - 기본값은 SpO2 66 \n 반드시 사망하게 되는 SpO2 값보다 아주 조금 높아야 합니다</Korean>
-            <French>Valeur de la cyanose grave - 66 SpO2 par défaut \n Cette valeur devrait être un peu plus haute que la valeur de SpO2 létale.</French>
-            <Turkish>Şiddetli Siyanoz değeri - varsayılan 66 SpO2 \n Ölümcül SpO2 değerinden biraz daha yüksek olmalıdır</Turkish>
+            <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
+            <German>Schwere Zyanose - Standardwert 66 SpO2 \nSollte etwas höher sein als der tödliche SpO2-Wert</German>
+            <Polish>Poziom SpO2 dla ciężkiej sinicy - domyślnie 66 SpO2 \nPowinien być minimalnie wyższy niż wartość śmiertelna SpO2</Polish>
+            <Russian>Значение Тяжелый цианоза - по умолчанию 66 SpO2 \nДолжно быть немного выше летального значения SpO2</Russian>
+            <Japanese>重度のチアノーゼが発症するSpO2の値 - デフォルトはSpO2 66 \nSpO2の致命値より少し高く設定する必要があります</Japanese>
+            <Chinesesimp>面色发紫的SpO2值 -默认66 \n致命的SpO2值至少要低于此值</Chinesesimp>
+            <Korean>심각한 치아노제의 값입니다 - 기본값은 SpO2 66 \n반드시 사망하게 되는 SpO2 값보다 아주 조금 높아야 합니다</Korean>
+            <French>Valeur de la cyanose grave - 66 SpO2 par défaut \nCette valeur devrait être un peu plus haute que la valeur de SpO2 létale.</French>
+            <Turkish>Şiddetli Siyanoz değeri - varsayılan 66 SpO2 \nÖlümcül SpO2 değerinden biraz daha yüksek olmalıdır</Turkish>
             <Italian>Valore di cianosi grave- default SpO2 66. (Dovrebbe essere un pochino più alta del valore letate di SpO2</Italian>
-            <Czech>Hodnota těžké cyanózy - výchozí hodnota SpO2 66 \n Měla by být mírně vyšší, než smrtelná hodnota SpO2</Czech>
-            <Spanish>Valor SpO2 de Cianosis severa - Predeterminado en 66 SpO2 \n Este valor deberia de ser un poco mas alto que el valor letal de SpO2</Spanish>
-            <Portuguese>Valor de SpO2 para cianose severa - predeterminado em 66 SpO2 \n Deve estar um pouco acima do valor letal de SpO2</Portuguese>
+            <Czech>Hodnota těžké cyanózy - výchozí hodnota SpO2 66 \nMěla by být mírně vyšší, než smrtelná hodnota SpO2</Czech>
+            <Spanish>Valor SpO2 de Cianosis severa - Predeterminado en 66 SpO2 \nEste valor deberia de ser un poco mas alto que el valor letal de SpO2</Spanish>
+            <Portuguese>Valor de SpO2 para cianose severa - predeterminado em 66 SpO2 \nDeve estar um pouco acima do valor letal de SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_CYANOSIS_TREATMENT_LEVEL">
             <English>Check Cyanosis Minimum Level</English>
