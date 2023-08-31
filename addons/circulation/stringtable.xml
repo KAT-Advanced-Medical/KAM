@@ -1455,23 +1455,23 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_Shock">
             <English>%1 administered shock (%2)</English>
-            <Japanese>%1はショックを実施した (%2)</Japanese>
+            <Japanese>%1 はショックを実施した (%2)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
-            <Japanese>%1は除細動器パッドを装着した (%2)</Japanese>
+            <Japanese>%1 は除細動器パッドを装着した (%2)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_RemovePads">
             <English>%1 removed defibrillator pads</English>
-            <Japanese>%1は除細動器パッドを取り外した</Japanese>
+            <Japanese>%1 は除細動器パッドを取り外した</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_ConnectVitalsMonitor">
             <English>%1 connected vitals monitor</English>
-            <Japanese>%1はバイタルモニターを接続</Japanese>
+            <Japanese>%1 はバイタルモニターを接続しました</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_DisconnectVitalsMonitor">
             <English>%1 disconnected vitals monitor</English>
-            <Japanese>%1はバイタルモニターを切断</Japanese>
+            <Japanese>%1 はバイタルモニターを切断しました</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_PatientDisconnected">
             <English>Patient Disconnected</English>
@@ -1721,7 +1721,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_CPR">
             <English>%1 performed CPR (%2)</English>
-            <Japanese>%1はCPRを行いました (%2)</Japanese>
+            <Japanese>%1 はCPRを行いました (%2)</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_StopCPR">
             <English>Stop CPR</English>

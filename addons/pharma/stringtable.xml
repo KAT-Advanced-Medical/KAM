@@ -715,7 +715,7 @@
             <French>Utilisation</French>
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Usando</Italian>
-            <Japanese>投与</Japanese>
+            <Japanese>使用中</Japanese>
             <Russian>С использованием</Russian>
             <Portuguese>Usando</Portuguese>
         </Key>
@@ -731,7 +731,7 @@
             <French>Administration</French>
             <Turkish>Kullanılıyor</Turkish>
             <Italian>Iniettando</Italian>
-            <Japanese>注射中</Japanese>
+            <Japanese>注入中</Japanese>
             <Russian>Ввести </Russian>
             <Portuguese>Administrando</Portuguese>
         </Key>
@@ -747,7 +747,7 @@
             <French>%1 a administré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
-            <Japanese>%1は%2を注入</Japanese>
+            <Japanese>%1 は%2を注入しました</Japanese>
             <Russian>%1 нажал %2</Russian>
             <Portuguese>%1 administrou %2</Portuguese>
         </Key>
@@ -763,7 +763,7 @@
             <French>%1 a injecté un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
-            <Japanese>%1は%2を注射</Japanese>
+            <Japanese>%1 は%2を注射しました</Japanese>
             <Russian>%1 введено %2</Russian>
             <Portuguese>%1 injetou %2</Portuguese>
         </Key>
@@ -779,7 +779,7 @@
             <French>%1 a utilisé un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
-            <Japanese>%1は%2を使用</Japanese>
+            <Japanese>%1 は%2を使用しました</Japanese>
             <Russian>%1 использует %2</Russian>
             <Portuguese>%1 usou %1</Portuguese>
         </Key>
@@ -923,7 +923,7 @@
             <French>%1 a inseré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha posizionato %2</Italian>
-            <Japanese>%1は%2を刺入しました</Japanese>
+            <Japanese>%1 は%2を刺入しました</Japanese>
             <Russian>%1 Настройка %2</Russian>
             <Portuguese>%1 inseriu %2</Portuguese>
         </Key>
@@ -971,7 +971,7 @@
             <French>%1 est maintenant vide</French>
             <Turkish>% 1 artık boş</Turkish>
             <Italian>%1 è vuota</Italian>
-            <Japanese>%1は空になりました</Japanese>
+            <Japanese>%1 は空になりました</Japanese>
             <Russian>%1 сейчас пуст</Russian>
             <Portuguese>%1 agora está vazio</Portuguese>
         </Key>
@@ -2371,7 +2371,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
             <English>%1 performed a saline flush</English>
-            <Japanese>%1が生理食塩水フラッシュを実施</Japanese>
+            <Japanese>%1 は生理食塩水フラッシュを実施しました</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
@@ -2729,7 +2729,7 @@
             <Korean>카테터 검사</Korean>
             <German>Katheter untersuchen</German>
             <Chinesesimp>检查导管</Chinesesimp>
-            <Japanese>カテーテルの検査</Japanese>
+            <Japanese>カテーテルを検査する</Japanese>
             <Spanish>Inspeccionar Catéter</Spanish>
             <Portuguese>Inspecionar catéter</Portuguese>
         </Key>
@@ -2805,7 +2805,7 @@
             <French>%1 a effectué une dialyse</French>
             <Korean>%1 이(가) 투석을 수행했습니다</Korean>
             <German>%1 hat eine Dialyse durchgeführt</German>
-            <Japanese>%1は透析を行いました</Japanese>
+            <Japanese>%1 は透析を行いました</Japanese>
             <Spanish>%1 realizó una dialisis</Spanish>
             <Portuguese>%1 realizou diálise</Portuguese>
         </Key>

@@ -228,7 +228,7 @@
             <Turkish>%1 bağlı Nabız Ölçer</Turkish>
             <Italian>%1 ha collegato un pulsossimetro</Italian>
             <Russian>%1 подключен пульсоксиметр</Russian>
-            <Japanese>%1はパルスオキシメーターを装着した</Japanese>
+            <Japanese>%1 はパルスオキシメーターを装着しました</Japanese>
             <Portuguese>%1 conectou um Oxímetro de Pulso</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_pneumothorax_mm">
@@ -308,7 +308,7 @@
             <Turkish>Nabız Oksimetresine izin ver</Turkish>
             <Italian>Permetti pulsossimetro</Italian>
             <Russian>Разрешить пульсоксиметр</Russian>
-            <Japanese>パルスオキシメータの許可</Japanese>
+            <Japanese>パルスオキシメーターの許可</Japanese>
             <Portuguese>Permitir Oxímetro de Pulso</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_TRAININGLEVEL_PULSEOXIMETER">
@@ -324,7 +324,7 @@
             <Turkish>Nabız Oksimetresi kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento rischiesto per utilizzare il pulsossimetro</Italian>
             <Russian>Уровень подготовки, необходимый для использования пульсоксиметра</Russian>
-            <Japanese>パルスオキシメータの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>パルスオキシメーターの使用に訓練レベルを必要とさせます。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um Oxímetro de Pulso</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_ALLOW_CHESTSEAL">
@@ -928,7 +928,7 @@
             <German>Zyanose überprüfen</German>
             <Polish>Sprawdź sinicę</Polish>
             <Russian>Проверить цианоз</Russian>
-            <Japanese>チアノーゼの確認</Japanese>
+            <Japanese>チアノーゼを確認する</Japanese>
             <Chinesesimp>检查面色</Chinesesimp>
             <Korean>치아노제 확인</Korean>
             <French>Contrôler la cyanose</French>
@@ -1364,7 +1364,7 @@
             <French>Activer l'alarme de l'oxymètre de pouls</French>
             <Korean>맥박산소측정기 알람 활성화</Korean>
             <Polish>Włącz alarm w Pulsoksymetrze</Polish>
-            <Japanese>パルスオキシメータのアラーム有効化</Japanese>
+            <Japanese>パルスオキシメーターのアラーム有効化</Japanese>
             <German>Aktiviere Pulsoximeter Alarm</German>
             <Czech>Zapnout alarm Pulzního Oxymetru</Czech>
             <Italian>Abilita allarme pulsossimetro</Italian>
@@ -1375,7 +1375,7 @@
             <French>Désactiver l'alarme de l'oxymètre de pouls</French>
             <Korean>맥박산소측정기 알람 비활성화</Korean>
             <Polish>Wyłącz alarm w Pulsoksymetrze</Polish>
-            <Japanese>パルスオキシメータのアラーム無効化</Japanese>
+            <Japanese>パルスオキシメーターのアラーム無効化</Japanese>
             <German>Deaktiviere Pulsoximeter Alarm</German>
             <Czech>Vypnout alarm Pulzního Oxymetru</Czech>
             <Italian>Disabilita l'allarme del pulsossimetro</Italian>
@@ -1386,7 +1386,7 @@
             <French>Niveau de SpO2 déclenchant l'alarme de l'oxymètre de pouls</French>
             <Korean>맥박산소측정기의 알람이 울리는 SpO2의 임계값</Korean>
             <Polish>Wartość ostrzegania Pulsoksymetru</Polish>
-            <Japanese>パルスオキシメータのアラームのSpO2しきい値</Japanese>
+            <Japanese>パルスオキシメーターのアラームのSpO2しきい値</Japanese>
             <German>Pulsoximeter Alarm Grenzwert</German>
             <Czech>Práh SpO2 pro aktivaci alarmu Pulzního Oxymetru</Czech>
             <Italian>Soglia di allarme del pulsossimetro</Italian>
@@ -1656,11 +1656,11 @@
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM">
             <English>%1 used %2 (x%3)</English>
-            <Japanese>%1は%2を使った (x%3)</Japanese>
+            <Japanese>%1 は%2を使用しました (x%3)</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM_Oxygenated">
             <English>%1 (Oxygenated)</English>
-            <Japanese>%1 (酸素含有)</Japanese>
+            <Japanese>%1  (酸素含有)</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
@@ -1792,7 +1792,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing">
             <English>Check Breathing</English>
-            <Japanese>呼吸の確認</Japanese>
+            <Japanese>呼吸を確認する</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing_Progress">
             <English>Checking Breathing</English>
@@ -1832,7 +1832,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_CheckBreathing_Log">
             <English>%1 checked breathing: %2</English>
-            <Japanese>%1が呼吸を確認: %2</Japanese>
+            <Japanese>%1 が呼吸を確認: %2</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
             <English>Enable Inspect Chest</English>
@@ -1856,7 +1856,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_display">
             <English>Inspect Chest</English>
-            <Japanese>胸部検査</Japanese>
+            <Japanese>胸部を検査する</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_progress">
             <English>Inspecting Chest</English>
@@ -1864,7 +1864,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_log">
             <English>%1 inspected chest: %2</English>
-            <Japanese>%1が胸部を検査: %2</Japanese>
+            <Japanese>%1 が胸部を検査: %2</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_normal">
             <English>Chest rise and fall observed</English>

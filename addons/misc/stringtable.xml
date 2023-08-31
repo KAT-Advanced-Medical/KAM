@@ -872,7 +872,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_StoppedCarrying%1">
             <English>Stopped carrying %1</English>
-            <Japanese>%1を担ぐのを止めました</Japanese>
+            <Japanese>%1 を担ぐのを止めました</Japanese>
         </Key>
     </Package>
 </Project>
