@@ -43,7 +43,7 @@
             <French>%1 a administré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
-            <Japanese>%1は%2を注入</Japanese>
+            <Japanese>%1 は%2を注入しました</Japanese>
             <Portuguese>%1 administrou %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_inject_log">
@@ -58,7 +58,7 @@
             <French>%1 a injecté un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
-            <Japanese>%1は%2を注射</Japanese>
+            <Japanese>%1 は%2を注射しました</Japanese>
             <Portuguese>%1 injetou %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_use_log">
@@ -73,7 +73,7 @@
             <French>%1 a utilisé un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
-            <Japanese>%1は%2を使用</Japanese>
+            <Japanese>%1 は%2を使用しました</Japanese>
             <Portuguese>%1 usou %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_breath_check">
@@ -215,7 +215,7 @@
             <French>%1 présent sur %2</French>
             <Korean>%2 은(는) 현재 %1 상태이다.</Korean>
             <German>%1 vorhanden auf %2</German>
-            <Japanese>%1は%2に存在します</Japanese>
+            <Japanese>%1 が%2に存在します</Japanese>
             <Spanish>%1 presente en %2</Spanish>
             <Portuguese>%1 presente em %2</Portuguese>
         </Key>
@@ -228,7 +228,7 @@
             <French>%1 %2 la fracture sur le %3</French>
             <Korean>%1 은(는) %3 의 골절을 %2 (으)로 수행하였습니다</Korean>
             <German>%1 %2 des Bruches an dem %3</German>
-            <Japanese>%1は%3の骨折に%2しました</Japanese>
+            <Japanese>%1 は%3の骨折に%2しました</Japanese>
             <Spanish>%1 %2 la fractura sobre el/la %3</Spanish>
             <Portuguese>%1 %2 a fratura sobre %3</Portuguese>
         </Key>
@@ -241,7 +241,7 @@
             <French>%1 a effectuée une incision sur le %2</French>
             <Korean>%1 이(가) %2 을(를) 절개했습니다</Korean>
             <German>%1 hat einen Einschnitt an dem %2 vorgenommen</German>
-            <Japanese>%1は%2を切開しました</Japanese>
+            <Japanese>%1 は%2を切開しました</Japanese>
             <Spanish>%1 hizo una incisión sobre el/la %2</Spanish>
             <Portuguese>%1 fez uma incisão em %2</Portuguese>
         </Key>
@@ -613,7 +613,7 @@
             <English>Sets the chance for simple fractures. Also sets the chance for complex fractures (60% Simple = 40% Complex)</English>
             <Chinesesimp>设置简单骨折的几率,同时设置了复合骨折的几率 (60% 简单 = 40% 复杂)</Chinesesimp>
             <Italian>Imposta la possibilità di fratture semplici. Imposta anche la possibilità di fratture complesse (60% semplice = 40% complesso)</Italian>
-            <Polish>Ustawia szansę na proste złamanie. \n Ponadto ustawia szansę dla skomplikowanych złamań (60% proste = 40% skomplikowane)</Polish>
+            <Polish>Ustawia szansę na proste złamanie. \nPonadto ustawia szansę dla skomplikowanych złamań (60% proste = 40% skomplikowane)</Polish>
             <Czech>Nastavuje šanci pro jednoduché zlomeniny. Nastavuje také šanci na složité zlomeniny (60% jednoduché = 40% složité)</Czech>
             <French>Règle la chance de fractures simples. Règle également la chance de fractures complexes (60% simple = 40% complexe)</French>
             <Korean>단순 골절의 확률을 설정합니다. 또한 복잡한 골절의 확률을 설정합니다. (단순 60% = 복잡 40%)</Korean>
@@ -663,7 +663,7 @@
             <English>Sets the chance for compound fractures. Also sets the chance for comminuted fractures (60% Compound = 40% Comminuted)</English>
             <Chinesesimp>设置复合骨折的机会,同时设置粉碎骨折的几率 (60% 复合 = 40% 粉碎)</Chinesesimp>
             <Italian>Imposta la possibilità di fratture composte. Imposta anche la possibilità di fratture comminute (60% composto = 40% sminuzzato)</Italian>
-            <Polish>Ustawia szansę na złożone złamanie. \n Ponadto ustawia szansę dla złamań z przemieszczeniem (60% proste = 40% z przemieszczeniem)</Polish>
+            <Polish>Ustawia szansę na złożone złamanie. \nPonadto ustawia szansę dla złamań z przemieszczeniem (60% proste = 40% z przemieszczeniem)</Polish>
             <Czech>Nastavuje šanci na otevřené zlomeniny. Také nastavuje šanci na rozdrcené zlomeniny (60% otevřené = 40% rozdrcené)</Czech>
             <French>Règle la chance de fracture ouverte. Règle également la chance de fractures comminutives (60% ouvertes = 40 % comminutives)</French>
             <Korean>복합 골절의 확률을 설정합니다. 또한 분쇄 골절의 확률을 설정합니다. (복합 60% = 분쇄 40%)</Korean>
@@ -707,7 +707,7 @@
             <French>Temps pour effectuer une réduction fermée</French>
             <Korean>폐쇄 정복 수행 시간</Korean>
             <German>Zeit für die Durchführung geschlossener Reduktionen</German>
-            <Japanese>非観血的整復術</Japanese>
+            <Japanese>非観血的整復術の所要時間</Japanese>
             <Spanish>Tiempo para realizar reducciones cerradas</Spanish>
             <Portuguese>Duração de reduções fechadas</Portuguese>
         </Key>
@@ -1085,9 +1085,9 @@
             <Spanish>Controles de conciencia quirúrgica</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
-            <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \n Unconsciousness Required for Surgery: Surgery requires patient to be unconscious. \n No Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \n Surgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
-            <Japanese>意識喪失あり: 手術時に麻酔と鎮静剤を使用しないと、心停止による意識喪失が発生します。 \n 無意識状態が必要: 手術するには患者が意識を失っていることが必要になります。 \n 意識喪失なし: 手術時に意識喪失や痛みが発生しなくなります。 \n 手術麻酔: エトミデートを投与すると、手術中も患者が起きたままになります。</Japanese>
-            <Spanish>La cirugía provoca inconsciencia: La cirugía sin anestesia ni sedación provoca inconsciencia por IC. \n Inconsciencia necesaria para la cirugía: La cirugía requiere que el paciente esté inconsciente. \n La cirugía no provoca inconsciencia: La cirugía no induce inconsciencia, causa dolor. \n Anestesia quirúrgica: El paciente permanece despierto durante la cirugía si se le administra etomidato.</Spanish>
+            <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \nUnconsciousness Required for Surgery: Surgery requires patient to be unconscious. \nNo Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \nSurgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
+            <Japanese>意識喪失あり: 手術時に麻酔と鎮静剤を使用しないと、心停止による意識喪失が発生します。 \n無意識状態が必要: 手術するには患者が意識を失っていることが必要になります。 \n意識喪失なし: 手術時に意識喪失や痛みが発生しなくなります。 \n手術麻酔: エトミデートを投与すると、手術中も患者が起きたままになります。</Japanese>
+            <Spanish>La cirugía provoca inconsciencia: La cirugía sin anestesia ni sedación provoca inconsciencia por IC. \nInconsciencia necesaria para la cirugía: La cirugía requiere que el paciente esté inconsciente. \nLa cirugía no provoca inconsciencia: La cirugía no induce inconsciencia, causa dolor. \nAnestesia quirúrgica: El paciente permanece despierto durante la cirugía si se le administra etomidato.</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
