@@ -1133,7 +1133,7 @@
             <English>NO SHOCK ADVISED</English>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ANALYZINGEKG">
-            <English>ANALYZING EKG</English>
+            <English>ANALYZING ECG</English>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGED">
             <English>CHARGED</English>

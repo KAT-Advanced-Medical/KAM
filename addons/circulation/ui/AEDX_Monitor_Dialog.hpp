@@ -130,6 +130,41 @@ class GVAR(AEDX_Monitor_Dialog) {
             font = "RobotoCondensedLight";
             text = "%";
         };
+        class SpO2PulseRateDisplayBorder: RscText {
+            idc = IDC_DISPLAY_PULSERATEBORDER;
+            x = QUOTE(pxToScreen_X(1366));
+            y = QUOTE(pxToScreen_Y(1207));
+            w = QUOTE(pxToScreen_W(26));
+            h = QUOTE(pxToScreen_H(80));
+            type = 0;
+            style = 0;
+            font = "RobotoCondensed";
+            sizeEx = QUOTE(GRID_H * 0.6);
+            shadow = 0;
+            colorBackground[] = {0.99,0.97,0.02,1};
+            colorText[] = {0,0,0,0};
+            text = "";
+            show = 0;
+        };
+        class SpO2PulseRateDisplayBackground: SpO2PulseRateDisplayBorder {
+            idc = IDC_DISPLAY_PULSERATEBG;
+            x = QUOTE(pxToScreen_X(1368));
+            y = QUOTE(pxToScreen_Y(1210));
+            w = QUOTE(pxToScreen_W(20));
+            h = QUOTE(pxToScreen_H(74));
+            colorBackground[] = {0,0,0,1};
+        };
+        class SpO2PulseRateDisplayBar: SpO2PulseRateDisplayBorder {
+            idc = IDC_DISPLAY_PULSERATEDSPBAR;
+            x = QUOTE(pxToScreen_X(1370));
+            y = QUOTE(pxToScreen_Y(1211));
+            w = QUOTE(pxToScreen_W(17));
+            h = QUOTE(pxToScreen_H(71));
+        };
+        class SpO2PulseRateDisplayBarB: SpO2PulseRateDisplayBar {
+            idc = IDC_DISPLAY_PULSERATEBAR;
+            colorBackground[] = {0,0,0,1};
+        };
         class HeartRateDisplay: RscText {
             idc = IDC_DISPLAY_HEARTRATE;
             x = QUOTE(pxToScreen_X(552));
@@ -180,7 +215,8 @@ class GVAR(AEDX_Monitor_Dialog) {
         };
         class SpO2Display: HeartRateDisplay {
             idc = IDC_DISPLAY_SPO2;
-            x = QUOTE(pxToScreen_X(1204));
+            x = QUOTE(pxToScreen_X(1200));
+            w = QUOTE(pxToScreen_W(170));
             colorText[] = {0.99,0.97,0.02,1};
             text = "---";
         };

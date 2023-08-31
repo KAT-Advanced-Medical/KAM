@@ -89,7 +89,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(AED_X_MinChance),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [1, 100, 45, 0],
+    [1, 100, 50, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -109,7 +109,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(AED_MinChance),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [1, 100, 40, 0],
+    [1, 100, 45, 0],
     true
 ] call CBA_Settings_fnc_init;
 
