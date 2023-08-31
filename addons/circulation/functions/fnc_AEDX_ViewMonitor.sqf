@@ -156,6 +156,7 @@ private _dlg = findDisplay IDC_AEDX_MONITOR;
     };
 
     private _hr = 0;
+    private _pr = 0;
     private _bp = [0,0];
     private _spO2 = 0;
 
@@ -214,12 +215,15 @@ private _dlg = findDisplay IDC_AEDX_MONITOR;
         _bp = [0,0];
     } else {
         _spO2 = GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,airwayStatus), 100];
+        _pr = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
     };
 
     if (_pads) then {
         ctrlSetText [IDC_DISPLAY_HEARTRATE, format["%1", round(_hr)]];
+        ctrlSetText [IDC_DISPLAY_HEARTRATE_TEXT, LLSTRING(AEDX_Monitor_HR)];
     } else {
-        ctrlSetText [IDC_DISPLAY_HEARTRATE, "---"];
+        ctrlSetText [IDC_DISPLAY_HEARTRATE, format["%1", round(_pr)]];
+        ctrlSetText [IDC_DISPLAY_HEARTRATE_TEXT, LLSTRING(AEDX_Monitor_PR)];
     };
 
     if (_vitalsMonitor) then {

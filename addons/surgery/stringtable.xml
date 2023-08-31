@@ -1015,19 +1015,6 @@
             <Korean>괴사조직 위치</Korean>
             <Italian>Posizione di sbrigliamento</Italian>
         </Key>
-        <Key ID="STR_KAT_Surgery_SubCategory_Basic">
-            <English>Basic Settings</English>
-            <Chinesesimp>基本设置</Chinesesimp>
-            <Polish>Podstawowe Ustawienia</Polish>
-            <Italian>Impostazioni di base</Italian>
-            <Czech>Základní nastavení</Czech>
-            <French>Paramètres basiques</French>
-            <Korean>일반 설정</Korean>
-            <German>Grundeinstellungen</German>
-            <Japanese>基本設定</Japanese>
-            <Spanish>Parámetros básicos</Spanish>
-            <Portuguese>Configurações básicas</Portuguese>
-        </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_SurgicalActions">
             <English>Surgical actions Settings</English>
             <Chinesesimp>手术操作设置</Chinesesimp>

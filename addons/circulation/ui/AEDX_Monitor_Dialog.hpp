@@ -54,7 +54,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             text = QPATHTOF(ui\ekg_slider.paa);
         };
         class HeartRateVitalsDisplayBackground: RscText {
-            idc = -1;
+            idc = IDC_DISPLAY_HEARTRATE_TEXT;
             x = QUOTE(pxToScreen_X(552));
             y = QUOTE(pxToScreen_Y(1166));
             w = QUOTE(pxToScreen_W(190));

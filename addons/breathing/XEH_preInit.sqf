@@ -13,7 +13,7 @@ PREP_RECOMPILE_END;
     QGVAR(enable),
     "CHECKBOX",
     LLSTRING(SETTING_ENABLE),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -23,7 +23,7 @@ PREP_RECOMPILE_END;
     QGVAR(SpO2_dieValue),
     "SLIDER",
     LLSTRING(SETTING_SpO2_dieValue),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [5, 95, 65, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -33,7 +33,7 @@ PREP_RECOMPILE_END;
     QGVAR(SpO2_dieActive),
     "CHECKBOX",
     LLSTRING(SETTING_SpO2_dieActive),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -43,7 +43,7 @@ PREP_RECOMPILE_END;
     QGVAR(SpO2_unconscious),
     "SLIDER",
     [LLSTRING(SETTING_SpO2_unconscious), LLSTRING(SETTING_SpO2_unconscious_Desc)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 75, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -53,7 +53,7 @@ PREP_RECOMPILE_END;
     QGVAR(SpO2_MultiplyPositive),
     "SLIDER",
     LLSTRING(SETTING_MultiplyPositive),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 10, 1, 1],
     true
 ] call CBA_Settings_fnc_init;
@@ -63,7 +63,7 @@ PREP_RECOMPILE_END;
     QGVAR(SpO2_MultiplyNegative),
     "SLIDER",
     LLSTRING(SETTING_MultiplyNegative),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 10, 1, 1],
     true
 ] call CBA_Settings_fnc_init;
@@ -73,7 +73,7 @@ PREP_RECOMPILE_END;
     QGVAR(Stable_spo2),
     "SLIDER",
     [LLSTRING(SETTING_STABLE_SPO2), LLSTRING(DESCRIPTION_STABLE_SPO2)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 95, 85, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -83,7 +83,7 @@ PREP_RECOMPILE_END;
     QGVAR(SpO2_perfusion),
     "CHECKBOX",
     LLSTRING(SETTING_SpO2_Perfusion),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -93,7 +93,7 @@ PREP_RECOMPILE_END;
     QGVAR(SpO2_PerfusionMultiplier),
     "SLIDER",
     LLSTRING(SETTING_PerfusionMultiplier),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 10, 1, 1],
     true
 ] call CBA_Settings_fnc_init;
@@ -384,7 +384,7 @@ PREP_RECOMPILE_END;
     QGVAR(enableSPO2Flashing),
     "CHECKBOX",
     [LLSTRING(SETTING_SPO2Flashing_display), LLSTRING(SETTING_SPO2Flashing_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -394,7 +394,7 @@ PREP_RECOMPILE_END;
     QGVAR(staminaLossAtLowSPO2),
     "CHECKBOX",
     [LLSTRING(SETTING_Stamina_Loss_SPO2_display), LLSTRING(SETTING_Stamina_Loss_SPO2_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
 ]   call CBA_Settings_fnc_init;
@@ -404,7 +404,7 @@ PREP_RECOMPILE_END;
     QGVAR(lowSPO2Level),
     "SLIDER",
     [LLSTRING(SETTING_lowSPO2Level_display), LLSTRING(SETTING_lowSPO2Level_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 90, 1],
     true
 ] call CBA_Settings_fnc_init;
