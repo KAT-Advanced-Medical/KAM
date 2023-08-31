@@ -68,7 +68,7 @@
             <French>Activer les délais d'attente pour les IV/IO</French>
             <Turkish>IV/IO bırakma sürelerini etkinleştir</Turkish>
             <Italian>Abilitare i tempi di staccamento IV/IO</Italian>
-            <Japanese>IV/IO針の時間経過での脱落を有効にする</Japanese>
+            <Japanese>IV/IOの時間経過での脱落を有効化</Japanese>
             <Russian>Включает время сброса IV/IO</Russian>
             <Portuguese>Habilita tempo de queda de IV/IO</Portuguese>
         </Key>
@@ -76,7 +76,7 @@
             <English>IV/IO drop time</English>
             <German>IOs/IVs Herausfallzeit</German>
             <French>Temps de chute de l'IV/IO</French>
-            <Japanese>IV/IO針の脱落までの時間</Japanese>
+            <Japanese>IV/IOの脱落時間</Japanese>
             <Korean>IV/IO를 떼어내는 시간</Korean>
             <Italian>Tempo di staccamento IV/IO</Italian>
             <Portuguese>Tempo de queda de IV/IO</Portuguese>
@@ -96,7 +96,7 @@
             <Korean>IV/IO가 환자에게서 떼지는 시간 변경</Korean>
             <Turkish>IV'lerin/IO'ların bir hastadan düştüğü zamanı değiştirir</Turkish>
             <Czech>Změní čas po kterém samovolně vypadnou IV/IO z pacienta</Czech>
-            <Japanese>患者からIV/IO針が抜け落ちるのにかかる時間を設定します</Japanese>
+            <Japanese>患者からIV/IOが抜け落ちるのにかかる時間を設定します</Japanese>
             <Russian>Изменяет время выпадения IV/IO капельниц у пациента</Russian>
             <Portuguese>Altera o tempo em que IVs/IOs caem de um paciente</Portuguese>
         </Key>
@@ -112,7 +112,7 @@
             <Korean>IV/IO 바늘 재사용 가능 여부</Korean>
             <Turkish>IV/IO iğnelerinin yeniden kullanılabilir olup olmadığını ayarlar</Turkish>
             <Czech>Nastaví, zda IV/IO jehly jsou znovu-použitelné</Czech>
-            <Japanese>IV/IO針の再利用</Japanese>
+            <Japanese>IV/IOの再利用</Japanese>
             <Russian>Устанавливает, можно ли использовать иглы для IV/IO повторно</Russian>
             <Portuguese>Define se as agulhas IV/IO são reutilizáveis</Portuguese>
         </Key>
@@ -128,7 +128,7 @@
             <Korean>IV를 꽂는 시간 변경</Korean>
             <Turkish>IV'ler oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IV</Czech>
-            <Japanese>IV針の刺入所要時間</Japanese>
+            <Japanese>IV刺入の所要時間</Japanese>
             <Russian>Время устанавливать IV</Russian>
             <Portuguese>Tempo de estabelecimento de IV</Portuguese>
         </Key>
@@ -144,7 +144,7 @@
             <Korean>IO를 꽂는 시간 변경</Korean>
             <Turkish>IO'ları oluşturma zamanı</Turkish>
             <Czech>Čas k zavedení IO</Czech>
-            <Japanese>IO針の刺入所要時間</Japanese>
+            <Japanese>IO刺入の所要時間</Japanese>
             <Russian>Время устанавливать IO</Russian>
             <Portuguese>Tempo de estabelecimento de IO</Portuguese>
         </Key>
@@ -811,7 +811,7 @@
             <French>Cathéther intra-veineux</French>
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Catetere intravenoso</Italian>
-            <Japanese>静脈注射針</Japanese>
+            <Japanese>静脈注射(IV)針</Japanese>
             <Russian>Внутривенное игла</Russian>
             <Portuguese>Cateter Intravenoso</Portuguese>
         </Key>
@@ -843,7 +843,7 @@
             <French>Cathéther intra-osseux</French>
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Sistema d'infusione intraossea</Italian>
-            <Japanese>骨髄穿刺注射針</Japanese>
+            <Japanese>骨髄穿刺注射(IO)針</Japanese>
             <Russian>Внутривенное игла</Russian>
             <Portuguese>Infusão Intraóssea</Portuguese>
         </Key>
@@ -859,7 +859,7 @@
             <Korean>16g IV 주사</Korean>
             <Turkish>16g IV oluşturun</Turkish>
             <Czech>Zavádím IV</Czech>
-            <Japanese>16g IVを刺入する</Japanese>
+            <Japanese>16g IVを刺入</Japanese>
             <Russian>Настройка 16г IV</Russian>
             <Portuguese>Inserir 16g IV</Portuguese>
         </Key>
@@ -875,7 +875,7 @@
             <Chinesesimp>建立FAST IO</Chinesesimp>
             <Korean>FAST IO 주사</Korean>
             <Turkish>HIZLI IO kurun</Turkish>
-            <Japanese>FAST IOを刺入する</Japanese>
+            <Japanese>FAST IOを刺入</Japanese>
             <Russian>Установить 16г IV</Russian>
             <Portuguese>Inserir FAST IO</Portuguese>
         </Key>
@@ -939,7 +939,7 @@
             <Chinesesimp>移除 IV/IO</Chinesesimp>
             <Korean>IV/IO 제거</Korean>
             <Czech>Odstraňuji IV</Czech>
-            <Japanese>IV/IOを抜去します</Japanese>
+            <Japanese>IV/IOを抜去</Japanese>
             <Russian>Удалить IV/IO</Russian>
             <Portuguese>Retirar IV/IO</Portuguese>
         </Key>
@@ -987,7 +987,7 @@
             <Korean>삽입된 IV/IO 필요</Korean>
             <Turkish>Takılı IV/IO gerektir</Turkish>
             <Czech>Vyžadování vložení IV/IO</Czech>
-            <Japanese>輸液にIV/IO刺入を要求しますか</Japanese>
+            <Japanese>輸液にIV/IO刺入を要求する</Japanese>
             <Russian>Требовать вставки IV/IO</Russian>
             <Portuguese>Requerer inserção de IV/IO</Portuguese>
         </Key>
@@ -1009,7 +1009,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_Medications">
             <English>Medications Require IV/IO</English>
-            <Japanese>薬液にIV/IO刺入を要求しますか</Japanese>
+            <Japanese>薬液にIV/IO刺入を要求する</Japanese>
             <French>Les médicaments nécessitent une IV/IO</French>
             <Chinesesimp>药物需要通过IV/IO注射</Chinesesimp>
             <Italian>Le medicazioni richiedono un accesso IV/IO</Italian>
