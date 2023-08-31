@@ -139,7 +139,7 @@
             <Chinese>管理航空公司</Chinese>
             <Korean>기도 관리</Korean>
             <Turkish>Hava Yollarını Yönet</Turkish>
-            <Japanese>気道を管理する</Japanese>
+            <Japanese>気道と呼吸の状態を変更する</Japanese>
             <Russian>Управление авиалиниями</Russian>
             <Italian>Gestisci le vie aeree</Italian>
             <Chinesesimp>气道管理:</Chinesesimp>
@@ -155,7 +155,7 @@
             <Chinese>改变血型/血量</Chinese>
             <Korean>혈액형/혈액량 변경</Korean>
             <Turkish>Kan grubunu / hacmini değiştir</Turkish>
-            <Japanese>血液型/容量を変更する</Japanese>
+            <Japanese>血液型/血液量を変更する</Japanese>
             <Russian>Изменить группу/объем крови</Russian>
             <Italian>Cambia gruppo sanguigno e volume</Italian>
             <Chinesesimp>改变血型/血液量:</Chinesesimp>
@@ -163,6 +163,7 @@
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_displayname">
             <English>Change Cardiac State</English>
+            <Japanese>心臓の状態を変更する</Japanese>
         </Key>
         <Key ID="STR_KAT_Zeus_checkmedical_Module_displayname">
             <English>Open unit medical menu</English>
@@ -198,12 +199,15 @@
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_VT">
             <English>Ventricular Tachycardia</English>
+            <Japanese>心室頻拍(VT)</Japanese>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_VF">
             <English>Ventricular Fibrillation</English>
+            <Japanese>心室細動(VF)</Japanese>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_PEA">
             <English>Pulseless Electrical Activity</English>
+            <Japanese>無脈性電気活動(PEA)</Japanese>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_Asystole">
             <English>Asystole</English>
@@ -215,7 +219,7 @@
             <Chinese>Asystole</Chinese>
             <Korean>심부전수축</Korean>
             <Turkish>Asistoli</Turkish>
-            <Japanese>心静止</Japanese>
+            <Japanese>心静止(Asystole)</Japanese>
             <Russian>асистолия</Russian>
             <Italian>Asistolia</Italian>
             <Chinesesimp>心搏停止</Chinesesimp>
