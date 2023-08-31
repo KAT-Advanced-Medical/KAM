@@ -334,23 +334,23 @@
             <Portuguese>Aviso de addon incompatível</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_incompatibilityWarning_Desc">
-            <English>Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that could negatively affect correct functionality of KAT are used.\n Warning disappears after 60 seconds.</English>
+            <English>Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that could negatively affect correct functionality of KAT are used. \nWarning disappears after 60 seconds.</English>
             <German>Wirft eine Warnung aus und fügt eine Zeile in das RPT-Protokoll ein, wenn inkompatible Addons (von uns aufgelistet - Entwickler) verwendet werden, die die korrekte Funktionalität von KAT beeinträchtigen könnten. Die Warnung verschwindet nach 60 Sekunden.</German>
-            <Czech>Vyhodí varování a přidá řádek do RPT logu pokud jsou použity nekompatibilní addony(Zanesené námi - vývojáři), které by mohli negativně ovlivnit správnou funkcionalitu KATu.\n Varování zmizí po 60 sekundách. </Czech>
-            <Korean>KAT의 제대로 작동하는 기능에 부정적인 형향을 미칠 수 있는 호환되지 않는 애드온(개발자 목록 찾고)을 사용할 경우 경고를 보내고 rpt 로그에 라인을 추가합니다.\n경고는 60초 후에 사라집니다.</Korean>
-            <Japanese>KATの正常な動作に悪影響を与える可能性のある互換性のない(開発チームによりリストされた)アドオンが使用された場合、警告を表示し、RPTログに行を追加します。\n 警告は60秒後に消えます。</Japanese>
-            <French>Affiche un avertissement et ajoute une ligne au log RPT si des addons incompatibles (Listés par nous - les développeurs) qui pourraient affecter négativement le fonctionnement correct de KAT sont utilisés.\n L'avertissement disparaîtra après 60 secondes.  </French>
-            <Italian>Mostra un allerta e aggiungi una line al file RPT log se l'addon è incompatibile (elencato da noi sviluppatori) che possa influenzare negativamente sul corretto utilizzo della KAT \n L'avviso sparisce dopo 60 secondi.</Italian>
+            <Czech>Vyhodí varování a přidá řádek do RPT logu pokud jsou použity nekompatibilní addony(Zanesené námi - vývojáři), které by mohli negativně ovlivnit správnou funkcionalitu KATu. \nVarování zmizí po 60 sekundách. </Czech>
+            <Korean>KAT의 제대로 작동하는 기능에 부정적인 형향을 미칠 수 있는 호환되지 않는 애드온(개발자 목록 찾고)을 사용할 경우 경고를 보내고 rpt 로그에 라인을 추가합니다. \n경고는 60초 후에 사라집니다.</Korean>
+            <Japanese>KATの正常な動作に悪影響を与える可能性のある互換性のない(開発チームによりリストされた)アドオンが使用された場合、警告を表示し、RPTログに行を追加します。 \n警告は60秒後に消えます。</Japanese>
+            <French>Affiche un avertissement et ajoute une ligne au log RPT si des addons incompatibles (Listés par nous - les développeurs) qui pourraient affecter négativement le fonctionnement correct de KAT sont utilisés. \nL'avertissement disparaîtra après 60 secondes.  </French>
+            <Italian>Mostra un allerta e aggiungi una line al file RPT log se l'addon è incompatibile (elencato da noi sviluppatori) che possa influenzare negativamente sul corretto utilizzo della KAT \nL'avviso sparisce dopo 60 secondi.</Italian>
             <Polish>Pokazuje error i dodaje log do RPT jeśli niekompatybilny mod (podane przez developerów KAT), który może powodować błędy jest używany. \nPowiadomienie znika po 60 sekundach.</Polish>
-            <Spanish>Muestra una advertencia y agrega una linea al log RPT si hay addons incompatibles(Listados por los desarolladores) que podrian afectar negativamente el funcionamiento de KAT.\n La advertencia desaparece 60 segundos mas tarde.</Spanish>
-            <Portuguese>Mostra um aviso e adiciona uma linha ao log do RPT se forem usados ​​complementos incompatíveis (listados por nós - desenvolvedores) que podem afetar negativamente a funcionalidade correta do KAT.\n O aviso desaparece após 60 segundos.</Portuguese>
+            <Spanish>Muestra una advertencia y agrega una linea al log RPT si hay addons incompatibles(Listados por los desarolladores) que podrian afectar negativamente el funcionamiento de KAT. \nLa advertencia desaparece 60 segundos mas tarde.</Spanish>
+            <Portuguese>Mostra um aviso e adiciona uma linha ao log do RPT se forem usados ​​complementos incompatíveis (listados por nós - desenvolvedores) que podem afetar negativamente a funcionalidade correta do KAT. \nO aviso desaparece após 60 segundos.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_incompatibilityWarning_Desc">
             <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
             <German>[KAM WARNUNG] Es wurden inkompatible Addons entdeckt, die die korrekte Funktionalität beeinträchtigen könnten. Das KAT - Advanced Medical REWRITE Development Team rät dringend, diese Addons zu entfernen: %1</German>
             <Czech>[KAM VAROVÁNÍ] Nekompatibilní addon(y), které by mohly negativně ovlivnit správnou funkcionalitu detekovány. KAT - Advanced Medical REWRITE Developerský Tým silně doporučuje odebrat tyto addony: %1</Czech>
             <Korean>[KAM 경고] 제대로 작동 중인 기능에 부정적인 영향을 미칠 수 있는 호환되지 않는 애드온이 감지되었습니다. KAT -Advanced Medical REWRITE 개발팀은 다음 애드온을 제거할 것을 강력히 권장합니다: %1</Korean>
-            <Japanese>[KAM WARNING] 動作に悪影響を及ぼす可能性のある互換性のないアドオンが検出されました。KAM開発チームはこれらのアドオンをアンロードすることを強く推奨します: %1</Japanese>
+            <Japanese>[KAM WARNING] 動作に悪影響を及ぼす可能性のある互換性のないアドオンが検出されました。KAM開発チームはこれらのアドオンをアンロードすることを強く推奨します:%1</Japanese>
             <French>[AVERTISSEMENT KAM] Un(des) addon(s) incompatible(s) pouvant affecter le fonctionnement correct de KAT ont été détectés. L'équipe de développement de KAT - Advanced Medical REWRITE recommande fortement de retirer ces addons : %1 </French>
             <Italian>[AVVISO KAM]  E' stata rilevato almeno un addon che potrebbe influenzare negativamente il corretto funzionamenot della KAT. Gli sviluppatori della KAT consigliando vivamente di rumuovere questi addons.</Italian>
             <Polish>[KAM WARNING] Niekompatybilny mod, który może wywoływać błędy został wykryty. Zespół deweloperski KAT - Advanced Medical REWRITE stanowczo odradza użycie następujących modów: %1 </Polish>
@@ -376,7 +376,7 @@
             <French>Temps pour retirer un garrot</French>
             <Korean>지혈대를 풀어내는 시간</Korean>
             <Polish>Czas potrzebny do zdjęcia stazy</Polish>
-            <Japanese>止血帯を取り外すのにかかる時間</Japanese>
+            <Japanese>止血帯の取り外しの所要時間</Japanese>
             <German>Erforderliche Zeit zum Entfernen des Tourniquet</German>
             <Czech>Čas pro sundání turniketu</Czech>
             <Italian>Tempo per rimuovere il laccio emostatico</Italian>
@@ -864,12 +864,15 @@
         </Key>
         <Key ID="STR_KAT_Misc_CarryPatient">
             <English>Carry Patient</English>
+            <Japanese>患者を担ぐ</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_CancelCarrying">
             <English>Cancel Carrying</English>
+            <Japanese>担ぐのを止める</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_StoppedCarrying%1">
             <English>Stopped carrying %1</English>
+            <Japanese>%1 を担ぐのを止めました</Japanese>
         </Key>
     </Package>
 </Project>

@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: Glowbal, mharis001 Edited by MiszczuZPolski
+ * Author: Glowbal, mharis001
+ * Modified: MiszczuZPolski, Blue
  * Local callback for administering medication to a patient.
  *
  * Arguments:
@@ -22,7 +23,6 @@
 
 params ["_patient", "_bodyPart", "_classname"];
 TRACE_3("medicationLocal",_patient,_bodyPart,_classname);
-
 
 // Medication has no effects on dead units
 if (!alive _patient) exitWith {};
@@ -95,5 +95,5 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 
 
 if (_className in ["Lorazepam","Fentanyl","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
-    [QGVAR(((toLower _className) + 'Local')), [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+    [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
 };
