@@ -15,12 +15,13 @@
 [QGVAR(flushLocal), LINKFUNC(treatmentAdvanced_FlushLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(pervitinLocal), LINKFUNC(treatmentAdvanced_PervitinLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(pervitinPP), LINKFUNC(pervitinPP)] call CBA_fnc_addEventHandler;
-[QGVAR(ketaminePP), LINKFUNC(ketaminePP)] call CBA_fnc_addEventHandler;
-[QGVAR(fentanylPP), LINKFUNC(fentanylPP)] call CBA_fnc_addEventHandler;
+[QGVAR(ketamineLocal), LINKFUNC(ketamineLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(fentanylLocal), LINKFUNC(fentanylLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(caffeineLocal), LINKFUNC(treatmentAdvanced_CaffeineLocal)] call CBA_fnc_addEventHandler;
 
 
 ["kat_PainkillerItem", "kat_Painkiller"] call ACEFUNC(common,registerItemReplacement);
+["kat_PenthroxItem", "kat_Penthrox"] call ACEFUNC(common,registerItemReplacement);
 ["kat_CarbonateItem", "kat_Carbonate"] call ACEFUNC(common,registerItemReplacement);
 ["kat_PervitinItem", "kat_Pervitin"] call ACEFUNC(common,registerItemReplacement);
 ["kat_CaffeineItem", "kat_Caffeine"] call ACEFUNC(common,registerItemReplacement);

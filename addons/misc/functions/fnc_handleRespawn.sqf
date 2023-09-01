@@ -30,14 +30,16 @@ _unit setVariable [QEGVAR(airway,overstretch), false, true];
 KAT_forceWakeup = false;
 _unit setVariable [QEGVAR(airway,recovery), false, true];
 _unit setVariable [QEGVAR(airway,airway_item), "", true];
+_unit setVariable [QEGVAR(airway,clearedTime), 0, true];
 
 // KAT Breathing
 
 _unit setVariable [QEGVAR(breathing,airwayStatus), 100, true];
-_unit setVariable [QEGVAR(breathing,pneumothorax), false, true];
+_unit setVariable [QEGVAR(breathing,pneumothorax), 0, true];
 _unit setVariable [QEGVAR(breathing,hemopneumothorax), false, true];
 _unit setVariable [QEGVAR(breathing,tensionpneumothorax), false, true];
 _unit setVariable [QEGVAR(breathing,activeChestSeal), false, true];
+_unit setVariable [QEGVAR(breathing,deepPenetratingInjury), false, true];
 _unit setVariable [QEGVAR(breathing,PneumoBreathCooldownOn), false, true];
 
 _unit setVariable [QEGVAR(breathing,BVMInUse), false, true];
@@ -48,27 +50,38 @@ _unit setVariable [QEGVAR(breathing,PulseOximeter_Volume), true, true];
 _unit setVariable [QEGVAR(breathing,PulseOximeter_VolumePatient), false, true];
 _unit setVariable [QEGVAR(breathing,PulseOximeter_Attached), [0,0], true];
 
-
-_unit setVariable ["kat_breathing_pulseoximeter", false, true];
-_unit setVariable ["kat_PulseoxiInUse_PFH", nil];
-_unit setVariable ["kat_O2Breathing_PFH", nil];
+_unit setVariable ["kat_PulseoxiInUse_PFH", nil, true];
+_unit setVariable ["kat_O2Breathing_PFH", nil, true];
 
 _unit setVariable [QEGVAR(breathing,usingStethoscope), nil];
 
 // KAT Circulation
 
-_unit setVariable [QEGVAR(circulation,X), false, true];
-_unit setVariable ["kat_AEDXPatient_PFH", nil];
-_unit setVariable [QEGVAR(circulation,AED_X_Volume), true, true];
-_unit setVariable [QEGVAR(circulation,AED_X_VolumePatient), false, true];
-_unit setVariable [QEGVAR(circulation,use), false, true];
-_unit setVariable [QEGVAR(circulation,returnedAED), false, true];
-_unit setVariable [QEGVAR(circulation,asystole), 1, true];
-_unit setVariable [QEGVAR(circulation,CPRcount), 2, true];
-_unit setVariable [QEGVAR(circulation,AEDinUse), false, true];
+_unit setVariable ["kat_AEDXPatient_PFH", nil, true];
+_unit setVariable [QEGVAR(circulation,Defibrillator_Charged), false, true];
+_unit setVariable [QEGVAR(circulation,DefibrillatorPads_Connected), false, true];
+_unit setVariable [QEGVAR(circulation,AED_X_MedicVitalsMonitor_Connected), false, true];
+_unit setVariable [QEGVAR(circulation,AED_X_MedicVitalsMonitor_Patient), nil, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Connected), false, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Provider), nil, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Volume), true, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_VolumePatient), false, true];
+_unit setVariable [QEGVAR(circulation,Defibrillator_Provider), nil, true];
+_unit setVariable [QEGVAR(circulation,Defibrillator_ShockAmount), 0, true];
+_unit setVariable [QEGVAR(circulation,DefibrillatorInUse), false, true];
+_unit setVariable [QEGVAR(circulation,MedicDefibrillatorInUse), false, true];
+_unit setVariable [QEGVAR(circulation,MedicDefibrillator_Patient), nil, true];
+_unit setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
+_unit setVariable [QEGVAR(circulation,heartRestart), false, true];
+_unit setVariable [QEGVAR(circulation,cprCount), 2, true];
 _unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUNC(circulation,generateBloodType), true];
 _unit setVariable [QEGVAR(circulation,internalBleeding), 0, true];
+_unit setVariable [QEGVAR(circulation,StoredBloodPressure), [0,0], true];
 
+_unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
+
+_unit setVariable [QEGVAR(circulation,isPerformingCPR), false, true];
+_unit setVariable [QEGVAR(circulation,OxygenationPeriod), 0, true];
 
 // KAT Misc
 _unit setVariable [QEGVAR(misc,isLeftArmFree), true, true];

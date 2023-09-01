@@ -9,24 +9,6 @@ PREP_RECOMPILE_END;
 #define CBA_SETTINGS_CAT "KAT - ADV Medical: Surgery"
 
 [
-    QGVAR(BreathCheck_Time),
-    "SLIDER",
-    LLSTRING(BREATH_CHECK_TIME),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [0,100,2,0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(BreathCheck_MedLevel),
-    "LIST",
-    LLSTRING(BREATH_CHECK_MEDLEVEL),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
     QGVAR(enable_fracture),
     "CHECKBOX",
     LLSTRING(ADVANCED_FRACTURE),

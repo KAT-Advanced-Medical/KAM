@@ -1,11 +1,12 @@
 PREP(canUseBVM);
+PREP(checkBreathing);
 PREP(checkPulseOximeter);
-PREP(fullHealLocal);
 PREP(handleBreathing);
 PREP(handlePulmoHit);
 PREP(hasBVM);
 PREP(hasOxygenTank);
 PREP(init);
+PREP(inspectChest);
 PREP(listenLungs);
 PREP(lowSpO2pp);
 PREP(refillOxygenTank);

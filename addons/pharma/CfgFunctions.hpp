@@ -8,9 +8,6 @@ class CfgFunctions {
             class getBloodLoss {
                 file = QPATHTOF(functions\fnc_getBloodLoss.sqf);
             };
-            class hasStableVitals {
-                file = QPATHTOF(functions\fnc_hasStableVitals.sqf);
-            };
         };
     };
 
@@ -19,6 +16,9 @@ class CfgFunctions {
         class ace_medical_treatment {
             class medicationLocal {
                 file = QPATHTOF(functions\fnc_treatmentAdvanced_medicationLocal.sqf);
+            };
+            class tourniquetRemove {
+                file = QPATHTOF(functions\fnc_tourniquetRemove.sqf);
             };
         };
     };

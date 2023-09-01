@@ -40,7 +40,7 @@ if (!local _unit) then {
     private _airway = true;
     private _breathing = true;
 
-    if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QGVAR(tensionpneumothorax), false]) || (_unit getVariable [QGVAR(hemopneumothorax), false]) || (_unit getVariable [QGVAR(pneumothorax), false])) then {
+    if ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QGVAR(tensionpneumothorax), false]) || (_unit getVariable [QGVAR(hemopneumothorax), false])) then {
         _breathing = false;
     };
 
@@ -55,10 +55,14 @@ if (!local _unit) then {
     private _BVMInUse = _unit getVariable [QGVAR(BVMInUse), false];
     private _oxygenAssisted = _unit getVariable [QGVAR(oxygenTankConnected), false];
 
+    private _pneumothorax = _unit getVariable [QGVAR(pneumothorax), 0];
+
     private _output = 0;
     private _finalOutput = 0;
     private _multiplierPositive = GVAR(SpO2_MultiplyPositive);
     private _multiplierNegative = GVAR(SpO2_MultiplyNegative);
+    private _multiplierOxygen = GVAR(BVMOxygen_Multiplier);
+    private _perfusionActive = false;
 
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && { GVAR(SpO2_dieActive) && { !_blockDeath } }) exitWith {
@@ -73,105 +77,90 @@ if (!local _unit) then {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_O2Breathing_PFH", nil];
     };
-
+    
+    // Unconscious
     if !([_unit] call ACEFUNC(common,isAwake)) exitWith {
-        if (!_breathing && !_BVMInUse) exitWith {
-            _output = -0.3 * _multiplierNegative;
-            _finalOutput = _status + _output;
+        _output = -0.2; // Not breathing/blocked airway
 
-            if (_finalOutput > 100) then {
-                _finalOutput = 100;
-            };
-
-            if (_finalOutput < 1) then {
-                _finalOutput = 1;
-            };
-
-            _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
-        };
-
-        if (!_breathing && _BVMInUse) exitWith {
-            if(_oxygenAssisted) then {
-                _output = -0.05 * _multiplierNegative;
-            } else {
-                _output = -0.1 * _multiplierNegative;
-            };
-            
-            _finalOutput = _status + _output;
-
-            if (_finalOutput > 100) then {
-                _finalOutput = 100;
-            };
-
-            if (_finalOutput < 1) then {
-                _finalOutput = 1;
-            };
-
-            _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
-        };
-
-        if !(_airway) exitWith {
-            _output = -0.3 * _multiplierNegative;
-
-            if (_overstretch && ((_unit getVariable [QEGVAR(airway,obstruction), false]) && !(_unit getVariable [QEGVAR(airway,occluded), false])) ) then {
-                if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
+        if (_breathing) then { // Breathing
+            if (_airway) then { // Clear airway
+                // Low heart rate / cardiac arrest (0)
+                if (_heartRate < 20 && {GVAR(SpO2_perfusion)}) exitWith {
+                    _perfusionActive = true;
                     if(_BVMInUse) then {
                         if(_oxygenAssisted) then {
-                            _output = -0.01 * GVAR(SpO2_PerfusionMultiplier);
+                            _output = -0.01;
                         } else {
-                            _output = -0.12 * GVAR(SpO2_PerfusionMultiplier);
+                            _output = -0.1;
                         };
-                    } else {
-                        _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
                     };
-                } else {
+                };
+                
+                // Normal(-ish) heart rate
+                if (_heartRate >= 25) exitWith {
                     if (_BVMInUse) then {
                         if(_oxygenAssisted) then {
-                            _output = 0.5 * _multiplierPositive;
+                            _output = 0.8 * _multiplierOxygen;
                         } else {
-                            _output = 0.2 * _multiplierPositive;
+                            _output = 0.45;
                         };
                     } else {
-                        _output = 0.12 * _multiplierPositive;
+                        _output = 0.3;
+                    };
+                };
+
+                _output = 0; // SpO2_perfusion is false
+            } else {// Obstruction with hyperextended head
+                if (_overstretch && _unit getVariable [QEGVAR(airway,obstruction), false] && !(_unit getVariable [QEGVAR(airway,occlusion), false]) && _heartRate >= 25) exitWith {
+                    if(_BVMInUse) then {
+                        if(_oxygenAssisted) then {
+                            _output = 0.5 * _multiplierOxygen;
+                        } else {
+                            _output = 0.24;
+                        };
+                    } else {
+                        _output = 0.12;
                     };
                 };
             };
-            
-            _finalOutput = _status + _output;
-
-            if (_finalOutput > 100) then {
-                _finalOutput = 100;
-            };
-
-            if (_finalOutput < 1) then {
-                _finalOutput = 1;
-            };
-
-            _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
         };
 
-        if ((_heartRate < 20) && {GVAR(SpO2_perfusion)}) then {
-            if(_BVMInUse) then {
-                if(_oxygenAssisted) then {
-                    _output = -0.01 * GVAR(SpO2_PerfusionMultiplier);
-                } else {
-                    _output = -0.1 * GVAR(SpO2_PerfusionMultiplier);
-                };
-            } else {
-                _output = -0.2 * GVAR(SpO2_PerfusionMultiplier);
-            };
-            
+        if(_pneumothorax > 0) then {
+            _output = (_output - (0.81 * (_pneumothorax / 4))) max -0.2; // Decrease breathing rate based on pneumothorax severity, maximum decrease should be -0.2
         };
 
-        if (_heartRate >= 25) then {
-            if(_BVMInUse) then {
-                if(_oxygenAssisted) then {
-                    _output = 0.8 * _multiplierPositive;
-                } else {
-                    _output = 0.45 * _multiplierPositive;
-                };
+        if (_output > 0) then {
+            _output = _output * _multiplierPositive;
+        } else {
+            if (_perfusionActive) then {
+                _output = _output * GVAR(SpO2_PerfusionMultiplier);
             } else {
-                _output = 0.2 * _multiplierPositive;
+                _output = _output * _multiplierNegative;
+            };
+        };
+        
+        _finalOutput = _status + _output;
+
+        if (_finalOutput > 100) then {
+            _finalOutput = 100;
+        };
+
+        if (_finalOutput < 1) then {
+            _finalOutput = 1;
+        };
+
+        _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
+    };
+
+    // Awake
+    if ([_unit] call ACEFUNC(common,isAwake)) exitWith {
+        if !(_breathing) then {
+            _output = -0.2 * _multiplierNegative;
+        } else {
+            if (_pneumothorax isEqualTo 0) then {
+                _output = 0.5 * _multiplierPositive; // Normal breathing
+            } else {
+                _output = ((0.5 - (0.8 * _pneumothorax / 4)) max -0.2) * _multiplierNegative; // Decrease breathing rate based on pneumothorax severity, maximum decrease should be -0.2
             };
         };
 
@@ -186,22 +175,7 @@ if (!local _unit) then {
         };
 
         _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
-    };
 
-    if ([_unit] call ACEFUNC(common,isAwake)) exitWith {
-        if !(_breathing) then {
-            _output = -0.2 * _multiplierNegative;
-        } else {
-            _output = 0.5 * _multiplierPositive;
-        };
-
-        _finalOutput = _status + _output;
-
-        if (_finalOutput < 1) then {
-            _finalOutput = 1;
-        };
-
-        _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
         if (!(_unit getVariable ["ACE_isUnconscious",false]) && {_finalOutput <= GVAR(SpO2_unconscious)}) then {
             [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
         };
@@ -218,7 +192,7 @@ if (!local _unit) then {
             };
         };
 
-        if (_unit getVariable [QGVAR(pneumothorax), false] || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false]) then {
+        if ((_unit getVariable [QGVAR(pneumothorax), 0] > 0) || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false]) then {
             if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false])) then {
                 if (!(_unit getVariable [QGVAR(PneumoBreathCooldownOn), false])) then {
                     _unit setVariable [QGVAR(PneumoBreathCooldownOn), true, true];

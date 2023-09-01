@@ -13,7 +13,7 @@ class cfgVehicles {
         side=7; 
     };
 
-    class GVAR(manageAirway_module) : GVAR(baseModule) {
+    class GVAR(manageAirway_module): GVAR(baseModule) {
         curatorCanAttach = 1;
         displayName = CSTRING(manageAirway_Module_displayname);
         curatorInfoType = QGVAR(RscManageAirway);
@@ -27,10 +27,10 @@ class cfgVehicles {
         icon = "\z\ace\addons\medical_feedback\data\bloodVolume_1.paa";
     };
 
-    class GVAR(asystole_module): GVAR(baseModule) {
+    class GVAR(cardiacState_module): GVAR(baseModule) {
         curatorCanAttach = 1;
-        displayName = CSTRING(shockablestate_Module_displayname);
-        curatorInfoType = QGVAR(RscAsystoleModule);
+        displayName = CSTRING(CardiacState_Module_displayname);
+        curatorInfoType = QGVAR(RscCardiacStateModule);
         icon = "\z\ace\addons\medical_gui\data\categories\advanced_treatment.paa";
     };
 
