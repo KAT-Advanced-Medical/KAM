@@ -4,6 +4,11 @@ class CfgMovesBasic {
 
 class CfgMovesMaleSdr: CfgMovesBasic {
     class States {
+        class DeadState;
+        class kat_recoveryposition: DeadState {
+            speed = 100;
+            file = QPATHTO_T(anim\recovery_position.rtm);
+        };
         class kat_headTurn: Default {
             file = "a3\anims_f\data\anim\sdr\inj\healing\AinvPknlMstpSnonWnonDr_medic3.rtm";
             speed = 0.13;

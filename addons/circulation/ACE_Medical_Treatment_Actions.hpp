@@ -23,13 +23,13 @@ class ACE_Medical_Treatment_Actions {
         condition = "true";
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
     class CheckBloodPressure: CheckPulse {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
     class KAT_DrawBlood500: CheckPulse {
         displayName = CSTRING(DrawBlood500_Action_Use);
@@ -45,7 +45,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"KAT_Empty_bloodIV_500"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
     class KAT_DrawBlood250: CheckPulse {
         displayName = CSTRING(DrawBlood250_Action_Use);
@@ -61,7 +61,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"KAT_Empty_bloodIV_250"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
 
     #include "Blood_Medical.hpp"
@@ -80,7 +80,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_AED);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
     class AEDShock: CheckPulse {
         displayName = CSTRING(Defibrillator_Action_Shock);
@@ -101,7 +101,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_AED);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
     class AEDPlacePads: CPR {
         displayName = CSTRING(AED_Action_PlacePads);
@@ -120,7 +120,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_AED);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
     class AEDStationPlacePads: AEDPlacePads {
         displayName = CSTRING(AEDStation_Action_PlacePads);
@@ -178,7 +178,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_AED);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
     class AEDXConnectVitalsMonitor: AEDXPlacePads {
         displayName = CSTRING(AEDX_Action_ConnectMonitor);
@@ -256,7 +256,7 @@ class ACE_Medical_Treatment_Actions {
         callbackStart = "";
         callbackSuccess = QUOTE([ARR_2(_medic, _patient)] call FUNC(AEDX_ViewMonitor));
         animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconscious = "";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
 };
