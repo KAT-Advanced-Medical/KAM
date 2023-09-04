@@ -37,10 +37,10 @@ private _fnc_error = {
 
 switch (false) do {
     case !(isNull _unit): {
-        [LSTRING(NothingSelected)] call _fnc_error;
+        [ACELSTRING(zeus,NothingSelected)] call _fnc_error;
     };
     case (_unit isKindOf "CAManBase"): {
-        [LSTRING(OnlyInfantry)] call _fnc_error;
+        [ACELSTRING(zeus,OnlyInfantry)] call _fnc_error;
     };
 };
 
@@ -57,7 +57,7 @@ private _fnc_sliderMove = {
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     private _unit = attachedTo _logic;
     private _curVal = _unit getVariable [QACEGVAR(medical,bloodvolume), 6.0];
-    _slider ctrlSetTooltip format [localize "STR_kat_zeus_sliderFormat13was23", parseNumber((sliderPosition _slider) toFixed 2), (parseNumber (_curVal toFixed 2)), "L"];
+    _slider ctrlSetTooltip format [LLSTRING(sliderFormat13was23), parseNumber((sliderPosition _slider) toFixed 2), (parseNumber (_curVal toFixed 2)), "L"];
 };
 
 private _slider = _display displayCtrl 26423;
