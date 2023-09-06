@@ -20,7 +20,7 @@ params ["_display"];
 private _selectedCategory = ACEGVAR(medical_gui,selectedCategory);
 
 private _group = _display displayCtrl IDC_ACTION_BUTTON_GROUP;
-private _actionButons = allControls _group;
+private _actionButtons = allControls _group;
 
 // Handle triage list (no actions shown)
 private _ctrlTriage = _display displayCtrl IDC_TRIAGE_CARD;
@@ -31,7 +31,7 @@ _group ctrlEnable !_showTriage;
 lbClear _ctrlTriage;
 
 if (_showTriage) exitWith {
-    { ctrlDelete _x } forEach _actionButons;
+    { ctrlDelete _x } forEach _actionButtons;
     [_ctrlTriage, ACEGVAR(medical_gui,target)] call ACEFUNC(medical_gui,updateTriageCard);
 };
 
@@ -42,10 +42,10 @@ private _shownIndex = 0;
 
     // Check action category and condition
     if (_category == _selectedCategory && {call _condition}) then {
-        private _ctrl = if (_shownIndex >= count _actionButons) then {
-            _actionButons pushBack (_display ctrlCreate ["ACE_Medical_Menu_ActionButton", -1, _group]);
+        private _ctrl = if (_shownIndex >= count _actionButtons) then {
+            _actionButtons pushBack (_display ctrlCreate ["ACE_Medical_Menu_ActionButton", -1, _group]);
         };
-        _ctrl = actionButtons # _shownIndex;
+        _ctrl = _actionButtons # _shownIndex;
         _ctrl ctrlRemoveAllEventHandlers "ButtonClick";
         _ctrl ctrlSetPositionY POS_H(1.1 * _shownIndex);
         _ctrl ctrlCommit 0;
@@ -60,4 +60,4 @@ private _shownIndex = 0;
     };
 } forEach ACEGVAR(medical_gui,actions);
 
-{ ctrlDelete _x } forEach (_actionButons select [_shownIndex, 9999]);
+{ ctrlDelete _x } forEach (_actionButtons select [_shownIndex, 9999]);
