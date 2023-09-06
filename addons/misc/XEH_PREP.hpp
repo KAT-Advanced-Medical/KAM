@@ -15,6 +15,7 @@ PREP(conditionIV);
 PREP(conditionIVstand);
 PREP(fullHealLocal);
 PREP(getDogtagData);
+PREP(getMagazineAmmoCounts);
 PREP(getUniqueItems);
 PREP(groupID);
 PREP(handleRespawn);

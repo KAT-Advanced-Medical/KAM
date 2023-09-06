@@ -20,14 +20,14 @@
 // -- IFAK STUFF --
 //1 Slot left
 #define SlotsLeft_1D_Min 1
-        #define Slot_1 1
-        #define Slot_2 2
-        #define Slot_3 3
-        #define Slot_4 4
-        #define Slot_5 5
-        #define Slot_6 6
-        #define Slot_7 7
-        #define Slot_8 8
+    #define Slot_1 1
+    #define Slot_2 2
+    #define Slot_3 3
+    #define Slot_4 4
+    #define Slot_5 5
+    #define Slot_6 6
+    #define Slot_7 7
+    #define Slot_8 8
 #define SlotsLeft_1D_Max 8
 
 //2 Slots left
@@ -40,38 +40,30 @@
         #define Slot_1_6 13
         #define Slot_1_7 14
         #define Slot_1_8 15
-    #define SlotsLeft_2D_1Max 15
-    #define SlotsLeft_2D_2Min 16
         #define Slot_2_3 16
         #define Slot_2_4 17
         #define Slot_2_5 18
         #define Slot_2_6 19
         #define Slot_2_7 20
         #define Slot_2_8 21
-    #define SlotsLeft_2D_2Max 21
-    #define SlotsLeft_2D_3Min 22
         #define Slot_3_4 22
         #define Slot_3_5 23
         #define Slot_3_6 24
+    #define SlotsLeft_2D_1Max 24
+    #define SlotsLeft_2D_2Min 16
         #define Slot_3_7 25
         #define Slot_3_8 26
-    #define SlotsLeft_2D_3Max 26
-    #define SlotsLeft_2D_4Min 27
         #define Slot_4_5 27
         #define Slot_4_6 28
         #define Slot_4_7 29
         #define Slot_4_8 30
-    #define SlotsLeft_2D_4Max 30
-    #define SlotsLeft_2D_5Min 31
         #define Slot_5_6 31
         #define Slot_5_7 32
         #define Slot_5_8 33
-    #define SlotsLeft_2D_5Max 33
-    #define SlotsLeft_2D_6Min 34
         #define Slot_6_7 34
         #define Slot_6_8 35
         #define Slot_7_8 36
-    #define SlotsLeft_2D_6Max 36
+    #define SlotsLeft_2D_2Max 36
 #define SlotsLeft_2D_Max 36
 
 //3 slots left
@@ -115,35 +107,29 @@
         #define Slot_2_6_7 70
         #define Slot_2_6_8 71
         #define Slot_2_7_8 72
-    #define SlotsLeft_3D_2Max 72
-    #define SlotsLeft_3D_3Min 73
         #define Slot_3_4_5 73
         #define Slot_3_4_6 74
         #define Slot_3_4_7 75
         #define Slot_3_4_8 76
         #define Slot_3_5_6 77
         #define Slot_3_5_7 78
+    #define SlotsLeft_3D_2Max 78
+    #define SlotsLeft_3D_3Min 79
         #define Slot_3_5_8 79
         #define Slot_3_6_7 80
         #define Slot_3_6_8 81
         #define Slot_3_7_8 82
-    #define SlotsLeft_3D_3Max 82
-    #define SlotsLeft_3D_4Min 83
         #define Slot_4_5_6 83
         #define Slot_4_5_7 84
         #define Slot_4_5_8 85
         #define Slot_4_6_7 86
         #define Slot_4_6_8 87
         #define Slot_4_7_8 88
-    #define SlotsLeft_3D_4Max 88
-    #define SlotsLeft_3D_5Min 89
         #define Slot_5_6_7 89
         #define Slot_5_6_8 90
         #define Slot_5_7_8 91
-    #define SlotsLeft_3D_5Max 91
-    #define SlotsLeft_3D_6Min 92
         #define Slot_6_7_8 92
-    #define SlotsLeft_3D_6Max 92
+    #define SlotsLeft_3D_3Max 92
 #define SlotsLeft_3D_Max 92
 
 //4 slots left
@@ -170,6 +156,8 @@
         #define Slot_1_3_4_8 111
         #define Slot_1_3_5_6 112
         #define Slot_1_3_5_7 113
+    #define SlotsLeft_4D_1Max 113
+    #define SlotsLeft_4D_2Min 114
         #define Slot_1_3_5_8 114
         #define Slot_1_3_6_7 115
         #define Slot_1_3_6_8 116
@@ -184,8 +172,6 @@
         #define Slot_1_5_6_8 125
         #define Slot_1_5_7_8 126
         #define Slot_1_6_7_8 127
-    #define SlotsLeft_4D_1Max 127
-    #define SlotsLeft_4D_2Min 128
         #define Slot_2_3_4_5 128
         #define Slot_2_3_4_6 129
         #define Slot_2_3_4_7 130
@@ -193,6 +179,8 @@
         #define Slot_2_3_5_6 132
         #define Slot_2_3_5_7 133
         #define Slot_2_3_5_8 134
+    #define SlotsLeft_4D_2Max 134
+    #define SlotsLeft_4D_3Min 135
         #define Slot_2_3_6_7 135
         #define Slot_2_3_6_8 136
         #define Slot_2_3_7_8 137
@@ -206,8 +194,6 @@
         #define Slot_2_5_6_8 145
         #define Slot_2_5_7_8 146
         #define Slot_2_6_7_8 147
-    #define SlotsLeft_4D_2Max 147
-    #define SlotsLeft_4D_3Min 148
         #define Slot_3_4_5_6 148
         #define Slot_3_4_5_7 149
         #define Slot_3_4_5_8 150
@@ -216,18 +202,16 @@
         #define Slot_3_4_7_8 153
         #define Slot_3_5_6_7 154
         #define Slot_3_5_6_8 155
+    #define SlotsLeft_4D_3Max 155
+    #define SlotsLeft_4D_4Min 156
         #define Slot_3_5_7_8 156
         #define Slot_3_6_7_8 157
-    #define SlotsLeft_4D_3Max 157
-    #define SlotsLeft_4D_4Min 158
         #define Slot_4_5_6_7 158
         #define Slot_4_5_6_8 159
         #define Slot_4_5_7_8 160
         #define Slot_4_6_7_8 161
-    #define SlotsLeft_4D_4Max 161
-    #define SlotsLeft_4D_5Min 162
         #define Slot_5_6_7_8 162
-    #define SlotsLeft_4D_5Max 162
+    #define SlotsLeft_4D_4Max 162
 #define SlotsLeft_4D_Max 162
 
 //5 slots left
@@ -254,6 +238,8 @@
         #define Slot_1_2_5_7_8 181
         #define Slot_1_2_6_7_8 182
         #define Slot_1_3_4_5_6 183
+    #define SlotsLeft_5D_1Max 183
+    #define SlotsLeft_5D_2Min 184
         #define Slot_1_3_4_5_7 184
         #define Slot_1_3_4_5_8 185
         #define Slot_1_3_4_6_7 186
@@ -268,8 +254,6 @@
         #define Slot_1_4_5_7_8 195
         #define Slot_1_4_6_7_8 196
         #define Slot_1_5_6_7_8 197
-    #define SlotsLeft_5D_1Max 197
-    #define SlotsLeft_5D_2Min 198
         #define Slot_2_3_4_5_6 198
         #define Slot_2_3_4_5_7 199
         #define Slot_2_3_4_5_8 200
@@ -277,6 +261,8 @@
         #define Slot_2_3_4_6_8 202
         #define Slot_2_3_4_7_8 203
         #define Slot_2_3_5_6_7 204
+    #define SlotsLeft_5D_2Max 204
+    #define SlotsLeft_5D_3Min 205
         #define Slot_2_3_5_6_8 205
         #define Slot_2_3_5_7_8 206
         #define Slot_2_3_6_7_8 207
@@ -285,17 +271,13 @@
         #define Slot_2_4_5_7_8 210
         #define Slot_2_4_6_7_8 211
         #define Slot_2_5_6_7_8 212
-    #define SlotsLeft_5D_2Max 212
-    #define SlotsLeft_5D_3Min 213
         #define Slot_3_4_5_6_7 213
         #define Slot_3_4_5_6_8 214
         #define Slot_3_4_5_7_8 215
         #define Slot_3_4_6_7_8 216
         #define Slot_3_5_6_7_8 217
-    #define SlotsLeft_5D_3Max 217
-    #define SlotsLeft_5D_4Min 218
         #define Slot_4_5_6_7_8 218
-    #define SlotsLeft_5D_4Max 218
+    #define SlotsLeft_5D_3Max 217
 #define SlotsLeft_5D_Max 218
 
 //6 slots left
@@ -313,6 +295,8 @@
         #define Slot_1_2_3_6_7_8 228
         #define Slot_1_2_4_5_6_7 229
         #define Slot_1_2_4_5_6_8 230
+    #define SlotsLeft_6D_1Max 230
+    #define SlotsLeft_6D_2Min 231
         #define Slot_1_2_4_5_7_8 231
         #define Slot_1_2_4_6_7_8 232
         #define Slot_1_2_5_6_7_8 233
@@ -322,35 +306,26 @@
         #define Slot_1_3_4_6_7_8 237
         #define Slot_1_3_5_6_7_8 238
         #define Slot_1_4_5_6_7_8 239
-    #define SlotsLeft_6D_1Max 239
-    #define SlotsLeft_6D_2Min 240
+    #define SlotsLeft_6D_2Max 239
+    #define SlotsLeft_6D_3Min 240
         #define Slot_2_3_4_5_6_7 240
         #define Slot_2_3_4_5_6_8 241
         #define Slot_2_3_4_5_7_8 242
         #define Slot_2_3_4_6_7_8 243
         #define Slot_2_3_5_6_7_8 244
         #define Slot_2_4_5_6_7_8 245
-    #define SlotsLeft_6D_2Max 245
-    #define SlotsLeft_6D_3Min 246
         #define Slot_3_4_5_6_7_8 246
     #define SlotsLeft_6D_3Max 246
 #define SlotsLeft_6D_Max 246
 
 //7 slots left
 #define SlotsLeft_7D_Min 247
-    #define SlotsLeft_7D_1Min 247
-        #define Slot_1_2_3_4_5_6_7 247
-        #define Slot_1_2_3_4_5_6_8 248
-        #define Slot_1_2_3_4_5_7_8 249
-        #define Slot_1_2_3_4_6_7_8 250
-        #define Slot_1_2_3_5_6_7_8 251
-        #define Slot_1_2_4_5_6_7_8 252
-        #define Slot_1_3_4_5_6_7_8 253
-    #define SlotsLeft_7D_1Max 253
-    #define SlotsLeft_7D_2Min 254
-        #define Slot_2_3_4_5_6_7_8 254
-    #define SlotsLeft_7D_2Max 254
+    #define Slot_1_2_3_4_5_6_7 247
+    #define Slot_1_2_3_4_5_6_8 248
+    #define Slot_1_2_3_4_5_7_8 249
+    #define Slot_1_2_3_4_6_7_8 250
+    #define Slot_1_2_3_5_6_7_8 251
+    #define Slot_1_2_4_5_6_7_8 252
+    #define Slot_1_3_4_5_6_7_8 253
+    #define Slot_2_3_4_5_6_7_8 254
 #define SlotsLeft_7D_Max 254
-
-//All Slots left
-        #define Slot_1_2_3_4_5_6_7_8 255

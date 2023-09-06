@@ -16,9 +16,6 @@ class CfgMagazines {
         mass = 0.1;
     };
 
-    // ------------------------ FAK ------------------------
-    //Replacement for FAK if a slot is used
-
     class kat_IFAK_Magazine: CA_Magazine {
         scope = 2;
         scopeArsenal = 0;
