@@ -39,7 +39,7 @@ lbClear _ctrl;
     _rowIdc = _ctrl lbAdd format ["%1 %2", _timeStamp, _message];
 
     //Color the logs if enabled by Airway Settings of KAM
-    if (GVAR(Colored_logs)) then {
+    if (GVAR(ColoredLogs)) then {
         if (_messageWOlocalization isEqualTo ELSTRING(breathing,pulseoxi_Log)) then {
             if (((_arguments select 0) < 45 )
             || ((_arguments select 0) > 120 )
@@ -64,12 +64,14 @@ lbClear _ctrl;
                 _ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
             };
         };
-        if (_messageWOlocalization isEqualTo ELSTRING(circulation,VitalsMonitor_HRInactive_StatusLog)) then {
-            if (((_arguments select 0) < 50 )
-            || ((_arguments select 0) > 200 )
-            || ((_arguments select 1) < 60 )
-            || ((_arguments select 1) > 145 )
-            || ((_arguments select 2) < 75 )) then {
+        if (_messageWOlocalization isEqualTo ELSTRING(circulation,VitalsMonitor_VMActive_StatusLog)) then {
+            if (((_arguments select 0) < 45 )
+            || ((_arguments select 0) > 120 )
+            || ((_arguments select 1) < 50 )
+            || ((_arguments select 1) > 200 )
+            || ((_arguments select 2) < 60 )
+            || ((_arguments select 2) > 145 )
+            || ((_arguments select 3) < 75 )) then {
                 _ctrl lbSetColor [_rowIdc, [1, 0, 0, 1]];
             };
         };

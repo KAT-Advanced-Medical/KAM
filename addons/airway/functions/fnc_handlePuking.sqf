@@ -33,7 +33,7 @@ _unit setVariable ["kat_pukeActive_PFH", true];
         _unit setVariable ["kat_pukeActive_PFH", nil];
     };
 
-    if (GVAR(occlusion_cooldownPeriod) > 0 && {(_unit getVariable [QGVAR(clearedTime), 0]) + GVAR(occlusion_cooldownPeriod) > CBA_missionTime}) exitWith {};
+    if (GVAR(occlusion_cooldownPeriod) > 0 && {(_unit getVariable [QGVAR(clearedTime), 0] > 0) && ((_unit getVariable [QGVAR(clearedTime), 0]) + GVAR(occlusion_cooldownPeriod)) > CBA_missionTime}) exitWith {};
     
     if (random(100) <= GVAR(probability_occluded)) then {
         if !(_unit getVariable [QGVAR(occluded), false]) then {
