@@ -12,7 +12,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(checkBreathing);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
         animationMedic = "";
         animationMedicProne = "";
         sounds[] = {};
@@ -48,7 +48,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
         animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
         animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
@@ -72,7 +72,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 0;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
         animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
         animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
@@ -96,7 +96,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
         animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
         animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
@@ -120,7 +120,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
         animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
         animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
@@ -144,7 +144,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
         animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
         animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
@@ -168,7 +168,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
         animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
         animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
@@ -192,7 +192,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_stethoscope"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
     class CheckCyanosis: CheckPulse {
         displayName = CSTRING(CheckCyanosis_Name);

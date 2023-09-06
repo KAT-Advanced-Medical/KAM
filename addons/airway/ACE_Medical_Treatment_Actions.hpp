@@ -16,7 +16,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
         animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
         animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
@@ -92,9 +92,10 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Body"};
         medicRequired = 0;
         items[] = {};
-        condition = QUOTE((!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)])) && FUNC(checkRecovery));
+        condition = QUOTE((!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)])) && FUNC(checkRecovery));
         icon = "";
         callbackSuccess = QFUNC(treatmentAdvanced_RecoveryPosition);
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
     class CancelRecoveryPosition: Larynxtubus {
         displayName = CSTRING(CancelRecoveryPosition_displayName);
@@ -104,9 +105,11 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Body"};
         medicRequired = 0;
         items[] = {};
-        condition = QUOTE((!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(recovery),false)])));
+        condition = QUOTE((!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(recovery),false)])));
         icon = "";
         callbackSuccess = QFUNC(treatmentAdvanced_CancelRecoveryPosition);
+        animationPatientUnconscious = "";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };
     class CheckPulse;
     class CheckAirway: CheckPulse {
@@ -117,6 +120,8 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 0;
         callbackSuccess = QFUNC(checkAirway);
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]));
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
 };

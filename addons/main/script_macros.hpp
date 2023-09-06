@@ -109,6 +109,11 @@
 #define TREATMENT_LOCATIONS_VEHICLES_AND_FACILITIES 3
 #define TREATMENT_LOCATIONS_NONE 4
 
+// medical_statemachine/script_component.hpp
+#define FATAL_INJURIES_ALWAYS 0
+#define FATAL_INJURIES_CRDC_ARRST 1
+#define FATAL_INJURIES_NEVER 2
+
 // These variables get stored in object space and used across components
 // Defined here for easy consistency with GETVAR/SETVAR (also a list for reference)
 #define VAR_BLOOD_PRESS       QACEGVAR(medical,bloodPressure)

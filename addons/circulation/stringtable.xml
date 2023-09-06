@@ -1158,7 +1158,7 @@
             <Japanese>除細動ｼｮｯｸは不要です</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ANALYZINGEKG">
-            <English>ANALYZING EKG</English>
+            <English>ANALYZING ECG</English>
             <Japanese>ECG解析中</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGED">
@@ -1200,6 +1200,12 @@
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PushAnalyze">
             <English>Push Analyze</English>
             <Japanese>解析ﾎﾞﾀﾝを押します</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_HR">
+            <English>HR</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_PR">
+            <English>PR</English>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -2034,16 +2040,8 @@
             <German>AED-X: HR: %1 BP: --/-- SpO2: ---</German>
             <Portuguese>DEA-X: HR: %1 BP: --/-- SpO2: ---</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Circulation_VitalsMonitor_HRInactive_StatusLog">
-            <English>AED-X: HR: --- BP: %1/%2 SpO2: %3</English>
-            <Spanish>DEA-X: RC: --- PS: %1/%2 SpO2: %3</Spanish>
-            <Polish>AED-X: HR: --- BP: %1/%2 SpO2: %3</Polish>
-            <Italian>AED-X: FC: --- PS: %1/%2 SpO2: %3</Italian>
-            <Japanese>AED-X: 心拍: --- 血圧: %1/%2 SpO2: %3</Japanese>
-            <French>AED-X: HR: --- BP: %1/%2 SpO2: %3</French>
-            <Korean>X-시리즈 AED: 맥박: --- 혈압: %1/%2 산소포화도: %3</Korean>
-            <German>AED-X: HR: --- BP: %1/%2 SpO2: %3</German>
-            <Portuguese>DEA-X: HR: --- BP: %1/%2 SpO2: %3</Portuguese>
+        <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog">
+            <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4</English>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>

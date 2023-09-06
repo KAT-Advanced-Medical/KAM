@@ -225,69 +225,8 @@
             <Chinesesimp>心搏停止</Chinesesimp>
             <Portuguese>Assistolia</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Zeus_NothingSelected">
-            <English>Place on a unit.</English>
-            <German>Es wurde nichts ausgewählt.</German>
-            <Czech>Položte na jednotku.</Czech>
-            <French>Placez sur une unité.</French>
-            <Polish>Połóż na jednostce.</Polish>
-            <Spanish>Colocar en una unidad.</Spanish>
-            <Chinese>放在一个单元上。</Chinese>
-            <Korean>유닛에 배치하십시오.</Korean>
-            <Turkish>Bir üniteye yerleştirin.</Turkish>
-            <Japanese>ユニットに置いてください。</Japanese>
-            <Russian>Поместите на единицу.</Russian>
-            <Italian>Piazza su un'unità</Italian>
-            <Chinesesimp>放置在一个单元上</Chinesesimp>
-            <Portuguese>Coloque em uma unidade.</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Zeus_OnlyInfantry">
-            <English>Unit must be infantry.</English>
-            <German>Nur bei abgesessener Infanterie verwendbar.</German>
-            <Czech>Jednotka musí být pěchota.</Czech>
-            <French>L'unité doit être une infanterie.</French>
-            <Polish>Jednostką musi być piechota.</Polish>
-            <Spanish>La unidad debe ser infantería.</Spanish>
-            <Chinese>单位必须是步兵。</Chinese>
-            <Korean>유닛은 보병이어야 합니다.</Korean>
-            <Turkish>Birim piyade olmalıdır.</Turkish>
-            <Japanese>ユニットは歩兵でなければなりません。</Japanese>
-            <Russian>Юнит должен быть пехотным.</Russian>
-            <Italian>L'unità deve essere di fanteria.</Italian>
-            <Chinesesimp>单位必须是步兵</Chinesesimp>
-            <Portuguese>A unidade deve ser de infantaria.</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Zeus_MustBeAlive">
-            <English>Unit must be alive.</English>
-            <German>Einheit muss am Leben sein.</German>
-            <Czech>Jednotka musí být naživu.</Czech>
-            <French>L'unité doit être vivante.</French>
-            <Polish>Jednostka musi być żywa.</Polish>
-            <Spanish>La unidad debe estar viva.</Spanish>
-            <Chinese>单位必须是活的。</Chinese>
-            <Korean>유닛이 살아 있어야 합니다.</Korean>
-            <Turkish>Birim canlı olmalı.</Turkish>
-            <Japanese>ユニットは生きている必要があります。</Japanese>
-            <Russian>Юнит должен быть жив.</Russian>
-            <Italian>L'unità deve essere viva</Italian>
-            <Chinesesimp>单位必须处于存活状态</Chinesesimp>
-            <Portuguese>A unidade deve estar viva.</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Zeus_NotUnconscious">
-            <English>Unit must be unconscious.</English>
-            <German>Einheit muss bewusstlos sein.</German>
-            <Czech>Jednotka musí být při vědomí.</Czech>
-            <French>L'unité doit être inconsciente.</French>
-            <Polish>Jednostka musi być nieprzytomna.</Polish>
-            <Spanish>La unidad debe estar inconsciente.</Spanish>
-            <Chinese>单位必须是无意识的。</Chinese>
-            <Korean>유닛은 의식이 없어야 합니다.</Korean>
-            <Turkish>Ünite bilinçsiz olmalıdır.</Turkish>
-            <Japanese>ユニットは意識を失っている必要があります。</Japanese>
-            <Russian>Юнит должен быть без сознания.</Russian>
-            <Italian>L'unità deve essere viva.</Italian>
-            <Chinesesimp>单位必须是无意识的</Chinesesimp>
-            <Portuguese>A unidade deve estar inconsciente.</Portuguese>
+        <Key ID="STR_KAT_Zeus_OnlyAI">
+            <English>Unit must be an AI</English>
         </Key>
         <Key ID="STR_KAT_Zeus_sliderFormat13was23">
             <English>%1%3 (was %2%3)</English>
@@ -304,6 +243,12 @@
             <Italian>%1%3 (era %2%3)</Italian>
             <Chinesesimp>%1%3 (以前是 %2%3)</Chinesesimp>
             <Portuguese>%1%3 (era %2%3)</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_displayname">
+            <English>Toggle Instant AI Death</English>
+        </Key>
+        <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_Toggled">
+            <English>Instant AI Death %1 for unit</English>
         </Key>
     </Package>
 </Project>

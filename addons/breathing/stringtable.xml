@@ -200,20 +200,16 @@
             <Portuguese>Removendo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_pulseoxi_Log">
-            <English>Pulse Oximeter: HR: %1 SpO2: %2</English>
-            <German>Pulsoximeter: HR: %1 SpO2: %2</German>
-            <Polish>Pulsoksymetr: HR: %1 SpO2: %2</Polish>
-            <Spanish>Oxímetro de pulso: RC: %1 SpO2: %2</Spanish>
-            <Chinese>心率監測器: 心率: %1 血氧量: %2</Chinese>
-            <Chinesesimp>脉搏血氧仪: 心率: %1 SpO2: %2</Chinesesimp>
-            <Czech>Pulzní Oxymetr: HR: %1 SpO2: %2</Czech>
-            <Korean>맥박 산소포화도: HR: %1 SpO2: %2</Korean>
-            <French>Oxymètre de pouls: HR: %1 SpO2: %2</French>
-            <Turkish>Nabız Oksimetresi: HR: %1 SpO2: %2</Turkish>
-            <Italian>Pulsossimetro: HR: %1 SpO2: %2</Italian>
-            <Russian>Пульсоксиметр: ЧСС: %1 SpO2: %2</Russian>
-            <Japanese>パルスオキシメーター: HR:%1 SpO2:%2</Japanese>
-            <Portuguese>Oxímetro de Pulso: HR: %1 SpO2: %2</Portuguese>
+            <English>Pulse Oximeter: PR: %1 SpO2: %2</English>
+            <German>Pulsoximeter: PR: %1 SpO2: %2</German>
+            <Polish>Pulsoksymetr: PR: %1 SpO2: %2</Polish>
+            <Czech>Pulzní Oxymetr: PR: %1 SpO2: %2</Czech>
+            <Korean>맥박 산소포화도: PR: %1 SpO2: %2</Korean>
+            <French>Oxymètre de pouls: PR: %1 SpO2: %2</French>
+            <Turkish>Nabız Oksimetresi: PR: %1 SpO2: %2</Turkish>
+            <Italian>Pulsossimetro: PR: %1 SpO2: %2</Italian>
+            <Japanese>パルスオキシメーター: PR: %1 SpO2: %2</Japanese>
+            <Portuguese>Oxímetro de Pulso: PR: %1 SpO2: %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -1224,19 +1220,6 @@
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not the pneumothorax will deteriorate</English>
             <Japanese>気胸が悪化するかどうかの確率は各間隔毎に計算されます</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SubCategory_Basic">
-            <English>Basic Settings</English>
-            <Polish>Podstawowe Ustawienia</Polish>
-            <Italian>Impostazioni di base</Italian>
-            <Czech>Základní nastavení</Czech>
-            <French>Paramètres basiques</French>
-            <Korean>일반 설정</Korean>
-            <German>Grundeinstellungen</German>
-            <Chinesesimp>基础设置</Chinesesimp>
-            <Japanese>基本設定</Japanese>
-            <Spanish>Parámetros básicos</Spanish>
-            <Portuguese>Configurações básicas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
