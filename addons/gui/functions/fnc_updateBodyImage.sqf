@@ -22,7 +22,7 @@ params ["_ctrlGroup", "_target"];
 private _tourniquets = GET_TOURNIQUETS(_target);
 private _fractures = GET_FRACTURES(_target);
 private _bodyPartDamage = _target getVariable [QACEGVAR(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0]];
-private _damageThreshold = _target getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer _target)];
+private _damageThreshold = GET_DAMAGE_THRESHOLD(_target);
 private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
 
 {
@@ -55,7 +55,7 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
                 _ctrlBone ctrlSetTextColor [1, 0, 0, 1];
             };
             case -1: {
-                if (ace_medical_fractures in [2, 3]) then {
+                if (ACEGVAR(medical,fractures) in [2, 3]) then {
                     _ctrlBone ctrlShow true;
                     _ctrlBone ctrlSetTextColor [0, 0, 1, 1];
                 } else {
@@ -73,10 +73,10 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
         private _damage = _bodyPartDamage select _forEachIndex;
         switch (true) do { // torso damage threshold doesn't need scaling
             case (_forEachIndex > 3): { // legs: index 4 & 5
-                _damageThreshold = ACEGVAR(medical,const_limpingDamageThreshold) * 4;
+                _damageThreshold = LIMPING_DAMAGE_THRESHOLD * 4;
             };
             case (_forEachIndex > 1): { // arms: index 2 & 3
-                _damageThreshold = ACEGVAR(medical,const_fractureDamageThreshold) * 4;
+                _damageThreshold = FRACTURE_DAMAGE_THRESHOLD * 4;
             };
             case (_forEachIndex == 0): { // head: index 0
                 _damageThreshold = _damageThreshold * 1.25;
@@ -92,12 +92,12 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
     private _ctrlBodyPart = _ctrlGroup controlsGroupCtrl _bodyPartIDC;
     _ctrlBodyPart ctrlSetTextColor _bodyPartColor;
 } forEach [
-    [IDC_BODY_HEAD,     -1, -1, -1],
-    [IDC_BODY_TORSO,    -1, -1, -1],
-    [IDC_BODY_ARMLEFT,  IDC_BODY_ARMLEFT_T,  IDC_BODY_ARMLEFT_B, -1],
-    [IDC_BODY_ARMRIGHT, IDC_BODY_ARMRIGHT_T, IDC_BODY_ARMRIGHT_B, -1],
-    [IDC_BODY_LEGLEFT,  IDC_BODY_LEGLEFT_T,  IDC_BODY_LEGLEFT_B, -1],
-    [IDC_BODY_LEGRIGHT, IDC_BODY_LEGRIGHT_T, IDC_BODY_LEGRIGHT_B, -1]
+    [IDC_BODY_HEAD],
+    [IDC_BODY_TORSO],
+    [IDC_BODY_ARMLEFT,  IDC_BODY_ARMLEFT_T,  IDC_BODY_ARMLEFT_B],
+    [IDC_BODY_ARMRIGHT, IDC_BODY_ARMRIGHT_T, IDC_BODY_ARMRIGHT_B],
+    [IDC_BODY_LEGLEFT,  IDC_BODY_LEGLEFT_T,  IDC_BODY_LEGLEFT_B],
+    [IDC_BODY_LEGRIGHT, IDC_BODY_LEGRIGHT_T, IDC_BODY_LEGRIGHT_B]
 ];
 
 // Airway
