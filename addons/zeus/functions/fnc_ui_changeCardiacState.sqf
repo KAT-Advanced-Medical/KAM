@@ -37,10 +37,10 @@ private _fnc_error = {
 
 switch (false) do {
     case !(isNull _unit): {
-        [LSTRING(NothingSelected)] call _fnc_error;
+        [ACELSTRING(zeus,NothingSelected)] call _fnc_error;
     };
     case (_unit isKindOf "CAManBase"): {
-        [LSTRING(OnlyInfantry)] call _fnc_error;
+        [ACELSTRING(zeus,OnlyInfantry)] call _fnc_error;
     };
 };
 
