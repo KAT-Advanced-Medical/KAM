@@ -108,7 +108,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedicProne = "";
         animationMedicSelf = "";
         animationMedicSelfProne = "";
-        sounds[] = {{QPATHTO_R(sounds\use_penthrox.wav),4,1,12}};
+        sounds[] = {{QPATHTO_R(sounds\use_penthrox.wav),2,1,7}};
     };
     class Naloxone: Carbonate {
         displayName = CSTRING(Take_Naloxone);
@@ -163,20 +163,6 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         condition = QFUNC(removeIV);
         callbackSuccess = QFUNC(inspectCatheter);
-        animationMedic = "";
-        animationMedicProne = "";
-        sounds[] = {};
-    };
-    class BreathCheck: Carbonate {
-        displayName = CSTRING(Check_Breath);
-        category = "examine";
-        allowedSelections[] = {"Head"};
-        allowSelfTreatment = 1;
-        medicRequired = 1;
-        treatmentTime = 2;
-        items[] = {};
-        condition = "true";
-        callbackSuccess = QFUNC(inspectBreath);
         animationMedic = "";
         animationMedicProne = "";
         sounds[] = {};

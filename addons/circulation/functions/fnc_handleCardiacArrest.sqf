@@ -78,14 +78,18 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
             },
             [_unit], _timeToDeteriorate,
             {
-                // chance to deteriorate straight into asystole (PEA)
-                if (GVAR(AdvRhythm_Hardcore_Enable) && {floor (random 100) < GVAR(AdvRhythm_hardcoreDeteriorationChance) && {_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 4}}) then {
-                    _unit setVariable [QGVAR(cardiacArrestType), 2, true];
-                    [_unit, nil, false] call FUNC(handleCardiacArrest);
-                };
+                if (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then { // Don't deteriorate during CPR
+                    // chance to deteriorate straight into asystole (PEA)
+                    if (GVAR(AdvRhythm_Hardcore_Enable) && {floor (random 100) < GVAR(AdvRhythm_hardcoreDeteriorationChance) && {_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 4}}) then {
+                        _unit setVariable [QGVAR(cardiacArrestType), 2, true];
+                        [_unit, nil, false] call FUNC(handleCardiacArrest);
+                    };
 
-                if (_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 4) then {
-                    _unit setVariable [QGVAR(cardiacArrestType), 3, true];
+                    if (_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 4) then {
+                        _unit setVariable [QGVAR(cardiacArrestType), 3, true];
+                        [_unit, nil, false] call FUNC(handleCardiacArrest);
+                    };
+                } else {
                     [_unit, nil, false] call FUNC(handleCardiacArrest);
                 };
             }] call CBA_fnc_waitUntilAndExecute;
@@ -105,16 +109,24 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
             },
             [_unit], _timeToDeteriorate,
             {
-                if (_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 3) then {// if VF skip PEA
-                    _unit setVariable [QGVAR(cardiacArrestType), 1, true];
+                if (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then { // Don't deteriorate during CPR
+                    if (_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 3) then {// if VF skip PEA
+                        _unit setVariable [QGVAR(cardiacArrestType), 1, true];
+                        [_unit, nil, false] call FUNC(handleCardiacArrest);
+                    };
+                } else {
                     [_unit, nil, false] call FUNC(handleCardiacArrest);
                 };
             }] call CBA_fnc_waitUntilAndExecute;
         };
         case 2: {
             [{
-                if (_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 2) then {
-                    _unit setVariable [QGVAR(cardiacArrestType), 1, true];
+                if (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then { // Don't deteriorate during CPR
+                    if (_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 2) then {
+                        _unit setVariable [QGVAR(cardiacArrestType), 1, true];
+                    };
+                } else {
+                    [_unit, nil, false] call FUNC(handleCardiacArrest);
                 };
             }, [_unit], _timeToDeteriorate] call CBA_fnc_waitAndExecute;
         };

@@ -19,4 +19,8 @@ params ["_patient"];
 
 if (_patient getVariable [QGVAR(occluded), false]) then {
     _patient setVariable [QGVAR(occluded), false, true];
+
+    if (GVAR(occlusion_cooldownPeriod) > 0) then {
+        _patient setVariable [QGVAR(clearedTime), CBA_missionTime, true];
+    };
 };
