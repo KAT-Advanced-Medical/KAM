@@ -46,6 +46,7 @@ if (_target isKindOf "CAManBase") then {
     // attach object
     _target attachTo [_unit, _position];
 };
+
 [QACEGVAR(common,setDir), [_target, _direction], _target] call CBA_fnc_targetEvent;
 
 _unit setVariable [QACEGVAR(dragging,isCarrying), true, true];
@@ -61,13 +62,6 @@ _unit setVariable [QACEGVAR(dragging,ReleaseActionID), [
 // add anim changed EH
 [_unit, "AnimChanged", ACEFUNC(dragging,handleAnimChanged), [_unit]] call CBA_fnc_addBISEventHandler;
 
-// show mouse hint
-if (_target isKindOf "CAManBase") then {
-    [localize ACELSTRING(dragging,Drop), "", ""] call ACEFUNC(interaction,showMouseHint);
-} else {
-    [localize ACELSTRING(dragging,Drop), "", localize ACELSTRING(dragging,RaiseLowerRotate)] call ACEFUNC(interaction,showMouseHint);
-};
-
 // check everything
 [ACEFUNC(dragging,carryObjectPFH), 0.5, [_unit, _target, CBA_missionTime]] call CBA_fnc_addPerFrameHandler;
 
@@ -78,6 +72,8 @@ ACEGVAR(dragging,currentHeightChange) = 0;
 private _UAVCrew = _target call ACEFUNC(common,getVehicleUAVCrew);
 
 if (_UAVCrew isNotEqualTo []) then {
-    {_target deleteVehicleCrew _x} count _UAVCrew;
+    {
+        _target deleteVehicleCrew _x
+    } forEach _UAVCrew;
     _target setVariable [QACEGVAR(dragging,isUAV), true, true];
 };

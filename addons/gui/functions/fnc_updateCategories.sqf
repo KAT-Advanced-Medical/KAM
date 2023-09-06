@@ -24,8 +24,18 @@ params ["_display"];
     private _enable = ACEGVAR(medical_gui,actions) findIf {_category == _x select 1 && {call (_x select 2)}} > -1;
     _ctrl ctrlEnable _enable;
 
+    private _selectedColor = [
+        profileNamespace getVariable ["GUI_BCG_RBG_R", 0.13],
+        profileNamespace getVariable ["GUI_BCG_RBG_G", 0.54],
+        profileNamespace getVariable ["GUI_BCG_RBG_B", 0.21],
+        profileNamespace getVariable ["GUI_BCG_RGB_A", 0.8]
+    ];
+
     private _color = [[0.4, 0.4, 0.4, 1], [1, 1, 1, 1]] select _enable;
+    _color = [_color, _selectedColor] select (GVAR(selectedCategory) isEqualTo _category);
     _ctrl ctrlSetTextColor _color;
+    _color set [-1, 0.8];
+    _ctrl ctrlSetBackgroundColor _color;
 } forEach [
     [IDC_EXAMINE, "examine"],
     [IDC_BANDAGE, "bandage"],

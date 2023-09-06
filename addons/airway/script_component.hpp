@@ -74,7 +74,3 @@
 
 #define IDC_TRIAGE_STATUS 7000
 #define IDC_TRIAGE_SELECT 7100
-
-
-#define GET_DEBRIDED_WOUNDS(unit)   (unit getVariable [VAR_DEBRIDED_WOUNDS, createHashMap])
-#define VAR_DEBRIDED_WOUNDS   QEGVAR(surgery,debridedWounds)
