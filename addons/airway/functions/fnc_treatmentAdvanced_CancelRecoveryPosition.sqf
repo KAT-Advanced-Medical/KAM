@@ -19,3 +19,4 @@
 params ["_medic", "_patient"];
 
 [QGVAR(cancelRecoveryPositionLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+[_patient, "ainjppnemstpsnonwrfldnon", 2] call ACEFUNC(common,doAnimation);

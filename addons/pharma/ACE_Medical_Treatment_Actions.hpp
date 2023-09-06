@@ -45,13 +45,14 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         items[] = {"kat_Painkiller"};
+        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackSuccess = QFUNC(treatmentAdvanced_Painkillers);
-        litter[] = {};
         icon = QPATHTOF(ui\icon_painkillers_action.paa);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon","kat_recoveryposition"};
         sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+        litter[] = {};
     };
     class Carbonate: Morphine {
         displayName = CSTRING(Take_Carbonate);
@@ -63,9 +64,12 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Carbonate);
         treatmentTime = QGVAR(treatmentTime_Carbonate);
         items[] = {"kat_Carbonate"};
-        litter[] = {};
         callbackSuccess = QFUNC(treatmentAdvanced_Carbonate);
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon","kat_recoveryposition"};
         sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+        litter[] = {};
     };
     class Pervitin: Morphine {
         displayName = CSTRING(Take_Pervitin);
@@ -75,9 +79,13 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Pervitin);
         treatmentTime = QGVAR(treatmentTime_Pervitin);
         items[] = {"kat_Pervitin"};
-        litter[] = {};
+        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackSuccess = QFUNC(treatmentAdvanced_Pervitin);
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon","kat_recoveryposition"};
         sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+        litter[] = {};
     };
     class Caffeine: Morphine {
         displayName = CSTRING(Take_Caffeine);
@@ -86,9 +94,13 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         treatmentTime = 5;
         items[] = {"kat_Caffeine"};
-        litter[] = {};
+        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
         callbackSuccess = QFUNC(treatmentAdvanced_Caffeine);
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon","kat_recoveryposition"};
         sounds[] = {{QPATHTO_R(sounds\take_painkillers.wav),5,1,15}};
+        litter[] = {};
     };
     class Penthrox: Morphine {
         displayName = CSTRING(Use_Penthrox);
@@ -100,7 +112,6 @@ class ACE_Medical_Treatment_Actions {
         items[] = {};
         callbackSuccess = QFUNC(treatmentAdvanced_Penthrox);
         condition = QUOTE([_patient] call ACEFUNC(common,isAwake) && ([ARR_2(_medic, 'kat_Penthrox')] call ACEFUNC(common,hasMagazine) || [ARR_2(_patient, 'kat_Penthrox')] call ACEFUNC(common,hasMagazine)));
-        litter[] = {};
         //icon = QPATHTOF(ui\icon_penthrox_action.paa);
         animationPatient = "";
         animationPatientProne = "";
@@ -109,6 +120,7 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelf = "";
         animationMedicSelfProne = "";
         sounds[] = {{QPATHTO_R(sounds\use_penthrox.wav),2,1,7}};
+        litter[] = {};
     };
     class Naloxone: Carbonate {
         displayName = CSTRING(Take_Naloxone);
@@ -117,7 +129,6 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Naloxone);
         treatmentTime = QGVAR(treatmentTime_Naloxone);
         items[] = {"kat_naloxone"};
-        condition = "true";
         callbackSuccess = QFUNC(treatmentAdvanced_Naloxone);
         sounds[] = {};
     };
