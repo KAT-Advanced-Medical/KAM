@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: commy2
+ * Modified: Blue
  * Carry an object.
  *
  * Arguments:
@@ -61,6 +62,13 @@ _unit setVariable [QACEGVAR(dragging,ReleaseActionID), [
 
 // add anim changed EH
 [_unit, "AnimChanged", ACEFUNC(dragging,handleAnimChanged), [_unit]] call CBA_fnc_addBISEventHandler;
+
+// show mouse hint
+if (_target isKindOf "CAManBase") then {
+    [localize ACELSTRING(dragging,Drop), "", ""] call ACEFUNC(interaction,showMouseHint);
+} else {
+    [localize ACELSTRING(dragging,Drop), "", localize ACELSTRING(dragging,RaiseLowerRotate)] call ACEFUNC(interaction,showMouseHint);
+};
 
 // check everything
 [ACEFUNC(dragging,carryObjectPFH), 0.5, [_unit, _target, CBA_missionTime]] call CBA_fnc_addPerFrameHandler;

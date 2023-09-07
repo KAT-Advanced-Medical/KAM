@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Glowbal, mharis001
+ * Modified: Blue
  * Checks if one of the given items are present between the medic and patient.
  * Does not respect the priority defined by the allowSharedEquipment setting.
  * Will check medic first and then patient if shared equipment is allowed.
@@ -35,6 +36,6 @@ private _fnc_checkItems = {
     _foundItem
 };
 
-private _vehicleCondition = (vehicle _medic) != _medic && (vehicle _medic) isEqualTo (vehicle _patient);
+private _vehicleCondition = !(isNull (objectParent _medic)) && {(objectParent _medic) isEqualTo (objectParent _patient)};
 
 _medic call _fnc_checkItems || {ACEGVAR(medical_treatment,allowSharedEquipment) != 2 && {_patient call _fnc_checkItems}} || {_vehicleCondition && [(vehicle _medic), true] call _fnc_checkItems && (GVAR(allowSharedVehicleEquipment) in [1,3,4] || (GVAR(allowSharedVehicleEquipment) isEqualTo 2 && _patient != _medic))}
