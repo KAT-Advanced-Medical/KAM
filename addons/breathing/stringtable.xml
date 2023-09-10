@@ -706,7 +706,7 @@
         <Key ID="STR_KAT_Breathing_ChestSealApplied">
             <English>Chest Seal Applied</English>
             <Japanese>チェストシール使用済</Japanese>
-            <French> Pansement de joint thoracique appliqué</French>
+            <French>Pansement de joint thoracique appliqué</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount">
             <English>Hemopneumothorax internal bleeding amount</English>
