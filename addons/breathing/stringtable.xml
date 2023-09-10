@@ -372,7 +372,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment">
             <English>Clear Chest Seal after treatment</English>
             <Japanese>チェストシールを治療後に取り除く</Japanese>
-            <French>Retirer le pansement de joint thoracique après traitement</French>
+            <French>Retirer le pansement thoracique après traitement</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
@@ -701,12 +701,12 @@
         <Key ID="STR_KAT_Breathing_DeepPenetratingInjury">
             <English>Deep Penetrating Injury</English>
             <Japanese>深部穿通性損傷</Japanese>
-            <French>Blessure pénétrante profonde</French>
+            <French>Blessure profonde</French>
         </Key>
         <Key ID="STR_KAT_Breathing_ChestSealApplied">
             <English>Chest Seal Applied</English>
             <Japanese>チェストシール使用済</Japanese>
-            <French>Pansement de joint thoracique appliqué</French>
+            <French>Pansement thoracique appliqué</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount">
             <English>Hemopneumothorax internal bleeding amount</English>
@@ -750,7 +750,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if tension pneumothorax and hemopneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x tensionpneumothorax/1x hemopneumothorax)</English>
             <Japanese>気胸の診断を不要にし、常に負傷として医療メニューに(1x 血気胸/1x 緊張性気胸のように)表示する</Japanese>
-            <French>Définit si le pneumothorax sous tension et l'hémopneumothorax doivent toujours être visibles dans le menu médical en tant que blessure au lieu de nécessiter un diagnostic (1x pneumothorax sous tension/1x hémopneumothorax).</French>
+            <French>Définit si le pneumothorax sous tension et l'hémopneumothorax doivent toujours être visibles dans le menu médical en tant que blessure au lieu de nécessiter un diagnostic (1x pneumothorax sous tension/1x hémopneumothorax)</French>
         </Key>
         <Key ID="STR_KAT_Breathing_Stethoscope_display">
             <English>Stethoscope</English>
@@ -1652,7 +1652,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier">
             <English>BVM Oxygen Effectiveness Multiplier</English>
             <Japanese>BVM酸素効果乗数</Japanese>
-            <French>Coefficient d'efficacité de l'oxygène avec avec le BVM</French>
+            <French>Coefficient d'efficacité de l'oxygène avec le BVM</French>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM">
             <English>%1 used %2 (x%3)</English>
@@ -1805,12 +1805,12 @@
         <Key ID="STR_KAT_Breathing_breath_stink">
             <English>, harsh and metallic</English>
             <Japanese>、吸気はきつい金属臭がする</Japanese>
-            <French>, l'hallaine dégage une forte odeur métallique</French>
+            <French>, l'haleine dégage une forte odeur métallique</French>
         </Key>
         <Key ID="STR_KAT_Breathing_breath_mild">
             <English>, slightly fruity</English>
             <Japanese>、吸気はすこし果物臭がする</Japanese>
-            <French>, l'hallaine dégage une odeur légèrement fruitée</French>
+            <French>, l'halaine dégage une odeur légèrement fruitée</French>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isNormal">
             <English>Patient is breathing normally</English>
@@ -1825,7 +1825,7 @@
         <Key ID="STR_KAT_Breathing_breathing_shallow">
             <English>Shallow</English>
             <Japanese>浅い</Japanese>
-            <French>La respiuration est peu profonde</French>
+            <French>La respiration est superficielle</French>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
@@ -1842,7 +1842,7 @@
         <Key ID="STR_KAT_Breathing_CheckBreathing_Log">
             <English>%1 checked breathing: %2</English>
             <Japanese>%1 が呼吸を確認: %2</Japanese>
-            <French>%1 respiration vérifiée : %2</French>
+            <French>%1 a vérifié la respiration: %2</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
             <English>Enable Inspect Chest</English>
@@ -1882,7 +1882,7 @@
         <Key ID="STR_KAT_Breathing_inspectChest_log">
             <English>%1 inspected chest: %2</English>
             <Japanese>%1 が胸部を検査: %2</Japanese>
-            <French>%1 inspecter du thorax %2</French>
+            <French>%1 a inspecté le thorax %2</French>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_normal">
             <English>Chest rise and fall observed</English>
@@ -1892,7 +1892,7 @@
         <Key ID="STR_KAT_Breathing_inspectChest_none">
             <English>No chest movement observed</English>
             <Japanese>胸部の上下運動は見られない</Japanese>
-            <French>Aucun mouverment verticale du thorax</French>
+            <French>Aucun mouvement du thorax observé</French>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_none_log">
             <English>No chest movement</English>
@@ -1902,22 +1902,22 @@
         <Key ID="STR_KAT_Breathing_inspectChest_uneven">
             <English>Chest sides are uneven</English>
             <Japanese>胸部の両脇が不均等</Japanese>
-            <French>Signe de lutte, balancement thoraco abdominal</French>
+            <French>Les côtés du thorax sont inégaux</French>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_uneven_log">
             <English>, chest sides uneven</English>
             <Japanese>、胸部の両脇が不均等</Japanese>
-            <French>Les côtés du thorax sont inégaux</French>
+            <French>, côtés du thorax inégaux</French>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_unevenMovement">
             <English>Uneven chest rise and fall</English>
             <Japanese>胸部の上下運動は不均等</Japanese>
-            <French>, irrégularités des deux côtés du thorax</French>
+            <French>Asymétrie thoracique lors de la respiration</French>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_internalBleeding">
             <English>Skin is rigid, looks bruised</English>
             <Japanese>皮膚は硬く、あざが見える</Japanese>
-            <French>La peau est rigide et présente des signe de marbrure</French>
+            <French>La peau est rigide et présente des signes de marbrure</French>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_simple">
             <English>Symptoms indicate %1</English>
@@ -1932,12 +1932,12 @@
         <Key ID="STR_KAT_Breathing_TensionPneumothorax">
             <English>Tension Pneumothorax</English>
             <Japanese>緊張性気胸(TPTX)</Japanese>
-            <French>Pneumothorax sous tension (TPTX)</French>
+            <French>Pneumothorax sous tension</French>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax">
             <English>Hemopneumothorax</English>
             <Japanese>血気胸(HPTX)</Japanese>
-            <French>Hémopneumothorax (HPTX)</French>
+            <French>Hémopneumothorax</French>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax_short">
             <English>PTX</English>

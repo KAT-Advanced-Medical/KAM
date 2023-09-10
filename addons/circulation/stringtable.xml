@@ -1205,7 +1205,7 @@
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DISARMED">
             <English>DISARMED</English>
             <Japanese>内部放電</Japanese>
-            <French>Désarmé</French>
+            <French>DESARME</French>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DeliveredEnergy">
             <English>Delivered Energy</English>
@@ -1502,27 +1502,27 @@
         <Key ID="STR_KAT_Circulation_Activity_Shock">
             <English>%1 administered shock (%2)</English>
             <Japanese>%1 はショックを実施した (%2)</Japanese>
-            <French>%1 choc administré (%2)</French>
+            <French>%1 a administré un choc (%2)</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
             <Japanese>%1 は除細動器パッドを装着した (%2)</Japanese>
-            <French>%1 des électrodes du défibrillateur connectées (%2)</French>
+            <French>%1 a connecté des électrodes du défibrillateur (%2)</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_RemovePads">
             <English>%1 removed defibrillator pads</English>
             <Japanese>%1 は除細動器パッドを取り外した</Japanese>
-            <French>%1 des électrodes du défibrillateur supprimées</French>
+            <French>%1 a retiré les électrodes du défibrillateur</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_ConnectVitalsMonitor">
             <English>%1 connected vitals monitor</English>
             <Japanese>%1 はバイタルモニターを接続しました</Japanese>
-            <French>%1 des capteurs de signes vitaux connecté</French>
+            <French>%1 a connecté les capteurs de signes vitaux</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_DisconnectVitalsMonitor">
             <English>%1 disconnected vitals monitor</English>
             <Japanese>%1 はバイタルモニターを切断しました</Japanese>
-            <French>%1 des capteurs de signes vitaux déconnecté</French>
+            <French>%1 a déconnecté les capteurs de signes vitaux</French>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_PatientDisconnected">
             <English>Patient Disconnected</English>
@@ -1644,12 +1644,12 @@
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
             <English>Allow AED/X Station Interaction</English>
             <Japanese>設置したAED/Xの許可</Japanese>
-            <French>Autoriser l'interaction avec la AED-X Station</French>
+            <French>Autoriser l'interaction avec la station AED-X</French>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
             <English>Medical level required to pick up/interact with placed AED/X station</English>
             <Japanese>設置されたAED/Xの取得/使用に訓練レベルを必要とさせます。</Japanese>
-            <French>Niveau médical requis pour récupérer/interagir avec la station AED/X placée</French>
+            <French>Niveau médical requis pour récupérer/interagir avec la station AED-X placée</French>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
@@ -1783,7 +1783,7 @@
         <Key ID="STR_KAT_Circulation_Activity_CPR">
             <English>%1 performed CPR (%2)</English>
             <Japanese>%1 はCPRを行いました (%2)</Japanese>
-            <French>%1 d'effectué sur le RCP (%2)</French>
+            <French>%1 a effectué le RCP (%2)</French>
         </Key>
         <Key ID="STR_KAT_Circulation_StopCPR">
             <English>Stop CPR</English>
