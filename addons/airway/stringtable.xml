@@ -85,6 +85,7 @@
         <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod">
             <English>Occlusion Cooldown Period</English>
             <Japanese>異物再発のクールダウン周期</Japanese>
+            <French>Temps de récupération après une occlusion</French>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -448,14 +449,17 @@
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>
             <Japanese>異物除去の開始</Japanese>
+            <French>Début de la rotation de l'axe de la tête</French>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
             <Japanese>異物除去を中止しました</Japanese>
+            <French>Annulation de la rotation de l'axe de la tête</French>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
             <Japanese>異物除去をやめる</Japanese>
+            <French>Arrêt de la rotation de l'axe de la tête</French>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_NA">
             <English>Medical suction not needed</English>
@@ -796,14 +800,17 @@
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval">
             <English>Head Turning Interval</English>
             <Japanese>異物除去の間隔</Japanese>
+            <French>Intervalle de la rotation de la tête</French>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval_DESC">
             <English>Time between head turning attempts</English>
             <Japanese>異物除去を実行する間隔</Japanese>
+            <French>Temps entre chaque tentatives de rotation de la tête</French>
         </Key>
         <Key ID="STR_KAT_Airway_Activity_HeadTurning">
             <English>%1 finished head turning (x%2)</English>
             <Japanese>%1 は異物除去を行った (x%2)</Japanese>
+            <French>%1 terminé sur la rotation de la tête (x%2)</French>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC">
             <English>Time for Accuvac</English>

@@ -1070,31 +1070,37 @@
             <English>Surgery Consciousness Controls</English>
             <Japanese>手術時の意識状態管理</Japanese>
             <Spanish>Controles de conciencia quirúrgica</Spanish>
+            <French>Gestion de la conscience pendant la chirurgie</French>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \nUnconsciousness Required for Surgery: Surgery requires patient to be unconscious. \nNo Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \nSurgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
             <Japanese>意識喪失あり: 手術時に麻酔と鎮静剤を使用しないと、心停止による意識喪失が発生します。 \n無意識状態が必要: 手術するには患者が意識を失っていることが必要になります。 \n意識喪失なし: 手術時に意識喪失や痛みが発生しなくなります。 \n手術麻酔: エトミデートを投与すると、手術中も患者が起きたままになります。</Japanese>
             <Spanish>La cirugía provoca inconsciencia: La cirugía sin anestesia ni sedación provoca inconsciencia por IC. \nInconsciencia necesaria para la cirugía: La cirugía requiere que el paciente esté inconsciente. \nLa cirugía no provoca inconsciencia: La cirugía no induce inconsciencia, causa dolor. \nAnestesia quirúrgica: El paciente permanece despierto durante la cirugía si se le administra etomidato.</Spanish>
+            <French>La chirurgie provoque une perte de conscience : La chirurgie sans anesthésie ni sédation entraîne une perte de conscience due à l'AC. \nInconscience requise pour la chirurgie : la chirurgie nécessite que le patient soit inconscient. \nPas d'inconscience due à la chirurgie : la chirurgie n'induit pas d'inconscience, elle provoque de la douleur. \nAnesthésie chirurgicale : le patient reste éveillé pendant la chirurgie s'il reçoit de l'étomidate.</French>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
             <Japanese>意識喪失あり</Japanese>
             <Spanish>La cirugía causa inconsciencia</Spanish>
+            <French>La chirurgie provoque une perte de conscience</French>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
             <Spanish>Se requiere inconsciencia para la cirugía</Spanish>
             <Japanese>無意識状態が必要</Japanese>
+            <French>Nécessite un état inconscient</French>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
             <Japanese>意識喪失なし</Japanese>
             <Spanish>No se pierde la consciencia por la cirugía</Spanish>
+            <French>Pas d'inconscience due à la chirurgie</French>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
             <Japanese>手術麻酔</Japanese>
             <Spanish>Anestesia quirúrgica</Spanish>
+            <French>Anesthésie chirurgicale</French>
         </Key>
     </Package>
 </Project>
