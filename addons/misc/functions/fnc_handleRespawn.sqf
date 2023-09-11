@@ -58,6 +58,8 @@ _unit setVariable [QEGVAR(breathing,usingStethoscope), nil];
 // KAT Circulation
 
 _unit setVariable ["kat_AEDXPatient_PFH", nil, true];
+_unit setVariable ["kat_AEDXPatient_HR_PFH", nil, true];
+_unit setVariable ["kat_AEDXPatient_PulseOx_PFH", nil, true];
 _unit setVariable [QEGVAR(circulation,Defibrillator_Charged), false, true];
 _unit setVariable [QEGVAR(circulation,DefibrillatorPads_Connected), false, true];
 _unit setVariable [QEGVAR(circulation,AED_X_MedicVitalsMonitor_Connected), false, true];

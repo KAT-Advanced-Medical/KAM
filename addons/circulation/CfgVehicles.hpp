@@ -29,6 +29,11 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_AED,1);
         };
 
+        ACEGVAR(dragging,canDrag) = 1;
+        ACEGVAR(dragging,canCarry) = 1;
+        ACEGVAR(dragging,dragPosition)[] = {0,1.1,1};
+        ACEGVAR(dragging,carryPosition)[] = {0,1.1,1};
+
         class ACE_Actions {
             class ACE_MainActions {
                 selection = "interaction_point";
@@ -251,7 +256,7 @@ class CfgVehicles {
                 };
                 class KAT_placeAED {
                     displayName = CSTRING(place_AED);
-                    condition = QUOTE('kat_AED' in (items _player));
+                    condition = QUOTE('kat_AED' in (items _player) && !((_player getVariable [ARR_2(QQGVAR(MedicDefibrillator_Patient), objNull)]) getVariable [ARR_2(QQGVAR(DefibrillatorInUse), false)]));
                     exceptions[] =
                     {
                         "notOnMap",
@@ -267,7 +272,7 @@ class CfgVehicles {
                 };
                 class KAT_placeAEDX : placeAED {
                     displayName = CSTRING(place_AEDX);
-                    condition = QUOTE('kat_X_AED' in (items _player));
+                    condition = QUOTE('kat_X_AED' in (items _player) && !((_player getVariable [ARR_2(QQGVAR(MedicDefibrillator_Patient), objNull)]) getVariable [ARR_2(QQGVAR(DefibrillatorInUse), false)]));
                     statement = QUOTE([ARR_2(_player,'kat_X_AED')] call FUNC(placeAED));
                     icon = QPATHTOF(ui\icon_aedx.paa);
                 };

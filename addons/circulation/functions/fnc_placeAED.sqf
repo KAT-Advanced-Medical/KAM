@@ -20,33 +20,18 @@ params ["_unit", "_AEDClassName"];
 
 _unit removeItem _AEDClassName;
 
-private _AED = ([_AEDClassName,"Item"] joinString "") createVehicle (position _unit);
+private _AED = ([_AEDClassName,"Item"] joinString "") createVehicle (getPosASL _unit);
 
-[_AED, true] call ACEFUNC(dragging,setDraggable);
-[_AED, true] call ACEFUNC(dragging,setCarryable);
-
-[_unit, _AED] call ACEFUNC(dragging,carryObject);
+// startCarry
+if (stance _unit != "STAND") then {
+    _AED attachTo [_unit, [0,1.1,1]];
+    [_unit, _AED] call ACEFUNC(dragging,dropObject_carry);
+} else {
+    _unit setVariable [QACEGVAR(dragging,isCarrying), true, true];
+    [ACEFUNC(dragging,startCarryPFH), 0.2, [_unit, _AED, (CBA_missionTime + 1)]] call CBA_fnc_addPerFrameHandler;
+};
 
 private _pickUpText = LLSTRING(PickUpAED);
-
-if (_AEDClassName == "kat_X_AED") then {
-    _AED setVariable [QGVAR(AED_X_VitalsMonitor_Volume), _unit getVariable [QGVAR(AED_X_VitalsMonitor_Volume), false], true];
-    _pickUpText = LLSTRING(PickUpAEDX);
-
-    private _patient = _unit getVariable [QGVAR(AED_X_MedicVitalsMonitor_Patient), objNull];
-
-    if !(_patient isEqualTo objNull) then {
-        private _monitorBodyPart = ALL_BODY_PARTS select ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
-
-        [_unit, _patient, true] call FUNC(AEDX_DisconnectVitalsMonitor);
-
-        [{
-            params ["_unit", "_patient", "_AEDClassName", "_AED", "_monitorBodyPart"];
-
-            [_unit, _patient, _monitorBodyPart, 1, [_AED], true] call FUNC(AEDX_ConnectVitalsMonitor);
-        }, [_unit, _patient, _AEDClassName, _AED, _monitorBodyPart], 0.1] call CBA_fnc_waitAndExecute; 
-    };
-};
 
 private _patient = _unit getVariable [QGVAR(MedicDefibrillator_Patient), objNull];
 
@@ -59,6 +44,32 @@ if !(_patient isEqualTo objNull) then {
         [_unit, _patient, 1, _AEDClassName, [_AED], true] call FUNC(Defibrillator_AttachPads);
     }, [_unit, _patient, _AEDClassName, _AED], 0.1] call CBA_fnc_waitAndExecute; 
 };
+
+if (_AEDClassName == "kat_X_AED") then {
+    _pickUpText = LLSTRING(PickUpAEDX);
+
+    private _monitorPatient = _unit getVariable [QGVAR(AED_X_MedicVitalsMonitor_Patient), objNull];
+
+    if !(_monitorPatient isEqualTo objNull) then {
+        private _monitorBodyPart = ALL_BODY_PARTS select ((_monitorPatient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
+
+        [_unit, _monitorPatient, true] call FUNC(AEDX_DisconnectVitalsMonitor);
+        _AED setVariable [QGVAR(AED_X_VitalsMonitor_Volume), (_monitorPatient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false]), true];
+        
+        [{
+            params ["_unit", "_monitorPatient", "_AEDClassName", "_AED", "_monitorBodyPart"];
+            
+            [_unit, _monitorPatient, _monitorBodyPart, 1, [_AED], true] call FUNC(AEDX_ConnectVitalsMonitor);
+        }, [_unit, _monitorPatient, _AEDClassName, _AED, _monitorBodyPart], 0.15] call CBA_fnc_waitAndExecute; 
+    } else {
+        if !(_patient isEqualTo objNull) then {
+            _AED setVariable [QGVAR(AED_X_VitalsMonitor_Volume), (_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false]), true];
+        } else {
+            _AED setVariable [QGVAR(AED_X_VitalsMonitor_Volume), (_unit getVariable [QGVAR(AED_X_VitalsMonitor_Volume), false]), true];
+        };
+    };
+};
+
 private _action = ["AED_pickupAction",
 _pickUpText,
 "",
@@ -96,7 +107,7 @@ _pickUpText,
                 params ["_medic", "_patientMonitor", "_monitorBodyPart"];
 
                 [_medic, _patientMonitor, _monitorBodyPart, 0, [], true] call FUNC(AEDX_ConnectVitalsMonitor);
-            }, [_medic, _patientMonitor, _monitorBodyPart], 0.1] call CBA_fnc_waitAndExecute;  
+            }, [_medic, _patientMonitor, _monitorBodyPart], 0.15] call CBA_fnc_waitAndExecute;  
         };
     };
 
@@ -111,7 +122,8 @@ _pickUpText,
 },
 {
     params ["_AED", "_unit"];
-    [_unit, GVAR(medLvl_AED_Station_Interact)] call ACEFUNC(medical_treatment,isMedic)
+    
+    [_unit, GVAR(medLvl_AED_Station_Interact)] call ACEFUNC(medical_treatment,isMedic) && !((_AED getVariable [QGVAR(Defibrillator_Patient), objNull]) getVariable [QGVAR(DefibrillatorInUse), false]);
 },
 {},
 [_AEDClassName]

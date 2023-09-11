@@ -44,7 +44,7 @@ if (_ph < 750) then {
 _output = format ["%1%2", _breathing ,_breath];
 _output_log = format ["%1%2", _breathing_log, _breath];
 
-if (_hr == 0 || !(alive _patient) || _patient getVariable [QEGVAR(airway,obstruction), false] || _patient getVariable [QEGVAR(airway,occluded), false] || _patient getVariable [QGVAR(hemopneumothorax), false] || _patient getVariable [QGVAR(tensionpneumothorax), false]) then {
+if (_hr == 0 || !(alive _patient) || (_patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false])) || _patient getVariable [QEGVAR(airway,occluded), false] || _patient getVariable [QGVAR(hemopneumothorax), false] || _patient getVariable [QGVAR(tensionpneumothorax), false]) then {
     _output = LLSTRING(breathing_none);
     _output_log = ACELSTRING(medical_treatment,Check_Pulse_None);
 };
