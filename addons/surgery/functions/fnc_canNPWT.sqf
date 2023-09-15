@@ -19,11 +19,4 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-private _isBleeding = false;
-{
-    _x params ["", "_amountOf", "_bleedingRate"];
-    _isBleeding = _amountOf > 0 && {_bleedingRate > 0};
-    if (_isBleeding) then {break};
-} forEach (GET_OPEN_WOUNDS(_patient) get _bodyPart);
-
-(!_isBleeding && {(GET_DEBRIDED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo []} || {(GET_STITCHED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo []}) // return
+((GET_DEBRIDED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo []) // return

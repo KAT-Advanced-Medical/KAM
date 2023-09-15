@@ -22,10 +22,8 @@ _bodyPart = toLower _bodyPart;
 
 private _debridedWounds = GET_DEBRIDED_WOUNDS(_patient);
 private _debridedWoundsOnPart = _debridedWounds get _bodyPart;
-private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
-private _stitchedWoundsOnPart = _stitchedWounds get _bodyPart;
 
-if (_debridedWoundsOnPart isEqualTo [] && _stitchedWoundsOnPart isEqualTo []) exitWith {false};
+if (_debridedWoundsOnPart isEqualTo []) exitWith {false};
 
 if (_totalTime - _elapsedTime > ([_patient, _patient, _bodyPart] call FUNC(getNPWTTime)) - GVAR(npwtTime)) exitWith {true};
 
@@ -33,13 +31,10 @@ if (_totalTime - _elapsedTime > ([_patient, _patient, _bodyPart] call FUNC(getNP
 private _clearedWoundFromDebridement = _debridedWoundsOnPart deleteAt (count _debridedWoundsOnPart - 1);
 _clearedWoundFromDebridement params ["", "", "", "_clearedDebrideDamage"];
 _debridedOnPart deleteAt _clearedWoundFromDebridement;
-private _clearedWoundFromStitching = _stitchedWoundsOnPart deleteAt (count _stitchedWoundsOnPart - 1);
-_clearedWoundFromStitching params ["", "", "", "_clearedStitchDamage"];
-_stitchedOnPart deleteAt _clearedWoundFromStitching;
 
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
 private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
-_bodyPartDamage set [_partIndex, (_bodyPartDamage select _partIndex) - (_clearedDebrideDamage + _clearedStitchDamage)];
+_bodyPartDamage set [_partIndex, (_bodyPartDamage select _partIndex) - _clearedDebrideDamage];
 _patient setVariable [QACEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
 
 switch (_bodyPart) do {

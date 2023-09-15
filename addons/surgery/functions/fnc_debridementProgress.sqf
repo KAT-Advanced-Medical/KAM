@@ -50,7 +50,7 @@ if (_woundIndex == -1) then {
     _wound set [1, (_wound select 1) + _debridedAmountOf];
 };
 
-_patient setVariable [QACEGVAR(medical,openWounds), _openWounds, true];
+_patient setVariable [VAR_OPEN_WOUNDS, _openWounds, true];
 _patient setVariable [VAR_DEBRIDED_WOUNDS, _debridementWounds, true];
 
 [_patient] call ACEFUNC(medical_status,updateWoundBloodLoss);

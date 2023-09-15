@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: 1LT.Mazinski.H
+ * Author: MiszczuZPolski
  * Checks if debridement can be performed
  *
  * Arguments:
@@ -19,4 +19,4 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-(GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo []
+((GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo [])
