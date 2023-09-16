@@ -23,7 +23,7 @@ params ["_unit", "_active", ["_initial",true]];
 0 normal
 1 asystole, no pulse, no shock
 2 pulseless electrical activity, AEDX fake pulse, no shock
-3 ventricular fibrillation, no pulse, shock
+3 ventricular fibrillation, fast pulse, shock
 4 ventricular tachycardia, fast pulse, shock
 */
 
