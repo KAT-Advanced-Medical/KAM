@@ -919,66 +919,6 @@
             <Spanish>Deshabilitado en predeterminado. Si se habilita, las unidades con hemotórax/neumotórax a tensión tambien tendran la herida neumotórax mostrada en el menú médico.</Spanish>
             <Portuguese>O padrão é desabilitado. Se ativado, as unidades com pneumotórax hipertensivo ou hemopneumotórax também exibirão lesões por pneumotórax no menu médico.</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Breathing_CheckCyanosis_Name">
-            <English>Check Cyanosis</English>
-            <German>Zyanose überprüfen</German>
-            <Polish>Sprawdź sinicę</Polish>
-            <Russian>Проверить цианоз</Russian>
-            <Japanese>チアノーゼを確認する</Japanese>
-            <Chinesesimp>检查面色</Chinesesimp>
-            <Korean>치아노제 확인</Korean>
-            <French>Contrôler la cyanose</French>
-            <Turkish>Siyanozu kontrol et</Turkish>
-            <Italian>Controlla la cianosi</Italian>
-            <Czech>Zkontrolovat cyanózu</Czech>
-            <Spanish>Diagnosticar Cianosis</Spanish>
-            <Portuguese>Verificar Cianose</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Breathing_CheckCyanosis_Progress">
-            <English>Checking Cyanosis</English>
-            <German>Zyanose prüfen</German>
-            <Polish>Sprawdzanie sinicy</Polish>
-            <Russian>Проверка цианоза</Russian>
-            <Japanese>チアノーゼを確認中</Japanese>
-            <Chinesesimp>检查面色中...</Chinesesimp>
-            <Korean>치아노제 확인 중</Korean>
-            <French>Controle de la cyanose</French>
-            <Turkish>Siyanoz kontrol ediliyor</Turkish>
-            <Italian>Controllando la cianosi</Italian>
-            <Czech>Kontroluji cyanózu</Czech>
-            <Spanish>Buscando signos de Cianosis</Spanish>
-            <Portuguese>Verificando Cianose</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Breathing_CheckCyanosis_Log">
-            <English>Cyanosis Status: %1</English>
-            <German>Status der Zyanose: %1</German>
-            <Polish>Status sinicy: %1</Polish>
-            <Russian>Статус цианоза: %1</Russian>
-            <Japanese>チアノーゼ症状: %1</Japanese>
-            <Chinesesimp>面色 %1</Chinesesimp>
-            <Korean>치아노제 상태: %1</Korean>
-            <French>Statut de la cysnose: %1</French>
-            <Turkish>Siyanoz durumu: %1</Turkish>
-            <Italian>Status della cianosi %1.</Italian>
-            <Czech>Status cyanózy: %1</Czech>
-            <Spanish>Estado de Cianosis: %1</Spanish>
-            <Portuguese>Estado de Cianose: %1</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Breathing_CyanosisStatus_N">
-            <English>No Cyanosis</English>
-            <German>Keine Zyanose</German>
-            <Polish>Brak sinicy</Polish>
-            <Russian>Нет цианоза</Russian>
-            <Japanese>チアノーゼ症状なし</Japanese>
-            <Chinesesimp>红润</Chinesesimp>
-            <Korean>치아노제 없음</Korean>
-            <French>Aucune cyanose</French>
-            <Turkish>Siyanoz yok</Turkish>
-            <Italian>Nessuna traccia di cianosi</Italian>
-            <Czech>Žádná cyanóza</Czech>
-            <Spanish>No hay Cianosis</Spanish>
-            <Portuguese>Sem Cianose</Portuguese>
-        </Key>
         <Key ID="STR_KAT_Breathing_CyanosisStatus_Slight">
             <English>Slight Cyanosis</English>
             <German>Leichte Zyanose</German>
@@ -1024,59 +964,11 @@
             <Spanish>Cianosis severa</Spanish>
             <Portuguese>Cianose severa</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_Cyanosis">
-            <English>Enable cyanosis diagnose</English>
-            <German>Zyanose-Diagnose aktivieren</German>
-            <Polish>Włącz diagnozę sinicy</Polish>
-            <Russian>Включить диагностику цианоза</Russian>
-            <Japanese>チアノーゼ診断を有効化</Japanese>
-            <Chinesesimp>启用检查面色</Chinesesimp>
-            <Korean>치아노제 진단 사용</Korean>
-            <French>Autoriser le diagnostique de la cyanose</French>
-            <Turkish>Siyanoz tanısını etkinleştir</Turkish>
-            <Italian>Abilita la diagnosi della cianosi</Italian>
-            <Czech>Povolit diagnózu cyanózy</Czech>
-            <Spanish>Permitir el diagnóstico de cianosis</Spanish>
-            <Portuguese>Ativar diagnóstico de cianose</Portuguese>
+        <Key ID="STR_KAT_Breathing_SETTING_showCyanosis">
+            <English>Show cyanosis</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_Cyanosis_DESC">
-            <English>Enables cyanosis diagnose</English>
-            <German>Aktiviert die Zyanose-Diagnose</German>
-            <Polish>Włącza diagnozę sinicy</Polish>
-            <Russian>Позволяет диагностировать цианоз</Russian>
-            <Japanese>チアノーゼ診断を可能にします</Japanese>
-            <Chinesesimp>启用检查面色</Chinesesimp>
-            <Korean>치아노제(청색증)의 진단을 사용합니다</Korean>
-            <French>Autorise le diagnostique de la cyanose</French>
-            <Turkish>Siyanoz teşhisini etkinleştirir</Turkish>
-            <Italian>Abilita la diagnosi della cianosi</Italian>
-            <Czech>Povolí diagnózu cyanózy</Czech>
-            <Spanish>Permitir el diagnóstico de cianosis</Spanish>
-            <Portuguese>Permite o diagnóstico de cianose</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_Cyanosis_ShowInMenu">
-            <English>Show cyanosis in overview tab</English>
-            <Japanese>オーバービューにチアノーゼの症状を表示</Japanese>
-            <Korean>개요 탭에 치아노제 표시</Korean>
-            <Spanish>Mostrar la cianosis en la vista general</Spanish>
-            <Italian>Mostra la cianosi nella tabella di overview</Italian>
-            <Portuguese>Mostrar cianose na guia de visão geral</Portuguese>
-            <French>Afficher la cyanose dans la vue d'ensemble</French>
-            <Polish>Pokaż sinicę w opisie</Polish>
-            <German>Zeigt Zyanose in der Verletzungsliste an</German>
-            <Czech>Zobrazit cyanózu v tabulce přehledu</Czech>
-        </Key>
-        <Key ID="STR_KAT_Breathing_SETTING_Cyanosis_ShowInMenu_DESC">
-            <English>Shows cyanosis of patient in overview tab and hides cyanosis diagnose action</English>
-            <Spanish>Muestra la cianosis en la pestaña de descripción del menú medico y oculta la acción de diagnostico de cianosis</Spanish>
-            <Japanese>オーバービューに患者のチアノーゼの症状を表示し、チアノーゼ診断アクションを非表示にします</Japanese>
-            <Korean>개요 탭에 환자의 치아노제를 표시하고 치아노제 진단 행동을 숨깁니다.</Korean>
-            <Italian>Mostra la cianosi del paziente nella tabella overview e nascondi l'azione di diagnosi della cianosi</Italian>
-            <Portuguese>Mostra a cianose do paciente na guia de visão geral e oculta a ação de diagnóstico de cianose</Portuguese>
-            <French>Affiche la cyanose dans la vue d'ensemble du patient et cache l'action de contrôle de la cyanose</French>
-            <Polish>Pokazuje sinicę w opisie pacjenta oraz ukrywa akcję sprawdzenia sinicy</Polish>
-            <German>Zeigt Zyanose in der Verletzungsliste an (oben rechts), deaktiviert die Zyanose-Diagnose Aktion </German>
-            <Czech>Zobrazí cyanózu v tabulce přehledu pacienta a skryje možnost diagnostikování cyanózy jako akce</Czech>
+        <Key ID="STR_KAT_Breathing_SETTING_showCyanosis_DESC">
+            <English>Shows cyanosis of patient in overview tab</English>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>

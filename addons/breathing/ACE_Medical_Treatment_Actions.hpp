@@ -194,16 +194,6 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
     };
-    class CheckCyanosis: CheckPulse {
-        displayName = CSTRING(CheckCyanosis_Name);
-        displayNameProgress = CSTRING(CheckCyanosis_Progress);
-        treatmentTime = 3;
-        allowedSelections[] = {"Head", "LeftArm", "RightArm"};
-        allowSelfTreatment = 1;
-        medicRequired = QGVAR(medLvl_Cyanosis);
-        condition = QUOTE(GVAR(enableCyanosis) && !(GVAR(cyanosisShowInMenu)));
-        callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);
-    };
     class DisablePulseOximeterAudio {
         displayName = CSTRING(PulseOximeter_Action_removeSound);
         displayNameProgress = "";
