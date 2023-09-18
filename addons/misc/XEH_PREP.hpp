@@ -36,6 +36,7 @@ PREP(slingArmband);
 PREP(stopCarryingPrompt);
 PREP(stretcher);
 PREP(stringToArray);
+PREP(switchMagItems);
 PREP(treatment);
 PREP(treatmentIV);
 PREP(treatmentSuccess);

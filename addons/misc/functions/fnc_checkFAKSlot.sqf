@@ -7,6 +7,7 @@
  * 0: Player <OBJECT>
  * 1: String
  * 2: Number
+ * 3: Number (optional) (ammo count, to skip checking the whole inventory)
  *
  * Return Value:
  * <BOOLEAN>
@@ -17,23 +18,35 @@
  * Public: No
  */
 
-params ["_unit", "_mag", "_slot"];
+params ["_unit", "_mag", "_slot", "_ammoToCheck"];
 
 private _hasTrueValue = [];
 private _return = false;
+
 private _itemType = _mag call BIS_fnc_itemType;
 _itemType = _itemType select 0;
 
 if (_itemType == "Item") exitWith { 
-    if (_mag == "kat_IFAK" || _mag == "kat_AFAK" || _mag == "kat_MFAK") then {
-        _return = true;
-        _return
-    }; 
+    if (_mag == "kat_IFAK") exitWith {
+        [_unit, "kat_IFAK"] call ACEFUNC(common,hasItem);
+    };
+    if (_mag == "kat_AFAK") exitWith {
+        [_unit, "kat_AFAK"] call ACEFUNC(common,hasItem);
+    };
+    if (_mag == "kat_MFAK") exitWith {
+        [_unit, "kat_MFAK"] call ACEFUNC(common,hasItem);
+    };
+    _return
 };
 
 if (_itemType != "Magazine") exitWith {	_return };
 
 private _ammoCount = [_unit, _mag] call FUNC(getMagazineAmmoCounts);
+
+if (_ammoToCheck isNotEqualTo "") then {
+    _ammoCount = [];
+    _ammoCount pushBack _ammoToCheck;
+};
 
 {
     switch (_slot) do {

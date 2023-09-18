@@ -56,5 +56,6 @@ workshop = [
     "1352873741"
 ]
 parameters = [
-    '"C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia\mpmissions\mission.Stratis\mission.sqm"'
+    '"C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia\mpmissions\mission.Stratis\mission.sqm"',
+    '"-profiles=C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia"'
 ]

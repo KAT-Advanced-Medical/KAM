@@ -17,8 +17,11 @@
 #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 #include "\x\kat\addons\main\script_macros.hpp"
 
-// -- IFAK STUFF --
-//1 Slot left
+// -- FAK STUFF --
+//0 Slots left
+#define Slot_empty 0
+
+//1 Slots left
 #define SlotsLeft_1D_Min 1
     #define Slot_1 1
     #define Slot_2 2
