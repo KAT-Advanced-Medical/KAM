@@ -169,7 +169,7 @@ if (_target getVariable [QEGVAR(airway,recovery), false]) then {
 };
 
 // Display cyanosis in overview tab, only when head/arms are selected
-if (EGVAR(breathing,cyanosisShowInMenu) && (_selectionN in [0,2,3])) then {
+if (EGVAR(breathing,showCyanosis) && (_selectionN in [0,2,3])) then {
     private _spO2 = 0;
 
     if (alive _target) then {

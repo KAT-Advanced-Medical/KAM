@@ -319,35 +319,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Enables cyanosis diagnose
+// Shows cyanosis in medical menu
 [
-    QGVAR(enableCyanosis),
+    QGVAR(showCyanosis),
     "CHECKBOX",
-    [LLSTRING(SETTING_Cyanosis), LLSTRING(SETTING_Cyanosis_DESC)],
+    [LLSTRING(SETTING_showCyanosis), LLSTRING(SETTING_showCyanosis_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Cyanosis)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
-
-//Enables displaying cyanosis in overview tab and hides cyanosis diagnose action
-[
-    QGVAR(cyanosisShowInMenu),
-    "CHECKBOX",
-    [LLSTRING(SETTING_Cyanosis_ShowInMenu), LLSTRING(SETTING_Cyanosis_ShowInMenu_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Cyanosis)],
-    [false],
-    true
-] call CBA_Settings_fnc_init;
-
-//Settable list for checking Cyanosis per medical class
-[
-    QGVAR(medLvl_Cyanosis),
-    "LIST",
-    [LLSTRING(CYANOSIS_TREATMENT_LEVEL), LLSTRING(CYANOSIS_TREATMENT_LEVEL_DESCRIPTION)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Cyanosis)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
-    true
-] call CBA_settings_fnc_init;
 
 //Slight level for cyanosis
 [
