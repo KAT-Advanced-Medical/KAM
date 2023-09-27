@@ -6334,29 +6334,39 @@ switch (_slotsToGive) do {
     case 8: { 
 
         // 1 Slot left
-        if (_ammoCount >= SlotsLeft_1D_Min && _ammoCount <= SlotsLeft_1D_Max) exitWith { 
+        if (_ammoCount >= SlotsLeft_1D_Min && _ammoCount <= SlotsLeft_2D_2Max) exitWith { 
             switch (_ammoCount) do {
-                case Slot_8: {  };
-            };
-        };
-
-        // 2 Slots left
-        if (_ammoCount >= SlotsLeft_2D_Min && _ammoCount <= SlotsLeft_2D_Max) exitWith { 
-
-            if (_ammoCount >= SlotsLeft_2D_1Min && _ammoCount <= SlotsLeft_2D_1Max) exitWith {
-                switch (_ammoCount) do {
-                    case Slot_1_8: {  };
-                    case Slot_2_8: {  };
+                case Slot_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_empty] call FUNC(switchMagItems);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
                 };
-            };
-
-            if (_ammoCount >= SlotsLeft_2D_2Min && _ammoCount <= SlotsLeft_2D_2Max) exitWith {
-                switch (_ammoCount) do {
-                    case Slot_3_8: {  };
-                    case Slot_4_8: {  };
-                    case Slot_5_8: {  };
-                    case Slot_6_8: {  };
-                    case Slot_7_8: {  };
+                case Slot_1_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1] call FUNC(switchMagItems);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_2_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_2] call FUNC(switchMagItems);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_3_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_3] call FUNC(switchMagItems);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_4_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_4] call FUNC(switchMagItems);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_5_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_5] call FUNC(switchMagItems);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_6_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_6] call FUNC(switchMagItems);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_7_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_7] call FUNC(switchMagItems);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
                 };
             };
         };
@@ -6366,37 +6376,100 @@ switch (_slotsToGive) do {
 
             if (_ammoCount >= SlotsLeft_3D_1Min && _ammoCount <= SlotsLeft_3D_1Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_1_2_8: {  };
-                    case Slot_1_3_8: {  };
-                    case Slot_1_4_8: {  };
-                    case Slot_1_5_8: {  };
-                    case Slot_1_6_8: {  };
-                    case Slot_1_7_8: {  };
+                    case Slot_1_2_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_4_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_4] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
 
             if (_ammoCount >= SlotsLeft_3D_2Min && _ammoCount <= SlotsLeft_3D_2Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_2_3_8: {  };
-                    case Slot_2_4_8: {  };
-                    case Slot_2_5_8: {  };
-                    case Slot_2_6_8: {  };
-                    case Slot_2_7_8: {  };
-                    case Slot_3_4_8: {  };
+                    case Slot_2_3_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_4_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_4] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_4_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_4] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
 
             if (_ammoCount >= SlotsLeft_3D_3Min && _ammoCount <= SlotsLeft_3D_3Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_3_5_8: {  };
-                    case Slot_3_6_8: {  };
-                    case Slot_3_7_8: {  };
-                    case Slot_4_5_8: {  };
-                    case Slot_4_6_8: {  };
-                    case Slot_4_7_8: {  };
-                    case Slot_5_6_8: {  };
-                    case Slot_5_7_8: {  };
-                    case Slot_6_7_8: {  };
+                    case Slot_3_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_4_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_4_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_4_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_4_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_4_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_4_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
         };
@@ -6406,56 +6479,161 @@ switch (_slotsToGive) do {
 
             if (_ammoCount >= SlotsLeft_4D_1Min && _ammoCount <= SlotsLeft_4D_1Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_1_2_3_8: {  };
-                    case Slot_1_2_4_8: {  };
-                    case Slot_1_2_5_8: {  };
-                    case Slot_1_2_6_8: {  };
-                    case Slot_1_2_7_8: {  };
-                    case Slot_1_3_4_8: {  };
+                    case Slot_1_2_3_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_4_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_4] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_4_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_4] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
 
             if (_ammoCount >= SlotsLeft_4D_2Min && _ammoCount <= SlotsLeft_4D_2Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_1_3_5_8: {  };
-                    case Slot_1_3_6_8: {  };
-                    case Slot_1_3_7_8: {  };
-                    case Slot_1_4_5_8: {  };
-                    case Slot_1_4_6_8: {  };
-                    case Slot_1_4_7_8: {  };
-                    case Slot_1_5_6_8: {  };
-                    case Slot_1_5_7_8: {  };
-                    case Slot_1_6_7_8: {  };
-                    case Slot_2_3_4_8: {  };
-                    case Slot_2_3_5_8: {  };
+                    case Slot_1_3_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_4_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_4_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_4_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_4_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_4_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_4_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_3_4_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_3_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
 
             if (_ammoCount >= SlotsLeft_4D_3Min && _ammoCount <= SlotsLeft_4D_3Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_2_3_6_8: {  };
-                    case Slot_2_3_7_8: {  };
-                    case Slot_2_4_5_8: {  };
-                    case Slot_2_4_6_8: {  };
-                    case Slot_2_4_7_8: {  };
-                    case Slot_2_5_6_8: {  };
-                    case Slot_2_5_7_8: {  };
-                    case Slot_2_6_7_8: {  };
-                    case Slot_3_4_5_8: {  };
-                    case Slot_3_4_6_8: {  };
-                    case Slot_3_4_7_8: {  };
-                    case Slot_3_5_6_8: {  };
+                    case Slot_2_3_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_3_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_4_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_4_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_4_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_4_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_4_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_4_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_4_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_4_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_4_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_4_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_4_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_4_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
 
             if (_ammoCount >= SlotsLeft_4D_4Min && _ammoCount <= SlotsLeft_4D_4Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_3_5_7_8: {  };
-                    case Slot_3_6_7_8: {  };
-                    case Slot_4_5_6_8: {  };
-                    case Slot_4_5_7_8: {  };
-                    case Slot_4_6_7_8: {  };
-                    case Slot_5_6_7_8: {  };
+                    case Slot_3_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_4_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_4_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_4_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_4_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_4_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_4_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_5_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
         };
@@ -6465,51 +6643,156 @@ switch (_slotsToGive) do {
 
             if (_ammoCount >= SlotsLeft_5D_1Min && _ammoCount <= SlotsLeft_5D_1Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_1_2_3_4_8: {  };
-                    case Slot_1_2_3_5_8: {  };
-                    case Slot_1_2_3_6_8: {  };
-                    case Slot_1_2_3_7_8: {  };
-                    case Slot_1_2_4_5_8: {  };
-                    case Slot_1_2_4_6_8: {  };
-                    case Slot_1_2_4_7_8: {  };
-                    case Slot_1_2_5_6_8: {  };
-                    case Slot_1_2_5_7_8: {  };
-                    case Slot_1_2_6_7_8: {  };
+                    case Slot_1_2_3_4_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_3_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_3_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_3_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_4_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_4_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_4_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_4_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_4_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_4_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
 
             if (_ammoCount >= SlotsLeft_5D_2Min && _ammoCount <= SlotsLeft_5D_2Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_1_3_4_5_8: {  };
-                    case Slot_1_3_4_6_8: {  };
-                    case Slot_1_3_4_7_8: {  };
-                    case Slot_1_3_5_6_8: {  };
-                    case Slot_1_3_5_7_8: {  };
-                    case Slot_1_3_6_7_8: {  };
-                    case Slot_1_4_5_6_8: {  };
-                    case Slot_1_4_5_7_8: {  };
-                    case Slot_1_4_6_7_8: {  };
-                    case Slot_1_5_6_7_8: {  };
-                    case Slot_2_3_4_5_8: {  };
-                    case Slot_2_3_4_6_8: {  };
-                    case Slot_2_3_4_7_8: {  };
+                    case Slot_1_3_4_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_4_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_4_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_4_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_4_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_4_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_4_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_4_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_4_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_4_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_4_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_4_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_5_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_3_4_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_3_4_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_3_4_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
 
             if (_ammoCount >= SlotsLeft_5D_3Min && _ammoCount <= SlotsLeft_5D_3Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_2_3_5_6_8: {  };
-                    case Slot_2_3_5_7_8: {  };
-                    case Slot_2_3_6_7_8: {  };
-                    case Slot_2_4_5_6_8: {  };
-                    case Slot_2_4_5_7_8: {  };
-                    case Slot_2_4_6_7_8: {  };
-                    case Slot_2_5_6_7_8: {  };
-                    case Slot_3_4_5_6_8: {  };
-                    case Slot_3_4_5_7_8: {  };
-                    case Slot_3_4_6_7_8: {  };
-                    case Slot_3_5_6_7_8: {  };
-                    case Slot_4_5_6_7_8: {  };
+                    case Slot_2_3_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_3_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_3_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_4_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_4_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_4_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_4_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_4_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_4_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_5_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_4_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_4_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_4_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_4_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_4_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_4_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_5_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_4_5_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_4_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
         };
@@ -6519,37 +6802,100 @@ switch (_slotsToGive) do {
 
             if (_ammoCount >= SlotsLeft_6D_1Min && _ammoCount <= SlotsLeft_6D_1Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_1_2_3_4_5_8: {  };
-                    case Slot_1_2_3_4_6_8: {  };
-                    case Slot_1_2_3_4_7_8: {  };
-                    case Slot_1_2_3_5_6_8: {  };
-                    case Slot_1_2_3_5_7_8: {  };
-                    case Slot_1_2_3_6_7_8: {  };
-                    case Slot_1_2_4_5_6_8: {  };
+                    case Slot_1_2_3_4_5_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_5] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_3_4_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_3_4_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_3_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_3_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_3_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_4_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_4_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
 
             if (_ammoCount >= SlotsLeft_6D_2Min && _ammoCount <= SlotsLeft_6D_2Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_1_2_4_5_7_8: {  };
-                    case Slot_1_2_4_6_7_8: {  };
-                    case Slot_1_2_5_6_7_8: {  };
-                    case Slot_1_3_4_5_6_8: {  };
-                    case Slot_1_3_4_5_7_8: {  };
-                    case Slot_1_3_4_6_7_8: {  };
-                    case Slot_1_3_5_6_7_8: {  };
-                    case Slot_1_4_5_6_7_8: {  };
+                    case Slot_1_2_4_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_4_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_4_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_4_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_2_5_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_4_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_4_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_4_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_4_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_4_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_4_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_3_5_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_1_4_5_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_1_4_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
 
             if (_ammoCount >= SlotsLeft_6D_3Min && _ammoCount <= SlotsLeft_6D_3Max) exitWith {
                 switch (_ammoCount) do {
-                    case Slot_2_3_4_5_6_8: {  };
-                    case Slot_2_3_4_5_7_8: {  };
-                    case Slot_2_3_4_6_7_8: {  };
-                    case Slot_2_3_5_6_7_8: {  };
-                    case Slot_2_4_5_6_7_8: {  };
-                    case Slot_3_4_5_6_7_8: {  };
+                    case Slot_2_3_4_5_6_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_3_4_5_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_3_4_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_3_5_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_2_4_5_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_2_4_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
+                    case Slot_3_4_5_6_7_8: { 
+                        [_unit, _mag, _removeContainer, _ammoCount, Slot_3_4_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    };
                 };
             };
         };
@@ -6558,13 +6904,34 @@ switch (_slotsToGive) do {
         if (_ammoCount >= SlotsLeft_7D_Min && _ammoCount <= SlotsLeft_7D_Max) exitWith { 
 
             switch (_ammoCount) do {
-                case Slot_1_2_3_4_5_6_8: {  };
-                case Slot_1_2_3_4_5_7_8: {  };
-                case Slot_1_2_3_4_6_7_8: {  };
-                case Slot_1_2_3_5_6_7_8: {  };
-                case Slot_1_2_4_5_6_7_8: {  };
-                case Slot_1_3_4_5_6_7_8: {  };
-                case Slot_2_3_4_5_6_7_8: {  };
+                case Slot_1_2_3_4_5_6_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_5_6] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_1_2_3_4_5_7_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_5_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_1_2_3_4_6_7_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_1_2_3_5_6_7_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_1_2_4_5_6_7_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_4_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_1_3_4_5_6_7_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_4_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_2_3_4_5_6_7_8: { 
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_5_6_7] call FUNC(switchMagItems);
+                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
             };
         };
     };
