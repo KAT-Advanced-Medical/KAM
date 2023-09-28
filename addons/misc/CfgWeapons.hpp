@@ -54,6 +54,7 @@ class CfgWeapons
         scope = 2;
         editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa);
         picture = QPATHTOF(ui\Bubble_Wrap_Item.paa);
+        ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.1;
         };
