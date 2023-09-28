@@ -2184,7 +2184,6 @@ switch (_slotsToGive) do {
 
     case 1: { 
 
-        // 1 Slot left
         if (_ammoCount >= SlotsLeft_1D_Min && _ammoCount <= SlotsLeft_3D_Max) exitWith { 
             switch (_ammoCount) do {
                 case Slot_1: { 
@@ -2306,7 +2305,6 @@ switch (_slotsToGive) do {
             };
         };
         
-        // 4 Slots left
         if (_ammoCount >= SlotsLeft_4D_Min && _ammoCount <= SlotsLeft_4D_Max) exitWith { 
 
             if (_ammoCount >= SlotsLeft_4D_1Min && _ammoCount <= SlotsLeft_4D_1Max) exitWith {
@@ -2460,7 +2458,6 @@ switch (_slotsToGive) do {
             };
         };
         
-        // 5 Slots left
         if (_ammoCount >= SlotsLeft_5D_Min && _ammoCount <= SlotsLeft_5D_Max) exitWith { 
 
             if (_ammoCount >= SlotsLeft_5D_1Min && _ammoCount <= SlotsLeft_5D_1Max) exitWith {
@@ -2614,7 +2611,6 @@ switch (_slotsToGive) do {
             };
         };
         
-        // 6 Slot left
         if (_ammoCount >= SlotsLeft_6D_Min && _ammoCount <= SlotsLeft_6D_Max) exitWith { 
 
             if (_ammoCount >= SlotsLeft_6D_1Min && _ammoCount <= SlotsLeft_6D_1Max) exitWith {
@@ -2712,7 +2708,6 @@ switch (_slotsToGive) do {
             };
         };
 
-        // 7 Slots left
         if (_ammoCount >= SlotsLeft_7D_Min && _ammoCount <= SlotsLeft_7D_Max) exitWith { 
 
             switch (_ammoCount) do {
@@ -3454,7 +3449,7 @@ switch (_slotsToGive) do {
                     case Slot_3_6_8: { 
                         [_unit, _mag, _removeContainer, _ammoCount, Slot_6_8] call FUNC(switchMagItems);
                         [_unit, _thirdSlotItem_3, _container] call FUNC(arrayToInvItem);
-                    };/
+                    };
                     case Slot_3_7_8: { 
                         [_unit, _mag, _removeContainer, _ammoCount, Slot_7_8] call FUNC(switchMagItems);
                         [_unit, _thirdSlotItem_3, _container] call FUNC(arrayToInvItem);
