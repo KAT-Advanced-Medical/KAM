@@ -37,14 +37,14 @@ class CfgVehicles {
                 condition = "true";
                 class KAT_AED_AnalyzeRhythm {
                     displayName = CSTRING(AnalyzeRhythm);
-                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player, _target, 1)] call FUNC(AEDXPlaced_CheckCondition));
+                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player, _target, 2)] call FUNC(AEDXPlaced_CheckCondition));
                     statement = QUOTE([ARR_2(_player, (_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient), nil)]))] call FUNC(AED_Analyze));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\icon_aed_shock.paa);
                 };
                 class KAT_AED_Shock {
                     displayName = CSTRING(Defibrillator_Action_Shock);
-                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player, _target, 2)] call FUNC(AEDXPlaced_CheckCondition));
+                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player, _target, 3)] call FUNC(AEDXPlaced_CheckCondition));
                     statement = QUOTE((_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient), nil)]) setVariable [ARR_3(QQGVAR(Defibrillator_Charged), false, true)]);
                     showDisabled = 0;
                     icon = QPATHTOF(ui\icon_aed_shock.paa);
@@ -59,7 +59,7 @@ class CfgVehicles {
                 };
                 class KAT_AED_RemovePads: AED_PlacePads {
                     displayName = CSTRING(Defibrillator_Action_RemovePads);
-                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player, _target, 3)] call FUNC(AEDXPlaced_CheckCondition));
+                    condition = QUOTE([ARR_2(_player, GVAR(medLvl_AED))] call ACEFUNC(medical_treatment,isMedic) && [ARR_3(_player, _target, 4)] call FUNC(AEDXPlaced_CheckCondition));
                     statement = QUOTE([ARR_4(_player, (_target getVariable [ARR_2(QQGVAR(Defibrillator_Patient), nil)]), 'body', 'DefibrillatorRemovePads')] call ace_medical_treatment_fnc_treatment);
                     insertChildren = "";
                 };

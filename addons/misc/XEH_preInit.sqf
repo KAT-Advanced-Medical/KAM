@@ -13,7 +13,7 @@ PREP_RECOMPILE_END;
     QGVAR(enable),
     "CHECKBOX",
     LLSTRING(SETTING_ENABLE),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -23,7 +23,7 @@ PREP_RECOMPILE_END;
     QGVAR(allowSharedVehicleEquipment),
     "LIST",
     [LLSTRING(SETTING_allowSharedVehicleEquipment), LLSTRING(SETTING_allowSharedVehicleEquipment_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [[0, 1, 2, 3, 4], ["STR_ACE_Common_No", "STR_ACE_Medical_Treatment_AllowSharedEquipment_PriorityMedic", LLSTRING(SETTING_allowSharedVehicleEquipment_PriorityVehicleNoSelfTreatment), LLSTRING(SETTING_allowSharedVehicleEquipment_PriorityVehicleExceptSelfTreatment), LLSTRING(SETTING_allowSharedVehicleEquipment_PriorityVehicleAlways)], 0],
     true
 ] call CBA_fnc_addSetting;
@@ -32,7 +32,7 @@ PREP_RECOMPILE_END;
     QGVAR(treatmentTimeDetachTourniquet),
     "SLIDER",
     [LLSTRING(SETTING_treatmentTimeDetachTourniquet)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [1, 60, 7, 1],
     true
 ] call CBA_Settings_fnc_init;
@@ -41,7 +41,7 @@ PREP_RECOMPILE_END;
     QGVAR(neckTourniquet),
     "CHECKBOX",
     [LLSTRING(neckTourniquetDescription)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
 ] call CBA_Settings_fnc_init;
@@ -52,7 +52,7 @@ PREP_RECOMPILE_END;
     QGVAR(incompatibilityWarning),
     "CHECKBOX",
     [LLSTRING(SETTING_incompatibilityWarning), LLSTRING(SETTING_incompatibilityWarning_Desc)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -62,7 +62,7 @@ PREP_RECOMPILE_END;
     QGVAR(arsenalMedCategory),
     "CHECKBOX",
     [LLSTRING(SETTING_arsenalMedCategory), LLSTRING(SETTING_arsenalMedCategory_Desc)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
