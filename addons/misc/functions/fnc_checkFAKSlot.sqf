@@ -26,17 +26,8 @@ private _return = false;
 private _itemType = _mag call BIS_fnc_itemType;
 _itemType = _itemType select 0;
 
-if (_itemType == "Item") exitWith { 
-    if (_mag == "kat_IFAK") exitWith {
-        [_unit, "kat_IFAK"] call ACEFUNC(common,hasItem);
-    };
-    if (_mag == "kat_AFAK") exitWith {
-        [_unit, "kat_AFAK"] call ACEFUNC(common,hasItem);
-    };
-    if (_mag == "kat_MFAK") exitWith {
-        [_unit, "kat_MFAK"] call ACEFUNC(common,hasItem);
-    };
-    _return
+if (_itemType == "Item") exitWith {
+    [_unit, _mag] call ACEFUNC(common,hasItem);
 };
 
 if (_itemType != "Magazine") exitWith {	_return };
@@ -51,10 +42,7 @@ if (_ammoToCheck isNotEqualTo "") then {
 {
     switch (_slot) do {
         case 0: { 
-            switch (_x) do {
-                case 0: { _hasTrueValue pushback false; };
-                default { _hasTrueValue pushback true; };
-            };
+            _hasTrueValue pushback true;
         };
 
         case 1: { 

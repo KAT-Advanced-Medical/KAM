@@ -65,7 +65,7 @@ if (_itemType == "Item") exitWith {
         switch (_slotsToGive) do {
             case 0: { 
                 _unit removeItem _mag;
-                [_unit, "kat_IFAK_Magazine", "", 0] call ACEFUNC(common,addToInventory);
+                [_unit, "kat_IFAK_Magazine", "", Slot_empty] call ACEFUNC(common,addToInventory);
                 [_unit, _firstSlotItemIFAK, _container] call FUNC(arrayToInvItem);
                 [_unit, _secondSlotItemIFAK, _container] call FUNC(arrayToInvItem);
                 [_unit, _thirdSlotItemIFAK, _container] call FUNC(arrayToInvItem);
@@ -105,7 +105,7 @@ if (_itemType == "Item") exitWith {
         switch (_slotsToGive) do {
             case 0: { 
                 _unit removeItem _mag;
-                [_unit, "kat_AFAK_Magazine", "", 0] call ACEFUNC(common,addToInventory);
+                [_unit, "kat_AFAK_Magazine", "", Slot_empty] call ACEFUNC(common,addToInventory);
                 [_unit, _firstSlotItemAFAK, _container] call FUNC(arrayToInvItem);
                 [_unit, _secondSlotItemAFAK, _container] call FUNC(arrayToInvItem);
                 [_unit, _thirdSlotItemAFAK, _container] call FUNC(arrayToInvItem);
@@ -157,7 +157,7 @@ if (_itemType == "Item") exitWith {
         switch (_slotsToGive) do {
             case 0: { 
                 _unit removeItem _mag;
-                [_unit, "kat_MFAK_Magazine", "", 0] call ACEFUNC(common,addToInventory);
+                [_unit, "kat_MFAK_Magazine", "", Slot_empty] call ACEFUNC(common,addToInventory);
                 [_unit, _firstSlotItemMFAK, _container] call FUNC(arrayToInvItem);
                 [_unit, _secondSlotItemMFAK, _container] call FUNC(arrayToInvItem);
                 [_unit, _thirdSlotItemMFAK, _container] call FUNC(arrayToInvItem);
@@ -287,9 +287,6 @@ if ((count _ammoCount) > 1) then {
 _ammoCount = _ammoCount select 0;
 _removeContainer = _ammoCount select 1;
 _ammoCount = _ammoCount select 0;
-
-systemChat str _ammoCount;
-systemChat str _slotsToGive;
 
 switch (_slotsToGive) do {
     
