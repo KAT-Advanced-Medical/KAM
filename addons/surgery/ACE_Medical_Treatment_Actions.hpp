@@ -96,28 +96,20 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openReductionCheck));
         callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openReductionProgress));
     };
-    class Debridement: BasicBandage {
-        displayName = CSTRING(Debride_Use);
-        displayNameProgress = CSTRING(Debride_Action);
-        category = "surgery";
-        treatmentLocations = QGVAR(debridementAction_Location);
-        allowedSelections[] = {"All"};
-        allowSelfTreatment = 0;
-        medicRequired = QGVAR(debridementAction_MedLevel);
-        treatmentTime = QFUNC(getDebrideTime);
-        items[] = {"kat_scalpel"};
-        condition = QFUNC(canDebride);
-        consumeItem = 0;
-        callbackProgress = QFUNC(debridementProgress);
-        callbackSuccess = "";
-    };
-    class NPWT: Debridement {
+    class NPWT: BasicBandage {
         displayName = CSTRING(Vacuum_Use);
         displayNameProgress = CSTRING(Vacuum_Action);
         condition = QFUNC(canNPWT);
+        category = "surgery";
+        allowedSelections[] = {"All"};
+        allowSelfTreatment = 0;
+        treatmentLocations = QGVAR(debridementAction_Location);
         treatmentTime = QFUNC(getNPWTTime);
+        medicRequired = QGVAR(debridementAction_MedLevel);
         items[] = {"kat_vacuum"};
         sounds[] = {{QPATHTO_R(sounds\vacuum.ogg),8,1,15}};
+        consumeItem = 0;
         callbackProgress = QFUNC(npwtTreatmentProgress);
+        callbackSuccess = "";
     };
 };

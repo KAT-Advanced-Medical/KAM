@@ -160,7 +160,6 @@ private _fnc_processWounds = {
 [GET_OPEN_WOUNDS(_target), "%1", [1, 1, 1, 1]] call _fnc_processWounds;
 [GET_BANDAGED_WOUNDS(_target), "[B] %1", [0.88, 0.7, 0.65, 1]] call _fnc_processWounds;
 [GET_STITCHED_WOUNDS(_target), "[S] %1", [0.7, 0.7, 0.7, 1]] call _fnc_processWounds;
-[GET_DEBRIDED_WOUNDS(_target), "[D] %1", [0.7, 0.7, 0.7, 1]] call _fnc_processWounds;
 
 //INTOXICATION by DiGii
 private _poisontype = _target getVariable [QEGVAR(chemical,poisonType),""];

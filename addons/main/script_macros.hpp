@@ -243,7 +243,3 @@
 #define GET_BLOOD_PRESSURE(unit)       ([unit] call EFUNC(circulation,getBloodPressure))
 #define VAR_BLOODPRESSURE_CHANGE       QEGVAR(circulation,bloodPressureChange)
 #define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])
-
-// Surgery
-#define GET_DEBRIDED_WOUNDS(unit)   (unit getVariable [VAR_DEBRIDED_WOUNDS, createHashMap])
-#define VAR_DEBRIDED_WOUNDS   QEGVAR(surgery,debridedWounds)

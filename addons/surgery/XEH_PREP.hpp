@@ -1,12 +1,9 @@
-PREP(canDebride);
 PREP(canNPWT);
 PREP(closedReduction);
 PREP(closedReductionLocal);
-PREP(debridementProgress);
 PREP(fractureCheck);
 PREP(fractureSelect);
 PREP(fractureSelectLocal);
-PREP(getDebrideTime);
 PREP(getNPWTTime);
 PREP(incision);
 PREP(incisionLocal);

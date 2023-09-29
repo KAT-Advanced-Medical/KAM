@@ -19,7 +19,6 @@ params ["_unit", ["_isRespawn", true]];
 
 if (!local _unit) exitWith {};
 
-_unit setVariable [QGVAR(debridedWounds), createHashmap, true];
 _unit setVariable [QGVAR(fractures), [0,0,0,0,0,0], true];
 _unit setVariable [QGVAR(lidocaine), false, true];
 _unit setVariable [QGVAR(etomidate), false, true];

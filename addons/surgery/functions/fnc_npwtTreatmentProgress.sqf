@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
- * Author: 1LT.Mazinski.H
- * Local call for clearing all stitched and bandaged wounds on a patient
+ * Author: MiszczuZPolski
+ * Local call for clearing all wounds on a patient
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -20,21 +20,47 @@ params ["_args", "_elapsedTime", "_totalTime"];
 _args params ["_medic", "_patient", "_bodyPart"];
 _bodyPart = toLower _bodyPart;
 
-private _debridedWounds = GET_DEBRIDED_WOUNDS(_patient);
-private _debridedWoundsOnPart = _debridedWounds get _bodyPart;
+private _openWounds = GET_OPEN_WOUNDS(_patient);
+private _openWoundsOnPart = _openWounds get _bodyPart;
 
-if (_debridedWoundsOnPart isEqualTo []) exitWith {false};
+// Stop treatment if there are no wounds that can be bandaged remaining
+if (_openWoundsOnPart isEqualTo []) exitWith {false};
 
 if (_totalTime - _elapsedTime > ([_patient, _patient, _bodyPart] call FUNC(getNPWTTime)) - GVAR(npwtTime)) exitWith {true};
 
-//debrided wounds healing
-private _clearedWoundFromDebridement = _debridedWoundsOnPart deleteAt (count _debridedWoundsOnPart - 1);
-_clearedWoundFromDebridement params ["", "", "", "_clearedDebrideDamage"];
-_debridedOnPart deleteAt _clearedWoundFromDebridement;
+[QACEGVAR(medical_treatment,bandageLocal), [_patient, _bodyPart, "Dressing"], _patient] call CBA_fnc_targetEvent;
+
+private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
+private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
+
+if (_bandagedWoundsOnPart isEqualTo []) exitWith {false};
+
+// Remove the first stitchable wound from the bandaged wounds
+private _treatedWound = _bandagedWoundsOnPart deleteAt (count _bandagedWoundsOnPart - 1);
+_treatedWound params ["_treatedID", "_treatedAmountOf", "", "_treatedDamageOf"];
+
+// Check if we need to add a new stitched wound or increase the amount of an existing one
+private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
+private _stitchedWoundsOnPart = _stitchedWounds getOrDefault [_bodyPart, [], true];
+
+private _woundIndex = _stitchedWoundsOnPart findIf {
+    _x params ["_classID"];
+    _classID == _treatedID
+};
+
+if (_woundIndex == -1) then {
+    _stitchedWoundsOnPart pushBack _treatedWound;
+} else {
+    private _wound = _stitchedWoundsOnPart select _woundIndex;
+    _wound set [1, (_wound select 1) + _treatedAmountOf];
+};
+
+_patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
+_patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
 
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
 private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
-_bodyPartDamage set [_partIndex, (_bodyPartDamage select _partIndex) - _clearedDebrideDamage];
+_bodyPartDamage set [_partIndex, (_bodyPartDamage select _partIndex) - (_treatedDamageOf * _treatedAmountOf)];
 _patient setVariable [QACEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
 
 switch (_bodyPart) do {

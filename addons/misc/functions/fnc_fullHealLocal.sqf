@@ -117,7 +117,6 @@ _unit setVariable [QEGVAR(pharma,coagulationFactor), 10, true];
 
 //KAT Surgery
 
-_unit setVariable [QEGVAR(surgery,debridedWounds), createHashmap, true];
 _unit setVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(surgery,lidocaine), false, true];
 _unit setVariable [QEGVAR(surgery,etomidate), false, true];

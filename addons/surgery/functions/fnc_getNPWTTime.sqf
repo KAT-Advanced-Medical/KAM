@@ -19,4 +19,5 @@
 
 params ["", "_patient", "_bodyPart"];
 
-(count (GET_DEBRIDED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) * GVAR(npwtTime))
+(count (GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) * GVAR(npwtTime)) +
+(count (GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]) * GVAR(npwtTime))

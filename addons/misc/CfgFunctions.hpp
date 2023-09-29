@@ -55,9 +55,6 @@ class CfgFunctions {
             class hasStableVitals {
                 file = QPATHTOF(functions\fnc_hasStableVitals.sqf);
             };
-            class updateWoundBloodLoss {
-                file = QPATHTOF(functions\fnc_updateWoundBloodLoss.sqf);
-            };
         };
     };
     class overwrite_dogtags {

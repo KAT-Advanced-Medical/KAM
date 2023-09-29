@@ -19,4 +19,5 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-((GET_DEBRIDED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo []) // return
+((GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo [])
+||((GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo [])
