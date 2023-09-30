@@ -102,7 +102,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
     /// ACE Fatigue Weapon Sway
 
-    if (GVAR(weapon_sway_pervitin)) then {
+    /*if (GVAR(weapon_sway_pervitin)) then { // TODO REWORK OR REMOVE
 
         if (isNil GVAR(originalSwayFactor)) then {
             GVAR(originalSwayFactor) = ACEGVAR(advanced_fatigue,swayFactor);
@@ -194,7 +194,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
             ACEGVAR(advanced_fatigue,swayFactor) = GVAR(originalSwayFactor);
         },
         [_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
-    };
+    };*/
 
 } else {
     /// Normal Stamina & Weapon Sway

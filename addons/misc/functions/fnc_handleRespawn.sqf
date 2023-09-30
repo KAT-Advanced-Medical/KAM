@@ -248,20 +248,20 @@ if (EGVAR(pharma,coagulation)) then {
     }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
 
-/// Clear Stamina & weapon sway
+/// Clear Stamina & weapon sway 
 if (ACEGVAR(advanced_fatigue,enabled)) then {
-
+    ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["kat_EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
-
+    // ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor); // TODO REWORK OR REMOVE
 } else {
-
-    _unit enableStamina true;
     _unit setAnimSpeedCoef 1;
     _unit setCustomAimCoef 1;
-
+    
+    if (GVAR(staminaMedication)) then {
+        _unit enableStamina true;
+        
+    };
 };
 
 /// Clear chroma effect & camera shake

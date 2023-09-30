@@ -2821,5 +2821,11 @@
             <Portuguese>[KAM] Caixa de medicamentos</Portuguese>
             <Spanish>[KAM] Caja de medicina</Spanish>
         </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_staminaMedication">
+            <English>Medication Modifies Stamina</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_staminaMedication_DESC">
+            <English>Allow certain medications to modify (vanilla/advanced fatigue) stamina as a side effect</English>
+        </Key>
     </Package>
 </Project>
