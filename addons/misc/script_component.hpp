@@ -19,7 +19,7 @@
 
 // -- FAK STUFF --
 //0 Slots left
-#define Slot_empty 255
+#define Slot_empty 256
 
 //1 Slots left
 #define SlotsLeft_1D_Min 1
@@ -331,4 +331,5 @@
     #define Slot_1_2_4_5_6_7_8 252
     #define Slot_1_3_4_5_6_7_8 253
     #define Slot_2_3_4_5_6_7_8 254
-#define SlotsLeft_7D_Max 254
+    #define Slot_1_2_3_4_5_6_7_8 255
+#define SlotsLeft_7D_Max 256

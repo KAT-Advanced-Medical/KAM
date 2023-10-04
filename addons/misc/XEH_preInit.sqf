@@ -153,7 +153,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    [[0, 1, 2], [LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 2],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
     2
 ] call CBA_fnc_addSetting;
 
@@ -223,7 +223,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [[0, 1, 2], [LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 2],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
     2
 ] call CBA_fnc_addSetting;
 
@@ -323,7 +323,7 @@ PREP_RECOMPILE_END;
     "LIST",
     [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    [[0, 1, 2], [LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 2],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
     2
 ] call CBA_fnc_addSetting;
 

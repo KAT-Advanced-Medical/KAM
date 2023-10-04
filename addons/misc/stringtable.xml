@@ -871,8 +871,12 @@
             <German>Gegenstands entlade Bereich</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container_DESC">
-            <English>Defines where the items from the First Aid Kit are added into.\n If there is no space left they will be dropped on the ground.</English>
-            <German>Definiert wo die Gegenstände des Erste Hilfe Kits hinzufugefügt werden.\n Sofern kein Platz vorhanden ist wird es auf den Boden hingelegt.</German>
+            <English>Defines where the items from the First Aid Kit are added into. If there is no space left they will be dropped on the ground. \n Default: Items are added where space is left. </English>
+            <German>Definiert wo die Gegenstände des Erste Hilfe Kits hinzufugefügt werden. Sofern kein Platz vorhanden ist wird es auf den Boden hingelegt. \n Standard: Die Gegenstände werden dort hinzugefügt wo noch Platz ist. </German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_Container_Default">
+            <English>Default</English>
+            <German>Standard</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Uniform">
             <English>Uniform</English>

@@ -5,9 +5,9 @@
  *
  * Arguments:
  * 0: Player <OBJECT>
- * 1: String
- * 2: Number
- * 3: Number (optional) (ammo count, to skip checking the whole inventory)
+ * 1: Magazine <STRING>
+ * 2: Slot <NUMBER>
+ * 3: Ammo Count <NUMBER> (optional) (ammo count, to skip checking the whole inventory)
  *
  * Return Value:
  * <BOOLEAN>
@@ -406,6 +406,7 @@ if (_ammoToCheck isNotEqualTo "") then {
                     case Slot_1_2_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_1_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_2_3_4_5_6_7_8: { _hasTrueValue pushback false; };
+                    case Slot_1_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                 };
             };
         };
@@ -773,6 +774,7 @@ if (_ammoToCheck isNotEqualTo "") then {
                     case Slot_1_2_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_1_3_4_5_6_7_8: { _hasTrueValue pushback false; };
                     case Slot_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
+                    case Slot_1_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                 };
             };
         };
@@ -1140,6 +1142,7 @@ if (_ammoToCheck isNotEqualTo "") then {
                     case Slot_1_2_4_5_6_7_8: { _hasTrueValue pushback false; };
                     case Slot_1_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
+                    case Slot_1_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                 };
             };
         };
@@ -1507,6 +1510,7 @@ if (_ammoToCheck isNotEqualTo "") then {
                     case Slot_1_2_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_1_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
+                    case Slot_1_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                 };
             };
         };
@@ -1729,13 +1733,13 @@ if (_ammoToCheck isNotEqualTo "") then {
 
                 if (_x >= SlotsLeft_4D_4Min && _x <= SlotsLeft_4D_4Max) then {
                     switch (_x) do {
-                        case Slot_3_5_7_8: { _hasTrueValue pushback false; };
+                        case Slot_3_5_7_8: { _hasTrueValue pushback true; };
                         case Slot_3_6_7_8: { _hasTrueValue pushback false; };
                         case Slot_4_5_6_7: { _hasTrueValue pushback true; };
                         case Slot_4_5_6_8: { _hasTrueValue pushback true; };
                         case Slot_4_5_7_8: { _hasTrueValue pushback true; };
-                        case Slot_4_6_7_8: { _hasTrueValue pushback true; };
-                        case Slot_5_6_7_8: { _hasTrueValue pushback false; };
+                        case Slot_4_6_7_8: { _hasTrueValue pushback false; };
+                        case Slot_5_6_7_8: { _hasTrueValue pushback true; };
                     };
                 };
             };
@@ -1874,6 +1878,7 @@ if (_ammoToCheck isNotEqualTo "") then {
                     case Slot_1_2_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_1_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
+                    case Slot_1_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                 };
             };
         };
@@ -2241,6 +2246,7 @@ if (_ammoToCheck isNotEqualTo "") then {
                     case Slot_1_2_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_1_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
+                    case Slot_1_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                 };
             };
         };
@@ -2608,6 +2614,7 @@ if (_ammoToCheck isNotEqualTo "") then {
                     case Slot_1_2_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_1_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
+                    case Slot_1_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                 };
             };
         };
@@ -2975,6 +2982,7 @@ if (_ammoToCheck isNotEqualTo "") then {
                     case Slot_1_2_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_1_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                     case Slot_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
+                    case Slot_1_2_3_4_5_6_7_8: { _hasTrueValue pushback true; };
                 };
             };
         };

@@ -77,7 +77,7 @@ class CfgWeapons
         editorPreview = QPATHTOF(ui\AFAK.paa);
         picture = QPATHTOF(ui\AFAK.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 20;
+            mass = 25;
         };
     };
 
@@ -87,7 +87,7 @@ class CfgWeapons
         editorPreview = QPATHTOF(ui\MFAK.paa);
         picture = QPATHTOF(ui\MFAK.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 30;
+            mass = 50;
         };
     };
 };

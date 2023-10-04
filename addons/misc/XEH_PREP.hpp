@@ -5,6 +5,7 @@ PREP(addPassengersActions);
 PREP(addVehicleUnloadCarryPatientActions);
 PREP(addVehicleCarryLoadActions);
 PREP(arrayToInvItem);
+PREP(arrayToRemoveInvItem);
 PREP(attachStretcher);
 PREP(BubbleWrap);
 PREP(canCheckDogtag);

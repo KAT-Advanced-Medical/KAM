@@ -5,10 +5,10 @@
  *
  * Arguments:
  * 0: Player <OBJECT>
- * 1: String
- * 2: String
- * 3: Number
- * 4: Number
+ * 1: Magazine <STRING>
+ * 2: Container Location <STRING>
+ * 3: Current Ammo Count <NUMBER>
+ * 4: New Ammo Count <NUMBER>
  *
  * Return Value:
  * None
@@ -22,18 +22,18 @@
 params ["_unit", "_mag", "_removeContainer", "_oldMagAmmoCount", "_newMagAmmoCout"];
 
 switch (_removeContainer) do {
-	case "Uniform": { 
-		uniformContainer _unit addMagazineAmmoCargo [_mag, -1, _oldMagAmmoCount];
-		uniformContainer _unit addMagazineAmmoCargo [_mag, 1, _newMagAmmoCout];
-	};
+    case "Uniform": { 
+        uniformContainer _unit addMagazineAmmoCargo [_mag, -1, _oldMagAmmoCount];
+        uniformContainer _unit addMagazineAmmoCargo [_mag, 1, _newMagAmmoCout];
+    };
 
-	case "Vest": { 
-		vestContainer _unit addMagazineAmmoCargo [_mag, -1, _oldMagAmmoCount];
-		vestContainer _unit addMagazineAmmoCargo [_mag, 1, _newMagAmmoCout];
-	};
+    case "Vest": { 
+        vestContainer _unit addMagazineAmmoCargo [_mag, -1, _oldMagAmmoCount];
+        vestContainer _unit addMagazineAmmoCargo [_mag, 1, _newMagAmmoCout];
+    };
 
-	case "Backpack": { 
-		backpackContainer _unit addMagazineAmmoCargo [_mag, -1, _oldMagAmmoCount];
-		backpackContainer _unit addMagazineAmmoCargo [_mag, 1, _newMagAmmoCout];
-	};
+    case "Backpack": { 
+        backpackContainer _unit addMagazineAmmoCargo [_mag, -1, _oldMagAmmoCount];
+        backpackContainer _unit addMagazineAmmoCargo [_mag, 1, _newMagAmmoCout];
+    };
 };

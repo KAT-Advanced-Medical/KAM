@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, [[ACE_tourniquet, 5],[ACE_packingBandage, 10]], "Backpack"] call kat_misc_fnc_arrayToInvItem;
+ * [player, [["ACE_tourniquet", 5],["ACE_packingBandage", 10]], "Backpack"] call kat_misc_fnc_arrayToInvItem;
  *
  * Public: No
  */
@@ -20,8 +20,8 @@
 params ["_unit", "_array", "_container"];
 
 {
-	for "_i" from 1 to (_x select 1) do
-	{
-		[_unit, _x select 0, _container] call ACEFUNC(common,addToInventory);
-	} 
+    for "_i" from 1 to (_x select 1) do
+    {
+        [_unit, _x select 0, _container] call ACEFUNC(common,addToInventory);
+    } 
 } foreach _array;

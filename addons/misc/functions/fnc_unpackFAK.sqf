@@ -5,8 +5,8 @@
  *
  * Arguments:
  * 0: Player <OBJECT>
- * 1: String
- * 2: Number
+ * 1: Magazine <STRING>
+ * 2: Slot <NUMBER>
  *
  * Return Value:
  * None
@@ -57,9 +57,10 @@ if (_itemType == "Item") exitWith {
     if (_mag == "kat_IFAK") exitWith {
 
         switch (_containerIFAK) do {
-            case 0: { _container = "uniform";};
-            case 1: { _container = "vest";};
-            case 2: { _container = "backpack";};
+            case 0: { _container = "";};
+            case 1: { _container = "uniform";};
+            case 2: { _container = "vest";};
+            case 3: { _container = "backpack";};
         };
 
         switch (_slotsToGive) do {
@@ -97,9 +98,10 @@ if (_itemType == "Item") exitWith {
     if (_mag == "kat_AFAK") exitWith {
 
         switch (_containerAFAK) do {
-            case 0: { _container = "uniform";};
-            case 1: { _container = "vest";};
-            case 2: { _container = "backpack";};
+            case 0: { _container = "";};
+            case 1: { _container = "uniform";};
+            case 2: { _container = "vest";};
+            case 3: { _container = "backpack";};
         };
 
         switch (_slotsToGive) do {
@@ -149,9 +151,10 @@ if (_itemType == "Item") exitWith {
     if (_mag == "kat_MFAK") exitWith {
 
         switch (_containerMFAK) do {
-            case 0: { _container = "uniform";};
-            case 1: { _container = "vest";};
-            case 2: { _container = "backpack";};
+            case 0: { _container = "";};
+            case 1: { _container = "uniform";};
+            case 2: { _container = "vest";};
+            case 3: { _container = "backpack";};
         };
 
         switch (_slotsToGive) do {
@@ -200,12 +203,12 @@ if (_itemType == "Item") exitWith {
             case 7: { 
                 _unit removeItem _mag;
                 [_unit, "kat_MFAK_Magazine", "", Slot_1_2_3_4_5_6_8] call ACEFUNC(common,addToInventory);
-                [_unit, _sixthSlotItemMFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _seventhSlotItemMFAK, _container] call FUNC(arrayToInvItem);
             };
             case 8: { 
                 _unit removeItem _mag;
                 [_unit, "kat_MFAK_Magazine", "", Slot_1_2_3_4_5_6_7] call ACEFUNC(common,addToInventory);
-                [_unit, _sixthSlotItemMFAK, _container] call FUNC(arrayToInvItem);
+                [_unit, _eighthSlotItemMFAK, _container] call FUNC(arrayToInvItem);
             };
         };
     };
@@ -232,9 +235,10 @@ switch (_mag) do {
         _fourthSlotItem_4 = _fourthSlotItemIFAK;
 
         switch (_containerIFAK) do {
-            case 0: { _container = "uniform";};
-            case 1: { _container = "vest";};
-            case 2: { _container = "backpack";};
+            case 0: { _container = "";};
+            case 1: { _container = "uniform";};
+            case 2: { _container = "vest";};
+            case 3: { _container = "backpack";};
         };
     };
 
@@ -247,9 +251,10 @@ switch (_mag) do {
         _sixthSlotItem_6 = _sixthSlotItemAFAK;
 
         switch (_containerAFAK) do {
-            case 0: { _container = "uniform";};
-            case 1: { _container = "vest";};
-            case 2: { _container = "backpack";};
+            case 0: { _container = "";};
+            case 1: { _container = "uniform";};
+            case 2: { _container = "vest";};
+            case 3: { _container = "backpack";};
         };
     };
 
@@ -264,9 +269,10 @@ switch (_mag) do {
         _eighthSlotItem_8 = _eighthSlotItemMFAK;
 
         switch (_containerMFAK) do {
-            case 0: { _container = "uniform";};
-            case 1: { _container = "vest";};
-            case 2: { _container = "backpack";};
+            case 0: { _container = "";};
+            case 1: { _container = "uniform";};
+            case 2: { _container = "vest";};
+            case 3: { _container = "backpack";};
         };
     };
 };
@@ -2175,6 +2181,17 @@ switch (_slotsToGive) do {
                     [_unit, _seventhSlotIte_7, _container] call FUNC(arrayToInvItem);
                     [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
                 };
+                case Slot_1_2_3_4_5_6_7_8: {
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_empty] call FUNC(switchMagItems);
+                    [_unit, _firstSlotItem_1, _container] call FUNC(arrayToInvItem);
+                    [_unit, _secondSlotItem_2, _container] call FUNC(arrayToInvItem);
+                    [_unit, _thirdSlotItem_3, _container] call FUNC(arrayToInvItem);
+                    [_unit, _fourthSlotItem_4, _container] call FUNC(arrayToInvItem);
+                    [_unit, _fifthSlotItem_5, _container] call FUNC(arrayToInvItem);
+                    [_unit, _sixthSlotItem_6, _container] call FUNC(arrayToInvItem);
+                    [_unit, _seventhSlotIte_7, _container] call FUNC(arrayToInvItem);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
             };
         };
     };
@@ -2734,6 +2751,10 @@ switch (_slotsToGive) do {
                 };
                 case Slot_1_3_4_5_6_7_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_3_4_5_6_7_8] call FUNC(switchMagItems);
+                    [_unit, _firstSlotItem_1, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_1_2_3_4_5_6_7_8: {
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_5_6_7_8] call FUNC(switchMagItems);
                     [_unit, _firstSlotItem_1, _container] call FUNC(arrayToInvItem);
                 };
             };
@@ -3311,6 +3332,10 @@ switch (_slotsToGive) do {
                 };
                 case Slot_2_3_4_5_6_7_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_3_4_5_6_7_8] call FUNC(switchMagItems);
+                    [_unit, _secondSlotItem_2, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_1_2_3_4_5_6_7_8: {
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_4_5_6_7_8] call FUNC(switchMagItems);
                     [_unit, _secondSlotItem_2, _container] call FUNC(arrayToInvItem);
                 };
             };
@@ -3902,6 +3927,10 @@ switch (_slotsToGive) do {
                 };
                 case Slot_2_3_4_5_6_7_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_2_4_5_6_7_8] call FUNC(switchMagItems);
+                    [_unit, _thirdSlotItem_3, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_1_2_3_4_5_6_7_8: {
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_4_5_6_7_8] call FUNC(switchMagItems);
                     [_unit, _thirdSlotItem_3, _container] call FUNC(arrayToInvItem);
                 };
             };
@@ -4503,6 +4532,10 @@ switch (_slotsToGive) do {
                 };
                 case Slot_2_3_4_5_6_7_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_5_6_7_8] call FUNC(switchMagItems);
+                    [_unit, _fourthSlotItem_4, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_1_2_3_4_5_6_7_8: {
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_5_6_7_8] call FUNC(switchMagItems);
                     [_unit, _fourthSlotItem_4, _container] call FUNC(arrayToInvItem);
                 };
             };
@@ -5114,6 +5147,10 @@ switch (_slotsToGive) do {
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_6_7_8] call FUNC(switchMagItems);
                     [_unit, _fifthSlotItem_5, _container] call FUNC(arrayToInvItem);
                 };
+                case Slot_1_2_3_4_5_6_7_8: {
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_6_7_8] call FUNC(switchMagItems);
+                    [_unit, _fifthSlotItem_5, _container] call FUNC(arrayToInvItem);
+                };
             };
         };
     };
@@ -5713,6 +5750,10 @@ switch (_slotsToGive) do {
                 };
                 case Slot_2_3_4_5_6_7_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_5_7_8] call FUNC(switchMagItems);
+                    [_unit, _sixthSlotItem_6, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_1_2_3_4_5_6_7_8: {
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_5_7_8] call FUNC(switchMagItems);
                     [_unit, _sixthSlotItem_6, _container] call FUNC(arrayToInvItem);
                 };
             };
@@ -6317,6 +6358,10 @@ switch (_slotsToGive) do {
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_5_6_8] call FUNC(switchMagItems);
                     [_unit, _seventhSlotIte_7, _container] call FUNC(arrayToInvItem);
                 };
+                case Slot_1_2_3_4_5_6_7_8: {
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_5_6_8] call FUNC(switchMagItems);
+                    [_unit, _seventhSlotIte_7, _container] call FUNC(arrayToInvItem);
+                };
             };
         };
     };
@@ -6898,31 +6943,35 @@ switch (_slotsToGive) do {
             switch (_ammoCount) do {
                 case Slot_1_2_3_4_5_6_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_5_6] call FUNC(switchMagItems);
-                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
                 };
                 case Slot_1_2_3_4_5_7_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_5_7] call FUNC(switchMagItems);
-                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
                 };
                 case Slot_1_2_3_4_6_7_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_6_7] call FUNC(switchMagItems);
-                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
                 };
                 case Slot_1_2_3_5_6_7_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_5_6_7] call FUNC(switchMagItems);
-                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
                 };
                 case Slot_1_2_4_5_6_7_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_4_5_6_7] call FUNC(switchMagItems);
-                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
                 };
                 case Slot_1_3_4_5_6_7_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_1_3_4_5_6_7] call FUNC(switchMagItems);
-                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
                 };
                 case Slot_2_3_4_5_6_7_8: { 
                     [_unit, _mag, _removeContainer, _ammoCount, Slot_2_3_4_5_6_7] call FUNC(switchMagItems);
-                        [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
+                };
+                case Slot_1_2_3_4_5_6_7_8: {
+                    [_unit, _mag, _removeContainer, _ammoCount, Slot_1_2_3_4_5_6_7] call FUNC(switchMagItems);
+                    [_unit, _eighthSlotItem_8, _container] call FUNC(arrayToInvItem);
                 };
             };
         };

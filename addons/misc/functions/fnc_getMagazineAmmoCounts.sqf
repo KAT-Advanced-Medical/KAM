@@ -6,8 +6,8 @@
  *
  * Arguments:
  * 0: Player <OBJECT>
- * 1: String
- * 2: Bool (optional)
+ * 1: Magazine <STRING>
+ * 2: Return Location <BOOLEAN> (optional)
  *
  * Return Value:
  * <ARRAY>
@@ -25,16 +25,16 @@ private _return = _magAmmo;
 private	_targetMag = magazinesAmmoFull _unit select {_x select 0 == _mag};
 
 if (_returnLocation == true) exitWith {
-	
-	{
-		_magAmmo pushBack [(_x select 1),(_x select 4)];
-	} forEach _targetMag;
+    
+    {
+        _magAmmo pushBack [(_x select 1),(_x select 4)];
+    } forEach _targetMag;
 
-	_return
+    _return
 };
 
 {
-	_magAmmo pushBack (_x select 1);
+    _magAmmo pushBack (_x select 1);
 } forEach _targetMag;
 
 _return

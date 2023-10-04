@@ -502,7 +502,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 1)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK.paa);
+                        icon = QPATHTOF(ui\IFAK_Repack.paa);
                     };
 
                     class Slot2 {
@@ -520,7 +520,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 2)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK.paa);
+                        icon = QPATHTOF(ui\IFAK_Repack.paa);
                     };
 
                     class Slot3 {
@@ -538,7 +538,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 3)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK.paa);
+                        icon = QPATHTOF(ui\IFAK_Repack.paa);
                     };
 
                     class Slot4 {
@@ -556,7 +556,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 4)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK.paa);
+                        icon = QPATHTOF(ui\IFAK_Repack.paa);
                     };
                 };
 
@@ -646,7 +646,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 1)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        icon = QPATHTOF(ui\AFAK_Repack.paa);
                     };
 
                     class Slot2 {
@@ -664,7 +664,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 2)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        icon = QPATHTOF(ui\AFAK_Repack.paa);
                     };
 
                     class Slot3 {
@@ -682,7 +682,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 3)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        icon = QPATHTOF(ui\AFAK_Repack.paa);
                     };
 
                     class Slot4 {
@@ -700,7 +700,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 4)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        icon = QPATHTOF(ui\AFAK_Repack.paa);
                     };
 
                     class Slot5 {
@@ -718,7 +718,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 5)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        icon = QPATHTOF(ui\AFAK_Repack.paa);
                     };
 
                     class Slot6 {
@@ -736,7 +736,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 6)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        icon = QPATHTOF(ui\AFAK_Repack.paa);
                     };
                 };
 
@@ -844,7 +844,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 1)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
+                        icon = QPATHTOF(ui\MFAK_Repack.paa);
                     };
 
                     class Slot2 {
@@ -862,7 +862,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 2)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
+                        icon = QPATHTOF(ui\MFAK_Repack.paa);
                     };
 
                     class Slot3 {
@@ -880,7 +880,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 3)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
+                        icon = QPATHTOF(ui\MFAK_Repack.paa);
                     };
 
                     class Slot4 {
@@ -898,7 +898,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 4)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
+                        icon = QPATHTOF(ui\MFAK_Repack.paa);
                     };
 
                     class Slot5 {
@@ -916,7 +916,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 5)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
+                        icon = QPATHTOF(ui\MFAK_Repack.paa);
                     };
                     
                     class Slot6 {
@@ -934,7 +934,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 6)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
+                        icon = QPATHTOF(ui\MFAK_Repack.paa);
                     };
 
                     class Slot7 {
@@ -952,7 +952,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 7)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
+                        icon = QPATHTOF(ui\MFAK_Repack.paa);
                     };
 
                     class Slot8 {
@@ -970,7 +970,7 @@ class CfgVehicles {
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 8)] call FUNC(repackFAK));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
+                        icon = QPATHTOF(ui\MFAK_Repack.paa);
                     };
                 };
             };

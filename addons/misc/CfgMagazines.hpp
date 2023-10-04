@@ -25,11 +25,11 @@ class CfgMagazines {
         picture = QPATHTOF(ui\IFAK.paa);
         
         ammo = "";
-        count = 255;
+        count = 256;
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        mass = 10; //default weight 10
+        mass = 20;
     };
 
     class kat_AFAK_Magazine: CA_Magazine {
@@ -41,11 +41,11 @@ class CfgMagazines {
         picture = QPATHTOF(ui\AFAK.paa);
 
         ammo = "";
-        count = 255;
+        count = 256;
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        mass = 20; //default weight 20 
+        mass = 30;
     };
 
     class kat_MFAK_Magazine: CA_Magazine {
@@ -57,11 +57,11 @@ class CfgMagazines {
         picture = QPATHTOF(ui\MFAK.paa);
 
         ammo = "";
-        count = 255;
+        count = 256;
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        mass = 30; //default weight 30
+        mass = 40;
     };
 };
 
