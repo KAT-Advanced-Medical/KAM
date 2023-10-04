@@ -26,11 +26,11 @@ private _return = false;
 private _itemType = _mag call BIS_fnc_itemType;
 _itemType = _itemType select 0;
 
-if (_itemType == "Item") exitWith {
+if (_itemType == "Item") exitWith { 
     [_unit, _mag] call ACEFUNC(common,hasItem);
 };
 
-if (_itemType != "Magazine") exitWith {	_return };
+if (_itemType != "Magazine") exitWith { _return };
 
 private _ammoCount = [_unit, _mag] call FUNC(getMagazineAmmoCounts);
 
