@@ -434,547 +434,409 @@ class CfgVehicles {
                     icon = QPATHTOF(ui\Bubble_Wrap_Item.paa);
                 };
 
-                class Unpack_kat_IFAK_Item {
+                class KAT_IFAK_Item {
                     displayName = CSTRING(IFAK_Unpack);
-                    condition = QUOTE([ARR_3(_player, ""kat_IFAK"", 0)] call FUNC(checkFAKSlot));
+                    condition = QUOTE([ARR_4(_player, 'kat_IFAK', 0, 0)] call FUNC(FAK_checkSlot));
+                    statement = QUOTE([ARR_4(_player, 'kat_IFAK', 0, 0)] call FUNC(FAK_unpack));
                     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                    statement = QUOTE([ARR_3(_player, ""kat_IFAK"", 0)] call FUNC(unpackFAK));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\IFAK.paa);
 
                     class Slot1 {
                         displayName = CSTRING(FAK_Slot_1);
-                        condition = QUOTE([ARR_3(_player, ""kat_IFAK"", 1)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK"", 1)] call FUNC(unpackFAK));
+                        condition = QUOTE([ARR_4(_player, 'kat_IFAK', 0, 1)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK', 0, 1)] call FUNC(FAK_unpack));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\IFAK.paa);
                     };
 
-                    class Slot2 {
+                    class Slot2: Slot1 {
                         displayName = CSTRING(FAK_Slot_2);
-                        condition = QUOTE([ARR_3(_player, ""kat_IFAK"", 2)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK"", 2)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_IFAK', 0, 2)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK', 0, 2)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot3 {
+                    class Slot3: Slot1 {
                         displayName = CSTRING(FAK_Slot_3);
-                        condition = QUOTE([ARR_3(_player, ""kat_IFAK"", 3)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK"", 3)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_IFAK', 0, 3)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK', 0, 3)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot4 {
+                    class Slot4: Slot1 {
                         displayName = CSTRING(FAK_Slot_4);
-                        condition = QUOTE([ARR_3(_player, ""kat_IFAK"", 4)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK"", 4)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_IFAK', 0, 4)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK', 0, 4)] call FUNC(FAK_unpack));
                     };
                 };
 
-                class Unpack_kat_IFAK_Mag {
+                class KAT_IFAK_Mag {
                     displayName = CSTRING(IFAK_Unpack);
-                    condition = QUOTE([ARR_2(_player, ""kat_IFAK_Magazine"")] call ACEFUNC(common,hasMagazine));
+                    condition = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 0)] call FUNC(FAK_checkSlot));
+                    statement = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 0)] call FUNC(FAK_unpack));
                     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                    statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 0)] call FUNC(unpackFAK));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\IFAK.paa);
 
                     class Slot1 {
                         displayName = CSTRING(FAK_Slot_1);
-                        condition = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 1)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 1)] call FUNC(unpackFAK));
+                        condition = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 1)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 1)] call FUNC(FAK_unpack));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\IFAK.paa);
                     };
 
-                    class Slot1Repack {
+                    class Slot1_Repack {
                         displayName = CSTRING(FAK_Slot_1_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_IFAK_Magazine"", 1)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_IFAK_Magazine"", 1)] call FUNC(checkFAKRepack));
+                        condition = QUOTE(!([ARR_4(_player, 'kat_IFAK_Magazine', 0, 1)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_IFAK_Magazine', 0, 1)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 1)] call FUNC(FAK_repack));
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 1)] call FUNC(repackFAK));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\IFAK_Repack.paa);
                     };
 
-                    class Slot2 {
+                    class Slot2: Slot1 {
                         displayName = CSTRING(FAK_Slot_2);
-                        condition = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 2)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 2)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 2)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 2)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot2Repack {
+                    class Slot2_Repack: Slot1_Repack {
                         displayName = CSTRING(FAK_Slot_2_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_IFAK_Magazine"", 2)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_IFAK_Magazine"", 2)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 2)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK_Repack.paa);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_IFAK_Magazine', 0, 2)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_IFAK_Magazine', 0, 2)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 2)] call FUNC(FAK_repack));
                     };
 
-                    class Slot3 {
+                    class Slot3: Slot1 {
                         displayName = CSTRING(FAK_Slot_3);
-                        condition = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 3)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 3)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 3)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 3)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot3Repack {
+                    class Slot3_Repack: Slot1_Repack {
                         displayName = CSTRING(FAK_Slot_3_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_IFAK_Magazine"", 3)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_IFAK_Magazine"", 3)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 3)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK_Repack.paa);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_IFAK_Magazine', 0, 3)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_IFAK_Magazine', 0, 3)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 3)] call FUNC(FAK_repack));
                     };
 
-                    class Slot4 {
+                    class Slot4: Slot1 {
                         displayName = CSTRING(FAK_Slot_4);
-                        condition = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 4)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 4)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 4)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 4)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot4Repack {
+                    class Slot4_Repack: Slot1_Repack {
                         displayName = CSTRING(FAK_Slot_4_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_IFAK_Magazine"", 4)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_IFAK_Magazine"", 4)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_IFAK_Magazine"", 4)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\IFAK_Repack.paa);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_IFAK_Magazine', 0, 4)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_IFAK_Magazine', 0, 4)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_IFAK_Magazine', 0, 4)] call FUNC(FAK_repack));
                     };
                 };
 
-                class Unpack_kat_AFAK_Item {
+                class KAT_AFAK_Item {
                     displayName = CSTRING(AFAK_Unpack);
-                    condition = QUOTE([ARR_3(_player, ""kat_AFAK"", 0)] call FUNC(checkFAKSlot));
+                    condition = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 0)] call FUNC(FAK_checkSlot));
+                    statement = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 0)] call FUNC(FAK_unpack));
                     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                    statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 0)] call FUNC(unpackFAK));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\AFAK.paa);
 
                     class Slot1 {
                         displayName = CSTRING(FAK_Slot_1);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK"", 1)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 1)] call FUNC(unpackFAK));
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 1)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 1)] call FUNC(FAK_unpack));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\AFAK.paa);
                     };
 
-                    class Slot2 {
+                    class Slot2: Slot1 {
                         displayName = CSTRING(FAK_Slot_2);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK"", 2)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 2)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 2)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 2)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot3 {
+                    class Slot3: Slot1 {
                         displayName = CSTRING(FAK_Slot_3);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK"", 3)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 3)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 3)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 3)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot4 {
+                    class Slot4: Slot1 {
                         displayName = CSTRING(FAK_Slot_4);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK"", 4)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 4)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 4)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 4)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot5 {
+                    class Slot5: Slot1 {
                         displayName = CSTRING(FAK_Slot_5);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK"", 5)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 5)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 5)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 5)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot6 {
+                    class Slot6: Slot1 {
                         displayName = CSTRING(FAK_Slot_6);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK"", 6)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK"", 6)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 6)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK', 1, 6)] call FUNC(FAK_unpack));
                     };
+
+                    
                 };
 
-                class Unpack_kat_AFAK_Mag {
+                class KAT_AFAK_Mag {
                     displayName = CSTRING(AFAK_Unpack);
-                    condition = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 0)] call FUNC(checkFAKSlot));
+                    condition = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 0)] call FUNC(FAK_checkSlot));
+                    statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 0)] call FUNC(FAK_unpack));
                     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                    statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 0)] call FUNC(unpackFAK));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\AFAK.paa);
 
                     class Slot1 {
                         displayName = CSTRING(FAK_Slot_1);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 1)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 1)] call FUNC(unpackFAK));
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 1)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 1)] call FUNC(FAK_unpack));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\AFAK.paa);
                     };
 
-                    class Slot1Repack {
+                    class Slot1_Repack {
                         displayName = CSTRING(FAK_Slot_1_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_AFAK_Magazine"", 1)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_AFAK_Magazine"", 1)] call FUNC(checkFAKRepack));
+                        condition = QUOTE(!([ARR_4(_player, 'kat_AFAK_Magazine', 1, 1)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_AFAK_Magazine', 1, 1)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 1)] call FUNC(FAK_repack));
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 1)] call FUNC(repackFAK));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\AFAK_Repack.paa);
                     };
 
-                    class Slot2 {
+                    class Slot2: Slot1 {
                         displayName = CSTRING(FAK_Slot_2);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 2)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 2)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 2)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 2)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot2Repack {
+                    class Slot2_Repack: Slot1_Repack {
                         displayName = CSTRING(FAK_Slot_2_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_AFAK_Magazine"", 2)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_AFAK_Magazine"", 2)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 2)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK_Repack.paa);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_AFAK_Magazine', 1, 2)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_AFAK_Magazine', 1, 2)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 2)] call FUNC(FAK_repack));
                     };
 
-                    class Slot3 {
+                    class Slot3: Slot1 {
                         displayName = CSTRING(FAK_Slot_3);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 3)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 3)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
-                    };
-
-                    class Slot3Repack {
-                        displayName = CSTRING(FAK_Slot_3_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_AFAK_Magazine"", 3)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_AFAK_Magazine"", 3)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 3)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK_Repack.paa);
-                    };
-
-                    class Slot4 {
-                        displayName = CSTRING(FAK_Slot_4);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 4)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 4)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
-                    };
-
-                    class Slot4Repack {
-                        displayName = CSTRING(FAK_Slot_4_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_AFAK_Magazine"", 4)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_AFAK_Magazine"", 4)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 4)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK_Repack.paa);
-                    };
-
-                    class Slot5 {
-                        displayName = CSTRING(FAK_Slot_5);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 5)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 5)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
-                    };
-
-                    class Slot5Repack {
-                        displayName = CSTRING(FAK_Slot_5_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_AFAK_Magazine"", 5)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_AFAK_Magazine"", 5)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 5)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK_Repack.paa);
-                    };
-
-                    class Slot6 {
-                        displayName = CSTRING(FAK_Slot_6);
-                        condition = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 6)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 6)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK.paa);
-                    };
-
-                    class Slot6Repack {
-                        displayName = CSTRING(FAK_Slot_6_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_AFAK_Magazine"", 6)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_AFAK_Magazine"", 6)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_AFAK_Magazine"", 6)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\AFAK_Repack.paa);
-                    };
-                };
-
-                class Unpack_kat_MFAK_Item {
-                    displayName = CSTRING(MFAK_Unpack);
-                    condition = QUOTE([ARR_3(_player, ""kat_MFAK"", 0)] call FUNC(checkFAKSlot));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                    statement = QUOTE([ARR_3(_player, ""kat_MFAK"", 0)] call FUNC(unpackFAK));
-                    showDisabled = 0;
-                    icon = QPATHTOF(ui\MFAK.paa);
-
-                    class Slot1 {
-                        displayName = CSTRING(FAK_Slot_1);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK"", 1)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK"", 1)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot2 {
-                        displayName = CSTRING(FAK_Slot_2);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK"", 2)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK"", 2)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot3 {
-                        displayName = CSTRING(FAK_Slot_3);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK"", 3)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK"", 3)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot4 {
-                        displayName = CSTRING(FAK_Slot_4);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK"", 4)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK"", 4)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot5 {
-                        displayName = CSTRING(FAK_Slot_5);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK"", 5)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK"", 5)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot6 {
-                        displayName = CSTRING(FAK_Slot_6);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK"", 6)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK"", 6)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot7 {
-                        displayName = CSTRING(FAK_Slot_7);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK"", 7)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK"", 7)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot8 {
-                        displayName = CSTRING(FAK_Slot_8);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK"", 8)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK"", 8)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-                };
-
-                class Unpack_kat_MFAK_Mag {
-                    displayName = CSTRING(MFAK_Unpack);
-                    condition = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 0)] call FUNC(checkFAKSlot));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                    statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 0)] call FUNC(unpackFAK));
-                    showDisabled = 0;
-                    icon = QPATHTOF(ui\MFAK.paa);
-
-                    class Slot1 {
-                        displayName = CSTRING(FAK_Slot_1);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 1)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 1)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot1Repack {
-                        displayName = CSTRING(FAK_Slot_1_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_MFAK_Magazine"", 1)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_MFAK_Magazine"", 1)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 1)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK_Repack.paa);
-                    };
-
-                    class Slot2 {
-                        displayName = CSTRING(FAK_Slot_2);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 2)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 2)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot2Repack {
-                        displayName = CSTRING(FAK_Slot_2_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_MFAK_Magazine"", 2)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_MFAK_Magazine"", 2)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 2)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK_Repack.paa);
-                    };
-
-                    class Slot3 {
-                        displayName = CSTRING(FAK_Slot_3);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 3)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 3)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot3Repack {
-                        displayName = CSTRING(FAK_Slot_3_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_MFAK_Magazine"", 3)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_MFAK_Magazine"", 3)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 3)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK_Repack.paa);
-                    };
-
-                    class Slot4 {
-                        displayName = CSTRING(FAK_Slot_4);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 4)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 4)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot4Repack {
-                        displayName = CSTRING(FAK_Slot_4_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_MFAK_Magazine"", 4)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_MFAK_Magazine"", 4)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 4)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK_Repack.paa);
-                    };
-
-                    class Slot5 {
-                        displayName = CSTRING(FAK_Slot_5);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 5)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 5)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
-                    };
-
-                    class Slot5Repack {
-                        displayName = CSTRING(FAK_Slot_5_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_MFAK_Magazine"", 5)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_MFAK_Magazine"", 5)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 5)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK_Repack.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 3)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 3)] call FUNC(FAK_unpack));
                     };
                     
-                    class Slot6 {
+                    class Slot3_Repack: Slot1_Repack {
+                        displayName = CSTRING(FAK_Slot_3_Repack);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_AFAK_Magazine', 1, 3)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_AFAK_Magazine', 1, 3)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 3)] call FUNC(FAK_repack));
+                    };
+
+                    class Slot4: Slot1 {
+                        displayName = CSTRING(FAK_Slot_4);
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 4)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 4)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot4_Repack: Slot1_Repack {
+                        displayName = CSTRING(FAK_Slot_4_Repack);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_AFAK_Magazine', 1, 4)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_AFAK_Magazine', 1, 4)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 4)] call FUNC(FAK_repack));
+                    };
+
+                    class Slot5: Slot1 {
+                        displayName = CSTRING(FAK_Slot_5);
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 5)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 5)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot5_Repack: Slot1_Repack {
+                        displayName = CSTRING(FAK_Slot_5_Repack);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_AFAK_Magazine', 1, 5)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_AFAK_Magazine', 1, 5)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 5)] call FUNC(FAK_repack));
+                    };
+
+                    class Slot6: Slot1 {
                         displayName = CSTRING(FAK_Slot_6);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 6)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 6)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 6)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 6)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot6Repack {
+                    class Slot6_Repack: Slot1_Repack {
                         displayName = CSTRING(FAK_Slot_6_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_MFAK_Magazine"", 6)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_MFAK_Magazine"", 6)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 6)] call FUNC(repackFAK));
+                        condition = QUOTE(!([ARR_4(_player, 'kat_AFAK_Magazine', 1, 6)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_AFAK_Magazine', 1, 6)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_AFAK_Magazine', 1, 6)] call FUNC(FAK_repack));
+                    };
+                };
+
+                class KAT_MFAK_Item {
+                    displayName = CSTRING(MFAK_Unpack);
+                    condition = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 0)] call FUNC(FAK_checkSlot));
+                    statement = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 0)] call FUNC(FAK_unpack));
+                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    showDisabled = 0;
+                    icon = QPATHTOF(ui\MFAK.paa);
+
+                    class Slot1 {
+                        displayName = CSTRING(FAK_Slot_1);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 1)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 1)] call FUNC(FAK_unpack));
                         showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK_Repack.paa);
+                        icon = QPATHTOF(ui\MFAK.paa);
                     };
 
-                    class Slot7 {
+                    class Slot2: Slot1 {
+                        displayName = CSTRING(FAK_Slot_2);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 2)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 2)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot3: Slot1 {
+                        displayName = CSTRING(FAK_Slot_3);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 3)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 3)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot4: Slot1 {
+                        displayName = CSTRING(FAK_Slot_4);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 4)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 4)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot5: Slot1 {
+                        displayName = CSTRING(FAK_Slot_5);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 5)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 5)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot6: Slot1 {
+                        displayName = CSTRING(FAK_Slot_6);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 6)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 6)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot7: Slot1 {
                         displayName = CSTRING(FAK_Slot_7);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 7)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 7)] call FUNC(unpackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK.paa);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 7)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 7)] call FUNC(FAK_unpack));
                     };
 
-                    class Slot7Repack {
-                        displayName = CSTRING(FAK_Slot_7_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_MFAK_Magazine"", 7)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_MFAK_Magazine"", 7)] call FUNC(checkFAKRepack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 7)] call FUNC(repackFAK));
-                        showDisabled = 0;
-                        icon = QPATHTOF(ui\MFAK_Repack.paa);
-                    };
-
-                    class Slot8 {
+                    class Slot8: Slot1 {
                         displayName = CSTRING(FAK_Slot_8);
-                        condition = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 8)] call FUNC(checkFAKSlot));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 8)] call FUNC(unpackFAK));
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 8)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK', 2, 8)] call FUNC(FAK_unpack));
+                    };
+                };
+
+                class KAT_MFAK_Mag {
+                    displayName = CSTRING(MFAK_Unpack);
+                    condition = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 0)] call FUNC(FAK_checkSlot));
+                    statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 0)] call FUNC(FAK_unpack));
+                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    showDisabled = 0;
+                    icon = QPATHTOF(ui\MFAK.paa);
+
+                    class Slot1 {
+                        displayName = CSTRING(FAK_Slot_1);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 1)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 1)] call FUNC(FAK_unpack));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\MFAK.paa);
                     };
 
-                    class Slot8Repack {
-                        displayName = CSTRING(FAK_Slot_8_Repack);
-                        condition = QUOTE(!([ARR_3(_player, ""kat_MFAK_Magazine"", 8)] call FUNC(checkFAKSlot)) && [ARR_3(_player, ""kat_MFAK_Magazine"", 8)] call FUNC(checkFAKRepack));
+                    class Slot1_Repack {
+                        displayName = CSTRING(FAK_Slot_1_Repack);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_MFAK_Magazine', 2, 1)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_MFAK_Magazine', 2, 1)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 1)] call FUNC(FAK_repack));
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_3(_player, ""kat_MFAK_Magazine"", 8)] call FUNC(repackFAK));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\MFAK_Repack.paa);
+                    };
+
+                    class Slot2: Slot1 {
+                        displayName = CSTRING(FAK_Slot_2);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 2)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 2)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot2_Repack: Slot1_Repack {
+                        displayName = CSTRING(FAK_Slot_2_Repack);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_MFAK_Magazine', 2, 2)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_MFAK_Magazine', 2, 2)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 2)] call FUNC(FAK_repack));
+                    };
+
+                    class Slot3: Slot1 {
+                        displayName = CSTRING(FAK_Slot_3);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 3)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 3)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot3_Repack: Slot1_Repack {
+                        displayName = CSTRING(FAK_Slot_3_Repack);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_MFAK_Magazine', 2, 3)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_MFAK_Magazine', 2, 3)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 3)] call FUNC(FAK_repack));
+                    };
+
+                    class Slot4: Slot1 {
+                        displayName = CSTRING(FAK_Slot_4);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 4)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 4)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot4_Repack: Slot1_Repack {
+                        displayName = CSTRING(FAK_Slot_4_Repack);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_MFAK_Magazine', 2, 4)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_MFAK_Magazine', 2, 4)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 4)] call FUNC(FAK_repack));
+                    };
+
+                    class Slot5: Slot1 {
+                        displayName = CSTRING(FAK_Slot_5);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 5)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 5)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot5_Repack: Slot1_Repack {
+                        displayName = CSTRING(FAK_Slot_5_Repack);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_MFAK_Magazine', 2, 5)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_MFAK_Magazine', 2, 5)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 5)] call FUNC(FAK_repack));
+                    };
+
+                    class Slot6: Slot1 {
+                        displayName = CSTRING(FAK_Slot_6);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 6)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 6)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot6_Repack: Slot1_Repack {
+                        displayName = CSTRING(FAK_Slot_6_Repack);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_MFAK_Magazine', 2, 6)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_MFAK_Magazine', 2, 6)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 6)] call FUNC(FAK_repack));
+                    };
+
+                    class Slot7: Slot1 {
+                        displayName = CSTRING(FAK_Slot_7);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 7)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 7)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot7_Repack: Slot1_Repack {
+                        displayName = CSTRING(FAK_Slot_7_Repack);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_MFAK_Magazine', 2, 7)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_MFAK_Magazine', 2, 7)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 7)] call FUNC(FAK_repack));
+                    };
+
+                    class Slot8: Slot1 {
+                        displayName = CSTRING(FAK_Slot_8);
+                        condition = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 8)] call FUNC(FAK_checkSlot));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 8)] call FUNC(FAK_unpack));
+                    };
+
+                    class Slot8_Repack: Slot1_Repack {
+                        displayName = CSTRING(FAK_Slot_8_Repack);
+                        condition = QUOTE(!([ARR_4(_player, 'kat_MFAK_Magazine', 2, 8)] call FUNC(FAK_checkSlot)) && [ARR_4(_player, 'kat_MFAK_Magazine', 2, 8)] call FUNC(FAK_checkRepack));
+                        statement = QUOTE([ARR_4(_player, 'kat_MFAK_Magazine', 2, 8)] call FUNC(FAK_repack));
                     };
                 };
             };
         };
+
         class ACE_Actions {
             class ACE_ArmLeft {
                 class SalineIV;

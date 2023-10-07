@@ -169,6 +169,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(IFAKFirstSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(IFAKFirstSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -184,21 +185,23 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(IFAKSecondSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(IFAKSecondSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
 //IFAK Third Slot Item
 [
-    QGVAR(IFAKThirdtSlotItem),
+    QGVAR(IFAKThirdSlotItem),
     "EDITBOX",
     [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     "[['kat_Painkiller', 1]]",
     1,
     {
-        private _string = missionNamespace getVariable [QGVAR(IFAKThirdtSlotItem), []];
+        private _string = missionNamespace getVariable [QGVAR(IFAKThirdSlotItem), []];
         private _array = parseSimpleArray _string;
-        missionNamespace setVariable [QGVAR(IFAKThirdtSlotItem), _array, true];
+        missionNamespace setVariable [QGVAR(IFAKThirdSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -214,6 +217,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(IFAKFourthSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(IFAKFourthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -239,6 +243,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(AFAKFirstSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(AFAKFirstSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -254,21 +259,23 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(AFAKSecondSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(AFAKSecondSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
 //AFAK Third Slot Item
 [
-    QGVAR(AFAKThirdtSlotItem),
+    QGVAR(AFAKThirdSlotItem),
     "EDITBOX",
     [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     "[['ACE_quikclot', 10]]",
     1,
     {
-        private _string = missionNamespace getVariable [QGVAR(AFAKThirdtSlotItem), []];
+        private _string = missionNamespace getVariable [QGVAR(AFAKThirdSlotItem), []];
         private _array = parseSimpleArray _string;
-        missionNamespace setVariable [QGVAR(AFAKThirdtSlotItem), _array, true];
+        missionNamespace setVariable [QGVAR(AFAKThirdSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -284,6 +291,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(AFAKFourthSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(AFAKFourthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -299,6 +307,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(AFAKFifthSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(AFAKFifthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -314,6 +323,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(AFAKSixthSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(AFAKSixthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -339,6 +349,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(MFAKFirstSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(MFAKFirstSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -354,21 +365,23 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(MFAKSecondSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(MFAKSecondSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
 //MFAK Third Slot Item
 [
-    QGVAR(MFAKThirdtSlotItem),
+    QGVAR(MFAKThirdSlotItem),
     "EDITBOX",
     [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
     "[['kat_Painkiller', 4], ['kat_Penthrox', 4]]",
     1,
     {
-        private _string = missionNamespace getVariable [QGVAR(MFAKThirdtSlotItem), []];
+        private _string = missionNamespace getVariable [QGVAR(MFAKThirdSlotItem), []];
         private _array = parseSimpleArray _string;
-        missionNamespace setVariable [QGVAR(MFAKThirdtSlotItem), _array, true];
+        missionNamespace setVariable [QGVAR(MFAKThirdSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -384,6 +397,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(MFAKFourthSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(MFAKFourthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -399,6 +413,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(MFAKFifthSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(MFAKFifthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -414,6 +429,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(MFAKSixthSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(MFAKSixthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -429,6 +445,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(MFAKSeventhSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(MFAKSeventhSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 
@@ -444,6 +461,7 @@ PREP_RECOMPILE_END;
         private _string = missionNamespace getVariable [QGVAR(MFAKEighthSlotItem), []];
         private _array = parseSimpleArray _string;
         missionNamespace setVariable [QGVAR(MFAKEighthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
 

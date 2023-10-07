@@ -927,11 +927,11 @@
             <German>Achte Tasche Gegenstand</German>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Display">
-            <English>Individuell First Aid Kit</English>
+            <English>Individual First Aid Kit</English>
             <German>Individuelles Erste Hilfe Kit</German>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_DESC">
-            <English>The IFAK can be unpacked to provide usefull medical items</English>
+            <English>The IFAK can be unpacked to provide useful medical items</English>
             <German>Das IEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Display">
@@ -939,7 +939,7 @@
             <German>Mehrfaches Erste Hilfe Kit</German>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_DESC">
-            <English>The MFAK can be unpacked to provide usefull medical items</English>
+            <English>The MFAK can be unpacked to provide useful medical items</English>
             <German>Das MEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Display">
@@ -947,7 +947,7 @@
             <German>Erweitertes Erste Hilfe Kit</German>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_DESC">
-            <English>The AFAK can be unpacked to provide usefull medical items</English>
+            <English>The AFAK can be unpacked to provide useful medical items</English>
             <German>Das EEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Unpack">

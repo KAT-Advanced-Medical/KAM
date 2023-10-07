@@ -24,7 +24,7 @@ private _magAmmo = [];
 private _return = _magAmmo;
 private _targetMag = magazinesAmmoFull _unit select {_x select 0 == _mag};
 
-if (_returnLocation == true) exitWith {
+if (_returnLocation) exitWith {
     
     {
         _magAmmo pushBack [(_x select 1),(_x select 4)];
