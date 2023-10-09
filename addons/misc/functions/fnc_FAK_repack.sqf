@@ -44,7 +44,7 @@ private _fnc_getContainer = {
 
 private _ammoCount = [_unit, _item] call FUNC(getMagazineAmmoCounts);
 private _slotArray = [];
-private _highestAmmoCount = 0;
+private _highestAmmoCount = -1;
 
 {
     private _checkedArray = [_x, _type] call FUNC(FAK_ammoToArray);
@@ -55,8 +55,9 @@ private _highestAmmoCount = 0;
     };
 } forEach _ammoCount;
 
-if !(_highestAmmoCount > 0) exitWith {};
+if !(_highestAmmoCount > -1) exitWith {};
 
+private _container = "";
 private _FAKToAdd = "";
 private _itemList = [];
 private _max = 0;

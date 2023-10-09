@@ -1026,6 +1026,9 @@
             <English>Repack Slot 8</English>
             <German>Packe Tasche 8</German>
         </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty">
+            <English>Remove when empty</English>
+        </Key>
         <Key ID="STR_KAT_Misc_CancelCarrying">
             <English>Cancel Carrying</English>
             <Japanese>担ぐのを止める</Japanese>

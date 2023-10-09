@@ -25,7 +25,7 @@ _itemType = _itemType select 0;
 
 if (_itemType == "Item") exitWith {([_unit, _item] call ACEFUNC(common,hasItem));};
 
-if ((_itemType == "Magazine") && !([_unit, _item] call ACEFUNC(common,hasMagazine))) exitWith {false};
+if ((_itemType == "Magazine") && !([_unit, _item] call ACEFUNC(common,hasMagazine)) && {(magazinesAmmoFull [_unit, true]) findIf {_x select 0 isEqualTo _item} isEqualTo -1}) exitWith {false};
 
 private _ammoCount = [_unit, _item] call FUNC(getMagazineAmmoCounts);
 private _max = 255;
@@ -38,7 +38,7 @@ switch (_type) do {
 };
 
 {
-    if (_slot == 0 && _x > 0) exitWith {
+    if (_slot == 0) exitWith {
         _return = true;
         break;
     };

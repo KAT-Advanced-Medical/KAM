@@ -20,7 +20,7 @@
 
 params ["_unit", "_item", "_type", "_slotToCheck"];
 
-if !([_unit, _item] call ACEFUNC(common,hasMagazine)) exitWith {false};
+if (!([_unit, _item] call ACEFUNC(common,hasMagazine)) && {(magazinesAmmoFull [_unit, true]) findIf {_x select 0 isEqualTo _item} isEqualTo -1}) exitWith {false};
 
 private _return = true;
 
@@ -93,7 +93,7 @@ switch (_type) do {
 
 {
     _x params ["_className", "_amount"];
-    
+
     if (((_className call BIS_fnc_itemType) select 0) == "Item") then {
         if !([_unit, _className, _amount] call _fnc_getTargetItemCount >= _amount) exitWith {
             _return = false;

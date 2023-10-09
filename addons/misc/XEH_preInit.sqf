@@ -157,6 +157,16 @@ PREP_RECOMPILE_END;
     2
 ] call CBA_fnc_addSetting;
 
+// Remove IFAK when empty
+[
+    QGVAR(IFAK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
 //IFAK First Slot Item
 [
     QGVAR(IFAKFirstSlotItem),
@@ -229,6 +239,16 @@ PREP_RECOMPILE_END;
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
     2
+] call CBA_fnc_addSetting;
+
+// Remove AFAK when empty
+[
+    QGVAR(AFAK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [true],
+    true
 ] call CBA_fnc_addSetting;
 
 //AFAK First Slot Item
@@ -335,6 +355,16 @@ PREP_RECOMPILE_END;
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
     [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
     2
+] call CBA_fnc_addSetting;
+
+// Remove MFAK when empty
+[
+    QGVAR(MFAK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    [true],
+    true
 ] call CBA_fnc_addSetting;
 
 //MFAK First Slot Item

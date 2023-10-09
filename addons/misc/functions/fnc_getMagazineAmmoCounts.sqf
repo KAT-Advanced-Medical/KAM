@@ -22,7 +22,7 @@ params ["_unit", "_mag", "_returnLocation"];
 
 private _magAmmo = [];
 private _return = _magAmmo;
-private _targetMag = magazinesAmmoFull _unit select {_x select 0 == _mag};
+private _targetMag = magazinesAmmoFull [_unit, true] select {_x select 0 == _mag};
 
 if (_returnLocation) exitWith {
     
