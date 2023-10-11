@@ -2080,11 +2080,13 @@
             <English>Medical level required for Penthrox Inhaler</English>
             <Japanese>ペンスロックス吸入器の許可</Japanese>
             <French>Niveau médical requis pour l'inhalateur de Penthrox</French>
+            <Korean>펜트록스를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
             <English>Treatment time for Penthrox Inhaler</English>
             <Japanese>ペンスロックス吸入器の使用時間</Japanese>
             <French>Durée d'utilisation de l'inhalateur de Penthrox</French>
+            <Korean>펜트록스로 치료하는 시간</Korean>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -2374,11 +2376,13 @@
             <English>Penthrox Inhaler Settings</English>
             <Japanese>ペンスロックス吸入器設定</Japanese>
             <French>Paramètres de l'inhalateur de Penthrox</French>
+            <Korean>펜트록스 흡입기 설정</Korean>
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
             <English>%1 performed a saline flush</English>
             <Japanese>%1 は生理食塩水フラッシュを実施しました</Japanese>
             <French>%1 a effectué le rinçage salin</French>
+            <Korean>%1이(가) 식염수 주입을 수행했다</Korean>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
