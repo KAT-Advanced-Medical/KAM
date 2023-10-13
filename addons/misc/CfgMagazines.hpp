@@ -29,7 +29,7 @@ class CfgMagazines {
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        mass = 10;
+        mass = 15;
     };
 
     class kat_AFAK_Magazine: CA_Magazine {
@@ -45,7 +45,7 @@ class CfgMagazines {
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        mass = 20;
+        mass = 25;
     };
 
     class kat_MFAK_Magazine: CA_Magazine {
@@ -61,7 +61,7 @@ class CfgMagazines {
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        mass = 40;
+        mass = 50;
     };
 };
 

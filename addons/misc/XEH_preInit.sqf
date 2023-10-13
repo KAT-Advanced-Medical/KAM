@@ -257,7 +257,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['ACE_tourniquet', 4]]",
+    "[['ACE_tourniquet', 4], ['ACE_splint', 2]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKFirstSlotItem), []];
@@ -273,7 +273,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['ACE_packingBandage', 10]]",
+    "[['ACE_packingBandage', 10], ['ACE_quikclot', 10]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKSecondSlotItem), []];
@@ -289,7 +289,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['ACE_quikclot', 10]]",
+    "[['kat_Penthrox', 2], ['kat_Painkiller', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKThirdSlotItem), []];
@@ -305,7 +305,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['kat_Penthrox', 2]]",
+    "[['kat_chestSeal', 4], ['kat_ncdKit', 4]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKFourthSlotItem), []];
@@ -321,7 +321,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['kat_chestSeal', 4]]",
+    "[['kat_guedel', 3]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKFifthSlotItem), []];
@@ -337,7 +337,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['kat_ncdKit', 4]]",
+    "[['ACE_morphine', 3], ['ACE_epinephrine', 3]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKSixthSlotItem), []];
@@ -373,7 +373,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['ACE_tourniquet', 6]]",
+    "[['ACE_tourniquet', 6], ['ACE_splint', 4]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKFirstSlotItem), []];
@@ -389,7 +389,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['ACE_packingBandage', 10], ['ACE_quikclot', 15]]",
+    "[['ACE_packingBandage', 15], ['ACE_quikclot', 15], ['ACE_fieldDressing', 15]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKSecondSlotItem), []];
@@ -421,7 +421,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['kat_chestSeal', 6]]",
+    "[['kat_chestSeal', 6], ['kat_aatKit', 3], ['kat_ncdKit', 3], ['kat_stethoscope', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKFourthSlotItem), []];
@@ -437,7 +437,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['kat_aatKit', 4]]",
+    "[['kat_larynx', 6]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKFifthSlotItem), []];
@@ -453,7 +453,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['kat_larynx', 5]]",
+    "[['ACE_morphine', 6], ['ACE_epinephrine', 6], ['ACE_adenosine', 6]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKSixthSlotItem), []];
@@ -469,7 +469,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SeventhSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['ACE_morphine', 6], ['ACE_epinephrine', 6]]",
+    "[['ACE_salineIV_250', 3], ['kat_IV_16', 4]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKSeventhSlotItem), []];
@@ -485,7 +485,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_EighthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['kat_pocketBVM', 1]]",
+    "[['kat_Pulseoximeter', 3], ['kat_pocketBVM', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKEighthSlotItem), []];
@@ -496,7 +496,6 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 // Medical ACE Arsenal
-
 if (GVAR(arsenalMedCategory)) then {
     [
         ["kat_aatKit","kat_ncdKit","kat_accuvac","ACE_adenosine","ACE_epinephrine","kat_X_AED","ACE_elasticBandage","ACE_packingBandage","kat_crossPanel","kat_bloodIV_O","kat_bloodIV_A","kat_bloodIV_AB","ACE_bloodIV","kat_bloodIV_B","ACE_bloodIV_250","kat_bloodIV_O_250","kat_bloodIV_A_250","kat_bloodIV_AB_250","kat_bloodIV_B_250","ACE_bloodIV_500","kat_bloodIV_O_500","kat_bloodIV_A_500","kat_bloodIV_AB_500","kat_bloodIV_B_500","ACE_bodyBag","KAT_Empty_bloodIV_250","KAT_Empty_bloodIV_500","kat_bloodIV_O_N","kat_bloodIV_A_N","kat_bloodIV_AB_N","kat_bloodIV_B_N","kat_bloodIV_O_N_250","kat_bloodIV_A_N_250","kat_bloodIV_AB_N_250","kat_bloodIV_B_N_250","kat_bloodIV_O_N_500","kat_bloodIV_A_N_500","kat_bloodIV_AB_N_500","kat_bloodIV_B_N_500","FirstAidKit","kat_AED","kat_chestSeal","kat_larynx","ACE_fieldDressing","Medikit","ACE_morphine","kat_guedel","ACE_personalAidKit","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","kat_Pulseoximeter","ACE_quikclot","ACE_salineIV_250","ACE_salineIV","ACE_salineIV_500","ACE_splint","kat_stethoscope","ACE_surgicalKit","ACE_tourniquet","Attachable_Helistretcher","kat_CarbonateItem","kat_PainkillerItem","kat_PervitinItem","kat_CaffeineItem","kat_PenthroxItem","kat_IV_16","kat_IO_FAST","kat_naloxone","kat_EACA","kat_TXA","kat_norepinephrine","kat_phenylephrine","kat_nitroglycerin","kat_amiodarone","kat_lidocaine","kat_atropine","kat_ketamine","kat_fentanyl","kat_nalbuphine","kat_lorazepam","kat_flumazenil","kat_etomidate","kat_scalpel","kat_retractor","kat_clamp","kat_plate","kat_vacuum","kat_BVM","kat_pocketBVM","kat_oxygenTank_150_Item","kat_oxygenTank_300_Item","kat_oxygenTank_150_Empty","kat_oxygenTank_300_Empty","kat_IFAK","kat_MFAK","kat_AFAK"],
