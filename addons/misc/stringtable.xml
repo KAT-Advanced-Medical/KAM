@@ -828,14 +828,17 @@
         <Key ID="STR_KAT_Misc_CarryPatient">
             <English>Carry Patient</English>
             <Japanese>患者を担ぐ</Japanese>
+            <French>Transporter le patient</French>
         </Key>
         <Key ID="STR_KAT_Misc_CancelCarrying">
             <English>Cancel Carrying</English>
             <Japanese>担ぐのを止める</Japanese>
+            <French>Annuler le transport</French>
         </Key>
         <Key ID="STR_KAT_Misc_StoppedCarrying%1">
             <English>Stopped carrying %1</English>
             <Japanese>%1 を担ぐのを止めました</Japanese>
+            <French>Arrêt du transport de %1</French>
         </Key>
         <Key ID="STR_ACE_Medical_Category">
             <English>Medical</English>
