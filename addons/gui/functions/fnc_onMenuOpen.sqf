@@ -60,7 +60,7 @@ private _countEnabled = {
     if (_category isEqualType "") then { _x set [1, (ACEGVAR(medical_gui,actions) findIf {_category == _x select 1}) > -1]; };
     _x select 1
 } count _list;
-private _offsetX = POS_X(1.5) + 0.5 * (POS_X(12) - POS_X(_countEnabled * 1.5));
+private _offsetX = POS_X(1.75) + 0.5 * (POS_X(12) - POS_X(_countEnabled * 1.5));
 {
     _x params ["_idc", "_enabled"];
     private _ctrl = _display displayCtrl _idc;
@@ -72,3 +72,18 @@ private _offsetX = POS_X(1.5) + 0.5 * (POS_X(12) - POS_X(_countEnabled * 1.5));
         _ctrl ctrlShow false;
     };
 } forEach _list;
+
+if (GVAR(showPatientSideLabels)) then {
+    (_display displayCtrl IDC_SIDE_LABEL_LEFT) ctrlShow true;
+    (_display displayCtrl IDC_SIDE_LABEL_RIGHT) ctrlShow true;
+};
+
+// Set toggle button icon and tooltip
+private _ctrl = _display displayCtrl IDC_TOGGLE;
+if (ACEGVAR(medical_gui,target) == ACE_player) then {
+    _ctrl ctrlSetText QACEPATHTOF(medical_gui,data\categories\toggle_to_other.paa);
+    _ctrl ctrlSetTooltip ACELLSTRING(medical_gui,ToggleToOther);
+} else {
+    _ctrl ctrlSetText QACEPATHTOF(medical_gui,data\categories\toggle_to_self.paa);
+    _ctrl ctrlSetTooltip ACELLSTRING(medical_gui,ToggleToSelf);
+};

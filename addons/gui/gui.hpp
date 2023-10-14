@@ -110,5 +110,25 @@ class ACE_Medical_Menu {
             tooltip = "Surgery";
             x = QUOTE(POS_X(13.5));
         };
+        class Toggle: Triage {
+            tooltip = ACECSTRING(medical_gui,ToggleSelf);
+        };
+        class TriageCard: RscListBox {
+            h = QUOTE(POS_H(12.2));
+        };
+        class ActionButtonGroup: RscControlsGroup {
+            h = QUOTE(POS_H(12.2));
+        };
+        class Injuries: TriageCard {
+            y = QUOTE(POS_Y(3.3));
+            h = QUOTE(POS_Y(13.3));
+        };
+        class BodyLabelLeft: RscText {
+            idc = IDC_SIDE_LABEL_LEFT;
+            show = 0;
+        };
+        class BodyLabelRight: BodyLabelLeft {
+            idc = IDC_SIDE_LABEL_RIGHT;
+        };
     };
 };
