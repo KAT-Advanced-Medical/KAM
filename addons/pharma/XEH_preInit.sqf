@@ -144,7 +144,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_reorientationChance),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Reorientation)],
-    [0, 100, 100, 0],
+    [0, 100, 50, 0],
     true
 ] call CBA_Settings_fnc_init;
 
