@@ -303,7 +303,7 @@ class CfgVehicles {
                         showDisabled = 0;
                         icon = QPATHTOF(ui\icon_aedx_volume_off.paa);
                     };
-                    class KAT_AED_X_addSound : AED_X_removeSound {
+                    class KAT_AED_X_addSound : KAT_AED_X_removeSound {
                         displayName = CSTRING(AEDX_Action_EnableAudio);
                         condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(AED_X_VitalsMonitor_Volume), false])));
                         statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_VitalsMonitor_Volume), true, true)]);

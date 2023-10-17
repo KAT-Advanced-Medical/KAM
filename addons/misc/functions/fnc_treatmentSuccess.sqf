@@ -38,7 +38,7 @@ if (!isNil "_endInAnim") then {
 [QACEGVAR(common,setAnimSpeedCoef), [_medic, 1]] call CBA_fnc_globalEvent;
 
 if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
-    ACEGVAR(advanced_fatigue,setAnimExclusions) deleteAt (ACEGVAR(advanced_fatigue,setAnimExclusions) find QUOTE(ACE_ADDON));
+    ACEGVAR(advanced_fatigue,setAnimExclusions) deleteAt (ACEGVAR(advanced_fatigue,setAnimExclusions) find QUOTE(ACE_ADDON(medical_treatment)));
 };
 
 // Call treatment specific success callback
