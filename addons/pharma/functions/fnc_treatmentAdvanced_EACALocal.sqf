@@ -52,6 +52,9 @@ if (_IVactual > 1) then {
     if (_random <= _ph) then {
         {
             private _part = _x;
+            if ([_patient,_x] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) then {
+                continue;
+            };
             {
                 _x params ["_classID", "_amountOf", "", "_damageOf"];
                 private _bandagedWoundsOnPart = _bandagedWounds get _part;
