@@ -336,7 +336,7 @@ private _fnc_processWounds = {
 [GET_STITCHED_WOUNDS(_target), "[S] %1", [0.7, 0.7, 0.7, 1]] call _fnc_processWounds;
 
 if (_ptxEntry isNotEqualTo []) then {
-    _woundEntries pushBack _ptxEntry;
+    _woundEntries append _ptxEntry;
 };
 
 // Handle no wound entries
