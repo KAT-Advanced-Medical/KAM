@@ -38,7 +38,7 @@
 #define GETEGVAR(var1,var2,var3) GETMVAR(EGVAR(var1,var2),var3)
 
 #define ARR_SELECT(ARRAY,INDEX,DEFAULT) (if (count ARRAY > INDEX) then {ARRAY select INDEX} else {DEFAULT})
-
+#define ANY_OF(ARRAY,CONDITION) (ARRAY findIf {CONDITION} != -1)
 
 #define MACRO_ADDWEAPON(WEAPON,COUNT) class _xx_##WEAPON { \
     weapon = #WEAPON; \
@@ -152,9 +152,9 @@
 #define IS_BLEEDING(unit)           (GET_WOUND_BLEEDING(unit) > 0)
 #define IS_IN_PAIN(unit)            (unit getVariable [VAR_IN_PAIN, false])
 #define IS_UNCONSCIOUS(unit)        (unit getVariable [VAR_UNCON, false])
-#define GET_OPEN_WOUNDS(unit)       (unit getVariable [VAR_OPEN_WOUNDS, []])
-#define GET_BANDAGED_WOUNDS(unit)   (unit getVariable [VAR_BANDAGED_WOUNDS, []])
-#define GET_STITCHED_WOUNDS(unit)   (unit getVariable [VAR_STITCHED_WOUNDS, []])
+#define GET_OPEN_WOUNDS(unit)       (unit getVariable [VAR_OPEN_WOUNDS, createHashMap])
+#define GET_BANDAGED_WOUNDS(unit)   (unit getVariable [VAR_BANDAGED_WOUNDS, createHashMap])
+#define GET_STITCHED_WOUNDS(unit)   (unit getVariable [VAR_STITCHED_WOUNDS, createHashMap])
 #define GET_DAMAGE_THRESHOLD(unit)  (unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)])
 
 #define GET_PAIN_PERCEIVED(unit)    (0 max (GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1)
@@ -243,3 +243,6 @@
 #define GET_BLOOD_PRESSURE(unit)       ([unit] call EFUNC(circulation,getBloodPressure))
 #define VAR_BLOODPRESSURE_CHANGE       QEGVAR(circulation,bloodPressureChange)
 #define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])
+
+// Pharmacy
+#define GET_BLOOD_LOSS(unit)           ([unit] call EFUNC(pharma,getBloodLoss))

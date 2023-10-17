@@ -1611,7 +1611,7 @@
             <Portuguese>Suprime a dor</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_reorientationChance">
-            <English>Chance for succesful reorientation</English>
+            <English>Maximum Reorientation Success Chance</English>
             <Polish>Szansa na pomyślne ocucenie</Polish>
             <Chinesesimp>成功进行恢复体态的几率</Chinesesimp>
             <Italian>Possibilità di un riorientamento riuscito</Italian>
@@ -1624,7 +1624,7 @@
             <Portuguese>Chance de reorientação bem-sucedida</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_carbonateChance">
-            <English>Chance for succesful Carbonate use</English>
+            <English>Maximum Carbonate Success Chance</English>
             <Polish>Szansa na pomyślne użycie soli trzeźwiących</Polish>
             <Chinesesimp>成功使用碳酸盐的几率</Chinesesimp>
             <Italian>Possibilità di utilizzare con successo il carbonato</Italian>
@@ -2831,6 +2831,12 @@
             <Korean>[KAM] 의약품 상자</Korean>
             <Portuguese>[KAM] Caixa de medicamentos</Portuguese>
             <Spanish>[KAM] Caja de medicina</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_staminaMedication">
+            <English>Medication Modifies Stamina</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_staminaMedication_DESC">
+            <English>Allow certain medications to modify (vanilla/advanced fatigue) stamina as a side effect</English>
         </Key>
     </Package>
 </Project>

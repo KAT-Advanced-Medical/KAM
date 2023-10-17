@@ -44,7 +44,7 @@ private _ctrlInjuries = _display displayCtrl IDC_INJURIES;
 
 // Update body image
 private _ctrlBodyImage = _display displayCtrl IDC_BODY_GROUP;
-[_ctrlBodyImage, ACEGVAR(medical_gui,target)] call ACEFUNC(medical_gui,updateBodyImage);
+[_ctrlBodyImage, ACEGVAR(medical_gui,target), ACEGVAR(medical_gui,selectedBodyPart)] call ACEFUNC(medical_gui,updateBodyImage);
 
 // Update activity and quick view logs
 private _ctrlActivityLog = _display displayCtrl IDC_ACTIVITY;

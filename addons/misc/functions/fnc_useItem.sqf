@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Glowbal, mharis001
+ * Modified: Blue
  * Uses one of the treatment items. Respects the priority defined by the allowSharedEquipment setting.
  *
  * Arguments:
@@ -24,8 +25,8 @@ scopeName "Main";
 private _sharedUseOrder = [[_patient, _medic], [_medic, _patient], [_medic]] select ACEGVAR(medical_treatment,allowSharedEquipment);
 private _useOrder = [];
 
-private _vehicle = vehicle _medic;
-private _vehicleCondition = _vehicle != _medic && _vehicle isEqualTo (vehicle _patient);
+private _vehicle = objectParent _medic;
+private _vehicleCondition = !(isNull _vehicle) && _vehicle isEqualTo (objectParent _patient);
 private _vehicleIndex = -1;
 
 if (GVAR(allowSharedVehicleEquipment) > 0 && _vehicleCondition) then {

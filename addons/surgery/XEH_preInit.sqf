@@ -167,11 +167,11 @@ PREP_RECOMPILE_END;
 
 // Sets time to debride a patient
 [
-    QGVAR(debrideTime),
+    QGVAR(woundDebrideTime),
     "SLIDER",
     LLSTRING(SETTING_DebrideTime),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [0,100,20,0],
+    [0.1, 60, 5, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -181,7 +181,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_NPWTTime),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [0,100,20,0],
+    [0.1, 60, 5, 1],
     true
 ] call CBA_Settings_fnc_init;
 

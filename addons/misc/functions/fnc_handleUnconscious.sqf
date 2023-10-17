@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: commy2
+ * Modified: Blue
  * Handles consciousness change of a unit while dragging / carrying.
  *
  * Arguments:
@@ -16,6 +17,7 @@
 */
 
 params ["_unit"];
+
 private _player = ACE_player;
 
 if (_player getVariable [QACEGVAR(dragging,isDragging), false]) then {

@@ -8,6 +8,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\scalpel.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Scalpel_DescShort);
+        ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
         }; 
@@ -18,6 +19,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\retractor.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Retractor_DescShort);
+        ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
@@ -28,6 +30,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\clamp.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Clamp_DescShort);
+        ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
@@ -38,6 +41,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\plate.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Plate_DescShort);
+        ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.3;
         }; 
@@ -48,6 +52,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\vacuum.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Vacuum_DescShort);
+        ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 5;
         };

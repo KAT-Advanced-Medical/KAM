@@ -368,30 +368,6 @@
             <Czech>Čas pro sundání turniketu</Czech>
             <Italian>Tempo per rimuovere il laccio emostatico</Italian>
         </Key>
-        <Key ID="STR_KAT_Misc_SETTING_arsenalMedCategory">
-            <English>Arsenal Medical category</English>
-            <Czech>Zdravotnická kategorie arzenálu</Czech>
-            <French>Catégorie médicale pour l'arsenal</French>
-            <Japanese>武器庫医療分類</Japanese>
-            <Spanish>Categoria médica en Arsenal</Spanish>
-            <Italian>Categoria medica nell'Arsenale</Italian>
-            <Polish>Kategoria medyczna w Arsenale</Polish>
-            <German>Arsenal Medizin-Kategorie</German>
-            <Korean>아스널 의료 카테고리</Korean>
-            <Portuguese>Categoria Médica do Arsenal</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Misc_SETTING_arsenalMedCategory_Desc">
-            <English>Enable medical category for arsenal and relocate all medical related items to it?</English>
-            <Czech>Povolit zdravotnickou kategorii pro arzenál a přemístit do ní všechny zdravotnické věci?</Czech>
-            <French>Active la catégorie médicale pour l'arsenal et y affecte tous les objets médicaux ?</French>
-            <Japanese>武器庫の医療分類を有効にして、すべての医療関連アイテムをそこに再配置しますか?</Japanese>
-            <Spanish>¿Habilitar la categoría médica para el arsenal y mover todos los elementos médicos a este?</Spanish>
-            <Italian>Abilita la categoria medica nell'arsernale e muovi tutti gli oggetti medici in questa categoria?</Italian>
-            <Polish>Włączyć kategorię medyczną dla arsenału i przenieść do niej wszystkie przedmioty związane z medycyną?</Polish>
-            <German>Aktiviere Medizin-Kategorie für das Arsenal und verschiebe alle medizinischen Gegenstände dort hin?</German>
-            <Korean>아스널의 의료 카테고리를 활성화하고 모든 의료 관련 아이템을 아스널로 재배치합니까?</Korean>
-            <Portuguese>Ativar categoria médica para arsenal e realocar todos os itens médicos relacionados a ela?</Portuguese>
-        </Key>
         <Key ID="STR_KAT_Misc_Stretcher_Display">
             <English>Stretcher</English>
             <Japanese>担架</Japanese>
@@ -866,6 +842,23 @@
             <Japanese>%1 を担ぐのを止めました</Japanese>
             <French>Arrêt du transport de %1</French>
             <Korean>%1의 운반 취소함</Korean>
+        </Key>
+        <Key ID="STR_ACE_Medical_Category">
+            <English>Medical</English>
+            <Czech>Zdravotní</Czech>
+            <French>Médical</French>
+            <German>Sanitäter</German>
+            <Italian>Medico</Italian>
+            <Polish>Medyczne</Polish>
+            <Portuguese>Médico</Portuguese>
+            <Russian>Медик</Russian>
+            <Spanish>Médico</Spanish>
+            <Hungarian>Orvosi</Hungarian>
+            <Japanese>治療</Japanese>
+            <Korean>의료</Korean>
+            <Chinesesimp>医疗设定</Chinesesimp>
+            <Chinese>醫療設定</Chinese>
+            <Turkish>Medikal</Turkish>
         </Key>
     </Package>
 </Project>

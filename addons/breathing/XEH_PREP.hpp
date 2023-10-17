@@ -12,8 +12,6 @@ PREP(lowSpO2pp);
 PREP(refillOxygenTank);
 PREP(treatmentAdvanced_chestSeal);
 PREP(treatmentAdvanced_chestSealLocal);
-PREP(treatmentAdvanced_Cyanosis);
-PREP(treatmentAdvanced_CyanosisLocal);
 PREP(treatmentAdvanced_hemopneumothorax);
 PREP(treatmentAdvanced_hemopneumothoraxLocal);
 PREP(treatmentAdvanced_pulseoximeter);

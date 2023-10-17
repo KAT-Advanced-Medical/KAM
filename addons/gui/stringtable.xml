@@ -46,5 +46,23 @@
             <Japanese>異常値の場合、AED-Xやパルスオキシメーターの活動ログを赤色にします</Japanese>
             <Portuguese>Exibe os registros de atividade em vermelhos se algum valor for crítico</Portuguese>
         </Key>
+        <Key ID="STR_KAT_GUI_Status_NoIv">
+            <English>No pushed fluids</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SETTING_showInactiveStatuses">
+            <English>Show Inactive Statuses</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SETTING_showBleedRate">
+            <English>Show Bleed Rate</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SETTING_showBleedRate_DESC">
+            <English>Display bleed rate (slow/moderate/severe/massive)</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
+            <English>Overlay Selected Body Part</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SETTING_showPatientSideLabels">
+            <English>Label Patient Sides</English>
+        </Key>
     </Package>
 </Project>

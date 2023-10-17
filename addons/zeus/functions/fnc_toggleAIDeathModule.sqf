@@ -34,7 +34,7 @@ if ((_mouseOver select 0) != "OBJECT") then {
             if !(isPlayer _unit) then {
                 private _enabled = _unit getVariable [QEGVAR(misc,PreventInstantAIDeath), false];
 
-                if (!_enabled) then {
+                if (_enabled) then {
                     [LSTRING(toggleAIDeath_Module_Toggled), ACELSTRING(Common,Enabled)] call FUNC(showMessage);
                 } else {
                     [LSTRING(toggleAIDeath_Module_Toggled), ACELSTRING(Common,Disabled)] call FUNC(showMessage);
