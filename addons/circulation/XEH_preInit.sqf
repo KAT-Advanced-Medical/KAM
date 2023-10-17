@@ -333,6 +333,8 @@ PREP_RECOMPILE_END;
     LLSTRING(SETTING_AdvRhythm_Enable),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [true],
+    true,
+    {},
     true
 ] call CBA_Settings_fnc_init;
 
