@@ -248,16 +248,19 @@
             <English>Penthrox Inhaler</English>
             <Japanese>ペンスロックス吸入器</Japanese>
             <French>Inhalateur de Penthrox</French>
+            <Korean>펜트록스 흡입기</Korean>
         </Key>
         <Key ID="STR_KAT_Pharma_Use_Penthrox">
             <English>Use Penthrox Inhaler</English>
             <Japanese>ペンスロックス吸入器を使う</Japanese>
             <French>Utiliser l'inhalateur de Penthrox</French>
+            <Korean>펜트록스 흡입기 사용</Korean>
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
             <English>Used to manage moderate pain</English>
             <Japanese>中度の痛みの対処に使用されます</Japanese>
             <French>Utilisé pour traiter les douleurs modérées</French>
+            <Korean>중간 정도의 통증 관리에 사용됩니다</Korean>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -2834,9 +2837,11 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication">
             <English>Medication Modifies Stamina</English>
+            <Korean>약물이 스태미나를 조절합니다</Korean>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication_DESC">
             <English>Allow certain medications to modify (vanilla/advanced fatigue) stamina as a side effect</English>
+            <Korean>부작용으로 특정 약물이 (바닐라/고급 피로도) 스태미나를 조절할 수 있도록 허용</Korean>
         </Key>
     </Package>
 </Project>
