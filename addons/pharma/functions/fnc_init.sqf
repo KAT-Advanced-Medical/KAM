@@ -127,7 +127,7 @@ if (GVAR(coagulation)) then {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, []];
+        private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, createHashMap];
         private _pulse = _unit getVariable [VAR_HEART_RATE, 80];
         private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
 
