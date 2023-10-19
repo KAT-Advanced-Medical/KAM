@@ -817,7 +817,7 @@
             <French>Cathéther intra-veineux</French>
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Catetere intravenoso</Italian>
-            <Japanese>静脈注射(IV)針</Japanese>
+            <Japanese>経静脈注射(IV)針</Japanese>
             <Russian>Внутривенное игла</Russian>
             <Portuguese>Cateter Intravenoso</Portuguese>
         </Key>
@@ -849,7 +849,7 @@
             <French>Cathéther intra-osseux</French>
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Sistema d'infusione intraossea</Italian>
-            <Japanese>骨髄穿刺注射(IO)針</Japanese>
+            <Japanese>経骨髄注射(IO)針</Japanese>
             <Russian>Внутривенное игла</Russian>
             <Portuguese>Infusão Intraóssea</Portuguese>
         </Key>
@@ -2838,10 +2838,12 @@
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication">
             <English>Medication Modifies Stamina</English>
             <Korean>약물이 스태미나를 조절합니다</Korean>
+            <Japanese>薬品によるスタミナの変化</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication_DESC">
             <English>Allow certain medications to modify (vanilla/advanced fatigue) stamina as a side effect</English>
             <Korean>부작용으로 특정 약물이 (바닐라/고급 피로도) 스태미나를 조절할 수 있도록 허용</Korean>
+            <Japanese>特定の薬の副作用としてスタミナ(バニラ/高度な疲労)を変更することを許可する</Japanese>
         </Key>
     </Package>
 </Project>

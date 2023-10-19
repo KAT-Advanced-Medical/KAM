@@ -29,7 +29,7 @@
             <Italian>Ritmo avanzato attivato?</Italian>
             <Spanish>¿Ritmo avanzado activado?</Spanish>
             <Czech>Pokročilý Rytmus aktivován?</Czech>
-            <Japanese>高度な心電図波形 を有効化しますか?</Japanese>
+            <Japanese>高度な心調律 を有効化しますか?</Japanese>
             <Russian>Продвинутый ритм активирован?</Russian>
             <Portuguese>Ritmo avançado ativado?</Portuguese>
         </Key>
@@ -819,7 +819,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AnalyzeRhythm">
             <English>Analyze Rhythm</English>
-            <Japanese>波形を測定</Japanese>
+            <Japanese>心調律を測定</Japanese>
             <French>Chiffrer la fréquence cardiaque</French>
             <Korean>리듬 분석</Korean>
         </Key>
@@ -1277,11 +1277,13 @@
             <English>HR</English>
             <French>FC</French>
             <Korean>심박수</Korean>
+            <Japanese>HR</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PR">
             <English>PR</English>
             <French>FP</French>
             <Korean>맥박</Korean>
+            <Japanese>PR</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -2086,31 +2088,31 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_AdvRhythms">
             <English>Advanced Rhythms</English>
-            <Japanese>高度な心電図波形</Japanese>
+            <Japanese>高度な心調律</Japanese>
             <French>Rythmes avancés</French>
             <Korean>고급 리듬</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate">
             <English>Can Deteriorate</English>
-            <Japanese>心機能低下の可能性</Japanese>
+            <Japanese>調律状態悪化の可能性</Japanese>
             <French>Possibilité de diminution de la fonction cardiaque</French>
             <Korean>심장기능이 악화될 수 있음</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeMax">
             <English>Random Deteriorate Time Maximum</English>
-            <Japanese>心機能低下するランダムな時間の最大値</Japanese>
+            <Japanese>調律状態悪化するランダムな時間の最大値</Japanese>
             <French>Délai aléatoire maximum jusqu'à l'arrêt cardiaque</French>
             <Korean>심장기능 무작위 악화 시간 최대값</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeWeight">
             <English>Random Deteriorate Time Weight</English>
-            <Japanese>心機能低下するランダムな時間の重みづけ</Japanese>
+            <Japanese>調律状態悪化するランダムな時間の重みづけ</Japanese>
             <French>Poids temporel de la détérioration de la fonction cardiaque</French>
             <Korean>심장기능 무작위 악화 시간 가중치</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateAfterTreatment">
             <English>Deteriorate After Treatment</English>
-            <Japanese>治療後の心機能低下</Japanese>
+            <Japanese>治療後の調律状態悪化</Japanese>
             <French>Diminution de la fonction cardiaque après le traitement</French>
             <Korean>심장기능 치료 후 악화</Korean>
         </Key>
@@ -2146,13 +2148,13 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
-            <Japanese>ハードコア心電図波形</Japanese>
+            <Japanese>ハードコア心調律</Japanese>
             <French>Rythmes cardiaques intenses</French>
             <Korean>하드코어 리듬</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_hardcoreDeteriorationChance">
             <English>Hardcore Deterioration Chance</English>
-            <Japanese>ハードコア心機能低下確率</Japanese>
+            <Japanese>ハードコア調律状態悪化</Japanese>
             <French>Chance de rythmes cardiaques intenses</French>
             <Korean>하드코어 심장기능 악화 확률</Korean>
         </Key>
@@ -2184,6 +2186,7 @@
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4</English>
             <French>AED-X: FP: %1 PA: %2/%3 SpO2: %4</French>
             <Korean>X-시리즈 자동심장충격기: 맥박: %1 혈압: %2/%3 산소포화도: %4</Korean>
+            <Japanese>AED-X: 脈拍: %1 血圧: %2/%3 SpO2: %4</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>

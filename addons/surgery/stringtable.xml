@@ -85,7 +85,7 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の息はきつく金属臭がします</Japanese>
+            <Japanese>患者の吐息は掠れて金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
             <Portuguese>O hálito do paciente é aspero e metálico</Portuguese>
         </Key>
@@ -98,7 +98,7 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の息はきつく金属臭がします</Japanese>
+            <Japanese>患者の吐息は掠れて金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
             <Portuguese>O hálito do paciente é aspero e metálico</Portuguese>
         </Key>
@@ -111,7 +111,7 @@
             <French>L'haleine du patient est légèrement fruitée</French>
             <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
             <German>Der Atem des Patienten ist leicht fruchtig</German>
-            <Japanese>患者の息は少し果物臭がします</Japanese>
+            <Japanese>患者の吐息は少し果物臭がします</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
             <Portuguese>O hálito do paciente é ligeiramente frutado</Portuguese>
         </Key>
@@ -124,7 +124,7 @@
             <French>L'haleine du patient est bonne</French>
             <Korean>환자의 호흡이 정상입니다</Korean>
             <German>Der Atem des Patienten ist in Ordnung</German>
-            <Japanese>患者の息は普通です</Japanese>
+            <Japanese>患者の吐息は一般的です</Japanese>
             <Spanish>El aliento del paciente es normal</Spanish>
             <Portuguese>O hálito do paciente é normal</Portuguese>
         </Key>
@@ -267,7 +267,7 @@
             <French>Echec du pansement</French>
             <Korean>상처 치료 실패</Korean>
             <German>Wundverband fehlgeschlagen</German>
-            <Japanese>創面切除に失敗しました</Japanese>
+            <Japanese>創縁切除に失敗しました</Japanese>
             <Spanish>Vendaje al vacío falló</Spanish>
             <Portuguese>Falha no curativo da ferida</Portuguese>
         </Key>
@@ -292,7 +292,7 @@
             <French>Utilisé pour inciser et débrider les plaies</French>
             <Korean>절개 부위를 생성하고 상처를 제거하는 데 사용됩니다.</Korean>
             <German>Für das Durchführen von Inzisionen und das Debridieren von Wunden</German>
-            <Japanese>切開とデブリードマン(創面切除)に使用する</Japanese>
+            <Japanese>切開と創縁切除に使用する</Japanese>
             <Spanish>Usado para crear incisiones y desbridar heridas</Spanish>
             <Polish>Służy do tworzenia nacięć i oczyszczania ran</Polish>
             <Portuguese>Usado para criar incisões e desbridar feridas</Portuguese>
@@ -423,7 +423,7 @@
             <French>Irriguer la plaie</French>
             <Korean>상처 세척</Korean>
             <German>Wunde spülen</German>
-            <Japanese>創面を洗浄</Japanese>
+            <Japanese>創面を灌注</Japanese>
             <Spanish>Irrigar herida</Spanish>
             <Portuguese>Irrigar ferida</Portuguese>
         </Key>
@@ -436,7 +436,7 @@
             <French>Irriguation</French>
             <Korean>세척 중</Korean>
             <German>Spülen</German>
-            <Japanese>洗浄中</Japanese>
+            <Japanese>灌注中</Japanese>
             <Spanish>Irrigando</Spanish>
             <Portuguese>Irrigando</Portuguese>
         </Key>
@@ -475,7 +475,7 @@
             <French>Débrider les plaies</French>
             <Korean>괴사조직 제거</Korean>
             <German>Wunde debridieren</German>
-            <Japanese>デブリードマン(創面切除)</Japanese>
+            <Japanese>創縁切除</Japanese>
             <Spanish>Desbridar heridas</Spanish>
             <Portuguese>Desbridar feridas</Portuguese>
         </Key>
@@ -488,7 +488,7 @@
             <French>Débridement</French>
             <Korean>제거 중</Korean>
             <German>Debridement</German>
-            <Japanese>創面切除中</Japanese>
+            <Japanese>創縁切除中</Japanese>
             <Spanish>Desbridando</Spanish>
             <Portuguese>Desbridando</Portuguese>
         </Key>
@@ -501,7 +501,7 @@
             <French>Pansement sous vide</French>
             <Korean>진공 드레싱</Korean>
             <German>Vakuumverband</German>
-            <Japanese>吸引ドレッシング (NPWT)</Japanese>
+            <Japanese>吸引被覆 (NPWT)</Japanese>
             <Spanish>Vendaje al vacío</Spanish>
             <Portuguese>Bandagem a vácuo</Portuguese>
         </Key>
@@ -527,7 +527,7 @@
             <French>Appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용</Korean>
             <German>NPWT-Verband anlegen</German>
-            <Japanese>吸引ドレッシング(NPWT)を使う</Japanese>
+            <Japanese>吸引被覆(NPWT)を行う</Japanese>
             <Spanish>Colocar vendaje al vacío</Spanish>
             <Portuguese>Aplicar curativo NPWT</Portuguese>
         </Key>
@@ -785,7 +785,7 @@
             <French>Règle le temps nécessaire pour effectuer des actions chirurgicales intermédiaires, comme exposer ou irriguer</French>
             <Korean>노출 및 세척같은 중간 수술 조치를 수행하는 데 걸리는 시간을 설정합니다.</Korean>
             <German>Legt fest, wie lange es dauert, chirurgische Zwischenschritte wie Freilegung und Spülung durchzuführen</German>
-            <Japanese>露出や洗浄などの中間の外科的処置を実行するのにかかる時間を設定します</Japanese>
+            <Japanese>露出や灌注などの中間の外科的処置を実行するのにかかる時間を設定します</Japanese>
             <Spanish>Establece cuanto tiempo tarda realizar acciones quirúrgicas como exponer o irrigar.</Spanish>
             <Portuguese>Estabelece quanto tempo leva para realizar ações cirúrgicas, como expor ou irrigar.</Portuguese>
         </Key>
@@ -980,7 +980,7 @@
             <French>Temps pour débrider un patient</French>
             <Korean>환자의 상처 제거 시간</Korean>
             <German>Zeit für die Debridierung eines Patienten</German>
-            <Japanese>デブリードマンの所要時間</Japanese>
+            <Japanese>創縁切除の所要時間</Japanese>
             <Spanish>Tiempo para desbridar un paciente</Spanish>
             <Portuguese>Duração do desbridamento de um paciente</Portuguese>
         </Key>
@@ -993,14 +993,14 @@
             <French>Temps pour appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용 시간</Korean>
             <German>Zeit zum Anlegen eines NPWT-Verbandes</German>
-            <Japanese>NPWTドレッシングの使用時間</Japanese>
+            <Japanese>NPWT被覆の使用時間</Japanese>
             <Spanish>Tiempo para colocar un vendaje al vacío</Spanish>
             <Portuguese>Duração do aplique de curativo a vácuo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_MedLevel">
             <English>Allow Debridement</English>
             <Spanish>Permitir desbridamiento</Spanish>
-            <Japanese>デブリードマンの許可</Japanese>
+            <Japanese>創縁切除の許可</Japanese>
             <German>Benötigter medizinischer Grad, um Debridement &amp; NPWT-Verband zu nutzen</German>
             <French>Autoriser le débridement</French>
             <Korean>괴사조직 제거 허용</Korean>
@@ -1009,7 +1009,7 @@
         <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_Location">
             <English>Locations Debridement</English>
             <Spanish>Lugares para el desbridamiento</Spanish>
-            <Japanese>デブリードマンの使用可能場所</Japanese>
+            <Japanese>創縁切除の使用可能場所</Japanese>
             <German>Ort für die durchführung von Debridement &amp; NPWT-Verband</German>
             <French>Lieux permettant le débridement</French>
             <Korean>괴사조직 위치</Korean>
