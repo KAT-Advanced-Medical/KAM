@@ -989,10 +989,12 @@
         <Key ID="STR_KAT_Breathing_SETTING_showCyanosis">
             <English>Show cyanosis</English>
             <Korean>치아노제 표시</Korean>
+            <Japanese>チアノーゼの表示</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_showCyanosis_DESC">
             <English>Shows cyanosis of patient in overview tab</English>
             <Korean>개요 탭에 환자의 치아노제를 표시합니다</Korean>
+            <Japanese>チアノーゼを患者の概況に表示する</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
