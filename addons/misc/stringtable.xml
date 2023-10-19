@@ -843,22 +843,5 @@
             <French>Arrêt du transport de %1</French>
             <Korean>%1의 운반 취소함</Korean>
         </Key>
-        <Key ID="STR_ACE_Medical_Category">
-            <English>Medical</English>
-            <Czech>Zdravotní</Czech>
-            <French>Médical</French>
-            <German>Sanitäter</German>
-            <Italian>Medico</Italian>
-            <Polish>Medyczne</Polish>
-            <Portuguese>Médico</Portuguese>
-            <Russian>Медик</Russian>
-            <Spanish>Médico</Spanish>
-            <Hungarian>Orvosi</Hungarian>
-            <Japanese>治療</Japanese>
-            <Korean>의료</Korean>
-            <Chinesesimp>医疗设定</Chinesesimp>
-            <Chinese>醫療設定</Chinese>
-            <Turkish>Medikal</Turkish>
-        </Key>
     </Package>
 </Project>
