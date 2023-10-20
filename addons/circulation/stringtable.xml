@@ -823,6 +823,7 @@
             <French>Chiffrer la fréquence cardiaque</French>
             <Korean>리듬 분석</Korean>
             <German>Rhythmus prüfen</German>
+            <Spanish>Analizar ritmo</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_DogTag">
             <English>Check Dogtags</English>
@@ -910,6 +911,7 @@
             <French>Placer les électrodes du AED</French>
             <Korean>자동심장충격기 패드 붙이기</Korean>
             <German>AED-Pads Platzieren</German>
+            <Spanish>Colocar electrodos del DEA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDStation_Action_PlacePads">
             <English>Station: Place AED Pads</English>
@@ -917,6 +919,7 @@
             <French>Station: Placer les électrodes du AED</French>
             <Korean>자동심장충격기 패드 붙이기(바닥)</Korean>
             <German>Station: AED-Pads platzieren</German>
+            <Spanish>Estación: Colocar electrodos del AED</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDVehicle_Action_PlacePads">
             <English>Vehicle: Place AED Pads</English>
@@ -924,6 +927,7 @@
             <French>Véhicule: Placer les électrodes du AED</French>
             <Korean>자동심장충격기 패드 붙이기(차량)</Korean>
             <German>Fahrzeug: AED-Pads platzieren</German>
+            <Spanish>Vehículo: Colocar electrodos del DEA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_PlacePads">
             <English>Place AED-X Pads</English>
@@ -931,6 +935,7 @@
             <French>Placer les électrodes du AED-X</French>
             <Korean>X-시리즈 자동심장충격기 패드 붙이기</Korean>
             <German>AED-X-Pads Platzieren</German>
+            <Spanish>Colocar electrodos del DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_PlacePads">
             <English>Station: Place AED-X Pads</English>
@@ -938,6 +943,7 @@
             <French>Station: Placer les électrodes du AED-X</French>
             <Korean>X-시리즈 자동심장충격기 패드 붙이기(바닥)</Korean>
             <German>Station: AED-X-Pads platzieren</German>
+            <Spanish>Estación: Colocar electrodos del DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_PlacePads">
             <English>Vehicle: Place AED-X Pads</English>
@@ -945,6 +951,7 @@
             <French>Véhicule: Placer les électrodes du AED-X</French>
             <Korean>X-시리즈 자동심장충격기 패드 붙이기(차량)</Korean>
             <German>Fahrzeug: AED-X-Pads platzieren</German>
+            <Spanish>Vehículo: Colocar electrodos del DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads">
             <English>Remove Defibrillator Pads</English>
@@ -952,6 +959,7 @@
             <French>Retirer les électrodes du défibrilateur</French>
             <Korean>자동심장충격기 패드 떼기</Korean>
             <German>Entferne Defibrillator-Pads</German>
+            <Spanish>Quitar electrodos del desfibrilador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_PlacePads_Progress">
             <English>Placing Defibrillator Pads</English>
@@ -959,6 +967,7 @@
             <French>Placer les électrodes du défibrilateur</French>
             <Korean>자동심장충격기 패드 붙이는 중</Korean>
             <German>Platziere Defibrillator-Pads</German>
+            <Spanish>Colocando electrodos del desfibrilador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads_Progress">
             <English>Removing Defibrillator Pads</English>
@@ -966,6 +975,7 @@
             <French>Retrait des électrodes du défibrillateur</French>
             <Korean>자동심장충격기 패드 떼는 중</Korean>
             <German>Entferne Defibrillator-Pads</German>
+            <Spanish>Quitando electrodos del desfibrilador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Shock">
             <English>Administer Shock</English>
@@ -973,6 +983,7 @@
             <French>Délivrer le choc</French>
             <Korean>쇼크 실시</Korean>
             <German>Schock verabreichen</German>
+            <Spanish>Administrar descarga</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Charge">
             <English>Charge Defibrillator</English>
@@ -980,6 +991,7 @@
             <French>Charger le défibrillateur</French>
             <Korean>자동심장충격기 충전</Korean>
             <German>Defibrillator aufladen</German>
+            <Spanish>Cargar desfibrilador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
@@ -987,6 +999,7 @@
             <French>Annuler la charge du défibrillateur</French>
             <Korean>충전 취소</Korean>
             <German>Laden abbrechen</German>
+            <Spanish>Cancelar carga</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_ViewMonitor">
             <English>View Monitor</English>
@@ -994,6 +1007,7 @@
             <French>Visualiser le moniteur</French>
             <Korean>보니터 보기</Korean>
             <German>Monitor anzeigen</German>
+            <Spanish>Ver monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_ConnectMonitor">
             <English>Connect Vitals Monitor</English>
@@ -1001,6 +1015,7 @@
             <French>Connecter les capteurs de signe vitaux à l'AED-X</French>
             <Korean>환자감시장치 연결</Korean>
             <German>Vitalmonitor anschließen</German>
+            <Spanish>Conectar monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_ConnectMonitor">
             <English>Station: Connect Vitals Monitor</English>
@@ -1008,6 +1023,7 @@
             <French>Station: Connecter les capteurs de signe vitaux à l'AED-X</French>
             <Korean>환자감시장치 연결(바닥)</Korean>
             <German>Station: Vitalmonitor anschließen</German>
+            <Spanish>Estación: Conectar monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_ConnectMonitor">
             <English>Vehicle: Connect Vitals Monitor</English>
@@ -1047,6 +1063,7 @@
             <French>Activer le son des signes vitaux de l'AED-X</French>
             <Korean>환자감시장치 소리 켜기</Korean>
             <German>Vitalmonitor-Ton AN</German>
+            <Spanish>Activar audio del monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_DisableAudio">
             <English>Vitals Monitor Audio OFF</English>
@@ -1054,6 +1071,7 @@
             <French>Désactiver le son des signes vitaux de l'AED-X</French>
             <Korean>환자감시장치 소리 끄기</Korean>
             <German>Vitalmonitor-Ton AUS</German>
+            <Spanish>Desactivar audio del monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_Connecting_Progress">
             <English>Connecting</English>
@@ -1173,6 +1191,7 @@
             <French>Placer l'AED-X</French>
             <Korean>X-시리즈 자동심장충격기 놓기</Korean>
             <German>Platzieren AED-X</German>
+            <Spanish>Colocar DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_PickUpAED">
             <English>Pick Up AED</English>
@@ -1196,6 +1215,7 @@
             <French>Récupérer l'AED-X</French>
             <Korean>X-시리즈 자동심장충격기 줍기</Korean>
             <German>Nehme AED-X auf</German>
+            <Spanish>Recoger DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ToggleVolume">
             <English>Toggle Volume</English>
@@ -1203,6 +1223,7 @@
             <French>Modifier le volume</French>
             <Korean>볼륨 토글</Korean>
             <German>Lautstärke umschalten</German>
+            <Spanish>Cambiar volumen</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_MeasureBloodPressure">
             <English>Measure Blood Pressure</English>
@@ -1210,6 +1231,7 @@
             <French>Mesurer la tension artérielle</French>
             <Korean>혈압 측정</Korean>
             <German>Blutdruck messen</German>
+            <Spanish>Medir la presión arterial</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CheckPads">
             <English>Check Pads</English>
@@ -1217,6 +1239,7 @@
             <French>Vérifier les électrodes</French>
             <Korean>패드를 확인하십시오</Korean>
             <German>Überprüfe Pads</German>
+            <Spanish>Comprobar electrodos</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SHOCKADVISED">
             <English>SHOCK ADVISED</English>
