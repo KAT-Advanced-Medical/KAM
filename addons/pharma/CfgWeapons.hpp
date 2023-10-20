@@ -207,8 +207,10 @@ class CfgWeapons {
         scope = 2;
         displayName = CSTRING(Etomidate_displayName);
         picture = QPATHTOF(ui\icon_etomidate.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\kat_vial\Vial.p3d);
         descriptionShort = CSTRING(Etomidate_DescShort);
+        hiddenSelections[]={"label_etomidate"};
+        hiddenSelectionsTextures[] = {QPATHTOF(models\kat_vial\Vial_ca.paa)};
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
         }; 
