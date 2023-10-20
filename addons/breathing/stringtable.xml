@@ -634,7 +634,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to perform the Needle Decompression and Drain Fluids treatment actions, used to treat Hemothorax or Tension Pneumothorax.</English>
-            <German>Der nötige medizinische Grad, um das AAT Kit nutzen zu können. Dieses wird zur Behandlung eines Hämatopneumothorax oder Spannungspneumothorax verwendet.</German>
+            <German>Benötigter medizinischer Grad, um das AAT Kit nutzen zu können. Dieses wird zur Behandlung eines Hämatopneumothorax oder Spannungspneumothorax verwendet.</German>
             <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie wykonać leczenie igłą dekompresyjną i drenaż opłucnej,  stosowane w leczeniu krwiaka opłucnej lub odmy prężnej.</Polish>
             <Spanish>El nivel médico mínimo requerido para que alguien pueda usar un AAT Kit, que se utiliza para tratar un hemotórax/neumotórax a tensión</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>

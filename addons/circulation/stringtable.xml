@@ -1747,7 +1747,7 @@
             <Japanese>設置されたAED/Xの取得/使用に訓練レベルを必要とさせます。</Japanese>
             <French>Niveau médical requis pour récupérer/interagir avec la station AED-X placée</French>
             <Korean>심장충격기 종류를 바닥에 설치하거나 줍는 상호작용을 하는 데 필요한 의료레벨 수준</Korean>
-            <German>Erforderlicher medizinischer Grad zum Aufnehmen/Interagieren mit der platzierten AED/X-Station</German>
+            <German>Benötigter medizinischer Grad, zum Aufnehmen/Interagieren mit der platzierten AED/X-Station</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
