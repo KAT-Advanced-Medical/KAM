@@ -1,4 +1,4 @@
-class cfgVehicles {
+class CfgVehicles {
     class Module_F;
 
     class GVAR(baseModule): Module_F {
@@ -13,32 +13,39 @@ class cfgVehicles {
         side=7; 
     };
 
-    class GVAR(manageAirway_module) : GVAR(baseModule) {
+    class GVAR(manageAirway_module): GVAR(baseModule) {
         curatorCanAttach = 1;
         displayName = CSTRING(manageAirway_Module_displayname);
         curatorInfoType = QGVAR(RscManageAirway);
-        icon = "\z\ace\addons\medical_gui\data\categories\airway_management.paa";
+        icon = QACEPATHTOF(medical_gui,data\categories\airway_management.paa);
     };
 
     class GVAR(bloodType_module): GVAR(baseModule) {
         curatorCanAttach = 1;
         displayName = CSTRING(bloodType_Module_displayname);
         curatorInfoType = QGVAR(RscChangeBloodType);
-        icon = "\z\ace\addons\medical_feedback\data\bloodVolume_1.paa";
+        icon = QACEPATHTOF(medical_feedback,data\bloodVolume_1.paa);
     };
 
-    class GVAR(asystole_module): GVAR(baseModule) {
+    class GVAR(cardiacState_module): GVAR(baseModule) {
         curatorCanAttach = 1;
-        displayName = CSTRING(shockablestate_Module_displayname);
-        curatorInfoType = QGVAR(RscAsystoleModule);
-        icon = "\z\ace\addons\medical_gui\data\categories\advanced_treatment.paa";
+        displayName = CSTRING(CardiacState_Module_displayname);
+        curatorInfoType = QGVAR(RscCardiacStateModule);
+        icon = QACEPATHTOF(medical_gui,data\categories\advanced_treatment.paa);
     };
 
     class GVAR(checkmedical_module): GVAR(baseModule) {
         curatorCanAttach = 1;
         displayName = CSTRING(checkmedical_Module_displayname);
         function = QFUNC(openMedicalMenu);
-        icon = "\z\ace\addons\medical_gui\data\categories\triage_card.paa";
+        icon = QACEPATHTOF(medical_gui,data\categories\triage_card.paa);
     };
 
+    class GVAR(toggleAIDeath_module): GVAR(baseModule) {
+        author = "Blue";
+        curatorCanAttach = 1;
+        displayName = CSTRING(toggleAIDeath_Module_displayname);
+        function = QFUNC(toggleAIDeathModule);
+        icon = QPATHTOF(ui\Icon_Module_Zeus_Prevent_AI_Death.paa);
+    };
 };

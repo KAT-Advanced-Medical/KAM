@@ -14,8 +14,8 @@
  *
 */
 
-
 params ["_control"];
+
 private _display = ctrlParent _control;
 private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
 _control ctrlRemoveAllEventHandlers "SetFocus";
@@ -28,11 +28,11 @@ if!(isNull attachedTo _logic) then {
     _sealCheckBox ctrlShow true;
     _sealText ctrlShow true;
 
-    _placeText ctrlSetText CSTRING(GasModule_createContaminatedObject);
+    _placeText ctrlSetText LLSTRING(GasModule_createContaminatedObject);
 } else {
     _sealCheckBox ctrlShow false;
     _sealText ctrlShow false;
-    _placetext ctrlSetText CSTRING(GasModule_createContaminatedZone);
+    _placetext ctrlSetText LLSTRING(GasModule_createContaminatedZone);
 };
 
 private _gasTypeCombo = _display displayCtrl 1615;

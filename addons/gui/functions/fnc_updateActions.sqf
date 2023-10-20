@@ -19,39 +19,55 @@ params ["_display"];
 
 private _selectedCategory = ACEGVAR(medical_gui,selectedCategory);
 
-// Clear all action buttons
-{
-    private _ctrl = _display displayCtrl _x;
-    _ctrl ctrlRemoveAllEventHandlers "ButtonClick";
-    _ctrl ctrlShow false;
-} forEach IDCS_ACTION_BUTTON;
+private _group = _display displayCtrl IDC_ACTION_BUTTON_GROUP;
+private _actionButtons = allControls _group;
 
 // Handle triage list (no actions shown)
 private _ctrlTriage = _display displayCtrl IDC_TRIAGE_CARD;
 private _showTriage = _selectedCategory == "triage";
 _ctrlTriage ctrlEnable _showTriage;
+_group ctrlEnable !_showTriage;
 
 lbClear _ctrlTriage;
 
 if (_showTriage) exitWith {
+    { ctrlDelete _x } forEach _actionButtons;
     [_ctrlTriage, ACEGVAR(medical_gui,target)] call ACEFUNC(medical_gui,updateTriageCard);
 };
 
 // Show treatment options on action buttons
-private _idcIndex = 0;
-
+private _shownIndex = 0;
 {
-    _x params ["_displayName", "_category", "_condition", "_statement"];
+    _x params ["_displayName", "_category", "_condition", "_statement", "_items"];
 
     // Check action category and condition
     if (_category == _selectedCategory && {call _condition}) then {
-        private _ctrl = _display displayCtrl (IDCS_ACTION_BUTTON select _idcIndex);
+        private _ctrl = if (_shownIndex >= count _actionButtons) then {
+            _actionButtons pushBack (_display ctrlCreate ["ACE_Medical_Menu_ActionButton", -1, _group]);
+        };
+        _ctrl = _actionButtons # _shownIndex;
+        _ctrl ctrlRemoveAllEventHandlers "ButtonClick";
+        _ctrl ctrlSetPositionY POS_H(1.1 * _shownIndex);
+        _ctrl ctrlCommit 0;
+
+        private _countText = "";
+        if (_items isNotEqualTo []) then {
+            if ("ACE_surgicalKit" in _items && {ACEGVAR(medical_treatment,consumeSurgicalKit) == 2}) then {
+                _items = ["ACE_suture"];
+            };
+            private _counts = [_items] call ACEFUNC(medical_gui,countTreatmentItems);
+            _countText = _counts call ACEFUNC(medical_gui,formatItemCounts);
+        };
+        _ctrl ctrlSetTooltip _countText;
+
         _ctrl ctrlSetText _displayName;
         _ctrl ctrlShow true;
 
         _ctrl ctrlAddEventHandler ["ButtonClick", _statement];
         _ctrl ctrlAddEventHandler ["ButtonClick", {ACEGVAR(medical_gui,pendingReopen) = true}];
 
-        _idcIndex = _idcIndex + 1;
+        _shownIndex = _shownIndex + 1;
     };
 } forEach ACEGVAR(medical_gui,actions);
+
+{ ctrlDelete _x } forEach (_actionButtons select [_shownIndex, 9999]);

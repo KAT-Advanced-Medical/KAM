@@ -21,3 +21,4 @@ params ["_medic", "_patient"];
 [_patient, "activity", LSTRING(RecoveryPosition_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 
 [QGVAR(recoveryPositionLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+[_patient, "kat_recoveryPosition", 2] call ACEFUNC(common,doAnimation);

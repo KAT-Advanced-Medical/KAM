@@ -57,4 +57,3 @@ if (random 100 <= GVAR(simpleChance)) then {
 _fractureArray set [_part, _liveFracture];
 
 _patient setVariable [QGVAR(fractures), _fractureArray, true];
-

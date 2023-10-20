@@ -37,10 +37,10 @@ private _fnc_error = {
 
 switch (false) do {
     case !(isNull _unit): {
-        [LSTRING(NothingSelected)] call _fnc_error;
+        [ACELSTRING(zeus,NothingSelected)] call _fnc_error;
     };
     case (_unit isKindOf "CAManBase"): {
-        [LSTRING(OnlyInfantry)] call _fnc_error;
+        [ACELSTRING(zeus,OnlyInfantry)] call _fnc_error;
     };
 };
 
@@ -50,7 +50,24 @@ private _fnc_onUnload = {
     deleteVehicle _logic;
 };
 
-private _fnc_sliderMove = {
+private _fnc_sliderMove_ptx = {
+    params ["_slider","_curPTX"];
+    private _idc = ctrlIDC _slider;
+    private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
+    private _unit = attachedTo _logic;
+    private _curVal = _unit getVariable [QEGVAR(breathing,pneumothorax), 0];
+    _slider ctrlSetTooltip format [LLSTRING(sliderFormat13was23), round(sliderPosition _slider), round _curVal];
+};
+
+private _sliderPTX = _display displayCtrl 16105;
+_sliderPTX sliderSetRange [0, 4];
+_sliderPTX sliderSetSpeed [1,10];
+private _curPTX = _unit getVariable [QEGVAR(breathing,pneumothorax), 0];
+_sliderPTX sliderSetPosition (round _curPTX);
+_sliderPTX ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove_ptx];
+[_sliderPTX,_curPTX] call _fnc_sliderMove_ptx;
+
+private _fnc_sliderMove_SPO2 = {
     params ["_slider","_curSpO2Val"];
     private _idc = ctrlIDC _slider;
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
@@ -59,19 +76,18 @@ private _fnc_sliderMove = {
     _slider ctrlSetTooltip format [LLSTRING(sliderFormat13was23), round(sliderPosition _slider), round _curVal, "%"];
 };
 
-private _slider = _display displayCtrl 16106;
-_slider sliderSetRange [0, 100];
-_slider sliderSetSpeed [1,10];
+private _sliderSPO2 = _display displayCtrl 16106;
+_sliderSPO2 sliderSetRange [0, 100];
+_sliderSPO2 sliderSetSpeed [1,10];
 private _curSpO2Val = _unit getVariable [QEGVAR(breathing,airwayStatus), 50];
-_slider sliderSetPosition (round _curSpO2Val);
-_slider ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove];
-[_slider,_curSpO2Val] call _fnc_sliderMove;
+_sliderSPO2 sliderSetPosition (round _curSpO2Val);
+_sliderSPO2 ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove_SPO2];
+[_sliderSPO2,_curSpO2Val] call _fnc_sliderMove_SPO2;
 
 (_display displayCtrl 16101) cbSetChecked (_unit getVariable [QEGVAR(airway,obstruction), false]);
 (_display displayCtrl 16102) cbSetChecked (_unit getVariable [QEGVAR(airway,occluded), false]);
-(_display displayCtrl 16103) cbSetChecked (_unit getVariable [QEGVAR(breathing,pneumothorax), false]);
-(_display displayCtrl 16104) cbSetChecked (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false]);
-(_display displayCtrl 16105) cbSetChecked (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]);
+(_display displayCtrl 16103) cbSetChecked (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false]);
+(_display displayCtrl 16104) cbSetChecked (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]);
 
 
 
@@ -90,21 +106,34 @@ private _fnc_onConfirm = {
     {
         private _value = cbChecked (_display displayCtrl _x);
         _valueArr pushBack _value;
-    } forEach [16101,16102,16103,16104,16105];
+    } forEach [16101,16102,16103,16104];
 
     _unit setVariable [QEGVAR(airway,obstruction), _valueArr select 0, true];
     _unit setVariable [QEGVAR(airway,occluded), _valueArr select 1, true];
-    _unit setVariable [QEGVAR(breathing,pneumothorax), _valueArr select 2, true];
-    _unit setVariable [QEGVAR(breathing,hemopneumothorax), _valueArr select 3, true];
-    _unit setVariable [QEGVAR(breathing,tensionpneumothorax), _valueArr select 4, true];
+    _unit setVariable [QEGVAR(breathing,hemopneumothorax), _valueArr select 2, true];
+    _unit setVariable [QEGVAR(breathing,tensionpneumothorax), _valueArr select 3, true];
     private _curSpO2Val = _unit getVariable [QEGVAR(breathing,airwayStatus), 50];
-    private _sliderValue = sliderPosition (_display displayCtrl 16106);
-    
-    _unit setVariable [QEGVAR(breathing,airwayStatus), round(_sliderValue), true]; 
+
+    private _pneumothorax = round(sliderPosition (_display displayCtrl 16105));
+
+    _unit setVariable [QEGVAR(breathing,pneumothorax), _pneumothorax, true];
+    _unit setVariable [QEGVAR(breathing,airwayStatus), round(sliderPosition (_display displayCtrl 16106)), true]; 
+
     if(_curSpO2Val isEqualTo 100) then { 
         [_unit] call EFUNC(breathing,handleBreathing);
     };
-    
+
+    if (_pneumothorax isEqualTo 0 && !(_valueArr select 2) && !(_valueArr select 3)) then {
+        [_unit, 0, 0, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+    } else {
+        [_unit, -15 * (_pneumothorax - 1), -15 * (_pneumothorax -1), "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+    };
+
+    if ((_valueArr select 2) || (_valueArr select 3)) then {
+        _unit setVariable [QEGVAR(breathing,pneumothorax), 4, true];
+        [_unit, -45, -45, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+    };
+
     [_unit] call EFUNC(circulation,updateInternalBleeding);
 };
 
