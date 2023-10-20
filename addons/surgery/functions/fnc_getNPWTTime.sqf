@@ -12,12 +12,24 @@
  * Treatment Time <NUMBER>
  *
  * Example:
- * [player, cursorObject, "head"] call kat_surgery_fnc_getDebrideTime
+ * [player, cursorObject, "head"] call kat_surgery_fnc_getNPWTTime
  *
  * Public: No
  */
 
 params ["", "_patient", "_bodyPart"];
 
-(count (GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) * GVAR(npwtTime)) +
-(count (GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]) * GVAR(npwtTime))
+private _woundCount = 0;
+{ // ace_medical_treatment_fnc_canBandage
+    _x params ["_id", "_amountOf", "_bleeding"]; 
+    
+    if (_amountOf * _bleeding > 0) then {
+        _woundCount = _woundCount + 1;
+    };
+} forEach ((GET_OPEN_WOUNDS(_patient)) getOrDefault [_bodyPart, []]);
+
+if (_woundCount > 0) then {
+	_woundCount * GVAR(npwtTime)
+} else {
+	count (GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) * GVAR(npwtTime)
+};
