@@ -688,7 +688,7 @@
             <German>Erhöht die Wahrscheinlichkeit eines Pneumothorax basierend auf dem Schaden</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken_DESCRIPTION">
-            <English>Increase chance of a pneumothorax and advanced pneumothorax occuring based on damage taken if over the pneumothorax damage threshold</English>
+            <English>Increase chance of a pneumothorax and advanced pneumothorax occurring based on damage taken if over the pneumothorax damage threshold</English>
             <Japanese>気胸ダメージのしきい値を超えた場合、受けたダメージに応じて気胸及び高度な気胸が発生する確率が増加します</Japanese>
             <French>Augmente le risque de survenue d'un pneumothorax et d'un pneumothorax avancé en fonction des dommages subis si le seuil de dommage du pneumothorax est dépassé</French>
             <Korean>기흉 데미지 한계점을 초과할 경우 받은 데미지에 따라 기흉 및 고급 기흉이 발생할 확률이 증가합니다.</Korean>

@@ -2194,7 +2194,7 @@
             <German>Chance für eine ventrikuläre Tachykardie (VT)</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_asystoleBloodlossThreshold">
-            <English>Asystole Bloodloss Threshold</English>
+            <English>Asystole blood loss threshold</English>
             <Japanese>心静止時の失血しきい値</Japanese>
             <French>Seuil de perte de sang en cas d'asystolie</French>
             <Korean>심정지 중 출혈 한계값</Korean>
