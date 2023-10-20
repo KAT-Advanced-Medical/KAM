@@ -997,24 +997,6 @@
             <Spanish>Tiempo para colocar un vendaje al vacío</Spanish>
             <Portuguese>Duração do aplique de curativo a vácuo</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_MedLevel">
-            <English>Allow Debridement</English>
-            <Spanish>Permitir desbridamiento</Spanish>
-            <Japanese>創縁切除の許可</Japanese>
-            <German>Benötigter medizinischer Grad, um Debridement &amp; NPWT-Verband zu nutzen</German>
-            <French>Autoriser le débridement</French>
-            <Korean>괴사조직 제거 허용</Korean>
-            <Italian>Permetti sbrigliamento</Italian>
-        </Key>
-        <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_Location">
-            <English>Locations Debridement</English>
-            <Spanish>Lugares para el desbridamiento</Spanish>
-            <Japanese>創縁切除の使用可能場所</Japanese>
-            <German>Ort für die durchführung von Debridement &amp; NPWT-Verband</German>
-            <French>Lieux permettant le débridement</French>
-            <Korean>괴사조직 위치</Korean>
-            <Italian>Posizione di sbrigliamento</Italian>
-        </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_SurgicalActions">
             <English>Surgical actions Settings</English>
             <Chinesesimp>手术操作设置</Chinesesimp>

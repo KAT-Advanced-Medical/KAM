@@ -665,7 +665,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_LARYNXTUBUS_DESC">
             <English>Training level required to use a Larynxtubus - KingLT</English>
-            <German>Benötigtes Training Level um den Larynxtubus - KingLT zu nutzen</German>
+            <German>Benötigter medizinischer Grad, um den Larynxtubus - KingLT zu nutzen</German>
             <Polish>Poziom wyszkolenia wymagany do korzystania z rurki krtaniowej</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar un tubo laríngeo</Spanish>
             <Chinese>使用喉管所需的培訓水平-KingLT</Chinese>
@@ -697,7 +697,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_GUEDELTUBUS_DESC">
             <English>Training level required to use a Guedeltubus</English>
-            <German>Benötigtes Trainings Level um den Guedeltubus zu nutzen</German>
+            <German>Benötigter medizinischer Grad, um den Guedeltubus zu nutzen</German>
             <Polish>Poziom wyszkolenia wymagany do korzystania z rurki ustno-gardłowej</Polish>
             <Spanish>Nivel de entrenamiento requerido para usar una cánula de Guedel</Spanish>
             <Chinese>使用Guedeltubus所需的培訓水平</Chinese>

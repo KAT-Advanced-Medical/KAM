@@ -16,7 +16,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV_Desc">
             <English>Changes what medical level is required to set IVs</English>
-            <German>Ändert, welcher medizinische Grad für das Legen von IVs erforderlich ist</German>
+            <German>Benötigter medizinischer Grad, für das Legen von IVs</German>
             <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia kaniul IV</Polish>
             <French>Niveau nécessaire pour poser une IV</French>
             <Chinese>改变设置静脉注射所需的医疗级别</Chinese>
@@ -51,7 +51,7 @@
             <Czech>Změní, která zdravotnická úroveň je potřeba k zavedení IO</Czech>
             <French>Change le niveau médical requis pour poser des IO</French>
             <Korean>IO를 설정하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Ändert, welcher medizinische Grad für das Legen von IOs erforderlich ist</German>
+            <German>Benötigter medizinischer Grad, für das Legen von IOs</German>
             <Japanese>IOの使用に訓練レベルを必要とさせます。</Japanese>
             <Spanish>Cambia el nivel médico que se requiere para colocar las IOs</Spanish>
             <Portuguese>Muda qual nível médico é necessário para aplicar IOs</Portuguese>
@@ -1676,7 +1676,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Naloxon</Czech>
             <French>Niveau médical requis pour la Naloxone</French>
             <Korean>날록손을 사용할 수 있는 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderlicher medizinischer Grad für die Gabe von Naloxon</German>
+            <German>Erforderlicher medizinischer Grad, für die Gabe von Naloxon</German>
             <Japanese>ナロキソンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Naloxona</Spanish>
             <Portuguese>Nível médico exigido para administrar Naloxona</Portuguese>
@@ -1708,7 +1708,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Pervitin">
             <English>Medical level required for Pervitin</English>
-            <German>Erforderliches medizinischer Grad für die Gabe von Pervitin</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Pervitin</German>
             <French>Niveau médical requis pour la Pervitine</French>
             <Japanese>ペルビチンの許可</Japanese>
             <Korean>페르피틴을 사용하는데 필요한 의료 레벨 수준 변경</Korean>
@@ -1726,7 +1726,7 @@
             <Czech>Zdravotnická úroveň potřebná pro TXA</Czech>
             <French>Niveau médical requis pour l'Acide Tranexamique</French>
             <Korean>TXA를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von TXA</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von TXA</German>
             <Japanese>TXAの許可</Japanese>
             <Spanish>Nivel médico requerido para el ATX</Spanish>
             <Portuguese>Nível médico exigido para administrar TXA</Portuguese>
@@ -1752,7 +1752,7 @@
             <Italian>Livello medico richiesto per la Norepinefrina</Italian>
             <French>Niveau médical requis pour la Noradrénaline</French>
             <Korean>노르에피네프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Norepinephrin</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Norepinephrin</German>
             <Japanese>ノルアドレナリンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Norepinefrina</Spanish>
             <Portuguese>Nível médico exigido para uso de Norepinefrina</Portuguese>
@@ -1778,7 +1778,7 @@
             <Italian>Livello medico richiesto per la Fenilefrina</Italian>
             <French>Niveau médical requis pour la Phényléphrine</French>
             <Korean>페닐에프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Phenylephrin</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Phenylephrin</German>
             <Japanese>フェニレフリンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Fenilefrina</Spanish>
             <Portuguese>Nível médico exigido para uso de Fenilefrina</Portuguese>
@@ -1817,7 +1817,7 @@
             <Italian>Tempo di trattamento per la Nitroglicerina</Italian>
             <French>Temps de traitement de la Nitroglycérine</French>
             <Korean>니트로글리세린으로 치료하는 시간</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Nitroglycerin</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Nitroglycerin</German>
             <Japanese>ニトログリセリンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Nitroglicerina</Spanish>
             <Portuguese>Tempo de uso de Nitroglicerina</Portuguese>
@@ -1843,7 +1843,7 @@
             <Czech>Doba léčby pro Amiodaron</Czech>
             <French>Temps de traitement de l'Amiodarone</French>
             <Korean>아미오다론으로 치료하는 시간</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Amiodaron</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Amiodaron</German>
             <Japanese>アミオダロンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Amiodarona</Spanish>
             <Portuguese>Tempo de uso de Amiodarona</Portuguese>
@@ -1856,7 +1856,7 @@
             <Italian>Livello medico richiesto per la Lidocaina</Italian>
             <French>Niveau médical requis pour la Lidocaïne</French>
             <Korean>리도카인을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Lidocain</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Lidocain</German>
             <Japanese>リドカインの許可</Japanese>
             <Spanish>Nivel médico requerido para la Lidocaína</Spanish>
             <Portuguese>Nível médico exigido para uso de Lidocaína</Portuguese>
@@ -1882,7 +1882,7 @@
             <Italian>Livello medico richiesto per l'Atropina</Italian>
             <French>Niveau médical requis pour l'Atropine</French>
             <Korean>아트로핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Atropin</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Atropin</German>
             <Japanese>アトロピンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Atropina</Spanish>
             <Portuguese>Nível médico exigido para uso de Atropina</Portuguese>
@@ -1908,7 +1908,7 @@
             <Czech>Zdravotnická úroveň potřebná pro EACA</Czech>
             <French>Niveau médical requis pour l'Acide Aminocaproïque</French>
             <Korean>아미노카프로산을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Aminocapronsäure</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Aminocapronsäure</German>
             <Japanese>EACAの許可</Japanese>
             <Spanish>Nivel médico requerido para el EACA</Spanish>
             <Portuguese>Nível médico exigido para uso de EACA</Portuguese>
@@ -1933,7 +1933,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Flumazenil</Czech>
             <French>Niveau médical requis pour le Flumazénil</French>
             <Korean>플루마제닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Flumazenil</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Flumazenil</German>
             <Polish>Poziom wyszkolenia medycznego dla Flumazenilu</Polish>
             <Japanese>フルマゼニルの許可</Japanese>
             <Spanish>Nivel médico requerido para el Flumazenil</Spanish>
@@ -1959,7 +1959,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Lorazepam</Czech>
             <French>Niveau médical requis pour le Lorazépam</French>
             <Korean>로라제팜을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Lorazepam</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Lorazepam</German>
             <Polish>Poziom wyszkolenia medycznego dla Lorazepamu</Polish>
             <Japanese>ロラゼパムの許可</Japanese>
             <Spanish>Nivel médico requerido para el Lorazepam</Spanish>
@@ -1985,7 +1985,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Etomidát</Czech>
             <French>Niveau médical requis pour l'Étomidate</French>
             <Korean>에토미데이트를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Etomidat</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Etomidat</German>
             <Polish>Poziom wyszkolenia medycznego dla Etomidatu</Polish>
             <Japanese>エトミデートの許可</Japanese>
             <Spanish>Nivel médico requerido para el Etomidato</Spanish>
@@ -2012,7 +2012,7 @@
             <Italian>Livello medico richiesto per la Ketamina</Italian>
             <French>Niveau médical requis pour la Kétamine</French>
             <Korean>케타민을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Ketamin</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Ketamin</German>
             <Japanese>ケタミンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Ketamina</Spanish>
             <Portuguese>Nível médico exigido para uso de Cetamina</Portuguese>
@@ -2038,7 +2038,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Fentanyl</Czech>
             <French>Niveau médical requis pour le Fentanyl</French>
             <Korean>펜타닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Fentanyl</German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Fentanyl</German>
             <Japanese>フェンタニルの許可</Japanese>
             <Spanish>Nivel médico requerido para el Fentalino</Spanish>
             <Portuguese>Nível médico exigido para uso de Fentanil</Portuguese>
@@ -2064,7 +2064,7 @@
             <Italian>Livello medico richiesto per Nalbufina (nubain)</Italian>
             <French>Niveau médical requis pour la Nalbuphine</French>
             <Korean>날부핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Nalbuphin </German>
+            <German>Erforderliches medizinischer Grad, für die Gabe von Nalbuphin </German>
             <Japanese>ナルブフィンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Nalbufina</Spanish>
             <Portuguese>Nível médico exigido para uso de Nalbufina</Portuguese>
@@ -2087,7 +2087,7 @@
             <Japanese>ペンスロックス吸入器の許可</Japanese>
             <French>Niveau médical requis pour l'inhalateur de Penthrox</French>
             <Korean>펜트록스를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Verwendung des Penthrox-Inhalators</German>
+            <German>Erforderliches medizinischer Grad, für die Verwendung des Penthrox-Inhalators</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
             <English>Treatment time for Penthrox Inhaler</English>
