@@ -563,13 +563,13 @@ class GVAR(AEDX_Monitor_Dialog) {
             y = QUOTE(pxToScreen_Y(1487));
             w = QUOTE(pxToScreen_W(122));
             h = QUOTE(pxToScreen_H(89));
-            onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull) && !(GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(DefibrillatorInUse), false)])) then {[ARR_3(player, GVAR(AEDX_MonitorTarget),'AEDX')] call FUNC(AED_Analyze); [] call FUNC(AEDX_ViewMonitor_AnalyzeFeedback)});
+            onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull) && GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected), false)] && !(GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(DefibrillatorInUse), false)])) then {[ARR_3(player, GVAR(AEDX_MonitorTarget),'AEDX')] call FUNC(AED_Analyze); [] call FUNC(AEDX_ViewMonitor_AnalyzeFeedback)});
             tooltip = CSTRING(AnalyzeRhythm);
         };
         class ChargeButton: AnalyzeButton {
             idc = -1;
             x = QUOTE(pxToScreen_X(1316));
-            onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull) && !(GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(DefibrillatorInUse), false)])) then {[ARR_2(player, GVAR(AEDX_MonitorTarget))] call FUNC(Defibrillator_ManualCharge); [true] call FUNC(AEDX_ViewMonitor_AnalyzeFeedback); [] call FUNC(AEDX_ViewMonitor_Charging)});
+            onButtonClick = QUOTE(if (!(GVAR(AEDX_MonitorTarget) isEqualTo objNull) && GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(DefibrillatorPads_Connected), false)] && !(GVAR(AEDX_MonitorTarget) getVariable [ARR_2(QQGVAR(DefibrillatorInUse), false)])) then {[ARR_2(player, GVAR(AEDX_MonitorTarget))] call FUNC(Defibrillator_ManualCharge); [true] call FUNC(AEDX_ViewMonitor_AnalyzeFeedback); [] call FUNC(AEDX_ViewMonitor_Charging)});
             tooltip = CSTRING(Defibrillator_Action_Charge);
         };
         class CancelChargeButton: ShockButton {
