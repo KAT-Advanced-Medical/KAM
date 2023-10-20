@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [player, "RightArm", "Morphine"] call kat_pharma_fnc_treatmentAdvanced_medicationLocal
+ * [player, "RightArm", "Morphine"] call kat_pharma_fnc_medicationLocal
  *
  * Public: No
  */
@@ -28,7 +28,7 @@ TRACE_3("medicationLocal",_patient,_bodyPart,_classname);
 if (!alive _patient) exitWith {};
 
 // Exit with basic medication handling if advanced medication not enabled
-if (!GVAR(advancedMedication)) exitWith {
+if !(ACEGVAR(medical_treatment,advancedMedication)) exitWith {
     switch (_classname) do {
         case "Morphine": {
             private _painSuppress = GET_PAIN_SUPPRESS(_patient);
