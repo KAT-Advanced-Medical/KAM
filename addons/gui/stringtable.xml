@@ -50,31 +50,37 @@
             <English>No pushed fluids</English>
             <Korean>주입된 액체 없음</Korean>
             <Japanese>注入された液体なし</Japanese>
+            <German>Keine verabreichten Flüssigkeiten</German>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showInactiveStatuses">
             <English>Show Inactive Statuses</English>
             <Korean>비활성 상태 표시</Korean>
             <Japanese>非活動状態の表示</Japanese>
+            <German>Inaktive Status anzeigen</German>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showBleedRate">
             <English>Show Bleed Rate</English>
             <Korean>출혈 속도 표시</Korean>
             <Japanese>出血率の表示</Japanese>
+            <German>Blutungsrate anzeigen</German>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showBleedRate_DESC">
             <English>Display bleed rate (slow/moderate/severe/massive)</English>
             <Korean>출혈 속도(느림/중간/심각/과다)를 표시합니다</Korean>
             <Japanese>出血率を表示する (遅い/中程度/重い/大量)</Japanese>
+            <German>Blutungsrate anzeigen (langsam/mäßig/stark/massiv)</German>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
             <English>Overlay Selected Body Part</English>
             <Korean>선택한 신체 부위 오버레이</Korean>
             <Japanese>選択した身体部位のオーバーレイ表示</Japanese>
+            <German>Ausgewähltes Körperteil überlagern</German>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showPatientSideLabels">
             <English>Label Patient Sides</English>
             <Korean>환자 측면에 라벨 붙이기</Korean>
             <Japanese>患者側面のラベル</Japanese>
+            <German>Beschriftung der Patientenseiten</German>
         </Key>
     </Package>
 </Project>
