@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Glowbal
  * Modified: Tomcat, Blue
@@ -32,7 +32,7 @@ private _fnc_advRhythm = {
     params ["_patient", ["_CPR",false]];
 
     private _patientState = _patient getVariable [QGVAR(cardiacArrestType), 0];
-    
+
     if (_CPR) then {
         if (floor (random 100) <= GVAR(AdvRhythm_CPR_ROSC_Chance)) then {
             _patient setVariable [QGVAR(cardiacArrestType), 0, true];
@@ -71,11 +71,11 @@ private _fnc_advRhythm = {
 
     switch(_medication) do
     {
-        case "Epinephrine": 
+        case "Epinephrine":
         {
             _epiBoost = 1.5;
         };
-        case "Amiodarone": 
+        case "Amiodarone":
         {
             _amiBoost = _amiBoost + (random [8,14,20]);
         };

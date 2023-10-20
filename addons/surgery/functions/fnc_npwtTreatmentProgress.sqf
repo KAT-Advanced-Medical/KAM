@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: MiszczuZPolski
  * Local call for clearing all wounds on a patient

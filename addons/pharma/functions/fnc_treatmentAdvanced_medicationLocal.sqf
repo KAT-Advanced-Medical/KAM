@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Glowbal, mharis001
  * Modified: MiszczuZPolski, Blue
@@ -39,7 +39,7 @@ if (!GVAR(advancedMedication)) exitWith {
             if !(_sedated) then {
                 [QACEGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
             };
-            
+
             [_patient, -0.15] call FUNC(alphaAction);
         };
     };

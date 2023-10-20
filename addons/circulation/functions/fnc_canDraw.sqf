@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Battlekeeper, modified by YetheSamartaka & Slatery
  * Condition function for the blood drawing

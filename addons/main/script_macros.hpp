@@ -246,3 +246,6 @@
 
 // Pharmacy
 #define GET_BLOOD_LOSS(unit)           ([unit] call EFUNC(pharma,getBloodLoss))
+
+//Surgery
+#define STRING_BODY_PARTS ["head", "body", "left arm", "right arm", "left leg", "right leg"]

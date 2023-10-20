@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: mharis001
  * Updates list control with given logs.
@@ -76,5 +76,5 @@ lbClear _ctrl;
             };
         };
     };
-    
+
 } forEach _logs;

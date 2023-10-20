@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 #include "..\defines.hpp"
 /*
  * Author: Blue
@@ -134,7 +134,7 @@ private _fnc_displayMsg = {
     isNull _dlg;
 },{
     params ["_dlg", "_fnc_displayMsg"];
-    
+
     [_dlg, -1] call _fnc_displayMsg;
     [false] call _fnc_showDialog;
 }, [_dlg, _fnc_displayMsg], 3600] call CBA_fnc_waitUntilAndExecute;

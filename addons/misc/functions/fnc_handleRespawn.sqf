@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: YetheSamartaka
  * Ensures proper initial values reset on respawn
@@ -248,7 +248,7 @@ if (EGVAR(pharma,coagulation)) then {
     }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
 
-/// Clear Stamina & weapon sway 
+/// Clear Stamina & weapon sway
 if (ACEGVAR(advanced_fatigue,enabled)) then {
     ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
@@ -257,10 +257,10 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 } else {
     _unit setAnimSpeedCoef 1;
     _unit setCustomAimCoef 1;
-    
+
     if (GVAR(staminaMedication)) then {
         _unit enableStamina true;
-        
+
     };
 };
 

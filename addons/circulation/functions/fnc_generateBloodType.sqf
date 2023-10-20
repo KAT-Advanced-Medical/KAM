@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Generates blood type for player according to settings
@@ -64,8 +64,8 @@ switch(GVAR(bloodTypeSetting)) do {
             };
 
         } else {
-            _bloodType = _playerBloodType; 
-        }; 
+            _bloodType = _playerBloodType;
+        };
     };
     case 5: {// steamid custom list bloodtype
         if (isMultiplayer) then {
@@ -73,8 +73,8 @@ switch(GVAR(bloodTypeSetting)) do {
             private _bloodTypeList = GVAR(bloodTypeCustomList) splitString ", ";
             _bloodType = _bloodTypeList select _id;
         } else {
-            _bloodType = _playerBloodType; 
-        }; 
+            _bloodType = _playerBloodType;
+        };
     };
     default { _bloodType = _playerBloodType; };
 };

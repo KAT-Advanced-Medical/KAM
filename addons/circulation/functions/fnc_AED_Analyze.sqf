@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Analyzes the patient's heart rhythm
@@ -48,7 +48,7 @@ playsound3D [QPATHTOF_SOUND(sounds\analyzingnow.wav), _soundSource, false, getPo
     [{
         params ["_medic", "_patient", "_defibrillatorType", "_soundSource"];
         if (!(isNull (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull])) || _patient getVariable [QGVAR(BVMInUse), false] || _patient call ACEFUNC(common,isAwake)) exitWith { // Motion persists, analyzing cancelled
-            playsound3D [QPATHTOF_SOUND(sounds\3beep.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15]; 
+            playsound3D [QPATHTOF_SOUND(sounds\3beep.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
             _patient setVariable [QGVAR(DefibrillatorInUse), false, true];
         };
         [_medic, _patient, _defibrillatorType] call FUNC(AED_Analyze);
@@ -56,7 +56,7 @@ playsound3D [QPATHTOF_SOUND(sounds\analyzingnow.wav), _soundSource, false, getPo
 },
 [_medic, _patient, _defibrillatorType, _soundSource],
 5 max (random 8), // Time to analyze
-{   
+{
     params ["_medic", "_patient", "_defibrillatorType", "_soundSource"];
 
     _patient setVariable [QGVAR(RhythmAnalyzed), true, true];

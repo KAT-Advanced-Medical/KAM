@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam, edited by Tomcat, Kygan, YetheSamartaka and MJSTIC
  * Handling oxygen saturation for breathing
@@ -77,7 +77,7 @@ if (!local _unit) then {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_O2Breathing_PFH", nil];
     };
-    
+
     // Unconscious
     if !([_unit] call ACEFUNC(common,isAwake)) exitWith {
         _output = -0.2; // Not breathing/blocked airway
@@ -95,7 +95,7 @@ if (!local _unit) then {
                         };
                     };
                 };
-                
+
                 // Normal(-ish) heart rate
                 if (_heartRate >= 25) exitWith {
                     if (_BVMInUse) then {
@@ -138,7 +138,7 @@ if (!local _unit) then {
                 _output = _output * _multiplierNegative;
             };
         };
-        
+
         _finalOutput = _status + _output;
 
         if (_finalOutput > 100) then {
@@ -202,7 +202,7 @@ if (!local _unit) then {
                     if !(_soundTargets isEqualTo []) then {
                         [QGVAR(playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
                     };
-                    
+
                     [{
                         params["_unit"];
                         _unit setVariable [QGVAR(PneumoBreathCooldownOn), false, true];

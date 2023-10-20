@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Unit <OBJECT>
  *
@@ -16,7 +16,7 @@
 params ["_unit"];
 
 [
-    { 
+    {
         params["_unit"];
         _unit getVariable [QGVAR(airPoisoning), false]
     },

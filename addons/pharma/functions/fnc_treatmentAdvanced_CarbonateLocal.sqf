@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Mazinski.H, Blue
  * Checks for Carbonate Wakeup values to restore consciousness

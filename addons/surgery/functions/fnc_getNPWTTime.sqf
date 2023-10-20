@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: MiszczuZPolski
  * Calculates the Debride treatment time based on the amount of debridable wounds.

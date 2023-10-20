@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Position (position)
  * 1: Lifetime (number)
@@ -25,14 +25,14 @@ private _gastype = "";
 switch (_gasLvL) do {
     case 1: { //CS
         _gastype = "CS";
-    }; 
+    };
     default { //toxic gas (standard)
         _gastype = "Toxic";
     };
 };
 
 if (_gastype isEqualTo "CS") then {[getPosASL _logic, _radius, _lifetime] call FUNC(spawnGasSmoke);};
-    
+
 [_logic, _pos, _radius, 0, _gastype] call FUNC(gasCheck);
 private _currentTime = CBA_missionTime;
 

@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * Initializes placed Module 
+ * Initializes placed Module
  *
  * Arguments:
  * 0: Logic <MODULE>

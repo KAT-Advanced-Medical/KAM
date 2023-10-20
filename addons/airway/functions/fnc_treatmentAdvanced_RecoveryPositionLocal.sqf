@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: MiszczuZPolski
  * Local callback for set patient into recovery position.
@@ -39,7 +39,7 @@ private _output = LLSTRING(Recovery_Info);
     params ["_medic","patient"];
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
-    
+
     _output = LLSTRING(Recovery_Cancel);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 }] call CBA_fnc_waitUntilAndExecute;

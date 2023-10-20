@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Mazinski.H, Edited by MiszczuZPolski
  * Applies Bradycardia randomly

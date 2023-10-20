@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: mharis001
  * Updates injury list for given body part for the target.
@@ -215,7 +215,7 @@ switch (GET_FRACTURES(_target) select _selectionN) do {
 // Display cyanosis in overview tab, only when head/arms are selected
 if (EGVAR(breathing,showCyanosis) && _selectionN in [0,2,3]) then {
     private _spO2 = 0;
-    
+
     if (alive _target) then {
         _spO2 = GET_SPO2(_target);
     };
@@ -279,7 +279,7 @@ if (_selectionN isEqualTo 1) then {
             _entries pushBack [LELSTRING(breathing,DeepPenetratingInjury), [1,0,0,1]];
         };
     };
-    
+
     if (EGVAR(breathing,TensionHemothoraxAlwaysVisible)) then {
         if (_target getVariable [QEGVAR(breathing,hemopneumothorax), false]) then {
             _ptxEntry pushback [LELSTRING(breathing,hemopneumothorax_mm), [1,1,1,1]];

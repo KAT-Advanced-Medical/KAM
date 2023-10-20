@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 #include "..\defines.hpp"
 /*
  * Author: Blue
@@ -135,7 +135,7 @@ if (_skip) then { // Skip visual charging process
 
     [{
         params ["_dlg"];
-    
+
         isNull _dlg || !(GVAR(AEDX_MonitorCharging));
     }, {
         params ["_dlg"];
@@ -149,7 +149,7 @@ if (_skip) then { // Skip visual charging process
 
             ctrlSetText [IDC_CHARGE_STATUS, LLSTRING(AEDX_Monitor_CHARGED)];
         };
-        
+
     }, [_dlg], 60, {}] call CBA_fnc_waitUntilAndExecute;
 
     [{

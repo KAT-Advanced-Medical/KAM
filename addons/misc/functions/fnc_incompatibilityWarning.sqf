@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: YetheSamartaka
  * Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that
@@ -39,6 +39,6 @@ if ((count _foundIncompatibleAddons) > 0) then {
         //Removes Warning message after 60 seconds
         [{params ["_rscLayer"];
             _rscLayer cutFadeOut 0.2;
-        }, [_rscLayer], 60] call CBA_fnc_waitAndExecute;        
+        }, [_rscLayer], 60] call CBA_fnc_waitAndExecute;
     };
 };

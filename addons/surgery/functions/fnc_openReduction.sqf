@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: 1LT.Mazinski.H
  * Removes the fracture status from an open fracture

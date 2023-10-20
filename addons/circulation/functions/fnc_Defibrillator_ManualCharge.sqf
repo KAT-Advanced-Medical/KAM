@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Charge up Defibrillator in manual mode
@@ -36,7 +36,7 @@ playsound3D [QPATHTOF_SOUND(sounds\charging.wav), _soundSource, false, getPosASL
 
     _patient setVariable [QGVAR(Defibrillator_Charged), true, true];
 
-    [{ 
+    [{
         params ["_medic", "_patient", "_soundSource"];
 
         !(_patient getVariable [QGVAR(Defibrillator_Charged), false])
