@@ -26,4 +26,5 @@ _unit setVariable [QGVAR(airway), false, true];
 _unit setVariable [QGVAR(overstretch), false, true];
 _unit setVariable [QGVAR(recovery), false, true];
 _unit setVariable [QGVAR(airway_item), "", true];
+_unit setVariable [QGVAR(clearedTime), 0, true];
 KAT_forceWakeup = false;

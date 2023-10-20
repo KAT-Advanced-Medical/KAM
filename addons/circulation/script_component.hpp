@@ -14,8 +14,8 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_CIRCULATION
 #endif
 
-#include "\x\kat\addons\main\script_macros.hpp"
 #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
+#include "\x\kat\addons\main\script_macros.hpp"
 
 // Returns a text config entry as compiled code or variable from missionNamespace
 #define GET_FUNCTION(var,cfg) \

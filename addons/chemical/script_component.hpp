@@ -22,85 +22,17 @@
 #include "\a3\ui_f\hpp\defineCommonGrids.inc"
 #include "\a3\ui_f\hpp\defineCommonColors.inc"
 
-// Returns a text config entry as compiled code or variable from missionNamespace
-#define GET_FUNCTION(var,cfg) \
-    private var = getText (cfg); \
-    if (isNil var) then { \
-        var = compile var; \
-    } else { \
-        var = missionNamespace getVariable var; \
-    }
-
-// Returns a number config entry with default value of 0
-// If entry is a string, will get the variable from missionNamespace
-#define GET_NUMBER_ENTRY(cfg) \
-    if (isText (cfg)) then { \
-        missionNamespace getVariable [getText (cfg), 0]; \
-    } else { \
-        getNumber (cfg); \
-    }
-
-
 // Default versioning level
 #define DEFAULT_VERSIONING_LEVEL 2
 
 
 #define IDC_INJURIES 1410
 
-#define VAR_WOUND_BLEEDING          "ace_medical_woundBleeding"
-#define GET_WOUND_BLEEDING(unit)    (unit getVariable [VAR_WOUND_BLEEDING, 0])
-#define IS_BLEEDING(unit)           (GET_WOUND_BLEEDING(unit) > 0)
-
-
-#define VAR_HEMORRHAGE              "ace_medical_hemorrhage"
-#define GET_HEMORRHAGE(unit)        (unit getVariable [VAR_HEMORRHAGE, 0])
-
-
-#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
-#define VAR_TOURNIQUET              "ace_medical_tourniquets"
-#define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
-#define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
-
-
-#define DEFAULT_FRACTURE_VALUES [0,0,0,0,0,0]
-#define VAR_FRACTURES               "ace_medical_fractures"
-#define GET_FRACTURES(unit)         (unit getVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES])
-
-
-#define VAR_PAIN                    "ace_medical_pain"
-#define VAR_PAIN_SUPP               "ace_medical_painSuppress"
-#define GET_PAIN(unit)              (unit getVariable [VAR_PAIN, 0])
-#define GET_PAIN_SUPPRESS(unit)     (unit getVariable [VAR_PAIN_SUPP, 0])
-#define GET_PAIN_PERCEIVED(unit)    (0 max (GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1)
-#define VAR_IN_PAIN                 "ace_medical_inPain"
-
-
-#define VAR_OPEN_WOUNDS             "ace_medical_openWounds"
-#define GET_OPEN_WOUNDS(unit)       (unit getVariable [VAR_OPEN_WOUNDS, []])
-#define VAR_BANDAGED_WOUNDS         "ace_medical_bandagedWounds"
-#define GET_BANDAGED_WOUNDS(unit)   (unit getVariable [VAR_BANDAGED_WOUNDS, []])
-#define VAR_STITCHED_WOUNDS         "ace_medical_stitchedWounds"
-#define GET_STITCHED_WOUNDS(unit)   (unit getVariable [VAR_STITCHED_WOUNDS, []])
-
-#define DEFAULT_BLOOD_VOLUME        6.0 // in liters
-#define DEFAULT_HEART_RATE          80
-#define DEFAULT_PERIPH_RES          100
-#define VAR_MEDICATIONS             "ace_medical_medications"
-#define VAR_BLOOD_PRESS             "ace_medical_bloodPressure"
-#define VAR_BLOOD_VOL               "ace_medical_bloodVolume"
-#define VAR_HEART_RATE              "ace_medical_heartRate"
-#define VAR_PERIPH_RES              "ace_medical_peripheralResistance"
-
-#define VAR_UNCON                   "ACE_isUnconscious"
-#define IS_UNCONSCIOUS(unit)        (unit getVariable [VAR_UNCON, false])
-
-
 #define IDD_MEDICAL_MENU 38580
 
 #define IDC_BODY_GROUP      6000
 #define IDC_BODY_HEAD       6005
 #define IDC_BODY_TORSO      6010
-#define IDC_BODY_TORSO_I    6011
 #define IDC_BODY_ARMLEFT    6015
 #define IDC_BODY_ARMRIGHT   6020
 #define IDC_BODY_LEGLEFT    6025

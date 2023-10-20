@@ -14,5 +14,5 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_BREATHING
 #endif
 
-#include "\x\kat\addons\main\script_macros.hpp"
 #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
+#include "\x\kat\addons\main\script_macros.hpp"
