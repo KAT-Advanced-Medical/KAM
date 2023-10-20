@@ -1,3 +1,4 @@
+PREP(countTreatmentItems);
 PREP(displayPatientInformation);
 PREP(onMenuClose);
 PREP(onMenuOpen);
