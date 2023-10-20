@@ -94,6 +94,7 @@
             <French>Temps de récupération après une occlusion</French>
             <Korean>구토 쿨다운 시간</Korean>
             <Norwegian>Okklusjons avkjølingsperiode</Norwegian>
+            <German>Abklingzeit für Erbrechen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -483,6 +484,7 @@
             <French>Début de la rotation de la tête</French>
             <Korean>고개 돌리기 시작</Korean>
             <Norwegian>Begynn hodevridning</Norwegian>
+            <German>Drehe den Kopf</German>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
@@ -490,6 +492,7 @@
             <French>Annulation de la rotation de la tête</French>
             <Korean>고개 돌리기 취소됨</Korean>
             <Norwegian>Hodevridning kansellert</Norwegian>
+            <German>Kopfdrehen abgebrochen</German>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
@@ -497,6 +500,7 @@
             <French>Arrêt de la rotation de la tête</French>
             <Korean>고개 돌리기 멈추기</Korean>
             <Norwegian>Stop hodevridning</Norwegian>
+            <German>Kopf nicht mehr drehen</German>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_NA">
             <English>Medical suction not needed</English>
@@ -861,6 +865,7 @@
             <French>Intervalle de la rotation de la tête</French>
             <Korean>고개 돌리기 간격</Korean>
             <Norwegian>Hodevridningsintervall</Norwegian>
+            <German>Intervall des Kopfdrehens</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval_DESC">
             <English>Time between head turning attempts</English>
@@ -868,6 +873,7 @@
             <French>Temps entre chaque tentative de rotation de la tête</French>
             <Korean>고개 돌리기를 시도하는 간격</Korean>
             <Norwegian>Tiden mellom forsøk på hodevridning</Norwegian>
+            <German>Zeit zwischen versuchen, den Kopf zu drehen</German>
         </Key>
         <Key ID="STR_KAT_Airway_Activity_HeadTurning">
             <English>%1 finished head turning (x%2)</English>
@@ -875,6 +881,7 @@
             <French>%1 a terminé de tourner la tête (x%2)</French>
             <Korean>%1은(는) 고개 돌리기를 끝냈습니다 (x%2)</Korean>
             <Norwegian>%1 fullførte hodevridning (%2%).</Norwegian>
+            <German>%1 hat den Kopf gedreht (x%2)</German>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC">
             <English>Time for Accuvac</English>
