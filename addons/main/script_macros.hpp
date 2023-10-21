@@ -1,6 +1,7 @@
 #define DEBUG_SYNCHRONOUS
 #include "\x\cba\addons\main\script_macros_common.hpp"
 #include "\x\cba\addons\xeh\script_xeh.hpp"
+#include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 
 // Default versioning level
 #define DEFAULT_VERSIONING_LEVEL 2
@@ -114,6 +115,25 @@
 #define FATAL_INJURIES_CRDC_ARRST 1
 #define FATAL_INJURIES_NEVER 2
 
+
+//We have to undef them before redefining
+#undef VAR_BLOOD_PRESS
+#undef VAR_BLOOD_VOL
+#undef VAR_WOUND_BLEEDING
+#undef VAR_CRDC_ARRST
+#undef VAR_HEART_RATE
+#undef VAR_PAIN
+#undef VAR_PAIN_SUPP
+#undef VAR_PERIPH_RES
+#undef VAR_OPEN_WOUNDS
+#undef VAR_BANDAGED_WOUNDS
+#undef VAR_STITCHED_WOUNDS
+#undef VAR_MEDICATIONS
+#undef VAR_HEMORRHAGE
+#undef VAR_IN_PAIN
+#undef VAR_TOURNIQUET
+#undef VAR_FRACTURES
+
 // These variables get stored in object space and used across components
 // Defined here for easy consistency with GETVAR/SETVAR (also a list for reference)
 #define VAR_BLOOD_PRESS       QACEGVAR(medical,bloodPressure)
@@ -124,7 +144,6 @@
 #define VAR_PAIN              QACEGVAR(medical,pain)
 #define VAR_PAIN_SUPP         QACEGVAR(medical,painSuppress)
 #define VAR_PERIPH_RES        QACEGVAR(medical,peripheralResistance)
-#define VAR_UNCON             "ACE_isUnconscious"
 #define VAR_OPEN_WOUNDS       QACEGVAR(medical,openWounds)
 #define VAR_BANDAGED_WOUNDS   QACEGVAR(medical,bandagedWounds)
 #define VAR_STITCHED_WOUNDS   QACEGVAR(medical,stitchedWounds)
@@ -135,33 +154,15 @@
 #define VAR_IN_PAIN           QACEGVAR(medical,inPain)
 #define VAR_TOURNIQUET        QACEGVAR(medical,tourniquets)
 #define VAR_FRACTURES         QACEGVAR(medical,fractures)
-#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
 
 // - Unit Functions ---------------------------------------------------
 // Retrieval macros for common unit values
 // Defined for easy consistency and speed
+#undef GET_SM_STATE
 #define GET_SM_STATE(_unit)         ([_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState)
-#define GET_BLOOD_VOLUME(unit)      (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
-#define GET_WOUND_BLEEDING(unit)    (unit getVariable [VAR_WOUND_BLEEDING, 0])
-#define GET_HEART_RATE(unit)        (unit getVariable [VAR_HEART_RATE, DEFAULT_HEART_RATE])
-#define GET_HEMORRHAGE(unit)        (unit getVariable [VAR_HEMORRHAGE, 0])
-#define GET_PAIN(unit)              (unit getVariable [VAR_PAIN, 0])
-#define GET_PAIN_SUPPRESS(unit)     (unit getVariable [VAR_PAIN_SUPP, 0])
-#define GET_FRACTURES(unit)         (unit getVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES])
-#define IN_CRDC_ARRST(unit)         (unit getVariable [VAR_CRDC_ARRST, false])
-#define IS_BLEEDING(unit)           (GET_WOUND_BLEEDING(unit) > 0)
-#define IS_IN_PAIN(unit)            (unit getVariable [VAR_IN_PAIN, false])
-#define IS_UNCONSCIOUS(unit)        (unit getVariable [VAR_UNCON, false])
-#define GET_OPEN_WOUNDS(unit)       (unit getVariable [VAR_OPEN_WOUNDS, createHashMap])
-#define GET_BANDAGED_WOUNDS(unit)   (unit getVariable [VAR_BANDAGED_WOUNDS, createHashMap])
-#define GET_STITCHED_WOUNDS(unit)   (unit getVariable [VAR_STITCHED_WOUNDS, createHashMap])
+
+#undef GET_DAMAGE_THRESHOLD
 #define GET_DAMAGE_THRESHOLD(unit)  (unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)])
-
-#define GET_PAIN_PERCEIVED(unit)    (0 max (GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1)
-
-#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
-#define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
-#define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
 
 // END ACE3 reference macros
 
@@ -240,11 +241,13 @@
 #define VAR_INTERNAL_BLEEDING          QEGVAR(circulation,internalBleeding)
 #define GET_INTERNAL_BLEEDING(unit)    (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
 
+#undef GET_BLOOD_PRESSURE
 #define GET_BLOOD_PRESSURE(unit)       ([unit] call EFUNC(circulation,getBloodPressure))
 #define VAR_BLOODPRESSURE_CHANGE       QEGVAR(circulation,bloodPressureChange)
 #define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])
 
 // Pharmacy
+#undef GET_BLOOD_LOSS
 #define GET_BLOOD_LOSS(unit)           ([unit] call EFUNC(pharma,getBloodLoss))
 
 //Surgery

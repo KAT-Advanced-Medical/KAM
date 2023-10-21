@@ -94,7 +94,7 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
                 _damageThreshold = _damageThreshold * 1.5
             };
         };
-        _damage = (_damage / _damageThreshold) min 1;
+        _damage = (_damage / (0.01 max _damageThreshold)) min 1;
         [_damage] call ACEFUNC(medical_gui,damageToRGBA);
     };
 
