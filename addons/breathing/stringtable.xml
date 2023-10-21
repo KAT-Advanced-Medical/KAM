@@ -1021,7 +1021,7 @@
             <Korean>개요 탭에 환자의 치아노제를 표시합니다</Korean>
             <Japanese>チアノーゼを患者の概況に表示する</Japanese>
             <German>Zeigt die Zyanose des Patienten in der Übersicht an</German>
-            <Spanish>Muestra cianosis del paciente en la pestaña de vista genera</Spanish>
+            <Spanish>Muestra cianosis del paciente en la pestaña de vista general</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
