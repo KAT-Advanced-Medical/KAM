@@ -53,8 +53,13 @@ if (GET_HEART_RATE(_patient) isEqualTo 0) then {
     };
 } else {
     if (_hasPneumothorax && (_airwaySecure || _airwayClear)) then {
-        _message = LLSTRING(inspectChest_unevenMovement);
-        _messageLog = LLSTRING(inspectChest_unevenMovement);
+        if (_patient getVariable [QGVAR(tensionpneumothorax), false] || _patient getVariable [QGVAR(hemopneumothorax), false]) then {
+            _message = LLSTRING(inspectChest_none);
+            _messageLog = LLSTRING(inspectChest_none_log);
+        } else {
+            _message = LLSTRING(inspectChest_unevenMovement);
+            _messageLog = LLSTRING(inspectChest_unevenMovement);
+        };
         if (_simpleSetting) then {
             _hintSize = 2;
             _hintWidth = 13;
@@ -69,6 +74,9 @@ if (GET_HEART_RATE(_patient) isEqualTo 0) then {
 
             _message = _message + "<br />" + format [LLSTRING(inspectChest_simple), _type];
             _messageLog = _messageLog + format [" (%1)", _type_log];
+        } else {
+            _message = format ["%1<br />%2", _message, LLSTRING(inspectChest_uneven)];
+            _messageLog = format ["%1%2", _messageLog, LLSTRING(inspectChest_uneven_log)];
         };
     } else {
         if !(_airwayClear) then {

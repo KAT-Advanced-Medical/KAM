@@ -94,7 +94,7 @@ private _fnc_displayMsg = {
 {
     params ["_dlg", "_fnc_displayMsg"];
 
-    if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 2 || (!(GVAR(AdvRhythm)) && GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0] isEqualTo 0)) then {
+    if ((GVAR(AdvRhythm) && GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 2) || (!(GVAR(AdvRhythm)) && GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0] isEqualTo 0)) then {
         [_dlg, 2] call _fnc_displayMsg;
 
         [{

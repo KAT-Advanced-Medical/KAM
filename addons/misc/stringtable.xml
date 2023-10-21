@@ -830,35 +830,21 @@
             <Japanese>患者を担ぐ</Japanese>
             <French>Transporter le patient</French>
             <Korean>환자 운반</Korean>
+            <German>Trage Patient</German>
         </Key>
         <Key ID="STR_KAT_Misc_CancelCarrying">
             <English>Cancel Carrying</English>
             <Japanese>担ぐのを止める</Japanese>
             <French>Annuler le transport</French>
             <Korean>운반 취소</Korean>
+            <German>Tragen abbrechen</German>
         </Key>
         <Key ID="STR_KAT_Misc_StoppedCarrying%1">
             <English>Stopped carrying %1</English>
             <Japanese>%1 を担ぐのを止めました</Japanese>
             <French>Arrêt du transport de %1</French>
             <Korean>%1의 운반 취소함</Korean>
-        </Key>
-        <Key ID="STR_ACE_Medical_Category">
-            <English>Medical</English>
-            <Czech>Zdravotní</Czech>
-            <French>Médical</French>
-            <German>Sanitäter</German>
-            <Italian>Medico</Italian>
-            <Polish>Medyczne</Polish>
-            <Portuguese>Médico</Portuguese>
-            <Russian>Медик</Russian>
-            <Spanish>Médico</Spanish>
-            <Hungarian>Orvosi</Hungarian>
-            <Japanese>治療</Japanese>
-            <Korean>의료</Korean>
-            <Chinesesimp>医疗设定</Chinesesimp>
-            <Chinese>醫療設定</Chinese>
-            <Turkish>Medikal</Turkish>
+            <German>Das Tragen von %1 wurde gestoppt</German>
         </Key>
     </Package>
 </Project>

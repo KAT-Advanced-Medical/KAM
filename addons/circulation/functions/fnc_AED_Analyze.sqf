@@ -66,6 +66,7 @@ playsound3D [QPATHTOF_SOUND(sounds\analyzingnow.wav), _soundSource, false, getPo
             playsound3D [QPATHTOF_SOUND(sounds\shockadvised.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
             [{ // If shock advised begin to charge
                 params ["_medic", "_patient", "_defibrillatorType", "_soundSource"];
+
                 [_medic, _patient, _soundSource, _defibrillatorType] call FUNC(AED_Charge);
             }, [_medic, _patient, _defibrillatorType, _soundSource], 1.7] call CBA_fnc_waitAndExecute;
         } else { // no shock advised
@@ -74,10 +75,11 @@ playsound3D [QPATHTOF_SOUND(sounds\analyzingnow.wav), _soundSource, false, getPo
         };
     } else { // If advanced rhythms are disabled just check if patient is in cardiac arrest
         if (_patient getVariable [QACEGVAR(medical,heartRate), 0] isEqualTo 0) then {
+            playsound3D [QPATHTOF_SOUND(sounds\shockadvised.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
             [{ // If shock advised begin to charge
                 params ["_medic", "_patient", "_defibrillatorType", "_soundSource"];
 
-                [_medic, _patient, _defibrillatorType, _soundSource] call FUNC(AED_Charge);
+                [_medic, _patient, _soundSource, _defibrillatorType] call FUNC(AED_Charge);
             }, [_medic, _patient, _defibrillatorType, _soundSource], 1.7] call CBA_fnc_waitAndExecute;
         } else {
             playsound3D [QPATHTOF_SOUND(sounds\noshockadvised.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
