@@ -232,6 +232,8 @@
 
 #include "script_debug.hpp"
 
+#define ALL_BODY_PARTS_PRIORITY ["body", "head", "leftarm", "rightarm", "leftleg", "rightleg"]
+
 // Airway
 #define VAR_SPO2                       QEGVAR(breathing,airwayStatus)
 #define GET_SPO2(unit)                 (unit getVariable [VAR_SPO2, 100])
