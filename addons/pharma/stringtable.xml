@@ -16,7 +16,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV_Desc">
             <English>Changes what medical level is required to set IVs</English>
-            <German>Benötigter medizinischer Grad, für das Legen von IVs erforderlich ist</German>
+            <German>Benötigter medizinischer Grad, welcher für das Legen von IVs erforderlich ist</German>
             <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia kaniul IV</Polish>
             <French>Niveau nécessaire pour poser une IV</French>
             <Chinese>改变设置静脉注射所需的医疗级别</Chinese>
@@ -51,7 +51,7 @@
             <Czech>Změní, která zdravotnická úroveň je potřeba k zavedení IO</Czech>
             <French>Change le niveau médical requis pour poser des IO</French>
             <Korean>IO를 설정하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Benötigter medizinischer Grad, für das Legen von IOs erforderlich ist</German>
+            <German>Benötigter medizinischer Grad, welcher für das Legen von IOs erforderlich ist</German>
             <Japanese>IOの使用に訓練レベルを必要とさせます。</Japanese>
             <Spanish>Cambia el nivel médico que se requiere para colocar las IOs</Spanish>
             <Portuguese>Muda qual nível médico é necessário para aplicar IOs</Portuguese>
@@ -1676,7 +1676,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Naloxon</Czech>
             <French>Niveau médical requis pour la Naloxone</French>
             <Korean>날록손을 사용할 수 있는 필요한 의료 레벨 수준 변경</Korean>
-            <German>Benötigter medizinischer Grad,  für die Gabe von Naloxon</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Naloxon</German>
             <Japanese>ナロキソンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Naloxona</Spanish>
             <Portuguese>Nível médico exigido para administrar Naloxona</Portuguese>
