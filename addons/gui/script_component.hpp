@@ -14,7 +14,6 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_GUI
 #endif
 
-#include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 #include "\x\kat\addons\main\script_macros.hpp"
 
 #include "\a3\ui_f\hpp\defineResincl.inc"
