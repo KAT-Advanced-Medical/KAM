@@ -312,6 +312,7 @@ class ACE_Medical_Treatment_Actions {
     class RemoveIV: ApplyTourniquet {
         displayName = CSTRING(Remove_IV);
         displayNameProgress = CSTRING(Removing_IV);
+        category = "advanced";
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         treatmentTime = 3;
         items[] = {};
