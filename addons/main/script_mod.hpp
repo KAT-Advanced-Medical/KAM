@@ -3,17 +3,17 @@
 #define MAINPREFIX x
 #define PREFIX kat
 
-#define MAJOR 1
-#define MINOR 0
-#define PATCHLVL 0
-#define BUILD 0
+#include "script_version.hpp"
 
-#define VERSION MAJOR.MINOR.PATCHLVL.BUILD
-#define VERSION_AR MAJOR,MINOR,PATCHLVL,BUILD
+#define VERSION     MAJOR.MINOR
+#define VERSION_STR MAJOR.MINOR.PATCH
+#define VERSION_AR  MAJOR,MINOR,PATCHLVL,BUILD
+
+#define VERSION_CONFIG version = MAJOR.MINOR; versionStr = QUOTE(MAJOR.MINOR.PATCH); versionAr[] = {MAJOR,MINOR,PATCH}
 
 // MINIMAL required version for the Mod. Components can specify others..
-#define REQUIRED_VERSION 1.88
-#define REQUIRED_CBA_VERSION {3,8,0}
+#define REQUIRED_VERSION 2.14
+#define REQUIRED_CBA_VERSION {3,15,7}
 
 #ifdef COMPONENT_BEAUTIFIED
     #define COMPONENT_NAME QUOTE(KAT - COMPONENT_BEAUTIFIED)

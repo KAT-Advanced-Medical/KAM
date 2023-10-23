@@ -1,0 +1,34 @@
+name: Extract Data from Appended File and Update Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  extract-data-and-update-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Extract Data
+        run: |
+          set -x
+          # Get the issue number
+          ISSUE_NUMBER=$(echo "${{ github.event.issue.number }}")
+          # Get the contents of the appended file
+          # Get the URL of the first file linked in the issue
+          FILE_URL=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "${{ github.api_url }}/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}" | jq -r '.body | match("(?i)https://github.com/[^/]+/[^/]+/files/[0-9]+/[^)]+") | .string' | grep -i '\.txt$')
+          # Download the file
+          APPENDED_FILE_CONTENTS=$(curl -s -L -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "$FILE_URL" | tee /dev/stderr)
+          # Parse the contents of the appended file to extract the required data
+          Arma_Version=$(echo "$APPENDED_FILE_CONTENTS" | awk '/^Type:/{t=$0} /^Build:/{b=$0} /^Version:/{print t"\n"b"\n"$0}' | grep -oP '\d+\.\d+\.\d+')
+          ACE_Version=$(echo "$APPENDED_FILE_CONTENTS" | grep -oP 'Advanced Combat Environment \K\d+\.\d+\.\d+')
+          CBA_Version=$(echo "$APPENDED_FILE_CONTENTS" | grep -oP 'Community Base Addons v\K\d+\.\d+\.\d+')
+          KAT_Version=$(echo "$APPENDED_FILE_CONTENTS" | grep -oP 'kat_main\.pbo - \K\d+\.\d+\.\d+\.\d+')
+          Modlist=$(echo "$APPENDED_FILE_CONTENTS" | sed -n '/----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/,/==========================================================================================================================================================================================================/ {/----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/!{/==========================================================================================================================================================================================================/!p}}' | sed 's/^[0-9]\{2\}:[0-9]\{2\}:[0-9]\{2\}//' | awk -F '|' '{print $1}')
+          # Remove all @ symbols from the modlist so we don't tag people
+          Modlist=$(echo "$Modlist" | sed 's/@//g')
+          # Construct the comment body
+          comment_body="Arma Version: $Arma_Version<br> ACE Version: $ACE_Version<br> CBA Version: $CBA_Version<br> KAT Version: $KAT_Version <br> <details> <summary>Modlist</summary> $Modlist </details>"
+          # Add a comment to the opened issue using jq to escape the JSON data
+          curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -X POST "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" -H "Accept: application/vnd.github+json" -d "$(jq -n --arg body "$comment_body" '{body: $body}')"

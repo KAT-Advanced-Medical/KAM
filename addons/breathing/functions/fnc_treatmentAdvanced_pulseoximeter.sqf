@@ -16,7 +16,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftArm", "Pulseoximeter", objNull, "kat_Pulseoximeter"] call kat_breathing_fnc_treatmentAdvanced_hemopneumothorax;
+ * [player, cursorObject, "LeftArm", "Pulseoximeter", objNull, "kat_Pulseoximeter"] call kat_breathing_fnc_treatmentAdvanced_pulseoximeter;
  *
  * Public: No
  */

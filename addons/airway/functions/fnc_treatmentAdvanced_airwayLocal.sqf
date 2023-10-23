@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Katalam, edited by MiszczuZPolski
+ * Author: Katalam, edited by MiszczuZPolski & Miss Heda
  * Airway Management for collapsing local
  *
  * Arguments:
@@ -21,20 +21,7 @@
 params ["_medic", "_patient","_classname", "_usedItem"];
 
 if (_patient getVariable [QGVAR(occluded), false]) exitWith {
-    private _output = LLSTRING(Airway_NotClearForItem);
-    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-    [_medic, _usedItem] call ACEFUNC(common,addToInventory);
-};
-
-if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "Larynxtubus") exitWith {
-    private _output = LLSTRING(Airway_already);
-    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-    [_medic, _usedItem] call ACEFUNC(common,addToInventory);
-};
-
-if (_patient getVariable [QGVAR(airway_item), ""] isEqualTo "Guedeltubus" && _usedItem isEqualTo "kat_guedel") exitWith {
-    private _output = LLSTRING(Airway_already);
-    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+    [QGVAR(airwayFeedback), [_medic, LLSTRING(Airway_NotClearForItem)], _medic] call CBA_fnc_targetEvent;
     [_medic, _usedItem] call ACEFUNC(common,addToInventory);
 };
 

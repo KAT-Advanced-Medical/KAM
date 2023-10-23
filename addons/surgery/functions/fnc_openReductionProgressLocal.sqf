@@ -13,18 +13,16 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg", 2.1] call kat_surgery_fnc_openFractureProgressLocal;
+ * [player, cursorObject, "LeftLeg", 2.1] call kat_surgery_fnc_openReductionProgressLocal;
  *
  * Public: No
  */
 
 params ["_medic", "_patient", "_bodyPart", "_entry"];
 
-if (GVAR(uncon_requieredForAction)) then {
-    if !(IS_UNCONSCIOUS(_patient)) exitWith {
-        private _output = LLSTRING(fracture_fail);
-        [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-    };
+if (GVAR(Surgery_ConsciousnessRequirement) == 1 && !(IS_UNCONSCIOUS(_patient))) exitWith {
+    private _output = LLSTRING(fracture_fail);
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
 private _part = ALL_BODY_PARTS find toLower _bodyPart;
@@ -63,11 +61,11 @@ if (_number == _liveFracture) exitWith {
         };
     };
 
-    [_patient, "quick_view", LSTRING(surgery_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select _part]] call ACEFUNC(medical_treatment,addToLog);  
+    [_patient, "quick_view", LSTRING(surgery_log), [[_medic] call ACEFUNC(common,getName), _surgeryString, STRING_BODY_PARTS select _part]] call ACEFUNC(medical_treatment,addToLog);
 
     _liveFracture = _liveFracture + 0.2;
 
-    if (_reduce == true) then {
+    if (_reduce) then {
         _liveFracture = _liveFracture + 1;
     };
 

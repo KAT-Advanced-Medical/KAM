@@ -5,6 +5,7 @@
  *
  * Arguments:
  * 0: Medic <OBJECT>
+ * 1: Body Part <STRING>
  *
  * Return Value:
  * None
@@ -15,7 +16,7 @@
  * Public: No
  */
 
-params ["_patient"];
+params ["_patient", "_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
@@ -56,13 +57,17 @@ if !(GVAR(coagulation)) then {
 
             if (_random <= _ph) then {
                 {
-                    _x params ["", "_bodyPart", "_amount", "_bleeding"];
-
-                    if (_amount * _bleeding > 0) exitWith {
-                        private _part = ALL_BODY_PARTS select _bodyPart;
-                        [QACEGVAR(medical_treatment,bandageLocal), [_patient, _part, "PackingBandage"], _patient] call CBA_fnc_targetEvent;
-                        _exit = false;
+                    private _part = _x;
+                    if ([_patient,_x] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) then {
+                        continue;
                     };
+                    {
+                        _x params ["", "_amountOf", "_bleeding"];
+                        if (_amountOf * _bleeding > 0) exitWith {
+                            [QACEGVAR(medical_treatment,bandageLocal), [_patient, _part, "PackingBandage"], _patient] call CBA_fnc_targetEvent;
+                            _exit = false;
+                        };
+                    } forEach _y;
                 } forEach _openWounds;
             };
 

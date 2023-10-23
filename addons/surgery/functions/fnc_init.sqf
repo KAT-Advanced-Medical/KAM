@@ -15,9 +15,10 @@
  * Public: No
  */
 
-params ["_unit"];
+params ["_unit", ["_isRespawn", true]];
 
-_unit setVariable [QGVAR(debridement), [0,0,0,0,0,0], true];
+if (!local _unit) exitWith {};
+
 _unit setVariable [QGVAR(fractures), [0,0,0,0,0,0], true];
 _unit setVariable [QGVAR(lidocaine), false, true];
 _unit setVariable [QGVAR(etomidate), false, true];
@@ -25,7 +26,7 @@ _unit setVariable [QGVAR(sedated), false, true];
 
 /*
 * 0 = Unaffected
-* 1 = Stable Fracture 
+* 1 = Stable Fracture
 * 2 = Compound Fracture
 * 3 = Comminuted Fracture
 * 2.1/3.1 = Open Fracture

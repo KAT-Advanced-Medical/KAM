@@ -13,7 +13,6 @@ class CfgPatches {
         weapons[] = {
             "kat_sealant",
             "kat_gasmaskFilter",
-            "ACE_mortar_82mm",
             "KAT_M7A3",
             "KAT_CAS_M43_Bomb",
             "KAT_CAS_R_80mm_GAS_POD"
@@ -42,7 +41,9 @@ class CfgPatches {
             "ace_medical_statemachine",
             "ace_medical_status",
             "ace_medical_treatment",
-            "ace_medical_vitals"
+            "ace_medical_vitals",
+            "ace_mk6mortar",
+            "ace_csw"
         };
         author = "DiGii";
         url = ECSTRING(main,URL);
@@ -50,7 +51,6 @@ class CfgPatches {
     };
 };
 
-#include "CfgFunctions.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgMagazineGroups.hpp"
 #include "CfgAmmo.hpp"
@@ -62,3 +62,4 @@ class CfgPatches {
 #include "CfgSounds.hpp"
 #include "ui\RscAttributes.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "CfgGlasses.hpp"

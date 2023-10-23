@@ -23,7 +23,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(enable),
     "CHECKBOX",
     LLSTRING(SETTING_ENABLE),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -33,7 +33,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(CheckAirway_time),
     "SLIDER",
     [LLSTRING(TIME_CHECKAIRWAY),LLSTRING(TIME_CHECKAIRWAY_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [1, 10, 2, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -42,8 +42,8 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(probability_obstruction),
     "SLIDER",
-    LLSTRING(SETTING_obstruction),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [LLSTRING(SETTING_obstruction),LLSTRING(SETTING_obstruction_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 15, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -52,8 +52,8 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(probability_occluded),
     "SLIDER",
-    LLSTRING(SETTING_occluded),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [LLSTRING(SETTING_occluded),LLSTRING(SETTING_occluded_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 100, 10, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -63,8 +63,18 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(occlusion_repeatTimer),
     "SLIDER",
     LLSTRING(SETTING_occlusion_repeatTimer),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [1, 1200, 60, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Set period during which patient cannot get another occlusion after last occlusion was cleared, disabled if 0
+[
+    QGVAR(occlusion_cooldownPeriod),
+    "SLIDER",
+    LLSTRING(SETTING_occlusion_cooldownPeriod),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 60, 6, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -73,18 +83,28 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(probability_headturning),
     "SLIDER",
     [LLSTRING(SUCCES_HEADTURNING),LLSTRING(SUCCES_HEADTURNING_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [1, 100, 50, 0],
     true
 ] call CBA_Settings_fnc_init;
 
 // Settable action time for Head turning
 [
-    QGVAR(TurnAround_time),
+    QGVAR(HeadTurn_Interval),
     "SLIDER",
-    [LLSTRING(TIME_HEADTURNING),LLSTRING(TIME_HEADTURNING_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [1, 10, 2, 0],
+    [LLSTRING(SETTING_HeadTurning_Interval), LLSTRING(SETTING_HeadTurning_Interval_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [1, 30, 3, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Blocks head turning if patient has Guedel Tube or KingLT inserted
+[
+    QGVAR(block_headTurning_ifAirwayItem),
+    "CHECKBOX",
+    [LLSTRING(BLOCK_HEADTURNING),LLSTRING(BLOCK_HEADTURNING_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -94,7 +114,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(checkbox_puking_sound),
     "CHECKBOX",
     LLSTRING(SETTING_puking_sound),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -103,18 +123,8 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(string_exit),
     "LIST",
     ["keko_wasPunched string", LLSTRING(SETTING_exit)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [["", "keko_wasPunched"], ["", "keko_wasPunched"], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-// Enable or disable Colored Action Logs
-[
-    QGVAR(Colored_logs),
-    "CHECKBOX",
-    [LLSTRING(COLORED_LOGS),LLSTRING(COLORED_LOGS_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
-    [true],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -178,6 +188,16 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+// Enable reuasble Larynxtubus & Guedeltubus
+[
+    QGVAR(ReusableAirwayItems),
+    "CHECKBOX",
+    [LLSTRING(Reusable_AirwayItems),LLSTRING(Reusable_AirwayItems_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 // Settable action time for Head overstretching
 [
     QGVAR(Overstretch_time),
@@ -205,6 +225,15 @@ In real life, this will happen sometimes, not quiet often.
     [LLSTRING(TIME_CANCELRECOVERY),LLSTRING(TIME_CANCELRECOVERY_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionOverstretch)],
     [1, 120, 6, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(autoTriage),
+    "CHECKBOX",
+    [LLSTRING(AutoTriage),LLSTRING(AutoTriage_Desc)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 

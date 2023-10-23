@@ -4,7 +4,7 @@
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
-// #define ENABLE_PERFORMANCE_COUNTERS 
+// #define ENABLE_PERFORMANCE_COUNTERS
 
 #ifdef DEBUG_ENABLED_ZEUS
     #define DEBUG_MODE_FULL
@@ -23,8 +23,6 @@
 #define H_PART(num) (num * (SIZEY / 25))
 #define X_PART(num) (W_PART(num) + (safeZoneX + (safeZoneW - SIZEX) / 2))
 #define Y_PART(num) (H_PART(num) + (safeZoneY + (safeZoneH - SIZEY) / 2))
-
-#define MED_LOG_VARNAME(type) (format ["ace_medical_log_%1", type])
 
 #define IDC_BODY_GROUP      6000
 #define IDC_BODY_HEAD       6005

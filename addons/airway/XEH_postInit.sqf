@@ -8,6 +8,12 @@ if !(GVAR(enable)) exitWith {};
 [QGVAR(accuvacLocal), LINKFUNC(treatmentAdvanced_accuvacLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(recoveryPositionLocal), LINKFUNC(treatmentAdvanced_RecoveryPositionLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(cancelRecoveryPositionLocal), LINKFUNC(treatmentAdvanced_CancelRecoveryPositionLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(removeAirwayItemLocal), LINKFUNC(treatmentAdvanced_RemoveAirwayItemLocal)] call CBA_fnc_addEventHandler;
+
+[QGVAR(airwayFeedback), {
+    params ["_medic","_output"];
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+}] call CBA_fnc_addEventHandler;
 
 ["ace_unconscious", {
     params ["_unit", "_state"];

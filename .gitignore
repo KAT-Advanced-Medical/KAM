@@ -76,6 +76,11 @@ Thumbs.db
 releases/*
 keys/*
 .hemtt/local
+.hemttout
 ####
 hemtt.exe
 ArmaScriptCompiler.exe
+
+#SQF-VM Server
+.vscode\sqfvm-lsp
+.vscode
