@@ -394,7 +394,7 @@
             <Italian>Testa iperestesa</Italian>
             <Russian>перетянутый голова</Russian>
             <Japanese>気道確保中 (頭部後屈あご先挙上法)</Japanese>
-            <Portuguese>Cabeça hiperextendida</Portuguese>
+            <Portuguese>Cabeça hiperestendida</Portuguese>
             <Norwegian>Hodet er overekstendert</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_overstretching">
@@ -839,7 +839,7 @@
             <English>Time for overstretch the head</English>
             <German>Zeit um den Kopf zu überstrecken</German>
             <Polish>Czas na odchylenie głowy</Polish>
-            <Spanish>Tiempo para hiperextender la cabeza</Spanish>
+            <Spanish>Tiempo para hiperestender la cabeza</Spanish>
             <Chinese>过度伸展头部的时间</Chinese>
             <Chinesesimp>拉伸颈部的所需时间</Chinesesimp>
             <Czech>Čas na přetažení hlavy</Czech>
@@ -849,7 +849,7 @@
             <Italian>Tempo per iperestendere la testa</Italian>
             <Russian>Время перенапрягать голову</Russian>
             <Japanese>気道確保の所要時間</Japanese>
-            <Portuguese>Tempo para hiperextender a cabeça</Portuguese>
+            <Portuguese>Tempo para hiperestender a cabeça</Portuguese>
             <Norwegian>Tid for å overstrekke hodet</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_OVERSTRETCH_DESC">
@@ -866,7 +866,7 @@
             <Italian>Quanto tempo si impiega per iperestendere la testa</Italian>
             <Russian>Сколько времени потребуется, чтобы перетянуть голову</Russian>
             <Japanese>気道確保 (頭部後屈あご先挙上法) を完了するのにどのくらい時間がかかるか設定します</Japanese>
-            <Portuguese>Quanto tempo demorará para hiperextender a cabeça</Portuguese>
+            <Portuguese>Quanto tempo demorará para hiperestender a cabeça</Portuguese>
             <Norwegian>Hvor lang tid det vil ta å overstrekke hodet</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval">
@@ -1345,7 +1345,7 @@
             <Italian>Imposta se il controllo delle vie aeree può sovrascrivere il livello di triage corrente</Italian>
             <Spanish>Establece si la comprobación de las vías respiratorias puede anular el nivel de triaje actual.</Spanish>
             <Norwegian>Setter om sjekking av luftveier kan overstyre gjeldende triage-nivå</Norwegian>
-            <Portuguese>Define se a checagem de vias aéreas pode sobreescrever o nível atual de triagem.</Portuguese>
+            <Portuguese>Define se a checagem de vias aéreas pode sobrescrever o nível atual de triagem.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING">
             <English>Block head turning</English>
