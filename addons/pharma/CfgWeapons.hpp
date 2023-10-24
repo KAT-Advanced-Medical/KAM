@@ -207,7 +207,7 @@ class CfgWeapons {
         model = QPATHTOF(models\kat_vial\Vial.p3d);
         descriptionShort = CSTRING(Etomidate_DescShort);
         hiddenSelections[]={"label_etomidate"};
-        hiddenSelectionsTextures[] = {QPATHTOF(models\kat_vial\Vial_ca.paa)};
+        hiddenSelectionsTextures[] = {QPATHTOF(tex\kat_vial\Vial_ca.paa)};
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
         }; 
