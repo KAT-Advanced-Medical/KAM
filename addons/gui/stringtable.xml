@@ -52,6 +52,7 @@
             <Japanese>注入された液体なし</Japanese>
             <German>Keine verabreichten Flüssigkeiten</German>
             <Portuguese>Sem fluídos injetados</Portuguese>
+            <Spanish>No se administraron fluidos</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showInactiveStatuses">
             <English>Show Inactive Statuses</English>
@@ -59,6 +60,7 @@
             <Japanese>非活動状態の表示</Japanese>
             <German>Inaktive Status anzeigen</German>
             <Portuguese>Mostrar status inativos</Portuguese>
+            <Spanish>Mostrar estados inactivos</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showBleedRate">
             <English>Show Bleed Rate</English>
@@ -66,6 +68,7 @@
             <Japanese>出血率の表示</Japanese>
             <German>Blutungsrate anzeigen</German>
             <Portuguese>Mostrar taxa de sangramento</Portuguese>
+            <Spanish>Mostrar ritmo de sangrado</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showBleedRate_DESC">
             <English>Display bleed rate (slow/moderate/severe/massive)</English>
@@ -73,6 +76,7 @@
             <Japanese>出血率を表示する (遅い/中程度/重い/大量)</Japanese>
             <German>Blutungsrate anzeigen (langsam/mäßig/stark/massiv)</German>
             <Portuguese>Exibir taxa de sangramento (lento/moderado/grave/massivo)</Portuguese>
+            <Spanish>Mostrar la tasa de sangrado (lento, moderado, grave, masivo)</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
             <English>Overlay Selected Body Part</English>
@@ -80,6 +84,7 @@
             <Japanese>選択した身体部位のオーバーレイ表示</Japanese>
             <German>Ausgewähltes Körperteil überlagern</German>
             <Portuguese>Sobrepor parte do corpo selecionada</Portuguese>
+            <Spanish>Resaltar parte del cuerpo seleccionada</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showPatientSideLabels">
             <English>Label Patient Sides</English>
@@ -87,6 +92,7 @@
             <Japanese>患者側面のラベル</Japanese>
             <German>Beschriftung der Patientenseiten</German>
             <Portuguese>Mostrar etiquetas laterias do paciente</Portuguese>
+            <Spanish>Señalar lados del paciente</Spanish>
         </Key>
     </Package>
 </Project>

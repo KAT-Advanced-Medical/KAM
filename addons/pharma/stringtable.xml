@@ -251,6 +251,7 @@
             <Korean>펜트록스 흡입기</Korean>
             <German>Penthrox-Inhalator</German>
             <Portuguese>Inalador de Penthrox</Portuguese>
+            <Spanish>Inhalador Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Use_Penthrox">
             <English>Use Penthrox Inhaler</English>
@@ -259,6 +260,7 @@
             <Korean>펜트록스 흡입기 사용</Korean>
             <German>Verwende Penthrox-Inhalator</German>
             <Portuguese>Usar Inalador de Penthrox</Portuguese>
+            <Spanish>Usar inhalador Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
             <English>Used to manage moderate pain</English>
@@ -267,6 +269,7 @@
             <Korean>중간 정도의 통증 관리에 사용됩니다</Korean>
             <German>Wird zur Behandlung mäßiger Schmerzen eingesetzt</German>
             <Portuguese>Usado para gerenciar dor moderada</Portuguese>
+            <Spanish>Para controlar el dolor moderado</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -2092,6 +2095,7 @@
             <Korean>펜트록스를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Verwendung des Penthrox-Inhalators</German>
             <Portuguese>Nível médico exigido para uso do Inalador de Penthrox</Portuguese>
+            <Spanish>Nivel médico requerido para el Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
             <English>Treatment time for Penthrox Inhaler</English>
@@ -2100,6 +2104,7 @@
             <Korean>펜트록스로 치료하는 시간</Korean>
             <German>Behandlungszeit für den Penthrox-Inhalators</German>
             <Portuguese>Tempo de uso do Inalador de Penthrox</Portuguese>
+            <Spanish>Tiempo de tratamiento para el Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -2392,6 +2397,7 @@
             <Korean>펜트록스 흡입기 설정</Korean>
             <German>Penthrox Einstellungen</German>
             <Portuguese>Configurações do Inalador de Penthrox</Portuguese>
+            <Spanish>Configuracion del inhalador Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
             <English>%1 performed a saline flush</English>
@@ -2400,6 +2406,7 @@
             <Korean>%1이(가) 식염수 주입을 수행했다</Korean>
             <German>%1 hat eine Kochsalzlösungsspülung durchgeführt</German>
             <Portuguese>%1 realizou uma lavagem salina</Portuguese>
+            <Spanish>%1 realizó un enjuague con salino</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
@@ -2855,6 +2862,7 @@
             <Japanese>薬品によるスタミナの変化</Japanese>
             <German>Medikamente beeinflussen die Ausdauer</German>
             <Portuguese>Medicamentos afetam a Stamina</Portuguese>
+            <Spanish>Medicación modifica la resistencia</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication_DESC">
             <English>Allow certain medications to modify (vanilla/advanced fatigue) stamina as a side effect</English>
@@ -2862,6 +2870,7 @@
             <Japanese>特定の薬の副作用としてスタミナ(バニラ/高度な疲労)を変更することを許可する</Japanese>
             <German>Erlaubt es, dass bestimmte Medikamente als Nebenwirkung die Ausdauer beeinflussen (Vanilla/fortgeschrittene Ausdauer).</German>
             <Portuguese>Permite que certos medicamentos modifiquem a Stamina (vanilla/fadiga avançada) como efeito colateral</Portuguese>
+            <Spanish>Permitir que ciertos medicamentos modifiquen la resistencia (fatiga convencional/avanzada) como efecto secundario</Spanish>
         </Key>
     </Package>
 </Project>

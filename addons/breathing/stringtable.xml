@@ -210,6 +210,8 @@
             <Italian>Pulsossimetro: PR: %1 SpO2: %2</Italian>
             <Japanese>パルスオキシメーター: 脈拍: %1 SpO2: %2</Japanese>
             <Portuguese>Oxímetro de Pulso: FP: %1 SpO2: %2</Portuguese>
+            <Portuguese>Oxímetro de Pulso: PR: %1 SpO2: %2</Portuguese>
+            <Spanish>Oximetro de Pulso: RC: %1 SpO2: %2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -376,6 +378,7 @@
             <Korean>치료 후 체스트 씰 떼어내기</Korean>
             <German>Entferne Chest Seal nach Behandlung</German>
             <Portuguese>Remover Selo de Tórax após tratamento</Portuguese>
+            <Spanish>Retirar sello toracico tras tratamiento</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
@@ -688,6 +691,7 @@
             <Korean>데미지에 따른 기흉 확률 증가</Korean>
             <German>Erhöht die Wahrscheinlichkeit eines Pneumothorax basierend auf dem Schaden</German>
             <Portuguese>Aumentar a probabilidade de pneumotórax em função do dano</Portuguese>
+            <Spanish>Aumentar probabilidad de neumotorax segun el daño</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken_DESCRIPTION">
             <English>Increase chance of a pneumothorax and advanced pneumothorax occurring based on damage taken if over the pneumothorax damage threshold</English>
@@ -696,6 +700,7 @@
             <Korean>기흉 데미지 한계점을 초과할 경우 받은 데미지에 따라 기흉 및 고급 기흉이 발생할 확률이 증가합니다.</Korean>
             <German>Erhöht die Wahrscheinlichkeit, dass ein Pneumothorax und ein fortgeschrittener Pneumothorax auftritt, basierend auf dem erlittenen Schaden, wenn die Pneumothorax-Schadensschwelle überschritten wird</German>
             <Portuguese>Aumentar a probabilidade de pneumotórax e pneumotórax avançado em função do dano recebido caso ultrapasse o limite de dano para pneumotórax</Portuguese>
+            <Spanish>Aumenta la probabilidad de que se produzca un neumotórax y un neumotórax avanzado en función del daño recibido si se supera el umbral de daño del neumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance">
             <English>Deep Penetrating Injury Chance</English>
@@ -704,6 +709,7 @@
             <Korean>깊은 관통상 확률</Korean>
             <German>Chance auf tiefgreifende Verletzungen</German>
             <Portuguese>Probabilidade de lesão penetrante profunda</Portuguese>
+            <Spanish>Probabilidad de lesión de penetración profunda</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance_DESC">
             <English>Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted</English>
@@ -712,6 +718,7 @@
             <Korean>기흉 데미지 한계점을 넘겼지만 기흉에 걸리지 않은 경우 깊은 관통상에 걸릴 확률입니다.</Korean>
             <German>Es kann zu einer tiefgreifenden Verletzung kommen, wenn die Pneumothorax-Schadensschwelle überschritten wird, aber kein Pneumothorax verursacht wird</German>
             <Portuguese>Probabilidade em que uma lesão penetrante profunda apareça quando o limite de dado para pneumotórax é ultrapassado, mas o pneumotórax não é inflingido</Portuguese>
+            <Spanish>Probabilidad de que aparezca una lesión de penetración profunda cuando se supera el umbral de daño del neumotórax pero no se ha infligido un neumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_DeepPenetratingInjury">
             <English>Deep Penetrating Injury</English>
@@ -720,6 +727,7 @@
             <Korean>깊은 관통상</Korean>
             <German>Tiefgreifende Verletzung</German>
             <Portuguese>Lesão penetrante profunda</Portuguese>
+            <Spanish>Lesión de penetración profunda</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_ChestSealApplied">
             <English>Chest Seal Applied</English>
@@ -728,6 +736,7 @@
             <Korean>체스트 씰 적용 완료</Korean>
             <German>Chest Seal angebracht</German>
             <Portuguese>Selo de Tórax aplicado</Portuguese>
+            <Spanish>Sello toracico aplicado</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount">
             <English>Hemopneumothorax internal bleeding amount</English>
@@ -760,6 +769,7 @@
             <Korean>기흉 항상 표시</Korean>
             <German>Pneumothorax immer sichtbar</German>
             <Portuguese>Pneumotórax sempre visível</Portuguese>
+            <Spanish>Neumotórax siempre visible</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if pneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x pneumothorax)</English>
@@ -768,6 +778,7 @@
             <Korean>진단을 요구하는 대신 의료 메뉴에서 항상 기흉을 부상으로 표시하는지 여부를 설정합니다. (예: 1x 기흉)</Korean>
             <German>Legt fest, ob Pneumothorax im medizinischen Menü immer als Verletzung angezeigt werden soll, anstatt dass eine Diagnose erforderlich ist (1x Pneumothorax).</German>
             <Portuguese>Define se o pneumotórax deve sempre aparecer no menu médico como uma lesão sem necessidade de diagnóstico (1x pneumotórax)</Portuguese>
+            <Spanish>Establece si el neumotórax siempre debe ser visible en el menú médico como una lesión en lugar de requerir un diagnóstico (1x neumotórax)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible">
             <English>Tension pneumothorax and hemothorax always visible</English>
@@ -776,6 +787,7 @@
             <Korean>긴장성 기흉 및 혈기흉 항상 표시</Korean>
             <German>Spannungspneumothorax und Hämothorax immer sichtbar</German>
             <Portuguese>Pneumotórax hipertensivo e hemotórax sempre visíveis</Portuguese>
+            <Spanish>Neumotórax a tensión y hemotórax siempre visibles</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if tension pneumothorax and hemopneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x tensionpneumothorax/1x hemopneumothorax)</English>
@@ -784,6 +796,7 @@
             <Korean>진단을 요구하는 대신 의료 메뉴에서 항상 긴장성 기흉 및 혈기흉을 부상으로 표시하는지 여부를 설정합니다. (예: 1x 긴장성 기흉/혈기흉)</Korean>
             <German>Legt fest, ob Spannungspneumothorax und Hämopneumothorax im medizinischen Menü immer als Verletzung sichtbar sein sollen, anstatt eine Diagnose zu erfordern (1x Spannungspneumothorax/1x Hämopneumothorax)</German>
             <Portuguese>Define se o pneumotórax hipertensivo e hemotórax devem sempre aparecer no menu médico como uma lesão sem necessidade de diagnóstico (1x pneumotórax hipertensivo/1x hemotórax)</Portuguese>
+            <Spanish>Establece si el neumotórax a tensión y el hemoneumotórax siempre deben ser visibles en el menú médico como una lesión en lugar de requerir un diagnóstico (1x neumotórax a tensión / 1x hemoneumotórax)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Stethoscope_display">
             <English>Stethoscope</English>
@@ -1016,6 +1029,7 @@
             <Japanese>チアノーゼの表示</Japanese>
             <German>Zyanose anzeigen</German>
             <Portuguese>Mostrar cianose</Portuguese>
+            <Spanish>Mostrar cianosis</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_showCyanosis_DESC">
             <English>Shows cyanosis of patient in overview tab</English>
@@ -1023,6 +1037,7 @@
             <Japanese>チアノーゼを患者の概況に表示する</Japanese>
             <German>Zeigt die Zyanose des Patienten in der Übersicht an</German>
             <Portuguese>Mostra a cianose do paciente na guia de visão geral</Portuguese>
+            <Spanish>Muestra cianosis del paciente en la pestaña de vista general</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -1162,6 +1177,7 @@
             <Korean>기흉 악화 확률</Korean>
             <German>Wahrscheinlichkeit, dass sich der Pneumothorax verschlechtert</German>
             <Portuguese>Probabilidade de deterioração do pneumotórax</Portuguese>
+            <Spanish>Probabilidad de que el neumotórax empeore</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval">
             <English>Deteriorating pneumothorax interval</English>
@@ -1170,6 +1186,7 @@
             <Korean>기흉 악화 간격</Korean>
             <German>Intervall für Verschlechterung des Pneumothoraxes</German>
             <Portuguese>Intervalo de deterioração do pneumotórax</Portuguese>
+            <Spanish>Intervalo de deterioro del neumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not the pneumothorax will deteriorate</English>
@@ -1178,6 +1195,7 @@
             <Korean>기흉의 악화 여부와 관계없이 매 간격마다 확률이 발생합니다.</Korean>
             <German>Nach jedem Intervall wird eine Chance gewürfelt, ob sich der Pneumothorax verschlechtert oder nicht</German>
             <Portuguese>Após cada intervalo, uma chance será lançada para determinar se o pneumotórax deteriorará.</Portuguese>
+            <Spanish>Después de cada intervalo, se lanzará una probabilidad para determinar si el neumotórax empeorará</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
@@ -1354,6 +1372,7 @@
             <Korean>인공호흡기 내려놓기</Korean>
             <German>BVM Weglegen</German>
             <Portuguese>Remover BVM</Portuguese>
+            <Spanish>Guarda el Ambu</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Cancelled">
             <English>Rescue Breaths Cancelled</English>
@@ -1362,6 +1381,7 @@
             <Korean>인공호흡 취소됨</Korean>
             <German>Beatmung mit BVM gestoppt</German>
             <Portuguese>Ventilação com BVM cancelada</Portuguese>
+            <Spanish>Asistencia respiratoria cancelada</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM">
             <English>Use Pocket BVM</English>
@@ -1403,6 +1423,7 @@
             <English>Use BVM with Oxygen Tank (Vehicle)</English>
             <German>Verwende BVM mit Sauerstoff (Fahrzeug)</German>
             <Portuguese>Usar BVM com cilindro de oxigênio (veículo)</Portuguese>
+            <Spanish>Usa el Ambu con tanque de oxígeno (vehículo)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
             <English>Using BVM with Oxygen Tank (Vehicle)</English>
@@ -1638,6 +1659,7 @@
             <Italian>BVM- Sauerstoff Effektivität Multiplikator</Italian>
             <German>BVM-Sauerstoffeffektivitätsmultiplikator</German>
             <Portuguese>Coeficiente de eficácia de oxigênio com BVM</Portuguese>
+            <Spanish>Multiplicador de eficacia del oxígeno para el Ambu</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM">
             <English>%1 used %2 (x%3)</English>
@@ -1647,6 +1669,7 @@
             <Italian>%1 verwendete %2 (x%3)</Italian>
             <German>%1 verwendet %2 (x%3)</German>
             <Portuguese>%1 usou %2 (x%3)</Portuguese>
+            <Spanish>%1 uso %2 (x%3)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM_Oxygenated">
             <English>%1 (Oxygenated)</English>
@@ -1656,6 +1679,7 @@
             <Italian>%1 (Sauerstoff)</Italian>
             <German>%1 (Sauerstoffhaltig)</German>
             <Portuguese>%1 (Oxigenado)</Portuguese>
+            <Spanish>%1 (Oxigenado)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
@@ -1804,6 +1828,7 @@
             <Korean>호흡 확인</Korean>
             <German>Überprüfen Atmung</German>
             <Portuguese>Verificar Respiração</Portuguese>
+            <Spanish>Comprueba la respiración</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing_Progress">
             <English>Checking Breathing</English>
@@ -1812,6 +1837,7 @@
             <Korean>호흡 확인 중</Korean>
             <German>Prüfe Atmung</German>
             <Portuguese>Verificando Respiração</Portuguese>
+            <Spanish>Comprobando la respiración</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breath_stink">
             <English>, harsh and metallic</English>
@@ -1820,6 +1846,7 @@
             <Korean>, 거칠고 금속같다</Korean>
             <German>, harsch und metallisch</German>
             <Portuguese>, forte e metálico</Portuguese>
+            <Spanish>, áspero y metálico</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breath_mild">
             <English>, slightly fruity</English>
@@ -1828,6 +1855,7 @@
             <Korean>, 약간 과일향이 난다</Korean>
             <German>, leicht fruchtig</German>
             <Portuguese>, levemente frutado</Portuguese>
+            <Spanish>, ligeramente afrutado</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isNormal">
             <English>Patient is breathing normally</English>
@@ -1836,6 +1864,7 @@
             <Korean>환자는 정상적으로 호흡 중이다</Korean>
             <German>Der Patient atmet normal</German>
             <Portuguese>O paciente está respirando normalmente</Portuguese>
+            <Spanish>El paciente está respirando con normalidad</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isShallow">
             <English>Patient's breathing is shallow</English>
@@ -1844,6 +1873,7 @@
             <Korean>환자의 호흡이 얕다</Korean>
             <German>Die Atmung des Patienten ist flach</German>
             <Portuguese>A respiração do paciente está superficial</Portuguese>
+            <Spanish>La respiración del paciente es superficial</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_shallow">
             <English>Shallow</English>
@@ -1852,6 +1882,7 @@
             <Korean>얕음</Korean>
             <German>Flach</German>
             <Portuguese>Superficial</Portuguese>
+            <Spanish>Superficial</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
@@ -1872,6 +1903,7 @@
             <Korean>%1이(가) 호흡을 확인함: %2</Korean>
             <German>%1 hat die Atmung überprüft: %2</German>
             <Portuguese>%1 verificou a respiração: %2</Portuguese>
+            <Spanish>%1 comprobó la respiración: %2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
             <English>Enable Inspect Chest</English>
@@ -1880,6 +1912,7 @@
             <Korean>흉부 검사 활성화</Korean>
             <German>Aktivere Thoraxinspektion</German>
             <Portuguese>Ativar Inspeção de Tórax</Portuguese>
+            <Spanish>Habilitar la inspección del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_simple">
             <English>Simple</English>
@@ -1888,6 +1921,7 @@
             <Korean>단순</Korean>
             <German>Einfach</German>
             <Portuguese>Simples</Portuguese>
+            <Spanish>Sencillo</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_default">
             <English>Default</English>
@@ -1896,6 +1930,7 @@
             <Korean>기본</Korean>
             <German>Standard</German>
             <Portuguese>Padrão</Portuguese>
+            <Spanish>Por defecto</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time">
             <English>Inspect Chest Time</English>
@@ -1904,6 +1939,7 @@
             <Korean>흉부 검사 시간</Korean>
             <German>Dauer der Thoraxinspektion</German>
             <Portuguese>Tempo de Inspeção de Tórax</Portuguese>
+            <Spanish>Tiempo de inspección del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl">
             <English>Allow Inspecting Chest</English>
@@ -1912,6 +1948,7 @@
             <Korean>흉부 검사 허용</Korean>
             <German>Erlaube Thoraxinspektion</German>
             <Portuguese>Permitir Inspeção de Tórax</Portuguese>
+            <Spanish>Permitir la inspección del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_display">
             <English>Inspect Chest</English>
@@ -1920,6 +1957,7 @@
             <Korean>흉부 검사</Korean>
             <German>Untersuche Thorax</German>
             <Portuguese>Inspecionar Tórax</Portuguese>
+            <Spanish>Inspeccionar el pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_progress">
             <English>Inspecting Chest</English>
@@ -1928,6 +1966,7 @@
             <Korean>흉부 검사 중</Korean>
             <German>Untersuche Thorax</German>
             <Portuguese>Inspecionando Tórax</Portuguese>
+            <Spanish>Inspeccionando el pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_log">
             <English>%1 inspected chest: %2</English>
@@ -1936,6 +1975,7 @@
             <Korean>%1이(가) 흉부를 검사함: %2</Korean>
             <German>%1 untersuchte Thorax: %2</German>
             <Portuguese>%1 inspecionou o tórax: %2</Portuguese>
+            <Spanish>%1 inspeccionó el pecho: %2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_normal">
             <English>Chest rise and fall observed</English>
@@ -1944,6 +1984,7 @@
             <Korean>흉부 상승 및 하강 관찰함</Korean>
             <German>Heben und Senken der Brust wurde beobachtet</German>
             <Portuguese>Elevação e queda do tórax observadas</Portuguese>
+            <Spanish>Se observa elevación y descenso del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_none">
             <English>No chest movement observed</English>
@@ -1952,6 +1993,7 @@
             <Korean>흉부 움직임이 없는 것 관찰함</Korean>
             <German>Keine Brustbewegung beobachtet</German>
             <Portuguese>Nenhum movimento do tórax observado</Portuguese>
+            <Spanish>No se observa movimiento del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_none_log">
             <English>No chest movement</English>
@@ -1960,6 +2002,7 @@
             <Korean>흉부 움직임 없음</Korean>
             <German>keine Brustbewegung</German>
             <Portuguese>Nenhum movimento do tórax</Portuguese>
+            <Spanish>Sin movimiento del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_uneven">
             <English>Chest sides are uneven</English>
@@ -1968,6 +2011,7 @@
             <Korean>흉부가 울퉁불퉁함</Korean>
             <German>Die Brustseiten sind uneben</German>
             <Portuguese>Os lados do tórax estão desiguais</Portuguese>
+            <Spanish>Los lados del pecho son desiguales</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_uneven_log">
             <English>, chest sides uneven</English>
@@ -1976,6 +2020,7 @@
             <Korean>, 흉부 옆면이 울퉁불퉁함</Korean>
             <German>, Brustseiten uneben</German>
             <Portuguese>, lados do tórax desiguais</Portuguese>
+            <Spanish>, lados del pecho desiguales</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_unevenMovement">
             <English>Uneven chest rise and fall</English>
@@ -1984,6 +2029,7 @@
             <Korean>흉부 상승 및 하강이 울퉁불퉁함</Korean>
             <German>ungleichmäßiges Heben und Senken der Brust</German>
             <Portuguese>Elevação e queda do tórax desiguais</Portuguese>
+            <Spanish>Elevación y descenso desiguales del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_internalBleeding">
             <English>Skin is rigid, looks bruised</English>
@@ -1992,6 +2038,7 @@
             <Korean>피부가 딱딱하고 멍든 것 같음</Korean>
             <German>Die Haut ist steif und sieht gequetscht aus</German>
             <Portuguese>A pele está rígida, com aparência de contusão</Portuguese>
+            <Spanish>La piel está rígida y magullada</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_simple">
             <English>Symptoms indicate %1</English>
@@ -2000,6 +2047,7 @@
             <Korean>현재 증상: %1</Korean>
             <German>Die Symptome weisen auf %1 hin.</German>
             <Portuguese>Os sintomas indicam %1</Portuguese>
+            <Spanish>Los síntomas indican %1</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax">
             <English>Pneumothorax</English>
@@ -2008,6 +2056,7 @@
             <Korean>기흉</Korean>
             <German>Pneumothorax</German>
             <Portuguese>Pneumotórax</Portuguese>
+            <Spanish>Neumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_TensionPneumothorax">
             <English>Tension Pneumothorax</English>
@@ -2016,6 +2065,7 @@
             <Korean>긴장성 기흉</Korean>
             <German>Spannungspneumothorax</German>
             <Portuguese>Pneumotórax Hipertensivo</Portuguese>
+            <Spanish>Neumotórax a tensión</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax">
             <English>Hemopneumothorax</English>
@@ -2024,6 +2074,7 @@
             <Korean>혈기흉</Korean>
             <German>Hämopneumothorax</German>
             <Portuguese>Hemotórax</Portuguese>
+            <Spanish>Hemotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax_short">
             <English>PTX</English>
@@ -2032,6 +2083,7 @@
             <Korean>기흉</Korean>
             <German>PTX</German>
             <Portuguese>PTX</Portuguese>
+            <Spanish>NTX</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_TensionPneumothorax_short">
             <English>TPTX</English>
@@ -2040,6 +2092,7 @@
             <Korean>긴장성 기흉</Korean>
             <German>SPTX</German>
             <Portuguese>TPTX</Portuguese>
+            <Spanish>NTXT</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax_short">
             <English>HPTX</English>
@@ -2048,6 +2101,7 @@
             <Korean>혈기흉</Korean>
             <German>HPTX</German>
             <Portuguese>HTX</Portuguese>
+            <Spanish>HTX</Spanish>
         </Key>
     </Package>
 </Project>
