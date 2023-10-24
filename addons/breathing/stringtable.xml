@@ -84,7 +84,7 @@
             <Chinesesimp>心脏骤停时减少SpO2的下降</Chinesesimp>
             <Russian>Включить снижение SpO2 при остановке сердца</Russian>
             <Korean>심정지 중 SpO2 감소 활성화</Korean>
-            <French>Autoriser la réduction de la SpO2 d’arrêt cardiaque</French>
+            <French>Activer la réduction de la SpO2 pendant l’arrêt cardiaque</French>
             <Polish>Włącz utratę SpO2 w trakcie zatrzymania akcji serca</Polish>
             <Italian>Autorizza la riduzione della SpO2 nell'arresto cardiaco.</Italian>
             <Czech>Povolit redukci SpO2 při zástavě srdce</Czech>
@@ -512,7 +512,7 @@
             <Chinesesimp>AAT Kit即高级气道治疗套件,用于处理与气胸相关问题</Chinesesimp>
             <Czech>AAT Sada je navržena pro ošetření hemotoraxu a tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
             <Korean>AAT 키트(Advanced Airway Treatment Kit)는 혈기흉 같은 고급기도이상을 치료하도록 설계된 일회용 키트입니다.</Korean>
-            <French>Le Kit de Traitement médical d’urgence des voies aériennes est un kit à usage unique, désigné pour traiter les blessures urgentes des voies aériennes comme des hémo-pneumothorax.</French>
+            <French>Le Kit de Traitement médical d’urgence des voies aériennes est un kit à usage unique, conçu pour traiter les blessures urgentes des voies aériennes comme des hémo-pneumothorax.</French>
             <Turkish>Gelişmiş Hava Yolu Tedavi Kiti, hemopnömotoraks gibi gelişmiş hava yolu koşullarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
             <Italian>Il kit per il Trattamento Avanzato delle vie Aeree è un kit ad uso singolo per il trattamento avanzato di condizioni alle vie aeree, come l'emopneumotorace</Italian>
             <Russian>Набор ААТ</Russian>
@@ -538,7 +538,7 @@
             <Polish>Zestaw NCD to zestaw jednorazowego użytku przeznaczony do leczenia odmy prężnej.</Polish>
             <Japanese>NCDキット (Needle Chest Decompression, 胸部針減圧術)は、緊張性気胸の治療用に設計された使い捨てキットです。</Japanese>
             <Czech>NCD Sada je sada pro ošetření tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
-            <French>L'aiguille de décompression thoracique est un kit à usage unique designé pour traiter les pneumothorax sous tension</French>
+            <French>L'aiguille de décompression thoracique est un kit à usage unique conçu pour traiter les pneumothorax sous tension</French>
             <Korean>NCD(흉부 바늘 감압) 키트는 긴장성 기흉을 치료하도록 설계된 일회용 키트입니다.</Korean>
             <Italian>Il kit decompressione con ago è un kit a singolo uso adibito al trattamento del pneumotorace da tensione.</Italian>
             <Portuguese>O NCD é um kit de único uso projetado para tratar o pneumotórax hipertensivo</Portuguese>
@@ -628,7 +628,7 @@
             <Chinesesimp>血气胸/张力性气胸的最低治愈水平</Chinesesimp>
             <Czech>Minimální úroveň zdravotnického výcviku</Czech>
             <Korean>혈기흉 치료를 위한 최소 의료레벨 수준</Korean>
-            <French>Niveau minimum de soins d'un hémopneumothorax / pneumothorax sous tension</French>
+            <French>Niveau d'entrainement requis pour traiter un hémopneumothorax / pneumothorax sous tension</French>
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Tedavisi Minimum Seviye</Turkish>
             <Italian>Livello minimo per il trattamento di un emo/pneumotorace iperteso</Italian>
             <Russian>Лечение гемоторакса/напряженного пневмоторакса Минимальный уровень</Russian>
@@ -644,7 +644,7 @@
             <Chinesesimp>使用胸腔穿刺减压所需的医疗培训水平</Chinesesimp>
             <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření Dekompresní Jehlou, která je součástí AAT Sady a používá se k léčbě hemotoraxu či tenzního pneumotoraxu.</Czech>
             <Korean>혈기흉 치료에 사용되는 바늘 감압 치료 조치를 수행할 수 있는 사람에게 필요한 최소 의료레벨 수준입니다.</Korean>
-            <French>Niveau médical minimum requis pour effectuer une aiguille de décompression et une aspiration des fluides, pour traiter un hémopneumothorax ou un pneumothorax sous tension </French>
+            <French>Niveau médical minimum requis pour utiliser une aiguille de décompression et effectuer une aspiration des fluides, pour traiter un hémopneumothorax ou un pneumothorax sous tension </French>
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Italian>Il livello medico minimo richiesto per eseguire la decompressione con ago e il drenaggio dei fluidi, necessari per il trattamento di un emotorace o pneumotorace iperteso</Italian>
             <Russian>Минимальный медицинский уровень, необходимый для того, чтобы кто-то мог выполнять лечебные действия «Декомпрессия иглой» и «Дренаж жидкости», используемые для лечения гемоторакса или напряженного пневмоторакса.</Russian>
@@ -686,7 +686,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken">
             <English>Increase pneumothorax chance based on damage</English>
             <Japanese>ダメージに応じた気胸発生率の増加</Japanese>
-            <French>Augmente le risque de pneumothorax en fonction des dommages</French>
+            <French>Augmente le risque de pneumothorax en fonction des dégâts</French>
             <Korean>데미지에 따른 기흉 확률 증가</Korean>
             <German>Erhöht die Wahrscheinlichkeit eines Pneumothorax basierend auf dem Schaden</German>
             <Portuguese>Aumentar a probabilidade de pneumotórax em função do dano</Portuguese>
@@ -695,7 +695,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken_DESCRIPTION">
             <English>Increase chance of a pneumothorax and advanced pneumothorax occurring based on damage taken if over the pneumothorax damage threshold</English>
             <Japanese>気胸ダメージのしきい値を超えた場合、受けたダメージに応じて気胸及び高度な気胸が発生する確率が増加します</Japanese>
-            <French>Augmente le risque de survenue d'un pneumothorax et d'un pneumothorax avancé en fonction des dommages subis si le seuil de dommage du pneumothorax est dépassé</French>
+            <French>Augmente le risque d'apparition d'un pneumothorax et d'un pneumothorax avancé en fonction des dommages subis si le seuil de dommage du pneumothorax est dépassé</French>
             <Korean>기흉 데미지 한계점을 초과할 경우 받은 데미지에 따라 기흉 및 고급 기흉이 발생할 확률이 증가합니다.</Korean>
             <German>Erhöht die Wahrscheinlichkeit, dass ein Pneumothorax und ein fortgeschrittener Pneumothorax auftritt, basierend auf dem erlittenen Schaden, wenn die Pneumothorax-Schadensschwelle überschritten wird</German>
             <Portuguese>Aumentar a probabilidade de pneumotórax e pneumotórax avançado em função do dano recebido caso ultrapasse o limite de dano para pneumotórax</Portuguese>
@@ -1027,6 +1027,7 @@
             <Korean>치아노제 표시</Korean>
             <Japanese>チアノーゼの表示</Japanese>
             <German>Zyanose anzeigen</German>
+            <French>Montrer la cyanose</French>
             <Portuguese>Mostrar cianose</Portuguese>
             <Spanish>Mostrar cianosis</Spanish>
         </Key>
@@ -1035,6 +1036,7 @@
             <Korean>개요 탭에 환자의 치아노제를 표시합니다</Korean>
             <Japanese>チアノーゼを患者の概況に表示する</Japanese>
             <German>Zeigt die Zyanose des Patienten in der Übersicht an</German>
+            <French>Affiche constamment la cyanose dans le menu médical du patient</French>
             <Portuguese>Mostra a cianose do paciente na guia de visão geral</Portuguese>
             <Spanish>Muestra cianosis del paciente en la pestaña de vista general</Spanish>
         </Key>
@@ -1172,7 +1174,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_chance_DESC">
             <English>Chance for pneumothorax to deteriorate</English>
             <Japanese>気胸が悪化する確率を設定します</Japanese>
-            <French>Probabilité de détérioration du pneumothorax</French>
+            <French>Probabilité de détérioration d'un pneumothorax</French>
             <Korean>기흉 악화 확률</Korean>
             <German>Wahrscheinlichkeit, dass sich der Pneumothorax verschlechtert</German>
             <Portuguese>Probabilidade de deterioração do pneumotórax</Portuguese>
@@ -1181,7 +1183,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval">
             <English>Deteriorating pneumothorax interval</English>
             <Japanese>気胸が悪化する間隔</Japanese>
-            <French>Intervalle de détérioration du pneumothorax</French>
+            <French>Intervalle de détérioration d'un pneumothorax</French>
             <Korean>기흉 악화 간격</Korean>
             <German>Intervall für Verschlechterung des Pneumothoraxes</German>
             <Portuguese>Intervalo de deterioração do pneumotórax</Portuguese>
@@ -1190,7 +1192,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not the pneumothorax will deteriorate</English>
             <Japanese>気胸が悪化するかどうかの確率は各間隔毎に計算されます</Japanese>
-            <French>Après chaque intervalle, une chance sera lancée si le pneumothorax se détériorera ou non</French>
+            <French>Après chaque intervalle, une chance sera lancée pour savoir si le pneumothorax se détériorera ou non</French>
             <Korean>기흉의 악화 여부와 관계없이 매 간격마다 확률이 발생합니다.</Korean>
             <German>Nach jedem Intervall wird eine Chance gewürfelt, ob sich der Pneumothorax verschlechtert oder nicht</German>
             <Portuguese>Após cada intervalo, uma chance será lançada para determinar se o pneumotórax deteriorará.</Portuguese>
@@ -1421,6 +1423,7 @@
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle">
             <English>Use BVM with Oxygen Tank (Vehicle)</English>
             <German>Verwende BVM mit Sauerstoff (Fahrzeug)</German>
+            <French>Utiliser le BVM avec de l'oxygène (Véhicule)</French>
             <Portuguese>Usar BVM com cilindro de oxigênio (veículo)</Portuguese>
             <Spanish>Usa el Ambu con tanque de oxígeno (vehículo)</Spanish>
         </Key>
@@ -1429,7 +1432,7 @@
             <German>Beatme mit BVM und Sauerstoff (vom Fahrzeug)</German>
             <Korean>산소 탱크가 달린 인공호흡기(차량) 사용</Korean>
             <Japanese>BVMと車両の酸素ボンベを使用する</Japanese>
-            <French>Utiliser le BVM avec un réservoir d'oxygène (Véhicule)</French>
+            <French>Utilisation du BVM avec un réservoir d'oxygène (Véhicule)</French>
             <Italian>Usa maschera ambu con la bombola d'ossigeno (veicolo)</Italian>
             <Spanish>Usar la BVM con un cilindro de oxígeno (vehículo)</Spanish>
             <Portuguese>Usando BVM com cilindro de oxigênio (veículo)</Portuguese>
@@ -1970,7 +1973,7 @@
         <Key ID="STR_KAT_Breathing_inspectChest_log">
             <English>%1 inspected chest: %2</English>
             <Japanese>%1 が胸部を検査: %2</Japanese>
-            <French>%1 a inspecté le thorax %2</French>
+            <French>%1 a inspecté le thorax : %2</French>
             <Korean>%1이(가) 흉부를 검사함: %2</Korean>
             <German>%1 untersuchte Thorax: %2</German>
             <Portuguese>%1 inspecionou o tórax: %2</Portuguese>

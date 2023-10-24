@@ -820,7 +820,7 @@
         <Key ID="STR_KAT_Circulation_AnalyzeRhythm">
             <English>Analyze Rhythm</English>
             <Japanese>心調律を測定</Japanese>
-            <French>Chiffrer la fréquence cardiaque</French>
+            <French>Analyser le rythme cardiaque</French>
             <Korean>리듬 분석</Korean>
             <German>Rhythmus prüfen</German>
             <Portuguese>Analisar Ritmo</Portuguese>
@@ -972,7 +972,7 @@
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_PlacePads_Progress">
             <English>Placing Defibrillator Pads</English>
             <Japanese>除細動器パッドを装着しています</Japanese>
-            <French>Placer les électrodes du défibrilateur</French>
+            <French>Mise en place des électrodes du défibrilateur</French>
             <Korean>자동심장충격기 패드 붙이는 중</Korean>
             <German>Platziere Defibrillator-Pads</German>
             <Portuguese>Colocando pás do desfibrilador</Portuguese>
@@ -1294,7 +1294,7 @@
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGED">
             <English>CHARGED</English>
             <Japanese>充電完了</Japanese>
-            <French>CHARGE</French>
+            <French>CHARGÉ</French>
             <Korean>충전 완료</Korean>
             <German>CHARGED</German>
             <Portuguese>CARREGADO</Portuguese>
@@ -1312,7 +1312,7 @@
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_AED_DISARMED">
             <English>AED DISARMED</English>
             <Japanese>除細動器内部放電</Japanese>
-            <French>AED désarmé</French>
+            <French>AED DÉSARMÉ</French>
             <Korean>자동심장충격기 방전됨</Korean>
             <German>AED DEAKTIVIERT</German>
             <Portuguese>AED DESARMADO</Portuguese>
@@ -1321,7 +1321,7 @@
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DISARMED">
             <English>DISARMED</English>
             <Japanese>内部放電</Japanese>
-            <French>DESARME</French>
+            <French>DESARMÉ</French>
             <Korean>방전됨</Korean>
             <German>DEAKTIVIERT</German>
             <Portuguese>DESARMADO</Portuguese>
@@ -1339,7 +1339,7 @@
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
             <Japanese>ｼｮｯｸ実施</Japanese>
-            <French>CHOC DELIVRE</French>
+            <French>CHOC DELIVRÉ</French>
             <Korean>에너지 전달 완료</Korean>
             <German>GELIEFERTE ENERGIE</German>
             <Portuguese>CHOQUE REALIZADO</Portuguese>
@@ -1383,7 +1383,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_HR">
             <English>HR</English>
-            <French>FC</French>
+            <French>HR</French>
             <Korean>심박수</Korean>
             <Japanese>HR</Japanese>
             <German>HR</German>
@@ -1392,7 +1392,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PR">
             <English>PR</English>
-            <French>FP</French>
+            <French>PR</French>
             <Korean>맥박</Korean>
             <Japanese>PR</Japanese>
             <German>PR</German>
@@ -1685,7 +1685,7 @@
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
             <Japanese>%1 は除細動器パッドを装着した (%2)</Japanese>
-            <French>%1 a connecté des électrodes du défibrillateur (%2)</French>
+            <French>%1 a connecté les électrodes du défibrillateur (%2)</French>
             <Korean>%1이(가) 심장충격기의 패드를 붙였습니다 (%2)</Korean>
             <German>%1 hat Defibrillator-Pads befestigt (%2)</German>
             <Portuguese>%1 conectou as pás do desfibrilador (%2)</Portuguese>
@@ -1896,7 +1896,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit">
             <English>Distance limit for defibrillators in meters</English>
             <Japanese>除細動器の制限距離 (メートル)</Japanese>
-            <French>La distance limite du défibrillateur (mètres)</French>
+            <French>Distance limite du défibrillateur (mètres)</French>
             <Korean>심장충격기 거리 제한 (m 단위)</Korean>
             <German>Distanzbegrenzung für Defibrillatoren in Metern</German>
             <Portuguese>Limite de distância para desfibriladores em metros</Portuguese>
@@ -2017,7 +2017,7 @@
         <Key ID="STR_KAT_Circulation_Activity_CPR">
             <English>%1 performed CPR (%2)</English>
             <Japanese>%1 はCPRを行いました (%2)</Japanese>
-            <French>%1 a effectué le RCP (%2)</French>
+            <French>%1 a effectué la RCP (%2)</French>
             <Korean>%1이(가) 심폐소생술을 수행하였습니다 (%2)</Korean>
             <German>%1 hat HLW durchgeführt (%2)</German>
             <Portuguese>%1 realizou RCP (%2)</Portuguese>
@@ -2284,7 +2284,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate">
             <English>Can Deteriorate</English>
             <Japanese>調律状態悪化の可能性</Japanese>
-            <French>Possibilité de diminution de la fonction cardiaque</French>
+            <French>Possibilité de détérioration de la fonction cardiaque</French>
             <Korean>심장기능이 악화될 수 있음</Korean>
             <German>Kann sich verschlechtern</German>
             <Portuguese>Pode deteriorar</Portuguese>
@@ -2293,7 +2293,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeMax">
             <English>Random Deteriorate Time Maximum</English>
             <Japanese>調律状態悪化するランダムな時間の最大値</Japanese>
-            <French>Délai aléatoire maximum jusqu'à l'arrêt cardiaque</French>
+            <French>Délai aléatoire maximum de détérioration de la fonction cardiaque</French>
             <Korean>심장기능 무작위 악화 시간 최대값</Korean>
             <German>Maximale zufällige Verschlechterungszeit</German>
             <Portuguese>Tempo máximo de deterioração aleatória</Portuguese>
@@ -2311,7 +2311,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateAfterTreatment">
             <English>Deteriorate After Treatment</English>
             <Japanese>治療後の調律状態悪化</Japanese>
-            <French>Diminution de la fonction cardiaque après le traitement</French>
+            <French>Détérioration de la fonction cardiaque après le traitement</French>
             <Korean>심장기능 치료 후 악화</Korean>
             <German>Verschlechterung nach der Behandlung</German>
             <Portuguese>Deteriorar após o tratamento</Portuguese>
@@ -2347,7 +2347,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_CPR_ROSC_Chance">
             <English>ROSC After CPR Chance</English>
             <Japanese>CPR後の心拍再開の確率</Japanese>
-            <French>Chance d'arrêt cardiaque après RCP</French>
+            <French>Chance de retour en ciculation spontannée après RCP</French>
             <Korean>심폐소생술 후 자가회복 확률</Korean>
             <German>Chance für ROSC nach HLW (Rückkehr des spontanen Kreislaufs)</German>
             <Portuguese>Chance de retorno da circulação espontânea após RCP</Portuguese>
@@ -2356,7 +2356,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_AED_ROSC_Chance">
             <English>ROSC After AED Chance</English>
             <Japanese>AED後の心拍再開の確率</Japanese>
-            <French>Chance d'arrêt cardiaque après un DEA</French>
+            <French>Chance de rretour en ciculation spontannée après AED</French>
             <Korean>심장충격기 사용 후 자가회복 확률</Korean>
             <German>Chance für ROSC nach AED (Rückkehr des spontanen Kreislaufs)</German>
             <Portuguese>Chance de retorno da circulação espontânea após DEA</Portuguese>
@@ -2374,7 +2374,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_hardcoreDeteriorationChance">
             <English>Hardcore Deterioration Chance</English>
             <Japanese>ハードコア調律状態悪化</Japanese>
-            <French>Chance de rythmes cardiaques intenses</French>
+            <French>Chance de détérioration intense</French>
             <Korean>하드코어 심장기능 악화 확률</Korean>
             <German>Hardcore-Verschlechterungschance</German>
             <Portuguese>Chance de deterioração no modo harcore</Portuguese>
@@ -2399,14 +2399,14 @@
             <Polish>AED-X: HR: %1 BP: --/-- SpO2: ---</Polish>
             <Italian>AED-X: FC: %1 PS: --/-- SpO2: ---</Italian>
             <Japanese>AED-X: 心拍: %1 血圧: --/-- SpO2: ---</Japanese>
-            <French>AED-X: FC: %1 PA: --/-- SpO2: ---</French>
+            <French>AED-X: HR: %1 BP: --/-- SpO2: ---</French>
             <Korean>X-시리즈 자동심장충격기: 심박수: %1 혈압: --/-- 산소포화도: ---</Korean>
             <German>AED-X: HR: %1 BP: --/-- SpO2: ---</German>
             <Portuguese>DEA-X: FC: %1 PA: --/-- SpO2: ---</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog">
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4</English>
-            <French>AED-X: FP: %1 PA: %2/%3 SpO2: %4</French>
+            <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4</French>
             <Korean>X-시리즈 자동심장충격기: 맥박: %1 혈압: %2/%3 산소포화도: %4</Korean>
             <Japanese>AED-X: 脈拍: %1 血圧: %2/%3 SpO2: %4</Japanese>
             <German>AED-X: PI: %1 BP: %2/%3 SpO2: %4</German>
@@ -2419,7 +2419,7 @@
             <Polish>AED-X: HR: %1 BP: %2/%3 SpO2: %4</Polish>
             <Italian>AED-X: FC: %1 PS: %2/%3 SpO2: %4</Italian>
             <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4</Japanese>
-            <French>AED-X: FC: %1 PA: %2/%3 SpO2: %4</French>
+            <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4</French>
             <Korean>X-시리즈 자동심장충격기: 심박수: %1 혈압: %2 /%3 산소포화도: %4</Korean>
             <German>AED-X: HR: %1 BP: %2/%3 SpO2: %4</German>
             <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4</Portuguese>
@@ -2484,7 +2484,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Automatic">
             <English>Automatic (Interval)</English>
             <Japanese>自動間隔</Japanese>
-            <French>Automatic (Interval)</French>
+            <French>Automatique (Interval)</French>
             <Korean>자동(일정 간격)</Korean>
             <German>Automatisch (Intervall)</German>
             <Portuguese>Automático (Intervalo)</Portuguese>

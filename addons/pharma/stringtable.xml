@@ -2861,6 +2861,7 @@
             <Korean>약물이 스태미나를 조절합니다</Korean>
             <Japanese>薬品によるスタミナの変化</Japanese>
             <German>Medikamente beeinflussen die Ausdauer</German>
+            <French>Les médicaments modifient l'endurance</French>
             <Portuguese>Medicamentos afetam a Stamina</Portuguese>
             <Spanish>Medicación modifica la resistencia</Spanish>
         </Key>
@@ -2869,6 +2870,7 @@
             <Korean>부작용으로 특정 약물이 (바닐라/고급 피로도) 스태미나를 조절할 수 있도록 허용</Korean>
             <Japanese>特定の薬の副作用としてスタミナ(バニラ/高度な疲労)を変更することを許可する</Japanese>
             <German>Erlaubt es, dass bestimmte Medikamente als Nebenwirkung die Ausdauer beeinflussen (Vanilla/fortgeschrittene Ausdauer).</German>
+            <French>Autorise certains médicaments à modifier (Vanilla/Fatigue avancée) l'endurance en effet secondaire</French>
             <Portuguese>Permite que certos medicamentos modifiquem a Stamina (vanilla/fadiga avançada) como efeito colateral</Portuguese>
             <Spanish>Permitir que ciertos medicamentos modifiquen la resistencia (fatiga convencional/avanzada) como efecto secundario</Spanish>
         </Key>
