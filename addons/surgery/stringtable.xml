@@ -87,7 +87,7 @@
             <German>Der Atem des Patienten ist rau und metallisch</German>
             <Japanese>患者の吐息は掠れて金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
-            <Portuguese>O hálito do paciente é aspero e metálico</Portuguese>
+            <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
@@ -100,7 +100,7 @@
             <German>Der Atem des Patienten ist rau und metallisch</German>
             <Japanese>患者の吐息は掠れて金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
-            <Portuguese>O hálito do paciente é aspero e metálico</Portuguese>
+            <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_breath_mild">
             <English>Patient's breath is slightly fruity</English>

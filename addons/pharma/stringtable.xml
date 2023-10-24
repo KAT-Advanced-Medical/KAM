@@ -1467,7 +1467,7 @@
             <Portuguese>Flumazenil</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Flumazenil_DescShort">
-            <English>Counter to Lorzaepam</English>
+            <English>Counter to Lorazepam</English>
             <Chinesesimp>用于对抗劳拉西泮</Chinesesimp>
             <Italian>Antagonista del Lorazepam</Italian>
             <Czech>Proti Lorazepamu</Czech>
@@ -1477,7 +1477,7 @@
             <German>Antagonist zu Lorazepam</German>
             <Japanese>ロラゼパムへの拮抗薬</Japanese>
             <Spanish>Contrarresta el Lorazepam</Spanish>
-            <Portuguese>Antídoto para Lorzaepam</Portuguese>
+            <Portuguese>Antídoto para Lorazepam</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Flumazenil_DescUse">
             <English>Used to bring patients out of sedation</English>
@@ -2605,7 +2605,7 @@
             <Korean>페르피틴이 당신을 깨어있게 하고 끝없는 빠와로 가득 차게 합니다</Korean>
             <Japanese>ペルビチンはあなたを覚醒させ、無限のチカラに満ち満ちた気分にさせます!</Japanese>
             <Italian>Il Pervitin ti fa sembrare più attento e dotato di una forza senza uguali</Italian>
-            <Portuguese>O pervitin faz você se sentir acordado e cheio de poder INFINITO</Portuguese>
+            <Portuguese>O Pervitin faz você se sentir acordado e cheio de poder INFINITO</Portuguese>
             <Polish>Pervitin sprawia, że czujesz się pobudzony i pełny ENERGII</Polish>
             <Spanish>La pervitina hace que te sientas despierto y con una capacidad infinita de ENERGIA</Spanish>
             <Czech>Díky pervitinu se cítíš bdělý a plný nekonečné SÍLY</Czech>
@@ -2766,7 +2766,7 @@
             <Chinesesimp>检查导管</Chinesesimp>
             <Japanese>カテーテルを検査する</Japanese>
             <Spanish>Inspeccionar Catéter</Spanish>
-            <Portuguese>Inspecionar catéter</Portuguese>
+            <Portuguese>Inspecionar cateter</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Saline_Flush">
             <English>Saline Flush</English>

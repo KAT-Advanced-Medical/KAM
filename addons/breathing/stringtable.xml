@@ -577,7 +577,7 @@
             <Korean>고급 기흉 활성화</Korean>
             <Italian>Abilità pneumotorace avanzato</Italian>
             <German>Ausgeprägte Pneumothoraces aktivieren</German>
-            <Portuguese>Habilitar pneumotóraxes avançados</Portuguese>
+            <Portuguese>Habilitar tipos avançados de pneumotórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_ADVANCED_PTX_OPTION">
             <English>Enables advanced pneumothoraxes - hemopneumothorax and tensionpneumothorax</English>
@@ -589,7 +589,7 @@
             <Korean>고급 기흉을 활성화합니다. - 혈기흉 및 긴장성 기흉</Korean>
             <Italian>Abilità la pneumotorace avanzato - emopneumotorace e pneumotorace da tensione</Italian>
             <German>Aktiviert Ausgeprägte Pneumothoraces - Hämatopneumothoraces und Spannungspneumothoraces</German>
-            <Portuguese>Permite pneumotóraxes avançados - hemotórax e pneumotórax hipertensivo</Portuguese>
+            <Portuguese>Permite tipos avançados de pneumotórax - hemotórax e pneumotórax hipertensivo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_ADVANCED_PTX_CHANCE_OPTION">
             <English>Advanced Pneumothorax Chance</English>
