@@ -210,7 +210,6 @@
             <Italian>Pulsossimetro: PR: %1 SpO2: %2</Italian>
             <Japanese>パルスオキシメーター: 脈拍: %1 SpO2: %2</Japanese>
             <Portuguese>Oxímetro de Pulso: FP: %1 SpO2: %2</Portuguese>
-            <Portuguese>Oxímetro de Pulso: PR: %1 SpO2: %2</Portuguese>
             <Spanish>Oximetro de Pulso: RC: %1 SpO2: %2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_pulseoxi_Log_2">
