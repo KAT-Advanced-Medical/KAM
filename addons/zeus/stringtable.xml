@@ -167,6 +167,7 @@
             <French>Changer de condition cardiaque</French>
             <Korean>심장 상태 변경</Korean>
             <German>Ändern Sie den Herzzustand</German>
+            <Portuguese>Alterar estado cardíaco</Portuguese>
             <Spanish>Cambiar estado cardíaco</Spanish>
         </Key>
         <Key ID="STR_KAT_Zeus_checkmedical_Module_displayname">
@@ -207,6 +208,7 @@
             <French>Tachycardie ventriculaire</French>
             <Korean>심실빈맥(VT)</Korean>
             <German>Ventrikuläre Tachykardie</German>
+            <Portuguese>Taquicardia ventricular (TV)</Portuguese>
             <Spanish>Taquicardia ventricular</Spanish>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_VF">
@@ -215,6 +217,7 @@
             <French>Fibrillation ventriculaire</French>
             <Korean>심실세동(VF)</Korean>
             <German>Kammerflimmern (VF)</German>
+            <Portuguese>Fibrilação ventricular (FV)</Portuguese>
             <Spanish>Fibrilación ventricular</Spanish>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_PEA">
@@ -223,6 +226,7 @@
             <French>Activité électrique sans impulsion (PEA)</French>
             <Korean>무맥박 전기활동(PEA)</Korean>
             <German>Pulslose elektrische Aktivität (PEA)</German>
+            <Portuguese>Atividade elétrica sem pulso (AESP)</Portuguese>
             <Spanish>Actividad eléctrica sin pulso</Spanish>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_Asystole">
@@ -247,6 +251,7 @@
             <Korean>유닛은 반드시 AI여야 합니다</Korean>
             <Japanese>ユニットはAIである必要があります</Japanese>
             <German>Die Einheit muss eine KI sein</German>
+            <Portuguese>A unidade deve ser uma IA</Portuguese>
             <Spanish>La unidad debe ser una IA</Spanish>
         </Key>
         <Key ID="STR_KAT_Zeus_sliderFormat13was23">
@@ -271,6 +276,7 @@
             <Korean>인공지능 즉사 토글</Korean>
             <Japanese>AIの即死を切り替え</Japanese>
             <German>Schalte sofortiger KI-Tod um</German>
+            <Portuguese>Alternar morte instantânea de IA</Portuguese>
             <Spanish>Alternar muerte instantánea de la IA</Spanish>
         </Key>
         <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_Toggled">
@@ -279,6 +285,7 @@
             <Korean>유닛에 AI 즉사 %1</Korean>
             <Japanese>このAIユニットの即死は %1 になりました</Japanese>
             <German>Sofortiger KI-Tod %1 für die Einheit</German>
+            <Portuguese>Morte instantânea de IA %1 para unidade</Portuguese>
             <Spanish>Muerte instantánea de la IA al %1 para la unidad</Spanish>
         </Key>
     </Package>

@@ -194,7 +194,7 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Japanese>鎮痛剤を服用</Japanese>
             <Russian>Принимайте обезболивающие</Russian>
-            <Portuguese>Administrar analgésicos</Portuguese>
+            <Portuguese>Administrar Analgésicos</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
@@ -250,6 +250,7 @@
             <French>Inhalateur de Penthrox</French>
             <Korean>펜트록스 흡입기</Korean>
             <German>Penthrox-Inhalator</German>
+            <Portuguese>Inalador de Penthrox</Portuguese>
             <Spanish>Inhalador Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Use_Penthrox">
@@ -258,6 +259,7 @@
             <French>Utiliser l'inhalateur de Penthrox</French>
             <Korean>펜트록스 흡입기 사용</Korean>
             <German>Verwende Penthrox-Inhalator</German>
+            <Portuguese>Usar Inalador de Penthrox</Portuguese>
             <Spanish>Usar inhalador Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
@@ -266,6 +268,7 @@
             <French>Utilisé pour traiter les douleurs modérées</French>
             <Korean>중간 정도의 통증 관리에 사용됩니다</Korean>
             <German>Wird zur Behandlung mäßiger Schmerzen eingesetzt</German>
+            <Portuguese>Usado para gerenciar dor moderada</Portuguese>
             <Spanish>Para controlar el dolor moderado</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
@@ -362,7 +365,7 @@
             <Czech>Aplikovat Amiodaron</Czech>
             <Japanese>アミオダロンを注入</Japanese>
             <Russian>Ввести амиодарон</Russian>
-            <Portuguese>Administrar Amiodarona</Portuguese>
+            <Portuguese>Injetar Amiodarona</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Lidocaine_DescShort">
             <English>Used to combat cardiac arrest</English>
@@ -410,7 +413,7 @@
             <Czech>Aplikovat Lidokain</Czech>
             <Japanese>リドカインを注入</Japanese>
             <Russian>Ввести Лидокаин</Russian>
-            <Portuguese>Administrar Lidocaína</Portuguese>
+            <Portuguese>Injetar Lidocaína</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_DescShort">
             <English>Used to treat bradycardia</English>
@@ -458,7 +461,7 @@
             <Czech>Aplikovat Atropin</Czech>
             <Japanese>アトロピンを注入</Japanese>
             <Russian>Ввести Атропин</Russian>
-            <Portuguese>Administrar Atropina</Portuguese>
+            <Portuguese>Injetar Atropina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_TXA_DescShort">
             <English>Encourages clot formation</English>
@@ -506,7 +509,7 @@
             <Czech>Aplikovat TXA</Czech>
             <Japanese>トラネキサム酸 (TXA)を注入</Japanese>
             <Russian>Ввести TXA</Russian>
-            <Portuguese>Administrar TXA</Portuguese>
+            <Portuguese>Injetar TXA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Norep_DescShort">
             <English>Used to raise blood pressure</English>
@@ -554,7 +557,7 @@
             <Czech>Aplikovat Norepinefrin</Czech>
             <Japanese>ノルアドレナリンを注入</Japanese>
             <Russian>Ввести Норадреналин</Russian>
-            <Portuguese>Administrar Norepinefrina</Portuguese>
+            <Portuguese>Injetar Norepinefrina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Phenyl_DescShort">
             <English>Used to raise blood pressure</English>
@@ -602,7 +605,7 @@
             <Czech>Aplikovat Fenylefrin</Czech>
             <Japanese>フェニレフリンを注入</Japanese>
             <Russian>Ввести Фенилэфрин</Russian>
-            <Portuguese>Administrar Fenilefrina</Portuguese>
+            <Portuguese>Injetar Fenilefrina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Nitro_DescShort">
             <English>Used to lower blood pressure</English>
@@ -650,7 +653,7 @@
             <Czech>Aplikovat Nitroglycerin</Czech>
             <Japanese>ニトログリセリンを注入</Japanese>
             <Russian>Ввести Нитроглицерин</Russian>
-            <Portuguese>Administrar Nitroglicerina</Portuguese>
+            <Portuguese>Injetar Nitroglicerina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Reorient">
             <English>Reorient Patient</English>
@@ -953,7 +956,7 @@
             <Czech>Odstraňuji IV</Czech>
             <Japanese>IV/IOを抜去</Japanese>
             <Russian>Удалить IV/IO</Russian>
-            <Portuguese>Retirar IV/IO</Portuguese>
+            <Portuguese>Remover IV/IO</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Removing_IV">
             <English>Removing</English>
@@ -1396,7 +1399,7 @@
             <German>Verabreiche Etomidat</German>
             <Japanese>エトミデートを注入</Japanese>
             <Spanish>Administrar Etomidato</Spanish>
-            <Portuguese>Administrar Etomidato</Portuguese>
+            <Portuguese>Injetar Etomidato</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Lorazepam_displayName">
             <English>Lorazepam</English>
@@ -1448,7 +1451,7 @@
             <German>Verabreiche Lorazepam</German>
             <Japanese>ロラゼパムを注入</Japanese>
             <Spanish>Administrar Lorazepam</Spanish>
-            <Portuguese>Administrar Lorazepam</Portuguese>
+            <Portuguese>Injetar Lorazepam</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Flumazenil_displayName">
             <English>Flumazenil</English>
@@ -1500,7 +1503,7 @@
             <German>Verabreiche Flumazenil</German>
             <Japanese>フルマゼニルを注入</Japanese>
             <Spanish>Administrar Flumazenil</Spanish>
-            <Portuguese>Administrar Flumazenil</Portuguese>
+            <Portuguese>Injetar Flumazenil</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Ketamine">
             <English>Push Ketamine</English>
@@ -1513,7 +1516,7 @@
             <German>Verabreiche Ketamin</German>
             <Japanese>ケタミンを注入</Japanese>
             <Spanish>Administrar Ketamina</Spanish>
-            <Portuguese>Administrar Cetamina</Portuguese>
+            <Portuguese>Injetar Cetamina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Ketamine_Box_Display">
             <English>Ketamine</English>
@@ -1552,7 +1555,7 @@
             <German>Verabreiche Fentanyl</German>
             <Japanese>フェンタニルを注入</Japanese>
             <Spanish>Administrar Fentanilo</Spanish>
-            <Portuguese>Administrar Fentanil</Portuguese>
+            <Portuguese>Injetar Fentanil</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Fentanyl_Box_Display">
             <English>Fentanyl</English>
@@ -1591,7 +1594,7 @@
             <German>Verabreiche Nalbuphin</German>
             <Japanese>ナルブフィンを注入</Japanese>
             <Spanish>Administrar Nalbufina</Spanish>
-            <Portuguese>Administrar Nalbufina</Portuguese>
+            <Portuguese>Injetar Nalbufina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Nalbuphine_Box_Display">
             <English>Nalbuphine</English>
@@ -2091,6 +2094,7 @@
             <French>Niveau médical requis pour l'inhalateur de Penthrox</French>
             <Korean>펜트록스를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Erforderliches medizinischer Grad für die Verwendung des Penthrox-Inhalators</German>
+            <Portuguese>Nível médico exigido para uso do Inalador de Penthrox</Portuguese>
             <Spanish>Nivel médico requerido para el Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
@@ -2099,6 +2103,7 @@
             <French>Durée d'utilisation de l'inhalateur de Penthrox</French>
             <Korean>펜트록스로 치료하는 시간</Korean>
             <German>Behandlungszeit für den Penthrox-Inhalators</German>
+            <Portuguese>Tempo de uso do Inalador de Penthrox</Portuguese>
             <Spanish>Tiempo de tratamiento para el Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Basic">
@@ -2391,6 +2396,7 @@
             <French>Paramètres de l'inhalateur de Penthrox</French>
             <Korean>펜트록스 흡입기 설정</Korean>
             <German>Penthrox Einstellungen</German>
+            <Portuguese>Configurações do Inalador de Penthrox</Portuguese>
             <Spanish>Configuracion del inhalador Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
@@ -2399,6 +2405,7 @@
             <French>%1 a effectué le rinçage salin</French>
             <Korean>%1이(가) 식염수 주입을 수행했다</Korean>
             <German>%1 hat eine Kochsalzlösungsspülung durchgeführt</German>
+            <Portuguese>%1 realizou uma lavagem salina</Portuguese>
             <Spanish>%1 realizó un enjuague con salino</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
@@ -2553,7 +2560,7 @@
             <Polish>Wstrzyknij EACA</Polish>
             <Japanese>E-アミノカプロン酸 (EACA)を注入</Japanese>
             <Spanish>Administrar EACA</Spanish>
-            <Portuguese>Administrar EACA</Portuguese>
+            <Portuguese>Injetar EACA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_Display">
             <English>Pervitin capsule</English>
@@ -2586,7 +2593,7 @@
             <Japanese>ペルビチンを服用する</Japanese>
             <Korean>페르피틴 복용</Korean>
             <Italian>Assumi Pervitin</Italian>
-            <Portuguese>Tomar Pervitin</Portuguese>
+            <Portuguese>Administrar Pervitin</Portuguese>
             <Polish>Użyj Pervitin</Polish>
             <Spanish>Tomar Pervitina</Spanish>
             <Czech>Vzít si Pervitin</Czech>
@@ -2730,7 +2737,7 @@
             <Japanese>カフェインを服用する</Japanese>
             <Korean>카페인 복용</Korean>
             <Italian>Assumi Caffeina</Italian>
-            <Portuguese>Tomar Cafeína</Portuguese>
+            <Portuguese>Administrar Cafeína</Portuguese>
             <Polish>Użyj kofeinę</Polish>
             <Spanish>Tomar cafeina</Spanish>
             <Czech>Dát si Kofein</Czech>
@@ -2854,6 +2861,7 @@
             <Korean>약물이 스태미나를 조절합니다</Korean>
             <Japanese>薬品によるスタミナの変化</Japanese>
             <German>Medikamente beeinflussen die Ausdauer</German>
+            <Portuguese>Medicamentos afetam a Stamina</Portuguese>
             <Spanish>Medicación modifica la resistencia</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication_DESC">
@@ -2861,6 +2869,7 @@
             <Korean>부작용으로 특정 약물이 (바닐라/고급 피로도) 스태미나를 조절할 수 있도록 허용</Korean>
             <Japanese>特定の薬の副作用としてスタミナ(バニラ/高度な疲労)を変更することを許可する</Japanese>
             <German>Erlaubt es, dass bestimmte Medikamente als Nebenwirkung die Ausdauer beeinflussen (Vanilla/fortgeschrittene Ausdauer).</German>
+            <Portuguese>Permite que certos medicamentos modifiquem a Stamina (vanilla/fadiga avançada) como efeito colateral</Portuguese>
             <Spanish>Permitir que ciertos medicamentos modifiquen la resistencia (fatiga convencional/avanzada) como efecto secundario</Spanish>
         </Key>
     </Package>
