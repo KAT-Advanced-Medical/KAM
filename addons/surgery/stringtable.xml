@@ -360,7 +360,7 @@
             <German>Klemme</German>
             <Japanese>鉗子 (クランプ)</Japanese>
             <Spanish>Pinza de sujeción</Spanish>
-            <Portuguese>Braçadeira</Portuguese>
+            <Portuguese>Afastador</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Clamp_DescShort">
             <English>Used to clamp comminuted fractures</English>
@@ -1003,6 +1003,7 @@
             <French>Gestion de la conscience pendant la chirurgie</French>
             <Korean>수술 중 의식 관리</Korean>
             <German>Chirurgie Bewusstseinseinstellungen</German>
+            <Portuguese>Controles de consciência durante a cirurgia</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \nUnconsciousness Required for Surgery: Surgery requires patient to be unconscious. \nNo Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \nSurgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
@@ -1011,6 +1012,7 @@
             <French>La chirurgie provoque une perte de conscience: La chirurgie sans anesthésie ni sédation entraîne une perte de conscience due à l'arrêt cardiaque. \nInconscience requise pour la chirurgie: la chirurgie nécessite que le patient soit inconscient. \nPas d'inconscience due à la chirurgie: la chirurgie n'induit pas d'inconscience, elle provoque de la douleur. \nAnesthésie chirurgicale: le patient reste éveillé pendant la chirurgie s'il reçoit de l'étomidate.</French>
             <Korean>수술로 인해 의식불명 발생: 마취 및 진정제 없이 수술을 하면 심정지로 인해 의식을 잃습니다.\n수술에 필요한 의식불명: 수술을 하려면 환자가 의식을 잃어야 합니다.\n수술 중 의식불명 발생 없음: 수술이 의식불명을 유발시키지 않지만 통증을 발생시킵니다.\n수술 마취: 에토미데이트를 투여하면 환자는 수술 중 깨어 있게 됩니다.</Korean>
             <German>Eine Operation führt zu Bewusstlosigkeit: Eine Operation ohne Anästhesie und Sedierung führt zu Bewusstlosigkeit aufgrund von CA. \nFür eine Operation ist Bewusstlosigkeit erforderlich: Bei einer Operation muss der Patient bewusstlos sein. \nKeine Bewusstlosigkeit durch eine Operation: Eine Operation führt nicht zur Bewusstlosigkeit, sondern verursacht Schmerzen. \nOperationsanästhesie: Der Patient bleibt während der Operation wach, wenn er Etomidat erhält.</German>
+            <Portuguese>A cirurgia causa inconsciência: A cirurgia sem anestesia e sedação resulta em inconsciência. \nInconsciência necessária para a cirurgia: A cirurgia requer que o paciente esteja inconsciente. \nSem inconsciência por cirurgia: A cirurgia não induz inconsciência, causa dor. \nAnestesia cirúrgica: O paciente permanece acordado durante a cirurgia se receber etomidato.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
@@ -1019,6 +1021,7 @@
             <French>La chirurgie provoque une perte de conscience</French>
             <Korean>수술로 인해 의식불명 발생</Korean>
             <German>Eine Operation führt zu Bewusstlosigkeit</German>
+            <Portuguese>A cirurgia causa inconsciência</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
@@ -1027,6 +1030,7 @@
             <French>Nécessite un état inconscient</French>
             <Korean>수술에 필요한 의식불명</Korean>
             <German>Für die Operation ist Bewusstlosigkeit erforderlich</German>
+            <Portuguese>Inconsciência necessária para a cirurgia</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
@@ -1035,6 +1039,7 @@
             <French>Pas d'inconscience due à la chirurgie</French>
             <Korean>수술 중 의식불명 발생 없음</Korean>
             <German>Keine Bewusstlosigkeit durch die Operation</German>
+            <Portuguese>Sem inconsciência por cirurgia</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
@@ -1043,6 +1048,7 @@
             <French>Anesthésie chirurgicale</French>
             <Korean>수술 마취</Korean>
             <German>Chirurgische Anästhesie</German>
+            <Portuguese>Anestesia cirúrgica</Portuguese>
         </Key>
     </Package>
 </Project>
