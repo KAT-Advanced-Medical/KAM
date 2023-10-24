@@ -355,7 +355,7 @@
             <Italian>[AVVISO KAM]  E' stata rilevato almeno un addon che potrebbe influenzare negativamente il corretto funzionamenot della KAT. Gli sviluppatori della KAT consigliando vivamente di rumuovere questi addons.</Italian>
             <Polish>[KAM WARNING] Niekompatybilny mod, który może wywoływać błędy został wykryty. Zespół deweloperski KAT - Advanced Medical REWRITE stanowczo odradza użycie następujących modów: %1 </Polish>
             <Spanish>[ADVERTENCIA DE KAM] Addon(s) incompatibles que podrían afectar negativamente el funcionamiento del mod fueron detectados. El equipo de desarollo de KAT - Advanced Medical REWRITE recomienda fuertemente remover estos addons. %1</Spanish>
-            <Portuguese>[AVISO DE KAM] Detectados addons incompatíveis que podem afetar negativamente a funcionalidade correta. KAT - A equipe de desenvolvimento do Advanced Medical REWRITE recomenda fortemente a remoção destes complementos: %1</Portuguese>
+            <Portuguese>[AVISO DO KAM] Detectados addons incompatíveis que podem afetar negativamente a funcionalidade correta. KAT - A equipe de desenvolvimento do Advanced Medical REWRITE recomenda fortemente a remoção destes complementos: %1</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>
@@ -367,6 +367,7 @@
             <German>Erforderliche Zeit zum Entfernen des Tourniquet</German>
             <Czech>Čas pro sundání turniketu</Czech>
             <Italian>Tempo per rimuovere il laccio emostatico</Italian>
+            <Portuguese>Tempo para retirar o torniquete</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Stretcher_Display">
             <English>Stretcher</English>
@@ -410,6 +411,7 @@
             <German>Nacken Tourniquet</German>
             <Czech>Škrtidlo na krk</Czech>
             <Italian>Laccio emostatico collo</Italian>
+            <Portuguese>Torniquete no pescoço</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment">
             <English>Allow Shared Vehicle Equipment</English>
@@ -419,6 +421,7 @@
             <French>Autoriser le partage de l'équipement du véhicule</French>
             <Italian>Consenti la condivisione del materiale nel veicolo</Italian>
             <Spanish>Permitir compartir equipamiento en el vehículo</Spanish>
+            <Portuguese>Permitir equipamento compartilhado no veículo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_DESC">
             <English>Sets whether vehicle's medical supplies can be used while treating and in which order</English>
@@ -428,6 +431,7 @@
             <French>Règle si le matériel médical à bord d'un véhicule peut être utilisé, et dans quel ordre</French>
             <Italian>Imposta se le forniture mediche del veicolo possono essere utilizzate durante il trattamento e in quale ordine</Italian>
             <Spanish>Establece si los suministros médicos del vehículo pueden utilizarse durante el tratamiento y en qué orden</Spanish>
+            <Portuguese>Define se os suprimentos médicos do veículo podem ser usados durante o tratamento e em qual ordem</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleNoSelfTreatment">
             <English>Vehicle's Equipment First (No self-treatment)</English>
@@ -437,6 +441,7 @@
             <French>Matériel du véhicule en premier (Pas de traitement sur soi-même)</French>
             <Italian>Primo materiale del veicolo condiviso (nessun autotrattamento)</Italian>
             <Spanish>Priorizar equipamiento en el vehiculo (sin autotratamiento)</Spanish>
+            <Portuguese>Priorizar equipamento no veículo (sem autotratamento)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleExceptSelfTreatment">
             <English>Vehicle's Equipment First (Except self-treatment)</English>
@@ -446,6 +451,7 @@
             <French>Matériel du véhicule en premier (Sauf pour le traitement sur soi-même)</French>
             <Italian>Primo materiale del veicolo condiviso ( eccetto autotrattamento)</Italian>
             <Spanish>Priorizar equipamiento en el vehiculo (excepto autotratamiento)</Spanish>
+            <Portuguese>Priorizar equipamento no veículo (exceto autotratamento)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleAlways">
             <English>Vehicle's Equipment First (Always)</English>
@@ -455,6 +461,7 @@
             <French>Matériel du véhicule en premier (Toujours)</French>
             <Italian>Primo materiale del veicolo condiviso (sempre)</Italian>
             <Spanish>Priorizar equipamiento en el vehiculo (siempre)</Spanish>
+            <Portuguese>Priorizar equipamento no veículo (sempre)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_Armband">
             <English>Armband</English>
@@ -464,6 +471,7 @@
             <French>Brassard</French>
             <Italian>Fasciatura per arto</Italian>
             <Spanish>Brazalete</Spanish>
+            <Portuguese>Braçadeira</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmPos_Display">
             <English>Armband position left arm</English>
@@ -473,6 +481,7 @@
             <French>Position du brassard sur le bras gauche</French>
             <Italian>Posizione fasciatura sul braccio sinistro</Italian>
             <Spanish>Posición del brazalete en el brazo izquierdo</Spanish>
+            <Portuguese>Posição da braçadeira no braço esquerdo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slung to the left arm.</English>
@@ -482,6 +491,7 @@
             <French>Définie la position (x, y, z) où le brassard est accroché, sur le bras gauche.</French>
             <Italian>Definisce la posizione (x, y, z) in cui la fascia per arto  è agganciata al braccio sinistro.</Italian>
             <Spanish>Define la posición (x, y, z) en la que el brazalete se cuelga del brazo izquierdo.</Spanish>
+            <Portuguese>Define a posição (x, y, z) onde a braçadeira é colocada no braço esquerdo.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmRot_Display">
             <English>Armband rotation left arm</English>
@@ -491,6 +501,7 @@
             <French>Rotation du brassard sur le bras gauche</French>
             <Italian>Rotazione fasciatura sul braccio sinistro</Italian>
             <Spanish>Rotación del brazalete del brazo izquierdo</Spanish>
+            <Portuguese>Rotação da braçadeira no braço esquerdo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slung to the left arm.</English>
@@ -500,6 +511,7 @@
             <French>Définie la rotation (lacet, tangage, roulis) du brassard sur le bras gauche.</French>
             <Italian>Definisce la rotazione (imbardata, beccheggio, rollio) della fascia per arto che viene agganciata al braccio sinistro.</Italian>
             <Spanish>Define la rotación (guiñada, cabeceo, balanceo) del brazalete que se cuelga al brazo izquierdo.</Spanish>
+            <Portuguese>Define a rotação (guinada, arfagem, rolagem) da braçadeira que é colocada no braço esquerdo.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmPos_Display">
             <English>Armband position right arm</English>
@@ -509,6 +521,7 @@
             <French>Position du brassard sur le bras droit</French>
             <Italian>Posizione fasciatura sul braccio destro</Italian>
             <Spanish>Posición del brazalete en el brazo derecho</Spanish>
+            <Portuguese>Posição da braçadeira no braço direito</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slung to the right arm.</English>
@@ -518,6 +531,7 @@
             <French>Définie la position (x, y, z) où le brassard est accroché, sur le bras droit.</French>
             <Italian>Definisce la posizione (x, y, z) in cui la fascia per arto è agganciata al braccio destro.</Italian>
             <Spanish>Define la posición (x, y, z) en la que el brazalete se cuelga del brazo derecha.</Spanish>
+            <Portuguese>Define a posição (x, y, z) onde a braçadeira é colocada no braço direito.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmRot_Display">
             <English>Armband rotation right arm</English>
@@ -527,6 +541,7 @@
             <French>Rotation du brassard sur le bras droit</French>
             <Italian>Rotazione fasciatura sul braccio destro</Italian>
             <Spanish>Rotación del brazalete del brazo derecho</Spanish>
+            <Portuguese>Rotação da braçadeira no braço direito</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slung to the right arm.</English>
@@ -536,6 +551,7 @@
             <French>Définie la rotation (lacet, tangage, roulis) du brassard sur le bras droit.</French>
             <Italian>Definisce la rotazione (imbardata, beccheggio, rollio) della fascia per arto che viene agganciata al braccio destro.</Italian>
             <Spanish>Define la rotación (guiñada, cabeceo, balanceo) del brazalete que se cuelga al brazo derecho.</Spanish>
+            <Portuguese>Define a rotação (guinada, arfagem, rolagem) da braçadeira que é colocada no braço direito.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegPos_Display">
             <English>Armband position left leg</English>
@@ -545,6 +561,7 @@
             <French>Position du brassard sur la jambe gauche</French>
             <Italian>Posizione fasciatura sulla gamba sinistra</Italian>
             <Spanish>Posición del brazalete en la pierna izquierda</Spanish>
+            <Portuguese>Posição da braçadeira na perna esquerda</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slung to the left leg.</English>
@@ -554,6 +571,7 @@
             <French>Définie la position (x, y, z) où le brassard est accroché, sur la jambe gauche.</French>
             <Italian>Definisce la posizione (x, y, z) in cui la fascia per arto è agganciata alla gamba sinistra.</Italian>
             <Spanish>Define la posición (x, y, z) en la que el brazalete se cuelga de la pierna izquierda.</Spanish>
+            <Portuguese>Define a posição (x, y, z) onde a braçadeira é colocada na perna esquerda.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegRot_Display">
             <English>Armband rotation left leg</English>
@@ -563,6 +581,7 @@
             <French>Rotation du brassard sur la jambe gauche</French>
             <Italian>Rotazione fasciatura sulla gamba sinistra</Italian>
             <Spanish>Rotación del brazalete de la pierna izquierda</Spanish>
+            <Portuguese>Rotação da braçadeira na perna esquerda</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slung to the left leg.</English>
@@ -572,6 +591,7 @@
             <French>Définie la rotation (lacet, tangage, roulis) du brassard sur la jambe gauche.</French>
             <Italian>Definisce la rotazione (imbardata, beccheggio, rollio) della fascia per arto che viene agganciata alla gamba sinistra.</Italian>
             <Spanish>Define la rotación (guiñada, cabeceo, balanceo) del brazalete que se cuelga a la pierna izquierda.</Spanish>
+            <Portuguese>Define a rotação (guinada, arfagem, rolagem) da braçadeira que é colocada na perna esquerda.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegPos_Display">
             <English>Armband position right leg</English>
@@ -581,6 +601,7 @@
             <French>Position du brassard sur la jambe droite</French>
             <Italian>Posizione fasciatura sulla gamba destra</Italian>
             <Spanish>Posición del brazalete en la pierna derecha</Spanish>
+            <Portuguese>Posição da braçadeira na perna direita</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slung to the right leg.</English>
@@ -590,6 +611,7 @@
             <French>Définie la position (x, y, z) où le brassard est accroché, sur la jambe droite.</French>
             <Italian>Definisce la posizione (x, y, z) in cui la fascia per arto è agganciata alla gamba destra.</Italian>
             <Spanish>Define la posición (x, y, z) en la que el brazalete se cuelga de la pierna derecha.</Spanish>
+            <Portuguese>Define a posição (x, y, z) onde a braçadeira é colocada na perna direita.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegRot_Display">
             <English>Armband rotation right leg</English>
@@ -599,6 +621,7 @@
             <French>Rotation du brassard sur la jambe droite</French>
             <Italian>Rotazione fasciatura sulla gamba destra</Italian>
             <Spanish>Rotación del brazalete de la pierna derecha</Spanish>
+            <Portuguese>Rotação da braçadeira na perna direita</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slung to the right leg.</English>
@@ -608,6 +631,7 @@
             <French>Définie la rotation (lacet, tangage, roulis) du brassard sur la jambe droite.</French>
             <Italian>Definisce la rotazione (imbardata, beccheggio, rollio) della fascia per arto che viene agganciata alla gamba destra.</Italian>
             <Spanish>Define la rotación (guiñada, cabeceo, balanceo) del brazalete que se cuelga a la pierna derecha.</Spanish>
+            <Portuguese>Define a rotação (guinada, arfagem, rolagem) da braçadeira que é colocada na perna direita.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Red_Cross_ItemName">
             <English>Armband Red Cross</English>
@@ -617,6 +641,7 @@
             <French>Brassard de la Croix Rouge</French>
             <Italian>Fasciatura per arto Croce Rossa</Italian>
             <Spanish>Brazalete de la Cruz Roja</Spanish>
+            <Portuguese>Braçadeira da Cruz Vermelha</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Medic_ItemName">
             <English>Armband Medic</English>
@@ -626,6 +651,7 @@
             <French>Brassard d'infirmier</French>
             <Italian>Fasciatura per arto Medico</Italian>
             <Spanish>Brazalete de medico</Spanish>
+            <Portuguese>Braçadeira de médico</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Doctor_ItemName">
             <English>Armband Doctor</English>
@@ -635,6 +661,7 @@
             <French>Brassard de docteur</French>
             <Italian>Fasciatura per arto Dottore</Italian>
             <Spanish>Brazalete de doctor</Spanish>
+            <Portuguese>Braçadeira de doutor</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Kat_ItemName">
             <English>Armband KAT</English>
@@ -644,6 +671,7 @@
             <French>Brassard de KAT</French>
             <Italian>Fasciatura per arto KAT</Italian>
             <Spanish>Brazalete de KAT</Spanish>
+            <Portuguese>Braçadeira do KAT</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling">
             <English>Armband</English>
@@ -653,6 +681,7 @@
             <French>Brassard</French>
             <Italian>Fasciatura per arto</Italian>
             <Spanish>Brazalete</Spanish>
+            <Portuguese>Braçadeira</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Left_Arm">
             <English>Sling to left arm</English>
@@ -662,6 +691,7 @@
             <French>Accrocher au bras gauche</French>
             <Italian>Lega al braccio sinistro</Italian>
             <Spanish>Colgar al brazo izquierdo</Spanish>
+            <Portuguese>Colocar no braço esquerdo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Right_Arm">
             <English>Sling to right arm</English>
@@ -671,6 +701,7 @@
             <French>Accrocher au bras droit</French>
             <Italian>Lega al braccio destro</Italian>
             <Spanish>Colgar al brazo derecho</Spanish>
+            <Portuguese>Colocar no braço direito</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Left_Leg">
             <English>Sling to left leg</English>
@@ -680,6 +711,7 @@
             <French>Accrocher à la jambe gauche</French>
             <Italian>Lega alla gamba sinistra</Italian>
             <Spanish>Colgar a la pierna izquierda</Spanish>
+            <Portuguese>Colocar na perna esquerda</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Right_Leg">
             <English>Sling to right leg</English>
@@ -689,6 +721,7 @@
             <French>Accrocher à la jambe droite</French>
             <Italian>Lega alla gamba destra</Italian>
             <Spanish>Colgar a la pierna derecha</Spanish>
+            <Portuguese>Colocar na perna direita</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Left_Arm">
             <English>Unsling left arm</English>
@@ -698,6 +731,7 @@
             <French>Décrocher du bras gauche</French>
             <Italian>Slega al braccio sinistro</Italian>
             <Spanish>Desabrochar el brazo izquierdo</Spanish>
+            <Portuguese>Remover do braço esquerdo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Right_Arm">
             <English>Unsling right arm</English>
@@ -707,6 +741,7 @@
             <French>Décrocher du bras droit</French>
             <Italian>Slega al braccio destro</Italian>
             <Spanish>Desabrochar el brazo derecho</Spanish>
+            <Portuguese>Remover do braço direito</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Left_Leg">
             <English>Unsling left leg</English>
@@ -716,6 +751,7 @@
             <French>Décrocher de la jambe gauche</French>
             <Italian>Slega alla gamba sinistra</Italian>
             <Spanish>Desabrochar la pierna izquierda</Spanish>
+            <Portuguese>Remover da perna esquerda</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Right_Leg">
             <English>Unsling right leg</English>
@@ -725,6 +761,7 @@
             <French>Décrocher de la jambe droite</French>
             <Italian>Slega alla gamba destra</Italian>
             <Spanish>Desabrochar la pierna derecha</Spanish>
+            <Portuguese>Remover da perna direita</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Bubble_Wrap_Ace_Action">
             <English>Pop a Bubble</English>
@@ -734,6 +771,7 @@
             <French>Faire exploser une bulle</French>
             <Italian>Fai scoppiare una bolla</Italian>
             <Spanish>Reventar una burbuja</Spanish>
+            <Portuguese>Estourar uma bolha</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Bubble_Wrap_Display">
             <English>Bubble Wrap</English>
@@ -743,6 +781,7 @@
             <French>Papier bulle</French>
             <Italian>Pluriball</Italian>
             <Spanish>Papel burbuja</Spanish>
+            <Portuguese>Plástico Bolha</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_Bubble_Wrap_Desc">
             <English>A Bubble Wrap that you can squeeze to relive some pain</English>
@@ -752,6 +791,7 @@
             <French>Du papier bulle que vous pouvez faire exploser pour réduire un peu la douleur</French>
             <Italian>Un pluriball che puoi spremere per alleviare un po' di dolore</Italian>
             <Spanish>Un papel de burbujas que puedes apretar para aliviar un poco el dolor</Spanish>
+            <Portuguese>Um plástico bolha que você pode apertar para aliviar um pouco a dor</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_A_P">
             <English>Blood Group Patch A+</English>
@@ -761,6 +801,7 @@
             <French>Patch de groupe sanguin A+</French>
             <Italian>Toppa per gruppo sanguigno A+</Italian>
             <Spanish>Parche de grupo sanguíneo A+</Spanish>
+            <Portuguese>Sutache de grupo sanguíneo A+</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_A_N">
             <English>Blood Group Patch A-</English>
@@ -770,6 +811,7 @@
             <French>Patch de groupe sanguin A-</French>
             <Italian>Toppa per gruppo sanguigno A-</Italian>
             <Spanish>Parche de grupo sanguíneo A-</Spanish>
+            <Portuguese>Sutache de grupo sanguíneo A-</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_B_P">
             <English>Blood Group Patch B+</English>
@@ -779,6 +821,7 @@
             <French>Patch de groupe sanguin B+</French>
             <Italian>Toppa per gruppo sanguigno B+</Italian>
             <Spanish>Parche de grupo sanguíneo B+</Spanish>
+            <Portuguese>Sutache de grupo sanguíneo B+</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_B_N">
             <English>Blood Group Patch B-</English>
@@ -788,6 +831,7 @@
             <French>Patch de groupe sanguin B-</French>
             <Italian>Toppa per gruppo sanguigno B-</Italian>
             <Spanish>Parche de grupo sanguíneo B-</Spanish>
+            <Portuguese>Sutache de grupo sanguíneo B-</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_0_P">
             <English>Blood Group Patch 0+</English>
@@ -797,6 +841,7 @@
             <French>Patch de groupe sanguin O+</French>
             <Italian>Toppa per gruppo sanguigno 0+</Italian>
             <Spanish>Parche de grupo sanguíneo 0+</Spanish>
+            <Portuguese>Sutache de grupo sanguíneo O+</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_0_N">
             <English>Blood Group Patch 0-</English>
@@ -806,6 +851,7 @@
             <French>Patch de groupe sanguin O-</French>
             <Italian>Toppa per gruppo sanguigno 0-</Italian>
             <Spanish>Parche de grupo sanguíneo 0-</Spanish>
+            <Portuguese>Sutache de grupo sanguíneo O-</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_AB_P">
             <English>Blood Group Patch AB+</English>
@@ -815,6 +861,7 @@
             <French>Patch de groupe sanguin AB+</French>
             <Italian>Toppa per gruppo sanguigno AB+</Italian>
             <Spanish>Parche de grupo sanguíneo AB+</Spanish>
+            <Portuguese>Sutache de grupo sanguíneo AB+</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_AB_N">
             <English>Blood Group Patch AB-</English>
@@ -824,6 +871,7 @@
             <French>Patch de groupe sanguin AB-</French>
             <Italian>Toppa per gruppo sanguigno AB-</Italian>
             <Spanish>Parche de grupo sanguíneo AB-</Spanish>
+            <Portuguese>Sutache de grupo sanguíneo AB-</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_CarryPatient">
             <English>Carry Patient</English>
@@ -831,6 +879,7 @@
             <French>Transporter le patient</French>
             <Korean>환자 운반</Korean>
             <German>Trage Patient</German>
+            <Portuguese>Carregar paciente</Portuguese>
             <Spanish>Portar paciente</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_CancelCarrying">
@@ -839,6 +888,7 @@
             <French>Annuler le transport</French>
             <Korean>운반 취소</Korean>
             <German>Tragen abbrechen</German>
+            <Portuguese>Cancelar carregamento</Portuguese>
             <Spanish>Soltar paciente</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_StoppedCarrying%1">
@@ -847,6 +897,7 @@
             <French>Arrêt du transport de %1</French>
             <Korean>%1의 운반 취소함</Korean>
             <German>Das Tragen von %1 wurde gestoppt</German>
+            <Portuguese>Parou de carregar %1</Portuguese>
             <Spanish>Solto al paciente %1</Spanish>
         </Key>
     </Package>

@@ -45,6 +45,7 @@
             <Korean>다음 조건에 의해 매번 발생되는 혀막힘 확률(%): \n- 의식불명이 될 시 \n- 기관삽입기 / 게델튜브 제거 시</Korean>
             <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n- Caduta priva di sensi \n- Rimozione KingLT / Guedel Tube</Italian>
             <Norwegian>Sannsynlighet for en blokkert luftvei i prosent som oppstår hver gang det skjer: \n- Bevisstløshet \n- Gjerning av Larynkstube / Guedel Tube</Norwegian>
+            <Portuguese>Probabilidade percentual de obstrução de uma via aérea a cada vez que: \n- Ficar inconsciente \n- Remoção do Tubo Laríngeo / Cânula de Guedel</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
@@ -73,6 +74,7 @@
             <Korean>매번 발생되는 구토막힘 확률(%): [구토 반복 타이머] (기본값: 매 60초 마다)</Korean>
             <Italian>Probabilità di un'occlusione in percentuale che viene sorteggiata. Impostazione: [Timer ripetizione occlusione] (default ogni 60 secondi)</Italian>
             <Norwegian>Sannsynligheten for en okklusjon i prosent som blir rullet innstillingen for [Okklusjons repetisjonsintervall] (standard hver 60 sekunder).</Norwegian>
+            <Portuguese>Probabilidade percentual de oclusão, lançada a cada intervalo de tempo definido pela configuração: [Temporizador de repetição de oclusão] (por padrão, 60s)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
@@ -95,6 +97,7 @@
             <Korean>구토 쿨다운 시간</Korean>
             <Norwegian>Okklusjons avkjølingsperiode</Norwegian>
             <German>Abklingzeit für Erbrechen</German>
+            <Portuguese>Período de espera da oclusão</Portuguese>
             <Spanish>Tiempo para repetirse oclusion</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
@@ -111,7 +114,7 @@
             <Italian>Attivare il suono del vomito?</Italian>
             <Russian>Активировать звук рвоты?</Russian>
             <Japanese>嘔吐音を再生しますか?</Japanese>
-            <Portuguese>Ativar o som de vomitar?</Portuguese>
+            <Portuguese>Ativar o som de vômito?</Portuguese>
             <Norwegian>Aktiver kasting-lyden?</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_exit">
@@ -255,7 +258,7 @@
             <Italian>Le vie aeree sono libere</Italian>
             <Russian>Дыхательные пути чисты</Russian>
             <Japanese>気道は確保されています</Japanese>
-            <Portuguese>As vias aéreas estão limpas</Portuguese>
+            <Portuguese>Vias aéreas limpas</Portuguese>
             <Norwegian>Luftveier er frie</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_message_Occluded_no">
@@ -272,7 +275,7 @@
             <Italian>Aspirazione medica non necessaria</Italian>
             <Russian>Всасывание не требуется</Russian>
             <Japanese>医療吸引は必要ありません</Japanese>
-            <Portuguese>Não é necessária sucção médica</Portuguese>
+            <Portuguese>Sucção médica não necessária</Portuguese>
             <Norwegian>Ingen behov for medisinsk suging</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_message_obstruction_yes">
@@ -289,7 +292,7 @@
             <Italian>Gestione delle vie aeree necessaria</Italian>
             <Russian>Необходимо управление дыхательными путями</Russian>
             <Japanese>気道管理が必要です</Japanese>
-            <Portuguese>Necessidade de gerenciamento das vias aéreas</Portuguese>
+            <Portuguese>Gerenciamento das vias aéreas necessário</Portuguese>
             <Norwegian>Behov for luftveishåndtering</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_message_Occluded_yes">
@@ -323,7 +326,7 @@
             <Italian>Gestione delle vie aeree già eseguita</Italian>
             <Russian>Всасывание необходимо</Russian>
             <Japanese>気道管理はすでに行われています</Japanese>
-            <Portuguese>O gerenciamento das vias aéreas já foi realizado</Portuguese>
+            <Portuguese>O gerenciamento das vias aéreas já realizado</Portuguese>
             <Norwegian>Luftveishåndtering er allerede utført</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_Airway_NA">
@@ -340,7 +343,7 @@
             <Italian>Le vie aeree sono libere</Italian>
             <Russian>Дыхательные пути чисты</Russian>
             <Japanese>気道は確保されています</Japanese>
-            <Portuguese>As vias aéreas estão limpas</Portuguese>
+            <Portuguese>Vias aéreas limpas</Portuguese>
             <Norwegian>Luftveiene er frie</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_Airway_NotClearForItem">
@@ -357,7 +360,7 @@
             <Italian>L'articolo non può essere utilizzato, le vie aeree non sono libere</Italian>
             <Russian>Предмет не может быть использован, дыхательные пути не очищены</Russian>
             <Japanese>使用できませんでした、気道が詰まっています</Japanese>
-            <Portuguese>O item não pôde ser usado, as vias aéreas estão bloqueadas</Portuguese>
+            <Portuguese>O item não pôde ser usado, vias aéreas bloqueadas</Portuguese>
             <Norwegian>Gjenstanden kunne ikke brukes, luftveiene er ikke klare</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_overstretch">
@@ -408,7 +411,7 @@
             <Italian>Estendendo</Italian>
             <Russian>Гиперэкстензия головы</Russian>
             <Japanese>気道確保実施中</Japanese>
-            <Portuguese>Hiperextendendo cabeça</Portuguese>
+            <Portuguese>Estendendo</Portuguese>
             <Norwegian>Forlenger</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_overstretch_cancel">
@@ -442,7 +445,7 @@
             <Italian>Non andartene, stai salvando una vita!</Italian>
             <Russian>Не убегай, ты спасаешь жизнь!</Russian>
             <Japanese>移動しないでください、 あなたは気道確保中です!</Japanese>
-            <Portuguese>Não fuja, você está salvando uma vida!</Portuguese>
+            <Portuguese>Não vá embora, você está salvando uma vida!</Portuguese>
             <Norwegian>Ikke løp vekk, du redder et liv!</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
@@ -459,7 +462,7 @@
             <Italian>Rotazione della testa eseguita, le vie aeree non sono ancora libere</Italian>
             <Russian>Выполнен поворот головы, дыхательные пути еще не очистились</Russian>
             <Japanese>試みましたが、異物がまだ残っています</Japanese>
-            <Portuguese>Giro de cabeça executada, as vias aéreas ainda estão bloqueadas</Portuguese>
+            <Portuguese>Cabeça virada, vias aéreas ainda não limpas</Portuguese>
             <Norwegian>Hodevridning er utført, luftveiene er fortsatt ikke klare</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_success">
@@ -486,6 +489,7 @@
             <Korean>고개 돌리기 시작</Korean>
             <Norwegian>Begynn hodevridning</Norwegian>
             <German>Drehe den Kopf</German>
+            <Portuguese>Iniciar rotação de cabeça</Portuguese>
             <Spanish>Comenzar giro de cabeza</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
@@ -495,6 +499,7 @@
             <Korean>고개 돌리기 취소됨</Korean>
             <Norwegian>Hodevridning kansellert</Norwegian>
             <German>Kopfdrehen abgebrochen</German>
+            <Portuguese>Rotação de cabeça cancelada</Portuguese>
             <Spanish>Giro de cabeza cancelado</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
@@ -504,6 +509,7 @@
             <Korean>고개 돌리기 멈추기</Korean>
             <Norwegian>Stop hodevridning</Norwegian>
             <German>Kopf nicht mehr drehen</German>
+            <Portuguese>Interromper rotação de cabeça</Portuguese>
             <Spanish>Parar giro de cabeza</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_NA">
@@ -537,7 +543,7 @@
             <Italian>Controllo delle vie aeree</Italian>
             <Russian>Проверка дыхательных путей</Russian>
             <Japanese>気道を確認しています</Japanese>
-            <Portuguese>Verificando as vias aéreas</Portuguese>
+            <Portuguese>Verificando vias aéreas</Portuguese>
             <Norwegian>Sjekker luftveien</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_action_placing">
@@ -656,7 +662,7 @@
             <Italian>Vomito</Italian>
             <Russian>Рвота (маленькая)</Russian>
             <Japanese>吐瀉物 (小)</Japanese>
-            <Portuguese>Vômito (Pequeno)</Portuguese>
+            <Portuguese>Vômito (Pouco)</Portuguese>
             <Norwegian>Oppkast (Litt)</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_SUCCES_HEADTURNING">
@@ -870,6 +876,7 @@
             <Korean>고개 돌리기 간격</Korean>
             <Norwegian>Hodevridningsintervall</Norwegian>
             <German>Intervall des Kopfdrehens</German>
+            <Portuguese>Intervalo da rotação de cabeça</Portuguese>
             <Spanish>Intervalo de giro de cabeza</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval_DESC">
@@ -879,6 +886,7 @@
             <Korean>고개 돌리기를 시도하는 간격</Korean>
             <Norwegian>Tiden mellom forsøk på hodevridning</Norwegian>
             <German>Zeit zwischen versuchen, den Kopf zu drehen</German>
+            <Portuguese>Tempo entre tentativas de rotação de cabeça</Portuguese>
             <Spanish>Tiempo entre los giros de cabeza</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_Activity_HeadTurning">
@@ -888,6 +896,7 @@
             <Korean>%1은(는) 고개 돌리기를 끝냈습니다 (x%2)</Korean>
             <Norwegian>%1 fullførte hodevridning (%2%).</Norwegian>
             <German>%1 hat den Kopf gedreht (x%2)</German>
+            <Portuguese>%1 concluiu a rotação de cabeça</Portuguese>
             <Spanish>%1 acabó de girar la cabeza (x%2)</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC">
@@ -1094,7 +1103,7 @@
             <Italian>Tempo per mettere in posizione laterale di sicurezza</Italian>
             <Czech>Doba pro stabilizovanou polohu</Czech>
             <Spanish>Tiempo para establecer en posición lateral de seguridad</Spanish>
-            <Portuguese>Tempo para estabelecimento de posição de recuperação</Portuguese>
+            <Portuguese>Tempo para estabelecer a posição de recuperação</Portuguese>
             <Norwegian>Tid for å legge i stabilt sideleie</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_RECOVERY_DESC">
@@ -1242,6 +1251,7 @@
             <Korean>기관삽입기 제거</Korean>
             <Italian>Rimuovi King LT</Italian>
             <Norwegian>Fjern King LT</Norwegian>
+            <Portuguese>Remover Tubo Laríngeo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_Cancel_Guedeltubus">
             <English>Remove Guedel Tube</English>
@@ -1253,6 +1263,7 @@
             <Korean>게델튜브 제거</Korean>
             <Italian>Rimuovi canula di Guedel</Italian>
             <Norwegian>Fjern Guedeltubus</Norwegian>
+            <Portuguese>Remover Cânula de Guedel</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_action_removing">
             <English>Removing</English>
@@ -1264,6 +1275,7 @@
             <Korean>제거 중</Korean>
             <Italian>Rimuovendo</Italian>
             <Norwegian>Fjerner</Norwegian>
+            <Portuguese>Removendo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems">
             <English>Reusable Airway Items</English>
@@ -1275,6 +1287,7 @@
             <Korean>기도 관련 아이템 재사용 가능</Korean>
             <Italian>Oggetti delle vie aeree riutilizzabili</Italian>
             <Norwegian>Gjennbrukbare lufvei gjennstander</Norwegian>
+            <Portuguese>Objetos reutilizáveis de vias aéreas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems_DESC">
             <English>Regain the KingLT or Guedel Tube when manually removing them</English>
@@ -1286,6 +1299,7 @@
             <Korean>기관삽입기나 게델튜브를 수동으로 제거하면 재사용을 가능케 할지 여부입니다.</Korean>
             <Italian>Riguadagna il KingLT o la canula di Guedel quando li rimuovi manualmente</Italian>
             <Norwegian>Gjenopprett King LT eller Guedeltubus når du fjerner dem manuelt</Norwegian>
+            <Portuguese>Recupere o Tubo Laríngeo ou a Cânula de Guedel quando removidos manualmente</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveLarynxtubus_Log">
             <English>%1 removed KingLT</English>
@@ -1297,6 +1311,7 @@
             <Korean>%1(이)가 기관삽입기를 제거했습니다</Korean>
             <Italian>%1 rimosso KingLT</Italian>
             <Norwegian>%1 fjernet King LT</Norwegian>
+            <Portuguese>%1 removeu o Tubo Laríngeo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveGuedeltubus_Log">
             <English>%1 removed Guedel Tube</English>
@@ -1308,6 +1323,7 @@
             <Korean>%1(이)가 게델튜브를 제거했습니다</Korean>
             <Italian>%1 rimosso Guedel Tube</Italian>
             <Norwegian>%1 fjernet Guedeltubus</Norwegian>
+            <Portuguese>%1 removeu a Cânula de Guedel</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_AutoTriage">
             <English>Auto Triage Airways</English>
@@ -1318,6 +1334,7 @@
             <Italian>Triage automatico delle vie aeree</Italian>
             <Spanish>Triaje automático de la vía aérea</Spanish>
             <Norwegian>Auto Triage Luftveier</Norwegian>
+            <Portuguese>Triagem automática das vias aéreas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_AutoTriage_Desc">
             <English>Sets if checking airways can override current triage level</English>
@@ -1328,6 +1345,7 @@
             <Italian>Imposta se il controllo delle vie aeree può sovrascrivere il livello di triage corrente</Italian>
             <Spanish>Establece si la comprobación de las vías respiratorias puede anular el nivel de triaje actual.</Spanish>
             <Norwegian>Setter om sjekking av luftveier kan overstyre gjeldende triage-nivå</Norwegian>
+            <Portuguese>Define se a checagem de vias aéreas pode sobreescrever o nível atual de triagem.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING">
             <English>Block head turning</English>
@@ -1339,6 +1357,7 @@
             <Italian>Blocca la rotazione della testa</Italian>
             <Spanish>Bloquear la rotación de la cabeza</Spanish>
             <Norwegian>Blokker hodevridning</Norwegian>
+            <Portuguese>Bloquear a rotação de cabeça</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING_DESC">
             <English>Blocks head turning if patient has Guedel Tube inserted</English>
@@ -1350,6 +1369,7 @@
             <Italian>Blocca la rotazione della testa se il paziente ha la canula di Guedel inserita</Italian>
             <Spanish>Bloquea el giro de la cabeza si el paciente tiene insertado un tubo de Guedel.</Spanish>
             <Norwegian>Blokkerer hodevridning hvis pasienten har en Guedel Tube satt inn</Norwegian>
+            <Portuguese>Bloqueia a rotação de cabeça em pacientes com Cânula de Guedel</Portuguese>
         </Key>
     </Package>
 </Project>
