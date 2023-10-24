@@ -355,7 +355,7 @@
             <Chinesesimp>物品无法使用,气道仍不通畅</Chinesesimp>
             <Czech>Předmět nemohl být použit, dýchací cesty nejsou volné</Czech>
             <Korean>기도확보 실패, 기도가 여전히 막혀 있음</Korean>
-            <French>L'article n'a pas pu être utilisé, les voies respiratoires ne sont pas dégagées</French>
+            <French>L'objet n'a pas pu être utilisé, les voies respiratoires ne sont pas dégagées</French>
             <Turkish>Öğe kullanılamadı, hava yolları açık değil</Turkish>
             <Italian>L'articolo non può essere utilizzato, le vie aeree non sono libere</Italian>
             <Russian>Предмет не может быть использован, дыхательные пути не очищены</Russian>
@@ -1295,7 +1295,7 @@
             <Czech>Vrácení KingLT nebo Guedel Tuby při jejich manuálním odebrání</Czech>
             <Spanish>Recuperar el Tubo laríngeo o la Cánula de Guedel cuando se quitan manualmente</Spanish>
             <Japanese>KingLTまたはゲデルチューブを取り除いた際、再使用できるようにします。</Japanese>
-            <French>Récupère le tube laryngé ou la canule de guedel lorsque ceux-ci sont retirés manuellement</French>
+            <French>Récupérer le tube laryngé ou la canule de guedel lorsque ceux-ci sont retirés manuellement</French>
             <Korean>기관삽입기나 게델튜브를 수동으로 제거하면 재사용을 가능케 할지 여부입니다.</Korean>
             <Italian>Riguadagna il KingLT o la canula di Guedel quando li rimuovi manualmente</Italian>
             <Norwegian>Gjenopprett King LT eller Guedeltubus når du fjerner dem manuelt</Norwegian>
