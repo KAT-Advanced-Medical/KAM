@@ -831,6 +831,7 @@
             <French>Transporter le patient</French>
             <Korean>환자 운반</Korean>
             <German>Trage Patient</German>
+            <Spanish>Portar paciente</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_CancelCarrying">
             <English>Cancel Carrying</English>
@@ -838,6 +839,7 @@
             <French>Annuler le transport</French>
             <Korean>운반 취소</Korean>
             <German>Tragen abbrechen</German>
+            <Spanish>Soltar paciente</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_StoppedCarrying%1">
             <English>Stopped carrying %1</English>
@@ -845,6 +847,7 @@
             <French>Arrêt du transport de %1</French>
             <Korean>%1의 운반 취소함</Korean>
             <German>Das Tragen von %1 wurde gestoppt</German>
+            <Spanish>Solto al paciente %1</Spanish>
         </Key>
     </Package>
 </Project>
