@@ -41,3 +41,7 @@ PREP(treatmentSuccess);
 PREP(unloadAndCarryPatient);
 PREP(unSlingArmband);
 PREP(useItem);
+PREP(fullBodyCanStitch);
+PREP(fullBodySurgicalKitProgress);
+PREP(getFullBodyStitchableWounds);
+PREP(getFullBodyStitchTime);
