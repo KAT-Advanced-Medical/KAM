@@ -9,7 +9,6 @@ PREP(init);
 PREP(inspectCatheter);
 PREP(medication);
 PREP(medicationLocal);
-PREP(onMedicationUsage);
 PREP(pervitinPP);
 PREP(removeItemfromMag);
 PREP(removeIV);

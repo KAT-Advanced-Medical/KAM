@@ -17,9 +17,6 @@ class CfgFunctions {
             class medicationLocal {
                 file = QPATHTOF(functions\fnc_medicationLocal.sqf);
             };
-            class onMedicationUsage {
-                file = QPATHTOF(functions\fnc_onMedicationUsage.sqf);
-            };
             class tourniquetRemove {
                 file = QPATHTOF(functions\fnc_tourniquetRemove.sqf);
             };
