@@ -2,6 +2,9 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
 #include "\x\cba\addons\xeh\script_xeh.hpp"
 #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
+#include "\a3\ui_f\hpp\defineDIKCodes.inc"
+#include "\a3\ui_f\hpp\defineCommonGrids.inc"
+#include "\a3\ui_f\hpp\defineCommonColors.inc"
 
 // Default versioning level
 #define DEFAULT_VERSIONING_LEVEL 2
