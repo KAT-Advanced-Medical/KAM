@@ -57,10 +57,10 @@ if (_initial) then {
 if (GVAR(AdvRhythm_canDeteriorate)) then {
     private _timeToDeteriorate = 0;
 
-    if (GVAR(AdvRhythm_deteriorateTimeWeight) < GVAR(AdvRhythm_deteriorateTimeWeight)) then {
-        _timeToDeteriorate = random [20, GVAR(AdvRhythm_deteriorateTimeWeight), GVAR(AdvRhythm_deteriorateTimeWeight)];
+    if (GVAR(AdvRhythm_deteriorateTimeWeight) < GVAR(AdvRhythm_deteriorateTimeMax)) then {
+        _timeToDeteriorate = random [20, GVAR(AdvRhythm_deteriorateTimeWeight), GVAR(AdvRhythm_deteriorateTimeMax)];
     } else {
-        _timeToDeteriorate = random [20, GVAR(AdvRhythm_deteriorateTimeWeight) / 2, GVAR(AdvRhythm_deteriorateTimeWeight)];
+        _timeToDeteriorate = random [20, GVAR(AdvRhythm_deteriorateTimeMax) / 2, GVAR(AdvRhythm_deteriorateTimeMax)];
     };
 
     switch (_cardiacArrestType) do {
