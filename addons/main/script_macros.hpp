@@ -163,6 +163,8 @@
 #define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
 #define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
 
+#define PAIN_UNCONSCIOUS ACEGVAR(medical,painUnconsciousThreshold)
+
 // END ACE3 reference macros
 
 // item types
