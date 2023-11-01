@@ -2510,7 +2510,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_cardiacArrestBleedRate">
             <English>Cardiac Arrest Bleed Rate</English>
-            <Japanese>心停止時出血倍率</Japanese>
+            <Japanese>心停止時の出血速度</Japanese>
             <French>Taux de saignement suite à un arrêt cardiaque</French>
             <Korean>심정지 출혈 배율</Korean>
             <German>Blutungsrate bei Herzstillstand</German>

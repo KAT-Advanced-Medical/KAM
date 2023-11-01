@@ -10,7 +10,7 @@
             <Korean>일반 설정</Korean>
             <German>Grundeinstellungen</German>
             <Chinesesimp>基础设置</Chinesesimp>
-            <Japanese>基本設定</Japanese>
+            <Japanese>基本的な設定</Japanese>
             <Spanish>Parámetros básicos</Spanish>
             <Portuguese>Configurações básicas</Portuguese>
         </Key>
@@ -43,13 +43,13 @@
             <Turkish>Herhangi bir değer kritikse, AED-X veya Pulseoximeter Activitylog'larını kırmızı renklendirir</Turkish>
             <Italian>Colora gli Logs di attività di AED-X o il rosso del pulsossimetro, se un valore è critico</Italian>
             <Russian>Окрашивает журналы активности AED-X или пульсоксиметра в красный цвет, если какое-либо значение является критическим.</Russian>
-            <Japanese>異常値の場合、AED-Xやパルスオキシメーターの活動ログを赤色にします</Japanese>
+            <Japanese>重大値の場合、AED-Xやパルスオキシメーターの活動ログを赤色にします</Japanese>
             <Portuguese>Exibe os registros de atividade em vermelhos se algum valor for crítico</Portuguese>
         </Key>
         <Key ID="STR_KAT_GUI_Status_NoIv">
             <English>No pushed fluids</English>
             <Korean>주입된 액체 없음</Korean>
-            <Japanese>注入された液体なし</Japanese>
+            <Japanese>点滴中の輸液なし</Japanese>
             <German>Keine verabreichten Flüssigkeiten</German>
             <French>Pas de fluides administrés</French>
             <Portuguese>Sem fluídos injetados</Portuguese>
@@ -67,7 +67,7 @@
         <Key ID="STR_KAT_GUI_SETTING_showBleedRate">
             <English>Show Bleed Rate</English>
             <Korean>출혈 속도 표시</Korean>
-            <Japanese>出血率の表示</Japanese>
+            <Japanese>出血速度の表示</Japanese>
             <German>Blutungsrate anzeigen</German>
             <French>Montrer le taux de saignement</French>
             <Portuguese>Mostrar taxa de sangramento</Portuguese>
@@ -76,7 +76,7 @@
         <Key ID="STR_KAT_GUI_SETTING_showBleedRate_DESC">
             <English>Display bleed rate (slow/moderate/severe/massive)</English>
             <Korean>출혈 속도(느림/중간/심각/과다)를 표시합니다</Korean>
-            <Japanese>出血率を表示する (遅い/中程度/重い/大量)</Japanese>
+            <Japanese>出血速度を表示する (緩やか/そこそこ速い/激しい/酷く重大)</Japanese>
             <German>Blutungsrate anzeigen (langsam/mäßig/stark/massiv)</German>
             <French>Affiche le taux de saignement</French>
             <Portuguese>Exibir taxa de sangramento (lento/moderado/grave/massivo)</Portuguese>
@@ -85,7 +85,7 @@
         <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
             <English>Overlay Selected Body Part</English>
             <Korean>선택한 신체 부위 오버레이</Korean>
-            <Japanese>選択した身体部位のオーバーレイ表示</Japanese>
+            <Japanese>選択した身体部位をオーバーレイ表示</Japanese>
             <German>Ausgewähltes Körperteil überlagern</German>
             <French>Afficher la partie du corps sélectionnée</French>
             <Portuguese>Sobrepor parte do corpo selecionada</Portuguese>
@@ -94,7 +94,7 @@
         <Key ID="STR_KAT_GUI_SETTING_showPatientSideLabels">
             <English>Label Patient Sides</English>
             <Korean>환자 측면에 라벨 붙이기</Korean>
-            <Japanese>患者側面のラベル</Japanese>
+            <Japanese>患者の向きのラベル表示</Japanese>
             <German>Beschriftung der Patientenseiten</German>
             <French>Libéler les côtés du patient</French>
             <Portuguese>Mostrar etiquetas laterias do paciente</Portuguese>
