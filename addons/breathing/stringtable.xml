@@ -842,7 +842,7 @@
             <Turkish>Akciğer Seslerini Dinleyin</Turkish>
             <Italian>Auscultare i suoni polmonari</Italian>
             <Russian>Выслушивайте легочные шумы</Russian>
-            <Japanese>呼吸音を聴診する</Japanese>
+            <Japanese>呼吸音を聴診</Japanese>
             <Portuguese>Auscultar sons pulmonares</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_listening_progress">
@@ -1360,7 +1360,7 @@
             <French>Utiliser le BVM</French>
             <Korean>인공호흡기 사용</Korean>
             <Polish>Użyj worka samorozprężalnego</Polish>
-            <Japanese>BVMを使用する</Japanese>
+            <Japanese>BVMを使用</Japanese>
             <German>Verwende BVM</German>
             <Czech>Použít RV</Czech>
             <Italian>Usa maschera ambu</Italian>
@@ -1390,7 +1390,7 @@
             <French>Utiliser le BVM de poche</French>
             <Korean>인공호흡기 (포켓형) 사용</Korean>
             <Polish>Uzyj kieszonkowego worka samorozprężalnego</Polish>
-            <Japanese>携帯式BVMを使用する</Japanese>
+            <Japanese>携帯式BVMを使用</Japanese>
             <German>Verwende Tachen BVM </German>
             <Czech>Použít Kapesní RV</Czech>
             <Italian>Usa maschera ambu portatile </Italian>
@@ -1402,7 +1402,7 @@
             <French>Utiliser le BVM avec un réservoir à oxygène</French>
             <Korean>산소 탱크가 달린 인공호흡기 사용</Korean>
             <Polish>Użyj worka z butlą z tlenem</Polish>
-            <Japanese>BVMと酸素ボンベを使用する</Japanese>
+            <Japanese>BVMと酸素ボンベを使用</Japanese>
             <German>Verwende BVM mit Sauerstofftank</German>
             <Czech>Použít RV s Kyslíkovou Lahví</Czech>
             <Italian>Usa maschera ambu con la bombola d'ossigeno</Italian>
@@ -1414,7 +1414,7 @@
             <French>Utiliser le BVM avec de l'oxygène</French>
             <Korean>산소 연결 인공호흡기 사용</Korean>
             <Polish>Użyj worka z tlenem</Polish>
-            <Japanese>BVMと酸素を使用する</Japanese>
+            <Japanese>BVMと酸素を使用</Japanese>
             <German>Verwende BVM mit Sauerstoff</German>
             <Czech>Použít RV s Kyslíkem</Czech>
             <Italian>Usa maschera ambu con l'ossigeno</Italian>
@@ -1426,7 +1426,7 @@
             <French>Utiliser le BVM avec de l'oxygène (Véhicule)</French>
             <Portuguese>Usar BVM com cilindro de oxigênio (veículo)</Portuguese>
             <Spanish>Usa el Ambu con tanque de oxígeno (vehículo)</Spanish>
-            <Japanese>BVMと酸素ボンベ(車両)を使用する</Japanese>
+            <Japanese>BVMと酸素ボンベ(車両)を使用</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
             <English>Using BVM with Oxygen Tank (Vehicle)</English>
@@ -1492,7 +1492,7 @@
             <French>Remplir le réservoir à oxygène portable</French>
             <Korean>휴대용 산소 탱크 재충전</Korean>
             <Polish>Napełnij butlę</Polish>
-            <Japanese>携帯用酸素ボンベ を補充する</Japanese>
+            <Japanese>携帯用酸素ボンベ を補充</Japanese>
             <German>Nachfüllen des tragbaren Sauerstofftanks</German>
             <Czech>Naplnit přenosnou Kyslíkovou Lahev</Czech>
             <Italian>Riempi bombola portatile d'ossigeno</Italian>
@@ -1826,7 +1826,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing">
             <English>Check Breathing</English>
-            <Japanese>呼吸を確認する</Japanese>
+            <Japanese>呼吸を確認</Japanese>
             <French>Vérifier la respiration</French>
             <Korean>호흡 확인</Korean>
             <German>Überprüfen Atmung</German>
@@ -1955,7 +1955,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_display">
             <English>Inspect Chest</English>
-            <Japanese>胸部を検査する</Japanese>
+            <Japanese>胸部を検査</Japanese>
             <French>Inspecter le thorax</French>
             <Korean>흉부 검사</Korean>
             <German>Untersuche Thorax</German>

@@ -76,7 +76,7 @@
         <Key ID="STR_KAT_GUI_SETTING_showBleedRate_DESC">
             <English>Display bleed rate (slow/moderate/severe/massive)</English>
             <Korean>출혈 속도(느림/중간/심각/과다)를 표시합니다</Korean>
-            <Japanese>出血速度を表示する (緩やか/そこそこ速い/激しい/酷く重大)</Japanese>
+            <Japanese>出血速度を表示する (緩やか/そこそこ速い/激しい/酷く多い)</Japanese>
             <German>Blutungsrate anzeigen (langsam/mäßig/stark/massiv)</German>
             <French>Affiche le taux de saignement</French>
             <Portuguese>Exibir taxa de sangramento (lento/moderado/grave/massivo)</Portuguese>
@@ -85,7 +85,7 @@
         <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
             <English>Overlay Selected Body Part</English>
             <Korean>선택한 신체 부위 오버레이</Korean>
-            <Japanese>選択した身体部位をオーバーレイ表示</Japanese>
+            <Japanese>選択した身体部位のオーバーレイ表示</Japanese>
             <German>Ausgewähltes Körperteil überlagern</German>
             <French>Afficher la partie du corps sélectionnée</French>
             <Portuguese>Sobrepor parte do corpo selecionada</Portuguese>
