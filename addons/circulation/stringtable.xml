@@ -2007,7 +2007,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod">
             <English>Oxygenation Period</English>
-            <Japanese>酸素供給期間</Japanese>
+            <Japanese>酸素化期間</Japanese>
             <French>Période d'oxygénation</French>
             <Korean>산소 공급 시간</Korean>
             <German>Sauerstoffanreicherungszeitraum</German>
