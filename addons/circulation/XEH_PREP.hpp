@@ -25,6 +25,7 @@ PREP(Defibrillator_Pads_CheckCondition);
 PREP(Defibrillator_RemovePads);
 PREP(drawBlood);
 PREP(generateBloodType);
+PREP(getBloodPressure);
 PREP(getCardiacArrestHeartRate);
 PREP(handleCardiacArrest);
 PREP(handleTreatment);

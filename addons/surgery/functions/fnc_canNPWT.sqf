@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: MiszczuZPolski
- * Check if patient's body part can be healed by NPWT
+ * Check if patient's body part can be treated by NPWT
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -19,5 +19,18 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-((GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo [])
-||((GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isNotEqualTo [])
+private _openWounds = GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []];
+
+private _isBleeding = false;
+
+if (_openWounds isNotEqualTo []) then {
+    { // ace_medical_treatment_fnc_canBandage
+        _x params ["", "_amountOf", "_bleeding"]; 
+        
+        if (_amountOf * _bleeding > 0) exitWith {
+            _isBleeding = true;
+        };
+    } forEach _openWounds;
+};
+
+(_isBleeding || (GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []] isNotEqualTo []));

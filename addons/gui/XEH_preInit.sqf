@@ -96,7 +96,7 @@ private _damageColors = [
     [0.00, 0.00, 1.00, 1]
 ];
 
-private _categoryColors = [ACELSTRING(medical,Category), format ["| %1 |", ACELLSTRING(common,subcategory_colors)]];
+private _categoryColors = [ACELSTRING(medical,Interface_Category), format ["| %1 |", ACELLSTRING(common,subcategory_colors)]];
 {
     [
         format ["%1_%2", QACEGVAR(medical_gui,bloodLossColor), _forEachIndex],

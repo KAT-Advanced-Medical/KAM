@@ -29,6 +29,9 @@ class CfgFunctions {
             class updateLogList {
                 file = QPATHTOF(functions\fnc_updateLogList.sqf);
             };
+            class countTreatmentItems {
+                file = QPATHTOF(functions\fnc_countTreatmentItems.sqf);
+            };
         };
     };
 };

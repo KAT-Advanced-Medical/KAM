@@ -163,6 +163,8 @@
 #define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
 #define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
 
+#define PAIN_UNCONSCIOUS ACEGVAR(medical,painUnconsciousThreshold)
+
 // END ACE3 reference macros
 
 // item types
@@ -231,6 +233,8 @@
 #define QQPATHTOF_SOUND(var1) QUOTE(QPATHTOF_SOUND(var1))
 
 #include "script_debug.hpp"
+
+#define ALL_BODY_PARTS_PRIORITY ["body", "head", "leftarm", "rightarm", "leftleg", "rightleg"]
 
 // Airway
 #define VAR_SPO2                       QEGVAR(breathing,airwayStatus)

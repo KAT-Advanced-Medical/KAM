@@ -15,6 +15,7 @@ PREP(conditionIV);
 PREP(conditionIVstand);
 PREP(conditionSecondChance);
 PREP(fullHealLocal);
+PREP(getCountOfItem);
 PREP(getDogtagData);
 PREP(getUniqueItems);
 PREP(groupID);
