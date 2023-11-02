@@ -193,22 +193,20 @@ if (!local _unit) then {
         };
 
         if ((_unit getVariable [QGVAR(pneumothorax), 0] > 0) || _unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false]) then {
-            if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false])) then {
-                if (!(_unit getVariable [QGVAR(PneumoBreathCooldownOn), false])) then {
-                    _unit setVariable [QGVAR(PneumoBreathCooldownOn), true, true];
+            if (!(_unit getVariable [QACEGVAR(medical,inCardiacArrest), false]) && !(_unit getVariable [QGVAR(PneumoBreathCooldownOn), false])) then {
+                _unit setVariable [QGVAR(PneumoBreathCooldownOn), true, true];
 
-                    private _soundTargets = allPlayers inAreaArray [ASLToAGL getPosASL _unit, 15, 15, 0, false, 15];
+                private _soundTargets = allPlayers inAreaArray [ASLToAGL getPosASL _unit, 15, 15, 0, false, 15];
 
-                    if !(_soundTargets isEqualTo []) then {
-                        [QGVAR(playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
-                    };
-
-                    [{
-                        params["_unit"];
-                        _unit setVariable [QGVAR(PneumoBreathCooldownOn), false, true];
-                    },
-                    [_unit], 30] call CBA_fnc_waitAndExecute;
+                if !(_soundTargets isEqualTo []) then {
+                    [QGVAR(playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
                 };
+                
+                [{
+                    params["_unit"];
+                    _unit setVariable [QGVAR(PneumoBreathCooldownOn), false, true];
+                },
+                [_unit], 30] call CBA_fnc_waitAndExecute;
             };
         };
     };

@@ -1,6 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Glowbal, mharis001 Edited by MiszczuZPolski
+ * Author: Glowbal, mharis001
+ * Edited by MiszczuZPolski
  * Administers medication to the patient on the given body bodypart.
  *
  * Arguments:
@@ -15,7 +16,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", "Morphine", objNull, "ACE_morphine"] call kat_pharma_fnc_treatmentAdvanced_medication
+ * [player, cursorObject, "RightArm", "Morphine", objNull, "ACE_morphine"] call kat_pharma_fnc_medication
  *
  * Public: No
  */

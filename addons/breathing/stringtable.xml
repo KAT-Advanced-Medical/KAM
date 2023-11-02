@@ -84,7 +84,7 @@
             <Chinesesimp>心脏骤停时减少SpO2的下降</Chinesesimp>
             <Russian>Включить снижение SpO2 при остановке сердца</Russian>
             <Korean>심정지 중 SpO2 감소 활성화</Korean>
-            <French>Autoriser la réduction de la SpO2 d’arrêt cardiaque</French>
+            <French>Activer la réduction de la SpO2 pendant l’arrêt cardiaque</French>
             <Polish>Włącz utratę SpO2 w trakcie zatrzymania akcji serca</Polish>
             <Italian>Autorizza la riduzione della SpO2 nell'arresto cardiaco.</Italian>
             <Czech>Povolit redukci SpO2 při zástavě srdce</Czech>
@@ -133,7 +133,7 @@
             <Italian>Collegare pulsossimetro</Italian>
             <Russian>Прикрепите пульсоксиметр</Russian>
             <Japanese>パルスオキシメーターを取り付ける</Japanese>
-            <Portuguese>Conectar Oxímetro de Pulso</Portuguese>
+            <Portuguese>Colocar Oxímetro de Pulso</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display_Remove">
             <English>Remove Pulse Oximeter</English>
@@ -209,7 +209,8 @@
             <Turkish>Nabız Oksimetresi: PR: %1 SpO2: %2</Turkish>
             <Italian>Pulsossimetro: PR: %1 SpO2: %2</Italian>
             <Japanese>パルスオキシメーター: 脈拍: %1 SpO2: %2</Japanese>
-            <Portuguese>Oxímetro de Pulso: PR: %1 SpO2: %2</Portuguese>
+            <Portuguese>Oxímetro de Pulso: FP: %1 SpO2: %2</Portuguese>
+            <Spanish>Oximetro de Pulso: RC: %1 SpO2: %2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_pulseoxi_Log_2">
             <English>%1 connected Pulseoximeter</English>
@@ -273,7 +274,7 @@
             <Italian>Chest Seal</Italian>
             <Russian>Чест Сеал </Russian>
             <Japanese>チェストシール</Japanese>
-            <Portuguese>Selo Torácico</Portuguese>
+            <Portuguese>Selo de Tórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_chestseal_desc">
             <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
@@ -289,7 +290,7 @@
             <Italian>Il Chest Seal è progettato per trattare, sigillare e risigillare ferite aperte al torace nella maggior parte delle circostanze</Italian>
             <Russian>Чест Сеал разработан для лечения, герметизации и повторной герметизации открытых ран грудной клетки в большинстве случаев.</Russian>
             <Japanese>チェストシールはほとんどの状況下で、胸部への穿通創の閉塞と開放による治療ができるように設計されています。</Japanese>
-            <Portuguese>O Selo Torácico é projetado para tratar, selar e reselar feridas no peito abertas na maioria das circunstâncias.</Portuguese>
+            <Portuguese>O Selo de Tórax é projetado para tratar, selar e resselar feridas abertas no peito na maioria das circunstâncias.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_ALLOW_PULSEOXIMETER">
             <English>Allow Pulseoximeter</English>
@@ -337,7 +338,7 @@
             <Italian>Permetti Chest Seal</Italian>
             <Russian>Разрешить Чест Сеал </Russian>
             <Japanese>チェストシールの許可</Japanese>
-            <Portuguese>Permitir Selo Torácico</Portuguese>
+            <Portuguese>Permitir Selo de Tórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_TRAININGLEVEL_CHESTSEAL">
             <English>Training level required to use a Chest Seal</English>
@@ -353,7 +354,7 @@
             <Italian>Livello d'addestramento rischiesto per utilizzare il Chest Seal</Italian>
             <Russian>Уровень подготовки, необходимый для использования Чест Сеал </Russian>
             <Japanese>チェストシールの使用に訓練レベルを必要とさせます。</Japanese>
-            <Portuguese>Nível de treinamento necessário para usar um Selo Torácico</Portuguese>
+            <Portuguese>Nível de treinamento necessário para usar um Selo de Tórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SELF_CHESTSEAL">
             <English>Allow Chest Seal self treatment</English>
@@ -367,7 +368,7 @@
             <Italian>Permetti automedicazione con Chest Seal</Italian>
             <German>Erlauben die Selbstbehandlung mit Chest Seal</German>
             <Spanish>Permitir autotratarse con un sello torácico</Spanish>
-            <Portuguese>Permitir auto-tratamento com Selo Torácico</Portuguese>
+            <Portuguese>Permitir auto-tratamento com Selo de Tórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_clearChestSealAfterTreatment">
             <English>Clear Chest Seal after treatment</English>
@@ -375,6 +376,8 @@
             <French>Retirer le pansement thoracique après traitement</French>
             <Korean>치료 후 체스트 씰 떼어내기</Korean>
             <German>Entferne Chest Seal nach Behandlung</German>
+            <Portuguese>Remover Selo de Tórax após tratamento</Portuguese>
+            <Spanish>Retirar sello toracico tras tratamiento</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_STABLE_SPO2">
             <English>Stable SpO2 value to gain consciousness</English>
@@ -454,7 +457,7 @@
             <Italian>Decompressione con ago</Italian>
             <Russian>Декомпрессия иглы</Russian>
             <Japanese>胸腔穿刺減圧</Japanese>
-            <Portuguese>Agulha de Descompressão</Portuguese>
+            <Portuguese>Descompressão com Agulha</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothoraxNCDKit_display">
             <English>Needle Decompression (NCD Kit)</English>
@@ -466,7 +469,7 @@
             <French>Aiguille de décompression (NCD kit)</French>
             <Korean>바늘 감압(NCD 키트)</Korean>
             <Italian>Decompressione con ago (NCD Kit)</Italian>
-            <Portuguese>Agulha de Descompressão (Kit NCD)</Portuguese>
+            <Portuguese>Descompressão com Agulha (Kit NCD)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
@@ -482,7 +485,7 @@
             <Italian>1x Pneumotorace iperteso</Italian>
             <Russian>1x Напряженный пневмоторакс</Russian>
             <Japanese>1x 緊張性気胸</Japanese>
-            <Portuguese>1x Pneumotórax de tensão</Portuguese>
+            <Portuguese>1x Pneumotórax Hipertensivo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_aatKit_display">
             <English>AAT Kit</English>
@@ -509,12 +512,12 @@
             <Chinesesimp>AAT Kit即高级气道治疗套件,用于处理与气胸相关问题</Chinesesimp>
             <Czech>AAT Sada je navržena pro ošetření hemotoraxu a tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
             <Korean>AAT 키트(Advanced Airway Treatment Kit)는 혈기흉 같은 고급기도이상을 치료하도록 설계된 일회용 키트입니다.</Korean>
-            <French>Le Kit de Traitement médical d’urgence des voies aériennes est un kit à usage unique, désigné pour traiter les blessures urgentes des voies aériennes comme des hémo-pneumothorax.</French>
+            <French>Le Kit de Traitement médical d’urgence des voies aériennes est un kit à usage unique, conçu pour traiter les blessures urgentes des voies aériennes comme des hémo-pneumothorax.</French>
             <Turkish>Gelişmiş Hava Yolu Tedavi Kiti, hemopnömotoraks gibi gelişmiş hava yolu koşullarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
             <Italian>Il kit per il Trattamento Avanzato delle vie Aeree è un kit ad uso singolo per il trattamento avanzato di condizioni alle vie aeree, come l'emopneumotorace</Italian>
             <Russian>Набор ААТ</Russian>
             <Japanese>AATキット (Advanced Airway Treatment, 高度気道治療)は、血気胸などの重度な呼吸器症状を治療するために設計された使い捨てキットです。</Japanese>
-            <Portuguese>O AAT é um kit de uso único projetado para tratar problemas avançados de vias aéreas, como o hemopneumotórax.</Portuguese>
+            <Portuguese>O AAT é um kit de uso único projetado para tratar problemas avançados de vias aéreas, como o hemotórax.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_ncdKit_display">
             <English>NCD Kit</English>
@@ -535,7 +538,7 @@
             <Polish>Zestaw NCD to zestaw jednorazowego użytku przeznaczony do leczenia odmy prężnej.</Polish>
             <Japanese>NCDキット (Needle Chest Decompression, 胸部針減圧術)は、緊張性気胸の治療用に設計された使い捨てキットです。</Japanese>
             <Czech>NCD Sada je sada pro ošetření tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
-            <French>L'aiguille de décompression thoracique est un kit à usage unique designé pour traiter les pneumothorax sous tension</French>
+            <French>L'aiguille de décompression thoracique est un kit à usage unique conçu pour traiter les pneumothorax sous tension</French>
             <Korean>NCD(흉부 바늘 감압) 키트는 긴장성 기흉을 치료하도록 설계된 일회용 키트입니다.</Korean>
             <Italian>Il kit decompressione con ago è un kit a singolo uso adibito al trattamento del pneumotorace da tensione.</Italian>
             <Portuguese>O NCD é um kit de único uso projetado para tratar o pneumotórax hipertensivo</Portuguese>
@@ -550,7 +553,7 @@
             <Japanese>血気胸の発生確率</Japanese>
             <Korean>혈기흉 확률</Korean>
             <Italian>Probabilità Emopneumotorace</Italian>
-            <Portuguese>Probabilidade de hemopneumotórax</Portuguese>
+            <Portuguese>Probabilidade de hemotórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_HEMOPNEUMOTHORAX_CHANCE_OPTION">
             <English>Sets the chance for hemopneumothorax. Also sets the chance for tenstion pneumothorax (60% Hemo = 40% Tension)</English>
@@ -562,7 +565,7 @@
             <Korean>혈기흉의 확률을 설정합니다. 또한 긴장성 기흉의 확률을 설정합니다. (혈기흉 60% = 긴장성 기흉 40%)</Korean>
             <Italian>Imposta la probabilità per l'emopneumotorace. Imposta inoltre la probabilità per pneumotorace da tensione. (60% Emopn. =  40% Pneum. tensione)</Italian>
             <German>Legt die Wahrscheinlichkeit für einen Hämatopneumothorax fest. Legt auch die Wahrscheinlichkeit auf einen Spannungspneumothorax fest(60 % Hämo = 40 % Spannungspneu</German>
-            <Portuguese>Define a chance de hemopneumotórax. Também define a chance de pneumotórax hipertensivo (60% Hemo = 40% Hipertensivo)</Portuguese>
+            <Portuguese>Define a chance de hemotórax. Também define a chance de pneumotórax hipertensivo (60% Hemo = 40% Hipertensivo)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_ADVANCED_PTX_OPTION">
             <English>Enable Advanced Pneumothoraxes</English>
@@ -574,7 +577,7 @@
             <Korean>고급 기흉 활성화</Korean>
             <Italian>Abilità pneumotorace avanzato</Italian>
             <German>Ausgeprägte Pneumothoraces aktivieren</German>
-            <Portuguese>Habilitar pneumotóraxes avançados</Portuguese>
+            <Portuguese>Habilitar tipos avançados de pneumotórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_DESCRIPTION_ADVANCED_PTX_OPTION">
             <English>Enables advanced pneumothoraxes - hemopneumothorax and tensionpneumothorax</English>
@@ -586,7 +589,7 @@
             <Korean>고급 기흉을 활성화합니다. - 혈기흉 및 긴장성 기흉</Korean>
             <Italian>Abilità la pneumotorace avanzato - emopneumotorace e pneumotorace da tensione</Italian>
             <German>Aktiviert Ausgeprägte Pneumothoraces - Hämatopneumothoraces und Spannungspneumothoraces</German>
-            <Portuguese>Permite pneumotóraxes avançados - hemopneumotórax e pneumotórax hipertensivo</Portuguese>
+            <Portuguese>Permite tipos avançados de pneumotórax - hemotórax e pneumotórax hipertensivo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_ADVANCED_PTX_CHANCE_OPTION">
             <English>Advanced Pneumothorax Chance</English>
@@ -625,28 +628,28 @@
             <Chinesesimp>血气胸/张力性气胸的最低治愈水平</Chinesesimp>
             <Czech>Minimální úroveň zdravotnického výcviku</Czech>
             <Korean>혈기흉 치료를 위한 최소 의료레벨 수준</Korean>
-            <French>Niveau minimum de soins d'un hémopneumothorax / pneumothorax sous tension</French>
+            <French>Niveau d'entrainement requis pour traiter un hémopneumothorax / pneumothorax sous tension</French>
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Tedavisi Minimum Seviye</Turkish>
             <Italian>Livello minimo per il trattamento di un emo/pneumotorace iperteso</Italian>
             <Russian>Лечение гемоторакса/напряженного пневмоторакса Минимальный уровень</Russian>
             <Japanese>血気胸/緊張性気胸治療の許可</Japanese>
-            <Portuguese>Nível mínimo exigido para tratar hemopneumotórax/pneumotórax hipertensivo</Portuguese>
+            <Portuguese>Nível mínimo exigido para tratar hemotórax/pneumotórax hipertensivo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
             <English>The minimum medical level required for someone to be able to perform the Needle Decompression and Drain Fluids treatment actions, used to treat Hemothorax or Tension Pneumothorax.</English>
-            <German>Der nötige medizinische Grad, um das AAT Kit nutzen zu können. Dieses wird zur Behandlung eines Hämatopneumothorax oder Spannungspneumothorax verwendet.</German>
+            <German>Benötigter medizinischer Grad, um das AAT Kit nutzen zu können. Dieses wird zur Behandlung eines Hämatopneumothorax oder Spannungspneumothorax verwendet.</German>
             <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie wykonać leczenie igłą dekompresyjną i drenaż opłucnej,  stosowane w leczeniu krwiaka opłucnej lub odmy prężnej.</Polish>
             <Spanish>El nivel médico mínimo requerido para que alguien pueda usar un AAT Kit, que se utiliza para tratar un hemotórax/neumotórax a tensión</Spanish>
             <Chinese>某人能夠執行針減壓治療動作所需的最低醫療水平，用於治療血氣胸。</Chinese>
             <Chinesesimp>使用胸腔穿刺减压所需的医疗培训水平</Chinesesimp>
             <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl provést ošetření Dekompresní Jehlou, která je součástí AAT Sady a používá se k léčbě hemotoraxu či tenzního pneumotoraxu.</Czech>
             <Korean>혈기흉 치료에 사용되는 바늘 감압 치료 조치를 수행할 수 있는 사람에게 필요한 최소 의료레벨 수준입니다.</Korean>
-            <French>Niveau médical minimum requis pour effectuer une aiguille de décompression et une aspiration des fluides, pour traiter un hémopneumothorax ou un pneumothorax sous tension </French>
+            <French>Niveau médical minimum requis pour utiliser une aiguille de décompression et effectuer une aspiration des fluides, pour traiter un hémopneumothorax ou un pneumothorax sous tension </French>
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Italian>Il livello medico minimo richiesto per eseguire la decompressione con ago e il drenaggio dei fluidi, necessari per il trattamento di un emotorace o pneumotorace iperteso</Italian>
             <Russian>Минимальный медицинский уровень, необходимый для того, чтобы кто-то мог выполнять лечебные действия «Декомпрессия иглой» и «Дренаж жидкости», используемые для лечения гемоторакса или напряженного пневмоторакса.</Russian>
             <Japanese>胸腔穿刺減圧および胸腔ドレナージの使用に訓練レベルを必要とさせます。</Japanese>
-            <Portuguese>O nível médico mínimo exigido para que alguém possa realizar as ações de tratamento de Descompressão de Agulha e Drenagem de Fluidos, usados ​​para tratar Hemotórax ou Pneumotórax Hipertensivo.</Portuguese>
+            <Portuguese>O nível médico mínimo exigido para que alguém possa realizar as ações de tratamento de Descompressão de Agulha e Drenagem de Fluidos, usados ​​para tratar hemotórax ou pneumotórax hipertensivo.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
             <English>Pneumothorax Damage Threshold</English>
@@ -683,16 +686,20 @@
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken">
             <English>Increase pneumothorax chance based on damage</English>
             <Japanese>ダメージに応じた気胸発生率の増加</Japanese>
-            <French>Augmente le risque de pneumothorax en fonction des dommages</French>
+            <French>Augmente le risque de pneumothorax en fonction des dégâts</French>
             <Korean>데미지에 따른 기흉 확률 증가</Korean>
             <German>Erhöht die Wahrscheinlichkeit eines Pneumothorax basierend auf dem Schaden</German>
+            <Portuguese>Aumentar a probabilidade de pneumotórax em função do dano</Portuguese>
+            <Spanish>Aumentar probabilidad de neumotorax segun el daño</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken_DESCRIPTION">
             <English>Increase chance of a pneumothorax and advanced pneumothorax occurring based on damage taken if over the pneumothorax damage threshold</English>
             <Japanese>気胸ダメージのしきい値を超えた場合、受けたダメージに応じて気胸及び高度な気胸が発生する確率が増加します</Japanese>
-            <French>Augmente le risque de survenue d'un pneumothorax et d'un pneumothorax avancé en fonction des dommages subis si le seuil de dommage du pneumothorax est dépassé</French>
+            <French>Augmente le risque d'apparition d'un pneumothorax et d'un pneumothorax avancé en fonction des dommages subis si le seuil de dommage du pneumothorax est dépassé</French>
             <Korean>기흉 데미지 한계점을 초과할 경우 받은 데미지에 따라 기흉 및 고급 기흉이 발생할 확률이 증가합니다.</Korean>
             <German>Erhöht die Wahrscheinlichkeit, dass ein Pneumothorax und ein fortgeschrittener Pneumothorax auftritt, basierend auf dem erlittenen Schaden, wenn die Pneumothorax-Schadensschwelle überschritten wird</German>
+            <Portuguese>Aumentar a probabilidade de pneumotórax e pneumotórax avançado em função do dano recebido caso ultrapasse o limite de dano para pneumotórax</Portuguese>
+            <Spanish>Aumenta la probabilidad de que se produzca un neumotórax y un neumotórax avanzado en función del daño recibido si se supera el umbral de daño del neumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance">
             <English>Deep Penetrating Injury Chance</English>
@@ -700,6 +707,8 @@
             <French>Probabilité de blessure profonde</French>
             <Korean>깊은 관통상 확률</Korean>
             <German>Chance auf tiefgreifende Verletzungen</German>
+            <Portuguese>Probabilidade de lesão penetrante profunda</Portuguese>
+            <Spanish>Probabilidad de lesión de penetración profunda</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance_DESC">
             <English>Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted</English>
@@ -707,6 +716,8 @@
             <French>Probabilité qu'une blessure profonde apparaisse lorsque le seuil de dommage du pneumothorax est dépassé, mais qu'aucun pneumothorax n'est infligé</French>
             <Korean>기흉 데미지 한계점을 넘겼지만 기흉에 걸리지 않은 경우 깊은 관통상에 걸릴 확률입니다.</Korean>
             <German>Es kann zu einer tiefgreifenden Verletzung kommen, wenn die Pneumothorax-Schadensschwelle überschritten wird, aber kein Pneumothorax verursacht wird</German>
+            <Portuguese>Probabilidade em que uma lesão penetrante profunda apareça quando o limite de dado para pneumotórax é ultrapassado, mas o pneumotórax não é inflingido</Portuguese>
+            <Spanish>Probabilidad de que aparezca una lesión de penetración profunda cuando se supera el umbral de daño del neumotórax pero no se ha infligido un neumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_DeepPenetratingInjury">
             <English>Deep Penetrating Injury</English>
@@ -714,6 +725,8 @@
             <French>Blessure profonde</French>
             <Korean>깊은 관통상</Korean>
             <German>Tiefgreifende Verletzung</German>
+            <Portuguese>Lesão penetrante profunda</Portuguese>
+            <Spanish>Lesión de penetración profunda</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_ChestSealApplied">
             <English>Chest Seal Applied</English>
@@ -721,6 +734,8 @@
             <French>Pansement thoracique appliqué</French>
             <Korean>체스트 씰 적용 완료</Korean>
             <German>Chest Seal angebracht</German>
+            <Portuguese>Selo de Tórax aplicado</Portuguese>
+            <Spanish>Sello toracico aplicado</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_HPTX_BleedAmount">
             <English>Hemopneumothorax internal bleeding amount</English>
@@ -728,7 +743,7 @@
             <Korean>혈기흉 내 출혈량</Korean>
             <Spanish>Cantidad de sangrado por Hemotórax</Spanish>
             <Italian>Quantità di sanguinamento interno da emopneumotorace</Italian>
-            <Portuguese>Quantidade de hemorragia interna causada por hemopneumotórax</Portuguese>
+            <Portuguese>Quantidade de hemorragia interna causada por hemotórax</Portuguese>
             <French>Quantité de saignements internes de l'hémopneumothorax</French>
             <Polish>Siła krwawienia krwiaka</Polish>
             <German>Hämopneumothorax inneres Bluten menge </German>
@@ -740,7 +755,7 @@
             <Spanish>Fija la cantidad de sangrado interno que se aplica cuando se padece un Hemotórax</Spanish>
             <Korean>혈기흉을 앓는 동안 적용되는 내부 출혈량으 설정합니다.</Korean>
             <Italian>Imposta la quantità di sanguinamento interno che avviene quando hai un emopneumotorace</Italian>
-            <Portuguese>Define a quantidade de hemorragia interna que ocorre enquanto sofre de hemopneumotórax</Portuguese>
+            <Portuguese>Define a quantidade de hemorragia interna que ocorre enquanto sofre de hemotórax</Portuguese>
             <French>Règle la quantité de saignements internes subis lorsqu'une personne souffre d'un hémopneumothorax</French>
             <Polish>Określa siłę krwawienia wewnętrznego, wywołanego przez krwiaka opłucnej</Polish>
             <German>Definiert die Menge des Blutverlustes, welche der Patient während eines Hämopneumothorax verliert.</German>
@@ -752,6 +767,8 @@
             <French>Le pneumothorax est toujours visible</French>
             <Korean>기흉 항상 표시</Korean>
             <German>Pneumothorax immer sichtbar</German>
+            <Portuguese>Pneumotórax sempre visível</Portuguese>
+            <Spanish>Neumotórax siempre visible</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if pneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x pneumothorax)</English>
@@ -759,6 +776,8 @@
             <French>Définit si le pneumothorax doit toujours être visible dans le menu médical en tant que blessure au lieu de nécessiter un diagnostic (1x pneumothorax)</French>
             <Korean>진단을 요구하는 대신 의료 메뉴에서 항상 기흉을 부상으로 표시하는지 여부를 설정합니다. (예: 1x 기흉)</Korean>
             <German>Legt fest, ob Pneumothorax im medizinischen Menü immer als Verletzung angezeigt werden soll, anstatt dass eine Diagnose erforderlich ist (1x Pneumothorax).</German>
+            <Portuguese>Define se o pneumotórax deve sempre aparecer no menu médico como uma lesão sem necessidade de diagnóstico (1x pneumotórax)</Portuguese>
+            <Spanish>Establece si el neumotórax siempre debe ser visible en el menú médico como una lesión en lugar de requerir un diagnóstico (1x neumotórax)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible">
             <English>Tension pneumothorax and hemothorax always visible</English>
@@ -766,6 +785,8 @@
             <French>Le pneumothorax sous tension et l'hémothorax sont toujours visibles</French>
             <Korean>긴장성 기흉 및 혈기흉 항상 표시</Korean>
             <German>Spannungspneumothorax und Hämothorax immer sichtbar</German>
+            <Portuguese>Pneumotórax hipertensivo e hemotórax sempre visíveis</Portuguese>
+            <Spanish>Neumotórax a tensión y hemotórax siempre visibles</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if tension pneumothorax and hemopneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x tensionpneumothorax/1x hemopneumothorax)</English>
@@ -773,6 +794,8 @@
             <French>Définit si le pneumothorax sous tension et l'hémopneumothorax doivent toujours être visibles dans le menu médical en tant que blessure au lieu de nécessiter un diagnostic (1x pneumothorax sous tension/1x hémopneumothorax)</French>
             <Korean>진단을 요구하는 대신 의료 메뉴에서 항상 긴장성 기흉 및 혈기흉을 부상으로 표시하는지 여부를 설정합니다. (예: 1x 긴장성 기흉/혈기흉)</Korean>
             <German>Legt fest, ob Spannungspneumothorax und Hämopneumothorax im medizinischen Menü immer als Verletzung sichtbar sein sollen, anstatt eine Diagnose zu erfordern (1x Spannungspneumothorax/1x Hämopneumothorax)</German>
+            <Portuguese>Define se o pneumotórax hipertensivo e hemotórax devem sempre aparecer no menu médico como uma lesão sem necessidade de diagnóstico (1x pneumotórax hipertensivo/1x hemotórax)</Portuguese>
+            <Spanish>Establece si el neumotórax a tensión y el hemoneumotórax siempre deben ser visibles en el menú médico como una lesión en lugar de requerir un diagnóstico (1x neumotórax a tensión / 1x hemoneumotórax)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Stethoscope_display">
             <English>Stethoscope</English>
@@ -880,6 +903,7 @@
             <German>Stethoskop-Hörzeit</German>
             <Czech>Čas poslechu Stetoskopem</Czech>
             <Italian>Tempo di ascolto dello stetoscopio</Italian>
+            <Portuguese>Tempo de escuta do estetoscópio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_stethoscopeListeningTime_DESC">
             <English>Sets how long the stethoscope listening period is</English>
@@ -891,6 +915,7 @@
             <German>Legt fest, wie lange es dauert um mit dem Stethoskop abzuhören</German>
             <Czech>Nastavuje dobu trvání poslechu Stetoskopem</Czech>
             <Italian>Imposta quanto dura in tempo il periodo di ascolto dello stetoscopio</Italian>
+            <Portuguese>Define a duração do período de escuta do estetoscópio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_unconscious">
             <English>Unconscious SpO2 value</English>
@@ -950,7 +975,7 @@
             <Polish>Domyślnie wyłączone. Jeśli włączone, jednostki z odmą prężną lub krwiakiem opłucnej będą również wyświetlać odmę opłucnową w menu medycznym.</Polish>
             <Italian>In default è disabilitato. Se attivato, le unità con pneumotorace iperteso o emopneumotorace avranno questi segnati sul menu medico.</Italian>
             <Spanish>Deshabilitado en predeterminado. Si se habilita, las unidades con hemotórax/neumotórax a tensión tambien tendran la herida neumotórax mostrada en el menú médico.</Spanish>
-            <Portuguese>O padrão é desabilitado. Se ativado, as unidades com pneumotórax hipertensivo ou hemopneumotórax também exibirão lesões por pneumotórax no menu médico.</Portuguese>
+            <Portuguese>O padrão é desabilitado. Se ativado, as unidades com pneumotórax hipertensivo ou hemotórax também exibirão lesões por pneumotórax no menu médico.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_CyanosisStatus_Slight">
             <English>Slight Cyanosis</English>
@@ -965,7 +990,7 @@
             <Italian>Leggera cianosi</Italian>
             <Czech>Lehká cyanóza</Czech>
             <Spanish>Cianosis ligera</Spanish>
-            <Portuguese>Cianose ligeira</Portuguese>
+            <Portuguese>Cianose Leve</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_CyanosisStatus_Mild">
             <English>Mild Cyanosis</English>
@@ -980,7 +1005,7 @@
             <Italian>Moderata cianosi</Italian>
             <Czech>Střední cyanóza</Czech>
             <Spanish>Cianosis moderada</Spanish>
-            <Portuguese>Cianose média</Portuguese>
+            <Portuguese>Cianose Moderada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_CyanosisStatus_Severe">
             <English>Severe Cyanosis</English>
@@ -995,19 +1020,25 @@
             <Italian>Grave cianosi</Italian>
             <Czech>Těžká cyanóza</Czech>
             <Spanish>Cianosis severa</Spanish>
-            <Portuguese>Cianose severa</Portuguese>
+            <Portuguese>Cianose Grave</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_showCyanosis">
             <English>Show cyanosis</English>
             <Korean>치아노제 표시</Korean>
             <Japanese>チアノーゼの表示</Japanese>
             <German>Zyanose anzeigen</German>
+            <French>Montrer la cyanose</French>
+            <Portuguese>Mostrar cianose</Portuguese>
+            <Spanish>Mostrar cianosis</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_showCyanosis_DESC">
             <English>Shows cyanosis of patient in overview tab</English>
             <Korean>개요 탭에 환자의 치아노제를 표시합니다</Korean>
             <Japanese>チアノーゼを患者の概況に表示する</Japanese>
             <German>Zeigt die Zyanose des Patienten in der Übersicht an</German>
+            <French>Affiche constamment la cyanose dans le menu médical du patient</French>
+            <Portuguese>Mostra a cianose do paciente na guia de visão geral</Portuguese>
+            <Spanish>Muestra cianosis del paciente en la pestaña de vista general</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue">
             <English>Slight cyanosis SpO2 value</English>
@@ -1022,7 +1053,7 @@
             <Italian>Valore di SpO2 della cianosi leggera</Italian>
             <Czech>SpO2 hodnota lehké cyanózy</Czech>
             <Spanish>Valor SpO2 de Cianosis ligera</Spanish>
-            <Portuguese>Valor de SpO2 para cianose ligeira</Portuguese>
+            <Portuguese>Valor de SpO2 para cianose leve</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_slightValue_DESC">
             <English>Slight cyanosis value - default 90 SpO2</English>
@@ -1037,7 +1068,7 @@
             <Italian>Valore di cianosi leggera - default SpO2 90 </Italian>
             <Czech>Hodnota lehké cyanózy - výchozí hodnota SpO2 90</Czech>
             <Spanish>Valor SpO2 de Cianosis ligera - Predeterminado en 90 SpO2</Spanish>
-            <Portuguese>Valor de SpO2 para cianose ligeira - predeterminado em 90 SpO2</Portuguese>
+            <Portuguese>Valor de SpO2 para cianose leve (padrão 90)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_mildValue">
             <English>Mild cyanosis SpO2 value</English>
@@ -1052,7 +1083,7 @@
             <Italian>Valore di SpO2 della cianosi media</Italian>
             <Czech>SpO2 hodnota střední cyanózy</Czech>
             <Spanish>Valor SpO2 de Cianosis moderada</Spanish>
-            <Portuguese>Valor de SpO2 para cianose média</Portuguese>
+            <Portuguese>Valor de SpO2 para cianose moderada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_mildValue_DESC">
             <English>Mild cyanosis value - default 75 SpO2</English>
@@ -1067,7 +1098,7 @@
             <Italian>Valore di cianosi media - default SpO2 75 </Italian>
             <Czech>Hodnota střední cyanózy - výchozí hodnota SpO2 75</Czech>
             <Spanish>Valor SpO2 de Cianosis intermedia - Predeterminado en 75 SpO2</Spanish>
-            <Portuguese>Valor de SpO2 para cianose média - predeterminado em 75 SpO2</Portuguese>
+            <Portuguese>Valor de SpO2 para cianose moderada (padrão 75)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_severeValue">
             <English>Severe cyanosis SpO2 value</English>
@@ -1082,7 +1113,7 @@
             <Italian>Valore di SpO2 della cianosi grave</Italian>
             <Czech>SpO2 hodnota těžké cyanózy</Czech>
             <Spanish>Valor SpO2 de Cianosis severa</Spanish>
-            <Portuguese>Valor de SpO2 para cianose severa</Portuguese>
+            <Portuguese>Valor de SpO2 para cianose grave</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_severeValue_DESC">
             <English>Severe cyanosis value - default 66 SpO2 \nShould be little bit higher than lethal SpO2 value</English>
@@ -1097,7 +1128,7 @@
             <Italian>Valore di cianosi grave- default SpO2 66. (Dovrebbe essere un pochino più alta del valore letate di SpO2</Italian>
             <Czech>Hodnota těžké cyanózy - výchozí hodnota SpO2 66 \nMěla by být mírně vyšší, než smrtelná hodnota SpO2</Czech>
             <Spanish>Valor SpO2 de Cianosis severa - Predeterminado en 66 SpO2 \nEste valor deberia de ser un poco mas alto que el valor letal de SpO2</Spanish>
-            <Portuguese>Valor de SpO2 para cianose severa - predeterminado em 66 SpO2 \nDeve estar um pouco acima do valor letal de SpO2</Portuguese>
+            <Portuguese>Valor de SpO2 para cianose grave (padrão 66)\nDeve estar um pouco acima do valor letal de SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_CYANOSIS_TREATMENT_LEVEL">
             <English>Check Cyanosis Minimum Level</English>
@@ -1143,23 +1174,29 @@
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_chance_DESC">
             <English>Chance for pneumothorax to deteriorate</English>
             <Japanese>気胸が悪化する確率を設定します</Japanese>
-            <French>Probabilité de détérioration du pneumothorax</French>
+            <French>Probabilité de détérioration d'un pneumothorax</French>
             <Korean>기흉 악화 확률</Korean>
             <German>Wahrscheinlichkeit, dass sich der Pneumothorax verschlechtert</German>
+            <Portuguese>Probabilidade de deterioração do pneumotórax</Portuguese>
+            <Spanish>Probabilidad de que el neumotórax empeore</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval">
             <English>Deteriorating pneumothorax interval</English>
             <Japanese>気胸が悪化する間隔</Japanese>
-            <French>Intervalle de détérioration du pneumothorax</French>
+            <French>Intervalle de détérioration d'un pneumothorax</French>
             <Korean>기흉 악화 간격</Korean>
             <German>Intervall für Verschlechterung des Pneumothoraxes</German>
+            <Portuguese>Intervalo de deterioração do pneumotórax</Portuguese>
+            <Spanish>Intervalo de deterioro del neumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not the pneumothorax will deteriorate</English>
             <Japanese>気胸が悪化するかどうかの確率は各間隔毎に計算されます</Japanese>
-            <French>Après chaque intervalle, une chance sera lancée si le pneumothorax se détériorera ou non</French>
+            <French>Après chaque intervalle, une chance sera lancée pour savoir si le pneumothorax se détériorera ou non</French>
             <Korean>기흉의 악화 여부와 관계없이 매 간격마다 확률이 발생합니다.</Korean>
             <German>Nach jedem Intervall wird eine Chance gewürfelt, ob sich der Pneumothorax verschlechtert oder nicht</German>
+            <Portuguese>Após cada intervalo, uma chance será lançada para determinar se o pneumotórax deteriorará.</Portuguese>
+            <Spanish>Después de cada intervalo, se lanzará una probabilidad para determinar si el neumotórax empeorará</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
@@ -1291,6 +1328,7 @@
             <German>Aktiviere Pulsoximeter Alarm</German>
             <Czech>Zapnout alarm Pulzního Oxymetru</Czech>
             <Italian>Abilita allarme pulsossimetro</Italian>
+            <Portuguese>Habilitar o alarme do Oxímetro de Pulso</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PulseOximeter_Action_removeSound">
             <English>Disable Pulse Oximeter Alarm</English>
@@ -1302,6 +1340,7 @@
             <German>Deaktiviere Pulsoximeter Alarm</German>
             <Czech>Vypnout alarm Pulzního Oxymetru</Czech>
             <Italian>Disabilita l'allarme del pulsossimetro</Italian>
+            <Portuguese>Desabilitar o alarme do Oxímetro de Pulso</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Threshold_SpO2Warning">
             <English>Pulse Oximeter Alarm SpO2 Threshold</English>
@@ -1313,6 +1352,7 @@
             <German>Pulsoximeter Alarm Grenzwert</German>
             <Czech>Práh SpO2 pro aktivaci alarmu Pulzního Oxymetru</Czech>
             <Italian>Soglia di allarme del pulsossimetro</Italian>
+            <Portuguese>Nível de SpO2 para ativação do alarme do Oxímetro de Pulso</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM">
             <English>Use BVM</English>
@@ -1324,6 +1364,7 @@
             <German>Verwende BVM</German>
             <Czech>Použít RV</Czech>
             <Italian>Usa maschera ambu</Italian>
+            <Portuguese>Usar BVM</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>
@@ -1331,6 +1372,8 @@
             <French>Ranger le BVM</French>
             <Korean>인공호흡기 내려놓기</Korean>
             <German>BVM Weglegen</German>
+            <Portuguese>Remover BVM</Portuguese>
+            <Spanish>Guarda el Ambu</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Cancelled">
             <English>Rescue Breaths Cancelled</English>
@@ -1338,6 +1381,8 @@
             <French>Annulation du sauvetage avec le BVM</French>
             <Korean>인공호흡 취소됨</Korean>
             <German>Beatmung mit BVM gestoppt</German>
+            <Portuguese>Ventilação com BVM cancelada</Portuguese>
+            <Spanish>Asistencia respiratoria cancelada</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_UsePocketBVM">
             <English>Use Pocket BVM</English>
@@ -1349,6 +1394,7 @@
             <German>Verwende Tachen BVM </German>
             <Czech>Použít Kapesní RV</Czech>
             <Italian>Usa maschera ambu portatile </Italian>
+            <Portuguese>Usar BVM portátil</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen">
             <English>Use BVM with Oxygen Tank</English>
@@ -1360,6 +1406,7 @@
             <German>Verwende BVM mit Sauerstofftank</German>
             <Czech>Použít RV s Kyslíkovou Lahví</Czech>
             <Italian>Usa maschera ambu con la bombola d'ossigeno</Italian>
+            <Portuguese>Usar BVM com cilindro de oxigênio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Oxygen">
             <English>Use BVM with Oxygen</English>
@@ -1371,19 +1418,24 @@
             <German>Verwende BVM mit Sauerstoff</German>
             <Czech>Použít RV s Kyslíkem</Czech>
             <Italian>Usa maschera ambu con l'ossigeno</Italian>
+            <Portuguese>Usar BVM com oxigênio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle">
             <English>Use BVM with Oxygen Tank (Vehicle)</English>
             <German>Verwende BVM mit Sauerstoff (Fahrzeug)</German>
+            <French>Utiliser le BVM avec de l'oxygène (Véhicule)</French>
+            <Portuguese>Usar BVM com cilindro de oxigênio (veículo)</Portuguese>
+            <Spanish>Usa el Ambu con tanque de oxígeno (vehículo)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
             <English>Using BVM with Oxygen Tank (Vehicle)</English>
             <German>Beatme mit BVM und Sauerstoff (vom Fahrzeug)</German>
             <Korean>산소 탱크가 달린 인공호흡기(차량) 사용</Korean>
             <Japanese>BVMと車両の酸素ボンベを使用する</Japanese>
-            <French>Utiliser le BVM avec un réservoir d'oxygène (Véhicule)</French>
+            <French>Utilisation du BVM avec un réservoir d'oxygène (Véhicule)</French>
             <Italian>Usa maschera ambu con la bombola d'ossigeno (veicolo)</Italian>
-            <Spanish>Usar la BVM con un tanque de oxígeno (vehículo)</Spanish>
+            <Spanish>Usar la BVM con un cilindro de oxígeno (vehículo)</Spanish>
+            <Portuguese>Usando BVM com cilindro de oxigênio (veículo)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTankDisconnected_Empty">
             <English>Oxygen tank disconnected (empty)</English>
@@ -1395,6 +1447,7 @@
             <German>Sauerstofftank entfernt (leer)</German>
             <Czech>Kyslíková Lahev odpojena (prázdná)</Czech>
             <Italian>Bombola d'ossigeno scollegata (vuota)</Italian>
+            <Portuguese>Cilindro de oxigênio desconectado (vazio)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Progress">
             <English>Refilling Portable Oxygen Tank</English>
@@ -1406,6 +1459,7 @@
             <German>Befülle tragbaren Sauerstofftank</German>
             <Czech>Plnění přenosné Kyslíkové Lahve</Czech>
             <Italian>Riempimento bombola d'ossigeno portatile</Italian>
+            <Portuguese>Reabastecendo Cilindro Portátil de Oxigênio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Complete">
             <English>Oxygen Tank Refill Complete</English>
@@ -1417,6 +1471,7 @@
             <German>Sauerstofftank Befüllung abgeschlossen</German>
             <Czech>Plnění Kyslíkové Lahve dokončeno</Czech>
             <Italian>Riempimento completo della bombola d'ossigeno</Italian>
+            <Portuguese>Reabastecimento de cilindro de oxigênio finalizado</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_Cancel">
             <English>Oxygen Tank Refill Cancelled</English>
@@ -1428,6 +1483,7 @@
             <German>Sauerstofftank Befüllung abgebrochen</German>
             <Czech>Plnění Kyslíkové Lahve zrušeno</Czech>
             <Italian>Riempimento annullato della bombola d'ossigeno</Italian>
+            <Portuguese>Reabastecimento de cilindro de oxigênio cancelado</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTanks">
             <English>Refill Portable Oxygen Tank</English>
@@ -1439,6 +1495,7 @@
             <German>Nachfüllen des tragbaren Sauerstofftanks</German>
             <Czech>Naplnit přenosnou Kyslíkovou Lahev</Czech>
             <Italian>Riempi bombola portatile d'ossigeno</Italian>
+            <Portuguese>Reabastecer Cilindro Portátil de Oxigênio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_150">
             <English>Refill Portable Oxygen Tank (150L)</English>
@@ -1450,6 +1507,7 @@
             <German>Nachfüllen des tragbaren Sauerstofftanks (150L)</German>
             <Czech>Naplnit přenosnou Kyslíkovou Lahev (150L)</Czech>
             <Italian>Riempi bombola portatile d'ossigeno (150L)</Italian>
+            <Portuguese>Reabastecer Cilindro Portátil de Oxigênio (150L)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_RefillPortableOxygenTank_300">
             <English>Refill Portable Oxygen Tank (300L)</English>
@@ -1461,6 +1519,7 @@
             <German>Nachfüllen des tragbaren Sauerstofftanks (300L)</German>
             <Czech>Naplnit přenosnou Kyslíkovou Lahev (300L)</Czech>
             <Italian>Riempi bombola portatile d'ossigeno (300L)</Italian>
+            <Portuguese>Reabastecer Cilindro Portátil de Oxigênio (300L)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Display">
             <English>BVM</English>
@@ -1472,6 +1531,7 @@
             <German>BVM</German>
             <Czech>RV</Czech>
             <Italian>Maschera ambu</Italian>
+            <Portuguese>BVM</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_BVM_Desc_Short">
             <English>Bag-Valve-Mask, used to assist with breathing of unconscious patients</English>
@@ -1483,6 +1543,7 @@
             <German>Die Beutelventilmaske wird benutzt, um die Atmung von bewusstlosen Patienten zu unterstützen</German>
             <Czech>Resuscitační Vak, používá se k pomoci s dýcháním pacientů v bezvědomí</Czech>
             <Italian>Maschera facciale ambu utilizzata per assistere la respirazione dei pazienti incoscienti</Italian>
+            <Portuguese>Bolsa-Válvula-Máscara, utilizado para auxiliar na respiração de pacientes inconscientes</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Display">
             <English>Pocket BVM</English>
@@ -1494,6 +1555,7 @@
             <German>Taschen BVM</German>
             <Czech>Kapesní RV</Czech>
             <Italian>Maschera ambu portatile</Italian>
+            <Portuguese>BVM Portátil</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PocketBVM_Desc_Short">
             <English>Compact version of the Bag-Valve-Mask</English>
@@ -1505,6 +1567,7 @@
             <German>Die kompakte Version der Beutelventilmaske</German>
             <Czech>Kompaktní verze Resuscitačního Vaku</Czech>
             <Italian>Versione compatta della maschera ambu portatile</Italian>
+            <Portuguese>Versão compacta do dispositivo Bolsa-Válvula-Máscara</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Display">
             <English>Portable Oxygen Tank (150L)</English>
@@ -1516,6 +1579,7 @@
             <German>Tragbarer Sauerstofftank (150L)</German>
             <Czech>Přenosná Kyslíková Lahev (150L)</Czech>
             <Italian>Bombola portatile d'ossigeno (150L)</Italian>
+            <Portuguese>Cilindro Portátil de Oxigênio (150L)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Desc_Short">
             <English>Portable Oxygen Tank, containing 150L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
@@ -1527,6 +1591,7 @@
             <German>Der tragbare Sauerstofftank enthält 150L Sauerstoff. Er ist dazu ausgelegt, an die BVM angeschlossen zu werden und bei der Beatmung zu helfen.</German>
             <Czech>Přenosná Kyslíková Lahev, obsahuje 150L kyslíku. Připojením k RV lze zajistit dýchání pacientům v kritickém stavu.</Czech>
             <Italian>Bombola portatile d'ossigeno contenente 150 litri di ossigeno. Connettiti alla maschera ambu per assistere ulteriormente la respirazione dei pazienti critici.</Italian>
+            <Portuguese>Cilindro Portátil de Oxigênio, contendo 150L de oxigênio. Conecte ao BVM para auxiliar na respiração de pacientes críticos.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Display">
             <English>Portable Oxygen Tank (300L)</English>
@@ -1538,6 +1603,7 @@
             <German>Tragbarer Sauerstofftank (300L)</German>
             <Czech>Přenosná Kyslíková Lahev (300L)</Czech>
             <Italian>Bombola portatile d'ossigeno (300L)</Italian>
+            <Portuguese>Cilindro Portátil de Oxigênio (300L)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Desc_Short">
             <English>Portable Oxygen Tank, containing 300L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
@@ -1549,6 +1615,7 @@
             <German>Der tragbare Sauerstofftank enthält 300L Sauerstoff. Er ist dazu ausgelegt, an die BVM angeschlossen zu werden und bei der Beatmung zu helfen.</German>
             <Czech>Přenosná Kyslíková Lahev, obsahuje 300L kyslíku. Připojením k RV lze zajistit dýchání pacientům v kritickém stavu.</Czech>
             <Italian>Bombola portatile d'ossigeno contenente 300 litri di ossigeno. Connettiti alla maschera ambu per assistere ulteriormente la respirazione dei pazienti critici.</Italian>
+            <Portuguese>Cilindro Portátil de Oxigênio, contendo 300L de oxigênio. Conecte ao BVM para auxiliar na respiração de pacientes críticos.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
             <English>Empty Portable Oxygen Tank (150L)</English>
@@ -1560,6 +1627,7 @@
             <German>Leerer tragbarer Sauerstofftank (150L)</German>
             <Czech>Prázdná Kyslíková Lahev (150L)</Czech>
             <Italian>Bombola VUOTA portatile d'ossigeno (150L)</Italian>
+            <Portuguese>Cilindro Portátil de Oxigênio vazio (150L)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Empty_Display">
             <English>Empty Portable Oxygen Tank (300L)</English>
@@ -1571,6 +1639,7 @@
             <German>Leerer tragbarer Sauerstofftank (300L)</German>
             <Czech>Prázdná Kyslíková Lahev (300L)</Czech>
             <Italian>Bombola VUOTA portatile d'ossigeno (300L)</Italian>
+            <Portuguese>Cilindro Portátil de Oxigênio vazio (300L)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_Empty_Desc_Short">
             <English>Empty Portable Oxygen Tank, refill at a medical vehicle or facility</English>
@@ -1582,6 +1651,7 @@
             <German>Leere tragbarer Sauerstofftank und befülle ihn neu bei einem medizinischen Fahrzeug oder Einrichtung. </German>
             <Czech>Prázdná Kyslíková Lahev, lze doplnit u zdravotnického vozidla či zařízení.</Czech>
             <Italian>Bombola VUOTA di ossigeno portatile, riempirla presso un veicolo o una struttura medica</Italian>
+            <Portuguese>Cilindro Portátil de Oxigênio vazio, reabasteça em um veículo ou instalação médica</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVMOxygen_Multiplier">
             <English>BVM Oxygen Effectiveness Multiplier</English>
@@ -1590,6 +1660,8 @@
             <Korean>인공호흡기 산소 유효성 배수</Korean>
             <Italian>BVM- Sauerstoff Effektivität Multiplikator</Italian>
             <German>BVM-Sauerstoffeffektivitätsmultiplikator</German>
+            <Portuguese>Coeficiente de eficácia de oxigênio com BVM</Portuguese>
+            <Spanish>Multiplicador de eficacia del oxígeno para el Ambu</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM">
             <English>%1 used %2 (x%3)</English>
@@ -1598,6 +1670,8 @@
             <Korean>%1은(는) %2을(를) 사용했다 (x%3)</Korean>
             <Italian>%1 verwendete %2 (x%3)</Italian>
             <German>%1 verwendet %2 (x%3)</German>
+            <Portuguese>%1 usou %2 (x%3)</Portuguese>
+            <Spanish>%1 uso %2 (x%3)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM_Oxygenated">
             <English>%1 (Oxygenated)</English>
@@ -1606,6 +1680,8 @@
             <Korean>%1 (산소주입됨)</Korean>
             <Italian>%1 (Sauerstoff)</Italian>
             <German>%1 (Sauerstoffhaltig)</German>
+            <Portuguese>%1 (Oxigenado)</Portuguese>
+            <Spanish>%1 (Oxigenado)</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl">
             <English>Allow BVM</English>
@@ -1617,6 +1693,7 @@
             <German>Erlaube BVM</German>
             <Czech>Povolit RV</Czech>
             <Italian>Permetti la maschera ambu</Italian>
+            <Portuguese>Permitir BVM</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_MedLvl_DESC">
             <English>Sets required medical level to use BVM</English>
@@ -1628,6 +1705,7 @@
             <German>Benötigter medizinischer Grad, um die BVM zu nutzen</German>
             <Czech>Nastavuje požadovanou zdravotnickou úroveň pro použití RV</Czech>
             <Italian>Imposta il livello medico richiesto per utilizzare la maschera ambu</Italian>
+            <Portuguese>Define o nível médico necessário para usar BVM</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PocketBVM_MedLvl">
             <English>Allow Pocket BVM</English>
@@ -1639,6 +1717,7 @@
             <German>Erlaube Taschen BVM</German>
             <Czech>Povolit Kapesní RV</Czech>
             <Italian>Permetti la maschera ambu portatile</Italian>
+            <Portuguese>Permitir BVM Portátil</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PocketBVM_MedLvl_DESC">
             <English>Sets required medical level to use Pocket BVM</English>
@@ -1650,6 +1729,7 @@
             <German>Benötigter medizinischer Grad, um die Taschen BVM zu nutzen</German>
             <Czech>Nastavuje požadovanou zdravotnickou úroveň pro použití Kapesního RV</Czech>
             <Italian>Imposta il livello medico richiesto per utilizzare la maschera ambu portatile</Italian>
+            <Portuguese>Define o nível médico necessário para usar BVM Portátil</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_Oxygen_MedLvl">
             <English>Allow BVM with oxygen</English>
@@ -1661,6 +1741,7 @@
             <German>Erlaube BVM mit Sauerstoff</German>
             <Czech>Povolit RV s Kyslíkem</Czech>
             <Italian>Permetti la maschera ambu con ossigeno</Italian>
+            <Portuguese>Permitir BVM com oxigênio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_BVM_Oxygen_MedLvl_DESC">
             <English>Sets required medical level to use BVM with oxygen</English>
@@ -1672,6 +1753,7 @@
             <German>Benötigter medizinischer Grad, um die BVM mit Sauerstoff zu nutzen</German>
             <Czech>Nastavuje požadovanou zdravotnickou úroveň pro použití RV s kyslíkem</Czech>
             <Italian>Imposta il livello medico richiesto per utilizzare la maschera ambu con ossigeno</Italian>
+            <Portuguese>Define o nível médico necessário para usar BVM com oxigênio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime">
             <English>Portable Oxygen Tank Base Refill Time</English>
@@ -1683,6 +1765,7 @@
             <German>Grundlegende Nachfüllzeit des tragbaren Sauerstofftanks</German>
             <Czech>Základní čas pro naplnění přenosné Kyslíkové Lahve</Czech>
             <Italian>Tempo di ricarica della bombola d'ossigeno portatile</Italian>
+            <Portuguese>Tempo base para reabastecer o Cilindro Portátil de Oxigênio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PortableOxygenTank_RefillTime_DESC">
             <English>Sets time required to refill Oxygen Tank (150L)</English>
@@ -1694,6 +1777,7 @@
             <German>Legt die Dauer des Nachfüllens eines 150L Sauerstofftanks fest</German>
             <Czech>Nastavuje čas požadovaný k naplnění Kyslíkové Lahve (150L)</Czech>
             <Italian>Imposta tempo richiesto per ricaricare una bombola d'ossigeno (150L)</Italian>
+            <Portuguese>Define o tempo necessário para reabastecer o Cilindro Portátil de Oxigênio (150L)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_150">
             <English>Set Portable Oxygen Tank (150L) as preferred</English>
@@ -1705,6 +1789,7 @@
             <German>Definiere den 150L Sauerstofftank als bevorzugte Variante</German>
             <Czech>Nastavit přenosnou Kyslíkovou Lahev (150L) jako preferovanou</Czech>
             <Italian>Imposta la bombola portatile d'ossigeno (150L) come preferita</Italian>
+            <Portuguese>Definir Cilindro Portátil de Oxigênio (150L) como preferido</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SetPreferredOxygenTank_300">
             <English>Set Portable Oxygen Tank (300L) as preferred</English>
@@ -1716,6 +1801,7 @@
             <German>Definiere den 300L Sauerstofftank als bevorzugte Variante</German>
             <Czech>Nastavit přenosnou Kyslíkovou Lahev (300L) jako preferovanou</Czech>
             <Italian>Imposta la bombola portatile d'ossigeno (300L) come preferita</Italian>
+            <Portuguese>Definir Cilindro Portátil de Oxigênio (300L) como preferido</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen">
             <English>Location Provide Oxygen</English>
@@ -1725,6 +1811,7 @@
             <German>Bereitstellung Sauerstoff durch Fahrzeuge/Gebäude</German>
             <Italian>Luogo di ricarica d'ossigeno.</Italian>
             <Spanish>Ubicación provee oxígeno</Spanish>
+            <Portuguese>Local de fornecimento de oxigênio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_locationProvideOxygen_DESC">
             <English>Sets if medical vehicles/facilites can provide oxygen</English>
@@ -1734,6 +1821,7 @@
             <German>Bestimmt, ob medizinische Fahrzeuge oder Gebäude Sauerstoff bereitstellen können</German>
             <Italian>Imposta se i veicoli med o strutture mediche possono fornire ossigeno.</Italian>
             <Spanish>Establece si los vehículos o instalaciones médicas pueden suministrar oxígeno</Spanish>
+            <Portuguese>Define se veículos ou instalações médicas podem fornecer oxigênio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing">
             <English>Check Breathing</English>
@@ -1741,6 +1829,8 @@
             <French>Vérifier la respiration</French>
             <Korean>호흡 확인</Korean>
             <German>Überprüfen Atmung</German>
+            <Portuguese>Verificar Respiração</Portuguese>
+            <Spanish>Comprueba la respiración</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing_Progress">
             <English>Checking Breathing</English>
@@ -1748,6 +1838,8 @@
             <French>Vérification de la respiration</French>
             <Korean>호흡 확인 중</Korean>
             <German>Prüfe Atmung</German>
+            <Portuguese>Verificando Respiração</Portuguese>
+            <Spanish>Comprobando la respiración</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breath_stink">
             <English>, harsh and metallic</English>
@@ -1755,6 +1847,8 @@
             <French>, l'haleine dégage une forte odeur métallique</French>
             <Korean>, 거칠고 금속같다</Korean>
             <German>, harsch und metallisch</German>
+            <Portuguese>, forte e metálico</Portuguese>
+            <Spanish>, áspero y metálico</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breath_mild">
             <English>, slightly fruity</English>
@@ -1762,6 +1856,8 @@
             <French>, l'halaine dégage une odeur légèrement fruitée</French>
             <Korean>, 약간 과일향이 난다</Korean>
             <German>, leicht fruchtig</German>
+            <Portuguese>, levemente frutado</Portuguese>
+            <Spanish>, ligeramente afrutado</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isNormal">
             <English>Patient is breathing normally</English>
@@ -1769,6 +1865,8 @@
             <French>Le patient respire normalement</French>
             <Korean>환자는 정상적으로 호흡 중이다</Korean>
             <German>Der Patient atmet normal</German>
+            <Portuguese>O paciente está respirando normalmente</Portuguese>
+            <Spanish>El paciente está respirando con normalidad</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_isShallow">
             <English>Patient's breathing is shallow</English>
@@ -1776,6 +1874,8 @@
             <French>La respiration du patient est superficielle</French>
             <Korean>환자의 호흡이 얕다</Korean>
             <German>Die Atmung des Patienten ist flach</German>
+            <Portuguese>A respiração do paciente está superficial</Portuguese>
+            <Spanish>La respiración del paciente es superficial</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_shallow">
             <English>Shallow</English>
@@ -1783,6 +1883,8 @@
             <French>La respiration est superficielle</French>
             <Korean>얕음</Korean>
             <German>Flach</German>
+            <Portuguese>Superficial</Portuguese>
+            <Spanish>Superficial</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_breathing_none">
             <English>Patient is not breathing</English>
@@ -1802,6 +1904,8 @@
             <French>%1 a vérifié la respiration: %2</French>
             <Korean>%1이(가) 호흡을 확인함: %2</Korean>
             <German>%1 hat die Atmung überprüft: %2</German>
+            <Portuguese>%1 verificou a respiração: %2</Portuguese>
+            <Spanish>%1 comprobó la respiración: %2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable">
             <English>Enable Inspect Chest</English>
@@ -1809,6 +1913,8 @@
             <French>Activer l'inspection thoracique</French>
             <Korean>흉부 검사 활성화</Korean>
             <German>Aktivere Thoraxinspektion</German>
+            <Portuguese>Ativar Inspeção de Tórax</Portuguese>
+            <Spanish>Habilitar la inspección del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_simple">
             <English>Simple</English>
@@ -1816,6 +1922,8 @@
             <French>Simple</French>
             <Korean>단순</Korean>
             <German>Einfach</German>
+            <Portuguese>Simples</Portuguese>
+            <Spanish>Sencillo</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_enable_default">
             <English>Default</English>
@@ -1823,6 +1931,8 @@
             <French>Défaut</French>
             <Korean>기본</Korean>
             <German>Standard</German>
+            <Portuguese>Padrão</Portuguese>
+            <Spanish>Por defecto</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_time">
             <English>Inspect Chest Time</English>
@@ -1830,6 +1940,8 @@
             <French>Temps requis pour l'examen thoracique</French>
             <Korean>흉부 검사 시간</Korean>
             <German>Dauer der Thoraxinspektion</German>
+            <Portuguese>Tempo de Inspeção de Tórax</Portuguese>
+            <Spanish>Tiempo de inspección del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_inspectChest_medLvl">
             <English>Allow Inspecting Chest</English>
@@ -1837,6 +1949,8 @@
             <French>Autoriser l'inspection thoracique</French>
             <Korean>흉부 검사 허용</Korean>
             <German>Erlaube Thoraxinspektion</German>
+            <Portuguese>Permitir Inspeção de Tórax</Portuguese>
+            <Spanish>Permitir la inspección del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_display">
             <English>Inspect Chest</English>
@@ -1844,6 +1958,8 @@
             <French>Inspecter le thorax</French>
             <Korean>흉부 검사</Korean>
             <German>Untersuche Thorax</German>
+            <Portuguese>Inspecionar Tórax</Portuguese>
+            <Spanish>Inspeccionar el pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_progress">
             <English>Inspecting Chest</English>
@@ -1851,13 +1967,17 @@
             <French>Inspection du thorax</French>
             <Korean>흉부 검사 중</Korean>
             <German>Untersuche Thorax</German>
+            <Portuguese>Inspecionando Tórax</Portuguese>
+            <Spanish>Inspeccionando el pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_log">
             <English>%1 inspected chest: %2</English>
             <Japanese>%1 が胸部を検査: %2</Japanese>
-            <French>%1 a inspecté le thorax %2</French>
+            <French>%1 a inspecté le thorax : %2</French>
             <Korean>%1이(가) 흉부를 검사함: %2</Korean>
             <German>%1 untersuchte Thorax: %2</German>
+            <Portuguese>%1 inspecionou o tórax: %2</Portuguese>
+            <Spanish>%1 inspeccionó el pecho: %2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_normal">
             <English>Chest rise and fall observed</English>
@@ -1865,6 +1985,8 @@
             <French>Des mouvements de haut en bas sont visibles sur le thorax</French>
             <Korean>흉부 상승 및 하강 관찰함</Korean>
             <German>Heben und Senken der Brust wurde beobachtet</German>
+            <Portuguese>Elevação e queda do tórax observadas</Portuguese>
+            <Spanish>Se observa elevación y descenso del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_none">
             <English>No chest movement observed</English>
@@ -1872,6 +1994,8 @@
             <French>Aucun mouvement du thorax observé</French>
             <Korean>흉부 움직임이 없는 것 관찰함</Korean>
             <German>Keine Brustbewegung beobachtet</German>
+            <Portuguese>Nenhum movimento do tórax observado</Portuguese>
+            <Spanish>No se observa movimiento del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_none_log">
             <English>No chest movement</English>
@@ -1879,6 +2003,8 @@
             <French>Aucun mouvement du thorax</French>
             <Korean>흉부 움직임 없음</Korean>
             <German>keine Brustbewegung</German>
+            <Portuguese>Nenhum movimento do tórax</Portuguese>
+            <Spanish>Sin movimiento del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_uneven">
             <English>Chest sides are uneven</English>
@@ -1886,6 +2012,8 @@
             <French>Les côtés du thorax sont inégaux</French>
             <Korean>흉부가 울퉁불퉁함</Korean>
             <German>Die Brustseiten sind uneben</German>
+            <Portuguese>Os lados do tórax estão desiguais</Portuguese>
+            <Spanish>Los lados del pecho son desiguales</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_uneven_log">
             <English>, chest sides uneven</English>
@@ -1893,6 +2021,8 @@
             <French>, côtés du thorax inégaux</French>
             <Korean>, 흉부 옆면이 울퉁불퉁함</Korean>
             <German>, Brustseiten uneben</German>
+            <Portuguese>, lados do tórax desiguais</Portuguese>
+            <Spanish>, lados del pecho desiguales</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_unevenMovement">
             <English>Uneven chest rise and fall</English>
@@ -1900,6 +2030,8 @@
             <French>Asymétrie thoracique lors de la respiration</French>
             <Korean>흉부 상승 및 하강이 울퉁불퉁함</Korean>
             <German>ungleichmäßiges Heben und Senken der Brust</German>
+            <Portuguese>Elevação e queda do tórax desiguais</Portuguese>
+            <Spanish>Elevación y descenso desiguales del pecho</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_internalBleeding">
             <English>Skin is rigid, looks bruised</English>
@@ -1907,6 +2039,8 @@
             <French>La peau est rigide et présente des signes de marbrure</French>
             <Korean>피부가 딱딱하고 멍든 것 같음</Korean>
             <German>Die Haut ist steif und sieht gequetscht aus</German>
+            <Portuguese>A pele está rígida, com aparência de contusão</Portuguese>
+            <Spanish>La piel está rígida y magullada</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_simple">
             <English>Symptoms indicate %1</English>
@@ -1914,6 +2048,8 @@
             <French>Les symptômes indiquent %1</French>
             <Korean>현재 증상: %1</Korean>
             <German>Die Symptome weisen auf %1 hin.</German>
+            <Portuguese>Os sintomas indicam %1</Portuguese>
+            <Spanish>Los síntomas indican %1</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax">
             <English>Pneumothorax</English>
@@ -1921,6 +2057,8 @@
             <French>Pneumothorax (PTX)</French>
             <Korean>기흉</Korean>
             <German>Pneumothorax</German>
+            <Portuguese>Pneumotórax</Portuguese>
+            <Spanish>Neumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_TensionPneumothorax">
             <English>Tension Pneumothorax</English>
@@ -1928,6 +2066,8 @@
             <French>Pneumothorax sous tension</French>
             <Korean>긴장성 기흉</Korean>
             <German>Spannungspneumothorax</German>
+            <Portuguese>Pneumotórax Hipertensivo</Portuguese>
+            <Spanish>Neumotórax a tensión</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax">
             <English>Hemopneumothorax</English>
@@ -1935,6 +2075,8 @@
             <French>Hémopneumothorax</French>
             <Korean>혈기흉</Korean>
             <German>Hämopneumothorax</German>
+            <Portuguese>Hemotórax</Portuguese>
+            <Spanish>Hemotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Pneumothorax_short">
             <English>PTX</English>
@@ -1942,6 +2084,8 @@
             <French>PTX</French>
             <Korean>기흉</Korean>
             <German>PTX</German>
+            <Portuguese>PTX</Portuguese>
+            <Spanish>NTX</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_TensionPneumothorax_short">
             <English>TPTX</English>
@@ -1949,6 +2093,8 @@
             <French>TPTX</French>
             <Korean>긴장성 기흉</Korean>
             <German>SPTX</German>
+            <Portuguese>TPTX</Portuguese>
+            <Spanish>NTXT</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Hemopneumothorax_short">
             <English>HPTX</English>
@@ -1956,6 +2102,8 @@
             <French>HPTX</French>
             <Korean>혈기흉</Korean>
             <German>HPTX</German>
+            <Portuguese>HTX</Portuguese>
+            <Spanish>HTX</Spanish>
         </Key>
     </Package>
 </Project>

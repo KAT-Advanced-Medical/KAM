@@ -18,17 +18,24 @@
  */
 params ["_args", "_elapsedTime", "_totalTime"];
 _args params ["_medic", "_patient", "_bodyPart"];
-_bodyPart = toLower _bodyPart;
 
-private _openWounds = GET_OPEN_WOUNDS(_patient);
-private _openWoundsOnPart = _openWounds get _bodyPart;
+private _isBleeding = false;
+{ // ace_medical_treatment_fnc_canBandage
+    _x params ["", "_amountOf", "_bleeding"]; 
+    
+    if (_amountOf * _bleeding > 0) exitWith {
+        _isBleeding = true;
+    };
+} forEach ((GET_OPEN_WOUNDS(_patient)) getOrDefault [_bodyPart, []]);
 
-// Stop treatment if there are no wounds that can be bandaged remaining
-if (_openWoundsOnPart isEqualTo []) exitWith {false};
+// Stop treatment if there are no treatable wounds left
+if (!_isBleeding && (GET_BANDAGED_WOUNDS(_patient) getOrDefault [_bodyPart, []]) isEqualTo []) exitWith {false};
 
 if (_totalTime - _elapsedTime > ([_patient, _patient, _bodyPart] call FUNC(getNPWTTime)) - GVAR(npwtTime)) exitWith {true};
 
-[QACEGVAR(medical_treatment,bandageLocal), [_patient, _bodyPart, "Dressing"], _patient] call CBA_fnc_targetEvent;
+if (_isBleeding) then {
+    [QACEGVAR(medical_treatment,bandageLocal), [_patient, _bodyPart, "Dressing"], _patient] call CBA_fnc_targetEvent; //TODO replace this
+};
 
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
 private _bandagedWoundsOnPart = _bandagedWounds get _bodyPart;
@@ -60,7 +67,12 @@ _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
 
 private _partIndex = ALL_BODY_PARTS find _bodyPart;
 private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
-_bodyPartDamage set [_partIndex, (_bodyPartDamage select _partIndex) - (_treatedDamageOf * _treatedAmountOf)];
+private _damage = (_bodyPartDamage select _partIndex) - (_treatedDamageOf * _treatedAmountOf);
+if (_damage < 0.05) then {
+    _bodyPartDamage set [_partIndex, 0];
+} else {
+    _bodyPartDamage set [_partIndex, _damage];
+};
 _patient setVariable [QACEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
 
 switch (_bodyPart) do {

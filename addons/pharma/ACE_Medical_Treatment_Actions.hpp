@@ -38,7 +38,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = "[_medic, _patient, _bodyPart, _className, _itemUser, _usedItem] call ace_medical_treatment_fnc_ivBag; [_patient, 100, 5] call kat_pharma_fnc_fluid;";
     };
     class Epinephrine: Morphine {
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
     };
     class Painkillers: Morphine {
         displayName = CSTRING(Inject_Box_Painkillers);
@@ -140,7 +140,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(treatmentTime_EACA);
         items[] = {"kat_EACA"};
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class TXA: EACA {
@@ -150,7 +150,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_TXA);
         treatmentTime = QGVAR(treatmentTime_TXA);
         items[] = {"kat_TXA"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class SalineFlush: Carbonate {
@@ -185,7 +185,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Norepinephrine);
         treatmentTime = QGVAR(treatmentTime_Norepinephrine);
         items[] = {"kat_norepinephrine"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Phenylephrine: EACA {
@@ -195,7 +195,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Phenylephrine);
         treatmentTime = QGVAR(treatmentTime_Phenylephrine);
         items[] = {"kat_phenylephrine"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Nitroglycerin: EACA {
@@ -205,7 +205,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Nitroglicerin);
         treatmentTime = QGVAR(treatmentTime_Nitroglycerin);
         items[] = {"kat_nitroglycerin"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Amiodarone: EACA {
@@ -215,7 +215,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Amiodarone);
         treatmentTime = QGVAR(treatmentTime_Amiodarone);
         items[] = {"kat_amiodarone"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Lidocaine: EACA {
@@ -225,7 +225,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Lidocain);
         treatmentTime = QGVAR(treatmentTime_Lidocaine);
         items[] = {"kat_lidocaine"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Atropine: EACA {
@@ -235,7 +235,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Atropine);
         treatmentTime = QGVAR(treatmentTime_Atropine);
         items[] = {"kat_atropine"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Ketamine: EACA {
@@ -245,7 +245,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Ketamine);
         treatmentTime = QGVAR(treatmentTime_Ketamine);
         items[] = {"kat_ketamine"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Fentanyl: EACA {
@@ -255,7 +255,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Fentanyl);
         treatmentTime = QGVAR(treatmentTime_Fentanyl);
         items[] = {"kat_fentanyl"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Nalbuphine: EACA {
@@ -265,7 +265,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Nalbuphine);
         treatmentTime = QGVAR(treatmentTime_Nalbuphine);
         items[] = {"kat_nalbuphine"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Reorientation: Carbonate {
@@ -312,6 +312,7 @@ class ACE_Medical_Treatment_Actions {
     class RemoveIV: ApplyTourniquet {
         displayName = CSTRING(Remove_IV);
         displayNameProgress = CSTRING(Removing_IV);
+        category = "advanced";
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         treatmentTime = 3;
         items[] = {};
@@ -328,7 +329,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Etomidate);
         treatmentTime = QGVAR(treatmentTime_Etomidate);
         items[] = {"kat_etomidate"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Lorazepam: EACA {
@@ -340,7 +341,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Lorazepam);
         treatmentTime = QGVAR(treatmentTime_Lorazepam);
         items[] = {"kat_lorazepam"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Flumazenil: EACA {
@@ -352,7 +353,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Flumezenil);
         treatmentTime = QGVAR(treatmentTime_Flumazenil);
         items[] = {"kat_flumazenil"};
-        callbackSuccess = QFUNC(treatmentAdvanced_medication);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class Dialysis: BasicBandage {

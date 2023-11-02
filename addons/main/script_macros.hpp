@@ -167,6 +167,14 @@
 #undef GET_DAMAGE_THRESHOLD
 #define GET_DAMAGE_THRESHOLD(unit)  (unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)])
 
+#define GET_PAIN_PERCEIVED(unit)    (0 max (GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1)
+
+#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
+#define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
+#define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
+
+#define PAIN_UNCONSCIOUS ACEGVAR(medical,painUnconsciousThreshold)
+
 // END ACE3 reference macros
 
 // item types
@@ -235,6 +243,8 @@
 #define QQPATHTOF_SOUND(var1) QUOTE(QPATHTOF_SOUND(var1))
 
 #include "script_debug.hpp"
+
+#define ALL_BODY_PARTS_PRIORITY ["body", "head", "leftarm", "rightarm", "leftleg", "rightleg"]
 
 // Airway
 #define VAR_SPO2                       QEGVAR(breathing,airwayStatus)

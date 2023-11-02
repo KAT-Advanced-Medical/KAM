@@ -16,7 +16,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV_Desc">
             <English>Changes what medical level is required to set IVs</English>
-            <German>Ändert, welcher medizinische Grad für das Legen von IVs erforderlich ist</German>
+            <German>Benötigter medizinischer Grad, welcher für das Legen von IVs erforderlich ist</German>
             <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia kaniul IV</Polish>
             <French>Niveau nécessaire pour poser une IV</French>
             <Chinese>改变设置静脉注射所需的医疗级别</Chinese>
@@ -51,7 +51,7 @@
             <Czech>Změní, která zdravotnická úroveň je potřeba k zavedení IO</Czech>
             <French>Change le niveau médical requis pour poser des IO</French>
             <Korean>IO를 설정하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Ändert, welcher medizinische Grad für das Legen von IOs erforderlich ist</German>
+            <German>Benötigter medizinischer Grad, welcher für das Legen von IOs erforderlich ist</German>
             <Japanese>IOの使用に訓練レベルを必要とさせます。</Japanese>
             <Spanish>Cambia el nivel médico que se requiere para colocar las IOs</Spanish>
             <Portuguese>Muda qual nível médico é necessário para aplicar IOs</Portuguese>
@@ -194,7 +194,7 @@
             <Turkish>Ağrı Kesicileri Al</Turkish>
             <Japanese>鎮痛剤を服用</Japanese>
             <Russian>Принимайте обезболивающие</Russian>
-            <Portuguese>Administrar analgésicos</Portuguese>
+            <Portuguese>Administrar Analgésicos</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
@@ -250,6 +250,8 @@
             <French>Inhalateur de Penthrox</French>
             <Korean>펜트록스 흡입기</Korean>
             <German>Penthrox-Inhalator</German>
+            <Portuguese>Inalador de Penthrox</Portuguese>
+            <Spanish>Inhalador Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Use_Penthrox">
             <English>Use Penthrox Inhaler</English>
@@ -257,6 +259,8 @@
             <French>Utiliser l'inhalateur de Penthrox</French>
             <Korean>펜트록스 흡입기 사용</Korean>
             <German>Verwende Penthrox-Inhalator</German>
+            <Portuguese>Usar Inalador de Penthrox</Portuguese>
+            <Spanish>Usar inhalador Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
             <English>Used to manage moderate pain</English>
@@ -264,6 +268,8 @@
             <French>Utilisé pour traiter les douleurs modérées</French>
             <Korean>중간 정도의 통증 관리에 사용됩니다</Korean>
             <German>Wird zur Behandlung mäßiger Schmerzen eingesetzt</German>
+            <Portuguese>Usado para gerenciar dor moderada</Portuguese>
+            <Spanish>Para controlar el dolor moderado</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -359,7 +365,7 @@
             <Czech>Aplikovat Amiodaron</Czech>
             <Japanese>アミオダロンを注入</Japanese>
             <Russian>Ввести амиодарон</Russian>
-            <Portuguese>Administrar Amiodarona</Portuguese>
+            <Portuguese>Injetar Amiodarona</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Lidocaine_DescShort">
             <English>Used to combat cardiac arrest</English>
@@ -407,7 +413,7 @@
             <Czech>Aplikovat Lidokain</Czech>
             <Japanese>リドカインを注入</Japanese>
             <Russian>Ввести Лидокаин</Russian>
-            <Portuguese>Administrar Lidocaína</Portuguese>
+            <Portuguese>Injetar Lidocaína</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_DescShort">
             <English>Used to treat bradycardia</English>
@@ -455,7 +461,7 @@
             <Czech>Aplikovat Atropin</Czech>
             <Japanese>アトロピンを注入</Japanese>
             <Russian>Ввести Атропин</Russian>
-            <Portuguese>Administrar Atropina</Portuguese>
+            <Portuguese>Injetar Atropina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_TXA_DescShort">
             <English>Encourages clot formation</English>
@@ -503,7 +509,7 @@
             <Czech>Aplikovat TXA</Czech>
             <Japanese>トラネキサム酸 (TXA)を注入</Japanese>
             <Russian>Ввести TXA</Russian>
-            <Portuguese>Administrar TXA</Portuguese>
+            <Portuguese>Injetar TXA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Norep_DescShort">
             <English>Used to raise blood pressure</English>
@@ -551,7 +557,7 @@
             <Czech>Aplikovat Norepinefrin</Czech>
             <Japanese>ノルアドレナリンを注入</Japanese>
             <Russian>Ввести Норадреналин</Russian>
-            <Portuguese>Administrar Norepinefrina</Portuguese>
+            <Portuguese>Injetar Norepinefrina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Phenyl_DescShort">
             <English>Used to raise blood pressure</English>
@@ -599,7 +605,7 @@
             <Czech>Aplikovat Fenylefrin</Czech>
             <Japanese>フェニレフリンを注入</Japanese>
             <Russian>Ввести Фенилэфрин</Russian>
-            <Portuguese>Administrar Fenilefrina</Portuguese>
+            <Portuguese>Injetar Fenilefrina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Nitro_DescShort">
             <English>Used to lower blood pressure</English>
@@ -647,7 +653,7 @@
             <Czech>Aplikovat Nitroglycerin</Czech>
             <Japanese>ニトログリセリンを注入</Japanese>
             <Russian>Ввести Нитроглицерин</Russian>
-            <Portuguese>Administrar Nitroglicerina</Portuguese>
+            <Portuguese>Injetar Nitroglicerina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Reorient">
             <English>Reorient Patient</English>
@@ -950,10 +956,10 @@
             <Czech>Odstraňuji IV</Czech>
             <Japanese>IV/IOを抜去</Japanese>
             <Russian>Удалить IV/IO</Russian>
-            <Portuguese>Retirar IV/IO</Portuguese>
+            <Portuguese>Remover IV/IO</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Removing_IV">
-            <English>Removing</English>
+            <English>Removing IV/IO</English>
             <German>Entferne</German>
             <Polish>Zdejmowanie</Polish>
             <Spanish>Retirando</Spanish>
@@ -1125,7 +1131,7 @@
         <Key ID="STR_KAT_Pharma_SETTING_Allow_Reorientation_DESC">
             <English>Medical level required for reorientation</English>
             <Polish>Poziom wyszkolenia wymagany do cucenia</Polish>
-            <German>Erforderlicher medizinischer Grad zum Umorientieren</German>
+            <German>Benötigter medizinischer Grad, zum Umorientieren</German>
             <Spanish>Nivel médico requerido para la bofetada</Spanish>
             <Chinese>调整方向所需的医疗水平</Chinese>
             <Chinesesimp>刺激患者所需的医疗水平</Chinesesimp>
@@ -1393,7 +1399,7 @@
             <German>Verabreiche Etomidat</German>
             <Japanese>エトミデートを注入</Japanese>
             <Spanish>Administrar Etomidato</Spanish>
-            <Portuguese>Administrar Etomidato</Portuguese>
+            <Portuguese>Injetar Etomidato</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Lorazepam_displayName">
             <English>Lorazepam</English>
@@ -1445,7 +1451,7 @@
             <German>Verabreiche Lorazepam</German>
             <Japanese>ロラゼパムを注入</Japanese>
             <Spanish>Administrar Lorazepam</Spanish>
-            <Portuguese>Administrar Lorazepam</Portuguese>
+            <Portuguese>Injetar Lorazepam</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Flumazenil_displayName">
             <English>Flumazenil</English>
@@ -1461,7 +1467,7 @@
             <Portuguese>Flumazenil</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Flumazenil_DescShort">
-            <English>Counter to Lorzaepam</English>
+            <English>Counter to Lorazepam</English>
             <Chinesesimp>用于对抗劳拉西泮</Chinesesimp>
             <Italian>Antagonista del Lorazepam</Italian>
             <Czech>Proti Lorazepamu</Czech>
@@ -1471,7 +1477,7 @@
             <German>Antagonist zu Lorazepam</German>
             <Japanese>ロラゼパムへの拮抗薬</Japanese>
             <Spanish>Contrarresta el Lorazepam</Spanish>
-            <Portuguese>Antídoto para Lorzaepam</Portuguese>
+            <Portuguese>Antídoto para Lorazepam</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Flumazenil_DescUse">
             <English>Used to bring patients out of sedation</English>
@@ -1497,7 +1503,7 @@
             <German>Verabreiche Flumazenil</German>
             <Japanese>フルマゼニルを注入</Japanese>
             <Spanish>Administrar Flumazenil</Spanish>
-            <Portuguese>Administrar Flumazenil</Portuguese>
+            <Portuguese>Injetar Flumazenil</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Ketamine">
             <English>Push Ketamine</English>
@@ -1510,7 +1516,7 @@
             <German>Verabreiche Ketamin</German>
             <Japanese>ケタミンを注入</Japanese>
             <Spanish>Administrar Ketamina</Spanish>
-            <Portuguese>Administrar Cetamina</Portuguese>
+            <Portuguese>Injetar Cetamina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Ketamine_Box_Display">
             <English>Ketamine</English>
@@ -1549,7 +1555,7 @@
             <German>Verabreiche Fentanyl</German>
             <Japanese>フェンタニルを注入</Japanese>
             <Spanish>Administrar Fentanilo</Spanish>
-            <Portuguese>Administrar Fentanil</Portuguese>
+            <Portuguese>Injetar Fentanil</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Fentanyl_Box_Display">
             <English>Fentanyl</English>
@@ -1588,7 +1594,7 @@
             <German>Verabreiche Nalbuphin</German>
             <Japanese>ナルブフィンを注入</Japanese>
             <Spanish>Administrar Nalbufina</Spanish>
-            <Portuguese>Administrar Nalbufina</Portuguese>
+            <Portuguese>Injetar Nalbufina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Nalbuphine_Box_Display">
             <English>Nalbuphine</English>
@@ -1676,7 +1682,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Naloxon</Czech>
             <French>Niveau médical requis pour la Naloxone</French>
             <Korean>날록손을 사용할 수 있는 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderlicher medizinischer Grad für die Gabe von Naloxon</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Naloxon</German>
             <Japanese>ナロキソンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Naloxona</Spanish>
             <Portuguese>Nível médico exigido para administrar Naloxona</Portuguese>
@@ -1726,7 +1732,7 @@
             <Czech>Zdravotnická úroveň potřebná pro TXA</Czech>
             <French>Niveau médical requis pour l'Acide Tranexamique</French>
             <Korean>TXA를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von TXA</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von TXA</German>
             <Japanese>TXAの許可</Japanese>
             <Spanish>Nivel médico requerido para el ATX</Spanish>
             <Portuguese>Nível médico exigido para administrar TXA</Portuguese>
@@ -1752,7 +1758,7 @@
             <Italian>Livello medico richiesto per la Norepinefrina</Italian>
             <French>Niveau médical requis pour la Noradrénaline</French>
             <Korean>노르에피네프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Norepinephrin</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Norepinephrin</German>
             <Japanese>ノルアドレナリンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Norepinefrina</Spanish>
             <Portuguese>Nível médico exigido para uso de Norepinefrina</Portuguese>
@@ -1778,7 +1784,7 @@
             <Italian>Livello medico richiesto per la Fenilefrina</Italian>
             <French>Niveau médical requis pour la Phényléphrine</French>
             <Korean>페닐에프린을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Phenylephrin</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Phenylephrin</German>
             <Japanese>フェニレフリンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Fenilefrina</Spanish>
             <Portuguese>Nível médico exigido para uso de Fenilefrina</Portuguese>
@@ -1817,7 +1823,7 @@
             <Italian>Tempo di trattamento per la Nitroglicerina</Italian>
             <French>Temps de traitement de la Nitroglycérine</French>
             <Korean>니트로글리세린으로 치료하는 시간</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Nitroglycerin</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Nitroglycerin</German>
             <Japanese>ニトログリセリンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Nitroglicerina</Spanish>
             <Portuguese>Tempo de uso de Nitroglicerina</Portuguese>
@@ -1843,7 +1849,7 @@
             <Czech>Doba léčby pro Amiodaron</Czech>
             <French>Temps de traitement de l'Amiodarone</French>
             <Korean>아미오다론으로 치료하는 시간</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Amiodaron</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Amiodaron</German>
             <Japanese>アミオダロンの使用時間</Japanese>
             <Spanish>Tiempo para uso de la Amiodarona</Spanish>
             <Portuguese>Tempo de uso de Amiodarona</Portuguese>
@@ -1856,7 +1862,7 @@
             <Italian>Livello medico richiesto per la Lidocaina</Italian>
             <French>Niveau médical requis pour la Lidocaïne</French>
             <Korean>리도카인을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Lidocain</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Lidocain</German>
             <Japanese>リドカインの許可</Japanese>
             <Spanish>Nivel médico requerido para la Lidocaína</Spanish>
             <Portuguese>Nível médico exigido para uso de Lidocaína</Portuguese>
@@ -1882,7 +1888,7 @@
             <Italian>Livello medico richiesto per l'Atropina</Italian>
             <French>Niveau médical requis pour l'Atropine</French>
             <Korean>아트로핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Atropin</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Atropin</German>
             <Japanese>アトロピンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Atropina</Spanish>
             <Portuguese>Nível médico exigido para uso de Atropina</Portuguese>
@@ -1908,7 +1914,7 @@
             <Czech>Zdravotnická úroveň potřebná pro EACA</Czech>
             <French>Niveau médical requis pour l'Acide Aminocaproïque</French>
             <Korean>아미노카프로산을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Aminocapronsäure</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Aminocapronsäure</German>
             <Japanese>EACAの許可</Japanese>
             <Spanish>Nivel médico requerido para el EACA</Spanish>
             <Portuguese>Nível médico exigido para uso de EACA</Portuguese>
@@ -1933,7 +1939,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Flumazenil</Czech>
             <French>Niveau médical requis pour le Flumazénil</French>
             <Korean>플루마제닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Flumazenil</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Flumazenil</German>
             <Polish>Poziom wyszkolenia medycznego dla Flumazenilu</Polish>
             <Japanese>フルマゼニルの許可</Japanese>
             <Spanish>Nivel médico requerido para el Flumazenil</Spanish>
@@ -1959,7 +1965,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Lorazepam</Czech>
             <French>Niveau médical requis pour le Lorazépam</French>
             <Korean>로라제팜을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Lorazepam</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Lorazepam</German>
             <Polish>Poziom wyszkolenia medycznego dla Lorazepamu</Polish>
             <Japanese>ロラゼパムの許可</Japanese>
             <Spanish>Nivel médico requerido para el Lorazepam</Spanish>
@@ -1985,7 +1991,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Etomidát</Czech>
             <French>Niveau médical requis pour l'Étomidate</French>
             <Korean>에토미데이트를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Etomidat</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Etomidat</German>
             <Polish>Poziom wyszkolenia medycznego dla Etomidatu</Polish>
             <Japanese>エトミデートの許可</Japanese>
             <Spanish>Nivel médico requerido para el Etomidato</Spanish>
@@ -2012,7 +2018,7 @@
             <Italian>Livello medico richiesto per la Ketamina</Italian>
             <French>Niveau médical requis pour la Kétamine</French>
             <Korean>케타민을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Ketamin</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Ketamin</German>
             <Japanese>ケタミンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Ketamina</Spanish>
             <Portuguese>Nível médico exigido para uso de Cetamina</Portuguese>
@@ -2038,7 +2044,7 @@
             <Czech>Zdravotnická úroveň potřebná pro Fentanyl</Czech>
             <French>Niveau médical requis pour le Fentanyl</French>
             <Korean>펜타닐을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Fentanyl</German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Fentanyl</German>
             <Japanese>フェンタニルの許可</Japanese>
             <Spanish>Nivel médico requerido para el Fentalino</Spanish>
             <Portuguese>Nível médico exigido para uso de Fentanil</Portuguese>
@@ -2064,7 +2070,7 @@
             <Italian>Livello medico richiesto per Nalbufina (nubain)</Italian>
             <French>Niveau médical requis pour la Nalbuphine</French>
             <Korean>날부핀을 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Gabe von Nalbuphin </German>
+            <German>Benötigter medizinischer Grad, für die Gabe von Nalbuphin </German>
             <Japanese>ナルブフィンの許可</Japanese>
             <Spanish>Nivel médico requerido para la Nalbufina</Spanish>
             <Portuguese>Nível médico exigido para uso de Nalbufina</Portuguese>
@@ -2087,7 +2093,9 @@
             <Japanese>ペンスロックス吸入器の許可</Japanese>
             <French>Niveau médical requis pour l'inhalateur de Penthrox</French>
             <Korean>펜트록스를 사용하는 데 필요한 의료 레벨 수준 변경</Korean>
-            <German>Erforderliches medizinischer Grad für die Verwendung des Penthrox-Inhalators</German>
+            <German>Benötigter medizinischer Grad, für die Verwendung des Penthrox-Inhalators</German>
+            <Portuguese>Nível médico exigido para uso do Inalador de Penthrox</Portuguese>
+            <Spanish>Nivel médico requerido para el Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
             <English>Treatment time for Penthrox Inhaler</English>
@@ -2095,6 +2103,8 @@
             <French>Durée d'utilisation de l'inhalateur de Penthrox</French>
             <Korean>펜트록스로 치료하는 시간</Korean>
             <German>Behandlungszeit für den Penthrox-Inhalators</German>
+            <Portuguese>Tempo de uso do Inalador de Penthrox</Portuguese>
+            <Spanish>Tiempo de tratamiento para el Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -2386,6 +2396,8 @@
             <French>Paramètres de l'inhalateur de Penthrox</French>
             <Korean>펜트록스 흡입기 설정</Korean>
             <German>Penthrox Einstellungen</German>
+            <Portuguese>Configurações do Inalador de Penthrox</Portuguese>
+            <Spanish>Configuracion del inhalador Penthrox</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
             <English>%1 performed a saline flush</English>
@@ -2393,6 +2405,8 @@
             <French>%1 a effectué le rinçage salin</French>
             <Korean>%1이(가) 식염수 주입을 수행했다</Korean>
             <German>%1 hat eine Kochsalzlösungsspülung durchgeführt</German>
+            <Portuguese>%1 realizou uma lavagem salina</Portuguese>
+            <Spanish>%1 realizó un enjuague con salino</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_IVblock_closed">
             <English>Patient's IV is blocked</English>
@@ -2546,7 +2560,7 @@
             <Polish>Wstrzyknij EACA</Polish>
             <Japanese>E-アミノカプロン酸 (EACA)を注入</Japanese>
             <Spanish>Administrar EACA</Spanish>
-            <Portuguese>Administrar EACA</Portuguese>
+            <Portuguese>Injetar EACA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_Display">
             <English>Pervitin capsule</English>
@@ -2579,7 +2593,7 @@
             <Japanese>ペルビチンを服用する</Japanese>
             <Korean>페르피틴 복용</Korean>
             <Italian>Assumi Pervitin</Italian>
-            <Portuguese>Tomar Pervitin</Portuguese>
+            <Portuguese>Administrar Pervitin</Portuguese>
             <Polish>Użyj Pervitin</Polish>
             <Spanish>Tomar Pervitina</Spanish>
             <Czech>Vzít si Pervitin</Czech>
@@ -2591,7 +2605,7 @@
             <Korean>페르피틴이 당신을 깨어있게 하고 끝없는 빠와로 가득 차게 합니다</Korean>
             <Japanese>ペルビチンはあなたを覚醒させ、無限のチカラに満ち満ちた気分にさせます!</Japanese>
             <Italian>Il Pervitin ti fa sembrare più attento e dotato di una forza senza uguali</Italian>
-            <Portuguese>O pervitin faz você se sentir acordado e cheio de poder INFINITO</Portuguese>
+            <Portuguese>O Pervitin faz você se sentir acordado e cheio de poder INFINITO</Portuguese>
             <Polish>Pervitin sprawia, że czujesz się pobudzony i pełny ENERGII</Polish>
             <Spanish>La pervitina hace que te sientas despierto y con una capacidad infinita de ENERGIA</Spanish>
             <Czech>Díky pervitinu se cítíš bdělý a plný nekonečné SÍLY</Czech>
@@ -2723,7 +2737,7 @@
             <Japanese>カフェインを服用する</Japanese>
             <Korean>카페인 복용</Korean>
             <Italian>Assumi Caffeina</Italian>
-            <Portuguese>Tomar Cafeína</Portuguese>
+            <Portuguese>Administrar Cafeína</Portuguese>
             <Polish>Użyj kofeinę</Polish>
             <Spanish>Tomar cafeina</Spanish>
             <Czech>Dát si Kofein</Czech>
@@ -2752,7 +2766,7 @@
             <Chinesesimp>检查导管</Chinesesimp>
             <Japanese>カテーテルを検査する</Japanese>
             <Spanish>Inspeccionar Catéter</Spanish>
-            <Portuguese>Inspecionar catéter</Portuguese>
+            <Portuguese>Inspecionar cateter</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Saline_Flush">
             <English>Saline Flush</English>
@@ -2847,12 +2861,18 @@
             <Korean>약물이 스태미나를 조절합니다</Korean>
             <Japanese>薬品によるスタミナの変化</Japanese>
             <German>Medikamente beeinflussen die Ausdauer</German>
+            <French>Les médicaments modifient l'endurance</French>
+            <Portuguese>Medicamentos afetam a Stamina</Portuguese>
+            <Spanish>Medicación modifica la resistencia</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication_DESC">
             <English>Allow certain medications to modify (vanilla/advanced fatigue) stamina as a side effect</English>
             <Korean>부작용으로 특정 약물이 (바닐라/고급 피로도) 스태미나를 조절할 수 있도록 허용</Korean>
             <Japanese>特定の薬の副作用としてスタミナ(バニラ/高度な疲労)を変更することを許可する</Japanese>
             <German>Erlaubt es, dass bestimmte Medikamente als Nebenwirkung die Ausdauer beeinflussen (Vanilla/fortgeschrittene Ausdauer).</German>
+            <French>Autorise certains médicaments à modifier (Vanilla/Fatigue avancée) l'endurance en effet secondaire</French>
+            <Portuguese>Permite que certos medicamentos modifiquem a Stamina (vanilla/fadiga avançada) como efeito colateral</Portuguese>
+            <Spanish>Permitir que ciertos medicamentos modifiquen la resistencia (fatiga convencional/avanzada) como efecto secundario</Spanish>
         </Key>
     </Package>
 </Project>
