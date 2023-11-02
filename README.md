@@ -47,39 +47,45 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamart
 
 - This repository is for development use, full playable version is also available on Steam (https://steamcommunity.com/sharedfiles/filedetails/?id=2020940806)
 - Everybody can make Pull/Push request
-- This addon depends on ACE, some of its updates may break KAM, so fixes from may take some time
+- This addon depends on ACE, some of its updates may break KAM, so fixes may take some time
 - New features are still in development
 
 ## Core features
 
 - Airway
   - [x] Airway management for unconscious patients
-    - [x] Head overstretching
+    - [x] Head hyper-extension
     - [x] Intubation
     - [x] Aspiration
-    - [x] Items such as Guedel tube, KingLT and Acuvacc
+    - [x] Items such as Guedel Tube, King LT and Accuvacc
+    - [x] Recovery position
 - Breathing
   - [x] Oxygen saturation
-  - [x] Pulse-oximeter
-  - [x] Cyanosis diagnose
+  - [x] Pulse Oximeter
+  - [x] Cyanosis
   - [x] Pneumothorax, tension pneumothorax and hemothorax
 - Circulation
+  - [x] Advanced cardiac arrest rhythms
   - [x] Blood Groups including Rh Factors
   - [x] Painkillers
+  - [x] Internal bleeding
   - [x] Automated external defibrillators
-  - [x] Settable sucess CPR chances per medical level expertise
+  - [x] Settable success CPR chances per medical level expertise
+- Disability
+  - [x] Surgery
+  - [x] Complex fractures
+- Exposure
+  - [ ] Heat-preserving?
 - Burns
   - [ ] Burn injuries
   - [ ] Burn injuries treatment
-- Exposure
-  - [ ] Heat-preserving?
 - Misc
   - [ ] Big Backpack?
   - [x] Workable IV stand
 - Zeus modules
   - [x] Manage unit airways
   - [x] Change blood group / volume
-  - [x] Change shockable state
+  - [x] Change cardiac rhythm type
   - [x] Open unit medical menu
 
 ## Known Issues
