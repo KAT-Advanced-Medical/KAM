@@ -29,6 +29,7 @@ if (_patient isEqualTo objNull) then {
 
 switch (_provider select 1) do {
     case 1: { // Placed
+        (_provider select 0) setVariable [QGVAR(AED_X_VitalsMonitor_Volume), (_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false]), true];
         (_provider select 0) setVariable [QGVAR(Defibrillator_Patient), nil, true];
     };
     case 2: { // Vehicle

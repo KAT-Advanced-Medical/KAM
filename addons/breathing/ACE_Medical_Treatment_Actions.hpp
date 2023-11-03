@@ -1,5 +1,24 @@
 class ACE_Medical_Treatment_Actions {
     class CheckPulse;
+    class ListenToLungs: CheckPulse {
+        displayName = CSTRING(auscultateLung_display);
+        displayNameProgress = CSTRING(listening_progress);
+        treatmentTime = QGVAR(stethoscopeListeningTime);
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 0;
+        category = "airway";
+        medicRequired = 0;
+        consumeItem = 0;
+        callbackStart = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), true, true)]; [ARR_2(_medic, _patient)] spawn FUNC(listenLungs));
+        callbackSuccess = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), false, true)]);
+        callbackProgress = "";
+        callbackFailure = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), false, true)]);
+        condition = "true";
+        items[] = {"kat_stethoscope"};
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+    };
     class CheckBreathing: CheckPulse {
         displayName = CSTRING(Check_Breathing);
         displayNameProgress = CSTRING(Check_Breathing_Progress);
@@ -174,35 +193,6 @@ class ACE_Medical_Treatment_Actions {
         animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
         animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
         litter[] = {};
-    };
-    class ListenToLungs: CheckPulse {
-        displayName = CSTRING(auscultateLung_display);
-        displayNameProgress = CSTRING(listening_progress);
-        treatmentTime = QGVAR(stethoscopeListeningTime);
-        allowedSelections[] = {"Body"};
-        allowSelfTreatment = 0;
-        category = "airway";
-        medicRequired = 0;
-        consumeItem = 0;
-        callbackStart = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), true, true)]; [ARR_2(_medic, _patient)] spawn FUNC(listenLungs));
-        callbackSuccess = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), false, true)]);
-        callbackProgress = "";
-        callbackFailure = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), false, true)]);
-        condition = "true";
-        items[] = {"kat_stethoscope"};
-        animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
-    };
-    class CheckCyanosis: CheckPulse {
-        displayName = CSTRING(CheckCyanosis_Name);
-        displayNameProgress = CSTRING(CheckCyanosis_Progress);
-        treatmentTime = 3;
-        allowedSelections[] = {"Head", "LeftArm", "RightArm"};
-        allowSelfTreatment = 1;
-        medicRequired = QGVAR(medLvl_Cyanosis);
-        condition = QUOTE(GVAR(enableCyanosis) && !(GVAR(cyanosisShowInMenu)));
-        callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);
     };
     class DisablePulseOximeterAudio {
         displayName = CSTRING(PulseOximeter_Action_removeSound);

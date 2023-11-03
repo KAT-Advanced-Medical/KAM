@@ -15,8 +15,8 @@
  * Public: No
  */
 
-if (ACEGVAR(interact_menu,menuBackground) == 1) then {[QACEGVAR(medcial_gui,id), false] call EFUNC(common,blurScreen)};
-if (ACEGVAR(interact_menu,menuBackground) == 2) then {(uiNamespace getVariable [QEGVAR(interact_menu,menuBackground), displayNull]) closeDisplay 0};
+if (ACEGVAR(interact_menu,menuBackground) == 1) then {[QACEGVAR(medical_gui,id), false] call ACEFUNC(common,blurScreen)};
+if (ACEGVAR(interact_menu,menuBackground) == 2) then {(uiNamespace getVariable [QACEGVAR(interact_menu,menuBackground), displayNull]) closeDisplay 0};
 
 ACEGVAR(medical_gui,pendingReopen) = false;
 ACEGVAR(medical_gui,menuPFH) call CBA_fnc_removePerFrameHandler;

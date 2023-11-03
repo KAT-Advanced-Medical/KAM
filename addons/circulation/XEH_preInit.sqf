@@ -333,6 +333,8 @@ PREP_RECOMPILE_END;
     LLSTRING(SETTING_AdvRhythm_Enable),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
     [true],
+    true,
+    {},
     true
 ] call CBA_Settings_fnc_init;
 
@@ -392,7 +394,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_AdvRhythm_asystoleBloodlossThreshold),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
-    [3.0,6.0,3.6,1],
+    [0,6.0,3.6,1],
     true
 ] call CBA_Settings_fnc_init;
 

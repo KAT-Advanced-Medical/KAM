@@ -186,7 +186,7 @@ if (_callbackProgress isEqualTo {}) then {
     ACEFUNC(medical_treatment,treatmentFailure),
     getText (_config >> "displayNameProgress"),
     _callbackProgress,
-    ["isNotInside"]
+    ["isNotInside", "isNotSwimming"]
 ] call ACEFUNC(common,progressBar);
 
 true

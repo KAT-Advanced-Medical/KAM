@@ -144,7 +144,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_reorientationChance),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Reorientation)],
-    [0, 100, 100, 0],
+    [0, 100, 50, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -595,6 +595,15 @@ PREP_RECOMPILE_END;
     QGVAR(coagulation),
     "CHECKBOX",
     [LLSTRING(SETTING_Coagulation), LLSTRING(SETTING_Coagulation_DESC)],
+    CBA_SETTINGS_CAT,
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(staminaMedication),
+    "CHECKBOX",
+    [LLSTRING(SETTING_staminaMedication), LLSTRING(SETTING_staminaMedication_DESC)],
     CBA_SETTINGS_CAT,
     [false],
     true

@@ -29,7 +29,7 @@
             <Italian>Ritmo avanzato attivato?</Italian>
             <Spanish>¿Ritmo avanzado activado?</Spanish>
             <Czech>Pokročilý Rytmus aktivován?</Czech>
-            <Japanese>高度な心電図波形 を有効化しますか?</Japanese>
+            <Japanese>高度な心調律 を有効化しますか?</Japanese>
             <Russian>Продвинутый ритм активирован?</Russian>
             <Portuguese>Ritmo avançado ativado?</Portuguese>
         </Key>
@@ -819,8 +819,12 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AnalyzeRhythm">
             <English>Analyze Rhythm</English>
-            <Japanese>波形を測定</Japanese>
-            <French>Chiffrer la fréquence cardiaque</French>
+            <Japanese>心調律を測定</Japanese>
+            <French>Analyser le rythme cardiaque</French>
+            <Korean>리듬 분석</Korean>
+            <German>Rhythmus prüfen</German>
+            <Portuguese>Analisar Ritmo</Portuguese>
+            <Spanish>Analizar ritmo</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_DogTag">
             <English>Check Dogtags</English>
@@ -878,7 +882,7 @@
             <Chinese>自動體外心臟除顫器 X系列</Chinese>
             <Chinesesimp>AED-X除颤仪</Chinesesimp>
             <Czech>AED X-Series</Czech>
-            <Korean>X-시리즈 AED</Korean>
+            <Korean>X-시리즈 자동심장충격기</Korean>
             <French>AED X-Series</French>
             <Turkish>AED X-Serisi</Turkish>
             <Italian>DAE Serie X</Italian>
@@ -906,83 +910,143 @@
             <English>Place AED Pads</English>
             <Japanese>AEDパッドを装着</Japanese>
             <French>Placer les électrodes du AED</French>
+            <Korean>자동심장충격기 패드 붙이기</Korean>
+            <German>AED-Pads Platzieren</German>
+            <Portuguese>Colocar pás do DEA</Portuguese>
+            <Spanish>Colocar electrodos del DEA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDStation_Action_PlacePads">
             <English>Station: Place AED Pads</English>
             <Japanese>AEDパッドを装着(設置)</Japanese>
             <French>Station: Placer les électrodes du AED</French>
+            <Korean>자동심장충격기 패드 붙이기(바닥)</Korean>
+            <German>Station: AED-Pads platzieren</German>
+            <Portuguese>Estação: Colocar pás do DEA</Portuguese>
+            <Spanish>Estación: Colocar electrodos del AED</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDVehicle_Action_PlacePads">
             <English>Vehicle: Place AED Pads</English>
             <Japanese>AEDパッドを装着(車両)</Japanese>
             <French>Véhicule: Placer les électrodes du AED</French>
+            <Korean>자동심장충격기 패드 붙이기(차량)</Korean>
+            <German>Fahrzeug: AED-Pads platzieren</German>
+            <Portuguese>Veículo: Colocar pás do DEA</Portuguese>
+            <Spanish>Vehículo: Colocar electrodos del DEA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_PlacePads">
             <English>Place AED-X Pads</English>
             <Japanese>AED-Xパッドを装着</Japanese>
             <French>Placer les électrodes du AED-X</French>
+            <Korean>X-시리즈 자동심장충격기 패드 붙이기</Korean>
+            <German>AED-X-Pads Platzieren</German>
+            <Portuguese>Colocar pás do DEA-X</Portuguese>
+            <Spanish>Colocar electrodos del DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_PlacePads">
             <English>Station: Place AED-X Pads</English>
             <Japanese>AED-Xパッドを装着(設置)</Japanese>
             <French>Station: Placer les électrodes du AED-X</French>
+            <Korean>X-시리즈 자동심장충격기 패드 붙이기(바닥)</Korean>
+            <German>Station: AED-X-Pads platzieren</German>
+            <Portuguese>Estação: Colocar pás do DEA-X</Portuguese>
+            <Spanish>Estación: Colocar electrodos del DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_PlacePads">
             <English>Vehicle: Place AED-X Pads</English>
             <Japanese>AED-Xパッドを装着(車両)</Japanese>
             <French>Véhicule: Placer les électrodes du AED-X</French>
+            <Korean>X-시리즈 자동심장충격기 패드 붙이기(차량)</Korean>
+            <German>Fahrzeug: AED-X-Pads platzieren</German>
+            <Portuguese>Veículo: Colocar pás do DEA-X</Portuguese>
+            <Spanish>Vehículo: Colocar electrodos del DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads">
             <English>Remove Defibrillator Pads</English>
             <Japanese>除細動器パッドを取り外す</Japanese>
             <French>Retirer les électrodes du défibrilateur</French>
+            <Korean>자동심장충격기 패드 떼기</Korean>
+            <German>Entferne Defibrillator-Pads</German>
+            <Portuguese>Remover pás do desfibrilador</Portuguese>
+            <Spanish>Quitar electrodos del desfibrilador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_PlacePads_Progress">
             <English>Placing Defibrillator Pads</English>
             <Japanese>除細動器パッドを装着しています</Japanese>
-            <French>Placer les électrodes du défibrilateur</French>
+            <French>Mise en place des électrodes du défibrilateur</French>
+            <Korean>자동심장충격기 패드 붙이는 중</Korean>
+            <German>Platziere Defibrillator-Pads</German>
+            <Portuguese>Colocando pás do desfibrilador</Portuguese>
+            <Spanish>Colocando electrodos del desfibrilador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads_Progress">
             <English>Removing Defibrillator Pads</English>
             <Japanese>除細動器パッドを外しています</Japanese>
             <French>Retrait des électrodes du défibrillateur</French>
+            <Korean>자동심장충격기 패드 떼는 중</Korean>
+            <German>Entferne Defibrillator-Pads</German>
+            <Portuguese>Removendo pás do desfibrilador</Portuguese>
+            <Spanish>Quitando electrodos del desfibrilador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Shock">
             <English>Administer Shock</English>
             <Japanese>ショックを実施</Japanese>
             <French>Délivrer le choc</French>
+            <Korean>쇼크 실시</Korean>
+            <German>Schock verabreichen</German>
+            <Portuguese>Administrar choque</Portuguese>
+            <Spanish>Administrar descarga</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Charge">
             <English>Charge Defibrillator</English>
             <Japanese>除細動器を充電</Japanese>
             <French>Charger le défibrillateur</French>
+            <Korean>자동심장충격기 충전</Korean>
+            <German>Defibrillator aufladen</German>
+            <Portuguese>Carregar desfibrilador</Portuguese>
+            <Spanish>Cargar desfibrilador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
             <Japanese>充電を取り消す</Japanese>
             <French>Annuler la charge du défibrillateur</French>
+            <Korean>충전 취소</Korean>
+            <German>Laden abbrechen</German>
+            <Portuguese>Cancelar carregamento</Portuguese>
+            <Spanish>Cancelar carga</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_ViewMonitor">
             <English>View Monitor</English>
             <Japanese>バイタルモニターを表示</Japanese>
             <French>Visualiser le moniteur</French>
+            <Korean>보니터 보기</Korean>
+            <German>Monitor anzeigen</German>
+            <Portuguese>Ver monitor</Portuguese>
+            <Spanish>Ver monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_ConnectMonitor">
             <English>Connect Vitals Monitor</English>
             <Japanese>バイタルモニターの接続</Japanese>
             <French>Connecter les capteurs de signe vitaux à l'AED-X</French>
+            <Korean>환자감시장치 연결</Korean>
+            <German>Vitalmonitor anschließen</German>
+            <Portuguese>Colocar monitor de sinais vitais</Portuguese>
+            <Spanish>Conectar monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_ConnectMonitor">
             <English>Station: Connect Vitals Monitor</English>
             <Japanese>バイタルモニターの接続(設置)</Japanese>
             <French>Station: Connecter les capteurs de signe vitaux à l'AED-X</French>
+            <Korean>환자감시장치 연결(바닥)</Korean>
+            <German>Station: Vitalmonitor anschließen</German>
+            <Portuguese>Estação: Colocar monitor de sinais vitais</Portuguese>
+            <Spanish>Estación: Conectar monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_ConnectMonitor">
             <English>Vehicle: Connect Vitals Monitor</English>
-            <German>Fahrzeug: AED-X anschließen</German>
+            <German>Fahrzeug: Vitalmonitor anschließen</German>
             <Polish>Pojazd: Podłącz AED-X</Polish>
             <French>Véhicule: Attacher AED-X</French>
-            <Korean>차량: X 시리즈 AED 부착</Korean>
+            <Korean>환자감시장치 연결(차량)</Korean>
             <Turkish>Araç: AED-X'i takın</Turkish>
             <Chinese>车辆。安装AED-X</Chinese>
             <Chinesesimp>载具: 安装AED-X</Chinesesimp>
@@ -1001,7 +1065,7 @@
             <Chinese>移除監控</Chinese>
             <Chinesesimp>移除监控</Chinesesimp>
             <Czech>Odstranit monitorování</Czech>
-            <Korean>모니터링 해제</Korean>
+            <Korean>환자감시장치 해제</Korean>
             <French>Retirer le moniteur</French>
             <Turkish>İzlemeyi kaldır</Turkish>
             <Italian>Rimuovere il monitoraggio</Italian>
@@ -1013,11 +1077,19 @@
             <English>Vitals Monitor Audio ON</English>
             <Japanese>モニター音声オン</Japanese>
             <French>Activer le son des signes vitaux de l'AED-X</French>
+            <Korean>환자감시장치 소리 켜기</Korean>
+            <German>Vitalmonitor-Ton AN</German>
+            <Portuguese>Ativar áudio do monitor de sinais vitais</Portuguese>
+            <Spanish>Activar audio del monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_DisableAudio">
             <English>Vitals Monitor Audio OFF</English>
             <Japanese>モニター音声オフ</Japanese>
             <French>Désactiver le son des signes vitaux de l'AED-X</French>
+            <Korean>환자감시장치 소리 끄기</Korean>
+            <German>Vitalmonitor-Ton AUS</German>
+            <Portuguese>Desativar áudio do monitor de sinais vitais</Portuguese>
+            <Spanish>Desactivar audio del monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_Connecting_Progress">
             <English>Connecting</English>
@@ -1049,7 +1121,7 @@
             <Italian>Scollegando</Italian>
             <Russian>Отключение</Russian>
             <Japanese>切断中</Japanese>
-            <Portuguese>Disconectando</Portuguese>
+            <Portuguese>Desconectando</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_removeSound">
             <English>AED-X Vitals Monitor Audio OFF</English>
@@ -1059,7 +1131,7 @@
             <Chinese>降低AED X音量</Chinese>
             <Chinesesimp>降低AED X音量</Chinesesimp>
             <Czech>Snížit hlasitost AED-X</Czech>
-            <Korean>X-시리즈 AED 소리 끄기</Korean>
+            <Korean>X-시리즈 자동심장충격기 소리 끄기</Korean>
             <French>Réduire le volume du AED-X</French>
             <Turkish>AED X'in sesini kısın</Turkish>
             <Italian>Ridurre il volume del DAE-X</Italian>
@@ -1075,7 +1147,7 @@
             <Chinese>提高AED X音量</Chinese>
             <Chinesesimp>提高AED X音量</Chinesesimp>
             <Czech>Zvýšit hlasitost AED-X</Czech>
-            <Korean>X-시리즈 AED 소리 켜기</Korean>
+            <Korean>X-시리즈 자동심장충격기 소리 켜기</Korean>
             <French>Augmenter le volume du AED-X</French>
             <Turkish>AED X'in sesini arttırın</Turkish>
             <Italian>Aumentare il volume del DAE-X</Italian>
@@ -1123,7 +1195,7 @@
             <Chinese>打開血型相容表</Chinese>
             <Chinesesimp>放置AED</Chinesesimp>
             <Czech>Místo AED</Czech>
-            <Korean>자동제세동기 설치</Korean>
+            <Korean>자동심장충격기 설치</Korean>
             <French>Placer l'AED</French>
             <Turkish>AED'yi yerleştirin</Turkish>
             <Russian>Поместите AED</Russian>
@@ -1135,6 +1207,10 @@
             <English>Place AED-X</English>
             <Japanese>AED-Xを設置</Japanese>
             <French>Placer l'AED-X</French>
+            <Korean>X-시리즈 자동심장충격기 놓기</Korean>
+            <German>Platzieren AED-X</German>
+            <Portuguese>Colocar DEA-X</Portuguese>
+            <Spanish>Colocar DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_PickUpAED">
             <English>Pick Up AED</English>
@@ -1144,7 +1220,7 @@
             <Chinese>打開血型相容表</Chinese>
             <Chinesesimp>捡起AED</Chinesesimp>
             <Czech>Vyzvednout AED</Czech>
-            <Korean>자동제세동기 줍기</Korean>
+            <Korean>자동심장충격기 줍기</Korean>
             <French>Ramasser l'AED</French>
             <Turkish>AED'yi Alın</Turkish>
             <Russian>Самовывоз AED</Russian>
@@ -1156,94 +1232,172 @@
             <English>Pick Up AED-X</English>
             <Japanese>AED-Xを拾う</Japanese>
             <French>Récupérer l'AED-X</French>
+            <Korean>X-시리즈 자동심장충격기 줍기</Korean>
+            <German>Nehme AED-X auf</German>
+            <Portuguese>Recolher DEA-X</Portuguese>
+            <Spanish>Recoger DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ToggleVolume">
             <English>Toggle Volume</English>
             <Japanese>音声オン/オフ</Japanese>
             <French>Modifier le volume</French>
+            <Korean>볼륨 토글</Korean>
+            <German>Lautstärke umschalten</German>
+            <Portuguese>Alternar volume</Portuguese>
+            <Spanish>Cambiar volumen</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_MeasureBloodPressure">
             <English>Measure Blood Pressure</English>
             <Japanese>血圧を測定する</Japanese>
             <French>Mesurer la tension artérielle</French>
+            <Korean>혈압 측정</Korean>
+            <German>Blutdruck messen</German>
+            <Portuguese>Medir pressão arterial</Portuguese>
+            <Spanish>Medir la presión arterial</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CheckPads">
             <English>Check Pads</English>
             <Japanese>ﾊﾟｯﾄﾞを確認してください</Japanese>
             <French>Vérifier les électrodes</French>
+            <Korean>패드를 확인하십시오</Korean>
+            <German>Überprüfe Pads</German>
+            <Portuguese>Verificar pás</Portuguese>
+            <Spanish>Comprobar electrodos</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SHOCKADVISED">
             <English>SHOCK ADVISED</English>
             <Japanese>除細動ｼｮｯｸが必要です</Japanese>
             <French>CHOC CONSEILLÉ</French>
+            <Korean>쇼크 권고</Korean>
+            <German>SCHOCK EMPFOHLEN</German>
+            <Portuguese>CHOQUE ACONSELHADO</Portuguese>
+            <Spanish>DESCARGA RECOMENDADA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_NOSHOCKADVISED">
             <English>NO SHOCK ADVISED</English>
             <Japanese>除細動ｼｮｯｸは不要です</Japanese>
             <French>AUCUN CHOC CONSEILLÉ</French>
+            <Korean>비-쇼크 권고</Korean>
+            <German>KEIN SCHOCK EMPFOHLEN</German>
+            <Portuguese>CHOQUE NÃO ACONSELHADO</Portuguese>
+            <Spanish>DESCARGA NO RECOMENDADA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ANALYZINGEKG">
             <English>ANALYZING ECG</English>
             <Japanese>ECG解析中</Japanese>
             <French>ANALYSE DE L'ECG</French>
+            <Korean>심전도 측정 중</Korean>
+            <German>EKG-ANALYSE</German>
+            <Portuguese>ANALISANDO ECG</Portuguese>
+            <Spanish>ANALIZANDO ECG</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGED">
             <English>CHARGED</English>
             <Japanese>充電完了</Japanese>
-            <French>CHARGE</French>
+            <French>CHARGÉ</French>
+            <Korean>충전 완료</Korean>
+            <German>CHARGED</German>
+            <Portuguese>CARREGADO</Portuguese>
+            <Spanish>CARGADO</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGING">
             <English>CHARGING</English>
             <Japanese>充電中</Japanese>
             <French>MISE EN CHARGE</French>
+            <Korean>충전 중</Korean>
+            <German>LADE</German>
+            <Portuguese>CARREGANDO</Portuguese>
+            <Spanish>CARGANDO</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_AED_DISARMED">
             <English>AED DISARMED</English>
             <Japanese>除細動器内部放電</Japanese>
-            <French>AED désarmé</French>
+            <French>AED DÉSARMÉ</French>
+            <Korean>자동심장충격기 방전됨</Korean>
+            <German>AED DEAKTIVIERT</German>
+            <Portuguese>AED DESARMADO</Portuguese>
+            <Spanish>DEA DESARMADO</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DISARMED">
             <English>DISARMED</English>
             <Japanese>内部放電</Japanese>
-            <French>DESARME</French>
+            <French>DESARMÉ</French>
+            <Korean>방전됨</Korean>
+            <German>DEAKTIVIERT</German>
+            <Portuguese>DESARMADO</Portuguese>
+            <Spanish>DESARMADO</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DeliveredEnergy">
             <English>Delivered Energy</English>
             <Japanese>ｼｮｯｸ実施</Japanese>
             <French>Choc délivré</French>
+            <Korean>전달된 에너지</Korean>
+            <German>Gelieferte Energie</German>
+            <Portuguese>Choque realizado</Portuguese>
+            <Spanish>Energía suministrada</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
             <Japanese>ｼｮｯｸ実施</Japanese>
-            <French>CHOC DELIVRE</French>
+            <French>CHOC DELIVRÉ</French>
+            <Korean>에너지 전달 완료</Korean>
+            <German>GELIEFERTE ENERGIE</German>
+            <Portuguese>CHOQUE REALIZADO</Portuguese>
+            <Spanish>ENERGÍA SUMINISTRADA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_StandClear">
             <English>Stand Clear</English>
             <Japanese>患者に触れないでください</Japanese>
             <French>Ne touchez pas le patient</French>
+            <Korean>환자로부터 물러나십시오</Korean>
+            <German>Abstand halten</German>
+            <Portuguese>Afaste-se do paciente</Portuguese>
+            <Spanish>Mantenerse alejado</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PerformCPR">
             <English>Perform CPR</English>
             <Japanese>CPRを行ってください</Japanese>
             <French>Effectuer une RCP</French>
+            <Korean>심폐소생술 실시</Korean>
+            <German>Führen Sie eine HLW durch</German>
+            <Portuguese>Realize RCP</Portuguese>
+            <Spanish>Realizar RCP</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PUSHSHOCK">
             <English>PUSH SHOCK</English>
             <Japanese>ｼｮｯｸﾎﾞﾀﾝを押します</Japanese>
             <French>DELIVRER LE CHOC</French>
+            <Korean>전기충격 버튼 누르기</Korean>
+            <German>DRÜCKE SCHOCK</German>
+            <Portuguese>REALIZAR CHOQUE</Portuguese>
+            <Spanish>PULSAR DESCARGA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PushAnalyze">
             <English>Push Analyze</English>
             <Japanese>解析ﾎﾞﾀﾝを押します</Japanese>
             <French>Lancer l'analyse</French>
+            <Korean>분석 버튼 누르기</Korean>
+            <German>Drücke Analysieren</German>
+            <Portuguese>Realizar análise</Portuguese>
+            <Spanish>Pulsar Analizar</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_HR">
             <English>HR</English>
-            <French>FC</French>
+            <French>HR</French>
+            <Korean>심박수</Korean>
+            <Japanese>HR</Japanese>
+            <German>HR</German>
+            <Portuguese>FC</Portuguese>
+            <Spanish>RC</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PR">
             <English>PR</English>
-            <French>FP</French>
+            <French>PR</French>
+            <Korean>맥박</Korean>
+            <Japanese>PR</Japanese>
+            <German>PR</German>
+            <Portuguese>FP</Portuguese>
+            <Spanish>PS</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -1287,6 +1441,7 @@
             <German>Blutgruppen Zugehörigkeit</German>
             <Czech>Přirazení Krevní Skupiny</Czech>
             <Italian>Assegnazione del gruppo sanguigno</Italian>
+            <Portuguese>Atribuição de tipo sanguíneo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_DESC">
             <English>Sets how players' blood type is assigned: \nPlayer chosen: Player chooses their own blood type \nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning \nRandom: Blood type is random each respawn \nRandom (on join): Blood type is random, but doesn't change upon respawning \nSteamID: Blood type is decided based on player's steamID \nSteamID (custom list): Blood type is decided based on player's steamID and custom list</English>
@@ -1298,6 +1453,7 @@
             <German>Legt fest, wie die Blutgruppe des Spielers zugewiesen wird: \nSpieler gewählt: Der Spieler wählt seine eigene Blutgruppe \nSpieler gewählt (erzwungen): Der Spieler wählt seine eigene Blutgruppe, aber sie ändert sich beim Respawn nicht \nZufällig: Die Blutgruppe ist bei jedem Respawn zufällig \nZufällig (beim Beitritt): Die Blutgruppe ist zufällig, ändert sich aber beim Respawn nicht \nSteamID: Die Blutgruppe wird basierend auf der SteamID des Spielers festgelegt \nSteamID (benutzerdefinierte Liste): Die Blutgruppe wird basierend auf der SteamID und der benutzerdefinierten Liste des Spielers festgelegt</German>
             <Czech>Nastavuje, jak se hráčům přiřadí Krevní Skupina:n\Vybráno hráčem: Hráč si sám zvolí svou Krevní Skupinu \nVybráno hráčem (vynuceno): Hráč si sám zvolí svou krevní skupinu, která se při respawnutí nemění \nNáhodně: Krevní Skupina se přiřadí náhodně při každém respawnu \nNáhodně (při připojení): Krevní Skupina se přiřadí náhodně, ale nemění se při respawnu \nSteamID: Krevní Skupina se přiřadí na základě hráčovo SteamID \nSteamID (vlastní seznam): Krevní Skupina se přiřadí na základě hráčovo SteamID a vlastního seznamu</Czech>
             <Italian>Imposta la modalità di assegnazione del gruppo sanguigno dei giocatori: \nGiocatore scelto: il giocatore sceglie il proprio gruppo sanguigno \nGiocatore scelto (obbligato): il giocatore sceglie il proprio gruppo sanguigno, ma non cambia al momento del respawn \nCasuale: il gruppo sanguigno è casuale a ogni respawn \nCasuale (all'accesso): il gruppo sanguigno è casuale, ma non cambia al momento del respawn \nSteamID: il gruppo sanguigno viene deciso in base allo SteamID del giocatore \nSteamID (elenco personalizzato): il gruppo sanguigno viene deciso in base allo SteamID del giocatore e all'elenco personalizzato</Italian>
+            <Portuguese>Define como o tipo sanguíneo dos jogadores é atribuído: \nEscolha do jogador: o jogador escolhe seu próprio tipo sanguíneo \nEscolha do jogador (forçado): o jogador escolhe seu próprio tipo sanguíneo, mas ele não muda ao renascer \nAleatório: o tipo sanguíneo é aleatório a cada renascimento \nAleatório (ao entrar): O tipo sanguíneo é aleatório, mas não muda ao renascer \nSteamID: O tipo sanguíneo é decidido com base no steamID do jogador \nSteamID (lista personalizada): O tipo sanguíneo é decidido com base no steamID do jogador e na lista personalizada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player">
             <English>Player chosen</English>
@@ -1309,6 +1465,7 @@
             <German>Spieler gewählt</German>
             <Czech>Vybráno hráčem</Czech>
             <Italian>Giocatore scelto</Italian>
+            <Portuguese>Escolha do jogador</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player_forced">
             <English>Player chosen (forced)</English>
@@ -1320,6 +1477,7 @@
             <German>Spieler gewählt (erzwungen)</German>
             <Czech>Vybráno hráčem (vynuceno)</Czech>
             <Italian>Giocatore scelto (obbligato)</Italian>
+            <Portuguese>Escolha do jogador (forçado)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random">
             <English>Random</English>
@@ -1331,6 +1489,7 @@
             <German>Zufällig</German>
             <Czech>Náhodně</Czech>
             <Italian>Casuale</Italian>
+            <Portuguese>Aleatório</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random_onJoin">
             <English>Random (on join)</English>
@@ -1342,6 +1501,7 @@
             <German>Zufällig (beim Beitritt)</German>
             <Czech>Náhodně (při připojení)</Czech>
             <Italian>Casuale (all'accesso)</Italian>
+            <Portuguese>Aleatório (ao entrar)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid">
             <English>SteamID</English>
@@ -1353,6 +1513,7 @@
             <German>SteamID</German>
             <Czech>SteamID</Czech>
             <Italian>SteamID</Italian>
+            <Portuguese>SteamID</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid_custom">
             <English>SteamID (custom list)</English>
@@ -1364,6 +1525,7 @@
             <German>SteamID (benutzerdefinierte Liste)</German>
             <Czech>SteamID (vlastní seznam)</Czech>
             <Italian>SteamID (elenco personalizzato)</Italian>
+            <Portuguese>SteamID (lista personalizada)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted">
             <English>Weighted Randomizer</English>
@@ -1375,6 +1537,7 @@
             <German>Blutgruppen seltenheits Randomizer</German>
             <Czech>Vážený Randomizér</Czech>
             <Italian>Randomizzatore ponderato</Italian>
+            <Portuguese>Aleatoriedade ponderada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted_DESC">
             <English>Sets if random blood type given will be weighted according to blood type commonness</English>
@@ -1386,6 +1549,7 @@
             <German>Legt fest, ob zufällige Blutgruppen, die vergeben werden, unter Einfluss der Seltenheit von bestimmten Blutgruppen stehen sollen.</German>
             <Czech>Nastavuje, zda náhodně přiřazená krevní skupina bude vážena podle běžnosti krevních skupiny</Czech>
             <Italian>Imposta se il gruppo sanguigno casuale dato sarà ponderato in base alla comunanza del gruppo sanguigno</Italian>
+            <Portuguese>Define se o tipo sanguíneo dado aleatoriamente será ponderado de acordo com as estatísticas reais</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player">
             <English>Blood group</English>
@@ -1413,6 +1577,7 @@
             <German>Benutzerdefinierte Blutgruppenliste</German>
             <Czech>Vlastní Seznam Krevních Skupin</Czech>
             <Italian>Elenco personalizzato dei gruppi sanguigni</Italian>
+            <Portuguese>Lista personalizada de tipo sanguíneo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list_DESC">
             <English>Sets blood types that will be assigned to players based on their SteamID \nBlood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
@@ -1424,6 +1589,7 @@
             <German>Legt Blutgruppen fest, die Spielern basierend auf ihrer SteamID zugewiesen werden \nBlutgruppen werden durch ein Komma (",") getrennt, die Liste sollte insgesamt 10 Blutgruppen enthalten</German>
             <Czech>Nastavuje krevní skupiny které budou přiřazeny hráčům podle jejich SteamID \nKrevní Skupiny jsou oddělené čárkou (","), seznam by měl obsahovat celkem 10 Krevních Skupin</Czech>
             <Italian>Imposta i gruppi sanguigni che verranno assegnati ai giocatori in base al loro SteamID \nI gruppi sanguigni sono separati da una virgola (","), l'elenco deve contenere un totale di 10 gruppi sanguigni</Italian>
+            <Portuguese>Define os tipos sanguíneos que serão atribuídos aos jogadores com base no seu SteamID \nOs tipos sanguíneos são separados por vírgulas (","), a lista deve conter um total de 10 tipos sanguíneos</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -1433,7 +1599,7 @@
             <Polish>Miejsca użycia AED</Polish>
             <Spanish>Ubicación del DEA</Spanish>
             <Czech>Oblasti pro AED</Czech>
-            <Korean>자동제세동기 배치</Korean>
+            <Korean>자동심장충격기 배치</Korean>
             <French>Lieux de l'AED</French>
             <Turkish>AED Konumları</Turkish>
             <Russian>Места для AED</Russian>
@@ -1449,7 +1615,7 @@
             <Polish>Gdzie można użyć AED?</Polish>
             <Spanish>¿Dónde se puede usar el DEA?</Spanish>
             <Czech>Kde může být AED použito?</Czech>
-            <Korean>자동제세동기가 어디에 사용되겠나요?</Korean>
+            <Korean>자동심장충격기가 어디에 사용되겠나요?</Korean>
             <French>Où l'AED peut être utilisé?</French>
             <Turkish>AED nerede kullanılabilir?</Turkish>
             <Russian>Где можно использовать AED?</Russian>
@@ -1461,11 +1627,19 @@
             <English>AED</English>
             <Japanese>AED</Japanese>
             <French>AED</French>
+            <Korean>자동심장충격기</Korean>
+            <German>AED</German>
+            <Portuguese>DEA</Portuguese>
+            <Spanish>DEA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X">
             <English>AED-X</English>
             <Japanese>AED-X</Japanese>
             <French>AED-X</French>
+            <Korean>X-시리즈 자동심장충격기</Korean>
+            <German>AED-X</German>
+            <Portuguese>DEA-X</Portuguese>
+            <Spanish>DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_DISPLAYNAME">
             <English>Automated External Defibrillator</English>
@@ -1475,7 +1649,7 @@
             <Polish>Automatyczny Defibrylator Zewnętrzny</Polish>
             <Spanish>Desfibrilador Externo Automático</Spanish>
             <Czech>Automatický Externí Defibrilátor</Czech>
-            <Korean>자동제세동기</Korean>
+            <Korean>자동심장충격기</Korean>
             <French>Défibrillateur Automatisé Externe</French>
             <Turkish>Otomatik eksternal defibrilatör</Turkish>
             <Italian>Defibrillatore Automatico Esterno</Italian>
@@ -1503,79 +1677,103 @@
             <English>%1 administered shock (%2)</English>
             <Japanese>%1 はショックを実施した (%2)</Japanese>
             <French>%1 a administré un choc (%2)</French>
+            <Korean>%1이(가) 쇼크를 실시했습니다 (%2)</Korean>
+            <German>%1 verabreichte Schock (%2)</German>
+            <Portuguese>%1 aplicou choque (%2)</Portuguese>
+            <Spanish>%1 administró una descarga (%2)</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
             <Japanese>%1 は除細動器パッドを装着した (%2)</Japanese>
-            <French>%1 a connecté des électrodes du défibrillateur (%2)</French>
+            <French>%1 a connecté les électrodes du défibrillateur (%2)</French>
+            <Korean>%1이(가) 심장충격기의 패드를 붙였습니다 (%2)</Korean>
+            <German>%1 hat Defibrillator-Pads befestigt (%2)</German>
+            <Portuguese>%1 conectou as pás do desfibrilador (%2)</Portuguese>
+            <Spanish>%1 colocó los electrodos del desfibrilador (%2)</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_RemovePads">
             <English>%1 removed defibrillator pads</English>
             <Japanese>%1 は除細動器パッドを取り外した</Japanese>
             <French>%1 a retiré les électrodes du défibrillateur</French>
+            <Korean>%1이(가) 심장충격기 패드를 떼어냈습니다</Korean>
+            <German>%1 hat Defibrillator-Pads entfernt</German>
+            <Portuguese>%1 removeu as pás do desfibrilador</Portuguese>
+            <Spanish>%1 quitó los electrodos del desfibrilador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_ConnectVitalsMonitor">
             <English>%1 connected vitals monitor</English>
             <Japanese>%1 はバイタルモニターを接続しました</Japanese>
             <French>%1 a connecté les capteurs de signes vitaux</French>
+            <Korean>%1이(가) 환자감시장치를 연결했습니다</Korean>
+            <German>%1 hat Vitalmonitor angeschlossen</German>
+            <Portuguese>%1 conectou o monitor de sinais vitais</Portuguese>
+            <Spanish>%1 conectó el monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_DisconnectVitalsMonitor">
             <English>%1 disconnected vitals monitor</English>
             <Japanese>%1 はバイタルモニターを切断しました</Japanese>
             <French>%1 a déconnecté les capteurs de signes vitaux</French>
+            <Korean>%1이(가) 환자감시장치를 해제했습니다</Korean>
+            <German>%1 hat Vitalmonitor entfernt</German>
+            <Portuguese>%1 desconectou o monitor de sinais vitais</Portuguese>
+            <Spanish>%1 desconectó el monitor</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_PatientDisconnected">
             <English>Patient Disconnected</English>
             <Japanese>患者から切断されました</Japanese>
             <French>Patient déconnecté</French>
+            <Korean>환자에게서 떼어졌습니다</Korean>
+            <German>Patient getrennt</German>
+            <Portuguese>Paciente desconectado</Portuguese>
+            <Spanish>Paciente desconectado</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MaxChance">
             <English>Max Success chance for AED-X</English>
             <Italian>Massima probabilità di successo per DAE-X</Italian>
             <Czech>Max šance úspěchu pro AED-X</Czech>
             <French>Chance maximale de succès de l'AED-X</French>
-            <Korean>X-시리즈 AED의 최대 성공 확률</Korean>
+            <Korean>X-시리즈 자동심장충격기의 최대 성공 확률</Korean>
             <German>Maximale Erfolgschance für den AED-X</German>
             <Japanese>AED-Xの最大成功率</Japanese>
             <Spanish>Probabilidad máxima de éxito para el DEA-X</Spanish>
             <Polish>Maksymalna szansa na sukces dla AED-X</Polish>
-            <Portuguese>Probabilidade máxima de sucesso para DEA-X</Portuguese>
+            <Portuguese>Probabilidade máxima de sucesso do DEA-X</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_MaxChance">
             <English>Max Success chance for AED</English>
             <Italian>Massima probabilità di successo per DAE</Italian>
             <Czech>Max šance úspěchu pro AED</Czech>
             <French>Chance maximale de succès de l'AED</French>
-            <Korean>자동제세동기의 최대 성공 확률</Korean>
+            <Korean>자동심장충격기의 최대 성공 확률</Korean>
             <German>Maximale Erfolgschance für den AED</German>
             <Japanese>AEDの最大成功率</Japanese>
             <Spanish>Probabilidad máxima de éxito para el DEA</Spanish>
             <Polish>Maksymalna szansa na sukces dla AED</Polish>
-            <Portuguese>Probabilidade máxima de sucesso para DEA</Portuguese>
+            <Portuguese>Probabilidade máxima de sucesso do DEA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MinChance">
             <English>Min Success chance for AED-X</English>
             <Italian>Minima probabilità di successo per DAE-X</Italian>
             <Czech>Min šance úspěchu pro AED-X</Czech>
             <French>Chance minimale de succès de l'AED-X</French>
-            <Korean>X-시리즈 AED의 최소 성공 확률</Korean>
+            <Korean>X-시리즈 자동심장충격기의 최소 성공 확률</Korean>
             <German>Minimale Erfolgschance für den AED-X</German>
             <Japanese>AED-Xの最小成功確率</Japanese>
             <Spanish>Probabilidad mínima de éxito para el DEA-X</Spanish>
             <Polish>Minimalna szansa na sukces dla AED-X</Polish>
-            <Portuguese>Probabilidade mínima de sucesso para DEA-X</Portuguese>
+            <Portuguese>Probabilidade mínima de sucesso do DEA-X</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_MinChance">
             <English>Min Success chance for AED</English>
             <Italian>Minima probabilità di successo per DAE</Italian>
             <Czech>Min šance úspěchu pro AED</Czech>
             <French>Chance minimale de succès de l'AED</French>
-            <Korean>자동제세동기의 최소 성공 확률</Korean>
+            <Korean>자동심장충격기의 최소 성공 확률</Korean>
             <German>Minimale Erfolgschance für den AED</German>
             <Japanese>AEDの最小成功確率</Japanese>
             <Spanish>Probabilidad mínima de éxito para el DEA</Spanish>
             <Polish>Minimalna szansa na sukces dla AED</Polish>
-            <Portuguese>Probabilidade mínima de sucesso para DEA</Portuguese>
+            <Portuguese>Probabilidade mínima de sucesso do DEA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_ALLOW_AED">
             <English>Allow AED</English>
@@ -1617,7 +1815,7 @@
             <Chinese>允許AED-X</Chinese>
             <Chinesesimp>允许AED-X</Chinesesimp>
             <Czech>Povolit AED-X</Czech>
-            <Korean>X-시리즈 AED 허용</Korean>
+            <Korean>X-시리즈 자동심장충격기 허용</Korean>
             <French>Autoriser l'AED-X</French>
             <Turkish>AED-X'e izin ver</Turkish>
             <Russian>Разрешить AED-X</Russian>
@@ -1633,7 +1831,7 @@
             <Chinese>使用AED-X所需的培訓水平</Chinese>
             <Chinesesimp>使用AED-X的医疗培训水平</Chinesesimp>
             <Czech>Úroveň výcviku nutná k použití AED-X</Czech>
-            <Korean>X-시리즈 AED를 사용하기 위해 필요한 의료레벨 수준</Korean>
+            <Korean>X-시리즈 자동심장충격기를 사용하기 위해 필요한 의료레벨 수준</Korean>
             <French>Niveau de d'entrainement pour utiliser un AED-X</French>
             <Turkish>AED-X kullanmak için gerekli eğitim seviyesi</Turkish>
             <Russian>Уровень подготовки, необходимый для использования AED-X</Russian>
@@ -1645,36 +1843,64 @@
             <English>Allow AED/X Station Interaction</English>
             <Japanese>設置したAED/Xの許可</Japanese>
             <French>Autoriser l'interaction avec la station AED-X</French>
+            <Korean>심장충격기 종류 바닥 설치 상호작용 허용</Korean>
+            <German>AED/X-Station-Interaktion zulassen</German>
+            <Portuguese>Permitir interação com a estação DEA-X</Portuguese>
+            <Spanish>Permitir la interacción con la estación de DEA/X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
             <English>Medical level required to pick up/interact with placed AED/X station</English>
             <Japanese>設置されたAED/Xの取得/使用に訓練レベルを必要とさせます。</Japanese>
             <French>Niveau médical requis pour récupérer/interagir avec la station AED-X placée</French>
+            <Korean>심장충격기 종류를 바닥에 설치하거나 줍는 상호작용을 하는 데 필요한 의료레벨 수준</Korean>
+            <German>Benötigter medizinischer Grad, zum Aufnehmen/Interagieren mit der platzierten AED/X-Station</German>
+            <Portuguese>Nível médico necessário para pegar/interagir com a estação DEA-X colocada</Portuguese>
+            <Spanish>Nivel médico requerido para recoger/interactuar con una estación de DEA/X colocada</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
             <Japanese>AED-Xモニターの装着時間</Japanese>
             <French>Temps pour attacher les capteurs des signes vitaux à l'AED-X</French>
+            <Korean>X-시리즈 자동심장충격기의 환자감시장치 부착 시간</Korean>
+            <German>Zeit zum Anbringen des AED-X Vitalmonitors</German>
+            <Portuguese>Tempo para conectar o monitor de sinais vitais do DEA-X</Portuguese>
+            <Spanish>Tiempo para colocar el monitor DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime">
             <English>Detach AED-X Vitals Monitor Time</English>
             <Japanese>AED-Xモニターの取り外し時間</Japanese>
             <French>Temps pour détacher les capteurs des signes vitaux à l'AED-X</French>
+            <Korean>X-시리즈 자동심장충격기의 환자감시장치 해제 시간</Korean>
+            <German>Zeit zum Entfernen des AED-X Vitalmonitors</German>
+            <Portuguese>Tempo para desconectar o monitor de sinais vitais do DEA-X</Portuguese>
+            <Spanish>Tiempo para retirar el monitor AED-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime">
             <English>Attach Defibrillator Pads Time</English>
             <Japanese>除細動器パッドの装着時間</Japanese>
             <French>Temps pour attacher les électrodes du défibrillateur</French>
+            <Korean>심장충격기 패드 부착 시간</Korean>
+            <German>Zeit zum Anbringen der Defibrillator Pads</German>
+            <Portuguese>Tempo para conectar as pás do desfibrilador</Portuguese>
+            <Spanish>Tiempo para colocar los electrodos del desfibrilador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime">
             <English>Detach Defibrillator Pads Time</English>
             <Japanese>除細動器パッドの取り外し時間</Japanese>
             <French>Temps pour détacher les électrodes du défibrillateur</French>
+            <Korean>심장충격기 패드 해제 시간</Korean>
+            <German>Zeit zum Entfernen der Defibrillator Pads</German>
+            <Portuguese>Tempo para desconectar as pás do desfibrilador</Portuguese>
+            <Spanish>Tiempo para quitar los electrodos del desfibrilador</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit">
             <English>Distance limit for defibrillators in meters</English>
             <Japanese>除細動器の制限距離 (メートル)</Japanese>
-            <French>La distance limite du défibrillateur (mètres)</French>
+            <French>Distance limite du défibrillateur (mètres)</French>
+            <Korean>심장충격기 거리 제한 (m 단위)</Korean>
+            <German>Distanzbegrenzung für Defibrillatoren in Metern</German>
+            <Portuguese>Limite de distância para desfibriladores em metros</Portuguese>
+            <Spanish>Límite de distancia para los desfibriladores en metros</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -1690,7 +1916,7 @@
             <Italian>Attivare diverse possibilità di riuscita della RCP per livello medico</Italian>
             <Russian>Включить разные шансы СЛР для каждого медицинского уровня</Russian>
             <Japanese>訓練レベルごとにCPRの成功率を変更する</Japanese>
-            <Portuguese>Habilite diferentes chances de SBV por nível médico</Portuguese>
+            <Portuguese>Habilite diferentes chances de RCP por nível médico</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Doctor">
             <English>Max CPR Chance for Doctors</English>
@@ -1703,7 +1929,7 @@
             <Chinesesimp>医生的最大心肺复苏几率</Chinesesimp>
             <Japanese>医師の最大CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa max. de RCP para doctores</Spanish>
-            <Portuguese>Probabilidade máxima de êxito de SBV para doutores</Portuguese>
+            <Portuguese>Probabilidade máxima de êxito de RCP para doutores</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
@@ -1716,7 +1942,7 @@
             <Chinesesimp>军医的最大心肺复苏几率</Chinesesimp>
             <Japanese>衛生兵の最大CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa max. de RCP para médicos</Spanish>
-            <Portuguese>Probabilidade máxima de êxito de SBV para médicos</Portuguese>
+            <Portuguese>Probabilidade máxima de êxito de RCP para médicos</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -1729,7 +1955,7 @@
             <Chinesesimp>默认的最大心肺复苏几率</Chinesesimp>
             <Japanese>一般兵の最大CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa max. de RCP para el resto</Spanish>
-            <Portuguese>Probabilidade máxima de êxito de SBV para não-médicos</Portuguese>
+            <Portuguese>Probabilidade máxima de êxito de RCP para não-médicos</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Doctor">
             <English>Min CPR Chance for Doctors</English>
@@ -1742,7 +1968,7 @@
             <Chinesesimp>医生的最小心肺复苏几率</Chinesesimp>
             <Japanese>医師の最小CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa min. de RCP para doctores</Spanish>
-            <Portuguese>Probabilidade mínima de êxito de SBV para doutores</Portuguese>
+            <Portuguese>Probabilidade mínima de êxito de RCP para doutores</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
@@ -1755,7 +1981,7 @@
             <Chinesesimp>军医的最小心肺复苏几率</Chinesesimp>
             <Japanese>衛生兵の最小CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa min. de RCP para médicos</Spanish>
-            <Portuguese>Probabilidade mínima de êxito de SBV para médicos</Portuguese>
+            <Portuguese>Probabilidade mínima de êxito de RCP para médicos</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Default">
             <English>Min CPR Chance for Default</English>
@@ -1768,32 +1994,52 @@
             <Chinesesimp>默认的最小心肺复苏几率</Chinesesimp>
             <Japanese>一般兵の最小CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa min. de RCP para el resto</Spanish>
-            <Portuguese>Probabilidade mínima de êxito de SBV para não-médicos</Portuguese>
+            <Portuguese>Probabilidade mínima de êxito de RCP para não-médicos</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval">
             <English>CPR Chance Interval</English>
             <Japanese>CPR実施間隔</Japanese>
             <French>Intervalle de chance de RCP</French>
+            <Korean>심폐소생술 실시 간격</Korean>
+            <German>HLW-Chance-Intervall</German>
+            <Portuguese>Intervalo de chance de RCP</Portuguese>
+            <Spanish>Intervalo de probabilidad de RCP</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod">
             <English>Oxygenation Period</English>
             <Japanese>酸素供給期間</Japanese>
             <French>Période d'oxygénation</French>
+            <Korean>산소 공급 시간</Korean>
+            <German>Sauerstoffanreicherungszeitraum</German>
+            <Portuguese>Período de oxigenação</Portuguese>
+            <Spanish>Período de oxigenación</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_CPR">
             <English>%1 performed CPR (%2)</English>
             <Japanese>%1 はCPRを行いました (%2)</Japanese>
-            <French>%1 a effectué le RCP (%2)</French>
+            <French>%1 a effectué la RCP (%2)</French>
+            <Korean>%1이(가) 심폐소생술을 수행하였습니다 (%2)</Korean>
+            <German>%1 hat HLW durchgeführt (%2)</German>
+            <Portuguese>%1 realizou RCP (%2)</Portuguese>
+            <Spanish>%1 realizó RCP (%2)</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_StopCPR">
             <English>Stop CPR</English>
             <Japanese>CPRをやめる</Japanese>
             <French>Arrêter la RCP</French>
+            <Korean>심폐소생술 중지</Korean>
+            <German>HLW Stoppen</German>
+            <Portuguese>Interromper RCP</Portuguese>
+            <Spanish>RCP parado</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
             <Japanese>CPRを中止しました</Japanese>
             <French>RCP annulée</French>
+            <Korean>심폐소생술 취소함</Korean>
+            <German>HLW Gestoppt</German>
+            <Portuguese>RCP cancelada</Portuguese>
+            <Spanish>RCP cancelado</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -2006,7 +2252,7 @@
             <Czech>Nastavení AED + AED-X</Czech>
             <French>Paramètres de l'AED + AED-X</French>
             <Polish>Ustawienia dla AED + AED-X</Polish>
-            <Korean>자동제세동기 + X-시리즈 AED 설정</Korean>
+            <Korean>자동심장충격기 + X-시리즈 자동심장충격기 설정</Korean>
             <German>AED und AED-X Einstellungen</German>
             <Chinesesimp>AED和AED-X设置</Chinesesimp>
             <Japanese>AEDとAED-X設定</Japanese>
@@ -2024,67 +2270,115 @@
             <Chinesesimp>CPR设置</Chinesesimp>
             <Japanese>CPR設定</Japanese>
             <Spanish>Parámetros del RCP</Spanish>
-            <Portuguese>Configurações de SBV</Portuguese>
+            <Portuguese>Configurações de RCP</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_AdvRhythms">
             <English>Advanced Rhythms</English>
-            <Japanese>高度な心電図波形</Japanese>
+            <Japanese>高度な心調律</Japanese>
             <French>Rythmes avancés</French>
+            <Korean>고급 리듬</Korean>
+            <German>Fortgeschrittene Rhythmen</German>
+            <Portuguese>Ritmos avançados</Portuguese>
+            <Spanish>Ritmos avanzados</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate">
             <English>Can Deteriorate</English>
-            <Japanese>心機能低下の可能性</Japanese>
-            <French>Possibilité de diminution de la fonction cardiaque</French>
+            <Japanese>調律状態悪化の可能性</Japanese>
+            <French>Possibilité de détérioration de la fonction cardiaque</French>
+            <Korean>심장기능이 악화될 수 있음</Korean>
+            <German>Kann sich verschlechtern</German>
+            <Portuguese>Pode deteriorar</Portuguese>
+            <Spanish>Puede deteriorarse</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeMax">
             <English>Random Deteriorate Time Maximum</English>
-            <Japanese>心機能低下するランダムな時間の最大値</Japanese>
-            <French>Délai aléatoire maximum jusqu'à l'arrêt cardiaque</French>
+            <Japanese>調律状態悪化するランダムな時間の最大値</Japanese>
+            <French>Délai aléatoire maximum de détérioration de la fonction cardiaque</French>
+            <Korean>심장기능 무작위 악화 시간 최대값</Korean>
+            <German>Maximale zufällige Verschlechterungszeit</German>
+            <Portuguese>Tempo máximo de deterioração aleatória</Portuguese>
+            <Spanish>Tiempo aleatorio maximo para deterioro</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeWeight">
             <English>Random Deteriorate Time Weight</English>
-            <Japanese>心機能低下するランダムな時間の重みづけ</Japanese>
+            <Japanese>調律状態悪化するランダムな時間の重みづけ</Japanese>
             <French>Poids temporel de la détérioration de la fonction cardiaque</French>
+            <Korean>심장기능 무작위 악화 시간 가중치</Korean>
+            <German>Zeitgewichtung der zufälligen Verschlechterung</German>
+            <Portuguese>Peso de tempo de deterioração aleatória</Portuguese>
+            <Spanish>Tiempo aleatorio para deterioro</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateAfterTreatment">
             <English>Deteriorate After Treatment</English>
-            <Japanese>治療後の心機能低下</Japanese>
-            <French>Diminution de la fonction cardiaque après le traitement</French>
+            <Japanese>治療後の調律状態悪化</Japanese>
+            <French>Détérioration de la fonction cardiaque après le traitement</French>
+            <Korean>심장기능 치료 후 악화</Korean>
+            <German>Verschlechterung nach der Behandlung</German>
+            <Portuguese>Deteriorar após o tratamento</Portuguese>
+            <Spanish>Deterioro tras tratamiento</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAChance">
             <English>PEA Chance</English>
             <Japanese>無脈性電気活動(PEA)確率</Japanese>
             <French>Chance d'activité électrique sans impulsion (PEA)</French>
+            <Korean>무맥박 전기활동(PEA) 확률</Korean>
+            <German>Chance für Pulslose elektrische Aktivität (PEA)</German>
+            <Portuguese>Chance de Atividade Elétrica Sem Pulso (AESP)</Portuguese>
+            <Spanish>Probabilidad de AESP</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
             <English>VT Chance</English>
             <Japanese>心室頻拍(VT)確率</Japanese>
             <French>Chance de tachycardie ventriculaire (TV)</French>
+            <Korean>심실빈맥(VT) 확률</Korean>
+            <German>Chance für eine ventrikuläre Tachykardie (VT)</German>
+            <Portuguese>Chance de Taquicardia Ventricular (TV)</Portuguese>
+            <Spanish>Probabilidad de TV</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_asystoleBloodlossThreshold">
-            <English>Asystole Bloodloss Threshold</English>
+            <English>Asystole blood loss threshold</English>
             <Japanese>心静止時の失血しきい値</Japanese>
             <French>Seuil de perte de sang en cas d'asystolie</French>
+            <Korean>심정지 중 출혈 한계값</Korean>
+            <German>Asystolie-Blutverlustschwelle</German>
+            <Portuguese>Perda sanguínea que resulta em assistolia</Portuguese>
+            <Spanish>Umbral de pérdida de sangre para la asistolia</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_CPR_ROSC_Chance">
             <English>ROSC After CPR Chance</English>
             <Japanese>CPR後の心拍再開の確率</Japanese>
-            <French>Chance d'arrêt cardiaque après RCP</French>
+            <French>Chance de retour en ciculation spontannée après RCP</French>
+            <Korean>심폐소생술 후 자가회복 확률</Korean>
+            <German>Chance für ROSC nach HLW (Rückkehr des spontanen Kreislaufs)</German>
+            <Portuguese>Chance de retorno da circulação espontânea após RCP</Portuguese>
+            <Spanish>Probabilidad de RCE después desfibrilar con DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_AED_ROSC_Chance">
             <English>ROSC After AED Chance</English>
             <Japanese>AED後の心拍再開の確率</Japanese>
-            <French>Chance d'arrêt cardiaque après un DEA</French>
+            <French>Chance de rretour en ciculation spontannée après AED</French>
+            <Korean>심장충격기 사용 후 자가회복 확률</Korean>
+            <German>Chance für ROSC nach AED (Rückkehr des spontanen Kreislaufs)</German>
+            <Portuguese>Chance de retorno da circulação espontânea após DEA</Portuguese>
+            <Spanish>Probabilidad de RCE después desfibrilar con DEA</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
-            <Japanese>ハードコア心電図波形</Japanese>
+            <Japanese>ハードコア心調律</Japanese>
             <French>Rythmes cardiaques intenses</French>
+            <Korean>하드코어 리듬</Korean>
+            <German>Hardcore-Rhythmen</German>
+            <Portuguese>Ritmos cardíacos do modo hardcore</Portuguese>
+            <Spanish>Ritmos en modo avanzado</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_hardcoreDeteriorationChance">
             <English>Hardcore Deterioration Chance</English>
-            <Japanese>ハードコア心機能低下確率</Japanese>
-            <French>Chance de rythmes cardiaques intenses</French>
+            <Japanese>ハードコア調律状態悪化</Japanese>
+            <French>Chance de détérioration intense</French>
+            <Korean>하드코어 심장기능 악화 확률</Korean>
+            <German>Hardcore-Verschlechterungschance</German>
+            <Portuguese>Chance de deterioração no modo hardcore</Portuguese>
+            <Spanish>Probabilidad de deterioro en modo avanzado</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
@@ -2105,14 +2399,19 @@
             <Polish>AED-X: HR: %1 BP: --/-- SpO2: ---</Polish>
             <Italian>AED-X: FC: %1 PS: --/-- SpO2: ---</Italian>
             <Japanese>AED-X: 心拍: %1 血圧: --/-- SpO2: ---</Japanese>
-            <French>AED-X: FC: %1 PA: --/-- SpO2: ---</French>
-            <Korean>X-시리즈 AED: 맥박: %1 혈압: --/-- 산소포화도: ---</Korean>
+            <French>AED-X: HR: %1 BP: --/-- SpO2: ---</French>
+            <Korean>X-시리즈 자동심장충격기: 심박수: %1 혈압: --/-- 산소포화도: ---</Korean>
             <German>AED-X: HR: %1 BP: --/-- SpO2: ---</German>
-            <Portuguese>DEA-X: HR: %1 BP: --/-- SpO2: ---</Portuguese>
+            <Portuguese>DEA-X: FC: %1 PA: --/-- SpO2: ---</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog">
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4</English>
-            <French>AED-X: FP: %1 PA: %2/%3 SpO2: %4</French>
+            <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4</French>
+            <Korean>X-시리즈 자동심장충격기: 맥박: %1 혈압: %2/%3 산소포화도: %4</Korean>
+            <Japanese>AED-X: 脈拍: %1 血圧: %2/%3 SpO2: %4</Japanese>
+            <German>AED-X: PI: %1 BP: %2/%3 SpO2: %4</German>
+            <Portuguese>DEA-X: FP: %1 PA: %2/%3 SpO2: %4</Portuguese>
+            <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>
@@ -2120,66 +2419,103 @@
             <Polish>AED-X: HR: %1 BP: %2/%3 SpO2: %4</Polish>
             <Italian>AED-X: FC: %1 PS: %2/%3 SpO2: %4</Italian>
             <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4</Japanese>
-            <French>AED-X: FC: %1 PA: %2/%3 SpO2: %4</French>
-            <Korean>X-시리즈 AED: 맥박: %1 혈압: %2 /%3 산소포화도: %4</Korean>
+            <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4</French>
+            <Korean>X-시리즈 자동심장충격기: 심박수: %1 혈압: %2 /%3 산소포화도: %4</Korean>
             <German>AED-X: HR: %1 BP: %2/%3 SpO2: %4</German>
-            <Portuguese>DEA-X: HR: %1 BP: %2/%3 SpO2: %4</Portuguese>
+            <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4</Portuguese>
             <Czech>AED-X SF: %1 TK: %2%3 SpO2: %4</Czech>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
             <English>AED-X Vitals Monitor Sounds</English>
             <Japanese>AED-Xモニター音</Japanese>
             <French>Sons des signes vitaux de l'AED-X</French>
+            <Korean>X-시리즈 자동심장충격기 환자감시장치 소리</Korean>
+            <German>Töne des AED-X-Vitalmonitors</German>
+            <Portuguese>Sons do monitor de sinais vitais do DEA-X</Portuguese>
+            <Spanish>Sonidos del monitor DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Original">
             <English>Original</English>
             <Japanese>オリジナル</Japanese>
             <French>Original</French>
+            <Korean>오리지널</Korean>
+            <German>Original</German>
+            <Portuguese>Original</Portuguese>
+            <Spanish>Original</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Default">
             <English>Default</English>
             <Japanese>デフォルト</Japanese>
             <French>Défaut</French>
+            <Korean>기본</Korean>
+            <German>Standard</German>
+            <Portuguese>Padrão</Portuguese>
+            <Spanish>Por defecto</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
             <Czech>Práh AED-X pro aktivaci alarmu Pulzního Oxymetru</Czech>
             <German>AED-X Sättigungsalarm Grenzwert</German>
-            <Korean>X-시리즈 AED의 SpO2 알람 임계값</Korean>
+            <Korean>X-시리즈 자동심장충격기의 SpO2 알람 한계값</Korean>
             <Japanese>AED-XのSpO2警告音のしきい値</Japanese>
             <French>Seuil d'alarme de SpO2 de l'AED-X</French>
             <Italian>Soglia di allarme della SpO2 del AED-X</Italian>
             <Spanish>Umbral de alarma de SpO2 del AED-X</Spanish>
+            <Portuguese>Limiar de alarme de SpO2 do DEA-X</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval">
             <English>AED-X Vitals Monitor BP Measurement Interval</English>
             <Japanese>AED-Xモニター血圧測定間隔</Japanese>
             <French>Intervalle de mesure de la pression artérielle du moniteur AED-X</French>
+            <Korean>X-시리즈 자동심장충격기 환자감시장치 혈압 측정 간격</Korean>
+            <German>AED-X Vitalmonitor BP-Messintervall</German>
+            <Portuguese>Intervalo de medição da pressão arterial do monitor de sinais vitais do DEA-X</Portuguese>
+            <Spanish>Intervalo de medición de la PS en el monitor DEA-X.</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_AutomaticInstant">
             <English>Automatic Instant</English>
             <Japanese>自動即時</Japanese>
             <French>Automatique instantané</French>
+            <Korean>실시간</Korean>
+            <German>Automatisch sofort</German>
+            <Portuguese>Automaticamente instantâneo</Portuguese>
+            <Spanish>Automático Instantaneo</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Automatic">
             <English>Automatic (Interval)</English>
             <Japanese>自動間隔</Japanese>
-            <French>Automatic (Interval)</French>
+            <French>Automatique (Interval)</French>
+            <Korean>자동(일정 간격)</Korean>
+            <German>Automatisch (Intervall)</German>
+            <Portuguese>Automático (Intervalo)</Portuguese>
+            <Spanish>Automático (Intervalo)</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Manual">
             <English>Manual</English>
             <Japanese>手動</Japanese>
             <French>Manuel</French>
+            <Korean>수동</Korean>
+            <German>Manuell</German>
+            <Portuguese>Manual</Portuguese>
+            <Spanish>Manual</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time">
             <English>AED-X Vitals Monitor BP Measurement Interval Time</English>
             <Japanese>血圧測定間隔の時間</Japanese>
             <French>Temps d'intervalle de mesure de la pression artérielle du moniteur AED-X</French>
+            <Korean>X-시리즈 자동심장충격기 환자감시장치 혈압 측정 간격 시간</Korean>
+            <German>AED-X Vitalmonitor BP-Messintervallzeit</German>
+            <Portuguese>Tempo de intervalo de medição da pressão arterial do monitor de sinais vitais do DEA-X</Portuguese>
+            <Spanish>Tiempo de medición de PS en el monitor DEA-X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_cardiacArrestBleedRate">
             <English>Cardiac Arrest Bleed Rate</English>
             <Japanese>心停止時出血倍率</Japanese>
             <French>Taux de saignement suite à un arrêt cardiaque</French>
+            <Korean>심정지 출혈 배율</Korean>
+            <German>Blutungsrate bei Herzstillstand</German>
+            <Portuguese>Taxa de sangramento após parada cardíaca</Portuguese>
+            <Spanish>Tasa de sangrado en paro cardíaco</Spanish>
         </Key>
     </Package>
 </Project>

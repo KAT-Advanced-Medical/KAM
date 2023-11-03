@@ -79,4 +79,12 @@ class CfgFunctions {
             };
         };
     };
+    class overwrite_ace_common {
+        tag = "ace_common";
+        class ace_common {
+            class getCountOfItem {
+                file = QPATHTOF(functions\fnc_getCountOfItem.sqf);
+            };
+        };
+    };
 };

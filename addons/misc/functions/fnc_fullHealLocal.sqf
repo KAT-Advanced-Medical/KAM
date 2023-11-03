@@ -2,7 +2,7 @@
 /*
  * Author: Glowbal
  * Edit: Tomcat --> added heal of airway damage
- * Local callback for fully healing a patient. 
+ * Local callback for fully healing a patient.
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -61,9 +61,9 @@ _unit setVariable [QACEGVAR(medical,tourniquets), [0,0,0,0,0,0], true];
 _unit setVariable [QACEGVAR(medical_treatment,occludedMedications), nil, true];
 
 // Wounds and Injuries
-_unit setVariable [QACEGVAR(medical,openWounds), [], true];
-_unit setVariable [QACEGVAR(medical,bandagedWounds), [], true];
-_unit setVariable [QACEGVAR(medical,stitchedWounds), [], true];
+_unit setVariable [VAR_OPEN_WOUNDS, createHashMap, true];
+_unit setVariable [VAR_BANDAGED_WOUNDS, createHashMap, true];
+_unit setVariable [VAR_STITCHED_WOUNDS, createHashMap, true];
 _unit setVariable [QACEGVAR(medical,isLimping), false, true];
 _unit setVariable [QACEGVAR(medical,fractures), [0,0,0,0,0,0], true];
 
@@ -117,7 +117,6 @@ _unit setVariable [QEGVAR(pharma,coagulationFactor), 10, true];
 
 //KAT Surgery
 
-_unit setVariable [QEGVAR(surgery,debridement), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(surgery,lidocaine), false, true];
 _unit setVariable [QEGVAR(surgery,etomidate), false, true];
@@ -158,20 +157,20 @@ _unit setDamage 0;
 _state = [_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState;
 TRACE_1("after FullHeal",_state);
 
-/// Clear Stamina & weapon sway
+/// Clear Stamina & weapon sway 
 if (ACEGVAR(advanced_fatigue,enabled)) then {
-    
+    ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["kat_EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
-
+    // ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor); // TODO REWORK OR REMOVE
 } else {
-
-    _unit enableStamina true;
     _unit setAnimSpeedCoef 1;
     _unit setCustomAimCoef 1;
-
+    
+    if (GVAR(staminaMedication)) then {
+        _unit enableStamina true;
+        
+    };
 };
 
 /// Clear chroma effect & camera shake

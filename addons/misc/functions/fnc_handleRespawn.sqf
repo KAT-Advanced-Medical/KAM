@@ -46,7 +46,8 @@ _unit setVariable [QEGVAR(breathing,BVMInUse), false, true];
 _unit setVariable [QEGVAR(breathing,oxygenTankConnected), false, true];
 _unit setVariable [QEGVAR(breathing,oxygenTankPreferred), "", true];
 
-_unit setVariable [QEGVAR(breathing,PulseOximeter_Volume), true, true];
+_unit setVariable [QEGVAR(breathing,pulseoximeter), false, true];
+_unit setVariable [QEGVAR(breathing,PulseOximeter_Volume), false, true];
 _unit setVariable [QEGVAR(breathing,PulseOximeter_VolumePatient), false, true];
 _unit setVariable [QEGVAR(breathing,PulseOximeter_Attached), [0,0], true];
 
@@ -58,13 +59,15 @@ _unit setVariable [QEGVAR(breathing,usingStethoscope), nil];
 // KAT Circulation
 
 _unit setVariable ["kat_AEDXPatient_PFH", nil, true];
+_unit setVariable ["kat_AEDXPatient_HR_PFH", nil, true];
+_unit setVariable ["kat_AEDXPatient_PulseOx_PFH", nil, true];
 _unit setVariable [QEGVAR(circulation,Defibrillator_Charged), false, true];
 _unit setVariable [QEGVAR(circulation,DefibrillatorPads_Connected), false, true];
 _unit setVariable [QEGVAR(circulation,AED_X_MedicVitalsMonitor_Connected), false, true];
 _unit setVariable [QEGVAR(circulation,AED_X_MedicVitalsMonitor_Patient), nil, true];
 _unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Connected), false, true];
 _unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Provider), nil, true];
-_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Volume), true, true];
+_unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_Volume), false, true];
 _unit setVariable [QEGVAR(circulation,AED_X_VitalsMonitor_VolumePatient), false, true];
 _unit setVariable [QEGVAR(circulation,Defibrillator_Provider), nil, true];
 _unit setVariable [QEGVAR(circulation,Defibrillator_ShockAmount), 0, true];
@@ -105,7 +108,6 @@ _unit setVariable [QEGVAR(pharma,kidneyPressure), false, true];
 
 //KAT Surgery
 
-_unit setVariable [QEGVAR(surgery,debridement), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(surgery,lidocaine), false, true];
 _unit setVariable [QEGVAR(surgery,etomidate), false, true];
@@ -247,20 +249,20 @@ if (EGVAR(pharma,coagulation)) then {
     }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
 
-/// Clear Stamina & weapon sway
+/// Clear Stamina & weapon sway 
 if (ACEGVAR(advanced_fatigue,enabled)) then {
-
+    ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
     ["kat_EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ["kat_LSDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
-    ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor);
-
+    // ACEGVAR(advanced_fatigue,swayFactor) = EGVAR(pharma,originalSwayFactor); // TODO REWORK OR REMOVE
 } else {
-
-    _unit enableStamina true;
     _unit setAnimSpeedCoef 1;
     _unit setCustomAimCoef 1;
-
+    
+    if (GVAR(staminaMedication)) then {
+        _unit enableStamina true;
+        
+    };
 };
 
 /// Clear chroma effect & camera shake

@@ -15,7 +15,7 @@ class CfgFunctions {
         tag = "ace_medical_treatment";
         class ace_medical_treatment {
             class medicationLocal {
-                file = QPATHTOF(functions\fnc_treatmentAdvanced_medicationLocal.sqf);
+                file = QPATHTOF(functions\fnc_medicationLocal.sqf);
             };
             class tourniquetRemove {
                 file = QPATHTOF(functions\fnc_tourniquetRemove.sqf);

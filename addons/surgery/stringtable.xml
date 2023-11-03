@@ -85,9 +85,9 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の息はきつく金属臭がします</Japanese>
+            <Japanese>患者の吐息は掠れて金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
-            <Portuguese>O hálito do paciente é aspero e metálico</Portuguese>
+            <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
@@ -98,9 +98,9 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の息はきつく金属臭がします</Japanese>
+            <Japanese>患者の吐息は掠れて金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
-            <Portuguese>O hálito do paciente é aspero e metálico</Portuguese>
+            <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_breath_mild">
             <English>Patient's breath is slightly fruity</English>
@@ -111,7 +111,7 @@
             <French>L'haleine du patient est légèrement fruitée</French>
             <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
             <German>Der Atem des Patienten ist leicht fruchtig</German>
-            <Japanese>患者の息は少し果物臭がします</Japanese>
+            <Japanese>患者の吐息は少し果物臭がします</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
             <Portuguese>O hálito do paciente é ligeiramente frutado</Portuguese>
         </Key>
@@ -124,7 +124,7 @@
             <French>L'haleine du patient est bonne</French>
             <Korean>환자의 호흡이 정상입니다</Korean>
             <German>Der Atem des Patienten ist in Ordnung</German>
-            <Japanese>患者の息は普通です</Japanese>
+            <Japanese>患者の吐息は一般的です</Japanese>
             <Spanish>El aliento del paciente es normal</Spanish>
             <Portuguese>O hálito do paciente é normal</Portuguese>
         </Key>
@@ -258,19 +258,6 @@
             <Spanish>La acción quirúrgico falló</Spanish>
             <Portuguese>Falha na ação cirúrgica</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Surgery_debridement_fail">
-            <English>Wound Dressing Failed</English>
-            <Chinesesimp>伤口清创失败</Chinesesimp>
-            <Italian>Medicazione delle ferite non riuscita</Italian>
-            <Polish>Opatrywanie nie powiodło się</Polish>
-            <Czech>Obvázání rány selhalo</Czech>
-            <French>Echec du pansement</French>
-            <Korean>상처 치료 실패</Korean>
-            <German>Wundverband fehlgeschlagen</German>
-            <Japanese>創面切除に失敗しました</Japanese>
-            <Spanish>Vendaje al vacío falló</Spanish>
-            <Portuguese>Falha no curativo da ferida</Portuguese>
-        </Key>
         <Key ID="STR_KAT_Surgery_Scalpel_displayName">
             <English>Scalpel</English>
             <Chinesesimp>手术刀</Chinesesimp>
@@ -285,14 +272,14 @@
             <Portuguese>Bisturi</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Scalpel_DescShort">
-            <English>Used for creating incisions and debriding wounds</English>
+            <English>Used for creating incisions</English>
             <Chinesesimp>用于创建切口和伤口清创</Chinesesimp>
             <Italian>Usato per creare incisioni e sbrigliare ferite</Italian>
             <Czech>Používá se pro vytváření řezů a čištění ran</Czech>
             <French>Utilisé pour inciser et débrider les plaies</French>
             <Korean>절개 부위를 생성하고 상처를 제거하는 데 사용됩니다.</Korean>
-            <German>Für das Durchführen von Inzisionen und das Debridieren von Wunden</German>
-            <Japanese>切開とデブリードマン(創面切除)に使用する</Japanese>
+            <German>Für das Durchführen von Inzisionen</German>
+            <Japanese>切開と創縁切除に使用する</Japanese>
             <Spanish>Usado para crear incisiones y desbridar heridas</Spanish>
             <Polish>Służy do tworzenia nacięć i oczyszczania ran</Polish>
             <Portuguese>Usado para criar incisões e desbridar feridas</Portuguese>
@@ -373,7 +360,7 @@
             <German>Klemme</German>
             <Japanese>鉗子 (クランプ)</Japanese>
             <Spanish>Pinza de sujeción</Spanish>
-            <Portuguese>Braçadeira</Portuguese>
+            <Portuguese>Afastador</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Clamp_DescShort">
             <English>Used to clamp comminuted fractures</English>
@@ -423,7 +410,7 @@
             <French>Irriguer la plaie</French>
             <Korean>상처 세척</Korean>
             <German>Wunde spülen</German>
-            <Japanese>創面を洗浄</Japanese>
+            <Japanese>創面を灌注</Japanese>
             <Spanish>Irrigar herida</Spanish>
             <Portuguese>Irrigar ferida</Portuguese>
         </Key>
@@ -436,7 +423,7 @@
             <French>Irriguation</French>
             <Korean>세척 중</Korean>
             <German>Spülen</German>
-            <Japanese>洗浄中</Japanese>
+            <Japanese>灌注中</Japanese>
             <Spanish>Irrigando</Spanish>
             <Portuguese>Irrigando</Portuguese>
         </Key>
@@ -466,32 +453,6 @@
             <Polish>Służy do łączenia wszystkich złożonych typów złamań</Polish>
             <Portuguese>Usado para corrigir todas as fraturas avançadas</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Surgery_Debride_Use">
-            <English>Debride Wounds</English>
-            <Chinesesimp>清创伤口</Chinesesimp>
-            <Italian>Sbrigliare la zona ferita</Italian>
-            <Polish>Oczyść rany</Polish>
-            <Czech>Vyčistit rány</Czech>
-            <French>Débrider les plaies</French>
-            <Korean>괴사조직 제거</Korean>
-            <German>Wunde debridieren</German>
-            <Japanese>デブリードマン(創面切除)</Japanese>
-            <Spanish>Desbridar heridas</Spanish>
-            <Portuguese>Desbridar feridas</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Debride_Action">
-            <English>Debriding</English>
-            <Chinesesimp>清创中</Chinesesimp>
-            <Italian>Sbrigliando</Italian>
-            <Polish>Oczyszczanie</Polish>
-            <Czech>Čištění</Czech>
-            <French>Débridement</French>
-            <Korean>제거 중</Korean>
-            <German>Debridement</German>
-            <Japanese>創面切除中</Japanese>
-            <Spanish>Desbridando</Spanish>
-            <Portuguese>Desbridando</Portuguese>
-        </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_displayName">
             <English>Dressing vacuum</English>
             <Chinesesimp>NPWT 敷料</Chinesesimp>
@@ -501,7 +462,7 @@
             <French>Pansement sous vide</French>
             <Korean>진공 드레싱</Korean>
             <German>Vakuumverband</German>
-            <Japanese>吸引ドレッシング (NPWT)</Japanese>
+            <Japanese>吸引被覆 (NPWT)</Japanese>
             <Spanish>Vendaje al vacío</Spanish>
             <Portuguese>Bandagem a vácuo</Portuguese>
         </Key>
@@ -527,7 +488,7 @@
             <French>Appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용</Korean>
             <German>NPWT-Verband anlegen</German>
-            <Japanese>吸引ドレッシング(NPWT)を使う</Japanese>
+            <Japanese>吸引被覆(NPWT)を行う</Japanese>
             <Spanish>Colocar vendaje al vacío</Spanish>
             <Portuguese>Aplicar curativo NPWT</Portuguese>
         </Key>
@@ -785,7 +746,7 @@
             <French>Règle le temps nécessaire pour effectuer des actions chirurgicales intermédiaires, comme exposer ou irriguer</French>
             <Korean>노출 및 세척같은 중간 수술 조치를 수행하는 데 걸리는 시간을 설정합니다.</Korean>
             <German>Legt fest, wie lange es dauert, chirurgische Zwischenschritte wie Freilegung und Spülung durchzuführen</German>
-            <Japanese>露出や洗浄などの中間の外科的処置を実行するのにかかる時間を設定します</Japanese>
+            <Japanese>露出や灌注などの中間の外科的処置を実行するのにかかる時間を設定します</Japanese>
             <Spanish>Establece cuanto tiempo tarda realizar acciones quirúrgicas como exponer o irrigar.</Spanish>
             <Portuguese>Estabelece quanto tempo leva para realizar ações cirúrgicas, como expor ou irrigar.</Portuguese>
         </Key>
@@ -971,19 +932,6 @@
             <Spanish>Fractura Simple</Spanish>
             <Portuguese>Fratura simples</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Surgery_SETTING_DebrideTime">
-            <English>Debride Patient Time</English>
-            <Chinesesimp>进行伤口清创的时间</Chinesesimp>
-            <Italian>Tempo per sbrigliare un paziente</Italian>
-            <Polish>Czas potrzebny na oczyszczenie rany</Polish>
-            <Czech>Čas čištění rány pacienta</Czech>
-            <French>Temps pour débrider un patient</French>
-            <Korean>환자의 상처 제거 시간</Korean>
-            <German>Zeit für die Debridierung eines Patienten</German>
-            <Japanese>デブリードマンの所要時間</Japanese>
-            <Spanish>Tiempo para desbridar un paciente</Spanish>
-            <Portuguese>Duração do desbridamento de um paciente</Portuguese>
-        </Key>
         <Key ID="STR_KAT_Surgery_SETTING_NPWTTime">
             <English>Apply NPWT Dressing Time</English>
             <Chinesesimp>施用 NPWT 敷料的时间</Chinesesimp>
@@ -993,27 +941,9 @@
             <French>Temps pour appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용 시간</Korean>
             <German>Zeit zum Anlegen eines NPWT-Verbandes</German>
-            <Japanese>NPWTドレッシングの使用時間</Japanese>
+            <Japanese>NPWT被覆の使用時間</Japanese>
             <Spanish>Tiempo para colocar un vendaje al vacío</Spanish>
             <Portuguese>Duração do aplique de curativo a vácuo</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_MedLevel">
-            <English>Allow Debridement</English>
-            <Spanish>Permitir desbridamiento</Spanish>
-            <Japanese>デブリードマンの許可</Japanese>
-            <German>Benötigter medizinischer Grad, um Debridement &amp; NPWT-Verband zu nutzen</German>
-            <French>Autoriser le débridement</French>
-            <Korean>괴사조직 제거 허용</Korean>
-            <Italian>Permetti sbrigliamento</Italian>
-        </Key>
-        <Key ID="STR_KAT_Surgery_SETTING_DebridementAction_Location">
-            <English>Locations Debridement</English>
-            <Spanish>Lugares para el desbridamiento</Spanish>
-            <Japanese>デブリードマンの使用可能場所</Japanese>
-            <German>Ort für die durchführung von Debridement &amp; NPWT-Verband</German>
-            <French>Lieux permettant le débridement</French>
-            <Korean>괴사조직 위치</Korean>
-            <Italian>Posizione di sbrigliamento</Italian>
         </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_SurgicalActions">
             <English>Surgical actions Settings</English>
@@ -1071,36 +1001,54 @@
             <Japanese>手術時の意識状態管理</Japanese>
             <Spanish>Controles de conciencia quirúrgica</Spanish>
             <French>Gestion de la conscience pendant la chirurgie</French>
+            <Korean>수술 중 의식 관리</Korean>
+            <German>Chirurgie Bewusstseinseinstellungen</German>
+            <Portuguese>Controles de consciência durante a cirurgia</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \nUnconsciousness Required for Surgery: Surgery requires patient to be unconscious. \nNo Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \nSurgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
             <Japanese>意識喪失あり: 手術時に麻酔と鎮静剤を使用しないと、心停止による意識喪失が発生します。 \n無意識状態が必要: 手術するには患者が意識を失っていることが必要になります。 \n意識喪失なし: 手術時に意識喪失や痛みが発生しなくなります。 \n手術麻酔: エトミデートを投与すると、手術中も患者が起きたままになります。</Japanese>
             <Spanish>La cirugía provoca inconsciencia: La cirugía sin anestesia ni sedación provoca inconsciencia por IC. \nInconsciencia necesaria para la cirugía: La cirugía requiere que el paciente esté inconsciente. \nLa cirugía no provoca inconsciencia: La cirugía no induce inconsciencia, causa dolor. \nAnestesia quirúrgica: El paciente permanece despierto durante la cirugía si se le administra etomidato.</Spanish>
             <French>La chirurgie provoque une perte de conscience: La chirurgie sans anesthésie ni sédation entraîne une perte de conscience due à l'arrêt cardiaque. \nInconscience requise pour la chirurgie: la chirurgie nécessite que le patient soit inconscient. \nPas d'inconscience due à la chirurgie: la chirurgie n'induit pas d'inconscience, elle provoque de la douleur. \nAnesthésie chirurgicale: le patient reste éveillé pendant la chirurgie s'il reçoit de l'étomidate.</French>
+            <Korean>수술로 인해 의식불명 발생: 마취 및 진정제 없이 수술을 하면 심정지로 인해 의식을 잃습니다.\n수술에 필요한 의식불명: 수술을 하려면 환자가 의식을 잃어야 합니다.\n수술 중 의식불명 발생 없음: 수술이 의식불명을 유발시키지 않지만 통증을 발생시킵니다.\n수술 마취: 에토미데이트를 투여하면 환자는 수술 중 깨어 있게 됩니다.</Korean>
+            <German>Eine Operation führt zu Bewusstlosigkeit: Eine Operation ohne Anästhesie und Sedierung führt zu Bewusstlosigkeit aufgrund von CA. \nFür eine Operation ist Bewusstlosigkeit erforderlich: Bei einer Operation muss der Patient bewusstlos sein. \nKeine Bewusstlosigkeit durch eine Operation: Eine Operation führt nicht zur Bewusstlosigkeit, sondern verursacht Schmerzen. \nOperationsanästhesie: Der Patient bleibt während der Operation wach, wenn er Etomidat erhält.</German>
+            <Portuguese>A cirurgia causa inconsciência: A cirurgia sem anestesia e sedação resulta em inconsciência. \nInconsciência necessária para a cirurgia: A cirurgia requer que o paciente esteja inconsciente. \nSem inconsciência por cirurgia: A cirurgia não induz inconsciência, causa dor. \nAnestesia cirúrgica: O paciente permanece acordado durante a cirurgia se receber etomidato.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
             <Japanese>意識喪失あり</Japanese>
             <Spanish>La cirugía causa inconsciencia</Spanish>
             <French>La chirurgie provoque une perte de conscience</French>
+            <Korean>수술로 인해 의식불명 발생</Korean>
+            <German>Eine Operation führt zu Bewusstlosigkeit</German>
+            <Portuguese>A cirurgia causa inconsciência</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
             <Spanish>Se requiere inconsciencia para la cirugía</Spanish>
             <Japanese>無意識状態が必要</Japanese>
             <French>Nécessite un état inconscient</French>
+            <Korean>수술에 필요한 의식불명</Korean>
+            <German>Für die Operation ist Bewusstlosigkeit erforderlich</German>
+            <Portuguese>Inconsciência necessária para a cirurgia</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
             <Japanese>意識喪失なし</Japanese>
             <Spanish>No se pierde la consciencia por la cirugía</Spanish>
             <French>Pas d'inconscience due à la chirurgie</French>
+            <Korean>수술 중 의식불명 발생 없음</Korean>
+            <German>Keine Bewusstlosigkeit durch die Operation</German>
+            <Portuguese>Sem inconsciência por cirurgia</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
             <Japanese>手術麻酔</Japanese>
             <Spanish>Anestesia quirúrgica</Spanish>
             <French>Anesthésie chirurgicale</French>
+            <Korean>수술 마취</Korean>
+            <German>Chirurgische Anästhesie</German>
+            <Portuguese>Anestesia cirúrgica</Portuguese>
         </Key>
     </Package>
 </Project>

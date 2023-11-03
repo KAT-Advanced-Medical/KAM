@@ -18,7 +18,7 @@
 params ["_unit"];
 
 private _bloodVolume = GET_BLOOD_VOLUME(_unit);
-if (_bloodVolume < 5.1) exitWith { false };
+if (_bloodVolume < ACEGVAR(medical,const_stableVitalsBloodThreshold)) exitWith { false };
 
 if IN_CRDC_ARRST(_unit) exitWith { false };
 if (_unit getVariable [QEGVAR(surgery,sedated), false]) exitWith { false };

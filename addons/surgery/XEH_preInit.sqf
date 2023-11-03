@@ -165,46 +165,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Sets time to debride a patient
-[
-    QGVAR(debrideTime),
-    "SLIDER",
-    LLSTRING(SETTING_DebrideTime),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [0,100,20,0],
-    true
-] call CBA_Settings_fnc_init;
-
 // Sets time to apply NPWT dressing
 [
     QGVAR(npwtTime),
     "SLIDER",
     LLSTRING(SETTING_NPWTTime),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [0,100,20,0],
+    [0.1, 60, 5, 1],
     true
 ] call CBA_Settings_fnc_init;
-
-// Sets med level required to do debridement actions
-[
-    QGVAR(debridementAction_MedLevel),
-    "LIST",
-    LLSTRING(SETTING_DebridementAction_MedLevel),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
-    true
-] call CBA_Settings_fnc_init;
-
-// Sets allowed location for debridement actions
-[
-    QGVAR(debridementAction_Location),
-    "LIST",
-    LLSTRING(SETTING_DebridementAction_Location),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
-    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
-    true
-] call CBA_Settings_fnc_init;
-
 
 
 ADDON = true;
