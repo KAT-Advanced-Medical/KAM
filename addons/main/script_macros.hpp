@@ -136,6 +136,11 @@
 #undef VAR_IN_PAIN
 #undef VAR_TOURNIQUET
 #undef VAR_FRACTURES
+#undef GET_PAIN_PERCEIVED
+#undef GET_TOURNIQUETS
+#undef HAS_TOURNIQUET_APPLIED_ON
+#undef PAIN_UNCONSCIOUS
+#undef DEFAULT_TOURNIQUET_VALUES
 
 // These variables get stored in object space and used across components
 // Defined here for easy consistency with GETVAR/SETVAR (also a list for reference)
