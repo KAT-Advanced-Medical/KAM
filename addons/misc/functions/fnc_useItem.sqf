@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Glowbal, mharis001
  * Modified: Blue
@@ -90,7 +90,7 @@ if (GVAR(allowSharedVehicleEquipment) > 0 && _vehicleCondition) then {
                 [_origin, _x] breakOut "Main";
             };
         } forEach _items;
-        
+
         _originItems = [_origin, true, true] call FUNC(getUniqueItems); // Magazine
         {
             if (_x in _originItems) then {

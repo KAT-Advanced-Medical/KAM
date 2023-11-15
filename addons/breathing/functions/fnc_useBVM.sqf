@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Handles BVM usage.
@@ -37,7 +37,7 @@ GVAR(CPRCancel_MouseID) = [0xF0, [false, false, false], {
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
 
 ACEGVAR(medical_gui,pendingReopen) = false; // Prevent medical menu from reopening
- 
+
 if (dialog) then { // If another dialog is open (medical menu) close it
     closeDialog 0;
 };
@@ -96,7 +96,7 @@ timeOut = true;
 
         if !(timeOut) then {
             timeOut = true;
-            
+
             if (_useOxygen && !_pocket) then {
                 switch (_oxygenOrigin) do {
                     case 1: { // Medic provided oxygen with carried oxygen tank
@@ -181,13 +181,13 @@ timeOut = true;
                 params ["_patient"];
 
                 !(_patient getVariable [QGVAR(BVMInUse), false]);
-            }, {}, [_patient], 5, 
+            }, {}, [_patient], 5,
             {
                 timeOut = false;
                 totalProvided = totalProvided + 1;
             }] call CBA_fnc_waitUntilAndExecute;
         };
-        
+
         if (loopBVM) then {
             [QACEGVAR(common,switchMove), [_medic, "kat_BVM"]] call CBA_fnc_globalEvent;
             loopBVM = false;

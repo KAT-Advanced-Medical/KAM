@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: MiszczuZPolski
  * Local callback for set patient from recovery position.

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Miss Heda
  * Removing Guedeltubus & KingLT
@@ -28,7 +28,7 @@ if (_item isEqualTo "Larynxtubus") then {
 };
 
 if !(GVAR(ReusableAirwayItems)) exitwith {};
-    
+
 if (_item isEqualTo "Larynxtubus") then {
     [_medic, "kat_larynx"] call ACEFUNC(common,addToInventory);
 } else {

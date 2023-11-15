@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGi
  * Initalizes the "Open Unit medical menu" Zeus module.

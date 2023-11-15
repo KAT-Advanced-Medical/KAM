@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Check if target has any kind of oxygen tank
@@ -6,7 +6,7 @@
  * Arguments:
  * 0: Target <OBJECT>
  * 1: Target is vehicle <BOOL>
- * 
+ *
  * Return Value:
  * Has oxygen tank <BOOLEAN>
  *

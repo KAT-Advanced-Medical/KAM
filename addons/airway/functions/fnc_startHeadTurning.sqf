@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Begin head turning
@@ -31,7 +31,7 @@ GVAR(HeadTurnCancel_MouseID) = [0xF0, [false, false, false], {
 }, "keydown", "", false, 0] call CBA_fnc_addKeyHandler;
 
 ACEGVAR(medical_gui,pendingReopen) = false; // Prevent medical menu from reopening
- 
+
 if (dialog) then { // If another dialog is open (medical menu) close it
     closeDialog 0;
 };
@@ -83,7 +83,7 @@ GVAR(headTurn_timeOut) = true;
                 params ["_patient"];
 
                 !(_patient getVariable [QGVAR(headTurningActive), false]);
-            }, {}, [_patient, _medic], GVAR(HeadTurn_Interval), 
+            }, {}, [_patient, _medic], GVAR(HeadTurn_Interval),
             {
                 params ["_patient", "_medic"];
 
@@ -106,7 +106,7 @@ GVAR(headTurn_timeOut) = true;
 
             }] call CBA_fnc_waitUntilAndExecute;
         };
-        
+
         if (GVAR(loopHeadturning)) then {
             [QACEGVAR(common,switchMove), [_medic, "kat_headTurn"]] call CBA_fnc_globalEvent;
             GVAR(loopHeadturning) = false;

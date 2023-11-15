@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Mazinski.H
  * Opens an IV/IO on a patient and changes the patient's flow variable

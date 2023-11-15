@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGi
  * Initalizes the "Manage Airways" Zeus module.
@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_control"]; 
+params ["_control"];
 
 private _display = ctrlParent _control;
 private _ctrlButtonOK = _display displayCtrl 1;
@@ -71,7 +71,7 @@ _slider ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove];
 
 private _playerBloodyType = _unit getVariable [QEGVAR(circulation,bloodtype), "O_N"];
 private _playerBloodyTypeIndex = ["O","O_N","A","A_N","B","B_N","AB","AB_N"] find _playerBloodyType;
-private _select = switch (_playerBloodyType) do 
+private _select = switch (_playerBloodyType) do
 {
     case "O+":  {0};
     case "O-":  {1};

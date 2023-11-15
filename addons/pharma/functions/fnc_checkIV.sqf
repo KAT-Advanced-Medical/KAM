@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Mazinski.H
  * Checks Limb Damage before and IV can be used.

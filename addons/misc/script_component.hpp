@@ -14,7 +14,6 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_MISC
 #endif
 
-#include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 #include "\x\kat\addons\main\script_macros.hpp"
 
 #define MEDICAL_TREATMENT_ITEMS (call (uiNamespace getVariable [QACEGVAR(medical_treatment,treatmentItems), {[]}]))

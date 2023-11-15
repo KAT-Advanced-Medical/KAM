@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGi
  * Initalizes the "Manage Airways" Zeus module.
@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_control"]; 
+params ["_control"];
 
 private _display = ctrlParent _control;
 private _ctrlButtonOK = _display displayCtrl 1;
@@ -117,9 +117,9 @@ private _fnc_onConfirm = {
     private _pneumothorax = round(sliderPosition (_display displayCtrl 16105));
 
     _unit setVariable [QEGVAR(breathing,pneumothorax), _pneumothorax, true];
-    _unit setVariable [QEGVAR(breathing,airwayStatus), round(sliderPosition (_display displayCtrl 16106)), true]; 
+    _unit setVariable [QEGVAR(breathing,airwayStatus), round(sliderPosition (_display displayCtrl 16106)), true];
 
-    if(_curSpO2Val isEqualTo 100) then { 
+    if(_curSpO2Val isEqualTo 100) then {
         [_unit] call EFUNC(breathing,handleBreathing);
     };
 

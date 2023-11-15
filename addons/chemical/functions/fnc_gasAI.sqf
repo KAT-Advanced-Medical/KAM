@@ -1,9 +1,9 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
  * This cant be called manualy!
  * Handles the Gas effect for the AI
- * 
+ *
  * Arguments:
  * 0: Target <OBJECT>
  * 1: Module <Logic>
@@ -23,7 +23,7 @@
 params ["_unit", "_logic", "_pos", "_radius_max", "_gastype"];
 
 if (!isDamageAllowed _unit) exitWith {
-    [_unit] call FUNC(clearChemicalInjuriesLocal);    
+    [_unit] call FUNC(clearChemicalInjuriesLocal);
 };
 
 [

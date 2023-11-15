@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Unit <OBJECT>
  *
@@ -20,7 +20,7 @@ params ["_unit"];
 {
     params["_args", "_pfhHandler"];
     _args params ["_unit"];
-    
+
     "KAT_CHEM_DETECTOR" cutRsc ["RscWeaponChemicalDetector", "PLAIN", 1, false];
     private _ui = GETUVAR(RscWeaponChemicalDetector,displayNull);
     private _obj = _ui displayCtrl 101;
@@ -35,12 +35,12 @@ params ["_unit"];
     };
 
     if (!(_unit getVariable[QGVAR(enteredPoison),false])) exitWith {
-   
+
         _obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
-        
+
         [_pfhHandler] call CBA_fnc_removePerFrameHandler;
     };
-}, 
+},
 1, [_unit]] call CBA_fnc_addPerFramehandler;
 
 [

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Generate heart rate for type of cardiac arrest
@@ -17,7 +17,7 @@
 
 params ["_unit"];
 
-/* type 
+/* type
 0 normal
 1 asystole, no pulse, no shock
 2 pulseless electrical activity, AEDX fake pulse, no shock

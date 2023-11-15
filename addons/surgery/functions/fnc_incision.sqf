@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: 1LT.Mazinski.H
  * Starts the surgical process for a fracture
