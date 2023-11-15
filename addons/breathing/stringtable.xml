@@ -632,7 +632,7 @@
             <Turkish>Hemotoraks / Gerilim Pnömotoraks Tedavisi Minimum Seviye</Turkish>
             <Italian>Livello minimo per il trattamento di un emo/pneumotorace iperteso</Italian>
             <Russian>Лечение гемоторакса/напряженного пневмоторакса Минимальный уровень</Russian>
-            <Japanese>血気胸/緊張性気胸治療の許可</Japanese>
+            <Japanese>血胸/緊張性気胸治療の許可</Japanese>
             <Portuguese>Nível mínimo exigido para tratar hemotórax/pneumotórax hipertensivo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL_DESCRIPTION">
@@ -648,7 +648,7 @@
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Italian>Il livello medico minimo richiesto per eseguire la decompressione con ago e il drenaggio dei fluidi, necessari per il trattamento di un emotorace o pneumotorace iperteso</Italian>
             <Russian>Минимальный медицинский уровень, необходимый для того, чтобы кто-то мог выполнять лечебные действия «Декомпрессия иглой» и «Дренаж жидкости», используемые для лечения гемоторакса или напряженного пневмоторакса.</Russian>
-            <Japanese>胸腔穿刺減圧および胸腔ドレナージの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>胸腔穿刺減圧および胸腔ドレナージの使用に訓練レベルを必要とさせます。これらは血胸と緊張性気胸の治療に使われます。</Japanese>
             <Portuguese>O nível médico mínimo exigido para que alguém possa realizar as ações de tratamento de Descompressão de Agulha e Drenagem de Fluidos, usados ​​para tratar hemotórax ou pneumotórax hipertensivo.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
@@ -680,7 +680,7 @@
             <Turkish>Pnömotoraks olasılığı olmadan önce meydana gelmesi gereken, 0 ila 1 ölçeğinde tek bir darbede hasar miktarı. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya sıfır olarak ayarlanması, beklenmedik yaralanmalardan kaynaklanan beklenmedik davranışlara veya pnömotoraksa neden olabilir.</Turkish>
             <Italian>Il danno in un singolo impatto, in una scala da 0 a 1, richiesto prima che si abbia la possibilità di uno pneumotorace. Valori più bassi rendono il pneumotorace più frequente. Valori molto bassi, o lo 0, possono causare comportamenti inaspettati o pneumotorace da ogni ferita.</Italian>
             <Russian>Количество повреждений при одном ударе по шкале от 0 до 1, которое должно произойти, прежде чем возникнет вероятность пневмоторакса. Более низкие значения означают, что пневмоторакс более вероятен. Установка очень низкого значения или нуля может привести к неожиданному поведению или пневмотораксу из-за неожиданных травм.</Russian>
-            <Japanese>一度の負傷で発生する気胸へのダメージ。値が低いほど、気胸が発生する可能性が高くなります。値を非常に低く設定するか、0に設定すると、予期しない動作や予期しない怪我による気胸を引き起こす可能性があります。</Japanese>
+            <Japanese>一度の負傷で発生する気胸へのダメージ。値が低いほど気胸が発生する可能性が高くなります。値を非常に低く設定するか0に設定すると、予期しない動作や予期しない負傷による気胸を引き起こす可能性があります。</Japanese>
             <Portuguese>A quantidade de dano em um único impacto, em uma escala de 0 a 1, que precisa ocorrer antes que haja uma chance de pneumotórax. Valores mais baixos significam que o pneumotórax é mais provável de ocorrer. Definir o valor muito baixo ou zero pode causar um comportamento inesperado ou pneumotórax devido a lesões inesperadas.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken">
@@ -703,7 +703,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance">
             <English>Deep Penetrating Injury Chance</English>
-            <Japanese>深部穿通性損傷確率</Japanese>
+            <Japanese>深い貫通傷の発生確率</Japanese>
             <French>Probabilité de blessure profonde</French>
             <Korean>깊은 관통상 확률</Korean>
             <German>Chance auf tiefgreifende Verletzungen</German>
@@ -712,7 +712,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance_DESC">
             <English>Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted</English>
-            <Japanese>気胸ダメージのしきい値を超えたが気胸が発生しなかった場合、深部穿通性損傷が発生する確率が増加します</Japanese>
+            <Japanese>気胸ダメージのしきい値を超えたが気胸が発生しなかった場合、深い貫通傷が発生する確率が増加します</Japanese>
             <French>Probabilité qu'une blessure profonde apparaisse lorsque le seuil de dommage du pneumothorax est dépassé, mais qu'aucun pneumothorax n'est infligé</French>
             <Korean>기흉 데미지 한계점을 넘겼지만 기흉에 걸리지 않은 경우 깊은 관통상에 걸릴 확률입니다.</Korean>
             <German>Es kann zu einer tiefgreifenden Verletzung kommen, wenn die Pneumothorax-Schadensschwelle überschritten wird, aber kein Pneumothorax verursacht wird</German>
@@ -721,7 +721,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_DeepPenetratingInjury">
             <English>Deep Penetrating Injury</English>
-            <Japanese>深部穿通性損傷</Japanese>
+            <Japanese>深い貫通傷</Japanese>
             <French>Blessure profonde</French>
             <Korean>깊은 관통상</Korean>
             <German>Tiefgreifende Verletzung</German>
@@ -772,7 +772,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if pneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x pneumothorax)</English>
-            <Japanese>気胸の診断を不要にし、常に負傷として医療メニューに(1x 気胸のように)表示する</Japanese>
+            <Japanese>気胸の診断を不要にし、常に負傷として医療メニューに表示する(1x 気胸のように)</Japanese>
             <French>Définit si le pneumothorax doit toujours être visible dans le menu médical en tant que blessure au lieu de nécessiter un diagnostic (1x pneumothorax)</French>
             <Korean>진단을 요구하는 대신 의료 메뉴에서 항상 기흉을 부상으로 표시하는지 여부를 설정합니다. (예: 1x 기흉)</Korean>
             <German>Legt fest, ob Pneumothorax im medizinischen Menü immer als Verletzung angezeigt werden soll, anstatt dass eine Diagnose erforderlich ist (1x Pneumothorax).</German>
@@ -790,7 +790,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if tension pneumothorax and hemopneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x tensionpneumothorax/1x hemopneumothorax)</English>
-            <Japanese>気胸の診断を不要にし、常に負傷として医療メニューに(1x 血気胸/1x 緊張性気胸のように)表示する</Japanese>
+            <Japanese>気胸の診断を不要にし、常に負傷として医療メニューに表示する(1x 血気胸/1x 緊張性気胸のように)</Japanese>
             <French>Définit si le pneumothorax sous tension et l'hémopneumothorax doivent toujours être visibles dans le menu médical en tant que blessure au lieu de nécessiter un diagnostic (1x pneumothorax sous tension/1x hémopneumothorax)</French>
             <Korean>진단을 요구하는 대신 의료 메뉴에서 항상 긴장성 기흉 및 혈기흉을 부상으로 표시하는지 여부를 설정합니다. (예: 1x 긴장성 기흉/혈기흉)</Korean>
             <German>Legt fest, ob Spannungspneumothorax und Hämopneumothorax im medizinischen Menü immer als Verletzung sichtbar sein sollen, anstatt eine Diagnose zu erfordern (1x Spannungspneumothorax/1x Hämopneumothorax)</German>
@@ -842,7 +842,7 @@
             <Turkish>Akciğer Seslerini Dinleyin</Turkish>
             <Italian>Auscultare i suoni polmonari</Italian>
             <Russian>Выслушивайте легочные шумы</Russian>
-            <Japanese>呼吸音を聴診する</Japanese>
+            <Japanese>呼吸音を聴診</Japanese>
             <Portuguese>Auscultar sons pulmonares</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_listening_progress">
@@ -1360,7 +1360,7 @@
             <French>Utiliser le BVM</French>
             <Korean>인공호흡기 사용</Korean>
             <Polish>Użyj worka samorozprężalnego</Polish>
-            <Japanese>BVMを使用する</Japanese>
+            <Japanese>BVMを使用</Japanese>
             <German>Verwende BVM</German>
             <Czech>Použít RV</Czech>
             <Italian>Usa maschera ambu</Italian>
@@ -1390,7 +1390,7 @@
             <French>Utiliser le BVM de poche</French>
             <Korean>인공호흡기 (포켓형) 사용</Korean>
             <Polish>Uzyj kieszonkowego worka samorozprężalnego</Polish>
-            <Japanese>ポケットBVMを使用する</Japanese>
+            <Japanese>携帯式BVMを使用</Japanese>
             <German>Verwende Tachen BVM </German>
             <Czech>Použít Kapesní RV</Czech>
             <Italian>Usa maschera ambu portatile </Italian>
@@ -1402,7 +1402,7 @@
             <French>Utiliser le BVM avec un réservoir à oxygène</French>
             <Korean>산소 탱크가 달린 인공호흡기 사용</Korean>
             <Polish>Użyj worka z butlą z tlenem</Polish>
-            <Japanese>BVMと酸素ボンベを使用する</Japanese>
+            <Japanese>BVMと酸素ボンベを使用</Japanese>
             <German>Verwende BVM mit Sauerstofftank</German>
             <Czech>Použít RV s Kyslíkovou Lahví</Czech>
             <Italian>Usa maschera ambu con la bombola d'ossigeno</Italian>
@@ -1414,7 +1414,7 @@
             <French>Utiliser le BVM avec de l'oxygène</French>
             <Korean>산소 연결 인공호흡기 사용</Korean>
             <Polish>Użyj worka z tlenem</Polish>
-            <Japanese>BVMと酸素を使用する</Japanese>
+            <Japanese>BVMと酸素を使用</Japanese>
             <German>Verwende BVM mit Sauerstoff</German>
             <Czech>Použít RV s Kyslíkem</Czech>
             <Italian>Usa maschera ambu con l'ossigeno</Italian>
@@ -1426,12 +1426,13 @@
             <French>Utiliser le BVM avec de l'oxygène (Véhicule)</French>
             <Portuguese>Usar BVM com cilindro de oxigênio (veículo)</Portuguese>
             <Spanish>Usa el Ambu con tanque de oxígeno (vehículo)</Spanish>
+            <Japanese>BVMと酸素ボンベ(車両)を使用</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
             <English>Using BVM with Oxygen Tank (Vehicle)</English>
             <German>Beatme mit BVM und Sauerstoff (vom Fahrzeug)</German>
             <Korean>산소 탱크가 달린 인공호흡기(차량) 사용</Korean>
-            <Japanese>BVMと車両の酸素ボンベを使用する</Japanese>
+            <Japanese>BVMと酸素ボンベ(車両)を使用中</Japanese>
             <French>Utilisation du BVM avec un réservoir d'oxygène (Véhicule)</French>
             <Italian>Usa maschera ambu con la bombola d'ossigeno (veicolo)</Italian>
             <Spanish>Usar la BVM con un cilindro de oxígeno (vehículo)</Spanish>
@@ -1491,7 +1492,7 @@
             <French>Remplir le réservoir à oxygène portable</French>
             <Korean>휴대용 산소 탱크 재충전</Korean>
             <Polish>Napełnij butlę</Polish>
-            <Japanese>携帯用酸素ボンベ を補充する</Japanese>
+            <Japanese>携帯用酸素ボンベ を補充</Japanese>
             <German>Nachfüllen des tragbaren Sauerstofftanks</German>
             <Czech>Naplnit přenosnou Kyslíkovou Lahev</Czech>
             <Italian>Riempi bombola portatile d'ossigeno</Italian>
@@ -1551,7 +1552,7 @@
             <French>BVM de poche</French>
             <Korean>인공호흡기 (포켓형)</Korean>
             <Polish>Kieszonkowy worek samorozprężalny</Polish>
-            <Japanese>ポケットBVM</Japanese>
+            <Japanese>携帯式BVM</Japanese>
             <German>Taschen BVM</German>
             <Czech>Kapesní RV</Czech>
             <Italian>Maschera ambu portatile</Italian>
@@ -1713,7 +1714,7 @@
             <French>Autoriser le BVM de poche</French>
             <Korean>인공호흡기 (포켓형) 허용</Korean>
             <Polish>Pozwól na użycie Kieszonkowego worka samorozprężalnego</Polish>
-            <Japanese>ポケットBVMの許可</Japanese>
+            <Japanese>携帯式BVMの許可</Japanese>
             <German>Erlaube Taschen BVM</German>
             <Czech>Povolit Kapesní RV</Czech>
             <Italian>Permetti la maschera ambu portatile</Italian>
@@ -1725,7 +1726,7 @@
             <French>Règle le niveau médical requis pour utiliser le BVM de poche</French>
             <Korean>인공호흡기 (포켓형)을 사용하는 데 필요한 의료 레벨 수준을 설정합니다</Korean>
             <Polish>Ustawia wymagany poziom wyszkolenia medycznego do użycia Kieszonkowego worka samorozprężalnego</Polish>
-            <Japanese>ポケットBVMの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>携帯式BVMの使用に訓練レベルを必要とさせます。</Japanese>
             <German>Benötigter medizinischer Grad, um die Taschen BVM zu nutzen</German>
             <Czech>Nastavuje požadovanou zdravotnickou úroveň pro použití Kapesního RV</Czech>
             <Italian>Imposta il livello medico richiesto per utilizzare la maschera ambu portatile</Italian>
@@ -1825,7 +1826,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_Check_Breathing">
             <English>Check Breathing</English>
-            <Japanese>呼吸を確認する</Japanese>
+            <Japanese>呼吸を確認</Japanese>
             <French>Vérifier la respiration</French>
             <Korean>호흡 확인</Korean>
             <German>Überprüfen Atmung</German>
@@ -1843,7 +1844,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_breath_stink">
             <English>, harsh and metallic</English>
-            <Japanese>、吸気は掠れて金属臭がする</Japanese>
+            <Japanese>、吸気は荒々しく金属臭がする</Japanese>
             <French>, l'haleine dégage une forte odeur métallique</French>
             <Korean>, 거칠고 금속같다</Korean>
             <German>, harsch und metallisch</German>
@@ -1954,7 +1955,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_inspectChest_display">
             <English>Inspect Chest</English>
-            <Japanese>胸部を検査する</Japanese>
+            <Japanese>胸部を検査</Japanese>
             <French>Inspecter le thorax</French>
             <Korean>흉부 검사</Korean>
             <German>Untersuche Thorax</German>
