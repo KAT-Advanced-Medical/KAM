@@ -36,7 +36,7 @@ private _output = LLSTRING(Recovery_Info);
     _output = LLSTRING(Recovery_Cancel);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 }, [_medic, _patient], 3600, {
-    params ["_medic", "patient"];
+    params ["_medic", "_patient"];
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
 
