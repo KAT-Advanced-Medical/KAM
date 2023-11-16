@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Miss Heda, Blue
  * Checks which slots are free to use in an FAK

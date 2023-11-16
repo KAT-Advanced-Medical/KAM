@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Miss Heda, Blue
  * Checks if unit has required items to refill a FAK slot.

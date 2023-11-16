@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Miss Heda, Blue
  * Gives the player the predefined Items (in CBA) for every FAK variant

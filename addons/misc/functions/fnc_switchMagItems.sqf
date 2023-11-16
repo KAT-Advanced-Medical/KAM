@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Miss Heda
  * Deletes magazine with specific ammo count & creates a new one with provided ammo count.
