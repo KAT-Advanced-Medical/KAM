@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Toggle whether AI unit can die instantly from fatal injury
@@ -39,7 +39,7 @@ if ((_mouseOver select 0) != "OBJECT") then {
                 } else {
                     [LSTRING(toggleAIDeath_Module_Toggled), ACELSTRING(Common,Disabled)] call FUNC(showMessage);
                 };
-                
+
                 _unit setVariable [QEGVAR(misc,PreventInstantAIDeath), !_enabled, true];
             } else {
                 [LSTRING(OnlyAI)] call FUNC(showMessage);

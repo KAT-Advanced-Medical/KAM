@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Glowbal, Edited by MiszczuZPolski
  * Local callback for applying a tourniquet to a patient.

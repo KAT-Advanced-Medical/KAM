@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Digii
  * Splits an string into an array. (that can be used by CBA settings)

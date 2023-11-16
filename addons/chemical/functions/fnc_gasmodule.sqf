@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
 * Author: DiGii
 * This cant be called manualy!
@@ -31,7 +31,7 @@ if (_activated) then {
         if (_isSealable) then {
             [_object] call FUNC(createSealaction);
         };
-        
+
         [_object, _pos, _radius_max, _radius_min, _gastype] spawn FUNC(gasCheck);
     } else {
         private _pos = getPos _logic;

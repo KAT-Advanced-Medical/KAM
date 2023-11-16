@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Logic <MODULE>
  * 1: Radius <NUMBER>
@@ -20,7 +20,7 @@ params ["_unit", "_logic", "_radius"];
     _params params["_unit"];
 
     if (!isDamageAllowed _unit) exitWith {
-        [_unit] call FUNC(clearChemicalInjuriesLocal);    
+        [_unit] call FUNC(clearChemicalInjuriesLocal);
     };
 
     if (_unit getVariable[QGVAR(enteredPoison),false]) then {
@@ -30,19 +30,19 @@ params ["_unit", "_logic", "_radius"];
         _unit say3D QGVAR(cough_1);
         if (hasInterface) then {
         private _rndBlur = selectRandom [5, 6, 7, 8];
-            ppBlur ppEffectAdjust [_rndBlur]; 
-            ppBlur ppEffectEnable true;  
+            ppBlur ppEffectAdjust [_rndBlur];
+            ppBlur ppEffectEnable true;
             ppBlur ppEffectCommit 5;
         };
     } else {
         if (hasInterface) then {
-            ppBlur ppEffectAdjust [0]; 
-            ppBlur ppEffectEnable true; 
+            ppBlur ppEffectAdjust [0];
+            ppBlur ppEffectEnable true;
             ppBlur ppEffectCommit 20;
         };
         _unit setVariable [QGVAR(CS), false, true];
         [_handler] call CBA_fnc_removePerFrameHandler;
-        
+
     };
 }, 5, [player]] call CBA_fnc_addPerFrameHandler;
 

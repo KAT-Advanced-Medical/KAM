@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: PosX <NUMBER>
  * 1: PosY <NUMBER>
@@ -17,7 +17,7 @@
  *
  *
 */
-params ["_posX","_posY","_posZ"]; 
+params ["_posX","_posY","_posZ"];
 
 private _smoke = "KAT_GASTrip_SmokeEffect" createVehicle [_posX,_posY,_posZ];
 hideObjectGlobal _smoke;

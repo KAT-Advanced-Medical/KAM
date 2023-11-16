@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  *
  * Return Value:
  * NONE
@@ -93,5 +93,5 @@ private _fnc_onLBSelChange = {
 [_sealCheckBox] call _fnc_onCheckChange;
 [_gasTypeCombo] call _fnc_onCheckChange;
 _display displayAddEventHandler ["KeyUp", _fnc_onKeyUp];
-_sealCheckBox ctrlAddEventHandler ["CheckedChanged", _fnc_onCheckChange]; 
-_gasTypeCombo ctrlAddEventHandler ["LBSelChanged", _fnc_onLBSelChange]; 
+_sealCheckBox ctrlAddEventHandler ["CheckedChanged", _fnc_onCheckChange];
+_gasTypeCombo ctrlAddEventHandler ["LBSelChanged", _fnc_onLBSelChange];

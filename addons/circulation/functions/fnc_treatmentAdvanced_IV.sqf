@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * Handle the IV for the patient with blood types. Have to be local to avoid effect on all clients.

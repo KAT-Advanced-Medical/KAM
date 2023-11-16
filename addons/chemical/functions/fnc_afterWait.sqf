@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
 * Author: DiGii
 * This cant be called manualy!
@@ -22,7 +22,7 @@
 params ["_unit", "_logic", "_gastype", "_radius_max"];
 
 if (!isDamageAllowed _unit) exitWith {
-    [_unit] call FUNC(clearChemicalInjuriesLocal);    
+    [_unit] call FUNC(clearChemicalInjuriesLocal);
 };
 
 if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {

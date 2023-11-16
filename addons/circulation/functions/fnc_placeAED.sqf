@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Tomcat, Blue
  * Place the AED/X in front of unit
@@ -42,7 +42,7 @@ if !(_patient isEqualTo objNull) then {
         params ["_unit", "_patient", "_AEDClassName", "_AED"];
 
         [_unit, _patient, 1, _AEDClassName, [_AED], true] call FUNC(Defibrillator_AttachPads);
-    }, [_unit, _patient, _AEDClassName, _AED], 0.1] call CBA_fnc_waitAndExecute; 
+    }, [_unit, _patient, _AEDClassName, _AED], 0.1] call CBA_fnc_waitAndExecute;
 };
 
 if (_AEDClassName == "kat_X_AED") then {
@@ -55,12 +55,12 @@ if (_AEDClassName == "kat_X_AED") then {
 
         [_unit, _monitorPatient, true] call FUNC(AEDX_DisconnectVitalsMonitor);
         _AED setVariable [QGVAR(AED_X_VitalsMonitor_Volume), (_monitorPatient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false]), true];
-        
+
         [{
             params ["_unit", "_monitorPatient", "_AEDClassName", "_AED", "_monitorBodyPart"];
-            
+
             [_unit, _monitorPatient, _monitorBodyPart, 1, [_AED], true] call FUNC(AEDX_ConnectVitalsMonitor);
-        }, [_unit, _monitorPatient, _AEDClassName, _AED, _monitorBodyPart], 0.15] call CBA_fnc_waitAndExecute; 
+        }, [_unit, _monitorPatient, _AEDClassName, _AED, _monitorBodyPart], 0.15] call CBA_fnc_waitAndExecute;
     } else {
         if !(_patient isEqualTo objNull) then {
             _AED setVariable [QGVAR(AED_X_VitalsMonitor_Volume), (_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false]), true];
@@ -80,7 +80,7 @@ _pickUpText,
     _AED setVariable [QGVAR(DefibrillatorInUse), false, true];
 
     private _patient = _AED getVariable [QGVAR(Defibrillator_Patient), objNull];
-    
+
 
     if !(_patient isEqualTo objNull) then {
         [_medic, _patient, true] call FUNC(Defibrillator_RemovePads);
@@ -89,7 +89,7 @@ _pickUpText,
             params ["_medic", "_patient", "_AEDClassName"];
 
             [_medic, _patient, 0, _AEDClassName, [], true] call FUNC(Defibrillator_AttachPads);
-        }, [_medic, _patient, _AEDClassName], 0.1] call CBA_fnc_waitAndExecute;  
+        }, [_medic, _patient, _AEDClassName], 0.1] call CBA_fnc_waitAndExecute;
     };
 
     if (_AEDClassName == "kat_X_AED") then {
@@ -107,7 +107,7 @@ _pickUpText,
                 params ["_medic", "_patientMonitor", "_monitorBodyPart"];
 
                 [_medic, _patientMonitor, _monitorBodyPart, 0, [], true] call FUNC(AEDX_ConnectVitalsMonitor);
-            }, [_medic, _patientMonitor, _monitorBodyPart], 0.15] call CBA_fnc_waitAndExecute;  
+            }, [_medic, _patientMonitor, _monitorBodyPart], 0.15] call CBA_fnc_waitAndExecute;
         };
     };
 
@@ -122,7 +122,7 @@ _pickUpText,
 },
 {
     params ["_AED", "_unit"];
-    
+
     [_unit, GVAR(medLvl_AED_Station_Interact)] call ACEFUNC(medical_treatment,isMedic) && !((_AED getVariable [QGVAR(Defibrillator_Patient), objNull]) getVariable [QGVAR(DefibrillatorInUse), false]);
 },
 {},

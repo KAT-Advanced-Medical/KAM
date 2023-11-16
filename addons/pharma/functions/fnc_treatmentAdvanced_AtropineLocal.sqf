@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Mazinski.H
  * Locates and Removes Bradycardia Effect.
@@ -14,7 +14,7 @@
  *
  * Public: No
  */
- 
+
 params ["_patient"];
 
 private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];

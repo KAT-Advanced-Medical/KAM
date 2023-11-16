@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * Modified: YetheSamartaka, Blue
@@ -20,7 +20,7 @@
 
 params ["_medic", "_patient", "_soundSource"];
 
-if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) isEqualTo 1) then { 
+if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) isEqualTo 1) then {
     GVAR(BPInterval) = true;
 } else {
     GVAR(BPInterval) = false;
@@ -177,7 +177,7 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {((_pati
             private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
 
             if (GVAR(AdvRhythm)) then {
-                private _cardiacState = _patient getVariable [QGVAR(cardiacArrestType), 0]; 
+                private _cardiacState = _patient getVariable [QGVAR(cardiacArrestType), 0];
 
                 if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [2,4]) then {
                     _hr = _patient call FUNC(getCardiacArrestHeartRate);
@@ -263,7 +263,7 @@ if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && {(_pat
         _args params ["_patient"];
 
         private _soundSource = (_patient getVariable [QGVAR(Defibrillator_Provider), [objNull, -1, -1]]) select 0;
-    
+
         if !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) exitWith {
             _patient setVariable ["kat_AEDXPatient_PulseOx_PFH", nil, true];
             [_idPFH] call CBA_fnc_removePerFrameHandler;
@@ -281,6 +281,6 @@ if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && {(_pat
             };
         };
     }, 2, [_patient]] call CBA_fnc_addPerFrameHandler;
-    
+
     _patient setVariable ["kat_AEDXPatient_PulseOx_PFH", _pulseOximeterPFH, true];
 };

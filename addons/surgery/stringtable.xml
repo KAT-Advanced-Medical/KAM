@@ -85,7 +85,7 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の吐息は掠れて金属臭がします</Japanese>
+            <Japanese>患者の吐息は荒々しく金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
             <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
         </Key>
@@ -98,7 +98,7 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の吐息は掠れて金属臭がします</Japanese>
+            <Japanese>患者の吐息は荒々しく金属臭がします</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
             <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
         </Key>
@@ -850,7 +850,7 @@
             <French>Autoriser la vérification des fractures sur soi-même</French>
             <Korean>골절 자가진단 허용</Korean>
             <German>Erlaubt es eigene Frakturen zu prüfen</German>
-            <Japanese>骨折の自己診断を許可する</Japanese>
+            <Japanese>骨折の自己診断を許可</Japanese>
             <Spanish>Permitir revisarse fracturas propias</Spanish>
             <Portuguese>Permitir verificar as próprias fraturas</Portuguese>
         </Key>

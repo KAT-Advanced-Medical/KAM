@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 #include "..\defines.hpp"
 /*
  * Author: Blue
@@ -21,7 +21,7 @@
 params ["_medic", "_target", ["_source", 0]];
 
 ACEGVAR(medical_gui,pendingReopen) = false; // Prevent medical menu from reopening
- 
+
 if (dialog) then { // If another dialog is open (medical menu) close it
     closeDialog 0;
 };
@@ -61,11 +61,11 @@ GVAR(PulseRateReady) = true;
     };
 
     private _slider = _dlg displayCtrl IDC_EKG_SLIDER;
-    
-    _slider ctrlSetPosition [pxToScreen_X(250), (ctrlPosition _slider) select 1, (ctrlPosition _slider) select 2, (ctrlPosition _slider) select 3];
+
+    _slider ctrlSetPosition [KAT_pxToScreen_X(250), (ctrlPosition _slider) select 1, (ctrlPosition _slider) select 2, (ctrlPosition _slider) select 3];
     _slider ctrlCommit 0;
 
-    _slider ctrlSetPosition [pxToScreen_X(1460), (ctrlPosition _slider) select 1, (ctrlPosition _slider) select 2, (ctrlPosition _slider) select 3];
+    _slider ctrlSetPosition [KAT_pxToScreen_X(1460), (ctrlPosition _slider) select 1, (ctrlPosition _slider) select 2, (ctrlPosition _slider) select 3];
     _slider ctrlCommit 4;
 }, 4, [_dlg]] call CBA_fnc_addPerFrameHandler;
 
@@ -130,7 +130,7 @@ GVAR(PulseRateReady) = true;
         };
 
         ctrlSetText [IDC_EKG_DISPLAY, _ekgDisplay];
-        
+
         if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_Charged), false]) then {
             ctrlShow [IDC_SHOCKBUTTON, true];
         } else {
@@ -142,7 +142,7 @@ GVAR(PulseRateReady) = true;
 
     ctrlSetText [IDC_DISPLAY_DATEANDTIME, format ["%1/%2/%3               %4:%5", (if (date select 2 < 10) then { "0" } else { "" }) + str (date select 2), (if (date select 1 < 10) then { "0" } else { "" }) + str (date select 1), date select 0, (if (date select 3 < 10) then { "0" } else { "" }) + str (date select 3), (if (date select 4 < 10) then { "0" } else { "" }) + str (date select 4)]];
     ctrlSetText [IDC_DISPLAY_ELAPSEDTIME, format ["%1:%2:%3", (if ((floor(time/3600)) < 10) then { "0" } else { "" }) + str (floor(time/3600)), (if ((floor(((time/3600) - floor(time/3600)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((time/3600) - floor(time/3600)) * 60)), (if ((floor(((time/60) - floor(time/60)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((time/60) - floor(time/60)) * 60))]];
-    
+
     if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
         private _partIndex = ((GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2);
 
@@ -157,12 +157,12 @@ GVAR(PulseRateReady) = true;
             if (GVAR(PulseRateReady)) then {
                 GVAR(PulseRateReady) = false;
                 private _pr = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
-                
+
                 if (_pr > 0) then {
                     private _delay = 60/_pr;
 
                     private _randomHigh = round(random [2, 2, 3]);
-                    _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, pxToScreen_H(_randomHigh)];
+                    _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(_randomHigh)];
                     _PRBar ctrlCommit (0.2 max (_delay/4));
 
                     [{
@@ -170,14 +170,14 @@ GVAR(PulseRateReady) = true;
 
                         private _randomMid = round(random [24, 25, 29]);
 
-                        _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, pxToScreen_H(_randomMid)];
+                        _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(_randomMid)];
                         _PRBar ctrlCommit 0.1;
 
                         [{
                             params ["_PRBar", "_delay"];
 
                             private _randomLow = round(random [67, 68, 70]);
-                            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, pxToScreen_H(_randomLow)];
+                            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(_randomLow)];
                             _PRBar ctrlCommit (0.2 max (_delay/2));
                         }, [_PRBar, _delay], 0.1] call CBA_fnc_waitAndExecute;
                     }, [_PRBar, _delay], (0.2 max (_delay/3))] call CBA_fnc_waitAndExecute;
@@ -186,12 +186,12 @@ GVAR(PulseRateReady) = true;
                         GVAR(PulseRateReady) = true;
                     }, [], _delay] call CBA_fnc_waitAndExecute;
                 } else {
-                    _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, pxToScreen_H(71)];
+                    _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
                     _PRBar ctrlCommit 0.1;
                 };
             };
         } else {
-            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, pxToScreen_H(71)];
+            _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
             _PRBar ctrlCommit 0;
         };
     } else {
@@ -232,7 +232,7 @@ GVAR(PulseRateReady) = true;
     };
 
     if !(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
-        
+
         private _rhythmHR = 0;
 
         if(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0] > 0) then {
@@ -240,7 +240,7 @@ GVAR(PulseRateReady) = true;
         } else {
             _rhythmHR = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
         };
-        
+
         _hr = random [100, 100 + _rhythmHR / 2, _rhythmHR];
 
         if (GVAR(AED_X_VitalsMonitor_BloodPressureInterval) > 0) then {
