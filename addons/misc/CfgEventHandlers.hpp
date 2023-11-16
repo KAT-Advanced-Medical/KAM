@@ -8,22 +8,22 @@ class Extended_PreInit_EventHandlers {
 class Extended_Init_EventHandlers {
     class CAManBase {
         class ADDON {
-            init = QUOTE([ARR_2((_this select 0), false)] call FUNC(init));
+            init = QUOTE([ARR_2((_this select 0),false)] call FUNC(init));
         };
     };
     class Land_IntravenStand_01_empty_F {
         class ADDON {
-            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand), [], true)]);
+            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand),[],true)]);
         };
     };
     class Land_IntravenStand_01_1bag_F {
         class ADDON {
-            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand), [1000], true)]);
+            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand),[1000],true)]);
         };
     };
     class Land_IntravenStand_01_2bags_F {
         class ADDON {
-            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand), [ARR_2(1000, 1000)], true)]);
+            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand),[ARR_2(1000,1000)],true)]);
         };
     };
 };

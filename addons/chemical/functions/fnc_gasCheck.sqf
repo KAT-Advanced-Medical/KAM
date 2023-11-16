@@ -1,9 +1,9 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
  * This cant be called manualy!
  *
- * 
+ *
  * Arguments:
  * 0: Module <Logic>
  * 1: Position <Position>
@@ -60,14 +60,14 @@ private _checkplayers = [{
             };
 
             if (!(_x in _playerARR) && _distance < _radius_max) then {
-                _playerARR pushBack _x;            
+                _playerARR pushBack _x;
                 _logic setVariable [QGVAR(gas_playerArr), _playerARR, true];
                 [QGVAR(gasCheck_local), [_x, _logic, _pos, _radius_max, _radius_min, _gastype], _x] call CBA_fnc_targetEvent;
             };
 
         } else {
             if (_distance < _radius_max && alive _x && !(_x getVariable [QGVAR(enteredPoison), false])) then {
-                [QGVAR(gasCheck_ai), [_x, _logic, _pos, _radius_max, _gastype], _x] call CBA_fnc_targetEvent; 
+                [QGVAR(gasCheck_ai), [_x, _logic, _pos, _radius_max, _gastype], _x] call CBA_fnc_targetEvent;
             };
         };
     } forEach _allUnits;

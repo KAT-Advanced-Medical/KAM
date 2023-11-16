@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Add carry load ace actions to vehicle.
@@ -21,7 +21,7 @@ private _type = (typeOf _vehicle);
 
 private _fnc_getFreeSeats = {
     params ["_vehicle"];
-    
+
     // From ace_common_fnc_nearestVehiclesFreeSeat
     private _canSitInCargo = (getNumber (configOf _vehicle >> "ejectDeadCargo")) == 0;
 
@@ -40,13 +40,13 @@ ACELLSTRING(Interaction,MainAction),
 {},
 {
     params ["_vehicle", "_medic", "_args"];
-    
+
     !(_medic getVariable [QACEGVAR(dragging,carriedObject), objNull] isEqualTo objNull) && {_medic getVariable [QACEGVAR(dragging,carriedObject), objNull] isKindOf 'CAManBase'}
 },
 {
     params ["_vehicle", "_medic", "_args"];
     _args params ["_type", "_fnc_getFreeSeats"];
-    
+
     private _loadAction = [];
     _loadAction pushBack [
         [format ["KAT_LoadCarriedPatient_%1", _type],

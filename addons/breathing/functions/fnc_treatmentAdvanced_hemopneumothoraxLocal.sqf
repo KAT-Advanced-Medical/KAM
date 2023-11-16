@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Kygan, modified by YetheSamartaka and Tomcat.
  * Treatment for hemopneumothorax

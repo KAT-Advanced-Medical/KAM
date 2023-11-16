@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Charge up Defibrillator in AED mode
@@ -23,14 +23,14 @@ params ["_medic", "_patient", "_soundSource", "_defibType"];
 playsound3D [QPATHTOF_SOUND(sounds\charging.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
 [{ // Charged
     params ["_medic", "_patient", "_soundSource", "_defibType"];
-    
+
     playsound3D [QPATHTOF_SOUND(sounds\standclear_pushtoshock.wav), _soundSource, false, getPosASL _soundSource, 6, 1, 15];
     [{ // Ready to shock
         params ["_medic", "_patient", "_soundSource", "_defibType"];
 
         _patient setVariable [QGVAR(Defibrillator_Charged), true, true];
 
-        [{ 
+        [{
             params ["_medic", "_patient", "_soundSource"];
 
             !(_patient getVariable [QGVAR(Defibrillator_Charged), false])

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Begin CPR
@@ -34,7 +34,7 @@ GVAR(CPRCancel_MouseID) = [0xF0, [false, false, false], {
 private _CPRStartTime = CBA_missionTime + 2.5;
 
 ACEGVAR(medical_gui,pendingReopen) = false; // Prevent medical menu from reopening
- 
+
 if (dialog) then { // If another dialog is open (medical menu) close it
     closeDialog 0;
 };
@@ -57,7 +57,7 @@ if (_notInVehicle) then {
 
         if (_patient isEqualTo objNull || _medic isEqualTo objNull || !(alive _medic) || IS_UNCONSCIOUS(_medic) || !(IS_UNCONSCIOUS(_patient)) || (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull || !(_medic getVariable [QGVAR(isPerformingCPR), false]) || dialog || {!(objectParent _medic isEqualTo objectParent _patient) || {_patient distance _medic > ACEGVAR(medical_gui,maxDistance)}}) exitWith { // Stop CPR
             [_idPFH] call CBA_fnc_removePerFrameHandler;
-            
+
             _medic setVariable [QGVAR(isPerformingCPR), false, true];
 
             if !(_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
@@ -71,17 +71,17 @@ if (_notInVehicle) then {
             if (_notInVehicle) then {
                 [_medic, "AinvPknlMstpSnonWnonDnon_medicEnd", 2] call ACEFUNC(common,doAnimation);
             };
-            
+
             // Format time to minutes:seconds
             private _CPRTime = CBA_missionTime - _CPRStartTime;
             private _time = format ["%1:%2",(if ((floor(((_CPRTime/3600) - floor(_CPRTime/3600)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((_CPRTime/3600) - floor(_CPRTime/3600)) * 60)), (if ((floor(((_CPRTime/60) - floor(_CPRTime/60)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((_CPRTime/60) - floor(_CPRTime/60)) * 60))];
-            
+
             [_patient, "activity", LSTRING(Activity_CPR), [[_medic, false, true] call ACEFUNC(common,getName), _time]] call ACEFUNC(medical_treatment,addToLog);
-            
+
             if (CPRStartTime <= CBA_missionTime - 18) then {
                 _patient setVariable [QGVAR(OxygenationPeriod), CBA_missionTime, true];
             };
-            
+
             closeDialog 0;
 
             [LLSTRING(CancelCPR), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
@@ -123,7 +123,7 @@ if (_patient getVariable [QGVAR(RhythmAnalyzed), false]) then {
         if(!((_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull) && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && !(_patient getVariable [QGVAR(DefibrillatorInUse), false])) then {
             private _provider = _patient getVariable QGVAR(Defibrillator_Provider);
             private _source = _medic;
-            
+
             switch (_provider select 1) do {
                 case 1: {
                     _source = _provider select 0;

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Miss Heda
  * Detaches a armband from a previously attached limb.
@@ -18,9 +18,9 @@
 
 params ["_unit", "_limbNumber"];
 
-switch (_limbNumber) do 
+switch (_limbNumber) do
 {
-    case 0: { 
+    case 0: {
         private _objectLA = _unit getVariable [QGVAR(whichArmabndisSlingedLA), ObjNull];
 
         switch (typeOf _objectLA) do

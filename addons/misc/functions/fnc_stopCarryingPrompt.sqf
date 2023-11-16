@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Give interactions to stop being carried
@@ -52,7 +52,7 @@ _unit setVariable [QGVAR(GetOffActionID), [0xF1, [false, false, false], {
     _unit setVariable [QGVAR(GetOffActionID), nil];
 }, [_carrier, _unit], 3600, {
     params ["_carrier", "_unit"];
-    
+
     [] call ACEFUNC(interaction,hideMouseHint);
     GVAR(Carrier) = nil;
     [_unit getVariable QGVAR(GetOffActionID), "keydown"] call CBA_fnc_removeKeyHandler;

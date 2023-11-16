@@ -1,8 +1,8 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
- * Author: Miss Heda, 
+ * Author: Miss Heda,
  * Contributers: YonV, MiszczuZPolski
- * 
+ *
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -21,16 +21,16 @@ params ["_patient"];
 if (ACE_Player != _patient) exitWith {};
 _defaultAnimSpeed = getAnimSpeedCoef _patient;
 
-/// ACE Fatigue 
+/// ACE Fatigue
 if (ACEGVAR(advanced_fatigue,enabled)) then {
-    
+
     [{
         params ["_patient", "_defaultAnimSpeed"];
 
         if !(alive _patient) exitWith {};
         ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 3000;
         ["kat_PDF", 0] call ACEFUNC(advanced_fatigue,addDutyFactor);
-        [LLSTRING(Pervitin_start), 2, _patient] call ACEFUNC(common,displayTextStructured); 
+        [LLSTRING(Pervitin_start), 2, _patient] call ACEFUNC(common,displayTextStructured);
 
         if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
             ACEGVAR(advanced_fatigue,setAnimExclusions) pushBack "PervitinOverride";
@@ -123,7 +123,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
         },
         [_patient], 60] call CBA_fnc_waitAndExecute;
 
-        
+
         [{
             params ["_patient"];
             if !(alive _patient) exitWith {};

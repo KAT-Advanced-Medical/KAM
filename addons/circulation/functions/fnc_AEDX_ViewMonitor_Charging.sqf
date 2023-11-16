@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 #include "..\defines.hpp"
 /*
  * Author: Blue
@@ -66,7 +66,7 @@ private _chargeBar = (_dlg displayCtrl IDC_CHARGE_BAR_BACKGROUND);
 ctrlSetText [IDC_CHARGE_SHOCKTOTAL, format ["%1", GVAR(AEDX_MonitorTarget) getVariable [QGVAR(Defibrillator_ShockAmount), 0]]];
 
 if (_skip) then { // Skip visual charging process
-    _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(681), (ctrlPosition _chargeBar) select 2, pxToScreen_H(679)];
+    _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, KAT_pxToScreen_Y(681), (ctrlPosition _chargeBar) select 2, KAT_pxToScreen_H(679)];
     _chargeBar ctrlCommit 0;
 
     (_dlg displayCtrl IDC_CHARGE_BAR_1) ctrlSetTextColor [0, 0, 0, 1];
@@ -135,7 +135,7 @@ if (_skip) then { // Skip visual charging process
 
     [{
         params ["_dlg"];
-    
+
         isNull _dlg || !(GVAR(AEDX_MonitorCharging));
     }, {
         params ["_dlg"];
@@ -149,7 +149,7 @@ if (_skip) then { // Skip visual charging process
 
             ctrlSetText [IDC_CHARGE_STATUS, LLSTRING(AEDX_Monitor_CHARGED)];
         };
-        
+
     }, [_dlg], 60, {}] call CBA_fnc_waitUntilAndExecute;
 
     [{
@@ -176,7 +176,7 @@ if (_skip) then { // Skip visual charging process
         (_dlg displayCtrl IDC_CHARGE_BAR_7) ctrlSetTextColor [0, 0, 0, 1];
         (_dlg displayCtrl IDC_CHARGE_BAR_8) ctrlSetTextColor [0, 0, 0, 1];
 
-        _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(1089), (ctrlPosition _chargeBar) select 2, pxToScreen_H(271)];
+        _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, KAT_pxToScreen_Y(1089), (ctrlPosition _chargeBar) select 2, KAT_pxToScreen_H(271)];
         _chargeBar ctrlCommit 0;
 
         [{
@@ -187,7 +187,7 @@ if (_skip) then { // Skip visual charging process
             (_dlg displayCtrl IDC_CHARGE_BAR_15) ctrlSetTextColor [0, 0, 0, 1];
             (_dlg displayCtrl IDC_CHARGE_BAR_20) ctrlSetTextColor [0, 0, 0, 1];
 
-            _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(953), (ctrlPosition _chargeBar) select 2, pxToScreen_H(407)];
+            _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, KAT_pxToScreen_Y(953), (ctrlPosition _chargeBar) select 2, KAT_pxToScreen_H(407)];
             _chargeBar ctrlCommit 0;
 
             [{
@@ -195,7 +195,7 @@ if (_skip) then { // Skip visual charging process
 
                 (_dlg displayCtrl IDC_CHARGE_BAR_30) ctrlSetTextColor [0, 0, 0, 1];
 
-                _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(918), (ctrlPosition _chargeBar) select 2, pxToScreen_H(442)];
+                _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, KAT_pxToScreen_Y(918), (ctrlPosition _chargeBar) select 2, KAT_pxToScreen_H(442)];
                 _chargeBar ctrlCommit 0;
 
                 [{
@@ -203,7 +203,7 @@ if (_skip) then { // Skip visual charging process
 
                     (_dlg displayCtrl IDC_CHARGE_BAR_50) ctrlSetTextColor [0, 0, 0, 1];
 
-                    _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(884), (ctrlPosition _chargeBar) select 2, pxToScreen_H(476)];
+                    _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, KAT_pxToScreen_Y(884), (ctrlPosition _chargeBar) select 2, KAT_pxToScreen_H(476)];
                     _chargeBar ctrlCommit 0;
 
                     [{
@@ -212,7 +212,7 @@ if (_skip) then { // Skip visual charging process
                         (_dlg displayCtrl IDC_CHARGE_BAR_70) ctrlSetTextColor [0, 0, 0, 1];
                         (_dlg displayCtrl IDC_CHARGE_BAR_85) ctrlSetTextColor [0, 0, 0, 1];
 
-                        _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(817), (ctrlPosition _chargeBar) select 2, pxToScreen_H(543)];
+                        _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, KAT_pxToScreen_Y(817), (ctrlPosition _chargeBar) select 2, KAT_pxToScreen_H(543)];
                         _chargeBar ctrlCommit 0;
 
                         [{
@@ -220,7 +220,7 @@ if (_skip) then { // Skip visual charging process
 
                             (_dlg displayCtrl IDC_CHARGE_BAR_100) ctrlSetTextColor [0, 0, 0, 1];
 
-                            _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(782), (ctrlPosition _chargeBar) select 2, pxToScreen_H(578)];
+                            _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, KAT_pxToScreen_Y(782), (ctrlPosition _chargeBar) select 2, KAT_pxToScreen_H(578)];
                             _chargeBar ctrlCommit 0;
 
                             [{
@@ -228,7 +228,7 @@ if (_skip) then { // Skip visual charging process
 
                                 (_dlg displayCtrl IDC_CHARGE_BAR_120) ctrlSetTextColor [0, 0, 0, 1];
 
-                                _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(748), (ctrlPosition _chargeBar) select 2, pxToScreen_H(612)];
+                                _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, KAT_pxToScreen_Y(748), (ctrlPosition _chargeBar) select 2, KAT_pxToScreen_H(612)];
                                 _chargeBar ctrlCommit 0;
 
                                 [{
@@ -237,7 +237,7 @@ if (_skip) then { // Skip visual charging process
                                     (_dlg displayCtrl IDC_CHARGE_BAR_150) ctrlSetTextColor [0, 0, 0, 1];
                                     (_dlg displayCtrl IDC_CHARGE_BAR_150) ctrlSetBackgroundColor [1, 0.35, 0, 1];
 
-                                    _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(680), (ctrlPosition _chargeBar) select 2, pxToScreen_H(680)];
+                                    _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, KAT_pxToScreen_Y(680), (ctrlPosition _chargeBar) select 2, KAT_pxToScreen_H(680)];
                                     _chargeBar ctrlCommit 0;
                                 }, [_dlg, _chargeBar], 0.5] call CBA_fnc_waitAndExecute;
                             }, [_dlg, _chargeBar], 0.6] call CBA_fnc_waitAndExecute;
@@ -307,7 +307,7 @@ if (_skip) then { // Skip visual charging process
             (_dlg displayCtrl IDC_CHARGE_BAR_150) ctrlSetTextColor [1, 1, 1, 1];
             (_dlg displayCtrl IDC_CHARGE_BAR_150) ctrlSetBackgroundColor [0, 0, 0, 0];
 
-            _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, pxToScreen_Y(1360), (ctrlPosition _chargeBar) select 2, pxToScreen_H(1)];
+            _chargeBar ctrlSetPosition [(ctrlPosition _chargeBar) select 0, KAT_pxToScreen_Y(1360), (ctrlPosition _chargeBar) select 2, KAT_pxToScreen_H(1)];
             _chargeBar ctrlCommit 0;
         }, [_dlg, _chargeBar, _fnc_showDialog], 1] call CBA_fnc_waitAndExecute;
     };

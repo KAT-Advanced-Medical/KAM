@@ -26,8 +26,8 @@ class RscDisplayAttributes {
 
 
 class GVAR(RscChangeBloodType): RscDisplayAttributes {
-    onLoad = QUOTE([ARR_3('onLoad', _this, QQGVAR(RscChangeBloodType))] call FUNC(zeusAttributes));
-    onUnload = QUOTE([ARR_3('onUnload', _this, QQGVAR(RscChangeBloodType))] call FUNC(zeusAttributes));
+    onLoad = QUOTE([ARR_3('onLoad',_this,QQGVAR(RscChangeBloodType))] call FUNC(zeusAttributes));
+    onUnload = QUOTE([ARR_3('onUnload',_this,QQGVAR(RscChangeBloodType))] call FUNC(zeusAttributes));
     class Controls: Controls {
         class Background: Background {};
         class Title: Title {};
@@ -111,8 +111,8 @@ class GVAR(RscChangeBloodType): RscDisplayAttributes {
 
 
 class GVAR(RscManageAirway): RscDisplayAttributes {
-    onLoad = QUOTE([ARR_3('onLoad', _this, QQGVAR(RscManageAirway))] call FUNC(zeusAttributes));
-    onUnload = QUOTE([ARR_3('onUnload', _this, QQGVAR(RscManageAirway))] call FUNC(zeusAttributes));
+    onLoad = QUOTE([ARR_3('onLoad',_this,QQGVAR(RscManageAirway))] call FUNC(zeusAttributes));
+    onUnload = QUOTE([ARR_3('onUnload',_this,QQGVAR(RscManageAirway))] call FUNC(zeusAttributes));
     class Controls: Controls {
         class Background: Background {};
         class Title: Title {};
@@ -210,8 +210,8 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
 
 
 class GVAR(RscCardiacStateModule): RscDisplayAttributes {
-    onLoad = QUOTE([ARR_3('onLoad', _this, QQGVAR(RscCardiacStateModule))] call FUNC(zeusAttributes));
-    onUnload = QUOTE([ARR_3('onUnload', _this, QQGVAR(RscCardiacStateModule))] call FUNC(zeusAttributes));
+    onLoad = QUOTE([ARR_3('onLoad',_this,QQGVAR(RscCardiacStateModule))] call FUNC(zeusAttributes));
+    onUnload = QUOTE([ARR_3('onUnload',_this,QQGVAR(RscCardiacStateModule))] call FUNC(zeusAttributes));
     class Controls: Controls {
         class Background: Background {};
         class Title: Title {};

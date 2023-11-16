@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Assign cardiac arrest type for unit entering cardiac arrest
@@ -19,7 +19,7 @@
 
 params ["_unit", "_active", ["_initial",true]];
 
-/* type 
+/* type
 0 normal
 1 asystole, no pulse, no shock
 2 pulseless electrical activity, AEDX fake pulse, no shock
@@ -135,7 +135,7 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
         case 2: {
             [{
                 params ["_unit"];
-                
+
                 if (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then { // Don't deteriorate during CPR
                     if (_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 2) then {
                         _unit setVariable [QGVAR(cardiacArrestType), 1, true];

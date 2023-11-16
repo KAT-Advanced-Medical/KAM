@@ -210,7 +210,7 @@ class CfgVehicles {
 
                     class LeftArm {
                         displayName = CSTRING(Armband_Sling_Left_Arm);
-                        condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isLeftArmFree), false)]);
+                        condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isLeftArmFree),false)]);
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = "";
                         showDisabled = 0;
@@ -251,11 +251,11 @@ class CfgVehicles {
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandKat.paa);
                         };
-                    }; 
+                    };
 
                     class RightArm {
                         displayName = CSTRING(Armband_Sling_Right_Arm);
-                        condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isRightArmFree), false)]);
+                        condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isRightArmFree),false)]);
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = "";
                         showDisabled = 0;
@@ -296,11 +296,11 @@ class CfgVehicles {
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandKat.paa);
                         };
-                    }; 
+                    };
 
                     class LeftLeg {
                         displayName = CSTRING(Armband_Sling_Left_Leg);
-                        condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isLeftLegFree), false)]);
+                        condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isLeftLegFree),false)]);
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = "";
                         showDisabled = 0;
@@ -341,11 +341,11 @@ class CfgVehicles {
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandKat.paa);
                         };
-                    }; 
+                    };
 
                     class RightLeg {
                         displayName = CSTRING(Armband_Sling_Right_Leg);
-                        condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isRightLegFree), false)]);
+                        condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isRightLegFree),false)]);
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = "";
                         showDisabled = 0;
@@ -390,36 +390,36 @@ class CfgVehicles {
 
                     class UnSlingLeftArm {
                         displayName = CSTRING(Armband_UnSling_Left_Arm);
-                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isLeftArmFree), false)]));
+                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isLeftArmFree),false)]));
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_2(_player, 0)] call FUNC(unSlingArmband));
+                        statement = QUOTE([ARR_2(_player,0)] call FUNC(unSlingArmband));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandLeftArm.paa);
-                    }; 
+                    };
 
                     class UnSlingRightArm {
                         displayName = CSTRING(Armband_UnSling_Right_Arm);
-                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isRightArmFree), false)]));
+                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isRightArmFree),false)]));
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_2(_player, 1)] call FUNC(unSlingArmband));
+                        statement = QUOTE([ARR_2(_player,1)] call FUNC(unSlingArmband));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandRightArm.paa);
-                    }; 
+                    };
 
                     class UnSlingLeftLeg {
                         displayName = CSTRING(Armband_UnSling_Left_Leg);
-                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isLeftLegFree), false)]));
+                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isLeftLegFree),false)]));
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_2(_player, 2)] call FUNC(unSlingArmband));
+                        statement = QUOTE([ARR_2(_player,2)] call FUNC(unSlingArmband));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandLeftLeg.paa);
-                    }; 
+                    };
 
                     class UnSlingRightLeg {
                         displayName = CSTRING(Armband_UnSling_Right_Leg);
-                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isRightLegFree), false)]));
+                        condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isRightLegFree),false)]));
                         exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
-                        statement = QUOTE([ARR_2(_player, 3)] call FUNC(unSlingArmband));
+                        statement = QUOTE([ARR_2(_player,3)] call FUNC(unSlingArmband));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandRightLeg.paa);
                     };
@@ -913,9 +913,9 @@ class CfgVehicles {
             class ACE_MainActions {
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
-                    condition = QUOTE(_target getVariable [ARR_2('ACE_isUnconscious', false)] && {!(isNull (objectParent _target))} && {isNull (objectParent _player)});
+                    condition = QUOTE(_target getVariable [ARR_2('ACE_isUnconscious',false)] && {!(isNull (objectParent _target))} && {isNull (objectParent _player)});
                     exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
-                    statement = QUOTE([ARR_2(_player, _target)] call FUNC(unloadAndCarryPatient));
+                    statement = QUOTE([ARR_2(_player,_target)] call FUNC(unloadAndCarryPatient));
                     icon = QACEPATHTOF(dragging,UI\icons\person_carry.paa);
                 };
             };

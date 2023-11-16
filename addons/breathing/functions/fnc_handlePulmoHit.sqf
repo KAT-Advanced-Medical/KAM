@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * Called when a unit is damaged.
@@ -29,7 +29,7 @@ private _fnc_inflictAdvancedPneumothorax = {
     // Prevent the patient from getting both hemothorax and tension pneumothorax at the same time
     private _hemo = _unit getVariable [QGVAR(hemopneumothorax), false];
     private _tension = _unit getVariable [QGVAR(tensionpneumothorax), false];
-    
+
     // Roll chance to get advanced pneumothorax or skip chance if deteriorated
     if ((floor (random 100) <= (GVAR(advPtxChance) + _chanceIncrease) || _deteriorated) && !(_hemo || _tension)) then {
         [_unit, 0.7] call ACEFUNC(medical_status,adjustPainLevel);
@@ -72,7 +72,7 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
                 [{
                     params ["_args", "_idPFH"];
                     _args params ["_unit", "_chanceIncrease", "_fnc_inflictAdvancedPneumothorax"];
-                    
+
                     // If patient is dead, already treated or has already deteriorated into advanced pneumothorax, kill the PFH
                     if(_unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false] || !(alive _unit) || _unit getVariable [QGVAR(pneumothorax), 0] isEqualTo 0) exitWith {
                         [_idPFH] call CBA_fnc_removePerFrameHandler;
@@ -80,11 +80,11 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
 
                     if (floor (random 100) <= GVAR(deterioratingPneumothorax_chance)) then {
                         private _ptxTarget = (_unit getVariable [QGVAR(pneumothorax), 0]) + 1;
-                        
+
                         // Once deteriorated far enough try to inflict advanced pneumothorax or if disabled kill the PFH
                         if (_ptxTarget > 4) exitWith {
                             if(GVAR(advPtxEnable)) then {
-                                
+
                                 [_unit, _chanceIncrease, true] call _fnc_inflictAdvancedPneumothorax;
                             };
                             [_idPFH] call CBA_fnc_removePerFrameHandler;

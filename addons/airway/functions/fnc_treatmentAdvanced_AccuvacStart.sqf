@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Play Accuvac suction sound
@@ -30,6 +30,6 @@ private _accuvacSuction = playSound3D [QPATHTOF_SOUND(sounds\suction.wav), _pati
     !dialog;
 }, {
     params ["_accuvacSuction"];
-    
+
     stopSound _accuvacSuction;
 }, [_accuvacSuction], 5.7] call CBA_fnc_waitUntilAndExecute;

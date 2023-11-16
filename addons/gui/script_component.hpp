@@ -14,13 +14,7 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_GUI
 #endif
 
-#include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 #include "\x\kat\addons\main\script_macros.hpp"
-
-#include "\a3\ui_f\hpp\defineResincl.inc"
-#include "\a3\ui_f\hpp\defineDIKCodes.inc"
-#include "\a3\ui_f\hpp\defineCommonGrids.inc"
-#include "\a3\ui_f\hpp\defineCommonColors.inc"
 
 #define POS_X(N) ((N) * GUI_GRID_W + GUI_GRID_CENTER_X)
 #define POS_Y(N) ((N) * GUI_GRID_H + GUI_GRID_CENTER_Y)
@@ -34,6 +28,7 @@
 #define PATIENT_INFO_IGUI_OFFSET_X (PATIENT_INFO_IGUI_X - PATIENT_INFO_IGUI_BASE_X)
 #define PATIENT_INFO_IGUI_OFFSET_Y (PATIENT_INFO_IGUI_Y - PATIENT_INFO_IGUI_BASE_Y)
 
+#undef MED_LOG_VARNAME
 #define MED_LOG_VARNAME(type) (format ["ace_medical_log_%1", type])
 
 #define IDD_MEDICAL_MENU 38580

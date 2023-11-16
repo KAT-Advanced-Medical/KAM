@@ -839,7 +839,7 @@
             <Turkish>Künyeyi Kontrol Et</Turkish>
             <Italian>Controlla piastrine</Italian>
             <Russian>Проверка Солдатский жетон</Russian>
-            <Japanese>ドッグタグを確認する</Japanese>
+            <Japanese>ドッグタグを確認</Japanese>
             <Portuguese>Checar placa de identificação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_DogTag_Action">
@@ -1248,7 +1248,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_MeasureBloodPressure">
             <English>Measure Blood Pressure</English>
-            <Japanese>血圧を測定する</Japanese>
+            <Japanese>血圧を測定</Japanese>
             <French>Mesurer la tension artérielle</French>
             <Korean>혈압 측정</Korean>
             <German>Blutdruck messen</German>
@@ -2007,7 +2007,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod">
             <English>Oxygenation Period</English>
-            <Japanese>酸素供給期間</Japanese>
+            <Japanese>酸素化期間</Japanese>
             <French>Période d'oxygénation</French>
             <Korean>산소 공급 시간</Korean>
             <German>Sauerstoffanreicherungszeitraum</German>
@@ -2166,7 +2166,7 @@
             <Turkish>Kendi kendine kan alımını etkinleştir </Turkish>
             <Italian>Abilita l'autoprelievo di sangue </Italian>
             <Russian>Включить самостоятельное взятие крови</Russian>
-            <Japanese>自己採血を有効にする</Japanese>
+            <Japanese>自己採血を有効化</Japanese>
             <Portuguese>Habilitar auto-extração de sangue</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BLOOD_DRAWTIME_500ML">
@@ -2510,7 +2510,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_cardiacArrestBleedRate">
             <English>Cardiac Arrest Bleed Rate</English>
-            <Japanese>心停止時出血倍率</Japanese>
+            <Japanese>心停止時の出血速度</Japanese>
             <French>Taux de saignement suite à un arrêt cardiaque</French>
             <Korean>심정지 출혈 배율</Korean>
             <German>Blutungsrate bei Herzstillstand</German>

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Miss Heda
  *
@@ -18,7 +18,7 @@ params ["_patient"];
 
 if (ACE_Player != _patient) exitWith {};
 
-/// ACE Fatigue 
+/// ACE Fatigue
 if (ACEGVAR(advanced_fatigue,enabled)) then {
 
     [{
@@ -26,7 +26,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
         ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 1500;
     },
     [_patient], 2.5] call CBA_fnc_waitAndExecute;
-    
+
 } else {
 
     [{

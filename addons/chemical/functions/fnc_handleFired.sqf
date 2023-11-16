@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
 * Author: DiGii
 *
@@ -44,8 +44,8 @@ private _gasLvL = [_configClass, "KAT_toxicLvL", 1] call BIS_fnc_returnConfigEnt
     if (!isNull _projectile) exitwith {
         _args set [1, getPos _projectile];
     };
-    
+
     [_posarr, _lifetime, _radius, _gasLvL] call FUNC(createZone);
-    
+
     [_handler] call CBA_fnc_removePerFrameHandler;
 }, 0, [_projectile, [0, 0, 0], [_lifetime, _radius, _gasLvL]]] call CBA_fnc_addPerFrameHandler;

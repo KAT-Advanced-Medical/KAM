@@ -257,7 +257,7 @@
             <Turkish>Havayolları temiz</Turkish>
             <Italian>Le vie aeree sono libere</Italian>
             <Russian>Дыхательные пути чисты</Russian>
-            <Japanese>気道は確保されています</Japanese>
+            <Japanese>気道はクリアです</Japanese>
             <Portuguese>Vias aéreas limpas</Portuguese>
             <Norwegian>Luftveier er frie</Norwegian>
         </Key>
@@ -342,7 +342,7 @@
             <Turkish>Havayolları temiz</Turkish>
             <Italian>Le vie aeree sono libere</Italian>
             <Russian>Дыхательные пути чисты</Russian>
-            <Japanese>気道は確保されています</Japanese>
+            <Japanese>気道はクリアです</Japanese>
             <Portuguese>Vias aéreas limpas</Portuguese>
             <Norwegian>Luftveiene er frie</Norwegian>
         </Key>
@@ -359,7 +359,7 @@
             <Turkish>Öğe kullanılamadı, hava yolları açık değil</Turkish>
             <Italian>L'articolo non può essere utilizzato, le vie aeree non sono libere</Italian>
             <Russian>Предмет не может быть использован, дыхательные пути не очищены</Russian>
-            <Japanese>使用できませんでした、気道が詰まっています</Japanese>
+            <Japanese>使用できません、 気道が詰まっています</Japanese>
             <Portuguese>O item não pôde ser usado, vias aéreas bloqueadas</Portuguese>
             <Norwegian>Gjenstanden kunne ikke brukes, luftveiene er ikke frie</Norwegian>
         </Key>
@@ -376,7 +376,7 @@
             <Turkish>Hyperextension Gerçekleştir</Turkish>
             <Italian>Iperestensione della testa</Italian>
             <Russian>Гиперэкстензия головы</Russian>
-            <Japanese>気道確保 (頭部後屈あご先挙上法)</Japanese>
+            <Japanese>頭部後屈顎先挙上法を行う</Japanese>
             <Portuguese>Hiperextensão de cabeça</Portuguese>
             <Norwegian>Hyperforlengelse av hode</Norwegian>
         </Key>
@@ -393,7 +393,7 @@
             <Turkish>Hyperextension Gerçekleşmiş Kafa</Turkish>
             <Italian>Testa iperestesa</Italian>
             <Russian>перетянутый голова</Russian>
-            <Japanese>気道確保中 (頭部後屈あご先挙上法)</Japanese>
+            <Japanese>頭部後屈を実行中</Japanese>
             <Portuguese>Cabeça hiperestendida</Portuguese>
             <Norwegian>Hode er overekstendert</Norwegian>
         </Key>
@@ -410,7 +410,7 @@
             <Turkish>Uzatılmış</Turkish>
             <Italian>Estendendo</Italian>
             <Russian>Гиперэкстензия головы</Russian>
-            <Japanese>気道確保実施中</Japanese>
+            <Japanese>頭部後屈させています</Japanese>
             <Portuguese>Estendendo</Portuguese>
             <Norwegian>Forlenger</Norwegian>
         </Key>
@@ -427,7 +427,7 @@
             <Turkish>Hyperextension İptal Edildi</Turkish>
             <Italian>Iperestensione della testa annullata</Italian>
             <Russian>Гиперэкстензия головы отменена</Russian>
-            <Japanese>気道確保が中断されました</Japanese>
+            <Japanese>頭部後屈が中断されました</Japanese>
             <Portuguese>Hiperextensão cancelada</Portuguese>
             <Norwegian>Hyperforlengelse av hode er avbrutt</Norwegian>
         </Key>
@@ -444,7 +444,7 @@
             <Turkish>Kaçma, bir hayat kurtarıyorsun!</Turkish>
             <Italian>Non andartene, stai salvando una vita!</Italian>
             <Russian>Не убегай, ты спасаешь жизнь!</Russian>
-            <Japanese>移動しないでください、 あなたは気道確保中です!</Japanese>
+            <Japanese>離れないでください、 あなたは命を繋いでいます!</Japanese>
             <Portuguese>Não vá embora, você está salvando uma vida!</Portuguese>
             <Norwegian>Ikke løp vekk, du redder et liv!</Norwegian>
         </Key>
@@ -461,7 +461,7 @@
             <Turkish>Baş dönüşü yapıldı, hava yolları hala net değil</Turkish>
             <Italian>Rotazione della testa eseguita, le vie aeree non sono ancora libere</Italian>
             <Russian>Выполнен поворот головы, дыхательные пути еще не очистились</Russian>
-            <Japanese>試みましたが、異物がまだ残っています</Japanese>
+            <Japanese>除去を試みましたが、 気道はまだ詰まっています</Japanese>
             <Portuguese>Cabeça virada, vias aéreas ainda não limpas</Portuguese>
             <Norwegian>vending av hode er utført, luftveiene er fortsatt ikke frie</Norwegian>
         </Key>
@@ -484,7 +484,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>
-            <Japanese>異物除去の開始</Japanese>
+            <Japanese>頭を回して異物を除去</Japanese>
             <French>Début de la rotation de la tête</French>
             <Korean>고개 돌리기 시작</Korean>
             <Norwegian>Begynn vending av hode</Norwegian>
@@ -494,7 +494,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
-            <Japanese>異物除去を中止しました</Japanese>
+            <Japanese>頭を回すのを止めました</Japanese>
             <French>Annulation de la rotation de la tête</French>
             <Korean>고개 돌리기 취소됨</Korean>
             <Norwegian>vewnding av hode ble avbrutt</Norwegian>
@@ -504,7 +504,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
-            <Japanese>異物除去をやめる</Japanese>
+            <Japanese>頭を回すのを止める</Japanese>
             <French>Arrêt de la rotation de la tête</French>
             <Korean>고개 돌리기 멈추기</Korean>
             <Norwegian>Stop vending av hode</Norwegian>
@@ -678,7 +678,7 @@
             <Turkish>Baş döndürme başarı olasılığı</Turkish>
             <Italian>Probabilità di successo della rotazione della testa</Italian>
             <Russian>Вероятность успеха для поворота головы</Russian>
-            <Japanese>異物の除去の成功確率</Japanese>
+            <Japanese>頭を回して異物を除去の成功確率</Japanese>
             <Portuguese>Probabilidade de sucesso ao virar a cabeça</Portuguese>
             <Norwegian>sannsynligheten for sukksess ved vending av hode</Norwegian>
         </Key>
@@ -848,7 +848,7 @@
             <Turkish>Kafayı aşırı germe zamanı</Turkish>
             <Italian>Tempo per iperestendere la testa</Italian>
             <Russian>Время перенапрягать голову</Russian>
-            <Japanese>気道確保の所要時間</Japanese>
+            <Japanese>頭部後屈顎先挙上法の所要時間</Japanese>
             <Portuguese>Tempo para hiperestender a cabeça</Portuguese>
             <Norwegian>Tid for å overstrekke hode</Norwegian>
         </Key>
@@ -865,13 +865,13 @@
             <Turkish>Kafanın aşırı gerilmesi ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per iperestendere la testa</Italian>
             <Russian>Сколько времени потребуется, чтобы перетянуть голову</Russian>
-            <Japanese>気道確保 (頭部後屈あご先挙上法) を完了するのにどのくらい時間がかかるか設定します</Japanese>
+            <Japanese>頭部後屈を完了するのにどのくらい時間がかかるか設定します</Japanese>
             <Portuguese>Quanto tempo demorará para hiperestender a cabeça</Portuguese>
             <Norwegian>Hvor lang tid det vil ta å overstrekke hodet</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval">
             <English>Head Turning Interval</English>
-            <Japanese>異物除去の間隔</Japanese>
+            <Japanese>頭を回して異物を除去の間隔</Japanese>
             <French>Intervalle de la rotation de la tête</French>
             <Korean>고개 돌리기 간격</Korean>
             <Norwegian>Intervall for vending av hode</Norwegian>
@@ -881,7 +881,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval_DESC">
             <English>Time between head turning attempts</English>
-            <Japanese>異物除去を実行する間隔</Japanese>
+            <Japanese>頭を回して異物を除去を実行する間隔</Japanese>
             <French>Temps entre chaque tentative de rotation de la tête</French>
             <Korean>고개 돌리기를 시도하는 간격</Korean>
             <Norwegian>Tiden mellom forsøk på vending av hode</Norwegian>
@@ -891,7 +891,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Activity_HeadTurning">
             <English>%1 finished head turning (x%2)</English>
-            <Japanese>%1 は異物除去を行った (x%2)</Japanese>
+            <Japanese>%1 は頭を回して異物除去を行った (x%2)</Japanese>
             <French>%1 a terminé de tourner la tête (x%2)</French>
             <Korean>%1은(는) 고개 돌리기를 끝냈습니다 (x%2)</Korean>
             <Norwegian>%1 fullførte vending av hode (%2%).</Norwegian>
@@ -1327,7 +1327,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_AutoTriage">
             <English>Auto Triage Airways</English>
-            <Japanese>気道による自動トリアージ</Japanese>
+            <Japanese>気道状態による自動トリアージ</Japanese>
             <German>Auto Triage Atemwege</German>
             <French>Triage automatique des voies aériennes</French>
             <Korean>기도 확인으로 부상자 자동 분류</Korean>
@@ -1351,7 +1351,7 @@
             <English>Block head turning</English>
             <Czech>Blokování otáčení hlavou</Czech>
             <Korean>고개 돌리기 막기</Korean>
-            <Japanese>異物の除去の阻害</Japanese>
+            <Japanese>頭を回して異物を除去の阻害</Japanese>
             <French>Bloquer la rotation de la tête</French>
             <German>Verhindert das Drehen des Kopfes</German>
             <Italian>Blocca la rotazione della testa</Italian>
@@ -1363,7 +1363,7 @@
             <English>Blocks head turning if patient has Guedel Tube inserted</English>
             <Czech>Blokuje otáčení hlavou pokud má pacient zavedenou Guedel tubu</Czech>
             <Korean>환자가 게델튜브를 삽입한 경우 고개 돌리기를 막습니다.</Korean>
-            <Japanese>患者にゲデルチューブが挿管されている時に異物の除去を出来ないようにします</Japanese>
+            <Japanese>患者にゲデルチューブが挿管されている時に頭を回して異物を除去を実施出来ないようにします</Japanese>
             <French>Bloque la rotation de la tête si le patient a une canule de Guedel insérée</French>
             <German>Verhindert das zur Seite Drehen des Kopfes während ein Guedetubus eingeführt ist</German>
             <Italian>Blocca la rotazione della testa se il paziente ha la canula di Guedel inserita</Italian>
