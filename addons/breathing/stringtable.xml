@@ -1426,12 +1426,13 @@
             <French>Utiliser le BVM avec de l'oxygène (Véhicule)</French>
             <Portuguese>Usar BVM com cilindro de oxigênio (veículo)</Portuguese>
             <Spanish>Usa el Ambu con tanque de oxígeno (vehículo)</Spanish>
+            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용</Korean>
             <Japanese>BVMと酸素ボンベ(車両)を使用</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PortableOxygen_Vehicle_Progress">
             <English>Using BVM with Oxygen Tank (Vehicle)</English>
             <German>Beatme mit BVM und Sauerstoff (vom Fahrzeug)</German>
-            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용</Korean>
+            <Korean>산소 탱크가 달린 인공호흡기(차량) 사용 중</Korean>
             <Japanese>BVMと酸素ボンベ(車両)を使用中</Japanese>
             <French>Utilisation du BVM avec un réservoir d'oxygène (Véhicule)</French>
             <Italian>Usa maschera ambu con la bombola d'ossigeno (veicolo)</Italian>
