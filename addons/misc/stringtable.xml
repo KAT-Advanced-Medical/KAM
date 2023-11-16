@@ -873,6 +873,181 @@
             <Spanish>Parche de grupo sanguíneo AB-</Spanish>
             <Portuguese>Sutache de grupo sanguíneo AB-</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Misc_SubCategory_IFAK">
+            <English>(IFAK) Individual First Aid Kit</English>
+            <German>(IEHK) Individuelles Erste Hilfe Kit</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SubCategory_MFAK">
+            <English>(MFAK) Multiple First Aid Kit</English>
+            <German>(MEHK) Mehrfaches Erste Hilfe Kit</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SubCategory_AFAK">
+            <English>(AFAK) Advanced First Aid Kit</English>
+            <German>(EEHK) Erweitertes Erste Hilfe Kit</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FAK_Container">
+            <English>Items unload Container</English>
+            <German>Gegenstands entlade Bereich</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FAK_Container_DESC">
+            <English>Defines where the items from the First Aid Kit are added into. If there is no space left they will be dropped on the ground. \n Default: Items are added where space is left. </English>
+            <German>Definiert wo die Gegenstände des Erste Hilfe Kits hinzufugefügt werden. Sofern kein Platz vorhanden ist wird es auf den Boden hingelegt. \n Standard: Die Gegenstände werden dort hinzugefügt wo noch Platz ist. </German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_Container_Default">
+            <English>Default</English>
+            <German>Standard</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_Container_Uniform">
+            <English>Uniform</English>
+            <German>Uniform</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_Container_Vest">
+            <English>Vest</English>
+            <German>Weste</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_Container_Backpack">
+            <English>Backpack</English>
+            <German>Rucksack</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ItemSlot_DESC">
+            <English>The items &amp; quantity that is given to the player.\n If you want to add/change items remove existing entry &amp; insert item name-tag &amp; quantity you want. \n Example: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  TO  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</English>
+            <German>Der Gegenstand den der Spieler erhält.\n Zum hinzufügen/ändern des Gegenstandes den bestehenden Eintrag entfernen &amp; einen anderen Gegenstand mit dem name-tag &amp; der Anzahl hinzufügen. \n Beispiel: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  Wird Zu  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FirstSlot_Item">
+            <English>First Slot Items &amp; Quantity</English>
+            <German>Erste Tasche Gegenstände &amp; Anzahl</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Item">
+            <English>Second Slot Items &amp; Quantity</English>
+            <German>Zweite Tasche Gegenstände &amp; Anzahl</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Item">
+            <English>Third Slot Items &amp; Quantity</English>
+            <German>Dritte Tasche Gegenstände &amp; Anzahl</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Item">
+            <English>Fourth Slot Items &amp; Quantity</English>
+            <German>Vierte Tasche Gegenstände &amp; Anzahl</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FifthSlot_Item">
+            <English>Fifth Slot Items &amp; Quantity</English>
+            <German>Fünfte Tasche Gegenstände &amp; Anzahl</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_SixthSlot_Item">
+            <English>Sixth Slot Items &amp; Quantity</English>
+            <German>Sechste Tasche Gegenstände &amp; Anzahl</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_SeventhSlot_Item">
+            <English>Seventh Slot Items &amp; Quantity</English>
+            <German>Siebte Tasche Gegenstände &amp; Anzahl</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_EighthSlot_Item">
+            <English>Eighth Slot Items &amp; Quantity</English>
+            <German>Achte Tasche Gegenstände &amp; Anzahl</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_IFAK_Display">
+            <English>Individual First Aid Kit</English>
+            <German>Individuelles Erste Hilfe Kit</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_IFAK_DESC">
+            <English>The IFAK can be unpacked to provide useful medical items</English>
+            <German>Das IEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_MFAK_Display">
+            <English>Multiple First Aid Kit</English>
+            <German>Mehrfaches Erste Hilfe Kit</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_MFAK_DESC">
+            <English>The MFAK can be unpacked to provide useful medical items</English>
+            <German>Das MEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_AFAK_Display">
+            <English>Advanced First Aid Kit</English>
+            <German>Erweitertes Erste Hilfe Kit</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_AFAK_DESC">
+            <English>The AFAK can be unpacked to provide useful medical items</English>
+            <German>Das EEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_IFAK_Unpack">
+            <English>IFAK</English>
+            <German>IEHK</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_MFAK_Unpack">
+            <English>MFAK</English>
+            <German>MEHK</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_AFAK_Unpack">
+            <English>AFAK</English>
+            <German>EEHK</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_1">
+            <English>Unpack Slot 1</English>
+            <German>Entpacke Tasche 1</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_2">
+            <English>Unpack Slot 2</English>
+            <German>Entpacke Tasche 2</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_3">
+            <English>Unpack Slot 3</English>
+            <German>Entpacke Tasche 3</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_4">
+            <English>Unpack Slot 4</English>
+            <German>Entpacke Tasche 4</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_5">
+            <English>Unpack Slot 5</English>
+            <German>Entpacke Tasche 5</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_6">
+            <English>Unpack Slot 6</English>
+            <German>Entpacke Tasche 6</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_7">
+            <English>Unpack Slot 7</English>
+            <German>Entpacke Tasche 7</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_8">
+            <English>Unpack Slot 8</English>
+            <German>Entpacke Tasche 8</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_1_Repack">
+            <English>Repack Slot 1</English>
+            <German>Packe Tasche 1</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_2_Repack">
+            <English>Repack Slot 2</English>
+            <German>Packe Tasche 2</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_3_Repack">
+            <English>Repack Slot 3</English>
+            <German>Packe Tasche 3</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_4_Repack">
+            <English>Repack Slot 4</English>
+            <German>Packe Tasche 4</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_5_Repack">
+            <English>Repack Slot 5</English>
+            <German>Packe Tasche 5</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_6_Repack">
+            <English>Repack Slot 6</English>
+            <German>Packe Tasche 6</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_7_Repack">
+            <English>Repack Slot 7</English>
+            <German>Packe Tasche 7</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_8_Repack">
+            <English>Repack Slot 8</English>
+            <German>Packe Tasche 8</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty">
+            <English>Remove when empty</English>
+        </Key>
         <Key ID="STR_KAT_Misc_CarryPatient">
             <English>Carry Patient</English>
             <Japanese>患者を担ぐ</Japanese>

@@ -51,3 +51,5 @@ if (GVAR(incompatibilityWarning)) then {
 
     [_carrier, _target] call ACEFUNC(dragging,dropObject_carry);
 }] call CBA_fnc_addEventHandler;
+
+call FUNC(FAK_updateContents);

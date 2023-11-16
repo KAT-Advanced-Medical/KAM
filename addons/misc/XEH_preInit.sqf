@@ -137,4 +137,361 @@ PREP_RECOMPILE_END;
     2
 ] call CBA_Settings_fnc_init;
 
+//IFAK Container
+[
+    QGVAR(IFAK_Container),
+    "LIST",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
+    2
+] call CBA_fnc_addSetting;
+
+// Remove IFAK when empty
+[
+    QGVAR(IFAK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+//IFAK First Slot Item
+[
+    QGVAR(IFAKFirstSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_FirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    "[['ACE_tourniquet', 2]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(IFAKFirstSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(IFAKFirstSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//IFAK Second Slot Item
+[
+    QGVAR(IFAKSecondSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    "[['ACE_packingBandage', 5], ['ACE_quikclot', 5]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(IFAKSecondSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(IFAKSecondSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//IFAK Third Slot Item
+[
+    QGVAR(IFAKThirdSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    "[['kat_Painkiller', 1]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(IFAKThirdSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(IFAKThirdSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//IFAK Fourth Item
+[
+    QGVAR(IFAKFourthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    "[['kat_chestSeal', 1]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(IFAKFourthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(IFAKFourthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//AFAK Container
+[
+    QGVAR(AFAK_Container),
+    "LIST",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
+    2
+] call CBA_fnc_addSetting;
+
+// Remove AFAK when empty
+[
+    QGVAR(AFAK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+//AFAK First Slot Item
+[
+    QGVAR(AFAKFirstSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_FirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "[['ACE_tourniquet', 4], ['ACE_splint', 2]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(AFAKFirstSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(AFAKFirstSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//AFAK Second Slot Item
+[
+    QGVAR(AFAKSecondSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "[['ACE_packingBandage', 10], ['ACE_quikclot', 10]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(AFAKSecondSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(AFAKSecondSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//AFAK Third Slot Item
+[
+    QGVAR(AFAKThirdSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "[['kat_Penthrox', 2], ['kat_Painkiller', 1]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(AFAKThirdSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(AFAKThirdSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//AFAK Fourth Item
+[
+    QGVAR(AFAKFourthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "[['kat_chestSeal', 4], ['kat_ncdKit', 4]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(AFAKFourthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(AFAKFourthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//AFAK Fifth Item
+[
+    QGVAR(AFAKFifthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_FifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "[['kat_guedel', 3]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(AFAKFifthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(AFAKFifthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//AFAK Sixth Item
+[
+    QGVAR(AFAKSixthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    "[['ACE_morphine', 3], ['ACE_epinephrine', 3]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(AFAKSixthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(AFAKSixthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MFAK Container
+[
+    QGVAR(MFAK_Container),
+    "LIST",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
+    2
+] call CBA_fnc_addSetting;
+
+// Remove MFAK when empty
+[
+    QGVAR(MFAK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+//MFAK First Slot Item
+[
+    QGVAR(MFAKFirstSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_FirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    "[['ACE_tourniquet', 6], ['ACE_splint', 4]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MFAKFirstSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MFAKFirstSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MFAK Second Slot Item
+[
+    QGVAR(MFAKSecondSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_SecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    "[['ACE_packingBandage', 15], ['ACE_quikclot', 15], ['ACE_fieldDressing', 15]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MFAKSecondSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MFAKSecondSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MFAK Third Slot Item
+[
+    QGVAR(MFAKThirdSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    "[['kat_Painkiller', 4], ['kat_Penthrox', 4]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MFAKThirdSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MFAKThirdSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MFAK Fourth Item
+[
+    QGVAR(MFAKFourthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    "[['kat_chestSeal', 6], ['kat_aatKit', 3], ['kat_ncdKit', 3], ['kat_stethoscope', 1]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MFAKFourthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MFAKFourthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MFAK Fifth Item
+[
+    QGVAR(MFAKFifthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_FifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    "[['kat_larynx', 6]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MFAKFifthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MFAKFifthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MFAK Sixth Item
+[
+    QGVAR(MFAKSixthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    "[['ACE_morphine', 6], ['ACE_epinephrine', 6], ['ACE_adenosine', 6]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MFAKSixthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MFAKSixthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MFAK Seventh Item
+[
+    QGVAR(MFAKSeventhSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_SeventhSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    "[['ACE_salineIV_250', 3], ['kat_IV_16', 4]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MFAKSeventhSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MFAKSeventhSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MFAK Eighth Item
+[
+    QGVAR(MFAKEighthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_EighthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    "[['kat_Pulseoximeter', 3], ['kat_pocketBVM', 1]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MFAKEighthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MFAKEighthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+// Medical ACE Arsenal
+if (GVAR(arsenalMedCategory)) then {
+    [
+        ["kat_aatKit","kat_ncdKit","kat_accuvac","ACE_adenosine","ACE_epinephrine","kat_X_AED","ACE_elasticBandage","ACE_packingBandage","kat_crossPanel","kat_bloodIV_O","kat_bloodIV_A","kat_bloodIV_AB","ACE_bloodIV","kat_bloodIV_B","ACE_bloodIV_250","kat_bloodIV_O_250","kat_bloodIV_A_250","kat_bloodIV_AB_250","kat_bloodIV_B_250","ACE_bloodIV_500","kat_bloodIV_O_500","kat_bloodIV_A_500","kat_bloodIV_AB_500","kat_bloodIV_B_500","ACE_bodyBag","KAT_Empty_bloodIV_250","KAT_Empty_bloodIV_500","kat_bloodIV_O_N","kat_bloodIV_A_N","kat_bloodIV_AB_N","kat_bloodIV_B_N","kat_bloodIV_O_N_250","kat_bloodIV_A_N_250","kat_bloodIV_AB_N_250","kat_bloodIV_B_N_250","kat_bloodIV_O_N_500","kat_bloodIV_A_N_500","kat_bloodIV_AB_N_500","kat_bloodIV_B_N_500","FirstAidKit","kat_AED","kat_chestSeal","kat_larynx","ACE_fieldDressing","Medikit","ACE_morphine","kat_guedel","ACE_personalAidKit","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","kat_Pulseoximeter","ACE_quikclot","ACE_salineIV_250","ACE_salineIV","ACE_salineIV_500","ACE_splint","kat_stethoscope","ACE_surgicalKit","ACE_tourniquet","Attachable_Helistretcher","kat_CarbonateItem","kat_PainkillerItem","kat_PervitinItem","kat_CaffeineItem","kat_PenthroxItem","kat_IV_16","kat_IO_FAST","kat_naloxone","kat_EACA","kat_TXA","kat_norepinephrine","kat_phenylephrine","kat_nitroglycerin","kat_amiodarone","kat_lidocaine","kat_atropine","kat_ketamine","kat_fentanyl","kat_nalbuphine","kat_lorazepam","kat_flumazenil","kat_etomidate","kat_scalpel","kat_retractor","kat_clamp","kat_plate","kat_vacuum","kat_BVM","kat_pocketBVM","kat_oxygenTank_150_Item","kat_oxygenTank_300_Item","kat_oxygenTank_150_Empty","kat_oxygenTank_300_Empty","kat_IFAK","kat_MFAK","kat_AFAK"],
+        localize "STR_ACE_Medical_GUI_Medical",
+        "\z\ace\addons\medical_gui\data\categories\triage_card.paa"
+    ] call ACEFUNC(arsenal,addRightPanelButton);
+};
+
 ADDON = true;
