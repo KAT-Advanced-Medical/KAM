@@ -1366,6 +1366,9 @@
             <Italian>Usa maschera ambu</Italian>
             <Portuguese>Usar BVM</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Breathing_UseBVM_Start">
+            <English>Rescue Breaths Started</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>
             <Japanese>BVMを取り外す</Japanese>

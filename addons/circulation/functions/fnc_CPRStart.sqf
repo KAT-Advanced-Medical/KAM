@@ -49,6 +49,7 @@ if (_notInVehicle) then {
 
 [{
     params ["_medic", "_patient", "_notInVehicle", "_CPRStartTime"];
+    
     [LLSTRING(StopCPR), "", ""] call ACEFUNC(interaction,showMouseHint);
     [LLSTRING(StartCPR), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 

@@ -53,6 +53,8 @@ GVAR(headTurn_timeOut) = true;
     params ["_medic", "_patient", "_notInVehicle"];
 
     [LLSTRING(headTurning_stop), "", ""] call ACEFUNC(interaction,showMouseHint);
+    [LLSTRING(headTurning_start), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+
     [{
         params ["_args", "_idPFH"];
         _args params ["_medic", "_patient", "_notInVehicle"];
