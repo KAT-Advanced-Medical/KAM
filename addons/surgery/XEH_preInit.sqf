@@ -155,7 +155,7 @@ PREP_RECOMPILE_END;
 // 0 Surgery Causes Unconsciousness: If you do an incision (without anesthesia & sedative) patient will go into CA
 // 1 Unconsciousness Required for Surgery: Surgery fails unless patient is unconscious, needs anesthesia
 // 2 No Unconsciousness from Surgery: Patient can stay awake without anesthesia, causes pain
-// 3 Surgery Anesthesia: The patient is able to stay awake through the entirety of the surgery. If Etomidate has not been applied, then the patient will lose consciousness.
+// 3 Surgery Anesthesia: The patient is able to stay awake through the entirety of the surgery. If Etomidate has not been applied, then the patient will go into CA.
 [
     QGVAR(Surgery_ConsciousnessRequirement),
     "LIST",
