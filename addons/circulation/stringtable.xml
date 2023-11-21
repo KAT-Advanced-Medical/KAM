@@ -2032,6 +2032,9 @@
             <Portuguese>Interromper RCP</Portuguese>
             <Spanish>RCP parado</Spanish>
         </Key>
+        <Key ID="STR_KAT_Circulation_StartCPR">
+            <English>CPR Started</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
             <Japanese>CPRを中止しました</Japanese>

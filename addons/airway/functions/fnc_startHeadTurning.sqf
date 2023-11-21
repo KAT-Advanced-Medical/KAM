@@ -57,7 +57,7 @@ GVAR(headTurn_timeOut) = true;
         params ["_args", "_idPFH"];
         _args params ["_medic", "_patient", "_notInVehicle"];
 
-        if (!(alive _medic) || IS_UNCONSCIOUS(_medic) || !(IS_UNCONSCIOUS(_patient)) || !(_patient getVariable [QGVAR(headTurningActive), false]) || dialog || {!(objectParent _medic isEqualTo objectParent _patient) || {_patient distance2D _medic > ACEGVAR(medical_gui,maxDistance)}}) exitWith {
+        if (!(alive _medic) || IS_UNCONSCIOUS(_medic) || (!(IS_UNCONSCIOUS(_patient)) && alive _patient) || !(_patient getVariable [QGVAR(headTurningActive), false]) || dialog || {!(objectParent _medic isEqualTo objectParent _patient) || {_patient distance2D _medic > ACEGVAR(medical_gui,maxDistance)}}) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
 
             [] call ACEFUNC(interaction,hideMouseHint);
