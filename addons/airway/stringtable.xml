@@ -835,7 +835,7 @@
             <Portuguese>Quanto tempo levará para verificar as vias aéreas</Portuguese>
             <Norwegian>Hvor lang tid det vil ta å sjekke luftveiene</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_TIME_OVERSTRETCH">
+        <Key ID="STR_KAT_Airway_Hyperextend_Time">
             <English>Time for overstretch the head</English>
             <German>Zeit um den Kopf zu überstrecken</German>
             <Polish>Czas na odchylenie głowy</Polish>
@@ -852,7 +852,7 @@
             <Portuguese>Tempo para hiperestender a cabeça</Portuguese>
             <Norwegian>Tid for å overstrekke hode</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_TIME_OVERSTRETCH_DESC">
+        <Key ID="STR_KAT_Airway_Hyperextend_Time_DESC">
             <English>How long it will take to overstretch the head</English>
             <German>Wie lange es dauert, um den Kopf zu überstrecken</German>
             <Polish>Ile czasu zajmie odchylenie głowy</Polish>
@@ -1061,7 +1061,7 @@
             <Portuguese>Posição de recuperação estabelecida com sucesso</Portuguese>
             <Norwegian>Lagt i stabilt sideleie</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_Recovery_Cancel">
+        <Key ID="STR_KAT_Airway_RecoveryPosition_Cancel">
             <English>Recovery position cancelled</English>
             <German>Stabile Seitenlage abgebrochen</German>
             <Polish>Przerwano pozycję bezpieczną</Polish>
@@ -1091,7 +1091,7 @@
             <Portuguese>%1 estabeleceu a posição de recuperação</Portuguese>
             <Norwegian>%1 la dem i stabilt sideleie</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_TIME_RECOVERY">
+        <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
             <German>Zeit für die stabile Seitenlage</German>
             <Polish>Czas na ułożenie w pozycji bezpiecznej</Polish>
@@ -1106,7 +1106,7 @@
             <Portuguese>Tempo para estabelecer a posição de recuperação</Portuguese>
             <Norwegian>Tid for å legge i stabilt sideleie</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_TIME_RECOVERY_DESC">
+        <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time_DESC">
             <English>How long it will take to establish recovery position</English>
             <German>Die Zeit, wie lange es dauert, eine erfolgreiche stabile Seitenlage durchzuführen</German>
             <Polish>Jak długo potrwa ułożenie w pozycji bocznej bezpiecznej</Polish>
@@ -1151,7 +1151,7 @@
             <Portuguese>Cancelando posição de recuperação</Portuguese>
             <Norwegian>Avbrytter stabilt sideleie</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_TIME_CANCELRECOVERY">
+        <Key ID="STR_KAT_Airway_SETTING_CancelRecoveryPosition_Time">
             <English>Time for cancelling recovery position</English>
             <German>Die Zeit, wie lange es dauert, eine stabile Seitenlage abzubrechen</German>
             <Polish>Czas na przerwanie pozycji bezpiecznej</Polish>
@@ -1166,20 +1166,14 @@
             <Portuguese>Tempo para cancelamento de posição de recuperação</Portuguese>
             <Norwegian>Tid for å avbryte stabilt sideleie</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_TIME_CANCELRECOVERY_DESC">
-            <English>How long it will take to establish recovery position</English>
-            <German>Die Zeit, wie lange es dauert, eine stabile Seitenlage abzubrechen</German>
-            <Polish>Jak długo potrwa przerwanie pozycji bocznej bezpiecznej</Polish>
-            <Chinesesimp>取消恢复体态的所需时间</Chinesesimp>
-            <Japanese>回復体位を崩すのにどのくらい時間がかかるか設定します</Japanese>
-            <Korean>회복자세 교정을 취소하는 데 걸리는 시간입니다</Korean>
-            <French>Temps nécessaire pour annuler la position latérale de sécurité</French>
-            <Turkish>Kurtarma pozisyonunun oluşturulması ne kadar sürer?</Turkish>
-            <Italian>Tempo necessario per annullare la posizione laterale di sicurezza </Italian>
-            <Czech>Jak dlouho potrvá zavést stabilizovanou polohu</Czech>
-            <Spanish>Cuanto tiempo tomará cancelar la posición lateral de seguridad</Spanish>
-            <Portuguese>Quanto tempo demora para cancelar a posição de recuperação</Portuguese>
-            <Norwegian>Hvor lang tid vil det ta for å legge i stabilt sideleie</Norwegian>
+        <Key ID="STR_KAT_Airway_SETTING_CancelRecoveryPosition_Time_DESC">
+            <English>How long it will take to manually cancel recovery position</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
+            <English>Recovery Position time to drain occlusion</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
+            <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
         </Key>
         <Key ID="STR_KAT_Airway_noObstruction">
             <English>Not obstructed</English>
@@ -1213,19 +1207,8 @@
             <Portuguese>Não ocluída</Portuguese>
             <Norwegian>Ikke okkludert</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionOverstretch">
-            <English>Recovery position + Overstretch Settings</English>
-            <Italian>Impostazioni posizione laterale di sicurezza e stiramento</Italian>
-            <Czech>Nastavení stabilizované polohy a narovnávání hlavy</Czech>
-            <French>Paramètres de position latérale de sécurité + hyperextension</French>
-            <Korean>회복 자세 + 머리 젖히기 설정</Korean>
-            <German>Einstellungen der stabilen Seitenlage + Überstreckung</German>
-            <Chinesesimp>恢复体态设置</Chinesesimp>
-            <Japanese>回復体位設定</Japanese>
-            <Spanish>Parámetros de posición lateral de seguridad e hiperextensión de cabeza</Spanish>
-            <Portuguese>Configurações de posição de recuperação + hiperextensão de cabeça</Portuguese>
-            <Polish>Ustawienia Pozycji bezpiecznej i Odchylania głowy</Polish>
-            <Norwegian>Instillinger for stabilt sideleie + Overstrekk</Norwegian>
+        <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
+            <English>Recovery Position + Head Hyperextend Settings</English>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>

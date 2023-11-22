@@ -20,26 +20,44 @@ params ["_medic", "_patient"];
 
 _patient setVariable [QGVAR(recovery), true, true];
 _patient setVariable [QGVAR(overstretch), true, true];
-_patient setVariable [QGVAR(occluded), false, true];
 
 private _output = LLSTRING(Recovery_Info);
 [_output, 2, _medic] call ACEFUNC(common,displayTextStructured);
 
+GVAR(wasOccluded) = _patient getVariable [QGVAR(occluded), false];
+
+if (GVAR(RecoveryPosition_TimeToDrain) > 0) then {
+    [{
+        params ["_patient"];
+
+        _patient setVariable [QGVAR(occluded), false, true];
+        GVAR(wasOccluded) = false;
+    }, [_patient], (random GVAR(RecoveryPosition_TimeToDrain) max 1)] call CBA_fnc_waitAndExecute;
+} else {
+    _patient setVariable [QGVAR(occluded), false, true];
+    GVAR(wasOccluded) = false;
+};
+
 [{
     params ["_medic", "_patient"];
+
     _patient call ACEFUNC(medical_status,isBeingDragged) || _patient call ACEFUNC(medical_status,isBeingCarried) || !(isNull objectParent _patient);
 }, {
     params ["_medic", "_patient"];
+
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
+    _patient setVariable [QGVAR(occluded), GVAR(wasOccluded), true];
 
-    _output = LLSTRING(Recovery_Cancel);
+    _output = LLSTRING(RecoveryPosition_Cancel);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-}, [_medic, _patient], 3600, {
+}, [_medic, _patient, _wasOccluded], 3600, {
     params ["_medic", "_patient"];
+
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
+    _patient setVariable [QGVAR(occluded), GVAR(wasOccluded), true];
 
-    _output = LLSTRING(Recovery_Cancel);
+    _output = LLSTRING(RecoveryPosition_Cancel);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 }] call CBA_fnc_waitUntilAndExecute;

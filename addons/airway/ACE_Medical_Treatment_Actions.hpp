@@ -67,7 +67,7 @@ class ACE_Medical_Treatment_Actions {
     class Overstretch: Larynxtubus {
         displayName = CSTRING(overstretch);
         displayNameProgress = CSTRING(overstretching);
-        treatmentTime = QGVAR(Overstretch_time);
+        treatmentTime = QGVAR(Hyperextend_Time);
         medicRequired = 0;
         items[] = {};
         icon = "";
