@@ -51,7 +51,7 @@ if (alive _patient) then {
     if (_patient getVariable [VAR_CRDC_ARRST, false]) then {
         [QACEGVAR(medical_treatment,cprLocal), [_medic, _patient, _defibType], _patient] call CBA_fnc_targetEvent;
     } else {
-        if (GVAR(AdvRhythm_Hardcore_Enable)) then {
+        if (GVAR(AdvRhythm) && GVAR(AdvRhythm_Hardcore_Enable)) then {
             [QGVAR(incorrectAEDUsage), _patient, _patient] call CBA_fnc_targetEvent;
         }; 
     };
