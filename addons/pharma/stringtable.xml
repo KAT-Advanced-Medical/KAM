@@ -26,7 +26,7 @@
             <Korean>IV를 설정하는 데 필요한 의료 레벨 수준 변경</Korean>
             <Turkish>IV'leri'ları ayarlamak için gereken tıbbi düzeyi değiştirir</Turkish>
             <Czech>Změní, která zdravotnická úroveň je potřeba k zavedení IV</Czech>
-            <Japanese>IVの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>IVの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Russian>Изменяет медицинский уровень, необходимый для установки IV.</Russian>
             <Portuguese>Muda qual nível médico é necessário para aplicar IVs</Portuguese>
         </Key>
@@ -52,7 +52,7 @@
             <French>Change le niveau médical requis pour poser des IO</French>
             <Korean>IO를 설정하는 데 필요한 의료 레벨 수준 변경</Korean>
             <German>Benötigter medizinischer Grad, welcher für das Legen von IOs erforderlich ist</German>
-            <Japanese>IOの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>IOの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Spanish>Cambia el nivel médico que se requiere para colocar las IOs</Spanish>
             <Portuguese>Muda qual nível médico é necessário para aplicar IOs</Portuguese>
         </Key>
@@ -1140,7 +1140,7 @@
             <French>Niveau médical requis pour stimulation</French>
             <Turkish>Yeniden oryantasyon için gerekli tıbbi seviye</Turkish>
             <Italian>Livello medico richiesto per stimolazione</Italian>
-            <Japanese>患者を刺激を与えるの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>患者を刺激を与えるの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
             <Portuguese>Nível médico necessário para reorientação</Portuguese>
         </Key>
@@ -1670,7 +1670,7 @@
             <French>Temps de traitement des Sels d'Ammoniac</French>
             <Korean>탄산암모늄으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Carbonat</German>
-            <Japanese>炭酸アンモニウムの使用時間</Japanese>
+            <Japanese>炭酸アンモニウムの所要時間</Japanese>
             <Spanish>Tiempo para uso del Carbonato</Spanish>
             <Portuguese>Tempo de uso de Carbonato</Portuguese>
         </Key>
@@ -1696,7 +1696,7 @@
             <French>Temps de traitement de la Naloxone</French>
             <Korean>날록손으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Naloxon </German>
-            <Japanese>ナロキソンの使用時間</Japanese>
+            <Japanese>ナロキソンの所要時間</Japanese>
             <Spanish>Tiempo para uso de la Naloxona</Spanish>
             <Portuguese>Tempo de uso de Naloxona</Portuguese>
         </Key>
@@ -1704,7 +1704,7 @@
             <English>Treatment time for Pervitin</English>
             <German>Anwendungszeit für Pervitin</German>
             <French>Temps de traitement de la Pervitine</French>
-            <Japanese>ペルビチンの使用時間</Japanese>
+            <Japanese>ペルビチンの所要時間</Japanese>
             <Korean>페르피틴으로 치료하는 시간</Korean>
             <Italian>Tempo di trattamento per il Pervitin</Italian>
             <Portuguese>Tempo de uso de Pervitin</Portuguese>
@@ -1746,7 +1746,7 @@
             <French>Temps de traitement de l'Acide Tranexamique</French>
             <Korean>TXA로 치료하는 시간</Korean>
             <German>Anwendungszeit für TXA</German>
-            <Japanese>TXAの使用時間</Japanese>
+            <Japanese>TXAの所要時間</Japanese>
             <Spanish>Tiempo para uso del ATX</Spanish>
             <Portuguese>Tempo de uso de TXA</Portuguese>
         </Key>
@@ -1772,7 +1772,7 @@
             <French>Temps de traitement de la Noradrénaline</French>
             <Korean>노르에피네프린으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Norepinephrin</German>
-            <Japanese>ノルアドレナリンの使用時間</Japanese>
+            <Japanese>ノルアドレナリンの所要時間</Japanese>
             <Spanish>Tiempo para uso de la Norepinefrina</Spanish>
             <Portuguese>Tempo de uso de Norepinefrina</Portuguese>
         </Key>
@@ -1798,7 +1798,7 @@
             <French>Temps de traitement de la Phényléphrine</French>
             <Korean>페닐에프린으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Phenylephrin</German>
-            <Japanese>フェニレフリンの使用時間</Japanese>
+            <Japanese>フェニレフリンの所要時間</Japanese>
             <Spanish>Tiempo para uso de la Fenilefrina</Spanish>
             <Portuguese>Tempo de uso de Fenilefrina</Portuguese>
         </Key>
@@ -1824,7 +1824,7 @@
             <French>Temps de traitement de la Nitroglycérine</French>
             <Korean>니트로글리세린으로 치료하는 시간</Korean>
             <German>Benötigter medizinischer Grad, für die Gabe von Nitroglycerin</German>
-            <Japanese>ニトログリセリンの使用時間</Japanese>
+            <Japanese>ニトログリセリンの所要時間</Japanese>
             <Spanish>Tiempo para uso de la Nitroglicerina</Spanish>
             <Portuguese>Tempo de uso de Nitroglicerina</Portuguese>
         </Key>
@@ -1850,7 +1850,7 @@
             <French>Temps de traitement de l'Amiodarone</French>
             <Korean>아미오다론으로 치료하는 시간</Korean>
             <German>Benötigter medizinischer Grad, für die Gabe von Amiodaron</German>
-            <Japanese>アミオダロンの使用時間</Japanese>
+            <Japanese>アミオダロンの所要時間</Japanese>
             <Spanish>Tiempo para uso de la Amiodarona</Spanish>
             <Portuguese>Tempo de uso de Amiodarona</Portuguese>
         </Key>
@@ -1876,7 +1876,7 @@
             <French>Temps de traitement de la Lidocaïne</French>
             <Korean>리도카인으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Lidocain</German>
-            <Japanese>リドカインの使用時間</Japanese>
+            <Japanese>リドカインの所要時間</Japanese>
             <Spanish>Tiempo para uso de la Lidocaína</Spanish>
             <Portuguese>Tempo de uso de Lidocaína</Portuguese>
         </Key>
@@ -1902,7 +1902,7 @@
             <French>Temps de traitement de l'Atropine</French>
             <Korean>아트로핀으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Atropin</German>
-            <Japanese>アトロピンの使用時間</Japanese>
+            <Japanese>アトロピンの所要時間</Japanese>
             <Spanish>Tiempo para uso de la Atropina</Spanish>
             <Portuguese>Tempo de uso de Atropina</Portuguese>
         </Key>
@@ -1928,7 +1928,7 @@
             <French>Temps de traitement de l'Acide Aminocaproïque</French>
             <Korean>아미노카프로산으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Aminocapronsäure</German>
-            <Japanese>EACAの使用時間</Japanese>
+            <Japanese>EACAの所要時間</Japanese>
             <Spanish>Tiempo para uso del EACA</Spanish>
             <Portuguese>Tempo de uso de EACA</Portuguese>
         </Key>
@@ -1954,7 +1954,7 @@
             <French>Temps de traitement du Flumazénil</French>
             <Korean>플루마제닐로 치료하는 시간</Korean>
             <German>Anwendungszeit für Flumazenil</German>
-            <Japanese>フルマゼニルの使用時間</Japanese>
+            <Japanese>フルマゼニルの所要時間</Japanese>
             <Spanish>Tiempo para uso del Flumazenil</Spanish>
             <Portuguese>Tempo de uso de Flumazenil</Portuguese>
         </Key>
@@ -1980,7 +1980,7 @@
             <French>Temps de traitement du Lorazépam</French>
             <Korean>로라제팜으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Lorazepam</German>
-            <Japanese>ロラゼパムの使用時間</Japanese>
+            <Japanese>ロラゼパムの所要時間</Japanese>
             <Spanish>Tiempo para uso del Lorazepam</Spanish>
             <Portuguese>Tempo de uso de Lorazepam</Portuguese>
         </Key>
@@ -2006,7 +2006,7 @@
             <French>Temps de traitement de l'Étomidate</French>
             <Korean>에토미데이트로 치료하는 시간</Korean>
             <German>Anwendungszeit für Etomidat</German>
-            <Japanese>エトミデートの使用時間</Japanese>
+            <Japanese>エトミデートの所要時間</Japanese>
             <Spanish>Tiempo para uso del Etomidato</Spanish>
             <Portuguese>Tempo de uso de Etomidato</Portuguese>
         </Key>
@@ -2032,7 +2032,7 @@
             <French>Temps de traitement de la Kétamine</French>
             <Korean>케타민으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Ketamin</German>
-            <Japanese>ケタミンの使用時間</Japanese>
+            <Japanese>ケタミンの所要時間</Japanese>
             <Spanish>Tiempo para uso de la Ketamina</Spanish>
             <Portuguese>Tempo de uso de Cetamina</Portuguese>
         </Key>
@@ -2058,7 +2058,7 @@
             <French>Temps de traitement du Fentanyl</French>
             <Korean>펜타닐로 치료하는 시간</Korean>
             <German>Anwendungszeit für Fentanyl</German>
-            <Japanese>フェンタニルの使用時間</Japanese>
+            <Japanese>フェンタニルの所要時間</Japanese>
             <Spanish>Tiempo para uso del Fentalino</Spanish>
             <Portuguese>Tempo de uso de Fentanil</Portuguese>
         </Key>
@@ -2084,7 +2084,7 @@
             <French>Temps de traitement de la Nalbuphine</French>
             <Korean>날부핀으로 치료하는 시간</Korean>
             <German>Anwendungszeit für Nalbuphin</German>
-            <Japanese>ナルブフィンの使用時間</Japanese>
+            <Japanese>ナルブフィンの所要時間</Japanese>
             <Spanish>Tiempo para uso de la Nalbufina</Spanish>
             <Portuguese>Tempo de uso de Nalbufina</Portuguese>
         </Key>
@@ -2099,7 +2099,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_treatmentTime_Penthrox">
             <English>Treatment time for Penthrox Inhaler</English>
-            <Japanese>ペンスロックス吸入器の使用時間</Japanese>
+            <Japanese>ペンスロックス吸入器の所要時間</Japanese>
             <French>Durée d'utilisation de l'inhalateur de Penthrox</French>
             <Korean>펜트록스로 치료하는 시간</Korean>
             <German>Behandlungszeit für den Penthrox-Inhalators</German>
@@ -2401,7 +2401,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_flush_log">
             <English>%1 performed a saline flush</English>
-            <Japanese>%1 は生理食塩水フラッシュを実施しました</Japanese>
+            <Japanese>%1 が生理食塩水フラッシュを実施</Japanese>
             <French>%1 a effectué le rinçage salin</French>
             <Korean>%1이(가) 식염수 주입을 수행했다</Korean>
             <German>%1 hat eine Kochsalzlösungsspülung durchgeführt</German>
@@ -2579,7 +2579,7 @@
             <German>Leistungssteigerndes Medikament</German>
             <French>Drogue améliorant les performances</French>
             <Korean>운동능력 향상 약물</Korean>
-            <Japanese>疲労の防止と回復に!</Japanese>
+            <Japanese>疲労の防止と回復に! 疲労をポンと取ってくれます。</Japanese>
             <Italian>Sostanza che aumenta la performance</Italian>
             <Portuguese>Droga para aumento de performance</Portuguese>
             <Polish>Środek zwiększający wydolność</Polish>
@@ -2802,7 +2802,7 @@
             <Korean>심하게 손상된 사지에 IV를 꽂을 수 있는지의 여부. 기본값은 비활성화입니다.</Korean>
             <German>Ob die IV an der zu stark beschädigten Gliedmaße angewendet werden kann oder nicht. In der Standardeinstellung ist dies deaktiviert.</German>
             <Chinesesimp>是否可以将 IV 应用于受损的肢体。 默认情况下，这是禁用的。</Chinesesimp>
-            <Japanese>あまりにも損傷した手足に点滴を適用できるかどうか。デフォルトでは無効。</Japanese>
+            <Japanese>あまりにも損傷した手足に点滴を適用できるかどうか。 デフォルトでは無効。</Japanese>
             <Spanish>Si se puede o no aplicar una IV en extramidades demasiado dañadas. En predeterminado, esto esta desactivado.</Spanish>
             <Polish>Czy można zastosować IV na zbyt uszkodzoną kończynę. Domyślnie jest to wyłączone.</Polish>
             <Portuguese>Se você pode ou não aplicar o IV ao membro muito danificado. Por padrão, isto é desativado.</Portuguese>

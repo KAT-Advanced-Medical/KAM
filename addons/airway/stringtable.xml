@@ -40,7 +40,7 @@
             <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern: \n- Bewustlos werden \n- Das Entfernen von Larynxtubus / Guedeltubus \n- Abbrechen der Stabile Seitenlage</German>
             <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém: \n- Upadnutí do bezvědomí \n- Odstranění KingLT / GuedelTuby</Czech>
             <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que: \n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
-            <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n- 意識不明になった時 \n- KingLT/ゲデルチューブが外れた時</Japanese>
+            <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n- 意識不明になった時 \n- King LT/ゲデルチューブが外れた時</Japanese>
             <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque : \n- la personne tombe inconsciente \n- Une canule de Guedel/tube laryngé est retiré</French>
             <Korean>다음 조건에 의해 매번 발생되는 혀막힘 확률(%): \n- 의식불명이 될 시 \n- 기관삽입기 / 게델튜브 제거 시</Korean>
             <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n- Caduta priva di sensi \n- Rimozione KingLT / Guedel Tube</Italian>
@@ -130,7 +130,7 @@
             <Turkish>Keko adlı topluluğun AFK oyuncuları için eklentileri vardı. Başkalarının onları uzaklaştırabilmesi için bilinçsiz bırakıldılar. Bu, hava yolu problemleri olasılığını tetikledi. Bu dize, AFK eklentisi tarafından bilinçsiz hale geldiklerinde bunun olmasını engeller.</Turkish>
             <Italian>La comunità chiamata keko aveva un addon per i giocatori AFK. Venivano resi inconscenti così che gli altri potessero trascinarli via. Questo aveva la possibilità di causare problemi alle vie aeree. Questa stringa previene che ciò succeda quando vengono resi incoscenti da questo addon AFK.</Italian>
             <Russian>У сообщества под названием Keko был аддон для игроков AFK. Они были лишены сознания, чтобы другие могли их вытащить. Это спровоцировало риск респираторных заболеваний. Эта строка предотвратит это, когда они потеряют сознание из-за этого аддона AFK.</Russian>
-            <Japanese>kekoというコミュニティにはAFKプレーヤー用のアドオンがありました。他の人がAFKプレイヤーを移動できるように、そのプレイヤー無意識にします。しかしそれが気道の問題を発生させる可能性があります。この文字列は、AFKアドオンによって意識が失われたときにそれが発生するのを防ぎます。</Japanese>
+            <Japanese>kekoというコミュニティにはAFKプレーヤー用のアドオンがありました。\n他の人がAFKプレイヤーを移動できるように、そのプレイヤー無意識にします。\nしかしそれが気道の問題を発生させる可能性があります。\nこの文字列は、AFKアドオンによって意識が失われたときにそれが発生するのを防ぎます。</Japanese>
             <Portuguese>A comunidade Keko tinha um addon para os jogadores AFK. Eles foram colocados inconscientes para que outros pudessem arrastá-los. Isso desencadeou chances de problemas nas vias aéreas. Esta corda evita que isso aconteça quando eles ficam inconscientes por causa do addon.</Portuguese>
             <Norwegian>Felleskapet kalt "Keko" hadde en tilleggsfunksjon for AFK-spillere. De ble gjort bevisstløse slik at andre kunne dra dem bort. Dette utløste muligheter for luftveisproblemer. Denne strengen forhindrer at det skjer når de blir bevisstløse av det AFK-tillegget.</Norwegian>
         </Key>
@@ -162,7 +162,7 @@
             <French>%1 a vérifié les voies aériennes : %2, %3</French>
             <Turkish>%1 kontrol edilmiş havayolları: %2, %3</Turkish>
             <Italian>%1 ha controllato le vie aeree: %2, %3</Italian>
-            <Japanese>%1 は気道を確認しました: %2、%3</Japanese>
+            <Japanese>%1 は気道を確認しました: %2, %3</Japanese>
             <Portuguese>%1 verificou as vias aéreas: %2, %3</Portuguese>
             <Norwegian>%1 sjekket luftveiene: %2, %3</Norwegian>
         </Key>
@@ -179,7 +179,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha intubato con %2</Italian>
             <Russian>%1 вставил %2</Russian>
-            <Japanese>%1 は%2を挿管しました</Japanese>
+            <Japanese>%1 は %2 を挿管しました</Japanese>
             <Portuguese>%1 intubou com %2</Portuguese>
             <Norwegian>%1 satte inn en %2.</Norwegian>
         </Key>
@@ -257,7 +257,7 @@
             <Turkish>Havayolları temiz</Turkish>
             <Italian>Le vie aeree sono libere</Italian>
             <Russian>Дыхательные пути чисты</Russian>
-            <Japanese>気道はクリアです</Japanese>
+            <Japanese>気道は詰まっていません</Japanese>
             <Portuguese>Vias aéreas limpas</Portuguese>
             <Norwegian>Luftveier er frie</Norwegian>
         </Key>
@@ -342,7 +342,7 @@
             <Turkish>Havayolları temiz</Turkish>
             <Italian>Le vie aeree sono libere</Italian>
             <Russian>Дыхательные пути чисты</Russian>
-            <Japanese>気道はクリアです</Japanese>
+            <Japanese>気道は詰まっていません</Japanese>
             <Portuguese>Vias aéreas limpas</Portuguese>
             <Norwegian>Luftveiene er frie</Norwegian>
         </Key>
@@ -593,7 +593,7 @@
             <Turkish>Laringeal Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
             <Italian>Il tubo laringeo viene usato per salvare le vie aeree</Italian>
             <Russian>Ларингеальная трубка – это устройство для обеспечения проходимости дыхательных путей.</Russian>
-            <Japanese>King LT (喉頭エアウェイ)は気道を確保するために使用されます</Japanese>
+            <Japanese>King LT(喉頭エアウェイ)は気道を確保するために使用されます</Japanese>
             <Portuguese>O Tubo Laríngeo evita obstruções e oclusões</Portuguese>
             <Norwegian>Larynkstube brukes for å redde luftveiene</Norwegian>
         </Key>
@@ -627,7 +627,7 @@
             <Turkish>Guedel Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
             <Italian>La canula di Guedel viene usata per salvare le vie aeree</Italian>
             <Russian>Трубка Геделя используется для сохранения дыхательных путей.</Russian>
-            <Japanese>ゲデルチューブ (口咽頭エアウェイ)は気道を確保するために使用されます</Japanese>
+            <Japanese>ゲデルチューブ(口咽頭エアウェイ)は気道を確保するために使用されます</Japanese>
             <Portuguese>A Cânula de Guedel evita obstruções</Portuguese>
             <Norwegian>Guedel Tube brukes for å redde luftveiene</Norwegian>
         </Key>
@@ -712,7 +712,7 @@
             <Turkish>Laringeal Tüp'e izin ver</Turkish>
             <Italian>Permetti il tubo laringeo</Italian>
             <Russian>Разрешить гортанную трубку</Russian>
-            <Japanese>喉頭エアウェイ(King LT)の許可</Japanese>
+            <Japanese>喉頭エアウェイの許可</Japanese>
             <Portuguese>Permitir Tubo Laríngeo</Portuguese>
             <Norwegian>Tillat larynxtubus</Norwegian>
         </Key>
@@ -729,7 +729,7 @@
             <Turkish>Laringeal Tüp'ü kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare il tubo laringeo</Italian>
             <Russian>Уровень подготовки, необходимый для использования гортанной трубки</Russian>
-            <Japanese>喉頭エアウェイ(King LT)の使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>喉頭エアウェイ(King LT)の使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um Tubo Laríngeo</Portuguese>
             <Norwegian>Nivået av opplæring som kreves for å bruke en Larynkstube</Norwegian>
         </Key>
@@ -746,7 +746,7 @@
             <Turkish>Guedel Tüp'e izin ver</Turkish>
             <Italian>Permetti la canula di Guedel</Italian>
             <Russian>Разрешить гедельтубус</Russian>
-            <Japanese>口咽頭エアウェイ(ゲデルチューブ)の許可</Japanese>
+            <Japanese>口咽頭エアウェイの許可</Japanese>
             <Portuguese>Permitir Cânula de Guedel</Portuguese>
             <Norwegian>Tillat Guedeltubus</Norwegian>
         </Key>
@@ -763,7 +763,7 @@
             <Turkish>Guedel Tüp'ü kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare la canula di Guedel</Italian>
             <Russian>Уровень подготовки, необходимый для использования тубуса Геделя.</Russian>
-            <Japanese>口咽頭エアウェイ(ゲデルチューブ)の使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>口咽頭エアウェイ(ゲデルチューブ)の使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar uma Cânula de Guedel</Portuguese>
             <Norwegian>Nivået av opplæring som kreves for å bruke en Guedeltubus</Norwegian>
         </Key>
@@ -797,7 +797,7 @@
             <Turkish>Acuvvac'ı kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare l'ACCUVAC</Italian>
             <Russian>Уровень подготовки, необходимый для использования Accuvac</Russian>
-            <Japanese>Accuvacの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>Accuvacの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um ACCUVAC</Portuguese>
             <Norwegian>Opplæringsnivået som kreves for å bruke en Accuvac</Norwegian>
         </Key>
@@ -912,7 +912,7 @@
             <Turkish>Accuvac için Zaman</Turkish>
             <Italian>Tempo per l'ACCUVAC</Italian>
             <Russian>Время Аккувака</Russian>
-            <Japanese>Accuvacの使用時間</Japanese>
+            <Japanese>Accuvacの所要時間</Japanese>
             <Portuguese>Tempo para ACCUVAC</Portuguese>
             <Norwegian>Tid for Accuvac</Norwegian>
         </Key>
@@ -946,7 +946,7 @@
             <Turkish>Laringeal Tüp için Zaman</Turkish>
             <Italian>Tempo per il tubo laringeo</Italian>
             <Russian>Время гортанной трубки</Russian>
-            <Japanese>喉頭エアウェイ(King LT)の使用時間</Japanese>
+            <Japanese>喉頭エアウェイの所要時間</Japanese>
             <Portuguese>Tempo para Tubo Laríngeo</Portuguese>
             <Norwegian>Tid for Larynxtubus</Norwegian>
         </Key>
@@ -980,7 +980,7 @@
             <Turkish>Geudel Tüp zamanı</Turkish>
             <Italian>Tempo per la canula di Guedel</Italian>
             <Russian>Время для Гедель Тубус</Russian>
-            <Japanese>口咽頭エアウェイ(ゲデルチューブ)の使用時間</Japanese>
+            <Japanese>口咽頭エアウェイの所要時間</Japanese>
             <Portuguese>Tempo para usar uma Cânula de Guedel</Portuguese>
             <Norwegian>Tid for Guedeltubus</Norwegian>
         </Key>
@@ -1294,7 +1294,7 @@
             <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
             <Czech>Vrácení KingLT nebo Guedel Tuby při jejich manuálním odebrání</Czech>
             <Spanish>Recuperar el Tubo laríngeo o la Cánula de Guedel cuando se quitan manualmente</Spanish>
-            <Japanese>KingLTまたはゲデルチューブを取り除いた際、再使用できるようにします。</Japanese>
+            <Japanese>King LTまたはゲデルチューブを取り除いた際、再使用できるようにします。</Japanese>
             <French>Récupérer le tube laryngé ou la canule de guedel lorsque ceux-ci sont retirés manuellement</French>
             <Korean>기관삽입기나 게델튜브를 수동으로 제거하면 재사용을 가능케 할지 여부입니다.</Korean>
             <Italian>Riguadagna il KingLT o la canula di Guedel quando li rimuovi manualmente</Italian>

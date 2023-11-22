@@ -163,7 +163,7 @@
             <French>Vérifier la fracture</French>
             <Korean>골절 검사</Korean>
             <German>Fraktur prüfen</German>
-            <Japanese>骨折を確認</Japanese>
+            <Japanese>骨折を診断</Japanese>
             <Spanish>Revisar fractura</Spanish>
             <Portuguese>Verificar fratura</Portuguese>
         </Key>
@@ -384,7 +384,7 @@
             <French>Clamper la fracture</French>
             <Korean>골절 클램프하기</Korean>
             <German>Klammern der Fraktur</German>
-            <Japanese>骨折をクランプ</Japanese>
+            <Japanese>骨折をクランプする</Japanese>
             <Spanish>Alinear trozos</Spanish>
             <Portuguese>Fixar fratura</Portuguese>
         </Key>
@@ -553,7 +553,7 @@
             <French>Autorise les fractures avancées</French>
             <Korean>고급 골절 활성화</Korean>
             <German>Aktiviert erweiterte Frakturen</German>
-            <Japanese>高度な骨折を有効にします</Japanese>
+            <Japanese>高度な骨折を有効化</Japanese>
             <Spanish>Permite fracturas avanzadas</Spanish>
             <Portuguese>Permite fraturas avançadas</Portuguese>
         </Key>
@@ -598,7 +598,7 @@
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
             <Korean>폐쇄정복을 실패할 확률입니다. 기본값은 10%</Korean>
-            <Japanese>非観血的整復術の失敗率を設定します。デフォルト値は10%です</Japanese>
+            <Japanese>非観血的整復術の失敗率を設定します。 デフォルト値は10%です</Japanese>
             <German> Legt die Chance fest, dass die geschlossene Reduktion fehlschlägt. Standard: 10%</German>
             <Portuguese>Probabilidade de falha na redução fechada. Valor padrão 10%</Portuguese>
             <French>Chance que la réduction fermée échoue. Valeur par défaut à 10%</French>
@@ -759,7 +759,7 @@
             <French>Temps pour vérifier une fracture</French>
             <Korean>골절 검사 시간</Korean>
             <German>Zeit zur Prüfung einer Fraktur</German>
-            <Japanese>骨折確認の所要時間</Japanese>
+            <Japanese>骨折診断の所要時間</Japanese>
             <Spanish>Tiempo para analizar una fractura</Spanish>
             <Portuguese>Duração da análise de fratura</Portuguese>
         </Key>
@@ -772,7 +772,7 @@
             <French>Niveau médical requis pour vérifier une fracture</French>
             <Korean>골절 검사를 하는 데 필요한 의료 레벨 수준</Korean>
             <German>Erforderliches medizinisches Training für die Prüfung einer Fraktur</German>
-            <Japanese>骨折を確認するための許可</Japanese>
+            <Japanese>骨折診断の許可</Japanese>
             <Spanish>Nivel médico requerido para analizar la fractura de alguien</Spanish>
             <Portuguese>Nível médico necessário para analisar a fratura de alguém</Portuguese>
         </Key>
@@ -824,7 +824,7 @@
             <French>Lieu des réductions fermées</French>
             <Korean>폐쇄정복 장소</Korean>
             <German>Ort für die geschlossene Reduktion</German>
-            <Japanese>非観血的整復の使用可能場所</Japanese>
+            <Japanese>非観血的整復の可能な場所</Japanese>
             <Spanish>Zona para reducciones cerradas</Spanish>
             <Portuguese>Locação para reduções fechadas</Portuguese>
         </Key>
@@ -837,7 +837,7 @@
             <French>Lieu des réductions ouvertes / chirurgies</French>
             <Korean>개방정복 및 수술 장소</Korean>
             <German>Ort für die offene Reduktion/chirurgischer Eingriffe</German>
-            <Japanese>観血的整復術・手術の使用可能場所</Japanese>
+            <Japanese>観血的整復術・手術の可能な場所</Japanese>
             <Spanish>Zona para reducciones abiertas/Acciones quirúrgicas</Spanish>
             <Portuguese>Locação para reduções abertas/cirúrgicas</Portuguese>
         </Key>
@@ -876,7 +876,7 @@
             <French>irrigué(e)</French>
             <Korean>세척됨</Korean>
             <German>gespült</German>
-            <Japanese>洗浄した</Japanese>
+            <Japanese>灌注した</Japanese>
             <Spanish>irrigado/a</Spanish>
             <Portuguese>irrigado(a)</Portuguese>
         </Key>
@@ -941,7 +941,7 @@
             <French>Temps pour appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용 시간</Korean>
             <German>Zeit zum Anlegen eines NPWT-Verbandes</German>
-            <Japanese>NPWT被覆の使用時間</Japanese>
+            <Japanese>NPWT被覆の所要時間</Japanese>
             <Spanish>Tiempo para colocar un vendaje al vacío</Spanish>
             <Portuguese>Duração do aplique de curativo a vácuo</Portuguese>
         </Key>
@@ -1007,7 +1007,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \nUnconsciousness Required for Surgery: Surgery requires patient to be unconscious. \nNo Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \nSurgery Anesthesia: Patient stays awake during surgery if given Etomidate.</English>
-            <Japanese>意識喪失あり: 手術時に麻酔と鎮静剤を使用しないと、心停止による意識喪失が発生します。 \n無意識状態が必要: 手術するには患者が意識を失っていることが必要になります。 \n意識喪失なし: 手術時に意識喪失や痛みが発生しなくなります。 \n手術麻酔: エトミデートを投与すると、手術中も患者が起きたままになります。</Japanese>
+            <Japanese>手術による意識喪失あり: 手術時に麻酔と鎮静剤を使用しないと、心停止による意識喪失が発生します。 \n無意識状態を要求: 手術するには患者が意識を失っていることが必要になります。 \n手術による意識喪失なし: 手術時に意識喪失や痛みが発生しなくなります。 \n麻酔手術: エトミデートを投与すると、手術中も患者が起きたままになります。</Japanese>
             <Spanish>La cirugía provoca inconsciencia: La cirugía sin anestesia ni sedación provoca inconsciencia por IC. \nInconsciencia necesaria para la cirugía: La cirugía requiere que el paciente esté inconsciente. \nLa cirugía no provoca inconsciencia: La cirugía no induce inconsciencia, causa dolor. \nAnestesia quirúrgica: El paciente permanece despierto durante la cirugía si se le administra etomidato.</Spanish>
             <French>La chirurgie provoque une perte de conscience: La chirurgie sans anesthésie ni sédation entraîne une perte de conscience due à l'arrêt cardiaque. \nInconscience requise pour la chirurgie: la chirurgie nécessite que le patient soit inconscient. \nPas d'inconscience due à la chirurgie: la chirurgie n'induit pas d'inconscience, elle provoque de la douleur. \nAnesthésie chirurgicale: le patient reste éveillé pendant la chirurgie s'il reçoit de l'étomidate.</French>
             <Korean>수술로 인해 의식불명 발생: 마취 및 진정제 없이 수술을 하면 심정지로 인해 의식을 잃습니다.\n수술에 필요한 의식불명: 수술을 하려면 환자가 의식을 잃어야 합니다.\n수술 중 의식불명 발생 없음: 수술이 의식불명을 유발시키지 않지만 통증을 발생시킵니다.\n수술 마취: 에토미데이트를 투여하면 환자는 수술 중 깨어 있게 됩니다.</Korean>
@@ -1016,7 +1016,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
-            <Japanese>意識喪失あり</Japanese>
+            <Japanese>手術による意識喪失あり</Japanese>
             <Spanish>La cirugía causa inconsciencia</Spanish>
             <French>La chirurgie provoque une perte de conscience</French>
             <Korean>수술로 인해 의식불명 발생</Korean>
@@ -1026,7 +1026,7 @@
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
             <Spanish>Se requiere inconsciencia para la cirugía</Spanish>
-            <Japanese>無意識状態が必要</Japanese>
+            <Japanese>無意識状態を要求</Japanese>
             <French>Nécessite un état inconscient</French>
             <Korean>수술에 필요한 의식불명</Korean>
             <German>Für die Operation ist Bewusstlosigkeit erforderlich</German>
@@ -1034,7 +1034,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
-            <Japanese>意識喪失なし</Japanese>
+            <Japanese>手術による意識喪失なし</Japanese>
             <Spanish>No se pierde la consciencia por la cirugía</Spanish>
             <French>Pas d'inconscience due à la chirurgie</French>
             <Korean>수술 중 의식불명 발생 없음</Korean>
@@ -1043,7 +1043,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
-            <Japanese>手術麻酔</Japanese>
+            <Japanese>麻酔手術</Japanese>
             <Spanish>Anestesia quirúrgica</Spanish>
             <French>Anesthésie chirurgicale</French>
             <Korean>수술 마취</Korean>

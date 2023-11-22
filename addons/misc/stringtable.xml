@@ -966,7 +966,7 @@
         <Key ID="STR_KAT_Misc_IFAK_Display">
             <English>Individual First Aid Kit</English>
             <German>Individuelles Erste Hilfe Kit</German>
-            <Japanese>個人用応急処置キット [IFAK]</Japanese>
+            <Japanese>個人用応急処置キット (IFAK)</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_DESC">
             <English>The IFAK can be unpacked to provide useful medical items</English>
@@ -976,7 +976,7 @@
         <Key ID="STR_KAT_Misc_MFAK_Display">
             <English>Multiple First Aid Kit</English>
             <German>Mehrfaches Erste Hilfe Kit</German>
-            <Japanese>多用途応急処置キット [MFAK]</Japanese>
+            <Japanese>多用途応急処置キット (MFAK)</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_DESC">
             <English>The MFAK can be unpacked to provide useful medical items</English>
@@ -986,7 +986,7 @@
         <Key ID="STR_KAT_Misc_AFAK_Display">
             <English>Advanced First Aid Kit</English>
             <German>Erweitertes Erste Hilfe Kit</German>
-            <Japanese>高度応急処置キット [AFAK]</Japanese>
+            <Japanese>高度応急処置キット (AFAK)</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_DESC">
             <English>The AFAK can be unpacked to provide useful medical items</English>

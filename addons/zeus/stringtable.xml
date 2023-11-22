@@ -139,7 +139,7 @@
             <Chinese>管理航空公司</Chinese>
             <Korean>기도 관리</Korean>
             <Turkish>Hava Yollarını Yönet</Turkish>
-            <Japanese>気道と呼吸の状態を変更する</Japanese>
+            <Japanese>気道と呼吸の状態を変更</Japanese>
             <Russian>Управление авиалиниями</Russian>
             <Italian>Gestisci le vie aeree</Italian>
             <Chinesesimp>气道管理:</Chinesesimp>
@@ -155,7 +155,7 @@
             <Chinese>改变血型/血量</Chinese>
             <Korean>혈액형/혈액량 변경</Korean>
             <Turkish>Kan grubunu / hacmini değiştir</Turkish>
-            <Japanese>血液型/血液量を変更する</Japanese>
+            <Japanese>血液型/血液量を変更</Japanese>
             <Russian>Изменить группу/объем крови</Russian>
             <Italian>Cambia gruppo sanguigno e volume</Italian>
             <Chinesesimp>改变血型/血液量:</Chinesesimp>
@@ -163,7 +163,7 @@
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_displayname">
             <English>Change Cardiac State</English>
-            <Japanese>心臓の状態を変更する</Japanese>
+            <Japanese>心臓の状態を変更</Japanese>
             <French>Changer de condition cardiaque</French>
             <Korean>심장 상태 변경</Korean>
             <German>Ändern Sie den Herzzustand</German>

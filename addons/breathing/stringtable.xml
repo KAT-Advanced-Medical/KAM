@@ -321,7 +321,7 @@
             <Turkish>Nabız Oksimetresi kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento rischiesto per utilizzare il pulsossimetro</Italian>
             <Russian>Уровень подготовки, необходимый для использования пульсоксиметра</Russian>
-            <Japanese>パルスオキシメーターの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>パルスオキシメーターの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um Oxímetro de Pulso</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_ALLOW_CHESTSEAL">
@@ -353,7 +353,7 @@
             <Turkish>Chest Seal kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento rischiesto per utilizzare il Chest Seal</Italian>
             <Russian>Уровень подготовки, необходимый для использования Чест Сеал </Russian>
-            <Japanese>チェストシールの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>チェストシールの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um Selo de Tórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SELF_CHESTSEAL">
@@ -408,7 +408,7 @@
             <Turkish>Seçilen değerden (varsayılan 85) daha fazlasına ulaştıktan sonra, ancak o zaman hasta bilincini geri kazanabilir</Turkish>
             <Italian>Dopo aver raggiunto un valore sufficiente (default 85), il paziente può riprendere conoscienza</Italian>
             <Russian>Только после достижения значения, превышающего выбранное (по умолчанию 85), пациент может прийти в сознание.</Russian>
-            <Japanese>設定した値 (デフォルトは85)を超えた後、患者は意識を取り戻すことができます</Japanese>
+            <Japanese>設定した値(デフォルトは85)を超えた後、患者は意識を取り戻すことができます</Japanese>
             <Portuguese>Depois de atingir mais do que o valor selecionado (por padrão 85), somente então o paciente pode ficar consciente</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_hemopneumothorax_display">
@@ -500,7 +500,7 @@
             <Turkish>AAT Kiti</Turkish>
             <Italian>AAT Kit</Italian>
             <Russian>Комплект ААТ</Russian>
-            <Japanese>AATキット</Japanese>
+            <Japanese>AAT キット</Japanese>
             <Portuguese>Kit AAT</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_aatKit_desc">
@@ -516,7 +516,7 @@
             <Turkish>Gelişmiş Hava Yolu Tedavi Kiti, hemopnömotoraks gibi gelişmiş hava yolu koşullarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
             <Italian>Il kit per il Trattamento Avanzato delle vie Aeree è un kit ad uso singolo per il trattamento avanzato di condizioni alle vie aeree, come l'emopneumotorace</Italian>
             <Russian>Набор ААТ</Russian>
-            <Japanese>AATキット (Advanced Airway Treatment, 高度気道治療)は、血気胸などの重度な呼吸器症状を治療するために設計された使い捨てキットです。</Japanese>
+            <Japanese>AAT キット (Advanced Airway Treatment, 高度気道治療)は、血気胸などの重度な呼吸器症状を治療するために設計された使い捨てキットです。</Japanese>
             <Portuguese>O AAT é um kit de uso único projetado para tratar problemas avançados de vias aéreas, como o hemotórax.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_ncdKit_display">
@@ -524,7 +524,7 @@
             <Spanish>Kit NCD</Spanish>
             <German>NDK Kit</German>
             <Polish>Zestaw NCD</Polish>
-            <Japanese>NCDキット</Japanese>
+            <Japanese>NCD キット</Japanese>
             <Czech>NCD Sada</Czech>
             <French>NCD kit</French>
             <Korean>NCD 키트</Korean>
@@ -536,7 +536,7 @@
             <Spanish>El Kit de descompresión con aguja es un kit de un solo uso diseñado para tratar el Neumotórax a tensión.</Spanish>
             <German>Das Nadeldekompressions-Kit ist ein Einweg-Kit, das zur Behandlung eines Spannungspneumothorax vorgesehen ist.</German>
             <Polish>Zestaw NCD to zestaw jednorazowego użytku przeznaczony do leczenia odmy prężnej.</Polish>
-            <Japanese>NCDキット (Needle Chest Decompression, 胸部針減圧術)は、緊張性気胸の治療用に設計された使い捨てキットです。</Japanese>
+            <Japanese>NCD キット (Needle Chest Decompression, 胸部針減圧術)は、緊張性気胸の治療用に設計された使い捨てキットです。</Japanese>
             <Czech>NCD Sada je sada pro ošetření tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
             <French>L'aiguille de décompression thoracique est un kit à usage unique conçu pour traiter les pneumothorax sous tension</French>
             <Korean>NCD(흉부 바늘 감압) 키트는 긴장성 기흉을 치료하도록 설계된 일회용 키트입니다.</Korean>
@@ -648,7 +648,7 @@
             <Turkish>Hemotoraks veya Tansiyon Pnömotoraksı tedavi etmek için kullanılan İğne Dekompresyonu ve Boşaltma Sıvıları tedavi eylemlerini gerçekleştirebilmek için gerekli minimum tıbbi seviye.</Turkish>
             <Italian>Il livello medico minimo richiesto per eseguire la decompressione con ago e il drenaggio dei fluidi, necessari per il trattamento di un emotorace o pneumotorace iperteso</Italian>
             <Russian>Минимальный медицинский уровень, необходимый для того, чтобы кто-то мог выполнять лечебные действия «Декомпрессия иглой» и «Дренаж жидкости», используемые для лечения гемоторакса или напряженного пневмоторакса.</Russian>
-            <Japanese>胸腔穿刺減圧および胸腔ドレナージの使用に訓練レベルを必要とさせます。これらは血胸と緊張性気胸の治療に使われます。</Japanese>
+            <Japanese>胸腔穿刺減圧および胸腔ドレナージの使用に必要な医療スキルのレベルを設定します。これらは血胸と緊張性気胸の治療に使われます。</Japanese>
             <Portuguese>O nível médico mínimo exigido para que alguém possa realizar as ações de tratamento de Descompressão de Agulha e Drenagem de Fluidos, usados ​​para tratar hemotórax ou pneumotórax hipertensivo.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_PNEUMOTHORAX_DAMAGE_THRESHOLD">
@@ -680,7 +680,7 @@
             <Turkish>Pnömotoraks olasılığı olmadan önce meydana gelmesi gereken, 0 ila 1 ölçeğinde tek bir darbede hasar miktarı. Daha düşük değerler, pnömotoraksın oluşma olasılığının daha yüksek olduğu anlamına gelir. Değerin çok düşük veya sıfır olarak ayarlanması, beklenmedik yaralanmalardan kaynaklanan beklenmedik davranışlara veya pnömotoraksa neden olabilir.</Turkish>
             <Italian>Il danno in un singolo impatto, in una scala da 0 a 1, richiesto prima che si abbia la possibilità di uno pneumotorace. Valori più bassi rendono il pneumotorace più frequente. Valori molto bassi, o lo 0, possono causare comportamenti inaspettati o pneumotorace da ogni ferita.</Italian>
             <Russian>Количество повреждений при одном ударе по шкале от 0 до 1, которое должно произойти, прежде чем возникнет вероятность пневмоторакса. Более низкие значения означают, что пневмоторакс более вероятен. Установка очень низкого значения или нуля может привести к неожиданному поведению или пневмотораксу из-за неожиданных травм.</Russian>
-            <Japanese>一度の負傷で発生する気胸へのダメージ。値が低いほど気胸が発生する可能性が高くなります。値を非常に低く設定するか0に設定すると、予期しない動作や予期しない負傷による気胸を引き起こす可能性があります。</Japanese>
+            <Japanese>一度の負傷で発生する気胸へのダメージ。値が低いほど気胸が発生する可能性が高くなります。\n値を非常に低く設定するか0に設定すると、予期しない動作や予期しない負傷による気胸を引き起こす可能性があります。</Japanese>
             <Portuguese>A quantidade de dano em um único impacto, em uma escala de 0 a 1, que precisa ocorrer antes que haja uma chance de pneumotórax. Valores mais baixos significam que o pneumotórax é mais provável de ocorrer. Definir o valor muito baixo ou zero pode causar um comportamento inesperado ou pneumotórax devido a lesões inesperadas.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxDamageThreshold_DamageTaken">
@@ -772,7 +772,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if pneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x pneumothorax)</English>
-            <Japanese>気胸の診断を不要にし、常に負傷として医療メニューに表示する(1x 気胸のように)</Japanese>
+            <Japanese>気胸の診断を不要にし、常に負傷として医療メニューに表示する (1x 気胸のように)</Japanese>
             <French>Définit si le pneumothorax doit toujours être visible dans le menu médical en tant que blessure au lieu de nécessiter un diagnostic (1x pneumothorax)</French>
             <Korean>진단을 요구하는 대신 의료 메뉴에서 항상 기흉을 부상으로 표시하는지 여부를 설정합니다. (예: 1x 기흉)</Korean>
             <German>Legt fest, ob Pneumothorax im medizinischen Menü immer als Verletzung angezeigt werden soll, anstatt dass eine Diagnose erforderlich ist (1x Pneumothorax).</German>
@@ -790,7 +790,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_TensionHemothoraxAlwaysVisible_DESCRIPTION">
             <English>Sets if tension pneumothorax and hemopneumothorax should always be visible in the medical menu as an injury instead of requiring diagnosis (1x tensionpneumothorax/1x hemopneumothorax)</English>
-            <Japanese>気胸の診断を不要にし、常に負傷として医療メニューに表示する(1x 血気胸/1x 緊張性気胸のように)</Japanese>
+            <Japanese>気胸の診断を不要にし、常に負傷として医療メニューに表示する (1x 血気胸/1x 緊張性気胸のように)</Japanese>
             <French>Définit si le pneumothorax sous tension et l'hémopneumothorax doivent toujours être visibles dans le menu médical en tant que blessure au lieu de nécessiter un diagnostic (1x pneumothorax sous tension/1x hémopneumothorax)</French>
             <Korean>진단을 요구하는 대신 의료 메뉴에서 항상 긴장성 기흉 및 혈기흉을 부상으로 표시하는지 여부를 설정합니다. (예: 1x 긴장성 기흉/혈기흉)</Korean>
             <German>Legt fest, ob Spannungspneumothorax und Hämopneumothorax im medizinischen Menü immer als Verletzung sichtbar sein sollen, anstatt eine Diagnose zu erfordern (1x Spannungspneumothorax/1x Hämopneumothorax)</German>
@@ -1148,7 +1148,7 @@
             <English>The minimum medical level required for someone to be able to check cyanosis.</English>
             <German>Benötigter medizinischer Grad, um eine Zyanose feststellen </German>
             <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie sprawdzić sinicę.</Polish>
-            <Japanese>チアノーゼの確認の使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>チアノーゼの確認の使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Chinesesimp>允许检查面色所需的医疗培训水平</Chinesesimp>
             <Korean>치아노제 증상을 확인할 수 있는 사람의 최소 의료레벨 수준입니다.</Korean>
             <French>Le niveau médical minimum nécessaire pour pouvoir contrôler la cyanose</French>
@@ -1703,7 +1703,7 @@
             <French>Règle le niveau médical requis pour utiliser le BVM</French>
             <Korean>인공호흡기를 사용하는 데 필요한 의료 레벨 수준을 설정합니다</Korean>
             <Polish>Ustawia wymagany poziom wyszkolenia medycznego do użycia Worka samorozprężalnego</Polish>
-            <Japanese>BVMの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>BVMの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <German>Benötigter medizinischer Grad, um die BVM zu nutzen</German>
             <Czech>Nastavuje požadovanou zdravotnickou úroveň pro použití RV</Czech>
             <Italian>Imposta il livello medico richiesto per utilizzare la maschera ambu</Italian>
@@ -1727,7 +1727,7 @@
             <French>Règle le niveau médical requis pour utiliser le BVM de poche</French>
             <Korean>인공호흡기 (포켓형)을 사용하는 데 필요한 의료 레벨 수준을 설정합니다</Korean>
             <Polish>Ustawia wymagany poziom wyszkolenia medycznego do użycia Kieszonkowego worka samorozprężalnego</Polish>
-            <Japanese>携帯式BVMの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>携帯式BVMの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <German>Benötigter medizinischer Grad, um die Taschen BVM zu nutzen</German>
             <Czech>Nastavuje požadovanou zdravotnickou úroveň pro použití Kapesního RV</Czech>
             <Italian>Imposta il livello medico richiesto per utilizzare la maschera ambu portatile</Italian>
@@ -1751,7 +1751,7 @@
             <French>Règle le niveau médical requis pour utiliser le BVM avec oxygène</French>
             <Korean>산소 연결 인공호흡기를 사용하는 데 필요한 의료 레벨 수준을 설정합니다</Korean>
             <Polish>Ustawia wymagany poziom wyszkolenia medycznego do użycia Worka samorozprężalnego z tlenem</Polish>
-            <Japanese>酸素とBVMの併用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>酸素とBVMの併用に必要な医療スキルのレベルを設定します。</Japanese>
             <German>Benötigter medizinischer Grad, um die BVM mit Sauerstoff zu nutzen</German>
             <Czech>Nastavuje požadovanou zdravotnickou úroveň pro použití RV s kyslíkem</Czech>
             <Italian>Imposta il livello medico richiesto per utilizzare la maschera ambu con ossigeno</Italian>

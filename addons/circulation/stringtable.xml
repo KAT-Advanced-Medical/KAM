@@ -1804,7 +1804,7 @@
             <Turkish>AED kullanmak için gerekli eğitim seviyesi</Turkish>
             <Russian>Уровень подготовки, необходимый для использования AED</Russian>
             <Italian>Livello d'addestramento richiesto per usare il DAE</Italian>
-            <Japanese>AEDの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>AEDの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um DEA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_ALLOW_AED_X">
@@ -1836,7 +1836,7 @@
             <Turkish>AED-X kullanmak için gerekli eğitim seviyesi</Turkish>
             <Russian>Уровень подготовки, необходимый для использования AED-X</Russian>
             <Italian>Livello d'addestramento richiesto per usare il DAE-X</Italian>
-            <Japanese>AED-Xの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>AED-Xの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um DEA-X</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
@@ -1850,7 +1850,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
             <English>Medical level required to pick up/interact with placed AED/X station</English>
-            <Japanese>設置されたAED/Xの取得/使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>設置されたAED/Xの取得/使用に必要な医療スキルのレベルを設定します。</Japanese>
             <French>Niveau médical requis pour récupérer/interagir avec la station AED-X placée</French>
             <Korean>심장충격기 종류를 바닥에 설치하거나 줍는 상호작용을 하는 데 필요한 의료레벨 수준</Korean>
             <German>Benötigter medizinischer Grad, zum Aufnehmen/Interagieren mit der platzierten AED/X-Station</German>
