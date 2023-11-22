@@ -2337,7 +2337,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_asystoleBloodlossThreshold">
             <English>Asystole blood loss threshold</English>
-            <Japanese>心静止時の失血しきい値</Japanese>
+            <Japanese>心静止(Asystole)時の失血しきい値</Japanese>
             <French>Seuil de perte de sang en cas d'asystolie</French>
             <Korean>심정지 중 출혈 한계값</Korean>
             <German>Asystolie-Blutverlustschwelle</German>
@@ -2364,7 +2364,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
-            <Japanese>ハードコア心調律</Japanese>
+            <Japanese>心調律のハードコアモード</Japanese>
             <French>Rythmes cardiaques intenses</French>
             <Korean>하드코어 리듬</Korean>
             <German>Hardcore-Rhythmen</German>
@@ -2373,7 +2373,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_hardcoreDeteriorationChance">
             <English>Hardcore Deterioration Chance</English>
-            <Japanese>ハードコア調律状態悪化</Japanese>
+            <Japanese>調律状態悪化のハードコアモード</Japanese>
             <French>Chance de détérioration intense</French>
             <Korean>하드코어 심장기능 악화 확률</Korean>
             <German>Hardcore-Verschlechterungschance</German>
@@ -2427,7 +2427,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
             <English>AED-X Vitals Monitor Sounds</English>
-            <Japanese>AED-Xモニター音</Japanese>
+            <Japanese>AED-Xモニターの音</Japanese>
             <French>Sons des signes vitaux de l'AED-X</French>
             <Korean>X-시리즈 자동심장충격기 환자감시장치 소리</Korean>
             <German>Töne des AED-X-Vitalmonitors</German>
@@ -2474,7 +2474,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_AutomaticInstant">
             <English>Automatic Instant</English>
-            <Japanese>自動即時</Japanese>
+            <Japanese>自動 即時</Japanese>
             <French>Automatique instantané</French>
             <Korean>실시간</Korean>
             <German>Automatisch sofort</German>
@@ -2483,7 +2483,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Automatic">
             <English>Automatic (Interval)</English>
-            <Japanese>自動間隔</Japanese>
+            <Japanese>自動 (間隔)</Japanese>
             <French>Automatique (Interval)</French>
             <Korean>자동(일정 간격)</Korean>
             <German>Automatisch (Intervall)</German>
