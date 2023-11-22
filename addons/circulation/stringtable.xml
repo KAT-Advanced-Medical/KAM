@@ -2346,7 +2346,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_CPR_ROSC_Chance">
             <English>ROSC After CPR Chance</English>
-            <Japanese>CPR後の心拍再開の確率</Japanese>
+            <Japanese>CPR後の自己心拍再開(ROSC)の確率</Japanese>
             <French>Chance de retour en ciculation spontannée après RCP</French>
             <Korean>심폐소생술 후 자가회복 확률</Korean>
             <German>Chance für ROSC nach HLW (Rückkehr des spontanen Kreislaufs)</German>
@@ -2355,7 +2355,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_AED_ROSC_Chance">
             <English>ROSC After AED Chance</English>
-            <Japanese>AED後の心拍再開の確率</Japanese>
+            <Japanese>AED後の自己心拍再開(ROSC)の確率</Japanese>
             <French>Chance de rretour en ciculation spontannée après AED</French>
             <Korean>심장충격기 사용 후 자가회복 확률</Korean>
             <German>Chance für ROSC nach AED (Rückkehr des spontanen Kreislaufs)</German>
