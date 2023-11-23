@@ -135,7 +135,7 @@
             <Norwegian>Felleskapet kalt "Keko" hadde en tilleggsfunksjon for AFK-spillere. De ble gjort bevisstløse slik at andre kunne dra dem bort. Dette utløste muligheter for luftveisproblemer. Denne strengen forhindrer at det skjer når de blir bevisstløse av det AFK-tillegget.</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
-            <English>Check Airways</English>
+            <English>Check Airway</English>
             <German>Überprüfe Atemwege</German>
             <Polish>Sprawdź drogi oddechowe</Polish>
             <Spanish>Comprobar vías aéreas</Spanish>
@@ -183,7 +183,7 @@
             <Portuguese>%1 intubou com %2</Portuguese>
             <Norwegian>%1 satte inn en %2.</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_Occluded">
+        <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion_short">
             <English>Occluded</English>
             <German>Verstopft</German>
             <Polish>Zator</Polish>
@@ -200,7 +200,7 @@
             <Portuguese>Ocluída</Portuguese>
             <Norwegian>Okkludert</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_obstruction">
+        <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction_short">
             <English>Obstruction</English>
             <German>Obstruktion</German>
             <Polish>Niedrożne</Polish>
@@ -217,7 +217,7 @@
             <Portuguese>Obstruída</Portuguese>
             <Norwegian>Obstruksjon</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_mitigatedObstruction">
+        <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction_short">
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
             <Japanese>閉塞軽減中</Japanese>
@@ -231,7 +231,39 @@
             <Portuguese>Obstrução mitigada</Portuguese>
             <Norwegian>Reduserte obstruksjonen</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_message_obstructionTemporarilyMitigated">
+        <Key ID="STR_KAT_Airway_AirwayStatus_noObstruction_short">
+            <English>Not obstructed</English>
+            <German>Nicht obstruiert</German>
+            <Polish>Drożne</Polish>
+            <Spanish>No obstruída</Spanish>
+            <Chinese>無 阻塞</Chinese>
+            <Czech>Bez obstrukce</Czech>
+            <Korean>혀에 의해 막히지 않음</Korean>
+            <French>Non obstruées</French>
+            <Turkish>Değil Kapanma</Turkish>
+            <Italian>No ostruita</Italian>
+            <Japanese>閉塞無し</Japanese>
+            <Chinesesimp>无阻塞</Chinesesimp>
+            <Portuguese>Não obstruída</Portuguese>
+            <Norwegian>Ikke blokkert</Norwegian>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion_short">
+            <English>Not occluded</English>
+            <German>Nicht verstopft</German>
+            <Polish>Brak zatoru</Polish>
+            <Spanish>No ocluída</Spanish>
+            <Chinese>無 閉塞</Chinese>
+            <Czech>Není ucpáno</Czech>
+            <Korean>구토에 의해 막히지 않음</Korean>
+            <French>Non occludées</French>
+            <Turkish>Değil Tıkalı</Turkish>
+            <Italian>No occlusa</Italian>
+            <Japanese>異物無し</Japanese>
+            <Chinesesimp>无闭塞</Chinesesimp>
+            <Portuguese>Não ocluída</Portuguese>
+            <Norwegian>Ikke okkludert</Norwegian>
+        </Key>
+        <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction">
             <English>Obstruction is temporarily mitigated</English>
             <Polish>Drogi oddechowe są ręcznie udrożnione</Polish>
             <French>L'obstruction a été temporairement atténuée</French>
@@ -244,93 +276,20 @@
             <Portuguese>Obstrução temporariamente mitigada</Portuguese>
             <Norwegian>Obstruksjon er midlertidig redusert</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_message_obstruction_no">
-            <English>Airways are clear</English>
-            <German>Atemwege sind frei</German>
-            <Polish>Drogi oddechowe są czyste</Polish>
-            <Spanish>Vías aéreas despejadas</Spanish>
-            <Chinese>航線暢通</Chinese>
-            <Chinesesimp>气道通畅</Chinesesimp>
-            <Czech>Dýchací cesty jsou volné</Czech>
-            <Korean>기도 막히지 않음</Korean>
-            <French>Les voies aériennes sont dégagées</French>
-            <Turkish>Havayolları temiz</Turkish>
-            <Italian>Le vie aeree sono libere</Italian>
-            <Russian>Дыхательные пути чисты</Russian>
-            <Japanese>気道はクリアです</Japanese>
-            <Portuguese>Vias aéreas limpas</Portuguese>
-            <Norwegian>Luftveier er frie</Norwegian>
+        <Key ID="STR_KAT_Airway_AirwayStatus_noObstruction">
+            <English>Airway is not obstructed</English>
         </Key>
-        <Key ID="STR_KAT_Airway_message_Occluded_no">
-            <English>No medical suction needed</English>
-            <German>Absaugen nicht notwendig</German>
-            <Polish>Brak konieczności odsysania</Polish>
-            <Spanish>No se necesita succión médica</Spanish>
-            <Chinese>不需要醫療抽吸</Chinese>
-            <Chinesesimp>不需要医疗抽吸</Chinesesimp>
-            <Czech>Není třeba nic odsát</Czech>
-            <Korean>기도의 구토 제거 불필요</Korean>
-            <French>Pas d'aspiration médicale requise</French>
-            <Turkish>Tıbbi aspirasyona gerek yok</Turkish>
-            <Italian>Aspirazione medica non necessaria</Italian>
-            <Russian>Всасывание не требуется</Russian>
-            <Japanese>医療吸引は必要ありません</Japanese>
-            <Portuguese>Sucção médica não necessária</Portuguese>
-            <Norwegian>Ingen behov for medisinsk suging</Norwegian>
+        <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion">
+            <English>Airway is not occluded</English>
         </Key>
-        <Key ID="STR_KAT_Airway_message_obstruction_yes">
-            <English>Airway management needed</English>
-            <German>Atemwegsmanagement erforderlich</German>
-            <Polish>Potrzebne udrażnianie dróg oddechowych</Polish>
-            <Spanish>Hay que desobstruir las vías aéreas</Spanish>
-            <Chinese>需要呼吸道控制</Chinese>
-            <Chinesesimp>需要气道管理</Chinesesimp>
-            <Czech>Je třeba se postarat o dýchací cesty</Czech>
-            <Korean>기도 확보 필요</Korean>
-            <French>Gestion des voies aériennes requise</French>
-            <Turkish>Havayolu yönetimi gerekli</Turkish>
-            <Italian>Gestione delle vie aeree necessaria</Italian>
-            <Russian>Необходимо управление дыхательными путями</Russian>
-            <Japanese>気道管理が必要です</Japanese>
-            <Portuguese>Gerenciamento das vias aéreas necessário</Portuguese>
-            <Norwegian>Behov for luftveishåndtering</Norwegian>
+        <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
+            <English>Airway is obstructed, airway management needed</English>
         </Key>
-        <Key ID="STR_KAT_Airway_message_Occluded_yes">
-            <English>Medical suction needed</English>
-            <German>Absaugen notwendig</German>
-            <Polish>Potrzebne odsysanie</Polish>
-            <Spanish>Requiere succión médica</Spanish>
-            <Chinese>需要醫療抽吸</Chinese>
-            <Chinesesimp>需要医疗抽吸</Chinesesimp>
-            <Czech>Je třeba odsávání</Czech>
-            <Korean>기도의 구토 제거 필요</Korean>
-            <French>Aspiration médicale requise</French>
-            <Turkish>Tıbbi aspirasyon gerekli</Turkish>
-            <Italian>Aspirazione medica necessaria</Italian>
-            <Russian>всасывание необходимо</Russian>
-            <Japanese>医療吸引が必要です</Japanese>
-            <Portuguese>Sucção médica necessária</Portuguese>
-            <Norwegian>Behov for medisinsk suging</Norwegian>
+        <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
+            <English>Airway is occluded, medical suction needed</English>
         </Key>
-        <Key ID="STR_KAT_Airway_Airway_already">
-            <English>Airway management has already been performed</English>
-            <German>Atemwegsmanagement wurde bereits durchgeführt</German>
-            <Polish>Drogi oddechowe są udrażniane</Polish>
-            <Spanish>El manejo de vías aéreas ya se ha llevado a cabo</Spanish>
-            <Chinese>已經做好呼吸道控制</Chinese>
-            <Chinesesimp>气道管理已完成</Chinesesimp>
-            <Czech>Péče o dýchací cesty již byla provedena</Czech>
-            <Korean>이미 기도관리 완료됨</Korean>
-            <French>La gestion des voies aériennes a déjà été effectuée</French>
-            <Turkish>Havayolu yönetimi zaten gerçekleştirildi</Turkish>
-            <Italian>Gestione delle vie aeree già eseguita</Italian>
-            <Russian>Всасывание необходимо</Russian>
-            <Japanese>気道管理はすでに行われています</Japanese>
-            <Portuguese>O gerenciamento das vias aéreas já realizado</Portuguese>
-            <Norwegian>Luftveishåndtering er allerede utført</Norwegian>
-        </Key>
-        <Key ID="STR_KAT_Airway_Airway_NA">
-            <English>Airways are clear</English>
+        <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
+            <English>Airway is clear</English>
             <German>Atemwege sind frei</German>
             <Polish>Drogi oddechowe są czyste</Polish>
             <Spanish>Las vías aéreas están despejadas</Spanish>
@@ -346,7 +305,7 @@
             <Portuguese>Vias aéreas limpas</Portuguese>
             <Norwegian>Luftveiene er frie</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_Airway_NotClearForItem">
+        <Key ID="STR_KAT_Airway_AirwayStatus_NotClearForItem">
             <English>Item could not be used, airways are not clear</English>
             <German>Gegenstand konnte nicht verwendet werden, Atemwege sind nicht frei</German>
             <Polish>Przedmiot nie może zostać użyty, drogi oddechowe nie są czyste</Polish>
@@ -363,7 +322,7 @@
             <Portuguese>O item não pôde ser usado, vias aéreas bloqueadas</Portuguese>
             <Norwegian>Gjenstanden kunne ikke brukes, luftveiene er ikke frie</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_overstretch">
+        <Key ID="STR_KAT_Airway_Hyperextend_diplayName">
             <English>Hyperextending Head</English>
             <German>Kopf überstrecken</German>
             <Polish>Odchyl głowę</Polish>
@@ -380,7 +339,7 @@
             <Portuguese>Hiperextensão de cabeça</Portuguese>
             <Norwegian>Hyperforlengelse av hode</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_overstretched">
+        <Key ID="STR_KAT_Airway_Hyperextended">
             <English>Hyperextended Head</English>
             <German>Kopf überstreckt</German>
             <Polish>Głowa odchylona</Polish>
@@ -397,7 +356,10 @@
             <Portuguese>Cabeça hiperestendida</Portuguese>
             <Norwegian>Hode er overekstendert</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_overstretching">
+        <Key ID="STR_KAT_Airway_Hyperextend_already">
+            <English>Patient's head is already hyperextended</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_Hyperextend_progress">
             <English>Extending</English>
             <German>Kopf überstrecken</German>
             <Polish>Odchylanie głowy</Polish>
@@ -414,8 +376,8 @@
             <Portuguese>Estendendo</Portuguese>
             <Norwegian>Forlenger</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_overstretch_cancel">
-            <English>Hyperextending Head canceled</English>
+        <Key ID="STR_KAT_Airway_Hyperextend_Cancel">
+            <English>Hyperextending Head cancelled</English>
             <German>Kopf überstrecken abgebrochen</German>
             <Polish>Przestałeś odchylać głowę</Polish>
             <Spanish>Hiperextensión cancelada</Spanish>
@@ -431,22 +393,8 @@
             <Portuguese>Hiperextensão cancelada</Portuguese>
             <Norwegian>Hyperforlengelse av hode er avbrutt</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_overstretch_info">
-            <English>Don't run away, you're saving a life!</English>
-            <German>Renne nicht weg, du rettest ein Leben!</German>
-            <Polish>Nie uciekaj, ratujesz życie!</Polish>
-            <Spanish>¡No huyas, estás salvando una vida!</Spanish>
-            <Chinese>不要跑，你正在拯救性命！</Chinese>
-            <Chinesesimp>不要离开,你正在确保气道通畅</Chinesesimp>
-            <Czech>Nevzdaluj se od pacienta, zachraňuješ mu život!</Czech>
-            <Korean>도망치지 마십시오! 당신은 생명을 구하는 중입니다!</Korean>
-            <French>Ne partez pas, vous êtes en train de sauver une vie!</French>
-            <Turkish>Kaçma, bir hayat kurtarıyorsun!</Turkish>
-            <Italian>Non andartene, stai salvando una vita!</Italian>
-            <Russian>Не убегай, ты спасаешь жизнь!</Russian>
-            <Japanese>離れないでください、 あなたは命を繋いでいます!</Japanese>
-            <Portuguese>Não vá embora, você está salvando uma vida!</Portuguese>
-            <Norwegian>Ikke løp vekk, du redder et liv!</Norwegian>
+        <Key ID="STR_KAT_Airway_Hyperextend_Warning">
+            <English>Stay close to patient to keep head hyperextended</English>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -581,7 +529,7 @@
             <Norwegian>Larynkstube</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_Larynx_Desc_Short">
-            <English>The King LT is used to save the airways</English>
+            <English>The King LT is used to maintain the airway</English>
             <German>Der Larynxtubus ist ein Hilfsmittel zur Atemwegssicherung</German>
             <Polish>Rurka krtaniowa służy do ratowania dróg oddechowych</Polish>
             <Spanish>El tubo laríngeo previene obstrucciones y oclusiones</Spanish>
@@ -615,7 +563,7 @@
             <Norwegian>Guedel Tube</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_Guedel_Desc_Short">
-            <English>The Guedel Tube is used to save the airways</English>
+            <English>The Guedel Tube is used to maintain the airway</English>
             <German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
             <Polish>Rurka ustno-gardłowa zabezpiecza drogi oddechowe</Polish>
             <Spanish>La cánula de Guedel impide obstrucciones</Spanish>
@@ -802,7 +750,7 @@
             <Norwegian>Opplæringsnivået som kreves for å bruke en Accuvac</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
-            <English>Time to check Airways</English>
+            <English>Time to check Airway</English>
             <German>Zeit um Atemwege zu prüfen</German>
             <Polish>Czas sprawdzenia dróg oddechowych</Polish>
             <Spanish>Tiempo para revisar las vías aéreas</Spanish>
@@ -819,7 +767,7 @@
             <Norwegian>Tid for å sjekke luftveiene</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY_DESC">
-            <English>How long it will take to check Airways</English>
+            <English>How long it will take to check Airway</English>
             <German>Wie lange es dauert, um die Atemwege zu prüfen</German>
             <Polish>Ile czasu zajmie sprawdzenie dróg oddechowych</Polish>
             <Spanish>Cuánto tiempo tomará revisar las vías aéreas</Spanish>
@@ -1046,7 +994,7 @@
             <Portuguese>Estabelecendo posição de recuperação</Portuguese>
             <Norwegian>Legger i stabilt sideleie</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_Recovery_Info">
+        <Key ID="STR_KAT_Airway_RecoveryPosition_Ready">
             <English>Recovery position established successfully</English>
             <German>Erfolgreich in die stabile Seitenlage gelegt</German>
             <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
@@ -1175,38 +1123,6 @@
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
         </Key>
-        <Key ID="STR_KAT_Airway_noObstruction">
-            <English>Not obstructed</English>
-            <German>Nicht obstruiert</German>
-            <Polish>Drożne</Polish>
-            <Spanish>No obstruída</Spanish>
-            <Chinese>無 阻塞</Chinese>
-            <Czech>Bez obstrukce</Czech>
-            <Korean>혀에 의해 막히지 않음</Korean>
-            <French>Non obstruées</French>
-            <Turkish>Değil Kapanma</Turkish>
-            <Italian>No ostruita</Italian>
-            <Japanese>閉塞無し</Japanese>
-            <Chinesesimp>无阻塞</Chinesesimp>
-            <Portuguese>Não obstruída</Portuguese>
-            <Norwegian>Ikke blokkert</Norwegian>
-        </Key>
-        <Key ID="STR_KAT_Airway_noOccluded">
-            <English>Not occluded</English>
-            <German>Nicht verstopft</German>
-            <Polish>Brak zatoru</Polish>
-            <Spanish>No ocluída</Spanish>
-            <Chinese>無 閉塞</Chinese>
-            <Czech>Není ucpáno</Czech>
-            <Korean>구토에 의해 막히지 않음</Korean>
-            <French>Non occludées</French>
-            <Turkish>Değil Tıkalı</Turkish>
-            <Italian>No occlusa</Italian>
-            <Japanese>異物無し</Japanese>
-            <Chinesesimp>无闭塞</Chinesesimp>
-            <Portuguese>Não ocluída</Portuguese>
-            <Norwegian>Ikke okkludert</Norwegian>
-        </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
         </Key>
@@ -1309,7 +1225,7 @@
             <Portuguese>%1 removeu a Cânula de Guedel</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_AutoTriage">
-            <English>Auto Triage Airways</English>
+            <English>Auto Triage Airway</English>
             <Japanese>気道状態による自動トリアージ</Japanese>
             <German>Auto Triage Atemwege</German>
             <French>Triage automatique des voies aériennes</French>

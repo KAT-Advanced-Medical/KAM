@@ -12,7 +12,7 @@ PREP(treatmentAdvanced_airway);
 PREP(treatmentAdvanced_airwayLocal);
 PREP(treatmentAdvanced_CancelRecoveryPosition);
 PREP(treatmentAdvanced_CancelRecoveryPositionLocal);
-PREP(treatmentAdvanced_overstretchHead);
+PREP(treatmentAdvanced_hyperextendHead);
 PREP(treatmentAdvanced_RecoveryPosition);
 PREP(treatmentAdvanced_RecoveryPositionLocal);
 PREP(treatmentAdvanced_RemoveAirwayItem);

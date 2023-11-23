@@ -64,15 +64,15 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_accuvac);
         sounds[] = {{QPATHTO_R(sounds\accuvac.wav),6,1,15}};
     };
-    class Overstretch: Larynxtubus {
-        displayName = CSTRING(overstretch);
-        displayNameProgress = CSTRING(overstretching);
+    class HyperextendHead: Larynxtubus {
+        displayName = CSTRING(Hyperextend_diplayName);
+        displayNameProgress = CSTRING(Hyperextend_progress);
         treatmentTime = QGVAR(Hyperextend_Time);
         medicRequired = 0;
         items[] = {};
         icon = "";
         condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && !(_patient getVariable [ARR_2(QQGVAR(overstretch),false)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Guedeltubus') && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus'));
-        callbackSuccess = QFUNC(treatmentAdvanced_overstretchHead);
+        callbackSuccess = QFUNC(treatmentAdvanced_hyperextendHead);
     };
     class BeginHeadTurning: Larynxtubus {
         displayName = CSTRING(headTurning_begin);

@@ -11,7 +11,7 @@
  * Succesful treatment <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_overstretchHead;
+ * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_hyperextendHead;
  *
  * Public: No
  */
@@ -19,17 +19,17 @@
 params ["_medic", "_patient"];
 
 if (_patient getVariable [QGVAR(overstretch), false]) exitWith {
-    private _output = LLSTRING(Airway_already);
+    private _output = LLSTRING(Hyperextend_already);
     [_output, 2, _medic] call ACEFUNC(common,displayTextStructured);
 };
 if !(_patient getVariable [QGVAR(obstruction), false]) exitWith {
-    private _output = LLSTRING(Airway_NA);
+    private _output = LLSTRING(AirwayStatus_Clear);
     [_output, 2, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
 _patient setVariable [QGVAR(overstretch), true, true];
 
-private _output = LLSTRING(overstretch_info);
+private _output = LLSTRING(Hyperextend_Warning);
 [_output, 2, _medic] call ACEFUNC(common,displayTextStructured);
 
 [{
@@ -39,12 +39,12 @@ private _output = LLSTRING(overstretch_info);
     params ["_medic", "_patient"];
     if (_patient getVariable [QGVAR(recovery), false]) exitWith {};
     _patient setVariable [QGVAR(overstretch), false, true];
-    _output = LLSTRING(overstretch_cancel);
+    _output = LLSTRING(Hyperextend_Cancel);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 }, [_medic, _patient], 3600, {
     params ["_medic", "_patient"];
     if (_patient getVariable [QGVAR(recovery), false]) exitWith {};
     _patient setVariable [QGVAR(overstretch), false, true];
-    _output = LLSTRING(overstretch_cancel);
+    _output = LLSTRING(Hyperextend_Cancel);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 }] call CBA_fnc_waitUntilAndExecute;
