@@ -8,8 +8,8 @@ class ACE_Medical_Treatment_Actions {
         callbackStart = "";
         callbackProgress = "";
         callbackFailure = "";
-        callbackSuccess = QFUNC(CPRStart);
-        condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(CPRStart); [ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition););
+        condition = QACEFUNC(medical_treatment,canCPR);
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
     };

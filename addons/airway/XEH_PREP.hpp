@@ -2,6 +2,7 @@ PREP(checkAirway);
 PREP(checkRecovery);
 PREP(handleAirway);
 PREP(handlePuking);
+PREP(handleRecoveryPosition);
 PREP(init);
 PREP(startHeadTurning);
 PREP(treatmentAdvanced_Accuvac);

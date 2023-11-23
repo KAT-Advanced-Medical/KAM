@@ -9,7 +9,7 @@ class ACE_Medical_Treatment_Actions {
         category = "airway";
         medicRequired = 0;
         consumeItem = 0;
-        callbackStart = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope),true,true)]; [ARR_2(_medic,_patient)] spawn FUNC(listenLungs));
+        callbackStart = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope),true,true)]; [ARR_2(_medic,_patient)] call FUNC(listenLungs));
         callbackSuccess = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope),false,true)]);
         callbackProgress = "";
         callbackFailure = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope),false,true)]);
@@ -44,8 +44,8 @@ class ACE_Medical_Treatment_Actions {
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(inspectChest_medLvl);
-        callbackSuccess = QFUNC(inspectChest);
-        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (missionNamespace getVariable [ARR_2(QQGVAR(inspectChest_enable),0)] > 0));
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (missionNamespace getVariable [ARR_2(QQGVAR(inspectChest_enable),0)] > 0));
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(inspectChest); [ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition););
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
         animationMedic = "AinvPknlMstpSnonWnonDr_medic4";
@@ -108,8 +108,8 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Chestseal);
         treatmentTime = 7;
         items[] = {"kat_chestSeal"};
-        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
-        callbackSuccess = QFUNC(treatmentAdvanced_chestSeal);
+        condition = "true";
+        callbackSuccess = QUOTE([ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_chestSeal); [ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition););
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -132,8 +132,8 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
-        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
-        callbackSuccess = QFUNC(treatmentAdvanced_hemopneumothorax);
+        condition = "true";
+        callbackSuccess = QUOTE([ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_hemopneumothorax); [ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition););
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -156,8 +156,8 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
         items[] = {"kat_aatKit"};
-        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
-        callbackSuccess = QFUNC(treatmentAdvanced_tensionpneumothorax);
+        condition = "true";
+        callbackSuccess = QUOTE([ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_tensionpneumothorax); [ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition););
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -180,8 +180,8 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);
         treatmentTime = 7;
         items[] = {"kat_ncdKit"};
-        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
-        callbackSuccess = QFUNC(treatmentAdvanced_tensionpneumothorax);
+        condition = "true";
+        callbackSuccess = QUOTE([ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_tensionpneumothorax); [ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition););
         callbackFailure = "";
         callbackProgress = "";
         consumeItem = 1;
@@ -231,7 +231,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_BVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM));
         callbackStart = "";
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(useBVM));
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(useBVM); [ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition););
         callbackFailure = "";
         callbackProgress = "";
         animationPatient = "";
@@ -247,27 +247,27 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_PocketBVM);
         items[] = {"kat_pocketBVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM));
-        callbackSuccess = QUOTE([ARR_4(_medic,_patient,true,false)] call FUNC(useBVM));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,true,false)] call FUNC(useBVM); [ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition););
     };
     class UseBVMPortableOxygen: UseBVM {
         displayName = CSTRING(UseBVM_PortableOxygen);
         medicRequired = QGVAR(medLvl_BVM_Oxygen);
         items[] = {"kat_BVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM) && _medic call FUNC(hasOxygenTank) && (GVAR(locationProvideOxygen) isEqualTo 0 || !((GVAR(locationProvideOxygen) in [ARR_2(2,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalFacility)) || ((GVAR(locationProvideOxygen) in [ARR_2(1,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalVehicle))))));
-        callbackSuccess = QUOTE([ARR_5(_medic,_patient,false,true,1)] call FUNC(useBVM));
+        callbackSuccess = QUOTE([ARR_5(_medic,_patient,false,true,1)] call FUNC(useBVM); [ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition););
     };
     class UseBVMPortableOxygenVehicle: UseBVM {
         displayName = CSTRING(UseBVM_PortableOxygen_Vehicle);
         medicRequired = QGVAR(medLvl_BVM_Oxygen);
         items[] = {"kat_BVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM) && [ARR_2((vehicle _medic),true)] call FUNC(hasOxygenTank) && ((vehicle _medic) != _medic) && (vehicle _medic) isEqualTo (vehicle _patient));
-        callbackSuccess = QUOTE([ARR_5(_medic,_patient,false,true,2)] call FUNC(useBVM));
+        callbackSuccess = QUOTE([ARR_5(_medic,_patient,false,true,2)] call FUNC(useBVM); [ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition););
     };
     class UseBVMOxygen: UseBVM {
         displayName = CSTRING(UseBVM_Oxygen);
         medicRequired = QGVAR(medLvl_BVM_Oxygen);
         items[] = {"kat_BVM"};
         condition = QUOTE(_patient call FUNC(canUseBVM) && ((GVAR(locationProvideOxygen) in [ARR_2(2,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalFacility)) || (GVAR(locationProvideOxygen) in [ARR_2(1,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalVehicle))));
-        callbackSuccess = QUOTE([ARR_4(_medic,_patient,false,true)] call FUNC(useBVM));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,false,true)] call FUNC(useBVM); [ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition););
     };
 };
