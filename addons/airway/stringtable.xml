@@ -360,7 +360,7 @@
             <English>Patient's head is already hyperextended</English>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_progress">
-            <English>Extending</English>
+            <English>Hyperextending head</English>
             <German>Kopf überstrecken</German>
             <Polish>Odchylanie głowy</Polish>
             <Spanish>Hiperextendiendo cabeza</Spanish>
@@ -377,7 +377,7 @@
             <Norwegian>Forlenger</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Cancel">
-            <English>Hyperextending Head cancelled</English>
+            <English>Hyperextending head cancelled</English>
             <German>Kopf überstrecken abgebrochen</German>
             <Polish>Przestałeś odchylać głowę</Polish>
             <Spanish>Hiperextensión cancelada</Spanish>
@@ -393,8 +393,8 @@
             <Portuguese>Hiperextensão cancelada</Portuguese>
             <Norwegian>Hyperforlengelse av hode er avbrutt</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_Hyperextend_Warning">
-            <English>Stay close to patient to keep head hyperextended</English>
+        <Key ID="STR_KAT_Airway_Hyperextend_Ready">
+            <English>Head hyperextended successfully</English>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
