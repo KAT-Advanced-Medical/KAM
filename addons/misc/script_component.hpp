@@ -17,3 +17,6 @@
 #include "\x\kat\addons\main\script_macros.hpp"
 
 #define MEDICAL_TREATMENT_ITEMS (call (uiNamespace getVariable [QACEGVAR(medical_treatment,treatmentItems), {[]}]))
+
+#define DAMAGED_MIN_THRESHOLD 0.45
+#define LIMPING_MIN_DAMAGE 0.5

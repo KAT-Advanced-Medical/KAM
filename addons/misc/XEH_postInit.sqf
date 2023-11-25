@@ -53,3 +53,17 @@ if (GVAR(incompatibilityWarning)) then {
 }] call CBA_fnc_addEventHandler;
 
 call FUNC(FAK_updateContents);
+
+[QACEGVAR(medical_treatment,tourniquetLocal), LINKFUNC(handleTourniquetEffects)] call CBA_fnc_addEventHandler;
+
+["baseline", {
+    private _activeTourniquets = GET_TOURNIQUETS(ACE_player);
+    ((_activeTourniquets select 2) + (_activeTourniquets select 3) min 1);
+}, QUOTE(ADDON)] call ACEFUNC(common,addSwayFactor);
+
+["multiplier", {
+    private _activeTourniquets = GET_TOURNIQUETS(ACE_player);
+    if (ACE_player getVariable [QGVAR(Tourniquet_ArmNecrosis), 0] > 0) then {
+        (ACE_player getVariable [QGVAR(Tourniquet_ArmNecrosis), 0]) / 10
+    } else {0};
+}, QUOTE(ADDON)] call ACEFUNC(common,addSwayFactor);

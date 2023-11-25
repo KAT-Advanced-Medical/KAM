@@ -92,6 +92,11 @@ _unit setVariable [QEGVAR(misc,isRightArmFree), true, true];
 _unit setVariable [QEGVAR(misc,isLeftLegFree), true, true];
 _unit setVariable [QEGVAR(misc,isRightLegFree), true, true];
 
+_unit setVariable [QGVAR(Tourniquet_ArmNecrosis), 0];
+_unit setVariable [QGVAR(Tourniquet_LegNecrosis), 0];
+_unit setVariable [QGVAR(Tourniquet_PFH), -1];
+_unit setVariable [QGVAR(Tourniquet_LegNecrosis_Threshold), 0, true];
+
 // KAT Pharmacy
 
 _unit setVariable [QEGVAR(pharma,alphaAction), 1, true];

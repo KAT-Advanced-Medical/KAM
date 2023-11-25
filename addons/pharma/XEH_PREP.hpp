@@ -5,6 +5,7 @@ PREP(fluid);
 PREP(fluidLocal);
 PREP(getBloodLoss);
 PREP(getBloodVolumeChange);
+PREP(tourniquetRemove);
 PREP(init);
 PREP(inspectCatheter);
 PREP(medication);

@@ -122,6 +122,12 @@ _unit setVariable [QEGVAR(surgery,lidocaine), false, true];
 _unit setVariable [QEGVAR(surgery,etomidate), false, true];
 _unit setVariable [QEGVAR(surgery,sedated), false, true];
 
+// KAT Misc
+_unit setVariable [QGVAR(Tourniquet_ArmNecrosis), 0];
+_unit setVariable [QGVAR(Tourniquet_LegNecrosis), 0];
+_unit setVariable [QGVAR(Tourniquet_PFH), -1];
+_unit setVariable [QGVAR(Tourniquet_LegNecrosis_Threshold), 0, true];
+
 // Damage storage
 _unit setVariable [QACEGVAR(medical,bodyPartDamage), [0,0,0,0,0,0], true];
 
