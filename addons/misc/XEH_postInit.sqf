@@ -58,7 +58,9 @@ call FUNC(FAK_updateContents);
 
 ["baseline", {
     private _activeTourniquets = GET_TOURNIQUETS(ACE_player);
-    ((_activeTourniquets select 2) + (_activeTourniquets select 3) min 1);
+    if (GVAR(tourniquetEffects_Enable)) then {
+        ((_activeTourniquets select 2) + (_activeTourniquets select 3) min 1)
+    } else {0};
 }, QUOTE(ADDON)] call ACEFUNC(common,addSwayFactor);
 
 ["multiplier", {

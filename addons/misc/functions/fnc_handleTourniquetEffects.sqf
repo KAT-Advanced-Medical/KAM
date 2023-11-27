@@ -17,7 +17,7 @@
 
 params ["_unit"];
 
-if (_unit getVariable [QGVAR(Tourniquet_PFH), -1] != -1) exitWith {};
+if (_unit getVariable [QGVAR(Tourniquet_PFH), -1] != -1 || !(GVAR(tourniquetEffects_Enable))) exitWith {};
 _unit setVariable [QGVAR(Tourniquet_LegNecrosis_Threshold), 0, true];
 
 private _handleLegEffects = {
@@ -41,13 +41,12 @@ private _tourniquetPFH = [{
     private _legTourniquets = (_activeTourniquets select 4) + (_activeTourniquets select 5);
     
     if (_armTourniquets > 1) then {
-        _tourniquet_ArmNecrosis = _tourniquet_ArmNecrosis + 1.6; //0.15
-
+        _tourniquet_ArmNecrosis = _tourniquet_ArmNecrosis + (0.16 * GVAR(tourniquetEffects_PositiveMultiplier));
         if (_tourniquet_ArmNecrosis >= 100) then {
             _tourniquet_ArmNecrosis = 100;
         };
     } else {
-        _tourniquet_ArmNecrosis = _tourniquet_ArmNecrosis - 3.2; //0.30
+        _tourniquet_ArmNecrosis = _tourniquet_ArmNecrosis - (0.32 * GVAR(tourniquetEffects_NegativeMultiplier));
 
         if (_tourniquet_ArmNecrosis <= 0) then {
             _tourniquet_ArmNecrosis = 0;
@@ -55,13 +54,13 @@ private _tourniquetPFH = [{
     };
 
     if (_legTourniquets > 1) then {
-        _tourniquet_LegNecrosis = _tourniquet_LegNecrosis + 1.6;
+        _tourniquet_LegNecrosis = _tourniquet_LegNecrosis + (0.16 * GVAR(tourniquetEffects_PositiveMultiplier));
 
         if (_tourniquet_LegNecrosis >= 100) then {
             _tourniquet_LegNecrosis = 100;
         };
     } else {
-        _tourniquet_LegNecrosis = _tourniquet_LegNecrosis - 3.2;
+        _tourniquet_LegNecrosis = _tourniquet_LegNecrosis - (0.32 * GVAR(tourniquetEffects_NegativeMultiplier));
 
         if (_tourniquet_LegNecrosis <= 0) then {
             _tourniquet_LegNecrosis = 0;
