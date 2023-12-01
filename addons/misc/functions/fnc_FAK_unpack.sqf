@@ -81,17 +81,18 @@ if (_itemType == "Item") exitWith {
     _unit removeItem _item;
     if (_slot > 0) then {
         _slotArray set [(_slot - 1), false];
-        [_unit, (_itemList select (_slot - 1)), _container] call _fnc_arrayToInvItem;
 
         [_unit, _FAKToAdd, "", ([_slotArray] call FUNC(FAK_arrayToAmmo))] call ACEFUNC(common,addToInventory);
-    } else {
-        {
-            [_unit, _x, _container] call _fnc_arrayToInvItem;
-        } forEach _itemList;
 
+        [_unit, (_itemList select (_slot - 1)), _container] call _fnc_arrayToInvItem;
+    } else {
         if !(_removeOnEmptyCondition) then {
             [_unit, _FAKToAdd, "", 0] call ACEFUNC(common,addToInventory);
         };
+
+        {
+            [_unit, _x, _container] call _fnc_arrayToInvItem;
+        } forEach _itemList;
     };
 };
 
@@ -113,21 +114,22 @@ if !(_lowestAmmoCount < 257) exitWith {};
 
 if (_slot > 0) then {
     _slotArray set [(_slot - 1), false];
-    [_unit, (_itemList select (_slot - 1)), _container] call _fnc_arrayToInvItem;
     
     private _remaining = [_slotArray] call FUNC(FAK_arrayToAmmo);
 
     if (_remaining > 0 || !_removeOnEmptyCondition) then {
         [_unit, _FAKToAdd, "", _remaining] call ACEFUNC(common,addToInventory);
     };
+
+    [_unit, (_itemList select (_slot - 1)), _container] call _fnc_arrayToInvItem;
 } else {
+    if !(_removeOnEmptyCondition) then {
+        [_unit, _FAKToAdd, "", 0] call ACEFUNC(common,addToInventory);
+    };
+
     {
         if (_x) then {
             [_unit, (_itemList select _forEachIndex), _container] call _fnc_arrayToInvItem;
         };
     } forEach _slotArray;
-
-    if !(_removeOnEmptyCondition) then {
-        [_unit, _FAKToAdd, "", 0] call ACEFUNC(common,addToInventory);
-    };
 };

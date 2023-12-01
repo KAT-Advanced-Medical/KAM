@@ -502,6 +502,9 @@
             <Portuguese>Rotação de cabeça cancelada</Portuguese>
             <Spanish>Giro de cabeza cancelado</Spanish>
         </Key>
+        <Key ID="STR_KAT_Airway_headTurning_start">
+            <English>Head Turning Started</English>
+        </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
             <Japanese>頭を回すのを止める</Japanese>

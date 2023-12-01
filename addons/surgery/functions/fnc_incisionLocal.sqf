@@ -51,7 +51,7 @@ _patient setVariable [QGVAR(fractures), _fractureArray, true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if ((GVAR(Surgery_ConsciousnessRequirement) == 0 && !(IS_UNCONSCIOUS(_patient)) && _count == 0) || (GVAR(Surgery_ConsciousnessRequirement) == 3 && _count == 0)) exitWith {
+    if ((GVAR(Surgery_ConsciousnessRequirement) == 0 && (!(IS_UNCONSCIOUS(_patient)) || _count == 0)) || (GVAR(Surgery_ConsciousnessRequirement) == 3 && _count == 0)) exitWith {
         [_patient, "Pain", 10, 40, 200, 0, 40] call ACEFUNC(medical_status,addMedicationAdjustment);
         [_patient, true] call ACEFUNC(medical,setUnconscious);
     };
