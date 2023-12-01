@@ -49,13 +49,20 @@ if (_notInVehicle) then {
 
 [{
     params ["_medic", "_patient", "_notInVehicle", "_CPRStartTime"];
+    
     [LLSTRING(StopCPR), "", ""] call ACEFUNC(interaction,showMouseHint);
+    [LLSTRING(StartCPR), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 
     [{
         params ["_args", "_idPFH"];
         _args params ["_medic", "_patient", "_notInVehicle", "_CPRStartTime"];
 
-        if (_patient isEqualTo objNull || _medic isEqualTo objNull || !(alive _medic) || IS_UNCONSCIOUS(_medic) || !(IS_UNCONSCIOUS(_patient)) || (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull || !(_medic getVariable [QGVAR(isPerformingCPR), false]) || dialog || {!(objectParent _medic isEqualTo objectParent _patient) || {_patient distance _medic > ACEGVAR(medical_gui,maxDistance)}}) exitWith { // Stop CPR
+        private _patientCondition = (!(IS_UNCONSCIOUS(_patient)) && alive _patient || _patient isEqualTo objNull);
+        private _medicCondition = (!(alive _medic) || IS_UNCONSCIOUS(_medic) || _medic isEqualTo objNull);
+        private _vehicleCondition = !(objectParent _medic isEqualTo objectParent _patient);
+        private _distanceCondition = (_patient distance2D _medic > ACEGVAR(medical_gui,maxDistance));
+
+        if (_patientCondition || _medicCondition || (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]) isEqualTo objNull || !(_medic getVariable [QGVAR(isPerformingCPR), false]) || dialog || {(!_notInVehicle && _vehicleCondition) || {(_notInVehicle && _distanceCondition)}}) exitWith { // Stop CPR
             [_idPFH] call CBA_fnc_removePerFrameHandler;
 
             _medic setVariable [QGVAR(isPerformingCPR), false, true];

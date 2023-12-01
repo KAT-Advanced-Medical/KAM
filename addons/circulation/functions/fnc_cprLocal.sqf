@@ -124,13 +124,8 @@ if (_reviveObject in ["AED", "AEDX"]) exitWith {
             };
             _patient setVariable [QGVAR(cprCount), 2, true];
         } else {
-            if (GVAR(AdvRhythm_Hardcore_Enable) && _patientState < 3) then {
-                if (floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
-                    _patient setVariable [QGVAR(cardiacArrestType), 2, true];
-                    [_patient, nil, false] call FUNC(handleCardiacArrest);
-                } else {
-                    _patient setVariable [QGVAR(cardiacArrestType), 1, true];
-                };
+            if (GVAR(AdvRhythm_Hardcore_Enable) && _patientState == 2) then {
+                _patient setVariable [QGVAR(cardiacArrestType), 1, true];
             };
         };
     } else {

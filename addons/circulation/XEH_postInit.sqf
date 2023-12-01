@@ -15,7 +15,13 @@ GVAR(AEDX_MonitorTarget) = objNull;
     params ["_unit", "_patient"];
 
     if (ACEGVAR(medical_gui,target) isEqualTo _patient) then {
-        [_unit, 0.4] call ACEFUNC(medical_status,adjustPainLevel);
+        [_unit, 0.3] call ACEFUNC(medical_status,adjustPainLevel);
     };
-    //TODO add sound effect
+}] call CBA_fnc_addEventHandler;
+
+[QGVAR(incorrectAEDUsage), {
+    params ["_unit"];
+
+    [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+    _unit setVariable [QGVAR(cardiacArrestType), 1, true];
 }] call CBA_fnc_addEventHandler;

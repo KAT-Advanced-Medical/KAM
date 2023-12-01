@@ -17,7 +17,7 @@
  * Public: No
  */
 
-params ["_unit", "_active", ["_initial",true]];
+params ["_unit", "_active", ["_initial", true]];
 
 /* type
 0 normal

@@ -26,6 +26,10 @@ _bystanders = _bystanders - [_medic];
     [QGVAR(handleNearToAED), [_x, _patient], _x] call CBA_fnc_targetEvent;
 } forEach _bystanders;
 
+if (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] != objNull) then {
+    [(_patient getVariable QACEGVAR(medical,CPR_provider)), 0.4] call ACEFUNC(medical_status,adjustPainLevel);
+};
+
 _patient setVariable [QGVAR(heartRestart), true, true];
 _patient setVariable [QGVAR(RhythmAnalyzed), false, true];
 
@@ -43,6 +47,12 @@ _patient setVariable [QGVAR(RhythmAnalyzed), false, true];
 
 _patient setVariable [QGVAR(Defibrillator_ShockAmount), (_patient getVariable [QGVAR(Defibrillator_ShockAmount), 0]) + 1, true];
 
-if (alive _patient && {_patient getVariable [QACEGVAR(medical,inCardiacArrest), false]}) then {
-    [QACEGVAR(medical_treatment,cprLocal), [_medic, _patient, _defibType], _patient] call CBA_fnc_targetEvent;
+if (alive _patient) then {
+    if (_patient getVariable [VAR_CRDC_ARRST, false]) then {
+        [QACEGVAR(medical_treatment,cprLocal), [_medic, _patient, _defibType], _patient] call CBA_fnc_targetEvent;
+    } else {
+        if (GVAR(AdvRhythm) && GVAR(AdvRhythm_Hardcore_Enable)) then {
+            [QGVAR(incorrectAEDUsage), _patient, _patient] call CBA_fnc_targetEvent;
+        }; 
+    };
 };
