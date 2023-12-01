@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_RecoveryPositionLocal
+ * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_RecoveryPositionLocal;
  *
  * Public: No
  */
@@ -24,40 +24,32 @@ _patient setVariable [QGVAR(overstretch), true, true];
 private _output = LLSTRING(RecoveryPosition_Ready);
 [_output, 2, _medic] call ACEFUNC(common,displayTextStructured);
 
-GVAR(wasOccluded) = _patient getVariable [QGVAR(occluded), false];
+_patient setVariable [QGVAR(wasOccluded), (_patient getVariable [QGVAR(occluded), false])];
 
 if (GVAR(RecoveryPosition_TimeToDrain) > 0 && GVAR(wasOccluded)) then {
     [{
         params ["_patient"];
 
         _patient setVariable [QGVAR(occluded), false, true];
-        GVAR(wasOccluded) = false;
+        _patient setVariable [QGVAR(wasOccluded), false];
     }, [_patient], (random GVAR(RecoveryPosition_TimeToDrain) max 1)] call CBA_fnc_waitAndExecute;
 } else {
     _patient setVariable [QGVAR(occluded), false, true];
-    GVAR(wasOccluded) = false;
+    _patient setVariable [QGVAR(wasOccluded), false];
 };
 
 [{
     params ["_medic", "_patient"];
 
-    _patient call ACEFUNC(medical_status,isBeingDragged) || _patient call ACEFUNC(medical_status,isBeingCarried) || !(isNull objectParent _patient);
+    _patient call ACEFUNC(medical_status,isBeingDragged) || _patient call ACEFUNC(medical_status,isBeingCarried) || !(_patient getVariable [QGVAR(recovery), false]) || !(isNull objectParent _patient);
 }, {
     params ["_medic", "_patient"];
 
-    _patient setVariable [QGVAR(recovery), false, true];
-    _patient setVariable [QGVAR(overstretch), false, true];
-    _patient setVariable [QGVAR(occluded), GVAR(wasOccluded), true];
-
-    _output = LLSTRING(RecoveryPosition_Cancel);
-    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-}, [_medic, _patient], 3600, {
-    params ["_medic", "_patient"];
+    if (_patient getVariable [QGVAR(recovery), false]) then {
+        [LLSTRING(RecoveryPosition_Cancel), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+    };
 
     _patient setVariable [QGVAR(recovery), false, true];
     _patient setVariable [QGVAR(overstretch), false, true];
-    _patient setVariable [QGVAR(occluded), GVAR(wasOccluded), true];
-
-    _output = LLSTRING(RecoveryPosition_Cancel);
-    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
-}] call CBA_fnc_waitUntilAndExecute;
+    _patient setVariable [QGVAR(occluded), (_patient getVariable [QGVAR(wasOccluded), false]), true];
+}, [_medic, _patient], 3600, {}] call CBA_fnc_waitUntilAndExecute;

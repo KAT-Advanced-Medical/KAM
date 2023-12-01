@@ -12,7 +12,7 @@ if !(GVAR(enable)) exitWith {};
 
 [QGVAR(airwayFeedback), {
     params ["_medic","_output"];
-    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+    [_output, 2, _medic] call ACEFUNC(common,displayTextStructured);
 }] call CBA_fnc_addEventHandler;
 
 ["ace_unconscious", {

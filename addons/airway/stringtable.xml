@@ -1039,6 +1039,9 @@
             <Portuguese>%1 estabeleceu a posição de recuperação</Portuguese>
             <Norwegian>%1 la dem i stabilt sideleie</Norwegian>
         </Key>
+        <Key ID="STR_KAT_Airway_CancelRecoveryPosition_Log">
+            <English>%1 cancelled recovery position</English>
+        </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
             <German>Zeit für die stabile Seitenlage</German>

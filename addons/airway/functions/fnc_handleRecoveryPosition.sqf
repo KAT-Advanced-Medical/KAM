@@ -6,6 +6,7 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
+ * 2: Hint is delayed? <BOOL>
  *
  * Return Value:
  * None
@@ -16,8 +17,8 @@
  * Public: No
  */
 
-params ["_medic", "_patient"];
+params ["_medic", "_patient", ["_delayed", false]];
 
 if (_patient getVariable [QGVAR(recovery), false]) then {
-    [_medic, _patient] call FUNC(treatmentAdvanced_CancelRecoveryPosition);
+    [_medic, _patient, _delayed] call FUNC(treatmentAdvanced_CancelRecoveryPosition);
 };
