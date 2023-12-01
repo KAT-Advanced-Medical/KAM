@@ -484,7 +484,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>
-            <Japanese>頭を回して異物を除去</Japanese>
+            <Japanese>顔を横に向ける (指拭法で異物除去)</Japanese>
             <French>Début de la rotation de la tête</French>
             <Korean>고개 돌리기 시작</Korean>
             <Norwegian>Begynn vending av hode</Norwegian>
@@ -494,7 +494,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
-            <Japanese>頭を回すのが中止されました</Japanese>
+            <Japanese>異物除去が中止されました</Japanese>
             <French>Annulation de la rotation de la tête</French>
             <Korean>고개 돌리기 취소됨</Korean>
             <Norwegian>vewnding av hode ble avbrutt</Norwegian>
@@ -504,11 +504,11 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_start">
             <English>Head Turning Started</English>
-            <Japanese>頭を回すのを開始しました</Japanese>
+            <Japanese>異物除去を開始しました</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
-            <Japanese>頭を回すのを止める</Japanese>
+            <Japanese>異物除去を止める</Japanese>
             <French>Arrêt de la rotation de la tête</French>
             <Korean>고개 돌리기 멈추기</Korean>
             <Norwegian>Stop vending av hode</Norwegian>
@@ -682,7 +682,7 @@
             <Turkish>Baş döndürme başarı olasılığı</Turkish>
             <Italian>Probabilità di successo della rotazione della testa</Italian>
             <Russian>Вероятность успеха для поворота головы</Russian>
-            <Japanese>頭を回して異物を除去の成功確率</Japanese>
+            <Japanese>顔を横に向ける (指拭法で異物除去) の成功確率</Japanese>
             <Portuguese>Probabilidade de sucesso ao virar a cabeça</Portuguese>
             <Norwegian>sannsynligheten for sukksess ved vending av hode</Norwegian>
         </Key>
@@ -875,7 +875,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval">
             <English>Head Turning Interval</English>
-            <Japanese>頭を回して異物を除去の間隔</Japanese>
+            <Japanese>顔を横に向ける (指拭法で異物除去) の間隔</Japanese>
             <French>Intervalle de la rotation de la tête</French>
             <Korean>고개 돌리기 간격</Korean>
             <Norwegian>Intervall for vending av hode</Norwegian>
@@ -885,7 +885,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval_DESC">
             <English>Time between head turning attempts</English>
-            <Japanese>頭を回して異物を除去を実行する間隔</Japanese>
+            <Japanese>顔を横に向ける (指拭法で異物除去) を実行する間隔</Japanese>
             <French>Temps entre chaque tentative de rotation de la tête</French>
             <Korean>고개 돌리기를 시도하는 간격</Korean>
             <Norwegian>Tiden mellom forsøk på vending av hode</Norwegian>
@@ -895,7 +895,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Activity_HeadTurning">
             <English>%1 finished head turning (x%2)</English>
-            <Japanese>%1 は頭を回して異物除去を行った (x%2)</Japanese>
+            <Japanese>%1 は指拭法で異物除去を行った (x%2)</Japanese>
             <French>%1 a terminé de tourner la tête (x%2)</French>
             <Korean>%1은(는) 고개 돌리기를 끝냈습니다 (x%2)</Korean>
             <Norwegian>%1 fullførte vending av hode (%2%).</Norwegian>
@@ -1355,7 +1355,7 @@
             <English>Block head turning</English>
             <Czech>Blokování otáčení hlavou</Czech>
             <Korean>고개 돌리기 막기</Korean>
-            <Japanese>頭を回して異物を除去の阻害</Japanese>
+            <Japanese>顔を横に向ける (指拭法で異物除去) の阻害</Japanese>
             <French>Bloquer la rotation de la tête</French>
             <German>Verhindert das Drehen des Kopfes</German>
             <Italian>Blocca la rotazione della testa</Italian>
@@ -1367,7 +1367,7 @@
             <English>Blocks head turning if patient has Guedel Tube inserted</English>
             <Czech>Blokuje otáčení hlavou pokud má pacient zavedenou Guedel tubu</Czech>
             <Korean>환자가 게델튜브를 삽입한 경우 고개 돌리기를 막습니다.</Korean>
-            <Japanese>患者にゲデルチューブが挿管されている時に頭を回して異物を除去を実施出来ないようにします</Japanese>
+            <Japanese>患者にゲデルチューブが挿管されている時に顔を横に向ける (指拭法で異物除去) を実施出来ないようにします</Japanese>
             <French>Bloque la rotation de la tête si le patient a une canule de Guedel insérée</French>
             <German>Verhindert das zur Seite Drehen des Kopfes während ein Guedetubus eingeführt ist</German>
             <Italian>Blocca la rotazione della testa se il paziente ha la canula di Guedel inserita</Italian>
