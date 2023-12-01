@@ -1130,34 +1130,6 @@
             <Spanish>Valor SpO2 de Cianosis severa - Predeterminado en 66 SpO2 \nEste valor deberia de ser un poco mas alto que el valor letal de SpO2</Spanish>
             <Portuguese>Valor de SpO2 para cianose grave (padrão 66)\nDeve estar um pouco acima do valor letal de SpO2</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Breathing_CYANOSIS_TREATMENT_LEVEL">
-            <English>Check Cyanosis Minimum Level</English>
-            <German>Zyanose prüfen Trainingslevel</German>
-            <Polish>Minimalny poziom wyszkolenia do sprawdzenia sinicy</Polish>
-            <Japanese>チアノーゼの確認の許可</Japanese>
-            <Chinesesimp>允许检查面色所需的医疗培训水平</Chinesesimp>
-            <Korean>치아노제 증상 확인 최소 수준</Korean>
-            <French>Niveau médical minimum pour contrôler la cyanose</French>
-            <Turkish>Siyanoz minimum düzeyini kontrol edin</Turkish>
-            <Czech>Minimální úroveň ke zkontrolování cyanózy</Czech>
-            <Italian>Controlla livello minimo di cianosi</Italian>
-            <Spanish>Nivel médico minimo requerido para analizar la cianosis</Spanish>
-            <Portuguese>Nível médico mínimo requerido para verificação de cianose</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Breathing_CYANOSIS_TREATMENT_LEVEL_DESCRIPTION">
-            <English>The minimum medical level required for someone to be able to check cyanosis.</English>
-            <German>Benötigter medizinischer Grad, um eine Zyanose feststellen </German>
-            <Polish>Minimalny poziom wyszkolenia medycznego wymagany, aby ktoś był w stanie sprawdzić sinicę.</Polish>
-            <Japanese>チアノーゼの確認の使用に必要な医療スキルのレベルを設定します。</Japanese>
-            <Chinesesimp>允许检查面色所需的医疗培训水平</Chinesesimp>
-            <Korean>치아노제 증상을 확인할 수 있는 사람의 최소 의료레벨 수준입니다.</Korean>
-            <French>Le niveau médical minimum nécessaire pour pouvoir contrôler la cyanose</French>
-            <Turkish>Bir kişinin Siyanozu kontrol edebilmesi için gereken minimum tıbbi seviye.</Turkish>
-            <Italian>Il livello minimo richiesto per poter diagnosticare la cianosi</Italian>
-            <Czech>Minimální úroveň zdravotnického výcviku potřebná k tomu, aby někdo mohl zkontrolovat cyanózu</Czech>
-            <Spanish>Nivel médico minimo requerido para que alguien pueda analizar la cianosis</Spanish>
-            <Portuguese>O nível médico mínimo requerido para que alguém verifique a cianose</Portuguese>
-        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deterioratingPneumothorax_chance">
             <English>Pneumothorax deterioration chance</English>
             <Italian>Possibilità di deterioramento del pneumotorace</Italian>
