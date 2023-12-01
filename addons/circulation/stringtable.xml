@@ -2034,10 +2034,11 @@
         </Key>
         <Key ID="STR_KAT_Circulation_StartCPR">
             <English>CPR Started</English>
+            <Japanese>CPRを開始しました</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
-            <Japanese>CPRを中止しました</Japanese>
+            <Japanese>CPRが中止されました</Japanese>
             <French>RCP annulée</French>
             <Korean>심폐소생술 취소함</Korean>
             <German>HLW Gestoppt</German>

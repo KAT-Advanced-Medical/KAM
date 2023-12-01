@@ -494,7 +494,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
-            <Japanese>頭を回すのを止めました</Japanese>
+            <Japanese>頭を回すのが中止されました</Japanese>
             <French>Annulation de la rotation de la tête</French>
             <Korean>고개 돌리기 취소됨</Korean>
             <Norwegian>vewnding av hode ble avbrutt</Norwegian>
@@ -504,6 +504,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_start">
             <English>Head Turning Started</English>
+            <Japanese>頭を回すのを開始しました</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
