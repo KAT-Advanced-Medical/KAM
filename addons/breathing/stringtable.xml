@@ -887,7 +887,7 @@
             <French>Temps d'écoute du stéthoscope</French>
             <Korean>청진기 청진 시간</Korean>
             <Polish>Czas osłuchiwania płuc</Polish>
-            <Japanese>聴診器での聴診時間</Japanese>
+            <Japanese>聴診器の聴診時間</Japanese>
             <German>Stethoskop-Hörzeit</German>
             <Czech>Čas poslechu Stetoskopem</Czech>
             <Italian>Tempo di ascolto dello stetoscopio</Italian>
@@ -899,7 +899,7 @@
             <Korean>청진기의 청진 시간 길이를 설정합니다</Korean>
             <Polish>Określa jak długo będą osłuchiwane płuca przy pomocy stetoskopu</Polish>
             <Spanish>Fija cuanto tiempo dura el periodo de escucha del estetoscopio</Spanish>
-            <Japanese>聴診器での聴診を実行するのにかかる時間を設定します</Japanese>
+            <Japanese>聴診器での聴診期間の長さを設定します</Japanese>
             <German>Legt fest, wie lange es dauert um mit dem Stethoskop abzuhören</German>
             <Czech>Nastavuje dobu trvání poslechu Stetoskopem</Czech>
             <Italian>Imposta quanto dura in tempo il periodo di ascolto dello stetoscopio</Italian>

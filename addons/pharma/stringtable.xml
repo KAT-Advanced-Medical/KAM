@@ -76,7 +76,7 @@
             <English>IV/IO drop time</English>
             <German>IOs/IVs Herausfallzeit</German>
             <French>Temps de chute de l'IV/IO</French>
-            <Japanese>IV/IOの脱落時間</Japanese>
+            <Japanese>IV/IO脱落までの時間</Japanese>
             <Korean>IV/IO를 떼어내는 시간</Korean>
             <Italian>Tempo di staccamento IV/IO</Italian>
             <Portuguese>Tempo de queda de IV/IO</Portuguese>
@@ -112,7 +112,7 @@
             <Korean>IV/IO 바늘 재사용 가능 여부</Korean>
             <Turkish>IV/IO iğnelerinin yeniden kullanılabilir olup olmadığını ayarlar</Turkish>
             <Czech>Nastaví, zda IV/IO jehly jsou znovu-použitelné</Czech>
-            <Japanese>IV/IOの再利用</Japanese>
+            <Japanese>IV/IO針を再利用可能にする</Japanese>
             <Russian>Устанавливает, можно ли использовать иглы для IV/IO повторно</Russian>
             <Portuguese>Define se as agulhas IV/IO são reutilizáveis</Portuguese>
         </Key>
@@ -666,7 +666,7 @@
             <Spanish>Estimular al paciente</Spanish>
             <Korean>환자 깨우기</Korean>
             <Czech>Reorientovat pacienta</Czech>
-            <Japanese>患者に刺激を与える</Japanese>
+            <Japanese>患者を刺激する</Japanese>
             <Russian>Переориентация пациента</Russian>
             <Portuguese>Reorientar Paciente</Portuguese>
         </Key>
@@ -682,7 +682,7 @@
             <Korean>깨우는 중</Korean>
             <Turkish>Yeniden yönlendirme</Turkish>
             <Czech>Reoritentuji</Czech>
-            <Japanese>刺激を与えています</Japanese>
+            <Japanese>刺激しています</Japanese>
             <Russian>Переориентация</Russian>
             <Portuguese>Reorientando</Portuguese>
         </Key>
@@ -1076,7 +1076,7 @@
             <French>Activer son de la claque</French>
             <Turkish>Yeniden yönlendirme için tokat sesini etkinleştirir</Turkish>
             <Italian>Abilita il suono dello schiaffo per la stimolazione</Italian>
-            <Japanese>患者に刺激を与える際にビンタの音を鳴らします</Japanese>
+            <Japanese>患者を刺激する際に平手打ちする音を鳴らします</Japanese>
             <Russian>Включает звук пощечины для переориентации</Russian>
             <Portuguese>Ativa o som de tapa durante reorientação</Portuguese>
         </Key>
@@ -1092,7 +1092,7 @@
             <French>Stimulation activé?</French>
             <Turkish>Yeniden yönlendirme etkin mi?</Turkish>
             <Italian>Stimolazione abilitata?</Italian>
-            <Japanese>患者に刺激を与える機能の有効化</Japanese>
+            <Japanese>患者を刺激出来るようにしますか?</Japanese>
             <Russian>Переориентация включена?</Russian>
             <Portuguese>Reorientação habilitada?</Portuguese>
         </Key>
@@ -1108,7 +1108,7 @@
             <French>Activer stimulation</French>
             <Turkish>Yeniden yönlendirmeyi etkinleştirir</Turkish>
             <Italian>Stimolazione abilitata</Italian>
-            <Japanese>刺激を与える(患者の安定時にビンタで叩き起こす)機能を有効化します</Japanese>
+            <Japanese>患者を刺激する機能を有効化します(患者の安定時に平手打ちで叩き起こす)</Japanese>
             <Russian>Включает переориентация</Russian>
             <Portuguese>Habilita a reorientação</Portuguese>
         </Key>
@@ -1124,7 +1124,7 @@
             <French>Autoriser stimulation</French>
             <Turkish>Yeniden yönlendirmeye izin ver</Turkish>
             <Italian>Autorizza stimolazione</Italian>
-            <Japanese>患者に刺激を与える許可</Japanese>
+            <Japanese>患者を刺激する許可</Japanese>
             <Russian>Разрешить переориентацию</Russian>
             <Portuguese>Permitir reorientação</Portuguese>
         </Key>
@@ -1140,7 +1140,7 @@
             <French>Niveau médical requis pour stimulation</French>
             <Turkish>Yeniden oryantasyon için gerekli tıbbi seviye</Turkish>
             <Italian>Livello medico richiesto per stimolazione</Italian>
-            <Japanese>患者を刺激を与えるの使用に必要な医療スキルのレベルを設定します。</Japanese>
+            <Japanese>患者を刺激するアクションの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Russian>Медицинский уровень, необходимый для переориентации</Russian>
             <Portuguese>Nível médico necessário para reorientação</Portuguese>
         </Key>
@@ -1345,7 +1345,7 @@
             <French>Temps de traitement pour réorienter</French>
             <Korean>뺨을 때리는 데 걸리는 시간</Korean>
             <German>Behandlungszeit für die Umorientierung</German>
-            <Japanese>患者に刺激を与える所要時間</Japanese>
+            <Japanese>患者を刺激する所要時間</Japanese>
             <Spanish>Tiempo para bofetada</Spanish>
             <Portuguese>Tempo de tratamento para reorientação</Portuguese>
         </Key>
@@ -1631,7 +1631,7 @@
             <French>Chance de succès de la réorientation</French>
             <Korean>뺨 때리기가 성공할 확률</Korean>
             <German>Chance für eine erfolgreiche Umorientierung</German>
-            <Japanese>患者に刺激を与えた際の覚醒成功率</Japanese>
+            <Japanese>患者を刺激した際の覚醒成功率</Japanese>
             <Spanish>Probabilidad para una reorientación exitosa</Spanish>
             <Portuguese>Chance de reorientação bem-sucedida</Portuguese>
         </Key>
@@ -2128,7 +2128,7 @@
             <French>Paramètres des IV</French>
             <Korean>IV 설정</Korean>
             <German>IV Einstellungen</German>
-            <Japanese>Ⅳ設定</Japanese>
+            <Japanese>IV 設定</Japanese>
             <Spanish>Parámetros de la IV</Spanish>
             <Portuguese>Configurações de IV</Portuguese>
         </Key>
@@ -2154,7 +2154,7 @@
             <French>Paramètres de la réorientation</French>
             <Korean>뺨 때리기 설정</Korean>
             <German>Umorientierungs-Einstellungen</German>
-            <Japanese>患者に刺激を与える設定</Japanese>
+            <Japanese>患者を刺激する機能設定</Japanese>
             <Spanish>Parámetros de la reorientación</Spanish>
             <Portuguese>Configurações de reorientação</Portuguese>
         </Key>
@@ -2494,7 +2494,7 @@
             <Korean>최대 액체 가방 양</Korean>
             <German>Maximaler Flüssigkeitsbeutelstapel</German>
             <Chinesesimp>注射液堆叠上限</Chinesesimp>
-            <Japanese>最大輸液袋スタック数</Japanese>
+            <Japanese>輸液袋スタックの最大数</Japanese>
             <Spanish>Máxima cantidad de bolsas de fluidos simultaneas</Spanish>
             <Polish>Maksymalna ilość worków z płynami dla jednego pajenta</Polish>
             <Portuguese>Pilha Máxima de Sacos de Fluidos</Portuguese>
@@ -2507,7 +2507,7 @@
             <Korean>IV 주입량을 증가시키기 위해 쌓을 수 있는 최대 액체 가방의 양</Korean>
             <German>Die maximale Anzahl von Flüssigkeitsbeuteln, die gestapelt werden können, um die Durchflussrate der Infusion zu erhöhen</German>
             <Chinesesimp>可堆叠的最大液体袋量以增加 IV 流速</Chinesesimp>
-            <Japanese>IV流量を増やすために積み重ねることができる輸液袋の最大量</Japanese>
+            <Japanese>IV流量を増やすために積み重ねることができる輸液袋の最大数</Japanese>
             <Spanish>La cantidad máxima de bolsas de fluido que se pueden apilar para aumentar el flujo de IV</Spanish>
             <Polish>Maksymalna ilość worków z płynem, które można przypiąć w tym samym momencie, aby zwiększyć szybkość przepływu IV</Polish>
             <Portuguese>A quantidade máxima de bolsas de fluido que podem ser empilhadas para aumentar a taxa de fluxo IV</Portuguese>

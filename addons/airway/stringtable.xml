@@ -92,7 +92,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod">
             <English>Occlusion Cooldown Period</English>
-            <Japanese>異物再発のクールダウン周期</Japanese>
+            <Japanese>異物再発のクールダウン期間</Japanese>
             <French>Temps de récupération après une occlusion</French>
             <Korean>구토 쿨다운 시간</Korean>
             <Norwegian>Avkjølingsperiode for okklusjon</Norwegian>
@@ -1286,7 +1286,7 @@
             <German>Wiederverwendbare Atemwegsobjekte</German>
             <Czech>Znovupoužitelné předměty pro dýchací cesty</Czech>
             <Spanish>Objetos reutilizables de vías aéreas</Spanish>
-            <Japanese>繰り返し使用できる気道アイテム</Japanese>
+            <Japanese>気道アイテムの再利用</Japanese>
             <French>Objets lié aux voies aériennes réutilisables</French>
             <Korean>기도 관련 아이템 재사용 가능</Korean>
             <Italian>Oggetti delle vie aeree riutilizzabili</Italian>
@@ -1298,7 +1298,7 @@
             <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
             <Czech>Vrácení KingLT nebo Guedel Tuby při jejich manuálním odebrání</Czech>
             <Spanish>Recuperar el Tubo laríngeo o la Cánula de Guedel cuando se quitan manualmente</Spanish>
-            <Japanese>King LTまたはゲデルチューブを取り除いた際、再使用できるようにします。</Japanese>
+            <Japanese>King LTまたはゲデルチューブを取り除いた後、再利用できるようにします。</Japanese>
             <French>Récupérer le tube laryngé ou la canule de guedel lorsque ceux-ci sont retirés manuellement</French>
             <Korean>기관삽입기나 게델튜브를 수동으로 제거하면 재사용을 가능케 할지 여부입니다.</Korean>
             <Italian>Riguadagna il KingLT o la canula di Guedel quando li rimuovi manualmente</Italian>
