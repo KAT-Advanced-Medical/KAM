@@ -1631,7 +1631,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM">
             <English>%1 used %2 (x%3)</English>
-            <Japanese>%1 は%2を使用しました (x%3)</Japanese>
+            <Japanese>%1 は %2 を使用しました (x%3)</Japanese>
             <French>%1 a utilisé %2 (x%3)</French>
             <Korean>%1은(는) %2을(를) 사용했다 (x%3)</Korean>
             <Italian>%1 verwendete %2 (x%3)</Italian>
@@ -1641,7 +1641,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM_Oxygenated">
             <English>%1 (Oxygenated)</English>
-            <Japanese>%1  (酸素含有)</Japanese>
+            <Japanese>%1 (酸素供給)</Japanese>
             <French>%1 (Oxygéné)</French>
             <Korean>%1 (산소주입됨)</Korean>
             <Italian>%1 (Sauerstoff)</Italian>

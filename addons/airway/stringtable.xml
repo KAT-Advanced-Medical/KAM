@@ -196,7 +196,7 @@
             <Turkish>Tıkalı</Turkish>
             <Italian>Occlusa</Italian>
             <Russian>Окклюзия</Russian>
-            <Japanese>異物発生</Japanese>
+            <Japanese>異物あり</Japanese>
             <Portuguese>Ocluída</Portuguese>
             <Norwegian>Okkludert</Norwegian>
         </Key>
@@ -213,14 +213,14 @@
             <Turkish>Kapanma</Turkish>
             <Italian>Ostruita</Italian>
             <Russian>Обструкция</Russian>
-            <Japanese>閉塞発生</Japanese>
+            <Japanese>閉塞あり</Japanese>
             <Portuguese>Obstruída</Portuguese>
             <Norwegian>Obstruksjon</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction_short">
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
-            <Japanese>閉塞軽減中</Japanese>
+            <Japanese>軽減された閉塞あり</Japanese>
             <Italian>Ostruzione attenuata</Italian>
             <Czech>Zmírněná obstrukce</Czech>
             <Korean>막힘 완화됨</Korean>
@@ -242,7 +242,7 @@
             <French>Non obstruées</French>
             <Turkish>Değil Kapanma</Turkish>
             <Italian>No ostruita</Italian>
-            <Japanese>閉塞無し</Japanese>
+            <Japanese>閉塞なし</Japanese>
             <Chinesesimp>无阻塞</Chinesesimp>
             <Portuguese>Não obstruída</Portuguese>
             <Norwegian>Ikke blokkert</Norwegian>
@@ -258,7 +258,7 @@
             <French>Non occludées</French>
             <Turkish>Değil Tıkalı</Turkish>
             <Italian>No occlusa</Italian>
-            <Japanese>異物無し</Japanese>
+            <Japanese>異物なし</Japanese>
             <Chinesesimp>无闭塞</Chinesesimp>
             <Portuguese>Não ocluída</Portuguese>
             <Norwegian>Ikke okkludert</Norwegian>
@@ -278,15 +278,19 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noObstruction">
             <English>Airway is not obstructed</English>
+            <Japanese>気道は閉塞していない</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion">
             <English>Airway is not occluded</English>
+            <Japanese>気道に異物はありません</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
+            <Japanese>気道は閉塞しています、気道管理が必要です</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
+            <Japanese>気道に異物があります、医療吸引が必要です</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
             <English>Airway is clear</English>
@@ -352,12 +356,13 @@
             <Turkish>Hyperextension Gerçekleşmiş Kafa</Turkish>
             <Italian>Testa iperestesa</Italian>
             <Russian>перетянутый голова</Russian>
-            <Japanese>頭部後屈を実行中</Japanese>
+            <Japanese>頭部後屈を実施中</Japanese>
             <Portuguese>Cabeça hiperestendida</Portuguese>
             <Norwegian>Hode er overekstendert</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_already">
             <English>Patient's head is already hyperextended</English>
+            <Japanese>患者は既に頭部後屈されています</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_progress">
             <English>Hyperextending head</English>
@@ -395,6 +400,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Ready">
             <English>Head hyperextended successfully</English>
+            <Japanese>頭部後屈させました</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -1045,6 +1051,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_CancelRecoveryPosition_Log">
             <English>%1 cancelled recovery position</English>
+            <Japanese>%1 は回復体位を崩しました</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
@@ -1127,12 +1134,15 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
+            <Japanese>回復体位による異物排出にかかる時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
+            <Japanese>回復体位にある患者の気道異物が排出され解消するまでに必要な最大時間。</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
+            <Japanese>回復体位と頭部後屈設定</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>

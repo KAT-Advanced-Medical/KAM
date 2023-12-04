@@ -43,7 +43,7 @@
             <French>%1 a administré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
-            <Japanese>%1 は%2を注入しました</Japanese>
+            <Japanese>%1 は %2 を注入しました</Japanese>
             <Portuguese>%1 administrou %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_inject_log">
@@ -58,7 +58,7 @@
             <French>%1 a injecté un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
-            <Japanese>%1 は%2を注射しました</Japanese>
+            <Japanese>%1 は %2 を注射しました</Japanese>
             <Portuguese>%1 injetou %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_use_log">
@@ -73,7 +73,7 @@
             <French>%1 a utilisé un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
-            <Japanese>%1 は%2を使用しました</Japanese>
+            <Japanese>%1 は %2 を使用しました</Japanese>
             <Portuguese>%1 usou %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_breath_check">
@@ -215,7 +215,7 @@
             <French>%1 présent sur %2</French>
             <Korean>%2 은(는) 현재 %1 상태이다.</Korean>
             <German>%1 vorhanden auf %2</German>
-            <Japanese>%1 が%2に存在します</Japanese>
+            <Japanese>%1 が %2 に存在します</Japanese>
             <Spanish>%1 presente en %2</Spanish>
             <Portuguese>%1 presente em %2</Portuguese>
         </Key>
@@ -228,7 +228,7 @@
             <French>%1 %2 la fracture sur le %3</French>
             <Korean>%1 은(는) %3 의 골절을 %2 (으)로 수행하였습니다</Korean>
             <German>%1 %2 des Bruches an dem %3</German>
-            <Japanese>%1 は%3の骨折に%2しました</Japanese>
+            <Japanese>%1 は %3 の骨折に %2 しました</Japanese>
             <Spanish>%1 %2 la fractura sobre el/la %3</Spanish>
             <Portuguese>%1 %2 a fratura sobre %3</Portuguese>
         </Key>
@@ -241,7 +241,7 @@
             <French>%1 a effectuée une incision sur le %2</French>
             <Korean>%1 이(가) %2 을(를) 절개했습니다</Korean>
             <German>%1 hat einen Einschnitt an dem %2 vorgenommen</German>
-            <Japanese>%1 は%2を切開しました</Japanese>
+            <Japanese>%1 は %2 を切開しました</Japanese>
             <Spanish>%1 hizo una incisión sobre el/la %2</Spanish>
             <Portuguese>%1 fez uma incisão em %2</Portuguese>
         </Key>

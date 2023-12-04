@@ -762,7 +762,7 @@
             <French>%1 a administré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
-            <Japanese>%1 は%2を注入しました</Japanese>
+            <Japanese>%1 は %2 を注入しました</Japanese>
             <Russian>%1 нажал %2</Russian>
             <Portuguese>%1 administrou %2</Portuguese>
         </Key>
@@ -778,7 +778,7 @@
             <French>%1 a injecté un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
-            <Japanese>%1 は%2を注射しました</Japanese>
+            <Japanese>%1 は %2 を注射しました</Japanese>
             <Russian>%1 введено %2</Russian>
             <Portuguese>%1 injetou %2</Portuguese>
         </Key>
@@ -794,7 +794,7 @@
             <French>%1 a utilisé un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
-            <Japanese>%1 は%2を使用しました</Japanese>
+            <Japanese>%1 は %2 を使用しました</Japanese>
             <Russian>%1 использует %2</Russian>
             <Portuguese>%1 usou %1</Portuguese>
         </Key>
@@ -938,7 +938,7 @@
             <French>%1 a inseré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha posizionato %2</Italian>
-            <Japanese>%1 は%2を刺入しました</Japanese>
+            <Japanese>%1 は %2 を刺入しました</Japanese>
             <Russian>%1 Настройка %2</Russian>
             <Portuguese>%1 inseriu %2</Portuguese>
         </Key>
