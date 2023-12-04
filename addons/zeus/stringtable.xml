@@ -130,7 +130,7 @@
             <Portuguese>Volume de sangue:</Portuguese>
         </Key>
         <Key ID="STR_KAT_Zeus_manageAirway_Module_displayname">
-            <English>Manage Airways</English>
+            <English>Manage Airway</English>
             <German>Atemwege verwalten</German>
             <Czech>Upravit dýchací cesty</Czech>
             <French>Gestion des voies aériennes</French>
@@ -139,7 +139,7 @@
             <Chinese>管理航空公司</Chinese>
             <Korean>기도 관리</Korean>
             <Turkish>Hava Yollarını Yönet</Turkish>
-            <Japanese>気道と呼吸の状態を変更</Japanese>
+            <Japanese>気道の管理</Japanese>
             <Russian>Управление авиалиниями</Russian>
             <Italian>Gestisci le vie aeree</Italian>
             <Chinesesimp>气道管理:</Chinesesimp>
