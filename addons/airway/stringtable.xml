@@ -1061,7 +1061,7 @@
             <Portuguese>Tempo para estabelecer a posição de recuperação</Portuguese>
             <Norwegian>Tid for å legge i stabilt sideleie</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time_DESC">	
+        <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time_DESC">
             <English>How long it will take to establish recovery position</English>
             <German>Die Zeit, wie lange es dauert, eine erfolgreiche stabile Seitenlage durchzuführen</German>
             <Polish>Jak długo potrwa ułożenie w pozycji bocznej bezpiecznej</Polish>
