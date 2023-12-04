@@ -357,6 +357,18 @@
             <Spanish>[ADVERTENCIA DE KAM] Addon(s) incompatibles que podrían afectar negativamente el funcionamiento del mod fueron detectados. El equipo de desarollo de KAT - Advanced Medical REWRITE recomienda fuertemente remover estos addons. %1</Spanish>
             <Portuguese>[AVISO DO KAM] Detectados addons incompatíveis que podem afetar negativamente a funcionalidade correta. KAT - A equipe de desenvolvimento do Advanced Medical REWRITE recomenda fortemente a remoção destes complementos: %1</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Misc_SubCategory_Tourniquet">
+            <English>Tourniquet Settings</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable">
+            <English>Enable tourniquet effects</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier">
+            <English>Tourniquet effects positive multiplier</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier">
+            <English>Tourniquet effects negative multiplier</English>
+        </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>
             <Spanish>Tiempo para retirar un torniquete</Spanish>
