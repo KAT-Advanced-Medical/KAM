@@ -302,9 +302,9 @@ class ACE_Medical_Treatment_Actions {
         category = "advanced";
         allowedSelections[] = {"Body"};
         items[] = {"kat_IO_FAST"};
-        condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)) && !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
+        condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
         treatmentTime = QGVAR(treatmentTime_ApplyIO);
-        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'kat_IO_FAST')] call FUNC(applyIV));
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_4(_player,_patient,_bodyPart,'kat_IO_FAST')] call FUNC(applyIV););
         litter[] = {};
         sounds[] = {};
     };

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player] call kat_breathing_fnc_lowSpO2pp
+ * [player] call kat_breathing_fnc_lowSpO2pp;
  *
  * Public: No
  */
