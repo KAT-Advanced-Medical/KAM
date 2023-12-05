@@ -363,15 +363,15 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable">
             <English>Enable tourniquet effects</English>
-            <Japanese>止血帯効果を有効化</Japanese>
+            <Japanese>止血帯の副作用を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier">
             <English>Tourniquet effects positive multiplier</English>
-            <Japanese>止血帯効果の正の乗数</Japanese>
+            <Japanese>止血帯の副作用の正の乗数</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier">
             <English>Tourniquet effects negative multiplier</English>
-            <Japanese>止血帯効果の負の乗数</Japanese>
+            <Japanese>止血帯の副作用の負の乗数</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>

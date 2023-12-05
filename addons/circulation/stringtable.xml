@@ -903,7 +903,7 @@
             <Turkish>Hayati değerleri izlemek ve kişileri canlandırmak için kullanılır</Turkish>
             <Italian>Usato per monitorare i parametri vitali e rianimare i pazienti</Italian>
             <Russian>Используется для мониторинга жизненных показателей и реанимации людей.</Russian>
-            <Japanese>バイタルの値を監視し、人を蘇生させるために使用されます</Japanese>
+            <Japanese>バイタルの値を監視し、人を蘇生させるために使用される</Japanese>
             <Portuguese>Usado para monitorar valores vitais e para ressuscitar pessoas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_Action_PlacePads">
@@ -1678,7 +1678,7 @@
             <Turkish>Oyuncuyu canlandırmak için kullanın</Turkish>
             <Italian>Utilizzato per resuscitare un giocatore</Italian>
             <Russian>Используйте, чтобы реанимировать игрока</Russian>
-            <Japanese>人を蘇生させるために使用されます</Japanese>
+            <Japanese>人を蘇生させるために使用される</Japanese>
             <Portuguese>Use para ressuscitar jogadores</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_Shock">

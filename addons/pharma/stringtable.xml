@@ -160,7 +160,7 @@
             <Korean>통증을 억제하는 데 사용</Korean>
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Czech>Používá se k potlačení bolesti</Czech>
-            <Japanese>痛みを抑えるために使用されます</Japanese>
+            <Japanese>痛みを抑えるために使用される</Japanese>
             <Russian>Используется для подавления боли</Russian>
             <Portuguese>Utilizado para suprimir a dor</Portuguese>
         </Key>
@@ -208,7 +208,7 @@
             <Korean>의식 회복에 사용</Korean>
             <Turkish>Bilinci geri yüklemek için kullanılır</Turkish>
             <Czech>Používá se k obnovení vědomí</Czech>
-            <Japanese>意識を回復するために使用されます</Japanese>
+            <Japanese>意識を回復するために使用される</Japanese>
             <Russian>Используется для восстановления сознания</Russian>
             <Portuguese>Usado para restaurar a consciência</Portuguese>
         </Key>
@@ -264,7 +264,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
             <English>Used to manage moderate pain</English>
-            <Japanese>中度の痛みの対処に使用されます</Japanese>
+            <Japanese>中度の痛みの対処に使用される</Japanese>
             <French>Utilisé pour traiter les douleurs modérées</French>
             <Korean>중간 정도의 통증 관리에 사용됩니다</Korean>
             <German>Wird zur Behandlung mäßiger Schmerzen eingesetzt</German>
@@ -283,7 +283,7 @@
             <Korean>아편유사제 과다 복용을 역전시키는 데 사용</Korean>
             <Turkish>Opioid aşırı dozlarını tersine çevirmek için kullanılır</Turkish>
             <Czech>Používá se ke zvrácení předávkování opioidy</Czech>
-            <Japanese>オピオイド過剰摂取を元に戻すために使用されます</Japanese>
+            <Japanese>オピオイド過剰摂取を元に戻すために使用される</Japanese>
             <Russian>Используется для устранения передозировок опиоидами.</Russian>
             <Portuguese>Usado para reverter overdoses de opioides</Portuguese>
         </Key>
@@ -331,7 +331,7 @@
             <Korean>심장 마비 퇴치를 위해 사용</Korean>
             <Turkish>Kalp durmasıyla mücadele için kullanılır</Turkish>
             <Czech>Používá se k léčení srdeční zástavy</Czech>
-            <Japanese>心停止に対応する為に使用されます</Japanese>
+            <Japanese>心停止に対応する為に使用される</Japanese>
             <Russian>Используется для борьбы с остановкой сердца</Russian>
             <Portuguese>Usado para combater a parada cardíaca</Portuguese>
         </Key>
@@ -379,7 +379,7 @@
             <Korean>심장 마비 퇴치를 위해 사용</Korean>
             <Turkish>Kalp durmasıyla mücadele için kullanılır</Turkish>
             <Czech>Používá se k léčení srdeční zástavy</Czech>
-            <Japanese>心停止に対応する為に使用されます</Japanese>
+            <Japanese>心停止に対応する為に使用される</Japanese>
             <Russian>Используется для борьбы с остановкой сердца</Russian>
             <Portuguese>Usado para combater a parada cardíaca</Portuguese>
         </Key>
@@ -427,7 +427,7 @@
             <Korean>서맥 치료에 사용</Korean>
             <Turkish>Bradikardi tedavisinde kullanılır</Turkish>
             <Czech>Používá se k léčbě bradykardie</Czech>
-            <Japanese>徐脈の治療に使用されます</Japanese>
+            <Japanese>徐脈の治療に使用される</Japanese>
             <Russian>Используется для лечения брадикардии</Russian>
             <Portuguese>Usado para tratar bradicardia</Portuguese>
         </Key>
@@ -523,7 +523,7 @@
             <Korean>혈압을 높이는 데 사용</Korean>
             <Turkish>Kan basıncını yükseltmek için kullanılır</Turkish>
             <Czech>Používáno ke zvýšení krevního tlaku</Czech>
-            <Japanese>血圧を上げるために使用されます</Japanese>
+            <Japanese>血圧を上げるために使用される</Japanese>
             <Russian>Используется для повышения артериального давления</Russian>
             <Portuguese>Usado para aumentar a pressão arterial</Portuguese>
         </Key>
@@ -571,7 +571,7 @@
             <Korean>혈압을 높이는 데 사용</Korean>
             <Turkish>Kan basıncını yükseltmek için kullanılır</Turkish>
             <Czech>Používáno ke zvýšení krevního tlaku</Czech>
-            <Japanese>血圧を上げるために使用されます</Japanese>
+            <Japanese>血圧を上げるために使用される</Japanese>
             <Russian>Используется для повышения артериального давления</Russian>
             <Portuguese>Usado para aumentar a pressão arterial</Portuguese>
         </Key>
@@ -619,7 +619,7 @@
             <Korean>혈압을 낮추는 데 사용</Korean>
             <Turkish>Kan basıncını düşürmek için kullanılır</Turkish>
             <Czech>Používáno ke snížení krevního tlaku</Czech>
-            <Japanese>血圧を下げるために使用されます</Japanese>
+            <Japanese>血圧を下げるために使用される</Japanese>
             <Russian>Используется для снижения артериального давления</Russian>
             <Portuguese>Usado para baixar a pressão arterial</Portuguese>
         </Key>
@@ -1435,7 +1435,7 @@
             <French>Utiliser pour sédater les patients et les préparer pour une opération</French>
             <Korean>환자를 진정시키고 수술 준비를 하는 데 사용됩니다.</Korean>
             <German>Zur Sedierung von Patienten und zur Vorbereitung auf eine Operation</German>
-            <Japanese>患者を鎮静させ、手術の準備をするために使用されます</Japanese>
+            <Japanese>患者を鎮静させ、手術の準備をするために使用される</Japanese>
             <Spanish>Usado para sedar pacientes y preparalos para cirugía</Spanish>
             <Polish>Służy do uspokajania pacjentów i przygotowywania ich do operacji - usypia</Polish>
             <Portuguese>Usado para sedar pacientes e prepará-los para a cirurgia</Portuguese>
