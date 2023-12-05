@@ -453,7 +453,7 @@
             <English>Vehicle's Equipment First (No self-treatment)</English>
             <German> Ausrüstung des Fahrzeuges zuerst (Keine Selbstbehandlung)</German>
             <Korean>차량 내 장비부터 사용(자가치료 불가능)</Korean>
-            <Japanese>車両の装備を優先 (使用しない - 自己治療時は)</Japanese>
+            <Japanese>車両の装備を優先(使用しない-自己治療時は)</Japanese>
             <French>Matériel du véhicule en premier (Pas de traitement sur soi-même)</French>
             <Italian>Primo materiale del veicolo condiviso (nessun autotrattamento)</Italian>
             <Spanish>Priorizar equipamiento en el vehiculo (sin autotratamiento)</Spanish>
@@ -463,7 +463,7 @@
             <English>Vehicle's Equipment First (Except self-treatment)</English>
             <German> Ausrüstung des Fahrzeuges zuerst (außer für Selbstbehandlung)</German>
             <Korean>차량 내 장비부터 사용(자가치료 제외)</Korean>
-            <Japanese>車両の装備を優先 (優先しない - 自己治療時は)</Japanese>
+            <Japanese>車両の装備を優先(優先しない-自己治療時は)</Japanese>
             <French>Matériel du véhicule en premier (Sauf pour le traitement sur soi-même)</French>
             <Italian>Primo materiale del veicolo condiviso ( eccetto autotrattamento)</Italian>
             <Spanish>Priorizar equipamiento en el vehiculo (excepto autotratamiento)</Spanish>
@@ -473,7 +473,7 @@
             <English>Vehicle's Equipment First (Always)</English>
             <German> Ausrüstung des Fahrzeuges immer zuerst</German>
             <Korean>차량 내 장비부터 사용(모두)</Korean>
-            <Japanese>車両の装備を優先 (常に優先使用)</Japanese>
+            <Japanese>車両の装備を優先(常に優先使用)</Japanese>
             <French>Matériel du véhicule en premier (Toujours)</French>
             <Italian>Primo materiale del veicolo condiviso (sempre)</Italian>
             <Spanish>Priorizar equipamiento en el vehiculo (siempre)</Spanish>
