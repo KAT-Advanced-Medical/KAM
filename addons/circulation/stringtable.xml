@@ -1336,6 +1336,12 @@
             <Portuguese>Choque realizado</Portuguese>
             <Spanish>Energía suministrada</Spanish>
         </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_Defibrillator">
+            <English>Defibrillator</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_AEDX_Monitor_SelectedEnergy">
+            <English>Selected Energy</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
             <Japanese>ｼｮｯｸ実施</Japanese>

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_airway_fnc_RecoveryPosition
+ * [player, cursorTarget] call kat_airway_fnc_treatmentAdvanced_RecoveryPosition;
  *
  * Public: No
  */
