@@ -32,7 +32,7 @@ PREP_RECOMPILE_END;
     QGVAR(treatmentTimeDetachTourniquet),
     "SLIDER",
     [LLSTRING(SETTING_treatmentTimeDetachTourniquet)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
     [1, 60, 7, 1],
     true
 ] call CBA_Settings_fnc_init;
@@ -41,8 +41,35 @@ PREP_RECOMPILE_END;
     QGVAR(neckTourniquet),
     "CHECKBOX",
     [LLSTRING(neckTourniquetDescription)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
     [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(tourniquetEffects_Enable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_tourniquetEffects_Enable)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(tourniquetEffects_PositiveMultiplier),
+    "SLIDER",
+    [LLSTRING(SETTING_tourniquetEffects_PositiveMultiplier)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
+    [0.1, 10, 1, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(tourniquetEffects_NegativeMultiplier),
+    "SLIDER",
+    [LLSTRING(SETTING_tourniquetEffects_NegativeMultiplier)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
+    [0.1, 10, 1, 1],
     true
 ] call CBA_Settings_fnc_init;
 

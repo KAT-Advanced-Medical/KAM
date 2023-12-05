@@ -18,6 +18,14 @@ class CfgFunctions {
             };
         };
     };
+    class overwrite_ace_medical_engine {
+        tag = "ace_medical_engine";
+        class ace_medical_engine {
+            class updateDamageEffects {
+                file = QPATHTOF(functions\fnc_updateDamageEffects.sqf);
+            };
+        };
+    };
     class overwrite_medical_treatment {
         tag = "ace_medical_treatment";
         class ace_medical_treatment {
