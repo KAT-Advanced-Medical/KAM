@@ -239,7 +239,7 @@ if (EGVAR(breathing,showCyanosis) && _selectionN in [0,2,3]) then {
 
 // Airway State
 if (_target getVariable [QEGVAR(airway,overstretch), false] && _selectionN isEqualTo 0) then {
-    _entries pushback [LELSTRING(airway,overstretched), [0.1, 1, 1, 1]];
+    _entries pushback [LELSTRING(airway,Hyperextended), [0.1, 1, 1, 1]];
 };
 
 if (_target getVariable [QEGVAR(airway,airway), false] && _selectionN isEqualTo 0) then {

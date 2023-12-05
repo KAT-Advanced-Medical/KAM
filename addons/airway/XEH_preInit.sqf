@@ -200,10 +200,10 @@ In real life, this will happen sometimes, not quiet often.
 
 // Settable action time for Head overstretching
 [
-    QGVAR(Overstretch_time),
+    QGVAR(Hyperextend_Time),
     "SLIDER",
-    [LLSTRING(TIME_OVERSTRETCH),LLSTRING(TIME_OVERSTRETCH_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionOverstretch)],
+    [LLSTRING(Hyperextend_Time), LLSTRING(Hyperextend_Time_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
     [1, 10, 3, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -212,9 +212,9 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(RecoveryPosition_Time),
     "SLIDER",
-    [LLSTRING(TIME_RECOVERY),LLSTRING(TIME_RECOVERY_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionOverstretch)],
-    [1, 120, 6, 0],
+    [LLSTRING(SETTING_RecoveryPosition_Time), LLSTRING(SETTING_RecoveryPosition_Time_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
+    [1, 60, 6, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -222,9 +222,19 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(CancelRecoveryPosition_Time),
     "SLIDER",
-    [LLSTRING(TIME_CANCELRECOVERY),LLSTRING(TIME_CANCELRECOVERY_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionOverstretch)],
-    [1, 120, 6, 0],
+    [LLSTRING(SETTING_CancelRecoveryPosition_Time), LLSTRING(SETTING_CancelRecoveryPosition_Time_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
+    [1, 60, 3, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Settable maximum time required for occlusion to be cleared from patient in recovery position
+[
+    QGVAR(RecoveryPosition_TimeToDrain),
+    "SLIDER",
+    [LLSTRING(SETTING_RecoveryPosition_TimeToDrain), LLSTRING(SETTING_RecoveryPosition_TimeToDrain_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
+    [0, 30, 10, 0],
     true
 ] call CBA_Settings_fnc_init;
 

@@ -16,7 +16,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "Body", "TensionpneumothoraxTreatment", objNull, "kat_aatKit"] call kat_breathing_fnc_treatmentAdvanced_hemopneumothorax;
+ * [player, cursorObject, "Body", "TensionpneumothoraxTreatment", objNull, "kat_aatKit"] call kat_breathing_fnc_treatmentAdvanced_tensionpneumothorax;
  *
  * Public: No
  */

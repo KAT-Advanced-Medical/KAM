@@ -10,7 +10,7 @@
  *   0: Medic
  *   1: Placed
  *   2: Vehicle
- * 3: AED classname <STRING
+ * 3: AED classname <STRING>
  * 4: Extra Arguments <ARRAY>
  *   0: Placed AED <OBJECT>
  *
@@ -50,4 +50,5 @@ switch (_AEDOrigin) do {
 };
 
 if (_exit) exitWith {false};
+
 _condition && !(_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) && !(_patient getVariable [QEGVAR(airway,recovery), false]) && (objectParent _patient isEqualTo objectParent _medic) && {["",_patient] call ACEFUNC(medical_treatment,canCPR)};
