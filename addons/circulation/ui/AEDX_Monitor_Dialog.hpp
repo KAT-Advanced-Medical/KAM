@@ -266,7 +266,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             shadow = 0;
             colorBackground[] = {0,0,0,0};
             colorText[] = {0,1,0,1};
-            text = LSTRING(AEDX_Monitor_CheckPads);
+            text = CSTRING(AEDX_Monitor_CheckPads);
         };
         class ChargingStatusBlackBackground: BlackBackground {
             idc = IDC_CHARGE_BBACKGROUND;
@@ -297,7 +297,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             shadow = 0;
             colorBackground[] = {0.05,0.85,0.36,1};
             colorText[] = {0,0,0,1};
-            text = "Defibrillator";
+            text = CSTRING(AEDX_Monitor_Defibrillator);
             show = 0;
         };
         class ChargingStatus: ChargingStatusDefibrillator {
@@ -308,13 +308,13 @@ class GVAR(AEDX_Monitor_Dialog) {
             sizeEx = QUOTE(KAT_GRID_H * 1.5 * (0.55 / (getResolution select 5)));
             colorBackground[] = {1,0.35,0,1};
             colorText[] = {0,0,0,1};
-            text = "CHARGING";
+            text = CSTRING(AEDX_Monitor_CHARGING);
         };
         class ChargingStatusEnergySelect: ChargingStatusDefibrillator {
             idc = IDC_CHARGE_ENERGY_SELECT;
             x = QUOTE(KAT_pxToScreen_X(1065));
             w = QUOTE(KAT_pxToScreen_W(270));
-            text = "Selected energy";
+            text = CSTRING(AEDX_Monitor_SelectedEnergy);
         };
         class ChargingStatusEnergySelectAmount: ChargingStatus {
             idc = IDC_CHARGE_ENERGY_AMOUNT;
