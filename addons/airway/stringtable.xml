@@ -162,7 +162,7 @@
             <French>%1 a vérifié les voies aériennes : %2, %3</French>
             <Turkish>%1 kontrol edilmiş havayolları: %2, %3</Turkish>
             <Italian>%1 ha controllato le vie aeree: %2, %3</Italian>
-            <Japanese>%1 は気道を確認しました: %2, %3</Japanese>
+            <Japanese>%1 が気道を確認: %2, %3</Japanese>
             <Portuguese>%1 verificou as vias aéreas: %2, %3</Portuguese>
             <Norwegian>%1 sjekket luftveiene: %2, %3</Norwegian>
         </Key>
@@ -179,7 +179,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha intubato con %2</Italian>
             <Russian>%1 вставил %2</Russian>
-            <Japanese>%1 は %2 を挿管しました</Japanese>
+            <Japanese>%1 が%2を挿管した</Japanese>
             <Portuguese>%1 intubou com %2</Portuguese>
             <Norwegian>%1 satte inn en %2.</Norwegian>
         </Key>
@@ -394,13 +394,13 @@
             <Turkish>Hyperextension İptal Edildi</Turkish>
             <Italian>Iperestensione della testa annullata</Italian>
             <Russian>Гиперэкстензия головы отменена</Russian>
-            <Japanese>頭部後屈が中断されました</Japanese>
+            <Japanese>頭部後屈が中止された</Japanese>
             <Portuguese>Hiperextensão cancelada</Portuguese>
             <Norwegian>Hyperforlengelse av hode er avbrutt</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Ready">
             <English>Head hyperextended successfully</English>
-            <Japanese>頭部後屈させました</Japanese>
+            <Japanese>頭部後屈させた</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -415,7 +415,7 @@
             <Turkish>Baş dönüşü yapıldı, hava yolları hala net değil</Turkish>
             <Italian>Rotazione della testa eseguita, le vie aeree non sono ancora libere</Italian>
             <Russian>Выполнен поворот головы, дыхательные пути еще не очистились</Russian>
-            <Japanese>除去を試みましたが、 気道はまだ詰まっています</Japanese>
+            <Japanese>除去を試みたが、 気道はまだ詰まっている</Japanese>
             <Portuguese>Cabeça virada, vias aéreas ainda não limpas</Portuguese>
             <Norwegian>vending av hode er utført, luftveiene er fortsatt ikke frie</Norwegian>
         </Key>
@@ -432,7 +432,7 @@
             <Turkish>Tıkanıklık kaldırıldı</Turkish>
             <Italian>Occlusione rimossa</Italian>
             <Russian>Окклюзия удалена</Russian>
-            <Japanese>異物が除去されました</Japanese>
+            <Japanese>異物が除去された</Japanese>
             <Portuguese>Oclusão removida</Portuguese>
             <Norwegian>Okklusjonen er fjernet</Norwegian>
         </Key>
@@ -448,7 +448,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
-            <Japanese>異物除去が中止されました</Japanese>
+            <Japanese>異物除去が中止された</Japanese>
             <French>Annulation de la rotation de la tête</French>
             <Korean>고개 돌리기 취소됨</Korean>
             <Norwegian>vewnding av hode ble avbrutt</Norwegian>
@@ -458,7 +458,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_start">
             <English>Head Turning Started</English>
-            <Japanese>異物除去を開始しました</Japanese>
+            <Japanese>異物除去を開始した</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
@@ -849,7 +849,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Activity_HeadTurning">
             <English>%1 finished head turning (x%2)</English>
-            <Japanese>%1 は指拭法で異物除去を行った (x%2)</Japanese>
+            <Japanese>%1 が指拭法で異物除去を行った (x%2)</Japanese>
             <French>%1 a terminé de tourner la tête (x%2)</French>
             <Korean>%1은(는) 고개 돌리기를 끝냈습니다 (x%2)</Korean>
             <Norwegian>%1 fullførte vending av hode (%2%).</Norwegian>
@@ -1009,7 +1009,7 @@
             <German>Erfolgreich in die stabile Seitenlage gelegt</German>
             <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
             <Chinesesimp>已成功建立恢复体态</Chinesesimp>
-            <Japanese>回復体位になりました</Japanese>
+            <Japanese>回復体位にさせた</Japanese>
             <Korean>회복자세 교정 성공</Korean>
             <French>Mise en position latérale de sécurité réussie</French>
             <Turkish>Kurtarma pozisyonu başarıyla kuruldu</Turkish>
@@ -1024,7 +1024,7 @@
             <German>Stabile Seitenlage abgebrochen</German>
             <Polish>Przerwano pozycję bezpieczną</Polish>
             <Chinesesimp>已取消恢复体态</Chinesesimp>
-            <Japanese>回復体位を崩しました</Japanese>
+            <Japanese>回復体位を崩した</Japanese>
             <Korean>회복자세 교정 취소됨</Korean>
             <French>Mise en position latérale de sécurité annulée</French>
             <Turkish>Kurtarma pozisyonu iptal edildi</Turkish>
@@ -1039,7 +1039,7 @@
             <German>%1 hat die stabile Seitenlage durchgeführt</German>
             <Polish>%1 ułożył w pozycji bezpiecznej</Polish>
             <Chinesesimp>%1 已建立恢复体态</Chinesesimp>
-            <Japanese>%1 は回復体位にしました</Japanese>
+            <Japanese>%1 が回復体位にした</Japanese>
             <Korean>%1 이(가) 회복자세를 교정했습니다</Korean>
             <French>%1 a mis en place la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu %1 oluşturuldu</Turkish>
@@ -1051,7 +1051,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_CancelRecoveryPosition_Log">
             <English>%1 cancelled recovery position</English>
-            <Japanese>%1 は回復体位を崩しました</Japanese>
+            <Japanese>%1 が回復体位を崩した</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
@@ -1223,7 +1223,7 @@
             <German>%1 hat Larynxtubus entfernt</German>
             <Czech>%1 odstranil KingLT</Czech>
             <Spanish>%1 retiró el tubo laringeo</Spanish>
-            <Japanese>%1 はKing LTを取り除きました</Japanese>
+            <Japanese>%1 がKing LTを取り除いた</Japanese>
             <French>%1 a retiré la tube laryngé</French>
             <Korean>%1(이)가 기관삽입기를 제거했습니다</Korean>
             <Italian>%1 rimosso KingLT</Italian>
@@ -1235,7 +1235,7 @@
             <German>%1 hat Guedeltubus entfernt</German>
             <Czech>%1 odstranil Guedel Tubu</Czech>
             <Spanish>%1 retiró la Canula de Guedel</Spanish>
-            <Japanese>%1 はゲデルチューブを取り除きました</Japanese>
+            <Japanese>%1 がゲデルチューブを取り除いた</Japanese>
             <French>%1 a retiré la canule de Guedel</French>
             <Korean>%1(이)가 게델튜브를 제거했습니다</Korean>
             <Italian>%1 rimosso Guedel Tube</Italian>

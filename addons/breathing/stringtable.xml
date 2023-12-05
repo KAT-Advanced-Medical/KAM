@@ -225,7 +225,7 @@
             <Turkish>%1 bağlı Nabız Ölçer</Turkish>
             <Italian>%1 ha collegato un pulsossimetro</Italian>
             <Russian>%1 подключен пульсоксиметр</Russian>
-            <Japanese>%1 はパルスオキシメーターを装着しました</Japanese>
+            <Japanese>%1 がパルスオキシメーターを装着した</Japanese>
             <Portuguese>%1 conectou um Oxímetro de Pulso</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_pneumothorax_mm">
@@ -1328,7 +1328,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Start">
             <English>Rescue Breaths Started</English>
-            <Japanese>呼吸補助を開始しました</Japanese>
+            <Japanese>呼吸補助を開始した</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>
@@ -1341,7 +1341,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_Cancelled">
             <English>Rescue Breaths Cancelled</English>
-            <Japanese>呼吸補助が中止されました</Japanese>
+            <Japanese>呼吸補助が中止された</Japanese>
             <French>Annulation du sauvetage avec le BVM</French>
             <Korean>인공호흡 취소됨</Korean>
             <German>Beatmung mit BVM gestoppt</German>
@@ -1409,7 +1409,7 @@
             <French>Réservoir à oxygène déconnecté (vide)</French>
             <Korean>빈 산소 탱크 떼어냄</Korean>
             <Polish>Butla z tlenem rozłączona (pusta)</Polish>
-            <Japanese>酸素ボンベが切断されました (空)</Japanese>
+            <Japanese>酸素ボンベが切断された (空)</Japanese>
             <German>Sauerstofftank entfernt (leer)</German>
             <Czech>Kyslíková Lahev odpojena (prázdná)</Czech>
             <Italian>Bombola d'ossigeno scollegata (vuota)</Italian>
@@ -1433,7 +1433,7 @@
             <French>Remplissage du réservoir à oxygène terminé</French>
             <Korean>휴대용 산소 탱크 재충전 완료</Korean>
             <Polish>Napełnianie zakończone</Polish>
-            <Japanese>酸素ボンベの補充が完了しました</Japanese>
+            <Japanese>酸素ボンベの補充が完了した</Japanese>
             <German>Sauerstofftank Befüllung abgeschlossen</German>
             <Czech>Plnění Kyslíkové Lahve dokončeno</Czech>
             <Italian>Riempimento completo della bombola d'ossigeno</Italian>
@@ -1445,7 +1445,7 @@
             <French>Remplissage du réservoir à oxygène annulé</French>
             <Korean>휴대용 산소 탱크 재충전 취소</Korean>
             <Polish>Napełnianie przerwane</Polish>
-            <Japanese>酸素ボンベの補充が中断されました</Japanese>
+            <Japanese>酸素ボンベの補充が中断された</Japanese>
             <German>Sauerstofftank Befüllung abgebrochen</German>
             <Czech>Plnění Kyslíkové Lahve zrušeno</Czech>
             <Italian>Riempimento annullato della bombola d'ossigeno</Italian>
@@ -1631,7 +1631,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_Activity_BVM">
             <English>%1 used %2 (x%3)</English>
-            <Japanese>%1 は %2 を使用しました (x%3)</Japanese>
+            <Japanese>%1 が%2を使った (x%3)</Japanese>
             <French>%1 a utilisé %2 (x%3)</French>
             <Korean>%1은(는) %2을(를) 사용했다 (x%3)</Korean>
             <Italian>%1 verwendete %2 (x%3)</Italian>

@@ -1347,7 +1347,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_StandClear">
             <English>Stand Clear</English>
-            <Japanese>患者に触れないで</Japanese>
+            <Japanese>患者に触れないでください</Japanese>
             <French>Ne touchez pas le patient</French>
             <Korean>환자로부터 물러나십시오</Korean>
             <German>Abstand halten</German>
@@ -1675,7 +1675,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_Shock">
             <English>%1 administered shock (%2)</English>
-            <Japanese>%1 はショックを実施した (%2)</Japanese>
+            <Japanese>%1 がショックを実施した (%2)</Japanese>
             <French>%1 a administré un choc (%2)</French>
             <Korean>%1이(가) 쇼크를 실시했습니다 (%2)</Korean>
             <German>%1 verabreichte Schock (%2)</German>
@@ -1684,7 +1684,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
-            <Japanese>%1 は除細動器パッドを貼り付けた (%2)</Japanese>
+            <Japanese>%1 が除細動器パッドを貼り付けた (%2)</Japanese>
             <French>%1 a connecté les électrodes du défibrillateur (%2)</French>
             <Korean>%1이(가) 심장충격기의 패드를 붙였습니다 (%2)</Korean>
             <German>%1 hat Defibrillator-Pads befestigt (%2)</German>
@@ -1693,7 +1693,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_RemovePads">
             <English>%1 removed defibrillator pads</English>
-            <Japanese>%1 は除細動器パッドを取り外した</Japanese>
+            <Japanese>%1 が除細動器パッドを取り外した</Japanese>
             <French>%1 a retiré les électrodes du défibrillateur</French>
             <Korean>%1이(가) 심장충격기 패드를 떼어냈습니다</Korean>
             <German>%1 hat Defibrillator-Pads entfernt</German>
@@ -1702,7 +1702,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_ConnectVitalsMonitor">
             <English>%1 connected vitals monitor</English>
-            <Japanese>%1 はバイタルモニターを接続した</Japanese>
+            <Japanese>%1 がバイタルモニターを接続した</Japanese>
             <French>%1 a connecté les capteurs de signes vitaux</French>
             <Korean>%1이(가) 환자감시장치를 연결했습니다</Korean>
             <German>%1 hat Vitalmonitor angeschlossen</German>
@@ -1711,7 +1711,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_DisconnectVitalsMonitor">
             <English>%1 disconnected vitals monitor</English>
-            <Japanese>%1 はバイタルモニターを切断した</Japanese>
+            <Japanese>%1 がバイタルモニターを切断した</Japanese>
             <French>%1 a déconnecté les capteurs de signes vitaux</French>
             <Korean>%1이(가) 환자감시장치를 해제했습니다</Korean>
             <German>%1 hat Vitalmonitor entfernt</German>
@@ -1720,7 +1720,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_PatientDisconnected">
             <English>Patient Disconnected</English>
-            <Japanese>患者から切断されました</Japanese>
+            <Japanese>患者から切断された</Japanese>
             <French>Patient déconnecté</French>
             <Korean>환자에게서 떼어졌습니다</Korean>
             <German>Patient getrennt</German>
@@ -2016,7 +2016,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_CPR">
             <English>%1 performed CPR (%2)</English>
-            <Japanese>%1 はCPRを行いました (%2)</Japanese>
+            <Japanese>%1 がCPRを行った (%2)</Japanese>
             <French>%1 a effectué la RCP (%2)</French>
             <Korean>%1이(가) 심폐소생술을 수행하였습니다 (%2)</Korean>
             <German>%1 hat HLW durchgeführt (%2)</German>
@@ -2034,11 +2034,11 @@
         </Key>
         <Key ID="STR_KAT_Circulation_StartCPR">
             <English>CPR Started</English>
-            <Japanese>CPRを開始しました</Japanese>
+            <Japanese>CPRを開始した</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
-            <Japanese>CPRが中止されました</Japanese>
+            <Japanese>CPRが中止された</Japanese>
             <French>RCP annulée</French>
             <Korean>심폐소생술 취소함</Korean>
             <German>HLW Gestoppt</German>

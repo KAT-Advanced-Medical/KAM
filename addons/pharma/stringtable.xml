@@ -699,7 +699,7 @@
             <Turkish>Yanağına vurdun ama hasta hala uyuyor!</Turkish>
             <Italian>Hai colpito la guancia, ma il paziente dorme ancora!</Italian>
             <Russian>Вы попали в щеку, но больной еще спит!</Russian>
-            <Japanese>あなたは頬を叩きましたが、患者はまだ眠っています!</Japanese>
+            <Japanese>あなたは頬を叩いたが、 患者はまだ眠っている!</Japanese>
             <Portuguese>Após a bofetada, o paciente continua desacordado! </Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_ReorientingSuccess">
@@ -762,7 +762,7 @@
             <French>%1 a administré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
-            <Japanese>%1 は %2 を注入しました</Japanese>
+            <Japanese>%1 が%2を注入した</Japanese>
             <Russian>%1 нажал %2</Russian>
             <Portuguese>%1 administrou %2</Portuguese>
         </Key>
@@ -778,7 +778,7 @@
             <French>%1 a injecté un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
-            <Japanese>%1 は %2 を注射しました</Japanese>
+            <Japanese>%1 が%2を注射した</Japanese>
             <Russian>%1 введено %2</Russian>
             <Portuguese>%1 injetou %2</Portuguese>
         </Key>
@@ -794,7 +794,7 @@
             <French>%1 a utilisé un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
-            <Japanese>%1 は %2 を使用しました</Japanese>
+            <Japanese>%1 が%2を使った</Japanese>
             <Russian>%1 использует %2</Russian>
             <Portuguese>%1 usou %1</Portuguese>
         </Key>
@@ -938,7 +938,7 @@
             <French>%1 a inseré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha posizionato %2</Italian>
-            <Japanese>%1 は %2 を刺入しました</Japanese>
+            <Japanese>%1 が%2を刺入した</Japanese>
             <Russian>%1 Настройка %2</Russian>
             <Portuguese>%1 inseriu %2</Portuguese>
         </Key>
@@ -2603,7 +2603,7 @@
             <German>Das Pervitin macht dich wach und du fühlst dich durchflutet mit unendlich POWER</German>
             <French>La pervitine vous fait vous sentir éveillé et plein d'une puissance INFINIE</French>
             <Korean>페르피틴이 당신을 깨어있게 하고 끝없는 빠와로 가득 차게 합니다</Korean>
-            <Japanese>ペルビチンはあなたを覚醒させ、無限のチカラに満ち満ちた気分にさせます!</Japanese>
+            <Japanese>ペルビチンはあなたを覚醒させ、無限のチカラに満ち満ちた気分にしている!</Japanese>
             <Italian>Il Pervitin ti fa sembrare più attento e dotato di una forza senza uguali</Italian>
             <Portuguese>O Pervitin faz você se sentir acordado e cheio de poder INFINITO</Portuguese>
             <Polish>Pervitin sprawia, że czujesz się pobudzony i pełny ENERGII</Polish>
@@ -2675,7 +2675,7 @@
             <German>Du siehst alles doppelt.</German>
             <French>Vous commencez à voir tout en double</French>
             <Korean>모든 게 두 개로 보이기 시작한다.</Korean>
-            <Japanese>全てが二重に見える...</Japanese>
+            <Japanese>全てが二重に見える。</Japanese>
             <Italian>Inizi a vedere tutto due volte.</Italian>
             <Portuguese>Você começa a ver em dobro.</Portuguese>
             <Polish>Zaczynasz widzieć podwójnie</Polish>
@@ -2840,7 +2840,7 @@
             <French>%1 a effectué une dialyse</French>
             <Korean>%1 이(가) 투석을 수행했습니다</Korean>
             <German>%1 hat eine Dialyse durchgeführt</German>
-            <Japanese>%1 は透析を行いました</Japanese>
+            <Japanese>%1 が透析を行った</Japanese>
             <Spanish>%1 realizó una dialisis</Spanish>
             <Portuguese>%1 realizou diálise</Portuguese>
         </Key>
