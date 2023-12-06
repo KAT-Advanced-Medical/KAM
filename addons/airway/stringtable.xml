@@ -286,11 +286,11 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
-            <Japanese>気道は閉塞しています、気道管理が必要です</Japanese>
+            <Japanese>気道は閉塞しています、 気道管理が必要です</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
-            <Japanese>気道に異物があります、医療吸引が必要です</Japanese>
+            <Japanese>気道に異物があります、 医療吸引が必要です</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
             <English>Airway is clear</English>
