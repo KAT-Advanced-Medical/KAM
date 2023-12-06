@@ -40,7 +40,7 @@
             <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern: \n- Bewustlos werden \n- Das Entfernen von Larynxtubus / Guedeltubus \n- Abbrechen der Stabile Seitenlage</German>
             <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém: \n- Upadnutí do bezvědomí \n- Odstranění KingLT / GuedelTuby</Czech>
             <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que: \n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
-            <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n- 意識不明になった時 \n- KingLT/ゲデルチューブが外れた時</Japanese>
+            <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n- 意識不明になった時 \n- King LT/ゲデルチューブが外れた時</Japanese>
             <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque : \n- la personne tombe inconsciente \n- Une canule de Guedel/tube laryngé est retiré</French>
             <Korean>다음 조건에 의해 매번 발생되는 혀막힘 확률(%): \n- 의식불명이 될 시 \n- 기관삽입기 / 게델튜브 제거 시</Korean>
             <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n- Caduta priva di sensi \n- Rimozione KingLT / Guedel Tube</Italian>
@@ -92,7 +92,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod">
             <English>Occlusion Cooldown Period</English>
-            <Japanese>異物再発のクールダウン周期</Japanese>
+            <Japanese>異物再発のクールダウン期間</Japanese>
             <French>Temps de récupération après une occlusion</French>
             <Korean>구토 쿨다운 시간</Korean>
             <Norwegian>Avkjølingsperiode for okklusjon</Norwegian>
@@ -130,7 +130,7 @@
             <Turkish>Keko adlı topluluğun AFK oyuncuları için eklentileri vardı. Başkalarının onları uzaklaştırabilmesi için bilinçsiz bırakıldılar. Bu, hava yolu problemleri olasılığını tetikledi. Bu dize, AFK eklentisi tarafından bilinçsiz hale geldiklerinde bunun olmasını engeller.</Turkish>
             <Italian>La comunità chiamata keko aveva un addon per i giocatori AFK. Venivano resi inconscenti così che gli altri potessero trascinarli via. Questo aveva la possibilità di causare problemi alle vie aeree. Questa stringa previene che ciò succeda quando vengono resi incoscenti da questo addon AFK.</Italian>
             <Russian>У сообщества под названием Keko был аддон для игроков AFK. Они были лишены сознания, чтобы другие могли их вытащить. Это спровоцировало риск респираторных заболеваний. Эта строка предотвратит это, когда они потеряют сознание из-за этого аддона AFK.</Russian>
-            <Japanese>kekoというコミュニティにはAFKプレーヤー用のアドオンがありました。他の人がAFKプレイヤーを移動できるように、そのプレイヤー無意識にします。しかしそれが気道の問題を発生させる可能性があります。この文字列は、AFKアドオンによって意識が失われたときにそれが発生するのを防ぎます。</Japanese>
+            <Japanese>kekoというコミュニティにはAFKプレーヤー用のアドオンがありました。\n他の人がAFKプレイヤーを移動できるように、そのプレイヤー無意識にします。\nしかしそれが気道の問題を発生させる可能性があります。\nこの文字列は、AFKアドオンによって意識が失われたときにそれが発生するのを防ぎます。</Japanese>
             <Portuguese>A comunidade Keko tinha um addon para os jogadores AFK. Eles foram colocados inconscientes para que outros pudessem arrastá-los. Isso desencadeou chances de problemas nas vias aéreas. Esta corda evita que isso aconteça quando eles ficam inconscientes por causa do addon.</Portuguese>
             <Norwegian>Felleskapet kalt "Keko" hadde en tilleggsfunksjon for AFK-spillere. De ble gjort bevisstløse slik at andre kunne dra dem bort. Dette utløste muligheter for luftveisproblemer. Denne strengen forhindrer at det skjer når de blir bevisstløse av det AFK-tillegget.</Norwegian>
         </Key>
@@ -162,7 +162,7 @@
             <French>%1 a vérifié les voies aériennes : %2, %3</French>
             <Turkish>%1 kontrol edilmiş havayolları: %2, %3</Turkish>
             <Italian>%1 ha controllato le vie aeree: %2, %3</Italian>
-            <Japanese>%1 は気道を確認しました: %2、%3</Japanese>
+            <Japanese>%1 が気道を確認: %2, %3</Japanese>
             <Portuguese>%1 verificou as vias aéreas: %2, %3</Portuguese>
             <Norwegian>%1 sjekket luftveiene: %2, %3</Norwegian>
         </Key>
@@ -179,7 +179,7 @@
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha intubato con %2</Italian>
             <Russian>%1 вставил %2</Russian>
-            <Japanese>%1 は%2を挿管しました</Japanese>
+            <Japanese>%1 が%2を挿管した</Japanese>
             <Portuguese>%1 intubou com %2</Portuguese>
             <Norwegian>%1 satte inn en %2.</Norwegian>
         </Key>
@@ -196,7 +196,7 @@
             <Turkish>Tıkalı</Turkish>
             <Italian>Occlusa</Italian>
             <Russian>Окклюзия</Russian>
-            <Japanese>異物発生</Japanese>
+            <Japanese>異物あり</Japanese>
             <Portuguese>Ocluída</Portuguese>
             <Norwegian>Okkludert</Norwegian>
         </Key>
@@ -213,14 +213,14 @@
             <Turkish>Kapanma</Turkish>
             <Italian>Ostruita</Italian>
             <Russian>Обструкция</Russian>
-            <Japanese>閉塞発生</Japanese>
+            <Japanese>閉塞あり</Japanese>
             <Portuguese>Obstruída</Portuguese>
             <Norwegian>Obstruksjon</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction_short">
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
-            <Japanese>閉塞軽減中</Japanese>
+            <Japanese>軽減された閉塞あり</Japanese>
             <Italian>Ostruzione attenuata</Italian>
             <Czech>Zmírněná obstrukce</Czech>
             <Korean>막힘 완화됨</Korean>
@@ -242,7 +242,7 @@
             <French>Non obstruées</French>
             <Turkish>Değil Kapanma</Turkish>
             <Italian>No ostruita</Italian>
-            <Japanese>閉塞無し</Japanese>
+            <Japanese>閉塞なし</Japanese>
             <Chinesesimp>无阻塞</Chinesesimp>
             <Portuguese>Não obstruída</Portuguese>
             <Norwegian>Ikke blokkert</Norwegian>
@@ -258,7 +258,7 @@
             <French>Non occludées</French>
             <Turkish>Değil Tıkalı</Turkish>
             <Italian>No occlusa</Italian>
-            <Japanese>異物無し</Japanese>
+            <Japanese>異物なし</Japanese>
             <Chinesesimp>无闭塞</Chinesesimp>
             <Portuguese>Não ocluída</Portuguese>
             <Norwegian>Ikke okkludert</Norwegian>
@@ -278,15 +278,19 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noObstruction">
             <English>Airway is not obstructed</English>
+            <Japanese>気道は閉塞していない</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion">
             <English>Airway is not occluded</English>
+            <Japanese>気道に異物はありません</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
+            <Japanese>気道は閉塞しています、 気道管理が必要です</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
+            <Japanese>気道に異物があります、 医療吸引が必要です</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
             <English>Airway is clear</English>
@@ -301,7 +305,7 @@
             <Turkish>Havayolları temiz</Turkish>
             <Italian>Le vie aeree sono libere</Italian>
             <Russian>Дыхательные пути чисты</Russian>
-            <Japanese>気道はクリアです</Japanese>
+            <Japanese>気道は詰まっていません</Japanese>
             <Portuguese>Vias aéreas limpas</Portuguese>
             <Norwegian>Luftveiene er frie</Norwegian>
         </Key>
@@ -352,12 +356,13 @@
             <Turkish>Hyperextension Gerçekleşmiş Kafa</Turkish>
             <Italian>Testa iperestesa</Italian>
             <Russian>перетянутый голова</Russian>
-            <Japanese>頭部後屈を実行中</Japanese>
+            <Japanese>頭部後屈を実施中</Japanese>
             <Portuguese>Cabeça hiperestendida</Portuguese>
             <Norwegian>Hode er overekstendert</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_already">
             <English>Patient's head is already hyperextended</English>
+            <Japanese>患者は既に頭部後屈されています</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_progress">
             <English>Hyperextending head</English>
@@ -389,12 +394,13 @@
             <Turkish>Hyperextension İptal Edildi</Turkish>
             <Italian>Iperestensione della testa annullata</Italian>
             <Russian>Гиперэкстензия головы отменена</Russian>
-            <Japanese>頭部後屈が中断されました</Japanese>
+            <Japanese>頭部後屈が中止された</Japanese>
             <Portuguese>Hiperextensão cancelada</Portuguese>
             <Norwegian>Hyperforlengelse av hode er avbrutt</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Ready">
             <English>Head hyperextended successfully</English>
+            <Japanese>頭部後屈させた</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -409,7 +415,7 @@
             <Turkish>Baş dönüşü yapıldı, hava yolları hala net değil</Turkish>
             <Italian>Rotazione della testa eseguita, le vie aeree non sono ancora libere</Italian>
             <Russian>Выполнен поворот головы, дыхательные пути еще не очистились</Russian>
-            <Japanese>除去を試みましたが、 気道はまだ詰まっています</Japanese>
+            <Japanese>除去を試みたが、 気道はまだ詰まっている</Japanese>
             <Portuguese>Cabeça virada, vias aéreas ainda não limpas</Portuguese>
             <Norwegian>vending av hode er utført, luftveiene er fortsatt ikke frie</Norwegian>
         </Key>
@@ -426,13 +432,13 @@
             <Turkish>Tıkanıklık kaldırıldı</Turkish>
             <Italian>Occlusione rimossa</Italian>
             <Russian>Окклюзия удалена</Russian>
-            <Japanese>異物が除去されました</Japanese>
+            <Japanese>異物が除去された</Japanese>
             <Portuguese>Oclusão removida</Portuguese>
             <Norwegian>Okklusjonen er fjernet</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>
-            <Japanese>頭を回して異物を除去</Japanese>
+            <Japanese>顔を横に向ける (指拭法で異物除去)</Japanese>
             <French>Début de la rotation de la tête</French>
             <Korean>고개 돌리기 시작</Korean>
             <Norwegian>Begynn vending av hode</Norwegian>
@@ -442,7 +448,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
-            <Japanese>頭を回すのを止めました</Japanese>
+            <Japanese>異物除去が中止された</Japanese>
             <French>Annulation de la rotation de la tête</French>
             <Korean>고개 돌리기 취소됨</Korean>
             <Norwegian>vewnding av hode ble avbrutt</Norwegian>
@@ -452,10 +458,11 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_start">
             <English>Head Turning Started</English>
+            <Japanese>異物除去を開始した</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
-            <Japanese>頭を回すのを止める</Japanese>
+            <Japanese>異物除去を止める</Japanese>
             <French>Arrêt de la rotation de la tête</French>
             <Korean>고개 돌리기 멈추기</Korean>
             <Norwegian>Stop vending av hode</Norwegian>
@@ -544,7 +551,7 @@
             <Turkish>Laringeal Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
             <Italian>Il tubo laringeo viene usato per salvare le vie aeree</Italian>
             <Russian>Ларингеальная трубка – это устройство для обеспечения проходимости дыхательных путей.</Russian>
-            <Japanese>King LT (喉頭エアウェイ)は気道を確保するために使用されます</Japanese>
+            <Japanese>King LT(喉頭エアウェイ)は気道を確保するために使用される</Japanese>
             <Portuguese>O Tubo Laríngeo evita obstruções e oclusões</Portuguese>
             <Norwegian>Larynkstube brukes for å redde luftveiene</Norwegian>
         </Key>
@@ -578,7 +585,7 @@
             <Turkish>Guedel Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
             <Italian>La canula di Guedel viene usata per salvare le vie aeree</Italian>
             <Russian>Трубка Геделя используется для сохранения дыхательных путей.</Russian>
-            <Japanese>ゲデルチューブ (口咽頭エアウェイ)は気道を確保するために使用されます</Japanese>
+            <Japanese>ゲデルチューブ(口咽頭エアウェイ)は気道を確保するために使用される</Japanese>
             <Portuguese>A Cânula de Guedel evita obstruções</Portuguese>
             <Norwegian>Guedel Tube brukes for å redde luftveiene</Norwegian>
         </Key>
@@ -629,7 +636,7 @@
             <Turkish>Baş döndürme başarı olasılığı</Turkish>
             <Italian>Probabilità di successo della rotazione della testa</Italian>
             <Russian>Вероятность успеха для поворота головы</Russian>
-            <Japanese>頭を回して異物を除去の成功確率</Japanese>
+            <Japanese>顔を横に向ける (指拭法で異物除去) の成功確率</Japanese>
             <Portuguese>Probabilidade de sucesso ao virar a cabeça</Portuguese>
             <Norwegian>sannsynligheten for sukksess ved vending av hode</Norwegian>
         </Key>
@@ -663,7 +670,7 @@
             <Turkish>Laringeal Tüp'e izin ver</Turkish>
             <Italian>Permetti il tubo laringeo</Italian>
             <Russian>Разрешить гортанную трубку</Russian>
-            <Japanese>喉頭エアウェイ(King LT)の許可</Japanese>
+            <Japanese>喉頭エアウェイの許可</Japanese>
             <Portuguese>Permitir Tubo Laríngeo</Portuguese>
             <Norwegian>Tillat larynxtubus</Norwegian>
         </Key>
@@ -680,7 +687,7 @@
             <Turkish>Laringeal Tüp'ü kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare il tubo laringeo</Italian>
             <Russian>Уровень подготовки, необходимый для использования гортанной трубки</Russian>
-            <Japanese>喉頭エアウェイ(King LT)の使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>喉頭エアウェイ(King LT)の使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um Tubo Laríngeo</Portuguese>
             <Norwegian>Nivået av opplæring som kreves for å bruke en Larynkstube</Norwegian>
         </Key>
@@ -697,7 +704,7 @@
             <Turkish>Guedel Tüp'e izin ver</Turkish>
             <Italian>Permetti la canula di Guedel</Italian>
             <Russian>Разрешить гедельтубус</Russian>
-            <Japanese>口咽頭エアウェイ(ゲデルチューブ)の許可</Japanese>
+            <Japanese>口咽頭エアウェイの許可</Japanese>
             <Portuguese>Permitir Cânula de Guedel</Portuguese>
             <Norwegian>Tillat Guedeltubus</Norwegian>
         </Key>
@@ -714,7 +721,7 @@
             <Turkish>Guedel Tüp'ü kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare la canula di Guedel</Italian>
             <Russian>Уровень подготовки, необходимый для использования тубуса Геделя.</Russian>
-            <Japanese>口咽頭エアウェイ(ゲデルチューブ)の使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>口咽頭エアウェイ(ゲデルチューブ)の使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar uma Cânula de Guedel</Portuguese>
             <Norwegian>Nivået av opplæring som kreves for å bruke en Guedeltubus</Norwegian>
         </Key>
@@ -748,7 +755,7 @@
             <Turkish>Acuvvac'ı kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare l'ACCUVAC</Italian>
             <Russian>Уровень подготовки, необходимый для использования Accuvac</Russian>
-            <Japanese>Accuvacの使用に訓練レベルを必要とさせます。</Japanese>
+            <Japanese>Accuvacの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um ACCUVAC</Portuguese>
             <Norwegian>Opplæringsnivået som kreves for å bruke en Accuvac</Norwegian>
         </Key>
@@ -822,7 +829,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval">
             <English>Head Turning Interval</English>
-            <Japanese>頭を回して異物を除去の間隔</Japanese>
+            <Japanese>顔を横に向ける (指拭法で異物除去) の間隔</Japanese>
             <French>Intervalle de la rotation de la tête</French>
             <Korean>고개 돌리기 간격</Korean>
             <Norwegian>Intervall for vending av hode</Norwegian>
@@ -832,7 +839,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval_DESC">
             <English>Time between head turning attempts</English>
-            <Japanese>頭を回して異物を除去を実行する間隔</Japanese>
+            <Japanese>顔を横に向ける (指拭法で異物除去) を実行する間隔</Japanese>
             <French>Temps entre chaque tentative de rotation de la tête</French>
             <Korean>고개 돌리기를 시도하는 간격</Korean>
             <Norwegian>Tiden mellom forsøk på vending av hode</Norwegian>
@@ -842,7 +849,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Activity_HeadTurning">
             <English>%1 finished head turning (x%2)</English>
-            <Japanese>%1 は頭を回して異物除去を行った (x%2)</Japanese>
+            <Japanese>%1 が指拭法で異物除去を行った (x%2)</Japanese>
             <French>%1 a terminé de tourner la tête (x%2)</French>
             <Korean>%1은(는) 고개 돌리기를 끝냈습니다 (x%2)</Korean>
             <Norwegian>%1 fullførte vending av hode (%2%).</Norwegian>
@@ -863,7 +870,7 @@
             <Turkish>Accuvac için Zaman</Turkish>
             <Italian>Tempo per l'ACCUVAC</Italian>
             <Russian>Время Аккувака</Russian>
-            <Japanese>Accuvacの使用時間</Japanese>
+            <Japanese>Accuvacの所要時間</Japanese>
             <Portuguese>Tempo para ACCUVAC</Portuguese>
             <Norwegian>Tid for Accuvac</Norwegian>
         </Key>
@@ -897,7 +904,7 @@
             <Turkish>Laringeal Tüp için Zaman</Turkish>
             <Italian>Tempo per il tubo laringeo</Italian>
             <Russian>Время гортанной трубки</Russian>
-            <Japanese>喉頭エアウェイ(King LT)の使用時間</Japanese>
+            <Japanese>喉頭エアウェイの所要時間</Japanese>
             <Portuguese>Tempo para Tubo Laríngeo</Portuguese>
             <Norwegian>Tid for Larynxtubus</Norwegian>
         </Key>
@@ -931,7 +938,7 @@
             <Turkish>Geudel Tüp zamanı</Turkish>
             <Italian>Tempo per la canula di Guedel</Italian>
             <Russian>Время для Гедель Тубус</Russian>
-            <Japanese>口咽頭エアウェイ(ゲデルチューブ)の使用時間</Japanese>
+            <Japanese>口咽頭エアウェイの所要時間</Japanese>
             <Portuguese>Tempo para usar uma Cânula de Guedel</Portuguese>
             <Norwegian>Tid for Guedeltubus</Norwegian>
         </Key>
@@ -1002,7 +1009,7 @@
             <German>Erfolgreich in die stabile Seitenlage gelegt</German>
             <Polish>Pomyślnie ułożono w pozycji bezpiecznej</Polish>
             <Chinesesimp>已成功建立恢复体态</Chinesesimp>
-            <Japanese>回復体位になりました</Japanese>
+            <Japanese>回復体位にさせた</Japanese>
             <Korean>회복자세 교정 성공</Korean>
             <French>Mise en position latérale de sécurité réussie</French>
             <Turkish>Kurtarma pozisyonu başarıyla kuruldu</Turkish>
@@ -1017,7 +1024,7 @@
             <German>Stabile Seitenlage abgebrochen</German>
             <Polish>Przerwano pozycję bezpieczną</Polish>
             <Chinesesimp>已取消恢复体态</Chinesesimp>
-            <Japanese>回復体位を崩しました</Japanese>
+            <Japanese>回復体位を崩した</Japanese>
             <Korean>회복자세 교정 취소됨</Korean>
             <French>Mise en position latérale de sécurité annulée</French>
             <Turkish>Kurtarma pozisyonu iptal edildi</Turkish>
@@ -1032,7 +1039,7 @@
             <German>%1 hat die stabile Seitenlage durchgeführt</German>
             <Polish>%1 ułożył w pozycji bezpiecznej</Polish>
             <Chinesesimp>%1 已建立恢复体态</Chinesesimp>
-            <Japanese>%1 は回復体位にしました</Japanese>
+            <Japanese>%1 が回復体位にした</Japanese>
             <Korean>%1 이(가) 회복자세를 교정했습니다</Korean>
             <French>%1 a mis en place la position latérale de sécurité</French>
             <Turkish>Kurtarma pozisyonu %1 oluşturuldu</Turkish>
@@ -1044,6 +1051,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_CancelRecoveryPosition_Log">
             <English>%1 cancelled recovery position</English>
+            <Japanese>%1 が回復体位を崩した</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
@@ -1122,15 +1130,19 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_CancelRecoveryPosition_Time_DESC">
             <English>How long it will take to manually cancel recovery position</English>
+            <Japanese>回復体位を崩すのにどのくらい時間がかかるか設定します</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
+            <Japanese>回復体位による異物排出にかかる時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
+            <Japanese>回復体位にある患者の気道異物が排出され解消するまでに必要な最大時間。</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
+            <Japanese>回復体位と頭部後屈設定</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1187,7 +1199,7 @@
             <German>Wiederverwendbare Atemwegsobjekte</German>
             <Czech>Znovupoužitelné předměty pro dýchací cesty</Czech>
             <Spanish>Objetos reutilizables de vías aéreas</Spanish>
-            <Japanese>繰り返し使用できる気道アイテム</Japanese>
+            <Japanese>気道アイテムの再利用</Japanese>
             <French>Objets lié aux voies aériennes réutilisables</French>
             <Korean>기도 관련 아이템 재사용 가능</Korean>
             <Italian>Oggetti delle vie aeree riutilizzabili</Italian>
@@ -1199,7 +1211,7 @@
             <German>Erhalte den Larynxtubus oder Guedeltubus wieder bei manueller Entfernung</German>
             <Czech>Vrácení KingLT nebo Guedel Tuby při jejich manuálním odebrání</Czech>
             <Spanish>Recuperar el Tubo laríngeo o la Cánula de Guedel cuando se quitan manualmente</Spanish>
-            <Japanese>KingLTまたはゲデルチューブを取り除いた際、再使用できるようにします。</Japanese>
+            <Japanese>King LTまたはゲデルチューブを取り除いた後、再利用できるようにします。</Japanese>
             <French>Récupérer le tube laryngé ou la canule de guedel lorsque ceux-ci sont retirés manuellement</French>
             <Korean>기관삽입기나 게델튜브를 수동으로 제거하면 재사용을 가능케 할지 여부입니다.</Korean>
             <Italian>Riguadagna il KingLT o la canula di Guedel quando li rimuovi manualmente</Italian>
@@ -1211,7 +1223,7 @@
             <German>%1 hat Larynxtubus entfernt</German>
             <Czech>%1 odstranil KingLT</Czech>
             <Spanish>%1 retiró el tubo laringeo</Spanish>
-            <Japanese>%1 はKing LTを取り除きました</Japanese>
+            <Japanese>%1 がKing LTを取り除いた</Japanese>
             <French>%1 a retiré la tube laryngé</French>
             <Korean>%1(이)가 기관삽입기를 제거했습니다</Korean>
             <Italian>%1 rimosso KingLT</Italian>
@@ -1223,7 +1235,7 @@
             <German>%1 hat Guedeltubus entfernt</German>
             <Czech>%1 odstranil Guedel Tubu</Czech>
             <Spanish>%1 retiró la Canula de Guedel</Spanish>
-            <Japanese>%1 はゲデルチューブを取り除きました</Japanese>
+            <Japanese>%1 がゲデルチューブを取り除いた</Japanese>
             <French>%1 a retiré la canule de Guedel</French>
             <Korean>%1(이)가 게델튜브를 제거했습니다</Korean>
             <Italian>%1 rimosso Guedel Tube</Italian>
@@ -1256,7 +1268,7 @@
             <English>Block head turning</English>
             <Czech>Blokování otáčení hlavou</Czech>
             <Korean>고개 돌리기 막기</Korean>
-            <Japanese>頭を回して異物を除去の阻害</Japanese>
+            <Japanese>顔を横に向ける (指拭法で異物除去) の阻害</Japanese>
             <French>Bloquer la rotation de la tête</French>
             <German>Verhindert das Drehen des Kopfes</German>
             <Italian>Blocca la rotazione della testa</Italian>
@@ -1268,7 +1280,7 @@
             <English>Blocks head turning if patient has Guedel Tube inserted</English>
             <Czech>Blokuje otáčení hlavou pokud má pacient zavedenou Guedel tubu</Czech>
             <Korean>환자가 게델튜브를 삽입한 경우 고개 돌리기를 막습니다.</Korean>
-            <Japanese>患者にゲデルチューブが挿管されている時に頭を回して異物を除去を実施出来ないようにします</Japanese>
+            <Japanese>患者にゲデルチューブが挿管されている時に顔を横に向ける (指拭法で異物除去) を実施出来ないようにします</Japanese>
             <French>Bloque la rotation de la tête si le patient a une canule de Guedel insérée</French>
             <German>Verhindert das zur Seite Drehen des Kopfes während ein Guedetubus eingeführt ist</German>
             <Italian>Blocca la rotazione della testa se il paziente ha la canula di Guedel inserita</Italian>
