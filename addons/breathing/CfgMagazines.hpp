@@ -3,6 +3,8 @@ class CfgMagazines {
     
     class kat_oxygenTank_300: CA_Magazine {
         scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
         author = "Blue";
         displayName = CSTRING(PortableOxygenTank_300_Display);
         descriptionShort = CSTRING(PortableOxygenTank_300_Desc_Short);
@@ -17,6 +19,8 @@ class CfgMagazines {
     };
     class kat_oxygenTank_150: CA_Magazine {
         scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
         author = "Blue";
         displayName = CSTRING(PortableOxygenTank_150_Display);
         descriptionShort = CSTRING(PortableOxygenTank_150_Desc_Short);
