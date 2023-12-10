@@ -505,6 +505,78 @@
             <Spanish>Colocando</Spanish>
             <Portuguese>Aplicando</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_DescShort">
+            <English>Handheld Ultrasound</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_DescUse">
+            <English>Used to assess internal injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Use">
+            <English>Conduct EFAST Assessment</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Action">
+            <English>Assessing</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway">
+            <English>Airway Status: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic">
+            <English>Lung Status: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Cardiac">
+            <English>Cardiac Status: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_Normal">
+            <English>Normal</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_PTX">
+            <English>Pneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_Hemo">
+            <English>Hemopneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_Tension">
+            <English>Tension Pneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Cardiac_VT">
+            <English>VT</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_VF">
+            <English>VF</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_PEA">
+            <English>PEA</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_Asystole">
+            <English>Asystole</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_DescShort">
+            <English>REBOA Unit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_DescUse">
+            <English>Used to block the aorta and prevent bleeding below the heart</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Use">
+            <English>Place REBOA Unit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Action">
+            <English>Placing</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Status">
+            <English>REBOA</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Deep_Use">
+            <English>Advance REBOA Unit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Deep_Action">
+            <English>Advancing</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Remove_Use">
+            <English>Remove REBOA Unit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
+            <English>Removing</English>
+        </Key>
         <Key ID="STR_KAT_Surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>
             <Chinesesimp>肾损伤/衰竭</Chinesesimp>

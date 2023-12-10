@@ -196,8 +196,12 @@ if (ACEGVAR(medical_gui,showDamageEntry)) then {
 };
 
 // Indicate if a tourniquet is applied
-if (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
+if (HAS_TOURNIQUET_ACTUAL(_target,_selectionN)) then {
     _entries pushBack [localize ACELSTRING(medical_gui,Status_Tourniquet_Applied), [0.77, 0.51, 0.08, 1]];
+};
+
+if (GET_SURGICAL_TOURNIQUETS(_target) select _selectionN != 0) then {
+    _entries pushBack [LELSTRING(surgery,Reboa_Status), [0.77, 0.20, 0.08, 1]];
 };
 
 // Indicate current body part fracture status
@@ -213,7 +217,7 @@ switch (GET_FRACTURES(_target) select _selectionN) do {
 };
 
 // Display cyanosis in overview tab, only when head/arms are selected
-if (EGVAR(breathing,showCyanosis) && _selectionN in [0,2,3]) then {
+if (EGVAR(breathing,showCyanosis) && _selectionN in [0,2,3,4,5]) then {
     private _spO2 = 0;
 
     if (alive _target) then {

@@ -57,4 +57,26 @@ class CfgWeapons {
             mass = 5;
         };
     };
+    class kat_ultrasound: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Ultra_DescShort); //Not an error - it has the same description as display name
+        picture = QPATHTOF(ui\vacuum.paa);
+        model = "\A3\Props_F_Exp_A\Military\Equipment\Tablet_02_F.p3d";
+        descriptionShort = CSTRING(Ultra_DescShort);
+        descriptionUse = CSTRING(Ultra_DescShort);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 5;
+        };
+    };
+    class kat_reboa: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(Reboa_DescShort); //Not an error - it has the same description as display name
+        picture = QPATHTOF(ui\vacuum.paa);
+        model = "\A3\Props_F_Exp_A\Military\Equipment\Tablet_02_F.p3d";
+        descriptionShort = CSTRING(Reboa_DescShort);
+        descriptionUse = CSTRING(Reboa_DescUse);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
 };

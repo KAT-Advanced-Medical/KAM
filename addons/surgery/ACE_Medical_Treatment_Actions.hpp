@@ -1,7 +1,13 @@
 class ACE_Medical_Treatment_Actions {
     class BasicBandage;
     class CheckPulse;
-
+    class ApplyTourniquet;
+    class ApplyTourniquet: BasicBandage {
+        condition = QUOTE(!([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) && ([ARR_2(_patient,_bodyPart)] call FUNC(hasTourniquetAppliedToAdditional)));
+    };
+    class RemoveTourniquet: ApplyTourniquet {
+        condition = QUOTE(([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) && ([ARR_2(_patient,_bodyPart)] call FUNC(hasTourniquetAppliedToAdditional)));
+    };
     class CheckFracture: CheckPulse {
         displayName = CSTRING(fracture_check);
         displayNameProgress = CSTRING(fracture_checking);
@@ -111,5 +117,61 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 0;
         callbackProgress = QFUNC(npwtTreatmentProgress);
         callbackSuccess = "";
+    };
+    class UltraAssessment: BasicBandage {
+        displayName = CSTRING(Ultra_Use);
+        displayNameProgress = CSTRING(Ultra_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(surgicalAction_MedLevel);
+        treatmentTime = QGVAR(intermediateTime);
+        items[] = {"kat_ultrasound"};
+        condition = "";
+        consumeItem = 0;
+        callbackSuccess = QFUNC(ultraAssessment);
+    };
+    class ReboaPlacement: BasicBandage {
+        displayName = CSTRING(Reboa_Use);
+        displayNameProgress = CSTRING(Reboa_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        allowedSelections[] = {"LeftLeg"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(surgicalAction_MedLevel);
+        treatmentTime = QGVAR(intermediateTime);
+        items[] = {"kat_ultrasound", "kat_reboa"};
+        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(imaging),false)]) && (!(_patient getVariable [ARR_2(QQGVAR(reboa),false)])));
+        consumeItem = 0;
+        callbackSuccess = QFUNC(reboaApply);
+    };
+    class ReboaAdvancement: BasicBandage {
+        displayName = CSTRING(Reboa_Deep_Use);
+        displayNameProgress = CSTRING(Reboa_Deep_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(surgicalLocation);
+        allowedSelections[] = {"LeftLeg"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(surgicalAction_MedLevel);
+        treatmentTime = QGVAR(intermediateTime);
+        items[] = {"kat_ultrasound"};
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(reboa),false)]);
+        consumeItem = 0;
+        callbackSuccess = QFUNC(reboaDeepApply);
+    };
+    class ReboaRemoval: BasicBandage {
+        displayName = CSTRING(Reboa_Remove_Use);
+        displayNameProgress = CSTRING(Reboa_Remove_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(reboaTime);
+        allowedSelections[] = {"LeftLeg"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(surgicalAction_MedLevel);
+        treatmentTime = QGVAR(intermediateTime);
+        items[] = {"kat_ultrasound"};
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(reboa),false)]);
+        consumeItem = 0;
+        callbackSuccess = QFUNC(reboaRemove);
     };
 };
