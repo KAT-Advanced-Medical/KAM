@@ -626,6 +626,14 @@
             <English>Airway Suction (Manual Pump)</English>
             <Japanese>気道吸引 (手動式吸引器)</Japanese>
         </Key>
+        <Key ID="STR_KAT_Airway_Suction_Reuse">
+            <English>Reusable Manual Suction Pump</English>
+            <Japanese>手動式気道吸引器の再利用</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_Suction_Reuse_DESC">
+            <English>Regain the Manual Suction Pump after use</English>
+            <Japanese>手動式気道吸引器の使用後、再利用できるようにします。</Japanese>
+        </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
             <English>Vomit (Small)</English>
             <German>Erbrochenes (Klein)</German>

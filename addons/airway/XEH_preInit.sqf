@@ -192,7 +192,7 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(Suction_reuse),
     "CHECKBOX",
-    [LLSTRING(SUCTION_REUSE)],
+    [LLSTRING(SUCTION_REUSE),LLSTRING(SUCTION_REUSE_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [false],
     true
