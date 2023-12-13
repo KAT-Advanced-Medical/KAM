@@ -188,6 +188,16 @@ In real life, this will happen sometimes, not quiet often.
     true
 ] call CBA_Settings_fnc_init;
 
+// Reuse Item checkbox for Manual Suction Pump
+[
+    QGVAR(Suction_reuse),
+    "CHECKBOX",
+    [LLSTRING(SUCTION_REUSE)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 // Settable action time for Larynxtubus
 [
     QGVAR(Larynxtubus_time),

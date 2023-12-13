@@ -26,6 +26,12 @@ if !(_patient getVariable [QGVAR(occluded), false]) exitWith {};
 
 private _accuvacSuction = playSound3D [QPATHTOF_SOUND(sounds\suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
 
+if(GVAR(Suction_reuse)) then {
+	if (_usedItem == "kat_suction") then {
+		_medic addItem "kat_suction";
+	};
+};
+
 [{
     !dialog;
 }, {
