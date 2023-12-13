@@ -53,7 +53,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_RemoveAirwayItem);
     };
     class Accuvac: Larynxtubus {
-        displayName = "Accuvac";
+        displayName = CSTRING(AccuvacTreatment_diplayName);
         treatmentTime = QGVAR(Accuvac_time);
         items[] = {"kat_accuvac"};
         condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus'));
@@ -64,6 +64,17 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_accuvac);
         callbackProgress = "";
         sounds[] = {{QPATHTO_R(sounds\accuvac.wav),6,1,15}};
+    };
+    class Suction: Larynxtubus {
+        displayName = CSTRING(SuctionTreatment_diplayName);
+        treatmentTime = QGVAR(Suction_time);
+        items[] = {"kat_Suction"};
+        condition = QUOTE(!([_patient] call ACEFUNC(common,isAwake)) && (missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(recovery),false)]) && !(_patient getVariable [ARR_2(QQGVAR(airway_item),'')] == 'Larynxtubus'));
+        icon = QPATHTOF(ui\suction.paa);
+        medicRequired = QGVAR(medLvl_Suction);
+        callbackStart = QFUNC(treatmentAdvanced_AccuvacStart);
+        callbackSuccess = QFUNC(treatmentAdvanced_accuvac);
+        callbackProgress = "";
     };
     class HyperextendHead: Larynxtubus {
         displayName = CSTRING(Hyperextend_diplayName);

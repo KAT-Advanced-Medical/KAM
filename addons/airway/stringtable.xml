@@ -589,6 +589,10 @@
             <Portuguese>A Cânula de Guedel evita obstruções</Portuguese>
             <Norwegian>Guedel Tube brukes for å redde luftveiene</Norwegian>
         </Key>
+        <Key ID="STR_KAT_Airway_Accuvac_Display">
+            <English>Accuvac</English>
+            <Japanese>アキュバック</Japanese>
+        </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
             <German>Der ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
@@ -602,9 +606,25 @@
             <Turkish>ACCUVAC, acil tıpta mobil kullanım için pilli hava yolu emişine yönelik tıbbi bir emme cihazıdır.</Turkish>
             <Italian>L'ACCUVAC è un dispositivo medico portatile di suzione a batterie per aspirare le vie aeree in caso di emergenza</Italian>
             <Russian>ACCUVAC — это медицинский отсасыватель для отсасывания из дыхательных путей с аккумуляторным приводом для мобильного использования в неотложной медицине.</Russian>
-            <Japanese>ACCUVACは、救急医療で携帯使用するための電源を備えた気道吸引用の医療用吸引装置です。</Japanese>
+            <Japanese>アキュバックは、救急医療で携行使用するためのバッテリー電源を備えた気道吸引の為の医療用吸引装置です。</Japanese>
             <Portuguese>ACCUVAC é uma unidade de sucção portátil utilizada para tratar vias aéreas em caso de emergência médica.</Portuguese>
             <Norwegian>ACCUVAC er en medisinsk sugeenhet for suging av luftveier med batteridrift for mobil bruk innen akuttmedisin</Norwegian>
+        </Key>
+        <Key ID="STR_KAT_Airway_AccuvacTreatment_Display">
+            <English>Airway Suction (Accuvac)</English>
+            <Japanese>気道吸引 (アキュバック)</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_Suction_Display">
+            <English>Manual Suction Pump</English>
+            <Japanese>手動式吸引器</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_Suction_Desc_Short">
+            <English>Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
+            <Japanese>手動式吸引器は、手動ポンプで動作する気道吸引の為の医療用吸引装置です。これは電気駆動の装置を代替することが可能です。</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_SuctionTreatment_Display">
+            <English>Airway Suction (Manual Pump)</English>
+            <Japanese>気道吸引 (手動式吸引器)</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -759,6 +779,14 @@
             <Portuguese>Nível de treinamento necessário para usar um ACCUVAC</Portuguese>
             <Norwegian>Opplæringsnivået som kreves for å bruke en Accuvac</Norwegian>
         </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_SUCTION">
+            <English>Allow Manual Suction Pump</English>
+            <Japanese>手動吸引器の許可</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_SUCTION_DESC">
+            <English>Training level required to use an Manual Suction Pump</English>
+            <Japanese>手動吸引器の使用に必要な医療スキルのレベルを設定します。</Japanese>
+        </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
             <English>Time to check Airway</English>
             <German>Zeit um Atemwege zu prüfen</German>
@@ -890,6 +918,14 @@
             <Japanese>Accuvacを使用するのにどのくらい時間がかかるか設定します</Japanese>
             <Portuguese>Quanto tempo demorará para usar ACCUVAC</Portuguese>
             <Norwegian>Hvor lang tid vil det ta å bruke Accuvac</Norwegian>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_SUCTION">
+            <English>Time for Manual Suction Pump</English>
+            <Japanese>手動吸引器の所要時間</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
+            <English>How long it will take to use Manual Suction Pump</English>
+            <Japanese>手動吸引器を使用するのにどのくらい時間がかかるか設定します</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS">
             <English>Time for Larynxtubus</English>

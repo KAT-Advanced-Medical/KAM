@@ -29,13 +29,24 @@ class CfgWeapons {
     class kat_accuvac: ACE_ItemCore {
         scope = 2;
         author = "Katalam";
-        displayName= "Accuvac";
+        displayName= CSTRING(Accuvac_Display);
         descriptionShort = CSTRING(Accuvac_Desc_Short);
         picture = QPATHTOF(ui\accuvac_normal.paa);
         model = QPATHTOF(models\accuvac\accuvac.p3d);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 7;
+        };
+    };
+    class kat_suction: ACE_ItemCore {
+        scope = 2;
+        author = "Katalam";
+        displayName= CSTRING(Suction_Display);
+        descriptionShort = CSTRING(Suction_Desc_Short);
+        picture = QPATHTOF(ui\suction_normal.paa);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1.5;
         };
     };
 };

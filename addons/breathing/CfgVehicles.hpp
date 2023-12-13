@@ -42,6 +42,7 @@ class CfgVehicles {
             MACRO_ADDITEM(Attachable_Helistretcher,5);
             MACRO_ADDITEM(kat_stretcherBag,5);
             MACRO_ADDITEM(kat_accuvac,2);
+            MACRO_ADDITEM(kat_suction,15);
             MACRO_ADDITEM(kat_guedel,15);
             MACRO_ADDITEM(kat_larynx,15);
             MACRO_ADDITEM(kat_aatKit,15);

@@ -13,6 +13,7 @@ class CfgPatches {
         weapons[] = {
             "kat_guedel",
             "kat_larynx",
+            "kat_suction",
             "kat_accuvac"
         };
         magazines[] = {};

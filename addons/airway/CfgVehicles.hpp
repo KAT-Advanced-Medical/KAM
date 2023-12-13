@@ -24,7 +24,7 @@ class CfgVehicles {
     class kat_accuvacItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= "Accuvac";
+        displayName= CSTRING(Accuvac_Display);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
@@ -45,6 +45,7 @@ class CfgVehicles {
         class TransportItems: TransportItems {
             MACRO_ADDITEM(kat_larynx,15);
             MACRO_ADDITEM(kat_guedel,15);
+            MACRO_ADDITEM(kat_suction,15);
             MACRO_ADDITEM(kat_accuvac,1);
         };
     };
