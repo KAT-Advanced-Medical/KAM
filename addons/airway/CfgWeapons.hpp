@@ -40,7 +40,7 @@ class CfgWeapons {
     };
     class kat_suction: ACE_ItemCore {
         scope = 2;
-        author = "Katalam";
+        author = "Apricot_ale";
         displayName= CSTRING(Suction_Display);
         descriptionShort = CSTRING(Suction_Desc_Short);
         picture = QPATHTOF(ui\suction_normal.paa);
