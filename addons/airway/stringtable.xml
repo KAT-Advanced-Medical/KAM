@@ -1180,6 +1180,10 @@
             <English>Recovery Position + Head Hyperextend Settings</English>
             <Japanese>回復体位と頭部後屈設定</Japanese>
         </Key>
+        <Key ID="STR_KAT_Airway_SubCategory_Suction">
+            <English>Suction devices Settings</English>
+            <Japanese>気道吸引器設定</Japanese>
+        </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>
             <Italian>Impostazione oggetti vie aeree</Italian>

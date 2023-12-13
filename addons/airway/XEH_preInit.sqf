@@ -153,7 +153,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(medLvl_Accuvac),
     "LIST",
     [LLSTRING(ALLOW_ACCUVAC),LLSTRING(ALLOW_ACCUVAC_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
@@ -163,7 +163,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(Accuvac_time),
     "SLIDER",
     [LLSTRING(TIME_ACCUVAC),LLSTRING(TIME_ACCUVAC_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [1, 20, 8, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -173,7 +173,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(medLvl_Suction),
     "LIST",
     [LLSTRING(ALLOW_SUCTION),LLSTRING(ALLOW_SUCTION_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
@@ -183,7 +183,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(Suction_time),
     "SLIDER",
     [LLSTRING(TIME_SUCTION),LLSTRING(TIME_SUCTION_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [1, 20, 14, 0],
     true
 ] call CBA_Settings_fnc_init;
