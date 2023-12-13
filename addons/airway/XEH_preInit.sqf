@@ -164,7 +164,7 @@ In real life, this will happen sometimes, not quiet often.
     "SLIDER",
     [LLSTRING(TIME_ACCUVAC),LLSTRING(TIME_ACCUVAC_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
-    [1, 20, 8, 0],
+    [1, 30, 8, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -184,7 +184,7 @@ In real life, this will happen sometimes, not quiet often.
     "SLIDER",
     [LLSTRING(TIME_SUCTION),LLSTRING(TIME_SUCTION_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
-    [1, 20, 14, 0],
+    [1, 30, 12, 0],
     true
 ] call CBA_Settings_fnc_init;
 
