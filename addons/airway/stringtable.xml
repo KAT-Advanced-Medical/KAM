@@ -590,7 +590,7 @@
             <Norwegian>Guedel Tube brukes for å redde luftveiene</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Display">
-            <English>Accuvac</English>
+            <English>ACCUVAC</English>
             <Japanese>アキュバック</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
@@ -611,20 +611,20 @@
             <Norwegian>ACCUVAC er en medisinsk sugeenhet for suging av luftveier med batteridrift for mobil bruk innen akuttmedisin</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_AccuvacTreatment_Display">
-            <English>Airway Suction (Accuvac)</English>
-            <Japanese>気道吸引 (アキュバック)</Japanese>
+            <English>Airway Suction</English>
+            <Japanese>気道吸引</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Display">
             <English>Manual Suction Pump</English>
             <Japanese>手動式吸引器</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
-            <English>Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
+            <English>Manual Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
             <Japanese>手動式吸引器は、手動ポンプで動作する気道吸引の為の医療用吸引装置です。これは電気駆動の装置を代替することが可能です。</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SuctionTreatment_Display">
-            <English>Airway Suction (Manual Pump)</English>
-            <Japanese>気道吸引 (手動式吸引器)</Japanese>
+            <English>Airway Suction (Manual)</English>
+            <Japanese>気道吸引 (手動式)</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse">
             <English>Reusable Manual Suction Pump</English>
