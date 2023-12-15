@@ -367,7 +367,7 @@
         <Key ID="STR_KAT_Airway_Hyperextend_already">
             <English>Patient's head is already hyperextended</English>
             <Japanese>患者は既に頭部後屈されています</Japanese>
-            <Norwegian>Pasienten's hode er allerede hyperforlenget</Norwegian>
+            <Norwegian>Pasientens hode er allerede hyperforlenget</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_progress">
             <English>Hyperextending head</English>
