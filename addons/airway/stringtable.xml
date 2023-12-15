@@ -294,7 +294,7 @@
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
             <Japanese>気道に異物があります、 医療吸引が必要です</Japanese>
-            <Norwegian>Luftveien er okkludert, medisinsk suging nødvendig</Norwegian>
+            <Norwegian>Luftveien er okkludert, behov for medisinsk suging</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
             <English>Airway is clear</English>
