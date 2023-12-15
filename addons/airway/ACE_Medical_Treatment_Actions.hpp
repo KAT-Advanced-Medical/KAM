@@ -72,7 +72,7 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\suction.paa);
         consumeItem = 1;
         medicRequired = QGVAR(medLvl_Suction);
-        //sounds[] = {{QPATHTO_R(sounds\accuvac.wav),6,1,15}}; //Todo: change sound
+        sounds[] = {{QPATHTO_R(sounds\manual_suction.wav),6,1,15}};
     };
     class HyperextendHead: Larynxtubus {
         displayName = CSTRING(Hyperextend_diplayName);
