@@ -487,6 +487,10 @@
             <Portuguese>Sucção médica não necessária</Portuguese>
             <Norwegian>Ingen behov for medisinsk suging</Norwegian>
         </Key>
+        <Key ID="STR_KAT_Airway_Accuvac_Success">
+            <English>Medical suction completed, Occlusion removed</English>
+            <Japanese>医療吸引が完了し、 異物が除去されました</Japanese>
+        </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
             <German>Atemwege Kontrollieren</German>

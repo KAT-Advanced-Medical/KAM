@@ -35,4 +35,7 @@ if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
 
 [_patient, _classname] call ACEFUNC(medical_treatment,addToTriageCard);
 
+private _outputSuccess = LLSTRING(Accuvac_Success);
+[_outputSuccess, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+
 [QGVAR(accuvacLocal), _patient, _patient] call CBA_fnc_targetEvent;
