@@ -326,7 +326,7 @@
             <Portuguese>O item não pôde ser usado, vias aéreas bloqueadas</Portuguese>
             <Norwegian>Gjenstanden kunne ikke brukes, luftveiene er ikke frie</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_Hyperextend_diplayName">
+        <Key ID="STR_KAT_Airway_Hyperextend_displayName">
             <English>Hyperextending Head</English>
             <German>Kopf überstrecken</German>
             <Polish>Odchyl głowę</Polish>
@@ -610,7 +610,7 @@
             <Portuguese>ACCUVAC é uma unidade de sucção portátil utilizada para tratar vias aéreas em caso de emergência médica.</Portuguese>
             <Norwegian>ACCUVAC er en medisinsk sugeenhet for suging av luftveier med batteridrift for mobil bruk innen akuttmedisin</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_AccuvacTreatment_Display">
+        <Key ID="STR_KAT_Airway_AccuvacTreatment_displayName">
             <English>Airway Suction</English>
             <Japanese>気道吸引</Japanese>
         </Key>
@@ -622,7 +622,7 @@
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
             <Japanese>手動式吸引器は、手動ポンプで動作する気道吸引の為の医療用吸引装置です。これは電気駆動の装置を代替することが可能です。</Japanese>
         </Key>
-        <Key ID="STR_KAT_Airway_SuctionTreatment_Display">
+        <Key ID="STR_KAT_Airway_SuctionTreatment_displayName">
             <English>Airway Suction (Manual)</English>
             <Japanese>気道吸引 (手動式)</Japanese>
         </Key>
