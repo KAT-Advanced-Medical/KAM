@@ -7,6 +7,7 @@ class CfgPatches {
         units[] = {
             "kat_guedelItem",
             "kat_larynxItem",
+            "kat_suctionItem",
             "kat_accuvacItem",
             "kat_vomit"
         };

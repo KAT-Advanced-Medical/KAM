@@ -31,6 +31,16 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_accuvac,1);
         };
     };
+    class kat_suctionItem: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName= CSTRING(Suction_Display);
+        author = "Apricot_ale";
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(kat_suction,1);
+        };
+    };
     class BloodSplatter_01_Small_Old_F;
     class kat_vomit: BloodSplatter_01_Small_Old_F {
         displayName = CSTRING(Vomit_Display);
