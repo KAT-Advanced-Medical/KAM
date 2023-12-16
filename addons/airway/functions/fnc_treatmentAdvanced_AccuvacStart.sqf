@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Blue
- * Play Accuvac suction sound
+ * Play Suction Devices sound
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -24,12 +24,13 @@ params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
 if !(_patient getVariable [QGVAR(occluded), false]) exitWith {};
 
-private _accuvacSuction = playSound3D [QPATHTOF_SOUND(sounds\suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
-
-if(GVAR(Suction_reuse)) then {
-    if (_usedItem isEqualTo "kat_suction") then {
+if (_usedItem isEqualTo "kat_suction") then {
+    private _accuvacSuction = playSound3D [QPATHTOF_SOUND(sounds\manual_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+    if(GVAR(Suction_reuse)) then {
         _medic addItem "kat_suction";
     };
+} else {
+    private _accuvacSuction = playSound3D [QPATHTOF_SOUND(sounds\suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
 };
 
 [{
