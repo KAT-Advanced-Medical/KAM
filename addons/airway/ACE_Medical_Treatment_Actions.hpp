@@ -68,7 +68,7 @@ class ACE_Medical_Treatment_Actions {
     class Suction: Accuvac {
         displayName = CSTRING(SuctionTreatment_displayName);
         treatmentTime = QGVAR(Suction_time);
-        items[] = {"kat_Suction"};
+        items[] = {"kat_suction"};
         icon = QPATHTOF(ui\suction.paa);
         consumeItem = 1;
         medicRequired = QGVAR(medLvl_Suction);
