@@ -42,6 +42,26 @@ private _fnc_inflictAdvancedPneumothorax = {
             _unit setVariable [QGVAR(tensionpneumothorax), true, true];
             _unit setVariable [QGVAR(pneumothorax), 4, true];
         };
+
+        if (GVAR(PneumothoraxArrest)) then {
+            [{
+                params ["_args", "_idPFH"];
+                _args params ["_unit"];
+
+                if ((_unit getVariable[QGVAR(pneumothorax), 0]) == 4) then {
+                    private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+                    if ((_ht findIf {_x isEqualTo "tension"}) == -1) then {
+                        _ht pushBack "tension";
+
+                        if(_unit getVariable[QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                            [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                        };
+
+                        _unit setVariable [QEGVAR(circulation,ht), _ht, true];
+                    };
+                };
+            }, [_unit], GVAR(arrestPneumothorax_interval)] call CBA_fnc_waitAndExecute;
+        };
     };
 };
 
@@ -113,5 +133,54 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
     if (floor (random 100) <= GVAR(deepPenetratingInjuryChance)) then {
         _unit setVariable [QGVAR(deepPenetratingInjury), true, true];
         _unit setVariable [QGVAR(activeChestSeal), false, true];
+
+        if ((floor (random 100) <= EGVAR(circulation,tamponadeChance)) && (_unit getVariable [QEGVAR(circulation,effusion), 0] == 0)) then {
+            _unit setVariable [QEGVAR(circulation,effusion), 1, true];
+
+            [{
+                params ["_unit"];
+
+                if(_unit getVariable [QEGVAR(circulation,effusion), 0] > 0) then {
+                    // Try to deteriorate at set interval
+                    [{
+                        params ["_args", "_idPFH"];
+                        _args params ["_unit"];
+
+                        private _effusion = _unit getVariable [QEGVAR(circulation,effusion), 0];
+
+                        // If patient is dead, already treated or has already deteriorated into advanced pneumothorax, kill the PFH
+                        if((_effusion == 0) || !(alive _unit) || (_effusion > 4)) exitWith {
+                            [_idPFH] call CBA_fnc_removePerFrameHandler;
+                        };
+
+                        if (floor (random 100) <= EGVAR(circulation,deterioratingTamponade_chance)) then {
+                            private _effusionTarget = _effusion + 1;
+
+                            // Once deteriorated far enough try to inflict tamponade
+                            if (_effusionTarget == 4) exitWith {
+                                private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+
+                                if ((_ht findIf {_x isEqualTo "tampo"}) == -1) then {
+                                    _ht pushBack "tampo";
+
+                                    if (_unit getVariable[QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                                        [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                                    };
+
+                                    _unit setVariable [QEGVAR(circulation,ht), _ht, true];
+                                };
+
+                                [_idPFH] call CBA_fnc_removePerFrameHandler;
+                            };
+
+                            _unit setVariable [QEGVAR(circulation,effusion), _effusionTarget, true];
+                            [_unit, 0.5 * (_effusionTarget / 4)] call ACEFUNC(medical_status,adjustPainLevel); // Adjust pain based on severity
+                            [_unit, -20, -20, "cardiac_tension"] call EFUNC(circulation,updateBloodPressureChange); // Emulate low blood pressure and low heart rate caused by tamponade
+                        };
+
+                    }, EGVAR(circulation,deterioratingTamponade_interval), [_unit]] call CBA_fnc_addPerFrameHandler;
+                };
+            }, [_unit], EGVAR(circulation,deterioratingTamponade_interval)] call CBA_fnc_waitAndExecute;
+        };
     };
 };

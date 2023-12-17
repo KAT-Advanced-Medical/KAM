@@ -18,3 +18,6 @@
 params ["_unit"];
 
 _unit setVariable [QGVAR(cprCount), 2, true];
+_unit setVariable [QGVAR(ht), [], true];
+_unit setVariable [QGVAR(effusion), 0, true];
+

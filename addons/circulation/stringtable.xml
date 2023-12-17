@@ -2529,5 +2529,14 @@
             <Portuguese>Taxa de sangramento após parada cardíaca</Portuguese>
             <Spanish>Tasa de sangrado en paro cardíaco</Spanish>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance">
+            <English>Chance for tamponade in penetrating wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_tamponadeInterval">
+            <English>Tamponade progression timer</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance_deterioration">
+            <English>Tamponade progression chance</English>
+        </Key>
     </Package>
 </Project>

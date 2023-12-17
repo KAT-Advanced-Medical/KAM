@@ -81,6 +81,9 @@ _unit setVariable [QEGVAR(circulation,bloodtype), [_unit, _dead, true] call EFUN
 _unit setVariable [QEGVAR(circulation,internalBleeding), 0, true];
 _unit setVariable [QEGVAR(circulation,StoredBloodPressure), [0,0], true];
 
+_unit setVariable [QEGVAR(circulation,ht), [], true];
+_unit setVariable [QEGVAR(circulation,effusion), 0, true];
+
 _unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 
 _unit setVariable [QEGVAR(circulation,isPerformingCPR), false, true];
@@ -170,43 +173,60 @@ if (EGVAR(pharma,kidneyAction)) then {
         _args params ["_unit"];
 
         private _alive = alive _unit;
+        private _ht = _unit getVariable [QEGVAR(circulation, ht), []];
 
         if (!_alive) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _ph = _unit getVariable [QEGVAR(pharma,pH), 1500];
-        if (_ph == 1500) exitWith {};
+        private _ph = _unit getVariable [QGVAR(pH), 1500];
+        if (_ph == 1500) exitWith {
+            _unit setVariable [QGVAR(kidneyArrest), false, true];
+            _unit setVariable [QGVAR(kidneyPressure), false, true];
+            _unit setVariable [QGVAR(kidneyFail), false, true];
 
-        private _kidneyFail = _unit getVariable [QEGVAR(pharma,kidneyFail), false];
-        private _kidneyArrest = _unit getVariable [QEGVAR(pharma,kidneyArrest), false];
-        private _kidneyPressure = _unit getVariable [QEGVAR(pharma,kidneyPressure), false];
+            _ht deleteAt (_ht find "hydro");
+            _unit setVariable [QEGVAR(circulation,ht), _ht, true];
+        };
+
+        private _kidneyFail = _unit getVariable [QGVAR(kidneyFail), false];
+        private _kidneyArrest = _unit getVariable [QGVAR(kidneyArrest), false];
+        private _kidneyPressure = _unit getVariable [QGVAR(kidneyPressure), false];
 
         if (_ph <= 0) exitWith {
-            _unit setVariable [QEGVAR(pharma,kidneyFail), true, true];
+            _unit setVariable [QGVAR(kidneyFail), true, true];
+            _unit setVariable [QGVAR(pH), 0, true];
 
             if !(_kidneyArrest) then {
                 private _random = random 1;
 
                 if (_random >= 0.5) then {
-                    [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
-                    _unit setVariable [QEGVAR(pharma,kidneyArrest), true, true];
+                    if ((_ht findIf {_x isEqualTo "hydro"}) == -1) then {
+                        _ht pushBack "hydro";
+
+                        if(_unit getVariable[QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                            [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                        };
+
+                        _unit setVariable [QEGVAR(circulation,ht), _ht, true];
+                    };
+                    _unit setVariable [QGVAR(kidneyArrest), true, true];
                 };
             };
         };
 
         if (_ph < 750) exitWith {
             _ph = (_ph + 25) min 1500;
-            _unit setVariable [QEGVAR(pharma,pH), _ph, true];
+            _unit setVariable [QGVAR(pH), _ph, true];
 
             if !(_kidneyPressure) then {
-                _unit setVariable [QEGVAR(pharma,kidneyPressure), true, true];
+                _unit setVariable [QGVAR(kidneyPressure), true, true];
                 [_unit, "KIDNEY", 15, 1200, 30, 0, 15] call ACEFUNC(medical_status,addMedicationAdjustment);
             };
         };
 
         _ph = (_ph + 50) min 1500;
-        _unit setVariable [QEGVAR(pharma,pH), _ph, true];
+        _unit setVariable [QGVAR(pH), _ph, true];
     }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
 

@@ -49,6 +49,12 @@
             <Japanese>SpO2の致命値を有効化</Japanese>
             <Portuguese>Ativar o valor letal de SpO2</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue">
+            <English>Cardiac arrest SpO2 value</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive">
+            <English>Activate cardiac arrest SpO2 value</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
             <German>SpO2 positiver Multiplikator</German>
@@ -1157,6 +1163,18 @@
             <German>Nach jedem Intervall wird eine Chance gewürfelt, ob sich der Pneumothorax verschlechtert oder nicht</German>
             <Portuguese>Após cada intervalo, uma chance será lançada para determinar se o pneumotórax deteriorará.</Portuguese>
             <Spanish>Después de cada intervalo, se lanzará una probabilidad para determinar si el neumotórax empeorará</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest">
+            <English>Enable Pneumothorax Arrest</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest_DESCRIPTION">
+            <English>Enables a chance for cardiac arrest following pneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval">
+            <English>Deteriorating pneumothorax arrest interval</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval_Desc">
+            <English>After each interval a chance will be rolled whether or not a pneumothorax will result in cardiac arrest</English>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Items">
             <English>Breathing items Settings</English>

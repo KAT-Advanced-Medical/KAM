@@ -529,26 +529,20 @@
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Normal">
             <English>Normal</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Airway_PTX">
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Pneumothorax</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Airway_Hemo">
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Hemo">
             <English>Hemopneumothorax</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Airway_Tension">
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Tension">
             <English>Tension Pneumothorax</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Cardiac_VT">
-            <English>VT</English>
+        <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Shockable">
+            <English>Arrest - Shockable</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Airway_VF">
-            <English>VF</English>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Airway_PEA">
-            <English>PEA</English>
-        </Key>
-        <Key ID="STR_KAT_Surgery_Ultra_Airway_Asystole">
-            <English>Asystole</English>
+        <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Unshockable">
+            <English>Arrest - Not Shockable</English>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DescShort">
             <English>REBOA Unit</English>
@@ -576,6 +570,12 @@
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
             <English>Removing</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Pericardial_Tap_Use">
+            <English>Pericardial Tap</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Pericardial_Tap_Action">
+            <English>Performing</English>
         </Key>
         <Key ID="STR_KAT_Surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>

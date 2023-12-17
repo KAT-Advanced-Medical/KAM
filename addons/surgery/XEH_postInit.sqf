@@ -9,4 +9,6 @@
 [QGVAR(reboaApply), LINKFUNC(reboaApplyLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(reboaDeepApply), LINKFUNC(reboaDeepApplyLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(reboaRemove), LINKFUNC(reboaRemoveLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(pericardialTap), LINKFUNC(pericardialTapLocal)] call CBA_fnc_addEventHandler;
+
 

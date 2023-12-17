@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: 1LT.Mazinski.H
- * Fully heals a fracture on the selected limb.
+ * Author: Mazinski
+ * Applies the Deep REBOA function.
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -12,7 +12,7 @@
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_closedFracture
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_reboaDeepApply
  *
  * Public: No
  */

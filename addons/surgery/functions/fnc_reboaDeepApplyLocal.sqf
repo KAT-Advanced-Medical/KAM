@@ -1,19 +1,18 @@
 #include "..\script_component.hpp"
 /*
- * Author: 1LT.Mazinski.H
- * Local call for fully healing a fracture.
+ * Author: Mazinski
+ * Local call for applying Deep REBOA.
  *
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
  * 2: Body Part <STRING>
- * 3: Entry <STRING>
  *
  * Return Value:
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg", "_entry"] call kat_surgery_fnc_closedFractureLocal
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_reboaDeepApplyLocal
  *
  * Public: No
  */

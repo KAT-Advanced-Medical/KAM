@@ -16,6 +16,8 @@ PREP(openReductionProgress);
 PREP(openReductionProgressLocal);
 PREP(ultraAssessment);
 PREP(ultraAssessmentLocal);
+PREP(pericardialTap);
+PREP(pericardialTapLocal);
 PREP(reboaApply);
 PREP(reboaApplyLocal);
 PREP(reboaDeepApply);

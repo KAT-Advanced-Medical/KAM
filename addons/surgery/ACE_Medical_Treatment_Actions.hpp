@@ -174,4 +174,18 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 0;
         callbackSuccess = QFUNC(reboaRemove);
     };
+    class PericardialTap: BasicBandage {
+        displayName = CSTRING(Pericardial_Tap_Use);
+        displayNameProgress = CSTRING(Pericardial_Tap_Action);
+        category = "surgery";
+        treatmentLocations = QGVAR(intermediateTime);
+        allowedSelections[] = {"Body"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(surgicalAction_MedLevel);
+        treatmentTime = QGVAR(intermediateTime);
+        items[] = {"kat_ultrasound"};
+        condition = "";
+        consumeItem = 0;
+        callbackSuccess = QFUNC(pericardialTap);
+    };
 };
