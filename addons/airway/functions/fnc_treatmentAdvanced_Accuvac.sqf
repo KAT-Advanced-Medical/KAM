@@ -22,15 +22,19 @@
 
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
-if (_usedItem isEqualTo "kat_suction") then {
-    if(GVAR(Suction_reuse)) then {
+if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
+    private _output = LLSTRING(Accuvac_NA);
+    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+
+    if (_usedItem isEqualTo "kat_suction") then {
         _medic addItem "kat_suction";
     };
 };
 
-if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
-    private _output = LLSTRING(Accuvac_NA);
-    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+if (_usedItem isEqualTo "kat_suction") then {
+    if(GVAR(Suction_reuse)) then {
+        _medic addItem "kat_suction";
+    };
 };
 
 [_patient, "Airway Suction"] call ACEFUNC(medical_treatment,addToTriageCard);
