@@ -25,23 +25,23 @@ params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 if !(_patient getVariable [QGVAR(occluded), false]) exitWith {};
 
 if (_usedItem isEqualTo "kat_suction") then {
-    private _accuvacSuction = playSound3D [QPATHTOF_SOUND(sounds\manual_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+    private _suctionSound = playSound3D [QPATHTOF_SOUND(sounds\manualpump_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
 
     [{
         !dialog;
     }, {
-        params ["_accuvacSuction"];
+        params ["_suctionSound"];
 
-        stopSound _accuvacSuction;
-    }, [_accuvacSuction], 5.7] call CBA_fnc_waitUntilAndExecute;
+        stopSound _suctionSound;
+    }, [_suctionSound], 6.5] call CBA_fnc_waitUntilAndExecute;
 } else {
-    private _accuvacSuction = playSound3D [QPATHTOF_SOUND(sounds\suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
+    private _suctionSound = playSound3D [QPATHTOF_SOUND(sounds\accuvac_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
 
     [{
         !dialog;
     }, {
-        params ["_accuvacSuction"];
+        params ["_suctionSound"];
 
-        stopSound _accuvacSuction;
-    }, [_accuvacSuction], 5.7] call CBA_fnc_waitUntilAndExecute;
+        stopSound _suctionSound;
+    }, [_suctionSound], 5.7] call CBA_fnc_waitUntilAndExecute;
 };
