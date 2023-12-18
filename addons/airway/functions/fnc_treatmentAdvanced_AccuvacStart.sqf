@@ -33,7 +33,7 @@ if (_usedItem isEqualTo "kat_suction") then {
         params ["_suctionSound"];
 
         stopSound _suctionSound;
-    }, [_suctionSound], 6.5] call CBA_fnc_waitUntilAndExecute;
+    }, [_suctionSound], 7.5] call CBA_fnc_waitUntilAndExecute;
 } else {
     private _suctionSound = playSound3D [QPATHTOF_SOUND(sounds\accuvac_suction.wav), _patient, false, getPosASL _patient, 6, 1, 15];
 
