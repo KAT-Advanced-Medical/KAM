@@ -632,11 +632,11 @@
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse">
             <English>Reusable Manual Suction Pump</English>
-            <Japanese>手動式気道吸引器の再利用</Japanese>
+            <Japanese>手動式吸引器の再利用</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse_DESC">
             <English>Regain the Manual Suction Pump after use</English>
-            <Japanese>手動式気道吸引器の使用後、再利用できるようにします。</Japanese>
+            <Japanese>手動式吸引器の使用後、再利用できるようにします。</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -758,38 +758,38 @@
             <Norwegian>Nivået av opplæring som kreves for å bruke en Guedeltubus</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_ACCUVAC">
-            <English>Allow Accuvac</English>
-            <German>Accuvac erlauben</German>
-            <Polish>Pozwól na użycie Accuvac</Polish>
-            <Spanish>Permitir Accuvac</Spanish>
-            <Chinese>允許Accuvac</Chinese>
-            <Chinesesimp>允许使用紧急医疗抽吸器(Accuvac)</Chinesesimp>
-            <Czech>Povolit Accuvac</Czech>
+            <English>Allow ACCUVAC</English>
+            <German>ACCUVAC erlauben</German>
+            <Polish>Pozwól na użycie ACCUVAC</Polish>
+            <Spanish>Permitir ACCUVAC</Spanish>
+            <Chinese>允許ACCUVAC</Chinese>
+            <Chinesesimp>允许使用紧急医疗抽吸器(ACCUVAC)</Chinesesimp>
+            <Czech>Povolit ACCUVAC</Czech>
             <Korean>전기흡인기 허용</Korean>
             <French>Autoriser l'ACCUVAC</French>
-            <Turkish>Accuvac'a izin ver</Turkish>
+            <Turkish>ACCUVAC'a izin ver</Turkish>
             <Italian>Permetti l'ACCUVAC</Italian>
             <Russian>Разрешить Аккувак</Russian>
-            <Japanese>Accuvacの許可</Japanese>
+            <Japanese>アキュバックの許可</Japanese>
             <Portuguese>Permitir ACCUVAC</Portuguese>
-            <Norwegian>Tilatt Accuvac</Norwegian>
+            <Norwegian>Tilatt ACCUVAC</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_ACCUVAC_DESC">
-            <English>Training level required to use an Accuvac</English>
-            <German>Benötigter medizinischer Grad, um den Accuvac zu nutzen</German>
-            <Polish>Poziom wyszkolenia wymagany do korzystania z Accuvac</Polish>
-            <Spanish>Nivel de entrenamiento requerido para usar un Accuvac</Spanish>
-            <Chinese>使用Accuvac所需的培訓水平</Chinese>
+            <English>Training level required to use an ACCUVAC</English>
+            <German>Benötigter medizinischer Grad, um den ACCUVAC zu nutzen</German>
+            <Polish>Poziom wyszkolenia wymagany do korzystania z ACCUVAC</Polish>
+            <Spanish>Nivel de entrenamiento requerido para usar un ACCUVAC</Spanish>
+            <Chinese>使用ACCUVAC所需的培訓水平</Chinese>
             <Chinesesimp>使用紧急医疗抽吸器所需的医疗培训水平</Chinesesimp>
-            <Czech>Úroveň výcviku potřebná k použití Accuvacu</Czech>
+            <Czech>Úroveň výcviku potřebná k použití ACCUVAC</Czech>
             <Korean>전기흡인기를 사용하기 위한 의료레벨 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser un ACCUVAC</French>
-            <Turkish>Acuvvac'ı kullanmak için gerekli eğitim seviyesi</Turkish>
+            <Turkish>ACCUVAC'ı kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare l'ACCUVAC</Italian>
-            <Russian>Уровень подготовки, необходимый для использования Accuvac</Russian>
-            <Japanese>Accuvacの使用に必要な医療スキルのレベルを設定します。</Japanese>
+            <Russian>Уровень подготовки, необходимый для использования ACCUVAC</Russian>
+            <Japanese>アキュバックの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um ACCUVAC</Portuguese>
-            <Norwegian>Opplæringsnivået som kreves for å bruke en Accuvac</Norwegian>
+            <Norwegian>Opplæringsnivået som kreves for å bruke en ACCUVAC</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_SUCTION">
             <English>Allow Manual Suction Pump</English>
@@ -898,38 +898,38 @@
             <Spanish>%1 acabó de girar la cabeza (x%2)</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC">
-            <English>Time for Accuvac</English>
-            <German>Zeit um den Accuvac zu nutzen</German>
-            <Polish>Czas na użycie Accuvac</Polish>
-            <Spanish>Tiempo para Accuvac</Spanish>
-            <Chinese>Accuvac時間</Chinese>
-            <Chinesesimp>Accuvac時間</Chinesesimp>
-            <Czech>Čas pro Accuvac </Czech>
+            <English>Time for ACCUVAC</English>
+            <German>Zeit um den ACCUVAC zu nutzen</German>
+            <Polish>Czas na użycie ACCUVAC</Polish>
+            <Spanish>Tiempo para ACCUVAC</Spanish>
+            <Chinese>ACCUVAC時間</Chinese>
+            <Chinesesimp>ACCUVAC時間</Chinesesimp>
+            <Czech>Čas pro ACCUVAC</Czech>
             <Korean>흡인에 걸리는 시간</Korean>
             <French>Durée d'aspiration avec l'ACCUVAC</French>
-            <Turkish>Accuvac için Zaman</Turkish>
+            <Turkish>ACCUVAC için Zaman</Turkish>
             <Italian>Tempo per l'ACCUVAC</Italian>
             <Russian>Время Аккувака</Russian>
-            <Japanese>Accuvacの所要時間</Japanese>
+            <Japanese>アキュバックの所要時間</Japanese>
             <Portuguese>Tempo para ACCUVAC</Portuguese>
-            <Norwegian>Tid for Accuvac</Norwegian>
+            <Norwegian>Tid for ACCUVAC</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC_DESC">
-            <English>How long it will take to use Accuvac</English>
-            <German>Wie lange dauert es, den Accuvac zu nutzen</German>
-            <Polish>Ile czasu zajmie użycie Accuvac'a</Polish>
-            <Spanish>Cuánto tiempo tomará usar Accuvac</Spanish>
-            <Chinese>使用Accuvac需要多長時間</Chinese>
+            <English>How long it will take to use ACCUVAC</English>
+            <German>Wie lange dauert es, den ACCUVAC zu nutzen</German>
+            <Polish>Ile czasu zajmie użycie ACCUVAC'a</Polish>
+            <Spanish>Cuánto tiempo tomará usar ACCUVAC</Spanish>
+            <Chinese>使用ACCUVAC需要多長時間</Chinese>
             <Chinesesimp>使用紧急医疗抽吸器的所需時間</Chinesesimp>
-            <Czech>Jak dlouho zabere použití Accuvacu</Czech>
+            <Czech>Jak dlouho zabere použití ACCUVAC</Czech>
             <Korean>흡인에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour aspirer avec l'ACCUVAC</French>
-            <Turkish>Accuvac'ı kullanmak ne kadar sürecek</Turkish>
+            <Turkish>ACCUVAC'ı kullanmak ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per usare l'ACCUVAC</Italian>
             <Russian>Сколько времени потребуется, чтобы использовать Аккувака</Russian>
-            <Japanese>Accuvacを使用するのにどのくらい時間がかかるか設定します</Japanese>
+            <Japanese>アキュバックを使用するのにどのくらい時間がかかるか設定します</Japanese>
             <Portuguese>Quanto tempo demorará para usar ACCUVAC</Portuguese>
-            <Norwegian>Hvor lang tid vil det ta å bruke Accuvac</Norwegian>
+            <Norwegian>Hvor lang tid vil det ta å bruke ACCUVAC</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION">
             <English>Time for Manual Suction Pump</English>
