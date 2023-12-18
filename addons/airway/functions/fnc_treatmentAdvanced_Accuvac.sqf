@@ -33,11 +33,7 @@ if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 };
 
-if (_usedItem isEqualTo "kat_suction") then {
-    [_patient, "Airway Suction"] call ACEFUNC(medical_treatment,addToTriageCard);
-} else {
-    [_patient, "Airway Suction (ACCUVAC)"] call ACEFUNC(medical_treatment,addToTriageCard);
-};
+[_patient, "Airway Suction"] call ACEFUNC(medical_treatment,addToTriageCard);
 
 private _outputSuccess = LLSTRING(Accuvac_Success);
 [_outputSuccess, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
