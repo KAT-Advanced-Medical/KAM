@@ -78,12 +78,12 @@ if (GVAR(kidneyAction)) then {
         };
 
         private _ph = _unit getVariable [QGVAR(pH), 1500];
-        if (_ph == 1500) exitWith {
+        if (_ph > 750) exitWith {
             _unit setVariable [QGVAR(kidneyArrest), false, true];
             _unit setVariable [QGVAR(kidneyPressure), false, true];
             _unit setVariable [QGVAR(kidneyFail), false, true];
 
-            _ht deleteAt (_ht find "hydro");
+            ht deleteAt (_ht find "hydro");
             _unit setVariable [QEGVAR(circulation,ht), _ht, true];
         };
 
