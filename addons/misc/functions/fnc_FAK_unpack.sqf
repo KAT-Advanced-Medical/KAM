@@ -43,11 +43,6 @@ private _fnc_arrayToInvItem = {
             };
         } 
     } foreach _array;
-
-    // Cleanup if no items were dropped
-    if (count itemCargo _groundContainer isEqualTo 0) then {
-        deleteVehicle _groundContainer;
-    }
 };
 
 private _fnc_getContainer = {
