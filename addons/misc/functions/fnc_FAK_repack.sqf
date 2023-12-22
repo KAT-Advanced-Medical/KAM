@@ -42,22 +42,23 @@ private _fnc_getContainer = {
     };
 };
 
-private _ammoCount = [_unit, _item] call FUNC(getMagazineAmmoCounts);
+private _ammoCount = [_unit, _item, true] call FUNC(getMagazineAmmoCounts);
 private _slotArray = [];
 private _highestAmmoCount = -1;
+private _containerFAK = "";
 
 {
-    private _checkedArray = [_x, _type] call FUNC(FAK_ammoToArray);
+    private _checkedArray = [(_x select 0), _type] call FUNC(FAK_ammoToArray);
 
-    if (!(_checkedArray select (_slot - 1)) && _x > _highestAmmoCount) then { // Get fullest FAK
+    if (!(_checkedArray select (_slot - 1)) && (_x select 0) > _highestAmmoCount) then { // Get fullest FAK
         _slotArray = _checkedArray;
-        _highestAmmoCount = _x;
+        _highestAmmoCount = _x select 0;
+        _containerFAK = _x select 1;
     };
 } forEach _ammoCount;
 
 if !(_highestAmmoCount > -1) exitWith {};
 
-private _container = "";
 private _FAKToAdd = "";
 private _itemList = [];
 private _max = 0;
@@ -65,25 +66,22 @@ private _max = 0;
 switch (_type) do {
     case 0: { // IFAK
         _FAKToAdd = "kat_IFAK";
-        _container = [(missionNamespace getVariable [QGVAR(IFAK_Container), 0])] call _fnc_getContainer;
         _itemList = missionNameSpace getVariable [QGVAR(IFAKContents), []];
         _max = 15;
     };
     case 1: { // AFAK
         _FAKToAdd = "kat_AFAK";
-        _container = [(missionNamespace getVariable [QGVAR(AFAK_Container), 0])] call _fnc_getContainer;
         _itemList = missionNameSpace getVariable [QGVAR(AFAKContents), []];
         _max = 63;
     };
     default { // MFAK
         _FAKToAdd = "kat_MFAK";
-        _container = [(missionNamespace getVariable [QGVAR(MFAK_Container), 0])] call _fnc_getContainer;
         _itemList = missionNameSpace getVariable [QGVAR(MFAKContents), []];
         _max = 255;
     };
 };
 
-_unit removeItem _item;
+// _unit removeItem _item;
 [_unit, _itemList select (_slot - 1)] call _fnc_arrayToRemoveInvItem;
 
 _slotArray set [(_slot - 1), true];
@@ -91,7 +89,40 @@ _slotArray set [(_slot - 1), true];
 private _amountLeft = [_slotArray] call FUNC(FAK_arrayToAmmo);
 
 if (_amountLeft >= _max) then {
-    [_unit, _FAKToAdd, _container] call ACEFUNC(common,addToInventory);
+
+    switch (_containerFAK) do {
+        case "Uniform": { 
+            uniformContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount]; // We need to use this cause "removeItem" targets the first item with the name it findes.
+            [_unit, _FAKToAdd, "uniform"] call ACEFUNC(common,addToInventory); // Ace only accepts "Uniform" when it is in lowercase letters.
+        };
+
+        case "Vest": { 
+            vestContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
+            [_unit, _FAKToAdd, "vest"] call ACEFUNC(common,addToInventory);
+        };
+    
+        case "Backpack": { 
+            backpackContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
+            [_unit, _FAKToAdd, "backpack"] call ACEFUNC(common,addToInventory);
+        };
+    };
+
 } else {
-    [_unit, (_FAKToAdd + "_Magazine"), _container, _amountLeft] call ACEFUNC(common,addToInventory);
+
+    switch (_containerFAK) do {
+        case "Uniform": { 
+            uniformContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
+            uniformContainer _unit addMagazineAmmoCargo [(_FAKToAdd + "_Magazine"), 1, _amountLeft]; // Use this to add the new item in the exact same place where it was before. Also Ace does not support adding a location & ammo count at the same time.
+        };
+
+        case "Vest": { 
+            vestContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
+            vestContainer _unit addMagazineAmmoCargo [(_FAKToAdd + "_Magazine"), 1, _amountLeft];
+        };
+    
+        case "Backpack": { 
+            backpackContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
+            backpackContainer _unit addMagazineAmmoCargo [(_FAKToAdd + "_Magazine"), 1, _amountLeft];
+        };
+    };
 };
