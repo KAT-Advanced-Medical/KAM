@@ -83,7 +83,7 @@ if (GVAR(kidneyAction)) then {
             _unit setVariable [QGVAR(kidneyPressure), false, true];
             _unit setVariable [QGVAR(kidneyFail), false, true];
 
-            ht deleteAt (_ht find "hydro");
+            _ht deleteAt (_ht find "hydro");
             _unit setVariable [QEGVAR(circulation,ht), _ht, true];
         };
 

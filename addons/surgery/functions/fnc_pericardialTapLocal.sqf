@@ -19,5 +19,9 @@
 
 params ["_medic", "_patient", "_bodyPart"];
 
-_patient setVariable [QEGVAR(circulation,effusion), 0, true];
+private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
+_ht deleteAt (_ht find "tampo");
+_patient setVariable [QEGVAR(circulation,ht), _ht, true];
 
+_patient setVariable [QEGVAR(circulation,effusion), 0, true];
+_patient setVariable [QGVAR(imaging), false, true];

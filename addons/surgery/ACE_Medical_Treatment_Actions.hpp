@@ -128,7 +128,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"kat_ultrasound"};
-        condition = "";
+        condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(imaging),false)]));
         consumeItem = 0;
         callbackSuccess = QFUNC(ultraAssessment);
     };
@@ -141,9 +141,9 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
-        items[] = {"kat_ultrasound", "kat_reboa"};
+        items[] = {"kat_reboa"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(imaging),false)]) && (!(_patient getVariable [ARR_2(QQGVAR(reboa),false)])));
-        consumeItem = 0;
+        consumeItem = 1;
         callbackSuccess = QFUNC(reboaApply);
     };
     class ReboaAdvancement: BasicBandage {
@@ -178,13 +178,13 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Pericardial_Tap_Use);
         displayNameProgress = CSTRING(Pericardial_Tap_Action);
         category = "surgery";
-        treatmentLocations = QGVAR(intermediateTime);
+        treatmentLocations = QGVAR(surgicalLocation);
         allowedSelections[] = {"Body"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"kat_ultrasound"};
-        condition = "";
+        condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(imaging),false)]);
         consumeItem = 0;
         callbackSuccess = QFUNC(pericardialTap);
     };

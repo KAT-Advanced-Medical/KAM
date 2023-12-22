@@ -32,6 +32,8 @@ _surgicalBlock set [5, 1];
 _patient setVariable [QGVAR(surgicalBlock), _surgicalBlock, true];
 _patient setVariable [QGVAR(reboa), true, true];
 
+_patient setVariable [QGVAR(imaging), false, true];
+
 [_patient] call ACEFUNC(medical_status,updateWoundBloodLoss);
 
 [_patient] call EFUNC(misc,updateDamageEffects);
