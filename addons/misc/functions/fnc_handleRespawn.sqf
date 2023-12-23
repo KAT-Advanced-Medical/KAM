@@ -27,6 +27,7 @@ _unit setVariable [QEGVAR(airway,obstruction), false, true];
 _unit setVariable [QEGVAR(airway,airway), false, true];
 _unit setVariable [QEGVAR(airway,occluded), false, true];
 _unit setVariable [QEGVAR(airway,overstretch), false, true];
+_unit setVariable [QEGVAR(airway,wasOccluded), false];
 KAT_forceWakeup = false;
 _unit setVariable [QEGVAR(airway,recovery), false, true];
 _unit setVariable [QEGVAR(airway,airway_item), "", true];
