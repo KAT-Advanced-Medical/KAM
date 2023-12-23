@@ -31,17 +31,6 @@ private _fnc_arrayToRemoveInvItem = {
     } foreach _array;
 };
 
-private _fnc_getContainer = {
-    params ["_containerType"];
-
-    switch (_containerType) do {
-        case 1: {"uniform"};
-        case 2: {"vest"};
-        case 3: {"backpack"};
-        default {""};
-    };
-};
-
 private _ammoCount = [_unit, _item, true] call FUNC(getMagazineAmmoCounts);
 private _slotArray = [];
 private _highestAmmoCount = -1;

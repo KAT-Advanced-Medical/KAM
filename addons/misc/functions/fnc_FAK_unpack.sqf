@@ -98,15 +98,16 @@ if (_itemType == "Item") exitWith {
 
 // ----- Handling for magazine -----
 
-private _ammoCount = [_unit, _item] call FUNC(getMagazineAmmoCounts);
-_unit removeItem _item;
+private _ammoCount = [_unit, _item, true] call FUNC(getMagazineAmmoCounts);
 private _lowestAmmoCount = 257;
+private _containerFAK = "";
 {
-    private _checkedArray = [_x, _type] call FUNC(FAK_ammoToArray);
+    private _checkedArray = [(_x select 0), _type] call FUNC(FAK_ammoToArray);
 
-    if (_x < _lowestAmmoCount && (_slot == 0 || (_slot > 0 && {_checkedArray select (_slot - 1)}))) then { // Get emptiest FAK
+    if ((_x select 0) < _lowestAmmoCount && (_slot == 0 || (_slot > 0 && {_checkedArray select (_slot - 1)}))) then { // Get emptiest FAK
         _slotArray = _checkedArray;
-        _lowestAmmoCount = _x;
+        _lowestAmmoCount = _x select 0;
+        _containerFAK = _x select 1;
     };
 } forEach _ammoCount;
 
@@ -118,13 +119,55 @@ if (_slot > 0) then {
     private _remaining = [_slotArray] call FUNC(FAK_arrayToAmmo);
 
     if (_remaining > 0 || !_removeOnEmptyCondition) then {
-        [_unit, _FAKToAdd, "", _remaining] call ACEFUNC(common,addToInventory);
+        switch (_containerFAK) do {
+            case "Uniform": { 
+                uniformContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount]; // We need to use this cause "removeItem" targets the first item with the name it findes.
+                uniformContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, _remaining]; // We are using this to place the new FAK in the same container as the old one.
+            };
+
+            case "Vest": { 
+                vestContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
+                vestContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, _remaining];
+            };
+
+            case "Backpack": { 
+                backpackContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
+                backpackContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, _remaining];
+            };
+        };
     };
 
     [_unit, (_itemList select (_slot - 1)), _container] call _fnc_arrayToInvItem;
 } else {
+
+    switch (_containerFAK) do { // Remove switch for the correct FAK "removeItem" always uses the first one not always the correct / selected one.
+        case "Uniform": { 
+            uniformContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
+        };
+
+        case "Vest": { 
+            vestContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
+        };
+
+        case "Backpack": { 
+            backpackContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
+        };
+    };
+
     if !(_removeOnEmptyCondition) then {
-        [_unit, _FAKToAdd, "", 0] call ACEFUNC(common,addToInventory);
+        switch (_containerFAK) do { // We need this switch to add the empty FAK in the same container as old one. 
+            case "Uniform": { 
+                uniformContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, 0]; 
+            };
+
+            case "Vest": { 
+                vestContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, 0];
+            };
+
+            case "Backpack": { 
+                backpackContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, 0];
+            };
+        };
     };
 
     {
