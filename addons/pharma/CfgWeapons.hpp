@@ -114,6 +114,7 @@ class CfgWeapons {
     };
     class kat_norepinephrine: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Norep_Box_Display);
         picture = QPATHTOF(ui\norep.paa);
         model = QPATHTOF(models\vial\vial_01.p3d);
