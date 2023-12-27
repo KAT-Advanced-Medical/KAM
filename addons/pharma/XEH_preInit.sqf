@@ -609,4 +609,13 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(painkillerStack),
+    "CHECKBOX",
+    [LLSTRING(SETTING_painkillerStack), LLSTRING(SETTING_painkillerStack_DESC)],
+    CBA_SETTINGS_CAT,
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
