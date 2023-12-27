@@ -27,7 +27,7 @@ private _count1 = [_patient, "Painkillers"] call ACEFUNC(medical_status,getMedic
 [_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), _classname]] call ACEFUNC(medical_treatment,addToLog);
 [_patient] call EFUNC(circulation,wrongBloodTreatment);
 if (_count1 > 0) then {
-    exitWith {[player, "Painkillers", 90, 600, 10, 0, -5] call ace_medical_status_fnc_addMedicationAdjustment};
+    exitWith {[_patient, "Painkillers", 90, 600, 10, 0, -5] call ace_medical_status_fnc_addMedicationAdjustment};
 } else {
     [QGVAR(medicationLocal), [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
 };
