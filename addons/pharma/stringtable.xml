@@ -2874,5 +2874,11 @@
             <Portuguese>Permite que certos medicamentos modifiquem a Stamina (vanilla/fadiga avançada) como efeito colateral</Portuguese>
             <Spanish>Permitir que ciertos medicamentos modifiquen la resistencia (fatiga convencional/avanzada) como efecto secundario</Spanish>
         </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_painkillerStack">
+            <English>Painkiller Pain Suppression Stacking</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_painkillerStack_DESC">
+            <English>If Enabled, painkillers will not stack their pain suppression but will still have all the side effects </English>
+        </Key>
     </Package>
 </Project>
