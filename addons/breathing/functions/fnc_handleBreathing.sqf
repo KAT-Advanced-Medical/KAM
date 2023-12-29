@@ -67,7 +67,7 @@ if (!local _unit) then {
     if (GVAR(SpO2_cardiacActive)) then {
         private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
 
-        if (GVAR(SpO2_cardiacValue) >= _status) then {
+        if (GVAR(SpO2_cardiacValue) =< _status) then {
             if ((_ht findIf {_x isEqualTo "hypox"}) == -1) then {
                 _ht pushBack "hypox";
 
