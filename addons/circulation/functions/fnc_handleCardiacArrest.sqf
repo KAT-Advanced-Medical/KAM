@@ -89,7 +89,7 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
             {
                 params ["_unit"];
 
-                if (!((count(_unit getVariable [QGVAR(ht), []])) == 0)) exitWith{};
+                if (!((count(_unit getVariable [QGVAR(ht), []])) == 0)) exitWith {};
 
                 if (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then { // Don't deteriorate during CPR
                     // chance to deteriorate straight into asystole (PEA)
@@ -128,7 +128,7 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
             {
                 params ["_unit"];
 
-                if (!((count(_unit getVariable [QGVAR(ht), []])) == 0)) exitWith{};
+                if (!((count(_unit getVariable [QGVAR(ht), []])) == 0)) exitWith {};
 
                 if (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then { // Don't deteriorate during CPR
                     if (_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 3) then {// if VF skip PEA
