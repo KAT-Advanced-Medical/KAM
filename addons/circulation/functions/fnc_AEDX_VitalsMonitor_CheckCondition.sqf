@@ -49,4 +49,4 @@ switch (_AEDOrigin) do {
 };
 
 if (_exit) exitWith {false};
-_condition && !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]);
+_condition && !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) && (objectParent _patient isEqualTo objectParent _medic);

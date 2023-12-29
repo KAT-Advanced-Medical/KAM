@@ -43,7 +43,7 @@
             <French>%1 a administré un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha somministrato %2</Italian>
-            <Japanese>%1 は%2を注入しました</Japanese>
+            <Japanese>%1 が%2を注入した</Japanese>
             <Portuguese>%1 administrou %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_inject_log">
@@ -58,7 +58,7 @@
             <French>%1 a injecté un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha iniettato %2</Italian>
-            <Japanese>%1 は%2を注射しました</Japanese>
+            <Japanese>%1 が%2を注射した</Japanese>
             <Portuguese>%1 injetou %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_use_log">
@@ -73,7 +73,7 @@
             <French>%1 a utilisé un(e) %2</French>
             <Turkish>% 1,% 2 eklendi</Turkish>
             <Italian>%1 ha usato %2</Italian>
-            <Japanese>%1 は%2を使用しました</Japanese>
+            <Japanese>%1 が%2を使用した</Japanese>
             <Portuguese>%1 usou %2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_breath_check">
@@ -85,7 +85,7 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の吐息は荒々しく金属臭がします</Japanese>
+            <Japanese>患者の吐息は荒々しく金属臭がする</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
             <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
         </Key>
@@ -98,7 +98,7 @@
             <French>L'haleine du patient est mauvaise et métallique</French>
             <Korean>환자의 호흡이 거칠고 쇠같습니다.</Korean>
             <German>Der Atem des Patienten ist rau und metallisch</German>
-            <Japanese>患者の吐息は荒々しく金属臭がします</Japanese>
+            <Japanese>患者の吐息は荒々しく金属臭がする</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
             <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
         </Key>
@@ -111,7 +111,7 @@
             <French>L'haleine du patient est légèrement fruitée</French>
             <Korean>환자의 호흡에서 과일향이 약간 납니다</Korean>
             <German>Der Atem des Patienten ist leicht fruchtig</German>
-            <Japanese>患者の吐息は少し果物臭がします</Japanese>
+            <Japanese>患者の吐息は少し果物臭がする</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
             <Portuguese>O hálito do paciente é ligeiramente frutado</Portuguese>
         </Key>
@@ -163,7 +163,7 @@
             <French>Vérifier la fracture</French>
             <Korean>골절 검사</Korean>
             <German>Fraktur prüfen</German>
-            <Japanese>骨折を確認</Japanese>
+            <Japanese>骨折を診断</Japanese>
             <Spanish>Revisar fractura</Spanish>
             <Portuguese>Verificar fratura</Portuguese>
         </Key>
@@ -215,7 +215,7 @@
             <French>%1 présent sur %2</French>
             <Korean>%2 은(는) 현재 %1 상태이다.</Korean>
             <German>%1 vorhanden auf %2</German>
-            <Japanese>%1 が%2に存在します</Japanese>
+            <Japanese>%2に%1がある</Japanese>
             <Spanish>%1 presente en %2</Spanish>
             <Portuguese>%1 presente em %2</Portuguese>
         </Key>
@@ -228,7 +228,7 @@
             <French>%1 %2 la fracture sur le %3</French>
             <Korean>%1 은(는) %3 의 골절을 %2 (으)로 수행하였습니다</Korean>
             <German>%1 %2 des Bruches an dem %3</German>
-            <Japanese>%1 は%3の骨折に%2しました</Japanese>
+            <Japanese>%1 が%3の骨折を%2</Japanese>
             <Spanish>%1 %2 la fractura sobre el/la %3</Spanish>
             <Portuguese>%1 %2 a fratura sobre %3</Portuguese>
         </Key>
@@ -241,7 +241,7 @@
             <French>%1 a effectuée une incision sur le %2</French>
             <Korean>%1 이(가) %2 을(를) 절개했습니다</Korean>
             <German>%1 hat einen Einschnitt an dem %2 vorgenommen</German>
-            <Japanese>%1 は%2を切開しました</Japanese>
+            <Japanese>%1 が%2を切開した</Japanese>
             <Spanish>%1 hizo una incisión sobre el/la %2</Spanish>
             <Portuguese>%1 fez uma incisão em %2</Portuguese>
         </Key>
@@ -254,7 +254,7 @@
             <French>Echec de l'action chirurgicale</French>
             <Korean>수술 실패</Korean>
             <German>Chirurgische Maßnahme fehlgeschlagen</German>
-            <Japanese>手術に失敗しました</Japanese>
+            <Japanese>手術に失敗した</Japanese>
             <Spanish>La acción quirúrgico falló</Spanish>
             <Portuguese>Falha na ação cirúrgica</Portuguese>
         </Key>
@@ -279,7 +279,7 @@
             <French>Utilisé pour inciser et débrider les plaies</French>
             <Korean>절개 부위를 생성하고 상처를 제거하는 데 사용됩니다.</Korean>
             <German>Für das Durchführen von Inzisionen</German>
-            <Japanese>切開と創縁切除に使用する</Japanese>
+            <Japanese>切開するのに使用される</Japanese>
             <Spanish>Usado para crear incisiones y desbridar heridas</Spanish>
             <Polish>Służy do tworzenia nacięć i oczyszczania ran</Polish>
             <Portuguese>Usado para criar incisões e desbridar feridas</Portuguese>
@@ -318,7 +318,7 @@
             <French>Utilisé pour séparer les bords d'une plaie et exposer les factures</French>
             <Korean>골절 확장 및 노출하는 데 사용됩니다.</Korean>
             <German>Zur Erweiterung und Freilegung von Frakturen</German>
-            <Japanese>切開口を広げ骨折部を露出させるために使用する</Japanese>
+            <Japanese>切開口を広げ骨折部を露出させるために使用される</Japanese>
             <Spanish>Usado para expandir y exponer heridas</Spanish>
             <Polish>Służy do rozszerzania i odsłonień złamań</Polish>
             <Portuguese>Usado para expandir e expor fraturas</Portuguese>
@@ -370,7 +370,7 @@
             <French>Utilisé pour clamper les fractures comminutives</French>
             <Korean>분쇄 골절을 클램프하는 데 사용됩니다</Korean>
             <German>Zum Abklemmen von Trümmerfrakturen</German>
-            <Japanese>粉砕骨折を留めるために使用する</Japanese>
+            <Japanese>粉砕骨折を留めるために使用される</Japanese>
             <Spanish>Usada para sujetar las fracturas conminutas</Spanish>
             <Polish>Służy do zaciskania skomplikowanych złamań</Polish>
             <Portuguese>Usado para fixar fraturas cominutivas</Portuguese>
@@ -384,7 +384,7 @@
             <French>Clamper la fracture</French>
             <Korean>골절 클램프하기</Korean>
             <German>Klammern der Fraktur</German>
-            <Japanese>骨折をクランプ</Japanese>
+            <Japanese>骨折をクランプする</Japanese>
             <Spanish>Alinear trozos</Spanish>
             <Portuguese>Fixar fratura</Portuguese>
         </Key>
@@ -474,7 +474,7 @@
             <French>Utilisé pour panser et sceller compètement les plaies</French>
             <Korean>상처를 완전히 치료하고 봉합하는 데 사용됩니다</Korean>
             <German>Zum vollständigen Verbinden und Abdichten von Wunden</German>
-            <Japanese>傷を完全に包んで密封する陰圧閉鎖療法のために使用する</Japanese>
+            <Japanese>傷を完全に包んで密封する陰圧閉鎖療法のために使用される</Japanese>
             <Spanish>Usado para vendar y sellar heridas completamente</Spanish>
             <Polish>Używany do całkowitego uzdrowienia ran</Polish>
             <Portuguese>Usado para enfaixar e selar feridas completamente</Portuguese>
@@ -553,7 +553,7 @@
             <French>Autorise les fractures avancées</French>
             <Korean>고급 골절 활성화</Korean>
             <German>Aktiviert erweiterte Frakturen</German>
-            <Japanese>高度な骨折を有効にします</Japanese>
+            <Japanese>高度な骨折を有効化</Japanese>
             <Spanish>Permite fracturas avanzadas</Spanish>
             <Portuguese>Permite fraturas avançadas</Portuguese>
         </Key>
@@ -598,7 +598,7 @@
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
             <Korean>폐쇄정복을 실패할 확률입니다. 기본값은 10%</Korean>
-            <Japanese>非観血的整復術の失敗率を設定します。デフォルト値は10%です</Japanese>
+            <Japanese>非観血的整復術の失敗率を設定します。 デフォルト値は10%です</Japanese>
             <German> Legt die Chance fest, dass die geschlossene Reduktion fehlschlägt. Standard: 10%</German>
             <Portuguese>Probabilidade de falha na redução fechada. Valor padrão 10%</Portuguese>
             <French>Chance que la réduction fermée échoue. Valeur par défaut à 10%</French>
@@ -759,7 +759,7 @@
             <French>Temps pour vérifier une fracture</French>
             <Korean>골절 검사 시간</Korean>
             <German>Zeit zur Prüfung einer Fraktur</German>
-            <Japanese>骨折確認の所要時間</Japanese>
+            <Japanese>骨折診断の所要時間</Japanese>
             <Spanish>Tiempo para analizar una fractura</Spanish>
             <Portuguese>Duração da análise de fratura</Portuguese>
         </Key>
@@ -772,7 +772,7 @@
             <French>Niveau médical requis pour vérifier une fracture</French>
             <Korean>골절 검사를 하는 데 필요한 의료 레벨 수준</Korean>
             <German>Erforderliches medizinisches Training für die Prüfung einer Fraktur</German>
-            <Japanese>骨折を確認するための許可</Japanese>
+            <Japanese>骨折診断の許可</Japanese>
             <Spanish>Nivel médico requerido para analizar la fractura de alguien</Spanish>
             <Portuguese>Nível médico necessário para analisar a fratura de alguém</Portuguese>
         </Key>
@@ -824,7 +824,7 @@
             <French>Lieu des réductions fermées</French>
             <Korean>폐쇄정복 장소</Korean>
             <German>Ort für die geschlossene Reduktion</German>
-            <Japanese>非観血的整復の使用可能場所</Japanese>
+            <Japanese>非観血的整復の可能な場所</Japanese>
             <Spanish>Zona para reducciones cerradas</Spanish>
             <Portuguese>Locação para reduções fechadas</Portuguese>
         </Key>
@@ -837,7 +837,7 @@
             <French>Lieu des réductions ouvertes / chirurgies</French>
             <Korean>개방정복 및 수술 장소</Korean>
             <German>Ort für die offene Reduktion/chirurgischer Eingriffe</German>
-            <Japanese>観血的整復術・手術の使用可能場所</Japanese>
+            <Japanese>観血的整復術・手術の可能な場所</Japanese>
             <Spanish>Zona para reducciones abiertas/Acciones quirúrgicas</Spanish>
             <Portuguese>Locação para reduções abertas/cirúrgicas</Portuguese>
         </Key>
@@ -863,7 +863,7 @@
             <French>exposé(e)</French>
             <Korean>노출됨</Korean>
             <German>freigelegt</German>
-            <Japanese>露出した</Japanese>
+            <Japanese>露出させた</Japanese>
             <Spanish>expuesto/a</Spanish>
             <Portuguese>exposto(a)</Portuguese>
         </Key>
@@ -876,7 +876,7 @@
             <French>irrigué(e)</French>
             <Korean>세척됨</Korean>
             <German>gespült</German>
-            <Japanese>洗浄した</Japanese>
+            <Japanese>灌注した</Japanese>
             <Spanish>irrigado/a</Spanish>
             <Portuguese>irrigado(a)</Portuguese>
         </Key>
@@ -941,7 +941,7 @@
             <French>Temps pour appliquer un pansement par pression négative</French>
             <Korean>음압상처치료 적용 시간</Korean>
             <German>Zeit zum Anlegen eines NPWT-Verbandes</German>
-            <Japanese>NPWT被覆の使用時間</Japanese>
+            <Japanese>NPWT被覆の所要時間</Japanese>
             <Spanish>Tiempo para colocar un vendaje al vacío</Spanish>
             <Portuguese>Duração do aplique de curativo a vácuo</Portuguese>
         </Key>
@@ -1007,7 +1007,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \nUnconsciousness Required for Surgery: Surgery requires patient to be unconscious. \nNo Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \nSurgery Anesthesia: Patient stays awake during surgery if given Etomidate, if not they will go into CA.</English>
-            <Japanese>意識喪失あり: 手術時に麻酔と鎮静剤を使用しないと、心停止による意識喪失が発生します。 \n無意識状態が必要: 手術するには患者が意識を失っていることが必要になります。 \n意識喪失なし: 手術時に意識喪失や痛みが発生しなくなります。 \n手術麻酔: エトミデートを投与すると、手術中も患者が起きたままになります。</Japanese>
+            <Japanese>手術で意識喪失する: 麻酔と鎮静剤を使用しないで手術すると、心停止が発生し意識喪失します。 \n手術に無意識を要求: 手術するには患者が意識を失っていることが必要になります。 \n手術による意識喪失なし: 手術で意識喪失しなくなりますが、痛みが発生します。 \n手術を麻酔下で行う: エトミデートを投与すると、手術中も患者が起きたままになります。投与しない場合は心停止します。</Japanese>
             <Spanish>La cirugía provoca inconsciencia: La cirugía sin anestesia ni sedación provoca inconsciencia por IC. \nInconsciencia necesaria para la cirugía: La cirugía requiere que el paciente esté inconsciente. \nLa cirugía no provoca inconsciencia: La cirugía no induce inconsciencia, causa dolor. \nAnestesia quirúrgica: El paciente permanece despierto durante la cirugía si se le administra etomidato.</Spanish>
             <French>La chirurgie provoque une perte de conscience: La chirurgie sans anesthésie ni sédation entraîne une perte de conscience due à l'arrêt cardiaque. \nInconscience requise pour la chirurgie: la chirurgie nécessite que le patient soit inconscient. \nPas d'inconscience due à la chirurgie: la chirurgie n'induit pas d'inconscience, elle provoque de la douleur. \nAnesthésie chirurgicale: le patient reste éveillé pendant la chirurgie s'il reçoit de l'étomidate.</French>
             <Korean>수술로 인해 의식불명 발생: 마취 및 진정제 없이 수술을 하면 심정지로 인해 의식을 잃습니다.\n수술에 필요한 의식불명: 수술을 하려면 환자가 의식을 잃어야 합니다.\n수술 중 의식불명 발생 없음: 수술이 의식불명을 유발시키지 않지만 통증을 발생시킵니다.\n수술 마취: 에토미데이트를 투여하면 환자는 수술 중 깨어 있게 됩니다.</Korean>
@@ -1016,7 +1016,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
-            <Japanese>意識喪失あり</Japanese>
+            <Japanese>手術で意識喪失する</Japanese>
             <Spanish>La cirugía causa inconsciencia</Spanish>
             <French>La chirurgie provoque une perte de conscience</French>
             <Korean>수술로 인해 의식불명 발생</Korean>
@@ -1026,7 +1026,7 @@
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
             <Spanish>Se requiere inconsciencia para la cirugía</Spanish>
-            <Japanese>無意識状態が必要</Japanese>
+            <Japanese>手術に無意識を要求</Japanese>
             <French>Nécessite un état inconscient</French>
             <Korean>수술에 필요한 의식불명</Korean>
             <German>Für die Operation ist Bewusstlosigkeit erforderlich</German>
@@ -1034,7 +1034,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
-            <Japanese>意識喪失なし</Japanese>
+            <Japanese>手術で意識喪失しない</Japanese>
             <Spanish>No se pierde la consciencia por la cirugía</Spanish>
             <French>Pas d'inconscience due à la chirurgie</French>
             <Korean>수술 중 의식불명 발생 없음</Korean>
@@ -1043,7 +1043,7 @@
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
-            <Japanese>手術麻酔</Japanese>
+            <Japanese>手術を麻酔下で行う</Japanese>
             <Spanish>Anestesia quirúrgica</Spanish>
             <French>Anesthésie chirurgicale</French>
             <Korean>수술 마취</Korean>
