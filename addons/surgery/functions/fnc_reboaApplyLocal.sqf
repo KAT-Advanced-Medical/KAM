@@ -6,20 +6,18 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Body Part <STRING>
  *
  * Return Value:
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_reboaApplyLocal
+ * [player, cursorObject] call kat_surgery_fnc_reboaApplyLocal
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart"];
+params ["_medic", "_patient"];
 
-private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _tourniquets = GET_TOURNIQUETS(_patient);
 private _surgicalBlock = _patient getVariable [QGVAR(surgicalBlock), [0,0,0,0,0,0]];
 

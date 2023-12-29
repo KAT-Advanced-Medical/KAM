@@ -63,7 +63,6 @@ class CfgWeapons {
         picture = QPATHTOF(ui\ultra.paa);
         model = "\A3\Props_F_Exp_A\Military\Equipment\Tablet_02_F.p3d";
         descriptionShort = CSTRING(Ultra_DescShort);
-        descriptionUse = CSTRING(Ultra_DescShort);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 5;
         };
@@ -74,7 +73,6 @@ class CfgWeapons {
         picture = QPATHTOF(ui\reboa.paa);
         model = "\A3\Structures_F_Heli\Items\Electronics\HDMICable_01_F.p3d";
         descriptionShort = CSTRING(Reboa_DescShort);
-        descriptionUse = CSTRING(Reboa_DescUse);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };

@@ -6,17 +6,16 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Body Part <STRING>
  *
  * Return Value:
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_pericardialTap
+ * [player, cursorObject] call kat_surgery_pericardialTap
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart"];
+params ["_medic", "_patient"];
 
-[QGVAR(pericardialTap), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+[QGVAR(pericardialTap), [_medic, _patient], _patient] call CBA_fnc_targetEvent;

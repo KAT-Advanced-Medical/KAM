@@ -118,7 +118,7 @@ class ACE_Medical_Treatment_Actions {
         callbackProgress = QFUNC(npwtTreatmentProgress);
         callbackSuccess = "";
     };
-    class UltraAssessment: BasicBandage {
+    class Ultrasound: BasicBandage {
         displayName = CSTRING(Ultra_Use);
         displayNameProgress = CSTRING(Ultra_Action);
         category = "surgery";
@@ -137,7 +137,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Reboa_Action);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
-        allowedSelections[] = {"LeftLeg"};
+        allowedSelections[] = {"LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
@@ -146,7 +146,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         callbackSuccess = QFUNC(reboaApply);
     };
-    class ReboaAdvancement: BasicBandage {
+    class ReboaAdvancement: ReboaPlacement {
         displayName = CSTRING(Reboa_Deep_Use);
         displayNameProgress = CSTRING(Reboa_Deep_Action);
         category = "surgery";
@@ -160,7 +160,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 0;
         callbackSuccess = QFUNC(reboaDeepApply);
     };
-    class ReboaRemoval: BasicBandage {
+    class ReboaRemoval: ReboaPlacement {
         displayName = CSTRING(Reboa_Remove_Use);
         displayNameProgress = CSTRING(Reboa_Remove_Action);
         category = "surgery";
@@ -174,7 +174,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 0;
         callbackSuccess = QFUNC(reboaRemove);
     };
-    class PericardialTap: BasicBandage {
+    class PericardialTap: ReboaPlacement {
         displayName = CSTRING(Pericardial_Tap_Use);
         displayNameProgress = CSTRING(Pericardial_Tap_Action);
         category = "surgery";

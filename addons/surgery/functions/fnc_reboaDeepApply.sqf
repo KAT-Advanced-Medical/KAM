@@ -6,17 +6,16 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Body Part <STRING>
  *
  * Return Value:
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_reboaDeepApply
+ * [player, cursorObject] call kat_surgery_reboaDeepApply
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart"];
+params ["_medic", "_patient"];
 
-[QGVAR(reboaDeepApply), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+[QGVAR(reboaDeepApply), [_medic, _patient], _patient] call CBA_fnc_targetEvent;

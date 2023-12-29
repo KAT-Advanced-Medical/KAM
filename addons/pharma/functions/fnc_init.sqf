@@ -83,7 +83,7 @@ if (GVAR(kidneyAction)) then {
             _unit setVariable [QGVAR(kidneyPressure), false, true];
             _unit setVariable [QGVAR(kidneyFail), false, true];
 
-            _ht deleteAt (_ht find "hydro");
+            _ht deleteAt (_ht find "hydrogen");
             _unit setVariable [QEGVAR(circulation,ht), _ht, true];
         };
 
@@ -99,8 +99,8 @@ if (GVAR(kidneyAction)) then {
                 private _random = random 1;
 
                 if (_random >= 0.5) then {
-                    if ((_ht findIf {_x isEqualTo "hydro"}) == -1) then {
-                        _ht pushBack "hydro";
+                    if ((_ht findIf {_x isEqualTo "hydrogen"}) == -1) then {
+                        _ht pushBack "hydrogen";
 
                         if(_unit getVariable[QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                             [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;

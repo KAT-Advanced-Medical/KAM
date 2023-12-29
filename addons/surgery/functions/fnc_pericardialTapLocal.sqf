@@ -6,21 +6,20 @@
  * Arguments:
  * 0: Medic <OBJECT>
  * 1: Patient <OBJECT>
- * 2: Body Part <STRING>
  *
  * Return Value:
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_ultraAssessmentLocal
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_pericardialTapLocal
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart"];
+params ["_medic", "_patient"];
 
 private _ht = _patient getVariable [QEGVAR(circulation,ht), []];
-_ht deleteAt (_ht find "tampo");
+_ht deleteAt (_ht find "tamponade");
 _patient setVariable [QEGVAR(circulation,ht), _ht, true];
 
 _patient setVariable [QEGVAR(circulation,effusion), 0, true];

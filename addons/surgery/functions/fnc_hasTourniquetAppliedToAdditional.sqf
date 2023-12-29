@@ -1,6 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Glowbal
+ * Modified: Mazinski
  * Checks if the unit has a tourniquet applied on the specified body part.
  *
  * Arguments:
@@ -11,7 +12,7 @@
  * Has Tourniquet Been Applied <BOOL>
  *
  * Example:
- * [player, "leftleg"] call ace_medical_treatment_fnc_hasTourniquetAppliedTo
+ * [player, "leftleg"] call kat_surgery_fnc_hasTourniquetAppliedToAdditional
  *
  * Public: No
  */

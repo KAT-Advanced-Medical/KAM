@@ -160,8 +160,8 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
                             if (_effusionTarget == 4) exitWith {
                                 private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
 
-                                if ((_ht findIf {_x isEqualTo "tampo"}) == -1) then {
-                                    _ht pushBack "tampo";
+                                if ((_ht findIf {_x isEqualTo "tamponade"}) == -1) then {
+                                    _ht pushBack "tamponade";
 
                                     if (_unit getVariable[QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;

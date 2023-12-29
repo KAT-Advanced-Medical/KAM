@@ -68,8 +68,8 @@ if (!local _unit) then {
         private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
 
         if (GVAR(SpO2_cardiacValue) >= _status) then {
-            if ((_ht findIf {_x isEqualTo "hypox"}) == -1) then {
-                _ht pushBack "hypox";
+            if ((_ht findIf {_x isEqualTo "hypoxia"}) == -1) then {
+                _ht pushBack "hypoxia";
 
                 if (_unit getVariable[QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                     [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
@@ -78,7 +78,7 @@ if (!local _unit) then {
                 _unit setVariable [QEGVAR(circulation,ht), _ht, true];
             };
         } else {
-            _ht deleteAt (_ht find "hypox");
+            _ht deleteAt (_ht find "hypoxia");
             _unit setVariable [QEGVAR(circulation,ht), _ht, true];
         };
     };
