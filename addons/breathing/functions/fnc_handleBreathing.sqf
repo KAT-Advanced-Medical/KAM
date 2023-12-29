@@ -71,7 +71,7 @@ if (!local _unit) then {
             if ((_ht findIf {_x isEqualTo "hypox"}) == -1) then {
                 _ht pushBack "hypox";
 
-                if (_unit getVariable[QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                     [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
                 };
 
