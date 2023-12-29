@@ -140,7 +140,7 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
             [{
                 params ["_unit"];
 
-                if(_unit getVariable [QEGVAR(circulation,effusion), 0] > 0) then {
+                if (_unit getVariable [QEGVAR(circulation,effusion), 0] > 0) then {
                     // Try to deteriorate at set interval
                     [{
                         params ["_args", "_idPFH"];
@@ -149,7 +149,7 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
                         private _effusion = _unit getVariable [QEGVAR(circulation,effusion), 0];
 
                         // If patient is dead, already treated or has already deteriorated into advanced pneumothorax, kill the PFH
-                        if((_effusion == 0) || !(alive _unit) || (_effusion > 4)) exitWith {
+                        if ((_effusion == 0) || !(alive _unit) || (_effusion > 4)) exitWith {
                             [_idPFH] call CBA_fnc_removePerFrameHandler;
                         };
 
@@ -163,7 +163,7 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
                                 if ((_ht findIf {_x isEqualTo "tampo"}) == -1) then {
                                     _ht pushBack "tampo";
 
-                                    if (_unit getVariable[QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                                    if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
                                         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
                                     };
 
