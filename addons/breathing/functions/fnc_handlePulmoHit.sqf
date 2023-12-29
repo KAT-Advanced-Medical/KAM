@@ -48,7 +48,7 @@ private _fnc_inflictAdvancedPneumothorax = {
                 params ["_args", "_idPFH"];
                 _args params ["_unit"];
 
-                if ((_unit getVariable[QGVAR(pneumothorax), 0]) == 4) then {
+                if ((_unit getVariable [QGVAR(pneumothorax), 0]) == 4) then {
                     private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
                     if ((_ht findIf {_x isEqualTo "tension"}) == -1) then {
                         _ht pushBack "tension";
