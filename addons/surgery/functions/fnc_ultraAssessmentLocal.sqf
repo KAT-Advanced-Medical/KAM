@@ -25,6 +25,7 @@ private _thorasic = LSTRING(Ultra_Airway_Normal);
 
 _patient setVariable [QGVAR(imaging), true, true];
 
+//Reads Thorasic Condition
 if ((_patient getVariable [QEGVAR(breathing,pneumothorax), 0]) != 0) then {
     _airway = LSTRING(Ultra_Thorasic_PTX);
 };
@@ -37,6 +38,8 @@ if (_patient getVariable [QEGVAR(breathing,tensionpneumothorax), false]) then {
     _airway = LSTRING(Ultra_Thorasic_Tension);
 };
 
+
+//Reads Cardiac Arrest Type, 4 and 3 are VT/VF and are output as "Shockable", 2 and 1 are PEA/Asystole and output as "Not Shockable", 0 is No Arrest
 switch (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0]) do {
     case 4: {
          _cardiac = LSTRING(Ultra_Cardiac_Shockable);
@@ -55,7 +58,7 @@ switch (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0]) do {
     };
 };
 
-[_patient, "quick_view", LSTRING(Ultra_Airway), [_airway]] call ace_medical_treatment_fnc_addToLog;
-[_patient, "quick_view", LSTRING(Ultra_Cardiac), [_cardiac]] call ace_medical_treatment_fnc_addToLog;
-[_patient, "quick_view", LSTRING(Ultra_Thorasic), [_thorasic]] call ace_medical_treatment_fnc_addToLog;
+[_patient, "quick_view", LSTRING(Ultra_Airway), [_airway]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "quick_view", LSTRING(Ultra_Cardiac), [_cardiac]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "quick_view", LSTRING(Ultra_Thorasic), [_thorasic]] call ACEFUNC(medical_treatment,addToLog);
 

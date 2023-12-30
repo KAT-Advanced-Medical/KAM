@@ -3,10 +3,10 @@ class ACE_Medical_Treatment_Actions {
     class CheckPulse;
     class ApplyTourniquet;
     class ApplyTourniquet: BasicBandage {
-        condition = QUOTE(!([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) && ([ARR_2(_patient,_bodyPart)] call FUNC(hasTourniquetAppliedToAdditional)));
+        condition = QUOTE(!([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) && ([ARR_2(_patient,_bodyPart)] call FUNC(hasAdditionalTourniquetAppliedTo)));
     };
     class RemoveTourniquet: ApplyTourniquet {
-        condition = QUOTE(([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) && ([ARR_2(_patient,_bodyPart)] call FUNC(hasTourniquetAppliedToAdditional)));
+        condition = QUOTE(([ARR_2(_patient,_bodyPart)] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) && ([ARR_2(_patient,_bodyPart)] call FUNC(hasAdditionalTourniquetAppliedTo)));
     };
     class CheckFracture: CheckPulse {
         displayName = CSTRING(fracture_check);

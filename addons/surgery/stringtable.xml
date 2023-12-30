@@ -512,7 +512,7 @@
             <English>Used to assess internal injuries</English>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Use">
-            <English>Conduct EFAST Assessment</English>
+            <English>Conduct Ultrasound Assessment</English>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Action">
             <English>Assessing</English>
@@ -576,6 +576,9 @@
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Action">
             <English>Performing</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Pericardial_Tap_Log">
+            <English>%1 performed a pericardial tap</English>
         </Key>
         <Key ID="STR_KAT_Surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>

@@ -5,7 +5,7 @@ PREP(fractureCheck);
 PREP(fractureSelect);
 PREP(fractureSelectLocal);
 PREP(getNPWTTime);
-PREP(hasTourniquetAppliedToAdditional);
+PREP(hasAdditionalTourniquetAppliedTo);
 PREP(incision);
 PREP(incisionLocal);
 PREP(init);

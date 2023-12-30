@@ -19,7 +19,7 @@
 params ["_medic", "_patient"];
 
 private _tourniquets = GET_TOURNIQUETS(_patient);
-private _surgicalBlock = _patient getVariable [QGVAR(surgicalBlock), [0,0,0,0,0,0]];
+private _surgicalBlock = GET_SURGICAL_TOURNIQUETS(_patient);
 
 _tourniquets set [4, CBA_missionTime];
 _tourniquets set [5, CBA_missionTime];

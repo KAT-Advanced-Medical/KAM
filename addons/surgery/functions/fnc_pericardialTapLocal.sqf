@@ -24,3 +24,6 @@ _patient setVariable [QEGVAR(circulation,ht), _ht, true];
 
 _patient setVariable [QEGVAR(circulation,effusion), 0, true];
 _patient setVariable [QGVAR(imaging), false, true];
+
+[_patient, "quick_view", LSTRING(Pericardial_Tap_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
+

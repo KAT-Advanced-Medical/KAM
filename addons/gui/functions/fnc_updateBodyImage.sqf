@@ -22,7 +22,7 @@ params ["_ctrlGroup", "_target", "_selectionN"];
 
 // Get tourniquets, damage, and blood loss for target
 private _tourniquets = GET_TOURNIQUETS(_target);
-private _surgicalBlock = _target getVariable [QEGVAR(surgery,surgicalBlock), [0, 0, 0, 0, 0, 0]];
+private _surgicalBlock = GET_SURGICAL_TOURNIQUETS(_target);
 private _fractures = GET_FRACTURES(_target);
 private _bodyPartDamage = _target getVariable [QACEGVAR(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0]];
 private _damageThreshold = GET_DAMAGE_THRESHOLD(_target);

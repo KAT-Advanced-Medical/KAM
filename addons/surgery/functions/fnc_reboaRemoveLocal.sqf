@@ -21,7 +21,7 @@ params ["_medic", "_patient", "_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _tourniquets = GET_TOURNIQUETS(_patient);
-private _surgicalBlock = _patient getVariable [QGVAR(surgicalBlock), [0,0,0,0,0,0]];
+private _surgicalBlock = GET_SURGICAL_TOURNIQUETS(_patient);
 
 _tourniquets set [1, 0];
 _tourniquets set [4, 0];
