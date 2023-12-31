@@ -21,6 +21,8 @@ class ACE_ADDON(Medical_Treatment) {
         alphaFactor = 0;
         // Max amount of pain the medication can remove
         maxRelief = 0;
+        // Reduction of damage from wounds
+        opioidRelief = 0;
 
         class Epinephrine {
             painReduce = 0;
@@ -33,6 +35,18 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             alphaFactor = 0.15;
             onOverDose = "";
+        };
+        class Morphine {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {-10, -20};
+            hrIncreaseNormal[] = {-10, -30};
+            hrIncreaseHigh[] = {-10, -35};
+            timeInSystem = 900;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            incompatibleMedication[] = {};
+            viscosityChange = -10;
+            opioidRelief = 0.9;
         };
         class Carbonate {
             painReduce = 0;
@@ -108,6 +122,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -10;
             onOverDose = "";
+            opioidRelief = 0.75;
         };
         class Ketamine {
             painReduce = 0.8;
@@ -132,14 +147,15 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
+            opioidRelief = 0.9;
         };
         class Painkillers {
-            painReduce = 0.3;
+            painReduce = 0.2;
             hrIncreaseLow[] = {0, 5};
             hrIncreaseNormal[] = {5, 10};
-            hrIncreaseHigh[] = {5, 15};
-            timeInSystem = 600;
-            timeTillMaxEffect = 90;
+            hrIncreaseHigh[] = {5, 10};
+            timeInSystem = 360;
+            timeTillMaxEffect = 60;
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = -5;
@@ -180,6 +196,7 @@ class ACE_ADDON(Medical_Treatment) {
             maxDose = 4;
             incompatibleMedication[]= {};
             onOverDose = "";
+            maxRelief = 0.6;
         };
         class EACA {
             painReduce = 0;
@@ -264,19 +281,20 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
+            maxRelief = 0.3;
         };
         class Penthrox {
-            painReduce = 0.4;
+            painReduce = 0.6;
             hrIncreaseLow[] = {-0, -5};
             hrIncreaseNormal[] = {-5, -10};
             hrIncreaseHigh[] = {-5, -15};
             timeInSystem = 300;
             timeTillMaxEffect = 20;
-            maxDose = 10;
+            maxDose = 4;
             incompatibleMedication[] = {};
             viscosityChange = 5;
             onOverDose = "";
-            maxRelief = 0.7;
+            maxRelief = 0.6;
         };
     };
 };
