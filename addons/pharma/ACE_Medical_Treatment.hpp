@@ -1,5 +1,27 @@
 class ACE_ADDON(Medical_Treatment) {
     class Medication {
+        // How much does the pain get reduced?
+        painReduce = 0;
+        // How much will the heart rate be increased when the HR is low (below 55)? {minIncrease, maxIncrease}
+        hrIncreaseLow[] = {0, 0};    // _heartRate < 55
+        hrIncreaseNormal[] = {0, 0}; // 55 <= _heartRate <= 110
+        hrIncreaseHigh[] = {0, 0};   // 110 < _heartRate
+
+        // How long until this medication has disappeared
+        timeInSystem = 120;
+        // How long until the maximum effect is reached
+        timeTillMaxEffect = 30;
+        // How many of this type of medication can be in the system before the patient overdoses?
+        maxDose = 4;
+        // Function to execute upon overdose. Arguments passed to call back are 0: unit <OBJECT>, 1: medicationClassName <STRING>
+        onOverDose = "";
+        // The viscosity of a fluid is a measure of its resistance to gradual deformation by shear stress or tensile stress. For liquids, it corresponds to the informal concept of "thickness". This value will increase/decrease the viscoty of the blood with the percentage given. Where 100 = max. Using the minus will decrease viscosity
+        viscosityChange = 0;
+        // How much does the medication constrict/dilate the patient's blood vessels?
+        alphaFactor = 0;
+        // Max amount of pain the medication can remove
+        maxRelief = 0;
+
         class Epinephrine {
             painReduce = 0;
             hrIncreaseLow[] = {10, 20};
@@ -122,6 +144,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
+            maxRelief = 0.5;
         };
         class Atropine {
             painReduce = 0;
@@ -243,16 +266,17 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
         };
         class Penthrox {
-            painReduce = 0.6;
+            painReduce = 0.4;
             hrIncreaseLow[] = {-0, -5};
             hrIncreaseNormal[] = {-5, -10};
             hrIncreaseHigh[] = {-5, -15};
             timeInSystem = 300;
-            timeTillMaxEffect = 10;
+            timeTillMaxEffect = 20;
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 5;
             onOverDose = "";
+            maxRelief = 0.7;
         };
     };
 };
