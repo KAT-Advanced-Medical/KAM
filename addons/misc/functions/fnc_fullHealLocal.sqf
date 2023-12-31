@@ -105,6 +105,7 @@ _unit setVariable [QACEGVAR(medical,peripheralResistance), 100, true];
 //KAT Pharmacy
 _unit setVariable [QACEGVAR(medical,ivBags), nil, true];
 _unit setVariable [QEGVAR(pharma,alphaAction), 1, true];
+_unit setVariable [QEGVAR(pharma,opioidFactor), 1, true];
 _unit setVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(pharma,IVpfh), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(pharma,active), false, true];
