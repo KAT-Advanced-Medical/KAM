@@ -25,7 +25,7 @@ if (ACE_Player != _target) exitWith {};
 
 private _opioidFactor = _target getVariable (QGVAR(opioidFactor), 0);
 if (_opioidFactor == 1) then {
-    _patient setVariable (QGVAR(opioidFactor), _opioidRelief, true);
+    _target setVariable (QGVAR(opioidFactor), _opioidRelief, true);
 };
 
 /// ChromAberration effect
