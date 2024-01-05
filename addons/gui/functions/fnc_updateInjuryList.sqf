@@ -217,7 +217,7 @@ switch (GET_FRACTURES(_target) select _selectionN) do {
 };
 
 // Display cyanosis in overview tab, only when head/arms are selected
-if (EGVAR(breathing,showCyanosis) && _selectionN in [0,2,3,4,5]) then {
+if (EGVAR(breathing,showCyanosis) && _selectionN in [0,2,3]) then {
     private _spO2 = 0;
 
     if (alive _target) then {

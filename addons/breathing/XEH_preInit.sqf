@@ -44,7 +44,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_SpO2_cardiacValue),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [5, 95, 75, 0],
+    [0, 100, 75, 0],
     true
 ] call CBA_Settings_fnc_init;
 
