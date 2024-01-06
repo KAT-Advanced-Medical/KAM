@@ -22,7 +22,7 @@ class ACE_ADDON(Medical_Treatment) {
         // Max amount of pain the medication can remove
         maxRelief = 0;
         // Reduction of damage from wounds
-        opioidRelief = 0;
+        opioidRelief = 1;
 
         class Epinephrine {
             painReduce = 0;
@@ -46,7 +46,7 @@ class ACE_ADDON(Medical_Treatment) {
             maxDose = 4;
             incompatibleMedication[] = {};
             viscosityChange = -10;
-            opioidRelief = 0.9;
+            opioidRelief = 1.2;
         };
         class Carbonate {
             painReduce = 0;
@@ -122,7 +122,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -10;
             onOverDose = "";
-            opioidRelief = 0.75;
+            opioidRelief = 1.5;
         };
         class Ketamine {
             painReduce = 0.8;
@@ -147,7 +147,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
-            opioidRelief = 0.9;
+            opioidRelief = 1.2;
         };
         class Painkillers {
             painReduce = 0.2;
