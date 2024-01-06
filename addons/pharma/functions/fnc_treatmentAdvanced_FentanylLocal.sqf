@@ -23,7 +23,7 @@ params ["_target", "_bodyPart", "_opioidRelief"];
 if !(alive _target) exitWith {};
 if (ACE_Player != _target) exitWith {};
 
-private _opioidFactor = _target getVariable (QGVAR(opioidFactor), 0);
+private _opioidFactor = _target getVariable [QGVAR(opioidFactor), 0];
 if (_opioidFactor == 1) then {
     _target setVariable (QGVAR(opioidFactor), _opioidRelief, true);
 };
