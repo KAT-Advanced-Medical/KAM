@@ -148,7 +148,7 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
 
                         private _effusion = _unit getVariable [QEGVAR(circulation,effusion), 0];
 
-                        // If patient is dead, already treated or has already deteriorated into advanced pneumothorax, kill the PFH
+                        // If patient is dead, already treated or has already deteriorated into full tamponade, kill the PFH
                         if ((_effusion == 0) || !(alive _unit) || (_effusion > 4)) exitWith {
                             [_idPFH] call CBA_fnc_removePerFrameHandler;
                         };
