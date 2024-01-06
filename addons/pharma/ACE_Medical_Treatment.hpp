@@ -281,7 +281,6 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
-            maxRelief = 0.3;
         };
         class Penthrox {
             painReduce = 0.6;
