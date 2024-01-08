@@ -891,17 +891,17 @@
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_IFAK">
             <English>(IFAK) Individual First Aid Kit</English>
-            <German>(IEHK) Individuelles Erste Hilfe Kit</German>
+            <German>(IFAK) Individuelles Erste Hilfe Kit</German>
             <Japanese>(IFAK) 個人用応急処置キット</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_MFAK">
             <English>(MFAK) Multiple First Aid Kit</English>
-            <German>(MEHK) Mehrfaches Erste Hilfe Kit</German>
+            <German>(MFAK) Mehrfaches Erste Hilfe Kit</German>
             <Japanese>(MFAK) 多用途応急処置キット</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_AFAK">
             <English>(AFAK) Advanced First Aid Kit</English>
-            <German>(EEHK) Erweitertes Erste Hilfe Kit</German>
+            <German>(AFAK) Erweitertes Erste Hilfe Kit</German>
             <Japanese>(AFAK) 高等応急処置キット</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container">
@@ -981,48 +981,84 @@
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Display">
             <English>Individual First Aid Kit</English>
-            <German>Individuelles Erste Hilfe Kit</German>
+            <German>Individuelles Erste Hilfe Kit (IFAK)</German>
             <Japanese>個人用応急処置キット (IFAK)</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_DESC">
             <English>The IFAK can be unpacked to provide useful medical items</English>
-            <German>Das IEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
+            <German>Das IFAK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
             <Japanese>IFAKは展開することで有用な医療品を入手出来る</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Display">
             <English>Multiple First Aid Kit</English>
-            <German>Mehrfaches Erste Hilfe Kit</German>
+            <German>Mehrfaches Erste Hilfe Kit (MFAK)</German>
             <Japanese>多用途応急処置キット (MFAK)</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_DESC">
             <English>The MFAK can be unpacked to provide useful medical items</English>
-            <German>Das MEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
+            <German>Das MFAK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
             <Japanese>MFAKは展開することで有用な医療品を入手出来る</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Display">
             <English>Advanced First Aid Kit</English>
-            <German>Erweitertes Erste Hilfe Kit</German>
+            <German>Erweitertes Erste Hilfe Kit (AFAK)</German>
             <Japanese>高度応急処置キット (AFAK)</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_DESC">
             <English>The AFAK can be unpacked to provide useful medical items</English>
-            <German>Das EEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
+            <German>Das AFAK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
             <Japanese>AFAKは展開することで有用な医療品を入手出来る</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Unpack">
             <English>IFAK</English>
-            <German>IEHK</German>
+            <German>IFAK</German>
             <Japanese>IFAK</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Unpack">
             <English>MFAK</English>
-            <German>MEHK</German>
+            <German>MFAK</German>
             <Japanese>MFAK</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Unpack">
             <English>AFAK</English>
-            <German>EEHK</German>
+            <German>AFAK</German>
             <Japanese>AFAK</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_DisplayItems">
+            <English>Display Slot Items</English>
+            <German>Zeige Taschen Gegenstände an</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_1_Hint">
+            <English>Slot 1:</English>
+            <German>Tasche 1:</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_2_Hint">
+            <English>Bandage Section:</English>
+            <German>Tasche 2:</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_3_Hint">
+            <English>Slot 3:</English>
+            <German>Tasche 3:</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_4_Hint">
+            <English>Slot 4:</English>
+            <German>Tasche 4:</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_5_Hint">
+            <English>Slot 5:</English>
+            <German>Tasche 5:</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_6_Hint">
+            <English>Slot 6:</English>
+            <German>Tasche 6:</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_7_Hint">
+            <English>Slot 7:</English>
+            <German>Tasche 7:</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_FAK_Slot_8_Hint">
+            <English>Slot 8:</English>
+            <German>Tasche 8:</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1">
             <English>Unpack Slot 1</English>

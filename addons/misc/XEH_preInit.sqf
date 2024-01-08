@@ -164,6 +164,16 @@ PREP_RECOMPILE_END;
     2
 ] call CBA_Settings_fnc_init;
 
+// Remove IFAK when empty
+[
+    QGVAR(IFAK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
 //IFAK Container
 [
     QGVAR(IFAK_Container),
@@ -174,14 +184,24 @@ PREP_RECOMPILE_END;
     2
 ] call CBA_fnc_addSetting;
 
-// Remove IFAK when empty
+//IFAK Slot Color
 [
-    QGVAR(IFAK_RemoveWhenEmpty),
-    "CHECKBOX",
-    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    QGVAR(IFAK_Slot_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    [true],
-    true
+    [1, 0.30, 0.30],
+    2
+] call CBA_fnc_addSetting;
+
+//IFAK Item Color
+[
+    QGVAR(IFAK_Item_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [0.67, 0.84, 0.90],
+    2
 ] call CBA_fnc_addSetting;
 
 //IFAK First Slot Item
@@ -248,16 +268,6 @@ PREP_RECOMPILE_END;
     }
 ] call CBA_Settings_fnc_init;
 
-//AFAK Container
-[
-    QGVAR(AFAK_Container),
-    "LIST",
-    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
-    2
-] call CBA_fnc_addSetting;
-
 // Remove AFAK when empty
 [
     QGVAR(AFAK_RemoveWhenEmpty),
@@ -266,6 +276,36 @@ PREP_RECOMPILE_END;
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     [true],
     true
+] call CBA_fnc_addSetting;
+
+//AFAK Container
+[
+    QGVAR(AFAK_Container),
+    "LIST",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)], //DO
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
+    2
+] call CBA_fnc_addSetting;
+
+//AFAK Slot Color
+[
+    QGVAR(AFAK_Slot_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [1, 0.96, 0.32],
+    2
+] call CBA_fnc_addSetting;
+
+//AFAK Item Color
+[
+    QGVAR(AFAK_Item_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [0.67, 0.84, 0.90],
+    2
 ] call CBA_fnc_addSetting;
 
 //AFAK First Slot Item
@@ -364,6 +404,16 @@ PREP_RECOMPILE_END;
     }
 ] call CBA_Settings_fnc_init;
 
+// Remove MFAK when empty
+[
+    QGVAR(MFAK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
 //MFAK Container
 [
     QGVAR(MFAK_Container),
@@ -374,14 +424,24 @@ PREP_RECOMPILE_END;
     2
 ] call CBA_fnc_addSetting;
 
-// Remove MFAK when empty
+//MFAK Slot Color
 [
-    QGVAR(MFAK_RemoveWhenEmpty),
-    "CHECKBOX",
-    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    QGVAR(MFAK_Slot_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    [true],
-    true
+    [0.56, 0.93, 0.56],
+    2
+] call CBA_fnc_addSetting;
+
+//MFAK Item Color
+[
+    QGVAR(MFAK_Item_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    [0.67, 0.84, 0.90],
+    2
 ] call CBA_fnc_addSetting;
 
 //MFAK First Slot Item
