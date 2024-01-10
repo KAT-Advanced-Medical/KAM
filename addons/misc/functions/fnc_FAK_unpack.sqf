@@ -42,6 +42,16 @@ private _fnc_getContainer = {
     };
 };
 
+private _fnc_getUnitContainer = {
+    params ["_container", "_unit"];
+
+    switch (_container) do {
+        case "Uniform": { uniformContainer _unit};
+        case "Vest": { vestContainer _unit};
+        case "Backpack": { backpackContainer _unit};
+    };
+};
+
 private _itemType = _item call BIS_fnc_itemType;
 _itemType = _itemType select 0;
 
@@ -113,61 +123,23 @@ private _containerFAK = "";
 
 if !(_lowestAmmoCount < 257) exitWith {};
 
+private _unitContainer = [_containerFAK, _unit] call _fnc_getUnitContainer;
+
+_unitContainer addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
+
 if (_slot > 0) then {
     _slotArray set [(_slot - 1), false];
     
     private _remaining = [_slotArray] call FUNC(FAK_arrayToAmmo);
 
     if (_remaining > 0 || !_removeOnEmptyCondition) then {
-        switch (_containerFAK) do {
-            case "Uniform": { 
-                uniformContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount]; // We need to use this cause "removeItem" targets the first item with the name it findes.
-                uniformContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, _remaining]; // We are using this to place the new FAK in the same container as the old one.
-            };
-
-            case "Vest": { 
-                vestContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
-                vestContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, _remaining];
-            };
-
-            case "Backpack": { 
-                backpackContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
-                backpackContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, _remaining];
-            };
-        };
+        _unitContainer addMagazineAmmoCargo [_FAKToAdd, 1, _remaining];
     };
 
     [_unit, (_itemList select (_slot - 1)), _container] call _fnc_arrayToInvItem;
 } else {
-
-    switch (_containerFAK) do { // Remove switch for the correct FAK "removeItem" always uses the first one not always the correct / selected one.
-        case "Uniform": { 
-            uniformContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
-        };
-
-        case "Vest": { 
-            vestContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
-        };
-
-        case "Backpack": { 
-            backpackContainer _unit addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
-        };
-    };
-
     if !(_removeOnEmptyCondition) then {
-        switch (_containerFAK) do { // We need this switch to add the empty FAK in the same container as old one. 
-            case "Uniform": { 
-                uniformContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, 0]; 
-            };
-
-            case "Vest": { 
-                vestContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, 0];
-            };
-
-            case "Backpack": { 
-                backpackContainer _unit addMagazineAmmoCargo [_FAKToAdd, 1, 0];
-            };
-        };
+        _unitContainer addMagazineAmmoCargo [_FAKToAdd, 1, 0];
     };
 
     {

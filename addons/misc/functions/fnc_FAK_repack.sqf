@@ -31,6 +31,16 @@ private _fnc_arrayToRemoveInvItem = {
     } foreach _array;
 };
 
+private _fnc_getUnitContainer = {
+    params ["_container", "_unit"];
+
+    switch (_container) do {
+        case "Uniform": { uniformContainer _unit};
+        case "Vest": { vestContainer _unit};
+        case "Backpack": { backpackContainer _unit};
+    };
+};
+
 private _ammoCount = [_unit, _item, true] call FUNC(getMagazineAmmoCounts);
 private _slotArray = [];
 private _highestAmmoCount = -1;
@@ -70,48 +80,18 @@ switch (_type) do {
     };
 };
 
-// _unit removeItem _item;
 [_unit, _itemList select (_slot - 1)] call _fnc_arrayToRemoveInvItem;
 
 _slotArray set [(_slot - 1), true];
 
 private _amountLeft = [_slotArray] call FUNC(FAK_arrayToAmmo);
 
+private _unitContainer = [_containerFAK, _unit] call _fnc_getUnitContainer;
+
+_unitContainer addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
+
 if (_amountLeft >= _max) then {
-
-    switch (_containerFAK) do {
-        case "Uniform": { 
-            uniformContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount]; // We need to use this cause "removeItem" targets the first item with the name it findes.
-            [_unit, _FAKToAdd, "uniform"] call ACEFUNC(common,addToInventory); // Ace only accepts "Uniform" when it is in lowercase letters.
-        };
-
-        case "Vest": { 
-            vestContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
-            [_unit, _FAKToAdd, "vest"] call ACEFUNC(common,addToInventory);
-        };
-    
-        case "Backpack": { 
-            backpackContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
-            [_unit, _FAKToAdd, "backpack"] call ACEFUNC(common,addToInventory);
-        };
-    };
-
+    [_unit, _FAKToAdd, (toLower _containerFAK)] call ACEFUNC(common,addToInventory);
 } else {
-
-    switch (_containerFAK) do {
-        case "Uniform": { 
-            uniformContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
-            uniformContainer _unit addMagazineAmmoCargo [(_FAKToAdd + "_Magazine"), 1, _amountLeft]; // Use this to add the new item in the exact same place where it was before. Also Ace does not support adding a location & ammo count at the same time.
-        };
-
-        case "Vest": { 
-            vestContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
-            vestContainer _unit addMagazineAmmoCargo [(_FAKToAdd + "_Magazine"), 1, _amountLeft];
-        };
-    
-        case "Backpack": { 
-            backpackContainer _unit addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
-            backpackContainer _unit addMagazineAmmoCargo [(_FAKToAdd + "_Magazine"), 1, _amountLeft];
-        };
-    };
+    _unitContainer addMagazineAmmoCargo [(_FAKToAdd + "_Magazine"), 1, _amountLeft];
 };
