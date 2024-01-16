@@ -98,7 +98,7 @@ switch (_FAKType) do {
     _mainOutputString = _firstnline + "<t color='" + _slotColor + "'><t size='1.5'>" + _slotName + " </t></t>" + _mainOutputString + _nline;
     _mainOutputString = format [_mainOutputString, _slot];
     _ultraMainOutputString = _ultraMainOutputString + _mainOutputString;
-    _mainOutputString = "";	 
+    _mainOutputString = "";
 
 } forEach _FAKContent; // for each slot
         
