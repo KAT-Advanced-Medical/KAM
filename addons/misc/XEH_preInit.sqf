@@ -188,7 +188,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(IFAK_Slot_Color),
     "COLOR",
-    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [LLSTRING(SETTING_FAK_SlotColor), LLSTRING(SETTING_FAK_SlotColor_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     [1, 0.30, 0.30],
     2
@@ -198,7 +198,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(IFAK_Item_Color),
     "COLOR",
-    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [LLSTRING(SETTING_FAK_ItemColor), LLSTRING(SETTING_FAK_ItemColor_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
     [0.67, 0.84, 0.90],
     2
@@ -292,7 +292,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(AFAK_Slot_Color),
     "COLOR",
-    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [LLSTRING(SETTING_FAK_SlotColor), LLSTRING(SETTING_FAK_SlotColor_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     [1, 0.96, 0.32],
     2
@@ -302,7 +302,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(AFAK_Item_Color),
     "COLOR",
-    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [LLSTRING(SETTING_FAK_ItemColor), LLSTRING(SETTING_FAK_ItemColor_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     [0.67, 0.84, 0.90],
     2
@@ -346,7 +346,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['kat_Penthrox', 2], ['kat_Painkiller', 1]]",
+    "[['ACE_morphine', 3], ['kat_Penthrox', 1], ['kat_Painkiller', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKThirdSlotItem), []];
@@ -362,7 +362,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['kat_chestSeal', 4], ['kat_ncdKit', 4]]",
+    "[['kat_chestSeal', 3], ['kat_ncdKit', 3]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKFourthSlotItem), []];
@@ -378,7 +378,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['kat_guedel', 3]]",
+    "[['kat_guedel', 4]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKFifthSlotItem), []];
@@ -394,7 +394,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['ACE_morphine', 3], ['ACE_epinephrine', 3]]",
+    "[['ACE_epinephrine', 3], ['kat_Carbonate', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKSixthSlotItem), []];
@@ -428,7 +428,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(MFAK_Slot_Color),
     "COLOR",
-    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [LLSTRING(SETTING_FAK_SlotColor), LLSTRING(SETTING_FAK_SlotColor_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
     [0.56, 0.93, 0.56],
     2
@@ -438,7 +438,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(MFAK_Item_Color),
     "COLOR",
-    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [LLSTRING(SETTING_FAK_ItemColor), LLSTRING(SETTING_FAK_ItemColor_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
     [0.67, 0.84, 0.90],
     2
@@ -482,7 +482,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['kat_Painkiller', 4], ['kat_Penthrox', 4]]",
+    "[['ACE_morphine', 6], ['kat_Painkiller', 2], ['kat_Penthrox', 2]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKThirdSlotItem), []];
@@ -530,7 +530,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['ACE_morphine', 6], ['ACE_epinephrine', 6], ['ACE_adenosine', 6]]",
+    "[['ACE_epinephrine', 6], ['kat_IV_16', 4], ['kat_nitroglycerin', 2], ['kat_phenylephrine', 2], ['kat_atropine', 2], ['kat_naloxone', 2], ['kat_Carbonate', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKSixthSlotItem), []];
@@ -546,7 +546,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SeventhSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['ACE_salineIV_250', 3], ['kat_IV_16', 4]]",
+    "[['ACE_salineIV_250', 4], ['kat_IV_16', 4]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKSeventhSlotItem), []];
@@ -562,7 +562,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_EighthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['kat_Pulseoximeter', 3], ['kat_pocketBVM', 1]]",
+    "[['kat_Pulseoximeter', 1], ['kat_pocketBVM', 1], ['kat_AED', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKEighthSlotItem), []];

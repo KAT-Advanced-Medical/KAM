@@ -954,52 +954,28 @@
             <French>Les objets et la quantité donnés aux joueurs.\n Si vous voulez ajouter/changer des objets, retirez l'entrée existante &amp; ajoutez le nom de l'objet &amp; la quantité désirée.\n Exemple : [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  TO  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FirstSlot_Item">
-            <English>First Slot Items &amp; Quantity</English>
-            <German>Erste Tasche Gegenstände &amp; Anzahl</German>
-            <Japanese>スロット1のアイテムと数量</Japanese>
-            <French>Objet du premier emplacement &amp; Quantité</French>
+            <English>Trauma Section Items &amp; Quantity</English>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Item">
-            <English>Second Slot Items &amp; Quantity</English>
-            <German>Zweite Tasche Gegenstände &amp; Anzahl</German>
-            <Japanese>スロット2のアイテムと数量</Japanese>
-            <French>Objet du second emplacement &amp; Quantité</French>
+            <English>Bandage Section Items &amp; Quantity</English>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Item">
-            <English>Third Slot Items &amp; Quantity</English>
-            <German>Dritte Tasche Gegenstände &amp; Anzahl</German>
-            <Japanese>スロット3のアイテムと数量</Japanese>
-            <French>Objet du troisième emplacement &amp; Quantité</French>
+            <English>Pain Management Section Items &amp; Quantity</English>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Item">
-            <English>Fourth Slot Items &amp; Quantity</English>
-            <German>Vierte Tasche Gegenstände &amp; Anzahl</German>
-            <Japanese>スロット4のアイテムと数量</Japanese>
-            <French>Objet du quatrième emplacement &amp; Quantité</French>
+            <English>Breathing Section Items &amp; Quantity</English>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FifthSlot_Item">
-            <English>Fifth Slot Items &amp; Quantity</English>
-            <German>Fünfte Tasche Gegenstände &amp; Anzahl</German>
-            <Japanese>スロット5のアイテムと数量</Japanese>
-            <French>Objet du cinquième emplacement &amp; Quantité</French>
+            <English>Airway Section Items &amp; Quantity</English>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SixthSlot_Item">
-            <English>Sixth Slot Items &amp; Quantity</English>
-            <German>Sechste Tasche Gegenstände &amp; Anzahl</German>
-            <Japanese>スロット6のアイテムと数量</Japanese>
-            <French>Objet du sixième emplacement &amp; Quantité</French>
+            <English>Pharmaceutical Section Items &amp; Quantity</English>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SeventhSlot_Item">
-            <English>Seventh Slot Items &amp; Quantity</English>
-            <German>Siebte Tasche Gegenstände &amp; Anzahl</German>
-            <Japanese>スロット7のアイテムと数量</Japanese>
-            <French>Objet du septième emplacement &amp; Quantité</French>
+            <English>Fluid Section Items &amp; Quantity</English>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EighthSlot_Item">
-            <English>Eighth Slot Items &amp; Quantity</English>
-            <German>Achte Tasche Gegenstände &amp; Anzahl</German>
-            <Japanese>スロット8のアイテムと数量</Japanese>
-            <French>Objet du huitième emplacement &amp; Quantité</French>
+            <English>Miscellaneous Section Items &amp; Quantity</English>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Display">
             <English>Individual First Aid Kit</English>
@@ -1056,139 +1032,100 @@
             <French>AFAK</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_DisplayItems">
-            <English>Display Slot Items</English>
-            <German>Zeige Taschen Gegenstände an</German>
+            <English>View Packing List</English>
+            <German>Packliste ansehen</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Hint">
-            <English>Slot 1:</English>
-            <German>Tasche 1:</German>
+            <English>Trauma Section:</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Hint">
             <English>Bandage Section:</English>
-            <German>Tasche 2:</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Hint">
-            <English>Slot 3:</English>
-            <German>Tasche 3:</German>
+            <English>Pain Management Section:</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Hint">
-            <English>Slot 4:</English>
-            <German>Tasche 4:</German>
+            <English>Breathing Section:</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Hint">
-            <English>Slot 5:</English>
-            <German>Tasche 5:</German>
+            <English>Airway Section:</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Hint">
-            <English>Slot 6:</English>
-            <German>Tasche 6:</German>
+            <English>Pharmaceutical Section:</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Hint">
-            <English>Slot 7:</English>
-            <German>Tasche 7:</German>
+            <English>Fluid Section:</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Hint">
-            <English>Slot 8:</English>
-            <German>Tasche 8:</German>
+            <English>Miscellaneous Section:</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1">
-            <English>Unpack Slot 1</English>
-            <German>Entpacke Tasche 1</German>
-            <Japanese>スロット1を展開</Japanese>
-            <French>Déballer l'emplacement 1</French>
+            <English>Unpack Trauma Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2">
-            <English>Unpack Slot 2</English>
-            <German>Entpacke Tasche 2</German>
-            <Japanese>スロット2を展開</Japanese>
-            <French>Déballer l'emplacement 2</French>
+            <English>Unpack Bandage Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3">
-            <English>Unpack Slot 3</English>
-            <German>Entpacke Tasche 3</German>
-            <Japanese>スロット3を展開</Japanese>
-            <French>Déballer l'emplacement 3</French>
+            <English>Unpack Pain Management Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4">
-            <English>Unpack Slot 4</English>
-            <German>Entpacke Tasche 4</German>
-            <Japanese>スロット4を展開</Japanese>
-            <French>Déballer l'emplacement 4</French>
+            <English>Unpack Breathing Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5">
-            <English>Unpack Slot 5</English>
-            <German>Entpacke Tasche 5</German>
-            <Japanese>スロット5を展開</Japanese>
-            <French>Déballer l'emplacement 5</French>
+            <English>Unpack Airway Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6">
-            <English>Unpack Slot 6</English>
-            <German>Entpacke Tasche 6</German>
-            <Japanese>スロット6を展開</Japanese>
-            <French>Déballer l'emplacement 6</French>
+            <English>Unpack Pharmaceutical Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7">
-            <English>Unpack Slot 7</English>
-            <German>Entpacke Tasche 7</German>
-            <Japanese>スロット7を展開</Japanese>
-            <French>Déballer l'emplacement 7</French>
+            <English>Unpack Fluid Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8">
-            <English>Unpack Slot 8</English>
-            <German>Entpacke Tasche 8</German>
-            <Japanese>スロット8を展開</Japanese>
-            <French>Déballer l'emplacement 8</French>
+            <English>Unpack Miscellaneous Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Repack">
-            <English>Repack Slot 1</English>
-            <German>Packe Tasche 1</German>
-            <Japanese>スロット1を詰め直す</Japanese>
-            <French>Remplir l'emplacement 1</French>
+            <English>Repack Trauma Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Repack">
-            <English>Repack Slot 2</English>
-            <German>Packe Tasche 2</German>
-            <Japanese>スロット2を詰め直す</Japanese>
-            <French>Remplir l'emplacement 2</French>
+            <English>Repack Bandage Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Repack">
-            <English>Repack Slot 3</English>
-            <German>Packe Tasche 3</German>
-            <Japanese>スロット3を詰め直す</Japanese>
-            <French>Remplir l'emplacement 3</French>
+            <English>Repack Pain Management Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Repack">
-            <English>Repack Slot 4</English>
-            <German>Packe Tasche 4</German>
-            <Japanese>スロット4を詰め直す</Japanese>
-            <French>Remplir l'emplacement 4</French>
+            <English>Repack Breathing Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Repack">
-            <English>Repack Slot 5</English>
-            <German>Packe Tasche 5</German>
-            <Japanese>スロット5を詰め直す</Japanese>
-            <French>Remplir l'emplacement 5</French>
+            <English>Repack Airway Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Repack">
-            <English>Repack Slot 6</English>
-            <German>Packe Tasche 6</German>
-            <Japanese>スロット6を詰め直す</Japanese>
-            <French>Remplir l'emplacement 6</French>
+            <English>Repack Pharmaceutical Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Repack">
-            <English>Repack Slot 7</English>
-            <German>Packe Tasche 7</German>
-            <Japanese>スロット7を詰め直す</Japanese>
-            <French>Remplir l'emplacement 7</French>
+            <English>Repack Fluid Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Repack">
-            <English>Repack Slot 8</English>
-            <German>Packe Tasche 8</German>
-            <Japanese>スロット8を詰め直す</Japanese>
-            <French>Remplir l'emplacement 8</French>
+            <English>Repack Miscellaneous Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor">
+            <English>Hint Item Color</English>
+            <German>Hinweis Gegenstand Farbe</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor_DESC">
+            <English>The item color of the text that is displayed via a hint</English>
+            <German>Die Farbe der Gegenstände die über einen Hinweis angezeigt werden</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor">
+            <English>Hint Section Color</English>
+            <German>Hinweis Sektion Farbe</German>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor_DESC">
+            <English>The Section color of the text that is displayed via a hint</English>
+            <German>Die Farbe der Sektionen die über einen Hinweis angezeigt werden</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty">
             <English>Remove when empty</English>
+            <German>Lösche wenn leer</German>
             <Japanese>空になったら削除する</Japanese>
             <French>Retirer lorsque vide</French>
         </Key>
