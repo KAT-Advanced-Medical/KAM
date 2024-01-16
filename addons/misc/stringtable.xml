@@ -361,21 +361,25 @@
             <English>Tourniquet Settings</English>
             <Japanese>止血帯設定</Japanese>
             <French>Paramètres du garrot</French>
+            <German>Tourniquet Einstellungen</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable">
             <English>Enable tourniquet effects</English>
             <Japanese>止血帯の副作用を有効化</Japanese>
             <French>Activer les effets du garrot</French>
+            <German>Erlaube Tourniquet Effekte </German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier">
             <English>Tourniquet effects positive multiplier</English>
             <Japanese>止血帯の副作用の正の乗数</Japanese>
             <French>Multiplicateur positif des effets du garrot</French>
+            <German>Tourniquet Effekt positiver Multiplikator </German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier">
             <English>Tourniquet effects negative multiplier</English>
             <Japanese>止血帯の副作用の負の乗数</Japanese>
             <French>Multiplicateur négatif des effets du garrot</French>
+            <German>Tourniquet Effekt negativer Multiplikator </German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>
@@ -955,27 +959,35 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FirstSlot_Item">
             <English>Trauma Section Items &amp; Quantity</English>
+            <German>Trauma Sektion Gegenstände &amp; Anzahl</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Item">
             <English>Bandage Section Items &amp; Quantity</English>
+            <German>Bandagen Sektion Gegenstände &amp; Anzahl</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Item">
             <English>Pain Management Section Items &amp; Quantity</English>
+            <German>Schmerzmittel Sektion Gegenstände &amp; Anzahl</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Item">
             <English>Breathing Section Items &amp; Quantity</English>
+            <German>Beatmungs Sektion Gegenstände &amp; Anzahl</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FifthSlot_Item">
             <English>Airway Section Items &amp; Quantity</English>
+            <German>Atemwege Sektion Gegenstände &amp; Anzahl</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SixthSlot_Item">
             <English>Pharmaceutical Section Items &amp; Quantity</English>
+            <German>Arzneimittel Sektion Gegenstände &amp; Anzahl</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SeventhSlot_Item">
             <English>Fluid Section Items &amp; Quantity</English>
+            <German>Flüssigkeit Sektion Gegenstände &amp; Anzahl</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EighthSlot_Item">
             <English>Miscellaneous Section Items &amp; Quantity</English>
+            <German>Vermischte Sektion Gegenstände &amp; Anzahl</German>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Display">
             <English>Individual First Aid Kit</English>
@@ -1037,75 +1049,99 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Hint">
             <English>Trauma Section:</English>
+            <German>Trauma Sektion:</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Hint">
             <English>Bandage Section:</English>
+            <German>Bandagen Sektion:</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Hint">
             <English>Pain Management Section:</English>
+            <German>Schmerzmittel Sektion:</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Hint">
             <English>Breathing Section:</English>
+            <German>Beatmungs Sektion:</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Hint">
             <English>Airway Section:</English>
+            <German>Atemwege Sektion:</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Hint">
             <English>Pharmaceutical Section:</English>
+            <German>Arzneimittel Sektion:</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Hint">
             <English>Fluid Section:</English>
+            <German>Flüssigkeits Sektion:</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Hint">
             <English>Miscellaneous Section:</English>
+            <German>Vermischte Sektion:</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1">
             <English>Unpack Trauma Section</English>
+            <German>Entpacke Trauma Sektion </German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2">
             <English>Unpack Bandage Section</English>
+            <German>Entpacke Bandagen Sektion </German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3">
             <English>Unpack Pain Management Section</English>
+            <German>Entpacke Schmerzmittel Sektion</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4">
             <English>Unpack Breathing Section</English>
+            <German>Entpacke Beatmungs Sektion</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5">
             <English>Unpack Airway Section</English>
+            <German>Entpacke Atemwege Sektion</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6">
             <English>Unpack Pharmaceutical Section</English>
+            <German>Entpacke Arzneimittel Sektion</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7">
             <English>Unpack Fluid Section</English>
+            <German>Entpacke Flüssigkeit Sektion</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8">
             <English>Unpack Miscellaneous Section</English>
+            <German>Entpacke Vermischte Sektion</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Repack">
             <English>Repack Trauma Section</English>
+            <German>Packe Trauma Sektion </German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Repack">
             <English>Repack Bandage Section</English>
+            <German>Packe Bandagen Sektion </German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Repack">
             <English>Repack Pain Management Section</English>
+            <German>Packe Schmerzmittel Sektion</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Repack">
             <English>Repack Breathing Section</English>
+            <German>Packe Beatmungs Sektion</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Repack">
             <English>Repack Airway Section</English>
+            <German>Packe Atemwege Sektion </German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Repack">
             <English>Repack Pharmaceutical Section</English>
+            <German>Packe Arzneimittel Sektion</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Repack">
             <English>Repack Fluid Section</English>
+            <German>Packe Flüssigkeit Sektion</German>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Repack">
             <English>Repack Miscellaneous Section</English>
+            <German>Packe Vermischte Sektion</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor">
             <English>Hint Item Color</English>

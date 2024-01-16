@@ -21,8 +21,6 @@ params ["_unit", "_FAKType"];
 if (_unit != ACE_player) exitWith {};
 
 private _FAKContent = "";
-private _item = "";
-private _number = "";
 private _outputString = "";
 private _mainOutputString = "";
 private _ultraMainOutputString = "";
@@ -74,8 +72,8 @@ switch (_FAKType) do {
 {
     {
     
-        _item = _x select 0; // Item
-        _number = str (_x select 1); // Number
+        private _item = _x select 0; // Item
+        private _number = str (_x select 1); // Number
         private _config = _item call CBA_fnc_getItemConfig; // get item config location
         private _displayName = getText (_config >> "displayName"); // get item displayName
         if (_displayName == "") then { _displayName = _item; }; // if no entry is found display class name
