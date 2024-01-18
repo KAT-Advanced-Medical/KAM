@@ -367,19 +367,19 @@
             <English>Enable tourniquet effects</English>
             <Japanese>止血帯の副作用を有効化</Japanese>
             <French>Activer les effets du garrot</French>
-            <German>Erlaube Tourniquet Effekte </German>
+            <German>Erlaube Tourniquet Effekte</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier">
             <English>Tourniquet effects positive multiplier</English>
             <Japanese>止血帯の副作用の正の乗数</Japanese>
             <French>Multiplicateur positif des effets du garrot</French>
-            <German>Tourniquet Effekt positiver Multiplikator </German>
+            <German>Tourniquet Effekt positiver Multiplikator</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier">
             <English>Tourniquet effects negative multiplier</English>
             <Japanese>止血帯の副作用の負の乗数</Japanese>
             <French>Multiplicateur négatif des effets du garrot</French>
-            <German>Tourniquet Effekt negativer Multiplikator </German>
+            <German>Tourniquet Effekt negativer Multiplikator</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>
@@ -918,13 +918,13 @@
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container">
             <English>Items unload Container</English>
             <German>Gegenstands entlade Bereich</German>
-            <Japanese>アイテムの展開先</Japanese>
+            <Japanese>アイテムの開梱先</Japanese>
             <French>Conteneur de stockage des objets</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container_DESC">
             <English>Defines where the items from the First Aid Kit are added into. If there is no space left they will be dropped on the ground. \n Default: Items are added where space is left. </English>
-            <German>Definiert wo die Gegenstände des Erste Hilfe Kits hinzufugefügt werden. Sofern kein Platz vorhanden ist wird es auf den Boden hingelegt. \n Standard: Die Gegenstände werden dort hinzugefügt wo noch Platz ist. </German>
-            <Japanese>応急処置キット(FAK)のアイテムを展開するインベントリの場所を定義します。 空きスペースがない場合は地面に落とします。\nデフォルト: 空きスペースのある場所に展開。</Japanese>
+            <German>Definiert wo die Gegenstände des Erste Hilfe Kits hinzufugefügt werden. Sofern kein Platz vorhanden ist wird es auf den Boden hingelegt. \n Standard: Die Gegenstände werden dort hinzugefügt wo noch Platz ist.</German>
+            <Japanese>応急処置キット(FAK)のアイテムを開梱するインベントリの場所を定義します。 空きスペースがない場合は地面に落とします。\nデフォルト: 空きスペースのある場所に開梱。</Japanese>
             <French>Définie où les objets de la trousse de secours seront ajoutés. S'il n'y a pas assez de place ils seront placés au sol.\n Par défaut : les objets sont rajoutés là où il reste de la place.</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Default">
@@ -960,34 +960,42 @@
         <Key ID="STR_KAT_Misc_SETTING_FirstSlot_Item">
             <English>Trauma Section Items &amp; Quantity</English>
             <German>Trauma Sektion Gegenstände &amp; Anzahl</German>
+            <Japanese>外傷枠のアイテムと数量</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Item">
             <English>Bandage Section Items &amp; Quantity</English>
             <German>Bandagen Sektion Gegenstände &amp; Anzahl</German>
+            <Japanese>包帯枠のアイテムと数量</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Item">
             <English>Pain Management Section Items &amp; Quantity</English>
             <German>Schmerzmittel Sektion Gegenstände &amp; Anzahl</German>
+            <Japanese>鎮痛枠のアイテムと数量</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Item">
             <English>Breathing Section Items &amp; Quantity</English>
             <German>Beatmungs Sektion Gegenstände &amp; Anzahl</German>
+            <Japanese>呼吸枠のアイテムと数量</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FifthSlot_Item">
             <English>Airway Section Items &amp; Quantity</English>
             <German>Atemwege Sektion Gegenstände &amp; Anzahl</German>
+            <Japanese>気道枠のアイテムと数量</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SixthSlot_Item">
             <English>Pharmaceutical Section Items &amp; Quantity</English>
             <German>Arzneimittel Sektion Gegenstände &amp; Anzahl</German>
+            <Japanese>薬品枠のアイテムと数量</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SeventhSlot_Item">
             <English>Fluid Section Items &amp; Quantity</English>
             <German>Flüssigkeit Sektion Gegenstände &amp; Anzahl</German>
+            <Japanese>輸液枠のアイテムと数量</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EighthSlot_Item">
             <English>Miscellaneous Section Items &amp; Quantity</English>
             <German>Vermischte Sektion Gegenstände &amp; Anzahl</German>
+            <Japanese>雑多枠のアイテムと数量</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Display">
             <English>Individual First Aid Kit</English>
@@ -998,7 +1006,7 @@
         <Key ID="STR_KAT_Misc_IFAK_DESC">
             <English>The IFAK can be unpacked to provide useful medical items</English>
             <German>Das IFAK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
-            <Japanese>IFAKは展開することで有用な医療品を入手出来る</Japanese>
+            <Japanese>IFAKは開梱することで有用な医療品を入手出来る</Japanese>
             <French>La TIC peut être déballée pour récupérer des objets médicaux utiles</French>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Display">
@@ -1010,7 +1018,7 @@
         <Key ID="STR_KAT_Misc_MFAK_DESC">
             <English>The MFAK can be unpacked to provide useful medical items</English>
             <German>Das MFAK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
-            <Japanese>MFAKは展開することで有用な医療品を入手出来る</Japanese>
+            <Japanese>MFAKは開梱することで有用な医療品を入手出来る</Japanese>
             <French>La MFAK peut être déballée pour récupérer des objets médicaux utiles</French>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Display">
@@ -1022,7 +1030,7 @@
         <Key ID="STR_KAT_Misc_AFAK_DESC">
             <English>The AFAK can be unpacked to provide useful medical items</English>
             <German>Das AFAK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
-            <Japanese>AFAKは展開することで有用な医療品を入手出来る</Japanese>
+            <Japanese>AFAKは開梱することで有用な医療品を入手出来る</Japanese>
             <French>La AFAK peut être déballée pour récupérer des objets médicaux utiles</French>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Unpack">
@@ -1046,118 +1054,147 @@
         <Key ID="STR_KAT_Misc_FAK_DisplayItems">
             <English>View Packing List</English>
             <German>Packliste ansehen</German>
+            <Japanese>内容物リストを見る</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Hint">
             <English>Trauma Section:</English>
             <German>Trauma Sektion:</German>
+            <Japanese>外傷枠:</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Hint">
             <English>Bandage Section:</English>
             <German>Bandagen Sektion:</German>
+            <Japanese>包帯枠:</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Hint">
             <English>Pain Management Section:</English>
             <German>Schmerzmittel Sektion:</German>
+            <Japanese>鎮痛枠:</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Hint">
             <English>Breathing Section:</English>
             <German>Beatmungs Sektion:</German>
+            <Japanese>呼吸枠:</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Hint">
             <English>Airway Section:</English>
             <German>Atemwege Sektion:</German>
+            <Japanese>気道枠:</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Hint">
             <English>Pharmaceutical Section:</English>
             <German>Arzneimittel Sektion:</German>
+            <Japanese>薬品枠:</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Hint">
             <English>Fluid Section:</English>
             <German>Flüssigkeits Sektion:</German>
+            <Japanese>輸液枠:</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Hint">
             <English>Miscellaneous Section:</English>
             <German>Vermischte Sektion:</German>
+            <Japanese>雑多枠:</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1">
             <English>Unpack Trauma Section</English>
-            <German>Entpacke Trauma Sektion </German>
+            <German>Entpacke Trauma Sektion</German>
+            <Japanese>外傷枠を 開梱する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2">
             <English>Unpack Bandage Section</English>
-            <German>Entpacke Bandagen Sektion </German>
+            <German>Entpacke Bandagen Sektion</German>
+            <Japanese>包帯枠を 開梱する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3">
             <English>Unpack Pain Management Section</English>
             <German>Entpacke Schmerzmittel Sektion</German>
+            <Japanese>鎮痛枠を 開梱する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4">
             <English>Unpack Breathing Section</English>
             <German>Entpacke Beatmungs Sektion</German>
+            <Japanese>呼吸枠を 開梱する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5">
             <English>Unpack Airway Section</English>
             <German>Entpacke Atemwege Sektion</German>
+            <Japanese>気道枠を 開梱する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6">
             <English>Unpack Pharmaceutical Section</English>
             <German>Entpacke Arzneimittel Sektion</German>
+            <Japanese>薬品枠を 開梱する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7">
             <English>Unpack Fluid Section</English>
             <German>Entpacke Flüssigkeit Sektion</German>
+            <Japanese>輸液枠を 開梱する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8">
             <English>Unpack Miscellaneous Section</English>
             <German>Entpacke Vermischte Sektion</German>
+            <Japanese>雑多枠を 開梱する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Repack">
             <English>Repack Trauma Section</English>
-            <German>Packe Trauma Sektion </German>
+            <German>Packe Trauma Sektion</German>
+            <Japanese>外傷枠を 再梱包する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Repack">
             <English>Repack Bandage Section</English>
-            <German>Packe Bandagen Sektion </German>
+            <German>Packe Bandagen Sektion</German>
+            <Japanese>包帯枠を 再梱包する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Repack">
             <English>Repack Pain Management Section</English>
             <German>Packe Schmerzmittel Sektion</German>
+            <Japanese>鎮痛枠を 再梱包する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Repack">
             <English>Repack Breathing Section</English>
             <German>Packe Beatmungs Sektion</German>
+            <Japanese>呼吸枠を 再梱包する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Repack">
             <English>Repack Airway Section</English>
-            <German>Packe Atemwege Sektion </German>
+            <German>Packe Atemwege Sektion</German>
+            <Japanese>気道枠を 再梱包する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Repack">
             <English>Repack Pharmaceutical Section</English>
             <German>Packe Arzneimittel Sektion</German>
+            <Japanese>薬品枠を 再梱包する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Repack">
             <English>Repack Fluid Section</English>
             <German>Packe Flüssigkeit Sektion</German>
+            <Japanese>輸液枠を 再梱包する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Repack">
             <English>Repack Miscellaneous Section</English>
             <German>Packe Vermischte Sektion</German>
+            <Japanese>雑多枠を 再梱包する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor">
             <English>Hint Item Color</English>
             <German>Hinweis Gegenstand Farbe</German>
+            <Japanese>ヒントのアイテムの文字色</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor_DESC">
             <English>The item color of the text that is displayed via a hint</English>
             <German>Die Farbe der Gegenstände die über einen Hinweis angezeigt werden</German>
+            <Japanese>ヒントで表示されるポケット内アイテムの文章の文字色</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor">
             <English>Hint Section Color</English>
             <German>Hinweis Sektion Farbe</German>
+            <Japanese>ヒントの種類枠の文字色</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor_DESC">
             <English>The Section color of the text that is displayed via a hint</English>
             <German>Die Farbe der Sektionen die über einen Hinweis angezeigt werden</German>
+            <Japanese>ヒントで表示されるポケット種類枠の文章の文字色</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty">
             <English>Remove when empty</English>
