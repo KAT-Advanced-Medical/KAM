@@ -282,7 +282,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(AFAK_Container),
     "LIST",
-    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)], //DO
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
     [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
     2
