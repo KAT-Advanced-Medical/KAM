@@ -133,4 +133,11 @@ class cfgAmmo
         indirectHitRange = 0;
         explosionEffects = "KAT_CAS_R_HYDRA_Explosion"; //HERocketExplosion
     };
+    class ACE_mortar_82mm: mortar_82mm{
+    magazines[]=
+    {
+        "KAT_1Rnd_82mm_Mo_Type0",
+        "KAT_1Rnd_82mm_Mo_TypeCS"
+    };
+    };
 };
