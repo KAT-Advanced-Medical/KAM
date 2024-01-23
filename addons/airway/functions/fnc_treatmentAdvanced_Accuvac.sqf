@@ -27,7 +27,9 @@ if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 
     if (_usedItem isEqualTo "kat_suction") then {
-        _medic addItem "kat_suction";
+        if(GVAR(Suction_reuse)) then {
+            _medic addItem "kat_suction";
+        };
     };
 };
 
