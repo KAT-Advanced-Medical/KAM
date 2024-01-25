@@ -278,24 +278,28 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noObstruction">
             <English>Airway is not obstructed</English>
+            <Spanish>Las vías aéreas no están obstruidas</Spanish>
             <Japanese>気道は閉塞していない</Japanese>
             <Norwegian>Luftvei er ikke blokkert</Norwegian>
             <French>Les voies aériennes ne sont pas obstruées</French>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion">
             <English>Airway is not occluded</English>
+            <Spanish>Las vías aéreas no están ocluidas</Spanish>
             <Japanese>気道に異物はありません</Japanese>
             <Norwegian>Luftvei er ikke okkludert</Norwegian>
             <French>Les voies aériennes ne sont pas occludées</French>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
+            <Spanish>Las vías respiratorias están obstruidas, es necesario gestionarlas</Spanish>
             <Japanese>気道は閉塞しています、 気道管理が必要です</Japanese>
             <Norwegian>Luftvei er blokkert, behov for luftveishåndtering</Norwegian>
             <French>Voies aériennes obstruées, geste médical nécessaire</French>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
+            <Spanish>Las vías respiratorias están obstruidas, es necesario gestionarlas</Spanish>
             <Japanese>気道に異物があります、 医療吸引が必要です</Japanese>
             <Norwegian>Luftveien er okkludert, behov for medisinsk suging</Norwegian>
             <French>Voies aériennes occludées, aspiration médicale nécessaire</French>
@@ -370,6 +374,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_already">
             <English>Patient's head is already hyperextended</English>
+            <Spanish>La cabeza del paciente ya está hiperextendida</Spanish>
             <Japanese>患者は既に頭部後屈されています</Japanese>
             <Norwegian>Pasientens hode er allerede hyperforlenget</Norwegian>
             <French>La tête du patient est déjà en hyperextension</French>
@@ -410,6 +415,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Ready">
             <English>Head hyperextended successfully</English>
+            <Spanish>Cabeza hiperextendida con éxito</Spanish>
             <Japanese>頭部後屈させた</Japanese>
             <Norwegian>hyperforlengelse av hodet fullført</Norwegian>
             <French>Hyperextension réalisée avec succès</French>
@@ -470,6 +476,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_start">
             <English>Head Turning Started</English>
+            <Spanish>Comenzó a girar la cabeza</Spanish>
             <Japanese>異物除去を開始した</Japanese>
             <Norwegian>Startet vending av hode</Norwegian>
             <French>Rotation de la tête débutée</French>
@@ -1146,24 +1153,28 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_CancelRecoveryPosition_Time_DESC">
             <English>How long it will take to manually cancel recovery position</English>
+            <Spanish>Establece cuánto tiempo tarda en salir de la posición de recuperación</Spanish>
             <Japanese>回復体位を崩すのにどのくらい時間がかかるか設定します</Japanese>
             <Norwegian>Hvor lang tid det vil ta å manuelt kansellere stabilt sideleie</Norwegian>
             <French>Combien de temps sera nécessaire pour annuler la position latérale de sécurité</French>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
+            <Spanish>Tiempo para retirar la oclusión en posición lateral de seguridad</Spanish>
             <Japanese>回復体位による異物排出にかかる時間</Japanese>
             <Norwegian>Tid i stabilt sideleie for å bli kvitt okklusjonen</Norwegian>
             <French>Temps pour retirer l'occlusion en position latérale de sécurité</French>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
+            <Spanish>Tiempo máximo para que desaparezca una oclusión en un paciente en posición lateral de seguridad</Spanish>
             <Japanese>回復体位にある患者の気道異物が排出され解消するまでに必要な最大時間。</Japanese>
             <Norwegian>Maks nødvendig tid en pasient må være i stabilt sideleie for å bli kvitt okklusjonen.</Norwegian>
             <French>Temps maximal pour qu'une occlusion disparaisse sur un patient en position latérale de sécurité</French>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
+            <Spanish>Parámetros de la posición lateral de seguridad + hiperextensión</Spanish>
             <Japanese>回復体位と頭部後屈設定</Japanese>
             <Norwegian>Instillinger for stabil sideleie og Hyperforlengelse av hodet</Norwegian>
             <French>Paramètres de la position latérale de sécurité + hyperextension</French>

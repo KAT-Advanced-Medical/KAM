@@ -359,21 +359,25 @@
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_Tourniquet">
             <English>Tourniquet Settings</English>
+            <Spanish>Configuración del torniquete</Spanish>
             <Japanese>止血帯設定</Japanese>
             <French>Paramètres du garrot</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable">
             <English>Enable tourniquet effects</English>
+            <Spanish>Habilitar efectos de torniquete</Spanish>
             <Japanese>止血帯の副作用を有効化</Japanese>
             <French>Activer les effets du garrot</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier">
             <English>Tourniquet effects positive multiplier</English>
+            <Spanish>Multiplicador positivo de los efectos del torniquete</Spanish>
             <Japanese>止血帯の副作用の正の乗数</Japanese>
             <French>Multiplicateur positif des effets du garrot</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier">
             <English>Tourniquet effects negative multiplier</English>
+            <Spanish>Multiplicador negativo de los efectos del torniquete</Spanish>
             <Japanese>止血帯の副作用の負の乗数</Japanese>
             <French>Multiplicateur négatif des effets du garrot</French>
         </Key>
@@ -895,264 +899,308 @@
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_IFAK">
             <English>(IFAK) Individual First Aid Kit</English>
+            <Spanish>(BPAI) Botiquín de primeros auxilios individual</Spanish>
             <German>(IEHK) Individuelles Erste Hilfe Kit</German>
             <Japanese>(IFAK) 個人用応急処置キット</Japanese>
             <French>(TIC) Trousse individuelle du combattant</French>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_MFAK">
             <English>(MFAK) Multiple First Aid Kit</English>
+            <Spanish>(BPAM) Botiquín de primeros auxilios múltiple</Spanish>
             <German>(MEHK) Mehrfaches Erste Hilfe Kit</German>
             <Japanese>(MFAK) 多用途応急処置キット</Japanese>
             <French>(MFAK) Trousse de secours multiple</French>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_AFAK">
             <English>(AFAK) Advanced First Aid Kit</English>
+            <Spanish>(BPAA) Botiquín de primeros auxilios avanzado</Spanish>
             <German>(EEHK) Erweitertes Erste Hilfe Kit</German>
             <Japanese>(AFAK) 高等応急処置キット</Japanese>
             <French>(AFAK) Trousse de secours avancée</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container">
             <English>Items unload Container</English>
+            <Spanish>Contenedor de almacenamiento de artículos</Spanish>
             <German>Gegenstands entlade Bereich</German>
             <Japanese>アイテムの展開先</Japanese>
             <French>Conteneur de stockage des objets</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container_DESC">
             <English>Defines where the items from the First Aid Kit are added into. If there is no space left they will be dropped on the ground. \n Default: Items are added where space is left. </English>
+            <Spanish>Define dónde se agregan los elementos del botiquín de primeros auxilios. Si no queda espacio se dejarán caer al suelo. \n Predeterminado: los elementos se agregan donde queda espacio.</Spanish>
             <German>Definiert wo die Gegenstände des Erste Hilfe Kits hinzufugefügt werden. Sofern kein Platz vorhanden ist wird es auf den Boden hingelegt. \n Standard: Die Gegenstände werden dort hinzugefügt wo noch Platz ist. </German>
             <Japanese>応急処置キット(FAK)のアイテムを展開するインベントリの場所を定義します。 空きスペースがない場合は地面に落とします。\nデフォルト: 空きスペースのある場所に展開。</Japanese>
             <French>Définie où les objets de la trousse de secours seront ajoutés. S'il n'y a pas assez de place ils seront placés au sol.\n Par défaut : les objets sont rajoutés là où il reste de la place.</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Default">
             <English>Default</English>
+            <Spanish>Por defecto</Spanish>
             <German>Standard</German>
             <Japanese>デフォルト</Japanese>
             <French>Par défaut</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Uniform">
             <English>Uniform</English>
+            <Spanish>Uniforme</Spanish>
             <German>Uniform</German>
             <Japanese>ユニフォーム</Japanese>
             <French>Uniforme</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Vest">
             <English>Vest</English>
+            <Spanish>Chaleco</Spanish>
             <German>Weste</German>
             <Japanese>ベスト</Japanese>
             <French>Veste</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Backpack">
             <English>Backpack</English>
+            <Spanish>Mochila</Spanish>
             <German>Rucksack</German>
             <Japanese>バックパック</Japanese>
             <French>Sac à dos</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ItemSlot_DESC">
             <English>The items &amp; quantity that is given to the player.\n If you want to add/change items remove existing entry &amp; insert item name-tag &amp; quantity you want. \n Example: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  TO  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</English>
+            <Spanish>Los artículos &amp; cantidad que se le da al jugador.\n Si desea agregar\cambiar elementos, elimine la entrada y el registro existentes. insertar etiqueta de nombre del artículo &amp; cantidad que deseas. \n Ejemplo: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  TO  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</Spanish>
             <German>Der Gegenstand den der Spieler erhält.\n Zum hinzufügen/ändern des Gegenstandes den bestehenden Eintrag entfernen &amp; einen anderen Gegenstand mit dem name-tag &amp; der Anzahl hinzufügen. \n Beispiel: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  Wird Zu  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</German>
             <Japanese>プレイヤーに与えられるアイテムとその数量。\n追加/変更する場合は既存の入力内容を削除し、必要なアイテムのクラスネームと数量を挿入してください。 \n例: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]] から [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]] のように変更。</Japanese>
             <French>Les objets et la quantité donnés aux joueurs.\n Si vous voulez ajouter/changer des objets, retirez l'entrée existante &amp; ajoutez le nom de l'objet &amp; la quantité désirée.\n Exemple : [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  TO  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FirstSlot_Item">
             <English>First Slot Items &amp; Quantity</English>
+            <Spanish>Artículos en el primer espacio &amp; Cantidad</Spanish>
             <German>Erste Tasche Gegenstände &amp; Anzahl</German>
             <Japanese>スロット1のアイテムと数量</Japanese>
             <French>Objet du premier emplacement &amp; Quantité</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Item">
             <English>Second Slot Items &amp; Quantity</English>
+            <Spanish>Artículos en el segundo espacio &amp; Cantidad</Spanish>
             <German>Zweite Tasche Gegenstände &amp; Anzahl</German>
             <Japanese>スロット2のアイテムと数量</Japanese>
             <French>Objet du second emplacement &amp; Quantité</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Item">
             <English>Third Slot Items &amp; Quantity</English>
+            <Spanish>Artículos en el tercer espacio &amp; Cantidad</Spanish>
             <German>Dritte Tasche Gegenstände &amp; Anzahl</German>
             <Japanese>スロット3のアイテムと数量</Japanese>
             <French>Objet du troisième emplacement &amp; Quantité</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Item">
             <English>Fourth Slot Items &amp; Quantity</English>
+            <Spanish>Artículos en el cuarto espacio &amp; Cantidad</Spanish>
             <German>Vierte Tasche Gegenstände &amp; Anzahl</German>
             <Japanese>スロット4のアイテムと数量</Japanese>
             <French>Objet du quatrième emplacement &amp; Quantité</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FifthSlot_Item">
             <English>Fifth Slot Items &amp; Quantity</English>
+            <Spanish>Artículos en el quinto espacio &amp; Cantidad</Spanish>
             <German>Fünfte Tasche Gegenstände &amp; Anzahl</German>
             <Japanese>スロット5のアイテムと数量</Japanese>
             <French>Objet du cinquième emplacement &amp; Quantité</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SixthSlot_Item">
             <English>Sixth Slot Items &amp; Quantity</English>
+            <Spanish>Artículos en el sexto espacio &amp; Cantidad</Spanish>
             <German>Sechste Tasche Gegenstände &amp; Anzahl</German>
             <Japanese>スロット6のアイテムと数量</Japanese>
             <French>Objet du sixième emplacement &amp; Quantité</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SeventhSlot_Item">
             <English>Seventh Slot Items &amp; Quantity</English>
+            <Spanish>Artículos en el septimo espacio &amp; Cantidad</Spanish>
             <German>Siebte Tasche Gegenstände &amp; Anzahl</German>
             <Japanese>スロット7のアイテムと数量</Japanese>
             <French>Objet du septième emplacement &amp; Quantité</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EighthSlot_Item">
             <English>Eighth Slot Items &amp; Quantity</English>
+            <Spanish>Artículos en el octavo espacio &amp; Cantidad</Spanish>
             <German>Achte Tasche Gegenstände &amp; Anzahl</German>
             <Japanese>スロット8のアイテムと数量</Japanese>
             <French>Objet du huitième emplacement &amp; Quantité</French>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Display">
             <English>Individual First Aid Kit</English>
+            <Spanish>Botiquín de primeros auxilios individual</Spanish>
             <German>Individuelles Erste Hilfe Kit</German>
             <Japanese>個人用応急処置キット (IFAK)</Japanese>
             <French>Trousse individuelle du combattant</French>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_DESC">
             <English>The IFAK can be unpacked to provide useful medical items</English>
+            <Spanish>El BPAI se puede desembalar para proporcionar artículos médicos útiles.</Spanish>
             <German>Das IEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
             <Japanese>IFAKは展開することで有用な医療品を入手出来る</Japanese>
             <French>La TIC peut être déballée pour récupérer des objets médicaux utiles</French>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Display">
             <English>Multiple First Aid Kit</English>
+            <Spanish>Botiquín de primeros auxilios múltiple</Spanish>
             <German>Mehrfaches Erste Hilfe Kit</German>
             <Japanese>多用途応急処置キット (MFAK)</Japanese>
             <French>Trousse de secours multiple</French>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_DESC">
             <English>The MFAK can be unpacked to provide useful medical items</English>
+            <Spanish>El BPAM se puede desembalar para proporcionar artículos médicos útiles.</Spanish>
             <German>Das MEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
             <Japanese>MFAKは展開することで有用な医療品を入手出来る</Japanese>
             <French>La MFAK peut être déballée pour récupérer des objets médicaux utiles</French>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Display">
             <English>Advanced First Aid Kit</English>
+            <Spanish>Botiquín de primeros auxilios avanzado</Spanish>
             <German>Erweitertes Erste Hilfe Kit</German>
             <Japanese>高度応急処置キット (AFAK)</Japanese>
             <French>Trousse de secours avancée</French>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_DESC">
             <English>The AFAK can be unpacked to provide useful medical items</English>
+            <Spanish>El BPAA se puede desembalar para proporcionar artículos médicos útiles.</Spanish>
             <German>Das EEHK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
             <Japanese>AFAKは展開することで有用な医療品を入手出来る</Japanese>
             <French>La AFAK peut être déballée pour récupérer des objets médicaux utiles</French>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Unpack">
             <English>IFAK</English>
+            <Spanish>BPAI</Spanish>
             <German>IEHK</German>
             <Japanese>IFAK</Japanese>
             <French>TIC</French>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Unpack">
             <English>MFAK</English>
+            <Spanish>BPAM</Spanish>
             <German>MEHK</German>
             <Japanese>MFAK</Japanese>
             <French>MFAK</French>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Unpack">
             <English>AFAK</English>
+            <Spanish>BPAA</Spanish>
             <German>EEHK</German>
             <Japanese>AFAK</Japanese>
             <French>AFAK</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1">
             <English>Unpack Slot 1</English>
+            <Spanish>Desempaquetar el espacio 1</Spanish>
             <German>Entpacke Tasche 1</German>
             <Japanese>スロット1を展開</Japanese>
             <French>Déballer l'emplacement 1</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2">
             <English>Unpack Slot 2</English>
+            <Spanish>Desempaquetar el espacio 2</Spanish>
             <German>Entpacke Tasche 2</German>
             <Japanese>スロット2を展開</Japanese>
             <French>Déballer l'emplacement 2</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3">
             <English>Unpack Slot 3</English>
+            <Spanish>Desempaquetar el espacio 3</Spanish>
             <German>Entpacke Tasche 3</German>
             <Japanese>スロット3を展開</Japanese>
             <French>Déballer l'emplacement 3</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4">
             <English>Unpack Slot 4</English>
+            <Spanish>Desempaquetar el espacio 4</Spanish>
             <German>Entpacke Tasche 4</German>
             <Japanese>スロット4を展開</Japanese>
             <French>Déballer l'emplacement 4</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5">
             <English>Unpack Slot 5</English>
+            <Spanish>Desempaquetar el espacio 5</Spanish>
             <German>Entpacke Tasche 5</German>
             <Japanese>スロット5を展開</Japanese>
             <French>Déballer l'emplacement 5</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6">
             <English>Unpack Slot 6</English>
+            <Spanish>Desempaquetar el espacio 6</Spanish>
             <German>Entpacke Tasche 6</German>
             <Japanese>スロット6を展開</Japanese>
             <French>Déballer l'emplacement 6</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7">
             <English>Unpack Slot 7</English>
+            <Spanish>Desempaquetar el espacio 7</Spanish>
             <German>Entpacke Tasche 7</German>
             <Japanese>スロット7を展開</Japanese>
             <French>Déballer l'emplacement 7</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8">
             <English>Unpack Slot 8</English>
+            <Spanish>Desempaquetar el espacio 8</Spanish>
             <German>Entpacke Tasche 8</German>
             <Japanese>スロット8を展開</Japanese>
             <French>Déballer l'emplacement 8</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Repack">
             <English>Repack Slot 1</English>
+            <Spanish>Empaquetar el espacio 1</Spanish>
             <German>Packe Tasche 1</German>
             <Japanese>スロット1を詰め直す</Japanese>
             <French>Remplir l'emplacement 1</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Repack">
             <English>Repack Slot 2</English>
+            <Spanish>Empaquetar el espacio 2</Spanish>
             <German>Packe Tasche 2</German>
             <Japanese>スロット2を詰め直す</Japanese>
             <French>Remplir l'emplacement 2</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Repack">
             <English>Repack Slot 3</English>
+            <Spanish>Empaquetar el espacio 3</Spanish>
             <German>Packe Tasche 3</German>
             <Japanese>スロット3を詰め直す</Japanese>
             <French>Remplir l'emplacement 3</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Repack">
             <English>Repack Slot 4</English>
+            <Spanish>Empaquetar el espacio 4</Spanish>
             <German>Packe Tasche 4</German>
             <Japanese>スロット4を詰め直す</Japanese>
             <French>Remplir l'emplacement 4</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Repack">
             <English>Repack Slot 5</English>
+            <Spanish>Empaquetar el espacio 5</Spanish>
             <German>Packe Tasche 5</German>
             <Japanese>スロット5を詰め直す</Japanese>
             <French>Remplir l'emplacement 5</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Repack">
             <English>Repack Slot 6</English>
+            <Spanish>Empaquetar el espacio 6</Spanish>
             <German>Packe Tasche 6</German>
             <Japanese>スロット6を詰め直す</Japanese>
             <French>Remplir l'emplacement 6</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Repack">
             <English>Repack Slot 7</English>
+            <Spanish>Empaquetar el espacio 7</Spanish>
             <German>Packe Tasche 7</German>
             <Japanese>スロット7を詰め直す</Japanese>
             <French>Remplir l'emplacement 7</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Repack">
             <English>Repack Slot 8</English>
+            <Spanish>Empaquetar el espacio 8</Spanish>
             <German>Packe Tasche 8</German>
             <Japanese>スロット8を詰め直す</Japanese>
             <French>Remplir l'emplacement 8</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty">
             <English>Remove when empty</English>
+            <Spanish>Retirar cuando esta vacio</Spanish>
             <Japanese>空になったら削除する</Japanese>
             <French>Retirer lorsque vide</French>
         </Key>
