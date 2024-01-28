@@ -16,11 +16,11 @@
  * Public: No
  */
 
-params ["_unit", "_FAKType"];
+params ["_unit", "_fakType"];
 
 if (_unit != ACE_player) exitWith {};
 
-private _FAKContent = "";
+private _fakContent = "";
 private _outputString = "";
 private _mainOutputString = "";
 private _ultraMainOutputString = "";
@@ -51,19 +51,19 @@ private _fnc_arrayToHexCode = {
     _return
 };
 
-switch (_FAKType) do {
+switch (_fakType) do {
     case 0: { 
-        _FAKContent = missionNameSpace getVariable [QGVAR(IFAKContents), []];
+        _fakContent = missionNameSpace getVariable [QGVAR(IFAKContents), []];
         _slotColor = [(missionNameSpace getVariable [QGVAR(IFAK_Slot_Color), []])] call _fnc_arrayToHexCode;
         _itemColor = [(missionNameSpace getVariable [QGVAR(IFAK_Item_Color), []])] call _fnc_arrayToHexCode;
     };
     case 1: { 
-        _FAKContent = missionNameSpace getVariable [QGVAR(AFAKContents), []];
+        _fakContent = missionNameSpace getVariable [QGVAR(AFAKContents), []];
         _slotColor = [(missionNameSpace getVariable [QGVAR(AFAK_Slot_Color), []])] call _fnc_arrayToHexCode;
         _itemColor = [(missionNameSpace getVariable [QGVAR(AFAK_Item_Color), []])] call _fnc_arrayToHexCode;
     };
     default { 
-        _FAKContent = missionNameSpace getVariable [QGVAR(MFAKContents), []];
+        _fakContent = missionNameSpace getVariable [QGVAR(MFAKContents), []];
         _slotColor = [(missionNameSpace getVariable [QGVAR(MFAK_Slot_Color), []])] call _fnc_arrayToHexCode;
         _itemColor = [(missionNameSpace getVariable [QGVAR(MFAK_Item_Color), []])] call _fnc_arrayToHexCode;
     };
@@ -100,6 +100,6 @@ switch (_FAKType) do {
     _ultraMainOutputString = _ultraMainOutputString + _mainOutputString;
     _mainOutputString = "";
 
-} forEach _FAKContent; // for each slot
+} forEach _fakContent; // for each slot
         
 hintSilent parseText _ultraMainOutputString;
