@@ -46,7 +46,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\suction_normal.paa);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1.5;
+            mass = 0.5;
         };
     };
 };
