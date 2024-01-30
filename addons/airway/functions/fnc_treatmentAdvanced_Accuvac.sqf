@@ -34,7 +34,7 @@ if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
 };
 
 if (_usedItem isEqualTo "kat_suction") then {
-    if(GVAR(Suction_reuse)) then {
+    if (GVAR(Suction_reuse)) then {
         _medic addItem "kat_suction";
     };
 };
