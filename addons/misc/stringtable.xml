@@ -359,24 +359,28 @@
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_Tourniquet">
             <English>Tourniquet Settings</English>
+            <Spanish>Configuración del torniquete</Spanish>
             <Japanese>止血帯設定</Japanese>
             <French>Paramètres du garrot</French>
             <German>Tourniquet Einstellungen</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable">
             <English>Enable tourniquet effects</English>
+            <Spanish>Habilitar efectos de torniquete</Spanish>
             <Japanese>止血帯の副作用を有効化</Japanese>
             <French>Activer les effets du garrot</French>
             <German>Erlaube Tourniquet Effekte</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier">
             <English>Tourniquet effects positive multiplier</English>
+            <Spanish>Multiplicador positivo de los efectos del torniquete</Spanish>
             <Japanese>止血帯の副作用の正の乗数</Japanese>
             <French>Multiplicateur positif des effets du garrot</French>
             <German>Tourniquet Effekt positiver Multiplikator</German>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier">
             <English>Tourniquet effects negative multiplier</English>
+            <Spanish>Multiplicador negativo de los efectos del torniquete</Spanish>
             <Japanese>止血帯の副作用の負の乗数</Japanese>
             <French>Multiplicateur négatif des effets du garrot</French>
             <German>Tourniquet Effekt negativer Multiplikator</German>
@@ -900,23 +904,27 @@
         <Key ID="STR_KAT_Misc_SubCategory_IFAK">
             <English>(IFAK) Individual First Aid Kit</English>
             <German>(IFAK) Individuelles Erste Hilfe Kit</German>
+            <Spanish>(BPAI) Botiquín de primeros auxilios individual</Spanish>
             <Japanese>(IFAK) 個人用応急処置キット</Japanese>
             <French>(TIC) Trousse individuelle du combattant</French>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_MFAK">
             <English>(MFAK) Multiple First Aid Kit</English>
             <German>(MFAK) Mehrfaches Erste Hilfe Kit</German>
+            <Spanish>(BPAM) Botiquín de primeros auxilios múltiple</Spanish>
             <Japanese>(MFAK) 多用途応急処置キット</Japanese>
             <French>(MFAK) Trousse de secours multiple</French>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_AFAK">
             <English>(AFAK) Advanced First Aid Kit</English>
             <German>(AFAK) Erweitertes Erste Hilfe Kit</German>
+            <Spanish>(BPAA) Botiquín de primeros auxilios avanzado</Spanish>
             <Japanese>(AFAK) 高等応急処置キット</Japanese>
             <French>(AFAK) Trousse de secours avancée</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container">
             <English>Items unload Container</English>
+            <Spanish>Contenedor de almacenamiento de artículos</Spanish>
             <German>Gegenstands entlade Bereich</German>
             <Japanese>アイテムの開梱先</Japanese>
             <French>Conteneur de stockage des objets</French>
@@ -925,34 +933,41 @@
             <English>Defines where the items from the First Aid Kit are added into. If there is no space left they will be dropped on the ground. \n Default: Items are added where space is left. </English>
             <German>Definiert wo die Gegenstände des Erste Hilfe Kits hinzufugefügt werden. Sofern kein Platz vorhanden ist wird es auf den Boden hingelegt. \n Standard: Die Gegenstände werden dort hinzugefügt wo noch Platz ist.</German>
             <Japanese>応急処置キット(FAK)のアイテムを開梱するインベントリの場所を定義します。 空きスペースがない場合は地面に落とします。\nデフォルト: 空きスペースのある場所に開梱。</Japanese>
+            <Spanish>Define dónde se agregan los elementos del botiquín de primeros auxilios. Si no queda espacio se dejarán caer al suelo. \n Predeterminado: los elementos se agregan donde queda espacio.</Spanish>
+            <Japanese>応急処置キット(FAK)のアイテムを展開するインベントリの場所を定義します。 空きスペースがない場合は地面に落とします。\nデフォルト: 空きスペースのある場所に展開。</Japanese>
             <French>Définie où les objets de la trousse de secours seront ajoutés. S'il n'y a pas assez de place ils seront placés au sol.\n Par défaut : les objets sont rajoutés là où il reste de la place.</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Default">
             <English>Default</English>
+            <Spanish>Por defecto</Spanish>
             <German>Standard</German>
             <Japanese>デフォルト</Japanese>
             <French>Par défaut</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Uniform">
             <English>Uniform</English>
+            <Spanish>Uniforme</Spanish>
             <German>Uniform</German>
             <Japanese>ユニフォーム</Japanese>
             <French>Uniforme</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Vest">
             <English>Vest</English>
+            <Spanish>Chaleco</Spanish>
             <German>Weste</German>
             <Japanese>ベスト</Japanese>
             <French>Veste</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Backpack">
             <English>Backpack</English>
+            <Spanish>Mochila</Spanish>
             <German>Rucksack</German>
             <Japanese>バックパック</Japanese>
             <French>Sac à dos</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ItemSlot_DESC">
             <English>The items &amp; quantity that is given to the player.\n If you want to add/change items remove existing entry &amp; insert item name-tag &amp; quantity you want. \n Example: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  TO  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</English>
+            <Spanish>Los artículos &amp; cantidad que se le da al jugador.\n Si desea agregar\cambiar elementos, elimine la entrada y el registro existentes. insertar etiqueta de nombre del artículo &amp; cantidad que deseas. \n Ejemplo: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  TO  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</Spanish>
             <German>Der Gegenstand den der Spieler erhält.\n Zum hinzufügen/ändern des Gegenstandes den bestehenden Eintrag entfernen &amp; einen anderen Gegenstand mit dem name-tag &amp; der Anzahl hinzufügen. \n Beispiel: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  Wird Zu  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</German>
             <Japanese>プレイヤーに与えられるアイテムとその数量。\n追加/変更する場合は既存の入力内容を削除し、必要なアイテムのクラスネームと数量を挿入してください。 \n例: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]] から [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]] のように変更。</Japanese>
             <French>Les objets et la quantité donnés aux joueurs.\n Si vous voulez ajouter/changer des objets, retirez l'entrée existante &amp; ajoutez le nom de l'objet &amp; la quantité désirée.\n Exemple : [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  TO  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</French>
@@ -1007,11 +1022,14 @@
             <English>The IFAK can be unpacked to provide useful medical items</English>
             <German>Das IFAK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
             <Japanese>IFAKは開梱することで有用な医療品を入手出来る</Japanese>
+            <Spanish>El BPAI se puede desembalar para proporcionar artículos médicos útiles.</Spanish>
+            <Japanese>IFAKは展開することで有用な医療品を入手出来る</Japanese>
             <French>La TIC peut être déballée pour récupérer des objets médicaux utiles</French>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Display">
             <English>Multiple First Aid Kit</English>
             <German>Mehrfaches Erste Hilfe Kit (MFAK)</German>
+            <Spanish>Botiquín de primeros auxilios múltiple</Spanish>
             <Japanese>多用途応急処置キット (MFAK)</Japanese>
             <French>Trousse de secours multiple</French>
         </Key>
@@ -1019,11 +1037,14 @@
             <English>The MFAK can be unpacked to provide useful medical items</English>
             <German>Das MFAK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
             <Japanese>MFAKは開梱することで有用な医療品を入手出来る</Japanese>
+            <Spanish>El BPAM se puede desembalar para proporcionar artículos médicos útiles.</Spanish>
+            <Japanese>MFAKは展開することで有用な医療品を入手出来る</Japanese>
             <French>La MFAK peut être déballée pour récupérer des objets médicaux utiles</French>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Display">
             <English>Advanced First Aid Kit</English>
             <German>Erweitertes Erste Hilfe Kit (AFAK)</German>
+            <Spanish>Botiquín de primeros auxilios avanzado</Spanish>
             <Japanese>高度応急処置キット (AFAK)</Japanese>
             <French>Trousse de secours avancée</French>
         </Key>
@@ -1031,23 +1052,28 @@
             <English>The AFAK can be unpacked to provide useful medical items</English>
             <German>Das AFAK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
             <Japanese>AFAKは開梱することで有用な医療品を入手出来る</Japanese>
+            <Spanish>El BPAA se puede desembalar para proporcionar artículos médicos útiles.</Spanish>
+            <Japanese>AFAKは展開することで有用な医療品を入手出来る</Japanese>
             <French>La AFAK peut être déballée pour récupérer des objets médicaux utiles</French>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Unpack">
             <English>IFAK</English>
             <German>IFAK</German>
+            <Spanish>BPAI</Spanish>
             <Japanese>IFAK</Japanese>
             <French>TIC</French>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Unpack">
             <English>MFAK</English>
             <German>MFAK</German>
+            <Spanish>BPAM</Spanish>
             <Japanese>MFAK</Japanese>
             <French>MFAK</French>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Unpack">
             <English>AFAK</English>
             <German>AFAK</German>
+            <Spanish>BPAA</Spanish>
             <Japanese>AFAK</Japanese>
             <French>AFAK</French>
         </Key>
