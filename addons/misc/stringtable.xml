@@ -1200,7 +1200,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty">
             <English>Remove when empty</English>
-            <Spanish>Retirar cuando esta vacio</Spanish>
+            <Spanish>Retirar cuando esté vacío</Spanish>
             <Japanese>空になったら削除する</Japanese>
             <French>Retirer lorsque vide</French>
         </Key>
