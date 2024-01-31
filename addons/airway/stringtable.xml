@@ -299,7 +299,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
-            <Spanish>Las vías respiratorias están obstruidas, es necesario gestionarlas</Spanish>
+            <Spanish>Las vías respiratorias están ocluidas, es necesario gestionarlas</Spanish>
             <Japanese>気道に異物があります、 医療吸引が必要です</Japanese>
             <Norwegian>Luftveien er okkludert, behov for medisinsk suging</Norwegian>
             <French>Voies aériennes occludées, aspiration médicale nécessaire</French>
