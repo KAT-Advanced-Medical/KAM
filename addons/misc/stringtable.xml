@@ -934,7 +934,6 @@
             <German>Definiert wo die Gegenstände des Erste Hilfe Kits hinzufugefügt werden. Sofern kein Platz vorhanden ist wird es auf den Boden hingelegt. \n Standard: Die Gegenstände werden dort hinzugefügt wo noch Platz ist.</German>
             <Japanese>応急処置キット(FAK)のアイテムを開梱するインベントリの場所を定義します。 空きスペースがない場合は地面に落とします。\nデフォルト: 空きスペースのある場所に開梱。</Japanese>
             <Spanish>Define dónde se agregan los elementos del botiquín de primeros auxilios. Si no queda espacio se dejarán caer al suelo. \n Predeterminado: los elementos se agregan donde queda espacio.</Spanish>
-            <Japanese>応急処置キット(FAK)のアイテムを展開するインベントリの場所を定義します。 空きスペースがない場合は地面に落とします。\nデフォルト: 空きスペースのある場所に展開。</Japanese>
             <French>Définie où les objets de la trousse de secours seront ajoutés. S'il n'y a pas assez de place ils seront placés au sol.\n Par défaut : les objets sont rajoutés là où il reste de la place.</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Default">
@@ -1023,7 +1022,6 @@
             <German>Das IFAK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
             <Japanese>IFAKは開梱することで有用な医療品を入手出来る</Japanese>
             <Spanish>El BPAI se puede desembalar para proporcionar artículos médicos útiles.</Spanish>
-            <Japanese>IFAKは展開することで有用な医療品を入手出来る</Japanese>
             <French>La TIC peut être déballée pour récupérer des objets médicaux utiles</French>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Display">
@@ -1038,7 +1036,6 @@
             <German>Das MFAK kann entpackt werden um nützliche medizinische Gegenstände bereitzustellen</German>
             <Japanese>MFAKは開梱することで有用な医療品を入手出来る</Japanese>
             <Spanish>El BPAM se puede desembalar para proporcionar artículos médicos útiles.</Spanish>
-            <Japanese>MFAKは展開することで有用な医療品を入手出来る</Japanese>
             <French>La MFAK peut être déballée pour récupérer des objets médicaux utiles</French>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Display">
