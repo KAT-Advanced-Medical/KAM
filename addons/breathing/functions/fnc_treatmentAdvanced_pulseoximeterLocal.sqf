@@ -33,16 +33,10 @@ _patient setVariable [QGVAR(PulseOximeter_Attached), _attachedPulseOximeter, tru
 [{
     params ["_args", "_idPFH"];
     _args params ["_patient", "_bodyPart"];
-
-    private _displayString = LSTRING(pulseoxi_Log);
-    if !(missionNamespace getVariable QGVAR(enable)) then {
-        _displayString = LSTRING(pulseoxi_Log_Disabled);
-    };
-
     if !(_patient getVariable [QGVAR(pulseoximeter), false]) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
         _patient setVariable ["kat_PulseoxiInUse_PFH", nil];
-        [_patient, "quick_view", _displayString] call EFUNC(circulation,removeLog);
+        [_patient, "quick_view", LSTRING(pulseoxi_Log)] call EFUNC(circulation,removeLog);
     };
 
     private _HR = GET_HEART_RATE(_patient);
@@ -53,8 +47,8 @@ _patient setVariable [QGVAR(PulseOximeter_Attached), _attachedPulseOximeter, tru
         _SpO2 = 0;
     };
 
-    [_patient, "quick_view", _displayString] call EFUNC(circulation,removeLog);
-    [_patient, "quick_view", _displayString, [round _HR, round _SpO2]] call ACEFUNC(medical_treatment,addToLog);
+    [_patient, "quick_view", LSTRING(pulseoxi_Log)] call EFUNC(circulation,removeLog);
+    [_patient, "quick_view", LSTRING(pulseoxi_Log), [round _HR, round _SpO2]] call ACEFUNC(medical_treatment,addToLog);
 }, 1, [_patient, _bodyPart]] call CBA_fnc_addPerFrameHandler;
 
 [{

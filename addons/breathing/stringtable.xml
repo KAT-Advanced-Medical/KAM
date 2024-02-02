@@ -7,9 +7,8 @@
             <Japanese>KAM-Breathing を有効化しますか?</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
-            <English>Sets if SPO2 simulation and according functionality \nlike Pneumothorax, Airway: occlusion &amp; obstruction should be activated</English>
-            <German>Aktiviere Athmungs Modul</German>
-            <Japanese>KAM-Breathing を有効化しますか?</Japanese>
+            <English>Sets if SPO2 simulation and according functionality like Pneumothorax and \nAirway: occlusion &amp; obstruction (SPO2 reduction will be deactivated) should be activated</English>
+            <German>Setzt ob SPO2 Simuliert werden soll mit funktionen wie Pneumothorax und Atemwege: Verstopfung &amp; Obstruktion (SPO2 reduktion wird deaktiviert)</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">
             <English>Lethal SpO2 value</English>
@@ -221,19 +220,6 @@
             <Russian>%1 подключен пульсоксиметр</Russian>
             <Japanese>%1 がパルスオキシメーターを装着した</Japanese>
             <Portuguese>%1 conectou um Oxímetro de Pulso</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Breathing_pulseoxi_Log_Disabled">
-            <English>Pulse Oximeter: PR: %1</English>
-            <German>Pulsoximeter: PR: %1</German>
-            <Polish>Pulsoksymetr: PR: %1</Polish>
-            <Czech>Pulzní Oxymetr: PR: %1</Czech>
-            <Korean>맥박 산소포화도: PR: %1</Korean>
-            <French>Oxymètre de pouls: PR: %1</French>
-            <Turkish>Nabız Oksimetresi: PR: %1</Turkish>
-            <Italian>Pulsossimetro: PR: %1</Italian>
-            <Japanese>パルスオキシメーター: 脈拍: %1</Japanese>
-            <Portuguese>Oxímetro de Pulso: FP: %1</Portuguese>
-            <Spanish>Oximetro de Pulso: RC: %1</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_pneumothorax_mm">
             <English>1x Pneumothorax</English>
