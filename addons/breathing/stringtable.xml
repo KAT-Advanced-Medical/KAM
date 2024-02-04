@@ -608,6 +608,7 @@
             <Spanish>El porcentaje de probabilidad que determina si un neumotórax completamente deteriorado se deteriorará hasta convertirse en un neumotórax avanzado, se calcula continuamente según lo establecido en el intervalo de deterioro del neumotórax.</Spanish>
             <Japanese>完全に悪化した気胸が高度な気胸に悪化するかどうかを決定する確率。これは、気胸が悪化する間隔で設定されたタイミング毎に継続的に計算されます。</Japanese>
             <French>Le pourcentage de chance qui détermine si un pneumothorax complètement détérioré se transforme en pneumothorax avancé. Ce pourcentage est relancé de manière continue en suivant l'intervalle de détérioration du pneumthorax configurée.</French>
+            <Korean>완전히 악화된 기흉이 고급 기흉으로 악화될 지 여부를 결정하는 확률입니다. 기흉 악화 간격에 따라 설정된 시간마다 지속적으로 계산됩니다.</Korean>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemothorax / Tension Pnuemothorax Treament Minimum Level</English>
@@ -1332,6 +1333,7 @@
             <English>Rescue Breaths Started</English>
             <Japanese>呼吸補助を開始した</Japanese>
             <French>Début des insufflations</French>
+            <Korean>응급 인공호흡 실시됨</Korean>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>

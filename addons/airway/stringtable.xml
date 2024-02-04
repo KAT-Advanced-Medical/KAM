@@ -282,6 +282,7 @@
             <Japanese>気道は閉塞していない</Japanese>
             <Norwegian>Luftvei er ikke blokkert</Norwegian>
             <French>Les voies aériennes ne sont pas obstruées</French>
+            <Korean>기도가 혀에 의해 막히지 않음</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion">
             <English>Airway is not occluded</English>
@@ -289,6 +290,7 @@
             <Japanese>気道に異物はありません</Japanese>
             <Norwegian>Luftvei er ikke okkludert</Norwegian>
             <French>Les voies aériennes ne sont pas occludées</French>
+            <Korean>기도가 구토에 의해 막히지 않음</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
@@ -296,6 +298,7 @@
             <Japanese>気道は閉塞しています、 気道管理が必要です</Japanese>
             <Norwegian>Luftvei er blokkert, behov for luftveishåndtering</Norwegian>
             <French>Voies aériennes obstruées, geste médical nécessaire</French>
+            <Korean>기도가 혀에 의해 막힘, 관리 필요</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
@@ -303,6 +306,7 @@
             <Japanese>気道に異物があります、 医療吸引が必要です</Japanese>
             <Norwegian>Luftveien er okkludert, behov for medisinsk suging</Norwegian>
             <French>Voies aériennes occludées, aspiration médicale nécessaire</French>
+            <Korean>기도가 구토에 의해 막힘, 의료용 석션 필요</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
             <English>Airway is clear</English>
@@ -378,6 +382,7 @@
             <Japanese>患者は既に頭部後屈されています</Japanese>
             <Norwegian>Pasientens hode er allerede hyperforlenget</Norwegian>
             <French>La tête du patient est déjà en hyperextension</French>
+            <Korean>환자의 머리는 이미 뒤로 젖혀졌습니다</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_progress">
             <English>Hyperextending head</English>
@@ -419,6 +424,7 @@
             <Japanese>頭部後屈させた</Japanese>
             <Norwegian>hyperforlengelse av hodet fullført</Norwegian>
             <French>Hyperextension réalisée avec succès</French>
+            <Korean>환자 머리를 뒤로 젖히기 성공</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -480,6 +486,7 @@
             <Japanese>異物除去を開始した</Japanese>
             <Norwegian>Startet vending av hode</Norwegian>
             <French>Rotation de la tête débutée</French>
+            <Korean>고개 돌리기 시작됨</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
@@ -511,6 +518,7 @@
         <Key ID="STR_KAT_Airway_Accuvac_Success">
             <English>Medical suction completed, Occlusion removed</English>
             <Japanese>医療吸引が完了し、 異物が除去されました</Japanese>
+            <Korean>의료욕 석션 완료, 구토 제거됨</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
@@ -617,6 +625,7 @@
         <Key ID="STR_KAT_Airway_Accuvac_Display">
             <English>ACCUVAC</English>
             <Japanese>アキュバック</Japanese>
+            <Korean>의료용 석션</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
@@ -638,26 +647,32 @@
         <Key ID="STR_KAT_Airway_AccuvacTreatment_displayName">
             <English>Airway Suction</English>
             <Japanese>気道吸引</Japanese>
+            <Korean>기도 흡입</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Display">
             <English>Manual Suction Pump</English>
             <Japanese>手動式吸引器</Japanese>
+            <Korean>의료용 석션 (수동)</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
             <Japanese>手動式吸引器は、手動ポンプで動作する気道吸引の為の医療用吸引装置です。これは電気駆動の装置を代替することが可能です。</Japanese>
+            <Korean>수동 의료용 석션은 수동으로 기도 흡입을 하는 의료용 석션 장비입니다. 전기 장비에 대한 대안입니다.</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_SuctionTreatment_displayName">
             <English>Airway Suction (Manual)</English>
             <Japanese>気道吸引 (手動式)</Japanese>
+            <Korean>기도 흡입 (수동)</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse">
             <English>Reusable Manual Suction Pump</English>
             <Japanese>手動式吸引器の再利用</Japanese>
+            <Korean>의료용 석션 (수동) 재활용</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse_DESC">
             <English>Regain the Manual Suction Pump after use</English>
             <Japanese>手動式吸引器の使用後、再利用できるようにします。</Japanese>
+            <Korean>수동 기도 흡입 사용 후 재사용 가능 여부</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -815,10 +830,12 @@
         <Key ID="STR_KAT_Airway_ALLOW_SUCTION">
             <English>Allow Manual Suction Pump</English>
             <Japanese>手動吸引器の許可</Japanese>
+            <Korean>의료용 석션 (수동) 허용</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_SUCTION_DESC">
             <English>Training level required to use an Manual Suction Pump</English>
             <Japanese>手動吸引器の使用に必要な医療スキルのレベルを設定します。</Japanese>
+            <Korean>의료용 석션 (수동) 사용에 필요한 의료 레벨 수준</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
             <English>Time to check Airway</English>
@@ -955,10 +972,12 @@
         <Key ID="STR_KAT_Airway_TIME_SUCTION">
             <English>Time for Manual Suction Pump</English>
             <Japanese>手動吸引器の所要時間</Japanese>
+            <Korean>의료용 석션 (수동) 사용 시간</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
             <English>How long it will take to use Manual Suction Pump</English>
             <Japanese>手動吸引器を使用するのにどのくらい時間がかかるか設定します</Japanese>
+            <Korean>의료용 석션 (수동)을 사용하는 데 걸리는 시간입니다</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS">
             <English>Time for Larynxtubus</English>
@@ -1123,6 +1142,7 @@
             <Japanese>%1 が回復体位を崩した</Japanese>
             <Norwegian>%1 kansellerte stabilt sideleie</Norwegian>
             <French>%1 a annulé la position latérale de sécurité</French>
+            <Korean>%1이(가) 회복자세를 취소했습니다</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
@@ -1205,6 +1225,7 @@
             <Japanese>回復体位を崩すのにどのくらい時間がかかるか設定します</Japanese>
             <Norwegian>Hvor lang tid det vil ta å manuelt kansellere stabilt sideleie</Norwegian>
             <French>Combien de temps sera nécessaire pour annuler la position latérale de sécurité</French>
+            <Korean>회복자세를 수동으로 취소하는 데 걸리는 시간</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
@@ -1212,6 +1233,7 @@
             <Japanese>回復体位による異物排出にかかる時間</Japanese>
             <Norwegian>Tid i stabilt sideleie for å bli kvitt okklusjonen</Norwegian>
             <French>Temps pour retirer l'occlusion en position latérale de sécurité</French>
+            <Korean>회복자세로 구토를 배출하는 데 걸리는 시간</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
@@ -1219,6 +1241,7 @@
             <Japanese>回復体位にある患者の気道異物が排出され解消するまでに必要な最大時間。</Japanese>
             <Norwegian>Maks nødvendig tid en pasient må være i stabilt sideleie for å bli kvitt okklusjonen.</Norwegian>
             <French>Temps maximal pour qu'une occlusion disparaisse sur un patient en position latérale de sécurité</French>
+            <Korean>환자가 회복자세로 구토를 배출하는 데 필요한 최대 시간입니다.</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
@@ -1226,10 +1249,12 @@
             <Japanese>回復体位と頭部後屈設定</Japanese>
             <Norwegian>Instillinger for stabil sideleie og Hyperforlengelse av hodet</Norwegian>
             <French>Paramètres de la position latérale de sécurité + hyperextension</French>
+            <Korean>회복자세 + 머리 뒤로 젖히기 설정</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Suction">
             <English>Suction devices Settings</English>
             <Japanese>気道吸引器設定</Japanese>
+            <Korean>석션 장비 설정</Korean>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>
