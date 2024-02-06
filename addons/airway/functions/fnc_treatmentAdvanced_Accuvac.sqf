@@ -28,21 +28,19 @@ if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
 
     if (_usedItem isEqualTo "kat_suction") then {
         if (GVAR(Suction_reuse)) then {
-            _medic addItem "kat_suction";
+            [_medic, "kat_suction"] call ACEFUNC(common,addToInventory);
         };
     };
 };
 
 if (_usedItem isEqualTo "kat_suction") then {
     if (GVAR(Suction_reuse)) then {
-        _medic addItem "kat_suction";
+        [_medic, "kat_suction"] call ACEFUNC(common,addToInventory);
     };
 };
 
-private _treatmentName = LLSTRING(AccuvacTreatment_displayName);
-[_patient, _treatmentName] call ACEFUNC(medical_treatment,addToTriageCard);
-
-private _outputSuccess = LLSTRING(Accuvac_Success);
-[_outputSuccess, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+[_patient, LLSTRING(AccuvacTreatment_displayName)] call ACEFUNC(medical_treatment,addToTriageCard);
+[_patient, "activity", LSTRING(Suction_Log), [[_medic] call ACEFUNC(common,getName), getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);
+[LLSTRING(Accuvac_Success), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 
 [QGVAR(accuvacLocal), _patient, _patient] call CBA_fnc_targetEvent;

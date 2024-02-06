@@ -420,6 +420,9 @@
             <Norwegian>hyperforlengelse av hodet fullført</Norwegian>
             <French>Hyperextension réalisée avec succès</French>
         </Key>
+        <Key ID="STR_KAT_Airway_Hyperextend_Log">
+            <English>%1 hyperextended %2s head</English>
+        </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
             <German>Kopfdrehung durchgeführt, Atemwege sind noch nicht frei</German>
@@ -642,6 +645,9 @@
         <Key ID="STR_KAT_Airway_Suction_Display">
             <English>Manual Suction Pump</English>
             <Japanese>手動式吸引器</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_Suction_Log">
+            <English>%1 did a medical suction using a %2</English>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
