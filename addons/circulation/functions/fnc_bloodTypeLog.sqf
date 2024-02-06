@@ -21,14 +21,14 @@ params ["_medic", "_patient"];
 private _bloodType = _patient getVariable [QGVAR(bloodtype), "O_N"];
 private _bloodTypeLog = "";
 switch (_bloodType) do {
-	case "A": { _bloodTypeLog = "A+" };
-	case "A_N": { _bloodTypeLog = "A-" };
-	case "B": { _bloodTypeLog = "B+" };
-	case "B_N": { _bloodTypeLog = "B-" };
-	case "AB": { _bloodTypeLog = "AB+" };
-	case "AB_N": { _bloodTypeLog = "AB-" };
-	case "O": { _bloodTypeLog = "0+" };
-	default { _bloodTypeLog = "0-" };
+    case "A": { _bloodTypeLog = "A+" };
+    case "A_N": { _bloodTypeLog = "A-" };
+    case "B": { _bloodTypeLog = "B+" };
+    case "B_N": { _bloodTypeLog = "B-" };
+    case "AB": { _bloodTypeLog = "AB+" };
+    case "AB_N": { _bloodTypeLog = "AB-" };
+    case "O": { _bloodTypeLog = "0+" };
+    default { _bloodTypeLog = "0-" };
 };
 
 [_patient, "quick_view", LSTRING(bloodtype_log), [[_medic] call ACEFUNC(common,getName), _bloodTypeLog]] call ACEFUNC(medical_treatment,addToLog);
