@@ -58,11 +58,8 @@ class CfgWeapons {
         scope = 2;
         displayName = CSTRING(IV_16_Display);
         picture = QPATHTOF(ui\icon_IV_16.paa);
-        model = QPATHTOF(models\iv\kat_iv.p3d);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(IV_DescShort);
-        hiddenSelections[]={"0"};
-        hiddenSelectionsMaterials[] = {QPATHTOF(models\iv\kat_iv.rvmat)};
-        hiddenSelectionsTextures[] = {QPATHTOF(models\iv\kat_iv_co.paa)};
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
@@ -86,38 +83,99 @@ class CfgWeapons {
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Naloxone_DescShort);
         ACE_isMedicalItem = 1;
+        
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
     };
     class kat_EACA: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(EACA_Display);
         picture = QPATHTOF(ui\icon_TXA.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(EACA_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			//"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
         };
     };
     class kat_TXA: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(TXA_Box_Display);
         picture = QPATHTOF(ui\icon_TXA.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(TXA_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine"
+			//"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
     };
     class kat_norepinephrine: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Norep_Box_Display);
         picture = QPATHTOF(ui\norep.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Norep_DescShort);
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			//"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
@@ -125,121 +183,342 @@ class CfgWeapons {
     };
     class kat_phenylephrine: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Phenyl_Box_Display);
         picture = QPATHTOF(ui\phen.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Phenyl_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			//"label_phenylephrine",
+			"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
     };
     class kat_nitroglycerin: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Nitro_Box_Display);
         picture = QPATHTOF(ui\nitro.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Nitro_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			//"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
     };
     class kat_amiodarone: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Amiodarone_Box_Display);
         picture = QPATHTOF(ui\icon_Amiodarone.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Amiodarone_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            //"label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
     };
     class kat_lidocaine: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Lidocaine_Box_Display);
         picture = QPATHTOF(ui\icon_Lidocaine.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Lidocaine_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			//"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
     };
     class kat_atropine: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Atropine_Box_Display);
         picture = QPATHTOF(ui\icon_Atropine.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Atropine_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			//"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
     };
     class kat_ketamine: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Ketamine_Box_Display);
         picture = QPATHTOF(ui\icon_Ketamine.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Ketamine_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			//"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
     };
     class kat_fentanyl: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Fentanyl_Box_Display);
         picture = QPATHTOF(ui\icon_Fentanyl.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Fentanyl_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			//"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
     };
     class kat_nalbuphine: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Nalbuphine_Box_Display);
         picture = QPATHTOF(ui\icon_Nalbuphine.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Nalbuphine_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			//"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         }; 
     };
         class kat_lorazepam: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Lorazepam_displayName);
         picture = QPATHTOF(ui\icon_lorazepam.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Lorazepam_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			//"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
         }; 
     };
     class kat_flumazenil: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Flumazenil_displayName);
         picture = QPATHTOF(ui\icon_flumazenil.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Flumazenil_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			"label_etomidate",
+			"label_fentanyl",
+			//"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
         }; 
     };
     class kat_etomidate: ACE_ItemCore {
         scope = 2;
+        author = "fijik,Archer,J3FF";
         displayName = CSTRING(Etomidate_displayName);
         picture = QPATHTOF(ui\icon_etomidate.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\vial\vial_01.p3d);
         descriptionShort = CSTRING(Etomidate_DescShort);
         ACE_isMedicalItem = 1;
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2",
+            "label_amiodarone",
+			"label_atropine",
+			"label_EACA",
+			//"label_etomidate",
+			"label_fentanyl",
+			"label_flumazenil",
+			"label_ketamine",
+			"label_lidocaine",
+			"label_lorazepam",
+			"label_nalbuphine",
+			"label_nitroglycerin",
+			"label_Norepinephrine",
+			"label_phenylephrine",
+			"label_TXA"
+        };
+
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.2;
         }; 

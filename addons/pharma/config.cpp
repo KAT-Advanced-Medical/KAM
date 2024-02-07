@@ -6,7 +6,21 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         units[] = {
             "kat_PainkillerItem",
-            "kat_X_AEDItem"
+            "kat_X_AEDItem",
+            "kat_EACAItem",
+            "kat_TXAItem",
+            "kat_norepinephrineItem",
+            "kat_phenylephrineItem",
+            "kat_nitroglycerinItem",
+            "kat_amiodaroneItem",
+            "kat_lidocaineItem",
+            "kat_atropineItem",
+            "kat_ketamineItem",
+            "kat_fentanylItem",
+            "kat_nalbuphineItem",
+            "kat_flumazenilItem",
+            "kat_lorazepamItem",
+            "kat_etomidateItem"
         };
         weapons[] = {
             "kat_Painkiller",
