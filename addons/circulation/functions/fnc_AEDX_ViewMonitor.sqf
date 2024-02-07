@@ -188,6 +188,10 @@ GVAR(PulseRateReady) = true;
                 } else {
                     _PRBar ctrlSetPosition [(ctrlPosition _PRBar) select 0, (ctrlPosition _PRBar) select 1, (ctrlPosition _PRBar) select 2, KAT_pxToScreen_H(71)];
                     _PRBar ctrlCommit 0.1;
+
+                    [{
+                        GVAR(PulseRateReady) = true;
+                    }, [], 0.1] call CBA_fnc_waitAndExecute;
                 };
             };
         } else {

@@ -27,6 +27,7 @@ _unit setVariable [QEGVAR(airway,obstruction), false, true];
 _unit setVariable [QEGVAR(airway,airway), false, true];
 _unit setVariable [QEGVAR(airway,occluded), false, true];
 _unit setVariable [QEGVAR(airway,overstretch), false, true];
+_unit setVariable [QEGVAR(airway,wasOccluded), false];
 KAT_forceWakeup = false;
 _unit setVariable [QEGVAR(airway,recovery), false, true];
 _unit setVariable [QEGVAR(airway,airway_item), "", true];
@@ -91,6 +92,11 @@ _unit setVariable [QEGVAR(misc,isLeftArmFree), true, true];
 _unit setVariable [QEGVAR(misc,isRightArmFree), true, true];
 _unit setVariable [QEGVAR(misc,isLeftLegFree), true, true];
 _unit setVariable [QEGVAR(misc,isRightLegFree), true, true];
+
+_unit setVariable [QGVAR(Tourniquet_ArmNecrosis), 0];
+_unit setVariable [QGVAR(Tourniquet_LegNecrosis), 0];
+_unit setVariable [QGVAR(Tourniquet_PFH), -1];
+_unit setVariable [QGVAR(Tourniquet_LegNecrosis_Threshold), 0, true];
 
 // KAT Pharmacy
 

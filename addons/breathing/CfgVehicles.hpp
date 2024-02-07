@@ -34,6 +34,12 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_chestSeal,25);
             MACRO_ADDITEM(kat_aatKit,10);
             MACRO_ADDITEM(kat_stethoscope,5);
+            MACRO_ADDITEM(kat_BVM,5);
+            MACRO_ADDITEM(kat_pocketBVM,5);
+        };
+        class TransportMagazines: TransportMagazines {
+            MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
+            MACRO_ADDMAGAZINE(kat_oxygenTank_300,2);
         };
     };
     class kat_basicSupplyCrate: ACE_medicalSupplyCrate {
@@ -42,6 +48,7 @@ class CfgVehicles {
             MACRO_ADDITEM(Attachable_Helistretcher,5);
             MACRO_ADDITEM(kat_stretcherBag,5);
             MACRO_ADDITEM(kat_accuvac,2);
+            MACRO_ADDITEM(kat_suction,15);
             MACRO_ADDITEM(kat_guedel,15);
             MACRO_ADDITEM(kat_larynx,15);
             MACRO_ADDITEM(kat_aatKit,15);
@@ -55,6 +62,12 @@ class CfgVehicles {
             MACRO_ADDITEM(KAT_Empty_bloodIV_500,7);
             MACRO_ADDITEM(kat_AED,2);
             MACRO_ADDITEM(kat_X_AED,2);
+            MACRO_ADDITEM(kat_BVM,5);
+            MACRO_ADDITEM(kat_pocketBVM,5);
+        };
+        class TransportMagazines: TransportMagazines {
+            MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
+            MACRO_ADDMAGAZINE(kat_oxygenTank_300,2);
         };
     };
 

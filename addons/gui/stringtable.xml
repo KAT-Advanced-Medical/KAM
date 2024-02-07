@@ -58,7 +58,7 @@
         <Key ID="STR_KAT_GUI_SETTING_showInactiveStatuses">
             <English>Show Inactive Statuses</English>
             <Korean>비활성 상태 표시</Korean>
-            <Japanese>非活動状態の表示</Japanese>
+            <Japanese>非アクティブなステータスを表示</Japanese>
             <German>Inaktive Status anzeigen</German>
             <French>Montrer les status inactifs</French>
             <Portuguese>Mostrar status inativos</Portuguese>

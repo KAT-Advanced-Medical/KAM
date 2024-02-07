@@ -69,6 +69,7 @@ _unit setVariable [QACEGVAR(medical,fractures), [0,0,0,0,0,0], true];
 
 //KAT Airway
 _unit setVariable [QEGVAR(airway,occluded), false, true];
+_unit setVariable [QEGVAR(airway,wasOccluded), false];
 _unit setVariable [QEGVAR(airway,obstruction), false, true];
 _unit setVariable [QEGVAR(airway,recovery), false, true];
 _unit setVariable [QEGVAR(airway,overstretch), false, true];
@@ -121,6 +122,12 @@ _unit setVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(surgery,lidocaine), false, true];
 _unit setVariable [QEGVAR(surgery,etomidate), false, true];
 _unit setVariable [QEGVAR(surgery,sedated), false, true];
+
+// KAT Misc
+_unit setVariable [QGVAR(Tourniquet_ArmNecrosis), 0];
+_unit setVariable [QGVAR(Tourniquet_LegNecrosis), 0];
+_unit setVariable [QGVAR(Tourniquet_PFH), -1];
+_unit setVariable [QGVAR(Tourniquet_LegNecrosis_Threshold), 0, true];
 
 // Damage storage
 _unit setVariable [QACEGVAR(medical,bodyPartDamage), [0,0,0,0,0,0], true];

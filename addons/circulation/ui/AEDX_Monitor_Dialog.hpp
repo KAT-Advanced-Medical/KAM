@@ -62,7 +62,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             type = 0;
             style = 0;
             font = "RobotoCondensed";
-            sizeEx = QUOTE(KAT_GRID_H * 0.6);
+            sizeEx = QUOTE(KAT_GRID_H * 0.6 * (0.55 / (getResolution select 5)));
             shadow = 0;
             colorBackground[] = {0.77,0.96,0.32,1};
             colorText[] = {0,0,0,1};
@@ -139,7 +139,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             type = 0;
             style = 0;
             font = "RobotoCondensed";
-            sizeEx = QUOTE(KAT_GRID_H * 0.6);
+            sizeEx = QUOTE(KAT_GRID_H * 0.6 * (0.55 / (getResolution select 5)));
             shadow = 0;
             colorBackground[] = {0.99,0.97,0.02,1};
             colorText[] = {0,0,0,0};
@@ -174,7 +174,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             type = 0;
             style = 2;
             font = "RobotoCondensed";
-            sizeEx = QUOTE(KAT_GRID_H * 2.5);
+            sizeEx = QUOTE(KAT_GRID_H * 2.5 * (0.55 / (getResolution select 5)));
             shadow = 0;
             colorBackground[] = {0,0,0,0};
             colorText[] = {0.77,0.96,0.32,1};
@@ -186,7 +186,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             x = QUOTE(KAT_pxToScreen_X(760));
             w = QUOTE(KAT_pxToScreen_W(120));
             h = QUOTE(KAT_pxToScreen_H(70));
-            sizeEx = QUOTE(KAT_GRID_H * 1.8);
+            sizeEx = QUOTE(KAT_GRID_H * 1.8 * (0.55 / (getResolution select 5)));
             colorText[] = {0.04,0.96,0.98,1};
             text = "---";
         };
@@ -201,7 +201,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             x = QUOTE(KAT_pxToScreen_X(910));
             w = QUOTE(KAT_pxToScreen_W(100));
             h = QUOTE(KAT_pxToScreen_H(60));
-            sizeEx = QUOTE(KAT_GRID_H * 1.1);
+            sizeEx = QUOTE(KAT_GRID_H * 1.1 * (0.55 / (getResolution select 5)));
             colorText[] = {0.04,0.96,0.98,1};
             text = "";
         };
@@ -209,7 +209,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             idc = IDC_DISPLAY_RESP;
             x = QUOTE(KAT_pxToScreen_X(1010));
             h = QUOTE(KAT_pxToScreen_H(120));
-            sizeEx = QUOTE(KAT_GRID_H * 0.7);
+            sizeEx = QUOTE(KAT_GRID_H * 0.7 * (0.55 / (getResolution select 5)));
             colorText[] = {0.73,0.02,0.74,1};
             text = "Resp off";
         };
@@ -229,7 +229,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             type = 0;
             style = 0;
             font = "RobotoCondensed";
-            sizeEx = QUOTE(KAT_GRID_H * 0.8);
+            sizeEx = QUOTE(KAT_GRID_H * 0.8 * (0.55 / (getResolution select 5)));
             shadow = 0;
             colorBackground[] = {0,0,0,0};
             colorText[] = {1,1,1,1};
@@ -262,11 +262,11 @@ class GVAR(AEDX_Monitor_Dialog) {
             type = 0;
             style = 2;
             font = "RobotoCondensed";
-            sizeEx = QUOTE(KAT_GRID_H * 0.6);
+            sizeEx = QUOTE(KAT_GRID_H * 0.6 * (0.55 / (getResolution select 5)));
             shadow = 0;
             colorBackground[] = {0,0,0,0};
             colorText[] = {0,1,0,1};
-            text = LSTRING(AEDX_Monitor_CheckPads);
+            text = CSTRING(AEDX_Monitor_CheckPads);
         };
         class ChargingStatusBlackBackground: BlackBackground {
             idc = IDC_CHARGE_BBACKGROUND;
@@ -293,11 +293,11 @@ class GVAR(AEDX_Monitor_Dialog) {
             type = 0;
             style = 2;
             font = "RobotoCondensed";
-            sizeEx = QUOTE(KAT_GRID_H * 0.8);
+            sizeEx = QUOTE(KAT_GRID_H * 0.8 * (0.55 / (getResolution select 5)));
             shadow = 0;
             colorBackground[] = {0.05,0.85,0.36,1};
             colorText[] = {0,0,0,1};
-            text = "Defibrillator";
+            text = CSTRING(AEDX_Monitor_Defibrillator);
             show = 0;
         };
         class ChargingStatus: ChargingStatusDefibrillator {
@@ -305,23 +305,23 @@ class GVAR(AEDX_Monitor_Dialog) {
             y = QUOTE(KAT_pxToScreen_Y(1189));
             w = QUOTE(KAT_pxToScreen_W(400));
             h = QUOTE(KAT_pxToScreen_H(172));
-            sizeEx = QUOTE(KAT_GRID_H * 1.5);
+            sizeEx = QUOTE(KAT_GRID_H * 1.5 * (0.55 / (getResolution select 5)));
             colorBackground[] = {1,0.35,0,1};
             colorText[] = {0,0,0,1};
-            text = "CHARGING";
+            text = CSTRING(AEDX_Monitor_CHARGING);
         };
         class ChargingStatusEnergySelect: ChargingStatusDefibrillator {
             idc = IDC_CHARGE_ENERGY_SELECT;
             x = QUOTE(KAT_pxToScreen_X(1065));
             w = QUOTE(KAT_pxToScreen_W(270));
-            text = "Selected energy";
+            text = CSTRING(AEDX_Monitor_SelectedEnergy);
         };
         class ChargingStatusEnergySelectAmount: ChargingStatus {
             idc = IDC_CHARGE_ENERGY_AMOUNT;
             x = QUOTE(KAT_pxToScreen_X(1065));
             w = QUOTE(KAT_pxToScreen_W(270));
             font = "RobotoCondensedBold";
-            sizeEx = QUOTE(KAT_GRID_H * 2.5);
+            sizeEx = QUOTE(KAT_GRID_H * 2.5 * (0.55 / (getResolution select 5)));
             colorBackground[] = {0,0,0,1};
             colorText[] = {1,1,1,1};
             text = "150 J";
@@ -350,7 +350,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             type = 0;
             style = 2;
             font = "RobotoCondensedBold";
-            sizeEx = QUOTE(KAT_GRID_H * 0.6);
+            sizeEx = QUOTE(KAT_GRID_H * 0.6 * (0.55 / (getResolution select 5)));
             shadow = 0;
             colorBackground[] = {0,0,0,0};
             colorText[] = {1,1,1,1};
@@ -446,7 +446,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             idc = IDC_CHARGE_BAR_150;
             y = QUOTE(KAT_pxToScreen_Y(682));
             h = QUOTE(KAT_pxToScreen_H(66));
-            sizeEx = QUOTE(KAT_GRID_H * 1.5);
+            sizeEx = QUOTE(KAT_GRID_H * 1.5 * (0.55 / (getResolution select 5)));
             text = "150";
         };
         class ChargingStatusBar200: ChargingStatusBar1 {
@@ -468,7 +468,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             type = 0;
             style = 2;
             font = "RobotoCondensedBold";
-            sizeEx = QUOTE(KAT_GRID_H);
+            sizeEx = QUOTE(KAT_GRID_H * (0.55 / (getResolution select 5)));
             shadow = 0;
             colorBackground[] = {0,0,0,0};
             colorText[] = {1,1,1,1};
@@ -510,7 +510,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             type = 0;
             style = 2;
             font = "RobotoCondensed";
-            sizeEx = QUOTE(KAT_GRID_H * 1);
+            sizeEx = QUOTE(KAT_GRID_H * 1 * (0.55 / (getResolution select 5)));
             shadow = 0;
             colorBackground[] = {0,0,0,0};
             colorText[] = {1,1,1,1};
@@ -522,7 +522,7 @@ class GVAR(AEDX_Monitor_Dialog) {
             y = QUOTE(KAT_pxToScreen_Y(1198));
             h = QUOTE(KAT_pxToScreen_H(150));
             font = "RobotoCondensedBold";
-            sizeEx = QUOTE(KAT_GRID_H * 1.6);
+            sizeEx = QUOTE(KAT_GRID_H * 1.6 * (0.55 / (getResolution select 5)));
             text = "";
         };
         class AEDModeFeedbackMessageBackground: EKG {

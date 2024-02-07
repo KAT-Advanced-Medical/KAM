@@ -153,7 +153,7 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(medLvl_Accuvac),
     "LIST",
     [LLSTRING(ALLOW_ACCUVAC),LLSTRING(ALLOW_ACCUVAC_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
@@ -163,8 +163,38 @@ In real life, this will happen sometimes, not quiet often.
     QGVAR(Accuvac_time),
     "SLIDER",
     [LLSTRING(TIME_ACCUVAC),LLSTRING(TIME_ACCUVAC_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
-    [1, 20, 8, 0],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
+    [1, 30, 8, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//Settable list for using Manual Suction Pump per medical class
+[
+    QGVAR(medLvl_Suction),
+    "LIST",
+    [LLSTRING(ALLOW_SUCTION),LLSTRING(ALLOW_SUCTION_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Settable action time for Manual Suction Pump
+[
+    QGVAR(Suction_time),
+    "SLIDER",
+    [LLSTRING(TIME_SUCTION),LLSTRING(TIME_SUCTION_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
+    [1, 30, 12, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Reuse Item checkbox for Manual Suction Pump
+[
+    QGVAR(Suction_reuse),
+    "CHECKBOX",
+    [LLSTRING(SUCTION_REUSE),LLSTRING(SUCTION_REUSE_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Suction)],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -200,10 +230,10 @@ In real life, this will happen sometimes, not quiet often.
 
 // Settable action time for Head overstretching
 [
-    QGVAR(Overstretch_time),
+    QGVAR(Hyperextend_Time),
     "SLIDER",
-    [LLSTRING(TIME_OVERSTRETCH),LLSTRING(TIME_OVERSTRETCH_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionOverstretch)],
+    [LLSTRING(Hyperextend_Time), LLSTRING(Hyperextend_Time_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
     [1, 10, 3, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -212,9 +242,9 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(RecoveryPosition_Time),
     "SLIDER",
-    [LLSTRING(TIME_RECOVERY),LLSTRING(TIME_RECOVERY_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionOverstretch)],
-    [1, 120, 6, 0],
+    [LLSTRING(SETTING_RecoveryPosition_Time), LLSTRING(SETTING_RecoveryPosition_Time_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
+    [1, 60, 6, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -222,9 +252,19 @@ In real life, this will happen sometimes, not quiet often.
 [
     QGVAR(CancelRecoveryPosition_Time),
     "SLIDER",
-    [LLSTRING(TIME_CANCELRECOVERY),LLSTRING(TIME_CANCELRECOVERY_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionOverstretch)],
-    [1, 120, 6, 0],
+    [LLSTRING(SETTING_CancelRecoveryPosition_Time), LLSTRING(SETTING_CancelRecoveryPosition_Time_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
+    [1, 60, 3, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Settable maximum time required for occlusion to be cleared from patient in recovery position
+[
+    QGVAR(RecoveryPosition_TimeToDrain),
+    "SLIDER",
+    [LLSTRING(SETTING_RecoveryPosition_TimeToDrain), LLSTRING(SETTING_RecoveryPosition_TimeToDrain_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_RecoveryPositionHyperextend)],
+    [0, 30, 10, 0],
     true
 ] call CBA_Settings_fnc_init;
 
