@@ -57,7 +57,7 @@ Originaly created by Katalam, currently maintained by Tomcat, Kygan, YetheSamart
     - [x] Head hyper-extension
     - [x] Intubation
     - [x] Aspiration
-    - [x] Items such as Guedel Tube, King LT and Accuvacc
+    - [x] Items such as Guedel Tube, King LT and Suction Devices (Accuvac, Manual Suction Pump)
     - [x] Recovery position
 - Breathing
   - [x] Oxygen saturation

@@ -1338,11 +1338,15 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_Defibrillator">
             <English>Defibrillator</English>
+            <Spanish>Desfibrilador</Spanish>
             <Japanese>除細動器</Japanese>
+            <French>Défibrillateur</French>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SelectedEnergy">
             <English>Selected Energy</English>
+            <Spanish>Energía seleccionada</Spanish>
             <Japanese>選択済のｴﾈﾙｷﾞｰ</Japanese>
+            <French>Energie sélectionnée</French>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
@@ -2043,6 +2047,7 @@
         <Key ID="STR_KAT_Circulation_StartCPR">
             <English>CPR Started</English>
             <Japanese>CPRを開始した</Japanese>
+            <French>RCP débuté</French>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>

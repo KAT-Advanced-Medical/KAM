@@ -278,23 +278,31 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noObstruction">
             <English>Airway is not obstructed</English>
+            <Spanish>Las vías aéreas no están obstruidas</Spanish>
             <Japanese>気道は閉塞していない</Japanese>
             <Norwegian>Luftvei er ikke blokkert</Norwegian>
+            <French>Les voies aériennes ne sont pas obstruées</French>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion">
             <English>Airway is not occluded</English>
+            <Spanish>Las vías aéreas no están ocluidas</Spanish>
             <Japanese>気道に異物はありません</Japanese>
             <Norwegian>Luftvei er ikke okkludert</Norwegian>
+            <French>Les voies aériennes ne sont pas occludées</French>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
+            <Spanish>Las vías respiratorias están obstruidas, es necesario gestionarlas</Spanish>
             <Japanese>気道は閉塞しています、 気道管理が必要です</Japanese>
             <Norwegian>Luftvei er blokkert, behov for luftveishåndtering</Norwegian>
+            <French>Voies aériennes obstruées, geste médical nécessaire</French>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
+            <Spanish>Las vías respiratorias están ocluidas, es necesario gestionarlas</Spanish>
             <Japanese>気道に異物があります、 医療吸引が必要です</Japanese>
             <Norwegian>Luftveien er okkludert, behov for medisinsk suging</Norwegian>
+            <French>Voies aériennes occludées, aspiration médicale nécessaire</French>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
             <English>Airway is clear</English>
@@ -330,7 +338,7 @@
             <Portuguese>O item não pôde ser usado, vias aéreas bloqueadas</Portuguese>
             <Norwegian>Gjenstanden kunne ikke brukes, luftveiene er ikke frie</Norwegian>
         </Key>
-        <Key ID="STR_KAT_Airway_Hyperextend_diplayName">
+        <Key ID="STR_KAT_Airway_Hyperextend_displayName">
             <English>Hyperextending Head</English>
             <German>Kopf überstrecken</German>
             <Polish>Odchyl głowę</Polish>
@@ -366,8 +374,10 @@
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_already">
             <English>Patient's head is already hyperextended</English>
+            <Spanish>La cabeza del paciente ya está hiperextendida</Spanish>
             <Japanese>患者は既に頭部後屈されています</Japanese>
             <Norwegian>Pasientens hode er allerede hyperforlenget</Norwegian>
+            <French>La tête du patient est déjà en hyperextension</French>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_progress">
             <English>Hyperextending head</English>
@@ -405,8 +415,10 @@
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Ready">
             <English>Head hyperextended successfully</English>
+            <Spanish>Cabeza hiperextendida con éxito</Spanish>
             <Japanese>頭部後屈させた</Japanese>
             <Norwegian>hyperforlengelse av hodet fullført</Norwegian>
+            <French>Hyperextension réalisée avec succès</French>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -464,8 +476,10 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_start">
             <English>Head Turning Started</English>
+            <Spanish>Comenzó a girar la cabeza</Spanish>
             <Japanese>異物除去を開始した</Japanese>
             <Norwegian>Startet vending av hode</Norwegian>
+            <French>Rotation de la tête débutée</French>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
@@ -493,6 +507,10 @@
             <Japanese>医療吸引は必要ありません</Japanese>
             <Portuguese>Sucção médica não necessária</Portuguese>
             <Norwegian>Ingen behov for medisinsk suging</Norwegian>
+        </Key>
+        <Key ID="STR_KAT_Airway_Accuvac_Success">
+            <English>Medical suction completed, Occlusion removed</English>
+            <Japanese>医療吸引が完了し、 異物が除去されました</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
@@ -596,6 +614,10 @@
             <Portuguese>A Cânula de Guedel evita obstruções</Portuguese>
             <Norwegian>Guedel Tube brukes for å redde luftveiene</Norwegian>
         </Key>
+        <Key ID="STR_KAT_Airway_Accuvac_Display">
+            <English>ACCUVAC</English>
+            <Japanese>アキュバック</Japanese>
+        </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
             <German>Der ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
@@ -609,9 +631,33 @@
             <Turkish>ACCUVAC, acil tıpta mobil kullanım için pilli hava yolu emişine yönelik tıbbi bir emme cihazıdır.</Turkish>
             <Italian>L'ACCUVAC è un dispositivo medico portatile di suzione a batterie per aspirare le vie aeree in caso di emergenza</Italian>
             <Russian>ACCUVAC — это медицинский отсасыватель для отсасывания из дыхательных путей с аккумуляторным приводом для мобильного использования в неотложной медицине.</Russian>
-            <Japanese>ACCUVACは、救急医療で携帯使用するための電源を備えた気道吸引用の医療用吸引装置です。</Japanese>
+            <Japanese>アキュバックは、救急医療で携行使用するためのバッテリー電源を備えた気道吸引の為の医療用吸引装置です。</Japanese>
             <Portuguese>ACCUVAC é uma unidade de sucção portátil utilizada para tratar vias aéreas em caso de emergência médica.</Portuguese>
             <Norwegian>ACCUVAC er en medisinsk sugeenhet for suging av luftveier med batteridrift for mobil bruk innen akuttmedisin</Norwegian>
+        </Key>
+        <Key ID="STR_KAT_Airway_AccuvacTreatment_displayName">
+            <English>Airway Suction</English>
+            <Japanese>気道吸引</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_Suction_Display">
+            <English>Manual Suction Pump</English>
+            <Japanese>手動式吸引器</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_Suction_Desc_Short">
+            <English>Manual Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
+            <Japanese>手動式吸引器は、手動ポンプで動作する気道吸引の為の医療用吸引装置です。これは電気駆動の装置を代替することが可能です。</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_SuctionTreatment_displayName">
+            <English>Airway Suction (Manual)</English>
+            <Japanese>気道吸引 (手動式)</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_Suction_Reuse">
+            <English>Reusable Manual Suction Pump</English>
+            <Japanese>手動式吸引器の再利用</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_Suction_Reuse_DESC">
+            <English>Regain the Manual Suction Pump after use</English>
+            <Japanese>手動式吸引器の使用後、再利用できるようにします。</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -733,38 +779,46 @@
             <Norwegian>Nivået av opplæring som kreves for å bruke en Guedeltubus</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_ACCUVAC">
-            <English>Allow Accuvac</English>
-            <German>Accuvac erlauben</German>
-            <Polish>Pozwól na użycie Accuvac</Polish>
-            <Spanish>Permitir Accuvac</Spanish>
-            <Chinese>允許Accuvac</Chinese>
-            <Chinesesimp>允许使用紧急医疗抽吸器(Accuvac)</Chinesesimp>
-            <Czech>Povolit Accuvac</Czech>
+            <English>Allow ACCUVAC</English>
+            <German>ACCUVAC erlauben</German>
+            <Polish>Pozwól na użycie ACCUVAC</Polish>
+            <Spanish>Permitir ACCUVAC</Spanish>
+            <Chinese>允許ACCUVAC</Chinese>
+            <Chinesesimp>允许使用紧急医疗抽吸器(ACCUVAC)</Chinesesimp>
+            <Czech>Povolit ACCUVAC</Czech>
             <Korean>전기흡인기 허용</Korean>
             <French>Autoriser l'ACCUVAC</French>
-            <Turkish>Accuvac'a izin ver</Turkish>
+            <Turkish>ACCUVAC'a izin ver</Turkish>
             <Italian>Permetti l'ACCUVAC</Italian>
             <Russian>Разрешить Аккувак</Russian>
-            <Japanese>Accuvacの許可</Japanese>
+            <Japanese>アキュバックの許可</Japanese>
             <Portuguese>Permitir ACCUVAC</Portuguese>
-            <Norwegian>Tilatt Accuvac</Norwegian>
+            <Norwegian>Tilatt ACCUVAC</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_ACCUVAC_DESC">
-            <English>Training level required to use an Accuvac</English>
-            <German>Benötigter medizinischer Grad, um den Accuvac zu nutzen</German>
-            <Polish>Poziom wyszkolenia wymagany do korzystania z Accuvac</Polish>
-            <Spanish>Nivel de entrenamiento requerido para usar un Accuvac</Spanish>
-            <Chinese>使用Accuvac所需的培訓水平</Chinese>
+            <English>Training level required to use an ACCUVAC</English>
+            <German>Benötigter medizinischer Grad, um den ACCUVAC zu nutzen</German>
+            <Polish>Poziom wyszkolenia wymagany do korzystania z ACCUVAC</Polish>
+            <Spanish>Nivel de entrenamiento requerido para usar un ACCUVAC</Spanish>
+            <Chinese>使用ACCUVAC所需的培訓水平</Chinese>
             <Chinesesimp>使用紧急医疗抽吸器所需的医疗培训水平</Chinesesimp>
-            <Czech>Úroveň výcviku potřebná k použití Accuvacu</Czech>
+            <Czech>Úroveň výcviku potřebná k použití ACCUVAC</Czech>
             <Korean>전기흡인기를 사용하기 위한 의료레벨 수준</Korean>
             <French>Niveau d'entrainement requis pour utiliser un ACCUVAC</French>
-            <Turkish>Acuvvac'ı kullanmak için gerekli eğitim seviyesi</Turkish>
+            <Turkish>ACCUVAC'ı kullanmak için gerekli eğitim seviyesi</Turkish>
             <Italian>Livello d'addestramento richiesto per utilizzare l'ACCUVAC</Italian>
-            <Russian>Уровень подготовки, необходимый для использования Accuvac</Russian>
-            <Japanese>Accuvacの使用に必要な医療スキルのレベルを設定します。</Japanese>
+            <Russian>Уровень подготовки, необходимый для использования ACCUVAC</Russian>
+            <Japanese>アキュバックの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um ACCUVAC</Portuguese>
-            <Norwegian>Opplæringsnivået som kreves for å bruke en Accuvac</Norwegian>
+            <Norwegian>Opplæringsnivået som kreves for å bruke en ACCUVAC</Norwegian>
+        </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_SUCTION">
+            <English>Allow Manual Suction Pump</English>
+            <Japanese>手動吸引器の許可</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_SUCTION_DESC">
+            <English>Training level required to use an Manual Suction Pump</English>
+            <Japanese>手動吸引器の使用に必要な医療スキルのレベルを設定します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
             <English>Time to check Airway</English>
@@ -865,38 +919,46 @@
             <Spanish>%1 acabó de girar la cabeza (x%2)</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC">
-            <English>Time for Accuvac</English>
-            <German>Zeit um den Accuvac zu nutzen</German>
-            <Polish>Czas na użycie Accuvac</Polish>
-            <Spanish>Tiempo para Accuvac</Spanish>
-            <Chinese>Accuvac時間</Chinese>
-            <Chinesesimp>Accuvac時間</Chinesesimp>
-            <Czech>Čas pro Accuvac </Czech>
+            <English>Time for ACCUVAC</English>
+            <German>Zeit um den ACCUVAC zu nutzen</German>
+            <Polish>Czas na użycie ACCUVAC</Polish>
+            <Spanish>Tiempo para ACCUVAC</Spanish>
+            <Chinese>ACCUVAC時間</Chinese>
+            <Chinesesimp>ACCUVAC時間</Chinesesimp>
+            <Czech>Čas pro ACCUVAC</Czech>
             <Korean>흡인에 걸리는 시간</Korean>
             <French>Durée d'aspiration avec l'ACCUVAC</French>
-            <Turkish>Accuvac için Zaman</Turkish>
+            <Turkish>ACCUVAC için Zaman</Turkish>
             <Italian>Tempo per l'ACCUVAC</Italian>
             <Russian>Время Аккувака</Russian>
-            <Japanese>Accuvacの所要時間</Japanese>
+            <Japanese>アキュバックの所要時間</Japanese>
             <Portuguese>Tempo para ACCUVAC</Portuguese>
-            <Norwegian>Tid for Accuvac</Norwegian>
+            <Norwegian>Tid for ACCUVAC</Norwegian>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC_DESC">
-            <English>How long it will take to use Accuvac</English>
-            <German>Wie lange dauert es, den Accuvac zu nutzen</German>
-            <Polish>Ile czasu zajmie użycie Accuvac'a</Polish>
-            <Spanish>Cuánto tiempo tomará usar Accuvac</Spanish>
-            <Chinese>使用Accuvac需要多長時間</Chinese>
+            <English>How long it will take to use ACCUVAC</English>
+            <German>Wie lange dauert es, den ACCUVAC zu nutzen</German>
+            <Polish>Ile czasu zajmie użycie ACCUVAC'a</Polish>
+            <Spanish>Cuánto tiempo tomará usar ACCUVAC</Spanish>
+            <Chinese>使用ACCUVAC需要多長時間</Chinese>
             <Chinesesimp>使用紧急医疗抽吸器的所需時間</Chinesesimp>
-            <Czech>Jak dlouho zabere použití Accuvacu</Czech>
+            <Czech>Jak dlouho zabere použití ACCUVAC</Czech>
             <Korean>흡인에 얼마나 시간이 걸리는지 결정합니다</Korean>
             <French>Combien de temps faudra t-il pour aspirer avec l'ACCUVAC</French>
-            <Turkish>Accuvac'ı kullanmak ne kadar sürecek</Turkish>
+            <Turkish>ACCUVAC'ı kullanmak ne kadar sürecek</Turkish>
             <Italian>Quanto tempo si impiega per usare l'ACCUVAC</Italian>
             <Russian>Сколько времени потребуется, чтобы использовать Аккувака</Russian>
-            <Japanese>Accuvacを使用するのにどのくらい時間がかかるか設定します</Japanese>
+            <Japanese>アキュバックを使用するのにどのくらい時間がかかるか設定します</Japanese>
             <Portuguese>Quanto tempo demorará para usar ACCUVAC</Portuguese>
-            <Norwegian>Hvor lang tid vil det ta å bruke Accuvac</Norwegian>
+            <Norwegian>Hvor lang tid vil det ta å bruke ACCUVAC</Norwegian>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_SUCTION">
+            <English>Time for Manual Suction Pump</English>
+            <Japanese>手動吸引器の所要時間</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
+            <English>How long it will take to use Manual Suction Pump</English>
+            <Japanese>手動吸引器を使用するのにどのくらい時間がかかるか設定します</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS">
             <English>Time for Larynxtubus</English>
@@ -1060,6 +1122,7 @@
             <English>%1 cancelled recovery position</English>
             <Japanese>%1 が回復体位を崩した</Japanese>
             <Norwegian>%1 kansellerte stabilt sideleie</Norwegian>
+            <French>%1 a annulé la position latérale de sécurité</French>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
@@ -1138,23 +1201,35 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_CancelRecoveryPosition_Time_DESC">
             <English>How long it will take to manually cancel recovery position</English>
+            <Spanish>Establece cuánto tiempo tarda en salir de la posición de recuperación</Spanish>
             <Japanese>回復体位を崩すのにどのくらい時間がかかるか設定します</Japanese>
             <Norwegian>Hvor lang tid det vil ta å manuelt kansellere stabilt sideleie</Norwegian>
+            <French>Combien de temps sera nécessaire pour annuler la position latérale de sécurité</French>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
+            <Spanish>Tiempo para retirar la oclusión en posición lateral de seguridad</Spanish>
             <Japanese>回復体位による異物排出にかかる時間</Japanese>
             <Norwegian>Tid i stabilt sideleie for å bli kvitt okklusjonen</Norwegian>
+            <French>Temps pour retirer l'occlusion en position latérale de sécurité</French>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
+            <Spanish>Tiempo máximo para que desaparezca una oclusión en un paciente en posición lateral de seguridad</Spanish>
             <Japanese>回復体位にある患者の気道異物が排出され解消するまでに必要な最大時間。</Japanese>
             <Norwegian>Maks nødvendig tid en pasient må være i stabilt sideleie for å bli kvitt okklusjonen.</Norwegian>
+            <French>Temps maximal pour qu'une occlusion disparaisse sur un patient en position latérale de sécurité</French>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
+            <Spanish>Parámetros de la posición lateral de seguridad + hiperextensión</Spanish>
             <Japanese>回復体位と頭部後屈設定</Japanese>
             <Norwegian>Instillinger for stabil sideleie og Hyperforlengelse av hodet</Norwegian>
+            <French>Paramètres de la position latérale de sécurité + hyperextension</French>
+        </Key>
+        <Key ID="STR_KAT_Airway_SubCategory_Suction">
+            <English>Suction devices Settings</English>
+            <Japanese>気道吸引器設定</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>
