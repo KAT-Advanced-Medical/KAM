@@ -4,7 +4,7 @@ PREP(AED_Charge);
 PREP(AED_Shock);
 PREP(AEDX_VitalsMonitor_CheckCondition);
 PREP(AEDX_VitalsMonitor);
-PREP(AEDXPlaced_CheckCondition);
+PREP(DefibrillatorPlaced_CheckCondition);
 PREP(AEDXPlaced_VitalsMonitor_SetVolume);
 PREP(bloodType);
 PREP(canDraw);

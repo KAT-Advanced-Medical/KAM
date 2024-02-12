@@ -23,13 +23,11 @@ _unit removeItem _AEDClassName;
 private _AED = ([_AEDClassName,"Item"] joinString "") createVehicle (position _unit);
 
 // startCarry
-if (stance _unit != "STAND") then {
-    _AED attachTo [_unit, [0,1.1,1]];
-    [_unit, _AED] call ACEFUNC(dragging,dropObject_carry);
+if (stance _unit == "STAND") then {
+    [_unit, _AED] call ACEFUNC(dragging,startCarry);
 } else {
-    _AED attachTo [_unit, [0,0.4,0]];
-    _unit setVariable [QACEGVAR(dragging,isCarrying), true, true];
-    [ACEFUNC(dragging,startCarryPFH), 0.2, [_unit, _AED, (CBA_missionTime + 1)]] call CBA_fnc_addPerFrameHandler;
+    _AED attachTo [_unit, [0,1.1,0.2]];
+    [_unit, _AED] call ACEFUNC(dragging,dropObject_carry);
 };
 
 private _pickUpText = LLSTRING(PickUpAED);
