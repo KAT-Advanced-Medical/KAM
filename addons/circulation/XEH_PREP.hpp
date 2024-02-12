@@ -32,6 +32,7 @@ PREP(handleTreatment);
 PREP(init);
 PREP(measureBloodPressure);
 PREP(onCloseDialog);
+PREP(placeAED_PickUpAction);
 PREP(placeAED);
 PREP(removeLog);
 PREP(treatmentAdvanced_IV);

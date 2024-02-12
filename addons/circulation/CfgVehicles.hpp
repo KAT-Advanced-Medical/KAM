@@ -38,7 +38,7 @@ class CfgVehicles {
         class ACE_Actions {
             class ACE_MainActions {
                 selection = "interaction_point";
-                distance = 4;
+                distance = 4.2;
                 displayName = "AED";
                 condition = "true";
                 class KAT_AED_AnalyzeRhythm {
@@ -92,7 +92,7 @@ class CfgVehicles {
         class ACE_Actions {
             class ACE_MainActions {
                 selection = "interaction_point";
-                distance = 4;
+                distance = 4.2;
                 displayName = CSTRING(X_Display);
                 condition = "true";
                 class KAT_AED_X_ViewMonitor {
