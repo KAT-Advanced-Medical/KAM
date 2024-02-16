@@ -211,7 +211,6 @@ class CfgVehicles {
                     class LeftArm {
                         displayName = CSTRING(Armband_Sling_Left_Arm);
                         condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isLeftArmFree),false)]);
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = "";
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandLeftArm.paa);
@@ -219,7 +218,6 @@ class CfgVehicles {
                         class RedCross {
                             displayName = CSTRING(Armband_Red_Cross_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_red_cross')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_red_cross',0)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCross.paa);
@@ -228,7 +226,6 @@ class CfgVehicles {
                         class Medic {
                             displayName = CSTRING(Armband_Medic_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_medic')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_medic',0)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCrossMedic.paa);
@@ -237,7 +234,6 @@ class CfgVehicles {
                         class Doctor {
                             displayName = CSTRING(Armband_Doctor_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_doctor')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_doctor',0)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCrossDoctor.paa);
@@ -246,7 +242,6 @@ class CfgVehicles {
                         class Kat {
                             displayName = CSTRING(Armband_Kat_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_kat')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_kat',0)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandKat.paa);
@@ -256,7 +251,6 @@ class CfgVehicles {
                     class RightArm {
                         displayName = CSTRING(Armband_Sling_Right_Arm);
                         condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isRightArmFree),false)]);
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = "";
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandRightArm.paa);
@@ -264,7 +258,6 @@ class CfgVehicles {
                         class RedCross {
                             displayName = CSTRING(Armband_Red_Cross_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_red_cross')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_red_cross',1)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCross.paa);
@@ -273,7 +266,6 @@ class CfgVehicles {
                         class Medic {
                             displayName = CSTRING(Armband_Medic_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_medic')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_medic',1)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCrossMedic.paa);
@@ -282,7 +274,6 @@ class CfgVehicles {
                         class Doctor {
                             displayName = CSTRING(Armband_Doctor_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_doctor')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_doctor',1)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCrossDoctor.paa);
@@ -291,7 +282,6 @@ class CfgVehicles {
                         class Kat {
                             displayName = CSTRING(Armband_Kat_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_kat')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_kat',1)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandKat.paa);
@@ -301,7 +291,6 @@ class CfgVehicles {
                     class LeftLeg {
                         displayName = CSTRING(Armband_Sling_Left_Leg);
                         condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isLeftLegFree),false)]);
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = "";
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandLeftLeg.paa);
@@ -309,7 +298,6 @@ class CfgVehicles {
                         class RedCross {
                             displayName = CSTRING(Armband_Red_Cross_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_red_cross')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_red_cross',2)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCross.paa);
@@ -318,7 +306,6 @@ class CfgVehicles {
                         class Medic {
                             displayName = CSTRING(Armband_Medic_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_medic')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_medic',2)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCrossMedic.paa);
@@ -327,7 +314,6 @@ class CfgVehicles {
                         class Doctor {
                             displayName = CSTRING(Armband_Doctor_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_doctor')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_doctor',2)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCrossDoctor.paa);
@@ -336,7 +322,6 @@ class CfgVehicles {
                         class Kat {
                             displayName = CSTRING(Armband_Kat_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_kat')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_kat',2)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandKat.paa);
@@ -346,7 +331,6 @@ class CfgVehicles {
                     class RightLeg {
                         displayName = CSTRING(Armband_Sling_Right_Leg);
                         condition = QUOTE(_player getVariable [ARR_2(QQGVAR(isRightLegFree),false)]);
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = "";
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandRightLeg.paa);
@@ -354,7 +338,6 @@ class CfgVehicles {
                         class RedCross {
                             displayName = CSTRING(Armband_Red_Cross_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_red_cross')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_red_cross',3)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCross.paa);
@@ -363,7 +346,6 @@ class CfgVehicles {
                         class Medic {
                             displayName = CSTRING(Armband_Medic_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_medic')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_medic',3)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCrossMedic.paa);
@@ -372,7 +354,6 @@ class CfgVehicles {
                         class Doctor {
                             displayName = CSTRING(Armband_Doctor_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_doctor')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_doctor',3)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandWhiteCrossDoctor.paa);
@@ -381,7 +362,6 @@ class CfgVehicles {
                         class Kat {
                             displayName = CSTRING(Armband_Kat_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_armband_kat')] call ACEFUNC(common,hasItem));
-                            exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                             statement = QUOTE([ARR_3(_player,'kat_armband_kat',3)] call FUNC(slingArmband));
                             showDisabled = 0;
                             icon = QPATHTOF(ui\ArmbandKat.paa);
@@ -391,7 +371,6 @@ class CfgVehicles {
                     class UnSlingLeftArm {
                         displayName = CSTRING(Armband_UnSling_Left_Arm);
                         condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isLeftArmFree),false)]));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_2(_player,0)] call FUNC(unSlingArmband));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandLeftArm.paa);
@@ -400,7 +379,6 @@ class CfgVehicles {
                     class UnSlingRightArm {
                         displayName = CSTRING(Armband_UnSling_Right_Arm);
                         condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isRightArmFree),false)]));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_2(_player,1)] call FUNC(unSlingArmband));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandRightArm.paa);
@@ -409,7 +387,6 @@ class CfgVehicles {
                     class UnSlingLeftLeg {
                         displayName = CSTRING(Armband_UnSling_Left_Leg);
                         condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isLeftLegFree),false)]));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_2(_player,2)] call FUNC(unSlingArmband));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandLeftLeg.paa);
@@ -418,7 +395,6 @@ class CfgVehicles {
                     class UnSlingRightLeg {
                         displayName = CSTRING(Armband_UnSling_Right_Leg);
                         condition = QUOTE(!(_player getVariable [ARR_2(QQGVAR(isRightLegFree),false)]));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                         statement = QUOTE([ARR_2(_player,3)] call FUNC(unSlingArmband));
                         showDisabled = 0;
                         icon = QPATHTOF(ui\ArmbandRightLeg.paa);
@@ -428,7 +404,7 @@ class CfgVehicles {
                 class BubbleWrapPopping {
                     displayName = CSTRING(Bubble_Wrap_Ace_Action);
                     condition = QUOTE([ARR_2(_player,'kat_Bubble_Wrap')] call ACEFUNC(common,hasMagazine));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    exceptions[] = {"isNotInside", "isNotSitting"};
                     statement = QUOTE(_player call FUNC(BubbleWrap));
                     showDisabled = 0;
                     icon = QPATHTOF(ui\Bubble_Wrap_Item.paa);
@@ -438,7 +414,7 @@ class CfgVehicles {
                     displayName = CSTRING(IFAK_Unpack);
                     condition = QUOTE([ARR_4(_player,'kat_IFAK',0,0)] call FUNC(FAK_checkSlot));
                     statement = QUOTE([ARR_4(_player,'kat_IFAK',0,0)] call FUNC(FAK_unpack));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     showDisabled = 0;
                     icon = QPATHTOF(ui\IFAK.paa);
 
@@ -473,7 +449,7 @@ class CfgVehicles {
                     displayName = CSTRING(IFAK_Unpack);
                     condition = QUOTE([ARR_4(_player,'kat_IFAK_Magazine',0,0)] call FUNC(FAK_checkSlot));
                     statement = QUOTE([ARR_4(_player,'kat_IFAK_Magazine',0,0)] call FUNC(FAK_unpack));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     showDisabled = 0;
                     icon = QPATHTOF(ui\IFAK.paa);
 
@@ -489,7 +465,7 @@ class CfgVehicles {
                         displayName = CSTRING(FAK_Slot_1_Repack);
                         condition = QUOTE(!([ARR_4(_player,'kat_IFAK_Magazine',0,1)] call FUNC(FAK_checkSlot)) && [ARR_4(_player,'kat_IFAK_Magazine',0,1)] call FUNC(FAK_checkRepack));
                         statement = QUOTE([ARR_4(_player,'kat_IFAK_Magazine',0,1)] call FUNC(FAK_repack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                        exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                         showDisabled = 0;
                         icon = QPATHTOF(ui\IFAK_Repack.paa);
                     };
@@ -535,7 +511,7 @@ class CfgVehicles {
                     displayName = CSTRING(AFAK_Unpack);
                     condition = QUOTE([ARR_4(_player,'kat_AFAK',1,0)] call FUNC(FAK_checkSlot));
                     statement = QUOTE([ARR_4(_player,'kat_AFAK',1,0)] call FUNC(FAK_unpack));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     showDisabled = 0;
                     icon = QPATHTOF(ui\AFAK.paa);
 
@@ -584,7 +560,7 @@ class CfgVehicles {
                     displayName = CSTRING(AFAK_Unpack);
                     condition = QUOTE([ARR_4(_player,'kat_AFAK_Magazine',1,0)] call FUNC(FAK_checkSlot));
                     statement = QUOTE([ARR_4(_player,'kat_AFAK_Magazine',1,0)] call FUNC(FAK_unpack));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     showDisabled = 0;
                     icon = QPATHTOF(ui\AFAK.paa);
 
@@ -600,7 +576,7 @@ class CfgVehicles {
                         displayName = CSTRING(FAK_Slot_1_Repack);
                         condition = QUOTE(!([ARR_4(_player,'kat_AFAK_Magazine',1,1)] call FUNC(FAK_checkSlot)) && [ARR_4(_player,'kat_AFAK_Magazine',1,1)] call FUNC(FAK_checkRepack));
                         statement = QUOTE([ARR_4(_player,'kat_AFAK_Magazine',1,1)] call FUNC(FAK_repack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                        exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                         showDisabled = 0;
                         icon = QPATHTOF(ui\AFAK_Repack.paa);
                     };
@@ -670,7 +646,7 @@ class CfgVehicles {
                     displayName = CSTRING(MFAK_Unpack);
                     condition = QUOTE([ARR_4(_player,'kat_MFAK',2,0)] call FUNC(FAK_checkSlot));
                     statement = QUOTE([ARR_4(_player,'kat_MFAK',2,0)] call FUNC(FAK_unpack));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     showDisabled = 0;
                     icon = QPATHTOF(ui\MFAK.paa);
 
@@ -729,7 +705,7 @@ class CfgVehicles {
                     displayName = CSTRING(MFAK_Unpack);
                     condition = QUOTE([ARR_4(_player,'kat_MFAK_Magazine',2,0)] call FUNC(FAK_checkSlot));
                     statement = QUOTE([ARR_4(_player,'kat_MFAK_Magazine',2,0)] call FUNC(FAK_unpack));
-                    exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     showDisabled = 0;
                     icon = QPATHTOF(ui\MFAK.paa);
 
@@ -745,7 +721,7 @@ class CfgVehicles {
                         displayName = CSTRING(FAK_Slot_1_Repack);
                         condition = QUOTE(!([ARR_4(_player,'kat_MFAK_Magazine',2,1)] call FUNC(FAK_checkSlot)) && [ARR_4(_player,'kat_MFAK_Magazine',2,1)] call FUNC(FAK_checkRepack));
                         statement = QUOTE([ARR_4(_player,'kat_MFAK_Magazine',2,1)] call FUNC(FAK_repack));
-                        exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
+                        exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                         showDisabled = 0;
                         icon = QPATHTOF(ui\MFAK_Repack.paa);
                     };
@@ -914,7 +890,6 @@ class CfgVehicles {
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
                     condition = QUOTE(_target getVariable [ARR_2('ACE_isUnconscious',false)] && {!(isNull (objectParent _target))} && {isNull (objectParent _player)});
-                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
                     statement = QUOTE([ARR_2(_player,_target)] call FUNC(unloadAndCarryPatient));
                     icon = QACEPATHTOF(dragging,UI\icons\person_carry.paa);
                 };
@@ -929,7 +904,6 @@ class CfgVehicles {
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
                     condition = QUOTE(alive _target);
-                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
                     statement = "";
                     insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
@@ -945,7 +919,6 @@ class CfgVehicles {
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
                     condition = QUOTE(alive _target);
-                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
                     statement = "";
                     insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
@@ -960,7 +933,6 @@ class CfgVehicles {
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
                     condition = QUOTE(alive _target);
-                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
                     statement = "";
                     insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
@@ -975,7 +947,6 @@ class CfgVehicles {
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
                     condition = QUOTE(alive _target);
-                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
                     statement = "";
                     insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
@@ -990,7 +961,6 @@ class CfgVehicles {
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
                     condition = QUOTE(alive _target);
-                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
                     statement = "";
                     insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
@@ -1006,7 +976,6 @@ class CfgVehicles {
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
                     condition = QUOTE(alive _target);
-                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
                     statement = "";
                     insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
@@ -1021,7 +990,6 @@ class CfgVehicles {
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
                     condition = QUOTE(alive _target);
-                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
                     statement = "";
                     insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
@@ -1037,7 +1005,6 @@ class CfgVehicles {
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
                     condition = QUOTE(alive _target);
-                    exceptions[] = {"isNotDragging", "isNotCarrying", "isNotInside"};
                     statement = "";
                     insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
                     icon = QACEPATHTOF(dragging,UI\icons\person_carry.paa);

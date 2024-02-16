@@ -256,38 +256,20 @@ class CfgVehicles {
                 };
                 class KAT_placeAED {
                     displayName = CSTRING(place_AED);
-                    condition = QUOTE('kat_AED' in (items _player) && !((_player getVariable [ARR_2(QQGVAR(MedicDefibrillator_Patient),objNull)]) getVariable [ARR_2(QQGVAR(DefibrillatorInUse),false)]) && isNull objectParent _player);
-                    exceptions[] =
-                    {
-                        "notOnMap",
-                        "isNotInside",
-                        "isNotHandcuffed",
-                        "isNotSurrendering",
-                        "isNotSwimming",
-                        "isNotOnLadder"
-                    };
+                    condition = QUOTE('kat_AED' in (items _player) && !((_player getVariable [ARR_2(QQGVAR(MedicDefibrillator_Patient),objNull)]) getVariable [ARR_2(QQGVAR(DefibrillatorInUse),false)]));
                     statement = QUOTE([ARR_2(_player,'kat_AED')] call FUNC(placeAED));
                     icon = "";
                     showDisabled = 0;
                 };
                 class KAT_placeAEDX: KAT_placeAED {
                     displayName = CSTRING(place_AEDX);
-                    condition = QUOTE('kat_X_AED' in (items _player) && !((_player getVariable [ARR_2(QQGVAR(MedicDefibrillator_Patient),objNull)]) getVariable [ARR_2(QQGVAR(DefibrillatorInUse),false)]) && isNull objectParent _player);
+                    condition = QUOTE('kat_X_AED' in (items _player) && !((_player getVariable [ARR_2(QQGVAR(MedicDefibrillator_Patient),objNull)]) getVariable [ARR_2(QQGVAR(DefibrillatorInUse),false)]));
                     statement = QUOTE([ARR_2(_player,'kat_X_AED')] call FUNC(placeAED));
                     icon = QPATHTOF(ui\icon_aedx.paa);
                 };
                 class KAT_AED_X_Interactions {
                     displayName = CSTRING(AED_X);
                     condition = QUOTE('kat_X_AED' in (items _player));
-                    exceptions[] =
-                    {
-                        "notOnMap",
-                        "isNotInside",
-                        "isNotHandcuffed",
-                        "isNotSurrendering",
-                        "isNotSwimming",
-                        "isNotOnLadder"
-                    };
                     icon = QPATHTOF(ui\icon_aedx.paa);
                     class KAT_AED_X_ViewMonitor {
                         displayName = CSTRING(ViewMonitor);
