@@ -26,6 +26,11 @@ private _magazinesArray = [];
 {
     if (_x select 0 == _magClassname && !(_x select 2)) then {
         _magazinesArray pushBack [(_x select 0), (_x select 1), (_x select 4)];
+
+        if ((_x select 1) < _lowestAmmoCount) then {
+            _targetIndex = ((count _magazinesArray) - 1);
+            _lowestAmmoCount = (_x select 1);
+        };
     };
     
 } forEach (magazinesAmmoFull _unit);
@@ -34,13 +39,6 @@ if (_magazinesArray isEqualTo []) exitWith {0};
 
 private _lowestAmmoCount = 999;
 private _targetIndex = 0;
-
-{
-    if ((_x select 1) < _lowestAmmoCount) then {
-        _targetIndex = _forEachIndex;
-        _lowestAmmoCount = (_x select 1);
-    };
-} forEach _magazinesArray;
 
 _unit removeMagazines _magClassname;
 
