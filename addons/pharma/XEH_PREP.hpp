@@ -11,7 +11,7 @@ PREP(inspectCatheter);
 PREP(medication);
 PREP(medicationLocal);
 PREP(pervitinPP);
-PREP(removeItemfromMag);
+PREP(setMagItem);
 PREP(removeIV);
 PREP(retrieveIV);
 PREP(salineCheck);
