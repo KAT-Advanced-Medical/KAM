@@ -311,6 +311,24 @@ PREP_RECOMPILE_END;
 
 // TXA Settings Category
 [
+    QGVAR(allowStackScript_TXA),
+    "CHECKBOX",
+    [LLSTRING(SETTING_allowStackScript_TXA), LLSTRING(SETTING_allowStackScript_TXA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(keepScriptRunning_TXA),
+    "CHECKBOX",
+    [LLSTRING(SETTING_keepScriptRunning_TXA), LLSTRING(SETTING_keepScriptRunning_TXA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(medLvl_TXA),
     "LIST",
     [LLSTRING(medLvl_TXA)],
@@ -325,6 +343,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(treatmentTime_TXA)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
     [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(bandageCyleTime_TXA),
+    "TIME",
+    [LLSTRING(SETTING_bandageCyleTime_TXA), LLSTRING(SETTING_bandageCyleTime_TXA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
+    [1, 180, 5],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -443,6 +470,25 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 // EACA Settings Category
+
+[
+    QGVAR(allowStackScript_EACA),
+    "CHECKBOX",
+    [LLSTRING(SETTING_allowStackScript_EACA), LLSTRING(SETTING_allowStackScript_EACA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_EACA)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(keepScriptRunning_EACA),
+    "CHECKBOX",
+    [LLSTRING(SETTING_keepScriptRunning_EACA), LLSTRING(SETTING_keepScriptRunning_EACA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_EACA)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 [
     QGVAR(medLvl_EACA),
     "LIST",
@@ -458,6 +504,15 @@ PREP_RECOMPILE_END;
     [LLSTRING(treatmentTime_EACA)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_EACA)],
     [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(bandageCyleTime_EACA),
+    "TIME",
+    [LLSTRING(SETTING_bandageCyleTime_EACA), LLSTRING(SETTING_bandageCyleTime_EACA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_EACA)],
+    [1, 180, 8],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -573,6 +628,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Kidney Settings
 [
     QGVAR(kidneyAction),
     "CHECKBOX",
@@ -582,6 +638,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// IV Block Chance Settings
 [
     QGVAR(blockChance),
     "SLIDER",
@@ -591,21 +648,207 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Coagulation Settings
 [
     QGVAR(coagulation),
     "CHECKBOX",
     [LLSTRING(SETTING_Coagulation), LLSTRING(SETTING_Coagulation_DESC)],
-    CBA_SETTINGS_CAT,
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_on_all_Bodyparts),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation_on_all_Bodyparts), LLSTRING(SETTING_Coagulation_on_all_Bodyparts_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_tourniqueBlock),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation_coagulation_tourniqueBlock), LLSTRING(SETTING_Coagulation_coagulation_tourniqueBlock_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_allow_TXA_script),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation_allow_TXA_script), LLSTRING(SETTING_Coagulation_allow_TXA_script_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
     [false],
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(coagulation_allow_EACA_script),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation_allow_EACA_script), LLSTRING(SETTING_Coagulation_allow_EACA_script_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_allowOnAI),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation_allowOnAI), LLSTRING(SETTING_Coagulation_allowOnAI_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_allow_MinorWounds),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation_allow_MinorWounds), LLSTRING(SETTING_Coagulation_allow_MinorWounds_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_allow_MediumWounds),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation_allow_MediumWounds), LLSTRING(SETTING_Coagulation_allow_MediumWounds_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_allow_LargeWounds),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation_allow_LargeWounds), LLSTRING(SETTING_Coagulation_allow_LargeWounds_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_requireHR),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation_requireHR), LLSTRING(SETTING_Coagulation_requireHR_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_requireBV),
+    "SLIDER",
+    [LLSTRING(SETTING_Coagulation_requireBV), LLSTRING(SETTING_Coagulation_requireBV_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [0, 6.0, 3.6, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+
+[
+    QGVAR(coagulation_factor_count),
+    "SLIDER",
+    [LLSTRING(SETTING_Coagulation_FactorCount), LLSTRING(SETTING_Coagulation_FactorCount_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [0, 500, 15, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_factor_limit),
+    "SLIDER",
+    [LLSTRING(SETTING_coagulation_Factor_Limit), LLSTRING(SETTING_coagulation_Factor_Limit_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [1, 500, 30, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_time),
+    "TIME",
+    [LLSTRING(SETTING_Coagulation_Time), LLSTRING(SETTING_Coagulation_Time_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [1, 300, 10],
+    true,
+    {},
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_time_minor),
+    "TIME",
+    [LLSTRING(SETTING_Coagulation_Time_Minor), LLSTRING(SETTING_Coagulation_Time_Clotting_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [0, 300, 15],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_time_medium),
+    "TIME",
+    [LLSTRING(SETTING_Coagulation_Time_Medium), LLSTRING(SETTING_Coagulation_Time_Clotting_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [0, 300, 30],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_time_large),
+    "TIME",
+    [LLSTRING(SETTING_Coagulation_Time_Large), LLSTRING(SETTING_Coagulation_Time_Clotting_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [0, 300, 45],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_factor_regenreate_time),
+    "TIME",
+    [LLSTRING(SETTING_Coagulation_Factor_Regenreate_Time), LLSTRING(SETTING_Coagulation_Factor_Regenreate_Time_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [1, 900, 150],
+    true
+] call CBA_Settings_fnc_init;
+
+// Stamina Settings
 [
     QGVAR(staminaMedication),
     "CHECKBOX",
     [LLSTRING(SETTING_staminaMedication), LLSTRING(SETTING_staminaMedication_DESC)],
     CBA_SETTINGS_CAT,
     [false],
+    true
+] call CBA_Settings_fnc_init;
+
+// Coag Sense setLightnings
+[
+    QGVAR(CheckCoag_MedLevel),
+    "LIST",
+    LLSTRING(SETTING_CheckCoag_MedLevel),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coag_Sense)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(CheckCoag_Location),
+    "LIST",
+    LLSTRING(SETTING_CheckCoag_Location),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coag_Sense)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(CheckCoag_TreatmentTime),
+    "TIME",
+    LLSTRING(SETTING_CheckCoag_treatmentTime),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coag_Sense)],
+    [1, 30, 10],
     true
 ] call CBA_Settings_fnc_init;
 
