@@ -228,7 +228,7 @@ if (EGVAR(pharma,coagulation)) then {
             private _coagulation_time_minor = missionNamespace getVariable [QEGVAR(pharma,coagulation_time_minor), 15];
             private _coagulation_time_medium = missionNamespace getVariable [QEGVAR(pharma,coagulation_time_medium), 30];
             private _coagulation_time_large = missionNamespace getVariable [QEGVAR(pharma,coagulation_time_large), 45];
-            private _factorCoutToRemove = 1
+            private _factorCoutToRemove = 1;
 
             switch (_suffix) do {
                 case "Minor": { 
