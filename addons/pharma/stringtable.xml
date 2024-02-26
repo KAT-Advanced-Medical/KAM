@@ -1750,6 +1750,24 @@
             <Spanish>Tiempo para uso del ATX</Spanish>
             <Portuguese>Tempo de uso de TXA</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA">
+            <English>Allow Stacking</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA_DESC">
+            <English>If enabled TXA will be stackable and doubble it's efficiency</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_TXA">
+            <English>Keep Bandaging Until Out Of System</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_TXA_DESC">
+            <English>If enabled TXA will keep bandaging until it's out of your system\nIf disabled TXA will stop working after bandaging the last wound it can find</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_bandageCyleTime_TXA">
+            <English>TXA Cycle Time</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_bandageCyleTime_TXA_DESC">
+            <English>The time it takes for TXA to close a wound</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Norepinephrine">
             <English>Medical level required for Norepinephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
@@ -1931,6 +1949,24 @@
             <Japanese>EACAの所要時間</Japanese>
             <Spanish>Tiempo para uso del EACA</Spanish>
             <Portuguese>Tempo de uso de EACA</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA">
+            <English>Allow Stacking</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA_DESC">
+            <English>If enabled EACA will be stackable and doubble it's efficiency</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA">
+            <English>Keep Stiching Until Out Of System</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA_DESC">
+            <English>If enabled EACA will keep stichinng until it's out of your system\nIf disabled EACA will stop working after stiching the last bandaged wound it can find</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_bandageCyleTime_EACA">
+            <English>EACA Cycle Time</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_bandageCyleTime_EACA_DESC">
+            <English>The time it takes for EACA to close a stich a wound</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Flumazenil">
             <English>Medical level required for Flumazenil</English>
@@ -2512,6 +2548,9 @@
             <Polish>Maksymalna ilość worków z płynem, które można przypiąć w tym samym momencie, aby zwiększyć szybkość przepływu IV</Polish>
             <Portuguese>A quantidade máxima de bolsas de fluido que podem ser empilhadas para aumentar a taxa de fluxo IV</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Coagulation">
+            <English>Coagulation Settings</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation">
             <English>Enable Coagulation</English>
             <Japanese>血液凝固を有効にする</Japanese>
@@ -2535,6 +2574,204 @@
             <Korean>고급 혈응고 기능을 활성화하고 그에 따라 TXA 및 아미노카프로산의 동작을 수정합니다.</Korean>
             <Portuguese>Habilita recursos avançados de coagulação e modifica o comportamento de TXA e EACA de acordo.</Portuguese>
             <Spanish>Habilita la coagulación avanzada, modificando los efectos del ATX y del EACA.</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR">
+            <English>Require Heart Rate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR_DESC">
+            <English>Should coagulation reqire a heart rate above 20BPM? (Doing CPR will keep HR above 20BPM)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireBV">
+            <English>Required Blood Volume</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireBV_DESC">
+            <English>Minimum volume of blood required for coagulation to work</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_FactorCount">
+            <English>Coagulation Factors</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_FactorCount_DESC">
+            <English>The ammount of coagulation factors that get set on unit spawn &amp; be keept as limit for factor regeneration</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time">
+            <English>Clotting Cycle Time</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_DESC">
+            <English>The time between each wound clotting cycle that start wound clotting. (low number may cause lag)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Minor">
+            <English>Minor Wounds Clotting Time</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Medium">
+            <English>Medium Wounds Clotting Time</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Large">
+            <English>Large Wounds Clotting Time</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Clotting_DESC">
+            <English>This time gets divided by 2, randomized &amp; added with the same value devided by 2. \n For example, if the value was set to 10s this would be one possible varriation: (random (10 / 2)) + (10 / 2) = 8s</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenreate_Time">
+            <English>Coagulation Factor Regeneration Cycle</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenreate_Time_DESC">
+            <English>The time between coagulation factor regeneration checks. Will add +1 factor on sucessfull check. Uses Setting: "Coagulation Factors" as limit.\n Note: If the limit is exceeded, this time will be used and then remove -1 factor until Setting: "Coagulation Factors" is reached. Tipp: TXA or EACA stop losing factors\nRequirements for regeneration to work:\n- No wound being clotted in the last cycle check from this setting\n- Setting: "Require Heart Rate"\n- Setting: "Required Blood Volume"</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allowOnAI">
+            <English>Affect AI</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allowOnAI_DESC">
+            <English>Allow coagulation to affect AI units. \nEvery other value will still be required if turned on. (May cause lag if many AI is present)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_coagulation_tourniqueBlock">
+            <English>Tournique Blocks Blood Clotting</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_coagulation_tourniqueBlock_DESC">
+            <English>If enabled a applied tournique will stop wounds from being closed from coagulation on that bodypart</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MinorWounds">
+            <English>Affect Minor Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MinorWounds_DESC">
+            <English>Allow coagulation to affect minor wounds when clotting</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MediumWounds">
+            <English>Affect Medium Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MediumWounds_DESC">
+            <English>Allow coagulation to affect medium wounds when clotting</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_LargeWounds">
+            <English>Affect Large Wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_LargeWounds_DESC">
+            <English>Allow coagulation to affect large wounds when clotting</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_TXA_script">
+            <English>Allow Additional TXA Bandaging</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_TXA_script_DESC">
+            <English>If enabled TXA will keep all functionality and start bandaging wounds itself</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_EACA_script">
+            <English>Allow Additional EACA Stiching</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_EACA_script_DESC">
+            <English>If enabled EACA will keep all functionality and start stiching bandaged wounds</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_on_all_Bodyparts">
+            <English>Simultaneous Bodypart Coagulation</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_on_all_Bodyparts_DESC">
+            <English>If enabled each bodypart will be treated simultaneously by coagulation.\nMeaning if you have a wound on the head and body they will both be treated in the same coagulation cycle.</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_coagulation_Factor_Limit">
+            <English>Coagulation Factor Limit</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_coagulation_Factor_Limit_DESC">
+            <English>The limit for how many coagulation factors can be present inside a units body at once. Meaning if you administer plasma this is the maximum attainable value.</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
+            <English>Blood clotting temporarily closed a wound on %1</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_coagulation_Bandaged_TXA">
+            <English>Blood clotting permanently closed a wound on %1</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_head">
+            <English>Head</English>
+            <German>Kopf</German>
+            <Russian>Голова</Russian>
+            <Spanish>Cabeza</Spanish>
+            <French>Tête</French>
+            <Polish>Głowa</Polish>
+            <Portuguese>Cabeça</Portuguese>
+            <Czech>Hlava</Czech>
+            <Italian>Testa</Italian>
+            <Japanese>頭部</Japanese>
+            <Korean>머리</Korean>
+            <Chinesesimp>头部</Chinesesimp>
+            <Chinese>頭部</Chinese>
+            <Turkish>Kafa</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_body">
+            <English>Torso</English>
+            <German>Torso</German>
+            <Russian>Торс</Russian>
+            <French>Torse</French>
+            <Polish>Tors</Polish>
+            <Portuguese>Torso</Portuguese>
+            <Czech>Trup</Czech>
+            <Spanish>Torso</Spanish>
+            <Italian>Torso</Italian>
+            <Japanese>胴体</Japanese>
+            <Korean>몸통</Korean>
+            <Chinesesimp>躯干</Chinesesimp>
+            <Chinese>身體</Chinese>
+            <Turkish>Gövde</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_leftarm">
+            <English>Left Arm</English>
+            <German>Linker Arm</German>
+            <Russian>Левая рука</Russian>
+            <Spanish>Brazo Izquierdo</Spanish>
+            <French>Bras gauche</French>
+            <Polish>Lewa ręka</Polish>
+            <Portuguese>Braço Esquerdo</Portuguese>
+            <Czech>Levá Ruka</Czech>
+            <Italian>Braccio Sinistro</Italian>
+            <Japanese>左腕</Japanese>
+            <Korean>왼팔</Korean>
+            <Chinesesimp>左臂</Chinesesimp>
+            <Chinese>左手</Chinese>
+            <Turkish>Sol Kol</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_rightarm">
+            <English>Right Arm</English>
+            <German>Rechter Arm</German>
+            <Russian>Правая рука</Russian>
+            <Spanish>Brazo Derecho</Spanish>
+            <French>Bras droit</French>
+            <Polish>Prawa ręka</Polish>
+            <Portuguese>Braço Direito</Portuguese>
+            <Czech>Pravá Ruka</Czech>
+            <Italian>Braccio Destro</Italian>
+            <Japanese>右腕</Japanese>
+            <Korean>오른팔</Korean>
+            <Chinesesimp>右臂</Chinesesimp>
+            <Chinese>右手</Chinese>
+            <Turkish>Sağ Kol</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_leftleg">
+            <English>Left Leg</English>
+            <German>Linkes Bein</German>
+            <Russian>Левая нога</Russian>
+            <Spanish>Pierna Izquierda</Spanish>
+            <French>Jambe gauche</French>
+            <Polish>Lewa noga</Polish>
+            <Portuguese>Perna Esquerda</Portuguese>
+            <Czech>Levá Noha</Czech>
+            <Italian>Gamba Sinistra</Italian>
+            <Japanese>左足</Japanese>
+            <Korean>왼다리</Korean>
+            <Chinesesimp>左腿</Chinesesimp>
+            <Chinese>左腳</Chinese>
+            <Turkish>Sol Bacak</Turkish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_rightleg">
+            <English>Right Leg</English>
+            <German>Rechtes Bein</German>
+            <Russian>Правая нога</Russian>
+            <Spanish>Pierna Derecha</Spanish>
+            <French>Jambe droite</French>
+            <Polish>Prawa noga</Polish>
+            <Portuguese>Perna Direita</Portuguese>
+            <Czech>Pravá Noha</Czech>
+            <Italian>Gamba Destra</Italian>
+            <Japanese>右足</Japanese>
+            <Korean>오른다리</Korean>
+            <Chinesesimp>右腿</Chinesesimp>
+            <Chinese>右腳</Chinese>
+            <Turkish>Sağ Bacak</Turkish>
         </Key>
         <Key ID="STR_KAT_Pharma_EACA_Display">
             <English>EACA</English>
@@ -2873,6 +3110,33 @@
             <French>Autorise certains médicaments à modifier (Vanilla/Fatigue avancée) l'endurance en effet secondaire</French>
             <Portuguese>Permite que certos medicamentos modifiquem a Stamina (vanilla/fadiga avançada) como efeito colateral</Portuguese>
             <Spanish>Permitir que ciertos medicamentos modifiquen la resistencia (fatiga convencional/avanzada) como efecto secundario</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
+            <English>Coag-Sense</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
+            <English>The Coag-Sense is a PT/INR monitoring system that can measure the efficiency of your blood clotting</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
+            <English>Coag-Sense conclutes: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
+            <English>Measure PT/INR</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
+            <English>Taking Blood Sample, </English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Coag_Sense">
+            <English>Coag-Sense Settings</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
+            <English>Medical level required for Coag-Sense</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location">
+            <English>Locations Coag-Sense</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
+            <English>Treatment time for measuring PT/INR</English>
         </Key>
     </Package>
 </Project>
