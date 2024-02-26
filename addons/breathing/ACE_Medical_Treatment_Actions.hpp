@@ -60,7 +60,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Pulseoximeter);
         treatmentTime = 2;
         items[] = {"kat_Pulseoximeter"};
-        condition = QUOTE(missionNamespace getVariable [ARR_2(QQGVAR(enable),true)] && !(_patient getVariable [ARR_2(QQGVAR(pulseoximeter),false)]) && !([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter)));
+        condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(pulseoximeter),false)]) && !([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter)));
         callbackSuccess = QFUNC(treatmentAdvanced_pulseoximeter);
         callbackFailure = "";
         callbackProgress = "";

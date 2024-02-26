@@ -245,7 +245,7 @@ class CfgVehicles {
                     class CheckBloodPressure {};
                 };
             };
-            class ACE_Equipment {
+            class KAT_Equipment {
                 class openCrossPanel {
                     displayName = CSTRING(open_crosspanel);
                     condition = "('kat_crossPanel' in (uniformItems _player)) || ('kat_crossPanel' in (vestItems _player))";
