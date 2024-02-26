@@ -41,7 +41,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(drawBlood));
-        condition = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(canDraw));
+        condition = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIV)) || EFUNC(pharma,removeIV)));
         items[] = {"KAT_Empty_bloodIV_500"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
@@ -57,7 +57,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = 0;
         consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(drawBlood));
-        condition = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(canDraw));
+        condition = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIV)) || EFUNC(pharma,removeIV)));
         items[] = {"KAT_Empty_bloodIV_250"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
