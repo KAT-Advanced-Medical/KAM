@@ -3114,7 +3114,7 @@
             <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
             <English>Coag-Sense</English>
         </Key>
-            <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
+            <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
             <English>The Coag-Sense is a PT/INR monitoring system that can measure the efficiency of your blood clotting</English>
         </Key>
             <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
