@@ -3111,13 +3111,13 @@
             <Portuguese>Permite que certos medicamentos modifiquem a Stamina (vanilla/fadiga avançada) como efeito colateral</Portuguese>
             <Spanish>Permitir que ciertos medicamentos modifiquen la resistencia (fatiga convencional/avanzada) como efecto secundario</Spanish>
         </Key>
-            <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
+        <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
             <English>Coag-Sense</English>
         </Key>
-            <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
+        <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
             <English>The Coag-Sense is a PT/INR monitoring system that can measure the efficiency of your blood clotting</English>
         </Key>
-            <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
+        <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
             <English>Coag-Sense conclutes: %1</English>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
