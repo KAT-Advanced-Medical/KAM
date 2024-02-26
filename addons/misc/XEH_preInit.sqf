@@ -90,8 +90,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingLeftArmPos_Display), LLSTRING(SETTING_ArmbandSlingLeftArmPos_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "0.2, -0.39, -0.2",
-    2
+    "[0.2, -0.39, -0.2]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingLeftArm), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingLeftArm), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband rotation left arm (yaw, pitch, roll)
@@ -100,8 +105,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingLeftArmRot_Display), LLSTRING(SETTING_ArmbandSlingLeftArmRot_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "240, 33, 26",
-    2
+    "[240, 33, 26]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingLeftArmRotation), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingLeftArmRotation), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband sling right arm (x, y, z)
@@ -110,8 +120,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingRightArmPos_Display), LLSTRING(SETTING_ArmbandSlingRightArmPos_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "-0.228, -0.1, -0.43",
-    2
+    "[-0.228, -0.1, -0.43]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingRightArm), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingRightArm), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband rotation right arm (yaw, pitch, roll)
@@ -120,8 +135,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingRightArmRot_Display), LLSTRING(SETTING_ArmbandSlingRightArmRot_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "5, -5, -5",
-    2
+    "[5, -5, -5]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingRightArmRotation), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingRightArmRotation), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband sling left leg (x, y, z)
@@ -130,8 +150,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingLeftLegPos_Display), LLSTRING(SETTING_ArmbandSlingLeftLegPos_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "0.435, -0.075, -0.38",
-    2
+    "[0.435, -0.075, -0.38]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingLeftLeg), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingLeftLeg), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband rotation left leg (yaw, pitch, roll)
@@ -140,8 +165,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingLeftLegRot_Display), LLSTRING(SETTING_ArmbandSlingLeftLegRot_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "-160, -5, 45",
-    2
+    "[-160, -5, 45]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingLeftLegRotation), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingLeftLegRotation), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband sling right leg (x, y, z)
@@ -150,8 +180,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingRightLegPos_Display), LLSTRING(SETTING_ArmbandSlingRightLegPos_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "-0.32, -0.29, -0.42",
-    2
+    "[-0.32, -0.29, -0.42]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingRightLeg), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingRightLeg), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband rotation right Leg (yaw, pitch, roll)
@@ -160,8 +195,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingRightLegRot_Display), LLSTRING(SETTING_ArmbandSlingRightLegRot_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "-30, -5, 38",
-    2
+    "[-30, -5, 38]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingRightLegRotation), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingRightLegRotation), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 // Remove IFAK when empty
