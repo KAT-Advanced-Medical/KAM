@@ -442,6 +442,14 @@ class CfgVehicles {
                     showDisabled = 0;
                     icon = QPATHTOF(ui\IFAK.paa);
 
+                    class IFAKInfo {
+                        displayName = CSTRING(FAK_DisplayItems);
+                        condition = QUOTE([ARR_2(_player,'kat_IFAK')] call ACEFUNC(common,hasItem));
+                        statement = QUOTE([ARR_2(_player,0)] call FUNC(FAK_displayContent));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\IFAK_DisplayItems.paa);
+                    };
+
                     class Slot1 {
                         displayName = CSTRING(FAK_Slot_1);
                         condition = QUOTE([ARR_4(_player,'kat_IFAK',0,1)] call FUNC(FAK_checkSlot));
@@ -477,6 +485,14 @@ class CfgVehicles {
                     showDisabled = 0;
                     icon = QPATHTOF(ui\IFAK.paa);
 
+                    class IFAKInfo {
+                        displayName = CSTRING(FAK_DisplayItems);
+                        condition = QUOTE([ARR_2(_player,'kat_IFAK_Magazine')] call ACEFUNC(common,hasMagazine));
+                        statement = QUOTE([ARR_2(_player,0)] call FUNC(FAK_displayContent));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\IFAK_DisplayItems.paa);
+                    };
+                    
                     class Slot1 {
                         displayName = CSTRING(FAK_Slot_1);
                         condition = QUOTE([ARR_4(_player,'kat_IFAK_Magazine',0,1)] call FUNC(FAK_checkSlot));
@@ -539,6 +555,14 @@ class CfgVehicles {
                     showDisabled = 0;
                     icon = QPATHTOF(ui\AFAK.paa);
 
+                    class AFAKInfo {
+                        displayName = CSTRING(FAK_DisplayItems);
+                        condition = QUOTE([ARR_2(_player,'kat_AFAK')] call ACEFUNC(common,hasItem));
+                        statement = QUOTE([ARR_2(_player,1)] call FUNC(FAK_displayContent));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\AFAK_DisplayItems.paa);
+                    };
+
                     class Slot1 {
                         displayName = CSTRING(FAK_Slot_1);
                         condition = QUOTE([ARR_4(_player,'kat_AFAK',1,1)] call FUNC(FAK_checkSlot));
@@ -587,6 +611,14 @@ class CfgVehicles {
                     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                     showDisabled = 0;
                     icon = QPATHTOF(ui\AFAK.paa);
+
+                    class AFAKInfo {
+                        displayName = CSTRING(FAK_DisplayItems);
+                        condition = QUOTE([ARR_2(_player,'kat_AFAK_Magazine')] call ACEFUNC(common,hasMagazine));
+                        statement = QUOTE([ARR_2(_player,1)] call FUNC(FAK_displayContent));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\AFAK_DisplayItems.paa);
+                    };
 
                     class Slot1 {
                         displayName = CSTRING(FAK_Slot_1);
@@ -674,6 +706,14 @@ class CfgVehicles {
                     showDisabled = 0;
                     icon = QPATHTOF(ui\MFAK.paa);
 
+                    class MFAKInfo {
+                        displayName = CSTRING(FAK_DisplayItems);
+                        condition = QUOTE([ARR_2(_player,'kat_MFAK')] call ACEFUNC(common,hasItem));
+                        statement = QUOTE([ARR_2(_player,2)] call FUNC(FAK_displayContent));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\MFAK_DisplayItems.paa);
+                    };
+
                     class Slot1 {
                         displayName = CSTRING(FAK_Slot_1);
                         condition = QUOTE([ARR_4(_player,'kat_MFAK',2,1)] call FUNC(FAK_checkSlot));
@@ -732,6 +772,14 @@ class CfgVehicles {
                     exceptions[] = {"isNotSwimming", "isNotInside", "notOnMap", "isNotSitting"};
                     showDisabled = 0;
                     icon = QPATHTOF(ui\MFAK.paa);
+
+                    class MFAKInfo {
+                        displayName = CSTRING(FAK_DisplayItems);
+                        condition = QUOTE([ARR_2(_player,'kat_MFAK_Magazine')] call ACEFUNC(common,hasMagazine));
+                        statement = QUOTE([ARR_2(_player,2)] call FUNC(FAK_displayContent));
+                        showDisabled = 0;
+                        icon = QPATHTOF(ui\MFAK_DisplayItems.paa);
+                    };
 
                     class Slot1 {
                         displayName = CSTRING(FAK_Slot_1);
