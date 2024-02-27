@@ -509,4 +509,35 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Chance of tamponade from chest wounds
+[
+    QGVAR(tamponadeChance),
+    "SLIDER",
+    LLSTRING(SETTING_tamponadeChance),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [0,100,10,0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(deterioratingTamponade_chance),
+    "SLIDER",
+    LLSTRING(SETTING_tamponadeChance_deterioration),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [0,100,35,0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Tamponade deterioration timer
+[
+    QGVAR(deterioratingTamponade_interval),
+    "SLIDER",
+    LLSTRING(SETTING_tamponadeInterval),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AdvRhythms)],
+    [0,3600,60,0],
+    true
+] call CBA_Settings_fnc_init;
+
+
+
 ADDON = true;

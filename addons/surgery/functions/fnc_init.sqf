@@ -23,6 +23,9 @@ _unit setVariable [QGVAR(fractures), [0,0,0,0,0,0], true];
 _unit setVariable [QGVAR(lidocaine), false, true];
 _unit setVariable [QGVAR(etomidate), false, true];
 _unit setVariable [QGVAR(sedated), false, true];
+_unit setVariable [QGVAR(imaging), false, true];
+_unit setVariable [QGVAR(reboa), false, true];
+_unit setVariable [QGVAR(surgicalBlock), [0,0,0,0,0,0], true];
 
 /*
 * 0 = Unaffected
