@@ -179,13 +179,13 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {((_pati
             if (GVAR(AdvRhythm)) then {
                 private _cardiacState = _patient getVariable [QGVAR(cardiacArrestType), 0];
 
-                if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [2,4]) then {
+                if (_cardiacState in [2,4]) then {
                     _hr = _patient call FUNC(getCardiacArrestHeartRate);
                 } else {
                     _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
                 };
 
-                if (!(_patient getVariable [QGVAR(cardiacArrestType), 0] in [0,2]) && !(GVAR(analyzeDelay))) then {
+                if (!(_cardiacState in [0,2]) && !(GVAR(analyzeDelay))) then {
                     [{
                         params ["_patient"];
 

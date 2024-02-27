@@ -109,9 +109,9 @@ class ACE_Medical_Treatment_Actions {
         category = "surgery";
         allowedSelections[] = {"All"};
         allowSelfTreatment = 0;
-        treatmentLocations = QGVAR(debridementAction_Location);
+        treatmentLocations = QGVAR(npwtLocation);
         treatmentTime = QFUNC(getNPWTTime);
-        medicRequired = QGVAR(debridementAction_MedLevel);
+        medicRequired = QGVAR(npwtMedLevel);
         items[] = {"kat_vacuum"};
         sounds[] = {{QPATHTO_R(sounds\vacuum.ogg),8,1,15}};
         consumeItem = 0;

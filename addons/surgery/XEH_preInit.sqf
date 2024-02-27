@@ -170,10 +170,27 @@ PREP_RECOMPILE_END;
     QGVAR(npwtTime),
     "SLIDER",
     LLSTRING(SETTING_NPWTTime),
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_NPWT)],
     [0.1, 60, 5, 1],
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(npwtLocation),
+    "LIST",
+    LLSTRING(NPWT_LOCATION),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_NPWT)],
+    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(npwtMedLevel),
+    "LIST",
+    LLSTRING(NPWT_ACTION_MEDLEVEL),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_NPWT)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
+    true
+] call CBA_Settings_fnc_init;
 
 ADDON = true;

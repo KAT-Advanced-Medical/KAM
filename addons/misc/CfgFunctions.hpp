@@ -44,6 +44,9 @@ class CfgFunctions {
             class treatmentSuccess {
                 file = QPATHTOF(functions\fnc_treatmentSuccess.sqf);
             };
+            class treatmentFailure {
+                file = QPATHTOF(functions\fnc_treatmentFailure.sqf);
+            };
             class useItem {
                 file = QPATHTOF(functions\fnc_useItem.sqf);
             };

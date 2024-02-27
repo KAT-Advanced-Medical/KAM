@@ -2,20 +2,13 @@
 <Project name="KAT">
     <Package name="Breathing">
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE">
-            <English>ACE-Breathing activated?</English>
-            <German>ACE-Atmung aktiviert?</German>
-            <Polish>ACE-Czy zaawansowane oddychanie ma być włączone?</Polish>
-            <Spanish>¿Activar ACE-Respiración?</Spanish>
-            <Chinese>啟用ACE-心肺呼吸系統？</Chinese>
-            <Chinesesimp>启用ACE-呼吸系统</Chinesesimp>
-            <Czech>ACE-Breathing aktivováno?</Czech>
-            <Korean>ACE 심폐호흡기 기능 활성화</Korean>
-            <French>ACE-Respiration activé?</French>
-            <Turkish>ACE-Nefes etkinleştirildi mi?</Turkish>
-            <Italian>Attivare ACE-Respirazione?</Italian>
-            <Russian>ACE-дыхание активировано?</Russian>
+            <English>Activate Breathing Module</English>
+            <German>Aktiviere Athmungs Modul</German>
             <Japanese>KAM-Breathing を有効化しますか?</Japanese>
-            <Portuguese>ACE - Respiração ativada?</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
+            <English>Sets if SPO2 simulation and according functionality like Pneumothorax and \nAirway: occlusion &amp; obstruction (SPO2 reduction will be deactivated) should be activated</English>
+            <German>Setzt ob SPO2 Simuliert werden soll mit funktionen wie Pneumothorax und Atemwege: Verstopfung &amp; Obstruktion (SPO2 reduktion wird deaktiviert)</German>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">
             <English>Lethal SpO2 value</English>

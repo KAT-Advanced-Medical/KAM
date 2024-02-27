@@ -57,4 +57,4 @@ if (!(_patient getVariable [QGVAR(occluded), false]) && !(_patient getVariable [
 
 [_message, _hintSize, _medic, _hintWidth] call ACEFUNC(common,displayTextStructured);
 
-[_patient, "activity", LSTRING(checkAirway_log), [[_medic] call ACEFUNC(common,getName), _obstruction, _occlusion]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "quick_view", LSTRING(checkAirway_log), [[_medic] call ACEFUNC(common,getName), _obstruction, _occlusion]] call ACEFUNC(medical_treatment,addToLog);
