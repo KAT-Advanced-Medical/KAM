@@ -454,14 +454,14 @@
             <Portuguese>Usado para corrigir todas as fraturas avançadas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_displayName">
-            <English>Dressing vacuum</English>
+            <English>Dressing Vacuum (NPWT)</English>
             <Chinesesimp>NPWT 敷料</Chinesesimp>
             <Italian>Sottovuoto per medicazione</Italian>
             <Polish>NPWT</Polish>
             <Czech>Vakuový obvaz</Czech>
             <French>Pansement sous vide</French>
             <Korean>진공 드레싱</Korean>
-            <German>Vakuumverband</German>
+            <German>Vakuumverband (NPWT)</German>
             <Japanese>吸引被覆 (NPWT)</Japanese>
             <Spanish>Vendaje al vacío</Spanish>
             <Portuguese>Bandagem a vácuo</Portuguese>
@@ -480,7 +480,7 @@
             <Portuguese>Usado para enfaixar e selar feridas completamente</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_Use">
-            <English>Apply NPWT Dressing</English>
+            <English>Apply Vacuum Dressing</English>
             <Chinesesimp>施用 NPWT 敷料</Chinesesimp>
             <Italian>Applicare la medicazione NPWT</Italian>
             <Polish>Użyj zestawu NPWT</Polish>
@@ -504,6 +504,81 @@
             <Japanese>施術中</Japanese>
             <Spanish>Colocando</Spanish>
             <Portuguese>Aplicando</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_DescShort">
+            <English>Handheld Ultrasound</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_DescUse">
+            <English>Used to assess internal injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Use">
+            <English>Conduct Ultrasound Assessment</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Action">
+            <English>Assessing</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway">
+            <English>Airway Status: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic">
+            <English>Lung Status: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Cardiac">
+            <English>Cardiac Status: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Airway_Normal">
+            <English>Normal</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
+            <English>Pneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Hemo">
+            <English>Hemopneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Tension">
+            <English>Tension Pneumothorax</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Shockable">
+            <English>Arrest - Shockable</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Unshockable">
+            <English>Arrest - Not Shockable</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_DescShort">
+            <English>REBOA Unit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_DescUse">
+            <English>Used to block the aorta and prevent bleeding below the heart</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Use">
+            <English>Place REBOA Unit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Action">
+            <English>Placing</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Status">
+            <English>REBOA</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Deep_Use">
+            <English>Advance REBOA Unit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Deep_Action">
+            <English>Advancing</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Remove_Use">
+            <English>Remove REBOA Unit</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
+            <English>Removing</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Pericardial_Tap_Use">
+            <English>Pericardial Tap</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Pericardial_Tap_Action">
+            <English>Performing</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Pericardial_Tap_Log">
+            <English>%1 performed a pericardial tap</English>
         </Key>
         <Key ID="STR_KAT_Surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>
@@ -815,6 +890,14 @@
             <Spanish>Nivel médico requerido para analizar el aliento</Spanish>
             <Portuguese>Nível médico necessário para analisar a o hálito</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Surgery_NPWT_ACTION_MEDLEVEL">
+            <English>Allow NPWT</English>
+            <German>Erforderliches medizinisches Training für den NPWT-Verband</German>
+        </Key>
+        <Key ID="STR_KAT_Surgery_NPWT_LOCATION">
+            <English>Locations NPWT</English>
+            <German>Ort für die benutzung eines NPWT-Verbandes</German>
+        </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_LOCATION">
             <English>Locations Closed Reduction</English>
             <Chinesesimp>封闭伤口的位置</Chinesesimp>
@@ -983,6 +1066,10 @@
             <Japanese>腎臓設定</Japanese>
             <Spanish>Parámetros para riñones</Spanish>
             <Portuguese>Configurações do rim</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Surgery_SubCategory_NPWT">
+            <English>Dressing Vacuum (NPWT) Settings</English>
+            <German>Vakuumverband (NPWT) Einstellungen</German>
         </Key>
         <Key ID="STR_KAT_Surgery_surgeryToolbox">
             <English>[KAM] Surgery Box</English>

@@ -62,7 +62,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 0;
         medicRequired = QGVAR(medLvl_Accuvac);
         callbackStart = QFUNC(treatmentAdvanced_AccuvacStart);
-        callbackSuccess = QFUNC(treatmentAdvanced_accuvac);
+        callbackSuccess = QUOTE([ARR_6(_medic,_patient,_bodyPart,'Accuvac','','kat_accuvac')] call FUNC(treatmentAdvanced_accuvac)); //Need to manuelly call fnc due to ACE not providing _itemName when consumeItem == 0
         callbackProgress = "";
         sounds[] = {{QPATHTO_R(sounds\accuvac_start.wav),6,1,15}};
     };
@@ -73,6 +73,7 @@ class ACE_Medical_Treatment_Actions {
         icon = QPATHTOF(ui\suction.paa);
         consumeItem = 1;
         medicRequired = QGVAR(medLvl_Suction);
+        callbackSuccess = QFUNC(treatmentAdvanced_accuvac);
         sounds[] = {{QPATHTO_R(sounds\manualpump_start.wav),6,1,15}};
     };
     class HyperextendHead: Larynxtubus {

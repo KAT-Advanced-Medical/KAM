@@ -32,6 +32,10 @@ private _cardiacArrestType = 0;
 if !(GVAR(AdvRhythm)) exitWith {};
 if !(alive _unit) exitWith {_unit setVariable [QGVAR(cardiacArrestType), 1, true];};
 
+if ((_unit getVariable [QGVAR(cardiacArrestType), 0] != 0) && _initial) then {
+    _initial = false;
+};
+
 if (_initial) then {
     if !(_active) exitWith {};
 
@@ -47,6 +51,10 @@ if (_initial) then {
         } else {
             _cardiacArrestType = 3;
         };
+    };
+
+    if ((count(_unit getVariable [QGVAR(ht), []])) != 0) then {
+        _cardiacArrestType = 2;
     };
 
     _unit setVariable [QGVAR(cardiacArrestType), _cardiacArrestType, true];
@@ -85,6 +93,8 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
             {
                 params ["_unit"];
 
+                if (!((count(_unit getVariable [QGVAR(ht), []])) == 0)) exitWith {};
+
                 if (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then { // Don't deteriorate during CPR
                     // chance to deteriorate straight into asystole (PEA)
                     if (GVAR(AdvRhythm_Hardcore_Enable) && {floor (random 100) < GVAR(AdvRhythm_hardcoreDeteriorationChance) && {_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 4}}) then {
@@ -121,6 +131,8 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
             [_unit], _timeToDeteriorate,
             {
                 params ["_unit"];
+
+                if (!((count(_unit getVariable [QGVAR(ht), []])) == 0)) exitWith {};
 
                 if (_unit getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then { // Don't deteriorate during CPR
                     if (_unit getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 3) then {// if VF skip PEA
