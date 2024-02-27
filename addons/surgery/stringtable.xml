@@ -15,6 +15,7 @@
             <Italian>Usando</Italian>
             <Japanese>使用中</Japanese>
             <Portuguese>Usando</Portuguese>
+            <Finnish>Käyttämällä</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Pushing">
             <English>Pushing</English>
@@ -30,6 +31,7 @@
             <Italian>Somministrando</Italian>
             <Japanese>注入中</Japanese>
             <Portuguese>Administrando</Portuguese>
+            <Finnish>Työntää</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_push_log">
             <English>%1 pushed %2</English>
@@ -45,6 +47,7 @@
             <Italian>%1 ha somministrato %2</Italian>
             <Japanese>%1 が%2を注入した</Japanese>
             <Portuguese>%1 administrou %2</Portuguese>
+            <Finnish>%1 työnnettiin %2</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_inject_log">
             <English>%1 injected %2</English>
@@ -60,6 +63,7 @@
             <Italian>%1 ha iniettato %2</Italian>
             <Japanese>%1 が%2を注射した</Japanese>
             <Portuguese>%1 injetou %2</Portuguese>
+            <Finnish>%1 pistetään %2</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_use_log">
             <English>%1 used %2</English>
@@ -75,6 +79,7 @@
             <Italian>%1 ha usato %2</Italian>
             <Japanese>%1 が%2を使用した</Japanese>
             <Portuguese>%1 usou %2</Portuguese>
+            <Finnish>%1 käytetty %2</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_breath_check">
             <English>Patient's breath is harsh and metallic</English>
@@ -88,6 +93,7 @@
             <Japanese>患者の吐息は荒々しく金属臭がする</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
             <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
+            <Finnish>Potilaan hengitys on kovaa ja metallista</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_breath_stink">
             <English>Patient's breath is harsh and metallic</English>
@@ -101,6 +107,7 @@
             <Japanese>患者の吐息は荒々しく金属臭がする</Japanese>
             <Spanish>El aliento del paciente es áspero y metálico</Spanish>
             <Portuguese>O hálito do paciente é áspero e metálico</Portuguese>
+            <Finnish>Potilaan hengitys on kovaa ja metallista</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_breath_mild">
             <English>Patient's breath is slightly fruity</English>
@@ -114,6 +121,7 @@
             <Japanese>患者の吐息は少し果物臭がする</Japanese>
             <Spanish>El aliento del paciente es dulce</Spanish>
             <Portuguese>O hálito do paciente é ligeiramente frutado</Portuguese>
+            <Finnish>Potilaan hengitys on hieman hedelmäistä</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_breath_good">
             <English>Patient's breath is ok</English>
@@ -127,6 +135,7 @@
             <Japanese>患者の吐息は一般的です</Japanese>
             <Spanish>El aliento del paciente es normal</Spanish>
             <Portuguese>O hálito do paciente é normal</Portuguese>
+            <Finnish>Potilaan hengitys on hyvä</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_dialysis">
             <English>Perform Dialysis</English>
@@ -140,6 +149,7 @@
             <Japanese>透析を行う</Japanese>
             <Spanish>Realizar dialisis</Spanish>
             <Portuguese>Realizar diálise</Portuguese>
+            <Finnish>Suorita dialyysi</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_perform">
             <English>Performing</English>
@@ -153,6 +163,7 @@
             <Japanese>実行中</Japanese>
             <Spanish>Realizando</Spanish>
             <Portuguese>Realizando</Portuguese>
+            <Finnish>Esiintymässä</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_check">
             <English>Check Fracture</English>
@@ -166,6 +177,7 @@
             <Japanese>骨折を診断</Japanese>
             <Spanish>Revisar fractura</Spanish>
             <Portuguese>Verificar fratura</Portuguese>
+            <Finnish>Tarkista murtuma</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_checking">
             <English>Checking</English>
@@ -179,6 +191,7 @@
             <Japanese>確認中</Japanese>
             <Spanish>Revisando</Spanish>
             <Portuguese>Verificando</Portuguese>
+            <Finnish>Tarkistetaan</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_closed">
             <English>Perform Closed Reduction</English>
@@ -192,6 +205,7 @@
             <Japanese>非観血的整復術を実行</Japanese>
             <Spanish>Realizar Reducción Cerrada</Spanish>
             <Portuguese>Realizar redução fechada</Portuguese>
+            <Finnish>Suorita suljettu pienennys</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_open">
             <English>Perform Open Reduction</English>
@@ -205,6 +219,7 @@
             <Japanese>観血的整復術を実行</Japanese>
             <Spanish>Realizar Reducción Abierta</Spanish>
             <Portuguese>Realizar redução aberta</Portuguese>
+            <Finnish>Suorita avoin pienennys</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_log">
             <English>%1 present on %2</English>
@@ -218,6 +233,7 @@
             <Japanese>%2に%1がある</Japanese>
             <Spanish>%1 presente en %2</Spanish>
             <Portuguese>%1 presente em %2</Portuguese>
+            <Finnish>%1 läsnä %2</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_surgery_log">
             <English>%1 %2 the fracture on the %3</English>
@@ -231,6 +247,7 @@
             <Japanese>%1 が%3の骨折を%2</Japanese>
             <Spanish>%1 %2 la fractura sobre el/la %3</Spanish>
             <Portuguese>%1 %2 a fratura sobre %3</Portuguese>
+            <Finnish>%1 %2 murtuma %3</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_incision_log">
             <English>%1 made an incision on the %2</English>
@@ -244,6 +261,7 @@
             <Japanese>%1 が%2を切開した</Japanese>
             <Spanish>%1 hizo una incisión sobre el/la %2</Spanish>
             <Portuguese>%1 fez uma incisão em %2</Portuguese>
+            <Finnish>%1 teki viillon %2</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_fail">
             <English>Surgical Action Failed</English>
@@ -257,6 +275,7 @@
             <Japanese>手術に失敗した</Japanese>
             <Spanish>La acción quirúrgico falló</Spanish>
             <Portuguese>Falha na ação cirúrgica</Portuguese>
+            <Finnish>Kirurginen toimenpide: epäonnistunut</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Scalpel_displayName">
             <English>Scalpel</English>
@@ -270,6 +289,7 @@
             <Japanese>メス</Japanese>
             <Spanish>Bisturí</Spanish>
             <Portuguese>Bisturi</Portuguese>
+            <Finnish>Skalpeli</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Scalpel_DescShort">
             <English>Used for creating incisions</English>
@@ -283,6 +303,7 @@
             <Spanish>Usado para crear incisiones y desbridar heridas</Spanish>
             <Polish>Służy do tworzenia nacięć i oczyszczania ran</Polish>
             <Portuguese>Usado para criar incisões e desbridar feridas</Portuguese>
+            <Finnish>Käytetään viiltojen tekemiseen</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Scalpel_Use">
             <English>Perform Incision</English>
@@ -296,6 +317,7 @@
             <Japanese>切開を行う</Japanese>
             <Spanish>Realizar incisión</Spanish>
             <Portuguese>Realizar incisão</Portuguese>
+            <Finnish>Suorita viilto</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_displayName">
             <English>Retractor</English>
@@ -309,6 +331,7 @@
             <Japanese>開創器 (レトラクター)</Japanese>
             <Spanish>Retractor</Spanish>
             <Portuguese>Retrator</Portuguese>
+            <Finnish>Kelauslaite</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_DescShort">
             <English>Used to expand and expose fractures</English>
@@ -322,6 +345,7 @@
             <Spanish>Usado para expandir y exponer heridas</Spanish>
             <Polish>Służy do rozszerzania i odsłonień złamań</Polish>
             <Portuguese>Usado para expandir e expor fraturas</Portuguese>
+            <Finnish>Käytetään murtumien laajentamiseen ja paljastamiseen</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_Use">
             <English>Expose Fracture</English>
@@ -335,6 +359,7 @@
             <Japanese>骨折を露出させる</Japanese>
             <Spanish>Exponer fractura</Spanish>
             <Portuguese>Expor fratura</Portuguese>
+            <Finnish>Paljasta murtuma</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_Action">
             <English>Exposing</English>
@@ -348,6 +373,7 @@
             <Japanese>露出させています</Japanese>
             <Spanish>Exponiendo</Spanish>
             <Portuguese>Expondo</Portuguese>
+            <Finnish>Paljastaminen</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Clamp_displayName">
             <English>Clamp</English>
@@ -361,6 +387,7 @@
             <Japanese>鉗子 (クランプ)</Japanese>
             <Spanish>Pinza de sujeción</Spanish>
             <Portuguese>Afastador</Portuguese>
+            <Finnish>Puristin</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Clamp_DescShort">
             <English>Used to clamp comminuted fractures</English>
@@ -374,6 +401,7 @@
             <Spanish>Usada para sujetar las fracturas conminutas</Spanish>
             <Polish>Służy do zaciskania skomplikowanych złamań</Polish>
             <Portuguese>Usado para fixar fraturas cominutivas</Portuguese>
+            <Finnish>Käytetään murtumien kiinnittämiseen</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Clamp_Use">
             <English>Clamp Fracture</English>
@@ -387,6 +415,7 @@
             <Japanese>骨折をクランプする</Japanese>
             <Spanish>Alinear trozos</Spanish>
             <Portuguese>Fixar fratura</Portuguese>
+            <Finnish>Puristimen murtuma</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Clamp_Action">
             <English>Clamping</English>
@@ -400,6 +429,7 @@
             <Japanese>クランプ中</Japanese>
             <Spanish>Alineando trozos</Spanish>
             <Portuguese>Fixando</Portuguese>
+            <Finnish>Kiinnitys</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Irrigate_Use">
             <English>Irrigate Wound</English>
@@ -413,6 +443,7 @@
             <Japanese>創面を灌注</Japanese>
             <Spanish>Irrigar herida</Spanish>
             <Portuguese>Irrigar ferida</Portuguese>
+            <Finnish>Huuhtele haava</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Irrigate_Action">
             <English>Irrigating</English>
@@ -426,6 +457,7 @@
             <Japanese>灌注中</Japanese>
             <Spanish>Irrigando</Spanish>
             <Portuguese>Irrigando</Portuguese>
+            <Finnish>Kastelu</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Plate_Display">
             <English>Bone Plate</English>
@@ -439,6 +471,7 @@
             <Japanese>骨接合板</Japanese>
             <Spanish>Placa de fijación</Spanish>
             <Portuguese>Placa de fixação óssea</Portuguese>
+            <Finnish>Luulevy</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Plate_DescShort">
             <English>Used to complete all complex fracture types</English>
@@ -452,6 +485,7 @@
             <Spanish>Usada para fijar todas las fracturas avanzadas</Spanish>
             <Polish>Służy do łączenia wszystkich złożonych typów złamań</Polish>
             <Portuguese>Usado para corrigir todas as fraturas avançadas</Portuguese>
+            <Finnish>Käytetään viimeistelemään kaikki monimutkaiset fraktit</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_displayName">
             <English>Dressing vacuum</English>
@@ -465,6 +499,7 @@
             <Japanese>吸引被覆 (NPWT)</Japanese>
             <Spanish>Vendaje al vacío</Spanish>
             <Portuguese>Bandagem a vácuo</Portuguese>
+            <Finnish>Pukeutumistyhjiö</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_DescShort">
             <English>Used to completely dress and seal wounds</English>
@@ -478,6 +513,7 @@
             <Spanish>Usado para vendar y sellar heridas completamente</Spanish>
             <Polish>Używany do całkowitego uzdrowienia ran</Polish>
             <Portuguese>Usado para enfaixar e selar feridas completamente</Portuguese>
+            <Finnish>Käytetään haavojen täydelliseen pukemiseen ja sulkemiseen</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_Use">
             <English>Apply NPWT Dressing</English>
@@ -491,6 +527,7 @@
             <Japanese>吸引被覆(NPWT)を行う</Japanese>
             <Spanish>Colocar vendaje al vacío</Spanish>
             <Portuguese>Aplicar curativo NPWT</Portuguese>
+            <Finnish>Levitä NPWT-sidosta</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_Action">
             <English>Applying</English>
@@ -504,6 +541,7 @@
             <Japanese>施術中</Japanese>
             <Spanish>Colocando</Spanish>
             <Portuguese>Aplicando</Portuguese>
+            <Finnish>Hakeminen</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>
@@ -517,6 +555,7 @@
             <Japanese>腎臓の損傷/機能不全</Japanese>
             <Spanish>Insuficiencia/Daño renal</Spanish>
             <Portuguese>Dano/falha renal</Portuguese>
+            <Finnish>Munuaisvaurio/munuaisten vajaatoiminta</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_KIDNEY_ACTION_DESC">
             <English>Enables kidney damage caused by overuse of saline</English>
@@ -530,6 +569,7 @@
             <Japanese>生理食塩水の過剰投与(浸透圧過剰)による腎臓の損傷を可能にします</Japanese>
             <Spanish>Permite el daño de los riñones causado por uso excesivo de salino</Spanish>
             <Portuguese>Permite dano renal causado pelo uso excessivo de soro fisiológico</Portuguese>
+            <Finnish>Mahdollistaa suolaliuoksen liiallisen käytön aiheuttaman munuaisvaurion</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_DIALYSIS_TIMER">
             <English>Time to perform dialysis</English>
@@ -543,6 +583,7 @@
             <Japanese>透析の所要時間</Japanese>
             <Spanish>Tiempo para realizar dialisis</Spanish>
             <Portuguese>Duração de diálise</Portuguese>
+            <Finnish>Dialyysin suorittamisen aika</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_ADVANCED_FRACTURE">
             <English>Enables advanced fractures</English>
@@ -556,6 +597,7 @@
             <Japanese>高度な骨折を有効化</Japanese>
             <Spanish>Permite fracturas avanzadas</Spanish>
             <Portuguese>Permite fraturas avançadas</Portuguese>
+            <Finnish>Mahdollistaa pitkälle edenneet murtumat</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SIMPLE_FRACTURE_CHANCE">
             <English>Simple fracture chance</English>
@@ -569,6 +611,7 @@
             <Japanese>単純骨折の確率</Japanese>
             <Spanish>Probabilidad de fractura simple</Spanish>
             <Portuguese>Probabilidade de fratura simples</Portuguese>
+            <Finnish>Yksinkertainen murtuman mahdollisuus</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SIMPLE_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for simple fractures. Also sets the chance for complex fractures (60% Simple = 40% Complex)</English>
@@ -582,6 +625,7 @@
             <Japanese>単純骨折の可能性を設定します。また、開放骨折の可能性を設定します (単純骨折60% = 開放骨折40%)</Japanese>
             <Spanish>Establece la probabilidad para fracturas simples. También establece la probabilidad de fracturas complejas (60% Simple - 40% Compleja)</Spanish>
             <Portuguese>Define a probabilidade de fraturas simples. Também estabelece a probabilidade de fraturas complexas (60% Simples - 40% Complexas)</Portuguese>
+            <Finnish>Asettaa mahdollisuuden yksinkertaisiin murtumiin. Asettaa myös mahdollisuuden monimutkaisiin murtumiin (60 % yksinkertainen = 40 % monimutkainen)</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL">
             <English>Closed reduction fail chance</English>
@@ -594,6 +638,7 @@
             <Spanish>Probabilidad de fallo de reducción cerrada</Spanish>
             <Czech>Šance na neúspěch uzavřené repozice</Czech>
             <Italian>Possibilità di fallimento di riduzione ortopedica chiusa</Italian>
+            <Finnish>Suljettu vähennys epäonnistuu</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_FAIL_DESC">
             <English>Chance that closed reduction will fail. Default value 10%</English>
@@ -606,6 +651,7 @@
             <Spanish>Probabilidad de fallo de la reducción cerrada. Valor predeterminado 10%</Spanish>
             <Czech>Šance, že se uzavřená repozice nepovede. Výchozí hodnota 10%</Czech>
             <Italian>Probabilità che la riduzione ortopedica chiusa fallisca. Default 10%</Italian>
+            <Finnish>Mahdollisuus, että suljettu vähennys epäonnistuu. Oletusarvo 10 %</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE_CHANCE">
             <English>Compound fracture chance</English>
@@ -619,6 +665,7 @@
             <Japanese>開放骨折の確率</Japanese>
             <Spanish>Probabilidad de fractura compuesta</Spanish>
             <Portuguese>Probabilidade de fratura composta</Portuguese>
+            <Finnish>Yhdistelmämurtuman mahdollisuus</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE_CHANCE_DESC">
             <English>Sets the chance for compound fractures. Also sets the chance for comminuted fractures (60% Compound = 40% Comminuted)</English>
@@ -632,6 +679,7 @@
             <Japanese>開放骨折の可能性を設定します。粉砕骨折の可能性も設定します (開放骨折60% = 粉砕骨折40%)</Japanese>
             <Spanish>Establece la probabilidad para fracturas compuestas. También establece la probabilidad de fracturas conminutas (60% Compuesta - 40% Conminuta)</Spanish>
             <Portuguese>Define a probabilidade de fraturas compostas. Também estabelece a probabilidade de fraturas cominutivas (60% Composite - 40% Cominutive)</Portuguese>
+            <Finnish>Asettaa yhdistelmämurtumien mahdollisuuden. Asettaa myös murtumien mahdollisuuden (60 % yhdiste = 40 % hienonnettu)</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_ETOMIDATE_TIMER">
             <English>Etomidate cycle timer</English>
@@ -645,6 +693,7 @@
             <Japanese>エトミデートの効果時間</Japanese>
             <Spanish>Tiempo para ciclo del Etomidato</Spanish>
             <Portuguese>Tempo de ciclo do Etomidato</Portuguese>
+            <Finnish>Etomidaattisyklin ajastin</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_ETOMIDATE_TIMER_DESC">
             <English>Determines how long each dose of etomidate stays in a patient</English>
@@ -658,6 +707,7 @@
             <Japanese>エトミデートが患者に留まる時間を設定します</Japanese>
             <Spanish>Determina la duración de cada dosis de Etomidato en el paciente</Spanish>
             <Portuguese>Determina a duração de cada dose de Etomidato no paciente</Portuguese>
+            <Finnish>Määrittää, kuinka kauan kukin etomidaattiannos pysyy potilaassa</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_TIMER">
             <English>Closed Reduction Time</English>
@@ -671,6 +721,7 @@
             <Japanese>非観血的整復術の所要時間</Japanese>
             <Spanish>Tiempo para realizar reducciones cerradas</Spanish>
             <Portuguese>Duração de reduções fechadas</Portuguese>
+            <Finnish>Suljettu vähennysaika</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_OPEN_TIMER">
             <English>Open Reduction Time</English>
@@ -684,6 +735,7 @@
             <Japanese>観血的整復術の所要時間</Japanese>
             <Spanish>Tiempo para realizar reducciones abiertas</Spanish>
             <Portuguese>Duração de reduções abertas</Portuguese>
+            <Finnish>Avoin vähennysaika</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SURGICAL_TIMER">
             <English>Surgical Action Time</English>
@@ -697,6 +749,7 @@
             <Japanese>外科的処置の所要時間</Japanese>
             <Spanish>Tiempo para realizar acciones quirúrgicas</Spanish>
             <Portuguese>Duração de ações cirúrgicas</Portuguese>
+            <Finnish>Kirurgisen toiminnan aika</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_INCISION_TIMER">
             <English>Perform Incision Time</English>
@@ -710,6 +763,7 @@
             <Japanese>切開の所要時間</Japanese>
             <Spanish>Tiempo para realizar incisiones</Spanish>
             <Portuguese>Duração de incisões</Portuguese>
+            <Finnish>Suorita viiltoaika</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_BREATH_CHECK_TIME">
             <English>Breath Check Time</English>
@@ -723,6 +777,7 @@
             <Japanese>呼吸確認の所要時間</Japanese>
             <Spanish>Tiempo para checar el aliento</Spanish>
             <Portuguese>Duração da verificação de hálito</Portuguese>
+            <Finnish>Hengityksen tarkistusaika</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_INTERMEDIATE_TIMER">
             <English>Time to perform intermediate actions</English>
@@ -736,6 +791,7 @@
             <Japanese>中間処置の所要時間</Japanese>
             <Spanish>Tiempo para realizar acciones intermediarias</Spanish>
             <Portuguese>Duração de ações intermediárias</Portuguese>
+            <Finnish>Aika suorittaa välitoimia</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_INTERMEDIATE_TIMER_DESC">
             <English>Sets how long it takes to perform intermediate surgical actions such as exposing and irrigation</English>
@@ -749,6 +805,7 @@
             <Japanese>露出や灌注などの中間の外科的処置を実行するのにかかる時間を設定します</Japanese>
             <Spanish>Establece cuanto tiempo tarda realizar acciones quirúrgicas como exponer o irrigar.</Spanish>
             <Portuguese>Estabelece quanto tempo leva para realizar ações cirúrgicas, como expor ou irrigar.</Portuguese>
+            <Finnish>Asettaa, kuinka kauan kirurgisten välitoimenpiteiden, kuten valotuksen ja kastelun, suorittaminen kestää</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_FRACTURE_CHECK_TIMER">
             <English>Fracture Check Time</English>
@@ -762,6 +819,7 @@
             <Japanese>骨折診断の所要時間</Japanese>
             <Spanish>Tiempo para analizar una fractura</Spanish>
             <Portuguese>Duração da análise de fratura</Portuguese>
+            <Finnish>Murtuman tarkistusaika</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_FRACTURE_CHECK_MEDLEVEL">
             <English>Allow Check Fracture</English>
@@ -775,6 +833,7 @@
             <Japanese>骨折診断の許可</Japanese>
             <Spanish>Nivel médico requerido para analizar la fractura de alguien</Spanish>
             <Portuguese>Nível médico necessário para analisar a fratura de alguém</Portuguese>
+            <Finnish>Salli murtuman tarkistaminen</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_REDUCTION_MEDLEVEL">
             <English>Allow Closed Reduction</English>
@@ -788,6 +847,7 @@
             <Japanese>非観血的整復術の許可</Japanese>
             <Spanish>Nivel médico requerido para realizar una reducción cerrada</Spanish>
             <Portuguese>Nível médico necessário para realizar uma redução fechada</Portuguese>
+            <Finnish>Salli suljettu pienennys</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SURGICAL_ACTION_MEDLEVEL">
             <English>Allow Surgery</English>
@@ -801,6 +861,7 @@
             <Japanese>手術の許可</Japanese>
             <Spanish>Nivel médico requerido para realizar una acción quirúrgica</Spanish>
             <Portuguese>Nível médico exigido para realizar uma ação cirúrgica</Portuguese>
+            <Finnish>Salli leikkaus</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_BREATH_CHECK_MEDLEVEL">
             <English>Allow Breath Check</English>
@@ -814,6 +875,7 @@
             <Japanese>呼吸確認の許可</Japanese>
             <Spanish>Nivel médico requerido para analizar el aliento</Spanish>
             <Portuguese>Nível médico necessário para analisar a o hálito</Portuguese>
+            <Finnish>Salli tarkistaa hengitys</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_LOCATION">
             <English>Locations Closed Reduction</English>
@@ -827,6 +889,7 @@
             <Japanese>非観血的整復の可能な場所</Japanese>
             <Spanish>Zona para reducciones cerradas</Spanish>
             <Portuguese>Locação para reduções fechadas</Portuguese>
+            <Finnish>Suljettujen paikkojen vähennys</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SURGICAL_LOCATION">
             <English>Locations Surgery</English>
@@ -840,6 +903,7 @@
             <Japanese>観血的整復術・手術の可能な場所</Japanese>
             <Spanish>Zona para reducciones abiertas/Acciones quirúrgicas</Spanish>
             <Portuguese>Locação para reduções abertas/cirúrgicas</Portuguese>
+            <Finnish>Paikkakirurgia</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_SELF_CHECKFRACTURE">
             <English>Allow self check fracture</English>
@@ -853,6 +917,7 @@
             <Japanese>骨折の自己診断を許可</Japanese>
             <Spanish>Permitir revisarse fracturas propias</Spanish>
             <Portuguese>Permitir verificar as próprias fraturas</Portuguese>
+            <Finnish>Salli itsetarkastuksen murtuma</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_EXPOSED">
             <English>exposed</English>
@@ -866,6 +931,7 @@
             <Japanese>露出させた</Japanese>
             <Spanish>expuesto/a</Spanish>
             <Portuguese>exposto(a)</Portuguese>
+            <Finnish>paljastettu</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_IRRIGATED">
             <English>irrigated</English>
@@ -879,6 +945,7 @@
             <Japanese>灌注した</Japanese>
             <Spanish>irrigado/a</Spanish>
             <Portuguese>irrigado(a)</Portuguese>
+            <Finnish>Kasteltu</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_CLAMPED">
             <English>clamped</English>
@@ -892,6 +959,7 @@
             <Japanese>クランプした</Japanese>
             <Spanish>alineado/a</Spanish>
             <Portuguese>fixado(a)</Portuguese>
+            <Finnish>Kiinnitetty</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_COMMINUTED_FRACTURE">
             <English>Comminuted Fracture</English>
@@ -905,6 +973,7 @@
             <Japanese>粉砕骨折</Japanese>
             <Spanish>Fractura Conminuta</Spanish>
             <Portuguese>Fratura cominutiva</Portuguese>
+            <Finnish>Hienonnettu murtuma</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_COMPOUND_FRACTURE">
             <English>Compound Fracture</English>
@@ -918,6 +987,7 @@
             <Japanese>開放骨折</Japanese>
             <Spanish>Fractura Compuesta</Spanish>
             <Portuguese>Fratura composta</Portuguese>
+            <Finnish>Avomurtuma</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SIMPLE_FRACTURE">
             <English>Simple Fracture</English>
@@ -931,6 +1001,7 @@
             <Japanese>単純骨折</Japanese>
             <Spanish>Fractura Simple</Spanish>
             <Portuguese>Fratura simples</Portuguese>
+            <Finnish>Yksinkertainen murtuma</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_NPWTTime">
             <English>Apply NPWT Dressing Time</English>
@@ -944,6 +1015,7 @@
             <Japanese>NPWT被覆の所要時間</Japanese>
             <Spanish>Tiempo para colocar un vendaje al vacío</Spanish>
             <Portuguese>Duração do aplique de curativo a vácuo</Portuguese>
+            <Finnish>Levitä NPWT-sidos tu</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_SurgicalActions">
             <English>Surgical actions Settings</English>
@@ -957,6 +1029,7 @@
             <Japanese>手術設定</Japanese>
             <Spanish>Parámetros para acciones quirúrgicas</Spanish>
             <Portuguese>Configurações de ações cirúrgicas</Portuguese>
+            <Finnish>Kirurgisten toimien asetukset</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_Fractures">
             <English>Fractures Settings</English>
@@ -970,6 +1043,7 @@
             <Japanese>骨折設定</Japanese>
             <Spanish>Parámetros para fracturas</Spanish>
             <Portuguese>Configurações de fraturas</Portuguese>
+            <Finnish>Murtumien asetukset</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SubCategory_Kidney">
             <English>Kidney Settings</English>
@@ -983,6 +1057,7 @@
             <Japanese>腎臓設定</Japanese>
             <Spanish>Parámetros para riñones</Spanish>
             <Portuguese>Configurações do rim</Portuguese>
+            <Finnish>Munuaisten asetukset</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_surgeryToolbox">
             <English>[KAM] Surgery Box</English>
@@ -995,6 +1070,7 @@
             <Korean>[KAM] 수술도구 상자</Korean>
             <Portuguese>[KAM] Caixa cirúrgica</Portuguese>
             <Spanish>[KAM] Caja quirurgica</Spanish>
+            <Finnish>[KAM] Leikkauslaatikko</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement">
             <English>Surgery Consciousness Controls</English>
@@ -1004,6 +1080,7 @@
             <Korean>수술 중 의식 관리</Korean>
             <German>Chirurgie Bewusstseinseinstellungen</German>
             <Portuguese>Controles de consciência durante a cirurgia</Portuguese>
+            <Finnish>Kirurginen tajunta</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_ConsciousnessRequirement_DESC">
             <English>Surgery Causes Unconsciousness: Surgery without anesthesia and sedation results in unconsciousness from CA. \nUnconsciousness Required for Surgery: Surgery requires patient to be unconscious. \nNo Unconsciousness from Surgery: Surgery doesn't induce unconsciousness, causes pain. \nSurgery Anesthesia: Patient stays awake during surgery if given Etomidate, if not they will go into CA.</English>
@@ -1013,6 +1090,7 @@
             <Korean>수술로 인해 의식불명 발생: 마취 및 진정제 없이 수술을 하면 심정지로 인해 의식을 잃습니다.\n수술에 필요한 의식불명: 수술을 하려면 환자가 의식을 잃어야 합니다.\n수술 중 의식불명 발생 없음: 수술이 의식불명을 유발시키지 않지만 통증을 발생시킵니다.\n수술 마취: 에토미데이트를 투여하면 환자는 수술 중 깨어 있게 됩니다.</Korean>
             <German>Eine Operation führt zu Bewusstlosigkeit: Eine Operation ohne Anästhesie und Sedierung führt zu Bewusstlosigkeit aufgrund von CA. \nFür eine Operation ist Bewusstlosigkeit erforderlich: Bei einer Operation muss der Patient bewusstlos sein. \nKeine Bewusstlosigkeit durch eine Operation: Eine Operation führt nicht zur Bewusstlosigkeit, sondern verursacht Schmerzen. \nOperationsanästhesie: Der Patient bleibt während der Operation wach, wenn er Etomidat erhält.</German>
             <Portuguese>A cirurgia causa inconsciência: A cirurgia sem anestesia e sedação resulta em inconsciência. \nInconsciência necessária para a cirurgia: A cirurgia requer que o paciente esteja inconsciente. \nSem inconsciência por cirurgia: A cirurgia não induz inconsciência, causa dor. \nAnestesia cirúrgica: O paciente permanece acordado durante a cirurgia se receber etomidato.</Portuguese>
+            <Finnish>Leikkaus aiheuttaa tajuttomuuden: leikkaus ilman anestesiaa ja sedaatiota johtaa tajuttomuuteen sydämenpysähdyksestä. \nLeikkaukseen tarvitaan tajuttomuus: leikkaus ei aiheuta tajuttomuutta, aiheuttaa kipua. \nLeikkauksen anestesia: Potilas pysyy hereillä leikkauksen aikana, jos hänelle annetaan etomidaattia, jos ei, hän menettää sydämenpysähdyksen.</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Causes_Unconsciousness">
             <English>Surgery Causes Unconsciousness</English>
@@ -1022,6 +1100,7 @@
             <Korean>수술로 인해 의식불명 발생</Korean>
             <German>Eine Operation führt zu Bewusstlosigkeit</German>
             <Portuguese>A cirurgia causa inconsciência</Portuguese>
+            <Finnish>Leikkaus aiheuttaa tajuttomuuden</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Unconsciousness_Required">
             <English>Unconsciousness Required for Surgery</English>
@@ -1031,6 +1110,7 @@
             <Korean>수술에 필요한 의식불명</Korean>
             <German>Für die Operation ist Bewusstlosigkeit erforderlich</German>
             <Portuguese>Inconsciência necessária para a cirurgia</Portuguese>
+            <Finnish>Leikkaukseen tarvitaan tajuttomuus</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_No_Unconsciousness">
             <English>No Unconsciousness from Surgery</English>
@@ -1040,6 +1120,7 @@
             <Korean>수술 중 의식불명 발생 없음</Korean>
             <German>Keine Bewusstlosigkeit durch die Operation</German>
             <Portuguese>Sem inconsciência por cirurgia</Portuguese>
+            <Finnish>Ei tajuttomuutta leikkauksesta</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_SETTING_Anesthesia">
             <English>Surgery Anesthesia</English>
@@ -1049,6 +1130,7 @@
             <Korean>수술 마취</Korean>
             <German>Chirurgische Anästhesie</German>
             <Portuguese>Anestesia cirúrgica</Portuguese>
+            <Finnish>Leikkauksen anestesia</Finnish>
         </Key>
     </Package>
 </Project>
