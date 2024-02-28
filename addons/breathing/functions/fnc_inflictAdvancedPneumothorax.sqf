@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [cursorTarget, 5, false] call kat_breathing_fnc_inflictAdvancedPneumothorax;
+ * [player, 15, false] call kat_breathing_fnc_inflictAdvancedPneumothorax;
  *
  * Public: No
  */

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_breathing_fnc_handlePneumothoraxDeterioration;
+ * [player, 15] call kat_breathing_fnc_handlePneumothoraxDeterioration;
  *
  * Public: No
  */
