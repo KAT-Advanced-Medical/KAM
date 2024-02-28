@@ -1259,7 +1259,7 @@
             <English>The item color of the text that is displayed via a hint</English>
             <German>Die Farbe der Gegenstände die über einen Hinweis angezeigt werden</German>
             <Japanese>ヒントで表示されるポケット内アイテムの文章の文字色</Japanese>
-          <Korean>힌트로 표시되는 텍스트의 아이템 색깔</Korean>
+            <Korean>힌트로 표시되는 텍스트의 아이템 색깔</Korean>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor">
             <English>Hint Section Color</English>
