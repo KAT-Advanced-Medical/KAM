@@ -26,10 +26,8 @@ if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
     private _output = LLSTRING(Accuvac_NA);
     [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 
-    if (_usedItem isEqualTo "kat_suction") then {
-        if (GVAR(Suction_reuse)) then {
-            [_medic, "kat_suction"] call ACEFUNC(common,addToInventory);
-        };
+    if (_usedItem isEqualTo "kat_suction" && GVAR(Suction_reuse)) then {
+        [_medic, "kat_suction"] call ACEFUNC(common,addToInventory);
     };
 };
 
