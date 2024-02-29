@@ -31,4 +31,5 @@ switch (_bloodType) do {
     default { _bloodTypeLog = "0-" };
 };
 
+[_patient, "quick_view", LSTRING(bloodtype_log)] call EFUNC(circulation,removeLog);
 [_patient, "quick_view", LSTRING(bloodtype_log), [[_medic] call ACEFUNC(common,getName), _bloodTypeLog]] call ACEFUNC(medical_treatment,addToLog);

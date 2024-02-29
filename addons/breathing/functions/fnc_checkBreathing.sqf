@@ -51,4 +51,5 @@ if (_hr == 0 || !(alive _patient) || (_patient getVariable [QEGVAR(airway,obstru
 
 [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
 
+[_patient, "quick_view", LSTRING(CheckBreathing_Log)] call EFUNC(circulation,removeLog);
 [_patient, "quick_view", LSTRING(CheckBreathing_Log), [[_medic] call ACEFUNC(common,getName), _output_log]] call ACEFUNC(medical_treatment,addToLog);
