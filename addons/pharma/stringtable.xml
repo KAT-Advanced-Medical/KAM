@@ -3126,6 +3126,18 @@
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
             <English>Taking Blood Sample, </English>
         </Key>
+        <Key ID="STR_KAT_Pharma_CheckCoag_slightly_lowINR">
+            <English>slightly below normal INR</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
+            <English>sligtly above normal INR</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckCoag_highly_lowINR">
+            <English>highly below normal INR</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckCoag_highly_aboveINR">
+            <English>highly above normal INR</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coag_Sense">
             <English>Coag-Sense Settings</English>
         </Key>
