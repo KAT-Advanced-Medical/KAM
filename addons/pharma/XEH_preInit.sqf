@@ -347,9 +347,9 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(bandageCyleTime_TXA),
+    QGVAR(bandageCycleTime_TXA),
     "TIME",
-    [LLSTRING(SETTING_bandageCyleTime_TXA), LLSTRING(SETTING_bandageCyleTime_TXA_DESC)],
+    [LLSTRING(SETTING_bandageCycleTime_TXA), LLSTRING(SETTING_bandageCycleTime_TXA_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
     [1, 180, 5],
     true
@@ -508,9 +508,9 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(bandageCyleTime_EACA),
+    QGVAR(bandageCycleTime_EACA),
     "TIME",
-    [LLSTRING(SETTING_bandageCyleTime_EACA), LLSTRING(SETTING_bandageCyleTime_EACA_DESC)],
+    [LLSTRING(SETTING_bandageCycleTime_EACA), LLSTRING(SETTING_bandageCycleTime_EACA_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_EACA)],
     [1, 180, 8],
     true
@@ -668,9 +668,18 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(coagulation_tourniqueBlock),
+    QGVAR(coagulation_tourniquetBlock),
     "CHECKBOX",
-    [LLSTRING(SETTING_Coagulation_coagulation_tourniqueBlock), LLSTRING(SETTING_Coagulation_coagulation_tourniqueBlock_DESC)],
+    [LLSTRING(SETTING_Coagulation_tourniquetBlock), LLSTRING(SETTING_Coagulation_tourniquetBlock_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagulation_allow_clott_text),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Coagulation_allow_clott_text), LLSTRING(SETTING_Coagulation_allow_clott_text_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
     [true],
     true
@@ -754,7 +763,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_Coagulation_FactorCount), LLSTRING(SETTING_Coagulation_FactorCount_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [0, 500, 15, 0],
+    [0, 100, 15, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -763,7 +772,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_coagulation_Factor_Limit), LLSTRING(SETTING_coagulation_Factor_Limit_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [1, 500, 30, 0],
+    [1, 200, 30, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -806,9 +815,9 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(coagulation_factor_regenreate_time),
+    QGVAR(coagulation_factor_regenerate_time),
     "TIME",
-    [LLSTRING(SETTING_Coagulation_Factor_Regenreate_Time), LLSTRING(SETTING_Coagulation_Factor_Regenreate_Time_DESC)],
+    [LLSTRING(SETTING_Coagulation_Factor_Regenerate_Time), LLSTRING(SETTING_Coagulation_Factor_Regenerate_Time_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
     [1, 900, 150],
     true

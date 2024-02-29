@@ -1762,10 +1762,10 @@
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_TXA_DESC">
             <English>If enabled TXA will keep bandaging until it's out of your system\nIf disabled TXA will stop working after bandaging the last wound it can find</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_bandageCyleTime_TXA">
+        <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_TXA">
             <English>TXA Cycle Time</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_bandageCyleTime_TXA_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_TXA_DESC">
             <English>The time it takes for TXA to close a wound</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Norepinephrine">
@@ -1962,10 +1962,10 @@
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA_DESC">
             <English>If enabled EACA will keep stichinng until it's out of your system\nIf disabled EACA will stop working after stiching the last bandaged wound it can find</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_bandageCyleTime_EACA">
+        <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA">
             <English>EACA Cycle Time</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_bandageCyleTime_EACA_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA_DESC">
             <English>The time it takes for EACA to close a stich a wound</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Flumazenil">
@@ -2611,10 +2611,10 @@
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Clotting_DESC">
             <English>This time gets divided by 2, randomized &amp; added with the same value devided by 2. \n For example, if the value was set to 10s this would be one possible varriation: (random (10 / 2)) + (10 / 2) = 8s</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenreate_Time">
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenerate_Time">
             <English>Coagulation Factor Regeneration Cycle</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenreate_Time_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenerate_Time_DESC">
             <English>The time between coagulation factor regeneration checks. Will add +1 factor on sucessfull check. Uses Setting: "Coagulation Factors" as limit.\n Note: If the limit is exceeded, this time will be used and then remove -1 factor until Setting: "Coagulation Factors" is reached. Tipp: TXA or EACA stop losing factors\nRequirements for regeneration to work:\n- No wound being clotted in the last cycle check from this setting\n- Setting: "Require Heart Rate"\n- Setting: "Required Blood Volume"</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allowOnAI">
@@ -2623,10 +2623,10 @@
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allowOnAI_DESC">
             <English>Allow coagulation to affect AI units. \nEvery other value will still be required if turned on. (May cause lag if many AI is present)</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_coagulation_tourniqueBlock">
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock">
             <English>Tournique Blocks Blood Clotting</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_coagulation_tourniqueBlock_DESC">
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock_DESC">
             <English>If enabled a applied tournique will stop wounds from being closed from coagulation on that bodypart</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MinorWounds">
@@ -2670,6 +2670,12 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_coagulation_Factor_Limit_DESC">
             <English>The limit for how many coagulation factors can be present inside a units body at once. Meaning if you administer plasma this is the maximum attainable value.</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_clot_text">
+            <English>Allow Clots To Be Shown in Menu</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_clot_text_DESC">
+            <English>If enabled, when coagulation is bandaging a wound it will add a interaction log to the medical menu.</English>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
             <English>Blood clotting temporarily closed a wound on %1</English>
@@ -3137,6 +3143,9 @@
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_aboveINR">
             <English>highly above normal INR</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_CheckCoag_normalINR">
+            <English>normal INR</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coag_Sense">
             <English>Coag-Sense Settings</English>

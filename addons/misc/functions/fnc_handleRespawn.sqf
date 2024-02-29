@@ -228,27 +228,27 @@ if (EGVAR(pharma,coagulation)) then {
             private _coagulation_time_minor = missionNamespace getVariable [QEGVAR(pharma,coagulation_time_minor), 15];
             private _coagulation_time_medium = missionNamespace getVariable [QEGVAR(pharma,coagulation_time_medium), 30];
             private _coagulation_time_large = missionNamespace getVariable [QEGVAR(pharma,coagulation_time_large), 45];
-            private _factorCoutToRemove = 1;
+            private _factorCountToRemove = 1;
 
             switch (_suffix) do {
                 case "Minor": { 
                     _woundClotTime = round ((random (_coagulation_time_minor / 2)) + _coagulation_time_minor / 2);
                     _bandageToUse = "BloodClotMinor";
-                    _factorCoutToRemove = 1;
+                    _factorCountToRemove = 1;
 
                     if !(missionNamespace getVariable [QEGVAR(pharma,coagulation_allow_MinorWounds), true]) then { continue; };
                 };
                 case "Medium": { 
                     _woundClotTime = round ((random (_coagulation_time_medium / 2)) + _coagulation_time_medium / 2);
                     _bandageToUse = "BloodClotMedium";
-                    _factorCoutToRemove = 1.5;
+                    _factorCountToRemove = 1.5;
 
                     if !(missionNamespace getVariable [QEGVAR(pharma,coagulation_allow_MediumWounds), true]) then { continue; };
                 };
                 default { 
                     _woundClotTime = round ((random (_coagulation_time_large / 2)) + _coagulation_time_large / 2);
                     _bandageToUse = "BloodClotLarge";
-                    _factorCoutToRemove = 2;
+                    _factorCountToRemove = 2;
 
                     if !(missionNamespace getVariable [QEGVAR(pharma,coagulation_allow_LargeWounds), true]) then { continue; };
                 };
@@ -268,7 +268,7 @@ if (EGVAR(pharma,coagulation)) then {
                 };
 
                 [{
-                    params["_unit", "_bodyPart", "_selectionName", "_bandageToUse", "_logString", "_factorCoutToRemove"];
+                    params["_unit", "_bodyPart", "_selectionName", "_bandageToUse", "_logString", "_factorCountToRemove"];
 
                     private _coagulationFactor = _unit getVariable [QEGVAR(pharma,coagulationFactor), 15];
                     private _openWounds = GET_OPEN_WOUNDS(_unit);
@@ -277,13 +277,15 @@ if (EGVAR(pharma,coagulation)) then {
 
                     if (_coagulationFactor <= 0) exitWith {};
                     if (_woundIndex == -1) exitWith {};
-                    if ([_unit, _bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo) && missionNamespace getVariable [QEGVAR(pharma,coagulation_tourniqueBlock), true]) exitWith {};
+                    if ([_unit, _bodyPart] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo) && missionNamespace getVariable [QEGVAR(pharma,coagulation_tourniquetBlock), true]) exitWith {};
                     
-                    _unit setVariable [QEGVAR(pharma,coagulationFactor), (_coagulationFactor - _factorCoutToRemove), true];
+                    _unit setVariable [QEGVAR(pharma,coagulationFactor), (_coagulationFactor - _factorCountToRemove), true];
                     [QACEGVAR(medical_treatment,bandageLocal), [_unit, _bodyPart, _bandageToUse], _unit] call CBA_fnc_targetEvent;
-                    [_unit, "activity", _logString, [(toLower _selectionName)]] call ACEFUNC(medical_treatment,addToLog);
+                    if (coagulation_allow_clott_text) then {
+                        [_unit, "activity", _logString, [(toLower _selectionName)]] call ACEFUNC(medical_treatment,addToLog);
+                    };
                 },
-                [_unit, _bodyPart, _selectionName, _bandageToUse, _logString, _factorCoutToRemove], _woundClotTime] call CBA_fnc_waitAndExecute;
+                [_unit, _bodyPart, _selectionName, _bandageToUse, _logString, _factorCountToRemove], _woundClotTime] call CBA_fnc_waitAndExecute;
             };
         } forEach _wounds;
     };
@@ -317,7 +319,7 @@ if (EGVAR(pharma,coagulation)) then {
         private _shuffledKeys = keys _openWounds call BIS_fnc_arrayShuffle; // Shuffel Keys to switch bodypart after each bandage for on_all_Bodyparts setting
         
         {
-            if ([_unit, _x] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo) && missionNamespace getVariable [QEGVAR(pharma,coagulation_tourniqueBlock), true]) then { // Check for tourniqet
+            if ([_unit, _x] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo) && missionNamespace getVariable [QEGVAR(pharma,coagulation_tourniquetBlock), true]) then { // Check for tourniqet
                 continue;
             };
 
@@ -386,7 +388,7 @@ if (EGVAR(pharma,coagulation)) then {
                 params["_unit"];
                 _unit setVariable [QEGVAR(pharma,coagulationSavedFactors), _unit getVariable [QEGVAR(pharma,coagulationFactor), 15], true];
             },
-            [_unit], ((missionNamespace getVariable [QEGVAR(pharma,coagulation_factor_regenreate_time), 150]) / 2)] call CBA_fnc_waitAndExecute; // Block regen PFH instance from happening
+            [_unit], ((missionNamespace getVariable [QEGVAR(pharma,coagulation_factor_regenerate_time), 150]) / 2)] call CBA_fnc_waitAndExecute; // Block regen PFH instance from happening
         };
         
         if (_currentCoagFactors == _savedCoagFactors && _currentCoagFactors < _limitRegenCoagFactors) exitWith {
@@ -414,12 +416,12 @@ if (EGVAR(pharma,coagulation)) then {
                 params["_unit"];
                 _unit setVariable [QEGVAR(pharma,coagulationRegenCooldown), false, true];
             },
-            [_unit], missionNamespace getVariable [QEGVAR(pharma,coagulation_factor_regenreate_time), 150]] call CBA_fnc_waitAndExecute;
+            [_unit], missionNamespace getVariable [QEGVAR(pharma,coagulation_factor_regenerate_time), 150]] call CBA_fnc_waitAndExecute;
         };
 
         _unit setVariable [QEGVAR(pharma,coagulationSavedFactors), _currentCoagFactors, true];
 
-    }, missionNamespace getVariable [QEGVAR(pharma,coagulation_factor_regenreate_time), 150], [_unit]] call CBA_fnc_addPerFrameHandler;
+    }, missionNamespace getVariable [QEGVAR(pharma,coagulation_factor_regenerate_time), 150], [_unit]] call CBA_fnc_addPerFrameHandler;
 };
 
 /// Clear Stamina & weapon sway

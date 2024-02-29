@@ -24,7 +24,7 @@ private _IVactual = _IVarray select _partIndex;
 private _countTXA = [_patient, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
 private _allowStack = missionNamespace getVariable [QGVAR(allowStackScript_TXA), true];
 private _keepRunning = missionNamespace getVariable [QGVAR(keepScriptRunning_TXA), false];
-private _cycleTime = missionNamespace getVariable [QGVAR(bandageCyleTime_TXA), 5];
+private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_TXA), 5];
 
 if (_IVactual > 1) then {
     private _randomNumber = random 100;

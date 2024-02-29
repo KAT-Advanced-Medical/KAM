@@ -31,7 +31,7 @@ switch (true) do {
     case (_coagFactors > _shighINR && _coagFactors < _hhighINR): { _output = LLSTRING(CheckCoag_slightly_aboveINR)};
     case (_coagFactors < _hlowINR): { _output = LLSTRING(CheckCoag_highly_lowINR)};
     case (_coagFactors > _hhighINR): { _output = LLSTRING(CheckCoag_highly_aboveINR)};
-    default { _output = "normal INR"};
+    default { _output = LLSTRING(CheckCoag_normalINR)};
 };
 
 [_patient, "quick_view", LLSTRING(Coag_Sense_Log), [_output]] call ACEFUNC(medical_treatment,addToLog);
