@@ -710,7 +710,7 @@ PREP_RECOMPILE_END;
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
     [false],
     true
-] call CBA_Settings_fnc_init;
+] call CBA_Settings_fnc_init; 
 
 [
     QGVAR(coagulation_allow_MinorWounds),
