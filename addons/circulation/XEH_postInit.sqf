@@ -31,3 +31,5 @@ GVAR(AEDX_MonitorTarget) = objNull;
     
     [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
 }] call CBA_fnc_addEventHandler;
+
+[QGVAR(placeAED_initAction), LINKFUNC(placeAED_PickUpAction)] call CBA_fnc_addEventHandler;
