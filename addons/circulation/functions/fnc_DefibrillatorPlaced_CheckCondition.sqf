@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Blue
- * Checks if placed AED-X can be used (ace actions).
+ * Checks if placed AED can be used (ace actions).
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -12,7 +12,7 @@
  * Can use defibrillator <BOOL>
  *
  * Example:
- * [player, cursorObject, 0] call kat_circulation_fnc_AEDXPlaced_CheckCondition;
+ * [player, cursorObject, 0] call kat_circulation_fnc_DefibrillatorPlaced_CheckCondition;
  *
  * Public: No
  */
@@ -55,4 +55,4 @@ switch (_check) do {
     };
 };
 
-_condition && [_medic, GVAR(medLvl_AED_X)] call ACEFUNC(medical_treatment,isMedic) && {!(_patient getVariable [QEGVAR(airway,recovery), false]) && (isNull objectParent _patient) && {["",_patient] call ACEFUNC(medical_treatment,canCPR)}};
+_condition && {!(_patient getVariable [QEGVAR(airway,recovery), false]) && (isNull objectParent _patient) && {["",_patient] call ACEFUNC(medical_treatment,canCPR)}};
