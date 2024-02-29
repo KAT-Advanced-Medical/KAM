@@ -974,7 +974,7 @@
             <Russian>Удаление</Russian>
             <Portuguese>Removendo</Portuguese>
         </Key>
-        <Key ID="STR_KAT_Pharma_Pain_empty">
+        <Key ID="STR_KAT_Pharma_MagItem_Empty">
             <English>%1 is now empty</English>
             <German>%1 ist nun leer</German>
             <Polish>%1 jest pusty</Polish>

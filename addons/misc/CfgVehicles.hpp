@@ -199,8 +199,10 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_SelfActions
         {
-            class ACE_Equipment
-            {
+            class KAT_Equipment {
+                displayName = CSTRING(Kat_Equipment);
+                icon = QPATHTOF(ui\KAM_Iteraction_Logo.paa);
+                
                 class Armband {
                     displayName = CSTRING(Armband_Sling);
                     condition = QUOTE(_player call FUNC(checkArmbandCondition));
