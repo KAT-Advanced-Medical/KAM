@@ -233,7 +233,7 @@ class CfgVehicles {
                         statement = QUOTE([ARR_4(_target,'kat_IFAK',0,4)] call FUNC(FAK_unpack));
                     };
                 };
-                // Helicopter
+
                 class KAT_IFAK_Mag {
                     displayName = CSTRING(IFAK_Unpack);
                     condition = QUOTE([ARR_4(_target,'kat_IFAK_Magazine',0,0)] call FUNC(FAK_checkSlot) && !([_target] call ACEFUNC(common,isAwake)));
