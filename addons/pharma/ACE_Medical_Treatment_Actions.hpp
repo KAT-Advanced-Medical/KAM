@@ -368,7 +368,7 @@ class ACE_Medical_Treatment_Actions {
         callbackProgress = "";
         callbackStart = "";
         callbackFailure = "";
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call QFUNC(treatmentAdvanced_Dialysis));
+        callbackSuccess = QFUNC(treatmentAdvanced_Dialysis);
         litter[] = {};
     };
 
@@ -386,7 +386,7 @@ class ACE_Medical_Treatment_Actions {
         callbackProgress = "";
         callbackStart = "";
         callbackFailure = "";
-        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call QFUNC(treatmentAdvanced_CheckCoag));
+        callbackSuccess = QFUNC(treatmentAdvanced_CheckCoag);
         litter[] = {};
     };
 };
