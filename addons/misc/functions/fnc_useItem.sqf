@@ -13,7 +13,7 @@
  * User and Item <ARRAY>
  *
  * Example:
- * [player, cursorObject, ["bandage"]] call ace_medical_treatment_fnc_useItem
+ * [player, cursorObject, ["bandage"]] call ace_medical_treatment_fnc_useItem;
  *
  * Public: No
  */
@@ -78,7 +78,7 @@ if (GVAR(allowSharedVehicleEquipment) > 0 && _vehicleCondition) then {
         _originItems = [_origin, false, true] call FUNC(getUniqueItems); // Magazine
         {
             if (_x in _originItems) then {
-                [_origin,_x] call EFUNC(pharma,removeItemFromMag);
+                [_origin, _x] call EFUNC(pharma,setMagItem);
                 [_origin, _x] breakOut "Main";
             };
         } forEach _items;
