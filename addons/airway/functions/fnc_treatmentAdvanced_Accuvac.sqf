@@ -33,10 +33,8 @@ if !(_patient getVariable [QGVAR(occluded), false]) exitWith {
     };
 };
 
-if (_usedItem isEqualTo "kat_suction") then {
-    if (GVAR(Suction_reuse)) then {
-        [_medic, "kat_suction"] call ACEFUNC(common,addToInventory);
-    };
+if (_usedItem isEqualTo "kat_suction" && GVAR(Suction_reuse)) then {
+    [_medic, "kat_suction"] call ACEFUNC(common,addToInventory);
 };
 
 [_patient, LLSTRING(AccuvacTreatment_displayName)] call ACEFUNC(medical_treatment,addToTriageCard);
