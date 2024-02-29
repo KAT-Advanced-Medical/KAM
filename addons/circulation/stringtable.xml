@@ -1861,13 +1861,7 @@
             <Spanish>Permitir la interacción con la estación de DEA/X</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
-            <English>Medical level required to pick up/interact with placed AED/X station</English>
-            <Japanese>設置AED/Xの取得/利用に必要な医療スキルのレベルを設定します。</Japanese>
-            <French>Niveau médical requis pour récupérer/interagir avec la station AED-X placée</French>
-            <Korean>심장충격기 종류를 바닥에 설치하거나 줍는 상호작용을 하는 데 필요한 의료레벨 수준</Korean>
-            <German>Benötigter medizinischer Grad, zum Aufnehmen/Interagieren mit der platzierten AED/X-Station</German>
-            <Portuguese>Nível médico necessário para pegar/interagir com a estação DEA-X colocada</Portuguese>
-            <Spanish>Nivel médico requerido para recoger/interactuar con una estación de DEA/X colocada</Spanish>
+            <English>Medical level required to pick up placed AED/X station</English>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>

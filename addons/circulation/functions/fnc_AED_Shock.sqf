@@ -37,7 +37,7 @@ _patient setVariable [QGVAR(RhythmAnalyzed), false, true];
     params ["_patient"];
 
     _patient setVariable [QGVAR(heartRestart), false, true];
-}, [_patient], 2] call CBA_fnc_waitAndExecute;
+}, [_patient], 4] call CBA_fnc_waitAndExecute;
 
 [{
     params ["_patient"];
@@ -48,7 +48,7 @@ _patient setVariable [QGVAR(RhythmAnalyzed), false, true];
 _patient setVariable [QGVAR(Defibrillator_ShockAmount), (_patient getVariable [QGVAR(Defibrillator_ShockAmount), 0]) + 1, true];
 
 if (alive _patient) then {
-    if (_patient getVariable [VAR_CRDC_ARRST, false]) then {
+    if (IN_CRDC_ARRST(_patient)) then {
         [QACEGVAR(medical_treatment,cprLocal), [_medic, _patient, _defibType], _patient] call CBA_fnc_targetEvent;
     } else {
         if (GVAR(AdvRhythm) && GVAR(AdvRhythm_Hardcore_Enable)) then {

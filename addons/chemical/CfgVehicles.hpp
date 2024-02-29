@@ -2,7 +2,7 @@ class CfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_SelfActions {
-            class ACE_Equipment {
+            class KAT_Equipment {
                 class KAT_CheckGasMaskDur {
                     displayName = CSTRING(CheckGasMaskDurability);
                     condition = QUOTE([_player] call FUNC(hasGasMaskOn));
