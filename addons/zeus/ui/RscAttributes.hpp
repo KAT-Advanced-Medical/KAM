@@ -124,7 +124,7 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                     x = 0;
                     y = 0;
                     w = QUOTE(W_PART(26));
-                    h = QUOTE(H_PART(6.5));
+                    h = QUOTE(H_PART(7.5));
                     class controls {
                         class Title1: RscText {
                             idc = -1;
@@ -144,9 +144,7 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                             h = QUOTE(H_PART(1));
                         };
                         class Title2: Title1 {
-                            idc = -1;
                             text = CSTRING(ModuleManageAirway_Occlusion);
-                            toolTip = "";
                             y = QUOTE(H_PART(1.1));
                         };
                         class Occlusion: Obstruction {
@@ -154,9 +152,7 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                             y = QUOTE(H_PART(1.1));
                         };
                         class Title3: Title1 {
-                            idc = -1;
                             text = CSTRING(ModuleManageAirway_Pneumothorax);
-                            toolTip = "";
                             y = QUOTE(H_PART(2.2));
                         };
                         class PneumothoraxValue: RscXSliderH {
@@ -167,35 +163,38 @@ class GVAR(RscManageAirway): RscDisplayAttributes {
                             h = QUOTE(H_PART(1));
                         };
                         class Title4: Title1 {
-                            idc = -1;
-                            text = CSTRING(ModuleManageAirway_Hemopneumothorax);
-                            toolTip = "";
+                            text = CSTRING(ModuleManageAirway_PneumothoraxDeteriorate);
                             y = QUOTE(H_PART(3.3));
                         };
-                        class Hemopneumothorax: Obstruction {
-                            idc = 16103;
+                        class PneumothoraxDeteriorate: Obstruction {
+                            idc = 16107;
                             y = QUOTE(H_PART(3.3));
                         };
                         class Title5: Title1 {
-                            idc = -1;
-                            text = CSTRING(ModuleManageAirway_Tensionpneumothorax);
+                            text = CSTRING(ModuleManageAirway_Hemopneumothorax);
                             toolTip = "";
                             y = QUOTE(H_PART(4.4));
                         };
-                        class Tensionpneumothorax: Obstruction {
-                            idc = 16104;
+                        class Hemopneumothorax: Obstruction {
+                            idc = 16103;
                             y = QUOTE(H_PART(4.4));
                         };
                         class Title6: Title1 {
-                            idc = -1;
-                            text = CSTRING(ModuleManageAirway_SpO2Value);
-                            toolTip = "";
+                            text = CSTRING(ModuleManageAirway_Tensionpneumothorax);
                             y = QUOTE(H_PART(5.5));
+                        };
+                        class Tensionpneumothorax: Obstruction {
+                            idc = 16104;
+                            y = QUOTE(H_PART(5.5));
+                        };
+                        class Title7: Title1 {
+                            text = CSTRING(ModuleManageAirway_SpO2Value);
+                            y = QUOTE(H_PART(6.6));
                         };
                         class SpO2Value: RscXSliderH {
                             idc = 16106;
                             x = QUOTE(W_PART(10.1));
-                            y = QUOTE(H_PART(5.5));
+                            y = QUOTE(H_PART(6.6));
                             w = QUOTE(W_PART(15.9));
                             h = QUOTE(H_PART(1));
                         };

@@ -1,7 +1,7 @@
 class CfgGlasses
 {
     class None;
-    class kat_armband_red_cross: None
+    class kat_Armband_Red_Cross_Goggles: None
     {
         author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
         displayname = CSTRING(Armband_Red_Cross_ItemName);
@@ -13,7 +13,7 @@ class CfgGlasses
         identityTypes[] = {};
     };
 
-    class kat_armband_medic: kat_armband_red_cross
+    class kat_Armband_Medic_Goggles: kat_Armband_Red_Cross_Goggles
     {
         author= "Miss Heda, vccv9040 (Swedish Forces Pack)";
         displayname = CSTRING(Armband_Medic_ItemName);
@@ -21,7 +21,7 @@ class CfgGlasses
         picture= QPATHTOF(ui\ArmbandWhiteCrossMedic.paa);
     };
 
-    class kat_armband_doctor: kat_armband_red_cross
+    class kat_Armband_Doctor_Goggles: kat_Armband_Red_Cross_Goggles
     {
         author= "Miss Heda, vccv9040 (Swedish Forces Pack)";
         displayname = CSTRING(Armband_Doctor_ItemName);
@@ -29,7 +29,7 @@ class CfgGlasses
         picture= QPATHTOF(ui\ArmbandWhiteCrossDoctor.paa);
     };
 
-    class kat_armband_kat: kat_armband_red_cross
+    class kat_Armband_Kat_Goggles: kat_Armband_Red_Cross_Goggles
     {
         author= "Miss Heda, vccv9040 (Swedish Forces Pack)";
         displayname = CSTRING(Armband_Kat_ItemName);

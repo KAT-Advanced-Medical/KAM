@@ -74,7 +74,7 @@ class CfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_SelfActions {
-            class ACE_Equipment {
+            class KAT_Equipment {
                class PulseOximeter_removeSound {
                     displayName = CSTRING(PulseOximeter_Action_removeSound);
                     condition = QUOTE('kat_Pulseoximeter' in (items _player) && (_player getVariable [ARR_2(QQGVAR(PulseOximeter_Volume),false])));

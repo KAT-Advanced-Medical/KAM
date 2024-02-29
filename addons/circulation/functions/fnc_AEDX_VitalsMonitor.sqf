@@ -49,7 +49,7 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog)] call FUNC(removeLog);
 
         private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
-        private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient, _partIndex);
+        private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex);
 
         private _hr = 0;
         private _pr = 0;
@@ -179,13 +179,13 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {((_pati
             if (GVAR(AdvRhythm)) then {
                 private _cardiacState = _patient getVariable [QGVAR(cardiacArrestType), 0];
 
-                if (_patient getVariable [QGVAR(cardiacArrestType), 0] in [2,4]) then {
+                if (_cardiacState in [2,4]) then {
                     _hr = _patient call FUNC(getCardiacArrestHeartRate);
                 } else {
                     _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
                 };
 
-                if (!(_patient getVariable [QGVAR(cardiacArrestType), 0] in [0,2]) && !(GVAR(analyzeDelay))) then {
+                if (!(_cardiacState in [0,2]) && !(GVAR(analyzeDelay))) then {
                     [{
                         params ["_patient"];
 
@@ -270,7 +270,7 @@ if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && {(_pat
         };
 
         private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2);
-        private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient, _partIndex);
+        private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex);
 
         if (_patient getVariable [QGVAR(DefibrillatorInUse), false] || !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false])) then {
         } else {

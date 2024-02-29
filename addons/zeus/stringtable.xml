@@ -52,6 +52,9 @@
             <Portuguese>Pneumotórax:</Portuguese>
             <Finnish>Lohistunut keuhko: </Finnish>
         </Key>
+        <Key ID="STR_KAT_Zeus_ModuleManageAirway_PneumothoraxDeteriorate">
+            <English>Pneumothorax deteriorate:</English>
+        </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Hemopneumothorax">
             <English>Hemopneumothorax: </English>
             <German>Hämopneumothorax: </German>
