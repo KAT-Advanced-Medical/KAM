@@ -89,8 +89,6 @@ _sliderSPO2 ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove_SPO2];
 (_display displayCtrl 16103) cbSetChecked (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false]);
 (_display displayCtrl 16104) cbSetChecked (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]);
 
-
-
 private _fnc_onConfirm = {
     params [["_ctrlButtonOK", controlNull, [controlNull]]];
 
@@ -108,10 +106,19 @@ private _fnc_onConfirm = {
         _valueArr pushBack _value;
     } forEach [16101,16102,16103,16104];
 
-    _unit setVariable [QEGVAR(airway,obstruction), _valueArr select 0, true];
-    _unit setVariable [QEGVAR(airway,occluded), _valueArr select 1, true];
-    _unit setVariable [QEGVAR(breathing,hemopneumothorax), _valueArr select 2, true];
-    _unit setVariable [QEGVAR(breathing,tensionpneumothorax), _valueArr select 3, true];
+    private _initBreathing = false;
+
+    {
+        private _targetState = _valueArr select _forEachIndex;
+        private _currentState = _unit getVariable [_x, false];
+
+        if (!_initBreathing && (_targetState && !_currentState)) then {
+            _initBreathing = true;
+        };
+
+        _unit setVariable [_x, _targetState, true];
+    } forEach [QEGVAR(airway,obstruction), QEGVAR(airway,occluded), QEGVAR(breathing,hemopneumothorax), QEGVAR(breathing,tensionpneumothorax)];
+
     private _curSpO2Val = _unit getVariable [QEGVAR(breathing,airwayStatus), 50];
 
     private _pneumothorax = round(sliderPosition (_display displayCtrl 16105));
@@ -119,19 +126,25 @@ private _fnc_onConfirm = {
     _unit setVariable [QEGVAR(breathing,pneumothorax), _pneumothorax, true];
     _unit setVariable [QEGVAR(breathing,airwayStatus), round(sliderPosition (_display displayCtrl 16106)), true];
 
-    if(_curSpO2Val isEqualTo 100) then {
+    if (_curSpO2Val isEqualTo 100 || _initBreathing) then {
         [_unit] call EFUNC(breathing,handleBreathing);
     };
 
     if (_pneumothorax isEqualTo 0 && !(_valueArr select 2) && !(_valueArr select 3)) then {
         [_unit, 0, 0, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
     } else {
-        [_unit, -15 * (_pneumothorax - 1), -15 * (_pneumothorax -1), "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+        [_unit, -12 * _pneumothorax, -12 * _pneumothorax, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+        [_unit, 0.5 * (_pneumothorax / 4)] call ACEFUNC(medical_status,adjustPainLevel);
     };
 
     if ((_valueArr select 2) || (_valueArr select 3)) then {
         _unit setVariable [QEGVAR(breathing,pneumothorax), 4, true];
-        [_unit, -45, -45, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+        [_unit, -48, -48, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+        [_unit, 0.5] call ACEFUNC(medical_status,adjustPainLevel);
+    };
+
+    if ((cbChecked (_display displayCtrl 16107)) && _pneumothorax > 0 && !(_valueArr select 2) && !(_valueArr select 3)) then {
+        [_unit] call EFUNC(breathing,handlePneumothoraxDeterioration);
     };
 
     [_unit] call EFUNC(circulation,updateInternalBleeding);
