@@ -29,7 +29,7 @@ class CfgGlasses
         picture= QPATHTOF(ui\ArmbandWhiteCrossDoctor.paa);
     };
 
-    class kat_armband_kat: kat_armband_red_cross 
+    class kat_armband_kat: kat_armband_red_cross
     {
         author= "Miss Heda, vccv9040 (Swedish Forces Pack)";
         displayname = CSTRING(Armband_Kat_ItemName);
