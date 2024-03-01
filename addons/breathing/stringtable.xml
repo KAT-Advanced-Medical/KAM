@@ -4,11 +4,12 @@
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE">
             <English>Activate Breathing Module</English>
             <German>Aktiviere Athmungs Modul</German>
-            <Japanese>KAM-Breathing を有効化しますか?</Japanese>
+            <Japanese>呼吸モジュールを有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
             <English>Sets if SPO2 simulation and according functionality like Pneumothorax and \nAirway: occlusion &amp; obstruction (SPO2 reduction will be deactivated) should be activated</English>
             <German>Setzt ob SPO2 Simuliert werden soll mit funktionen wie Pneumothorax und Atemwege: Verstopfung &amp; Obstruktion (SPO2 reduktion wird deaktiviert)</German>
+            <Japanese>SpO2のシミュレーションを気胸や気道:閉塞と異物などの機能で動作するように設定します。\n(SpO2減少機能は無効化されます)</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">
             <English>Lethal SpO2 value</English>

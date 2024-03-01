@@ -14,7 +14,7 @@
             <Turkish>ACE-Havayolu yaralanmaları aktive edildi mi?</Turkish>
             <Italian>Attivare ACE-Lesioni Respiratorie?</Italian>
             <Russian>Активированы травмы ACE-Airway?</Russian>
-            <Japanese>KAM-Airway を有効化しますか?</Japanese>
+            <Japanese>気道損傷モジュールを有効化</Japanese>
             <Portuguese>ACE - Lesões nas vias aéreas ativadas?</Portuguese>
             <Norwegian>ACE - Luftveiskade aktivert?</Norwegian>
             <Finnish>Hengitysteiden vammat aktivoituivat?</Finnish>
@@ -452,6 +452,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Log">
             <English>%1 hyperextended %2s head</English>
+            <Japanese>%1 は %2 を頭部後屈させた</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -695,6 +696,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Log">
             <English>%1 did a medical suction using a %2</English>
+            <Japanese>%1 は %2 で医療吸引を行った</Japanese>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>

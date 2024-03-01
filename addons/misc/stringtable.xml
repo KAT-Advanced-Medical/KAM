@@ -4,6 +4,7 @@
         <Key ID="STR_KAT_Misc_Kat_Equipment">
             <English>KAT Equipment</English>
             <German>KAT Gegenstände</German>
+            <Japanese>KAT 装備品</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ENABLE">
             <English>ACE-Misc activated?</English>
@@ -18,7 +19,7 @@
             <Turkish>ACE-Misc activated?</Turkish>
             <Italian>Attivare ACE-Misc?</Italian>
             <Russian>ACE-Misc активирован?</Russian>
-            <Japanese>KAM-Misc を有効化しますか?</Japanese>
+            <Japanese>KAMその他モジュールを有効化</Japanese>
             <Portuguese>ACE - Miscelâneo ativado?</Portuguese>
             <Finnish>ACE-Sekalaista aktivoitu?</Finnish>
         </Key>
