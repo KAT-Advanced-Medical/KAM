@@ -991,20 +991,8 @@
             <Portuguese>%1 agora está vazio</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV">
-            <English>Require inserted IV/IO</English>
-            <German>Erfordert eingefügtes IV/IO</German>
-            <Polish>Wymagaj włożonego IV/IO</Polish>
-            <French>IV/IO posée requise</French>
-            <Chinese>需要插入 IV/IO</Chinese>
-            <Chinesesimp>需要建立 IV/IO</Chinesesimp>
-            <Italian>Richiesto inserimento IV/IO</Italian>
-            <Spanish>Requerir una IV/IO</Spanish>
-            <Korean>삽입된 IV/IO 필요</Korean>
-            <Turkish>Takılı IV/IO gerektir</Turkish>
-            <Czech>Vyžadování vložení IV/IO</Czech>
-            <Japanese>輸液にIV/IO刺入を要求する</Japanese>
-            <Russian>Требовать вставки IV/IO</Russian>
-            <Portuguese>Requerer inserção de IV/IO</Portuguese>
+            <English>Fluid Require inserted IV/IO</English>
+            <German>Flüssigkeiten Erfordert eingefügtes IV/IO</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma. \nIf false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
@@ -1047,6 +1035,12 @@
             <German>Standardmäßig falsch. Bei "wahr" muss zuerst ein IV/IO gelegt sein, bevor jemandem Medikamente geben werden können. \nBei "falsch" können Medikamente ohne IV/IO geben werden.</German>
             <Spanish>Predeterminado desactivado. Si se activa, se necesitará insertar una IV/IO primero antes de poder suministrar fármacos. \nSi esta desactivado, se podrán suministrar sin IV/IO.</Spanish>
             <Portuguese>Falso, por padrão. Se verdadeiro, você precisará inserir IV/IO primeiro antes de poder administrar medicamentos a alguém. \nSe falso, você pode administrá-los sem ele.</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW">
+            <English>Blood Drawing Require IV/IO</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
+            <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
