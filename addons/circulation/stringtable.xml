@@ -14,7 +14,7 @@
             <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
             <Italian>Attivare ACE-Circolazione?</Italian>
             <Russian>ACE-циркуляция активирована?</Russian>
-            <Japanese>KAM-Circulation を有効化しますか?</Japanese>
+            <Japanese>循環器系モジュールを有効化</Japanese>
             <Portuguese>ACE - Circulação ativada?</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable">
@@ -839,7 +839,7 @@
             <Turkish>Künyeyi Kontrol Et</Turkish>
             <Italian>Controlla piastrine</Italian>
             <Russian>Проверка Солдатский жетон</Russian>
-            <Japanese>ドッグタグを確認</Japanese>
+            <Japanese>認識票を確認</Japanese>
             <Portuguese>Checar placa de identificação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_DogTag_Action">
@@ -1605,7 +1605,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
-            <Japanese>%1 がドッグタグの血液型を確認した: %2</Japanese>
+            <Japanese>%1 が認識票の血液型を確認: %2</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
