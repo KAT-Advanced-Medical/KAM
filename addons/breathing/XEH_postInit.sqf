@@ -13,6 +13,7 @@
     _unit say3D [QGVAR(pneumothoraxcough), 15];
 }] call CBA_fnc_addEventHandler;
 
+[QACEGVAR(medical_treatment,fullHealLocal), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical,woundReceived),LINKFUNC(handlePulmoHit)] call CBA_fnc_addEventHandler;
 
 ["kat_oxygenTank_300_Item", "kat_oxygenTank_300"] call ACEFUNC(common,registerItemReplacement);

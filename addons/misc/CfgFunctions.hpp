@@ -32,9 +32,6 @@ class CfgFunctions {
             class canTreat {
                 file = QPATHTOF(functions\fnc_canTreat.sqf);
             };
-            class fullHealLocal {
-                file = QPATHTOF(functions\fnc_fullHealLocal.sqf);
-            };
             class hasItem {
                 file = QPATHTOF(functions\fnc_hasItem.sqf);
             };

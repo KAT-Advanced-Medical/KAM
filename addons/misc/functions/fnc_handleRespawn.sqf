@@ -112,29 +112,7 @@ _unit setVariable [QEGVAR(pharma,kidneyFail), false, true];
 _unit setVariable [QEGVAR(pharma,kidneyArrest), false, true];
 _unit setVariable [QEGVAR(pharma,kidneyPressure), false, true];
 
-//KAT Surgery
-
-_unit setVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0], true];
-_unit setVariable [QEGVAR(surgery,lidocaine), false, true];
-_unit setVariable [QEGVAR(surgery,etomidate), false, true];
-_unit setVariable [QEGVAR(surgery,sedated), false, true];
-
-//KAT Chemical
-
-_unit setVariable [QEGVAR(chemical,enteredPoison), false, true];
-_unit setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime),60], true];
-_unit setVariable [QEGVAR(chemical,poisonType), "", true];
-_unit setVariable [QEGVAR(chemical,airPoisoning), false, true];
-_unit setVariable [QEGVAR(chemical,CS), false, true];
-_unit setVariable [QEGVAR(chemical,gasmask_durability), 10, true];
-
-"kat_CHEM_DETECTOR" cutRsc ["RscWeaponChemicalDetector", "PLAIN", 1, false];
-private _ui = uiNamespace getVariable "RscWeaponChemicalDetector";
-private _obj = _ui displayCtrl 101;
-_obj ctrlAnimateModel ["Threat_Level_Source", 0, true];
-if (_unit getVariable [QEGVAR(chemical,painEffect),0] != 0) then {
-    KAT_PAIN_EFFECT ppEffectEnable false;
-};
+[QGVAR(handleRespawn), _unit] call CBA_fnc_localEvent;
 
 [{
     params ["_args", "_idPFH"];

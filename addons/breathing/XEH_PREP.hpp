@@ -1,6 +1,7 @@
 PREP(canUseBVM);
 PREP(checkBreathing);
 PREP(checkPulseOximeter);
+PREP(fullHealLocal);
 PREP(handleBreathing);
 PREP(handlePneumothoraxDeterioration);
 PREP(handlePulmoHit);

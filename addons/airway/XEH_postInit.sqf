@@ -15,6 +15,7 @@ if !(GVAR(enable)) exitWith {};
     [_output, 2, _medic] call ACEFUNC(common,displayTextStructured);
 }] call CBA_fnc_addEventHandler;
 
+[QACEGVAR(medical_treatment,fullHealLocal), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 ["ace_unconscious", {
     params ["_unit", "_state"];
     if !(_state) exitWith {

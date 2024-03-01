@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+[QACEGVAR(medical_treatment,fullHealLocal), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 ["ace_cardiacArrest", LINKFUNC(handleCardiacArrest)] call CBA_fnc_addEventHandler;
 
 GVAR(AEDX_MonitorTarget) = objNull;
@@ -28,7 +29,7 @@ GVAR(AEDX_MonitorTarget) = objNull;
 
 [QGVAR(bloodPoisoning), {
     params ["_unit"];
-    
+
     [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
 }] call CBA_fnc_addEventHandler;
 
