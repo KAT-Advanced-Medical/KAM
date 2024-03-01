@@ -19,7 +19,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = 2;
         allowedSelections[] = {"Head"};
         allowSelfTreatment = 1;
-        callbackSuccess = QACEFUNC(dogtags,checkDogtag);
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(bloodTypeLog); [ARR_2(_medic,_patient)] call ACEFUNC(dogtags,checkDogtag););
         condition = "true";
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";

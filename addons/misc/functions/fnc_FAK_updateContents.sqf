@@ -41,3 +41,15 @@ missionNameSpace setVariable [QGVAR(MFAKContents),
 (missionNamespace getVariable [QGVAR(MFAKSixthSlotItem), []]),
 (missionNamespace getVariable [QGVAR(MFAKSeventhSlotItem), []]),
 (missionNamespace getVariable [QGVAR(MFAKEighthSlotItem), []])]];
+
+// Get Slot Names (didn't wanna create a new file for this)
+missionNameSpace setVariable [QGVAR(FAKSlotNames),
+[(LLSTRING(FAK_Slot_1_Hint)),
+(LLSTRING(FAK_Slot_2_Hint)),
+(LLSTRING(FAK_Slot_3_Hint)),
+(LLSTRING(FAK_Slot_4_Hint)),
+(LLSTRING(FAK_Slot_5_Hint)),
+(LLSTRING(FAK_Slot_6_Hint)),
+(LLSTRING(FAK_Slot_7_Hint)),
+(LLSTRING(FAK_Slot_8_Hint))]];
+

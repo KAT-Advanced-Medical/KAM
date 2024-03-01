@@ -73,8 +73,8 @@ private _playerBloodyType = _unit getVariable [QEGVAR(circulation,bloodtype), "O
 private _playerBloodyTypeIndex = ["O","O_N","A","A_N","B","B_N","AB","AB_N"] find _playerBloodyType;
 private _select = switch (_playerBloodyType) do
 {
-    case "O+":  {0};
-    case "O-":  {1};
+    case "0+":  {0};
+    case "0-":  {1};
     case "A+":  {2};
     case "A-":  {3};
     case "B+":  {4};
@@ -101,8 +101,8 @@ private _fnc_onConfirm = {
     private _dogtagData = _unit getVariable QACEGVAR(dogtags,dogtagData);
     if(!isNil "_dogtagData") then {
         switch (_bloodtype) do {
-            case "O": {_bloodtype = "O+"};
-            case "O_N": {_bloodtype = "O-"};
+            case "O": {_bloodtype = "0+"};
+            case "O_N": {_bloodtype = "0-"};
             case "A": {_bloodtype = "A+"};
             case "A_N": {_bloodtype = "A-"};
             case "B": {_bloodtype = "B+"};
