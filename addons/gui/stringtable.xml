@@ -87,7 +87,7 @@
             <French>Affiche le taux de saignement</French>
             <Portuguese>Exibir taxa de sangramento (lento/moderado/grave/massivo)</Portuguese>
             <Spanish>Mostrar la tasa de sangrado (lento, moderado, grave, masivo)</Spanish>
-            <Finnish>Näytä verenvuotonopeus (hidas/kohtalainen/vakava)</Finnish>
+            <Finnish>Näytä verenvuotonopeus (hidas/kohtalainen/vakava/valtava)</Finnish>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
             <English>Overlay Selected Body Part</English>

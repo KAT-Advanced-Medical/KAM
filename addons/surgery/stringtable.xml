@@ -15,7 +15,7 @@
             <Italian>Usando</Italian>
             <Japanese>使用中</Japanese>
             <Portuguese>Usando</Portuguese>
-            <Finnish>Käyttämällä</Finnish>
+            <Finnish>Käytetään</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Pushing">
             <English>Pushing</English>
@@ -163,7 +163,7 @@
             <Japanese>実行中</Japanese>
             <Spanish>Realizando</Spanish>
             <Portuguese>Realizando</Portuguese>
-            <Finnish>Esiintymässä</Finnish>
+            <Finnish>Suorietaan</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_fracture_check">
             <English>Check Fracture</English>
@@ -289,7 +289,7 @@
             <Japanese>メス</Japanese>
             <Spanish>Bisturí</Spanish>
             <Portuguese>Bisturi</Portuguese>
-            <Finnish>Skalpeli</Finnish>
+            <Finnish>Skalpelli</Finnish>
         </Key>
         <Key ID="STR_KAT_Surgery_Scalpel_DescShort">
             <English>Used for creating incisions</English>

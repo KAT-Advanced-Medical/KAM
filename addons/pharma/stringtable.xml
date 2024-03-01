@@ -1294,7 +1294,7 @@
             <Polish>Włącza efekt zmiany kołysania broni po spożyciu pervitinu</Polish>
             <Spanish>Habilita si la pervitina afecta al balanceo del arma</Spanish>
             <Czech>Povoluje, zda pervitin ovlivní Vaše houpání zbraně</Czech>
-            <Finnish>Mahdollistaa, jos pervitiini vaikuttaa aseeseesi</Finnish>
+            <Finnish>Mahdollistaa pervitiinin vaikutuksen aseen heilumiseen.</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_PervitinSpeed_displayName">
             <English>Pervitin Speed Boost</English>

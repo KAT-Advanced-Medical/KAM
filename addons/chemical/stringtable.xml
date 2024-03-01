@@ -116,7 +116,7 @@
             <Portuguese>Filtro de máscara de gás</Portuguese>
             <Polish>Filtr do maski gazowej</Polish>
             <Czech>Filtr Plynových masek</Czech>
-            <Finnish>Kaasunaarin suodatin</Finnish>
+            <Finnish>Kaasunaamariin suodatin</Finnish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasFilterItem_desc">
             <English>Replacement filter for gas mask</English>
@@ -350,7 +350,7 @@
             <Portuguese>Vazamento de gás</Portuguese>
             <Polish>Uszczelnij wyciek</Polish>
             <Czech>Utěsnit netěsnost</Czech>
-            <Finnish>Tiivisteen vuoto</Finnish>
+            <Finnish>Tuki vuoto</Finnish>
         </Key>
         <Key ID="STR_KAT_Chemical_GasModule_Needbigger">
             <English>Minimal Range need to be less than Maximum Range!</English>

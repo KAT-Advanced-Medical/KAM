@@ -258,7 +258,7 @@
             <Russian>Нижние носилки</Russian>
             <Japanese>担架を降ろす</Japanese>
             <Portuguese>Abaixar a maca</Portuguese>
-            <Finnish>Alempi paarit</Finnish>
+            <Finnish>Laske paarit</Finnish>
         </Key>
         <Key ID="STR_KAT_Misc_helistretcher_flip">
             <English>Flip Stretcher</English>
@@ -343,7 +343,7 @@
             <Russian>Позволяет прикрепить носилки к вертолету (двойной щелчок)</Russian>
             <Japanese>ヘリコプターに担架を取り付けることができます (ダブルクリック)</Japanese>
             <Portuguese>Permite anexar uma maca a um helicóptero (clique duplo)</Portuguese>
-            <Finnish>Mahdollistaa paareiden kiinnittämisen helikopteriin (tarkista kahdesti)</Finnish>
+            <Finnish>Mahdollistaa paareiden kiinnittämisen helikopteriin (klikkaa kahdesti)</Finnish>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_incompatibilityWarning">
             <English>Incompatible addon warning</English>
@@ -867,7 +867,7 @@
             <Italian>Fai scoppiare una bolla</Italian>
             <Spanish>Reventar una burbuja</Spanish>
             <Portuguese>Estourar uma bolha</Portuguese>
-            <Finnish>Poputa kupla</Finnish>
+            <Finnish>Poksauta</Finnish>
         </Key>
         <Key ID="STR_KAT_Misc_Bubble_Wrap_Display">
             <English>Bubble Wrap</English>

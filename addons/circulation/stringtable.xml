@@ -1081,7 +1081,7 @@
             <German>Laden abbrechen</German>
             <Portuguese>Cancelar carregamento</Portuguese>
             <Spanish>Cancelar carga</Spanish>
-            <Finnish>Peruuta veloitus</Finnish>
+            <Finnish>Peruuta sähkölataus</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_ViewMonitor">
             <English>View Monitor</English>
