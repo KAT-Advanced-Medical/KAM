@@ -1603,6 +1603,9 @@
             <Italian>Imposta i gruppi sanguigni che verranno assegnati ai giocatori in base al loro SteamID \nI gruppi sanguigni sono separati da una virgola (","), l'elenco deve contenere un totale di 10 gruppi sanguigni</Italian>
             <Portuguese>Define os tipos sanguíneos que serão atribuídos aos jogadores com base no seu SteamID \nOs tipos sanguíneos são separados por vírgulas (","), a lista deve conter um total de 10 tipos sanguíneos</Portuguese>
         </Key>
+        <Key ID="STR_KAT_Circulation_bloodtype_log">
+            <English>%1 checked dogtags blood group: %2</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
             <German>Orte für AED</German>

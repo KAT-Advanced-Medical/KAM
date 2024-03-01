@@ -12,6 +12,7 @@ PREP(AEDX_VitalsMonitor_CheckCondition);
 PREP(AEDX_VitalsMonitor);
 PREP(AEDXPlaced_VitalsMonitor_SetVolume);
 PREP(bloodType);
+PREP(bloodTypeLog);
 PREP(canDraw);
 PREP(compatible);
 PREP(cprLocal);
