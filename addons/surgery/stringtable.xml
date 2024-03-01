@@ -818,10 +818,12 @@
         <Key ID="STR_KAT_Surgery_NPWT_ACTION_MEDLEVEL">
             <English>Allow NPWT</English>
             <German>Erforderliches medizinisches Training für den NPWT-Verband</German>
+            <Japanese>NPWTの許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_NPWT_LOCATION">
             <English>Locations NPWT</English>
             <German>Ort für die benutzung eines NPWT-Verbandes</German>
+            <Japanese>NPWTの可能な場所</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_LOCATION">
             <English>Locations Closed Reduction</English>
@@ -995,6 +997,7 @@
         <Key ID="STR_KAT_Surgery_SubCategory_NPWT">
             <English>Dressing Vacuum (NPWT) Settings</English>
             <German>Vakuumverband (NPWT) Einstellungen</German>
+            <Japanese>吸引被覆(NPWT)設定</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_surgeryToolbox">
             <English>[KAM] Surgery Box</English>

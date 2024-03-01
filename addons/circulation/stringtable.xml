@@ -1605,6 +1605,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
+            <Japanese>%1 がドッグタグの血液型を確認した: %2</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -1856,7 +1857,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
             <English>Allow AED/X Station Interaction</English>
-            <Japanese>設置AED/Xの利用許可</Japanese>
+            <Japanese>設置AED/Xへのｲﾝﾀﾗｸｼｮﾝの許可</Japanese>
             <French>Autoriser l'interaction avec la station AED-X</French>
             <Korean>심장충격기 종류 바닥 설치 상호작용 허용</Korean>
             <German>AED/X-Station-Interaktion zulassen</German>
@@ -1865,6 +1866,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
             <English>Medical level required to pick up placed AED/X station</English>
+            <Japanese>設置されたAED/Xを拾うのに必要な医療スキルのレベルを設定します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>

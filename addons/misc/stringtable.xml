@@ -4,6 +4,7 @@
         <Key ID="STR_KAT_Misc_Kat_Equipment">
             <English>KAT Equipment</English>
             <German>KAT Gegenstände</German>
+            <Japanese>KAT 装備品</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ENABLE">
             <English>ACE-Misc activated?</English>

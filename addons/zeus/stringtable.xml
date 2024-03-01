@@ -51,6 +51,7 @@
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_PneumothoraxDeteriorate">
             <English>Pneumothorax deteriorate:</English>
+            <Japanese>気胸の悪化:</Japanese>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Hemopneumothorax">
             <English>Hemopneumothorax: </English>
