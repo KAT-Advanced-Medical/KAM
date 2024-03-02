@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [CONTROL, _target, 0] call kat_pharma_fnc_gui_updateBodyImage
+ * [CONTROL, _target, 0] call kat_circulation_fnc_gui_updateBodyImage
  *
  * Public: No
  */

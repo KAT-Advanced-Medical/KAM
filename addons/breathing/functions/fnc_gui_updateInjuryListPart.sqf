@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [_ctrlInjuries, _target, 0] call kat_chemical_fnc_gui_updateInjuryListPart
+ * [_ctrlInjuries, _target, 0] call kat_breathing_fnc_gui_updateInjuryListPart
  *
  * Public: No
  */

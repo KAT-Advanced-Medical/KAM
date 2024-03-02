@@ -1,7 +1,6 @@
 PREP(actionLowerBy10);
 PREP(addActionRaise);
 PREP(addIVbag);
-PREP(addPassengersActions);
 PREP(addVehicleCarryLoadActions);
 PREP(addVehicleUnloadCarryPatientActions);
 PREP(attachStretcher);
