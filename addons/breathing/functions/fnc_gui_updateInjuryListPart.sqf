@@ -55,7 +55,7 @@ private _ptxEntry = [];
 if (_selectionN isEqualTo 1) then {
     private _tensionhemothorax = false;
     if (!(GVAR(showPneumothorax_dupe))) then {
-        if ((_target getVariable [QEGVAR(hemopneumothorax), false]) || (_target getVariable [QGVAR(tensionpneumothorax), false])) then {
+        if ((_target getVariable [QGVAR(hemopneumothorax), false]) || (_target getVariable [QGVAR(tensionpneumothorax), false])) then {
             _tensionhemothorax = true;
         };
     };
