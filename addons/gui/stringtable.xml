@@ -10,9 +10,10 @@
             <Korean>일반 설정</Korean>
             <German>Grundeinstellungen</German>
             <Chinesesimp>基础设置</Chinesesimp>
-            <Japanese>基本的な設定</Japanese>
+            <Japanese>基本設定</Japanese>
             <Spanish>Parámetros básicos</Spanish>
             <Portuguese>Configurações básicas</Portuguese>
+            <Finnish>Perus asetukset</Finnish>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_ColoredLogs">
             <English>Colored activitylogs (AED-X/Pulseoximeter)</English>
@@ -29,6 +30,7 @@
             <Russian>Цветные журналы активности (AED-X/пульсоксиметр)</Russian>
             <Japanese>色付きの活動ログ(AED-X /パルスオキシメーター)</Japanese>
             <Portuguese>Registros de atividade colorizados (DEA-X\Oxímetro)</Portuguese>
+            <Finnish>Värilliset aktiivisuuslokit (AUD-X/pulssioksimetri)</Finnish>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_ColoredLogs_DESC">
             <English>Colors the Activitylogs of AED-X or Pulseoximeter red, if any value is critical</English>
@@ -45,6 +47,7 @@
             <Russian>Окрашивает журналы активности AED-X или пульсоксиметра в красный цвет, если какое-либо значение является критическим.</Russian>
             <Japanese>重大値の場合、AED-Xやパルスオキシメーターの活動ログを赤色にします</Japanese>
             <Portuguese>Exibe os registros de atividade em vermelhos se algum valor for crítico</Portuguese>
+            <Finnish>Lisää punaista väriä AUD-X:n tai pulssioksimetrin aktiivisuuslokeihin, jos jokin arvo on tappava</Finnish>
         </Key>
         <Key ID="STR_KAT_GUI_Status_NoIv">
             <English>No pushed fluids</English>
@@ -54,6 +57,7 @@
             <French>Pas de fluides administrés</French>
             <Portuguese>Sem fluídos injetados</Portuguese>
             <Spanish>No se administraron fluidos</Spanish>
+            <Finnish>Ei lisätty nesteitä</Finnish>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
             <English>Overlay Selected Body Part</English>
@@ -63,6 +67,7 @@
             <French>Afficher la partie du corps sélectionnée</French>
             <Portuguese>Sobrepor parte do corpo selecionada</Portuguese>
             <Spanish>Resaltar parte del cuerpo seleccionada</Spanish>
+            <Finnish>Korosta valittu kehon osa</Finnish>
         </Key>
         <Key ID="STR_KAT_GUI_SETTING_showPatientSideLabels">
             <English>Label Patient Sides</English>
@@ -72,6 +77,7 @@
             <French>Libéler les côtés du patient</French>
             <Portuguese>Mostrar etiquetas laterias do paciente</Portuguese>
             <Spanish>Señalar lados del paciente</Spanish>
+            <Finnish>Merkitse potilaan sivut</Finnish>
         </Key>
     </Package>
 </Project>
