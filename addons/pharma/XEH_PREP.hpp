@@ -7,6 +7,7 @@ PREP(getBloodLoss);
 PREP(getBloodVolumeChange);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);
+PREP(handleRespawn);
 PREP(init);
 PREP(inspectCatheter);
 PREP(medication);

@@ -16,7 +16,7 @@
  */
 
 params ["_patient"];
-TRACE_1("fullHealLocal kat airway",_patient);
+TRACE_1("fullHealLocal",_patient);
 
 _patient setVariable [QGVAR(occluded), false, true];
 _patient setVariable [QGVAR(wasOccluded), false];

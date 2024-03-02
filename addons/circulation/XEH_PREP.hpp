@@ -31,6 +31,7 @@ PREP(getBloodPressure);
 PREP(getCardiacArrestHeartRate);
 PREP(gui_updateBodyImage);
 PREP(handleCardiacArrest);
+PREP(handleRespawn);
 PREP(handleTreatment);
 PREP(init);
 PREP(measureBloodPressure);

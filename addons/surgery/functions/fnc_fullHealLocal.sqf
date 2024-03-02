@@ -16,7 +16,7 @@
  */
 
 params ["_patient"];
-TRACE_1("fullHealLocal kat surgery",_patient);
+TRACE_1("fullHealLocal",_patient);
 
 /*
 * 0 = Unaffected

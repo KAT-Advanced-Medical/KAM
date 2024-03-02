@@ -24,33 +24,33 @@ private _ctrlPulseOximeterLeft = _ctrlGroup controlsGroupCtrl IDC_BODY_LEFTARM_P
 private _ctrlChestSeal = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_CHESTSEAL;
 private _ctrlChestInjury = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_PNEUMOTHORAX;
 
-if (_target getVariable [QEGVAR(breathing,activeChestSeal), false]) then {
+if (_target getVariable [QGVAR(activeChestSeal), false]) then {
     _ctrlChestSeal ctrlShow true;
 } else {
     _ctrlChestSeal ctrlShow false;
 };
 
-if (EGVAR(breathing,PneumothoraxAlwaysVisible)) then {
-    if(_target getVariable [QEGVAR(breathing,pneumothorax), 0] > 0) then {
+if (GVAR(PneumothoraxAlwaysVisible)) then {
+    if(_target getVariable [QGVAR(pneumothorax), 0] > 0) then {
         _ctrlChestInjury ctrlShow true;
     } else {
         _ctrlChestInjury ctrlShow false;
     };
 } else {
-    if (_target getVariable [QEGVAR(breathing,deepPenetratingInjury), false] || (_target getVariable [QEGVAR(breathing,pneumothorax), 0] > 0)) then {
+    if (_target getVariable [QGVAR(deepPenetratingInjury), false] || (_target getVariable [QGVAR(pneumothorax), 0] > 0)) then {
         _ctrlChestInjury ctrlShow true;
     } else {
         _ctrlChestInjury ctrlShow false;
     };
 };
 
-if (_target getVariable [QEGVAR(breathing,pulseoximeter), false]) then {
-    if ((_target getVariable [QEGVAR(breathing,PulseOximeter_Attached), [0,0]] select 0) > 0) then {
+if (_target getVariable [QGVAR(pulseoximeter), false]) then {
+    if ((_target getVariable [QGVAR(PulseOximeter_Attached), [0,0]] select 0) > 0) then {
         _ctrlPulseOximeterLeft ctrlShow true;
     } else {
         _ctrlPulseOximeterLeft ctrlShow false;
     };
-    if ((_target getVariable [QEGVAR(breathing,PulseOximeter_Attached), [0,0]] select 1) > 0) then {
+    if ((_target getVariable [QGVAR(PulseOximeter_Attached), [0,0]] select 1) > 0) then {
         _ctrlPulseOximeterRight ctrlShow true;
     } else {
         _ctrlPulseOximeterRight ctrlShow false;

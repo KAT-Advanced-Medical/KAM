@@ -5,6 +5,7 @@ PREP(gui_updateInjuryListGeneral);
 PREP(handleAirway);
 PREP(handlePuking);
 PREP(handleRecoveryPosition);
+PREP(handleRespawn);
 PREP(init);
 PREP(startHeadTurning);
 PREP(treatmentAdvanced_Accuvac);

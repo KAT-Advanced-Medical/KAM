@@ -8,6 +8,7 @@ PREP(gui_updateInjuryListWounds);
 PREP(handleBreathing);
 PREP(handlePneumothoraxDeterioration);
 PREP(handlePulmoHit);
+PREP(handleRespawn);
 PREP(hasBVM);
 PREP(hasOxygenTank);
 PREP(inflictAdvancedPneumothorax);

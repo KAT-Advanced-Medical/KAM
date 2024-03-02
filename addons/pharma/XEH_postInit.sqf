@@ -26,6 +26,8 @@
 ["kat_PervitinItem", "kat_Pervitin"] call ACEFUNC(common,registerItemReplacement);
 ["kat_CaffeineItem", "kat_Caffeine"] call ACEFUNC(common,registerItemReplacement);
 
+[QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
+
 [QACEGVAR(medical_gui,updateInjuryListPart), LINKFUNC(gui_updateInjuryListPart)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_gui,updateBodyImage), LINKFUNC(gui_updateBodyImage)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_treatment,fullHealLocal), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;

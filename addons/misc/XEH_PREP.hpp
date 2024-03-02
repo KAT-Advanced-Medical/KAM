@@ -22,8 +22,6 @@ PREP(FAK_displayContent);
 PREP(FAK_repack);
 PREP(FAK_unpack);
 PREP(FAK_updateContents);
-PREP(fullHealLocal);
-PREP(fullHealLocal);
 PREP(getCountOfItem);
 PREP(getDogtagData);
 PREP(getMagazineAmmoCounts);

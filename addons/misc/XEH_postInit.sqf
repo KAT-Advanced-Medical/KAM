@@ -54,7 +54,6 @@ if (GVAR(incompatibilityWarning)) then {
 
 call FUNC(FAK_updateContents);
 
-[QACEGVAR(medical_treatment,fullHealLocal), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_treatment,tourniquetLocal), LINKFUNC(handleTourniquetEffects)] call CBA_fnc_addEventHandler;
 
 ["baseline", {
