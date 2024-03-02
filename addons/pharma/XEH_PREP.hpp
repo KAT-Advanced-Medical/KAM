@@ -5,6 +5,8 @@ PREP(fluid);
 PREP(fluidLocal);
 PREP(getBloodLoss);
 PREP(getBloodVolumeChange);
+PREP(gui_updateBodyImage);
+PREP(gui_updateInjuryListPart);
 PREP(init);
 PREP(inspectCatheter);
 PREP(medication);

@@ -1,5 +1,7 @@
 PREP(checkAirway);
 PREP(checkRecovery);
+PREP(gui_updateBodyImage);
+PRPE(gui_updateInjuryListGeneral);
 PREP(handleAirway);
 PREP(handlePuking);
 PREP(handleRecoveryPosition);

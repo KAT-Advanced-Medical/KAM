@@ -29,6 +29,7 @@ PREP(fullHealLocal);
 PREP(generateBloodType);
 PREP(getBloodPressure);
 PREP(getCardiacArrestHeartRate);
+PREP(gui_updateBodyImage);
 PREP(handleCardiacArrest);
 PREP(handleTreatment);
 PREP(init);

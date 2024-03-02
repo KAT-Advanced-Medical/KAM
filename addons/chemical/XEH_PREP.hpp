@@ -23,6 +23,8 @@ PREP(GasTripEffect);
 PREP(getChemDetectorState);
 PREP(getList);
 PREP(giveUnitGasMask);
+PREP(gui_updateBodyImage);
+PREP(gui_updateInjuryListGeneral);
 PREP(handleCSGas);
 PREP(handleFired);
 PREP(handleGasMaskDur);
