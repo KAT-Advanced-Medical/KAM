@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 [QACEGVAR(medical_gui,updateBodyImage), LINKFUNC(gui_updateBodyImage)] call CBA_fnc_addEventHandler;
-[QACEGVAR(medical_treatment,fullHealLocal), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_treatment,fullHealLocal), LINKFUNC(fullHealLocalMod)] call CBA_fnc_addEventHandler;
 ["ace_cardiacArrest", LINKFUNC(handleCardiacArrest)] call CBA_fnc_addEventHandler;
 
 GVAR(AEDX_MonitorTarget) = objNull;
