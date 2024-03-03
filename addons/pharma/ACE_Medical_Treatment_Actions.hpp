@@ -109,9 +109,9 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Penthrox);
         treatmentTime = QGVAR(treatmentTime_Penthrox);
-        items[] = {};
+        items[] = {"kat_Penthrox"};
         callbackSuccess = QFUNC(treatmentAdvanced_Penthrox);
-        condition = QUOTE([_patient] call ACEFUNC(common,isAwake) && ([ARR_2(_medic,'kat_Penthrox')] call ACEFUNC(common,hasMagazine) || [ARR_2(_patient,'kat_Penthrox')] call ACEFUNC(common,hasMagazine)));
+        condition = QUOTE([_patient] call ACEFUNC(common,isAwake));
         animationPatient = "";
         animationPatientProne = "";
         animationMedic = "";
