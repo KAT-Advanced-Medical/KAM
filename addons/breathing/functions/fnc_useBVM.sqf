@@ -165,7 +165,7 @@ GVAR(BVM_timeOut) = true;
                             _tank params ["_tankClassName", "_oxygenLeft"];
 
                             if (_oxygenLeft > 1) then {
-                                [_vehicle, _tankClassName, true] call EFUNC(misc,removeItemFromVehicle);
+                                [_vehicle, _tankClassName] call ACEFUNC(common,adjustMagazineAmmo);
                             } else {
                                 _vehicle addItemCargoGlobal [[_tankClassName,"Empty"] joinString "_", 1];
                                 [LLSTRING(PortableOxygenTankDisconnected_Empty), 1.5, _medic] call ACEFUNC(common,displayTextStructured);
