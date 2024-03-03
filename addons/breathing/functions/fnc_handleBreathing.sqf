@@ -85,16 +85,16 @@ if (!local _unit) then {
 
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && { GVAR(SpO2_dieActive) && { !_blockDeath } }) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
         [_unit, "terminal_SpO2_death"] call ACEFUNC(medical_status,setDead);
         _unit setVariable ["kat_O2Breathing_PFH", nil];
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
     //if the _unit has SpO2 equal/over 100, then remove the PFH
-    if (_status > 100) exitWith {
+    if (_status >= 100 && _pneumothorax == 0) exitWith {
         _unit setVariable [QGVAR(airwayStatus), 100, true];
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
         _unit setVariable ["kat_O2Breathing_PFH", nil];
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
     // Unconscious
@@ -144,7 +144,7 @@ if (!local _unit) then {
             };
         };
 
-        if(_pneumothorax > 0) then {
+        if (_pneumothorax > 0) then {
             _output = (_output - (0.81 * (_pneumothorax / 4))) max -0.2; // Decrease breathing rate based on pneumothorax severity, maximum decrease should be -0.2
         };
 
