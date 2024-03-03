@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, 'kat_Painkiller', true] call kat_pharma_fnc_setMagItem;
+ * [player, 'kat_Painkiller', true] call kat_misc_fnc_setMagItem;
  *
  * Public: No
  */
@@ -32,7 +32,7 @@ private _magazinesArray = [];
             _lowestAmmoCount = (_x select 1);
         };
     };
-    
+
 } forEach (magazinesAmmoFull _unit);
 
 if (_magazinesArray isEqualTo []) exitWith {0};

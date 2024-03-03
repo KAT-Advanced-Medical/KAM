@@ -39,6 +39,7 @@ PREP(incompatibilityWarning);
 PREP(init);
 PREP(removeItemFromVehicle);
 PREP(removeIVbag);
+PREP(setMagItem);
 PREP(setUnconscious);
 PREP(slingArmband);
 PREP(stopCarryingPrompt);

@@ -29,7 +29,7 @@ if (!isNull _itemUser) then {
     if !(((_usedItem call BIS_fnc_itemType) select 0) isEqualTo "Magazine") then {
         [_itemUser, _usedItem] call ACEFUNC(common,addToInventory);
     } else {
-        [_itemUser, _usedItem, false] call EFUNC(pharma,setMagItem);
+        [_itemUser, _usedItem, false] call FUNC(setMagItem);
     };
 };
 

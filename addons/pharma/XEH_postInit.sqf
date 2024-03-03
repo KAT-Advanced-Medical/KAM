@@ -19,6 +19,7 @@
 [QGVAR(fentanylLocal), LINKFUNC(fentanylLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(caffeineLocal), LINKFUNC(treatmentAdvanced_CaffeineLocal)] call CBA_fnc_addEventHandler;
 
+["kat_fluid", LINKFUNC(fluid)] call CBA_fnc_addEventHandler;
 
 ["kat_PainkillerItem", "kat_Painkiller"] call ACEFUNC(common,registerItemReplacement);
 ["kat_PenthroxItem", "kat_Penthrox"] call ACEFUNC(common,registerItemReplacement);

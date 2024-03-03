@@ -496,7 +496,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_MINIMUM_SAFE_DRAW),LLSTRING(SETTING_MINIMUM_SAFE_DRAW_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_BloodDraw)],
-    [0, 6, 3.6, 1], // 3.6 default matches ACE Class IV hemorrhage 
+    [0, 6, 3.6, 1], // 3.6 default matches ACE Class IV hemorrhage
     true
 ] call CBA_Settings_fnc_init;
 
@@ -506,7 +506,11 @@ PREP_RECOMPILE_END;
     LLSTRING(SETTING_cardiacArrestBleedRate),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 0.2, 0.05, 3],
-    true
+    true,
+    {
+        params ["_value"];
+        ACEGVAR(medical,const_minCardiacOutput) = _value;
+    }
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;
