@@ -35,7 +35,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(DrawBlood500_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
         treatmentTime = QGVAR(blood_drawTime_500ml);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "Body"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = QGVAR(enable_selfBloodDraw);
         category = "advanced";
         medicRequired = 0;
@@ -51,7 +51,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(DrawBlood250_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
         treatmentTime = QGVAR(blood_drawTime_250ml);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "Body"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = QGVAR(enable_selfBloodDraw);
         category = "advanced";
         medicRequired = 0;
