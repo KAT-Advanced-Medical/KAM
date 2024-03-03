@@ -1729,9 +1729,7 @@
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
             <Japanese>%1 が認識票の血液型を確認: %2</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Circulation_bloodtype_log">
-            <English>%1 checked dogtags blood group: %2</English>
+            <Korean>%1 님이 군번줄로 혈액형을 확인했습니다: %2</Korean>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
