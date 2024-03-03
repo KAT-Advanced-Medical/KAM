@@ -18,6 +18,6 @@
 
 params ["_medic", "_patient"];
 
-if ((GVAR(consumeSurgicalKit) == 2) && {!([_medic, _patient, ["ACE_suture"]] call FUNC(hasItem))}) exitWith {false};
+if ((GVAR(consumeSurgicalKit) == 2) call FUNC(hasItem)) exitWith {false};
 
 count (_patient call FUNC(getFullBodyStitchableWounds)) > 0
