@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [player, "LeftLeg", opioidRelief] call kat_pharma_fnc_treatmentAdvanced_FentanylLocal;
+ * [player, "LeftLeg", 0.5] call kat_pharma_fnc_treatmentAdvanced_FentanylLocal;
  *
  * Public: No
  */
