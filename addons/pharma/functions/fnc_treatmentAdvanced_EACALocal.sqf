@@ -34,6 +34,7 @@ if (_IVactual > 1) then {
             [{
                 params["_patient", "_IVarray", "_partIndex"];
 
+                if (_IVactual > 1 && _IVactual != 4) exitWith {};
                 _IVarray set [_partIndex, 3];
                 _patient setVariable [QGVAR(IV), _IVarray, true];
             },
