@@ -55,7 +55,7 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
         };
     };
 } else { // Damage threshold was passed but no pneumothorax given, try to just give injury instead
-    if (GVAR(deepPenetratingInjuryChance) > 0) then (
+    if (GVAR(deepPenetratingInjuryChance) > 0) then {
         if (floor (random 100) <= GVAR(deepPenetratingInjuryChance)) then {
             _unit setVariable [QGVAR(deepPenetratingInjury), true, true];
             _unit setVariable [QGVAR(activeChestSeal), false, true];
