@@ -41,6 +41,16 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_suction,1);
         };
     };
+    class kat_etco2_monitorItem: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName= CSTRING(ETCo2_Monitor_Display);
+        author = "apo_tle";
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(kat_etco2_monitor,1);
+        };
+    };
     class BloodSplatter_01_Small_Old_F;
     class kat_vomit: BloodSplatter_01_Small_Old_F {
         displayName = CSTRING(Vomit_Display);

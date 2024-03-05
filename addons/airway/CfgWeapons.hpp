@@ -49,4 +49,15 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_etco2_monitor: ACE_ItemCore {
+        scope = 2;
+        author = "apo_tle";
+        displayName= CSTRING(ETCo2_Monitor_Display);
+        descriptionShort = CSTRING(ETCo2_Monitor_Desc_Short);
+        picture = QPATHTOF(ui\suction_normal.paa);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 7;
+        };
+    };
 };
