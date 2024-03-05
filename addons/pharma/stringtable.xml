@@ -1105,9 +1105,11 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW">
             <English>Blood Drawing Require IV/IO</English>
+            <German>Blutentnahme erfordert IV/IO</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
+            <German>Standardmäßig falsch. If true,  müssen Sie zuerst eine Infusion/Infusion einführen, bevor Sie jemandem Blut abnehmen können. \nIf false, können Sie ohne zeichnen.</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
