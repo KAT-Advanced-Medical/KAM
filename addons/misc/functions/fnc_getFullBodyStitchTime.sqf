@@ -26,4 +26,3 @@ private _stitchableTotal = 0;
 } forEach (_patient call FUNC(getFullBodyStitchableWounds));
 
 _stitchableTotal * GVAR(woundStitchTime);
-systemChat format ["Stitch Time Result: %1", _stitchableTotal];

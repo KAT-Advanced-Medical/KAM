@@ -45,4 +45,3 @@ PREP(fullBodyCanStitch);
 PREP(fullBodySurgicalKitProgress);
 PREP(getFullBodyStitchableWounds);
 PREP(getFullBodyStitchTime);
-PREP(isTrue);
