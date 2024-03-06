@@ -38,6 +38,8 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
             [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog)] call FUNC(removeLog);
             [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog)] call FUNC(removeLog);
             [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog)] call FUNC(removeLog);
+            [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_HasCannula_StatusLog)] call FUNC(removeLog);
+            [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_HasCannula_StatusLog)] call FUNC(removeLog);
         };
 
         //No Values for your Monitor atm
@@ -47,6 +49,8 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog)] call FUNC(removeLog);
         [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog)] call FUNC(removeLog);
         [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog)] call FUNC(removeLog);
+        [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_HasCannula_StatusLog)] call FUNC(removeLog);
+        [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_HasCannula_StatusLog)] call FUNC(removeLog);
 
         private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
         private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex);
