@@ -265,7 +265,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion_short">
             <English>Not occluded</English>
-            <German>Nicht verstopft</German>
+            <German>Nicht okkludiert</German>
             <Polish>Brak zatoru</Polish>
             <Spanish>No ocluída</Spanish>
             <Chinese>無 閉塞</Chinese>
@@ -310,7 +310,7 @@
             <Norwegian>Luftvei er ikke okkludert</Norwegian>
             <French>Les voies aériennes ne sont pas occludées</French>
             <Finnish>Ilmatiet eivät ole likaisia</Finnish>
-            <German>Atemwege sind nicht verstopft</German>
+            <German>Atemwege sind nicht okkludiert</German>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
@@ -328,7 +328,7 @@
             <Norwegian>Luftveien er okkludert, behov for medisinsk suging</Norwegian>
             <French>Voies aériennes occludées, aspiration médicale nécessaire</French>
             <Finnish>Hengitystiet ovat likaiset, tarvitaan lääkärin imu</Finnish>
-            <German>Die Atemwege sind verstopft, eine medizinische Absaugung ist erforderlich</German>
+            <German>Die Atemwege sind okkludiert, eine medizinische Absaugung ist erforderlich</German>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
             <English>Airway is clear</English>
@@ -481,7 +481,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_success">
             <English>Occlusion removed</English>
-            <German>Verstopfung entfernt</German>
+            <German>Okklusion entfernt</German>
             <Polish>Zablokowanie usunięte</Polish>
             <Spanish>Oclusión eliminada</Spanish>
             <Chinese>遮擋移除</Chinese>
@@ -561,7 +561,7 @@
             <English>Medical suction completed, Occlusion removed</English>
             <Japanese>医療吸引が完了し、 異物が除去されました</Japanese>
             <Finnish>Lääketieteellinen imu suoritettu, okkluusio poistettu</Finnish>
-            <German>Medizinische Absaugung abgeschlossen, Verstopfung entfernt</German>
+            <German>Medizinische Absaugung abgeschlossen, Okklusion entfernt</German>
         </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
@@ -1336,7 +1336,7 @@
             <Norwegian>Tid i stabilt sideleie for å bli kvitt okklusjonen</Norwegian>
             <French>Temps pour retirer l'occlusion en position latérale de sécurité</French>
             <Finnish>Palautuminen Asento-aika tyhjennystukoksen poistamiseksi</Finnish>
-            <German>Stabile Seitenlage um die Verstopfung zu entfernen</German>
+            <German>Stabile Seitenlage um die Okklusion zu entfernen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
@@ -1345,7 +1345,7 @@
             <Norwegian>Maks nødvendig tid en pasient må være i stabilt sideleie for å bli kvitt okklusjonen.</Norwegian>
             <French>Temps maximal pour qu'une occlusion disparaisse sur un patient en position latérale de sécurité</French>
             <Finnish>Enimmäisaika, joka tarvitaan potilaan puhdistamiseen toipumisasennossa</Finnish>
-            <German>Maximale Zeit, die der Patient in der stabilen Seitenlage benötigt, um die Verstopfung zu beseitigen.</German>
+            <German>Maximale Zeit, die der Patient in der stabilen Seitenlage benötigt, um die Okklusion zu beseitigen.</German>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
