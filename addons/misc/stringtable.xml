@@ -1183,5 +1183,8 @@
             <Portuguese>Parou de carregar %1</Portuguese>
             <Spanish>Solto al paciente %1</Spanish>
         </Key>
+        <Key ID="STR_KAT_Misc_Use_SurgicalKitFullBody">
+            <English>Full Body Stitch</English>
+        </Key>
     </Package>
 </Project>
