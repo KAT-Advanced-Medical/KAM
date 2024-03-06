@@ -94,7 +94,11 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         // List vitals depending on if AED pads and vitals monitoring (pressure cuff + pulse oximeter) is connected
         if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
             // heart rate, systolic / diastolic, spO2
-            [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog), [round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2)]] call ACEFUNC(medical_treatment,addToLog);
+            // TODO check nasal cannula is connected
+            // if connected
+            [_patient, "quick_view", LSTRING(VitalsMonitor_HasCannula_StatusLog), [round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2)]] call ACEFUNC(medical_treatment,addToLog);
+            // if disconnected
+            //[_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog), [round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2)]] call ACEFUNC(medical_treatment,addToLog);
         } else {
             // TODO check nasal cannula is connected
 

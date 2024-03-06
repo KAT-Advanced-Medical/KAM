@@ -2619,12 +2619,6 @@
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4</Spanish>
             <Finnish>AUD-X: PR: %1 BP: %2/%3 SpO2: %4</Finnish>
         </Key>
-        <Key ID="STR_KAT_Circulation_VitalsMonitor_VMInactive_HasCannula_StatusLog">
-            <English>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Breaths/min: %3</English>
-        </Key>
-        <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_HasCannula_StatusLog">
-            <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Breaths/min: %6</English>
-        </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4</Spanish>
@@ -2637,6 +2631,15 @@
             <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4</Portuguese>
             <Czech>AED-X SF: %1 TK: %2%3 SpO2: %4</Czech>
             <Finnish>AUD-X: HR: %1 BP: %2/%3 SpO2: %4</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_VitalsMonitor_VMInactive_HasCannula_StatusLog">
+            <English>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Breaths/min: %3</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_HasCannula_StatusLog">
+            <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Breaths/min: %6</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_VitalsMonitor_HasCannula_StatusLog">
+            <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %2 Breaths/min: %3</English>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
             <English>AED-X Vitals Monitor Sounds</English>
