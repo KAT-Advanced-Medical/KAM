@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: kymckay
  * Returns a hashmap of the stitchable wounds that the given unit has on each body part.
