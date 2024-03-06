@@ -52,7 +52,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
-            <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes</German>
+            <German>Wahrscheinlichkeit einer Atemwegs Okklusion</German>
             <Polish>Szansa na zablokowanie się dróg oddechowych</Polish>
             <Spanish>Probabilidad de oclusión en las vías aéreas</Spanish>
             <Chinese>呼吸道閉塞機率</Chinese>
@@ -70,7 +70,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded_DESC">
             <English>Probability for an occlusion in percentage that gets rolled Setting:[Occlusion repeat timer] (default every 60s)</English>
-            <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes in prozent die durch Einstellung:[Zeit für die Wiederholung des Erbrechens] (standard alle 60s) berechnet wird.</German>
+            <German>Wahrscheinlichkeit für eine Okklusion in Prozent, die gewürfelt wird. Einstellung: [Timer für Okklusionswiederholung] (Standard alle 60 Sekunden)</German>
             <Czech>Pravděpodobnost zablokování dýchacích cest v procentech, která se vylosuje při Nastavení:[Časovač opakovaného ucpání dýchacích cest](defaultně každých 60s)</Czech>
             <Spanish>Porcentaje de probabilidad de que suceda una oclusión Opciones:[tiempo de repeticion de oclusión] (por defecto cada 60s)</Spanish>
             <Japanese>気道異物の確率(%) [異物再発までの時間]の設定時間毎に計算されます (デフォルトでは60秒毎)</Japanese>
@@ -83,7 +83,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
-            <German>Zeit für die Wiederholung des Erbrechens</German>
+            <German>Okklusionswiederholungstimer</German>
             <Korean>구토 반복 타이머</Korean>
             <Polish>Czas powtarzania zablokowania</Polish>
             <Japanese>異物再発までの時間</Japanese>
@@ -102,7 +102,7 @@
             <French>Temps de récupération après une occlusion</French>
             <Korean>구토 쿨다운 시간</Korean>
             <Norwegian>Avkjølingsperiode for okklusjon</Norwegian>
-            <German>Abklingzeit für Erbrechen</German>
+            <German>Abklingzeit der Okklusion</German>
             <Portuguese>Período de espera da oclusão</Portuguese>
             <Spanish>Tiempo para repetirse oclusion</Spanish>
             <Finnish>Okkluusiojäähdytyssykli</Finnish>
@@ -197,7 +197,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion_short">
             <English>Occluded</English>
-            <German>Verstopft</German>
+            <German>Okkludiert</German>
             <Polish>Zator</Polish>
             <Spanish>Ocluída</Spanish>
             <Chinese>閉塞</Chinese>
@@ -561,7 +561,7 @@
             <English>Medical suction completed, Occlusion removed</English>
             <Japanese>医療吸引が完了し、 異物が除去されました</Japanese>
             <Finnish>Lääketieteellinen imu suoritettu, okkluusio poistettu</Finnish>
-            <German>Medizinische Absaugung abgeschlossen, verstopfung entfernt</German>
+            <German>Medizinische Absaugung abgeschlossen, Verstopfung entfernt</German>
         </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
@@ -709,7 +709,7 @@
         <Key ID="STR_KAT_Airway_Suction_Log">
             <English>%1 did a medical suction using a %2</English>
             <Japanese>%1 は %2 で医療吸引を行った</Japanese>
-            <German>%1 hat eine medizinische Absaugung durchgeführt mit einem %2</German>
+            <German>%1 hat eine medizinische Absaugung durchgeführt mit einer %2</German>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
@@ -907,7 +907,7 @@
             <English>Training level required to use an Manual Suction Pump</English>
             <Japanese>手動吸引器の使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Finnish>Aika tarkistaa hengitystiet</Finnish>
-            <German>Für die Verwendung einer manuellen Absaugpumpe ist ein Schulungsniveau erforderlich</German>
+            <German>Für die Verwendung einer manuellen Absaugpumpe ist ein medizinischer Grad erforderlich</German>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
             <English>Time to check Airway</English>
@@ -1054,13 +1054,13 @@
             <English>Time for Manual Suction Pump</English>
             <Japanese>手動吸引器の所要時間</Japanese>
             <Finnish>aika manuaaliselle imupumpulle</Finnish>
-            <German>Zeit für eine manuelle Absaugpumpe</German>
+            <German>Behandlungszeit für die manuelle Absaugpumpe</German>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
             <English>How long it will take to use Manual Suction Pump</English>
             <Japanese>手動吸引器を使用するのにどのくらい時間がかかるか設定します</Japanese>
             <Finnish>Kuinka kauan manuaalisen imupumpun käyttö kestää</Finnish>
-            <German>Wie lange dauert die Verwendung der manuellen Absaugpumpe?</German>
+            <German>Wie lang die Behandlungszeit für die manuelle Absaugpumpe ist</German>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS">
             <English>Time for Larynxtubus</English>
@@ -1236,7 +1236,7 @@
             <Norwegian>%1 kansellerte stabilt sideleie</Norwegian>
             <French>%1 a annulé la position latérale de sécurité</French>
             <Finnish>%1 peruutettu lepoasento</Finnish>
-            <German>%1 hat stabile Seitenlage abgebrochen</German>
+            <German>%1 hat die stabile Seitenlage abgebrochen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
@@ -1325,6 +1325,8 @@
             <Norwegian>Hvor lang tid det vil ta å manuelt kansellere stabilt sideleie</Norwegian>
             <French>Combien de temps sera nécessaire pour annuler la position latérale de sécurité</French>
             <Finnish>Kuinka kauan lepoasennon manuaalinen peruuttaminen kestää</Finnish>
+            <German>Wie lang die benötigte Zeit ist, die stabile Seitenlage manuell abzubrechen</German>
+
             <German>Wie lange dauert es, die stabile Seitenlage manuell abzubrechen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
@@ -1334,7 +1336,7 @@
             <Norwegian>Tid i stabilt sideleie for å bli kvitt okklusjonen</Norwegian>
             <French>Temps pour retirer l'occlusion en position latérale de sécurité</French>
             <Finnish>Palautuminen Asento-aika tyhjennystukoksen poistamiseksi</Finnish>
-            <German>Stabile Seitenlage um die verstopfung zu entfernen</German>
+            <German>Stabile Seitenlage um die Verstopfung zu entfernen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
@@ -1343,7 +1345,7 @@
             <Norwegian>Maks nødvendig tid en pasient må være i stabilt sideleie for å bli kvitt okklusjonen.</Norwegian>
             <French>Temps maximal pour qu'une occlusion disparaisse sur un patient en position latérale de sécurité</French>
             <Finnish>Enimmäisaika, joka tarvitaan potilaan puhdistamiseen toipumisasennossa</Finnish>
-            <German>Maximale Zeit, die der Patient in der stabilen Seitenlage benötigt, um die verstopfung zu beseitigen.</German>
+            <German>Maximale Zeit, die der Patient in der stabilen Seitenlage benötigt, um die Verstopfung zu beseitigen.</German>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>

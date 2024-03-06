@@ -3,7 +3,7 @@
     <Package name="Circulation">
         <Key ID="STR_KAT_Circulation_SETTING_ENABLE">
             <English>ACE-Circulation activated?</English>
-            <German>ACE-Kreislauf aktiviert?</German>
+            <German>ACE-Kreislauf aktivieren?</German>
             <Polish>ACE-Czy zaawansowane krążenie ma być włączone?</Polish>
             <Spanish>¿Activar ACE-Circulación?</Spanish>
             <Chinese>啟用ACE-血型循環系統？</Chinese>
@@ -20,7 +20,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable">
             <English>Advanced Rhythms activated?</English>
-            <German>Fortgeschrittenen Rhythmus aktiviert?</German>
+            <German>Fortgeschrittenen Rhythmus aktivieren?</German>
             <French>Activer rythme avancé?</French>
             <Polish>Zaawansowane Rytmy</Polish>
             <Korean>고급 리듬이 활성화 되었습니까?</Korean>
@@ -1729,7 +1729,7 @@
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
             <Japanese>%1 が認識票の血液型を確認: %2</Japanese>
-            <German>%1 hat die Erkennungsmarken Blutgruppe überprüft: %2</German>
+            <German>%1 hat die Blutgruppe der Erkennungsmarke überprüft: %2</German>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -2012,7 +2012,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
             <English>Medical level required to pick up placed AED/X station</English>
             <Japanese>設置されたAED/Xを拾うのに必要な医療スキルのレベルを設定します。</Japanese>
-            <German>Für die Aufnahme der platzierten AED/X-Station ist ein medizinisches Niveau erforderlich</German>
+            <German>Für die Aufnahme der platzierten AED/X-Station ist ein medizinischer Grad erforderlich</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>

@@ -1425,7 +1425,7 @@
             <Japanese>呼吸補助を開始した</Japanese>
             <French>Début des insufflations</French>
             <Finnish>Pelastushengitykset alkavat</Finnish>
-            <German>Atemspende begonnen</German>
+            <German>Künstliche Beatmung begonnen</German>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>
