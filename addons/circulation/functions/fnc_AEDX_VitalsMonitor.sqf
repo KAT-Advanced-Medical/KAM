@@ -87,7 +87,7 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         } else {
             _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];
 
-            _etco2 = _patient getVariable [QEGVAR(breathing,etco2Level), 40];
+            _etco2 = _patient call EFUNC(breathing,getETCo2);
             _breathrate = _patient getVariable [QEGVAR(breathing,breathRate), 15];
         };
 

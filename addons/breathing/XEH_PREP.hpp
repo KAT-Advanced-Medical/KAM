@@ -22,3 +22,4 @@ PREP(treatmentAdvanced_removePulseoximeter);
 PREP(treatmentAdvanced_tensionpneumothorax);
 PREP(treatmentAdvanced_tensionpneumothoraxLocal);
 PREP(useBVM);
+PREP(getETCo2);
