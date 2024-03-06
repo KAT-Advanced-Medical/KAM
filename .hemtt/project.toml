@@ -50,17 +50,4 @@ preset = "Hemtt"
 workshop = [
     "450814997", # CBA_A3's Workshop ID
     "463939057", # ACE3's Workshop ID
-    "1779063631", # Zeus Enhanced
-    "2018593688", # Zeus Enhanced - ACE3 Compatibility
-    "1355571744", # Additional Zeus Things (Zeus Enhanced & Ares Achilles)
-    "2447965207", # Crows Zeus Additions
-    "2387297579", # Zeus Additions
-]
-parameters = [
-    "-skipIntro",           # These parameters are passed to the Arma 3 executable
-    "-noSplash",            # They do not need to be added to your list
-    "-showScriptErrors",    # You can add additional parameters here
-    "-debug",
-    "-filePatching",
-    "C:\\Users\\User\\Documents\\Arma 3 - Other Profiles\\LtCol%2e%20Belhun[TO]\\missions\\KAM%20test.Stratis\\mission.sqm", # Launch into existing Editor Mission - \\ needed
 ]

@@ -84,5 +84,3 @@ ArmaScriptCompiler.exe
 #SQF-VM Server
 .vscode\sqfvm-lsp
 .vscode
-.hemtt/project.toml
-.gitignore
