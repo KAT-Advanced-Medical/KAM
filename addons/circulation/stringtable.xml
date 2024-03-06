@@ -2619,6 +2619,9 @@
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4</Spanish>
             <Finnish>AUD-X: PR: %1 BP: %2/%3 SpO2: %4</Finnish>
         </Key>
+        <Key ID="STR_KAT_Circulation_VitalsMonitor_CannulaActive_StatusLog">
+            <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Breaths/min: %6</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4</Spanish>
