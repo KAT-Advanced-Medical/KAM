@@ -17,7 +17,6 @@
 
  params ["_patient"];
 
-
 _baseValue = 40;
 
 _hr = 0;
@@ -30,4 +29,4 @@ _ptxFactor = 0;
 _airwayObstructed = false;
 _airwayOccluded = false;
 
-_airwayBlocked = (_airwayObstructed || _airwayOccluded) // TODO replace vars with functions to get states
+_airwayBlocked = (_airwayObstructed || _airwayOccluded) // TODO replace vars with functions to get states....
