@@ -21,7 +21,7 @@
  */
 
 params ["_args"];
-_args params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem" , ["_extraArgs",[]]];
+_args params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", ["_extraArgs",[]]];
 
 // Switch medic to end animation immediately
 private _endInAnim = _medic getVariable QACEGVAR(medical_treatment,endInAnim);
