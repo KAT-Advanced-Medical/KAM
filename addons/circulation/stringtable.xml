@@ -14,8 +14,9 @@
             <Turkish>ACE-Sirkülasyon etkinleştirildi mi?</Turkish>
             <Italian>Attivare ACE-Circolazione?</Italian>
             <Russian>ACE-циркуляция активирована?</Russian>
-            <Japanese>KAM-Circulation を有効化しますか?</Japanese>
+            <Japanese>循環器系モジュールを有効化</Japanese>
             <Portuguese>ACE - Circulação ativada?</Portuguese>
+            <Finnish>ACE-Kierto aktivoitu?</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable">
             <English>Advanced Rhythms activated?</English>
@@ -32,6 +33,7 @@
             <Japanese>高度な心調律 を有効化しますか?</Japanese>
             <Russian>Продвинутый ритм активирован?</Russian>
             <Portuguese>Ritmo avançado ativado?</Portuguese>
+            <Finnish>Edistyneet sykerytmit aktivoitu?</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_O">
             <English>Blood IV (1000ml) BT: 0+</English>
@@ -48,6 +50,7 @@
             <Russian>Кровь IV (1000 мл) Гk : 0+</Russian>
             <Japanese>血液 IV (1000ml) O+型</Japanese>
             <Portuguese>Sangue IV (1000ml) TS: O+</Portuguese>
+            <Finnish>Veri IV (1000ml) V:O+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_O_N">
             <English>Blood IV (1000ml) BT: 0-</English>
@@ -64,6 +67,7 @@
             <Russian>Кровь IV (1000 мл) Гk : 0-</Russian>
             <Japanese>血液 IV (1000ml) O-型</Japanese>
             <Portuguese>Sangue IV (1000ml) TS: O-</Portuguese>
+            <Finnish>Veri IV (1000ml) V:O-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A">
             <English>Blood IV (1000ml) BT: A+</English>
@@ -80,6 +84,7 @@
             <Russian>Кровь IV (1000 мл) Гk : А+</Russian>
             <Japanese>血液 IV (1000ml) A+型</Japanese>
             <Portuguese>Sangue IV (1000ml) TS: A+</Portuguese>
+            <Finnish>Veri IV (1000ml) V: A+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A_N">
             <English>Blood IV (1000ml) BT: A-</English>
@@ -96,6 +101,7 @@
             <Russian>Кровь IV (1000 мл) Гk : А-</Russian>
             <Japanese>血液 IV (1000ml) A-型</Japanese>
             <Portuguese>Sangue IV (1000ml) TS: A-</Portuguese>
+            <Finnish>Veri IV (1000ml) V: A-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_B">
             <English>Blood IV (1000ml) BT: B+</English>
@@ -112,6 +118,7 @@
             <Russian>Кровь IV (1000 мл) Гk : B+</Russian>
             <Japanese>血液 IV (1000ml) B+型</Japanese>
             <Portuguese>Sangue IV (1000ml) TS: B+</Portuguese>
+            <Finnish>Veri IV (1000ml) V: B+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_B_N">
             <English>Blood IV (1000ml) BT: B-</English>
@@ -128,6 +135,7 @@
             <Russian>Кровь IV (1000 мл) Гk : B-</Russian>
             <Japanese>血液 IV (1000ml) B-型</Japanese>
             <Portuguese>Sangue IV (1000ml) TS: B-</Portuguese>
+            <Finnish>Veri IV (1000ml) V: B-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_AB">
             <English>Blood IV (1000ml) BT: AB+</English>
@@ -144,6 +152,7 @@
             <Russian>Кровь IV (1000 мл) Гk : AB+</Russian>
             <Japanese>血液 IV (1000ml) AB+型</Japanese>
             <Portuguese>Sangue IV (1000ml) TS: AB+</Portuguese>
+            <Finnish>Veri IV (1000ml) V: AB+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_AB_N">
             <English>Blood IV (1000ml) BT: AB-</English>
@@ -160,6 +169,7 @@
             <Russian>Кровь IV (1000 мл) Гk : АB-</Russian>
             <Japanese>血液 IV (1000ml) AB-型</Japanese>
             <Portuguese>Sangue IV (1000ml) TS: AB-</Portuguese>
+            <Finnish>Veri IV (1000ml) V: AB-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_O_500">
             <English>Blood IV (500ml) BT: 0+</English>
@@ -176,6 +186,7 @@
             <Russian>Кровь IV (500 мл) Гk : 0+</Russian>
             <Japanese>血液 IV (500ml) O+型</Japanese>
             <Portuguese>Sangue IV (500ml) TS: O+</Portuguese>
+            <Finnish>Veri IV (500ml) V: O+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_O_500_N">
             <English>Blood IV (500ml) BT: 0-</English>
@@ -192,6 +203,7 @@
             <Russian>Кровь IV (500 мл) Гk : 0-</Russian>
             <Japanese>血液 IV (500ml) O-型</Japanese>
             <Portuguese>Sangue IV (500ml) TS: O-</Portuguese>
+            <Finnish>Veri IV (500ml) V: O-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A_500">
             <English>Blood IV (500ml) BT: A+</English>
@@ -208,6 +220,7 @@
             <Russian>Кровь IV (500 мл) Гk : A+</Russian>
             <Japanese>血液 IV (500ml) A+型</Japanese>
             <Portuguese>Sangue IV (500ml) TS: A+</Portuguese>
+            <Finnish>Veri IV (500ml) V: A+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A_500_N">
             <English>Blood IV (500ml) BT: A-</English>
@@ -224,6 +237,7 @@
             <Russian>Кровь IV (500 мл) Гk : A-</Russian>
             <Japanese>血液 IV (500ml) A-型</Japanese>
             <Portuguese>Sangue IV (500ml) TS: A-</Portuguese>
+            <Finnish>Veri IV (500ml) V: A-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_B_500">
             <English>Blood IV (500ml) BT: B+</English>
@@ -240,6 +254,7 @@
             <Russian>Кровь IV (500 мл) Гk : B+</Russian>
             <Japanese>血液 IV (500ml) B+型</Japanese>
             <Portuguese>Sangue IV (500ml) TS: B+</Portuguese>
+            <Finnish>Veri IV (500ml) V: B+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_B_500_N">
             <English>Blood IV (500ml) BT: B-</English>
@@ -256,6 +271,7 @@
             <Russian>Кровь IV (500 мл) Гk : B-</Russian>
             <Japanese>血液 IV (500ml) B-型</Japanese>
             <Portuguese>Sangue IV (500ml) TS: B-</Portuguese>
+            <Finnish>Veri IV (500ml) V: B-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_AB_500">
             <English>Blood IV (500ml) BT: AB+</English>
@@ -272,6 +288,7 @@
             <Russian>Кровь IV (500 мл) Гk : AB+</Russian>
             <Japanese>血液 IV (500ml) AB+型</Japanese>
             <Portuguese>Sangue IV (500ml) TS: AB+</Portuguese>
+            <Finnish>Veri IV (500ml) V: AB+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_AB_500_N">
             <English>Blood IV (500ml) BT: AB-</English>
@@ -288,6 +305,7 @@
             <Russian>Кровь IV (500 мл) Гk : AB-</Russian>
             <Japanese>血液 IV (500ml) AB-型</Japanese>
             <Portuguese>Sangue IV (500ml) TS: AB-</Portuguese>
+            <Finnish>Veri IV (500ml) V: AB-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_O_250">
             <English>Blood IV (250ml) BT: 0+</English>
@@ -304,6 +322,7 @@
             <Russian>Кровь IV (250 мл) Гk : 0+</Russian>
             <Japanese>血液 IV (250ml) O+型</Japanese>
             <Portuguese>Sangue IV (250ml) TS: O+</Portuguese>
+            <Finnish>Veri IV (250ml) V: O+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_O_250_N">
             <English>Blood IV (250ml) BT: 0-</English>
@@ -320,6 +339,7 @@
             <Russian>Кровь IV (250 мл) Гk : 0-</Russian>
             <Japanese>血液 IV (250ml) O-型</Japanese>
             <Portuguese>Sangue IV (250ml) TS: O-</Portuguese>
+            <Finnish>Veri IV (250ml) V: O-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A_250">
             <English>Blood IV (250ml) BT: A+</English>
@@ -336,6 +356,7 @@
             <Russian>Кровь IV (250 мл) Гk : A+</Russian>
             <Japanese>血液 IV (250ml) A+型</Japanese>
             <Portuguese>Sangue IV (250ml) TS: A+</Portuguese>
+            <Finnish>Veri IV (250ml) V: A+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_A_250_N">
             <English>Blood IV (250ml) BT: A-</English>
@@ -352,6 +373,7 @@
             <Russian>Кровь IV (250 мл) Гk : A-</Russian>
             <Japanese>血液 IV (250ml) A-型</Japanese>
             <Portuguese>Sangue IV (250ml) TS: A-</Portuguese>
+            <Finnish>Veri IV (250ml) V: A-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_B_250">
             <English>Blood IV (250ml) BT: B+</English>
@@ -368,6 +390,7 @@
             <Russian>Кровь IV (250 мл) Гk : B+</Russian>
             <Japanese>血液 IV (250ml) B+型</Japanese>
             <Portuguese>Sangue IV (250ml) TS: B+</Portuguese>
+            <Finnish>Veri IV (250ml) V: B+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_B_250_N">
             <English>Blood IV (250ml) BT: B-</English>
@@ -384,6 +407,7 @@
             <Russian>Кровь IV (250 мл) Гk : B-</Russian>
             <Japanese>血液 IV (250ml) B-型</Japanese>
             <Portuguese>Sangue IV (250ml) TS: B-</Portuguese>
+            <Finnish>Veri IV (250ml) V: B-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_AB_250">
             <English>Blood IV (250ml) BT: AB+</English>
@@ -400,6 +424,7 @@
             <Russian>Кровь IV (250 мл) Гk : AB+</Russian>
             <Japanese>血液 IV (250ml) AB+型</Japanese>
             <Portuguese>Sangue IV (250ml) TS: AB+</Portuguese>
+            <Finnish>Veri IV (250ml) V: AB+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_BloodIV_AB_250_N">
             <English>Blood IV (250ml) BT: AB-</English>
@@ -416,6 +441,7 @@
             <Russian>Кровь IV (250 мл) Гk : AB-</Russian>
             <Japanese>血液 IV (250ml) AB-型</Japanese>
             <Portuguese>Sangue IV (250ml) TS: AB-</Portuguese>
+            <Finnish>Veri IV (250ml) V: AB-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_BloodIV_O">
             <English>Give Blood IV (1000ml) BT: 0+</English>
@@ -432,6 +458,7 @@
             <Russian>Переливание крови IV (1000 мл) Гk : 0+</Russian>
             <Japanese>血液 IV (1000ml) O+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (1000ml) TS: O+</Portuguese>
+            <Finnish>Antaa veri IV (1000ml) V:O+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_BloodIV_O_N">
             <English>Give Blood IV (1000ml) BT: 0-</English>
@@ -448,6 +475,7 @@
             <Russian>Переливание крови IV (1000 мл) Гk : 0-</Russian>
             <Japanese>血液 IV (1000ml) O-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (1000ml) TS: O-</Portuguese>
+            <Finnish>Antaa veri IV (1000ml) V:O-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_BloodIV_A">
             <English>Give Blood IV (1000ml) BT: A+</English>
@@ -464,6 +492,7 @@
             <Russian>Переливание крови IV (1000 мл) Гk : А+</Russian>
             <Japanese>血液 IV (1000ml) A+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (1000ml) TS: A+</Portuguese>
+            <Finnish>Antaa veri IV (1000ml) V:A+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_BloodIV_A_N">
             <English>Give Blood IV (1000ml) BT: A-</English>
@@ -480,6 +509,7 @@
             <Russian>Переливание крови IV (1000 мл) Гk : А-</Russian>
             <Japanese>血液 IV (1000ml) A-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (1000ml) TS: A-</Portuguese>
+            <Finnish>Antaa veri IV (1000ml) V:A-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_BloodIV_B">
             <English>Give Blood IV (1000ml) BT: B+</English>
@@ -496,6 +526,7 @@
             <Russian>Переливание крови IV (1000 мл) Гk : B+</Russian>
             <Japanese>血液 IV (1000ml) B+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (1000ml) TS: B+</Portuguese>
+            <Finnish>Antaa veri IV (1000ml) V:B+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_BloodIV_B_N">
             <English>Give Blood IV (1000ml) BT: B-</English>
@@ -512,6 +543,7 @@
             <Russian>Переливание крови IV (1000 мл) Гk : B-</Russian>
             <Japanese>血液 IV (1000ml) B-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (1000ml) TS: B-</Portuguese>
+            <Finnish>Antaa veri IV (1000ml) V:B-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_BloodIV_AB">
             <English>Give Blood IV (1000ml) BT: AB+</English>
@@ -528,6 +560,7 @@
             <Russian>Переливание крови IV (1000 мл) Гk : АB+</Russian>
             <Japanese>血液 IV (1000ml) AB+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (1000ml) TS: AB+</Portuguese>
+            <Finnish>Antaa veri IV (1000ml) V:AB+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_BloodIV_AB_N">
             <English>Give Blood IV (1000ml) BT: AB-</English>
@@ -544,6 +577,7 @@
             <Russian>Переливание крови IV (1000 мл) Гk : АB-</Russian>
             <Japanese>血液 IV (1000ml) AB-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (1000ml) TS: AB-</Portuguese>
+            <Finnish>Antaa veri IV (1000ml) V:AB-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_500_BloodIV_O">
             <English>Give Blood IV (500ml) BT: 0+</English>
@@ -560,6 +594,7 @@
             <Russian>Переливание крови IV (500 мл) Гk : 0+</Russian>
             <Japanese>血液 IV (500ml) O+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (500ml) TS: O+</Portuguese>
+            <Finnish>Antaa veri IV (500ml) V: O+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_500_BloodIV_O_N">
             <English>Give Blood IV (500ml) BT: 0-</English>
@@ -576,6 +611,7 @@
             <Russian>Переливание крови IV (500 мл) Гk : 0-</Russian>
             <Japanese>血液 IV (500ml) O-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (500ml) TS: O-</Portuguese>
+            <Finnish>Antaa veri IV (500ml) V: O-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_500_BloodIV_A">
             <English>Give Blood IV (500ml) BT: A+</English>
@@ -592,6 +628,7 @@
             <Russian>Переливание крови IV (500 мл) Гk : A+</Russian>
             <Japanese>血液 IV (500ml) A+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (500ml) TS: A+</Portuguese>
+            <Finnish>Antaa veri IV (500ml) V: A+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_500_BloodIV_A_N">
             <English>Give Blood IV (500ml) BT: A-</English>
@@ -608,6 +645,7 @@
             <Russian>Переливание крови IV (500 мл) Гk : A-</Russian>
             <Japanese>血液 IV (500ml) A-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (500ml) TS: A-</Portuguese>
+            <Finnish>Antaa veri IV (500ml) V: A-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_500_BloodIV_B">
             <English>Give Blood IV (500ml) BT: B+</English>
@@ -624,6 +662,7 @@
             <Russian>Переливание крови IV (500 мл) Гk : B+</Russian>
             <Japanese>血液 IV (500ml) B+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (500ml) TS: B+</Portuguese>
+            <Finnish>Antaa veri IV (500ml) V: B+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_500_BloodIV_B_N">
             <English>Give Blood IV (500ml) BT: B-</English>
@@ -640,6 +679,7 @@
             <Russian>Переливание крови IV (500 мл) Гk : B-</Russian>
             <Japanese>血液 IV (500ml) B-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (500ml) TS: B-</Portuguese>
+            <Finnish>Antaa veri IV (500ml) V: B-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_500_BloodIV_AB">
             <English>Give Blood IV (500ml) BT: AB+</English>
@@ -656,6 +696,7 @@
             <Russian>Переливание крови IV (500 мл) Гk : AB+</Russian>
             <Japanese>血液 IV (500ml) AB+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (500ml) TS: AB+</Portuguese>
+            <Finnish>Antaa veri IV (500ml) V: AB+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_500_BloodIV_AB_N">
             <English>Give Blood IV (500ml) BT: AB-</English>
@@ -672,6 +713,7 @@
             <Russian>Переливание крови IV (500 мл) Гk : AB-</Russian>
             <Japanese>血液 IV (500ml) AB-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (500ml) TS: AB-</Portuguese>
+            <Finnish>Antaa veri IV (500ml) V: AB=</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_250_BloodIV_O">
             <English>Give Blood IV (250ml) BT: 0+</English>
@@ -688,6 +730,7 @@
             <Russian>Переливание крови IV (250 мл) Гk : 0+</Russian>
             <Japanese>血液 IV (250ml) O+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (250ml) TS: O+</Portuguese>
+            <Finnish>Antaa veri IV (250ml) V: O+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_250_BloodIV_O_N">
             <English>Give Blood IV (250ml) BT: 0-</English>
@@ -704,6 +747,7 @@
             <Russian>Переливание крови IV (250 мл) Гk : 0-</Russian>
             <Japanese>血液 IV (250ml) O-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (250ml) TS: O-</Portuguese>
+            <Finnish>Antaa veri IV (250ml) V: O-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_250_BloodIV_A">
             <English>Give Blood IV (250ml) BT: A+</English>
@@ -720,6 +764,7 @@
             <Russian>Переливание крови IV (250 мл) Гk : A+</Russian>
             <Japanese>血液 IV (250ml) A+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (250ml) TS: A+</Portuguese>
+            <Finnish>Antaa veri IV (250ml) V: A+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_250_BloodIV_A_N">
             <English>Give Blood IV (250ml) BT: A-</English>
@@ -736,6 +781,7 @@
             <Russian>Переливание крови IV (250 мл) Гk : A-</Russian>
             <Japanese>血液 IV (250ml) A-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (250ml) TS: A-</Portuguese>
+            <Finnish>Antaa veri IV (250ml) V: A-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_250_BloodIV_B">
             <English>Give Blood IV (250ml) BT: B+</English>
@@ -752,6 +798,7 @@
             <Russian>Переливание крови IV (250 мл) Гk : B+</Russian>
             <Japanese>血液 IV (250ml) B+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (250ml) TS: B+</Portuguese>
+            <Finnish>Antaa veri IV (250ml) V: B+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_250_BloodIV_B_N">
             <English>Give Blood IV (250ml) BT: B-</English>
@@ -768,6 +815,7 @@
             <Russian>Переливание крови IV (250 мл) Гk : B-</Russian>
             <Japanese>血液 IV (250ml) B-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (250ml) TS: B-</Portuguese>
+            <Finnish>Antaa veri IV (250ml) V: B-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_250_BloodIV_AB">
             <English>Give Blood IV (250ml) BT: AB+</English>
@@ -784,6 +832,7 @@
             <Russian>Переливание крови IV (250 мл) Гk : AB+</Russian>
             <Japanese>血液 IV (250ml) AB+型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (250ml) TS: AB+</Portuguese>
+            <Finnish>Antaa veri IV (250ml) V: AB+</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Action_250_BloodIV_AB_N">
             <English>Give Blood IV (250ml) BT: AB-</English>
@@ -800,6 +849,7 @@
             <Russian>Переливание крови IV (250 мл) Гk : AB-</Russian>
             <Japanese>血液 IV (250ml) AB-型 を投与</Japanese>
             <Portuguese>Transfusão de sangue IV (250ml) TS: AB-</Portuguese>
+            <Finnish>Antaa veri IV (250ml) V: AB-</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Using">
             <English>Using</English>
@@ -816,6 +866,7 @@
             <Russian>С использованием</Russian>
             <Japanese>使用中</Japanese>
             <Portuguese>Usando</Portuguese>
+            <Finnish>Käyttämällä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AnalyzeRhythm">
             <English>Analyze Rhythm</English>
@@ -825,6 +876,7 @@
             <German>Rhythmus prüfen</German>
             <Portuguese>Analisar Ritmo</Portuguese>
             <Spanish>Analizar ritmo</Spanish>
+            <Finnish>Analysoi rytmiä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_DogTag">
             <English>Check Dogtags</English>
@@ -839,8 +891,9 @@
             <Turkish>Künyeyi Kontrol Et</Turkish>
             <Italian>Controlla piastrine</Italian>
             <Russian>Проверка Солдатский жетон</Russian>
-            <Japanese>ドッグタグを確認</Japanese>
+            <Japanese>認識票を確認</Japanese>
             <Portuguese>Checar placa de identificação</Portuguese>
+            <Finnish>Tarkista sotilasmerkit</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_DogTag_Action">
             <English>Checking</English>
@@ -857,6 +910,7 @@
             <Russian>Проверка</Russian>
             <Japanese>確認中</Japanese>
             <Portuguese>Checando</Portuguese>
+            <Finnish>Tarkistetaan</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_X_already">
             <English>Already one connected</English>
@@ -873,6 +927,7 @@
             <Russian>Уже один подключен</Russian>
             <Japanese>すでに1つ接続済です</Japanese>
             <Portuguese>Já há um conectado</Portuguese>
+            <Finnish>Jo yhdistetty</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_X_Display">
             <English>AED X-Series</English>
@@ -889,6 +944,7 @@
             <Russian>AED серии X</Russian>
             <Japanese>AED Xシリーズ</Japanese>
             <Portuguese>DEA Serie-X</Portuguese>
+            <Finnish>AUD X-sarja</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_X_Desc">
             <English>Used to monitor vitals and resuscitate patients</English>
@@ -905,6 +961,7 @@
             <Russian>Используется для мониторинга жизненных показателей и реанимации людей.</Russian>
             <Japanese>バイタルの値を監視し、人を蘇生させるために使用される</Japanese>
             <Portuguese>Usado para monitorar valores vitais e para ressuscitar pessoas</Portuguese>
+            <Finnish>Käytetään elintoimintojen seurantaan ja potilaiden elvyttämiseen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_Action_PlacePads">
             <English>Place AED Pads</English>
@@ -914,6 +971,7 @@
             <German>AED-Pads Platzieren</German>
             <Portuguese>Colocar pás do DEA</Portuguese>
             <Spanish>Colocar electrodos del DEA</Spanish>
+            <Finnish>Aseta AUD-tyynyt</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDStation_Action_PlacePads">
             <English>Station: Place AED Pads</English>
@@ -923,6 +981,7 @@
             <German>Station: AED-Pads platzieren</German>
             <Portuguese>Estação: Colocar pás do DEA</Portuguese>
             <Spanish>Estación: Colocar electrodos del AED</Spanish>
+            <Finnish>Asema: aseta AUD-tyynyt</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDVehicle_Action_PlacePads">
             <English>Vehicle: Place AED Pads</English>
@@ -932,6 +991,7 @@
             <German>Fahrzeug: AED-Pads platzieren</German>
             <Portuguese>Veículo: Colocar pás do DEA</Portuguese>
             <Spanish>Vehículo: Colocar electrodos del DEA</Spanish>
+            <Finnish>Ajoneuvo: aseta AUD-tyynyt</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_PlacePads">
             <English>Place AED-X Pads</English>
@@ -941,6 +1001,7 @@
             <German>AED-X-Pads Platzieren</German>
             <Portuguese>Colocar pás do DEA-X</Portuguese>
             <Spanish>Colocar electrodos del DEA-X</Spanish>
+            <Finnish>Aseta AUD-X-tyynyt</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_PlacePads">
             <English>Station: Place AED-X Pads</English>
@@ -950,6 +1011,7 @@
             <German>Station: AED-X-Pads platzieren</German>
             <Portuguese>Estação: Colocar pás do DEA-X</Portuguese>
             <Spanish>Estación: Colocar electrodos del DEA-X</Spanish>
+            <Finnish>Asema: aseta AUD-X-tyynyt</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_PlacePads">
             <English>Vehicle: Place AED-X Pads</English>
@@ -959,6 +1021,7 @@
             <German>Fahrzeug: AED-X-Pads platzieren</German>
             <Portuguese>Veículo: Colocar pás do DEA-X</Portuguese>
             <Spanish>Vehículo: Colocar electrodos del DEA-X</Spanish>
+            <Finnish>Ajonuevo: aseta AUD-X-tyynyt</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads">
             <English>Remove Defibrillator Pads</English>
@@ -968,6 +1031,7 @@
             <German>Entferne Defibrillator-Pads</German>
             <Portuguese>Remover pás do desfibrilador</Portuguese>
             <Spanish>Quitar electrodos del desfibrilador</Spanish>
+            <Finnish>Poista defibrillaattorityynyt</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_PlacePads_Progress">
             <English>Placing Defibrillator Pads</English>
@@ -977,6 +1041,7 @@
             <German>Platziere Defibrillator-Pads</German>
             <Portuguese>Colocando pás do desfibrilador</Portuguese>
             <Spanish>Colocando electrodos del desfibrilador</Spanish>
+            <Finnish>Defibrillaattorityynyjen asettaminen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads_Progress">
             <English>Removing Defibrillator Pads</English>
@@ -986,6 +1051,7 @@
             <German>Entferne Defibrillator-Pads</German>
             <Portuguese>Removendo pás do desfibrilador</Portuguese>
             <Spanish>Quitando electrodos del desfibrilador</Spanish>
+            <Finnish>Defibrillaattorityynyjen poistaminen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Shock">
             <English>Administer Shock</English>
@@ -995,6 +1061,7 @@
             <German>Schock verabreichen</German>
             <Portuguese>Administrar choque</Portuguese>
             <Spanish>Administrar descarga</Spanish>
+            <Finnish>Anna sokki potilaalle</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Charge">
             <English>Charge Defibrillator</English>
@@ -1004,6 +1071,7 @@
             <German>Defibrillator aufladen</German>
             <Portuguese>Carregar desfibrilador</Portuguese>
             <Spanish>Cargar desfibrilador</Spanish>
+            <Finnish>Lataa defibrillaattori</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
@@ -1013,6 +1081,7 @@
             <German>Laden abbrechen</German>
             <Portuguese>Cancelar carregamento</Portuguese>
             <Spanish>Cancelar carga</Spanish>
+            <Finnish>Peruuta sähkölataus</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_ViewMonitor">
             <English>View Monitor</English>
@@ -1022,6 +1091,7 @@
             <German>Monitor anzeigen</German>
             <Portuguese>Ver monitor</Portuguese>
             <Spanish>Ver monitor</Spanish>
+            <Finnish>Näytä monitori</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_ConnectMonitor">
             <English>Connect Vitals Monitor</English>
@@ -1031,6 +1101,7 @@
             <German>Vitalmonitor anschließen</German>
             <Portuguese>Colocar monitor de sinais vitais</Portuguese>
             <Spanish>Conectar monitor</Spanish>
+            <Finnish>Liitä terveysmonitori</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_ConnectMonitor">
             <English>Station: Connect Vitals Monitor</English>
@@ -1040,6 +1111,7 @@
             <German>Station: Vitalmonitor anschließen</German>
             <Portuguese>Estação: Colocar monitor de sinais vitais</Portuguese>
             <Spanish>Estación: Conectar monitor</Spanish>
+            <Finnish>Asema: Liitä kuntomonitori</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_ConnectMonitor">
             <English>Vehicle: Connect Vitals Monitor</English>
@@ -1056,6 +1128,7 @@
             <Japanese>車載AED: バイタルモニターの接続</Japanese>
             <Russian>Транспортное средство: прикрепите AED-X</Russian>
             <Portuguese>Veículo: Colocar DEA-X</Portuguese>
+            <Finnish>Ajoneuvo: Liitä kuntomonitori</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_DisconnectMonitor">
             <English>Disconnect Vitals Monitor</English>
@@ -1072,6 +1145,7 @@
             <Russian>Удалить мониторинг</Russian>
             <Japanese>バイタルモニターの切断</Japanese>
             <Portuguese>Remover monitoramento</Portuguese>
+            <Finnish>irrota terveysmonitori</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_EnableAudio">
             <English>Vitals Monitor Audio ON</English>
@@ -1081,6 +1155,7 @@
             <German>Vitalmonitor-Ton AN</German>
             <Portuguese>Ativar áudio do monitor de sinais vitais</Portuguese>
             <Spanish>Activar audio del monitor</Spanish>
+            <Finnish>Terveysmonitorin ääni päällä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_DisableAudio">
             <English>Vitals Monitor Audio OFF</English>
@@ -1090,6 +1165,7 @@
             <German>Vitalmonitor-Ton AUS</German>
             <Portuguese>Desativar áudio do monitor de sinais vitais</Portuguese>
             <Spanish>Desactivar audio del monitor</Spanish>
+            <Finnish>Tärkeän näytön ääni pois päältä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_Connecting_Progress">
             <English>Connecting</English>
@@ -1106,6 +1182,7 @@
             <Russian>Подключения</Russian>
             <Japanese>接続中</Japanese>
             <Portuguese>Conectando</Portuguese>
+            <Finnish>Yhdistetään</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_Disconnecting_Progress">
             <English>Disconnecting</English>
@@ -1122,6 +1199,7 @@
             <Russian>Отключение</Russian>
             <Japanese>切断中</Japanese>
             <Portuguese>Desconectando</Portuguese>
+            <Finnish>Irrotetaan</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_removeSound">
             <English>AED-X Vitals Monitor Audio OFF</English>
@@ -1138,6 +1216,7 @@
             <Russian>Уменьшите громкость AED X</Russian>
             <Japanese>AED-Xモニター音声オン</Japanese>
             <Portuguese>Abaixar o volume do DEA-X</Portuguese>
+            <Finnish>AUD-X-terveysmonitorin ääni pois päältä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_addSound">
             <English>AED-X Vitals Monitor Audio ON</English>
@@ -1154,6 +1233,7 @@
             <Russian>Увеличьте громкость AED X</Russian>
             <Japanese>AED-Xモニター音声オフ</Japanese>
             <Portuguese>Aumentar o volume do DEA-X</Portuguese>
+            <Finnish>AUD-X-terveysmonitorin ääni päällä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_bloodbank">
             <English>[KAM] Medical Blood bank</English>
@@ -1170,6 +1250,7 @@
             <Russian>[KAM] Банк медицинской крови</Russian>
             <Japanese>[KAM] 医療用血液バンク</Japanese>
             <Portuguese>[KAM] Banco de Sangue Médico</Portuguese>
+            <Finnish>[KAM] Lääketieteellinen veripankki</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_open_crosspanel">
             <English>Open blood groups cheat sheet</English>
@@ -1186,6 +1267,7 @@
             <Russian>Открытая шпаргалка по группам крови</Russian>
             <Japanese>血液型適合確認シートを開く</Japanese>
             <Portuguese>Abrir tabela de compatibilidade sanguínea</Portuguese>
+            <Finnish>Avaa veriryhmäopas</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_place_AED">
             <English>Place AED</English>
@@ -1202,6 +1284,7 @@
             <Italian>Posizionare DAE</Italian>
             <Japanese>AEDを設置</Japanese>
             <Portuguese>Colocar DEA</Portuguese>
+            <Finnish>Aseta AUD</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_place_AEDX">
             <English>Place AED-X</English>
@@ -1211,6 +1294,7 @@
             <German>Platzieren AED-X</German>
             <Portuguese>Colocar DEA-X</Portuguese>
             <Spanish>Colocar DEA-X</Spanish>
+            <Finnish>Aseta AUD-X</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_PickUpAED">
             <English>Pick Up AED</English>
@@ -1227,6 +1311,7 @@
             <Italian>Raccogliere DAE</Italian>
             <Japanese>AEDを拾う</Japanese>
             <Portuguese>Recolher DEA</Portuguese>
+            <Finnish>Hae AUD</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_PickUpAEDX">
             <English>Pick Up AED-X</English>
@@ -1236,6 +1321,7 @@
             <German>Nehme AED-X auf</German>
             <Portuguese>Recolher DEA-X</Portuguese>
             <Spanish>Recoger DEA-X</Spanish>
+            <Finnish>Hae AUD-X</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ToggleVolume">
             <English>Toggle Volume</English>
@@ -1245,6 +1331,7 @@
             <German>Lautstärke umschalten</German>
             <Portuguese>Alternar volume</Portuguese>
             <Spanish>Cambiar volumen</Spanish>
+            <Finnish>Vaihda äänenvoimakkuutta</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_MeasureBloodPressure">
             <English>Measure Blood Pressure</English>
@@ -1254,6 +1341,7 @@
             <German>Blutdruck messen</German>
             <Portuguese>Medir pressão arterial</Portuguese>
             <Spanish>Medir la presión arterial</Spanish>
+            <Finnish>Mittaa verenpaine</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CheckPads">
             <English>Check Pads</English>
@@ -1263,6 +1351,7 @@
             <German>Überprüfe Pads</German>
             <Portuguese>Verificar pás</Portuguese>
             <Spanish>Comprobar electrodos</Spanish>
+            <Finnish>Tarkista tyynyt</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SHOCKADVISED">
             <English>SHOCK ADVISED</English>
@@ -1272,6 +1361,7 @@
             <German>SCHOCK EMPFOHLEN</German>
             <Portuguese>CHOQUE ACONSELHADO</Portuguese>
             <Spanish>DESCARGA RECOMENDADA</Spanish>
+            <Finnish>SOKI SUOSITELLAAN</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_NOSHOCKADVISED">
             <English>NO SHOCK ADVISED</English>
@@ -1281,6 +1371,7 @@
             <German>KEIN SCHOCK EMPFOHLEN</German>
             <Portuguese>CHOQUE NÃO ACONSELHADO</Portuguese>
             <Spanish>DESCARGA NO RECOMENDADA</Spanish>
+            <Finnish>EI SUOSITTELUA SHOCKIA</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ANALYZINGEKG">
             <English>ANALYZING ECG</English>
@@ -1290,6 +1381,7 @@
             <German>EKG-ANALYSE</German>
             <Portuguese>ANALISANDO ECG</Portuguese>
             <Spanish>ANALIZANDO ECG</Spanish>
+            <Finnish>EKG:N ANALYSOINTI</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGED">
             <English>CHARGED</English>
@@ -1299,6 +1391,7 @@
             <German>CHARGED</German>
             <Portuguese>CARREGADO</Portuguese>
             <Spanish>CARGADO</Spanish>
+            <Finnish>LAADUT</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGING">
             <English>CHARGING</English>
@@ -1308,6 +1401,7 @@
             <German>LADE</German>
             <Portuguese>CARREGANDO</Portuguese>
             <Spanish>CARGANDO</Spanish>
+            <Finnish>LATAUS</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_AED_DISARMED">
             <English>AED DISARMED</English>
@@ -1317,6 +1411,7 @@
             <German>AED DEAKTIVIERT</German>
             <Portuguese>AED DESARMADO</Portuguese>
             <Spanish>DEA DESARMADO</Spanish>
+            <Finnish>AED POIS KÄYTÖSTÄ</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DISARMED">
             <English>DISARMED</English>
@@ -1326,6 +1421,7 @@
             <German>DEAKTIVIERT</German>
             <Portuguese>DESARMADO</Portuguese>
             <Spanish>DESARMADO</Spanish>
+            <Finnish>POIS KÄYTÖSTÄ</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DeliveredEnergy">
             <English>Delivered Energy</English>
@@ -1335,16 +1431,21 @@
             <German>Gelieferte Energie</German>
             <Portuguese>Choque realizado</Portuguese>
             <Spanish>Energía suministrada</Spanish>
+            <Finnish>Toimitettu shokki</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_Defibrillator">
             <English>Defibrillator</English>
+            <Spanish>Desfibrilador</Spanish>
             <Japanese>除細動器</Japanese>
             <French>Défibrillateur</French>
+            <Finnish>Defibrillaattori</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SelectedEnergy">
             <English>Selected Energy</English>
+            <Spanish>Energía seleccionada</Spanish>
             <Japanese>選択済のｴﾈﾙｷﾞｰ</Japanese>
             <French>Energie sélectionnée</French>
+            <Finnish>Valittu energia</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
@@ -1354,6 +1455,7 @@
             <German>GELIEFERTE ENERGIE</German>
             <Portuguese>CHOQUE REALIZADO</Portuguese>
             <Spanish>ENERGÍA SUMINISTRADA</Spanish>
+            <Finnish>ISKU TOIMITETTU</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_StandClear">
             <English>Stand Clear</English>
@@ -1363,6 +1465,7 @@
             <German>Abstand halten</German>
             <Portuguese>Afaste-se do paciente</Portuguese>
             <Spanish>Mantenerse alejado</Spanish>
+            <Finnish>Väistyä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PerformCPR">
             <English>Perform CPR</English>
@@ -1372,6 +1475,7 @@
             <German>Führen Sie eine HLW durch</German>
             <Portuguese>Realize RCP</Portuguese>
             <Spanish>Realizar RCP</Spanish>
+            <Finnish>Suorita elvytys</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PUSHSHOCK">
             <English>PUSH SHOCK</English>
@@ -1381,6 +1485,7 @@
             <German>DRÜCKE SCHOCK</German>
             <Portuguese>REALIZAR CHOQUE</Portuguese>
             <Spanish>PULSAR DESCARGA</Spanish>
+            <Finnish>PAINA SHOKKI</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PushAnalyze">
             <English>Push Analyze</English>
@@ -1390,6 +1495,7 @@
             <German>Drücke Analysieren</German>
             <Portuguese>Realizar análise</Portuguese>
             <Spanish>Pulsar Analizar</Spanish>
+            <Finnish>Paina analysoida</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_HR">
             <English>HR</English>
@@ -1399,6 +1505,7 @@
             <German>HR</German>
             <Portuguese>FC</Portuguese>
             <Spanish>RC</Spanish>
+            <Finnish>HR</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PR">
             <English>PR</English>
@@ -1408,6 +1515,7 @@
             <German>PR</German>
             <Portuguese>FP</Portuguese>
             <Spanish>PS</Spanish>
+            <Finnish>PR</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -1424,6 +1532,7 @@
             <Russian>Шпаргалка по группам крови</Russian>
             <Japanese>血液型適合確認シート</Japanese>
             <Portuguese>Tabela de compatibilidade sanguínea</Portuguese>
+            <Finnish>Veriryhmien opas</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_desc_crosspanel">
             <English>A wrong combination of donor and recipient blood can even have deadly consequences.</English>
@@ -1440,6 +1549,7 @@
             <Russian>Неправильное сочетание донорской и реципиентной крови может иметь смертельные последствия.</Russian>
             <Japanese>ドナーと患者の血液の間違った組み合わせは、致命的な結果をもたらす可能性さえあります。</Japanese>
             <Portuguese>Uma combinação errada de sangue de doador e receptor pode trazer consequências fatais</Portuguese>
+            <Finnish>Luovutetun veren ja vastaanottajan veren väärällä yhdistelmällä voi olla tappavia seurauksia.</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign">
             <English>Blood Type Assignment</English>
@@ -1452,6 +1562,7 @@
             <Czech>Přirazení Krevní Skupiny</Czech>
             <Italian>Assegnazione del gruppo sanguigno</Italian>
             <Portuguese>Atribuição de tipo sanguíneo</Portuguese>
+            <Finnish>Veriryhmämääritys</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_DESC">
             <English>Sets how players' blood type is assigned: \nPlayer chosen: Player chooses their own blood type \nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning \nRandom: Blood type is random each respawn \nRandom (on join): Blood type is random, but doesn't change upon respawning \nSteamID: Blood type is decided based on player's steamID \nSteamID (custom list): Blood type is decided based on player's steamID and custom list</English>
@@ -1464,6 +1575,7 @@
             <Czech>Nastavuje, jak se hráčům přiřadí Krevní Skupina:n\Vybráno hráčem: Hráč si sám zvolí svou Krevní Skupinu \nVybráno hráčem (vynuceno): Hráč si sám zvolí svou krevní skupinu, která se při respawnutí nemění \nNáhodně: Krevní Skupina se přiřadí náhodně při každém respawnu \nNáhodně (při připojení): Krevní Skupina se přiřadí náhodně, ale nemění se při respawnu \nSteamID: Krevní Skupina se přiřadí na základě hráčovo SteamID \nSteamID (vlastní seznam): Krevní Skupina se přiřadí na základě hráčovo SteamID a vlastního seznamu</Czech>
             <Italian>Imposta la modalità di assegnazione del gruppo sanguigno dei giocatori: \nGiocatore scelto: il giocatore sceglie il proprio gruppo sanguigno \nGiocatore scelto (obbligato): il giocatore sceglie il proprio gruppo sanguigno, ma non cambia al momento del respawn \nCasuale: il gruppo sanguigno è casuale a ogni respawn \nCasuale (all'accesso): il gruppo sanguigno è casuale, ma non cambia al momento del respawn \nSteamID: il gruppo sanguigno viene deciso in base allo SteamID del giocatore \nSteamID (elenco personalizzato): il gruppo sanguigno viene deciso in base allo SteamID del giocatore e all'elenco personalizzato</Italian>
             <Portuguese>Define como o tipo sanguíneo dos jogadores é atribuído: \nEscolha do jogador: o jogador escolhe seu próprio tipo sanguíneo \nEscolha do jogador (forçado): o jogador escolhe seu próprio tipo sanguíneo, mas ele não muda ao renascer \nAleatório: o tipo sanguíneo é aleatório a cada renascimento \nAleatório (ao entrar): O tipo sanguíneo é aleatório, mas não muda ao renascer \nSteamID: O tipo sanguíneo é decidido com base no steamID do jogador \nSteamID (lista personalizada): O tipo sanguíneo é decidido com base no steamID do jogador e na lista personalizada</Portuguese>
+            <Finnish>Asettaa kuinka pelaajan veriryhmä määritetään: \nPelaaja valittu: Pelaaja valitsee oman veriryhmänsä \nPelaaja valittu (pakotettu): Pelaaja valitsee oman veriryhmänsä, mutta se ei muutu uudelleensyntyessä. \nSatunnainen: Veriryhmä on satunnainen jokaisen uudelleensyntymisen yhteydessä. \nSatunnainen (pelaajan liittyessä peliin): Veriryhmä on satunnainen, mutta ei muutu uudelleensyntyessä. \nSteamID: Veriryhmä päätetään pelaajan SteamID:n perusteella. \nSteamID (mukautettu lista): Veriryhmä päätetään pelaajan SteamID:n ja mukautetun listan perusteella.</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player">
             <English>Player chosen</English>
@@ -1476,6 +1588,7 @@
             <Czech>Vybráno hráčem</Czech>
             <Italian>Giocatore scelto</Italian>
             <Portuguese>Escolha do jogador</Portuguese>
+            <Finnish>Pelaaja valittu</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player_forced">
             <English>Player chosen (forced)</English>
@@ -1488,6 +1601,7 @@
             <Czech>Vybráno hráčem (vynuceno)</Czech>
             <Italian>Giocatore scelto (obbligato)</Italian>
             <Portuguese>Escolha do jogador (forçado)</Portuguese>
+            <Finnish>Valittu pelaaja (pakotettu)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random">
             <English>Random</English>
@@ -1500,6 +1614,7 @@
             <Czech>Náhodně</Czech>
             <Italian>Casuale</Italian>
             <Portuguese>Aleatório</Portuguese>
+            <Finnish>Satunnainen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random_onJoin">
             <English>Random (on join)</English>
@@ -1512,6 +1627,7 @@
             <Czech>Náhodně (při připojení)</Czech>
             <Italian>Casuale (all'accesso)</Italian>
             <Portuguese>Aleatório (ao entrar)</Portuguese>
+            <Finnish>Satunnainen (liittyessä)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid">
             <English>SteamID</English>
@@ -1524,6 +1640,7 @@
             <Czech>SteamID</Czech>
             <Italian>SteamID</Italian>
             <Portuguese>SteamID</Portuguese>
+            <Finnish>SteamID</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid_custom">
             <English>SteamID (custom list)</English>
@@ -1536,6 +1653,7 @@
             <Czech>SteamID (vlastní seznam)</Czech>
             <Italian>SteamID (elenco personalizzato)</Italian>
             <Portuguese>SteamID (lista personalizada)</Portuguese>
+            <Finnish>SteamID (muokattu luettelo)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted">
             <English>Weighted Randomizer</English>
@@ -1548,6 +1666,7 @@
             <Czech>Vážený Randomizér</Czech>
             <Italian>Randomizzatore ponderato</Italian>
             <Portuguese>Aleatoriedade ponderada</Portuguese>
+            <Finnish>Painotettu satunnaistin</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted_DESC">
             <English>Sets if random blood type given will be weighted according to blood type commonness</English>
@@ -1560,6 +1679,7 @@
             <Czech>Nastavuje, zda náhodně přiřazená krevní skupina bude vážena podle běžnosti krevních skupiny</Czech>
             <Italian>Imposta se il gruppo sanguigno casuale dato sarà ponderato in base alla comunanza del gruppo sanguigno</Italian>
             <Portuguese>Define se o tipo sanguíneo dado aleatoriamente será ponderado de acordo com as estatísticas reais</Portuguese>
+            <Finnish>Asettaa, painotetaanko satunnaiset veriryhmät palvelimen yleisen veriryhmän mukaan.</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player">
             <English>Blood group</English>
@@ -1576,6 +1696,7 @@
             <Russian>Группа крови</Russian>
             <Japanese>血液型</Japanese>
             <Portuguese>Tipo sanguíneo</Portuguese>
+            <Finnish>Veriryhmä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list">
             <English>Blood Type Custom List</English>
@@ -1588,6 +1709,7 @@
             <Czech>Vlastní Seznam Krevních Skupin</Czech>
             <Italian>Elenco personalizzato dei gruppi sanguigni</Italian>
             <Portuguese>Lista personalizada de tipo sanguíneo</Portuguese>
+            <Finnish>Mukautettu luettelo verityypeistä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list_DESC">
             <English>Sets blood types that will be assigned to players based on their SteamID \nBlood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
@@ -1600,6 +1722,11 @@
             <Czech>Nastavuje krevní skupiny které budou přiřazeny hráčům podle jejich SteamID \nKrevní Skupiny jsou oddělené čárkou (","), seznam by měl obsahovat celkem 10 Krevních Skupin</Czech>
             <Italian>Imposta i gruppi sanguigni che verranno assegnati ai giocatori in base al loro SteamID \nI gruppi sanguigni sono separati da una virgola (","), l'elenco deve contenere un totale di 10 gruppi sanguigni</Italian>
             <Portuguese>Define os tipos sanguíneos que serão atribuídos aos jogadores com base no seu SteamID \nOs tipos sanguíneos são separados por vírgulas (","), a lista deve conter um total de 10 tipos sanguíneos</Portuguese>
+            <Finnish>Asettaa veriryhmät, jotka määritetään pelaajille heidän SteamID:n perusteella. \nVerityypit erotetaan toisistaan merkillä (","). Listalla tulee olla yhteensä 10 veriryhmää.</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_bloodtype_log">
+            <English>%1 checked dogtags blood group: %2</English>
+            <Japanese>%1 が認識票の血液型を確認: %2</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -1616,6 +1743,7 @@
             <Italian>Posizione del DAE</Italian>
             <Japanese>AEDが使用できる場所</Japanese>
             <Portuguese>Posição do DAE</Portuguese>
+            <Finnish>AUD:n sijainti</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED_DESCRIPTION">
             <English>Where can the AED be used?</English>
@@ -1632,6 +1760,7 @@
             <Italian>Dove può essere utilizzato il DAE</Italian>
             <Japanese>AEDが使える場所を設定します</Japanese>
             <Portuguese>Onde o DEA pode ser usado?</Portuguese>
+            <Finnish>Missä AUD-laitetta voidaan käyttää?</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED">
             <English>AED</English>
@@ -1641,6 +1770,7 @@
             <German>AED</German>
             <Portuguese>DEA</Portuguese>
             <Spanish>DEA</Spanish>
+            <Finnish>AUD</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X">
             <English>AED-X</English>
@@ -1650,6 +1780,7 @@
             <German>AED-X</German>
             <Portuguese>DEA-X</Portuguese>
             <Spanish>DEA-X</Spanish>
+            <Finnish>AUD-X</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_DISPLAYNAME">
             <English>Automated External Defibrillator</English>
@@ -1666,6 +1797,7 @@
             <Russian>Автоматический внешний дефибриллятор (AED)</Russian>
             <Japanese>AED (自動体外式除細動器)</Japanese>
             <Portuguese>Desfibrilador Externo Automático</Portuguese>
+            <Finnish>Automaattinen ulkoinen defibrillaattori</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_DESCRIPTION">
             <English>Used to resuscitate patients</English>
@@ -1682,6 +1814,7 @@
             <Russian>Используйте, чтобы реанимировать игрока</Russian>
             <Japanese>人を蘇生させるために使用される</Japanese>
             <Portuguese>Use para ressuscitar jogadores</Portuguese>
+            <Finnish>Käytetään potilaiden elvyttämiseen.</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_Shock">
             <English>%1 administered shock (%2)</English>
@@ -1691,6 +1824,7 @@
             <German>%1 verabreichte Schock (%2)</German>
             <Portuguese>%1 aplicou choque (%2)</Portuguese>
             <Spanish>%1 administró una descarga (%2)</Spanish>
+            <Finnish>%1 annettu sokki (%2)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
@@ -1700,6 +1834,7 @@
             <German>%1 hat Defibrillator-Pads befestigt (%2)</German>
             <Portuguese>%1 conectou as pás do desfibrilador (%2)</Portuguese>
             <Spanish>%1 colocó los electrodos del desfibrilador (%2)</Spanish>
+            <Finnish>%1 kiinnitetyt defibrillaattorityynyt (%2)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_RemovePads">
             <English>%1 removed defibrillator pads</English>
@@ -1709,6 +1844,7 @@
             <German>%1 hat Defibrillator-Pads entfernt</German>
             <Portuguese>%1 removeu as pás do desfibrilador</Portuguese>
             <Spanish>%1 quitó los electrodos del desfibrilador</Spanish>
+            <Finnish>%1 poistettu defibrillaattorityynyt</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_ConnectVitalsMonitor">
             <English>%1 connected vitals monitor</English>
@@ -1718,6 +1854,7 @@
             <German>%1 hat Vitalmonitor angeschlossen</German>
             <Portuguese>%1 conectou o monitor de sinais vitais</Portuguese>
             <Spanish>%1 conectó el monitor</Spanish>
+            <Finnish>%1 kytketty terveysmonitori</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_DisconnectVitalsMonitor">
             <English>%1 disconnected vitals monitor</English>
@@ -1727,6 +1864,7 @@
             <German>%1 hat Vitalmonitor entfernt</German>
             <Portuguese>%1 desconectou o monitor de sinais vitais</Portuguese>
             <Spanish>%1 desconectó el monitor</Spanish>
+            <Finnish>%1 irrotettu terveysmonitori</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_PatientDisconnected">
             <English>Patient Disconnected</English>
@@ -1736,6 +1874,7 @@
             <German>Patient getrennt</German>
             <Portuguese>Paciente desconectado</Portuguese>
             <Spanish>Paciente desconectado</Spanish>
+            <Finnish>Potilas on katkaistu</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MaxChance">
             <English>Max Success chance for AED-X</English>
@@ -1748,6 +1887,7 @@
             <Spanish>Probabilidad máxima de éxito para el DEA-X</Spanish>
             <Polish>Maksymalna szansa na sukces dla AED-X</Polish>
             <Portuguese>Probabilidade máxima de sucesso do DEA-X</Portuguese>
+            <Finnish>Suurin mahdollisuus menestyä AUD-X:lle</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_MaxChance">
             <English>Max Success chance for AED</English>
@@ -1760,6 +1900,7 @@
             <Spanish>Probabilidad máxima de éxito para el DEA</Spanish>
             <Polish>Maksymalna szansa na sukces dla AED</Polish>
             <Portuguese>Probabilidade máxima de sucesso do DEA</Portuguese>
+            <Finnish>Suurin mahdollisuus menestyä AUD:lle</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MinChance">
             <English>Min Success chance for AED-X</English>
@@ -1772,6 +1913,7 @@
             <Spanish>Probabilidad mínima de éxito para el DEA-X</Spanish>
             <Polish>Minimalna szansa na sukces dla AED-X</Polish>
             <Portuguese>Probabilidade mínima de sucesso do DEA-X</Portuguese>
+            <Finnish>Minimi mahdollisuus onnistua AUD-X:lle</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_MinChance">
             <English>Min Success chance for AED</English>
@@ -1784,6 +1926,7 @@
             <Spanish>Probabilidad mínima de éxito para el DEA</Spanish>
             <Polish>Minimalna szansa na sukces dla AED</Polish>
             <Portuguese>Probabilidade mínima de sucesso do DEA</Portuguese>
+            <Finnish>AUD:n onnistumisen minimimahdollisuus</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_ALLOW_AED">
             <English>Allow AED</English>
@@ -1800,6 +1943,7 @@
             <Italian>Permetti il DAE</Italian>
             <Japanese>AEDの許可</Japanese>
             <Portuguese>Permitir DEA</Portuguese>
+            <Finnish>Salli AUD</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED">
             <English>Training level required to use an AED</English>
@@ -1816,6 +1960,7 @@
             <Italian>Livello d'addestramento richiesto per usare il DAE</Italian>
             <Japanese>AEDの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um DEA</Portuguese>
+            <Finnish>AUD:n käyttämiseen vaadittava koulutustaso</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_ALLOW_AED_X">
             <English>Allow AED-X</English>
@@ -1832,6 +1977,7 @@
             <Italian>Permetti il DAE-X</Italian>
             <Japanese>AED-Xの許可</Japanese>
             <Portuguese>Permitir DEA-X</Portuguese>
+            <Finnish>Salli AUD-X</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
@@ -1848,24 +1994,21 @@
             <Italian>Livello d'addestramento richiesto per usare il DAE-X</Italian>
             <Japanese>AED-Xの使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Portuguese>Nível de treinamento necessário para usar um DEA-X</Portuguese>
+            <Finnish>AUD-X:n käyttämiseen vaadittava koulutustaso</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction">
             <English>Allow AED/X Station Interaction</English>
-            <Japanese>設置AED/Xの利用許可</Japanese>
+            <Japanese>設置AED/Xへのｲﾝﾀﾗｸｼｮﾝの許可</Japanese>
             <French>Autoriser l'interaction avec la station AED-X</French>
             <Korean>심장충격기 종류 바닥 설치 상호작용 허용</Korean>
             <German>AED/X-Station-Interaktion zulassen</German>
             <Portuguese>Permitir interação com a estação DEA-X</Portuguese>
             <Spanish>Permitir la interacción con la estación de DEA/X</Spanish>
+            <Finnish>Salli AUD-X-vuorovaikutus aseman kanssa</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
-            <English>Medical level required to pick up/interact with placed AED/X station</English>
-            <Japanese>設置AED/Xの取得/利用に必要な医療スキルのレベルを設定します。</Japanese>
-            <French>Niveau médical requis pour récupérer/interagir avec la station AED-X placée</French>
-            <Korean>심장충격기 종류를 바닥에 설치하거나 줍는 상호작용을 하는 데 필요한 의료레벨 수준</Korean>
-            <German>Benötigter medizinischer Grad, zum Aufnehmen/Interagieren mit der platzierten AED/X-Station</German>
-            <Portuguese>Nível médico necessário para pegar/interagir com a estação DEA-X colocada</Portuguese>
-            <Spanish>Nivel médico requerido para recoger/interactuar con una estación de DEA/X colocada</Spanish>
+            <English>Medical level required to pick up placed AED/X station</English>
+            <Japanese>設置されたAED/Xを拾うのに必要な医療スキルのレベルを設定します。</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
@@ -1875,6 +2018,7 @@
             <German>Zeit zum Anbringen des AED-X Vitalmonitors</German>
             <Portuguese>Tempo para conectar o monitor de sinais vitais do DEA-X</Portuguese>
             <Spanish>Tiempo para colocar el monitor DEA-X</Spanish>
+            <Finnish>Kuinka kauan AUD-X-terveysmonitorin kiinnittäminen kestää</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime">
             <English>Detach AED-X Vitals Monitor Time</English>
@@ -1884,6 +2028,7 @@
             <German>Zeit zum Entfernen des AED-X Vitalmonitors</German>
             <Portuguese>Tempo para desconectar o monitor de sinais vitais do DEA-X</Portuguese>
             <Spanish>Tiempo para retirar el monitor AED-X</Spanish>
+            <Finnish>Kuinka kauan AUD-X-terveysmonitorin irrottaminen kestää</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime">
             <English>Attach Defibrillator Pads Time</English>
@@ -1893,6 +2038,7 @@
             <German>Zeit zum Anbringen der Defibrillator Pads</German>
             <Portuguese>Tempo para conectar as pás do desfibrilador</Portuguese>
             <Spanish>Tiempo para colocar los electrodos del desfibrilador</Spanish>
+            <Finnish>Kuinka kauan defibrillaattorityynyjen kiinnittäminen kestää</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime">
             <English>Detach Defibrillator Pads Time</English>
@@ -1902,6 +2048,7 @@
             <German>Zeit zum Entfernen der Defibrillator Pads</German>
             <Portuguese>Tempo para desconectar as pás do desfibrilador</Portuguese>
             <Spanish>Tiempo para quitar los electrodos del desfibrilador</Spanish>
+            <Finnish>Kuinka kauan defibrillaattorityynyjen irrottaminen kestää</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit">
             <English>Distance limit for defibrillators in meters</English>
@@ -1911,6 +2058,7 @@
             <German>Distanzbegrenzung für Defibrillatoren in Metern</German>
             <Portuguese>Limite de distância para desfibriladores em metros</Portuguese>
             <Spanish>Límite de distancia para los desfibriladores en metros</Spanish>
+            <Finnish>Defibrillaattorien etäisyysraja metreinä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -1927,6 +2075,7 @@
             <Russian>Включить разные шансы СЛР для каждого медицинского уровня</Russian>
             <Japanese>スキルレベル毎にCPR成功率を変更</Japanese>
             <Portuguese>Habilite diferentes chances de RCP por nível médico</Portuguese>
+            <Finnish>Salli erilaiset onnistumismahdollisuudet elvytyksen suorittamiseen lääketieteellisen koulutustason perusteella</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Doctor">
             <English>Max CPR Chance for Doctors</English>
@@ -1940,6 +2089,7 @@
             <Japanese>医師の最高CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa max. de RCP para doctores</Spanish>
             <Portuguese>Probabilidade máxima de êxito de RCP para doutores</Portuguese>
+            <Finnish>Suurin CPR onnistumisen mahdollisuus lääkäreille</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
@@ -1953,6 +2103,7 @@
             <Japanese>衛生兵の最高CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa max. de RCP para médicos</Spanish>
             <Portuguese>Probabilidade máxima de êxito de RCP para médicos</Portuguese>
+            <Finnish> Suurin mahdollisuus menestyä elvytystä suorittaville taistelulääkäreille</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -1966,6 +2117,7 @@
             <Japanese>一般兵の最高CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa max. de RCP para el resto</Spanish>
             <Portuguese>Probabilidade máxima de êxito de RCP para não-médicos</Portuguese>
+            <Finnish>Suurin mahdollisuus menestyä oletussotilailla, jotka suorittavat elvytystoimia</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Doctor">
             <English>Min CPR Chance for Doctors</English>
@@ -1979,6 +2131,7 @@
             <Japanese>医師の最低CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa min. de RCP para doctores</Spanish>
             <Portuguese>Probabilidade mínima de êxito de RCP para doutores</Portuguese>
+            <Finnish>Pienin mahdollisuus menestyä elvytyksen suorittamisessa lääkärinä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
@@ -1992,6 +2145,7 @@
             <Japanese>衛生兵の最低CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa min. de RCP para médicos</Spanish>
             <Portuguese>Probabilidade mínima de êxito de RCP para médicos</Portuguese>
+            <Finnish>Pienin mahdollisuus menestyä elvytystyössä taistelulääkärinä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Default">
             <English>Min CPR Chance for Default</English>
@@ -2005,6 +2159,7 @@
             <Japanese>一般兵の最低CPR成功率</Japanese>
             <Spanish>Probabilidad exitosa min. de RCP para el resto</Spanish>
             <Portuguese>Probabilidade mínima de êxito de RCP para não-médicos</Portuguese>
+            <Finnish>Pienin mahdollisuus menestyä elvytystoiminnassa oletussotilaana</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval">
             <English>CPR Chance Interval</English>
@@ -2014,6 +2169,7 @@
             <German>HLW-Chance-Intervall</German>
             <Portuguese>Intervalo de chance de RCP</Portuguese>
             <Spanish>Intervalo de probabilidad de RCP</Spanish>
+            <Finnish>Elvytyksen onnistumislaskelmien välinen aika</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod">
             <English>Oxygenation Period</English>
@@ -2023,6 +2179,7 @@
             <German>Sauerstoffanreicherungszeitraum</German>
             <Portuguese>Período de oxigenação</Portuguese>
             <Spanish>Período de oxigenación</Spanish>
+            <Finnish>Happisaturaatiojakso</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_CPR">
             <English>%1 performed CPR (%2)</English>
@@ -2032,6 +2189,7 @@
             <German>%1 hat HLW durchgeführt (%2)</German>
             <Portuguese>%1 realizou RCP (%2)</Portuguese>
             <Spanish>%1 realizó RCP (%2)</Spanish>
+            <Finnish>%1 suoritettu elyytys (%2)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_StopCPR">
             <English>Stop CPR</English>
@@ -2041,11 +2199,13 @@
             <German>HLW Stoppen</German>
             <Portuguese>Interromper RCP</Portuguese>
             <Spanish>RCP parado</Spanish>
+            <Finnish>Lopeta elvytys</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_StartCPR">
             <English>CPR Started</English>
             <Japanese>CPRを開始した</Japanese>
             <French>RCP débuté</French>
+            <Finnish>Elvytys alkoi</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
@@ -2055,6 +2215,7 @@
             <German>HLW Gestoppt</German>
             <Portuguese>RCP cancelada</Portuguese>
             <Spanish>RCP cancelado</Spanish>
+            <Finnish>Elvytys peruttu</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -2071,6 +2232,7 @@
             <Russian>Полевой набор для переливания крови (500 мл)</Russian>
             <Japanese>前線輸血キット (500ml)</Japanese>
             <Portuguese>Kit de Transfusão de Sangue de Campo (500ml)</Portuguese>
+            <Finnish>Kenttäverensiirtolaitteet (500ml)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_FieldBloodTK250_Display">
             <English>Field Blood Transfusion Kit (250ml)</English>
@@ -2087,6 +2249,7 @@
             <Russian>Полевой набор для переливания крови (250 мл)</Russian>
             <Japanese>前線輸血キット (250ml)</Japanese>
             <Portuguese>Kit de Transfusão de Sangue de Campo (250ml)</Portuguese>
+            <Finnish>Kenttäverensiirtolaitteet (250ml)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_FieldBloodTK_Desc">
             <English>Allows you to draw blood and use it</English>
@@ -2103,6 +2266,7 @@
             <Russian>Позволяет брать кровь и использовать ее</Russian>
             <Japanese>採血して使用することができます</Japanese>
             <Portuguese>Permite extrair sangue e usá-lo</Portuguese>
+            <Finnish>Voit ottaa verta ja käyttää sitä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood500_Action_Use">
             <English>Draw Blood (500ml)</English>
@@ -2119,6 +2283,7 @@
             <Russian>Взять кровь (500 мл)</Russian>
             <Japanese>採血する (500ml)</Japanese>
             <Portuguese>Extrair sangue (500ml)</Portuguese>
+            <Finnish>Ottaa verta (500ml)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood250_Action_Use">
             <English>Draw Blood (250ml)</English>
@@ -2135,6 +2300,7 @@
             <Russian>Взять кровь (250 мл)</Russian>
             <Japanese>採血する (250ml)</Japanese>
             <Portuguese>Extrair sangue (250ml)</Portuguese>
+            <Finnish>Ottaa verta (250ml)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>
@@ -2151,6 +2317,7 @@
             <Russian>Рисование крови</Russian>
             <Japanese>採血中</Japanese>
             <Portuguese>Extraindo sangue</Portuguese>
+            <Finnish>Veren vetäminen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DRAW_BLOODGROUPS">
             <English>Use Bloodgroups for drawing blood?</English>
@@ -2167,6 +2334,7 @@
             <Japanese>採血に血液型を使用しますか?</Japanese>
             <Russian>Использовать группы крови для забора крови?</Russian>
             <Portuguese>Usar tipos sanguíneos para extração de sangue?</Portuguese>
+            <Finnish>Käytätkö verityyppejä veren ottamiseen?</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_SELF_BLOOD_DRAW">
             <English>Enable self blood draw</English>
@@ -2183,6 +2351,7 @@
             <Russian>Включить самостоятельное взятие крови</Russian>
             <Japanese>自己採血を有効化</Japanese>
             <Portuguese>Habilitar auto-extração de sangue</Portuguese>
+            <Finnish>Salli veren ottaminen itsestäsi</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BLOOD_DRAWTIME_500ML">
             <English>Drawing time for 500ml Kit</English>
@@ -2199,6 +2368,7 @@
             <Russian>Время нанесения для набора 500 мл</Russian>
             <Japanese>500mlキットの採血時間</Japanese>
             <Portuguese>Tempo de extração para o kit de 500ml</Portuguese>
+            <Finnish>Aika, joka kuluu 500 ml:n verta ottamiseen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_BLOOD_DRAWTIME_250ML">
             <English>Drawing time for 250ml Kit</English>
@@ -2215,6 +2385,7 @@
             <Russian>Время нанесения для набора 250 мл</Russian>
             <Japanese>250mlキットの採血時間</Japanese>
             <Portuguese>Tempo de extração para o kit de 250ml</Portuguese>
+            <Finnish>Aika, joka kuluu 250 ml:n verta ottamiseen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_MINIMUM_SAFE_DRAW">
             <English>Minimum blood volume for donor (liters)</English>
@@ -2231,6 +2402,7 @@
             <Russian>Минимальный объем крови для донора (литры)</Russian>
             <Japanese>献血者の最低血液量(リットル)</Japanese>
             <Portuguese>Volume mínimo de sangue para o doador (litro)</Portuguese>
+            <Finnish>Vähimmäismäärä luovuttajilta otettavaa verta</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_MINIMUM_SAFE_DRAW_DESC">
             <English>Minimum volume of blood allowed to drain a donor to, to ignore this setting set to 0</English>
@@ -2247,6 +2419,7 @@
             <Russian>Минимальный объем крови, разрешенный для слива донора, чтобы игнорировать этот параметр, установленный на 0</Russian>
             <Japanese>採血出来る献血者の血液最低量。0に設定で無視します</Japanese>
             <Portuguese>O volume mínimo de sangue que um doador pode retirar. Para ignorar este parâmetro é definido como 0</Portuguese>
+            <Finnish>Vähimmäismäärä verta, jolle luovuttaja voidaan tyhjentää, aseta 0, jotta tämä asetus jätetään huomioimatta</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_Basic">
             <English>Basic Settings</English>
@@ -2260,6 +2433,7 @@
             <Japanese>基本設定</Japanese>
             <Spanish>Parámetros básicos</Spanish>
             <Portuguese>Configurações básicas</Portuguese>
+            <Finnish>Perusasetukset</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_AED">
             <English>AED + AED-X Settings</English>
@@ -2273,6 +2447,7 @@
             <Japanese>AEDとAED-X設定</Japanese>
             <Spanish>Parámetros del DEA/DEA-X</Spanish>
             <Portuguese>Configurações de DEA/DEA-X</Portuguese>
+            <Finnish>AUD + AUD-X asetukset</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_CPR">
             <English>CPR Settings</English>
@@ -2286,6 +2461,7 @@
             <Japanese>CPR設定</Japanese>
             <Spanish>Parámetros del RCP</Spanish>
             <Portuguese>Configurações de RCP</Portuguese>
+            <Finnish>Elvytys asetukset</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_AdvRhythms">
             <English>Advanced Rhythms</English>
@@ -2295,6 +2471,7 @@
             <German>Fortgeschrittene Rhythmen</German>
             <Portuguese>Ritmos avançados</Portuguese>
             <Spanish>Ritmos avanzados</Spanish>
+            <Finnish>Edistyneet sydämen rytmit</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate">
             <English>Can Deteriorate</English>
@@ -2304,6 +2481,7 @@
             <German>Kann sich verschlechtern</German>
             <Portuguese>Pode deteriorar</Portuguese>
             <Spanish>Puede deteriorarse</Spanish>
+            <Finnish>voivatko ne pahentua?</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeMax">
             <English>Random Deteriorate Time Maximum</English>
@@ -2313,6 +2491,7 @@
             <German>Maximale zufällige Verschlechterungszeit</German>
             <Portuguese>Tempo máximo de deterioração aleatória</Portuguese>
             <Spanish>Tiempo aleatorio maximo para deterioro</Spanish>
+            <Finnish>Satunnainen huononemisajan maksimiarvo</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeWeight">
             <English>Random Deteriorate Time Weight</English>
@@ -2322,6 +2501,7 @@
             <German>Zeitgewichtung der zufälligen Verschlechterung</German>
             <Portuguese>Peso de tempo de deterioração aleatória</Portuguese>
             <Spanish>Tiempo aleatorio para deterioro</Spanish>
+            <Finnish>Satunnainen huononemisajan paino</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateAfterTreatment">
             <English>Deteriorate After Treatment</English>
@@ -2331,6 +2511,7 @@
             <German>Verschlechterung nach der Behandlung</German>
             <Portuguese>Deteriorar após o tratamento</Portuguese>
             <Spanish>Deterioro tras tratamiento</Spanish>
+            <Finnish>Voiko se pahentua hoidon jälkeen?</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAChance">
             <English>PEA Chance</English>
@@ -2340,6 +2521,7 @@
             <German>Chance für Pulslose elektrische Aktivität (PEA)</German>
             <Portuguese>Chance de Atividade Elétrica Sem Pulso (AESP)</Portuguese>
             <Spanish>Probabilidad de AESP</Spanish>
+            <Finnish>Pulssittoman sähköisen toiminnan mahdollisuus</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
             <English>VT Chance</English>
@@ -2349,6 +2531,7 @@
             <German>Chance für eine ventrikuläre Tachykardie (VT)</German>
             <Portuguese>Chance de Taquicardia Ventricular (TV)</Portuguese>
             <Spanish>Probabilidad de TV</Spanish>
+            <Finnish>Kammiotakykardian mahdollisuus</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_asystoleBloodlossThreshold">
             <English>Asystole blood loss threshold</English>
@@ -2358,6 +2541,7 @@
             <German>Asystolie-Blutverlustschwelle</German>
             <Portuguese>Perda sanguínea que resulta em assistolia</Portuguese>
             <Spanish>Umbral de pérdida de sangre para la asistolia</Spanish>
+            <Finnish>Asystolan vuoksi menetettävä veren määrä</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_CPR_ROSC_Chance">
             <English>ROSC After CPR Chance</English>
@@ -2367,6 +2551,7 @@
             <German>Chance für ROSC nach HLW (Rückkehr des spontanen Kreislaufs)</German>
             <Portuguese>Chance de retorno da circulação espontânea após RCP</Portuguese>
             <Spanish>Probabilidad de RCE después desfibrilar con DEA-X</Spanish>
+            <Finnish>ROSC elvytysmahdollisuuden jälkeen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_AED_ROSC_Chance">
             <English>ROSC After AED Chance</English>
@@ -2376,6 +2561,7 @@
             <German>Chance für ROSC nach AED (Rückkehr des spontanen Kreislaufs)</German>
             <Portuguese>Chance de retorno da circulação espontânea após DEA</Portuguese>
             <Spanish>Probabilidad de RCE después desfibrilar con DEA</Spanish>
+            <Finnish>ROSC AUD-mahdollisuuden jälkeen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
@@ -2385,6 +2571,7 @@
             <German>Hardcore-Rhythmen</German>
             <Portuguese>Ritmos cardíacos do modo hardcore</Portuguese>
             <Spanish>Ritmos en modo avanzado</Spanish>
+            <Finnish>Vaikeat sydämen rytmit</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_hardcoreDeteriorationChance">
             <English>Hardcore Deterioration Chance</English>
@@ -2394,6 +2581,7 @@
             <German>Hardcore-Verschlechterungschance</German>
             <Portuguese>Chance de deterioração no modo hardcore</Portuguese>
             <Spanish>Probabilidad de deterioro en modo avanzado</Spanish>
+            <Finnish>Vaikean sydämen rytmin heikkenemismahdollisuus</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
@@ -2407,6 +2595,7 @@
             <Japanese>採血設定</Japanese>
             <Spanish>Parámetros de extracción de sangre</Spanish>
             <Portuguese>Configurações de extração de sangue</Portuguese>
+            <Finnish>Verenoton asetukset</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMInactive_StatusLog">
             <English>AED-X: HR: %1 BP: --/-- SpO2: ---</English>
@@ -2418,6 +2607,7 @@
             <Korean>X-시리즈 자동심장충격기: 심박수: %1 혈압: --/-- 산소포화도: ---</Korean>
             <German>AED-X: HR: %1 BP: --/-- SpO2: ---</German>
             <Portuguese>DEA-X: FC: %1 PA: --/-- SpO2: ---</Portuguese>
+            <Finnish>AUD-X: HR: %1 BP: --/-- SpO2: ---</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog">
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4</English>
@@ -2427,6 +2617,7 @@
             <German>AED-X: PI: %1 BP: %2/%3 SpO2: %4</German>
             <Portuguese>DEA-X: FP: %1 PA: %2/%3 SpO2: %4</Portuguese>
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4</Spanish>
+            <Finnish>AUD-X: PR: %1 BP: %2/%3 SpO2: %4</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>
@@ -2439,6 +2630,7 @@
             <German>AED-X: HR: %1 BP: %2/%3 SpO2: %4</German>
             <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4</Portuguese>
             <Czech>AED-X SF: %1 TK: %2%3 SpO2: %4</Czech>
+            <Finnish>AUD-X: HR: %1 BP: %2/%3 SpO2: %4</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
             <English>AED-X Vitals Monitor Sounds</English>
@@ -2448,6 +2640,7 @@
             <German>Töne des AED-X-Vitalmonitors</German>
             <Portuguese>Sons do monitor de sinais vitais do DEA-X</Portuguese>
             <Spanish>Sonidos del monitor DEA-X</Spanish>
+            <Finnish>AUD-X terveysmonitorin ääni</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Original">
             <English>Original</English>
@@ -2457,6 +2650,7 @@
             <German>Original</German>
             <Portuguese>Original</Portuguese>
             <Spanish>Original</Spanish>
+            <Finnish>Alkuperäinen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Default">
             <English>Default</English>
@@ -2466,6 +2660,7 @@
             <German>Standard</German>
             <Portuguese>Padrão</Portuguese>
             <Spanish>Por defecto</Spanish>
+            <Finnish>Oletus</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
@@ -2477,6 +2672,7 @@
             <Italian>Soglia di allarme della SpO2 del AED-X</Italian>
             <Spanish>Umbral de alarma de SpO2 del AED-X</Spanish>
             <Portuguese>Limiar de alarme de SpO2 do DEA-X</Portuguese>
+            <Finnish>SpO2-taso, joka laukaisee AUD-X-hälytyksen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval">
             <English>AED-X Vitals Monitor BP Measurement Interval</English>
@@ -2486,6 +2682,7 @@
             <German>AED-X Vitalmonitor BP-Messintervall</German>
             <Portuguese>Intervalo de medição da pressão arterial do monitor de sinais vitais do DEA-X</Portuguese>
             <Spanish>Intervalo de medición de la PS en el monitor DEA-X.</Spanish>
+            <Finnish>AUD-X terveysmonitorin verenpaineen mittausväli</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_AutomaticInstant">
             <English>Automatic Instant</English>
@@ -2495,6 +2692,7 @@
             <German>Automatisch sofort</German>
             <Portuguese>Automaticamente instantâneo</Portuguese>
             <Spanish>Automático Instantaneo</Spanish>
+            <Finnish>Automaattinen (välitön)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Automatic">
             <English>Automatic (Interval)</English>
@@ -2504,6 +2702,7 @@
             <German>Automatisch (Intervall)</German>
             <Portuguese>Automático (Intervalo)</Portuguese>
             <Spanish>Automático (Intervalo)</Spanish>
+            <Finnish>Automaattinen (väli)</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Manual">
             <English>Manual</English>
@@ -2513,6 +2712,7 @@
             <German>Manuell</German>
             <Portuguese>Manual</Portuguese>
             <Spanish>Manual</Spanish>
+            <Finnish>Manuaalinen</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time">
             <English>AED-X Vitals Monitor BP Measurement Interval Time</English>
@@ -2522,6 +2722,7 @@
             <German>AED-X Vitalmonitor BP-Messintervallzeit</German>
             <Portuguese>Tempo de intervalo de medição da pressão arterial do monitor de sinais vitais do DEA-X</Portuguese>
             <Spanish>Tiempo de medición de PS en el monitor DEA-X</Spanish>
+            <Finnish>AUD-X terveysmittarin verenpaineen mittausvälin aika</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_cardiacArrestBleedRate">
             <English>Cardiac Arrest Bleed Rate</English>
@@ -2531,6 +2732,7 @@
             <German>Blutungsrate bei Herzstillstand</German>
             <Portuguese>Taxa de sangramento após parada cardíaca</Portuguese>
             <Spanish>Tasa de sangrado en paro cardíaco</Spanish>
+            <Finnish>Verenvuoto sydämenpysähdyksen aikana</Finnish>
         </Key>
     </Package>
 </Project>

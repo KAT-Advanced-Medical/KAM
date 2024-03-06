@@ -43,7 +43,7 @@ PREP_RECOMPILE_END;
     "LIST",
     LLSTRING(SETTING_bloodtype_player),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], 7],
+    [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "0+", "0-"], 7],
     2,
     {
         profileNamespace setVariable [QGVAR(preferredBloodType), _this];
@@ -133,7 +133,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
-//Sets medical level required to pick up/use placed AED/X Station
+//Sets medical level required to pick up placed AED/X Station
 [
     QGVAR(medLvl_AED_Station_Interact),
     "LIST",
