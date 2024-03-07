@@ -255,12 +255,6 @@
 #define VAR_SPO2                       QEGVAR(breathing,airwayStatus)
 #define GET_SPO2(unit)                 (unit getVariable [VAR_SPO2, 100])
 
-#define VAR_ETCO2                      QEGVAR(breathing,etco2Level)
-#define GET_ETCO2(unit)                (unit getVariable [VAR_ETCO2, 40])
-
-#define VAR_BREATHRATE                 QEGVAR(breathing,breathRate)
-#define GET_BREATHRATE(unit)           (unit getVariable [VAR_BREATHRATE,15])
-
 // Circulation
 #define VAR_INTERNAL_BLEEDING          QEGVAR(circulation,internalBleeding)
 #define GET_INTERNAL_BLEEDING(unit)    (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
