@@ -83,7 +83,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
-            <German>Okklusionswiederholungstimer</German>
+            <German>Zeit zum Wiedereintritt einer Okklusion</German>
             <Korean>구토 반복 타이머</Korean>
             <Polish>Czas powtarzania zablokowania</Polish>
             <Japanese>異物再発までの時間</Japanese>
@@ -319,7 +319,7 @@
             <Norwegian>Luftvei er blokkert, behov for luftveishåndtering</Norwegian>
             <French>Voies aériennes obstruées, geste médical nécessaire</French>
             <Finnish>Hengitystiet ovat tukossa, hengityshoitoa tarvitaan</Finnish>
-            <German>Die Atemwege sind blockiert, Atemwegssicherung ist erforderlich</German>
+            <German>Atemwege sind blockiert, die Atemwege müssen freigelegt werden</German>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
@@ -1325,7 +1325,7 @@
             <Norwegian>Hvor lang tid det vil ta å manuelt kansellere stabilt sideleie</Norwegian>
             <French>Combien de temps sera nécessaire pour annuler la position latérale de sécurité</French>
             <Finnish>Kuinka kauan lepoasennon manuaalinen peruuttaminen kestää</Finnish>
-            <German>Wie lang die benötigte Zeit ist, die stabile Seitenlage manuell abzubrechen</German>
+            <German>Benötigte Zeit, um die stabile Seitenlage manuell abzubrechen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
