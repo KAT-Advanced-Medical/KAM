@@ -319,7 +319,7 @@
             <Norwegian>Luftvei er blokkert, behov for luftveishåndtering</Norwegian>
             <French>Voies aériennes obstruées, geste médical nécessaire</French>
             <Finnish>Hengitystiet ovat tukossa, hengityshoitoa tarvitaan</Finnish>
-            <German>Die Atemwege sind blockiert, eine Atemwegskontrolle ist erforderlich</German>
+            <German>Die Atemwege sind blockiert, Atemwegssicherung ist erforderlich</German>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
@@ -709,7 +709,7 @@
         <Key ID="STR_KAT_Airway_Suction_Log">
             <English>%1 did a medical suction using a %2</English>
             <Japanese>%1 は %2 で医療吸引を行った</Japanese>
-            <German>%1 hat eine medizinische Absaugung durchgeführt mit einer %2</German>
+            <German>%1 hat eine medizinische Absaugung mittels %2 durchgeführt</German>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
@@ -1326,8 +1326,6 @@
             <French>Combien de temps sera nécessaire pour annuler la position latérale de sécurité</French>
             <Finnish>Kuinka kauan lepoasennon manuaalinen peruuttaminen kestää</Finnish>
             <German>Wie lang die benötigte Zeit ist, die stabile Seitenlage manuell abzubrechen</German>
-
-            <German>Wie lange dauert es, die stabile Seitenlage manuell abzubrechen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
