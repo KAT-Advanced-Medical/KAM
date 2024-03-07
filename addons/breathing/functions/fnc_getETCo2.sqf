@@ -20,7 +20,7 @@
 
 if !(alive _patient) exitWith {0};
 
-_pr = _patient getVariable [QACEGVAR(medical,heartRate), 0];
+private _pr = GET_HEART_RATE(_patient);
 _bloodVolume = (_patient getVariable [QACEGVAR(medical,bloodVolume), 6.0]);
 _lostBlood = 6.0 - _bloodVolume; // amount of blood missing from the body
 
