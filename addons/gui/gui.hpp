@@ -46,7 +46,7 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             idc = IDC_BODY_HEAD_KINGLT;
             text = QPATHTOF(data\body_image\head_kinglt.paa);
         };
-        class Head_Nasal_Cannula: Head_GuedelTube { // TODO change placeholders to nasal cannula files
+        class Head_NasalCannula: Head_GuedelTube { // TODO change placeholders to NasalCannula files
             idc = IDC_BODY_HEAD_KINGLT;
             text = QPATHTOF(data\body_image\head_kinglt.paa);
         };

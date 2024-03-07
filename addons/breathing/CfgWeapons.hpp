@@ -16,6 +16,18 @@ class CfgWeapons {
             mass = 1;
         };
     };
+    class kat_nasal: ACE_ItemCore {
+        scope = 2;
+        author = "apo_tle";
+        displayName= CSTRING(NasalCannula_Display);
+        descriptionShort = CSTRING(NasalCannula_Desc_Short);
+        picture = QPATHTOF(ui\larynx_normal.paa);
+        model = QPATHTOF(models\larynx_tube\tube.p3d);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
     class kat_chestSeal: ACE_ItemCore {
         scope = 2;
         scopeCurator = 2;

@@ -9,15 +9,13 @@ class CfgPatches {
             "kat_larynxItem",
             "kat_suctionItem",
             "kat_accuvacItem",
-            "kat_nasal_cannulaItem",
             "kat_vomit"
         };
         weapons[] = {
             "kat_guedel",
             "kat_larynx",
             "kat_suction",
-            "kat_accuvac",
-            "kat_nasal_cannula"
+            "kat_accuvac"
         };
         magazines[] = {};
         requiredAddons[] = {

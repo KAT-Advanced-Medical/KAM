@@ -120,6 +120,18 @@
             <Portuguese>Probabilidade de um pneumotórax</Portuguese>
             <Finnish>Hemopneumotoraksin mahdollisuus</Finnish>
         </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_NASALCANNULA">
+            <English>Allow Nasal Cannula</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_ALLOW_NASALCANNULA_DESC">
+            <English>Training level required to use a Nasal Cannula</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_NASALCANNULA">
+            <English>Time for Nasal Cannula</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_TIME_NASALCANNULA_DESC">
+            <English>How long it will take to use Nasal Cannula</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
             <German>Verwende Pulsoximeter</German>
@@ -2236,6 +2248,12 @@
             <Portuguese>HTX</Portuguese>
             <Spanish>HTX</Spanish>
             <Finnish>HPT</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Airway_NasalCannula_Display">
+            <English>Nasal Cannula</English>
+        </Key>
+        <Key ID="STR_KAT_Airway_NasalCannula_Desc_Short">
+            <English>The Nasal Cannula can be inserted into a patient's nostrils and connected to a vitals monitor to record a patient's ETCo2 level and respiratory rate.</English>
         </Key>
     </Package>
 </Project>

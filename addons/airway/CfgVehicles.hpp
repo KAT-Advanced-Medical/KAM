@@ -41,16 +41,6 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_suction,1);
         };
     };
-    class kat_nasal_cannulaItem: Item_Base_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName= CSTRING(Nasal_Cannula_Display);
-        author = "apo_tle";
-        vehicleClass = "Items";
-        class TransportItems {
-            MACRO_ADDITEM(kat_nasal_cannula,1);
-        };
-    };
     class BloodSplatter_01_Small_Old_F;
     class kat_vomit: BloodSplatter_01_Small_Old_F {
         displayName = CSTRING(Vomit_Display);

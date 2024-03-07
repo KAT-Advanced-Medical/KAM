@@ -270,4 +270,12 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(_patient call FUNC(canUseBVM) && ((GVAR(locationProvideOxygen) in [ARR_2(2,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalFacility)) || (GVAR(locationProvideOxygen) in [ARR_2(1,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalVehicle))));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call EFUNC(airway,handleRecoveryPosition); [ARR_4(_medic,_patient,false,true)] call FUNC(useBVM););
     };
+    class NasalCannula {
+        displayName = CSTRING(NasalCannula_Display);
+        treatmentTime = QGVAR(NasalCannula_time);
+        medicRequired = QGVAR(medLvl_NasalCannula);
+        items[] = {"kat_nasal"};
+        icon = QPATHTOF(ui\larynx.paa) // TODO update to nasal cannula icon
+        callbackSuccess = QFUNC(treatmentAdvanced_InsertNasalCannula)
+    };
 };

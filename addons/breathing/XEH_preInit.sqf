@@ -118,6 +118,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
+//Settable list for using Nasal Cannula per medical class
+[
+    QGVAR(medLvl_NasalCannula),
+    "LIST",
+    [LLSTRING(ALLOW_NASALCANNULA),LLSTRING(ALLOW_NASALCANNULA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Settable action time for Nasal Cannula
+[
+    QGVAR(NasalCannula_time),
+    "SLIDER",
+    [LLSTRING(TIME_NASALCANNULA),LLSTRING(TIME_NASALCANNULA_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 10, 3, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 //Allow ChestSeal SelfTreatment
 [
     QGVAR(enable_selfChestseal),

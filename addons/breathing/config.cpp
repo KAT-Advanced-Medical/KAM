@@ -6,12 +6,14 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         units[] = {
             "kat_PulseoximeterItem",
-            "kat_chestSealItem"
+            "kat_chestSealItem",
+            "kat_nasal_cannulaItem"
         };
         weapons[] = {
             "kat_Pulseoximeter",
             "kat_chestSeal",
-            "kat_stethoscope"
+            "kat_stethoscope",
+            "kat_nasal_cannula"
         };
         magazines[] = {};
         requiredAddons[] = {
