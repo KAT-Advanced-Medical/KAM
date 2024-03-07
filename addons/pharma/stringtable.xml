@@ -879,7 +879,7 @@
             <French>Cathéther intra-veineux</French>
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Catetere intravenoso</Italian>
-            <Japanese>経静脈注射(IV)針</Japanese>
+            <Japanese>経静脈注射 (IV) 針</Japanese>
             <Russian>Внутривенное игла</Russian>
             <Portuguese>Cateter Intravenoso</Portuguese>
             <Finnish>Laskimonsisäinen neula</Finnish>
@@ -913,7 +913,7 @@
             <French>Cathéther intra-osseux</French>
             <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
             <Italian>Sistema d'infusione intraossea</Italian>
-            <Japanese>経骨髄注射(IO)針</Japanese>
+            <Japanese>経骨髄注射 (IO) 針</Japanese>
             <Russian>Внутривенное игла</Russian>
             <Portuguese>Infusão Intraóssea</Portuguese>
             <Finnish>Luonsisäinen neula</Finnish>
@@ -1055,21 +1055,9 @@
             <Finnish>%1 ei ole tyhjä</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV">
-            <English>Require inserted IV/IO</English>
-            <German>Erfordert eingefügtes IV/IO</German>
-            <Polish>Wymagaj włożonego IV/IO</Polish>
-            <French>IV/IO posée requise</French>
-            <Chinese>需要插入 IV/IO</Chinese>
-            <Chinesesimp>需要建立 IV/IO</Chinesesimp>
-            <Italian>Richiesto inserimento IV/IO</Italian>
-            <Spanish>Requerir una IV/IO</Spanish>
-            <Korean>삽입된 IV/IO 필요</Korean>
-            <Turkish>Takılı IV/IO gerektir</Turkish>
-            <Czech>Vyžadování vložení IV/IO</Czech>
+            <English>Fluid Require inserted IV/IO</English>
+            <German>Flüssigkeiten Erfordert eingefügtes IV/IO</German>
             <Japanese>輸液にIV/IO刺入を要求する</Japanese>
-            <Russian>Требовать вставки IV/IO</Russian>
-            <Portuguese>Requerer inserção de IV/IO</Portuguese>
-            <Finnish>Vaadi lisätty IV/IO</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma. \nIf false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
@@ -1083,7 +1071,7 @@
             <Chinesesimp>默认为真。 如果为 false, 您需要先建立 IV/IO, 然后才能给某人注射盐水/血液/血浆。 \n如果为 false, 它保留使用盐水/血液/血浆的标准 ACE 行为。</Chinesesimp>
             <Korean>기본값은 참입니다. 참이면 식염수/혈액/혈장을 제공하기 전에 먼저 IV/IO를 삽입해야 합니다. \n거짓이면 식염수/혈액/혈장 사용에 대한 표준 ACE 동작을 유지합니다.</Korean>
             <Czech>Výchozí zakázáno. Pokud je povoleno, budete muset nejprve vložit IV/IO, než budete moci někomu podat fyziologický roztok/krev/plazmu. \nPokud je zakázano, zachová standardní chování ACE pro použití fyziologického roztoku/krve/plazmy.</Czech>
-            <Japanese>KATデフォルトではfalseです。trueの場合、輸液を行う前にIV/IOを刺入する必要があります。 \nfalseの場合はACEデフォルトの動作を保持します。</Japanese>
+            <Japanese>デフォルトではfalseです。trueの場合、生理食塩水/血液/血漿の輸液を行う前にIV/IOの刺入が必要になります。 \nfalseの場合はACE標準の生理食塩水/血液/血漿と同様に作用します。</Japanese>
             <Russian>Истина по умолчанию. Если это правда, вам нужно будет сначала ввести IV/IO, прежде чем вы сможете дать кому-то физиологический раствор/кровь/плазму. \nЕсли false, он сохраняет стандартное поведение ACE для использования физиологического раствора/крови/плазмы.</Russian>
             <Portuguese>Falso, por padrão. Se verdadeiro, você precisará inserir IV/IO primeiro antes de poder administrar solução salina/sangue/plasma a alguém. \nSe falso, mantém o comportamento padrão do ACE para uso de solução salina/sangue/plasma.</Portuguese>
             <Finnish>Oletusarvo epätosi. Jos totta, sinun on lisättävä IV/IO ensin, ennen kuin voit antaa jollekulle suolaliuosta/verta/plasmaa \nJos väärin, se säilyttää normaalin ACE-käyttäytymisen suolaliuoksen/veren/plasman käytössä.</Finnish>
@@ -1104,7 +1092,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_Medications_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone medications. \nIf false, you can give them without it.</English>
-            <Japanese>KATデフォルトではfalseです。trueの場合、薬液注射を行う前にIV/IOを刺入する必要があります。 \nfalseの場合は薬品だけで投与可能になります。</Japanese>
+            <Japanese>デフォルトではfalseです。trueの場合、薬液注射を行う前にIV/IOの刺入が必要になります。 \nfalseの場合は薬品だけで投与可能になります。</Japanese>
             <French>Faux par défaut. Si vrai, il sera nécessaire d'insérer une IV/IO avant de pouvoir donner des médicaments à quelqu'un. \nSi faux, ils pourront être donnés sans</French>
             <Chinesesimp>默认假。 如果为真，您将需要先建立 IV/IO, 然后才能给某人注射药。 \n如果为假, 您可以在没有IV/IO的情况下注射药物他们。</Chinesesimp>
             <Italian>Falso nel default. Se vero/true, dovrai prima inserire un IV/IO per poter effettuare alcune medicazioni. \nSe falso, potrai dargliele senza IV/IO. </Italian>
@@ -1115,6 +1103,14 @@
             <Spanish>Predeterminado desactivado. Si se activa, se necesitará insertar una IV/IO primero antes de poder suministrar fármacos. \nSi esta desactivado, se podrán suministrar sin IV/IO.</Spanish>
             <Portuguese>Falso, por padrão. Se verdadeiro, você precisará inserir IV/IO primeiro antes de poder administrar medicamentos a alguém. \nSe falso, você pode administrá-los sem ele.</Portuguese>
             <Finnish>Oletusarvo epätosi. Jos totta, sinun on lisättävä IV/IO ensin, ennen kuin voit antaa jollekin lääkkeitä. \nJos vääriä, voit antaa ne ilman sitä.</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW">
+            <English>Blood Drawing Require IV/IO</English>
+            <Japanese>採血にIV/IO刺入を要求する</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
+            <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
+            <Japanese>デフォルトではfalseです。trueの場合、人から採血する前にIV/IOの刺入が必要になります。 \nfalseの場合は刺入無しで採血できます。</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -2710,7 +2706,7 @@
             <Korean>최대 액체 가방 양</Korean>
             <German>Maximaler Flüssigkeitsbeutelstapel</German>
             <Chinesesimp>注射液堆叠上限</Chinesesimp>
-            <Japanese>輸液袋スタックの最大数</Japanese>
+            <Japanese>輸液袋の最大スタック数</Japanese>
             <Spanish>Máxima cantidad de bolsas de fluidos simultaneas</Spanish>
             <Polish>Maksymalna ilość worków z płynami dla jednego pajenta</Polish>
             <Portuguese>Pilha Máxima de Sacos de Fluidos</Portuguese>
@@ -3322,7 +3318,7 @@
         <Key ID="STR_KAT_Pharma_SETTING_staminaMedication_DESC">
             <English>Allow certain medications to modify (vanilla/advanced fatigue) stamina as a side effect</English>
             <Korean>부작용으로 특정 약물이 (바닐라/고급 피로도) 스태미나를 조절할 수 있도록 허용</Korean>
-            <Japanese>特定の薬の副作用としてスタミナ(バニラ/高度な疲労)を変更することを許可する</Japanese>
+            <Japanese>特定の薬の副作用としてスタミナ(バニラ/ACEアドバンスド疲労)を変更することを許可する</Japanese>
             <German>Erlaubt es, dass bestimmte Medikamente als Nebenwirkung die Ausdauer beeinflussen (Vanilla/fortgeschrittene Ausdauer).</German>
             <French>Autorise certains médicaments à modifier (Vanilla/Fatigue avancée) l'endurance en effet secondaire</French>
             <Portuguese>Permite que certos medicamentos modifiquem a Stamina (vanilla/fadiga avançada) como efeito colateral</Portuguese>
