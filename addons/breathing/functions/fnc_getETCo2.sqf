@@ -20,7 +20,7 @@ params ["_patient"];
 if !(alive _patient) exitWith {0};
 
 private _bloodVolume = GET_BLOOD_VOLUME(_patient);
-private _lostBlood = 6.0 - _bloodVolume; // amount of blood missing from the body
+private _lostBlood = 6.0 - _bloodVolume;
 
 private _ptxTarget = _patient getVariable [QGVAR(pneumothorax), 0]; // more deteriorated closer to 4, at 4 likely to become advanced
 private _hasHtx = _patient getVariable [QGVAR(hemopneumothorax), false];
@@ -29,13 +29,13 @@ private _hasTptx = _patient getVariable [QGVAR(tensopneumothorax), false];
 private _airwayObstructed = _patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false]);
 private _airwayOccluded = _patient getVariable [QEGVAR(airway,occluded), false];
 
-private _randomOffset = floor (random 5) - 2; // random number from -2 to 2
+private _randomOffset = selectRandom [-2,-1,0,1,2];
 private _newEtco2 = 0;
 switch (true) do {
     //cpr being performed
     case (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]): {
         _newEtco2 = 10;
-        private _cardiacType = _patient getVariable [QEGVAR(circulation,cardiacArrestType), 0]; // DIGBHJNEIUOTYGH MAKE THIS QEGVAR
+        private _cardiacType = _patient getVariable [QEGVAR(circulation,cardiacArrestType), 0];
         private _offset = (_cardiacType) * 2;
         _newEtco2 = _newEtco2 + _offset;
         _newEtco2 + _randomOffset;
