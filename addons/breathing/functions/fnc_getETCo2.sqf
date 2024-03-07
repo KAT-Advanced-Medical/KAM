@@ -28,7 +28,7 @@ _ptxTarget = _patient getVariable [QGVAR(pneumothorax), 0]; // more deteriorated
 _hasHtx = _patient getVariable [QGVAR(hemopneumothorax), false];
 _hasTptx = _patient getVariable [QGVAR(tensopneumothorax), false];
 
-_airwayObstructed = (_patient getVariable [QEGVAR(airway,obstruction), false]);
+_airwayObstructed = _patient getVariable [QEGVAR(airway,obstruction), false];
 _airwayOccluded = (_patient getVariable [QEGVAR(airway,occluded), false]);
 
 //cardiac arrest
