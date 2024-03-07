@@ -34,7 +34,7 @@ private _respiratoryRate = 16 + _randomOffset;
 
 // calculate respiratoryrate for blood loss and thoraxs
 if (_lostBlood >= 0.2) then {
-    _respiratoryRate = _respiratoryRate + ((floor (_lostBlood / 0.2)) * 2); // increase breath rate by 2 per 100ml lost
+    _respiratoryRate = _respiratoryRate + ((floor (_lostBlood / 0.2)) * 2); // increase breath rate by 2 per 200ml lost
 };
 switch (_hasHtx || _hasTpt) do {
     // has adv thorax

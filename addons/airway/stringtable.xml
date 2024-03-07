@@ -721,7 +721,7 @@
         <Key ID="STR_KAT_Airway_Nasal_Cannula_Display">
             <English>Nasal Cannula</English>
         </Key>
-        <Key ID="STR_KAT_Nasal_Cannula_Desc_Short">
+        <Key ID="STR_KAT_Airway_Nasal_Cannula_Desc_Short">
             <English>The Nasal Cannula can be inserted into a patient's nostrils and connected to a vitals monitor to record a patient's ETCo2 level and respiratory rate.</English>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
