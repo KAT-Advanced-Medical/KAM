@@ -1108,7 +1108,7 @@
             <German>Blutentnahme erfordert IV</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
-             <English>Default false. If true, you will need to insert IV first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
+            <English>Default false. If true, you will need to insert IV first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
             <German>Standardmäßig falsch. Bei "wahr" muss zuerst ein IV gelegt sein, bevor jemandem Blut entnehmen kann. \nBei "falsch" kann Blut ohne IV entnommen.</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
