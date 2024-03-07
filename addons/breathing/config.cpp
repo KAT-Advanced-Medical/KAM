@@ -7,13 +7,13 @@ class CfgPatches {
         units[] = {
             "kat_PulseoximeterItem",
             "kat_chestSealItem",
-            "kat_nasal_cannulaItem"
+            "kat_nasalItem"
         };
         weapons[] = {
             "kat_Pulseoximeter",
             "kat_chestSeal",
             "kat_stethoscope",
-            "kat_nasal_cannula"
+            "kat_nasal"
         };
         magazines[] = {};
         requiredAddons[] = {
