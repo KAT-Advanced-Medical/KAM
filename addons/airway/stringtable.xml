@@ -844,7 +844,6 @@
             <Norwegian>Nivået av opplæring som kreves for å bruke en Guedeltubus</Norwegian>
             <Finnish>Guedel-putken käyttämiseen vaadittava koulutustaso</Finnish>
         </Key>
-
         <Key ID="STR_KAT_Airway_ALLOW_ACCUVAC">
             <English>Allow ACCUVAC</English>
             <German>ACCUVAC erlauben</German>
