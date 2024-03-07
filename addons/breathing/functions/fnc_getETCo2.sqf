@@ -29,7 +29,7 @@ _hasHtx = _patient getVariable [QGVAR(hemopneumothorax), false];
 _hasTptx = _patient getVariable [QGVAR(tensopneumothorax), false];
 
 _airwayObstructed = _patient getVariable [QEGVAR(airway,obstruction), false];
-_airwayOccluded = (_patient getVariable [QEGVAR(airway,occluded), false]);
+_airwayOccluded = _patient getVariable [QEGVAR(airway,occluded), false];
 
 //cardiac arrest
 if (_pr == 0) exitWith {0};
