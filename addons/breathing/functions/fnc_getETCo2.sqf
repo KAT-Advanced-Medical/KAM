@@ -21,7 +21,7 @@
 if !(alive _patient) exitWith {0};
 
 private _pr = GET_HEART_RATE(_patient);
-_bloodVolume = (_patient getVariable [QACEGVAR(medical,bloodVolume), 6.0]);
+private _bloodVolume = GET_BLOOD_VOLUME(_patient);
 _lostBlood = 6.0 - _bloodVolume; // amount of blood missing from the body
 
 _ptxTarget = _patient getVariable [QGVAR(pneumothorax), 0]; // more deteriorated closer to 4, at 4 likely to become advanced
