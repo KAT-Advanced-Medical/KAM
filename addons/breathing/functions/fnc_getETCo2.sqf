@@ -1,8 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: apo_tle
- * Calculate patient's ETCo2 level based on status of their vitals. ETCo2 is not its own vital as it does not need to be,
- * rather I've implemented it as more like a diagnostic tool.
+ * Calculate patient's ETCo2 level based on status of their vitals.
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -16,20 +15,19 @@
  * Public: No
  */
 
- params ["_patient"];
+params ["_patient"];
 
 if !(alive _patient) exitWith {0};
 
-private _pr = GET_HEART_RATE(_patient);
 private _bloodVolume = GET_BLOOD_VOLUME(_patient);
-_lostBlood = 6.0 - _bloodVolume; // amount of blood missing from the body
+private _lostBlood = 6.0 - _bloodVolume; // amount of blood missing from the body
 
-_ptxTarget = _patient getVariable [QGVAR(pneumothorax), 0]; // more deteriorated closer to 4, at 4 likely to become advanced
-_hasHtx = _patient getVariable [QGVAR(hemopneumothorax), false];
-_hasTptx = _patient getVariable [QGVAR(tensopneumothorax), false];
+private _ptxTarget = _patient getVariable [QGVAR(pneumothorax), 0]; // more deteriorated closer to 4, at 4 likely to become advanced
+private _hasHtx = _patient getVariable [QGVAR(hemopneumothorax), false];
+private _hasTptx = _patient getVariable [QGVAR(tensopneumothorax), false];
 
-_airwayObstructed = _patient getVariable [QEGVAR(airway,obstruction), false];
-_airwayOccluded = _patient getVariable [QEGVAR(airway,occluded), false];
+private _airwayObstructed = _patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false];);
+private _airwayOccluded = _patient getVariable [QEGVAR(airway,occluded), false];
 
 //cardiac arrest
 if (_IN_CRDC_ARRST(_patient)) exitWith {0};

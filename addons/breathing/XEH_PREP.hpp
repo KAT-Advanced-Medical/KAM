@@ -1,6 +1,7 @@
 PREP(canUseBVM);
 PREP(checkBreathing);
 PREP(checkPulseOximeter);
+PREP(getETCo2);
 PREP(handleBreathing);
 PREP(handlePneumothoraxDeterioration);
 PREP(handlePulmoHit);
@@ -22,4 +23,3 @@ PREP(treatmentAdvanced_removePulseoximeter);
 PREP(treatmentAdvanced_tensionpneumothorax);
 PREP(treatmentAdvanced_tensionpneumothoraxLocal);
 PREP(useBVM);
-PREP(getETCo2);
