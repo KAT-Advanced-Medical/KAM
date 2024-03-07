@@ -1326,8 +1326,6 @@
             <French>Combien de temps sera nécessaire pour annuler la position latérale de sécurité</French>
             <Finnish>Kuinka kauan lepoasennon manuaalinen peruuttaminen kestää</Finnish>
             <German>Wie lang die benötigte Zeit ist, die stabile Seitenlage manuell abzubrechen</German>
-
-            <German>Wie lange dauert es, die stabile Seitenlage manuell abzubrechen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
