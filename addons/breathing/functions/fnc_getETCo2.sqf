@@ -63,6 +63,6 @@ switch (true) do {
         _newEtco2 + _randomOffset;
     };
 
-    //final checks for blood loss, if no other problems
+    //no problems
     default {40  + _randomOffset};
 };

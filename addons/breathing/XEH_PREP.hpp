@@ -2,6 +2,7 @@ PREP(canUseBVM);
 PREP(checkBreathing);
 PREP(checkPulseOximeter);
 PREP(getETCo2);
+PREP(getRespiratoryRate);
 PREP(handleBreathing);
 PREP(handlePneumothoraxDeterioration);
 PREP(handlePulmoHit);
