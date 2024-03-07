@@ -32,7 +32,7 @@ _airwayObstructed = _patient getVariable [QEGVAR(airway,obstruction), false];
 _airwayOccluded = _patient getVariable [QEGVAR(airway,occluded), false];
 
 //cardiac arrest
-if (_pr == 0) exitWith {0};
+if (_IN_CRDC_ARRST(_patient)) exitWith {0};
 
 //cpr being performed
 if !(_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) exitWith {
