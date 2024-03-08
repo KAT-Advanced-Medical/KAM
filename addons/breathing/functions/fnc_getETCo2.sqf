@@ -22,6 +22,8 @@ if !(alive _patient) exitWith {0};
 private _pr = GET_HEART_RATE(_patient);
 private _bloodVolume = GET_BLOOD_VOLUME(_patient);
 private _lostBlood = 6.0 - _bloodVolume;
+private _pH = _patient getVariable [QEGVAR(pharma,pH),1500];
+private _phDiff = 1500 - _pH;
 
 private _ptxTarget = _patient getVariable [QGVAR(pneumothorax), 0]; // more deteriorated closer to 4, at 4 likely to become advanced
 private _hasHtx = _patient getVariable [QGVAR(hemopneumothorax), false];
@@ -31,8 +33,7 @@ private _airwayObstructed = _patient getVariable [QEGVAR(airway,obstruction), fa
 private _airwayOccluded = _patient getVariable [QEGVAR(airway,occluded), false];
 
 private _pharmaOffset = 0; // TODO offset value depending on drugs in circulation
-private _phOffset = 0; // TODO offset value based on blood pH
-
+private _phOffset = [0,((floor (_phDiff / 250)))] select (EGVAR(pharma,kidneyAction)); // increase etco2 by 1 per 250 points of pH lost
 private _randomOffset = selectRandom [-2,-1,0,1,2];
 private _newEtco2 = 0;
 switch (true) do {
@@ -50,24 +51,24 @@ switch (true) do {
     case (IN_CRDC_ARRST(_patient)): {0};
 
     //airways blocked
-    case (_airwayObstructed || _airwayOccluded): {50+_randomOffset};
+    case (_airwayObstructed || _airwayOccluded): {50+_randomOffset+_phOffset};
 
     //lost a lot of blood
     case (_lostBlood >= 1): {
         _newEtco2 = 37;
         _newEtco2 = _newEtco2 - ((floor (_lostBlood / 0.5)) * 4);
-        (14 max _newEtco2 min 99) + _randomOffset; //subtract 4mmhg of ETCo2 for each 500ml lost, clamped at minimum 14
+        (14 max _newEtco2 min 99) + _randomOffset+_phOffset; //subtract 4mmhg of ETCo2 for each 500ml lost, clamped at minimum 14
     };
 
     //tptx/hpx
-    case (_hasHtx || _hasTptx): {22  + _randomOffset};
+    case (_hasHtx || _hasTptx): {22+_randomOffset+_phOffset};
 
     // base ptx. ETCo2 decreases as ptx deteriorates
     case (_ptxTarget > 0): {
         _newEtco2 = 37 - (_ptxTarget * 3);
-        _newEtco2 + _randomOffset;
+        _newEtco2 + _randomOffset + _phOffset;
     };
 
     //no problems
-    default {40  + _randomOffset};
+    default {40+_randomOffset+_phOffset};
 };
