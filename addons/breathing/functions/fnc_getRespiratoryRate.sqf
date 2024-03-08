@@ -37,7 +37,7 @@ if (_lostBlood >= 0.2) then {
     _respiratoryRate = (_respiratoryRate + (floor (_lostBlood / 0.2))); // increase breath rate by 1 per 200ml lost
 };
 // calculate respiratoryrate for ptxs
-if _ptxTarget > 0 then {
+if (_ptxTarget > 0) then {
     _respiratoryRate = [_respiratoryRate + 9,  _respiratoryRate + (_ptxTarget * 2)] select (_hasHtx || _hasTptx);
 };
 

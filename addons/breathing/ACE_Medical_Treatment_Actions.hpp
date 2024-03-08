@@ -281,7 +281,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(NasalCannula_time);
         items[] = {"kat_nasal"};
         condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !((_patient getVariable [ARR_2(QQGVAR(etco2Monitor),[])] findIf {_x == 'NasalCannula'}) > -1));
-        callbackSuccess = QUOTE([ARR_6(_medic,_patient,_bodyPart,_className,objNull,_usedItem)] call FUNC(treatmentAdvanced_nasalCannula));
+        callbackSuccess = QFUNC(treatmentAdvanced_nasalCannula);
         callbackFailure = "";
         callbackProgress = "";
         callbackCondition = "useCondition";

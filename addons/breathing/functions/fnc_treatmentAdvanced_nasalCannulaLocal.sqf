@@ -24,8 +24,8 @@ params ["_medic", "_patient","_classname", "_usedItem"];
 _currentMonitors = _patient getVariable [QGVAR(etco2Monitor),[]];
 _currentMonitors = _currentMonitors + [_className];
 
-for "_i" from 0 to (count _currentMonitors) -1 do {
-	systemChat (_myArray select _i);
-};
-
 _patient setVariable [QGVAR(etco2Monitor), _currentMonitors, true];
+
+for "_i" from 0 to (count _currentMonitors) -1 do {
+	systemChat (_currentMonitors select _i);
+};

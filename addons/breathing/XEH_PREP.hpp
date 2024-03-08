@@ -18,6 +18,8 @@ PREP(treatmentAdvanced_chestSeal);
 PREP(treatmentAdvanced_chestSealLocal);
 PREP(treatmentAdvanced_hemopneumothorax);
 PREP(treatmentAdvanced_hemopneumothoraxLocal);
+PREP(treatmentAdvanced_nasalCannula);
+PREP(treatmentAdvanced_nasalCannulaLocal);
 PREP(treatmentAdvanced_pulseoximeter);
 PREP(treatmentAdvanced_pulseoximeterLocal);
 PREP(treatmentAdvanced_removePulseoximeter);
