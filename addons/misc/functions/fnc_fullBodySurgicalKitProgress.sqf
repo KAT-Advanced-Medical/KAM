@@ -28,7 +28,7 @@ private _stitchableWounds = _patient call FUNC(getFullBodyStitchableWounds);
 if (_stitchableWounds isEqualTo createHashMap) exitWith {false};
 
 // Not enough time has elapsed to stitch a wound
-if (_totalTime - _elapsedTime > ([_patient, _patient] call FUNC(getFullBodyStitchTime)) - GVAR(woundStitchTime)) exitWith {true};
+if (_totalTime - _elapsedTime > ([_patient, _patient] call FUNC(getFullBodyStitchTime)) - ACEGVAR(medical_treatment,woundStitchTime)) exitWith {true};
 
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
 private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
@@ -53,20 +53,20 @@ if (_woundIndex == -1) then {
     _wound set [1, (_wound select 1) + _treatedAmountOf];
 };
 
-if (GVAR(clearTrauma) == 1) then {
+if (ACEGVAR(medical_treatment,clearTrauma) == 1) then {
     private _partIndex = ALL_BODY_PARTS find _bodyPart;
     TRACE_2("clearTrauma - clearing trauma after stitching",_bodyPart,_treatedWound);
-    private _bodyPartDamage = _patient getVariable [QEGVAR(medical,bodyPartDamage), []];
+    private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
     _bodyPartDamage set [_partIndex, (_bodyPartDamage select _partIndex) - (_treatedDamageOf * _treatedAmountOf)];
     _patient setVariable [QEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
     TRACE_2("clearTrauma - healed damage",_bodyPart,_treatedDamageOf);
         
     switch (_bodyPart) do {
-        case "head": { [_patient, true, false, false, false] call EFUNC(medical_engine,updateBodyPartVisuals); };
-        case "body": { [_patient, false, true, false, false] call EFUNC(medical_engine,updateBodyPartVisuals); };
+        case "head": { [_patient, true, false, false, false] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
+        case "body": { [_patient, false, true, false, false] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
         case "leftarm";
-        case "rightarm": { [_patient, false, false, true, false] call EFUNC(medical_engine,updateBodyPartVisuals); };
-        default { [_patient, false, false, false, true] call EFUNC(medical_engine,updateBodyPartVisuals); };
+        case "rightarm": { [_patient, false, false, true, false] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
+        default { [_patient, false, false, false, true] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
     };
 };
 
@@ -75,19 +75,19 @@ _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
 
 // Check if we fixed limping by stitching this wound (only for leg wounds)
 if (
-    EGVAR(medical,limping) == 2
-    && {_patient getVariable [QEGVAR(medical,isLimping), false]}
+    ACEGVAR(medical,limping) == 2
+    && {_patient getVariable [QACEGVAR(medical,isLimping), false]}
     && {_bodyPart isEqualTo "leftleg" || _bodyPart isEqualTo "rightleg"}
 ) then {
     TRACE_3("Updating damage effects",_patient,_bodyPart,local _patient);
-    [QEGVAR(medical_engine,updateDamageEffects), _patient, _patient] call CBA_fnc_targetEvent;
+    [QACEGVAR(medical_engine,updateDamageEffects), _patient, _patient] call CBA_fnc_targetEvent;
 };
 
 // Consume a suture for the next wound if one exists, stop stitching if none are left
-if (GVAR(consumeSurgicalKit) == 2) then {
+if (ACEGVAR(medical_treatment,consumeSurgicalKit) == 2) then {
     // Don't consume a suture if there are no more wounds to stitch
     if (count (values _stitchableWounds) isEqualTo 1) exitWith {false};
-    ([_medic, _patient, ["ACE_suture"]] call FUNC(useItem)) params ["_user"];
+    ([_medic, _patient, ["ACE_suture"]] call ACEFUNC(medical_treatment,useItem)) params ["_user"];
     !isNull _user
 } else {
     true

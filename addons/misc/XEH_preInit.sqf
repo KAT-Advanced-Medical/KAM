@@ -612,4 +612,14 @@ PREP_RECOMPILE_END;
     }
 ] call CBA_Settings_fnc_init;
 
+//Enable full bodyStitch
+[
+    QGVAR(enableFullBodyStitch),
+    "CHECKBOX",
+    LLSTRING(SETTING_EnableFullBodyStitch),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

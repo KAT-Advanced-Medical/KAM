@@ -22,7 +22,7 @@ params ["", "_patient"];
 private _stitchableTotal = 0;
 
 {
-    _stitchableTotal = _stitchableTotal + count _x;
+    _stitchableTotal = _stitchableTotal + count _y;
 } forEach (_patient call FUNC(getFullBodyStitchableWounds));
 
-_stitchableTotal * GVAR(woundStitchTime);
+_stitchableTotal * ACEGVAR(medical_treatment,woundStitchTime);
