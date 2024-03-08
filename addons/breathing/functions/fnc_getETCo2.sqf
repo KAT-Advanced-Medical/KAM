@@ -19,6 +19,7 @@ params ["_patient"];
 
 if !(alive _patient) exitWith {0};
 
+private _pr = GET_HEART_RATE(_patient);
 private _bloodVolume = GET_BLOOD_VOLUME(_patient);
 private _lostBlood = 6.0 - _bloodVolume;
 
@@ -29,15 +30,19 @@ private _hasTptx = _patient getVariable [QGVAR(tensopneumothorax), false];
 private _airwayObstructed = _patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false]);
 private _airwayOccluded = _patient getVariable [QEGVAR(airway,occluded), false];
 
+private _pharmaOffset = 0; // TODO offset value depending on drugs in circulation
+private _phOffset = 0; // TODO offset value based on blood pH
+
 private _randomOffset = selectRandom [-2,-1,0,1,2];
 private _newEtco2 = 0;
 switch (true) do {
     //cpr being performed
-    case (_patient getVariable [QACEGVAR(medical,CPR_provider), objNull]): {
-        _newEtco2 = 10;
+    case (!(_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) && (_pr == 0)): {
+        _newEtco2 = 11;
         private _cardiacType = _patient getVariable [QEGVAR(circulation,cardiacArrestType), 0];
-        private _offset = (_cardiacType) * 2;
-        _newEtco2 = _newEtco2 + _offset;
+        private _offset = (_cardiacType);
+        private _bloodOffset = [((floor (_lostBlood / 0.8)) * 2),0] select (_lostBlood > 2);  // reduce ETCo2 by 2mmhg for each 800ml of blood lost above 2L threshold (initial 2L incl.)
+        _newEtco2 = _newEtco2 + _offset - _bloodOffset;
         _newEtco2 + _randomOffset;
     };
 
@@ -45,7 +50,7 @@ switch (true) do {
     case (IN_CRDC_ARRST(_patient)): {0};
 
     //airways blocked
-    case (_airwayObstructed || _airwayOccluded): {60+_randomOffset};
+    case (_airwayObstructed || _airwayOccluded): {50+_randomOffset};
 
     //lost a lot of blood
     case (_lostBlood >= 1): {

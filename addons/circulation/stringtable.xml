@@ -2639,7 +2639,7 @@
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Breaths/min: %6</English>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog_HasCannula">
-            <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %2 Breaths/min: %3</English>
+            <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Breaths/min: %6</English>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
             <English>AED-X Vitals Monitor Sounds</English>

@@ -100,7 +100,7 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
             // heart rate, systolic / diastolic, spO2
             // TODO check NasalCannula is connected
             // if connected
-            [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog_HasCannula), [round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2)]] call ACEFUNC(medical_treatment,addToLog);
+            [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog_HasCannula), [round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
             // if disconnected
             //[_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog), [round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2)]] call ACEFUNC(medical_treatment,addToLog);
         } else {
