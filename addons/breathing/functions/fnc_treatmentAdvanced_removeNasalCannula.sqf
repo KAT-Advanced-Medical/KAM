@@ -18,5 +18,4 @@
 
  params ["_medic", "_patient"];
 
-[_patient, "activity", LSTRING(Remove_NasalCannula_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 [QGVAR(removeNasalCannulaLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
