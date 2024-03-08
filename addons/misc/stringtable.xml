@@ -1355,6 +1355,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_Use_SurgicalKitFullBody">
             <English>Full Body Stitch</English>
+            <Japanese>全身を縫合する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableFullBodyStitch">
             <English>Enable Full Body Stitch</English>
