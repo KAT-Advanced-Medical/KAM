@@ -19,7 +19,7 @@ class CfgVehicles {
         author = "apo_tle";
         vehicleClass = "Items";
         class TransportItems {
-            MACRO_ADDITEM(kat_NasalCannula,1);
+            MACRO_ADDITEM(kat_nasal,1);
         };
     };
 
