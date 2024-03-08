@@ -2258,5 +2258,8 @@
         <Key ID="STR_KAT_Breathing_Cancel_NasalCannula">
             <English>Remove Nasal Cannula</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_Remove_NasalCannula_Log">
+            <English>%1 removed Nasal Cannula</English>
+        </Key>
     </Package>
 </Project>

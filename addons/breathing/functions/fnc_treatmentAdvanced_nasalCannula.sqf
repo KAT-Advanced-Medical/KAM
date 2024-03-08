@@ -26,4 +26,6 @@ params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 //[_patient, _usedItem] call ACEFUNC(medical_treatment,addToTriageCard);
 //[_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);
 
-[QGVAR(nasalCannulaLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+_patient setVariable [QGVAR(etco2Monitor), _currentMonitors, true];
+
+[QGVAR(nasalCannulaLocal), [_medic, _patient, _classname, _usedItem], _patient] call CBA_fnc_targetEvent;

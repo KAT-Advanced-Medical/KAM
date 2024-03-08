@@ -19,12 +19,6 @@ params ["_patient"];
 
 if !(alive _patient) exitWith {0};
 
-
-_debug = _patient getVariable [QGVAR(etco2Monitor),["nah"]];
-
-hint str _debug select 0;
-
-
 private _pr = GET_HEART_RATE(_patient);
 private _bloodVolume = GET_BLOOD_VOLUME(_patient);
 private _lostBlood = 6.0 - _bloodVolume;

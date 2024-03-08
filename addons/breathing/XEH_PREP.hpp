@@ -23,6 +23,8 @@ PREP(treatmentAdvanced_nasalCannulaLocal);
 PREP(treatmentAdvanced_pulseoximeter);
 PREP(treatmentAdvanced_pulseoximeterLocal);
 PREP(treatmentAdvanced_removePulseoximeter);
+PREP(treatmentAdvanced_removeNasalCannula);
+PREP(treatmentAdvanced_removeNasalCannulaLocal);
 PREP(treatmentAdvanced_tensionpneumothorax);
 PREP(treatmentAdvanced_tensionpneumothoraxLocal);
 PREP(useBVM);

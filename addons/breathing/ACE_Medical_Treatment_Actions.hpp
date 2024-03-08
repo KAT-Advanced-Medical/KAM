@@ -303,6 +303,6 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(NasalCannula_time);
         items[] = {};
         condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && ((_patient getVariable [ARR_2(QQGVAR(etco2Monitor),[])] findIf {_x == 'NasalCannula'}) > -1));
-        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(etco2Monitor),false,true)]); //todo make this work
+        callbackSuccess = QFUNC(treatmentAdvanced_removeNasalCannula);
     };
 };
