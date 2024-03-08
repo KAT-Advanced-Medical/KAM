@@ -18,7 +18,7 @@
 
 params ["_medic", "_patient"];
 
-
+if !(GVAR(enableFullBodyStitch)) exitWith {false};
 if ((ACEGVAR(medical_treatment,consumeSurgicalKit) == 2) && {!([_medic, _patient, ["ACE_Suture"]] call ACEFUNC(medical_treatment,hasItem))}) exitWith {false};
 
 
