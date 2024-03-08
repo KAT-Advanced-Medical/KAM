@@ -37,9 +37,17 @@ if (_lostBlood >= 0.2) then {
     _respiratoryRate = (_respiratoryRate + (floor (_lostBlood / 0.2))); // increase breath rate by 1 per 200ml lost
 };
 // calculate respiratoryrate for ptxs
-_respiratoryRate = [_respiratoryRate + 9,  _respiratoryRate + (_ptxTarget * 2)] select (_hasHtx || _hasTptx);
+if _ptxTarget > 0 then {
+    _respiratoryRate = [_respiratoryRate + 9,  _respiratoryRate + (_ptxTarget * 2)] select (_hasHtx || _hasTptx);
+};
 
 switch (true) do {
+    //cpr being performed and patient has no pulse
+    case ((_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) && (_pr == 0)): {10};
+
+    //bvm being used
+    case (_patient getVariable [QGVAR(BVMInUse), false]): {10};
+
     //cardiac arrest
     case (IN_CRDC_ARRST(_patient)): {0};
 

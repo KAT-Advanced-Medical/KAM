@@ -36,8 +36,8 @@ private _phOffset = 0; // TODO offset value based on blood pH
 private _randomOffset = selectRandom [-2,-1,0,1,2];
 private _newEtco2 = 0;
 switch (true) do {
-    //cpr being performed
-    case (!(_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) && (_pr == 0)): {
+    //cpr being performed and patient has no pulse
+    case ((_patient getVariable [QACEGVAR(medical,CPR_provider), objNull] isNotEqualTo objNull) && (_pr == 0)): {
         _newEtco2 = 11;
         private _cardiacType = _patient getVariable [QEGVAR(circulation,cardiacArrestType), 0];
         private _offset = (_cardiacType);
