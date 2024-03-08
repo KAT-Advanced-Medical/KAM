@@ -30,5 +30,3 @@ _unit setVariable [QGVAR(PulseOximeter_Volume), true, true];
 _unit setVariable [QGVAR(PulseOximeter_VolumePatient), false, true];
 
 _unit setVariable [QGVAR(etco2Monitor), [], true];
-
-//_sahidufgd = ((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !(_patient getVariable [ARR_2(QQGVAR(etco2Monitor), [])] findIf {_x == "NasalCannula"} > -1));
