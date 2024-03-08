@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGi
  * Initalizes the "Manage Airways" Zeus module.
@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_control"]; 
+params ["_control"];
 
 private _display = ctrlParent _control;
 private _ctrlButtonOK = _display displayCtrl 1;
@@ -37,10 +37,10 @@ private _fnc_error = {
 
 switch (false) do {
     case !(isNull _unit): {
-        [LSTRING(NothingSelected)] call _fnc_error;
+        [ACELSTRING(zeus,NothingSelected)] call _fnc_error;
     };
     case (_unit isKindOf "CAManBase"): {
-        [LSTRING(OnlyInfantry)] call _fnc_error;
+        [ACELSTRING(zeus,OnlyInfantry)] call _fnc_error;
     };
 };
 
@@ -57,7 +57,7 @@ private _fnc_sliderMove = {
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     private _unit = attachedTo _logic;
     private _curVal = _unit getVariable [QACEGVAR(medical,bloodvolume), 6.0];
-    _slider ctrlSetTooltip format [localize "STR_kat_zeus_sliderFormat13was23", parseNumber((sliderPosition _slider) toFixed 2), (parseNumber (_curVal toFixed 2)), "L"];
+    _slider ctrlSetTooltip format [LLSTRING(sliderFormat13was23), parseNumber((sliderPosition _slider) toFixed 2), (parseNumber (_curVal toFixed 2)), "L"];
 };
 
 private _slider = _display displayCtrl 26423;
@@ -71,10 +71,10 @@ _slider ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove];
 
 private _playerBloodyType = _unit getVariable [QEGVAR(circulation,bloodtype), "O_N"];
 private _playerBloodyTypeIndex = ["O","O_N","A","A_N","B","B_N","AB","AB_N"] find _playerBloodyType;
-private _select = switch (_playerBloodyType) do 
+private _select = switch (_playerBloodyType) do
 {
-    case "O+":  {0};
-    case "O-":  {1};
+    case "0+":  {0};
+    case "0-":  {1};
     case "A+":  {2};
     case "A-":  {3};
     case "B+":  {4};
@@ -101,8 +101,8 @@ private _fnc_onConfirm = {
     private _dogtagData = _unit getVariable QACEGVAR(dogtags,dogtagData);
     if(!isNil "_dogtagData") then {
         switch (_bloodtype) do {
-            case "O": {_bloodtype = "O+"};
-            case "O_N": {_bloodtype = "O-"};
+            case "O": {_bloodtype = "0+"};
+            case "O_N": {_bloodtype = "0-"};
             case "A": {_bloodtype = "A+"};
             case "A_N": {_bloodtype = "A-"};
             case "B": {_bloodtype = "B+"};

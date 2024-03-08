@@ -12,7 +12,8 @@ YetheSamartaka (https://github.com/YetheSamartaka)
 Battlekeeper (https://github.com/Battlekeeper)
 MJSTIC (https://github.com/mazinskihenry)
 Digii / Julian (https://github.com/AtrixZockt)
-
+MiszczuZPolski (https://github.com/MiszczuZPolski)
+Blue (https://github.com/BlueTheKing)
 
 # ORIGINAL AUTHOR
 Katalam (https://github.com/Katalam)
@@ -36,3 +37,5 @@ DMKR
 [MCOE] Kile
 Nilia
 Eughenos
+Solbak
+Tapawingo

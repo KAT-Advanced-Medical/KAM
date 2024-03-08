@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Glowbal
  * Calculate the total blood loss of a unit.
@@ -24,4 +24,4 @@ private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);
 private _alphaAction = _unit getVariable [QGVAR(alphaAction), 1];
 
 // even if heart stops blood will still flow slowly (gravity)
-(_woundBleeding * (_cardiacOutput max 0.05) * ACEGVAR(medical,bleedingCoefficient) * _alphaAction)
+(_woundBleeding * (_cardiacOutput max EGVAR(circulation,cardiacArrestBleedRate)) * ACEGVAR(medical,bleedingCoefficient) * _alphaAction)

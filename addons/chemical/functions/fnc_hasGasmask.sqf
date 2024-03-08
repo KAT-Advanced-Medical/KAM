@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Player <OBJECT>
  * 1: Target <OBJECT>
@@ -26,4 +26,4 @@ private _patientarr = _patient call ACEFUNC(common,uniqueItems);
 private _patienthasGasmask = false;
 { if(_x in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_patienthasGasmask = true} } forEach _patientarr;
 
-if (!_playerhasGasmask && !_patienthasGasmask) then { false } else { true }
+[true, false] select (!_playerhasGasmask && !_patienthasGasmask);

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGi
  * Initalizes the "Open Unit medical menu" Zeus module.
@@ -19,18 +19,18 @@ params ["_logic"];
 
 if !(local _logic) exitWith {};
 
-    private _mouseOver = GETMVAR(bis_fnc_curatorObjectPlaced_mouseOver,[""]);
+private _mouseOver = GETMVAR(bis_fnc_curatorObjectPlaced_mouseOver,[""]);
 
-    if ((_mouseOver select 0) != "OBJECT") then {
-        [LSTRING(NothingSelected)] call FUNC(showMessage);
+if ((_mouseOver select 0) != "OBJECT") then {
+    [ACELSTRING(zeus,NothingSelected)] call FUNC(showMessage);
+} else {
+    private _unit = effectivecommander (_mouseOver select 1);
+
+    if !(_unit isKindOf "CAManBase") then {
+        [ACELSTRING(zeus,OnlyInfantry)] call FUNC(showMessage);
     } else {
-        private _unit = effectivecommander (_mouseOver select 1);
-
-        if !(_unit isKindOf "CAManBase") then {
-            [LSTRING(OnlyInfantry)] call FUNC(showMessage);
-        } else {
-            [_unit] call ACEFUNC(medical_gui,openMenu);
-        };
+        [_unit] call ACEFUNC(medical_gui,openMenu);
     };
+};
 
 deleteVehicle _logic;

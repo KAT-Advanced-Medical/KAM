@@ -7,12 +7,14 @@ class CfgPatches {
         units[] = {
             "kat_guedelItem",
             "kat_larynxItem",
+            "kat_suctionItem",
             "kat_accuvacItem",
             "kat_vomit"
         };
         weapons[] = {
             "kat_guedel",
             "kat_larynx",
+            "kat_suction",
             "kat_accuvac"
         };
         magazines[] = {};
@@ -40,8 +42,8 @@ class CfgPatches {
 };
 
 #include "CfgSounds.hpp"
-#include "CfgFunctions.hpp"
 #include "CfgEventHandlers.hpp"
+#include "CfgMoves.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"

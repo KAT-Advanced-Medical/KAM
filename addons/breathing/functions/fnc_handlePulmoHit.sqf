@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * Called when a unit is damaged.
@@ -20,41 +20,43 @@
  * Public: No
  */
 
- params ["_unit", "_allDamages", "", "_ammo"];
- _allDamages select 0 params ["_damage","_bodyPart"];
+params ["_unit", "_allDamages", "", "_ammo"];
+_allDamages select 0 params ["_damage", "_bodyPart"];
 
 if (!(GVAR(enable)) || !(_bodyPart isEqualTo "Body") || !(_ammo isKindOF "BulletBase")) exitWith {};
 //Other mods can utilise KAT_Pneumothorax_Exclusion variable to prevent Pneumothorax from happening
 if ((_damage < GVAR(pneumothoraxDamageThreshold)) || (_unit getVariable ["KAT_Pneumothorax_Exclusion", false])) exitWith {};
 
-private _hemo = _unit getVariable [QGVAR(hemopneumothorax), false];
-private _tension = _unit getVariable [QGVAR(tensionpneumothorax), false];
-
-if (random 100 <= GVAR(pneumothoraxChance)) then {
-    // add breathing sound
-    [_unit, 0.5] call ACEFUNC(medical_status,adjustPainLevel);
-    [_unit] call FUNC(handleBreathing);
-    _unit setVariable [QGVAR(pneumothorax), true, true];
-
-    // Prevent the patient from getting both hemothorax and tension pneumothorax at the same time
-    if (random 100 <= GVAR(advPtxChance) && !(_hemo || _tension) && GVAR(advPtxEnable)) then {
-        [_unit, 0.7] call ACEFUNC(medical_status,adjustPainLevel);
-
-        if (random 100 <= GVAR(hptxChance)) then {
-            _unit setVariable [QGVAR(hemopneumothorax), true, true];
-            [_unit] call EFUNC(circulation,updateInternalBleeding);
-        } else {
-            _unit setVariable [QGVAR(tensionpneumothorax), true, true];
-        };
-    };
+private _chanceIncrease = 0;
+if (GVAR(pneumothoraxDamageThreshold_TakenDamage)) then {
+    _chanceIncrease = linearConversion [GVAR(pneumothoraxDamageThreshold), 3, _damage, 0, 30, true];
 };
 
-if ((random(100) <= GVAR(deterioratingPneumothorax_chance)) && (_unit getVariable [QGVAR(pneumothorax), false]) && GVAR(advPtxEnable)) then {
-    [{
-        params ["_unit"];
-        if ((_hemo || _tension || !(alive _unit)) || !(_unit getVariable [QGVAR(pneumothorax), false])) exitWith {};
-        [_unit, 0.7] call ACEFUNC(medical_status,adjustPainLevel);
+if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
+    if (_unit getVariable [QGVAR(pneumothorax), 0] isEqualto 0 && !(_unit getVariable [QGVAR(tensionpneumothorax), false])) then { // Initial pneumothorax
+        // add breathing sound
+        [_unit, 0.2] call ACEFUNC(medical_status,adjustPainLevel);
         [_unit] call FUNC(handleBreathing);
-        _unit setVariable [QGVAR(tensionpneumothorax), true, true];
-    }, [_unit], GVAR(deterioratingPneumothorax_countdown)] call CBA_fnc_waitAndExecute;
+        _unit setVariable [QGVAR(pneumothorax), 1, true];
+        _unit setVariable [QGVAR(deepPenetratingInjury), true, true];
+        _unit setVariable [QGVAR(activeChestSeal), false, true];
+
+        // Start deteriorating after delay
+        [_unit, _chanceIncrease] call FUNC(handlePneumothoraxDeterioration);
+    } else {
+        if (_unit getVariable [QGVAR(tensionpneumothorax), false]) then { // If already afflicted with tensionpneumothorax -> fully deteriorate pneumothorax
+            _unit setVariable [QGVAR(pneumothorax), 4, true];
+            _unit setVariable [QGVAR(activeChestSeal), false, true];
+        } else {
+            if (GVAR(advPtxEnable)) then {
+                // Roll chance to get advanced pneumothorax while afflicted with early stage of pneumothorax
+                [_unit, _chanceIncrease] call FUNC(inflictAdvancedPneumothorax);
+            };
+        };
+    };
+} else { // Damage threshold was passed but no pneumothorax given, try to just give injury instead
+    if (floor (random 100) < GVAR(deepPenetratingInjuryChance)) then {
+        _unit setVariable [QGVAR(deepPenetratingInjury), true, true];
+        _unit setVariable [QGVAR(activeChestSeal), false, true];
+    };
 };

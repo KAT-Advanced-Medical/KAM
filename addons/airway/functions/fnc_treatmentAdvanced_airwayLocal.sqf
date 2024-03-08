@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam, edited by MiszczuZPolski & Miss Heda
  * Airway Management for collapsing local
@@ -21,7 +21,7 @@
 params ["_medic", "_patient","_classname", "_usedItem"];
 
 if (_patient getVariable [QGVAR(occluded), false]) exitWith {
-    [QGVAR(airwayFeedback), [_medic, LLSTRING(Airway_NotClearForItem)], _medic] call CBA_fnc_targetEvent;
+    [QGVAR(airwayFeedback), [_medic, LLSTRING(AirwayStatus_NotClearForItem)], _medic] call CBA_fnc_targetEvent;
     [_medic, _usedItem] call ACEFUNC(common,addToInventory);
 };
 

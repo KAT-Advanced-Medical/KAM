@@ -1,9 +1,9 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
  * This cant be called manualy!
  * Handles the Gas effect for the AI
- * 
+ *
  * Arguments:
  * 0: Target <OBJECT>
  * 1: Module <Logic>
@@ -23,7 +23,7 @@
 params ["_unit", "_logic", "_pos", "_radius_max", "_gastype"];
 
 if (!isDamageAllowed _unit) exitWith {
-    [_unit] call FUNC(clearChemicalInjuriesLocal);    
+    [_unit] call FUNC(clearChemicalInjuriesLocal);
 };
 
 [
@@ -39,7 +39,6 @@ if (!isDamageAllowed _unit) exitWith {
     [_logic,_unit]
 ] call CBA_fnc_addPerFrameHandler;
 
-private _skill = _unit skill "aimingAccuracy";
 [
     {
         params["_args","_handler"];
@@ -51,11 +50,12 @@ private _skill = _unit skill "aimingAccuracy";
 
         if ((_unit distance _pos) <= _radius_max && !(_unit getVariable [QGVAR(enteredPoison), false])) then {
             _unit setVariable [QGVAR(enteredPoison), true, true];
+            private _skill = _unit skill "aimingAccuracy";
             private _fnc_afterwait = {
                 params ["_unit", "_gastype", "_pos", "_skill"];
                 if !((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) exitwith {
                     if (_gastype isEqualTo "CS") then {
-                        while {_unit distance _pos < 10 && _unit getVariable [QGVAR(enteredPoison), false]} do {
+                        if {_unit distance _pos < 10 && _unit getVariable [QGVAR(enteredPoison), false]} do {
                             _unit say3D QGVAR(cough_1);
                             _unit setskill ["aimingAccuracy", 0.001];
                             [
@@ -64,7 +64,7 @@ private _skill = _unit skill "aimingAccuracy";
                                     _unit setskill ["aimingAccuracy", _skill];
                                 },
                                 [_unit, _skill],
-                                2
+                                30
                             ] call CBA_fnc_waitAndExecute;
                         };
                     } else {

@@ -11,8 +11,8 @@ class CfgPatches {
         weapons[] = { "Attachable_Helistretcher" };
         magazines[] = { };
         requiredAddons[] = {
-            "kat_main",
             "ace_medical",
+            "kat_main",
             "ace_medical_ai",
             "ace_medical_blood",
             "ace_medical_damage",

@@ -15,9 +15,8 @@
 #endif
 
 #include "\x\kat\addons\main\script_macros.hpp"
-#include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
 
-#define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
-#define VAR_TOURNIQUET              "ACE_medical_tourniquets"
-#define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
-#define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
+#define MEDICAL_TREATMENT_ITEMS (call (uiNamespace getVariable [QACEGVAR(medical_treatment,treatmentItems), {[]}]))
+
+#define DAMAGED_MIN_THRESHOLD 0.45
+#define LIMPING_MIN_DAMAGE 0.5

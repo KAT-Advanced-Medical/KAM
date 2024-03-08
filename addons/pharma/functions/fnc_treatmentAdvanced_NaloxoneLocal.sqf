@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Mazinski.H
  * Locates and Removes 1x Morphine after the administration of Naloxone.

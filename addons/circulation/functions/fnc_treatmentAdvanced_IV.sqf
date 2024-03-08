@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * Handle the IV for the patient with blood types. Have to be local to avoid effect on all clients.
@@ -16,11 +16,25 @@
  * Public: No
  */
 
-params ["_className", "_target"];
+params ["_className", "_unit"];
 
 //unit, adjustment, time
 private _volume = getNumber (configFile >> "ACE_Medical_Treatment" >> "IV" >> _className >> "volume");
 
-private _hradjust = -(_volume / 4);
+private _hradjust = -_volume;
 
-[_target, "BloodPoisoning", 150, 300, _hradjust, 0, -10] call ACEFUNC(medical_status,addMedicationAdjustment);
+[_unit, "BloodPoisoning", 150, 300, _hradjust, 0, -10] call ACEFUNC(medical_status,addMedicationAdjustment);
+
+[{
+    params ["_unit"];
+
+    if !(_unit getVariable [VAR_CRDC_ARRST, false]) then {
+        private _medicationArray = _unit getVariable [QACEGVAR(medical,medications), []];
+        private _index = _medicationArray findIf {(_x select 0) isEqualTo "BloodPoisoning"};
+
+        if (_index > -1) then {
+            [QGVAR(bloodPoisoning), _unit, _unit] call CBA_fnc_targetEvent;
+        };
+    };
+    
+}, [_unit], 150] call CBA_fnc_waitAndExecute;

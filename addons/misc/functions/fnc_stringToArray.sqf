@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Digii
  * Splits an string into an array. (that can be used by CBA settings)
@@ -18,6 +18,10 @@
  */
 
 params ["_str", "_spliter", "_returnNumber"];
+
+if (typeName _str == "ARRAY") exitWith {
+    _str
+};
 
 private _clipstring = _str splitstring _spliter;
 private _array = [];

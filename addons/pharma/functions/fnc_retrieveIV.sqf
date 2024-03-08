@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: 2LT.Mazinski
  * Retrieves the IV/IO from a patient and returns additional fluids to the medic.

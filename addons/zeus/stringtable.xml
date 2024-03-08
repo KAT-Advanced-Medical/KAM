@@ -11,11 +11,12 @@
             <Turkish>ACE-Eczacılık etkinleştirildi mi?</Turkish>
             <Korean>기도가 혀에 의해 막히게 하기: </Korean>
             <Chinese>气道闭塞: </Chinese>
-            <Japanese>気道閉塞:</Japanese>
+            <Japanese>気道狭窄:</Japanese>
             <Russian>Обструкция дыхательных путей:</Russian>
             <Italian>Ostruzione delle vie aeree</Italian>
             <Chinesesimp>气道闭塞:</Chinesesimp>
             <Portuguese>Obstrução de vias aéreas:</Portuguese>
+            <Finnish>Hengitysteiden tukos: </Finnish>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Occlusion">
             <English>Airway occlusion: </English>
@@ -27,11 +28,12 @@
             <Korean>기도가 구토에 의해 막히게 하기: </Korean>
             <Chinese>气道闭塞: </Chinese>
             <Turkish>Hava yolu tıkanıklığı: </Turkish>
-            <Japanese>気道異物:</Japanese>
+            <Japanese>気道異物閉塞:</Japanese>
             <Russian>Окклюзия дыхательных путей:</Russian>
             <Italian>Occlusione delle vie aeree</Italian>
             <Chinesesimp>气道阻塞:</Chinesesimp>
             <Portuguese>Oclusão das vias aéreas:</Portuguese>
+            <Finnish>Hengitysteiden likaantuminen: </Finnish>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Pneumothorax">
             <English>Pneumothorax: </English>
@@ -48,6 +50,11 @@
             <Italian>Pneumotorace</Italian>
             <Chinesesimp>气胸:</Chinesesimp>
             <Portuguese>Pneumotórax:</Portuguese>
+            <Finnish>Lohistunut keuhko: </Finnish>
+        </Key>
+        <Key ID="STR_KAT_Zeus_ModuleManageAirway_PneumothoraxDeteriorate">
+            <English>Pneumothorax deteriorate:</English>
+            <Japanese>気胸の悪化:</Japanese>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Hemopneumothorax">
             <English>Hemopneumothorax: </English>
@@ -64,6 +71,7 @@
             <Italian>Emopneumotorace</Italian>
             <Chinesesimp>血气胸:</Chinesesimp>
             <Portuguese>Hemopneumotórax:</Portuguese>
+            <Finnish>Verenvuoto paisunut keuhko: </Finnish>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Tensionpneumothorax">
             <English>Tension pneumothorax: </English>
@@ -80,6 +88,7 @@
             <Italian>Pneumotorace iperteso</Italian>
             <Chinesesimp>张力性气胸:</Chinesesimp>
             <Portuguese>Pneumotórax hipertensivo:</Portuguese>
+            <Finnish>Lamannut keuhko jännityksen alaisena: </Finnish>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_SpO2Value">
             <English>SpO2 value: </English>
@@ -96,6 +105,7 @@
             <Italian>Valore di SpO2</Italian>
             <Chinesesimp>SpO2值:</Chinesesimp>
             <Portuguese>Valor de SpO2:</Portuguese>
+            <Finnish>Veren happitaso (SpO2): </Finnish>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_bloodGroup">
             <English>Blood group: </English>
@@ -112,6 +122,7 @@
             <Italian>Gruppo sanguigno</Italian>
             <Chinesesimp>血型:</Chinesesimp>
             <Portuguese>Tipo sanguíneo:</Portuguese>
+            <Finnish>Veriryhmä: </Finnish>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_bloodVolume">
             <English>Blood volume: </English>
@@ -128,9 +139,10 @@
             <Italian>Volume di sangue</Italian>
             <Chinesesimp>血液量:</Chinesesimp>
             <Portuguese>Volume de sangue:</Portuguese>
+            <Finnish>Veren määrä</Finnish>
         </Key>
         <Key ID="STR_KAT_Zeus_manageAirway_Module_displayname">
-            <English>Manage Airways</English>
+            <English>Manage Airway</English>
             <German>Atemwege verwalten</German>
             <Czech>Upravit dýchací cesty</Czech>
             <French>Gestion des voies aériennes</French>
@@ -139,11 +151,12 @@
             <Chinese>管理航空公司</Chinese>
             <Korean>기도 관리</Korean>
             <Turkish>Hava Yollarını Yönet</Turkish>
-            <Japanese>気道を管理する</Japanese>
+            <Japanese>気道の管理</Japanese>
             <Russian>Управление авиалиниями</Russian>
             <Italian>Gestisci le vie aeree</Italian>
             <Chinesesimp>气道管理:</Chinesesimp>
             <Portuguese>Gerenciar vias aéreas</Portuguese>
+            <Finnish>Hallitse hengitysteitä</Finnish>
         </Key>
         <Key ID="STR_KAT_Zeus_bloodType_Module_displayname">
             <English>Change blood group / volume</English>
@@ -155,27 +168,22 @@
             <Chinese>改变血型/血量</Chinese>
             <Korean>혈액형/혈액량 변경</Korean>
             <Turkish>Kan grubunu / hacmini değiştir</Turkish>
-            <Japanese>血液型/容量を変更する</Japanese>
+            <Japanese>血液型/血液量を変更</Japanese>
             <Russian>Изменить группу/объем крови</Russian>
             <Italian>Cambia gruppo sanguigno e volume</Italian>
             <Chinesesimp>改变血型/血液量:</Chinesesimp>
             <Portuguese>Alterar tipo sanguíneo/volume</Portuguese>
+            <Finnish>Muuta verityyppiä/tilavuutta</Finnish>
         </Key>
-        <Key ID="STR_KAT_Zeus_shockablestate_Module_displayname">
-            <English>Change shockable state</English>
-            <German>Schockzustand ändern</German>
-            <Czech>Změnit šokovatelný stav</Czech>
-            <French>Changer rythme chocable/non-chocable</French>
-            <Polish>Zmień rytm serca</Polish>
-            <Spanish>Cambiar estado de fibrilación cardíaca</Spanish>
-            <Chinese>改变可冲击状态</Chinese>
-            <Korean>심정지 상태 변경</Korean>
-            <Turkish>Şok edilebilir durumu değiştir</Turkish>
-            <Japanese>ショック状態を変える</Japanese>
-            <Russian>Изменить шоковое состояние</Russian>
-            <Italian>Cambia stato defibrillabile</Italian>
-            <Chinesesimp>改变电击状态:</Chinesesimp>
-            <Portuguese>Alterar estado de fibrilação cardíaca</Portuguese>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_displayname">
+            <English>Change Cardiac State</English>
+            <Japanese>心臓の状態を変更</Japanese>
+            <French>Changer de condition cardiaque</French>
+            <Korean>심장 상태 변경</Korean>
+            <German>Ändern Sie den Herzzustand</German>
+            <Portuguese>Alterar estado cardíaco</Portuguese>
+            <Spanish>Cambiar estado cardíaco</Spanish>
+            <Finnish>Muuta sydämen tilaa</Finnish>
         </Key>
         <Key ID="STR_KAT_Zeus_checkmedical_Module_displayname">
             <English>Open unit medical menu</English>
@@ -192,118 +200,81 @@
             <Italian>Apri il menu medico</Italian>
             <Chinesesimp>打开单位医疗菜单</Chinesesimp>
             <Portuguese>Abra o menu médico da unidade</Portuguese>
+            <Finnish>Avaa laitteen lääketieteellinen valikko</Finnish>
         </Key>
-        <Key ID="STR_KAT_Zeus_shockablestate_Module_state">
-            <English>State: </English>
-            <German>Wert: </German>
-            <Czech>Stav: </Czech>
-            <French>Etat: </French>
-            <Polish>Rytm: </Polish>
-            <Spanish>Estado: </Spanish>
-            <Chinese>州。</Chinese>
-            <Korean>상태: </Korean>
-            <Turkish>Belirtmek: </Turkish>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_State">
+            <English>State:</English>
+            <German>Wert:</German>
+            <Czech>Stav:</Czech>
+            <French>Etat:</French>
+            <Polish>Rytm:</Polish>
+            <Spanish>Estado:</Spanish>
+            <Chinese>州</Chinese>
+            <Korean>상태:</Korean>
+            <Turkish>Belirtmek:</Turkish>
             <Japanese>状態:</Japanese>
             <Russian>Состояние:</Russian>
-            <Italian>Stato: </Italian>
+            <Italian>Stato:</Italian>
             <Chinesesimp>状态:</Chinesesimp>
             <Portuguese>Estado:</Portuguese>
+            <Finnish>Olotila:</Finnish>
         </Key>
-        <Key ID="STR_KAT_Zeus_shockablestate_Module_shockable">
-            <English>Shockable (VF/PVT)</English>
-            <German>Schockbar (VF/PVT)</German>
-            <Czech>Šokovatelný (VF/PVT)</Czech>
-            <French>Choquable (FV/TV)</French>
-            <Polish>Defibrylacyjny (VF/PVT)</Polish>
-            <Spanish>Desfibrilable (FV/TV)</Spanish>
-            <Chinese>可休克(VF/PVT)</Chinese>
-            <Korean>쇼크성 심정지(VF/PVT)</Korean>
-            <Turkish>Şok Edilebilir (VF/PVT)</Turkish>
-            <Japanese>ショック可能 (VF/PVT)</Japanese>
-            <Russian>Шокирующий (VF/PVT)</Russian>
-            <Italian>Defibrillabile (VF/PVT)</Italian>
-            <Chinesesimp>电击类型(VF/PVT)</Chinesesimp>
-            <Portuguese>Desfibrilável (FV/TV)</Portuguese>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_VT">
+            <English>Ventricular Tachycardia</English>
+            <Japanese>心室頻拍(VT)</Japanese>
+            <French>Tachycardie ventriculaire</French>
+            <Korean>심실빈맥(VT)</Korean>
+            <German>Ventrikuläre Tachykardie</German>
+            <Portuguese>Taquicardia ventricular (TV)</Portuguese>
+            <Spanish>Taquicardia ventricular</Spanish>
+            <Finnish>Ventrikulaarinen takykardia: </Finnish>
         </Key>
-        <Key ID="STR_KAT_Zeus_shockablestate_Module_non_shockable">
-            <English>non-shockable (Asystole)</English>
-            <German>Nicht-Schockbar (Asystolie)</German>
-            <Czech>Nešokovatelný (Asystolie)</Czech>
-            <French>Non-choquable (Asystolie) </French>
-            <Polish>Niedefibrylacyjny (Asystolia)</Polish>
-            <Spanish>No desfibrilable (Asístolia)</Spanish>
-            <Chinese>非休克性 (Asystole)</Chinese>
-            <Korean>비-쇼크성 심정지(심부전수축)</Korean>
-            <Turkish>şoklanamaz (Asistoli)</Turkish>
-            <Japanese>ショック不要 (心静止)</Japanese>
-            <Russian>Без шока (асистолия)</Russian>
-            <Italian>Non defibrillabile (Asistolia)</Italian>
-            <Chinesesimp>非电击类型(心搏停止)</Chinesesimp>
-            <Portuguese>Não chocável (Assistolia)</Portuguese>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_VF">
+            <English>Ventricular Fibrillation</English>
+            <Japanese>心室細動(VF)</Japanese>
+            <French>Fibrillation ventriculaire</French>
+            <Korean>심실세동(VF)</Korean>
+            <German>Kammerflimmern (VF)</German>
+            <Portuguese>Fibrilação ventricular (FV)</Portuguese>
+            <Spanish>Fibrilación ventricular</Spanish>
+            <Finnish>Kammiovärinä:</Finnish>
         </Key>
-        <Key ID="STR_KAT_Zeus_NothingSelected">
-            <English>Place on a unit.</English>
-            <German>Es wurde nichts ausgewählt.</German>
-            <Czech>Položte na jednotku.</Czech>
-            <French>Placez sur une unité.</French>
-            <Polish>Połóż na jednostce.</Polish>
-            <Spanish>Colocar en una unidad.</Spanish>
-            <Chinese>放在一个单元上。</Chinese>
-            <Korean>유닛에 배치하십시오.</Korean>
-            <Turkish>Bir üniteye yerleştirin.</Turkish>
-            <Japanese>ユニットに置いてください。</Japanese>
-            <Russian>Поместите на единицу.</Russian>
-            <Italian>Piazza su un'unità</Italian>
-            <Chinesesimp>放置在一个单元上</Chinesesimp>
-            <Portuguese>Coloque em uma unidade.</Portuguese>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_PEA">
+            <English>Pulseless Electrical Activity</English>
+            <Japanese>無脈性電気活動(PEA)</Japanese>
+            <French>Activité électrique sans impulsion (PEA)</French>
+            <Korean>무맥박 전기활동(PEA)</Korean>
+            <German>Pulslose elektrische Aktivität (PEA)</German>
+            <Portuguese>Atividade elétrica sem pulso (AESP)</Portuguese>
+            <Spanish>Actividad eléctrica sin pulso</Spanish>
+            <Finnish>Pulssiton sähköinen toiminta:</Finnish>
         </Key>
-        <Key ID="STR_KAT_Zeus_OnlyInfantry">
-            <English>Unit must be infantry.</English>
-            <German>Nur bei abgesessener Infanterie verwendbar.</German>
-            <Czech>Jednotka musí být pěchota.</Czech>
-            <French>L'unité doit être une infanterie.</French>
-            <Polish>Jednostką musi być piechota.</Polish>
-            <Spanish>La unidad debe ser infantería.</Spanish>
-            <Chinese>单位必须是步兵。</Chinese>
-            <Korean>유닛은 보병이어야 합니다.</Korean>
-            <Turkish>Birim piyade olmalıdır.</Turkish>
-            <Japanese>ユニットは歩兵でなければなりません。</Japanese>
-            <Russian>Юнит должен быть пехотным.</Russian>
-            <Italian>L'unità deve essere di fanteria.</Italian>
-            <Chinesesimp>单位必须是步兵</Chinesesimp>
-            <Portuguese>A unidade deve ser de infantaria.</Portuguese>
+        <Key ID="STR_KAT_Zeus_CardiacState_Module_Asystole">
+            <English>Asystole</English>
+            <German>Asystolie</German>
+            <Czech>Asystolie</Czech>
+            <French>Asystolie</French>
+            <Polish>Asystolia</Polish>
+            <Spanish>Asístolia</Spanish>
+            <Chinese>Asystole</Chinese>
+            <Korean>심정지</Korean>
+            <Turkish>Asistoli</Turkish>
+            <Japanese>心静止(Asystole)</Japanese>
+            <Russian>асистолия</Russian>
+            <Italian>Asistolia</Italian>
+            <Chinesesimp>心搏停止</Chinesesimp>
+            <Portuguese>Assistolia</Portuguese>
+            <Finnish>Sydämenpysähdys</Finnish>
         </Key>
-        <Key ID="STR_KAT_Zeus_MustBeAlive">
-            <English>Unit must be alive.</English>
-            <German>Einheit muss am Leben sein.</German>
-            <Czech>Jednotka musí být naživu.</Czech>
-            <French>L'unité doit être vivante.</French>
-            <Polish>Jednostka musi być żywa.</Polish>
-            <Spanish>La unidad debe estar viva.</Spanish>
-            <Chinese>单位必须是活的。</Chinese>
-            <Korean>유닛이 살아 있어야 합니다.</Korean>
-            <Turkish>Birim canlı olmalı.</Turkish>
-            <Japanese>ユニットは生きている必要があります。</Japanese>
-            <Russian>Юнит должен быть жив.</Russian>
-            <Italian>L'unità deve essere viva</Italian>
-            <Chinesesimp>单位必须处于存活状态</Chinesesimp>
-            <Portuguese>A unidade deve estar viva.</Portuguese>
-        </Key>
-        <Key ID="STR_KAT_Zeus_NotUnconscious">
-            <English>Unit must be unconscious.</English>
-            <German>Einheit muss bewusstlos sein.</German>
-            <Czech>Jednotka musí být při vědomí.</Czech>
-            <French>L'unité doit être inconsciente.</French>
-            <Polish>Jednostka musi być nieprzytomna.</Polish>
-            <Spanish>La unidad debe estar inconsciente.</Spanish>
-            <Chinese>单位必须是无意识的。</Chinese>
-            <Korean>유닛은 의식이 없어야 합니다.</Korean>
-            <Turkish>Ünite bilinçsiz olmalıdır.</Turkish>
-            <Japanese>ユニットは意識を失っている必要があります。</Japanese>
-            <Russian>Юнит должен быть без сознания.</Russian>
-            <Italian>L'unità deve essere viva.</Italian>
-            <Chinesesimp>单位必须是无意识的</Chinesesimp>
-            <Portuguese>A unidade deve estar inconsciente.</Portuguese>
+        <Key ID="STR_KAT_Zeus_OnlyAI">
+            <English>Unit must be an AI</English>
+            <French>L'unité doit être une IA</French>
+            <Korean>유닛은 반드시 AI여야 합니다</Korean>
+            <Japanese>ユニットはAIである必要があります</Japanese>
+            <German>Die Einheit muss eine KI sein</German>
+            <Portuguese>A unidade deve ser uma IA</Portuguese>
+            <Spanish>La unidad debe ser una IA</Spanish>
+            <Finnish>Yksikön on oltava AI</Finnish>
         </Key>
         <Key ID="STR_KAT_Zeus_sliderFormat13was23">
             <English>%1%3 (was %2%3)</English>
@@ -320,6 +291,27 @@
             <Italian>%1%3 (era %2%3)</Italian>
             <Chinesesimp>%1%3 (以前是 %2%3)</Chinesesimp>
             <Portuguese>%1%3 (era %2%3)</Portuguese>
+            <Finnish>%1%2(oli %2%3)</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_displayname">
+            <English>Toggle Instant AI Death</English>
+            <French>Activer/Désactiver la mort instantanée de l'IA</French>
+            <Korean>인공지능 즉사 토글</Korean>
+            <Japanese>AIの即死を切り替え</Japanese>
+            <German>Schalte sofortiger KI-Tod um</German>
+            <Portuguese>Alternar morte instantânea de IA</Portuguese>
+            <Spanish>Alternar muerte instantánea de la IA</Spanish>
+            <Finnish>Valitse välitön AI-kuolema</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_Toggled">
+            <English>Instant AI Death %1 for unit</English>
+            <French>Mort instantanée de l'IA %1 pour l'unité</French>
+            <Korean>유닛에 AI 즉사 %1</Korean>
+            <Japanese>このAIユニットの即死は %1 になりました</Japanese>
+            <German>Sofortiger KI-Tod %1 für die Einheit</German>
+            <Portuguese>Morte instantânea de IA %1 para unidade</Portuguese>
+            <Spanish>Muerte instantánea de la IA al %1 para la unidad</Spanish>
+            <Finnish>Välitön AI-kuolema %1 yksikölle</Finnish>
         </Key>
     </Package>
 </Project>

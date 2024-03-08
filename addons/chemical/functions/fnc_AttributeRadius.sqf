@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  *
  * Return Value:
  * NONE
@@ -14,8 +14,8 @@
  *
 */
 
-
 params ["_control"];
+
 private _display = ctrlParent _control;
 private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
 _control ctrlRemoveAllEventHandlers "SetFocus";
@@ -28,11 +28,11 @@ if!(isNull attachedTo _logic) then {
     _sealCheckBox ctrlShow true;
     _sealText ctrlShow true;
 
-    _placeText ctrlSetText CSTRING(GasModule_createContaminatedObject);
+    _placeText ctrlSetText LLSTRING(GasModule_createContaminatedObject);
 } else {
     _sealCheckBox ctrlShow false;
     _sealText ctrlShow false;
-    _placetext ctrlSetText CSTRING(GasModule_createContaminatedZone);
+    _placetext ctrlSetText LLSTRING(GasModule_createContaminatedZone);
 };
 
 private _gasTypeCombo = _display displayCtrl 1615;
@@ -93,5 +93,5 @@ private _fnc_onLBSelChange = {
 [_sealCheckBox] call _fnc_onCheckChange;
 [_gasTypeCombo] call _fnc_onCheckChange;
 _display displayAddEventHandler ["KeyUp", _fnc_onKeyUp];
-_sealCheckBox ctrlAddEventHandler ["CheckedChanged", _fnc_onCheckChange]; 
-_gasTypeCombo ctrlAddEventHandler ["LBSelChanged", _fnc_onLBSelChange]; 
+_sealCheckBox ctrlAddEventHandler ["CheckedChanged", _fnc_onCheckChange];
+_gasTypeCombo ctrlAddEventHandler ["LBSelChanged", _fnc_onLBSelChange];

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Handle removing item / magazine from vehicle
@@ -12,12 +12,12 @@
  * None
  *
  * Example:
- * [player,"ACE_elasticBandage"] call kat_misc_fnc_removeItemFromVehicle
+ * [vehicle player, "kat_Painkiller", true] call kat_misc_fnc_removeItemFromVehicle
  *
  * Public: No
  */
 
-params ["_vehicle","_item",["_isMagazine",false]];
+params ["_vehicle", "_item", ["_isMagazine", false]];
 
 if !(_isMagazine) then {
     private _cargoItems = getItemCargo _vehicle;

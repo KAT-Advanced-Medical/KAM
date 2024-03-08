@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * Initializes unit variables.
@@ -15,20 +15,6 @@
  * Public: No
  */
 
-params ["_unit", ["_isRespawn", true]];
+params ["_unit"];
 
-if (!local _unit) exitWith {};
-
-_unit setVariable [QGVAR(X), false, true];
-_unit setVariable [QGVAR(AED_X_Volume), true, true];
-_unit setVariable [QGVAR(AED_X_VolumePatient), false, true];
-_unit setVariable [QGVAR(use), false, true];
-_unit setVariable [QGVAR(returnedAED), false, true];
-_unit setVariable [QGVAR(asystole), 1, true];
-_unit setVariable [QGVAR(CPRcount), 2, true];
-_unit setVariable [QGVAR(AEDinUse), false, true];
-_unit setVariable [QGVAR(soundPlayed), false, true];
-
-_unit setVariable [QGVAR(AEDvehicleName), "", true];
-_unit setVariable [QGVAR(vehicleTrue), false, true];
-_unit setVariable [QGVAR(AEDvehicle), false, true];
+_unit setVariable [QGVAR(cprCount), 2, true];

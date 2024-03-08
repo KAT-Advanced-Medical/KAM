@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Target <OBJECT>
  *
@@ -21,7 +21,7 @@ private _action = [
     "",
     {
         params["_target", "_player"];
-        
+
         [_player, "Acts_carFixingWheel"] call ACEFUNC(common,doAnimation);
 
         //add time to addon options
