@@ -39,9 +39,9 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
             [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog)] call FUNC(removeLog);
             [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog)] call FUNC(removeLog);
 
-            [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog_HasCannula)] call FUNC(removeLog);
-            [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog_HasCannula)] call FUNC(removeLog);
-            [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog_HasCannula)] call FUNC(removeLog);
+            [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
+            [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
+            [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
         };
 
         //No Values for your Monitor atm
@@ -52,9 +52,9 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog)] call FUNC(removeLog);
         [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog)] call FUNC(removeLog);
 
-        [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog_HasCannula)] call FUNC(removeLog);
-        [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog_HasCannula)] call FUNC(removeLog);
-        [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog_HasCannula)] call FUNC(removeLog);
+        [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
+        [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
+        [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor)] call FUNC(removeLog);
 
         private _partIndex = ((_patient getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [objNull, -1, 3]]) select 2);
         private _tourniquetApplied = HAS_TOURNIQUET_APPLIED_ON(_patient,_partIndex);
@@ -100,7 +100,7 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
             // heart rate, systolic / diastolic, spO2
             // TODO check NasalCannula is connected
             // if connected
-            [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog_HasCannula), [round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
+            [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog_HasEtco2Monitor), [round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
             // if disconnected
             //[_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog), [round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2)]] call ACEFUNC(medical_treatment,addToLog);
         } else {
@@ -108,9 +108,9 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
 
             // if connected
             if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
-                [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog_HasCannula), [round(_hr), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
+                [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog_HasEtco2Monitor), [round(_hr), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
             } else {
-                [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog_HasCannula), [round(_pr), round(_bp select 1), round(_bp select 0), round(_spO2), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
+                [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor), [round(_pr), round(_bp select 1), round(_bp select 0), round(_spO2), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
             };
 
             // if disconnected

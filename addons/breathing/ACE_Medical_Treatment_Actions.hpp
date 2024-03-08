@@ -280,8 +280,8 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_NasalCannula);
         treatmentTime = QGVAR(NasalCannula_time);
         items[] = {"kat_nasal"};
-        condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(hasCannula),'')] == false));
-        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(hasCannula),true,true)]);
+        condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(hasEtco2Monitor),'')] == false));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(hasEtco2Monitor),true,true)]);
         callbackFailure = "";
         callbackProgress = "";
         callbackCondition = "useCondition";
@@ -302,7 +302,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_NasalCannula);
         treatmentTime = QGVAR(NasalCannula_time);
         items[] = {};
-        condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(hasCannula),'')] == true));
-        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(hasCannula),false,true)]);
+        condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && (_patient getVariable [ARR_2(QQGVAR(hasEtco2Monitor),'')] == true));
+        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(hasEtco2Monitor),false,true)]);
     };
 };

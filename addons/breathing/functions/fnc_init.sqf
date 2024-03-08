@@ -29,4 +29,4 @@ _unit setVariable [QGVAR(pulseoximeter), false, true];
 _unit setVariable [QGVAR(PulseOximeter_Volume), true, true];
 _unit setVariable [QGVAR(PulseOximeter_VolumePatient), false, true];
 
-_unit setVariable [QGVAR(hasCannula), false, true];
+_unit setVariable [QGVAR(hasEtco2Monitor), false, true];
