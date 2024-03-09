@@ -32,6 +32,10 @@ private _cardiacArrestType = 0;
 if !(GVAR(AdvRhythm)) exitWith {};
 if !(alive _unit) exitWith {_unit setVariable [QGVAR(cardiacArrestType), 1, true];};
 
+if ((_unit getVariable [QGVAR(cardiacArrestType), 0] != 0) && _initial) then {
+    _initial = false;
+};
+
 if (_initial) then {
     if !(_active) exitWith {};
 

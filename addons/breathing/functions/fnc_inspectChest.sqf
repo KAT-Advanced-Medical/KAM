@@ -86,6 +86,7 @@ if (GET_HEART_RATE(_patient) isEqualTo 0) then {
     };
 };
 
+[_patient, "quick_view", LSTRING(inspectChest_log)] call EFUNC(circulation,removeLog);
 [_patient, "quick_view", LSTRING(inspectChest_log), [[_medic] call ACEFUNC(common,getName), _messageLog]] call ACEFUNC(medical_treatment,addToLog);
 
 if (_patient getVariable [QGVAR(hemopneumothorax), false] && {!_simpleSetting}) then {

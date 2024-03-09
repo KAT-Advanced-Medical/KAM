@@ -29,8 +29,8 @@ private _targetName = [_target, false, true] call ACEFUNC(common,getName);
 private _targetBlood = _target call EFUNC(circulation,bloodType);
 
 switch (_targetBlood) do {
-    case "O": {_targetBlood = "O+"};
-    case "O_N": {_targetBlood = "O-"};
+    case "O": {_targetBlood = "0+"};
+    case "O_N": {_targetBlood = "0-"};
     case "A": {_targetBlood = "A+"};
     case "A_N": {_targetBlood = "A-"};
     case "B": {_targetBlood = "B+"};

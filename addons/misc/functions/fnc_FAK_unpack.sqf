@@ -29,7 +29,6 @@ private _fnc_arrayToInvItem = {
         for "_i" from 1 to (_x select 1) do
         {
             private _inventory = [_unit, _x select 0, _container] call ACEFUNC(common,addToInventory);
-
             if !(_inventory select 0) then {
                 if (isNil "_groundContainer") exitWith {
                     _groundContainer = _inventory select 1;
@@ -53,6 +52,16 @@ private _fnc_getContainer = {
         case 2: {"vest"};
         case 3: {"backpack"};
         default {""};
+    };
+};
+
+private _fnc_getUnitContainer = {
+    params ["_container", "_unit"];
+
+    switch (_container) do {
+        case "Uniform": { uniformContainer _unit};
+        case "Vest": { vestContainer _unit};
+        case "Backpack": { backpackContainer _unit};
     };
 };
 
@@ -112,19 +121,24 @@ if (_itemType == "Item") exitWith {
 
 // ----- Handling for magazine -----
 
-private _ammoCount = [_unit, _item] call FUNC(getMagazineAmmoCounts);
-_unit removeItem _item;
+private _ammoCount = [_unit, _item, true] call FUNC(getMagazineAmmoCounts);
 private _lowestAmmoCount = 257;
+private _containerFAK = "";
 {
-    private _checkedArray = [_x, _type] call FUNC(FAK_ammoToArray);
+    private _checkedArray = [(_x select 0), _type] call FUNC(FAK_ammoToArray);
 
-    if (_x < _lowestAmmoCount && (_slot == 0 || (_slot > 0 && {_checkedArray select (_slot - 1)}))) then { // Get emptiest FAK
+    if ((_x select 0) < _lowestAmmoCount && (_slot == 0 || (_slot > 0 && {_checkedArray select (_slot - 1)}))) then { // Get emptiest FAK
         _slotArray = _checkedArray;
-        _lowestAmmoCount = _x;
+        _lowestAmmoCount = _x select 0;
+        _containerFAK = _x select 1;
     };
 } forEach _ammoCount;
 
 if !(_lowestAmmoCount < 257) exitWith {};
+
+private _unitContainer = [_containerFAK, _unit] call _fnc_getUnitContainer;
+
+_unitContainer addMagazineAmmoCargo [_item, -1, _lowestAmmoCount];
 
 if (_slot > 0) then {
     _slotArray set [(_slot - 1), false];
@@ -132,13 +146,13 @@ if (_slot > 0) then {
     private _remaining = [_slotArray] call FUNC(FAK_arrayToAmmo);
 
     if (_remaining > 0 || !_removeOnEmptyCondition) then {
-        [_unit, _FAKToAdd, "", _remaining] call ACEFUNC(common,addToInventory);
+        _unitContainer addMagazineAmmoCargo [_FAKToAdd, 1, _remaining];
     };
 
     [_unit, (_itemList select (_slot - 1)), _container] call _fnc_arrayToInvItem;
 } else {
     if !(_removeOnEmptyCondition) then {
-        [_unit, _FAKToAdd, "", 0] call ACEFUNC(common,addToInventory);
+        _unitContainer addMagazineAmmoCargo [_FAKToAdd, 1, 0];
     };
 
     {

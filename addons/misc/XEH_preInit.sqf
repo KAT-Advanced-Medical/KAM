@@ -90,8 +90,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingLeftArmPos_Display), LLSTRING(SETTING_ArmbandSlingLeftArmPos_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "0.2, -0.39, -0.2",
-    2
+    "[0.2, -0.39, -0.2]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingLeftArm), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingLeftArm), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband rotation left arm (yaw, pitch, roll)
@@ -100,8 +105,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingLeftArmRot_Display), LLSTRING(SETTING_ArmbandSlingLeftArmRot_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "240, 33, 26",
-    2
+    "[240, 33, 26]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingLeftArmRotation), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingLeftArmRotation), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband sling right arm (x, y, z)
@@ -110,8 +120,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingRightArmPos_Display), LLSTRING(SETTING_ArmbandSlingRightArmPos_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "-0.228, -0.1, -0.43",
-    2
+    "[-0.228, -0.1, -0.43]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingRightArm), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingRightArm), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband rotation right arm (yaw, pitch, roll)
@@ -120,8 +135,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingRightArmRot_Display), LLSTRING(SETTING_ArmbandSlingRightArmRot_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "5, -5, -5",
-    2
+    "[5, -5, -5]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingRightArmRotation), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingRightArmRotation), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband sling left leg (x, y, z)
@@ -130,8 +150,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingLeftLegPos_Display), LLSTRING(SETTING_ArmbandSlingLeftLegPos_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "0.435, -0.075, -0.38",
-    2
+    "[0.435, -0.075, -0.38]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingLeftLeg), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingLeftLeg), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband rotation left leg (yaw, pitch, roll)
@@ -140,8 +165,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingLeftLegRot_Display), LLSTRING(SETTING_ArmbandSlingLeftLegRot_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "-160, -5, 45",
-    2
+    "[-160, -5, 45]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingLeftLegRotation), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingLeftLegRotation), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband sling right leg (x, y, z)
@@ -150,8 +180,13 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingRightLegPos_Display), LLSTRING(SETTING_ArmbandSlingRightLegPos_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "-0.32, -0.29, -0.42",
-    2
+    "[-0.32, -0.29, -0.42]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingRightLeg), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingRightLeg), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
 
 //Adjust armband rotation right Leg (yaw, pitch, roll)
@@ -160,9 +195,24 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ArmbandSlingRightLegRot_Display), LLSTRING(SETTING_ArmbandSlingRightLegRot_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Armband)],
-    "-30, -5, 38",
-    2
+    "[-30, -5, 38]",
+    2,
+    {
+        private _string = missionNamespace getVariable [QGVAR(armbandSlingRightLegRotation), ""];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(armbandSlingRightLegRotation), _array, true];
+    }
 ] call CBA_Settings_fnc_init;
+
+// Remove IFAK when empty
+[
+    QGVAR(IFAK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
 
 //IFAK Container
 [
@@ -174,14 +224,24 @@ PREP_RECOMPILE_END;
     2
 ] call CBA_fnc_addSetting;
 
-// Remove IFAK when empty
+//IFAK Slot Color
 [
-    QGVAR(IFAK_RemoveWhenEmpty),
-    "CHECKBOX",
-    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    QGVAR(IFAK_Slot_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_SlotColor), LLSTRING(SETTING_FAK_SlotColor_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
-    [true],
-    true
+    [1, 0.30, 0.30],
+    2
+] call CBA_fnc_addSetting;
+
+//IFAK Item Color
+[
+    QGVAR(IFAK_Item_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_ItemColor), LLSTRING(SETTING_FAK_ItemColor_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_IFAK)],
+    [0.67, 0.84, 0.90],
+    2
 ] call CBA_fnc_addSetting;
 
 //IFAK First Slot Item
@@ -248,6 +308,16 @@ PREP_RECOMPILE_END;
     }
 ] call CBA_Settings_fnc_init;
 
+// Remove AFAK when empty
+[
+    QGVAR(AFAK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
 //AFAK Container
 [
     QGVAR(AFAK_Container),
@@ -258,14 +328,24 @@ PREP_RECOMPILE_END;
     2
 ] call CBA_fnc_addSetting;
 
-// Remove AFAK when empty
+//AFAK Slot Color
 [
-    QGVAR(AFAK_RemoveWhenEmpty),
-    "CHECKBOX",
-    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    QGVAR(AFAK_Slot_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_SlotColor), LLSTRING(SETTING_FAK_SlotColor_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    [true],
-    true
+    [1, 0.96, 0.32],
+    2
+] call CBA_fnc_addSetting;
+
+//AFAK Item Color
+[
+    QGVAR(AFAK_Item_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_ItemColor), LLSTRING(SETTING_FAK_ItemColor_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
+    [0.67, 0.84, 0.90],
+    2
 ] call CBA_fnc_addSetting;
 
 //AFAK First Slot Item
@@ -306,7 +386,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['kat_Penthrox', 2], ['kat_Painkiller', 1]]",
+    "[['ACE_morphine', 3], ['kat_Penthrox', 1], ['kat_Painkiller', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKThirdSlotItem), []];
@@ -322,7 +402,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['kat_chestSeal', 4], ['kat_ncdKit', 4]]",
+    "[['kat_chestSeal', 3], ['kat_ncdKit', 3]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKFourthSlotItem), []];
@@ -338,7 +418,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_FifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['kat_guedel', 3]]",
+    "[['kat_guedel', 4]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKFifthSlotItem), []];
@@ -354,7 +434,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AFAK)],
-    "[['ACE_morphine', 3], ['ACE_epinephrine', 3]]",
+    "[['ACE_epinephrine', 3], ['kat_Carbonate', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(AFAKSixthSlotItem), []];
@@ -363,6 +443,16 @@ PREP_RECOMPILE_END;
         call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
+
+// Remove MFAK when empty
+[
+    QGVAR(MFAK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
 
 //MFAK Container
 [
@@ -374,14 +464,24 @@ PREP_RECOMPILE_END;
     2
 ] call CBA_fnc_addSetting;
 
-// Remove MFAK when empty
+//MFAK Slot Color
 [
-    QGVAR(MFAK_RemoveWhenEmpty),
-    "CHECKBOX",
-    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    QGVAR(MFAK_Slot_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_SlotColor), LLSTRING(SETTING_FAK_SlotColor_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    [true],
-    true
+    [0.56, 0.93, 0.56],
+    2
+] call CBA_fnc_addSetting;
+
+//MFAK Item Color
+[
+    QGVAR(MFAK_Item_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_ItemColor), LLSTRING(SETTING_FAK_ItemColor_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
+    [0.67, 0.84, 0.90],
+    2
 ] call CBA_fnc_addSetting;
 
 //MFAK First Slot Item
@@ -422,7 +522,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['kat_Painkiller', 4], ['kat_Penthrox', 4]]",
+    "[['ACE_morphine', 6], ['kat_Painkiller', 2], ['kat_Penthrox', 2]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKThirdSlotItem), []];
@@ -470,7 +570,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['ACE_morphine', 6], ['ACE_epinephrine', 6], ['ACE_adenosine', 6]]",
+    "[['ACE_epinephrine', 6], ['kat_IV_16', 4], ['kat_nitroglycerin', 2], ['kat_phenylephrine', 2], ['kat_atropine', 2], ['kat_naloxone', 2], ['kat_Carbonate', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKSixthSlotItem), []];
@@ -486,7 +586,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_SeventhSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['ACE_salineIV_250', 3], ['kat_IV_16', 4]]",
+    "[['ACE_salineIV_250', 4], ['kat_IV_16', 4]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKSeventhSlotItem), []];
@@ -502,7 +602,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_EighthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_MFAK)],
-    "[['kat_Pulseoximeter', 3], ['kat_pocketBVM', 1]]",
+    "[['kat_Pulseoximeter', 1], ['kat_pocketBVM', 1], ['kat_AED', 1]]",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(MFAKEighthSlotItem), []];
@@ -511,14 +611,5 @@ PREP_RECOMPILE_END;
         call FUNC(FAK_updateContents);
     }
 ] call CBA_Settings_fnc_init;
-
-// Medical ACE Arsenal
-if (GVAR(arsenalMedCategory)) then {
-    [
-        ["kat_aatKit","kat_ncdKit","kat_accuvac","ACE_adenosine","ACE_epinephrine","kat_X_AED","ACE_elasticBandage","ACE_packingBandage","kat_crossPanel","kat_bloodIV_O","kat_bloodIV_A","kat_bloodIV_AB","ACE_bloodIV","kat_bloodIV_B","ACE_bloodIV_250","kat_bloodIV_O_250","kat_bloodIV_A_250","kat_bloodIV_AB_250","kat_bloodIV_B_250","ACE_bloodIV_500","kat_bloodIV_O_500","kat_bloodIV_A_500","kat_bloodIV_AB_500","kat_bloodIV_B_500","ACE_bodyBag","KAT_Empty_bloodIV_250","KAT_Empty_bloodIV_500","kat_bloodIV_O_N","kat_bloodIV_A_N","kat_bloodIV_AB_N","kat_bloodIV_B_N","kat_bloodIV_O_N_250","kat_bloodIV_A_N_250","kat_bloodIV_AB_N_250","kat_bloodIV_B_N_250","kat_bloodIV_O_N_500","kat_bloodIV_A_N_500","kat_bloodIV_AB_N_500","kat_bloodIV_B_N_500","FirstAidKit","kat_AED","kat_chestSeal","kat_larynx","ACE_fieldDressing","Medikit","ACE_morphine","kat_guedel","ACE_personalAidKit","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","kat_Pulseoximeter","ACE_quikclot","ACE_salineIV_250","ACE_salineIV","ACE_salineIV_500","ACE_splint","kat_stethoscope","ACE_surgicalKit","ACE_tourniquet","Attachable_Helistretcher","kat_CarbonateItem","kat_PainkillerItem","kat_PervitinItem","kat_CaffeineItem","kat_PenthroxItem","kat_IV_16","kat_IO_FAST","kat_naloxone","kat_EACA","kat_TXA","kat_norepinephrine","kat_phenylephrine","kat_nitroglycerin","kat_amiodarone","kat_lidocaine","kat_atropine","kat_ketamine","kat_fentanyl","kat_nalbuphine","kat_lorazepam","kat_flumazenil","kat_etomidate","kat_scalpel","kat_retractor","kat_clamp","kat_plate","kat_vacuum","kat_BVM","kat_pocketBVM","kat_oxygenTank_150_Item","kat_oxygenTank_300_Item","kat_oxygenTank_150_Empty","kat_oxygenTank_300_Empty","kat_IFAK","kat_MFAK","kat_AFAK"],
-        localize "STR_ACE_Medical_GUI_Medical",
-        "\z\ace\addons\medical_gui\data\categories\triage_card.paa"
-    ] call ACEFUNC(arsenal,addRightPanelButton);
-};
 
 ADDON = true;

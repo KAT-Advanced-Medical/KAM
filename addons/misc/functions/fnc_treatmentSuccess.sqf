@@ -21,7 +21,7 @@
  */
 
 params ["_args"];
-_args params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem" , ["_extraArgs",[]]];
+_args params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", ["_extraArgs",[]]];
 
 // Switch medic to end animation immediately
 private _endInAnim = _medic getVariable QACEGVAR(medical_treatment,endInAnim);
@@ -49,7 +49,7 @@ if (_callbackCondition isEqualType {}) then {
         GET_FUNCTION(_condition,configFile >> QACEGVAR(medical_treatment,actions) >> _classname >> "condition");
         _callbackCondition = _condition;
     };
-
+    
     if (_callbackCondition isEqualTo {}) exitWith {
         _callbackCondition = true;
     };
