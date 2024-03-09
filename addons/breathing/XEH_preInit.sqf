@@ -98,16 +98,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// enable/disable etco2 and respiratory rate readouts
-[
-    QGVAR(Etco2_Enabled),
-    "CHECKBOX",
-    [LLSTRING(SETTING_Enable_Etco2),LLSTRING(SETTING_Enable_Etco2_Desc)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
 //Settable list for using Pulseoximeter per medical class
 [
     QGVAR(medLvl_Pulseoximeter),
@@ -418,6 +408,26 @@ PREP_RECOMPILE_END;
     [0, 100, 90, 1],
     true
 ] call CBA_Settings_fnc_init;
+
+// enable/disable etco2 and respiratory rate readouts
+[
+    QGVAR(Etco2_Enabled),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Enable_Etco2),LLSTRING(SETTING_Enable_Etco2_Desc)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// select units for etco2
+[
+    QGVAR(Etco2_Units),
+    "LIST",
+    LLSTRING(SETTING_Select_Etco2_Units),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1], ["mmHg", "kPa"], 0],
+    true
+] call CBA_settings_fnc_init;
 
 // Sets sound volume of stethoscope
 [

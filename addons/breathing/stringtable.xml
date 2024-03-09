@@ -126,6 +126,9 @@
         <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2_Desc">
             <English>Sets if medics can view a patient's ETCo2 and Respiratory Rate in the Vitals Monitor when a device capable of monitoring ETCo2 is connected</English>
         </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units">
+            <English>Desired units for ETCo2 Monitoring</English>
+        </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
         </Key>
