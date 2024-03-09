@@ -151,7 +151,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Reboa_Deep_Action);
         category = "surgery";
         treatmentLocations = QGVAR(surgicalLocation);
-        allowedSelections[] = {"LeftLeg"};
+        allowedSelections[] = {"LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
@@ -165,7 +165,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(Reboa_Remove_Action);
         category = "surgery";
         treatmentLocations = QGVAR(reboaTime);
-        allowedSelections[] = {"LeftLeg"};
+        allowedSelections[] = {"LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
