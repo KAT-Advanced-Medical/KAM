@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player, "Leftleg", opioidRelief] call kat_pharma_fnc_treatmentAdvanced_MorphineLocal;
+ * [player, "Leftleg", 1] call kat_pharma_fnc_treatmentAdvanced_MorphineLocal;
  *
  * Public: No
  */
