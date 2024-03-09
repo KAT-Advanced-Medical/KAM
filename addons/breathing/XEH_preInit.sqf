@@ -54,7 +54,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     LLSTRING(SETTING_SpO2_cardiacActive),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [true],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
