@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Katalam, edited by MiszczuZPolski & Miss Heda
+ * Author: Katalam, edited by MiszczuZPolski, Miss Heda & apo_tle
  * Airway Management for collapsing local
  *
  * Arguments:

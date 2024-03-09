@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Miss Heda
+ * Author: Miss Heda, edited by apo_tle
  * Removing Guedeltubus or KingLT
  *
  * Arguments:

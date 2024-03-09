@@ -32,8 +32,7 @@ private _hasTptx = _patient getVariable [QGVAR(tensopneumothorax), false];
 private _airwayObstructed = _patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false]);
 private _airwayOccluded = _patient getVariable [QEGVAR(airway,occluded), false];
 
-private _pharmaOffset = 0; // TODO offset value depending on drugs in circulation
-private _phOffset = [0,((floor (_phDiff / 250)))] select (EGVAR(pharma,kidneyAction)); // increase etco2 by 1 per 250 points of pH lost
+private _phOffset = [0,(floor (_phDiff / 250))] select (EGVAR(pharma,kidneyAction)); // increase etco2 by 1 per 250 points of pH lost
 private _randomOffset = selectRandom [-2,-1,0,1,2];
 private _newEtco2 = 0;
 switch (true) do {
