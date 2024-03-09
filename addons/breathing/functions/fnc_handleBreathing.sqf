@@ -67,7 +67,7 @@ if (!local _unit) then {
     if (GVAR(SpO2_cardiacActive)) then {
         private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
 
-        if (_status <= GVAR(SpO2_cardiacValue)) then {
+        if (GVAR(SpO2_cardiacValue) >= _status) then {
             if ((_ht findIf {_x isEqualTo "hypoxia"}) == -1) then {
                 _ht pushBack "hypoxia";
 
@@ -108,9 +108,9 @@ if (!local _unit) then {
                     _perfusionActive = true;
                     if(_BVMInUse) then {
                         if(_oxygenAssisted) then {
-                            _output = -0.01;
+                            _output = 0.3;
                         } else {
-                            _output = -0.1;
+                            _output = 0.1;
                         };
                     };
                 };

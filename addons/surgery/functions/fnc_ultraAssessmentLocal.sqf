@@ -27,15 +27,15 @@ _patient setVariable [QGVAR(imaging), true, true];
 
 //Reads Thorasic Condition
 if ((_patient getVariable [QEGVAR(breathing,pneumothorax), 0]) != 0) then {
-    _airway = LSTRING(Ultra_Thorasic_PTX);
+    _thorasic = LSTRING(Ultra_Thorasic_PTX);
 };
 
 if (_patient getVariable [QEGVAR(breathing,hemopneumothorax), false]) then {
-    _airway = LSTRING(Ultra_Thorasic_Hemo);
+    _thorasic = LSTRING(Ultra_Thorasic_Hemo);
 };
 
 if (_patient getVariable [QEGVAR(breathing,tensionpneumothorax), false]) then {
-    _airway = LSTRING(Ultra_Thorasic_Tension);
+    _thorasic = LSTRING(Ultra_Thorasic_Tension);
 };
 
 
@@ -56,6 +56,10 @@ switch (_patient getVariable [QEGVAR(circulation,cardiacArrestType), 0]) do {
     default {
         _cardiac = LSTRING(Ultra_Airway_Normal);
     };
+};
+
+if (_patient getVariable [QEGVAR(circulation,effusion), 0] > 0) then {
+    _cardiac = LSTRING(Ultra_Cardiac_Tamponade);
 };
 
 [_patient, "quick_view", LSTRING(Ultra_Airway), [_airway]] call ACEFUNC(medical_treatment,addToLog);

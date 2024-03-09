@@ -149,7 +149,7 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
                         private _effusion = _unit getVariable [QEGVAR(circulation,effusion), 0];
 
                         // If patient is dead, already treated or has already deteriorated into full tamponade, kill the PFH
-                        if ((_effusion == 0) || !(alive _unit) || (_effusion > 4)) exitWith {
+                        if ((_effusion == 0) || !(alive _unit) || (_effusion == 4)) exitWith {
                             [_idPFH] call CBA_fnc_removePerFrameHandler;
                         };
 
@@ -175,7 +175,7 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
 
                             _unit setVariable [QEGVAR(circulation,effusion), _effusionTarget, true];
                             [_unit, 0.5 * (_effusionTarget / 4)] call ACEFUNC(medical_status,adjustPainLevel); // Adjust pain based on severity
-                            [_unit, -20, -20, "cardiac_tension"] call EFUNC(circulation,updateBloodPressureChange); // Emulate low blood pressure and low heart rate caused by tamponade
+                            [_unit, -10, -10, "cardiac_tension"] call EFUNC(circulation,updateBloodPressureChange); // Emulate low blood pressure and low heart rate caused by tamponade
                         };
 
                     }, EGVAR(circulation,deterioratingTamponade_interval), [_unit]] call CBA_fnc_addPerFrameHandler;

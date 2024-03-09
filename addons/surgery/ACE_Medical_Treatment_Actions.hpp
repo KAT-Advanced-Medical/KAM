@@ -128,7 +128,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"kat_ultrasound"};
-        condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(imaging),false)]));
+        condition = "";
         consumeItem = 0;
         callbackSuccess = QFUNC(ultraAssessment);
     };

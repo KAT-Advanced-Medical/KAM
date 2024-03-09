@@ -1,5 +1,29 @@
 class ACE_ADDON(Medical_Treatment) {
     class Medication {
+        // How much does the pain get reduced?
+        painReduce = 0;
+        // How much will the heart rate be increased when the HR is low (below 55)? {minIncrease, maxIncrease}
+        hrIncreaseLow[] = {0, 0};    // _heartRate < 55
+        hrIncreaseNormal[] = {0, 0}; // 55 <= _heartRate <= 110
+        hrIncreaseHigh[] = {0, 0};   // 110 < _heartRate
+
+        // How long until this medication has disappeared
+        timeInSystem = 120;
+        // How long until the maximum effect is reached
+        timeTillMaxEffect = 30;
+        // How many of this type of medication can be in the system before the patient overdoses?
+        maxDose = 4;
+        // Function to execute upon overdose. Arguments passed to call back are 0: unit <OBJECT>, 1: medicationClassName <STRING>
+        onOverDose = "";
+        // The viscosity of a fluid is a measure of its resistance to gradual deformation by shear stress or tensile stress. For liquids, it corresponds to the informal concept of "thickness". This value will increase/decrease the viscoty of the blood with the percentage given. Where 100 = max. Using the minus will decrease viscosity
+        viscosityChange = 0;
+        // How much does the medication constrict/dilate the patient's blood vessels?
+        alphaFactor = 0;
+        // Max amount of pain the medication can remove
+        maxRelief = 0;
+        // Reduction of damage from wounds
+        opioidRelief = 1;
+
         class Epinephrine {
             painReduce = 0;
             hrIncreaseLow[] = {10, 20};
@@ -11,6 +35,18 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             alphaFactor = 0.15;
             onOverDose = "";
+        };
+        class Morphine {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {-10, -20};
+            hrIncreaseNormal[] = {-10, -30};
+            hrIncreaseHigh[] = {-10, -35};
+            timeInSystem = 900;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            incompatibleMedication[] = {};
+            viscosityChange = -10;
+            opioidRelief = 1.2;
         };
         class Carbonate {
             painReduce = 0;
@@ -55,12 +91,24 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseNormal[] = {-10, -15};
             hrIncreaseHigh[] = {-10, -15};
             timeInSystem = 360;
-            timeTillMaxEffect = 15;
+            timeTillMaxEffect = 30;
             maxDose = 12;
             incompatibleMedication[] = {};
             viscosityChange = 50;
             alphaFactor = -0.5;
             onOverDose = "";
+        };
+        class PhenylephrineAuto {
+            painReduce = 0;
+            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseNormal[] = {-5, -10};
+            hrIncreaseHigh[] = {-10, -15};
+            timeInSystem = 360;
+            timeTillMaxEffect = 15;
+            maxDose = 6;
+            incompatibleMedication[] = {};
+            viscosityChange = 25;
+            alphaFactor = -0.3;
         };
         class Nitroglycerin {
             painReduce = 0;
@@ -86,6 +134,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -10;
             onOverDose = "";
+            opioidRelief = 1.5;
         };
         class Ketamine {
             painReduce = 0.8;
@@ -110,18 +159,20 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
+            opioidRelief = 1.2;
         };
         class Painkillers {
-            painReduce = 0.3;
+            painReduce = 0.2;
             hrIncreaseLow[] = {0, 5};
             hrIncreaseNormal[] = {5, 10};
-            hrIncreaseHigh[] = {5, 15};
-            timeInSystem = 600;
-            timeTillMaxEffect = 90;
+            hrIncreaseHigh[] = {5, 10};
+            timeInSystem = 360;
+            timeTillMaxEffect = 60;
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
+            maxRelief = 0.5;
         };
         class Atropine {
             painReduce = 0;
@@ -157,6 +208,7 @@ class ACE_ADDON(Medical_Treatment) {
             maxDose = 4;
             incompatibleMedication[]= {};
             onOverDose = "";
+            maxRelief = 0.6;
         };
         class EACA {
             painReduce = 0;
@@ -248,11 +300,12 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseNormal[] = {-5, -10};
             hrIncreaseHigh[] = {-5, -15};
             timeInSystem = 300;
-            timeTillMaxEffect = 10;
-            maxDose = 10;
+            timeTillMaxEffect = 20;
+            maxDose = 4;
             incompatibleMedication[] = {};
             viscosityChange = 5;
             onOverDose = "";
+            maxRelief = 0.6;
         };
     };
 };

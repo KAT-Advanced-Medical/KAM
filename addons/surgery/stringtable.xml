@@ -544,6 +544,9 @@
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Unshockable">
             <English>Arrest - Not Shockable</English>
         </Key>
+        <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Tamponade">
+            <English>Tamponade</English>
+        </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DescShort">
             <English>REBOA Unit</English>
         </Key>

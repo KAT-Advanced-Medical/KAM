@@ -27,6 +27,8 @@ _patient setVariable [VAR_TOURNIQUET, _tourniquets, true];
 _surgicalBlock set [1, 1];
 _patient setVariable [QGVAR(surgicalBlock), _surgicalBlock, true];
 
+_patient setVariable [QGVAR(imaging), false, true];
+
 [_patient] call ACEFUNC(medical_status,updateWoundBloodLoss);
 
 private _nearPlayers = (_patient nearEntities ["CAManBase", 6]) select {_x call ACEFUNC(common,isPlayer)};

@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Glowbal, mharis001
- * Modified: MiszczuZPolski, Blue
+ * Modified: MiszczuZPolski, Blue, Mazinski
  * Local callback for administering medication to a patient.
  *
  * Arguments:
@@ -77,11 +77,21 @@ private _hrIncreaseNormal       = GET_ARRAY(_medicationConfig >> "hrIncreaseNorm
 private _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
 private _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
 private _alphaFactor            = GET_NUMBER(_medicationConfig >> "alphaFactor",getNumber (_defaultConfig >> "alphaFactor"));
+private _maxRelief              = GET_NUMBER(_medicationConfig >> "maxRelief",getNumber (_defaultConfig >> "maxRelief"));
+private _opioidRelief           = GET_NUMBER(_medicationConfig >> "opioidRelief",getNumber (_defaultConfig >> "opioidRelief"));
 
 private _heartRate = GET_HEART_RATE(_patient);
 private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
 _hrIncrease params ["_minIncrease", "_maxIncrease"];
 private _heartRateChange = _minIncrease + random (_maxIncrease - _minIncrease);
+
+private _presentPain = GET_PAIN(_patient);
+private _presentReduce = 0;
+if (_maxRelief > 0) then {
+    if (_presentPain > _maxRelief) then {
+        _painReduce = _painReduce / 4;
+    };
+};
 
 // Adjust the medication effects and add the medication to the list
 TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
@@ -93,7 +103,10 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 //Change Alpha Factor
 [_patient, _alphaFactor] call FUNC(alphaAction);
 
-
-if (_className in ["Lorazepam","Fentanyl","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
+if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+};
+
+if (_className in ["Fentanyl","Morphine","Nalbuphine"]) then {
+    [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
 };

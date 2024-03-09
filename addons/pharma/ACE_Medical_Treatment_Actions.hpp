@@ -189,11 +189,22 @@ class ACE_Medical_Treatment_Actions {
     };
     class Phenylephrine: EACA {
         displayName = CSTRING(Take_Phenyl);
+        displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Phenylephrine);
         treatmentTime = QGVAR(treatmentTime_Phenylephrine);
         items[] = {"kat_phenylephrine"};
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
+    class PhenylephrineAuto: Morphine {
+        displayName = CSTRING(Take_Phenyl_Auto);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        items[] = {"kat_phenylephrineAuto"};
+        condition = "";
+        treatmentTime = 5;
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
@@ -227,12 +238,12 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class Atropine: EACA {
+    class Atropine: Morphine {
         displayName = CSTRING(Take_Atropine);
-        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        medicRequired = QGVAR(medLvl_Atropine);
-        treatmentTime = QGVAR(treatmentTime_Atropine);
+        treatmentTime = 5;
+        condition = "";
         items[] = {"kat_atropine"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};

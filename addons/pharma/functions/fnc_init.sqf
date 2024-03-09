@@ -33,6 +33,8 @@ _unit setVariable [QGVAR(IVpfh), [0,0,0,0,0,0], true];
 _unit setVariable [QGVAR(active), false, true];
 _unit setVariable [QGVAR(alphaAction), 1];
 
+_unit setVariable [QGVAR(opioidFactor), 1, true];
+
 _unit setVariable [QGVAR(pH), 1500, true];
 _unit setVariable [QGVAR(coagulationFactor), 10, true];
 _unit setVariable [QGVAR(kidneyFail), false, true];
@@ -50,18 +52,31 @@ _unit setVariable [QGVAR(kidneyPressure), false, true];
     };
 
     private _medicationArray = _unit getVariable [QACEGVAR(medical,medications), []];
-    private _action = false;
+    private _alpha = false;
+    private _opioid = false;
 
     {
         _x params ["_medication"];
 
         if (_medication in ["Epinephrine", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
-            _action = true;
+            _alpha = true;
         };
     } forEach (_medicationArray);
 
-    if !(_action) then {
+    {
+        _x params ["_medication"];
+
+        if (_medication in ["Fentanyl", "Morphine", "Nalbuphine"]) exitWith {
+            _opioid = true;
+        };
+    } forEach (_medicationArray);
+
+    if !(_alpha) then {
         _unit setVariable [QGVAR(alphaAction), 1];
+    };
+
+    if !(_opioid) then {
+        _unit setVariable [QGVAR(opioidFactor), 1];
     };
 }, 180, [_unit]] call CBA_fnc_addPerFrameHandler;
 
@@ -71,20 +86,16 @@ if (GVAR(kidneyAction)) then {
         _args params ["_unit"];
 
         private _alive = alive _unit;
-        private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
 
         if (!_alive) exitWith {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
         private _ph = _unit getVariable [QGVAR(pH), 1500];
-        if (_ph > 750) exitWith {
+        if (_ph == 1500) exitWith {
             _unit setVariable [QGVAR(kidneyArrest), false, true];
             _unit setVariable [QGVAR(kidneyPressure), false, true];
             _unit setVariable [QGVAR(kidneyFail), false, true];
-
-            _ht deleteAt (_ht find "hydrogen");
-            _unit setVariable [QEGVAR(circulation,ht), _ht, true];
         };
 
         private _kidneyFail = _unit getVariable [QGVAR(kidneyFail), false];
@@ -99,15 +110,7 @@ if (GVAR(kidneyAction)) then {
                 private _random = random 1;
 
                 if (_random >= 0.5) then {
-                    if ((_ht findIf {_x isEqualTo "hydrogen"}) == -1) then {
-                        _ht pushBack "hydrogen";
-
-                        if(_unit getVariable[QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
-                            [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
-                        };
-
-                        _unit setVariable [QEGVAR(circulation,ht), _ht, true];
-                    };
+                    [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
                     _unit setVariable [QGVAR(kidneyArrest), true, true];
                 };
             };
