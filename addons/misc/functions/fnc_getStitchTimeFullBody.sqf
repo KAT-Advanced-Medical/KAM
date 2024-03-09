@@ -11,7 +11,7 @@
  * Treatment Time <NUMBER>
  *
  * Example:
- * [player, cursorObject] call kat_misc_fnc_getFullBodyStitchTime
+ * [player, cursorObject] call kat_misc_fnc_getStitchTimeFullBody
  *
  * Public: No
  */

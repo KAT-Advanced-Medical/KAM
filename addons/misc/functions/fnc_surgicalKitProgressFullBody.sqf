@@ -14,7 +14,7 @@
  * Continue Treatment <BOOL>
  *
  * Example:
- * [[objNull, player], 5, 10] call kat_misc_fnc_fullBodySurgicalKitProgress
+ * [[objNull, player], 5, 10] call kat_misc_fnc_surgicalKitProgressFullBody
  *
  * Public: No
  */
@@ -28,7 +28,7 @@ private _stitchableWounds = _patient call FUNC(getFullBodyStitchableWounds);
 if (_stitchableWounds isEqualTo createHashMap) exitWith {false};
 
 // Not enough time has elapsed to stitch a wound
-if (_totalTime - _elapsedTime > ([_patient, _patient] call FUNC(getFullBodyStitchTime)) - ACEGVAR(medical_treatment,woundStitchTime)) exitWith {true};
+if (_totalTime - _elapsedTime > ([_patient, _patient] call FUNC(getStitchTimeFullBody)) - ACEGVAR(medical_treatment,woundStitchTime)) exitWith {true};
 
 private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
 private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);

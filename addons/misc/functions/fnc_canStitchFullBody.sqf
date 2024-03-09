@@ -11,14 +11,14 @@
  * Can Stitch <BOOL>
  *
  * Example:
- * [player, cursorTarget] call kat_misc_fnc_fullBodyCanStitch
+ * [player, cursorTarget] call kat_misc_fnc_canStitchFullBody
  *
  * Public: No
  */
 
 params ["_medic", "_patient"];
 
-if !(GVAR(enableFullBodyStitch)) exitWith {false};
+if !(GVAR(enableStitchFullBody)) exitWith {false};
 if ((ACEGVAR(medical_treatment,consumeSurgicalKit) == 2) && {!([_medic, _patient, ["ACE_Suture"]] call ACEFUNC(medical_treatment,hasItem))}) exitWith {false};
 
 
