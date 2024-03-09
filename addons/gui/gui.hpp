@@ -46,9 +46,9 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             idc = IDC_BODY_HEAD_KINGLT;
             text = QPATHTOF(data\body_image\head_kinglt.paa);
         };
-        class Head_NasalCannula: Head_GuedelTube { // TODO change placeholders to NasalCannula files
-            idc = IDC_BODY_HEAD_KINGLT;
-            text = QPATHTOF(data\body_image\head_kinglt.paa);
+        class Head_NasalCannula: Head_GuedelTube {
+            idc = IDC_BODY_HEAD_NASAL;
+            text = QPATHTOF(data\body_image\head_nasalcannula.paa);
         };
         class RightArm_PulseOximeter: Background {
             idc = IDC_BODY_RIGHTARM_PULSEOX;
