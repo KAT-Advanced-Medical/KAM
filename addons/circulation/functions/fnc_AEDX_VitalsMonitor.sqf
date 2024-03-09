@@ -66,7 +66,8 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         private _etco2 = 0;
         private _breathrate = 0;
 
-        private _hasEtco2Monitor = ["_HasEtco2Monitor",""] select (_patient getVariable [QEGVAR(breathing,etco2Monitor),[]] isEqualTo []);
+        private _hasEtco2Monitor = ["_HasEtco2Monitor",""] select (_patient getVariable [QEGVAR(breathing,etco2Monitor),[]] isEqualTo []); //check for etco2 monitoring apparatus
+        _hasEtco2Monitor = ["",_hasEtco2Monitor] select (EGVAR(breathing,Etco2_Enabled)); //check etco2 monitoring is enabled
 
         if !(_patient getVariable [QGVAR(heartRestart), false]) then {
             _pr = _patient getVariable [QACEGVAR(medical,heartRate), 0];

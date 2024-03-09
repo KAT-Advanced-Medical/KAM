@@ -120,17 +120,23 @@
             <Portuguese>Probabilidade de um pneumotórax</Portuguese>
             <Finnish>Hemopneumotoraksin mahdollisuus</Finnish>
         </Key>
-        <Key ID="STR_KAT_Breathing_ALLOW_NASALCANNULA">
+        <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2">
+            <English>Enable ETCo2 Monitoring</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2_Desc">
+            <English>Sets if medics can view a patient's ETCo2 and Respiratory Rate in the Vitals Monitor when a device capable of monitoring ETCo2 is connected</English>
+        </Key>
+        <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_ALLOW_NASALCANNULA_DESC">
-            <English>Training level required to use a Nasal Cannula</English>
+        <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula_Desc">
+            <English>Training level required to insert a Nasal Cannula</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_TIME_NASALCANNULA">
+        <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula">
             <English>Time for Nasal Cannula</English>
         </Key>
-        <Key ID="STR_KAT_Breathing_TIME_NASALCANNULA_DESC">
-            <English>How long it will take to use Nasal Cannula</English>
+        <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula_Desc">
+            <English>How long it will take to insert a Nasal Cannula</English>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
