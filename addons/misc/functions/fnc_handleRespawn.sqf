@@ -281,7 +281,7 @@ if (EGVAR(pharma,coagulation)) then {
                     
                     _unit setVariable [QEGVAR(pharma,coagulationFactor), (_coagulationFactor - _factorCountToRemove), true];
                     [QACEGVAR(medical_treatment,bandageLocal), [_unit, _bodyPart, _bandageToUse], _unit] call CBA_fnc_targetEvent;
-                    if (coagulation_allow_clott_text) then {
+                    if (GVAR(coagulation_allow_clot_text)) then {
                         [_unit, "activity", _logString, [(toLower _selectionName)]] call ACEFUNC(medical_treatment,addToLog);
                     };
                 },

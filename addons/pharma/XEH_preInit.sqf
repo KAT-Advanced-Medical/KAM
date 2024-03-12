@@ -686,9 +686,9 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(coagulation_allow_clott_text),
+    QGVAR(coagulation_allow_clot_text),
     "CHECKBOX",
-    [LLSTRING(SETTING_Coagulation_allow_clott_text), LLSTRING(SETTING_Coagulation_allow_clott_text_DESC)],
+    [LLSTRING(SETTING_Coagulation_allow_clot_text), LLSTRING(SETTING_Coagulation_allow_clot_text_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
     [true],
     true
