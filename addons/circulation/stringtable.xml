@@ -1979,7 +1979,6 @@
             <Portuguese>Permitir DEA-X</Portuguese>
             <Finnish>Salli AUD-X</Finnish>
         </Key>
-        
         <Key ID="STR_KAT_Circulation_SETTING_AED_duringCpr">
             <English>Allow AED pad application during CPR</English>
         </Key>
