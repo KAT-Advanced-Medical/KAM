@@ -37,4 +37,6 @@ switch (_defibProvider select 1) do {
     };
 };
 
-_condition && (_allowInUse || !(_patient getVariable [QGVAR(DefibrillatorInUse), false])) && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {["",_patient] call ACEFUNC(medical_treatment,canCPR)};
+private _canCpr = ["",_patient] call ACEFUNC(medical_treatment,canCPR);
+
+_condition && (_allowInUse || !(_patient getVariable [QGVAR(DefibrillatorInUse), false])) && _patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && (_canCpr || GVAR(AED_duringCpr));

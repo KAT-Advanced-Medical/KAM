@@ -73,6 +73,17 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//use aed during compressions - apo_tle
+[
+    QGVAR(AED_duringCpr),
+    "CHECKBOX",
+    LLSTRING(SETTING_AED_duringCpr),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+
 //Max Succes chance for AED-X
 [
     QGVAR(AED_X_MaxChance),
