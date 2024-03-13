@@ -79,7 +79,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     LLSTRING(SETTING_AED_duringCpr),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
-    [false],
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 
