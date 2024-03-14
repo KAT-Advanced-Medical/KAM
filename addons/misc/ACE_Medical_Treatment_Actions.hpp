@@ -1,5 +1,4 @@
 class ACE_Medical_Treatment_Actions {
-    class FieldDressing;
     class SalineIV;
     class BasicBandage;
     class SurgicalKit;
