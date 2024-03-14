@@ -73,7 +73,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//use aed during compressions - apo_tle
+// Allow application of AED pads while CPR is performed
 [
     QGVAR(AED_duringCpr),
     "CHECKBOX",
