@@ -308,6 +308,12 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
         sounds[] = {};
     };
+    class ApplyIOLido: {
+        displayName = CSTRING(Apply_IO_45_Lido);
+        condition = QUOTE((!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV))) && ([ARR_3(_player,_patient,'kat_lidocaine')] call ACEFUNC(medical_treatment,hasItem)));
+        treatmentTime = QGVAR(treatmentTime_ApplyIO_Lido);
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call EFUNC(airway,handleRecoveryPosition); [ARR_6(_player,_patient,_bodyPart,'Lidocaine','','kat_lidocaine')] call FUNC(medication); [ARR_4(_player,_patient,_bodyPart,'kat_IO_FAST')] call FUNC(applyIV););
+    };
     class RemoveIV: ApplyTourniquet {
         displayName = CSTRING(Remove_IV);
         displayNameProgress = CSTRING(Removing_IV);
