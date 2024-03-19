@@ -22,12 +22,12 @@ params ["_medic", "_patient", "_bodyPart"];
 private _part = ALL_BODY_PARTS find toLower _bodyPart;
 private _activeFracture = GET_FRACTURES(_patient);
 private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
-private _count = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
-private _count2 = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
-private _count3 = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
-private _count4 = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
-private _count5 = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
-if (_count <=  0.8 && _count2 <=  0.8 && _count3 <=  0.8 && _count4 <=  0.8 && _count5 <=  0.8) then {
+private _LidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
+private _MorphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
+private _NalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
+private _FentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
+private _KetamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
+if (_LidocaineCount <=  0.8 && _MorphineCount <=  0.8 && _NalbuphineCount <=  0.8 && _FentanylCount <=  0.8 && _KetamineCount <=  0.8) then {
     private _pain = random [0.7, 0.8, 0.9];
     [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
 };

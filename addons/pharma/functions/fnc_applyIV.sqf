@@ -49,12 +49,12 @@ if (_usedItem isEqualTo "kat_IV_16") then {
     _IVarray set [_partIndex, 1];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 
-    private _count = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _count2 = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _count3 = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _count4 = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _count5 = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
-    if (_count <=  0.6 && _count2 <=  0.6 && _count3 <=  0.6 && _count4 <=  0.6 && _count5 <=  0.6) then {[_patient, 0.8] call ACEFUNC(medical_status,adjustPainLevel)};
+    private _LidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _MorphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _NalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _FentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _KetamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
+    if if (_LidocaineCount <=  0.6 && _MorphineCount <=  0.6 && _NalbuphineCount <=  0.6 && _FentanylCount <=  0.6 && _KetamineCount <=  0.6) then {[_patient, 0.8] call ACEFUNC(medical_status,adjustPainLevel)};
 
     [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
     [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);
