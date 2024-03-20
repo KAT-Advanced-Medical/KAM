@@ -1105,10 +1105,12 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW">
             <English>Blood Drawing requires IV</English>
+            <Japanese>採血にIV/IO刺入を要求する</Japanese>
             <German>Blutentnahme erfordert IV</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
-            <English>Default false. If true, you will need to insert IV first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
+            <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
+            <Japanese>デフォルトではfalseです。trueの場合、人から採血する前にIV/IOの刺入が必要になります。 \nfalseの場合は刺入無しで採血できます。</Japanese>
             <German>Standardmäßig falsch. Bei "wahr" muss zuerst ein IV gelegt sein, bevor jemandem Blut entnehmen kann. \nBei "falsch" kann Blut ohne IV entnommen.</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
