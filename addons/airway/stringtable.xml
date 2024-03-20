@@ -83,7 +83,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
-            <German>Zeit zum Wiedereintritt einer Okklusion</German>
+            <German>Zeitfenster zum Wiedereintritt einer Okklusion</German>
             <Korean>구토 반복 타이머</Korean>
             <Polish>Czas powtarzania zablokowania</Polish>
             <Japanese>異物再発までの時間</Japanese>
