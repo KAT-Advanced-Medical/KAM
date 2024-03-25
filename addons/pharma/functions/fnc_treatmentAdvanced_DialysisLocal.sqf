@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_surgery_fnc_treatmentAdvanced_DialysisLocal
+ * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_DialysisLocal
  *
  * Public: No
  */
