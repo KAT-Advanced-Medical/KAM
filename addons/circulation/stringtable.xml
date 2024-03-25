@@ -1779,6 +1779,7 @@
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
             <Japanese>%1 がドッグタグの血液型を確認: %2</Japanese>
+            <Russian>%1 проверил жетоны, группа крови: %2</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -2045,6 +2046,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_duringCpr">
             <English>Allow AED pad application during CPR</English>
+            <Russian>Разрешить применение подкладки AED во время СЛР</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
