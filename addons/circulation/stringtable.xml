@@ -1982,6 +1982,9 @@
             <Portuguese>Permitir DEA-X</Portuguese>
             <Finnish>Salli AUD-X</Finnish>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_duringCpr">
+            <English>Allow AED pad application during CPR</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
             <Polish>Poziom wyszkolenia wymagany do korzystania z AED-X</Polish>
