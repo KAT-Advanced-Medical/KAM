@@ -52,6 +52,8 @@ _unit setVariable [QEGVAR(breathing,PulseOximeter_Volume), false, true];
 _unit setVariable [QEGVAR(breathing,PulseOximeter_VolumePatient), false, true];
 _unit setVariable [QEGVAR(breathing,PulseOximeter_Attached), [0,0], true];
 
+_unit setVariable [QGVAR(etco2Monitor), [], true];
+
 _unit setVariable ["kat_PulseoxiInUse_PFH", nil, true];
 _unit setVariable ["kat_O2Breathing_PFH", nil, true];
 

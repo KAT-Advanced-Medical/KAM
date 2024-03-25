@@ -12,6 +12,17 @@ class CfgVehicles {
         };
     };
 
+    class kat_nasalItem: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName= CSTRING(NasalCannula_Display);
+        author = "apo_tle";
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(kat_nasal,1);
+        };
+    };
+
     class kat_chestSealItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;

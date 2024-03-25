@@ -270,4 +270,39 @@ class ACE_Medical_Treatment_Actions {
         condition = QUOTE(_patient call FUNC(canUseBVM) && ((GVAR(locationProvideOxygen) in [ARR_2(2,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalFacility)) || (GVAR(locationProvideOxygen) in [ARR_2(1,3)] && _patient call ACEFUNC(medical_treatment,isInMedicalVehicle))));
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,true)] call EFUNC(airway,handleRecoveryPosition); [ARR_4(_medic,_patient,false,true)] call FUNC(useBVM););
     };
+    class NasalCannula {
+        displayName = CSTRING(NasalCannula_Display);
+        displayNameProgress = ECSTRING(airway,action_placing);
+        category = "airway";
+        treatmentLocations = 0;
+        allowedSelections[] = {"Head"};
+        allowSelfTreatment = 0;
+        medicRequired = QGVAR(medLvl_NasalCannula);
+        treatmentTime = QGVAR(NasalCannula_time);
+        items[] = {"kat_nasal"};
+        condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && !((_patient getVariable [ARR_2(QQGVAR(etco2Monitor),[])] findIf {_x == 'NasalCannula'}) > -1));
+        callbackSuccess = QFUNC(treatmentAdvanced_nasalCannula);
+        callbackFailure = "";
+        callbackProgress = "";
+        callbackCondition = "useCondition";
+        consumeItem = 1;
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
+        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
+        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
+        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        litter[] = {};
+        icon = QPATHTOEF(airway,ui\larynx.paa); // TODO update to nasal specific icon
+    };
+    class RemoveNasalCannula : NasalCannula {
+        displayName = CSTRING(Cancel_NasalCannula);
+        displayNameProgress = ECSTRING(airway,action_removing);
+        medicRequired = QGVAR(medLvl_NasalCannula);
+        treatmentTime = QGVAR(NasalCannula_time);
+        items[] = {};
+        condition = QUOTE((missionNamespace getVariable [ARR_2(QQGVAR(enable),true)]) && ((_patient getVariable [ARR_2(QQGVAR(etco2Monitor),[])] findIf {_x == 'NasalCannula'}) > -1));
+        callbackSuccess = QFUNC(treatmentAdvanced_removeNasalCannula);
+    };
 };

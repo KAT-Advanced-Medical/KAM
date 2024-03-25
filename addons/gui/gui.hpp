@@ -46,6 +46,11 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
             idc = IDC_BODY_HEAD_KINGLT;
             text = QPATHTOF(data\body_image\head_kinglt.paa);
         };
+        class Head_NasalCannula: Torso_ChestSeal {
+            idc = IDC_BODY_HEAD_NASAL;
+            text = QPATHTOF(data\body_image\head_nasalcannula.paa);
+            colorText[] = {0.18, 0.6, 0.96, 1};
+        };
         class RightArm_PulseOximeter: Background {
             idc = IDC_BODY_RIGHTARM_PULSEOX;
             text = QPATHTOF(data\body_image\rightarm_pulseoximeter.paa);
