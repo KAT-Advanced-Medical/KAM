@@ -29,7 +29,7 @@ private _fnc_arrayToInvItem = {
         for "_i" from 1 to (_x select 1) do
         {
             private _inventory = [_unit, _x select 0, _container] call ACEFUNC(common,addToInventory);
-            
+
             if !(_inventory select 0) then {
                 if (isNil "_groundContainer") exitWith {
                     _groundContainer = _inventory select 1;

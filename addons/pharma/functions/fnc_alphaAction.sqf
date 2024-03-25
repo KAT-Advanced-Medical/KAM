@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: MJSTIC
+ * Author: Mazinski
  * Adds the alpha factor value from medications to the patient.
  *
  * Arguments:

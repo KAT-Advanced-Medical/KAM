@@ -30,6 +30,8 @@ PREP(treatmentAdvanced_Flush);
 PREP(treatmentAdvanced_FlushLocal);
 PREP(treatmentAdvanced_KetamineLocal);
 PREP(treatmentAdvanced_LorazepamLocal);
+PREP(treatmentAdvanced_MorphineLocal);
+PREP(treatmentAdvanced_NalbuphineLocal);
 PREP(treatmentAdvanced_Naloxone);
 PREP(treatmentAdvanced_NaloxoneLocal);
 PREP(treatmentAdvanced_Painkillers);

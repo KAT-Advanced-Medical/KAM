@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: 1LT.Mazinski.H
+ * Author: Mazinski
  * Checks if the patient has a fracture
  *
  * Arguments:

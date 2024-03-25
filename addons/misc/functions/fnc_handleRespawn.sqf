@@ -101,6 +101,7 @@ _unit setVariable [QGVAR(Tourniquet_LegNecrosis_Threshold), 0, true];
 // KAT Pharmacy
 
 _unit setVariable [QEGVAR(pharma,alphaAction), 1, true];
+_unit setVariable [QEGVAR(pharma,opioidFactor), 1, true];
 _unit setVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(pharma,IVpfh), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(pharma,active), false, true];
@@ -118,6 +119,9 @@ _unit setVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(surgery,lidocaine), false, true];
 _unit setVariable [QEGVAR(surgery,etomidate), false, true];
 _unit setVariable [QEGVAR(surgery,sedated), false, true];
+_unit setVariable [QEGVAR(surgery,imaging), false, true];
+_unit setVariable [QEGVAR(surgery,reboa), false, true];
+_unit setVariable [QEGVAR(surgery,surgicalBlock), [0,0,0,0,0,0], true];
 
 //KAT Chemical
 
@@ -147,18 +151,31 @@ if (_unit getVariable [QEGVAR(chemical,painEffect),0] != 0) then {
     };
 
     private _medicationArray = _unit getVariable [QACEGVAR(medical,medications), []];
-    private _action = false;
+    private _alpha = false;
+    private _opioid = false;
 
     {
         _x params ["_medication"];
 
         if (_medication in ["Epinephrine", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
-            _action = true;
+            _alpha = true;
         };
     } forEach (_medicationArray);
 
-    if !(_action) then {
+    {
+        _x params ["_medication"];
+
+        if (_medication in ["Fentanyl", "Morphine", "Nalbuphine"]) exitWith {
+            _opioid = true;
+        };
+    } forEach (_medicationArray);
+
+    if !(_alpha) then {
         _unit setVariable [QEGVAR(pharma,alphaAction), 1];
+    };
+
+    if !(_opioid) then {
+        _unit setVariable [QEGVAR(pharma,opioidFactor), 1];
     };
 }, 180, [_unit]] call CBA_fnc_addPerFrameHandler;
 

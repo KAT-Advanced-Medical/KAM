@@ -1,27 +1,34 @@
 #include "..\script_component.hpp"
 /*
  * Author: Miss Heda
- * Triggers the fentanyl visual effect.
+ * Modified: Mazinski
+ * Triggers the fentanyl visual effect and applies the opioid factor from Fentanyl.
  *
  * Arguments:
  * 0: Patient <OBJECT>
+ * 1: Bodypart <STRING>
+ * 2: OpioidRelief <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player] call kat_pharma_fnc_fentanylPP;
+ * [player, "LeftLeg", 1] call kat_pharma_fnc_treatmentAdvanced_FentanylLocal;
  *
  * Public: No
  */
 
-
-/// ChromAberration effect
-params ["_target"];
+params ["_target", "_bodyPart", "_opioidRelief"];
 
 if !(alive _target) exitWith {};
 if (ACE_Player != _target) exitWith {};
 
+private _opioidFactor = _target getVariable [QGVAR(opioidFactor), 1];
+if (_opioidFactor == 1) then {
+    _target setVariable [QGVAR(opioidFactor), _opioidRelief, true];
+};
+
+/// ChromAberration effect
 if (GVAR(chromatic_aberration_checkbox_fentanyl)) then {
     [{
         params ["_target"];
@@ -37,7 +44,7 @@ if (GVAR(chromatic_aberration_checkbox_fentanyl)) then {
             };
             _handle ppEffectEnable true;
             _handle ppEffectAdjust _effect;
-            _handle ppEffectCommit 360; // 6m for max chroma
+            _handle ppEffectCommit 180; // 6m for max chroma
 
             [{    params["_handle"];
 

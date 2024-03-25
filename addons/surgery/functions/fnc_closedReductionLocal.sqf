@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: 1LT.Mazinski.H
+ * Author: Mazinski
  * Local call for fully healing a fracture.
  *
  * Arguments:

@@ -22,6 +22,7 @@ params ["_ctrlGroup", "_target", "_selectionN"];
 
 // Get tourniquets, damage, and blood loss for target
 private _tourniquets = GET_TOURNIQUETS(_target);
+private _surgicalBlock = GET_SURGICAL_TOURNIQUETS(_target);
 private _fractures = GET_FRACTURES(_target);
 private _bodyPartDamage = _target getVariable [QACEGVAR(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0]];
 private _damageThreshold = GET_DAMAGE_THRESHOLD(_target);
@@ -47,7 +48,7 @@ private _bodyPartBloodLoss = [0, 0, 0, 0, 0, 0];
 
     // Show or hide the tourniquet icon
     if (_tourniquetIDC != -1) then {
-        private _hasTourniquet = _tourniquets select _forEachIndex > 0;
+        private _hasTourniquet = (_tourniquets select _forEachIndex > 0) && (_surgicalBlock select _forEachIndex == 0);
         private _ctrlTourniquet = _ctrlGroup controlsGroupCtrl _tourniquetIDC;
         _ctrlTourniquet ctrlShow _hasTourniquet;
     };

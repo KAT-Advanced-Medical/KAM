@@ -11,7 +11,9 @@ class CfgPatches {
             "kat_retractor",
             "kat_clamp",
             "kat_vacuum",
-            "kat_plate"
+            "kat_plate",
+            "kat_ultrasound",
+            "kat_reboa"
         };
         magazines[] = { };
         requiredAddons[] = {

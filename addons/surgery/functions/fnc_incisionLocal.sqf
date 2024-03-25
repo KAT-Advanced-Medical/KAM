@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: 1LT.Mazinski.H
+ * Author: Mazinski
  * Local call to start the surgical process for a fracture
  *
  * Arguments:

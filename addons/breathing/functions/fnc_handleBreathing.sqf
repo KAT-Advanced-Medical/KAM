@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Katalam, edited by Tomcat, Kygan, YetheSamartaka and MJSTIC
+ * Author: Katalam, edited by Tomcat, Kygan, YetheSamartaka and Mazinski
  * Handling oxygen saturation for breathing
  *
  * Arguments:
@@ -64,6 +64,25 @@ if (!local _unit) then {
     private _multiplierOxygen = GVAR(BVMOxygen_Multiplier);
     private _perfusionActive = false;
 
+    if (GVAR(SpO2_cardiacActive)) then {
+        private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+
+        if (_status <= GVAR(SpO2_cardiacValue)) then {
+            if ((_ht findIf {_x isEqualTo "hypoxia"}) == -1) then {
+                _ht pushBack "hypoxia";
+
+                if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                    [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                };
+
+                _unit setVariable [QEGVAR(circulation,ht), _ht, true];
+            };
+        } else {
+            _ht deleteAt (_ht find "hypoxia");
+            _unit setVariable [QEGVAR(circulation,ht), _ht, true];
+        };
+    };
+
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && { GVAR(SpO2_dieActive) && { !_blockDeath } }) exitWith {
         [_unit, "terminal_SpO2_death"] call ACEFUNC(medical_status,setDead);
@@ -89,9 +108,9 @@ if (!local _unit) then {
                     _perfusionActive = true;
                     if(_BVMInUse) then {
                         if(_oxygenAssisted) then {
-                            _output = -0.01;
+                            _output = 0.3;
                         } else {
-                            _output = -0.1;
+                            _output = 0.1;
                         };
                     };
                 };

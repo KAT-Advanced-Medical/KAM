@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski
- * Starts the surgical process for a fracture
+ * Removes the REBOA from the patient.
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -12,11 +12,11 @@
  * Nothing
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_surgery_fnc_incision
+ * [player, cursorObject, "LeftLeg"] call kat_surgery_reboaRemove
  *
  * Public: No
  */
 
 params ["_medic", "_patient", "_bodyPart"];
 
-[QGVAR(incision), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+[QGVAR(reboaRemove), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;

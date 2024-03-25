@@ -18,3 +18,9 @@
 params ["_unit"];
 
 _unit setVariable [QGVAR(cprCount), 2, true];
+
+// Currently four HT conditions: Tamponade, Tension, Hypoxia, and Hydrogen (Ions)
+_unit setVariable [QGVAR(ht), [], true];
+
+_unit setVariable [QGVAR(effusion), 0, true];
+

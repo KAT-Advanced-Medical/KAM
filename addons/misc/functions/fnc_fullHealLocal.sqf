@@ -88,6 +88,8 @@ _unit setVariable [QEGVAR(circulation,cprCount), 2, true];
 _unit setVariable [QEGVAR(circulation,heartRestart), false, true];
 _unit setVariable [QEGVAR(circulation,cardiacArrestType), 0, true];
 
+_unit setVariable [QEGVAR(circulation,ht), [], true];
+_unit setVariable [QEGVAR(circulation,effusion), 0, true];
 _unit setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 
 _unit setVariable [QEGVAR(circulation,isPerformingCPR), false, true];
@@ -106,6 +108,7 @@ _unit setVariable [QACEGVAR(medical,peripheralResistance), 100, true];
 //KAT Pharmacy
 _unit setVariable [QACEGVAR(medical,ivBags), nil, true];
 _unit setVariable [QEGVAR(pharma,alphaAction), 1, true];
+_unit setVariable [QEGVAR(pharma,opioidFactor), 1, true];
 _unit setVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(pharma,IVpfh), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(pharma,active), false, true];
@@ -122,6 +125,9 @@ _unit setVariable [QEGVAR(surgery,fractures), [0,0,0,0,0,0], true];
 _unit setVariable [QEGVAR(surgery,lidocaine), false, true];
 _unit setVariable [QEGVAR(surgery,etomidate), false, true];
 _unit setVariable [QEGVAR(surgery,sedated), false, true];
+_unit setVariable [QEGVAR(surgery,imaging), false, true];
+_unit setVariable [QEGVAR(surgery,reboa), false, true];
+_unit setVariable [QEGVAR(surgery,surgicalBlock), [0,0,0,0,0,0], true];
 
 // KAT Misc
 _unit setVariable [QGVAR(Tourniquet_ArmNecrosis), 0];

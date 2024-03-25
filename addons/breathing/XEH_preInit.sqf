@@ -38,6 +38,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Cardiac Arrest SpO2 value
+[
+    QGVAR(SpO2_cardiacValue),
+    "SLIDER",
+    LLSTRING(SETTING_SpO2_cardiacValue),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 100, 75, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Enables cardiac arrest in cause of SpO2 cardiac value
+[
+    QGVAR(SpO2_cardiacActive),
+    "CHECKBOX",
+    LLSTRING(SETTING_SpO2_cardiacActive),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 // Turn to unconscious in cause of SpO2 unconscious value
 [
     QGVAR(SpO2_unconscious),
@@ -256,6 +276,26 @@ PREP_RECOMPILE_END;
     [LLSTRING(SETTING_deterioratingPneumothorax_interval), LLSTRING(SETTING_deterioratingPneumothorax_interval_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
     [1, 3600, 60, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//Deteriorating pneumothorax arrest countdown
+[
+    QGVAR(PneumothoraxArrest),
+    "CHECKBOX",
+    [LLSTRING(SETTING_PneumothoraxArrest), LLSTRING(SETTING_PneumothoraxArrest_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+//Deteriorating pneumothorax arrest countdown
+[
+    QGVAR(arrestPneumothorax_interval),
+    "SLIDER",
+    [LLSTRING(SETTING_arrestPneumothorax_interval), LLSTRING(SETTING_arrestPneumothorax_interval_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [1, 3600, 30, 0],
     true
 ] call CBA_Settings_fnc_init;
 

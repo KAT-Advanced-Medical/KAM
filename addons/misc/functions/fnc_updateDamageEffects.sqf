@@ -91,6 +91,13 @@ if (_unit getVariable [QGVAR(Tourniquet_LegNecrosis_Threshold), 0] >= 90) then {
     _isLimping = true;
 };
 
+if (_unit getVariable [QEGVAR(surgery,reboa), false]) then {
+    _isLimping = true;
+    _noJog = true;
+    _noSprint = true;
+};
+
+
 [_unit, "blockSprint", QACEGVAR(medical,fracture), _noSprint] call ACEFUNC(common,statusEffect_set);
 [_unit, "forceWalk", QACEGVAR(medical,fracture), _noJog] call ACEFUNC(common,statusEffect_set);
 
