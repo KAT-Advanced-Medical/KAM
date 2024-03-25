@@ -52,7 +52,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
-            <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes</German>
+            <German>Wahrscheinlichkeit einer Atemwegs Okklusion</German>
             <Polish>Szansa na zablokowanie się dróg oddechowych</Polish>
             <Spanish>Probabilidad de oclusión en las vías aéreas</Spanish>
             <Chinese>呼吸道閉塞機率</Chinese>
@@ -70,7 +70,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded_DESC">
             <English>Probability for an occlusion in percentage that gets rolled Setting:[Occlusion repeat timer] (default every 60s)</English>
-            <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes in prozent die durch Einstellung:[Zeit für die Wiederholung des Erbrechens] (standard alle 60s) berechnet wird.</German>
+            <German>Wahrscheinlichkeit für eine Okklusion in Prozent, die gewürfelt wird. Einstellung: [Timer für Okklusionswiederholung] (Standard alle 60 Sekunden)</German>
             <Czech>Pravděpodobnost zablokování dýchacích cest v procentech, která se vylosuje při Nastavení:[Časovač opakovaného ucpání dýchacích cest](defaultně každých 60s)</Czech>
             <Spanish>Porcentaje de probabilidad de que suceda una oclusión Opciones:[tiempo de repeticion de oclusión] (por defecto cada 60s)</Spanish>
             <Japanese>気道異物閉塞の確率(%) [異物閉塞再発までの時間]の設定時間毎に計算されます (デフォルトでは60秒毎)</Japanese>
@@ -83,7 +83,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
-            <German>Zeit für die Wiederholung des Erbrechens</German>
+            <German>Zeitfenster zum Wiedereintritt einer Okklusion</German>
             <Korean>구토 반복 타이머</Korean>
             <Polish>Czas powtarzania zablokowania</Polish>
             <Japanese>異物閉塞再発までの時間</Japanese>
@@ -102,7 +102,7 @@
             <French>Temps de récupération après une occlusion</French>
             <Korean>구토 쿨다운 시간</Korean>
             <Norwegian>Avkjølingsperiode for okklusjon</Norwegian>
-            <German>Abklingzeit für Erbrechen</German>
+            <German>Abklingzeit der Okklusion</German>
             <Portuguese>Período de espera da oclusão</Portuguese>
             <Spanish>Tiempo para repetirse oclusion</Spanish>
             <Finnish>Okkluusiojäähdytyssykli</Finnish>
@@ -197,7 +197,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion_short">
             <English>Occluded</English>
-            <German>Verstopft</German>
+            <German>Okkludiert</German>
             <Polish>Zator</Polish>
             <Spanish>Ocluída</Spanish>
             <Chinese>閉塞</Chinese>
@@ -265,7 +265,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion_short">
             <English>Not occluded</English>
-            <German>Nicht verstopft</German>
+            <German>Nicht okkludiert</German>
             <Polish>Brak zatoru</Polish>
             <Spanish>No ocluída</Spanish>
             <Chinese>無 閉塞</Chinese>
@@ -301,6 +301,7 @@
             <Norwegian>Luftvei er ikke blokkert</Norwegian>
             <French>Les voies aériennes ne sont pas obstruées</French>
             <Finnish>Ilmatiet eivät ole tukossa</Finnish>
+            <German>Atemwege sind nicht blockiert</German>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion">
             <English>Airway is not occluded</English>
@@ -309,6 +310,7 @@
             <Norwegian>Luftvei er ikke okkludert</Norwegian>
             <French>Les voies aériennes ne sont pas occludées</French>
             <Finnish>Ilmatiet eivät ole likaisia</Finnish>
+            <German>Atemwege sind nicht okkludiert</German>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
@@ -317,6 +319,7 @@
             <Norwegian>Luftvei er blokkert, behov for luftveishåndtering</Norwegian>
             <French>Voies aériennes obstruées, geste médical nécessaire</French>
             <Finnish>Hengitystiet ovat tukossa, hengityshoitoa tarvitaan</Finnish>
+            <German>Atemwege sind blockiert, die Atemwege müssen freigelegt werden</German>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
@@ -325,6 +328,7 @@
             <Norwegian>Luftveien er okkludert, behov for medisinsk suging</Norwegian>
             <French>Voies aériennes occludées, aspiration médicale nécessaire</French>
             <Finnish>Hengitystiet ovat likaiset, tarvitaan lääkärin imu</Finnish>
+            <German>Die Atemwege sind okkludiert, eine medizinische Absaugung ist erforderlich</German>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
             <English>Airway is clear</English>
@@ -405,6 +409,7 @@
             <Norwegian>Pasientens hode er allerede hyperforlenget</Norwegian>
             <French>La tête du patient est déjà en hyperextension</French>
             <Finnish>Potilaan pää on jo yli ojentunut</Finnish>
+            <German>Kopf des Patienten ist bereits überstreckt</German>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_progress">
             <English>Hyperextending head</English>
@@ -449,10 +454,12 @@
             <Norwegian>hyperforlengelse av hodet fullført</Norwegian>
             <French>Hyperextension réalisée avec succès</French>
             <Finnish>Pään ylivenyttely onnistui</Finnish>
+            <German>Kopf erfolgreich überstreckt</German>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Log">
             <English>%1 hyperextended %2s head</English>
             <Japanese>%1 は %2 を頭部後屈させた</Japanese>
+            <German>%1 überstreckte %2s Kopf</German>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -474,7 +481,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_success">
             <English>Occlusion removed</English>
-            <German>Verstopfung entfernt</German>
+            <German>Okklusion entfernt</German>
             <Polish>Zablokowanie usunięte</Polish>
             <Spanish>Oclusión eliminada</Spanish>
             <Chinese>遮擋移除</Chinese>
@@ -519,6 +526,7 @@
             <Norwegian>Startet vending av hode</Norwegian>
             <French>Rotation de la tête débutée</French>
             <Finnish>pään kääntyminen alkoi</Finnish>
+            <German>Kopfdrehen begonnen</German>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
@@ -553,6 +561,7 @@
             <English>Medical suction completed, Occlusion removed</English>
             <Japanese>医療吸引が完了し、 異物閉塞が解消されました</Japanese>
             <Finnish>Lääketieteellinen imu suoritettu, okkluusio poistettu</Finnish>
+            <German>Medizinische Absaugung abgeschlossen, Okklusion entfernt</German>
         </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
@@ -665,6 +674,7 @@
         <Key ID="STR_KAT_Airway_Accuvac_Display">
             <English>ACCUVAC</English>
             <Japanese>アキュバック</Japanese>
+            <German>ACCUVAC</German>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
@@ -688,35 +698,42 @@
             <English>Airway Suction</English>
             <Japanese>気道吸引</Japanese>
             <Finnish>Ilmateiden imu</Finnish>
+            <German>Absaugung der Atemwege</German>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Display">
             <English>Manual Suction Pump</English>
             <Japanese>手動式吸引器</Japanese>
             <Finnish>Manuaalinen imupumppu</Finnish>
+            <German>Manuelle Absaugpumpe</German>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Log">
             <English>%1 did a medical suction using a %2</English>
             <Japanese>%1 は %2 で医療吸引を行った</Japanese>
+            <German>%1 hat eine medizinische Absaugung mittels %2 durchgeführt</German>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
             <Japanese>手動式吸引器は、手動ポンプで動作する気道吸引の為の医療用吸引装置です。これは電気駆動の装置を代替することが可能です。</Japanese>
             <Finnish>Manuaalinen imupumppu on lääketieteellinen imulaite hengitysteiden manuaaliseen imemiseen. tämä on vaihtoehto sähkölaitteille</Finnish>
+            <German>Die manuelle Absaugpumpe ist ein medizinisches Absauggerät zur manuellen Absaugung der Atemwege. Diese Alternative zu Elektrogeräten.</German>
         </Key>
         <Key ID="STR_KAT_Airway_SuctionTreatment_displayName">
             <English>Airway Suction (Manual)</English>
             <Japanese>気道吸引 (手動式)</Japanese>
             <Finnish>Ilmateiden imu (manuaalinen)</Finnish>
+            <German>Atemwegsabsaugung (manuell)</German>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse">
             <English>Reusable Manual Suction Pump</English>
             <Japanese>手動式吸引器の再利用</Japanese>
             <Finnish>Uudelleenkäytettävä manuaalinen imupumppu</Finnish>
+            <German>Wiederverwendbare manuelle Absaugpumpe</German>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse_DESC">
             <English>Regain the Manual Suction Pump after use</English>
             <Japanese>手動式吸引器の使用後、再利用できるようにします。</Japanese>
             <Finnish>Ota manuaalinen imupumppu takaisin käytön jälkeen</Finnish>
+            <German>Bekomme die manuelle Absaugpumpe nach benutzung wieder</German>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -884,11 +901,13 @@
             <English>Allow Manual Suction Pump</English>
             <Japanese>手動吸引器の許可</Japanese>
             <Finnish>Salli manuaalinen imupumppu</Finnish>
+            <German>Manuelle Absaugpumpe zulassen</German>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_SUCTION_DESC">
             <English>Training level required to use an Manual Suction Pump</English>
             <Japanese>手動吸引器の使用に必要な医療スキルのレベルを設定します。</Japanese>
             <Finnish>Aika tarkistaa hengitystiet</Finnish>
+            <German>Für die Verwendung einer manuellen Absaugpumpe ist ein medizinischer Grad erforderlich</German>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
             <English>Time to check Airway</English>
@@ -1035,11 +1054,13 @@
             <English>Time for Manual Suction Pump</English>
             <Japanese>手動吸引器の所要時間</Japanese>
             <Finnish>aika manuaaliselle imupumpulle</Finnish>
+            <German>Behandlungszeit für die manuelle Absaugpumpe</German>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
             <English>How long it will take to use Manual Suction Pump</English>
             <Japanese>手動吸引器を使用するのにどのくらい時間がかかるか設定します</Japanese>
             <Finnish>Kuinka kauan manuaalisen imupumpun käyttö kestää</Finnish>
+            <German>Wie lang die Behandlungszeit für die manuelle Absaugpumpe ist</German>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS">
             <English>Time for Larynxtubus</English>
@@ -1215,6 +1236,7 @@
             <Norwegian>%1 kansellerte stabilt sideleie</Norwegian>
             <French>%1 a annulé la position latérale de sécurité</French>
             <Finnish>%1 peruutettu lepoasento</Finnish>
+            <German>%1 hat die stabile Seitenlage abgebrochen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
@@ -1303,6 +1325,7 @@
             <Norwegian>Hvor lang tid det vil ta å manuelt kansellere stabilt sideleie</Norwegian>
             <French>Combien de temps sera nécessaire pour annuler la position latérale de sécurité</French>
             <Finnish>Kuinka kauan lepoasennon manuaalinen peruuttaminen kestää</Finnish>
+            <German>Benötigte Zeit, um die stabile Seitenlage manuell abzubrechen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
@@ -1311,6 +1334,7 @@
             <Norwegian>Tid i stabilt sideleie for å bli kvitt okklusjonen</Norwegian>
             <French>Temps pour retirer l'occlusion en position latérale de sécurité</French>
             <Finnish>Palautuminen Asento-aika tyhjennystukoksen poistamiseksi</Finnish>
+            <German>Stabile Seitenlage um die Okklusion zu entfernen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
@@ -1319,6 +1343,7 @@
             <Norwegian>Maks nødvendig tid en pasient må være i stabilt sideleie for å bli kvitt okklusjonen.</Norwegian>
             <French>Temps maximal pour qu'une occlusion disparaisse sur un patient en position latérale de sécurité</French>
             <Finnish>Enimmäisaika, joka tarvitaan potilaan puhdistamiseen toipumisasennossa</Finnish>
+            <German>Maximale Zeit, die der Patient in der stabilen Seitenlage benötigt, um die Okklusion zu beseitigen.</German>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
@@ -1327,11 +1352,13 @@
             <Norwegian>Instillinger for stabil sideleie og Hyperforlengelse av hodet</Norwegian>
             <French>Paramètres de la position latérale de sécurité + hyperextension</French>
             <Finnish>Palautusasento + pään ylivenytysasetukset</Finnish>
+            <German>Stabile Seitenlage + Kopfüberstreckung Einstellungen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Suction">
             <English>Suction devices Settings</English>
             <Japanese>気道吸引器設定</Japanese>
             <Finnish>Imulaitteen asetukset</Finnish>
+            <German>Absauggeräte Einstellungen</German>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>

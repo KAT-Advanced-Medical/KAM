@@ -1439,6 +1439,7 @@
             <Japanese>除細動器</Japanese>
             <French>Défibrillateur</French>
             <Finnish>Defibrillaattori</Finnish>
+            <German>Defibrilator</German>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SelectedEnergy">
             <English>Selected Energy</English>
@@ -1446,6 +1447,7 @@
             <Japanese>選択済のｴﾈﾙｷﾞｰ</Japanese>
             <French>Energie sélectionnée</French>
             <Finnish>Valittu energia</Finnish>
+            <German>Gewählte Stärke</German>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
@@ -1727,6 +1729,7 @@
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
             <Japanese>%1 が認識票の血液型を確認: %2</Japanese>
+            <German>%1 hat die Blutgruppe der Erkennungsmarke überprüft: %2</German>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -2012,6 +2015,7 @@
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
             <English>Medical level required to pick up placed AED/X station</English>
             <Japanese>設置されたAED/Xを拾うのに必要な医療スキルのレベルを設定します。</Japanese>
+            <German>Für die Aufnahme der platzierten AED/X-Station ist ein medizinischer Grad erforderlich</German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
@@ -2209,6 +2213,7 @@
             <Japanese>CPRを開始した</Japanese>
             <French>RCP débuté</French>
             <Finnish>Elvytys alkoi</Finnish>
+            <German>HLW gestartet</German>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
