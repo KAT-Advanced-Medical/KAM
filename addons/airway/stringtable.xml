@@ -31,8 +31,8 @@
             <French>Probabilité d'obstruction des voies aériennes</French>
             <Turkish>Tıkanmış bir hava yolu olasılığı</Turkish>
             <Italian>Probabilità di ostruzione delle vie aeree</Italian>
-            <Russian>Вероятность того, что дыхательные пути заблокированы языком (Обструкция)</Russian>
-            <Japanese>気道狭窄の確率</Japanese>
+            <Russian>Вероятность закупорки дыхательных путей</Russian>
+            <Japanese>気道閉塞の確率</Japanese>
             <Portuguese>Probabilidade de obstrução das vias aéreas</Portuguese>
             <Norwegian>Sannsynligheten for blokkert luftvei</Norwegian>
             <Finnish>Tukkeutuneiden hengitysteiden todennäköisyys</Finnish>
@@ -42,7 +42,7 @@
             <German>Atemwegsverlegungswahrscheinlichkeit in prozent die berechnet wird sofern: \n- Bewustlos werden \n- Das Entfernen von Larynxtubus / Guedeltubus \n- Abbrechen der Stabile Seitenlage</German>
             <Czech>Pravděpodobnost obstrukce dýchacích cest v procentech, která se vylosuje při každém: \n- Upadnutí do bezvědomí \n- Odstranění KingLT / GuedelTuby</Czech>
             <Spanish>Probabilidad en porcentaje de que una vía aérea sea obstruida cada vez que: \n- Cae inconsciente \n- Se retira el tubo laríngeo / Cánula de Guedel</Spanish>
-            <Japanese>気道狭窄の確率(%) 次の時に計算されます: \n- 意識不明になった時 \n- King LT/ゲデルチューブが外れた時</Japanese>
+            <Japanese>気道閉塞の確率(%) 次の時に計算されます: \n- 意識不明になった時 \n- King LT/ゲデルチューブが外れた時</Japanese>
             <French>La probabilité d'obstruction des voies aériennes en pourcentage qui est tirée aléatoirement lorsque : \n- la personne tombe inconsciente \n- Une canule de Guedel/tube laryngé est retiré</French>
             <Korean>다음 조건에 의해 매번 발생되는 혀막힘 확률(%): \n- 의식불명이 될 시 \n- 기관삽입기 / 게델튜브 제거 시</Korean>
             <Italian>Probabilità in percentuale di una via aerea ostruita che viene sorteggiata ogni : \n- Caduta priva di sensi \n- Rimozione KingLT / Guedel Tube</Italian>
@@ -63,8 +63,8 @@
             <French>Probabilité d'occlusion des voies aériennes</French>
             <Turkish>Hava yolunu tıkama olasılığı</Turkish>
             <Italian>Probabilità di occlusione delle vie aeree</Italian>
-            <Russian>Вероятность того, что дыхательные пути заблокированы рвотой (Окклюзия)</Russian>
-            <Japanese>気道異物閉塞の確率</Japanese>
+            <Russian>Вероятность закупорки дыхательных путей</Russian>
+            <Japanese>気道異物の確率</Japanese>
             <Portuguese>Probabilidade de oclusão das vias aéreas</Portuguese>
             <Norwegian>Sannsynlighet for at luftveien blir blokkert</Norwegian>
             <Finnish>Todennäköisyys hengitysteiden tukkeutumiseen</Finnish>
@@ -74,7 +74,7 @@
             <German>Atemwegsverlegungswahrscheinlichkeit durch Erbrochenes in prozent die durch Einstellung:[Zeit für die Wiederholung des Erbrechens] (standard alle 60s) berechnet wird.</German>
             <Czech>Pravděpodobnost zablokování dýchacích cest v procentech, která se vylosuje při Nastavení:[Časovač opakovaného ucpání dýchacích cest](defaultně každých 60s)</Czech>
             <Spanish>Porcentaje de probabilidad de que suceda una oclusión Opciones:[tiempo de repeticion de oclusión] (por defecto cada 60s)</Spanish>
-            <Japanese>気道異物閉塞の確率(%) [異物閉塞再発までの時間]の設定時間毎に計算されます (デフォルトでは60秒毎)</Japanese>
+            <Japanese>気道異物の確率(%) [異物再発までの時間]の設定時間毎に計算されます (デフォルトでは60秒毎)</Japanese>
             <French>La probabilité d'occlusion des voies aériennes en pourcentage qui est tirée aléatoirement selon le paramètre : [Temps de répétition des occlusions] (Par défaut toutes les 60s)</French>
             <Korean>매번 발생되는 구토막힘 확률(%): [구토 반복 타이머] (기본값: 매 60초 마다)</Korean>
             <Italian>Probabilità di un'occlusione in percentuale che viene sorteggiata. Impostazione: [Timer ripetizione occlusione] (default ogni 60 secondi)</Italian>
@@ -88,7 +88,7 @@
             <German>Zeit für die Wiederholung des Erbrechens</German>
             <Korean>구토 반복 타이머</Korean>
             <Polish>Czas powtarzania zablokowania</Polish>
-            <Japanese>異物閉塞再発までの時間</Japanese>
+            <Japanese>異物再発までの時間</Japanese>
             <French>Temps de répétition des occlusions</French>
             <Italian>Tempo di ripetizione per l'occlusione</Italian>
             <Czech>Časovač opakovaného ucpání dýchacích cest</Czech>
@@ -101,7 +101,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod">
             <English>Occlusion Cooldown Period</English>
-            <Japanese>異物閉塞再発のクールダウン期間</Japanese>
+            <Japanese>異物再発のクールダウン期間</Japanese>
             <French>Temps de récupération après une occlusion</French>
             <Korean>구토 쿨다운 시간</Korean>
             <Norwegian>Avkjølingsperiode for okklusjon</Norwegian>
@@ -213,7 +213,7 @@
             <Turkish>Tıkalı</Turkish>
             <Italian>Occlusa</Italian>
             <Russian>Окклюзия</Russian>
-            <Japanese>異物閉塞あり</Japanese>
+            <Japanese>異物あり</Japanese>
             <Portuguese>Ocluída</Portuguese>
             <Norwegian>Okkludert</Norwegian>
             <Finnish>Tukkeutunut</Finnish>
@@ -231,7 +231,7 @@
             <Turkish>Kapanma</Turkish>
             <Italian>Ostruita</Italian>
             <Russian>Обструкция</Russian>
-            <Japanese>狭窄あり</Japanese>
+            <Japanese>閉塞あり</Japanese>
             <Portuguese>Obstruída</Portuguese>
             <Norwegian>Obstruksjon</Norwegian>
             <Finnish>Tukkeuma</Finnish>
@@ -239,7 +239,7 @@
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction_short">
             <English>Mitigated obstruction</English>
             <Polish>Ręcznie udrożnione</Polish>
-            <Japanese>軽減された狭窄あり</Japanese>
+            <Japanese>軽減された閉塞あり</Japanese>
             <Italian>Ostruzione attenuata</Italian>
             <Czech>Zmírněná obstrukce</Czech>
             <Korean>막힘 완화됨</Korean>
@@ -263,7 +263,7 @@
             <French>Non obstruées</French>
             <Turkish>Değil Kapanma</Turkish>
             <Italian>No ostruita</Italian>
-            <Japanese>狭窄なし</Japanese>
+            <Japanese>閉塞なし</Japanese>
             <Chinesesimp>无阻塞</Chinesesimp>
             <Portuguese>Não obstruída</Portuguese>
             <Norwegian>Ikke blokkert</Norwegian>
@@ -281,7 +281,7 @@
             <French>Non occludées</French>
             <Turkish>Değil Tıkalı</Turkish>
             <Italian>No occlusa</Italian>
-            <Japanese>異物閉塞なし</Japanese>
+            <Japanese>異物なし</Japanese>
             <Chinesesimp>无闭塞</Chinesesimp>
             <Portuguese>Não ocluída</Portuguese>
             <Norwegian>Ikke okkludert</Norwegian>
@@ -292,7 +292,7 @@
             <English>Obstruction is temporarily mitigated</English>
             <Polish>Drogi oddechowe są ręcznie udrożnione</Polish>
             <French>L'obstruction a été temporairement atténuée</French>
-            <Japanese>狭窄は一時的に軽減されています</Japanese>
+            <Japanese>閉塞は一時的に軽減されています</Japanese>
             <Spanish>Obstrucción temporalmente mitigada</Spanish>
             <German>Die Obstruktion ist temporär gemildert</German>
             <Italian>Ostruzione è momentaneamente attenuata</Italian>
@@ -306,7 +306,7 @@
         <Key ID="STR_KAT_Airway_AirwayStatus_noObstruction">
             <English>Airway is not obstructed</English>
             <Spanish>Las vías aéreas no están obstruidas</Spanish>
-            <Japanese>気道は狭窄していない</Japanese>
+            <Japanese>気道は閉塞していない</Japanese>
             <Norwegian>Luftvei er ikke blokkert</Norwegian>
             <French>Les voies aériennes ne sont pas obstruées</French>
             <Finnish>Ilmatiet eivät ole tukossa</Finnish>
@@ -315,7 +315,7 @@
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion">
             <English>Airway is not occluded</English>
             <Spanish>Las vías aéreas no están ocluidas</Spanish>
-            <Japanese>気道に異物閉塞はありません</Japanese>
+            <Japanese>気道に異物はありません</Japanese>
             <Norwegian>Luftvei er ikke okkludert</Norwegian>
             <French>Les voies aériennes ne sont pas occludées</French>
             <Finnish>Ilmatiet eivät ole likaisia</Finnish>
@@ -324,7 +324,7 @@
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
             <Spanish>Las vías respiratorias están obstruidas, es necesario gestionarlas</Spanish>
-            <Japanese>気道は狭窄しています、 気道管理が必要です</Japanese>
+            <Japanese>気道は閉塞しています、 気道管理が必要です</Japanese>
             <Norwegian>Luftvei er blokkert, behov for luftveishåndtering</Norwegian>
             <French>Voies aériennes obstruées, geste médical nécessaire</French>
             <Finnish>Hengitystiet ovat tukossa, hengityshoitoa tarvitaan</Finnish>
@@ -333,7 +333,7 @@
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
             <Spanish>Las vías respiratorias están ocluidas, es necesario gestionarlas</Spanish>
-            <Japanese>気道に異物閉塞があります、 医療吸引が必要です</Japanese>
+            <Japanese>気道に異物があります、 医療吸引が必要です</Japanese>
             <Norwegian>Luftveien er okkludert, behov for medisinsk suging</Norwegian>
             <French>Voies aériennes occludées, aspiration médicale nécessaire</French>
             <Finnish>Hengitystiet ovat likaiset, tarvitaan lääkärin imu</Finnish>
@@ -501,7 +501,7 @@
             <Turkish>Tıkanıklık kaldırıldı</Turkish>
             <Italian>Occlusione rimossa</Italian>
             <Russian>Окклюзия удалена</Russian>
-            <Japanese>異物閉塞が解消された</Japanese>
+            <Japanese>異物が除去された</Japanese>
             <Portuguese>Oclusão removida</Portuguese>
             <Norwegian>Okklusjonen er fjernet</Norwegian>
             <Finnish>Likaantuminen poistettu</Finnish>
@@ -571,7 +571,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Success">
             <English>Medical suction completed, Occlusion removed</English>
-            <Japanese>医療吸引が完了し、 異物閉塞が解消されました</Japanese>
+            <Japanese>医療吸引が完了し、 異物が除去されました</Japanese>
             <Finnish>Lääketieteellinen imu suoritettu, okkluusio poistettu</Finnish>
             <Russian>Медицинское отсасывание завершено, окклюзия устранена</Russian>
         </Key>
@@ -1365,7 +1365,7 @@
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
             <Spanish>Tiempo máximo para que desaparezca una oclusión en un paciente en posición lateral de seguridad</Spanish>
-            <Japanese>回復体位にある患者の気道異物が排出され閉塞が解消するまでに必要な最大時間。</Japanese>
+            <Japanese>回復体位にある患者の気道異物が排出されるまでに必要な最大時間。</Japanese>
             <Norwegian>Maks nødvendig tid en pasient må være i stabilt sideleie for å bli kvitt okklusjonen.</Norwegian>
             <French>Temps maximal pour qu'une occlusion disparaisse sur un patient en position latérale de sécurité</French>
             <Finnish>Enimmäisaika, joka tarvitaan potilaan puhdistamiseen toipumisasennossa</Finnish>

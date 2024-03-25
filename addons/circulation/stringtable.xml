@@ -891,8 +891,8 @@
             <French>Vérifier la plaque d'identification</French>
             <Turkish>Künyeyi Kontrol Et</Turkish>
             <Italian>Controlla piastrine</Italian>
-            <Russian>Проверить Солдатский жетон</Russian>
-            <Japanese>認識票を確認</Japanese>
+            <Russian>Проверка Солдатский жетон</Russian>
+            <Japanese>ドッグタグを確認</Japanese>
             <Portuguese>Checar placa de identificação</Portuguese>
             <Finnish>Tarkista sotilasmerkit</Finnish>
         </Key>
@@ -1778,8 +1778,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
-            <Japanese>%1 が認識票の血液型を確認: %2</Japanese>
-            <Russian>%1 проверенный жетон, группа крови: %2</Russian>
+            <Japanese>%1 がドッグタグの血液型を確認: %2</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -2043,6 +2042,9 @@
             <Japanese>AED-Xの許可</Japanese>
             <Portuguese>Permitir DEA-X</Portuguese>
             <Finnish>Salli AUD-X</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_duringCpr">
+            <English>Allow AED pad application during CPR</English>
         </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
