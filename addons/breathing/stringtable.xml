@@ -9,7 +9,7 @@
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
             <English>Sets if SPO2 simulation and according functionality like Pneumothorax and \nAirway: occlusion &amp; obstruction (SPO2 reduction will be deactivated) should be activated</English>
             <German>Setzt ob SPO2 Simuliert werden soll mit funktionen wie Pneumothorax und Atemwege: Verstopfung &amp; Obstruktion (SPO2 reduktion wird deaktiviert)</German>
-            <Japanese>SpO2のシミュレーションを気胸や気道:狭窄と異物閉塞などの機能で動作するように設定します。\n(SpO2減少機能は無効化されます)</Japanese>
+            <Japanese>SpO2のシミュレーションを気胸や気道:閉塞と異物などの機能で動作するように設定します。\n(SpO2減少機能は無効化されます)</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">
             <English>Lethal SpO2 value</English>
@@ -734,7 +734,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance">
             <English>Deep Penetrating Injury Chance</English>
-            <Japanese>深い貫通傷の発生確率</Japanese>
+            <Japanese>深い穿通創の発生確率</Japanese>
             <French>Probabilité de blessure profonde</French>
             <Korean>깊은 관통상 확률</Korean>
             <German>Chance auf tiefgreifende Verletzungen</German>
@@ -744,7 +744,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_deepPenetratingInjuryChance_DESC">
             <English>Chance for deep penetrating injury to appear when pneumothorax damage threshold is passed but no pneumothorax is inflicted</English>
-            <Japanese>気胸ダメージのしきい値を超えたが気胸が発生しなかった場合、深い貫通傷が発生する確率が増加します</Japanese>
+            <Japanese>気胸ダメージのしきい値を超えたが気胸が発生しなかった場合、深い穿通創が発生する確率が増加します</Japanese>
             <French>Probabilité qu'une blessure profonde apparaisse lorsque le seuil de dommage du pneumothorax est dépassé, mais qu'aucun pneumothorax n'est infligé</French>
             <Korean>기흉 데미지 한계점을 넘겼지만 기흉에 걸리지 않은 경우 깊은 관통상에 걸릴 확률입니다.</Korean>
             <German>Es kann zu einer tiefgreifenden Verletzung kommen, wenn die Pneumothorax-Schadensschwelle überschritten wird, aber kein Pneumothorax verursacht wird</German>
@@ -754,7 +754,7 @@
         </Key>
         <Key ID="STR_KAT_Breathing_DeepPenetratingInjury">
             <English>Deep Penetrating Injury</English>
-            <Japanese>深い貫通傷</Japanese>
+            <Japanese>深い穿通創</Japanese>
             <French>Blessure profonde</French>
             <Korean>깊은 관통상</Korean>
             <German>Tiefgreifende Verletzung</German>

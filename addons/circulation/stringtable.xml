@@ -891,7 +891,7 @@
             <Turkish>Künyeyi Kontrol Et</Turkish>
             <Italian>Controlla piastrine</Italian>
             <Russian>Проверка Солдатский жетон</Russian>
-            <Japanese>認識票を確認</Japanese>
+            <Japanese>ドッグタグを確認</Japanese>
             <Portuguese>Checar placa de identificação</Portuguese>
             <Finnish>Tarkista sotilasmerkit</Finnish>
         </Key>
@@ -1726,7 +1726,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
-            <Japanese>%1 が認識票の血液型を確認: %2</Japanese>
+            <Japanese>%1 がドッグタグの血液型を確認: %2</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
