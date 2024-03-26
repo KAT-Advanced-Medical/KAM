@@ -1475,6 +1475,7 @@
             <French>Début des insufflations</French>
             <Finnish>Pelastushengitykset alkavat</Finnish>
             <Russian>Начало инсуффляций</Russian>
+            <German>Beatmung hat begonnen</German>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>

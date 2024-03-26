@@ -1118,11 +1118,13 @@
             <English>Blood Drawing Require IV/IO</English>
             <Japanese>採血にIV/IO刺入を要求する</Japanese>
             <Russian>Забор крови требует IO/IV</Russian>
+            <German>Blutabnahme benötigt IV/IO</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
             <Japanese>デフォルトではfalseです。trueの場合、人から採血する前にIV/IOの刺入が必要になります。 \nfalseの場合は刺入無しで採血できます。</Japanese>
             <Russian>По умолчанию false. Если true, вам нужно будет сначала ввести IO/IV, прежде чем вы сможете взять кровь у кого-либо. \nесли false, вы можете забрать кровь без них</Russian>
+            <German>Standard: falsch. Wenn wahr, wird eine IV/IO benötigt bevor man von jemanden Blut abnehmen kann.</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
