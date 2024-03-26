@@ -114,7 +114,7 @@ _unit setVariable [QEGVAR(pharma,pH), 1500, true];
 _unit setVariable [QEGVAR(pharma,kidneyFail), false, true];
 _unit setVariable [QEGVAR(pharma,kidneyArrest), false, true];
 _unit setVariable [QEGVAR(pharma,kidneyPressure), false, true];
-_unit setVariable [QEGVAR(pharma,coagulationFactor), 10, true];
+_unit setVariable [QEGVAR(pharma,coagulationFactor), missionNamespace getVariable [QEGVAR(pharma,coagulation_factor_count), 15], true];
 
 //KAT Surgery
 
