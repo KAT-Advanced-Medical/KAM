@@ -1469,5 +1469,15 @@
             <Finnish>Lakkasi kantamisen %1</Finnish>
             <Russian>Прекратил нести %1</Russian>
         </Key>
+        <Key ID="STR_KAT_Misc_Use_SurgicalKitFullBody">
+            <English>Use Surgical Kit (Full Body)</English>
+            <Japanese>全身を縫合する</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody">
+            <English>Enable Full Body Stitching</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody_DESC">
+            <English>Adds a full-body stitching option alongside the individual body part stitching, using ACE's established settings and values for consistency</English>
+        </Key>
     </Package>
 </Project>
