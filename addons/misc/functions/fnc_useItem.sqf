@@ -78,9 +78,7 @@ if (GVAR(allowSharedVehicleEquipment) > 0 && _vehicleCondition) then {
         _originItems = [_origin, 2] call ACEFUNC(common,uniqueItems); // Magazine
         {
             if (_x in _originItems) then {
-                if ([_origin, _x] call ACEFUNC(common,adjustMagazineAmmo)) then {
-                    [format [LLSTRING(MagItem_Empty), getText (configFile >> "CfgMagazines" >> _x >> "displayName")], 2.5, _medic] call ACEFUNC(common,displayTextStructured);
-                };
+                [_origin, _x] call ACEFUNC(common,adjustMagazineAmmo);
                 [_origin, _x] breakOut "Main";
             };
         } forEach _items;
