@@ -3,6 +3,7 @@ PREP(checkRecovery);
 PREP(fullHealLocal);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListGeneral);
+PREP(gui_updateInjuryListPart);
 PREP(handleAirway);
 PREP(handlePuking);
 PREP(handleRecoveryPosition);
