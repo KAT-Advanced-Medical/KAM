@@ -1,5 +1,6 @@
 PREP(checkAirway);
 PREP(checkRecovery);
+PREP(fullHealLocal);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListGeneral);
 PREP(handleAirway);

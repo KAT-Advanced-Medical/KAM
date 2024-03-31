@@ -18,7 +18,7 @@
 [QACEGVAR(medical_gui,updateInjuryListPart), LINKFUNC(gui_updateInjuryListPart)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_gui,updateInjuryListWounds), LINKFUNC(gui_updateInjuryListWounds)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_gui,updateBodyImage), LINKFUNC(gui_updateBodyImage)] call CBA_fnc_addEventHandler;
-[QACEGVAR(medical_treatment,fullHealLocal), LINKFUNC(fullHealLocalMod)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical,woundReceived),LINKFUNC(handlePulmoHit)] call CBA_fnc_addEventHandler;
 
 ["kat_oxygenTank_300_Item", "kat_oxygenTank_300"] call ACEFUNC(common,registerItemReplacement);

@@ -3,6 +3,7 @@ PREP(applyIV);
 PREP(checkIV);
 PREP(fluid);
 PREP(fluidLocal);
+PREP(fullHealLocal);
 PREP(getBloodVolumeChange);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);

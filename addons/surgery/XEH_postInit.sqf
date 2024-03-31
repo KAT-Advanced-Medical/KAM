@@ -6,4 +6,4 @@
 [QGVAR(incision), LINKFUNC(incisionLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(openReductionProgress), LINKFUNC(openReductionProgressLocal)] call CBA_fnc_addEventHandler;
 
-[QACEGVAR(medical_treatment,fullHealLocal), LINKFUNC(fullHealLocalMod)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
