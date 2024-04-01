@@ -16,6 +16,3 @@
 #endif
 
 #include "\x\kat\addons\main\script_macros.hpp"
-
-#undef GET_BLOOD_LOSS
-#define GET_BLOOD_LOSS(unit)           ([unit] call EFUNC(pharma,getBloodLoss))
