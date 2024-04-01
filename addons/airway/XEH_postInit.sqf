@@ -24,7 +24,7 @@ if !(GVAR(enable)) exitWith {};
 ["ace_unconscious", {
     params ["_unit", "_state"];
     if !(_state) exitWith {
-        _unit call FUNC(init);
+        [_unit] call FUNC(init);
     };
 
     private _alive = alive _unit;

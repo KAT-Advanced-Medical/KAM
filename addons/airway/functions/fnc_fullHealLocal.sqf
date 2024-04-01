@@ -18,9 +18,11 @@
 params ["_patient"];
 TRACE_1("fullHealLocal",_patient);
 
-_patient setVariable [QGVAR(occluded), false, true];
-_patient setVariable [QGVAR(wasOccluded), false];
-_patient setVariable [QGVAR(obstruction), false, true];
-_patient setVariable [QGVAR(recovery), false, true];
-_patient setVariable [QGVAR(overstretch), false, true];
+_patient setVariable [QGVAR(airway_item), "", true];
+_patient setVariable [QGVAR(airway), false, true];
 _patient setVariable [QGVAR(clearedTime), 0, true];
+_patient setVariable [QGVAR(obstruction), false, true];
+_patient setVariable [QGVAR(occluded), false, true];
+_patient setVariable [QGVAR(overstretch), false, true];
+_patient setVariable [QGVAR(recovery), false, true];
+_patient setVariable [QGVAR(wasOccluded), false];
