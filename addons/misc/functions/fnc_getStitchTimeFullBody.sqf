@@ -18,7 +18,6 @@
 
 params ["", "_patient"];
 
-
 private _stitchableTotal = 0;
 
 {
