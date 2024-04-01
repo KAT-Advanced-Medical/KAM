@@ -20,28 +20,28 @@
 
 params ["_ctrl", "_target", "_selectionN", "_entries"];
 
-if !(GVAR(showCyanosis) && _selectionN in [0,2,3]) exitWith {};
+if (GVAR(showCyanosis) && _selectionN in [0,2,3]) then {
+    private _spO2 = 0;
 
-private _spO2 = 0;
-
-if (alive _target) then {
-    _spO2 = GET_SPO2(_target);
-};
-
-if (_spO2 <= GVAR(slightValue) || HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
-    private _cyanosisArr = switch (true) do {
-        case (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN));
-        case (_spO2 <= GVAR(severeValue)): {
-            [LLSTRING(CyanosisStatus_Severe), [0.16, 0.16, 1, 1]];
-        };
-        case (_spO2 <= GVAR(mildValue)): {
-            [LLSTRING(CyanosisStatus_Mild), [0.16, 0.315, 1, 1]];
-        };
-        default {
-            [LLSTRING(CyanosisStatus_Slight), [0.16, 0.47, 1, 1]];
-        };
+    if (alive _target) then {
+        _spO2 = GET_SPO2(_target);
     };
-    _entries pushBack _cyanosisArr;
+
+    if (_spO2 <= GVAR(slightValue) || HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN)) then {
+        private _cyanosisArr = switch (true) do {
+            case (HAS_TOURNIQUET_APPLIED_ON(_target,_selectionN));
+            case (_spO2 <= GVAR(severeValue)): {
+                [LLSTRING(CyanosisStatus_Severe), [0.16, 0.16, 1, 1]];
+            };
+            case (_spO2 <= GVAR(mildValue)): {
+                [LLSTRING(CyanosisStatus_Mild), [0.16, 0.315, 1, 1]];
+            };
+            default {
+                [LLSTRING(CyanosisStatus_Slight), [0.16, 0.47, 1, 1]];
+            };
+        };
+        _entries pushBack _cyanosisArr;
+    };
 };
 
 if (_target getVariable [QGVAR(pulseoximeter), false] && _selectionN in [2,3]) then {
@@ -64,7 +64,7 @@ if (_selectionN isEqualTo 1) then {
         _entries pushBack [LLSTRING(ChestSealApplied), [1,0.95,0,1]];
     };
 
-    if(GVAR(PneumothoraxAlwaysVisible)) then {
+    if (GVAR(PneumothoraxAlwaysVisible)) then {
         if ((_target getVariable [QGVAR(pneumothorax), 0] > 0) && !(_tensionhemothorax)) then {
             _ptxEntry pushback [LLSTRING(pneumothorax_mm), [1,1,1,1]];
         };
