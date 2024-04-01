@@ -1,9 +1,14 @@
 PREP(canUseBVM);
 PREP(checkBreathing);
 PREP(checkPulseOximeter);
+PREP(fullHealLocal);
+PREP(gui_updateBodyImage);
+PREP(gui_updateInjuryListPart);
+PREP(gui_updateInjuryListWounds);
 PREP(handleBreathing);
 PREP(handlePneumothoraxDeterioration);
 PREP(handlePulmoHit);
+PREP(handleRespawn);
 PREP(hasBVM);
 PREP(hasOxygenTank);
 PREP(inflictAdvancedPneumothorax);

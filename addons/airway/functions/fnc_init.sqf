@@ -20,11 +20,7 @@ params ["_unit", ["_isRespawn", true]];
 if (!local _unit) exitWith {};
 if !(GVAR(enable)) exitWith {};
 
-_unit setVariable [QGVAR(obstruction), false, true];
-_unit setVariable [QGVAR(occluded), false, true];
-_unit setVariable [QGVAR(airway), false, true];
-_unit setVariable [QGVAR(overstretch), false, true];
-_unit setVariable [QGVAR(recovery), false, true];
-_unit setVariable [QGVAR(airway_item), "", true];
-_unit setVariable [QGVAR(clearedTime), 0, true];
+// init variables
+[_unit] call FUNC(fullHealLocal);
+
 KAT_forceWakeup = false;
