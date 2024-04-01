@@ -58,6 +58,4 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     };
 };
 
-systemChat format ["Blood Volume Change: %1", _bloodVolumeChange];
-
 _bloodVolumeChange
