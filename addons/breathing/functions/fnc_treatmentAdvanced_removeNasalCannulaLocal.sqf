@@ -17,13 +17,13 @@
  * Public: No
  */
 
- params ["_medic", "_patient"];
+params ["_medic", "_patient"];
 
 _currentMonitors = _patient getVariable [QGVAR(etco2Monitor), []];
 _currentMonitors deleteAt (_currentMonitors find "NasalCannula");
 
-_patient setVariable [QGVAR(etco2Monitor),_currentMonitors,true];
-_patient setVariable [QGVAR(nasalCannula),false,true];
+_patient setVariable [QGVAR(etco2Monitor), _currentMonitors, true];
+_patient setVariable [QGVAR(nasalCannula), false, true];
 
 [_patient, "activity", LSTRING(Remove_NasalCannula_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 

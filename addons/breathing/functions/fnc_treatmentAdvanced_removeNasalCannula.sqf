@@ -16,6 +16,6 @@
  * Public: No
  */
 
- params ["_medic", "_patient"];
+params ["_medic", "_patient"];
 
 [QGVAR(removeNasalCannulaLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;

@@ -25,7 +25,7 @@ if (_item isEqualTo "Larynxtubus") then {
 
     private _currentMonitors = _patient getVariable [QEGVAR(breathing,etco2Monitor), []];
     _currentMonitors deleteAt (_currentMonitors find "Larynxtubus");
-    _patient setVariable [QEGVAR(breathing,etco2Monitor),_currentMonitors,true]; 
+    _patient setVariable [QEGVAR(breathing,etco2Monitor), _currentMonitors, true];
 } else {
     [_patient, "activity", LSTRING(RemoveGuedeltubus_Log), [[_medic] call ACEFUNC(common,getName)]] call ACEFUNC(medical_treatment,addToLog);
 };

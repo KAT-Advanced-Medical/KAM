@@ -24,8 +24,8 @@ params ["_medic", "_patient","_classname", "_usedItem"];
 _currentMonitors = _patient getVariable [QGVAR(etco2Monitor),[]];
 _currentMonitors pushBack _classname;
 
-_patient setVariable [QGVAR(etco2Monitor),_currentMonitors,true];
-_patient setVariable [QGVAR(nasalCannula),true,true];
+_patient setVariable [QGVAR(etco2Monitor), _currentMonitors, true];
+_patient setVariable [QGVAR(nasalCannula), true, true];
 
 [_patient, _usedItem] call ACEFUNC(medical_treatment,addToTriageCard);
 [_patient, "activity", ELSTRING(airway,airway_log), [[_medic] call ACEFUNC(common,getName), getText (configFile >> "CfgWeapons" >> _usedItem >> "displayName")]] call ACEFUNC(medical_treatment,addToLog);
