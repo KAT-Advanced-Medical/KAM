@@ -45,7 +45,6 @@ private _woundIndex = (_stitchedWounds getOrDefault [_bodyPart, []]) findIf {
     _classID == _treatedID
 };
 
-
 if (_woundIndex == -1) then {
     (_stitchedWounds getOrDefault [_bodyPart, [], true]) pushBack _treatedWound;
 } else {
@@ -60,7 +59,7 @@ if (ACEGVAR(medical_treatment,clearTrauma) == 1) then {
     _bodyPartDamage set [_partIndex, (_bodyPartDamage select _partIndex) - (_treatedDamageOf * _treatedAmountOf)];
     _patient setVariable [QEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
     TRACE_2("clearTrauma - healed damage",_bodyPart,_treatedDamageOf);
-        
+
     switch (_bodyPart) do {
         case "head": { [_patient, true, false, false, false] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
         case "body": { [_patient, false, true, false, false] call ACEFUNC(medical_engine,updateBodyPartVisuals); };
