@@ -734,6 +734,7 @@
             <English>%1 did a medical suction using a %2</English>
             <Japanese>%1 は %2 で医療吸引を行った</Japanese>
             <German>%1 hat eine medizinische Absaugung mittels %2 durchgeführt</German>
+
             <Russian>Ручной всасывающий насос - это медицинское всасывающее устройство для отсасывания воздуха вручную. Это альтернатива электрическим устройствам.</Russian>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">

@@ -8,6 +8,7 @@ class CfgPatches {
         weapons[] = {};
         magazines[] = {};
         requiredAddons[] = {
+            "kat_main",
             "ace_medical",
             "ace_medical_ai",
             "ace_medical_blood",
