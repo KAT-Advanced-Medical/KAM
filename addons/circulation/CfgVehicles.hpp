@@ -73,21 +73,12 @@ class CfgVehicles {
         };
     };
 
-    class kat_X_AEDItem: Item_Base_F {
-        scope = 2;
-        scopeCurator = 2;
+    class kat_X_AEDItem: kat_AEDItem {
         displayName = CSTRING(X_Display);
-        author = "Katalam";
-        vehicleClass = "Items";
         model = QPATHTOF(models\aedx\aedx.p3d);
         class TransportItems {
             MACRO_ADDITEM(kat_X_AED,1);
         };
-
-        ACEGVAR(dragging,canDrag) = 1;
-        ACEGVAR(dragging,canCarry) = 1;
-        ACEGVAR(dragging,dragPosition)[] = {0,1.1,0};
-        ACEGVAR(dragging,carryPosition)[] = {0,1.1,1};
 
         class ACE_Actions {
             class ACE_MainActions {

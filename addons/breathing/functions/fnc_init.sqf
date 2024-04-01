@@ -20,7 +20,7 @@ params ["_unit", ["_isRespawn", true]];
 if (!local _unit) exitWith {};
 if !(GVAR(enable)) exitWith {};
 
-_unit setVariable [QGVAR(airwayStatus), 100, true];
+[_unit] call FUNC(fullHealLocal);
 
 _unit setVariable [QGVAR(etco2Level), 40, true];
 _unit setVariable [QGVAR(breathRate), 15, true];
