@@ -61,39 +61,6 @@
             <Finnish>Ei lisätty nesteitä</Finnish>
             <Russian>Никаких переливаний</Russian>
         </Key>
-        <Key ID="STR_KAT_GUI_SETTING_showInactiveStatuses">
-            <English>Show Inactive Statuses</English>
-            <Korean>비활성 상태 표시</Korean>
-            <Japanese>非アクティブなステータスを表示</Japanese>
-            <German>Inaktive Status anzeigen</German>
-            <French>Montrer les status inactifs</French>
-            <Portuguese>Mostrar status inativos</Portuguese>
-            <Spanish>Mostrar estados inactivos</Spanish>
-            <Finnish>Näytä passiiviset tehosteet</Finnish>
-            <Russian>Показывать неактивные статусы</Russian>
-        </Key>
-        <Key ID="STR_KAT_GUI_SETTING_showBleedRate">
-            <English>Show Bleed Rate</English>
-            <Korean>출혈 속도 표시</Korean>
-            <Japanese>出血速度の表示</Japanese>
-            <German>Blutungsrate anzeigen</German>
-            <French>Montrer le taux de saignement</French>
-            <Portuguese>Mostrar taxa de sangramento</Portuguese>
-            <Spanish>Mostrar ritmo de sangrado</Spanish>
-            <Finnish>Näytä verenvuotonopeus</Finnish>
-            <Russian>Показывать скорость кровотечения</Russian>
-        </Key>
-        <Key ID="STR_KAT_GUI_SETTING_showBleedRate_DESC">
-            <English>Display bleed rate (slow/moderate/severe/massive)</English>
-            <Korean>출혈 속도(느림/중간/심각/과다)를 표시합니다</Korean>
-            <Japanese>出血速度を表示する (緩やか/そこそこ速い/激しい/酷く多い)</Japanese>
-            <German>Blutungsrate anzeigen (langsam/mäßig/stark/massiv)</German>
-            <French>Affiche le taux de saignement</French>
-            <Portuguese>Exibir taxa de sangramento (lento/moderado/grave/massivo)</Portuguese>
-            <Spanish>Mostrar la tasa de sangrado (lento, moderado, grave, masivo)</Spanish>
-            <Finnish>Näytä verenvuotonopeus (hidas/kohtalainen/vakava/valtava)</Finnish>
-            <Russian>Отображение скорости кровотечения (медленное/умеренное/сильное/массивное)</Russian>
-        </Key>
         <Key ID="STR_KAT_GUI_SETTING_overlayBodyPart">
             <English>Overlay Selected Body Part</English>
             <Korean>선택한 신체 부위 오버레이</Korean>

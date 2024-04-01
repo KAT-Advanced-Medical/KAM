@@ -1479,5 +1479,22 @@
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody_DESC">
             <English>Adds a full-body stitching option alongside the individual body part stitching, using ACE's established settings and values for consistency</English>
         </Key>
+        <Key ID="STR_KAT_Misc_MagItem_Empty">
+            <English>%1 is now empty</English>
+            <German>%1 ist nun leer</German>
+            <Polish>%1 jest pusty</Polish>
+            <Spanish>%1 está vacío ahora</Spanish>
+            <Chinese>%1 目前用完了</Chinese>
+            <Chinesesimp>%1 用完了</Chinesesimp>
+            <Czech>%1 je prázdná</Czech>
+            <Korean>%1 은(는) 현재 비어 있습니다</Korean>
+            <French>%1 est maintenant vide</French>
+            <Turkish>% 1 artık boş</Turkish>
+            <Italian>%1 è vuota</Italian>
+            <Japanese>%1 は空になりました</Japanese>
+            <Russian>%1 сейчас пуст</Russian>
+            <Portuguese>%1 agora está vazio</Portuguese>
+            <Finnish>%1 ei ole tyhjä</Finnish>
+        </Key>
     </Package>
 </Project>

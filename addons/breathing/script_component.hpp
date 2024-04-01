@@ -1,6 +1,7 @@
 #define COMPONENT breathing
 #define COMPONENT_BEAUTIFIED KAT - Breathing
 #include "\x\kat\addons\main\script_mod.hpp"
+#include "\x\kat\addons\gui\gui_defines.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
