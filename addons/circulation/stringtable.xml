@@ -1780,7 +1780,6 @@
         </Key>
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
-            <Japanese>%1 が認識票の血液型を確認: %2</Japanese>
             <German>%1 hat die Blutgruppe der Erkennungsmarke überprüft: %2</German>
             <Japanese>%1 がドッグタグの血液型を確認: %2</Japanese>
             <Russian>%1 проверил жетоны, группа крови: %2</Russian>
