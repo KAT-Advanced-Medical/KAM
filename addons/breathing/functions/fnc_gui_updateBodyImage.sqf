@@ -23,6 +23,7 @@ private _ctrlPulseOximeterRight = _ctrlGroup controlsGroupCtrl IDC_BODY_RIGHTARM
 private _ctrlPulseOximeterLeft = _ctrlGroup controlsGroupCtrl IDC_BODY_LEFTARM_PULSEOX;
 private _ctrlChestSeal = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_CHESTSEAL;
 private _ctrlChestInjury = _ctrlGroup controlsGroupCtrl IDC_BODY_TORSO_PNEUMOTHORAX;
+private _ctrlNasalCannula = _ctrlGroup controlsGroupCtrl IDC_BODY_HEAD_NASAL;
 
 if (_target getVariable [QGVAR(activeChestSeal), false]) then {
     _ctrlChestSeal ctrlShow true;
@@ -58,4 +59,10 @@ if (_target getVariable [QGVAR(pulseoximeter), false]) then {
 } else {
     _ctrlPulseOximeterLeft ctrlShow false;
     _ctrlPulseOximeterRight ctrlShow false;
+};
+
+if (_target getVariable [QGVAR(nasalCannula), false]) then {
+    _ctrlNasalCannula ctrlShow true;
+} else {
+    _ctrlNasalCannula ctrlShow false;
 };
