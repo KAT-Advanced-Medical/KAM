@@ -43,7 +43,6 @@ if (!local _unit) exitWith {};
     } forEach (_medicationArray);
 
     if !(_action) then {
-        ACEGVAR(medical,const_minCardiacOutput) = (_unit getVariable [QGVAR(alphaAction), 1]) * EGVAR(circulation,cardiacArrestBleedRate);
         _unit setVariable [QGVAR(alphaAction), 1];
     };
 }, 180, [_unit]] call CBA_fnc_addPerFrameHandler;
