@@ -3,13 +3,13 @@
     <Package name="Breathing">
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE">
             <English>Activate Breathing Module</English>
-            <German>Aktiviere Athmungs Modul</German>
+            <German>Aktiviere Atmungs Modul</German>
             <Japanese>呼吸モジュールを有効化</Japanese>
             <Russian>Активировать дыхательный модуль</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
             <English>Sets if SPO2 simulation and according functionality like Pneumothorax and \nAirway: occlusion &amp; obstruction (SPO2 reduction will be deactivated) should be activated</English>
-            <German>Setzt ob SPO2 Simuliert werden soll mit funktionen wie Pneumothorax und Atemwege: Verstopfung &amp; Obstruktion (SPO2 reduktion wird deaktiviert)</German>
+            <German>Aktiviert SPO2 Simulation sowie Pneumothorax und Atemwege: Verstopfung und Obstruktion (SPO2 Reduktion wird deaktiviert)</German>
             <Japanese>SpO2のシミュレーションを気胸や気道:閉塞と異物などの機能で動作するように設定します。\n(SpO2減少機能は無効化されます)</Japanese>
             <Russian>Устанавливает, следует ли активировать имитацию SPO2 и соответствующие функции, такие как пневмоторакс и \дыхательные пути: окклюзия и обструкция (уменьшение SPO2 будет отключено)</Russian>
         </Key>
@@ -657,6 +657,7 @@
             <French>Le pourcentage de chance qui détermine si un pneumothorax complètement détérioré se transforme en pneumothorax avancé. Ce pourcentage est relancé de manière continue en suivant l'intervalle de détérioration du pneumthorax configurée.</French>
             <Finnish>Prosenttiosuus mahdollisuus, joka määrittää, kehittyykö täysin heikentynyt ilmarinta pitkälle edenneeksi ilmarintaksi. Tämä lasketaan jatkuvasti pneumotoraksin etenemisajan mukaan.</Finnish>
             <Russian>Процентная вероятность, определяющая, перерастет ли пневмоторакс с полным ухудшением в запущенный пневмоторакс, непрерывно увеличивается в соответствии с заданным интервалом ухудшения состояния при пневмотораксе.</Russian>
+            <German>Die Wahrscheinlichkeit in Prozent, welche bestimmt, ob sich ein vollständig verschlechterter Pneumothorax in einen fortgeschrittenen Pneumothorax entwickelt.\nDies wird fortlaufend, auf Basis des Pneumothorax Verschlechterungs Intervals, ermittelt.</German>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemothorax / Tension Pnuemothorax Treament Minimum Level</English>
@@ -1475,6 +1476,7 @@
             <French>Début des insufflations</French>
             <Finnish>Pelastushengitykset alkavat</Finnish>
             <Russian>Начало инсуффляций</Russian>
+            <German>Beatmung hat begonnen</German>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>
