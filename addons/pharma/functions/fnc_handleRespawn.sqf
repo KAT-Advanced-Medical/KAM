@@ -16,6 +16,8 @@
  * Public: No
  */
 
+params ["_unit","_dead"];
+
 [_unit] call FUNC(fullHealLocal);
 
 [{
