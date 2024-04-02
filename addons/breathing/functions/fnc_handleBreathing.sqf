@@ -108,7 +108,7 @@ if (!local _unit) then {
                     _perfusionActive = true;
                     if(_BVMInUse) then {
                         if(_oxygenAssisted) then {
-                            _output = 0.3;
+                            _output = 0.2;
                         } else {
                             _output = 0.1;
                         };

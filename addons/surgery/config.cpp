@@ -31,8 +31,8 @@ class CfgPatches {
             "ace_dogtags",
             "cba_settings"
         };
-        author = "1LT.Mazinski";
-        authors[] = {"1LT.Mazinski"};
+        author = "Mazinski";
+        authors[] = {"Mazinski"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };

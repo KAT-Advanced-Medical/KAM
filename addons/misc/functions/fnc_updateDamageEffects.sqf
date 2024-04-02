@@ -97,7 +97,6 @@ if (_unit getVariable [QEGVAR(surgery,reboa), false]) then {
     _noSprint = true;
 };
 
-
 [_unit, "blockSprint", QACEGVAR(medical,fracture), _noSprint] call ACEFUNC(common,statusEffect_set);
 [_unit, "forceWalk", QACEGVAR(medical,fracture), _noJog] call ACEFUNC(common,statusEffect_set);
 

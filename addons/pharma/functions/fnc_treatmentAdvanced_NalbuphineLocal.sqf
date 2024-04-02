@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski
- * Applies the opioid factor from Morphine
+ * Applies the opioid factor from Nalbuphine
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player, "Leftleg", 1] call kat_pharma_fnc_treatmentAdvanced_MorphineLocal;
+ * [player, "Leftleg", 1] call kat_pharma_fnc_treatmentAdvanced_NalbuphineLocal;
  *
  * Public: No
  */

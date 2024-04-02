@@ -6,6 +6,7 @@ PREP(fractureSelect);
 PREP(fractureSelectLocal);
 PREP(fullHealLocal);
 PREP(getNPWTTime);
+PREP(gui_updateInjuryListPart);
 PREP(hasAdditionalTourniquetAppliedTo);
 PREP(incision);
 PREP(incisionLocal);

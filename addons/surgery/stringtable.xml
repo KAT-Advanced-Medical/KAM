@@ -650,6 +650,9 @@
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
             <English>Removing</English>
         </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Status">
+            <English>REBOA</English>
+        </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Use">
             <English>Pericardial Tap</English>
         </Key>

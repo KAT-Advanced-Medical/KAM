@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski
+ * Author: 1LT.Mazinski.H
  * Local treatment call for dialysis procedure
  *
  * Arguments:

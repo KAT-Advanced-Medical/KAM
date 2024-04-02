@@ -6,8 +6,6 @@
  *
  * Arguments:
  * 0: Patient <OBJECT>
- * 1: Bodypart <STRING>
- * 2: OpioidRelief <NUMBER>
  *
  * Return Value:
  * None
@@ -18,6 +16,8 @@
  * Public: No
  */
 
+
+/// ChromAberration effect
 params ["_target", "_bodyPart", "_opioidRelief"];
 
 if !(alive _target) exitWith {};
@@ -28,7 +28,7 @@ if (_opioidFactor == 1) then {
     _target setVariable [QGVAR(opioidFactor), _opioidRelief, true];
 };
 
-/// ChromAberration effect
+// ChromAberration effect
 if (GVAR(chromatic_aberration_checkbox_fentanyl)) then {
     [{
         params ["_target"];
@@ -44,7 +44,7 @@ if (GVAR(chromatic_aberration_checkbox_fentanyl)) then {
             };
             _handle ppEffectEnable true;
             _handle ppEffectAdjust _effect;
-            _handle ppEffectCommit 180; // 6m for max chroma
+            _handle ppEffectCommit 180; // 3m for max chroma
 
             [{    params["_handle"];
 

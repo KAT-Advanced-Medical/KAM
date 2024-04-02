@@ -104,6 +104,7 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 //Change Alpha Factor
 [_patient, _alphaFactor] call FUNC(alphaAction);
 
+
 if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
 };

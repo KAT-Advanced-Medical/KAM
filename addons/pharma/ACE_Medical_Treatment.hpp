@@ -167,8 +167,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseNormal[] = {5, 10};
             hrIncreaseHigh[] = {5, 10};
             timeInSystem = 360;
-            timeTillMaxEffect = 60;
-            maxDose = 10;
+            timeTillMaxEffect = 45;
+            maxDose = 12;
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";

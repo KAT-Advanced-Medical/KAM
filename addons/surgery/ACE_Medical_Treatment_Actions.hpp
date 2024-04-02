@@ -118,7 +118,7 @@ class ACE_Medical_Treatment_Actions {
         callbackProgress = QFUNC(npwtTreatmentProgress);
         callbackSuccess = "";
     };
-    class Ultrasound: BasicBandage {
+     class Ultrasound: BasicBandage {
         displayName = CSTRING(Ultra_Use);
         displayNameProgress = CSTRING(Ultra_Action);
         category = "surgery";
