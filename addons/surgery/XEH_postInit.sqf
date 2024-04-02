@@ -11,4 +11,4 @@
 [QGVAR(reboaRemove), LINKFUNC(reboaRemoveLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(pericardialTap), LINKFUNC(pericardialTapLocal)] call CBA_fnc_addEventHandler;
 
-
+[QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;

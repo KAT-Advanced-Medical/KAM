@@ -20,7 +20,7 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart", "_classname", ["_extraArgs",[]]];
+params ["_medic", "_patient", "_bodyPart", "_classname", "_bandageEffectiveness", ["_extraArgs",[]]];
 
 // Delay by a frame if cursor menu is open to prevent progress bar failing
 if (uiNamespace getVariable [QACEGVAR(interact_menu,cursorMenuOpened), false]) exitWith {
@@ -183,13 +183,13 @@ if (_callbackProgress isEqualTo {}) then {
     _callbackProgress = {true};
 };
 
-[_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _extraArgs] call _callbackStart;
+[_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _bandageEffectiveness, _extraArgs] call _callbackStart;
 
-["ace_treatmentStarted", [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _extraArgs]] call CBA_fnc_localEvent;
+["ace_treatmentStarted", [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _bandageEffectiveness, _extraArgs]] call CBA_fnc_localEvent;
 
 [
     _treatmentTime,
-    [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _extraArgs],
+    [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _bandageEffectiveness, _extraArgs],
     ACEFUNC(medical_treatment,treatmentSuccess),
     ACEFUNC(medical_treatment,treatmentFailure),
     getText (_config >> "displayNameProgress"),

@@ -220,7 +220,7 @@ if (!local _unit) then {
                 if !(_soundTargets isEqualTo []) then {
                     [QGVAR(playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
                 };
-                
+
                 [{
                     params["_unit"];
                     _unit setVariable [QGVAR(PneumoBreathCooldownOn), false, true];
