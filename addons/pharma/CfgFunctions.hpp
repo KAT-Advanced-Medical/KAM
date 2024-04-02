@@ -5,9 +5,6 @@ class CfgFunctions {
             class getBloodVolumeChange {
                 file = QPATHTOF(functions\fnc_getBloodVolumeChange.sqf);
             };
-            class getBloodLoss {
-                file = QPATHTOF(functions\fnc_getBloodLoss.sqf);
-            };
         };
     };
 

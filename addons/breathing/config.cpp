@@ -15,6 +15,9 @@ class CfgPatches {
         };
         magazines[] = {};
         requiredAddons[] = {
+            "kat_main",
+            "kat_airway",
+            "kat_circulation",
             "ace_medical",
             "ace_medical_ai",
             "ace_medical_blood",
@@ -27,9 +30,6 @@ class CfgPatches {
             "ace_medical_treatment",
             "ace_medical_vitals",
             "ace_dogtags",
-            "kat_main",
-            "kat_airway",
-            "kat_circulation",
             "cba_settings"
         };
         author = "Katalam";
