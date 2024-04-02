@@ -2051,7 +2051,7 @@
             <English>Allow AED pad application during CPR</English>
             <Russian>Разрешить применение подкладки AED во время СЛР</Russian>
             <Japanese>CPR中の除細動器パッド貼り付けの許可</Japanese>
-            <German>Anbringung AED Pads während laufender HLW zulassen</German>
+            <German>Anbringung von AED Pads während laufender HLW zulassen</German>
         </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
