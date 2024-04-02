@@ -21,5 +21,4 @@ _alphaAction = _alphaAction + _value;
 
 _alphaAction = (_alphaAction min 2) max 0.5;
 
-ACEGVAR(medical,const_minCardiacOutput) = _alphaAction * EGVAR(circulation,cardiacArrestBleedRate);
 _patient setVariable [QGVAR(alphaAction), _alphaAction, true];
