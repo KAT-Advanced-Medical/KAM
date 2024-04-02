@@ -19,6 +19,7 @@
 [QGVAR(fentanylLocal), LINKFUNC(fentanylLocal)] call CBA_fnc_addEventHandler;
 [QGVAR(caffeineLocal), LINKFUNC(treatmentAdvanced_CaffeineLocal)] call CBA_fnc_addEventHandler;
 
+["kat_fluid", LINKFUNC(fluid)] call CBA_fnc_addEventHandler;
 
 ["kat_PainkillerItem", "kat_Painkiller"] call ACEFUNC(common,registerItemReplacement);
 ["kat_PenthroxItem", "kat_Penthrox"] call ACEFUNC(common,registerItemReplacement);
@@ -26,10 +27,15 @@
 ["kat_PervitinItem", "kat_Pervitin"] call ACEFUNC(common,registerItemReplacement);
 ["kat_CaffeineItem", "kat_Caffeine"] call ACEFUNC(common,registerItemReplacement);
 
+[QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
+
+[QACEGVAR(medical_gui,updateInjuryListPart), LINKFUNC(gui_updateInjuryListPart)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_gui,updateBodyImage), LINKFUNC(gui_updateBodyImage)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 ["ace_treatmentSucceded", {
     params ["_medic", "_patient", "_bodyPart", "_classname"];
     if (!(GVAR(staminaMedication)) || ACE_Player != _patient || !(alive _patient)) exitWith {};
-    
+
     if (_classname == "Epinephrine") then {
         if (ACEGVAR(advanced_fatigue,enabled)) then {
             ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 300;
@@ -39,12 +45,12 @@
                 params ["_patient"];
                 ["kat_EDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
             }, [_patient], 120] call CBA_fnc_waitAndExecute;
-        
+
         } else {
             _defaultAnimSpeed = getAnimSpeedCoef _patient;
             _patient setAnimSpeedCoef (_defaultAnimSpeed * 1.25);
             _patient setStamina 180;
-            
+
             [{
                 params ["_patient", "_defaultAnimSpeed"];
                 _patient setAnimSpeedCoef _defaultAnimSpeed;

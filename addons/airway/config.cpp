@@ -7,16 +7,19 @@ class CfgPatches {
         units[] = {
             "kat_guedelItem",
             "kat_larynxItem",
+            "kat_suctionItem",
             "kat_accuvacItem",
             "kat_vomit"
         };
         weapons[] = {
             "kat_guedel",
             "kat_larynx",
+            "kat_suction",
             "kat_accuvac"
         };
         magazines[] = {};
         requiredAddons[] = {
+            "kat_main",
             "ace_medical",
             "ace_medical_ai",
             "ace_medical_blood",
@@ -29,8 +32,7 @@ class CfgPatches {
             "ace_medical_treatment",
             "ace_medical_vitals",
             "ace_dogtags",
-            "cba_settings",
-            "kat_main"
+            "cba_settings"
         };
         author = "Katalam";
         authors[] = {"Katalam"};

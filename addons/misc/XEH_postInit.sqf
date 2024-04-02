@@ -35,14 +35,10 @@ if (GVAR(incompatibilityWarning)) then {
 
 [QGVAR(headTourniquetLocal), LINKFUNC(headTourniquetLocal)] call CBA_fnc_addEventHandler;
 
-["loadout", {
-    GVAR(uniqueItemsCache) = nil;
-}] call CBA_fnc_addPlayerEventHandler;
-
-["kat_Armband_Red_Cross_Item", "kat_armband_red_cross"] call ACEFUNC(common,registerItemReplacement);
-["kat_Armband_Medic_Item", "kat_armband_medic"] call ACEFUNC(common,registerItemReplacement);
-["kat_Armband_Doctor_Item", "kat_armband_doctor"] call ACEFUNC(common,registerItemReplacement);
-["kat_Armband_Kat_Item", "kat_armband_kat"] call ACEFUNC(common,registerItemReplacement);
+["kat_Armband_Red_Cross_Item", "kat_Armband_Red_Cross_Goggles"] call ACEFUNC(common,registerItemReplacement);
+["kat_Armband_Medic_Item", "kat_Armband_Medic_Goggles"] call ACEFUNC(common,registerItemReplacement);
+["kat_Armband_Doctor_Item", "kat_Armband_Doctor_Goggles"] call ACEFUNC(common,registerItemReplacement);
+["kat_Armband_Kat_Item", "kat_Armband_Kat_Goggles"] call ACEFUNC(common,registerItemReplacement);
 ["kat_Bubble_Wrap_Item", "kat_Bubble_Wrap"] call ACEFUNC(common,registerItemReplacement);
 
 [QGVAR(stopCarryingPrompt), LINKFUNC(stopCarryingPrompt)] call CBA_fnc_addEventHandler;
@@ -66,6 +62,6 @@ call FUNC(FAK_updateContents);
 ["multiplier", {
     private _activeTourniquets = GET_TOURNIQUETS(ACE_player);
     if (ACE_player getVariable [QGVAR(Tourniquet_ArmNecrosis), 0] > 0) then {
-        (ACE_player getVariable [QGVAR(Tourniquet_ArmNecrosis), 0]) / 10
-    } else {0};
+        1 max (ACE_player getVariable [QGVAR(Tourniquet_ArmNecrosis), 0]) / 10
+    } else {1};
 }, QUOTE(ADDON)] call ACEFUNC(common,addSwayFactor);

@@ -15,19 +15,19 @@
  * Treatment Started <BOOL>
  *
  * Example:
- * [player, cursorObject, "Head", "BasicBandage"] call ace_medical_treatment_fnc_treatment
+ * [player, cursorObject, "Head", "BasicBandage"] call ace_medical_treatment_fnc_treatment;
  *
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart", "_classname", ["_extraArgs",[]]];
+params ["_medic", "_patient", "_bodyPart", "_classname", "_bandageEffectiveness", ["_extraArgs",[]]];
 
 // Delay by a frame if cursor menu is open to prevent progress bar failing
 if (uiNamespace getVariable [QACEGVAR(interact_menu,cursorMenuOpened), false]) exitWith {
-    [FUNC(treatment), _this] call CBA_fnc_execNextFrame;
+    [ACEFUNC(medical_treatment,treatment), _this] call CBA_fnc_execNextFrame;
 };
 
-if !(_this call FUNC(canTreat)) exitWith {false};
+if !(_this call ACEFUNC(medical_treatment,canTreat)) exitWith {false};
 
 private _config = configFile >> "ace_medical_treatment_actions" >> _classname;
 
@@ -49,12 +49,20 @@ if (_treatmentTime == 0) exitWith {false};
 // Consume one of the treatment items if needed
 // Store item user so that used item can be returned on failure
 private _userAndItem = if (GET_NUMBER_ENTRY(_config >> "consumeItem") == 1) then {
-    [_medic, _patient, getArray (_config >> "items")] call FUNC(useItem);
+    [_medic, _patient, getArray (_config >> "items")] call ACEFUNC(medical_treatment,useItem);
 } else {
     [objNull, ""]; // Treatment does not require items to be consumed
 };
 
-_userAndItem params ["_itemUser", "_usedItem"];
+_userAndItem params ["_itemUser", "_usedItem", ["_magazineCount", -1]];
+
+if (((_classname call BIS_fnc_itemType) select 0) isEqualTo "Magazine") then {
+    if (count _extraArgs > 0)  then {
+        _extraArgs pushBack _magazineCount;
+    } else {
+        _extraArgs =[-1,_magazineCount];
+    };
+};
 
 // Patient Animation Added from Old Ace
 if (alive _patient) then {
@@ -175,14 +183,14 @@ if (_callbackProgress isEqualTo {}) then {
     _callbackProgress = {true};
 };
 
-[_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _extraArgs] call _callbackStart;
+[_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _bandageEffectiveness, _extraArgs] call _callbackStart;
 
-["ace_treatmentStarted", [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _extraArgs]] call CBA_fnc_localEvent;
+["ace_treatmentStarted", [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _bandageEffectiveness, _extraArgs]] call CBA_fnc_localEvent;
 
 [
     _treatmentTime,
-    [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _extraArgs],
-    FUNC(treatmentSuccess),
+    [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _bandageEffectiveness, _extraArgs],
+    ACEFUNC(medical_treatment,treatmentSuccess),
     ACEFUNC(medical_treatment,treatmentFailure),
     getText (_config >> "displayNameProgress"),
     _callbackProgress,

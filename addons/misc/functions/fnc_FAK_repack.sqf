@@ -31,33 +31,33 @@ private _fnc_arrayToRemoveInvItem = {
     } foreach _array;
 };
 
-private _fnc_getContainer = {
-    params ["_containerType"];
+private _fnc_getUnitContainer = {
+    params ["_container", "_unit"];
 
-    switch (_containerType) do {
-        case 1: {"uniform"};
-        case 2: {"vest"};
-        case 3: {"backpack"};
-        default {""};
+    switch (_container) do {
+        case "Uniform": { uniformContainer _unit};
+        case "Vest": { vestContainer _unit};
+        case "Backpack": { backpackContainer _unit};
     };
 };
 
-private _ammoCount = [_unit, _item] call FUNC(getMagazineAmmoCounts);
+private _ammoCount = [_unit, _item, true] call FUNC(getMagazineAmmoCounts);
 private _slotArray = [];
 private _highestAmmoCount = -1;
+private _containerFAK = "";
 
 {
-    private _checkedArray = [_x, _type] call FUNC(FAK_ammoToArray);
+    private _checkedArray = [(_x select 0), _type] call FUNC(FAK_ammoToArray);
 
-    if (!(_checkedArray select (_slot - 1)) && _x > _highestAmmoCount) then { // Get fullest FAK
+    if (!(_checkedArray select (_slot - 1)) && (_x select 0) > _highestAmmoCount) then { // Get fullest FAK
         _slotArray = _checkedArray;
-        _highestAmmoCount = _x;
+        _highestAmmoCount = _x select 0;
+        _containerFAK = _x select 1;
     };
 } forEach _ammoCount;
 
 if !(_highestAmmoCount > -1) exitWith {};
 
-private _container = "";
 private _FAKToAdd = "";
 private _itemList = [];
 private _max = 0;
@@ -65,33 +65,33 @@ private _max = 0;
 switch (_type) do {
     case 0: { // IFAK
         _FAKToAdd = "kat_IFAK";
-        _container = [(missionNamespace getVariable [QGVAR(IFAK_Container), 0])] call _fnc_getContainer;
         _itemList = missionNameSpace getVariable [QGVAR(IFAKContents), []];
         _max = 15;
     };
     case 1: { // AFAK
         _FAKToAdd = "kat_AFAK";
-        _container = [(missionNamespace getVariable [QGVAR(AFAK_Container), 0])] call _fnc_getContainer;
         _itemList = missionNameSpace getVariable [QGVAR(AFAKContents), []];
         _max = 63;
     };
     default { // MFAK
         _FAKToAdd = "kat_MFAK";
-        _container = [(missionNamespace getVariable [QGVAR(MFAK_Container), 0])] call _fnc_getContainer;
         _itemList = missionNameSpace getVariable [QGVAR(MFAKContents), []];
         _max = 255;
     };
 };
 
-_unit removeItem _item;
 [_unit, _itemList select (_slot - 1)] call _fnc_arrayToRemoveInvItem;
 
 _slotArray set [(_slot - 1), true];
 
 private _amountLeft = [_slotArray] call FUNC(FAK_arrayToAmmo);
 
+private _unitContainer = [_containerFAK, _unit] call _fnc_getUnitContainer;
+
+_unitContainer addMagazineAmmoCargo [_item, -1, _highestAmmoCount];
+
 if (_amountLeft >= _max) then {
-    [_unit, _FAKToAdd, _container] call ACEFUNC(common,addToInventory);
+    [_unit, _FAKToAdd, (toLower _containerFAK)] call ACEFUNC(common,addToInventory);
 } else {
-    [_unit, (_FAKToAdd + "_Magazine"), _container, _amountLeft] call ACEFUNC(common,addToInventory);
+    _unitContainer addMagazineAmmoCargo [(_FAKToAdd + "_Magazine"), 1, _amountLeft];
 };

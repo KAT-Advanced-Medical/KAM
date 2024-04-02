@@ -2,6 +2,7 @@ class CfgWeapons
 {
     class ToolKit;
     class ACE_ItemCore;
+    class ACE_NVGoggles_WP;
     class CBA_MiscItem_ItemInfo;
     class Attachable_Helistretcher: ToolKit {
         author = "Battlekeeper";
@@ -47,6 +48,45 @@ class CfgWeapons
         picture = QPATHTOF(ui\ArmbandKat.paa);
     };
 
+    class kat_Armband_Red_Cross_NVG: ACE_NVGoggles_WP {
+        author = "Miss Heda, vccv9040 (Swedish Forces Pack)";
+        displayName = CSTRING(Armband_Red_Cross_ItemName);
+        editorPreview = QPATHTOF(ui\ArmbandWhiteCross.paa);
+        picture = QPATHTOF(ui\ArmbandWhiteCross.paa);
+        model = QPATHTOF(models\armband\Armband.p3d);
+        hiddenSelections[] = {"Armband"};
+        hiddenSelectionsTextures[] = {QPATHTOF(models\armband\ArmbandWC.paa)};
+        class ItemInfo {
+            type = 616;
+            hmdType = 0;
+            hiddenSelections[] = {"Armband"};
+            uniformModel = QPATHTOF(models\armband\Armband.p3d);
+            modelOff = QPATHTOF(models\armband\Armband.p3d);
+            mass = 3;
+        };
+    };
+
+    class kat_Armband_Medic_NVG: kat_Armband_Red_Cross_NVG {
+        displayName = CSTRING(Armband_Medic_ItemName);
+        editorPreview = QPATHTOF(ui\ArmbandWhiteCrossMedic.paa);
+        picture = QPATHTOF(ui\ArmbandWhiteCrossMedic.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(models\armband\ArmbandWCM.paa)};
+    };
+
+    class kat_Armband_Doctor_NVG: kat_Armband_Red_Cross_NVG {
+        displayName = CSTRING(Armband_Doctor_ItemName);
+        editorPreview = QPATHTOF(ui\ArmbandWhiteCrossDoctor.paa);
+        picture = QPATHTOF(ui\ArmbandWhiteCrossDoctor.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(models\armband\ArmbandWCD.paa)};
+    };
+
+    class kat_Armband_Kat_NVG: kat_Armband_Red_Cross_NVG {
+        displayName = CSTRING(Armband_Kat_ItemName);
+        editorPreview = QPATHTOF(ui\ArmbandKat.paa);
+        picture = QPATHTOF(ui\ArmbandKat.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(models\armband\ArmbandKAT.paa)};
+    };
+
     class kat_Bubble_Wrap_Item: ACE_ItemCore {
         author = "Miss Heda";
         displayName = CSTRING(Bubble_Wrap_Display);
@@ -66,6 +106,7 @@ class CfgWeapons
         scope = 2;
         editorPreview = QPATHTOF(ui\IFAK.paa);
         picture = QPATHTOF(ui\IFAK.paa);
+        ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 15;
         };

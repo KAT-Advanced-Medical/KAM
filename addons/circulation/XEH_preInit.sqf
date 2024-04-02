@@ -43,7 +43,7 @@ PREP_RECOMPILE_END;
     "LIST",
     LLSTRING(SETTING_bloodtype_player),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], 7],
+    [["A", "A_N", "B", "B_N", "AB", "AB_N", "O", "O_N"], ["A+", "A-", "B+", "B-", "AB+", "AB-", "0+", "0-"], 7],
     2,
     {
         profileNamespace setVariable [QGVAR(preferredBloodType), _this];
@@ -72,6 +72,17 @@ PREP_RECOMPILE_END;
     [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],0],
     true
 ] call CBA_Settings_fnc_init;
+
+// Allow application of AED pads while CPR is performed
+[
+    QGVAR(AED_duringCpr),
+    "CHECKBOX",
+    LLSTRING(SETTING_AED_duringCpr),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_AED)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 
 //Max Succes chance for AED-X
 [
@@ -133,7 +144,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
-//Sets medical level required to pick up/use placed AED/X Station
+//Sets medical level required to pick up placed AED/X Station
 [
     QGVAR(medLvl_AED_Station_Interact),
     "LIST",
@@ -496,7 +507,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_MINIMUM_SAFE_DRAW),LLSTRING(SETTING_MINIMUM_SAFE_DRAW_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_BloodDraw)],
-    [0, 6, 3.6, 1], // 3.6 default matches ACE Class IV hemorrhage 
+    [0, 6, 3.6, 1], // 3.6 default matches ACE Class IV hemorrhage
     true
 ] call CBA_Settings_fnc_init;
 
@@ -506,7 +517,11 @@ PREP_RECOMPILE_END;
     LLSTRING(SETTING_cardiacArrestBleedRate),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 0.2, 0.05, 3],
-    true
+    true,
+    {
+        params ["_value"];
+        ACEGVAR(medical,const_minCardiacOutput) = _value;
+    }
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;

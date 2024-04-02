@@ -140,8 +140,8 @@ GVAR(PulseRateReady) = true;
 
     // Handle date and time display - [year,month,day,hour,min]
 
-    ctrlSetText [IDC_DISPLAY_DATEANDTIME, format ["%1/%2/%3               %4:%5", (if (date select 2 < 10) then { "0" } else { "" }) + str (date select 2), (if (date select 1 < 10) then { "0" } else { "" }) + str (date select 1), date select 0, (if (date select 3 < 10) then { "0" } else { "" }) + str (date select 3), (if (date select 4 < 10) then { "0" } else { "" }) + str (date select 4)]];
-    ctrlSetText [IDC_DISPLAY_ELAPSEDTIME, format ["%1:%2:%3", (if ((floor(time/3600)) < 10) then { "0" } else { "" }) + str (floor(time/3600)), (if ((floor(((time/3600) - floor(time/3600)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((time/3600) - floor(time/3600)) * 60)), (if ((floor(((time/60) - floor(time/60)) * 60)) < 10) then { "0" } else { "" }) + str (floor(((time/60) - floor(time/60)) * 60))]];
+    ctrlSetText [IDC_DISPLAY_DATEANDTIME, format ["%1/%2/%3               %4:%5", (["", "0"] select (date select 2 < 10)) + str (date select 2), (["", "0"] select (date select 1 < 10)) + str (date select 1), date select 0, (["", "0"] select (date select 3 < 10)) + str (date select 3), (["", "0"] select (date select 4 < 10)) + str (date select 4)]];
+    ctrlSetText [IDC_DISPLAY_ELAPSEDTIME, format ["%1:%2:%3", (["", "0"] select (floor time / 3600 < 10)) + str (floor(time/3600)), (["", "0"] select (floor time / 3600 - floor time / 3600 * 60 < 10)) + str (floor(((time/3600) - floor(time/3600)) * 60)), (["", "0"] select (floor time / 60 - floor time / 60 * 60 < 10)) + str (floor(((time/60) - floor(time/60)) * 60))]];
 
     if (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false]) then {
         private _partIndex = ((GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2);
@@ -153,7 +153,7 @@ GVAR(PulseRateReady) = true;
 
         private _PRBar = _dlg displayCtrl IDC_DISPLAY_PULSERATEBAR;
 
-        if (!(HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget), _partIndex))) then {
+        if (!(HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget),_partIndex))) then {
             if (GVAR(PulseRateReady)) then {
                 GVAR(PulseRateReady) = false;
                 private _pr = GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,heartRate), 0];
@@ -274,7 +274,7 @@ GVAR(PulseRateReady) = true;
 
     private _partIndex = ((GVAR(AEDX_MonitorTarget) getVariable [QGVAR(AED_X_VitalsMonitor_Provider), [-1, -1, -1]]) select 2);
 
-    if (HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget), _partIndex)) then {
+    if (HAS_TOURNIQUET_APPLIED_ON(GVAR(AEDX_MonitorTarget),_partIndex)) then {
         _bp = [0,0];
     } else {
         _spO2 = GVAR(AEDX_MonitorTarget) getVariable [QEGVAR(breathing,airwayStatus), 100];

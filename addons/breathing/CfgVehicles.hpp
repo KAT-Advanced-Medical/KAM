@@ -48,6 +48,7 @@ class CfgVehicles {
             MACRO_ADDITEM(Attachable_Helistretcher,5);
             MACRO_ADDITEM(kat_stretcherBag,5);
             MACRO_ADDITEM(kat_accuvac,2);
+            MACRO_ADDITEM(kat_suction,15);
             MACRO_ADDITEM(kat_guedel,15);
             MACRO_ADDITEM(kat_larynx,15);
             MACRO_ADDITEM(kat_aatKit,15);
@@ -73,13 +74,13 @@ class CfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_SelfActions {
-            class ACE_Equipment {
+            class KAT_Equipment {
                class PulseOximeter_removeSound {
                     displayName = CSTRING(PulseOximeter_Action_removeSound);
                     condition = QUOTE('kat_Pulseoximeter' in (items _player) && (_player getVariable [ARR_2(QQGVAR(PulseOximeter_Volume),false])));
                     statement = QUOTE(_player setVariable [ARR_3(QQGVAR(PulseOximeter_Volume),false,true)]);
                     showDisabled = 0;
-                    exceptions[] = {"isNotInside", "isNotSitting"};
+                    exceptions[] = {"isNotInside", "isNotSitting", "isNotSwimming", "isNotOnLadder"};
                     icon = "";
                 };
                 class PulseOximeter_addSound : PulseOximeter_removeSound {
@@ -92,15 +93,7 @@ class CfgVehicles {
                     condition = QUOTE([ARR_2(_player,'kat_oxygenTank_150')] call ACEFUNC(common,hasMagazine));
                     statement = QUOTE(_player setVariable [ARR_3(QQGVAR(oxygenTankPreferred),'kat_oxygenTank_150',true)]);
                     showDisabled = 0;
-                    exceptions[] =
-                    {
-                        "notOnMap",
-                        "isNotInside",
-                        "isNotHandcuffed",
-                        "isNotSurrendering",
-                        "isNotSwimming",
-                        "isNotOnLadder"
-                    };
+                    exceptions[] = {"isNotInside", "isNotSitting", "isNotSwimming", "isNotOnLadder"};
                     icon = QPATHTOF(ui\oxygenTank_ui.paa);
                 };
                 class SetPreferred_OxygenTank_300: SetPreferred_OxygenTank_150 {
@@ -113,15 +106,7 @@ class CfgVehicles {
                     condition = QUOTE((GVAR(locationProvideOxygen) in [ARR_2(2,3)]) && 'kat_oxygenTank_150_Empty' in (items _player) && _player call ACEFUNC(medical_treatment,isInMedicalFacility));
                     statement = QUOTE([ARR_3(_player,'kat_oxygenTank_150',GVAR(PortableOxygenTank_RefillTime))] call FUNC(refillOxygenTank));
                     showDisabled = 0;
-                    exceptions[] =
-                    {
-                        "notOnMap",
-                        "isNotInside",
-                        "isNotHandcuffed",
-                        "isNotSurrendering",
-                        "isNotSwimming",
-                        "isNotOnLadder"
-                    };
+                    exceptions[] = {"isNotInside"};
                     icon = QPATHTOF(ui\oxygenTank_ui.paa);
                 };
                 class Refill_OxygenTank_300_Facility: Refill_OxygenTank_150_Facility {

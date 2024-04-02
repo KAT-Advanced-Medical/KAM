@@ -26,7 +26,7 @@ private _output = LLSTRING(RecoveryPosition_Ready);
 
 _patient setVariable [QGVAR(wasOccluded), (_patient getVariable [QGVAR(occluded), false])];
 
-if (GVAR(RecoveryPosition_TimeToDrain) > 0 && GVAR(wasOccluded)) then {
+if (GVAR(RecoveryPosition_TimeToDrain) > 0 && _patient getVariable [QGVAR(wasOccluded), false]) then {
     [{
         params ["_patient"];
 
