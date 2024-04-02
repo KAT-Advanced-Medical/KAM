@@ -15,12 +15,8 @@
  * Public: No
  */
 
-params ["_unit"];
+params ["_unit", ["_isRespawn", true]];
 
-_unit setVariable [QGVAR(cprCount), 2, true];
+if (!local _unit) exitWith {};
 
-// Currently four HT conditions: Tamponade, Tension, Hypoxia, and Hydrogen (Ions)
-_unit setVariable [QGVAR(ht), [], true];
-
-_unit setVariable [QGVAR(effusion), 0, true];
-
+[_unit] call FUNC(fullHealLocal);
