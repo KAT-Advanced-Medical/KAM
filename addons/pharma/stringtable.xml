@@ -1115,16 +1115,16 @@
             <Russian>По умолчанию false. Если true, вам нужно будет сначала ввести IV/IO, прежде чем вы сможете давать кому-либо лекарства. n\Если false, вы можете давать их без этого.</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW">
-            <English>Blood Drawing Require IV/IO</English>
+            <English>Blood Drawing requires IV</English>
             <Japanese>採血にIV/IO刺入を要求する</Japanese>
             <Russian>Забор крови требует IO/IV</Russian>
-            <German>Blutabnahme benötigt IV/IO</German>
+            <German>Blutentnahme benötigt IV/IO</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
             <Japanese>デフォルトではfalseです。trueの場合、人から採血する前にIV/IOの刺入が必要になります。 \nfalseの場合は刺入無しで採血できます。</Japanese>
             <Russian>По умолчанию false. Если true, вам нужно будет сначала ввести IO/IV, прежде чем вы сможете взять кровь у кого-либо. \nесли false, вы можете забрать кровь без них</Russian>
-            <German>Standard: falsch. Wenn wahr, wird eine IV/IO benötigt bevor man von jemanden Blut abnehmen kann.</German>
+            <German>Steuert, ob eine IV/IO vorhanden sein muss, um Blut abnehmen zu könnnen./nStandard: falsch</German>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -2773,7 +2773,7 @@
             <Italian>Possibilità di ostruzione della IV senza prima aver svolto uno sciacquo salino</Italian>
             <French>Chance de blocage des IV dû à une administration intra-veineuse de médicaments sans rinçage à la solution saline</French>
             <Korean>식염수 주입 없이 약물 투여로 인한 IV 막힘 확률</Korean>
-            <German>Möglichkeit einer Verstopfung der IV durch Medikamentengabe ohne Kochsalzspülung</German>
+            <German>Möglichkeit einer Okklusion der IV durch Medikamentengabe ohne Kochsalzspülung</German>
             <Chinesesimp>由于没有盐水协助的药物注射导致 IV 阻塞的机会</Chinesesimp>
             <Japanese>生理食塩水を流さずに薬を注入することによるIV閉塞の可能性</Japanese>
             <Spanish>Probabilidad de que una IV se bloquée por administrar fármacos sin enjuagar con salino</Spanish>

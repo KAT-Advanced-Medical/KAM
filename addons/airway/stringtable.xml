@@ -71,7 +71,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded_DESC">
             <English>Probability for an occlusion in percentage that gets rolled Setting:[Occlusion repeat timer] (default every 60s)</English>
-            <German>Wahrscheinlichkeit verstopfter Atemwege durch Erbrochenes in Prozent.\nEinstellung:[Zeit für die Wiederholung des Erbrechens] (standard alle 60s)</German>
+            <German>Wahrscheinlichkeit verstopfter Atemwege durch Erbrochenes in Prozent.\nEinstellung:[Zeit für die Wiederholung des Erbrechens] (Standard: alle 60s)</German>
             <Czech>Pravděpodobnost zablokování dýchacích cest v procentech, která se vylosuje při Nastavení:[Časovač opakovaného ucpání dýchacích cest](defaultně každých 60s)</Czech>
             <Spanish>Porcentaje de probabilidad de que suceda una oclusión Opciones:[tiempo de repeticion de oclusión] (por defecto cada 60s)</Spanish>
             <Japanese>気道異物の確率(%) [異物再発までの時間]の設定時間毎に計算されます (デフォルトでは60秒毎)</Japanese>
@@ -85,7 +85,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
-            <German>Zeit für die Wiederholung des Erbrechens</German>
+            <German>Zeitfenster zum Wiedereintritt einer Okklusion</German>
             <Korean>구토 반복 타이머</Korean>
             <Polish>Czas powtarzania zablokowania</Polish>
             <Japanese>異物再発までの時間</Japanese>
@@ -105,7 +105,7 @@
             <French>Temps de récupération après une occlusion</French>
             <Korean>구토 쿨다운 시간</Korean>
             <Norwegian>Avkjølingsperiode for okklusjon</Norwegian>
-            <German>Abklingzeit für Erbrechen</German>
+            <German>Abklingzeit der Okklusion</German>
             <Portuguese>Período de espera da oclusão</Portuguese>
             <Spanish>Tiempo para repetirse oclusion</Spanish>
             <Finnish>Okkluusiojäähdytyssykli</Finnish>
@@ -202,7 +202,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion_short">
             <English>Occluded</English>
-            <German>Verstopft</German>
+            <German>Okkludiert</German>
             <Polish>Zator</Polish>
             <Spanish>Ocluída</Spanish>
             <Chinese>閉塞</Chinese>
@@ -272,7 +272,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion_short">
             <English>Not occluded</English>
-            <German>Nicht verstopft</German>
+            <German>Nicht okkludiert</German>
             <Polish>Brak zatoru</Polish>
             <Spanish>No ocluída</Spanish>
             <Chinese>無 閉塞</Chinese>
@@ -330,8 +330,8 @@
             <Norwegian>Luftvei er blokkert, behov for luftveishåndtering</Norwegian>
             <French>Voies aériennes obstruées, geste médical nécessaire</French>
             <Finnish>Hengitystiet ovat tukossa, hengityshoitoa tarvitaan</Finnish>
+            <German>Atemwege sind blockiert, die Atemwege müssen freigelegt werden</German>
             <Russian>Дыхательные пути закупорены языком, требуется лечение дыхательных путей</Russian>
-            <German>Die Atemwege sind blockiert. Atemwegsmanagement benötigt.</German>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
@@ -422,8 +422,8 @@
             <Norwegian>Pasientens hode er allerede hyperforlenget</Norwegian>
             <French>La tête du patient est déjà en hyperextension</French>
             <Finnish>Potilaan pää on jo yli ojentunut</Finnish>
+            <German>Kopf des Patienten ist bereits überstreckt</German>
             <Russian>Голова пациента уже наклонена.</Russian>
-            <German>Der Kopf des Patienten ist bereits überstreckt.</German>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_progress">
             <English>Hyperextending head</English>
@@ -468,14 +468,14 @@
             <Norwegian>hyperforlengelse av hodet fullført</Norwegian>
             <French>Hyperextension réalisée avec succès</French>
             <Finnish>Pään ylivenyttely onnistui</Finnish>
+            <German>Kopf erfolgreich überstreckt</German>
             <Russian>Гиперэкстензия головы завершена</Russian>
-            <German>Kopf erfolgreich überstreckt.</German>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Log">
             <English>%1 hyperextended %2s head</English>
             <Japanese>%1 は %2 を頭部後屈させた</Japanese>
+            <German>%1 überstreckte %2s Kopf</German>
             <Russian>Выполнен поворот головы, дыхательные пути еще не очистились</Russian>
-            <German>%1 hat den Kopf von %2 überstreckt.</German>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -497,7 +497,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_success">
             <English>Occlusion removed</English>
-            <German>Verstopfung entfernt</German>
+            <German>Okklusion entfernt</German>
             <Polish>Zablokowanie usunięte</Polish>
             <Spanish>Oclusión eliminada</Spanish>
             <Chinese>遮擋移除</Chinese>
@@ -582,7 +582,7 @@
             <Japanese>医療吸引が完了し、 異物が除去されました</Japanese>
             <Finnish>Lääketieteellinen imu suoritettu, okkluusio poistettu</Finnish>
             <Russian>Медицинское отсасывание завершено, окклюзия устранена</Russian>
-            <German>Medizinische Absaugung abgeschlossen. Verstopfung beseitigt.</German>
+            <German>Medizinische Absaugung abgeschlossen, Verstopfung beseitigt</German>
         </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
@@ -1088,8 +1088,8 @@
             <English>Time for Manual Suction Pump</English>
             <Japanese>手動吸引器の所要時間</Japanese>
             <Finnish>aika manuaaliselle imupumpulle</Finnish>
+            <German>Behandlungszeit für die manuelle Absaugpumpe</German>
             <Russian>Время работы ручного всасывающего насоса</Russian>
-            <German>Zeit um die Manuelle Absaugpumpe zu nutzen</German>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
             <English>How long it will take to use Manual Suction Pump</English>
@@ -1384,7 +1384,7 @@
             <French>Temps pour retirer l'occlusion en position latérale de sécurité</French>
             <Finnish>Palautuminen Asento-aika tyhjennystukoksen poistamiseksi</Finnish>
             <Russian>Время бокового положения для дренирования окклюзии</Russian>
-            <German>Benötigte Zeit zur Absaugung während stabile Seitenlage.</German>
+            <German>Stabile Seitenlage: Benötigte Zeit zum Entgegenwirken einer Verstopfung</German>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
@@ -1394,7 +1394,7 @@
             <French>Temps maximal pour qu'une occlusion disparaisse sur un patient en position latérale de sécurité</French>
             <Finnish>Enimmäisaika, joka tarvitaan potilaan puhdistamiseen toipumisasennossa</Finnish>
             <Russian>Максимальное время, необходимое пациенту в боковом положении для устранения окклюзии.</Russian>
-            <German>Die maximal benötigte Zeit, um eine Absaugung der Atemwege durchzuführen, während sich der Patient in der stabilen Seitenlage befindet.</German>
+            <German>Beschreibt die maximal benötigte Dauer, bei welcher eine Stabile Seitenlage zur zur Freilegung der verstopften Atemwege führt.</German>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
@@ -1404,7 +1404,7 @@
             <French>Paramètres de la position latérale de sécurité + hyperextension</French>
             <Finnish>Palautusasento + pään ylivenytysasetukset</Finnish>
             <Russian>Параметры бокового положения + гиперэкстензия</Russian>
-            <German>Einstellungen für Stabile Seitenlage und Kopfüberstreckung.</German>
+            <German>Einstellungen für Stabile Seitenlage und Kopfüberstreckung</German>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Suction">
             <English>Suction devices Settings</English>
