@@ -1098,7 +1098,7 @@
             <Russian>По умолчанию false. Если true, вам нужно будет сначала ввести IV/IO, прежде чем вы сможете давать кому-либо лекарства. n\Если false, вы можете давать их без этого.</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW">
-            <English>Blood Drawing requires IV</English>
+            <English>Blood Drawing requires IV/IO</English>
             <Japanese>採血にIV/IO刺入を要求する</Japanese>
             <Russian>Забор крови требует IO/IV</Russian>
             <German>Blutentnahme benötigt IV/IO</German>
