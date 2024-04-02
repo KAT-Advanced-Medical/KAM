@@ -31,18 +31,13 @@ class CfgWeapons {
     class CannonCore;
     class mortar_82mm: CannonCore {
         magazines[] += {
-            "KAT_1Rnd_82mm_Mo_Type0",
             "KAT_5Rnd_82mm_Mo_Type0_AI",
-            "KAT_1Rnd_82mm_Mo_TypeCS",
             "KAT_3Rnd_82mm_Mo_TypeCS_AI"
         };
     };
 
     class ACE_mortar_82mm: mortar_82mm {
-        magazines[] += {
-            "KAT_1Rnd_82mm_Mo_Type0",
-            "KAT_1Rnd_82mm_Mo_TypeCS"
-        };
+        magazines[] = {"ACE_1Rnd_82mm_Mo_HE","ACE_1Rnd_82mm_Mo_Smoke","ACE_1Rnd_82mm_Mo_Illum","ACE_1Rnd_82mm_Mo_HE_Guided","ACE_1Rnd_82mm_Mo_HE_LaserGuided", "KAT_1Rnd_82mm_Mo_Type0", "KAT_1Rnd_82mm_Mo_TypeCS"};
     };
 
     class GrenadeLauncher;
