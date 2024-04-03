@@ -118,6 +118,36 @@
 #define FATAL_INJURIES_CRDC_ARRST 1
 #define FATAL_INJURIES_NEVER 2
 
+#undef BLOOD_LOSS_KNOCK_OUT_THRESHOLD
+#undef BLOOD_LOSS_KNOCK_OUT_THRESHOLD_DEFAULT
+#define BLOOD_LOSS_KNOCK_OUT_THRESHOLD ACEGVAR(medical,const_bloodLossKnockOutThreshold)
+#define BLOOD_LOSS_KNOCK_OUT_THRESHOLD_DEFAULT 0.5
+
+#undef BLEED_RATE_SLOW
+#undef BLEED_RATE_MODERATE
+#undef BLEED_RATE_SEVERE
+// Note that half of knock out blood loss is considered unstable, and knock out blood loss is considered critical
+#define BLEED_RATE_SLOW 0.1 // Slow - One fifth of unstable blood loss
+#define BLEED_RATE_MODERATE 0.5 // Moderate - Vitals considered stable
+#define BLEED_RATE_SEVERE 1.0 // Severe - Vitals considered unstable
+
+#undef LIMPING_DAMAGE_THRESHOLD
+#undef LIMPING_DAMAGE_THRESHOLD_DEFAULT
+// Minimum leg damage required for limping
+#define LIMPING_DAMAGE_THRESHOLD ACEGVAR(medical,const_limpingDamageThreshold)
+#define LIMPING_DAMAGE_THRESHOLD_DEFAULT 0.30
+
+#undef FRACTURE_DAMAGE_THRESHOLD
+#undef FRACTURE_DAMAGE_THRESHOLD_DEFAULT
+// Minimum limb damage required for fracture
+#define FRACTURE_DAMAGE_THRESHOLD ACEGVAR(medical,const_fractureDamageThreshold)
+#define FRACTURE_DAMAGE_THRESHOLD_DEFAULT 0.50
+
+#undef CARDIAC_OUTPUT_MIN
+#undef CARDIAC_OUTPUT_MIN_DEFAULT
+// Minimum cardiac output
+#define CARDIAC_OUTPUT_MIN ACEGVAR(medical,const_minCardiacOutput)
+#define CARDIAC_OUTPUT_MIN_DEFAULT 0.05
 
 //We have to undef them before redefining
 #undef VAR_BLOOD_PRESS
@@ -167,7 +197,19 @@
 // Retrieval macros for common unit values
 // Defined for easy consistency and speed
 #undef GET_SM_STATE
+#undef GET_HEMORRHAGE
+#undef GET_WOUND_BLEEDING
+#undef GET_FRACTURES
+#undef GET_OPEN_WOUNDS
+#undef IS_BLEEDING
+#undef GET_BLOOD_LOSS
 #define GET_SM_STATE(_unit)         ([_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState)
+#define GET_WOUND_BLEEDING(unit)    (unit getVariable [VAR_WOUND_BLEEDING, 0])
+#define GET_HEMORRHAGE(unit)        (unit getVariable [VAR_HEMORRHAGE, 0])
+#define GET_FRACTURES(unit)         (unit getVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES])
+#define GET_OPEN_WOUNDS(unit)       (unit getVariable [VAR_OPEN_WOUNDS, createHashMap])
+#define IS_BLEEDING(unit)           (GET_WOUND_BLEEDING(unit) > 0)
+#define GET_BLOOD_LOSS(unit)        ([unit] call ACEFUNC(medical_status,getBloodLoss))
 
 #define GET_OPIOID_FACTOR(unit)           (unit getVariable [QEGVAR(pharma,opioidFactor), 1])
 

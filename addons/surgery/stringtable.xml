@@ -635,9 +635,6 @@
         <Key ID="STR_KAT_Surgery_Reboa_Action">
             <English>Placing</English>
         </Key>
-        <Key ID="STR_KAT_Surgery_Reboa_Status">
-            <English>REBOA</English>
-        </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Use">
             <English>Advance REBOA Unit</English>
         </Key>
@@ -649,6 +646,9 @@
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
             <English>Removing</English>
+        </Key>
+        <Key ID="STR_KAT_Surgery_Reboa_Status">
+            <English>REBOA</English>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Use">
             <English>Pericardial Tap</English>

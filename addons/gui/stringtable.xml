@@ -83,5 +83,23 @@
             <Finnish>Merkitse potilaan sivut</Finnish>
             <Russian>Маркировка сторон пациента</Russian>
         </Key>
+        <Key ID="STR_KAT_GUI_Bleed_Rate1">
+            <English>Bleeding</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Bleed_Rate2">
+            <English>Slow Bleeding</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Bleed_Rate3">
+            <English>Moderate Bleeding</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Bleed_Rate4">
+            <English>Severe Bleeding</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Lost_Blood0">
+            <English>No Blood Lost</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_Status_Nobleeding">
+            <English>Not Bleeding</English>
+        </Key>
     </Package>
 </Project>

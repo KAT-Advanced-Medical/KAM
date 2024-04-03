@@ -52,7 +52,6 @@ if (!local _unit) exitWith {};
     } forEach (_medicationArray);
 
     if !(_alpha) then {
-        ACEGVAR(medical,const_minCardiacOutput) = (_unit getVariable [QGVAR(alphaAction), 1]) * EGVAR(circulation,cardiacArrestBleedRate);
         _unit setVariable [QGVAR(alphaAction), 1];
     };
     if !(_opioid) then {
