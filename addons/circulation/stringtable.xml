@@ -1471,6 +1471,7 @@
             <French>Défibrillateur</French>
             <Finnish>Defibrillaattori</Finnish>
             <Russian>Дефибриллятор</Russian>
+            <German>Defibrillator</German>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SelectedEnergy">
             <English>Selected Energy</English>
@@ -1479,6 +1480,7 @@
             <French>Energie sélectionnée</French>
             <Finnish>Valittu energia</Finnish>
             <Russian>Выбранная энергия</Russian>
+            <German>Ausgewählte Leistung</German>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
@@ -1778,6 +1780,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
+            <German>%1 hat die Blutgruppe der Erkennungsmarke überprüft: %2</German>
             <Japanese>%1 がドッグタグの血液型を確認: %2</Japanese>
             <Russian>%1 проверил жетоны, группа крови: %2</Russian>
         </Key>
@@ -2048,6 +2051,7 @@
             <English>Allow AED pad application during CPR</English>
             <Russian>Разрешить применение подкладки AED во время СЛР</Russian>
             <Japanese>CPR中の除細動器パッド貼り付けの許可</Japanese>
+            <German>Anbringung von AED Pads während laufender HLW zulassen</German>
         </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
@@ -2081,6 +2085,7 @@
             <English>Medical level required to pick up placed AED/X station</English>
             <Japanese>設置されたAED/Xを拾うのに必要な医療スキルのレベルを設定します。</Japanese>
             <Russian>Медицинский уровень, необходимый для приема/ взаимодействия с размещенной станцией AED/X</Russian>
+            <German>Benötigter medizinischer Grad, um einen platzierte AED/X Station aufzunehmen </German>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
@@ -2294,13 +2299,14 @@
             <French>RCP débuté</French>
             <Finnish>Elvytys alkoi</Finnish>
             <Russian>СЛР начата</Russian>
+            <German>HLW begonnen</German>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
             <Japanese>CPRが中止された</Japanese>
             <French>RCP annulée</French>
             <Korean>심폐소생술 취소함</Korean>
-            <German>HLW Gestoppt</German>
+            <German>HLW gestoppt</German>
             <Portuguese>RCP cancelada</Portuguese>
             <Spanish>RCP cancelado</Spanish>
             <Finnish>Elvytys peruttu</Finnish>
