@@ -23,10 +23,10 @@ private _part = ALL_BODY_PARTS find toLower _bodyPart;
 private _activeFracture = GET_FRACTURES(_patient);
 private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
 private _lidocaineCount = [_patient, "Lidocaine", true] call ACEFUNC(medical_status,getMedicationCount);
-private _morphineCount = [_patient, "Morphine", true] call ACEFUNC(medical_status,getMedicationCount);
-private _nalbuphineCount = [_patient, "Nalbuphine", true] call ACEFUNC(medical_status,getMedicationCount);
-private _fentanylCount = [_patient, "Fentanyl", true] call ACEFUNC(medical_status,getMedicationCount);
-private _ketamineCount = [_patient, "Ketamine", true] call ACEFUNC(medical_status,getMedicationCount);
+private _morphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
+private _nalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
+private _fentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
+private _ketamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
 if (_lidocaineCount <=  0.8 && _morphineCount <=  0.8 && _nalbuphineCount <=  0.8 && _fentanylCount <=  0.8 && _ketamineCount <=  0.8) then {
     private _pain = random [0.7, 0.8, 0.9];
     [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
