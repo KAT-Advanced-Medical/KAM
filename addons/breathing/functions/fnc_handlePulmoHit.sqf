@@ -43,10 +43,6 @@ if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
 
         // Start deteriorating after delay
         [_unit, _chanceIncrease] call FUNC(handlePneumothoraxDeterioration);
-
-        if (GVAR(PneumothoraxArrest)) then {
-            [_unit] call FUNC(inflictPhenumthoraxArrest);
-        };
     } else {
         if (_unit getVariable [QGVAR(tensionpneumothorax), false]) then { // If already afflicted with tensionpneumothorax -> fully deteriorate pneumothorax
             _unit setVariable [QGVAR(pneumothorax), 4, true];
