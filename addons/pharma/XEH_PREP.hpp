@@ -42,3 +42,4 @@ PREP(treatmentAdvanced_Reorientation);
 PREP(treatmentAdvanced_ReorientationLocal);
 PREP(treatmentAdvanced_TXALocal);
 PREP(vehicleCheckDialysis);
+PREP(getBloodLoss);
