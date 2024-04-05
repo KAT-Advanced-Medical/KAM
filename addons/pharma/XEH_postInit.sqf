@@ -33,9 +33,8 @@
 [QACEGVAR(medical_gui,updateBodyImage), LINKFUNC(gui_updateBodyImage)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_status,getBloodLoss), {
-    params ["_unit", "_loss"];
-    _loss = _loss * (_unit getVariable [QGVAR(alphaAction), 1]);
-}] call CBA_fnc_addEventHandler
+    _this set [1, _this#1 * (_this#0 getVariable [QGVAR(alphaAction), 1])];
+}] call CBA_fnc_addEventHandler;
 ["ace_treatmentSucceded", {
     params ["_medic", "_patient", "_bodyPart", "_classname"];
     if (!(GVAR(staminaMedication)) || ACE_Player != _patient || !(alive _patient)) exitWith {};
