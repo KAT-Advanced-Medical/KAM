@@ -1399,11 +1399,7 @@
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
             <Spanish>Tiempo máximo para que desaparezca una oclusión en un paciente en posición lateral de seguridad</Spanish>
-<<<<<<< HEAD
             <Japanese>回復体位にある患者の気道異物が排出されるまでに必要な最大時間。</Japanese>
-=======
-            <Japanese>回復体位にある患者の気道異物が排出され解消するまでに必要な最大時間。</Japanese>
->>>>>>> aac801eb27e233995ba72f231faf4173b35b4ae8
             <Norwegian>Maks nødvendig tid en pasient må være i stabilt sideleie for å bli kvitt okklusjonen.</Norwegian>
             <French>Temps maximal pour qu'une occlusion disparaisse sur un patient en position latérale de sécurité</French>
             <Finnish>Enimmäisaika, joka tarvitaan potilaan puhdistamiseen toipumisasennossa</Finnish>
