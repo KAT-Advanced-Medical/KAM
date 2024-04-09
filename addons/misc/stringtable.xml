@@ -1143,7 +1143,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Item">
             <English>Pain Management Section Items &amp; Quantity</English>
-             <Spanish>Artículos de la sección de analgesicos &amp; Cantidad</Spanish>
+            <Spanish>Artículos de la sección de analgesicos &amp; Cantidad</Spanish>
             <German>Schmerzmittel Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>鎮痛枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела обезболивающих</Russian>
@@ -1441,7 +1441,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor_DESC">
             <English>The item color of the text that is displayed via a hint</English>
-             <Spanish>El color del elemento del texto que se muestra mediante una nota.</Spanish>
+            <Spanish>El color del elemento del texto que se muestra mediante una nota.</Spanish>
             <German>Die Farbe der Gegenstände die über einen Hinweis angezeigt werden</German>
             <Japanese>ヒントで表示されるポケット内アイテムの文章の文字色</Japanese>
             <Russian>Цвет элемента текста, отображаемого с помощью подсказки</Russian>
