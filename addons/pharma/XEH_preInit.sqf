@@ -619,10 +619,10 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(eacaTrauma),
+    QGVAR(eacaClearTrauma),
     "CHECKBOX",
-    [LLSTRING(SETTING_Eaca_Trauma), LLSTRING(SETTING_Eaca_Trauma_DESC)],
-    [CBA_SETTINGS_CAT],
+    [LLSTRING(SETTING_EACA_Trauma), LLSTRING(SETTING_EACA_Trauma_DESC)],
+    CBA_SETTINGS_CAT,
     [false],
     true
 ] call CBA_Settings_fnc_init;

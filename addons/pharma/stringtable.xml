@@ -3217,10 +3217,10 @@
             <Finnish>Salli tiettyjen lääkkeiden muuttaa kestävyyttä (vanilja/edistynyt väsymys) sivuvaikutuksena</Finnish>
             <Russian>Позволяют определенным лекарствам изменять выносливость (ваниль/повышенная утомляемость) в качестве побочного эффекта</Russian>
         </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_Eaca_Trauma">
+        <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma">
             <English>EACA Clears Trauma</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_Eaca_Trauma_Desc">
+        <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma_Desc">
             <English>Allows Trauma to be cleared by EACA in addition to stitching</English>
         </Key>
     </Package>
