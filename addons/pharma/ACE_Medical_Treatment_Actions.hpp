@@ -242,7 +242,8 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Take_Atropine);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        treatmentTime = 5;
+        medicRequired = QGVAR(medLvl_Atropine);
+        treatmentTime = QGVAR(treatmentTime_Atropine);
         condition = "";
         items[] = {"kat_atropine"};
         callbackSuccess = QFUNC(medication);
