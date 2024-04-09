@@ -95,7 +95,7 @@ if (_IVactual > 1) then {
                     _bodyPartDamage set [_partIndex, _damage];
                 };
                 _patient setVariable [QACEGVAR(medical,bodyPartDamage), _bodyPartDamage, true]; };
-                else exitWith {};
+                
                 _exit = false;
             };
         } forEach ALL_BODY_PARTS_PRIORITY;
