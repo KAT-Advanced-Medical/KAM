@@ -83,6 +83,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 900;
             timeTillMaxEffect = 20;
             maxDose = 2;
+            maxDoseDeviation = 0;
             incompatibleMedication[] = {};
             viscosityChange = -10;
             onOverDose = "";
@@ -95,6 +96,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 900;
             timeTillMaxEffect = 15;
             maxDose = 4;
+            maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
@@ -107,6 +109,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 900;
             timeTillMaxEffect = 30;
             maxDose = 4;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
@@ -119,6 +122,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 600;
             timeTillMaxEffect = 90;
             maxDose = 10;
+            maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
@@ -214,6 +218,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 600;
             timeTillMaxEffect = 5;
             maxDose = 2;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             viscosityChange = 5;
             onOverDose = "";
