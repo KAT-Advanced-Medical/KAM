@@ -470,6 +470,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(eacaClearTrauma),
+    "CHECKBOX",
+    [LLSTRING(SETTING_EACA_Trauma), LLSTRING(SETTING_EACA_Trauma_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_EACA)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 //Ketamine Settings Category
 [
     QGVAR(medLvl_Ketamine),
@@ -613,15 +622,6 @@ PREP_RECOMPILE_END;
     QGVAR(staminaMedication),
     "CHECKBOX",
     [LLSTRING(SETTING_staminaMedication), LLSTRING(SETTING_staminaMedication_DESC)],
-    CBA_SETTINGS_CAT,
-    [false],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(eacaClearTrauma),
-    "CHECKBOX",
-    [LLSTRING(SETTING_EACA_Trauma), LLSTRING(SETTING_EACA_Trauma_DESC)],
     CBA_SETTINGS_CAT,
     [false],
     true
