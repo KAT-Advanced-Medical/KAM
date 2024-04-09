@@ -85,7 +85,7 @@ if (_IVactual > 1) then {
 
                 _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
 
-                if !(GVAR(eacaTrauma)) then {
+                if (GVAR(eacaTrauma)) then {
                 private _partIndex = ALL_BODY_PARTS find _targetBodyPart;
                 private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
                 private _damage = (_bodyPartDamage select _partIndex) - (_damageOf * _amountOf);
