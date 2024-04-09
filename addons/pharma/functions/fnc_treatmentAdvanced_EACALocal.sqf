@@ -84,7 +84,8 @@ if (_IVactual > 1) then {
                 _bandagedWounds set [_targetBodyPart, _bandagedWoundsOnPart];
 
                 _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
-                
+
+                if !(GVAR(eacaTrauma)) then {
                 private _partIndex = ALL_BODY_PARTS find _targetBodyPart;
                 private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
                 private _damage = (_bodyPartDamage select _partIndex) - (_damageOf * _amountOf);
@@ -93,8 +94,8 @@ if (_IVactual > 1) then {
                 } else {
                     _bodyPartDamage set [_partIndex, _damage];
                 };
-                _patient setVariable [QACEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
-
+                _patient setVariable [QACEGVAR(medical,bodyPartDamage), _bodyPartDamage, true]; };
+                else exitWith {};
                 _exit = false;
             };
         } forEach ALL_BODY_PARTS_PRIORITY;
