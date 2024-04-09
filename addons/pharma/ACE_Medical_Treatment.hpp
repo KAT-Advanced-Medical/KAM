@@ -7,7 +7,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 40};
             timeInSystem = 120;
             timeTillMaxEffect = 10;
-            maxDose = 10;
+            maxDose = 6;
+            maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             alphaFactor = 0.15;
             onOverDose = "";
@@ -56,7 +57,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-10, -15};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
-            maxDose = 12;
+            maxDose = 6;
+            maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             viscosityChange = 50;
             alphaFactor = -0.5;
@@ -69,7 +71,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 15};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
-            maxDose = 12;
+            maxDose = 6;
+            maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             viscosityChange = -25;
             alphaFactor = 0.3;
@@ -82,8 +85,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-20, -10};
             timeInSystem = 900;
             timeTillMaxEffect = 20;
-            maxDose = 2;
-            maxDoseDeviation = 0;
+            maxDose = 1;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             viscosityChange = -10;
             onOverDose = "";
@@ -95,7 +98,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {10, 15};
             timeInSystem = 900;
             timeTillMaxEffect = 15;
-            maxDose = 4;
+            maxDose = 2;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             viscosityChange = 10;
@@ -108,8 +111,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {-15, -5};
             timeInSystem = 900;
             timeTillMaxEffect = 30;
-            maxDose = 4;
-            maxDoseDeviation = 1;
+            maxDose = 2;
+            maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
@@ -121,7 +124,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {5, 15};
             timeInSystem = 600;
             timeTillMaxEffect = 90;
-            maxDose = 10;
+            maxDose = 6;
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             viscosityChange = -5;
@@ -158,7 +161,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
-            maxDose = 4;
+            maxDose = 2;
+            maxDoseDeviation = 4;
             incompatibleMedication[]= {};
             onOverDose = "";
         };
@@ -230,7 +234,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {5, 15};
             timeInSystem = 1800;
             timeTillMaxEffect = 5;
-            maxDose = 6;
+            maxDose = 4;
+            maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
