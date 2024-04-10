@@ -25,4 +25,4 @@ private _alphaAction = _unit getVariable [QGVAR(alphaAction), 1];
 
 // even if heart stops blood will still flow slowly (gravity)
 (_woundBleeding * (_cardiacOutput max EGVAR(circulation,cardiacArrestBleedRate)) * ACEGVAR(medical,bleedingCoefficient) * _alphaAction)
-	
+    
