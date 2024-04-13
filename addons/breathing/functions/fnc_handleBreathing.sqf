@@ -71,13 +71,6 @@ if (!local _unit) then {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    //if the _unit has SpO2 equal/over 100, then remove the PFH
-    if (_status >= 100 && _pneumothorax == 0) exitWith {
-        _unit setVariable [QGVAR(airwayStatus), 100, true];
-        _unit setVariable ["kat_O2Breathing_PFH", nil];
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
-    };
-
     // Unconscious
     if !([_unit] call ACEFUNC(common,isAwake)) exitWith {
         _output = -0.2; // Not breathing/blocked airway
@@ -110,7 +103,7 @@ if (!local _unit) then {
                 };
 
                 _output = 0; // SpO2_perfusion is false
-            } else {// Obstruction with hyperextended head
+            } else { // Obstruction with hyperextended head
                 if (_overstretch && _unit getVariable [QEGVAR(airway,obstruction), false] && !(_unit getVariable [QEGVAR(airway,occlusion), false]) && _heartRate >= 25) exitWith {
                     if(_BVMInUse) then {
                         if(_oxygenAssisted) then {
@@ -150,6 +143,12 @@ if (!local _unit) then {
         };
 
         _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
+
+        // Check if the pfh is still needed and remove if not
+        if (_finalOutput >= 100 && _output >= 0) exitWith {
+            _unit setVariable ["kat_O2Breathing_PFH", nil];
+            [_idPFH] call CBA_fnc_removePerFrameHandler;
+        };
     };
 
     // Awake
