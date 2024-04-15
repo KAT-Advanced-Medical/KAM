@@ -1434,7 +1434,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor">
             <English>Hint Item Color</English>
-            <Spanish>Nota color del elemento</Spanish>
+            <Spanish>Color del objeto en la nota</Spanish>
             <German>Hinweis Gegenstand Farbe</German>
             <Japanese>ヒントのアイテムの文字色</Japanese>
             <Russian>Подсказка по цвету элемента</Russian>
