@@ -23,7 +23,7 @@ private _messageLog = LLSTRING(inspectChest_normal);
 
 private _hasPneumothorax = (_patient getVariable [QGVAR(pneumothorax), 0] > 0 || _patient getVariable [QGVAR(tensionpneumothorax), false] || _patient getVariable [QGVAR(hemopneumothorax), false]);
 private _airwaySecure = (_patient getVariable [QEGVAR(airway,airway), false] && !(_patient getVariable [QEGVAR(airway,occluded), false]));
-private _airwayClear = (!(_patient getVariable [QEGVAR(airway,obstruction), false]) && !(_patient getVariable [QEGVAR(airway,occluded), false]));
+private _airwayClear = (!(_patient getVariable [QEGVAR(airway,obstruction), false]) || (_patient getVariable [QEGVAR(airway,obstruction), false] && _patient getVariable [QEGVAR(airway,overstretch), false])) && !(_patient getVariable [QEGVAR(airway,occluded), false]);
 private _simpleSetting = (GVAR(inspectChest_enable) == 1);
 private _hintSize = 1.5;
 private _hintWidth = 10;
