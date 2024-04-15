@@ -1504,7 +1504,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_Use_SurgicalKitFullBody">
             <English>Use Surgical Kit (Full Body)</English>
-            <Spanish>Utilice kit quirúrgico (cuerpo completo)</Spanish>
+            <Spanish>Utilizar kit quirúrgico (cuerpo completo)</Spanish>
             <Japanese>全身を縫合する</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody">
