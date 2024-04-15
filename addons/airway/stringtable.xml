@@ -740,7 +740,7 @@
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
-            <Spanish>La bomba de succión manual es un dispositivo de succión médico para la succión manual de las vías respiratorias. Esta alternativa a los dispositivos eléctricos.</Spanish>
+            <Spanish>La bomba de succión manual es un dispositivo de succión médico para la succión manual de las vías respiratorias. Es alternativa a los dispositivos eléctricos.</Spanish>
             <Japanese>手動式吸引器は、手動ポンプで動作する気道吸引の為の医療用吸引装置です。これは電気駆動の装置を代替することが可能です。</Japanese>
             <Finnish>Manuaalinen imupumppu on lääketieteellinen imulaite hengitysteiden manuaaliseen imemiseen. tämä on vaihtoehto sähkölaitteille</Finnish>
             <Russian>Всасывание из дыхательных путей (ручное)</Russian>
