@@ -48,6 +48,8 @@ if (!local _unit) then {
         _airway = false;
     };
 
+    private _isAwake = [_unit] call ACEFUNC(common,isAwake);
+
     private _status = _unit getVariable [QGVAR(airwayStatus), 100];
     private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
     private _heartRate = _unit getVariable [QACEGVAR(medical,heartRate), 0];
@@ -72,14 +74,14 @@ if (!local _unit) then {
     };
 
     //if the _unit has SpO2 equal/over 100, then remove the PFH
-    if (_status >= 100 && _pneumothorax == 0) exitWith {
+    if (_status >= 100 && {_isAwake && {_breathing && {_pneumothorax == 0}}}) exitWith {
         _unit setVariable [QGVAR(airwayStatus), 100, true];
         _unit setVariable ["kat_O2Breathing_PFH", nil];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
     // Unconscious
-    if !([_unit] call ACEFUNC(common,isAwake)) exitWith {
+    if !(_isAwake) exitWith {
         _output = -0.2; // Not breathing/blocked airway
 
         if (_breathing) then { // Breathing
@@ -148,12 +150,12 @@ if (!local _unit) then {
         if (_finalOutput < 1) then {
             _finalOutput = 1;
         };
-
+        
         _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
     };
 
     // Awake
-    if ([_unit] call ACEFUNC(common,isAwake)) exitWith {
+    if (_isAwake) exitWith {
         if !(_breathing) then {
             _output = -0.2 * _multiplierNegative;
         } else {
