@@ -37,29 +37,29 @@ if (IS_BLEEDING(_target)) then {
             // Use nonzero minimum cardiac output to prevent all bleeding showing as massive during cardiac arrest
             switch (true) do {
                 case (_bleedRate < _bleedRateKO * BLEED_RATE_SLOW): {
-                    _entries pushBack [localize LSTRING(Bleed_Rate1), [1, 1, 0, 1]];
+                    _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate1), [1, 1, 0, 1]];
                 };
                 case (_bleedRate < _bleedRateKO * BLEED_RATE_MODERATE): {
-                    _entries pushBack [localize LSTRING(Bleed_Rate2), [1, 0.67, 0, 1]];
+                    _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate2), [1, 0.67, 0, 1]];
                 };
                 case (_bleedRate < _bleedRateKO * BLEED_RATE_SEVERE): {
-                    _entries pushBack [localize LSTRING(Bleed_Rate3), [1, 0.33, 0, 1]];
+                    _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate3), [1, 0.33, 0, 1]];
                 };
                 default {
-                    _entries pushBack [localize LSTRING(Bleed_Rate4), [1, 0, 0, 1]];
+                    _entries pushBack [localize ACELSTRING(medical_gui,Bleed_Rate4), [1, 0, 0, 1]];
                 };
             };
         };
     };
 } else {
-    _entries pushBack [localize LSTRING(Status_Nobleeding), _nonissueColor];
+    _entries pushBack [localize ACELSTRING(medical_gui,NOBLEEDING), _nonissueColor];
 };
 
 if (ACEGVAR(medical_gui,showBloodlossEntry)) then {
     // Give a qualitative description of the blood volume lost
     switch (GET_HEMORRHAGE(_target)) do {
         case 0: {
-            if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize LSTRING(Lost_Blood0), _nonissueColor];};
+            if (ACEGVAR(medical_gui,showInactiveStatuses)) then {_entries pushBack [localize ACELSTRING(medical_gui,Lost_Blood0), _nonissueColor];};
         };
         case 1: {
             _entries pushBack [localize ACELSTRING(medical_gui,Lost_Blood1), [1, 1, 0, 1]];
