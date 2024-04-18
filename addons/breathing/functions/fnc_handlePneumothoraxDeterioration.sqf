@@ -33,7 +33,7 @@ params ["_unit", "_chanceIncrease"];
             if (_unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false] || !(alive _unit) || _unit getVariable [QGVAR(pneumothorax), 0] isEqualTo 0) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-            if (floor (random 100) <= GVAR(deterioratingPneumothorax_chance) && _breathing) then {
+            if (floor (random 100) < GVAR(deterioratingPneumothorax_chance) && _breathing) then {
                 private _ptxTarget = (_unit getVariable [QGVAR(pneumothorax), 0]) + 1;
                 // Once deteriorated far enough try to inflict advanced pneumothorax or if disabled kill the PFH
                 if (_ptxTarget > 4) exitWith {
