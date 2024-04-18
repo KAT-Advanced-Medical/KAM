@@ -32,7 +32,7 @@ if (GVAR(pneumothoraxDamageThreshold_TakenDamage)) then {
     _chanceIncrease = linearConversion [GVAR(pneumothoraxDamageThreshold), 3, _damage, 0, 30, true];
 };
 
-if (floor (random 100) <= (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
+if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
     if (_unit getVariable [QGVAR(pneumothorax), 0] isEqualto 0 && !(_unit getVariable [QGVAR(tensionpneumothorax), false])) then { // Initial pneumothorax
         // add breathing sound
         [_unit, 0.2] call ACEFUNC(medical_status,adjustPainLevel);

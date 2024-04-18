@@ -34,7 +34,7 @@ private _fnc_advRhythm = {
     private _patientState = _patient getVariable [QGVAR(cardiacArrestType), 0];
 
     if (_CPR) then {
-        if (floor (random 100) <= GVAR(AdvRhythm_CPR_ROSC_Chance)) then {
+        if (floor (random 100) < GVAR(AdvRhythm_CPR_ROSC_Chance)) then {
             _patient setVariable [QGVAR(cardiacArrestType), 0, true];
         } else {
             if (_patient getVariable [QGVAR(cardiacArrestType), 0] isEqualTo 1) then {
@@ -49,7 +49,7 @@ private _fnc_advRhythm = {
         };
     } else {
         if (_patientState > 2) then {
-            if (floor (random 100) <= GVAR(AdvRhythm_AED_ROSC_Chance) || _patientState isEqualTo 4) then {
+            if (floor (random 100) < GVAR(AdvRhythm_AED_ROSC_Chance) || _patientState isEqualTo 4) then {
                 _patient setVariable [QGVAR(cardiacArrestType), 0, true];
             } else {
                 _patient setVariable [QGVAR(cardiacArrestType), 4, true];
