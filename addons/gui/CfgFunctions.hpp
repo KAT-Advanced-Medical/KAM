@@ -14,6 +14,12 @@ class CfgFunctions {
             class updateCategories {
                 file = QPATHTOF(functions\fnc_updateCategories.sqf);
             };
+            class updateInjuryList {
+                file = QPATHTOF(functions\fnc_updateInjuryList.sqf);
+            };
+            class updateBodyImage {
+                file = QPATHTOF(functions\fnc_updateBodyImage.sqf);
+            };
         };
     };
 };
