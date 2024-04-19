@@ -1251,11 +1251,18 @@
             <German>MFAK</German>
             <Spanish>BPAM</Spanish>
             <Japanese>MFAK</Japanese>
+            <French>MFAK</French>
+            <Finnish>MFAK</Finnish>
+            <Russian>MFAK</Russian>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Unpack">
             <English>AFAK</English>
             <German>AFAK</German>
             <Spanish>BPAA</Spanish>
+            <Japanese>AFAK</Japanese>
+            <French>AFAK</French>
+            <Finnish>AFAK</Finnish>
+            <Russian>AFAK</Russian>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_DisplayItems">
             <English>View Packing List</English>
