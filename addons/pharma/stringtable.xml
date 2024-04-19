@@ -656,6 +656,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_PhenylAuto_Box_Display">
             <English>Phenylephrine Autoinjector</English>
+            <Russian>Автоинъектор фенилэфрина</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Phenyl_Auto">
             <English>Inject Phenylephrine</English>
@@ -3238,9 +3239,11 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma">
             <English>EACA Clears Trauma</English>
+            <Russian>EACA устраняет травму</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma_Desc">
             <English>Allows Trauma to be cleared by EACA in addition to stitching</English>
+            <Russian>Позволяет устранить травму с помощью EACA в дополнение к наложению швов</Russian>
         </Key>
     </Package>
 </Project>
