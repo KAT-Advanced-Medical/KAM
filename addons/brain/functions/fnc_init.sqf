@@ -19,5 +19,3 @@ params ["_unit", ["_isRespawn", true]];
 
 if (!local _unit) exitWith {};
 if !(GVAR(enable)) exitWith {};
-
-_unit setVariable [QGVAR(concussion), 0, true];
