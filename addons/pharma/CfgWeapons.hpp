@@ -58,7 +58,7 @@ class CfgWeapons {
         scope = 2;
         displayName = CSTRING(IV_16_Display);
         picture = QPATHTOF(ui\icon_IV_16.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\iv\kat_iv.p3d);
         descriptionShort = CSTRING(IV_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
