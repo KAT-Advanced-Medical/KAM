@@ -8,7 +8,7 @@ PREP_RECOMPILE_END;
 
 #define CBA_SETTINGS_CAT "KAT - ADV Medical: Brain Injuries"
 
-//Enable head injuries
+//Enable traumatic brain injuries
 [
 	QGVAR(enable),
 	"CHECKBOX",
@@ -16,26 +16,6 @@ PREP_RECOMPILE_END;
 	[CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
 	[true],
 	true
-] call CBA_Settings_fnc_init;
-
-//Set concussion deterioration chance
-[
-    QGVAR(deterioratingConcussion_chance),
-    "SLIDER",
-    [LLSTRING(SETTING_deterioratingConcussion_chance), LLSTRING(DESCRIPTION_deterioratingConcussion_chance)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
-    [0, 100, 8, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-//Set concussion deterioration interval 
-[
-    QGVAR(deterioratingConcussion_interval),
-    "SLIDER",
-    [LLSTRING(SETTING_deterioratingConcussion_interval), LLSTRING(DESCRIPTION_deterioratingConcussion_interval)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
-    [1, 3600, 180, 0],
-    true
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;

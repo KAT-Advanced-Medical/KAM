@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Airway">
-        <Key ID="STR_KAT_Brain_SETTING_ENABLE">
+        <Key ID="STR_KAT_Brain_SETTING_enable">
             <English>Enable Traumatic Brain Injuries</English>
         </Key>
     </Package>
