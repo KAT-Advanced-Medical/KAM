@@ -47,6 +47,7 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_stethoscope,5);
             MACRO_ADDITEM(kat_BVM,5);
             MACRO_ADDITEM(kat_pocketBVM,5);
+            MACRO_ADDITEM(kat_nasal,10);
         };
         class TransportMagazines: TransportMagazines {
             MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);
