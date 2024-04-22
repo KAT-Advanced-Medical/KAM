@@ -161,7 +161,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_TXAAuto"};
         condition = "";
         treatmentTime = 5;
-        callbackSuccess = QFUNC(treatmentAdvanced_TXAAutoLocal);
+        callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class SalineFlush: Carbonate {

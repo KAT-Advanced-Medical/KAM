@@ -16,10 +16,6 @@
  * Public: No
  */
 
-
-[_patient, _classname] call ACEFUNC(medical_treatment,addToTriageCard);
-[_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), _classname]] call ACEFUNC(medical_treatment,addToLog);
-
 params ["_patient", "_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
