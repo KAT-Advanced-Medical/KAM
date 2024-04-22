@@ -518,6 +518,9 @@
             <Portuguese>Favorece a coagulação</Portuguese>
             <Finnish>Edistää verihyytymien muodostumista</Finnish>
         </Key>
+        <Key ID="STR_KAT_Pharma_TXAAuto_Box_Display">
+            <English>TXA Autoinjector</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_TXA_Box_Display">
             <English>TXA</English>
             <German>TXA</German>

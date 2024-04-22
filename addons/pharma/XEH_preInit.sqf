@@ -337,6 +337,15 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(medLvl_TXAAuto),
+    "LIST",
+    [LLSTRING(medLvl_TXAAuto)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
 // Norepinephrine Settings Category
 [
     QGVAR(medLvl_Norepinephrine),

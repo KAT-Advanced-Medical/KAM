@@ -112,6 +112,17 @@ class CfgWeapons {
             mass = 0.5;
         }; 
     };
+     class kat_TXAAuto: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(TXAAuto_Box_Display);
+        picture = QPATHTOF(ui\icon_PhenylephrineAuto.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(TXA_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
     class kat_norepinephrine: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Norep_Box_Display);

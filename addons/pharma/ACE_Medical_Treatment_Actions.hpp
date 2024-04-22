@@ -152,6 +152,17 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
+    class TXAAuto: Morphine {
+        displayName = CSTRING(Take_TXA_Auto);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_TXAAuto);
+        items[] = {"kat_TXAAuto"};
+        condition = "";
+        treatmentTime = 5;
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
     class SalineFlush: Carbonate {
         displayName = CSTRING(Saline_Flush);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
