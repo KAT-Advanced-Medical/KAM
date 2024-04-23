@@ -2383,6 +2383,9 @@
             <Finnish>IV asetukset</Finnish>
             <Russian>Настройки IV</Russian>
         </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_Coagulation">
+            <English>Coagulation Settings</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_ApplyIO">
             <English>IO Settings</English>
             <Polish>Ustawienia IO</Polish>
@@ -3250,6 +3253,18 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma_Desc">
             <English>Allows Trauma to be cleared by EACA in addition to stitching</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Delay">
+            <English>Coagulation Delay</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Delay_DESC">
+            <English>How long it takes for coagulation to bandage a wound</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Random_Delay">
+            <English>Coagulation Delay Extension</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Random_Delay_DESC">
+            <English>How long it additionally takes for coagulation to bandage a wound, random number between 0 and this setting</English>
         </Key>
     </Package>
 </Project>
