@@ -129,31 +129,33 @@ if (GVAR(coagulation)) then {
         if (_pulse < 20) exitWith {};
         if (_coagulationFactor == 0) exitWith {};
 
-        private _count = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
-
-        if (_count == 0) exitWith {
+        private _TXAcount = [_unit, "TXA",] call ACEFUNC(medical_status,getMedicationCount);
+        private _TXAAutocount = [_unit, "TXAAuto",] call ACEFUNC(medical_status,getMedicationCount);
+        if (_TXAcount == 0 && _TXAAutocount == 0) exitWith { systemChat "TXA0";
             {
-                private _part = _x;
-                {
-                    _x params ["", "_amountOf", "_bleeding"];
-                    if (_amountOf * _bleeding > 0) exitWith {
+                _x params ["", "_bodyPart", "_amount", "_bleeding"];
+
+                if (_amount * _bleeding > 0) exitWith {
+                    [{private _part = ALL_BODY_PARTS select _bodyPart;
+                        private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
+                        systemChat str "[_unit]";
                         [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
-                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
-                    };
-                } forEach _y;
+                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];}, [], GVAR(coagDelay) + random GVAR(coagRdmDelay)] call CBA_fnc_waitAndExecute;
+                };
             } forEach _openWounds;
         };
 
-        if (_count > 0) exitWith {
+        if (_TXAcount > 0 || _TXAAutocount > 0) exitWith {systemChat "TXA0";
             {
-                private _part = _x;
-                {
-                    _x params ["", "_amountOf", "_bleeding"];
-                    if (_amountOf * _bleeding > 0) exitWith {
+                _x params ["", "_bodyPart", "_amount", "_bleeding"];
+
+                if (_amount * _bleeding > 0) exitWith {
+                    [{private _part = ALL_BODY_PARTS select _bodyPart;
+                        private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
+                        systemChat str "[_unit]";
                         [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
-                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
-                    };
-                } forEach _y;
+                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];}, [], ((GVAR(coagDelay)) + random(GVAR(coagRdmDelay)))] call CBA_fnc_waitAndExecute;
+                };
             } forEach _openWounds;
         };
     }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;
