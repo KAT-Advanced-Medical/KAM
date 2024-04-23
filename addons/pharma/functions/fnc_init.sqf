@@ -131,28 +131,26 @@ if (GVAR(coagulation)) then {
 
         private _TXAcount = [_unit, "TXA",] call ACEFUNC(medical_status,getMedicationCount);
         private _TXAAutocount = [_unit, "TXAAuto",] call ACEFUNC(medical_status,getMedicationCount);
-        if (_TXAcount == 0 && _TXAAutocount == 0) exitWith { systemChat "TXA0";
+        if (_TXAcount == 0 && _TXAAutocount == 0) exitWith {
             {
                 _x params ["", "_bodyPart", "_amount", "_bleeding"];
 
                 if (_amount * _bleeding > 0) exitWith {
                     [{private _part = ALL_BODY_PARTS select _bodyPart;
                         private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
-                        systemChat str "[_unit]";
                         [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
                         _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];}, [], GVAR(coagDelay) + random GVAR(coagRdmDelay)] call CBA_fnc_waitAndExecute;
                 };
             } forEach _openWounds;
         };
 
-        if (_TXAcount > 0 || _TXAAutocount > 0) exitWith {systemChat "TXA0";
+        if (_TXAcount > 0 || _TXAAutocount > 0) exitWith {
             {
                 _x params ["", "_bodyPart", "_amount", "_bleeding"];
 
                 if (_amount * _bleeding > 0) exitWith {
                     [{private _part = ALL_BODY_PARTS select _bodyPart;
                         private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
-                        systemChat str "[_unit]";
                         [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
                         _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];}, [], ((GVAR(coagDelay)) + random(GVAR(coagRdmDelay)))] call CBA_fnc_waitAndExecute;
                 };
