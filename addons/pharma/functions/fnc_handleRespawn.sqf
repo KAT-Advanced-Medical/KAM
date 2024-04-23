@@ -118,7 +118,7 @@ if (GVAR(coagulation)) then {
                 _x params ["", "_bodyPart", "_amount", "_bleeding"];
 
                 if (_amount * _bleeding > 0) exitWith {
-                    sleep ((GVAR(coagDelay)) + (GVAR(coagRdmDelay)));
+                    sleep ((GVAR(coagDelay)) + random(GVAR(coagRdmDelay)));
                     private _part = ALL_BODY_PARTS select _bodyPart;
                     [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
                     _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
@@ -131,7 +131,7 @@ if (GVAR(coagulation)) then {
                 _x params ["", "_bodyPart", "_amount", "_bleeding"];
 
                 if (_amount * _bleeding > 0) exitWith {
-                    sleep ((GVAR(coagDelay)) + (GVAR(coagRdmDelay)));
+                    sleep ((GVAR(coagDelay)) + random(GVAR(coagRdmDelay)));
                     private _part = ALL_BODY_PARTS select _bodyPart;
                     [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
                     _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
