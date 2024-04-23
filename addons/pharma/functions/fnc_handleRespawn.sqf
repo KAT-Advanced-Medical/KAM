@@ -119,8 +119,9 @@ if (GVAR(coagulation)) then {
 
                 if (_amount * _bleeding > 0) exitWith {
                     [{private _part = ALL_BODY_PARTS select _bodyPart;
+                        private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
                         [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
-                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];}, [], ((GVAR(coagDelay)) + random(GVAR(coagRdmDelay)))] call CBA_fnc_waitAndExecute;
+                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true]; systemChat "work";}, [], ((GVAR(coagDelay)) + random(GVAR(coagRdmDelay)))] call CBA_fnc_waitAndExecute;
                 };
             } forEach _openWounds;
         };
@@ -131,8 +132,9 @@ if (GVAR(coagulation)) then {
 
                 if (_amount * _bleeding > 0) exitWith {
                      [{private _part = ALL_BODY_PARTS select _bodyPart;
+                        private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
                         [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
-                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];}, [], ((GVAR(coagDelay)) + random(GVAR(coagRdmDelay)))] call CBA_fnc_waitAndExecute;
+                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true]; systemChat "work";}, [], ((GVAR(coagDelay)) + random(GVAR(coagRdmDelay)))] call CBA_fnc_waitAndExecute;
                 };
             } forEach _openWounds;
         };
