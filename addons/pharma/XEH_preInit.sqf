@@ -628,6 +628,24 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(coagDelay),
+    "SLIDER",
+    [LLSTRING(SETTING_CoagulationDelay), LLSTRING(SETTING_Coagulation_Delay_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 60, 4, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(coagRdmDelay),
+    "SLIDER",
+    [LLSTRING(SETTING_CoagulationRandomDelay), LLSTRING(SETTING_Coagulation_Random_Delay_DESC)],
+    CBA_SETTINGS_CAT,
+    [0, 60, 4, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(staminaMedication),
     "CHECKBOX",
     [LLSTRING(SETTING_staminaMedication), LLSTRING(SETTING_staminaMedication_DESC)],

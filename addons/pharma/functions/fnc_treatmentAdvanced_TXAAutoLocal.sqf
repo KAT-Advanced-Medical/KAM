@@ -49,7 +49,7 @@ if !(GVAR(coagulation)) then {
                 private _woundIndex = _openWoundsOnPart findIf {(_x select 1) > 0 && (_x select 2) > 0};
                 
                 if (_woundIndex != -1) exitWith {
-                    [QACEGVAR(medical_treatment,bandageLocal), [_patient, _targetBodyPart, "PackingBandage"], _patient] call CBA_fnc_targetEvent;
+                    [QACEGVAR(medical_treatment,bandageLocal), [_patient, _targetBodyPart, "UnstableClot"], _patient] call CBA_fnc_targetEvent;
                     _exit = false;
                 };
             } forEach ALL_BODY_PARTS_PRIORITY;
