@@ -36,7 +36,10 @@ class CfgWeapons {
         author = "Kygan";
         displayName = CSTRING(aatKit_display);
         descriptionShort = CSTRING(aatKit_desc);
+        model = QPATHTOF(models\AAT_Kit\AAT.p3d);
         picture = QPATHTOF(ui\surgical_airway_kit.paa);
+        hiddenSelections[]={"Content"};
+        hiddenSelectionsTextures[] = {QPATHTOF(models\AAT_Kit\AAT_ca.paa)};
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 5;
