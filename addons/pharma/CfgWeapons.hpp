@@ -117,20 +117,8 @@ class CfgWeapons {
         author = "fijik,Archer,J3FF";
         displayName = CSTRING(Norep_Box_Display);
         picture = QPATHTOF(ui\norep.paa);
-        model = QPATHTOF(models\vial\vial_01.p3d);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Norep_DescShort);
-        hiddenSelections[]={
-            "label_Norepinephrine",
-            "Glass",
-            };
-        hiddenSelectionsMaterials[] = {
-            "",
-            QPATHTOF(models\vial\Glass.rvmat),
-            };
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(models\vial\vial_ca.paa),
-            QPATHTOF(models\vial\vial_ca.paa),
-            };
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
