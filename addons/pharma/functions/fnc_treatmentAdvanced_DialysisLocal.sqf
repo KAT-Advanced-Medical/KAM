@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: 1LT.Mazinski.H
  * Local treatment call for dialysis procedure
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_surgery_fnc_treatmentAdvanced_DialysisLocal
+ * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_DialysisLocal
  *
  * Public: No
  */

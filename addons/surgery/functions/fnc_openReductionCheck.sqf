@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: 1LT.Mazinski.H
  * Local call to check if a patient has a complex fracture

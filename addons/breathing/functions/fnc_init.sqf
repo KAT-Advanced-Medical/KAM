@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * Initializes unit variables.
@@ -15,11 +15,13 @@
  * Public: No
  */
 
-params ["_unit"];
+params ["_unit", ["_isRespawn", true]];
 
-_unit setVariable [QGVAR(airwayStatus), 100, true];
-_unit setVariable [QGVAR(pneumothorax), false, true];
-_unit setVariable [QGVAR(hemopneumothorax), false, true];
-_unit setVariable [QGVAR(tensionpneumothorax), false, true];
+if (!local _unit) exitWith {};
+if !(GVAR(enable)) exitWith {};
+
+[_unit] call FUNC(fullHealLocal);
 
 _unit setVariable [QGVAR(pulseoximeter), false, true];
+_unit setVariable [QGVAR(PulseOximeter_Volume), true, true];
+_unit setVariable [QGVAR(PulseOximeter_VolumePatient), false, true];

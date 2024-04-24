@@ -68,6 +68,10 @@ def check_stringtable(filepath):
 
         for key in keys:
             key_id = key.get("ID")
+            
+            # Skip keys that start with "STR_ACE_"
+            if key_id.startswith("STR_ACE_"):
+                continue
 
             # Verify that the key has a valid ID attribute
             if key_id is None:

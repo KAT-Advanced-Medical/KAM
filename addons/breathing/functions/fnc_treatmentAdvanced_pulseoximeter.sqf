@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * docks a pulseoximeter on the patient
@@ -16,7 +16,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftArm", "Pulseoximeter", objNull, "kat_Pulseoximeter"] call kat_breathing_fnc_treatmentAdvanced_hemopneumothorax;
+ * [player, cursorObject, "LeftArm", "Pulseoximeter", objNull, "kat_Pulseoximeter"] call kat_breathing_fnc_treatmentAdvanced_pulseoximeter;
  *
  * Public: No
  */

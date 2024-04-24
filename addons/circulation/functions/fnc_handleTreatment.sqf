@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * Handle the treatment for the patient cause calling two functions in one action isn't allowed.

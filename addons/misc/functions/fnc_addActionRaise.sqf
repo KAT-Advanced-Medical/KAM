@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 
 /*
  * Author: Battlekeeper, modified by YetheSamartaka and Tomcat
@@ -14,7 +14,7 @@
 params ["_s","_h","_rope1","_rope2","_rope3","_rope4"];
 
 _h addAction [
-  format ["<img image='x\kat\addons\misc\img\uparrow.paa' size='1' shadow='false'/> <t>%1</t>", LLSTRING(helistretcher_raise)],
+  format ["<ui image='x\kat\addons\misc\ui\uparrow.paa' size='1' shadow='false'/> <t>%1</t>", LLSTRING(helistretcher_raise)],
   {
     params ["_target", "_caller", "_actionId", "_arguments"];
     _caller removeAction _actionId;

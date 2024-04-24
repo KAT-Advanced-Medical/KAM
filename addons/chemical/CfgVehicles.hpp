@@ -2,7 +2,7 @@ class CfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_SelfActions {
-            class ACE_Equipment {
+            class KAT_Equipment {
                 class KAT_CheckGasMaskDur {
                     displayName = CSTRING(CheckGasMaskDurability);
                     condition = QUOTE([_player] call FUNC(hasGasMaskOn));
@@ -12,7 +12,7 @@ class CfgVehicles {
                     icon = QPATHTOF(ui\Gasmask_icon.paa);
                 };
                 class KAT_ChangeGasMaskFilter {
-                    displayName = CSTRING(ChangeGasMaskFilter); 
+                    displayName = CSTRING(ChangeGasMaskFilter);
                     condition = QUOTE([_player] call FUNC(canReplaceFilter));
                     exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
                     statement = QUOTE(_this call FUNC(changeGasMaskFilter));
@@ -21,19 +21,19 @@ class CfgVehicles {
                 };
                 class KAT_MuteChemDetector {
                     displayName = CSTRING(ChemDetector_Mute);
-                    condition = QUOTE([ARR_2(_player, true)] call FUNC(getChemDetectorState));
-                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(chemDetectorState), false , true)]);
+                    condition = QUOTE([ARR_2(_player,true)] call FUNC(getChemDetectorState));
+                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(chemDetectorState),false,true)]);
                     showDisabled = 0;
                     icon = QPATHTOF(ui\ChemDetectorIcon.paa);
                 };
                 class KAT_UnmuteChemDetector {
                     displayName = CSTRING(ChemDetector_Unmute);
-                    condition = QUOTE([ARR_2(_player, false)] call FUNC(getChemDetectorState));
-                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(chemDetectorState), true , true)]);
+                    condition = QUOTE([ARR_2(_player,false)] call FUNC(getChemDetectorState));
+                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(chemDetectorState),true,true)]);
                     showDisabled = 0;
                     icon = QPATHTOF(ui\ChemDetectorIcon.paa);
                 };
-            }; 
+            };
         };
     };
 
@@ -82,7 +82,7 @@ class CfgVehicles {
             class Checkbox;                // Default checkbox (returned value is Boolean)
             class CheckboxNumber;        // Default checkbox (returned value is Number)
             class ModuleDescription;    // Module description
-            class Units;    
+            class Units;
         };
         class ModuleDescription;
     };
@@ -100,7 +100,7 @@ class CfgVehicles {
 
         class Arguments: AttributesBase
         {
-            class Radius_Max 
+            class Radius_Max
             {
                 displayName = CSTRING(UI_max_range);
                 tooltip = CSTRING(GasModule_min_radius_dcs);
@@ -130,7 +130,7 @@ class CfgVehicles {
                     };*/
                 };
             };
-            class ISSealabe
+            class IsSealable
             {
                 displayName = CSTRING(UI_sealable);
                 toolTip = CSTRING(UI_sealable_tooltip);

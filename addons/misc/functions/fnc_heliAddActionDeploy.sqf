@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 
 /*
  * Author: Battlekeeper, modified by YetheSamartaka and Tomcat
@@ -14,7 +14,7 @@
  params ["_s","_h"]; //_s == Stretcher (Object) | _h == Heli (Object)
 
 _h addAction [
-  format ["<img image='x\kat\addons\misc\img\downarrow.paa' size='1' shadow='false'/> <t>%1</t>", LLSTRING(helistretcher_lower)],
+  format ["<ui image='x\kat\addons\misc\ui\downarrow.paa' size='1' shadow='false'/> <t>%1</t>", LLSTRING(helistretcher_lower)],
   {
     params ["_target", "_caller", "_actionId", "_arguments"];
     _caller removeAction _actionId;
@@ -25,7 +25,7 @@ _h addAction [
     _s = createVehicle ["kat_stretcher", (_h modelToWorld [0,0,-3])];
 
     _s addAction [
-      format ["<img image='x\kat\addons\misc\img\fliparrow.paa' size='1' shadow='false'/> <t>%1</t>", LLSTRING(helistretcher_flip)],
+      format ["<ui image='x\kat\addons\misc\ui\fliparrow.paa' size='1' shadow='false'/> <t>%1</t>", LLSTRING(helistretcher_flip)],
       {
         params ["_target", "_caller", "_actionId", "_arguments"];
         _target setVectorUp [0,0,1];

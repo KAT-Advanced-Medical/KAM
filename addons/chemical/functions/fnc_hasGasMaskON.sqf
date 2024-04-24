@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
  *
@@ -16,4 +16,6 @@
 
 params ["_target"];
 
-goggles _target in GVAR(availGasmaskList)
+if(missionNamespace getVariable [QGVAR(availGasmaskList), []] isEqualTo []) exitWith {false};
+
+goggles _target in (missionNamespace getVariable [QGVAR(availGasmaskList), []]);

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Mazinski.H
  * Opens an IV/IO on a patient and changes the patient's flow variable
@@ -49,9 +49,12 @@ if (_usedItem isEqualTo "kat_IV_16") then {
     _IVarray set [_partIndex, 1];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 
-    private _count = [_patient, "Lidocaine"] call ACEFUNC(medical_status,getMedicationCount);
-    private _count2 = [_patient, "Morphine"] call ACEFUNC(medical_status,getMedicationCount);
-    if (_count == 0 && _count2 == 0) then {[_patient, 0.8] call ACEFUNC(medical_status,adjustPainLevel)};
+    private _lidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _morphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _nalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _fentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _ketamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
+    if (_lidocaineCount <=  0.6 && _morphineCount <=  0.6 && _nalbuphineCount <=  0.6 && _fentanylCount <=  0.6 && _ketamineCount <=  0.6) then {[_patient, 0.8] call ACEFUNC(medical_status,adjustPainLevel)};
 
     [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
     [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);
@@ -80,10 +83,12 @@ if (GVAR(IVdropEnable) && (_usedItem isEqualTo "kat_IV_16")) then {
                     private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
                     private _IVactual = _IVarray select _partIndex;
 
-                    if (_IVactual == 1) then {
-                        _patient addItem "kat_IO_FAST";
-                    } else {
-                        _patient addItem "kat_IV_16";
+                    if(GVAR(IVreuse)) then {
+                        if (_IVactual == 1) then {
+                            _patient addItem "kat_IO_FAST";
+                        } else {
+                            _patient addItem "kat_IV_16";
+                        };
                     };
 
                     _IVarray set [_partIndex, 0];

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Battlekeeper, modified by YetheSamartaka
  * Refactored by Slatery
@@ -13,12 +13,12 @@
  * None
  *
  * Example:
- * [medic, medic, 500] call kat_circulation_fnc_drawBlood;
+ * [medic, patient, 500] call kat_circulation_fnc_drawBlood;
  *
  * Public: No
  */
 
-params ["_medic","_patient","_volume"];
+params ["_medic", "_patient", "_volume"];
 
 private _modStr = "ACE_";
 private _bloodtypeStr = "";
@@ -31,5 +31,5 @@ if (GVAR(bloodGroups)) then {
     _bloodtypeStr = format ["_%1",_bloodtype];
 };
 private _itemStr = format ["%1bloodIV%2%3",_modStr,_bloodtypeStr,_bagVolumeStr];
-_medic addItem _itemStr;
+[_medic, _itemStr] call ACEFUNC(common,addToInventory);
 _patient setVariable [QACEGVAR(medical,bloodVolume), _bloodVolume - _volumeChange,true];

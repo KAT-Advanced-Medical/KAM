@@ -12,7 +12,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(fractureCheck_MedLevel);
         treatmentTime = QGVAR(fractureCheck_Time);
         items[] = {};
-        condition = QUOTE(([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(fractureCheck)) && (GVAR(enable_fracture)));
+        condition = QUOTE(([ARR_4(_medic,_patient,_bodyPart,5)] call FUNC(fractureCheck)) && (GVAR(enable_fracture)));
         callbackSuccess = QFUNC(fractureSelect);
     };
     class ClosedReduction: CheckFracture {
@@ -25,7 +25,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(closedReduction_MedLevel);
         treatmentTime = QGVAR(closedTime);
         items[] = {};
-        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 1)] call FUNC(fractureCheck));
+        condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,1)] call FUNC(fractureCheck));
         callbackSuccess = QFUNC(closedReduction);
     };
     class OpenReduction: CheckFracture {
@@ -39,7 +39,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(openTime);
         items[] = {"kat_plate"};
         consumeItem = 1;
-        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.5)] call FUNC(openReductionCheck));
+        condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,3.5)] call FUNC(openReductionCheck));
         callbackSuccess = QFUNC(openReduction);
     };
     class Expose: BasicBandage {
@@ -52,9 +52,9 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"kat_retractor"};
-        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openReductionCheck));
+        condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.1)] call FUNC(openReductionCheck));
         consumeItem = 0;
-        callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openReductionProgress));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.1)] call FUNC(openReductionProgress));
     };
     class Incision: BasicBandage {
         displayName = CSTRING(Scalpel_Use);
@@ -66,7 +66,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(incisionTime);
         items[] = {"kat_scalpel"};
-        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(openReductionCheck));
+        condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,5)] call FUNC(openReductionCheck));
         callbackSuccess = QFUNC(incision);
     };
     class Clamp: BasicBandage {
@@ -79,9 +79,9 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"kat_clamp"};
-        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call FUNC(openReductionCheck));
+        condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,3.3)] call FUNC(openReductionCheck));
         consumeItem = 0;
-        callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call FUNC(openReductionProgress));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,3.3)] call FUNC(openReductionProgress));
     };
     class Irrigate: BasicBandage {
         displayName = CSTRING(Irrigate_Use);
@@ -93,36 +93,23 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(surgicalAction_MedLevel);
         treatmentTime = QGVAR(intermediateTime);
         items[] = {"ACE_salineIV_250"};
-        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openReductionCheck));
-        callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openReductionProgress));
-    };
-    class Debridement: BasicBandage {
-        displayName = CSTRING(Debride_Use);
-        displayNameProgress = CSTRING(Debride_Action);
-        category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
-        allowedSelections[] = {"All"};
-        allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(debrideTime);
-        items[] = {"kat_scalpel"};
-        condition = QFUNC(debridementCheck);
-        consumeItem = 0;
-        callbackSuccess = QFUNC(debridement);
+        condition = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.3)] call FUNC(openReductionCheck));
+        callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,2.3)] call FUNC(openReductionProgress));
     };
     class NPWT: BasicBandage {
         displayName = CSTRING(Vacuum_Use);
         displayNameProgress = CSTRING(Vacuum_Action);
+        condition = QFUNC(canNPWT);
         category = "surgery";
-        treatmentLocations = QGVAR(surgicalLocation);
         allowedSelections[] = {"All"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(surgicalAction_MedLevel);
-        treatmentTime = QGVAR(npwtTime);
+        treatmentLocations = QGVAR(npwtLocation);
+        treatmentTime = QFUNC(getNPWTTime);
+        medicRequired = QGVAR(npwtMedLevel);
         items[] = {"kat_vacuum"};
-        condition = QFUNC(debridementCheck);
-        consumeItem = 0;
         sounds[] = {{QPATHTO_R(sounds\vacuum.ogg),8,1,15}};
-        callbackSuccess = QFUNC(npwtTreatment);
+        consumeItem = 0;
+        callbackProgress = QFUNC(npwtTreatmentProgress);
+        callbackSuccess = "";
     };
 };

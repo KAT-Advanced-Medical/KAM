@@ -1,8 +1,8 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
- * Author: Miss Heda, 
+ * Author: Miss Heda,
  * Contributers: YonV, MiszczuZPolski
- * 
+ *
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -19,34 +19,35 @@
 params ["_patient"];
 
 if (ACE_Player != _patient) exitWith {};
+_defaultAnimSpeed = getAnimSpeedCoef _patient;
 
-/// ACE Fatigue 
+/// ACE Fatigue
 if (ACEGVAR(advanced_fatigue,enabled)) then {
-    
+
     [{
-        params ["_patient"];
+        params ["_patient", "_defaultAnimSpeed"];
 
         if !(alive _patient) exitWith {};
         ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 3000;
-        ["PDF", 0] call ACEFUNC(advanced_fatigue,addDutyFactor);
-        [LLSTRING(Pervitin_start), 2, _patient] call ACEFUNC(common,displayTextStructured); 
+        ["kat_PDF", 0] call ACEFUNC(advanced_fatigue,addDutyFactor);
+        [LLSTRING(Pervitin_start), 2, _patient] call ACEFUNC(common,displayTextStructured);
 
         if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
             ACEGVAR(advanced_fatigue,setAnimExclusions) pushBack "PervitinOverride";
         };
-        _patient setAnimSpeedCoef (GVAR(pervitinSpeed));
+        _patient setAnimSpeedCoef (_defaultAnimSpeed * (GVAR(pervitinSpeed)));
     },
-    [_patient], 10] call CBA_fnc_waitAndExecute;
+    [_patient, _defaultAnimSpeed], 10] call CBA_fnc_waitAndExecute;
 
 
     [{
-        params ["_patient"];
+        params ["_patient", "_defaultAnimSpeed"];
 
         if !(alive _patient) exitWith {};
-        ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+        ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
         [LLSTRING(Pervitin_mid), 2, _patient] call ACEFUNC(common,displayTextStructured);
 
-        _patient setAnimSpeedCoef 1;
+        _patient setAnimSpeedCoef _defaultAnimSpeed;
         if (!isNil QACEGVAR(advanced_fatigue,setAnimExclusions)) then {
             _index = ACEGVAR(advanced_fatigue,setAnimExclusions) find "PervitinOverride";
             if (_index != -1) then {
@@ -54,7 +55,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
             };
         };
     },
-    [_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
+    [_patient, _defaultAnimSpeed], 180] call CBA_fnc_waitAndExecute; /// 3m
 
 
     [{
@@ -62,7 +63,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
         if !(alive _patient) exitWith {};
         ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 3000;
-        ["PDF", 0.4] call ACEFUNC(advanced_fatigue,addDutyFactor);
+        ["kat_PDF", 0.4] call ACEFUNC(advanced_fatigue,addDutyFactor);
         [LLSTRING(Pervitin_mid2), 2, _patient] call ACEFUNC(common,displayTextStructured);
     },
     [_patient], 240] call CBA_fnc_waitAndExecute; /// 4m
@@ -73,7 +74,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
         if !(alive _patient) exitWith {};
         ACEGVAR(advanced_fatigue,anReserve) = ACEGVAR(advanced_fatigue,anReserve) + 3000;
-        ["PDF", 0.6] call ACEFUNC(advanced_fatigue,addDutyFactor);
+        ["kat_PDF", 0.6] call ACEFUNC(advanced_fatigue,addDutyFactor);
         [LLSTRING(Pervitin_mid3), 2, _patient] call ACEFUNC(common,displayTextStructured);
     },
     [_patient], 360] call CBA_fnc_waitAndExecute; /// 6m
@@ -83,7 +84,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
         params ["_patient"];
 
         if !(alive _patient) exitWith {};
-        ["PDF", 2] call ACEFUNC(advanced_fatigue,addDutyFactor);
+        ["kat_PDF", 2] call ACEFUNC(advanced_fatigue,addDutyFactor);
         [LLSTRING(Pervitin_mid4), 2, _patient] call ACEFUNC(common,displayTextStructured);
     },
     [_patient], 510] call CBA_fnc_waitAndExecute; /// 8:30m
@@ -93,7 +94,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
         params ["_patient"];
 
         if !(alive _patient) exitWith {};
-        ["PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
+        ["kat_PDF"] call ACEFUNC(advanced_fatigue,removeDutyFactor);
         [LLSTRING(Pervitin_end), 2, _patient] call ACEFUNC(common,displayTextStructured);
     },
     [_patient], 600] call CBA_fnc_waitAndExecute; /// 10m
@@ -101,7 +102,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
 
     /// ACE Fatigue Weapon Sway
 
-    if (GVAR(weapon_sway_pervitin)) then {
+    /*if (GVAR(weapon_sway_pervitin)) then { // TODO REWORK OR REMOVE
 
         if (isNil GVAR(originalSwayFactor)) then {
             GVAR(originalSwayFactor) = ACEGVAR(advanced_fatigue,swayFactor);
@@ -122,7 +123,7 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
         },
         [_patient], 60] call CBA_fnc_waitAndExecute;
 
-        
+
         [{
             params ["_patient"];
             if !(alive _patient) exitWith {};
@@ -193,31 +194,31 @@ if (ACEGVAR(advanced_fatigue,enabled)) then {
             ACEGVAR(advanced_fatigue,swayFactor) = GVAR(originalSwayFactor);
         },
         [_patient], 540] call CBA_fnc_waitAndExecute; /// 9m
-    };
+    };*/
 
 } else {
     /// Normal Stamina & Weapon Sway
 
     [{
-        params ["_patient"];
+        params ["_patient", "_defaultAnimSpeed"];
 
         if !(alive _patient) exitWith {};
-        _patient setAnimSpeedCoef (GVAR(pervitinSpeed));
+        _patient setAnimSpeedCoef (_defaultAnimSpeed * (GVAR(pervitinSpeed)));
         _patient enableStamina false;
         [LLSTRING(Pervitin_start), 2, _patient] call ACEFUNC(common,displayTextStructured);
     },
-    [_patient], 10] call CBA_fnc_waitAndExecute;
+    [_patient, _defaultAnimSpeed], 10] call CBA_fnc_waitAndExecute;
 
 
     [{
-        params ["_patient"];
+        params ["_patient", "_defaultAnimSpeed"];
 
         if !(alive _patient) exitWith {};
         _patient enableStamina true;
-        _patient setAnimSpeedCoef 1;
+        _patient setAnimSpeedCoef _defaultAnimSpeed;
         [LLSTRING(Pervitin_mid), 2, _patient] call ACEFUNC(common,displayTextStructured);
     },
-    [_patient], 180] call CBA_fnc_waitAndExecute; /// 3m
+    [_patient, _defaultAnimSpeed], 180] call CBA_fnc_waitAndExecute; /// 3m
 
 
     [{

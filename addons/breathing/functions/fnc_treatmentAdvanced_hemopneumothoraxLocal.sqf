@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Kygan, modified by YetheSamartaka and Tomcat.
  * Treatment for hemopneumothorax
@@ -19,21 +19,14 @@
 
 params ["_medic", "_patient"];
 
-if !(GVAR(tensionhemothorax_hardcore)) exitWith {
-    if ((_patient getVariable [QGVAR(hemopneumothorax), false]) && {_patient getVariable [QGVAR(activeChestSeal), false]}) then {
-        _patient setVariable [QGVAR(hemopneumothorax), false, true];
-        [_patient] call EFUNC(circulation,updateInternalBleeding);
-        if (!(_patient getVariable [QGVAR(pneumothorax), false]) && {!(_patient getVariable [QGVAR(hemopneumothorax), false]) && {!(_patient getVariable [QGVAR(tensionpneumothorax), false])}}) then {
-            _patient setVariable [QGVAR(activeChestSeal), false, true];
-        };
-    };
-};
-
 if (_patient getVariable [QGVAR(activeChestSeal), false]) then {
     _patient setVariable [QGVAR(hemopneumothorax), false, true];
     [_patient] call EFUNC(circulation,updateInternalBleeding);
 };
 
-if (!(_patient getVariable [QGVAR(pneumothorax), false]) && {!(_patient getVariable [QGVAR(hemopneumothorax), false]) && {!(_patient getVariable [QGVAR(tensionpneumothorax), false])}}) then {
-    _patient setVariable [QGVAR(activeChestSeal), false, true];
+if (!(_patient getVariable [QGVAR(pneumothorax), 0] > 0) && !(_patient getVariable [QGVAR(hemopneumothorax), false]) && !(_patient getVariable [QGVAR(tensionpneumothorax), false])) then {
+    [_patient, 0, 0, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);
+    if (GVAR(clearChestSealAfterTreatment)) then {
+        _patient setVariable [QGVAR(activeChestSeal), false, true];
+    };
 };

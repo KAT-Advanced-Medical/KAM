@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Unit <OBJECT>
  *
@@ -16,9 +16,9 @@
 params ["_unit"];
 
 [
-    { 
+    {
         params["_unit"];
-        _unit getVariable [QGVAR(airPoisoning),false]
+        _unit getVariable [QGVAR(airPoisoning), false]
     },
     {
         params["_unit"];
@@ -47,12 +47,12 @@ params ["_unit"];
 
                             private _effect = ppEffectCreate ["ChromAberration",2005];
                             KAT_PAIN_EFFECT = _effect;
-                            _unit setVariable [QGVAR(painEffect),KAT_PAIN_EFFECT,true];
+                            _unit setVariable [QGVAR(painEffect), KAT_PAIN_EFFECT, true];
                             KAT_PAIN_EFFECT ppEffectAdjust [0, 0, false];
                             KAT_PAIN_EFFECT ppEffectCommit 0;
                             KAT_PAIN_EFFECT ppEffectEnable true;
-                            private _intensity     = linearConversion [0, 1, 0.5, 0, 0.06, true];
-                            private _initialAdjust = [_intensity       , _intensity       , true];
+                            private _intensity = linearConversion [0, 1, 0.5, 0, 0.06, true];
+                            private _initialAdjust = [_intensity, _intensity, true];
                             private _delayedAdjust = [_intensity * 0.15, _intensity * 0.15, true];
                             KAT_PAIN_EFFECT ppEffectAdjust _initialAdjust;
                             KAT_PAIN_EFFECT ppEffectCommit 0.3;

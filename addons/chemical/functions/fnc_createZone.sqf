@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Position (position)
  * 1: Lifetime (number)
@@ -17,22 +17,23 @@
  * Public: No
  *
 */
-params["_pos","_lifetime","_radius","_gasLvL"];
+params ["_pos", "_lifetime", "_radius", "_gasLvL"];
 
 private _logic = "ACE_LogicDummy" createVehicle _pos;
 
 private _gastype = "";
-    switch (_gasLvL) do {
-        case 1: { //CS
-            _gastype = "CS";
-        }; 
-        default { //toxic gas (standard)
-            _gastype = "Toxic";
-        };
+switch (_gasLvL) do {
+    case 1: { //CS
+        _gastype = "CS";
     };
-if(_gastype isEqualTo "CS") then {[getPosASL _logic, _radius, _lifetime] call FUNC(spawnGasSmoke);};
-    
-[_logic,_pos,_radius,0,_gastype] call FUNC(gasCheck);
+    default { //toxic gas (standard)
+        _gastype = "Toxic";
+    };
+};
+
+if (_gastype isEqualTo "CS") then {[getPosASL _logic, _radius, _lifetime] call FUNC(spawnGasSmoke);};
+
+[_logic, _pos, _radius, 0, _gastype] call FUNC(gasCheck);
 private _currentTime = CBA_missionTime;
 
 [{
@@ -43,6 +44,6 @@ private _currentTime = CBA_missionTime;
 {
     //code
     params["_logic"];
-    _logic setVariable [QGVAR(gas_active),false,true];
+    _logic setVariable [QGVAR(gas_active), false, true];
     deleteVehicle _logic;
-},[_logic,_lifetime,_currentTime]] call CBA_fnc_waitUntilAndExecute;
+}, [_logic, _lifetime, _currentTime]] call CBA_fnc_waitUntilAndExecute;

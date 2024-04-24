@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
 * Author: DiGii
 * This cant be called manualy!
@@ -22,6 +22,10 @@
 */
 
 params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
+
+if (!isDamageAllowed _unit) exitWith {
+    [_unit] call FUNC(clearChemicalInjuriesLocal);
+};
 
 [
     {
@@ -72,16 +76,17 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
     {
         params["_args", "_pfhandler"];
         _args params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
-        
+
         if (!(_logic getVariable [QGVAR(gas_active), false]) || isNull _logic || !(_unit in (_logic getVariable [QGVAR(gas_playerArr), []])) || !(_unit getVariable[QGVAR(enteredPoison), false])) then {
             [_pfhandler] call CBA_fnc_removePerFrameHandler;
         };
-        
+
         _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
         if (_unit distance _pos <= _radius_max && !(_unit getVariable [QGVAR(enteredPoison), false]) && !(_unit getVariable ["ACE_isUnconscious", false])) then {
             _unit setVariable [QGVAR(enteredPoison), true, true];
+            [QGVAR(enteredPoisonEvent), [_unit], _unit] call CBA_fnc_targetEvent;
             _unit setVariable [QGVAR(Poisen_logic), _logic, true];
-            private _timeEntered = CBA_missiontime;      
+            private _timeEntered = CBA_missiontime;
 
             [
                 {
@@ -92,17 +97,18 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
                     _percent = _unit getVariable [QGVAR(gasPercentage), 0];
                     _unittime = _unittime - _percent;
                     _unit setVariable [QGVAR(timeleft), _unittime];
+
                     if (_unittime <= 0) exitwith {
                         [QGVAR(afterWait), [_unit, _logic, _gastype, _radius_max], _unit] call CBA_fnc_targetEvent;
                         _unit setVariable [QGVAR(timeleft), 0];
                         [_pfhandler] call CBA_fnc_removePerFrameHandler;
                     };
-                    
+
                     if (_unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active), false]) || isNull _logic) exitwith {
                         _unit setVariable[QGVAR(enteredPoison), false, true];
                         [_pfhandler] call CBA_fnc_removePerFrameHandler;
                     };
-                    
+
                     if (_gastype isEqualto "CS") exitwith {
                         [_pfhandler] call CBA_fnc_removePerFrameHandler;
                         [QGVAR(afterWait), [_unit, _logic, _gastype, _radius_max], _unit] call CBA_fnc_targetEvent;
@@ -111,7 +117,7 @@ params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
                 1,
                 [ _radius_max, _radius_min, _unit, _logic, _gastype]
             ] call CBA_fnc_addPerFrameHandler;
-            
+
         };
     },
     2,

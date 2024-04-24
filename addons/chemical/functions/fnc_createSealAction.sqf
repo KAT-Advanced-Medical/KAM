@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Target <OBJECT>
  *
@@ -21,7 +21,7 @@ private _action = [
     "",
     {
         params["_target", "_player"];
-        
+
         [_player, "Acts_carFixingWheel"] call ACEFUNC(common,doAnimation);
 
         //add time to addon options
@@ -31,7 +31,7 @@ private _action = [
             {
                 params["_args"];
                 _args params ["_target","_player"];
-                _target setVariable [QGVAR(gas_active), false,true];
+                _target setVariable [QGVAR(gas_active), false, true];
                 [_target, 0, ["ACE_MainActions", "kat_gas_interaction"]] call ACEFUNC(interact_menu,removeActionFromObject);
                 [_player, "kat_sealant"] call ACEFUNC(common,useItem);
             },
@@ -49,11 +49,10 @@ private _action = [
         params["_target","_player"];
 
         [_player, _target] call ACEFUNC(common,canInteractWith);
-        [_player,_player,["kat_sealant"]] call ACEFUNC(medical_treatment,hasItem);
-
+        [_player, _player, ["kat_sealant"]] call ACEFUNC(medical_treatment,hasItem);
     },
     {},
     []
 ] call ACEFUNC(interact_menu,createAction);
 
-[_target, 0, ["ACE_MainActions"],_action] call ACEFUNC(interact_menu,addActionToObject);
+[_target, 0, ["ACE_MainActions"], _action] call ACEFUNC(interact_menu,addActionToObject);

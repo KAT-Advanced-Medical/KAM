@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
 * Author: DiGii
 *
@@ -20,7 +20,7 @@ params ["_unit"];
 [
     {
         params ["_unit"];
-        goggles _unit in GVAR(availGasmaskList)
+        (goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])
     },
     {
         params ["_unit"];
@@ -28,9 +28,9 @@ params ["_unit"];
             {
                 params["_args", "_handler"];
                 _args params ["_unit"];
-                if !(goggles _unit in GVAR(availGasmaskList) || !(alive player) || _unit getVariable [QACEGVAR(medical,heartrate), 80] <= 0) then {
+                if (!(goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) || !(alive _unit) || _unit getVariable [QACEGVAR(medical,heartrate), 80] <= 0) then {
                     [_handler] call CBA_fnc_removePerFrameHandler;
-                    [_unit] spawn FUNC(breathing);
+                    [_unit] call FUNC(breathing);
                 } else {
                     if (GET_PAIN_PERCEIVED(_unit) >= 0.4 || {_unit getVariable[QACEGVAR(medical,heartrate), 80] >= 105}) then {
                         _unit say3D QGVAR(mask_breath_heavy);

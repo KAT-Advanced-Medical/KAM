@@ -2,7 +2,16 @@
 <Project name="KAT">
     <Package name="Main">
         <Key ID="STR_KAT_Main_URL">
-            <English>https://github.com/Tomcat-SG/KAM</English>
+            <English>https://github.com/KAT-Advanced-Medical/KAM</English>
+            <German>https://github.com/KAT-Advanced-Medical/KAM</German>
+            <Japanese>https://github.com/KAT-Advanced-Medical/KAM</Japanese>
+            <Italian>https://github.com/KAT-Advanced-Medical/KAM</Italian>
+            <Spanish>https://github.com/KAT-Advanced-Medical/KAM</Spanish>
+            <French>https://github.com/KAT-Advanced-Medical/KAM</French>
+            <Korean>https://github.com/KAT-Advanced-Medical/KAM</Korean>
+            <Portuguese>https://github.com/KAT-Advanced-Medical/KAM</Portuguese>
+            <Finnish>https://github.com/KAT-Advanced-Medical/KAM</Finnish>
+            <Russian>https://github.com/KAT-Advanced-Medical/KAM</Russian>
         </Key>
     </Package>
 </Project>

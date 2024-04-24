@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * NONE
  *
@@ -17,17 +17,17 @@
 */
 private _condition = { //IGNORE_PRIVATE_WARNING ["_target", "_player"];
     // If magazine handling is enabled or weapon assembly/disassembly is enabled we enable ammo handling
-    if ((ace_csw_ammoHandling == 0) && {!([false, true, true, ace_csw_defaultAssemblyMode] select (_target getVariable [ace_csw_assemblyMode, 3]))}) exitWith { false };
-    [_player, _target, ["isNotSwimming", "isNotSitting"]] call ace_common_canInteractWith;
+    if ((ACEGVAR(csw,ammoHandling) == 0) && {!([false, true, true, ACEGVAR(csw,defaultAssemblyMode)] select (_target getVariable [QACEGVAR(csw,assemblyMode), 3]))}) exitWith { false };
+    [_player, _target, ["isNotSwimming", "isNotSitting"]] call ACEFUNC(common,canInteractWith);
 };
 
 private _childenCode = {
-    private _ret = (call ace_csw_reload_actionsLoad) + (call ace_csw_reload_actionsUnload);
-    _ret
+    private _return = (call ACEFUNC(csw,reload_actionsLoad)) + (call ACEFUNC(csw,reload_actionUnload));
+    _return
 };
 
 private _magazineLocation = getText (configFile >> "CfgVehicles" >> "Mortar_01_base_F" >> "ace_csw" >> "magazineLocation");
 private _positionCode = compile _magazineLocation;
-private _ammoAction = ["ace_csw_magazine",localize "STR_ACE_CSW_ammoHandling_displayName", "", {}, _condition, _childenCode, [], _positionCode, 4] call ace_interact_menu_fnc_createAction;
-private _ammoActionPath = ["Mortar_01_base_F", 0, [], _ammoAction] call ACE_interact_menu_fnc_addActionToClass;
+private _ammoAction = ["ace_csw_magazine",ACELSTRING(CSW,ammoHandling_displayName), "", {}, _condition, _childenCode, [], _positionCode, 4] call ACEFUNC(interact_menu,createAction);
+private _ammoActionPath = ["Mortar_01_base_F", 0, [], _ammoAction] call ACEFUNC(interact_menu,addActionToClass);
 

@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Target <OBJECT>
  *
@@ -14,10 +14,8 @@
  * Public: No
 */
 
-params ["_target"];
+params ["_unit"];
 
-if (goggles _target in GVAR(availGasmaskList) && 'kat_gasmaskFilter' in items _target) then {
-    true
-} else {
-    false
-};
+if (missionNamespace getVariable [QGVAR(availGasmaskList), []] isEqualTo []) exitWith {false};
+
+(goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []]) && 'kat_gasmaskFilter' in (items _unit);

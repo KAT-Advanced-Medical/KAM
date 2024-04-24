@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Target <OBJECT>
  *
@@ -16,9 +16,9 @@
 
 params ["_target"];
 
-private _durability = _target getVariable[QGVAR(gasmask_durability),10];
-private _durabilityStructuredText = if(_durability >= 0) then {
-    
+private _durability = _target getVariable [QGVAR(gasmask_durability), 10];
+private _durabilityStructuredText = if (_durability >= 0) then {
+
     private _color = [((2 * (1 - _durability / 10)) min 1), ((2 * _durability / 10) min 1), 0];
 
     private _string = "";

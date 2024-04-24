@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
-      uses: actions/checkout@master
+      uses: actions/checkout@v4
     - name: Validate SQF
       run: python3 tools/sqf_validator.py
     - name: Validate Config
@@ -25,7 +25,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
-      uses: actions/checkout@master
+      uses: actions/checkout@v4
     - name: Lint (sqflint)
       uses: arma-actions/sqflint@master
       continue-on-error: true # No failure due to many false-positives
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+      - name: Run HEMTT Build
+        run: hemtt build
+      - name: Upload Release
+        uses: actions/upload-artifact@v2
+        with:
+          name: '@kat'
+          path: '.hemttout/build/*'

@@ -114,8 +114,8 @@ class GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {
 
 
 class GVAR(kat_RscGasModul): RscDisplayAttributes {
-    onLoad = QUOTE([ARR_3('onLoad', _this, QQGVAR(kat_RscGasModul))] call FUNC(zeusAttributes));
-    onUnload = QUOTE([ARR_3('onUnload', _this, QQGVAR(kat_RscGasModul))] call FUNC(zeusAttributes));
+    onLoad = QUOTE([ARR_3('onLoad',_this,QQGVAR(kat_RscGasModul))] call EFUNC(zeus,zeusAttributes));
+    onUnload = QUOTE([ARR_3('onUnload',_this,QQGVAR(kat_RscGasModul))] call EFUNC(zeus,zeusAttributes));
 
     class Controls: Controls {
         class Background: Background {};
@@ -126,7 +126,7 @@ class GVAR(kat_RscGasModul): RscDisplayAttributes {
             };
         };
         class ButtonOK: ButtonOK {
-            onSetFocus = QUOTE(_this call FUNC(ui_gasModul));
+            onSetFocus = QUOTE(_this call FUNC(ui_gasModule));
         };
         class ButtonCancel: ButtonCancel {};
     };

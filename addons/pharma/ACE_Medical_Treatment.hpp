@@ -1,4 +1,4 @@
-class ADDON {
+class ACE_ADDON(Medical_Treatment) {
     class Medication {
         class Epinephrine {
             painReduce = 0;
@@ -10,6 +10,7 @@ class ADDON {
             maxDose = 10;
             incompatibleMedication[] = {};
             alphaFactor = 0.15;
+            onOverDose = "";
         };
         class Carbonate {
             painReduce = 0;
@@ -21,6 +22,7 @@ class ADDON {
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;
+            onOverDose = "";
         };
         class TXA {
             painReduce = 0;
@@ -32,6 +34,7 @@ class ADDON {
             maxDose = 3;
             incompatibleMedication[] = {};
             viscosityChange = 0;
+            onOverDose = "";
         };
         class Norepinephrine {
             painReduce = 0;
@@ -44,6 +47,7 @@ class ADDON {
             incompatibleMedication[] = {};
             viscosityChange = 25;
             alphaFactor = -0.3;
+            onOverDose = "";
         };
         class Phenylephrine {
             painReduce = 0;
@@ -56,6 +60,7 @@ class ADDON {
             incompatibleMedication[] = {};
             viscosityChange = 50;
             alphaFactor = -0.5;
+            onOverDose = "";
         };
         class Nitroglycerin {
             painReduce = 0;
@@ -68,6 +73,7 @@ class ADDON {
             incompatibleMedication[] = {};
             viscosityChange = -25;
             alphaFactor = 0.3;
+            onOverDose = "";
         };
         class Fentanyl {
             painReduce = 1;
@@ -79,6 +85,7 @@ class ADDON {
             maxDose = 2;
             incompatibleMedication[] = {};
             viscosityChange = -10;
+            onOverDose = "";
         };
         class Ketamine {
             painReduce = 0.8;
@@ -90,6 +97,7 @@ class ADDON {
             maxDose = 4;
             incompatibleMedication[] = {};
             viscosityChange = 10;
+            onOverDose = "";
         };
         class Nalbuphine {
             painReduce = 0.6;
@@ -101,6 +109,7 @@ class ADDON {
             maxDose = 4;
             incompatibleMedication[] = {};
             viscosityChange = -5;
+            onOverDose = "";
         };
         class Painkillers {
             painReduce = 0.3;
@@ -112,6 +121,7 @@ class ADDON {
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = -5;
+            onOverDose = "";
         };
         class Atropine {
             painReduce = 0;
@@ -123,6 +133,7 @@ class ADDON {
             maxDose = 4;
             incompatibleMedication[]= {};
             viscosityChange = 0;
+            onOverDose = "";
         };
         class Amiodarone {
             painReduce = 0;
@@ -134,6 +145,7 @@ class ADDON {
             maxDose = 4;
             incompatibleMedication[]= {};
             viscosityChange = 0;
+            onOverDose = "";
         };
         class Lidocaine {
             painReduce = 0.2;
@@ -144,6 +156,7 @@ class ADDON {
             timeTillMaxEffect = 30;
             maxDose = 4;
             incompatibleMedication[]= {};
+            onOverDose = "";
         };
         class EACA {
             painReduce = 0;
@@ -155,6 +168,7 @@ class ADDON {
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;
+            onOverDose = "";
         };
         class Etomidate {
             painReduce = 0.4;
@@ -166,6 +180,7 @@ class ADDON {
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;
+            onOverDose = "";
         };
         class Flumazenil {
             painReduce = 0;
@@ -177,6 +192,7 @@ class ADDON {
             maxDose = 3;
             incompatibleMedication[] = {};
             viscosityChange = 0;
+            onOverDose = "";
         };
         class Lorazepam {
             painReduce = 0;
@@ -188,6 +204,7 @@ class ADDON {
             maxDose = 3;
             incompatibleMedication[] = {};
             viscosityChange = -15;
+            onOverDose = "";
         };
         class Pervitin {
             painReduce = 0.5;
@@ -199,6 +216,7 @@ class ADDON {
             maxDose = 2;
             incompatibleMedication[] = {};
             viscosityChange = 5;
+            onOverDose = "";
         };
         class Caffeine {
             painReduce = 0;
@@ -210,6 +228,31 @@ class ADDON {
             maxDose = 6;
             incompatibleMedication[] = {};
             viscosityChange = 0;
+            onOverDose = "";
+        };
+        class BubbleWrap {
+            painReduce = 0.05;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 300;
+            timeTillMaxEffect = 5;
+            maxDose = 0;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class Penthrox {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-0, -5};
+            hrIncreaseNormal[] = {-5, -10};
+            hrIncreaseHigh[] = {-5, -15};
+            timeInSystem = 300;
+            timeTillMaxEffect = 10;
+            maxDose = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = 5;
+            onOverDose = "";
         };
     };
 };

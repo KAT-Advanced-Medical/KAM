@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: 2LT.Mazinski
  * Local function for EACA treatment
@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_patient","_bodyPart"];
+params ["_patient", "_bodyPart"];
 
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
@@ -42,38 +42,66 @@ if (_IVactual > 1) then {
     params ["_args", "_idPFH"];
     _args params ["_patient"];
 
-    private _stitchableWounds = _patient call ACEFUNC(medical_treatment,getStitchableWounds);
     private _alive = alive _patient;
-
-    if ((!_alive) || (_stitchableWounds isEqualTo [])) exitWith {
-        [_idPFH] call CBA_fnc_removePerFrameHandler;
-    };
+    private _exit = true;
 
     private _random = random 750;
     private _ph = (_patient getVariable [QGVAR(pH), 1500]) - 750;
 
     if (_random <= _ph) then {
-        private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
-        private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
+        {
+            _x params ["_targetBodyPart"];
 
-        private _treatedWound = _bandagedWounds deleteAt (_bandagedWounds find (_stitchableWounds select 0));
-        _treatedWound params ["_treatedID", "_treatedBodyPartN", "_treatedAmountOf"];
+            private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
+            private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_targetBodyPart, []];
 
-        private _woundIndex = _stitchedWounds findIf {
-            _x params ["_classID", "_bodyPartN"];
+            if (_bandagedWoundsOnPart isEqualTo [] || [_patient,_x] call ACEFUNC(medical_treatment,hasTourniquetAppliedTo)) then {
+                continue;
+            };
 
-            _classID == _treatedID && {_bodyPartN == _treatedBodyPartN}
-        };
+            private _index = _bandagedWoundsOnPart findIf {!((_x select 0) in [20,21,22])};
 
-        if (_woundIndex == -1) then {
-            _stitchedWounds pushBack _treatedWound;
-        } else {
-            private _wound = _stitchedWounds select _woundIndex;
-            _wound set [2, (_wound select 2) + _treatedAmountOf];
-        };
+            if (_index != -1) exitWith {
+                (_bandagedWoundsOnPart select _index) params ["_classID", "_amountOf", "", "_damageOf"];
 
-        _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
-        _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
+                private _treatedWound = [_classID, _amountOf, 0, _damageOf];
+
+                private _stitchedWounds = GET_STITCHED_WOUNDS(_patient);
+                private _stitchedWoundsOnPart = _stitchedWounds getOrDefault [_targetBodyPart, []];
+
+                private _woundIndex = _stitchedWoundsOnPart findIf {(_x select 0) isEqualTo _classID};
+
+                if (_woundIndex == -1) then {
+                    _stitchedWoundsOnPart pushBack _treatedWound;
+                } else {
+                    private _wound = _stitchedWoundsOnPart select _woundIndex;
+                    _stitchedWoundsOnPart set [_woundIndex,[(_wound select 1) + _amountOf, _wound select 2, _wound select 3]];
+                };
+                _stitchedWounds set [_targetBodyPart, _stitchedWoundsOnPart];
+                _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
+
+                _bandagedWoundsOnPart deleteAt _index;
+                _bandagedWounds set [_targetBodyPart, _bandagedWoundsOnPart];
+
+                _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
+                
+                private _partIndex = ALL_BODY_PARTS find _targetBodyPart;
+                private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
+                private _damage = (_bodyPartDamage select _partIndex) - (_damageOf * _amountOf);
+                if (_damage < 0.05) then {
+                    _bodyPartDamage set [_partIndex, 0];
+                } else {
+                    _bodyPartDamage set [_partIndex, _damage];
+                };
+                _patient setVariable [QACEGVAR(medical,bodyPartDamage), _bodyPartDamage, true];
+
+                _exit = false;
+            };
+        } forEach ALL_BODY_PARTS_PRIORITY;
     };
 
-}, 6, [_patient]] call CBA_fnc_addPerFrameHandler;
+    if (!(_alive) || (_exit)) exitWith {
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+    };
+
+}, 5, [_patient]] call CBA_fnc_addPerFrameHandler;

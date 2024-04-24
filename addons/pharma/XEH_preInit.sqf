@@ -13,7 +13,7 @@ PREP_RECOMPILE_END;
     QGVAR(RequireInsIV),
     "CHECKBOX",
     [LLSTRING(SETTING_REQUIRE_INS_IV),LLSTRING(SETTING_REQUIRE_INS_IV_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
 ] call CBA_Settings_fnc_init;
@@ -22,7 +22,16 @@ PREP_RECOMPILE_END;
     QGVAR(MedicationsRequireInsIV),
     "CHECKBOX",
     [LLSTRING(SETTING_REQUIRE_INS_IV_Medications),LLSTRING(SETTING_REQUIRE_INS_IV_Medications_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(RequireInsIVBloodDraw),
+    "CHECKBOX",
+    [LLSTRING(SETTING_REQUIRE_INS_IV_BLOOD_DRAW),LLSTRING(SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
 ] call CBA_Settings_fnc_init;
@@ -31,7 +40,7 @@ PREP_RECOMPILE_END;
     QGVAR(IVdropEnable),
     "CHECKBOX",
     [LLSTRING(IV_DROP_ENABLE)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -40,7 +49,7 @@ PREP_RECOMPILE_END;
     QGVAR(IVdrop),
     "SLIDER",
     [LLSTRING(IV_DROP),LLSTRING(IV_DROP_TIME_DESC)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [60, 1200, 600, 0],
     true
 ] call CBA_Settings_fnc_init;
@@ -49,7 +58,7 @@ PREP_RECOMPILE_END;
     QGVAR(IVreuse),
     "CHECKBOX",
     [LLSTRING(IV_REUSE)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [false],
     true
 ] call CBA_Settings_fnc_init;
@@ -58,7 +67,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(medLvl_ApplyIV),
     "LIST",
-    [LLSTRING(medLvl_ApplyIV), LLSTRING(medlLvl_ApplyIV_Desc)],
+    [LLSTRING(medLvl_ApplyIV), LLSTRING(medLvl_ApplyIV_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
     true
@@ -67,7 +76,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(treatmentTime_ApplyIV),
     "SLIDER",
-    [LLSTRING(treatmentTime_ApplyIV), LLSTRING(treatment_ApplyIV_Desc)],
+    [LLSTRING(treatmentTime_ApplyIV)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
     [0.1, 10, 7, 1],
     true
@@ -86,7 +95,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(medLvl_ApplyIO),
     "LIST",
-    [LLSTRING(medLvl_ApplyIO), LLSTRING(medlLvl_ApplyIO_Desc)],
+    [LLSTRING(medLvl_ApplyIO), LLSTRING(medLvl_ApplyIO_Desc)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIO)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
     true
@@ -95,7 +104,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(treatmentTime_ApplyIO),
     "SLIDER",
-    [LLSTRING(treatmentTime_ApplyIO), LLSTRING(treatmentTime_ApplyIO_Desc)],
+    [LLSTRING(treatmentTime_ApplyIO)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIO)],
     [0.1, 10, 7, 1],
     true
@@ -114,7 +123,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(medLvl_Reorientation),
     "LIST",
-    [LLSTRING(SETTING_Allow_Reorientation),LLSTRING(Allow_Reorientation_DESC)],
+    [LLSTRING(SETTING_Allow_Reorientation),LLSTRING(SETTING_Allow_Reorientation_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Reorientation)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
     true
@@ -144,7 +153,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     LLSTRING(SETTING_reorientationChance),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Reorientation)],
-    [0, 100, 100, 0],
+    [0, 100, 50, 0],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -554,6 +563,25 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Penthrox Settings Category
+[
+    QGVAR(medLvl_Penthrox),
+    "LIST",
+    [LLSTRING(SETTING_medLvl_Penthrox)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Penthrox)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_Penthrox),
+    "SLIDER",
+    [LLSTRING(SETTING_treatmentTime_Penthrox)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Penthrox)],
+    [0.1, 10, 8, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 [
     QGVAR(kidneyAction),
     "CHECKBOX",
@@ -576,6 +604,15 @@ PREP_RECOMPILE_END;
     QGVAR(coagulation),
     "CHECKBOX",
     [LLSTRING(SETTING_Coagulation), LLSTRING(SETTING_Coagulation_DESC)],
+    CBA_SETTINGS_CAT,
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(staminaMedication),
+    "CHECKBOX",
+    [LLSTRING(SETTING_staminaMedication), LLSTRING(SETTING_staminaMedication_DESC)],
     CBA_SETTINGS_CAT,
     [false],
     true
