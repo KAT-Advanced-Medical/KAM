@@ -60,6 +60,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\icon_IV_16.paa);
         model = QPATHTOF(models\iv\kat_iv.p3d);
         descriptionShort = CSTRING(IV_DescShort);
+        author = "Fijik, zer0gamler";
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
@@ -69,9 +70,10 @@ class CfgWeapons {
         scope = 2;
         displayName = CSTRING(IO_45_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        model = QPATHTOF(models\io\kat_io.p3d);
         descriptionShort = CSTRING(IO_DescShort);
         ACE_isMedicalItem = 1;
+        author = "zelowastaken";
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         };
