@@ -20,6 +20,6 @@ params ["_unit"];
 //Other mods can utilise KAT_Obstruction_Exclussion variable to prevent obstructions from happening
 if ( !(GVAR(enable)) || (_unit getVariable ["KAT_Obstruction_Exclussion", false])) exitWith {};
 
-if (random(100) <= GVAR(probability_obstruction)) then {
+if (random(100) < GVAR(probability_obstruction)) then {
     _unit setVariable [QGVAR(obstruction), true, true];
 };

@@ -25,4 +25,4 @@ private _ptxEntries = _target getVariable [QGVAR(gui_updateInjuryList_ptxEntries
 
 if (_ptxEntries isEqualTo _woundEntries) exitWith {};
 
-_woundEntires append _ptxEntries;
+_woundEntries append _ptxEntries;

@@ -24,10 +24,10 @@ private _hemo = _unit getVariable [QGVAR(hemopneumothorax), false];
 private _tension = _unit getVariable [QGVAR(tensionpneumothorax), false];
 
 // Roll chance to get advanced pneumothorax or skip chance if deteriorated
-if ((floor (random 100) <= (GVAR(advPtxChance) + _chanceIncrease) || _deteriorated) && !(_hemo || _tension)) then {
+if ((floor (random 100) < (GVAR(advPtxChance) + _chanceIncrease) || _deteriorated) && !(_hemo || _tension)) then {
     [_unit, 0.7] call ACEFUNC(medical_status,adjustPainLevel);
 
-    if (floor (random 100) <= GVAR(hptxChance)) then {
+    if (floor (random 100) < GVAR(hptxChance)) then {
         _unit setVariable [QGVAR(hemopneumothorax), true, true];
         _unit setVariable [QGVAR(pneumothorax), 4, true];
         [_unit] call EFUNC(circulation,updateInternalBleeding);
