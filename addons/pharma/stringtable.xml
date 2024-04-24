@@ -3258,7 +3258,7 @@
             <English>Coagulation Delay</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Delay_DESC">
-            <English>How long it takes for coagulation to bandage a wound</English>
+            <English>Minimum time for coagulation to close a wound</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Random_Delay">
             <English>Coagulation Delay Extension</English>
