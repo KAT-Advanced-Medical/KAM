@@ -632,7 +632,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_Coagulation_Delay), LLSTRING(SETTING_Coagulation_Delay_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [0, 60, 4, 0],
+    [1, 60, 4, 0],
     true
 ] call CBA_Settings_fnc_init;
 
