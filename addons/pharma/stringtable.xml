@@ -3264,7 +3264,7 @@
             <English>Coagulation Delay Extension</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Random_Delay_DESC">
-            <English>How long it additionally takes for coagulation to bandage a wound, random number between 0 and this setting</English>
+            <English>Additional time coagulation can take to close a wound, random number between 0 and this setting</English>
         </Key>
     </Package>
 </Project>
