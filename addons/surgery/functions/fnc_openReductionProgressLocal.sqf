@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: 1LT.Mazinski.H
+ * Author: Mazinski
  * Progresses the treatment process for a complex fracture
  *
  * Arguments:

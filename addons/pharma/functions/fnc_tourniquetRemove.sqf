@@ -36,14 +36,14 @@ _patient setVariable [VAR_TOURNIQUET, _tourniquets, true];
 
 private _nearPlayers = (_patient nearEntities ["CAManBase", 6]) select {_x call ACEFUNC(common,isPlayer)};
 TRACE_1("clearConditionCaches: tourniquetRemove",_nearPlayers);
-[QEGVAR(interact_menu,clearConditionCaches), [], _nearPlayers] call CBA_fnc_targetEvent;
+[QACEGVAR(interact_menu,clearConditionCaches), [], _nearPlayers] call CBA_fnc_targetEvent;
 
 // Add tourniquet item to medic or patient
 private _receiver = [_patient, _medic, _medic] select ACEGVAR(medical_treatment,allowSharedEquipment);
 [_receiver, "ACE_tourniquet"] call ACEFUNC(common,addToInventory);
 
 // Handle occluded medications that were blocked due to tourniquet
-private _occludedMedications = _patient getVariable [QEGVAR(medical,occludedMedications), []];
+private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
 private _arrayModified = false;
 
 if !(((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 3) then {
