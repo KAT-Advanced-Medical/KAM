@@ -1517,10 +1517,12 @@
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody">
             <English>Enable Full Body Stitching</English>
             <Russian>Включить сшивание всего тела</Russian>
+            <Spanish>Habilitar costura de cuerpo completo</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody_DESC">
             <English>Adds a full-body stitching option alongside the individual body part stitching, using ACE's established settings and values for consistency</English>
             <Russian>Добавляет возможность сшивания всего тела наряду с сшиванием отдельных частей тела, используя установленные ACE настройки и значения для обеспечения согласованности</Russian>
+            <Spanish>Agrega una opción de costura de cuerpo completo junto con la costura de partes individuales del cuerpo, utilizando las configuraciones y valores establecidos de ACE para lograr coherencia.</Spanish>
         </Key>
     </Package>
 </Project>
