@@ -1471,16 +1471,18 @@
         </Key>
         <Key ID="STR_KAT_Misc_Use_SurgicalKitFullBody">
             <English>Use Surgical Kit (Full Body)</English>
-            <Japanese>全身を縫合する</Japanese>
+            <Japanese>手術キットを使う (全身縫合)</Japanese>
             <Russian>Использвать хир.набор (на всё тело)</Russian>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody">
             <English>Enable Full Body Stitching</English>
             <Russian>Включить сшивание всего тела</Russian>
+            <Japanese>全身縫合を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody_DESC">
             <English>Adds a full-body stitching option alongside the individual body part stitching, using ACE's established settings and values for consistency</English>
             <Russian>Добавляет возможность сшивания всего тела наряду с сшиванием отдельных частей тела, используя установленные ACE настройки и значения для обеспечения согласованности</Russian>
+            <Japanese>身体部位毎に縫合するアクションに加え、ACEの設定値と同様の動きを保ったままの、全身を一括で縫合するオプションを追加します。</Japanese>
         </Key>
     </Package>
 </Project>
