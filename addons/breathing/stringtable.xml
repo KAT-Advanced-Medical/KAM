@@ -6,12 +6,14 @@
             <German>Aktiviere Atmungs Modul</German>
             <Japanese>呼吸モジュールを有効化</Japanese>
             <Russian>Активировать дыхательный модуль</Russian>
+            <Spanish>Activar Módulo de Respiración</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
             <English>Sets if SPO2 simulation and according functionality like Pneumothorax and \nAirway: occlusion &amp; obstruction (SPO2 reduction will be deactivated) should be activated</English>
             <German>Aktiviert SPO2 Simulation sowie Pneumothorax und Atemwege: Verstopfung und Obstruktion (SPO2 Reduktion wird deaktiviert)</German>
             <Japanese>SpO2のシミュレーションを気胸や気道:閉塞と異物などの機能で動作するように設定します。\n(SpO2減少機能は無効化されます)</Japanese>
             <Russian>Устанавливает, следует ли активировать имитацию SPO2 и соответствующие функции, такие как пневмоторакс и \дыхательные пути: окклюзия и обструкция (уменьшение SPO2 будет отключено)</Russian>
+            <Spanish>Establece si la simulación de SPO2 y sus funcionalidades relacionadas como Pneumothorax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">
             <English>Lethal SpO2 value</English>
@@ -50,10 +52,12 @@
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacValue">
             <English>Cardiac arrest SpO2 value</English>
             <Russian>Значение SpO2 при остановке сердца</Russian>
+            <Spanish>Valor de SpO2 de parada cardíaca</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive">
             <English>Activate cardiac arrest SpO2 value</English>
             <Russian>Активируйте значение SpO2 при остановке сердца</Russian>
+            <Spanish>Activar parada cardíaca por valor de SpO2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
@@ -1285,18 +1289,22 @@
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest">
             <English>Enable Pneumothorax Arrest</English>
             <Russian>Включить остановку сердца</Russian>
+            <Spanish>Habilitar Parada por Pneumothorax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest_DESCRIPTION">
             <English>Enables a chance for cardiac arrest following pneumothorax</English>
             <Russian>Увеличивает вероятность остановки сердца после Пневмоторакса</Russian>
+            <Spanish>Habilitar la probabilidad para parada cardíaca tras un pneumothorax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval">
             <English>Deteriorating pneumothorax arrest interval</English>
             <Russian>Ухудшение Пневмоторакса после остановки</Russian>
+            <Spanish>Intervalo para paradapor deterioro pneumothorax</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not a pneumothorax will result in cardiac arrest</English>
             <Russian>После каждого перерыва будет оцениваться вероятность того, приведет ли Пневмоторакс к остановке сердца или нет</Russian>
+            <Spanish>Despues de cada intervalo se sorteará una probabilidad de que el pneumotórax resulte en una parada cardíaca.</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
@@ -1501,6 +1509,7 @@
             <Finnish>Pelastushengitykset alkavat</Finnish>
             <Russian>Начало инсуффляций</Russian>
             <German>Beatmung hat begonnen</German>
+            <Spanish>Iniciada asistencia respiratoria</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>
