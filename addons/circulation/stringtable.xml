@@ -2869,8 +2869,8 @@
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance_deterioration">
             <English>Tamponade progression chance</English>
             <Russian>Вероятность прогрессирования тампонады</Russian>
-            </Key>
-            <Key ID="STR_ACE_Medical_Treatment_Plasma_IV_Desc_Short">
+        </Key>
+        <Key ID="STR_ACE_Medical_Treatment_Plasma_IV_Desc_Short">
             <English>Used to restore blood volume </English>
             <Russian>Дополнительный препарат, применяемый при возмещении объема крови.</Russian>
             <Spanish>Suplemento para expandir el volumen sanguíneo.</Spanish>
