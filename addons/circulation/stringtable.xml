@@ -1859,20 +1859,6 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AED_DESCRIPTION">
             <English>Used to combat cardiac arrest</English>
-            <German>Stellt Puls wieder her</German>
-            <Chinese>用來甦醒玩家</Chinese>
-            <Chinesesimp>使用电击来唤醒玩家</Chinesesimp>
-            <Polish>Używany do reanimacji</Polish>
-            <Spanish>Úsalo para resucitar a un jugador</Spanish>
-            <Czech>Použít k resuscitaci hráče</Czech>
-            <Korean>의식불명의 부상자에게 사용됩니다</Korean>
-            <French>Utilisé pour ressusciter un joueur</French>
-            <Turkish>Oyuncuyu canlandırmak için kullanın</Turkish>
-            <Italian>Utilizzato per resuscitare un giocatore</Italian>
-            <Russian>Используйте, чтобы реанимировать игрока</Russian>
-            <Japanese>人を蘇生させるために使用される</Japanese>
-            <Portuguese>Use para ressuscitar jogadores</Portuguese>
-            <Finnish>Käytetään potilaiden elvyttämiseen.</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_Shock">
             <English>%1 administered shock (%2)</English>
@@ -2869,22 +2855,6 @@
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance_deterioration">
             <English>Tamponade progression chance</English>
             <Russian>Вероятность прогрессирования тампонады</Russian>
-        </Key>
-        <Key ID="STR_ACE_Medical_Treatment_Plasma_IV_Desc_Short">
-            <English>Used to restore blood volume </English>
-            <Russian>Дополнительный препарат, применяемый при возмещении объема крови.</Russian>
-            <Spanish>Suplemento para expandir el volumen sanguíneo.</Spanish>
-            <French>Substitut sanguin visant à remplacer les volumes perdus.</French>
-            <Polish>Składnik krwi, używany do zwiększenia jej objętości.</Polish>
-            <Hungarian>Egy térfogatnövelő vérkiegészítmény.</Hungarian>
-            <Italian>Aiuta ad aumentare il volume sanguigno.</Italian>
-            <German>Volumenerweiterungsmittel (künstliches Blutvolumen)</German>
-            <Portuguese>Suplemento para expandir o volume sanguíneo.</Portuguese>
-            <Czech>Intravenózně podávaný doplněk k zvětšení objemu krve</Czech>
-            <Japanese>血液量の増加を補助します。</Japanese>
-            <Korean>혈액량을 늘리기위한 보조수단 입니다.</Korean>
-            <Chinesesimp>可快速得到血液补充</Chinesesimp>
-            <Chinese>可快速得到血液補充</Chinese>
         </Key>
     </Package>
 </Project>

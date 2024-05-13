@@ -401,20 +401,6 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Lidocaine_DescShort">
             <English>Used to combat cardiac arrest, local anesthetic</English>
-            <German>Einsatz zur Bekämpfung des Herzstillstands</German>
-            <Polish>Używany do zwalczania zatrzymania akcji serca</Polish>
-            <French>Antiarythmique utilisé pour combattre les formes choquables arrêt cardiaque.</French>
-            <Chinese>用于防治心脏骤停</Chinese>
-            <Chinesesimp>用于对抗心脏骤停</Chinesesimp>
-            <Italian>Usato per combattere l'arresto cardiaco</Italian>
-            <Spanish>Se utiliza para combatir un paro cardiaco</Spanish>
-            <Korean>심장 마비 퇴치를 위해 사용</Korean>
-            <Turkish>Kalp durmasıyla mücadele için kullanılır</Turkish>
-            <Czech>Používá se k léčení srdeční zástavy</Czech>
-            <Japanese>心停止に対応する為に使用される</Japanese>
-            <Russian>Используется для борьбы с остановкой сердца</Russian>
-            <Portuguese>Usado para combater a parada cardíaca</Portuguese>
-            <Finnish>Käytetään sydämenpysähdyksen torjuntaan</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Lidocaine_Box_Display">
             <English>Lidocaine</English>
@@ -452,20 +438,6 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_DescShort">
             <English>Used to treat bradycardia, chemical exposure</English>
-            <German>Zur Behandlung von Bradykardie</German>
-            <Polish>Używany do zwalczania bradykardii</Polish>
-            <French>Utiliser pour traiter une bradycardie</French>
-            <Chinese>用于治疗心动过缓</Chinese>
-            <Chinesesimp>用于治疗心动过缓</Chinesesimp>
-            <Italian>Usato per trattare la bradicardia</Italian>
-            <Spanish>Se utiliza para tratar la bradicardia</Spanish>
-            <Korean>서맥 치료에 사용</Korean>
-            <Turkish>Bradikardi tedavisinde kullanılır</Turkish>
-            <Czech>Používá se k léčbě bradykardie</Czech>
-            <Japanese>徐脈の治療に使用される</Japanese>
-            <Russian>Используется для лечения брадикардии</Russian>
-            <Portuguese>Usado para tratar bradicardia</Portuguese>
-            <Finnish>Käytetään bradykardian hoitoon</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_Box_Display">
             <English>Atropine</English>
@@ -554,20 +526,6 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Norep_DescShort">
             <English>Slows bleeding, decreases transfusion speed, raises blood pressure</English>
-            <German>Wird zur Erhöhung des Blutdrucks verwendet</German>
-            <Polish>Używana do podniesienia ciśnienia krwi</Polish>
-            <French>Utilisé pour remonter la pression artérielle</French>
-            <Chinese>用于提高血压</Chinese>
-            <Chinesesimp>用于提高血压</Chinesesimp>
-            <Italian>Usato per aumentare la pressione sanguigna</Italian>
-            <Spanish>Se utiliza para subir la presión arterial</Spanish>
-            <Korean>혈압을 높이는 데 사용</Korean>
-            <Turkish>Kan basıncını yükseltmek için kullanılır</Turkish>
-            <Czech>Používáno ke zvýšení krevního tlaku</Czech>
-            <Japanese>血圧を上げるために使用される</Japanese>
-            <Russian>Используется для повышения артериального давления</Russian>
-            <Portuguese>Usado para aumentar a pressão arterial</Portuguese>
-            <Finnish>Käytetään verenpaineen nostamiseen</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Norep_Box_Display">
             <English>Norepinephrine</English>
@@ -605,20 +563,6 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Phenyl_DescShort">
             <English>Slows bleeding, decreases transfusion speed, raises blood pressure</English>
-            <German>Wird zur Erhöhung des Blutdrucks verwendet</German>
-            <Polish>Używana do podniesienia ciśnienia krwi</Polish>
-            <French>Utilisé pour remonter la pression artérielle</French>
-            <Chinese>用于提高血压</Chinese>
-            <Chinesesimp>用于提高血压</Chinesesimp>
-            <Italian>Usato per aumentare la pressione sanguigna</Italian>
-            <Spanish>Se utiliza para subir la presión arterial</Spanish>
-            <Korean>혈압을 높이는 데 사용</Korean>
-            <Turkish>Kan basıncını yükseltmek için kullanılır</Turkish>
-            <Czech>Používáno ke zvýšení krevního tlaku</Czech>
-            <Japanese>血圧を上げるために使用される</Japanese>
-            <Russian>Используется для повышения артериального давления</Russian>
-            <Portuguese>Usado para aumentar a pressão arterial</Portuguese>
-            <Finnish>Käytetään verenpaineen nostamiseen</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Phenyl_Box_Display">
             <English>Phenylephrine</English>
@@ -676,20 +620,6 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Nitro_DescShort">
             <English>Increases transfusions speed, increases bleeding, lowers blood pressure</English>
-            <German>Zur Senkung des Blutdrucks</German>
-            <Polish>Używana do obniżenia ciśnienia krwi</Polish>
-            <French>Utilisé pour diminuer la pression artérielle</French>
-            <Chinese>用于降低血压</Chinese>
-            <Chinesesimp>用于降低血压</Chinesesimp>
-            <Italian>Usato per abbassare la pressione sanguigna</Italian>
-            <Spanish>Se utiliza para bajar la presión arterial</Spanish>
-            <Korean>혈압을 낮추는 데 사용</Korean>
-            <Turkish>Kan basıncını düşürmek için kullanılır</Turkish>
-            <Czech>Používáno ke snížení krevního tlaku</Czech>
-            <Japanese>血圧を下げるために使用される</Japanese>
-            <Russian>Используется для снижения артериального давления</Russian>
-            <Portuguese>Usado para baixar a pressão arterial</Portuguese>
-            <Finnish>Käytetään alentamaan verenpainetta</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Nitro_Box_Display">
             <English>Nitroglycerin</English>
@@ -1727,18 +1657,6 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Fentanyl_DescShort">
             <English>Suppress severe pain</English>
-            <Chinesesimp>用于抑制疼痛</Chinesesimp>
-            <Italian>Sopprime il dolore</Italian>
-            <Czech>Potlačit bolest</Czech>
-            <French>Combat la douleur</French>
-            <Polish>Zwalcza ból</Polish>
-            <Korean>고통 억제</Korean>
-            <German>Unterdrückt Schmerzen</German>
-            <Japanese>痛みを抑える</Japanese>
-            <Spanish>Suprime el dolor</Spanish>
-            <Portuguese>Suprime a dor</Portuguese>
-            <Finnish>Tukahduttaa kipua</Finnish>
-            <Russian>Обезбаливающее</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
@@ -2889,17 +2807,6 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_DescShort">
             <English>Performance enhancing drug.Supresses pain</English>
-            <German>Leistungssteigerndes Medikament</German>
-            <French>Drogue améliorant les performances</French>
-            <Korean>운동능력 향상 약물</Korean>
-            <Japanese>疲労の防止と回復に! 疲労をポンと取ってくれます。</Japanese>
-            <Italian>Sostanza che aumenta la performance</Italian>
-            <Portuguese>Droga para aumento de performance</Portuguese>
-            <Polish>Środek zwiększający wydolność</Polish>
-            <Spanish>Droga de mejora del desempeño</Spanish>
-            <Czech>Droga zvyšující výkon</Czech>
-            <Finnish>Suorituskykyä parantava lääke</Finnish>
-            <Russian>Препарат, повышающий работоспособность</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
@@ -3057,17 +2964,6 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_DescShort">
             <English>Stamina boost</English>
-            <German>Hält dich wach</German>
-            <French>Vous tient éveillé</French>
-            <Japanese>眠気防止に役立つ</Japanese>
-            <Korean>계속 깨어 있게 해줍니다.</Korean>
-            <Italian>Ti tiene sveglio</Italian>
-            <Portuguese>Mantém você desperto</Portuguese>
-            <Polish>Pozwala ci nie czuć zmęczenia</Polish>
-            <Spanish>Te mantiene despierto</Spanish>
-            <Czech>Udrží tě vzhůru</Czech>
-            <Finnish>Pitää sinut hereillä</Finnish>
-            <Russian>Не дает тебе уснуть</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Caffeine">
             <English>Take Caffeine</English>
@@ -3085,18 +2981,6 @@
         </Key>
         <Key ID="STR_KAT_Pharma_EACA_DescShort">
             <English>Stitches banadaged and clotted wounds</English>
-            <Czech>Podporuje tvorbu sraženin</Czech>
-            <Italian>Favorisce la formazione di coaguli</Italian>
-            <French>Favorise la formation de caillots</French>
-            <Korean>혈전 형성을 촉진합니다.</Korean>
-            <German>Fördert die Gerinnungsbildung</German>
-            <Chinesesimp>促进凝块形成</Chinesesimp>
-            <Polish>Wspomaga powstawanie skrzepów</Polish>
-            <Japanese>血液凝固を促進し、出血を抑えます</Japanese>
-            <Spanish>Favorece la coagulación</Spanish>
-            <Portuguese>Favorece a coagulação</Portuguese>
-            <Finnish>Edistää hyytymien muodostumista</Finnish>
-            <Russian>Способствует образованию тромбов</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Inspect_Catheter">
             <English>Inspect Catheter</English>
