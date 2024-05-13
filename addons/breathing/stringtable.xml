@@ -166,7 +166,7 @@
             <Finnish>Irrota pulssioksimetri</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Desc_Short">
-            <English>Pulse Oximeter</English>
+            <English>Reads pulse rate and Spo2</English>
             <German>Pulsoximeter</German>
             <Polish>Pulsoksymetr</Polish>
             <Spanish>Oxímetro de pulso</Spanish>
@@ -300,7 +300,7 @@
             <Finnish>Rintatiiviste</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_chestseal_desc">
-            <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
+            <English>Used to treat pneumothorax from a deep penetrating injury</English>
             <German>Das Chest Seal ist so konzipiert, dass offene Brustwunden in den meisten Fällen behandelt, versiegelt und sie wieder verschlossen werden.</German>
             <Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach. Leczy odmę opłucnową.</Polish>
             <Spanish>El sello torácico es un parche diseñado para tratar y sellar heridas abiertas en el pecho bajo la mayoría de circustancias.</Spanish>
@@ -479,7 +479,7 @@
             <Finnish>1x hemopneumotoraksi</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_display">
-            <English>Needle Decompression</English>
+            <English>Needle Decompression(AAT Kit)</English>
             <German>Nadel Dekompression</German>
             <Spanish>Descompresión con aguja</Spanish>
             <Polish>Igła dekompresyjna</Polish>
@@ -544,7 +544,7 @@
             <Finnish>AAT-laite</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_aatKit_desc">
-            <English>The Advanced Airway Treatment Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
+            <English>Used to needle decompress or drain fluid of a thoracic cavity</English>
             <German>Das erweiterte Atemwegsbehandlung-Kit ist ein Einweg-Kit zur Behandlung fortgeschrittener Atemwegserkrankungen wie Hämatopneumothorax</German>
             <Polish>"Zaawansowany zestaw do leczenia dróg oddechowych" to zestaw jednorazowego użytku przeznaczony do leczenia zaawansowanych chorób dróg oddechowych, takich jak krwiak opłucnej lub odmę prężną. Zawiera igłę do odbarczania oraz drenażu</Polish>
             <Spanish>El kit de tratamiento avanzado de las vías aéreas es un kit de un solo uso diseñado para tratar afecciones avanzadas de las vías respiratorias, como el hemotórax.</Spanish>
@@ -1758,7 +1758,7 @@
             <Russian>Портативный кислородный баллон (150Л)</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Desc_Short">
-            <English>Portable Oxygen Tank, containing 150L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
+            <English>Connects to BVM to further assist with breathing of patients</English>
             <Spanish>Bombona de oxigeno portátil, contiene 150L. Conectándolo a un Ambú aumenta la asistencia a la respiración.</Spanish>
             <French>Réservoir à oxygène portable, contenant 150L d'oxygène. Connectez le à un BVM pour assister la respiration de patients en état critique</French>
             <Korean>150L의 산소가 들어 있는 휴대용 산소 탱크. 인공호흡기에 연결하여 중환자의 호흡을 추가적으로 보조합니다.</Korean>
@@ -1786,7 +1786,7 @@
             <Russian>Портативный кислородный баллон (300Л)</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Desc_Short">
-            <English>Portable Oxygen Tank, containing 300L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
+            <English>Connects to BVM to further assist with breathing of patients</English>
             <Spanish>Bombona de oxigeno portátil, contiene 300L. Conectándolo a un Ambú aumenta la asistencia a la respiración.</Spanish>
             <French>Réservoir à oxygène portable, contenant 300L d'oxygène. Connectez le à un BVM pour assister la respiration de patients en état critique</French>
             <Korean>300L의 산소가 들어 있는 휴대용 산소 탱크. 인공호흡기에 연결하여 중환자의 호흡을 추가적으로 보조합니다.</Korean>

@@ -675,7 +675,7 @@
             <Finnish>Guedel-letkua</Finnish>
         </Key>
         <Key ID="STR_KAT_Airway_Guedel_Desc_Short">
-            <English>The Guedel Tube is used to maintain the airway</English>
+            <English>The Guedel Tube is used to manage airway obstruction</English>
             <German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
             <Polish>Rurka ustno-gardłowa zabezpiecza drogi oddechowe</Polish>
             <Spanish>La cánula de Guedel impide obstrucciones</Spanish>
@@ -699,7 +699,7 @@
             <German>ACCUVAC</German>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
-            <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
+            <English>ACCUVAC is used to clear airway occlusions</English>
             <German>Der ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
             <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
             <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado por una batería, permitiendo movilidad ante una emergencia médica.</Spanish>
@@ -737,7 +737,7 @@
             <German>%1 hat eine medizinische Absaugung mittels %2 durchgeführt</German>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
-            <English>Manual Suction Pump is a medical suction device for airway suction manually. This alternative to electrical devices.</English>
+            <English>Manual Suction Pump is used to clear airway occlusions(single use).Alternative to the ACCUVAC</English>
             <Japanese>手動式吸引器は、手動ポンプで動作する気道吸引の為の医療用吸引装置です。これは電気駆動の装置を代替することが可能です。</Japanese>
             <Finnish>Manuaalinen imupumppu on lääketieteellinen imulaite hengitysteiden manuaaliseen imemiseen. tämä on vaihtoehto sähkölaitteille</Finnish>
             <Russian>Всасывание из дыхательных путей (ручное)</Russian>

@@ -400,7 +400,7 @@
             <Finnish>Työnnä amiodaria</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Lidocaine_DescShort">
-            <English>Used to combat cardiac arrest</English>
+            <English>Used to combat cardiac arrest, local anesthetic</English>
             <German>Einsatz zur Bekämpfung des Herzstillstands</German>
             <Polish>Używany do zwalczania zatrzymania akcji serca</Polish>
             <French>Antiarythmique utilisé pour combattre les formes choquables arrêt cardiaque.</French>
@@ -451,7 +451,7 @@
             <Finnish>Paina lidokaiinia</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_DescShort">
-            <English>Used to treat chemical exposure</English>
+            <English>Used to treat bradycardia, chemical exposure</English>
             <German>Zur Behandlung von Bradykardie</German>
             <Polish>Używany do zwalczania bradykardii</Polish>
             <French>Utiliser pour traiter une bradycardie</French>
@@ -553,7 +553,7 @@
             <Finnish>Paina TXA</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Norep_DescShort">
-            <English>Used to raise blood pressure</English>
+            <English>Slows bleeding, decreases transfusion speed, raises blood pressure</English>
             <German>Wird zur Erhöhung des Blutdrucks verwendet</German>
             <Polish>Używana do podniesienia ciśnienia krwi</Polish>
             <French>Utilisé pour remonter la pression artérielle</French>
@@ -604,7 +604,7 @@
             <Finnish>Työnnä norepinefriiniä</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Phenyl_DescShort">
-            <English>Used to raise blood pressure</English>
+            <English>Slows bleeding, decreases transfusion speed, raises blood pressure</English>
             <German>Wird zur Erhöhung des Blutdrucks verwendet</German>
             <Polish>Używana do podniesienia ciśnienia krwi</Polish>
             <French>Utilisé pour remonter la pression artérielle</French>
@@ -675,7 +675,7 @@
             <Portuguese>Injetar Fenilefrina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Nitro_DescShort">
-            <English>Used to lower blood pressure</English>
+            <English>Increases transfusions speed, increases bleeding, lowers blood pressure</English>
             <German>Zur Senkung des Blutdrucks</German>
             <Polish>Używana do obniżenia ciśnienia krwi</Polish>
             <French>Utilisé pour diminuer la pression artérielle</French>
@@ -1726,7 +1726,7 @@
             <Russian>Фентанил</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Fentanyl_DescShort">
-            <English>Suppress pain</English>
+            <English>Suppress severe pain</English>
             <Chinesesimp>用于抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
             <Czech>Potlačit bolest</Czech>
@@ -2888,7 +2888,7 @@
             <Russian>Капсула Первитина</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_DescShort">
-            <English>Performance enhancing drug</English>
+            <English>Performance enhancing drug.Supresses pain</English>
             <German>Leistungssteigerndes Medikament</German>
             <French>Drogue améliorant les performances</French>
             <Korean>운동능력 향상 약물</Korean>
@@ -3056,7 +3056,7 @@
             <Russian>Бутылка с Кофеином</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_DescShort">
-            <English>Keeps you awake</English>
+            <English>Stamina boost</English>
             <German>Hält dich wach</German>
             <French>Vous tient éveillé</French>
             <Japanese>眠気防止に役立つ</Japanese>
@@ -3084,7 +3084,7 @@
             <Russian>Выпить Кофеин</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_EACA_DescShort">
-            <English>Encourages clot formation</English>
+            <English>Stitches banadaged and clotted wounds</English>
             <Czech>Podporuje tvorbu sraženin</Czech>
             <Italian>Favorisce la formazione di coaguli</Italian>
             <French>Favorise la formation de caillots</French>

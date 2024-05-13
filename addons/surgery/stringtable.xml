@@ -357,7 +357,7 @@
             <Russian>Втягивающее устройство</Russian>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_DescShort">
-            <English>Used to expand and expose fractures</English>
+            <English>Used to expose fractures</English>
             <Chinesesimp>用于扩大和暴露骨折创面</Chinesesimp>
             <Italian>Usato per espandere ed esporre fratture</Italian>
             <Czech>Slouží k roztahování ran a odhalování zlomenin</Czech>
@@ -537,7 +537,7 @@
             <Russian>Вакуумная повязка (NPWT)</Russian>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_DescShort">
-            <English>Used to completely dress and seal wounds</English>
+            <English>Used to completely bandage and stitch wounds</English>
             <Chinesesimp>用于完全包扎和密封伤口</Chinesesimp>
             <Italian>Usato per coprire e sigillare completamente le ferite</Italian>
             <Czech>Slouží k úplnému zavázání a utěsnění rány</Czech>
