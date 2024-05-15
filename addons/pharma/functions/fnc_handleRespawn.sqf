@@ -111,9 +111,9 @@ if (GVAR(coagulation)) then {
         if (_pulse < 20) exitWith {};
         if (_coagulationFactor == 0) exitWith {};
 
-        private _count = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
-
-        if (_count == 0) exitWith {
+        private _TXAcount = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
+        private _TXAAutocount = [_unit, "TXAAuto"] call ACEFUNC(medical_status,getMedicationCount);
+        if (_TXAcount == 0 && _TXAAutocount == 0) exitWith {
             {
                 _x params ["", "_bodyPart", "_amount", "_bleeding"];
 
@@ -125,7 +125,7 @@ if (GVAR(coagulation)) then {
             } forEach _openWounds;
         };
 
-        if (_count > 0) exitWith {
+        if (_TXAcount > 0 || _TXAAutocount > 0) exitWith {
             {
                 _x params ["", "_bodyPart", "_amount", "_bleeding"];
 
