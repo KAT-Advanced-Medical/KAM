@@ -238,8 +238,9 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class Atropine: EACA {
+    class Atropine: Morphine {
         displayName = CSTRING(Take_Atropine);
+        displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Atropine);
