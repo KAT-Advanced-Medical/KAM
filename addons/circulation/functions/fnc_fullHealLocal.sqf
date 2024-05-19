@@ -27,4 +27,7 @@ _patient setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 _patient setVariable [QGVAR(isPerformingCPR), false, true];
 _patient setVariable [QGVAR(OxygenationPeriod), 0, true];
 
-[_patient] call FUNC(updateInternalBleeding);
+_patient setVariable [QGVAR(ht), [], true];
+_patient setVariable [QGVAR(effusion), 0, true];
+
+[_patient, true] call FUNC(updateInternalBleeding);

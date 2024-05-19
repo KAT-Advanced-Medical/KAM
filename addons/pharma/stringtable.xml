@@ -197,7 +197,7 @@
             <Finnish>Kipulääkkeet</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Inject_Box_Painkillers">
-            <English>Push Painkillers</English>
+            <English>Give Painkillers</English>
             <Polish>Użyj leku przeciwbólowego</Polish>
             <Chinese>服用止痛藥</Chinese>
             <Chinesesimp>服用止痛药</Chinesesimp>
@@ -451,7 +451,7 @@
             <Finnish>Paina lidokaiinia</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_DescShort">
-            <English>Used to treat bradycardia</English>
+            <English>Used to treat chemical exposure</English>
             <German>Zur Behandlung von Bradykardie</German>
             <Polish>Używany do zwalczania bradykardii</Polish>
             <French>Utiliser pour traiter une bradycardie</French>
@@ -468,7 +468,7 @@
             <Finnish>Käytetään bradykardian hoitoon</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_Box_Display">
-            <English>Atropine</English>
+            <English>Atropine Autoinjector</English>
             <German>Atropin</German>
             <Polish>Atropina</Polish>
             <French>Atropine</French>
@@ -485,7 +485,7 @@
             <Finnish>Atropiini</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Atropine">
-            <English>Push Atropine</English>
+            <English>Inject Atropine</English>
             <German>Atropin verabreichen</German>
             <Polish>Wstrzyknij Atropinę</Polish>
             <French>Injecter Atropine</French>
@@ -653,6 +653,27 @@
             <Russian>Ввести Фенилэфрин</Russian>
             <Portuguese>Injetar Fenilefrina</Portuguese>
             <Finnish>Työnnä fenyyliefriiniä</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_PhenylAuto_Box_Display">
+            <English>Phenylephrine Autoinjector</English>
+            <Russian>Автоинъектор фенилэфрина</Russian>
+            <Spanish>Autoinyector de Fenilefrina</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Take_Phenyl_Auto">
+            <English>Inject Phenylephrine</English>
+            <German>Phenylephrin verabreichen</German>
+            <Polish>Wstrzyknij Fenylefrynę</Polish>
+            <French>Injecter Phényléphrine</French>
+            <Chinese>推注苯肾上腺素</Chinese>
+            <Chinesesimp>推注苯肾上腺素</Chinesesimp>
+            <Italian>Iniettare la fenilefrina</Italian>
+            <Spanish>Administrar Fenilefrina</Spanish>
+            <Korean>페닐에프린 투여</Korean>
+            <Turkish>Fenilefrin itin</Turkish>
+            <Czech>Aplikovat Fenylefrin</Czech>
+            <Japanese>フェニレフリンを注入</Japanese>
+            <Russian>Ввести Фенилэфрин</Russian>
+            <Portuguese>Injetar Fenilefrina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Nitro_DescShort">
             <English>Used to lower blood pressure</English>
@@ -1049,6 +1070,7 @@
             <German>Flüssigkeiten Erfordert eingefügtes IV/IO</German>
             <Japanese>輸液にIV/IO刺入を要求する</Japanese>
             <Russian>Требовать установки IV/IO</Russian>
+            <Spanish>Los Fluidos requieren que se inserte la IV/IO</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma. \nIf false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
@@ -1101,11 +1123,15 @@
             <English>Blood Drawing Require IV/IO</English>
             <Japanese>採血にIV/IO刺入を要求する</Japanese>
             <Russian>Забор крови требует IO/IV</Russian>
+            <German>Blutentnahme benötigt IV/IO</German>
+            <Spanish>La Extracción de Sangre Requiere la IV/IO</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
             <Japanese>デフォルトではfalseです。trueの場合、人から採血する前にIV/IOの刺入が必要になります。 \nfalseの場合は刺入無しで採血できます。</Japanese>
             <Russian>По умолчанию false. Если true, вам нужно будет сначала ввести IO/IV, прежде чем вы сможете взять кровь у кого-либо. \nесли false, вы можете забрать кровь без них</Russian>
+            <German>Steuert, ob eine IV/IO vorhanden sein muss, um Blut abnehmen zu könnnen./nStandard: falsch</German>
+            <Spanish>Falso por defecto. Si se habilita, necesitarás insertar primero la IV/IO para poder extraer sangre de alguien. \nSi falso, puedes extraer sangre sin ello.</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -2754,7 +2780,7 @@
             <Italian>Possibilità di ostruzione della IV senza prima aver svolto uno sciacquo salino</Italian>
             <French>Chance de blocage des IV dû à une administration intra-veineuse de médicaments sans rinçage à la solution saline</French>
             <Korean>식염수 주입 없이 약물 투여로 인한 IV 막힘 확률</Korean>
-            <German>Möglichkeit einer Verstopfung der IV durch Medikamentengabe ohne Kochsalzspülung</German>
+            <German>Möglichkeit einer Blockade der IV durch Medikamentengabe ohne Kochsalzspülung</German>
             <Chinesesimp>由于没有盐水协助的药物注射导致 IV 阻塞的机会</Chinesesimp>
             <Japanese>生理食塩水を流さずに薬を注入することによるIV閉塞の可能性</Japanese>
             <Spanish>Probabilidad de que una IV se bloquée por administrar fármacos sin enjuagar con salino</Spanish>
@@ -3214,6 +3240,16 @@
             <Spanish>Permitir que ciertos medicamentos modifiquen la resistencia (fatiga convencional/avanzada) como efecto secundario</Spanish>
             <Finnish>Salli tiettyjen lääkkeiden muuttaa kestävyyttä (vanilja/edistynyt väsymys) sivuvaikutuksena</Finnish>
             <Russian>Позволяют определенным лекарствам изменять выносливость (ваниль/повышенная утомляемость) в качестве побочного эффекта</Russian>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma">
+            <English>EACA Clears Trauma</English>
+            <Russian>EACA устраняет травму</Russian>
+            <Spanish>EACA Elimina el Trauma</Spanish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma_Desc">
+            <English>Allows Trauma to be cleared by EACA in addition to stitching</English>
+            <Russian>Позволяет устранить травму с помощью EACA в дополнение к наложению швов</Russian>
+            <Spanish>Permite eliminar el Trauma mediante el EACA además de cosiendo</Spanish>
         </Key>
     </Package>
 </Project>
