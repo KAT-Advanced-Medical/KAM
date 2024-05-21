@@ -584,132 +584,132 @@
         <Key ID="STR_KAT_Surgery_Ultra_DescShort">
             <English>Handheld Ultrasound</English>
             <Russian>Портативный Ультразвук</Russian>
-            <Japanese>手持ち式超音波スキャナー</Japanese>
+            <Spanish>Ultrasonidos Portátil</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_DescUse">
             <English>Used to assess internal injuries</English>
             <Russian>Используется для оценки повреждений внутренних органов</Russian>
-            <Japanese>内損傷の評定に使用</Japanese>
+            <Spanish>Usado para comprobar heridas internas</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Use">
             <English>Conduct Ultrasound Assessment</English>
             <Russian>Провести ультразвуковое обследование</Russian>
-            <Japanese>超音波評定を実施</Japanese>
+            <Spanish>Realizar Comprobación de Ultrasonidos</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Action">
             <English>Assessing</English>
             <Russian>Оценка</Russian>
-            <Japanese>評定中</Japanese>
+            <Spanish>Comprobando</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway">
             <English>Airway Status: %1</English>
             <Russian>Дыхательные пути: %1</Russian>
-            <Japanese>気道の状態: %1</Japanese>
+            <Spanish>Estado de Vías Aéreas: %1</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic">
             <English>Lung Status: %1</English>
             <Russian>Лёгкие: %1</Russian>
-            <Japanese>肺の状態: %1</Japanese>
+            <Spanish>Estado de Pulmones: %1</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac">
             <English>Cardiac Status: %1</English>
             <Russian>Сердце: %1</Russian>
-            <Japanese>心臓の状態: %1</Japanese>
+            <Spanish>Estado Cardíaco: %1</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Normal">
             <English>Normal</English>
             <Russian>Стабильно</Russian>
-            <Japanese>正常</Japanese>
+            <Spanish>Normal</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Pneumothorax</English>
             <Russian>Пневмоторакс</Russian>
-            <Japanese>気胸</Japanese>
+            <Spanish>Pneumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Hemo">
             <English>Hemopneumothorax</English>
             <Russian>Гемоторакс</Russian>
-            <Japanese>血気胸</Japanese>
+            <Spanish>Hemopneumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Tension">
             <English>Tension Pneumothorax</English>
             <Russian>Напряженный пневмоторакс</Russian>
-            <Japanese>緊張性気胸</Japanese>
+            <Spanish>Tensión de Pneumotórax</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Shockable">
             <English>Arrest - Shockable</English>
             <Russian>Остановка - шоковая</Russian>
-            <Japanese>心停止 - ショック可能</Japanese>
+            <Spanish>Parada - Impactable</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Unshockable">
             <English>Arrest - Not Shockable</English>
             <Russian>Остановка - безшоковая</Russian>
-            <Japanese>心停止 - ショック不要</Japanese>
+            <Spanish>Parada - No Impactable</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Tamponade">
             <English>Tamponade</English>
             <Russian>Тампонада</Russian>
-            <Japanese>タンポナーデ</Japanese>
+            <Spanish>Taponado</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DescShort">
             <English>REBOA Unit</English>
             <Russian>REBOA</Russian>
-            <Japanese>REBOAユニット</Japanese>
+            <Spanish>Unidad REBOA</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DescUse">
             <English>Used to block the aorta and prevent bleeding below the heart</English>
             <Russian>Используется для блокирования аорты и предотвращения подкожного кровотечения</Russian>
-            <Japanese>大動脈を遮断し、心臓より下の出血を防ぐために使用される</Japanese>
+            <Spanish>Utilizada para bloquear la aorta y prevenir el sangrado debajo del corazón</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Use">
             <English>Place REBOA Unit</English>
             <Russian>Установить REBOA</Russian>
-            <Japanese>REBOAユニットを挿入</Japanese>
+            <Spanish>Colocar Unidad REBOA</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Action">
             <English>Placing</English>
             <Russian>Установка</Russian>
-            <Japanese>挿入中</Japanese>
+            <Spanish>Colocando</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Use">
             <English>Advance REBOA Unit</English>
             <Russian>Продвинуть REBOA</Russian>
-            <Japanese>REBOAユニットを奥へ送る</Japanese>
+            <Spanish>Avanzar Unidad REBOA</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Action">
             <English>Advancing</English>
             <Russian>Продвижение</Russian>
-            <Japanese>奥へと送っています</Japanese>
+            <Spanish>Avanzando</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Use">
             <English>Remove REBOA Unit</English>
             <Russian>Удалить REBOA</Russian>
-            <Japanese>REBOAユニットを抜去</Japanese>
+            <Spanish>Eliminar Unidad REBOA</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
             <English>Removing</English>
             <Russian>Удаление</Russian>
-            <Japanese>抜去中</Japanese>
+            <Spanish>Eliminando</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Status">
             <English>REBOA</English>
             <Russian>REBOA</Russian>
-            <Japanese>REBOA</Japanese>
+            <Spanish>REBOA</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Use">
             <English>Pericardial Tap</English>
             <Russian>Пункция перикарда</Russian>
-            <Japanese>心膜穿刺術</Japanese>
+            <Spanish>Pericardiocentesis</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Action">
             <English>Performing</English>
             <Russian>Выполнение</Russian>
-            <Japanese>施術中</Japanese>
+            <Spanish>Realizando</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Log">
             <English>%1 performed a pericardial tap</English>
             <Russian>% 1 выполнил пункцию перикарда</Russian>
-            <Japanese>%1 が心膜穿刺を施術</Japanese>
+            <Spanish>%1 realizó una pericardiocentesis</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>
@@ -1074,12 +1074,14 @@
             <German>Erforderliches medizinisches Training für den NPWT-Verband</German>
             <Japanese>NPWTの許可</Japanese>
             <Russian>Разрешить NPWT</Russian>
+            <Spanish>Permitir NPWT</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_NPWT_LOCATION">
             <English>Locations NPWT</English>
             <German>Ort für die benutzung eines NPWT-Verbandes</German>
             <Japanese>NPWTの可能な場所</Japanese>
             <Russian>Места NPWT</Russian>
+            <Spanish>Localizaciones para NPWT</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_LOCATION">
             <English>Locations Closed Reduction</English>
@@ -1281,6 +1283,7 @@
             <German>Vakuumverband (NPWT) Einstellungen</German>
             <Japanese>吸引被覆(NPWT)設定</Japanese>
             <Russian>Настройки вакуума для перевязки (NPWT)</Russian>
+            <Spanish>Opciones para Vendado de Vacío (NPWT)</Spanish>
         </Key>
         <Key ID="STR_KAT_Surgery_surgeryToolbox">
             <English>[KAM] Surgery Box</English>
