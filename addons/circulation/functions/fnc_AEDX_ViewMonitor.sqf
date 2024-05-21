@@ -93,7 +93,7 @@ GVAR(PulseRateReady) = true;
         if !(GVAR(AEDX_MonitorTarget) getVariable [QACEGVAR(medical,CPR_provider), objNull] isEqualTo objNull) then {
             _ekgDisplay = QPATHTOF(ui\ekg_cpr.paa);
         } else {
-            if !(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(heartRestart), false]) then {
+            if (!(GVAR(AEDX_MonitorTarget) getVariable [QGVAR(heartRestart), false]) && alive GVAR(AEDX_MonitorTarget)) then {
                 switch (GVAR(AEDX_MonitorTarget) getVariable [QGVAR(cardiacArrestType), 0]) do {
                     case 4: {_ekgDisplay = QPATHTOF(ui\ekg_vt.paa);};
                     case 3: {_ekgDisplay = QPATHTOF(ui\ekg_vf.paa);};

@@ -138,6 +138,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
+//Settable list for using Nasal Cannula per medical class
+[
+    QGVAR(medLvl_NasalCannula),
+    "LIST",
+    [LLSTRING(SETTING_Allow_NasalCannula),LLSTRING(SETTING_Allow_NasalCannula_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Settable action time for Nasal Cannula
+[
+    QGVAR(NasalCannula_time),
+    "SLIDER",
+    [LLSTRING(SETTING_Time_NasalCannula),LLSTRING(SETTING_Time_NasalCannula_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 10, 3, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 //Allow ChestSeal SelfTreatment
 [
     QGVAR(enable_selfChestseal),
@@ -428,6 +448,26 @@ PREP_RECOMPILE_END;
     [0, 100, 90, 1],
     true
 ] call CBA_Settings_fnc_init;
+
+// enable/disable etco2 and respiratory rate readouts
+[
+    QGVAR(Etco2_Enabled),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Enable_Etco2),LLSTRING(SETTING_Enable_Etco2_Desc)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// select units for etco2
+[
+    QGVAR(Etco2_Units),
+    "LIST",
+    LLSTRING(SETTING_Select_Etco2_Units),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1], ["mmHg", "kPa"], 0],
+    true
+] call CBA_settings_fnc_init;
 
 // Sets sound volume of stethoscope
 [

@@ -48,6 +48,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 900;
             timeTillMaxEffect = 30;
             maxDose = 4;
+            maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             viscosityChange = -10;
             opioidRelief = 1.2;
@@ -111,6 +112,7 @@ class ACE_ADDON(Medical_Treatment) {
             timeInSystem = 360;
             timeTillMaxEffect = 15;
             maxDose = 6;
+            maxDoseDeviation = 4;
             incompatibleMedication[] = {};
             viscosityChange = 25;
             alphaFactor = -0.3;
