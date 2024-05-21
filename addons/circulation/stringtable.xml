@@ -1783,7 +1783,6 @@
             <German>%1 hat die Blutgruppe der Erkennungsmarke überprüft: %2</German>
             <Japanese>%1 がドッグタグの血液型を確認: %2</Japanese>
             <Russian>%1 проверил жетоны, группа крови: %2</Russian>
-            <Spanish>%1 comprobó el grupo de sangre en la dogtag: %2</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -2053,7 +2052,6 @@
             <Russian>Разрешить применение подкладки AED во время СЛР</Russian>
             <Japanese>CPR中の除細動器パッド貼り付けの許可</Japanese>
             <German>Anbringung von AED Pads während laufender HLW zulassen</German>
-            <Spanish>Permitir la aplicación de parche AED durante la realización de RCP</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
@@ -2088,7 +2086,6 @@
             <Japanese>設置されたAED/Xを拾うのに必要な医療スキルのレベルを設定します。</Japanese>
             <Russian>Медицинский уровень, необходимый для приема/ взаимодействия с размещенной станцией AED/X</Russian>
             <German>Benötigter medizinischer Grad, um einen platzierte AED/X Station aufzunehmen </German>
-            <Spanish>Nivel médico requerido para recoger una estación AED/X puesta</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
@@ -2303,7 +2300,6 @@
             <Finnish>Elvytys alkoi</Finnish>
             <Russian>СЛР начата</Russian>
             <German>HLW begonnen</German>
-            <Spanish>RCP iniciada</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
@@ -2312,7 +2308,7 @@
             <Korean>심폐소생술 취소함</Korean>
             <German>HLW gestoppt</German>
             <Portuguese>RCP cancelada</Portuguese>
-            <Spanish>RCP cancelada</Spanish>
+            <Spanish>RCP cancelado</Spanish>
             <Finnish>Elvytys peruttu</Finnish>
             <Russian>СЛР отменена</Russian>
         </Key>
@@ -2865,29 +2861,17 @@
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance">
             <English>Chance for tamponade in penetrating wounds</English>
             <Russian>Вероятность тампонады при проникающих ранениях</Russian>
-            <Spanish>Probabilidad de taponamiento en heridas penetrantes</Spanish>
+            <Japanese>穿通創におけるタンポナーデの可能性</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeInterval">
             <English>Tamponade progression timer</English>
             <Russian>Таймер прогрессирования тампонады</Russian>
-            <Spanish>Temporizador de progreso de taponamiento</Spanish>
+            <Japanese>タンポナーデ進行タイマー</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance_deterioration">
             <English>Tamponade progression chance</English>
             <Russian>Вероятность прогрессирования тампонады</Russian>
-            <Spanish>Probabilidad de progresión de taponamiento</Spanish>
-        </Key>
-        <Key ID="STR_KAT_Circulation_VitalsMonitor_VMInactive_StatusLog_HasEtco2Monitor">
-            <English>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Breaths/min: %3</English>
-            <Japanese>AED-X: 心拍: %1 血圧: --/-- SpO2: --- ETCo2: %2 呼吸数/分: %3</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor">
-            <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Breaths/min: %6</English>
-            <Japanese>AED-X: 脈拍: %1 血圧: %2/%3 SpO2: %4 ETCo2: %5 呼吸数/分: %6</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog_HasEtco2Monitor">
-            <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Breaths/min: %6</English>
-            <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4 ETCo2: %5 呼吸数/分: %6</Japanese>
+            <Japanese>タンポナーデ進行確率</Japanese>
         </Key>
     </Package>
 </Project>
