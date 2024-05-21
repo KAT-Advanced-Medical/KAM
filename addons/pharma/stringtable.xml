@@ -658,6 +658,7 @@
             <English>Phenylephrine Autoinjector</English>
             <Russian>Автоинъектор фенилэфрина</Russian>
             <Spanish>Autoinyector de Fenilefrina</Spanish>
+            <Japanese>フェニレフリン自動注射器</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Phenyl_Auto">
             <English>Inject Phenylephrine</English>
@@ -671,7 +672,7 @@
             <Korean>페닐에프린 투여</Korean>
             <Turkish>Fenilefrin itin</Turkish>
             <Czech>Aplikovat Fenylefrin</Czech>
-            <Japanese>フェニレフリンを注入</Japanese>
+            <Japanese>フェニレフリンを注射</Japanese>
             <Russian>Ввести Фенилэфрин</Russian>
             <Portuguese>Injetar Fenilefrina</Portuguese>
         </Key>
@@ -3245,11 +3246,13 @@
             <English>EACA Clears Trauma</English>
             <Russian>EACA устраняет травму</Russian>
             <Spanish>EACA Elimina el Trauma</Spanish>
+            <Japanese>EACAによる外傷の除去</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma_Desc">
             <English>Allows Trauma to be cleared by EACA in addition to stitching</English>
             <Russian>Позволяет устранить травму с помощью EACA в дополнение к наложению швов</Russian>
             <Spanish>Permite eliminar el Trauma mediante el EACA además de cosiendo</Spanish>
+            <Japanese>EACAによる効果として縫合に加え、外傷の除去を可能にします。</Japanese>
         </Key>
     </Package>
 </Project>

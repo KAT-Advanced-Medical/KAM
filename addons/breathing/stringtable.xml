@@ -53,11 +53,13 @@
             <English>Cardiac arrest SpO2 value</English>
             <Russian>Значение SpO2 при остановке сердца</Russian>
             <Spanish>Valor de SpO2 de parada cardíaca</Spanish>
+            <Japanese>SpO2の心停止値</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive">
             <English>Activate cardiac arrest SpO2 value</English>
             <Russian>Активируйте значение SpO2 при остановке сердца</Russian>
             <Spanish>Activar parada cardíaca por valor de SpO2</Spanish>
+            <Japanese>SpO2の心停止値を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
@@ -1318,21 +1320,25 @@
             <English>Enable Pneumothorax Arrest</English>
             <Russian>Включить остановку сердца</Russian>
             <Spanish>Habilitar Parada por Pneumothorax</Spanish>
+            <Japanese>気胸による心停止を有効にする</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest_DESCRIPTION">
             <English>Enables a chance for cardiac arrest following pneumothorax</English>
             <Russian>Увеличивает вероятность остановки сердца после Пневмоторакса</Russian>
             <Spanish>Habilitar la probabilidad para parada cardíaca tras un pneumothorax</Spanish>
+            <Japanese>気胸発生に付随して心停止となる可能性を有効化します</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval">
             <English>Deteriorating pneumothorax arrest interval</English>
             <Russian>Ухудшение Пневмоторакса после остановки</Russian>
             <Spanish>Intervalo para paradapor deterioro pneumothorax</Spanish>
+            <Japanese>気胸による心停止への悪化の間隔</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not a pneumothorax will result in cardiac arrest</English>
             <Russian>После каждого перерыва будет оцениваться вероятность того, приведет ли Пневмоторакс к остановке сердца или нет</Russian>
             <Spanish>Despues de cada intervalo se sorteará una probabilidad de que el pneumotórax resulte en una parada cardíaca.</Spanish>
+            <Japanese>各間隔の後に気胸が心停止につながるかどうかがロールされます</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
