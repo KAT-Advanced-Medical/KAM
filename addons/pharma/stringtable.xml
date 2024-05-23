@@ -659,6 +659,7 @@
             <Russian>Автоинъектор фенилэфрина</Russian>
             <Spanish>Autoinyector de Fenilefrina</Spanish>
             <Japanese>フェニレフリン自動注射器</Japanese>
+            <French>Autoinjecteur de Phényléphrine</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Phenyl_Auto">
             <English>Inject Phenylephrine</English>
@@ -1072,6 +1073,7 @@
             <Japanese>輸液にIV/IO刺入を要求する</Japanese>
             <Russian>Требовать установки IV/IO</Russian>
             <Spanish>Los Fluidos requieren que se inserte la IV/IO</Spanish>
+            <French>Les fluides nécessitent une IV/IO insérée</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma. \nIf false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
@@ -1126,6 +1128,7 @@
             <Russian>Забор крови требует IO/IV</Russian>
             <German>Blutentnahme benötigt IV/IO</German>
             <Spanish>La Extracción de Sangre Requiere la IV/IO</Spanish>
+            <French>La prise de sang nécessite une IV/IO</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
@@ -1133,6 +1136,7 @@
             <Russian>По умолчанию false. Если true, вам нужно будет сначала ввести IO/IV, прежде чем вы сможете взять кровь у кого-либо. \nесли false, вы можете забрать кровь без них</Russian>
             <German>Steuert, ob eine IV/IO vorhanden sein muss, um Blut abnehmen zu könnnen./nStandard: falsch</German>
             <Spanish>Falso por defecto. Si se habilita, necesitarás insertar primero la IV/IO para poder extraer sangre de alguien. \nSi falso, puedes extraer sangre sin ello.</Spanish>
+            <French>Désactivé par défaut. Si activé, vous devrez d’abord insérer une IV/IO avant de pouvoir prélever du sang sur quelqu’un. \nSi désactivé, vous pouvez effectuer une prise de sang sans IV/IO.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -3247,12 +3251,14 @@
             <Russian>EACA устраняет травму</Russian>
             <Spanish>EACA Elimina el Trauma</Spanish>
             <Japanese>EACAによる外傷の除去</Japanese>
+            <French>L'EACA soigne les traumatismes</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma_Desc">
             <English>Allows Trauma to be cleared by EACA in addition to stitching</English>
             <Russian>Позволяет устранить травму с помощью EACA в дополнение к наложению швов</Russian>
             <Spanish>Permite eliminar el Trauma mediante el EACA además de cosiendo</Spanish>
             <Japanese>EACAによる効果として縫合に加え、外傷の除去を可能にします。</Japanese>
+            <French>Autorise le soin complet des traumatismes par l'EACA en plus de la suture</French>
         </Key>
     </Package>
 </Project>
