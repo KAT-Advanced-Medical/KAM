@@ -1549,7 +1549,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_Use_SurgicalKitFullBody">
             <English>Use Surgical Kit (Full Body)</English>
-            <Japanese>全身を縫合する</Japanese>
+            <Japanese>手術キットを使う (全身縫合)</Japanese>
             <Russian>Использвать хир.набор (на всё тело)</Russian>
             <Spanish>Usar Kit Quirúrgico (Cuerpo Completo)</Spanish>
             <French>Utiliser la trousse chirurgicale (Corps complet)</French>
@@ -1558,12 +1558,14 @@
             <English>Enable Full Body Stitching</English>
             <Russian>Включить сшивание всего тела</Russian>
             <Spanish>Habilitar Cosido en el Cuerpo Completo</Spanish>
+            <Japanese>全身縫合を有効化</Japanese>
             <French>Activer la suture complète du corps</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody_DESC">
             <English>Adds a full-body stitching option alongside the individual body part stitching, using ACE's established settings and values for consistency</English>
             <Russian>Добавляет возможность сшивания всего тела наряду с сшиванием отдельных частей тела, используя установленные ACE настройки и значения для обеспечения согласованности</Russian>
             <Spanish>Añade la opción de coser el cuerpo al completo junto al cosido de partes del cuerpo individuales, usando los valores establecidos en ACE y sus valores, para que sea consistente</Spanish>
+            <Japanese>身体部位毎に縫合するアクションに加え、ACEの設定値と同様の動きを保ったままの、全身を一括で縫合するオプションを追加します。</Japanese>
             <French>Ajoute une option de suture complète du corps à côté de la suture de chaque partie du corps, en utilisant les paramètres et les valeurs établis par ACE pour plus de cohérence</French>
         </Key>
     </Package>

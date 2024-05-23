@@ -2881,16 +2881,19 @@
             <English>Chance for tamponade in penetrating wounds</English>
             <Russian>Вероятность тампонады при проникающих ранениях</Russian>
             <Spanish>Probabilidad de taponamiento en heridas penetrantes</Spanish>
+            <Japanese>穿通創におけるタンポナーデの可能性</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeInterval">
             <English>Tamponade progression timer</English>
             <Russian>Таймер прогрессирования тампонады</Russian>
             <Spanish>Temporizador de progreso de taponamiento</Spanish>
+            <Japanese>タンポナーデ進行タイマー</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance_deterioration">
             <English>Tamponade progression chance</English>
             <Russian>Вероятность прогрессирования тампонады</Russian>
             <Spanish>Probabilidad de progresión de taponamiento</Spanish>
+            <Japanese>タンポナーデ進行確率</Japanese>
         </Key>
     </Package>
 </Project>
