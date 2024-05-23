@@ -143,36 +143,43 @@
             <English>Enable ETCo2 Monitoring</English>
             <Japanese>ETCo2モニタリングを有効化</Japanese>
             <French>Activer la mesure de ETCo2</French>
+            <Russian>Включить мониторинг ETCo2</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2_Desc">
             <English>Sets if medics can view a patient's ETCo2 and Respiratory Rate in the Vitals Monitor when a device capable of monitoring ETCo2 is connected</English>
             <Japanese>呼気終末二酸化炭素(ETCo2)をモニタリングできるデバイスが接続されている場合に、衛生兵がバイタルモニターで患者のETCo2と呼吸数を表示できるかどうかを設定します。</Japanese>
             <French>Définit si les médecins peuvent afficher l’ETCo2 et la fréquence respiratoire d’un patient dans le moniteur des signes vitaux lorsqu’un appareil capable de surveiller l’ETCo2 est connecté</French>
+            <Russian>Определяет, могут ли медики видеть ETCo2 пациента и частоту дыхания на мониторе жизненно важных показателей, когда подключено устройство, способное контролировать ETCo2</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units">
             <English>Desired units for ETCo2 Monitoring</English>
             <Japanese>ETCo2モニタリングに必要なユニット</Japanese>
             <French>Unités souhaitées pour la mesure de ETCo2</French>
+            <Russian>Необходимые устройства для мониторинга ETCo2</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
             <Japanese>鼻カニューレの許可</Japanese>
             <French>Autoriser la canule nasale</French>
+            <Russian>Разрешить использование Назальной Канюли</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula_Desc">
             <English>Training level required to insert a Nasal Cannula</English>
             <Japanese>鼻カニューレの挿入に必要な医療スキルのレベルを設定します。</Japanese>
             <French>Niveau d'entrainement nécessaire pour insérer la canule nasale</French>
+            <Russian>Уровень подготовки, необходимый для установки Назальной Канюли</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula">
             <English>Time for Nasal Cannula</English>
             <Japanese>鼻カニューレの所要時間</Japanese>
             <French>Temps d'insertion de la canule nasale</French>
+            <Russian>Время для введения Назальной Канюли</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula_Desc">
             <English>How long it will take to insert a Nasal Cannula</English>
             <Japanese>鼻カニューレの挿入にかかる時間を設定します</Japanese>
             <French>Durée nécessaire pour insérer la canule nasale</French>
+            <Russian>Сколько времени потребуется, чтобы вставить Назальную Канюлю</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -2441,21 +2448,25 @@
             <English>Nasal Cannula</English>
             <Japanese>鼻カニューレ</Japanese>
             <French>Canule nasale</French>
+            <Russian>Назальная Канюля</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Desc_Short">
             <English>The Nasal Cannula can be inserted into a patient's nostrils and connected to a vitals monitor to record a patient's ETCo2 level and respiratory rate.</English>
             <Japanese>鼻カニューレを患者の鼻孔に挿入し、バイタルモニターに接続することで、患者の呼気終末二酸化炭素(ETCo2)レベルと呼吸数を記録することができます。</Japanese>
             <French>La canule nasale peut être insérée dans les narines d'un patient et connectée à un appareil de mesure de constantes vitales pour mesurer le taux de ETCo2 et la fréquence respiratoire du patient.</French>
+            <Russian>Назальная канюля может быть вставлена в ноздри пациента и подключена к монитору жизненно важных функций для регистрации уровня ETCo2 у пациента и частоты дыхания.</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_Cancel_NasalCannula">
             <English>Remove Nasal Cannula</English>
             <Japanese>鼻カニューレを取り除く</Japanese>
             <French>Retirer la canule nasale</French>
+            <Russian>Удалить Назальную Канюлю</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_NasalCannula_Log">
             <English>%1 removed Nasal Cannula</English>
             <Japanese>鼻カニューレを取り除いた</Japanese>
             <French>%1 a retiré la canule nasale</French>
+            <Russian>%1 удалил Назальную Канюлю</Russian>
         </Key>
     </Package>
 </Project>
