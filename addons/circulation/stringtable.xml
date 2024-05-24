@@ -1859,21 +1859,8 @@
             <Finnish>Automaattinen ulkoinen defibrillaattori</Finnish>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_DESCRIPTION">
-            <English>Used to resuscitate patients</English>
-            <German>Stellt Puls wieder her</German>
-            <Chinese>用來甦醒玩家</Chinese>
-            <Chinesesimp>使用电击来唤醒玩家</Chinesesimp>
-            <Polish>Używany do reanimacji</Polish>
-            <Spanish>Úsalo para resucitar a un jugador</Spanish>
-            <Czech>Použít k resuscitaci hráče</Czech>
-            <Korean>의식불명의 부상자에게 사용됩니다</Korean>
-            <French>Utilisé pour ressusciter un joueur</French>
-            <Turkish>Oyuncuyu canlandırmak için kullanın</Turkish>
-            <Italian>Utilizzato per resuscitare un giocatore</Italian>
-            <Russian>Используйте, чтобы реанимировать игрока</Russian>
-            <Japanese>人を蘇生させるために使用される</Japanese>
-            <Portuguese>Use para ressuscitar jogadores</Portuguese>
-            <Finnish>Käytetään potilaiden elvyttämiseen.</Finnish>
+            <English>Used to combat cardiac arrest</English>
+            <Japanese>心停止の対処に使用される</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_Shock">
             <English>%1 administered shock (%2)</English>

@@ -357,19 +357,8 @@
             <Russian>Втягивающее устройство</Russian>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_DescShort">
-            <English>Used to expand and expose fractures</English>
-            <Chinesesimp>用于扩大和暴露骨折创面</Chinesesimp>
-            <Italian>Usato per espandere ed esporre fratture</Italian>
-            <Czech>Slouží k roztahování ran a odhalování zlomenin</Czech>
-            <French>Utilisé pour séparer les bords d'une plaie et exposer les factures</French>
-            <Korean>골절 확장 및 노출하는 데 사용됩니다.</Korean>
-            <German>Zur Erweiterung und Freilegung von Frakturen</German>
-            <Japanese>切開口を広げ骨折部を露出させるために使用される</Japanese>
-            <Spanish>Usado para expandir y exponer heridas</Spanish>
-            <Polish>Służy do rozszerzania i odsłonień złamań</Polish>
-            <Portuguese>Usado para expandir e expor fraturas</Portuguese>
-            <Finnish>Käytetään murtumien laajentamiseen ja paljastamiseen</Finnish>
-            <Russian>Используется для расширения и обнажения трещин</Russian>
+            <English>Used to expose fractures</English>
+            <Japanese>骨折箇所を露出させるために使用される</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_Retractor_Use">
             <English>Expose Fracture</English>
@@ -537,19 +526,8 @@
             <Russian>Вакуумная повязка (NPWT)</Russian>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_DescShort">
-            <English>Used to completely dress and seal wounds</English>
-            <Chinesesimp>用于完全包扎和密封伤口</Chinesesimp>
-            <Italian>Usato per coprire e sigillare completamente le ferite</Italian>
-            <Czech>Slouží k úplnému zavázání a utěsnění rány</Czech>
-            <French>Utilisé pour panser et sceller compètement les plaies</French>
-            <Korean>상처를 완전히 치료하고 봉합하는 데 사용됩니다</Korean>
-            <German>Zum vollständigen Verbinden und Abdichten von Wunden</German>
-            <Japanese>傷を完全に包んで密封する陰圧閉鎖療法のために使用される</Japanese>
-            <Spanish>Usado para vendar y sellar heridas completamente</Spanish>
-            <Polish>Używany do całkowitego uzdrowienia ran</Polish>
-            <Portuguese>Usado para enfaixar e selar feridas completamente</Portuguese>
-            <Finnish>Käytetään haavojen täydelliseen pukemiseen ja sulkemiseen</Finnish>
-            <Russian>Используется для полной перевязки и герметизации ран</Russian>
+            <English>Used to completely bandage and stitch wounds</English>
+            <Japanese>傷口を覆い、綴じるために使用される</Japanese>
         </Key>
         <Key ID="STR_KAT_Surgery_Vacuum_Use">
             <English>Apply Vacuum Dressing</English>

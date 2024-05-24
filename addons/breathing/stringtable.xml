@@ -234,6 +234,10 @@
             <Portuguese>Oxímetro de Pulso</Portuguese>
             <Finnish>Pulssioksimetri</Finnish>
         </Key>
+        <Key ID="STR_KAT_Breathing_Pulseoximeter_Desc_Short">
+            <English>Reads pulse rate and Spo2</English>
+            <Japanese>脈拍数と血中酸素飽和度(SpO2)を読み取れる</Japanese>
+        </Key>
         <Key ID="STR_KAT_Breathing_placing">
             <English>Placing</English>
             <German>Anlegen</German>
@@ -352,21 +356,8 @@
             <Finnish>Rintatiiviste</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_chestseal_desc">
-            <English>Chest Seal is engineered to treat, seal, and reseal open chest wounds under most circumstances.</English>
-            <German>Das Chest Seal ist so konzipiert, dass offene Brustwunden in den meisten Fällen behandelt, versiegelt und sie wieder verschlossen werden.</German>
-            <Polish>Chest Seal służy do leczenia, tamowania i zamykania ran klatki piersiowej w każdych warunkach. Leczy odmę opłucnową.</Polish>
-            <Spanish>El sello torácico es un parche diseñado para tratar y sellar heridas abiertas en el pecho bajo la mayoría de circustancias.</Spanish>
-            <Chinese>臨時氣胸密封貼在大多數情況下用途於治癒、密封或者二度密封因為胸腔受傷破裂導致的氣胸</Chinese>
-            <Chinesesimp>临时气胸密封贴用于治疗,密封或二次密封因胸腔破损导致的气胸</Chinesesimp>
-            <Czech>Hrudní Chlopeň je navržena pro léčení, zakrytí a uzavření otevřených ran na hrudníku ve většině situací.</Czech>
-            <Korean>체스트 씰은 대부분의 상황에서 흉부 개방 상처를 치료, 봉인 및 재봉인하도록 설계되었습니다.</Korean>
-            <French>Le pansement thoracique est conçu pour traiter et refermer une blessure thoracique dans la majorité des cas</French>
-            <Turkish>Chest Seal, çoğu durumda açık göğüs yaralarını tedavi etmek, kapatmak ve yeniden kapatmak için tasarlanmıştır.</Turkish>
-            <Italian>Il Chest Seal è progettato per trattare, sigillare e risigillare ferite aperte al torace nella maggior parte delle circostanze</Italian>
-            <Russian>Оклюзивный пластырь разработан для лечения, герметизации и повторной герметизации открытых ран грудной клетки в большинстве случаев.</Russian>
-            <Japanese>チェストシールはほとんどの状況下で、胸部への穿通創の閉塞と開放による治療ができるように設計されています。</Japanese>
-            <Portuguese>O Selo de Tórax é projetado para tratar, selar e resselar feridas abertas no peito na maioria das circunstâncias.</Portuguese>
-            <Finnish>Rintatiiviste on suunniteltu käsittelemään, tiivistämään ja uudelleensulkemaan avoimia rintahaavoja useimmissa olosuhteissa</Finnish>
+            <English>Used to treat pneumothorax from a deep penetrating injury</English>
+            <Japanese>チェストシールは穿通創による気胸の治療に使用される</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_ALLOW_PULSEOXIMETER">
             <English>Allow Pulseoximeter</English>
@@ -531,35 +522,22 @@
             <Finnish>1x hemopneumotoraksi</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_display">
-            <English>Needle Decompression</English>
-            <German>Nadel Dekompression</German>
-            <Spanish>Descompresión con aguja</Spanish>
-            <Polish>Igła dekompresyjna</Polish>
-            <Chinese>针减压</Chinese>
-            <Chinesesimp>胸腔穿刺减压</Chinesesimp>
-            <Czech>Dekompresní Jehla</Czech>
-            <Korean>바늘 감압</Korean>
-            <French>Aiguille de décompression</French>
-            <Turkish>İğne Dekompresyonu</Turkish>
-            <Italian>Decompressione con ago</Italian>
-            <Russian>Декомпрессия иглы</Russian>
-            <Japanese>胸腔穿刺減圧</Japanese>
-            <Portuguese>Descompressão com Agulha</Portuguese>
-            <Finnish>Neulan dekompressio</Finnish>
+            <English>Finger Thoracostomy</English>
+            <Japanese>用指胸腔造瘻術</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothoraxNCDKit_display">
-            <English>Needle Decompression (NCD Kit)</English>
-            <German>Nadel Dekompression (NDK Kit)</German>
-            <Spanish>Descomprensión con aguja (Kit NCD)</Spanish>
-            <Polish>Igła dekompresyjna (NCD Kit)</Polish>
-            <Japanese>胸腔穿刺減圧 (NCDキット)</Japanese>
-            <Czech>Dekompresní Jehla (NCD Kit)</Czech>
-            <French>Aiguille de décompression (NCD kit)</French>
+            <English>Needle Decompression</English>
+            <German>Nadel Dekompression</German>
+            <Spanish>Descomprensión con aguja</Spanish>
+            <Polish>Igła dekompresyjna</Polish>
+            <Japanese>胸腔穿刺減圧</Japanese>
+            <Czech>Dekompresní Jehla</Czech>
+            <French>Aiguille de décompression</French>
             <Korean>바늘 감압(NCD 키트)</Korean>
-            <Italian>Decompressione con ago (NCD Kit)</Italian>
-            <Portuguese>Descompressão com Agulha (Kit NCD)</Portuguese>
-            <Finnish>Neulan dekompressio (NCD Kit)</Finnish>
-            <Russian>Декомпрессионная игла (NCD Набор)</Russian>
+            <Italian>Decompressione con ago</Italian>
+            <Portuguese>Descompressão com Agulha</Portuguese>
+            <Finnish>Neulan dekompressio</Finnish>
+            <Russian>Декомпрессионная игла</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_mm">
             <English>1x Tension Pneumothorax</English>
@@ -596,21 +574,8 @@
             <Finnish>AAT-laite</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_aatKit_desc">
-            <English>The Advanced Airway Treatment Kit is a single use kit designed to treat advanced airway conditions, like hemopneumothorax</English>
-            <German>Das erweiterte Atemwegsbehandlung-Kit ist ein Einweg-Kit zur Behandlung fortgeschrittener Atemwegserkrankungen wie Hämatopneumothorax</German>
-            <Polish>"Zaawansowany zestaw do leczenia dróg oddechowych" to zestaw jednorazowego użytku przeznaczony do leczenia zaawansowanych chorób dróg oddechowych, takich jak krwiak opłucnej lub odmę prężną. Zawiera igłę do odbarczania oraz drenażu</Polish>
-            <Spanish>El kit de tratamiento avanzado de las vías aéreas es un kit de un solo uso diseñado para tratar afecciones avanzadas de las vías respiratorias, como el hemotórax.</Spanish>
-            <Chinese>高級氣道治療套件是一次性使用的套件，用於治療氣道血氣胸等高級氣道疾病</Chinese>
-            <Chinesesimp>AAT Kit即高级气道治疗套件,用于处理与气胸相关问题</Chinesesimp>
-            <Czech>AAT Sada je navržena pro ošetření hemotoraxu a tenzního pneumotoraxu. Jedná se o jednorázový předmět.</Czech>
-            <Korean>AAT 키트(Advanced Airway Treatment Kit)는 혈기흉 같은 고급기도이상을 치료하도록 설계된 일회용 키트입니다.</Korean>
-            <French>Le Kit de Traitement médical d’urgence des voies aériennes est un kit à usage unique, conçu pour traiter les blessures urgentes des voies aériennes comme des hémo-pneumothorax.</French>
-            <Turkish>Gelişmiş Hava Yolu Tedavi Kiti, hemopnömotoraks gibi gelişmiş hava yolu koşullarını tedavi etmek için tasarlanmış tek kullanımlık bir kittir.</Turkish>
-            <Italian>Il kit per il Trattamento Avanzato delle vie Aeree è un kit ad uso singolo per il trattamento avanzato di condizioni alle vie aeree, come l'emopneumotorace</Italian>
-            <Russian>Набор для неотложной медицинской помощи дыхательным путям - это одноразовый набор, предназначенный для лечения неотложных травм дыхательных путей, таких как гемопневмоторакс.</Russian>
-            <Japanese>AAT キット (Advanced Airway Treatment, 高度気道治療)は、血気胸などの重度な呼吸器症状を治療するために設計された使い捨てキットです。</Japanese>
-            <Portuguese>O AAT é um kit de uso único projetado para tratar problemas avançados de vias aéreas, como o hemotórax.</Portuguese>
-            <Finnish>AAT-laite on kertakäyttöinen työkalu, joka on suunniteltu tappavien hengitystiesairauksien, kuten hemopneumotoraksin, hoitoon</Finnish>
+            <English>Used to decompress or drain fluid of the thoracic cavity</English>
+            <Japanese>胸腔の減圧や胸腔内の液体を排出するために使用される</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_ncdKit_display">
             <English>NCD Kit</English>
@@ -1822,20 +1787,10 @@
             <Finnish>Kannettava happisäiliö (150L)</Finnish>
             <Russian>Портативный кислородный баллон (150Л)</Russian>
         </Key>
-        <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Desc_Short">
-            <English>Portable Oxygen Tank, containing 150L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
-            <Spanish>Bombona de oxigeno portátil, contiene 150L. Conectándolo a un Ambú aumenta la asistencia a la respiración.</Spanish>
-            <French>Réservoir à oxygène portable, contenant 150L d'oxygène. Connectez le à un BVM pour assister la respiration de patients en état critique</French>
-            <Korean>150L의 산소가 들어 있는 휴대용 산소 탱크. 인공호흡기에 연결하여 중환자의 호흡을 추가적으로 보조합니다.</Korean>
-            <Polish>Przenośna butla z tlenem, zawiera 150L tlenu. Może zostać podłączona do worka samorozprężalnego w celu resuscytacji tlenowej</Polish>
-            <Japanese>150Lの酸素が入った携帯酸素ボンベ。BVMに接続し重篤患者の呼吸補助に使用。</Japanese>
-            <German>Der tragbare Sauerstofftank enthält 150L Sauerstoff. Er ist dazu ausgelegt, an die BVM angeschlossen zu werden und bei der Beatmung zu helfen.</German>
-            <Czech>Přenosná Kyslíková Lahev, obsahuje 150L kyslíku. Připojením k RV lze zajistit dýchání pacientům v kritickém stavu.</Czech>
-            <Italian>Bombola portatile d'ossigeno contenente 150 litri di ossigeno. Connettiti alla maschera ambu per assistere ulteriormente la respirazione dei pazienti critici.</Italian>
-            <Portuguese>Cilindro Portátil de Oxigênio, contendo 150L de oxigênio. Conecte ao BVM para auxiliar na respiração de pacientes críticos.</Portuguese>
-            <Finnish>Kannettava happisäiliö, joka sisältää 150 litraa happea. Yhdistä BVM:ään auttaaksesi kriittisten potilaiden hengittämisessä.</Finnish>
-            <Russian>Портативный кислородный баллон, содержащий 150 литров кислорода. Подключите к BVM для дальнейшего облегчения дыхания пациентов в критическом состоянии.</Russian>
-        </Key>
+        <Key ID="STR_KAT_Breathing_PortableOxygenTank_Desc_Short">
+            <English>Connects to BVM to further assist with breathing of patients</English>
+            <Japanese>BVMに接続することで患者の呼吸補助を促進します</Japanese>
+</Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Display">
             <English>Portable Oxygen Tank (300L)</English>
             <Spanish>Bombona de oxigeno portátil (300L)</Spanish>
@@ -1849,20 +1804,6 @@
             <Portuguese>Cilindro Portátil de Oxigênio (300L)</Portuguese>
             <Finnish>Kannettava happisäiliö (300L)</Finnish>
             <Russian>Портативный кислородный баллон (300Л)</Russian>
-        </Key>
-        <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Desc_Short">
-            <English>Portable Oxygen Tank, containing 300L of oxygen. Connect to BVM to further assist with breathing of critical patients.</English>
-            <Spanish>Bombona de oxigeno portátil, contiene 300L. Conectándolo a un Ambú aumenta la asistencia a la respiración.</Spanish>
-            <French>Réservoir à oxygène portable, contenant 300L d'oxygène. Connectez le à un BVM pour assister la respiration de patients en état critique</French>
-            <Korean>300L의 산소가 들어 있는 휴대용 산소 탱크. 인공호흡기에 연결하여 중환자의 호흡을 추가적으로 보조합니다.</Korean>
-            <Polish>Przenośna butla z tlenem, zawiera 300L tlenu. Może zostać podłączona do worka samorozprężalnego w celu resuscytacji tlenowej</Polish>
-            <Japanese>150Lの酸素が入った携帯酸素ボンベ。BVMに接続し重篤患者の呼吸補助に使用。</Japanese>
-            <German>Der tragbare Sauerstofftank enthält 300L Sauerstoff. Er ist dazu ausgelegt, an die BVM angeschlossen zu werden und bei der Beatmung zu helfen.</German>
-            <Czech>Přenosná Kyslíková Lahev, obsahuje 300L kyslíku. Připojením k RV lze zajistit dýchání pacientům v kritickém stavu.</Czech>
-            <Italian>Bombola portatile d'ossigeno contenente 300 litri di ossigeno. Connettiti alla maschera ambu per assistere ulteriormente la respirazione dei pazienti critici.</Italian>
-            <Portuguese>Cilindro Portátil de Oxigênio, contendo 300L de oxigênio. Conecte ao BVM para auxiliar na respiração de pacientes críticos.</Portuguese>
-            <Finnish>Kannettava happisäiliö, joka sisältää 300 litraa happea. Yhdistä BVM:ään auttaaksesi kriittisten potilaiden hengittämisessä.</Finnish>
-            <Russian>Портативный кислородный баллон, содержащий 300 литров кислорода. Подключите к BVM для дальнейшего облегчения дыхания пациентов в критическом состоянии.</Russian>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
             <English>Empty Portable Oxygen Tank (150L)</English>
