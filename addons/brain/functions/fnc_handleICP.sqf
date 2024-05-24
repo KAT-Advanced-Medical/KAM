@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: apo_tle
- * Handles increasing/decreasing intercranial pressure.
+ * Handles increasing/decreasing intracranial pressure.
  *
  * Arguments:
  * 0: The Unit <OBJECT>
@@ -14,6 +14,11 @@
  *
  * Public: No
  */
+
+// concussion 0: no concussion
+// concussion 1: grade 1 concussion, no loss of consciousness
+// concussion 2: grade 2 concussion, immediate or delayed LOC
+// concussion 3: grade 3 concussion, extended and seizures
 
  params ["_unit"];
 
@@ -34,44 +39,41 @@ if (!local _unit) then {
 
 	//todo post processing
 
-	private _icp = _unit getVariable [QGVAR(icp),15];
+	private _icp = _unit getVariable [QGVAR(icp),0];
 	private _pr =_unit getVariable [QACEGVAR(medical,heartRate),0];
-	private _bp = _unit getVariable [QGVAR(StoredBloodPressure), [0,0]];
 
 	private _concussion = _unit getVariable [QGVAR(concussion),0];
 
 	//check for lethal ICP 
-	if ((_icp > 35) && !(_unit getVariable [QACEGVAR(medical,deathblocked), false])) exitWith {
+	if ((_icp >= 1000) && !(_unit getVariable [QACEGVAR(medical,deathblocked), false])) exitWith {
 		[_unit, "terminal_icp_death"] call ACEFUNC(medical_status,setDead);
         _unit setVariable [QGVAR(handleICP), false];
         [_handle] call CBA_fnc_removePerFrameHandler;
 	};
 
 	private _icpChange = 0;
-	if (_concussion isEqualTo 0) then { // no concussion
-		if (bp >= 80 && bp <= 160) then { //bp between 80 and 160
-			_icpChange = -0.1;
+	private _output = 0;
+	switch _concussion do {
+		case 0: {
+			// returning to original vitals
+			_output = 0 max _output;
+		};
+		case 1: {
+			// mild concussion starts 100 and rises to ~350
+			// todo faster rising ICP for higher blood pressure
+			_output = 100 max _output; // if ICP is below 100 then it'll be brought up
+		};
+		case 2: {
+			// grade 2 concussion starts 200 and rises to 400-600
+		};
+		case 3: {
+			// severe concussion starts 350 and rises to 1000 
 		};
 	};
-	if (_concussion isEqualTo 1) then { //mild concussion
-		if (bp >= 80 && bp <= 160) then { //bp between 80 and 160
-			_icpChange = 0.05;
-		} else {
-			_icpChange = 0.1;
-		};
-	};
-	if (_concussion isEqualTo 2) then { //severe concussion
-		if (bp >= 80 && bp <= 160) then { //bp between 80 and 160
-			_icpChange = 0.1;
-		} else {
-			_icpChange = 0.15;
-		};
-	};
+
+	//todo value floors (prevent decreasing further without proper treatment)
 
 	//todo multipliers
 
-	private _output = _icp + _icpChange;
-	_output = 15 max _output;
-
 	_unit setVariable [QGVAR(icp), _output, true];
-}, 3, [_unit]] call CBA_fnc_addPerFrameHandler;
+}, 15, [_unit]] call CBA_fnc_addPerFrameHandler; //todo make a setting
