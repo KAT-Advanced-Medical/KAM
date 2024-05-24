@@ -288,7 +288,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
             <English>Used to manage moderate pain</English>
-            <Japanese>中度の痛みの対処に使用される</Japanese>
+            <Japanese>中程度の痛みを対処するために使用される</Japanese>
             <French>Utilisé pour traiter les douleurs modérées</French>
             <Korean>중간 정도의 통증 관리에 사용됩니다</Korean>
             <German>Wird zur Behandlung mäßiger Schmerzen eingesetzt</German>
@@ -1625,7 +1625,7 @@
             <Russian>Кетамин</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Ketamine_DescShort">
-            <English>Suppress pain</English>
+            <English>>Used to suppress pain</English>
             <Chinesesimp>用于抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
             <Czech>Potlačit bolest</Czech>
@@ -1633,7 +1633,7 @@
             <Polish>Zwalcza ból</Polish>
             <Korean>고통 억제</Korean>
             <German>Unterdrückt Schmerzen</German>
-            <Japanese>痛みを抑える</Japanese>
+            <Japanese>痛みを抑えるために使用される</Japanese>
             <Spanish>Suprime el dolor</Spanish>
             <Portuguese>Suprime a dor</Portuguese>
             <Finnish>Tukahduttaa kipua</Finnish>
@@ -1670,8 +1670,8 @@
             <Russian>Фентанил</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Fentanyl_DescShort">
-            <English>Suppress severe pain</English>
-            <Japanese>ひどい痛みを抑える</Japanese>
+            <English>Used to suppress severe pain</English>
+            <Japanese>ひどい痛みを抑えるために使用される</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
@@ -1704,7 +1704,7 @@
             <Russian>Налбуфин</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Nalbuphine_DescShort">
-            <English>Suppress pain</English>
+            <English>Used to suppress pain</English>
             <Chinesesimp>用于抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
             <Czech>Potlačit bolest</Czech>
@@ -1712,7 +1712,7 @@
             <Polish>Zwalcza ból</Polish>
             <Korean>고통 억제</Korean>
             <German>Unterdrückt Schmerzen</German>
-            <Japanese>痛みを抑える</Japanese>
+            <Japanese>痛みを抑えるために使用される</Japanese>
             <Spanish>Suprime el dolor</Spanish>
             <Portuguese>Suprime a dor</Portuguese>
             <Finnish>Tukahduttaa kipua</Finnish>
