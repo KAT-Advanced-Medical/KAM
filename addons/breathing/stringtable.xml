@@ -1787,10 +1787,6 @@
             <Finnish>Kannettava happisäiliö (150L)</Finnish>
             <Russian>Портативный кислородный баллон (150Л)</Russian>
         </Key>
-        <Key ID="STR_KAT_Breathing_PortableOxygenTank_Desc_Short">
-            <English>Connects to BVM to further assist with breathing of patients</English>
-            <Japanese>BVMに接続することで患者の呼吸補助を促進します</Japanese>
-        </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Display">
             <English>Portable Oxygen Tank (300L)</English>
             <Spanish>Bombona de oxigeno portátil (300L)</Spanish>
@@ -1804,6 +1800,10 @@
             <Portuguese>Cilindro Portátil de Oxigênio (300L)</Portuguese>
             <Finnish>Kannettava happisäiliö (300L)</Finnish>
             <Russian>Портативный кислородный баллон (300Л)</Russian>
+        </Key>
+        <Key ID="STR_KAT_Breathing_PortableOxygenTank_Desc_Short">
+            <English>Connects to BVM to further assist with breathing of patients</English>
+            <Japanese>BVMに接続することで患者の呼吸補助を促進します</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_150_Empty_Display">
             <English>Empty Portable Oxygen Tank (150L)</English>
