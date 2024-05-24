@@ -526,14 +526,6 @@
             <Portuguese>Injetar TXA</Portuguese>
             <Finnish>Paina TXA</Finnish>
         </Key>
-        <Key ID="STR_KAT_Pharma_TXAAuto_Box_Display">
-            <English>TXA Autoinjector</English>
-            <Japanese>TXA自動注射器</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Take_TXAAuto">
-            <English>Inject TXA</English>
-            <Japanese>TXAを注射</Japanese>
-        </Key>
         <Key ID="STR_KAT_Pharma_Norep_DescShort">
             <English>Slows bleeding, decreases transfusion speed, raises blood pressure</English>
             <Japanese>出血を遅らせ、輸血速度を低下させ、血圧を上げます</Japanese>

@@ -217,7 +217,7 @@
             <Portuguese>Remover Oxímetro de Pulso</Portuguese>
             <Finnish>Irrota pulssioksimetri</Finnish>
         </Key>
-        <Key ID="STR_KAT_Breathing_Pulseoximeter_Desc_Short">
+        <Key ID="STR_KAT_Breathing_Pulseoximeter">
             <English>Pulse Oximeter</English>
             <German>Pulsoximeter</German>
             <Polish>Pulsoksymetr</Polish>
