@@ -1790,7 +1790,7 @@
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_Desc_Short">
             <English>Connects to BVM to further assist with breathing of patients</English>
             <Japanese>BVMに接続することで患者の呼吸補助を促進します</Japanese>
-</Key>
+        </Key>
         <Key ID="STR_KAT_Breathing_PortableOxygenTank_300_Display">
             <English>Portable Oxygen Tank (300L)</English>
             <Spanish>Bombona de oxigeno portátil (300L)</Spanish>
