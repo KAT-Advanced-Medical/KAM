@@ -23,7 +23,7 @@
  */
 
 params ["_args"];
-_args params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", "_createLitter", "_bandageEffectiveness", "_extraArgs"];
+_args params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", "_createLitter", "_extraArgs"];
 
 // Switch medic to end animation immediately
 private _endInAnim = _medic getVariable QACEGVAR(medical_treatment,endInAnim);
@@ -69,4 +69,4 @@ _args call _callbackSuccess;
 if (_createLitter) then { _args call ACEFUNC(medical_treatment,createLitter); };
 
 // Emit local event for medical API
-["ace_treatmentSucceded", [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _createLitter, _bandageEffectiveness, _extraArgs]] call CBA_fnc_localEvent;
+["ace_treatmentSucceded", [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _createLitter, _extraArgs]] call CBA_fnc_localEvent;
