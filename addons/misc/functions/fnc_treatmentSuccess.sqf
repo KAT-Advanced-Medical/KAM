@@ -12,7 +12,9 @@
  *   3: Treatment <STRING>
  *   4: Item User <OBJECT>
  *   5: Used Item <STRING>
- *   6: Extra Arguments <ARRAY>
+ *   6: Create Litter <BOOL>
+ *   7: Bandage Effectiveness <NUMBER>
+ *   8: Extra Arguments <ARRAY>
  *
  * Return Value:
  * None
@@ -21,7 +23,7 @@
  */
 
 params ["_args"];
-_args params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", "_bandageEffectiveness", ["_extraArgs",[]]];
+_args params ["_medic", "_patient", "_bodyPart", "_classname", "_itemUser", "_usedItem", "_createLitter", "_extraArgs"];
 
 // Switch medic to end animation immediately
 private _endInAnim = _medic getVariable QACEGVAR(medical_treatment,endInAnim);
@@ -64,7 +66,7 @@ GET_FUNCTION(_callbackSuccess,configFile >> QACEGVAR(medical_treatment,actions) 
 _args call _callbackSuccess;
 
 // Call litter creation handler
-_args call ACEFUNC(medical_treatment,createLitter);
+if (_createLitter) then { _args call ACEFUNC(medical_treatment,createLitter); };
 
 // Emit local event for medical API
-["ace_treatmentSucceded", [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _bandageEffectiveness, _extraArgs]] call CBA_fnc_localEvent;
+["ace_treatmentSucceded", [_medic, _patient, _bodyPart, _classname, _itemUser, _usedItem, _createLitter, _extraArgs]] call CBA_fnc_localEvent;
