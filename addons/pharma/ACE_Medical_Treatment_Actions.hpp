@@ -245,7 +245,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Atropine);
         treatmentTime = QGVAR(treatmentTime_Atropine);
-        treatmentTime = 5;
         condition = "";
         items[] = {"kat_atropine"};
         callbackSuccess = QFUNC(medication);
