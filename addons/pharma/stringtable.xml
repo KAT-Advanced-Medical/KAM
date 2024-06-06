@@ -3283,11 +3283,11 @@
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_TXA_DESC">
             <English>The time it takes for TXA to close a wound</English>
             <Japanese>TXAが創傷を塞ぐのに掛かる時間</Japanese>
-	    </Key>
+        </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coagulation">
             <English>Coagulation Settings</English>
             <Japanese>凝固設定</Japanese>
-	    </Key>
+        </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR">
             <English>Require Heart Rate</English>
             <Japanese>心拍を要求する</Japanese>
@@ -3527,7 +3527,7 @@
             <Chinesesimp>右腿</Chinesesimp>
             <Chinese>右腳</Chinese>
             <Turkish>Sağ Bacak</Turkish>
-	    </Key>
+        </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
             <English>Coag-Sense</English>
             <Japanese>Coag-Sense</Japanese>
@@ -3583,7 +3583,7 @@
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
             <English>Treatment time for measuring PT/INR</English>
             <Japanese>PT/INR測定の所要時間</Japanese>
-	        </Key>
+        </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA">
             <English>Allow Stacking</English>
             <Japanese>重複の許可</Japanese>
