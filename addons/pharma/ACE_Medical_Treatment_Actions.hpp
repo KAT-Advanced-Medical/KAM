@@ -384,7 +384,6 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(treatmentAdvanced_Dialysis));
         litter[] = {};
     };
-
     class CheckCoag: CheckPulse {
         displayName = CSTRING(CheckCoag_DisplayName);
         displayNameProgress = CSTRING(CheckCoag_DisplayNameProgress);
