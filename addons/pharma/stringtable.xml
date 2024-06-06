@@ -3260,7 +3260,6 @@
             <Japanese>EACAによる効果として縫合に加え、外傷の除去を可能にします。</Japanese>
             <French>Autorise le soin complet des traumatismes par l'EACA en plus de la suture</French>
         </Key>
-                </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA">
             <English>Allow Stacking</English>
             <Japanese>重複の許可</Japanese>
