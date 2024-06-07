@@ -112,7 +112,7 @@ class CfgWeapons {
     class kat_TXAAuto: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(TXAAuto_Box_Display);
-        picture = QPATHTOF(ui\icon_PhenylephrineAuto.paa);
+        picture = QPATHTOF(ui\icon_TXAAuto.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(TXA_DescShort);
         ACE_isMedicalItem = 1;
