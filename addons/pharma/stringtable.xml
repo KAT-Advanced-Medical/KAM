@@ -3265,7 +3265,7 @@
             <Japanese>重複の許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA_DESC">
-            <English>If enabled TXA will be stackable and doubble it's efficiency</English>
+            <English>If enabled TXA will be stackable and double it's efficiency</English>
             <Japanese>有効にすると、TXAの重複が可能になり、効率が2倍になる。</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_TXA">
@@ -3293,7 +3293,7 @@
             <Japanese>心拍を要求する</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR_DESC">
-            <English>Should coagulation reqire a heart rate above 20BPM? (Doing CPR will keep HR above 20BPM)</English>
+            <English>Should coagulation require a heart rate above 20BPM? (Doing CPR will keep HR above 20BPM)</English>
             <Japanese>凝固が作用するのに20BPM以上の心拍数を必要とさせます (CPRを行うことで心拍数は20BPM以上を保つことが出来ます)</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireBV">
@@ -3309,7 +3309,7 @@
             <Japanese>凝固因子</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_FactorCount_DESC">
-            <English>The ammount of coagulation factors that get set on unit spawn &amp; be keept as limit for factor regeneration</English>
+            <English>The amount of coagulation factors that get set on unit spawn &amp; be kept as limit for factor regeneration</English>
             <Japanese>ユニットのスポーン時に定義される凝固因子の量と、因子の再生限界値</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time">
@@ -3341,7 +3341,7 @@
             <Japanese>凝固因子再生サイクル</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenerate_Time_DESC">
-            <English>The time between coagulation factor regeneration checks. Will add +1 factor on sucessfull check. Uses Setting: "Coagulation Factors" as limit.\n Note: If the limit is exceeded, this time will be used and then remove -1 factor until Setting: "Coagulation Factors" is reached. Tipp: TXA or EACA stop losing factors\nRequirements for regeneration to work:\n- No wound being clotted in the last cycle check from this setting\n- Setting: "Require Heart Rate"\n- Setting: "Required Blood Volume"</English>
+            <English>The time between coagulation factor regeneration checks. Will add +1 factor on successful check. Uses Setting: "Coagulation Factors" as limit.\n Note: If the limit is exceeded, this time will be used and then remove -1 factor until Setting: "Coagulation Factors" is reached. Tipp: TXA or EACA stop losing factors\nRequirements for regeneration to work:\n- No wound being clotted in the last cycle check from this setting\n- Setting: "Require Heart Rate"\n- Setting: "Required Blood Volume"</English>
             <Japanese>凝固因子再生チェックの間隔。チェックに成功すると因子が+1されます。設定 "凝固因子の限界値" を限界値として使用します。 \n注:制限を超えた場合、この時間が経過した後、設定"凝固因子の限界値"に達するまで因子を1つ取り除きます。 \nヒント: TXAまたはEACAは因子の消失を止めます。\n因子再生が機能するための条件: \n-ここで設定されたサイクル時間の最後のチェックで傷口が凝血していないこと \n-設定: "心拍を要求する" \n-設定: "血液量を要求する"</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allowOnAI">
@@ -3357,7 +3357,7 @@
             <Japanese>止血帯による血液凝固の妨げ</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock_DESC">
-            <English>If enabled a applied tournique will stop wounds from being closed from coagulation on that bodypart</English>
+            <English>If enabled a applied tourniquet will stop wounds from being closed from coagulation on that bodypart</English>
             <Japanese>有効にすると、止血帯を適用中の部位で凝固によって傷口が塞がらないようになります。</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MinorWounds">
@@ -3397,7 +3397,7 @@
             <Japanese>EACAによる追加の"縫合"を許可する</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_EACA_script_DESC">
-            <English>If enabled EACA will keep all functionality and start stiching bandaged wounds</English>
+            <English>If enabled EACA will keep all functionality and start stitching bandaged wounds</English>
             <Japanese>有効にすると、EACAがすべての機能を保持し、自身に"縫合"を適用するようになります。</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_on_all_Bodyparts">
@@ -3571,42 +3571,6 @@
         <Key ID="STR_KAT_Pharma_SubCategory_Coag_Sense">
             <English>Coag-Sense Settings</English>
             <Japanese>Coag-Sense設定</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
-            <English>Medical level required for Coag-Sense</English>
-            <Japanese>Coag-Senseの許可</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location">
-            <English>Locations Coag-Sense</English>
-            <Japanese>Coag-Senseが使用できる場所</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
-            <English>Treatment time for measuring PT/INR</English>
-            <Japanese>PT/INR測定の所要時間</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA">
-            <English>Allow Stacking</English>
-            <Japanese>重複の許可</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA_DESC">
-            <English>If enabled EACA will be stackable and doubble it's efficiency</English>
-            <Japanese>有効にすると、EACAの重複が可能になり、効率が2倍になる。</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA">
-            <English>Keep Stiching Until Out Of System</English>
-            <Japanese>体内に効果が無くなるまで"縫合"を適用する</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA_DESC">
-            <English>If enabled EACA will keep stichinng until it's out of your system\nIf disabled EACA will stop working after stiching the last bandaged wound it can find</English>
-            <Japanese>有効にすると、EACAが体内から無くなるまで"縫合"をします。 \n無効にすると、EACAが判定済の最後の包帯創傷に"縫合"を適用した後に、その作用を終了します。</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA">
-            <English>EACA Cycle Time</English>
-            <Japanese>EACAサイクル時間</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA_DESC">
-            <English>The time it takes for EACA to close a stich a wound</English>
-            <Japanese>EACAが創傷を縫合するのに掛かる時間</Japanese>
         </Key>
     </Package>
 </Project>
