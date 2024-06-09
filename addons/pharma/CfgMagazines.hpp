@@ -20,7 +20,7 @@ class CfgMagazines {
         ACE_asItem = 1;
     };
     class kat_Carbonate: CA_Magazine {
-        author = "Katalam";
+        author = "Mazinski";
         scope = 2;
 
         displayName = CSTRING(Carbonate_Box_Display);
