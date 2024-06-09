@@ -707,7 +707,7 @@
             <German>%1 hat eine medizinische Absaugung mittels %2 durchgeführt</German>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
-            <English>Manual Suction Pump is used to clear airway occlusions(single use).Alternative to the ACCUVAC</English>
+            <English>Manual Suction Pump is used to clear airway occlusions (single use).</English>
         </Key>
         <Key ID="STR_KAT_Airway_SuctionTreatment_displayName">
             <English>Airway Suction (Manual)</English>
