@@ -1,4 +1,4 @@
-
+#include "..\script_component.hpp"
 params ["_unit", "_bodyPart", "_wounds", "_countTXA", "_countEACA"];
 
 {   

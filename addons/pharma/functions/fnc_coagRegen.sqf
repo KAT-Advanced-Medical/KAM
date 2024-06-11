@@ -1,3 +1,4 @@
+#include "..\script_component.hpp"
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];
@@ -8,7 +9,7 @@
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (!(GVAR(coagulation_allowOnAI)) && ACE_Player != _unit) exitWith { // Check allowOnAI setting to save performance
+    if (!GVAR(coagulation_allowOnAI) && ACE_Player != _unit) exitWith { // Check allowOnAI setting to save performance
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
