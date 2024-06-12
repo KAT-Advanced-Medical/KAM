@@ -1,8 +1,6 @@
 PREP(alphaAction);
 PREP(applyIV);
 PREP(checkIV);
-PREP(clotWound);
-PREP(coagRegen);
 PREP(fluid);
 PREP(fluidLocal);
 PREP(fullHealLocal);

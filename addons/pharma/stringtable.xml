@@ -3572,5 +3572,41 @@
             <English>Coag-Sense Settings</English>
             <Japanese>Coag-Sense設定</Japanese>
         </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA">
+            <English>Allow Stacking</English>
+            <Japanese>重複の許可</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA_DESC">
+            <English>If enabled EACA will be stackable and doubble it's efficiency</English>
+            <Japanese>有効にすると、EACAの重複が可能になり、効率が2倍になる。</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA">
+            <English>Keep Stiching Until Out Of System</English>
+            <Japanese>体内に効果が無くなるまで"縫合"を適用する</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA_DESC">
+            <English>If enabled EACA will keep stichinng until it's out of your system\nIf disabled EACA will stop working after stiching the last bandaged wound it can find</English>
+            <Japanese>有効にすると、EACAが体内から無くなるまで"縫合"をします。 \n無効にすると、EACAが判定済の最後の包帯創傷に"縫合"を適用した後に、その作用を終了します。</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA">
+            <English>EACA Cycle Time</English>
+            <Japanese>EACAサイクル時間</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA_DESC">
+            <English>The time it takes for EACA to close a stich a wound</English>
+            <Japanese>EACAが創傷を縫合するのに掛かる時間</Japanese>
+        </Key> 
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
+            <English>Medical level required for Coag-Sense</English>
+            <Japanese>Coag-Senseの許可</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location">
+            <English>Locations Coag-Sense</English>
+            <Japanese>Coag-Senseが使用できる場所</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
+            <English>Treatment time for measuring PT/INR</English>
+            <Japanese>PT/INR測定の所要時間</Japanese>
+        </Key>
     </Package>
 </Project>
