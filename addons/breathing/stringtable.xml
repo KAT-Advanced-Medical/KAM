@@ -167,6 +167,20 @@
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter">
             <English>Pulse Oximeter</English>
+            <German>Pulsoximeter</German>
+            <Polish>Pulsoksymetr</Polish>
+            <Spanish>Oxímetro de pulso</Spanish>
+            <Chinese>心率監測器</Chinese>
+            <Chinesesimp>脉搏血氧仪</Chinesesimp>
+            <Czech>Pulzní Oxymetr</Czech>
+            <Korean>맥박산소측정기</Korean>
+            <French>Oxymètre de pouls</French>
+            <Turkish>Nabız Oksimetresi</Turkish>
+            <Italian>Pulsossimetro</Italian>
+            <Russian>Пульсоксиметр</Russian>
+            <Japanese>パルスオキシメーター</Japanese>
+            <Portuguese>Oxímetro de Pulso</Portuguese>
+            <Finnish>Pulssioksimetri</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Desc_Short">
             <English>Reads pulse rate and Spo2</English>
