@@ -240,6 +240,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class Atropine: Morphine {
         displayName = CSTRING(Take_Atropine);
+        displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_Atropine);

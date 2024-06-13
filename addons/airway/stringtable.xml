@@ -476,6 +476,8 @@
             <Japanese>%1 は %2 を頭部後屈させた</Japanese>
             <German>%1 überstreckte %2s Kopf</German>
             <Russian>Выполнен поворот головы, дыхательные пути еще не очистились</Russian>
+            <Spanish>%2s cabeza %1 hiperextendida</Spanish>
+            <French>%1 a placé la tête de %2 en hyperextension</French>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -583,6 +585,8 @@
             <Finnish>Lääketieteellinen imu suoritettu, okkluusio poistettu</Finnish>
             <Russian>Медицинское отсасывание завершено, окклюзия устранена</Russian>
             <German>Medizinische Absaugung abgeschlossen, Verstopfung beseitigt</German>
+            <Spanish>Succión médica completada. Oclusión quitada</Spanish>
+            <French>Aspiration médicale effectuée. Occlusion retirée</French>
         </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
@@ -682,6 +686,8 @@
             <Japanese>アキュバック</Japanese>
             <Russian>ACCUVAC</Russian>
             <German>ACCUVAC</German>
+            <Spanish>ACCUVAC</Spanish>
+            <French>ACCUVAC</French>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
             <English>ACCUVAC is used to clear airway occlusions</English>
@@ -692,6 +698,8 @@
             <Finnish>Ilmateiden imu</Finnish>
             <Russian>Всасывание из дыхательных путей</Russian>
             <German>Absaugung der Atemwege</German>
+            <Spanish>Succión de vías aéreas</Spanish>
+            <French>Aspiration des voies respiratoires</French>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Display">
             <English>Manual Suction Pump</English>
@@ -699,15 +707,25 @@
             <Finnish>Manuaalinen imupumppu</Finnish>
             <Russian>Ручной всасывающий насос</Russian>
             <German>Manuelle Absaugpumpe</German>
+            <Spanish>Bomba de Succión Manual</Spanish>
+            <French>Pompe d'aspiration manuelle</French>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Log">
             <English>%1 did a medical suction using a %2</English>
             <Japanese>%1 は %2 で医療吸引を行った</Japanese>
             <Russian>Ручной всасывающий насос - это медицинское всасывающее устройство для отсасывания воздуха вручную. Это альтернатива электрическим устройствам.</Russian>
             <German>%1 hat eine medizinische Absaugung mittels %2 durchgeführt</German>
+            <Spanish>%1 ha hecho una succión médica usando un %2</Spanish>
+            <French>%1 a effectué une aspiration médicale en utilisant un(e) %2</French>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is used to clear airway occlusions (single use).</English>
+            <Japanese>手動式吸引器は、手動ポンプで動作する気道吸引の為の医療用吸引装置です。これは電気駆動の装置を代替することが可能です。</Japanese>
+            <Finnish>Manuaalinen imupumppu on lääketieteellinen imulaite hengitysteiden manuaaliseen imemiseen. tämä on vaihtoehto sähkölaitteille</Finnish>
+            <Russian>Всасывание из дыхательных путей (ручное)</Russian>
+            <German>Die manuelle Absaugpumpe ist eine medizinisches Absauggerät für Atemwege.\nDie Alternative zu einem elektrisch betreibenen Gerät.</German>
+            <Spanish>La Bomba de Succión Médica es un dispositivo para la succión manual de las vías aéreas. Es una alternativa a los dispositivos eléctricos.</Spanish>
+            <French>La pompe d’aspiration manuelle est un dispositif d’aspiration médical pour l’aspiration manuelle des voies respiratoires. C’est une alternative aux appareils électriques.</French>
         </Key>
         <Key ID="STR_KAT_Airway_SuctionTreatment_displayName">
             <English>Airway Suction (Manual)</English>
@@ -715,6 +733,8 @@
             <Finnish>Ilmateiden imu (manuaalinen)</Finnish>
             <Russian>Всасывание из дыхательных путей (ручное)</Russian>
             <German>Manuelle Absaugung der Atemwege</German>
+            <Spanish>Succión de vías aéreas (Manual)</Spanish>
+            <French>Aspiration des voies respiratoires (Manuel)</French>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse">
             <English>Reusable Manual Suction Pump</English>
@@ -722,6 +742,8 @@
             <Finnish>Uudelleenkäytettävä manuaalinen imupumppu</Finnish>
             <Russian>Многоразовый ручной всасывающий насос</Russian>
             <German>Wiederverwendbare manuelle Absaugpumpe</German>
+            <Spanish>Bomba de Succión Manual Reutilizable</Spanish>
+            <French>Pompre d'aspiration manuelle réutilisable</French>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse_DESC">
             <English>Regain the Manual Suction Pump after use</English>
@@ -729,6 +751,8 @@
             <Finnish>Ota manuaalinen imupumppu takaisin käytön jälkeen</Finnish>
             <Russian>Восстановить ручной всасывающий насос после использования</Russian>
             <German>Erhalte die Manuelle Absaugpumpe nach Benutzung zurück.</German>
+            <Spanish>Obtener la Bomba de Succión Manual despues del uso</Spanish>
+            <French>Récupère la pompe d'asipiration manuelle après utilisation</French>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -898,6 +922,8 @@
             <Finnish>Salli manuaalinen imupumppu</Finnish>
             <Russian>Разрешить ручной всасывающий насос</Russian>
             <German>Manuelle Absaugpumpe zulassen</German>
+            <Spanish>Permitir Bomba de Succión Manual</Spanish>
+            <French>Autoriser la pompe d'aspiration manuelle</French>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_SUCTION_DESC">
             <English>Training level required to use an Manual Suction Pump</English>
@@ -905,6 +931,8 @@
             <Finnish>Aika tarkistaa hengitystiet</Finnish>
             <Russian>Уровень подготовки, необходимый для использования ручного всасывающего насоса</Russian>
             <German>Benötigter medizinischer Grad, um die Manuelle Absaugpumpe zu nutzen</German>
+            <Spanish>Nivel de entrenamiento requerido para usar la Bomba de Succión Manual</Spanish>
+            <French>Niveau d'entrainement requis pour utiliser une pompe d'aspiration manuelle</French>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
             <English>Time to check Airway</English>
@@ -1056,6 +1084,8 @@
             <Finnish>aika manuaaliselle imupumpulle</Finnish>
             <German>Behandlungszeit für die manuelle Absaugpumpe</German>
             <Russian>Время работы ручного всасывающего насоса</Russian>
+            <Spanish>Tiempo para la Bomba de Succión Manual</Spanish>
+            <French>Durée d'aspiration avec la pompe d'aspiration manuelle</French>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
             <English>How long it will take to use Manual Suction Pump</English>
@@ -1063,6 +1093,8 @@
             <Finnish>Kuinka kauan manuaalisen imupumpun käyttö kestää</Finnish>
             <Russian>Сколько времени потребуется для использования ручного всасывающего насоса</Russian>
             <German>Benötigte Zeit zur Verwendung der Manuellen Absaugpumpe</German>
+            <Spanish>Cuánto tiempo lleva utilizar la Bomba de Succión Manual</Spanish>
+            <French>Temps nécessaire pour utiliser la pompe d'aspiration manuelle</French>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS">
             <English>Time for Larynxtubus</English>
@@ -1246,6 +1278,7 @@
             <Finnish>%1 peruutettu lepoasento</Finnish>
             <Russian>%1 отменил перевод в боковое положение</Russian>
             <German>%1 hat die stabile Seitenlage aufgehoben</German>
+            <Spanish>%1 cancelada posición lateral de seguridad</Spanish>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
@@ -1378,6 +1411,8 @@
             <Finnish>Imulaitteen asetukset</Finnish>
             <Russian>Настройки всасывающих устройств</Russian>
             <German>Einstellungen für Absaugpumpen</German>
+            <Spanish>Opciones de dispositivos de Succión</Spanish>
+            <French>Paramètres des appareils d'aspiration</French>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>

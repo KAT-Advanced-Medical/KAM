@@ -30,4 +30,4 @@ _patient setVariable [QGVAR(OxygenationPeriod), 0, true];
 _patient setVariable [QGVAR(ht), [], true];
 _patient setVariable [QGVAR(effusion), 0, true];
 
-[_patient] call FUNC(updateInternalBleeding);
+[_patient, true] call FUNC(updateInternalBleeding);
