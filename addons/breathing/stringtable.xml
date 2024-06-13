@@ -505,7 +505,7 @@
             <Finnish>AAT-laite</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_aatKit_desc">
-            <English>Used to decompress or drain fluid of the thoracic cavity</English>
+            <English>Used to treat tension pneumothorax and hemopneumothorax</English>
         </Key>
         <Key ID="STR_KAT_Breathing_ncdKit_display">
             <English>NCD Kit</English>
