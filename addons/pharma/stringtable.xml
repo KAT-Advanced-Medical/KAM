@@ -437,7 +437,7 @@
             <Finnish>Paina lidokaiinia</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_DescShort">
-            <English>Used to treat bradycardia, chemical exposure</English>
+            <English>Used to treat bradycardia and chemical exposure</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Atropine_Box_Display">
             <English>Atropine</English>
