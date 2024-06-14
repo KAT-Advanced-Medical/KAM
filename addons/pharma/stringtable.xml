@@ -552,14 +552,6 @@
             <Portuguese>Injetar TXA</Portuguese>
             <Finnish>Paina TXA</Finnish>
         </Key>
-        <Key ID="STR_KAT_Pharma_TXAAuto_Box_Display">
-            <English>TXA Autoinjector</English>
-            <Japanese>TXA自動注射器</Japanese>
-        </Key>
-        <Key ID="STR_KAT_Pharma_Take_TXAAuto">
-            <English>Inject TXA</English>
-            <Japanese>TXAを注射</Japanese>
-        </Key>
         <Key ID="STR_KAT_Pharma_Norep_DescShort">
             <English>Used to raise blood pressure</English>
             <German>Wird zur Erhöhung des Blutdrucks verwendet</German>
