@@ -1,4 +1,5 @@
 #include "..\script_component.hpp"
+if !GVAR(coagulation) exitWith {};
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];

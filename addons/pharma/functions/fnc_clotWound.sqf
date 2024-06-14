@@ -1,4 +1,6 @@
 #include "..\script_component.hpp"
+
+if !GVAR(coagulation) exitWith {};
 params ["_unit", "_bodyPart", "_wounds", "_countTXA", "_countEACA"];
 
 {   

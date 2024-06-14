@@ -92,5 +92,5 @@ if (GVAR(kidneyAction)) then {
     }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
 
-if (GVAR(coagulation)) then {[_unit] call FUNC(clotWounds)};
-if (GVAR(coagulation)) then {[_unit] call FUNC(coagRegen)};
+[_unit] call FUNC(clotWounds);
+[_unit] call FUNC(coagRegen);
