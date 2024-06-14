@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 if !GVAR(coagulation) exitWith {};
-[{
-    params ["_args", "_idPFH"];
+params ["_args", "_idPFH"];
+[{ 
     _args params ["_unit"];
 
     private _alive = alive _unit;
