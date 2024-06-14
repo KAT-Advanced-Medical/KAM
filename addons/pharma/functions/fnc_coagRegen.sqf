@@ -17,6 +17,8 @@
 
 params ["_unit"];
 
+if !(GVAR(coagulation)) exitWith {};
+
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];

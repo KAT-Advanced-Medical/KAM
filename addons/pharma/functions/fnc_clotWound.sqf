@@ -17,6 +17,8 @@
 
 params ["_unit"];
 
+if !(GVAR(coagulation)) exitWith {};
+
 private _fnc_clotWound = {
     params ["_unit", "_bodyPart", "_wounds", "_countTXA", "_countEACA"];
 
