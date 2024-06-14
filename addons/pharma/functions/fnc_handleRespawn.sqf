@@ -91,6 +91,3 @@ if (GVAR(kidneyAction)) then {
         _unit setVariable [QGVAR(pH), _ph, true];
     }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
-
-if (GVAR(coagulation)) then {[_unit] call FUNC(clotWounds)};
-if (GVAR(coagulation)) then {[_unit] call FUNC(coagRegen)};

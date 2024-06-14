@@ -1,3 +1,22 @@
+#include "..\script_component.hpp"
+/*
+ * Author: Miss Heda
+ * Regenerates clots
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [player] call kat_pharma_fnc_clotWound;
+ *
+ * Public: No
+ */
+
+params ["_unit"];
+
 [{
     params ["_args", "_idPFH"];
     _args params ["_unit"];
@@ -30,9 +49,9 @@
         },
         [_unit], ((missionNamespace getVariable [QGVAR(coagulation_factor_regenerate_time), 150]) / 2)] call CBA_fnc_waitAndExecute; // Block regen PFH instance from happening
     };
-    
+
     if (_currentCoagFactors == _savedCoagFactors && _currentCoagFactors < _limitRegenCoagFactors) exitWith {
-        
+
         if (_countTXA > 0 || _countEACA > 0) then { // If TXA or EACA are in system add more factors
             if (_countTXA > 0 && _countEACA > 0) exitWith {
                 _ammountToAdd = 4;
@@ -45,9 +64,9 @@
     };
 
     if (_currentCoagFactors > _limitRegenCoagFactors && !(_cooldownON)) exitWith {
-        
+
         if (_countTXA > 0 || _countEACA > 0) exitWith {}; // If TXA or EACA is in system don't remove factor
-        
+
         _unit setVariable [QGVAR(coagulationFactor), (_currentCoagFactors - 1), true];
         _unit setVariable [QGVAR(coagulationSavedFactors), (_currentCoagFactors - 1), true];
         _unit setVariable [QGVAR(coagulationRegenCooldown), true, true];
