@@ -163,10 +163,11 @@
             <Finnish>Aika luoda IO:t</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_DescShort">
-            <English>Combat Wound Medication Pack, Used to suppress pain</English>
+            <English>Combat Wound Medication Pack. Used to suppress pain</English>
+            <Japanese>戦闘創傷治療薬パック。 痛みを抑えるために使用される</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_Box_Display">
-            <English>CWMP</English>
+            <English>Combat Pill Pack</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Give_CWMP">
             <English>Use CWMP</English>
