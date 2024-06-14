@@ -11,11 +11,11 @@ class CfgMagazines {
         picture = QPATHTOF(ui\icon_painkillers.paa);
 
         ammo = "";
-        count = 10;
+        count = 4;
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        mass = 1;
+        mass = 0.5;
     };
     class kat_Carbonate: CA_Magazine {
         author = "Katalam";
@@ -35,7 +35,7 @@ class CfgMagazines {
     };
     class kat_Pervitin: CA_Magazine {
         author = "Miss Heda";
-        
+
         scope = 2;
         displayName = CSTRING(Pervitin_Capsule_Display);
         descriptionShort = CSTRING(Pervitin_Capsule_DescShort);
@@ -51,7 +51,7 @@ class CfgMagazines {
     };
     class kat_Caffeine: CA_Magazine {
         author = "Miss Heda";
-        
+
         scope = 2;
         displayName = CSTRING(Caffeine_Bottle_Display);
         descriptionShort = CSTRING(Caffeine_Bottle_DescShort);

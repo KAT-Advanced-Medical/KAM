@@ -172,7 +172,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.2;
         };
-        class KAT_Painkillers {
+        class CWMP {
             painReduce = 0.2;
             hrIncreaseLow[] = {0, 5};
             hrIncreaseNormal[] = {5, 10};

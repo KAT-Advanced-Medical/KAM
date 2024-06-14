@@ -22,6 +22,7 @@ PREP(treatmentAdvanced_AtropineLocal);
 PREP(treatmentAdvanced_Caffeine);
 PREP(treatmentAdvanced_CaffeineLocal);
 PREP(treatmentAdvanced_Carbonate);
+PREP(treatmentAdvanced_CWMP);
 PREP(treatmentAdvanced_CarbonateLocal);
 PREP(treatmentAdvanced_Dialysis);
 PREP(treatmentAdvanced_DialysisLocal);

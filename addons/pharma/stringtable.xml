@@ -196,22 +196,8 @@
             <Portuguese>Analgésicos</Portuguese>
             <Finnish>Kipulääkkeet</Finnish>
         </Key>
-        <Key ID="STR_KAT_Pharma_Inject_Box_Painkillers">
-            <English>Give Painkillers</English>
-            <Polish>Użyj leku przeciwbólowego</Polish>
-            <Chinese>服用止痛藥</Chinese>
-            <Chinesesimp>服用止痛药</Chinesesimp>
-            <Czech>Vzít prášky proti bolesti</Czech>
-            <French>Administrer Perfalgan</French>
-            <German>Schlucke Schmerzmittel</German>
-            <Italian>Prendi antidolorifici</Italian>
-            <Korean>진통제 복용</Korean>
-            <Spanish>Administrar analgésico</Spanish>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Japanese>鎮痛剤を服用</Japanese>
-            <Russian>Принимайте обезболивающие</Russian>
-            <Portuguese>Administrar Analgésicos</Portuguese>
-            <Finnish>Paina kipulääkkeitä</Finnish>
+        <Key ID="STR_KAT_Pharma_Give_CWMP">
+            <English>Use CWMP</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>

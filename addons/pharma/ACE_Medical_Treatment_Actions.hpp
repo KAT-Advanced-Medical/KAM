@@ -40,8 +40,8 @@ class ACE_Medical_Treatment_Actions {
     class Epinephrine: Morphine {
         callbackSuccess = QFUNC(medication);
     };
-    class KAT_Painkillers: Morphine {
-        displayName = CSTRING(Inject_Box_Painkillers);
+    class CWMP: Morphine {
+        displayName = CSTRING(Use_CWMP);
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         items[] = {"kat_Painkiller"};
