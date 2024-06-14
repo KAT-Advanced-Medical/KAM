@@ -111,5 +111,5 @@ if (GVAR(kidneyAction)) then {
     }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
 
-["_unit", "_bodyPart", "_wounds", "_countTXA", "_countEACA"] call FUNC(clotWounds);
-["_args", "_idPFH"] call FUNC(coagRegen);
+[_unit] call FUNC(clotWounds);
+[_unit] call FUNC(coagRegen);
