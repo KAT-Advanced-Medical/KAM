@@ -10,24 +10,28 @@
  * NONE
  *
  * Example:
- * [1105] call kat_chemical_fnc_spawnGasSmoke;
+ * [1105] call kat_chemical_fnc_ui_gasModule;
  *
  * Public: No
 */
 
 params ["_control"];
 
+systemChat "Initialize Module Test";
+
 private _display = ctrlParent _control;
 private _ctrlButtonOK = _display displayCtrl IDC_OK;
 private _ctrlButtonCancel = _display displayCtrl IDC_CANCEL;
-private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
+private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
+
+systemChat str _ctrlButtonOK;
 
 
 _control ctrlRemoveAllEventHandlers "SetFocus";
 
 
 private _fnc_onUnload = {
-    private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
+    private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     if (isNull _logic) exitWith {};
     if !(_display getVariable [QGVAR(Confirmed), false]) then
     {
@@ -71,10 +75,12 @@ if !(isNull attachedTo _logic) then {
 private _fnc_onConfirm = {
     params [["_ctrlButtonOK", controlNull, [controlNull]]];
 
+    systemChat "Module Confirm Click";
+
     private _display = ctrlParent _ctrlButtonOK;
     if (isNull _display) exitWith {};
 
-    private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
+    private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     if (isNull _logic) exitWith {};
 
     private _gasTypeValue = _display getVariable[QGVAR(ui_gastype),0];
@@ -93,22 +99,23 @@ private _fnc_onConfirm = {
     if(_radius_min > _radius_max) then {
         [CSTRING(GasModule_Needbigger)] call ACEFUNC(zeus,showMessage);
     } else {
-        private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
+        private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
         if (isNull _logic) exitWith {};
 
         if !(isNull attachedTo _logic) then {
             private _object = attachedto _logic;
-            private _position = getPos _object;
 
-            [_logic,_position,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
+            systemChat "Module Gas Check Initialize";
+            [_logic,getPos _object,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
 
             if (_display getVariable[QGVAR(ui_sealable),false]) then {
                 [_object] call FUNC(createSealAction);
             };
 
         } else {
-            private _position = getPos _logic;
-            [_logic,_position,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
+            systemChat "Module Gas Check Initialize";
+
+            [_logic,getPos _logic,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
         };
 
         _display setVariable [QGVAR(Confirmed), true];
@@ -116,6 +123,6 @@ private _fnc_onConfirm = {
 };
 
 
-_display displayAddEventHandler ["unload", _fnc_onUnload];
-_ctrlButtonOK ctrlAddEventHandler ["buttonclick", _fnc_onConfirm];
+_display displayAddEventHandler ["Unload", _fnc_onUnload];
+_ctrlButtonOK ctrlAddEventHandler ["ButtonClick", _fnc_onConfirm];
 
