@@ -17,18 +17,12 @@
 
 params ["_control"];
 
-systemChat "Initialize Module Test";
-
 private _display = ctrlParent _control;
 private _ctrlButtonOK = _display displayCtrl IDC_OK;
 private _ctrlButtonCancel = _display displayCtrl IDC_CANCEL;
 private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
 
-systemChat str _ctrlButtonOK;
-
-
 _control ctrlRemoveAllEventHandlers "SetFocus";
-
 
 private _fnc_onUnload = {
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
@@ -75,8 +69,6 @@ if !(isNull attachedTo _logic) then {
 private _fnc_onConfirm = {
     params [["_ctrlButtonOK", controlNull, [controlNull]]];
 
-    systemChat "Module Confirm Click";
-
     private _display = ctrlParent _ctrlButtonOK;
     if (isNull _display) exitWith {};
 
@@ -105,16 +97,13 @@ private _fnc_onConfirm = {
         if !(isNull attachedTo _logic) then {
             private _object = attachedto _logic;
 
-            systemChat "Module Gas Check Initialize";
             [_logic,getPos _object,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
 
             if (_display getVariable[QGVAR(ui_sealable),false]) then {
                 [_object] call FUNC(createSealAction);
             };
-
+            
         } else {
-            systemChat "Module Gas Check Initialize";
-
             [_logic,getPos _logic,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
         };
 

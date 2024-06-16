@@ -23,8 +23,6 @@
 
 params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
 
-systemChat "Local Gas Check started";
-
 if (!isDamageAllowed _unit) exitWith {
     [_unit] call FUNC(clearChemicalInjuriesLocal);
 };

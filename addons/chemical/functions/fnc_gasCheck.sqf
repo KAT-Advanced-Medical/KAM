@@ -21,10 +21,6 @@
 
 params ["_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
 
-systemChat "Gas check started";
-
-systemChat str _logic;
-
 // Set default values if needed
 _gastype = [_gastype, "Toxic"] select (_gastype isEqualTo "");
 _radius_min = if (_radius_min isEqualTo 0) then {_radius_max / 2} else {_radius_min};
@@ -55,8 +51,6 @@ private _checkPlayers = {
             if (_x getVariable [QGVAR(isTreated), false]) then {
                 _x setVariable [QGVAR(isTreated), false, true];
 
-                systemChat format["Player treated: %1", _x];
-
                 _playerArr deleteAt (_playerArr find _x);
                 _logic setVariable [QGVAR(gas_playerArr), _playerArr, true];
             };
@@ -64,14 +58,10 @@ private _checkPlayers = {
             if (!(_x in _playerArr) && _distance < _radius_max) then {
                 _playerArr pushBack _x;
 
-                systemChat format["Player in Zone: %1", _x];
-
                 _logic setVariable [QGVAR(gas_playerArr), _playerArr, true];
                 [QGVAR(gasCheck_local), [_x, _logic, _pos, _radius_max, _radius_min, _gastype], _x] call CBA_fnc_targetEvent;
             } else {
                 if (_x in _playerArr && _distance > _radius_max) then {
-
-                    systemChat format["Player left Zone: %1", _x];
 
                     _playerArr deleteAt (_playerArr find _x);
                     _logic setVariable [QGVAR(gas_playerArr), _playerArr, true];
