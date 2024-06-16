@@ -1,2 +1,1 @@
-PREP(handleICP);
 PREP(init);
