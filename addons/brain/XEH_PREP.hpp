@@ -1,2 +1,2 @@
-PREP(handleBrainActivity);
+PREP(handleAutoregulation);
 PREP(init);

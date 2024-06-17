@@ -42,7 +42,7 @@ _unit setVariable [QEGVAR(brain,ICP),10,true];
 _unit setVariable [QEGVAR(brain,rO2),80,true];
 _unit setVariable [QEGVAR(brain,necrosis),0,true];
 _unit setVariable [QEGVAR(brain,reversibleDamage),0,true];
-_unit setVariable [QEGVAR(brain,activityPFH), [_unit] call EFUNC(brain,handleBrainActivity),true];
+_unit setVariable [QEGVAR(brain,autoregulationPFH), [_unit] call EFUNC(brain,handleAutoregulation),true];
 
 // KAT Breathing
 
