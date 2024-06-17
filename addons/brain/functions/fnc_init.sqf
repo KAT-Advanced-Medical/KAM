@@ -24,5 +24,9 @@ _unit setVariable [QGVAR(CMR),20,true];
 _unit setVariable [QGVAR(CBF),800,true];
 _unit setVariable [QGVAR(CVR),0.1,true];
 _unit setVariable [QGVAR(ICP),10,true];
+_unit setVariable [QGVAR(rO2),80,true];
+
+_unit setVariable [QGVAR(necrosis),0,true];
+_unit setVariable [QGVAR(reversibleDamage),0,true];
 
 _unit setVariable [QGVAR(activityPFH), [_unit] call EFUNC(brain,handleBrainActivity),true];

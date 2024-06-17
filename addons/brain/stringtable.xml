@@ -2,7 +2,7 @@
 <Project name="KAT">
     <Package name="Brain">
         <Key ID="STR_KAT_Brain_SETTING_enable">
-            <English>Enable Traumatic Brain Injuries</English>
+            <English>Enable Brain Simulation</English>
         </Key>
     </Package>
 </Project>
