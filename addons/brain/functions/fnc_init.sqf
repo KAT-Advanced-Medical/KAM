@@ -20,3 +20,7 @@ params ["_unit", ["_isRespawn", true]];
 if (!local _unit) exitWith {};
 if !(GVAR(enable)) exitWith {};
 
+_unit setVariable [QGVAR(CMR),20,true];
+_unit setVariable [QGVAR(CBF),800,true];
+_unit setVariable [QGVAR(CVR),0.1,true];
+_unit setVariable [QGVAR(ICP),10,true];
