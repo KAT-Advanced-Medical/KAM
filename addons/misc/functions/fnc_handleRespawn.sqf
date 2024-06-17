@@ -33,6 +33,14 @@ _unit setVariable [QEGVAR(airway,recovery), false, true];
 _unit setVariable [QEGVAR(airway,airway_item), "", true];
 _unit setVariable [QEGVAR(airway,clearedTime), 0, true];
 
+// KAT Brain
+
+_unit setVariable [QGVAR(CMR),20,true];
+_unit setVariable [QGVAR(CBF),800,true];
+_unit setVariable [QGVAR(CVR),0.1,true];
+_unit setVariable [QGVAR(ICP),10,true];
+_unit setVariable [QEGVAR(brain,activityPFH), [_unit] call EFUNC(brain,handleBrainActivity),true];
+
 // KAT Breathing
 
 _unit setVariable [QEGVAR(breathing,airwayStatus), 100, true];
