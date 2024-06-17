@@ -59,6 +59,6 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(autoregulationPFH),false]) exitWit
     _unit setVariable [QGVAR(CVR),_newCVR,true];
     _unit setVariable [QGVAR(CBF),_CBF,true];
 
-}, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
+}, 3, [_unit]] call CBA_fnc_addPerFrameHandler;
 
 true;
