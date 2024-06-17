@@ -21,6 +21,7 @@ class CfgPatches {
             "kat_X_AED",
             "kat_norepinephrine",
             "kat_phenylephrine",
+            "kat_phenylephrineAuto",
             "kat_nitroglycerin",
             "kat_amiodarone",
             "kat_lidocane",
@@ -34,6 +35,7 @@ class CfgPatches {
         };
         magazines[] = { };
         requiredAddons[] = {
+            "kat_main",
             "ace_medical",
             "ace_medical_ai",
             "ace_medical_blood",
@@ -49,7 +51,7 @@ class CfgPatches {
             "cba_settings"
         };
         author = "Katalam";
-        authors[] = {"Katalam", "2LT.Mazinski", "MiszczuZPolski"};
+        authors[] = {"Katalam", "Mazinski", "MiszczuZPolski"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };

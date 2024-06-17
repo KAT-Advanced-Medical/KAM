@@ -6,15 +6,20 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         units[] = {
             "kat_PulseoximeterItem",
-            "kat_chestSealItem"
+            "kat_chestSealItem",
+            "kat_nasalItem"
         };
         weapons[] = {
             "kat_Pulseoximeter",
             "kat_chestSeal",
-            "kat_stethoscope"
+            "kat_stethoscope",
+            "kat_nasal"
         };
         magazines[] = {};
         requiredAddons[] = {
+            "kat_main",
+            "kat_airway",
+            "kat_circulation",
             "ace_medical",
             "ace_medical_ai",
             "ace_medical_blood",
@@ -27,9 +32,6 @@ class CfgPatches {
             "ace_medical_treatment",
             "ace_medical_vitals",
             "ace_dogtags",
-            "kat_main",
-            "kat_airway",
-            "kat_circulation",
             "cba_settings"
         };
         author = "Katalam";

@@ -19,25 +19,7 @@ params ["_unit", ["_isRespawn", true]];
 
 if (!local _unit) exitWith {};
 
-_unit setVariable [QGVAR(IV), [0,0,0,0,0,0], true];
-_unit setVariable [QGVAR(IVpfh), [0,0,0,0,0,0], true];
-
-/*
-* 0 = No IV
-* 1 = IO
-* 2 = IV
-* 3 = IV w/ Block
-* 4 = IV w/ Flush
-*/
-
-_unit setVariable [QGVAR(active), false, true];
-_unit setVariable [QGVAR(alphaAction), 1];
-
-_unit setVariable [QGVAR(pH), 1500, true];
-_unit setVariable [QGVAR(coagulationFactor), 10, true];
-_unit setVariable [QGVAR(kidneyFail), false, true];
-_unit setVariable [QGVAR(kidneyArrest), false, true];
-_unit setVariable [QGVAR(kidneyPressure), false, true];
+[_unit] call FUNC(fullHealLocal);
 
 [{
     params ["_args", "_idPFH"];
@@ -50,18 +32,30 @@ _unit setVariable [QGVAR(kidneyPressure), false, true];
     };
 
     private _medicationArray = _unit getVariable [QACEGVAR(medical,medications), []];
-    private _action = false;
+    private _alpha = false;
+    private _opioid = false;
 
     {
         _x params ["_medication"];
 
         if (_medication in ["Epinephrine", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
-            _action = true;
+            _alpha = true;
         };
     } forEach (_medicationArray);
 
-    if !(_action) then {
+    {
+        _x params ["_medication"];
+
+        if (_medication in ["Fentanyl", "Morphine", "Nalbuphine"]) exitWith {
+            _opioid = true;
+        };
+    } forEach (_medicationArray);
+
+    if !(_alpha) then {
         _unit setVariable [QGVAR(alphaAction), 1];
+    };
+    if !(_opioid) then {
+        _unit setVariable [QGVAR(opioidFactor), 1];
     };
 }, 180, [_unit]] call CBA_fnc_addPerFrameHandler;
 

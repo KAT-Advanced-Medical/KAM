@@ -179,6 +179,10 @@ class CfgVehicles {
         };
     };
     class Mortar_01_base_F: StaticMortar {
+        class ace_csw: ace_csw {
+            proxyWeapon = "ace_mortar_82mm";
+        };
+
         class Turrets: Turrets {
             class MainTurret: MainTurret {
                 magazines[] += {"KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI"};

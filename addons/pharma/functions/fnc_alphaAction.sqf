@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: MJSTIC
+ * Author: Mazinski
  * Adds the alpha factor value from medications to the patient.
  *
  * Arguments:
@@ -19,14 +19,6 @@ private _alphaAction = _patient getVariable [QGVAR(alphaAction), 1];
 
 _alphaAction = _alphaAction + _value;
 
-if (_alphaAction > 2) exitWith {
-    _alphaAction = 2;
-    _patient setVariable [QGVAR(alphaAction), _alphaAction, true];
-};
-
-if (_alphaAction < 0.5) exitWith {
-    _alphaAction = 0.5;
-    _patient setVariable [QGVAR(alphaAction), _alphaAction, true];
-};
+_alphaAction = (_alphaAction min 2) max 0.5;
 
 _patient setVariable [QGVAR(alphaAction), _alphaAction, true];

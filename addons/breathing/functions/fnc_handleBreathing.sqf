@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Katalam, edited by Tomcat, Kygan, YetheSamartaka and MJSTIC
+ * Author: Katalam, edited by Tomcat, Kygan, YetheSamartaka and Mazinski
  * Handling oxygen saturation for breathing
  *
  * Arguments:
@@ -48,6 +48,8 @@ if (!local _unit) then {
         _airway = false;
     };
 
+    private _isAwake = [_unit] call ACEFUNC(common,isAwake);
+
     private _status = _unit getVariable [QGVAR(airwayStatus), 100];
     private _overstretch = _unit getVariable [QEGVAR(airway,overstretch), false];
     private _heartRate = _unit getVariable [QACEGVAR(medical,heartRate), 0];
@@ -64,6 +66,25 @@ if (!local _unit) then {
     private _multiplierOxygen = GVAR(BVMOxygen_Multiplier);
     private _perfusionActive = false;
 
+    if (GVAR(SpO2_cardiacActive)) then {
+        private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+
+        if (_status <= GVAR(SpO2_cardiacValue)) then {
+            if ((_ht findIf {_x isEqualTo "hypoxia"}) == -1) then {
+                _ht pushBack "hypoxia";
+
+                if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                    [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                };
+
+                _unit setVariable [QEGVAR(circulation,ht), _ht, true];
+            };
+        } else {
+            _ht deleteAt (_ht find "hypoxia");
+            _unit setVariable [QEGVAR(circulation,ht), _ht, true];
+        };
+    };
+
     //if lethal SpO2 value is activated and lower the value x, then kill _unit
     if ((_status <= GVAR(SpO2_dieValue)) && { GVAR(SpO2_dieActive) && { !_blockDeath } }) exitWith {
         [_unit, "terminal_SpO2_death"] call ACEFUNC(medical_status,setDead);
@@ -72,14 +93,14 @@ if (!local _unit) then {
     };
 
     //if the _unit has SpO2 equal/over 100, then remove the PFH
-    if (_status >= 100 && _pneumothorax == 0) exitWith {
+    if (_status >= 100 && {_isAwake && {_breathing && {_pneumothorax == 0}}}) exitWith {
         _unit setVariable [QGVAR(airwayStatus), 100, true];
         _unit setVariable ["kat_O2Breathing_PFH", nil];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
     // Unconscious
-    if !([_unit] call ACEFUNC(common,isAwake)) exitWith {
+    if !(_isAwake) exitWith {
         _output = -0.2; // Not breathing/blocked airway
 
         if (_breathing) then { // Breathing
@@ -148,12 +169,12 @@ if (!local _unit) then {
         if (_finalOutput < 1) then {
             _finalOutput = 1;
         };
-
+        
         _unit setVariable [QGVAR(airwayStatus), _finalOutput, true];
     };
 
     // Awake
-    if ([_unit] call ACEFUNC(common,isAwake)) exitWith {
+    if (_isAwake) exitWith {
         if !(_breathing) then {
             _output = -0.2 * _multiplierNegative;
         } else {
@@ -201,7 +222,7 @@ if (!local _unit) then {
                 if !(_soundTargets isEqualTo []) then {
                     [QGVAR(playCough), [_unit], _soundTargets] call CBA_fnc_targetEvent;
                 };
-                
+
                 [{
                     params["_unit"];
                     _unit setVariable [QGVAR(PneumoBreathCooldownOn), false, true];

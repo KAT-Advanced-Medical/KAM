@@ -38,6 +38,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Cardiac Arrest SpO2 value
+[
+    QGVAR(SpO2_cardiacValue),
+    "SLIDER",
+    LLSTRING(SETTING_SpO2_cardiacValue),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 100, 75, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+// Enables cardiac arrest in cause of SpO2 cardiac value
+[
+    QGVAR(SpO2_cardiacActive),
+    "CHECKBOX",
+    LLSTRING(SETTING_SpO2_cardiacActive),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
 // Turn to unconscious in cause of SpO2 unconscious value
 [
     QGVAR(SpO2_unconscious),
@@ -117,6 +137,26 @@ PREP_RECOMPILE_END;
     [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_settings_fnc_init;
+
+//Settable list for using Nasal Cannula per medical class
+[
+    QGVAR(medLvl_NasalCannula),
+    "LIST",
+    [LLSTRING(SETTING_Allow_NasalCannula),LLSTRING(SETTING_Allow_NasalCannula_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+// Settable action time for Nasal Cannula
+[
+    QGVAR(NasalCannula_time),
+    "SLIDER",
+    [LLSTRING(SETTING_Time_NasalCannula),LLSTRING(SETTING_Time_NasalCannula_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Items)],
+    [1, 10, 3, 0],
+    true
+] call CBA_Settings_fnc_init;
 
 //Allow ChestSeal SelfTreatment
 [
@@ -259,6 +299,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+//Deteriorating pneumothorax arrest countdown
+[
+    QGVAR(PneumothoraxArrest),
+    "CHECKBOX",
+    [LLSTRING(SETTING_PneumothoraxArrest), LLSTRING(SETTING_PneumothoraxArrest_DESCRIPTION)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+//Deteriorating pneumothorax arrest countdown
+[
+    QGVAR(arrestPneumothorax_interval),
+    "SLIDER",
+    [LLSTRING(SETTING_arrestPneumothorax_interval), LLSTRING(SETTING_arrestPneumothorax_interval_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ThoraxInjuries)],
+    [1, 3600, 30, 0],
+    true
+] call CBA_Settings_fnc_init;
+
 // Set if pneumothorax injury should always be visible in medical menu
 [
     QGVAR(PneumothoraxAlwaysVisible),
@@ -388,6 +448,26 @@ PREP_RECOMPILE_END;
     [0, 100, 90, 1],
     true
 ] call CBA_Settings_fnc_init;
+
+// enable/disable etco2 and respiratory rate readouts
+[
+    QGVAR(Etco2_Enabled),
+    "CHECKBOX",
+    [LLSTRING(SETTING_Enable_Etco2),LLSTRING(SETTING_Enable_Etco2_Desc)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// select units for etco2
+[
+    QGVAR(Etco2_Units),
+    "LIST",
+    LLSTRING(SETTING_Select_Etco2_Units),
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1], ["mmHg", "kPa"], 0],
+    true
+] call CBA_settings_fnc_init;
 
 // Sets sound volume of stethoscope
 [

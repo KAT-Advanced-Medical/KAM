@@ -19,7 +19,7 @@
 
 params ["_unit", "_deltaT", "_syncValues"];
 
-private _bloodLoss = [_unit] call EFUNC(pharma,getBloodLoss);
+private _bloodLoss = [_unit] call ACEFUNC(medical_status,getBloodLoss);
 private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
 private _bloodVolumeChange = -_deltaT * (_bloodLoss + _internalBleeding);
 
