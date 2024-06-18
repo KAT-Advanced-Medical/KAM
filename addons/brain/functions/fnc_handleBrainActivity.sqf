@@ -31,6 +31,7 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
+	// Calculate brain oxygen saturation
 	private _CPR = _unit getVariable [QGVAR(CPR),100];
 	private _perfusionDelta = switch (true) do { // Calculate change in rO2 based on graph
 		case (_CPR <= 50): {-3};
@@ -40,10 +41,20 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 		case (_CPR <= 160): {(_CPR/-8) + 17.5};
 		default {-2.5};
 	};
-
 	private _rO2 = _unit getVariable [QGVAR(rO2),80];
 	_rO2 = (0 max (_rO2 + _perfusionDelta)) min 80; // Transform rO2 by the perfusion delta within bounds of 0 and 80
 	_unit setVariable [QGVAR(rO2),_rO2,true];
+
+	//Calculate tissue necrosis and brain death
+	private _necrosis = _unit getVariable [QGVAR(necrosis),0];
+	private _deoxygenatedTicks = _unit getVariable [QGVAR(deoxygenatedTicks),0];
+	_deoxygenatedTicks = [_deoxygenatedTicks + 1,_deoxygenatedTicks - 2] select (rO2 < GVAR(necrosisThreshold));
+	_deoxygenatedTicks = (0 max _dexoxygenation) min GVAR(necrosisTicks);
+	if 	(_deoxygenatedTicks == GVAR(necrosisThreshold)) then {
+		_necrosis = (_necrosis + GVAR(necrosisIncrease)) min 100;
+		//TODO kill unit when this gets too high
+		_unit setVariable [QGVAR(necrosis),_necrosis,true];
+	};
 
 }, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
 

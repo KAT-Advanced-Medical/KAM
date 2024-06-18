@@ -28,6 +28,7 @@ _unit setVariable [QGVAR(CPR),100,true]; // Cerebral Perfusion Rate
 _unit setVariable [QGVAR(rO2),80,true]; // Brain O2 saturation
 
 _unit setVariable [QGVAR(necrosis),0,true];
+_unit setVariable [QGVAR(deoxygenatedTicks),0,true];
 _unit setVariable [QGVAR(reversibleDamage),0,true];
 
 _unit setVariable [QGVAR(autoregulationPFH), [_unit] call FUNC(handleAutoregulation),true];

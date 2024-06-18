@@ -18,4 +18,33 @@ PREP_RECOMPILE_END;
 	true
 ] call CBA_Settings_fnc_init;
 
+// Number of ticks required until tissue necrosis begins to occur
+[
+	QGVAR(necrosisTicks),
+    "SLIDER",
+    [LLSTRING(SETTING_necrosisTicks)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_BrainDeath)],
+    [1, 60, 10, 0],
+    true
+] call CBA_Settings_fnc_init;
+// rO2 value required before necrosis occurs
+[
+	QGVAR(necrosisThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_necrosisThreshold)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_BrainDeath)],
+    [1, 80, 50, 0],
+    true
+] call CBA_Settings_fnc_init;
+
+//How much necrosis increases each tick
+[
+	QGVAR(necrosisIncrease),
+    "SLIDER",
+    [LLSTRING(SETTING_necrosisIncrease)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_BrainDeath)],
+    [0, 10, 1.6, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
