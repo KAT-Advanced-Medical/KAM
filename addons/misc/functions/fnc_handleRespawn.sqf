@@ -21,7 +21,6 @@ TRACE_2("handleRespawn",_unit,_dead);
 
 if (!local _unit) exitWith {};
 
-<<<<<<< HEAD
 // KAT Airway
 
 _unit setVariable [QEGVAR(airway,obstruction), false, true];
@@ -40,10 +39,13 @@ _unit setVariable [QEGVAR(brain,CMR),20,true];
 _unit setVariable [QEGVAR(brain,CBF),800,true];
 _unit setVariable [QEGVAR(brain,CVR),0.1,true];
 _unit setVariable [QEGVAR(brain,ICP),10,true];
+_unit setVariable [QEGVAR(brain,CPR),100,true];
 _unit setVariable [QEGVAR(brain,rO2),80,true];
 _unit setVariable [QEGVAR(brain,necrosis),0,true];
 _unit setVariable [QEGVAR(brain,reversibleDamage),0,true];
 _unit setVariable [QEGVAR(brain,autoregulationPFH), [_unit] call EFUNC(brain,handleAutoregulation),true];
+_unit setVariable [QEGVAR(brain,activityPFH), [_unit] call EFUNC(brain,handleBrainActivity),true];
+
 
 // KAT Breathing
 
@@ -104,12 +106,10 @@ _unit setVariable [QEGVAR(misc,isLeftArmFree), true, true];
 _unit setVariable [QEGVAR(misc,isRightArmFree), true, true];
 _unit setVariable [QEGVAR(misc,isLeftLegFree), true, true];
 _unit setVariable [QEGVAR(misc,isRightLegFree), true, true];
-=======
 _unit setVariable [QGVAR(isLeftArmFree), true, true];
 _unit setVariable [QGVAR(isRightArmFree), true, true];
 _unit setVariable [QGVAR(isLeftLegFree), true, true];
 _unit setVariable [QGVAR(isRightLegFree), true, true];
->>>>>>> 3e01878778b7eaacf82763ae62b3ab60904d8d35
 
 _unit setVariable [QGVAR(Tourniquet_ArmNecrosis), 0];
 _unit setVariable [QGVAR(Tourniquet_LegNecrosis), 0];

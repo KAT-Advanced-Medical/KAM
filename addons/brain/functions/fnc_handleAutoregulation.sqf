@@ -15,7 +15,7 @@
  * Public: No
  */
 
- params ["_unit"];
+params ["_unit"];
 
 if (!local _unit) then {
     [QGVAR(handleAutoregulation), [_unit], _unit] call CBA_fnc_targetEvent;
@@ -29,7 +29,7 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(autoregulationPFH),false]) exitWit
     params ["_args", "_idPFH"];
     _args params ["_unit"];
     if !(alive _unit) exitWith {
-        _unit setVariable [QGVAR(activityPFH),false,true];
+        _unit setVariable [QGVAR(autoregulationPFH),false,true];
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
@@ -55,9 +55,12 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(autoregulationPFH),false]) exitWit
     };
 
     private _CBF = round (_CPP/_newCVR);
+    private _CPR = (_CBF/800 * 100) min 200;
+    _CPR = _CPR * (GET_SPO2(_unit)/100);
 
     _unit setVariable [QGVAR(CVR),_newCVR,true];
     _unit setVariable [QGVAR(CBF),_CBF,true];
+    _unit setVariable [QGVAR(CPR),_CPR,true];
 
 }, 3, [_unit]] call CBA_fnc_addPerFrameHandler;
 
