@@ -86,7 +86,6 @@ private _fnc_onConfirm = {
         };
     };
 
-    systemchat format ["%1",_gastype];
     private _radius_max = _display getVariable [QGVAR(ui_radiusMax), 20];
     private _radius_min = _display getVariable [QGVAR(ui_radiusMin), 10];
     if (_radius_min > _radius_max) then {
