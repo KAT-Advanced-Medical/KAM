@@ -16,7 +16,7 @@
 * NONE
 *
 * Example:
-* [player, logic, getPos player, 50, 20, "Toxic"] call kat_chemical_fnc_gasChecklocal;
+* [player, logic, getPos player, 50, 20, 0] call kat_chemical_fnc_gasChecklocal;
 *
 * Public: No
 */
@@ -61,7 +61,7 @@ private _timeEntered = CBA_MissionTime;
     };
 
     private _timeLeft = _unit getVariable [QGVAR(timeleft), 0];
-    if (_timeLeft <= 0) exitWith 
+    if (_timeLeft <= 0) exitWith
     {
         [_handler] call CBA_fnc_removePerFrameHandler;
         [QGVAR(afterWait), [_unit, _logic, _gastype, _radius_max], _unit] call CBA_fnc_targetEvent;
@@ -71,7 +71,7 @@ private _timeEntered = CBA_MissionTime;
     if (_distance < _radius_max) then {
         if !(_unit getVariable [QGVAR(enteredPoison), false]) then {
             _unit setVariable [QGVAR(enteredPoison), true, true];
-            [QGVAR(enteredPoisonEvent), [_unit], _unit] call CBA_fnc_targetEvent;
+            [QGVAR(enteredZone), [_unit], _unit] call CBA_fnc_targetEvent;
             _unit setVariable [QGVAR(Poisen_logic), _logic, true];
         };
 
@@ -84,7 +84,7 @@ private _timeEntered = CBA_MissionTime;
         [_handler] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (_gasType isEqualTo "CS") then {
+    if (_gasType isEqualTo 1) then {
         [_handler] call CBA_fnc_removePerFrameHandler;
         [QGVAR(afterWait), [_unit, _logic, _gasType, _radius_max], _unit] call CBA_fnc_targetEvent;
     };

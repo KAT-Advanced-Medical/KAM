@@ -25,5 +25,4 @@ hideObjectGlobal _smoke;
 
 private _pos = [_posX,_posY,_posZ];
 
-[_pos, 240, 5, 0] call FUNC(createZone);
-
+[QGVAR(createZoneGlobal), [_pos, 240, 5, 0]] call CBA_fnc_globalEventJIP;

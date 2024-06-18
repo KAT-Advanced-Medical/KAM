@@ -117,11 +117,11 @@ class CfgVehicles {
             class GAS_Type
             {
                 displayName = CSTRING(UI_gasType);
-                typeName = "STRING";
+                typeName = "NUMBER";
                 class values {
                     class toxicgas {
                         name = CSTRING(LvL1_Gas);
-                        value = "Toxic";
+                        value = 0;
                         default = 1;
                     };
                    /* class csgas {

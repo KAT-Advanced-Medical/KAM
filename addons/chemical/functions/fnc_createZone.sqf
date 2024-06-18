@@ -21,15 +21,6 @@ params ["_position", "_lifetime", "_radius", "_gasType"];
 
 private _logic = "ACE_LogicDummy" createVehicle _position;
 
-switch (_gasType) do {
-    case 0: {
-        _gasType = "Toxic";
-    };
-    case 1: {
-        _gasType = "CS";
-    }
-};
-
 [_logic, _position, _radius, 0, _gasType] call FUNC(gasCheck);
 private _currentTime = CBA_missionTime;
 
@@ -40,7 +31,6 @@ private _currentTime = CBA_missionTime;
 },
 {
     params ["_logic"];
-
     _logic setVariable [QGVAR(gas_active), false, true];
     deleteVehicle _logic;
 }, [_logic, _lifetime, _currentTime]] call CBA_fnc_waitUntilAndExecute;

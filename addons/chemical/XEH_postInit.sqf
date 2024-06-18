@@ -2,10 +2,11 @@
 
 //Events
 [QGVAR(gasCheck), LINKFUNC(gasCheck)] call CBA_fnc_addEventHandler;
-[QGVAR(gasCheck_local), LINKFUNC(gasCheckLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(gasCheck_ai), LINKFUNC(gasAI)] call CBA_fnc_addEventHandler;
+[QGVAR(gasPlayer), LINKFUNC(gasCheckLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(gasAI), LINKFUNC(gasAI)] call CBA_fnc_addEventHandler;
 [QGVAR(afterWait), LINKFUNC(afterWait)] call CBA_fnc_addEventHandler;
-[QGVAR(enteredPoisonEvent), LINKFUNC(chemDetector)] call CBA_fnc_addEventHandler;
+[QGVAR(enteredZone), LINKFUNC(chemDetector)] call CBA_fnc_addEventHandler;
+[QGVAR(createZoneGlobal), LINKFUNC(createZone)] call CBA_fnc_addEventHandler;
 
 // ACE Events
 [QACEGVAR(medical_gui,updateInjuryListGeneral), LINKFUNC(gui_updateInjuryListGeneral)] call CBA_fnc_addEventHandler;

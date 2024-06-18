@@ -14,7 +14,7 @@
 * NONE
 *
 * Example:
-* [player, logic, "Toxic", 50] call kat_chemical_fnc_afterWait;
+* [player, logic, 0, 50] call kat_chemical_fnc_afterWait;
 *
 * Public: No
 */
@@ -29,7 +29,7 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
     private _isinGas = true;
     [
         {
-            params["_args", "_pfhHandler"];
+            params ["_args", "_pfhHandler"];
             _args params["_unit", "_logic", "_gastype", "_radius_max", "_isinGas"];
 
             if !(_isinGas) exitwith {
@@ -46,11 +46,11 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
             if !((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []]) && _timeleft > 0) then {
                 _unit setVariable [QGVAR(poisonType), _gastype, true];
                 switch (_gastype) do {
-                    case "CS": {
+                    case 1: {
                         _unit setVariable [QGVAR(CS), true, true];
                         [_unit, _logic, _radius_max] call FUNC(handleCSGas);
                     };
-                    case "Toxic": {
+                    case 0: {
                         _unit setVariable [QGVAR(airPoisoning), true, true];
                     };
                 };
@@ -61,11 +61,11 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
             if (_timeleft <= 0 && _unit getVariable [QGVAR(enteredPoison), false]) then {
                 _unit setVariable [QGVAR(poisonType), _gastype, true];
                 switch (_gastype) do {
-                    case "CS": {
+                    case 1: {
                         _unit setVariable [QGVAR(CS), true, true];
                         [_unit, _logic, _radius_max] call FUNC(handleCSGas);
                     };
-                    case "Toxic": {
+                    case 0: {
                         _unit setVariable [QGVAR(airPoisoning), true, true];
                     };
                 };
@@ -85,11 +85,13 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
     if (_unit getVariable [QGVAR(enteredPoison), false]) then {
         _unit setVariable [QGVAR(poisonType), _gastype, true];
         switch (_gastype) do {
-            case "CS": {
+            case 1: {
+                systemChat "CS Gas";
                 _unit setVariable [QGVAR(CS), true, true];
                 [_unit, _logic, _radius_max] call FUNC(handleCSGas);
             };
-            case "Toxic": {
+            case 0: {
+                systemChat "Air Poisoning";
                 _unit setVariable [QGVAR(airPoisoning), true, true];
             };
         };

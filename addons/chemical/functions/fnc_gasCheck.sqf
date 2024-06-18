@@ -59,7 +59,7 @@ private _checkPlayers = {
                 _playerArr pushBack _x;
 
                 _logic setVariable [QGVAR(gas_playerArr), _playerArr, true];
-                [QGVAR(gasCheck_local), [_x, _logic, _position, _radius_max, _radius_min, _gasType], _x] call CBA_fnc_targetEvent;
+                [QGVAR(gasPlayer), [_x, _logic, _position, _radius_max, _radius_min, _gasType], _x] call CBA_fnc_targetEvent;
             } else {
                 if (_x in _playerArr && _distance > _radius_max) then {
 
@@ -69,7 +69,7 @@ private _checkPlayers = {
             };
         } else {
             if (_distance < _radius_max && alive _x && !(_x getVariable [QGVAR(enteredPoison), false])) then {
-                [QGVAR(gasCheck_ai), [_x, _logic, _position, _radius_max, _gasType], _x] call CBA_fnc_targetEvent;
+                [QGVAR(gasAI), [_x, _logic, _position, _radius_max, _gasType], _x] call CBA_fnc_targetEvent;
             };
         };
     } forEach _allUnits;

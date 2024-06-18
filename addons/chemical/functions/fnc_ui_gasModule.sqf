@@ -75,16 +75,7 @@ private _fnc_onConfirm = {
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     if (isNull _logic) exitWith {};
 
-    private _gasTypeValue = _display getVariable [QGVAR(ui_gastype),0];
-    private _gastype = "";
-    switch (_gasTypeValue) do {
-        case 1: { //CS
-            _gastype = "CS";
-        };
-        default { //toxic gas (default)
-            _gastype = "Toxic";
-        };
-    };
+    private _gasType = _display getVariable [QGVAR(ui_gastype),0];
 
     private _radius_max = _display getVariable [QGVAR(ui_radiusMax), 20];
     private _radius_min = _display getVariable [QGVAR(ui_radiusMin), 10];
@@ -95,16 +86,16 @@ private _fnc_onConfirm = {
         if (isNull _logic) exitWith {};
 
         if !(isNull attachedTo _logic) then {
-            private _object = attachedto _logic;
+            private _object = attachedTo _logic;
 
-            [_logic,getPos _object,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
+            [_logic, getPos _object, _radius_max, _radius_min, _gasType] call FUNC(gasCheck);
 
             if (_display getVariable [QGVAR(ui_sealable), false]) then {
-                [_object] call FUNC(createSealAction);
+                [_object, _logic] call FUNC(createSealAction);
             };
 
         } else {
-            [_logic,getPos _logic,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
+            [_logic, getPos _logic, _radius_max, _radius_min, _gasType] call FUNC(gasCheck);
         };
 
         _display setVariable [QGVAR(Confirmed), true];

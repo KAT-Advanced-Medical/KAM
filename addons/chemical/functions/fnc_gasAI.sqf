@@ -15,7 +15,7 @@
  * NONE
  *
  * Example:
- * [player, logic, getPos player, 50, "Toxic"] call kat_chemical_fnc_gasAI;
+ * [player, logic, getPos player, 50, 0] call kat_chemical_fnc_gasAI;
  *
  * Public: No
 */
@@ -55,7 +55,7 @@ if (!isDamageAllowed _unit) exitWith {
                 params ["_unit", "_gastype", "_pos", "_skill"];
 
                 if !((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) exitwith {
-                    if (_gastype isEqualTo "CS") then {
+                    if (_gastype isEqualTo 1) then {
                         if (_unit distance _pos < 10 && _unit getVariable [QGVAR(enteredPoison), false]) then {
                             _unit say3D QGVAR(cough_1);
                             _unit setskill ["aimingAccuracy", 0.001];
@@ -96,7 +96,7 @@ if (!isDamageAllowed _unit) exitWith {
                     [_unit, _gastype, _pos, _skill] call _fnc_afterwait;
                     _i = 2;
                 };
-                if (_gastype isEqualto "CS") exitwith {
+                if (_gastype isEqualTo 1) exitwith {
                     [_unit, _gastype, _pos, _skill] call _fnc_afterwait;
                     _i = 2;
                 };
