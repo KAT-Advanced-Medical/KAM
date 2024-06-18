@@ -27,6 +27,8 @@ if (!isDamageAllowed _unit) exitWith {
     [_unit] call FUNC(fullHealLocal);
 };
 
+private _timeEntered = CBA_MissionTime;
+
 // Function to handle the per-frame logic for gas effects
 
 [{
@@ -42,7 +44,7 @@ if (!isDamageAllowed _unit) exitWith {
 
 [{
     params ["_args", "_handler"];
-    _args params ["_unit", "_logic", "_position", "_radius_max", "_radius_min", "_gasType"];
+    _args params ["_unit", "_logic", "_position", "_radius_max", "_radius_min", "_gasType", "_timeEntered"];
 
     if (!(_logic getVariable [QGVAR(gas_active), false]) || isNull _logic || _unit getVariable [QGVAR(isTreated), false]) exitWith {
         [_handler] call CBA_fnc_removePerFrameHandler;
@@ -58,17 +60,23 @@ if (!isDamageAllowed _unit) exitWith {
         _percent = _dis_to_min / _min_to_max;
     };
 
+    private _timeLeft = _unit getVariable [QGVAR(timeleft), 0];
+    if (_timeLeft <= 0) exitWith 
+    {
+        [_handler] call CBA_fnc_removePerFrameHandler;
+        [QGVAR(afterWait), [_unit, _logic, _gastype, _radius_max], _unit] call CBA_fnc_targetEvent;
+        _unit setVariable [QGVAR(timeleft), 0];
+    };
+
     if (_distance < _radius_max) then {
         if !(_unit getVariable [QGVAR(enteredPoison), false]) then {
             _unit setVariable [QGVAR(enteredPoison), true, true];
             [QGVAR(enteredPoisonEvent), [_unit], _unit] call CBA_fnc_targetEvent;
             _unit setVariable [QGVAR(Poisen_logic), _logic, true];
-            _unit setVariable [QGVAR(timeleft), CBA_missiontime];
         };
 
-        [QGVAR(afterWait), [_unit, _logic, _gasType, _radius_max], _unit] call CBA_fnc_targetEvent;
-        _unit setVariable [QGVAR(timeleft), 0];
-        [_handler] call CBA_fnc_removePerFrameHandler;
+        _timeLeft = (missionNamespace getVariable [QGVAR(infectionTime),60]) - (CBA_MissionTime - _timeEntered);
+        _unit setVariable [QGVAR(timeleft), _timeLeft];
     };
 
     if (_distance > _radius_max || !(_logic getVariable [QGVAR(gas_active), false]) || isNull _logic) then {
@@ -81,4 +89,4 @@ if (!isDamageAllowed _unit) exitWith {
         [QGVAR(afterWait), [_unit, _logic, _gasType, _radius_max], _unit] call CBA_fnc_targetEvent;
     };
 
-}, 2, [_unit, _logic, _position, _radius_max, _radius_min, _gasType]] call CBA_fnc_addPerFrameHandler;
+}, 2, [_unit, _logic, _position, _radius_max, _radius_min, _gasType, _timeEntered]] call CBA_fnc_addPerFrameHandler;
