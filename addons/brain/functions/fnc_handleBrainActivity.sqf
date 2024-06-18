@@ -53,8 +53,14 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 	if 	(_deoxygenatedTicks == GVAR(necrosisThreshold)) then {
 		_necrosis = (_necrosis + GVAR(necrosisIncrease)) min 100;
 		//TODO kill unit when this gets too high
-		_unit setVariable [QGVAR(necrosis),_necrosis,true];
 	};
+
+
+	//Finally, calculate total brain metabolic rate
+	_CMR = 20 * (rO2/80) * ((100-_necrosis)/100);
+
+	_unit setVariable [QGVAR(necrosis),_necrosis,true];
+	_unit setVariable [QGVAR(CMR),_CMR,true];
 
 }, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
 
