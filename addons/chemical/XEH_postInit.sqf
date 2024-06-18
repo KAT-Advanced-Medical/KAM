@@ -19,7 +19,6 @@
 //Mortar Events
 ["Mortar_01_base_F", "fired", {call FUNC(handleFired)}] call CBA_fnc_addClassEventHandler;
 KAT_ProjectileCache = ("([_x, 'KAT_projectile', 0] call BIS_fnc_returnConfigEntry) != 0" configClasses (configFile >> "cfgAmmo")) apply {configName _x};
-[] call FUNC(addLoadAction);
 
 //Grenade Events
 ["ace_firedPlayer", LINKFUNC(throwGrenade)] call CBA_fnc_addEventHandler;

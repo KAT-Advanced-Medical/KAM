@@ -13,14 +13,14 @@
  *
  * Public: No
 */
-params["_target"];
+params ["_target"];
 
 private _action = [
-    "kat_gas_interaction",
+    QGVAR(sealLeak),
     LLSTRING(sealLeak),
     "",
     {
-        params["_target", "_player"];
+        params ["_target", "_player"];
 
         [_player, "Acts_carFixingWheel"] call ACEFUNC(common,doAnimation);
 
@@ -32,7 +32,7 @@ private _action = [
                 params["_args"];
                 _args params ["_target","_player"];
                 _target setVariable [QGVAR(gas_active), false, true];
-                [_target, 0, ["ACE_MainActions", "kat_gas_interaction"]] call ACEFUNC(interact_menu,removeActionFromObject);
+                [_target, 0, ["ACE_MainActions", QGVAR(sealLeak)]] call ACEFUNC(interact_menu,removeActionFromObject);
                 [_player, "kat_sealant"] call ACEFUNC(common,useItem);
             },
             {
@@ -41,7 +41,7 @@ private _action = [
                 [_player, "",1] call ACEFUNC(common,doAnimation);
             },
             LLSTRING(GasModule_SealLeak),
-            {[_player,_player,["kat_sealant"]] call ACEFUNC(medical_treatment,hasItem);},//conditions
+            {[_player, _player, ["kat_sealant"]] call ACEFUNC(medical_treatment,hasItem);},//conditions
             ["isNotInside"]
         ] call ace_common_fnc_progressBar;
     },

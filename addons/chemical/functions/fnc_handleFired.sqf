@@ -25,9 +25,7 @@
 params ["_vehicle", "", "", "", "_ammo", "_magazine", "_projectile"];
 
 // Large enough distance to not simulate any wind deflection
-if (_vehicle distance ACE_player > 8000) exitwith {
-    false
-};
+if (_vehicle distance ACE_player > 8000) exitwith {};
 
 if !(_ammo in KAT_ProjectileCache) exitwith {};
 
@@ -38,14 +36,15 @@ private _radius = [_configClass, "KAT_radius", 10] call BIS_fnc_returnConfigEntr
 private _gasLvL = [_configClass, "KAT_toxicLvL", 1] call BIS_fnc_returnConfigEntry;
 
 [{
-    params["_args", "_handler"];
-    _args params ["_projectile", "_posarr", "_gasinfo"];
-    _gasinfo params ["_lifetime", "_radius", "_gasLvL"];
+    params ["_args", "_handler"];
+    _args params ["_projectile", "_posArr", "_gasInfo"];
+    _gasInfo params ["_lifetime", "_radius", "_gasLvL"];
+
     if (!isNull _projectile) exitwith {
         _args set [1, getPos _projectile];
     };
 
-    [_posarr, _lifetime, _radius, _gasLvL] call FUNC(createZone);
+    [_posArr, _lifetime, _radius, _gasLvL] call FUNC(createZone);
 
     [_handler] call CBA_fnc_removePerFrameHandler;
 }, 0, [_projectile, [0, 0, 0], [_lifetime, _radius, _gasLvL]]] call CBA_fnc_addPerFrameHandler;

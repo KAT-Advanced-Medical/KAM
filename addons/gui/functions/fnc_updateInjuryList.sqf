@@ -52,7 +52,7 @@ if (IS_BLEEDING(_target)) then {
         };
     };
 } else {
-    _entries pushBack [localize ACELSTRING(medical_gui,NOBLEEDING), _nonissueColor];
+    _entries pushBack [localize ACELSTRING(medical_gui,Status_Nobleeding), _nonissueColor];
 };
 
 if (ACEGVAR(medical_gui,showBloodlossEntry)) then {

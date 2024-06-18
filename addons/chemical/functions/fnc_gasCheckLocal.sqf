@@ -21,37 +21,35 @@
 * Public: No
 */
 
-params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
+params ["_unit", "_logic", "_position", "_radius_max", "_radius_min", "_gasType"];
 
 if (!isDamageAllowed _unit) exitWith {
-    [_unit] call FUNC(clearChemicalInjuriesLocal);
+    [_unit] call FUNC(fullHealLocal);
 };
 
 // Function to handle the per-frame logic for gas effects
-private _perFrameHandler = {
-    params ["_args"];
-    _args params ["_logic", "_unit", "_pos"];
+
+[{
+    params ["_args", "_handler"];
+    _args params ["_logic", "_unit", "_position"];
 
     if (_unit getVariable [QGVAR(isTreated), false] || !(_logic getVariable [QGVAR(gas_active), false])) exitWith {
         _unit setVariable [QGVAR(enteredPoison), false, true];
         [_handler] call CBA_fnc_removePerFrameHandler;
     };
-};
 
-private _perFrameHandlerArgs = [_logic, _unit, _pos];
-[_perFrameHandler, 3, _perFrameHandlerArgs] call CBA_fnc_addPerFrameHandler;
+}, 3, [_logic, _unit, _position]] call CBA_fnc_addPerFrameHandler;
 
-// Main per-frame handler to apply gas effects
-private _mainHandler = {
-    params ["_args"];
-    _args params ["_unit", "_logic", "_pos", "_radius_max", "_radius_min", "_gastype"];
+[{
+    params ["_args", "_handler"];
+    _args params ["_unit", "_logic", "_position", "_radius_max", "_radius_min", "_gasType"];
 
     if (!(_logic getVariable [QGVAR(gas_active), false]) || isNull _logic || _unit getVariable [QGVAR(isTreated), false]) exitWith {
         [_handler] call CBA_fnc_removePerFrameHandler;
     };
 
-    _pos = _logic getVariable [QGVAR(gas_pos), [0, 0, 0]];
-    private _distance = _unit distance _pos;
+    _position = _logic getVariable [QGVAR(gas_position), [0, 0, 0]];
+    private _distance = _unit distance _position;
     private _min_to_max = _radius_max - _radius_min;
     private _dis_to_min = _distance - _radius_min;
     private _percent = 0;
@@ -68,7 +66,7 @@ private _mainHandler = {
             _unit setVariable [QGVAR(timeleft), CBA_missiontime];
         };
 
-        [QGVAR(afterWait), [_unit, _logic, _gastype, _radius_max], _unit] call CBA_fnc_targetEvent;
+        [QGVAR(afterWait), [_unit, _logic, _gasType, _radius_max], _unit] call CBA_fnc_targetEvent;
         _unit setVariable [QGVAR(timeleft), 0];
         [_handler] call CBA_fnc_removePerFrameHandler;
     };
@@ -78,11 +76,9 @@ private _mainHandler = {
         [_handler] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (_gastype isEqualTo "CS") then {
+    if (_gasType isEqualTo "CS") then {
         [_handler] call CBA_fnc_removePerFrameHandler;
-        [QGVAR(afterWait), [_unit, _logic, _gastype, _radius_max], _unit] call CBA_fnc_targetEvent;
+        [QGVAR(afterWait), [_unit, _logic, _gasType, _radius_max], _unit] call CBA_fnc_targetEvent;
     };
-};
 
-private _mainHandlerArgs = [_unit, _logic, _pos, _radius_max, _radius_min, _gastype];
-[_mainHandler, 2, _mainHandlerArgs] call CBA_fnc_addPerFrameHandler;
+}, 2, [_unit, _logic, _position, _radius_max, _radius_min, _gasType]] call CBA_fnc_addPerFrameHandler;

@@ -32,9 +32,9 @@ if (_activated) then {
             [_object] call FUNC(createSealaction);
         };
 
-        [_object, _pos, _radius_max, _radius_min, _gastype] spawn FUNC(gasCheck);
+        [_object, _pos, _radius_max, _radius_min, _gastype] call FUNC(gasCheck);
     } else {
         private _pos = getPos _logic;
-        [_logic, _pos, _radius_max, _radius_min, _gastype] spawn FUNC(gasCheck);
+        [_logic, _pos, _radius_max, _radius_min, _gastype] call FUNC(gasCheck);
     };
 };
