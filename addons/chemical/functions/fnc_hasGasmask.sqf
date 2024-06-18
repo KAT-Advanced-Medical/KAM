@@ -15,15 +15,14 @@
  * Public: No
 */
 
-params [["_player", objNull, [objNull]],["_patient", objNull, [objNull]]];
-
+params [["_player", objNull, [objNull]], ["_patient", objNull, [objNull]]];
 
 private _playerArr = _player call ACEFUNC(common,uniqueItems);
 private _playerHasGasmask = false;
-{ if(_x in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_playerHasGasmask = true} } forEach _playerArr;
+{ if (_x in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_playerHasGasmask = true} } forEach _playerArr;
 
 private _patientarr = _patient call ACEFUNC(common,uniqueItems);
-private _patienthasGasmask = false;
-{ if(_x in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_patienthasGasmask = true} } forEach _patientarr;
+private _patientHasGasmask = false;
+{ if (_x in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_patientHasGasmask = true} } forEach _patientarr;
 
-[true, false] select (!_playerHasGasmask && !_patienthasGasmask);
+[true, false] select (!_playerHasGasmask && !_patientHasGasmask);

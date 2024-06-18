@@ -210,7 +210,6 @@ class CfgVehicles {
     };
 
     class APERSTripMine;
-
     class KAT_Gas_TripWireMine: APERSTripMine {
         author = "DiGii";
         ammo = "KAT_Gas_TripWireMine_Ammo";

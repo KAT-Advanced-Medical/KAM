@@ -18,8 +18,8 @@
 params ["_control"];
 
 private _display = ctrlParent _control;
-private _ctrlButtonOK = _display displayCtrl IDC_OK;
-private _ctrlButtonCancel = _display displayCtrl IDC_CANCEL;
+private _ctrlButtonOK = _display displayCtrl 1;
+private _ctrlButtonCancel = _display displayCtrl 2;
 private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
 
 _control ctrlRemoveAllEventHandlers "SetFocus";
@@ -112,7 +112,6 @@ private _fnc_onConfirm = {
     };
 };
 
-systemchat "eventy";
 _display displayAddEventHandler ["Unload", _fnc_onUnload];
 _ctrlButtonOK ctrlAddEventHandler ["ButtonClick", _fnc_onConfirm];
 
