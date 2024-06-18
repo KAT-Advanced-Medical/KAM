@@ -18,6 +18,26 @@ PREP_RECOMPILE_END;
 	true
 ] call CBA_Settings_fnc_init;
 
+//Minimum damage required for a concussion to occur
+[
+	QGVAR(concussionDamage),
+    "SLIDER",
+    [LLSTRING(SETTING_concussionDamage)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
+    [0, 2, 1, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//Chance of a concussion occuring
+[
+	QGVAR(concussionChance),
+    "SLIDER",
+    [LLSTRING(SETTING_concussionChance)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
+    [0, 100, 5, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // Number of ticks required until tissue necrosis begins to occur
 [
 	QGVAR(necrosisTicks),
@@ -27,6 +47,7 @@ PREP_RECOMPILE_END;
     [1, 60, 10, 0],
     true
 ] call CBA_Settings_fnc_init;
+
 // rO2 value required before necrosis occurs
 [
 	QGVAR(necrosisThreshold),
