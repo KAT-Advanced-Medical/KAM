@@ -16,9 +16,12 @@ class CfgMagazines {
         tracersEvery = 0;
         lastRoundsTracer = 0;
         mass = 0.5;
+        ACE_isMedicalItem = 1;
+        ACE_asItem = 1;
+
     };
     class kat_Carbonate: CA_Magazine {
-        author = "Katalam";
+        author = "Mazinski";
         scope = 2;
 
         displayName = CSTRING(Carbonate_Box_Display);
@@ -32,6 +35,8 @@ class CfgMagazines {
         tracersEvery = 0;
         lastRoundsTracer = 0;
         mass = 1;
+        ACE_isMedicalItem = 1;
+        ACE_asItem = 1;
     };
     class kat_Pervitin: CA_Magazine {
         author = "Miss Heda";
@@ -48,6 +53,8 @@ class CfgMagazines {
         tracersEvery = 0;
         lastRoundsTracer = 0;
         mass = 1;
+        ACE_isMedicalItem = 1;
+        ACE_asItem = 1;
     };
     class kat_Caffeine: CA_Magazine {
         author = "Miss Heda";
@@ -64,6 +71,8 @@ class CfgMagazines {
         tracersEvery = 0;
         lastRoundsTracer = 0;
         mass = 1;
+        ACE_isMedicalItem = 1;
+        ACE_asItem = 1;
     };
     class kat_Penthrox: CA_Magazine {
         author = "Blue";
@@ -80,5 +89,7 @@ class CfgMagazines {
         tracersEvery = 0;
         lastRoundsTracer = 0;
         mass = 1;
+        ACE_isMedicalItem = 1;
+        ACE_asItem = 1;
     };
 };
