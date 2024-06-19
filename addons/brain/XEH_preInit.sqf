@@ -58,6 +58,27 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Minimum ICP required for bradycardia to occur as a result
+[
+	QGVAR(ICPbradycardiaThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_ICPbradycardiaThreshold)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
+    [20, 70, 40, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+
+//Chance of bradycardia occuring
+[
+	QGVAR(ICPbradycardiaChance),
+    "SLIDER",
+    [LLSTRING(SETTING_ICPbradycardiaChance)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
+    [0, 100, 15, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // Number of ticks required until tissue necrosis begins to occur
 [
 	QGVAR(necrosisTicks),

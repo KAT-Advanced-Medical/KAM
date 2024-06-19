@@ -63,9 +63,10 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 	_unit setVariable [QGVAR(necrosis),_necrosis,true];
 	_unit setVariable [QGVAR(CMR),_CMR,true];
 
+	private _ICP = _unit getVariable [QGVAR(ICP),15];
 	//Reduce ICP if no longer swelling
 	if (_unit getVariable [QGVAR(concussionPFH),0] isEqualTo 0) then {
-		private _ICP = _unit getVariable [QGVAR(ICP),15];
+		
 		private _newICP = _ICP - GVAR(ICPreduction);
 		
 		// Set "floors" for ICP, preventing ICP from returning to normal levels without pain suppression
@@ -84,6 +85,21 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 		};
 		_newICP = 15 max _newICP;
 		_unit setVariable [QGVAR(ICP),_newICP,true];
+	};
+
+	//Chance to cause bradycardia if ICP is too high
+	if (_ICP >= GVAR(ICPbradycardiaThreshold)) then {
+		if !(floor (random 100) <= GVAR(ICPbradycardiaChance)) exitWith {};
+		
+		scopeName "causeBradycardia";
+		{ //Prevent adding bradycardia if it already exists
+			_x params ["_medication"];
+			if (_medication isEqualTo "BRADYCARDIA") exitWith {
+				breakOut "causeBradycardia";
+			};
+		} forEach (_unit getVariable [QACEGVAR(medical,medications), []]);
+		
+		[_unit, "BRADYCARDIA", 120, 1200, -40, 0, 0] call ACEFUNC(medical_status,addMedicationAdjustment);
 	};
 
 }, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
