@@ -18,7 +18,6 @@ class CfgMagazines {
         mass = 0.5;
         ACE_isMedicalItem = 1;
         ACE_asItem = 1;
-
     };
     class kat_Carbonate: CA_Magazine {
         author = "Mazinski";
