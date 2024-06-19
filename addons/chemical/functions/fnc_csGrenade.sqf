@@ -59,7 +59,7 @@ private _nearLocalEnemies = [];
 } forEach _nearLocalEnemies;
 
 
-private _particleSource = "#particlesource" createVehicle _position;
+private _particleSource = "#particlesource" createVehicleLocal _position;
 
 //Particle options
 _particleSource setParticleParams [

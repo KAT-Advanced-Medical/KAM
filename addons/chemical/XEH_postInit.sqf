@@ -7,6 +7,7 @@
 [QGVAR(afterWait), LINKFUNC(afterWait)] call CBA_fnc_addEventHandler;
 [QGVAR(enteredZone), LINKFUNC(chemDetector)] call CBA_fnc_addEventHandler;
 [QGVAR(createZoneGlobal), LINKFUNC(createZone)] call CBA_fnc_addEventHandler;
+[QGVAR(createSealActionGlobal), LINKFUNC(createSealAction)] call CBA_fnc_addEventHandler;
 
 // ACE Events
 [QACEGVAR(medical_gui,updateInjuryListGeneral), LINKFUNC(gui_updateInjuryListGeneral)] call CBA_fnc_addEventHandler;
