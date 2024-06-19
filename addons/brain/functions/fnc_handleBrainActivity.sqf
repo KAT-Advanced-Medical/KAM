@@ -98,10 +98,15 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 				breakOut "causeBradycardia";
 			};
 		} forEach (_unit getVariable [QACEGVAR(medical,medications), []]);
-		
+
 		[_unit, "BRADYCARDIA", 120, 1200, -40, 0, 0] call ACEFUNC(medical_status,addMedicationAdjustment);
 	};
 
+	//Cause LOC if CMR becomes too low
+	if (_CMR <= GVAR(CMRunconsciousThreshold) && !(_unit getVariable ["ACE_isUnconscious",false])) then {
+		if (!(floor (random 100) <= GVAR(CMRunconsciousChance)) && (_CMR >= GVAR(stableCMR))) exitWith {};
+		[QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
+	};
 }, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
 
 true;

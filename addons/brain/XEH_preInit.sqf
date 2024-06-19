@@ -23,8 +23,38 @@ PREP_RECOMPILE_END;
 	QGVAR(ICPreduction),
     "SLIDER",
     [LLSTRING(SETTING_ICPreduction)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [0, 2, 0.3, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Minimum CMR to sustain consciousness. Not achieving will prevent awakening
+[
+	QGVAR(stableCMR),
+    "SLIDER",
+    [LLSTRING(SETTING_stableCMR)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 20, 16, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Minimum CMR required for unit to pass out randomly
+[
+	QGVAR(CMRunconsciousThreshold),
+    "SLIDER",
+    [LLSTRING(SETTING_CMRunconsciousThreshold)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 20, 18, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+//Chance for a unit to pass out randomly from low CMR
+[
+	QGVAR(CMRunconsciousChance),
+    "SLIDER",
+    [LLSTRING(SETTING_concussionChance)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0, 100, 20, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -64,7 +94,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_ICPbradycardiaThreshold)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
-    [20, 70, 40, 1],
+    [20, 70, 50, 1],
     true
 ] call CBA_Settings_fnc_init;
 

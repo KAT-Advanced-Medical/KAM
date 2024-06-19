@@ -63,7 +63,7 @@ if (floor (random 100) <= _concussionChance) then {
 			[_existingPFH] call CBA_fnc_removePerFrameHandler;
 		};
 
-		private _maxICPIncrease = linearConversion [0,1,_newSeverity,0,40];
+		private _maxICPIncrease = linearConversion [0,1,_newSeverity,0,50];
 		private _newPFH = [{
 			params ["_args", "_idPFH"];
 			_args params ["_unit","_severity","_maxICPIncrease"];
@@ -82,7 +82,7 @@ if (floor (random 100) <= _concussionChance) then {
 				[_idPFH] call CBA_fnc_removePerFrameHandler;
 			};
 			
-			private _ICPincrease = linearConversion [0,1,_severity,0,1.2,true];
+			private _ICPincrease = linearConversion [0,1,_severity,0,2,true];
 			_unit setVariable [QGVAR(ICP),_ICP+_ICPincrease,true]; //Increase ICP by concussion severity
 
 		}, 10, [_unit,_newSeverity,_maxICPIncrease]] call CBA_fnc_addPerFrameHandler;
