@@ -41,20 +41,20 @@ if (floor (random 100) <= _concussionChance) then {
 		// Add instantaneous effects from concussions
 		if (_damage > GVAR(necrosisImpactDamage)) then { // Cause instant necrosis if threshold is surpassed
 			private _necrosis = _unit getVariable [QGVAR(necrosis),0];
-			private _newNecrosis = linearConversion [0, 3,_damage,0,1,true]; //Increase tissue necrosis by 1% max on impact
+			private _newNecrosis = linearConversion [0, 3,_damage,0,4,true]; //Increase tissue necrosis by 1% max on impact
 			if (_newNecrosis > _necrosis) then { // Prevent reverting existing necrosis levels
 				_unit setVariable [QGVAR(necrosis),_newNecrosis,true]; 
 			};
 		};
 		if (_damage > GVAR(tissueImpactDamage)) then { // Cause reversible tissue damage if threshold is surpassed
 			private _reversibleDamage = _unit getVariable [QGVAR(reversibleDamage),0];
-			_reversibleDamage = _reversibleDamage + (linearConversion [0,3,_damage,0,5,true]); //Increase reversible damage by max 5% on impact
+			_reversibleDamage = _reversibleDamage + (linearConversion [0,3,_damage,0,15,true]); //Increase reversible damage by max 5% on impact
 			_unit setVariable [QGVAR(reversibleDamage),_reversibleDamage,true];
 		};
 
 		// Increase ICP to a base level depending on damage taken
 		private _ICP = _unit getVariable [QGVAR(ICP),10];
-		private _ICPincrease = linearConversion [0, 1,_damage,0,2,true];
+		private _ICPincrease = linearConversion [0, 1,_damage,1,3,true];
 		_unit setVariable [QGVAR(ICP),_ICP+_damage,true];
 
 		// Set up PFH
@@ -63,7 +63,7 @@ if (floor (random 100) <= _concussionChance) then {
 			[_existingPFH] call CBA_fnc_removePerFrameHandler;
 		};
 
-		private _maxICPIncrease = linearConversion [0,1,_newSeverity,10,40];
+		private _maxICPIncrease = linearConversion [0,1,_newSeverity,0,40];
 		private _newPFH = [{
 			params ["_args", "_idPFH"];
 			_args params ["_unit","_severity","_maxICPIncrease"];
@@ -82,7 +82,7 @@ if (floor (random 100) <= _concussionChance) then {
 				[_idPFH] call CBA_fnc_removePerFrameHandler;
 			};
 			
-			private _ICPincrease = linearConversion [0,1,_severity,0,0.6,true];
+			private _ICPincrease = linearConversion [0,1,_severity,0,1.2,true];
 			_unit setVariable [QGVAR(ICP),_ICP+_ICPincrease,true]; //Increase ICP by concussion severity
 
 		}, 10, [_unit,_newSeverity,_maxICPIncrease]] call CBA_fnc_addPerFrameHandler;

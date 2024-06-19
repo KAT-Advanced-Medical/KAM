@@ -18,6 +18,16 @@ PREP_RECOMPILE_END;
 	true
 ] call CBA_Settings_fnc_init;
 
+//Amount to reduce ICP by when brain is not actively swelling
+[
+	QGVAR(ICPreduction),
+    "SLIDER",
+    [LLSTRING(SETTING_ICPreduction)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Basic)],
+    [0, 2, 0.3, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 //Chance of a concussion occuring
 [
 	QGVAR(concussionChance),
@@ -34,7 +44,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_tissueImpactDamage)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
-    [1, 3, 0.3, 1],
+    [0, 2, 0.3, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -44,7 +54,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_necrosisImpactDamage)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
-    [1, 3, 0.9, 1],
+    [0, 2, 0.8, 1],
     true
 ] call CBA_Settings_fnc_init;
 

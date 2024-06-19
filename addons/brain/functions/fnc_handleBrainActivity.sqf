@@ -63,6 +63,29 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 	_unit setVariable [QGVAR(necrosis),_necrosis,true];
 	_unit setVariable [QGVAR(CMR),_CMR,true];
 
+	//Reduce ICP if no longer swelling
+	if (_unit getVariable [QGVAR(concussionPFH),0] isEqualTo 0) then {
+		private _ICP = _unit getVariable [QGVAR(ICP),15];
+		private _newICP = _ICP - GVAR(ICPreduction);
+		
+		// Set "floors" for ICP, preventing ICP from returning to normal levels without pain suppression
+		if (GET_PAIN_SUPPRESS(_unit) < 0.6) then {
+			switch (true) do {
+				case (ICP >= 45): {
+					_newICP = 45 max _newICP;
+				};
+				case (ICP >= 38): {
+					_newICP = 38 max _newICP;
+				};
+				default { //Prevent ICP from returning to normal without medication
+					_newICP = 25 max _newICP;
+				};
+			};
+		};
+		_newICP = 15 max _newICP;
+		_unit setVariable [QGVAR(ICP),_newICP,true];
+	};
+
 }, 15, [_unit]] call CBA_fnc_addPerFrameHandler;
 
 true;
