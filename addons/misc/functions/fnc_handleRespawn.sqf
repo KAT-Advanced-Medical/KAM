@@ -38,7 +38,7 @@ _unit setVariable [QEGVAR(airway,clearedTime), 0, true];
 _unit setVariable [QEGVAR(brain,CMR),20,true];
 _unit setVariable [QEGVAR(brain,CBF),800,true];
 _unit setVariable [QEGVAR(brain,CVR),0.1,true];
-_unit setVariable [QEGVAR(brain,ICP),10,true];
+_unit setVariable [QEGVAR(brain,ICP),15,true];
 _unit setVariable [QEGVAR(brain,CPR),100,true];
 _unit setVariable [QEGVAR(brain,rO2),80,true];
 _unit setVariable [QEGVAR(brain,necrosis),0,true];

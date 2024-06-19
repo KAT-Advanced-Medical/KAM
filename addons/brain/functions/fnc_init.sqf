@@ -23,7 +23,7 @@ if !(GVAR(enable)) exitWith {};
 _unit setVariable [QGVAR(CMR),20,true]; // Cerebral Metabolic Rate
 _unit setVariable [QGVAR(CBF),800,true]; // Cerebral Blood Flow
 _unit setVariable [QGVAR(CVR),0.1,true]; // Cerebral Vascular Resistance
-_unit setVariable [QGVAR(ICP),10,true]; // Intracranial Pressure
+_unit setVariable [QGVAR(ICP),15,true]; // Intracranial Pressure
 _unit setVariable [QGVAR(CPR),100,true]; // Cerebral Perfusion Rate
 _unit setVariable [QGVAR(rO2),80,true]; // Brain O2 saturation
 

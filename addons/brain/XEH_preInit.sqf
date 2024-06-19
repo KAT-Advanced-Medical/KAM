@@ -28,6 +28,26 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Minimum impact damage required to cause healable tissue damage upon receiving a concussion
+[
+	QGVAR(tissueImpactDamage),
+    "SLIDER",
+    [LLSTRING(SETTING_tissueImpactDamage)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
+    [1, 3, 0.3, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+// Minimum impact damage required to cause instant tissue necrosis upon receiving a concussion
+[
+	QGVAR(necrosisImpactDamage),
+    "SLIDER",
+    [LLSTRING(SETTING_necrosisImpactDamage)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
+    [1, 3, 0.9, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // Number of ticks required until tissue necrosis begins to occur
 [
 	QGVAR(necrosisTicks),
@@ -44,7 +64,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_necrosisThreshold)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_BrainDeath)],
-    [1, 80, 50, 0],
+    [1, 80, 60, 0],
     true
 ] call CBA_Settings_fnc_init;
 
