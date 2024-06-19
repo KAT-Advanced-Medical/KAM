@@ -46,6 +46,8 @@ _unit setVariable [QGVAR(deoxygenatedTicks),0,true];
 _unit setVariable [QEGVAR(brain,reversibleDamage),0,true];
 _unit setVariable [QEGVAR(brain,autoregulationPFH), [_unit] call EFUNC(brain,handleAutoregulation),true];
 _unit setVariable [QEGVAR(brain,activityPFH), [_unit] call EFUNC(brain,handleBrainActivity),true];
+_unit setVariable [QEGVAR(brain,concussionPFH),0,true];
+_unit setVariable [QEGVAR(brain,concussionSeverity),0,true];
 
 
 // KAT Breathing

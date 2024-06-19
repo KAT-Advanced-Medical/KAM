@@ -24,9 +24,32 @@
 _allDamages select 0 params ["_damage", "_bodyPart"];
 
 if (!(GVAR(enable)) || !(_bodyPart isEqualTo "Head")) exitWith {};
-if (_damage < GVAR(concussionDamage)) exitWith {};
-if (!(_ammo in ["vehiclehit","explosive","shell","vehiclecrash"])) exitWith {};
 
+// Increase the chance based on how much damage was received 
+private _chanceIncrease = linearConversion [0,1,_damage,5,30,true];
 // Increase the chance of concussions depending on the damage type
-private _chanceIncrease = linearConversion [0,3,(["vehiclehit","explosive","shell","vehiclecrash"] find _ammo),1,1.5,true];
-private _concussionChance = GVAR(concussionChance) * _chanceIncrease
+private _chanceMultiplier = linearConversion [0,3,(["vehiclehit","explosive","shell","vehiclecrash"] find _ammo),1,1.5,true];
+
+private _concussionChance = (GVAR(concussionChance) + _chanceIncrease) * _chanceMultiplier;
+if (floor (random 100) <= _concussionChance) then {
+	private _currentSeverity = _unit getVariable [QGVAR(concussionSeverity),0])
+	private _newSeverity = linearConversion [0, 3,_damage,0,1,true];
+	if (_newSeverity > _currentSeverity) then { //Replace the current concussion with the more severe one
+		if !(_currentSeverity isEqualTo 0) then { //Delete the existing concussion PFH if it exists
+			private _existingPFH = _unit getVariable [QGVAR(concussionPFH),0];
+			[_existingPFH] call CBA_fnc_removePerFrameHandler;
+		}
+		
+		[{
+		params ["_args", "_idPFH"];
+		_args params ["_unit","_severity"];
+		if !(alive _unit) exitWith {
+			_unit setVariable [QGVAR(concussionPFH),0,true];
+			_unit setVariable [QGVAR(concussionSeverity),0,true];
+			[_idPFH] call CBA_fnc_removePerFrameHandler;
+		};
+
+		}, 15, [_unit,_newSeverity]] call CBA_fnc_addPerFrameHandler;
+	}
+	
+};

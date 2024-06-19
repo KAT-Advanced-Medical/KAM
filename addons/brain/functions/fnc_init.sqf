@@ -33,3 +33,6 @@ _unit setVariable [QGVAR(reversibleDamage),0,true];
 
 _unit setVariable [QGVAR(autoregulationPFH), [_unit] call FUNC(handleAutoregulation),true];
 _unit setVariable [QGVAR(activityPFH), [_unit] call FUNC(handleBrainActivity),true];
+
+_unit setVariable [QGVAR(concussionPFH),0,true];
+_unit setVariable [QGVAR(concussionSeverity),0,true];

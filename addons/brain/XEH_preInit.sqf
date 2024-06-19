@@ -18,16 +18,6 @@ PREP_RECOMPILE_END;
 	true
 ] call CBA_Settings_fnc_init;
 
-//Minimum damage required for a concussion to occur
-[
-	QGVAR(concussionDamage),
-    "SLIDER",
-    [LLSTRING(SETTING_concussionDamage)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Concussions)],
-    [0, 2, 1, 1],
-    true
-] call CBA_Settings_fnc_init;
-
 //Chance of a concussion occuring
 [
 	QGVAR(concussionChance),
