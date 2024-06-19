@@ -58,7 +58,7 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 	private _reversibleDamage = _unit getVariable [QGVAR(reversibleDamage),0];
 
 	//Finally, calculate total brain metabolic rate
-	_CMR = 20 * (rO2/80) * ((100-_necrosis)/100) * ((100-_reversibleDamage)/100);
+	private _CMR = 20 * (_rO2/80) * ((100-_necrosis)/100) * ((100-_reversibleDamage)/100);
 
 	_unit setVariable [QGVAR(necrosis),_necrosis,true];
 	_unit setVariable [QGVAR(CMR),_CMR,true];
