@@ -36,7 +36,7 @@ if (_ammo in ["vehiclehit","explosive","shell","vehiclecrash"]) then {
 private _concussionChance = (GVAR(concussionChance) + _chanceIncrease) * _chanceMultiplier;
 if (floor (random 100) <= _concussionChance) then {
 	private _currentSeverity = _unit getVariable [QGVAR(concussionSeverity),0];
-	private _newSeverity = linearConversion [0, 1,_damage,0,0.6,true];
+	private _newSeverity = linearConversion [0, 2,_damage,0,1,true];
 	if (_newSeverity > _currentSeverity) then { //Replace the current concussion with the more severe one
 		// Add instantaneous effects from concussions
 		if (_damage > GVAR(necrosisImpactDamage)) then { // Cause instant necrosis if threshold is surpassed
@@ -62,9 +62,11 @@ if (floor (random 100) <= _concussionChance) then {
 			private _existingPFH = _unit getVariable [QGVAR(concussionPFH),0];
 			[_existingPFH] call CBA_fnc_removePerFrameHandler;
 		};
+
+		private _maxICPIncrease = linearConversion [0,1,_newSeverity,10,40];
 		private _newPFH = [{
 			params ["_args", "_idPFH"];
-			_args params ["_unit","_severity"];
+			_args params ["_unit","_severity","_maxICPIncrease"];
 			if !(alive _unit) exitWith {
 				_unit setVariable [QGVAR(concussionPFH),0,true];
 				_unit setVariable [QGVAR(concussionSeverity),0,true];
@@ -72,9 +74,18 @@ if (floor (random 100) <= _concussionChance) then {
 			};
 
 			private _ICP = _unit getVariable [QGVAR(ICP),10];
-			_unit setVariable [QGVAR(ICP),_ICP+_severity,true]; //Increase ICP by concussion severity
+			
+			//Kill the concussion once ICP reaches the limit for the concussion's severity
+			if (_ICP >= (20+_maxICPIncrease)) exitWith {
+				_unit setVariable [QGVAR(concussionPFH),0,true];
+				_unit setVariable [QGVAR(concussionSeverity),0,true];
+				[_idPFH] call CBA_fnc_removePerFrameHandler;
+			};
+			
+			private _ICPincrease = linearConversion [0,1,_severity,0,0.6,true];
+			_unit setVariable [QGVAR(ICP),_ICP+_ICPincrease,true]; //Increase ICP by concussion severity
 
-		}, 10, [_unit,_newSeverity]] call CBA_fnc_addPerFrameHandler;
+		}, 10, [_unit,_newSeverity,_maxICPIncrease]] call CBA_fnc_addPerFrameHandler;
 		
 		_unit setVariable [QGVAR(concussionPFH),_newPFH,true];
 		_unit setVariable [QGVAR(concussionSeverity),_newSeverity,true];
