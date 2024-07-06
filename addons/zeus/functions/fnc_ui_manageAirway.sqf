@@ -127,7 +127,7 @@ private _fnc_onConfirm = {
     _unit setVariable [QEGVAR(breathing,airwayStatus), round(sliderPosition (_display displayCtrl 16106)), true];
 
     if (_curSpO2Val isEqualTo 100 || _initBreathing) then {
-        [_unit] call EFUNC(breathing,handleBreathing);
+        //[_unit] call EFUNC(breathing,handleBreathing);
     };
 
     if (_pneumothorax isEqualTo 0 && !(_valueArr select 2) && !(_valueArr select 3)) then {

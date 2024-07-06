@@ -70,4 +70,12 @@ class CfgFunctions {
             };
         };
     };
+    class overwrite_ace_medical_vitals {
+        tag = "ace_medical_vitals";
+        class ace_medical_vitals {
+            class handleUnitVitals {
+                file = QPATHTOF(functions\fnc_handleUnitVitals.sqf);
+            };
+        };
+    };
 };

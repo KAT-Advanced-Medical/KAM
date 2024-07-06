@@ -185,6 +185,8 @@
 
 #define GET_OPIOID_FACTOR(unit)           (unit getVariable [QEGVAR(pharma,opioidFactor), 1])
 
+#define GET_KAT_SPO2(unit)          (unit getVariable [QEGVAR(breathing,airwayStatus), 1])
+
 #undef GET_DAMAGE_THRESHOLD
 #define GET_DAMAGE_THRESHOLD(unit)  ((unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)]) * GET_OPIOID_FACTOR(unit))
 
@@ -270,8 +272,14 @@
 #define ALL_BODY_PARTS_PRIORITY ["body", "head", "leftarm", "rightarm", "leftleg", "rightleg"]
 
 // Airway
+#define OXYGEN_PERCENTAGE_CRITICAL 85
+#define OXYGEN_PERCENTAGE_ARREST 80
+#define OXYGEN_PERCENTAGE_FATAL 75
+
 #define VAR_SPO2                       QEGVAR(breathing,airwayStatus)
+#define VAR_SURFACEAREA 0.3897
 #define GET_SPO2(unit)                 (unit getVariable [VAR_SPO2, 100])
+#define GET_KAT_SURFACEAREA(unit)      (VAR_SURFACEAREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) + 1) / 20))
 
 // Circulation
 #define VAR_INTERNAL_BLEEDING          QEGVAR(circulation,internalBleeding)

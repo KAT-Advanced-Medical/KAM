@@ -54,7 +54,7 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
                         [_unit, _logic, _radius_max] call FUNC(handleCSGas);
                     };
                 };
-                [_unit] call EFUNC(breathing,handleBreathing);
+                //[_unit] call EFUNC(breathing,handleBreathing);
                 _isinGas = false;
             };
 
@@ -69,7 +69,7 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
                         [_unit, _logic, _radius_max] call FUNC(handleCSGas);
                     };
                 };
-                [_unit] call EFUNC(breathing,handleBreathing);
+                //[_unit] call EFUNC(breathing,handleBreathing);
                 _isinGas = false;
             };
 
@@ -93,6 +93,6 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
                 [_unit, _logic, _radius_max] call FUNC(handleCSGas);
             };
         };
-        [_unit] call EFUNC(breathing,handleBreathing);
+        //[_unit] call EFUNC(breathing,handleBreathing);
     };
 };
