@@ -12,13 +12,19 @@ if !(GVAR(enable)) exitWith {};
 
 [QGVAR(airwayFeedback), {
     params ["_medic","_output"];
-    [_output, 1.5, _medic] call ACEFUNC(common,displayTextStructured);
+    [_output, 2, _medic] call ACEFUNC(common,displayTextStructured);
 }] call CBA_fnc_addEventHandler;
 
+[QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
+
+[QACEGVAR(medical_gui,updateInjuryListGeneral), LINKFUNC(gui_updateInjuryListGeneral)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_gui,updateInjuryListPart), LINKFUNC(gui_updateInjuryListPart)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_gui,updateBodyImage), LINKFUNC(gui_updateBodyImage)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
 ["ace_unconscious", {
     params ["_unit", "_state"];
     if !(_state) exitWith {
-        _unit call FUNC(init);
+        [_unit] call FUNC(init);
     };
 
     private _alive = alive _unit;

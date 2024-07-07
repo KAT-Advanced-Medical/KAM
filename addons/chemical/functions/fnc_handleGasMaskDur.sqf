@@ -1,7 +1,7 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
- * 
+ *
  * Arguments:
  * 0: Unit <OBJECT>
  *
@@ -40,11 +40,11 @@ params ["_unit"];
 
                 private _timeLeft = _maxTime - (CBA_missionTime - _timeEntered);
                 private _percent = round ((10/_maxTime)*_timeLeft);
-                
+
                 if(_currentDurability != _percent) then {
                     _unit setVariable [QGVAR(gasmask_durability),_percent];
                 };
-        
+
                 if(_currentDurability <= 0 || _percent <= 0 || !(alive _unit)) exitWith {
                     [_handler] call CBA_fnc_removePerFrameHandler;
                     _unit setVariable [QGVAR(gasmask_durability),0];

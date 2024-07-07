@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Mazinski.H
  * Locates and Removes Bradycardia Effect.
@@ -14,7 +14,7 @@
  *
  * Public: No
  */
- 
+
 params ["_patient"];
 
 private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
@@ -28,11 +28,3 @@ private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), 
 } forEach (_medicationArray);
 
 _patient setVariable [QACEGVAR(medical,medications), _medicationArray, true];
-
-_patient setVariable [QEGVAR(chemical,airPoisoning) ,false,true];
-_patient setVariable [QEGVAR(chemical,isTreated) ,true,true];
-_patient setVariable [QEGVAR(chemical,enteredPoison),false,true];
-_patient setVariable [QEGVAR(chemical,timeleft), missionNamespace getVariable [QEGVAR(chemical,infectionTime), 60], true];
-if (_patient getVariable [QEGVAR(chemical,painEffect),0] != 0) then {
-    KAT_PAIN_EFFECT ppEffectEnable false;
-};

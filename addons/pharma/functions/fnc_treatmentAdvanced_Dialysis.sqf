@@ -1,6 +1,6 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
- * Author: 1LT.Mazinski.H
+ * Author: Mazinski
  * Treatment call for dialysis procedure
  *
  * Arguments:
@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, cursorTarget] call kat_surgery_fnc_treatmentAdvanced_Dialysis
+ * [player, cursorTarget] call kat_pharma_fnc_treatmentAdvanced_Dialysis
  *
  * Public: Yes
  */

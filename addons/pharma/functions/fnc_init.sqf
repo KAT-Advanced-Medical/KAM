@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * Initializes unit variables.
@@ -19,27 +19,7 @@ params ["_unit", ["_isRespawn", true]];
 
 if (!local _unit) exitWith {};
 
-_unit setVariable [QGVAR(IV), [0,0,0,0,0,0], true];
-_unit setVariable [QGVAR(IVpfh), [0,0,0,0,0,0], true];
-
-/*
-* 0 = No IV
-* 1 = IO
-* 2 = IV
-* 3 = IV w/ Block
-* 4 = IV w/ Flush
-*/
-
-_unit setVariable [QGVAR(active), false, true];
-_unit setVariable [QGVAR(alphaAction), 1];
-
-_unit setVariable [QGVAR(TXA), 1, true];
-
-_unit setVariable [QGVAR(pH), 1500, true];
-_unit setVariable [QGVAR(coagulationFactor), 10, true];
-_unit setVariable [QGVAR(kidneyFail), false, true];
-_unit setVariable [QGVAR(kidneyArrest), false, true];
-_unit setVariable [QGVAR(kidneyPressure), false, true];
+[_unit] call FUNC(fullHealLocal);
 
 [{
     params ["_args", "_idPFH"];
@@ -52,18 +32,30 @@ _unit setVariable [QGVAR(kidneyPressure), false, true];
     };
 
     private _medicationArray = _unit getVariable [QACEGVAR(medical,medications), []];
-    private _action = false;
+    private _alpha = false;
+    private _opioid = false;
 
     {
         _x params ["_medication"];
 
         if (_medication in ["Epinephrine", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
-            _action = true;
+            _alpha = true;
         };
     } forEach (_medicationArray);
 
-    if !(_action) then {
+    {
+        _x params ["_medication"];
+
+        if (_medication in ["Fentanyl", "Morphine", "Nalbuphine"]) exitWith {
+            _opioid = true;
+        };
+    } forEach (_medicationArray);
+
+    if !(_alpha) then {
         _unit setVariable [QGVAR(alphaAction), 1];
+    };
+    if !(_opioid) then {
+        _unit setVariable [QGVAR(opioidFactor), 1];
     };
 }, 180, [_unit]] call CBA_fnc_addPerFrameHandler;
 
@@ -129,7 +121,7 @@ if (GVAR(coagulation)) then {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, []];
+        private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, createHashMap];
         private _pulse = _unit getVariable [VAR_HEART_RATE, 80];
         private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 10];
 
@@ -141,25 +133,27 @@ if (GVAR(coagulation)) then {
 
         if (_count == 0) exitWith {
             {
-                _x params ["", "_bodyPart", "_amount", "_bleeding"];
-
-                if (_amount * _bleeding > 0) exitWith {
-                    private _part = ALL_BODY_PARTS select _bodyPart;
-                    [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
-                    _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
-                };
+                private _part = _x;
+                {
+                    _x params ["", "_amountOf", "_bleeding"];
+                    if (_amountOf * _bleeding > 0) exitWith {
+                        [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "UnstableClot"], _unit] call CBA_fnc_targetEvent;
+                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
+                    };
+                } forEach _y;
             } forEach _openWounds;
         };
 
         if (_count > 0) exitWith {
             {
-                _x params ["", "_bodyPart", "_amount", "_bleeding"];
-
-                if (_amount * _bleeding > 0) exitWith {
-                    private _part = ALL_BODY_PARTS select _bodyPart;
-                    [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
-                    _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
-                };
+                private _part = _x;
+                {
+                    _x params ["", "_amountOf", "_bleeding"];
+                    if (_amountOf * _bleeding > 0) exitWith {
+                        [QACEGVAR(medical_treatment,bandageLocal), [_unit, _part, "PackingBandage"], _unit] call CBA_fnc_targetEvent;
+                        _unit setVariable [QGVAR(coagulationFactor), (_coagulationFactor - 1), true];
+                    };
+                } forEach _y;
             } forEach _openWounds;
         };
     }, 8, [_unit]] call CBA_fnc_addPerFrameHandler;

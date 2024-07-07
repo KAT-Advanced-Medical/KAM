@@ -1,11 +1,11 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Blue
  * Check if patient has any kind of BVM
  *
  * Arguments:
  * 0: Patient <OBJECT>
- * 
+ *
  * Return Value:
  * Has BVM <BOOLEAN>
  *

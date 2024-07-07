@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Battlekeeper, modified by YetheSamartaka, Tomcat and Blue
  * Handles listening to lungs.
@@ -33,14 +33,14 @@ variantDelay = 0;
     if (!(_medic getVariable [QGVAR(usingStethoscope), false]) || !(alive _patient) || _HR isEqualTo 0) exitWith {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
-    
-    private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), false] || _patient getVariable [QGVAR(pneumothorax), false]);
+
+    private _tension = (_patient getVariable [QGVAR(tensionpneumothorax), false] || (_patient getVariable [QGVAR(pneumothorax), 0] > 0));
     private _hemo = _patient getVariable [QGVAR(hemopneumothorax), false];
 
     _breathDelay = 20/_HR;
 
     _random = round random 1;
-    
+
     private _type = 3;
 
     if(_hemo && _random >= 0.5) then {_type = 1};
@@ -67,7 +67,7 @@ variantDelay = 0;
                         } else {
                             playSoundUI [QPATHTOF(audio\hemo_exhale2.ogg), _volume, 1];
                             variantDelay = 0.8;
-                        }; 
+                        };
                         [{
                             soundPlaying = false;
                         }, [], variantDelay + _breathDelay] call CBA_fnc_waitAndExecute;

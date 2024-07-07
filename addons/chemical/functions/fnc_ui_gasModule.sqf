@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: DiGii
  * Creates the UI for the Zeus Module
@@ -18,7 +18,8 @@
 params ["_control"];
 
 private _display = ctrlParent _control;
-private _ctrlButtonOK = _display displayCtrl 1;
+private _ctrlButtonOK = _display displayCtrl IDC_OK;
+private _ctrlButtonCancel = _display displayCtrl IDC_CANCEL;
 private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
 
 
@@ -28,7 +29,17 @@ _control ctrlRemoveAllEventHandlers "SetFocus";
 private _fnc_onUnload = {
     private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
     if (isNull _logic) exitWith {};
-    if !(isNull attachedTo _logic) then {};
+    if !(_display getVariable [QGVAR(Confirmed), false]) then
+    {
+        if !(isNull attachedTo _logic) then
+        {
+            deleteVehicle _logic;
+        } else
+        {
+            detach (attachedTo _logic);
+            deleteVehicle _logic;
+        };
+    };
 };
 
 scopeName "Main";
@@ -54,7 +65,7 @@ if !(isNull attachedTo _logic) then {
         };
         default {};
     };
-    
+
 };
 
 private _fnc_onConfirm = {
@@ -78,18 +89,17 @@ private _fnc_onConfirm = {
     };
 
     private _radius_max = _display getVariable [QGVAR(ui_radiusMax), 20];
-    private _radius_min = _display getVariable [QGVAR(ui_radiusMin), 10]; 
+    private _radius_min = _display getVariable [QGVAR(ui_radiusMin), 10];
     if(_radius_min > _radius_max) then {
         [CSTRING(GasModule_Needbigger)] call ACEFUNC(zeus,showMessage);
     } else {
         private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
         if (isNull _logic) exitWith {};
-        
-        
+
         if !(isNull attachedTo _logic) then {
             private _object = attachedto _logic;
             private _position = getPos _object;
-            
+
             [_logic,_position,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
 
             if (_display getVariable[QGVAR(ui_sealable),false]) then {
@@ -100,6 +110,8 @@ private _fnc_onConfirm = {
             private _position = getPos _logic;
             [_logic,_position,_radius_max,_radius_min,_gastype] call FUNC(gasCheck);
         };
+
+        _display setVariable [QGVAR(Confirmed), true];
     };
 };
 

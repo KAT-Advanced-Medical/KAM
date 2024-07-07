@@ -8,6 +8,7 @@ class CfgPatches {
         weapons[] = {};
         magazines[] = {};
         requiredAddons[] = {
+            "kat_main",
             "ace_medical",
             "ace_medical_ai",
             "ace_medical_blood",
@@ -22,8 +23,8 @@ class CfgPatches {
             "ace_dogtags",
             "cba_settings"
         };
-        author = "2LT.Mazinski";
-        authors[] = {"2LT.Mazinski"};
+        author = "Mazinski";
+        authors[] = {"Mazinski"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };

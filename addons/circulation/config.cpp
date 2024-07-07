@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class ADDON    {
+    class ADDON {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
@@ -40,6 +40,7 @@ class CfgPatches {
         };
         magazines[] = { };
         requiredAddons[] = {
+            "kat_main",
             "ace_medical",
             "ace_medical_ai",
             "ace_medical_blood",
@@ -52,8 +53,7 @@ class CfgPatches {
             "ace_medical_treatment",
             "ace_medical_vitals",
             "ace_dogtags",
-            "cba_settings",
-            "kat_main"
+            "cba_settings"
         };
         author = "Katalam";
         authors[] = {"Katalam"};
@@ -63,6 +63,7 @@ class CfgPatches {
 };
 
 #include "CfgFunctions.hpp"
+#include "CfgMoves.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgSounds.hpp"
 #include "CfgWeapons.hpp"
@@ -70,3 +71,4 @@ class CfgPatches {
 #include "ACE_Medical_Treatment.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
 #include "ui\CrossPanel_Dialog.hpp"
+#include "ui\AEDX_Monitor_Dialog.hpp"

@@ -1,7 +1,7 @@
 class GVAR(CrossPanel_Dialog) {
     idd = -1;
     movingEnable = 1;
-    onLoad = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(CrossPanel_Display), (_this select 0))]);
+    onLoad = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(CrossPanel_Display),(_this select 0))]);
     onUnload = QUOTE(_this call FUNC(onCloseDialog));
     objects[] = {};
 

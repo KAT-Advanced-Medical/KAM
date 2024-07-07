@@ -5,11 +5,17 @@ class CfgFunctions {
             class getBloodVolumeChange {
                 file = QPATHTOF(functions\fnc_getBloodVolumeChange.sqf);
             };
-            class getBloodLoss {
-                file = QPATHTOF(functions\fnc_getBloodLoss.sqf);
+        };
+    };
+
+    class overwrite_medicalTreatment {
+        tag = "ace_medical_treatment";
+        class ace_medical_treatment {
+            class medicationLocal {
+                file = QPATHTOF(functions\fnc_medicationLocal.sqf);
             };
-            class hasStableVitals {
-                file = QPATHTOF(functions\fnc_hasStableVitals.sqf);
+            class tourniquetRemove {
+                file = QPATHTOF(functions\fnc_tourniquetRemove.sqf);
             };
         };
     };
