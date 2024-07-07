@@ -97,7 +97,7 @@ if (_medic isNotEqualTo player || {!_isInZeus}) then {
     };
 
     // Determine the animation length
-    private _animDuration = ACEGVAR(medical_treatment,animDurations) getVariable _medicAnim;
+    private _animDuration = ACEGVAR(medical_treatment,animDurations) get toLowerANSI _medicAnim;
     if (isNil "_animDuration") then {
         WARNING_2("animation [%1] for [%2] has no duration defined",_medicAnim,_classname);
         _animDuration = 10;
