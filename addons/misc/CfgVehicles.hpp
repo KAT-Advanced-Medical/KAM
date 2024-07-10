@@ -196,12 +196,6 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_Actions {
             class ACE_MainActions {
-                class KAT_UnloadAndCarryPatient {
-                    displayName = CSTRING(CarryPatient);
-                    condition = QUOTE(_target getVariable [ARR_2('ACE_isUnconscious',false)] && {!(isNull (objectParent _target))} && {isNull (objectParent _player)});
-                    statement = QUOTE([ARR_2(_player,_target)] call FUNC(unloadAndCarryPatient));
-                    icon = QACEPATHTOF(dragging,UI\icons\person_carry.paa);
-                };     
                 class KAT_IFAK_Item {
                     displayName = CSTRING(IFAK_Unpack);
                     condition = QUOTE([ARR_4(_target,'kat_IFAK',0,0)] call FUNC(FAK_checkSlot) && !([_target] call ACEFUNC(common,isAwake)));
@@ -483,78 +477,6 @@ class CfgVehicles {
                         condition = QUOTE([ARR_4(_target,'kat_MFAK_Magazine',2,8)] call FUNC(FAK_checkSlot));
                         statement = QUOTE([ARR_4(_target,'kat_MFAK_Magazine',2,8)] call FUNC(FAK_unpack));
                     };
-                };
-            };
-            class ACE_ArmLeft {
-                class SalineIV;
-                class SalineIV_Stand: SalineIV {
-                    displayName = CSTRING(Display_IVStand);
-                    condition = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_treatment_fnc_treatment";
-                };
-                class SalineIV_Stand_500: SalineIV {
-                    displayName = CSTRING(Display_IVStand_500);
-                    condition = "[_player, _target, 'hand_l', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_l', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_treatment";
-                };
-                class SalineIV_Stand_250: SalineIV {
-                    displayName = CSTRING(Display_IVStand_250);
-                    condition = "[_player, _target, 'hand_l', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_l', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_treatment";
-                };
-            };
-            class ACE_ArmRight {
-                class SalineIV;
-                class SalineIV_Stand: SalineIV {
-                    displayName = CSTRING(Display_IVStand);
-                    condition = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_treatment_fnc_treatment";
-                };
-                class SalineIV_Stand_500: SalineIV {
-                    displayName = CSTRING(Display_IVStand_500);
-                    condition = "[_player, _target, 'hand_r', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_r', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_treatment";
-                };
-                class SalineIV_Stand_250: SalineIV {
-                    displayName = CSTRING(Display_IVStand_250);
-                    condition = "[_player, _target, 'hand_r', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'hand_r', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_treatment";
-                };
-            };
-            class ACE_LegLeft {
-                class SalineIV;
-                class SalineIV_Stand: SalineIV {
-                    displayName = CSTRING(Display_IVStand);
-                    condition = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_treatment_fnc_treatment";
-                };
-                class SalineIV_Stand_500: SalineIV {
-                    displayName = CSTRING(Display_IVStand_500);
-                    condition = "[_player, _target, 'leg_l', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_l', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_treatment";
-                };
-                class SalineIV_Stand_250: SalineIV {
-                    displayName = CSTRING(Display_IVStand_250);
-                    condition = "[_player, _target, 'leg_l', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_l', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_treatment";
-                };
-            };
-            class ACE_LegRight {
-                class SalineIV;
-                class SalineIV_Stand: SalineIV {
-                    displayName = CSTRING(Display_IVStand);
-                    condition = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_treatment_fnc_treatment";
-                };
-                class SalineIV_Stand_500: SalineIV {
-                    displayName = CSTRING(Display_IVStand_500);
-                    condition = "[_player, _target, 'leg_r', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_r', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_treatment";
-                };
-                class SalineIV_Stand_250: SalineIV {
-                    displayName = CSTRING(Display_IVStand_250);
-                    condition = "[_player, _target, 'leg_r', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_canTreatCached";
-                    statement = "[_player, _target, 'leg_r', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_treatment";
                 };
             };
         };
@@ -1349,6 +1271,89 @@ class CfgVehicles {
                 };
             };
         };
+
+        class ACE_Actions {
+            class ACE_ArmLeft {
+                class SalineIV;
+                class SalineIV_Stand: SalineIV {
+                    displayName = CSTRING(Display_IVStand);
+                    condition = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_l', 'SalineIV_Stand'] call ace_medical_treatment_fnc_treatment";
+                };
+                class SalineIV_Stand_500: SalineIV {
+                    displayName = CSTRING(Display_IVStand_500);
+                    condition = "[_player, _target, 'hand_l', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_l', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_treatment";
+                };
+                class SalineIV_Stand_250: SalineIV {
+                    displayName = CSTRING(Display_IVStand_250);
+                    condition = "[_player, _target, 'hand_l', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_l', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_treatment";
+                };
+            };
+            class ACE_ArmRight {
+                class SalineIV;
+                class SalineIV_Stand: SalineIV {
+                    displayName = CSTRING(Display_IVStand);
+                    condition = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_r', 'SalineIV_Stand'] call ace_medical_treatment_fnc_treatment";
+                };
+                class SalineIV_Stand_500: SalineIV {
+                    displayName = CSTRING(Display_IVStand_500);
+                    condition = "[_player, _target, 'hand_r', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_r', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_treatment";
+                };
+                class SalineIV_Stand_250: SalineIV {
+                    displayName = CSTRING(Display_IVStand_250);
+                    condition = "[_player, _target, 'hand_r', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'hand_r', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_treatment";
+                };
+            };
+            class ACE_LegLeft {
+                class SalineIV;
+                class SalineIV_Stand: SalineIV {
+                    displayName = CSTRING(Display_IVStand);
+                    condition = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'leg_l', 'SalineIV_Stand'] call ace_medical_treatment_fnc_treatment";
+                };
+                class SalineIV_Stand_500: SalineIV {
+                    displayName = CSTRING(Display_IVStand_500);
+                    condition = "[_player, _target, 'leg_l', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'leg_l', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_treatment";
+                };
+                class SalineIV_Stand_250: SalineIV {
+                    displayName = CSTRING(Display_IVStand_250);
+                    condition = "[_player, _target, 'leg_l', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'leg_l', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_treatment";
+                };
+            };
+            class ACE_LegRight {
+                class SalineIV;
+                class SalineIV_Stand: SalineIV {
+                    displayName = CSTRING(Display_IVStand);
+                    condition = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'leg_r', 'SalineIV_Stand'] call ace_medical_treatment_fnc_treatment";
+                };
+                class SalineIV_Stand_500: SalineIV {
+                    displayName = CSTRING(Display_IVStand_500);
+                    condition = "[_player, _target, 'leg_r', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'leg_r', 'SalineIV_Stand_500'] call ace_medical_treatment_fnc_treatment";
+                };
+                class SalineIV_Stand_250: SalineIV {
+                    displayName = CSTRING(Display_IVStand_250);
+                    condition = "[_player, _target, 'leg_r', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_canTreatCached";
+                    statement = "[_player, _target, 'leg_r', 'SalineIV_Stand_250'] call ace_medical_treatment_fnc_treatment";
+                };
+            };
+            class ACE_MainActions {
+                class KAT_UnloadAndCarryPatient {
+                    displayName = CSTRING(CarryPatient);
+                    condition = QUOTE(_target getVariable [ARR_2('ACE_isUnconscious',false)] && {!(isNull (objectParent _target))} && {isNull (objectParent _player)});
+                    statement = QUOTE([ARR_2(_player,_target)] call FUNC(unloadAndCarryPatient));
+                    icon = QACEPATHTOF(dragging,UI\icons\person_carry.paa);
+                };
+            };
+        };
     };
 
     class LandVehicle;
@@ -1368,8 +1373,6 @@ class CfgVehicles {
 
     class Car_F: Car {};
     class Quadbike_01_base_F: Car_F {
-        stretcherPos[] = {0,0.8,-0.56};
-        stretcherVector[] = {{1, 0, 0}, {0, 0, 1}};
         class ACE_Actions: ACE_Actions {
             class ACE_MainActions: ACE_MainActions {
                 class KAT_UnloadAndCarryPatient {

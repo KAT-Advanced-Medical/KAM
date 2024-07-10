@@ -179,7 +179,7 @@ class CfgVehicles {
         };
     };
     class Mortar_01_base_F: StaticMortar {
-        class ace_csw {
+        class ace_csw: ace_csw {
             proxyWeapon = "ace_mortar_82mm";
         };
 
