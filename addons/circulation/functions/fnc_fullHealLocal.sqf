@@ -18,11 +18,20 @@
 params ["_patient"];
 TRACE_1("fullHealLocal",_patient);
 
+//if (!(isPlayer _unit)) then { _patient setVariable [QGVAR(simpleMedical), true, true] };
+
+_patient setVariable [QGVAR(simpleMedical), false, true];
+
 _patient setVariable [QGVAR(cprCount), 2, true];
 _patient setVariable [QGVAR(heartRestart), false, true];
 _patient setVariable [QGVAR(cardiacArrestType), 0, true];
 
 _patient setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
+
+_patient setVariable [QGVAR(ISP), 10000, true];
+_patient setVariable [QGVAR(SRBC), 500, true];
+_patient setVariable [QGVAR(ECP), 3300, true];
+_patient setVariable [QGVAR(ECB), 2700, true];
 
 _patient setVariable [QGVAR(isPerformingCPR), false, true];
 _patient setVariable [QGVAR(OxygenationPeriod), 0, true];

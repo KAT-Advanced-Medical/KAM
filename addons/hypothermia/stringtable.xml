@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Hypothermia">
+        <Key ID="STR_KAT_Hypothermia_Using">
+            <English>Using</English>
+            <German>Verwenden</German>
+            <Polish>Używanie</Polish>
+            <Spanish>Usando</Spanish>
+            <Chinese>服用中</Chinese>
+            <Chinesesimp>使用中</Chinesesimp>
+            <Czech>Používám</Czech>
+            <Korean>사용 중</Korean>
+            <French>Utilisation</French>
+            <Turkish>Kullanılıyor</Turkish>
+            <Italian>Usando</Italian>
+            <Japanese>使用中</Japanese>
+            <Portuguese>Usando</Portuguese>
+            <Finnish>Käytetään</Finnish>
+            <Russian>С помощью</Russian>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_ENABLE_HYPOTHERMIA">
+            <English>Enable Hypothermia</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT">
+            <English>Hand Warmer Impact</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT_DESC">
+            <English>Multipler for impact of hand warmers on heat gain</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_FLUID_WARMER_IMPACT">
+            <English>Fluid Warmer Impact</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_FLUID_WARMER_IMPACT_DESC">
+            <English>Multipler for impact of fluid warmer on heat gain</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_WARM_CLOTHING">
+            <English>Warm Uniforms</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_WARM_CLOTHING_DESC">
+            <English>List of clothing marked that reduces heat loss</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_displayName">
+            <English>Personal Hand Warmer</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_DescShort">
+            <English>Small hand warmers to provide warmth in colder climates</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_FluidWarmer_displayName">
+            <English>Fluid Line Warmer</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_DescShort">
+            <English>Provides heating to IV fluids. Must be placed on an already existing line</English>
+        </Key>
+    </Package>
+</Project>

@@ -21,8 +21,8 @@ if !(alive _patient) exitWith {0};
 
 private _bloodVolume = GET_BLOOD_VOLUME(_patient);
 private _lostBlood = 6.0 - _bloodVolume;
-private _pH = _patient getVariable [QEGVAR(pharma,pH),1500];
-private _phDiff = 1500 - _pH;
+private _pH = _patient getVariable [QEGVAR(pharma,pH),0];
+private _phDiff = _pH;
 
 private _ptxTarget = _patient getVariable [QGVAR(pneumothorax), 0]; // more deteriorated closer to 4, at 4 likely to become advanced
 private _hasHtx = _patient getVariable [QGVAR(hemopneumothorax), false];
@@ -31,7 +31,7 @@ private _hasTptx = _patient getVariable [QGVAR(tensopneumothorax), false];
 private _airwayObstructed = _patient getVariable [QEGVAR(airway,obstruction), false] && !(_patient getVariable [QEGVAR(airway,overstretch), false]);
 private _airwayOccluded = _patient getVariable [QEGVAR(airway,occluded), false];
 
-private _phOffset = [0,((floor (_phDiff / 250)))] select (EGVAR(pharma,kidneyAction)); // increase RR by 1 per 250 points of pH lost
+private _phOffset = [0,(floor (_phDiff / 3))] select (missionNamespace getVariable [QEGVAR(pharma,kidneyAction),false]);
 private _randomOffset = selectRandom [-1,0,1];
 private _respiratoryRate = 16 + _randomOffset + _phOffset;
 

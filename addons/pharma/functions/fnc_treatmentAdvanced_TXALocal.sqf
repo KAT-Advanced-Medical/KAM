@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: 2LT.Mazinski
+ * Author: Mazinski
  * Begins TXA bandaging process
  *
  * Arguments:
@@ -46,13 +46,8 @@ if !(GVAR(coagulation)) then {
 
             private _alive = alive _patient;
             private _exit = true;
-
-            if !(GVAR(kidneyAction)) then {
-                _patient setVariable [QGVAR(pH), 1500, true];
-            };
-
-            private _random = random 1000;
-            private _ph = (_patient getVariable [QGVAR(pH), 1500]) - 500;
+            private _random = random 1;
+            private _ph = (_patient getVariable [QGVAR(pH), 0]) + 1;
 
             if (_random <= _ph) then {
                 {

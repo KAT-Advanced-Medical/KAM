@@ -45,8 +45,8 @@ if (_IVactual > 1) then {
     private _alive = alive _patient;
     private _exit = true;
 
-    private _random = random 750;
-    private _ph = (_patient getVariable [QGVAR(pH), 1500]) - 750;
+    private _random = random 1;
+    private _ph = (_patient getVariable [QGVAR(pH), 0]) + 0.5;
 
     if (_random <= _ph) then {
         {

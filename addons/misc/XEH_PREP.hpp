@@ -30,6 +30,7 @@ PREP(handleRespawn);
 PREP(handleTourniquetEffects);
 PREP(handleUnconscious);
 PREP(handleUnitVitals);
+PREP(handleSimpleVitals);
 PREP(handleCardiacFunction);
 PREP(handleTemperatureFunction);
 PREP(handleOxygenFunction);

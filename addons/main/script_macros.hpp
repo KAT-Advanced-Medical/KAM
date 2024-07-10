@@ -183,6 +183,10 @@
 #undef GET_SM_STATE
 #define GET_SM_STATE(_unit)         ([_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState)
 
+#undef GET_BLOOD_VOLUME             
+#define GET_BLOOD_VOLUME(unit)      (((unit getVariable [QEGVAR(circulation,ECP), 3300]) + (unit getVariable [QEGVAR(circulation,ECB), 2700])) / 1000)
+#define GET_SIMPLE_BLOOD_VOLUME(unit)  (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
+
 #define GET_OPIOID_FACTOR(unit)           (unit getVariable [QEGVAR(pharma,opioidFactor), 1])
 
 #define GET_KAT_SPO2(unit)          (unit getVariable [QEGVAR(breathing,airwayStatus), 1])

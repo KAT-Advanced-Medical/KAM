@@ -19,7 +19,7 @@
 params ["_medic", "_patient"];
 
 _patient setVariable [QACEGVAR(medical,medications), [], true];
-_patient setVariable [QGVAR(externalPh), 1500, true];
+_patient setVariable [QGVAR(externalPh), 0, true];
 _patient setVariable [QGVAR(kidneyFail), false, true];
 _patient setVariable [QGVAR(kidneyArrest), false, true];
 _patient setVariable [QGVAR(kidneyPressure), false, true];

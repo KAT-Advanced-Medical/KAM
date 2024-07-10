@@ -26,12 +26,15 @@ private _output = -0.15 max _spo2Adjustment;
 // Rewrite this to handle a single airway blockage variable
 switch (true) do {
     case ((_unit getVariable [QEGVAR(airway,occluded), false]) || (_unit getVariable [QEGVAR(airway,obstruction), false])): {
-        _output = _currentSpo2 + (-0.15 * _deltaT);
+        _output = _currentSpo2 + ((-0.15 * EGVAR(breathing,SpO2_MultiplyNegative)) * _deltaT);
     };
     case ((_unit getVariable [QEGVAR(chemical,airPoisoning), false]) || (_unit getVariable [QEGVAR(breathing,tensionpneumothorax), false]) || (_unit getVariable [QEGVAR(breathing,hemopneumothorax), false])): {
-        _output = _currentSpo2 + (-0.15 * _deltaT);
+        _output = _currentSpo2 + ((-0.15 * EGVAR(breathing,SpO2_MultiplyNegative)) * _deltaT);
     };
-    default { _output = _currentSpo2 + (_output * _deltaT); };
+    case (_unit getVariable [QEGVAR(breathing,oxygenTankConnected), false]): {
+        _output = _currentSpo2 + ((0.15 * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT);
+    };
+    default { _output = _currentSpo2 + ((_output * EGVAR(breathing,SpO2_MultiplyPositive)) * _deltaT); };
 };
 
 _output = 100 min _output; 

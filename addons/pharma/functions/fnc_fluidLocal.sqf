@@ -19,11 +19,8 @@
 
 params ["_patient", "_ph", "_coagulation"];
 
-private _current = _patient getVariable [QGVAR(externalPh), 1500];
-private _final = (_current - _ph) max 0;
-_final min 1500;
-_patient setVariable [QGVAR(externalPh), (_final), true];
+private _current = _patient getVariable [QGVAR(externalPh), 0];
+_patient setVariable [QGVAR(externalPh), ((_current + _ph) max 0), true];
 
 private _factor = _patient getVariable [QGVAR(coagulationFactor), 10];
-private _final2 = (_factor + _coagulation) min 30;
-_patient setVariable [QGVAR(coagulationFactor), (_final2), true];
+_patient setVariable [QGVAR(coagulationFactor), ((_factor + _coagulation) min 30), true];

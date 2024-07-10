@@ -17,6 +17,8 @@
 
 params ["_unit"];
 
+if (!(isPlayer _unit) && (_unit getVariable [QEGVAR(circulation,simpleMedical), false])) exitWith { [_unit] call FUNC(handleSimpleVitals) };
+
 private _lastTimeUpdated = _unit getVariable [QACEGVAR(medical_vitals,lastTimeUpdated), 0];
 private _deltaT = (CBA_missionTime - _lastTimeUpdated) min 10;
 if (_deltaT < 1) exitWith { false }; // state machines could be calling this very rapidly depending on number of local units
@@ -32,13 +34,16 @@ if (_syncValues) then {
 };
 
 //Get Blood Loss and Blood Volume from previous cycle
-private _bloodVolume = GET_BLOOD_VOLUME(_unit) + ([_unit, _deltaT, _syncValues] call ACEFUNC(medical_status,getBloodVolumeChange));
-private _bloodLoss = (6 - _bloodVolume);
+private _bloodVolume = ([_unit, _deltaT, _syncValues] call ACEFUNC(medical_status,getBloodVolumeChange));
+_bloodVolume set [0, (GET_BLOOD_VOLUME(_unit) + (_bloodVolume select 0))];
 
-// Acidosis from Blood Loss 
-private _externalPh = _patient getVariable [QEGVAR(pharma,externalPh),1500];
-_unit setVariable [QEGVAR(pharma,pH), (0 max (1500 min ((_bloodLoss - 1) * 100 + _externalPh))), _syncValues];
-private _acidosis = 1.5 min (if (_bloodLoss < 1) then { 0 } else { _bloodLoss - 1 }); // Acidosis doesn't start until after 1 liter of blood has been lost
+private _bloodLoss = (6 - (_bloodVolume select 0));
+
+// Acidosis from Blood Loss (BIG PH REWRITE HERE, LOOK AT LATER) ------------------------------------------------------------
+private _externalPh = _unit getVariable [QEGVAR(pharma,externalPh),0];
+private _ph = 10 ^ (((_bloodVolume select 2) / (_bloodVolume select 1) + 0.0518));
+private _acidosis = 1.5 min ((0 max ((7.4 - _ph) - ((_bloodVolume select 0) / 6))) + (_externalPh / 2000));
+_unit setVariable [QEGVAR(pharma,pH), _acidosis, _syncValues];
 
 // Altitude 
 private _altitude = (getPosASL _unit) select 2;
@@ -48,7 +53,7 @@ private _altitudeTempImpact = switch (true) do {
     default { 0 };
 };
 
-private _temperatureImpact = [_unit, _altitudeTempImpact, _bloodVolume, _deltaT, _syncValues] call FUNC(handleTemperatureFunction); 
+private _temperatureImpact = [_unit, _altitudeTempImpact, (_bloodVolume select 0), _deltaT, _syncValues] call FUNC(handleTemperatureFunction); 
 
 // Metabolic Rate (MR) with decreases due to temperature and SpO2 impacts
 private _metabolicRate = (100 - ((100 - GET_SPO2(_unit))/5)) + (9.0757 * _bloodLoss^5) - (54.5562 * _bloodLoss^4) + (94.0381 * _bloodLoss^3) - (44.6435 * _bloodLoss^2) + (8.8576 * _bloodLoss) - _temperatureImpact;
@@ -68,26 +73,29 @@ private _spo2 = [_unit, _spo2Adjustment, GET_SPO2(_unit), _deltaT, _syncValues] 
 
 // (START CARDIAC BRANCH)
 // Heart Rate from Blood Volume and Cardiac Demand with negative Acidosis impacts (Forgot what the 105 value is, pulse per second impact? I lost the notecard on this)
-private _heartRate = _bloodVolume * ((_cardiacDemand + (_acidosis / 4)) * 105.2631579);
+private _heartRate = (_bloodVolume select 0) * ((_cardiacDemand + (_acidosis / 4)) * 105.2631579);
 
 // Systolic Blood Pressure from Metabolic Rate with negative Acidosis impacts, Diastolic Blood Pressure from Metabolic Rate and Blood Loss
-private _bloodPressureSystolic = 120 + (((_metabolicRate - 100) * 2) - (_acidosis * 10)) * (_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]);
-private _bloodPressureDiastolic = 80 + (((_metabolicRate - 100) * 2) + (_bloodLoss * 5)) * (_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]);
+private _bloodPressureSystolic = 120 * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + (((_metabolicRate - 100)) - (_acidosis * 6));
+private _bloodPressureDiastolic = 80 * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + (((_metabolicRate - 100)) + (_bloodLoss * 3));
+
+// + (_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]
+
+private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
+_unit setVariable [VAR_BLOOD_VOL, (_bloodVolume select 0), _syncValues];
 
 // Set variables for synchronizing information across the net
 private _hemorrhage = switch (true) do {
-    case (_bloodVolume < BLOOD_VOLUME_CLASS_4_HEMORRHAGE): { 4 };
-    case (_bloodVolume < BLOOD_VOLUME_CLASS_3_HEMORRHAGE): { 3 };
-    case (_bloodVolume < BLOOD_VOLUME_CLASS_2_HEMORRHAGE): { 2 };
-    case (_bloodVolume < BLOOD_VOLUME_CLASS_1_HEMORRHAGE): { 1 };
+    case ((_bloodVolume select 0) < BLOOD_VOLUME_CLASS_4_HEMORRHAGE): { 4 };
+    case ((_bloodVolume select 0) < BLOOD_VOLUME_CLASS_3_HEMORRHAGE): { 3 };
+    case ((_bloodVolume select 0) < BLOOD_VOLUME_CLASS_2_HEMORRHAGE): { 2 };
+    case ((_bloodVolume select 0) < BLOOD_VOLUME_CLASS_1_HEMORRHAGE): { 1 };
     default {0};
 };
 
 if (_hemorrhage != GET_HEMORRHAGE(_unit)) then {
     _unit setVariable [VAR_HEMORRHAGE, _hemorrhage, true];
 };
-
-private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
 
 private _inPain = GET_PAIN_PERCEIVED(_unit) > 0;
 if !(_inPain isEqualTo IS_IN_PAIN(_unit)) then {
@@ -160,20 +168,20 @@ _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 // Statements are ordered by most lethal first.
 // Add SpO2 reactions to switch statement ---------------------------------------------------------------------
 switch (true) do {
-    case (_bloodVolume < BLOOD_VOLUME_FATAL): {
-        TRACE_3("BloodVolume Fatal",_unit,BLOOD_VOLUME_FATAL,_bloodVolume);
+    case ((_bloodVolume select 0) < BLOOD_VOLUME_FATAL): {
+        TRACE_3("BloodVolume Fatal",_unit,BLOOD_VOLUME_FATAL,(_bloodVolume select 0));
         [QACEGVAR(medical,Bleedout), _unit] call CBA_fnc_localEvent;
     };
-    case (_spo2 < OXYGEN_PERCENTAGE_FATAL): {
+    case (_spo2 < EGVAR(breathing,SpO2_dieValue) && EGVAR(breathing,SpO2_dieActive)): {
         TRACE_3("O2 Fatal",_unit,OXYGEN_PERCENTAGE_FATAL,_spo2);
         [QACEGVAR(medical,Bleedout), _unit] call CBA_fnc_localEvent;
     };
     case (IN_CRDC_ARRST(_unit)): {}; // if in cardiac arrest just break now to avoid throwing unneeded events
-    case (_spo2 < OXYGEN_PERCENTAGE_ARREST): {
+    case (_spo2 < EGVAR(breathing,SpO2_cardiacValue) && EGVAR(breathing,SpO2_cardiacActive)): {
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
     case (_hemorrhage == 4): {
-        TRACE_3("Class IV Hemorrhage",_unit,_hemorrhage,_bloodVolume);
+        TRACE_3("Class IV Hemorrhage",_unit,_hemorrhage,(_bloodVolume select 0));
         [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
     };
     case (_heartRate < 20 || {_heartRate > 220}): {
@@ -203,7 +211,7 @@ switch (true) do {
             [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
         };
     };
-    case (_spo2 < OXYGEN_PERCENTAGE_CRITICAL): {
+    case (_spo2 < EGVAR(breathing,SpO2_unconscious)): {
         [QACEGVAR(medical,CriticalVitals), _unit] call CBA_fnc_localEvent;
     };
     case (_woundBloodLoss > BLOOD_LOSS_KNOCK_OUT_THRESHOLD): {
@@ -221,7 +229,7 @@ switch (true) do {
 private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);
 if (!isPlayer _unit) then {
     private _painLevel = _unit getVariable [VAR_PAIN, 0];
-    hintSilent format["blood volume: %1, blood loss: [%2, %3]\nhr: %4, bp: %5, pain: %6", round(_bloodVolume * 100) / 100, round(_woundBloodLoss * 1000) / 1000, round((_woundBloodLoss / (0.001 max _cardiacOutput)) * 100) / 100, round(_heartRate), _bloodPressure, round(_painLevel * 100) / 100];
+    hintSilent format["blood volume: %1, blood loss: [%2, %3]\nhr: %4, bp: %5, pain: %6", round((_bloodVolume select 0) * 100) / 100, round(_woundBloodLoss * 1000) / 1000, round((_woundBloodLoss / (0.001 max _cardiacOutput)) * 100) / 100, round(_heartRate), _bloodPressure, round(_painLevel * 100) / 100];
 };
 #endif
 
