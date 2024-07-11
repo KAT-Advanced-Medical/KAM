@@ -39,7 +39,7 @@ _bloodVolume set [0, (GET_BLOOD_VOLUME(_unit) + (_bloodVolume select 0))];
 
 private _bloodLoss = (6 - (_bloodVolume select 0));
 
-// Acidosis from Blood Loss (BIG PH REWRITE HERE, LOOK AT LATER) ------------------------------------------------------------
+// Acidosis from Blood Volume matching between ECP/ECB and ISP
 private _externalPh = _unit getVariable [QEGVAR(pharma,externalPh),0];
 private _ph = 10 ^ (((_bloodVolume select 2) / (_bloodVolume select 1) + 0.0518));
 private _acidosis = 1.5 min ((0 max ((7.4 - _ph) - ((_bloodVolume select 0) / 6))) + (_externalPh / 2000));
