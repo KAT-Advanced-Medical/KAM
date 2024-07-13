@@ -23,8 +23,6 @@ params ["_unit", "_item", "_type", "_slot"];
 private _fnc_arrayToInvItem = {
     params ["_unit", "_array", "_container"];
 
-    private _groundContainer = nearestObjects [_unit, ["GroundWeaponHolder", "WeaponHolder", "Library_WeaponHolder", "WeaponHolderSimulated"], 2] param [0];
-
     {
         for "_i" from 1 to (_x select 1) do
         {
