@@ -26,7 +26,7 @@ private _fnc_arrayToInvItem = {
     {
         for "_i" from 1 to (_x select 1) do
         {
-            private _inventory = [_unit, _x select 0, _container] call ACEFUNC(common,addToInventory);
+            [_unit, _x select 0, _container] call ACEFUNC(common,addToInventory);
         } 
     } foreach _array;
 };
