@@ -23,24 +23,10 @@ params ["_unit", "_item", "_type", "_slot"];
 private _fnc_arrayToInvItem = {
     params ["_unit", "_array", "_container"];
 
-    private _groundContainer = nearestObjects [_unit, ["GroundWeaponHolder", "WeaponHolder", "Library_WeaponHolder", "WeaponHolderSimulated"], 2] param [0];
-
     {
         for "_i" from 1 to (_x select 1) do
         {
-            private _inventory = [_unit, _x select 0, _container] call ACEFUNC(common,addToInventory);
-            
-            if !(_inventory select 0) then {
-                if (isNil "_groundContainer") exitWith {
-                    _groundContainer = _inventory select 1;
-                };
-
-                {
-                    _groundContainer addItemCargoGlobal [_x, 1];
-                } forEach itemCargo (_inventory select 1);
-
-                deleteVehicle (_inventory select 1);
-            };
+            [_unit, _x select 0, _container] call ACEFUNC(common,addToInventory);
         } 
     } foreach _array;
 };

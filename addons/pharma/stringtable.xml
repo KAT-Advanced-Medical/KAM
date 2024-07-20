@@ -163,55 +163,16 @@
             <Finnish>Aika luoda IO:t</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_DescShort">
-            <English>Used to suppress pain</English>
-            <German>Zur Unterdrückung von Schmerzen</German>
-            <Polish>Używany do zwalczania bólu</Polish>
-            <French>Utilisé pour diminuer la douleur</French>
-            <Chinese>用于抑制疼痛</Chinese>
-            <Chinesesimp>用于抑制疼痛</Chinesesimp>
-            <Italian>Usata per sopprimere il dolore</Italian>
-            <Spanish>Se utiliza para suprimir el dolor</Spanish>
-            <Korean>통증을 억제하는 데 사용</Korean>
-            <Turkish>Ağrıyı bastırmak için kullanılır</Turkish>
-            <Czech>Používá se k potlačení bolesti</Czech>
-            <Japanese>痛みを抑えるために使用される</Japanese>
-            <Russian>Используется для подавления боли</Russian>
-            <Portuguese>Utilizado para suprimir a dor</Portuguese>
-            <Finnish>Käytetään kivun hillitsemiseen</Finnish>
+            <English>Combat Wound Medication Pill Pack. Used to suppresses pain</English>
+            <Japanese>戦闘傷病治療薬パック。 痛みを抑えるために使用される</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_Box_Display">
-            <English>Painkillers</English>
-            <Polish>Lek przeciwbólowy</Polish>
-            <Chinese>止痛藥</Chinese>
-            <Chinesesimp>止痛药</Chinesesimp>
-            <Czech>Prášky proti bolesti</Czech>
-            <French>Perfalgan</French>
-            <German>Schmerzmittel</German>
-            <Italian>Antidolorifici</Italian>
-            <Korean>진통제</Korean>
-            <Spanish>Analgésicos</Spanish>
-            <Turkish>Ağrı Kesiciler</Turkish>
-            <Japanese>鎮痛剤</Japanese>
-            <Russian>Обезболивающие</Russian>
-            <Portuguese>Analgésicos</Portuguese>
-            <Finnish>Kipulääkkeet</Finnish>
+            <English>Combat Pill Pack</English>
+            <Japanese>戦闘治療薬パック</Japanese>
         </Key>
-        <Key ID="STR_KAT_Pharma_Inject_Box_Painkillers">
-            <English>Give Painkillers</English>
-            <Polish>Użyj leku przeciwbólowego</Polish>
-            <Chinese>服用止痛藥</Chinese>
-            <Chinesesimp>服用止痛药</Chinesesimp>
-            <Czech>Vzít prášky proti bolesti</Czech>
-            <French>Administrer Perfalgan</French>
-            <German>Schlucke Schmerzmittel</German>
-            <Italian>Prendi antidolorifici</Italian>
-            <Korean>진통제 복용</Korean>
-            <Spanish>Administrar analgésico</Spanish>
-            <Turkish>Ağrı Kesicileri Al</Turkish>
-            <Japanese>鎮痛剤を服用</Japanese>
-            <Russian>Принимайте обезболивающие</Russian>
-            <Portuguese>Administrar Analgésicos</Portuguese>
-            <Finnish>Paina kipulääkkeitä</Finnish>
+        <Key ID="STR_KAT_Pharma_Give_CWMP">
+            <English>Use CWMP</English>
+            <Japanese>戦闘傷病治療薬を投与</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>

@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: MiszczuZPolski
- * Begins Painkillers Treatment
+ * Begins CWMP Treatment
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", classname, objNull, "kat_Painkiller"] call kat_pharma_fnc_treatmentAdvanced_Painkillers;
+ * [player, cursorObject, "RightArm", "CWMP", objNull, "kat_Painkiller"] call kat_pharma_fnc_treatmentAdvanced_CWMP;
  *
  * Public: No
  */
