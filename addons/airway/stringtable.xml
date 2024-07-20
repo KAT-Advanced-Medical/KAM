@@ -729,7 +729,6 @@
             <Finnish>Ilmateiden imu</Finnish>
             <Russian>Всасывание из дыхательных путей</Russian>
             <German>Absaugung der Atemwege</German>
-            <Spanish>Succión de vías aéreas</Spanish>
             <French>Aspiration des voies respiratoires</French>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Display">
@@ -739,7 +738,6 @@
             <Finnish>Manuaalinen imupumppu</Finnish>
             <Russian>Ручной всасывающий насос</Russian>
             <German>Manuelle Absaugpumpe</German>
-            <Spanish>Bomba de Succión Manual</Spanish>
             <French>Pompe d'aspiration manuelle</French>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Log">
@@ -757,7 +755,6 @@
             <Finnish>Manuaalinen imupumppu on lääketieteellinen imulaite hengitysteiden manuaaliseen imemiseen. tämä on vaihtoehto sähkölaitteille</Finnish>
             <Russian>Всасывание из дыхательных путей (ручное)</Russian>
             <German>Die manuelle Absaugpumpe ist eine medizinisches Absauggerät für Atemwege.\nDie Alternative zu einem elektrisch betreibenen Gerät.</German>
-            <Spanish>La Bomba de Succión Médica es un dispositivo para la succión manual de las vías aéreas. Es una alternativa a los dispositivos eléctricos.</Spanish>
             <French>La pompe d’aspiration manuelle est un dispositif d’aspiration médical pour l’aspiration manuelle des voies respiratoires. C’est une alternative aux appareils électriques.</French>
         </Key>
         <Key ID="STR_KAT_Airway_SuctionTreatment_displayName">
@@ -767,7 +764,6 @@
             <Finnish>Ilmateiden imu (manuaalinen)</Finnish>
             <Russian>Всасывание из дыхательных путей (ручное)</Russian>
             <German>Manuelle Absaugung der Atemwege</German>
-            <Spanish>Succión de vías aéreas (Manual)</Spanish>
             <French>Aspiration des voies respiratoires (Manuel)</French>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse">
@@ -777,7 +773,6 @@
             <Finnish>Uudelleenkäytettävä manuaalinen imupumppu</Finnish>
             <Russian>Многоразовый ручной всасывающий насос</Russian>
             <German>Wiederverwendbare manuelle Absaugpumpe</German>
-            <Spanish>Bomba de Succión Manual Reutilizable</Spanish>
             <French>Pompre d'aspiration manuelle réutilisable</French>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse_DESC">
@@ -787,7 +782,6 @@
             <Finnish>Ota manuaalinen imupumppu takaisin käytön jälkeen</Finnish>
             <Russian>Восстановить ручной всасывающий насос после использования</Russian>
             <German>Erhalte die Manuelle Absaugpumpe nach Benutzung zurück.</German>
-            <Spanish>Obtener la Bomba de Succión Manual despues del uso</Spanish>
             <French>Récupère la pompe d'asipiration manuelle après utilisation</French>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
@@ -959,7 +953,6 @@
             <Finnish>Salli manuaalinen imupumppu</Finnish>
             <Russian>Разрешить ручной всасывающий насос</Russian>
             <German>Manuelle Absaugpumpe zulassen</German>
-            <Spanish>Permitir Bomba de Succión Manual</Spanish>
             <French>Autoriser la pompe d'aspiration manuelle</French>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_SUCTION_DESC">
@@ -969,7 +962,6 @@
             <Finnish>Aika tarkistaa hengitystiet</Finnish>
             <Russian>Уровень подготовки, необходимый для использования ручного всасывающего насоса</Russian>
             <German>Benötigter medizinischer Grad, um die Manuelle Absaugpumpe zu nutzen</German>
-            <Spanish>Nivel de entrenamiento requerido para usar la Bomba de Succión Manual</Spanish>
             <French>Niveau d'entrainement requis pour utiliser une pompe d'aspiration manuelle</French>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
@@ -1123,7 +1115,6 @@
             <Finnish>aika manuaaliselle imupumpulle</Finnish>
             <German>Behandlungszeit für die manuelle Absaugpumpe</German>
             <Russian>Время работы ручного всасывающего насоса</Russian>
-            <Spanish>Tiempo para la Bomba de Succión Manual</Spanish>
             <French>Durée d'aspiration avec la pompe d'aspiration manuelle</French>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
@@ -1133,7 +1124,6 @@
             <Finnish>Kuinka kauan manuaalisen imupumpun käyttö kestää</Finnish>
             <Russian>Сколько времени потребуется для использования ручного всасывающего насоса</Russian>
             <German>Benötigte Zeit zur Verwendung der Manuellen Absaugpumpe</German>
-            <Spanish>Cuánto tiempo lleva utilizar la Bomba de Succión Manual</Spanish>
             <French>Temps nécessaire pour utiliser la pompe d'aspiration manuelle</French>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS">
