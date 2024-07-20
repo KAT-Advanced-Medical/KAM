@@ -7,7 +7,7 @@ class CfgWeapons {
         scopeCurator = 2;
         scopeArsenal = 2;
         author = "Katalam";
-        displayName = CSTRING(Pulseoximeter_Desc_Short);
+        displayName = CSTRING(Pulseoximeter);
         descriptionShort = CSTRING(Pulseoximeter_Desc_Short);
         picture = QPATHTOF(ui\Pulseoximeter_normal.paa);
         model = QPATHTOF(models\pulseox\pulseox.p3d);

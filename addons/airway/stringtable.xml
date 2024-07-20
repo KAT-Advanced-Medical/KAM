@@ -679,22 +679,7 @@
             <Finnish>Guedel-letkua</Finnish>
         </Key>
         <Key ID="STR_KAT_Airway_Guedel_Desc_Short">
-            <English>The Guedel Tube is used to maintain the airway</English>
-            <German>Der Guedeltubus ist ein Hilfsmittel zur Atemwegssicherung</German>
-            <Polish>Rurka ustno-gardłowa zabezpiecza drogi oddechowe</Polish>
-            <Spanish>La cánula de Guedel impide obstrucciones</Spanish>
-            <Chinese>抽吸管用於拯救呼吸道</Chinese>
-            <Chinesesimp>Guedel是一种气道辅助通气装置,同时集成了舌垫可防止气道阻塞.</Chinesesimp>
-            <Czech>Guedel tuba je používána k zajištění dýchacích cest</Czech>
-            <Korean>게델튜브는 응급처치현장에서 신속하며 간편하게 기도확보하기 위해 사용됩니다</Korean>
-            <French>La canule de Guedel est utilisée pour protéger les voies aériennes</French>
-            <Turkish>Guedel Tüpü, hava yollarını kurtarmak için kullanılır</Turkish>
-            <Italian>La canula di Guedel viene usata per salvare le vie aeree</Italian>
-            <Russian>Трубка Геделя используется для сохранения дыхательных путей.</Russian>
-            <Japanese>ゲデルチューブ(口咽頭エアウェイ)は気道を確保するために使用される</Japanese>
-            <Portuguese>A Cânula de Guedel evita obstruções</Portuguese>
-            <Norwegian>Guedel Tube brukes for å redde luftveiene</Norwegian>
-            <Finnish>Guedel-letkua käytetään hengitysteiden ylläpitämiseen</Finnish>
+            <English>The Guedel Tube is used to manage airway obstruction</English>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Display">
             <English>ACCUVAC</English>
@@ -705,22 +690,7 @@
             <French>ACCUVAC</French>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
-            <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
-            <German>Der ACCUVAC ist ein medizinisches Absauggerät zur Atemwegsabsaugung mit Akkubetrieb für den mobilen Einsatz in der Notfallmedizin.</German>
-            <Polish>ACCUVAC jest to ssak elektryczny do użytku mobilnego.</Polish>
-            <Spanish>ACCUVAC es un equipo de succión médica para vías aéreas alimentado por una batería, permitiendo movilidad ante una emergencia médica.</Spanish>
-            <Chinese>電動抽吸器是一款使用電池驅動的一臺在緊急狀況時拯救呼吸道可攜式醫療裝置</Chinese>
-            <Chinesesimp>ACCUVAC是紧急情况下使用的电池驱动的便携式医疗抽吸装置</Chinesesimp>
-            <Czech>ACCUVAC je lékařské odsávací zařízení pro odsávání dýchacích cest s pohonem na baterky pro mobilní použití v pohotovostní medicíně.</Czech>
-            <Korean>전기흡인기는 응급상황에서 목에 걸린 이물질을 흡인하기 위한 휴대용 의료석션입니다</Korean>
-            <French>L’ACCUVAC est un dispositif médical mobile d’aspiration pour libérer les voies aériennes supérieures des patients en cas d'encombrement ou d'obstruction</French>
-            <Turkish>ACCUVAC, acil tıpta mobil kullanım için pilli hava yolu emişine yönelik tıbbi bir emme cihazıdır.</Turkish>
-            <Italian>L'ACCUVAC è un dispositivo medico portatile di suzione a batterie per aspirare le vie aeree in caso di emergenza</Italian>
-            <Russian>ACCUVAC — это медицинский отсасыватель для отсасывания из дыхательных путей с аккумуляторным приводом для мобильного использования в неотложной медицине.</Russian>
-            <Japanese>アキュバックは、救急医療で携行使用するためのバッテリー電源を備えた気道吸引の為の医療用吸引装置です。</Japanese>
-            <Portuguese>ACCUVAC é uma unidade de sucção portátil utilizada para tratar vias aéreas em caso de emergência médica.</Portuguese>
-            <Norwegian>ACCUVAC er en medisinsk sugeenhet for suging av luftveier med batteridrift for mobil bruk innen akuttmedisin</Norwegian>
-            <Finnish>ACCUVAC on akkukäyttöinen lääketieteellinen imulaite hengitysteiden imemiseen mobiilikäyttöön hätätilanteissa</Finnish>
+            <English>ACCUVAC is used to clear airway occlusions</English>
         </Key>
         <Key ID="STR_KAT_Airway_AccuvacTreatment_displayName">
             <English>Airway Suction</English>
@@ -749,7 +719,7 @@
             <French>%1 a effectué une aspiration médicale en utilisant un(e) %2</French>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
-            <English>Manual Suction Pump is a medical suction device for airway suction manually. This ia an alternative to electrical devices.</English>
+            <English>Manual Suction Pump is used to clear airway occlusions (single use).</English>
             <Japanese>手動式吸引器は、手動ポンプで動作する気道吸引の為の医療用吸引装置です。これは電気駆動の装置を代替することが可能です。</Japanese>
             <Finnish>Manuaalinen imupumppu on lääketieteellinen imulaite hengitysteiden manuaaliseen imemiseen. tämä on vaihtoehto sähkölaitteille</Finnish>
             <Russian>Всасывание из дыхательных путей (ручное)</Russian>
