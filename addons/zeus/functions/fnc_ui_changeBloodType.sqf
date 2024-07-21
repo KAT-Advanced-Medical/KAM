@@ -21,7 +21,7 @@ private _display = ctrlParent _control;
 private _ctrlButtonOK = _display displayCtrl 1;
 private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
 
-_control ctrlRemoveAllEventHandlers "setFocus";
+_control ctrlRemoveAllEventHandlers "SetFocus";
 
 
 private _unit = attachedTo _logic;
@@ -118,5 +118,5 @@ private _fnc_onConfirm = {
     _unit setVariable [QACEGVAR(medical,bloodvolume), ( parseNumber (_sliderValue toFixed 2)), true];
 };
 
-_display displayAddEventHandler ["unload", _fnc_onUnload];
-_ctrlButtonOK ctrlAddEventHandler ["buttonclick", _fnc_onConfirm];
+_display displayAddEventHandler ["Unload", _fnc_onUnload];
+_ctrlButtonOK ctrlAddEventHandler ["ButtonClick", _fnc_onConfirm];

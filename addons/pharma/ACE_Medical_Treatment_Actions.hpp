@@ -40,13 +40,13 @@ class ACE_Medical_Treatment_Actions {
     class Epinephrine: Morphine {
         callbackSuccess = QFUNC(medication);
     };
-    class Painkillers: Morphine {
-        displayName = CSTRING(Inject_Box_Painkillers);
+    class CWMP: Morphine {
+        displayName = CSTRING(Give_CWMP);
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Head"};
         items[] = {"kat_Painkiller"};
         condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),false)]));
-        callbackSuccess = QFUNC(treatmentAdvanced_Painkillers);
+        callbackSuccess = QFUNC(treatmentAdvanced_CWMP);
         icon = QPATHTOF(ui\icon_painkillers_action.paa);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
