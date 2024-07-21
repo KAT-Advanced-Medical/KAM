@@ -32,7 +32,7 @@ if (_IVactual > 1) then {
     if (_IVactual != 4) exitWith {
         if (_randomNumber < GVAR(blockChance)) then {
             [{
-                params["_patient", "_IVarray", "_partIndex"];
+                params ["_patient", "_IVarray", "_partIndex"];
 
                 if (_IVactual > 1 && _IVactual != 4) exitWith {};
                 _IVarray set [_partIndex, 3];
@@ -93,7 +93,7 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
                             _stitchedWoundsOnPart pushBack _treatedWound;
                         } else {
                             private _wound = _stitchedWoundsOnPart select _woundIndex;
-                            _stitchedWoundsOnPart set [_woundIndex,[(_wound select 1) + _amountOf, _wound select 2, _wound select 3]];
+                            _stitchedWoundsOnPart set [_woundIndex, [(_wound select 1) + _amountOf, _wound select 2, _wound select 3]];
                         };
                         _stitchedWounds set [_targetBodyPart, _stitchedWoundsOnPart];
                         _patient setVariable [VAR_STITCHED_WOUNDS, _stitchedWounds, true];
@@ -102,7 +102,7 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
                         _bandagedWounds set [_targetBodyPart, _bandagedWoundsOnPart];
 
                         _patient setVariable [VAR_BANDAGED_WOUNDS, _bandagedWounds, true];
-                        
+
                         private _partIndex = ALL_BODY_PARTS find _targetBodyPart;
                         private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
                         private _damage = (_bodyPartDamage select _partIndex) - (_damageOf * _amountOf);
@@ -119,7 +119,7 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
             };
 
             [{
-                params["_patient", "_idPFH"];
+                params ["_patient", "_idPFH"];
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             },
             [_patient, _idPFH], 300] call CBA_fnc_waitAndExecute;

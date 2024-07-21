@@ -110,14 +110,14 @@ private _fnc_clotWound = {
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, []];
+    private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, createHashmap];
     private _pulse = _unit getVariable [VAR_HEART_RATE, 80];
     private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 15];
     private _countTXA = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
     private _countEACA = [_unit, "EACA"] call ACEFUNC(medical_status,getMedicationCount);
     private _hasWoundToBandageArray = [];
 
-    if (_openWounds isEqualTo []) exitWith {}; // Exit when hashmap not initialized (Will not work when hashmap is set, cause ace only changes value of "woundCount" to 0)
+    if (_openWounds isEqualTo createHashmap) exitWith {}; // Exit when hashmap not initialized (Will not work when hashmap is set, cause ace only changes value of "woundCount" to 0)
     if (_coagulationFactor <= 0) exitWith {}; // Exit when no coagFactors left
     if (_unit getVariable [QACEGVAR(medical,bloodVolume), 6.0] < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
     if ((_pulse < 20) && GVAR(coagulation_requireHR)) exitWith {}; // Has pulse & require setting
