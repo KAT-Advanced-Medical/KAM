@@ -106,6 +106,7 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
                         private _partIndex = ALL_BODY_PARTS find _targetBodyPart;
                         private _bodyPartDamage = _patient getVariable [QACEGVAR(medical,bodyPartDamage), []];
                         private _damage = (_bodyPartDamage select _partIndex) - (_damageOf * _amountOf);
+                        
                         if (_damage < 0.05) then {
                             _bodyPartDamage set [_partIndex, 0];
                         } else {

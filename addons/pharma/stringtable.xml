@@ -3533,5 +3533,14 @@
             <English>Coag-Sense Settings</English>
             <Japanese>Coag-Sense設定</Japanese>
         </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
+            <English>Medical level required for using Coag-Sense</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location">
+            <English>Locations Coag-Sense</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
+            <English>Treatment time for Coag-Sense</English>
+        </Key>
     </Package>
 </Project>
