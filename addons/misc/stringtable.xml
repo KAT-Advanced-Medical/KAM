@@ -3,10 +3,10 @@
     <Package name="Misc">
         <Key ID="STR_KAT_Misc_Kat_Equipment">
             <English>KAT Equipment</English>
+            <Spanish>Equipamiento KAT</Spanish>
             <German>KAT Gegenstände</German>
             <Japanese>KAT 装備品</Japanese>
             <Russian>Оборудование KAT</Russian>
-            <Spanish>Equipamiento KAT</Spanish>
             <French>Equipement KAT</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ENABLE">
@@ -1130,76 +1130,76 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FirstSlot_Item">
             <English>Trauma Section Items &amp; Quantity</English>
+            <Spanish>Artículos de la sección de trauma &amp; Cantidad</Spanish>
             <German>Trauma Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>外傷枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество травматологического раздела</Russian>
-            <Spanish>Sección de Objetos y Cantidades deTrauma</Spanish>
             <French>Objets et quantité de la section de traumatologie</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Item">
             <English>Bandage Section Items &amp; Quantity</English>
+            <Spanish>Artículos de la sección de vendaje &amp; Cantidad</Spanish>
             <German>Bandagen Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>包帯枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество в разделе бинтов</Russian>
-            <Spanish>Sección de Objetos y Cantidades deVendajes</Spanish>
             <French>Objets et quantité de la section de bandages</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Item">
             <English>Pain Management Section Items &amp; Quantity</English>
+            <Spanish>Artículos de la sección de analgesicos &amp; Cantidad</Spanish>
             <German>Schmerzmittel Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>鎮痛枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела обезболивающих</Russian>
-            <Spanish>Sección de Objetos y Cantidades de Gestión del Dolor</Spanish>
             <French>Objets et quantité de la section de régulation de la douleur</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Item">
             <English>Breathing Section Items &amp; Quantity</English>
+            <Spanish>Artículos de la sección de respiración &amp; Cantidad</Spanish>
             <German>Beatmungs Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>呼吸枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела дыхательной системы</Russian>
-            <Spanish>Sección de Objetos y Cantidades de Respiración</Spanish>
             <French>Objets et quantité de la section d'articles respiratoires</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FifthSlot_Item">
             <English>Airway Section Items &amp; Quantity</English>
+            <Spanish>Artículos de la sección de vías respiratorias &amp; Cantidad</Spanish>
             <German>Atemwege Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>気道枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела дыхательных путей</Russian>
-            <Spanish>Sección de Objetos y Cantidades deVías Aéreas</Spanish>
             <French>Objets et quantité de la section des voies aériennes</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SixthSlot_Item">
             <English>Pharmaceutical Section Items &amp; Quantity</English>
+            <Spanish>Artículos de la sección de farmacia &amp; Cantidad</Spanish>
             <German>Arzneimittel Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>薬品枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела фармацевтики</Russian>
-            <Spanish>Sección de Objetos y Cantidades de Medicamentos</Spanish>
             <French>Objets et quantités de la section pharmaceutique</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SeventhSlot_Item">
             <English>Fluid Section Items &amp; Quantity</English>
+            <Spanish>Artículos de la sección de fluidos &amp; Cantidad</Spanish>
             <German>Flüssigkeit Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>輸液枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела жидкостей</Russian>
-            <Spanish>Sección de Objetos y Cantidades de Fluidos</Spanish>
             <French>Objets et quantités de la section des fluides</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EighthSlot_Item">
             <English>Miscellaneous Section Items &amp; Quantity</English>
+            <Spanish>Artículos de la sección de miscelaneos &amp; Cantidad</Spanish>
             <German>Vermischte Sektion Gegenstände &amp; Anzahl</German>
             <Japanese>雑多枠のアイテムと数量</Japanese>
             <Russian>Предметы и количества прочего раздела</Russian>
-            <Spanish>Sección de Objetos y Cantidades de Miscelaneos</Spanish>
             <French>Objets et quantités de la section autres</French>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Display">
             <English>Individual First Aid Kit</English>
+            <Spanish>Kit individual de primeros auxilios</Spanish>
             <German>Individuelles Erste Hilfe Kit (IFAK)</German>
             <Japanese>個人用応急処置キット (IFAK)</Japanese>
             <French>Trousse individuelle du combattant</French>
             <Finnish>Yksilöllinen ensiapulaukku</Finnish>
             <Russian>Индивидуальная аптечка первой помощи</Russian>
-            <Spanish>Kit de Primeros Auxilios Individual</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_DESC">
             <English>The IFAK can be unpacked to provide useful medical items</English>
@@ -1275,244 +1275,244 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_DisplayItems">
             <English>View Packing List</English>
+            <Spanish>Ver lista</Spanish>
             <German>Packliste ansehen</German>
             <Japanese>内容物リストを見る</Japanese>
             <Russian>Просмотреть упаковочный лист</Russian>
-            <Spanish>Ver Lista de Paquete</Spanish>
             <French>Voir la liste de remplissage</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Hint">
             <English>Trauma Section:</English>
+            <Spanish>Sección de trauma:</Spanish>
             <German>Trauma Sektion:</German>
             <Japanese>外傷枠:</Japanese>
             <Russian>Раздел травм:</Russian>
-            <Spanish>Sección de Trauma:</Spanish>
             <French>Section de traumatologie :</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Hint">
             <English>Bandage Section:</English>
+            <Spanish>Sección de vendaje:</Spanish>
             <German>Bandagen Sektion:</German>
             <Japanese>包帯枠:</Japanese>
             <Russian>Раздел перевязок:</Russian>
-            <Spanish>Sección de Vendajes:</Spanish>
             <French>Section de bandages :</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Hint">
             <English>Pain Management Section:</English>
+            <Spanish>Sección de analgesicos:</Spanish>
             <German>Schmerzmittel Sektion:</German>
             <Japanese>鎮痛枠:</Japanese>
             <Russian>Раздел обезбаливающих:</Russian>
-            <Spanish>Sección de Gestión del Dolor:</Spanish>
             <French>Section de régulation de la douleur :</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Hint">
             <English>Breathing Section:</English>
+            <Spanish>Sección de respiración:</Spanish>
             <German>Beatmungs Sektion:</German>
             <Japanese>呼吸枠:</Japanese>
             <Russian>Раздел дыхательной системы:</Russian>
-            <Spanish>Sección de Respiración:</Spanish>
             <French>Section d'articles respiratoires :</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Hint">
             <English>Airway Section:</English>
+            <Spanish>Sección de vías respiratorias:</Spanish>
             <German>Atemwege Sektion:</German>
             <Japanese>気道枠:</Japanese>
             <Russian>Раздел дыхательных путей:</Russian>
-            <Spanish>Sección de Vías Aéreas:</Spanish>
             <French>Section des voies aériennes :</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Hint">
             <English>Pharmaceutical Section:</English>
+            <Spanish>Sección de farmacia:</Spanish>
             <German>Arzneimittel Sektion:</German>
             <Japanese>薬品枠:</Japanese>
             <Russian>Раздел фармацевтики:</Russian>
-            <Spanish>Sección de Medicamentos:</Spanish>
             <French>Section pharmaceutique :</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Hint">
             <English>Fluid Section:</English>
+            <Spanish>Sección de fluidos:</Spanish>
             <German>Flüssigkeits Sektion:</German>
             <Japanese>輸液枠:</Japanese>
             <Russian>Раздел жидкостей:</Russian>
-            <Spanish>Sección de Fluidos:</Spanish>
             <French>Section des fluides :</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Hint">
             <English>Miscellaneous Section:</English>
+            <Spanish>Sección de miscelaneos:</Spanish>
             <German>Vermischte Sektion:</German>
             <Japanese>雑多枠:</Japanese>
             <Russian>Раздел прочего:</Russian>
-            <Spanish>Sección de Miscelánea:</Spanish>
             <French>Sections autres :</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1">
             <English>Unpack Trauma Section</English>
+            <Spanish>Desempaquetar sección de traumas:</Spanish>
             <German>Entpacke Trauma Sektion</German>
             <Japanese>外傷枠を 開梱する</Japanese>
             <Russian>Распаковать раздел травм</Russian>
-            <Spanish>Desempaquetar Sección de Trauma</Spanish>
             <French>Déballer la section de traumatologie</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2">
             <English>Unpack Bandage Section</English>
+            <Spanish>Desempaquetar sección de vendaje:</Spanish>
             <German>Entpacke Bandagen Sektion</German>
             <Japanese>包帯枠を 開梱する</Japanese>
             <Russian>Распаковать раздел перевязок</Russian>
-            <Spanish>Desempaquetar Sección de Vendajes</Spanish>
             <French>Déballer la section de bandages</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3">
             <English>Unpack Pain Management Section</English>
+            <Spanish>Desempaquetar sección de analgesicos:</Spanish>
             <German>Entpacke Schmerzmittel Sektion</German>
             <Japanese>鎮痛枠を 開梱する</Japanese>
             <Russian>Распаковать раздел обезбаливающих</Russian>
-            <Spanish>Desempaquetar Sección de Gestión del Dolor</Spanish>
             <French>Déballer la section de régulation de la douleur</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4">
             <English>Unpack Breathing Section</English>
+            <Spanish>Desempaquetar sección de respiración:</Spanish>
             <German>Entpacke Beatmungs Sektion</German>
             <Japanese>呼吸枠を 開梱する</Japanese>
             <Russian>Распаковать разде дыхательной системы</Russian>
-            <Spanish>Desempaquetar Sección de Respiración</Spanish>
             <French>Déballer la section d'articles respiratoires</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5">
             <English>Unpack Airway Section</English>
+            <Spanish>Desempaquetar sección de vías respiratorias:</Spanish>
             <German>Entpacke Atemwege Sektion</German>
             <Japanese>気道枠を 開梱する</Japanese>
             <Russian>Распаковать раздел дыхательных путей</Russian>
-            <Spanish>Desempaquetar Sección de Vías Aéreas</Spanish>
             <French>Déballer la section des voies aériennes</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6">
             <English>Unpack Pharmaceutical Section</English>
+            <Spanish>Desempaquetar sección de farmacia:</Spanish>
             <German>Entpacke Arzneimittel Sektion</German>
             <Japanese>薬品枠を 開梱する</Japanese>
             <Russian>Распаковатьраздел фармацевтики</Russian>
-            <Spanish>Desempaquetar Sección de Medicamentos</Spanish>
             <French>Déballer la section pharmaceutique</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7">
             <English>Unpack Fluid Section</English>
+            <Spanish>Desempaquetar sección de fluidos:</Spanish>
             <German>Entpacke Flüssigkeit Sektion</German>
             <Japanese>輸液枠を 開梱する</Japanese>
             <Russian>Распаковать раздел жидкостей</Russian>
-            <Spanish>Desempaquetar Sección de Fluidos</Spanish>
             <French>Déballer la section des fluides</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8">
             <English>Unpack Miscellaneous Section</English>
+            <Spanish>Desempaquetar sección de miscelaneos:</Spanish>
             <German>Entpacke Vermischte Sektion</German>
             <Japanese>雑多枠を 開梱する</Japanese>
             <Russian>Распаковать раздел прочего</Russian>
-            <Spanish>Desempaquetar Sección de Miscelánea</Spanish>
             <French>Déballer la section autres</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Repack">
             <English>Repack Trauma Section</English>
+            <Spanish>Empaquetar sección de trauma:</Spanish>
             <German>Packe Trauma Sektion</German>
             <Japanese>外傷枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел травм</Russian>
-            <Spanish>Reempaquetar Sección de Trauma</Spanish>
             <French>Remballer la section de traumatologie</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Repack">
             <English>Repack Bandage Section</English>
+            <Spanish>Empaquetar sección de vendaje:</Spanish>
             <German>Packe Bandagen Sektion</German>
             <Japanese>包帯枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел перевязок</Russian>
-            <Spanish>Reempaquetar Sección de Vendajes</Spanish>
             <French>Remballer la section de bandages</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Repack">
             <English>Repack Pain Management Section</English>
+            <Spanish>Empaquetar sección de analgesicos:</Spanish>
             <German>Packe Schmerzmittel Sektion</German>
             <Japanese>鎮痛枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел обезбаливающих</Russian>
-            <Spanish>Reempaquetar Sección de Gestión del Dolor</Spanish>
             <French>Remballer la section de régulation de la douleur</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Repack">
             <English>Repack Breathing Section</English>
+            <Spanish>Empaquetar sección de respiración:</Spanish>
             <German>Packe Beatmungs Sektion</German>
             <Japanese>呼吸枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел дыхательной системы</Russian>
-            <Spanish>Reempaquetar Sección de Respiración</Spanish>
             <French>Remballer la section d'articles respiratoires</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Repack">
             <English>Repack Airway Section</English>
+            <Spanish>Empaquetar sección de vías respiratorias:</Spanish>
             <German>Packe Atemwege Sektion</German>
             <Japanese>気道枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел дыхательных путей</Russian>
-            <Spanish>Reempaquetar Sección de Vías Aéreas</Spanish>
             <French>Remballer la section des voies aériennes</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Repack">
             <English>Repack Pharmaceutical Section</English>
+            <Spanish>Empaquetar sección de vendaje:</Spanish>
             <German>Packe Arzneimittel Sektion</German>
             <Japanese>薬品枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел фармацевтики</Russian>
-            <Spanish>Reempaquetar Sección de Medicamentos</Spanish>
             <French>Remballer la section pharmaceutique</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Repack">
             <English>Repack Fluid Section</English>
+            <Spanish>Empaquetar sección de fluidos:</Spanish>
             <German>Packe Flüssigkeit Sektion</German>
             <Japanese>輸液枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел жидкостей</Russian>
-            <Spanish>Reempaquetar Sección de Fluidos</Spanish>
             <French>Remballer la section des fluides</French>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Repack">
             <English>Repack Miscellaneous Section</English>
+            <Spanish>Empaquetar sección de miscelaneos:</Spanish>
             <German>Packe Vermischte Sektion</German>
             <Japanese>雑多枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел прочего</Russian>
-            <Spanish>Reempaquetar Sección de Miscelánea</Spanish>
             <French>Remballer la section autres</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor">
             <English>Hint Item Color</English>
+            <Spanish>Color del objeto en la nota</Spanish>
             <German>Hinweis Gegenstand Farbe</German>
             <Japanese>ヒントのアイテムの文字色</Japanese>
             <Russian>Подсказка по цвету элемента</Russian>
-            <Spanish>Color de Pista de Objeto</Spanish>
             <French>Couleur d'indice de l'objet</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor_DESC">
             <English>The item color of the text that is displayed via a hint</English>
+            <Spanish>El color del elemento que aparece en el texto de la nota.</Spanish>
             <German>Die Farbe der Gegenstände die über einen Hinweis angezeigt werden</German>
             <Japanese>ヒントで表示されるポケット内アイテムの文章の文字色</Japanese>
             <Russian>Цвет элемента текста, отображаемого с помощью подсказки</Russian>
-            <Spanish>El color del texto del objeto que se muestra mediante una pista</Spanish>
             <French>La couleur de l'objet du texte affiché via un indice</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor">
             <English>Hint Section Color</English>
+            <Spanish>Sección de color de la nota</Spanish>
             <German>Hinweis Sektion Farbe</German>
             <Japanese>ヒントの種類枠の文字色</Japanese>
             <Russian>Цвет раздела подсказок</Russian>
-            <Spanish>Color de la Sección de Pistas</Spanish>
             <French>Couleur d'indice de la section</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor_DESC">
             <English>The Section color of the text that is displayed via a hint</English>
+            <Spanish>El color de la sección del texto que se muestra mediante una nota.</Spanish>
             <German>Die Farbe der Sektionen die über einen Hinweis angezeigt werden</German>
             <Japanese>ヒントで表示されるポケット種類枠の文章の文字色</Japanese>
             <Russian>Цвет раздела текста, отображаемого с помощью подсказки</Russian>
-            <Spanish>El color del texto de la Sección que es mostrado mediante una pista</Spanish>
             <French>La couleur de la section du texte affiché via un indice</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty">
             <English>Remove when empty</English>
+            <Spanish>Eliminar cuando esta vacio</Spanish>
             <German>Lösche wenn leer</German>
             <Japanese>空になったら削除する</Japanese>
             <French>Retirer lorsque vide</French>
             <Finnish>Poista tyhjänä</Finnish>
             <Russian>Удалить, когда опустеет</Russian>
-            <Spanish>Eliminar cuando esté vacío</Spanish>
         </Key>
         <Key ID="STR_KAT_Misc_CarryPatient">
             <English>Carry Patient</English>
@@ -1551,7 +1551,7 @@
             <English>Use Surgical Kit (Full Body)</English>
             <Japanese>手術キットを使う (全身縫合)</Japanese>
             <Russian>Использвать хир.набор (на всё тело)</Russian>
-            <Spanish>Usar Kit Quirúrgico (Cuerpo Completo)</Spanish>
+            <Spanish>Utilizar kit quirúrgico (cuerpo completo)</Spanish>
             <French>Utiliser la trousse chirurgicale (Corps complet)</French>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody">

@@ -1,3 +1,4 @@
+class CBA_Extended_EventHandlers_base;
 class CfgVehicles {
     #include "vehicle_stretcher.hpp"
     class Land_IntravenStand_01_base_F;
@@ -144,6 +145,7 @@ class CfgVehicles {
         };
         class EventHandlers {
             init = QUOTE(_this call FUNC(stretcher));
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
     };
     class Land_Stretcher_01_base_F;

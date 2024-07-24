@@ -1,6 +1,8 @@
 PREP(alphaAction);
 PREP(applyIV);
 PREP(checkIV);
+PREP(clotWound);
+PREP(coagRegen);
 PREP(fluid);
 PREP(fluidLocal);
 PREP(fullHealLocal);
@@ -24,6 +26,7 @@ PREP(treatmentAdvanced_CaffeineLocal);
 PREP(treatmentAdvanced_Carbonate);
 PREP(treatmentAdvanced_CWMP);
 PREP(treatmentAdvanced_CarbonateLocal);
+PREP(treatmentAdvanced_CheckCoag);
 PREP(treatmentAdvanced_Dialysis);
 PREP(treatmentAdvanced_DialysisLocal);
 PREP(treatmentAdvanced_EACALocal);
