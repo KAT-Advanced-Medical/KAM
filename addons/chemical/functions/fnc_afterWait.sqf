@@ -86,12 +86,10 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
         _unit setVariable [QGVAR(poisonType), _gastype, true];
         switch (_gastype) do {
             case 1: {
-                systemChat "CS Gas";
                 _unit setVariable [QGVAR(CS), true, true];
                 [_unit, _logic, _radius_max] call FUNC(handleCSGas);
             };
             case 0: {
-                systemChat "Air Poisoning";
                 _unit setVariable [QGVAR(airPoisoning), true, true];
             };
         };
