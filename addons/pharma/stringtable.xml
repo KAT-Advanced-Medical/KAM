@@ -3533,7 +3533,7 @@
             <English>Coag-Sense Settings</English>
             <Japanese>Coag-Sense設定</Japanese>
         </Key>
-         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
+        <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
             <English>Medical level required for Coag-Sense</English>
             <Japanese>Coag-Senseの許可</Japanese>
         </Key>
