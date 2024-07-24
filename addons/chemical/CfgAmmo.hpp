@@ -1,12 +1,12 @@
-class cfgAmmo
+class CfgAmmo
 {
     class SmokeShellArty;
     class KAT_SmokeShellArty: SmokeShellArty{
         smokeColor[] = {0,0,0,0};
     };
-    
+
     class Smoke_82mm_AMOS_White;
-    class Sh_82mm_AMOS_Type0: Smoke_82mm_AMOS_White 
+    class Sh_82mm_AMOS_Type0: Smoke_82mm_AMOS_White
     {
         KAT_projectile = 1;
         KAT_lifetime = 90;
@@ -30,7 +30,7 @@ class cfgAmmo
     };
 
     class SmokeShell;
-    class KAT_G_M7A3: SmokeShell 
+    class KAT_G_M7A3: SmokeShell
     {
         KAT_csGas = 1;
         model = QPATHTOF(ui\m7a3_throw.p3d);
@@ -58,7 +58,7 @@ class cfgAmmo
         indirectHit = 0;
         indirectHitRange = 0;
         soundHit[] = {"A3\Sounds_F\weapons\smokeshell\smoke_3",1.25893,1,100};
-        explosionEffects = "KAT_GASTripEffect"; 
+        explosionEffects = "KAT_GASTripEffect";
         CraterEffects = "";
         soundTrigger[] = {"",1,1};
         class CamShakeExplode {
@@ -90,7 +90,7 @@ class cfgAmmo
         explosionTime = 2;
         explosionForceCoef = 5;
         explosive = 0.95;
-        ExplosionEffects = "BombExplosion"; 
+        ExplosionEffects = "BombExplosion";
         flightProfiles[] = {"LoalAltitude"};
         hit = 0;
         indirectHit = 0;
@@ -116,14 +116,14 @@ class cfgAmmo
             distance = 250;
         };
 
-        
+
     };
     class Mo_cluster_Bomb_01_F;
     class KAT_CAS_M43_Ammo_sub: Mo_cluster_Bomb_01_F {
         hit = 0;
         indirectHit = 0;
         indirectHitRange = 0;
-        explosionEffects = "KAT_GAS_ClusterExplosion"; 
+        explosionEffects = "KAT_GAS_ClusterExplosion";
     };
 
     class R_80mm_HE;

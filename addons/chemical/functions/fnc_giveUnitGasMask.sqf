@@ -18,12 +18,13 @@
 params ["_medic", "_patient"];
 
 private _itemArr = _medic call ACEFUNC(common,uniqueItems);
-private _playerhasGasmask = false;
+private _playerHasGasmask = false;
 private _playerGasMask = "";
-{ if(_x in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_playerhasGasmask = true; _playerGasMask = _x} } forEach _itemArr;
+{ if (_x in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_playerHasGasmask = true; _playerGasMask = _x} } forEach _itemArr;
 
 private _fnc_replaceItem = {
     params["_medic", "_patient", "_playerGasMask"];
+
     if (goggles _patient == "") then {
         _patient linkItem _playerGasMask;
     } else {
@@ -33,11 +34,11 @@ private _fnc_replaceItem = {
     };
 };
 
-if (_playerhasGasmask) then {
+if (_playerHasGasmask) then {
     [_medic,_playerGasMask] call ACEFUNC(common,useItem);
     [_medic,_patient,_playerGasMask] call _fnc_replaceItem;
 } else {
     _itemArr = _patient call ACEFUNC(common,uniqueItems);
-    { if(_x in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_playerGasMask = _x} } forEach _itemArr;
+    { if (_x in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {_playerGasMask = _x} } forEach _itemArr;
     [_medic,_patient,_playerGasMask] call _fnc_replaceItem;
 };
