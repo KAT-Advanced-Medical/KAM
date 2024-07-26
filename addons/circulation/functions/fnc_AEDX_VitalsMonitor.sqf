@@ -94,8 +94,8 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
         } else {
             _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];
 
-            _etco2 = _patient call EFUNC(breathing,getETCo2);
-            _breathrate = _patient call EFUNC(breathing,getRespiratoryRate);
+            _etco2 = _patient getVariable [QEGVAR(breathing,etco2), 40];
+            _breathrate = _patient getVariable [QEGVAR(breathing,breathRate), 15];
         };
 
         // List vitals depending on if AED pads and vitals monitoring (pressure cuff + pulse oximeter) is connected

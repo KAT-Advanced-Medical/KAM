@@ -58,6 +58,8 @@ _pao2 = if ((_bloodGas select 2) != _pao2) then { _pao2 + ([(-0.05 * _deltaT) , 
 // Oxy-Haemo Dissociation Curve, driven primarily by pH
 private _o2Sat = ((_pao2 max 1)^2.7 / ((25 - (((_pH / 7.4) - 1) * 150))^2.7 + _pao2^2.7)) min 0.999;
 
+_unit setVariable [QEGVAR(breathing,breathRate), _respiratoryRate, _syncValues];
+_unit setVariable [QEGVAR(breathing,etco2), _paco2, _syncValues];
 _unit setVariable [QEGVAR(circulation,bloodGas), [_paco2, _pao2, _o2Sat, 24, _pH], _syncValues];
 
 [_bloodGas]
