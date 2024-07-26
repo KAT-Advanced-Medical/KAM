@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Glowbal
- * Updates the vitals. Called from the statemachine's onState functions.
+ * Author: Glowbal, Mazinski
+ * Updates the vitals for simple AI. Called from the statemachine's onState functions.
  *
  * Arguments:
  * 0: The Unit <OBJECT>
@@ -10,7 +10,7 @@
  * Update Ran (at least 1 second between runs) <BOOL>
  *
  * Example:
- * [player] call ace_medical_vitals_fnc_handleUnitVitals
+ * [player] call kat_misc_fnc_handleSimpleVitals;
  *
  * Public: No
  */

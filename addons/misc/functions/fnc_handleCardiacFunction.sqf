@@ -1,20 +1,21 @@
 #include "..\script_component.hpp"
 /*
- * Author: Glowbal
- * Update the heart rate
+ * Author: Glowbal, Mazinski
+ * Update the heart rate and cardiac return
  *
  * Arguments:
  * 0: The Unit <OBJECT>
  * 1: Heart Rate Adjustments <NUMBER>
  * 2: Heart Rate Target <NUMBER>
- * 3: Time since last update <NUMBER>
- * 4: Sync value? <BOOL>
+ * 3: Blood Volume <NUMBER>
+ * 4: Time since last update <NUMBER>
+ * 5: Sync value? <BOOL>
  *
  * ReturnValue:
  * Current Heart Rate <NUMBER>
  *
  * Example:
- * [player, 0, 80, 1, false] call ace_medical_vitals_fnc_updateHeartRate
+ * [player, 0, 80, 6, 1, false] call ace_medical_vitals_fnc_updateHeartRate
  *
  * Public: No
  */

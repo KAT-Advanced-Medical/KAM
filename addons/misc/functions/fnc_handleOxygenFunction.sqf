@@ -1,20 +1,24 @@
 #include "..\script_component.hpp"
 /*
- * Author: Glowbal
- * Update the temperature of the patient
+ * Author: Mazinski
+ * Updates the respiratory variables 
  *
  * Arguments:
  * 0: The Unit <OBJECT>
- * 1: SpO2 Adjustments <NUMBER>
- * 2: Current SpO2 <NUMBER>
- * 3: Time since last update <NUMBER>
- * 4: Sync value? <BOOL>
+ * 1: Heart Rate <NUMBER>
+ * 2: Anerobic Pressure <NUMBER>
+ * 3: Blood Gas Array <ARRAY>
+ * 4: Temperature <NUMBER>
+ * 5: Barometric Pressure <NUMBER>
+ * 6: Opioid Depression <NUMBER>
+ * 7: Time since last update <NUMBER>
+ * 8: Sync value? <BOOL> 
  *
  * ReturnValue:
  * Current Temperature <NUMBER>
  *
  * Example:
- * [player, 0, 1, false] call ace_medical_vitals_fnc_updateHeartRate
+ * [player, 80, 0.8, [40,90,0.96,24,7.4], 37, 760, 0, 1, false] call kat_misc_fnc_handleOxygenFunction;
  *
  * Public: No
  */

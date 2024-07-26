@@ -1,19 +1,20 @@
 #include "..\script_component.hpp"
 /*
- * Author: Glowbal
+ * Author: Mazinski
  * Update the temperature of the patient
  *
  * Arguments:
  * 0: The Unit <OBJECT>
  * 1: Temperature Adjustments <NUMBER>
- * 2: Time since last update <NUMBER>
- * 3: Sync value? <BOOL>
+ * 2: Blood Volume <NUMBER>
+ * 3: Time since last update <NUMBER>
+ * 4: Sync value? <BOOL>
  *
  * ReturnValue:
  * Current Temperature <NUMBER>
  *
  * Example:
- * [player, 0, 1, false] call ace_medical_vitals_fnc_updateHeartRate
+ * [player, 0, 6, 1, false] call kat_misc_fnc_handleTemperatureFunction;
  *
  * Public: No
  */
