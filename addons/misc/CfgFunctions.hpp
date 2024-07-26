@@ -74,7 +74,7 @@ class CfgFunctions {
         tag = "ace_medical_vitals";
         class ace_medical_vitals {
             class handleUnitVitals {
-                file = QPATHTOF(functions\fnc_handleUnitVitals.sqf);
+                file = QPATHTOF(functions\fnc_handleUnitVitalsTest.sqf);
             };
         };
     };
