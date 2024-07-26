@@ -48,7 +48,7 @@
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_displayName">
             <English>Fluid Line Warmer</English>
         </Key>
-        <Key ID="STR_KAT_Hypothermia_HandWarmer_DescShort">
+        <Key ID="STR_KAT_Hypothermia_FluidWarmer_DescShort">
             <English>Provides heating to IV fluids. Must be placed on an already existing line</English>
         </Key>
     </Package>
