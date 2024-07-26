@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski
- * Begins Hand Warmer treatment
+ * Author: Mazinski.H
+ * Begins Carbonate Treatment
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -15,10 +15,11 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg", "HandWarmer", objNull, "kat_handWarmer"] call kat_hypothermia_fnc_useHandWarmer;
+ * [player, cursorObject, "RightArm", "Carbonate", objNull, "kat_Carbonate"] call kat_pharma_fnc_treatmentAdvanced_Carbonate;
  *
  * Public: No
  */
+
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
 [_patient, _classname] call ACEFUNC(medical_treatment,addToTriageCard);

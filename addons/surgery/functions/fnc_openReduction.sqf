@@ -17,6 +17,6 @@
  * Public: No
  */
 
-params ["_medic", "_patient", "_bodyPart", "_exit"];
+params ["_medic", "_patient", "_bodyPart"];
 
-[QGVAR(openReduction), [_medic, _patient, _bodyPart, _exit], _patient] call CBA_fnc_targetEvent;
+[QGVAR(openReduction), [_medic, _patient, _bodyPart], _patient] call CBA_fnc_targetEvent;

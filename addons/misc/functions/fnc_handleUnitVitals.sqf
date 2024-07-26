@@ -39,7 +39,7 @@ _bloodVolume set [0, (GET_BLOOD_VOLUME(_unit) + (_bloodVolume select 0))];
 
 private _bloodLoss = (6 - (_bloodVolume select 0));
 
-// Acidosis from Blood Loss (BIG PH REWRITE HERE, LOOK AT LATER) ------------------------------------------------------------
+// Acidosis from Blood Volume matching between ECP/ECB and ISP
 private _externalPh = _unit getVariable [QEGVAR(pharma,externalPh),0];
 private _ph = 10 ^ (((_bloodVolume select 2) / (_bloodVolume select 1) + 0.0518));
 private _acidosis = 1.5 min ((0 max ((7.4 - _ph) - ((_bloodVolume select 0) / 6))) + (_externalPh / 2000));
@@ -71,6 +71,8 @@ private _spo2Adjustment = (((_breathingRate * 0.1) + _cardiacDemand) - (_breathi
 private _spo2 = [_unit, _spo2Adjustment, GET_SPO2(_unit), _deltaT, _syncValues] call FUNC(handleOxygenFunction);
 //(END VENTILATION BRANCH)
 
+// Note: Flip Ventilation and Cardiac Branch positions. Need to take in BP/S into the _spo2Adjustment somehow to simulate pulmonary hypertension. Higher pressure in the arteries should decrease BLIND _cardiacDemand to decrease _spo2 with no actual change in BR. 
+
 // (START CARDIAC BRANCH)
 // Heart Rate from Blood Volume and Cardiac Demand with negative Acidosis impacts (Forgot what the 105 value is, pulse per second impact? I lost the notecard on this)
 private _heartRate = (_bloodVolume select 0) * ((_cardiacDemand + (_acidosis / 4)) * 105.2631579);
@@ -78,8 +80,6 @@ private _heartRate = (_bloodVolume select 0) * ((_cardiacDemand + (_acidosis / 4
 // Systolic Blood Pressure from Metabolic Rate with negative Acidosis impacts, Diastolic Blood Pressure from Metabolic Rate and Blood Loss
 private _bloodPressureSystolic = 120 * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + (((_metabolicRate - 100)) - (_acidosis * 6));
 private _bloodPressureDiastolic = 80 * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + (((_metabolicRate - 100)) + (_bloodLoss * 3));
-
-// + (_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]
 
 private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
 _unit setVariable [VAR_BLOOD_VOL, (_bloodVolume select 0), _syncValues];

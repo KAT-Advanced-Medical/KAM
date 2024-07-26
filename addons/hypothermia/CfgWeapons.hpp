@@ -5,7 +5,7 @@ class CfgWeapons {
     class kat_handWarmer: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(HandWarmer_displayName);
-        picture = QPATHTOF(ui\warmers.paa);
+        picture = QPATHTOF(ui\handWarmer.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\HeatPack_F.p3d";
         descriptionShort = CSTRING(HandWarmer_DescShort);
         ACE_isMedicalItem = 1;

@@ -31,4 +31,4 @@ private _currentTemperature = 37 min ((-3.5 * (0.95 ^ _mapTemperature) + 37 + _a
 
 _unit setVariable [QEGVAR(circulation,temperature), _currentTemperature, _syncValue];
 
-_currentTemperature
+0 max (_currentTemperature - 37)

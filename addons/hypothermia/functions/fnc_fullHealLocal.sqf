@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski
+ * Author: MiszczuZPolski
  * Local callback for fully healing a patient.
  *
  * Arguments:
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_hypothermia_fnc_fullHealLocal
+ * [player] call kat_surgery_fnc_fullHealLocal
  *
  * Public: No
  */
