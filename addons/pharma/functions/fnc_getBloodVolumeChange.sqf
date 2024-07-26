@@ -28,8 +28,6 @@ private _ISP = _unit getVariable [QEGVAR(circulation,ISP), 10000];
 private _SRBC = _unit getVariable [QEGVAR(circulation,SRBC), 500];
 private _SRBCChange = 0;
 
-diag_log _SRBC;
-
 _ECP = _ECP + (_lossVolumeChange * 1000) / 2;
 _ECB = _ECB + (_lossVolumeChange * 1000) / 2;
 
@@ -54,7 +52,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
             private _bagChange = _flowCalculation min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
 
-            if (EGVAR[hypothermia,enable_hypothermia]) then {
+            if ( EGVAR(hypothermia,enable_hypothermia) ) then {
                 private _incomingVolumeChange = [0,0,0,0,0,0];
 
                 if ((_unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0]]) select _bodyPart == 1) then {
@@ -88,16 +86,16 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 };
 
 // Incoming fluids impacting internal temperature
-if (EGVAR[hypothermia,enable_hypothermia]) then {
+if ( EGVAR(hypothermia,enable_hypothermia) ) then {
     private _fluidHeat = 0;
     {_fluidHeat = _fluidHeat + _x} forEach _incomingVolumeChange;
 
     if (_fluidHeat > 0) then {
-        private _totalHeat = _unit getVariable [QEGVAR(warmingImpact), 0];
-        _unit setVariable [QGVAR(warmingImpact), _totalHeat + _fluidHeat, _syncValues];
+        private _totalHeat = _unit getVariable [QEGVAR(hypothermia,warmingImpact), 0];
+        _unit setVariable [QEGVAR(hypothermia,warmingImpact), _totalHeat + _fluidHeat, _syncValues];
     } else {
-        private _totalCooling = _unit getVariable [QEGVAR(warmingImpact), 0];
-        _unit setVariable [QGVAR(warmingImpact), _totalCooling + _fluidHeat, _syncValues];
+        private _totalCooling = _unit getVariable [QEGVAR(hypothermia,warmingImpact), 0];
+        _unit setVariable [QEGVAR(hypothermia,warmingImpact), _totalCooling + _fluidHeat, _syncValues];
     };
 };
 

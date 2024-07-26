@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: 2LT.Mazinski
+ * Author: Mazinski
  * Initializes unit variables.
  *
  * Arguments:
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_surgery_fnc_init;
+ * [player] call kat_hypothermia_fnc_init;
  *
  * Public: No
  */

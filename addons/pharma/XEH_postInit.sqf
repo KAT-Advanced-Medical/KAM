@@ -57,6 +57,3 @@
         };
     };
 }] call CBA_fnc_addEventHandler;
-
-[QACEGVAR(medical_status,initialized), LINKFUNC(coagRegen)] call CBA_fnc_addEventHandler;
-[QACEGVAR(medical_status,initialized), LINKFUNC(clotWound)] call CBA_fnc_addEventHandler;

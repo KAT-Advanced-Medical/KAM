@@ -17,7 +17,7 @@
 
 params ["_unit"];
 
-if (!(isPlayer _unit) && (_unit getVariable [QEGVAR(circulation,simpleMedical), false])) exitWith { [_unit] call FUNC(handleSimpleVitals) };
+//if (!(isPlayer _unit) && (_unit getVariable [QEGVAR(circulation,simpleMedical), false])) exitWith { [_unit] call FUNC(handleSimpleVitals) };
 
 private _lastTimeUpdated = _unit getVariable [QACEGVAR(medical_vitals,lastTimeUpdated), 0];
 private _deltaT = (CBA_missionTime - _lastTimeUpdated) min 10;
@@ -39,13 +39,7 @@ _bloodVolume set [0, (GET_BLOOD_VOLUME(_unit) + (_bloodVolume select 0))];
 
 private _bloodLoss = (6 - (_bloodVolume select 0));
 
-// Acidosis from Blood Loss (BIG PH REWRITE HERE, LOOK AT LATER) ------------------------------------------------------------
-private _externalPh = _unit getVariable [QEGVAR(pharma,externalPh),0];
-private _ph = 10 ^ (((_bloodVolume select 2) / (_bloodVolume select 1) + 0.0518));
-private _acidosis = 1.5 min ((0 max ((7.4 - _ph) - ((_bloodVolume select 0) / 6))) + (_externalPh / 2000));
-_unit setVariable [QEGVAR(pharma,pH), _acidosis, _syncValues];
-
-// Altitude 
+// Enviromental Impact (Altitude, Temperature, Pressure) 
 private _altitude = (getPosASL _unit) select 2;
 private _altitudeTempImpact = switch (true) do {
     case (_altitude >= 10): { abs(_altitude/153) * -1 }; //For every 1000 meters of elevation gain, temperature decreases by ~6.5 degrees celcius
@@ -53,36 +47,8 @@ private _altitudeTempImpact = switch (true) do {
     default { 0 };
 };
 
-private _temperatureImpact = [_unit, _altitudeTempImpact, (_bloodVolume select 0), _deltaT, _syncValues] call FUNC(handleTemperatureFunction); 
-
-// Metabolic Rate (MR) with decreases due to temperature and SpO2 impacts
-private _metabolicRate = (100 - ((100 - GET_SPO2(_unit))/5)) + (9.0757 * _bloodLoss^5) - (54.5562 * _bloodLoss^4) + (94.0381 * _bloodLoss^3) - (44.6435 * _bloodLoss^2) + (8.8576 * _bloodLoss) - _temperatureImpact;
-
-// Cardiac Demand from MR with increases due to altitude
-private _cardiacDemand = 0.1266666667 + (_metabolicRate - 100) * 0.003 + (_altitude * 0.00002);
-
-// (START VENTILATION BRANCH)
-// Ventilation Demand from Cardiac Demand (V from Q) with Acidosis decreasing exchange efficiency 
-private _ventilationDemand = (((_cardiacDemand + (_acidosis / 5)) / 5) * 4);
-
-// BR Actual from Ventilation Demand and Surface Area
-private _breathingRate = [(0.67 min ((_ventilationDemand / (GET_KAT_SURFACEAREA(_unit) * (-0.006158583526))) * (-0.006158583526))), 0] select (IN_CRDC_ARRST(_unit));
-private _spo2Adjustment = (((_breathingRate * 0.1) + _cardiacDemand) - (_breathingRate * GET_KAT_SURFACEAREA(_unit)));
-private _spo2 = [_unit, _spo2Adjustment, GET_SPO2(_unit), _deltaT, _syncValues] call FUNC(handleOxygenFunction);
-//(END VENTILATION BRANCH)
-
-// (START CARDIAC BRANCH)
-// Heart Rate from Blood Volume and Cardiac Demand with negative Acidosis impacts (Forgot what the 105 value is, pulse per second impact? I lost the notecard on this)
-private _heartRate = (_bloodVolume select 0) * ((_cardiacDemand + (_acidosis / 4)) * 105.2631579);
-
-// Systolic Blood Pressure from Metabolic Rate with negative Acidosis impacts, Diastolic Blood Pressure from Metabolic Rate and Blood Loss
-private _bloodPressureSystolic = 120 * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + (((_metabolicRate - 100)) - (_acidosis * 6));
-private _bloodPressureDiastolic = 80 * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + (((_metabolicRate - 100)) + (_bloodLoss * 3));
-
-// + (_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]
-
-private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
-_unit setVariable [VAR_BLOOD_VOL, (_bloodVolume select 0), _syncValues];
+private _baroPressure = 760 * exp((-(_altitude)) / 8400);
+private _temperature = [_unit, _altitudeTempImpact, (_bloodVolume select 0), _deltaT, _syncValues] call FUNC(handleTemperatureFunction); 
 
 // Set variables for synchronizing information across the net
 private _hemorrhage = switch (true) do {
@@ -144,30 +110,46 @@ if !(_adjustments isEqualTo []) then {
     };
 };
 
-_heartRate = [_unit, _hrTargetAdjustment, _heartRate, _deltaT, _syncValues] call FUNC(handleCardiacFunction); //Rename
 [_unit, _painSupressAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePainSuppress); //Leave alone
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
 
-// Remeber to change getBloodPressure macro ----------------------------------------------------------
+// Additional variables for Respiration/Cardiac functions
+private _bloodGas = _unit getVariable [QEGVAR(circulation,bloodGas), [40, 90, 0.96, 24, 7.4]];
+private _opioidDepression = (GET_OPIOID_FACTOR(_unit) - 1);
+private _anerobicPressure = (0.8 * (6 / ((_bloodVolume select 0) max 0.1)) - 0) min 1.2;
+private _vasoconstriction = _unit getVariable [QEGVAR(pharma,alphaAction), 1];
+
+private _cardiacOutput = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction); //Rename
+private _heartRate = _cardiacOutput select 0;
+
+_bloodGas = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction); // RENAMED TO RESPIRATORYFUNCTION. DO NOT FORGET
+_bloodGas = _unit getVariable [QEGVAR(circulation,bloodGas), [40, 90, 0.96, 24, 7.4]];
+private _spo2 = (_bloodGas select 2);
+
+// Systolic Blood Pressure from Metabolic Rate with negative Acidosis impacts, Diastolic Blood Pressure from Metabolic Rate and Blood Loss
+private _bloodPressureSystolic = ((_bloodVolume select 0) * 20) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_heartRate - 80));
+private _bloodPressureDiastolic = (((_bloodVolume select 0) * 13.33) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_vasoconstriction - 1) * 40)) min _bloodPressureSystolic;
 
 // Vasoconstriction from Diastolic Blood Pressure and Alpha Adjustment
-private _vasoconstriction = switch (true) do {
+_vasoconstriction = switch (true) do {
     case (_bloodPressureDiastolic <= 40): { 1.5 + _alphaFactorAdjustment };
     case (_bloodPressureDiastolic >= 120): { 0.5 + _alphaFactorAdjustment };
     default { (1.5 - (_bloodPressureDiastolic - 40) * (1 / 80)) + _alphaFactorAdjustment };
 };
 
 _unit setVariable [QEGVAR(pharma,alphaAction), (1.7 min (0.3 max _vasoconstriction)), _syncValues];
-// (END CARDIAC BRANCH)
 
 private _bloodPressure = [round(_bloodPressureDiastolic),round(_bloodPressureSystolic)];
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
 
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 
+private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
+_unit setVariable [VAR_BLOOD_VOL, (_bloodVolume select 0), _syncValues];
+
 // Statements are ordered by most lethal first.
 // Add SpO2 reactions to switch statement ---------------------------------------------------------------------
-switch (true) do {
+/* switch (true) do {
     case ((_bloodVolume select 0) < BLOOD_VOLUME_FATAL): {
         TRACE_3("BloodVolume Fatal",_unit,BLOOD_VOLUME_FATAL,(_bloodVolume select 0));
         [QACEGVAR(medical,Bleedout), _unit] call CBA_fnc_localEvent;
@@ -223,7 +205,7 @@ switch (true) do {
     case (_inPain): {
         [QACEGVAR(medical,LoweredVitals), _unit] call CBA_fnc_localEvent;
     };
-};
+}; */
 
 #ifdef DEBUG_MODE_FULL
 private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);

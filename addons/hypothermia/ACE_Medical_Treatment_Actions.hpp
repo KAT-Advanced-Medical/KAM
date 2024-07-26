@@ -4,7 +4,7 @@ class ACE_Medical_Treatment_Actions {
         displayName = CSTRING(Use_Handwarmer);
         displayNameProgress = CSTRING(Using);
         treatmentLocations = 0;
-        allowedSelections[] = {"Body"};
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         items[] = {"kat_handWarmer"};
         callbackSuccess = QFUNC(useHandWarmer);
     };

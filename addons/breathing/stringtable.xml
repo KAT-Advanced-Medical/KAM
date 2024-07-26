@@ -3,18 +3,18 @@
     <Package name="Breathing">
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE">
             <English>Activate Breathing Module</English>
-            <Spanish>Activar el módulo de respiración</Spanish>
             <German>Aktiviere Atmungs Modul</German>
             <Japanese>呼吸モジュールを有効化</Japanese>
             <Russian>Активировать дыхательный модуль</Russian>
+            <Spanish>Activar Módulo de Respiración</Spanish>
             <French>Activer le module de respiration</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
             <English>Sets if SPO2 simulation and according functionality like Pneumothorax and \nAirway: occlusion &amp; obstruction (SPO2 reduction will be deactivated) should be activated</English>
-            <Spanish>Establece si la simulación de SPO2 y las funcionalidades del mismo como Neumotórax y \nvías respiratorias: oclusión/obstrucción (se desactivará la reducción de SPO2). deberían estar activadas</Spanish>
             <German>Aktiviert SPO2 Simulation sowie Pneumothorax und Atemwege: Verstopfung und Obstruktion (SPO2 Reduktion wird deaktiviert)</German>
             <Japanese>SpO2のシミュレーションを気胸や気道:閉塞と異物などの機能で動作するように設定します。\n(SpO2減少機能は無効化されます)</Japanese>
             <Russian>Устанавливает, следует ли активировать имитацию SPO2 и соответствующие функции, такие как пневмоторакс и \дыхательные пути: окклюзия и обструкция (уменьшение SPO2 будет отключено)</Russian>
+            <Spanish>Establece si la simulación de SPO2 y sus funcionalidades relacionadas como Pneumothorax</Spanish>
             <French>Définit si la simulation SpO2 et les fonctionnalités correspondantes telles que les pneumothorax et \nvoies respiratoires : occlusion &amp; obstruction (la réduction de la SPO2 sera désactivée) doivent être activées</French>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">

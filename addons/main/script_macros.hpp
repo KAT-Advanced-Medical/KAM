@@ -281,9 +281,9 @@
 #define OXYGEN_PERCENTAGE_FATAL 75
 
 #define VAR_SPO2                       QEGVAR(breathing,airwayStatus)
-#define VAR_SURFACEAREA 0.3897
+#define VAR_SURFACEAREA 400
 #define GET_SPO2(unit)                 (unit getVariable [VAR_SPO2, 100])
-#define GET_KAT_SURFACEAREA(unit)      (VAR_SURFACEAREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) + 1) / 20))
+#define GET_KAT_SURFACEAREA(unit)      (VAR_SURFACEAREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75)))
 
 // Circulation
 #define VAR_INTERNAL_BLEEDING          QEGVAR(circulation,internalBleeding)

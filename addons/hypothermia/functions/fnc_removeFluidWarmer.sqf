@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski
- * Begins Hand Warmer treatment
+ * Author: Mazinski.H
+ * Begins Remove Fluid Warmer treatment
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -15,13 +15,14 @@
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg", "HandWarmer", objNull, "kat_handWarmer"] call kat_hypothermia_fnc_useHandWarmer;
+ * [player, cursorObject, "RightArm", "Carbonate", objNull, "kat_Carbonate"] call kat_hypothermia_fnc_removeFluidWarmer;
  *
  * Public: No
  */
+
 params ["_medic", "_patient", "_bodyPart", "_classname", "", "_usedItem"];
 
 [_patient, _classname] call ACEFUNC(medical_treatment,addToTriageCard);
 [_patient, "activity", ACELSTRING(medical_treatment,Activity_usedItem), [[_medic] call ACEFUNC(common,getName), _classname]] call ACEFUNC(medical_treatment,addToLog);
 
-[QGVAR(useHandWarmerLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
+[QGVAR(removeFluidWarmerLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
