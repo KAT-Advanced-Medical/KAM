@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Mazinski.H
- * Begins Carbonate Treatment
+ * Author: Mazinski
+ * Begins Fluid Warmer Treatment
  *
  * Arguments:
  * 0: Medic <OBJECT>
