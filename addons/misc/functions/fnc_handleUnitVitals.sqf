@@ -114,7 +114,7 @@ if !(_adjustments isEqualTo []) then {
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
 
 // Additional variables for Respiration/Cardiac functions
-private _bloodGas = _unit getVariable [QEGVAR(circulation,bloodGas), [40, 90, 0.96, 24, 7.4]];
+private _bloodGas = _unit getVariable [QEGVAR(circulation,bloodGas), [40, 90, 0.96, 24, 7.4, 37]];
 private _opioidDepression = (GET_OPIOID_FACTOR(_unit) - 1);
 private _anerobicPressure = (0.8 * (6 / ((_bloodVolume select 0) max 0.1)) - 0) min 1.2;
 private _vasoconstriction = _unit getVariable [QEGVAR(pharma,alphaAction), 1];
@@ -123,11 +123,10 @@ private _cardiacOutput = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, 
 private _heartRate = _cardiacOutput select 0;
 
 _bloodGas = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction); // RENAMED TO RESPIRATORYFUNCTION. DO NOT FORGET
-_bloodGas = _unit getVariable [QEGVAR(circulation,bloodGas), [40, 90, 0.96, 24, 7.4]];
-private _spo2 = (_bloodGas select 2);
+private _spo2 = (_bloodGas select 2) * 100;
 
 // Systolic Blood Pressure from Metabolic Rate with negative Acidosis impacts, Diastolic Blood Pressure from Metabolic Rate and Blood Loss
-private _bloodPressureSystolic = ((_bloodVolume select 0) * 20) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_heartRate - 80));
+private _bloodPressureSystolic = ((_bloodVolume select 0) * 20) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_heartRate - 80) - (((5.5 - (_bloodVolume select 0)) max 0) * 30));
 private _bloodPressureDiastolic = (((_bloodVolume select 0) * 13.33) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_vasoconstriction - 1) * 40)) min _bloodPressureSystolic;
 
 // Vasoconstriction from Diastolic Blood Pressure and Alpha Adjustment
@@ -149,7 +148,7 @@ _unit setVariable [VAR_BLOOD_VOL, (_bloodVolume select 0), _syncValues];
 
 // Statements are ordered by most lethal first.
 // Add SpO2 reactions to switch statement ---------------------------------------------------------------------
-/* switch (true) do {
+ switch (true) do {
     case ((_bloodVolume select 0) < BLOOD_VOLUME_FATAL): {
         TRACE_3("BloodVolume Fatal",_unit,BLOOD_VOLUME_FATAL,(_bloodVolume select 0));
         [QACEGVAR(medical,Bleedout), _unit] call CBA_fnc_localEvent;
@@ -205,7 +204,7 @@ _unit setVariable [VAR_BLOOD_VOL, (_bloodVolume select 0), _syncValues];
     case (_inPain): {
         [QACEGVAR(medical,LoweredVitals), _unit] call CBA_fnc_localEvent;
     };
-}; */
+};
 
 #ifdef DEBUG_MODE_FULL
 private _cardiacOutput = [_unit] call ACEFUNC(medical_status,getCardiacOutput);

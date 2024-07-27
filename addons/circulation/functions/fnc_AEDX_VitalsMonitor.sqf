@@ -92,9 +92,9 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
             _bp = [0,0];
             _pr = 0;
         } else {
-            _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];
+            _spO2 = GET_SPO2(_patient);
 
-            _etco2 = _patient getVariable [QEGVAR(breathing,etco2), 40];
+            _etco2 = _patient getVariable [QEGVAR(breathing,etco2), 37];
             _breathrate = _patient getVariable [QEGVAR(breathing,breathRate), 15];
         };
 
@@ -291,7 +291,7 @@ if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && {(_pat
         if (_patient getVariable [QGVAR(DefibrillatorInUse), false] || !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false])) then {
         } else {
             private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
-            private _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];
+            private _spO2 = GET_SPO2(_patient);
             if (_spO2 < GVAR(AED_X_Monitor_SpO2Warning) || _tourniquetApplied) then {
                 playSound3D [QPATHTOF_SOUND(sounds\spo2warning.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
             };

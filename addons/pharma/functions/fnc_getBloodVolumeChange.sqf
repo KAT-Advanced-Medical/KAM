@@ -31,7 +31,7 @@ private _SRBCChange = 0;
 _ECP = _ECP + (_lossVolumeChange * 1000) / 2;
 _ECB = _ECB + (_lossVolumeChange * 1000) / 2;
 
-// Movement of blood from speen to stream (heh)
+// Movement of blood from spleen to stream (heh)
 _SRBCChange = if(_SRBC > 100 && _ECB < 2700) then { ((2700 - _ECB) min (abs((_lossVolumeChange * 1000)) / 2 + 1)) } else { 0 };
 _ECB = _ECB + _SRBCChange;
 
@@ -113,8 +113,8 @@ switch (true) do {
         _ISP = _ISP - _shiftValue;
     };
     default {
-        _ISP = _ISP + ((10000 - _ISP) min 2);
-        _SRBC = _SRBC + ((500 - _SRBC) min 0.5);
+        _ISP = _ISP + ((10000 - _ISP) min 1);
+        _SRBC = _SRBC + ((500 - _SRBC) min 0.1);
     };
 };
 
