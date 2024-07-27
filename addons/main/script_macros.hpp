@@ -272,6 +272,20 @@
 
 #define ALL_BODY_PARTS_PRIORITY ["body", "head", "leftarm", "rightarm", "leftleg", "rightleg"]
 
+#define MINIMUM_VENTILATION 2000
+#define DEFAULT_PACO2 40
+#define DEFAULT_ETCO2 37
+#define DEFAULT_PH 7.4
+#define DEFAULT_ANEROBIC_EXCHANGE 0.8
+#define DEFAULT_TEMPERATURE 37
+#define DEFAULT_STROKE_VOLUME 0.001583333323
+
+#define MAXIMUM_RR 40
+#define PACO2_MAX_CHANGE 0.05
+#define PAO2_MAX_CHANGE 0.1
+#define HEART_RATE_CO2_MULTIPLIER 60
+#define DEFAULT_STROKE_VOLUME 0.001583333323
+
 // Airway
 #define OXYGEN_PERCENTAGE_CRITICAL 85
 #define OXYGEN_PERCENTAGE_ARREST 80
@@ -286,6 +300,7 @@
 
 #define GET_BLOOD_GAS(unit)            (unit getVariable [VAR_BLOOD_GAS, [40, 90, 0.96, 24, 7.4, 37]])
 #define GET_SPO2(unit)                 (((unit getVariable [VAR_BLOOD_GAS, [40, 90, 0.96, 24, 7.4, 37]]) select 2) * 100)
+#define GET_PH(unit)                   ((unit getVariable [VAR_BLOOD_GAS, [40, 90, 0.96, 24, 7.4, 37]]) select 4)
 #define GET_ETCO2(unit)                ((unit getVariable [VAR_BLOOD_GAS, [40, 90, 0.96, 24, 7.4, 37]]) select 5)
 #define GET_BREATHING_RATE(unit)       (unit getVariable [VAR_BREATHING_RATE, 15])
 
@@ -300,6 +315,10 @@
 #define GET_BLOOD_PRESSURE(unit)       ([unit] call EFUNC(circulation,getBloodPressure))
 #define VAR_BLOODPRESSURE_CHANGE       QEGVAR(circulation,bloodPressureChange)
 #define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])
+
+// Pharma
+#define VAR_VASOCONSTRICTION           QEGVAR(pharma,alphaAction)
+#define GET_VASOCONSTRICTION(unit)     (unit getVariable [VAR_VASOCONSTRICTION, 1])
 
 //Surgery
 #define STRING_BODY_PARTS ["head", "body", "left arm", "right arm", "left leg", "right leg"]

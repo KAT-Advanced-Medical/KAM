@@ -114,14 +114,14 @@ if !(_adjustments isEqualTo []) then {
 // Additional variables for Respiration/Cardiac functions
 private _bloodGas = GET_BLOOD_GAS(_unit);
 private _opioidDepression = (GET_OPIOID_FACTOR(_unit) - 1);
-private _anerobicPressure = (0.8 * (6 / (_bloodVolume max 0.1)) - 0) min 1.2;
-private _vasoconstriction = _unit getVariable [QEGVAR(pharma,alphaAction), 1];
+private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / _bloodVolume) - 0) min 1.2;
+private _vasoconstriction = GET_VASOCONSTRICTION(_unit)
 
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 private _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
 
 // Systolic Blood Pressure from Blood Volume with postive Heart Rate impacts capped by Blood Volume, Diastolic Blood Pressure from Vasoconstriction and Systolic BP
-private _bloodPressureSystolic = (_bloodVolume * 20) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_heartRate - 80) - (((5.5 - _bloodVolume) max 0) * 30));
+private _bloodPressureSystolic = (_bloodVolume * 20) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_heartRate - DEFAULT_HEART_RATE) - (((5.5 - _bloodVolume) max 0) * 30));
 private _bloodPressureDiastolic = ((_bloodVolume * 13.33) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_vasoconstriction - 1) * 40)) min (_bloodPressureSystolic - 5);
 
 // Vasoconstriction from Diastolic Blood Pressure and Alpha Adjustment
@@ -131,7 +131,7 @@ _vasoconstriction = switch (true) do {
     default { (1.5 - (_bloodPressureDiastolic - 40) * (1 / 80)) + _alphaFactorAdjustment };
 };
 
-_unit setVariable [QEGVAR(pharma,alphaAction), (1.8 min (0.2 max _vasoconstriction)), _syncValues];
+_unit setVariable [VAR_VASOCONSTRICTION, (1.8 min (0.2 max _vasoconstriction)), _syncValues];
 
 // Pull wound blood loss after recalculating vasoconstriction
 private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);

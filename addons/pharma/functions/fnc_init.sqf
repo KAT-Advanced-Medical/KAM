@@ -71,15 +71,15 @@ if (GVAR(kidneyAction)) then {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _ph = _unit getVariable [QGVAR(pH), 0];
-        if (_ph == 1.5) exitWith {};
+        private _ph = _unit getVariable [QGVAR(externalPh), 0];
+        if (_ph == 3000) exitWith {};
         if ((_unit getVariable [QGVAR(externalPh), false]) == 0) exitWith {};
 
         private _kidneyFail = _unit getVariable [QGVAR(kidneyFail), false];
         private _kidneyArrest = _unit getVariable [QGVAR(kidneyArrest), false];
         private _kidneyPressure = _unit getVariable [QGVAR(kidneyPressure), false];
 
-        if (_ph >= 1.4) exitWith {
+        if (_ph >= 2000) exitWith {
             _unit setVariable [QGVAR(kidneyFail), true, true];
 
             if !(_kidneyArrest) then {
@@ -92,8 +92,8 @@ if (GVAR(kidneyAction)) then {
             };
         };
 
-        if (_ph > 0.5) exitWith {
-            _ph = (_ph - 0.05) max 0;
+        if (_ph > 1000) exitWith {
+            _ph = (_ph - 30) max 0;
             _unit setVariable [QGVAR(externalPh), _ph, true];
 
             if !(_kidneyPressure) then {
@@ -102,7 +102,7 @@ if (GVAR(kidneyAction)) then {
             };
         };
 
-        _ph = (_ph - 0.1) max 0;
+        _ph = (_ph - 60) max 0;
         _unit setVariable [QGVAR(externalPh), _ph, true];
     }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
 };

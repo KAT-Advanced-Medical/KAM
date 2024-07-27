@@ -127,4 +127,4 @@ switch (true) do {
 
 _unit setVariable [QEGVAR(circulation,bodyFluids), [_ECB, _ECP, (_SRBC - _SRBCChange), _ISP, (_ECB + _ECP)], _syncValues];
 
-(_lossVolumeChange + GET_BLOOD_VOLUME(_unit))
+((_lossVolumeChange + GET_BLOOD_VOLUME(_unit)) max 0.01)

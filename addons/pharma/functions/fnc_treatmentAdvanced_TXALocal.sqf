@@ -58,11 +58,14 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_TXA_script)) then {
 
             private _alive = alive _patient;
             private _exit = true;
-            private _random = random 1;
-            private _ph = (_patient getVariable [QGVAR(pH), 0]) + 1;
+            private _random = random [6.4, 6.8, 7.2];
+            private _ph = GET_PH(_patient);
 
+            if !(_alive) exitWith {
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            };
 
-            if (_random <= _ph) then {
+            if (_random >= _ph) then {
                 {
                     _x params ["_targetBodyPart"];
                     
