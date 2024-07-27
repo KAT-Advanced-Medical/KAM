@@ -115,7 +115,7 @@ if !(_adjustments isEqualTo []) then {
 private _bloodGas = GET_BLOOD_GAS(_unit);
 private _opioidDepression = (GET_OPIOID_FACTOR(_unit) - 1);
 private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / _bloodVolume) - 0) min 1.2;
-private _vasoconstriction = GET_VASOCONSTRICTION(_unit)
+private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
 
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 private _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
