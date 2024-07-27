@@ -15,7 +15,7 @@
  * Current Heart Rate <NUMBER>
  *
  * Example:
- * [player, 0, 80, 6, 1, false] call ace_medical_vitals_fnc_updateHeartRate
+ * [player, 0, 80, 6, 1, false] call kat_misc_handleCardiacFunction;
  *
  * Public: No
  */
@@ -40,7 +40,7 @@ if IN_CRDC_ARRST(_unit) then {
     private _lastCycleHeartRate = GET_HEART_RATE(_unit) - _hrTargetAdjustment - (10 * _painLevel);
     private _lastCycleCO2 = _lastCycleHeartRate * 60;
     private _demandReturn = _lastCycleCO2 / 37894.7367424;
-    private _strokeVolume = ((_bloodVolume select 0) / 3789.47371);
+    private _strokeVolume = (_bloodVolume / 3789.47371);
 
     // As HR increases, pressure is taken off decreasing stroke volume. However, this effect decreases at higher heart rates and lower SVs
     private _strokeVolumeDifference = [ ((((_strokeVolume) max 0.0001) / 0.001055555549) max 1) , 0.001583333323 / _strokeVolume ] select (0.001583333323 / _strokeVolume < 1.22);
@@ -58,10 +58,8 @@ if IN_CRDC_ARRST(_unit) then {
 
     // All additional adjustments are added back 
     _actualHeartRate = _actualHeartRate + _hrTargetAdjustment + (10 * _painLevel);
-
-    _actualReturn = _strokeVolume * _actualHeartRate;
 };
 
 _unit setVariable [VAR_HEART_RATE, _actualHeartRate, _syncValue];
 
-[_actualHeartRate, _actualReturn]
+_actualHeartRate

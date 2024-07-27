@@ -184,15 +184,14 @@
 #define GET_SM_STATE(_unit)         ([_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState)
 
 #undef GET_BLOOD_VOLUME             
-#define GET_BLOOD_VOLUME(unit)      (((unit getVariable [QEGVAR(circulation,ECP), 3300]) + (unit getVariable [QEGVAR(circulation,ECB), 2700])) / 1000)
+#define GET_BLOOD_VOLUME(unit)      (((unit getVariable [QEGVAR(circulation,bodyFluid), [2700, 3300, 500, 10000, 6000]]) select 4) / 1000)
 #define GET_SIMPLE_BLOOD_VOLUME(unit)  (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
 
 #define GET_OPIOID_FACTOR(unit)           (unit getVariable [QEGVAR(pharma,opioidFactor), 1])
+#define GET_PAIN_PERCEIVED(unit)    (0 max ((GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1))
 
 #undef GET_DAMAGE_THRESHOLD
 #define GET_DAMAGE_THRESHOLD(unit)  ((unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)]) * GET_OPIOID_FACTOR(unit))
-
-#define GET_PAIN_PERCEIVED(unit)    (0 max (GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1)
 
 #define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
 #define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
@@ -278,16 +277,24 @@
 #define OXYGEN_PERCENTAGE_ARREST 80
 #define OXYGEN_PERCENTAGE_FATAL 75
 
-#define BLOOD_GAS                      (QEGVAR(circulation,bloodGas))
-#define VAR_SURFACEAREA 400
-#define GET_SPO2(unit)                 (((unit getVariable [BLOOD_GAS, [40, 90, 0.96, 24, 7.4]]) select 2) * 100)
+// Breathing
+#define VAR_SURFACEAREA                400
 #define GET_KAT_SURFACEAREA(unit)      (VAR_SURFACEAREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75)))
 
-#define GET_KAT_SPO2(unit)             (unit getVariable [VAR_SPO2, 96])
+#define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
+#define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)
+
+#define GET_BLOOD_GAS(unit)            (unit getVariable [VAR_BLOOD_GAS, [40, 90, 0.96, 24, 7.4, 37]])
+#define GET_SPO2(unit)                 (((unit getVariable [VAR_BLOOD_GAS, [40, 90, 0.96, 24, 7.4, 37]]) select 2) * 100)
+#define GET_ETCO2(unit)                ((unit getVariable [VAR_BLOOD_GAS, [40, 90, 0.96, 24, 7.4, 37]]) select 5)
+#define GET_BREATHING_RATE(unit)       (unit getVariable [VAR_BREATHING_RATE, 15])
 
 // Circulation
 #define VAR_INTERNAL_BLEEDING          QEGVAR(circulation,internalBleeding)
 #define GET_INTERNAL_BLEEDING(unit)    (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
+
+#define VAR_BODY_FLUID                 QEGVAR(circulation,bodyFluid)
+#define GET_BODY_FLUID(unit)           (unit getVariable [VAR_BODY_FLUID, [2700, 3300, 500, 10000, 6000]])
 
 #undef GET_BLOOD_PRESSURE
 #define GET_BLOOD_PRESSURE(unit)       ([unit] call EFUNC(circulation,getBloodPressure))

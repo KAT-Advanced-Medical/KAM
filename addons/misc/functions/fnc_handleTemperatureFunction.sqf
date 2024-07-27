@@ -28,8 +28,9 @@ private _mapHighTemperature = if ((_mapPosition - 20) > 0) then { 27 + (-0.7 * (
 // Diurnal Width increases as lattitudes increase, generally
 private _mapTemperature = _mapHighTemperature - ((linearConversion[0,90, _mapPosition ,15,5, true]) * (linearConversion[0,1, sunOrMoon ,1,0, true]));
 
-private _currentTemperature = 37 min ((-3.5 * (0.95 ^ _mapTemperature) + 37 + _altitudeAdjustment) + (_bloodVolume / 6));
+private _warmingImpact = _unit getVariable [QEGVAR(hypothermia,warmingImpact), 0]; // LOOK HERE
+private _currentTemperature = 37 min ((-3.5 * (0.95 ^ _mapTemperature + _altitudeAdjustment) + (((_bloodVolume + 0.01) / 6) * (60 + (_warmingImpact * 60)))));
 
-_unit setVariable [QEGVAR(circulation,temperature), _currentTemperature, _syncValue];
+_unit setVariable [QEGVAR(hypothermia,temperature), _currentTemperature, _syncValue];
 
 _currentTemperature
