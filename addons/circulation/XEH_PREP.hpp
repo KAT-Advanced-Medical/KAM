@@ -25,6 +25,7 @@ PREP(Defibrillator_Pads_CheckCondition);
 PREP(Defibrillator_RemovePads);
 PREP(DefibrillatorPlaced_CheckCondition);
 PREP(drawBlood);
+PREP(drawArterial);
 PREP(fullHealLocal);
 PREP(generateBloodType);
 PREP(getBloodPressure);

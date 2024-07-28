@@ -1,23 +1,22 @@
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski
- * Initializes unit variables.
+ * Local callback for fully healing a patient.
  *
  * Arguments:
- * 0: Unit <OBJECT>
+ * 0: Patient <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player] call kat_hypothermia_fnc_init;
+ * [player] call kat_hypothermia_fnc_fullHealLocal
  *
  * Public: No
  */
 
-params ["_unit", ["_isRespawn", true]];
-
-if (!local _unit) exitWith {};
+params ["_patient"];
+TRACE_1("fullHealLocal",_patient);
 
 [_unit] call FUNC(fullHealLocal);
 

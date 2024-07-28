@@ -18,7 +18,7 @@
 params ["_patient"];
 TRACE_1("fullHealLocal",_patient);
 
-//if (!(isPlayer _unit)) then { _patient setVariable [QGVAR(simpleMedical), true, true] };
+if (!(isPlayer _unit) && GVAR(simpleMedical)) then { _patient setVariable [QGVAR(simpleMedical), true, true] };
 
 _patient setVariable [QGVAR(simpleMedical), false, true];
 
@@ -28,13 +28,15 @@ _patient setVariable [QGVAR(cardiacArrestType), 0, true];
 
 _patient setVariable [VAR_BLOODPRESSURE_CHANGE, nil, true];
 
-_patient setVariable [QGVAR(bodyFluids), [2700, 3300, 500, 10000, 6000]];
+_patient setVariable [QGVAR(bodyFluids), DEFAULT_BODY_FLUID];
 
 _patient setVariable [QGVAR(isPerformingCPR), false, true];
 _patient setVariable [QGVAR(OxygenationPeriod), 0, true];
 
+_patient setVariable [QGVAR(tourniquetTime), [0,0,0,0,0,0]];
+
 // PaCO2, PaO2, O2 Sat, HCO3, pH, ETCO2
-_patient setVariable [QGVAR(bloodGas), [40.00, 90.00, 0.9600, 24.00, 7.400, 37], true];
+_patient setVariable [QGVAR(bloodGas), DEFAULT_BLOOD_GAS, true];
 
 _patient setVariable [QGVAR(ht), [], true];
 _patient setVariable [QGVAR(effusion), 0, true];

@@ -17,7 +17,7 @@
 
 params ["_unit"];
 
-private _bloodVolume = GET_BLOOD_VOLUME(_unit);
+private _bloodVolume = GET_BLOOD_VOLUME_LITERS(_unit);
 if (_bloodVolume < ACEGVAR(medical,const_stableVitalsBloodThreshold)) exitWith { false };
 
 if IN_CRDC_ARRST(_unit) exitWith { false };

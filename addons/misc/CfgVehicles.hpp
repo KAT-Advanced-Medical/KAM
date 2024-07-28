@@ -1364,6 +1364,13 @@ class CfgVehicles {
                     insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
                 };
+                class KAT_ArterialTest {
+                    displayName = CSTRING(ArterialTest); 
+                    condition = QUOTE(_this call ACEFUNC(medical_treatment,isMedicalVehicle));
+                    statement = "";
+                    insertChildren = QUOTE(call FUNC(addArterialTestActions));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
             };
         };
     };

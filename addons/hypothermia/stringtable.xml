@@ -45,11 +45,41 @@
         <Key ID="STR_KAT_Hypothermia_HandWarmer_DescShort">
             <English>Small hand warmers to provide warmth in colder climates</English>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_Use_Handwarmer">
+            <English>Use Hand Warmer</English>
+        </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_displayName">
             <English>Fluid Line Warmer</English>
         </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_DescShort">
             <English>Provides heating to IV fluids. Must be placed on an already existing line</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Apply_Warmer">
+            <English>Attach Fluid Warmer</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Remove_Warmer">
+            <English>Attach Fluid Warmer</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_dead">
+            <English>Patient feels frigid</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_cold">
+            <English>Patient feels remarkably cold</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_cool">
+            <English>Patient feels moderately cold</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_mild">
+            <English>Patient feels mildly cool</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_warm">
+            <English>Patient feels warm</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Check_Temperature">
+            <English>Check Temperature</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Check_Temperature_Progress">
+            <English>Checking Temperature</English>
         </Key>
     </Package>
 </Project>

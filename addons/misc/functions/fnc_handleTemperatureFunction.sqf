@@ -21,16 +21,15 @@
 
 params ["_unit", "_altitudeAdjustment", "_bloodVolume", "_deltaT", "_syncValue"];
 
-private _mapPosition = if (count([worldName] call ACEFUNC(common,getMapData)) != 0) then { abs([worldName] call ACEFUNC(common,getMapData) select 0) } else { 25 };
-// Decrease of 0.7C for each degree of lattitude gained. Middle lattitudes between 20N and 20S have average temperatures of 27C, everything decreases from there.
-private _mapHighTemperature = if ((_mapPosition - 20) > 0) then { 27 + (-0.7 * (_mapPosition - 27)) } else { 27 };
+// 0 is Map Position in Lattitude, 1 is Projected High Temperature for map position at said Lattitude
+private _positionTemperature = EGVAR(hypothermia,positionTemperature);
 
 // Diurnal Width increases as lattitudes increase, generally
-private _mapTemperature = _mapHighTemperature - ((linearConversion[0,90, _mapPosition ,15,5, true]) * (linearConversion[0,1, sunOrMoon ,1,0, true]));
+private _mapTemperature = (_positionTemperature select 1) - ((linearConversion[0,90, (_positionTemperature select 0) ,15,5, true]) * (linearConversion[0,1, sunOrMoon ,1,0, true]));
 
-private _warmingImpact = _unit getVariable [QEGVAR(hypothermia,warmingImpact), 0]; // LOOK HERE
+private _warmingImpact = (_unit getVariable [QEGVAR(hypothermia,warmingImpact), 0]) / ML_TO_LITERS; 
 private _currentTemperature = DEFAULT_TEMPERATURE min ((-3.5 * (0.95 ^ _mapTemperature + _altitudeAdjustment) + (((_bloodVolume + 0.01) / 6) * (60 + (_warmingImpact * 60)))));
 
-_unit setVariable [QEGVAR(hypothermia,temperature), _currentTemperature, _syncValue];
+_unit setVariable [QEGVAR(hypothermia,unitTemperature), _currentTemperature, _syncValue];
 
 _currentTemperature

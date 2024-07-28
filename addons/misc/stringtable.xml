@@ -1514,6 +1514,9 @@
             <Finnish>Poista tyhjänä</Finnish>
             <Russian>Удалить, когда опустеет</Russian>
         </Key>
+        <Key ID="STR_KAT_Misc_ArterialTest">
+            <English>Run ABG Test</English>
+        </Key>
         <Key ID="STR_KAT_Misc_CarryPatient">
             <English>Carry Patient</English>
             <Japanese>患者を担ぐ</Japanese>

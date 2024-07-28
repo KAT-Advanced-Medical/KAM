@@ -50,15 +50,31 @@ class ACE_Medical_Treatment_Actions {
     class KAT_DrawBlood250: CheckPulse {
         displayName = CSTRING(DrawBlood250_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
-        treatmentTime = QGVAR(blood_drawTime_250ml);
+        treatmentTime = QGVAR(DrawBlood_Action_Progress);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = QGVAR(enable_selfBloodDraw);
+        allowSelfTreatment = 0;
         category = "advanced";
         medicRequired = 0;
         consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(drawBlood));
-        condition = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || EFUNC(pharma,removeIV)));
+        condition = "true";
         items[] = {"KAT_Empty_bloodIV_250"};
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+    };
+    class DrawArterial: CheckPulse {
+        displayName = CSTRING(DrawArterial_Action_Use);
+        displayNameProgress = CSTRING(DogTag_Action);
+        treatmentTime = 5;
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 0;
+        category = "advanced";
+        medicRequired = 0;
+        consumeItem = 1;
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(drawArterial));
+        condition = "true";
+        items[] = {"kat_IV_16"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};

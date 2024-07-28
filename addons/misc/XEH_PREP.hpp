@@ -1,6 +1,7 @@
 PREP(actionLowerBy10);
 PREP(addActionRaise);
 PREP(addIVbag);
+PREP(addArterialTestActions);
 PREP(addVehicleCarryLoadActions);
 PREP(addVehicleUnloadCarryPatientActions);
 PREP(attachStretcher);
@@ -42,7 +43,10 @@ PREP(heliStretcherAttach);
 PREP(incompatibilityWarning);
 PREP(init);
 PREP(removeIVbag);
+PREP(showBloodGas);
 PREP(setUnconscious);
+PREP(setTourniquetTime);
+PREP(removeTourniquetTime);
 PREP(slingArmband);
 PREP(stopCarryingPrompt);
 PREP(stretcher);

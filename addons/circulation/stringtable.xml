@@ -2404,6 +2404,12 @@
             <Portuguese>Extrair sangue (250ml)</Portuguese>
             <Finnish>Ottaa verta (250ml)</Finnish>
         </Key>
+        <Key ID="STR_KAT_Circulation_DrawArterial_Action_Use">
+            <English>Draw Arterial Sample</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_sampleItemName">
+            <English>Blood Sample</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>
             <Polish>Pobieranie krwi</Polish>

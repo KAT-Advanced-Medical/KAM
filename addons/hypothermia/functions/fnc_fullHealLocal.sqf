@@ -18,7 +18,7 @@
 params ["_patient"];
 TRACE_1("fullHealLocal",_patient);
 
-_patient setVariable [QGVAR(temperature), 37, true];
+_patient setVariable [QGVAR(unitTemperature), 37, true];
 _patient setVariable [QGVAR(warmingImpact), 0, true];
 _patient setVariable [QGVAR(handWarmers), [0,0,0,0,0,0], true];
 _patient setVariable [QGVAR(fluidWarmer), [0,0,0,0,0,0], true];

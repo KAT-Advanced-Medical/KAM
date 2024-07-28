@@ -184,8 +184,6 @@
 #define GET_SM_STATE(_unit)         ([_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState)
 
 #undef GET_BLOOD_VOLUME             
-#define GET_BLOOD_VOLUME(unit)      (((unit getVariable [QEGVAR(circulation,bodyFluid), [2700, 3300, 500, 10000, 6000]]) select 4) / 1000)
-#define GET_SIMPLE_BLOOD_VOLUME(unit)  (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
 
 #define GET_OPIOID_FACTOR(unit)           (unit getVariable [QEGVAR(pharma,opioidFactor), 1])
 #define GET_PAIN_PERCEIVED(unit)    (0 max ((GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1))
@@ -272,18 +270,26 @@
 
 #define ALL_BODY_PARTS_PRIORITY ["body", "head", "leftarm", "rightarm", "leftleg", "rightleg"]
 
-#define MINIMUM_VENTILATION 2000
 #define DEFAULT_PACO2 40
-#define DEFAULT_ETCO2 37
+#define DEFAULT_PAO2 90
+#define DEFAULT_O2SAT 0.96
+#define DEFAULT_HCO3 24
 #define DEFAULT_PH 7.4
+#define DEFAULT_ETCO2 37
+#define DEFAULT_BLOOD_GAS [DEFAULT_PACO2, DEFAULT_PAO2, DEFAULT_O2SAT, DEFAULT_HCO3, DEFAULT_PH, DEFAULT_ETCO2]
+
 #define DEFAULT_ANEROBIC_EXCHANGE 0.8
 #define DEFAULT_TEMPERATURE 37
 #define DEFAULT_STROKE_VOLUME 0.001583333323
+#define DEFAULT_FIO2 0.21
 
-#define MAXIMUM_RR 40
-#define PACO2_MAX_CHANGE 0.05
-#define PAO2_MAX_CHANGE 0.1
-#define HEART_RATE_CO2_MULTIPLIER 60
+#define DEFAULT_ECB 2700
+#define DEFAULT_ECP 3300
+#define DEFAULT_SRBC 500
+#define DEFAULT_ISP 10000
+#define DEFAULT_BODY_FLUID [2700, 3300, 500, 10000, 6000]
+#define LITERS_TO_ML 1000
+#define ML_TO_LITERS 1000
 
 // Airway
 #define OXYGEN_PERCENTAGE_CRITICAL 85
@@ -291,16 +297,22 @@
 #define OXYGEN_PERCENTAGE_FATAL 75
 
 // Breathing
+#define MAXIMUM_RR 40
+#define MINIMUM_VENTILATION 2000
+#define PACO2_MAX_CHANGE 0.05
+#define PAO2_MAX_CHANGE 0.1
+#define HEART_RATE_CO2_MULTIPLIER 60
+
 #define VAR_SURFACEAREA                400
 #define GET_KAT_SURFACEAREA(unit)      (VAR_SURFACEAREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75)))
 
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)
 
-#define GET_BLOOD_GAS(unit)            (unit getVariable [VAR_BLOOD_GAS, [40, 90, 0.96, 24, 7.4, 37]])
-#define GET_SPO2(unit)                 (((unit getVariable [VAR_BLOOD_GAS, [40, 90, 0.96, 24, 7.4, 37]]) select 2) * 100)
-#define GET_PH(unit)                   ((unit getVariable [VAR_BLOOD_GAS, [40, 90, 0.96, 24, 7.4, 37]]) select 4)
-#define GET_ETCO2(unit)                ((unit getVariable [VAR_BLOOD_GAS, [40, 90, 0.96, 24, 7.4, 37]]) select 5)
+#define GET_BLOOD_GAS(unit)            (unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS])
+#define GET_SPO2(unit)                 (((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 2) * 100)
+#define GET_PH(unit)                   ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 4)
+#define GET_ETCO2(unit)                ((unit getVariable [VAR_BLOOD_GAS, DEFAULT_BLOOD_GAS]) select 5)
 #define GET_BREATHING_RATE(unit)       (unit getVariable [VAR_BREATHING_RATE, 15])
 
 // Circulation
@@ -308,7 +320,13 @@
 #define GET_INTERNAL_BLEEDING(unit)    (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
 
 #define VAR_BODY_FLUID                 QEGVAR(circulation,bodyFluid)
-#define GET_BODY_FLUID(unit)           (unit getVariable [VAR_BODY_FLUID, [2700, 3300, 500, 10000, 6000]])
+#define GET_BODY_FLUID(unit)           (unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID])
+
+#define GET_BLOOD_VOLUME_LITERS(unit)  ((GET_BODY_FLUID(_unit) select 4) / 1000)
+#define GET_BLOOD_VOLUME_ML(unit)      (GET_BODY_FLUID(_unit) select 4)
+#define GET_SIMPLE_BLOOD_VOLUME(unit)  (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
+
+#define REDUCE_TOTAL_BLOOD_VOLUME(unit,volume) (unit setVariable [VAR_BODY_FLUID, [(GET_BODY_FLUID(unit) select 0) - (volume / 2), (GET_BODY_FLUID(unit) select 1) - (volume / 2), (GET_BODY_FLUID(unit) select 2), (GET_BODY_FLUID(unit) select 3), (GET_BODY_FLUID(unit) select 4) - volume], true])
 
 #undef GET_BLOOD_PRESSURE
 #define GET_BLOOD_PRESSURE(unit)       ([unit] call EFUNC(circulation,getBloodPressure))

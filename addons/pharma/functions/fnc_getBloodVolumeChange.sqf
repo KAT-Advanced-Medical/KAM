@@ -22,25 +22,25 @@ params ["_unit", "_deltaT", "_syncValues"];
 private _bloodLoss = [_unit] call ACEFUNC(medical_status,getBloodLoss);
 private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
 private _lossVolumeChange = (-_deltaT * (_bloodLoss + _internalBleeding));
-private _fluidVolume = _unit getVariable [QEGVAR(circulation,bodyFluid), [2700, 3300, 500, 10000, 6000]];
+private _fluidVolume = GET_BODY_FLUID(_unit);
 private _ECB = _fluidVolume select 0;
 private _ECP = _fluidVolume select 1;
 private _SRBC = _fluidVolume select 2;
 private _ISP = _fluidVolume select 3;
 private _SRBCChange = 0;
 
-_ECP = _ECP + (_lossVolumeChange * 1000) / 2;
-_ECB = _ECB + (_lossVolumeChange * 1000) / 2;
+_ECP = _ECP + (_lossVolumeChange * LITERS_TO_ML) / 2;
+_ECB = _ECB + (_lossVolumeChange * LITERS_TO_ML) / 2;
 
-_SRBCChange = if(_SRBC > 100 && _ECB < 2700) then { ((2700 - _ECB) min (abs((_lossVolumeChange * 1000)) / 2 + 1)) } else { 0 };
+_SRBCChange = if(_SRBC > 100 && _ECB < DEFAULT_ECB) then { ((DEFAULT_ECB - _ECB) min (abs((_lossVolumeChange * LITERS_TO_ML)) / 2 + 1)) } else { 0 };
 _ECB = _ECB + _SRBCChange;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
     private _tourniquets = GET_TOURNIQUETS(_unit);
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0]];
-    private _flowCalculation = ACEGVAR(medical,ivFlowRate) * (_unit getVariable [QGVAR(alphaAction), 1]) * _deltaT * 4.16;
-    private _hypothermia = EGVAR(hypothermia,enable_hypothermia);
+    private _flowCalculation = ACEGVAR(medical,ivFlowRate) * GET_VASOCONSTRICTION(_unit) * _deltaT * 4.16;
+    private _hypothermia = EGVAR(hypothermia,hypothermia);
 
     if (GET_HEART_RATE(_unit) < 20) then {
         _flowCalculation = _flowCalculation / 1.5;
@@ -70,9 +70,9 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 
             // Plasma adds to ECP. Saline splits between the ECP and ISP. Blood adds to ECB
             switch (true) do {
-                case(_type == "Plasma"): { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / 1000); };
+                case(_type == "Plasma"): { _ECP = _ECP + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
                 case(_type == "Saline"): { _ECP = _ECP + _bagChange / 2; _ISP = _ISP + _bagChange / 2; _lossVolumeChange = _lossVolumeChange + (_bagChange / 2000); };
-                case(_type == "Blood"): { _ECB = _ECB + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / 1000); };
+                case(_type == "Blood"): { _ECB = _ECB + _bagChange; _lossVolumeChange = _lossVolumeChange + (_bagChange / ML_TO_LITERS); };
             };
         };
 
@@ -120,11 +120,11 @@ switch (true) do {
     };
     default {
         // If no shift is required, fluids begin returning to baseline in both ISP and SRBC volumes
-        _ISP = _ISP + ((10000 - _ISP) min 1);
-        _SRBC = _SRBC + ((500 - _SRBC) min 0.1);
+        _ISP = _ISP + ((DEFAULT_ISP - _ISP) min 1);
+        _SRBC = _SRBC + ((DEFAULT_SRBC - _SRBC) min 0.1);
     };
 };
 
 _unit setVariable [QEGVAR(circulation,bodyFluids), [_ECB, _ECP, (_SRBC - _SRBCChange), _ISP, (_ECB + _ECP)], _syncValues];
 
-((_lossVolumeChange + GET_BLOOD_VOLUME(_unit)) max 0.01)
+((_lossVolumeChange + GET_BLOOD_VOLUME_LITERS(_unit)) max 0.01)
