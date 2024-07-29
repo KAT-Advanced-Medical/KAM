@@ -16,35 +16,36 @@
  * Public: No
  */
 
-params ["_player"];
+params ["_vehicle", "_player"];
 
 private _fnc_getActions = {
     private _actions = [];
     private _cfgWeapons = configFile >> "CfgWeapons";
+    private _idNumber = 0;
 
     {
         private _config = _cfgWeapons >> _x;
-        private _idNumber = getNumber (_config >> "nameID");
+        _idNumber = getNumber (_config >> "nameID");
 
         if (_idNumber > 0) then {   
-
             _actions pushBack [
                 [
                     _x,
-                    (EGVAR(circulation,bloodSampleMap) get _idNumber) select 0,
+                    "Run Blood Sample",
                     "",
-                    {[EGVAR(circulation,bloodSampleMap),_player] call FUNC(showBloodGas)},
+                    {_this call FUNC(showBloodGas)},
                     {true},
                     {},
-                    _x
-                ] call EFUNC(interact_menu,createAction),
+                    []
+                ] call ACEFUNC(interact_menu,createAction),
                 [],
-                _player
+                [EGVAR(circulation,bloodSampleMap), _idNumber, _player]
             ];
         };
-    } forEach ([_player, 0] call ACEFUNC(common,uniqueItems));
+    } forEach ([_vehicle, 0] call ACEFUNC(common,uniqueItems));
 
     _actions
 };
+
 
 [[], _fnc_getActions, _player, QGVAR(actionsCache), 9999, "cba_events_loadoutEvent"] call ACEFUNC(common,cachedCall);

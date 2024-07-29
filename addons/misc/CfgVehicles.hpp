@@ -1366,9 +1366,9 @@ class CfgVehicles {
                 };
                 class KAT_ArterialTest {
                     displayName = CSTRING(ArterialTest); 
-                    condition = QUOTE(_this call ACEFUNC(medical_treatment,isMedicalVehicle));
+                    condition = QUOTE(_target call ACEFUNC(medical_treatment,isMedicalVehicle));
                     statement = "";
-                    insertChildren = QUOTE(call FUNC(addArterialTestActions));
+                    insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialTestActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
                 };
             };
