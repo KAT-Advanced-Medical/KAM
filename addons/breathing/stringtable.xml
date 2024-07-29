@@ -815,7 +815,7 @@
             <French>Probabilité de blessure profonde</French>
             <Korean>깊은 관통상 확률</Korean>
             <German>Chance auf tiefgreifende Verletzungen</German>
-            <Portuguese>Probabilidade de lesão penetrante profunda</Portuguese>
+            <Portuguese>Probabilidade de ferimento profundo por penetração</Portuguese>
             <Spanish>Probabilidad de lesión de penetración profunda</Spanish>
             <Finnish>Mahdollisuus syvään tunkeutuvaan vammaan</Finnish>
             <Russian>Вероятность глубокого проникающего ранения</Russian>
@@ -826,7 +826,7 @@
             <French>Probabilité qu'une blessure profonde apparaisse lorsque le seuil de dommage du pneumothorax est dépassé, mais qu'aucun pneumothorax n'est infligé</French>
             <Korean>기흉 데미지 한계점을 넘겼지만 기흉에 걸리지 않은 경우 깊은 관통상에 걸릴 확률입니다.</Korean>
             <German>Es kann zu einer tiefgreifenden Verletzung kommen, wenn die Pneumothorax-Schadensschwelle überschritten wird, aber kein Pneumothorax verursacht wird</German>
-            <Portuguese>Probabilidade em que uma lesão penetrante profunda apareça quando o limite de dado para pneumotórax é ultrapassado, mas o pneumotórax não é inflingido</Portuguese>
+            <Portuguese>Probabilidade em que um ferimento profundo por penetração apareça quando o limite de dado para pneumotórax é ultrapassado, mas o pneumotórax não é inflingido</Portuguese>
             <Spanish>Probabilidad de que aparezca una lesión de penetración profunda cuando se supera el umbral de daño del neumotórax pero no se ha infligido un neumotórax</Spanish>
             <Finnish>Mahdollisuus syvään tunkeutuvaan vammaan syntyy, kun ilmarintakehän vaurioituminen on minimaalista, mutta ilmarintaa ei ole kehittynyt.</Finnish>
             <Russian>Вероятность получения глубокого проникающего ранения возникает, когда порог повреждения пневмотораксом превышен, но пневмоторакс не причинен</Russian>
@@ -837,7 +837,7 @@
             <French>Blessure profonde</French>
             <Korean>깊은 관통상</Korean>
             <German>Tiefgreifende Verletzung</German>
-            <Portuguese>Lesão penetrante profunda</Portuguese>
+            <Portuguese>Ferimento profundo por penetração</Portuguese>
             <Spanish>Lesión de penetración profunda</Spanish>
             <Finnish>Syvä tunkeutuva vamma</Finnish>
             <Russian>Глубокое проникающее ранение</Russian>
