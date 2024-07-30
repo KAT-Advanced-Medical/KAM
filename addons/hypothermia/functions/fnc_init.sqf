@@ -22,33 +22,33 @@ if (!local _unit) exitWith {};
 [_unit] call FUNC(fullHealLocal);
 
 if (GVAR(hypothermia)) then {
-[{
-params ["_args", "_idPFH"];
-_args params ["_unit"];
+	[{
+		params ["_args", "_idPFH"];
+		_args params ["_unit"];
 
-private _alive = alive _unit;
+		private _alive = alive _unit;
 
-if (!_alive) exitWith {
-[_idPFH] call CBA_fnc_removePerFrameHandler;
-};
+		if (!_alive) exitWith {
+			[_idPFH] call CBA_fnc_removePerFrameHandler;
+		};
 
-private _handWarmers = _unit getVariable [QGVAR(handWarmers), [0,0,0,0,0,0]];
+		private _handWarmers = _unit getVariable [QGVAR(handWarmers), [0,0,0,0,0,0]];
 
-{
-_x params ["_timeRemaining"];
+		{
+			_x params ["_timeRemaining"];
 
-if (_x > 0) then {
-_handWarmers set [_forEachIndex, _timeRemaining - 1];
-};
-} forEach (_handWarmers);
+			if (_x > 0) then {
+				_handWarmers set [_forEachIndex, _timeRemaining - 1];
+			};
+		} forEach (_handWarmers);
 
-_unit setVariable[QGVAR(handWarmers), _handWarmers, true];
+		_unit setVariable[QGVAR(handWarmers), _handWarmers, true];
 
-if (GET_BLOOD_VOLUME_LITERS(_unit) > 4) then {
-private _impact = (_unit getVariable [QGVAR(warmingImpact), 0]);
-[(_impact - 100) max 0, (_impact + 200) min 0] select (_impact < 0);
-_unit setVariable [QGVAR(warmingImpact), _impact, true];
-};
+		if (GET_BLOOD_VOLUME_LITERS(_unit) > 4) then {
+			private _impact = (_unit getVariable [QGVAR(warmingImpact), 0]);
+			[(_impact - 100) max 0, (_impact + 200) min 0] select (_impact < 0);
+			_unit setVariable [QGVAR(warmingImpact), _impact, true];
+		};
 
-}, 60, [_unit]] call CBA_fnc_addPerFrameHandler;
+	}, 60, [_unit]] call CBA_fnc_addPerFrameHandler;
 };

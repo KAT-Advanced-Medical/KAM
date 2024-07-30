@@ -28,10 +28,13 @@ private _fnc_getActions = {
         _idNumber = getNumber (_config >> "nameID");
 
         if (_idNumber > 0) then {   
+            private _bloodSampleArray = EGVAR(circulation,bloodSampleMap) get _idNumber;
+            private _patient = _bloodSampleArray select 0;
+
             _actions pushBack [
                 [
                     _x,
-                    "Run Blood Sample",
+                    format ["%1 Blood Sample", _patient],
                     "",
                     {_this call FUNC(showBloodGas)},
                     {true},
@@ -39,7 +42,7 @@ private _fnc_getActions = {
                     []
                 ] call ACEFUNC(interact_menu,createAction),
                 [],
-                [EGVAR(circulation,bloodSampleMap), _idNumber, _player]
+                [_bloodSampleArray, _player, _idNumber, _vehicle]
             ];
         };
     } forEach ([_vehicle, 0] call ACEFUNC(common,uniqueItems));

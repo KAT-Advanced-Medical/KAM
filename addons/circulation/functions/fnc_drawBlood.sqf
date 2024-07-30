@@ -32,4 +32,4 @@ if (GVAR(bloodGroups)) then {
 private _itemStr = format ["%1bloodIV%2%3",_modStr,_bloodtypeStr,_bagVolumeStr];
 [_medic, _itemStr] call ACEFUNC(common,addToInventory);
 
-REDUCE_TOTAL_BLOOD_VOLUME(_patient, _volume);
+REDUCE_TOTAL_BLOOD_VOLUME(_patient,_volume);

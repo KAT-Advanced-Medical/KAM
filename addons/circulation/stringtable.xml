@@ -2410,6 +2410,9 @@
         <Key ID="STR_KAT_Circulation_sampleItemName">
             <English>Blood Sample</English>
         </Key>
+        <Key ID="STR_KAT_Circulation_resultItemName">
+            <English>ABG Result</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>
             <Polish>Pobieranie krwi</Polish>

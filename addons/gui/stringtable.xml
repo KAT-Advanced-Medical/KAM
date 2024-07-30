@@ -83,5 +83,59 @@
             <Finnish>Merkitse potilaan sivut</Finnish>
             <Russian>Маркировка сторон пациента</Russian>
         </Key>
+        <Key ID="STR_KAT_GUI_Cover">
+            <English>NO LINE PRESENT</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_IVFlowTitle">
+            <English>IV Flow Control</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_ABGTitle">
+            <English>ABG Results</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_IVSubtract">
+            <English>-0.2</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_IVAdd">
+            <English>+0.2</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_IVValue">
+            <English>0.0</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_HeadTitle">
+            <English>Head</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_HeadType">
+            <English>IV</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_ChestTitle">
+            <English>Chest</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_ChestType">
+            <English>IV</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_LArmTitle">
+            <English>LA</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_LArmType">
+            <English>IV</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_RArmTitle">
+            <English>RA</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_RArmType">
+            <English>IV</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_LLegTitle">
+            <English>LL</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_LLegType">
+            <English>IV</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_RLegTitle">
+            <English>RL</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_RLegType">
+            <English>IV</English>
+        </Key>
     </Package>
 </Project>

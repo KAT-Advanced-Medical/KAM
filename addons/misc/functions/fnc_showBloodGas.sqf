@@ -19,12 +19,19 @@
  *
  * Public: No
  */
-params ["_entries", "_idNumber", "_medic"];
+params ["_entries"];
 
-private _idNumber = _entries select 1;
-private _bloodGasArray = (_entries select 0) get _idNumber;
-private _medic = _entries select 2;
-private _bloodGas = _bloodGasArray select 1;
+private _bloodGas = _entries select 0;
+private _bloodGasArray = _bloodGas select 1;
+private _patient = _bloodGas select 0;
 
-private _output = format ["Patient: %1, PaCO2: %2, PaO2: %3, SpO2: %4, HCO2: %5, pH: %6, ETCO2: %7", _bloodGasArray select 0, _bloodGas select 0, _bloodGas select 1, _bloodGas select 2, _bloodGas select 3, _bloodGas select 4, _bloodGas select 5];
-[_output, 20, _medic] call ACEFUNC(common,displayTextStructured);
+private _output = format ["Patient: %1, PaCO2: %2, PaO2: %3, SpO2: %4, HCO2: %5, pH: %6, ETCO2: %7", _patient, (_bloodGasArray select 0) toFixed 2, (_bloodGasArray select 1) toFixed 2, (_bloodGasArray select 2) toFixed 2, (_bloodGasArray select 3) toFixed 2, (_bloodGasArray select 4) toFixed 2, (_bloodGasArray select 5) toFixed 2];
+[_output, 1.5, (_entries select 2)] call ACEFUNC(common,displayTextStructured);
+
+EGVAR(circulation,resultCounter) = if (EGVAR(circulation,resultCounter) == 20) then { 1 } else { EGVAR(circulation,resultCounter) + 1 };
+EGVAR(circulation,resultSampleMap) set [EGVAR(circulation,resultCounter), [_patient, _bloodGasArray]];
+
+private _itemStr = format ["KAT_bloodResult_%1",EGVAR(circulation,resultCounter)];
+
+[(_entries select 3), (format ["KAT_bloodSample_%1",(_entries select 2)])] call CBA_fnc_removeItemCargo;
+[(_entries select 1), _itemStr, true] call CBA_fnc_addItem;

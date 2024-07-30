@@ -9,6 +9,9 @@ PREP_RECOMPILE_END;
 if (isServer) then {
     GVAR(bloodSampleMap) = createHashMap;
     GVAR(sampleCounter) = 0;
+
+    GVAR(resultSampleMap) = createHashMap;
+    GVAR(resultCounter) = 0;
 };
 
 #define CBA_SETTINGS_CAT "KAT - ADV Medical: Circulation"

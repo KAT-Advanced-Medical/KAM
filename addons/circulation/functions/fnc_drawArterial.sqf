@@ -22,7 +22,7 @@ params ["_medic", "_patient"];
 private _bloodGas = GET_BLOOD_GAS(_patient);
 
 GVAR(sampleCounter) = if (GVAR(sampleCounter) == 20) then { 1 } else { GVAR(sampleCounter) + 1 };
-GVAR(bloodSampleMap) set [GVAR(sampleCounter), [_patient, _bloodGas]];
+GVAR(bloodSampleMap) set [GVAR(sampleCounter), [name(_patient), _bloodGas]];
 
 private _itemStr = format ["KAT_bloodSample_%1", GVAR(sampleCounter)];
 

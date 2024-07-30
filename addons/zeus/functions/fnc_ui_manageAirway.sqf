@@ -79,7 +79,7 @@ private _fnc_sliderMove_SPO2 = {
 private _sliderSPO2 = _display displayCtrl 16106;
 _sliderSPO2 sliderSetRange [0, 100];
 _sliderSPO2 sliderSetSpeed [1,10];
-// private _curSpO2Val = _unit getVariable [QEGVAR(breathing,airwayStatus), 50];
+private _curSpO2Val = GET_SPO2(_unit);
 _sliderSPO2 sliderSetPosition (round _curSpO2Val);
 _sliderSPO2 ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove_SPO2];
 [_sliderSPO2,_curSpO2Val] call _fnc_sliderMove_SPO2;
@@ -125,10 +125,6 @@ private _fnc_onConfirm = {
 
     _unit setVariable [QEGVAR(breathing,pneumothorax), _pneumothorax, true];
     //_unit setVariable [QEGVAR(breathing,airwayStatus), round(sliderPosition (_display displayCtrl 16106)), true]; LOOK AT THIS
-
-    if (_curSpO2Val isEqualTo 100 || _initBreathing) then {
-        //[_unit] call EFUNC(breathing,handleBreathing);
-    };
 
     if (_pneumothorax isEqualTo 0 && !(_valueArr select 2) && !(_valueArr select 3)) then {
         [_unit, 0, 0, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);

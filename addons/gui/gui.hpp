@@ -105,7 +105,279 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
 };
 
 class ACE_Medical_Menu {
-    class Controls {
+    class controlsBackground {
+        class IVFlowBackground: RscText {
+            idc = IDC_IV_FLOW_BACKGROUND; // LOOK HERE
+            x = QUOTE(POS_X(-8.5));
+            y = QUOTE(POS_Y(1.1));
+            w = QUOTE(POS_W(9));
+            h = QUOTE(POS_H(16.3));
+            colorBackground[] = {0, 0, 0, 0.7};
+        };
+        class IVFlowTitle: RscText {
+            idc = IDC_IV_FLOW_TITLE; // LOOK HERE
+            text = CSTRING(IVFlowTitle);
+            x = QUOTE(POS_X(-8.5));
+            y = QUOTE(POS_Y(0));
+            w = QUOTE(POS_W(9));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = GUI_BCG_COLOR; // LOOK HERE
+            show = 1;
+            class Attributes {
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "true";
+            };
+        };
+        class ABGBackground: IVFlowBackground {
+            idc = IDC_ABG_BACKGROUND; // LOOK HERE
+            x = QUOTE(POS_X(39.6));
+            y = QUOTE(POS_Y(1.1));
+            w = QUOTE(POS_W(9));
+            h = QUOTE(POS_H(3.3));
+        };
+        class ABGTitle: IVFlowTitle {
+            idc = IDC_ABG_TITLE; // LOOK HERE
+            text = CSTRING(ABGTitle);
+            x = QUOTE(POS_X(39.6));
+            y = QUOTE(POS_Y(0));
+            w = QUOTE(POS_W(9));
+            h = QUOTE(POS_H(1));
+            show = 1;
+            class Attributes {
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "true";
+            };
+        };
+    };
+    class controls {
+        class HeadCover: RscText {
+            idc = IDC_IV_FLOW_HEADCOVER; // LOOK HERE
+            text = CSTRING(Cover);
+            x = QUOTE(POS_X(-8));
+            y = QUOTE(POS_Y(2.3));
+            w = QUOTE(POS_W(8));
+            h = QUOTE(POS_H(1.5));
+            colorBackground[] = {0, 0, 0, 1};
+            show = 1;
+            class Attributes {
+                align = "center";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class HeadTitle: RscText {
+            idc = IDC_IV_FLOW_HEADTITLE; // LOOK HERE
+            text = CSTRING(HeadTitle);
+            x = QUOTE(POS_X(-6.2));
+            y = QUOTE(POS_Y(1.5));
+            w = QUOTE(POS_W(2));
+            h = QUOTE(POS_H(0.5));
+            colorBackground[] = {0, 0, 0, 0};
+            show = 1;
+            class Attributes {
+                align = "center";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class HeadType: RscText {
+            idc = IDC_IV_FLOW_HEADTYPE; // LOOK HERE
+            x = QUOTE(POS_X(-3.7));
+            y = QUOTE(POS_Y(1.5));
+            w = QUOTE(POS_W(2));
+            h = QUOTE(POS_H(0.5));
+            colorBackground[] = {0, 0, 0, 0};
+            show = 1;
+            class Attributes {
+                align = "center";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class HeadSubtract: RscButton {
+            idc = IDC_IV_FLOW_HEADSUBTRACT; // LOOK HERE
+            text = CSTRING(IVSubtract);
+            x = QUOTE(POS_X(-8));
+            y = QUOTE(POS_Y(2.5));
+            w = QUOTE(POS_W(2.5));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = {0, 0, 0, 0.7};
+            show = 0;
+            class Attributes {
+                align = "right";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class HeadValue: RscText {
+            idc = IDC_IV_FLOW_HEADVALUE; // LOOK HERE
+            x = QUOTE(POS_X(-5));
+            y = QUOTE(POS_Y(2.5));
+            w = QUOTE(POS_W(2.5));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = {0, 0, 0, 0.7};
+            show = 0;
+            class Attributes {
+                align = "center";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class HeadAdd: RscButton {
+            idc = IDC_IV_FLOW_HEADADD; // LOOK HERE
+            text = CSTRING(IVAdd);
+            x = QUOTE(POS_X(-2.5));
+            y = QUOTE(POS_Y(2.5));
+            w = QUOTE(POS_W(2.5));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = {0, 0, 0, 0.7};
+            show = 0;
+            class Attributes {
+                align = "left";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+    
+        class ChestCover: HeadCover {
+            idc = IDC_IV_FLOW_CHESTCOVER; // LOOK HERE
+            x = QUOTE(POS_X(-8));
+            y = QUOTE(POS_Y(4.8));
+        };
+        class ChestTitle: HeadTitle {
+            idc = IDC_IV_FLOW_CHESTTITLE; // LOOK HERE
+            text = CSTRING(ChestTitle);
+            y = QUOTE(POS_Y(4.1));
+        };
+        class ChestType: HeadType {
+            idc = IDC_IV_FLOW_CHESTTYPE; // LOOK HERE
+            y = QUOTE(POS_Y(4.1));
+        };
+        class ChestSubtract: HeadSubtract {
+            idc = IDC_IV_FLOW_CHESTSUBTRACT; // LOOK HERE
+            y = QUOTE(POS_Y(5));
+        };
+        class ChestValue: HeadValue {
+            idc = IDC_IV_FLOW_CHESTVALUE; // LOOK HERE
+            y = QUOTE(POS_Y(5));
+        };
+        class ChestAdd: HeadAdd {
+            idc = IDC_IV_FLOW_CHESTADD; // LOOK HERE
+            y = QUOTE(POS_Y(5));
+        };
+
+        class LArmCover: HeadCover {
+            idc = IDC_IV_FLOW_LARMCOVER; // LOOK HERE
+            y = QUOTE(POS_Y(7.4));
+        };
+        class LArmTitle: HeadTitle {
+            idc = IDC_IV_FLOW_LARMTITLE; // LOOK HERE
+            text = CSTRING(LArmTitle);
+            y = QUOTE(POS_Y(6.6));
+        };
+        class LArmType: HeadType {
+            idc = IDC_IV_FLOW_LARMTYPE; // LOOK HERE
+            y = QUOTE(POS_Y(6.6));
+        };
+        class LArmSubtract: HeadSubtract {
+            idc = IDC_IV_FLOW_LARMSUBTRACT; // LOOK HERE
+            y = QUOTE(POS_Y(7.6));
+        };
+        class LArmValue: HeadValue {
+            idc = IDC_IV_FLOW_LARMVALUE; // LOOK HERE
+            y = QUOTE(POS_Y(7.6));
+        };
+        class LArmAdd: HeadAdd {
+            idc = IDC_IV_FLOW_LARMADD; // LOOK HERE
+            y = QUOTE(POS_Y(7.6));
+        };
+
+        class RArmCover: HeadCover {
+            idc = IDC_IV_FLOW_RARMCOVER; // LOOK HERE
+            y = QUOTE(POS_Y(10.1));
+        };
+        class RArmTitle: HeadTitle {
+            idc = IDC_IV_FLOW_RARMTITLE; // LOOK HERE
+            text = CSTRING(RArmTitle);
+            y = QUOTE(POS_Y(9.3));
+        };
+        class RArmType: HeadType {
+            idc = IDC_IV_FLOW_RARMTYPE; // LOOK HERE
+            y = QUOTE(POS_Y(9.3));
+        };
+        class RArmSubtract: HeadSubtract {
+            idc = IDC_IV_FLOW_RARMSUBTRACT; // LOOK HERE
+            y = QUOTE(POS_Y(10.3));
+        };
+        class RArmValue: HeadValue {
+            idc = IDC_IV_FLOW_RARMVALUE; // LOOK HERE
+            y = QUOTE(POS_Y(10.3));
+        };
+        class RArmAdd: HeadAdd {
+            idc = IDC_IV_FLOW_RARMADD; // LOOK HERE
+            y = QUOTE(POS_Y(10.3));
+        };
+
+        class LLegCover: HeadCover {
+            idc = IDC_IV_FLOW_LLEGCOVER; // LOOK HERE
+            y = QUOTE(POS_Y(12.8));
+        };
+        class LLegTitle: HeadTitle {
+            idc = IDC_IV_FLOW_LLEGTITLE; // LOOK HERE
+            text = CSTRING(LLegTitle);
+            y = QUOTE(POS_Y(12));
+        };
+        class LLegType: HeadType {
+            idc = IDC_IV_FLOW_LLEGTYPE; // LOOK HERE
+            y = QUOTE(POS_Y(12));
+        };
+        class LLegSubtract: HeadSubtract {
+            idc = IDC_IV_FLOW_LLEGSUBTRACT; // LOOK HERE
+            y = QUOTE(POS_Y(12.9));
+        };
+        class LLegValue: HeadValue {
+            idc = IDC_IV_FLOW_LLEGVALUE; // LOOK HERE
+            y = QUOTE(POS_Y(12.9));
+        };
+        class LLegAdd: HeadAdd {
+            idc = IDC_IV_FLOW_LLEGADD; // LOOK HERE
+            y = QUOTE(POS_Y(12.9));
+        };
+
+        class RLegCover: HeadCover {
+            idc = IDC_IV_FLOW_RLEGCOVER; // LOOK HERE
+            y = QUOTE(POS_Y(15.4));
+        };
+        class RLegTitle: HeadTitle {
+            idc = IDC_IV_FLOW_RLEGTITLE; // LOOK HERE
+            text = CSTRING(RLegTitle);
+            y = QUOTE(POS_Y(14.6));
+        };
+        class RLegType: HeadType {
+            idc = IDC_IV_FLOW_RLEGTYPE; // LOOK HERE
+            y = QUOTE(POS_Y(14.6));
+        };
+        class RLegSubtract: HeadSubtract {
+            idc = IDC_IV_FLOW_RLEGSUBTRACT; // LOOK HERE
+            y = QUOTE(POS_Y(15.5));
+        };
+        class RLegValue: HeadValue {
+            idc = IDC_IV_FLOW_RLEGVALUE; // LOOK HERE
+            y = QUOTE(POS_Y(15.5));
+        };
+        class RLegAdd: HeadAdd {
+            idc = IDC_IV_FLOW_RLEGADD; // LOOK HERE
+            y = QUOTE(POS_Y(15.5));
+        };
+
         class Triage: RscActivePicture {};
         class Surgery: Triage {
             idc = IDC_SURGERY;
