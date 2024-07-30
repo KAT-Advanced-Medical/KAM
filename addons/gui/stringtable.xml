@@ -92,12 +92,6 @@
         <Key ID="STR_KAT_GUI_ABGTitle">
             <English>ABG Results</English>
         </Key>
-        <Key ID="STR_KAT_GUI_IVSubtract">
-            <English>-0.2</English>
-        </Key>
-        <Key ID="STR_KAT_GUI_IVAdd">
-            <English>+0.2</English>
-        </Key>
         <Key ID="STR_KAT_GUI_IVValue">
             <English>0.0</English>
         </Key>
