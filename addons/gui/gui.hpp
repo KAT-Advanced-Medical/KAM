@@ -199,12 +199,28 @@ class ACE_Medical_Menu {
                 shadow = "false";
             };
         };
+        class HeadSubtractFull: RscButton {
+            idc = IDC_IV_FLOW_HEADSUBTRACTFULL; // LOOK HERE
+            text = "<<";
+            x = QUOTE(POS_X(-7.5));
+            y = QUOTE(POS_Y(2.5));
+            w = QUOTE(POS_W(1));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = {0, 0, 0, 0.7};
+            show = 0;
+            class Attributes {
+                align = "right";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
         class HeadSubtract: RscButton {
             idc = IDC_IV_FLOW_HEADSUBTRACT; // LOOK HERE
-            text = CSTRING(IVSubtract);
-            x = QUOTE(POS_X(-8));
+            text = "<";
+            x = QUOTE(POS_X(-6.5));
             y = QUOTE(POS_Y(2.5));
-            w = QUOTE(POS_W(2.5));
+            w = QUOTE(POS_W(1));
             h = QUOTE(POS_H(1));
             colorBackground[] = {0, 0, 0, 0.7};
             show = 0;
@@ -219,7 +235,7 @@ class ACE_Medical_Menu {
             idc = IDC_IV_FLOW_HEADVALUE; // LOOK HERE
             x = QUOTE(POS_X(-5));
             y = QUOTE(POS_Y(2.5));
-            w = QUOTE(POS_W(2.5));
+            w = QUOTE(POS_W(2));
             h = QUOTE(POS_H(1));
             colorBackground[] = {0, 0, 0, 0.7};
             show = 0;
@@ -232,10 +248,26 @@ class ACE_Medical_Menu {
         };
         class HeadAdd: RscButton {
             idc = IDC_IV_FLOW_HEADADD; // LOOK HERE
-            text = CSTRING(IVAdd);
+            text = ">";
+            x = QUOTE(POS_X(-3.5));
+            y = QUOTE(POS_Y(2.5));
+            w = QUOTE(POS_W(1));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = {0, 0, 0, 0.7};
+            show = 0;
+            class Attributes {
+                align = "left";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class HeadAddFull: RscButton {
+            idc = IDC_IV_FLOW_HEADADDFULL; // LOOK HERE
+            text = ">>";
             x = QUOTE(POS_X(-2.5));
             y = QUOTE(POS_Y(2.5));
-            w = QUOTE(POS_W(2.5));
+            w = QUOTE(POS_W(1));
             h = QUOTE(POS_H(1));
             colorBackground[] = {0, 0, 0, 0.7};
             show = 0;
@@ -261,6 +293,10 @@ class ACE_Medical_Menu {
             idc = IDC_IV_FLOW_CHESTTYPE; // LOOK HERE
             y = QUOTE(POS_Y(4.1));
         };
+        class ChestSubtractFull: HeadSubtractFull {
+            idc = IDC_IV_FLOW_CHESTSUBTRACTFULL; // LOOK HERE
+            y = QUOTE(POS_Y(5));
+        };
         class ChestSubtract: HeadSubtract {
             idc = IDC_IV_FLOW_CHESTSUBTRACT; // LOOK HERE
             y = QUOTE(POS_Y(5));
@@ -271,6 +307,10 @@ class ACE_Medical_Menu {
         };
         class ChestAdd: HeadAdd {
             idc = IDC_IV_FLOW_CHESTADD; // LOOK HERE
+            y = QUOTE(POS_Y(5));
+        };
+        class ChestAddFull: HeadAddFull {
+            idc = IDC_IV_FLOW_CHESTADDFULL; // LOOK HERE
             y = QUOTE(POS_Y(5));
         };
 
@@ -287,6 +327,10 @@ class ACE_Medical_Menu {
             idc = IDC_IV_FLOW_LARMTYPE; // LOOK HERE
             y = QUOTE(POS_Y(6.6));
         };
+        class LArmSubtractFull: HeadSubtractFull {
+            idc = IDC_IV_FLOW_LARMSUBTRACTFULL; // LOOK HERE
+            y = QUOTE(POS_Y(7.6));
+        };
         class LArmSubtract: HeadSubtract {
             idc = IDC_IV_FLOW_LARMSUBTRACT; // LOOK HERE
             y = QUOTE(POS_Y(7.6));
@@ -297,6 +341,10 @@ class ACE_Medical_Menu {
         };
         class LArmAdd: HeadAdd {
             idc = IDC_IV_FLOW_LARMADD; // LOOK HERE
+            y = QUOTE(POS_Y(7.6));
+        };
+        class LArmAddFull: HeadAddFull {
+            idc = IDC_IV_FLOW_LARMADDFULL; // LOOK HERE
             y = QUOTE(POS_Y(7.6));
         };
 
@@ -313,6 +361,10 @@ class ACE_Medical_Menu {
             idc = IDC_IV_FLOW_RARMTYPE; // LOOK HERE
             y = QUOTE(POS_Y(9.3));
         };
+        class RArmSubtractFull: HeadSubtractFull {
+            idc = IDC_IV_FLOW_RARMSUBTRACTFULL; // LOOK HERE
+            y = QUOTE(POS_Y(10.3));
+        };
         class RArmSubtract: HeadSubtract {
             idc = IDC_IV_FLOW_RARMSUBTRACT; // LOOK HERE
             y = QUOTE(POS_Y(10.3));
@@ -323,6 +375,10 @@ class ACE_Medical_Menu {
         };
         class RArmAdd: HeadAdd {
             idc = IDC_IV_FLOW_RARMADD; // LOOK HERE
+            y = QUOTE(POS_Y(10.3));
+        };
+        class RArmAddFull: HeadAddFull {
+            idc = IDC_IV_FLOW_RARMADDFULL; // LOOK HERE
             y = QUOTE(POS_Y(10.3));
         };
 
@@ -339,6 +395,10 @@ class ACE_Medical_Menu {
             idc = IDC_IV_FLOW_LLEGTYPE; // LOOK HERE
             y = QUOTE(POS_Y(12));
         };
+        class LLegSubtractFull: HeadSubtractFull {
+            idc = IDC_IV_FLOW_LLEGSUBTRACTFull; // LOOK HERE
+            y = QUOTE(POS_Y(12.9));
+        };
         class LLegSubtract: HeadSubtract {
             idc = IDC_IV_FLOW_LLEGSUBTRACT; // LOOK HERE
             y = QUOTE(POS_Y(12.9));
@@ -349,6 +409,10 @@ class ACE_Medical_Menu {
         };
         class LLegAdd: HeadAdd {
             idc = IDC_IV_FLOW_LLEGADD; // LOOK HERE
+            y = QUOTE(POS_Y(12.9));
+        };
+        class LLegAddFull: HeadAddFull {
+            idc = IDC_IV_FLOW_LLEGADDFULL; // LOOK HERE
             y = QUOTE(POS_Y(12.9));
         };
 
@@ -365,6 +429,10 @@ class ACE_Medical_Menu {
             idc = IDC_IV_FLOW_RLEGTYPE; // LOOK HERE
             y = QUOTE(POS_Y(14.6));
         };
+        class RLegSubtractFull: HeadSubtractFull {
+            idc = IDC_IV_FLOW_RLEGSUBTRACTFULL; // LOOK HERE
+            y = QUOTE(POS_Y(15.5));
+        };
         class RLegSubtract: HeadSubtract {
             idc = IDC_IV_FLOW_RLEGSUBTRACT; // LOOK HERE
             y = QUOTE(POS_Y(15.5));
@@ -375,6 +443,10 @@ class ACE_Medical_Menu {
         };
         class RLegAdd: HeadAdd {
             idc = IDC_IV_FLOW_RLEGADD; // LOOK HERE
+            y = QUOTE(POS_Y(15.5));
+        };
+        class RLegAddFull: HeadAddFull {
+            idc = IDC_IV_FLOW_RLEGADDFULL; // LOOK HERE
             y = QUOTE(POS_Y(15.5));
         };
 
