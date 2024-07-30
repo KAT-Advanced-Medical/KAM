@@ -396,7 +396,7 @@ class ACE_Medical_Menu {
             y = QUOTE(POS_Y(12));
         };
         class LLegSubtractFull: HeadSubtractFull {
-            idc = IDC_IV_FLOW_LLEGSUBTRACTFull; // LOOK HERE
+            idc = IDC_IV_FLOW_LLEGSUBTRACTFULL; // LOOK HERE
             y = QUOTE(POS_Y(12.9));
         };
         class LLegSubtract: HeadSubtract {
