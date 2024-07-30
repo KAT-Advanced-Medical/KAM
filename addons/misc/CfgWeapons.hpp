@@ -87,18 +87,6 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {QPATHTOF(models\armband\ArmbandKAT.paa)};
     };
 
-    class kat_Bubble_Wrap_Item: ACE_ItemCore {
-        author = "Miss Heda";
-        displayName = CSTRING(Bubble_Wrap_Display);
-        descriptionShort = CSTRING(Bubble_Wrap_Desc);
-        scope = 2;
-        editorPreview = QPATHTOF(ui\Bubble_Wrap_Item.paa);
-        picture = QPATHTOF(ui\Bubble_Wrap_Item.paa);
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.1;
-        };
-    };
-
     class kat_IFAK: ACE_ItemCore {
         author = "Miss Heda";
         displayName = CSTRING(IFAK_Display);
