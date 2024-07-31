@@ -27,13 +27,13 @@ if (IS_BLEEDING(_target)) then {
     switch (ACEGVAR(medical_gui,showBleeding)) do {
         case 1: {
         //  Just show whether the unit is bleeding at all
-            _entries pushBack [localize ACELSTRING(medical_gui,STATUS_BLEEDING), [1, 0, 0, 1]];
+            _entries pushBack [localize ACELSTRING(medical_gui,Status_Bleeding), [1, 0, 0, 1]];
         };
         case 2: {
             // Give a qualitative description of the rate of bleeding
             private _cardiacOutput = [_target] call ACEFUNC(medical_status,getCardiacOutput);
             private _bleedRate = GET_BLOOD_LOSS(_target);
-            private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD_DEFAULT * (_cardiacOutput max 0.05);
+            private _bleedRateKO = BLOOD_LOSS_KNOCK_OUT_THRESHOLD * (_cardiacOutput max 0.05);
             // Use nonzero minimum cardiac output to prevent all bleeding showing as massive during cardiac arrest
             switch (true) do {
                 case (_bleedRate < _bleedRateKO * BLEED_RATE_SLOW): {
