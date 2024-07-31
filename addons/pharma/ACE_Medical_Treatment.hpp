@@ -42,9 +42,9 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class EpinephrineIV {
             painReduce = 0;
-            hrIncreaseLow[] = {10, 20};
+            hrIncreaseLow[] = {15, 30};
             hrIncreaseNormal[] = {10, 50};
-            hrIncreaseHigh[] = {10, 40};
+            hrIncreaseHigh[] = {15, 40};
             timeInSystem = 120;
             timeTillMaxEffect = 10;
             maxDose = 4;
