@@ -26,7 +26,7 @@ private _bloodGasArray = _bloodGas select 1;
 private _patient = _bloodGas select 0;
 
 private _output = format ["Patient: %1, PaCO2: %2, PaO2: %3, SpO2: %4, HCO2: %5, pH: %6, ETCO2: %7", _patient, (_bloodGasArray select 0) toFixed 2, (_bloodGasArray select 1) toFixed 2, (_bloodGasArray select 2) toFixed 2, (_bloodGasArray select 3) toFixed 2, (_bloodGasArray select 4) toFixed 2, (_bloodGasArray select 5) toFixed 2];
-[_output, 1.5, (_entries select 2)] call ACEFUNC(common,displayTextStructured);
+[_output, 3, (_entries select 2)] call ACEFUNC(common,displayTextStructured);
 
 EGVAR(circulation,resultCounter) = if (EGVAR(circulation,resultCounter) == 20) then { 1 } else { EGVAR(circulation,resultCounter) + 1 };
 EGVAR(circulation,resultSampleMap) set [EGVAR(circulation,resultCounter), [_patient, _bloodGasArray]];

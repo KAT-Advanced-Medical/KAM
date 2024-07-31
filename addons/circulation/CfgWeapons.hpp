@@ -11,7 +11,7 @@
         scope = 1; \
         scopeArsenal = 0; \
         scopeCurator = 0; \
-        nameID = RESULTID; \
+        testID = RESULTID; \
     }
 
 class CfgWeapons {

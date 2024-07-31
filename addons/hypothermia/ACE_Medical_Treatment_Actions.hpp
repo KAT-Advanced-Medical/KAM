@@ -4,8 +4,10 @@ class ACE_Medical_Treatment_Actions {
     class ApplyHandWarmers: BasicBandage {
         displayName = CSTRING(Use_Handwarmer);
         displayNameProgress = CSTRING(Using);
+        condition = "true";
         treatmentLocations = 0;
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        treatmentTime = 5;
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         items[] = {"kat_handWarmer"};
         callbackSuccess = QFUNC(useHandWarmer);
     };
@@ -14,12 +16,12 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(perform);
         category = "advanced";
         treatmentLocations = QGVAR(closedLocation);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "Body"};
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QUOTE(ace_medical_treatment_medicIV);
         treatmentTime = 10;
         items[] = {"kat_fluidWarmer"};
-        condition = QUOTE(EFUNC(pharma,removeIV));        
+        condition = QUOTE(([ARR_3(_medic,_patient,_bodyPart)] call EFUNC(pharma,removeIV)) && !([ARR_3(_medic,_patient,_bodyPart)] call FUNC(removeWarmer)));     
         callbackSuccess = QFUNC(applyFluidWarmer);
     };
     class RemoveFluidWarmer: BasicBandage {
@@ -27,12 +29,12 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(perform);
         category = "advanced";
         treatmentLocations = QGVAR(closedLocation);
-        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "Body"};
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         medicRequired = QUOTE(ace_medical_treatment_medicIV);
         treatmentTime = 10;
         items[] = {};
-        condition = QUOTE(FUNC(removeWarmer));
+        condition = QUOTE([ARR_3(_medic,_patient,_bodyPart)] call FUNC(removeWarmer));
         callbackSuccess = QFUNC(removeFluidWarmer);
     };
     class CheckTemperature: CheckPulse {

@@ -3498,7 +3498,7 @@
             <Japanese>Coag-Senseは血液凝固の効率を測定できる PT/INR モニタリングシステムです。</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
-            <English>Coag-Sense conclutes: %1</English>
+            <English>Coag-Sense concludes: %1</English>
             <Japanese>Coag-Senseの結果: %1</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
@@ -3510,23 +3510,23 @@
             <Japanese>血液サンプルを取っています、</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_lowINR">
-            <English>slightly below normal INR</English>
+            <English>Slightly Below Normal INR</English>
             <Japanese>正常INRより少し低い</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
-            <English>sligtly above normal INR</English>
+            <English>Sligtly Above normal INR</English>
             <Japanese>正常INRより少し高い</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_lowINR">
-            <English>highly below normal INR</English>
+            <English>Very Low normal INR</English>
             <Japanese>正常INRよりかなり低い</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_aboveINR">
-            <English>highly above normal INR</English>
+            <English>Very High INR</English>
             <Japanese>正常INRよりかなり高い</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_normalINR">
-            <English>normal INR</English>
+            <English>Normal INR</English>
             <Japanese>正常INR</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coag_Sense">

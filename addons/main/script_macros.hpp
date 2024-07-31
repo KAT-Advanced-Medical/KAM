@@ -121,6 +121,9 @@
 #undef BLOOD_LOSS_KNOCK_OUT_THRESHOLD
 #define BLOOD_LOSS_KNOCK_OUT_THRESHOLD ACEGVAR(medical,const_bloodLossKnockOutThreshold)
 
+#undef GET_BLOOD_LOSS
+#define GET_BLOOD_LOSS(unit)        ([unit] call ACEFUNC(medical_status,getBloodLoss))
+
 // Minimum leg damage required for limping
 #undef LIMPING_DAMAGE_THRESHOLD
 #define LIMPING_DAMAGE_THRESHOLD ACEGVAR(medical,const_limpingDamageThreshold)
@@ -322,8 +325,8 @@
 #define VAR_BODY_FLUID                 QEGVAR(circulation,bodyFluid)
 #define GET_BODY_FLUID(unit)           (unit getVariable [VAR_BODY_FLUID, DEFAULT_BODY_FLUID])
 
-#define GET_BLOOD_VOLUME_LITERS(unit)  ((GET_BODY_FLUID(_unit) select 4) / 1000)
-#define GET_BLOOD_VOLUME_ML(unit)      (GET_BODY_FLUID(_unit) select 4)
+#define GET_BLOOD_VOLUME_LITERS(unit)  ((GET_BODY_FLUID(unit) select 4) / 1000)
+#define GET_BLOOD_VOLUME_ML(unit)      (GET_BODY_FLUID(unit) select 4)
 #define GET_SIMPLE_BLOOD_VOLUME(unit)  (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
 
 #define REDUCE_TOTAL_BLOOD_VOLUME(unit,volume) (unit setVariable [VAR_BODY_FLUID, [(GET_BODY_FLUID(unit) select 0) - (volume / 2), (GET_BODY_FLUID(unit) select 1) - (volume / 2), (GET_BODY_FLUID(unit) select 2), (GET_BODY_FLUID(unit) select 3), (GET_BODY_FLUID(unit) select 4) - volume], true])

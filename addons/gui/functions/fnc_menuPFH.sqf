@@ -41,6 +41,9 @@ if (isNull _display) exitWith {};
 // Update IV Status
 [_display, ACEGVAR(medical_gui,target)] call FUNC(updateIVStatus);
 
+// Update Blood Gas
+[_display, ACEGVAR(medical_gui,target)] call FUNC(updateABGStatus);
+
 // Update injury list
 private _ctrlInjuries = _display displayCtrl IDC_INJURIES;
 [_ctrlInjuries, ACEGVAR(medical_gui,target), ACEGVAR(medical_gui,selectedBodyPart)] call ACEFUNC(medical_gui,updateInjuryList);

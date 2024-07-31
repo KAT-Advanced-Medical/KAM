@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_vehicle", "_player"];
+params ["_target", "_player"];
 
 private _fnc_getActions = {
     private _actions = [];
@@ -25,30 +25,27 @@ private _fnc_getActions = {
 
     {
         private _config = _cfgWeapons >> _x;
-        _idNumber = getNumber (_config >> "nameID");
+        _idNumber = getNumber (_config >> "testID");
 
         if (_idNumber > 0) then {   
-            private _bloodSampleArray = EGVAR(circulation,bloodSampleMap) get _idNumber;
-            private _patient = _bloodSampleArray select 0;
+            private _bloodTestArray = EGVAR(circulation,resultSampleMap) get _idNumber;
+            private _patient = _bloodTestArray select 0;
 
             _actions pushBack [
                 [
                     _x,
-                    format ["%1 Blood Sample", _patient],
+                    format ["Apply %1 Test ", _patient],
                     "",
-                    {_this call FUNC(showBloodGas)},
+                    {_this call FUNC(attachBloodGas)},
                     {true},
                     {},
-                    [],
-                    {[0, 0, 0]},
-                    2,
-                    [false,true,false,false,false]
+                    []
                 ] call ACEFUNC(interact_menu,createAction),
                 [],
-                [_bloodSampleArray, _player, _idNumber, _vehicle]
+                [_bloodTestArray, _target, _idNumber, _player]
             ];
         };
-    } forEach ([_vehicle, 0] call ACEFUNC(common,uniqueItems));
+    } forEach ([_player, 0] call ACEFUNC(common,uniqueItems));
 
     _actions
 };

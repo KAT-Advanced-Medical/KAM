@@ -48,6 +48,9 @@
         <Key ID="STR_KAT_Hypothermia_Use_Handwarmer">
             <English>Use Hand Warmer</English>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_Using">
+            <English>Using</English>
+        </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_displayName">
             <English>Fluid Line Warmer</English>
         </Key>
@@ -58,7 +61,7 @@
             <English>Attach Fluid Warmer</English>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Remove_Warmer">
-            <English>Attach Fluid Warmer</English>
+            <English>Remove Fluid Warmer</English>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_dead">
             <English>Patient feels frigid</English>
@@ -80,6 +83,12 @@
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature_Progress">
             <English>Checking Temperature</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_perform">
+            <English>Performing</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_LineWarmer">
+            <English>Line Warmer Active</English>
         </Key>
     </Package>
 </Project>

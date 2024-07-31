@@ -21,8 +21,9 @@ params ["_unit", "_deltaT", "_syncValues"];
 
 private _bloodLoss = [_unit] call ACEFUNC(medical_status,getBloodLoss);
 private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
-private _lossVolumeChange = (-_deltaT * (_bloodLoss + _internalBleeding));
+private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / 80)) / GET_VASOCONSTRICTION(_unit)));
 private _fluidVolume = GET_BODY_FLUID(_unit);
+private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
 private _ECB = _fluidVolume select 0;
 private _ECP = _fluidVolume select 1;
 private _SRBC = _fluidVolume select 2;
@@ -39,7 +40,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
     private _tourniquets = GET_TOURNIQUETS(_unit);
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0]];
-    private _flowCalculation = ACEGVAR(medical,ivFlowRate) * GET_VASOCONSTRICTION(_unit) * _deltaT * 4.16;
+    private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16);
     private _hypothermia = EGVAR(hypothermia,hypothermia);
 
     if (GET_HEART_RATE(_unit) < 20) then {
@@ -56,7 +57,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
         _x params ["_bagVolumeRemaining", "_type", "_bodyPart"];
 
         if ((_tourniquets select _bodyPart isEqualTo 0) && (_IVarray select _bodyPart isNotEqualTo 3)) then {
-            private _bagChange = _flowCalculation min _bagVolumeRemaining; // absolute value of the change in miliLiters
+            private _bagChange = (_flowCalculation * (_IVflow select _bodyPart)) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
 
             if (_hypothermia) then {
@@ -120,11 +121,11 @@ switch (true) do {
     };
     default {
         // If no shift is required, fluids begin returning to baseline in both ISP and SRBC volumes
-        _ISP = _ISP + ((DEFAULT_ISP - _ISP) min 1);
-        _SRBC = _SRBC + ((DEFAULT_SRBC - _SRBC) min 0.1);
+        _ISP = _ISP + ((DEFAULT_ISP - _ISP) min 2);
+        _SRBC = _SRBC + ((DEFAULT_SRBC - _SRBC) min 1);
     };
 };
 
-_unit setVariable [QEGVAR(circulation,bodyFluids), [_ECB, _ECP, (_SRBC - _SRBCChange), _ISP, (_ECB + _ECP)], _syncValues];
+_unit setVariable [QEGVAR(circulation,bodyFluid), [_ECB, _ECP, (_SRBC - _SRBCChange), _ISP, (_ECB + _ECP)], _syncValues];
 
 ((_lossVolumeChange + GET_BLOOD_VOLUME_LITERS(_unit)) max 0.01)

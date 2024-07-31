@@ -14,6 +14,7 @@ class CfgMagazines {
         tracersEvery = 0;
         lastRoundsTracer = 0;
         mass = 0.1;
+        ACE_asItem = 1;
     };
 
     class kat_IFAK_Magazine: CA_Magazine {

@@ -198,6 +198,19 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_Actions {
             class ACE_MainActions {
+                class KAT_CheckHandWarmers {
+                    displayName = CSTRING(CheckHandWarmers);
+                    condition = "true";
+                    statement = QUOTE([ARR_2(_player,_target)] call FUNC(checkHandWarmers));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
+                class KAT_ApplyBloodTest {
+                    displayName = CSTRING(ApplyArterialTest);
+                    condition = "true";
+                    statement = "true";
+                    insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialApplyActions));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
                     condition = QUOTE(_target getVariable [ARR_2('ACE_isUnconscious',false)] && {!(isNull (objectParent _target))} && {isNull (objectParent _player)});
@@ -565,6 +578,13 @@ class CfgVehicles {
             class KAT_Equipment {
                 displayName = CSTRING(Kat_Equipment);
                 icon = QPATHTOF(ui\KAM_Iteraction_Logo.paa);
+
+                class KAT_CheckHandWarmersSelf {
+                    displayName = CSTRING(CheckHandWarmers);
+                    condition = "true";
+                    statement = QUOTE([ARR_2(_player,_player)] call FUNC(checkHandWarmers));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
                 
                 class Armband {
                     displayName = CSTRING(Armband_Sling);

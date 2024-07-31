@@ -16,6 +16,8 @@ class CfgMagazines {
         tracersEvery = 0;
         lastRoundsTracer = 0;
         mass = 20;
+        ACE_isMedicalItem = 1;
+        ACE_asItem = 1;
     };
     class kat_oxygenTank_150: CA_Magazine {
         scope = 2;
@@ -32,5 +34,7 @@ class CfgMagazines {
         tracersEvery = 0;
         lastRoundsTracer = 0;
         mass = 10;
+        ACE_isMedicalItem = 1;
+        ACE_asItem = 1;
     };
 };

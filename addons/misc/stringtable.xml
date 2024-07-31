@@ -1517,6 +1517,12 @@
         <Key ID="STR_KAT_Misc_ArterialTest">
             <English>Run ABG Test</English>
         </Key>
+        <Key ID="STR_KAT_Misc_ApplyArterialTest">
+            <English>Apply ABG Test</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_CheckHandWarmers">
+            <English>Check Hand Warmers</English>
+        </Key>
         <Key ID="STR_KAT_Misc_CarryPatient">
             <English>Carry Patient</English>
             <Japanese>患者を担ぐ</Japanese>

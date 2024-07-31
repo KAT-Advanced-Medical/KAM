@@ -37,9 +37,11 @@ if (GVAR(hypothermia)) then {
 		{
 			_x params ["_timeRemaining"];
 
-			if (_x > 0) then {
+			if (_x > 0) exitWith {
 				_handWarmers set [_forEachIndex, _timeRemaining - 1];
 			};
+
+			_handWarmers set [_forEachIndex, 0];
 		} forEach (_handWarmers);
 
 		_unit setVariable[QGVAR(handWarmers), _handWarmers, true];

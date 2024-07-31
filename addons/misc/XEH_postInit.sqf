@@ -33,8 +33,6 @@ if (GVAR(incompatibilityWarning)) then {
     call FUNC(incompatibilityWarning);
 };
 
-[QGVAR(headTourniquetLocal), LINKFUNC(headTourniquetLocal)] call CBA_fnc_addEventHandler;
-
 [QACEGVAR(medical_treatment,tourniquetLocal), LINKFUNC(setTourniquetTime)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_treatment,tourniquetRemove), LINKFUNC(removeTourniquetTime)] call CBA_fnc_addEventHandler;
 
@@ -42,7 +40,6 @@ if (GVAR(incompatibilityWarning)) then {
 ["kat_Armband_Medic_Item", "kat_Armband_Medic_Goggles"] call ACEFUNC(common,registerItemReplacement);
 ["kat_Armband_Doctor_Item", "kat_Armband_Doctor_Goggles"] call ACEFUNC(common,registerItemReplacement);
 ["kat_Armband_Kat_Item", "kat_Armband_Kat_Goggles"] call ACEFUNC(common,registerItemReplacement);
-["kat_Bubble_Wrap_Item", "kat_Bubble_Wrap"] call ACEFUNC(common,registerItemReplacement);
 
 [QGVAR(stopCarryingPrompt), LINKFUNC(stopCarryingPrompt)] call CBA_fnc_addEventHandler;
 [QGVAR(dropObject_carryLocal), {

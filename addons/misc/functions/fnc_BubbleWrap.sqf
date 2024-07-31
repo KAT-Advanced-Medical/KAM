@@ -14,6 +14,8 @@
 
 params ["_unit"];
 
+[_unit, 'kat_Bubble_Wrap'] call ACEFUNC(common,adjustMagazineAmmo);
+
 if ([_unit, 'kat_Bubble_Wrap'] call ACEFUNC(common,adjustMagazineAmmo)) then {
     [format [LLSTRING(MagItem_Empty), getText (configFile >> "CfgMagazines" >> 'kat_Bubble_Wrap' >> "displayName")], 2.5, _unit] call ACEFUNC(common,displayTextStructured);
 };

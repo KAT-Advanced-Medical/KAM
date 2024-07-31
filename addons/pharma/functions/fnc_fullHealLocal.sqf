@@ -29,6 +29,7 @@ TRACE_1("fullHealLocal",_patient);
 GVAR(cardiacArrestBleedRate) = ACEGVAR(medical,const_minCardiacOutput) * EGVAR(circulation,cardiacArrestBleedRate);
 _patient setVariable [QGVAR(alphaAction), 1, true];
 _patient setVariable [QGVAR(IV), [0,0,0,0,0,0], true];
+_patient setVariable [QGVAR(IVflow), [0,0,0,0,0,0], true];
 _patient setVariable [QGVAR(IVpfh), [0,0,0,0,0,0], true];
 _patient setVariable [QGVAR(active), false, true];
 _patient setVariable [QGVAR(IVPharma_PFH), nil, true];

@@ -34,8 +34,8 @@ if (_syncValues) then {
 };
 
 //Get Blood Volume from previous cycle
-private _bloodVolume = ([_unit, _deltaT, _syncValues] call ACEFUNC(medical_status,getBloodVolumeChange));
-_unit setVariable [VAR_BLOOD_VOL, _bloodVolume, _syncValues];
+private _bloodVolume = ([_unit, _deltaT, _syncValues] call EFUNC(pharma,getBloodVolumeChange));
+_unit setVariable [VAR_BLOOD_VOL, GET_BLOOD_VOLUME_LITERS(_unit), _syncValues];
 
 // Enviromental Impact (Altitude, Temperature, Pressure) 
 private _altitude = (getPosASL _unit) select 2;

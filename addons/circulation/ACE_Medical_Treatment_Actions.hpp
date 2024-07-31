@@ -65,8 +65,8 @@ class ACE_Medical_Treatment_Actions {
     };
     class DrawArterial: CheckPulse {
         displayName = CSTRING(DrawArterial_Action_Use);
-        displayNameProgress = CSTRING(DogTag_Action);
-        treatmentTime = 5;
+        displayNameProgress = CSTRING(DrawBlood_Action_Progress);
+        treatmentTime = 10;
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
         category = "advanced";
@@ -75,9 +75,6 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(drawArterial));
         condition = "true";
         items[] = {"kat_IV_16"};
-        animationPatient = "";
-        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
-        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
 
     #include "Blood_Medical.hpp"

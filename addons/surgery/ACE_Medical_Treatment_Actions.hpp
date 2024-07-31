@@ -112,7 +112,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentTime = QGVAR(openTime);
         items[] = {"ACE_surgicalKit"};
         consumeItem = 1;
-        condition = QUOTE(([ARR_4(_medic,_patient,_bodyPart,5)] call FUNC(fractureCheck)) && (GVAR(enable_fracture)));
+        condition = QUOTE(([ARR_4(_medic,_patient,_bodyPart,2)] call FUNC(openReductionCheck)) && (GVAR(enable_fracture)));
         callbackSuccess = QUOTE([ARR_4(_medic,_patient,_bodyPart,true)] call FUNC(openReduction));
     };
     class NPWT: BasicBandage {
