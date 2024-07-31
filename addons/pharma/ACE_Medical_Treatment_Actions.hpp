@@ -368,6 +368,17 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
+    class Epinephrine: EACA {
+        displayName = CSTRING(Take_Epi);
+        displayNameProgress = CSTRING(Using);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_EpinephrineIV);
+        treatmentTime = QGVAR(treatmentTime_EpinephrineIV);
+        items[] = {"kat_epinephrineIV"};
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
     class Dialysis: BasicBandage {
         displayName = CSTRING(Dialysis_DisplayName);
         displayNameProgress = CSTRING(Dialysis_DisplayNameProgress);
