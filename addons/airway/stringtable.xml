@@ -739,6 +739,7 @@
             <Russian>Ручной всасывающий насос</Russian>
             <German>Manuelle Absaugpumpe</German>
             <French>Pompe d'aspiration manuelle</French>
+            <Portuguese>Bomba de Sucção Manual</Portuguese>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Log">
             <English>%1 did a medical suction using a %2</English>

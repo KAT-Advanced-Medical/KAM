@@ -412,7 +412,7 @@
             <German>Klemme</German>
             <Japanese>鉗子 (クランプ)</Japanese>
             <Spanish>Pinza de sujeción</Spanish>
-            <Portuguese>Afastador</Portuguese>
+            <Portuguese>Pinça</Portuguese>
             <Finnish>Puristin</Finnish>
             <Russian>Зажим</Russian>
         </Key>
@@ -427,7 +427,7 @@
             <Japanese>粉砕骨折を留めるために使用される</Japanese>
             <Spanish>Usada para sujetar las fracturas conminutas</Spanish>
             <Polish>Służy do zaciskania skomplikowanych złamań</Polish>
-            <Portuguese>Usado para fixar fraturas cominutivas</Portuguese>
+            <Portuguese>Usado para pinçar fraturas cominutivas</Portuguese>
             <Finnish>Käytetään murtumien kiinnittämiseen</Finnish>
             <Russian>Используется для фиксации оскольчатых переломов</Russian>
         </Key>
@@ -442,7 +442,7 @@
             <German>Klammern der Fraktur</German>
             <Japanese>骨折をクランプする</Japanese>
             <Spanish>Alinear trozos</Spanish>
-            <Portuguese>Fixar fratura</Portuguese>
+            <Portuguese>Pinçar fratura</Portuguese>
             <Finnish>Puristimen murtuma</Finnish>
             <Russian>Зажать перелом</Russian>
         </Key>
@@ -457,7 +457,7 @@
             <German>Abklemmen</German>
             <Japanese>クランプ中</Japanese>
             <Spanish>Alineando trozos</Spanish>
-            <Portuguese>Fixando</Portuguese>
+            <Portuguese>Pinçando</Portuguese>
             <Finnish>Kiinnitys</Finnish>
             <Russian>Зажат</Russian>
         </Key>
@@ -1223,7 +1223,7 @@
             <German>abgeklemmt</German>
             <Japanese>クランプした</Japanese>
             <Spanish>alineado/a</Spanish>
-            <Portuguese>fixado(a)</Portuguese>
+            <Portuguese>pinçado(a)</Portuguese>
             <Finnish>Kiinnitetty</Finnish>
             <Russian>защемленный</Russian>
         </Key>
@@ -1405,7 +1405,7 @@
             <French>Pas d'inconscience due à la chirurgie</French>
             <Korean>수술 중 의식불명 발생 없음</Korean>
             <German>Keine Bewusstlosigkeit durch die Operation</German>
-            <Portuguese>Sem inconsciência por cirurgia</Portuguese>
+            <Portuguese>Inconsciência não necessária para a cirurgia</Portuguese>
             <Finnish>Ei tajuttomuutta leikkauksesta</Finnish>
             <Russian>После операции никто не теряет сознание</Russian>
         </Key>

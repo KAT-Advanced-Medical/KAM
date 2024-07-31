@@ -442,7 +442,7 @@
             <Czech>Atropin</Czech>
             <Japanese>アトロピン</Japanese>
             <Russian>Атропин</Russian>
-            <Portuguese>Atropina</Portuguese>
+            <Portuguese>Autoinjetor de Atropina</Portuguese>
             <Finnish>Atropiini</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Atropine">
@@ -476,7 +476,7 @@
             <Czech>Podporuje tvorbu sraženin</Czech>
             <Japanese>血液凝固を促進し、出血を抑えます</Japanese>
             <Russian>Способствует образованию тромбов</Russian>
-            <Portuguese>Favorece a coagulação</Portuguese>
+            <Portuguese>Intensifica a coagulação</Portuguese>
             <Finnish>Edistää verihyytymien muodostumista</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_TXA_Box_Display">
@@ -621,6 +621,7 @@
             <Spanish>Autoinyector de Fenilefrina</Spanish>
             <Japanese>フェニレフリン自動注射器</Japanese>
             <French>Autoinjecteur de Phényléphrine</French>
+            <Portuguese>Autoinjetor de Fenilefrina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Phenyl_Auto">
             <English>Inject Phenylephrine</English>
@@ -3018,7 +3019,7 @@
             <Japanese>カフェインボトル</Japanese>
             <Korean>카페인 병</Korean>
             <Italian>Bottiglia di Caffeina</Italian>
-            <Portuguese>Garrafa de cafeína</Portuguese>
+            <Portuguese>Garrafa de Cafeína</Portuguese>
             <Polish>Kofeina</Polish>
             <Spanish>Bote de cafeina</Spanish>
             <Czech>Kofeinová lahev</Czech>
@@ -3064,7 +3065,7 @@
             <Polish>Wspomaga powstawanie skrzepów</Polish>
             <Japanese>血液凝固を促進し、出血を抑えます</Japanese>
             <Spanish>Favorece la coagulación</Spanish>
-            <Portuguese>Favorece a coagulação</Portuguese>
+            <Portuguese>Intensifica a coagulação</Portuguese>
             <Finnish>Edistää hyytymien muodostumista</Finnish>
             <Russian>Способствует образованию тромбов</Russian>
         </Key>
