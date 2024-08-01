@@ -28,8 +28,6 @@ if (GVAR(incompatibilityWarning)) then {
     call FUNC(incompatibilityWarning);
 };
 
-[QGVAR(headTourniquetLocal), LINKFUNC(headTourniquetLocal)] call CBA_fnc_addEventHandler;
-
 ["kat_Armband_Red_Cross_Item", "kat_Armband_Red_Cross_Goggles"] call ACEFUNC(common,registerItemReplacement);
 ["kat_Armband_Medic_Item", "kat_Armband_Medic_Goggles"] call ACEFUNC(common,registerItemReplacement);
 ["kat_Armband_Doctor_Item", "kat_Armband_Doctor_Goggles"] call ACEFUNC(common,registerItemReplacement);

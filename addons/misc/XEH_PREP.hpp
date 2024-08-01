@@ -32,8 +32,6 @@ PREP(handleRespawn);
 PREP(handleTourniquetEffects);
 PREP(handleUnconscious);
 PREP(hasStableVitals);
-PREP(headTourniquet);
-PREP(headTourniquetLocal);
 PREP(incompatibilityWarning);
 PREP(init);
 PREP(lowerStretcher);
