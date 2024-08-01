@@ -55,37 +55,37 @@ private _ropes = _target getVariable [QGVAR(ropes), []];
 // }, [_target, _stretcher, _ropes], 10] call CBA_fnc_waitAndExecute;
 
 [{
-	params ["_target", "_stretcher", "_ropes"];
+    params ["_target", "_stretcher", "_ropes"];
 
-	private _rope = _ropes select 0;
-	ropeUnwound _rope;
+    private _rope = _ropes select 0;
+    ropeUnwound _rope;
 }, 
 {
     params ["_target", "_stretcher", "_ropes"];
 
-	private _crew = crew _stretcher;
-	if (count _crew > 0) then {
-		{
-			_x leaveVehicle _stretcher;
-			moveOut _x;
+    private _crew = crew _stretcher;
+    if (count _crew > 0) then {
+        {
+            _x leaveVehicle _stretcher;
+            moveOut _x;
 
-			_x assignAsCargo _target;
-    		_x moveInCargo _target;
-		} forEach _crew;
-	};
+            _x assignAsCargo _target;
+            _x moveInCargo _target;
+        } forEach _crew;
+    };
 
-	{
-		if (!isNull _x) then {
-			ropeDestroy _x;
-		};
-	} forEach _ropes;
+    {
+        if (!isNull _x) then {
+            ropeDestroy _x;
+        };
+    } forEach _ropes;
 
-	deleteVehicle _stretcher;
+    deleteVehicle _stretcher;
 
-	private _stretcher = createVehicle ["kat_stretcher", (_target modelToWorld [0,0,-5])];
-	_stretcher attachTo [_target, [0,0,-.1], "slingload0"];
-	_target setVariable [QGVAR(isStretcherAttached), true, true];
-	_target setVariable [QGVAR(stretcher), _stretcher, true];
-	_target setVariable [QGVAR(stretcherDeployed), false, true];
+    private _stretcher = createVehicle ["kat_stretcher", (_target modelToWorld [0,0,-5])];
+    _stretcher attachTo [_target, [0,0,-.1], "slingload0"];
+    _target setVariable [QGVAR(isStretcherAttached), true, true];
+    _target setVariable [QGVAR(stretcher), _stretcher, true];
+    _target setVariable [QGVAR(stretcherDeployed), false, true];
 
 }, [_target, _stretcher, _ropes]] call CBA_fnc_waitUntilAndExecute;
