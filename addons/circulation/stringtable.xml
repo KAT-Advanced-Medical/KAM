@@ -18,6 +18,9 @@
             <Portuguese>ACE - Circulação ativada?</Portuguese>
             <Finnish>ACE-Kierto aktivoitu?</Finnish>
         </Key>
+        <Key ID="STR_KAT_Circulation_SIMPLEMED_ENABLE">
+            <English>AI Simple Medical activated?</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable">
             <English>Advanced Rhythms activated?</English>
             <German>Fortgeschrittenen Rhythmus aktivieren?</German>
