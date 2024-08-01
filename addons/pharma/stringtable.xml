@@ -165,14 +165,17 @@
         <Key ID="STR_KAT_Pharma_Painkillers_DescShort">
             <English>Combat Wound Medication Pill Pack. Used to suppresses pain</English>
             <Japanese>戦闘傷病治療薬パック。 痛みを抑えるために使用される</Japanese>
+            <Portuguese>Utilizados para supressão de dor.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_Box_Display">
             <English>Combat Pill Pack</English>
             <Japanese>戦闘治療薬パック</Japanese>
+            <Portuguese>Comprimidos de Combate</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Give_CWMP">
             <English>Use CWMP</English>
             <Japanese>戦闘傷病治療薬を投与</Japanese>
+            <Portuguese>Utilizar Comprimidos de Combate</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
@@ -1036,6 +1039,7 @@
             <Russian>Требовать установки IV/IO</Russian>
             <Spanish>Los Fluidos requieren que se inserte la IV/IO</Spanish>
             <French>Les fluides nécessitent une IV/IO insérée</French>
+            <Portuguese>Fluido necessita de inserção IV/IO</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma. \nIf false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
@@ -1091,6 +1095,7 @@
             <German>Blutentnahme benötigt IV/IO</German>
             <Spanish>La Extracción de Sangre Requiere la IV/IO</Spanish>
             <French>La prise de sang nécessite une IV/IO</French>
+            <Portuguese>Extração de sangue necessita de IV/IO</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
@@ -1099,6 +1104,7 @@
             <German>Steuert, ob eine IV/IO vorhanden sein muss, um Blut abnehmen zu könnnen./nStandard: falsch</German>
             <Spanish>Falso por defecto. Si se habilita, necesitarás insertar primero la IV/IO para poder extraer sangre de alguien. \nSi falso, puedes extraer sangre sin ello.</Spanish>
             <French>Désactivé par défaut. Si activé, vous devrez d’abord insérer une IV/IO avant de pouvoir prélever du sang sur quelqu’un. \nSi désactivé, vous pouvez effectuer une prise de sang sans IV/IO.</French>
+            <Portuguese>Desativado, por padrão. Quando ativado, você precisará inserir IV/IO primeiro antes de poder retirar sangue de alguém. \nSe desativado, você pode retirar sem ele.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
