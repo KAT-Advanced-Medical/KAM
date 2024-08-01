@@ -368,7 +368,7 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class Epinephrine: EACA {
+    class EpinephrineIV: EACA {
         displayName = CSTRING(Take_Epi);
         displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
