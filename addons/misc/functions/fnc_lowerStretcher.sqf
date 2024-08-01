@@ -21,6 +21,6 @@ private _ropes = _target getVariable [QGVAR(ropes), []];
 {
     private _rope = _x;
     if (!isNull _rope && ropeLength _rope <= MAX_LENGTH) then {
-	    ropeUnwind [_rope, 2, 10, true];
+        ropeUnwind [_rope, 2, 10, true];
     };
 } forEach _ropes;
