@@ -1438,6 +1438,42 @@ class CfgVehicles {
                     insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
                 };
+
+                class KAT_AttachHeliStretcher {
+                    displayName = CSTRING(helistretcher_attach);
+                    condition = QUOTE([ARR_2(_player,'Attachable_Helistretcher')] call ACEFUNC(common,hasItem));
+                    statement = QUOTE([ARR_2(_player,_target)] call FUNC(attachHeliStretcher));
+                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+                };
+            };
+        };
+        class ACE_SelfActions {
+            class KAT_DeployStretcher {
+                displayName = "Deploy Stretcher";
+                condition = QUOTE(_player call FUNC(canDeployStretcher));
+                statement = QUOTE([ARR_2(_player,_target)] call FUNC(deployStretcher));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+            };
+
+            class KAT_LowerStretcher {
+                displayName = "Lower Stretcher";
+                condition = QUOTE(_player call FUNC(canAdjustRopes));
+                statement = QUOTE([ARR_2(_player,_target)] call FUNC(lowerStretcher));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+            };
+
+            class KAT_RaiseStretcher {
+                displayName = "Raise Stretcher";
+                condition = QUOTE(_player call FUNC(canAdjustRopes));
+                statement = QUOTE([ARR_2(_player,_target)] call FUNC(raiseStretcher));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
+            };
+
+            class KAT_RetractStretcher {
+                displayName = "Retract Stretcher";
+                condition = QUOTE(_player call FUNC(canAdjustRopes));
+                statement = QUOTE([ARR_2(_player,_target)] call FUNC(retractStretcher));
+                icon = QACEPATHTOF(medical_gui,ui\cross.paa);
             };
         };
     };
