@@ -306,7 +306,7 @@
 #define PAO2_MAX_CHANGE 0.1
 #define HEART_RATE_CO2_MULTIPLIER 60
 
-#define VAR_SURFACEAREA                400
+#define VAR_SURFACE_AREA                400
 #define GET_KAT_SURFACEAREA(unit)      (VAR_SURFACEAREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75)))
 
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
