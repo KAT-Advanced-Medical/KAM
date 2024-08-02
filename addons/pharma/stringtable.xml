@@ -249,14 +249,18 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
             <English>Volatile anesthetic analgesic, used to suppress moderate pain</English>
-            <Japanese>解離性麻酔鎮痛薬、 中程度の痛みを抑えるのに使用される</Japanese>
-            <French>Utilisé pour traiter les douleurs modérées</French>
-            <Korean>중간 정도의 통증 관리에 사용됩니다</Korean>
-            <German>Wird zur Behandlung mäßiger Schmerzen eingesetzt</German>
-            <Portuguese>Usado para gerenciar dor moderada</Portuguese>
-            <Spanish>Para controlar el dolor moderado</Spanish>
-            <Finnish>Käytetään kohtalaisen kivun hoitoon</Finnish>
-            <Russian>Используется для лечения умеренной боли</Russian>
+            <Japanese>揮発性麻酔鎮痛薬、 中程度の痛みを抑えるのに使用される</Japanese>
+            <French>Anesthésique volatil analgésique, utilisé pour supprimer la douleur modérée</French>
+            <Korean>휘발성 마취 진통제, 중간 정도의 통증을 억제하는 데 사용됩니다</Korean>
+            <German>Flüchtiges Anästhetikum-Analgetikum, verwendet zur Unterdrückung mäßiger Schmerzen</German>
+            <Portuguese>Anestésico volátil analgésico, usado para suprimir a dor moderada</Portuguese>
+            <Spanish>Anestésico volátil analgésico, utilizado para suprimir el dolor moderado</Spanish>
+            <Finnish>Haihtuva anestesia-analgeetti, käytetään kohtalaisen kivun tukahduttamiseen</Finnish>
+            <Russian>Летучий анестетик-анальгетик, используемый для подавления умеренной боли</Russian>
+            <Chinesesimp>挥发性麻醉镇痛剂，用于抑制中度疼痛</Chinesesimp>
+            <Italian>Anestetico volatile analgesico, usato per sopprimere il dolore moderato</Italian>
+            <Czech>Volatilní anestetikum analgetikum, používané k potlačení mírné bolesti</Czech>
+            <Polish>Lotny środek znieczulający, stosowany do tłumienia umiarkowanego bólu</Polish>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -1652,18 +1656,18 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Ketamine_DescShort">
             <English>Dissociative anesthetics analgesic, used to suppress severe pain</English>
-            <Chinesesimp>用于抑制疼痛</Chinesesimp>
-            <Italian>Sopprime il dolore</Italian>
-            <Czech>Potlačit bolest</Czech>
-            <French>Combat la douleur</French>
-            <Polish>Zwalcza ból</Polish>
-            <Korean>고통 억제</Korean>
-            <German>Unterdrückt Schmerzen</German>
+            <Chinesesimp>解离性麻醉镇痛剂，用于抑制严重的疼痛</Chinesesimp>
+            <Italian>Anestetico dissociativo analgesico, usato per sopprimere il dolore grave</Italian>
+            <Czech>Dissociativní anestetikum analgetikum, používané k potlačení těžké bolesti</Czech>
+            <French>Anesthésique dissociatif analgésique, utilisé pour supprimer la douleur sévère</French>
+            <Polish>Anestetyk dysocjacyjny, stosowany do tłumienia silnego bólu</Polish>
+            <Korean>해리성 마취제, 심한 통증을 억제하는 데 사용됩니다</Korean>
+            <German>Dissociative Anästhetika Analgetikum, verwendet zur Unterdrückung starker Schmerzen</German>
             <Japanese>解離性麻酔鎮痛薬、 重度の痛みを抑えるのに使用される</Japanese>
-            <Spanish>Suprime el dolor</Spanish>
-            <Portuguese>Suprime a dor</Portuguese>
-            <Finnish>Tukahduttaa kipua</Finnish>
-            <Russian>Обезбаливающее</Russian>
+            <Spanish>Anestésico disociativo analgésico, utilizado para suprimir el dolor severo</Spanish>
+            <Portuguese>Anestésico dissociativo analgésico, usado para suprimir a dor severa</Portuguese>
+            <Finnish>Dissosiatiivinen anestesia-analgeetti, käytetään vakavan kivun tukahduttamiseen</Finnish>
+            <Russian>Диссоциативный анестетик-анальгетик, используемый для подавления сильной боли</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Fentanyl">
             <English>Push Fentanyl</English>
@@ -1697,18 +1701,18 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Fentanyl_DescShort">
             <English>Opioid analgesic, used to suppress severe pain</English>
-            <Chinesesimp>用于抑制疼痛</Chinesesimp>
-            <Italian>Sopprime il dolore</Italian>
-            <Czech>Potlačit bolest</Czech>
-            <French>Combat la douleur</French>
-            <Polish>Zwalcza ból</Polish>
-            <Korean>고통 억제</Korean>
-            <German>Unterdrückt Schmerzen</German>
+            <Chinesesimp>阿片类镇痛剂，用于抑制重度疼痛</Chinesesimp>
+            <Italian>Analgesico oppioide, usato per sopprimere il dolore grave</Italian>
+            <Czech>Opioidní analgetikum, používané k potlačení silné bolesti</Czech>
+            <French>Analgésique opioïde, utilisé pour supprimer la douleur sévère</French>
+            <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia silnego bólu</Polish>
+            <Korean>오피오이드 진통제, 심한 통증을 억제하는 데 사용됩니다</Korean>
+            <German>Opioid-Analgetikum, verwendet zur Unterdrückung starker Schmerzen</German>
             <Japanese>オピオイド鎮痛薬、 重度の痛みを抑えるのに使用される</Japanese>
-            <Spanish>Suprime el dolor</Spanish>
-            <Portuguese>Suprime a dor</Portuguese>
-            <Finnish>Tukahduttaa kipua</Finnish>
-            <Russian>Обезбаливающее</Russian>
+            <Spanish>Analgésico opioide, utilizado para suprimir el dolor severo</Spanish>
+            <Portuguese>Analgésico opioide, usado para suprimir a dor severa</Portuguese>
+            <Finnish>Opioidinen analgeetti, käytetään voimakkaan kivun tukahduttamiseen</Finnish>
+            <Russian>Опиоидный анальгетик, используемый для подавления сильной боли</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
@@ -1742,18 +1746,18 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Nalbuphine_DescShort">
             <English>Opioid analgesic, used to suppress moderate pain</English>
-            <Chinesesimp>用于抑制疼痛</Chinesesimp>
-            <Italian>Sopprime il dolore</Italian>
-            <Czech>Potlačit bolest</Czech>
-            <French>Combat la douleur</French>
-            <Polish>Zwalcza ból</Polish>
-            <Korean>고통 억제</Korean>
-            <German>Unterdrückt Schmerzen</German>
+            <Chinesesimp>阿片类镇痛剂，用于抑制中度疼痛</Chinesesimp>
+            <Italian>Analgesico oppioide, usato per sopprimere il dolore moderato</Italian>
+            <Czech>Opioidní analgetikum, používané k potlačení mírné bolesti</Czech>
+            <French>Analgésique opioïde, utilisé pour supprimer la douleur modérée</French>
+            <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia umiarkowanego bólu</Polish>
+            <Korean>오피오이드 진통제, 중등도의 통증을 억제하는 데 사용됩니다</Korean>
+            <German>Opioid-Analgetikum, verwendet zur Unterdrückung mäßiger Schmerzen</German>
             <Japanese>オピオイド鎮痛薬、 中程度の痛みを抑えるのに使用される</Japanese>
-            <Spanish>Suprime el dolor</Spanish>
-            <Portuguese>Suprime a dor</Portuguese>
-            <Finnish>Tukahduttaa kipua</Finnish>
-            <Russian>Обезбаливающее</Russian>
+            <Spanish>Analgésico opioide, utilizado para suprimir el dolor moderado</Spanish>
+            <Portuguese>Analgésico opioide, usado para suprimir a dor moderada</Portuguese>
+            <Finnish>Opioidinen analgeetti, käytetään lievän kivun tukahduttamiseen</Finnish>
+            <Russian>Опиоидный анальгетик, используемый для подавления умеренной боли</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_reorientationChance">
             <English>Maximum Reorientation Success Chance</English>
@@ -2859,17 +2863,17 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_DescShort">
             <English>Performance enhancing drug, used to suppress moderate pain</English>
-            <German>Leistungssteigerndes Medikament</German>
-            <French>Drogue améliorant les performances</French>
-            <Korean>운동능력 향상 약물</Korean>
+            <German>Leistungssteigerndes Medikament, verwendet zur Linderung moderater Schmerzen</German>
+            <French>Récupérateur de performance, utilisé pour supprimer la douleur modérée</French>
+            <Korean>운동능력 향상 약물, 중간 정도의 통증 억제에 사용됩니다</Korean>
             <Japanese>疲労の防止と回復に! 疲労をポンと取ってくれます。 中程度の鎮痛作用がある。</Japanese>
-            <Italian>Sostanza che aumenta la performance</Italian>
-            <Portuguese>Droga para aumento de performance</Portuguese>
-            <Polish>Środek zwiększający wydolność</Polish>
-            <Spanish>Droga de mejora del desempeño</Spanish>
-            <Czech>Droga zvyšující výkon</Czech>
-            <Finnish>Suorituskykyä parantava lääke</Finnish>
-            <Russian>Препарат, повышающий работоспособность</Russian>
+            <Italian>Farmaco migliorante le prestazioni, usato per sopprimere il dolore moderato</Italian>
+            <Portuguese>Droga para aumento de desempenho, usada para suprimir a dor moderada</Portuguese>
+            <Polish>Środek zwiększający wydolność, stosowany do tłumienia umiarkowanego bólu</Polish>
+            <Spanish>Droga para mejorar el rendimiento, utilizada para suprimir el dolor moderado</Spanish>
+            <Czech>Lék zvyšující výkon, používaný k potlačení mírné bolesti</Czech>
+            <Finnish>Suorituskykyä parantava lääke, käytetään lievän kivun tukahduttamiseen</Finnish>
+            <Russian>Препарат, улучшающий работоспособность, используемый для подавления умеренной боли</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
@@ -3028,6 +3032,17 @@
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_DescShort">
             <English>Stimulates the central nervous system and energizes</English>
             <Japanese>中枢神経を刺激し、活力を与える</Japanese>
+            <Chinesesimp>刺激中枢神经系统并提供能量</Chinesesimp>
+            <Italian>Stimola il sistema nervoso centrale e fornisce energia</Italian>
+            <Czech>Stimuluje centrální nervový systém a dodává energii</Czech>
+            <French>Stimule le système nerveux central et apporte de l'énergie</French>
+            <Polish>Stymuluje centralny układ nerwowy i dodaje energii</Polish>
+            <Korean>중추 신경계를 자극하고 에너지를 부여합니다</Korean>
+            <German>Stimuliert das zentrale Nervensystem und verleiht Energie</German>
+            <Portuguese>Estimula o sistema nervoso central e dá energia</Portuguese>
+            <Spanish>Estimula el sistema nervioso central y energiza</Spanish>
+            <Finnish>Stimuloituu keskushermostoa ja antaa energiaa</Finnish>
+            <Russian>Стимулирует центральную нервную систему и дает энергию</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Caffeine">
             <English>Take Caffeine</English>
