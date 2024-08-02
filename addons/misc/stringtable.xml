@@ -1581,6 +1581,7 @@
             <Russian>Использвать хир.набор (на всё тело)</Russian>
             <Spanish>Utilizar kit quirúrgico (cuerpo completo)</Spanish>
             <French>Utiliser la trousse chirurgicale (Corps complet)</French>
+            <Portuguese>Utilizar kit cirúrgico (corpo inteiro)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody">
             <English>Enable Full Body Stitching</English>

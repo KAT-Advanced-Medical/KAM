@@ -3257,6 +3257,7 @@
         <Key ID="STR_KAT_Pharma_SubCategory_Coagulation">
             <English>Coagulation Settings</English>
             <Japanese>凝固設定</Japanese>
+            <Portuguese>Configurações de coagulação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR">
             <English>Require Heart Rate</English>
