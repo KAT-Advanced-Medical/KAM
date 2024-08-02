@@ -21,9 +21,8 @@ params ["_unit", "_deltaT", "_syncValues"];
 
 private _bloodLoss = [_unit] call ACEFUNC(medical_status,getBloodLoss);
 private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
-private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / 80)) / GET_VASOCONSTRICTION(_unit)));
+private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / DEFAULT_HEART_RATE)) / GET_VASOCONSTRICTION(_unit)));
 private _fluidVolume = GET_BODY_FLUID(_unit);
-private _IVflow = _unit getVariable [QGVAR(IVflow), [0,0,0,0,0,0]];
 private _ECB = _fluidVolume select 0;
 private _ECP = _fluidVolume select 1;
 private _SRBC = _fluidVolume select 2;
@@ -38,7 +37,6 @@ _ECB = _ECB + _SRBCChange;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
-    private _tourniquets = GET_TOURNIQUETS(_unit);
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0]];
     private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16);
     private _hypothermia = EGVAR(hypothermia,hypothermia);
@@ -56,7 +54,10 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     _bloodBags = _bloodBags apply {
         _x params ["_bagVolumeRemaining", "_type", "_bodyPart"];
 
+        private _tourniquets = GET_TOURNIQUETS(_unit);
+
         if ((_tourniquets select _bodyPart isEqualTo 0) && (_IVarray select _bodyPart isNotEqualTo 3)) then {
+            private _IVflow = _unit getVariable [QGVAR(circulation,IVflow), [0,0,0,0,0,0]];
             private _bagChange = (_flowCalculation * (_IVflow select _bodyPart)) min _bagVolumeRemaining; // absolute value of the change in miliLiters
             _bagVolumeRemaining = _bagVolumeRemaining - _bagChange;
 

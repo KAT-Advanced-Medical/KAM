@@ -35,7 +35,7 @@ if (_syncValues) then {
 
 //Get Blood Volume from previous cycle
 private _bloodVolume = ([_unit, _deltaT, _syncValues] call EFUNC(pharma,getBloodVolumeChange));
-_unit setVariable [VAR_BLOOD_VOL, GET_BLOOD_VOLUME_LITERS(_unit), _syncValues];
+_unit setVariable [VAR_BLOOD_VOL, _bloodVolume, _syncValues];
 
 // Enviromental Impact (Altitude, Temperature, Pressure) 
 private _altitude = (getPosASL _unit) select 2;
@@ -149,7 +149,7 @@ _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
         [QACEGVAR(medical,Bleedout), _unit] call CBA_fnc_localEvent;
     };
     case (_spo2 < EGVAR(breathing,SpO2_dieValue) && EGVAR(breathing,SpO2_dieActive)): {
-        TRACE_3("O2 Fatal",_unit,OXYGEN_PERCENTAGE_FATAL,_spo2);
+        TRACE_3("O2 Fatal",_unit,EGVAR(breathing,SpO2_dieValue),_spo2);
         [QACEGVAR(medical,Bleedout), _unit] call CBA_fnc_localEvent;
     };
     case (IN_CRDC_ARRST(_unit)): {}; // if in cardiac arrest just break now to avoid throwing unneeded events
