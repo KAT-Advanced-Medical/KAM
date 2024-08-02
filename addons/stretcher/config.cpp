@@ -4,8 +4,11 @@ class CfgPatches {
     class ADDON    {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        units[] = {};
-        weapons[] = {};
+        units[] = {
+            "kat_stretcher",
+            "kat_stretcherBag"
+        };
+        weapons[] = { "Attachable_Helistretcher" };
         magazines[] = { };
         requiredAddons[] = {
             "kat_main",
@@ -25,18 +28,13 @@ class CfgPatches {
             "A3_Static_F"
         };
         author = "Katalam";
-        authors[] = {"Katalam"};
+        authors[] = {"Katalam", "MiszczuZPolski"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };
 };
 
-#include "CfgFunctions.hpp"
-#include "CfgGlasses.hpp"
 #include "CfgEventHandlers.hpp"
+#include "CfgMoves.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
-#include "ACE_Medical_Treatment_Actions.hpp"
-#include "CfgSounds.hpp"
-#include "CfgMagazines.hpp"
-#include "CfgBloodGroupsInsignia.hpp"

@@ -1,0 +1,12 @@
+PREP(attachHeliStretcher);
+PREP(attachStretcher);
+PREP(canAdjustRopes);
+PREP(canAttachHeliStretcher);
+PREP(canDeployStretcher);
+PREP(canDetachHeliStretcher);
+PREP(deployStretcher);
+PREP(detachHeliStretcher);
+PREP(lowerStretcher);
+PREP(raiseStretcher);
+PREP(retractStretcher);
+PREP(stretcher);

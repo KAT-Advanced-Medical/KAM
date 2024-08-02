@@ -23,3 +23,9 @@ class B_Heli_Transport_03_F: Heli_Transport_03_base_F {
     stretcherPos[] = {0,-0.4,-2.08};
     stretcherVector[] = {{0, 0, 0}, {0, 0, 0}};
 };
+
+class Car_F;
+class Quadbike_01_base_F: Car_F {
+    stretcherPos[] = {0,0.8,-0.56};
+    stretcherVector[] = {{1, 0, 0}, {0, 0, 1}};
+};

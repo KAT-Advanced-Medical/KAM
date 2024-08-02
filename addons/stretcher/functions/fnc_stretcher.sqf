@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_misc_fnc_stretcher;
+ * [cursorTarget] call kat_stretcher_fnc_stretcher;
  *
  * Public: No
  */

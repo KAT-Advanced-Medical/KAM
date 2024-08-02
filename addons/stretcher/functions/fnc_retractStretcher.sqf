@@ -1,16 +1,17 @@
 #include "..\script_component.hpp"
-
 /*
- * Author: Battlekeeper, modified by YetheSamartaka and Tomcat
- * Handles the behaviour of Helistretcher - attaching it and using it.
+ * Author: MiszczuZPolski
+ * Retracts helistretcher back to heli, and moves crew back to heli
  *
+ * Arguments:
+ * 0: Player <OBJECT>
+ * 1: Helicopter <OBJECT>
  *
  * Example:
- * [_unit,_item] call kat_misc_fnc_heliStretcherAttach;
+ * [player, cursorObject] call kat_stretcher_fnc_retractStretcher;
  *
  * Public: No
  */
-
 params ["_player","_target"];
 
 private _stretcher = _target getVariable [QGVAR(stretcher), objNull];
