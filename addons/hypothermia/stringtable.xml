@@ -87,6 +87,9 @@
         <Key ID="STR_KAT_Hypothermia_Check_Temperature_Progress">
             <English>Checking Temperature</English>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_Check_Hand_Warmers">
+            <English>Check Hand Warmers</English>
+        </Key>
         <Key ID="STR_KAT_Hypothermia_perform">
             <English>Performing</English>
         </Key>
