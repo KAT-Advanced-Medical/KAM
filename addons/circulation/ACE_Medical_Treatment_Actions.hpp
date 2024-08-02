@@ -50,25 +50,23 @@ class ACE_Medical_Treatment_Actions {
     class KAT_DrawBlood250: CheckPulse {
         displayName = CSTRING(DrawBlood250_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
-        treatmentTime = QGVAR(DrawBlood_Action_Progress);
+        treatmentTime = QGVAR(blood_drawTime_500ml);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
         category = "advanced";
         medicRequired = 0;
         consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(drawBlood));
-        condition = "true";
+        condition = QUOTE([ARR_3(_medic,_patient,250)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || EFUNC(pharma,removeIV)));
         items[] = {"KAT_Empty_bloodIV_250"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
-    class DrawArterial: CheckPulse {
+    class DrawArterial: KAT_DrawBlood250 {
         displayName = CSTRING(DrawArterial_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
         treatmentTime = 10;
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        allowSelfTreatment = 0;
         category = "advanced";
         medicRequired = 0;
         consumeItem = 1;
