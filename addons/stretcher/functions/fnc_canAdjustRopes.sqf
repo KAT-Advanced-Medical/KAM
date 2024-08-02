@@ -16,4 +16,4 @@ params ["_player"];
 
 objectParent _player getVariable [QGVAR(isStretcherAttached), false] 
 && (objectParent _player getVariable [QGVAR(stretcherDeployed), false]) 
-&& (ropeUnwound (ropes objectParent _player  select 0))
+&& (ropeUnwound (objectParent _player getVariable [QGVAR(ropes), []] param [0, objNull]))
