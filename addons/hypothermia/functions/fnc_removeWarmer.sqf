@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski
- * Local call for applying fluid warmers
+ * Check if there is a fluid warmer to remove
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -9,10 +9,10 @@
  * 2: Body Part <STRING>
  *
  * Return Value:
- * None
+ * Warmer Present <BOOL>
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_hypothermia_fnc_applyFluidWarmerLocal;
+ * [player, cursorObject, "LeftLeg"] call kat_hypothermia_fnc_removeWarmer;
  *
  * Public: No
  */

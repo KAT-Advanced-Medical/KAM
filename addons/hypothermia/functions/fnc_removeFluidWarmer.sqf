@@ -15,7 +15,7 @@
  * None
  *
  * Example:
- * [player, cursorObject, "RightArm", "Carbonate", objNull, "kat_Carbonate"] call kat_hypothermia_fnc_removeFluidWarmer;
+ * [player, cursorObject, "RightArm", "Fluid Warmer", objNull, "kat_FluidWarmer"] call kat_hypothermia_fnc_removeFluidWarmer;
  *
  * Public: No
  */

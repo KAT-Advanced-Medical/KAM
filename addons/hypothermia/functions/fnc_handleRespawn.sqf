@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Mazinski
- * Local callback for fully healing a patient.
+ * Handles the player respawn for Hypothermia.
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_hypothermia_fnc_fullHealLocal
+ * [player] call kat_hypothermia_fnc_handleRespawn
  *
  * Public: No
  */
