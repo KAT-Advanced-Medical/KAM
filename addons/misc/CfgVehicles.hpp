@@ -198,19 +198,6 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_Actions {
             class ACE_MainActions {
-                class KAT_CheckHandWarmers {
-                    displayName = CSTRING(CheckHandWarmers);
-                    condition = "true";
-                    statement = QUOTE([ARR_2(_player,_target)] call FUNC(checkHandWarmers));
-                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
-                };
-                class KAT_ApplyBloodTest {
-                    displayName = CSTRING(ApplyArterialTest);
-                    condition = "true";
-                    statement = "true";
-                    insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialApplyActions));
-                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
-                };
                 class KAT_UnloadAndCarryPatient {
                     displayName = CSTRING(CarryPatient);
                     condition = QUOTE(_target getVariable [ARR_2('ACE_isUnconscious',false)] && {!(isNull (objectParent _target))} && {isNull (objectParent _player)});
@@ -1382,13 +1369,6 @@ class CfgVehicles {
                     condition = QUOTE(alive _target);
                     statement = "";
                     insertChildren = QUOTE(call FUNC(addVehicleUnloadCarryPatientActions));
-                    icon = QACEPATHTOF(medical_gui,ui\cross.paa);
-                };
-                class KAT_ArterialTest {
-                    displayName = CSTRING(ArterialTest); 
-                    condition = QUOTE(_target call ACEFUNC(medical_treatment,isMedicalVehicle));
-                    statement = "";
-                    insertChildren = QUOTE([ARR_2(_target,_player)] call FUNC(addArterialTestActions));
                     icon = QACEPATHTOF(medical_gui,ui\cross.paa);
                 };
             };

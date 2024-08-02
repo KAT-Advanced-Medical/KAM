@@ -39,6 +39,9 @@
         <Key ID="STR_KAT_Hypothermia_WARM_CLOTHING_DESC">
             <English>List of clothing marked that reduces heat loss</English>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_CheckHandWarmers">
+            <English>Check Hand Warmers</English>
+        </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_displayName">
             <English>Hand Warmer</English>
         </Key>

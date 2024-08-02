@@ -1,11 +1,8 @@
 PREP(actionLowerBy10);
 PREP(addActionRaise);
 PREP(addIVbag);
-PREP(addArterialTestActions);
-PREP(addArterialApplyActions);
 PREP(addVehicleCarryLoadActions);
 PREP(addVehicleUnloadCarryPatientActions);
-PREP(attachBloodGas);
 PREP(attachStretcher);
 PREP(BubbleWrap);
 PREP(canCheckDogtag);
