@@ -3220,6 +3220,7 @@
             <Spanish>EACA Elimina el Trauma</Spanish>
             <Japanese>EACAによる外傷の除去</Japanese>
             <French>L'EACA soigne les traumatismes</French>
+            <Portuguese>EACA Remove Traumas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma_Desc">
             <English>Allows Trauma to be cleared by EACA in addition to stitching</English>
@@ -3227,6 +3228,7 @@
             <Spanish>Permite eliminar el Trauma mediante el EACA además de cosiendo</Spanish>
             <Japanese>EACAによる効果として縫合に加え、外傷の除去を可能にします。</Japanese>
             <French>Autorise le soin complet des traumatismes par l'EACA en plus de la suture</French>
+            <Portuguese>Permite que o EACA remova traumas além de suturar</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA">
             <English>Allow Stacking</English>
@@ -3395,10 +3397,12 @@
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
             <English>Blood clotting temporarily closed a wound on %1</English>
             <Japanese>血液凝固が一時的に %1 の創傷を塞いだ</Japanese>
+            <Portuguese>Coagulação estancou temporariamente um ferimento em %1</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged_TXA">
             <English>Blood clotting permanently closed a wound on %1</English>
             <Japanese>血液凝固が完全に %1 の創傷を塞いだ</Japanese>
+            <Portuguese>Coagulação estancou permanentemente um ferimento em %1</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_head">
             <English>Head</English>
@@ -3499,82 +3503,102 @@
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display">
             <English>Coag-Sense</English>
             <Japanese>Coag-Sense</Japanese>
+            <Portuguese>Medidor de Coagulação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
             <English>The Coag-Sense is a PT/INR monitoring system that can measure the efficiency of your blood clotting</English>
             <Japanese>Coag-Senseは血液凝固の効率を測定できる PT/INR モニタリングシステムです。</Japanese>
+            <Portuguese>O Medidor de Coagulação é um sistema de monitoramento PT/INR que pode mensurar a eficiência da sua coagulação sanguínea</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
             <English>Coag-Sense concludes: %1</English>
             <Japanese>Coag-Senseの結果: %1</Japanese>
+            <Portuguese>Medidor de Coagulação conlui: %1</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
             <English>Measure PT/INR</English>
             <Japanese>PT/INRを測定する</Japanese>
+            <Portuguese>Medir PT/INR</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
             <English>Taking Blood Sample, </English>
             <Japanese>血液サンプルを取っています、</Japanese>
+            <Portuguese>Coletando amostra sanguínea, </Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_lowINR">
             <English>slightly below normal INR</English>
             <Japanese>正常INRより少し低い</Japanese>
+            <Portuguese>INR ligeiramente abaixo do normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
             <English>sligtly above normal INR</English>
             <Japanese>正常INRより少し高い</Japanese>
+            <Portuguese>INR ligeiramente acima do normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_lowINR">
             <English>Very Low INR</English>
             <Japanese>正常INRよりかなり低い</Japanese>
+            <Portuguese>INR bem abaixo do normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_aboveINR">
             <English>Very high INR</English>
             <Japanese>正常INRよりかなり高い</Japanese>
+            <Portuguese>INR bem acima do normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_normalINR">
             <English>Normal INR</English>
             <Japanese>正常INR</Japanese>
+            <Portuguese>INR normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coag_Sense">
             <English>Coag-Sense Settings</English>
             <Japanese>Coag-Sense設定</Japanese>
+            <Portuguese>Configuração do Medidor de Coagulação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
             <English>Medical level required for Coag-Sense</English>
             <Japanese>Coag-Senseの許可</Japanese>
+            <Portuguese>Nível médico necessário para uso do Medidor de Coagulação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location">
             <English>Locations Coag-Sense</English>
             <Japanese>Coag-Senseが使用できる場所</Japanese>
+            <Portuguese>Localizações de uso do Medidor de Coagulação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
             <English>Treatment time for measuring PT/INR</English>
             <Japanese>PT/INR測定の所要時間</Japanese>
+            <Portuguese>Tempo para mensurar PT/INR</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA">
             <English>Allow Stacking</English>
             <Japanese>重複の許可</Japanese>
+            <Portuguese>Permitir somatória de efeito</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA_DESC">
             <English>If enabled EACA will be stackable and doubble it's efficiency</English>
             <Japanese>有効にすると、EACAの重複が可能になり、効率が2倍になる。</Japanese>
+            <Portuguese>Se habilitado, o efeito do EACA será somável e sua eficiência será dobrada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA">
             <English>Keep Stiching Until Out Of System</English>
             <Japanese>体内に効果が無くなるまで"縫合"を適用する</Japanese>
+            <Portuguese>Sutura contínua enquanto presente no sistema</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA_DESC">
             <English>If enabled EACA will keep stichinng until it's out of your system\nIf disabled EACA will stop working after stiching the last bandaged wound it can find</English>
             <Japanese>有効にすると、EACAが体内から無くなるまで"縫合"をします。 \n無効にすると、EACAが判定済の最後の包帯創傷に"縫合"を適用した後に、その作用を終了します。</Japanese>
+            <Portuguese>Se habilitado, o EACA continuará suturando até que esteja fora do seu sistema\nSe desabilitado, o funcionamento do EACA será interrompido assim que suturar o último ferimento</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA">
             <English>EACA Cycle Time</English>
             <Japanese>EACAサイクル時間</Japanese>
+            <Portuguese>Tempo de Ciclo do EACA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA_DESC">
             <English>The time it takes for EACA to close a stich a wound</English>
             <Japanese>EACAが創傷を縫合するのに掛かる時間</Japanese>
+            <Portuguese>O intervalo entre suturas do EACA</Portuguese>
         </Key>
     </Package>
 </Project>
