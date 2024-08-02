@@ -30,7 +30,7 @@ private _ivFlow = _target getVariable [QEGVAR(pharma,IVflow), [0,0,0,0,0,0]];
     private _activeFlow = _ivFlow select _bodyPartN;
 
     switch (true) do {
-        case(_activeIV == 0): {
+        case (_activeIV == 0): {
             ctrlShow [_coverIDC, true];
             ctrlShow [_titleIDC, false];
             ctrlShow [_typeIDC, false];
