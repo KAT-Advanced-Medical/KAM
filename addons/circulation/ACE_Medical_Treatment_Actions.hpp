@@ -50,7 +50,7 @@ class ACE_Medical_Treatment_Actions {
     class KAT_DrawBlood250: CheckPulse {
         displayName = CSTRING(DrawBlood250_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
-        treatmentTime = QGVAR(blood_drawTime_500ml);
+        treatmentTime = QGVAR(blood_drawTime_250ml);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         category = "advanced";
         medicRequired = 0;
