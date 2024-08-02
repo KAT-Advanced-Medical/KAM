@@ -1244,7 +1244,7 @@ class CfgVehicles {
         };
     };
 
-    class Car_F;
+    class Car_F: Car {};
     class Quadbike_01_base_F: Car_F {
         class ACE_Actions: ACE_Actions {
             class ACE_MainActions: ACE_MainActions {
