@@ -24,9 +24,9 @@ _target setVariable [QGVAR(stretcher), objNull, true];
 
 private _ropes = _target getVariable [QGVAR(ropes), []];
 {
-	if (!isNull _x) then {
-		deleteVehicle _x;
-	};
+    if (!isNull _x) then {
+        deleteVehicle _x;
+    };
 } forEach _ropes;
 _target setVariable [QGVAR(ropes), [], true];
 
