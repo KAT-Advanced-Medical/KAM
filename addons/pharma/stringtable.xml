@@ -163,8 +163,8 @@
             <Finnish>Aika luoda IO:t</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_DescShort">
-            <English>Combat Wound Medication Pill Pack. Used to suppresses pain</English>
-            <Japanese>戦闘傷病治療薬パック。 痛みを抑えるために使用される</Japanese>
+            <English>Combat Wound Medication Pill Pack&lt;br/&gt;Used to suppress minor pain and relieve blood incompatibility symptoms</English>
+            <Japanese>戦闘傷病治療薬パック&lt;br/&gt;軽度の痛みを抑え、血液不適合による症状を緩和するために使用される</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_Box_Display">
             <English>Combat Pill Pack</English>
@@ -248,8 +248,8 @@
             <Russian>Использовать ингалятор Пентрокс</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
-            <English>Used to manage moderate pain</English>
-            <Japanese>中度の痛みの対処に使用される</Japanese>
+            <English>Volatile anesthetic analgesic, used to suppress moderate pain</English>
+            <Japanese>解離性麻酔鎮痛薬、 中程度の痛みを抑えるのに使用される</Japanese>
             <French>Utilisé pour traiter les douleurs modérées</French>
             <Korean>중간 정도의 통증 관리에 사용됩니다</Korean>
             <German>Wird zur Behandlung mäßiger Schmerzen eingesetzt</German>
@@ -1651,7 +1651,7 @@
             <Russian>Кетамин</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Ketamine_DescShort">
-            <English>Suppress pain</English>
+            <English>Dissociative anesthetics analgesic, used to suppress severe pain</English>
             <Chinesesimp>用于抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
             <Czech>Potlačit bolest</Czech>
@@ -1659,7 +1659,7 @@
             <Polish>Zwalcza ból</Polish>
             <Korean>고통 억제</Korean>
             <German>Unterdrückt Schmerzen</German>
-            <Japanese>痛みを抑える</Japanese>
+            <Japanese>解離性麻酔鎮痛薬、 重度の痛みを抑えるのに使用される</Japanese>
             <Spanish>Suprime el dolor</Spanish>
             <Portuguese>Suprime a dor</Portuguese>
             <Finnish>Tukahduttaa kipua</Finnish>
@@ -1696,7 +1696,7 @@
             <Russian>Фентанил</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Fentanyl_DescShort">
-            <English>Suppress pain</English>
+            <English>Opioid analgesic, used to suppress severe pain</English>
             <Chinesesimp>用于抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
             <Czech>Potlačit bolest</Czech>
@@ -1704,7 +1704,7 @@
             <Polish>Zwalcza ból</Polish>
             <Korean>고통 억제</Korean>
             <German>Unterdrückt Schmerzen</German>
-            <Japanese>痛みを抑える</Japanese>
+            <Japanese>オピオイド鎮痛薬、 重度の痛みを抑えるのに使用される</Japanese>
             <Spanish>Suprime el dolor</Spanish>
             <Portuguese>Suprime a dor</Portuguese>
             <Finnish>Tukahduttaa kipua</Finnish>
@@ -1741,7 +1741,7 @@
             <Russian>Налбуфин</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Nalbuphine_DescShort">
-            <English>Suppress pain</English>
+            <English>Opioid analgesic, used to suppress moderate pain</English>
             <Chinesesimp>用于抑制疼痛</Chinesesimp>
             <Italian>Sopprime il dolore</Italian>
             <Czech>Potlačit bolest</Czech>
@@ -1749,7 +1749,7 @@
             <Polish>Zwalcza ból</Polish>
             <Korean>고통 억제</Korean>
             <German>Unterdrückt Schmerzen</German>
-            <Japanese>痛みを抑える</Japanese>
+            <Japanese>オピオイド鎮痛薬、 中程度の痛みを抑えるのに使用される</Japanese>
             <Spanish>Suprime el dolor</Spanish>
             <Portuguese>Suprime a dor</Portuguese>
             <Finnish>Tukahduttaa kipua</Finnish>
@@ -2858,11 +2858,11 @@
             <Russian>Капсула Первитина</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_DescShort">
-            <English>Performance enhancing drug</English>
+            <English>Performance enhancing drug, used to suppress moderate pain</English>
             <German>Leistungssteigerndes Medikament</German>
             <French>Drogue améliorant les performances</French>
             <Korean>운동능력 향상 약물</Korean>
-            <Japanese>疲労の防止と回復に! 疲労をポンと取ってくれます。</Japanese>
+            <Japanese>疲労の防止と回復に! 疲労をポンと取ってくれます。 中程度の鎮痛作用がある。</Japanese>
             <Italian>Sostanza che aumenta la performance</Italian>
             <Portuguese>Droga para aumento de performance</Portuguese>
             <Polish>Środek zwiększający wydolność</Polish>
@@ -3026,18 +3026,8 @@
             <Russian>Бутылка с Кофеином</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_DescShort">
-            <English>Keeps you awake</English>
-            <German>Hält dich wach</German>
-            <French>Vous tient éveillé</French>
-            <Japanese>眠気防止に役立つ</Japanese>
-            <Korean>계속 깨어 있게 해줍니다.</Korean>
-            <Italian>Ti tiene sveglio</Italian>
-            <Portuguese>Mantém você desperto</Portuguese>
-            <Polish>Pozwala ci nie czuć zmęczenia</Polish>
-            <Spanish>Te mantiene despierto</Spanish>
-            <Czech>Udrží tě vzhůru</Czech>
-            <Finnish>Pitää sinut hereillä</Finnish>
-            <Russian>Не дает тебе уснуть</Russian>
+            <English>Stimulates the central nervous system and energizes</English>
+            <Japanese>中枢神経を刺激し、活力を与える</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Caffeine">
             <English>Take Caffeine</English>
