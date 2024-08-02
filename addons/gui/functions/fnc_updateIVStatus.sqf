@@ -30,7 +30,7 @@ private _ivFlow = _target getVariable [QEGVAR(pharma,IVflow), [0,0,0,0,0,0]];
     private _activeFlow = _ivFlow select _bodyPartN;
 
     switch (true) do {
-        case(_activeIV == 0): {
+        case (_activeIV == 0): {
             ctrlShow [_coverIDC, true];
             ctrlShow [_titleIDC, false];
             ctrlShow [_typeIDC, false];
@@ -38,7 +38,7 @@ private _ivFlow = _target getVariable [QEGVAR(pharma,IVflow), [0,0,0,0,0,0]];
             _buttonIDCArray apply {ctrlShow [_x, false]};
             _buttonIDCArray apply {ctrlEnable [_x, false]};
         };
-        case(_activeIV == 1): {
+        case (_activeIV == 1): {
             ctrlShow [_coverIDC, false];
             ctrlShow [_titleIDC, true];
             ctrlShow [_typeIDC, true];
@@ -48,7 +48,7 @@ private _ivFlow = _target getVariable [QEGVAR(pharma,IVflow), [0,0,0,0,0,0]];
             ctrlSetText [_typeIDC, "IO"];
             ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
         };
-        case(_activeIV > 1): {
+        case (_activeIV > 1): {
             ctrlShow [_coverIDC, false];
             ctrlShow [_titleIDC, true];
             ctrlShow [_typeIDC, true];
