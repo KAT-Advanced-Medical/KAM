@@ -119,12 +119,12 @@ private _fnc_onConfirm = {
         _unit setVariable [_x, _targetState, true];
     } forEach [QEGVAR(airway,obstruction), QEGVAR(airway,occluded), QEGVAR(breathing,hemopneumothorax), QEGVAR(breathing,tensionpneumothorax)];
 
-    //private _curSpO2Val = _unit getVariable [QEGVAR(breathing,airwayStatus), 50];
+    //private _curSpO2Val = _unit getVariable [QEGVAR(breathing,airwayStatus), 50]; Still working on how to make this work
 
     private _pneumothorax = round(sliderPosition (_display displayCtrl 16105));
 
     _unit setVariable [QEGVAR(breathing,pneumothorax), _pneumothorax, true];
-    //_unit setVariable [QEGVAR(breathing,airwayStatus), round(sliderPosition (_display displayCtrl 16106)), true]; LOOK AT THIS
+    //_unit setVariable [QEGVAR(breathing,airwayStatus), round(sliderPosition (_display displayCtrl 16106)), true]; Still working on how to make this work
 
     if (_pneumothorax isEqualTo 0 && !(_valueArr select 2) && !(_valueArr select 3)) then {
         [_unit, 0, 0, "ptx_tension", true] call EFUNC(circulation,updateBloodPressureChange);

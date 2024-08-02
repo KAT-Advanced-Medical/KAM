@@ -283,14 +283,13 @@
 
 #define DEFAULT_ANEROBIC_EXCHANGE 0.8
 #define DEFAULT_TEMPERATURE 37
-#define DEFAULT_STROKE_VOLUME 0.001583333323
-#define DEFAULT_FIO2 0.21
 
 #define DEFAULT_ECB 2700
 #define DEFAULT_ECP 3300
 #define DEFAULT_SRBC 500
 #define DEFAULT_ISP 10000
 #define DEFAULT_BODY_FLUID [2700, 3300, 500, 10000, 6000]
+
 #define LITERS_TO_ML 1000
 #define ML_TO_LITERS 1000
 
@@ -300,14 +299,8 @@
 #define OXYGEN_PERCENTAGE_FATAL 75
 
 // Breathing
-#define MAXIMUM_RR 40
-#define MINIMUM_VENTILATION 2000
-#define PACO2_MAX_CHANGE 0.05
-#define PAO2_MAX_CHANGE 0.1
-#define HEART_RATE_CO2_MULTIPLIER 60
-
-#define VAR_SURFACEAREA                400
-#define GET_KAT_SURFACEAREA(unit)      (VAR_SURFACEAREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75)))
+#define VAR_SURFACE_AREA                400
+#define GET_KAT_SURFACE_AREA(unit)      (VAR_SURFACE_AREA - (((unit getVariable [QEGVAR(breathing,pneumothorax), 0]) * 75)))
 
 #define VAR_BLOOD_GAS                  QEGVAR(circulation,bloodGas)
 #define VAR_BREATHING_RATE             QEGVAR(breathing,breathRate)

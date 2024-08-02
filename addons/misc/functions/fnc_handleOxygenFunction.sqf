@@ -15,15 +15,22 @@
  * 8: Sync value? <BOOL> 
  *
  * ReturnValue:
- * Current Temperature <NUMBER>
+ * Current O2 Saturation <NUMBER>
  *
  * Example:
- * [player, 80, 0.8, [40,90,0.96,24,7.4], 37, 760, 0, 1, false] call kat_misc_fnc_handleOxygenFunction;
+ * [player, 80, 0.8, [40,90,0.96,24,7.4], 37, 760, 0, 1, true] call kat_misc_fnc_handleOxygenFunction;
  *
  * Public: No
  */
 
 params ["_unit", "_actualHeartRate", "_anerobicPressure", "_bloodGas", "_temperature", "_baroPressure", "_opioidDepression", "_deltaT", "_syncValues"];
+
+#define MAXIMUM_RR 40
+#define HEART_RATE_CO2_MULTIPLIER 60
+#define MINIMUM_VENTILATION 2000
+#define PACO2_MAX_CHANGE 0.05
+#define PAO2_MAX_CHANGE 0.1
+#define DEFAULT_FIO2 0.21
 
 private _respiratoryRate = 0;
 private _demandVentilation = 0;
@@ -38,7 +45,7 @@ if (IN_CRDC_ARRST(_unit)) then {
 } else {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
     _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
-    _tidalVolume = GET_KAT_SURFACEAREA(_unit);
+    _tidalVolume = GET_KAT_SURFACE_AREA(_unit);
 
     // Respiratory Rate is supressed by Opioids 
     _respiratoryRate = [((_demandVentilation / _tidalVolume) - (_opioidDepression * 10)) min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
@@ -64,14 +71,15 @@ private _fio2 = switch (true) do {
     default { DEFAULT_FIO2 };
 };
 
-// Alveolar Gas equation. PAO2 is largely impacted by Barometric Pressure and FiO2
+// Alveolar Gas equation. PALVO2 is largely impacted by Barometric Pressure and FiO2
 private _pALVo2 = ((_fio2 * (_baroPressure - 47)) - (_paco2 / _anerobicPressure)) max 1;
 
-// PaO2 cannot be higher than PAO2 for simplicity. PaO2 moves in controlled steps to prevent hard tanks when Ventilation Demand spikes
 private _previousCyclePao2 = (_bloodGas select 1);
 
-private _pao2 = ((90 - (((GET_BODY_FLUID(_unit) select 0) max 100) / 2700)) - ((_demandVentilation - _actualVentilation) / 120)) min _pALVo2;
+// PaO2 cannot be higher than PALVO2 and comes from ventilation shortage multipled by RBC volume
+private _pao2 = (DEFAULT_PAO2 - ((DEFAULT_ECB / ((GET_BODY_FLUID(_unit) select 0) max 100)) * ((_demandVentilation - _actualVentilation) / 120))) min _pALVo2;
 
+// PaO2 moves in controlled steps to prevent hard movements when Ventilation Demand spikes
 _pao2 = if (_previousCyclePao2 != _pao2) then { ([ _previousCyclePao2 - (PAO2_MAX_CHANGE * _deltaT) , _previousCyclePao2 + (PAO2_MAX_CHANGE * _deltaT)] select ((_previousCyclePao2 - _pao2) < 0)) } else { _pao2 };
 
 // Oxy-Hemo Dissociation Curve, driven by PaO2 with shaping done by pH 
