@@ -46,7 +46,7 @@ if (GVAR(showCyanosis) && _selectionN in [0,2,3]) then {
 
 if (_target getVariable [QGVAR(pulseoximeter), false] && _selectionN in [2,3]) then {
     if((_target getVariable [QGVAR(PulseOximeter_Attached), [0,0]] select (_selectionN - 2)) > 0) then {
-        _entries pushback [LLSTRING(Pulseoximeter_Desc_Short), [0.3, 0.8, 0.8, 1]];
+        _entries pushback [LLSTRING(Pulseoximeter), [0.3, 0.8, 0.8, 1]];
     };
 };
 
