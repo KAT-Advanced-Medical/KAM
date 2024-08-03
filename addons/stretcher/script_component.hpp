@@ -14,4 +14,11 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_MISC
 #endif
 
+#ifdef FAST_PROGRESSBARS
+    #define TIME_PROGRESSBAR(X) ((X) * 0.075)
+#else
+    #define TIME_PROGRESSBAR(X) ((X) * ACEGVAR(csw,progressBarTimeCoefficent))
+#endif
+
+
 #include "\x\kat\addons\main\script_macros.hpp"

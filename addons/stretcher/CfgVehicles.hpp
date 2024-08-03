@@ -3,10 +3,10 @@ class CfgVehicles {
     #include "vehicle_stretcher.hpp"
 
     class weapon_bag_base;
-    class kat_stretcherBag: weapon_bag_base {
+    class GVAR(stretcherBackpack): weapon_bag_base {
         class assembleInfo {
             displayName = CSTRING(Stretcher_Display);
-            assembleTo = "kat_stretcher";
+            assembleTo = QGVAR(stretcherVehicle);
             base = "";
             primary = 1;
             dissasembleTo[] = {};
@@ -20,7 +20,7 @@ class CfgVehicles {
     };
 
     class Tank_F;
-    class kat_stretcher: Tank_F {
+    class GVAR(stretcherVehicle): Tank_F {
         explosionEffect = "";
         fuelExplosionPower = 0;
         editorForceEmpty = 1;
@@ -41,8 +41,8 @@ class CfgVehicles {
         explosionShielding = 0;
         irTarget = 0;
         allowTabLock = 0;
-        memoryPointsGetInCargo = "pos cargo";
-        memoryPointsGetInCargoDir = "pos cargo dir";
+        // memoryPointsGetInCargo = "pos cargo";
+        // memoryPointsGetInCargoDir = "pos cargo dir";
         cargoAction[] = {"kat_stretcher"};
         tf_isolatedAmount = 0;
         numberPhysicalWheels = 0;
@@ -72,14 +72,14 @@ class CfgVehicles {
         class TransportItems;
         class Turrets {};
         transportSoldier = 1;
-        ace_cargo_canLoad = 0;
-        ace_Cargo_hasCargo = 0;
-        ace_dragging_canDrag = 1;
-        ace_dragging_canCarry = 1;
-        ace_dragging_dragPosition[] = {0,1.7,0};
-        ace_dragging_carryPosition[] = {0, 1.7, 0};
-        ace_dragging_dragDirection = 0;
-        ace_Carry_carryDirection = 0;
+        ACEGVAR(cargo,canLoad) = 1;
+        ACEGVAR(cargo,hasCargo) = 0;
+        ACEGVAR(dragging,canDrag) = 1;
+        ACEGVAR(dragging,canCarry) = 1;
+        ACEGVAR(dragging,dragPosition[]) = {0,1.7,0};
+        ACEGVAR(dragging,carryPosition[]) = {0, 1.7, 0};
+        ACEGVAR(dragging,dragDirection) = 0;
+        ACEGVAR(dragging,carryDirection) = 0;
         ace_cookoff_probability = 0;
         slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1", "SlingLoadCargo2", "SlingLoadCargo3", "SlingLoadCargo4"};
         destrType = "destructDefault";
@@ -99,21 +99,47 @@ class CfgVehicles {
                 dimensions[]                = {"VTV_Cargo_Base", "VTV_Cargo_Corner"};
             };
         };
+
         class EventHandlers {
-            init = QUOTE(_this call FUNC(stretcher));
+            init = QUOTE(_this call FUNC(initStretcher));
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
+
+        class ACE_Actions {
+            class ACE_MainActions {
+                distance = 5;
+                class KAT_PackIntoBackpack {
+                    displayName = "Pack stretcher into backpack";
+                    condition = QUOTE([ARR_2(_player,_target)] call FUNC(canPackIntoBackpack));
+                    statement = QUOTE([ARR_2(_player,_target)] call FUNC(packIntoBackpack));
+                    icon = QPATHTOF(ui\stretcher.paa);
+                };
+                class KAT_PackIntoBag {
+                    displayName = "Pack stretcher into bag";
+                    condition = QUOTE(call FUNC(canPackIntoBag));
+                    statement = QUOTE(call FUNC(packIntoBag));
+                    icon = QPATHTOF(ui\stretcher.paa);
+                };
+                class KAT_AttachToVehicle {
+                    displayName = "Attach stretcher to vehicle";
+                    condition = QUOTE(true);
+                    insertChildren = QUOTE(_target call FUNC(attachStretcher));
+                    icon = QPATHTOF(ui\stretcher.paa);
+                };
+            };
+        };
     };
+
     class Land_Stretcher_01_base_F;
     class Land_Stretcher_01_olive_F: Land_Stretcher_01_base_F {
-        ace_cargo_canLoad = 1;
-        ace_Cargo_hasCargo = 0;
-        ace_dragging_canDrag = 1;
-        ace_dragging_canCarry = 1;
-        ace_dragging_dragPosition[] = {0,1.7,0};
-        ace_dragging_carryPosition[] = {0, 1.7, 0};
-        ace_dragging_dragDirection = 0;
-        ace_Carry_carryDirection = 0;
+        ACEGVAR(cargo,canLoad) = 1;
+        ACEGVAR(cargo,hasCargo) = 0;
+        ACEGVAR(dragging,canDrag) = 1;
+        ACEGVAR(dragging,canCarry) = 1;
+        ACEGVAR(dragging,dragPosition[]) = {0,1.7,0};
+        ACEGVAR(dragging,carryPosition[]) = {0, 1.7, 0};
+        ACEGVAR(dragging,dragDirection) = 0;
+        ACEGVAR(dragging,carryDirection) = 0;
         ace_cookoff_probability = 0;
         class VehicleTransport {
             class Cargo {
@@ -121,6 +147,18 @@ class CfgVehicles {
                 parachuteHeightLimit        = 5;
                 canBeTransported            = 1;
                 dimensions[]                = {"VTV_Cargo_Base", "VTV_Cargo_Corner"};
+            };
+        };
+    };
+
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class KAT_DeployStretcher {
+                displayName = "Deploy Stretcher";
+                condition = QUOTE(call FUNC(assemble_canDeployStretcher));
+                statement = QUOTE(call FUNC(assemble_deployStretcher));
+                exceptions[] = {};
             };
         };
     };
@@ -146,29 +184,29 @@ class CfgVehicles {
         class ACE_SelfActions {
             class KAT_DeployStretcher {
                 displayName = CSTRING(DeployHeliStretcher);
-                condition = QUOTE(_player call FUNC(canDeployStretcher));
-                statement = QUOTE([ARR_2(_player,_target)] call FUNC(deployStretcher));
+                condition = QUOTE(_player call FUNC(canDeployHeliStretcher));
+                statement = QUOTE([ARR_2(_player,_target)] call FUNC(deployHeliStretcher));
                 icon = QPATHTOF(ui\downarrow.paa);
             };
 
             class KAT_LowerStretcher {
                 displayName = CSTRING(LowerHeliStretcher);
                 condition = QUOTE(_player call FUNC(canAdjustRopes));
-                statement = QUOTE([ARR_2(_player,_target)] call FUNC(lowerStretcher));
+                statement = QUOTE([ARR_2(_player,_target)] call FUNC(lowerHeliStretcher));
                 icon = QPATHTOF(ui\downarrow.paa);
             };
 
             class KAT_RaiseStretcher {
                 displayName = CSTRING(RaiseHeliStretcher);
                 condition = QUOTE(_player call FUNC(canAdjustRopes));
-                statement = QUOTE([ARR_2(_player,_target)] call FUNC(raiseStretcher));
+                statement = QUOTE([ARR_2(_player,_target)] call FUNC(raiseHeliStretcher));
                 icon = QPATHTOF(ui\uparrow.paa);
             };
 
             class KAT_RetractStretcher {
                 displayName = CSTRING(RetractHeliStretcher);
                 condition = QUOTE(_player call FUNC(canAdjustRopes));
-                statement = QUOTE([ARR_2(_player,_target)] call FUNC(retractStretcher));
+                statement = QUOTE([ARR_2(_player,_target)] call FUNC(retractHeliStretcher));
                 icon = QPATHTOF(ui\uparrow.paa);
             };
         };
