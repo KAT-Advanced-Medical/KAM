@@ -248,7 +248,6 @@ class ACE_Medical_Treatment {
             };
             class AbrasionMinor: Abrasion {
                 effectiveness = 2;
-                reopeningChance = 0;
             };
             class AvulsionMinor: AbrasionMinor {
                 effectiveness = 1;
