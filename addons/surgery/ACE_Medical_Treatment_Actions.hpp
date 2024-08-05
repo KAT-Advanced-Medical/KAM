@@ -138,7 +138,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = QGVAR(reboaLocation);
         allowedSelections[] = {"LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(reboaAction_MedLevel);
+        medicRequired = QGVAR(reboa_MedLevel);
         treatmentTime = QGVAR(reboaTime);
         items[] = {"kat_reboa"};
         condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(imaging),false)]) && (!(_patient getVariable [ARR_2(QQGVAR(reboa),false)])));
@@ -152,7 +152,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = QGVAR(reboaLocation);
         allowedSelections[] = {"LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(reboaAction_MedLevel);
+        medicRequired = QGVAR(reboa_MedLevel);
         treatmentTime = QGVAR(reboaTime);
         items[] = {"kat_ultrasound"};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(reboa),false)]);
@@ -166,7 +166,7 @@ class ACE_Medical_Treatment_Actions {
         treatmentLocations = QGVAR(reboaLocation);
         allowedSelections[] = {"LeftLeg", "RightLeg"};
         allowSelfTreatment = 0;
-        medicRequired = QGVAR(reboaAction_MedLevel);
+        medicRequired = QGVAR(reboa_MedLevel);
         treatmentTime = QGVAR(reboaTime);
         items[] = {"kat_ultrasound"};
         condition = QUOTE(_patient getVariable [ARR_2(QQGVAR(reboa),false)]);
