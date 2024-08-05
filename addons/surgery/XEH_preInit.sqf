@@ -165,13 +165,12 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Sets time to apply NPWT dressing
 [
-    QGVAR(npwtTime),
-    "SLIDER",
-    LLSTRING(SETTING_NPWTTime),
+    QGVAR(npwt_MedLevel),
+    "LIST",
+    LLSTRING(NPWT_ACTION_MEDLEVEL),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_NPWT)],
-    [0.1, 60, 5, 1],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -185,16 +184,16 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(npwtMedLevel),
-    "LIST",
-    LLSTRING(NPWT_ACTION_MEDLEVEL),
+    QGVAR(npwtTime),
+    "SLIDER",
+    LLSTRING(SETTING_NPWTTime),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_NPWT)],
-    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
+    [0.1, 60, 5, 1],
     true
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(reboaMedLevel),
+    QGVAR(reboa_MedLevel),
     "LIST",
     LLSTRING(REBOA_ACTION_MEDLEVEL),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
@@ -221,7 +220,7 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(ultrasoundMedLevel),
+    QGVAR(ultrasound_MedLevel),
     "LIST",
     LLSTRING(ULTRASOUND_ACTION_MEDLEVEL),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
@@ -248,7 +247,7 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(pericardialtapMedLevel),
+    QGVAR(pericardialtap_MedLevel),
     "LIST",
     LLSTRING(PERICARDIALTAP_ACTION_MEDLEVEL),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
