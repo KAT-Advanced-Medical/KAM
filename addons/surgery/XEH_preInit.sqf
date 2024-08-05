@@ -193,4 +193,85 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(reboaMedLevel),
+    "LIST",
+    LLSTRING(REBOA_ACTION_MEDLEVEL),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(reboaLocation),
+    "LIST",
+    LLSTRING(REBOA_LOCATION),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(reboaTime),
+    "SLIDER",
+    [LLSTRING(REBOA_TIMER), LLSTRING(REBOA_TIMER_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [0,100,8,0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(ultrasoundMedLevel),
+    "LIST",
+    LLSTRING(ULTRASOUND_ACTION_MEDLEVEL),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(ultrasoundLocation),
+    "LIST",
+    LLSTRING(ULTRASOUND_LOCATION),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(ultrasoundTime),
+    "SLIDER",
+    [LLSTRING(ULTRASOUND_TIMER), LLSTRING(ULTRASOUND_TIMER_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [0,100,8,0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(pericardialtapMedLevel),
+    "LIST",
+    LLSTRING(PERICARDIALTAP_ACTION_MEDLEVEL),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 2],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(pericardialtapLocation),
+    "LIST",
+    LLSTRING(PERICARDIALTAP_LOCATION),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [[0,1,2,3],["STR_ACE_Common_Anywhere", "STR_ACE_Common_Vehicle", "STR_ACE_Medical_Treatment_MedicalFacilities", "STR_ACE_Medical_Treatment_VehiclesAndFacilities"],3],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(pericardialtapTime),
+    "SLIDER",
+    [LLSTRING(PERICARDIALTAP_TIMER), LLSTRING(PERICARDIALTAP_TIMER_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_SurgicalActions)],
+    [0,100,8,0],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
