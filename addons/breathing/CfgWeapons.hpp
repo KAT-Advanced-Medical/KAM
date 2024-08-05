@@ -7,7 +7,7 @@ class CfgWeapons {
         scopeCurator = 2;
         scopeArsenal = 2;
         author = "Katalam";
-        displayName = CSTRING(Pulseoximeter_Desc_Short);
+        displayName = CSTRING(Pulseoximeter);
         descriptionShort = CSTRING(Pulseoximeter_Desc_Short);
         picture = QPATHTOF(ui\Pulseoximeter_normal.paa);
         model = QPATHTOF(models\pulseox\pulseox.p3d);
@@ -107,32 +107,6 @@ class CfgWeapons {
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 3;
-        };
-    };
-    class kat_oxygenTank_150_Item: ACE_ItemCore {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        author = "Blue";
-        displayName = CSTRING(PortableOxygenTank_150_Display);
-        descriptionShort = CSTRING(PortableOxygenTank_150_Desc_Short);
-        picture = QPATHTOF(ui\oxygenTank.paa);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 10;
-        };
-    };
-    class kat_oxygenTank_300_Item: ACE_ItemCore {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        author = "Blue";
-        displayName = CSTRING(PortableOxygenTank_300_Display);
-        descriptionShort = CSTRING(PortableOxygenTank_300_Desc_Short);
-        picture = QPATHTOF(ui\oxygenTank.paa);
-        ACE_isMedicalItem = 1;
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 20;
         };
     };
     class kat_oxygenTank_150_Empty: ACE_ItemCore {

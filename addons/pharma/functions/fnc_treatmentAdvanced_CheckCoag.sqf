@@ -18,8 +18,8 @@
 
 params ["_medic", "_patient"];
 
-private _coagFactors = _patient getVariable [QGVAR(coagulationFactor), 15];
-private _missionCoagFactors = missionNamespace getVariable [QGVAR(coagulationFactor), 15];
+private _coagFactors = _patient getVariable [QGVAR(coagulationFactor), 30];
+private _missionCoagFactors = missionNamespace getVariable [QGVAR(coagulation_factor_count), 30];
 private _slowINR = (_missionCoagFactors / 100) * 75;
 private _shighINR = (_missionCoagFactors / 100) * 125;
 private _hlowINR = (_missionCoagFactors / 100) * 50;

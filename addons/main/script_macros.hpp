@@ -121,6 +121,9 @@
 #undef BLOOD_LOSS_KNOCK_OUT_THRESHOLD
 #define BLOOD_LOSS_KNOCK_OUT_THRESHOLD ACEGVAR(medical,const_bloodLossKnockOutThreshold)
 
+#undef GET_BLOOD_LOSS
+#define GET_BLOOD_LOSS(unit)        ([unit] call ACEFUNC(medical_status,getBloodLoss))
+
 // Minimum leg damage required for limping
 #undef LIMPING_DAMAGE_THRESHOLD
 #define LIMPING_DAMAGE_THRESHOLD ACEGVAR(medical,const_limpingDamageThreshold)

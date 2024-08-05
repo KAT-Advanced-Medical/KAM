@@ -30,8 +30,6 @@ PREP(handleRespawn);
 PREP(handleTourniquetEffects);
 PREP(handleUnconscious);
 PREP(hasStableVitals);
-PREP(headTourniquet);
-PREP(headTourniquetLocal);
 PREP(heliAddActionDeploy);
 PREP(heliStretcherAttach);
 PREP(incompatibilityWarning);
