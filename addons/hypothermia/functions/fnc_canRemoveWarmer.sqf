@@ -22,7 +22,7 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _warmerArray = _patient getVariable [QGVAR(fluidWarmer), [0,0,0,0,0,0]];
 
 if (_warmerArray select _partIndex == 0) exitWith {
-	false
+    false
 };
 
 true
