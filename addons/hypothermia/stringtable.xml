@@ -57,9 +57,6 @@
         <Key ID="STR_KAT_Hypothermia_Other_Handwarmer_Output">
             <English>This patient has handwarmers and they will probably last this many more minutes at this locations: %1, %2, %3, %4, %5</English>
         </Key>
-        <Key ID="STR_KAT_Hypothermia_Using">
-            <English>Using</English>
-        </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_displayName">
             <English>Fluid Line Warmer</English>
         </Key>
