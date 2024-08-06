@@ -248,19 +248,8 @@
             <Russian>Использовать ингалятор Пентрокс</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
-            <English>Volatile anesthetic analgesic, used to suppress moderate pain</English>
-            <Japanese>揮発性麻酔鎮痛薬、 中程度の痛みを抑えるのに使用される</Japanese>
-            <French>Anesthésique volatil analgésique, utilisé pour supprimer la douleur modérée</French>
-            <Korean>휘발성 마취 진통제, 중간 정도의 통증을 억제하는 데 사용됩니다</Korean>
-            <German>Flüchtiges Anästhetikum-Analgetikum, verwendet zur Unterdrückung mäßiger Schmerzen</German>
-            <Portuguese>Anestésico volátil analgésico, usado para suprimir a dor moderada</Portuguese>
-            <Spanish>Anestésico volátil analgésico, utilizado para suprimir el dolor moderado</Spanish>
-            <Finnish>Haihtuva anestesia-analgeetti, käytetään kohtalaisen kivun tukahduttamiseen</Finnish>
-            <Russian>Летучий анестетик-анальгетик, используемый для подавления умеренной боли</Russian>
-            <Chinesesimp>挥发性麻醉镇痛剂，用于抑制中度疼痛</Chinesesimp>
-            <Italian>Anestetico volatile analgesico, usato per sopprimere il dolore moderato</Italian>
-            <Czech>Volatilní anestetikum analgetikum, používané k potlačení mírné bolesti</Czech>
-            <Polish>Lotny środek znieczulający, stosowany do tłumienia umiarkowanego bólu</Polish>
+            <English>Volatile anesthetic, used to suppress moderate pain</English>
+            <Japanese>揮発性麻酔薬、 中程度の痛みを抑えるのに使用される</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -1655,19 +1644,8 @@
             <Russian>Кетамин</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Ketamine_DescShort">
-            <English>Dissociative anesthetics analgesic, used to suppress severe pain</English>
-            <Chinesesimp>解离性麻醉镇痛剂，用于抑制严重的疼痛</Chinesesimp>
-            <Italian>Anestetico dissociativo analgesico, usato per sopprimere il dolore grave</Italian>
-            <Czech>Dissociativní anestetikum analgetikum, používané k potlačení těžké bolesti</Czech>
-            <French>Anesthésique dissociatif analgésique, utilisé pour supprimer la douleur sévère</French>
-            <Polish>Anestetyk dysocjacyjny, stosowany do tłumienia silnego bólu</Polish>
-            <Korean>해리성 마취제, 심한 통증을 억제하는 데 사용됩니다</Korean>
-            <German>Dissociative Anästhetika Analgetikum, verwendet zur Unterdrückung starker Schmerzen</German>
-            <Japanese>解離性麻酔鎮痛薬、 重度の痛みを抑えるのに使用される</Japanese>
-            <Spanish>Anestésico disociativo analgésico, utilizado para suprimir el dolor severo</Spanish>
-            <Portuguese>Anestésico dissociativo analgésico, usado para suprimir a dor severa</Portuguese>
-            <Finnish>Dissosiatiivinen anestesia-analgeetti, käytetään vakavan kivun tukahduttamiseen</Finnish>
-            <Russian>Диссоциативный анестетик-анальгетик, используемый для подавления сильной боли</Russian>
+            <English>Dissociative anesthetics, used to suppress severe pain</English>
+            <Japanese>解離性麻酔薬、 重度の痛みを抑えるのに使用される</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Fentanyl">
             <English>Push Fentanyl</English>
