@@ -27,7 +27,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(perform);
         category = "advanced";
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        medicRequired = QACEGVAR(medicIV);
+        medicRequired = QACEGVAR(ARR_2(medical_treatment,medicIV));
         treatmentTime = 10;
         items[] = {};
         condition = QUOTE([ARR_3(_medic,_patient,_bodyPart)] call FUNC(removeWarmer));
