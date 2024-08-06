@@ -472,20 +472,6 @@
             <Portuguese>Maca (Embalada)</Portuguese>
             <Finnish>Paarit (pakattu)</Finnish>
         </Key>
-        <Key ID="STR_KAT_Misc_NeckTourniquetDescription">
-            <English>Neck Tourniquet</English>
-            <Spanish>Torniquete de cuello</Spanish>
-            <Polish>Staza na szyi</Polish>
-            <French>Garrot de cou</French>
-            <Korean>목 지혈대</Korean>
-            <Japanese>首に止血帯を使う</Japanese>
-            <German>Nacken Tourniquet</German>
-            <Czech>Škrtidlo na krk</Czech>
-            <Italian>Laccio emostatico collo</Italian>
-            <Portuguese>Torniquete no pescoço</Portuguese>
-            <Finnish>Niskakiristys</Finnish>
-            <Russian>Шейный жгут</Russian>
-        </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment">
             <English>Allow Shared Vehicle Equipment</English>
             <German>Erlaube geteilte Fahrzeugausrüstung</German>

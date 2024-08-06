@@ -1,6 +1,6 @@
 class CfgMagazines {
     class CA_Magazine;
-    
+
     class kat_Bubble_Wrap: CA_Magazine {
         scope = 2;
         author = "Miss Heda";
@@ -65,4 +65,3 @@ class CfgMagazines {
         mass = 50;
     };
 };
-

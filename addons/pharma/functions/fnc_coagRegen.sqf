@@ -36,9 +36,9 @@ if !(GVAR(coagulation)) exitWith {};
     if (GET_BLOOD_VOLUME_LITERS(_unit) < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
     if ((_pulse < 20) && GVAR(coagulation_requireHR)) exitWith {}; // Has pulse & require setting
 
-    private _currentCoagFactors = _unit getVariable [QGVAR(coagulationFactor), 15];
-    private _savedCoagFactors = _unit getVariable [QGVAR(coagulationSavedFactors), (_unit getVariable [QGVAR(coagulationFactor), 15])];
-    private _limitRegenCoagFactors = missionNamespace getVariable [QGVAR(coagulation_factor_count), 15];
+    private _currentCoagFactors = _unit getVariable [QGVAR(coagulationFactor), 30];
+    private _savedCoagFactors = _unit getVariable [QGVAR(coagulationSavedFactors), (_unit getVariable [QGVAR(coagulationFactor), 30])];
+    private _limitRegenCoagFactors = missionNamespace getVariable [QGVAR(coagulation_factor_count), 30];
     private _cooldownON = _unit getVariable [QGVAR(coagulationRegenCooldown), false];
     private _countTXA = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
     private _countEACA = [_unit, "EACA"] call ACEFUNC(medical_status,getMedicationCount);
@@ -47,7 +47,7 @@ if !(GVAR(coagulation)) exitWith {};
     if (_currentCoagFactors < _savedCoagFactors) exitWith {
         [{
             params["_unit"];
-            _unit setVariable [QGVAR(coagulationSavedFactors), _unit getVariable [QGVAR(coagulationFactor), 15], true];
+            _unit setVariable [QGVAR(coagulationSavedFactors), _unit getVariable [QGVAR(coagulationFactor), 30], true];
         },
         [_unit], ((missionNamespace getVariable [QGVAR(coagulation_factor_regenerate_time), 150]) / 2)] call CBA_fnc_waitAndExecute; // Block regen PFH instance from happening
     };

@@ -36,8 +36,6 @@ PREP(handleCardiacFunction);
 PREP(handleTemperatureFunction);
 PREP(handleOxygenFunction);
 PREP(hasStableVitals);
-PREP(headTourniquet);
-PREP(headTourniquetLocal);
 PREP(heliAddActionDeploy);
 PREP(heliStretcherAttach);
 PREP(incompatibilityWarning);

@@ -1,6 +1,6 @@
 class CfgMagazines {
     class CA_Magazine;
-    
+
     class kat_oxygenTank_300: CA_Magazine {
         scope = 2;
         scopeCurator = 2;
