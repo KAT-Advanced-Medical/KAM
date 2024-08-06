@@ -52,6 +52,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
         treatmentTime = QGVAR(blood_drawTime_250ml);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = QGVAR(enable_selfBloodDraw);
         category = "advanced";
         medicRequired = 0;
         consumeItem = 1;
