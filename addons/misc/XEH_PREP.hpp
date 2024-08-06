@@ -9,7 +9,6 @@ PREP(canCheckDogtag);
 PREP(canStitchFullBody);
 PREP(carryObject);
 PREP(checkArmbandCondition);
-PREP(checkHandWarmers);
 PREP(conditionExecutionDeath);
 PREP(conditionIV);
 PREP(conditionIVstand);

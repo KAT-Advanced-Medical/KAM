@@ -5,14 +5,13 @@
  *
  * Arguments:
  * 0: The Unit <OBJECT>
- * 1: Temperature Adjustments <OBJECT>
- * 2: Body Part <STRING>
+ * 1: Body Part <STRING>
  *
  * ReturnValue:
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_misc_fnc_setTourniquetTime;
+ * [cursorObject, "LeftLeg"] call kat_misc_fnc_setTourniquetTime;
  *
  * Public: No
  */

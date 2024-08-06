@@ -35,9 +35,6 @@ if (_syncValues) then {
 private _bloodVolume = GET_SIMPLE_BLOOD_VOLUME(_unit);
 private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
 
-diag_log _bloodVolume;
-diag_log _woundBloodLoss;
-
 private _bloodVolume = _bloodVolume - (_woundBloodLoss / 100);
 _unit setVariable [VAR_BLOOD_VOL, _bloodVolume, _syncValues];
 

@@ -4,15 +4,14 @@
  * Local call for applying fluid warmers
  *
  * Arguments:
- * 0: Medic <OBJECT>
- * 1: Patient <OBJECT>
- * 2: Body Part <STRING>
+ * 0: Patient <OBJECT>
+ * 1: Body Part <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_hypothermia_fnc_applyFluidWarmerLocal;
+ * [cursorObject, "LeftLeg"] call kat_hypothermia_fnc_applyFluidWarmerLocal;
  *
  * Public: No
  */

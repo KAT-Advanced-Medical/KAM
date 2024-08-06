@@ -12,7 +12,7 @@
  * Warmer Present <BOOL>
  *
  * Example:
- * [player, cursorObject, "LeftLeg"] call kat_hypothermia_fnc_removeWarmer;
+ * [player, cursorObject, "LeftLeg"] call kat_hypothermia_fnc_canRemoveWarmer;
  *
  * Public: No
  */

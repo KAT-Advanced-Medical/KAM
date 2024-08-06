@@ -1,18 +1,18 @@
 #include "..\script_component.hpp"
 /*
- * Author: Glowbal, kymckay, mharis001
- * Updates the body image for given target.
+ * Author: Mazinksi
+ * Adjusts IV flow rates from GUI
  *
  * Arguments:
- * 0: Body image controls group <CONTROL>
- * 1: Target <OBJECT>
- * 2: Body part <NUMBER>
+ * 0: Target <OBJECT>
+ * 1: Body Part <NUMBER>
+ * 2: Adjust Value <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [CONTROL, _target, 0] call ace_medical_gui_fnc_updateBodyImage
+ * [_target, 2, 0.5] call kat_medical_gui_fnc_handleIVAdjust;
  *
  * Public: No
  */

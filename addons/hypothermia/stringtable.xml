@@ -51,6 +51,12 @@
         <Key ID="STR_KAT_Hypothermia_Use_Handwarmer">
             <English>Use Hand Warmer</English>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_Self_Handwarmer_Output">
+            <English>This is where you have handwarmers and how much longer you think they have in minutes: %1, %2, %3, %4, %5</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Other_Handwarmer_Output">
+            <English>This patient has handwarmers and they will probably last this many more minutes at this locations: %1, %2, %3, %4, %5</English>
+        </Key>
         <Key ID="STR_KAT_Hypothermia_Using">
             <English>Using</English>
         </Key>

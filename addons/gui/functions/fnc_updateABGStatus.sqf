@@ -1,23 +1,21 @@
 #include "..\script_component.hpp"
 /*
- * Author: Glowbal, kymckay, mharis001
- * Updates the body image for given target.
+ * Author: Mazinksi
+ * Updates ABG status GUI
  *
  * Arguments:
- * 0: Body image controls group <CONTROL>
- * 1: Target <OBJECT>
- * 2: Body part <NUMBER>
+ * 0: Target <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [CONTROL, _target, 0] call ace_medical_gui_fnc_updateBodyImage
+ * [_target] call kat_medical_gui_fnc_updateABGStatus;
  *
  * Public: No
  */
 
-params ["_ctrlGroup", "_target"];
+params ["_target"];
 
 // Get tourniquets, damage, and blood loss for target
 private _bloodGasTest = _target getVariable [QEGVAR(circulation,testedBloodGas), [0,0,0,0,0,0]];

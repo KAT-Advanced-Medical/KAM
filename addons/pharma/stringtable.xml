@@ -3518,11 +3518,11 @@
             <Japanese>正常INRより少し高い</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_lowINR">
-            <English>Very Low normal INR</English>
+            <English>Very Low INR</English>
             <Japanese>正常INRよりかなり低い</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_aboveINR">
-            <English>Very High INR</English>
+            <English>Very high INR</English>
             <Japanese>正常INRよりかなり高い</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_normalINR">

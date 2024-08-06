@@ -23,11 +23,8 @@ private _bloodLoss = [_unit] call ACEFUNC(medical_status,getBloodLoss);
 private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
 private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / DEFAULT_HEART_RATE)) / GET_VASOCONSTRICTION(_unit)));
 private _fluidVolume = GET_BODY_FLUID(_unit);
-private _ECB = _fluidVolume select 0;
-private _ECP = _fluidVolume select 1;
-private _SRBC = _fluidVolume select 2;
-private _ISP = _fluidVolume select 3;
 private _SRBCChange = 0;
+_fluidVolume params ["_ECB","_ECP","_SRBC","_ISP"];
 
 _ECP = _ECP + (_lossVolumeChange * LITERS_TO_ML) / 2;
 _ECB = _ECB + (_lossVolumeChange * LITERS_TO_ML) / 2;

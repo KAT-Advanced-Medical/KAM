@@ -23,4 +23,4 @@ private _warmerArray = _patient getVariable [QGVAR(fluidWarmer), [0,0,0,0,0,0]];
 _warmerArray set [_partIndex, 0];
 _patient setVariable [QGVAR(fluidWarmer), _warmerArray];
 
-_medic addItem "kat_fluidWarmer";
+[_medic, "kat_fluidWarmer"] call ACEFUNC(common,addToInventory);
