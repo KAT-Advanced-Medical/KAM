@@ -47,10 +47,10 @@
         _cswTripod setPosATL _posATL;
         _cswTripod setVectorUp (surfaceNormal _posATL);
 
-        [_player, "PutDown"] call EFUNC(common,doGesture);
+        [_player, "PutDown"] call ACEFUNC(common,doGesture);
 
         // drag after deploying
-        if ((missionNamespace getVariable [QACEGVAR(csw,dragAfterDeploy), false]) && {["ace_dragging"] call EFUNC(common,isModLoaded)}) then {
+        if ((missionNamespace getVariable [QACEGVAR(csw,dragAfterDeploy), false]) && {["ace_dragging"] call ACEFUNC(common,isModLoaded)}) then {
             if ([_player, _cswTripod] call ACEFUNC(dragging,canCarry)) then {
                 TRACE_1("starting carry",_cswTripod);
                 [_player, _cswTripod] call ACEFUNC(dragging,startCarry);

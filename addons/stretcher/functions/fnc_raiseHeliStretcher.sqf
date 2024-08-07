@@ -8,7 +8,7 @@
  * 1: Helicopter <OBJECT>
  *
  * Example:
- * [player, cursorObject] call kat_stretcher_fnc_raiseStretcher;
+ * [player, cursorObject] call kat_stretcher_fnc_raiseHeliStretcher;
  *
  * Public: No
  */

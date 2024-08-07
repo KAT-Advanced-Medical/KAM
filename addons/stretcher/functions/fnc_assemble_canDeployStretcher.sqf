@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: tcvm
- * Checks if the player can deploy the tripod.
+ * Author: MiszczuZPolski
+ * Checks if the player can deploy the stretcher.
  *
  * Arguments:
  * 0: Player <OBJECT>
@@ -10,7 +10,7 @@
  * Can deploy <BOOL>
  *
  * Example:
- * player call ace_csw_fnc_canDeployTripod
+ * [player] call kat_stretcher_fnc_assemble_canDeployStretcher;
  *
  * Public: No
  */

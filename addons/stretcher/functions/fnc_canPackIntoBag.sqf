@@ -1,11 +1,10 @@
 #include "..\script_component.hpp"
 /*
  * Author: MiszczuZPolski
- * Checks if stretcher can be packed into backpack
+ * Checks if stretcher can be packed into bag
  *
  * Arguments:
- * 0: Player <OBJECT>
- * 1: Stretcher <OBJECT>
+ * 0: Stretcher <OBJECT>
  *
  * Return Value:
  * None
@@ -16,6 +15,6 @@
  * Public: No
  */
 
-params ["_tripod"];
+params ["_stretcher"];
 
-alive _tripod && {((crew _tripod) findIf {alive _x && {!unitIsUAV _x}}) == -1} // return
+alive _stretcher && {((crew _stretcher) findIf {alive _x && {!unitIsUAV _x}}) == -1} // return
