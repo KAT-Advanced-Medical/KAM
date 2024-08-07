@@ -57,19 +57,19 @@ class RscTitles
             class GarminSun: GarminImage
             {
                 idc = 19803;
-                text = "\x\kat\addons\watch\UI\watch_icon.paa";
+                text = "\x\kat\addons\watch\UI\watch_sun.paa";
                 show = 0;
             };
             class GarminOvercast: GarminImage
             {
                 idc = 19804;
-                text = "\x\kat\addons\watch\UI\watch_icon.paa";
+                text = "\x\kat\addons\watch\UI\watch_overcast.paa";
                 show = 0;
             };
             class GarminRain: GarminImage
             {
                 idc = 19805;
-                text = "\x\kat\addons\watch\UI\watch_icon.paa";
+                text = "\x\kat\addons\watch\UI\watch_rain.paa";
                 show = 0;
             };
             class GarminTime: RscText
