@@ -1,0 +1,2 @@
+PREP(hideAltimeter);
+PREP(showAltimeter);
