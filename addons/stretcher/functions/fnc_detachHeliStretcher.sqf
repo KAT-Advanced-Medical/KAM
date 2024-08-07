@@ -16,7 +16,7 @@
 
 params ["_player","_target"];
 
-_player addItem "kat_HeliStretcher";
+[_player, "kat_helistretcher"] call ACEFUNC(common,addToInventory);
 
 private _stretcher = _target getVariable [QGVAR(stretcher), objNull];
 deleteVehicle _stretcher;

@@ -5,8 +5,7 @@
  * Deploys helistretcher attached below helicopter
  *
  * Arguments:
- * 0: Player <OBJECT>
- * 1: Helicopter <OBJECT>
+ * 0: Helicopter <OBJECT>
  *
  * Example:
  * [player, cursorObject] call kat_stretcher_fnc_deployStretcher;
@@ -14,7 +13,7 @@
  * Public: No
  */
 
-params ["_player","_target"];
+params ["_target"];
 
 private _stretcher = _target getVariable [QGVAR(stretcher), objNull];
 detach _stretcher;

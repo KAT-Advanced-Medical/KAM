@@ -2,7 +2,7 @@ class CfgWeapons
 {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
-    class GVAR(Helistretcher): ACE_ItemCore {
+    class kat_helistretcher: ACE_ItemCore {
         scope = 2;
         author = "Battlekeeper";
         picture = QPATHTOF(ui\stretcher.paa);
@@ -18,11 +18,9 @@ class CfgWeapons
         class WeaponSlotsInfo;
     };
 
-    class GVAR(CarryStretcherBag): Launcher_Base_F {
+    class kat_CarryStretcherBag: Launcher_Base_F {
         class ADDON {
             type = "placeable";
-            deployTime = 4;
-            deploy = QGVAR(stretcherVehicle);
         };
         class WeaponSlotsInfo: WeaponSlotsInfo {
             mass = 40;

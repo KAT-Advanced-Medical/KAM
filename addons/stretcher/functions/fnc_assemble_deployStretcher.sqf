@@ -35,7 +35,7 @@
         _args params ["_player", "_secondaryWeaponClassname", "_secondaryWeaponInfo"];
         TRACE_3("deployTripod finish",_player,_secondaryWeaponClassname,_secondaryWeaponInfo);
 
-        private _tripodClassname = getText (configFile >> "CfgWeapons" >> _secondaryWeaponClassname >> QUOTE(ADDON) >> "deploy");
+        private _tripodClassname = "kat_stretcher";
 
         // Create a tripod
         private _cswTripod = createVehicle [_tripodClassname, [0, 0, 0], [], 0, "NONE"];
@@ -65,10 +65,9 @@
         _args params ["_player", "_secondaryWeaponClassname", "_secondaryWeaponInfo"];
         TRACE_3("deployTripod failure",_player,_secondaryWeaponClassname,_secondaryWeaponInfo);
 
-        // Add tripod back
+        // Add stretcher back
         [_player, _secondaryWeaponClassname] call CBA_fnc_addWeaponWithoutItems;
     };
 
-    private _deployTime = getNumber (configFile >> "CfgWeapons" >> _secondaryWeaponClassname >> QUOTE(ADDON) >> "deployTime");
-    [TIME_PROGRESSBAR(_deployTime), [_player, _secondaryWeaponClassname, _secondaryWeaponInfo], _onFinish, _onFailure, localize ACELSTRING(csw,PlaceTripod_progressBar)] call ACEFUNC(common,progressBar);
+    [TIME_PROGRESSBAR(4), [_player, _secondaryWeaponClassname, _secondaryWeaponInfo], _onFinish, _onFailure, localize ACELSTRING(csw,PlaceTripod_progressBar)] call ACEFUNC(common,progressBar);
 }, _this] call CBA_fnc_execNextFrame;

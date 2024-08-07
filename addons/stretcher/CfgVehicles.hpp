@@ -3,10 +3,10 @@ class CfgVehicles {
     #include "vehicle_stretcher.hpp"
 
     class weapon_bag_base;
-    class GVAR(stretcherBackpack): weapon_bag_base {
+    class kat_stretcherBag: weapon_bag_base {
         class assembleInfo {
             displayName = CSTRING(Stretcher_Display);
-            assembleTo = QGVAR(stretcherVehicle);
+            assembleTo = "kat_stretcher";
             base = "";
             primary = 1;
             dissasembleTo[] = {};
@@ -20,7 +20,7 @@ class CfgVehicles {
     };
 
     class Tank_F;
-    class GVAR(stretcherVehicle): Tank_F {
+    class kat_stretcher: Tank_F {
         explosionEffect = "";
         fuelExplosionPower = 0;
         editorForceEmpty = 1;
@@ -101,7 +101,6 @@ class CfgVehicles {
         };
 
         class EventHandlers {
-            init = QUOTE(_this call FUNC(initStretcher));
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
 
@@ -109,19 +108,19 @@ class CfgVehicles {
             class ACE_MainActions {
                 distance = 5;
                 class KAT_PackIntoBackpack {
-                    displayName = "Pack stretcher into backpack";
+                    displayName = CSTRING(PackIntoBackpack);
                     condition = QUOTE([ARR_2(_player,_target)] call FUNC(canPackIntoBackpack));
                     statement = QUOTE([ARR_2(_player,_target)] call FUNC(packIntoBackpack));
                     icon = QPATHTOF(ui\stretcher.paa);
                 };
                 class KAT_PackIntoBag {
-                    displayName = "Pack stretcher into bag";
+                    displayName = CSTRING(PackIntoBag);
                     condition = QUOTE(call FUNC(canPackIntoBag));
                     statement = QUOTE(call FUNC(packIntoBag));
                     icon = QPATHTOF(ui\stretcher.paa);
                 };
                 class KAT_AttachToVehicle {
-                    displayName = "Attach stretcher to vehicle";
+                    displayName = CSTRING(AttachHeliStretcher);
                     condition = QUOTE(true);
                     insertChildren = QUOTE(_target call FUNC(attachStretcher));
                     icon = QPATHTOF(ui\stretcher.paa);
@@ -155,7 +154,7 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_SelfActions {
             class KAT_DeployStretcher {
-                displayName = "Deploy Stretcher";
+                displayName = CSTRING(UnpackStretcher);
                 condition = QUOTE(call FUNC(assemble_canDeployStretcher));
                 statement = QUOTE(call FUNC(assemble_deployStretcher));
                 exceptions[] = {};
@@ -175,7 +174,7 @@ class CfgVehicles {
                 };
                 class KAT_DetachHeliStretcher {
                     displayName = CSTRING(DetachHeliStretcher);
-                    condition = QUOTE([ARR_2(_player,_target)] call FUNC(canDetachHeliStretcher));
+                    condition = QUOTE(_target call FUNC(canDetachHeliStretcher));
                     statement = QUOTE([ARR_2(_player,_target)] call FUNC(detachHeliStretcher));
                     icon = QPATHTOF(ui\stretcher.paa);
                 };
@@ -185,7 +184,7 @@ class CfgVehicles {
             class KAT_DeployStretcher {
                 displayName = CSTRING(DeployHeliStretcher);
                 condition = QUOTE(_player call FUNC(canDeployHeliStretcher));
-                statement = QUOTE([ARR_2(_player,_target)] call FUNC(deployHeliStretcher));
+                statement = QUOTE(_target call FUNC(deployHeliStretcher));
                 icon = QPATHTOF(ui\downarrow.paa);
             };
 

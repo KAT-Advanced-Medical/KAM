@@ -5,10 +5,10 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         units[] = {
-            QGVAR(stretcherVehicle),
-            QGVAR(stretcherBackpack)
+            "kat_stretcher",
+            "kat_stretcherBag"
         };
-        weapons[] = { QGVAR(Helistretcher), QGVAR(CarryStretcherBag) };
+        weapons[] = { "kat_helistretcher", "kat_CarryStretcherBag" };
         magazines[] = { };
         requiredAddons[] = {
             "kat_main",

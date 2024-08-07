@@ -21,8 +21,7 @@
     params ["_stretcher", "_player"];
     TRACE_2("assemble_pickupTripod",_stretcher,_player);
 
-    private _classname = "kat_stretcher_CarryStretcherBag";
-    private _pickupTime = 4;
+    private _classname = "kat_CarryStretcherBag";
 
     private _onFinish = {
         params ["_args"];
@@ -70,6 +69,6 @@
         _stretcher call FUNC(canPackIntoBag)
     };
 
-    TRACE_3("",_pickupTime,typeOf _stretcher,_classname);
-    [TIME_PROGRESSBAR(_pickupTime), [_stretcher, _player, _classname], _onFinish, {}, localize ACELSTRING(csw,PickupTripod_progressBar), _condition] call ACEFUNC(common,progressBar);
+    TRACE_3("",4,typeOf _stretcher,_classname);
+    [TIME_PROGRESSBAR(4), [_stretcher, _player, _classname], _onFinish, {}, localize ACELSTRING(csw,PickupTripod_progressBar), _condition] call ACEFUNC(common,progressBar);
 }, _this] call CBA_fnc_execNextFrame;

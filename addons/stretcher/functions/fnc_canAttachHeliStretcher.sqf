@@ -16,5 +16,5 @@
 
 params ["_player","_target"];
 
-[_player, QGVAR(Helistretcher)] call ACEFUNC(common,hasItem)
+[_player, "kat_helistretcher"] call ACEFUNC(common,hasItem)
 && !(_target getVariable [QGVAR(isStretcherAttached), false])

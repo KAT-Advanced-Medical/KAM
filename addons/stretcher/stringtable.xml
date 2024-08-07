@@ -166,5 +166,17 @@
             <Portuguese>Maca (Embalada)</Portuguese>
             <Finnish>Paarit (pakattu)</Finnish>
         </Key>
+        <Key ID="STR_KAT_Stretcher_PackIntoBag">
+            <English>Pack into bag</English>
+            <Polish>Spakuj jako torba</Polish>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_PackIntoBackpack">
+            <English>Pack into backpack</English>
+            <Polish>Spakuj jako plecak</Polish>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_UnpackStretcher">
+            <English>Deploy stretcher</English>
+            <Polish>Rozstaw nosze</Polish>
+        </Key>
     </Package>
 </Project>

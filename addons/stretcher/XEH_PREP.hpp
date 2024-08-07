@@ -10,7 +10,6 @@ PREP(canPackIntoBackpack);
 PREP(canPackIntoBag);
 PREP(deployHeliStretcher);
 PREP(detachHeliStretcher);
-PREP(initStretcher);
 PREP(lowerHeliStretcher);
 PREP(packIntoBackpack);
 PREP(packIntoBag);
