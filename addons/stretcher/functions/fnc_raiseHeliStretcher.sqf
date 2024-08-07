@@ -4,16 +4,15 @@
  * Raises helistretcher by 10m
  *
  * Arguments:
- * 0: Player <OBJECT>
- * 1: Helicopter <OBJECT>
+ * 0: Helicopter <OBJECT>
  *
  * Example:
- * [player, cursorObject] call kat_stretcher_fnc_raiseHeliStretcher;
+ * [cursorObject] call kat_stretcher_fnc_raiseHeliStretcher;
  *
  * Public: No
  */
 
-params ["_player","_target"];
+params ["_target"];
 
 private _stretcher = _target getVariable [QGVAR(stretcher), objNull];
 private _ropes = _target getVariable [QGVAR(ropes), []];

@@ -4,15 +4,14 @@
  * Retracts helistretcher back to heli, and moves crew back to heli
  *
  * Arguments:
- * 0: Player <OBJECT>
- * 1: Helicopter <OBJECT>
+ * 0: Helicopter <OBJECT>
  *
  * Example:
- * [player, cursorObject] call kat_stretcher_fnc_retractHeliStretcher;
+ * [cursorObject] call kat_stretcher_fnc_retractHeliStretcher;
  *
  * Public: No
  */
-params ["_player","_target"];
+params ["_target"];
 
 private _stretcher = _target getVariable [QGVAR(stretcher), objNull];
 private _ropes = _target getVariable [QGVAR(ropes), []];

@@ -191,22 +191,22 @@ class CfgVehicles {
 
             class KAT_LowerStretcher {
                 displayName = CSTRING(LowerHeliStretcher);
-                condition = QUOTE(_player call FUNC(canAdjustRopes));
-                statement = QUOTE([ARR_2(_player,_target)] call FUNC(lowerHeliStretcher));
+                condition = QUOTE(_target call FUNC(canAdjustRopes));
+                statement = QUOTE(_target call FUNC(lowerHeliStretcher));
                 icon = QPATHTOF(ui\downarrow.paa);
             };
 
             class KAT_RaiseStretcher {
                 displayName = CSTRING(RaiseHeliStretcher);
-                condition = QUOTE(_player call FUNC(canAdjustRopes));
-                statement = QUOTE([ARR_2(_player,_target)] call FUNC(raiseHeliStretcher));
+                condition = QUOTE(_target call FUNC(canAdjustRopes));
+                statement = QUOTE(_target call FUNC(raiseHeliStretcher));
                 icon = QPATHTOF(ui\uparrow.paa);
             };
 
             class KAT_RetractStretcher {
                 displayName = CSTRING(RetractHeliStretcher);
-                condition = QUOTE(_player call FUNC(canAdjustRopes));
-                statement = QUOTE([ARR_2(_player,_target)] call FUNC(retractHeliStretcher));
+                condition = QUOTE(_target call FUNC(canAdjustRopes));
+                statement = QUOTE(_target call FUNC(retractHeliStretcher));
                 icon = QPATHTOF(ui\uparrow.paa);
             };
         };

@@ -4,16 +4,16 @@
  * Checks if ropes can be adjusted
  *
  * Arguments:
- * 0: Player <OBJECT>
+ * 0: Helicopter <OBJECT>
  *
  * Example:
- * [player] call kat_stretcher_fnc_canAdjustRopes;
+ * [cursorObject] call kat_stretcher_fnc_canAdjustRopes;
  *
  * Public: No
  */
 
-params ["_player"];
+params ["_target"];
 
-objectParent _player getVariable [QGVAR(isStretcherAttached), false] 
-&& (objectParent _player getVariable [QGVAR(stretcherDeployed), false]) 
-&& (ropeUnwound (objectParent _player getVariable [QGVAR(ropes), []] param [0, objNull]))
+_target getVariable [QGVAR(isStretcherAttached), false] 
+&& (_target getVariable [QGVAR(stretcherDeployed), false]) 
+&& (ropeUnwound (_target getVariable [QGVAR(ropes), []] param [0, objNull]))

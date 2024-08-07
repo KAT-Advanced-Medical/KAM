@@ -5,16 +5,15 @@
  * Lowers helistretcher by 10m
  *
  * Arguments:
- * 0: Player <OBJECT>
- * 1: Helicopter <OBJECT>
+ * 0: Helicopter <OBJECT>
  *
  * Example:
- * [player, cursorObject] call kat_stretcher_fnc_lowerHeliStretcher;
+ * [cursorObject] call kat_stretcher_fnc_lowerHeliStretcher;
  *
  * Public: No
  */
 
-params ["_player","_target"];
+params ["_target"];
 
 #define MAX_LENGTH 50
 
