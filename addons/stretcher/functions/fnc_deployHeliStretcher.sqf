@@ -8,7 +8,7 @@
  * 0: Helicopter <OBJECT>
  *
  * Example:
- * [player, cursorObject] call kat_stretcher_fnc_deployStretcher;
+ * [cursorObject] call kat_stretcher_fnc_deployHeliStretcher;
  *
  * Public: No
  */

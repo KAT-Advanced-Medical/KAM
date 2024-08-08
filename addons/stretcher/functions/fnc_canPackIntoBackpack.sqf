@@ -4,19 +4,17 @@
  * Checks if stretcher can be packed into backpack
  *
  * Arguments:
- * 0: Player <OBJECT>
- * 1: Stretcher <OBJECT>
+ * 0: Stretcher <OBJECT>
  *
  * Return Value:
- * None
+ * <BOOLEAN>
  *
  * Example:
- * [player, cursorTarget] call kat_stretcher_fnc_canPackIntoBag;
+ * [cursorTarget] call kat_stretcher_fnc_canPackIntoBag;
  *
  * Public: No
  */
 
-params ["_player", "_target"];
+params ["_target"];
 
-if ((count crew _target > 0) || !(isNull attachedTo _target)) exitWith {false};
-true;
+[true, false] select ((count crew _target > 0) || !(isNull attachedTo _target))

@@ -109,7 +109,7 @@ class CfgVehicles {
                 distance = 5;
                 class KAT_PackIntoBackpack {
                     displayName = CSTRING(PackIntoBackpack);
-                    condition = QUOTE([ARR_2(_player,_target)] call FUNC(canPackIntoBackpack));
+                    condition = QUOTE(_target call FUNC(canPackIntoBackpack));
                     statement = QUOTE([ARR_2(_player,_target)] call FUNC(packIntoBackpack));
                     icon = QPATHTOF(ui\stretcher.paa);
                 };

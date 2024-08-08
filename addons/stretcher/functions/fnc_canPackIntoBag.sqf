@@ -7,7 +7,7 @@
  * 0: Stretcher <OBJECT>
  *
  * Return Value:
- * None
+ * <BOOLEAN>
  *
  * Example:
  * [cursorTarget] call kat_stretcher_fnc_canPackIntoBag;

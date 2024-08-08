@@ -10,14 +10,14 @@
  * None
  *
  * Example:
- * player call kat_stretcher_fnc_assemble_deployTripod
+ * player call kat_stretcher_fnc_assemble_deployStretcher
  *
  * Public: No
  */
 
 [{
     params ["_player"];
-    TRACE_1("assemble_deployTripod",_player);
+    TRACE_1("assemble_deployStretcher",_player);
 
     // Save magazines and attachments (handle loaded launchers which can become csw like CUP Metis)
     private _secondaryWeaponInfo = (getUnitLoadout _player) select 1;
