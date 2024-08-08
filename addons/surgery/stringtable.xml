@@ -412,7 +412,7 @@
             <German>Klemme</German>
             <Japanese>鉗子 (クランプ)</Japanese>
             <Spanish>Pinza de sujeción</Spanish>
-            <Portuguese>Afastador</Portuguese>
+            <Portuguese>Pinça</Portuguese>
             <Finnish>Puristin</Finnish>
             <Russian>Зажим</Russian>
         </Key>
@@ -427,7 +427,7 @@
             <Japanese>粉砕骨折を留めるために使用される</Japanese>
             <Spanish>Usada para sujetar las fracturas conminutas</Spanish>
             <Polish>Służy do zaciskania skomplikowanych złamań</Polish>
-            <Portuguese>Usado para fixar fraturas cominutivas</Portuguese>
+            <Portuguese>Usado para pinçar fraturas cominutivas</Portuguese>
             <Finnish>Käytetään murtumien kiinnittämiseen</Finnish>
             <Russian>Используется для фиксации оскольчатых переломов</Russian>
         </Key>
@@ -442,7 +442,7 @@
             <German>Klammern der Fraktur</German>
             <Japanese>骨折をクランプする</Japanese>
             <Spanish>Alinear trozos</Spanish>
-            <Portuguese>Fixar fratura</Portuguese>
+            <Portuguese>Pinçar fratura</Portuguese>
             <Finnish>Puristimen murtuma</Finnish>
             <Russian>Зажать перелом</Russian>
         </Key>
@@ -457,7 +457,7 @@
             <German>Abklemmen</German>
             <Japanese>クランプ中</Japanese>
             <Spanish>Alineando trozos</Spanish>
-            <Portuguese>Fixando</Portuguese>
+            <Portuguese>Pinçando</Portuguese>
             <Finnish>Kiinnitys</Finnish>
             <Russian>Зажат</Russian>
         </Key>
@@ -532,7 +532,7 @@
             <German>Vakuumverband (NPWT)</German>
             <Japanese>吸引被覆 (NPWT)</Japanese>
             <Spanish>Vendaje al vacío</Spanish>
-            <Portuguese>Bandagem a vácuo</Portuguese>
+            <Portuguese>Curativo a vácuo</Portuguese>
             <Finnish>Pukeutumistyhjiö</Finnish>
             <Russian>Вакуумная повязка (NPWT)</Russian>
         </Key>
@@ -562,7 +562,7 @@
             <German>NPWT-Verband anlegen</German>
             <Japanese>吸引被覆(NPWT)を行う</Japanese>
             <Spanish>Colocar vendaje al vacío</Spanish>
-            <Portuguese>Aplicar curativo NPWT</Portuguese>
+            <Portuguese>Aplicar curativo a vácuo</Portuguese>
             <Finnish>Levitä NPWT-sidosta</Finnish>
             <Russian>Использовать NPWT</Russian>
         </Key>
@@ -587,6 +587,7 @@
             <Spanish>Ultrasonidos Portátil</Spanish>
             <Japanese>手持ち式超音波スキャナー</Japanese>
             <French>Échographie portable</French>
+            <Portuguese>Ultrassom Portátil</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_DescUse">
             <English>Used to assess internal injuries</English>
@@ -594,6 +595,7 @@
             <Spanish>Usado para comprobar heridas internas</Spanish>
             <Japanese>内損傷の評定に使用</Japanese>
             <French>Utilisé pour contrôlé les blessures internes</French>
+            <Portuguese>Utilizado para verificar lesões internas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Use">
             <English>Conduct Ultrasound Assessment</English>
@@ -601,6 +603,7 @@
             <Spanish>Realizar Comprobación de Ultrasonidos</Spanish>
             <Japanese>超音波評定を実施</Japanese>
             <French>Effectuer une évaluation échographique</French>
+            <Portuguese>Realizar verificação com ultrassom</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Action">
             <English>Assessing</English>
@@ -608,6 +611,7 @@
             <Spanish>Comprobando</Spanish>
             <Japanese>評定中</Japanese>
             <French>Evaluation</French>
+            <Portuguese>Verificando</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway">
             <English>Airway Status: %1</English>
@@ -615,6 +619,7 @@
             <Spanish>Estado de Vías Aéreas: %1</Spanish>
             <Japanese>気道の状態: %1</Japanese>
             <French>Statut des voies aériennes : %1</French>
+            <Portuguese>Estado das vias aéreas: %1</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic">
             <English>Lung Status: %1</English>
@@ -622,6 +627,7 @@
             <Spanish>Estado de Pulmones: %1</Spanish>
             <Japanese>肺の状態: %1</Japanese>
             <French>Statut des poumons :%1</French>
+            <Portuguese>Estado do pulmão: %1</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac">
             <English>Cardiac Status: %1</English>
@@ -629,6 +635,7 @@
             <Spanish>Estado Cardíaco: %1</Spanish>
             <Japanese>心臓の状態: %1</Japanese>
             <French>Statut cardiaque :%1</French>
+            <Portuguese>Estado cardíaco: %1</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Airway_Normal">
             <English>Normal</English>
@@ -636,6 +643,7 @@
             <Spanish>Normal</Spanish>
             <Japanese>正常</Japanese>
             <French>Normal</French>
+            <Portuguese>Normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_PTX">
             <English>Pneumothorax</English>
@@ -643,6 +651,7 @@
             <Spanish>Pneumotórax</Spanish>
             <Japanese>気胸</Japanese>
             <French>Pneumothorax</French>
+            <Portuguese>Pneumotórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Hemo">
             <English>Hemopneumothorax</English>
@@ -650,6 +659,7 @@
             <Spanish>Hemopneumotórax</Spanish>
             <Japanese>血気胸</Japanese>
             <French>Hémopneumothorax</French>
+            <Portuguese>Hemotórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Thorasic_Tension">
             <English>Tension Pneumothorax</English>
@@ -657,6 +667,7 @@
             <Spanish>Tensión de Pneumotórax</Spanish>
             <Japanese>緊張性気胸</Japanese>
             <French>Pneumothorax sous tension</French>
+            <Portuguese>Pneumotórax Hipertensivo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Shockable">
             <English>Arrest - Shockable</English>
@@ -664,6 +675,7 @@
             <Spanish>Parada - Impactable</Spanish>
             <Japanese>心停止 - ショック可能</Japanese>
             <French>Arrêt cardiaque - Choquable</French>
+            <Portuguese>Parada - Chocável</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Unshockable">
             <English>Arrest - Not Shockable</English>
@@ -671,6 +683,7 @@
             <Spanish>Parada - No Impactable</Spanish>
             <Japanese>心停止 - ショック不要</Japanese>
             <French>Arrêt cardiaque - Non choquable</French>
+            <Portuguese>Parada - Não Chocável</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Ultra_Cardiac_Tamponade">
             <English>Tamponade</English>
@@ -678,6 +691,7 @@
             <Spanish>Taponado</Spanish>
             <Japanese>タンポナーデ</Japanese>
             <French>Tamponnade cardiaque</French>
+            <Portuguese>Tamponado</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DescShort">
             <English>REBOA Unit</English>
@@ -685,6 +699,7 @@
             <Spanish>Unidad REBOA</Spanish>
             <Japanese>REBOAユニット</Japanese>
             <French>Unité REBOA</French>
+            <Portuguese>Unidade REBOA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_DescUse">
             <English>Used to block the aorta and prevent bleeding below the heart</English>
@@ -692,6 +707,7 @@
             <Spanish>Utilizada para bloquear la aorta y prevenir el sangrado debajo del corazón</Spanish>
             <Japanese>大動脈を遮断し、心臓より下の出血を防ぐために使用される</Japanese>
             <French>Utilisé pour bloquer l'aorte et empêcher le saignement en dessous du coeur</French>
+            <Portuguese>Utilizada para bloquear a aorta e prevenir sangramento abaixo do coração</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Use">
             <English>Place REBOA Unit</English>
@@ -699,6 +715,7 @@
             <Spanish>Colocar Unidad REBOA</Spanish>
             <Japanese>REBOAユニットを挿入</Japanese>
             <French>Placé l'unité REBOA</French>
+            <Portuguese>Colocar Unidade REBOA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Action">
             <English>Placing</English>
@@ -706,6 +723,7 @@
             <Spanish>Colocando</Spanish>
             <Japanese>挿入中</Japanese>
             <French>Placement</French>
+            <Portuguese>Colocando</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Use">
             <English>Advance REBOA Unit</English>
@@ -713,6 +731,7 @@
             <Spanish>Avanzar Unidad REBOA</Spanish>
             <Japanese>REBOAユニットを奥へ送る</Japanese>
             <French>Avancer l'unité REBOA</French>
+            <Portuguese>Avançar Unidade REBOA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Deep_Action">
             <English>Advancing</English>
@@ -720,6 +739,7 @@
             <Spanish>Avanzando</Spanish>
             <Japanese>奥へと送っています</Japanese>
             <French>Déplacement</French>
+            <Portuguese>Avançando</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Use">
             <English>Remove REBOA Unit</English>
@@ -727,6 +747,7 @@
             <Spanish>Eliminar Unidad REBOA</Spanish>
             <Japanese>REBOAユニットを抜去</Japanese>
             <French>Retirer l'unité REBOA</French>
+            <Portuguese>Remover Unidade REBOA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Remove_Action">
             <English>Removing</English>
@@ -734,6 +755,7 @@
             <Spanish>Eliminando</Spanish>
             <Japanese>抜去中</Japanese>
             <French>Retrait</French>
+            <Portuguese>Removendo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Reboa_Status">
             <English>REBOA</English>
@@ -741,6 +763,7 @@
             <Spanish>REBOA</Spanish>
             <Japanese>REBOA</Japanese>
             <French>REBOA</French>
+            <Portuguese>REBOA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Use">
             <English>Pericardial Tap</English>
@@ -748,6 +771,7 @@
             <Spanish>Pericardiocentesis</Spanish>
             <Japanese>心膜穿刺術</Japanese>
             <French>Péricardiocentèse </French>
+            <Portuguese>Pericardiocentese</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Action">
             <English>Performing</English>
@@ -755,6 +779,7 @@
             <Spanish>Realizando</Spanish>
             <Japanese>施術中</Japanese>
             <French>Opération</French>
+            <Portuguese>Realizando</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_Pericardial_Tap_Log">
             <English>%1 performed a pericardial tap</English>
@@ -762,6 +787,7 @@
             <Spanish>%1 realizó una pericardiocentesis</Spanish>
             <Japanese>%1 が心膜穿刺を施術</Japanese>
             <French>%1 a effectué une péricardiocentèse</French>
+            <Portuguese>%1 realizou uma pericardiocentese</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_KIDNEY_ACTION">
             <English>Kidney damage/failure</English>
@@ -1164,6 +1190,7 @@
             <Russian>Разрешить NPWT</Russian>
             <Spanish>Permitir NPWT</Spanish>
             <French>Autoriser le NPWT</French>
+            <Portuguese>Permitir curativo a vácuo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_NPWT_LOCATION">
             <English>Locations NPWT</English>
@@ -1172,6 +1199,7 @@
             <Russian>Места NPWT</Russian>
             <Spanish>Localizaciones para NPWT</Spanish>
             <French>Lieux du NPWT</French>
+            <Portuguese>Locais para curativo a vácuo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_CLOSED_LOCATION">
             <English>Locations Closed Reduction</English>
@@ -1259,7 +1287,7 @@
             <German>abgeklemmt</German>
             <Japanese>クランプした</Japanese>
             <Spanish>alineado/a</Spanish>
-            <Portuguese>fixado(a)</Portuguese>
+            <Portuguese>pinçado(a)</Portuguese>
             <Finnish>Kiinnitetty</Finnish>
             <Russian>защемленный</Russian>
         </Key>
@@ -1375,6 +1403,7 @@
             <Russian>Настройки вакуума для перевязки (NPWT)</Russian>
             <Spanish>Opciones para Vendado de Vacío (NPWT)</Spanish>
             <French>Paramètres du pansement sous vide (NPWT)</French>
+            <Portuguese>Configurações do curativo a vácuo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Surgery_surgeryToolbox">
             <English>[KAM] Surgery Box</English>
@@ -1441,7 +1470,7 @@
             <French>Pas d'inconscience due à la chirurgie</French>
             <Korean>수술 중 의식불명 발생 없음</Korean>
             <German>Keine Bewusstlosigkeit durch die Operation</German>
-            <Portuguese>Sem inconsciência por cirurgia</Portuguese>
+            <Portuguese>Inconsciência não necessária para a cirurgia</Portuguese>
             <Finnish>Ei tajuttomuutta leikkauksesta</Finnish>
             <Russian>После операции никто не теряет сознание</Russian>
         </Key>
