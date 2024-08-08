@@ -2821,17 +2821,8 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Pervitin_Capsule_DescShort">
             <English>Performance enhancing drug, used to suppress moderate pain</English>
-            <German>Leistungssteigerndes Medikament, verwendet zur Linderung moderater Schmerzen</German>
-            <French>Récupérateur de performance, utilisé pour supprimer la douleur modérée</French>
-            <Korean>운동능력 향상 약물, 중간 정도의 통증 억제에 사용됩니다</Korean>
             <Japanese>疲労の防止と回復に! 疲労をポンと取ってくれます。 中程度の鎮痛作用がある。</Japanese>
-            <Italian>Farmaco migliorante le prestazioni, usato per sopprimere il dolore moderato</Italian>
-            <Portuguese>Droga para aumento de desempenho, usada para suprimir a dor moderada</Portuguese>
             <Polish>Środek zwiększający wydolność, stosowany do tłumienia umiarkowanego bólu</Polish>
-            <Spanish>Droga para mejorar el rendimiento, utilizada para suprimir el dolor moderado</Spanish>
-            <Czech>Lék zvyšující výkon, používaný k potlačení mírné bolesti</Czech>
-            <Finnish>Suorituskykyä parantava lääke, käytetään lievän kivun tukahduttamiseen</Finnish>
-            <Russian>Препарат, улучшающий работоспособность, используемый для подавления умеренной боли</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
