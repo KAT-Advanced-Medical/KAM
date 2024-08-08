@@ -40,7 +40,6 @@ PREP(heliStretcherAttach);
 PREP(incompatibilityWarning);
 PREP(init);
 PREP(removeIVbag);
-PREP(showBloodGas);
 PREP(setUnconscious);
 PREP(setTourniquetTime);
 PREP(removeTourniquetTime);
