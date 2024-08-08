@@ -727,7 +727,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     [LLSTRING(SETTING_Coagulation_allow_TXA_script), LLSTRING(SETTING_Coagulation_allow_TXA_script_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [false],
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 
