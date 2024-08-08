@@ -2987,17 +2987,7 @@
         <Key ID="STR_KAT_Pharma_Caffeine_Bottle_DescShort">
             <English>Stimulates the central nervous system and energizes</English>
             <Japanese>中枢神経を刺激し、活力を与える</Japanese>
-            <Chinesesimp>刺激中枢神经系统并提供能量</Chinesesimp>
-            <Italian>Stimola il sistema nervoso centrale e fornisce energia</Italian>
-            <Czech>Stimuluje centrální nervový systém a dodává energii</Czech>
-            <French>Stimule le système nerveux central et apporte de l'énergie</French>
             <Polish>Stymuluje centralny układ nerwowy i dodaje energii</Polish>
-            <Korean>중추 신경계를 자극하고 에너지를 부여합니다</Korean>
-            <German>Stimuliert das zentrale Nervensystem und verleiht Energie</German>
-            <Portuguese>Estimula o sistema nervoso central e dá energia</Portuguese>
-            <Spanish>Estimula el sistema nervioso central y energiza</Spanish>
-            <Finnish>Stimuloituu keskushermostoa ja antaa energiaa</Finnish>
-            <Russian>Стимулирует центральную нервную систему и дает энергию</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Caffeine">
             <English>Take Caffeine</English>
