@@ -1,2 +1,2 @@
-PREP(hideAltimeter);
-PREP(showAltimeter);
+PREP(hideKWatch);
+PREP(showKWatch);

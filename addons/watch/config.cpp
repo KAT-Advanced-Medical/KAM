@@ -6,7 +6,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         units[] = { };
         weapons[] = {
-            "KAT_Garmin"
+            "KAT_Katmin"
         };
         magazines[] = { };
         requiredAddons[] = {

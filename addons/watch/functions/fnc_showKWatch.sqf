@@ -1,7 +1,8 @@
 #include "..\script_component.hpp"
 /*
  * Author: Garth 'L-H' de Wet
- * Displays the altimeter on screen.
+ * Modified: Mazinski
+ * Displays the KWatch on screen.
  *
  * Arguments:
  * 0: unit <OBJECT>
@@ -10,20 +11,20 @@
  * None
  *
  * Example:
- * [player] call ACE_Parachute_fnc_showAltimeter
+ * [player] call kat_watch_fnc_showKWatch
  *
  * Public: Yes
  */
 
 params ["_unit"];
 
-"KAT_Garmin" cutRsc ["KAT_Garmin", "PLAIN", 0, true];
+"KAT_Katmin" cutRsc ["KAT_Katmin", "PLAIN", 0, true];
 
-if (isNull (uiNamespace getVariable ["KAT_Garmin", displayNull])) exitWith {};
+if (isNull (uiNamespace getVariable ["KAT_Katmin", displayNull])) exitWith {};
 
-GVAR(GarminActive) = true;
+GVAR(KatminActive) = true;
 
-private _display = uiNamespace getVariable ["KAT_Garmin", displayNull];
+private _display = uiNamespace getVariable ["KAT_Katmin", displayNull];
 private _background = _display displayCtrl 19800;
 private _compass = _display displayCtrl 19801;
 private _sun = _display displayCtrl 19803;
@@ -41,11 +42,11 @@ private _temp = _display displayCtrl 22006;
     _this params ["_args", "_pfhID"];
     _args params ["_unit", "_compass", "_time", "_month", "_day", "_baro", "_hr", "_o2", "_temp", "_rain", "_overcast", "_sun"];
 
-    if !(GVAR(GarminActive)) exitWith {
+    if !(GVAR(KatminActive)) exitWith {
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
-    if !("KAT_Garmin" in assignedItems _unit) exitWith {
+    if !("KAT_Katmin" in assignedItems _unit) exitWith {
         call FUNC(hideAltimeter);
         _pfhID call CBA_fnc_removePerFrameHandler;
     };

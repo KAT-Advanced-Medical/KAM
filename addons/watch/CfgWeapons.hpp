@@ -1,10 +1,10 @@
 class CfgWeapons {
     class ItemWatch;
-    class KAT_Garmin: ItemWatch {
+    class KAT_Katmin: ItemWatch {
         ACE_hideItemType = "Watch";
         author = "Mazinski";        
-        descriptionShort = CSTRING(GarminDescription);
-        displayName = CSTRING(GarminDisplayName);
-        picture = QPATHTOF(UI\watch_garmin.paa);
+        descriptionShort = CSTRING(KatminDescription);
+        displayName = CSTRING(KatminDisplayName);
+        picture = QPATHTOF(UI\watch_katmin.paa);
     };
 };

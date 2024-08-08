@@ -5,14 +5,6 @@
 #define KAT_WATCH_GRID_X            ((safeZoneX + (safeZoneW - ((safeZoneW / safeZoneH) min 1.2)) / 11))
 #define KAT_WATCH_GRID_Y            ((safeZoneY + (safeZoneH - (((safeZoneW / safeZoneH) min 1.2) / 1.2)) / 0.8))
 
-#define KAT_WATCH_GRID_CENTER_W        KAT_WATCH_GRID_W
-#define KAT_WATCH_GRID_CENTER_H        KAT_WATCH_GRID_H
-#define KAT_WATCH_GRID_CENTER_X        (safezoneX + (safezoneW - KAT_WATCH_GRID_WAbs)/2)
-#define KAT_WATCH_GRID_CENTER_Y        (safezoneY + (safezoneH - KAT_WATCH_GRID_HAbs)/2)
-
-#define KAT_POS_X(N) ((N) * KAT_WATCH_GRID_W + KAT_WATCH_GRID_CENTER_X)
-#define KAT_POS_Y(N) ((N) * KAT_WATCH_GRID_H + KAT_WATCH_GRID_CENTER_Y)
-#define KAT_POS_W(N) ((N) * KAT_WATCH_GRID_W)
 #define KAT_POS_H(N) ((N) * KAT_WATCH_GRID_H)
 
 #define ST_LEFT 0
@@ -24,7 +16,7 @@ class RscPicture;
 class RscButton;
 class RscTitles
 {
-    class KAT_Garmin
+    class KAT_Katmin
     {
         idd = 19935;
         enableSimulation = 1;
@@ -32,47 +24,47 @@ class RscTitles
         fadeIn=0;
         fadeOut=1;
         duration = 10e10;
-        onLoad = "uiNamespace setVariable ['KAT_Garmin', _this select 0];";
+        onLoad = "uiNamespace setVariable ['KAT_Katmin', _this select 0];";
         class controls
         {
-            class GarminImage: RscPicture
+            class KatminImage: RscPicture
             {
                 idc = 19800;
-                text = "\x\kat\addons\watch\UI\watch_garmin.paa";
+                text = "\x\kat\addons\watch\UI\watch_katmin.paa";
                 x = "0.0328437 * safezoneW + safezoneX";
                 y = "0.622 * safezoneH + safezoneY";
                 w = "0.225 * safezoneW";
                 h = "0.4 * safezoneH";
             };
-            class GarminCompass: GarminImage
+            class KatminCompass: KatminImage
             {
                 idc = 19801;
-                text = "\x\kat\addons\watch\UI\watch_garmin_direction.paa";
+                text = "\x\kat\addons\watch\UI\watch_katmin_direction.paa";
             };
-            class GarminIcon: GarminImage
+            class KatminIcon: KatminImage
             {
                 idc = 19802;
                 text = "\x\kat\addons\watch\UI\watch_icon.paa";
             };
-            class GarminSun: GarminImage
+            class KatminSun: KatminImage
             {
                 idc = 19803;
                 text = "\x\kat\addons\watch\UI\watch_sun.paa";
                 show = 0;
             };
-            class GarminOvercast: GarminImage
+            class KatminOvercast: KatminImage
             {
                 idc = 19804;
                 text = "\x\kat\addons\watch\UI\watch_overcast.paa";
                 show = 0;
             };
-            class GarminRain: GarminImage
+            class KatminRain: KatminImage
             {
                 idc = 19805;
                 text = "\x\kat\addons\watch\UI\watch_rain.paa";
                 show = 0;
             };
-            class GarminTime: RscText
+            class KatminTime: RscText
             {
                 idc = 22000;
                 style = ST_CENTER;
@@ -87,7 +79,7 @@ class RscTitles
                 colorText[] = {1,1,1,1};
                 sizeEx = QUOTE(KAT_POS_H(2));
             };
-            class GarminMonth: RscText
+            class KatminMonth: RscText
             {
                 idc = 22001;
                 style = ST_LEFT;
@@ -102,7 +94,7 @@ class RscTitles
                 colorText[] = {1,1,1,1};
                 sizeEx = QUOTE(KAT_POS_H(0.8));
             };
-            class GarminDay: RscText
+            class KatminDay: RscText
             {
                 idc = 22002;
                 style = ST_RIGHT;
@@ -117,7 +109,7 @@ class RscTitles
                 colorText[] = {1,1,1,1};
                 sizeEx = QUOTE(KAT_POS_H(0.8));
             };
-            class GarminBaro: RscText
+            class KatminBaro: RscText
             {
                 idc = 22003;
                 style = ST_CENTER;
@@ -133,7 +125,7 @@ class RscTitles
                 colorText[] = {1,1,1,1};
                 sizeEx = QUOTE(KAT_POS_H(1.1));
             };
-            class GarminHR: RscText
+            class KatminHR: RscText
             {
                 idc = 22004;
                 style = ST_CENTER;
@@ -149,7 +141,7 @@ class RscTitles
                 colorText[] = {1,1,1,1};
                 sizeEx = QUOTE(KAT_POS_H(1.2));
             };
-            class GarminO2: RscText
+            class KatminO2: RscText
             {
                 idc = 22005;
                 style = ST_CENTER;
@@ -165,7 +157,7 @@ class RscTitles
                 colorText[] = {1,1,1,1};
                 sizeEx = QUOTE(KAT_POS_H(1.2));
             };
-            class GarminTemp: RscText
+            class KatminTemp: RscText
             {
                 idc = 22006;
                 style = ST_CENTER;

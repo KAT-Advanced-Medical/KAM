@@ -2,14 +2,14 @@
 
 if (!hasInterface) exitWith {};
 
-["KAT Watch", QGVAR(showGarmin), "Show Garmin", {
+["KAT Watch", QGVAR(showKatmin), "Show Katmin", {
     // Conditions: canInteract
-    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Garmin' in assignedItems ACE_player)}) exitWith { false };
+    if (!([ACE_player, objNull, ["isNotEscorting", "isNotInside"]] call ACEFUNC(common,canInteractWith)) || {!('KAT_Katmin' in assignedItems ACE_player)}) exitWith { false };
 
-    if !(GETMVAR(GVAR(GarminActive),false)) then {
-        [ACE_player] call FUNC(showAltimeter);
+    if !(GETMVAR(GVAR(KatminActive),false)) then {
+        [ACE_player] call FUNC(showKWatch);
     } else {
-        call FUNC(hideAltimeter);
+        call FUNC(hideKWatch);
     };
 
     true

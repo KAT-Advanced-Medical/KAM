@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KAT">
     <Package name="Watch">
-        <Key ID="STR_KAT_Watch_GarminDescription">
-            <English>Garmin G500</English>
+        <Key ID="STR_KAT_Watch_KatminDescription">
+            <English>Watch with Vital Monitoring Capabilities</English>
         </Key>
-        <Key ID="STR_KAT_Watch_GarminDisplayName">
-            <English>Garmin G500</English>
+        <Key ID="STR_KAT_Watch_KatminDisplayName">
+            <English>Katmin K500</English>
         </Key>
     </Package>
 </Project>
