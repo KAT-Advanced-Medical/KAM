@@ -255,7 +255,7 @@
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
             <English>Volatile anesthetic, used to suppress moderate pain</English>
             <Japanese>揮発性麻酔薬、 中程度の痛みを抑えるのに使用される</Japanese>
-            <Spanish>Anestésico volátil, utilizado para suprimir el dolor moderado</Spanish>
+            <Spanish>Anestésico inhalable, utilizado para suprimir el dolor moderado</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -2836,7 +2836,7 @@
             <English>Performance enhancing drug, used to suppress moderate pain</English>
             <Japanese>疲労の防止と回復に! 疲労をポンと取ってくれます。 中程度の鎮痛作用がある。</Japanese>
             <Polish>Środek zwiększający wydolność, stosowany do tłumienia umiarkowanego bólu</Polish>
-            <Spanish>Fármaco para mejorar el rendimiento, utilizado para suprimir el dolor moderador</Spanish>
+            <Spanish>Fármaco para mejorar el rendimiento, utilizado para suprimir el dolor moderado</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
