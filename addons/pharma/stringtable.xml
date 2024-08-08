@@ -165,6 +165,7 @@
         <Key ID="STR_KAT_Pharma_Painkillers_DescShort">
             <English>Combat Wound Medication Pill Pack&lt;br/&gt;Used to suppress minor pain and relieve blood incompatibility symptoms</English>
             <Japanese>戦闘傷病治療薬パック&lt;br/&gt;軽度の痛みを抑え、血液不適合による症状を緩和するために使用される</Japanese>
+            <Spanish>Paquete de medicación para heridas de combate. Se utiliza para suprimir el dolor leve y aliviar los síntomas de incompatibilidad sanguínea</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_Box_Display">
             <English>Combat Pill Pack</English>
@@ -254,6 +255,7 @@
         <Key ID="STR_KAT_Pharma_Penthrox_DescShort">
             <English>Volatile anesthetic, used to suppress moderate pain</English>
             <Japanese>揮発性麻酔薬、 中程度の痛みを抑えるのに使用される</Japanese>
+            <Spanish>Anestésico volátil, utilizado para suprimir el dolor moderado</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -1654,6 +1656,7 @@
         <Key ID="STR_KAT_Pharma_Ketamine_DescShort">
             <English>Dissociative anesthetics, used to suppress severe pain</English>
             <Japanese>解離性麻酔薬、 重度の痛みを抑えるのに使用される</Japanese>
+            <Spanish>Anestésico disociativo, utilizado para suprimir el dolor severo</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Fentanyl">
             <English>Push Fentanyl</English>
@@ -1689,6 +1692,7 @@
             <English>Opioid analgesic, used to suppress severe pain</English>
             <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia silnego bólu</Polish>
             <Japanese>オピオイド鎮痛薬、 重度の痛みを抑えるのに使用される</Japanese>
+            <Spanish>Analgésico opioide, utilizado para suprimir el dolor severo</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
@@ -1724,6 +1728,7 @@
             <English>Opioid analgesic, used to suppress moderate pain</English>
             <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia umiarkowanego bólu</Polish>
             <Japanese>オピオイド鎮痛薬、 中程度の痛みを抑えるのに使用される</Japanese>
+            <Spanish>Analgésico opioide, utilizado para suprimir el dolor moderador</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_reorientationChance">
             <English>Maximum Reorientation Success Chance</English>
@@ -2831,6 +2836,7 @@
             <English>Performance enhancing drug, used to suppress moderate pain</English>
             <Japanese>疲労の防止と回復に! 疲労をポンと取ってくれます。 中程度の鎮痛作用がある。</Japanese>
             <Polish>Środek zwiększający wydolność, stosowany do tłumienia umiarkowanego bólu</Polish>
+            <Spanish>Fármaco para mejorar el rendimiento, utilizado para suprimir el dolor moderador</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
@@ -2990,6 +2996,7 @@
             <English>Stimulates the central nervous system and energizes</English>
             <Japanese>中枢神経を刺激し、活力を与える</Japanese>
             <Polish>Stymuluje centralny układ nerwowy i dodaje energii</Polish>
+            <Spanish>Estimula el sistema nervioso central y aporta energía.</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Caffeine">
             <English>Take Caffeine</English>
@@ -3612,26 +3619,32 @@
         <Key ID="STR_KAT_Pharma_SubCategory_EpinephrineIV">
             <English>IV Epinephrine Settings</English>
             <Japanese>EACAが創傷を縫合するのに掛かる時間</Japanese>
+            <Spanish>Ajustes de Epinefrina IV</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_EpinephrineIV">
             <English>Medical level required for IV Epinephrine</English>
             <Japanese>アドレナリン静脈注射 (IV)の許可</Japanese>
+            <Spanish>Nivel médico requerido para Epinefrina IV</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_EpinephrineIV">
             <English>Treatment time for IV Epinephrine</English>
             <Japanese>アドレナリン静脈注射 (IV)の所要時間</Japanese>
+            <Spanish>Tiempo de tratamiento para Epinefrina IV</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_DescShort">
             <English>IV Epinephrine</English>
             <Japanese>アドレナリン静脈注射 (IV)</Japanese>
+            <Spanish>Epinefrina IV</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_displayName">
             <English>IV Epinephrine</English>
             <Japanese>アドレナリン静脈注射 (IV)</Japanese>
+            <Spanish>Epinefrina IV</Spanish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Epi">
             <English>Push Epinephrine</English>
             <Japanese>アドレナリンを注入</Japanese>
+            <Spanish>Administrar Epinefrina</Spanish>
         </Key>
     </Package>
 </Project>
