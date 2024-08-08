@@ -685,7 +685,7 @@ class CfgVehicles {
                         };
                     
                         class RedCross_NVG {
-                            displayName = CSTRING(Armband_Red_Cross_ItemName_NVG);
+                            displayName = CSTRING(Armband_Red_Cross_ItemName);
                             condition = QUOTE([ARR_2(_player,'kat_Armband_Red_Cross_NVG')] call ACEFUNC(common,hasItem));
                             statement = QUOTE([ARR_3(_player,'kat_Armband_Red_Cross_NVG',1)] call FUNC(slingArmband));
                             showDisabled = 0;
