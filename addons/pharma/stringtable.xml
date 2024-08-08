@@ -3550,18 +3550,23 @@
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_EpinephrineIV">
             <English>Medical level required for IV Epinephrine</English>
+            <Japanese>アドレナリン静脈注射 (IV)の許可</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_EpinephrineIV">
             <English>Treatment time for IV Epinephrine</English>
+            <Japanese>アドレナリン静脈注射 (IV)の所要時間</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_DescShort">
             <English>IV Epinephrine</English>
+            <Japanese>アドレナリン静脈注射 (IV)</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_displayName">
             <English>IV Epinephrine</English>
+            <Japanese>アドレナリン静脈注射 (IV)</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Epi">
             <English>Push Epinephrine</English>
+            <Japanese>アドレナリンを注入</Japanese>
         </Key>
     </Package>
 </Project>
