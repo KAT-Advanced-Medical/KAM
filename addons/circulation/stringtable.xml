@@ -2764,6 +2764,7 @@
             <Japanese>AED-X: 心拍: %1 血圧: --/-- SpO2: --- ETCo2: %2 呼吸数/分: %3</Japanese>
             <Russian>AED-X: ЧСС: %1 АД: --/-- SpO2: --- ETCo2: %2 Вдохи/мин: %3</Russian>
             <French>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Respirations/min: %3</French>
+            <Spanish>DEA-X: RC: %1 PS: --/-- SpO2: --- ETCo2: %2 Respiraciones/min: %3</Spanish>
             <Portuguese>DEA-X: FC: %1 PA: --/-- SpO2: --- ETCo2: %2 Respirações/min: %3</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor">
@@ -2771,6 +2772,7 @@
             <Japanese>AED-X: 脈拍: %1 血圧: %2/%3 SpO2: %4 ETCo2: %5 呼吸数/分: %6</Japanese>
             <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4 ETCo2: %5 Вдохи/мин: %6</Russian>
             <French>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respirations/min: %6</French>
+            <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4 ETCo2: %5 Respiraciones/min: %6</Spanish>
             <Portuguese>DEA-X: FP: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog_HasEtco2Monitor">
@@ -2778,6 +2780,7 @@
             <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4 ETCo2: %5 呼吸数/分: %6</Japanese>
             <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4  ETCo2: %5 Вдохи/мин: %6</Russian>
             <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Respirations/min: %6</French>
+            <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4  ETCo2: %5 Respiraciones/min: %6</Spanish>
             <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
