@@ -38,7 +38,7 @@ if (!local _unit) exitWith {};
     {
         _x params ["_medication"];
 
-        if (_medication in ["Epinephrine", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
+        if (_medication in ["Epinephrine", "EpinephrineIV", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
             _alpha = true;
         };
     } forEach (_medicationArray);

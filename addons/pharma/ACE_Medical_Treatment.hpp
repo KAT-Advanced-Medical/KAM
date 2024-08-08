@@ -37,7 +37,7 @@ class ACE_ADDON(Medical_Treatment) {
             maxDose = 6;
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
-            alphaFactor = 0.15;
+            alphaFactor = -0.15;
             onOverDose = "";
         };
         class EpinephrineIV {
@@ -50,7 +50,7 @@ class ACE_ADDON(Medical_Treatment) {
             maxDose = 4;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
-            alphaFactor = 0.3;
+            alphaFactor = -0.3;
             onOverDose = "";
         };
         class Morphine {
