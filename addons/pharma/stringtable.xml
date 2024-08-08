@@ -1679,18 +1679,8 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Fentanyl_DescShort">
             <English>Opioid analgesic, used to suppress severe pain</English>
-            <Chinesesimp>阿片类镇痛剂，用于抑制重度疼痛</Chinesesimp>
-            <Italian>Analgesico oppioide, usato per sopprimere il dolore grave</Italian>
-            <Czech>Opioidní analgetikum, používané k potlačení silné bolesti</Czech>
-            <French>Analgésique opioïde, utilisé pour supprimer la douleur sévère</French>
             <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia silnego bólu</Polish>
-            <Korean>오피오이드 진통제, 심한 통증을 억제하는 데 사용됩니다</Korean>
-            <German>Opioid-Analgetikum, verwendet zur Unterdrückung starker Schmerzen</German>
             <Japanese>オピオイド鎮痛薬、 重度の痛みを抑えるのに使用される</Japanese>
-            <Spanish>Analgésico opioide, utilizado para suprimir el dolor severo</Spanish>
-            <Portuguese>Analgésico opioide, usado para suprimir a dor severa</Portuguese>
-            <Finnish>Opioidinen analgeetti, käytetään voimakkaan kivun tukahduttamiseen</Finnish>
-            <Russian>Опиоидный анальгетик, используемый для подавления сильной боли</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
@@ -1724,18 +1714,8 @@
         </Key>
         <Key ID="STR_KAT_Pharma_Nalbuphine_DescShort">
             <English>Opioid analgesic, used to suppress moderate pain</English>
-            <Chinesesimp>阿片类镇痛剂，用于抑制中度疼痛</Chinesesimp>
-            <Italian>Analgesico oppioide, usato per sopprimere il dolore moderato</Italian>
-            <Czech>Opioidní analgetikum, používané k potlačení mírné bolesti</Czech>
-            <French>Analgésique opioïde, utilisé pour supprimer la douleur modérée</French>
             <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia umiarkowanego bólu</Polish>
-            <Korean>오피오이드 진통제, 중등도의 통증을 억제하는 데 사용됩니다</Korean>
-            <German>Opioid-Analgetikum, verwendet zur Unterdrückung mäßiger Schmerzen</German>
             <Japanese>オピオイド鎮痛薬、 中程度の痛みを抑えるのに使用される</Japanese>
-            <Spanish>Analgésico opioide, utilizado para suprimir el dolor moderado</Spanish>
-            <Portuguese>Analgésico opioide, usado para suprimir a dor moderada</Portuguese>
-            <Finnish>Opioidinen analgeetti, käytetään lievän kivun tukahduttamiseen</Finnish>
-            <Russian>Опиоидный анальгетик, используемый для подавления умеренной боли</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_reorientationChance">
             <English>Maximum Reorientation Success Chance</English>
