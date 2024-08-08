@@ -3617,5 +3617,8 @@
         <Key ID="STR_KAT_Pharma_EpinephrineIV_displayName">
             <English>IV Epinephrine</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_Take_Epi">
+            <English>Push Epinephrine</English>
+        </Key>
     </Package>
 </Project>
