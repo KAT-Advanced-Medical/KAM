@@ -200,6 +200,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class PhenylephrineAuto: Morphine {
         displayName = CSTRING(Take_Phenyl_Auto);
+        displayNameProgress = CSTRING(Using);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         items[] = {"kat_phenylephrineAuto"};
@@ -365,6 +366,17 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_Flumezenil);
         treatmentTime = QGVAR(treatmentTime_Flumazenil);
         items[] = {"kat_flumazenil"};
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
+    class EpinephrineIV: EACA {
+        displayName = CSTRING(Take_Epi);
+        displayNameProgress = CSTRING(Using);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_EpinephrineIV);
+        treatmentTime = QGVAR(treatmentTime_EpinephrineIV);
+        items[] = {"kat_epinephrineIV"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
