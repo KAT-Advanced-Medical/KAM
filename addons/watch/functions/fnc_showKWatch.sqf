@@ -66,9 +66,21 @@ private _temp = _display displayCtrl 22006;
     _compass ctrlCommit 0.05;
 
     _baro ctrlSetText ([(((getTerrainHeightASL (getPosATL _unit)) call ACEFUNC(weather,calculateBarometricPressure)) / 1.3), 1, 0] call CBA_fnc_formatNumber);
+
+    if (GVAR(pressureUnit) == 1) then {
+        _baro ctrlSetText ([(((getTerrainHeightASL (getPosATL _unit)) call ACEFUNC(weather,calculateBarometricPressure)) / 1.3), 1, 0] call CBA_fnc_formatNumber);
+    } else {
+        _baro ctrlSetText ([((getTerrainHeightASL (getPosATL _unit)) call ACEFUNC(weather,calculateBarometricPressure)), 1, 0] call CBA_fnc_formatNumber);
+    };
+
+    if (GVAR(temperatureUnit) == 1) then {
+        _temp ctrlSetText (format ["%1F", ([(((getTerrainHeightASL (getPosATL _unit)) call ACEFUNC(weather,calculateTemperatureAtHeight)) * (9/5) + 32), 1, 0] call CBA_fnc_formatNumber)]);
+    } else {
+        _temp ctrlSetText (format ["%1C", ([((getTerrainHeightASL (getPosATL _unit)) call ACEFUNC(weather,calculateTemperatureAtHeight)), 1, 0] call CBA_fnc_formatNumber)]);
+    };
+
     _hr ctrlSetText ([GET_HEART_RATE(_unit), 1, 0] call CBA_fnc_formatNumber);
     _o2 ctrlSetText ([(_unit getVariable [QEGVAR(breathing,airwayStatus), 100]), 1, 0] call CBA_fnc_formatNumber);
-    _temp ctrlSetText (format ["%1C", ([((getTerrainHeightASL (getPosATL _unit)) call ACEFUNC(weather,calculateTemperatureAtHeight)), 1, 0] call CBA_fnc_formatNumber)]);
 
     switch (true) do {
         case(rain != 0): { _rain ctrlShow true; _overcast ctrlShow false; _sun ctrlShow false; };
