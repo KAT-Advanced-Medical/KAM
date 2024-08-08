@@ -8,6 +8,7 @@
             <Japanese>呼吸モジュールを有効化</Japanese>
             <Russian>Активировать дыхательный модуль</Russian>
             <French>Activer le module de respiration</French>
+            <Portuguese>Ativar o Módulo de Respiração</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_ENABLE_DESC">
             <English>Sets if SPO2 simulation and according functionality like Pneumothorax and \nAirway: occlusion &amp; obstruction (SPO2 reduction will be deactivated) should be activated</English>
@@ -16,6 +17,7 @@
             <Japanese>SpO2のシミュレーションを気胸や気道:閉塞と異物などの機能で動作するように設定します。\n(SpO2減少機能は無効化されます)</Japanese>
             <Russian>Устанавливает, следует ли активировать имитацию SPO2 и соответствующие функции, такие как пневмоторакс и \дыхательные пути: окклюзия и обструкция (уменьшение SPO2 будет отключено)</Russian>
             <French>Définit si la simulation SpO2 et les fonctionnalités correspondantes telles que les pneumothorax et \nvoies respiratoires : occlusion &amp; obstruction (la réduction de la SPO2 sera désactivée) doivent être activées</French>
+            <Portuguese>Define se a simulação de SpO2 e suas funcionalidades como Pneumotórax e \nOclusão/Obstrução de Vias Aéreas (redução de SpO2 será desabilitada) deve ser habilitada.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_dieValue">
             <English>Lethal SpO2 value</English>
@@ -57,6 +59,7 @@
             <Spanish>Valor de SpO2 de parada cardíaca</Spanish>
             <Japanese>SpO2の心停止値</Japanese>
             <French>Valeur d'arrêt cardiaque de la SpO2</French>
+            <Portuguese>Valor de SpO2 para parada cardíaca</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_SpO2_cardiacActive">
             <English>Activate cardiac arrest SpO2 value</English>
@@ -64,6 +67,7 @@
             <Spanish>Activar parada cardíaca por valor de SpO2</Spanish>
             <Japanese>SpO2の心停止値を有効化</Japanese>
             <French>Activer la valeur d'arrêt cardique de la SpO2</French>
+            <Portuguese>Ativar parada cardíaca por valor de SpO2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_MultiplyPositive">
             <English>SpO2 positive multiplier</English>
@@ -146,42 +150,49 @@
             <Japanese>ETCo2モニタリングを有効化</Japanese>
             <French>Activer la mesure de ETCo2</French>
             <Russian>Включить мониторинг ETCo2</Russian>
+            <Portuguese>Habilitar monitoramento de ETCo2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2_Desc">
             <English>Sets if medics can view a patient's ETCo2 and Respiratory Rate in the Vitals Monitor when a device capable of monitoring ETCo2 is connected</English>
             <Japanese>呼気終末二酸化炭素(ETCo2)をモニタリングできるデバイスが接続されている場合に、衛生兵がバイタルモニターで患者のETCo2と呼吸数を表示できるかどうかを設定します。</Japanese>
             <French>Définit si les médecins peuvent afficher l’ETCo2 et la fréquence respiratoire d’un patient dans le moniteur des signes vitaux lorsqu’un appareil capable de surveiller l’ETCo2 est connecté</French>
             <Russian>Определяет, могут ли медики видеть ETCo2 пациента и частоту дыхания на мониторе жизненно важных показателей, когда подключено устройство, способное контролировать ETCo2</Russian>
+            <Portuguese>Define se um médico pode ver o ETCo2 e a Frequência Respiratória no Monitor de Sinais Vitais quando um dispositivo capaz de monitorar ETCo2 estiver conectado</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units">
             <English>Desired units for ETCo2 Monitoring</English>
             <Japanese>ETCo2モニタリングに必要なユニット</Japanese>
             <French>Unités souhaitées pour la mesure de ETCo2</French>
             <Russian>Необходимые устройства для мониторинга ETCo2</Russian>
+            <Portuguese>Unidades desejadas para monitoramento de ETCo2</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
             <Japanese>鼻カニューレの許可</Japanese>
             <French>Autoriser la canule nasale</French>
             <Russian>Разрешить использование Назальной Канюли</Russian>
+            <Portuguese>Permitir Cânula Nasal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula_Desc">
             <English>Training level required to insert a Nasal Cannula</English>
             <Japanese>鼻カニューレの挿入に必要な医療スキルのレベルを設定します。</Japanese>
             <French>Niveau d'entrainement nécessaire pour insérer la canule nasale</French>
             <Russian>Уровень подготовки, необходимый для установки Назальной Канюли</Russian>
+            <Portuguese>Nível de treinamento necessário para inserir uma Cânula Nasal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula">
             <English>Time for Nasal Cannula</English>
             <Japanese>鼻カニューレの所要時間</Japanese>
             <French>Temps d'insertion de la canule nasale</French>
             <Russian>Время для введения Назальной Канюли</Russian>
+            <Portuguese>Tempo para Cânula Nasal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula_Desc">
             <English>How long it will take to insert a Nasal Cannula</English>
             <Japanese>鼻カニューレの挿入にかかる時間を設定します</Japanese>
             <French>Durée nécessaire pour insérer la canule nasale</French>
             <Russian>Сколько времени потребуется, чтобы вставить Назальную Канюлю</Russian>
+            <Portuguese>Quanto tempo levará para inserir uma Cânula Nasal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -217,7 +228,7 @@
             <Portuguese>Remover Oxímetro de Pulso</Portuguese>
             <Finnish>Irrota pulssioksimetri</Finnish>
         </Key>
-        <Key ID="STR_KAT_Breathing_Pulseoximeter_Desc_Short">
+        <Key ID="STR_KAT_Breathing_Pulseoximeter">
             <English>Pulse Oximeter</English>
             <German>Pulsoximeter</German>
             <Polish>Pulsoksymetr</Polish>
@@ -233,6 +244,10 @@
             <Japanese>パルスオキシメーター</Japanese>
             <Portuguese>Oxímetro de Pulso</Portuguese>
             <Finnish>Pulssioksimetri</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Pulseoximeter_Desc_Short">
+            <English>Used to read pulse rate and SpO2</English>
+            <Japanese>脈拍数とSpO2を読み取るのに使用</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_placing">
             <English>Placing</English>
@@ -527,7 +542,7 @@
             <Italian>1x Emopneumotorace</Italian>
             <Russian>1x Гемопневмоторакс</Russian>
             <Japanese>1x 血気胸</Japanese>
-            <Portuguese>1x Hemopneumotórax</Portuguese>
+            <Portuguese>1x Hemotórax</Portuguese>
             <Finnish>1x hemopneumotoraksi</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_display">
@@ -718,6 +733,7 @@
             <Finnish>Prosenttiosuus mahdollisuus, joka määrittää, kehittyykö täysin heikentynyt ilmarinta pitkälle edenneeksi ilmarintaksi. Tämä lasketaan jatkuvasti pneumotoraksin etenemisajan mukaan.</Finnish>
             <Russian>Процентная вероятность, определяющая, перерастет ли пневмоторакс с полным ухудшением в запущенный пневмоторакс, непрерывно увеличивается в соответствии с заданным интервалом ухудшения состояния при пневмотораксе.</Russian>
             <German>Die Wahrscheinlichkeit in Prozent, welche bestimmt, ob sich ein vollständig verschlechterter Pneumothorax in einen fortgeschrittenen Pneumothorax entwickelt.\nDies wird fortlaufend, auf Basis des Pneumothorax Verschlechterungs Intervals, ermittelt.</German>
+            <Portuguese>A porcentagem de chance que determina se um pneumotórax completamente deteriorado irá se deteriorar em um pneumotórax avançado, isso é calculado continuamente conforme o intervalo de deterioração de pneumotórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_HEMOPNEUMOTHORAX_TREATMENT_LEVEL">
             <English>Hemothorax / Tension Pnuemothorax Treament Minimum Level</English>
@@ -815,7 +831,7 @@
             <French>Probabilité de blessure profonde</French>
             <Korean>깊은 관통상 확률</Korean>
             <German>Chance auf tiefgreifende Verletzungen</German>
-            <Portuguese>Probabilidade de lesão penetrante profunda</Portuguese>
+            <Portuguese>Probabilidade de ferimento profundo por penetração</Portuguese>
             <Spanish>Probabilidad de lesión de penetración profunda</Spanish>
             <Finnish>Mahdollisuus syvään tunkeutuvaan vammaan</Finnish>
             <Russian>Вероятность глубокого проникающего ранения</Russian>
@@ -826,7 +842,7 @@
             <French>Probabilité qu'une blessure profonde apparaisse lorsque le seuil de dommage du pneumothorax est dépassé, mais qu'aucun pneumothorax n'est infligé</French>
             <Korean>기흉 데미지 한계점을 넘겼지만 기흉에 걸리지 않은 경우 깊은 관통상에 걸릴 확률입니다.</Korean>
             <German>Es kann zu einer tiefgreifenden Verletzung kommen, wenn die Pneumothorax-Schadensschwelle überschritten wird, aber kein Pneumothorax verursacht wird</German>
-            <Portuguese>Probabilidade em que uma lesão penetrante profunda apareça quando o limite de dado para pneumotórax é ultrapassado, mas o pneumotórax não é inflingido</Portuguese>
+            <Portuguese>Probabilidade em que um ferimento profundo por penetração apareça quando o limite de dado para pneumotórax é ultrapassado, mas o pneumotórax não é inflingido</Portuguese>
             <Spanish>Probabilidad de que aparezca una lesión de penetración profunda cuando se supera el umbral de daño del neumotórax pero no se ha infligido un neumotórax</Spanish>
             <Finnish>Mahdollisuus syvään tunkeutuvaan vammaan syntyy, kun ilmarintakehän vaurioituminen on minimaalista, mutta ilmarintaa ei ole kehittynyt.</Finnish>
             <Russian>Вероятность получения глубокого проникающего ранения возникает, когда порог повреждения пневмотораксом превышен, но пневмоторакс не причинен</Russian>
@@ -837,7 +853,7 @@
             <French>Blessure profonde</French>
             <Korean>깊은 관통상</Korean>
             <German>Tiefgreifende Verletzung</German>
-            <Portuguese>Lesão penetrante profunda</Portuguese>
+            <Portuguese>Ferimento profundo por penetração</Portuguese>
             <Spanish>Lesión de penetración profunda</Spanish>
             <Finnish>Syvä tunkeutuva vamma</Finnish>
             <Russian>Глубокое проникающее ранение</Russian>
@@ -1340,6 +1356,7 @@
             <Spanish>Habilitar Parada por Pneumothorax</Spanish>
             <Japanese>気胸による心停止を有効にする</Japanese>
             <French>Activer l'arrêt dû au pneumothorax</French>
+            <Portuguese>Habilitar Parada por Pneumotórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_PneumothoraxArrest_DESCRIPTION">
             <English>Enables a chance for cardiac arrest following pneumothorax</English>
@@ -1347,6 +1364,7 @@
             <Spanish>Habilitar la probabilidad para parada cardíaca tras un pneumothorax</Spanish>
             <Japanese>気胸発生に付随して心停止となる可能性を有効化します</Japanese>
             <French>Active la chance qu'un arrêt cardiaque se produise en cas de pneumothorax</French>
+            <Portuguese>Habilita uma chance de parada cardíaca após o pneumotórax</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval">
             <English>Deteriorating pneumothorax arrest interval</English>
@@ -1354,6 +1372,7 @@
             <Spanish>Intervalo para paradapor deterioro pneumothorax</Spanish>
             <Japanese>気胸による心停止への悪化の間隔</Japanese>
             <French>Intervalle de détérioration du pneumothorax en arrêt</French>
+            <Portuguese>Intervalo de parada por pneumotórax deteriorado</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_arrestPneumothorax_interval_Desc">
             <English>After each interval a chance will be rolled whether or not a pneumothorax will result in cardiac arrest</English>
@@ -1361,6 +1380,7 @@
             <Spanish>Despues de cada intervalo se sorteará una probabilidad de que el pneumotórax resulte en una parada cardíaca.</Spanish>
             <Japanese>各間隔の後に気胸が心停止につながるかどうかがロールされます</Japanese>
             <French>Après chaque intervalle de temps, un pourcentage de chance sera lancé pour savoir si oui ou non le pneumothorax va résulter en un arrêt cardiaque</French>
+            <Portuguese>Após cada intervalo, será calculado se o pneumotórax vai resultar em uma parada cardíaca</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_SubCategory_Items">
             <English>Breathing items Settings</English>
@@ -1566,6 +1586,7 @@
             <Russian>Начало инсуффляций</Russian>
             <German>Beatmung hat begonnen</German>
             <Spanish>Iniciada asistencia respiratoria</Spanish>
+            <Portuguese>Ventilação com BVM iniciada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_UseBVM_PutAway">
             <English>Put away BVM</English>
@@ -2434,7 +2455,7 @@
             <French>TPTX</French>
             <Korean>긴장성 기흉</Korean>
             <German>SPTX</German>
-            <Portuguese>TPTX</Portuguese>
+            <Portuguese>PTXH</Portuguese>
             <Spanish>NTXT</Spanish>
             <Finnish>JSA</Finnish>
             <Russian>TPTX</Russian>
@@ -2455,24 +2476,28 @@
             <Japanese>鼻カニューレ</Japanese>
             <French>Canule nasale</French>
             <Russian>Назальная Канюля</Russian>
+            <Portuguese>Cânula Nasal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Desc_Short">
             <English>The Nasal Cannula can be inserted into a patient's nostrils and connected to a vitals monitor to record a patient's ETCo2 level and respiratory rate.</English>
             <Japanese>鼻カニューレを患者の鼻孔に挿入し、バイタルモニターに接続することで、患者の呼気終末二酸化炭素(ETCo2)レベルと呼吸数を記録することができます。</Japanese>
             <French>La canule nasale peut être insérée dans les narines d'un patient et connectée à un appareil de mesure de constantes vitales pour mesurer le taux de ETCo2 et la fréquence respiratoire du patient.</French>
             <Russian>Назальная канюля может быть вставлена в ноздри пациента и подключена к монитору жизненно важных функций для регистрации уровня ETCo2 у пациента и частоты дыхания.</Russian>
+            <Portuguese>A Cânula Nasal pode ser inserida nas narinas de um paciente e conectada ao monitor de sinais vitais para mensurar o nível de ETCo2 e a frequência respiratória.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_Cancel_NasalCannula">
             <English>Remove Nasal Cannula</English>
             <Japanese>鼻カニューレを取り除く</Japanese>
             <French>Retirer la canule nasale</French>
             <Russian>Удалить Назальную Канюлю</Russian>
+            <Portuguese>Remover Cânula Nasal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_NasalCannula_Log">
             <English>%1 removed Nasal Cannula</English>
             <Japanese>鼻カニューレを取り除いた</Japanese>
             <French>%1 a retiré la canule nasale</French>
             <Russian>%1 удалил Назальную Канюлю</Russian>
+            <Portuguese>%1 removeu a Cânula Nasal</Portuguese>
         </Key>
     </Package>
 </Project>
