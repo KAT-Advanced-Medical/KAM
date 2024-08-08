@@ -81,7 +81,7 @@ private _altitude = _display displayCtrl 22007;
     private _minute = floor ((dayTime - _hour) * 60);
 
     _time ctrlSetText (format ["%1:%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber]);    
-    _month ctrlSetText (["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"] select _monthNum);
+    _month ctrlSetText (["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"] select (_monthNum - 1));
     _day ctrlSetText (str(_dayNum));
 
     private _altitudeValue = (getPosASL _unit) select 2;

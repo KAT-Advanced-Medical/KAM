@@ -82,14 +82,15 @@ class RscTitles
             class KatminMonth: RscText
             {
                 idc = 22001;
-                style = ST_LEFT;
+                style = ST_RIGHT;
+                valign = "middle";
                 shadow = 0;
                 font = "PuristaBold";
                 text = "JAN"; //--- ToDo: Localize;
-                x = "0.159594 * safezoneW + safezoneX";
+                x = "0.157316 * safezoneW + safezoneX";
                 y = "0.8394 * safezoneH + safezoneY";
-                w = "0.020625 * safezoneW";
-                h = "0.011 * safezoneH";
+                w = "0.0257812 * safezoneW";
+                h = "0.013 * safezoneH";
                 colorBackground[] = {0,0,0,0};
                 colorText[] = {1,1,1,1};
                 sizeEx = QUOTE(KAT_POS_H(0.8));
@@ -98,13 +99,14 @@ class RscTitles
             {
                 idc = 22002;
                 style = ST_RIGHT;
+                valign = "middle";
                 shadow = 0;
                 font = "PuristaBold";
                 text = "01"; //--- ToDo: Localize;
-                x = "0.160625 * safezoneW + safezoneX";
+                x = "0.157316 * safezoneW + safezoneX";
                 y = "0.8525 * safezoneH + safezoneY";
-                w = "0.020625 * safezoneW";
-                h = "0.011 * safezoneH";
+                w = "0.0257812 * safezoneW";
+                h = "0.013 * safezoneH";
                 colorBackground[] = {0,0,0,0};
                 colorText[] = {1,1,1,1};
                 sizeEx = QUOTE(KAT_POS_H(0.8));
@@ -118,7 +120,7 @@ class RscTitles
                 font = "PuristaBold";
                 text = "760"; //--- ToDo: Localize;
                 x = "0.158625 * safezoneW + safezoneX";
-                y = "0.8084 * safezoneH + safezoneY";
+                y = "0.80844 * safezoneH + safezoneY";
                 w = "0.020625 * safezoneW";
                 h = "0.022 * safezoneH";
                 colorBackground[] = {0,0,0,0};
@@ -182,7 +184,7 @@ class RscTitles
                 font = "PuristaBold";
                 text = "1000";
                 x = "0.111219 * safezoneW + safezoneX";
-                y = "0.8084 * safezoneH + safezoneY";
+                y = "0.80844 * safezoneH + safezoneY";
                 w = "0.020625 * safezoneW";
                 h = "0.022 * safezoneH";
                 sizeEx = QUOTE(KAT_POS_H(0.95));
