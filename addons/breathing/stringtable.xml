@@ -151,6 +151,7 @@
             <French>Activer la mesure de ETCo2</French>
             <Russian>Включить мониторинг ETCo2</Russian>
             <Portuguese>Habilitar monitoramento de ETCo2</Portuguese>
+            <Spanish>Permitir monitoreo de ETCo2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Enable_Etco2_Desc">
             <English>Sets if medics can view a patient's ETCo2 and Respiratory Rate in the Vitals Monitor when a device capable of monitoring ETCo2 is connected</English>
@@ -158,6 +159,7 @@
             <French>Définit si les médecins peuvent afficher l’ETCo2 et la fréquence respiratoire d’un patient dans le moniteur des signes vitaux lorsqu’un appareil capable de surveiller l’ETCo2 est connecté</French>
             <Russian>Определяет, могут ли медики видеть ETCo2 пациента и частоту дыхания на мониторе жизненно важных показателей, когда подключено устройство, способное контролировать ETCo2</Russian>
             <Portuguese>Define se um médico pode ver o ETCo2 e a Frequência Respiratória no Monitor de Sinais Vitais quando um dispositivo capaz de monitorar ETCo2 estiver conectado</Portuguese>
+            <Spanish>Establece si los médicos puede ver el ETCo2 y la Frecuencia Respiratoria de una paciente en el monitor de Signos Vitales cuando se conecta un dispositivo capaz de monitorear ETCo2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Select_Etco2_Units">
             <English>Desired units for ETCo2 Monitoring</English>
@@ -165,6 +167,7 @@
             <French>Unités souhaitées pour la mesure de ETCo2</French>
             <Russian>Необходимые устройства для мониторинга ETCo2</Russian>
             <Portuguese>Unidades desejadas para monitoramento de ETCo2</Portuguese>
+            <Spanish>Unidades deseadas para el monitoreo de ETCo2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula">
             <English>Allow Nasal Cannula</English>
@@ -172,6 +175,7 @@
             <French>Autoriser la canule nasale</French>
             <Russian>Разрешить использование Назальной Канюли</Russian>
             <Portuguese>Permitir Cânula Nasal</Portuguese>
+            <Spanish>Permitir cánula nasal</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Allow_NasalCannula_Desc">
             <English>Training level required to insert a Nasal Cannula</English>
@@ -179,6 +183,7 @@
             <French>Niveau d'entrainement nécessaire pour insérer la canule nasale</French>
             <Russian>Уровень подготовки, необходимый для установки Назальной Канюли</Russian>
             <Portuguese>Nível de treinamento necessário para inserir uma Cânula Nasal</Portuguese>
+            <Spanish>Nivel de formación requerido para insertar una cánula nasal</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula">
             <English>Time for Nasal Cannula</English>
@@ -186,6 +191,7 @@
             <French>Temps d'insertion de la canule nasale</French>
             <Russian>Время для введения Назальной Канюли</Russian>
             <Portuguese>Tempo para Cânula Nasal</Portuguese>
+            <Spanish>Tiempo de la cánula nasal</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_SETTING_Time_NasalCannula_Desc">
             <English>How long it will take to insert a Nasal Cannula</English>
@@ -193,6 +199,7 @@
             <French>Durée nécessaire pour insérer la canule nasale</French>
             <Russian>Сколько времени потребуется, чтобы вставить Назальную Канюлю</Russian>
             <Portuguese>Quanto tempo levará para inserir uma Cânula Nasal</Portuguese>
+            <Spanish>Tiempo necesario para insertar una cánula nasal</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Pulseoximeter_Display">
             <English>Attach Pulse Oximeter</English>
@@ -542,7 +549,7 @@
             <Italian>1x Emopneumotorace</Italian>
             <Russian>1x Гемопневмоторакс</Russian>
             <Japanese>1x 血気胸</Japanese>
-            <Portuguese>1x Hemopneumotórax</Portuguese>
+            <Portuguese>1x Hemotórax</Portuguese>
             <Finnish>1x hemopneumotoraksi</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_display">
@@ -2455,7 +2462,7 @@
             <French>TPTX</French>
             <Korean>긴장성 기흉</Korean>
             <German>SPTX</German>
-            <Portuguese>TPTX</Portuguese>
+            <Portuguese>PTXH</Portuguese>
             <Spanish>NTXT</Spanish>
             <Finnish>JSA</Finnish>
             <Russian>TPTX</Russian>
@@ -2477,6 +2484,7 @@
             <French>Canule nasale</French>
             <Russian>Назальная Канюля</Russian>
             <Portuguese>Cânula Nasal</Portuguese>
+            <Spanish>Cánula Nasal</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_NasalCannula_Desc_Short">
             <English>The Nasal Cannula can be inserted into a patient's nostrils and connected to a vitals monitor to record a patient's ETCo2 level and respiratory rate.</English>
@@ -2484,6 +2492,7 @@
             <French>La canule nasale peut être insérée dans les narines d'un patient et connectée à un appareil de mesure de constantes vitales pour mesurer le taux de ETCo2 et la fréquence respiratoire du patient.</French>
             <Russian>Назальная канюля может быть вставлена в ноздри пациента и подключена к монитору жизненно важных функций для регистрации уровня ETCo2 у пациента и частоты дыхания.</Russian>
             <Portuguese>A Cânula Nasal pode ser inserida nas narinas de um paciente e conectada ao monitor de sinais vitais para mensurar o nível de ETCo2 e a frequência respiratória.</Portuguese>
+            <Spanish>La cánula nasal se puede insertar en las fosas nasales de un paciente y conectarse a un monitor de signos vitales para registrar el nivel de ETCo2 y la frecuencia respiratoria del paciente.</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Cancel_NasalCannula">
             <English>Remove Nasal Cannula</English>
@@ -2491,6 +2500,7 @@
             <French>Retirer la canule nasale</French>
             <Russian>Удалить Назальную Канюлю</Russian>
             <Portuguese>Remover Cânula Nasal</Portuguese>
+            <Spanish>Quitar la cánula nasal</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_Remove_NasalCannula_Log">
             <English>%1 removed Nasal Cannula</English>
@@ -2498,6 +2508,7 @@
             <French>%1 a retiré la canule nasale</French>
             <Russian>%1 удалил Назальную Канюлю</Russian>
             <Portuguese>%1 removeu a Cânula Nasal</Portuguese>
+            <Spanish>%1 retiró la cánula nasal</Spanish>
         </Key>
     </Package>
 </Project>

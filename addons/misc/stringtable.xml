@@ -8,6 +8,7 @@
             <Japanese>KAT 装備品</Japanese>
             <Russian>Оборудование KAT</Russian>
             <French>Equipement KAT</French>
+            <Portuguese>Equipamento KAT</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ENABLE">
             <English>ACE-Misc activated?</English>
@@ -398,6 +399,7 @@
             <French>Paramètres du garrot</French>
             <German>Tourniquet Einstellungen</German>
             <Russian>Настройки жгута</Russian>
+            <Portuguese>Configurações de torniquete</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable">
             <English>Enable tourniquet effects</English>
@@ -406,6 +408,7 @@
             <French>Activer les effets du garrot</French>
             <German>Erlaube Tourniquet Effekte</German>
             <Russian>Включить эффект наложения жгута</Russian>
+            <Portuguese>Habilitar efeitos de torniquete</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier">
             <English>Tourniquet effects positive multiplier</English>
@@ -414,6 +417,7 @@
             <French>Multiplicateur positif des effets du garrot</French>
             <German>Tourniquet Effekt positiver Multiplikator</German>
             <Russian>Положительный множитель эффекта жгута</Russian>
+            <Portuguese>Multiplicador positivo de efeitos de torniquete</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier">
             <English>Tourniquet effects negative multiplier</English>
@@ -423,6 +427,7 @@
             <Finnish>Tourniquet-vaikutusten negatiivinen kerroin</Finnish>
             <German>Tourniquet Effekt negativer Multiplikator</German>
             <Russian>Отрицательный множитель эффекта жгута</Russian>
+            <Portuguese>Multiplicador negativo de efeitos de torniquete</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>
@@ -1032,6 +1037,7 @@
             <French>(TIC) Trousse individuelle du combattant</French>
             <Finnish>(IFAK) Yksilöllinen ensiapulaukku</Finnish>
             <Russian>(IFAK) Индивидуальная аптечка первой помощи</Russian>
+            <Portuguese>(KPSI) Kit de Primeiros Socorros Individual</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_MFAK">
             <English>(MFAK) Multiple First Aid Kit</English>
@@ -1041,6 +1047,7 @@
             <French>(MFAK) Trousse de secours multiple</French>
             <Finnish>(MFAK) Useita ensiapulaukkuja</Finnish>
             <Russian>(MFAK) Многофункциональная аптечка первой помощи</Russian>
+            <Portuguese>(KPSM) Kit de Primeiros Socorros Múltiplo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_AFAK">
             <English>(AFAK) Advanced First Aid Kit</English>
@@ -1050,6 +1057,7 @@
             <French>(AFAK) Trousse de secours avancée</French>
             <Finnish>(AFAK) Edistyksellinen ensiapulaukku</Finnish>
             <Russian>(AFAK) Усовершенствованная аптечка первой помощи</Russian>
+            <Portuguese>(KPSA) Kit de Primeiros Socorros Avançado</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container">
             <English>Items unload Container</English>
@@ -1186,6 +1194,7 @@
             <French>Trousse individuelle du combattant</French>
             <Finnish>Yksilöllinen ensiapulaukku</Finnish>
             <Russian>Индивидуальная аптечка первой помощи</Russian>
+            <Portuguese>Kit de Primeiros Socorros Individual</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_DESC">
             <English>The IFAK can be unpacked to provide useful medical items</English>
@@ -1195,6 +1204,7 @@
             <French>La TIC peut être déballée pour récupérer des objets médicaux utiles</French>
             <Finnish>IFAK voidaan purkaa pakkauksesta hyödyllisten lääketieteellisten tarvikkeiden saamiseksi</Finnish>
             <Russian>IFAK можно распаковать, чтобы получить полезные медицинские принадлежности</Russian>
+            <Portuguese>O KPSI pode ser desembalado para prover itens médicos úteis</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Display">
             <English>Multiple First Aid Kit</English>
@@ -1204,6 +1214,7 @@
             <French>Trousse de secours multiple</French>
             <Finnish>Useita ensiapulaukkuja</Finnish>
             <Russian>Многофункциональная аптечка первой помощи</Russian>
+            <Portuguese>Kit de Primeiros Socorros Múltiplo</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_DESC">
             <English>The MFAK can be unpacked to provide useful medical items</English>
@@ -1213,6 +1224,7 @@
             <French>La MFAK peut être déballée pour récupérer des objets médicaux utiles</French>
             <Finnish>MFAK voidaan purkaa pakkauksesta hyödyllisten lääketieteellisten tarvikkeiden saamiseksi</Finnish>
             <Russian>MFAK можно распаковать, чтобы получить полезные медицинские принадлежности</Russian>
+            <Portuguese>O KPSM pode ser desembalado para prover itens médicos úteis</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Display">
             <English>Advanced First Aid Kit</English>
@@ -1222,6 +1234,7 @@
             <French>Trousse de secours avancée</French>
             <Finnish>Edistyksellinen ensiapulaukku</Finnish>
             <Russian>Усовершенствованная аптечка первой помощи</Russian>
+            <Portuguese>Kit de Primeiros Socorros Avançado</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_DESC">
             <English>The AFAK can be unpacked to provide useful medical items</English>
@@ -1231,6 +1244,7 @@
             <French>La AFAK peut être déballée pour récupérer des objets médicaux utiles</French>
             <Finnish>AFAK voidaan purkaa pakkauksestaan hyödyllisten lääketieteellisten tarvikkeiden saamiseksi</Finnish>
             <Russian>AFAK можно распаковать, чтобы получить полезные медицинские принадлежности</Russian>
+            <Portuguese>O KPSA pode ser desembalado para prover itens médicos úteis</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Unpack">
             <English>IFAK</English>
@@ -1240,6 +1254,7 @@
             <French>TIC</French>
             <Finnish>IFAK</Finnish>
             <Russian>IFAK</Russian>
+            <Portuguese>KPSI</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Unpack">
             <English>MFAK</English>
@@ -1249,6 +1264,7 @@
             <French>MFAK</French>
             <Finnish>MFAK</Finnish>
             <Russian>MFAK</Russian>
+            <Portuguese>KPSM</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Unpack">
             <English>AFAK</English>
@@ -1258,6 +1274,7 @@
             <French>AFAK</French>
             <Finnish>AFAK</Finnish>
             <Russian>AFAK</Russian>
+            <Portuguese>KPSA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_DisplayItems">
             <English>View Packing List</English>
@@ -1266,6 +1283,7 @@
             <Japanese>内容物リストを見る</Japanese>
             <Russian>Просмотреть упаковочный лист</Russian>
             <French>Voir la liste de remplissage</French>
+            <Portuguese>Ver lista</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Hint">
             <English>Trauma Section:</English>
@@ -1274,6 +1292,7 @@
             <Japanese>外傷枠:</Japanese>
             <Russian>Раздел травм:</Russian>
             <French>Section de traumatologie :</French>
+            <Portuguese>Seção de trauma:</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Hint">
             <English>Bandage Section:</English>
@@ -1282,6 +1301,7 @@
             <Japanese>包帯枠:</Japanese>
             <Russian>Раздел перевязок:</Russian>
             <French>Section de bandages :</French>
+            <Portuguese>Seção de bandagens:</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Hint">
             <English>Pain Management Section:</English>
@@ -1290,6 +1310,7 @@
             <Japanese>鎮痛枠:</Japanese>
             <Russian>Раздел обезбаливающих:</Russian>
             <French>Section de régulation de la douleur :</French>
+            <Portuguese>Seção de gerenciamento de dor:</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Hint">
             <English>Breathing Section:</English>
@@ -1298,6 +1319,7 @@
             <Japanese>呼吸枠:</Japanese>
             <Russian>Раздел дыхательной системы:</Russian>
             <French>Section d'articles respiratoires :</French>
+            <Portuguese>Seção de respiração:</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Hint">
             <English>Airway Section:</English>
@@ -1306,6 +1328,7 @@
             <Japanese>気道枠:</Japanese>
             <Russian>Раздел дыхательных путей:</Russian>
             <French>Section des voies aériennes :</French>
+            <Portuguese>Seção de vias aéreas:</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Hint">
             <English>Pharmaceutical Section:</English>
@@ -1314,6 +1337,7 @@
             <Japanese>薬品枠:</Japanese>
             <Russian>Раздел фармацевтики:</Russian>
             <French>Section pharmaceutique :</French>
+            <Portuguese>Seção farmacêutica:</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Hint">
             <English>Fluid Section:</English>
@@ -1322,6 +1346,7 @@
             <Japanese>輸液枠:</Japanese>
             <Russian>Раздел жидкостей:</Russian>
             <French>Section des fluides :</French>
+            <Portuguese>Seção de flúidos:</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Hint">
             <English>Miscellaneous Section:</English>
@@ -1330,6 +1355,7 @@
             <Japanese>雑多枠:</Japanese>
             <Russian>Раздел прочего:</Russian>
             <French>Sections autres :</French>
+            <Portuguese>Seção miscelânea:</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1">
             <English>Unpack Trauma Section</English>
@@ -1338,6 +1364,7 @@
             <Japanese>外傷枠を 開梱する</Japanese>
             <Russian>Распаковать раздел травм</Russian>
             <French>Déballer la section de traumatologie</French>
+            <Portuguese>Descompactar seção de trauma</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2">
             <English>Unpack Bandage Section</English>
@@ -1346,6 +1373,7 @@
             <Japanese>包帯枠を 開梱する</Japanese>
             <Russian>Распаковать раздел перевязок</Russian>
             <French>Déballer la section de bandages</French>
+            <Portuguese>Descompactar seção de bandagem</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3">
             <English>Unpack Pain Management Section</English>
@@ -1354,6 +1382,7 @@
             <Japanese>鎮痛枠を 開梱する</Japanese>
             <Russian>Распаковать раздел обезбаливающих</Russian>
             <French>Déballer la section de régulation de la douleur</French>
+            <Portuguese>Descompactar seção de gerenciamento de dor</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4">
             <English>Unpack Breathing Section</English>
@@ -1362,6 +1391,7 @@
             <Japanese>呼吸枠を 開梱する</Japanese>
             <Russian>Распаковать разде дыхательной системы</Russian>
             <French>Déballer la section d'articles respiratoires</French>
+            <Portuguese>Descompactar seção de respiração</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5">
             <English>Unpack Airway Section</English>
@@ -1370,6 +1400,7 @@
             <Japanese>気道枠を 開梱する</Japanese>
             <Russian>Распаковать раздел дыхательных путей</Russian>
             <French>Déballer la section des voies aériennes</French>
+            <Portuguese>Descompactar seção de vias aéreas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6">
             <English>Unpack Pharmaceutical Section</English>
@@ -1378,6 +1409,7 @@
             <Japanese>薬品枠を 開梱する</Japanese>
             <Russian>Распаковатьраздел фармацевтики</Russian>
             <French>Déballer la section pharmaceutique</French>
+            <Portuguese>Descompactar seção farmacêutica</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7">
             <English>Unpack Fluid Section</English>
@@ -1386,6 +1418,7 @@
             <Japanese>輸液枠を 開梱する</Japanese>
             <Russian>Распаковать раздел жидкостей</Russian>
             <French>Déballer la section des fluides</French>
+            <Portuguese>Descompactar seção de fluidos</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8">
             <English>Unpack Miscellaneous Section</English>
@@ -1394,6 +1427,7 @@
             <Japanese>雑多枠を 開梱する</Japanese>
             <Russian>Распаковать раздел прочего</Russian>
             <French>Déballer la section autres</French>
+            <Portuguese>Descompactar seção miscelânea</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Repack">
             <English>Repack Trauma Section</English>
@@ -1402,6 +1436,7 @@
             <Japanese>外傷枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел травм</Russian>
             <French>Remballer la section de traumatologie</French>
+            <Portuguese>Compactar seção de trauma</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Repack">
             <English>Repack Bandage Section</English>
@@ -1410,6 +1445,7 @@
             <Japanese>包帯枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел перевязок</Russian>
             <French>Remballer la section de bandages</French>
+            <Portuguese>Compactar seção de bandagem</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Repack">
             <English>Repack Pain Management Section</English>
@@ -1418,6 +1454,7 @@
             <Japanese>鎮痛枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел обезбаливающих</Russian>
             <French>Remballer la section de régulation de la douleur</French>
+            <Portuguese>Compactar seção de gerenciamento de dor</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Repack">
             <English>Repack Breathing Section</English>
@@ -1426,6 +1463,7 @@
             <Japanese>呼吸枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел дыхательной системы</Russian>
             <French>Remballer la section d'articles respiratoires</French>
+            <Portuguese>Compactar seção de respiração</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Repack">
             <English>Repack Airway Section</English>
@@ -1434,6 +1472,7 @@
             <Japanese>気道枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел дыхательных путей</Russian>
             <French>Remballer la section des voies aériennes</French>
+            <Portuguese>Compactar seção de vias aéreas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Repack">
             <English>Repack Pharmaceutical Section</English>
@@ -1442,6 +1481,7 @@
             <Japanese>薬品枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел фармацевтики</Russian>
             <French>Remballer la section pharmaceutique</French>
+            <Portuguese>Compactar seção farmacêutica</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Repack">
             <English>Repack Fluid Section</English>
@@ -1450,6 +1490,7 @@
             <Japanese>輸液枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел жидкостей</Russian>
             <French>Remballer la section des fluides</French>
+            <Portuguese>Compactar seção de fluidos</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Repack">
             <English>Repack Miscellaneous Section</English>
@@ -1458,6 +1499,7 @@
             <Japanese>雑多枠を 再梱包する</Japanese>
             <Russian>Перепаковать раздел прочего</Russian>
             <French>Remballer la section autres</French>
+            <Portuguese>Compactar seção miscelânea</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor">
             <English>Hint Item Color</English>
@@ -1539,6 +1581,7 @@
             <Russian>Использвать хир.набор (на всё тело)</Russian>
             <Spanish>Utilizar kit quirúrgico (cuerpo completo)</Spanish>
             <French>Utiliser la trousse chirurgicale (Corps complet)</French>
+            <Portuguese>Utilizar kit cirúrgico (corpo inteiro)</Portuguese>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody">
             <English>Enable Full Body Stitching</English>

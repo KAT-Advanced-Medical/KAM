@@ -364,6 +364,25 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// EpinephrineIV Settings Category
+[
+    QGVAR(medLvl_EpinephrineIV),
+    "LIST",
+    [LLSTRING(medLvl_EpinephrineIV)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_EpinephrineIV)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_EpinephrineIV),
+    "SLIDER",
+    [LLSTRING(treatmentTime_EpinephrineIV)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_EpinephrineIV)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 // Norepinephrine Settings Category
 [
     QGVAR(medLvl_Norepinephrine),
@@ -708,7 +727,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     [LLSTRING(SETTING_Coagulation_allow_TXA_script), LLSTRING(SETTING_Coagulation_allow_TXA_script_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [false],
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -717,7 +736,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     [LLSTRING(SETTING_Coagulation_allow_EACA_script), LLSTRING(SETTING_Coagulation_allow_EACA_script_DESC)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Coagulation)],
-    [false],
+    [true],
     true
 ] call CBA_Settings_fnc_init;
 

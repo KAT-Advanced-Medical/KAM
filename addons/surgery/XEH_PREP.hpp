@@ -8,6 +8,7 @@ PREP(fullHealLocal);
 PREP(getNPWTTime);
 PREP(gui_updateInjuryListPart);
 PREP(hasAdditionalTourniquetAppliedTo);
+PREP(handleRespawn);
 PREP(incision);
 PREP(incisionLocal);
 PREP(init);
