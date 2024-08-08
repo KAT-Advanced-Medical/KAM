@@ -235,7 +235,7 @@
             <Portuguese>Remover Oxímetro de Pulso</Portuguese>
             <Finnish>Irrota pulssioksimetri</Finnish>
         </Key>
-        <Key ID="STR_KAT_Breathing_Pulseoximeter_Desc_Short">
+        <Key ID="STR_KAT_Breathing_Pulseoximeter">
             <English>Pulse Oximeter</English>
             <German>Pulsoximeter</German>
             <Polish>Pulsoksymetr</Polish>
@@ -251,6 +251,10 @@
             <Japanese>パルスオキシメーター</Japanese>
             <Portuguese>Oxímetro de Pulso</Portuguese>
             <Finnish>Pulssioksimetri</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Breathing_Pulseoximeter_Desc_Short">
+            <English>Used to read pulse rate and SpO2</English>
+            <Japanese>脈拍数とSpO2を読み取るのに使用</Japanese>
         </Key>
         <Key ID="STR_KAT_Breathing_placing">
             <English>Placing</English>
@@ -545,7 +549,7 @@
             <Italian>1x Emopneumotorace</Italian>
             <Russian>1x Гемопневмоторакс</Russian>
             <Japanese>1x 血気胸</Japanese>
-            <Portuguese>1x Hemopneumotórax</Portuguese>
+            <Portuguese>1x Hemotórax</Portuguese>
             <Finnish>1x hemopneumotoraksi</Finnish>
         </Key>
         <Key ID="STR_KAT_Breathing_tensionpneumothorax_display">
@@ -2458,7 +2462,7 @@
             <French>TPTX</French>
             <Korean>긴장성 기흉</Korean>
             <German>SPTX</German>
-            <Portuguese>TPTX</Portuguese>
+            <Portuguese>PTXH</Portuguese>
             <Spanish>NTXT</Spanish>
             <Finnish>JSA</Finnish>
             <Russian>TPTX</Russian>

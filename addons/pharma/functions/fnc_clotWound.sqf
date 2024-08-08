@@ -47,14 +47,14 @@ private _fnc_clotWound = {
                 case "Medium": {
                     _woundClotTime = round ((random (_coagulation_time_medium / 2)) + _coagulation_time_medium / 2);
                     _bandageToUse = "BloodClotMedium";
-                    _factorCountToRemove = 1.5;
+                    _factorCountToRemove = 2;
 
                     if !(missionNamespace getVariable [QGVAR(coagulation_allow_MediumWounds), true]) then { continue; };
                 };
                 default {
                     _woundClotTime = round ((random (_coagulation_time_large / 2)) + _coagulation_time_large / 2);
                     _bandageToUse = "BloodClotLarge";
-                    _factorCountToRemove = 2;
+                    _factorCountToRemove = 4;
 
                     if !(missionNamespace getVariable [QGVAR(coagulation_allow_LargeWounds), true]) then { continue; };
                 };
@@ -76,7 +76,7 @@ private _fnc_clotWound = {
                 [{
                     params["_unit", "_bodyPart", "_selectionName", "_bandageToUse", "_logString", "_factorCountToRemove"];
 
-                    private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 15];
+                    private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 30];
                     private _openWounds = GET_OPEN_WOUNDS(_unit);
                     private _openWoundsOnPart = _openWounds getOrDefault [_bodyPart, []];
                     private _woundIndex = _openWoundsOnPart findIf {(_x select 1) > 0 && (_x select 2) > 0};
@@ -112,7 +112,7 @@ private _fnc_clotWound = {
 
     private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, createHashmap];
     private _pulse = _unit getVariable [VAR_HEART_RATE, 80];
-    private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 15];
+    private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 30];
     private _countTXA = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
     private _countEACA = [_unit, "EACA"] call ACEFUNC(medical_status,getMedicationCount);
     private _hasWoundToBandageArray = [];

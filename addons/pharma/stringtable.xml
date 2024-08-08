@@ -166,16 +166,19 @@
             <English>Combat Wound Medication Pill Pack. Used to suppresses pain</English>
             <Japanese>戦闘傷病治療薬パック。 痛みを抑えるために使用される</Japanese>
             <Spanish>Paquete de medicación para heridas de combate. Se utiliza para suprimir el dolor</Spanish>
+            <Portuguese>Utilizados para supressão de dor.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_Box_Display">
             <English>Combat Pill Pack</English>
             <Japanese>戦闘治療薬パック</Japanese>
             <Spanish>Paquete de Comprimidos de Combate</Spanish>
+            <Portuguese>Comprimidos de Combate</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Give_CWMP">
             <English>Use CWMP</English>
             <Japanese>戦闘傷病治療薬を投与</Japanese>
             <Spanish>Usar CWMP</Spanish>
+            <Portuguese>Utilizar Comprimidos de Combate</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
@@ -445,7 +448,7 @@
             <Czech>Atropin</Czech>
             <Japanese>アトロピン</Japanese>
             <Russian>Атропин</Russian>
-            <Portuguese>Atropina</Portuguese>
+            <Portuguese>Autoinjetor de Atropina</Portuguese>
             <Finnish>Atropiini</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Atropine">
@@ -479,7 +482,7 @@
             <Czech>Podporuje tvorbu sraženin</Czech>
             <Japanese>血液凝固を促進し、出血を抑えます</Japanese>
             <Russian>Способствует образованию тромбов</Russian>
-            <Portuguese>Favorece a coagulação</Portuguese>
+            <Portuguese>Intensifica a coagulação</Portuguese>
             <Finnish>Edistää verihyytymien muodostumista</Finnish>
         </Key>
         <Key ID="STR_KAT_Pharma_TXA_Box_Display">
@@ -624,6 +627,7 @@
             <Spanish>Autoinyector de Fenilefrina</Spanish>
             <Japanese>フェニレフリン自動注射器</Japanese>
             <French>Autoinjecteur de Phényléphrine</French>
+            <Portuguese>Autoinjetor de Fenilefrina</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Phenyl_Auto">
             <English>Inject Phenylephrine</English>
@@ -1038,6 +1042,7 @@
             <Russian>Требовать установки IV/IO</Russian>
             <Spanish>Los Fluidos requieren que se inserte la IV/IO</Spanish>
             <French>Les fluides nécessitent une IV/IO insérée</French>
+            <Portuguese>Fluido necessita de inserção IV/IO</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to give someone saline/blood/plasma. \nIf false, it retains standard ACE behaviour for using saline/blood/plasma.</English>
@@ -1093,6 +1098,7 @@
             <German>Blutentnahme benötigt IV/IO</German>
             <Spanish>La Extracción de Sangre Requiere la IV/IO</Spanish>
             <French>La prise de sang nécessite une IV/IO</French>
+            <Portuguese>Extração de sangue necessita de IV/IO</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_REQUIRE_INS_IV_BLOOD_DRAW_DESC">
             <English>Default false. If true, you will need to insert IV/IO first before being able to draw blood from someone. \nIf false, you can draw without it.</English>
@@ -1101,6 +1107,7 @@
             <German>Steuert, ob eine IV/IO vorhanden sein muss, um Blut abnehmen zu könnnen./nStandard: falsch</German>
             <Spanish>Falso por defecto. Si se habilita, necesitarás insertar primero la IV/IO para poder extraer sangre de alguien. \nSi falso, puedes extraer sangre sin ello.</Spanish>
             <French>Désactivé par défaut. Si activé, vous devrez d’abord insérer une IV/IO avant de pouvoir prélever du sang sur quelqu’un. \nSi désactivé, vous pouvez effectuer une prise de sang sans IV/IO.</French>
+            <Portuguese>Desativado, por padrão. Quando ativado, você precisará inserir IV/IO primeiro antes de poder retirar sangue de alguém. \nSe desativado, você pode retirar sem ele.</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -3021,7 +3028,7 @@
             <Japanese>カフェインボトル</Japanese>
             <Korean>카페인 병</Korean>
             <Italian>Bottiglia di Caffeina</Italian>
-            <Portuguese>Garrafa de cafeína</Portuguese>
+            <Portuguese>Garrafa de Cafeína</Portuguese>
             <Polish>Kofeina</Polish>
             <Spanish>Bote de cafeina</Spanish>
             <Czech>Kofeinová lahev</Czech>
@@ -3067,7 +3074,7 @@
             <Polish>Wspomaga powstawanie skrzepów</Polish>
             <Japanese>血液凝固を促進し、出血を抑えます</Japanese>
             <Spanish>Favorece la coagulación</Spanish>
-            <Portuguese>Favorece a coagulação</Portuguese>
+            <Portuguese>Intensifica a coagulação</Portuguese>
             <Finnish>Edistää hyytymien muodostumista</Finnish>
             <Russian>Способствует образованию тромбов</Russian>
         </Key>
@@ -3216,6 +3223,7 @@
             <Spanish>EACA Elimina el Trauma</Spanish>
             <Japanese>EACAによる外傷の除去</Japanese>
             <French>L'EACA soigne les traumatismes</French>
+            <Portuguese>EACA Remove Traumas</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_EACA_Trauma_Desc">
             <English>Allows Trauma to be cleared by EACA in addition to stitching</English>
@@ -3223,6 +3231,7 @@
             <Spanish>Permite eliminar el Trauma mediante el EACA además de cosiendo</Spanish>
             <Japanese>EACAによる効果として縫合に加え、外傷の除去を可能にします。</Japanese>
             <French>Autorise le soin complet des traumatismes par l'EACA en plus de la suture</French>
+            <Portuguese>Permite que o EACA remova traumas além de suturar</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA">
             <English>Allow Stacking</English>
@@ -3258,6 +3267,7 @@
             <English>Coagulation Settings</English>
             <Japanese>凝固設定</Japanese>
             <Spanish>Configuración de la coagulación</Spanish>
+            <Portuguese>Configurações de coagulação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR">
             <English>Require Heart Rate</English>
@@ -3433,11 +3443,13 @@
             <English>Blood clotting temporarily closed a wound on %1</English>
             <Japanese>血液凝固が一時的に %1 の創傷を塞いだ</Japanese>
             <Spanish>La coagulación sanguínea cerró temporalmente una herida en %1</Spanish>
+            <Portuguese>Coagulação estancou temporariamente um ferimento em %1</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged_TXA">
             <English>Blood clotting permanently closed a wound on %1</English>
             <Japanese>血液凝固が完全に %1 の創傷を塞いだ</Japanese>
             <Spanish>La coagulación sanguínea cerro permanentemente una herida en %1</Spanish>
+            <Portuguese>Coagulação estancou permanentemente um ferimento em %1</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_head">
             <English>Head</English>
@@ -3539,101 +3551,137 @@
             <English>Coag-Sense</English>
             <Japanese>Coag-Sense</Japanese>
             <Spanish>Coag-Sense</Spanish>
+            <Portuguese>Medidor de Coagulação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
             <English>The Coag-Sense is a PT/INR monitoring system that can measure the efficiency of your blood clotting</English>
             <Japanese>Coag-Senseは血液凝固の効率を測定できる PT/INR モニタリングシステムです。</Japanese>
             <Spanish>El Coag-Sense es un sistema de monitorización PT/INR que puede medir la eficiencia de su coagulación sanguínea</Spanish>
+            <Portuguese>O Medidor de Coagulação é um sistema de monitoramento PT/INR que pode mensurar a eficiência da sua coagulação sanguínea</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
             <English>Coag-Sense concludes: %1</English>
             <Japanese>Coag-Senseの結果: %1</Japanese>
             <Spanish>Coag-Sense concluye: %1</Spanish>
+            <Portuguese>Medidor de Coagulação conlui: %1</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
             <English>Measure PT/INR</English>
             <Japanese>PT/INRを測定する</Japanese>
             <Spanish>Medir PT/INR</Spanish>
+            <Portuguese>Medir PT/INR</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
             <English>Taking Blood Sample, </English>
             <Japanese>血液サンプルを取っています、</Japanese>
             <Spanish>Tomar muestra de sangre, </Spanish>
+            <Portuguese>Coletando amostra sanguínea, </Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_lowINR">
             <English>slightly below normal INR</English>
             <Japanese>正常INRより少し低い</Japanese>
             <Spanish>igeramente por debajo del INR normal</Spanish>
+            <Portuguese>INR ligeiramente abaixo do normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
             <English>sligtly above normal INR</English>
             <Japanese>正常INRより少し高い</Japanese>
             <Spanish>ligeramente por encima de INR normal</Spanish>
+            <Portuguese>INR ligeiramente acima do normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_lowINR">
             <English>Very Low INR</English>
             <Japanese>正常INRよりかなり低い</Japanese>
             <Spanish>INR muy bajo</Spanish>
+            <Portuguese>INR bem abaixo do normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_aboveINR">
             <English>Very high INR</English>
             <Japanese>正常INRよりかなり高い</Japanese>
             <Spanish>INR muy alto</Spanish>
+            <Portuguese>INR bem acima do normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_normalINR">
             <English>Normal INR</English>
             <Japanese>正常INR</Japanese>
             <Spanish>INR normal</Spanish>
+            <Portuguese>INR normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coag_Sense">
             <English>Coag-Sense Settings</English>
             <Japanese>Coag-Sense設定</Japanese>
             <Spanish>Ajustes de Coag-Sense</Spanish>
+            <Portuguese>Configuração do Medidor de Coagulação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
             <English>Medical level required for Coag-Sense</English>
             <Japanese>Coag-Senseの許可</Japanese>
             <Spanish>ivel médico requerido para Coag-Sense</Spanish>
+            <Portuguese>Nível médico necessário para uso do Medidor de Coagulação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location">
             <English>Locations Coag-Sense</English>
             <Japanese>Coag-Senseが使用できる場所</Japanese>
             <Spanish>Ubicaciones Coag-Sense</Spanish>
+            <Portuguese>Localizações de uso do Medidor de Coagulação</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
             <English>Treatment time for measuring PT/INR</English>
             <Japanese>PT/INR測定の所要時間</Japanese>
             <Spanish>Tiempo de tratamiento para medir PT/INR</Spanish>
+            <Portuguese>Tempo para mensurar PT/INR</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA">
             <English>Allow Stacking</English>
             <Japanese>重複の許可</Japanese>
             <Spanish>Permitir apilado</Spanish>
+            <Portuguese>Permitir somatória de efeito</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA_DESC">
             <English>If enabled EACA will be stackable and doubble it's efficiency</English>
             <Japanese>有効にすると、EACAの重複が可能になり、効率が2倍になる。</Japanese>
             <Spanish>Si el EACA esta permitido, se podrá apilar y duplicará su eficiencia</Spanish>
+            <Portuguese>Se habilitado, o efeito do EACA será somável e sua eficiência será dobrada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA">
             <English>Keep Stiching Until Out Of System</English>
             <Japanese>体内に効果が無くなるまで"縫合"を適用する</Japanese>
             <Spanish>Mantiene la Sutura hasta que desaparezca del Organismo</Spanish>
+            <Portuguese>Sutura contínua enquanto presente no sistema</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA_DESC">
             <English>If enabled EACA will keep stichinng until it's out of your system\nIf disabled EACA will stop working after stiching the last bandaged wound it can find</English>
             <Japanese>有効にすると、EACAが体内から無くなるまで"縫合"をします。 \n無効にすると、EACAが判定済の最後の包帯創傷に"縫合"を適用した後に、その作用を終了します。</Japanese>
             <Spanish>Si el EACA esta permitido, seguirá suturando hasta que desaparezca del organismo.\n Si el EACA no está permitido, dejará de funcionar después de suturar la última herida que pueda encontrar</Spanish>
+            <Portuguese>Se habilitado, o EACA continuará suturando até que esteja fora do seu sistema\nSe desabilitado, o funcionamento do EACA será interrompido assim que suturar o último ferimento</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA">
             <English>EACA Cycle Time</English>
             <Japanese>EACAサイクル時間</Japanese>
             <Spanish>Ciclo de tiempo de EACA</Spanish>
+            <Portuguese>Tempo de Ciclo do EACA</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA_DESC">
             <English>The time it takes for EACA to close a stich a wound</English>
             <Japanese>EACAが創傷を縫合するのに掛かる時間</Japanese>
             <Spanish>El tiempo que tarda EACA en suturar una herida</Spanish>
+            <Portuguese>O intervalo entre suturas do EACA</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SubCategory_EpinephrineIV">
+            <English>IV Epinephrine Settings</English>
+            <Japanese>EACAが創傷を縫合するのに掛かる時間</Japanese>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_EpinephrineIV">
+            <English>Medical level required for IV Epinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_EpinephrineIV">
+            <English>Treatment time for IV Epinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_EpinephrineIV_DescShort">
+            <English>IV Epinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_EpinephrineIV_displayName">
+            <English>IV Epinephrine</English>
         </Key>
     </Package>
 </Project>
