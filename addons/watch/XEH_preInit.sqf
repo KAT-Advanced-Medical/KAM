@@ -27,3 +27,12 @@ ADDON = true;
     [[0, 1], [LLSTRING(SETTING_PressureForm_mmHg), LLSTRING(SETTING_PressureForm_hPa)], 0],
     true
 ] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(altitudeUnit),
+    "LIST",
+    [LLSTRING(SETTING_AltitudeForm), LLSTRING(SETTING_AltitudeForm_Desc)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1], [LLSTRING(SETTING_AltitudeForm_meters), LLSTRING(SETTING_AltitudeForm_feet)], 0],
+    true
+] call CBA_Settings_fnc_init;
