@@ -1,5 +1,5 @@
 #define COMPONENT watch
-#define COMPONENT_BEAUTIFIED_KAT Watch
+#define COMPONENT_BEAUTIFIED KAT Watch
 #include "\x\kat\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
