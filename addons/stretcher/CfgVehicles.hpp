@@ -155,11 +155,13 @@ class CfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_SelfActions {
-            class KAT_DeployStretcher {
-                displayName = CSTRING(UnpackStretcher);
-                condition = QUOTE(call FUNC(assemble_canDeployStretcher));
-                statement = QUOTE(call FUNC(assemble_deployStretcher));
-                exceptions[] = {};
+            class KAT_Equipment {
+                class KAT_DeployStretcher {
+                    displayName = CSTRING(UnpackStretcher);
+                    condition = QUOTE(call FUNC(assemble_canDeployStretcher));
+                    statement = QUOTE(call FUNC(assemble_deployStretcher));
+                    exceptions[] = {};
+                };
             };
         };
     };

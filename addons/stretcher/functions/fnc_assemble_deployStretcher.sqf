@@ -69,5 +69,5 @@
         [_player, _secondaryWeaponClassname] call CBA_fnc_addWeaponWithoutItems;
     };
 
-    [TIME_PROGRESSBAR(4), [_player, _secondaryWeaponClassname, _secondaryWeaponInfo], _onFinish, _onFailure, localize ACELSTRING(csw,PlaceTripod_progressBar)] call ACEFUNC(common,progressBar);
+    [TIME_PROGRESSBAR(4), [_player, _secondaryWeaponClassname, _secondaryWeaponInfo], _onFinish, _onFailure, LLSTRING(PlaceStretcher_progressBar)] call ACEFUNC(common,progressBar);
 }, _this] call CBA_fnc_execNextFrame;

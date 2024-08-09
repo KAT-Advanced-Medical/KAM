@@ -178,5 +178,13 @@
             <English>Deploy stretcher</English>
             <Polish>Rozstaw nosze</Polish>
         </Key>
+        <Key ID="STR_KAT_Stretcher_PlaceStretcher_progressBar">
+            <English>Placing stretcher...</English>
+            <Polish>Rozkładanie noszy...</Polish>
+        </Key>
+        <Key ID="STR_KAT_Stretcher_PickupStretcher_progressBar">
+            <English>Packing stretcher...</English>
+            <Polish>Pakowanie noszy...</Polish>
+        </Key>
     </Package>
 </Project>

@@ -70,5 +70,5 @@
     };
 
     TRACE_3("",4,typeOf _stretcher,_classname);
-    [TIME_PROGRESSBAR(4), [_stretcher, _player, _classname], _onFinish, {}, localize ACELSTRING(csw,PickupTripod_progressBar), _condition] call ACEFUNC(common,progressBar);
+    [TIME_PROGRESSBAR(4), [_stretcher, _player, _classname], _onFinish, {}, LLSTRING(PickupStretcher_progressBar), _condition] call ACEFUNC(common,progressBar);
 }, _this] call CBA_fnc_execNextFrame;
