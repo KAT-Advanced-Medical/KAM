@@ -31,8 +31,8 @@ if (_activated) then {
             [QGVAR(createSealActionGlobal), [_object, _logic]] call CBA_fnc_globalEventJIP;
         };
 
-        [_object, getPos _object, _radius_max, _radius_min, parseNumber _gastype] call FUNC(gasCheck);
+        [_object, getPos _object, _radius_max, _radius_min, _gastype] call FUNC(gasCheck);
     } else {
-        [_logic, getPos _logic, _radius_max, _radius_min, parseNumber _gastype] call FUNC(gasCheck);
+        [_logic, getPos _logic, _radius_max, _radius_min, _gastype] call FUNC(gasCheck);
     };
 };

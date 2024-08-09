@@ -1472,6 +1472,7 @@
             <Finnish>Defibrillaattori</Finnish>
             <Russian>Дефибриллятор</Russian>
             <German>Defibrillator</German>
+            <Portuguese>Desfibrilador</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SelectedEnergy">
             <English>Selected Energy</English>
@@ -1481,6 +1482,7 @@
             <Finnish>Valittu energia</Finnish>
             <Russian>Выбранная энергия</Russian>
             <German>Ausgewählte Leistung</German>
+            <Portuguese>Energia selecionada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
@@ -1785,6 +1787,7 @@
             <Russian>%1 проверил жетоны, группа крови: %2</Russian>
             <Spanish>%1 comprobó el grupo de sangre en la dogtag: %2</Spanish>
             <French>%1 a vérifié le groupe sanguin sur la plaque d'identité : %2</French>
+            <Portuguese>%1 checou </Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -2056,6 +2059,7 @@
             <German>Anbringung von AED Pads während laufender HLW zulassen</German>
             <Spanish>Permitir la aplicación de parche AED durante la realización de RCP</Spanish>
             <French>Autoriser l'application des électrodes de l'AED pendant la RCP</French>
+            <Portuguese>Permitir aplicação de pás do desfibrilador durante RCP</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
@@ -2092,6 +2096,7 @@
             <German>Benötigter medizinischer Grad, um einen platzierte AED/X Station aufzunehmen </German>
             <Spanish>Nivel médico requerido para recoger una estación AED/X puesta</Spanish>
             <French>Niveau médical requis pour ramasser un AED-X posé au sol</French>
+            <Portuguese>Nível médico necessário para pegar uma estação DEA/X colocada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
@@ -2307,6 +2312,7 @@
             <Russian>СЛР начата</Russian>
             <German>HLW begonnen</German>
             <Spanish>RCP iniciada</Spanish>
+            <Portuguese>RCP iniciada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
@@ -2758,18 +2764,24 @@
             <Japanese>AED-X: 心拍: %1 血圧: --/-- SpO2: --- ETCo2: %2 呼吸数/分: %3</Japanese>
             <Russian>AED-X: ЧСС: %1 АД: --/-- SpO2: --- ETCo2: %2 Вдохи/мин: %3</Russian>
             <French>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Respirations/min: %3</French>
+            <Spanish>DEA-X: RC: %1 PS: --/-- SpO2: --- ETCo2: %2 Respiraciones/min: %3</Spanish>
+            <Portuguese>DEA-X: FC: %1 PA: --/-- SpO2: --- ETCo2: %2 Respirações/min: %3</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor">
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Breaths/min: %6</English>
             <Japanese>AED-X: 脈拍: %1 血圧: %2/%3 SpO2: %4 ETCo2: %5 呼吸数/分: %6</Japanese>
             <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4 ETCo2: %5 Вдохи/мин: %6</Russian>
             <French>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respirations/min: %6</French>
+            <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4 ETCo2: %5 Respiraciones/min: %6</Spanish>
+            <Portuguese>DEA-X: FP: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog_HasEtco2Monitor">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Breaths/min: %6</English>
             <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4 ETCo2: %5 呼吸数/分: %6</Japanese>
             <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4  ETCo2: %5 Вдохи/мин: %6</Russian>
             <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Respirations/min: %6</French>
+            <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4  ETCo2: %5 Respiraciones/min: %6</Spanish>
+            <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
             <English>AED-X Vitals Monitor Sounds</English>
@@ -2889,6 +2901,7 @@
             <Spanish>Probabilidad de taponamiento en heridas penetrantes</Spanish>
             <Japanese>穿通創におけるタンポナーデの可能性</Japanese>
             <French>Chance de tamponnade au cours d'une blessure pénétrante</French>
+            <Portuguese>Probabilidade de tamponamento em ferimentos penetrantes</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeInterval">
             <English>Tamponade progression timer</English>
@@ -2896,6 +2909,7 @@
             <Spanish>Temporizador de progreso de taponamiento</Spanish>
             <Japanese>タンポナーデ進行タイマー</Japanese>
             <French>Timer de progression de la tamponnade</French>
+            <Portuguese>Temporizador de progresso de tamponamento</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance_deterioration">
             <English>Tamponade progression chance</English>
@@ -2903,6 +2917,7 @@
             <Spanish>Probabilidad de progresión de taponamiento</Spanish>
             <Japanese>タンポナーデ進行確率</Japanese>
             <French>Chance de progression de la tamponnade</French>
+            <Portuguese>Probabilidade de progressão de tamponamento</Portuguese>
         </Key>
     </Package>
 </Project>
