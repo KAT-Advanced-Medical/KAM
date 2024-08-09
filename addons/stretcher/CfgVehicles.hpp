@@ -19,8 +19,8 @@ class CfgVehicles {
         mass = 60;
     };
 
-	class Tank: LandVehicle {};
-	class Tank_F: Tank {
+    class Tank: LandVehicle {};
+    class Tank_F: Tank {
         class ACE_Actions {
             class ACE_MainActions;
         };
