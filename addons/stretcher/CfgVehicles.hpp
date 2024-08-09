@@ -19,7 +19,12 @@ class CfgVehicles {
         mass = 60;
     };
 
-    class Tank_F;
+	class Tank: LandVehicle {};
+	class Tank_F: Tank {
+        class ACE_Actions {
+            class ACE_MainActions;
+        };
+    };
     class kat_stretcher: Tank_F {
         explosionEffect = "";
         fuelExplosionPower = 0;
@@ -41,8 +46,6 @@ class CfgVehicles {
         explosionShielding = 0;
         irTarget = 0;
         allowTabLock = 0;
-        // memoryPointsGetInCargo = "pos cargo";
-        // memoryPointsGetInCargoDir = "pos cargo dir";
         cargoAction[] = {"kat_stretcher"};
         tf_isolatedAmount = 0;
         numberPhysicalWheels = 0;
@@ -104,9 +107,8 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
 
-        class ACE_Actions {
-            class ACE_MainActions {
-                distance = 5;
+        class ACE_Actions: ACE_Actions {
+            class ACE_MainActions: ACE_MainActions {
                 class KAT_PackIntoBackpack {
                     displayName = CSTRING(PackIntoBackpack);
                     condition = QUOTE(_target call FUNC(canPackIntoBackpack));
