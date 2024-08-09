@@ -8,5 +8,6 @@ PREP(init);
 PREP(canRemoveWarmer);
 PREP(removeFluidWarmer);
 PREP(removeFluidWarmerLocal);
+PREP(removeWarmer);
 PREP(useHandWarmer);
 PREP(useHandWarmerLocal);

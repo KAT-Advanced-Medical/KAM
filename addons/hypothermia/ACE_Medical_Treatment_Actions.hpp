@@ -19,7 +19,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QACEGVAR(medical_treatment,medicIV);
         treatmentTime = 10;
         items[] = {"kat_fluidWarmer"};
-        condition = QUOTE(([ARR_3(_medic,_patient,_bodyPart)] call EFUNC(pharma,removeIV)) && !([ARR_3(_medic,_patient,_bodyPart)] call FUNC(removeWarmer)));     
+        condition = QUOTE(([ARR_3(_medic,_patient,_bodyPart)] call EFUNC(pharma,removeIV)) && !([ARR_2(_patient,_bodyPart)] call FUNC(removeWarmer)));     
         callbackSuccess = QFUNC(applyFluidWarmer);
     };
     class RemoveFluidWarmer: BasicBandage {
@@ -30,7 +30,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QACEGVAR(medical_treatment,medicIV);
         treatmentTime = 10;
         items[] = {};
-        condition = QUOTE([ARR_3(_medic,_patient,_bodyPart)] call FUNC(removeWarmer));
+        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(removeWarmer));
         callbackSuccess = QFUNC(removeFluidWarmer);
     };
     class CheckTemperature: CheckPulse {

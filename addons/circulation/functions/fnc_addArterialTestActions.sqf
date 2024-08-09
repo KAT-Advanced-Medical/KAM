@@ -35,7 +35,7 @@ private _fnc_getActions = {
             _actions pushBack [
                 [
                     _x,
-                    format [CSTRING(Blood_Sample_String), _patient],
+                    format [LLSTRING(Blood_Sample_String), _patient],
                     "",
                     {_this call FUNC(showBloodGas)},
                     {true},
@@ -43,7 +43,7 @@ private _fnc_getActions = {
                     [],
                     {[0, 0, 0]},
                     2,
-                    [false,true,false,false,false]
+                    [false,false,false,false,false]
                 ] call ACEFUNC(interact_menu,createAction),
                 [],
                 [_bloodSampleArray, _player, _idNumber, _vehicle]

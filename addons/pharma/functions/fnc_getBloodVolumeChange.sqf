@@ -24,7 +24,7 @@ private _internalBleeding = GET_INTERNAL_BLEEDING(_unit);
 private _lossVolumeChange = (-_deltaT * ((_bloodLoss + _internalBleeding * (GET_HEART_RATE(_unit) / DEFAULT_HEART_RATE)) / GET_VASOCONSTRICTION(_unit)));
 private _fluidVolume = GET_BODY_FLUID(_unit);
 private _SRBCChange = 0;
-_fluidVolume params ["_ECB","_ECP","_SRBC","_ISP"];
+_fluidVolume params ["_ECP","_ECB","_SRBC","_ISP","_fullVolume"];
 
 _ECP = _ECP + (_lossVolumeChange * LITERS_TO_ML) / 2;
 _ECB = _ECB + (_lossVolumeChange * LITERS_TO_ML) / 2;
@@ -124,6 +124,6 @@ switch (true) do {
     };
 };
 
-_unit setVariable [QEGVAR(circulation,bodyFluid), [_ECB, _ECP, (_SRBC - _SRBCChange), _ISP, (_ECB + _ECP)], _syncValues];
+_unit setVariable [QEGVAR(circulation,bodyFluid), [_ECP, _ECB, (_SRBC - _SRBCChange), _ISP, (_ECP + _ECB)], _syncValues];
 
 ((_lossVolumeChange + GET_BLOOD_VOLUME_LITERS(_unit)) max 0.01)

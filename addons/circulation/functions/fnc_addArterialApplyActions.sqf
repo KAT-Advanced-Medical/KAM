@@ -35,7 +35,7 @@ private _fnc_getActions = {
             _actions pushBack [
                 [
                     _x,
-                    format [CSTRING(Apply_Arterial_Test), _patient],
+                    format [LLSTRING(Apply_Arterial_Test), _patient],
                     "",
                     {_this call FUNC(attachBloodGas)},
                     {true},

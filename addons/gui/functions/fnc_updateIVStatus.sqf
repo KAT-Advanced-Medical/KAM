@@ -17,7 +17,7 @@
  * Public: No
  */
 
-params ["_ctrlGroup", "_target"];
+params ["_target"];
 
 // Get tourniquets, damage, and blood loss for target
 private _IV = _target getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0]];
