@@ -17,10 +17,10 @@ class ACE_Medical_Treatment_Actions {
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon"};
-        animationMedic = "AinvPknlMstpSlayWrflDnon_medicOther";
-        animationMedicProne = "AinvPpneMstpSlayW[wpn]Dnon_medicOther";
-        animationMedicSelf = "AinvPknlMstpSlayW[wpn]Dnon_medic";
-        animationMedicSelfProne = "AinvPpneMstpSlayW[wpn]Dnon_medic";
+        animationMedic = "";
+        animationMedicProne = "";
+        animationMedicSelf = "";
+        animationMedicSelfProne = "";
         litter[] = {};
     };
     class EyeWash {
@@ -65,7 +65,6 @@ class ACE_Medical_Treatment_Actions {
     class EyeWasher: EyeWash {
         displayName = CSTRING(eyewasher_display_item);
         callbackSuccess = QFUNC(treatmentAdvanced_eyewasher);
-        items[] = {};
-        condition = QUOTE([ARR_2(_medic, 'KAT_Eyewasher')] call ACEFUNC(common,hasMagazine) || [ARR_2(_medic, 'KAT_Eyewasher')] call ACEFUNC(common,hasMagazine));
+        items[] = {"KAT_Eyewasher"};
     };
 };

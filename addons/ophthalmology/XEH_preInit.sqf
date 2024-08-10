@@ -81,40 +81,10 @@ PREP_RECOMPILE_END;
 // Eye Wash medic required
 [
     QGVAR(eyewash_medic_required),
-    "SLIDER",
+    "LIST",
     [LLSTRING(setting_eyewash_medic_required)],
     [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
-    [0, 2, 0, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-// Enable manual blinking
-[
-    QGVAR(enableManualBlinking),
-    "CHECKBOX",
-    LLSTRING(setting_enable_manual_blinking),
-    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
-    [false],
-    true
-] call CBA_Settings_fnc_init;
-
-// Time span blinking is needed
-[
-    QGVAR(blink_duration),
-    "SLIDER",
-    [LLSTRING(setting_blink_renew_duration)],
-    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
-    [1, 600, 60, 0],
-    true
-] call CBA_Settings_fnc_init;
-
-// Blinking post process effect intensity
-[
-    QGVAR(blink_effect_intensity),
-    "SLIDER",
-    [LLSTRING(SETTING_BLINK_EFFECT_INTENSITY)],
-    [CBA_SETTINGS_CAT, LSTRING(setting_subcategory_manual_blink)],
-    [1, 10, 5, 0],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
     true
 ] call CBA_Settings_fnc_init;
 

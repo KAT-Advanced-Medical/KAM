@@ -1,22 +1,21 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * Handles the effects of having dust in the eyes.
  *
  * Arguments:
- * 0: Player Object <OBJECT>
- * 1: Framehandler Id <INTEGER>
+ * 0: Player <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [kat_ophthalmonology_fnc_handleDustInjuryEffects, 1, player] call CBA_fnc_addPerFrameHandler;
+ * [player] call kat_ophthalmonology_fnc_handleDustInjuryEffects;
  *
  * Public: No
  */
 
-params ["_unit", "_pfhID"];
+params ["_unit"];
 
 if !(GVAR(enable)) exitWith {};
 

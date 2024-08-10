@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: Katalam
  * Handles the treatment of dust or heavy dust in eyes
@@ -14,5 +14,3 @@
 params ["_medic", "_patient"];
 
 _this call FUNC(treatmentAdvanced_eyewash);
-
-[_medic, 'KAT_Eyewasher'] call EFUNC(pharma,removeItemfromMag);

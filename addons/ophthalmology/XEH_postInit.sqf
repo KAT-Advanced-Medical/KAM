@@ -5,20 +5,10 @@ if (!hasInterface) exitWith {};
 call FUNC(initKeybinds);
 
 
-["KAT_EyewasherItem", "KAT_Eyewasher"] call ACEFUNC(common,registerItemReplacement);
-
 ["CBA_settingsInitialized", {
     if (!GVAR(enable) && !GVAR(enableManualBlinking)) exitWith {};
 
-    // blur effect if not blinked
     GVAR(ppEffectPriority) = 341;
-    [{
-        GVAR(ppEffectPriority) = GVAR(ppEffectPriority) + 1;
-        GVAR(ppBlur) = ppEffectCreate ["DynamicBlur", GVAR(ppEffectPriority)];
-        GVAR(ppBlur) != -1
-    }, {
-        GVAR(ppBlur) ppEffectEnable false;
-    }] call CBA_fnc_waitUntilAndExecute;
 
     // dust injury
     [{
@@ -39,3 +29,9 @@ call FUNC(initKeybinds);
         GVAR(ppBlurBlink) ppEffectEnable false;
     }] call CBA_fnc_waitUntilAndExecute;
 }] call CBA_fnc_addEventHandler;
+
+[QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
+[QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
+
+//placeholder event for testing, needs implementation in ace
+[QACEGVAR(goggles,eyeInjury), LINKFUNC(handleDustInjury)] call CBA_fnc_addEventHandler;

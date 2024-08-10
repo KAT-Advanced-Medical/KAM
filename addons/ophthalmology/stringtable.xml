@@ -22,15 +22,6 @@
         <Key ID="STR_KAT_Ophthalmology_setting_subcategory_manual_blink">
             <English>Manual blinking</English>
         </Key>
-        <Key ID="STR_KAT_Ophthalmology_setting_enable_manual_blinking">
-            <English>Enable manual blinking</English>
-        </Key>
-        <Key ID="STR_KAT_Ophthalmology_setting_blink_renew_duration">
-            <English>How long will one blink last</English>
-        </Key>
-        <Key ID="STR_KAT_Ophthalmology_setting_blink_effect_intensity">
-            <English>Intensity of the pp effect for missing blink</English>
-        </Key>
         <Key ID="STR_KAT_Ophthalmology_setting_blink_treatment_time">
             <English>Treatment time of blink</English>
         </Key>

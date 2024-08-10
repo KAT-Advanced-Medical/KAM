@@ -15,5 +15,8 @@ class CfgMagazines {
         tracersEvery = 0;
         lastRoundsTracer = 0;
         mass = 1;
+
+        ACE_isMedicalItem = 1;
+        ACE_asItem = 1;
     };
 };
