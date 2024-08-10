@@ -21,16 +21,24 @@ params ["_patient", "_bodyPart"];
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
-private _block = false;
+private _countTXA = [_patient, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
+private _allowStack = missionNamespace getVariable [QGVAR(allowStackScript_TXA), true];
+private _keepRunning = missionNamespace getVariable [QGVAR(keepScriptRunning_TXA), false];
+private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_TXA), 5];
 
 if (_IVactual > 1) then {
     private _randomNumber = random 100;
 
     if (_IVactual != 4) exitWith {
         if (_randomNumber < GVAR(blockChance)) then {
-            _IVarray set [_partIndex, 3];
-            _patient setVariable [QGVAR(IV), _IVarray, true];
-            _block = true;
+            [{
+                params["_patient", "_IVarray", "_partIndex"];
+
+                if (_IVactual > 1 && _IVactual != 4) exitWith {};
+                _IVarray set [_partIndex, 3];
+                _patient setVariable [QGVAR(IV), _IVarray, true];
+            },
+            [_patient, _IVarray, _partIndex], (random 300)] call CBA_fnc_waitAndExecute;
         };
     };
 
@@ -38,14 +46,22 @@ if (_IVactual > 1) then {
     _patient setVariable [QGVAR(IV), _IVarray, true];
 };
 
-if !(GVAR(coagulation)) then {
-    if !(_block) then {
+if (!(GVAR(coagulation)) || GVAR(coagulation_allow_TXA_script)) then {
+
+    if (_IVactual != 3) then {
+
+        if (_countTXA > 1 && !(_allowStack)) exitWith {};
+
         [{
             params ["_args", "_idPFH"];
-            _args params ["_patient"];
+            _args params ["_patient", "_keepRunning"];
 
             private _alive = alive _patient;
             private _exit = true;
+
+            if !(_alive) exitWith {
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            };
 
             if !(GVAR(kidneyAction)) then {
                 _patient setVariable [QGVAR(pH), 1500, true];
@@ -74,10 +90,16 @@ if !(GVAR(coagulation)) then {
                 } forEach ALL_BODY_PARTS_PRIORITY;
             };
 
-            if (!(_alive) || (_exit)) exitWith {
+            [{
+                params["_patient", "_idPFH"];
+                [_idPFH] call CBA_fnc_removePerFrameHandler;
+            },
+            [_patient, _idPFH], 300] call CBA_fnc_waitAndExecute;
+
+            if (_exit && !(_keepRunning)) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
 
-        }, 5, [_patient]] call CBA_fnc_addPerFrameHandler;
+        }, _cycleTime, [_patient, _keepRunning]] call CBA_fnc_addPerFrameHandler;
     };
 };

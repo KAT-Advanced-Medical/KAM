@@ -16,6 +16,6 @@
 
 params ["_target"];
 
-if(missionNamespace getVariable [QGVAR(availGasmaskList), []] isEqualTo []) exitWith {false};
+if (missionNamespace getVariable [QGVAR(availGasmaskList), []] isEqualTo []) exitWith {false};
 
 goggles _target in (missionNamespace getVariable [QGVAR(availGasmaskList), []]);

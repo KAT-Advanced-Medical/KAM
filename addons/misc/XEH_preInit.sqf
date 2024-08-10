@@ -38,15 +38,6 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(neckTourniquet),
-    "CHECKBOX",
-    [LLSTRING(neckTourniquetDescription)],
-    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Tourniquet)],
-    [false],
-    true
-] call CBA_Settings_fnc_init;
-
-[
     QGVAR(tourniquetEffects_Enable),
     "CHECKBOX",
     [LLSTRING(SETTING_tourniquetEffects_Enable)],
@@ -610,6 +601,16 @@ PREP_RECOMPILE_END;
         missionNamespace setVariable [QGVAR(MFAKEighthSlotItem), _array, true];
         call FUNC(FAK_updateContents);
     }
+] call CBA_Settings_fnc_init;
+
+//Enable's Stitching of the Full Body 
+[
+    QGVAR(enableStitchFullBody),
+    "CHECKBOX",
+    [LLSTRING(SETTING_EnableStitchFullBody), LLSTRING(SETTING_EnableStitchFullBody_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;

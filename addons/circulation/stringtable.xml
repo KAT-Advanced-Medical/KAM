@@ -877,6 +877,7 @@
             <Portuguese>Analisar Ritmo</Portuguese>
             <Spanish>Analizar ritmo</Spanish>
             <Finnish>Analysoi rytmiä</Finnish>
+            <Russian>Анализировать частоту сердечных сокращений</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_DogTag">
             <English>Check Dogtags</English>
@@ -891,7 +892,7 @@
             <Turkish>Künyeyi Kontrol Et</Turkish>
             <Italian>Controlla piastrine</Italian>
             <Russian>Проверка Солдатский жетон</Russian>
-            <Japanese>認識票を確認</Japanese>
+            <Japanese>ドッグタグを確認</Japanese>
             <Portuguese>Checar placa de identificação</Portuguese>
             <Finnish>Tarkista sotilasmerkit</Finnish>
         </Key>
@@ -941,7 +942,7 @@
             <French>AED X-Series</French>
             <Turkish>AED X-Serisi</Turkish>
             <Italian>DAE Serie X</Italian>
-            <Russian>AED серии X</Russian>
+            <Russian>AED серии-X</Russian>
             <Japanese>AED Xシリーズ</Japanese>
             <Portuguese>DEA Serie-X</Portuguese>
             <Finnish>AUD X-sarja</Finnish>
@@ -972,6 +973,7 @@
             <Portuguese>Colocar pás do DEA</Portuguese>
             <Spanish>Colocar electrodos del DEA</Spanish>
             <Finnish>Aseta AUD-tyynyt</Finnish>
+            <Russian>Установить электроды AED</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDStation_Action_PlacePads">
             <English>Station: Place AED Pads</English>
@@ -982,6 +984,7 @@
             <Portuguese>Estação: Colocar pás do DEA</Portuguese>
             <Spanish>Estación: Colocar electrodos del AED</Spanish>
             <Finnish>Asema: aseta AUD-tyynyt</Finnish>
+            <Russian>Станция: установить электродов AED</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDVehicle_Action_PlacePads">
             <English>Vehicle: Place AED Pads</English>
@@ -992,6 +995,7 @@
             <Portuguese>Veículo: Colocar pás do DEA</Portuguese>
             <Spanish>Vehículo: Colocar electrodos del DEA</Spanish>
             <Finnish>Ajoneuvo: aseta AUD-tyynyt</Finnish>
+            <Russian>Транспорт: установить электроды AED</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_PlacePads">
             <English>Place AED-X Pads</English>
@@ -1002,6 +1006,7 @@
             <Portuguese>Colocar pás do DEA-X</Portuguese>
             <Spanish>Colocar electrodos del DEA-X</Spanish>
             <Finnish>Aseta AUD-X-tyynyt</Finnish>
+            <Russian>Установить электроды AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_PlacePads">
             <English>Station: Place AED-X Pads</English>
@@ -1012,6 +1017,7 @@
             <Portuguese>Estação: Colocar pás do DEA-X</Portuguese>
             <Spanish>Estación: Colocar electrodos del DEA-X</Spanish>
             <Finnish>Asema: aseta AUD-X-tyynyt</Finnish>
+            <Russian>Станция: установить электроды AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_PlacePads">
             <English>Vehicle: Place AED-X Pads</English>
@@ -1022,6 +1028,7 @@
             <Portuguese>Veículo: Colocar pás do DEA-X</Portuguese>
             <Spanish>Vehículo: Colocar electrodos del DEA-X</Spanish>
             <Finnish>Ajonuevo: aseta AUD-X-tyynyt</Finnish>
+            <Russian>Транспорт: установить электроды AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads">
             <English>Remove Defibrillator Pads</English>
@@ -1032,6 +1039,7 @@
             <Portuguese>Remover pás do desfibrilador</Portuguese>
             <Spanish>Quitar electrodos del desfibrilador</Spanish>
             <Finnish>Poista defibrillaattorityynyt</Finnish>
+            <Russian>Снять электроды дефибриллятора</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_PlacePads_Progress">
             <English>Placing Defibrillator Pads</English>
@@ -1042,6 +1050,7 @@
             <Portuguese>Colocando pás do desfibrilador</Portuguese>
             <Spanish>Colocando electrodos del desfibrilador</Spanish>
             <Finnish>Defibrillaattorityynyjen asettaminen</Finnish>
+            <Russian>Установка электродов дефибриллятора</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads_Progress">
             <English>Removing Defibrillator Pads</English>
@@ -1052,6 +1061,7 @@
             <Portuguese>Removendo pás do desfibrilador</Portuguese>
             <Spanish>Quitando electrodos del desfibrilador</Spanish>
             <Finnish>Defibrillaattorityynyjen poistaminen</Finnish>
+            <Russian>Снять электроды дефибриллятора</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Shock">
             <English>Administer Shock</English>
@@ -1062,6 +1072,7 @@
             <Portuguese>Administrar choque</Portuguese>
             <Spanish>Administrar descarga</Spanish>
             <Finnish>Anna sokki potilaalle</Finnish>
+            <Russian>Применить разряд</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Charge">
             <English>Charge Defibrillator</English>
@@ -1072,6 +1083,7 @@
             <Portuguese>Carregar desfibrilador</Portuguese>
             <Spanish>Cargar desfibrilador</Spanish>
             <Finnish>Lataa defibrillaattori</Finnish>
+            <Russian>Зарядить дифибриллятор</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
@@ -1082,6 +1094,7 @@
             <Portuguese>Cancelar carregamento</Portuguese>
             <Spanish>Cancelar carga</Spanish>
             <Finnish>Peruuta sähkölataus</Finnish>
+            <Russian>Отменить заряд</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_ViewMonitor">
             <English>View Monitor</English>
@@ -1092,6 +1105,7 @@
             <Portuguese>Ver monitor</Portuguese>
             <Spanish>Ver monitor</Spanish>
             <Finnish>Näytä monitori</Finnish>
+            <Russian>Просмотр монитора</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_ConnectMonitor">
             <English>Connect Vitals Monitor</English>
@@ -1102,6 +1116,7 @@
             <Portuguese>Colocar monitor de sinais vitais</Portuguese>
             <Spanish>Conectar monitor</Spanish>
             <Finnish>Liitä terveysmonitori</Finnish>
+            <Russian>Подключить монитор жизненно важных показателей</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_ConnectMonitor">
             <English>Station: Connect Vitals Monitor</English>
@@ -1112,6 +1127,7 @@
             <Portuguese>Estação: Colocar monitor de sinais vitais</Portuguese>
             <Spanish>Estación: Conectar monitor</Spanish>
             <Finnish>Asema: Liitä kuntomonitori</Finnish>
+            <Russian>Станция: Подключить монитор жизненно важных показателей</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXVehicle_Action_ConnectMonitor">
             <English>Vehicle: Connect Vitals Monitor</English>
@@ -1126,7 +1142,7 @@
             <Spanish>Vehículo: Colocar DEA-X</Spanish>
             <Czech>Vozidlo: Připevnit AED-X</Czech>
             <Japanese>車載AED: バイタルモニターの接続</Japanese>
-            <Russian>Транспортное средство: прикрепите AED-X</Russian>
+            <Russian>Трансопрт: Подключить монитор жизненно важных показателей</Russian>
             <Portuguese>Veículo: Colocar DEA-X</Portuguese>
             <Finnish>Ajoneuvo: Liitä kuntomonitori</Finnish>
         </Key>
@@ -1156,6 +1172,7 @@
             <Portuguese>Ativar áudio do monitor de sinais vitais</Portuguese>
             <Spanish>Activar audio del monitor</Spanish>
             <Finnish>Terveysmonitorin ääni päällä</Finnish>
+            <Russian>Звук монитора жизненно важных органов ВКЛЮЧЕН</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_DisableAudio">
             <English>Vitals Monitor Audio OFF</English>
@@ -1166,6 +1183,7 @@
             <Portuguese>Desativar áudio do monitor de sinais vitais</Portuguese>
             <Spanish>Desactivar audio del monitor</Spanish>
             <Finnish>Tärkeän näytön ääni pois päältä</Finnish>
+            <Russian>Звук монитора жизненно важных функций ВЫКЛЮЧЕН</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_Connecting_Progress">
             <English>Connecting</English>
@@ -1213,7 +1231,7 @@
             <French>Réduire le volume du AED-X</French>
             <Turkish>AED X'in sesini kısın</Turkish>
             <Italian>Ridurre il volume del DAE-X</Italian>
-            <Russian>Уменьшите громкость AED X</Russian>
+            <Russian>Уменьшите громкость AED-X</Russian>
             <Japanese>AED-Xモニター音声オン</Japanese>
             <Portuguese>Abaixar o volume do DEA-X</Portuguese>
             <Finnish>AUD-X-terveysmonitorin ääni pois päältä</Finnish>
@@ -1230,7 +1248,7 @@
             <French>Augmenter le volume du AED-X</French>
             <Turkish>AED X'in sesini arttırın</Turkish>
             <Italian>Aumentare il volume del DAE-X</Italian>
-            <Russian>Увеличьте громкость AED X</Russian>
+            <Russian>Увеличьте громкость AED-X</Russian>
             <Japanese>AED-Xモニター音声オフ</Japanese>
             <Portuguese>Aumentar o volume do DEA-X</Portuguese>
             <Finnish>AUD-X-terveysmonitorin ääni päällä</Finnish>
@@ -1280,7 +1298,7 @@
             <Korean>자동심장충격기 설치</Korean>
             <French>Placer l'AED</French>
             <Turkish>AED'yi yerleştirin</Turkish>
-            <Russian>Поместите AED</Russian>
+            <Russian>Разместить AED</Russian>
             <Italian>Posizionare DAE</Italian>
             <Japanese>AEDを設置</Japanese>
             <Portuguese>Colocar DEA</Portuguese>
@@ -1295,6 +1313,7 @@
             <Portuguese>Colocar DEA-X</Portuguese>
             <Spanish>Colocar DEA-X</Spanish>
             <Finnish>Aseta AUD-X</Finnish>
+            <Russian>Разместить AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_PickUpAED">
             <English>Pick Up AED</English>
@@ -1307,7 +1326,7 @@
             <Korean>자동심장충격기 줍기</Korean>
             <French>Ramasser l'AED</French>
             <Turkish>AED'yi Alın</Turkish>
-            <Russian>Самовывоз AED</Russian>
+            <Russian>Подобрать AED</Russian>
             <Italian>Raccogliere DAE</Italian>
             <Japanese>AEDを拾う</Japanese>
             <Portuguese>Recolher DEA</Portuguese>
@@ -1322,6 +1341,7 @@
             <Portuguese>Recolher DEA-X</Portuguese>
             <Spanish>Recoger DEA-X</Spanish>
             <Finnish>Hae AUD-X</Finnish>
+            <Russian>Подобрать AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ToggleVolume">
             <English>Toggle Volume</English>
@@ -1332,6 +1352,7 @@
             <Portuguese>Alternar volume</Portuguese>
             <Spanish>Cambiar volumen</Spanish>
             <Finnish>Vaihda äänenvoimakkuutta</Finnish>
+            <Russian>Переключить громкость</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_MeasureBloodPressure">
             <English>Measure Blood Pressure</English>
@@ -1342,6 +1363,7 @@
             <Portuguese>Medir pressão arterial</Portuguese>
             <Spanish>Medir la presión arterial</Spanish>
             <Finnish>Mittaa verenpaine</Finnish>
+            <Russian>Измерить артериальное давление</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CheckPads">
             <English>Check Pads</English>
@@ -1352,6 +1374,7 @@
             <Portuguese>Verificar pás</Portuguese>
             <Spanish>Comprobar electrodos</Spanish>
             <Finnish>Tarkista tyynyt</Finnish>
+            <Russian>Проверить электроды</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SHOCKADVISED">
             <English>SHOCK ADVISED</English>
@@ -1362,6 +1385,7 @@
             <Portuguese>CHOQUE ACONSELHADO</Portuguese>
             <Spanish>DESCARGA RECOMENDADA</Spanish>
             <Finnish>SOKI SUOSITELLAAN</Finnish>
+            <Russian>Подсказка о разряде</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_NOSHOCKADVISED">
             <English>NO SHOCK ADVISED</English>
@@ -1372,6 +1396,7 @@
             <Portuguese>CHOQUE NÃO ACONSELHADO</Portuguese>
             <Spanish>DESCARGA NO RECOMENDADA</Spanish>
             <Finnish>EI SUOSITTELUA SHOCKIA</Finnish>
+            <Russian>Никаких подсказок о разряде</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ANALYZINGEKG">
             <English>ANALYZING ECG</English>
@@ -1382,6 +1407,7 @@
             <Portuguese>ANALISANDO ECG</Portuguese>
             <Spanish>ANALIZANDO ECG</Spanish>
             <Finnish>EKG:N ANALYSOINTI</Finnish>
+            <Russian>Анализ ЭКГ</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGED">
             <English>CHARGED</English>
@@ -1392,6 +1418,7 @@
             <Portuguese>CARREGADO</Portuguese>
             <Spanish>CARGADO</Spanish>
             <Finnish>LAADUT</Finnish>
+            <Russian>Заряженный</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_CHARGING">
             <English>CHARGING</English>
@@ -1402,6 +1429,7 @@
             <Portuguese>CARREGANDO</Portuguese>
             <Spanish>CARGANDO</Spanish>
             <Finnish>LATAUS</Finnish>
+            <Russian>Зарядка</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_AED_DISARMED">
             <English>AED DISARMED</English>
@@ -1412,6 +1440,7 @@
             <Portuguese>AED DESARMADO</Portuguese>
             <Spanish>DEA DESARMADO</Spanish>
             <Finnish>AED POIS KÄYTÖSTÄ</Finnish>
+            <Russian>AED разобран</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DISARMED">
             <English>DISARMED</English>
@@ -1422,6 +1451,7 @@
             <Portuguese>DESARMADO</Portuguese>
             <Spanish>DESARMADO</Spanish>
             <Finnish>POIS KÄYTÖSTÄ</Finnish>
+            <Russian>Разобран</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_DeliveredEnergy">
             <English>Delivered Energy</English>
@@ -1432,6 +1462,7 @@
             <Portuguese>Choque realizado</Portuguese>
             <Spanish>Energía suministrada</Spanish>
             <Finnish>Toimitettu shokki</Finnish>
+            <Russian>Передаваемая энергия</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_Defibrillator">
             <English>Defibrillator</English>
@@ -1439,6 +1470,9 @@
             <Japanese>除細動器</Japanese>
             <French>Défibrillateur</French>
             <Finnish>Defibrillaattori</Finnish>
+            <Russian>Дефибриллятор</Russian>
+            <German>Defibrillator</German>
+            <Portuguese>Desfibrilador</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_SelectedEnergy">
             <English>Selected Energy</English>
@@ -1446,6 +1480,9 @@
             <Japanese>選択済のｴﾈﾙｷﾞｰ</Japanese>
             <French>Energie sélectionnée</French>
             <Finnish>Valittu energia</Finnish>
+            <Russian>Выбранная энергия</Russian>
+            <German>Ausgewählte Leistung</German>
+            <Portuguese>Energia selecionada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_ENERGYDELIVERED">
             <English>ENERGY DELIVERED</English>
@@ -1456,6 +1493,7 @@
             <Portuguese>CHOQUE REALIZADO</Portuguese>
             <Spanish>ENERGÍA SUMINISTRADA</Spanish>
             <Finnish>ISKU TOIMITETTU</Finnish>
+            <Russian>Передаваемая энергия</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_StandClear">
             <English>Stand Clear</English>
@@ -1466,6 +1504,7 @@
             <Portuguese>Afaste-se do paciente</Portuguese>
             <Spanish>Mantenerse alejado</Spanish>
             <Finnish>Väistyä</Finnish>
+            <Russian>Не прикасайтесь к пациенту</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PerformCPR">
             <English>Perform CPR</English>
@@ -1476,6 +1515,7 @@
             <Portuguese>Realize RCP</Portuguese>
             <Spanish>Realizar RCP</Spanish>
             <Finnish>Suorita elvytys</Finnish>
+            <Russian>Выполнить СЛР</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PUSHSHOCK">
             <English>PUSH SHOCK</English>
@@ -1486,6 +1526,7 @@
             <Portuguese>REALIZAR CHOQUE</Portuguese>
             <Spanish>PULSAR DESCARGA</Spanish>
             <Finnish>PAINA SHOKKI</Finnish>
+            <Russian>РАЗРЯД</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PushAnalyze">
             <English>Push Analyze</English>
@@ -1496,6 +1537,7 @@
             <Portuguese>Realizar análise</Portuguese>
             <Spanish>Pulsar Analizar</Spanish>
             <Finnish>Paina analysoida</Finnish>
+            <Russian>Анализировать</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_HR">
             <English>HR</English>
@@ -1506,6 +1548,7 @@
             <Portuguese>FC</Portuguese>
             <Spanish>RC</Spanish>
             <Finnish>HR</Finnish>
+            <Russian>ЧСС</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Monitor_PR">
             <English>PR</English>
@@ -1516,6 +1559,7 @@
             <Portuguese>FP</Portuguese>
             <Spanish>PS</Spanish>
             <Finnish>PR</Finnish>
+            <Russian>Ритм (PR)</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -1563,6 +1607,7 @@
             <Italian>Assegnazione del gruppo sanguigno</Italian>
             <Portuguese>Atribuição de tipo sanguíneo</Portuguese>
             <Finnish>Veriryhmämääritys</Finnish>
+            <Russian>Определение группы крови</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_DESC">
             <English>Sets how players' blood type is assigned: \nPlayer chosen: Player chooses their own blood type \nPlayer chosen (forced): Player chooses their own blood type, but it doesn't change upon respawning \nRandom: Blood type is random each respawn \nRandom (on join): Blood type is random, but doesn't change upon respawning \nSteamID: Blood type is decided based on player's steamID \nSteamID (custom list): Blood type is decided based on player's steamID and custom list</English>
@@ -1576,6 +1621,7 @@
             <Italian>Imposta la modalità di assegnazione del gruppo sanguigno dei giocatori: \nGiocatore scelto: il giocatore sceglie il proprio gruppo sanguigno \nGiocatore scelto (obbligato): il giocatore sceglie il proprio gruppo sanguigno, ma non cambia al momento del respawn \nCasuale: il gruppo sanguigno è casuale a ogni respawn \nCasuale (all'accesso): il gruppo sanguigno è casuale, ma non cambia al momento del respawn \nSteamID: il gruppo sanguigno viene deciso in base allo SteamID del giocatore \nSteamID (elenco personalizzato): il gruppo sanguigno viene deciso in base allo SteamID del giocatore e all'elenco personalizzato</Italian>
             <Portuguese>Define como o tipo sanguíneo dos jogadores é atribuído: \nEscolha do jogador: o jogador escolhe seu próprio tipo sanguíneo \nEscolha do jogador (forçado): o jogador escolhe seu próprio tipo sanguíneo, mas ele não muda ao renascer \nAleatório: o tipo sanguíneo é aleatório a cada renascimento \nAleatório (ao entrar): O tipo sanguíneo é aleatório, mas não muda ao renascer \nSteamID: O tipo sanguíneo é decidido com base no steamID do jogador \nSteamID (lista personalizada): O tipo sanguíneo é decidido com base no steamID do jogador e na lista personalizada</Portuguese>
             <Finnish>Asettaa kuinka pelaajan veriryhmä määritetään: \nPelaaja valittu: Pelaaja valitsee oman veriryhmänsä \nPelaaja valittu (pakotettu): Pelaaja valitsee oman veriryhmänsä, mutta se ei muutu uudelleensyntyessä. \nSatunnainen: Veriryhmä on satunnainen jokaisen uudelleensyntymisen yhteydessä. \nSatunnainen (pelaajan liittyessä peliin): Veriryhmä on satunnainen, mutta ei muutu uudelleensyntyessä. \nSteamID: Veriryhmä päätetään pelaajan SteamID:n perusteella. \nSteamID (mukautettu lista): Veriryhmä päätetään pelaajan SteamID:n ja mukautetun listan perusteella.</Finnish>
+            <Russian>Определяет, как назначается группа крови игроков: \nвыбор игрока : каждый игрок выбирает свою собственную группу крови \nвыбор игрока (принудительный): каждый игрок выбирает свою собственную группу крови, но она не изменится при возрождении. n\случайная: группа крови выбирается случайным образом при каждом появлении \nслучайность (определена): группа крови является случайной, но не изменится при появлении n\SteamID: группа группа крови основана на steamID игроков n\SteamID (пользовательский список): группа крови основана на steamID игроки, а также пользовательский список</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player">
             <English>Player chosen</English>
@@ -1589,6 +1635,7 @@
             <Italian>Giocatore scelto</Italian>
             <Portuguese>Escolha do jogador</Portuguese>
             <Finnish>Pelaaja valittu</Finnish>
+            <Russian>Выбранный игрок</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_player_forced">
             <English>Player chosen (forced)</English>
@@ -1602,6 +1649,7 @@
             <Italian>Giocatore scelto (obbligato)</Italian>
             <Portuguese>Escolha do jogador (forçado)</Portuguese>
             <Finnish>Valittu pelaaja (pakotettu)</Finnish>
+            <Russian>Выбранный игрок (принудительно)</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random">
             <English>Random</English>
@@ -1615,6 +1663,7 @@
             <Italian>Casuale</Italian>
             <Portuguese>Aleatório</Portuguese>
             <Finnish>Satunnainen</Finnish>
+            <Russian>Случайный</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_random_onJoin">
             <English>Random (on join)</English>
@@ -1628,6 +1677,7 @@
             <Italian>Casuale (all'accesso)</Italian>
             <Portuguese>Aleatório (ao entrar)</Portuguese>
             <Finnish>Satunnainen (liittyessä)</Finnish>
+            <Russian>Случайный (при присоединении)</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid">
             <English>SteamID</English>
@@ -1641,6 +1691,7 @@
             <Italian>SteamID</Italian>
             <Portuguese>SteamID</Portuguese>
             <Finnish>SteamID</Finnish>
+            <Russian>SteamID</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_assign_steamid_custom">
             <English>SteamID (custom list)</English>
@@ -1654,6 +1705,7 @@
             <Italian>SteamID (elenco personalizzato)</Italian>
             <Portuguese>SteamID (lista personalizada)</Portuguese>
             <Finnish>SteamID (muokattu luettelo)</Finnish>
+            <Russian>SteamID (пользовательский список)</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted">
             <English>Weighted Randomizer</English>
@@ -1667,6 +1719,7 @@
             <Italian>Randomizzatore ponderato</Italian>
             <Portuguese>Aleatoriedade ponderada</Portuguese>
             <Finnish>Painotettu satunnaistin</Finnish>
+            <Russian>Взвешенный рандомизатор</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_random_weighted_DESC">
             <English>Sets if random blood type given will be weighted according to blood type commonness</English>
@@ -1680,6 +1733,7 @@
             <Italian>Imposta se il gruppo sanguigno casuale dato sarà ponderato in base alla comunanza del gruppo sanguigno</Italian>
             <Portuguese>Define se o tipo sanguíneo dado aleatoriamente será ponderado de acordo com as estatísticas reais</Portuguese>
             <Finnish>Asettaa, painotetaanko satunnaiset veriryhmät palvelimen yleisen veriryhmän mukaan.</Finnish>
+            <Russian>Определяет, определяется ли данная случайная группа крови с помощью реалистичных шансов определения группы крови</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_player">
             <English>Blood group</English>
@@ -1710,6 +1764,7 @@
             <Italian>Elenco personalizzato dei gruppi sanguigni</Italian>
             <Portuguese>Lista personalizada de tipo sanguíneo</Portuguese>
             <Finnish>Mukautettu luettelo verityypeistä</Finnish>
+            <Russian>Пользовательский список групп крови</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_bloodtype_custom_list_DESC">
             <English>Sets blood types that will be assigned to players based on their SteamID \nBlood types are seperated by a comma (","), list should contain a total of 10 blood types</English>
@@ -1723,10 +1778,16 @@
             <Italian>Imposta i gruppi sanguigni che verranno assegnati ai giocatori in base al loro SteamID \nI gruppi sanguigni sono separati da una virgola (","), l'elenco deve contenere un totale di 10 gruppi sanguigni</Italian>
             <Portuguese>Define os tipos sanguíneos que serão atribuídos aos jogadores com base no seu SteamID \nOs tipos sanguíneos são separados por vírgulas (","), a lista deve conter um total de 10 tipos sanguíneos</Portuguese>
             <Finnish>Asettaa veriryhmät, jotka määritetään pelaajille heidän SteamID:n perusteella. \nVerityypit erotetaan toisistaan merkillä (","). Listalla tulee olla yhteensä 10 veriryhmää.</Finnish>
+            <Russian>Устанавливает группы крови, которые будут присвоены игрокам на основе их Steam ID \nГруппы крови разделены запятой (","), список должен содержать в общей сложности 10 групп крови</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_bloodtype_log">
             <English>%1 checked dogtags blood group: %2</English>
-            <Japanese>%1 が認識票の血液型を確認: %2</Japanese>
+            <German>%1 hat die Blutgruppe der Erkennungsmarke überprüft: %2</German>
+            <Japanese>%1 がドッグタグの血液型を確認: %2</Japanese>
+            <Russian>%1 проверил жетоны, группа крови: %2</Russian>
+            <Spanish>%1 comprobó el grupo de sangre en la dogtag: %2</Spanish>
+            <French>%1 a vérifié le groupe sanguin sur la plaque d'identité : %2</French>
+            <Portuguese>%1 checou </Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_LOCATION_AED">
             <English>Locations AED</English>
@@ -1771,6 +1832,7 @@
             <Portuguese>DEA</Portuguese>
             <Spanish>DEA</Spanish>
             <Finnish>AUD</Finnish>
+            <Russian>AED</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X">
             <English>AED-X</English>
@@ -1781,6 +1843,7 @@
             <Portuguese>DEA-X</Portuguese>
             <Spanish>DEA-X</Spanish>
             <Finnish>AUD-X</Finnish>
+            <Russian>AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_DISPLAYNAME">
             <English>Automated External Defibrillator</English>
@@ -1825,6 +1888,7 @@
             <Portuguese>%1 aplicou choque (%2)</Portuguese>
             <Spanish>%1 administró una descarga (%2)</Spanish>
             <Finnish>%1 annettu sokki (%2)</Finnish>
+            <Russian>% 1 использовал разряд (% 2)</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_AttachPads">
             <English>%1 attached defibrillator pads (%2)</English>
@@ -1835,6 +1899,7 @@
             <Portuguese>%1 conectou as pás do desfibrilador (%2)</Portuguese>
             <Spanish>%1 colocó los electrodos del desfibrilador (%2)</Spanish>
             <Finnish>%1 kiinnitetyt defibrillaattorityynyt (%2)</Finnish>
+            <Russian>%1 прикрепил электроды (%2)</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_RemovePads">
             <English>%1 removed defibrillator pads</English>
@@ -1845,6 +1910,7 @@
             <Portuguese>%1 removeu as pás do desfibrilador</Portuguese>
             <Spanish>%1 quitó los electrodos del desfibrilador</Spanish>
             <Finnish>%1 poistettu defibrillaattorityynyt</Finnish>
+            <Russian>%1 снял электроды</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_ConnectVitalsMonitor">
             <English>%1 connected vitals monitor</English>
@@ -1855,6 +1921,7 @@
             <Portuguese>%1 conectou o monitor de sinais vitais</Portuguese>
             <Spanish>%1 conectó el monitor</Spanish>
             <Finnish>%1 kytketty terveysmonitori</Finnish>
+            <Russian>%1 подключил монитор жизненно важных показателей</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_DisconnectVitalsMonitor">
             <English>%1 disconnected vitals monitor</English>
@@ -1865,6 +1932,7 @@
             <Portuguese>%1 desconectou o monitor de sinais vitais</Portuguese>
             <Spanish>%1 desconectó el monitor</Spanish>
             <Finnish>%1 irrotettu terveysmonitori</Finnish>
+            <Russian>%1 отсоединил монитор жизненно важных показателей</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_PatientDisconnected">
             <English>Patient Disconnected</English>
@@ -1875,6 +1943,7 @@
             <Portuguese>Paciente desconectado</Portuguese>
             <Spanish>Paciente desconectado</Spanish>
             <Finnish>Potilas on katkaistu</Finnish>
+            <Russian>Пациент отключен</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MaxChance">
             <English>Max Success chance for AED-X</English>
@@ -1888,6 +1957,7 @@
             <Polish>Maksymalna szansa na sukces dla AED-X</Polish>
             <Portuguese>Probabilidade máxima de sucesso do DEA-X</Portuguese>
             <Finnish>Suurin mahdollisuus menestyä AUD-X:lle</Finnish>
+            <Russian>Максимальный шанс успеха для AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_MaxChance">
             <English>Max Success chance for AED</English>
@@ -1901,6 +1971,7 @@
             <Polish>Maksymalna szansa na sukces dla AED</Polish>
             <Portuguese>Probabilidade máxima de sucesso do DEA</Portuguese>
             <Finnish>Suurin mahdollisuus menestyä AUD:lle</Finnish>
+            <Russian>Максимальный шанс успеха для AED</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_X_MinChance">
             <English>Min Success chance for AED-X</English>
@@ -1914,6 +1985,7 @@
             <Polish>Minimalna szansa na sukces dla AED-X</Polish>
             <Portuguese>Probabilidade mínima de sucesso do DEA-X</Portuguese>
             <Finnish>Minimi mahdollisuus onnistua AUD-X:lle</Finnish>
+            <Russian>Минимальный шанс успеха для AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_AED_MinChance">
             <English>Min Success chance for AED</English>
@@ -1927,6 +1999,7 @@
             <Polish>Minimalna szansa na sukces dla AED</Polish>
             <Portuguese>Probabilidade mínima de sucesso do DEA</Portuguese>
             <Finnish>AUD:n onnistumisen minimimahdollisuus</Finnish>
+            <Russian>Минимальный шанс успеха для AED</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_ALLOW_AED">
             <English>Allow AED</English>
@@ -1979,6 +2052,15 @@
             <Portuguese>Permitir DEA-X</Portuguese>
             <Finnish>Salli AUD-X</Finnish>
         </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_AED_duringCpr">
+            <English>Allow AED pad application during CPR</English>
+            <Russian>Разрешить применение подкладки AED во время СЛР</Russian>
+            <Japanese>CPR中の除細動器パッド貼り付けの許可</Japanese>
+            <German>Anbringung von AED Pads während laufender HLW zulassen</German>
+            <Spanish>Permitir la aplicación de parche AED durante la realización de RCP</Spanish>
+            <French>Autoriser l'application des électrodes de l'AED pendant la RCP</French>
+            <Portuguese>Permitir aplicação de pás do desfibrilador durante RCP</Portuguese>
+        </Key>
         <Key ID="STR_KAT_Circulation_TRAINING_LEVEL_AED_X">
             <English>Training level required to use an AED-X</English>
             <Polish>Poziom wyszkolenia wymagany do korzystania z AED-X</Polish>
@@ -2005,10 +2087,16 @@
             <Portuguese>Permitir interação com a estação DEA-X</Portuguese>
             <Spanish>Permitir la interacción con la estación de DEA/X</Spanish>
             <Finnish>Salli AUD-X-vuorovaikutus aseman kanssa</Finnish>
+            <Russian>Разрешить взаимодействие станции AED/X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDStation_AllowInteraction_DESCRIPTION">
             <English>Medical level required to pick up placed AED/X station</English>
             <Japanese>設置されたAED/Xを拾うのに必要な医療スキルのレベルを設定します。</Japanese>
+            <Russian>Медицинский уровень, необходимый для приема/ взаимодействия с размещенной станцией AED/X</Russian>
+            <German>Benötigter medizinischer Grad, um einen platzierte AED/X Station aufzunehmen </German>
+            <Spanish>Nivel médico requerido para recoger una estación AED/X puesta</Spanish>
+            <French>Niveau médical requis pour ramasser un AED-X posé au sol</French>
+            <Portuguese>Nível médico necessário para pegar uma estação DEA/X colocada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_AttachTime">
             <English>Attach AED-X Vitals Monitor Time</English>
@@ -2019,6 +2107,7 @@
             <Portuguese>Tempo para conectar o monitor de sinais vitais do DEA-X</Portuguese>
             <Spanish>Tiempo para colocar el monitor DEA-X</Spanish>
             <Finnish>Kuinka kauan AUD-X-terveysmonitorin kiinnittäminen kestää</Finnish>
+            <Russian>Время подключения мониторинга жизненно важных показателей AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AEDX_VitalsMonitor_DetachTime">
             <English>Detach AED-X Vitals Monitor Time</English>
@@ -2029,6 +2118,7 @@
             <Portuguese>Tempo para desconectar o monitor de sinais vitais do DEA-X</Portuguese>
             <Spanish>Tiempo para retirar el monitor AED-X</Spanish>
             <Finnish>Kuinka kauan AUD-X-terveysmonitorin irrottaminen kestää</Finnish>
+            <Russian>Время отключения мониторинга жизненно важных показателей AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_AttachTime">
             <English>Attach Defibrillator Pads Time</English>
@@ -2039,6 +2129,7 @@
             <Portuguese>Tempo para conectar as pás do desfibrilador</Portuguese>
             <Spanish>Tiempo para colocar los electrodos del desfibrilador</Spanish>
             <Finnish>Kuinka kauan defibrillaattorityynyjen kiinnittäminen kestää</Finnish>
+            <Russian>Время подключения электродов</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_DefibrillatorPads_DetachTime">
             <English>Detach Defibrillator Pads Time</English>
@@ -2049,6 +2140,7 @@
             <Portuguese>Tempo para desconectar as pás do desfibrilador</Portuguese>
             <Spanish>Tiempo para quitar los electrodos del desfibrilador</Spanish>
             <Finnish>Kuinka kauan defibrillaattorityynyjen irrottaminen kestää</Finnish>
+            <Russian>Время отсоединеия электродов</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Defibrillator_DistanceLimit">
             <English>Distance limit for defibrillators in meters</English>
@@ -2059,6 +2151,7 @@
             <Portuguese>Limite de distância para desfibriladores em metros</Portuguese>
             <Spanish>Límite de distancia para los desfibriladores en metros</Spanish>
             <Finnish>Defibrillaattorien etäisyysraja metreinä</Finnish>
+            <Russian>Предельное расстояние для дефибрилляторов в метрах</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_CHANCES">
             <English>Enable different CPR chances per medical level</English>
@@ -2090,6 +2183,7 @@
             <Spanish>Probabilidad exitosa max. de RCP para doctores</Spanish>
             <Portuguese>Probabilidade máxima de êxito de RCP para doutores</Portuguese>
             <Finnish>Suurin CPR onnistumisen mahdollisuus lääkäreille</Finnish>
+            <Russian>Максимальный шанс СЛР для врачей</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_RegularMedic">
             <English>Max CPR Chance for Regular medics</English>
@@ -2104,6 +2198,7 @@
             <Spanish>Probabilidad exitosa max. de RCP para médicos</Spanish>
             <Portuguese>Probabilidade máxima de êxito de RCP para médicos</Portuguese>
             <Finnish> Suurin mahdollisuus menestyä elvytystä suorittaville taistelulääkäreille</Finnish>
+            <Russian>Максимальный шанс СЛР для обычных медиков</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MaxChance_Default">
             <English>Max CPR Chance for Default</English>
@@ -2118,6 +2213,7 @@
             <Spanish>Probabilidad exitosa max. de RCP para el resto</Spanish>
             <Portuguese>Probabilidade máxima de êxito de RCP para não-médicos</Portuguese>
             <Finnish>Suurin mahdollisuus menestyä oletussotilailla, jotka suorittavat elvytystoimia</Finnish>
+            <Russian>Максимальный шанс СЛР по умолчанию</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Doctor">
             <English>Min CPR Chance for Doctors</English>
@@ -2132,6 +2228,7 @@
             <Spanish>Probabilidad exitosa min. de RCP para doctores</Spanish>
             <Portuguese>Probabilidade mínima de êxito de RCP para doutores</Portuguese>
             <Finnish>Pienin mahdollisuus menestyä elvytyksen suorittamisessa lääkärinä</Finnish>
+            <Russian>Минимальный шанс СЛР для врачей</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_RegularMedic">
             <English>Min CPR Chance for Regular medics</English>
@@ -2146,6 +2243,7 @@
             <Spanish>Probabilidad exitosa min. de RCP para médicos</Spanish>
             <Portuguese>Probabilidade mínima de êxito de RCP para médicos</Portuguese>
             <Finnish>Pienin mahdollisuus menestyä elvytystyössä taistelulääkärinä</Finnish>
+            <Russian>Минимальный шанс СЛР для обычных медиков</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_CPR_MinChance_Default">
             <English>Min CPR Chance for Default</English>
@@ -2160,6 +2258,7 @@
             <Spanish>Probabilidad exitosa min. de RCP para el resto</Spanish>
             <Portuguese>Probabilidade mínima de êxito de RCP para não-médicos</Portuguese>
             <Finnish>Pienin mahdollisuus menestyä elvytystoiminnassa oletussotilaana</Finnish>
+            <Russian>Минимальный шанс СЛР по умолчанию</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_ChanceInterval">
             <English>CPR Chance Interval</English>
@@ -2170,6 +2269,7 @@
             <Portuguese>Intervalo de chance de RCP</Portuguese>
             <Spanish>Intervalo de probabilidad de RCP</Spanish>
             <Finnish>Elvytyksen onnistumislaskelmien välinen aika</Finnish>
+            <Russian>Интервал шанса СЛР</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_CPR_OxygenationPeriod">
             <English>Oxygenation Period</English>
@@ -2180,6 +2280,7 @@
             <Portuguese>Período de oxigenação</Portuguese>
             <Spanish>Período de oxigenación</Spanish>
             <Finnish>Happisaturaatiojakso</Finnish>
+            <Russian>Период насыщения кислородом</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_Activity_CPR">
             <English>%1 performed CPR (%2)</English>
@@ -2190,6 +2291,7 @@
             <Portuguese>%1 realizou RCP (%2)</Portuguese>
             <Spanish>%1 realizó RCP (%2)</Spanish>
             <Finnish>%1 suoritettu elyytys (%2)</Finnish>
+            <Russian>%1 выполнил СЛР (%2)</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_StopCPR">
             <English>Stop CPR</English>
@@ -2200,22 +2302,28 @@
             <Portuguese>Interromper RCP</Portuguese>
             <Spanish>RCP parado</Spanish>
             <Finnish>Lopeta elvytys</Finnish>
+            <Russian>Прекратить СЛР</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_StartCPR">
             <English>CPR Started</English>
             <Japanese>CPRを開始した</Japanese>
             <French>RCP débuté</French>
             <Finnish>Elvytys alkoi</Finnish>
+            <Russian>СЛР начата</Russian>
+            <German>HLW begonnen</German>
+            <Spanish>RCP iniciada</Spanish>
+            <Portuguese>RCP iniciada</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_CancelCPR">
             <English>CPR Cancelled</English>
             <Japanese>CPRが中止された</Japanese>
             <French>RCP annulée</French>
             <Korean>심폐소생술 취소함</Korean>
-            <German>HLW Gestoppt</German>
+            <German>HLW gestoppt</German>
             <Portuguese>RCP cancelada</Portuguese>
-            <Spanish>RCP cancelado</Spanish>
+            <Spanish>RCP cancelada</Spanish>
             <Finnish>Elvytys peruttu</Finnish>
+            <Russian>СЛР отменена</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_FieldBloodTK500_Display">
             <English>Field Blood Transfusion Kit (500ml)</English>
@@ -2434,6 +2542,7 @@
             <Spanish>Parámetros básicos</Spanish>
             <Portuguese>Configurações básicas</Portuguese>
             <Finnish>Perusasetukset</Finnish>
+            <Russian>Основные настройки</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_AED">
             <English>AED + AED-X Settings</English>
@@ -2448,6 +2557,7 @@
             <Spanish>Parámetros del DEA/DEA-X</Spanish>
             <Portuguese>Configurações de DEA/DEA-X</Portuguese>
             <Finnish>AUD + AUD-X asetukset</Finnish>
+            <Russian>Настройки AED + AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_CPR">
             <English>CPR Settings</English>
@@ -2462,6 +2572,7 @@
             <Spanish>Parámetros del RCP</Spanish>
             <Portuguese>Configurações de RCP</Portuguese>
             <Finnish>Elvytys asetukset</Finnish>
+            <Russian>Настройки СЛР</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_AdvRhythms">
             <English>Advanced Rhythms</English>
@@ -2472,6 +2583,7 @@
             <Portuguese>Ritmos avançados</Portuguese>
             <Spanish>Ritmos avanzados</Spanish>
             <Finnish>Edistyneet sydämen rytmit</Finnish>
+            <Russian>Продвинутые ритмы</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate">
             <English>Can Deteriorate</English>
@@ -2482,6 +2594,7 @@
             <Portuguese>Pode deteriorar</Portuguese>
             <Spanish>Puede deteriorarse</Spanish>
             <Finnish>voivatko ne pahentua?</Finnish>
+            <Russian>Может ухудшиться</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeMax">
             <English>Random Deteriorate Time Maximum</English>
@@ -2492,6 +2605,7 @@
             <Portuguese>Tempo máximo de deterioração aleatória</Portuguese>
             <Spanish>Tiempo aleatorio maximo para deterioro</Spanish>
             <Finnish>Satunnainen huononemisajan maksimiarvo</Finnish>
+            <Russian>Максимальное значение времени случайного ухудшения функции сердца</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateTimeWeight">
             <English>Random Deteriorate Time Weight</English>
@@ -2502,6 +2616,7 @@
             <Portuguese>Peso de tempo de deterioração aleatória</Portuguese>
             <Spanish>Tiempo aleatorio para deterioro</Spanish>
             <Finnish>Satunnainen huononemisajan paino</Finnish>
+            <Russian>Взвешивание времени случайного ухудшения функции сердца</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_deteriorateAfterTreatment">
             <English>Deteriorate After Treatment</English>
@@ -2512,6 +2627,7 @@
             <Portuguese>Deteriorar após o tratamento</Portuguese>
             <Spanish>Deterioro tras tratamiento</Spanish>
             <Finnish>Voiko se pahentua hoidon jälkeen?</Finnish>
+            <Russian>Ухудшается после лечения</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_PEAChance">
             <English>PEA Chance</English>
@@ -2522,6 +2638,7 @@
             <Portuguese>Chance de Atividade Elétrica Sem Pulso (AESP)</Portuguese>
             <Spanish>Probabilidad de AESP</Spanish>
             <Finnish>Pulssittoman sähköisen toiminnan mahdollisuus</Finnish>
+            <Russian>Показатель точности безимпульсной электрической активности (PEA)</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_VTChance">
             <English>VT Chance</English>
@@ -2532,6 +2649,7 @@
             <Portuguese>Chance de Taquicardia Ventricular (TV)</Portuguese>
             <Spanish>Probabilidad de TV</Spanish>
             <Finnish>Kammiotakykardian mahdollisuus</Finnish>
+            <Russian>Вероятность желудочковой тахикардии (VT)</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_asystoleBloodlossThreshold">
             <English>Asystole blood loss threshold</English>
@@ -2542,6 +2660,7 @@
             <Portuguese>Perda sanguínea que resulta em assistolia</Portuguese>
             <Spanish>Umbral de pérdida de sangre para la asistolia</Spanish>
             <Finnish>Asystolan vuoksi menetettävä veren määrä</Finnish>
+            <Russian>Порог кровопотери при асистолии</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_CPR_ROSC_Chance">
             <English>ROSC After CPR Chance</English>
@@ -2552,6 +2671,7 @@
             <Portuguese>Chance de retorno da circulação espontânea após RCP</Portuguese>
             <Spanish>Probabilidad de RCE después desfibrilar con DEA-X</Spanish>
             <Finnish>ROSC elvytysmahdollisuuden jälkeen</Finnish>
+            <Russian>Шанс вернуться в спонтанное кровообращение после СЛР</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_AED_ROSC_Chance">
             <English>ROSC After AED Chance</English>
@@ -2562,6 +2682,7 @@
             <Portuguese>Chance de retorno da circulação espontânea após DEA</Portuguese>
             <Spanish>Probabilidad de RCE después desfibrilar con DEA</Spanish>
             <Finnish>ROSC AUD-mahdollisuuden jälkeen</Finnish>
+            <Russian>Шанс вернуться в спонтанное кровообращение после AED</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Hardcore_Enable">
             <English>Hardcore Rhythms</English>
@@ -2572,6 +2693,7 @@
             <Portuguese>Ritmos cardíacos do modo hardcore</Portuguese>
             <Spanish>Ritmos en modo avanzado</Spanish>
             <Finnish>Vaikeat sydämen rytmit</Finnish>
+            <Russian>Интенсивность сердечного ритма</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_hardcoreDeteriorationChance">
             <English>Hardcore Deterioration Chance</English>
@@ -2582,6 +2704,7 @@
             <Portuguese>Chance de deterioração no modo hardcore</Portuguese>
             <Spanish>Probabilidad de deterioro en modo avanzado</Spanish>
             <Finnish>Vaikean sydämen rytmin heikkenemismahdollisuus</Finnish>
+            <Russian>Вероятность сильного ухудшения</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SubCategory_BloodDraw">
             <English>Blood draw Settings</English>
@@ -2596,6 +2719,7 @@
             <Spanish>Parámetros de extracción de sangre</Spanish>
             <Portuguese>Configurações de extração de sangue</Portuguese>
             <Finnish>Verenoton asetukset</Finnish>
+            <Russian>Параметры анализа крови</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMInactive_StatusLog">
             <English>AED-X: HR: %1 BP: --/-- SpO2: ---</English>
@@ -2608,6 +2732,7 @@
             <German>AED-X: HR: %1 BP: --/-- SpO2: ---</German>
             <Portuguese>DEA-X: FC: %1 PA: --/-- SpO2: ---</Portuguese>
             <Finnish>AUD-X: HR: %1 BP: --/-- SpO2: ---</Finnish>
+            <Russian>AED-X: ЧСС: %1 АД: --/-- SpO2: ---</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog">
             <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4</English>
@@ -2618,6 +2743,7 @@
             <Portuguese>DEA-X: FP: %1 PA: %2/%3 SpO2: %4</Portuguese>
             <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4</Spanish>
             <Finnish>AUD-X: PR: %1 BP: %2/%3 SpO2: %4</Finnish>
+            <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog">
             <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4</English>
@@ -2631,6 +2757,31 @@
             <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4</Portuguese>
             <Czech>AED-X SF: %1 TK: %2%3 SpO2: %4</Czech>
             <Finnish>AUD-X: HR: %1 BP: %2/%3 SpO2: %4</Finnish>
+            <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4</Russian>
+        </Key>
+        <Key ID="STR_KAT_Circulation_VitalsMonitor_VMInactive_StatusLog_HasEtco2Monitor">
+            <English>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Breaths/min: %3</English>
+            <Japanese>AED-X: 心拍: %1 血圧: --/-- SpO2: --- ETCo2: %2 呼吸数/分: %3</Japanese>
+            <Russian>AED-X: ЧСС: %1 АД: --/-- SpO2: --- ETCo2: %2 Вдохи/мин: %3</Russian>
+            <French>AED-X: HR: %1 BP: --/-- SpO2: --- ETCo2: %2 Respirations/min: %3</French>
+            <Spanish>DEA-X: RC: %1 PS: --/-- SpO2: --- ETCo2: %2 Respiraciones/min: %3</Spanish>
+            <Portuguese>DEA-X: FC: %1 PA: --/-- SpO2: --- ETCo2: %2 Respirações/min: %3</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Circulation_VitalsMonitor_VMActive_StatusLog_HasEtco2Monitor">
+            <English>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Breaths/min: %6</English>
+            <Japanese>AED-X: 脈拍: %1 血圧: %2/%3 SpO2: %4 ETCo2: %5 呼吸数/分: %6</Japanese>
+            <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4 ETCo2: %5 Вдохи/мин: %6</Russian>
+            <French>AED-X: PR: %1 BP: %2/%3 SpO2: %4 ETCo2: %5 Respirations/min: %6</French>
+            <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4 ETCo2: %5 Respiraciones/min: %6</Spanish>
+            <Portuguese>DEA-X: FP: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Circulation_VitalsMonitor_StatusLog_HasEtco2Monitor">
+            <English>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Breaths/min: %6</English>
+            <Japanese>AED-X: 心拍: %1 血圧: %2/%3 SpO2: %4 ETCo2: %5 呼吸数/分: %6</Japanese>
+            <Russian>AED-X: ЧСС: %1 АД: %2/%3 SpO2: %4  ETCo2: %5 Вдохи/мин: %6</Russian>
+            <French>AED-X: HR: %1 BP: %2/%3 SpO2: %4  ETCo2: %5 Respirations/min: %6</French>
+            <Spanish>DEA-X: RC: %1 PS: %2/%3 SpO2: %4  ETCo2: %5 Respiraciones/min: %6</Spanish>
+            <Portuguese>DEA-X: FC: %1 PA: %2/%3 SpO2: %4 ETCo2: %5 Respirações/min: %6</Portuguese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect">
             <English>AED-X Vitals Monitor Sounds</English>
@@ -2641,6 +2792,7 @@
             <Portuguese>Sons do monitor de sinais vitais do DEA-X</Portuguese>
             <Spanish>Sonidos del monitor DEA-X</Spanish>
             <Finnish>AUD-X terveysmonitorin ääni</Finnish>
+            <Russian>Звуки монитора жизненно важных функций AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Original">
             <English>Original</English>
@@ -2651,6 +2803,7 @@
             <Portuguese>Original</Portuguese>
             <Spanish>Original</Spanish>
             <Finnish>Alkuperäinen</Finnish>
+            <Russian>Оригинал</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_SoundsSelect_Default">
             <English>Default</English>
@@ -2661,6 +2814,7 @@
             <Portuguese>Padrão</Portuguese>
             <Spanish>Por defecto</Spanish>
             <Finnish>Oletus</Finnish>
+            <Russian>По умолчанию</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_Threshold_SpO2Warning">
             <English>AED-X alarm SpO2 threshold</English>
@@ -2673,6 +2827,7 @@
             <Spanish>Umbral de alarma de SpO2 del AED-X</Spanish>
             <Portuguese>Limiar de alarme de SpO2 do DEA-X</Portuguese>
             <Finnish>SpO2-taso, joka laukaisee AUD-X-hälytyksen</Finnish>
+            <Russian>Порог сигнала тревоги SpO2 AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval">
             <English>AED-X Vitals Monitor BP Measurement Interval</English>
@@ -2683,6 +2838,7 @@
             <Portuguese>Intervalo de medição da pressão arterial do monitor de sinais vitais do DEA-X</Portuguese>
             <Spanish>Intervalo de medición de la PS en el monitor DEA-X.</Spanish>
             <Finnish>AUD-X terveysmonitorin verenpaineen mittausväli</Finnish>
+            <Russian>Интервал измерения артериального давления на мониторе AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_AutomaticInstant">
             <English>Automatic Instant</English>
@@ -2693,6 +2849,7 @@
             <Portuguese>Automaticamente instantâneo</Portuguese>
             <Spanish>Automático Instantaneo</Spanish>
             <Finnish>Automaattinen (välitön)</Finnish>
+            <Russian>Автоматический постоянный</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Automatic">
             <English>Automatic (Interval)</English>
@@ -2703,6 +2860,7 @@
             <Portuguese>Automático (Intervalo)</Portuguese>
             <Spanish>Automático (Intervalo)</Spanish>
             <Finnish>Automaattinen (väli)</Finnish>
+            <Russian>Автоматический (интервал)</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Manual">
             <English>Manual</English>
@@ -2713,6 +2871,7 @@
             <Portuguese>Manual</Portuguese>
             <Spanish>Manual</Spanish>
             <Finnish>Manuaalinen</Finnish>
+            <Russian>Инструкция</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AED_X_VitalsMonitor_BloodPressureInterval_Time">
             <English>AED-X Vitals Monitor BP Measurement Interval Time</English>
@@ -2723,6 +2882,7 @@
             <Portuguese>Tempo de intervalo de medição da pressão arterial do monitor de sinais vitais do DEA-X</Portuguese>
             <Spanish>Tiempo de medición de PS en el monitor DEA-X</Spanish>
             <Finnish>AUD-X terveysmittarin verenpaineen mittausvälin aika</Finnish>
+            <Russian>Интервал измерения артериального давления на мониторе AED-X</Russian>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_cardiacArrestBleedRate">
             <English>Cardiac Arrest Bleed Rate</English>
@@ -2733,6 +2893,31 @@
             <Portuguese>Taxa de sangramento após parada cardíaca</Portuguese>
             <Spanish>Tasa de sangrado en paro cardíaco</Spanish>
             <Finnish>Verenvuoto sydämenpysähdyksen aikana</Finnish>
+            <Russian>Частота кровотечений после остановки сердца</Russian>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance">
+            <English>Chance for tamponade in penetrating wounds</English>
+            <Russian>Вероятность тампонады при проникающих ранениях</Russian>
+            <Spanish>Probabilidad de taponamiento en heridas penetrantes</Spanish>
+            <Japanese>穿通創におけるタンポナーデの可能性</Japanese>
+            <French>Chance de tamponnade au cours d'une blessure pénétrante</French>
+            <Portuguese>Probabilidade de tamponamento em ferimentos penetrantes</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_tamponadeInterval">
+            <English>Tamponade progression timer</English>
+            <Russian>Таймер прогрессирования тампонады</Russian>
+            <Spanish>Temporizador de progreso de taponamiento</Spanish>
+            <Japanese>タンポナーデ進行タイマー</Japanese>
+            <French>Timer de progression de la tamponnade</French>
+            <Portuguese>Temporizador de progresso de tamponamento</Portuguese>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_tamponadeChance_deterioration">
+            <English>Tamponade progression chance</English>
+            <Russian>Вероятность прогрессирования тампонады</Russian>
+            <Spanish>Probabilidad de progresión de taponamiento</Spanish>
+            <Japanese>タンポナーデ進行確率</Japanese>
+            <French>Chance de progression de la tamponnade</French>
+            <Portuguese>Probabilidade de progressão de tamponamento</Portuguese>
         </Key>
     </Package>
 </Project>

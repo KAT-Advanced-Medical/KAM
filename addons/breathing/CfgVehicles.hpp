@@ -4,11 +4,22 @@ class CfgVehicles {
     class kat_PulseoximeterItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName= CSTRING(Pulseoximeter_Desc_Short);
+        displayName= CSTRING(Pulseoximeter);
         author = "Katalam";
         vehicleClass = "Items";
         class TransportItems {
             MACRO_ADDITEM(kat_Pulseoximeter,1);
+        };
+    };
+
+    class kat_nasalItem: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName= CSTRING(NasalCannula_Display);
+        author = "apo_tle";
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(kat_nasal,1);
         };
     };
 
@@ -36,6 +47,7 @@ class CfgVehicles {
             MACRO_ADDITEM(kat_stethoscope,5);
             MACRO_ADDITEM(kat_BVM,5);
             MACRO_ADDITEM(kat_pocketBVM,5);
+            MACRO_ADDITEM(kat_nasal,10);
         };
         class TransportMagazines: TransportMagazines {
             MACRO_ADDMAGAZINE(kat_oxygenTank_150,2);

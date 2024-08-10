@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: 1LT.Mazinski.H
+ * Author: Mazinski
  * Allows for dialysis to occur around medical vehicles
  *
  * Arguments:
@@ -11,7 +11,7 @@
  * Succesful treatment <BOOL>
  *
  * Example:
- * [player, cursorObject] call kat_surgery_fnc_vehicleCheckDialysis
+ * [player, cursorObject] call kat_pharma_fnc_vehicleCheckDialysis
  *
  * Public: No
  */

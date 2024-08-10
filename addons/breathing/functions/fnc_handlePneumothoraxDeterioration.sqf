@@ -33,15 +33,38 @@ params ["_unit", "_chanceIncrease"];
             if (_unit getVariable [QGVAR(hemopneumothorax), false] || _unit getVariable [QGVAR(tensionpneumothorax), false] || !(alive _unit) || _unit getVariable [QGVAR(pneumothorax), 0] isEqualTo 0) exitWith {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
-            if (floor (random 100) <= GVAR(deterioratingPneumothorax_chance) && _breathing) then {
+            if (floor (random 100) < GVAR(deterioratingPneumothorax_chance) && _breathing) then {
                 private _ptxTarget = (_unit getVariable [QGVAR(pneumothorax), 0]) + 1;
                 // Once deteriorated far enough try to inflict advanced pneumothorax or if disabled kill the PFH
                 if (_ptxTarget > 4) exitWith {
+
+                    if (GVAR(PneumothoraxArrest)) then {
+                        [{
+                            params ["_args", "_idPFH"];
+                            _args params ["_unit"];
+
+                            if ((_unit getVariable [QGVAR(pneumothorax), 0]) == 4) then {
+                                private _ht = _unit getVariable [QEGVAR(circulation,ht), []];
+                                if ((_ht findIf {_x isEqualTo "tension"}) == -1) then {
+                                    _ht pushBack "tension";
+
+                                    if (_unit getVariable [QEGVAR(circulation,cardiacArrestType), 0] == 0) then {
+                                        [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                                    };
+
+                                    _unit setVariable [QEGVAR(circulation,ht), _ht, true];
+                                };
+                            };
+                        }, [_unit], GVAR(arrestPneumothorax_interval)] call CBA_fnc_waitAndExecute;
+                    };
+
                     if (GVAR(advPtxEnable)) then {
                         [_unit, _chanceIncrease, true] call FUNC(inflictAdvancedPneumothorax);
                     };
+
                     [_idPFH] call CBA_fnc_removePerFrameHandler;
                 };
+                
                 _unit setVariable [QGVAR(pneumothorax), _ptxTarget, true];
                 [_unit, 0.5 * (_ptxTarget / 4)] call ACEFUNC(medical_status,adjustPainLevel); // Adjust pain based on severity
                 [_unit, -12, -12, "ptx_tension"] call EFUNC(circulation,updateBloodPressureChange); // Simulate low blood pressure and high heart rate caused by pneumothorax

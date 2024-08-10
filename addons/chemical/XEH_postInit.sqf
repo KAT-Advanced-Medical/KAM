@@ -2,15 +2,25 @@
 
 //Events
 [QGVAR(gasCheck), LINKFUNC(gasCheck)] call CBA_fnc_addEventHandler;
-[QGVAR(gasCheck_local), LINKFUNC(gasCheckLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(gasCheck_ai), LINKFUNC(gasAI)] call CBA_fnc_addEventHandler;
+[QGVAR(gasPlayer), LINKFUNC(gasCheckLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(gasAI), LINKFUNC(gasAI)] call CBA_fnc_addEventHandler;
 [QGVAR(afterWait), LINKFUNC(afterWait)] call CBA_fnc_addEventHandler;
-[QGVAR(enteredPoisonEvent), LINKFUNC(chemDetector)] call CBA_fnc_addEventHandler;
+[QGVAR(enteredZone), LINKFUNC(chemDetector)] call CBA_fnc_addEventHandler;
+[QGVAR(createZoneGlobal), LINKFUNC(createZone)] call CBA_fnc_addEventHandler;
+[QGVAR(createSealActionGlobal), LINKFUNC(createSealAction)] call CBA_fnc_addEventHandler;
+
+// ACE Events
+[QACEGVAR(medical_gui,updateInjuryListGeneral), LINKFUNC(gui_updateInjuryListGeneral)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_gui,updateBodyImage), LINKFUNC(gui_updateBodyImage)] call CBA_fnc_addEventHandler;
+[QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
+
+// Handlers
+[QEGVAR(pharma,atropineLocal), LINKFUNC(treatmentAdvanced_AtropineLocal)] call CBA_fnc_addEventHandler;
+[QEGVAR(misc,handleRespawn), LINKFUNC(handleRespawn)] call CBA_fnc_addEventHandler;
 
 //Mortar Events
 ["Mortar_01_base_F", "fired", {call FUNC(handleFired)}] call CBA_fnc_addClassEventHandler;
 KAT_ProjectileCache = ("([_x, 'KAT_projectile', 0] call BIS_fnc_returnConfigEntry) != 0" configClasses (configFile >> "cfgAmmo")) apply {configName _x};
-[] call FUNC(addLoadAction);
 
 //Grenade Events
 ["ace_firedPlayer", LINKFUNC(throwGrenade)] call CBA_fnc_addEventHandler;

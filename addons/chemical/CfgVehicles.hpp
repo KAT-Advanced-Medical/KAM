@@ -117,11 +117,11 @@ class CfgVehicles {
             class GAS_Type
             {
                 displayName = CSTRING(UI_gasType);
-                typeName = "STRING";
+                typeName = "NUMBER";
                 class values {
                     class toxicgas {
                         name = CSTRING(LvL1_Gas);
-                        value = "Toxic";
+                        value = 0;
                         default = 1;
                     };
                    /* class csgas {
@@ -179,6 +179,10 @@ class CfgVehicles {
         };
     };
     class Mortar_01_base_F: StaticMortar {
+        class ace_csw {
+            proxyWeapon = "ace_mortar_82mm";
+        };
+
         class Turrets: Turrets {
             class MainTurret: MainTurret {
                 magazines[] += {"KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_5Rnd_82mm_Mo_Type0_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI","KAT_3Rnd_82mm_Mo_TypeCS_AI"};
@@ -206,7 +210,6 @@ class CfgVehicles {
     };
 
     class APERSTripMine;
-
     class KAT_Gas_TripWireMine: APERSTripMine {
         author = "DiGii";
         ammo = "KAT_Gas_TripWireMine_Ammo";
