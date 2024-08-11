@@ -15,11 +15,9 @@
  * Public: No
  */
 params ["_entries"];
-
-private _bloodGas = _entries select 0;
-private _bloodGasArray = _bloodGas select 1;
-private _patient = _entries select 1;
+_entries params ["_bloodGas", "_patient", "_idNumber", "_player"];
+_bloodGas params ["_patientName", "_bloodGasArray"];
 
 _patient setVariable [QGVAR(testedBloodGas), _bloodGasArray, true];
 
-[(_entries select 3), (format ["KAT_bloodTest_%1",(_entries select 2)])] call CBA_fnc_removeItemCargo;
+_player removeItem (format ["KAT_bloodResult_%1",_idNumber]);
