@@ -29,6 +29,7 @@ _unit setVariable [QGVAR(necrosis),0,true];
 _unit setVariable [QGVAR(deoxygenatedTicks),0,true];
 _unit setVariable [QGVAR(reversibleDamage),0,true];
 
+//TODO fix these PFHs so that they dont create duplicates when a player is healed
 _unit setVariable [QGVAR(autoregulationPFH), [_unit] call FUNC(handleAutoregulation),true];
 _unit setVariable [QGVAR(activityPFH), [_unit] call FUNC(handleBrainActivity),true];
 

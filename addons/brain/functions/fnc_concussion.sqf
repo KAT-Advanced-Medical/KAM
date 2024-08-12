@@ -36,19 +36,18 @@ if (_ammo in ["vehiclehit","explosive","shell","vehiclecrash"]) then {
 private _concussionChance = (GVAR(concussionChance) + _chanceIncrease) * _chanceMultiplier;
 if (floor (random 100) <= _concussionChance) then {
 	private _currentSeverity = _unit getVariable [QGVAR(concussionSeverity),0];
-	private _newSeverity = linearConversion [0, 2,_damage,0,1,true];
-	if (_newSeverity > _currentSeverity) then { //Replace the current concussion with the more severe one
+	if (_damage > _currentSeverity) then { //Replace the current concussion with the more severe one
 		// Add instantaneous effects from concussions
 		if (_damage > GVAR(necrosisImpactDamage)) then { // Cause instant necrosis if threshold is surpassed
 			private _necrosis = _unit getVariable [QGVAR(necrosis),0];
-			private _newNecrosis = linearConversion [0, 3,_damage,0,4,true]; //Increase tissue necrosis by 1% max on impact
+			private _newNecrosis = linearConversion [0, 1,_damage,0,4,true]; //Increase tissue necrosis by 1% max on impact
 			if (_newNecrosis > _necrosis) then { // Prevent reverting existing necrosis levels
 				_unit setVariable [QGVAR(necrosis),_newNecrosis,true]; 
 			};
 		};
 		if (_damage > GVAR(tissueImpactDamage)) then { // Cause reversible tissue damage if threshold is surpassed
 			private _reversibleDamage = _unit getVariable [QGVAR(reversibleDamage),0];
-			_reversibleDamage = _reversibleDamage + (linearConversion [0,3,_damage,0,15,true]); //Increase reversible damage by max 5% on impact
+			_reversibleDamage = _reversibleDamage + (linearConversion [0,1,_damage,0,15,true]); //Increase reversible damage by max 5% on impact
 			_unit setVariable [QGVAR(reversibleDamage),_reversibleDamage,true];
 		};
 
@@ -63,7 +62,7 @@ if (floor (random 100) <= _concussionChance) then {
 			[_existingPFH] call CBA_fnc_removePerFrameHandler;
 		};
 
-		private _maxICPIncrease = linearConversion [0,1,_newSeverity,0,50];
+		private _maxICPIncrease = linearConversion [0,1,_damage,0,40];
 		private _newPFH = [{
 			params ["_args", "_idPFH"];
 			_args params ["_unit","_severity","_maxICPIncrease"];
@@ -85,10 +84,10 @@ if (floor (random 100) <= _concussionChance) then {
 			private _ICPincrease = linearConversion [0,1,_severity,0,2,true];
 			_unit setVariable [QGVAR(ICP),_ICP+_ICPincrease,true]; //Increase ICP by concussion severity
 
-		}, 10, [_unit,_newSeverity,_maxICPIncrease]] call CBA_fnc_addPerFrameHandler;
+		}, 10, [_unit,_damage,_maxICPIncrease]] call CBA_fnc_addPerFrameHandler;
 		
 		_unit setVariable [QGVAR(concussionPFH),_newPFH,true];
-		_unit setVariable [QGVAR(concussionSeverity),_newSeverity,true];
+		_unit setVariable [QGVAR(concussionSeverity),_damage,true];
 	}
 	
 };
