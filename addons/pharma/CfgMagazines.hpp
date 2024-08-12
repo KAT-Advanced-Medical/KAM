@@ -11,11 +11,11 @@ class CfgMagazines {
         picture = QPATHTOF(ui\icon_painkillers.paa);
 
         ammo = "";
-        count = 10;
+        count = 4;
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        mass = 1;
+        mass = 0.5;
         ACE_isMedicalItem = 1;
         ACE_asItem = 1;
     };

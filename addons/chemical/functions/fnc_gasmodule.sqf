@@ -21,20 +21,18 @@ private _logic = param [0, objNull, [objNull]];
 private _activated = param [2, true, [true]];
 private _radius_max = _logic getVariable ["Radius_Max", 20];
 private _radius_min = _logic getVariable ["Radius_Min", 10];
-private _gastype = _logic getVariable ["GAS_type", "Toxic"];
+private _gastype = _logic getVariable ["GAS_type", 0];
 private _isSealable = _logic getVariable ["IsSealable", false];
 
 if (_activated) then {
     if (count synchronizedObjects _logic > 0) then {
         private _object = (synchronizedObjects _logic) select 0;
-        private _pos = getPos _object;
         if (_isSealable) then {
-            [_object] call FUNC(createSealaction);
+            [QGVAR(createSealActionGlobal), [_object, _logic]] call CBA_fnc_globalEventJIP;
         };
 
-        [_object, _pos, _radius_max, _radius_min, _gastype] spawn FUNC(gasCheck);
+        [_object, getPos _object, _radius_max, _radius_min, _gastype] call FUNC(gasCheck);
     } else {
-        private _pos = getPos _logic;
-        [_logic, _pos, _radius_max, _radius_min, _gastype] spawn FUNC(gasCheck);
+        [_logic, getPos _logic, _radius_max, _radius_min, _gastype] call FUNC(gasCheck);
     };
 };
