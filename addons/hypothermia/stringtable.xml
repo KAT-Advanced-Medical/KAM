@@ -99,5 +99,38 @@
         <Key ID="STR_KAT_Hypothermia_LineWarmer">
             <English>Line Warmer Active</English>
         </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_None">
+            <English>No Hand Warmers are active at this time</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_Body">
+            <English>Body: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_Body_None">
+            <English>Body: None</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_LArm">
+            <English>Left Arm: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_LArm_None">
+            <English>Left Arm: None</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_RArm">
+            <English>Right Arm: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_RArm_None">
+            <English>Right Arm: None</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_LLeg">
+            <English>Left Leg: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_LLeg_None">
+            <English>Left Leg: None</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_RLeg">
+            <English>Right Leg: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_RLeg_None">
+            <English>Right Leg: None</English>
+        </Key>
     </Package>
 </Project>
