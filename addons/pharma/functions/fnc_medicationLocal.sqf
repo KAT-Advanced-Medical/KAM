@@ -42,6 +42,14 @@ if !(ACEGVAR(medical_treatment,advancedMedication)) exitWith {
 
             [_patient, -0.15] call FUNC(alphaAction);
         };
+        case "EpinephrineIV": {
+            private _sedated = _patient getVariable [QEGVAR(surgery,sedated), false];
+            if !(_sedated) then {
+                [QACEGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
+            };
+
+            [_patient, -0.30] call FUNC(alphaAction);
+        };
     };
 };
 TRACE_1("Running treatmentMedicationLocal with Advanced configuration for",_patient);

@@ -2,16 +2,14 @@ class CfgCloudlets {
     class Default;
     class ACE_GasTrip: Default {
         lifeTime = 0;
-        beforeDestroyScript = QPATHTOF(functions\fnc_GasTripEffect.sqf);        
+        beforeDestroyScript = QPATHTOF(functions\fnc_GasTripEffect.sqf);
     };
-
-
 
     class CAS_GAS_Explosion_FX_Script: Default {
         lifeTime = 0;
-        beforeDestroyScript = QPATHTOF(functions\fnc_CASCreateGas.sqf); 
+        beforeDestroyScript = QPATHTOF(functions\fnc_CASCreateGas.sqf);
     };
-    
+
     class CAS_GAS_Explosion_FX: Default {
         interval = 0.03;
         circleRadius = 0;
@@ -113,8 +111,8 @@ class CfgCloudlets {
         angle = 0;
         position[] = {0,0.2,0};
     };
-}; 
- 
+};
+
 class KAT_GASTripEffect {
     class spawnGAS {
         simulation = "particles";

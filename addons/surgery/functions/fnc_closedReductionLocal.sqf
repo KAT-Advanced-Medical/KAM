@@ -27,7 +27,7 @@ private _morphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_stat
 private _nalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
 private _fentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
 private _ketamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
-if (_lidocaineCount <=  0.8 && _morphineCount <=  0.8 && _nalbuphineCount <=  0.8 && _fentanylCount <=  0.8 && _ketamineCount <=  0.8) then {
+if (_lidocaineCount <=  0.6 && _morphineCount <=  0.8 && _nalbuphineCount <=  0.8 && _fentanylCount <=  0.8 && _ketamineCount <=  0.8) then {
     private _pain = random [0.7, 0.8, 0.9];
     [_patient, _pain] call ACEFUNC(medical_status,adjustPainLevel);
 };

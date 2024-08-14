@@ -8,11 +8,6 @@ class B_Heli_Transport_01_F: Heli_Transport_01_base_F {
     stretcherPos[] = {0,1.6,-1.55};
     stretcherVector[] = {{1, 0, 0}, {0, 0, 1}};
 };
-class Quadbike_01_base_F;
-class B_Quadbike_01_F: Quadbike_01_base_F {
-    stretcherPos[] = {0,0.8,-0.56};
-    stretcherVector[] = {{1, 0, 0}, {0, 0, 1}};
-};
 class B_Truck_01_transport_F;
 class B_Truck_01_medical_F: B_Truck_01_transport_F {
     stretcherPos[] = {-0.15,-4.7,0};

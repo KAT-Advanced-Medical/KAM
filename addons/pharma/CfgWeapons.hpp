@@ -201,4 +201,26 @@ class CfgWeapons {
             mass = 0.2;
         };
     };
+    class kat_epinephrineIV: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(EpinephrineIV_displayName);
+        picture = QPATHTOF(ui\icon_EpinephrineIV.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(EpinephrineIV_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.2;
+        };
+    };
+    class kat_coag_sense: ACE_ItemCore {
+        scope = 2;
+        author = "Miss Heda";
+        displayName = CSTRING(Coag_Sense_Display);
+        picture = QPATHTOF(ui\icon_Coag_Sense.paa);
+        descriptionShort = CSTRING(Coag_Sense_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        }; 
+    };
 };

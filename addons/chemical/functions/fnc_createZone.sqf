@@ -17,33 +17,20 @@
  * Public: No
  *
 */
-params ["_pos", "_lifetime", "_radius", "_gasLvL"];
+params ["_position", "_lifetime", "_radius", "_gasType"];
 
-private _logic = "ACE_LogicDummy" createVehicle _pos;
+private _logic = "ACE_LogicDummy" createVehicle _position;
 
-private _gastype = "";
-switch (_gasLvL) do {
-    case 1: { //CS
-        _gastype = "CS";
-    };
-    default { //toxic gas (standard)
-        _gastype = "Toxic";
-    };
-};
-
-if (_gastype isEqualTo "CS") then {[getPosASL _logic, _radius, _lifetime] call FUNC(spawnGasSmoke);};
-
-[_logic, _pos, _radius, 0, _gastype] call FUNC(gasCheck);
+[_logic, _position, _radius, 0, _gasType] call FUNC(gasCheck);
 private _currentTime = CBA_missionTime;
 
 [{
-    //condition
-    params["_logic","_lifetime","_currentTime"];
+    params ["_logic","_lifetime","_currentTime"];
+
     (CBA_missionTime - (_currentTime)) > _lifetime
 },
 {
-    //code
-    params["_logic"];
+    params ["_logic"];
     _logic setVariable [QGVAR(gas_active), false, true];
     deleteVehicle _logic;
 }, [_logic, _lifetime, _currentTime]] call CBA_fnc_waitUntilAndExecute;
