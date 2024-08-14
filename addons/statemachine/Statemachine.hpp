@@ -61,6 +61,10 @@ class KAT_StateMachine {
             targetState = "FatalInjury";
             events[] = {QACEGVAR(medical,FatalInjury)};
         };
+        class EnterSeizure {
+            targetState = "Seizure";
+            events[] = {QEGVAR(brain,enterSeizure)};
+        };
     };
     class FatalInjury {
         // Transition state for handling instant death from fatal injuries
@@ -104,6 +108,22 @@ class KAT_StateMachine {
             targetState = "Dead";
             condition = QUOTE((ACEGVAR(medical_statemachine,cardiacArrestBleedoutEnabled))); // wrap to ensure cba uses this as code and not a direct variable
             events[] = {QACEGVAR(medical,Bleedout)};
+        };
+    };
+    class Seizure {
+        onStateEntered = QFUNC(enteredStateSeizure);
+        onState = QFUNC(handleStateSeizure);
+        class ExitSeizure {
+            targetState = "Unconscious";
+            events[] = {QEGVAR(brain,exitSeizure)};
+        };
+        class FatalTransitions {
+            targetState = "CardiacArrest";
+            events[] = {QACEGVAR(medical,FatalVitals), QACEGVAR(medical,Bleedout)};
+        };
+        class FatalInjury {
+            targetState = "FatalInjury";
+            events[] = {QACEGVAR(medical,FatalInjury)};
         };
     };
     class Dead {
