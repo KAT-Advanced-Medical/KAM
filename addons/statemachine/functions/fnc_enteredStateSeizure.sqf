@@ -28,3 +28,8 @@ private _time = linearConversion [0,100,_CMRdiff,GVAR(Seizure_Min_Length),GVAR(S
 
 _unit setVariable [QGVAR(seizureTimeLeft),_time,true];
 _unit setVariable [QGVAR(seizureTimeLastUpdate),CBA_missionTime];
+
+TRACE_3("enteredStateSeizure",_unit,_time,CBA_missionTime);
+
+// Update the unit status to reflect seizure
+[_unit, true] call FUNC(setSeizureState);
