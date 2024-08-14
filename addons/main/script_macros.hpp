@@ -285,5 +285,9 @@
 #define VAR_BLOODPRESSURE_CHANGE       QEGVAR(circulation,bloodPressureChange)
 #define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])
 
+// Statemachine
+#define VAR_SEIZURE                    QEGVAR(statemachine,inSeizure)
+#define IN_SEIZURE(unit)                     (unit getVariable [VAR_SEIZURE, false])
+
 //Surgery
 #define STRING_BODY_PARTS ["head", "body", "left arm", "right arm", "left leg", "right leg"]
