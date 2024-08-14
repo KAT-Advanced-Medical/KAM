@@ -18,7 +18,7 @@
 params ["_patient"];
 TRACE_1("fullHealLocal",_patient);
 
-_unit setVariable [QGVAR(CMR),20,true]; // Cerebral Metabolic Rate
+_unit setVariable [QGVAR(CMR),100,true]; // Cerebral Metabolic Rate (%)
 _unit setVariable [QGVAR(CBF),800,true]; // Cerebral Blood Flow
 _unit setVariable [QGVAR(CVR),0.1,true]; // Cerebral Vascular Resistance
 _unit setVariable [QGVAR(ICP),15,true]; // Intracranial Pressure

@@ -21,7 +21,7 @@ TRACE_2("handleRespawn",_unit,_dead);
 
 [_unit] call FUNC(fullHealLocal);
 
-_unit setVariable [QEGVAR(brain,CMR),20,true];
+_unit setVariable [QEGVAR(brain,CMR),100,true];
 _unit setVariable [QEGVAR(brain,CBF),800,true];
 _unit setVariable [QEGVAR(brain,CVR),0.1,true];
 _unit setVariable [QEGVAR(brain,ICP),15,true];

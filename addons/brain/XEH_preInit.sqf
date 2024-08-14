@@ -34,7 +34,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_stableCMR)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 20, 16, 1],
+    [0, 100, 80, 1],
     true
 ] call CBA_Settings_fnc_init;
 
@@ -44,7 +44,7 @@ PREP_RECOMPILE_END;
     "SLIDER",
     [LLSTRING(SETTING_CMRunconsciousThreshold)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 20, 18, 1],
+    [0, 100, 85, 1],
     true
 ] call CBA_Settings_fnc_init;
 

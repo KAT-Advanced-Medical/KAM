@@ -63,6 +63,7 @@ class KAT_StateMachine {
         };
         class EnterSeizure {
             targetState = "Seizure";
+            condition = QUOTE((GVAR(enableSeizure))); // wrapped to allow cba to read code  //TODO also check brain sim is on
             events[] = {QEGVAR(brain,enterSeizure)};
         };
     };

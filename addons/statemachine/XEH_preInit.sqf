@@ -6,58 +6,37 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-[
-    QGVAR(fatalInjuriesPlayer),
-    "LIST",
-    [LSTRING(FatalInjuriesPlayer_DisplayName), LSTRING(FatalInjuriesPlayer_Description)],
-    [ELSTRING(medical,Category), LSTRING(SubCategory)],
-    [
-        [FATAL_INJURIES_ALWAYS, FATAL_INJURIES_CRDC_ARRST, FATAL_INJURIES_NEVER],
-        [ELSTRING(common,Always), LSTRING(InCardiacArrest), ELSTRING(common,Never)],
-        0
-    ],
-    true
-] call CBA_fnc_addSetting;
+#define CBA_SETTINGS_CAT "KAT - ADV Medical: States"
 
+//Enable transitions to seizure state
 [
-    QGVAR(fatalInjuriesAI),
-    "LIST",
-    [LSTRING(FatalInjuriesAI_DisplayName), LSTRING(FatalInjuriesAI_Description)],
-    [ELSTRING(medical,Category), LSTRING(SubCategory)],
-    [
-        [FATAL_INJURIES_ALWAYS, FATAL_INJURIES_CRDC_ARRST, FATAL_INJURIES_NEVER],
-        [ELSTRING(common,Always), LSTRING(InCardiacArrest), ELSTRING(common,Never)],
-        0
-    ],
-    true
-] call CBA_fnc_addSetting;
-
-[
-    QGVAR(AIUnconsciousness),
+    QGVAR(enableSeizure),
     "CHECKBOX",
-    [LSTRING(AIUnconsciousness_DisplayName), LSTRING(AIUnconsciousness_Description)],
-    [ELSTRING(medical,Category), LSTRING(SubCategory)],
-    true,
+    [LSTRING(enableSeizure_DisplayName), LSTRING(enableSeizure_Description)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Seizures)],
+    false,
     true
 ] call CBA_fnc_addSetting;
 
+//Minimum duration of seizure
 [
-    QGVAR(cardiacArrestTime),
-    "TIME",
-    [LSTRING(CardiacArrestTime_DisplayName), LSTRING(CardiacArrestTime_Description)],
-    [ELSTRING(medical,Category), LSTRING(SubCategory)],
-    [1, 3600, 300],
+    QGVAR(Seizure_Min_Length),
+    "SLIDER",
+    [LSTRING(Seizure_Min_Length_DisplayName),LSTRING(Seizure_Min_Length_Description)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Seizures)],
+    [5, 180, 10, 0],
     true
-] call CBA_fnc_addSetting;
+] call CBA_Settings_fnc_init;
 
+//Maximum duration of seizure
 [
-    QGVAR(cardiacArrestBleedoutEnabled),
-    "CHECKBOX",
-    [LSTRING(CardiacArrestBleedout_DisplayName), LSTRING(CardiacArrestBleedout_Description)],
-    [ELSTRING(medical,Category), LSTRING(SubCategory)],
-    true,
+    QGVAR(Seizure_Max_Length),
+    "SLIDER",
+    [LSTRING(Seizure_Max_Length_DisplayName),LSTRING(Seizure_Max_Length_Description)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_Seizures)],
+    [5, 180, 120, 0],
     true
-] call CBA_fnc_addSetting;
+] call CBA_Settings_fnc_init;
 
 // Overwrite ace statemachine
 ACEGVAR(medical,STATE_MACHINE) = (configFile >> "KAT_StateMachine") call CBA_statemachine_fnc_createFromConfig;
