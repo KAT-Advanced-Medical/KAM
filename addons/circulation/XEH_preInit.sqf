@@ -25,15 +25,6 @@ if (isServer) then {
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(simpleMedical),
-    "CHECKBOX",
-    LLSTRING(SIMPLEMED_ENABLE),
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
 // Sets how player bloodtype is designated
 [
     QGVAR(bloodTypeSetting),
