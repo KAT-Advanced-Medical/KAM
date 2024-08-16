@@ -37,16 +37,19 @@ if (_syncValues) then {
 private _bloodVolume = ([_unit, _deltaT, _syncValues] call EFUNC(pharma,getBloodVolumeChange));
 _unit setVariable [VAR_BLOOD_VOL, _bloodVolume, _syncValues];
 
-// Enviromental Impact (Altitude, Temperature, Pressure) 
-private _altitude = (getPosASL _unit) select 2;
-private _altitudeTempImpact = switch (true) do {
-    case (_altitude >= 10): { abs(_altitude/153) * -1 }; //For every 1000 meters of elevation gain, temperature decreases by ~6.5 degrees celsius
-    case (_altitude <= -1): { -35 max((abs(_altitude/50) * -1) - 17) }; //Average water temperature is 20 degrees celsius. Decreases to 2 degrees celsius at 1000 meters
-    default { 0 };
-};
+private _temperature = 37;
+if (EGVAR(hypothermia,hypothermiaActive)) then {
+    // Enviromental Impact (Altitude, Temperature, Pressure) 
+    private _altitude = (getPosASL _unit) select 2;
+    private _altitudeTempImpact = switch (true) do {
+        case (_altitude >= 10): { abs(_altitude/153) * -1 }; //For every 1000 meters of elevation gain, temperature decreases by ~6.5 degrees celsius
+        case (_altitude <= -1): { -35 max((abs(_altitude/50) * -1) - 17) }; //Average water temperature is 20 degrees celsius. Decreases to 2 degrees celsius at 1000 meters
+        default { 0 };
+    };
 
-private _baroPressure = 760 * exp((-(_altitude)) / 8400);
-private _temperature = [_unit, _altitudeTempImpact, _bloodVolume, _deltaT, _syncValues] call FUNC(handleTemperatureFunction); 
+    private _baroPressure = 760 * exp((-(_altitude)) / 8400);
+    _temperature = [_unit, _altitudeTempImpact, _bloodVolume, _deltaT, _syncValues] call FUNC(handleTemperatureFunction); 
+};
 
 // Set variables for synchronizing information across the net
 private _hemorrhage = switch (true) do {
@@ -111,16 +114,21 @@ if !(_adjustments isEqualTo []) then {
 [_unit, _painSupressAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePainSuppress); //Leave alone
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
 
-// Additional variables for Respiration/Cardiac functions
-private _bloodGas = GET_BLOOD_GAS(_unit);
-private _opioidDepression = (GET_OPIOID_FACTOR(_unit) - 1);
-private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / _bloodVolume) - 0) min 1.2;
-private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
-
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
-private _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
+
+private _spo2 = 97;
+if (EGVAR(breathing,enable)) then {
+    // Additional variables for Respiration functions
+    private _bloodGas = GET_BLOOD_GAS(_unit);
+    private _opioidDepression = (GET_OPIOID_FACTOR(_unit) - 1);
+    private _anerobicPressure = (DEFAULT_ANEROBIC_EXCHANGE * (6 / _bloodVolume) - 0) min 1.2;
+
+    _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
+};
 
 // Systolic Blood Pressure from Blood Volume with postive Heart Rate impacts capped by Blood Volume, Diastolic Blood Pressure from Vasoconstriction and Systolic BP
+private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
+
 private _bloodPressureSystolic = (_bloodVolume * 20) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_heartRate - DEFAULT_HEART_RATE) - (((5.5 - _bloodVolume) max 0) * 30));
 private _bloodPressureDiastolic = ((_bloodVolume * 13.33) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_vasoconstriction - 1) * 40)) min (_bloodPressureSystolic - 5);
 

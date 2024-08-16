@@ -21,7 +21,7 @@ if (!local _unit) exitWith {};
 
 [_unit] call FUNC(fullHealLocal);
 
-if (GVAR(hypothermia)) then {
+if (GVAR(hypothermiaActive)) then {
     [{
         params ["_args", "_idPFH"];
         _args params ["_unit"];

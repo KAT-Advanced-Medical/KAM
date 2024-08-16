@@ -17,7 +17,7 @@ if (isServer) then {
 #define CBA_SETTINGS_CAT "KAT - ADV Medical: Hypothermia"
 
 [
-    QGVAR(hypothermia),
+    QGVAR(hypothermiaActive),
     "CHECKBOX",
     LLSTRING(ENABLE_HYPOTHERMIA),
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Hypothermia)],
