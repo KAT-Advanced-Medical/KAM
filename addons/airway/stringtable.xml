@@ -18,6 +18,7 @@
             <Portuguese>ACE - Lesões nas vias aéreas ativadas?</Portuguese>
             <Norwegian>ACE - Luftveiskade aktivert?</Norwegian>
             <Finnish>Hengitysteiden vammat aktivoituivat?</Finnish>
+            <Dutch>Is ACE-Luchtweg verwondingen geactiveerd?</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_obstruction">
             <English>Probability for an obstructed airway</English>
@@ -36,6 +37,7 @@
             <Portuguese>Probabilidade de obstrução das vias aéreas</Portuguese>
             <Norwegian>Sannsynligheten for blokkert luftvei</Norwegian>
             <Finnish>Tukkeutuneiden hengitysteiden todennäköisyys</Finnish>
+            <Dutch>Kans op geblokkeerde luchtweg</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_obstruction_DESC">
             <English>Probability for an obstructed airway in percentage that gets rolled every: \n- Falling unconscious \n- Removing KingLT / Guedel Tube</English>
@@ -50,6 +52,7 @@
             <Portuguese>Probabilidade percentual de obstrução de uma via aérea a cada vez que: \n- Ficar inconsciente \n- Remoção do Tubo Laríngeo / Cânula de Guedel</Portuguese>
             <Finnish>Tukkeutuneen hengitysteiden todennäköisyys prosentteina, joka pyörii joka kerta:\n- Putoaminen tajuttomuuteen poistaminen / Guedel putki</Finnish>
             <Russian>Вероятность закупорки дыхательных путей в процентах, которая приводит к смерти при каждом: \n- падении без сознания \n - Удалении гортанной трубки/трубки Геделя</Russian>
+            <Dutch>Kans op geblokkeerde luchtweg in een percentage die gerold wordt elke: \n- Bewusteloos raken \n- KingLT / Guedel verwijderen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded">
             <English>Probability for airway occluding</English>
@@ -68,6 +71,7 @@
             <Portuguese>Probabilidade de oclusão das vias aéreas</Portuguese>
             <Norwegian>Sannsynlighet for at luftveien blir blokkert</Norwegian>
             <Finnish>Todennäköisyys hengitysteiden tukkeutumiseen</Finnish>
+            <Dutch>Kans op een luchtwegverstopping</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occluded_DESC">
             <English>Probability for an occlusion in percentage that gets rolled Setting:[Occlusion repeat timer] (default every 60s)</English>
@@ -82,6 +86,7 @@
             <Portuguese>Probabilidade percentual de oclusão, lançada a cada intervalo de tempo definido pela configuração: [Temporizador de repetição de oclusão] (por padrão, 60s)</Portuguese>
             <Finnish>Tukosten todennäköisyys prosentteina joka on satunnaisesti laskettu Asetukset: [Okkluusiotoistoajastin] (oletusarvo on kuusikymmentä sekuntia)</Finnish>
             <Russian>Вероятность возникновения окклюзии в процентах, которая будет отменена Настройка: [Таймер повтора окклюзии] (по умолчанию каждые 60 секунд)</Russian>
+            <Dutch>Kans op een luchtwegverstopping in een percentage die gerold wordt elke Instelling:[Verstopping herhaling timer] (standaard elke 60 seconden)</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_repeatTimer">
             <English>Occlusion repeat timer</English>
@@ -98,6 +103,7 @@
             <Norwegian>Repetisjonsintervall for Okklusjon</Norwegian>
             <Finnish>Okkluusiotoistoajastin</Finnish>
             <Russian>Таймер повторения окклюзии</Russian>
+            <Dutch>Verstoppings herhaling timer</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_occlusion_cooldownPeriod">
             <English>Occlusion Cooldown Period</English>
@@ -110,6 +116,7 @@
             <Spanish>Tiempo para repetirse oclusion</Spanish>
             <Finnish>Okkluusiojäähdytyssykli</Finnish>
             <Russian>Период восстановления окклюзии</Russian>
+            <Dutch>Verstoppings afkoelingsperiode</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_puking_sound">
             <English>Activate the puking sound?</English>
@@ -128,6 +135,7 @@
             <Portuguese>Ativar o som de vômito?</Portuguese>
             <Norwegian>Aktiver lyd for oppkast?</Norwegian>
             <Finnish>Ota oksennusääni käyttöön?</Finnish>
+            <Dutch>Braakgeluiden activeren?</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_exit">
             <English>Community called keko had addon for AFK players. They were put unconscious so others could drag them away. That triggered chances for airway problems. This string prevents that from happening when they get unconscious by that AFK addon.</English>
@@ -146,6 +154,7 @@
             <Portuguese>A comunidade Keko tinha um addon para os jogadores AFK. Eles foram colocados inconscientes para que outros pudessem arrastá-los. Isso desencadeou chances de problemas nas vias aéreas. Esta corda evita que isso aconteça quando eles ficam inconscientes por causa do addon.</Portuguese>
             <Norwegian>Felleskapet kalt "Keko" hadde en tilleggsfunksjon for AFK-spillere. De ble gjort bevisstløse slik at andre kunne dra dem bort. Dette utløste muligheter for luftveisproblemer. Denne strengen forhindrer at det skjer når de blir bevisstløse av det AFK-tillegget.</Norwegian>
             <Finnish>Yhteisössä nimeltä keko oli lisäosa ei-aktiivisille pelaajille. He putosivat tajuttomaksi, jotta muut voisivat vetää heidät pois. Tämä aiheutti hengitysvaikeuksia. Tämä koodi estää tämän tapahtumisen, kun he menettävät tajuntansa tämän lisäosan takia.</Finnish>
+            <Dutch>De community met de naam keko had een addon voor AFK spelers. Ze werden in een bewusteloze staat gebracht zodat anderen ze konder wegslepen. Dit veroorzaakte kansen voor luchtwegproblemen. Deze streng voorkomt dit wanneer ze door de addon bewusteloos worden gemaakt.</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway">
             <English>Check Airway</English>
@@ -164,6 +173,7 @@
             <Portuguese>Verificar as vias aéreas</Portuguese>
             <Norwegian>Sjekk lufveier</Norwegian>
             <Finnish>Tarkista hengitystiet</Finnish>
+            <Dutch>Check luchtwegen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_checkAirway_log">
             <English>%1 checked airways: %2, %3</English>
@@ -181,6 +191,7 @@
             <Norwegian>%1 sjekket luftveiene: %2, %3</Norwegian>
             <Finnish>%1 tarkistettu hengitystiet, %2, %3</Finnish>
             <Russian>%1 проверенные дыхательные пути: %2, %3</Russian>
+            <Dutch>%1 Heeft de luchtwegen gecheckt: %2, %3</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_airway_log">
             <English>%1 inserted a %2</English>
@@ -199,6 +210,7 @@
             <Portuguese>%1 intubou com %2</Portuguese>
             <Norwegian>%1 satte inn en %2.</Norwegian>
             <Finnish>%1 lisäsi a %2</Finnish>
+            <Dutch>%1 heeft een %2 ingebracht</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion_short">
             <English>Occluded</English>
@@ -217,6 +229,7 @@
             <Portuguese>Ocluída</Portuguese>
             <Norwegian>Okkludert</Norwegian>
             <Finnish>Tukkeutunut</Finnish>
+            <Dutch>Verstopt</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction_short">
             <English>Obstruction</English>
@@ -235,6 +248,7 @@
             <Portuguese>Obstruída</Portuguese>
             <Norwegian>Obstruksjon</Norwegian>
             <Finnish>Tukkeuma</Finnish>
+            <Dutch>Geblokkeerd</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction_short">
             <English>Mitigated obstruction</English>
@@ -251,6 +265,7 @@
             <Norwegian>Reduserte obstruksjonen</Norwegian>
             <Finnish>Vähentynyt tukos</Finnish>
             <Russian>Уменьшенная обструкция</Russian>
+            <Dutch>Blokkade tijdelijk verzacht</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noObstruction_short">
             <English>Not obstructed</English>
@@ -269,6 +284,7 @@
             <Norwegian>Ikke blokkert</Norwegian>
             <Finnish>Ei estetty</Finnish>
             <Russian>Язык не запал</Russian>
+            <Dutch>Niet geblokkeerd</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion_short">
             <English>Not occluded</English>
@@ -287,6 +303,7 @@
             <Norwegian>Ikke okkludert</Norwegian>
             <Finnish>Ei tukossa</Finnish>
             <Russian>Рвота отсутствуют</Russian>
+            <Dutch>Niet verstopt</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_mitigatedObstruction">
             <English>Obstruction is temporarily mitigated</English>
@@ -302,6 +319,7 @@
             <Norwegian>Obstruksjon er midlertidig redusert</Norwegian>
             <Finnish>Tukos on väliaikaisesti lievennetty</Finnish>
             <Russian>Препятствие временно устранено</Russian>
+            <Dutch>Blokkade is tijdelijk verzacht</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noObstruction">
             <English>Airway is not obstructed</English>
@@ -313,6 +331,7 @@
             <Russian>Дыхательные пути не закупорены языком.</Russian>
             <German>Die Atemwege sind nicht blockiert.</German>
             <Portuguese>Vias aéreas não obstruídas</Portuguese>
+            <Dutch>Luchtweg is niet geblokkeerd</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_noOcclusion">
             <English>Airway is not occluded</English>
@@ -324,6 +343,7 @@
             <Russian>Дыхательные пути не закупорены рвотой.</Russian>
             <German>Die Atemwege sind nicht verstopft.</German>
             <Portuguese>Vias aéreas não ocluídas</Portuguese>
+            <Dutch>Luchtweg is niet verstopt</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Obstruction">
             <English>Airway is obstructed, airway management needed</English>
@@ -335,6 +355,7 @@
             <German>Atemwege sind blockiert, die Atemwege müssen freigelegt werden</German>
             <Russian>Дыхательные пути закупорены языком, требуется лечение дыхательных путей</Russian>
             <Portuguese>Vias aéreas obstruídas, gerenciamento de vias aéreas necessário</Portuguese>
+            <Dutch>Luchtweg is geblokkeerd, luchtwegmanagement is vereist</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Occlusion">
             <English>Airway is occluded, medical suction needed</English>
@@ -346,6 +367,7 @@
             <Russian>Дыхательные пути закупорены рвотой, требуется медицинское отсасывание</Russian>
             <German>Die Atemwege sind verstopft. Medizinische Absaugung benötigt.</German>
             <Portuguese>Vias aéreas ocluídas, sucção médica necessária</Portuguese>
+            <Dutch>Luchtweg is verstopt, medische suctie is vereist</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_Clear">
             <English>Airway is clear</English>
@@ -364,6 +386,7 @@
             <Portuguese>Vias aéreas limpas</Portuguese>
             <Norwegian>Luftveiene er frie</Norwegian>
             <Finnish>Tuuliputki on selkeä</Finnish>
+            <Dutch>Luchtweg is vrij</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AirwayStatus_NotClearForItem">
             <English>Item could not be used, airways are not clear</English>
@@ -382,6 +405,7 @@
             <Portuguese>O item não pôde ser usado, vias aéreas bloqueadas</Portuguese>
             <Norwegian>Gjenstanden kunne ikke brukes, luftveiene er ikke frie</Norwegian>
             <Finnish>Tuotetta ei voitu käyttää, hengitystiet eivät ole selkeät</Finnish>
+            <Dutch>Item kon niet gebruikt worden, luchtwegen zijn niet vrij</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_displayName">
             <English>Hyperextending Head</English>
@@ -400,6 +424,7 @@
             <Portuguese>Hiperextensão de cabeça</Portuguese>
             <Norwegian>Hyperforlengelse av hode</Norwegian>
             <Finnish>Hyperojentuva pää</Finnish>
+            <Dutch>Hoofd overstrekken</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextended">
             <English>Hyperextended Head</English>
@@ -418,6 +443,7 @@
             <Portuguese>Cabeça hiperestendida</Portuguese>
             <Norwegian>Hode er overekstendert</Norwegian>
             <Finnish>Hyperpidennetty pää</Finnish>
+            <Dutch>Hoofd is overstrekt</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_already">
             <English>Patient's head is already hyperextended</English>
@@ -429,6 +455,7 @@
             <German>Kopf des Patienten ist bereits überstreckt</German>
             <Russian>Голова пациента уже наклонена.</Russian>
             <Portuguese>A cabeça do paciente já está hiperestendida</Portuguese>
+            <Dutch>Patiënts hoofd is al overstrekt</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_progress">
             <English>Hyperextending head</English>
@@ -447,6 +474,7 @@
             <Portuguese>Estendendo</Portuguese>
             <Norwegian>Forlenger</Norwegian>
             <Finnish>Hyperojentuva pää</Finnish>
+            <Dutch>Hoofd overstrekken</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Cancel">
             <English>Hyperextending head cancelled</English>
@@ -465,6 +493,7 @@
             <Portuguese>Hiperextensão cancelada</Portuguese>
             <Norwegian>Hyperforlengelse av hode er avbrutt</Norwegian>
             <Finnish>Hyperojentuva pää peruttu</Finnish>
+            <Dutch>Hoofd overstrekking afgebroken</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Ready">
             <English>Head hyperextended successfully</English>
@@ -476,6 +505,7 @@
             <German>Kopf erfolgreich überstreckt</German>
             <Russian>Гиперэкстензия головы завершена</Russian>
             <Portuguese>Cabeça hiperestendida com sucesso</Portuguese>
+            <Dutch>Hoofd succesvol overstrekt</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Log">
             <English>%1 hyperextended %2s head</English>
@@ -485,6 +515,7 @@
             <Spanish>%2s cabeza %1 hiperextendida</Spanish>
             <French>%1 a placé la tête de %2 en hyperextension</French>
             <Portuguese>%1 hiperestendeu a cabeça de %2</Portuguese>
+            <Dutch>%1 overstrekte %2s hoofd</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_info">
             <English>Head turn performed, airways are still not clear</English>
@@ -503,6 +534,7 @@
             <Portuguese>Cabeça virada, vias aéreas ainda não limpas</Portuguese>
             <Norwegian>vending av hode er utført, luftveiene er fortsatt ikke frie</Norwegian>
             <Finnish>Pään käännös suoritettu, hengitystiet vielä epäselvät</Finnish>
+            <Dutch>Hoofddraaiing uitgevoerd, luchtwegen zij nog niet vrij</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_success">
             <English>Occlusion removed</English>
@@ -521,6 +553,7 @@
             <Portuguese>Oclusão removida</Portuguese>
             <Norwegian>Okklusjonen er fjernet</Norwegian>
             <Finnish>Likaantuminen poistettu</Finnish>
+            <Dutch>Verstopping verwijderd</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_begin">
             <English>Begin Head Turning</English>
@@ -533,6 +566,7 @@
             <Spanish>Comenzar giro de cabeza</Spanish>
             <Finnish>Aloita potilaan pään kääntäminen</Finnish>
             <Russian>Начать поворачивать голову</Russian>
+            <Dutch>Begin hoofddraaiing</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_cancelled">
             <English>Head turning cancelled</English>
@@ -545,6 +579,7 @@
             <Spanish>Giro de cabeza cancelado</Spanish>
             <Finnish>pään kääntäminen peruttu</Finnish>
             <Russian>Поворот головы отменен</Russian>
+            <Dutch>Hoofddraaiing gestopt</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_start">
             <English>Head Turning Started</English>
@@ -556,6 +591,7 @@
             <Russian>Начался поворот головы</Russian>
             <German>Kopfdrehung begonnen</German>
             <Portuguese>Rotação de cabeça iniciada</Portuguese>
+            <Dutch>Hoofddraaiing gestart</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_headTurning_stop">
             <English>Stop head turning</English>
@@ -568,6 +604,7 @@
             <Spanish>Parar giro de cabeza</Spanish>
             <Finnish>Lopeta potilaan pään kääntäminen</Finnish>
             <Russian>Перестаньте поворачивать голову</Russian>
+            <Dutch>Stop de hoofddraaiing</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_NA">
             <English>Medical suction not needed</English>
@@ -586,6 +623,7 @@
             <Portuguese>Sucção médica não necessária</Portuguese>
             <Norwegian>Ingen behov for medisinsk suging</Norwegian>
             <Finnish>Lääketieteellistä imua ei vaadita</Finnish>
+            <Dutch>Medische suctie niet vereist</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Success">
             <English>Medical suction completed, Occlusion removed</English>
@@ -596,6 +634,7 @@
             <Spanish>Succión médica completada. Oclusión quitada</Spanish>
             <French>Aspiration médicale effectuée. Occlusion retirée</French>
             <Portuguese>Sucção médica completa. Oclusão removida.</Portuguese>
+            <Dutch>Medische suctie voltooid, Verstopping verwijderd</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_action_checking">
             <English>Checking Airway</English>
@@ -614,6 +653,7 @@
             <Portuguese>Verificando vias aéreas</Portuguese>
             <Norwegian>Sjekker luftveien</Norwegian>
             <Finnish>Hengitysteiden tarkastus</Finnish>
+            <Dutch>Luchtweg controleren</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_action_placing">
             <English>Placing</English>
@@ -632,6 +672,7 @@
             <Portuguese>Colocando</Portuguese>
             <Norwegian>Plasserer</Norwegian>
             <Finnish>Sijoittaminen</Finnish>
+            <Dutch>Plaatsen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Larynxtubus_Display">
             <English>King LT</English>
@@ -650,6 +691,7 @@
             <Portuguese>Tubo Laríngeo</Portuguese>
             <Norwegian>Larynkstube</Norwegian>
             <Finnish>Kurkunpään putki</Finnish>
+            <Dutch>King LT</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Larynx_Desc_Short">
             <English>The King LT is used to maintain the airway</English>
@@ -668,6 +710,7 @@
             <Portuguese>O Tubo Laríngeo evita obstruções e oclusões</Portuguese>
             <Norwegian>Larynkstube brukes for å redde luftveiene</Norwegian>
             <Finnish>Kurkunpään letkua käytetään hengitysteiden ylläpitämiseen</Finnish>
+            <Dutch>De King LT wordt gebruikt om de luchtweg veilig te stellen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Guedeltubus_Display">
             <English>Guedel Tube</English>
@@ -686,6 +729,7 @@
             <Portuguese>Cânula de Guedel</Portuguese>
             <Norwegian>Guedel Tube</Norwegian>
             <Finnish>Guedel-letkua</Finnish>
+            <Dutch>Guedel-tube</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Guedel_Desc_Short">
             <English>The Guedel Tube is used to maintain the airway</English>
@@ -704,6 +748,7 @@
             <Portuguese>A Cânula de Guedel evita obstruções</Portuguese>
             <Norwegian>Guedel Tube brukes for å redde luftveiene</Norwegian>
             <Finnish>Guedel-letkua käytetään hengitysteiden ylläpitämiseen</Finnish>
+            <Dutch>De Guedel-tube wordt gebruikt om de luchtweg veilig te stellen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Display">
             <English>ACCUVAC</English>
@@ -713,6 +758,7 @@
             <Spanish>ACCUVAC</Spanish>
             <French>ACCUVAC</French>
             <Portuguese>ACCUVAC</Portuguese>
+            <Dutch>ACCUVAC</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Accuvac_Desc_Short">
             <English>ACCUVAC is a medical suction device for airway suction with battery drive for mobile use in emergency medicine.</English>
@@ -731,6 +777,7 @@
             <Portuguese>ACCUVAC é uma unidade de sucção portátil utilizada para tratar vias aéreas em caso de emergência médica.</Portuguese>
             <Norwegian>ACCUVAC er en medisinsk sugeenhet for suging av luftveier med batteridrift for mobil bruk innen akuttmedisin</Norwegian>
             <Finnish>ACCUVAC on akkukäyttöinen lääketieteellinen imulaite hengitysteiden imemiseen mobiilikäyttöön hätätilanteissa</Finnish>
+            <Dutch>ACCUVAC is een mobiel apparaat voor medische suctie bij spoedeisende hulp</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AccuvacTreatment_displayName">
             <English>Airway Suction</English>
@@ -741,6 +788,7 @@
             <German>Absaugung der Atemwege</German>
             <French>Aspiration des voies respiratoires</French>
             <Portuguese>Sucção de vias aéreas</Portuguese>
+            <Dutch>Luchtweg suctie</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Display">
             <English>Manual Suction Pump</English>
@@ -751,6 +799,7 @@
             <German>Manuelle Absaugpumpe</German>
             <French>Pompe d'aspiration manuelle</French>
             <Portuguese>Bomba de Sucção Manual</Portuguese>
+            <Dutch>Handmatige suctiepomp</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Log">
             <English>%1 did a medical suction using a %2</English>
@@ -760,6 +809,7 @@
             <Spanish>%1 ha hecho una succión médica usando un %2</Spanish>
             <French>%1 a effectué une aspiration médicale en utilisant un(e) %2</French>
             <Portuguese>%1 executou uma sucção médica usando %2</Portuguese>
+            <Dutch>%1 voerde een medische suctie uit met een %2</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Desc_Short">
             <English>Manual Suction Pump is a medical suction device for airway suction manually. This is an alternative to electrical devices.</English>
@@ -770,6 +820,7 @@
             <German>Die manuelle Absaugpumpe ist eine medizinisches Absauggerät für Atemwege.\nDie Alternative zu einem elektrisch betreibenen Gerät.</German>
             <French>La pompe d’aspiration manuelle est un dispositif d’aspiration médical pour l’aspiration manuelle des voies respiratoires. C’est une alternative aux appareils électriques.</French>
             <Portuguese>A Bomba de Sucção Manual é um dispositivo médico que possibilita a sucção manual das vias aéras, sendo uma alternativa aos dispositivos elétricos.</Portuguese>
+            <Dutch>De handmatige suctiepomp is een apparaat om handmatig de luchtwegen af te zuigen. Dit is een alternatief voor electrische apparaten</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SuctionTreatment_displayName">
             <English>Airway Suction (Manual)</English>
@@ -780,6 +831,7 @@
             <German>Manuelle Absaugung der Atemwege</German>
             <French>Aspiration des voies respiratoires (Manuel)</French>
             <Portuguese>Sucção de vias aéreas (manual)</Portuguese>
+            <Dutch>Handmatige luchtweg suctie</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse">
             <English>Reusable Manual Suction Pump</English>
@@ -790,6 +842,7 @@
             <German>Wiederverwendbare manuelle Absaugpumpe</German>
             <French>Pompre d'aspiration manuelle réutilisable</French>
             <Portuguese>Bomba de Sucção Manual Reutilizável</Portuguese>
+            <Dutch>Herbruikbare handmatige suctiepomp</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Suction_Reuse_DESC">
             <English>Regain the Manual Suction Pump after use</English>
@@ -800,6 +853,7 @@
             <German>Erhalte die Manuelle Absaugpumpe nach Benutzung zurück.</German>
             <French>Récupère la pompe d'asipiration manuelle après utilisation</French>
             <Portuguese>Recupere a Bomba de Sucção Manual após o uso</Portuguese>
+            <Dutch>Krijg de handmatige suctiepomp terug na gebruik</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Vomit_Display">
             <English>Vomit (Small)</English>
@@ -818,6 +872,7 @@
             <Portuguese>Vômito (Pouco)</Portuguese>
             <Norwegian>Oppkast (Litt)</Norwegian>
             <Finnish>oksentaa (pieni)</Finnish>
+            <Dutch>Braaksel (klein)</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SUCCES_HEADTURNING">
             <English>Success probability for head-turning</English>
@@ -836,6 +891,7 @@
             <Portuguese>Probabilidade de sucesso ao virar a cabeça</Portuguese>
             <Norwegian>sannsynligheten for sukksess ved vending av hode</Norwegian>
             <Finnish>onnistumisen todennäköisyys pään kääntämisessä</Finnish>
+            <Dutch>Succeskans voor hoofddraaiing</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SUCCES_HEADTURNING_DESC">
             <English>Higher, the better the probability of success</English>
@@ -854,6 +910,7 @@
             <Portuguese>Quanto maior, melhor a probabilidade de sucesso</Portuguese>
             <Norwegian>Jo høyere, desto bedre er sannsynligheten for suksess</Norwegian>
             <Finnish>Mitä korkeampi, sitä suurempi on onnistumisen todennäköisyys</Finnish>
+            <Dutch>Groter betekent een hogere kans op succes</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_LARYNXTUBUS">
             <English>Allow Larynxtubus</English>
@@ -872,6 +929,7 @@
             <Portuguese>Permitir Tubo Laríngeo</Portuguese>
             <Norwegian>Tillat larynxtubus</Norwegian>
             <Finnish>salli kurkunpään putki</Finnish>
+            <Dutch>Sta King LT toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_LARYNXTUBUS_DESC">
             <English>Training level required to use a Larynxtubus - KingLT</English>
@@ -890,6 +948,7 @@
             <Portuguese>Nível de treinamento necessário para usar um Tubo Laríngeo</Portuguese>
             <Norwegian>Nivået av opplæring som kreves for å bruke en Larynkstube</Norwegian>
             <Finnish>Kurkunpään putken käyttämiseen vaadittava koulutustaso</Finnish>
+            <Dutch>Trainingsniveau benodigd om een King LT in te brengen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_GUEDELTUBUS">
             <English>Allow Guedeltubus</English>
@@ -908,6 +967,7 @@
             <Portuguese>Permitir Cânula de Guedel</Portuguese>
             <Norwegian>Tillat Guedeltubus</Norwegian>
             <Finnish>salli Guedel-putken</Finnish>
+            <Dutch>Sta Guedel-tube toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_GUEDELTUBUS_DESC">
             <English>Training level required to use a Guedeltubus</English>
@@ -926,6 +986,7 @@
             <Portuguese>Nível de treinamento necessário para usar uma Cânula de Guedel</Portuguese>
             <Norwegian>Nivået av opplæring som kreves for å bruke en Guedeltubus</Norwegian>
             <Finnish>Guedel-putken käyttämiseen vaadittava koulutustaso</Finnish>
+            <Dutch>Trainingsniveau benodigd om een Guedel-tube in te brengen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_ACCUVAC">
             <English>Allow ACCUVAC</English>
@@ -944,6 +1005,7 @@
             <Portuguese>Permitir ACCUVAC</Portuguese>
             <Norwegian>Tilatt ACCUVAC</Norwegian>
             <Finnish>Salli ACCUVAC</Finnish>
+            <Dutch>Sta ACCUVAC toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_ACCUVAC_DESC">
             <English>Training level required to use an ACCUVAC</English>
@@ -962,6 +1024,7 @@
             <Portuguese>Nível de treinamento necessário para usar um ACCUVAC</Portuguese>
             <Norwegian>Opplæringsnivået som kreves for å bruke en ACCUVAC</Norwegian>
             <Finnish>koulutustaso, joka vaaditaan ACCUVACin käyttämiseen</Finnish>
+            <Dutch>Trainingsniveau benodigd om een ACCUVAC te gebruiken</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_SUCTION">
             <English>Allow Manual Suction Pump</English>
@@ -972,6 +1035,7 @@
             <German>Manuelle Absaugpumpe zulassen</German>
             <French>Autoriser la pompe d'aspiration manuelle</French>
             <Portuguese>Permitir Bomba de Sucção Manual</Portuguese>
+            <Dutch>Sta handmatige suctiepomp toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_ALLOW_SUCTION_DESC">
             <English>Training level required to use an Manual Suction Pump</English>
@@ -982,6 +1046,7 @@
             <German>Benötigter medizinischer Grad, um die Manuelle Absaugpumpe zu nutzen</German>
             <French>Niveau d'entrainement requis pour utiliser une pompe d'aspiration manuelle</French>
             <Portuguese>Nível de formação necessário para utilizar uma Bomba de Sucção Manual</Portuguese>
+            <Dutch>Trainingsniveau benodigd om een handmatige suctiepomp te gebruiken</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY">
             <English>Time to check Airway</English>
@@ -1000,6 +1065,7 @@
             <Portuguese>Tempo para verificar as vias aéreas</Portuguese>
             <Norwegian>Tid for å sjekke luftveiene</Norwegian>
             <Finnish>Kuinka kauan hengitysteiden tarkistaminen kestää</Finnish>
+            <Dutch>Tijd voor de controle van de luchtwegen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_CHECKAIRWAY_DESC">
             <English>How long it will take to check Airway</English>
@@ -1018,6 +1084,7 @@
             <Portuguese>Quanto tempo levará para verificar as vias aéreas</Portuguese>
             <Norwegian>Hvor lang tid det vil ta å sjekke luftveiene</Norwegian>
             <Finnish>Kuinka kauan hengitysteiden tarkistaminen kestää</Finnish>
+            <Dutch>Hoe lang het gaat duren om de luchtwegen te checken</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Time">
             <English>Time for overstretch the head</English>
@@ -1036,6 +1103,7 @@
             <Portuguese>Tempo para hiperestender a cabeça</Portuguese>
             <Norwegian>Tid for å overstrekke hode</Norwegian>
             <Finnish>Kuinka kauan kestää potilaan pään ylivenytys</Finnish>
+            <Dutch>Tijd voor het overstrekken van het hoofd</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Hyperextend_Time_DESC">
             <English>How long it will take to overstretch the head</English>
@@ -1054,6 +1122,7 @@
             <Portuguese>Quanto tempo demorará para hiperestender a cabeça</Portuguese>
             <Norwegian>Hvor lang tid det vil ta å overstrekke hodet</Norwegian>
             <Finnish>Kuinka kauan kestää potilaan pään hypervenytys</Finnish>
+            <Dutch>Hoe lang het gaat duren om het hoofd te overstrekken</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval">
             <English>Head Turning Interval</English>
@@ -1066,6 +1135,7 @@
             <Spanish>Intervalo de giro de cabeza</Spanish>
             <Finnish>pään käännösväli</Finnish>
             <Russian>Интервал поворота головы</Russian>
+            <Dutch>Hoofddraaiing interval</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_HeadTurning_Interval_DESC">
             <English>Time between head turning attempts</English>
@@ -1078,6 +1148,7 @@
             <Spanish>Tiempo entre los giros de cabeza</Spanish>
             <Finnish>pään käännösyritysten välinen aika</Finnish>
             <Russian>Время между попытками поворота головы</Russian>
+            <Dutch>Tijd tussen hoofddraaiing pogingen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Activity_HeadTurning">
             <English>%1 finished head turning (x%2)</English>
@@ -1090,6 +1161,7 @@
             <Spanish>%1 acabó de girar la cabeza (x%2)</Spanish>
             <Finnish>%1 lopetti pään kääntämisen (x%2)</Finnish>
             <Russian>%1 закончил поворот головы (x%2)</Russian>
+            <Dutch>%1 heeft het hoofd gedraaid (x%2)</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC">
             <English>Time for ACCUVAC</English>
@@ -1108,6 +1180,7 @@
             <Portuguese>Tempo para ACCUVAC</Portuguese>
             <Norwegian>Tid for ACCUVAC</Norwegian>
             <Finnish>ACCUVACin aika</Finnish>
+            <Dutch>Behandelstijd van een ACCUVAC</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_ACCUVAC_DESC">
             <English>How long it will take to use ACCUVAC</English>
@@ -1126,6 +1199,7 @@
             <Portuguese>Quanto tempo demorará para usar ACCUVAC</Portuguese>
             <Norwegian>Hvor lang tid vil det ta å bruke ACCUVAC</Norwegian>
             <Finnish>Kuinka kauan ACCUVACin käyttö kestää</Finnish>
+            <Dutch>Hoe lang het gaat duren om de ACCUVAC te gebruiken</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION">
             <English>Time for Manual Suction Pump</English>
@@ -1136,6 +1210,7 @@
             <Russian>Время работы ручного всасывающего насоса</Russian>
             <French>Durée d'aspiration avec la pompe d'aspiration manuelle</French>
             <Portuguese>Tempo de uso da Bomba de Sucção Manual</Portuguese>
+            <Dutch>Behandelstijd van een handmatige suctiepomp</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_SUCTION_DESC">
             <English>How long it will take to use Manual Suction Pump</English>
@@ -1146,6 +1221,7 @@
             <German>Benötigte Zeit zur Verwendung der Manuellen Absaugpumpe</German>
             <French>Temps nécessaire pour utiliser la pompe d'aspiration manuelle</French>
             <Portuguese>Quanto tempo leva o uso da Bomba de Sucção Manual</Portuguese>
+            <Dutch>Hoe lang het gaat duren om een handmatige suctiepomp te gebruiken</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS">
             <English>Time for Larynxtubus</English>
@@ -1164,6 +1240,7 @@
             <Portuguese>Tempo para Tubo Laríngeo</Portuguese>
             <Norwegian>Tid for Larynxtubus</Norwegian>
             <Finnish>Kurkunpään putkiaika</Finnish>
+            <Dutch>Tijd voor het gebruik van een King LT</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_LARYNXTUBUS_DESC">
             <English>How long it will take to use Larynxtubus</English>
@@ -1182,6 +1259,7 @@
             <Portuguese>Quanto tempo demorará para usar um Tubo Laríngeo</Portuguese>
             <Norwegian>Hvor lang tid vil det ta å bruke Larynxtubus</Norwegian>
             <Finnish>Kuinka kauan kurkunpään putken asettaminen vie</Finnish>
+            <Dutch>Hoe lang het gaat duren voor het gebruik van een King LT</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_GUEDELTUBUS">
             <English>Time for Geudeltubus</English>
@@ -1200,6 +1278,7 @@
             <Portuguese>Tempo para usar uma Cânula de Guedel</Portuguese>
             <Norwegian>Tid for Guedeltubus</Norwegian>
             <Finnish>Guedel-putken aika</Finnish>
+            <Dutch>Intubatietijd voor Guedel-tube</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_TIME_GUEDELTUBUS_DESC">
             <English>How long it will take to use Guedeltubus</English>
@@ -1218,6 +1297,7 @@
             <Portuguese>Quanto tempo demorará para usar uma Cânula de Guedel</Portuguese>
             <Norwegian>Hvor lang tid vil det ta å bruke Guedeltubus</Norwegian>
             <Finnish>Kuinka kauan Guedel-putken asettaminen vie</Finnish>
+            <Dutch>Hoe lang het gaat duren om een Guedel-tube in te brengen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_RecoveryPosition">
             <English>Established in recovery position</English>
@@ -1235,6 +1315,7 @@
             <Norwegian>Plassert i stabilt sideleie</Norwegian>
             <Finnish>Potilas asetetaan toipumisasentoon</Finnish>
             <Russian>В боковом положении</Russian>
+            <Dutch>In stabiele zijligging gelegd</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_RecoveryPosition_displayName">
             <English>Establish recovery position</English>
@@ -1252,6 +1333,7 @@
             <Norwegian>Legg i stabilt sideleie</Norwegian>
             <Finnish>Aseta potilas toipumisasentoon</Finnish>
             <Russian>Перевести в боковое положение</Russian>
+            <Dutch>Leg in de stabiele zijligging</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_RecoveryPosition_displayNameProgress">
             <English>Establishing recovery position</English>
@@ -1269,6 +1351,7 @@
             <Norwegian>Legger i stabilt sideleie</Norwegian>
             <Finnish>Potilaan asettaminen toipumisasentoon</Finnish>
             <Russian>Перевод в боковое положение</Russian>
+            <Dutch>In de stabiele zijligging leggen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_RecoveryPosition_Ready">
             <English>Recovery position established successfully</English>
@@ -1286,6 +1369,7 @@
             <Norwegian>Lagt i stabilt sideleie</Norwegian>
             <Finnish>Potilas asetettiin toipumisasentoon onnistuneesti</Finnish>
             <Russian>Приведение в боковое положение прошло успешно</Russian>
+            <Dutch>Succesvol in de stabiele zijligging gelegd</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_RecoveryPosition_Cancel">
             <English>Recovery position cancelled</English>
@@ -1303,6 +1387,7 @@
             <Norwegian>Stabilt Sideleie avbrutt</Norwegian>
             <Finnish>Lepoasento peruutettu</Finnish>
             <Russian>Перевод в боковое положение отменен</Russian>
+            <Dutch>Stabiele zijligging gestopt</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_RecoveryPosition_Log">
             <English>%1 established recovery position</English>
@@ -1320,6 +1405,7 @@
             <Norwegian>%1 la dem i stabilt sideleie</Norwegian>
             <Finnish>%1 asetettu toipumisasentoon</Finnish>
             <Russian>%1 перевел в боковое положение</Russian>
+            <Dutch>%1 heeft in de stabiele zijligging gelegd</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_CancelRecoveryPosition_Log">
             <English>%1 cancelled recovery position</English>
@@ -1331,6 +1417,7 @@
             <German>%1 hat die stabile Seitenlage aufgehoben</German>
             <Spanish>%1 cancelada posición lateral de seguridad</Spanish>
             <Portuguese>%1 cancelou a posição de recuperação</Portuguese>
+            <Dutch>%1 stopte de stabiele zijligging</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time">
             <English>Time for recovery position</English>
@@ -1348,6 +1435,7 @@
             <Norwegian>Tid for å legge i stabilt sideleie</Norwegian>
             <Finnish>palautumisasennon aika</Finnish>
             <Russian>Время перевода в боковое положение</Russian>
+            <Dutch>Tijd voor de stabiele zijligging</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_Time_DESC">
             <English>How long it will take to establish recovery position</English>
@@ -1365,6 +1453,7 @@
             <Norwegian>Hvor lang tid vil det ta å legge i stabilt sideleie</Norwegian>
             <Finnish>Kuinka kauan kestää, että potilas asetetaan toipumisasentoon</Finnish>
             <Russian>Сколько времени потребуется, чтобы перевести в боковое положение</Russian>
+            <Dutch>Hoe lang het gaat duren om iemand in de stabiele zijligging te leggen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_CancelRecoveryPosition_displayName">
             <English>Cancel recovery position</English>
@@ -1382,6 +1471,7 @@
             <Norwegian>Avbrutt stabilt sideleie</Norwegian>
             <Finnish>Peruuta lepoasento</Finnish>
             <Russian>Отмена бокового положения</Russian>
+            <Dutch>Stop stabiele zijligging</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_CancelRecoveryPosition_displayNameProgress">
             <English>Cancelling recovery position</English>
@@ -1399,6 +1489,7 @@
             <Norwegian>Avbrytter stabilt sideleie</Norwegian>
             <Finnish>Lepoasennon peruuttaminen</Finnish>
             <Russian>Отмена бокового положения</Russian>
+            <Dutch>Stabiele zijligging stoppen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_CancelRecoveryPosition_Time">
             <English>Time for cancelling recovery position</English>
@@ -1416,6 +1507,7 @@
             <Norwegian>Tid for å avbryte stabilt sideleie</Norwegian>
             <Finnish>Aika peruuttaa lepoasento</Finnish>
             <Russian>Время, необходимое для выхода из бокового положения</Russian>
+            <Dutch>Tijd om een stabiele zijligging te stoppen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_CancelRecoveryPosition_Time_DESC">
             <English>How long it will take to manually cancel recovery position</English>
@@ -1427,6 +1519,7 @@
             <Russian>Сколько времени потребуется, чтобы отменить боковое положение</Russian>
             <German>Benötigte Zeit, um eine stabile Seitenlage rückganging zu machen.</German>
             <Portuguese>Quanto tempo leva para cancelar manualmente a posição de recuperação</Portuguese>
+            <Dutch>Hoe lang het gaat duren om de stabiele zijligging te stoppen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain">
             <English>Recovery Position time to drain occlusion</English>
@@ -1438,6 +1531,7 @@
             <Russian>Время бокового положения для дренирования окклюзии</Russian>
             <German>Stabile Seitenlage: Benötigte Zeit zum Entgegenwirken einer Verstopfung</German>
             <Portuguese>Tempo para remover a oclusão durante a posição de recuperação</Portuguese>
+            <Dutch>Stabiele zijligging: Benodigde tijd om zich te ontdoen van een verstopping</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SETTING_RecoveryPosition_TimeToDrain_DESC">
             <English>Maximum time required for patient in recovery position to be drained of occlusion.</English>
@@ -1449,6 +1543,7 @@
             <Russian>Максимальное время, необходимое пациенту в боковом положении для устранения окклюзии.</Russian>
             <German>Beschreibt die maximal benötigte Dauer, bei welcher eine Stabile Seitenlage zur zur Freilegung der verstopften Atemwege führt.</German>
             <Portuguese>O tempo máximo necessário para o paciente em posição de recuperação ter sua oclusão removida.</Portuguese>
+            <Dutch>Maximale tijd die nodig is om een patiënt in de stabiele zijligging te ontdoen van een verstopping.</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_RecoveryPositionHyperextend">
             <English>Recovery Position + Head Hyperextend Settings</English>
@@ -1460,6 +1555,7 @@
             <Russian>Параметры бокового положения + гиперэкстензия</Russian>
             <German>Einstellungen für Stabile Seitenlage und Kopfüberstreckung</German>
             <Portuguese>Configurações de posição de recuperação + hiperestensão</Portuguese>
+            <Dutch>Stabiele zijliggings- en hoofd overstrekkings opties</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Suction">
             <English>Suction devices Settings</English>
@@ -1470,6 +1566,7 @@
             <Spanish>Opciones de dispositivos de Succión</Spanish>
             <French>Paramètres des appareils d'aspiration</French>
             <Portuguese>Configurações de dispositivos de sucção</Portuguese>
+            <Dutch>Suctie apparaten instellingen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_SubCategory_Items">
             <English>Airway items Settings</English>
@@ -1486,6 +1583,7 @@
             <Norwegian>Instillinger for luftveis gjennstander</Norwegian>
             <Finnish>henkitorven laitteen asetukset</Finnish>
             <Russian>Параметры объектов дыхательных путей</Russian>
+            <Dutch>Instelling voor luchtwegmiddelen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Cancel_Larynxtubus">
             <English>Remove King LT</English>
@@ -1500,6 +1598,7 @@
             <Portuguese>Remover Tubo Laríngeo</Portuguese>
             <Finnish>Irrota kurkunpään putki</Finnish>
             <Russian>Удалить гортанную трубку</Russian>
+            <Dutch>Verwijder King LT</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Cancel_Guedeltubus">
             <English>Remove Guedel Tube</English>
@@ -1514,6 +1613,7 @@
             <Portuguese>Remover Cânula de Guedel</Portuguese>
             <Finnish>Irrota guedel-putki</Finnish>
             <Russian>Удалить трубку Геделя</Russian>
+            <Dutch>Verwijder Guedel-tube</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_action_removing">
             <English>Removing</English>
@@ -1528,6 +1628,7 @@
             <Portuguese>Removendo</Portuguese>
             <Finnish>Poistaminen</Finnish>
             <Russian>Удаление</Russian>
+            <Dutch>Verwijderen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems">
             <English>Reusable Airway Items</English>
@@ -1542,6 +1643,7 @@
             <Portuguese>Objetos reutilizáveis de vias aéreas</Portuguese>
             <Finnish>Uudelleenkäytettävät henkitorvilaitteet</Finnish>
             <Russian>Многоразовые предметы, связанные с дыхательными путями</Russian>
+            <Dutch>Herbruikbare luchtwegmiddelen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_Reusable_AirwayItems_DESC">
             <English>Regain the KingLT or Guedel Tube when manually removing them</English>
@@ -1556,6 +1658,7 @@
             <Portuguese>Recupere o Tubo Laríngeo ou a Cânula de Guedel quando removidos manualmente</Portuguese>
             <Finnish>Ota kurkunpää- tai guedelputki takaisin, kun poistat ne manuaalisesti</Finnish>
             <Russian>Извлеките гортанную трубку или трубку Геделя, когда они удалены вручную</Russian>
+            <Dutch>Krijg de King LT of de Guedel-tube terug wanneer deze handmatig verwijderd worden</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveLarynxtubus_Log">
             <English>%1 removed KingLT</English>
@@ -1570,6 +1673,7 @@
             <Portuguese>%1 removeu o Tubo Laríngeo</Portuguese>
             <Finnish>%1 kurkunpään putki poistettu</Finnish>
             <Russian>%1 удалил гортанную трубку</Russian>
+            <Dutch>%1 verwijdderde King LT</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_RemoveGuedeltubus_Log">
             <English>%1 removed Guedel Tube</English>
@@ -1584,6 +1688,7 @@
             <Portuguese>%1 removeu a Cânula de Guedel</Portuguese>
             <Finnish>%1 guedel-putki poistettu</Finnish>
             <Russian>%1 удалил трубку Геделя</Russian>
+            <Dutch>%1 verwijdderde Guedel-tube</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AutoTriage">
             <English>Auto Triage Airway</English>
@@ -1597,6 +1702,7 @@
             <Portuguese>Triagem automática das vias aéreas</Portuguese>
             <Finnish>Luokittelee hengitystiet automaattisesti</Finnish>
             <Russian>Автоматическая сортировка дыхательных путей</Russian>
+            <Dutch>Auto triage van de luchtwegen</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_AutoTriage_Desc">
             <English>Sets if checking airways can override current triage level</English>
@@ -1610,6 +1716,7 @@
             <Portuguese>Define se a checagem de vias aéreas pode sobrescrever o nível atual de triagem.</Portuguese>
             <Finnish>Määrittää, voiko hengitysteiden tarkistaminen muuttaa nykyistä luokitusta</Finnish>
             <Russian>Определяет, изменяет ли проверка дыхательных путей текущий уровень сортировки</Russian>
+            <Dutch>Zet of het checken van de luchtwegen het huidige triage niveau overschrijft</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING">
             <English>Block head turning</English>
@@ -1624,6 +1731,7 @@
             <Portuguese>Bloquear a rotação de cabeça</Portuguese>
             <Finnish>Estä pään kääntyminen</Finnish>
             <Russian>Блокировать вращение головы</Russian>
+            <Dutch>Blokkeer het draaien van het hoofd</Dutch>
         </Key>
         <Key ID="STR_KAT_Airway_BLOCK_HEADTURNING_DESC">
             <English>Blocks head turning if patient has Guedel Tube inserted</English>
@@ -1638,6 +1746,7 @@
             <Portuguese>Bloqueia a rotação de cabeça em pacientes com Cânula de Guedel</Portuguese>
             <Finnish>Estää pään pyörimisen, jos potilaalla on guedel-putki</Finnish>
             <Russian>Блокирует вращение головы, если пациенту вставлена трубка Геделя</Russian>
+            <Dutch>Blokkeert het draaien van het hoofd als de patiënt een Guedel-tube in heeft</Dutch>
         </Key>
     </Package>
 </Project>
