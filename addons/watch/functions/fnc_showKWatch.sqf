@@ -73,8 +73,6 @@ private _altitude = _display displayCtrl 22007;
         _pfhID call CBA_fnc_removePerFrameHandler;
     };
 
-    diag_log ((ctrlText _time));
-
     date params ["_yearNum", "_monthNum", "_dayNum"];
 
     private _hour = floor dayTime;
