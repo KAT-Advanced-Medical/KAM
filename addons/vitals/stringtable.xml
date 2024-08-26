@@ -2,7 +2,7 @@
 <Project name="KAT">
     <Package name="Vitals">
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE">
-            <English>AI Simple Medical activated?</English>
+            <English>Activate AI Simple Medical</English>
         </Key>
     </Package>
 </Project>

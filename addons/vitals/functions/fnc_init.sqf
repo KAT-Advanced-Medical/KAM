@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: MiszczuZPolski
- * Local callback for fully healing a patient.
+ * Author: Mazinski
+ * Initializes unit variables.
  *
  * Arguments:
  * 0: Patient <OBJECT>
@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_circulation_fnc_fullHealLocal
+ * [player] call kat_vitals_fnc_fullHealLocal
  *
  * Public: No
  */
