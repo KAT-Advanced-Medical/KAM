@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_circulation_fnc_fullHealLocal
+ * [player] call kat_vitals_fnc_handleRespawn
  *
  * Public: No
  */
