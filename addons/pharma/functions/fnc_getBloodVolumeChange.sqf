@@ -29,7 +29,7 @@ _fluidVolume params ["_ECP","_ECB","_SRBC","_ISP","_fullVolume"];
 _ECP = _ECP + (_lossVolumeChange * LITERS_TO_ML) / 2;
 _ECB = _ECB + (_lossVolumeChange * LITERS_TO_ML) / 2;
 
-_SRBCChange = if(_SRBC > 100 && _ECB < DEFAULT_ECB) then { ((DEFAULT_ECB - _ECB) min (abs((_lossVolumeChange * LITERS_TO_ML)) / 2 + 1)) } else { 0 };
+_SRBCChange = if (_SRBC > 100 && _ECB < DEFAULT_ECB) then { ((DEFAULT_ECB - _ECB) min (abs ((_lossVolumeChange * LITERS_TO_ML)) / 2 + 1)) } else { 0 };
 _ECB = _ECB + _SRBCChange;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
