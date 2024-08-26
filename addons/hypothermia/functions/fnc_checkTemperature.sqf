@@ -17,7 +17,7 @@
  */
 params ["_medic", "_patient"];
 
-private _unitTemperature = _unit getVariable [QGVAR(unitTemperature), 37];
+private _unitTemperature = _patient getVariable [QGVAR(unitTemperature), 37];
 
 switch (true) do {
     case (!(alive _patient)) : { [LLSTRING(temperature_dead), 1.5, _medic] call ACEFUNC(common,displayTextStructured); };
