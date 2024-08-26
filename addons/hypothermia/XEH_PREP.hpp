@@ -5,7 +5,6 @@ PREP(checkTemperature);
 PREP(fullHealLocal);
 PREP(handleRespawn);
 PREP(init);
-PREP(canRemoveWarmer);
 PREP(removeFluidWarmer);
 PREP(removeFluidWarmerLocal);
 PREP(removeWarmer);

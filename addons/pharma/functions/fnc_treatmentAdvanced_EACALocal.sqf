@@ -49,7 +49,7 @@ if (_IVactual > 1) then {
 if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
 
     if (_IVactual != 3) then {
-    if (_countEACA > 1 && !(_allowStack)) exitWith {};
+        if (_countEACA > 1 && !(_allowStack)) exitWith {};
 
         [{
             params ["_args", "_idPFH"];
