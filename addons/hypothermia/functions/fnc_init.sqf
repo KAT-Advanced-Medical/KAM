@@ -44,7 +44,7 @@ if (GVAR(hypothermiaActive)) then {
             _handWarmers set [_forEachIndex, 0];
         } forEach (_handWarmers);
 
-        _unit setVariable[QGVAR(handWarmers), _handWarmers, true];
+        _unit setVariable [QGVAR(handWarmers), _handWarmers, true];
 
         if (GET_BLOOD_VOLUME_LITERS(_unit) > 4) then {
             private _impact = (_unit getVariable [QGVAR(warmingImpact), 0]);
