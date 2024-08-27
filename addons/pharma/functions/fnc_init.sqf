@@ -73,7 +73,6 @@ if (GVAR(kidneyAction)) then {
 
         private _ph = _unit getVariable [QGVAR(externalPh), 3000];
         if (_ph == 3000) exitWith {};
-        if ((_unit getVariable [QGVAR(externalPh), false]) == 0) exitWith {};
 
         private _kidneyFail = _unit getVariable [QGVAR(kidneyFail), false];
         private _kidneyArrest = _unit getVariable [QGVAR(kidneyArrest), false];
