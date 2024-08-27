@@ -18,7 +18,7 @@
  * Current O2 Saturation <NUMBER>
  *
  * Example:
- * [player, 80, 0.8, [40,90,0.96,24,7.4], 37, 760, 0, 1, true] call kat_misc_fnc_handleOxygenFunction;
+ * [player, 80, 0.8, [40,90,0.96,24,7.4], 37, 760, 0, 1, true] call kat_vitals_fnc_handleOxygenFunction;
  *
  * Public: No
  */
@@ -58,7 +58,7 @@ private _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _pre
 private _etco2 = [((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate)) - DEFAULT_ETCO2) max 10), 0] select (IN_CRDC_ARRST(_unit));
 
 // Extenal pH impacts from saline is included
-private _externalPh = _unit getVariable [QEGVAR(pharma,externalPh),0];
+private _externalPh = _unit getVariable [QEGVAR(pharma,externalPh), 0];
 
 // pH is from the Henderson-Hasselbalch equation
 private _pH = (6.1 + log(24 / ((0.03 - 0.001 * (_temperature - DEFAULT_TEMPERATURE)) * _paco2))) - ((_externalPh max 1) / 2000);

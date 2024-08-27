@@ -15,7 +15,7 @@
  * Current Heart Rate <NUMBER>
  *
  * Example:
- * [player, 0, 80, 6, 1, false] call kat_misc_handleCardiacFunction;
+ * [player, 0, 80, 6, 1, false] call kat_vitals_handleCardiacFunction;
  *
  * Public: No
  */
@@ -48,7 +48,7 @@ if IN_CRDC_ARRST(_unit) then {
     private _strokeVolume = (_bloodVolume / BLOOD_VOLUME_TO_STROKE_DIVISOR);
 
     // As HR increases, pressure is taken off decreasing stroke volume. However, this effect decreases at higher heart rates and lower SVs
-    private _strokeVolumeDifference = [ _strokeVolume / (DEFAULT_STROKE_VOLUME * 0.66) , DEFAULT_STROKE_VOLUME / _strokeVolume ] select (DEFAULT_STROKE_VOLUME / _strokeVolume < 1.22);
+    private _strokeVolumeDifference = [ _strokeVolume / (DEFAULT_STROKE_VOLUME * 0.66), DEFAULT_STROKE_VOLUME / _strokeVolume ] select (DEFAULT_STROKE_VOLUME / _strokeVolume < 1.22);
     private _volumeSupportHR = DEFAULT_HEART_RATE * _strokeVolumeDifference;
     _strokeVolume = _strokeVolume * _strokeVolumeDifference;
 

@@ -10,7 +10,7 @@
  * Update Ran (at least 1 second between runs) <BOOL>
  *
  * Example:
- * [player] call kat_misc_fnc_handleSimpleVitals;
+ * [player] call kat_vitals_fnc_handleSimpleVitals;
  *
  * Public: No
  */

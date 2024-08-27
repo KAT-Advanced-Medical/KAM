@@ -77,6 +77,7 @@ private _tourniquets = GET_TOURNIQUETS(_unit);
         _tourniquetPain = _tourniquetPain max (CBA_missionTime - _x - 120) * 0.001;
     };
 } forEach _tourniquets;
+
 if (_tourniquetPain > 0) then {
     [_unit, _tourniquetPain] call ACEFUNC(medical_status,adjustPainLevel);
 };
@@ -144,7 +145,7 @@ _unit setVariable [VAR_VASOCONSTRICTION, (1.8 min (0.2 max _vasoconstriction)), 
 // Pull wound blood loss after recalculating vasoconstriction
 private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
 
-private _bloodPressure = [round(_bloodPressureDiastolic),round(_bloodPressureSystolic)];
+private _bloodPressure = [round(_bloodPressureDiastolic), round(_bloodPressureSystolic)];
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
 
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
