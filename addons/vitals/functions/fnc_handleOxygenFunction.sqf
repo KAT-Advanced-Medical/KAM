@@ -45,7 +45,7 @@ if (IN_CRDC_ARRST(_unit)) then {
 } else {
     // Ventilatory Demand comes from Heart Rate with increase demand from PaCO2 levels 
     _demandVentilation = ((((_actualHeartRate * HEART_RATE_CO2_MULTIPLIER) / _anerobicPressure) + ((_previousCyclePaco2 - DEFAULT_PACO2) * 200)) max MINIMUM_VENTILATION);
-    _tidalVolume = GET_KAT_SURFACE_AREA(_unit);
+    private _tidalVolume = GET_KAT_SURFACE_AREA(_unit);
 
     // Respiratory Rate is supressed by Opioids 
     _respiratoryRate = [((_demandVentilation / _tidalVolume) - (_opioidDepression * 10)) min MAXIMUM_RR, 20] select (_unit getVariable [QEGVAR(breathing,BVMInUse), false]);
