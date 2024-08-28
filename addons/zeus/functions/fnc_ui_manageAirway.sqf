@@ -56,7 +56,7 @@ private _fnc_sliderMove_ptx = {
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     private _unit = attachedTo _logic;
     private _curVal = _unit getVariable [QEGVAR(breathing,pneumothorax), 0];
-    _slider ctrlSetTooltip format [LLSTRING(sliderFormat13was23), round(sliderPosition _slider), round _curVal];
+    _slider ctrlSetTooltip format [LLSTRING(sliderFormat13was23), round(sliderPosition _slider), round _curVal, " "];
 };
 
 private _sliderPTX = _display displayCtrl 16105;
@@ -72,15 +72,14 @@ private _fnc_sliderMove_SPO2 = {
     private _idc = ctrlIDC _slider;
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     private _unit = attachedTo _logic;
-    private _curVal = GET_SPO2(_unit);
+    private _curVal = GET_PAO2(_unit);
     _slider ctrlSetTooltip format [LLSTRING(sliderFormat13was23), round(sliderPosition _slider), round _curVal, "%"];
 };
 
 private _sliderSPO2 = _display displayCtrl 16106;
 _sliderSPO2 sliderSetRange [0, 100];
 _sliderSPO2 sliderSetSpeed [1,10];
-private _bloodGas = _unit getVariable [QEGVAR(circulation,bloodGas),[40,90,0.96,24,7.4,37]];
-private _curSpO2Val = _bloodGas select 1;
+private _curSpO2Val = GET_PAO2(_unit);
 _sliderSPO2 sliderSetPosition (round _curSpO2Val);
 _sliderSPO2 ctrlAddEventHandler ["SliderPosChanged", _fnc_sliderMove_SPO2];
 [_sliderSPO2,_curSpO2Val] call _fnc_sliderMove_SPO2;
@@ -119,16 +118,14 @@ private _fnc_onConfirm = {
 
         _unit setVariable [_x, _targetState, true];
     } forEach [QEGVAR(airway,obstruction), QEGVAR(airway,occluded), QEGVAR(breathing,hemopneumothorax), QEGVAR(breathing,tensionpneumothorax)];
-
     
-    private _bloodGas = _unit getVariable [QEGVAR(circulation,bloodGas),[40,90,0.96,24,7.4,37]];
-    private _curSpO2Val = _bloodGas select 1;    
+    private _curSpO2Val = GET_PAO2(_unit);    
     private _pneumothorax = round(sliderPosition (_display displayCtrl 16105));
 
     _unit setVariable [QEGVAR(breathing,pneumothorax), _pneumothorax, true];
-
     private _o2Sat = round(sliderPosition (_display displayCtrl 16106)); 
 
+    private _bloodGas = GET_BLOOD_GAS(_unit);
     _unit setVariable [QEGVAR(circulation,bloodGas),[_bloodGas select 0, _o2Sat, _bloodGas select 2, _bloodGas select 3, _bloodGas select 4], true];
 
     if (_pneumothorax isEqualTo 0 && !(_valueArr select 2) && !(_valueArr select 3)) then {
