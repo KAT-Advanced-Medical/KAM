@@ -71,7 +71,7 @@ if (GVAR(kidneyAction)) then {
             [_idPFH] call CBA_fnc_removePerFrameHandler;
         };
 
-        private _ph = _unit getVariable [QGVAR(externalPh), 3000];
+        private _ph = _unit getVariable [QGVAR(externalPh), 0];
         private _kidneyFail = _unit getVariable [QGVAR(kidneyFail), false];
         private _kidneyArrest = _unit getVariable [QGVAR(kidneyArrest), false];
         private _kidneyPressure = _unit getVariable [QGVAR(kidneyPressure), false];
