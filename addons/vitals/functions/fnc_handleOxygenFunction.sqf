@@ -36,6 +36,7 @@ private _respiratoryRate = 0;
 private _demandVentilation = 0;
 private _actualVentilation = 0;
 private _previousCyclePaco2 = (_bloodGas select 0);
+private _previousCyclePao2 = (_bloodGas select 1);
 
 if (IN_CRDC_ARRST(_unit)) then { 
     // When in arrest, there should be no effecive breaths but still a minimum O2 demand. Zero O2 demand would mean a dead patient. Actual ventilation is 1 to prevent issues in the gas tension functions
@@ -73,8 +74,6 @@ private _fio2 = switch (true) do {
 
 // Alveolar Gas equation. PALVO2 is largely impacted by Barometric Pressure and FiO2
 private _pALVo2 = ((_fio2 * (_baroPressure - 47)) - (_paco2 / _anerobicPressure)) max 1;
-
-private _previousCyclePao2 = (_bloodGas select 1);
 
 // PaO2 cannot be higher than PALVO2 and comes from ventilation shortage multipled by RBC volume
 private _pao2 = (DEFAULT_PAO2 - ((DEFAULT_ECB / ((GET_BODY_FLUID(_unit) select 0) max 100)) * ((_demandVentilation - _actualVentilation) / 120))) min _pALVo2;

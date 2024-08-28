@@ -38,6 +38,8 @@ private _bloodVolume = ([_unit, _deltaT, _syncValues] call EFUNC(pharma,getBlood
 _unit setVariable [VAR_BLOOD_VOL, _bloodVolume, _syncValues];
 
 private _temperature = 37;
+private _baroPressure = 760;
+
 if (EGVAR(hypothermia,hypothermiaActive)) then {
     // Enviromental Impact (Altitude, Temperature, Pressure) 
     private _altitude = (getPosASL _unit) select 2;
@@ -47,7 +49,7 @@ if (EGVAR(hypothermia,hypothermiaActive)) then {
         default { 0 };
     };
 
-    private _baroPressure = 760 * exp((-(_altitude)) / 8400);
+    _baroPressure = 760 * exp((-(_altitude)) / 8400);
     _temperature = [_unit, _altitudeTempImpact, _bloodVolume, _deltaT, _syncValues] call FUNC(handleTemperatureFunction); 
 };
 
