@@ -65,7 +65,7 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_EACA_script)) then {
                 [_idPFH] call CBA_fnc_removePerFrameHandler;
             };
 
-            if (_random >= _ph) then {
+            if (_random <= _ph) then {
                 {
                     _x params ["_targetBodyPart"];
 
