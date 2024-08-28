@@ -155,12 +155,12 @@ _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
 // Statements are ordered by most lethal first.
 // Add SpO2 reactions to switch statement ---------------------------------------------------------------------
  switch (true) do {
-    case (_bloodVolume < BLOOD_VOLUME_FATAL): {
-        TRACE_3("BloodVolume Fatal",_unit,BLOOD_VOLUME_FATAL,_bloodVolume);
-        [QACEGVAR(medical,Bleedout), _unit] call CBA_fnc_localEvent;
-    };
     case (_spo2 < EGVAR(breathing,SpO2_dieValue) && EGVAR(breathing,SpO2_dieActive)): {
         TRACE_3("O2 Fatal",_unit,EGVAR(breathing,SpO2_dieValue),_spo2);
+        [QACEGVAR(medical,FatalInjury), _unit] call CBA_fnc_localEvent;
+    };
+    case (_bloodVolume < BLOOD_VOLUME_FATAL): {
+        TRACE_3("BloodVolume Fatal",_unit,BLOOD_VOLUME_FATAL,_bloodVolume);
         [QACEGVAR(medical,Bleedout), _unit] call CBA_fnc_localEvent;
     };
     case (IN_CRDC_ARRST(_unit)): {}; // if in cardiac arrest just break now to avoid throwing unneeded events
