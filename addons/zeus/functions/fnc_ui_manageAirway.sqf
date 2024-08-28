@@ -119,12 +119,12 @@ private _fnc_onConfirm = {
         _unit setVariable [_x, _targetState, true];
     } forEach [QEGVAR(airway,obstruction), QEGVAR(airway,occluded), QEGVAR(breathing,hemopneumothorax), QEGVAR(breathing,tensionpneumothorax)];
 
-    private _curSpO2Val = GET_SPO2(_unit); Still working on how to make this work
+    private _curSpO2Val = GET_SPO2(_unit); 
     private _pneumothorax = round(sliderPosition (_display displayCtrl 16105));
 
     _unit setVariable [QEGVAR(breathing,pneumothorax), _pneumothorax, true];
 
-    private _o2Sat = round(sliderPosition (_display displayCtrl 16106)); Still working on how to make this work
+    private _o2Sat = round(sliderPosition (_display displayCtrl 16106)); 
     private _pao2 = (_o2Sat * 25 - (((GET_PH(_unit) / DEFAULT_PH) - 1) * 150)^2.7 / (1 - _o2Sat))^2.7;
 
     private _bloodGas = GET_BLOOD_GAS(_unit);
