@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Vitals">
+        <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE">
+            <English>Activate AI Simple Medical</English>
+        </Key>
+    </Package>
+</Project>

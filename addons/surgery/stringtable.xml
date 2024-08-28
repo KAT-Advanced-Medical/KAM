@@ -491,6 +491,9 @@
             <Finnish>Kastelu</Finnish>
             <Russian>Промывание</Russian>
         </Key>
+        <Key ID="STR_KAT_Surgery_Reset_Surgery">
+            <English>Close Incision</English>
+        </Key>    
         <Key ID="STR_KAT_Surgery_Plate_Display">
             <English>Bone Plate</English>
             <Chinesesimp>骨板</Chinesesimp>

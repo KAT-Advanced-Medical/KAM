@@ -39,7 +39,7 @@ if ((_unit getVariable [QGVAR(cardiacArrestType), 0] != 0) && _initial) then {
 if (_initial) then {
     if !(_active) exitWith {};
 
-    if (_unit getVariable [QACEGVAR(medical,bloodVolume), 6.0] < GVAR(AdvRhythm_asystoleBloodlossThreshold)) then {
+    if (GET_BLOOD_VOLUME_LITERS(_unit) < GVAR(AdvRhythm_asystoleBloodlossThreshold)) then {
         if (floor (random 100) < GVAR(AdvRhythm_PEAChance)) then {
             _cardiacArrestType = 2;
         } else {
@@ -76,7 +76,7 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
             [{
                 params ["_unit"];
 
-                _unit getVariable [QACEGVAR(medical,bloodVolume), 6.0] < GVAR(AdvRhythm_asystoleBloodlossThreshold) && _unit getVariable [QGVAR(cardiacArrestType), 0] > 2
+                GET_BLOOD_VOLUME_LITERS(_unit) < GVAR(AdvRhythm_asystoleBloodlossThreshold) && _unit getVariable [QGVAR(cardiacArrestType), 0] > 2
             },
             {
                 params ["_unit"];
@@ -115,7 +115,7 @@ if (GVAR(AdvRhythm_canDeteriorate)) then {
             [{
                 params ["_unit"];
 
-                _unit getVariable [QACEGVAR(medical,bloodVolume), 6.0] < GVAR(AdvRhythm_asystoleBloodlossThreshold) && _unit getVariable [QGVAR(cardiacArrestType), 0] > 2
+                GET_BLOOD_VOLUME_LITERS(_unit) < GVAR(AdvRhythm_asystoleBloodlossThreshold) && _unit getVariable [QGVAR(cardiacArrestType), 0] > 2
             },
             { // If past asystole bloodloss threshold
                 params ["_unit"];

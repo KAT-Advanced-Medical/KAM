@@ -33,7 +33,7 @@ if IN_CRDC_ARRST(_unit) then {
 } else {
     private _hrChange = 0;
     private _targetHR = 0;
-    private _bloodVolume = GET_BLOOD_VOLUME(_unit);
+    private _bloodVolume = GET_BLOOD_VOLUME_LITERS(_unit);
     if (_bloodVolume > BLOOD_VOLUME_CLASS_4_HEMORRHAGE) then {
         GET_BLOOD_PRESSURE(_unit) params ["_bloodPressureL", "_bloodPressureH"];
         private _meanBP = (2/3) * _bloodPressureH + (1/3) * _bloodPressureL;

@@ -3527,13 +3527,13 @@
             <Portuguese>Coletando amostra sanguínea, </Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_lowINR">
-            <English>slightly below normal INR</English>
+            <English>Slightly Below Normal INR</English>
             <Japanese>正常INRより少し低い</Japanese>
             <Spanish>ligeramente por debajo del INR normal</Spanish>
             <Portuguese>INR ligeiramente abaixo do normal</Portuguese>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
-            <English>sligtly above normal INR</English>
+            <English>Sligtly Above normal INR</English>
             <Japanese>正常INRより少し高い</Japanese>
             <Spanish>ligeramente por encima de INR normal</Spanish>
             <Portuguese>INR ligeiramente acima do normal</Portuguese>

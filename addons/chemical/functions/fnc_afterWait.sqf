@@ -54,7 +54,6 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
                         _unit setVariable [QGVAR(airPoisoning), true, true];
                     };
                 };
-                [_unit] call EFUNC(breathing,handleBreathing);
                 _isinGas = false;
             };
 
@@ -69,7 +68,6 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
                         _unit setVariable [QGVAR(airPoisoning), true, true];
                     };
                 };
-                [_unit] call EFUNC(breathing,handleBreathing);
                 _isinGas = false;
             };
 
@@ -93,6 +91,5 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
                 _unit setVariable [QGVAR(airPoisoning), true, true];
             };
         };
-        [_unit] call EFUNC(breathing,handleBreathing);
     };
 };

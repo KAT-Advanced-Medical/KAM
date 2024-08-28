@@ -199,7 +199,13 @@ if (ACEGVAR(medical_gui,showDamageEntry)) then {
 
 // Indicate if a tourniquet is applied
 if (HAS_TOURNIQUET_ACTUAL(_target,_selectionN)) then {
-    _entries pushBack [localize ACELSTRING(medical_gui,Status_Tourniquet_Applied), [0.77, 0.51, 0.08, 1]];
+    _entries pushBack [format ["%1 [%2]", localize ACELSTRING(medical_gui,Status_Tourniquet_Applied), _target getVariable [QEGVAR(circulation,tourniquetTime), [0,0,0,0,0,0]] select _selectionN], [0.77, 0.51, 0.08, 1]];
+};
+
+private _warmerPlaced = _target getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0]];
+
+if (_warmerPlaced select _selectionN == 1) then {
+    _entries pushBack [LELSTRING(hypothermia,LineWarmer), [1, 0.75, 0.18, 1]];
 };
 
 // Indicate current body part fracture status

@@ -1,0 +1,12 @@
+PREP(applyFluidWarmer);
+PREP(applyFluidWarmerLocal);
+PREP(checkHandWarmers);
+PREP(checkTemperature);
+PREP(fullHealLocal);
+PREP(handleRespawn);
+PREP(init);
+PREP(removeFluidWarmer);
+PREP(removeFluidWarmerLocal);
+PREP(removeWarmer);
+PREP(useHandWarmer);
+PREP(useHandWarmerLocal);

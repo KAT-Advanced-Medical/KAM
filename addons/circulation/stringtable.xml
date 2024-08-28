@@ -18,6 +18,9 @@
             <Portuguese>ACE - Circulação ativada?</Portuguese>
             <Finnish>ACE-Kierto aktivoitu?</Finnish>
         </Key>
+        <Key ID="STR_KAT_Circulation_SIMPLEMED_ENABLE">
+            <English>AI Simple Medical activated?</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable">
             <English>Advanced Rhythms activated?</English>
             <German>Fortgeschrittenen Rhythmus aktivieren?</German>
@@ -1561,6 +1564,18 @@
             <Finnish>PR</Finnish>
             <Russian>Ритм (PR)</Russian>
         </Key>
+        <Key ID="STR_KAT_Circulation_Blood_Sample_String">
+            <English>%1 Blood Sample</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Arterial_Test_Action">
+            <English>Run ABG Test</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Arterial_Test">
+            <English>ABG Test</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Apply_Arterial_Test">
+            <English>Apply %1 Test</English>
+        </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
             <German>Blutgruppentabelle</German>
@@ -2409,6 +2424,15 @@
             <Japanese>採血する (250ml)</Japanese>
             <Portuguese>Extrair sangue (250ml)</Portuguese>
             <Finnish>Ottaa verta (250ml)</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Circulation_DrawArterial_Action_Use">
+            <English>Draw Arterial Sample</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_sampleItemName">
+            <English>Blood Sample</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_resultItemName">
+            <English>ABG Result</English>
         </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>

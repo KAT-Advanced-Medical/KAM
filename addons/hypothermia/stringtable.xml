@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Hypothermia">
+        <Key ID="STR_KAT_Hypothermia_Using">
+            <English>Using</English>
+            <German>Verwenden</German>
+            <Polish>Używanie</Polish>
+            <Spanish>Usando</Spanish>
+            <Chinese>服用中</Chinese>
+            <Chinesesimp>使用中</Chinesesimp>
+            <Czech>Používám</Czech>
+            <Korean>사용 중</Korean>
+            <French>Utilisation</French>
+            <Turkish>Kullanılıyor</Turkish>
+            <Italian>Usando</Italian>
+            <Japanese>使用中</Japanese>
+            <Portuguese>Usando</Portuguese>
+            <Finnish>Käytetään</Finnish>
+            <Russian>С помощью</Russian>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_ENABLE_HYPOTHERMIA">
+            <English>Enable Hypothermia</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT">
+            <English>Hand Warmer Impact</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT_DESC">
+            <English>Multipler for impact of hand warmers on heat gain</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_FLUID_WARMER_IMPACT">
+            <English>Fluid Warmer Impact</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_FLUID_WARMER_IMPACT_DESC">
+            <English>Multipler for impact of fluid warmer on heat gain</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_WARM_CLOTHING">
+            <English>Warm Uniforms</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_WARM_CLOTHING_DESC">
+            <English>List of clothing marked that reduces heat loss</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_CheckHandWarmers">
+            <English>Check Hand Warmers</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_displayName">
+            <English>Hand Warmer</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_DescShort">
+            <English>Small hand warmers to provide warmth in colder climates</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Use_Handwarmer">
+            <English>Use Hand Warmer</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Self_Handwarmer_Output">
+            <English>This is where you have handwarmers and how much longer you think they have in minutes: %1, %2, %3, %4, %5</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Other_Handwarmer_Output">
+            <English>This patient has handwarmers and they will probably last this many more minutes at this locations: %1, %2, %3, %4, %5</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_FluidWarmer_displayName">
+            <English>Fluid Line Warmer</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_FluidWarmer_DescShort">
+            <English>Provides heating to IV fluids. Must be placed on an already existing line</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Apply_Warmer">
+            <English>Attach Fluid Warmer</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Remove_Warmer">
+            <English>Remove Fluid Warmer</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_dead">
+            <English>Patient feels frigid</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_cold">
+            <English>Patient feels remarkably cold</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_cool">
+            <English>Patient feels moderately cold</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_mild">
+            <English>Patient feels mildly cool</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_temperature_warm">
+            <English>Patient feels warm</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Check_Temperature">
+            <English>Check Temperature</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Check_Temperature_Progress">
+            <English>Checking Temperature</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_Check_Hand_Warmers">
+            <English>Check Hand Warmers</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_perform">
+            <English>Performing</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_LineWarmer">
+            <English>Line Warmer Active</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_None">
+            <English>No Hand Warmers are active at this time</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_Body">
+            <English>Body: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_Body_None">
+            <English>Body: None</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_LArm">
+            <English>Left Arm: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_LArm_None">
+            <English>Left Arm: None</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_RArm">
+            <English>Right Arm: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_RArm_None">
+            <English>Right Arm: None</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_LLeg">
+            <English>Left Leg: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_LLeg_None">
+            <English>Left Leg: None</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_RLeg">
+            <English>Right Leg: %1</English>
+        </Key>
+        <Key ID="STR_KAT_Hypothermia_HandWarmer_RLeg_None">
+            <English>Right Leg: None</English>
+        </Key>
+    </Package>
+</Project>
