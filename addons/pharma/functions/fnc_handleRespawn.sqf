@@ -58,37 +58,42 @@ if (GVAR(kidneyAction)) then {
         };
 
         private _ph = _unit getVariable [QGVAR(externalPh), 0];
-        if (_ph == 3000) exitWith {};
-        if ((_unit getVariable [QGVAR(externalPh), false]) == 0) exitWith {};
-
         private _kidneyFail = _unit getVariable [QGVAR(kidneyFail), false];
         private _kidneyArrest = _unit getVariable [QGVAR(kidneyArrest), false];
         private _kidneyPressure = _unit getVariable [QGVAR(kidneyPressure), false];
 
-        if (_ph >= 2000) exitWith {
-            _unit setVariable [QGVAR(kidneyFail), true, true];
-
-            if !(_kidneyArrest) then {
-                private _random = random 1;
-
-                if (_random >= 0.5) then {
-                    [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+        switch true do {
+            case(_ph == 3000): {
+                if (_ph == 3000) exitWith {
+                    _unit setVariable [QGVAR(kidneyFail), true, true];
                     _unit setVariable [QGVAR(kidneyArrest), true, true];
                 };
             };
-        };
+            case (_ph >= 2000): {
+                _unit setVariable [QGVAR(kidneyFail), true, true];
 
-        if (_ph > 1000) exitWith {
-            _ph = (_ph - 30) max 0;
-            _unit setVariable [QGVAR(externalPh), _ph, true];
-
-            if !(_kidneyPressure) then {
-                _unit setVariable [QGVAR(kidneyPressure), true, true];
-                [_unit, "KIDNEY", 15, 1200, 30, 0, 15] call ACEFUNC(medical_status,addMedicationAdjustment);
+                if !(_kidneyArrest) then {
+                    private _random = random 1;
+        
+                    if (_random >= 0.75) then {
+                        [QACEGVAR(medical,FatalVitals), _unit] call CBA_fnc_localEvent;
+                        _unit setVariable [QGVAR(kidneyArrest), true, true];
+                    };
+                };
+            };
+            case (_ph >= 1000): {
+                _ph = (_ph - 30) max 0;
+                _unit setVariable [QGVAR(externalPh), _ph, true];
+    
+                if !(_kidneyPressure) then {
+                    _unit setVariable [QGVAR(kidneyPressure), true, true];
+                    [_unit, "KIDNEY", 15, 1200, 30, 0, 15] call ACEFUNC(medical_status,addMedicationAdjustment);
+                };
+            };
+            default {
+                _ph = (_ph - 60) max 0;
+                _unit setVariable [QGVAR(externalPh), _ph, true];
             };
         };
-
-        _ph = (_ph - 60) max 0;
-        _unit setVariable [QGVAR(externalPh), _ph, true];
     }, 20, [_unit]] call CBA_fnc_addPerFrameHandler;
 };
