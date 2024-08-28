@@ -13,7 +13,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     LLSTRING(SIMPLEMED_ENABLE),
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [true],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
