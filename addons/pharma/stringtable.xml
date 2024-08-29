@@ -3673,9 +3673,7 @@
             <Japanese>有効にすると、EACAが体内から無くなるまで"縫合"をします。 \n無効にすると、EACAが判定済の最後の包帯創傷に"縫合"を適用した後に、その作用を終了します。</Japanese>
             <Spanish>Si el EACA esta permitido, seguirá suturando hasta que desaparezca del organismo.\n Si el EACA no está permitido, dejará de funcionar después de suturar la última herida que pueda encontrar</Spanish>
             <Portuguese>Se habilitado, o EACA continuará suturando até que esteja fora do seu sistema\nSe desabilitado, o funcionamento do EACA será interrompido assim que suturar o último ferimento</Portuguese>
-            <French>
-Si activé, l'EACA continuera de suturer jusqu'à ce qu'il soit éliminé du système.\n
-Si désactivé, l'EACA cessera de fonctionner après avoir suturé le dernier bandage qu'il peut trouver.</French>
+            <French>Si activé, l'EACA continuera de suturer jusqu'à ce qu'il soit éliminé du système.\nSi désactivé, l'EACA cessera de fonctionner après avoir suturé le dernier bandage qu'il peut trouver.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA">
             <English>EACA Cycle Time</English>
