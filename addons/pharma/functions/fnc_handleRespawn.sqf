@@ -36,7 +36,7 @@ params ["_unit","_dead"];
     {
         _x params ["_medication"];
 
-        if (_medication in ["Epinephrine", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
+        if (_medication in ["Epinephrine", "EpinephrineIV", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
             _action = true;
         };
     } forEach (_medicationArray);

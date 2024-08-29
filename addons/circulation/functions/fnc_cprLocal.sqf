@@ -75,6 +75,10 @@ private _fnc_advRhythm = {
         {
             _epiBoost = 1.5;
         };
+        case "EpinephrineIV":
+        {
+            _epiBoost = 1.5;
+        };
         case "Amiodarone":
         {
             _amiBoost = _amiBoost + (random [8,14,20]);
