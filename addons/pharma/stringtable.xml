@@ -3213,9 +3213,7 @@
             <English>If enabled TXA will keep bandaging until it's out of your system\nIf disabled TXA will stop working after bandaging the last wound it can find</English>
             <Japanese>有効にすると、TXAが体内から無くなるまで傷口に"包帯"を巻きます。 \n無効にすると、TXAが判定済の最後の創傷に"包帯"を適用した後に、その作用を終了します。</Japanese>
             <Spanish>Si el ATX esta permitido, seguirá vendando hasta que desaparezca del organismo\nSi el ATX no esta permitido, dejará de funcionar después de vendar la última herida que pueda encontrar</Spanish>
-            <French>
-Si activé, le TXA continuera à bander jusqu'à ce qu'il soit éliminé du système.\n
-Si désactivé, le TXA cessera de fonctionner après avoir bandé la dernière plaie qu'il peut trouver.</French>
+            <French>Si activé, le TXA continuera à bander jusqu'à ce qu'il soit éliminé du système.\nSi désactivé, le TXA cessera de fonctionner après avoir bandé la dernière plaie qu'il peut trouver.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_TXA">
             <English>TXA Cycle Time</English>
