@@ -119,7 +119,7 @@ private _fnc_clotWound = {
 
     if (_openWounds isEqualTo createHashmap) exitWith {}; // Exit when hashmap not initialized (Will not work when hashmap is set, cause ace only changes value of "woundCount" to 0)
     if (_coagulationFactor <= 0) exitWith {}; // Exit when no coagFactors left
-    if (_unit getVariable [QACEGVAR(medical,bloodVolume), 6.0] < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
+    if (GET_BLOOD_VOLUME_LITERS(_unit) < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
     if ((_pulse < 20) && GVAR(coagulation_requireHR)) exitWith {}; // Has pulse & require setting
 
     private _shuffledKeys = keys _openWounds call BIS_fnc_arrayShuffle; // Shuffel Keys to switch bodypart after each bandage for on_all_Bodyparts setting

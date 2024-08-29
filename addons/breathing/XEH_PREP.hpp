@@ -1,8 +1,6 @@
 PREP(canUseBVM);
 PREP(checkBreathing);
 PREP(checkPulseOximeter);
-PREP(getETCo2);
-PREP(getRespiratoryRate);
 PREP(fullHealLocal);
 PREP(gui_updateBodyImage);
 PREP(gui_updateInjuryListPart);

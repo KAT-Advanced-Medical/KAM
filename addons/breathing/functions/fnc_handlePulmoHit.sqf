@@ -36,7 +36,6 @@ if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
     if (_unit getVariable [QGVAR(pneumothorax), 0] isEqualto 0 && !(_unit getVariable [QGVAR(tensionpneumothorax), false])) then { // Initial pneumothorax
         // add breathing sound
         [_unit, 0.2] call ACEFUNC(medical_status,adjustPainLevel);
-        [_unit] call FUNC(handleBreathing);
         _unit setVariable [QGVAR(pneumothorax), 1, true];
         _unit setVariable [QGVAR(deepPenetratingInjury), true, true];
         _unit setVariable [QGVAR(activeChestSeal), false, true];

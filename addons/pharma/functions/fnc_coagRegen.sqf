@@ -33,7 +33,7 @@ if !(GVAR(coagulation)) exitWith {};
         [_idPFH] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (_unit getVariable [QACEGVAR(medical,bloodVolume), 6.0] < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
+    if (GET_BLOOD_VOLUME_LITERS(_unit) < GVAR(coagulation_requireBV)) exitWith {}; // Blood volume check
     if ((_pulse < 20) && GVAR(coagulation_requireHR)) exitWith {}; // Has pulse & require setting
 
     private _currentCoagFactors = _unit getVariable [QGVAR(coagulationFactor), 30];

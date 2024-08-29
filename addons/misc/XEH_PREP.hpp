@@ -31,6 +31,8 @@ PREP(incompatibilityWarning);
 PREP(init);
 PREP(removeIVbag);
 PREP(setUnconscious);
+PREP(setTourniquetTime);
+PREP(removeTourniquetTime);
 PREP(slingArmband);
 PREP(stopCarryingPrompt);
 PREP(stringToArray);
