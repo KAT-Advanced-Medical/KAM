@@ -116,7 +116,7 @@ private _fnc_onConfirm = {
     private _curBloodVol = GET_BLOOD_VOLUME_LITERS(_unit);
     private _sliderValue = sliderPosition (_display displayCtrl 26423);
     _sliderValue = parseNumber (_sliderValue toFixed 2);
-    REDUCE_TOTAL_BLOOD_VOLUME(_unit,_sliderVolume); 
+    REDUCE_TOTAL_BLOOD_VOLUME(_unit,((_curBloodVol - _sliderValue) * 1000)); 
 };
 
 _display displayAddEventHandler ["Unload", _fnc_onUnload];
