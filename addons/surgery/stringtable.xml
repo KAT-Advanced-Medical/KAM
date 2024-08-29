@@ -1138,50 +1138,62 @@
         <Key ID="STR_KAT_Surgery_REBOA_ACTION_MEDLEVEL">
             <English>Allow Reboa</English>
             <Japanese>REBOAの許可</Japanese>
+            <French>Niveau médical requis pour le REBOA</French>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_LOCATION">
             <English>Locations for REBOA</English>
             <Japanese>REBOAが使用できる場所</Japanese>
+            <French>Emplacements du REBOA</French>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_TIMER">
             <English>Time to perform REBOA actions</English>
             <Japanese>REBOA各動作の所要時間</Japanese>
+            <French>Temps nécessaire pour effectuer les actions du REBOA</French>
         </Key>
         <Key ID="STR_KAT_Surgery_REBOA_TIMER_DESC">
             <English>Sets how long it takes to perform REBOA actions (Placing, advancing, Removing)</English>
             <Japanese>REBOAの各動作(挿入、前進、抜去)にかかる時間を設定します</Japanese>
+            <French>Défini le temps nécessaire pour effectuer les actions du REBOA (placement, avancée, retrait)</French>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_ACTION_MEDLEVEL">
             <English>Allow Ultrasound</English>
             <Japanese>超音波スキャナーの許可</Japanese>
+            <French>Niveau médical requis pour effectuer un ultrason</French>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_LOCATION">
             <English>Locations for Ultrasound</English>
             <Japanese>超音波スキャナーが使用できる場所</Japanese>
+            <French>Emplacements de l'ultrason</French>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_TIMER">
             <English>Time to perform Ultrasound actions</English>
             <Japanese>超音波スキャナーの所要時間</Japanese>
+            <French>Temps nécessaire pour effectuer les actions de l'ultrason</French>
         </Key>
         <Key ID="STR_KAT_Surgery_ULTRASOUND_TIMER_DESC">
             <English>Sets how long it takes to perform an ultrasound exam</English>
             <Japanese>超音波スキャナーの動作にかかる時間を設定します</Japanese>
+            <French>Défini le temps nécessaire pour effectuer une examination à l'ultrason</French>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_ACTION_MEDLEVEL">
             <English>Allow Pericardial Tap</English>
             <Japanese>心膜穿刺術の許可</Japanese>
+            <French>Niveau médical requis pour le prélèvement péricardique</French>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_LOCATION">
             <English>Locations for Pericardial Tap</English>
             <Japanese>心膜穿刺術が使用できる場所</Japanese>
+            <French>Emplacements du prélèvement péricardique</French>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_TIMER">
             <English>Time to perform Pericardial Tap</English>
             <Japanese>心膜穿刺術の所要時間</Japanese>
+            <French>Temps nécessaire pour effectuer le prélèvement péricardique</French>
         </Key>
         <Key ID="STR_KAT_Surgery_PERICARDIALTAP_TIMER_DESC">
             <English>Sets how long it takes to perform a pericardial tap</English>
             <Japanese>心膜穿刺術にかかる時間を設定します</Japanese>
+            <French>Défini le temps nécessaire pour effectuer le prélèvement péricardique</French>
         </Key>
         <Key ID="STR_KAT_Surgery_BREATH_CHECK_MEDLEVEL">
             <English>Allow Breath Check</English>
