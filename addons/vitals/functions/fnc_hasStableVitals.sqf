@@ -17,7 +17,7 @@
 
 params ["_unit"];
 
-private _bloodVolume = GET_BLOOD_VOLUME(_unit);
+private _bloodVolume = GET_BLOOD_VOLUME_LITERS(_unit);
 if (_bloodVolume < ACEGVAR(medical,const_stableVitalsBloodThreshold)) exitWith { false };
 
 if IN_CRDC_ARRST(_unit) exitWith { false };
@@ -35,7 +35,7 @@ if (_bloodPressureL < 50 || {_bloodPressureH < 60}) exitWith { false };
 private _heartRate = GET_HEART_RATE(_unit);
 if (_heartRate < 40) exitWith { false };
 
-private _o2 = _unit getVariable [QEGVAR(breathing,airwayStatus), 100];
+private _o2 = GET_SPO2(_unit);
 if (_o2 < EGVAR(breathing,Stable_spo2)) exitWith { false };
 
 true

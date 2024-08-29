@@ -19,10 +19,8 @@
 
 params ["_patient", "_ph", "_coagulation"];
 
-private _current = _patient getVariable [QGVAR(pH), 1500];
-private _final = (_current + _ph) max 0;
-_final min 1500;
-_patient setVariable [QGVAR(pH), (_final), true];
+private _current = _patient getVariable [QGVAR(externalPh), 0];
+_patient setVariable [QGVAR(externalPh), ((_current + _ph) max 0), true];
 
 private _coagFactorMax = missionNamespace getVariable [QGVAR(coagulation_factor_limit), 60];
 private _factor = _patient getVariable [QGVAR(coagulationFactor), 30];
