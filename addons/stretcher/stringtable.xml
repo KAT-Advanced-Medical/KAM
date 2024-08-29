@@ -186,5 +186,8 @@
             <English>Packing stretcher...</English>
             <Polish>Pakowanie noszy...</Polish>
         </Key>
+        <Key ID="STR_KAT_Stretcher_KAT_HeliStretcher">
+            <English>KAT Helistretcher</English>
+        </Key>
     </Package>
 </Project>

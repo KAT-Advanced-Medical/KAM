@@ -185,33 +185,40 @@ class CfgVehicles {
             };
         };
         class ACE_SelfActions {
-            class KAT_DeployStretcher {
-                displayName = CSTRING(DeployHeliStretcher);
-                condition = QUOTE(_player call FUNC(canDeployHeliStretcher));
-                statement = QUOTE(_target call FUNC(deployHeliStretcher));
-                icon = QPATHTOF(ui\downarrow.paa);
+            class KAT_HeliStretcher {
+
+                displayName = CSTRING(KAT_HeliStretcher);
+                icon = QPATHTOF(ui\stretcher.paa);
+
+                class KAT_DeployStretcher {
+                    displayName = CSTRING(DeployHeliStretcher);
+                    condition = QUOTE(_player call FUNC(canDeployHeliStretcher));
+                    statement = QUOTE(_target call FUNC(deployHeliStretcher));
+                    icon = QPATHTOF(ui\downarrow.paa);
+                };
+
+                class KAT_LowerStretcher {
+                    displayName = CSTRING(LowerHeliStretcher);
+                    condition = QUOTE(_target call FUNC(canAdjustRopes));
+                    statement = QUOTE(_target call FUNC(lowerHeliStretcher));
+                    icon = QPATHTOF(ui\downarrow.paa);
+                };
+
+                class KAT_RaiseStretcher {
+                    displayName = CSTRING(RaiseHeliStretcher);
+                    condition = QUOTE(_target call FUNC(canAdjustRopes));
+                    statement = QUOTE(_target call FUNC(raiseHeliStretcher));
+                    icon = QPATHTOF(ui\uparrow.paa);
+                };
+
+                class KAT_RetractStretcher {
+                    displayName = CSTRING(RetractHeliStretcher);
+                    condition = QUOTE(_target call FUNC(canAdjustRopes));
+                    statement = QUOTE(_target call FUNC(retractHeliStretcher));
+                    icon = QPATHTOF(ui\uparrow.paa);
+                };
             };
 
-            class KAT_LowerStretcher {
-                displayName = CSTRING(LowerHeliStretcher);
-                condition = QUOTE(_target call FUNC(canAdjustRopes));
-                statement = QUOTE(_target call FUNC(lowerHeliStretcher));
-                icon = QPATHTOF(ui\downarrow.paa);
-            };
-
-            class KAT_RaiseStretcher {
-                displayName = CSTRING(RaiseHeliStretcher);
-                condition = QUOTE(_target call FUNC(canAdjustRopes));
-                statement = QUOTE(_target call FUNC(raiseHeliStretcher));
-                icon = QPATHTOF(ui\uparrow.paa);
-            };
-
-            class KAT_RetractStretcher {
-                displayName = CSTRING(RetractHeliStretcher);
-                condition = QUOTE(_target call FUNC(canAdjustRopes));
-                statement = QUOTE(_target call FUNC(retractHeliStretcher));
-                icon = QPATHTOF(ui\uparrow.paa);
-            };
         };
     };
 };

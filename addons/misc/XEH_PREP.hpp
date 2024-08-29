@@ -26,7 +26,6 @@ PREP(groupID);
 PREP(handleRespawn);
 PREP(handleTourniquetEffects);
 PREP(handleUnconscious);
-PREP(hasStableVitals);
 PREP(incompatibilityWarning);
 PREP(init);
 PREP(removeIVbag);
