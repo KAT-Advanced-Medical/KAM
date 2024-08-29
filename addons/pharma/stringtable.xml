@@ -3328,8 +3328,7 @@
             <English>Allow coagulation to affect AI units.\nEvery other value will still be required if turned on. (May cause lag if many AI is present)</English>
             <Japanese>凝固がAIに影響するようにします。\nONにしても他の値は必要です。(多くのAIが存在する場合、ラグが発生する可能性があります。）</Japanese>
             <Spanish>Permitir que la coaguación afecte a las unidades de IA. Todos los demás valores seguirán siendo necesarios si se activan. (Puede causar lag si hay muchas IA presentes)</Spanish>
-            <French>Autoriser la coagulation à affecter les unités IA.
-\nTous les autres paramètres seront toujours nécessaires si cette option est activée. (Peut entraîner un lag si de nombreuses IA sont présentes.)</French>
+            <French>Autoriser la coagulation à affecter les unités IA.\nTous les autres paramètres seront toujours nécessaires si cette option est activée. (Peut entraîner un lag si de nombreuses IA sont présentes.)</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock">
             <English>Tournique Blocks Blood Clotting</English>
