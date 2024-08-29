@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [cursorTarget] call kat_misc_fnc_attachStretcher;
+ * [cursorTarget] call kat_stretcher_fnc_attachStretcher;
  *
  * Public: No
  */
@@ -24,7 +24,7 @@ private _actions = [];
 {
     private _type = typeOf _x;
     private _name = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
-    private _uniqueName = format ["kat_misc_%1", _type];
+    private _uniqueName = format ["kat_stretcher_%1", _type];
     if (isArray (configFile >> "CfgVehicles" >> _type >> "stretcherPos")) then {
         _actions pushBack [
             [

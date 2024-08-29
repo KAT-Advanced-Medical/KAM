@@ -1,0 +1,17 @@
+PREP(assemble_deployStretcher);
+PREP(assemble_canDeployStretcher);
+PREP(attachHeliStretcher);
+PREP(attachStretcher);
+PREP(canAdjustRopes);
+PREP(canAttachHeliStretcher);
+PREP(canDeployHeliStretcher);
+PREP(canDetachHeliStretcher);
+PREP(canPackIntoBackpack);
+PREP(canPackIntoBag);
+PREP(deployHeliStretcher);
+PREP(detachHeliStretcher);
+PREP(lowerHeliStretcher);
+PREP(packIntoBackpack);
+PREP(packIntoBag);
+PREP(raiseHeliStretcher);
+PREP(retractHeliStretcher);
