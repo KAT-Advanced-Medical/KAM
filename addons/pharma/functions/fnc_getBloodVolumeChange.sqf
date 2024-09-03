@@ -36,7 +36,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0]];
     private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16);
-    private _hypothermia = missionNameSpace getVariable [QEGVAR(hypothermia,hypothermiaActive), false];
+    private _hypothermia = missionNamespace getVariable [QEGVAR(hypothermia,hypothermiaActive), false];
 
     if (GET_HEART_RATE(_unit) < 20) then {
         _flowCalculation = _flowCalculation / 1.5;

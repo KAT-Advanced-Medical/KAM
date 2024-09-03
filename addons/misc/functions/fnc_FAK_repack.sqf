@@ -28,7 +28,7 @@ private _fnc_arrayToRemoveInvItem = {
         {
             _unit removeItem (_x select 0);
         } 
-    } foreach _array;
+    } forEach _array;
 };
 
 private _fnc_getUnitContainer = {
@@ -65,17 +65,17 @@ private _max = 0;
 switch (_type) do {
     case 0: { // IFAK
         _FAKToAdd = "kat_IFAK";
-        _itemList = missionNameSpace getVariable [QGVAR(IFAKContents), []];
+        _itemList = missionNamespace getVariable [QGVAR(IFAKContents), []];
         _max = 15;
     };
     case 1: { // AFAK
         _FAKToAdd = "kat_AFAK";
-        _itemList = missionNameSpace getVariable [QGVAR(AFAKContents), []];
+        _itemList = missionNamespace getVariable [QGVAR(AFAKContents), []];
         _max = 63;
     };
     default { // MFAK
         _FAKToAdd = "kat_MFAK";
-        _itemList = missionNameSpace getVariable [QGVAR(MFAKContents), []];
+        _itemList = missionNamespace getVariable [QGVAR(MFAKContents), []];
         _max = 255;
     };
 };

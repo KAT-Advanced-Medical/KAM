@@ -27,7 +27,7 @@ if (_item isEqualTo "Larynxtubus") then {
     _patient call FUNC(handlePuking);
 };
 
-if !(GVAR(ReusableAirwayItems)) exitwith {};
+if !(GVAR(ReusableAirwayItems)) exitWith {};
 
 if (_item isEqualTo "Larynxtubus") then {
     [_medic, "kat_larynx"] call ACEFUNC(common,addToInventory);

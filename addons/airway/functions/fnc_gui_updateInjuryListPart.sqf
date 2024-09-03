@@ -28,6 +28,6 @@ if (_target getVariable [QGVAR(airway), false] && _selectionN isEqualTo 0) then 
     private _a = _target getVariable [QGVAR(airway_item), ""];
     if !(_a isEqualTo "") then {
         private _text = format [LSTRING(%1_Display), _a];
-        _entries pushback [localize _text, [0.1, 1, 1, 1]];
+        _entries pushBack [localize _text, [0.1, 1, 1, 1]];
     };
 };

@@ -14,7 +14,7 @@
  * NONE
  *
  * Example:
- * [logic, getpos player, 50, 20, 1] call kat_chemical_fnc_gasCheck;
+ * [logic, getPos player, 50, 20, 1] call kat_chemical_fnc_gasCheck;
  *
  * Public: No
  */
@@ -42,7 +42,7 @@ private _checkPlayers = {
             continue;
         };
 
-        _position = if ((toString (_position) != toString (getpos _logic))) then {getpos _logic} else {_position};
+        _position = if ((toString (_position) != toString (getPos _logic))) then {getPos _logic} else {_position};
         _logic setVariable [QGVAR(gas_position), _position, true];
 
         private _distance = _x distance _position;
