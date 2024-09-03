@@ -25,7 +25,7 @@ if (_player == _target) exitWith {
         [LLSTRING(HandWarmer_None), 1.5, _target] call ACEFUNC(common,displayTextStructured);
     };
 
-    private _output = format [LSTRING(Self_Handwarmer_Output), 
+    private _output = format [LLSTRING(Self_Handwarmer_Output), 
         [(format [LLSTRING(HandWarmer_Body), (random [10, _body, 60]) toFixed 0]), LLSTRING(HandWarmer_Body_None)] select (_body < 10),
         [(format [LLSTRING(HandWarmer_LArm), (random [10, _larm, 60]) toFixed 0]), LLSTRING(HandWarmer_LArm_None)] select (_larm < 10),
         [(format [LLSTRING(HandWarmer_RArm), (random [10, _rarm, 60]) toFixed 0]), LLSTRING(HandWarmer_RArm_None)] select (_rarm < 10),
@@ -40,7 +40,7 @@ if (({_x == 0} count _warmers) == 6) exitWith {
         [LLSTRING(HandWarmer_None), 1.5, _target] call ACEFUNC(common,displayTextStructured);
 };
 
-private _output = format [LSTRING(Other_Handwarmer_Output), 
+private _output = format [LLSTRING(Other_Handwarmer_Output), 
     [(format [LLSTRING(HandWarmer_Body), (random [10, _body, 60]) toFixed 0]), LLSTRING(HandWarmer_Body_None)] select (_body < 10),
     [(format [LLSTRING(HandWarmer_LArm), (random [10, _larm, 60]) toFixed 0]), LLSTRING(HandWarmer_LArm_None)] select (_larm < 10),
     [(format [LLSTRING(HandWarmer_RArm), (random [10, _rarm, 60]) toFixed 0]), LLSTRING(HandWarmer_RArm_None)] select (_rarm < 10),
