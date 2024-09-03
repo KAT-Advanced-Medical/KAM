@@ -23,7 +23,7 @@
 params ["_unit", "_allDamages", "", "_ammo"];
 _allDamages select 0 params ["_damage", "_bodyPart"];
 
-if (!(GVAR(enable)) || !(_bodyPart isEqualTo "Body") || !(_ammo isKindOF "BulletBase")) exitWith {};
+if (!(GVAR(enable)) || !(_bodyPart isEqualTo "Body") || !(_ammo isKindOf "BulletBase")) exitWith {};
 //Other mods can utilise KAT_Pneumothorax_Exclusion variable to prevent Pneumothorax from happening
 if ((_damage < GVAR(pneumothoraxDamageThreshold)) || (_unit getVariable ["KAT_Pneumothorax_Exclusion", false])) exitWith {};
 
@@ -33,7 +33,7 @@ if (GVAR(pneumothoraxDamageThreshold_TakenDamage)) then {
 };
 
 if (floor (random 100) < (GVAR(pneumothoraxChance) + _chanceIncrease)) then {
-    if (_unit getVariable [QGVAR(pneumothorax), 0] isEqualto 0 && !(_unit getVariable [QGVAR(tensionpneumothorax), false])) then { // Initial pneumothorax
+    if (_unit getVariable [QGVAR(pneumothorax), 0] isEqualTo 0 && !(_unit getVariable [QGVAR(tensionpneumothorax), false])) then { // Initial pneumothorax
         // add breathing sound
         [_unit, 0.2] call ACEFUNC(medical_status,adjustPainLevel);
         _unit setVariable [QGVAR(pneumothorax), 1, true];

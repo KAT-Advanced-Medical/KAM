@@ -34,7 +34,7 @@ if (!GETVAR(_patient,ACEGVAR(dragging,ignoreWeightCarry),false) && {
 private _timer = CBA_missionTime;
 
 // add a primary weapon if the unit has none.
-if (primaryWeapon _medic isEqualto "") then {
+if (primaryWeapon _medic isEqualTo "") then {
     _medic addWeapon "ACE_FakePrimaryWeapon";
 };
 

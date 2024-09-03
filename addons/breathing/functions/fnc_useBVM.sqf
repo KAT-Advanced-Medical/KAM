@@ -182,7 +182,7 @@ GVAR(BVM_timeOut) = true;
                 _patient setVariable [QGVAR(oxygenTankConnected), false, true];
             };
 
-            playsound3D [QPATHTOF_SOUND(audio\squeeze_BVM.ogg), _patient, false, getPosASL _patient, 8, 1, 15];
+            playSound3D [QPATHTOF_SOUND(audio\squeeze_BVM.ogg), _patient, false, getPosASL _patient, 8, 1, 15];
 
             [{ // Squeeze BVM every 5 seconds
                 params ["_patient"];

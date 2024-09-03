@@ -24,7 +24,7 @@ private _mouseOver = GETMVAR(bis_fnc_curatorObjectPlaced_mouseOver,[""]);
 if ((_mouseOver select 0) != "OBJECT") then {
     [ACELSTRING(zeus,NothingSelected)] call FUNC(showMessage);
 } else {
-    private _unit = effectivecommander (_mouseOver select 1);
+    private _unit = effectiveCommander (_mouseOver select 1);
     if !(_unit isKindOf "CAManBase") then {
         [ACELSTRING(zeus,OnlyInfantry)] call FUNC(showMessage);
     } else {

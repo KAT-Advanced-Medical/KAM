@@ -32,13 +32,13 @@ if ((goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), [
             params ["_args", "_pfhHandler"];
             _args params["_unit", "_logic", "_gastype", "_radius_max", "_isinGas"];
 
-            if !(_isinGas) exitwith {
+            if !(_isinGas) exitWith {
                 [_pfhHandler] call CBA_fnc_removePerFrameHandler;
             };
 
             private _timeleft = _unit getVariable [QGVAR(gasmask_durability), 10];
             _pos = _logic getVariable [QGVAR(gas_position), [0, 0, 0]];
-            if (_unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active), false]) || isNull _logic) exitwith {
+            if (_unit distance _pos > _radius_max || !(_logic getVariable[QGVAR(gas_active), false]) || isNull _logic) exitWith {
                 _unit setVariable [QGVAR(enteredPoison), false, true];
                 _isinGas = false;
             };

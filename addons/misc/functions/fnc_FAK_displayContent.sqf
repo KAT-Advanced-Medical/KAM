@@ -29,7 +29,7 @@ private _firstnline = "";
 private _nline = "<br/>";
 private _itemColor = "";
 private _slotColor = "";
-private _slotNameArray = missionNameSpace getVariable [QGVAR(FAKSlotNames), []];
+private _slotNameArray = missionNamespace getVariable [QGVAR(FAKSlotNames), []];
 private _slotName = "";
 
 private _fnc_arrayToHexCode = {
@@ -53,19 +53,19 @@ private _fnc_arrayToHexCode = {
 
 switch (_fakType) do {
     case 0: { 
-        _fakContent = missionNameSpace getVariable [QGVAR(IFAKContents), []];
-        _slotColor = [(missionNameSpace getVariable [QGVAR(IFAK_Slot_Color), []])] call _fnc_arrayToHexCode;
-        _itemColor = [(missionNameSpace getVariable [QGVAR(IFAK_Item_Color), []])] call _fnc_arrayToHexCode;
+        _fakContent = missionNamespace getVariable [QGVAR(IFAKContents), []];
+        _slotColor = [(missionNamespace getVariable [QGVAR(IFAK_Slot_Color), []])] call _fnc_arrayToHexCode;
+        _itemColor = [(missionNamespace getVariable [QGVAR(IFAK_Item_Color), []])] call _fnc_arrayToHexCode;
     };
     case 1: { 
-        _fakContent = missionNameSpace getVariable [QGVAR(AFAKContents), []];
-        _slotColor = [(missionNameSpace getVariable [QGVAR(AFAK_Slot_Color), []])] call _fnc_arrayToHexCode;
-        _itemColor = [(missionNameSpace getVariable [QGVAR(AFAK_Item_Color), []])] call _fnc_arrayToHexCode;
+        _fakContent = missionNamespace getVariable [QGVAR(AFAKContents), []];
+        _slotColor = [(missionNamespace getVariable [QGVAR(AFAK_Slot_Color), []])] call _fnc_arrayToHexCode;
+        _itemColor = [(missionNamespace getVariable [QGVAR(AFAK_Item_Color), []])] call _fnc_arrayToHexCode;
     };
     default { 
-        _fakContent = missionNameSpace getVariable [QGVAR(MFAKContents), []];
-        _slotColor = [(missionNameSpace getVariable [QGVAR(MFAK_Slot_Color), []])] call _fnc_arrayToHexCode;
-        _itemColor = [(missionNameSpace getVariable [QGVAR(MFAK_Item_Color), []])] call _fnc_arrayToHexCode;
+        _fakContent = missionNamespace getVariable [QGVAR(MFAKContents), []];
+        _slotColor = [(missionNamespace getVariable [QGVAR(MFAK_Slot_Color), []])] call _fnc_arrayToHexCode;
+        _itemColor = [(missionNamespace getVariable [QGVAR(MFAK_Item_Color), []])] call _fnc_arrayToHexCode;
     };
 };
 
