@@ -21,5 +21,5 @@
 params ["_ctrl", "_target", "_selectionN", "_entries"];
 
 if (_target getVariable [QGVAR(recovery), false]) then {
-    _entries pushback [LLSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
+    _entries pushBack [LLSTRING(RecoveryPosition), [0.1, 1, 1, 1]];
 };

@@ -166,18 +166,21 @@
             <English>Combat Wound Medication Pill Pack&lt;br/&gt;Used to suppress minor pain and relieve blood incompatibility symptoms</English>
             <Japanese>戦闘傷病治療薬パック&lt;br/&gt;軽度の痛みを抑え、血液不適合による症状を緩和するために使用される</Japanese>
             <Spanish>Paquete de medicación para heridas de combate. Se utiliza para suprimir el dolor leve y aliviar los síntomas de incompatibilidad sanguínea</Spanish>
+            <French>Pack de Pilules Médicales pour Blessures de Combat &lt;/br&gt; Utilisé pour supprimer les douleurs mineures et soulager les symptômes d'incompatibilité sanguine.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Painkillers_Box_Display">
             <English>Combat Pill Pack</English>
             <Japanese>戦闘治療薬パック</Japanese>
             <Spanish>Paquete de Comprimidos de Combate</Spanish>
             <Portuguese>Comprimidos de Combate</Portuguese>
+            <French>Pack de pilules de combat</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Give_CWMP">
             <English>Use CWMP</English>
             <Japanese>戦闘傷病治療薬を投与</Japanese>
             <Spanish>Usar Comprimidos de Combate</Spanish>
             <Portuguese>Utilizar Comprimidos de Combate</Portuguese>
+            <French>Utiliser le PMBC</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Carbonate_DescShort">
             <English>Used to restore consciousness</English>
@@ -256,6 +259,7 @@
             <English>Volatile anesthetic, used to suppress moderate pain</English>
             <Japanese>揮発性麻酔薬、 中程度の痛みを抑えるのに使用される</Japanese>
             <Spanish>Anestésico inhalable, utilizado para suprimir el dolor moderado</Spanish>
+            <French>Anesthésique volatil, utilisé pour supprimer les douleurs modérées</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Naloxone_DescShort">
             <English>Used to reverse opioid overdoses</English>
@@ -1657,6 +1661,7 @@
             <English>Dissociative anesthetics, used to suppress severe pain</English>
             <Japanese>解離性麻酔薬、 重度の痛みを抑えるのに使用される</Japanese>
             <Spanish>Anestésico disociativo, utilizado para suprimir el dolor severo</Spanish>
+            <French>Anesthésiques dissociatifs, utilisés pour supprimer les douleurs sévères</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Fentanyl">
             <English>Push Fentanyl</English>
@@ -1693,6 +1698,7 @@
             <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia silnego bólu</Polish>
             <Japanese>オピオイド鎮痛薬、 重度の痛みを抑えるのに使用される</Japanese>
             <Spanish>Analgésico opioide, utilizado para suprimir el dolor severo</Spanish>
+            <French>Analgésique opioïde, utilisé pour supprimer les douleurs sévères</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Nalbuphine">
             <English>Push Nalbuphine</English>
@@ -1729,6 +1735,7 @@
             <Polish>Opioidowy środek przeciwbólowy, stosowany do tłumienia umiarkowanego bólu</Polish>
             <Japanese>オピオイド鎮痛薬、 中程度の痛みを抑えるのに使用される</Japanese>
             <Spanish>Analgésico opioide, utilizado para suprimir el dolor moderador</Spanish>
+            <French>Analgésique opioïde, utilisé pour supprimer les douleurs modérées</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_reorientationChance">
             <English>Maximum Reorientation Success Chance</English>
@@ -2837,6 +2844,7 @@
             <Japanese>疲労の防止と回復に! 疲労をポンと取ってくれます。 中程度の鎮痛作用がある。</Japanese>
             <Polish>Środek zwiększający wydolność, stosowany do tłumienia umiarkowanego bólu</Polish>
             <Spanish>Fármaco para mejorar el rendimiento, utilizado para suprimir el dolor moderado</Spanish>
+            <French>Drogue améliorant les performances, utilisée pour supprimer les douleurs modérées</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Pervitin">
             <English>Take Pervitin</English>
@@ -2997,6 +3005,7 @@
             <Japanese>中枢神経を刺激し、活力を与える</Japanese>
             <Polish>Stymuluje centralny układ nerwowy i dodaje energii</Polish>
             <Spanish>Estimula el sistema nervioso central y aporta energía.</Spanish>
+            <French>Stimule le système nerveux central et revitalise</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Caffeine">
             <English>Take Caffeine</English>
@@ -3186,219 +3195,262 @@
             <English>Allow Stacking</English>
             <Japanese>重複の許可</Japanese>
             <Spanish>Permitir acumulación</Spanish>
+            <French>Autoriser l'empilage</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA_DESC">
             <English>If enabled TXA will be stackable and double it's efficiency</English>
             <Japanese>有効にすると、TXAの重複が可能になり、効率が2倍になる。</Japanese>
             <Spanish>Si el ATX esta permitido, se podrá acumular y duplicará su eficiencia</Spanish>
+            <French>Si activé, le TXA sera empilable et doublera son efficacité</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_TXA">
             <English>Keep Bandaging Until Out Of System</English>
             <Japanese>体内に効果が無くなるまで"包帯"を適用する</Japanese>
             <Spanish>Mantiene el Vendaje hasta que desaparezca del organismo</Spanish>
+            <French>Continuer à bander jusqu'à ce que le produit soit éliminé du système</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_TXA_DESC">
             <English>If enabled TXA will keep bandaging until it's out of your system\nIf disabled TXA will stop working after bandaging the last wound it can find</English>
             <Japanese>有効にすると、TXAが体内から無くなるまで傷口に"包帯"を巻きます。 \n無効にすると、TXAが判定済の最後の創傷に"包帯"を適用した後に、その作用を終了します。</Japanese>
             <Spanish>Si el ATX esta permitido, seguirá vendando hasta que desaparezca del organismo\nSi el ATX no esta permitido, dejará de funcionar después de vendar la última herida que pueda encontrar</Spanish>
+            <French>Si activé, le TXA continuera à bander jusqu'à ce qu'il soit éliminé du système.\nSi désactivé, le TXA cessera de fonctionner après avoir bandé la dernière plaie qu'il peut trouver.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_TXA">
             <English>TXA Cycle Time</English>
             <Japanese>TXAサイクル時間</Japanese>
             <Spanish>Ciclo de tiempo del ATX</Spanish>
+            <French>Temps de cycle du TXA</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_TXA_DESC">
             <English>The time it takes for TXA to close a wound</English>
             <Japanese>TXAが創傷を塞ぐのに掛かる時間</Japanese>
             <Spanish>El tiempo que tarda el ATX en cerrar una herida</Spanish>
+            <French>Temps requis pour permettre au TXA de refermer une blessure</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coagulation">
             <English>Coagulation Settings</English>
             <Japanese>凝固設定</Japanese>
             <Spanish>Configuración de la coagulación</Spanish>
             <Portuguese>Configurações de coagulação</Portuguese>
+            <French>Paramètres de coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR">
             <English>Require Heart Rate</English>
             <Japanese>心拍を要求する</Japanese>
             <Spanish>Requiere Ritmo Cardiaco</Spanish>
+            <French>Fréquence cardiaque requise</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireHR_DESC">
             <English>Should coagulation require a heart rate above 20BPM? (Doing CPR will keep HR above 20BPM)</English>
             <Japanese>凝固が作用するのに20BPM以上の心拍数を必要とさせます (CPRを行うことで心拍数は20BPM以上を保つことが出来ます)</Japanese>
             <Spanish>La coagulación requerirá de un ritmo cardiaco superior a 20 PPM (Hacer RCP mantendrá el RC por encima de 20 PPM)</Spanish>
+            <French>La coagulation nécessite-elle un fréquence cardiaque supérieure à 20 BPM ? (Effectuer la RCP gardera le FC au dessus de 20 BPM)</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireBV">
             <English>Required Blood Volume</English>
             <Japanese>血液量を要求する</Japanese>
             <Spanish>Volumen de sangre requerido</Spanish>
+            <French>Volume sanguin requis</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_requireBV_DESC">
             <English>Minimum volume of blood required for coagulation to work</English>
             <Japanese>凝固の作用に最低限必要な血液の量</Japanese>
             <Spanish>Volumen de sangre necesario para que la coagulación funcione</Spanish>
+            <French>Volume de sang minimal requis pour permettre à la coagulation de fonctionner</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_FactorCount">
             <English>Coagulation Factors</English>
             <Japanese>凝固因子</Japanese>
             <Spanish>Factores de Coagulación</Spanish>
+            <French>Facteurs de coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_FactorCount_DESC">
             <English>The amount of coagulation factors that get set on unit spawn &amp; be kept as limit for factor regeneration</English>
             <Japanese>ユニットのスポーン時に定義される凝固因子の量と、因子の再生限界値</Japanese>
             <Spanish>La cantidad de factores de coagulación que se establecen al spawnear y se mantienen como límite para la regeneración de factores</Spanish>
+            <French>La quantité de facteurs de coagulation définie lors de l’apparition de l'unité et conservée comme limite pour la régénération des facteurs.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time">
             <English>Clotting Cycle Time</English>
             <Japanese>凝血サイクル時間</Japanese>
             <Spanish>Duración del ciclo de coagulación</Spanish>
+            <French>Temps de cycle de coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_DESC">
             <English>The time between each wound clotting cycle that start wound clotting. (low number may cause lag)</English>
             <Japanese>創傷の凝血を開始する各凝血サイクル間の時間の長さ。(低い数値はラグを招く恐れがあります)</Japanese>
             <Spanish>El tiempo entre cada ciclo de coagulación de la herida que inicia la coagulación. (Un número bajo puede causar lag)</Spanish>
+            <French>Le temps entre chaque cycle de coagulation des plaies qui déclenche la coagulation. (Un nombre bas peut entraîner du lag)</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Minor">
             <English>Minor Wounds Clotting Time</English>
             <Japanese>小さな創傷の凝血時間</Japanese>
             <Spanish>Tiempo de coagulación de Heridas Leves</Spanish>
+            <French>Temps de coagulation des blessures mineures</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Medium">
             <English>Medium Wounds Clotting Time</English>
             <Japanese>中くらいの創傷の凝血時間</Japanese>
             <Spanish>Tiempo de coagulación de Heridas Medias</Spanish>
+            <French>Temps de coagulation des blessures moyennes</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Large">
             <English>Large Wounds Clotting Time</English>
             <Japanese>大きな創傷の凝血時間</Japanese>
             <Spanish>Tiempo de coagulación de Heridas Severas</Spanish>
+            <French>Temps de coagulation des blessures larges</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Time_Clotting_DESC">
-            <English>This time gets divided by 2, randomized &amp; added with the same value devided by 2. \n For example, if the value was set to 10s this would be one possible varriation: (random (10 / 2)) + (10 / 2) = 8s</English>
+            <English>This time gets divided by 2, randomized &amp; added with the same value devided by 2.\nFor example, if the value was set to 10s this would be one possible varriation: (random (10 / 2)) + (10 / 2) = 8s</English>
             <Japanese>この時間を2で割って、同じ値を2で割った値をランダムに加算する。\n例えば、値を10秒に設定した場合、次のようなバリエーションが考えられる: (ランダム値 (10秒 / 2)) + (10秒 / 2) = 8秒</Japanese>
             <Spanish>Este tiempo se divide entre 2, se aleatoriza y se suma con el mismo valor dividido por 2.\n Por ejemplo, si el valor se establece en 10 esto sería un posible resultado: ("al azar del 0 al" (10/2)) + (10/2) = 8s</Spanish>
+            <French>Ce temps est divisé par 2, randomisé et additionné à la même valeur divisée par 2. \nPar exemple, si une valeur est fixée à 10 secondes, une variation possible serait : (aléatoire (10 / 2)) + (10 / 2) = 8s</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenerate_Time">
             <English>Coagulation Factor Regeneration Cycle</English>
             <Japanese>凝固因子再生サイクル</Japanese>
             <Spanish>Ciclo de Regeneración del Factor de Coagulación</Spanish>
+            <French>Cycle de régénération des facteurs de coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_Factor_Regenerate_Time_DESC">
             <English>The time between coagulation factor regeneration checks. Will add +1 factor on successful check. Uses Setting: "Coagulation Factors" as limit.\n Note: If the limit is exceeded, this time will be used and then remove -1 factor until Setting: "Coagulation Factors" is reached. Tipp: TXA or EACA stop losing factors\nRequirements for regeneration to work:\n- No wound being clotted in the last cycle check from this setting\n- Setting: "Require Heart Rate"\n- Setting: "Required Blood Volume"</English>
             <Japanese>凝固因子再生チェックの間隔。チェックに成功すると因子が+1されます。設定 "凝固因子の限界値" を限界値として使用します。 \n注:制限を超えた場合、この時間が経過した後、設定"凝固因子の限界値"に達するまで因子を1つ取り除きます。 \nヒント: TXAまたはEACAは因子の消失を止めます。\n因子再生が機能するための条件: \n-ここで設定されたサイクル時間の最後のチェックで傷口が凝血していないこと \n-設定: "心拍を要求する" \n-設定: "血液量を要求する"</Japanese>
             <Spanish>Tiempo que transcurre entre cada revisión de la regeneración del factor de coagulación. Añade +1 factor si la revisión ha tenido éxito. Utiliza el ajuste "Factores de Coagulación" como límite.\n Nota: Si el limite es excedido, el tiempo será usado para retirar -1 factor hasta que el ajuste "Factor de Coagulación" se alcance. Consejo: ATX o EACA dejan de perder factores.\n Requisitos para que la regeneración funcione:\n- Ninguna herida coagulada en la última revisión del ciclo de este ajuste.\n- Ajuste: "Requiere Ritmo Cardíaco"\n- Ajuste: "Volumen de Sangre requerido" </Spanish>
+            <French>Le temps entre les vériofications de régénération des facteurs de coagulation. Ajoute +1 facteur en cas de vérification réussie. Utilise le paramètres : "Facteurs de coagulation" comme limite. \nRemarque : si la limite est dépassée, ce temps sera utilisé, puis -1 facteur sera retiré jusqu'à ce que le paramètre : "Facteurs de coagulation" soit atteint. Conseil :TXA ou EACA arrêtent la perte de facteurs.\nConditions nécessaires pour que la régénération fonctionne :\n- Aucune plaie en cours de coagulation au cours du dernier cycle de vérification de ce paramètres.\n- Paramètre : "Fréquence cardiaque requise"\n- Paramètre : "Volume sanguin requis"</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allowOnAI">
             <English>Affect AI</English>
             <Japanese>AIへの影響</Japanese>
             <Spanish>Afecta a la IA</Spanish>
+            <French>Affecte l'IA</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allowOnAI_DESC">
-            <English>Allow coagulation to affect AI units. \nEvery other value will still be required if turned on. (May cause lag if many AI is present)</English>
+            <English>Allow coagulation to affect AI units.\nEvery other value will still be required if turned on. (May cause lag if many AI is present)</English>
             <Japanese>凝固がAIに影響するようにします。\nONにしても他の値は必要です。(多くのAIが存在する場合、ラグが発生する可能性があります。）</Japanese>
             <Spanish>Permitir que la coaguación afecte a las unidades de IA. Todos los demás valores seguirán siendo necesarios si se activan. (Puede causar lag si hay muchas IA presentes)</Spanish>
+            <French>Autoriser la coagulation à affecter les unités IA.\nTous les autres paramètres seront toujours nécessaires si cette option est activée. (Peut entraîner un lag si de nombreuses IA sont présentes.)</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock">
             <English>Tournique Blocks Blood Clotting</English>
             <Japanese>止血帯による血液凝固の妨げ</Japanese>
             <Spanish>Torniquete Bloquea la Coagulación de la Sangre</Spanish>
+            <French>Le garrot bloque la coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_tourniquetBlock_DESC">
             <English>If enabled a applied tourniquet will stop wounds from being closed from coagulation on that bodypart</English>
             <Japanese>有効にすると、止血帯を適用中の部位で凝固によって傷口が塞がらないようになります。</Japanese>
             <Spanish>Si se activa, el torniquete aplicado impedirá que las heridas se cierren por coagulación en esa parte del cuerpo</Spanish>
+            <French>Si activé, un garrot appliqué empêchera les plaies de se fermer par coagulation sur cette partie du corps.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MinorWounds">
             <English>Affect Minor Wounds</English>
             <Japanese>小さな創傷への影響</Japanese>
             <Spanish>Afecta a Heridas Menores</Spanish>
+            <French>Affecter les blessures mineures</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MinorWounds_DESC">
             <English>Allow coagulation to affect minor wounds when clotting</English>
             <Japanese>小さな創傷に対して凝固が影響することを許可する</Japanese>
             <Spanish>Permitir que la coagulación afecte a heridas leves al coagularse</Spanish>
+            <French>Permettre à la coagulation d'affecter les blessures mineures lors de la coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MediumWounds">
             <English>Affect Medium Wounds</English>
             <Japanese>中くらいの創傷への影響</Japanese>
             <Spanish>Afecta a Heridas Medias</Spanish>
+            <French>Affecter les blessures moyennes</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_MediumWounds_DESC">
             <English>Allow coagulation to affect medium wounds when clotting</English>
             <Japanese>中くらいの創傷に対して凝固が影響することを許可する</Japanese>
             <Spanish>Permitir que la coagulación afecte a heridas medias al coagularse</Spanish>
+            <French>Permettre à la coagulation d'affecter les blessures moyennes lors de la coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_LargeWounds">
             <English>Affect Large Wounds</English>
             <Japanese>大きな創傷への影響</Japanese>
             <Spanish>Afecta a Heridas Severas</Spanish>
+            <French>Affecter les blessures larges</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_LargeWounds_DESC">
             <English>Allow coagulation to affect large wounds when clotting</English>
             <Japanese>大きな創傷に対して凝固が影響することを許可する</Japanese>
             <Spanish>Permite que la coagulación afecte a heridas severas al coagularse</Spanish>
+            <French>Permettre à la coagulation d'affecter les blessures larges lors de la coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_TXA_script">
             <English>Allow Additional TXA Bandaging</English>
             <Japanese>TXAによる追加の"包帯"を許可する</Japanese>
             <Spanish>Permitir el Vendaje ATX Adicional</Spanish>
+            <French>Permettre l'apport de bandages par le TXA</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_TXA_script_DESC">
             <English>If enabled TXA will keep all functionality and start bandaging wounds itself</English>
             <Japanese>有効にすると、TXAがすべての機能を保持し、自身に"包帯"を適用するようになります。</Japanese>
             <Spanish>Si el ATX esta permitido, mantendrá toda la funcionalidad y empezará a vendar las heridas por si mismo</Spanish>
+            <French>Si activé, le TXA gardera toutes ses fonctionnalités et bandera les plaies par lui-même</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_EACA_script">
             <English>Allow Additional EACA Stiching</English>
             <Japanese>EACAによる追加の"縫合"を許可する</Japanese>
             <Spanish>Permitir la Sutura EACA Adicional</Spanish>
+            <French>Permettre la suture par l'EACA</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_EACA_script_DESC">
             <English>If enabled EACA will keep all functionality and start stitching bandaged wounds</English>
             <Japanese>有効にすると、EACAがすべての機能を保持し、自身に"縫合"を適用するようになります。</Japanese>
             <Spanish>Si el EACA esta permitido, mantendrá la funcionalidad y empezará a suturar las heridas vendadas</Spanish>
+            <French>Si activé, l'EACA gardera toutes ses fonctionnalités et suturera les plaies par lui-même</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_on_all_Bodyparts">
             <English>Simultaneous Bodypart Coagulation</English>
             <Japanese>身体部位の同時凝固</Japanese>
             <Spanish>Coagulación Simultanea de las Partes del Cuerpo</Spanish>
+            <French>Coagulation simultanée de plusieurs membres</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_on_all_Bodyparts_DESC">
             <English>If enabled each bodypart will be treated simultaneously by coagulation.\nMeaning if you have a wound on the head and body they will both be treated in the same coagulation cycle.</English>
             <Japanese>有効にすると、各部位が同時に凝固処理されます。\nつまり、頭部と胴体に傷がある場合、同じ凝固サイクルで両方が治癒されます。</Japanese>
             <Spanish>Si se permite, cada parte del cuerpo se tratará simultáneamente mediante coagulación. \nEs decir, si tiene una herida en la cabeza y otra en el torso, ambas se tratarán en el mismo ciclo de coagulación.</Spanish>
+            <French>Si activé, chaque membre sera affecté simultanément par la coagulation.\nCela signifie que si une plaie est présente sur la tête et le torse, elles seront toutes deux traitées lors du même cycle de coagulation. </French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_coagulation_Factor_Limit">
             <English>Coagulation Factor Limit</English>
             <Japanese>凝固因子の限界値</Japanese>
             <Spanish>Limite del Factor de Coagulación</Spanish>
+            <French>Limite de facteurs de coagulation</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_coagulation_Factor_Limit_DESC">
             <English>The limit for how many coagulation factors can be present inside a units body at once. Meaning if you administer plasma this is the maximum attainable value.</English>
             <Japanese>血液凝固因子が一度にどれだけ体内に存在できるかの限界値。つまり、血漿を投与した場合における保持可能な因子の最大値。</Japanese>
             <Spanish>Limite del número de factores de coagulación que pueden estar presentes a la vez en el organismo de una unidad. Es decir, si administras plasma, éste es el valor máximo alcanzable.</Spanish>
+            <French>La limite du nombre de facteurs de coagulation pouvant être présents dans le corps d'une unité. Cela signifie que si du plasma est administré, il s'agira de la valeur maximale atteignable.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_clot_text">
             <English>Allow Clots To Be Shown in Menu</English>
             <Japanese>メニューに血栓を表示する</Japanese>
             <Spanish>Permitir que los Coágulos se muestren en el Menú</Spanish>
+            <French>Autoriser l'affichage des caillots dans le menu</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation_allow_clot_text_DESC">
             <English>If enabled, when coagulation is bandaging a wound it will add a interaction log to the medical menu.</English>
             <Japanese>有効にすると、凝固が傷に包帯を適用しているときに、医療メニューのログに追加されます。</Japanese>
             <Spanish>Si se activa, cuando la coagulación esté vendando una herida añadirá un registro de interacción al menú médico.</Spanish>
+            <French>Si activé, lorsque la coagulation bandera une plaie, une ligne sera ajoutée dans le journal des interactions du menu médical.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged">
             <English>Blood clotting temporarily closed a wound on %1</English>
             <Japanese>血液凝固が一時的に %1 の創傷を塞いだ</Japanese>
             <Spanish>La coagulación sanguínea cerró temporalmente una herida en %1</Spanish>
             <Portuguese>Coagulação estancou temporariamente um ferimento em %1</Portuguese>
+            <French>La coagulation a temporairement fermé une plaie sur %1</French>
         </Key>
         <Key ID="STR_KAT_Pharma_coagulation_Bandaged_TXA">
             <English>Blood clotting permanently closed a wound on %1</English>
             <Japanese>血液凝固が完全に %1 の創傷を塞いだ</Japanese>
             <Spanish>La coagulación sanguínea cerro permanentemente una herida en %1</Spanish>
             <Portuguese>Coagulação estancou permanentemente um ferimento em %1</Portuguese>
+            <French>La coagulation a définitivement fermé une plaie sur %1</French>
         </Key>
         <Key ID="STR_KAT_Pharma_head">
             <English>Head</English>
@@ -3501,150 +3553,176 @@
             <Japanese>Coag-Sense</Japanese>
             <Spanish>Coag-Sense</Spanish>
             <Portuguese>Medidor de Coagulação</Portuguese>
+            <French>Coag-Sense</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Display_DESC">
             <English>The Coag-Sense is a PT/INR monitoring system that can measure the efficiency of your blood clotting</English>
             <Japanese>Coag-Senseは血液凝固の効率を測定できる PT/INR モニタリングシステムです。</Japanese>
             <Spanish>El Coag-Sense es un sistema de monitorización PT/INR que puede medir la eficiencia de su coagulación sanguínea</Spanish>
             <Portuguese>O Medidor de Coagulação é um sistema de monitoramento PT/INR que pode mensurar a eficiência da sua coagulação sanguínea</Portuguese>
+            <French>Le Coag-Sense est un système de surveillance PT/INR qui permet de mesurer l'efficacité de la coagulation sanguine</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Coag_Sense_Log">
             <English>Coag-Sense concludes: %1</English>
             <Japanese>Coag-Senseの結果: %1</Japanese>
             <Spanish>Coag-Sense concluye: %1</Spanish>
             <Portuguese>Medidor de Coagulação conlui: %1</Portuguese>
+            <French>Le Coag-Sense a conclu : %1</French>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayName">
             <English>Measure PT/INR</English>
             <Japanese>PT/INRを測定する</Japanese>
             <Spanish>Medir PT/INR</Spanish>
             <Portuguese>Medir PT/INR</Portuguese>
+            <French>Mesurer le PT/INR</French>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_DisplayNameProgress">
             <English>Taking Blood Sample, </English>
             <Japanese>血液サンプルを取っています、</Japanese>
             <Spanish>Tomar muestra de sangre, </Spanish>
             <Portuguese>Coletando amostra sanguínea, </Portuguese>
+            <French>Prélè¨vement de sang,</French>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_lowINR">
-            <English>slightly below normal INR</English>
+            <English>Slightly Below Normal INR</English>
             <Japanese>正常INRより少し低い</Japanese>
             <Spanish>ligeramente por debajo del INR normal</Spanish>
             <Portuguese>INR ligeiramente abaixo do normal</Portuguese>
+            <French>légèrement inférieur à l'INR normal</French>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_slightly_aboveINR">
-            <English>sligtly above normal INR</English>
+            <English>Sligtly Above normal INR</English>
             <Japanese>正常INRより少し高い</Japanese>
             <Spanish>ligeramente por encima de INR normal</Spanish>
             <Portuguese>INR ligeiramente acima do normal</Portuguese>
+            <French>légèrement supérieur à l'INR normal</French>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_lowINR">
             <English>Very Low INR</English>
             <Japanese>正常INRよりかなり低い</Japanese>
             <Spanish>INR muy bajo</Spanish>
             <Portuguese>INR bem abaixo do normal</Portuguese>
+            <French>INR très bas</French>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_highly_aboveINR">
             <English>Very high INR</English>
             <Japanese>正常INRよりかなり高い</Japanese>
             <Spanish>INR muy alto</Spanish>
             <Portuguese>INR bem acima do normal</Portuguese>
+            <French>INR très élevé</French>
         </Key>
         <Key ID="STR_KAT_Pharma_CheckCoag_normalINR">
             <English>Normal INR</English>
             <Japanese>正常INR</Japanese>
             <Spanish>INR normal</Spanish>
             <Portuguese>INR normal</Portuguese>
+            <French>INR normal</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_Coag_Sense">
             <English>Coag-Sense Settings</English>
             <Japanese>Coag-Sense設定</Japanese>
             <Spanish>Ajustes de Coag-Sense</Spanish>
             <Portuguese>Configuração do Medidor de Coagulação</Portuguese>
+            <French>Paramètres du Coag-Sense</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_MedLevel">
             <English>Medical level required for Coag-Sense</English>
             <Japanese>Coag-Senseの許可</Japanese>
             <Spanish>Nivel médico requerido para Coag-Sense</Spanish>
             <Portuguese>Nível médico necessário para uso do Medidor de Coagulação</Portuguese>
+            <French>Niveau médical requis du Coag-Sense</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_Location">
             <English>Locations Coag-Sense</English>
             <Japanese>Coag-Senseが使用できる場所</Japanese>
             <Spanish>Ubicaciones Coag-Sense</Spanish>
             <Portuguese>Localizações de uso do Medidor de Coagulação</Portuguese>
+            <French>Emplacements du Coag-Sense</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_CheckCoag_treatmentTime">
             <English>Treatment time for measuring PT/INR</English>
             <Japanese>PT/INR測定の所要時間</Japanese>
             <Spanish>Tiempo de tratamiento para medir PT/INR</Spanish>
             <Portuguese>Tempo para mensurar PT/INR</Portuguese>
+            <French>Temps pour mesurer le PT/INR</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA">
             <English>Allow Stacking</English>
             <Japanese>重複の許可</Japanese>
             <Spanish>Permitir acumulación</Spanish>
             <Portuguese>Permitir somatória de efeito</Portuguese>
+            <French>Autoriser l'empilage</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA_DESC">
-            <English>If enabled EACA will be stackable and doubble it's efficiency</English>
+            <English>If enabled EACA will be stackable and double its efficiency</English>
             <Japanese>有効にすると、EACAの重複が可能になり、効率が2倍になる。</Japanese>
             <Spanish>Si el EACA esta permitido, se podrá acumular y duplicará su eficiencia</Spanish>
             <Portuguese>Se habilitado, o efeito do EACA será somável e sua eficiência será dobrada</Portuguese>
+            <French>Si activé, l'EACA sera empilable et doublera son efficacité</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA">
             <English>Keep Stiching Until Out Of System</English>
             <Japanese>体内に効果が無くなるまで"縫合"を適用する</Japanese>
             <Spanish>Mantiene la Sutura hasta que desaparezca del Organismo</Spanish>
             <Portuguese>Sutura contínua enquanto presente no sistema</Portuguese>
+            <French>Continuer de suturer jusqu'à ce que le produit soit éliminé du système</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_keepScriptRunning_EACA_DESC">
             <English>If enabled EACA will keep stichinng until it's out of your system\nIf disabled EACA will stop working after stiching the last bandaged wound it can find</English>
             <Japanese>有効にすると、EACAが体内から無くなるまで"縫合"をします。 \n無効にすると、EACAが判定済の最後の包帯創傷に"縫合"を適用した後に、その作用を終了します。</Japanese>
             <Spanish>Si el EACA esta permitido, seguirá suturando hasta que desaparezca del organismo.\n Si el EACA no está permitido, dejará de funcionar después de suturar la última herida que pueda encontrar</Spanish>
             <Portuguese>Se habilitado, o EACA continuará suturando até que esteja fora do seu sistema\nSe desabilitado, o funcionamento do EACA será interrompido assim que suturar o último ferimento</Portuguese>
+            <French>Si activé, l'EACA continuera de suturer jusqu'à ce qu'il soit éliminé du système.\nSi désactivé, l'EACA cessera de fonctionner après avoir suturé le dernier bandage qu'il peut trouver.</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA">
             <English>EACA Cycle Time</English>
             <Japanese>EACAサイクル時間</Japanese>
             <Spanish>Duración del Ciclo del EACA</Spanish>
             <Portuguese>Tempo de Ciclo do EACA</Portuguese>
+            <French>Temps de cycle de l'EACA</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_bandageCycleTime_EACA_DESC">
             <English>The time it takes for EACA to close a stich a wound</English>
             <Japanese>EACAが創傷を縫合するのに掛かる時間</Japanese>
             <Spanish>El tiempo que tarda EACA en suturar una herida</Spanish>
             <Portuguese>O intervalo entre suturas do EACA</Portuguese>
+            <French>Temps requis à l'EACA pour suturer une plaie</French>
         </Key>
         <Key ID="STR_KAT_Pharma_SubCategory_EpinephrineIV">
             <English>IV Epinephrine Settings</English>
             <Japanese>EACAが創傷を縫合するのに掛かる時間</Japanese>
             <Spanish>Ajustes de Epinefrina IV</Spanish>
+            <French>Paramètres de l'épinéphrine IV</French>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_EpinephrineIV">
             <English>Medical level required for IV Epinephrine</English>
             <Japanese>アドレナリン静脈注射 (IV)の許可</Japanese>
             <Spanish>Nivel médico requerido para Epinefrina IV</Spanish>
+            <French>Niveau médical requis pour l'épinéphrine IV</French>
         </Key>
         <Key ID="STR_KAT_Pharma_treatmentTime_EpinephrineIV">
             <English>Treatment time for IV Epinephrine</English>
             <Japanese>アドレナリン静脈注射 (IV)の所要時間</Japanese>
             <Spanish>Tiempo de tratamiento para Epinefrina IV</Spanish>
+            <French>Temps de traitement pour l'épinéphrine IV</French>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_DescShort">
             <English>IV Epinephrine</English>
             <Japanese>アドレナリン静脈注射 (IV)</Japanese>
             <Spanish>Epinefrina IV</Spanish>
+            <French>Epinéphrine IV</French>
         </Key>
         <Key ID="STR_KAT_Pharma_EpinephrineIV_displayName">
             <English>IV Epinephrine</English>
             <Japanese>アドレナリン静脈注射 (IV)</Japanese>
             <Spanish>Epinefrina IV</Spanish>
+            <French>Epinéphrine IV</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Take_Epi">
             <English>Push Epinephrine</English>
             <Japanese>アドレナリンを注入</Japanese>
             <Spanish>Administrar Epinefrina</Spanish>
+            <French>Administrer l'épinéphrine</French>
         </Key>
     </Package>
 </Project>

@@ -25,9 +25,9 @@
 params ["_vehicle", "", "", "", "_ammo", "_magazine", "_projectile"];
 
 // Large enough distance to not simulate any wind deflection
-if (_vehicle distance ACE_player > 8000) exitwith {};
+if (_vehicle distance ACE_player > 8000) exitWith {};
 
-if !(_ammo in KAT_ProjectileCache) exitwith {};
+if !(_ammo in KAT_ProjectileCache) exitWith {};
 
 private _configClass = (configFile >> "CfgAmmo" >> _ammo);
 
@@ -40,7 +40,7 @@ private _gasLvL = [_configClass, "KAT_toxicLvL", 1] call BIS_fnc_returnConfigEnt
     _args params ["_projectile", "_posArr", "_gasInfo"];
     _gasInfo params ["_lifetime", "_radius", "_gasLvL"];
 
-    if (!isNull _projectile) exitwith {
+    if (!isNull _projectile) exitWith {
         _args set [1, getPos _projectile];
     };
 

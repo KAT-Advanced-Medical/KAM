@@ -1,22 +1,8 @@
 class CfgWeapons
 {
-    class ToolKit;
     class ACE_ItemCore;
     class ACE_NVGoggles_WP;
     class CBA_MiscItem_ItemInfo;
-    class Attachable_Helistretcher: ToolKit {
-        author = "Battlekeeper";
-        picture = QPATHTOF(ui\stretcher.paa);
-        displayName = CSTRING(Helistretcher_Display);
-        descriptionShort = CSTRING(Helistretcher_Desc);
-        class ItemInfo {
-            mass = 20;
-            uniformModel = "\A3\Weapons_F\Items\Toolkit";
-            type = 620;
-            allowedSlots[] = {801,701,901};
-            scope = 0;
-        };
-    };
 
     class kat_Armband_Red_Cross_Item: ACE_ItemCore {
         author = "Miss Heda, vccv9040 (Swedish Forces Pack)";

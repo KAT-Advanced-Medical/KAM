@@ -22,7 +22,7 @@ params ["_unit", "_systolicChange", "_diastolicChange", "_id", ["_overwrite", fa
 
 private _BPChange = _unit getVariable [VAR_BLOODPRESSURE_CHANGE, []];
 
-private _arrRow = _BPChange findif {(_x select 2) isEqualTo _id};
+private _arrRow = _BPChange findIf {(_x select 2) isEqualTo _id};
 
 if (_arrRow != -1) exitWith {
     if (_systolicChange isEqualTo 0 && _diastolicChange isEqualTo 0) then {

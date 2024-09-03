@@ -28,7 +28,7 @@ private _fnc_arrayToInvItem = {
         {
             [_unit, _x select 0, _container] call ACEFUNC(common,addToInventory);
         } 
-    } foreach _array;
+    } forEach _array;
 };
 
 private _fnc_getContainer = {
@@ -66,21 +66,21 @@ switch (_type) do {
         _FAKToAdd = "kat_IFAK_Magazine";
         _slotArray = [true,true,true,true,false,false,false,false];
         _container = [(missionNamespace getVariable [QGVAR(IFAK_Container), 0])] call _fnc_getContainer;
-        _itemList = missionNameSpace getVariable [QGVAR(IFAKContents), []];
+        _itemList = missionNamespace getVariable [QGVAR(IFAKContents), []];
         _removeOnEmptyCondition = GVAR(IFAK_RemoveWhenEmpty);
     };
     case 1: { // AFAK
         _FAKToAdd = "kat_AFAK_Magazine";
         _slotArray = [true,true,true,true,true,true,false,false];
         _container = [(missionNamespace getVariable [QGVAR(AFAK_Container), 0])] call _fnc_getContainer;
-        _itemList = missionNameSpace getVariable [QGVAR(AFAKContents), []];
+        _itemList = missionNamespace getVariable [QGVAR(AFAKContents), []];
         _removeOnEmptyCondition = GVAR(AFAK_RemoveWhenEmpty);
     };
     default { // MFAK
         _FAKToAdd = "kat_MFAK_Magazine";
         _slotArray = [true,true,true,true,true,true,true,true];
         _container = [(missionNamespace getVariable [QGVAR(MFAK_Container), 0])] call _fnc_getContainer;
-        _itemList = missionNameSpace getVariable [QGVAR(MFAKContents), []];
+        _itemList = missionNamespace getVariable [QGVAR(MFAKContents), []];
         _removeOnEmptyCondition = GVAR(MFAK_RemoveWhenEmpty);
     };
 };

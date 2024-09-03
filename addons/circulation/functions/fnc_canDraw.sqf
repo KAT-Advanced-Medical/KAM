@@ -20,7 +20,7 @@
 params ["_medic", "_patient", "_volume"];
 
 private _bagItem = format ["ACE_bloodIV_%1", _volume];
-private _bloodVolume = (_patient getVariable [QACEGVAR(medical,bloodVolume), 6.0]);
-private _volumeChange = _volume/1000;
+private _bloodVolume = GET_BLOOD_VOLUME_LITERS(_patient);
+private _volumeChange = _volume/ML_TO_LITERS;
 if (((_bloodVolume - _volumeChange) > GVAR(blood_draw_limit))) exitWith {true};
 false
