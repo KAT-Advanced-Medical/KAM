@@ -268,7 +268,7 @@ class CfgWeapons {
         }; 
     };
     class kat_10ml_syringe_txa_1: ACE_ItemCore {
-        scope = 1;
+        scope = 2;
         displayName = CSTRING(Syringe_10_txa_1_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
@@ -279,7 +279,7 @@ class CfgWeapons {
         };
     };
     class kat_10ml_syringe_txa_2: ACE_ItemCore {
-        scope = 1;
+        scope = 2;
         displayName = CSTRING(Syringe_10_txa_2_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
@@ -290,7 +290,7 @@ class CfgWeapons {
         };
     };
     class kat_5ml_syringe_txa_1: ACE_ItemCore {
-        scope = 1;
+        scope = 2;
         displayName = CSTRING(Syringe_10_txa_1_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
@@ -301,7 +301,7 @@ class CfgWeapons {
         };
     };
     class kat_5ml_syringe_txa_2: ACE_ItemCore {
-        scope = 1;
+        scope = 2;
         displayName = CSTRING(Syringe_10_txa_2_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
@@ -312,7 +312,7 @@ class CfgWeapons {
         };
     };
     class kat_5ml_syringe_eaca_1: ACE_ItemCore {
-        scope = 1;
+        scope = 2;
         displayName = CSTRING(Syringe_10_eaca_1_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
@@ -323,7 +323,7 @@ class CfgWeapons {
         };
     };
     class kat_5ml_syringe_eaca_2: ACE_ItemCore {
-        scope = 1;
+        scope = 2;
         displayName = CSTRING(Syringe_10_eaca_2_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
