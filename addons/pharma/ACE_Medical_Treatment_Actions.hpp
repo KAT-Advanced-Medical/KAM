@@ -413,4 +413,63 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_CheckCoag);
         litter[] = {};
     };
+    class EACA_IV_1: Carbonate {
+        displayName = CSTRING(push_EACA_1);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_EACA);
+        treatmentTime = QGVAR(treatmentTime_EACA);
+        items[] = {"kat_5ml_syringe_eaca_1"};
+        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
+    class EACA_IV_2: EACA_IV_1 {
+        displayName = CSTRING(take_EACA_2);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_EACA);
+        treatmentTime = QGVAR(treatmentTime_EACA);
+        items[] = {"kat_5ml_syringe_eaca_2"};
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
+    class TXA_IM_1: Carbonate {
+        displayName = CSTRING(take_TXA_1);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_EACA);
+        treatmentTime = QGVAR(treatmentTime_EACA);
+        items[] = {"kat_10ml_syringe_txa_1"};
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
+    class TXA_IM_2: TXA_IM_1 {
+        displayName = CSTRING(take_TXA_2);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_EACA);
+        treatmentTime = QGVAR(treatmentTime_EACA);
+        items[] = {"kat_10ml_syringe_txa_2"};
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
+    class TXA_IV_1: EACA {
+        displayName = CSTRING(Take_TXA);
+        allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        allowSelfTreatment = 1;
+        medicRequired = QGVAR(medLvl_TXA);
+        treatmentTime = QGVAR(treatmentTime_TXA);
+        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
+        items[] = {"kat_5ml_syringe_txa_1"};
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
+    class TXA_IV_2: TXA_IV_1 {
+        displayName = CSTRING(Take_TXA);
+        items[] = {"kat_5ml_syringe_txa_2"};
+        callbackSuccess = QFUNC(medication);
+        sounds[] = {};
+    };
+
 };

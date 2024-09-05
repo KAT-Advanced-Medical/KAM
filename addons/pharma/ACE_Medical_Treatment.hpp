@@ -335,5 +335,77 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             maxRelief = 0.6;
         };
+        class 5ml_syringe_txa_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 5;
+            maxDose = 3;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class 5ml_syringe_txa_2 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 5;
+            maxDose = 3;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class 10ml_syringe_txa_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 5;
+            maxDose = 3;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class 10ml_syringe_txa_2 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 5;
+            maxDose = 3;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class 5ml_syringe_eaca_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 600;
+            timeTillMaxEffect = 15;
+            maxDose = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class 5ml_syringe_eaca_2 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 600;
+            timeTillMaxEffect = 15;
+            maxDose = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
     };
 };

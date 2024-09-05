@@ -862,6 +862,40 @@
             <Portuguese>16g IV</Portuguese>
             <Finnish>16g IV</Finnish>
         </Key>
+        <Key ID="STR_KAT_Pharma_IV_14_Display">
+            <English>14g IV</English>
+            <German>14g IV</German>
+            <Polish>14g IV</Polish>
+            <Spanish>14g IV</Spanish>
+            <Chinese>14g IV</Chinese>
+            <Chinesesimp>14g IV</Chinesesimp>
+            <Czech>14g IV</Czech>
+            <Korean>14g IV</Korean>
+            <French>14g IV</French>
+            <Turkish>14g IV</Turkish>
+            <Italian>14g IV</Italian>
+            <Japanese>14g IV</Japanese>
+            <Russian>14r IV</Russian>
+            <Portuguese>14g IV</Portuguese>
+            <Finnish>14g IV</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_IV_20_Display">
+            <English>20g IV</English>
+            <German>20g IV</German>
+            <Polish>20g IV</Polish>
+            <Spanish>20g IV</Spanish>
+            <Chinese>20g IV</Chinese>
+            <Chinesesimp>20g IV</Chinesesimp>
+            <Czech>20g IV</Czech>
+            <Korean>20g IV</Korean>
+            <French>20g IV</French>
+            <Turkish>20g IV</Turkish>
+            <Italian>20g IV</Italian>
+            <Japanese>20g IV</Japanese>
+            <Russian>20r IV</Russian>
+            <Portuguese>20g IV</Portuguese>
+            <Finnish>20g IV</Finnish>
+        </Key>
         <Key ID="STR_KAT_Pharma_IV_DescShort">
             <English>Intravenous Needle</English>
             <German>Intravenöse Kanüle</German>
@@ -3723,6 +3757,54 @@
             <Japanese>アドレナリンを注入</Japanese>
             <Spanish>Administrar Epinefrina</Spanish>
             <French>Administrer l'épinéphrine</French>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_Display">
+            <English>5ml Syringe</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_DescShort">
+            <English>For IV medications</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_10_Display">
+            <English>10ml Syringe</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_10_DescShort">
+            <English>For IM medications</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_10_txa_1_Display">
+            <English>10ml Syringe/1g TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_10_txa_1_DescShort">
+            <English>10ml Syringe loaded with 1 gram of TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_10_txa_2_Display">
+            <English>10ml Syringe/2g TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_10_txa_2_DescShort">
+            <English>10ml Syringe loaded with 2 grams of TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_txa_1_Display">
+            <English>5ml Syringe/1g TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_txa_1_DescShort">
+            <English>5ml Syringe loaded with 1 gram of TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_txa_2_Display">
+            <English>5ml Syringe/2g TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_txa_2_DescShort">
+            <English>5ml Syringe loaded with 2 grams of TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_txa_1_Display">
+            <English>5ml Syringe/7.5g EACA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_txa_1_DescShort">
+            <English>5ml Syringe loaded with 7.5 grams of EACA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_txa_2_Display">
+            <English>5ml Syringe/15g EACA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_5_txa_2_DescShort">
+            <English>5ml Syringe loaded with 15 grams of EACA</English>
         </Key>
     </Package>
 </Project>
