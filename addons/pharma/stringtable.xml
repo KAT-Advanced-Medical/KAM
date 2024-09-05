@@ -3806,5 +3806,41 @@
         <Key ID="STR_KAT_Pharma_Syringe_5_txa_2_DescShort">
             <English>5ml Syringe loaded with 15 grams of EACA</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_push_TXA_IV_1">
+            <English>Push 1g TXA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_TXA_IV_2">
+            <English>Push 2g TXA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_EACA_IV_1">
+            <English>Push 7.5g EACA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_EACA_IV_2">
+            <English>Push 15g EACA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_TXA_IV_1">
+            <English>Inject 1g TXA IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_TXA_IV_2">
+            <English>Inject 2g TXA IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_TXA_IV_1">
+            <English>Pushing 1g TXA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_TXA_IV_2">
+            <English>Pushing 2g TXA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_EACA_IV_1">
+            <English>Pushing 7.5g EACA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_EACA_IV_2">
+            <English>Pushing 15g EACA IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_TXA_IV_1">
+            <English>Injecting 1g TXA IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_TXA_IV_2">
+            <English>Injecting 2g TXA IM</English>
+        </Key>
     </Package>
 </Project>

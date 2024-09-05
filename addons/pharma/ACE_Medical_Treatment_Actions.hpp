@@ -414,7 +414,8 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
     };
     class EACA_IV_1: Carbonate {
-        displayName = CSTRING(push_EACA_1);
+        displayName = CSTRING(push_EACA_IV_1);
+        displayNameProgress = CSTRING(pushing_EACA_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
@@ -425,7 +426,9 @@ class ACE_Medical_Treatment_Actions {
         sounds[] = {};
     };
     class EACA_IV_2: EACA_IV_1 {
-        displayName = CSTRING(take_EACA_2);
+        displayName = CSTRING(push_EACA_IV_2);
+        displayNameProgress = CSTRING(pushing_EACA_IV_2);
+        inject
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
@@ -435,7 +438,7 @@ class ACE_Medical_Treatment_Actions {
         sounds[] = {};
     };
     class TXA_IM_1: Carbonate {
-        displayName = CSTRING(take_TXA_1);
+        displayName = CSTRING(inject_TXA_IM_1);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
@@ -445,7 +448,8 @@ class ACE_Medical_Treatment_Actions {
         sounds[] = {};
     };
     class TXA_IM_2: TXA_IM_1 {
-        displayName = CSTRING(take_TXA_2);
+        displayName = CSTRING(inject_TXA_IM_2);
+        displayNameProgress = CSTRING(injecting_TXA_IV_2);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
@@ -454,8 +458,9 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class TXA_IV_1: EACA {
-        displayName = CSTRING(Take_TXA);
+    class TXA_IV_1: EACA_IV_1 {
+        displayName = CSTRING(push_TXA_IV_1);
+        displayNameProgress = CSTRING(pushing_TXA_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_TXA);
@@ -466,7 +471,8 @@ class ACE_Medical_Treatment_Actions {
         sounds[] = {};
     };
     class TXA_IV_2: TXA_IV_1 {
-        displayName = CSTRING(Take_TXA);
+        displayName = CSTRING(push_TXA_IV_2);
+        displayNameProgress = CSTRING(pushing_TXA_IV_2);
         items[] = {"kat_5ml_syringe_txa_2"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
