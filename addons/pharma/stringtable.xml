@@ -3824,16 +3824,16 @@
         <Key ID="STR_KAT_Pharma_inject_TXA_IM_2">
             <English>Inject 2g TXA IM</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_push_TXA_IV_1">
+        <Key ID="STR_KAT_Pharma_pushing_TXA_IV_1">
             <English>Pushing 1g TXA IV</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_push_TXA_IV_2">
+        <Key ID="STR_KAT_Pharma_pushing_TXA_IV_2">
             <English>Pushing 2g TXA IV</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_push_EACA_IV_1">
+        <Key ID="STR_KAT_Pharma_pushing_EACA_IV_1">
             <English>Pushing 7.5g EACA IV</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_push_EACA_IV_2">
+        <Key ID="STR_KAT_Pharma_pushing_EACA_IV_2">
             <English>Pushing 15g EACA IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_injecting_TXA_IM_1">
