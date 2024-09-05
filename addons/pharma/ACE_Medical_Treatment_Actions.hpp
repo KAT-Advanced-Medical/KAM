@@ -438,6 +438,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class TXA_IM_1: Carbonate {
         displayName = CSTRING(inject_TXA_IM_1);
+        displayNameProgress = CSTRING(injecting_TXA_IM_1);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
@@ -448,7 +449,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class TXA_IM_2: TXA_IM_1 {
         displayName = CSTRING(inject_TXA_IM_2);
-        displayNameProgress = CSTRING(injecting_TXA_IV_2);
+        displayNameProgress = CSTRING(injecting_TXA_IM_2);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
