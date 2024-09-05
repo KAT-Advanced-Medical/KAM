@@ -428,7 +428,6 @@ class ACE_Medical_Treatment_Actions {
     class EACA_IV_2: EACA_IV_1 {
         displayName = CSTRING(push_EACA_IV_2);
         displayNameProgress = CSTRING(pushing_EACA_IV_2);
-        inject
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
