@@ -36,7 +36,13 @@ class CfgPatches {
             "kat_flumazenil",
             "kat_lorazepam",
             "kat_etomidate",
-            "kat_epinephrineIV"
+            "kat_epinephrineIV",
+            "kat_10ml_syringe_txa_1",
+            "kat_5ml_syringe_txa_1",
+            "kat_10ml_syringe_txa_2",
+            "kat_5ml_syringe_txa_2",
+            "kat_5ml_syringe_eaca_1",
+            "kat_5ml_syringe_eaca_2"
         };
         magazines[] = { };
         requiredAddons[] = {
