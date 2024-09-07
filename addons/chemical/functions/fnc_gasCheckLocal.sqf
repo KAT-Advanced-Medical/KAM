@@ -59,10 +59,10 @@ private _timeEntered = CBA_MissionTime;
     if (_distance > _radius_min) then {
         _percent = _dis_to_min / _min_to_max;
     };
+    _unit setVariable [QGVAR(gasPercentage), _percent, true];
 
     private _timeLeft = _unit getVariable [QGVAR(timeleft), 0];
-    if (_timeLeft <= 0) exitWith
-    {
+    if (_timeLeft <= 0) exitWith {
         [_handler] call CBA_fnc_removePerFrameHandler;
         [QGVAR(afterWait), [_unit, _logic, _gastype, _radius_max], _unit] call CBA_fnc_targetEvent;
         _unit setVariable [QGVAR(timeleft), 0];
@@ -72,10 +72,9 @@ private _timeEntered = CBA_MissionTime;
         if !(_unit getVariable [QGVAR(enteredPoison), false]) then {
             _unit setVariable [QGVAR(enteredPoison), true, true];
             [QGVAR(enteredZone), [_unit], _unit] call CBA_fnc_targetEvent;
-            _unit setVariable [QGVAR(Poisen_logic), _logic, true];
         };
 
-        _timeLeft = (missionNamespace getVariable [QGVAR(infectionTime),60]) - (CBA_MissionTime - _timeEntered);
+        _timeLeft = (missionNamespace getVariable [QGVAR(infectionTime), 60]) - (CBA_MissionTime - _timeEntered);
         _unit setVariable [QGVAR(timeleft), _timeLeft];
     };
 

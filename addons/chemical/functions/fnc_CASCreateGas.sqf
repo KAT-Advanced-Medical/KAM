@@ -18,4 +18,5 @@
 
 params ["_posX", "_posY", "_posZ"];
 
-[QGVAR(createZoneGlobal), [[_posX, _posY, _posZ], 240, 15, 0]] call CBA_fnc_globalEventJIP;
+private _jipID = [QGVAR(createZoneGlobal), [[_posX, _posY, _posZ], 240, 15, 0]] call CBA_fnc_globalEventJIP;
+[_jipID] call CBA_fnc_removeGlobalEventJIP;

@@ -58,7 +58,7 @@ class CfgAmmo
         indirectHit = 0;
         indirectHitRange = 0;
         soundHit[] = {"A3\Sounds_F\weapons\smokeshell\smoke_3",1.25893,1,100};
-        explosionEffects = "KAT_GASTripEffect";
+        explosionEffects = "KAT_TripWireGasEffect";
         CraterEffects = "";
         soundTrigger[] = {"",1,1};
         class CamShakeExplode {

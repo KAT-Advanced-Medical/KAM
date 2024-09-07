@@ -91,7 +91,8 @@ private _fnc_onConfirm = {
             [_logic, getPos _object, _radius_max, _radius_min, _gasType] call FUNC(gasCheck);
 
             if (_display getVariable [QGVAR(ui_sealable), false]) then {
-                [QGVAR(createSealActionGlobal), [_object, _logic]] call CBA_fnc_globalEventJIP;
+                private _jipID = [QGVAR(createSealActionGlobal), [_object, _logic]] call CBA_fnc_globalEventJIP;
+                [_jipID, _object] call CBA_fnc_removeGlobalEventJIP;
             };
 
         } else {

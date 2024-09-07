@@ -28,13 +28,13 @@ _logic setVariable [QGVAR(gas_active), true, true];
 _logic setVariable [QGVAR(gas_playerArr), [], true];
 _logic setVariable [QGVAR(gas_position), _position, true];
 
+private _allUnits = if (missionNamespace getVariable [QGVAR(affectAI), false]) then {allUnits} else {allPlayers};
+
 // Function to check players within the gas zone
 private _checkPlayers = {
     params ["_args"];
-    _args params ["_logic", "_position", "_radius_max", "_radius_min", "_gasType"];
+    _args params ["_logic", "_position", "_radius_max", "_radius_min", "_gasType", "_allUnits"];
     private _playerArr = _logic getVariable [QGVAR(gas_playerArr), []];
-    private _allUnits = if (missionNamespace getVariable [QGVAR(affectAI), false]) then {allUnits} else {allPlayers};
-
 
     {
         if (!isDamageAllowed _x) then {
@@ -76,7 +76,7 @@ private _checkPlayers = {
 };
 
 // Add per frame handler to check players
-private _handle = [_checkPlayers, 3, [_logic, _position, _radius_max, _radius_min, _gasType]] call CBA_fnc_addPerFrameHandler;
+private _handle = [_checkPlayers, 3, [_logic, _position, _radius_max, _radius_min, _gasType, _allUnits]] call CBA_fnc_addPerFrameHandler;
 
 // Remove handler when logic is no longer valid
 [

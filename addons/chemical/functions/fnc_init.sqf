@@ -37,4 +37,4 @@ if (!local _unit) exitWith {};
             _unit setVariable[QGVAR(timeleft), _playertime, true];
         };
     };
-}, 2, _unit]call CBA_fnc_addPerFrameHandler;
+}, 2, _unit] call CBA_fnc_addPerFrameHandler;

@@ -39,7 +39,8 @@ params ["_projectile", "_timeToLive", "_center"];
 
 private _position = position _projectile;
 
-[QGVAR(createZoneGlobal), [_position, _timeToLive, 6, 1]] call CBA_fnc_globalEventJIP;
+private _jipID = [QGVAR(createZoneGlobal), [_position, _timeToLive, 6, 1]] call CBA_fnc_globalEventJIP;
+[_jipID] call CBA_fnc_removeGlobalEventJIP;
 
 // --- AI
 private _nearLocalEnemies = [];
