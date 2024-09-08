@@ -89,12 +89,13 @@ private _hrTargetAdjustment = 0;
 private _painSupressAdjustment = 0;
 private _peripheralResistanceAdjustment = 0;
 private _alphaFactorAdjustment = 0;
+private _opioidAdjustment = 0;
 private _adjustments = _unit getVariable [VAR_MEDICATIONS,[]];
 
 if !(_adjustments isEqualTo []) then {
     private _deleted = false;
     {
-        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_alphaFactor"];
+        _x params ["_medication", "_timeAdded", "_timeTillMaxEffect", "_maxTimeInSystem", "_hrAdjust", "_painAdjust", "_flowAdjust", "_alphaFactor", "_opioidAdjust"];
         private _timeInSystem = CBA_missionTime - _timeAdded;
         if (_timeInSystem >= _maxTimeInSystem) then {
             _deleted = true;
@@ -105,6 +106,7 @@ if !(_adjustments isEqualTo []) then {
             if (_painAdjust != 0) then { _painSupressAdjustment = _painSupressAdjustment + _painAdjust * _effectRatio; };
             if (_flowAdjust != 0) then { _peripheralResistanceAdjustment = _peripheralResistanceAdjustment + _flowAdjust * _effectRatio; };
             if (_alphaFactor != 0) then { _alphaFactorAdjustment = _alphaFactorAdjustment + _alphaFactor * _effectRatio; };
+            if (_opioidAdjust != 0) then {_opioidAdjustment = _opioidAdjustment + _opioidAdjust * _effectRatio; };
         };
     } forEach _adjustments;
 
@@ -116,6 +118,7 @@ if !(_adjustments isEqualTo []) then {
 
 [_unit, _painSupressAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePainSuppress); //Leave alone
 [_unit, _peripheralResistanceAdjustment, _deltaT, _syncValues] call ACEFUNC(medical_vitals,updatePeripheralResistance);
+[_unit, _opioidAdjustment, _deltaT, _syncValues] call FUNC(updateOpioidEffect);
 
 private _heartRate = [_unit, _hrTargetAdjustment, 0, _bloodVolume, _deltaT, _syncValues] call FUNC(handleCardiacFunction);
 

@@ -27,6 +27,8 @@ class ACE_ADDON(Medical_Treatment) {
         // Reduction of damage from wounds
         opioidRelief = 1;
 
+        opioidEffect = 0;
+
         class Epinephrine {
             painReduce = 0;
             hrIncreaseLow[] = {10, 20};
@@ -170,6 +172,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
+            opioidEffect = 0.8;
         };
         class Nalbuphine {
             painReduce = 0.6;
