@@ -35,16 +35,13 @@ if (_updateOnly) exitWith {};
 // - Opioid -----------------------------------------------------------
 GVAR(opioidEffect) = [
     "ChromAberration",
-    213702,
+    213701,
     [0, 0, true ]
 ] call _fnc_createEffect;
 
 // - Low SpO2 -----------------------------------------------------------
 GVAR(lowSpO2) = [
     "ColorCorrections",
-    213704,
+    21370,
     [1, 1, 0, [0, 0, 0, 0], [0, 0, 0, 1], [0.33, 0.33, 0.33, 0], [0.55, 0.5, 0, 0, 0, 0, 4]]
 ] call _fnc_createEffect;
-
-
-
