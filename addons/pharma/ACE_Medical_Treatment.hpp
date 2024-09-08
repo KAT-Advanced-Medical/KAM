@@ -335,7 +335,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             maxRelief = 0.6;
         };
-        class 5ml_syringe_txa_1 {
+        class syringe_txa_5ml__1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -347,7 +347,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class 5ml_syringe_txa_2 {
+        class syringe_txa_5ml__2 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -359,7 +359,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class 10ml_syringe_txa_1 {
+        class syringe_txa_10ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -371,7 +371,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class 10ml_syringe_txa_2 {
+        class syringe_txa_10ml_2 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -383,7 +383,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class 5ml_syringe_eaca_1 {
+        class syringe_eaca_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -395,7 +395,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class 5ml_syringe_eaca_2 {
+        class syringe_eaca_5ml_2 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};

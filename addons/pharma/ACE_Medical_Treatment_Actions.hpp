@@ -420,7 +420,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
-        items[] = {"kat_5ml_syringe_eaca_1"};
+        items[] = {"kat_syringe_eaca_5ml_1"};
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -432,7 +432,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
-        items[] = {"kat_5ml_syringe_eaca_2"};
+        items[] = {"kat_syringe_eaca_5ml_2"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
@@ -443,7 +443,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
-        items[] = {"kat_10ml_syringe_txa_1"};
+        items[] = {"kat_syringe_txa_10ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
@@ -454,7 +454,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
-        items[] = {"kat_10ml_syringe_txa_2"};
+        items[] = {"kat_syringe_txa_10ml_2"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
@@ -466,14 +466,14 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_TXA);
         treatmentTime = QGVAR(treatmentTime_TXA);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_5ml_syringe_txa_1"};
+        items[] = {"kat_syringe_txa_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class TXA_IV_2: TXA_IV_1 {
         displayName = CSTRING(push_TXA_IV_2);
         displayNameProgress = CSTRING(pushing_TXA_IV_2);
-        items[] = {"kat_5ml_syringe_txa_2"};
+        items[] = {"kat_syringe_txa_5ml_2"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };

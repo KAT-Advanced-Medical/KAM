@@ -267,12 +267,12 @@ class CfgWeapons {
             mass = 1;
         }; 
     };
-    class kat_10ml_syringe_txa_1: ACE_ItemCore {
+    class kat_syringe_txa_10ml_1: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(Syringe_10_txa_1_Display);
+        displayName = CSTRING(Syringe_txa_10_1_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_10_txa_1_DescShort);
+        descriptionShort = CSTRING(Syringe_txa_10_1_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
@@ -280,10 +280,10 @@ class CfgWeapons {
     };
     class kat_10ml_syringe_txa_2: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(Syringe_10_txa_2_Display);
+        displayName = CSTRING(Syringe_txa_10_2_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_10_txa_2_DescShort);
+        descriptionShort = CSTRING(Syringe_txa_10_2_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
@@ -291,10 +291,10 @@ class CfgWeapons {
     };
     class kat_5ml_syringe_txa_1: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(Syringe_5_txa_1_Display);
+        displayName = CSTRING(Syringe_txa_5_1_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_5_txa_1_DescShort);
+        descriptionShort = CSTRING(Syringe_txa_5_1_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
@@ -302,10 +302,10 @@ class CfgWeapons {
     };
     class kat_5ml_syringe_txa_2: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(Syringe_5_txa_2_Display);
+        displayName = CSTRING(Syringe_txa_5_2_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_5_txa_2_DescShort);
+        descriptionShort = CSTRING(Syringe_txa_5_2_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
@@ -313,10 +313,10 @@ class CfgWeapons {
     };
     class kat_5ml_syringe_eaca_1: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(Syringe_5_eaca_1_Display);
+        displayName = CSTRING(Syringe_eaca_5_1_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_5_eaca_1_DescShort);
+        descriptionShort = CSTRING(Syringe_eaca_5_1_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
@@ -324,10 +324,10 @@ class CfgWeapons {
     };
     class kat_5ml_syringe_eaca_2: ACE_ItemCore {
         scope = 2;
-        displayName = CSTRING(Syringe_5_eaca_2_Display);
+        displayName = CSTRING(Syringe_eaca_5_2_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_5_eaca_2_DescShort);
+        descriptionShort = CSTRING(Syringe_eaca_5_2_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;

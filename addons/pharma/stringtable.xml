@@ -3770,40 +3770,40 @@
         <Key ID="STR_KAT_Pharma_Syringe_10_DescShort">
             <English>For IM medications</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_10_txa_1_Display">
+        <Key ID="STR_KAT_Pharma_Syringe_txa_10_1_Display">
             <English>10ml Syringe/1g TXA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_10_txa_1_DescShort">
+        <Key ID="STR_KAT_Pharma_Syringe_txa_10_1_DescShort">
             <English>10ml Syringe loaded with 1 gram of TXA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_10_txa_2_Display">
+        <Key ID="STR_KAT_Pharma_Syringe_txa_10_2_Display">
             <English>10ml Syringe/2g TXA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_10_txa_2_DescShort">
+        <Key ID="STR_KAT_Pharma_Syringe_txa_10_2_DescShort">
             <English>10ml Syringe loaded with 2 grams of TXA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_5_txa_1_Display">
+        <Key ID="STR_KAT_Pharma_Syringe_txa_5_1_Display">
             <English>5ml Syringe/1g TXA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_5_txa_1_DescShort">
+        <Key ID="STR_KAT_Pharma_Syringe_txa_5_1_DescShort">
             <English>5ml Syringe loaded with 1 gram of TXA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_5_txa_2_Display">
+        <Key ID="STR_KAT_Pharma_Syringe_txa_5_1_Display">
             <English>5ml Syringe/2g TXA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_5_txa_2_DescShort">
+        <Key ID="STR_KAT_Pharma_Syringe_txa_5_1_DescShort">
             <English>5ml Syringe loaded with 2 grams of TXA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_5_eaca_1_Display">
+        <Key ID="STR_KAT_Pharma_Syringe_eaca_5_1_Display">
             <English>5ml Syringe/7.5g EACA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_5_eaca_1_DescShort">
+        <Key ID="STR_KAT_Pharma_Syringe_eaca_5_2_DescShort">
             <English>5ml Syringe loaded with 7.5 grams of EACA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_5_eaca_2_Display">
+        <Key ID="STR_KAT_Pharma_SSyringe_eaca_5_1_Display">
             <English>5ml Syringe/15g EACA</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Syringe_5_eaca_2_DescShort">
+        <Key ID="STR_KAT_Pharma_Syringe_eaca_5_2_DescShort">
             <English>5ml Syringe loaded with 15 grams of EACA</English>
         </Key>
         <Key ID="STR_KAT_Pharma_push_TXA_IV_1">
