@@ -17,7 +17,7 @@
 params [["_manualUpdate", false]];
 
 if (ACEGVAR(common,OldIsCamera) || {!alive ACE_player}) exitWith {
-    [false]    call FUNC(effectKetamine);
+    [false]    call FUNC(effectOpioid);
     [false]    call FUNC(effectLowSpO2);
 };
 
@@ -29,7 +29,7 @@ private _spO2             = GET_SPO2(ACE_player);
 
 // - Visual effects -----------------------------------------------------------
 
-[!_unconscious, _effect] call FUNC(effectKetamine);
+[!_unconscious, _effect] call FUNC(effectOpioid);
 
 [
     true,

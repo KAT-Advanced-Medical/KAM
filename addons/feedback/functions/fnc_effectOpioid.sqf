@@ -19,13 +19,13 @@
 params ["_enable", "_intensity"];
 
 if (!_enable || {_intensity == 0}) exitWith {
-    if (GVAR(ketamineEffect) != -1) then { GVAR(ketamineEffect) ppEffectEnable false; };
+    if (GVAR(opioidEffect) != -1) then { GVAR(opioidEffect) ppEffectEnable false; };
 };
-if (GVAR(ketamineEffect) != -1) then { GVAR(ketamineEffect) ppEffectEnable true; };
+if (GVAR(opioidEffect) != -1) then { GVAR(opioidEffect) ppEffectEnable true; };
 
 // Trigger effect every 2s
-private _showNextTick = missionNamespace getVariable [QGVAR(showKetamineNextTick), true];
-GVAR(showKetamineNextTick) = !_showNextTick;
+private _showNextTick = missionNamespace getVariable [QGVAR(showOpioidNextTick), true];
+GVAR(showOpioidNextTick) = !_showNextTick;
 if (_showNextTick) exitWith {};
 
 private _initialAdjust = [];
@@ -35,10 +35,10 @@ _intensity     = linearConversion [0, 1, _intensity, 0, 1, true];
 _initialAdjust = [_intensity       , _intensity       , true];
 _delayedAdjust = [_intensity * 0.15, _intensity * 0.15, true];
 
-GVAR(ketamineEffect) ppEffectAdjust _initialAdjust;
-GVAR(ketamineEffect) ppEffectCommit FX_OPIOD_FADE_IN;
+GVAR(opioidEffect) ppEffectAdjust _initialAdjust;
+GVAR(opioidEffect) ppEffectCommit FX_OPIOD_FADE_IN;
 [{
     params ["_adjust"];
-    GVAR(ketamineEffect) ppEffectAdjust _adjust;
-    GVAR(ketamineEffect) ppEffectCommit FX_OPIOD_FADE_OUT;
+    GVAR(opioidEffect) ppEffectAdjust _adjust;
+    GVAR(opioidEffect) ppEffectCommit FX_OPIOD_FADE_OUT;
 }, [_delayedAdjust], FX_OPIOD_FADE_IN] call CBA_fnc_waitAndExecute;

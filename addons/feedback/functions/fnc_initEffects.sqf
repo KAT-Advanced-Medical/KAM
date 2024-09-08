@@ -32,8 +32,8 @@ private _fnc_createEffect = {
 
 if (_updateOnly) exitWith {};
 
-// - Ketamine -----------------------------------------------------------
-GVAR(ketamineEffect) = [
+// - Opioid -----------------------------------------------------------
+GVAR(opioidEffect) = [
     "ChromAberration",
     213702,
     [0, 0, true ]
