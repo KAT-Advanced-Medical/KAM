@@ -159,6 +159,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -10;
             onOverDose = "";
             opioidRelief = 1.5;
+            opioidEffect = 0.6;
         };
         class Ketamine {
             painReduce = 0.8;
@@ -172,7 +173,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
-            opioidEffect = 0.8;
+            opioidEffect = 0.2;
         };
         class Nalbuphine {
             painReduce = 0.6;
@@ -299,6 +300,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 5;
             onOverDose = "";
+            opioidEffect = 1;
         };
         class Caffeine {
             painReduce = 0;
