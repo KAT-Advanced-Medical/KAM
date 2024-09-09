@@ -173,7 +173,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
-            opioidEffect = 0.16;
+            opioidEffect = 0.17;
         };
         class Nalbuphine {
             painReduce = 0.6;
