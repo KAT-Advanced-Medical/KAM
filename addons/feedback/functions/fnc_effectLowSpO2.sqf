@@ -20,9 +20,9 @@
 params ["_enable", "_intensity"];
 
 if ((!_enable) || {_intensity == 0}) exitWith {
-    GVAR(lowSpO2) ppEffectEnable false;
+    if (GVAR(lowSpO2) != -1) then { GVAR(lowSpO2) ppEffectEnable true; };
 };
-GVAR(lowSpO2) ppEffectEnable true;
+if (GVAR(lowSpO2) != -1) then { GVAR(lowSpO2) ppEffectEnable true; };
 
 // Trigger effect every 2s
 private _showNextTick = missionNamespace getVariable [QGVAR(showLowSpO2NextTick), true];
