@@ -30,6 +30,7 @@ if(GVAR(IVreuse)) then {
         case "2": {_patient addItem "kat_IV_16"};
         case "3": {_patient addItem "kat_IV_14"};
         case "4": {_patient addItem "kat_IV_20"};
+        default: {}
         };
 };
 
