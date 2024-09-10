@@ -3842,5 +3842,11 @@
         <Key ID="STR_KAT_Pharma_injecting_TXA_IM_2">
             <English>Injecting 2g TXA IM</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_Apply_IV_14">
+            <English>Establish 14g IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Apply_IV_20">
+            <English>Establish 20g IV</English>
+        </Key>
     </Package>
 </Project>

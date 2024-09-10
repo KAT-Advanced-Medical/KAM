@@ -309,6 +309,32 @@ class ACE_Medical_Treatment_Actions {
         litter[] = {};
         sounds[] = {};
     };
+    class Apply14IV: ApplyIV {
+        displayName = CSTRING(Apply_IV_14);
+        displayNameProgress = CSTRING(Applying_IV);
+        medicRequired = QGVAR(medLvl_ApplyIV);
+        category = "advanced";
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        items[] = {"kat_IV_14"};
+        condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
+        treatmentTime = QGVAR(treatmentTime_ApplyIV);
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'kat_IV_14')] call FUNC(applyIV));
+        litter[] = {};
+        sounds[] = {};
+    };
+    class Apply20IV: ApplyIV {
+        displayName = CSTRING(Apply_IV_20);
+        displayNameProgress = CSTRING(Applying_IV);
+        medicRequired = QGVAR(medLvl_ApplyIV);
+        category = "advanced";
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        items[] = {"kat_IV_20"};
+        condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
+        treatmentTime = QGVAR(treatmentTime_ApplyIV);
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'kat_IV_14')] call FUNC(applyIV));
+        litter[] = {};
+        sounds[] = {};
+    };
     class ApplyIO: ApplyIV {
         displayName = CSTRING(Apply_IO_45);
         displayNameProgress = CSTRING(Applying_IV);
