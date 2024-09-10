@@ -44,16 +44,19 @@ switch (_usedItem) do {
         _patient setVariable [QGVAR(IV), _IVarray, true];
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "16g IV"]] call ACEFUNC(medical_treatment,addToLog);
         [_patient, "16g IV"] call ACEFUNC(medical_treatment,addToTriageCard); };
+        
     case "kat_IV_14": {     _IVarray set [_partIndex, 3];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 
     [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "14g IV"]] call ACEFUNC(medical_treatment,addToLog);
     [_patient, "14g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};
+
     case "kat_IV_20": {     _IVarray set [_partIndex, 4];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 
     [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "20g IV"]] call ACEFUNC(medical_treatment,addToLog);
     [_patient, "20g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};
+
     case "kat_IO_FAST": {
     _IVarray set [_partIndex, 1];
     _patient setVariable [QGVAR(IV), _IVarray, true];

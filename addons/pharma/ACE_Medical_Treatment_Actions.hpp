@@ -331,7 +331,7 @@ class ACE_Medical_Treatment_Actions {
         items[] = {"kat_IV_20"};
         condition = QUOTE(!([ARR_3(_player,_patient,_bodyPart)] call FUNC(removeIV)));
         treatmentTime = QGVAR(treatmentTime_ApplyIV);
-        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'kat_IV_14')] call FUNC(applyIV));
+        callbackSuccess = QUOTE([ARR_4(_player,_patient,_bodyPart,'kat_IV_20')] call FUNC(applyIV));
         litter[] = {};
         sounds[] = {};
     };
