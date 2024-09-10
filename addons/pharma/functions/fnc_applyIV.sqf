@@ -44,12 +44,12 @@ switch (_usedItem) do {
         _patient setVariable [QGVAR(IV), _IVarray, true];
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "16g IV"]] call ACEFUNC(medical_treatment,addToLog);
         [_patient, "16g IV"] call ACEFUNC(medical_treatment,addToTriageCard); };
-    case "kat_IV_14": {     _IVarray set [_partIndex, 2];
+    case "kat_IV_14": {     _IVarray set [_partIndex, 3];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 
     [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "14g IV"]] call ACEFUNC(medical_treatment,addToLog);
     [_patient, "14g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};
-    case "kat_IV_20": {     _IVarray set [_partIndex, 2];
+    case "kat_IV_20": {     _IVarray set [_partIndex, 4];
     _patient setVariable [QGVAR(IV), _IVarray, true];
 
     [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "20g IV"]] call ACEFUNC(medical_treatment,addToLog);
@@ -94,10 +94,11 @@ if (GVAR(IVdropEnable) && ((_usedItem isEqualTo "kat_IV_16") || (_usedItem isEqu
                     private _IVactual = _IVarray select _partIndex;
 
                     if(GVAR(IVreuse)) then {
-                        if (_IVactual == 1) then {
-                            _patient addItem "kat_IO_FAST";
-                        } else {
-                            _patient addItem "kat_IV_16";
+                        switch (_IVactual) do {
+                        case "1":{_patient addItem "kat_IO_FAST"}
+                        case "2":{_patient addItem "kat_IV_16"}
+                        case "3":{_patient addItem "kat_IV_14"}
+                        case "4":{_patient addItem "kat_IV_20"}
                         };
                     };
 
