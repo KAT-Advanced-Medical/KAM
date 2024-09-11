@@ -62,10 +62,10 @@ private _fnc_clotWound = {
 
             if (_amountOf * _bleeding > 0) exitWith {
 
-                if (_countTXA > 0 || _countEACA > 0) then {
+                if (_countTXA > 0.3 || _countEACA > 0.3) then {
                     _logString = LSTRING(coagulation_Bandaged_TXA);
 
-                    if (_countEACA > 0 && _countTXA > 0) exitWith { // If TXA & EACA are in system at same time use EACA bandage
+                    if (_countEACA > 0.3 && _countTXA > 0.3) exitWith { // If TXA & EACA are in system at same time use EACA bandage
                         _woundClotTime = round (_woundClotTime / 3 * 2);
                         _bandageToUse = _bandageToUse + "EACA";
                     };
@@ -113,8 +113,8 @@ private _fnc_clotWound = {
     private _openWounds = _unit getVariable [VAR_OPEN_WOUNDS, createHashMap];
     private _pulse = _unit getVariable [VAR_HEART_RATE, 80];
     private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 30];
-    private _countTXA = [_unit, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
-    private _countEACA = [_unit, "EACA"] call ACEFUNC(medical_status,getMedicationCount);
+    private _countTXA = [_unit, "TXA", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _countEACA = [_unit, "EACA", false] call ACEFUNC(medical_status,getMedicationCount);
     private _hasWoundToBandageArray = [];
 
     if (_openWounds isEqualTo createHashMap) exitWith {}; // Exit when hashmap not initialized (Will not work when hashmap is set, cause ace only changes value of "woundCount" to 0)

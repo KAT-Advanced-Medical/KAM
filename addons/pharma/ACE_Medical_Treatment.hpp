@@ -83,8 +83,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
             hrIncreaseHigh[] = {0, 0};
-            timeInSystem = 120;
-            timeTillMaxEffect = 5;
+            timeInSystem = 240;
+            timeTillMaxEffect = 30;
             maxDose = 3;
             incompatibleMedication[] = {};
             viscosityChange = 0;
@@ -242,7 +242,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseNormal[] = {0, 0};
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 600;
-            timeTillMaxEffect = 15;
+            timeTillMaxEffect = 60;
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;
