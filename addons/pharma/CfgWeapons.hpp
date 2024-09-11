@@ -278,7 +278,7 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class kat_10ml_syringe_txa_2: ACE_ItemCore {
+    class kat_syringe_txa_10ml_2: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Syringe_txa_10_2_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
@@ -289,7 +289,7 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class kat_5ml_syringe_txa_1: ACE_ItemCore {
+    class kat_syringe_txa_5ml_1: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Syringe_txa_5_1_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
@@ -300,7 +300,7 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class kat_5ml_syringe_txa_2: ACE_ItemCore {
+    class kat_syringe_txa_5ml_2: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Syringe_txa_5_2_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
@@ -311,7 +311,7 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class kat_5ml_syringe_eaca_1: ACE_ItemCore {
+    class kat_syringe_eaca_5ml_1: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Syringe_eaca_5_1_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
@@ -322,7 +322,7 @@ class CfgWeapons {
             mass = 1;
         };
     };
-    class kat_5ml_syringe_eaca_2: ACE_ItemCore {
+    class kat_syringe_eaca_5ml_2: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Syringe_eaca_5_2_Display);
         picture = QPATHTOF(ui\icon_fast_io.paa);
