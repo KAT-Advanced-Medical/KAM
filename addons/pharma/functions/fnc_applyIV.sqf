@@ -27,6 +27,7 @@ private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
 private _IVpfh = _patient getVariable [QGVAR(IVpfh), [0,0,0,0,0,0]];
 private _IVpfhActual = _IVpfh select _partIndex;
+private _IVrate = _patient getVariable [QGVAR(IVrate), [0,0,0,0,0,0]];
 
 if (_IVpfhActual > 0) then {
     [_IVpfhActual] call CBA_fnc_removePerFrameHandler;
@@ -41,35 +42,42 @@ if (_IVpfhActual > 0) then {
 switch (_usedItem) do {
     case "kat_IV_16": {
         _IVarray set [_partIndex, 2];
+        _IVrate set [_partIndex, 1];
         _patient setVariable [QGVAR(IV), _IVarray, true];
+        _patient setVariable [QGVAR(IVrate), _IVrate, true];
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "16g IV"]] call ACEFUNC(medical_treatment,addToLog);
         [_patient, "16g IV"] call ACEFUNC(medical_treatment,addToTriageCard); };
         
-    case "kat_IV_14": {     _IVarray set [_partIndex, 3];
-    _patient setVariable [QGVAR(IV), _IVarray, true];
+    case "kat_IV_14": {     
+        _IVarray set [_partIndex, 3];
+        _IVrate set [_partIndex, 1.5];
+        _patient setVariable [QGVAR(IV), _IVarray, true];
+        _patient setVariable [QGVAR(IVrate), _IVrate, true];
+        [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "14g IV"]] call ACEFUNC(medical_treatment,addToLog);
+        [_patient, "14g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};
 
-    [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "14g IV"]] call ACEFUNC(medical_treatment,addToLog);
-    [_patient, "14g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};
-
-    case "kat_IV_20": {     _IVarray set [_partIndex, 4];
-    _patient setVariable [QGVAR(IV), _IVarray, true];
-
-    [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "20g IV"]] call ACEFUNC(medical_treatment,addToLog);
-    [_patient, "20g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};
+    case "kat_IV_20": {     
+        _IVarray set [_partIndex, 4];
+        _IVrate set [_partIndex, 0.5];
+        _patient setVariable [QGVAR(IV), _IVarray, true];
+        _patient setVariable [QGVAR(IVrate), _IVrate, true];
+        [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "20g IV"]] call ACEFUNC(medical_treatment,addToLog);
+        [_patient, "20g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};
 
     case "kat_IO_FAST": {
-    _IVarray set [_partIndex, 1];
-    _patient setVariable [QGVAR(IV), _IVarray, true];
+        _IVarray set [_partIndex, 1];
+        _IVrate set [_partIndex, 0.2];
+        _patient setVariable [QGVAR(IV), _IVarray, true];
+        _patient setVariable [QGVAR(IVrate), _IVrate, true];
+        private _lidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
+        private _morphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
+        private _nalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
+        private _fentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
+        private _ketamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
+        if (_lidocaineCount <=  0.6 && _morphineCount <=  0.6 && _nalbuphineCount <=  0.6 && _fentanylCount <=  0.6 && _ketamineCount <=  0.6) then {[_patient, 0.8] call ACEFUNC(medical_status,adjustPainLevel)};
 
-    private _lidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _morphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _nalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _fentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _ketamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
-    if (_lidocaineCount <=  0.6 && _morphineCount <=  0.6 && _nalbuphineCount <=  0.6 && _fentanylCount <=  0.6 && _ketamineCount <=  0.6) then {[_patient, 0.8] call ACEFUNC(medical_status,adjustPainLevel)};
-
-    [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
-    [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
+        [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
+        [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
     default {};
 };
 

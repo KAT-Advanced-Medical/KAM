@@ -46,7 +46,7 @@ private _receiver = [_patient, _medic, _medic] select ACEGVAR(medical_treatment,
 private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
 private _arrayModified = false;
 
-if !(((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 3) then {
+if !(((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 7) then {
     {
         _x params ["_bodyPartN", "_medication"];
 

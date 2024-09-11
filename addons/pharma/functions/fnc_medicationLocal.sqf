@@ -57,7 +57,7 @@ TRACE_1("Running treatmentMedicationLocal with Advanced configuration for",_pati
 private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 
 // Handle IV blockage
-if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 3) exitWith {
+if (((_patient getVariable [QGVAR(IV), [0,0,0,0,0,0]]) select _partIndex) isEqualTo 7) exitWith {
     private _occludedMedications = _patient getVariable [QACEGVAR(medical,occludedMedications), []];
     _occludedMedications pushBack [_partIndex, _classname];
     _patient setVariable [QACEGVAR(medical,occludedMedications), _occludedMedications, true];
