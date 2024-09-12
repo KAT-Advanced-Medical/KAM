@@ -85,7 +85,7 @@ class CfgVehicles {
                     exceptions[] = {"isNotInside", "isNotSitting"};
                     icon = QPATHTOF(ui\syringe.paa);
                     insertChildren = QUOTE(_this call FUNC(insertChildrenSyringe));
-                    items = "kat_5ml_syringe"
+                    items = "kat_5ml_syringe";
                 };
             };
         };
