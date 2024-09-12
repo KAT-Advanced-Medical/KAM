@@ -25,17 +25,17 @@ params ["_target", "_player", "_params"];
 _params params ["_className", "_syringeType", "_doseType"];
 
 // Combine class name, dose type, and syringe type to form the final syringe class name
-private _syringeClassName = format ["Syringe_%1_%2_%3", _className, _syringeType, _doseType];
+private _syringeClassName = format ["kat_syringe_%1_%2_%3", _className, _syringeType, _doseType];
 
 // Check if the syringe class exists
 private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
 
 if (!_hasSyringe) exitWith {
-    hint format ["Syringe type for %1 with %2 dose and %3 syringe does not exist.", _className, _doseType, _syringeType];
+    hint format ["Syringe type for %1 with %2 syringe and %3 dose does not exist.", _className, _syringeType, _doseType];
 };
 
 // Remove the base syringe and the medication from the player's inventory
-private _baseSyringe = format ["kat_%1", _syringeType];
+private _baseSyringe = format ["kat_%1_syringe", _syringeType];
 _player removeItem _baseSyringe;
 _player removeItem _className;
 
