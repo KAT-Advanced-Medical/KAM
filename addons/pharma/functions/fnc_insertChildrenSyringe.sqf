@@ -19,10 +19,10 @@
 
 params ["_target", "_player", "_params"];
 
-// Define two dose types
+// Define dose types
 private _doseTypes = ["1", "2"];
 
-// Define two syringe types
+// Define syringe types
 private _syringeTypes = ["5ml", "10ml"];
 
 // Define the medications list
@@ -43,7 +43,7 @@ private _allMedications = [
     "kat_etomidate"
 ];
 
-// Filter the player's items to get all medicines
+// Filter the player's items to get all medications
 private _medications = [];
 {
     if (_x in _allMedications) then {
@@ -55,9 +55,8 @@ private _medications = [];
     };
 } forEach (items _player);
 
-// Create the ace actions for each medication, dose type, and syringe type
+// Create the ACE actions for each medication, dose type, and syringe type
 private _actions = [];
-private _condition = {true};
 
 {
     private _medication = _x;
@@ -66,20 +65,26 @@ private _condition = {true};
         {
             private _doseType = _x;
 
-            // Format the stringtable key to include medication, dose type, and syringe type
-            private _stringtableKey = format ["STR_KAT_Pharma_SyringeAction_%1_%2_%3", _medication, _syringeType, _doseType];
+            // Construct the class name based on medication, syringe type, and dose type
+            private _className = format ["kat_syringe_%1_%2_%3", _medication, _syringeType, _doseType];
 
-            // Localize the action display name using the custom stringtable entry
-            private _displayName = localize _stringtableKey;
+            // Check if the class exists in CfgWeapons
+            if (isClass (configFile >> "CfgWeapons" >> _className)) then {
+                // Format the stringtable key to include medication, dose type, and syringe type
+                private _stringtableKey = format ["STR_KAT_Pharma_SyringeAction_%1_%2_%3", _medication, _syringeType, _doseType];
 
-            // Format the action variable name to include medication, dose type, and syringe type
-            private _actionVarName = format [QGVAR(syringe_action_%1_%2_%3), _medication, _syringeType, _doseType];
+                // Localize the action display name using the custom stringtable entry
+                private _displayName = localize _stringtableKey;
 
-            // Create the action
-            private _action = [_actionVarName, _displayName, "", FUNC(prepareSyringe), _condition, {}, [_medication, _syringeType, _doseType]] call ACEFUNC(interact_menu,createAction);
+                // Format the action variable name to include medication, dose type, and syringe type
+                private _actionVarName = format [QGVAR(syringe_action_%1_%2_%3), _medication, _syringeType, _doseType];
 
-            // Add the action to the actions array
-            _actions pushBack [_action, [], _target];
+                // Create the action
+                private _action = [_actionVarName, _displayName, "", FUNC(prepareSyringe), {true}, {}, [_medication, _syringeType, _doseType]] call ACEFUNC(interact_menu,createAction);
+
+                // Add the action to the actions array
+                _actions pushBack [_action, [], _target];
+            };
         } forEach _doseTypes;
     } forEach _syringeTypes;
 } forEach _medications;
