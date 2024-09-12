@@ -66,7 +66,7 @@ switch (_usedItem) do {
 
     case "kat_IO_FAST": {
         _IVarray set [_partIndex, 1];
-        _IVrate set [_partIndex, 0.2];
+        _IVrate set [_partIndex, 0.4];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         private _lidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);

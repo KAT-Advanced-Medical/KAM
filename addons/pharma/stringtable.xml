@@ -3782,6 +3782,198 @@
         <Key ID="STR_KAT_Pharma_Syringe_txa_10_2_DescShort">
             <English>10ml Syringe loaded with 2 grams of TXA</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_10_1_Display">
+            <English>10ml Syringe/40mg Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_10_1_DescShort">
+            <English>10ml Syringe loaded with 40mg of Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_10_1_Display">
+            <English>10ml Syringe/25mg Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_10_1_DescShort">
+            <English>10ml Syringe loaded with 25mg of Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_10_2_Display">
+            <English>10ml Syringe/80mg Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_10_2_DescShort">
+            <English>10ml Syringe loaded with 80mg of Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_10_1_Display">
+            <English>10ml Syringe/40mcg Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_10_1_DescShort">
+            <English>10ml Syringe loaded with 40mcg of Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_10_2_Display">
+            <English>10ml Syringe/80mcg Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_10_2_DescShort">
+            <English>10ml Syringe loaded with 80mcg of Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_10_1_Display">
+            <English>10ml Syringe/10mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_10_1_DescShort">
+            <English>10ml Syringe loaded with 10mg of Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_10_2_Display">
+            <English>10ml Syringe/20mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_10_2_DescShort">
+            <English>10ml Syringe loaded with 20mg of Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_norepinephrine_5_1_Display">
+            <English>5ml Syringe/150mcg Norepinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_norepinephrine_5_1_DescShort">
+            <English>5ml Syringe loaded with 150mcg of Norepinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_norepinephrine_5_2_Display">
+            <English>5ml Syringe/240mcg Norepinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_norepinephrine_5_2_DescShort">
+            <English>5ml Syringe loaded with 240mcg of Norepinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_phenylephrine_5_1_Display">
+            <English>5ml Syringe/100mcg Phenylephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_phenylephrine_5_1_DescShort">
+            <English>5ml Syringe loaded with 100mcg of Phenylephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_phenylephrine_5_2_Display">
+            <English>5ml Syringe/200mcg Phenylephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_phenylephrine_5_2_DescShort">
+            <English>5ml Syringe loaded with 200mcg of Phenylephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nitroglycerin_5_1_Display">
+            <English>5ml Syringe/50mcg Nitroglycerin</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nitroglycerin_5_1_DescShort">
+            <English>5ml Syringe loaded with 50mcg of Nitroglycerin</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nitroglycerin_5_2_Display">
+            <English>5ml Syringe/100mcg Nitroglycerin</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nitroglycerin_5_2_DescShort">
+            <English>5ml Syringe loaded with 100mcg of Nitroglycerin</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_amiodarone_5_1_Display">
+            <English>5ml Syringe/150mg Amiodarone</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_amiodarone_5_1_DescShort">
+            <English>5ml Syringe loaded with 150mg of Amiodarone</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_amiodarone_5_2_Display">
+            <English>5ml Syringe/300mg Amiodarone</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_amiodarone_5_2_DescShort">
+            <English>5ml Syringe loaded with 300mg of Amiodarone</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_5_1_Display">
+            <English>5ml Syringe/40mg Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_5_1_DescShort">
+            <English>5ml Syringe loaded with 40mg of Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_5_2_Display">
+            <English>5ml Syringe/80mg Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lidocaine_5_2_DescShort">
+            <English>5ml Syringe loaded with 80mg of Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_atropine_5_1_Display">
+            <English>5ml Syringe/0.6mg Atropine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_atropine_5_1_DescShort">
+            <English>5ml Syringe loaded with 0.6mg of Atropine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_atropine_5_2_Display">
+            <English>5ml Syringe/2mg Atropine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_atropine_5_2_DescShort">
+            <English>5ml Syringe loaded with 2mg of Atropine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_5_1_Display">
+            <English>5ml Syringe/25mg Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_5_1_DescShort">
+            <English>5ml Syringe loaded with 25mg of Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_5_2_Display">
+            <English>5ml Syringe/80mg Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_ketamine_5_2_DescShort">
+            <English>5ml Syringe loaded with 80mg of Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_5_1_Display">
+            <English>5ml Syringe/40mcg Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_5_1_DescShort">
+            <English>5ml Syringe loaded with 40mcg of Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_5_2_Display">
+            <English>5ml Syringe/80mcg Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_fentanyl_5_2_DescShort">
+            <English>5ml Syringe loaded with 80mcg of Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_5_1_Display">
+            <English>5ml Syringe/10mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_5_1_DescShort">
+            <English>5ml Syringe loaded with 10mg of Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_5_2_Display">
+            <English>5ml Syringe/20mg Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_nalbuphine_5_2_DescShort">
+            <English>5ml Syringe loaded with 20mg of Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lorazepam_5_1_Display">
+            <English>5ml Syringe/2.4mg Lorazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lorazepam_5_1_DescShort">
+            <English>5ml Syringe loaded with 2.4mg of Lorazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lorazepam_5_2_Display">
+            <English>5ml Syringe/4mg Lorazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_lorazepam_5_2_DescShort">
+            <English>5ml Syringe loaded with 4mg of Lorazepam</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_flumazenil_5_1_Display">
+            <English>5ml Syringe/0.1mg Flumazenil</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_flumazenil_5_1_DescShort">
+            <English>5ml Syringe loaded with 0.1mg of Flumazenil</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_flumazenil_5_2_Display">
+            <English>5ml Syringe/0.2mg Flumazenil</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_flumazenil_5_2_DescShort">
+            <English>5ml Syringe loaded with 0.2mg of Flumazenil</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_1_Display">
+            <English>5ml Syringe/0.2mg Etomidate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_1_DescShort">
+            <English>5ml Syringe loaded with 0.2mg of Etomidate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_2_Display">
+            <English>5ml Syringe/0.3mg Etomidate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_etomidate_5_2_DescShort">
+            <English>5ml Syringe loaded with 0.3mg of Etomidate</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_epinephrineIV_5_1_Display">
+            <English>5ml Syringe/1mg Epinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_epinephrineIV_5_1_DescShort">
+            <English>5ml Syringe loaded with 1mg of Epinephrine</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_Syringe_txa_5_1_Display">
             <English>5ml Syringe/1g TXA</English>
         </Key>
@@ -3818,12 +4010,6 @@
         <Key ID="STR_KAT_Pharma_push_EACA_IV_2">
             <English>Push 15g EACA IV</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_inject_TXA_IM_1">
-            <English>Inject 1g TXA IM</English>
-        </Key>
-        <Key ID="STR_KAT_Pharma_inject_TXA_IM_2">
-            <English>Inject 2g TXA IM</English>
-        </Key>
         <Key ID="STR_KAT_Pharma_pushing_TXA_IV_1">
             <English>Pushing 1g TXA IV</English>
         </Key>
@@ -3836,11 +4022,209 @@
         <Key ID="STR_KAT_Pharma_pushing_EACA_IV_2">
             <English>Pushing 15g EACA IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_push_norepinephrine_IV_1">
+            <English>Push 150mg Norepinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_norepinephrine_IV_2">
+            <English>Push 240mg Norepinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_phenylephrine_IV_1">
+            <English>Push 100mcg Phenylephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_phenylephrine_IV_2">
+            <English>Push 200mcg Phenylephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_nitroglycerin_IV_1">
+            <English>Push 50mcg Nitroglycerin IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_nitroglycerin_IV_2">
+            <English>Push 100mcg Nitroglycerin IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_amiodarone_IV_1">
+            <English>Push 150mg Amiodarone IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_amiodarone_IV_2">
+            <English>Push 300mg Amiodarone IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_lidocaine_IV_1">
+            <English>Push 40mg Lidocaine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_lidocaine_IV_2">
+            <English>Push 80mg Lidocaine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_atropine_IV_1">
+            <English>Push 0.6mg Atropine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_atropine_IV_2">
+            <English>Push 2mg Atropine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_ketamine_IV_1">
+            <English>Push 25mg Ketamine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_ketamine_IV_2">
+            <English>Push 80mg Ketamine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_fentanyl_IV_1">
+            <English>Push 40mcg Fentanyl IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_fentanyl_IV_2">
+            <English>Push 80mcg Fentanyl IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_nalbuphine_IV_1">
+            <English>Push 10mg Nalbuphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_nalbuphine_IV_2">
+            <English>Push 20mg Nalbuphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_lorazepam_IV_1">
+            <English>Push 2.4mg Lorazepam IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_lorazepam_IV_2">
+            <English>Push 4mg Lorazepam IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_flumazenil_IV_1">
+            <English>Push 0.1mg Flumazenil IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_flumazenil_IV_2">
+            <English>Push 0.2mg Flumazenil IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_etomidate_IV_1">
+            <English>Push 0.2mg Etomidate IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_etomidate_IV_2">
+            <English>Push 0.3mg Etomidate IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_epinephrineIV_IV_1">
+            <English>Push 1mg Epinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_norepinephrine_IV_1">
+            <English>Pushing 150mg Norepinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_norepinephrine_IV_2">
+            <English>Pushing 240mg Norepinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_phenylephrine_IV_1">
+            <English>Pushing 100mcg Phenylephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_phenylephrine_IV_2">
+            <English>Pushing 200mcg Phenylephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_nitroglycerin_IV_1">
+            <English>Pushing 50mcg Nitroglycerin IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_nitroglycerin_IV_2">
+            <English>Pushing 100mcg Nitroglycerin IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_amiodarone_IV_1">
+            <English>Pushing 150mg Amiodarone IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_amiodarone_IV_2">
+            <English>Pushing 300mg Amiodarone IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_lidocaine_IV_1">
+            <English>Pushing 40mg Lidocaine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_lidocaine_IV_2">
+            <English>Pushing 80mg Lidocaine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_atropine_IV_1">
+            <English>Pushing 0.6mg Atropine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_atropine_IV_2">
+            <English>Pushing 2mg Atropine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_ketamine_IV_1">
+            <English>Pushing 25mg Ketamine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_ketamine_IV_2">
+            <English>Pushing 80mg Ketamine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_fentanyl_IV_1">
+            <English>Pushing 40mcg Fentanyl IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_fentanyl_IV_2">
+            <English>Pushing 80mcg Fentanyl IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_nalbuphine_IV_1">
+            <English>Pushing 10mg Nalbuphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_nalbuphine_IV_2">
+            <English>Pushing 20mg Nalbuphine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_lorazepam_IV_1">
+            <English>Pushing 2.4mg Lorazepam IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_lorazepam_IV_2">
+            <English>Pushing 4mg Lorazepam IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_flumazenil_IV_1">
+            <English>Pushing 0.1mg Flumazenil IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_flumazenil_IV_2">
+            <English>Pushing 0.2mg Flumazenil IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_etomidate_IV_1">
+            <English>Pushing 0.2mg Etomidate IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_etomidate_IV_2">
+            <English>Pushing 0.3mg Etomidate IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_1">
+            <English>Pushing 1mg Epinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_TXA_IM_1">
+            <English>Inject 1g TXA IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_TXA_IM_2">
+            <English>Inject 2g TXA IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_lidocaine_IM_1">
+            <English>Inject 40mg Lidocaine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_ketamine_IM_1">
+            <English>Inject 25mg Ketamine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_ketamine_IM_2">
+            <English>Inject 80mg Ketamine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_fentanyl_IM_1">
+            <English>Inject 40mcg Fentanyl IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_fentanyl_IM_2">
+            <English>Inject 80mcg Fentanyl IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_nalbuphine_IM_1">
+            <English>Inject 10mg Nalbuphine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_inject_nalbuphine_IM_2">
+            <English>Inject 20mg Nalbuphine IM</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_injecting_TXA_IM_1">
             <English>Injecting 1g TXA IM</English>
         </Key>
         <Key ID="STR_KAT_Pharma_injecting_TXA_IM_2">
             <English>Injecting 2g TXA IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_lidocaine_IM_1">
+            <English>Injecting 40mg Lidocaine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_ketamine_IM_1">
+            <English>Injecting 25mg Ketamine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_ketamine_IM_2">
+            <English>Injecting 80mg Ketamine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_fentanyl_IM_1">
+            <English>Injecting 40mcg Fentanyl IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_fentanyl_IM_2">
+            <English>Injecting 80mcg Fentanyl IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_nalbuphine_IM_1">
+            <English>Injecting 10mg Nalbuphine IM</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_injecting_nalbuphine_IM_2">
+            <English>Injecting 20mg Nalbuphine IM</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Apply_IV_14">
             <English>Establish 14g IV</English>
@@ -3874,6 +4258,102 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeAction_kat_TXA_10ml_2">
             <English>Prep 10ml TXA 2g</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_norepinephrine_5ml_1">
+            <English>Prep 5ml Norepinephrine 150mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_norepinephrine_5ml_2">
+            <English>Prep 5ml Norepinephrine 240mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_phenylephrine_5ml_1">
+            <English>Prep 5ml Phenylephrine 100mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_phenylephrine_5ml_2">
+            <English>Prep 5ml Phenylephrine 200mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_nitroglycerin_5ml_1">
+            <English>Prep 5ml Nitroglycerin 50mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_nitroglycerin_5ml_2">
+            <English>Prep 5ml Nitroglycerin 100mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_amiodarone_5ml_1">
+            <English>Prep 5ml Amiodarone 150mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_amiodarone_5ml_2">
+            <English>Prep 5ml Amiodarone 300mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_lidocaine_5ml_1">
+            <English>Prep 5ml Lidocaine 40mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_lidocaine_5ml_2">
+            <English>Prep 5ml Lidocaine 80mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_atropine_5ml_1">
+            <English>Prep 5ml Atropine 0.6mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_atropine_5ml_2">
+            <English>Prep 5ml Atropine 2mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_ketamine_5ml_1">
+            <English>Prep 5ml Ketamine 25mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_ketamine_5ml_2">
+            <English>Prep 5ml Ketamine 80mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_fentanyl_5ml_1">
+            <English>Prep 5ml Fentanyl 40mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_fentanyl_5ml_2">
+            <English>Prep 5ml Fentanyl 80mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_nalbuphine_5ml_1">
+            <English>Prep 5ml Nalbuphine 10mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_nalbuphine_5ml_2">
+            <English>Prep 5ml Nalbuphine 20mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_lorazepam_5ml_1">
+            <English>Prep 5ml Lorazepam 2.4mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_lorazepam_5ml_2">
+            <English>Prep 5ml Lorazepam 4mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_flumazenil_5ml_1">
+            <English>Prep 5ml Flumazenil 0.1mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_flumazenil_5ml_2">
+            <English>Prep 5ml Flumazenil 0.2mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_etomidate_5ml_1">
+            <English>Prep 5ml Etomidate 0.2mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_etomidate_5ml_2">
+            <English>Prep 5ml Etomidate 0.3mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_epinephrineIV_5ml_1">
+            <English>Prep 5ml Epinephrine 1mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_lidocaine_10ml_1">
+            <English>Prep 10ml Lidocaine 40mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_ketamine_10ml_1">
+            <English>Prep 10ml Ketamine 25mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_ketamine_10ml_2">
+            <English>Prep 10ml Ketamine 80mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_fentanyl_10ml_1">
+            <English>Prep 10ml Fentanyl 40mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_fentanyl_10ml_2">
+            <English>Prep 10ml Fentanyl 80mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_nalbuphine_10ml_1">
+            <English>Prep 10ml Nalbuphine 10mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_nalbuphine_10ml_2">
+            <English>Prep 10ml Nalbuphine 20mg</English>
         </Key>
     </Package>
 </Project>

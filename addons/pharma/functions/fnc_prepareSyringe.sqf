@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: Katalam
+ * Author: Katalam, modified by Cplhardcore
  * Removes a syringe and a given medication and
  * returns a "crafted" syringe with fluid 
  *

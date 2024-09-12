@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
- * Author: Katalam
- * Insert children actions for medication sub ace self action
+ * Author: Katalam, modified by Cplhardcore
+ * Adds sub actions for preparing syringes
  *
  * Arguments:
  * 0: Player <OBJECT>
@@ -40,7 +40,8 @@ private _allMedications = [
     "kat_nalbuphine",
     "kat_lorazepam",
     "kat_flumazenil",
-    "kat_etomidate"
+    "kat_etomidate",
+    "kat_epinephrineIV"
 ];
 
 // Filter the player's items to get all medications
@@ -55,7 +56,6 @@ private _medications = [];
     };
 } forEach (items _player);
 
-// Create the ACE actions for each medication, dose type, and syringe type
 private _actions = [];
 
 {
@@ -65,24 +65,19 @@ private _actions = [];
         {
             private _doseType = _x;
 
-            // Construct the class name based on medication, syringe type, and dose type
+    
             private _className = format ["kat_syringe_%1_%2_%3", _medication, _syringeType, _doseType];
 
-            // Check if the class exists in CfgWeapons
             if (isClass (configFile >> "CfgWeapons" >> _className)) then {
-                // Format the stringtable key to include medication, dose type, and syringe type
+                
                 private _stringtableKey = format ["STR_KAT_Pharma_SyringeAction_%1_%2_%3", _medication, _syringeType, _doseType];
 
-                // Localize the action display name using the custom stringtable entry
                 private _displayName = localize _stringtableKey;
 
-                // Format the action variable name to include medication, dose type, and syringe type
                 private _actionVarName = format [QGVAR(syringe_action_%1_%2_%3), _medication, _syringeType, _doseType];
 
-                // Create the action
                 private _action = [_actionVarName, _displayName, "", FUNC(prepareSyringe), {true}, {}, [_medication, _syringeType, _doseType]] call ACEFUNC(interact_menu,createAction);
 
-                // Add the action to the actions array
                 _actions pushBack [_action, [], _target];
             };
         } forEach _doseTypes;

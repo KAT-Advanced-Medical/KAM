@@ -335,7 +335,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             maxRelief = 0.6;
         };
-        class syringe_txa_5ml__1 {
+        class syringe_kat_txa_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -347,7 +347,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_txa_5ml__2 {
+        class syringe_kat_txa_5ml_2 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -359,7 +359,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_txa_10ml_1 {
+        class syringe_kat_txa_10ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -371,7 +371,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_txa_10ml_2 {
+        class syringe_kat_txa_10ml_2 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -383,7 +383,19 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_eaca_5ml_1 {
+        class syringe_kat_eaca_5ml_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 200;
+            timeTillMaxEffect = 15;
+            maxDose = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class syringe_kat_eaca_5ml_2 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -395,17 +407,436 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_eaca_5ml_2 {
+        class syringe_kat_epinephrineIV_5ml_1 {
             painReduce = 0;
-            hrIncreaseLow[] = {0, 0};
-            hrIncreaseNormal[] = {0, 0};
-            hrIncreaseHigh[] = {0, 0};
-            timeInSystem = 600;
+            hrIncreaseLow[] = {15, 30};
+            hrIncreaseNormal[] = {10, 50};
+            hrIncreaseHigh[] = {15, 40};
+            timeInSystem = 120;
+            timeTillMaxEffect = 10;
+            maxDose = 4;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            alphaFactor = -0.3;
+            onOverDose = "";
+        };
+        class syringe_kat_norepinephrine_5ml_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 5};
+            hrIncreaseNormal[] = {5, 15};
+            hrIncreaseHigh[] = {5, 10};
+            timeInSystem = 360;
             timeTillMaxEffect = 15;
+            maxDose = 12;
+            incompatibleMedication[] = {};
+            viscosityChange = 25;
+            alphaFactor = -0.3;
+            onOverDose = "";
+        };
+        class syringe_kat_phenylephrine_5ml_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseNormal[] = {-10, -15};
+            hrIncreaseHigh[] = {-10, -15};
+            timeInSystem = 360;
+            timeTillMaxEffect = 15;
+            maxDose = 6;
+            maxDoseDeviation = 4;
+            incompatibleMedication[] = {};
+            viscosityChange = 50;
+            alphaFactor = -0.5;
+            onOverDose = "";
+        };
+        class syringe_kat_nitroglycerin_5ml_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {5, 10};
+            hrIncreaseNormal[] = {10, 15};
+            hrIncreaseHigh[] = {10, 15};
+            timeInSystem = 360;
+            timeTillMaxEffect = 15;
+            maxDose = 6;
+            maxDoseDeviation = 4;
+            incompatibleMedication[] = {};
+            viscosityChange = -25;
+            alphaFactor = 0.3;
+            onOverDose = "";
+        };
+        class syringe_kat_fentanyl_5ml_1 {
+            painReduce = 1;
+            hrIncreaseLow[] = {-10, -5};
+            hrIncreaseNormal[] = {-15, -10};
+            hrIncreaseHigh[] = {-20, -10};
+            timeInSystem = 900;
+            timeTillMaxEffect = 20;
+            maxDose = 1;
+            maxDoseDeviation = 1;
+            incompatibleMedication[] = {};
+            viscosityChange = -10;
+            onOverDose = "";
+            opioidRelief = 1.5;
+        };
+        class syringe_kat_ketamine_5ml_1 {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {5, 10};
+            hrIncreaseNormal[] = {10, 15};
+            hrIncreaseHigh[] = {10, 15};
+            timeInSystem = 900;
+            timeTillMaxEffect = 15;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = 10;
+            onOverDose = "";
+        };
+        class syringe_kat_nalbuphine_5ml_1 {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-5, 0};
+            hrIncreaseNormal[] = {-10, -5};
+            hrIncreaseHigh[] = {-15, -5};
+            timeInSystem = 900;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = -5;
+            onOverDose = "";
+            opioidRelief = 1.2;
+        };
+        class syringe_kat_atropine_5ml_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {20, 40};
+            hrIncreaseNormal[] = {10, 25};
+            hrIncreaseHigh[] = {5, 15};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            incompatibleMedication[]= {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class syringe_kat_amiodarone_5ml_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0, 0};
+            hrIncreaseNormal[] = {0, 0, 0};
+            hrIncreaseHigh[] = {0, 0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            incompatibleMedication[]= {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class syringe_kat_lidocaine_5ml_1 {
+            painReduce = 0.2;
+            hrIncreaseLow[] = {0, 0, 0};
+            hrIncreaseNormal[] = {0, 0, 0};
+            hrIncreaseHigh[] = {0, 0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 4;
+            incompatibleMedication[]= {};
+            onOverDose = "";
+            maxRelief = 0.6;
+        };
+        class syringe_kat_etomidate_5ml_1 {
+            painReduce = 0.4;
+            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseNormal[] = {-15, -20};
+            hrIncreaseHigh[] = {-20, -30};
+            timeInSystem = 45;
+            timeTillMaxEffect = 5;
             maxDose = 10;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
+        };
+        class syringe_kat_flumazenil_5ml_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 60;
+            timeTillMaxEffect = 5;
+            maxDose = 3;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class syringe_kat_lorazepam_5ml_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 60;
+            timeTillMaxEffect = 5;
+            maxDose = 3;
+            incompatibleMedication[] = {};
+            viscosityChange = -15;
+            onOverDose = "";
+        };
+        class syringe_kat_epinephrineIV_5ml_2 {
+            painReduce = 0;
+            hrIncreaseLow[] = {15, 30};
+            hrIncreaseNormal[] = {10, 50};
+            hrIncreaseHigh[] = {15, 40};
+            timeInSystem = 120;
+            timeTillMaxEffect = 10;
+            maxDose = 4;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            alphaFactor = -0.3;
+            onOverDose = "";
+        };
+        class syringe_kat_norepinephrine_5ml_2 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 5};
+            hrIncreaseNormal[] = {5, 15};
+            hrIncreaseHigh[] = {5, 10};
+            timeInSystem = 360;
+            timeTillMaxEffect = 15;
+            maxDose = 12;
+            incompatibleMedication[] = {};
+            viscosityChange = 25;
+            alphaFactor = -0.3;
+            onOverDose = "";
+        };
+        class syringe_kat_phenylephrine_5ml_2 {
+            painReduce = 0;
+            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseNormal[] = {-10, -15};
+            hrIncreaseHigh[] = {-10, -15};
+            timeInSystem = 360;
+            timeTillMaxEffect = 15;
+            maxDose = 6;
+            maxDoseDeviation = 4;
+            incompatibleMedication[] = {};
+            viscosityChange = 50;
+            alphaFactor = -0.5;
+            onOverDose = "";
+        };
+        class syringe_kat_nitroglycerin_5ml_2 {
+            painReduce = 0;
+            hrIncreaseLow[] = {5, 10};
+            hrIncreaseNormal[] = {10, 15};
+            hrIncreaseHigh[] = {10, 15};
+            timeInSystem = 360;
+            timeTillMaxEffect = 15;
+            maxDose = 6;
+            maxDoseDeviation = 4;
+            incompatibleMedication[] = {};
+            viscosityChange = -25;
+            alphaFactor = 0.3;
+            onOverDose = "";
+        };
+        class syringe_kat_fentanyl_5ml_2 {
+            painReduce = 1;
+            hrIncreaseLow[] = {-10, -5};
+            hrIncreaseNormal[] = {-15, -10};
+            hrIncreaseHigh[] = {-20, -10};
+            timeInSystem = 900;
+            timeTillMaxEffect = 20;
+            maxDose = 1;
+            maxDoseDeviation = 1;
+            incompatibleMedication[] = {};
+            viscosityChange = -10;
+            onOverDose = "";
+            opioidRelief = 1.5;
+        };
+        class syringe_kat_ketamine_5ml_2 {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {5, 10};
+            hrIncreaseNormal[] = {10, 15};
+            hrIncreaseHigh[] = {10, 15};
+            timeInSystem = 900;
+            timeTillMaxEffect = 15;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = 10;
+            onOverDose = "";
+        };
+        class syringe_kat_nalbuphine_5ml_2 {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-5, 0};
+            hrIncreaseNormal[] = {-10, -5};
+            hrIncreaseHigh[] = {-15, -5};
+            timeInSystem = 900;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = -5;
+            onOverDose = "";
+            opioidRelief = 1.2;
+        };
+        class syringe_kat_atropine_5ml_2 {
+            painReduce = 0;
+            hrIncreaseLow[] = {20, 40};
+            hrIncreaseNormal[] = {10, 25};
+            hrIncreaseHigh[] = {5, 15};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            incompatibleMedication[]= {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class syringe_kat_amiodarone_5ml_2 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0, 0};
+            hrIncreaseNormal[] = {0, 0, 0};
+            hrIncreaseHigh[] = {0, 0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            incompatibleMedication[]= {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class syringe_kat_lidocaine_5ml_2 {
+            painReduce = 0.2;
+            hrIncreaseLow[] = {0, 0, 0};
+            hrIncreaseNormal[] = {0, 0, 0};
+            hrIncreaseHigh[] = {0, 0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 4;
+            incompatibleMedication[]= {};
+            onOverDose = "";
+            maxRelief = 0.6;
+        };
+        class syringe_kat_etomidate_5ml_2 {
+            painReduce = 0.4;
+            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseNormal[] = {-15, -20};
+            hrIncreaseHigh[] = {-20, -30};
+            timeInSystem = 45;
+            timeTillMaxEffect = 5;
+            maxDose = 10;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class syringe_kat_flumazenil_5ml_2 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 60;
+            timeTillMaxEffect = 5;
+            maxDose = 3;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+            onOverDose = "";
+        };
+        class syringe_kat_lorazepam_5ml_2 {
+            painReduce = 0;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
+            timeInSystem = 60;
+            timeTillMaxEffect = 5;
+            maxDose = 3;
+            incompatibleMedication[] = {};
+            viscosityChange = -15;
+            onOverDose = "";
+        };
+        class syringe_kat_fentanyl_10ml_1 {
+            painReduce = 1;
+            hrIncreaseLow[] = {-10, -5};
+            hrIncreaseNormal[] = {-15, -10};
+            hrIncreaseHigh[] = {-20, -10};
+            timeInSystem = 900;
+            timeTillMaxEffect = 20;
+            maxDose = 1;
+            maxDoseDeviation = 1;
+            incompatibleMedication[] = {};
+            viscosityChange = -10;
+            onOverDose = "";
+            opioidRelief = 1.5;
+        };
+        class syringe_kat_ketamine_10ml_1 {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {5, 10};
+            hrIncreaseNormal[] = {10, 15};
+            hrIncreaseHigh[] = {10, 15};
+            timeInSystem = 900;
+            timeTillMaxEffect = 15;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = 10;
+            onOverDose = "";
+        };
+        class syringe_kat_nalbuphine_10ml_1 {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-5, 0};
+            hrIncreaseNormal[] = {-10, -5};
+            hrIncreaseHigh[] = {-15, -5};
+            timeInSystem = 900;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = -5;
+            onOverDose = "";
+            opioidRelief = 1.2;
+        };
+        class syringe_kat_lidocaine_10ml_1 {
+            painReduce = 0.2;
+            hrIncreaseLow[] = {0, 0, 0};
+            hrIncreaseNormal[] = {0, 0, 0};
+            hrIncreaseHigh[] = {0, 0, 0};
+            timeInSystem = 120;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 4;
+            incompatibleMedication[]= {};
+            onOverDose = "";
+            maxRelief = 0.6;
+        };
+        class syringe_kat_fentanyl_10ml_2 {
+            painReduce = 1;
+            hrIncreaseLow[] = {-10, -5};
+            hrIncreaseNormal[] = {-15, -10};
+            hrIncreaseHigh[] = {-20, -10};
+            timeInSystem = 900;
+            timeTillMaxEffect = 20;
+            maxDose = 1;
+            maxDoseDeviation = 1;
+            incompatibleMedication[] = {};
+            viscosityChange = -10;
+            onOverDose = "";
+            opioidRelief = 1.5;
+        };
+        class syringe_kat_ketamine_10ml_2 {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {5, 10};
+            hrIncreaseNormal[] = {10, 15};
+            hrIncreaseHigh[] = {10, 15};
+            timeInSystem = 900;
+            timeTillMaxEffect = 15;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = 10;
+            onOverDose = "";
+        };
+        class syringe_kat_nalbuphine_10ml_2 {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-5, 0};
+            hrIncreaseNormal[] = {-10, -5};
+            hrIncreaseHigh[] = {-15, -5};
+            timeInSystem = 900;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = -5;
+            onOverDose = "";
+            opioidRelief = 1.2;
         };
     };
 };
