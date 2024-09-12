@@ -67,7 +67,7 @@ private _condition = {true};
             private _doseType = _x;
 
             // Format the stringtable key to include medication, dose type, and syringe type
-            private _stringtableKey = format ["STR_KAT_SyringeAction_%1_%2_%3", _medication, _syringeType, _doseType];
+            private _stringtableKey = format ["STR_KAT_Pharma_SyringeAction_%1_%2_%3", _medication, _syringeType, _doseType];
 
             // Localize the action display name using the custom stringtable entry
             private _displayName = localize _stringtableKey;
