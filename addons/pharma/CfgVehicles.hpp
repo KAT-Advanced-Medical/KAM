@@ -83,7 +83,6 @@ class CfgVehicles {
                     statement = "true";
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
-                    icon = QPATHTOF(ui\syringe.paa);
                     insertChildren = QUOTE(_this call FUNC(insertChildrenSyringe));
                     items = "kat_5ml_syringe";
                 };

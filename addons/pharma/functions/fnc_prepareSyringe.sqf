@@ -9,14 +9,14 @@
  * 1: Player <NUMBER>
  * 2: Params <ARRAY>
  *  0: Class name of medication <STRING>
- *  1: Dose type <STRING>
- *  2: Syringe type <STRING>
+ *  1: Syringe type <STRING>
+ *  2: Dose type <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * [player, player, ["kat_TXA", "lowDose", "smallSyringe"]] call kat_pharma_fnc_prepareSyringe;
+ * [player, player, ["kat_TXA", "1", "5ml"]] call kat_pharma_fnc_prepareSyringe;
  *
  * Public: No
  */

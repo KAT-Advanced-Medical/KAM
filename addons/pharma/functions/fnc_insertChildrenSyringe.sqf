@@ -20,10 +20,10 @@
 params ["_target", "_player", "_params"];
 
 // Define two dose types
-private _doseTypes = ["lowDose", "highDose"];
+private _doseTypes = ["1", "2"];
 
 // Define two syringe types
-private _syringeTypes = ["smallSyringe", "largeSyringe"];
+private _syringeTypes = ["5ml", "10ml"];
 
 // Define the medications list
 private _allMedications = [
@@ -72,12 +72,12 @@ private _condition = {true};
             private _actionVarName = format [QGVAR(syringe_action_%1_%2_%3), _medication, _syringeType, _doseType];
 
             // Create the action
-            private _action = [_actionVarName, _displayName, "", FUNC(prepareSyringe), _condition, {}, [_medication, _doseType, _syringeType]] call ACEFUNC(interact_menu,createAction);
+            private _action = [_actionVarName, _displayName, "", FUNC(prepareSyringe), _condition, {}, [_medication, _syringeType, _doseType]] call ACEFUNC(interact_menu,createAction);
 
             // Add the action to the actions array
             _actions pushBack [_action, [], _target];
-        } forEach _syringeTypes;
-    } forEach _doseTypes;
+        } forEach _doseTypes;
+    } forEach _syringeTypes;
 } forEach _medications;
 
 _actions
