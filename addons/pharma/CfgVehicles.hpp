@@ -80,12 +80,12 @@ class CfgVehicles {
             class KAT_Equipment {
                 class KAT_Medication {
                     displayName = CSTRING(Medication_Action);
-                    condition = QUOTE((player hasItem 'kat_5ml_syringe') || (player hasItem 'kat_10ml_syringe'));
                     statement = "true";
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
                     icon = QPATHTOF(ui\syringe.paa);
                     insertChildren = QUOTE(_this call FUNC(insertChildrenSyringe));
+                    items = "kat_5ml_syringe"
                 };
             };
         };
