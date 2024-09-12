@@ -3851,6 +3851,12 @@
         <Key ID="STR_KAT_Pharma_Medication_Action">
             <English>Prepare syringe</English>
         </Key>
+         <Key ID="STR_KAT_Pharma_SyringeAction_kat_EACA">
+            <English>Prep EACA </English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_TXA">
+            <English>Prep TXA</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_SyringeAction_kat_EACA_5ml_1">
             <English>Prep 5ml EACA 7.5g</English>
         </Key>
