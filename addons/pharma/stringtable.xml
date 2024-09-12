@@ -3848,5 +3848,8 @@
         <Key ID="STR_KAT_Pharma_Apply_IV_20">
             <English>Establish 20g IV</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_Medication_Action">
+            <English>Prepare syringe</English>
+        </Key>
     </Package>
 </Project>
