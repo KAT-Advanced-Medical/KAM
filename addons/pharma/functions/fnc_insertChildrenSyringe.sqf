@@ -66,7 +66,11 @@ private _condition = {true};
         {
             private _doseType = _x;
 
-            private _displayName = getText (configFile >> "CfgWeapons" >> _medication >> "displayName");
+            // Format the stringtable key to include medication, dose type, and syringe type
+            private _stringtableKey = format ["STR_KAT_SyringeAction_%1_%2_%3", _medication, _syringeType, _doseType];
+
+            // Localize the action display name using the custom stringtable entry
+            private _displayName = localize _stringtableKey;
 
             // Format the action variable name to include medication, dose type, and syringe type
             private _actionVarName = format [QGVAR(syringe_action_%1_%2_%3), _medication, _syringeType, _doseType];
