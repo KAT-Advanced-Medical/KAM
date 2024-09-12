@@ -25,7 +25,7 @@ params ["_target", "_player", "_params"];
 _params params ["_className", "_syringeType", "_doseType"];
 
 // Combine class name, dose type, and syringe type to form the final syringe class name
-private _syringeClassName = format ["Syringe_%1_%2_%3", _className, _syringeType, _doseType,];
+private _syringeClassName = format ["Syringe_%1_%2_%3", _className, _syringeType, _doseType];
 
 // Check if the syringe class exists
 private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
