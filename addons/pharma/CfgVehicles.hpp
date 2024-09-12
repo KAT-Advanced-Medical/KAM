@@ -74,4 +74,20 @@ class CfgVehicles {
             MACRO_ADDMAGAZINE(kat_Painkiller,15);
         };
     };
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class KAT_Equipment {
+                class KAT_Medication {
+                    displayName = CSTRING(Medication_Action);
+                    statement = "true";
+                    showDisabled = 0;
+                    exceptions[] = {"isNotInside", "isNotSitting"};
+                    icon = QPATHTOF(ui\syringe.paa);
+                    insertChildren = QUOTE(_this call FUNC(insertChildrenSyringe));
+                    items[] = {"kat_5ml_syringe"||"kat_10ml_syringe"};
+                };
+            };
+        };
+    };
 };
