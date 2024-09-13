@@ -720,7 +720,7 @@ PREP_RECOMPILE_END;
 [
     QGVAR(medLvl_NalbuphineIM),
     "LIST",
-    [LLSTRING(medLvl_Nalbuphine)],
+    [LLSTRING(medLvl_NalbuphineIM)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_Nalbuphine)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
     true

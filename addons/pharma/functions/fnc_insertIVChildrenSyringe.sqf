@@ -19,13 +19,8 @@
 
 params ["_target", "_player", "_params"];
 
-// Define dose types
 private _doseTypes = ["1", "2"];
-
-// Define syringe types
-private _syringeTypes = ["5ml", "10ml"];
-
-// Define the medications list
+private _syringeTypes = ["5ml"];
 private _allMedications = [
     "kat_EACA",
     "kat_TXA",
@@ -33,25 +28,13 @@ private _allMedications = [
     "kat_phenylephrine",
     "kat_nitroglycerin",
     "kat_amiodarone",
-    "kat_lidocaine",
     "kat_atropine",
-    "kat_ketamine",
-    "kat_fentanyl",
-    "kat_nalbuphine",
-    "kat_lorazepam",
-    "kat_flumazenil",
-    "kat_etomidate",
     "kat_epinephrineIV"
 ];
 
-// Filter the player's items to get all medications
 private _medications = [];
 {
     if (_x in _allMedications) then {
-        _medications pushBackUnique _x;
-    };
-    // Fallback for additional mods
-    if ((getNumber (configFile >> "CfgWeapons" >> _x >> "isMedication")) > 0) then {
         _medications pushBackUnique _x;
     };
 } forEach (items _player);

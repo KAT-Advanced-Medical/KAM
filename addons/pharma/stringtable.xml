@@ -4274,8 +4274,14 @@
         <Key ID="STR_KAT_Pharma_Apply_IV_20">
             <English>Establish 20g IV</English>
         </Key>
-        <Key ID="STR_KAT_Pharma_Medication_Action">
-            <English>Prepare syringe</English>
+        <Key ID="STR_KAT_Pharma_Medication_IMAction">
+            <English>Prepare IM syringe</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Medication_IVPainAction">
+            <English>Prepare IV syringe (Pain Management/Surgery)</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Medication_IVAction">
+            <English>Prepare IV syringe (Cardiac/Trauma) </English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeAction_kat_EACA">
             <English>Prep EACA </English>
@@ -4374,6 +4380,9 @@
             <English>Prep 5ml Etomidate 0.3mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeAction_kat_epinephrineIV_5ml_1">
+            <English>Prep 5ml Epinephrine 10mcg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SyringeAction_kat_epinephrineIV_5ml_2">
             <English>Prep 5ml Epinephrine 1mg</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeAction_kat_lidocaine_10ml_1">

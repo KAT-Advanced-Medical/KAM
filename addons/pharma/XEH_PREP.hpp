@@ -47,5 +47,7 @@ PREP(treatmentAdvanced_Reorientation);
 PREP(treatmentAdvanced_ReorientationLocal);
 PREP(treatmentAdvanced_TXALocal);
 PREP(vehicleCheckDialysis);
-PREP(insertChildrenSyringe);
+PREP(insertIVChildrenSyringe);
+PREP(insertIVPainChildrenSyringe);
+PREP(insertIMChildrenSyringe);
 PREP(prepareSyringe);
