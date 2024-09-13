@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>t_syringe_kat_epi
 <Project name="KAT">
     <Package name="Pharma">
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV">
@@ -3969,9 +3969,15 @@
             <English>5ml Syringe loaded with 0.3mg of Etomidate</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Syringe_epinephrineIV_5_1_Display">
-            <English>5ml Syringe/1mg Epinephrine</English>
+            <English>5ml Syringe/10mcg Epinephrine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Syringe_epinephrineIV_5_1_DescShort">
+            <English>5ml Syringe loaded with 10mcg of Epinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_epinephrineIV_5_2_Display">
+            <English>5ml Syringe/1mg Epinephrine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_Syringe_epinephrineIV_5_2_DescShort">
             <English>5ml Syringe loaded with 1mg of Epinephrine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_Syringe_txa_5_1_Display">
@@ -4095,6 +4101,9 @@
             <English>Push 0.3mg Etomidate IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_push_epinephrineIV_IV_1">
+            <English>Push 10mcg Epinephrine IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_push_epinephrineIV_IV_2">
             <English>Push 1mg Epinephrine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_norepinephrine_IV_1">
@@ -4170,6 +4179,9 @@
             <English>Pushing 0.3mg Etomidate IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_1">
+            <English>Pushing 10mcg Epinephrine IV</English>
+        </Key>
+         <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_2">
             <English>Pushing 1mg Epinephrine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_inject_TXA_IM_1">

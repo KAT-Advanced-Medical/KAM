@@ -22,6 +22,10 @@ private _partIndex = ALL_BODY_PARTS find toLower _bodyPart;
 private _IVarray = _patient getVariable [QGVAR(IV), [0,0,0,0,0,0]];
 private _IVactual = _IVarray select _partIndex;
 private _countTXA = [_patient, "TXA"] call ACEFUNC(medical_status,getMedicationCount);
+private _countTXAiV51= [_patient, "syringe_kat_txa_5ml_1"] call ACEFUNC(medical_status,getMedicationCount);
+private _countTXAiV51 = [_patient, "syringe_kat_txa_5ml_2"] call ACEFUNC(medical_status,getMedicationCount);
+private _countTXAiM101 = [_patient, "syringe_kat_txa_10ml_1"] call ACEFUNC(medical_status,getMedicationCount);
+private _countTXAiM102 = [_patient, "syringe_kat_txa_10ml_2"] call ACEFUNC(medical_status,getMedicationCount);
 private _allowStack = missionNamespace getVariable [QGVAR(allowStackScript_TXA), true];
 private _keepRunning = missionNamespace getVariable [QGVAR(keepScriptRunning_TXA), false];
 private _cycleTime = missionNamespace getVariable [QGVAR(bandageCycleTime_TXA), 5];
@@ -50,7 +54,7 @@ if (!(GVAR(coagulation)) || GVAR(coagulation_allow_TXA_script)) then {
 
     if (_IVactual != 5) then {
 
-        if (_countTXA > 1 && !(_allowStack)) exitWith {};
+        if ((_countTXA > 1 || _countTXAiV51 > 1 || _countTXAiV52 > 1 || _countTXAiM101 > 1 || _countTXAiM102 > 1) && !(_allowStack)) exitWith {};
 
         [{
             params ["_args", "_idPFH"];

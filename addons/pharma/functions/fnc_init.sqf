@@ -38,7 +38,7 @@ if (!local _unit) exitWith {};
     {
         _x params ["_medication"];
 
-        if (_medication in ["Epinephrine", "EpinephrineIV", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine"]) exitWith {
+        if (_medication in ["Epinephrine", "EpinephrineIV", "Phenylephrine", "Nitroglycerin", "Lidocaine", "Norepinephrine", "syringe_kat_norepinephrine_5ml_1", "syringe_kat_norepinephrine_5ml_2", "syringe_kat_phenylephrine_5ml_1", "syringe_kat_phenylephrine_5ml_2", "syringe_kat_nitroglycerin_5ml_1", "syringe_kat_nitroglycerin_5ml_2", "syringe_kat_epinephrineIV_5ml_1", "syringe_kat_epinephrineIV_5ml_2", "syringe_kat_lidocaine_5ml_1", "syringe_kat_lidocaine_5ml_2","syringe_kat_lidocaine_10ml_1"]) exitWith {
             _alpha = true;
         };
     } forEach (_medicationArray);
@@ -46,7 +46,7 @@ if (!local _unit) exitWith {};
     {
         _x params ["_medication"];
 
-        if (_medication in ["Fentanyl", "Morphine", "Nalbuphine"]) exitWith {
+        if (_medication in ["Fentanyl", "Morphine", "Nalbuphine", "syringe_kat_fentanyl_5ml_1", "syringe_kat_fentanyl_5ml_2", "syringe_kat_nalbuphine_5ml_1", "syringe_kat_nalbuphine_5ml_2","syringe_kat_fentanyl_10ml_1", "syringe_kat_fentanyl_10ml_2", "syringe_kat_nalbuphine_10ml_1", "syringe_kat_nalbuphine_10ml_2"]) exitWith {
             _opioid = true;
         };
     } forEach (_medicationArray);

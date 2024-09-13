@@ -112,22 +112,22 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 //Change Alpha Factor
 [_patient, _alphaFactor] call FUNC(alphaAction);
 
-// Extract the medication name from the full class name safely.
 _medicationParts = (_className select [13, count _className - 13]) splitString "_";
 
 if (count _medicationParts > 4) then {
     _medicationName = _medicationParts select 4;
     
-    // Check if the extracted medication name is in the list.
-    if (_medicationName in ["lorazepam","ketamine","EACA","TXA","atropine","amiodarone","flumazenil"]) then {
+    if (_medicationName in ["lorazepam","EACA","TXA","amiodarone","flumazenil"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
+    };
+
+    if (_medicationName in ["ketamine","atropine",]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
     };
 
     if (_medicationName in ["fentanyl","morphine","nalbuphine"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
     };
 } else {
-    // Handle the case where the medication name couldn't be extracted properly.
-    // This could be logging an error, or taking some other action.
     diag_log format ["Unexpected _className format: %1", _className];
 };

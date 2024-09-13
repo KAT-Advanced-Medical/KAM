@@ -14,7 +14,7 @@
  *
  * Public: No
  */
-params ["_patient"];
+params ["_patient", "_classname"];
 
 private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
 

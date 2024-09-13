@@ -340,9 +340,9 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
             hrIncreaseHigh[] = {0, 0};
-            timeInSystem = 120;
+            timeInSystem = 180;
             timeTillMaxEffect = 5;
-            maxDose = 3;
+            maxDose = 2;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
@@ -352,9 +352,9 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
             hrIncreaseHigh[] = {0, 0};
-            timeInSystem = 120;
+            timeInSystem = 240;
             timeTillMaxEffect = 5;
-            maxDose = 3;
+            maxDose = 13;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
@@ -365,8 +365,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseNormal[] = {0, 0};
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 120;
-            timeTillMaxEffect = 5;
-            maxDose = 3;
+            timeTillMaxEffect = 15;
+            maxDose = 2;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
@@ -377,8 +377,8 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseNormal[] = {0, 0};
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 120;
-            timeTillMaxEffect = 5;
-            maxDose = 3;
+            timeTillMaxEffect = 15;
+            maxDose = 2;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
@@ -390,7 +390,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 200;
             timeTillMaxEffect = 15;
-            maxDose = 10;
+            maxDose = 3;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
@@ -402,7 +402,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {0, 0};
             timeInSystem = 600;
             timeTillMaxEffect = 15;
-            maxDose = 10;
+            maxDose = 3;
             incompatibleMedication[] = {};
             viscosityChange = 0;
             onOverDose = "";
@@ -410,11 +410,11 @@ class ACE_ADDON(Medical_Treatment) {
         class syringe_kat_epinephrineIV_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {15, 30};
-            hrIncreaseNormal[] = {10, 50};
+            hrIncreaseNormal[] = {10, 40};
             hrIncreaseHigh[] = {15, 40};
             timeInSystem = 120;
             timeTillMaxEffect = 10;
-            maxDose = 4;
+            maxDose = 2;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
             alphaFactor = -0.3;
@@ -427,7 +427,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {5, 10};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
-            maxDose = 12;
+            maxDose = 6;
             incompatibleMedication[] = {};
             viscosityChange = 25;
             alphaFactor = -0.3;
@@ -438,10 +438,10 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-10, -15};
             hrIncreaseHigh[] = {-10, -15};
-            timeInSystem = 360;
+            timeInSystem = 300;
             timeTillMaxEffect = 15;
-            maxDose = 6;
-            maxDoseDeviation = 4;
+            maxDose = 3;
+            maxDoseDeviation = 3;
             incompatibleMedication[] = {};
             viscosityChange = 50;
             alphaFactor = -0.5;
@@ -462,7 +462,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
         };
         class syringe_kat_fentanyl_5ml_1 {
-            painReduce = 1;
+            painReduce = 0.8;
             hrIncreaseLow[] = {-10, -5};
             hrIncreaseNormal[] = {-15, -10};
             hrIncreaseHigh[] = {-20, -10};
@@ -473,23 +473,23 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -10;
             onOverDose = "";
-            opioidRelief = 1.5;
+            opioidRelief = 1.2;
         };
         class syringe_kat_ketamine_5ml_1 {
-            painReduce = 0.8;
+            painReduce = 0.7;
             hrIncreaseLow[] = {5, 10};
             hrIncreaseNormal[] = {10, 15};
             hrIncreaseHigh[] = {10, 15};
             timeInSystem = 900;
             timeTillMaxEffect = 15;
             maxDose = 2;
-            maxDoseDeviation = 2;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
         };
         class syringe_kat_nalbuphine_5ml_1 {
-            painReduce = 0.6;
+            painReduce = 0.5;
             hrIncreaseLow[] = {-5, 0};
             hrIncreaseNormal[] = {-10, -5};
             hrIncreaseHigh[] = {-15, -5};
@@ -500,7 +500,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = -5;
             onOverDose = "";
-            opioidRelief = 1.2;
+            opioidRelief = 1.1;
         };
         class syringe_kat_atropine_5ml_1 {
             painReduce = 0;
@@ -509,16 +509,16 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {5, 15};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
-            maxDose = 4;
+            maxDose = 2;
             incompatibleMedication[]= {};
             viscosityChange = 0;
             onOverDose = "";
         };
         class syringe_kat_amiodarone_5ml_1 {
             painReduce = 0;
-            hrIncreaseLow[] = {0, 0, 0};
-            hrIncreaseNormal[] = {0, 0, 0};
-            hrIncreaseHigh[] = {0, 0, 0};
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
             maxDose = 4;
@@ -528,9 +528,9 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class syringe_kat_lidocaine_5ml_1 {
             painReduce = 0.2;
-            hrIncreaseLow[] = {0, 0, 0};
-            hrIncreaseNormal[] = {0, 0, 0};
-            hrIncreaseHigh[] = {0, 0, 0};
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
             maxDose = 2;
@@ -541,7 +541,7 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class syringe_kat_etomidate_5ml_1 {
             painReduce = 0.4;
-            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseLow[] = {-10, -5};
             hrIncreaseNormal[] = {-15, -20};
             hrIncreaseHigh[] = {-20, -30};
             timeInSystem = 45;
@@ -577,62 +577,62 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class syringe_kat_epinephrineIV_5ml_2 {
             painReduce = 0;
-            hrIncreaseLow[] = {15, 30};
-            hrIncreaseNormal[] = {10, 50};
-            hrIncreaseHigh[] = {15, 40};
-            timeInSystem = 120;
+            hrIncreaseLow[] = {25, 40};
+            hrIncreaseNormal[] = {20, 50};
+            hrIncreaseHigh[] = {20, 40};
+            timeInSystem = 180;
             timeTillMaxEffect = 10;
-            maxDose = 4;
+            maxDose = 2;
             maxDoseDeviation = 2;
             incompatibleMedication[] = {};
-            alphaFactor = -0.3;
+            alphaFactor = -0.4;
             onOverDose = "";
         };
         class syringe_kat_norepinephrine_5ml_2 {
             painReduce = 0;
-            hrIncreaseLow[] = {0, 5};
-            hrIncreaseNormal[] = {5, 15};
-            hrIncreaseHigh[] = {5, 10};
+            hrIncreaseLow[] = {0, 10};
+            hrIncreaseNormal[] = {10, 15};
+            hrIncreaseHigh[] = {10, 15};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
-            maxDose = 12;
+            maxDose = 6;
             incompatibleMedication[] = {};
             viscosityChange = 25;
-            alphaFactor = -0.3;
+            alphaFactor = -0.4;
             onOverDose = "";
         };
         class syringe_kat_phenylephrine_5ml_2 {
             painReduce = 0;
-            hrIncreaseLow[] = {-5, -10};
-            hrIncreaseNormal[] = {-10, -15};
-            hrIncreaseHigh[] = {-10, -15};
-            timeInSystem = 360;
+            hrIncreaseLow[] = {-15, -5};
+            hrIncreaseNormal[] = {-15, -25};
+            hrIncreaseHigh[] = {-15, -20};
+            timeInSystem = 300;
             timeTillMaxEffect = 15;
-            maxDose = 6;
-            maxDoseDeviation = 4;
+            maxDose = 3;
+            maxDoseDeviation = 3;
             incompatibleMedication[] = {};
             viscosityChange = 50;
-            alphaFactor = -0.5;
+            alphaFactor = -0.7;
             onOverDose = "";
         };
         class syringe_kat_nitroglycerin_5ml_2 {
             painReduce = 0;
-            hrIncreaseLow[] = {5, 10};
-            hrIncreaseNormal[] = {10, 15};
+            hrIncreaseLow[] = {5, 15};
+            hrIncreaseNormal[] = {10, 20};
             hrIncreaseHigh[] = {10, 15};
             timeInSystem = 360;
             timeTillMaxEffect = 15;
             maxDose = 6;
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
-            viscosityChange = -25;
-            alphaFactor = 0.3;
+            viscosityChange = -30;
+            alphaFactor = 0.5;
             onOverDose = "";
         };
         class syringe_kat_fentanyl_5ml_2 {
             painReduce = 1;
-            hrIncreaseLow[] = {-10, -5};
-            hrIncreaseNormal[] = {-15, -10};
+            hrIncreaseLow[] = {-15, -10};
+            hrIncreaseNormal[] = {-25, -15};
             hrIncreaseHigh[] = {-20, -10};
             timeInSystem = 900;
             timeTillMaxEffect = 20;
@@ -645,21 +645,21 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class syringe_kat_ketamine_5ml_2 {
             painReduce = 0.8;
-            hrIncreaseLow[] = {5, 10};
-            hrIncreaseNormal[] = {10, 15};
+            hrIncreaseLow[] = {5, 15};
+            hrIncreaseNormal[] = {10, 20};
             hrIncreaseHigh[] = {10, 15};
             timeInSystem = 900;
             timeTillMaxEffect = 15;
             maxDose = 2;
-            maxDoseDeviation = 2;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
         };
         class syringe_kat_nalbuphine_5ml_2 {
             painReduce = 0.6;
-            hrIncreaseLow[] = {-5, 0};
-            hrIncreaseNormal[] = {-10, -5};
+            hrIncreaseLow[] = {-10, 0};
+            hrIncreaseNormal[] = {-15, -5};
             hrIncreaseHigh[] = {-15, -5};
             timeInSystem = 900;
             timeTillMaxEffect = 30;
@@ -677,7 +677,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseHigh[] = {5, 15};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
-            maxDose = 4;
+            maxDose = 2;
             incompatibleMedication[]= {};
             viscosityChange = 0;
             onOverDose = "";
@@ -695,21 +695,21 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
         };
         class syringe_kat_lidocaine_5ml_2 {
-            painReduce = 0.2;
-            hrIncreaseLow[] = {0, 0, 0};
-            hrIncreaseNormal[] = {0, 0, 0};
-            hrIncreaseHigh[] = {0, 0, 0};
+            painReduce = 0.3;
+            hrIncreaseLow[] = {0, 0};
+            hrIncreaseNormal[] = {0, 0};
+            hrIncreaseHigh[] = {0, 0};
             timeInSystem = 120;
             timeTillMaxEffect = 30;
             maxDose = 2;
-            maxDoseDeviation = 4;
+            maxDoseDeviation = 3;
             incompatibleMedication[]= {};
             onOverDose = "";
             maxRelief = 0.6;
         };
         class syringe_kat_etomidate_5ml_2 {
             painReduce = 0.4;
-            hrIncreaseLow[] = {-5, -10};
+            hrIncreaseLow[] = {-10, -5};
             hrIncreaseNormal[] = {-15, -20};
             hrIncreaseHigh[] = {-20, -30};
             timeInSystem = 45;
@@ -744,38 +744,38 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
         };
         class syringe_kat_fentanyl_10ml_1 {
-            painReduce = 1;
+            painReduce = 0.8;
             hrIncreaseLow[] = {-10, -5};
             hrIncreaseNormal[] = {-15, -10};
             hrIncreaseHigh[] = {-20, -10};
-            timeInSystem = 900;
-            timeTillMaxEffect = 20;
+            timeInSystem = 300;
+            timeTillMaxEffect = 60;
             maxDose = 1;
             maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             viscosityChange = -10;
             onOverDose = "";
-            opioidRelief = 1.5;
+            opioidRelief = 1.3;
         };
         class syringe_kat_ketamine_10ml_1 {
-            painReduce = 0.8;
+            painReduce = 0.7;
             hrIncreaseLow[] = {5, 10};
             hrIncreaseNormal[] = {10, 15};
             hrIncreaseHigh[] = {10, 15};
-            timeInSystem = 900;
+            timeInSystem = 300;
             timeTillMaxEffect = 15;
             maxDose = 2;
-            maxDoseDeviation = 2;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
         };
         class syringe_kat_nalbuphine_10ml_1 {
-            painReduce = 0.6;
+            painReduce = 0.5;
             hrIncreaseLow[] = {-5, 0};
             hrIncreaseNormal[] = {-10, -5};
             hrIncreaseHigh[] = {-15, -5};
-            timeInSystem = 900;
+            timeInSystem = 300;
             timeTillMaxEffect = 30;
             maxDose = 2;
             maxDoseDeviation = 2;
@@ -799,13 +799,13 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class syringe_kat_fentanyl_10ml_2 {
             painReduce = 1;
-            hrIncreaseLow[] = {-10, -5};
-            hrIncreaseNormal[] = {-15, -10};
-            hrIncreaseHigh[] = {-20, -10};
-            timeInSystem = 900;
-            timeTillMaxEffect = 20;
+            hrIncreaseLow[] = {-15, -5};
+            hrIncreaseNormal[] = {-20, -10};
+            hrIncreaseHigh[] = {-25, -10};
+            timeInSystem = 300;
+            timeTillMaxEffect = 60;
             maxDose = 1;
-            maxDoseDeviation = 1;
+            maxDoseDeviation = 0;
             incompatibleMedication[] = {};
             viscosityChange = -10;
             onOverDose = "";
@@ -813,13 +813,13 @@ class ACE_ADDON(Medical_Treatment) {
         };
         class syringe_kat_ketamine_10ml_2 {
             painReduce = 0.8;
-            hrIncreaseLow[] = {5, 10};
-            hrIncreaseNormal[] = {10, 15};
-            hrIncreaseHigh[] = {10, 15};
-            timeInSystem = 900;
+            hrIncreaseLow[] = {5, 20};
+            hrIncreaseNormal[] = {10, 25};
+            hrIncreaseHigh[] = {10, 25};
+            timeInSystem = 300;
             timeTillMaxEffect = 15;
-            maxDose = 2;
-            maxDoseDeviation = 2;
+            maxDose = 1;
+            maxDoseDeviation = 1;
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
@@ -829,7 +829,7 @@ class ACE_ADDON(Medical_Treatment) {
             hrIncreaseLow[] = {-5, 0};
             hrIncreaseNormal[] = {-10, -5};
             hrIncreaseHigh[] = {-15, -5};
-            timeInSystem = 900;
+            timeInSystem = 300;
             timeTillMaxEffect = 30;
             maxDose = 2;
             maxDoseDeviation = 2;
