@@ -69,6 +69,6 @@ if ((_classname isEqualTo syringe_kat_ketamine_5ml_2) || (_classname isEqualTo s
     _patient setVariable [QEGVAR(surgery,sedated), true, true];
     [_patient, true] call ACEFUNC(medical,setUnconscious);
 
-    [[_patient setVariable [QEGVAR(surgery,sedated), false, true];
+    [[_patient setVariable [QEGVAR(surgery,sedated), false, true]
     [_patient, false] call ACEFUNC(medical,setUnconscious)], 90] call CBA_fnc_waitAndExecute;
 };
