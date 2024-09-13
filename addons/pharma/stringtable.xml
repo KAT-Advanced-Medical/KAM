@@ -1919,6 +1919,12 @@
             <Finnish>TXA:n hoitoaika</Finnish>
             <Russian>Время обработки для TXA</Russian>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_TXAIM">
+            <English>Medical level required for IM TXA</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_TXAIM">
+            <English>Treatment time for IM TXA</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Norepinephrine">
             <English>Medical level required for Norepinephrine</English>
             <Polish>Poziom wyszkolenia medycznego dla Noradrenaliny</Polish>
@@ -2068,6 +2074,12 @@
             <Portuguese>Tempo de uso de Lidocaína</Portuguese>
             <Finnish>Lidokaiinin hoitoaika</Finnish>
             <Russian>Время обработки Лидокаином</Russian>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_LidocaineIM">
+            <English>Medical level required for IM Lidocaine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_LidocaineIM">
+            <English>Treatment time for IM Lidocaine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Atropine">
             <English>Medical level required for Atropine</English>
@@ -2249,6 +2261,12 @@
             <Finnish>Ketamiinin hoitoaika</Finnish>
             <Russian>Время обработки Кетамином</Russian>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_KetamineIM">
+            <English>Medical level required for IM Ketamine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_KetamineIM">
+            <English>Treatment time for IM Ketamine</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Fentanyl">
             <English>Medical level required for Fentanyl</English>
             <Polish>Poziom wyszkolenia medycznego dla Fentanylu</Polish>
@@ -2279,6 +2297,12 @@
             <Finnish>Fentanyylin hoitoaika</Finnish>
             <Russian>Время обработки Фентанилом</Russian>
         </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_FentanylIM">
+            <English>Medical level required for IM Fentanyl</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_FentanylIM">
+            <English>Treatment time for IM Fentanyl</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_medLvl_Nalbuphine">
             <English>Medical level required for Nalbuphine</English>
             <Polish>Poziom wyszkolenia medycznego dla Nalbuphinu</Polish>
@@ -2308,6 +2332,12 @@
             <Portuguese>Tempo de uso de Nalbufina</Portuguese>
             <Finnish>Nalbufiinin hoitoaika</Finnish>
             <Russian>Время обработки Налбуфином</Russian>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_NalbuphineIM">
+            <English>Medical level required for IM Nalbuphine</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_treatmentTime_NalbuphineIM">
+            <English>Treatment time for IM Nalbuphine</English>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_medLvl_Penthrox">
             <English>Medical level required for Penthrox Inhaler</English>
@@ -4366,6 +4396,18 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SyringeAction_kat_nalbuphine_10ml_2">
             <English>Prep 10ml Nalbuphine 20mg</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_PrepIVSyringe">
+            <English>IV Prep level</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_PrepIVSyringe_Desc">
+            <English>Medical level required to prep IV medications</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_PrepIMSyringe">
+            <English>IM Prep level</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_PrepIMSyringe_Desc">
+            <English>Medical level required to prep IM medications</English>
         </Key>
     </Package>
 </Project>
