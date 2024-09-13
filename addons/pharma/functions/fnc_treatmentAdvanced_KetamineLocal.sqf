@@ -21,6 +21,12 @@ params ["_target"];
 
 if !(alive _target) exitWith {};
 if (ACE_Player != _target) exitWith {};
+if (_classname isEqualTo syringe_kat_ketamine_5ml_2) then {
+    _patient setVariable [QEGVAR(surgery,sedated), true, true];
+    [_patient, true] call ACEFUNC(medical,setUnconscious);
+
+    [[_patient setVariable [QEGVAR(surgery,sedated), false, true]], 90] call CBA_fnc_waitAndExecute;
+};
 
 if (GVAR(chromatic_aberration_checkbox_ketamine)) then {
     [{
@@ -65,7 +71,7 @@ if (GVAR(chromatic_aberration_checkbox_ketamine)) then {
     [_target], 60] call CBA_fnc_waitAndExecute; // chroma start after 60s
 };
 
-if ((_classname isEqualTo syringe_kat_ketamine_5ml_2) || (_classname isEqualTo syringe_kat_ketamine_10ml_2)) then {
+if (_classname isEqualTo syringe_kat_ketamine_5ml_2) then {
     _patient setVariable [QEGVAR(surgery,sedated), true, true];
     [_patient, true] call ACEFUNC(medical,setUnconscious);
 
