@@ -78,13 +78,14 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_SelfActions {
             class KAT_Equipment {
-                class KAT_Medication {
+                class KAT_PrepSyringe {
                     displayName = CSTRING(Medication_Action);
                     statement = "true";
+                    medicRequired = QGVAR(medLvl_prepIV);
                     showDisabled = 0;
                     exceptions[] = {"isNotInside", "isNotSitting"};
+                    icon = QPATHTOF(ui\syringe.paa);
                     insertChildren = QUOTE(_this call FUNC(insertChildrenSyringe));
-                    items = "kat_5ml_syringe";
                 };
             };
         };
