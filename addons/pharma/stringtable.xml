@@ -4181,7 +4181,7 @@
         <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_1">
             <English>Pushing 10mcg Epinephrine IV</English>
         </Key>
-         <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_2">
+        <Key ID="STR_KAT_Pharma_pushing_epinephrineIV_IV_2">
             <English>Pushing 1mg Epinephrine IV</English>
         </Key>
         <Key ID="STR_KAT_Pharma_inject_TXA_IM_1">
