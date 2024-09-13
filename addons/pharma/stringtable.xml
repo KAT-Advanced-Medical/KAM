@@ -4418,5 +4418,11 @@
         <Key ID="STR_KAT_Pharma_medLvl_PrepIMSyringe_Desc">
             <English>Medical level required to prep IM medications</English>
         </Key>
+        <Key ID="STR_KAT_Pharma_advancedMedicationSystem">
+            <English>Enable Advanced Medication System</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_advancedMedicationSystem_Desc">
+            <English>Enables Advanced Medication System and disables Basic System</English>
+        </Key>
     </Package>
 </Project>

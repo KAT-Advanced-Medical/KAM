@@ -64,6 +64,15 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(AMS_Enabled),
+    "CHECKBOX",
+    [LLSTRING(advancedMedicationSystem), LLSTRING(advancedMedicationSystem_Desc)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(medLvl_PrepIVSyringe),
     "LIST",
     [LLSTRING(medLvl_PrepIVSyringe), LLSTRING(medLvl_PrepIVSyringe_Desc)],
