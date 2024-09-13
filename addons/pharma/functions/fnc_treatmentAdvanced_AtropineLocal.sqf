@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_patient", "_classname"];
+params ["_patient", "_bodyPart", "_classname"];
 
 if (_classname isEqualTo syringe_kat_atropine_5ml_2) exitWith {};
 

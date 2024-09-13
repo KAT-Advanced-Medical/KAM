@@ -10,24 +10,17 @@
  * None
  *
  * Example:
- * [player] call kat_pharma_fnc_ketaminePP;
+ * [player, leftLeg, syringe_kat_ketamine_5ml_2] call kat_pharma_fnc_ketamineLocal;
  *
  * Public: No
  */
 
 
 /// ChromAberration effect
-params ["_target"];
+params ["_patient", "_bodyPart", "_classname"];
 
 if !(alive _target) exitWith {};
 if (ACE_Player != _target) exitWith {};
-if (_classname isEqualTo syringe_kat_ketamine_5ml_2) then {
-    _patient setVariable [QEGVAR(surgery,sedated), true, true];
-    [_patient, true] call ACEFUNC(medical,setUnconscious);
-
-    [[_patient setVariable [QEGVAR(surgery,sedated), false, true]], 90] call CBA_fnc_waitAndExecute;
-};
-
 if (GVAR(chromatic_aberration_checkbox_ketamine)) then {
     [{
         params ["_target"];
