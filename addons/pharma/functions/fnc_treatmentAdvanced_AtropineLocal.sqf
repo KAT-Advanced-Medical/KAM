@@ -17,7 +17,7 @@
 
 params ["_patient", "_classname"];
 
-if (_classname isEqualTo syringe_kat_atropine_5ml_2) exitwith {};
+if (_classname isEqualTo syringe_kat_atropine_5ml_2) exitWith {};
 
 private _medicationArray = _patient getVariable [QACEGVAR(medical,medications), []];
 
