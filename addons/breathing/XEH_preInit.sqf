@@ -419,16 +419,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-//Enables White Flashing on Below 90% SPO2
-[
-    QGVAR(enableSPO2Flashing),
-    "CHECKBOX",
-    [LLSTRING(SETTING_SPO2Flashing_display), LLSTRING(SETTING_SPO2Flashing_DESC)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [true],
-    true
-] call CBA_Settings_fnc_init;
-
 //Enable stamina loss by low SPO2
 [
     QGVAR(staminaLossAtLowSPO2),
@@ -438,16 +428,6 @@ PREP_RECOMPILE_END;
     [true],
     true
 ]   call CBA_Settings_fnc_init;
-
-//low SPO2 Warning Level
-[
-    QGVAR(lowSPO2Level),
-    "SLIDER",
-    [LLSTRING(SETTING_lowSPO2Level_display), LLSTRING(SETTING_lowSPO2Level_DESC)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [0, 100, 90, 1],
-    true
-] call CBA_Settings_fnc_init;
 
 // enable/disable etco2 and respiratory rate readouts
 [
@@ -543,7 +523,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_settings_fnc_init;
 
-// Sets whether medical facilites and/or vehicles provide direct oxygen and refill capability 
+// Sets whether medical facilites and/or vehicles provide direct oxygen and refill capability
 [
     QGVAR(locationProvideOxygen),
     "LIST",

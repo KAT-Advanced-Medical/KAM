@@ -24,17 +24,17 @@ if (ACEGVAR(common,OldIsCamera) || {!alive ACE_player}) exitWith {
 BEGIN_COUNTER(handleEffects);
 
 // - Current state info -------------------------------------------------------
-private _effect             = GET_PP(ACE_player);
+private _opioid          = GET_PP(ACE_player);
 private _spO2             = GET_SPO2(ACE_player);
 private _unconscious      = IS_UNCONSCIOUS(ACE_player);
 
 // - Visual effects -----------------------------------------------------------
 
-[!_unconscious, _effect] call FUNC(effectOpioid);
+[!_unconscious, _opioid] call FUNC(effectOpioid);
 
 [
     !_unconscious,
-    linearConversion [EGVAR(breathing,lowSPO2Level), EGVAR(breathing,SpO2_dieValue), _spO2, 0, 1, true]
+    linearConversion [GVAR(effectLowSpO2), EGVAR(breathing,SpO2_dieValue), _spO2, 0, 1, true]
 ] call FUNC(effectLowSpO2);
 
 

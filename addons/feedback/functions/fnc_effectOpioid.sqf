@@ -17,7 +17,7 @@
  */
 
 params ["_enable", "_intensity"];
-
+if !GVAR(enableOpioidEffect) exitWith {};
 if (!_enable || {_intensity < 0.15}) exitWith {
     if (GVAR(opioidEffect) != -1) then { GVAR(opioidEffect) ppEffectEnable false; };
 };
