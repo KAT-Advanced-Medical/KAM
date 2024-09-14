@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player, leftLeg, syringe_kat_ketamine_5ml_2] call kat_pharma_fnc_ketamineLocal;
+ * [player, leftLeg, syringe_kat_ketamine_5ml_2] call kat_pharma_fnc_treatmentAdvanced_ketamineLocal;
  *
  * Public: No
  */
@@ -20,6 +20,14 @@
 params ["_patient", "_bodyPart", "_classname"];
 
 if !(alive _target) exitWith {};
+if (_classname isEqualTo "syringe_kat_ketamine_5ml_2") then {
+    _patient setVariable [QEGVAR(surgery,sedated), true, true];
+    [_patient, true] call ACEFUNC(medical,setUnconscious);
+
+    [{ 
+        _patient setVariable ["kat_surgery_sedated", false, true]; 
+    }, 90] call CBA_fnc_waitAndExecute;
+};
 if (ACE_Player != _target) exitWith {};
 if (GVAR(chromatic_aberration_checkbox_ketamine)) then {
     [{
@@ -62,11 +70,4 @@ if (GVAR(chromatic_aberration_checkbox_ketamine)) then {
         };
     },
     [_target], 60] call CBA_fnc_waitAndExecute; // chroma start after 60s
-};
-
-if (_classname isEqualTo "syringe_kat_ketamine_5ml_2") then {
-    _patient setVariable [QEGVAR(surgery,sedated), true, true];
-    [_patient, true] call ACEFUNC(medical,setUnconscious);
-
-    [[_patient setVariable [QEGVAR(surgery,sedated), false, true]], 90] call CBA_fnc_waitAndExecute;
 };

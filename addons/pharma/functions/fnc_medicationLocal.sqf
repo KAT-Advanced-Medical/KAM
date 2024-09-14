@@ -111,23 +111,35 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 
 //Change Alpha Factor
 [_patient, _alphaFactor] call FUNC(alphaAction);
+if ([QGVAR(AMS_Enabled)] call CBA_settings_fnc_get) then {
 
-_medicationParts = (_className select [13, count _className - 13]) splitString "_";
+    private _medicationParts = (_className splitString "_");
 
-if (count _medicationParts > 4) then {
-    _medicationName = _medicationParts select 4;
+    if (count _medicationParts > 4) then {
+        _medicationName = _medicationParts select 2;
     
-    if (_medicationName in ["lorazepam","EACA","TXA","amiodarone","flumazenil"]) then {
+        if (_medicationName in ["lorazepam","EACA","TXA","amiodarone","flumazenil"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
-    };
+        };
 
-    if (_medicationName in ["ketamine","atropine"]) then {
+        if (_medicationName in ["ketamine","atropine"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
+        };
+
+        if (_medicationName in ["fentanyl","morphine","nalbuphine"]) then {
+        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
+        };
+
+        } else {
+            diag_log format ["Unexpected _className format: %1", _className];
+        };
+    } else {
+        
+    if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
+        [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
     };
 
-    if (_medicationName in ["fentanyl","morphine","nalbuphine"]) then {
-        [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
+    if (_className in ["Fentanyl","Morphine","Nalbuphine"]) then {
+    [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart, _opioidRelief], _patient] call CBA_fnc_targetEvent;
     };
-} else {
-    diag_log format ["Unexpected _className format: %1", _className];
 };
