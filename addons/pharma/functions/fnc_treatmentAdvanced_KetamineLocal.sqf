@@ -17,18 +17,11 @@
 
 
 /// ChromAberration effect
-params ["_patient", "_bodyPart", "_classname"];
+params ["_target"];
 
 if !(alive _target) exitWith {};
-if (_classname isEqualTo "syringe_kat_ketamine_5ml_2") then {
-    _patient setVariable [QEGVAR(surgery,sedated), true, true];
-    [_patient, true] call ACEFUNC(medical,setUnconscious);
-
-    [{ 
-        _patient setVariable ["kat_surgery_sedated", false, true]; 
-    }, 90] call CBA_fnc_waitAndExecute;
-};
 if (ACE_Player != _target) exitWith {};
+
 if (GVAR(chromatic_aberration_checkbox_ketamine)) then {
     [{
         params ["_target"];

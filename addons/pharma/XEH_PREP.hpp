@@ -51,3 +51,5 @@ PREP(insertIVChildrenSyringe);
 PREP(insertIVPainChildrenSyringe);
 PREP(insertIMChildrenSyringe);
 PREP(prepareSyringe);
+PREP(checkIVType);
+PREP(treatmentAdvanced_KetamineSedationLocal);
