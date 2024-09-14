@@ -624,6 +624,7 @@ class ACE_Medical_Treatment_Actions {
     class syringe_kat_ketamine_5ml_2: syringe_kat_ketamine_5ml_1 {
         displayName = CSTRING(push_ketamine_IV_2);
         displayNameProgress = CSTRING(pushing_ketamine_IV_2);
+        category = "surgery";
         items[] = {"kat_syringe_kat_ketamine_5ml_2"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -669,6 +670,7 @@ class ACE_Medical_Treatment_Actions {
     class syringe_kat_lorazepam_5ml_1: syringe_kat_EACA_5ml_1 {
         displayName = CSTRING(push_lorazepam_IV_1);
         displayNameProgress = CSTRING(pushing_lorazepam_IV_1);
+        category = "surgery";
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_lorazepam);
@@ -681,6 +683,7 @@ class ACE_Medical_Treatment_Actions {
     class syringe_kat_lorazapam_5ml_1: syringe_kat_lorazepam_5ml_1 {
         displayName = CSTRING(push_lorazepam_IV_2);
         displayNameProgress = CSTRING(pushing_lorazepam_IV_2);
+        category = "surgery";
         items[] = {"kat_syringe_kat_lorazepam_5ml_2"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -688,6 +691,7 @@ class ACE_Medical_Treatment_Actions {
     class syringe_kat_flumazenil_5ml_1: syringe_kat_EACA_5ml_1 {
         displayName = CSTRING(push_flumazenil_IV_1);
         displayNameProgress = CSTRING(pushing_flumazenil_IV_1);
+        category = "surgery";
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_flumazenil);
@@ -700,6 +704,7 @@ class ACE_Medical_Treatment_Actions {
     class syringe_kat_flumazenil_5ml_2: syringe_kat_flumazenil_5ml_1 {
         displayName = CSTRING(push_flumazenil_IV_2);
         displayNameProgress = CSTRING(pushing_flumazenil_IV_2);
+        category = "surgery";
         items[] = {"kat_syringe_kat_flumazenil_5ml_2"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -707,6 +712,7 @@ class ACE_Medical_Treatment_Actions {
     class syringe_kat_etomidate_5ml_1: syringe_kat_EACA_5ml_1 {
         displayName = CSTRING(push_etomidate_IV_1);
         displayNameProgress = CSTRING(pushing_etomidate_IV_1);
+        category = "surgery";
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_etomidate);
@@ -719,6 +725,7 @@ class ACE_Medical_Treatment_Actions {
     class syringe_kat_etomidate_5ml_2: syringe_kat_etomidate_5ml_1 {
         displayName = CSTRING(push_etomidate_IV_2);
         displayNameProgress = CSTRING(pushing_flumazenil_IV_2);
+        category = "surgery";
         items[] = {"kat_syringe_kat_etomidate_5ml_2"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
