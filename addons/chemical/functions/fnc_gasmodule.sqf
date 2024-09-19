@@ -29,7 +29,7 @@ if (_activated) then {
         private _object = (synchronizedObjects _logic) select 0;
         if (_isSealable) then {
             private _jipID = [QGVAR(createSealActionGlobal), [_object, _logic]] call CBA_fnc_globalEventJIP;
-            [_jipID, object] call CBA_fnc_removeGlobalEventJIP;
+            [_jipID, _object] call CBA_fnc_removeGlobalEventJIP;
         };
 
         [_object, getPos _object, _radius_max, _radius_min, _gastype] call FUNC(gasCheck);

@@ -20,8 +20,6 @@ if (!local _unit) exitWith {};
 [_unit] call FUNC(fullHealLocal);
 
 [_unit] call FUNC(coughing);
-[_unit] call FUNC(handleGasMaskDur);
-[_unit] call FUNC(breathing);
 
 [{
     params ["_args", "_pfhID"];

@@ -6,8 +6,10 @@
 [QGVAR(gasAI), LINKFUNC(gasAI)] call CBA_fnc_addEventHandler;
 [QGVAR(afterWait), LINKFUNC(afterWait)] call CBA_fnc_addEventHandler;
 [QGVAR(enteredZone), LINKFUNC(chemDetector)] call CBA_fnc_addEventHandler;
+[QGVAR(enteredZone), LINKFUNC(handleGasMaskDur)] call CBA_fnc_addEventHandler;
 [QGVAR(createZoneGlobal), LINKFUNC(createZone)] call CBA_fnc_addEventHandler;
 [QGVAR(createSealActionGlobal), LINKFUNC(createSealAction)] call CBA_fnc_addEventHandler;
+["ace_glassesChanged", LINKFUNC(breathing)] call CBA_fnc_addEventHandler;
 
 // ACE Events
 [QACEGVAR(medical_gui,updateInjuryListGeneral), LINKFUNC(gui_updateInjuryListGeneral)] call CBA_fnc_addEventHandler;

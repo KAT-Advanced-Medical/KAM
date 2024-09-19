@@ -19,9 +19,6 @@
 */
 params ["_position", "_lifetime", "_radius", "_gasType"];
 
-systemchat format ["Client Owner: %1", clientOwner];
-systemChat format ["Owner ID: %1", owner];
-
 private _logic = "ACE_LogicDummy" createVehicle _position;
 
 [_logic, _position, _radius, 0, _gasType] call FUNC(gasCheck);
