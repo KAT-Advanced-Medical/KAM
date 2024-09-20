@@ -75,32 +75,25 @@ private _fnc_onConfirm = {
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     if (isNull _logic) exitWith {};
 
-    private _gasType = _display getVariable [QGVAR(ui_gastype),0];
+    private _gasLevel = _display getVariable [QGVAR(ui_gastype), 0];
+    private _radius = _display getVariable [QGVAR(ui_radius), 20];
 
-    private _radius_max = _display getVariable [QGVAR(ui_radiusMax), 20];
-    private _radius_min = _display getVariable [QGVAR(ui_radiusMin), 10];
-    if (_radius_min > _radius_max) then {
-        [CSTRING(GasModule_Needbigger)] call ACEFUNC(zeus,showMessage);
-    } else {
-        private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
-        if (isNull _logic) exitWith {};
+    if (isServer) then {
+        [QGVAR(addGasSource), [_logic, _radius, _gasLevel, _logic, {
+            params ["_endTime", "_logic"];
 
-        if !(isNull attachedTo _logic) then {
-            private _object = attachedTo _logic;
-
-            [_logic, getPos _object, _radius_max, _radius_min, _gasType] call FUNC(gasCheck);
-
-            if (_display getVariable [QGVAR(ui_sealable), false]) then {
-                private _jipID = [QGVAR(createSealActionGlobal), [_object, _logic]] call CBA_fnc_globalEventJIP;
-                [_jipID, _object] call CBA_fnc_removeGlobalEventJIP;
+            systemChat "strefa z zeusa utworzona";
+            // If logic no longer exists, exit
+            if (isNull _logic) exitWith {
+                false // return
             };
 
-        } else {
-            [_logic, getPos _logic, _radius_max, _radius_min, _gasType] call FUNC(gasCheck);
-        };
-
-        _display setVariable [QGVAR(Confirmed), true];
+            CBA_missionTime < _endTime // return
+        }, [CBA_missionTime + 1e10, _logic]]] call CBA_fnc_serverEvent;
     };
+
+    _display setVariable [QGVAR(Confirmed), true];
+
 };
 
 _display displayAddEventHandler ["Unload", _fnc_onUnload];

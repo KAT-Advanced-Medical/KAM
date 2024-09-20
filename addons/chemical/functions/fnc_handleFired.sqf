@@ -44,8 +44,16 @@ private _gasLvL = [_configClass, "KAT_toxicLvL", 1] call BIS_fnc_returnConfigEnt
         _args set [1, getPos _projectile];
     };
 
-    private _jipID = [QGVAR(createZoneGlobal), [_posArr, _lifetime, _radius, _gasLvL]] call CBA_fnc_globalEventJIP;
-    [_jipID] call CBA_fnc_removeGlobalEventJIP;
+    [QGVAR(addGasSource), [_projectile, _radius, _gasLevel, _projectile, {
+        params ["_endTime", "_projectile"];
+
+        // If projectile no longer exists, exit
+        if (isNull _projectile) exitWith {
+            false // return
+        };
+
+        CBA_missionTime < _endTime // return
+    }, [CBA_missionTime + _timeToLive, _projectile]]] call CBA_fnc_serverEvent;
 
     [_handler] call CBA_fnc_removePerFrameHandler;
 }, 0, [_projectile, [0, 0, 0], [_lifetime, _radius, _gasLvL]]] call CBA_fnc_addPerFrameHandler;

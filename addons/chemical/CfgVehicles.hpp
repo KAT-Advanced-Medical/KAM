@@ -100,28 +100,21 @@ class CfgVehicles {
 
         class Arguments: AttributesBase
         {
-            class Radius_Max
+            class Radius
             {
                 displayName = CSTRING(UI_max_range);
                 tooltip = CSTRING(GasModule_min_radius_dcs);
                 typeName = "NUMBER";
                 defaultValue = 20;
             };
-            class Radius_Min
-            {
-                displayName = CSTRING(UI_min_range);
-                tooltip = CSTRING(GasModule_max_radius_dcs);
-                typeName = "NUMBER";
-                defaultValue = 10;
-            };
             class GAS_Type
             {
                 displayName = CSTRING(UI_gasType);
                 typeName = "NUMBER";
                 class values {
-                    class toxicgas {
+                    class ToxicGas {
                         name = CSTRING(LvL1_Gas);
-                        value = 0;
+                        value = 1;
                         default = 1;
                     };
                    /* class csgas {
@@ -214,5 +207,12 @@ class CfgVehicles {
         author = "DiGii";
         ammo = "KAT_Gas_TripWireMine_Ammo";
         displayName = CSTRING(TriWire_Gas_Name);
+    };
+
+
+    class Static;
+    class GVAR(logic): Static {
+        scope = 1;
+        displayName = "";
     };
 };
