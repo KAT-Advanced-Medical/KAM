@@ -41,10 +41,12 @@ switch (_gasLevel) do {
     case 0: {
         _unit setVariable [QGVAR(poisoned), true];
         [_unit, "CSGas", 300, 30, -10, 0, -10] call ACEFUNC(medical_status,addMedicationAdjustment);
+        [_unit, 0.5] call ACEFUNC(medical_status,adjustPainLevel); // Adjust pain based on severity
     };
     case 1: {
         _unit setVariable [QGVAR(poisoned), true];
         [_unit, "ToxicGas", 300, 30, -10, 0, -10] call ACEFUNC(medical_status,addMedicationAdjustment);
+        [_unit, 1] call ACEFUNC(medical_status,adjustPainLevel); // Adjust pain based on severity
     };
     default {};
 };

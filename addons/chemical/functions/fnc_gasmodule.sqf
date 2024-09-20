@@ -28,16 +28,19 @@ if (isServer) then {
     [{
         params ["_logic", "_radius", "_gasLevel", "_isSealable", "_units"];
 
-        [QGVAR(addGasSource), [_units select 0, _radius, _gasLevel, _logic, {
-            params ["_endTime", "_logic"];
+        {
+            [QGVAR(addGasSource), [_x, _radius, _gasLevel, _x, {
+                params ["_endTime", "_logic"];
 
-            // If logic no longer exists, exit
-            if (isNull _logic) exitWith {
-                false // return
-            };
+                // If logic no longer exists, exit
+                if (isNull _logic) exitWith {
+                    false // returns
+                };
 
-            CBA_missionTime < _endTime // return
-        }, [CBA_missionTime + 1e10, _logic], _isSealable]] call CBA_fnc_serverEvent;
+                CBA_missionTime < _endTime // return
+            }, [CBA_missionTime + 1e10, _logic], _isSealable]] call CBA_fnc_serverEvent;
+
+        } forEach _units;
 
     }, [_logic, _radius, _gasLevel, _isSealable, _units], 1] call CBA_fnc_waitAndExecute;
 

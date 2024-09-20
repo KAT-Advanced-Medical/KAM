@@ -720,5 +720,8 @@
         <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
             <English>Determines how loud the breathing sounds are when using the gas mask</English>
         </Key>
+        <Key ID="STR_KAT_Chemical_OnlyObject">
+            <English>Must be placed on object</English>
+        </Key>
     </Package>
 </Project>
