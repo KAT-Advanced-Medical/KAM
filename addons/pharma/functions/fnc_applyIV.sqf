@@ -69,14 +69,13 @@ switch (_usedItem) do {
         _IVrate set [_partIndex, 0.4];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
-        [
-            _medications = [
-            ["Lidocaine", "syringe_kat_lidocaine_5ml_1", "syringe_kat_lidocaine_5ml_2", "syringe_kat_lidocaine_10ml_1", "syringe_kat_lidocaine_10ml_2"],
-            ["Morphine"],
-            ["Nalbuphine", "syringe_kat_nalbuphine_5ml_1", "syringe_kat_nalbuphine_5ml_2", "syringe_kat_nalbuphine_10ml_1", "syringe_kat_nalbuphine_10ml_2"],
-            ["Fentanyl", "syringe_kat_fentanyl_5ml_1", "syringe_kat_fentanyl_5ml_2", "syringe_kat_fentanyl_10ml_1", "syringe_kat_fentanyl_10ml_2"],
-            ["Ketamine", "syringe_kat_ketamine_5ml_1", "syringe_kat_ketamine_5ml_2", "syringe_kat_ketamine_10ml_1", "syringe_kat_ketamine_10ml_2"]];
-            private _totalCheck = true;
+        private _medications = [];
+            _medications pushBack ["Lidocaine", "syringe_kat_lidocaine_5ml_1", "syringe_kat_lidocaine_5ml_2", "syringe_kat_lidocaine_10ml_1", "syringe_kat_lidocaine_10ml_2"];
+            _medications pushBack ["Morphine"];
+            _medications pushBack ["Nalbuphine", "syringe_kat_nalbuphine_5ml_1", "syringe_kat_nalbuphine_5ml_2", "syringe_kat_nalbuphine_10ml_1", "syringe_kat_nalbuphine_10ml_2"];
+            _medications pushBack ["Fentanyl", "syringe_kat_fentanyl_5ml_1", "syringe_kat_fentanyl_5ml_2", "syringe_kat_fentanyl_10ml_1", "syringe_kat_fentanyl_10ml_2"];
+            _medications pushBack ["Ketamine", "syringe_kat_ketamine_5ml_1", "syringe_kat_ketamine_5ml_2", "syringe_kat_ketamine_10ml_1", "syringe_kat_ketamine_10ml_2"];
+        private _totalCheck = true;
             {
                 private _medicationType = _x;
                 {
@@ -84,7 +83,7 @@ switch (_usedItem) do {
                 if (_count > 0.6) exitWith { _totalCheck = false; };
                 } forEach _medicationType;
             } forEach _medications;
-        if (_totalCheck) then {[_patient, 0.8] call ACEFUNC(medical_status, adjustPainLevel);};];
+        if (_totalCheck) then {[_patient, 0.8] call ACEFUNC(medical_status, adjustPainLevel);};
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
         [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
     default {};

@@ -22,22 +22,21 @@ params ["_medic", "_patient", "_bodyPart"];
 private _part = ALL_BODY_PARTS find toLower _bodyPart;
 private _activeFracture = GET_FRACTURES(_patient);
 private _fractureArray = _patient getVariable [QGVAR(fractures), [0,0,0,0,0,0]];
-[
-     _medications = [
-            ["Lidocaine", "syringe_kat_lidocaine_5ml_1", "syringe_kat_lidocaine_5ml_2", "syringe_kat_lidocaine_10ml_1", "syringe_kat_lidocaine_10ml_2"],
-            ["Morphine"],
-            ["Nalbuphine", "syringe_kat_nalbuphine_5ml_1", "syringe_kat_nalbuphine_5ml_2", "syringe_kat_nalbuphine_10ml_1", "syringe_kat_nalbuphine_10ml_2"],
-            ["Fentanyl", "syringe_kat_fentanyl_5ml_1", "syringe_kat_fentanyl_5ml_2", "syringe_kat_fentanyl_10ml_1", "syringe_kat_fentanyl_10ml_2"],
-            ["Ketamine", "syringe_kat_ketamine_5ml_1", "syringe_kat_ketamine_5ml_2", "syringe_kat_ketamine_10ml_1", "syringe_kat_ketamine_10ml_2"]];
-    private _totalCheck = true;
-    {
-        private _medicationType = _x;
-        {
-        private _count = [_patient, _x, false] call ACEFUNC(medical_status, getMedicationCount);
-        if (_count > 0.6) exitWith { _totalCheck = false; };
-        } forEach _medicationType;
-    } forEach _medications;
-    if (_totalCheck) then {[_patient, 0.8] call ACEFUNC(medical_status, adjustPainLevel);};];
+private _medications = [];
+            _medications pushBack ["Lidocaine", "syringe_kat_lidocaine_5ml_1", "syringe_kat_lidocaine_5ml_2", "syringe_kat_lidocaine_10ml_1", "syringe_kat_lidocaine_10ml_2"];
+            _medications pushBack ["Morphine"];
+            _medications pushBack ["Nalbuphine", "syringe_kat_nalbuphine_5ml_1", "syringe_kat_nalbuphine_5ml_2", "syringe_kat_nalbuphine_10ml_1", "syringe_kat_nalbuphine_10ml_2"];
+            _medications pushBack ["Fentanyl", "syringe_kat_fentanyl_5ml_1", "syringe_kat_fentanyl_5ml_2", "syringe_kat_fentanyl_10ml_1", "syringe_kat_fentanyl_10ml_2"];
+            _medications pushBack ["Ketamine", "syringe_kat_ketamine_5ml_1", "syringe_kat_ketamine_5ml_2", "syringe_kat_ketamine_10ml_1", "syringe_kat_ketamine_10ml_2"];
+        private _totalCheck = true;
+            {
+                private _medicationType = _x;
+                {
+                private _count = [_patient, _x, false] call ACEFUNC(medical_status, getMedicationCount);
+                if (_count > 0.8) exitWith { _totalCheck = false; };
+                } forEach _medicationType;
+            } forEach _medications;
+        if (_totalCheck) then {[_patient, 0.8] call ACEFUNC(medical_status, adjustPainLevel);};
 
 playSound3D [QPATHTOF_SOUND(sounds\reduction.wav), _patient, false, getPosASL _patient, 8, 1, 15];
 
