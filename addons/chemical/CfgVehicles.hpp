@@ -96,7 +96,7 @@ class CfgVehicles {
         function = QFUNC(gasmodule);
         isTriggerActivated = 0;
         functionPriority = 1;
-        isGlobal = 1;
+        isGlobal = 0;
 
         class Arguments: AttributesBase
         {
@@ -153,10 +153,11 @@ class CfgVehicles {
         curatorCanAttach = 1;
         displayName = CSTRING(GasModule_Displayname);
         category = QEGVAR(zeus,KAM);
+        function = QACEFUNC(common,dummy);
         curatorInfoType = QGVAR(kat_RscGasModul);
         isTriggerActivated = 0;
         functionPriority = 1;
-        isGlobal = 1;
+        isGlobal = 0;
     };
 
 

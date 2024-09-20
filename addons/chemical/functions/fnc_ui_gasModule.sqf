@@ -73,13 +73,17 @@ private _fnc_onConfirm = {
     if (isNull _display) exitWith {};
 
     private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
+    TRACE_1("Logic: %1",_logic);
     if (isNull _logic) exitWith {};
 
     private _gasLevel = _display getVariable [QGVAR(ui_gastype), 0];
     private _radius = _display getVariable [QGVAR(ui_radius), 20];
+    private _isSealable = _display getVariable [QGVAR(ui_sealable), false];
+
+    TRACE_1("isServer: %1",isServer);
 
     if (isServer) then {
-        [QGVAR(addGasSource), [_logic, _radius, _gasLevel, _logic, {
+        [QGVAR(addGasSource), [attachedTo _logic, _radius, _gasLevel, _logic, {
             params ["_endTime", "_logic"];
 
             // If logic no longer exists, exit
@@ -88,7 +92,7 @@ private _fnc_onConfirm = {
             };
 
             CBA_missionTime < _endTime // return
-        }, [CBA_missionTime + 1e10, _logic]]] call CBA_fnc_serverEvent;
+        }, [CBA_missionTime + 1e10, _logic], _isSealable]] call CBA_fnc_serverEvent;
     };
 
     _display setVariable [QGVAR(Confirmed), true];

@@ -16,7 +16,7 @@
  */
 
 {
-    _y params ["_gasLogic", "_radius", "_gasLevel", "_condition", "_conditionArgs"];
+    _y params ["_gasLogic", "_radius", "_gasLevel", "_condition", "_conditionArgs", "_isSealable"];
     TRACE_2("gasManagerPFH loop",_x,_y);
 
     // Remove when condition is no longer valid

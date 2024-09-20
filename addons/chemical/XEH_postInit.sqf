@@ -38,6 +38,10 @@ private _items = missionNamespace getVariable [QGVAR(availGasmask), "'G_AirPurif
 private _array = [_items, "CfgGlasses"] call FUNC(getList);
 missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
 
+[QGVAR(poison), LINKFUNC(poison)] call CBA_fnc_addEventHandler;
+[QGVAR(handleGasMaskDur), LINKFUNC(handleGasMaskDur)] call CBA_fnc_addEventHandler;
+[QGVAR(addSealAction), LINKFUNC(createSealAction)] call CBA_fnc_addEventHandler;
+
 if (!isServer) exitWith {};
 
 GVAR(gasSources) = createHashMap;
@@ -49,7 +53,8 @@ GVAR(gasSources) = createHashMap;
         ["_gasLevel", 0, [0]],
         ["_key", ""],
         ["_condition", {true}, [{}]],
-        ["_conditionArgs", []]
+        ["_conditionArgs", []],
+        ["_isSealable", false]
     ];
 
     private _isObject = _source isEqualType objNull;
@@ -87,12 +92,16 @@ GVAR(gasSources) = createHashMap;
         [QGVAR(removeGasSource), _key] call CBA_fnc_localEvent;
     };
 
+    if (_isSealable) then {
+        [QGVAR(addSealAction), [_source, _gasLogic, _key]] call CBA_fnc_globalEvent;
+        _source setVariable [QGVAR(sealable), true, true];
+    };
+
     GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs]];
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(removeGasSource), {
     params ["_key"];
-
     private _hashedKey = hashValue _key;
 
     if (isNil "_hashedKey") exitWith {
@@ -107,5 +116,4 @@ GVAR(gasSources) = createHashMap;
 
 [LINKFUNC(gasManagerPFH), GAS_MANAGER_PFH_DELAY, []] call CBA_fnc_addPerFrameHandler;
 
-[QGVAR(poison), LINKFUNC(poison)] call CBA_fnc_addEventHandler;
-[QGVAR(handleGasMaskDur), LINKFUNC(handleGasMaskDur)] call CBA_fnc_addEventHandler;
+
