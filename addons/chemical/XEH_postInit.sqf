@@ -1,14 +1,6 @@
 #include "script_component.hpp"
 
 //Events
-[QGVAR(gasCheck), LINKFUNC(gasCheck)] call CBA_fnc_addEventHandler;
-[QGVAR(gasPlayer), LINKFUNC(gasCheckLocal)] call CBA_fnc_addEventHandler;
-[QGVAR(gasAI), LINKFUNC(gasAI)] call CBA_fnc_addEventHandler;
-[QGVAR(afterWait), LINKFUNC(afterWait)] call CBA_fnc_addEventHandler;
-[QGVAR(enteredZone), LINKFUNC(chemDetector)] call CBA_fnc_addEventHandler;
-[QGVAR(enteredZone), LINKFUNC(handleGasMaskDur)] call CBA_fnc_addEventHandler;
-[QGVAR(createZoneGlobal), LINKFUNC(createZone)] call CBA_fnc_addEventHandler;
-[QGVAR(createSealActionGlobal), LINKFUNC(createSealAction)] call CBA_fnc_addEventHandler;
 ["ace_glassesChanged", LINKFUNC(breathing)] call CBA_fnc_addEventHandler;
 
 // ACE Events
@@ -116,3 +108,4 @@ GVAR(gasSources) = createHashMap;
 [LINKFUNC(gasManagerPFH), GAS_MANAGER_PFH_DELAY, []] call CBA_fnc_addPerFrameHandler;
 
 [QGVAR(poison), LINKFUNC(poison)] call CBA_fnc_addEventHandler;
+[QGVAR(handleGasMaskDur), LINKFUNC(handleGasMaskDur)] call CBA_fnc_addEventHandler;

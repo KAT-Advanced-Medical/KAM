@@ -17,7 +17,7 @@
 
 {
     _y params ["_gasLogic", "_radius", "_gasLevel", "_condition", "_conditionArgs"];
-    TRACE_2("fireManagerPFH loop",_x,_y);
+    TRACE_2("gasManagerPFH loop",_x,_y);
 
     // Remove when condition is no longer valid
     if !(_conditionArgs call _condition) then {
@@ -33,6 +33,7 @@
 
     // Burn units (alive or dead) close to the fire
     {
+
         // Don't burn if intensity is too low or already burning with higher intensity
         if (_x getVariable [QGVAR(poisoned), false]) then {
             continue;
