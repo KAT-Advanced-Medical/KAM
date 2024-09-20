@@ -52,4 +52,18 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets sound volume of gas mask breathing
+[
+    QGVAR(gasMaskSoundVolume),
+    "SLIDER",
+    [LLSTRING(SETTING_stethoscopeSoundVolume), LLSTRING(SETTING_stethoscopeSoundVolume_DESC)],
+    CBA_SETTINGS_CHEM,
+    [0, 2, 1, 1],
+    2,
+    {
+        player setVariable [QGVAR(gasMaskSoundVolume), _this, true];
+    },
+    false
+] call CBA_Settings_fnc_init;
+
 ADDON = true;

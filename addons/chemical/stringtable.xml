@@ -756,5 +756,11 @@
             <Finnish>Kaasutyyppi</Finnish>
             <Russian>Тип газа:</Russian>
         </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume">
+            <English>Gas Mask Sound Volume</English>
+        </Key>
+        <Key ID="STR_KAT_Chemical_SETTING_gasMaskSoundVolume_DESC">
+            <English>Determines how loud the breathing sounds are when using the gas mask</English>
+        </Key>
     </Package>
 </Project>
