@@ -70,13 +70,12 @@ switch (_usedItem) do {
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
         [
-            private _medications = [
-            ["Lidocaine", "syringe_kat_lidocaine_5ml_1", "syringe_kat_lidocaine_5ml_2", "syringe_kat_lidocaine_10ml_1", "syringe_kat_lidocaine_10ml_2"],
-            ["Morphine"],
-            ["Nalbuphine", "syringe_kat_nalbuphine_5ml_1", "syringe_kat_nalbuphine_5ml_2", "syringe_kat_nalbuphine_10ml_1", "syringe_kat_nalbuphine_10ml_2"],
-            ["Fentanyl", "syringe_kat_fentanyl_5ml_1", "syringe_kat_fentanyl_5ml_2", "syringe_kat_fentanyl_10ml_1", "syringe_kat_fentanyl_10ml_2"],
-            ["Ketamine", "syringe_kat_ketamine_5ml_1", "syringe_kat_ketamine_5ml_2", "syringe_kat_ketamine_10ml_1", "syringe_kat_ketamine_10ml_2"]
-            ];
+            private _medications = [];
+            _medications pushBack ["Lidocaine", "syringe_kat_lidocaine_5ml_1", "syringe_kat_lidocaine_5ml_2", "syringe_kat_lidocaine_10ml_1", "syringe_kat_lidocaine_10ml_2"];
+            _medications pushBack ["Morphine"];
+            _medications pushBack ["Nalbuphine", "syringe_kat_nalbuphine_5ml_1", "syringe_kat_nalbuphine_5ml_2", "syringe_kat_nalbuphine_10ml_1", "syringe_kat_nalbuphine_10ml_2"];
+            _medications pushBack ["Fentanyl", "syringe_kat_fentanyl_5ml_1", "syringe_kat_fentanyl_5ml_2", "syringe_kat_fentanyl_10ml_1", "syringe_kat_fentanyl_10ml_2"];
+            _medications pushBack ["Ketamine", "syringe_kat_ketamine_5ml_1", "syringe_kat_ketamine_5ml_2", "syringe_kat_ketamine_10ml_1", "syringe_kat_ketamine_10ml_2"];
             private _totalCheck = true;
             {
                 private _medicationType = _x;
