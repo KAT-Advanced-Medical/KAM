@@ -20,5 +20,3 @@ params ["_target"];
 _target removeItem "kat_gasmaskFilter";
 
 _target setVariable [QGVAR(gasmask_durability), 10, true];
-
-_target setVariable [QGVAR(gasmask_durability_reset), true, true];

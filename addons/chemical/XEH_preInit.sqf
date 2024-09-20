@@ -32,26 +32,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-[
-    QGVAR(infectionTime),
-    "TIME",
-    [LLSTRING(SETTING_infection_time),LLSTRING(SETTING_infection_time_disc)],
-    CBA_SETTINGS_CHEM,
-    [1, 600, 60],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(affectAI),
-    "CHECKBOX",
-    [LLSTRING(SETTING_affectAI),LLSTRING(SETTING_affectAI_disc)],
-    CBA_SETTINGS_CHEM,
-    false,
-    true,
-    {},
-    true
-] call CBA_Settings_fnc_init;
-
 // Sets sound volume of gas mask breathing
 [
     QGVAR(gasMaskSoundVolume),
