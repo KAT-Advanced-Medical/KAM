@@ -31,7 +31,6 @@ if (isServer) then {
         [QGVAR(addGasSource), [_logic, _radius, _gasLevel, _logic, {
             params ["_endTime", "_logic"];
 
-            systemChat "strefa z modułu utworzona";
             // If logic no longer exists, exit
             if (isNull _logic) exitWith {
                 false // return
