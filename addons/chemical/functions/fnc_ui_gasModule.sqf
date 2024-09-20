@@ -82,7 +82,6 @@ private _fnc_onConfirm = {
         [QGVAR(addGasSource), [_logic, _radius, _gasLevel, _logic, {
             params ["_endTime", "_logic"];
 
-            systemChat "strefa z zeusa utworzona";
             // If logic no longer exists, exit
             if (isNull _logic) exitWith {
                 false // return

@@ -19,12 +19,10 @@ params ["_unit", "_gasLevel"];
 
 switch (_gasLevel) do {
     case 0: {
-        diag_log "You have been poisoned by CS!";
         _unit setVariable [QGVAR(poisoned), true];
         [_unit, "CSGas", 300, 30, -10, 0, -10] call ACEFUNC(medical_status,addMedicationAdjustment);
     };
     case 1: {
-        diag_log "You have been poisoned by Toxic!";
         _unit setVariable [QGVAR(poisoned), true];
         [_unit, "ToxicGas", 300, 30, -10, 0, -10] call ACEFUNC(medical_status,addMedicationAdjustment);
     };

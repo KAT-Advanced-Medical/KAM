@@ -38,7 +38,6 @@
             continue;
         };
 
-        diag_log "Poison Gas!";
         [QGVAR(poison), [_x, _gasLevel], _x] call CBA_fnc_targetEvent;
 
     } forEach nearestObjects [_gasLogic, ["CAManBase"], _radius];

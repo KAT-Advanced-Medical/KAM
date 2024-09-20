@@ -95,7 +95,6 @@ GVAR(gasSources) = createHashMap;
         [QGVAR(removeGasSource), _key] call CBA_fnc_localEvent;
     };
 
-    diag_log "Poison Gas source created!";
     GVAR(gasSources) set [_hashedKey, [_gasLogic, _radius, _gasLevel, _condition, _conditionArgs]];
 }] call CBA_fnc_addEventHandler;
 
@@ -108,7 +107,6 @@ GVAR(gasSources) = createHashMap;
         ERROR_2("Unsupported key type used: %1 - %2",_key,typeName _key);
     };
 
-    diag_log "Poison Gas source removed!";
     (GVAR(gasSources) deleteAt _hashedKey) params [["_gasLogic", objNull]];
 
     detach _gasLogic;
