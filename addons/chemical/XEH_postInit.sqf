@@ -2,6 +2,10 @@
 
 //Events
 ["ace_glassesChanged", LINKFUNC(breathing)] call CBA_fnc_addEventHandler;
+[QGVAR(poison), LINKFUNC(poison)] call CBA_fnc_addEventHandler;
+[QGVAR(handleGasMaskDur), LINKFUNC(handleGasMaskDur)] call CBA_fnc_addEventHandler;
+[QGVAR(addSealAction), LINKFUNC(createSealAction)] call CBA_fnc_addEventHandler;
+[QGVAR(isInGasArea), LINKFUNC(gasDetector)] call CBA_fnc_addEventHandler;
 
 // ACE Events
 [QACEGVAR(medical_gui,updateInjuryListGeneral), LINKFUNC(gui_updateInjuryListGeneral)] call CBA_fnc_addEventHandler;
@@ -21,26 +25,9 @@ KAT_ProjectileCache = ("([_x, 'KAT_projectile', 0] call BIS_fnc_returnConfigEntr
 ["ace_firedPlayerNonLocal", LINKFUNC(throwGrenade)] call CBA_fnc_addEventHandler;
 ["ace_firedNonPlayer", LINKFUNC(throwGrenade)] call CBA_fnc_addEventHandler;
 
-if (hasInterface) then {
-    ppBlur_priority = 399;
-    [{
-        ppBlur_priority = ppBlur_priority + 1;
-        ppBlur = ppEffectCreate ["DynamicBlur", ppBlur_priority];
-        ppBlur != -1
-    }, {
-        ppBlur ppEffectEnable false;
-        ppBlurAmount = 0;
-        ppBluring = false;
-    }] call CBA_fnc_waitUntilAndExecute;
-};
-
 private _items = missionNamespace getVariable [QGVAR(availGasmask), "'G_AirPurifyingRespirator_01_F'"];
 private _array = [_items, "CfgGlasses"] call FUNC(getList);
 missionNamespace setVariable [QGVAR(availGasmaskList), _array, true];
-
-[QGVAR(poison), LINKFUNC(poison)] call CBA_fnc_addEventHandler;
-[QGVAR(handleGasMaskDur), LINKFUNC(handleGasMaskDur)] call CBA_fnc_addEventHandler;
-[QGVAR(addSealAction), LINKFUNC(createSealAction)] call CBA_fnc_addEventHandler;
 
 if (!isServer) exitWith {};
 

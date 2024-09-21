@@ -19,20 +19,6 @@ class CfgVehicles {
                     showDisabled = 0;
                     icon = QPATHTOF(ui\gasmaskfilter_ca.paa);
                 };
-                class KAT_MuteChemDetector {
-                    displayName = CSTRING(ChemDetector_Mute);
-                    condition = QUOTE([ARR_2(_player,true)] call FUNC(getChemDetectorState));
-                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(chemDetectorState),false,true)]);
-                    showDisabled = 0;
-                    icon = QPATHTOF(ui\ChemDetectorIcon.paa);
-                };
-                class KAT_UnmuteChemDetector {
-                    displayName = CSTRING(ChemDetector_Unmute);
-                    condition = QUOTE([ARR_2(_player,false)] call FUNC(getChemDetectorState));
-                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(chemDetectorState),true,true)]);
-                    showDisabled = 0;
-                    icon = QPATHTOF(ui\ChemDetectorIcon.paa);
-                };
             };
         };
     };

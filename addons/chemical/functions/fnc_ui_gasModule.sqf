@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DiGii
+ * Author: DiGii, MiszczuZPolski
  * Creates the UI for the Zeus Module
  *
  * Arguments:

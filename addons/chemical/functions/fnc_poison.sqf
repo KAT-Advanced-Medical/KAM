@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: tcvm, johnb43
+ * Author: MiszczuZPolski
  * Handles various objects on fire and determines if units close to objects deserve to get burned.
  *
  * Arguments:

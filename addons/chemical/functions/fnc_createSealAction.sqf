@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DiGii
+ * Author: DiGii, MiszczuZPolski
  *
  * Arguments:
  * 0: Target <OBJECT>

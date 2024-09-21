@@ -1,7 +1,8 @@
 #include "..\script_component.hpp"
 /*
  * Author: tcvm, johnb43
- * Handles various objects on fire and determines if units close to objects deserve to get burned.
+ * Modified by: MiszczuZPolski
+ * Handles various objects on gas and determines if units close to objects deserve to get poisoned
  *
  * Arguments:
  * None
@@ -10,7 +11,7 @@
  * None
  *
  * Example:
- * ace_fire_fnc_fireManagerPFH call CBA_fnc_addPerFrameHandler
+ * kat_chemical_fnc_gasManagerPFH call CBA_fnc_addPerFrameHandler
  *
  * Public: No
  */
@@ -31,10 +32,21 @@
         continue;
     };
 
-    // Burn units (alive or dead) close to the fire
+    // Poison units (alive or dead) close to the gas source
     {
 
-        // Don't burn if intensity is too low or already burning with higher intensity
+        // Get the distance of the unit from the center of the sphere (_gasLogic)
+        private _distance = _x distance _gasLogic;
+
+        // Ensure the distance does not exceed the radius (prevents going beyond the sphere)
+        _distance = _distance min _radius;
+
+        // Calculate the intensity as a normalized value (1 at center, 0 at the edge)
+        private _intensity = 1 - (_distance / _radius);
+
+        [QGVAR(isInGasArea), [_x, _intensity], _x] call CBA_fnc_targetEvent;
+
+        // Don't poison if already poisoned
         if (_x getVariable [QGVAR(poisoned), false]) then {
             continue;
         };

@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DiGii
+ * Author: DiGii, MiszczuPolski
  * Spawns Patricles for the Gas zone
  *
  * Arguments:

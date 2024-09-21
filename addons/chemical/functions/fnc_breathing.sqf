@@ -6,6 +6,7 @@
 *
 * Arguments:
 * 0: Unit <OBJECT>
+* 1: Glasses Class <STRING>
 *
 * Return Value:
 * NONE

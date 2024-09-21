@@ -22,7 +22,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-
 [
     QGVAR(gasmask_durability),
     "TIME",
