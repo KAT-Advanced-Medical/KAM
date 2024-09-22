@@ -22,7 +22,6 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-
 [
     QGVAR(gasmask_durability),
     "TIME",
@@ -32,24 +31,18 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Sets sound volume of gas mask breathing
 [
-    QGVAR(infectionTime),
-    "TIME",
-    [LLSTRING(SETTING_infection_time),LLSTRING(SETTING_infection_time_disc)],
+    QGVAR(gasMaskSoundVolume),
+    "SLIDER",
+    [LLSTRING(SETTING_stethoscopeSoundVolume), LLSTRING(SETTING_stethoscopeSoundVolume_DESC)],
     CBA_SETTINGS_CHEM,
-    [1, 600, 60],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(affectAI),
-    "CHECKBOX",
-    [LLSTRING(SETTING_affectAI),LLSTRING(SETTING_affectAI_disc)],
-    CBA_SETTINGS_CHEM,
-    false,
-    true,
-    {},
-    true
+    [0, 2, 1, 1],
+    2,
+    {
+        player setVariable [QGVAR(gasMaskSoundVolume), _this, true];
+    },
+    false
 ] call CBA_Settings_fnc_init;
 
 ADDON = true;

@@ -3,8 +3,8 @@
 #include "\x\kat\addons\main\script_mod.hpp"
 #include "\x\kat\addons\gui\gui_defines.hpp"
 
-// #define DEBUG_MODE_FULL
-// #define DISABLE_COMPILE_CACHE
+//#define DEBUG_MODE_FULL
+#define DISABLE_COMPILE_CACHE
 // #define ENABLE_PERFORMANCE_COUNTERS
 
 #ifdef DEBUG_ENABLED_CHEMICAL
@@ -25,3 +25,4 @@
 #define X_PART(num) (W_PART(num) + (safeZoneX + (safeZoneW - SIZEX) / 2))
 #define Y_PART(num) (H_PART(num) + (safeZoneY + (safeZoneH - SIZEY) / 2))
 
+#define GAS_MANAGER_PFH_DELAY 1

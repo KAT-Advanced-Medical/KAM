@@ -1,16 +1,16 @@
 class CfgCloudlets {
     class Default;
-    class ACE_GasTrip: Default {
+    class KAT_TripWireGas: Default {
         lifeTime = 0;
         beforeDestroyScript = QPATHTOF(functions\fnc_GasTripEffect.sqf);
     };
 
-    class CAS_GAS_Explosion_FX_Script: Default {
+    class KAT_CAS_GAS_Explosion_FX_Script: Default {
         lifeTime = 0;
         beforeDestroyScript = QPATHTOF(functions\fnc_CASCreateGas.sqf);
     };
 
-    class CAS_GAS_Explosion_FX: Default {
+    class KAT_CAS_GAS_Explosion_FX: Default {
         interval = 0.03;
         circleRadius = 0;
         circleVelocity[] = {0,0,0};
@@ -63,7 +63,7 @@ class CfgCloudlets {
         position[] = {0,0,0};
     };
 
-    class CAS_GAS_FX: Default {
+    class KAT_CAS_GAS_FX: Default {
         interval = 0.03;
         circleRadius = 0;
         circleVelocity[] = {0,0,0};
@@ -113,10 +113,10 @@ class CfgCloudlets {
     };
 };
 
-class KAT_GASTripEffect {
+class KAT_TripWireGasEffect {
     class spawnGAS {
         simulation = "particles";
-        type = "ACE_GasTrip";
+        type = "KAT_TripWireGas";
         position = "explosionPos";
     };
 };
@@ -124,21 +124,21 @@ class KAT_GASTripEffect {
 class KAT_GAS_ClusterExplosion {
     class ExplosionEffect {
         simulation = "particles";
-        type = "CAS_GAS_Explosion_FX";
+        type = "KAT_CAS_GAS_Explosion_FX";
         position = "explosionPos";
         lifeTime = 2;
         particleFSLoop = 1;
     };
     class CAS_GAS_Effect {
         simulation = "particles";
-        type = "CAS_GAS_FX";
+        type = "KAT_CAS_GAS_FX";
         position = "explosionPos";
         lifeTime = 240;
         particleFSLoop = 1;
     };
     class GAS_Script {
         simulation = "particles";
-        type = "CAS_GAS_Explosion_FX_Script";
+        type = "KAT_CAS_GAS_Explosion_FX_Script";
         position = "explosionPos";
     };
 };
@@ -146,14 +146,14 @@ class KAT_GAS_ClusterExplosion {
 class KAT_CAS_R_HYDRA_Explosion {
     class CAS_R_GAS_Effect {
         simulation = "particles";
-        type = "CAS_GAS_FX";
+        type = "KAT_CAS_GAS_FX";
         position = "explosionPos";
         lifeTime = 240;
         particleFSLoop = 1;
     };
     class R_GAS_Script {
         simulation = "particles";
-        type = "CAS_GAS_Explosion_FX_Script";
+        type = "KAT_CAS_GAS_Explosion_FX_Script";
         position = "explosionPos";
     };
 };

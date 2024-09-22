@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DiGii
+ * Author: MiszczuZPolski
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -9,66 +9,42 @@
  * NONE
  *
  * Example:
- * [player] call kat_chemical_fnc_handleGasMAskDur;
+ * [player] call kat_chemical_fnc_handleGasMaskDur;
  *
  * Public: No
 */
 
 params ["_unit"];
 
-[
-    {
-        params["_unit"];
-        !(missionNamespace getVariable [QGVAR(availGasmaskList), []] isEqualTo []) && _unit getVariable [QGVAR(enteredPoison), false]
-    },
-    {
-        params["_unit"];
-        if (_unit getVariable [QGVAR(enteredPoison), false] && (goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) then {
-            private _timeEntered = CBA_missionTime;
-            private _maxTime = missionNamespace getVariable [QGVAR(gasmask_durability), 900];
-            private _currentDurability = _unit getVariable [QGVAR(gasmask_durability), 10];
-            [{
-                params ["_args","_handler"];
-                _args params ["_unit","_timeEntered","_maxTime","_currentDurability"];
-                private _currentDurability = _unit getVariable [QGVAR(gasmask_durability), 10];
+if !(goggles _unit in (missionNamespace getVariable [QGVAR(availGasmaskList), []])) exitWith {};
 
-                if (_unit getVariable [QGVAR(gasmask_durability_reset), false]) then {
-                    _unit setVariable [QGVAR(gasmask_durability_reset), false, true];
-                    [_handler] call CBA_fnc_removePerFrameHandler;
-                    [_unit] call FUNC(handleGasMaskDur);
-                };
+// Get the maximum time the gas mask filter can last (from settings)
+private _maxTime = missionNamespace getVariable [QGVAR(gasmask_durability), 60]; // Max durability in seconds
 
-                private _timeLeft = _maxTime - (CBA_missionTime - _timeEntered);
-                private _percent = round ((10/_maxTime) * _timeLeft);
+// Get the current health (0-10) of the gas mask filter for this unit
+private _currentHealth = _unit getVariable [QGVAR(gasmask_durability), 10]; // Default to full health (10) if not set
 
-                if (_currentDurability != _percent) then {
-                    _unit setVariable [QGVAR(gasmask_durability), _percent, true];
-                };
+// Scale the current health (0-10) to the actual time left based on maxTime
+private _timeLeft = (_currentHealth / 10) * _maxTime; // Convert 0-10 health scale to time left
 
-                if (_currentDurability <= 0 || _percent <= 0 || !(alive _unit)) exitWith {
-                    [_handler] call CBA_fnc_removePerFrameHandler;
-                    _unit setVariable [QGVAR(gasmask_durability), 0, true];
-                    [_unit] call FUNC(handleGasMaskDur);
-                };
+// Reduce the time left by 1 seconds (each tick reduces by 1 seconds)
+_timeLeft = _timeLeft - 1;
 
-                if !(_unit getVariable [QGVAR(enteredPoison), false]) exitWith{
-                    [_handler] call CBA_fnc_removePerFrameHandler;
-                    [_unit] call FUNC(handleGasMaskDur);
-                };
+// Prevent negative durability
+_timeLeft = _timeLeft max 0;
 
-            },1,[_unit,_timeEntered,_maxTime,_currentDurability]] call CBA_fnc_addPerFrameHandler;
-        } else {
-            [
-                {
-                    params ["_unit"];
-                    _unit getVariable [QGVAR(enteredPoison), false] || (goggles _unit) in (missionNamespace getVariable [QGVAR(availGasmaskList), []])
-                },
-                {
-                    [_unit] call FUNC(handleGasMaskDur);
-                },
-                [_unit]
-            ] call CBA_fnc_waitUntilAndExecute;
-        };
-    },
-    [_unit]
-] call CBA_fnc_waitUntilAndExecute;
+// Convert the remaining time back to the 0-10 health scale
+private _newHealth = (_timeLeft / _maxTime) * 10;
+
+// Calculate percentage of health remaining
+private _percent = (_newHealth / 10) * 100;
+
+// Exit if the gas mask health reaches 0 or the unit is dead
+if (_newHealth <= 0) exitWith {
+    _unit setVariable [QGVAR(gasmask_durability), 0, true];
+};
+
+// Update the gas mask health if it has changed
+if (_currentHealth != _newHealth) then {
+    _unit setVariable [QGVAR(gasmask_durability), _newHealth, true];
+};

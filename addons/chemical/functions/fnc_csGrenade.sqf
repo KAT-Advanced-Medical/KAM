@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * Author: DiGii
+ * Author: DiGii, MiszczuPolski
  * Spawns Patricles for the Gas zone
  *
  * Arguments:
@@ -38,8 +38,6 @@
 params ["_projectile", "_timeToLive", "_center"];
 
 private _position = position _projectile;
-
-[QGVAR(createZoneGlobal), [_position, _timeToLive, 6, 1]] call CBA_fnc_globalEventJIP;
 
 // --- AI
 private _nearLocalEnemies = [];
@@ -86,5 +84,24 @@ _particleSource setParticleParams [
 
 _particleSource setParticleRandom [PARTICLE_SMOKE_LIFE_TIME / 2, [0.5 * EFFECT_SIZE, 0.5 * EFFECT_SIZE, 0.2 * EFFECT_SIZE], [0.3,0.3,0.5], 1, 0, [0,0,0,0.06], 0, 0];
 _particleSource setDropInterval (1 / PARTICLE_SMOKE_DENSITY);
+
+if (isServer) then {
+    private _radius = 6;
+    private _gasLevel = 0;
+
+    [QGVAR(addGasSource), [_projectile, _radius, _gasLevel, _projectile, {
+        params ["_endTime", "_projectile"];
+
+        // If incendiary no longer exists, exit
+        if (isNull _projectile) exitWith {
+            false // return
+        };
+
+        // Need to get the position every time, as grenade might have been moved
+        private _position = position _projectile;
+
+        CBA_missionTime < _endTime // return
+    }, [CBA_missionTime + _timeToLive, _projectile]]] call CBA_fnc_serverEvent;
+};
 
 [{deleteVehicle _this}, _particleSource, _timeToLive] call CBA_fnc_waitAndExecute;

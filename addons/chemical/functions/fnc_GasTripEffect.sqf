@@ -17,4 +17,4 @@
 * Cant be called manualy!
 */
 
-[FUNC(spawnSmoke), _this] call CBA_fnc_directcall;
+[FUNC(spawnSmoke), _this] call CBA_fnc_directCall;
