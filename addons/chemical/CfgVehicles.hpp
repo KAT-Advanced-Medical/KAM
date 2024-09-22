@@ -19,6 +19,22 @@ class CfgVehicles {
                     showDisabled = 0;
                     icon = QPATHTOF(ui\gasmaskfilter_ca.paa);
                 };
+                class KAT_PutOnGasMask {
+                    displayName = "Put on Gas Mask";
+                    condition = QUOTE([_player] call FUNC(canPutOnGasMask));
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
+                    statement = QUOTE([_player] call FUNC(putOnGasMask));
+                    showDisabled = 0;
+                    icon = QPATHTOF(ui\Gasmask_icon.paa);
+                };
+                class KAT_TakeOffGasMask {
+                    displayName = "Take off Gas Mask";
+                    condition = QUOTE([_player] call FUNC(canTakeOffGasMask));
+                    exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting"};
+                    statement = QUOTE([_player] call FUNC(takeOffGasMask));
+                    showDisabled = 0;
+                    icon = QPATHTOF(ui\Gasmask_icon.paa);
+                };
             };
         };
     };

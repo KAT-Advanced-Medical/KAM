@@ -30,7 +30,6 @@ if (isNil "_lastSoundTime") then {
 };
 
 if (CBA_missionTime - _lastSoundTime > 6) exitWith {
-    systemchat "Playing sound";
     playSound3D [QPATHTOF(audio\chemDetector.ogg), _unit, false, getPosASL _unit, 4, 1, 10];
     _unit setVariable [QGVAR(lastSoundTime), CBA_missionTime];
 };

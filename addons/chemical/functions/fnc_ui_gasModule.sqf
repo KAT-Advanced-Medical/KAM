@@ -57,11 +57,9 @@ private _fnc_onUnload = {
     if (isNull _logic) exitWith {};
     if !(_display getVariable [QGVAR(Confirmed), false]) then
     {
-        if !(isNull attachedTo _logic) then
-        {
+        if !(isNull attachedTo _logic) then {
             deleteVehicle _logic;
-        } else
-        {
+        } else {
             detach (attachedTo _logic);
             deleteVehicle _logic;
         };
