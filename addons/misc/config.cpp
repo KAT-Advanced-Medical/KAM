@@ -4,11 +4,8 @@ class CfgPatches {
     class ADDON    {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        units[] = {
-            "kat_stretcher",
-            "kat_stretcherBag"
-        };
-        weapons[] = { "Attachable_Helistretcher" };
+        units[] = {};
+        weapons[] = {};
         magazines[] = { };
         requiredAddons[] = {
             "kat_main",
@@ -34,7 +31,6 @@ class CfgPatches {
     };
 };
 
-#include "CfgMoves.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgGlasses.hpp"
 #include "CfgEventHandlers.hpp"

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Watch">
+        <Key ID="STR_KAT_Watch_SETTING_TemperatureForm">
+            <English>Select temperature form</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Desc">
+            <English>Selects which temperature unit is used for the KATMIN watch display</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Celcius">
+            <English>Celcius</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Fahrenheit">
+            <English>Fahrenheit</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_PressureForm">
+            <English>Select pressure form</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_PressureForm_Desc">
+            <English>Selects which pressure unit is used for the KATMIN watch display</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_PressureForm_mmHg">
+            <English>mmHg</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_PressureForm_hPa">
+            <English>hPa</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_AltitudeForm">
+            <English>Select altitude form</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_Desc">
+            <English>Selects which altitude unit is used for the KATMIN watch display</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_meters">
+            <English>Meters</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_feet">
+            <English>Feet</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_KatminDescription">
+            <English>Watch with Vital Monitoring Capabilities</English>
+        </Key>
+        <Key ID="STR_KAT_Watch_KatminDisplayName">
+            <English>Katmin K500</English>
+        </Key>
+    </Package>
+</Project>
