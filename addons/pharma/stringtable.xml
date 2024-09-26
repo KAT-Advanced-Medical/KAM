@@ -184,13 +184,15 @@
             <Japanese>戦闘治療薬パック</Japanese>
             <Spanish>Paquete de Comprimidos de Combate</Spanish>
             <Portuguese>Comprimidos de Combate</Portuguese>
-            <Dutch>Gevechts pil pak</Dutch>
-            </Key>
+            <Dutch>Gevechtspillendoosje</Dutch>
+            <French>Pack de Pilules de combat</French>
+        </Key>
         <Key ID="STR_KAT_Pharma_Give_CWMP">
+            <English>Use CWMP</English>
             <Japanese>戦闘傷病治療薬を投与</Japanese>
             <Spanish>Usar Comprimidos de Combate</Spanish>
             <Portuguese>Utilizar Comprimidos de Combate</Portuguese>
-            <Dutch>Gebruik gevechts pil pak</Dutch>
+            <Dutch>Gebruik Gevechtspillendoosje</Dutch>
             <French>Utiliser le PMBC</French>
         </Key>
         <Key ID="STR_KAT_Pharma_Carbonate_DescShort">
