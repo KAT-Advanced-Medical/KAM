@@ -3,6 +3,7 @@
     <Package name="Vitals">
         <Key ID="STR_KAT_Vitals_SIMPLEMED_ENABLE">
             <English>Activate AI Simple Medical</English>
+            <Dutch>Activeer AI/KI versimpeld medisch</Dutch>
         </Key>
     </Package>
 </Project>
