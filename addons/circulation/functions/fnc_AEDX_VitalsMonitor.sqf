@@ -92,10 +92,10 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
             _bp = [0,0];
             _pr = 0;
         } else {
-            _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];
+            _spO2 = GET_SPO2(_patient);
 
-            _etco2 = _patient call EFUNC(breathing,getETCo2);
-            _breathrate = _patient call EFUNC(breathing,getRespiratoryRate);
+            _etco2 = GET_ETCO2(_patient);
+            _breathrate = GET_BREATHING_RATE(_patient);
         };
 
         // List vitals depending on if AED pads and vitals monitoring (pressure cuff + pulse oximeter) is connected
@@ -104,9 +104,9 @@ if (_patient getVariable ["kat_AEDXPatient_PFH", -1] isEqualTo -1) then {
             [_patient, "quick_view", LSTRING(VitalsMonitor_StatusLog)+_hasEtco2Monitor, [round(_hr), round(_bp select 1), round(_bp select 0), round(_spO2), _etco2, round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
         } else {
             if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false]) then {
-                [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog)+_hasEtco2Monitor, [round(_hr), _etco2, round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
+                [_patient, "quick_view", LSTRING(VitalsMonitor_VMInactive_StatusLog)+_hasEtco2Monitor, [round(_hr), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
             } else {
-                [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog)+_hasEtco2Monitor, [round(_pr), round(_bp select 1), round(_bp select 0), round(_spO2), _etco2, round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
+                [_patient, "quick_view", LSTRING(VitalsMonitor_VMActive_StatusLog)+_hasEtco2Monitor, [round(_pr), round(_bp select 1), round(_bp select 0), round(_spO2), round(_etco2), round(_breathrate)]] call ACEFUNC(medical_treatment,addToLog);
             };
         };
 
@@ -157,10 +157,10 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {((_pati
             private _delay = 1.46; // standard on no heartrate delay
 
             if (_hr <= 0) then {
-                playsound3D [QPATHTOF_SOUND(sounds\noheartrate.wav), _soundSource, false, getPosASL _soundSource, 2, 1, 15];
+                playSound3D [QPATHTOF_SOUND(sounds\noheartrate.wav), _soundSource, false, getPosASL _soundSource, 2, 1, 15];
             } else {
                 _delay = 60 / _hr;
-                playsound3D [QPATHTOF_SOUND(sounds\heartrate.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
+                playSound3D [QPATHTOF_SOUND(sounds\heartrate.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
             };
             [{
                 params ["_patient"];
@@ -212,7 +212,7 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {((_pati
                 if (alive _patient && (_cardiacState in [0,2] || (_cardiacState isEqualTo 4 && !(GVAR(analyzeDelay))))) then {
                     GVAR(AEDBeepPlaying) = true;
                     private _delay = 60 / _hr;
-                    playsound3D [QPATHTOF_SOUND(sounds\heartrate_AED.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
+                    playSound3D [QPATHTOF_SOUND(sounds\heartrate_AED.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
                     [{
                         params ["_patient"];
 
@@ -225,10 +225,10 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {((_pati
                         GVAR(AEDBeepPlaying) = true;
                         private _delayAEDBeepPlaying = 1.835;
                         if (!(GVAR(playedAudio))) then {
-                            playsound3D [QPATHTOF_SOUND(sounds\checkpatient.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
+                            playSound3D [QPATHTOF_SOUND(sounds\checkpatient.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
                             GVAR(playedAudio) = true;
                         } else {
-                            playsound3D [QPATHTOF_SOUND(sounds\alarm.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
+                            playSound3D [QPATHTOF_SOUND(sounds\alarm.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
                             _delayAEDBeepPlaying = 0.526;
                         };
                         [{
@@ -243,7 +243,7 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {((_pati
 
                 if (_hr > 0) then {
                     private _delay = 60 / _hr;
-                    playsound3D [QPATHTOF_SOUND(sounds\heartrate_AED.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
+                    playSound3D [QPATHTOF_SOUND(sounds\heartrate_AED.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
                     [{
                         params ["_patient"];
 
@@ -254,10 +254,10 @@ if (_patient getVariable [QGVAR(DefibrillatorPads_Connected), false] && {((_pati
                     private _delayAEDBeepPlaying = 1.835;
 
                     if (!(GVAR(playedAudio))) then {
-                        playsound3D [QPATHTOF_SOUND(sounds\checkpatient.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
+                        playSound3D [QPATHTOF_SOUND(sounds\checkpatient.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
                         GVAR(playedAudio) = true;
                     } else {
-                        playsound3D [QPATHTOF_SOUND(sounds\alarm.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
+                        playSound3D [QPATHTOF_SOUND(sounds\alarm.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
                         _delayAEDBeepPlaying = 0.526;
                     };
                     [{
@@ -291,7 +291,7 @@ if (_patient getVariable [QGVAR(AED_X_VitalsMonitor_Connected), false] && {(_pat
         if (_patient getVariable [QGVAR(DefibrillatorInUse), false] || !(_patient getVariable [QGVAR(AED_X_VitalsMonitor_VolumePatient), false])) then {
         } else {
             private _hr = _patient getVariable [QACEGVAR(medical,heartRate), 80];
-            private _spO2 = _patient getVariable [QEGVAR(breathing,airwayStatus), 100];
+            private _spO2 = GET_SPO2(_patient);
             if (_spO2 < GVAR(AED_X_Monitor_SpO2Warning) || _tourniquetApplied) then {
                 playSound3D [QPATHTOF_SOUND(sounds\spo2warning.wav), _soundSource, false, getPosASL _soundSource, 5, 1, 15];
             };

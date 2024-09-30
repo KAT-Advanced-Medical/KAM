@@ -75,6 +75,10 @@ private _fnc_advRhythm = {
         {
             _epiBoost = 1.5;
         };
+        case "EpinephrineIV":
+        {
+            _epiBoost = 1.5;
+        };
         case "Amiodarone":
         {
             _amiBoost = _amiBoost + (random [8,14,20]);
@@ -91,24 +95,24 @@ switch (_reviveObject) do {
         if (GVAR(enable_CPR_Chances)) then {
             switch (_medic getVariable [QACEGVAR(medical,medicClass),0]) do {
                 case 0: {
-                    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(CPR_MinChance_Default), GVAR(CPR_MaxChance_Default), true];
+                    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME_LITERS(_patient), GVAR(CPR_MinChance_Default), GVAR(CPR_MaxChance_Default), true];
                 };
                 case 1: {
-                    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(CPR_MinChance_RegularMedic), GVAR(CPR_MaxChance_RegularMedic), true];
+                    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME_LITERS(_patient), GVAR(CPR_MinChance_RegularMedic), GVAR(CPR_MaxChance_RegularMedic), true];
                 };
                 case 2: {
-                    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(CPR_MinChance_Doctor), GVAR(CPR_MaxChance_Doctor), true];
+                    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME_LITERS(_patient), GVAR(CPR_MinChance_Doctor), GVAR(CPR_MaxChance_Doctor), true];
                 };
             };
         };
     };
     case "AED": {
         [_patient, "activity", LSTRING(Activity_Shock), [[_medic, false, true] call ACEFUNC(common,getName), "AED"]] call ACEFUNC(medical_treatment,addToLog);
-        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_MinChance), GVAR(AED_MaxChance), true];
+        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME_LITERS(_patient), GVAR(AED_MinChance), GVAR(AED_MaxChance), true];
     };
     case "AEDX": {
         [_patient, "activity", LSTRING(Activity_Shock), [[_medic, false, true] call ACEFUNC(common,getName), "AED-X"]] call ACEFUNC(medical_treatment,addToLog);
-        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), GVAR(AED_X_MinChance), GVAR(AED_X_MaxChance), true];
+        _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME_LITERS(_patient), GVAR(AED_X_MinChance), GVAR(AED_X_MaxChance), true];
     };
 };
 
@@ -138,7 +142,7 @@ if (_reviveObject in ["AED", "AEDX"]) exitWith {
 if !(GVAR(enable_CPR_Chances)) then {
     private _min = ACEGVAR(medical_treatment,cprSuccessChanceMin);
     private _max = ACEGVAR(medical_treatment,cprSuccessChanceMax);
-    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME(_patient), _min, _max, true];
+    _chance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, GET_BLOOD_VOLUME_LITERS(_patient), _min, _max, true];
     // ACE Medical settings are percentages (decimals, 0 <= x <= 1) instead of integers
 
     if ((random 1) <= _chance) then {

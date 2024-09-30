@@ -37,7 +37,20 @@ class ACE_ADDON(Medical_Treatment) {
             maxDose = 6;
             maxDoseDeviation = 4;
             incompatibleMedication[] = {};
-            alphaFactor = 0.15;
+            alphaFactor = -0.15;
+            onOverDose = "";
+        };
+        class EpinephrineIV {
+            painReduce = 0;
+            hrIncreaseLow[] = {15, 30};
+            hrIncreaseNormal[] = {10, 50};
+            hrIncreaseHigh[] = {15, 40};
+            timeInSystem = 120;
+            timeTillMaxEffect = 10;
+            maxDose = 4;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            alphaFactor = -0.3;
             onOverDose = "";
         };
         class Morphine {

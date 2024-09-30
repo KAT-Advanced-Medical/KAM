@@ -46,12 +46,12 @@ if (GVAR(showCyanosis) && _selectionN in [0,2,3]) then {
 
 if (_target getVariable [QGVAR(pulseoximeter), false] && _selectionN in [2,3]) then {
     if((_target getVariable [QGVAR(PulseOximeter_Attached), [0,0]] select (_selectionN - 2)) > 0) then {
-        _entries pushback [LLSTRING(Pulseoximeter_Desc_Short), [0.3, 0.8, 0.8, 1]];
+        _entries pushBack [LLSTRING(Pulseoximeter), [0.3, 0.8, 0.8, 1]];
     };
 };
 
 if (_target getVariable [QGVAR(nasalCannula), false] && _selectionN isEqualTo 0) then {
-    _entries pushback [LLSTRING(NasalCannula_Display), [0.3, 0.8, 0.8, 1]];
+    _entries pushBack [LLSTRING(NasalCannula_Display), [0.3, 0.8, 0.8, 1]];
 };
 
 private _ptxEntry = [];
@@ -70,7 +70,7 @@ if (_selectionN isEqualTo 1) then {
 
     if (GVAR(PneumothoraxAlwaysVisible)) then {
         if ((_target getVariable [QGVAR(pneumothorax), 0] > 0) && !(_tensionhemothorax)) then {
-            _ptxEntry pushback [LLSTRING(pneumothorax_mm), [1,1,1,1]];
+            _ptxEntry pushBack [LLSTRING(pneumothorax_mm), [1,1,1,1]];
         };
     } else {
         if (_target getVariable [QGVAR(deepPenetratingInjury), false]) then {
@@ -80,11 +80,11 @@ if (_selectionN isEqualTo 1) then {
 
     if (GVAR(TensionHemothoraxAlwaysVisible)) then {
         if (_target getVariable [QGVAR(hemopneumothorax), false]) then {
-            _ptxEntry pushback [LLSTRING(hemopneumothorax_mm), [1,1,1,1]];
+            _ptxEntry pushBack [LLSTRING(hemopneumothorax_mm), [1,1,1,1]];
         };
 
         if (_target getVariable [QGVAR(tensionpneumothorax), false]) then {
-            _ptxEntry pushback [LLSTRING(tensionpneumothorax_mm), [1,1,1,1]];
+            _ptxEntry pushBack [LLSTRING(tensionpneumothorax_mm), [1,1,1,1]];
         };
     };
 };

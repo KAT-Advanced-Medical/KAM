@@ -1,4 +1,5 @@
 class RscText;
+class RscStructuredText;
 class RscButton;
 class RscPicture;
 class RscListBox;
@@ -105,7 +106,460 @@ class ACEGVAR(medical_gui,BodyImage): RscControlsGroupNoScrollbars {
 };
 
 class ACE_Medical_Menu {
-    class Controls {
+    class controlsBackground {
+        class IVFlowBackground: RscText {
+            idc = IDC_IV_FLOW_BACKGROUND; // LOOK HERE
+            x = QUOTE(POS_X(-8.5));
+            y = QUOTE(POS_Y(1.1));
+            w = QUOTE(POS_W(9));
+            h = QUOTE(POS_H(16.3));
+            colorBackground[] = {0, 0, 0, 0.7};
+        };
+        class IVFlowTitle: RscText {
+            idc = IDC_IV_FLOW_TITLE; // LOOK HERE
+            text = CSTRING(IVFlowTitle);
+            x = QUOTE(POS_X(-8.5));
+            y = QUOTE(POS_Y(0));
+            w = QUOTE(POS_W(9));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = GUI_BCG_COLOR; // LOOK HERE
+            show = 1;
+            class Attributes {
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "true";
+            };
+        };
+        class ABGBackground: IVFlowBackground {
+            idc = IDC_ABG_BACKGROUND; // LOOK HERE
+            x = QUOTE(POS_X(39.6));
+            y = QUOTE(POS_Y(1.1));
+            w = QUOTE(POS_W(9));
+            h = QUOTE(POS_H(3.3));
+        };
+        class ABGTitle: IVFlowTitle {
+            idc = IDC_ABG_TITLE; // LOOK HERE
+            text = CSTRING(ABGTitle);
+            x = QUOTE(POS_X(39.6));
+            y = QUOTE(POS_Y(0));
+            w = QUOTE(POS_W(9));
+            h = QUOTE(POS_H(1));
+            show = 1;
+            class Attributes {
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "true";
+            };
+        };
+    };
+    class controls {
+        class HeadCover: RscStructuredText  {
+            idc = IDC_IV_FLOW_HEADCOVER; // LOOK HERE
+            text = CSTRING(HeadCover);
+            x = QUOTE(POS_X(-8));
+            y = QUOTE(POS_Y(2.3));
+            w = QUOTE(POS_W(8));
+            h = QUOTE(POS_H(1.3));
+            colorBackground[] = {0, 0, 0, 0.5};
+            show = 1;
+            class Attributes {
+                align = "center";
+                valign = "bottom";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class HeadTitle: RscStructuredText  {
+            idc = IDC_IV_FLOW_HEADTITLE; // LOOK HERE
+            text = CSTRING(HeadTitle);
+            x = QUOTE(POS_X(-6.6));
+            y = QUOTE(POS_Y(1.5));
+            w = QUOTE(POS_W(2.2));
+            h = QUOTE(POS_H(0.8));
+            colorBackground[] = {0, 0, 0, 0};
+            show = 0;
+            class Attributes {
+                align = "center";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+                size = 0.9;
+            };
+        };
+        class HeadType: RscStructuredText  {
+            idc = IDC_IV_FLOW_HEADTYPE; // LOOK HERE
+            x = QUOTE(POS_X(-3.6));
+            y = QUOTE(POS_Y(1.5));
+            w = QUOTE(POS_W(2));
+            h = QUOTE(POS_H(0.8));
+            colorBackground[] = {0, 0, 0, 0};
+            show = 0;
+            class Attributes {
+                align = "center";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+                size = 0.9;
+            };
+        };
+        class HeadSubtractFull: RscButton {
+            idc = IDC_IV_FLOW_HEADSUBTRACTFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),0,-0.5)] call FUNC(handleIVAdjust));
+            text = "<<";
+            x = QUOTE(POS_X(-7.5));
+            y = QUOTE(POS_Y(2.5));
+            w = QUOTE(POS_W(1));
+            h = QUOTE(POS_H(1));
+            show = 0;
+            colorBackground[] = {0, 0, 0, 0.7};
+            colorBackgroundActive[] = {1, 1, 1, 1};
+            colorBackgroundDisabled[] = {0, 0, 0, 0.7};
+            colorBorder[] = {0,0,0,0};
+            class Attributes {
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class HeadSubtract: RscButton {
+            idc = IDC_IV_FLOW_HEADSUBTRACT; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),0,-0.1)] call FUNC(handleIVAdjust));
+            text = "<";
+            x = QUOTE(POS_X(-6));
+            y = QUOTE(POS_Y(2.5));
+            w = QUOTE(POS_W(1));
+            h = QUOTE(POS_H(1));
+            show = 0;
+            colorBackground[] = {0, 0, 0, 0.7};
+            colorBackgroundActive[] = {1, 1, 1, 1};
+            colorBackgroundDisabled[] = {0, 0, 0, 0.7};
+            colorBorder[] = {0,0,0,0};
+            class Attributes {
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class HeadIVValue: RscStructuredText {
+            idc = IDC_IV_FLOW_HEADIV_VALUE; // LOOK HERE
+            text = CSTRING(IVValue);
+            x = QUOTE(POS_X(-5));
+            y = QUOTE(POS_Y(2.5));
+            w = QUOTE(POS_W(2));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = {0, 0, 0, 0.2};
+            show = 0;
+            class Attributes {
+                align = "center";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+                size = 1;
+            };
+        };
+        class HeadAdd: RscButton {
+            idc = IDC_IV_FLOW_HEADADD; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),0,0.1)] call FUNC(handleIVAdjust));
+            text = ">";
+            x = QUOTE(POS_X(-3));
+            y = QUOTE(POS_Y(2.5));
+            w = QUOTE(POS_W(1));
+            h = QUOTE(POS_H(1));
+            show = 0;
+            colorBackground[] = {0, 0, 0, 0.7};
+            colorBackgroundActive[] = {1, 1, 1, 1};
+            colorBackgroundDisabled[] = {0, 0, 0, 0.7};
+            colorBorder[] = {0,0,0,0};
+            class Attributes {
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class HeadAddFull: RscButton {
+            idc = IDC_IV_FLOW_HEADADDFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),0,0.5)] call FUNC(handleIVAdjust));
+            text = ">>";
+            x = QUOTE(POS_X(-1.5));
+            y = QUOTE(POS_Y(2.5));
+            w = QUOTE(POS_W(1));
+            h = QUOTE(POS_H(1));
+            show = 0;
+            colorBackground[] = {0, 0, 0, 0.7};
+            colorBackgroundActive[] = {1, 1, 1, 1};
+            colorBackgroundDisabled[] = {0, 0, 0, 0.7};
+            colorBorder[] = {0,0,0,0};
+            class Attributes {
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+    
+        class ChestCover: HeadCover {
+            idc = IDC_IV_FLOW_CHESTCOVER;
+            text = CSTRING(ChestCover); // LOOK HERE
+            y = QUOTE(POS_Y(4.8));
+        };
+        class ChestTitle: HeadTitle {
+            idc = IDC_IV_FLOW_CHESTTITLE; // LOOK HERE
+            text = CSTRING(ChestTitle);
+            y = QUOTE(POS_Y(4.1));
+        };
+        class ChestType: HeadType {
+            idc = IDC_IV_FLOW_CHESTTYPE; // LOOK HERE
+            y = QUOTE(POS_Y(4.1));
+        };
+        class ChestSubtractFull: HeadSubtractFull {
+            idc = IDC_IV_FLOW_CHESTSUBTRACTFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,-0.5)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(5));
+        };
+        class ChestSubtract: HeadSubtract {
+            idc = IDC_IV_FLOW_CHESTSUBTRACT; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,-0.1)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(5));
+        };
+        class ChestIVValue: HeadIVValue {
+            idc = IDC_IV_FLOW_CHESTTEST; // LOOK HERE
+            y = QUOTE(POS_Y(5));
+        };
+        class ChestAdd: HeadAdd {
+            idc = IDC_IV_FLOW_CHESTADD; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,0.1)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(5));
+        };
+        class ChestAddFull: HeadAddFull {
+            idc = IDC_IV_FLOW_CHESTADDFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),1,0.5)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(5));
+        };
+
+        class LArmCover: HeadCover {
+            idc = IDC_IV_FLOW_LARMCOVER; // LOOK HERE
+            text = CSTRING(LArmCover);
+            y = QUOTE(POS_Y(7.4));
+        };
+        class LArmTitle: HeadTitle {
+            idc = IDC_IV_FLOW_LARMTITLE; // LOOK HERE
+            text = CSTRING(LArmTitle);
+            y = QUOTE(POS_Y(6.6));
+        };
+        class LArmType: HeadType {
+            idc = IDC_IV_FLOW_LARMTYPE; // LOOK HERE
+            y = QUOTE(POS_Y(6.6));
+        };
+        class LArmSubtractFull: HeadSubtractFull {
+            idc = IDC_IV_FLOW_LARMSUBTRACTFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,-0.5)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(7.6));
+        };
+        class LArmSubtract: HeadSubtract {
+            idc = IDC_IV_FLOW_LARMSUBTRACT; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,-0.1)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(7.6));
+        };
+        class LArmIVValue: HeadIVValue {
+            idc = IDC_IV_FLOW_LARMIVVALUE; // LOOK HERE
+            y = QUOTE(POS_Y(7.6));
+        };
+        class LArmAdd: HeadAdd {
+            idc = IDC_IV_FLOW_LARMADD; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,0.1)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(7.6));
+        };
+        class LArmAddFull: HeadAddFull {
+            idc = IDC_IV_FLOW_LARMADDFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),2,0.5)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(7.6));
+        };
+
+        class RArmCover: HeadCover {
+            idc = IDC_IV_FLOW_RARMCOVER; // LOOK HERE
+            text = CSTRING(RArmCover);
+            y = QUOTE(POS_Y(10.1));
+        };
+        class RArmTitle: HeadTitle {
+            idc = IDC_IV_FLOW_RARMTITLE; // LOOK HERE
+            text = CSTRING(RArmTitle);
+            y = QUOTE(POS_Y(9.3));
+        };
+        class RArmType: HeadType {
+            idc = IDC_IV_FLOW_RARMTYPE; // LOOK HERE
+            y = QUOTE(POS_Y(9.3));
+        };
+        class RArmSubtractFull: HeadSubtractFull {
+            idc = IDC_IV_FLOW_RARMSUBTRACTFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,-0.5)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(10.3));
+        };
+        class RArmSubtract: HeadSubtract {
+            idc = IDC_IV_FLOW_RARMSUBTRACT; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,-0.1)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(10.3));
+        };
+        class RArmIVValue: HeadIVValue {
+            idc = IDC_IV_FLOW_RARMIVVALUE; // LOOK HERE
+            y = QUOTE(POS_Y(10.3));
+        };
+        class RArmAdd: HeadAdd {
+            idc = IDC_IV_FLOW_RARMADD; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,0.1)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(10.3));
+        };
+        class RArmAddFull: HeadAddFull {
+            idc = IDC_IV_FLOW_RARMADDFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),3,0.5)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(10.3));
+        };
+
+        class LLegCover: HeadCover {
+            idc = IDC_IV_FLOW_LLEGCOVER; // LOOK HERE
+            text = CSTRING(LLegCover);
+            y = QUOTE(POS_Y(12.8));
+        };
+        class LLegTitle: HeadTitle {
+            idc = IDC_IV_FLOW_LLEGTITLE; // LOOK HERE
+            text = CSTRING(LLegTitle);
+            y = QUOTE(POS_Y(12));
+        };
+        class LLegType: HeadType {
+            idc = IDC_IV_FLOW_LLEGTYPE; // LOOK HERE
+            y = QUOTE(POS_Y(12));
+        };
+        class LLegSubtractFull: HeadSubtractFull {
+            idc = IDC_IV_FLOW_LLEGSUBTRACTFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,-0.5)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(12.9));
+        };
+        class LLegSubtract: HeadSubtract {
+            idc = IDC_IV_FLOW_LLEGSUBTRACT; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,-0.1)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(12.9));
+        };
+        class LLegIVValue: HeadIVValue {
+            idc = IDC_IV_FLOW_LLEGIVVALUE; // LOOK HERE
+            y = QUOTE(POS_Y(12.9));
+        };
+        class LLegAdd: HeadAdd {
+            idc = IDC_IV_FLOW_LLEGADD; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,0.1)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(12.9));
+        };
+        class LLegAddFull: HeadAddFull {
+            idc = IDC_IV_FLOW_LLEGADDFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),4,0.5)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(12.9));
+        };
+
+        class RLegCover: HeadCover {
+            idc = IDC_IV_FLOW_RLEGCOVER; // LOOK HERE
+            text = CSTRING(RLegCover);
+            y = QUOTE(POS_Y(15.4));
+        };
+        class RLegTitle: HeadTitle {
+            idc = IDC_IV_FLOW_RLEGTITLE; // LOOK HERE
+            text = CSTRING(RLegTitle);
+            y = QUOTE(POS_Y(14.6));
+        };
+        class RLegType: HeadType {
+            idc = IDC_IV_FLOW_RLEGTYPE; // LOOK HERE
+            y = QUOTE(POS_Y(14.6));
+        };
+        class RLegSubtractFull: HeadSubtractFull {
+            idc = IDC_IV_FLOW_RLEGSUBTRACTFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),5,-0.5)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(15.5));
+        };
+        class RLegSubtract: HeadSubtract {
+            idc = IDC_IV_FLOW_RLEGSUBTRACT; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),5,-0.1)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(15.5));
+        };
+        class RLegIVValue: HeadIVValue {
+            idc = IDC_IV_FLOW_RLEGIVVALUE; // LOOK HERE
+            y = QUOTE(POS_Y(15.5));
+        };
+        class RLegAdd: HeadAdd {
+            idc = IDC_IV_FLOW_RLEGADD; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),5,0.1)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(15.5));
+        };
+        class RLegAddFull: HeadAddFull {
+            idc = IDC_IV_FLOW_RLEGADDFULL; // LOOK HERE
+            onButtonClick = QUOTE([ARR_3(ACEGVAR(medical_gui,target),5,0.5)] call FUNC(handleIVAdjust));
+            y = QUOTE(POS_Y(15.5));
+        };
+
+        class PaCO2_Output: RscStructuredText {
+            idc = IDC_TEST_PACO2; // LOOK HERE
+            text = CSTRING(BGBlank);
+            x = QUOTE(POS_X(40));
+            y = QUOTE(POS_Y(1.5));
+            w = QUOTE(POS_W(2.2));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = {0, 0, 0, 0.5};
+            show = 1;
+            class Attributes {
+                align = "center";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+                size = 1;
+            };
+        };
+        class PaO2_Output: PaCO2_Output {
+            idc = IDC_TEST_PAO2; // LOOK HERE
+            x = QUOTE(POS_X(43));
+        };
+        class SpO2_Output: PaCO2_Output {
+            idc = IDC_TEST_SPO2; // LOOK HERE
+            x = QUOTE(POS_X(46));
+        };
+        class HCO3_Output: RscStructuredText {
+            idc = IDC_TEST_HCO3; // LOOK HERE
+            text = CSTRING(BGBlank);
+            x = QUOTE(POS_X(40));
+            y = QUOTE(POS_Y(3));
+            w = QUOTE(POS_W(2.2));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = {0, 0, 0, 0.5};
+            show = 1;
+            class Attributes {
+                align = "center";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+                size = 1;
+            };
+        };
+        class PH_Output: HCO3_Output {
+            idc = IDC_TEST_PH; // LOOK HERE
+            x = QUOTE(POS_X(43));
+        };
+        class Test_Reset: RscButton {
+            idc = IDC_TEST_RESET; // LOOK HERE
+            onButtonClick = QUOTE([ACEGVAR(medical_gui,target)] call FUNC(dumpBloodGas));
+            text = CSTRING(TestReset);
+            x = QUOTE(POS_X(46));
+            y = QUOTE(POS_Y(3));
+            w = QUOTE(POS_W(2.1));
+            h = QUOTE(POS_H(1));
+            colorText[] = {1, 1, 1, 0.9};
+            colorActive[] = {0, 0, 0, 0.7};
+            colorBackground[] = {0, 0, 0, 0.7};
+            colorBackgroundActive[] = {1, 1, 1, 1};
+            colorBorder[] = {0,0,0,0};
+            show = 1;
+            class Attributes {
+                align = "center";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+
+
         class Triage: RscActivePicture {};
         class Surgery: Triage {
             idc = IDC_SURGERY;

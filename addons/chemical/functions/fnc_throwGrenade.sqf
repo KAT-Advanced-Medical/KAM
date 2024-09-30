@@ -18,7 +18,7 @@
 
 private _config = configFile >> "CfgAmmo" >> _ammo;
 
-if (getNumber (_config >> "KAT_csGas") != 1) exitwith {};
+if (getNumber (_config >> "KAT_csGas") != 1) exitWith {};
 
 private _timeToLive = getNumber (_config >> "timeToLive");
 private _fuzeTimeBase = getNumber (_config >> "explosionTime");

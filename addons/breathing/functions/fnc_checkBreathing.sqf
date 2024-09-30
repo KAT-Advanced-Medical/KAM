@@ -19,7 +19,7 @@
 
 params ["_medic", "_patient"];
 
-private _ph = _patient getVariable [QEGVAR(pharma,pH), 1500];
+private _ph = GET_PH(_patient);
 private _hr = GET_HEART_RATE(_patient);
 private _output = "";
 private _output_log = "";
@@ -33,10 +33,10 @@ if (_patient getVariable [QGVAR(pneumothorax), 0] > 0) then {
     _breathing_log = LLSTRING(breathing_shallow);
 };
 
-if (_ph < 750) then {
+if (_ph < 7.2) then {
     _breath = LLSTRING(breath_mild);
 
-    if (_ph < 250) then {
+    if (_ph < 6.9) then {
         _breath = LLSTRING(breath_stink);
     };
 };
