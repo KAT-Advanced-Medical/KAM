@@ -15,44 +15,35 @@
  * Public: No
  */
 
-disableSerialization;
-
 private _medications = [
     "ACE_morphine",
     "ACE_epinephrine",
     "kat_epinephrineIV"
 ];
 
-// Function to get found medications
 private _medicationsFound = {
     params ["_medications"];
     private _inventory = items player;
     private _found = [];
-
-    // Check each item in the inventory
     {
         if (_x in _medications) then {
             _found pushBack _x;
         };
     } forEach _inventory;
-
-    _found  // Return the found items
+    
+    _found
 };
-private _display = uiNamespace getVariable ["ace_medical_gui_menuDisplay", displayNull];
+private _display = uiNamespace getVariable [QACEGVAR(medical_gui,menuDisplay), displayNull];
 private _listBox = _display displayCtrl 71305;
-private _foundMedications = _medications call _medicationsFound;  
-
+private _foundMedications = [_medications] call _medicationsFound;
 private _populateListBox = {
-    disableSerialization;
-
     params ["_foundMedications", "_listBox"];
-
+    
     lbClear _listBox;
 
     {
         private _classname = _x;
-        private _count = [player, _classname] call ace_common_fnc_getCountOfItem;  // Fixed reference to player
-
+        private _count = [player, _classname] call ace_common_fnc_getCountOfItem; 
         if (_count > 0) then {
             private _config = configFile >> "CfgWeapons" >> _classname;
             private _displayName = getText (_config >> "displayName");
@@ -65,5 +56,4 @@ private _populateListBox = {
         };
     } forEach _foundMedications;
 };
-
 [_foundMedications, _listBox] call _populateListBox;
