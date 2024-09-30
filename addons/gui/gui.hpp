@@ -151,6 +151,27 @@ class ACE_Medical_Menu {
                 shadow = "true";
             };
         };
+        class SYRINGEBackground: IVFlowBackground {
+            idc = IDC_SYRINGE_BACKGROUND; // LOOK HERE
+            x = QUOTE(POS_X(39.6));
+            y = QUOTE(POS_Y(4.9));
+            w = QUOTE(POS_W(9));
+            h = QUOTE(POS_H(18.5));
+        };
+        class SYRINGETitle: IVFlowTitle {
+            idc = IDC_SYRINGE_TITLE; // LOOK HERE
+            text = CSTRING(SYRINGETitle);
+            x = QUOTE(POS_X(39.6));
+            y = QUOTE(POS_Y(4.9));
+            w = QUOTE(POS_W(9));
+            h = QUOTE(POS_H(1));
+            show = 1;
+            class Attributes {
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "true";
+            };
+        };
     };
     class controls {
         class HeadCover: RscStructuredText  {
@@ -584,6 +605,70 @@ class ACE_Medical_Menu {
         };
         class BodyLabelRight: BodyLabelLeft {
             idc = IDC_SIDE_LABEL_RIGHT;
+        };
+        class SyringeTypeTitle: RscStructuredText  {
+            idc = IDC_SYRINGE_TYPE_TITLE; // LOOK HERE
+            text = CSTRING(SyringeTitleList);
+            x = QUOTE(POS_X(40));
+            y = QUOTE(POS_Y(5.9));
+            w = QUOTE(POS_W(8));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = {0, 0, 0, 0.5};
+            show = 1;
+            class Attributes {
+                align = "center";
+                valign = "bottom";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class SyringeList: RscListBox  {
+            idc = IDC_SYRINGE_TYPE_LIST; // LOOK HERE
+            x = QUOTE(POS_X(40));
+            y = QUOTE(POS_Y(6.9));
+            w = QUOTE(POS_W(8));
+            h = QUOTE(POS_H(1.5));
+            show = 1;
+            colorText[] = {1,1,1,1};
+            colorSelect[] = {0,0,0,1};
+            colorSelect2[] = {0,0,0,1};
+            colorBackground[] = {0.2, 0.2, 0.2, 1};
+            colorSelectBackground[] = {0.7,0.7,0.7,1};
+            colorSelectBackground2[] = {0.7,0.7,0.7,1};
+            sizeEx = QUOTE(GUI_GRID_H * 0.9 * NORMALIZE_SIZEEX);
+        };
+        class MedicationTypeTitle: RscStructuredText  {
+            idc = IDC_MEDICATION_TYPE_TITLE; // LOOK HERE
+            text = CSTRING(SyringeTitleList);
+            x = QUOTE(POS_X(40));
+            y = QUOTE(POS_Y(8.9));
+            w = QUOTE(POS_W(8));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = {0, 0, 0, 0.5};
+            show = 1;
+            class Attributes {
+                align = "center";
+                valign = "bottom";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class MedicationList: RscListBox  {
+            idc = IDC_MEDICATION_TYPE_LIST; // LOOK HERE
+            x = QUOTE(POS_X(40));
+            y = QUOTE(POS_Y(9.9));
+            w = QUOTE(POS_W(8));
+            h = QUOTE(POS_H(1.5));
+            show = 1;
+            colorText[] = {1,1,1,1};
+            colorSelect[] = {0,0,0,1};
+            colorSelect2[] = {0,0,0,1};
+            colorBackground[] = {0.2, 0.2, 0.2, 1};
+            colorSelectBackground[] = {0.7,0.7,0.7,1};
+            colorSelectBackground2[] = {0.7,0.7,0.7,1};
+            sizeEx = QUOTE(GUI_GRID_H * 0.9 * NORMALIZE_SIZEEX);
         };
     };
 };

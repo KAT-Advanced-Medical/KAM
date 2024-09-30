@@ -138,7 +138,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
         items[] = {"kat_EACA"};
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
+        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(ivCondition));
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
@@ -578,7 +578,7 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_lidocaine);
         treatmentTime = QGVAR(treatmentTime_lidocaine);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
+        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(ivCondition));
         items[] = {"kat_syringe_kat_lidocaine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};

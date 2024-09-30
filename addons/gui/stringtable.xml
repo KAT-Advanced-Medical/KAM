@@ -152,5 +152,11 @@
         <Key ID="STR_KAT_GUI_TestReset">
             <English>Reset</English>
         </Key>
+        <Key ID="STR_KAT_GUI_SYRINGETitle">
+            <English>Syringe Preparation</English>
+        </Key>
+        <Key ID="STR_KAT_GUI_SyringeTitleList">
+            <English>Syringe Type</English>
+        </Key>
     </Package>
 </Project>

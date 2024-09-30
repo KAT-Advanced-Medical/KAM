@@ -138,3 +138,10 @@
 #define IDC_TEST_RESET          71207
 
 #define IDC_ABG_BACKGROUND           71299
+
+#define IDC_SYRINGE_TITLE           71300
+#define IDC_SYRINGE_BACKGROUND           71301
+#define IDC_SYRINGE_TYPE_TITLE           71302
+#define IDC_SYRINGE_TYPE_LIST           71303
+#define IDC_MEDICATION_TYPE_TITLE           71304
+#define IDC_MEDICATION_TYPE_LIST           71305

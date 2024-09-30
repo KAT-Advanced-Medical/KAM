@@ -9,3 +9,5 @@ PREP(updateInjuryList);
 PREP(updateBodyImage);
 PREP(updateIVStatus);
 PREP(updateABGStatus);
+PREP(updateSyringes);
+PREP(updateMedications);
