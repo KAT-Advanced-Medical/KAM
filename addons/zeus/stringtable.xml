@@ -17,6 +17,7 @@
             <Chinesesimp>气道闭塞:</Chinesesimp>
             <Portuguese>Obstrução de vias aéreas:</Portuguese>
             <Finnish>Hengitysteiden tukos: </Finnish>
+            <Dutch>Luchtwegobstructie: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Occlusion">
             <English>Airway occlusion: </English>
@@ -34,6 +35,7 @@
             <Chinesesimp>气道阻塞:</Chinesesimp>
             <Portuguese>Oclusão das vias aéreas:</Portuguese>
             <Finnish>Hengitysteiden likaantuminen: </Finnish>
+            <Dutch>Luchtwegverstopping: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Pneumothorax">
             <English>Pneumothorax: </English>
@@ -51,6 +53,7 @@
             <Chinesesimp>气胸:</Chinesesimp>
             <Portuguese>Pneumotórax:</Portuguese>
             <Finnish>Lohistunut keuhko: </Finnish>
+            <Dutch>Pneumothorax: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_PneumothoraxDeteriorate">
             <English>Pneumothorax deteriorate:</English>
@@ -60,6 +63,7 @@
             <Spanish>Deterioro de pneumotórax:</Spanish>
             <French>Détérioration du pneumothorax :</French>
             <Portuguese>Deterioração do pneumotórax</Portuguese>
+            <Dutch>Verslechterende pneumothorax: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Hemopneumothorax">
             <English>Hemopneumothorax: </English>
@@ -77,6 +81,7 @@
             <Chinesesimp>血气胸:</Chinesesimp>
             <Portuguese>Hemopneumotórax:</Portuguese>
             <Finnish>Verenvuoto paisunut keuhko: </Finnish>
+            <Dutch>Hemopneumothorax: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_Tensionpneumothorax">
             <English>Tension pneumothorax: </English>
@@ -94,6 +99,7 @@
             <Chinesesimp>张力性气胸:</Chinesesimp>
             <Portuguese>Pneumotórax hipertensivo:</Portuguese>
             <Finnish>Lamannut keuhko jännityksen alaisena: </Finnish>
+            <Dutch>Spanningspneumothorax: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_SpO2Value">
             <English>SpO2 value: </English>
@@ -111,6 +117,7 @@
             <Chinesesimp>SpO2值:</Chinesesimp>
             <Portuguese>Valor de SpO2:</Portuguese>
             <Finnish>Veren happitaso (SpO2): </Finnish>
+            <Dutch>SpO2 waarde: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_bloodGroup">
             <English>Blood group: </English>
@@ -128,6 +135,7 @@
             <Chinesesimp>血型:</Chinesesimp>
             <Portuguese>Tipo sanguíneo:</Portuguese>
             <Finnish>Veriryhmä: </Finnish>
+            <Dutch>Bloedgroep: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_bloodVolume">
             <English>Blood volume: </English>
@@ -145,6 +153,7 @@
             <Chinesesimp>血液量:</Chinesesimp>
             <Portuguese>Volume de sangue:</Portuguese>
             <Finnish>Veren määrä</Finnish>
+            <Dutch>Bloedvolume: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_manageAirway_Module_displayname">
             <English>Manage Airway</English>
@@ -162,6 +171,7 @@
             <Chinesesimp>气道管理:</Chinesesimp>
             <Portuguese>Gerenciar vias aéreas</Portuguese>
             <Finnish>Hallitse hengitysteitä</Finnish>
+            <Dutch>Manage luchtweg</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_bloodType_Module_displayname">
             <English>Change blood group / volume</English>
@@ -179,6 +189,7 @@
             <Chinesesimp>改变血型/血液量:</Chinesesimp>
             <Portuguese>Alterar tipo sanguíneo/volume</Portuguese>
             <Finnish>Muuta verityyppiä/tilavuutta</Finnish>
+            <Dutch>Verander bloedgroep / -volume</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_displayname">
             <English>Change Cardiac State</English>
@@ -190,6 +201,7 @@
             <Spanish>Cambiar estado cardíaco</Spanish>
             <Finnish>Muuta sydämen tilaa</Finnish>
             <Russian>Изменить состояние сердца</Russian>
+            <Dutch>Verander cardiale staat</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_checkmedical_Module_displayname">
             <English>Open unit medical menu</English>
@@ -207,6 +219,7 @@
             <Chinesesimp>打开单位医疗菜单</Chinesesimp>
             <Portuguese>Abra o menu médico da unidade</Portuguese>
             <Finnish>Avaa laitteen lääketieteellinen valikko</Finnish>
+            <Dutch>Open eenheids medisch menu</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_State">
             <English>State:</English>
@@ -224,6 +237,7 @@
             <Chinesesimp>状态:</Chinesesimp>
             <Portuguese>Estado:</Portuguese>
             <Finnish>Olotila:</Finnish>
+            <Dutch>staat: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_VT">
             <English>Ventricular Tachycardia</English>
@@ -235,6 +249,7 @@
             <Spanish>Taquicardia ventricular</Spanish>
             <Finnish>Ventrikulaarinen takykardia: </Finnish>
             <Russian>Желудочковая тахикардия</Russian>
+            <Dutch>Ventriculaire tachycardie</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_VF">
             <English>Ventricular Fibrillation</English>
@@ -246,6 +261,7 @@
             <Spanish>Fibrilación ventricular</Spanish>
             <Finnish>Kammiovärinä:</Finnish>
             <Russian>Фибрилляция желудочков</Russian>
+            <Dutch>Ventriculaire fibrillatie</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_PEA">
             <English>Pulseless Electrical Activity</English>
@@ -257,6 +273,7 @@
             <Spanish>Actividad eléctrica sin pulso</Spanish>
             <Finnish>Pulssiton sähköinen toiminta:</Finnish>
             <Russian>Безимпульсная электрическая активность</Russian>
+            <Dutch>Polsloze electrische activiteit (PEA)</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_Asystole">
             <English>Asystole</English>
@@ -274,6 +291,7 @@
             <Chinesesimp>心搏停止</Chinesesimp>
             <Portuguese>Assistolia</Portuguese>
             <Finnish>Sydämenpysähdys</Finnish>
+            <Dutch>Asystole</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_OnlyAI">
             <English>Unit must be an AI</English>
@@ -285,6 +303,7 @@
             <Spanish>La unidad debe ser una IA</Spanish>
             <Finnish>Yksikön on oltava AI</Finnish>
             <Russian>Юнит должен быть ИИ</Russian>
+            <Dutch>Eenheid moet een KI / AI zijn</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_sliderFormat13was23">
             <English>%1%3 (was %2%3)</English>
@@ -302,6 +321,7 @@
             <Chinesesimp>%1%3 (以前是 %2%3)</Chinesesimp>
             <Portuguese>%1%3 (era %2%3)</Portuguese>
             <Finnish>%1%2(oli %2%3)</Finnish>
+            <Dutch>%1%3 (was %2%3)</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_displayname">
             <English>Toggle Instant AI Death</English>
@@ -313,6 +333,7 @@
             <Spanish>Alternar muerte instantánea de la IA</Spanish>
             <Finnish>Valitse välitön AI-kuolema</Finnish>
             <Russian>Переключить мгновенную смерть ИИ</Russian>
+            <Dutch>Schakel onmiddelijke KI / AI dood om</Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_Toggled">
             <English>Instant AI Death %1 for unit</English>
@@ -324,6 +345,7 @@
             <Spanish>Muerte instantánea de la IA al %1 para la unidad</Spanish>
             <Finnish>Välitön AI-kuolema %1 yksikölle</Finnish>
             <Russian>Мгновенная смерть ИИ %1 для юнита</Russian>
+            <Dutch>Onmiddelijke dood voor KI / AI %1 voor eenheid</Dutch>
         </Key>
     </Package>
 </Project>

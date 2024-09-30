@@ -3,45 +3,59 @@
     <Package name="Watch">
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm">
             <English>Select temperature form</English>
+            <Dutch>Selecteer temperatuur vorm</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Desc">
             <English>Selects which temperature unit is used for the KATMIN watch display</English>
+            <Dutch>Selecteert welke temperatuur eenheid gebruikt wordt voor de KATMIN horloge</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Celcius">
             <English>Celcius</English>
+            <Dutch>Celcius</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_TemperatureForm_Fahrenheit">
             <English>Fahrenheit</English>
+            <Dutch>Fahrenheit</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm">
             <English>Select pressure form</English>
+            <Dutch>Selecteer drukvorm</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_Desc">
             <English>Selects which pressure unit is used for the KATMIN watch display</English>
+            <Dutch>Selecteerd welke drukeenheden gebruikt worden voor de KATMIN horloge</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_mmHg">
             <English>mmHg</English>
+            <Dutch>mmHg</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_PressureForm_hPa">
             <English>hPa</English>
+            <Dutch>hPa</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm">
             <English>Select altitude form</English>
+            <Dutch>Selecteer hoogte vorm</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_Desc">
             <English>Selects which altitude unit is used for the KATMIN watch display</English>
+            <Dutch>Selecteerd welk hoogte eenheid gebruikt wordt voor de KATMIN horloge</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_meters">
             <English>Meters</English>
+            <Dutch>Meters</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_SETTING_AltitudeForm_feet">
             <English>Feet</English>
+            <Dutch>Voet</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDescription">
             <English>Watch with Vital Monitoring Capabilities</English>
+            <Dutch>Horloge met ingebouwde vitale waarden monitor</Dutch>
         </Key>
         <Key ID="STR_KAT_Watch_KatminDisplayName">
             <English>Katmin K500</English>
+            <Dutch>Katmin k500</Dutch>
         </Key>
     </Package>
 </Project>
