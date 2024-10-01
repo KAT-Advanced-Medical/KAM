@@ -278,6 +278,7 @@
             <Japanese>脈拍数とSpO2を読み取るのに使用</Japanese>
             <Dutch>Wordt gebruikt om polsslag en SpO2 te meten</Dutch>
             <French>Utilisé pour vérifier le rythme cardiaque et la SpO2</French>
+            <Spanish>Utilizado para analizar el pulso sanguíneo y el SpO2</Spanish>
         </Key>
         <Key ID="STR_KAT_Breathing_placing">
             <English>Placing</English>

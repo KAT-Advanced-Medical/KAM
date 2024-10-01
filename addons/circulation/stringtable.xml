@@ -22,6 +22,7 @@
         <Key ID="STR_KAT_Circulation_SIMPLEMED_ENABLE">
             <English>AI Simple Medical activated?</English>
             <Dutch>AI/KI simpel medische simulatie geactiveerd?</Dutch>
+            <Spanish>¿Activar Médico Simple para IA?</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable">
             <English>Advanced Rhythms activated?</English>
@@ -1674,18 +1675,22 @@
         <Key ID="STR_KAT_Circulation_Blood_Sample_String">
             <English>%1 Blood Sample</English>
             <Dutch>%1 bloedstaal</Dutch>
+            <Spanish>%1 Muestra de sangre</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test_Action">
             <English>Run ABG Test</English>
             <Dutch>Voer ABG test uit</Dutch>
+            <Spanish>Realizar prueba ABG</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test">
             <English>ABG Test</English>
             <Dutch>ABG test</Dutch>
+            <Spanish>Prueba ABG</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_Apply_Arterial_Test">
             <English>Apply %1 Test</English>
             <Dutch>Voer %1 test uit</Dutch>
+            <Spanish>Realizar prueba %1</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -2601,14 +2606,17 @@
         <Key ID="STR_KAT_Circulation_DrawArterial_Action_Use">
             <English>Draw Arterial Sample</English>
             <Dutch>Neem Arterieel bloedstaal</Dutch>
+            <Spanish>Extraer muestra arterial</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_sampleItemName">
             <English>Blood Sample</English>
             <Dutch>Bloedstaal</Dutch>
+            <Spanish>Muestra de sangre</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_resultItemName">
             <English>ABG Result</English>
             <Dutch>ABG resultaat</Dutch>
+            <Spanish>Resultado ABG</Spanish>
         </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>
