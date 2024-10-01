@@ -157,7 +157,7 @@ class ACE_Medical_Menu {
             x = QUOTE(POS_X(39.6));
             y = QUOTE(POS_Y(4.9));
             w = QUOTE(POS_W(9));
-            h = QUOTE(POS_H(18.5));
+            h = QUOTE(POS_H(16.5));
         };
         class SYRINGETitle: IVFlowTitle {
             idc = IDC_SYRINGE_TITLE; // LOOK HERE
@@ -656,6 +656,60 @@ class ACE_Medical_Menu {
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(4.5));
             show = 1;
+        };
+        class DoseTitle: RscStructuredText  {
+            idc = IDC_MEDICATION_DOSE_TITLE; // LOOK HERE
+            text = CSTRING(DoseTitle);
+            x = QUOTE(POS_X(40));
+            y = QUOTE(POS_Y(15.9));
+            w = QUOTE(POS_W(8));
+            h = QUOTE(POS_H(1));
+            colorBackground[] = {0, 0, 0, 0.5};
+            show = 1;
+            class Attributes {
+                align = "center";
+                valign = "bottom";
+                color = "#E5E5E5";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
+        };
+        class DoseList: RscCombo {
+            idc = IDC_MEDICATION_DOSE_COMBO; // LOOK HERE
+            x = QUOTE(POS_X(40));
+            y = QUOTE(POS_Y(16.9));
+            w = QUOTE(POS_W(8));
+            h = QUOTE(POS_H(1.5));
+            show = 1;
+            class Items
+            {
+	            class LowDose
+	            {
+		            text = "Low";
+                    default = 1;
+                    value = 1;
+	            };
+	            //class MediumDose
+	            //{
+		        //    text = "Medium";
+                //    value = 2;
+	            //};
+                class HighDose
+	            {
+		            text = "High";
+                    value = 3;
+	            };
+            };
+        };
+        class PrepSyringe: RscButton {
+            idc = IDC_MEDICATION_PREP_SYRINGE; // LOOK HERE
+            text = CSTRING(PrepSyringe);
+            x = QUOTE(POS_X(40));
+            y = QUOTE(POS_Y(18.9));
+            w = QUOTE(POS_W(8));
+            h = QUOTE(POS_H(1.5));
+            show = 1;
+            onButtonClick = QUOTE([] call FUNC(prepSyringe));
         };
     };
 };

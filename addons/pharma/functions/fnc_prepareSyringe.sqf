@@ -16,28 +16,22 @@
  * None
  *
  * Example:
- * [player, player, ["kat_TXA", "1", "5ml"]] call kat_pharma_fnc_prepareSyringe;
+ * [player, player, ["TXA", "1", "5ml"]] call kat_pharma_fnc_prepareSyringe;
  *
  * Public: No
  */
+params ["_player", "_medicationType", "_syringeType", "_doseType"];
 
-params ["_target", "_player", "_params"];
-_params params ["_className", "_syringeType", "_doseType"];
-
-// Combine class name, dose type, and syringe type to form the final syringe class name
-private _syringeClassName = format ["kat_syringe_%1_%2_%3", _className, _syringeType, _doseType];
-
-// Check if the syringe class exists
+private _syringeClassName = format ["kat_syringe_%1_%2_%3", _medicationType, _syringeType, _doseType];
 private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
-
 if (!_hasSyringe) exitWith {
-    hint format ["Syringe type for %1 with %2 syringe and %3 dose does not exist.", _className, _syringeType, _doseType];
+    hint format ["Syringe type for %1 with %2 syringe and %3 dose does not exist.", _medicationType, _syringeType, _doseType];
 };
-
-// Remove the base syringe and the medication from the player's inventory
 private _baseSyringe = format ["kat_%1_syringe", _syringeType];
 _player removeItem _baseSyringe;
-_player removeItem _className;
-
-// Add the crafted syringe with fluid to the player's inventory
+_katClassName = "kat_" + _medicationType;
+_player removeItem _katClassName;
 _player addItem _syringeClassName;
+private _syringeDisplayName = getText (configFile >> "CfgWeapons" >> _syringeClassName >> "displayName");
+hint format ["Prepared syringe: %1", _syringeDisplayName];
+[{hint ""}, [], 5] call CBA_fnc_waitAndExecute;

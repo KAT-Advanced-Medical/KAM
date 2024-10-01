@@ -73,18 +73,9 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
-    QGVAR(medLvl_PrepIVSyringe),
+    QGVAR(medLvl_PrepSyringe),
     "LIST",
-    [LLSTRING(medLvl_PrepIVSyringe), LLSTRING(medLvl_PrepIVSyringe_Desc)],
-    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
-    true
-] call CBA_Settings_fnc_init;
-
-[
-    QGVAR(medLvl_PrepIMSyringe),
-    "LIST",
-    [LLSTRING(medLvl_PrepIMSyringe), LLSTRING(medLvl_PrepIMSyringe_Desc)],
+    [LLSTRING(medLvl_PrepSyringe), LLSTRING(medLvl_PrepSyringe_Desc)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
     [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
     true

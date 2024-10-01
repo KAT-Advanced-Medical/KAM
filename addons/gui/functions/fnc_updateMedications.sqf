@@ -14,13 +14,24 @@
  *
  * Public: No
  */
-hint str "updating medications";
 disableSerialization;
 
-private _medications = [
-    "ACE_morphine",
-    "ACE_epinephrine",
-    "kat_epinephrineIV"
+[{private _medications = [
+    "kat_amiodarone",
+    "kat_atropine",
+    "kat_EACA",
+    "kat_epinephrineIV",
+    "kat_etomidate",
+    "kat_fentanyl",
+    "kat_flumazenil",
+    "kat_ketamine",
+    "kat_lidocaine",
+    "kat_lorazepam",
+    "kat_nalbuphine",
+    "kat_nitroglycerin",
+    "kat_norepinephrine",
+    "kat_phenylephrine",
+    "kat_TXA"
 ];
 
 private _medicationsFound = {
@@ -31,11 +42,11 @@ private _medicationsFound = {
 
     {
         if (_x in _medications) then {
-            _found pushBack _x;  // Store found medication
+            _found pushBack _x; 
         };
     } forEach _inventory;
 
-    _found  // Return the list of found medications
+    _found 
 };
 
 private _listBox = findDisplay 38580 displayCtrl 71305;
@@ -44,28 +55,20 @@ private _foundMedications = [_medications] call _medicationsFound;
 private _populateListBox = {
     params ["_foundMedications", "_listBox"];
 
-    lbClear _listBox;  // Clear the listbox before adding new entries
-
+    lbClear _listBox;
     {
-        private _classname = _x;  // Medication class name
-
-        // Only proceed if the medication is found
+        private _classname = _x;
         if (_classname != "") then {
             private _config = configFile >> "CfgWeapons" >> _classname;
             private _displayName = getText (_config >> "displayName");
             private _picture = getText (_config >> "picture");
-            private _data = (_classname splitString "_") select 1;  // Adjust index as needed
-
-            // Display medication name in the listbox
-            private _entryText = format ["%1", _displayName];  // Only show the name
+            private _data = toLower ((_classname splitString "_") select 1);
+            private _entryText = format ["%1", _displayName];  
             private _index = _listBox lbAdd _entryText;
-
-            // Set the picture and data for the listbox entry
             _listBox lbSetPicture [_index, _picture];
             _listBox lbSetData [_index, _data];
         };
-    } forEach _foundMedications;  // Iterate through the found medications
+    } forEach _foundMedications; 
 };
 
-// Populate the listbox with found medications
-[_foundMedications, _listBox] call _populateListBox;
+[_foundMedications, _listBox] call _populateListBox; }, [], 0.1] call CBA_fnc_waitAndExecute;

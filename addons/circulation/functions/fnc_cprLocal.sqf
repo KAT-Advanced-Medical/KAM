@@ -91,11 +91,11 @@ private _fnc_advRhythm = {
         {
             _epiBoost = 1.3;
         };
-        case "syringe_kat_epinephrineIV_5ml_2":
+        case "syringe_kat_epinephrineIV_5ml_3":
         {
             _epiBoost = 1.5;
         };
-        case "syringe_kat_lidocaine_5ml_2":
+        case "syringe_kat_lidocaine_5ml_3":
         {
             _lidoBoost = _lidoBoost + 8;
         };
@@ -103,7 +103,7 @@ private _fnc_advRhythm = {
         {
             _amiBoost = _amiBoost + (random [6,10,16]);
         };
-        case "syringe_kat_amiodarone_5ml_2":
+        case "syringe_kat_amiodarone_5ml_3":
         {
             _amiBoost = _amiBoost + (random [8,14,20]);
         };

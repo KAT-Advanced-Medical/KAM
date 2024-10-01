@@ -11,3 +11,4 @@ PREP(updateIVStatus);
 PREP(updateABGStatus);
 PREP(updateSyringes);
 PREP(updateMedications);
+PREP(prepSyringe);

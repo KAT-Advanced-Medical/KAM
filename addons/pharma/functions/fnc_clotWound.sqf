@@ -62,10 +62,10 @@ private _fnc_clotWound = {
 
             if (_amountOf * _bleeding > 0) exitWith {
 
-                if ((_countTXA > 0.3 || _countTXAiV51 > 0.3 || _countTXAiV52 > 0.3 || _countTXAiM101 > 0.3 || _countTXAiM102 > 0.3) || (_countEACA > 0.3 || _countEACAIV51 > 0.3 || _countEACAIV52 > 0.3)) then {
+                if ((_countTXA > 0.3 || _countTXAiV51 > 0.3 || _countTXAiV52 > 0.3 || _countTXAiM101 > 0.3 || _countTXAiM103 > 0.3) || (_countEACA > 0.3 || _countEACAIV51 > 0.3 || _countEACAIV52 > 0.3)) then {
                     _logString = LSTRING(coagulation_Bandaged_TXA);
 
-                    if ((_countTXA > 0.3 || _countTXAiV51 > 0.3 || _countTXAiV52 > 0.3 || _countTXAiM101 > 0.3 || _countTXAiM102 > 0.3) && (_countEACA > 0.3 || _countEACAIV51 > 0.3 || _countEACAIV52 > 0.3)) exitWith { // If TXA & EACA are in system at same time use EACA bandage
+                    if ((_countTXA > 0.3 || _countTXAiV51 > 0.3 || _countTXAiV52 > 0.3 || _countTXAiM101 > 0.3 || _countTXAiM103 > 0.3) && (_countEACA > 0.3 || _countEACAIV51 > 0.3 || _countEACAIV52 > 0.3)) exitWith { // If TXA & EACA are in system at same time use EACA bandage
                         _woundClotTime = round (_woundClotTime / 3 * 2);
                         _bandageToUse = _bandageToUse + "EACA";
                     };
@@ -115,12 +115,12 @@ private _fnc_clotWound = {
     private _coagulationFactor = _unit getVariable [QGVAR(coagulationFactor), 30];
     private _countTXA = [_unit, "TXA", false] call ACEFUNC(medical_status,getMedicationCount);
     private _countTXAiV51= [_patient, "syringe_kat_txa_5ml_1", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _countTXAiV51 = [_patient, "syringe_kat_txa_5ml_2", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _countTXAiV53 = [_patient, "syringe_kat_txa_5ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
     private _countTXAiM101 = [_patient, "syringe_kat_txa_10ml_1", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _countTXAiM102 = [_patient, "syringe_kat_txa_10ml_2", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _countTXAiM103 = [_patient, "syringe_kat_txa_10ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
     private _countEACA = [_unit, "EACA", false] call ACEFUNC(medical_status,getMedicationCount);
     private _countEACAIV51 = [_patient, "syringe_kat_eaca_5ml_1", false] call ACEFUNC(medical_status,getMedicationCount);
-    private _countEACAIV52 = [_patient, "syringe_kat_eaca_5ml_2", false] call ACEFUNC(medical_status,getMedicationCount);
+    private _countEACAIV53 = [_patient, "syringe_kat_eaca_5ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
     private _hasWoundToBandageArray = [];
 
     if (_openWounds isEqualTo createHashMap) exitWith {}; // Exit when hashmap not initialized (Will not work when hashmap is set, cause ace only changes value of "woundCount" to 0)
