@@ -7,6 +7,7 @@ class RscActivePicture;
 class RscButtonMenu;
 class RscControlsGroup;
 class RscControlsGroupNoScrollbars;
+class RscCombo;
 
 class ace_medical_gui_TriageToggle: RscButton {
     x = QUOTE(POS_X(14.33));
@@ -628,21 +629,14 @@ class ACE_Medical_Menu {
             x = QUOTE(POS_X(40));
             y = QUOTE(POS_Y(6.9));
             w = QUOTE(POS_W(8));
-            h = QUOTE(POS_H(1.5));
+            h = QUOTE(POS_H(2.5));
             show = 1;
-            colorText[] = {1,1,1,1};
-            colorSelect[] = {0,0,0,1};
-            colorSelect2[] = {0,0,0,1};
-            colorBackground[] = {0.2, 0.2, 0.2, 1};
-            colorSelectBackground[] = {0.7,0.7,0.7,1};
-            colorSelectBackground2[] = {0.7,0.7,0.7,1};
-            sizeEx = QUOTE(GUI_GRID_H * 0.9 * NORMALIZE_SIZEEX);
         };
         class MedicationTypeTitle: RscStructuredText  {
             idc = IDC_MEDICATION_TYPE_TITLE; // LOOK HERE
-            text = CSTRING(SyringeTitleList);
+            text = CSTRING(MedicationTitleList);
             x = QUOTE(POS_X(40));
-            y = QUOTE(POS_Y(8.9));
+            y = QUOTE(POS_Y(9.9));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(1));
             colorBackground[] = {0, 0, 0, 0.5};
@@ -655,20 +649,13 @@ class ACE_Medical_Menu {
                 shadow = "false";
             };
         };
-        class MedicationList: RscListBox  {
+        class MedicationList: RscListBox {
             idc = IDC_MEDICATION_TYPE_LIST; // LOOK HERE
             x = QUOTE(POS_X(40));
-            y = QUOTE(POS_Y(9.9));
+            y = QUOTE(POS_Y(10.9));
             w = QUOTE(POS_W(8));
-            h = QUOTE(POS_H(1.5));
+            h = QUOTE(POS_H(4.5));
             show = 1;
-            colorText[] = {1,1,1,1};
-            colorSelect[] = {0,0,0,1};
-            colorSelect2[] = {0,0,0,1};
-            colorBackground[] = {0.2, 0.2, 0.2, 1};
-            colorSelectBackground[] = {0.7,0.7,0.7,1};
-            colorSelectBackground2[] = {0.7,0.7,0.7,1};
-            sizeEx = QUOTE(GUI_GRID_H * 0.9 * NORMALIZE_SIZEEX);
         };
     };
 };

@@ -4,17 +4,17 @@
  * Checks the medications in the players inventory and then populates the listbox with the medications,
  *
  * Arguments:
- * 0: Target <OBJECT>
+ * none
  *
  * Return Value:
  * None
  *
  * Example:
- * [_player] call kat_medical_gui_fnc_updateMedication;
+ * [] call kat_medical_gui_fnc_updateMedication;
  *
  * Public: No
  */
-
+hint str "updating medications";
 disableSerialization;
 
 private _medications = [
@@ -23,47 +23,49 @@ private _medications = [
     "kat_epinephrineIV"
 ];
 
-// Function to get found medications
 private _medicationsFound = {
     params ["_medications"];
-    private _inventory = items player;
+    
+    private _inventory = (items player) + (magazines player);
     private _found = [];
 
-    // Check each item in the inventory
     {
         if (_x in _medications) then {
-            _found pushBack _x;
+            _found pushBack _x;  // Store found medication
         };
     } forEach _inventory;
 
-    _found  // Return the found items
+    _found  // Return the list of found medications
 };
-private _display = uiNamespace getVariable ["ace_medical_gui_menuDisplay", displayNull];
-private _listBox = _display displayCtrl 71305;
-private _foundMedications = _medications call _medicationsFound;  
+
+private _listBox = findDisplay 38580 displayCtrl 71305;
+private _foundMedications = [_medications] call _medicationsFound;
 
 private _populateListBox = {
-    disableSerialization;
-
     params ["_foundMedications", "_listBox"];
 
-    lbClear _listBox;
+    lbClear _listBox;  // Clear the listbox before adding new entries
 
     {
-        private _classname = _x;
-        private _count = [player, _classname] call ace_common_fnc_getCountOfItem;  // Fixed reference to player
+        private _classname = _x;  // Medication class name
 
-        if (_count > 0) then {
+        // Only proceed if the medication is found
+        if (_classname != "") then {
             private _config = configFile >> "CfgWeapons" >> _classname;
             private _displayName = getText (_config >> "displayName");
             private _picture = getText (_config >> "picture");
-            private _data = (_classname splitString "_") select 2;
+            private _data = (_classname splitString "_") select 1;  // Adjust index as needed
 
-            private _index = _listBox lbAdd _displayName;
+            // Display medication name in the listbox
+            private _entryText = format ["%1", _displayName];  // Only show the name
+            private _index = _listBox lbAdd _entryText;
+
+            // Set the picture and data for the listbox entry
             _listBox lbSetPicture [_index, _picture];
             _listBox lbSetData [_index, _data];
         };
-    } forEach _foundMedications;
+    } forEach _foundMedications;  // Iterate through the found medications
 };
 
+// Populate the listbox with found medications
 [_foundMedications, _listBox] call _populateListBox;

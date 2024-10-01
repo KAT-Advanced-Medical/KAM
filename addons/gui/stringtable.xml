@@ -158,5 +158,8 @@
         <Key ID="STR_KAT_GUI_SyringeTitleList">
             <English>Syringe Type</English>
         </Key>
+        <Key ID="STR_KAT_GUI_MedicationTitleList">
+            <English>Medication Type</English>
+        </Key>
     </Package>
 </Project>

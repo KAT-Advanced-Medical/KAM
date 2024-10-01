@@ -103,3 +103,5 @@ if (ACEGVAR(medical_gui,target) == ACE_player) then {
     _ctrl ctrlSetText QACEPATHTOF(medical_gui,data\categories\toggle_to_self.paa);
     _ctrl ctrlSetTooltip ACELLSTRING(medical_gui,ToggleToSelf);
 };
+[] call FUNC(updateMedications);
+[] call FUNC(updateSyringes);
