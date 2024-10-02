@@ -92,6 +92,24 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(medLvl_Apply14IV),
+    "LIST",
+    [LLSTRING(medLvl_Apply14IV), LLSTRING(medLvl_Apply14IV_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(medLvl_Apply20IV),
+    "LIST",
+    [LLSTRING(medLvl_Apply20IV), LLSTRING(medLvl_Apply20IV_Desc)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_ApplyIV)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(treatmentTime_ApplyIV),
     "SLIDER",
     [LLSTRING(treatmentTime_ApplyIV)],
@@ -368,6 +386,24 @@ PREP_RECOMPILE_END;
     QGVAR(treatmentTime_TXA),
     "SLIDER",
     [LLSTRING(treatmentTime_TXA)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
+    [0.1, 10, 7, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(medLvl_TXAIM),
+    "LIST",
+    [LLSTRING(medLvl_TXAIM)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
+    [[0, 1, 2], [ACELSTRING(medical_treatment,Anyone), ACELSTRING(medical_treatment,Medics), ACELSTRING(medical_treatment,Doctors)], 0],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_TXAIM),
+    "SLIDER",
+    [LLSTRING(treatmentTime_TXAIM)],
     [CBA_SETTINGS_CAT, LSTRING(SubCategory_TXA)],
     [0.1, 10, 7, 1],
     true

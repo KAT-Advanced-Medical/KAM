@@ -679,7 +679,7 @@ class ACE_Medical_Menu {
             x = QUOTE(POS_X(40));
             y = QUOTE(POS_Y(16.9));
             w = QUOTE(POS_W(8));
-            h = QUOTE(POS_H(1.5));
+            h = QUOTE(POS_H(1));
             show = 1;
             class Items
             {
@@ -708,8 +708,18 @@ class ACE_Medical_Menu {
             y = QUOTE(POS_Y(18.9));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(1.5));
-            show = 1;
             onButtonClick = QUOTE([] call FUNC(prepSyringe));
+            colorText[] = {1, 1, 1, 0.9};
+            colorActive[] = {0, 0, 0, 0.7};
+            colorBackground[] = {0, 0, 0, 0.7};
+            colorBackgroundActive[] = {1, 1, 1, 1};
+            colorBorder[] = {0,0,0,0};
+            show = 1;
+            class Attributes {
+                align = "center";
+                font = "RobotoCondensed";
+                shadow = "false";
+            };
         };
     };
 };

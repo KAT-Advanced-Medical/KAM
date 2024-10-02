@@ -56,7 +56,7 @@ switch (_usedItem) do {
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "14g IV"]] call ACEFUNC(medical_treatment,addToLog);
         [_patient, "14g IV"] call ACEFUNC(medical_treatment,addToTriageCard);};
 
-    case "kat_IV_30": {     
+    case "kat_IV_20": {     
         _IVarray set [_partIndex, 4];
         _IVrate set [_partIndex, 0.5];
         _patient setVariable [QGVAR(IV), _IVarray, true];
@@ -97,7 +97,7 @@ switch (_usedItem) do {
     default {};
 };
 
-if (GVAR(IVdropEnable) && ((_usedItem isEqualTo "kat_IV_16") || (_usedItem isEqualTo "kat_IV_14") || (_usedItem isEqualTo "kat_IV_30"))) then {
+if (GVAR(IVdropEnable) && ((_usedItem isEqualTo "kat_IV_16") || (_usedItem isEqualTo "kat_IV_14") || (_usedItem isEqualTo "kat_IV_20"))) then {
     [{
         params ["_patient", "_partIndex", "_IVpfhActual"];
 
@@ -125,7 +125,7 @@ if (GVAR(IVdropEnable) && ((_usedItem isEqualTo "kat_IV_16") || (_usedItem isEqu
                         case "1": {_patient addItem "kat_IO_FAST"};
                         case "2": {_patient addItem "kat_IV_16"};
                         case "3": {_patient addItem "kat_IV_14"};
-                        case "4": {_patient addItem "kat_IV_30"};
+                        case "4": {_patient addItem "kat_IV_20"};
                         };
                     };
 

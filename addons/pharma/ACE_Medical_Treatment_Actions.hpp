@@ -138,7 +138,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
         items[] = {"kat_EACA"};
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(ivCondition));
+        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) && !(GVAR(AMS_Enabled)) || FUNC(ivCondition) && !(GVAR(AMS_Enabled)));
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
@@ -312,7 +312,7 @@ class ACE_Medical_Treatment_Actions {
     class Apply14IV: ApplyIV {
         displayName = CSTRING(Apply_IV_14);
         displayNameProgress = CSTRING(Applying_IV);
-        medicRequired = QGVAR(medLvl_ApplyIV);
+        medicRequired = QGVAR(medLvl_Apply14IV);
         category = "advanced";
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         items[] = {"kat_IV_14"};
@@ -325,7 +325,7 @@ class ACE_Medical_Treatment_Actions {
     class Apply20IV: ApplyIV {
         displayName = CSTRING(Apply_IV_20);
         displayNameProgress = CSTRING(Applying_IV);
-        medicRequired = QGVAR(medLvl_ApplyIV);
+        medicRequired = QGVAR(medLvl_Apply20IV);
         category = "advanced";
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         items[] = {"kat_IV_20"};
@@ -447,7 +447,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
         items[] = {"kat_syringe_kat_eaca_5ml_1"};
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
+        condition = QUOTE(FUNC(ivCondition) && (GVAR(AMS_Enabled)));
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
@@ -463,6 +463,7 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(injecting_TXA_IM_1);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
+        condition = QUOTE(GVAR(AMS_Enabled));
         medicRequired = QGVAR(medLvl_TXAIM);
         treatmentTime = QGVAR(treatmentTime_TXAIM);
         items[] = {"kat_syringe_kat_txa_10ml_1"};

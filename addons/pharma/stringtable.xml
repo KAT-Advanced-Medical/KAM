@@ -2,7 +2,7 @@
 <Project name="KAT">
     <Package name="Pharma">
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV">
-            <English>Allow applying IV</English>
+            <English>Allow applying 16g IV</English>
             <Polish>Poziom wyszkolenia medycznego dla IV</Polish>
             <Chinesesimp>允许使用IV</Chinesesimp>
             <Italian>Permetti utilizzo IV</Italian>
@@ -17,7 +17,7 @@
             <Russian>Разрешить внутривенное введение</Russian>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIV_Desc">
-            <English>Changes what medical level is required to set IVs</English>
+            <English>Changes what medical level is required to set 16 gauge IVs</English>
             <German>Benötigter medizinischer Grad, welcher für das Legen von IVs erforderlich ist</German>
             <Polish>Poziom wyszkolenia medycznego potrzebnego do założenia kaniul IV</Polish>
             <French>Niveau nécessaire pour poser une IV</French>
@@ -32,6 +32,18 @@
             <Russian>Изменяет медицинский уровень, необходимый для установки IV.</Russian>
             <Portuguese>Muda qual nível médico é necessário para aplicar IVs</Portuguese>
             <Finnish>Muuttaa, mitä lääketieteen koulutustasoa tarvitaan IV:n lisäämiseen</Finnish>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Apply14IV">
+            <English>Allow applying 14g IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Apply14IV_Desc">
+            <English>Changes what medical level is required to set 14 gauge IVs</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Apply20IV">
+            <English>Allow applying 20g IV</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_medLvl_Apply20IV_Desc">
+            <English>Changes what medical level is required to set 20 gauge IVs</English>
         </Key>
         <Key ID="STR_KAT_Pharma_medLvl_ApplyIO">
             <English>Allow applying IO</English>
