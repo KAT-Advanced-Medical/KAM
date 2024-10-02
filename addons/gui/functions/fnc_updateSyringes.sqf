@@ -70,4 +70,4 @@ private _populateListBox = {
     } forEach _foundSyringes; 
 };
 
-[_foundSyringes, _listBox] call _populateListBox; }, [], 0.1] call CBA_fnc_waitAndExecute;
+[_foundSyringes, _listBox] call _populateListBox; }, [], 0.01] call CBA_fnc_waitAndExecute;

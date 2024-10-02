@@ -25,7 +25,7 @@ params ["_player", "_medicationType", "_syringeType", "_doseType"];
 private _syringeClassName = format ["kat_syringe_%1_%2_%3", _medicationType, _syringeType, _doseType];
 private _hasSyringe = isClass (configFile >> "CfgWeapons" >> _syringeClassName);
 if (!_hasSyringe) exitWith {
-    hint format ["Syringe type for %1 with %2 syringe and %3 dose does not exist.", _medicationType, _syringeType, _doseType];
+    hint "This syringe combination does not exist.";
 };
 private _baseSyringe = format ["kat_%1_syringe", _syringeType];
 _player removeItem _baseSyringe;

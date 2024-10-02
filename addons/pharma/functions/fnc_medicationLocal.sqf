@@ -115,8 +115,8 @@ if ([QGVAR(AMS_Enabled)] call CBA_settings_fnc_get) then {
 
     private _medicationParts = (_className splitString "_");
 
-    if (count _medicationParts > 4) then {
-        _medicationName = _medicationParts select 2;
+    if (count _medicationParts > 3) then {
+        _medicationName = _medicationParts select 1;
     
         if (_medicationName in ["lorazepam","EACA","TXA","amiodarone","flumazenil"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;

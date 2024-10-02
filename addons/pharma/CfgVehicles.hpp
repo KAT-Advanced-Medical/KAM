@@ -74,41 +74,4 @@ class CfgVehicles {
             MACRO_ADDMAGAZINE(kat_Painkiller,15);
         };
     };
-    class Man;
-    class CAManBase: Man {
-        class ACE_SelfActions {
-            class KAT_Equipment {
-                class KAT_PrepIVSyringe {
-                    displayName = CSTRING(Medication_IVAction);
-                    condition = QUOTE([ARR_2(_player,'kat_5ml_syringe')] call ACEFUNC(common,hasItem));
-                    statement = "true";
-                    medicRequired = QGVAR(medLvl_PrepIVSyringe);
-                    showDisabled = 0;
-                    exceptions[] = {"isNotInside", "isNotSitting"};
-                    icon = QPATHTOF(ui\syringe.paa);
-                    insertChildren = QUOTE(_this call FUNC(insertIVChildrenSyringe));
-                };
-                class KAT_PrepIVPainSyringe {
-                    displayName = CSTRING(Medication_IVPainAction);
-                    condition = QUOTE([ARR_2(_player,'kat_5ml_syringe')] call ACEFUNC(common,hasItem));
-                    statement = "true";
-                    medicRequired = QGVAR(medLvl_PrepIVSyringe);
-                    showDisabled = 0;
-                    exceptions[] = {"isNotInside", "isNotSitting"};
-                    icon = QPATHTOF(ui\syringe.paa);
-                    insertChildren = QUOTE(_this call FUNC(insertIVPainChildrenSyringe));
-                };
-                class KAT_PrepIMSyringe {
-                    displayName = CSTRING(Medication_IMAction);
-                    condition = QUOTE([ARR_2(_player,'kat_10ml_syringe')] call ACEFUNC(common,hasItem));
-                    statement = "true";
-                    medicRequired = QGVAR(medLvl_PrepIMSyringe);
-                    showDisabled = 0;
-                    exceptions[] = {"isNotInside", "isNotSitting"};
-                    icon = QPATHTOF(ui\syringe.paa);
-                    insertChildren = QUOTE(_this call FUNC(insertIMChildrenSyringe));
-                };
-            };
-        };
-    };
 };

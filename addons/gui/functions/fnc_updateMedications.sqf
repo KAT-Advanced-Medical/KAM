@@ -84,4 +84,4 @@ private _populateListBox = {
     } forEach _foundMedications; 
 };
 
-[_foundMedications, _listBox] call _populateListBox; }, [], 0.1] call CBA_fnc_waitAndExecute;
+[_foundMedications, _listBox] call _populateListBox; }, [], 0.01] call CBA_fnc_waitAndExecute;
