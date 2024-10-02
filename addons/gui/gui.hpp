@@ -683,22 +683,22 @@ class ACE_Medical_Menu {
             show = 1;
             class Items
             {
-	            class LowDose
-	            {
-		            text = "Low";
+                class LowDose
+                {
+                    text = "Low";
                     default = 1;
                     value = 1;
-	            };
-	            //class MediumDose
-	            //{
-		        //    text = "Medium";
+                };
+                //class MediumDose
+                //{
+                //    text = "Medium";
                 //    value = 2;
-	            //};
+                //};
                 class HighDose
-	            {
-		            text = "High";
+                {
+                    text = "High";
                     value = 3;
-	            };
+                };
             };
         };
         class PrepSyringe: RscButton {
