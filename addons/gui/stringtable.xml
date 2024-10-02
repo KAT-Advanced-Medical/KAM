@@ -176,5 +176,8 @@
         <Key ID="STR_KAT_GUI_PrepSyringe">
             <English>Prepare Syringe</English>
         </Key>
+        <Key ID="STR_KAT_GUI_CloseMenu">
+            <English>Close</English>
+        </Key>
     </Package>
 </Project>

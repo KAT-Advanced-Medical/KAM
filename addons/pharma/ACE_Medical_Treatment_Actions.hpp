@@ -138,7 +138,7 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
         items[] = {"kat_EACA"};
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) && !(GVAR(AMS_Enabled)) || FUNC(ivCondition) && !(GVAR(AMS_Enabled)));
+        condition = QUOTE(FUNC(AMSCheck));
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
@@ -439,45 +439,44 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QFUNC(treatmentAdvanced_CheckCoag);
         litter[] = {};
     };
-    class syringe_kat_EACA_5ml_1: Carbonate {
+    class syringe_EACA_5ml_1: Carbonate {
         displayName = CSTRING(push_EACA_IV_1);
         displayNameProgress = CSTRING(pushing_EACA_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_EACA);
         treatmentTime = QGVAR(treatmentTime_EACA);
-        items[] = {"kat_syringe_kat_eaca_5ml_1"};
-        condition = QUOTE(FUNC(ivCondition) && (GVAR(AMS_Enabled)));
+        items[] = {"kat_syringe_eaca_5ml_1"};
+        condition = QUOTE(FUNC(ivCondition));
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_EACA_5ml_3: syringe_kat_EACA_5ml_1 {
+    class syringe_EACA_5ml_3: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_EACA_IV_3);
         displayNameProgress = CSTRING(pushing_EACA_IV_3);
-        items[] = {"kat_syringe_kat_eaca_5ml_3"};
+        items[] = {"kat_syringe_eaca_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_TXA_10ml_1: Carbonate {
+    class syringe_TXA_10ml_1: Carbonate {
         displayName = CSTRING(inject_TXA_IM_1);
         displayNameProgress = CSTRING(injecting_TXA_IM_1);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-        condition = QUOTE(GVAR(AMS_Enabled));
         medicRequired = QGVAR(medLvl_TXAIM);
         treatmentTime = QGVAR(treatmentTime_TXAIM);
-        items[] = {"kat_syringe_kat_txa_10ml_1"};
+        items[] = {"kat_syringe_txa_10ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_TXA_10ml_3: syringe_kat_TXA_10ml_1 {
+    class syringe_TXA_10ml_3: syringe_TXA_10ml_1 {
         displayName = CSTRING(inject_TXA_IM_3);
         displayNameProgress = CSTRING(injecting_TXA_IM_3);
-        items[] = {"kat_syringe_kat_txa_10ml_3"};
+        items[] = {"kat_syringe_txa_10ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_TXA_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_TXA_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_TXA_IV_1);
         displayNameProgress = CSTRING(pushing_TXA_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -485,18 +484,18 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_TXA);
         treatmentTime = QGVAR(treatmentTime_TXA);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_txa_5ml_1"};
+        items[] = {"kat_syringe_txa_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_TXA_5ml_3: syringe_kat_TXA_5ml_1 {
+    class syringe_TXA_5ml_3: syringe_TXA_5ml_1 {
         displayName = CSTRING(push_TXA_IV_3);
         displayNameProgress = CSTRING(pushing_TXA_IV_3);
-        items[] = {"kat_syringe_kat_txa_5ml_3"};
+        items[] = {"kat_syringe_txa_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_norepinephrine_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_norepinephrine_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_norepinephrine_IV_1);
         displayNameProgress = CSTRING(pushing_norepinephrine_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -504,18 +503,18 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_norepinephrine);
         treatmentTime = QGVAR(treatmentTime_norepinephrine);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_norepinephrine_5ml_1"};
+        items[] = {"kat_syringe_norepinephrine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_norepinephrine_5ml_3: syringe_kat_norepinephrine_5ml_1 {
+    class syringe_norepinephrine_5ml_3: syringe_norepinephrine_5ml_1 {
         displayName = CSTRING(push_norepinephrine_IV_3);
         displayNameProgress = CSTRING(pushing_norepinephrine_IV_3);
-        items[] = {"kat_syringe_kat_norepinephrine_5ml_3"};
+        items[] = {"kat_syringe_norepinephrine_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_phenylephrine_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_phenylephrine_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_phenylephrine_IV_1);
         displayNameProgress = CSTRING(pushing_phenylephrine_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -523,18 +522,18 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_phenylephrine);
         treatmentTime = QGVAR(treatmentTime_phenylephrine);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_phenylephrine_5ml_1"};
+        items[] = {"kat_syringe_phenylephrine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_penylephrine_5ml_3: syringe_kat_phenylephrine_5ml_1 {
+    class syringe_penylephrine_5ml_3: syringe_phenylephrine_5ml_1 {
         displayName = CSTRING(push_phenylephrine_IV_3);
         displayNameProgress = CSTRING(pushing_phenylephrine_IV_3);
-        items[] = {"kat_syringe_kat_phenylephrine_5ml_3"};
+        items[] = {"kat_syringe_phenylephrine_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_nitroglycerin_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_nitroglycerin_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_nitroglycerin_IV_1);
         displayNameProgress = CSTRING(pushing_nitroglycerin_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -542,18 +541,18 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_nitroglycerin);
         treatmentTime = QGVAR(treatmentTime_nitroglycerin);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_nitroglycerin_5ml_1"};
+        items[] = {"kat_syringe_nitroglycerin_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_nitroglycerin_5ml_3: syringe_kat_nitroglycerin_5ml_1 {
+    class syringe_nitroglycerin_5ml_3: syringe_nitroglycerin_5ml_1 {
         displayName = CSTRING(push_nitroglycerin_IV_3);
         displayNameProgress = CSTRING(pushing_nitroglycerin_IV_3);
-        items[] = {"kat_syringe_kat_nitroglycerin_5ml_3"};
+        items[] = {"kat_syringe_nitroglycerin_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_amiodarone_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_amiodarone_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_amiodarone_IV_1);
         displayNameProgress = CSTRING(pushing_amiodarone_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -561,18 +560,18 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_amiodarone);
         treatmentTime = QGVAR(treatmentTime_amiodarone);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_amiodarone_5ml_1"};
+        items[] = {"kat_syringe_amiodarone_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_amiodarone_5ml_3: syringe_kat_amiodarone_5ml_1 {
+    class syringe_amiodarone_5ml_3: syringe_amiodarone_5ml_1 {
         displayName = CSTRING(push_amiodarone_IV_3);
         displayNameProgress = CSTRING(pushing_amiodarone_IV_3);
-        items[] = {"kat_syringe_kat_amiodarone_5ml_3"};
+        items[] = {"kat_syringe_amiodarone_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_lidocaine_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_lidocaine_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_lidocaine_IV_1);
         displayNameProgress = CSTRING(pushing_lidocaine_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -580,18 +579,18 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_lidocaine);
         treatmentTime = QGVAR(treatmentTime_lidocaine);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(ivCondition));
-        items[] = {"kat_syringe_kat_lidocaine_5ml_1"};
+        items[] = {"kat_syringe_lidocaine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_lidocaine_5ml_3: syringe_kat_lidocaine_5ml_1 {
+    class syringe_lidocaine_5ml_3: syringe_lidocaine_5ml_1 {
         displayName = CSTRING(push_lidocaine_IV_3);
         displayNameProgress = CSTRING(pushing_lidocaine_IV_3);
-        items[] = {"kat_syringe_kat_lidocaine_5ml_3"};
+        items[] = {"kat_syringe_lidocaine_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_atropine_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_atropine_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_atropine_IV_1);
         displayNameProgress = CSTRING(pushing_atropine_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -599,18 +598,18 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_atropine);
         treatmentTime = QGVAR(treatmentTime_atropine);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_atropine_5ml_1"};
+        items[] = {"kat_syringe_atropine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_atropine_5ml_3: syringe_kat_atropine_5ml_1 {
+    class syringe_atropine_5ml_3: syringe_atropine_5ml_1 {
         displayName = CSTRING(push_atropine_IV_3);
         displayNameProgress = CSTRING(pushing_atropine_IV_3);
-        items[] = {"kat_syringe_kat_atropine_5ml_3"};
+        items[] = {"kat_syringe_atropine_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_ketamine_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_ketamine_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_ketamine_IV_1);
         displayNameProgress = CSTRING(pushing_ketamine_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -618,19 +617,19 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_ketamine);
         treatmentTime = QGVAR(treatmentTime_ketamine);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_ketamine_5ml_1"};
+        items[] = {"kat_syringe_ketamine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_ketamine_5ml_3: syringe_kat_ketamine_5ml_1 {
+    class syringe_ketamine_5ml_3: syringe_ketamine_5ml_1 {
         displayName = CSTRING(push_ketamine_IV_3);
         displayNameProgress = CSTRING(pushing_ketamine_IV_3);
         category = "surgery";
-        items[] = {"kat_syringe_kat_ketamine_5ml_3"};
+        items[] = {"kat_syringe_ketamine_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_fentanyl_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_fentanyl_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_fentanyl_IV_1);
         displayNameProgress = CSTRING(pushing_fentanyl_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -638,18 +637,18 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_fentanyl);
         treatmentTime = QGVAR(treatmentTime_fentanyl);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_fentanyl_5ml_1"};
+        items[] = {"kat_syringe_fentanyl_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_fentanyl_5ml_3: syringe_kat_fentanyl_5ml_1 {
+    class syringe_fentanyl_5ml_3: syringe_fentanyl_5ml_1 {
         displayName = CSTRING(push_fentanyl_IV_3);
         displayNameProgress = CSTRING(pushing_fentanyl_IV_3);
-        items[] = {"kat_syringe_kat_fentanyl_5ml_3"};
+        items[] = {"kat_syringe_fentanyl_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_nalbuphine_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_nalbuphine_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_nalbuphine_IV_1);
         displayNameProgress = CSTRING(pushing_nalbuphine_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -657,18 +656,18 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_nalbuphine);
         treatmentTime = QGVAR(treatmentTime_nalbuphine);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_nalbuphine_5ml_1"};
+        items[] = {"kat_syringe_nalbuphine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_nalbuphine_5ml_3: syringe_kat_nalbuphine_5ml_1 {
+    class syringe_nalbuphine_5ml_3: syringe_nalbuphine_5ml_1 {
         displayName = CSTRING(push_nalbuphine_IV_3);
         displayNameProgress = CSTRING(pushing_nalbuphine_IV_3);
-        items[] = {"kat_syringe_kat_nalbuphine_5ml_3"};
+        items[] = {"kat_syringe_nalbuphine_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_lorazepam_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_lorazepam_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_lorazepam_IV_1);
         displayNameProgress = CSTRING(pushing_lorazepam_IV_1);
         category = "surgery";
@@ -677,19 +676,19 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_lorazepam);
         treatmentTime = QGVAR(treatmentTime_lorazepam);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_lorazepam_5ml_1"};
+        items[] = {"kat_syringe_lorazepam_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_lorazapam_5ml_1: syringe_kat_lorazepam_5ml_1 {
+    class syringe_lorazapam_5ml_1: syringe_lorazepam_5ml_1 {
         displayName = CSTRING(push_lorazepam_IV_3);
         displayNameProgress = CSTRING(pushing_lorazepam_IV_3);
         category = "surgery";
-        items[] = {"kat_syringe_kat_lorazepam_5ml_3"};
+        items[] = {"kat_syringe_lorazepam_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_flumazenil_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_flumazenil_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_flumazenil_IV_1);
         displayNameProgress = CSTRING(pushing_flumazenil_IV_1);
         category = "surgery";
@@ -698,19 +697,19 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_flumazenil);
         treatmentTime = QGVAR(treatmentTime_flumazenil);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_flumazenil_5ml_1"};
+        items[] = {"kat_syringe_flumazenil_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_flumazenil_5ml_3: syringe_kat_flumazenil_5ml_1 {
+    class syringe_flumazenil_5ml_3: syringe_flumazenil_5ml_1 {
         displayName = CSTRING(push_flumazenil_IV_3);
         displayNameProgress = CSTRING(pushing_flumazenil_IV_3);
         category = "surgery";
-        items[] = {"kat_syringe_kat_flumazenil_5ml_3"};
+        items[] = {"kat_syringe_flumazenil_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_etomidate_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_etomidate_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_etomidate_IV_1);
         displayNameProgress = CSTRING(pushing_etomidate_IV_1);
         category = "surgery";
@@ -719,19 +718,19 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_etomidate);
         treatmentTime = QGVAR(treatmentTime_etomidate);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_etomidate_5ml_1"};
+        items[] = {"kat_syringe_etomidate_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_etomidate_5ml_3: syringe_kat_etomidate_5ml_1 {
+    class syringe_etomidate_5ml_3: syringe_etomidate_5ml_1 {
         displayName = CSTRING(push_etomidate_IV_3);
         displayNameProgress = CSTRING(pushing_flumazenil_IV_3);
         category = "surgery";
-        items[] = {"kat_syringe_kat_etomidate_5ml_3"};
+        items[] = {"kat_syringe_etomidate_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_epinephrineIV_5ml_1: syringe_kat_EACA_5ml_1 {
+    class syringe_epinephrineIV_5ml_1: syringe_EACA_5ml_1 {
         displayName = CSTRING(push_epinephrineIV_IV_1);
         displayNameProgress = CSTRING(pushing_epinephrineIV_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
@@ -739,79 +738,79 @@ class ACE_Medical_Treatment_Actions {
         medicRequired = QGVAR(medLvl_epinephrineIV);
         treatmentTime = QGVAR(treatmentTime_epinephrineIV);
         condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
-        items[] = {"kat_syringe_kat_epinephrineIV_5ml_1"};
+        items[] = {"kat_syringe_epinephrineIV_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_epinephrineIV_5ml_3: syringe_kat_epinephrineIV_5ml_1 {
+    class syringe_epinephrineIV_5ml_3: syringe_epinephrineIV_5ml_1 {
         displayName = CSTRING(push_epinephrineIV_IV_3);
         displayNameProgress = CSTRING(pushing_epinephrineIV_IV_3);
-        items[] = {"kat_syringe_kat_epinephrineIV_5ml_3"};
+        items[] = {"kat_syringe_epinephrineIV_5ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-     class syringe_kat_lidocaine_10ml_1: syringe_kat_TXA_10ml_1 {
+     class syringe_lidocaine_10ml_1: syringe_TXA_10ml_1 {
         displayName = CSTRING(inject_lidocaine_IM_1);
         displayNameProgress = CSTRING(injecting_lidocaine_IM_1);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_lidocaineIM);
         treatmentTime = QGVAR(treatmentTime_lidocaineIM);
-        items[] = {"kat_syringe_kat_lidocaine_10ml_1"};
+        items[] = {"kat_syringe_lidocaine_10ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_ketamine_10ml_1: syringe_kat_TXA_10ml_1 {
+    class syringe_ketamine_10ml_1: syringe_TXA_10ml_1 {
         displayName = CSTRING(inject_ketamine_IM_1);
         displayNameProgress = CSTRING(injecting_ketamine_IM_1);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_ketamineIM);
         treatmentTime = QGVAR(treatmentTime_ketamineIM);
-        items[] = {"kat_syringe_kat_ketamine_10ml_1"};
+        items[] = {"kat_syringe_ketamine_10ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_ketamine_10ml_3: syringe_kat_ketamine_10ml_1 {
+    class syringe_ketamine_10ml_3: syringe_ketamine_10ml_1 {
         displayName = CSTRING(inject_ketamine_IM_3);
         displayNameProgress = CSTRING(injecting_ketamine_IM_3);
-        items[] = {"kat_syringe_kat_ketamine_10ml_3"};
+        items[] = {"kat_syringe_ketamine_10ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_fentanyl_10ml_1: syringe_kat_TXA_10ml_1 {
+    class syringe_fentanyl_10ml_1: syringe_TXA_10ml_1 {
         displayName = CSTRING(inject_fentanyl_IM_1);
         displayNameProgress = CSTRING(injecting_fentanyl_IM_1);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_fentanylIM);
         treatmentTime = QGVAR(treatmentTime_fentanylIM);
-        items[] = {"kat_syringe_kat_fentanyl_10ml_1"};
+        items[] = {"kat_syringe_fentanyl_10ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_fentanyl_10ml_3: syringe_kat_fentanyl_10ml_1 {
+    class syringe_fentanyl_10ml_3: syringe_fentanyl_10ml_1 {
         displayName = CSTRING(inject_fentanyl_IM_3);
         displayNameProgress = CSTRING(injecting_fentanyl_IM_3);
-        items[] = {"kat_syringe_kat_fentanyl_10ml_3"};
+        items[] = {"kat_syringe_fentanyl_10ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_nalbuphine_10ml_1: syringe_kat_TXA_10ml_1 {
+    class syringe_nalbuphine_10ml_1: syringe_TXA_10ml_1 {
         displayName = CSTRING(inject_nalbuphine_IM_1);
         displayNameProgress = CSTRING(injecting_nalbuphine_IM_1);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_nalbuphineIM);
         treatmentTime = QGVAR(treatmentTime_nalbuphineIM);
-        items[] = {"kat_syringe_kat_nalbuphine_10ml_1"};
+        items[] = {"kat_syringe_nalbuphine_10ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
-    class syringe_kat_nalbuphine_10ml_3: syringe_kat_nalbuphine_10ml_1 {
+    class syringe_nalbuphine_10ml_3: syringe_nalbuphine_10ml_1 {
         displayName = CSTRING(inject_nalbuphine_IM_3);
         displayNameProgress = CSTRING(injecting_nalbuphine_IM_3);
-        items[] = {"kat_syringe_kat_nalbuphine_10ml_3"};
+        items[] = {"kat_syringe_nalbuphine_10ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };

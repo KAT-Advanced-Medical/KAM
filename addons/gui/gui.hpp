@@ -607,36 +607,78 @@ class ACE_Medical_Menu {
         class BodyLabelRight: BodyLabelLeft {
             idc = IDC_SIDE_LABEL_RIGHT;
         };
-        class SyringeTypeTitle: RscStructuredText  {
-            idc = IDC_SYRINGE_TYPE_TITLE; // LOOK HERE
-            text = CSTRING(SyringeTitleList);
-            x = QUOTE(POS_X(40));
-            y = QUOTE(POS_Y(5.9));
-            w = QUOTE(POS_W(8));
+        class SyringeOpenButton: RscButton {
+            idc = IDC_SYRINGE_OPEN;
+            text = CSTRING(CloseMenu);
+            x = QUOTE(POS_X(39.6));
+            y = QUOTE(POS_Y(4.9));
+            w = QUOTE(POS_W(2));
             h = QUOTE(POS_H(1));
-            colorBackground[] = {0, 0, 0, 0.5};
-            show = 1;
+            colorBackgroundDisabled[] = GUI_BCG_COLOR;
+            colorBackground[] = GUI_BCG_COLOR;
+            onButtonClick = QUOTE([] call FUNC(openSyringeMenu));
             class Attributes {
-                align = "center";
+                align = "Right";
                 valign = "bottom";
                 color = "#E5E5E5";
                 font = "RobotoCondensed";
                 shadow = "false";
             };
         };
-        class SyringeList: RscListBox  {
+        class SyringeControlGroup: RscControlsGroup {
+        idc = IDC_SYRINGE_GROUP;
+        x = QUOTE(POS_X(39.6));
+        y = QUOTE(POS_Y(4.9));
+        w = QUOTE(POS_W(9.2));
+        h = QUOTE(POS_H(16.5));
+            class controls {
+                class SyringeCloseButton: RscButton {
+                    idc = IDC_SYRINGE_CLOSE;
+                    text = CSTRING(CloseMenu);
+                    x = QUOTE(POS_X(10));
+                    y = QUOTE(POS_Y(0));
+                    w = QUOTE(POS_W(2));
+                    h = QUOTE(POS_H(1));
+                    onButtonClick = QUOTE([] call FUNC(closeSyringeMenu));
+                class Attributes {
+                    align = "Right";
+                    valign = "bottom";
+                    color = "#E5E5E5";
+                    font = "RobotoCondensed";
+                    shadow = "false";
+                };
+            };
+
+            class SyringeTypeTitle: RscStructuredText  {
+                idc = IDC_SYRINGE_TYPE_TITLE; // LOOK HERE
+                text = CSTRING(SyringeTitleList);
+                x = QUOTE(POS_X(4));
+                y = QUOTE(POS_Y(1.3));
+                w = QUOTE(POS_W(8));
+                h = QUOTE(POS_H(1));
+                colorBackground[] = {0, 0, 0, 0.5};
+                show = 1;
+                class Attributes {
+                    align = "center";
+                    valign = "bottom";
+                    color = "#E5E5E5";
+                    font = "RobotoCondensed";
+                    shadow = "false";
+                };
+        };
+            class SyringeList: RscListBox  {
             idc = IDC_SYRINGE_TYPE_LIST; // LOOK HERE
-            x = QUOTE(POS_X(40));
-            y = QUOTE(POS_Y(6.9));
+            x = QUOTE(POS_X(4));
+            y = QUOTE(POS_Y(2.3));
             w = QUOTE(POS_W(8));
-            h = QUOTE(POS_H(2.5));
+            h = QUOTE(POS_H(2));
             show = 1;
         };
-        class MedicationTypeTitle: RscStructuredText  {
+            class MedicationTypeTitle: RscStructuredText  {
             idc = IDC_MEDICATION_TYPE_TITLE; // LOOK HERE
             text = CSTRING(MedicationTitleList);
-            x = QUOTE(POS_X(40));
-            y = QUOTE(POS_Y(9.9));
+            x = QUOTE(POS_X(4));
+            y = QUOTE(POS_Y(4.6));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(1));
             colorBackground[] = {0, 0, 0, 0.5};
@@ -649,19 +691,19 @@ class ACE_Medical_Menu {
                 shadow = "false";
             };
         };
-        class MedicationList: RscListBox {
+            class MedicationList: RscListBox {
             idc = IDC_MEDICATION_TYPE_LIST; // LOOK HERE
-            x = QUOTE(POS_X(40));
-            y = QUOTE(POS_Y(10.9));
+            x = QUOTE(POS_X(4));
+            y = QUOTE(POS_Y(5.6));
             w = QUOTE(POS_W(8));
-            h = QUOTE(POS_H(4.5));
+            h = QUOTE(POS_H(6));
             show = 1;
         };
-        class DoseTitle: RscStructuredText  {
+            class DoseTitle: RscStructuredText  {
             idc = IDC_MEDICATION_DOSE_TITLE; // LOOK HERE
             text = CSTRING(DoseTitle);
-            x = QUOTE(POS_X(40));
-            y = QUOTE(POS_Y(15.9));
+            x = QUOTE(POS_X(4));
+            y = QUOTE(POS_Y(12));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(1));
             colorBackground[] = {0, 0, 0, 0.5};
@@ -674,10 +716,10 @@ class ACE_Medical_Menu {
                 shadow = "false";
             };
         };
-        class DoseList: RscCombo {
+            class DoseList: RscCombo {
             idc = IDC_MEDICATION_DOSE_COMBO; // LOOK HERE
-            x = QUOTE(POS_X(40));
-            y = QUOTE(POS_Y(16.9));
+            x = QUOTE(POS_X(4));
+            y = QUOTE(POS_Y(13));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(1));
             show = 1;
@@ -701,11 +743,11 @@ class ACE_Medical_Menu {
                 };
             };
         };
-        class PrepSyringe: RscButton {
+            class PrepSyringe: RscButton {
             idc = IDC_MEDICATION_PREP_SYRINGE; // LOOK HERE
             text = CSTRING(PrepSyringe);
-            x = QUOTE(POS_X(40));
-            y = QUOTE(POS_Y(18.9));
+            x = QUOTE(POS_X(4));
+            y = QUOTE(POS_Y(14));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(1.5));
             onButtonClick = QUOTE([] call FUNC(prepSyringe));
@@ -715,11 +757,14 @@ class ACE_Medical_Menu {
             colorBackgroundActive[] = {1, 1, 1, 1};
             colorBorder[] = {0,0,0,0};
             show = 1;
-            class Attributes {
+                class Attributes {
                 align = "center";
                 font = "RobotoCondensed";
                 shadow = "false";
-            };
+                    };
+            };  
         };
     };
+    };
+    
 };

@@ -105,3 +105,9 @@ if (ACEGVAR(medical_gui,target) == ACE_player) then {
 };
 [] call FUNC(updateMedications);
 [] call FUNC(updateSyringes);
+private _syringeMenuStatus = player getVariable ["SyringeMenu", false];
+if (_syringeMenuStatus) then {
+    [] call FUNC(openSyringeMenu);
+} else {
+    [] call FUNC(closeSyringeMenu);
+};
