@@ -14,8 +14,8 @@
  *
  * Public: No
  */
-player setVariable ["SyringeMenu", false];
+[{player setVariable ["SyringeMenu", false];
 ctrlShow [71300, false];
 ctrlShow [71301, false];
 ctrlShow [71311, false];
-ctrlShow [71310, true];
+ctrlShow [71310, true];}, []] call CBA_fnc_execNextFrame;

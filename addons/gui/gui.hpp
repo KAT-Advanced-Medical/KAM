@@ -635,7 +635,7 @@ class ACE_Medical_Menu {
                 class SyringeCloseButton: RscButton {
                     idc = IDC_SYRINGE_CLOSE;
                     text = CSTRING(CloseMenu);
-                    x = QUOTE(POS_X(10));
+                    x = QUOTE(POS_X(10.3));
                     y = QUOTE(POS_Y(0));
                     w = QUOTE(POS_W(2));
                     h = QUOTE(POS_H(1));
@@ -652,7 +652,7 @@ class ACE_Medical_Menu {
             class SyringeTypeTitle: RscStructuredText  {
                 idc = IDC_SYRINGE_TYPE_TITLE; // LOOK HERE
                 text = CSTRING(SyringeTitleList);
-                x = QUOTE(POS_X(4));
+                x = QUOTE(POS_X(3.8));
                 y = QUOTE(POS_Y(1.3));
                 w = QUOTE(POS_W(8));
                 h = QUOTE(POS_H(1));
@@ -668,7 +668,7 @@ class ACE_Medical_Menu {
         };
             class SyringeList: RscListBox  {
             idc = IDC_SYRINGE_TYPE_LIST; // LOOK HERE
-            x = QUOTE(POS_X(4));
+            x = QUOTE(POS_X(3.8));
             y = QUOTE(POS_Y(2.3));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(2));
@@ -677,7 +677,7 @@ class ACE_Medical_Menu {
             class MedicationTypeTitle: RscStructuredText  {
             idc = IDC_MEDICATION_TYPE_TITLE; // LOOK HERE
             text = CSTRING(MedicationTitleList);
-            x = QUOTE(POS_X(4));
+            x = QUOTE(POS_X(3.8));
             y = QUOTE(POS_Y(4.6));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(1));
@@ -693,7 +693,7 @@ class ACE_Medical_Menu {
         };
             class MedicationList: RscListBox {
             idc = IDC_MEDICATION_TYPE_LIST; // LOOK HERE
-            x = QUOTE(POS_X(4));
+            x = QUOTE(POS_X(3.8));
             y = QUOTE(POS_Y(5.6));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(6));
@@ -702,7 +702,7 @@ class ACE_Medical_Menu {
             class DoseTitle: RscStructuredText  {
             idc = IDC_MEDICATION_DOSE_TITLE; // LOOK HERE
             text = CSTRING(DoseTitle);
-            x = QUOTE(POS_X(4));
+            x = QUOTE(POS_X(3.8));
             y = QUOTE(POS_Y(12));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(1));
@@ -718,7 +718,7 @@ class ACE_Medical_Menu {
         };
             class DoseList: RscCombo {
             idc = IDC_MEDICATION_DOSE_COMBO; // LOOK HERE
-            x = QUOTE(POS_X(4));
+            x = QUOTE(POS_X(3.8));
             y = QUOTE(POS_Y(13));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(1));
@@ -746,8 +746,8 @@ class ACE_Medical_Menu {
             class PrepSyringe: RscButton {
             idc = IDC_MEDICATION_PREP_SYRINGE; // LOOK HERE
             text = CSTRING(PrepSyringe);
-            x = QUOTE(POS_X(4));
-            y = QUOTE(POS_Y(14));
+            x = QUOTE(POS_X(3.8));
+            y = QUOTE(POS_Y(14.5));
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(1.5));
             onButtonClick = QUOTE([] call FUNC(prepSyringe));
