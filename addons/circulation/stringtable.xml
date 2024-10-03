@@ -3200,10 +3200,9 @@
         <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
             <English>Training Level for use of the Stethoscope to measure HR</English>
         </Key>
-        <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
+        <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
             <English>Time to measure HR with a Stethoscope</English>
         </Key>
-        CheckHRSteth
         <Key ID="STR_KAT_Circulation_Actions_CheckHRSteth">
             <English>Check HR w/ Stethoscope</English>
         </Key>
