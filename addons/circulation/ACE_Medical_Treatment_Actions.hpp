@@ -66,7 +66,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(drawBlood));
         condition = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || EFUNC(pharma,removeIV)));
-        items[] = {"Kat_Empty_bloodIV_500"};
+        items[] = {"KAT_Empty_bloodIV_500"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
