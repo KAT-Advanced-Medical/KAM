@@ -163,7 +163,7 @@ class CfgWeapons {
         picture = QPATHTOF(ui\BPCuff.paa);
         icon = "";
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 4;
+            mass = 8;
         };
     };
     class KAT_bloodSample: ACE_ItemCore {
