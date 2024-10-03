@@ -31,6 +31,30 @@ class ACE_Medical_Treatment_Actions {
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
     };
+    class CheckBloodPressureCuff: CheckPulse {
+        displayName = CSTRING(Actions_CheckBloodPressureCuff);
+        displayNameProgress = CSTRING(Actions_CheckingBloodPressureCuff);
+        treatmentTime = QGVAR(treatmentTime_BPcuff);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        callbackSuccess = QFUNC(checkBloodPressureCuff);
+        medicRequired = QGVAR(medLvl_BPCuff);
+        items[] = {"kat_BPCuff"};
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+    };
+    class CheckPulseSteth: CheckPulse {
+        displayName = CSTRING(Actions_CheckHRSteth);
+        displayNameProgress = CSTRING(Actions_CheckingHRSteth);
+        treatmentTime = QGVAR(treatmentTime_StethHR);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "Body"};
+        callbackSuccess = QFUNC(checkPulseSteth);
+        medicRequired = QGVAR(medLvl_StethHR);
+        items[] = {"kat_stethoscope"};
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+    };
     class KAT_DrawBlood500: CheckPulse {
         displayName = CSTRING(DrawBlood500_Action_Use);
         displayNameProgress = CSTRING(DrawBlood_Action_Progress);
@@ -42,7 +66,7 @@ class ACE_Medical_Treatment_Actions {
         consumeItem = 1;
         callbackSuccess = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(drawBlood));
         condition = QUOTE([ARR_3(_medic,_patient,500)] call FUNC(canDraw) && (!(EGVAR(pharma,RequireInsIVBloodDraw)) || EFUNC(pharma,removeIV)));
-        items[] = {"KAT_Empty_bloodIV_500"};
+        items[] = {"Kat_Empty_bloodIV_500"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};

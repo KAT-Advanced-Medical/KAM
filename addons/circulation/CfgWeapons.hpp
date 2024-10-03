@@ -155,6 +155,17 @@ class CfgWeapons {
             mass = 0.1;
         };
     };
+    class kat_BPCuff: ACE_ItemCore {
+        scope = 2;
+        author = "Cplhardcore";
+        displayName = CSTRING(BPCuff_display);
+        descriptionShort = CSTRING(BPCuff_display);
+        picture = QPATHTOF(ui\BPCuff.paa);
+        icon = "";
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 4;
+        };
+    };
     class KAT_bloodSample: ACE_ItemCore {
         author = "Mazinski";
         scope = 0;

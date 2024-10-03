@@ -2,6 +2,10 @@
 
 [QACEGVAR(medical_gui,updateBodyImage), LINKFUNC(gui_updateBodyImage)] call CBA_fnc_addEventHandler;
 [QACEGVAR(medical_treatment,fullHealLocalMod), LINKFUNC(fullHealLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(checkBloodPressureLocal), LINKFUNC(checkBloodPressureLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(checkBloodPressureCuffLocal), LINKFUNC(checkBloodPressureCuffLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(checkPulseLocal), LINKFUNC(checkPulseLocal)] call CBA_fnc_addEventHandler;
+[QGVAR(checkPulseStethLocal), LINKFUNC(checkPulseStethLocal)] call CBA_fnc_addEventHandler;
 ["ace_cardiacArrest", LINKFUNC(handleCardiacArrest)] call CBA_fnc_addEventHandler;
 
 GVAR(AEDX_MonitorTarget) = objNull;

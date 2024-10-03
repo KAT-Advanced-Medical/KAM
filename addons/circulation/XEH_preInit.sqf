@@ -561,4 +561,40 @@ if (isServer) then {
     true
 ] call CBA_Settings_fnc_init;
 
+[
+    QGVAR(medLvl_BPCuff),
+    "LIST",
+    [LLSTRING(SETTING_BPCuff),LLSTRING(SETTING_BPCuff_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_BPCuff),
+    "SLIDER",
+    [LLSTRING(treatmentTime_BPCuff)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0.1, 30, 12, 1],
+    true
+] call CBA_Settings_fnc_init;
+
+[
+    QGVAR(medLvl_StethHR),
+    "LIST",
+    [LLSTRING(SETTING_StethHR),LLSTRING(SETTING_StethHR_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [[0, 1, 2], ["STR_ACE_Medical_Treatment_Anyone", "STR_ACE_Medical_Treatment_Medics", "STR_ACE_Medical_Treatment_Doctors"], 0],
+    true
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(treatmentTime_StethHR),
+    "SLIDER",
+    [LLSTRING(treatmentTime_StethHR)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [0.1, 30, 8, 1],
+    true
+] call CBA_Settings_fnc_init;
+
 ADDON = true;
