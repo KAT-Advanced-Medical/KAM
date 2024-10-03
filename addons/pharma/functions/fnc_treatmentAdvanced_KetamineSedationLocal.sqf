@@ -25,4 +25,4 @@ _patient setVariable [QEGVAR(surgery,sedated), true, true];
 
 [{ 
     _patient setVariable ["kat_surgery_sedated", false, true]; 
-}, 90] call CBA_fnc_waitAndExecute;
+}, 30] call CBA_fnc_waitAndExecute;
