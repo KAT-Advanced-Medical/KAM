@@ -77,6 +77,6 @@ class CfgMagazines {
         initSpeed = 0;
         tracersEvery = 0;
         lastRoundsTracer = 0;
-        mass = 50;
+        mass = 25;
     };
 };
