@@ -132,20 +132,17 @@ if (EGVAR(breathing,enable)) then {
 // Systolic Blood Pressure from Blood Volume with postive Heart Rate impacts capped by Blood Volume, Diastolic Blood Pressure from Vasoconstriction and Systolic BP
 private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
 
-private _bloodPressureSystolic = (_bloodVolume * 20) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_heartRate - DEFAULT_HEART_RATE) - (((5.5 - _bloodVolume) max 0) * 30));
+private _bloodPressureSystolic = (_bloodVolume * 20) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((-0.005 * _heartRate^2) + (1.6 * _heartRate) - 96);
+_bloodPressureSystolic = 250 / (1 + exp((-0.04) * (_bloodPressureSystolic - 122)));
+
 private _bloodPressureDiastolic = ((_bloodVolume * 13.33) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_vasoconstriction - 1) * 40)) min (_bloodPressureSystolic - 5);
+_bloodPressureDiastolic = 250 / (1 + exp((-0.04) * (_bloodPressureDiastolic - 100)));
 
-// Vasoconstriction from Diastolic Blood Pressure and Alpha Adjustment
-_vasoconstriction = switch (true) do {
-    case (_bloodPressureDiastolic <= 40): { 1.5 + _alphaFactorAdjustment };
-    case (_bloodPressureDiastolic >= 120): { 0.5 + _alphaFactorAdjustment };
-    default { (1.5 - (_bloodPressureDiastolic - 40) * (1 / 80)) + _alphaFactorAdjustment };
-};
-
-_unit setVariable [VAR_VASOCONSTRICTION, (1.8 min (0.2 max _vasoconstriction)), _syncValues];
-
-// Pull wound blood loss after recalculating vasoconstriction
 private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
+
+// Vasoconstriction from Wound Blood Loss and Alpha Adjustment
+_vasoconstriction = 1 + (0.5 * _woundBloodLoss) + _alphaFactorAdjustment;
+_unit setVariable [VAR_VASOCONSTRICTION, (1.8 min (0.2 max _vasoconstriction)), _syncValues];
 
 private _bloodPressure = [round(_bloodPressureDiastolic), round(_bloodPressureSystolic)];
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
