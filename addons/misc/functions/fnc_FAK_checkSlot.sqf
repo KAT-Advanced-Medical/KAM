@@ -34,6 +34,7 @@ private _return = false;
 switch (_type) do {
     case 0: {_max = 15;}; // IFAK
     case 1: {_max = 63;}; // AFAK
+    case 2: {_max = 255;}; // MEDPACK
     default {}; // MFAK
 };
 

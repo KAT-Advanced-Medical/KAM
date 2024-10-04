@@ -76,6 +76,13 @@ switch (_type) do {
         _itemList = missionNamespace getVariable [QGVAR(AFAKContents), []];
         _removeOnEmptyCondition = GVAR(AFAK_RemoveWhenEmpty);
     };
+    case 2: { // MEDPACK
+        _FAKToAdd = "kat_MEDPACK_Magazine";
+        _slotArray = [true,true,true,true,true,true,true,true];
+        _container = [(missionNamespace getVariable [QGVAR(MEDPACK_Container), 0])] call _fnc_getContainer;
+        _itemList = missionNamespace getVariable [QGVAR(MEDPACKContents), []];
+        _removeOnEmptyCondition = GVAR(MEDPACK_RemoveWhenEmpty);
+    };
     default { // MFAK
         _FAKToAdd = "kat_MFAK_Magazine";
         _slotArray = [true,true,true,true,true,true,true,true];

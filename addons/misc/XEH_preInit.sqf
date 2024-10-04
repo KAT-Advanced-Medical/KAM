@@ -603,6 +603,174 @@ PREP_RECOMPILE_END;
     }
 ] call CBA_Settings_fnc_init;
 
+// Remove MEDPACK when empty
+[
+    QGVAR(MEDPACK_RemoveWhenEmpty),
+    "CHECKBOX",
+    LLSTRING(SETTING_FAK_RemoveWhenEmpty),
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    [true],
+    true
+] call CBA_fnc_addSetting;
+
+//MEDPACK Container
+[
+    QGVAR(MEDPACK_Container),
+    "LIST",
+    [LLSTRING(SETTING_FAK_Container), LLSTRING(SETTING_FAK_Container_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    [[0, 1, 2, 3], [LLSTRING(SETTING_Container_Default), LLSTRING(SETTING_Container_Uniform), LLSTRING(SETTING_Container_Vest), LLSTRING(SETTING_Container_Backpack)], 0],
+    2
+] call CBA_fnc_addSetting;
+
+//MEDPACK Slot Color
+[
+    QGVAR(MEDPACK_Slot_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_SlotColor), LLSTRING(SETTING_FAK_SlotColor_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    [0.56, 0.93, 0.56],
+    2
+] call CBA_fnc_addSetting;
+
+//MEDPACK Item Color
+[
+    QGVAR(MEDPACK_Item_Color),
+    "COLOR",
+    [LLSTRING(SETTING_FAK_ItemColor), LLSTRING(SETTING_FAK_ItemColor_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    [0.67, 0.84, 0.90],
+    2
+] call CBA_fnc_addSetting;
+
+//MEDPACK First Slot Item
+[
+    QGVAR(MEDPACKFirstSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_MEDPACKFirstSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    "[['ACE_tourniquet', 6], ['ACE_splint', 4]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MEDPACKFirstSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MEDPACKFirstSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MEDPACK Second Slot Item
+[
+    QGVAR(MEDPACKSecondSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_MEDPACKSecondSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    "[['ACE_packingBandage', 15], ['ACE_quikclot', 15], ['ACE_fieldDressing', 15]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MEDPACKSecondSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MEDPACKSecondSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MEDPACK Third Slot Item
+[
+    QGVAR(MEDPACKThirdSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_MEDPACKThirdSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    "[['ACE_morphine', 6], ['kat_Painkiller', 2], ['kat_Penthrox', 2]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MEDPACKThirdSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MEDPACKThirdSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MEDPACK Fourth Item
+[
+    QGVAR(MEDPACKFourthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_MEDPACKFourthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    "[['kat_chestSeal', 6], ['kat_aatKit', 3], ['kat_ncdKit', 3], ['kat_stethoscope', 1]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MEDPACKFourthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MEDPACKFourthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MEDPACK Fifth Item
+[
+    QGVAR(MEDPACKFifthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_MEDPACKFifthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    "[['kat_larynx', 6]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MEDPACKFifthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MEDPACKFifthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MEDPACK Sixth Item
+[
+    QGVAR(MEDPACKSixthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_MEDPACKSixthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    "[['ACE_epinephrine', 6], ['kat_IV_16', 4], ['kat_nitroglycerin', 2], ['kat_phenylephrine', 2], ['kat_atropine', 2], ['kat_naloxone', 2], ['kat_Carbonate', 1]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MEDPACKSixthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MEDPACKSixthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MEDPACK Seventh Item
+[
+    QGVAR(MEDPACKSeventhSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_MEDPACKSeventhSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    "[['ACE_salineIV_250', 4], ['kat_IV_16', 4]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MEDPACKSeventhSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MEDPACKSeventhSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
+//MEDPACK Eighth Item
+[
+    QGVAR(MEDPACKEighthSlotItem),
+    "EDITBOX",
+    [LLSTRING(SETTING_MEDPACKEighthSlot_Item), LLSTRING(SETTING_ItemSlot_DESC)],
+    [CBA_SETTINGS_CAT, LSTRING(SubCategory_MEDPACK)],
+    "[['kat_Pulseoximeter', 1], ['kat_pocketBVM', 1], ['kat_AED', 1]]",
+    1,
+    {
+        private _string = missionNamespace getVariable [QGVAR(MEDPACKEighthSlotItem), []];
+        private _array = parseSimpleArray _string;
+        missionNamespace setVariable [QGVAR(MEDPACKEighthSlotItem), _array, true];
+        call FUNC(FAK_updateContents);
+    }
+] call CBA_Settings_fnc_init;
+
 //Enable's Stitching of the Full Body 
 [
     QGVAR(enableStitchFullBody),

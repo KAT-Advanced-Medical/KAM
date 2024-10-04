@@ -64,4 +64,19 @@ class CfgMagazines {
         lastRoundsTracer = 0;
         mass = 50;
     };
+    class kat_MEDPACK_Magazine: CA_Magazine {
+        scope = 2;
+        scopeArsenal = 0;
+        author = "Miss Heda/Cplhardcore";
+        displayName = CSTRING(MEDPACK_Display);
+        descriptionShort = CSTRING(MEDPACK_DESC);
+        picture = QPATHTOF(ui\MEDPACK.paa);
+
+        ammo = "";
+        count = 255;
+        initSpeed = 0;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+        mass = 50;
+    };
 };
