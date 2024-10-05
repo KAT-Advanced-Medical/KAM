@@ -102,22 +102,22 @@
             <Dutch>Spanningspneumothorax: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_SpO2Value">
-            <English>SpO2 value: </English>
-            <German>SpO2-Wert: </German>
-            <Czech>Hodnota SpO2: </Czech>
-            <French>Valeur Sp02: </French>
-            <Polish>Wartość SpO2: </Polish>
-            <Spanish>Valor SpO2: </Spanish>
-            <Korean>SpO2 값: </Korean>
-            <Chinese>SpO2值。</Chinese>
-            <Turkish>SpO2 değeri: </Turkish>
-            <Japanese>SpO2値:</Japanese>
-            <Russian>Значение SpO2:</Russian>
-            <Italian>Valore di SpO2</Italian>
-            <Chinesesimp>SpO2值:</Chinesesimp>
-            <Portuguese>Valor de SpO2:</Portuguese>
-            <Finnish>Veren happitaso (SpO2): </Finnish>
-            <Dutch>SpO2 waarde: </Dutch>
+            <English>PaO2 value: </English>
+            <German>PaO2-Wert: </German>
+            <Czech>Hodnota PaO2: </Czech>
+            <French>Valeur PaO2: </French>
+            <Polish>Wartość PaO2: </Polish>
+            <Spanish>Valor PaO2: </Spanish>
+            <Korean>PaO2 값: </Korean>
+            <Chinese>PaO2值。</Chinese>
+            <Turkish>PaO2 değeri: </Turkish>
+            <Japanese>PaO2:</Japanese>
+            <Russian>Значение PaO2:</Russian>
+            <Italian>Valore di PaO2</Italian>
+            <Chinesesimp>PaO2值:</Chinesesimp>
+            <Portuguese>Valor de PaO2:</Portuguese>
+            <Finnish>Veren happitaso (PaO2): </Finnish>
+            <Dutch>PaO2 waarde: </Dutch>
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_bloodGroup">
             <English>Blood group: </English>
