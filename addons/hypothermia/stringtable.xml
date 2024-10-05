@@ -17,120 +17,159 @@
             <Portuguese>Usando</Portuguese>
             <Finnish>Käytetään</Finnish>
             <Russian>С помощью</Russian>
+            <Dutch>Wordt gebruikt</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_ENABLE_HYPOTHERMIA">
             <English>Enable Hypothermia</English>
+            <Dutch>Schakel hypothermie in</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT">
             <English>Hand Warmer Impact</English>
+            <Dutch>Handwarmer impact</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT_DESC">
             <English>Multipler for impact of hand warmers on heat gain</English>
+            <Dutch>Vermenigvuldiger voor de impact die handwarmers hebben op de stijging van temperatuur</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_FLUID_WARMER_IMPACT">
             <English>Fluid Warmer Impact</English>
+            <Dutch>Vloeistofverwarmer impact</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_FLUID_WARMER_IMPACT_DESC">
             <English>Multipler for impact of fluid warmer on heat gain</English>
+            <Dutch>Vermenigvuldiger voor de impact die vloeistofverwarmers hebben op de stijging van temperatuur</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_WARM_CLOTHING">
             <English>Warm Uniforms</English>
+            <Dutch>Warme uniformen</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_WARM_CLOTHING_DESC">
             <English>List of clothing marked that reduces heat loss</English>
+            <Dutch>Lijst van kleding die temperatuurdalingen verminderen</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_CheckHandWarmers">
             <English>Check Hand Warmers</English>
+            <Dutch>Check handwarmers</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_displayName">
             <English>Hand Warmer</English>
+            <Dutch>Handwarmers</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_DescShort">
             <English>Small hand warmers to provide warmth in colder climates</English>
+            <Dutch>Kleine handwarmers die warmte bieden in koude klimaten</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Use_Handwarmer">
             <English>Use Hand Warmer</English>
+            <Dutch>Gebruik handwarmer</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Self_Handwarmer_Output">
             <English>This is where you have handwarmers and how much longer you think they have in minutes: %1, %2, %3, %4, %5</English>
+            <Dutch>Dit is waar je handwarmers hebt en hoelang je denkt dat ze nog werken in minuten: %1, %2, %3, %4, %5</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Other_Handwarmer_Output">
             <English>This patient has handwarmers and they will probably last this many more minutes at this locations: %1, %2, %3, %4, %5</English>
+            <Dutch>Deze patient heeft handwarmers op deze locaties en dit is hoelang ze ongeveer nog werken: %1, %2, %3, %4, %5</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_displayName">
             <English>Fluid Line Warmer</English>
+            <Dutch>IV-lijn verwarmers</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_DescShort">
             <English>Provides heating to IV fluids. Must be placed on an already existing line</English>
+            <Dutch>Verwarmt IV-vloeistoffen. Moet geplaatst worden op een al aangelegde lijn.</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Apply_Warmer">
             <English>Attach Fluid Warmer</English>
+            <Dutch>Maak vloeistofverwarmer vast</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Remove_Warmer">
             <English>Remove Fluid Warmer</English>
+            <Dutch>Maak vloeistofverwarmer los</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_dead">
             <English>Patient feels frigid</English>
+            <Dutch>Patiënt voelt ijskoud aan</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_cold">
             <English>Patient feels remarkably cold</English>
+            <Dutch>Patiënt voel opmerkelijk koud aan</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_cool">
             <English>Patient feels moderately cold</English>
+            <Dutch>Patiënt voelt redelijk koud aan</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_mild">
             <English>Patient feels mildly cool</English>
+            <Dutch>Patiënt voelt een klein beetje koud aan</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_warm">
             <English>Patient feels warm</English>
+            <Dutch>Patiënt voelt warm aan</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature">
             <English>Check Temperature</English>
+            <Dutch>Check temperatuur</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature_Progress">
             <English>Checking Temperature</English>
+            <Dutch>Temperatuur wordt gecheckt</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Hand_Warmers">
             <English>Check Hand Warmers</English>
+            <Dutch>Check handwarmers</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_perform">
             <English>Performing</English>
+            <Dutch>Wordt uitgevoerd</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_LineWarmer">
             <English>Line Warmer Active</English>
+            <Dutch>Lijnwarmer actief</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_None">
             <English>No Hand Warmers are active at this time</English>
+            <Dutch>Momenteel zijn er geen handwarmers actief</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_Body">
             <English>Body: %1</English>
+            <Dutch>Torso: %1</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_Body_None">
             <English>Body: None</English>
+            <Dutch>Torso: Geen</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_LArm">
             <English>Left Arm: %1</English>
+            <Dutch>Linkerarm: %1</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_LArm_None">
             <English>Left Arm: None</English>
+            <Dutch>Linkerarm: Geen</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_RArm">
             <English>Right Arm: %1</English>
+            <Dutch>Rechterarm: %1</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_RArm_None">
             <English>Right Arm: None</English>
+            <Dutch>Rechterarm: Geen</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_LLeg">
             <English>Left Leg: %1</English>
+            <Dutch>Linkerbeen: %1</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_LLeg_None">
             <English>Left Leg: None</English>
+            <Dutch>Linkerbeen: Geen</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_RLeg">
             <English>Right Leg: %1</English>
+            <Dutch>Rechterbeen: %1</Dutch>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_RLeg_None">
             <English>Right Leg: None</English>
+            <Dutch>Rechterbeen: Geen</Dutch>
         </Key>
     </Package>
 </Project>

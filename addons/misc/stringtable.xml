@@ -9,6 +9,7 @@
             <Russian>Оборудование KAT</Russian>
             <French>Equipement KAT</French>
             <Portuguese>Equipamento KAT</Portuguese>
+            <Dutch>KAT apparatuur</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ENABLE">
             <English>ACE-Misc activated?</English>
@@ -26,6 +27,7 @@
             <Japanese>KAMその他モジュールを有効化</Japanese>
             <Portuguese>ACE - Miscelâneo ativado?</Portuguese>
             <Finnish>ACE-Sekalaista aktivoitu?</Finnish>
+            <Dutch>ACE-Misc geactiveerd?</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Action_add_IV">
             <English>Attaching IV</English>
@@ -43,6 +45,7 @@
             <Japanese>IVを取り付けています</Japanese>
             <Portuguese>Colocando IV</Portuguese>
             <Finnish>Kiinnitys IV</Finnish>
+            <Dutch>IV wordt aangehangen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Action_add_IV_Display">
             <English>Attach IV (1000ml)</English>
@@ -60,6 +63,7 @@
             <Japanese>IVを取り付ける (1000ml)</Japanese>
             <Portuguese>Administrar IV (1000ml)</Portuguese>
             <Finnish>Kiinnitys IV (1000ml)</Finnish>
+            <Dutch>Hang IV aan (1000ml)</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Action_add_IV_Display_500">
             <English>Attach IV (500ml)</English>
@@ -77,6 +81,7 @@
             <Japanese>IVを取り付ける (500ml)</Japanese>
             <Portuguese>Administrar IV (500ml)</Portuguese>
             <Finnish>Kiinnitys IV (500ml)</Finnish>
+            <Dutch>Hang IV aan (500ml)</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Action_add_IV_Display_250">
             <English>Attach IV (250ml)</English>
@@ -94,6 +99,7 @@
             <Japanese>IVを取り付ける (250ml)</Japanese>
             <Portuguese>Administrar IV (250ml)</Portuguese>
             <Finnish>Kiinnitys IV (250ml)</Finnish>
+            <Dutch>Hang IV aan (250ml)</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Display_IVStand">
             <English>Stand: Saline IV (1000ml)</English>
@@ -111,6 +117,7 @@
             <Japanese>スタンド: 生理食塩水IV (1000ml)</Japanese>
             <Portuguese>Suporte: Soro fisiológico IV (1000ml)</Portuguese>
             <Finnish>Suolaliuosteline IV: (1000ml)</Finnish>
+            <Dutch>Stand: Saline IV (1000ml)</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Display_IVStand_500">
             <English>Stand: Saline IV (500ml)</English>
@@ -128,6 +135,7 @@
             <Japanese>スタンド: 生理食塩水IV (500ml)</Japanese>
             <Portuguese>Suporte: Soro fisiológico IV (500ml)</Portuguese>
             <Finnish>Suolaliuosteline IV: (500ml)</Finnish>
+            <Dutch>Stand: Saline IV (500ml)</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Display_IVStand_250">
             <English>Stand: Saline IV (250ml)</English>
@@ -145,6 +153,7 @@
             <Japanese>スタンド: 生理食塩水IV (250ml)</Japanese>
             <Portuguese>Suporte: Soro fisiológico IV (250ml)</Portuguese>
             <Finnish>Suolaliuosteline IV: (250ml)</Finnish>
+            <Dutch>Stand: Saline IV (250ml)</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_incompatibilityWarning">
             <English>Incompatible addon warning</English>
@@ -159,6 +168,7 @@
             <Portuguese>Aviso de addon incompatível</Portuguese>
             <Finnish>Yhteensopimaton lisäosien varoitus</Finnish>
             <Russian>Предупреждение о несовместимом дополнении</Russian>
+            <Dutch>Waarschuwing voor onverenigbare mods</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_incompatibilityWarning_Desc">
             <English>Throws a warning and add line to RPT log if incompatible addons(Listed by us - developers) that could negatively affect correct functionality of KAT are used. \nWarning disappears after 60 seconds.</English>
@@ -173,6 +183,7 @@
             <Portuguese>Mostra um aviso e adiciona uma linha ao log do RPT se forem usados ​​complementos incompatíveis (listados por nós - desenvolvedores) que podem afetar negativamente a funcionalidade correta do KAT. \nO aviso desaparece após 60 segundos.</Portuguese>
             <Finnish>Lähettää varoituksen ja lisää rivin RPT-lokiin, jos käytössä on yhteensopimattomia lisäosia (me, kehittäjät ovat luetteloineet), jotka voivat vaikuttaa negatiivisesti KAT:n oikeaan toimintaan. \nVaroitus häviää 60 sekunnin kuluttua.</Finnish>
             <Russian>Выдает предупреждение и добавляет строку в журнал RPT, если используются несовместимые дополнения (перечисленные нами - разработчиками), которые могут негативно повлиять на корректную функциональность KAT. \nПредупреждение исчезает через 60 секунд.</Russian>
+            <Dutch>Gooit een waarschuwing op en voegt een lijn toe aan de RPT als er onverenigbare mods (Genoemd door ons, de developers) die KAM negatief kunnen beïnvloeden worden gebruikt. \nWaarschuwing verdwijnt na 60 seconden.</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_incompatibilityWarning_Desc">
             <English>[KAM WARNING] Incompatible addon(s) that could negatively affect correct functionality detected. KAT - Advanced Medical REWRITE Development Team strongly advises to remove these addons: %1</English>
@@ -187,6 +198,7 @@
             <Portuguese>[AVISO DO KAM] Detectados addons incompatíveis que podem afetar negativamente a funcionalidade correta. KAT - A equipe de desenvolvimento do Advanced Medical REWRITE recomenda fortemente a remoção destes complementos: %1</Portuguese>
             <Finnish>[KAM WARNING] Havaittiin yhteensopimattomia lisäosia, jotka voivat vaikuttaa oikeaan toimintaan. KAT - Advanced Medical REWRITE -kehitystiimi suosittelee näiden lisäosien poistamista: %1</Finnish>
             <Russian>[ПРЕДУПРЕЖДЕНИЕ KAM] Обнаружены несовместимые дополнения, которые могут негативно повлиять на корректную функциональность. Команда разработчиков KAT - Advanced Medical REWRITE настоятельно рекомендует удалить эти дополнения: %1</Russian>
+            <Dutch>[KAM WAARSCHUWING] Onverenigbare mods die de ervaring negatief kunnen beïnvloeden gedetecteerd. KAT - Advanced Medical REWRITE development team raadt je sterk aan om de volgende mods te verwijderen: %1</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_Tourniquet">
             <English>Tourniquet Settings</English>
@@ -196,6 +208,7 @@
             <German>Tourniquet Einstellungen</German>
             <Russian>Настройки жгута</Russian>
             <Portuguese>Configurações de torniquete</Portuguese>
+            <Dutch>Tourniquet instellingen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_Enable">
             <English>Enable tourniquet effects</English>
@@ -205,6 +218,7 @@
             <German>Erlaube Tourniquet Effekte</German>
             <Russian>Включить эффект наложения жгута</Russian>
             <Portuguese>Habilitar efeitos de torniquete</Portuguese>
+            <Dutch>Schakel tourniquet effecten in</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_PositiveMultiplier">
             <English>Tourniquet effects positive multiplier</English>
@@ -214,6 +228,7 @@
             <German>Tourniquet Effekt positiver Multiplikator</German>
             <Russian>Положительный множитель эффекта жгута</Russian>
             <Portuguese>Multiplicador positivo de efeitos de torniquete</Portuguese>
+            <Dutch>Positieve multiplicator voor tourniquet effecten</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_tourniquetEffects_NegativeMultiplier">
             <English>Tourniquet effects negative multiplier</English>
@@ -224,6 +239,7 @@
             <German>Tourniquet Effekt negativer Multiplikator</German>
             <Russian>Отрицательный множитель эффекта жгута</Russian>
             <Portuguese>Multiplicador negativo de efeitos de torniquete</Portuguese>
+            <Dutch>Negatieve multiplicator voor tourniquet effecten</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_treatmentTimeDetachTourniquet">
             <English>Time to take off tourniquet</English>
@@ -238,6 +254,7 @@
             <Portuguese>Tempo para retirar o torniquete</Portuguese>
             <Finnish>Aika ottaa kiristysside pois</Finnish>
             <Russian>Никаких переливаний</Russian>
+            <Dutch>Benodigde tijd om een tourniquet af te nemen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment">
             <English>Allow Shared Vehicle Equipment</English>
@@ -250,6 +267,7 @@
             <Portuguese>Permitir equipamento compartilhado no veículo</Portuguese>
             <Finnish>Salli jaetut ajoneuvovarusteet</Finnish>
             <Russian>Разрешить совместное использование транспортного оборудования</Russian>
+            <Dutch>Sta het delen van apparatuur in voertuigen toe</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_DESC">
             <English>Sets whether vehicle's medical supplies can be used while treating and in which order</English>
@@ -262,6 +280,7 @@
             <Portuguese>Define se os suprimentos médicos do veículo podem ser usados durante o tratamento e em qual ordem</Portuguese>
             <Finnish>Asettaa, voidaanko ajoneuvon lääketieteellisiä tarvikkeita käyttää hoidon aikana ja missä järjestyksessä</Finnish>
             <Russian>Определяет, можно ли использовать медицинские принадлежности транспортного средства во время лечения и в каком порядке</Russian>
+            <Dutch>Bepaald of de medische middelen in een voertuig gebruikt kan worden voor behandelingen en in welke volgorde</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleNoSelfTreatment">
             <English>Vehicle's Equipment First (No self-treatment)</English>
@@ -274,6 +293,7 @@
             <Portuguese>Priorizar equipamento no veículo (sem autotratamento)</Portuguese>
             <Finnish>Ajoneuvon varusteet käytetään ensin (ei itsehoitoa)</Finnish>
             <Russian>Сначала оборудование автомобиля (без самолечения)</Russian>
+            <Dutch>Voertuigsmiddelen eerst (geen zelfbehandeling)</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleExceptSelfTreatment">
             <English>Vehicle's Equipment First (Except self-treatment)</English>
@@ -286,6 +306,7 @@
             <Portuguese>Priorizar equipamento no veículo (exceto autotratamento)</Portuguese>
             <Finnish>Ajoneuvon varusteet käytetään ensin (paitsi itsehoito)</Finnish>
             <Russian>Сначала оборудование автомобиля (кроме самолечения)</Russian>
+            <Dutch>Voertuigsmiddelen eers (behalve bij zelfbehandeling)</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_allowSharedVehicleEquipment_PriorityVehicleAlways">
             <English>Vehicle's Equipment First (Always)</English>
@@ -298,6 +319,7 @@
             <Portuguese>Priorizar equipamento no veículo (sempre)</Portuguese>
             <Finnish>Ajoneuvon varusteita käytetään ensin (aina)</Finnish>
             <Russian>Сначала оборудование автомобиля (всегда)</Russian>
+            <Dutch>Voertuigsmiddelen eerst (altijd)</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_Armband">
             <English>Armband</English>
@@ -310,6 +332,7 @@
             <Portuguese>Braçadeira</Portuguese>
             <Finnish>Käsivarsinauha</Finnish>
             <Russian>Повязка на руку</Russian>
+            <Dutch>Armband</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmPos_Display">
             <English>Armband position left arm</English>
@@ -322,6 +345,7 @@
             <Portuguese>Posição da braçadeira no braço esquerdo</Portuguese>
             <Finnish>Käsivarsinauhan asento vasen käsi</Finnish>
             <Russian>Положение повязки на левой руке</Russian>
+            <Dutch>Armband positie linkerarm</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slung to the left arm.</English>
@@ -334,6 +358,7 @@
             <Portuguese>Define a posição (x, y, z) onde a braçadeira é colocada no braço esquerdo.</Portuguese>
             <Finnish>Määrittää paikan (x, y, z), jossa käsivarsinauha on ripustettu vasempaan käsivarteen.</Finnish>
             <Russian>Определяет положение (x, y, z), в котором повязка надевается на левую руку.</Russian>
+            <Dutch>Bepaald de positie (x, y, z) waar de armband om de linkerarm zit.</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmRot_Display">
             <English>Armband rotation left arm</English>
@@ -346,6 +371,7 @@
             <Portuguese>Rotação da braçadeira no braço esquerdo</Portuguese>
             <Finnish>Käsivarsinauhan kierto vasemmassa kädessä</Finnish>
             <Russian>Вращение повязки на левой руке</Russian>
+            <Dutch>Armband rotatie linkerarm</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftArmRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slung to the left arm.</English>
@@ -358,6 +384,7 @@
             <Portuguese>Define a rotação (guinada, arfagem, rolagem) da braçadeira que é colocada no braço esquerdo.</Portuguese>
             <Finnish>Määrittää vasempaan käsivarteen ripustetun käsivarsinauhan kiertoliikkeen (kääntö, kallistus, rullaus).</Finnish>
             <Russian>Определяет вращение (рыскание, тангаж, крен) нарукавной повязки, которая надевается на левую руку.</Russian>
+            <Dutch>Bepaald de rotatie (draaiing, helling en kanteling) van de armband die om de linkerarm zit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmPos_Display">
             <English>Armband position right arm</English>
@@ -370,6 +397,7 @@
             <Portuguese>Posição da braçadeira no braço direito</Portuguese>
             <Finnish>Käsivarsinauhan asento oikea käsi</Finnish>
             <Russian>Положение повязки на правой руке</Russian>
+            <Dutch>Armbandpositie rechterarm</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slung to the right arm.</English>
@@ -382,6 +410,7 @@
             <Portuguese>Define a posição (x, y, z) onde a braçadeira é colocada no braço direito.</Portuguese>
             <Finnish>Määrittää paikan (x, y, z), jossa käsivarsinauha on ripustettu oikeaan käsivarteen.</Finnish>
             <Russian>Определяет положение (x, y, z), в котором повязка надевается на правую руку.</Russian>
+            <Dutch>Bepaald de positie (x, y, z) waar de armband om de rechterarm zit.</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmRot_Display">
             <English>Armband rotation right arm</English>
@@ -394,6 +423,7 @@
             <Portuguese>Rotação da braçadeira no braço direito</Portuguese>
             <Finnish>Käsivarsinauhan kierto oikealla kädellä.</Finnish>
             <Russian>Вращение повязки на правой руке</Russian>
+            <Dutch>Armband rotatie rechterarm</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightArmRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slung to the right arm.</English>
@@ -406,6 +436,7 @@
             <Portuguese>Define a rotação (guinada, arfagem, rolagem) da braçadeira que é colocada no braço direito.</Portuguese>
             <Finnish>Määrittää oikeaan käsivarteen kiinnitetyn käsivarsinauhan kiertoliikkeen (kääntö, nousu, rullaus).</Finnish>
             <Russian>Определяет вращение (рыскание, тангаж, крен) нарукавной повязки, которая надевается на правую руку.</Russian>
+            <Dutch>Bepaald de rotatie (draaiing, helling en kanteling) van de armband die om de rechterarm zit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegPos_Display">
             <English>Armband position left leg</English>
@@ -418,6 +449,7 @@
             <Portuguese>Posição da braçadeira na perna esquerda</Portuguese>
             <Finnish>Käsivarsinauhan asento vasemmalla jalalla</Finnish>
             <Russian>Положение повязки на левой ноге</Russian>
+            <Dutch>Armband positie linkerbeen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slung to the left leg.</English>
@@ -430,6 +462,7 @@
             <Portuguese>Define a posição (x, y, z) onde a braçadeira é colocada na perna esquerda.</Portuguese>
             <Finnish>Määrittää vasempaan jalkaan kiinnitetyn käsivarsinauhan kiertoliikkeen (kääntö, nousu, rullaus).</Finnish>
             <Russian>Определяет положение (x, y, z), в котором повязка крепится к левой ноге.</Russian>
+            <Dutch>Bepaald de positie (x, y, z) waar de armband om de linkerbeen zit.</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegRot_Display">
             <English>Armband rotation left leg</English>
@@ -442,6 +475,7 @@
             <Portuguese>Rotação da braçadeira na perna esquerda</Portuguese>
             <Finnish>Käsivarsinauhan kierto vasen jalka</Finnish>
             <Russian>Вращение повязки на левой ноге</Russian>
+            <Dutch>Armband rotatie linkerbeen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingLeftLegRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slung to the left leg.</English>
@@ -454,6 +488,7 @@
             <Portuguese>Define a rotação (guinada, arfagem, rolagem) da braçadeira que é colocada na perna esquerda.</Portuguese>
             <Finnish>Määrittää vasempaan jalkaan kiinnitetyn käsivarsinauhan kiertoliikkeen (kääntö, nousu, rullaus).</Finnish>
             <Russian>Определяет вращение (рыскание, тангаж, крен) нарукавной повязки, прикрепленной к левой ноге.</Russian>
+            <Dutch>Bepaald de rotatie (draaiing, helling en kanteling) van de armband die om de linkerbeen zit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegPos_Display">
             <English>Armband position right leg</English>
@@ -466,6 +501,7 @@
             <Portuguese>Posição da braçadeira na perna direita</Portuguese>
             <Finnish>Käsivarsinauhan asento oikea jalka.</Finnish>
             <Russian>Положение повязки на правой ноге</Russian>
+            <Dutch>Armbandpositie rechterbeen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegPos_Desc">
             <English>Defines the position (x, y, z) where the armband is slung to the right leg.</English>
@@ -478,6 +514,7 @@
             <Portuguese>Define a posição (x, y, z) onde a braçadeira é colocada na perna direita.</Portuguese>
             <Finnish>Määrittää paikan (x, y, z), jossa käsivarsinauha on ripustettu oikeaan jalkaan</Finnish>
             <Russian>Определяет положение (x, y, z), в котором повязка крепится к правой ноге.</Russian>
+            <Dutch>Bepaald de rotatie (draaiing, helling en kanteling) van de armband die om de rechterbeen zit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegRot_Display">
             <English>Armband rotation right leg</English>
@@ -490,6 +527,7 @@
             <Portuguese>Rotação da braçadeira na perna direita</Portuguese>
             <Finnish>Käsivarsinauhan kierto oikealla jalalla</Finnish>
             <Russian>Вращение повязки на правой ноге</Russian>
+            <Dutch>Armband rotatie rechterbeen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ArmbandSlingRightLegRot_Desc">
             <English>Defines the rotation (yaw, pitch, roll) of the armband that is slung to the right leg.</English>
@@ -502,6 +540,7 @@
             <Portuguese>Define a rotação (guinada, arfagem, rolagem) da braçadeira que é colocada na perna direita.</Portuguese>
             <Finnish>Määrittää oikeaan jalkaan kiinnitetyn käsivarsinauhan kiertoliikkeen (kääntö, nousu, rullaus).</Finnish>
             <Russian>Определяет вращение (рыскание, тангаж, крен) нарукавной повязки, прикрепленной к правой ноге.</Russian>
+            <Dutch>Bepaald de positie (x, y, z) waar de armband om de rechterbeen zit.</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Red_Cross_ItemName">
             <English>Armband Red Cross</English>
@@ -514,6 +553,7 @@
             <Portuguese>Braçadeira da Cruz Vermelha</Portuguese>
             <Finnish>Käsivarsinauha punainen risti</Finnish>
             <Russian>Повязка с Красным Крестом</Russian>
+            <Dutch>Armband Rode kruiz</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Medic_ItemName">
             <English>Armband Medic</English>
@@ -526,6 +566,7 @@
             <Portuguese>Braçadeira de médico</Portuguese>
             <Finnish>Käsivarsinauha taistelulääkärille</Finnish>
             <Russian>Повязка медика</Russian>
+            <Dutch>Armband medici</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Doctor_ItemName">
             <English>Armband Doctor</English>
@@ -538,6 +579,7 @@
             <Portuguese>Braçadeira de doutor</Portuguese>
             <Finnish>Käsivarsinauha lääkärille</Finnish>
             <Russian>Повязка доктора</Russian>
+            <Dutch>Armband doktor</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Kat_ItemName">
             <English>Armband KAT</English>
@@ -550,6 +592,7 @@
             <Portuguese>Braçadeira do KAT</Portuguese>
             <Finnish>Käsivarsinauha KAT</Finnish>
             <Russian>Повязка КАТ</Russian>
+            <Dutch>Armband KAT</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling">
             <English>Armband</English>
@@ -562,6 +605,7 @@
             <Portuguese>Braçadeira</Portuguese>
             <Finnish>Käsivarsinauha</Finnish>
             <Russian>Повязка</Russian>
+            <Dutch>Armband</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Left_Arm">
             <English>Sling to left arm</English>
@@ -574,6 +618,7 @@
             <Portuguese>Colocar no braço esquerdo</Portuguese>
             <Finnish>Ripusta vasempaan käsivarteen</Finnish>
             <Russian>Повязать на левую руку</Russian>
+            <Dutch>Bind aan linkerarm</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Right_Arm">
             <English>Sling to right arm</English>
@@ -586,6 +631,7 @@
             <Portuguese>Colocar no braço direito</Portuguese>
             <Finnish>Ripusta oikeaan käsivarteen</Finnish>
             <Russian>Повзать на правую руку</Russian>
+            <Dutch>Bind aan rechterarm</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Left_Leg">
             <English>Sling to left leg</English>
@@ -598,6 +644,7 @@
             <Portuguese>Colocar na perna esquerda</Portuguese>
             <Finnish>Ripusta vasemmassa jalassa</Finnish>
             <Russian>Повязать на левую ногу</Russian>
+            <Dutch>Bind aan linkerbeen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_Sling_Right_Leg">
             <English>Sling to right leg</English>
@@ -610,6 +657,7 @@
             <Portuguese>Colocar na perna direita</Portuguese>
             <Finnish>Ripusta oikeaan jalkaan</Finnish>
             <Russian>Повзать на правую ногу</Russian>
+            <Dutch>Bind aan rechterbeen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Left_Arm">
             <English>Unsling left arm</English>
@@ -622,6 +670,7 @@
             <Portuguese>Remover do braço esquerdo</Portuguese>
             <Finnish>Irrotus vasemmasta kädestä</Finnish>
             <Russian>Снять с левой руки</Russian>
+            <Dutch>Van linkerarm losmaken</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Right_Arm">
             <English>Unsling right arm</English>
@@ -634,6 +683,7 @@
             <Portuguese>Remover do braço direito</Portuguese>
             <Finnish>Irrotus oikeasta kädestä</Finnish>
             <Russian>Снять с правой руки</Russian>
+            <Dutch>Van rechterarm losmaken</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Left_Leg">
             <English>Unsling left leg</English>
@@ -646,6 +696,7 @@
             <Portuguese>Remover da perna esquerda</Portuguese>
             <Finnish>Irrotus vasemmasta jalasta</Finnish>
             <Russian>Снять с левой ноги</Russian>
+            <Dutch>Van linkerbeen losmaken</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Armband_UnSling_Right_Leg">
             <English>Unsling right leg</English>
@@ -658,6 +709,7 @@
             <Portuguese>Remover da perna direita</Portuguese>
             <Finnish>Irrotus oikeasta jalasta</Finnish>
             <Russian>Снять с правой ноги</Russian>
+            <Dutch>Van rechterbeen losmaken</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Bubble_Wrap_Ace_Action">
             <English>Pop a Bubble</English>
@@ -670,6 +722,7 @@
             <Portuguese>Estourar uma bolha</Portuguese>
             <Finnish>Poksauta</Finnish>
             <Russian>Лопни пузырь</Russian>
+            <Dutch>Pop een luchtbel</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Bubble_Wrap_Display">
             <English>Bubble Wrap</English>
@@ -682,6 +735,7 @@
             <Portuguese>Plástico Bolha</Portuguese>
             <Finnish>Kuplamuovia</Finnish>
             <Russian>Пузырчатая пленка</Russian>
+            <Dutch>Noppenfolie</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Bubble_Wrap_Desc">
             <English>A Bubble Wrap that you can squeeze to relive some pain</English>
@@ -694,6 +748,7 @@
             <Portuguese>Um plástico bolha que você pode apertar para aliviar um pouco a dor</Portuguese>
             <Finnish>Kuplakääre, jota voit puristaa lievittääksesi kipua</Finnish>
             <Russian>Пузырчатая пленка, которую вы можете сжать, чтобы немного облегчить боль</Russian>
+            <Dutch>Noppenfolie, wat je kan gebruiken om pijn te verlichten</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_A_P">
             <English>Blood Group Patch A+</English>
@@ -706,6 +761,7 @@
             <Portuguese>Sutache de grupo sanguíneo A+</Portuguese>
             <Finnish>Veriryhmälaastari A+</Finnish>
             <Russian>Патч группы крови А+</Russian>
+            <Dutch>Bloedgroep lapje A+</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_A_N">
             <English>Blood Group Patch A-</English>
@@ -718,6 +774,7 @@
             <Portuguese>Sutache de grupo sanguíneo A-</Portuguese>
             <Finnish>Veriryhmälaastari A-</Finnish>
             <Russian>Патч группы крови А-</Russian>
+            <Dutch>Bloedgroep lapje A-</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_B_P">
             <English>Blood Group Patch B+</English>
@@ -730,6 +787,7 @@
             <Portuguese>Sutache de grupo sanguíneo B+</Portuguese>
             <Finnish>Veriryhmälaastari B+</Finnish>
             <Russian>Патч группы крови B+</Russian>
+            <Dutch>Bloedgroep lapje B+</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_B_N">
             <English>Blood Group Patch B-</English>
@@ -742,6 +800,7 @@
             <Portuguese>Sutache de grupo sanguíneo B-</Portuguese>
             <Finnish>Veriryhmälaastari B-</Finnish>
             <Russian>Патч группы крови B-</Russian>
+            <Dutch>Bloedgroep lapje B-</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_0_P">
             <English>Blood Group Patch 0+</English>
@@ -754,6 +813,7 @@
             <Portuguese>Sutache de grupo sanguíneo O+</Portuguese>
             <Finnish>Veriryhmälaastari O+</Finnish>
             <Russian>Патч группы крови 0+</Russian>
+            <Dutch>Bloedgroep lapje 0+</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_0_N">
             <English>Blood Group Patch 0-</English>
@@ -766,6 +826,7 @@
             <Portuguese>Sutache de grupo sanguíneo O-</Portuguese>
             <Finnish>Veriryhmälaastari O-</Finnish>
             <Russian>Патч группы крови 0-</Russian>
+            <Dutch>Bloedgroep lapje 0-</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_AB_P">
             <English>Blood Group Patch AB+</English>
@@ -778,6 +839,7 @@
             <Portuguese>Sutache de grupo sanguíneo AB+</Portuguese>
             <Finnish>Veriryhmälaastari AB+</Finnish>
             <Russian>Патч группы крови АB+</Russian>
+            <Dutch>Bloedgroep lapje AB+</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_BloodGroupPatch_AB_N">
             <English>Blood Group Patch AB-</English>
@@ -790,6 +852,7 @@
             <Portuguese>Sutache de grupo sanguíneo AB-</Portuguese>
             <Finnish>Veriryhmälaastari AB-</Finnish>
             <Russian>Патч группы крови АB-</Russian>
+            <Dutch>Bloedgroep lapje AB-</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_IFAK">
             <English>(IFAK) Individual First Aid Kit</English>
@@ -800,6 +863,7 @@
             <Finnish>(IFAK) Yksilöllinen ensiapulaukku</Finnish>
             <Russian>(IFAK) Индивидуальная аптечка первой помощи</Russian>
             <Portuguese>(KPSI) Kit de Primeiros Socorros Individual</Portuguese>
+            <Dutch>(IFAK) Individuele Eerste hulpkit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_MFAK">
             <English>(MFAK) Multiple First Aid Kit</English>
@@ -810,6 +874,7 @@
             <Finnish>(MFAK) Useita ensiapulaukkuja</Finnish>
             <Russian>(MFAK) Многофункциональная аптечка первой помощи</Russian>
             <Portuguese>(KPSM) Kit de Primeiros Socorros Múltiplo</Portuguese>
+            <Dutch>(MFAK) Meervoudige Eerste hulpkit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SubCategory_AFAK">
             <English>(AFAK) Advanced First Aid Kit</English>
@@ -820,6 +885,7 @@
             <Finnish>(AFAK) Edistyksellinen ensiapulaukku</Finnish>
             <Russian>(AFAK) Усовершенствованная аптечка первой помощи</Russian>
             <Portuguese>(KPSA) Kit de Primeiros Socorros Avançado</Portuguese>
+            <Dutch>(AFAK) Geadvanceerde Eerste hulpkit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container">
             <English>Items unload Container</English>
@@ -829,6 +895,7 @@
             <French>Conteneur de stockage des objets</French>
             <Finnish>Säiliö tavaroiden purkamiseen</Finnish>
             <Russian>Предметы выгружаются с контейнера</Russian>
+            <Dutch>Items ontlaad container</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_Container_DESC">
             <English>Defines where the items from the First Aid Kit are added into. If there is no space left they will be dropped on the ground. \n Default: Items are added where space is left. </English>
@@ -838,6 +905,7 @@
             <French>Définie où les objets de la trousse de secours seront ajoutés. S'il n'y a pas assez de place ils seront placés au sol.\n Par défaut : les objets sont rajoutés là où il reste de la place.</French>
             <Finnish>Määrittää, mihin ensiapulaukun tuotteet lisätään. jos tilaa ei ole jäljellä, ne pudotetaan maahan. \n Oletus: kohteet lisätään sinne, missä on vielä tilaa.</Finnish>
             <Russian>Определяет, куда складываются предметы из аптечки первой помощи. Если не останется свободного места, они будут брошены на землю. \n По умолчанию: Предметы добавляются туда, где осталось свободное место.</Russian>
+            <Dutch>Bepaald waar de items van een Eerste hulpkit worden geplaatst. Als er geen plek is, worden ze op de grond geplaatst. \n Standaard: Items worden geplaatst waar plek is.</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Default">
             <English>Default</English>
@@ -847,6 +915,7 @@
             <French>Par défaut</French>
             <Finnish>Oletus</Finnish>
             <Russian>По умолчанию</Russian>
+            <Dutch>Standaard</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Uniform">
             <English>Uniform</English>
@@ -856,6 +925,7 @@
             <French>Uniforme</French>
             <Finnish>Univormu</Finnish>
             <Russian>Униформа</Russian>
+            <Dutch>Uniform</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Vest">
             <English>Vest</English>
@@ -865,6 +935,7 @@
             <French>Veste</French>
             <Finnish>Liivi</Finnish>
             <Russian>Жилет</Russian>
+            <Dutch>Vest</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_Container_Backpack">
             <English>Backpack</English>
@@ -874,6 +945,7 @@
             <French>Sac à dos</French>
             <Finnish>Reppu</Finnish>
             <Russian>Рюкзак</Russian>
+            <Dutch>Rugzak</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ItemSlot_DESC">
             <English>The items &amp; quantity that is given to the player.\n If you want to add/change items remove existing entry &amp; insert item name-tag &amp; quantity you want. \n Example: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  TO  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</English>
@@ -883,6 +955,7 @@
             <French>Les objets et la quantité donnés aux joueurs.\n Si vous voulez ajouter/changer des objets, retirez l'entrée existante &amp; ajoutez le nom de l'objet &amp; la quantité désirée.\n Exemple : [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  TO  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</French>
             <Finnish>Pelaajalle annetut tuotteet ja määrä. \n Jos haluat lisätä/muuttaa kohteita, poista olemassa oleva merkintä ja lisää haluamasi nimikkeen nimilappu ja nimikemäärä. \n Esimerkki: [[`ACE_packingBandage`, 10].</Finnish>
             <Russian>Предметы и количество, которые выдаются игроку.\n Если вы хотите добавить / изменить предметы, удалите существующую запись и вставьте название предмета-тег и количество, которое вы хотите. \n Пример: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  В [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</Russian>
+            <Dutch>De items en de hoeveelheid dat gegeven wordt aan de speler. \n Als je items wilt toevoegen of veranderen, verwijder dan de bestaande entree en voeg item naam en de hoeveelheid die je wilt in. \n Voorbeeld: [['ACE_packingBandage', 10], ['ACE_quikclot', 15]]  NAAR  [['ACE_packingBandage', 10], ['ACE_quikclot', 15], ['ACE_Banana', 10]]</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FirstSlot_Item">
             <English>Trauma Section Items &amp; Quantity</English>
@@ -891,6 +964,7 @@
             <Japanese>外傷枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество травматологического раздела</Russian>
             <French>Objets et quantité de la section de traumatologie</French>
+            <Dutch>Trauma sectie items &amp; hoeveelheden</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SecondSlot_Item">
             <English>Bandage Section Items &amp; Quantity</English>
@@ -899,6 +973,7 @@
             <Japanese>包帯枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество в разделе бинтов</Russian>
             <French>Objets et quantité de la section de bandages</French>
+            <Dutch>Verbandssectie items &amp; hoeveelheden</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_ThirdSlot_Item">
             <English>Pain Management Section Items &amp; Quantity</English>
@@ -907,6 +982,7 @@
             <Japanese>鎮痛枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела обезболивающих</Russian>
             <French>Objets et quantité de la section de régulation de la douleur</French>
+            <Dutch>Pijnbestrijdingssectie items &amp; hoeveelheden</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FourthSlot_Item">
             <English>Breathing Section Items &amp; Quantity</English>
@@ -915,6 +991,7 @@
             <Japanese>呼吸枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела дыхательной системы</Russian>
             <French>Objets et quantité de la section d'articles respiratoires</French>
+            <Dutch>Ademhalingssectie items &amp; hoeveelheden</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FifthSlot_Item">
             <English>Airway Section Items &amp; Quantity</English>
@@ -923,6 +1000,7 @@
             <Japanese>気道枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела дыхательных путей</Russian>
             <French>Objets et quantité de la section des voies aériennes</French>
+            <Dutch>Luchtweg sectie items &amp; hoeveelheden</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SixthSlot_Item">
             <English>Pharmaceutical Section Items &amp; Quantity</English>
@@ -931,6 +1009,7 @@
             <Japanese>薬品枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела фармацевтики</Russian>
             <French>Objets et quantités de la section pharmaceutique</French>
+            <Dutch>Pharmaceutische sectie items &amp; hoeveelheden</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_SeventhSlot_Item">
             <English>Fluid Section Items &amp; Quantity</English>
@@ -939,6 +1018,7 @@
             <Japanese>輸液枠のアイテムと数量</Japanese>
             <Russian>Предметы и количество раздела жидкостей</Russian>
             <French>Objets et quantités de la section des fluides</French>
+            <Dutch>Vloeistofsectie items &amp; hoeveelheden</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EighthSlot_Item">
             <English>Miscellaneous Section Items &amp; Quantity</English>
@@ -947,6 +1027,7 @@
             <Japanese>雑多枠のアイテムと数量</Japanese>
             <Russian>Предметы и количества прочего раздела</Russian>
             <French>Objets et quantités de la section autres</French>
+            <Dutch>Overige sectie items &amp; hoeveelheden</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Display">
             <English>Individual First Aid Kit</English>
@@ -957,6 +1038,7 @@
             <Finnish>Yksilöllinen ensiapulaukku</Finnish>
             <Russian>Индивидуальная аптечка первой помощи</Russian>
             <Portuguese>Kit de Primeiros Socorros Individual</Portuguese>
+            <Dutch>Individuele Eerste hulpskit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_DESC">
             <English>The IFAK can be unpacked to provide useful medical items</English>
@@ -967,6 +1049,7 @@
             <Finnish>IFAK voidaan purkaa pakkauksesta hyödyllisten lääketieteellisten tarvikkeiden saamiseksi</Finnish>
             <Russian>IFAK можно распаковать, чтобы получить полезные медицинские принадлежности</Russian>
             <Portuguese>O KPSI pode ser desembalado para prover itens médicos úteis</Portuguese>
+            <Dutch>De IFAK kan uitgepakt worden om nuttige producten te verschaffen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Display">
             <English>Multiple First Aid Kit</English>
@@ -977,6 +1060,7 @@
             <Finnish>Useita ensiapulaukkuja</Finnish>
             <Russian>Многофункциональная аптечка первой помощи</Russian>
             <Portuguese>Kit de Primeiros Socorros Múltiplo</Portuguese>
+            <Dutch>Meervoudige Eerste hulpskit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_DESC">
             <English>The MFAK can be unpacked to provide useful medical items</English>
@@ -987,6 +1071,7 @@
             <Finnish>MFAK voidaan purkaa pakkauksesta hyödyllisten lääketieteellisten tarvikkeiden saamiseksi</Finnish>
             <Russian>MFAK можно распаковать, чтобы получить полезные медицинские принадлежности</Russian>
             <Portuguese>O KPSM pode ser desembalado para prover itens médicos úteis</Portuguese>
+            <Dutch>De MFAK kan uitgepakt worden om nuttige producten te verschaffen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Display">
             <English>Advanced First Aid Kit</English>
@@ -997,6 +1082,7 @@
             <Finnish>Edistyksellinen ensiapulaukku</Finnish>
             <Russian>Усовершенствованная аптечка первой помощи</Russian>
             <Portuguese>Kit de Primeiros Socorros Avançado</Portuguese>
+            <Dutch>Geadvanceerde Eerste hulpskit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_DESC">
             <English>The AFAK can be unpacked to provide useful medical items</English>
@@ -1007,6 +1093,7 @@
             <Finnish>AFAK voidaan purkaa pakkauksestaan hyödyllisten lääketieteellisten tarvikkeiden saamiseksi</Finnish>
             <Russian>AFAK можно распаковать, чтобы получить полезные медицинские принадлежности</Russian>
             <Portuguese>O KPSA pode ser desembalado para prover itens médicos úteis</Portuguese>
+            <Dutch>de AFAK kan uitgepakt worden om nuttige producten te verschaffen</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_IFAK_Unpack">
             <English>IFAK</English>
@@ -1017,6 +1104,7 @@
             <Finnish>IFAK</Finnish>
             <Russian>IFAK</Russian>
             <Portuguese>KPSI</Portuguese>
+            <Dutch>IFAK</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_MFAK_Unpack">
             <English>MFAK</English>
@@ -1027,6 +1115,7 @@
             <Finnish>MFAK</Finnish>
             <Russian>MFAK</Russian>
             <Portuguese>KPSM</Portuguese>
+            <Dutch>MFAK</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_AFAK_Unpack">
             <English>AFAK</English>
@@ -1037,6 +1126,7 @@
             <Finnish>AFAK</Finnish>
             <Russian>AFAK</Russian>
             <Portuguese>KPSA</Portuguese>
+            <Dutch>AFAK</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_DisplayItems">
             <English>View Packing List</English>
@@ -1046,6 +1136,7 @@
             <Russian>Просмотреть упаковочный лист</Russian>
             <French>Voir la liste de remplissage</French>
             <Portuguese>Ver lista</Portuguese>
+            <Dutch>Zie paklijst</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Hint">
             <English>Trauma Section:</English>
@@ -1055,6 +1146,7 @@
             <Russian>Раздел травм:</Russian>
             <French>Section de traumatologie :</French>
             <Portuguese>Seção de trauma:</Portuguese>
+            <Dutch>Trauma sectie:</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Hint">
             <English>Bandage Section:</English>
@@ -1064,6 +1156,7 @@
             <Russian>Раздел перевязок:</Russian>
             <French>Section de bandages :</French>
             <Portuguese>Seção de bandagens:</Portuguese>
+            <Dutch>Verbandssectie:</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Hint">
             <English>Pain Management Section:</English>
@@ -1073,6 +1166,7 @@
             <Russian>Раздел обезбаливающих:</Russian>
             <French>Section de régulation de la douleur :</French>
             <Portuguese>Seção de gerenciamento de dor:</Portuguese>
+            <Dutch>Pijnbestrijdingssectie:</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Hint">
             <English>Breathing Section:</English>
@@ -1082,6 +1176,7 @@
             <Russian>Раздел дыхательной системы:</Russian>
             <French>Section d'articles respiratoires :</French>
             <Portuguese>Seção de respiração:</Portuguese>
+            <Dutch>Ademhalingssectie:</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Hint">
             <English>Airway Section:</English>
@@ -1091,6 +1186,7 @@
             <Russian>Раздел дыхательных путей:</Russian>
             <French>Section des voies aériennes :</French>
             <Portuguese>Seção de vias aéreas:</Portuguese>
+            <Dutch>Luchtweg sectie:</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Hint">
             <English>Pharmaceutical Section:</English>
@@ -1100,6 +1196,7 @@
             <Russian>Раздел фармацевтики:</Russian>
             <French>Section pharmaceutique :</French>
             <Portuguese>Seção farmacêutica:</Portuguese>
+            <Dutch>Pharmaceutische sectie:</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Hint">
             <English>Fluid Section:</English>
@@ -1109,6 +1206,7 @@
             <Russian>Раздел жидкостей:</Russian>
             <French>Section des fluides :</French>
             <Portuguese>Seção de flúidos:</Portuguese>
+            <Dutch>Vloeistofsectie:</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Hint">
             <English>Miscellaneous Section:</English>
@@ -1118,6 +1216,7 @@
             <Russian>Раздел прочего:</Russian>
             <French>Sections autres :</French>
             <Portuguese>Seção miscelânea:</Portuguese>
+            <Dutch>Overige sectie:</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1">
             <English>Unpack Trauma Section</English>
@@ -1127,6 +1226,7 @@
             <Russian>Распаковать раздел травм</Russian>
             <French>Déballer la section de traumatologie</French>
             <Portuguese>Descompactar seção de trauma</Portuguese>
+            <Dutch>Pak trauma sectie uit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2">
             <English>Unpack Bandage Section</English>
@@ -1136,6 +1236,7 @@
             <Russian>Распаковать раздел перевязок</Russian>
             <French>Déballer la section de bandages</French>
             <Portuguese>Descompactar seção de bandagem</Portuguese>
+            <Dutch>Pak verbandssectie uit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3">
             <English>Unpack Pain Management Section</English>
@@ -1145,6 +1246,7 @@
             <Russian>Распаковать раздел обезбаливающих</Russian>
             <French>Déballer la section de régulation de la douleur</French>
             <Portuguese>Descompactar seção de gerenciamento de dor</Portuguese>
+            <Dutch>Pak pijnbestrijdingssectie uit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4">
             <English>Unpack Breathing Section</English>
@@ -1154,6 +1256,7 @@
             <Russian>Распаковать разде дыхательной системы</Russian>
             <French>Déballer la section d'articles respiratoires</French>
             <Portuguese>Descompactar seção de respiração</Portuguese>
+            <Dutch>Pak ademhalingssectie uit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5">
             <English>Unpack Airway Section</English>
@@ -1163,6 +1266,7 @@
             <Russian>Распаковать раздел дыхательных путей</Russian>
             <French>Déballer la section des voies aériennes</French>
             <Portuguese>Descompactar seção de vias aéreas</Portuguese>
+            <Dutch>Pak luchtweg sectie uit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6">
             <English>Unpack Pharmaceutical Section</English>
@@ -1172,6 +1276,7 @@
             <Russian>Распаковатьраздел фармацевтики</Russian>
             <French>Déballer la section pharmaceutique</French>
             <Portuguese>Descompactar seção farmacêutica</Portuguese>
+            <Dutch>Pak pharmaceutische sectie uit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7">
             <English>Unpack Fluid Section</English>
@@ -1181,6 +1286,7 @@
             <Russian>Распаковать раздел жидкостей</Russian>
             <French>Déballer la section des fluides</French>
             <Portuguese>Descompactar seção de fluidos</Portuguese>
+            <Dutch>Pak vloeistoffen sectie uit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8">
             <English>Unpack Miscellaneous Section</English>
@@ -1190,6 +1296,7 @@
             <Russian>Распаковать раздел прочего</Russian>
             <French>Déballer la section autres</French>
             <Portuguese>Descompactar seção miscelânea</Portuguese>
+            <Dutch>Pak overige sectie uit</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Repack">
             <English>Repack Trauma Section</English>
@@ -1199,6 +1306,7 @@
             <Russian>Перепаковать раздел травм</Russian>
             <French>Remballer la section de traumatologie</French>
             <Portuguese>Compactar seção de trauma</Portuguese>
+            <Dutch>Herpak trauma sectie</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Repack">
             <English>Repack Bandage Section</English>
@@ -1208,6 +1316,7 @@
             <Russian>Перепаковать раздел перевязок</Russian>
             <French>Remballer la section de bandages</French>
             <Portuguese>Compactar seção de bandagem</Portuguese>
+            <Dutch>Herpak verbandssectie</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Repack">
             <English>Repack Pain Management Section</English>
@@ -1217,6 +1326,7 @@
             <Russian>Перепаковать раздел обезбаливающих</Russian>
             <French>Remballer la section de régulation de la douleur</French>
             <Portuguese>Compactar seção de gerenciamento de dor</Portuguese>
+            <Dutch>Herpack pijnbestrijdingssectie</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Repack">
             <English>Repack Breathing Section</English>
@@ -1226,6 +1336,7 @@
             <Russian>Перепаковать раздел дыхательной системы</Russian>
             <French>Remballer la section d'articles respiratoires</French>
             <Portuguese>Compactar seção de respiração</Portuguese>
+            <Dutch>Herpack ademhalingssectie</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Repack">
             <English>Repack Airway Section</English>
@@ -1235,6 +1346,7 @@
             <Russian>Перепаковать раздел дыхательных путей</Russian>
             <French>Remballer la section des voies aériennes</French>
             <Portuguese>Compactar seção de vias aéreas</Portuguese>
+            <Dutch>Herpack luchtweg sectie</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Repack">
             <English>Repack Pharmaceutical Section</English>
@@ -1244,6 +1356,7 @@
             <Russian>Перепаковать раздел фармацевтики</Russian>
             <French>Remballer la section pharmaceutique</French>
             <Portuguese>Compactar seção farmacêutica</Portuguese>
+            <Dutch>Herpak pharmaceutische sectie</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Repack">
             <English>Repack Fluid Section</English>
@@ -1253,6 +1366,7 @@
             <Russian>Перепаковать раздел жидкостей</Russian>
             <French>Remballer la section des fluides</French>
             <Portuguese>Compactar seção de fluidos</Portuguese>
+            <Dutch>Herpak vloeistoffen sectie</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Repack">
             <English>Repack Miscellaneous Section</English>
@@ -1262,6 +1376,7 @@
             <Russian>Перепаковать раздел прочего</Russian>
             <French>Remballer la section autres</French>
             <Portuguese>Compactar seção miscelânea</Portuguese>
+            <Dutch>Herpak overige sectie</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor">
             <English>Hint Item Color</English>
@@ -1270,6 +1385,7 @@
             <Japanese>ヒントのアイテムの文字色</Japanese>
             <Russian>Подсказка по цвету элемента</Russian>
             <French>Couleur d'indice de l'objet</French>
+            <Dutch>kleur van itemhint</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor_DESC">
             <English>The item color of the text that is displayed via a hint</English>
@@ -1278,6 +1394,7 @@
             <Japanese>ヒントで表示されるポケット内アイテムの文章の文字色</Japanese>
             <Russian>Цвет элемента текста, отображаемого с помощью подсказки</Russian>
             <French>La couleur de l'objet du texte affiché via un indice</French>
+            <Dutch>De kleur van de tekstitem die weergeven wordt via een hint</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor">
             <English>Hint Section Color</English>
@@ -1286,6 +1403,7 @@
             <Japanese>ヒントの種類枠の文字色</Japanese>
             <Russian>Цвет раздела подсказок</Russian>
             <French>Couleur d'indice de la section</French>
+            <Dutch>Hint sectie kleur</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_SlotColor_DESC">
             <English>The Section color of the text that is displayed via a hint</English>
@@ -1294,6 +1412,7 @@
             <Japanese>ヒントで表示されるポケット種類枠の文章の文字色</Japanese>
             <Russian>Цвет раздела текста, отображаемого с помощью подсказки</Russian>
             <French>La couleur de la section du texte affiché via un indice</French>
+            <Dutch>De kleur van de sectie die weergeven wordt met een hint</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_RemoveWhenEmpty">
             <English>Remove when empty</English>
@@ -1303,6 +1422,7 @@
             <French>Retirer lorsque vide</French>
             <Finnish>Poista tyhjänä</Finnish>
             <Russian>Удалить, когда опустеет</Russian>
+            <Dutch>Verwijder wanneer leeg</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_CarryPatient">
             <English>Carry Patient</English>
@@ -1314,6 +1434,7 @@
             <Spanish>Portar paciente</Spanish>
             <Finnish>Kanna potilasta</Finnish>
             <Russian>Нести пациента</Russian>
+            <Dutch>Draag patiënt</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_CancelCarrying">
             <English>Cancel Carrying</English>
@@ -1325,6 +1446,7 @@
             <Spanish>Soltar paciente</Spanish>
             <Finnish>Peruuta potilaan kuljettaminen</Finnish>
             <Russian>Прекратить нести</Russian>
+            <Dutch>Dragen annuleren</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_StoppedCarrying%1">
             <English>Stopped carrying %1</English>
@@ -1336,6 +1458,7 @@
             <Spanish>Solto al paciente %1</Spanish>
             <Finnish>Lakkasi kantamisen %1</Finnish>
             <Russian>Прекратил нести %1</Russian>
+            <Dutch>Gestopt met het dragen van %1</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_Use_SurgicalKitFullBody">
             <English>Use Surgical Kit (Full Body)</English>
@@ -1344,6 +1467,7 @@
             <Spanish>Utilizar kit quirúrgico (cuerpo completo)</Spanish>
             <French>Utiliser la trousse chirurgicale (Corps complet)</French>
             <Portuguese>Utilizar kit cirúrgico (corpo inteiro)</Portuguese>
+            <Dutch>Gebruik chirurgische kit (volledig lichaam)</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody">
             <English>Enable Full Body Stitching</English>
@@ -1351,6 +1475,7 @@
             <Spanish>Habilitar Cosido en el Cuerpo Completo</Spanish>
             <Japanese>全身縫合を有効化</Japanese>
             <French>Activer la suture complète du corps</French>
+            <Dutch>Schakel hechten van het volledige lichaam in</Dutch>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_EnableStitchFullBody_DESC">
             <English>Adds a full-body stitching option alongside the individual body part stitching, using ACE's established settings and values for consistency</English>
@@ -1358,6 +1483,7 @@
             <Spanish>Añade la opción de coser el cuerpo al completo junto al cosido de partes del cuerpo individuales, usando los valores establecidos en ACE y sus valores, para que sea consistente</Spanish>
             <Japanese>身体部位毎に縫合するアクションに加え、ACEの設定値と同様の動きを保ったままの、全身を一括で縫合するオプションを追加します。</Japanese>
             <French>Ajoute une option de suture complète du corps à côté de la suture de chaque partie du corps, en utilisant les paramètres et les valeurs établis par ACE pour plus de cohérence</French>
+            <Dutch>Voegt een hechtingsactie toe voor het gehele lichaam, naast de standaard individuele hechtingsopties, die de waarden en instellingen van ACE gebruikt voor consistentie</Dutch>
         </Key>
     </Package>
 </Project>
