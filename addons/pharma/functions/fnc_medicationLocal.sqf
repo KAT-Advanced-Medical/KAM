@@ -40,15 +40,12 @@ if !(ACEGVAR(medical_treatment,advancedMedication)) exitWith {
                 [QACEGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
             };
 
-            [_patient, -0.15] call FUNC(alphaAction);
         };
         case "EpinephrineIV": {
             private _sedated = _patient getVariable [QEGVAR(surgery,sedated), false];
             if !(_sedated) then {
                 [QACEGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
             };
-
-            [_patient, -0.30] call FUNC(alphaAction);
         };
     };
 };
@@ -109,10 +106,6 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 
 // Check for medication compatiblity
 [_patient, _className, _maxDose, _maxDoseDeviation, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
-
-//Change Alpha Factor
-[_patient, _alphaFactor] call FUNC(alphaAction);
-
 
 if (_className in ["Lorazepam","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
     [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
