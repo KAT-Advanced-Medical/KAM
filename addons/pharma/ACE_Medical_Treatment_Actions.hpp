@@ -483,7 +483,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_TXA);
         treatmentTime = QGVAR(treatmentTime_TXA);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_txa_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -502,7 +501,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_norepinephrine);
         treatmentTime = QGVAR(treatmentTime_norepinephrine);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_norepinephrine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -521,7 +519,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_phenylephrine);
         treatmentTime = QGVAR(treatmentTime_phenylephrine);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_phenylephrine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -540,7 +537,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_nitroglycerin);
         treatmentTime = QGVAR(treatmentTime_nitroglycerin);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_nitroglycerin_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -559,7 +555,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_amiodarone);
         treatmentTime = QGVAR(treatmentTime_amiodarone);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_amiodarone_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -597,7 +592,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_atropine);
         treatmentTime = QGVAR(treatmentTime_atropine);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_atropine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -616,7 +610,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_ketamine);
         treatmentTime = QGVAR(treatmentTime_ketamine);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_ketamine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -636,7 +629,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_fentanyl);
         treatmentTime = QGVAR(treatmentTime_fentanyl);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_fentanyl_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -655,7 +647,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_nalbuphine);
         treatmentTime = QGVAR(treatmentTime_nalbuphine);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_nalbuphine_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -675,7 +666,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_lorazepam);
         treatmentTime = QGVAR(treatmentTime_lorazepam);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_lorazepam_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -696,7 +686,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_flumazenil);
         treatmentTime = QGVAR(treatmentTime_flumazenil);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_flumazenil_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -717,7 +706,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_etomidate);
         treatmentTime = QGVAR(treatmentTime_etomidate);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_etomidate_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
@@ -737,7 +725,6 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_epinephrineIV);
         treatmentTime = QGVAR(treatmentTime_epinephrineIV);
-        condition = QUOTE(!(GVAR(MedicationsRequireInsIV)) || FUNC(removeIV));
         items[] = {"kat_syringe_epinephrineIV_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
