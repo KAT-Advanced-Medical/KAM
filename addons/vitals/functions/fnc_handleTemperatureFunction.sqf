@@ -27,7 +27,7 @@ _positionTemperature params ["_lattitude", "_projectedTemperature"];
 // Diurnal Width increases as lattitudes increase, generally
 private _mapTemperature = _projectedTemperature - ((linearConversion [0, 90, _lattitude, 15, 5, true]) * (linearConversion [0, 1, sunOrMoon, 1, 0, true]));
 
-private _warmingImpact = (_unit getVariable [QEGVAR(hypothermia,warmingImpact), 0]) / ML_TO_LITERS; 
+private _warmingImpact = (_unit getVariable [QEGVAR(hypothermia,warmingImpact), 0]) / ML_TO_LITERS;
 private _pointTemperature = -3.5 * (0.95 ^ _mapTemperature + _altitudeAdjustment);
 private _currentTemperature = DEFAULT_TEMPERATURE min (((-0.3392 * (_bloodVolume^2)) + (6.00357 * _bloodVolume) + (13.3 + _warmingImpact - (_pointTemperature / 20))));
 
