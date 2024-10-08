@@ -41,7 +41,7 @@ private _temperature = 37;
 private _baroPressure = 760;
 
 if (EGVAR(hypothermia,hypothermiaActive)) then {
-    // Enviromental Impact (Altitude, Temperature, Pressure) 
+    // Enviromental Impact (Altitude, Temperature, Pressure)
     private _altitude = (getPosASL _unit) select 2;
     private _altitudeTempImpact = switch (true) do {
         case (_altitude >= 10): { abs(_altitude/153) * -1 }; //For every 1000 meters of elevation gain, temperature decreases by ~6.5 degrees celsius
@@ -50,7 +50,7 @@ if (EGVAR(hypothermia,hypothermiaActive)) then {
     };
 
     _baroPressure = 760 * exp((-(_altitude)) / 8400);
-    _temperature = [_unit, _altitudeTempImpact, _bloodVolume, _deltaT, _syncValues] call FUNC(handleTemperatureFunction); 
+    _temperature = [_unit, _altitudeTempImpact, _bloodVolume, _deltaT, _syncValues] call FUNC(handleTemperatureFunction);
 };
 
 // Set variables for synchronizing information across the net

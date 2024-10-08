@@ -20,6 +20,12 @@
 params ["_unit", "_target"];
 TRACE_2("params",_unit,_target);
 
+// If in ViV cargo, unload it first
+// Warn user if it failed to unload (shouldn't happen)
+if (!isNull isVehicleCargo _target && {!(objNull setVehicleCargo _target)}) then {
+    WARNING_1("ViV Unload Failed %1",_target);
+};
+
 // Get attachTo offset and direction
 private _position = _target getVariable [QACEGVAR(dragging,carryPosition), [0, 0, 0]];
 private _direction = _target getVariable [QACEGVAR(dragging,carryDirection), 0];
@@ -47,9 +53,6 @@ if (_target isKindOf "CAManBase") then {
 
 [QACEGVAR(common,setDir), [_target, _direction], _target] call CBA_fnc_targetEvent;
 
-_unit setVariable [QACEGVAR(dragging,isCarrying), true, true];
-_unit setVariable [QACEGVAR(dragging,carriedObject), _target, true];
-
 // Add drop action
 _unit setVariable [QACEGVAR(dragging,releaseActionID), [
     _unit, "DefaultAction",
@@ -60,19 +63,18 @@ _unit setVariable [QACEGVAR(dragging,releaseActionID), [
 // Add anim changed EH
 [_unit, "AnimChanged", ACEFUNC(dragging,handleAnimChanged), [_unit]] call CBA_fnc_addBISEventHandler;
 
-// Check everything
-[ACEFUNC(dragging,carryObjectPFH), 0.5, [_unit, _target, CBA_missionTime]] call CBA_fnc_addPerFrameHandler;
-
-// Reset current dragging height
-ACEGVAR(dragging,currentHeightChange) = 0;
-
 // Prevent UAVs from firing
 private _UAVCrew = _target call ACEFUNC(common,getVehicleUAVCrew);
 
 if (_UAVCrew isNotEqualTo []) then {
     {
-        _target deleteVehicleCrew _x;
+        [_x, true] call ACEFUNC(common,disableAiUAV);
     } forEach _UAVCrew;
 
-    _target setVariable [QACEGVAR(dragging,isUAV), true, true];
+    _target setVariable [QACEGVAR(dragging,isUAV), _UAVCrew, true];
 };
+
+// Check everything
+[ACEFUNC(cdragging,carryObjectPFH), 0.5, [_unit, _target, CBA_missionTime]] call CBA_fnc_addPerFrameHandler;
+
+[QACEGVAR(dragging,startedCarry), [_unit, _target]] call CBA_fnc_localEvent;

@@ -70,20 +70,22 @@ if (GVAR(allowSharedVehicleEquipment) > 0 && _vehicleCondition) then {
 
 {
     private _origin = _x;
-    if(_forEachIndex != _vehicleIndex) then { // Remove unit item
+    if (_forEachIndex != _vehicleIndex) then { // Remove unit item
         private _originItems = [_origin, 0] call ACEFUNC(common,uniqueItems); // Item
         {
             if (_x in _originItems) then {
                 _origin removeItem _x;
-                [_origin, _x] breakOut "Main";
+                [_origin, _x, true] breakOut "Main";
             };
         } forEach _items;
 
         _originItems = [_origin, 2] call ACEFUNC(common,uniqueItems); // Magazine
         {
             if (_x in _originItems) then {
+                private _magsStart = count magazines _unit;
                 [_origin, _x] call ACEFUNC(common,adjustMagazineAmmo);
-                [_origin, _x] breakOut "Main";
+                 private _magsEnd = count magazines _unit;
+                [_unit, _x, (_magsEnd < _magsStart)] breakOut "Main";
             };
         } forEach _items;
     } else { // Remove vehicle item
@@ -91,7 +93,7 @@ if (GVAR(allowSharedVehicleEquipment) > 0 && _vehicleCondition) then {
         {
             if (_x in _originItems) then {
                 _origin addItemCargoGlobal [_x, -1];
-                [_origin, _x] breakOut "Main";
+                [_origin, _x, false] breakOut "Main";
             };
         } forEach _items;
 
@@ -99,7 +101,7 @@ if (GVAR(allowSharedVehicleEquipment) > 0 && _vehicleCondition) then {
         {
             if (_x in _originItems) then {
                 [_origin, _x] call ACEFUNC(common,adjustMagazineAmmo);
-                [_origin, _x] breakOut "Main";
+                [_origin, _x, false] breakOut "Main";
             };
         } forEach _items;
     };
