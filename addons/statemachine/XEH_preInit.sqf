@@ -6,7 +6,7 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_CAT "KAT - ADV Medical: States"
+#define CBA_SETTINGS_CAT "KAT - ADV Medical: Advanced States"
 
 //Enable transitions to seizure state
 [
