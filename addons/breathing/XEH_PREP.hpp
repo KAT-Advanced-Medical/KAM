@@ -15,7 +15,6 @@ PREP(inflictAdvancedPneumothorax);
 PREP(init);
 PREP(inspectChest);
 PREP(listenLungs);
-PREP(lowSpO2pp);
 PREP(refillOxygenTank);
 PREP(treatmentAdvanced_chestSeal);
 PREP(treatmentAdvanced_chestSealLocal);

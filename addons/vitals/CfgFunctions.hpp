@@ -5,6 +5,9 @@ class CfgFunctions {
             class hasStableVitals {
                 file = QPATHTOF(functions\fnc_hasStableVitals.sqf);
             };
+            class addMedicationAdjustment {
+                file = QPATHTOF(functions\fnc_addMedicationAdjustment.sqf);
+            };
         };
     };
     class overwrite_ace_medical_vitals {

@@ -92,94 +92,117 @@
         <Key ID="STR_KAT_GUI_HeadCover">
             <English>HEAD - NO LINE</English>
             <Dutch>HOOFD - GEEN LIJN</Dutch>
+            <Spanish>CABEZA - SIN LINEA</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_ChestCover">
             <English>CHEST - NO LINE</English>
             <Dutch>TORSO - GEEN LIJN</Dutch>
+            <Spanish>TORSO - SIN LINEA</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_RArmCover">
             <English>RIGHT ARM - NO LINE</English>
             <Dutch>RECHTERARM - GEEN LIJN</Dutch>
+            <Spanish>BRAZO DERECHO - SIN LINEA</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_LArmCover">
             <English>LEFT ARM - NO LINE</English>
             <Dutch>LINKERARM - GEEN LIJN</Dutch>
+            <Spanish>BRAZO IZQUIERDO - SIN LINEA</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_RLegCover">
             <English>RIGHT LEG - NO LINE</English>
             <Dutch>RECHTERBEEN - GEEN LIJN</Dutch>
+            <Spanish>PIERNA DERECHA - SIN LINEA</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_LLegCover">
             <English>LEFT LEG - NO LINE</English>
             <Dutch>LINKERBEEN - GEEN LIJN</Dutch>
+            <Spanish>PIERNA IZQUIERDA - SIN LINEA</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_IVFlowTitle">
             <English>IV Flow Control</English>
             <Dutch>IV-Stroomregeling</Dutch>
+            <Spanish>Control de Flujo IV</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_ABGTitle">
             <English>ABG Results</English>
             <Dutch>ABG resultaten</Dutch>
+            <Spanish>Resultados ABG</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_IVValue">
             <English>0.0</English>
             <Dutch>0.0</Dutch>
+            <Spanish>0.0</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_HeadTitle">
             <English>Head</English>
             <Dutch>Hoofd</Dutch>
+            <Spanish>Cabeza</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_HeadType">
             <English>IV</English>
             <Dutch>IV</Dutch>
+            <Spanish>IV</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_ChestTitle">
             <English>Chest</English>
             <Dutch>Torso</Dutch>
+            <Spanish>Torso</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_ChestType">
             <English>IV</English>
             <Dutch>IV</Dutch>
+            <Spanish>IV</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_LArmTitle">
             <English>LA</English>
             <Dutch>LA</Dutch>
+            <Spanish>BI</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_LArmType">
             <English>IV</English>
             <Dutch>IV</Dutch>
+            <Spanish>IV</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_RArmTitle">
             <English>RA</English>
             <Dutch>RA</Dutch>
+            <Spanish>BD</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_RArmType">
             <English>IV</English>
             <Dutch>IV</Dutch>
+            <Spanish>IV</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_LLegTitle">
             <English>LL</English>
             <Dutch>LB</Dutch>
+            <Spanish>PI</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_LLegType">
             <English>IV</English>
             <Dutch>IV</Dutch>
+            <Spanish>IV</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_RLegTitle">
             <English>RL</English>
             <Dutch>RB</Dutch>
+            <Spanish>PD</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_RLegType">
             <English>IV</English>
             <Dutch>IV</Dutch>
+            <Spanish>IV</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_BGBlank">
             <English>--.-</English>
             <Dutch>--.-</Dutch>
+            <Spanish>--.-</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_TestReset">
             <English>Reset</English>
             <Dutch>Reset</Dutch>
+            <Spanish>Restaurar</Spanish>
         </Key>
         <Key ID="STR_KAT_GUI_SyringeTitle">
             <English>Syringe Preparation</English>
