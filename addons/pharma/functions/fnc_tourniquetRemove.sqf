@@ -41,7 +41,7 @@ TRACE_1("clearConditionCaches: tourniquetRemove",_nearPlayers);
 [QACEGVAR(interact_menu,clearConditionCaches), [], _nearPlayers] call CBA_fnc_targetEvent;
 
 // Add tourniquet item to medic or patient
-if (_medic call ACEEFUNC(common,isPlayer)) then {
+if (_medic call ACEFUNC(common,isPlayer)) then {
     private _receiver = [_patient, _medic, _medic] select ACEGVAR(medical_treatment,allowSharedEquipment);
     [_receiver, "ACE_tourniquet"] call ACEFUNC(common,addToInventory);
 } else {
