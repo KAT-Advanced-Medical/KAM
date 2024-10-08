@@ -335,7 +335,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             maxRelief = 0.6;
         };
-        class syringe_kat_txa_5ml_1 {
+        class syringe_txa_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -347,7 +347,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_txa_5ml_3 {
+        class syringe_txa_5ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -359,7 +359,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_txa_10ml_1 {
+        class syringe_txa_10ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -371,7 +371,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_txa_10ml_3 {
+        class syringe_txa_10ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -383,7 +383,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_eaca_5ml_1 {
+        class syringe_eaca_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -395,7 +395,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_eaca_5ml_3 {
+        class syringe_eaca_5ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -407,7 +407,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_epinephrineIV_5ml_1 {
+        class syringe_epinephrineIV_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {15, 30};
             hrIncreaseNormal[] = {10, 40};
@@ -420,7 +420,7 @@ class ACE_ADDON(Medical_Treatment) {
             alphaFactor = -0.3;
             onOverDose = "";
         };
-        class syringe_kat_norepinephrine_5ml_1 {
+        class syringe_norepinephrine_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 5};
             hrIncreaseNormal[] = {5, 15};
@@ -433,7 +433,7 @@ class ACE_ADDON(Medical_Treatment) {
             alphaFactor = -0.3;
             onOverDose = "";
         };
-        class syringe_kat_phenylephrine_5ml_1 {
+        class syringe_phenylephrine_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {-5, -10};
             hrIncreaseNormal[] = {-10, -15};
@@ -447,7 +447,7 @@ class ACE_ADDON(Medical_Treatment) {
             alphaFactor = -0.5;
             onOverDose = "";
         };
-        class syringe_kat_nitroglycerin_5ml_1 {
+        class syringe_nitroglycerin_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {5, 10};
             hrIncreaseNormal[] = {10, 15};
@@ -461,7 +461,7 @@ class ACE_ADDON(Medical_Treatment) {
             alphaFactor = 0.3;
             onOverDose = "";
         };
-        class syringe_kat_fentanyl_5ml_1 {
+        class syringe_fentanyl_5ml_1 {
             painReduce = 0.8;
             hrIncreaseLow[] = {-10, -5};
             hrIncreaseNormal[] = {-15, -10};
@@ -475,7 +475,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.2;
         };
-        class syringe_kat_ketamine_5ml_1 {
+        class syringe_ketamine_5ml_1 {
             painReduce = 0.7;
             hrIncreaseLow[] = {5, 10};
             hrIncreaseNormal[] = {10, 15};
@@ -488,7 +488,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 10;
             onOverDose = "";
         };
-        class syringe_kat_nalbuphine_5ml_1 {
+        class syringe_nalbuphine_5ml_1 {
             painReduce = 0.5;
             hrIncreaseLow[] = {-5, 0};
             hrIncreaseNormal[] = {-10, -5};
@@ -502,7 +502,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.1;
         };
-        class syringe_kat_atropine_5ml_1 {
+        class syringe_atropine_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {20, 40};
             hrIncreaseNormal[] = {10, 25};
@@ -514,7 +514,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_amiodarone_5ml_1 {
+        class syringe_amiodarone_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -526,7 +526,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_lidocaine_5ml_1 {
+        class syringe_lidocaine_5ml_1 {
             painReduce = 0.2;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -539,7 +539,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             maxRelief = 0.6;
         };
-        class syringe_kat_etomidate_5ml_1 {
+        class syringe_etomidate_5ml_1 {
             painReduce = 0.4;
             hrIncreaseLow[] = {-10, -5};
             hrIncreaseNormal[] = {-15, -20};
@@ -551,7 +551,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_flumazenil_5ml_1 {
+        class syringe_flumazenil_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -563,7 +563,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_lorazepam_5ml_1 {
+        class syringe_lorazepam_5ml_1 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -575,7 +575,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -15;
             onOverDose = "";
         };
-        class syringe_kat_epinephrineIV_5ml_3 {
+        class syringe_epinephrineIV_5ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {25, 40};
             hrIncreaseNormal[] = {20, 50};
@@ -588,7 +588,7 @@ class ACE_ADDON(Medical_Treatment) {
             alphaFactor = -0.4;
             onOverDose = "";
         };
-        class syringe_kat_norepinephrine_5ml_3 {
+        class syringe_norepinephrine_5ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 10};
             hrIncreaseNormal[] = {10, 15};
@@ -601,7 +601,7 @@ class ACE_ADDON(Medical_Treatment) {
             alphaFactor = -0.4;
             onOverDose = "";
         };
-        class syringe_kat_phenylephrine_5ml_3 {
+        class syringe_phenylephrine_5ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {-15, -5};
             hrIncreaseNormal[] = {-15, -25};
@@ -615,7 +615,7 @@ class ACE_ADDON(Medical_Treatment) {
             alphaFactor = -0.7;
             onOverDose = "";
         };
-        class syringe_kat_nitroglycerin_5ml_3 {
+        class syringe_nitroglycerin_5ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {5, 15};
             hrIncreaseNormal[] = {10, 20};
@@ -629,7 +629,7 @@ class ACE_ADDON(Medical_Treatment) {
             alphaFactor = 0.5;
             onOverDose = "";
         };
-        class syringe_kat_fentanyl_5ml_3 {
+        class syringe_fentanyl_5ml_3 {
             painReduce = 1;
             hrIncreaseLow[] = {-15, -10};
             hrIncreaseNormal[] = {-25, -15};
@@ -643,7 +643,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.5;
         };
-        class syringe_kat_ketamine_5ml_3 {
+        class syringe_ketamine_5ml_3 {
             painReduce = 0.8;
             hrIncreaseLow[] = {5, 15};
             hrIncreaseNormal[] = {10, 20};
@@ -656,7 +656,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 10;
             onOverDose = "";
         };
-        class syringe_kat_nalbuphine_5ml_3 {
+        class syringe_nalbuphine_5ml_3 {
             painReduce = 0.6;
             hrIncreaseLow[] = {-10, 0};
             hrIncreaseNormal[] = {-15, -5};
@@ -670,7 +670,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.2;
         };
-        class syringe_kat_atropine_5ml_3 {
+        class syringe_atropine_5ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {20, 40};
             hrIncreaseNormal[] = {10, 25};
@@ -682,7 +682,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_amiodarone_5ml_3 {
+        class syringe_amiodarone_5ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0, 0};
             hrIncreaseNormal[] = {0, 0, 0};
@@ -694,7 +694,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_lidocaine_5ml_3 {
+        class syringe_lidocaine_5ml_3 {
             painReduce = 0.3;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -707,7 +707,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             maxRelief = 0.6;
         };
-        class syringe_kat_etomidate_5ml_3 {
+        class syringe_etomidate_5ml_3 {
             painReduce = 0.4;
             hrIncreaseLow[] = {-10, -5};
             hrIncreaseNormal[] = {-15, -20};
@@ -719,7 +719,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_flumazenil_5ml_3 {
+        class syringe_flumazenil_5ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -731,7 +731,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 0;
             onOverDose = "";
         };
-        class syringe_kat_lorazepam_5ml_3 {
+        class syringe_lorazepam_5ml_3 {
             painReduce = 0;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};
@@ -743,7 +743,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -15;
             onOverDose = "";
         };
-        class syringe_kat_fentanyl_10ml_1 {
+        class syringe_fentanyl_10ml_1 {
             painReduce = 0.8;
             hrIncreaseLow[] = {-10, -5};
             hrIncreaseNormal[] = {-15, -10};
@@ -757,7 +757,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.3;
         };
-        class syringe_kat_ketamine_10ml_1 {
+        class syringe_ketamine_10ml_1 {
             painReduce = 0.7;
             hrIncreaseLow[] = {5, 10};
             hrIncreaseNormal[] = {10, 15};
@@ -770,7 +770,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 10;
             onOverDose = "";
         };
-        class syringe_kat_nalbuphine_10ml_1 {
+        class syringe_nalbuphine_10ml_1 {
             painReduce = 0.5;
             hrIncreaseLow[] = {-5, 0};
             hrIncreaseNormal[] = {-10, -5};
@@ -784,7 +784,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.2;
         };
-        class syringe_kat_lidocaine_10ml_1 {
+        class syringe_lidocaine_10ml_1 {
             painReduce = 0.2;
             hrIncreaseLow[] = {0, 0, 0};
             hrIncreaseNormal[] = {0, 0, 0};
@@ -797,7 +797,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             maxRelief = 0.6;
         };
-        class syringe_kat_fentanyl_10ml_3 {
+        class syringe_fentanyl_10ml_3 {
             painReduce = 1;
             hrIncreaseLow[] = {-15, -5};
             hrIncreaseNormal[] = {-20, -10};
@@ -811,7 +811,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.5;
         };
-        class syringe_kat_ketamine_10ml_3 {
+        class syringe_ketamine_10ml_3 {
             painReduce = 0.8;
             hrIncreaseLow[] = {5, 20};
             hrIncreaseNormal[] = {10, 25};
@@ -824,7 +824,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = 10;
             onOverDose = "";
         };
-        class syringe_kat_nalbuphine_10ml_3 {
+        class syringe_nalbuphine_10ml_3 {
             painReduce = 0.6;
             hrIncreaseLow[] = {-5, 0};
             hrIncreaseNormal[] = {-10, -5};
