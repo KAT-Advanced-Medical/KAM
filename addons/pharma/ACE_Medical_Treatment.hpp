@@ -544,11 +544,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.1;
         };
-<<<<<<< Updated upstream
-        class syringe_atropine_5ml_1 {
-=======
         class syringe_atropineIV_5ml_1 {
->>>>>>> Stashed changes
             painReduce = 0;
             hrIncreaseLow[] = {20, 40};
             hrIncreaseNormal[] = {10, 25};
@@ -716,11 +712,7 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.2;
         };
-<<<<<<< Updated upstream
-        class syringe_atropine_5ml_3 {
-=======
         class syringe_atropineIV_5ml_3 {
->>>>>>> Stashed changes
             painReduce = 0;
             hrIncreaseLow[] = {20, 40};
             hrIncreaseNormal[] = {10, 25};

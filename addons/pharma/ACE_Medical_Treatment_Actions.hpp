@@ -771,13 +771,8 @@ class ACE_Medical_Treatment_Actions {
         displayNameProgress = CSTRING(pushing_epinephrineIV_IV_1);
         allowedSelections[] = {"Body", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
-<<<<<<< Updated upstream
-        medicRequired = QGVAR(medLvl_epinephrineIV);
-        treatmentTime = QGVAR(treatmentTime_epinephrineIV);
-=======
         medicRequired = QGVAR(medLvl_EpinephrineIV);
         treatmentTime = QGVAR(treatmentTime_EpinephrineIV);
->>>>>>> Stashed changes
         items[] = {"kat_syringe_epinephrineIV_5ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};

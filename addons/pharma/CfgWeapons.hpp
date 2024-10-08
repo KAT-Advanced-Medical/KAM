@@ -729,34 +729,17 @@ class CfgWeapons {
             mass = 1;
         };
     };
-<<<<<<< Updated upstream
-    class kat_syringe_atropine_5ml_1: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_atropine_5_1_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_atropine_5_1_DescShort);
-=======
     class kat_syringe_morphineIV_5ml_1: ACE_ItemCore {
         scope = 1;
         displayName = CSTRING(Syringe_morphine_5_1_Display);
         picture = QPATHTOF(ui\syringe_item.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_morphine_5_1_DescShort);
->>>>>>> Stashed changes
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };
     };
-<<<<<<< Updated upstream
-    class kat_syringe_atropine_5ml_3: ACE_ItemCore {
-        scope = 1;
-        displayName = CSTRING(Syringe_atropine_5_3_Display);
-        picture = QPATHTOF(ui\syringe_item.paa);
-        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
-        descriptionShort = CSTRING(Syringe_atropine_5_3_DescShort);
-=======
     class kat_syringe_morphineIV_5ml_3: ACE_ItemCore {
         scope = 1;
         displayName = CSTRING(Syringe_morphine_5_3_Display);
@@ -807,7 +790,6 @@ class CfgWeapons {
         picture = QPATHTOF(ui\syringe_item.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_adenosineIV_5_3_DescShort);
->>>>>>> Stashed changes
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
