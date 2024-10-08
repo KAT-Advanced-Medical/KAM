@@ -54,17 +54,54 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
         };
         class Morphine {
+            painReduce = 0.6;
+            hrIncreaseLow[] = {-10, -20};
+            hrIncreaseNormal[] = {-10, -30};
+            hrIncreaseHigh[] = {-10, -35};
+            timeInSystem = 450;
+            timeTillMaxEffect = 60;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = -0;
+            opioidRelief = 1.1;
+        };
+        class MorphineIV {
             painReduce = 0.8;
             hrIncreaseLow[] = {-10, -20};
             hrIncreaseNormal[] = {-10, -30};
             hrIncreaseHigh[] = {-10, -35};
             timeInSystem = 900;
             timeTillMaxEffect = 30;
-            maxDose = 4;
-            maxDoseDeviation = 4;
+            maxDose = 2;
+            maxDoseDeviation = 2;
             incompatibleMedication[] = {};
-            viscosityChange = -10;
-            opioidRelief = 1.2;
+            viscosityChange = -15;
+            opioidRelief = 1.3;
+        };
+        class Adenosine {
+            painReduce = 0;
+            hrIncreaseLow[] = {-4, -10};
+            hrIncreaseNormal[] = {-5, -20};
+            hrIncreaseHigh[] = {-5, -25};
+            timeInSystem = 60;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+        };
+        class AdenosineIV {
+            painReduce = 0;
+            hrIncreaseLow[] = {-7, -10};
+            hrIncreaseNormal[] = {-15, -30};
+            hrIncreaseHigh[] = {-15, -35};
+            timeInSystem = 180;
+            timeTillMaxEffect = 15;
+            maxDose = 3;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
         };
         class Carbonate {
             painReduce = 0;
@@ -502,7 +539,11 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.1;
         };
+<<<<<<< Updated upstream
         class syringe_atropine_5ml_1 {
+=======
+        class syringe_atropineIV_5ml_1 {
+>>>>>>> Stashed changes
             painReduce = 0;
             hrIncreaseLow[] = {20, 40};
             hrIncreaseNormal[] = {10, 25};
@@ -670,7 +711,11 @@ class ACE_ADDON(Medical_Treatment) {
             onOverDose = "";
             opioidRelief = 1.2;
         };
+<<<<<<< Updated upstream
         class syringe_atropine_5ml_3 {
+=======
+        class syringe_atropineIV_5ml_3 {
+>>>>>>> Stashed changes
             painReduce = 0;
             hrIncreaseLow[] = {20, 40};
             hrIncreaseNormal[] = {10, 25};
@@ -837,6 +882,82 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -5;
             onOverDose = "";
             opioidRelief = 1.2;
+        };
+        class syringe_morphineIV_10ml_1 {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {-10, -20};
+            hrIncreaseNormal[] = {-10, -30};
+            hrIncreaseHigh[] = {-10, -35};
+            timeInSystem = 900;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = -15;
+            opioidRelief = 1.3;
+        };
+        class syringe_morphineIV_10ml_3 {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {-10, -20};
+            hrIncreaseNormal[] = {-10, -30};
+            hrIncreaseHigh[] = {-10, -35};
+            timeInSystem = 900;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = -15;
+            opioidRelief = 1.3;
+        };
+        class syringe_morphineIV_5ml_1 {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {-10, -20};
+            hrIncreaseNormal[] = {-10, -30};
+            hrIncreaseHigh[] = {-10, -35};
+            timeInSystem = 900;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = -15;
+            opioidRelief = 1.3;
+        };
+        class syringe_morphineIV_5ml_3 {
+            painReduce = 0.8;
+            hrIncreaseLow[] = {-10, -20};
+            hrIncreaseNormal[] = {-10, -30};
+            hrIncreaseHigh[] = {-10, -35};
+            timeInSystem = 900;
+            timeTillMaxEffect = 30;
+            maxDose = 2;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = -15;
+            opioidRelief = 1.3;
+        };
+        class syringe_adenosineIV_5ml_1 {
+            painReduce = 0;
+            hrIncreaseLow[] = {-7, -10};
+            hrIncreaseNormal[] = {-15, -30};
+            hrIncreaseHigh[] = {-15, -35};
+            timeInSystem = 180;
+            timeTillMaxEffect = 15;
+            maxDose = 3;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
+        };
+        class syringe_adenosineIV_5ml_3 {
+            painReduce = 0;
+            hrIncreaseLow[] = {-7, -10};
+            hrIncreaseNormal[] = {-15, -30};
+            hrIncreaseHigh[] = {-15, -35};
+            timeInSystem = 180;
+            timeTillMaxEffect = 15;
+            maxDose = 3;
+            maxDoseDeviation = 2;
+            incompatibleMedication[] = {};
+            viscosityChange = 0;
         };
     };
 };

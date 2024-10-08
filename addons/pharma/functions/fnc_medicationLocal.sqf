@@ -122,7 +122,7 @@ if ([QGVAR(AMS_Enabled)] call CBA_settings_fnc_get) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
         };
 
-        if (_medicationName in ["ketamine","atropine"]) then {
+        if (_medicationName in ["ketamine","atropine","adenosine"]) then {
         [format ["kat_pharma_%1Local", toLower _medicationName], [_patient, _bodyPart, _classname], _patient] call CBA_fnc_targetEvent;
         };
 

@@ -19,7 +19,7 @@ private _playerMedicalLevel = [_player] call ace_medical_fnc_getMedicLevel;
 private _requiredMedicalLevel = GVAR(medLvl_PrepSyringe);
 if (_playerMedicalLevel < _requiredMedicalLevel) exitWith {};
 
-[5, [], {
+[EGVAR(pharma,prepTime_PrepSyringe), [], {
 private _syringeBox = findDisplay 38580 displayCtrl 71303;
 private _medicationBox = findDisplay 38580 displayCtrl 71305;
 private _doseCombo = findDisplay 38580 displayCtrl 71307;

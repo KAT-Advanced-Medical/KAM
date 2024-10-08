@@ -52,3 +52,4 @@ PREP(checkIVType);
 PREP(treatmentAdvanced_KetamineSedationLocal);
 PREP(ivCondition);
 PREP(AMSCheck);
+PREP(getAllMedicationsCount)

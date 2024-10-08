@@ -179,6 +179,17 @@ class CfgWeapons {
             mass = 0.5;
         };
     };
+    class kat_atropineIV: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(AtropineIV_Display);
+        picture = QPATHTOF(ui\icon_EpinephrineIV.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(AtropineIV_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.5;
+        };
+    };
     class kat_ketamine: ACE_ItemCore {
         scope = 2;
         displayName = CSTRING(Ketamine_Box_Display);
@@ -256,6 +267,28 @@ class CfgWeapons {
             mass = 0.2;
         };
     };
+    class kat_morphineIV: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(MorphineIV_displayName);
+        picture = QPATHTOF(ui\icon_EpinephrineIV.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(MorphineIV_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.2;
+        };
+    };
+    class kat_adenosineIV: ACE_ItemCore {
+        scope = 2;
+        displayName = CSTRING(AdenosineIV_displayName);
+        picture = QPATHTOF(ui\icon_EpinephrineIV.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(AdenosineIV_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 0.2;
+        };
+    };
     class kat_coag_sense: ACE_ItemCore {
         scope = 2;
         author = "Miss Heda";
@@ -284,6 +317,28 @@ class CfgWeapons {
         picture = QPATHTOF(ui\syringe_item.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_txa_10_3_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class kat_syringe_morphineIV_10ml_1: ACE_ItemCore {
+        scope = 1;
+        displayName = CSTRING(Syringe_morphine_10_1_Display);
+        picture = QPATHTOF(ui\syringe_item.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Syringe_morphineIV_10_1_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class kat_syringe_morphineIV_10ml_3: ACE_ItemCore {
+        scope = 1;
+        displayName = CSTRING(Syringe_morphineIV_10_3_Display);
+        picture = QPATHTOF(ui\syringe_item.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Syringe_morphineIV_10_3_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
@@ -674,23 +729,85 @@ class CfgWeapons {
             mass = 1;
         };
     };
+<<<<<<< Updated upstream
     class kat_syringe_atropine_5ml_1: ACE_ItemCore {
         scope = 1;
         displayName = CSTRING(Syringe_atropine_5_1_Display);
         picture = QPATHTOF(ui\syringe_item.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_atropine_5_1_DescShort);
+=======
+    class kat_syringe_morphineIV_5ml_1: ACE_ItemCore {
+        scope = 1;
+        displayName = CSTRING(Syringe_morphine_5_1_Display);
+        picture = QPATHTOF(ui\syringe_item.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Syringe_morphine_5_1_DescShort);
+>>>>>>> Stashed changes
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };
     };
+<<<<<<< Updated upstream
     class kat_syringe_atropine_5ml_3: ACE_ItemCore {
         scope = 1;
         displayName = CSTRING(Syringe_atropine_5_3_Display);
         picture = QPATHTOF(ui\syringe_item.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
         descriptionShort = CSTRING(Syringe_atropine_5_3_DescShort);
+=======
+    class kat_syringe_morphineIV_5ml_3: ACE_ItemCore {
+        scope = 1;
+        displayName = CSTRING(Syringe_morphine_5_3_Display);
+        picture = QPATHTOF(ui\syringe_item.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Syringe_morphine_5_3_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class kat_syringe_atropineIV_5ml_1: ACE_ItemCore {
+        scope = 1;
+        displayName = CSTRING(Syringe_atropineIV_5_1_Display);
+        picture = QPATHTOF(ui\syringe_item.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Syringe_atropineIV_5_1_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class kat_syringe_atropineIV_5ml_3: ACE_ItemCore {
+        scope = 1;
+        displayName = CSTRING(Syringe_atropineIV_5_3_Display);
+        picture = QPATHTOF(ui\syringe_item.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Syringe_atropineIV_5_3_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class kat_syringe_adenosineIV_5ml_1: ACE_ItemCore {
+        scope = 1;
+        displayName = CSTRING(Syringe_adenosineIV_5_1_Display);
+        picture = QPATHTOF(ui\syringe_item.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Syringe_adenosineIV_5_1_DescShort);
+        ACE_isMedicalItem = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class kat_syringe_adenosineIV_5ml_3: ACE_ItemCore {
+        scope = 1;
+        displayName = CSTRING(Syringe_adenosineIV_5_3_Display);
+        picture = QPATHTOF(ui\syringe_item.paa);
+        model = "\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d";
+        descriptionShort = CSTRING(Syringe_adenosineIV_5_3_DescShort);
+>>>>>>> Stashed changes
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;

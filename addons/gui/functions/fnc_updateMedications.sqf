@@ -33,7 +33,10 @@ disableSerialization;
     "kat_nitroglycerin",
     "kat_norepinephrine",
     "kat_phenylephrine",
-    "kat_TXA"
+    "kat_TXA",
+    "kat_morphineIV",
+    "kat_adenosineIV",
+    "kat_atropineIV"
 ];
 
 private _medicationsFound = {
