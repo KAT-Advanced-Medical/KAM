@@ -23,6 +23,7 @@
             <English>AI Simple Medical activated?</English>
             <Dutch>AI/KI simpel medische simulatie geactiveerd?</Dutch>
             <Spanish>¿Activar Médico Simple para IA?</Spanish>
+            <Japanese>AI用単純化医療を有効化しますか?</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_Enable">
             <English>Advanced Rhythms activated?</English>
@@ -1676,21 +1677,25 @@
             <English>%1 Blood Sample</English>
             <Dutch>%1 bloedstaal</Dutch>
             <Spanish>%1 Muestra de sangre</Spanish>
+            <Japanese>%1 血液サンプル</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test_Action">
             <English>Run ABG Test</English>
             <Dutch>Voer ABG test uit</Dutch>
             <Spanish>Realizar prueba ABG</Spanish>
+            <Japanese>ABGテストを行う</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Arterial_Test">
             <English>ABG Test</English>
             <Dutch>ABG test</Dutch>
             <Spanish>Prueba ABG</Spanish>
+            <Japanese>ABGテスト</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_Apply_Arterial_Test">
             <English>Apply %1 Test</English>
             <Dutch>Voer %1 test uit</Dutch>
             <Spanish>Realizar prueba %1</Spanish>
+            <Japanese>%1 テストを実施</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_crosspanel">
             <English>Blood groups cheat sheet</English>
@@ -2607,16 +2612,19 @@
             <English>Draw Arterial Sample</English>
             <Dutch>Neem Arterieel bloedstaal</Dutch>
             <Spanish>Extraer muestra arterial</Spanish>
+            <Japanese>動脈サンプルを採る</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_sampleItemName">
             <English>Blood Sample</English>
             <Dutch>Bloedstaal</Dutch>
             <Spanish>Muestra de sangre</Spanish>
+            <Japanese>血液サンプル</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_resultItemName">
             <English>ABG Result</English>
             <Dutch>ABG resultaat</Dutch>
             <Spanish>Resultado ABG</Spanish>
+            <Japanese>ABG結果</Japanese>
         </Key>
         <Key ID="STR_KAT_Circulation_DrawBlood_Action_Progress">
             <English>Drawing Blood</English>
