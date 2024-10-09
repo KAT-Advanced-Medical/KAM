@@ -338,3 +338,7 @@
 
 //Surgery
 #define STRING_BODY_PARTS ["head", "body", "left arm", "right arm", "left leg", "right leg"]
+
+//Feedback
+#define VAR_PP QEGVAR(feedback,ppEffect)
+#define GET_PP(unit) (unit getVariable [VAR_PP, 0])
