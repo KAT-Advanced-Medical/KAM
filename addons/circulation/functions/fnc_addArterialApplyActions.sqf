@@ -29,7 +29,8 @@ private _fnc_getActions = {
         _idNumber = getNumber (_config >> "testID");
 
         if (_idNumber > 0) then {   
-            private _bloodTestArray = GVAR(resultSampleMap) get _idNumber;
+            private _resultSampleMap = missionNamespace getVariable [QEGVAR(circulation,resultSampleMap), []];
+            _resultSampleMap = _resultSampleMap get _idNumber;
             private _patient = _bloodTestArray select 0;
 
             _actions pushBack [

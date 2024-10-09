@@ -94,6 +94,10 @@ if (GVAR(showPatientSideLabels)) then {
     (_display displayCtrl IDC_SIDE_LABEL_RIGHT) ctrlShow true;
 };
 
+if ((missionNamespace getVariable [QEGVAR(pharma,RequireInsIV), false]) && (missionNamespace getVariable [QEGVAR(pharma,IVflowControl), false])) then {
+    ctrlShow [IDC_IV_FLOW_SHOWBUTTON, true];
+};
+
 // Set toggle button icon and tooltip
 private _ctrl = _display displayCtrl IDC_TOGGLE;
 if (ACEGVAR(medical_gui,target) == ACE_player) then {

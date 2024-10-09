@@ -22,10 +22,16 @@ _bloodGasArray params ["_paCO2", "_paO2", "_spO2", "_hCO2", "_pH", "_etCO2"];
 private _output = format ["Patient: %1, PaCO2: %2, PaO2: %3, SpO2: %4, HCO2: %5, pH: %6", _patientName, _paCO2 toFixed 2, _paO2 toFixed 2, _spO2 toFixed 2, _hCO2 toFixed 2, _pH toFixed 2];
 [_output, 3, _player] call ACEFUNC(common,displayTextStructured);
 
-GVAR(resultCounter) = if (GVAR(resultCounter) == 20) then { 1 } else { GVAR(resultCounter) + 1 };
-GVAR(resultSampleMap) set [GVAR(resultCounter), [_patientName, _bloodGasArray]];
+private _resultCounter = missionNamespace getVariable [QEGVAR(circulation,resultCounter), 0];
+private _resultSampleMap = missionNamespace getVariable [QEGVAR(circulation,resultSampleMap), []];
 
-private _itemStr = format ["KAT_bloodResult_%1",GVAR(resultCounter)];
+_resultCounter = [_resultCounter +1, 1] select (_resultCounter == 20);
+missionNamespace setVariable [QEGVAR(circulation,sampleCounter), _sampleCounter, true];
+
+_resultSampleMap set [_resultCounter, [name(_patient), _bloodGas]];
+missionNamespace setVariable [QEGVAR(circulation,resultSampleMap), _resultSampleMap, true];
+
+private _itemStr = format ["KAT_bloodResult_%1", _resultCounter];
 
 [_vehicle, (format ["KAT_bloodSample_%1",_idNumber])] call CBA_fnc_removeItemCargo;
 [_player, _itemStr, true] call CBA_fnc_addItem;
