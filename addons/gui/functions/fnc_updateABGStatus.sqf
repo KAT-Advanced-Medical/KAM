@@ -22,8 +22,6 @@ private _bloodGasTest = _target getVariable [QEGVAR(circulation,testedBloodGas),
 private _activeBlood = 0;
 private _ABGmenuShow = _target getVariable [QEGVAR(pharma,ABGmenuShow), false];
 
-diag_log _ABGmenuShow;
-
 if (_ABGmenuShow) then {
     ctrlShow [IDC_ABG_TITLE, true];
     ctrlShow [IDC_ABG_BACKGROUND, true];
