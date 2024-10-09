@@ -22,12 +22,25 @@ params ["_target"];
 // Get tourniquets, damage, and blood loss for target
 private _IV = _target getVariable [QEGVAR(pharma,IV), [0,0,0,0,0,0]];
 private _ivFlow = _target getVariable [QEGVAR(pharma,IVflow), [0,0,0,0,0,0]];
+private _ivMenuShow = _target getVariable [QEGVAR(pharma,IVmenuActive), false];
+
+if (_ivMenuShow) then {
+    ctrlShow [IDC_IV_FLOW_BACKGROUND, true];
+    ctrlShow [IDC_IV_FLOW_TITLE, true];
+} else {
+    ctrlShow [IDC_IV_FLOW_BACKGROUND, false];
+    ctrlShow [IDC_IV_FLOW_TITLE, false];
+};
 
 {
     _x params ["_coverIDC", "_titleIDC", "_typeIDC", "_valueIDC", "_buttonIDCArray", "_bodyPartN"];
 
     private _activeIV = _IV select _bodyPartN;
     private _activeFlow = _ivFlow select _bodyPartN;
+
+    if !(_ivMenuShow) then {
+        _activeIV = -1;
+    };
 
     switch (true) do {
         case (_activeIV == 0): {
@@ -57,6 +70,14 @@ private _ivFlow = _target getVariable [QEGVAR(pharma,IVflow), [0,0,0,0,0,0]];
             _buttonIDCArray apply {ctrlEnable [_x, true]};
             ctrlSetText [_typeIDC, "IV"];
             ctrlSetText [_valueIDC, (_activeFlow toFixed 1)];
+        };
+        case (_activeIV == -1): {
+            ctrlShow [_coverIDC, false];
+            ctrlShow [_titleIDC, false];
+            ctrlShow [_typeIDC, false];
+            ctrlShow [_valueIDC, false];
+            _buttonIDCArray apply {ctrlShow [_x, false]};
+            _buttonIDCArray apply {ctrlEnable [_x, false]};
         };
     };
 } forEach [

@@ -35,6 +35,8 @@ _patient setVariable [QGVAR(tourniquetTime), [0,0,0,0,0,0]];
 _patient setVariable [QGVAR(bloodGas), DEFAULT_BLOOD_GAS, true];
 _patient setVariable [QGVAR(testedBloodGas), [0,0,0,0,0,0], true];
 
+_patient setVariable [QGVAR(ABGmenuShow), false];
+
 _patient setVariable [QGVAR(ht), [], true];
 _patient setVariable [QGVAR(effusion), 0, true];
 
