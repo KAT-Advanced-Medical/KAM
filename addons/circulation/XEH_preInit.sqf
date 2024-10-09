@@ -7,12 +7,12 @@ PREP_RECOMPILE_START;
 PREP_RECOMPILE_END;
 
 if (isServer) then {
-    sampleMap = createHashMap;
-    missionNamespace setVariable [QGVAR(bloodSampleMap), sampleMap];
+    private _sampleMap = createHashMap;
+    missionNamespace setVariable [QGVAR(bloodSampleMap), _sampleMap];
     missionNamespace setVariable [QGVAR(sampleCounter), 0];
     
-    resultSampleMap = createHashMap;
-    missionNamespace setVariable [QGVAR(resultSampleMap), sampleMap];
+    private _resultSampleMap = createHashMap;
+    missionNamespace setVariable [QGVAR(resultSampleMap), _resultSampleMap];
     missionNamespace setVariable [QGVAR(resultCounter), 0];
 };
 
