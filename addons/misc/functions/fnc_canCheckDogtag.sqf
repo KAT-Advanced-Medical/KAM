@@ -23,4 +23,4 @@ if (isNull _target) exitWith {false};
 // Check if disabled for faction
 if ((faction _target) in ACEGVAR(dogtags,disabledFactions)) exitWith {false};
 
-!(_target call EFUNC(common,isAwake))
+!(_target call ACEFUNC(common,isAwake))
