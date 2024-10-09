@@ -41,7 +41,7 @@ PREP_RECOMPILE_END;
     "CHECKBOX",
     [LLSTRING(SETTING_IV_FLOW_CONTROL),LLSTRING(SETTING_IV_FLOW_CONTROL_DESC)],
     [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
-    [true],
+    [false],
     true
 ] call CBA_Settings_fnc_init;
 
