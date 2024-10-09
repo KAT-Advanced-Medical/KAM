@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KAT">
+    <Package name="Ophthalmology">
+        <Key ID="STR_KAT_Ophthalmology_setting_enable">
+            <English>Enable eye injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_subcategory_injury">
+            <English>Eye injuries</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_probability_dust">
+            <English>Probability to get eye injury</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_probability_dust_heavy">
+            <English>Probability to get heavy eye injury</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_probability_treatment_dust">
+            <English>Probability to treat (non-heavy) eye injury with blinking</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_dust_effect_intensity">
+            <English>Intensity of the effect for eye injury</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_subcategory_manual_blink">
+            <English>Manual blinking</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_blink_treatment_time">
+            <English>Treatment time of blink</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_eyewash_treatment_time">
+            <English>Treatment time of Eye Wash</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_setting_eyewash_medic_required">
+            <English>Medic required to Eye Wash</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_blink_action">
+            <English>Blinking</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_blink_display">
+            <English>Blink</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewash_display">
+            <English>Wash eyes with saline</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewash_display_water">
+            <English>Wash eyes with water</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewash_action">
+            <English>Washing</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewash_item">
+            <English>Eye Wash</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewasher_display">
+            <English>Eye Washer</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewasher_display_item">
+            <English>Wash eyes</English>
+        </Key>
+        <Key ID="STR_KAT_Ophthalmology_eyewasher_desc">
+            <English>Eyewash bottles allow an individual to flush the injured area immediately</English>
+        </Key>
+    </Package>
+</Project>

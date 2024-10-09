@@ -41,6 +41,8 @@
 #define GETGVAR(var1,var2) GETMVAR(GVAR(var1),var2)
 #define GETEGVAR(var1,var2,var3) GETMVAR(EGVAR(var1,var2),var3)
 
+#define QGETGVAR(var1,var2) QUOTE(GETMVAR(QGVAR(var1),var2))
+
 #define ARR_SELECT(ARRAY,INDEX,DEFAULT) (if (count ARRAY > INDEX) then {ARRAY select INDEX} else {DEFAULT})
 #define ANY_OF(ARRAY,CONDITION) (ARRAY findIf {CONDITION} != -1)
 
