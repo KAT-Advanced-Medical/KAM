@@ -24,6 +24,7 @@ if !(
     closeDialog 0;
     // Show hint if distance condition failed
     if ((ACE_player distance ACEGVAR(medical_gui,target) > ACEGVAR(medical_gui,maxDistance)) && {vehicle ACE_player != vehicle ACEGVAR(medical_gui,target)}) then {
+        if (((getPosATL ACEGVAR(medical_gui,target)) # 2) < -9) exitWith {}; // handle dragging corpse/clone
         [[ACELSTRING(medical,DistanceToFar), ACEGVAR(medical_gui,target) call ACEFUNC(common,getName)], 2] call ACEFUNC(common,displayTextStructured);
     };
 };

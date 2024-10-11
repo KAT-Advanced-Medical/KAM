@@ -58,11 +58,16 @@ private _paco2 = if ((_demandVentilation / _actualVentilation) == 1) then { _pre
 // Generated ETCO2 quadratic. Ensures ETCO2 moves with Respiratory Rate and is constantly below PaCO2 
 private _etco2 = [((_paco2 - 3) - ((-0.0416667 * (_respiratoryRate^2)) + (3.09167 * (_respiratoryRate)) - DEFAULT_ETCO2) max 10), 0] select (IN_CRDC_ARRST(_unit));
 
-// Extenal pH impacts from saline is included
-private _externalPh = _unit getVariable [QEGVAR(pharma,externalPh), 0];
+private _externalPh = 0;
+private _pH = 7.4;
 
-// pH is from the Henderson-Hasselbalch equation
-private _pH = (6.1 + log(24 / ((0.03 - 0.001 * (_temperature - DEFAULT_TEMPERATURE)) * _paco2))) - ((_externalPh max 1) / 2000);
+if (EGVAR(pharma,kidneyAction)) then {
+    // Extenal pH impacts from saline is included
+    _externalPh = _unit getVariable [QEGVAR(pharma,externalPh), 0];
+
+    // pH is from the Henderson-Hasselbalch equation
+    _pH = (6.1 + log(24 / ((0.03 - 0.001 * (_temperature - DEFAULT_TEMPERATURE)) * _paco2))) - ((_externalPh max 1) / 2000);
+};
 
 // Fractional Oxygen when breathing normal air is 0.21, 1 when breathing 100% Oxygen, and 0 when no air is being brought into the lungs
 private _fio2 = switch (true) do {

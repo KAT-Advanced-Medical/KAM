@@ -36,17 +36,15 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
     private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0]];
     private _flowCalculation = (ACEGVAR(medical,ivFlowRate) * _deltaT * 4.16);
-    private _hypothermia = missionNamespace getVariable [QEGVAR(hypothermia,hypothermiaActive), false];
+    private _hypothermia = EGVAR(hypothermia,hypothermiaActive);
 
     if (GET_HEART_RATE(_unit) < 20) then {
         _flowCalculation = _flowCalculation / 1.5;
     };
 
-    if (_hypothermia) then {
-        private _incomingVolumeChange = [0,0,0,0,0,0];
-        private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0]];
-        private _fluidHeat = 0;
-    };
+    private _incomingVolumeChange = [0,0,0,0,0,0];
+    private _fluidWarmer = _unit getVariable [QEGVAR(hypothermia,fluidWarmer), [0,0,0,0,0,0]];
+    private _fluidHeat = 0;
 
     _bloodBags = _bloodBags apply {
         _x params ["_bagVolumeRemaining", "_type", "_bodyPart"];
@@ -92,7 +90,7 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 
         // Incoming fluids impacting internal temperature
     if (_hypothermia) then {
-        {_fluidHeat = _fluidHeat + _x} forEach _incomingVolumeChange;
+        { _fluidHeat = _fluidHeat + _x; } forEach _incomingVolumeChange;
 
         if (_fluidHeat > 0) then {
             private _totalHeat = _unit getVariable [QEGVAR(hypothermia,warmingImpact), 0];
@@ -107,13 +105,14 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 // Movement and recovery of interstital fluid 
 private _shiftValue = 0;
 switch (true) do {
-    case ((_ECB + _ECP) > (_ISP * 0.6)): {
-        _shiftValue = (5 min ((_ECP + _ECB) - (_ISP * 0.6)));
+    case (((_ECB + _ECP) > (_ISP * 0.6)) && ((_ECB + _ECP) > 4500)): {
+        // Negative shifts only happen above 4500ml of blood volume, to prevent issues with falling back into arrest/unconsciousness
+        _shiftValue = (2 min ((_ECP + _ECB) - (_ISP * 0.6)));
         _ECP = _ECP - _shiftValue;
         _ISP = _ISP + _shiftValue;
     };
     case ((_ECB + _ECP) < (_ISP * 0.6)): {
-        _shiftValue = (5 min ((_ISP * 0.6) - (_ECP + _ECB)));
+        _shiftValue = (2 min ((_ISP * 0.6) - (_ECP + _ECB)));
         _ECP = _ECP + _shiftValue;
         _ISP = _ISP - _shiftValue;
     };
