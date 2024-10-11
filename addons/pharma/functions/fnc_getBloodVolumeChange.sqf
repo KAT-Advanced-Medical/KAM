@@ -105,7 +105,8 @@ if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
 // Movement and recovery of interstital fluid 
 private _shiftValue = 0;
 switch (true) do {
-    case ((_ECB + _ECP) > (_ISP * 0.6)): {
+    case (((_ECB + _ECP) > (_ISP * 0.6)) && ((_ECB + _ECP) > 4500)): {
+        // Negative shifts only happen above 4500ml of blood volume, to prevent issues with falling back into arrest/unconsciousness
         _shiftValue = (2 min ((_ECP + _ECB) - (_ISP * 0.6)));
         _ECP = _ECP - _shiftValue;
         _ISP = _ISP + _shiftValue;
