@@ -72,6 +72,8 @@
 #define IDC_BODY_RIGHTLEG_IV         70141
 #define IDC_BODY_LEFTLEG_IV          70142
 
+#define IDC_ADD_MENUS 71099
+
 #define IDC_IV_FLOW_TITLE       71101
 #define IDC_IV_FLOW_HEADCOVER       71102
 #define IDC_IV_FLOW_HEADTITLE       71103
@@ -127,6 +129,8 @@
 #define IDC_IV_FLOW_RARMSUBTRACTFULL 71148
 #define IDC_IV_FLOW_RARMADDFULL 71149
 
+#define IDC_IV_FLOW_SHOWBUTTON 71150
+
 #define IDC_IV_FLOW_BACKGROUND  71199
 
 #define IDC_ABG_TITLE           71201
@@ -136,6 +140,7 @@
 #define IDC_TEST_HCO3          71205
 #define IDC_TEST_PH          71206
 #define IDC_TEST_RESET          71207
+#define IDC_TEST_SHOWBUTTON          71208
 
 #define IDC_ABG_BACKGROUND           71299         
 #define IDC_SYRINGE_TITLE           71300

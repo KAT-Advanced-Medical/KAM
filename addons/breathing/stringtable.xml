@@ -1571,7 +1571,7 @@
             <Spanish>Te hace perder resistencia al tener el Sp02 por debajo del 90% (valor predeterminado)</Spanish>
             <German>Lässt dich Ausdauer verlieren, wenn du unter 90% SpO2 bist (Standardwert)</German>
             <French>Fait perdre de l'endurance si la valeur de SpO2 est en dessous de 90% (Valeur par défaut)</French>
-            <Japanese>SpO2が(デフォルトの値では)90%未満の場合、スタミナを失います。</Japanese>
+            <Japanese>SpO2が(デフォルトの値では)90%未満の場合、スタミナの損失が発生します。</Japanese>
             <Korean>산소포화도가 90%(기본값) 미만이면 스태미나가 떨어집니다.</Korean>
             <Italian>Perdi stamina se sei sotto il 90% SPO2 (valore standard)</Italian>
             <Portuguese>Faz você perder stamina se estiver abaixo de 90% SpO2 (valor padrão)</Portuguese>

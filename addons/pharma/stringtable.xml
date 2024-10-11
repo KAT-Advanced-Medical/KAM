@@ -1241,6 +1241,12 @@
             <Portuguese>Desativado, por padrão. Quando ativado, você precisará inserir IV/IO primeiro antes de poder retirar sangue de alguém. \nSe desativado, você pode retirar sem ele.</Portuguese>
             <Dutch>Standaard vals. Wanneer waar moet er eerst een IV/IO toegediend worden voordat je bloed kan optrekken. \nWanneer vals is dit niet vereist.</Dutch>
         </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL">
+            <English>Enable IV/IO Flow Control</English>
+        </Key>
+        <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL_DESC">
+            <English>Enables the IV/IO flow control menu which gives the medic fine control over the volume running through the active line</English>
+        </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
             <Polish>Dźwięk przy cuceniu</Polish>

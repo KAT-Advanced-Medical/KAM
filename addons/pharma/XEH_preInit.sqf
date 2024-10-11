@@ -37,6 +37,15 @@ PREP_RECOMPILE_END;
 ] call CBA_Settings_fnc_init;
 
 [
+    QGVAR(IVflowControl),
+    "CHECKBOX",
+    [LLSTRING(SETTING_IV_FLOW_CONTROL),LLSTRING(SETTING_IV_FLOW_CONTROL_DESC)],
+    [CBA_SETTINGS_CAT, ELSTRING(GUI,SubCategory_Basic)],
+    [false],
+    true
+] call CBA_Settings_fnc_init;
+
+[
     QGVAR(IVdropEnable),
     "CHECKBOX",
     [LLSTRING(IV_DROP_ENABLE)],

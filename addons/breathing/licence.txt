@@ -1,4 +1,4 @@
-﻿This addon is made by Katalam.
+This addon is made by Katalam.
 
 This file must not be removed from the folder and must be contained in every work based on this addon or parts of it.
 

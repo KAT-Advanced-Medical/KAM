@@ -41,7 +41,7 @@ private _temperature = 37;
 private _baroPressure = 760;
 
 if (EGVAR(hypothermia,hypothermiaActive)) then {
-    // Enviromental Impact (Altitude, Temperature, Pressure) 
+    // Enviromental Impact (Altitude, Temperature, Pressure)
     private _altitude = (getPosASL _unit) select 2;
     private _altitudeTempImpact = switch (true) do {
         case (_altitude >= 10): { abs(_altitude/153) * -1 }; //For every 1000 meters of elevation gain, temperature decreases by ~6.5 degrees celsius
@@ -50,7 +50,7 @@ if (EGVAR(hypothermia,hypothermiaActive)) then {
     };
 
     _baroPressure = 760 * exp((-(_altitude)) / 8400);
-    _temperature = [_unit, _altitudeTempImpact, _bloodVolume, _deltaT, _syncValues] call FUNC(handleTemperatureFunction); 
+    _temperature = [_unit, _altitudeTempImpact, _bloodVolume, _deltaT, _syncValues] call FUNC(handleTemperatureFunction);
 };
 
 // Set variables for synchronizing information across the net
@@ -132,22 +132,13 @@ if (EGVAR(breathing,enable)) then {
     _spo2 = [_unit, _heartRate, _anerobicPressure, _bloodGas, _temperature, _baroPressure, _opioidDepression, _deltaT, _syncValues] call FUNC(handleOxygenFunction);
 };
 
-// Systolic Blood Pressure from Blood Volume with postive Heart Rate impacts capped by Blood Volume, Diastolic Blood Pressure from Vasoconstriction and Systolic BP
-private _vasoconstriction = GET_VASOCONSTRICTION(_unit);
-
-private _bloodPressureSystolic = (_bloodVolume * 20) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((-0.005 * _heartRate^2) + (1.6 * _heartRate) - 96);
-_bloodPressureSystolic = 250 / (1 + exp((-0.04) * (_bloodPressureSystolic - 122)));
-
-private _bloodPressureDiastolic = ((_bloodVolume * 13.33) * ((_unit getVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES]) / 100) + ((_vasoconstriction - 1) * 40)) min (_bloodPressureSystolic - 5);
-_bloodPressureDiastolic = 250 / (1 + exp((-0.04) * (_bloodPressureDiastolic - 100)));
-
-private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
-
 // Vasoconstriction from Wound Blood Loss and Alpha Adjustment
 _vasoconstriction = 1 + (0.5 * _woundBloodLoss) + _alphaFactorAdjustment;
 _unit setVariable [VAR_VASOCONSTRICTION, (1.8 min (0.2 max _vasoconstriction)), _syncValues];
 
-private _bloodPressure = [round(_bloodPressureDiastolic), round(_bloodPressureSystolic)];
+private _woundBloodLoss = GET_WOUND_BLEEDING(_unit);
+
+private _bloodPressure = [_unit] call EFUNC(circulation,getBloodPressure);
 _unit setVariable [VAR_BLOOD_PRESS, _bloodPressure, _syncValues];
 
 _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
@@ -202,5 +193,8 @@ if (!isPlayer _unit) then {
 #endif
 
 END_COUNTER(Vitals);
+
+//placed outside the counter as 3rd-party code may be called from this event
+[QACEGVAR(medical,handleUnitVitals), [_unit, _deltaT]] call CBA_fnc_localEvent;
 
 true

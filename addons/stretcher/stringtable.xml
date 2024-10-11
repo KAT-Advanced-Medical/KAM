@@ -68,7 +68,7 @@
             <Turkish>Kaldırma Sedyesi</Turkish>
             <Italian>Alzare la barella</Italian>
             <Russian>Поднимите носилки</Russian>
-            <Japanese>担架を引き上げる</Japanese>
+            <Japanese>担架を上げる</Japanese>
             <Portuguese>Elevar a maca</Portuguese>
             <Finnish>Nosta paarit</Finnish>
             <Dutch>Til de brancard op</Dutch>
@@ -86,7 +86,7 @@
             <Turkish>Alt Sedye</Turkish>
             <Italian>Barella inferiore</Italian>
             <Russian>Нижние носилки</Russian>
-            <Japanese>担架を降ろす</Japanese>
+            <Japanese>担架を下げる</Japanese>
             <Portuguese>Abaixar a maca</Portuguese>
             <Finnish>Laske paarit</Finnish>
             <Dutch>Laat de brancard zakken</Dutch>
@@ -96,18 +96,21 @@
             <Polish>Wypuść nosze</Polish>
             <Dutch>Ontplooi brancard</Dutch>
             <Spanish>Desplegar Camilla</Spanish>
+            <Japanese>担架を展開する</Japanese>
         </Key>
         <Key ID="STR_KAT_Stretcher_RetractHeliStretcher">
             <English>Retract Stretcher</English>
             <Polish>Przywołaj nosze</Polish>
             <Dutch>Trek brancard terug</Dutch>
             <Spanish>Recoger Camilla</Spanish>
+            <Japanese>担架を収容する</Japanese>
         </Key>
         <Key ID="STR_KAT_Stretcher_DetachHeliStretcher">
             <English>Detach Stretcher</English>
             <Polish>Odczep nosze</Polish>
             <Dutch>Maak brancard los</Dutch>
             <Spanish>Desanclar Camilla</Spanish>
+            <Japanese>担架を取り外す</Japanese>
         </Key>
         <Key ID="STR_KAT_Stretcher_Helistretcher_Display">
             <English>Attachable Helistretcher</English>
@@ -186,35 +189,41 @@
             <Polish>Spakuj jako torba</Polish>
             <Dutch>Verpak naar een tas</Dutch>
             <Spanish>Empaquetar en bolsa</Spanish>
+            <Japanese>ランチャーとして畳む</Japanese>
         </Key>
         <Key ID="STR_KAT_Stretcher_PackIntoBackpack">
             <English>Pack into backpack</English>
             <Polish>Spakuj jako plecak</Polish>
             <Dutch>Verpak naar een rugzak</Dutch>
             <Spanish>Empaquetar en mochila</Spanish>
+            <Japanese>バックパックとして畳む</Japanese>
         </Key>
         <Key ID="STR_KAT_Stretcher_UnpackStretcher">
             <English>Deploy Stretcher</English>
             <Polish>Rozstaw nosze</Polish>
             <Dutch>Ontplooi brancard</Dutch>
             <Spanish>Desplegar Camilla</Spanish>
+            <Japanese>担架を展開する</Japanese>
         </Key>
         <Key ID="STR_KAT_Stretcher_PlaceStretcher_progressBar">
             <English>Placing Stretcher...</English>
             <Polish>Rozkładanie noszy...</Polish>
             <Dutch>Brancard wordt geplaatst</Dutch>
             <Spanish>Colocando Camilla...</Spanish>
+            <Japanese>担架を設置しています・・・</Japanese>
         </Key>
         <Key ID="STR_KAT_Stretcher_PickupStretcher_progressBar">
             <English>Packing Stretcher...</English>
             <Polish>Pakowanie noszy...</Polish>
             <Dutch>Brancard wordt verpakt</Dutch>
             <Spanish>Empaquetando Camilla...</Spanish>
+            <Japanese>担架を折り畳んでいます・・・</Japanese>
         </Key>
         <Key ID="STR_KAT_Stretcher_KAT_HeliStretcher">
             <English>KAT Helistretcher</English>
             <Dutch>KAT helibrancard</Dutch>
             <Spanish>KAT Camilla de Helicóptero</Spanish>
+            <Japanese>KAT ヘリコプター用担架</Japanese>
         </Key>
     </Package>
 </Project>
