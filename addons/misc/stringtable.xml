@@ -1130,6 +1130,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_DisplayItems">
             <English>View Packing List</English>
+            <Chinesesimp>查看装箱清单</Chinesesimp>
             <Spanish>Ver lista</Spanish>
             <German>Packliste ansehen</German>
             <Japanese>内容物リストを見る</Japanese>
@@ -1140,6 +1141,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Hint">
             <English>Trauma Section:</English>
+            <Chinesesimp>创伤部分:</Chinesesimp>
             <Spanish>Sección de trauma:</Spanish>
             <German>Trauma Sektion:</German>
             <Japanese>外傷枠:</Japanese>
@@ -1150,6 +1152,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Hint">
             <English>Bandage Section:</English>
+            <Chinesesimp>绷带部分:</Chinesesimp>
             <Spanish>Sección de vendaje:</Spanish>
             <German>Bandagen Sektion:</German>
             <Japanese>包帯枠:</Japanese>
@@ -1160,6 +1163,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Hint">
             <English>Pain Management Section:</English>
+            <Chinesesimp>疼痛管理部分:</Chinesesimp>
             <Spanish>Sección de analgesicos:</Spanish>
             <German>Schmerzmittel Sektion:</German>
             <Japanese>鎮痛枠:</Japanese>
@@ -1170,6 +1174,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Hint">
             <English>Breathing Section:</English>
+            <Chinesesimp>呼吸部分:</Chinesesimp>
             <Spanish>Sección de respiración:</Spanish>
             <German>Beatmungs Sektion:</German>
             <Japanese>呼吸枠:</Japanese>
@@ -1180,6 +1185,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Hint">
             <English>Airway Section:</English>
+            <Chinesesimp>气道部分:</Chinesesimp>
             <Spanish>Sección de vías respiratorias:</Spanish>
             <German>Atemwege Sektion:</German>
             <Japanese>気道枠:</Japanese>
@@ -1190,6 +1196,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Hint">
             <English>Pharmaceutical Section:</English>
+            <Chinesesimp>药物部分:</Chinesesimp>
             <Spanish>Sección de farmacia:</Spanish>
             <German>Arzneimittel Sektion:</German>
             <Japanese>薬品枠:</Japanese>
@@ -1200,6 +1207,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Hint">
             <English>Fluid Section:</English>
+            <Chinesesimp>液体部分:</Chinesesimp>
             <Spanish>Sección de fluidos:</Spanish>
             <German>Flüssigkeits Sektion:</German>
             <Japanese>輸液枠:</Japanese>
@@ -1210,6 +1218,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Hint">
             <English>Miscellaneous Section:</English>
+            <Chinesesimp>杂项部分:</Chinesesimp>
             <Spanish>Sección de miscelaneos:</Spanish>
             <German>Vermischte Sektion:</German>
             <Japanese>雑多枠:</Japanese>
@@ -1220,6 +1229,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1">
             <English>Unpack Trauma Section</English>
+            <Chinesesimp>打开创伤部分</Chinesesimp>
             <Spanish>Desempaquetar sección de traumas:</Spanish>
             <German>Entpacke Trauma Sektion</German>
             <Japanese>外傷枠を 開梱する</Japanese>
@@ -1230,6 +1240,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2">
             <English>Unpack Bandage Section</English>
+            <Chinesesimp>拆包绷带部分</Chinesesimp>
             <Spanish>Desempaquetar sección de vendaje:</Spanish>
             <German>Entpacke Bandagen Sektion</German>
             <Japanese>包帯枠を 開梱する</Japanese>
@@ -1240,6 +1251,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3">
             <English>Unpack Pain Management Section</English>
+            <Chinesesimp>打开疼痛管理部分</Chinesesimp>
             <Spanish>Desempaquetar sección de analgesicos:</Spanish>
             <German>Entpacke Schmerzmittel Sektion</German>
             <Japanese>鎮痛枠を 開梱する</Japanese>
@@ -1250,6 +1262,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4">
             <English>Unpack Breathing Section</English>
+            <Chinesesimp>打开呼吸部分</Chinesesimp>
             <Spanish>Desempaquetar sección de respiración:</Spanish>
             <German>Entpacke Beatmungs Sektion</German>
             <Japanese>呼吸枠を 開梱する</Japanese>
@@ -1260,6 +1273,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5">
             <English>Unpack Airway Section</English>
+            <Chinesesimp>打开气道部分</Chinesesimp>
             <Spanish>Desempaquetar sección de vías respiratorias:</Spanish>
             <German>Entpacke Atemwege Sektion</German>
             <Japanese>気道枠を 開梱する</Japanese>
@@ -1270,6 +1284,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6">
             <English>Unpack Pharmaceutical Section</English>
+            <Chinesesimp>拆包药剂部分</Chinesesimp>
             <Spanish>Desempaquetar sección de farmacia:</Spanish>
             <German>Entpacke Arzneimittel Sektion</German>
             <Japanese>薬品枠を 開梱する</Japanese>
@@ -1280,6 +1295,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7">
             <English>Unpack Fluid Section</English>
+            <Chinesesimp>解封流体部分</Chinesesimp>
             <Spanish>Desempaquetar sección de fluidos:</Spanish>
             <German>Entpacke Flüssigkeit Sektion</German>
             <Japanese>輸液枠を 開梱する</Japanese>
@@ -1290,6 +1306,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8">
             <English>Unpack Miscellaneous Section</English>
+            <Chinesesimp>拆包杂项部分</Chinesesimp>
             <Spanish>Desempaquetar sección de miscelaneos:</Spanish>
             <German>Entpacke Vermischte Sektion</German>
             <Japanese>雑多枠を 開梱する</Japanese>
@@ -1300,6 +1317,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_1_Repack">
             <English>Repack Trauma Section</English>
+            <Chinesesimp>重装创伤部分</Chinesesimp>
             <Spanish>Empaquetar sección de trauma:</Spanish>
             <German>Packe Trauma Sektion</German>
             <Japanese>外傷枠を 再梱包する</Japanese>
@@ -1310,6 +1328,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_2_Repack">
             <English>Repack Bandage Section</English>
+            <Chinesesimp>重装绷带部分</Chinesesimp>
             <Spanish>Empaquetar sección de vendaje:</Spanish>
             <German>Packe Bandagen Sektion</German>
             <Japanese>包帯枠を 再梱包する</Japanese>
@@ -1320,6 +1339,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_3_Repack">
             <English>Repack Pain Management Section</English>
+            <Chinesesimp>重装疼痛管理部分</Chinesesimp>
             <Spanish>Empaquetar sección de analgesicos:</Spanish>
             <German>Packe Schmerzmittel Sektion</German>
             <Japanese>鎮痛枠を 再梱包する</Japanese>
@@ -1330,6 +1350,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_4_Repack">
             <English>Repack Breathing Section</English>
+            <Chinesesimp>重新包装呼吸部分</Chinesesimp>
             <Spanish>Empaquetar sección de respiración:</Spanish>
             <German>Packe Beatmungs Sektion</German>
             <Japanese>呼吸枠を 再梱包する</Japanese>
@@ -1340,6 +1361,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_5_Repack">
             <English>Repack Airway Section</English>
+            <Chinesesimp>重新包装气道部分</Chinesesimp>
             <Spanish>Empaquetar sección de vías respiratorias:</Spanish>
             <German>Packe Atemwege Sektion</German>
             <Japanese>気道枠を 再梱包する</Japanese>
@@ -1350,6 +1372,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_6_Repack">
             <English>Repack Pharmaceutical Section</English>
+            <Chinesesimp>再包装药剂部分</Chinesesimp>
             <Spanish>Empaquetar sección de vendaje:</Spanish>
             <German>Packe Arzneimittel Sektion</German>
             <Japanese>薬品枠を 再梱包する</Japanese>
@@ -1360,6 +1383,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_7_Repack">
             <English>Repack Fluid Section</English>
+            <Chinesesimp>重新充填流体部分</Chinesesimp>
             <Spanish>Empaquetar sección de fluidos:</Spanish>
             <German>Packe Flüssigkeit Sektion</German>
             <Japanese>輸液枠を 再梱包する</Japanese>
@@ -1370,6 +1394,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_FAK_Slot_8_Repack">
             <English>Repack Miscellaneous Section</English>
+            <Chinesesimp>重新包装及杂项部分</Chinesesimp>
             <Spanish>Empaquetar sección de miscelaneos:</Spanish>
             <German>Packe Vermischte Sektion</German>
             <Japanese>雑多枠を 再梱包する</Japanese>
@@ -1380,6 +1405,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor">
             <English>Hint Item Color</English>
+            <Chinesesimp>提示项目颜色</Chinesesimp>
             <Spanish>Color del objeto en la nota</Spanish>
             <German>Hinweis Gegenstand Farbe</German>
             <Japanese>ヒントのアイテムの文字色</Japanese>
@@ -1389,6 +1415,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor_DESC">
             <English>The item color of the text that is displayed via a hint</English>
+            <Chinesesimp>通过提示显示的文本的项目颜色</Chinesesimp>
             <Spanish>El color del elemento que aparece en el texto de la nota.</Spanish>
             <German>Die Farbe der Gegenstände die über einen Hinweis angezeigt werden</German>
             <Japanese>ヒントで表示されるポケット内アイテムの文章の文字色</Japanese>
@@ -1462,6 +1489,7 @@
         </Key>
         <Key ID="STR_KAT_Misc_Use_SurgicalKitFullBody">
             <English>Use Surgical Kit (Full Body)</English>
+            <Chinesesimp>全身缝合</Chinesesimp>
             <Japanese>手術キットを使う (全身縫合)</Japanese>
             <Russian>Использвать хир.набор (на всё тело)</Russian>
             <Spanish>Utilizar kit quirúrgico (cuerpo completo)</Spanish>

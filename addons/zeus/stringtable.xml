@@ -57,6 +57,7 @@
         </Key>
         <Key ID="STR_KAT_Zeus_ModuleManageAirway_PneumothoraxDeteriorate">
             <English>Pneumothorax deteriorate:</English>
+            <Chinesesimp>气胸恶化:</Chinesesimp>
             <Japanese>気胸の悪化:</Japanese>
             <Russian>Пневмоторакс ухудшается:</Russian>
             <German>Pneumothorax verschlechtert sich:</German>
@@ -193,6 +194,7 @@
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_displayname">
             <English>Change Cardiac State</English>
+            <Chinesesimp>改变心脏状态</Chinesesimp>
             <Japanese>心臓の状態を変更</Japanese>
             <French>Changer de condition cardiaque</French>
             <Korean>심장 상태 변경</Korean>
@@ -241,6 +243,7 @@
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_VT">
             <English>Ventricular Tachycardia</English>
+            <Chinesesimp>室性心动过速(VT)</Chinesesimp>
             <Japanese>心室頻拍(VT)</Japanese>
             <French>Tachycardie ventriculaire</French>
             <Korean>심실빈맥(VT)</Korean>
@@ -253,6 +256,7 @@
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_VF">
             <English>Ventricular Fibrillation</English>
+            <Chinesesimp>心室颤动(VF)</Chinesesimp>
             <Japanese>心室細動(VF)</Japanese>
             <French>Fibrillation ventriculaire</French>
             <Korean>심실세동(VF)</Korean>
@@ -265,6 +269,7 @@
         </Key>
         <Key ID="STR_KAT_Zeus_CardiacState_Module_PEA">
             <English>Pulseless Electrical Activity</English>
+            <Chinesesimp>无脉冲电活动(PEA)</Chinesesimp>
             <Japanese>無脈性電気活動(PEA)</Japanese>
             <French>Activité électrique sans impulsion (PEA)</French>
             <Korean>무맥박 전기활동(PEA)</Korean>
@@ -295,6 +300,7 @@
         </Key>
         <Key ID="STR_KAT_Zeus_OnlyAI">
             <English>Unit must be an AI</English>
+            <Chinesesimp>单位必须是AI</Chinesesimp>
             <French>L'unité doit être une IA</French>
             <Korean>유닛은 반드시 AI여야 합니다</Korean>
             <Japanese>ユニットはAIである必要があります</Japanese>
@@ -325,6 +331,7 @@
         </Key>
         <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_displayname">
             <English>Toggle Instant AI Death</English>
+            <Chinesesimp>切换AI即时死亡</Chinesesimp>
             <French>Activer/Désactiver la mort instantanée de l'IA</French>
             <Korean>인공지능 즉사 토글</Korean>
             <Japanese>AIの即死を切り替え</Japanese>
@@ -337,6 +344,7 @@
         </Key>
         <Key ID="STR_KAT_Zeus_toggleAIDeath_Module_Toggled">
             <English>Instant AI Death %1 for unit</English>
+            <Chinesesimp>AI单位即时死亡 %1 </Chinesesimp>
             <French>Mort instantanée de l'IA %1 pour l'unité</French>
             <Korean>유닛에 AI 즉사 %1</Korean>
             <Japanese>このAIユニットの即死は %1 になりました</Japanese>
