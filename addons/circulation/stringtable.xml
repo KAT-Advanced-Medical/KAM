@@ -927,6 +927,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AnalyzeRhythm">
             <English>Analyze Rhythm</English>
+            <Chinesesimp>心率分析</Chinesesimp>
             <Japanese>心調律を解析</Japanese>
             <French>Analyser le rythme cardiaque</French>
             <Korean>리듬 분석</Korean>
@@ -1194,6 +1195,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_ConnectMonitor">
             <English>Connect Vitals Monitor</English>
+            <Chinesesimp>连接监控</Chinesesimp>
             <Japanese>バイタルモニターの接続</Japanese>
             <French>Connecter les capteurs de signe vitaux à l'AED-X</French>
             <Korean>환자감시장치 연결</Korean>
@@ -1206,6 +1208,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_ConnectMonitor">
             <English>Station: Connect Vitals Monitor</English>
+            <Chinesesimp>设置AED：连接监护仪</Chinesesimp>
             <Japanese>設置AED: バイタルモニターの接続</Japanese>
             <French>Station: Connecter les capteurs de signe vitaux à l'AED-X</French>
             <Korean>환자감시장치 연결(바닥)</Korean>
@@ -2621,6 +2624,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_DrawArterial_Action_Use">
             <English>Draw Arterial Sample</English>
+            <Chinesesimp>动脉血液取样</Chinesesimp>
             <Dutch>Neem Arterieel bloedstaal</Dutch>
             <Spanish>Extraer muestra arterial</Spanish>
             <Japanese>動脈サンプルを採る</Japanese>
