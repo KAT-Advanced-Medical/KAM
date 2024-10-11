@@ -155,7 +155,7 @@
             <English>Check Temperature</English>
             <Dutch>Check temperatuur</Dutch>
             <Spanish>Comprobar Temperatura</Spanish>
-            <Japanese>体温をチェックします</Japanese>
+            <Japanese>体温を確認</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature_Progress">
             <English>Checking Temperature</English>
