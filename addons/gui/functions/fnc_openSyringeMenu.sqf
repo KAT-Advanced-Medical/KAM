@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Cplhardcore
- * opens the syringe menu
+ * opens the syringe menu and populates it
  *
  * Arguments:
  * none
@@ -14,6 +14,8 @@
  *
  * Public: No
  */
+[] call FUNC(updateMedications);
+[] call FUNC(updateSyringes);
 [{player setVariable ["SyringeMenu", true];
 ctrlShow [71300, true];
 ctrlShow [71301, true];

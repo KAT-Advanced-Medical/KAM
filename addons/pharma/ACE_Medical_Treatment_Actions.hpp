@@ -886,20 +886,20 @@ class ACE_Medical_Treatment_Actions {
         sounds[] = {};
     };
     class syringe_morphineIV_10ml_1: syringe_TXA_10ml_1 {
-        displayName = CSTRING(inject_morphine_IM_1);
-        displayNameProgress = CSTRING(injecting_morphine_IM_1);
+        displayName = CSTRING(inject_morphineIV_IM_1);
+        displayNameProgress = CSTRING(injecting_morphineIV_IM_1);
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         allowSelfTreatment = 1;
         medicRequired = QGVAR(medLvl_morphineIM);
         treatmentTime = QGVAR(treatmentTime_morphineIM);
-        items[] = {"kat_syringe_morphine_10ml_1"};
+        items[] = {"kat_syringe_morphineIV_10ml_1"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
     class syringe_morphineIV_10ml_3: syringe_morphineIV_10ml_1 {
-        displayName = CSTRING(inject_morphine_IM_3);
-        displayNameProgress = CSTRING(injecting_morphine_IM_3);
-        items[] = {"kat_syringe_morphine_10ml_3"};
+        displayName = CSTRING(inject_morphineIV_IM_3);
+        displayNameProgress = CSTRING(injecting_morphineIV_IM_3);
+        items[] = {"kat_syringe_morphineIV_10ml_3"};
         callbackSuccess = QFUNC(medication);
         sounds[] = {};
     };
