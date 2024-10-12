@@ -1,4 +1,3 @@
-PREP(alphaAction);
 PREP(applyIV);
 PREP(checkIV);
 PREP(clotWound);

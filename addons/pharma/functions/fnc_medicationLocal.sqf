@@ -47,6 +47,7 @@ if !(ACEGVAR(medical_treatment,advancedMedication)) exitWith {
             private _sedated = _patient getVariable [QEGVAR(surgery,sedated), false];
             if !(_sedated) then {
                 [QACEGVAR(medical,WakeUp), _patient] call CBA_fnc_localEvent;
+            };
         };
         case "Painkillers": {
             private _painSuppress = GET_PAIN_SUPPRESS(_patient);
@@ -112,7 +113,6 @@ TRACE_3("adjustments",_heartRateChange,_painReduce,_viscosityChange);
 // Check for medication compatiblity
 [_patient, _className, _maxDose, _maxDoseDeviation, _incompatibleMedication] call ACEFUNC(medical_treatment,onMedicationUsage);
 
-//Change Alpha Factor
 if ([QGVAR(AMS_Enabled)] call CBA_settings_fnc_get) then {
 
     private _medicationParts = (_className splitString "_");
@@ -133,9 +133,9 @@ if ([QGVAR(AMS_Enabled)] call CBA_settings_fnc_get) then {
         };
 
         } else {
-            diag_log format ["Unexpected _className format: %1", _className];
+        diag_log format ["Unexpected _className format: %1", _className];
         };
-    } else {
+} else {
         
     if (_className in ["Lorazepam","Ketamine","EACA","TXA","Atropine","Amiodarone","Flumazenil"]) then {
         [format ["kat_pharma_%1Local", toLower _className], [_patient, _bodyPart], _patient] call CBA_fnc_targetEvent;
