@@ -664,7 +664,7 @@ class ACE_Medical_Menu {
         class SyringeOpenButton: RscButton {
             idc = IDC_SYRINGE_OPEN;
             text = CSTRING(OpenSyringeMenu);
-            x = QUOTE(POS_X(19.4));
+            x = QUOTE(POS_X(23.6));
             y = QUOTE(POS_Y(0));
             w = QUOTE(POS_W(4.4));
             h = QUOTE(POS_H(1));
@@ -686,7 +686,7 @@ class ACE_Medical_Menu {
         w = QUOTE(POS_W(9.2));
         h = QUOTE(POS_H(16.5));
             class controls {
-                class SyringeCloseButton: RscButton {
+            class SyringeCloseButton: RscButton {
                     idc = IDC_SYRINGE_CLOSE;
                     text = CSTRING(CloseMenu);
                     x = QUOTE(POS_X(10.3));
@@ -701,7 +701,7 @@ class ACE_Medical_Menu {
                     font = "RobotoCondensed";
                     shadow = "false";
                 };
-            };
+        };
             class SyringeTypeTitle: RscStructuredText  {
                 idc = IDC_SYRINGE_TYPE_TITLE; // LOOK HERE
                 text = CSTRING(SyringeTitleList);
