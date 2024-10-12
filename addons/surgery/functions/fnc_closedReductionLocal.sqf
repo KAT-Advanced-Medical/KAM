@@ -32,19 +32,19 @@ private _morphineIVEffectiveness = 0;
 {
     private _medName = toLower (_x select 0);
     private _effectiveness = _x select 2;
-    if (_medName find "fentanyl" > -1) then {
+    if ("fentanyl" in _medName) then {
         _fentanylEffectiveness = _fentanylEffectiveness max _effectiveness;
     };
-    if (_medName find "ketamine" > -1) then {
+    if ("ketamine" in _medName) then {
         _ketamineEffectiveness = _ketamineEffectiveness max _effectiveness;
     };
-    if (_medName find "nalbuphine" > -1) then {
+    if ("nalbuphine" in _medName) then {
         _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
     };
-    if (_medName find "morphine" > -1) then {
+    if ("morphine" in _medName) then {
         _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
     };
-    if (_medName find "morphineIV" > -1) then {
+    if ("morphineIV" in _medName) then {
         _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
     };
 } forEach _medStack;
@@ -53,9 +53,9 @@ if (
     _ketamineEffectiveness <= 0.8 &&
     _nalbuphineEffectiveness <= 0.8 &&
     _morphineEffectiveness <= 0.8 &&
-    _morphineIVEffectiveness <= 0.8 &&
+    _morphineIVEffectiveness <= 0.8
 ) then {
-    [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status, adjustPainLevel);
+    [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status,adjustPainLevel);
 };
 
 playSound3D [QPATHTOF_SOUND(sounds\reduction.wav), _patient, false, getPosASL _patient, 8, 1, 15];
