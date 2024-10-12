@@ -16,7 +16,7 @@
  * None
  *
  * Example:
- * [player, player, ["TXA", "1", "5ml"]] call kat_pharma_fnc_prepareSyringe;
+ * [player, ["TXA", "5ml", "1"]] call kat_pharma_fnc_prepareSyringe;
  *
  * Public: No
  */
