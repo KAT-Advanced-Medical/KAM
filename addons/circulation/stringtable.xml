@@ -927,6 +927,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AnalyzeRhythm">
             <English>Analyze Rhythm</English>
+            <Chinesesimp>心率分析</Chinesesimp>
             <Japanese>心調律を解析</Japanese>
             <French>Analyser le rythme cardiaque</French>
             <Korean>리듬 분석</Korean>
@@ -1029,6 +1030,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AED_Action_PlacePads">
             <English>Place AED Pads</English>
+            <Chinesesimp>放置DEA电极</Chinesesimp>
             <Japanese>AEDパッドを貼り付ける</Japanese>
             <French>Placer les électrodes du AED</French>
             <Korean>자동심장충격기 패드 붙이기</Korean>
@@ -1065,6 +1067,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_PlacePads">
             <English>Place AED-X Pads</English>
+            <Chinesesimp>放置AED-X电极</Chinesesimp>
             <Japanese>AED-Xパッドを貼り付ける</Japanese>
             <French>Placer les électrodes du AED-X</French>
             <Korean>X-시리즈 자동심장충격기 패드 붙이기</Korean>
@@ -1101,6 +1104,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads">
             <English>Remove Defibrillator Pads</English>
+            <Chinesesimp>取下除颤器电极</Chinesesimp>
             <Japanese>除細動器パッドを取り外す</Japanese>
             <French>Retirer les électrodes du défibrilateur</French>
             <Korean>자동심장충격기 패드 떼기</Korean>
@@ -1113,6 +1117,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_PlacePads_Progress">
             <English>Placing Defibrillator Pads</English>
+            <Chinesesimp>放置除颤器电极</Chinesesimp>
             <Japanese>除細動器パッドを貼り付けています</Japanese>
             <French>Mise en place des électrodes du défibrilateur</French>
             <Korean>자동심장충격기 패드 붙이는 중</Korean>
@@ -1125,6 +1130,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_RemovePads_Progress">
             <English>Removing Defibrillator Pads</English>
+            <Chinesesimp>正在取下除颤器垫</Chinesesimp>
             <Japanese>除細動器パッドを取り外しています</Japanese>
             <French>Retrait des électrodes du défibrillateur</French>
             <Korean>자동심장충격기 패드 떼는 중</Korean>
@@ -1137,6 +1143,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Shock">
             <English>Administer Shock</English>
+            <Chinesesimp>实施休克</Chinesesimp>
             <Japanese>ショックを実施</Japanese>
             <French>Délivrer le choc</French>
             <Korean>쇼크 실시</Korean>
@@ -1149,6 +1156,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_Charge">
             <English>Charge Defibrillator</English>
+            <Chinesesimp>除颤器充能</Chinesesimp>
             <Japanese>除細動器を充電</Japanese>
             <French>Charger le défibrillateur</French>
             <Korean>자동심장충격기 충전</Korean>
@@ -1161,6 +1169,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_Defibrillator_Action_CancelCharge">
             <English>Cancel Charge</English>
+            <Chinesesimp>取消充能</Chinesesimp>
             <Japanese>充電を取り消す</Japanese>
             <French>Annuler la charge du défibrillateur</French>
             <Korean>충전 취소</Korean>
@@ -1173,6 +1182,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_ViewMonitor">
             <English>View Monitor</English>
+            <Chinesesimp>查看监护仪</Chinesesimp>
             <Japanese>バイタルモニターを表示</Japanese>
             <French>Visualiser le moniteur</French>
             <Korean>보니터 보기</Korean>
@@ -1185,6 +1195,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_ConnectMonitor">
             <English>Connect Vitals Monitor</English>
+            <Chinesesimp>连接监控</Chinesesimp>
             <Japanese>バイタルモニターの接続</Japanese>
             <French>Connecter les capteurs de signe vitaux à l'AED-X</French>
             <Korean>환자감시장치 연결</Korean>
@@ -1197,6 +1208,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDXStation_Action_ConnectMonitor">
             <English>Station: Connect Vitals Monitor</English>
+            <Chinesesimp>设置AED：连接监护仪</Chinesesimp>
             <Japanese>設置AED: バイタルモニターの接続</Japanese>
             <French>Station: Connecter les capteurs de signe vitaux à l'AED-X</French>
             <Korean>환자감시장치 연결(바닥)</Korean>
@@ -1245,6 +1257,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_EnableAudio">
             <English>Vitals Monitor Audio ON</English>
+            <Chinesesimp>监护仪音频 开启</Chinesesimp>
             <Japanese>モニター音声オン</Japanese>
             <French>Activer le son des signes vitaux de l'AED-X</French>
             <Korean>환자감시장치 소리 켜기</Korean>
@@ -1257,6 +1270,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_AEDX_Action_DisableAudio">
             <English>Vitals Monitor Audio OFF</English>
+            <Chinesesimp>监护仪音频 关闭</Chinesesimp>
             <Japanese>モニター音声オフ</Japanese>
             <French>Désactiver le son des signes vitaux de l'AED-X</French>
             <Korean>환자감시장치 소리 끄기</Korean>
@@ -2610,6 +2624,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_DrawArterial_Action_Use">
             <English>Draw Arterial Sample</English>
+            <Chinesesimp>动脉血液取样</Chinesesimp>
             <Dutch>Neem Arterieel bloedstaal</Dutch>
             <Spanish>Extraer muestra arterial</Spanish>
             <Japanese>動脈サンプルを採る</Japanese>
@@ -2814,6 +2829,7 @@
         </Key>
         <Key ID="STR_KAT_Circulation_SETTING_AdvRhythm_canDeteriorate">
             <English>Can Deteriorate</English>
+            <Chinesesimp>存在心脏功能受损的可能性</Chinesesimp>
             <Japanese>調律状態が悪化するようにする</Japanese>
             <French>Possibilité de détérioration de la fonction cardiaque</French>
             <Korean>심장기능이 악화될 수 있음</Korean>
