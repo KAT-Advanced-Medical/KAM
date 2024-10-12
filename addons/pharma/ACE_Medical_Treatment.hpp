@@ -516,6 +516,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -10;
             onOverDose = "";
             opioidRelief = 1.2;
+            opioidEffect = 0.17;
         };
         class syringe_ketamine_5ml_1 {
             painReduce = 0.7;
@@ -529,6 +530,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
+            opioidEffect = 0.11;
         };
         class syringe_nalbuphine_5ml_1 {
             painReduce = 0.5;
@@ -684,6 +686,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -10;
             onOverDose = "";
             opioidRelief = 1.5;
+            opioidEffect = 0.17;
         };
         class syringe_ketamine_5ml_3 {
             painReduce = 0.8;
@@ -697,6 +700,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
+            opioidEffect = 0.17;
         };
         class syringe_nalbuphine_5ml_3 {
             painReduce = 0.6;
@@ -798,6 +802,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -10;
             onOverDose = "";
             opioidRelief = 1.3;
+            opioidEffect = 0.17;
         };
         class syringe_ketamine_10ml_1 {
             painReduce = 0.7;
@@ -811,6 +816,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
+            opioidEffect = 0.17;
         };
         class syringe_nalbuphine_10ml_1 {
             painReduce = 0.5;
@@ -852,6 +858,7 @@ class ACE_ADDON(Medical_Treatment) {
             viscosityChange = -10;
             onOverDose = "";
             opioidRelief = 1.5;
+            opioidEffect = 0.17;
         };
         class syringe_ketamine_10ml_3 {
             painReduce = 0.8;
@@ -865,6 +872,7 @@ class ACE_ADDON(Medical_Treatment) {
             incompatibleMedication[] = {};
             viscosityChange = 10;
             onOverDose = "";
+            opioidEffect = 0.17;
         };
         class syringe_nalbuphine_10ml_3 {
             painReduce = 0.6;

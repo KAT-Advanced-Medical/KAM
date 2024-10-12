@@ -14,6 +14,7 @@
  *
  * Public: No
  */
+params ["_patient"];
 
 private _random = random 3;
 if (_random <= 1) then {
