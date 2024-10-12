@@ -50,4 +50,3 @@ PREP(prepareSyringe);
 PREP(checkIVType);
 PREP(ivCondition);
 PREP(AMSCheck);
-PREP(getAllMedicationsCount)

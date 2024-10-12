@@ -665,9 +665,9 @@ class ACE_Medical_Menu {
         class SyringeOpenButton: RscButton {
             idc = IDC_SYRINGE_OPEN;
             text = CSTRING(OpenSyringeMenu);
-            x = QUOTE(POS_X(23.7));
-            y = QUOTE(POS_Y(0));
-            w = QUOTE(POS_W(4.4));
+            x = QUOTE(POS_X(39.6));
+            y = QUOTE(POS_Y(4.9));
+            w = QUOTE(POS_W(2));
             h = QUOTE(POS_H(1));
             colorBackgroundDisabled[] = GUI_BCG_COLOR;
             colorBackground[] = GUI_BCG_COLOR;
@@ -703,7 +703,6 @@ class ACE_Medical_Menu {
                     shadow = "false";
                 };
             };
-
             class SyringeTypeTitle: RscStructuredText  {
                 idc = IDC_SYRINGE_TYPE_TITLE; // LOOK HERE
                 text = CSTRING(SyringeTitleList);
@@ -720,7 +719,7 @@ class ACE_Medical_Menu {
                     font = "RobotoCondensed";
                     shadow = "false";
                 };
-        };
+            };
             class SyringeList: RscListBox  {
             idc = IDC_SYRINGE_TYPE_LIST; // LOOK HERE
             x = QUOTE(POS_X(3.8));
@@ -728,7 +727,7 @@ class ACE_Medical_Menu {
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(2));
             show = 1;
-        };
+            };
             class MedicationTypeTitle: RscStructuredText  {
             idc = IDC_MEDICATION_TYPE_TITLE; // LOOK HERE
             text = CSTRING(MedicationTitleList);
@@ -744,8 +743,8 @@ class ACE_Medical_Menu {
                 color = "#E5E5E5";
                 font = "RobotoCondensed";
                 shadow = "false";
+                };
             };
-        };
             class MedicationList: RscListBox {
             idc = IDC_MEDICATION_TYPE_LIST; // LOOK HERE
             x = QUOTE(POS_X(3.8));
@@ -753,7 +752,7 @@ class ACE_Medical_Menu {
             w = QUOTE(POS_W(8));
             h = QUOTE(POS_H(6));
             show = 1;
-        };
+            };
             class DoseTitle: RscStructuredText  {
             idc = IDC_MEDICATION_DOSE_TITLE; // LOOK HERE
             text = CSTRING(DoseTitle);
@@ -769,8 +768,8 @@ class ACE_Medical_Menu {
                 color = "#E5E5E5";
                 font = "RobotoCondensed";
                 shadow = "false";
+                };
             };
-        };
             class DoseList: RscCombo {
             idc = IDC_MEDICATION_DOSE_COMBO; // LOOK HERE
             x = QUOTE(POS_X(3.8));
@@ -795,9 +794,9 @@ class ACE_Medical_Menu {
                 {
                     text = CSTRING(DoseHigh);
                     value = 3;
+                    };
                 };
             };
-        };
             class PrepSyringe: RscButton {
             idc = IDC_MEDICATION_PREP_SYRINGE; // LOOK HERE
             text = CSTRING(PrepSyringe);
@@ -817,7 +816,7 @@ class ACE_Medical_Menu {
                 font = "RobotoCondensed";
                 shadow = "false";
                     };
-            };  
-        };
+                };  
+            };
     };
 };
