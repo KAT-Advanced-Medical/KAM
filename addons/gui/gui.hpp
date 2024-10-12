@@ -167,7 +167,6 @@ class ACE_Medical_Menu {
                     shadow = "true";
                 };
             };
-        };
         class SYRINGEBackground: IVFlowBackground {
             idc = IDC_SYRINGE_BACKGROUND; // LOOK HERE
             x = QUOTE(POS_X(39.6));
@@ -187,6 +186,7 @@ class ACE_Medical_Menu {
                 color = "#E5E5E5";
                 font = "RobotoCondensed";
                 shadow = "true";
+                };
             };
         };
     };
@@ -667,7 +667,7 @@ class ACE_Medical_Menu {
             text = CSTRING(OpenSyringeMenu);
             x = QUOTE(POS_X(39.6));
             y = QUOTE(POS_Y(4.9));
-            w = QUOTE(POS_W(2));
+            w = QUOTE(POS_W(3));
             h = QUOTE(POS_H(1));
             colorBackgroundDisabled[] = GUI_BCG_COLOR;
             colorBackground[] = GUI_BCG_COLOR;
