@@ -1,7 +1,10 @@
 class ACE_Medical_Treatment_Actions {
     class FieldDressing;
     class Morphine;
-    class CheckPulse;
+    class Diagnose;
+    class CheckPulse: Diagnose {
+        callbackSuccess = QFUNC(checkPulse);
+    };
     class CPR {
         displayNameProgress = "";
         treatmentTime = 0.01;
@@ -27,6 +30,31 @@ class ACE_Medical_Treatment_Actions {
     };
     class CheckBloodPressure: CheckPulse {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        callbackSuccess = QFUNC(checkBloodPressure);
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+    };
+    class CheckBloodPressureCuff: CheckPulse {
+        displayName = CSTRING(Actions_CheckBloodPressureCuff);
+        displayNameProgress = CSTRING(Actions_CheckingBloodPressureCuff);
+        treatmentTime = QGVAR(treatmentTime_BPcuff);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        callbackSuccess = QFUNC(checkBloodPressureCuff);
+        medicRequired = QGVAR(medLvl_BPCuff);
+        items[] = {"kat_BPCuff"};
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+    };
+    class CheckPulseSteth: CheckPulse {
+        displayName = CSTRING(Actions_CheckHRSteth);
+        displayNameProgress = CSTRING(Actions_CheckingHRSteth);
+        treatmentTime = QGVAR(treatmentTime_StethHR);
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "Body"};
+        callbackSuccess = QFUNC(checkPulseSteth);
+        medicRequired = QGVAR(medLvl_StethHR);
+        items[] = {"kat_stethoscope"};
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};

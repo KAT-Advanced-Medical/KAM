@@ -3193,5 +3193,53 @@
             <Portuguese>Probabilidade de progressão de tamponamento</Portuguese>
             <Dutch>Tamponade progressie kans</Dutch>
         </Key>
+        <Key ID="STR_KAT_Circulation_BPCuff_display">
+            <English>Blood Pressure Cuff</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_BPCuff_desc">
+            <English>A medical device to accurately determine a patients blood pressure</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_CheckBloodPressureCuff">
+            <English>Check BP with BP Cuff</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_CheckingBloodPressureCuff">
+            <English>Checking BP with BP Cuff</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_BPCuff">
+            <English>Allow BP Cuff</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_BPCuff_DESC">
+            <English>Training Level for use of the BP Cuff</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_treatmentTime_BPCuff">
+            <English>Time to measure BP with BP Cuff</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Bloodpressure_Output_Palp">
+            <English>You find a blood pressure of %3 over Palp</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Bloodpressure_Output_Palp">
+            <English>%1 over Palp</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Check_Pulse_Output">
+            <English>You find a Pulse Rate of %2</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Pulse_Output">
+            <English>%1 PPM</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_StethHR">
+            <English>Allow Stethoscope HR check</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_SETTING_StethHR_DESC">
+            <English>Training Level for use of the Stethoscope to measure HR</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_treatmentTime_StethHR">
+            <English>Time to measure HR with a Stethoscope</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_CheckHRSteth">
+            <English>Check HR w/ Stethoscope</English>
+        </Key>
+        <Key ID="STR_KAT_Circulation_Actions_CheckingHRSteth">
+            <English>Checking HR with Stethoscope</English>
+        </Key>
     </Package>
 </Project>
