@@ -23,19 +23,19 @@
             <English>Enable Hypothermia</English>
             <Dutch>Schakel hypothermie in</Dutch>
             <Spanish>Habilitar hipotermia</Spanish>
-            <Japanese>低体温症を有効にする</Japanese>
+            <Japanese>低体温症を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT">
             <English>Hand Warmer Impact</English>
             <Dutch>Handwarmer impact</Dutch>
             <Spanish>Impacto de Calentador de Manos</Spanish>
-            <Japanese>ハンド ウォーマーの影響</Japanese>
+            <Japanese>ハンドウォーマーの影響</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HAND_WARMER_IMPACT_DESC">
             <English>Multipler for impact of hand warmers on heat gain</English>
             <Dutch>Vermenigvuldiger voor de impact die handwarmers hebben op de stijging van temperatuur</Dutch>
             <Spanish>Multiplicador del impacto del calentador de manos en la ganancia de calor</Spanish>
-            <Japanese>ハンド ウォーマーが熱獲得に与える影響の乗数</Japanese>
+            <Japanese>ハンドウォーマーが熱獲得に与える影響の乗数</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_FLUID_WARMER_IMPACT">
             <English>Fluid Warmer Impact</English>
@@ -65,37 +65,37 @@
             <English>Check Hand Warmers</English>
             <Dutch>Check handwarmers</Dutch>
             <Spanish>Comprobar Calentadores de Manos</Spanish>
-            <Japanese>ハンド ウォーマーを確認する</Japanese>
+            <Japanese>ハンドウォーマーを確認する</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_displayName">
             <English>Hand Warmer</English>
             <Dutch>Handwarmers</Dutch>
             <Spanish>Calentador de Manos</Spanish>
-            <Japanese>ハンド ウォーマー</Japanese>
+            <Japanese>ハンドウォーマー</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_DescShort">
             <English>Small hand warmers to provide warmth in colder climates</English>
             <Dutch>Kleine handwarmers die warmte bieden in koude klimaten</Dutch>
             <Spanish>Pequeños calentadores de manos para dar calor en climas fríos</Spanish>
-            <Japanese>寒冷地でも体を温めることが出来る小さなハンド ウォーマー (懐炉)</Japanese>
+            <Japanese>寒冷地でも体を温めることが出来る小さなハンドウォーマー (懐炉)</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Use_Handwarmer">
             <English>Use Hand Warmer</English>
             <Dutch>Gebruik handwarmer</Dutch>
             <Spanish>Usar Calentador de Manos</Spanish>
-            <Japanese>ハンド ウォーマーを使用する</Japanese>
+            <Japanese>ハンドウォーマーを使用する</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Self_Handwarmer_Output">
             <English>This is where you have handwarmers and how much longer you think they have in minutes: %1, %2, %3, %4, %5</English>
             <Dutch>Dit is waar je handwarmers hebt en hoelang je denkt dat ze nog werken in minuten: %1, %2, %3, %4, %5</Dutch>
             <Spanish>Aquí es donde tienes calentadores de manos y cuanto piensas que les queda de duración en minutos: %1, %2, %3, %4, %5</Spanish>
-            <Japanese>あなたが使用中の ハンドウォーマーの 場所と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
+            <Japanese>あなたが使用中の ハンドウォーマーの 位置と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Other_Handwarmer_Output">
             <English>This patient has handwarmers and they will probably last this many more minutes at this locations: %1, %2, %3, %4, %5</English>
             <Dutch>Deze patient heeft handwarmers op deze locaties en dit is hoelang ze ongeveer nog werken: %1, %2, %3, %4, %5</Dutch>
             <Spanish>Este paciente tiene calentadores de manos y probablemente le duren muchos mas minutos en esos sitios: %1, %2, %3, %4, %5</Spanish>
-            <Japanese>この患者が使用中の ハンドウォーマーの 場所と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
+            <Japanese>この患者が使用中の ハンドウォーマーの 位置と残り持続時間は 次の通りです (分単位): %1, %2, %3, %4, %5</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_FluidWarmer_displayName">
             <English>Fluid Line Warmer</English>
@@ -125,49 +125,49 @@
             <English>Patient feels frigid</English>
             <Dutch>Patiënt voelt ijskoud aan</Dutch>
             <Spanish>El paciente se siente frígido</Spanish>
-            <Japanese>患者は凍えるように感じています</Japanese>
+            <Japanese>患者は凍ったように冷たく感じます</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_cold">
             <English>Patient feels remarkably cold</English>
             <Dutch>Patiënt voel opmerkelijk koud aan</Dutch>
             <Spanish>El paciente se siente realmente frío</Spanish>
-            <Japanese>患者は著しく寒さを感じています</Japanese>
+            <Japanese>患者は著しく冷たく感じます</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_cool">
             <English>Patient feels moderately cold</English>
             <Dutch>Patiënt voelt redelijk koud aan</Dutch>
             <Spanish>El paciente se siente moderadamente frío</Spanish>
-            <Japanese>患者は少し寒さを感じています</Japanese>
+            <Japanese>患者は少し冷たく感じます</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_mild">
             <English>Patient feels mildly cool</English>
             <Dutch>Patiënt voelt een klein beetje koud aan</Dutch>
             <Spanish>El paciente se siente algo frío</Spanish>
-            <Japanese>患者は涼しさを感じます</Japanese>
+            <Japanese>患者は少しひんやりと感じます</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_temperature_warm">
             <English>Patient feels warm</English>
             <Dutch>Patiënt voelt warm aan</Dutch>
             <Spanish>El paciente se siente cálido</Spanish>
-            <Japanese>患者は暖かさを感じています</Japanese>
+            <Japanese>患者は暖かく感じます</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature">
             <English>Check Temperature</English>
             <Dutch>Check temperatuur</Dutch>
             <Spanish>Comprobar Temperatura</Spanish>
-            <Japanese>温度をチェックします</Japanese>
+            <Japanese>体温を確認</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Temperature_Progress">
             <English>Checking Temperature</English>
             <Dutch>Temperatuur wordt gecheckt</Dutch>
             <Spanish>ComprobandoTemperatura</Spanish>
-            <Japanese>温度をチェックしています</Japanese>
+            <Japanese>体温をチェックしています</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_Check_Hand_Warmers">
             <English>Check Hand Warmers</English>
             <Dutch>Check handwarmers</Dutch>
             <Spanish>Comprobar Calentadores de Mano</Spanish>
-            <Japanese>ハンド ウォーマーをチェックします</Japanese>
+            <Japanese>ハンドウォーマーをチェックします</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_perform">
             <English>Performing</English>
@@ -185,7 +185,7 @@
             <English>No Hand Warmers are active at this time</English>
             <Dutch>Momenteel zijn er geen handwarmers actief</Dutch>
             <Spanish>No hay calentadores de mano activos actualmente</Spanish>
-            <Japanese>現在ハンド ウォーマーは使っていません</Japanese>
+            <Japanese>現在ハンドウォーマーは使っていません</Japanese>
         </Key>
         <Key ID="STR_KAT_Hypothermia_HandWarmer_Body">
             <English>Body: %1</English>

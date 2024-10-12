@@ -760,7 +760,7 @@
             <English>Enables advanced pneumothoraxes - hemopneumothorax and tensionpneumothorax</English>
             <Spanish>Habitilita neumotóraxes avanzados - hemotórax y neumotórax a tensión</Spanish>
             <Polish>Włącza zaawansowane odmiany odmy opłucnowej - krwiaka opłucnej oraz odmę prężną</Polish>
-            <Japanese>血気胸および緊張性気胸を有効化します</Japanese>
+            <Japanese>高度な気胸である血気胸および緊張性気胸の症状を有効にします</Japanese>
             <Czech>Povolí pokročilé pneumotoraxy - hemopneumotorax a tenzní pneumotorax.</Czech>
             <French>Active les pneumothorax avancés - Hémopneumothorax et pneumothorax sous tension</French>
             <Korean>고급 기흉을 활성화합니다. - 혈기흉 및 긴장성 기흉</Korean>
@@ -1459,7 +1459,7 @@
             <English>Enable Pneumothorax Arrest</English>
             <Russian>Включить остановку сердца</Russian>
             <Spanish>Habilitar Parada por Pneumothorax</Spanish>
-            <Japanese>気胸による心停止を有効にする</Japanese>
+            <Japanese>気胸による心停止を有効化</Japanese>
             <French>Activer l'arrêt dû au pneumothorax</French>
             <Portuguese>Habilitar Parada por Pneumotórax</Portuguese>
             <Dutch>Sta pneumothorax hartstilstand toe</Dutch>
@@ -1468,7 +1468,7 @@
             <English>Enables a chance for cardiac arrest following pneumothorax</English>
             <Russian>Увеличивает вероятность остановки сердца после Пневмоторакса</Russian>
             <Spanish>Habilitar la probabilidad para parada cardíaca tras un pneumothorax</Spanish>
-            <Japanese>気胸発生に付随して心停止となる可能性を有効化します</Japanese>
+            <Japanese>気胸発生に付随して心停止となる可能性を有効にします</Japanese>
             <French>Active la chance qu'un arrêt cardiaque se produise en cas de pneumothorax</French>
             <Portuguese>Habilita uma chance de parada cardíaca após o pneumotórax</Portuguese>
             <Dutch>Staat de kans op een hartstilstand na een pneumothorax toe</Dutch>
@@ -1556,7 +1556,7 @@
             <Spanish>Habilita perdida de resistencia por Sp02 bajo</Spanish>
             <German>Aktiviere Verlust von Ausdauer bei niedrigen SpO2 Wert</German>
             <French>Autoriser la perte d'endurance en cas de SpO2 basse</French>
-            <Japanese>低SpO2でのスタミナ損失を有効にする</Japanese>
+            <Japanese>低SpO2でのスタミナ損失を有効化</Japanese>
             <Korean>낮은 산소포화도에서 스태미나 손실 활성화</Korean>
             <Italian>Abilita la perdità di stamina con bassa pressione SPO2</Italian>
             <Portuguese>Ativar perda de stamina sob baixo SpO2</Portuguese>

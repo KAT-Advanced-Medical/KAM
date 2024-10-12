@@ -1181,9 +1181,11 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL">
             <English>Enable IV/IO Flow Control</English>
+            <Japanese>IV/IO流量操作を有効化</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_IV_FLOW_CONTROL_DESC">
             <English>Enables the IV/IO flow control menu which gives the medic fine control over the volume running through the active line</English>
+            <Japanese>IV/IO流量操作メニューを有効にし、輸液がラインを流れる液量を衛生兵が細かく制御できるようにします。</Japanese>
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Reorientation_Slap">
             <English>Reorientation slap sound</English>
@@ -1197,7 +1199,7 @@
             <French>Son claque stimulation</French>
             <Turkish>Yönlendirme tokat sesi</Turkish>
             <Italian>Suono schiaffo stimolazione</Italian>
-            <Japanese>刺激時に音を鳴らす</Japanese>
+            <Japanese>患者を刺激するアクションで音を鳴らす</Japanese>
             <Russian>Звук пощечины при переориентации</Russian>
             <Portuguese>Som de tapa durante reorientação</Portuguese>
             <Finnish>Lyöksytysääni potilaan suunnan muuttamiseen</Finnish>
@@ -1215,7 +1217,7 @@
             <French>Activer son de la claque</French>
             <Turkish>Yeniden yönlendirme için tokat sesini etkinleştirir</Turkish>
             <Italian>Abilita il suono dello schiaffo per la stimolazione</Italian>
-            <Japanese>患者を刺激する際に平手打ちする音を鳴らします</Japanese>
+            <Japanese>患者を刺激した際に平手打ちするような音を鳴らします</Japanese>
             <Russian>Включает звук пощечины для переориентации</Russian>
             <Portuguese>Ativa o som de tapa durante reorientação</Portuguese>
             <Finnish>Sallii iskuäänen uudelleensuuntaamista varten</Finnish>
@@ -1233,7 +1235,7 @@
             <French>Stimulation activé?</French>
             <Turkish>Yeniden yönlendirme etkin mi?</Turkish>
             <Italian>Stimolazione abilitata?</Italian>
-            <Japanese>患者を刺激出来るようにしますか?</Japanese>
+            <Japanese>患者を刺激するアクションを有効化しますか?</Japanese>
             <Russian>Переориентация включена?</Russian>
             <Portuguese>Reorientação habilitada?</Portuguese>
             <Finnish>Uudelleensuuntaus käytössä?</Finnish>
@@ -1251,7 +1253,7 @@
             <French>Activer stimulation</French>
             <Turkish>Yeniden yönlendirmeyi etkinleştirir</Turkish>
             <Italian>Stimolazione abilitata</Italian>
-            <Japanese>患者を刺激する機能を有効化します(患者の安定時に平手打ちで叩き起こす)</Japanese>
+            <Japanese>安定化している患者を刺激(平手打ち)することで、目覚めさせる機能を有効化します</Japanese>
             <Russian>Включает переориентация</Russian>
             <Portuguese>Habilita a reorientação</Portuguese>
             <Finnish>Mahdollistaa suunnanmuutoksen</Finnish>
@@ -1269,7 +1271,7 @@
             <French>Autoriser stimulation</French>
             <Turkish>Yeniden yönlendirmeye izin ver</Turkish>
             <Italian>Autorizza stimolazione</Italian>
-            <Japanese>患者を刺激する許可</Japanese>
+            <Japanese>患者を刺激するアクションの許可</Japanese>
             <Russian>Разрешить переориентацию</Russian>
             <Portuguese>Permitir reorientação</Portuguese>
             <Finnish>Salli suunnanmuutos</Finnish>
@@ -1297,7 +1299,7 @@
             <English>Enable Weapon Sway</English>
             <German>Aktiviere Waffen Schwanken</German>
             <French>Activer l'oscillation de l'arme</French>
-            <Japanese>武器の揺れを有効にする</Japanese>
+            <Japanese>武器の揺れを有効化</Japanese>
             <Korean>무기 흔들림 사용(페르피틴)</Korean>
             <Italian>Abilita l'oscillazione dell'arma</Italian>
             <Portuguese>Ativar balanço da arma</Portuguese>
@@ -1312,7 +1314,7 @@
             <English>Enables if pervitin should influance your weapon sway</English>
             <German>Aktiviert, ob Pervitin das Schwanken deiner Waffen beeinflussen soll</German>
             <French>Définie si la pervitine influance l'oscillation de l'arme</French>
-            <Japanese>ペルビチンが武器の揺れに影響を与えるかどうかを有効にします</Japanese>
+            <Japanese>ペルビチンが武器の揺れに影響を与える機能を有効にします</Japanese>
             <Korean>페르피틴이 무기의 흔들림에 영향을 미치는지의 여부를 활성화합니다.</Korean>
             <Italian>Attiva se il pervitin debba influenzare l'oscillazione dell'arma</Italian>
             <Portuguese>Ativa se o Pervitin influenciar o balanço da sua arma</Portuguese>
@@ -2782,7 +2784,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_Coagulation">
             <English>Enable Coagulation</English>
-            <Japanese>血液凝固を有効にする</Japanese>
+            <Japanese>血液凝固を有効化</Japanese>
             <Italian>Abilita sistema di coagulazione</Italian>
             <Polish>Włącz krzepnięcie</Polish>
             <Czech>Povolit Koagulaci</Czech>
@@ -3247,7 +3249,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_TXA_DESC">
             <English>If enabled TXA will be stackable and double it's efficiency</English>
-            <Japanese>有効にすると、TXAの重複が可能になり、効率が2倍になる。</Japanese>
+            <Japanese>有効にすると、TXAの重複が可能になり、効率が2倍になります。</Japanese>
             <Spanish>Si el ATX esta permitido, se podrá acumular y duplicará su eficiencia</Spanish>
             <Dutch>Wanneer ingeschakeld: sta het stapelen van TXA toe, wat de effectiviteit verdubbeld)</Dutch>
             <French>Si activé, le TXA sera empilable et doublera son efficacité</French>
@@ -3766,7 +3768,7 @@
         </Key>
         <Key ID="STR_KAT_Pharma_SETTING_allowStackScript_EACA_DESC">
             <English>If enabled EACA will be stackable and double its efficiency</English>
-            <Japanese>有効にすると、EACAの重複が可能になり、効率が2倍になる。</Japanese>
+            <Japanese>有効にすると、EACAの重複が可能になり、効率が2倍になります。</Japanese>
             <Spanish>Si el EACA esta permitido, se podrá acumular y duplicará su eficiencia</Spanish>
             <Portuguese>Se habilitado, o efeito do EACA será somável e sua eficiência será dobrada</Portuguese>
             <Dutch>Staat het stapelen van EACA toe wanneer ingeschakeld, wat leidt tot een verdubbeling van de effectiviteit</Dutch>
