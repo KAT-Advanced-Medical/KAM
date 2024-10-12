@@ -231,7 +231,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Lorazepam_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.2;
+            mass = 0.5;
         };
     };
     class kat_flumazenil: ACE_ItemCore {
@@ -242,7 +242,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Flumazenil_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.2;
+            mass = 0.5;
         };
     };
     class kat_etomidate: ACE_ItemCore {
@@ -253,7 +253,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(Etomidate_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.2;
+            mass = 0.5;
         };
     };
     class kat_epinephrineIV: ACE_ItemCore {
@@ -264,7 +264,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(EpinephrineIV_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.2;
+            mass = 0.5;
         };
     };
     class kat_morphineIV: ACE_ItemCore {
@@ -275,7 +275,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(MorphineIV_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.2;
+            mass = 0.5;
         };
     };
     class kat_adenosineIV: ACE_ItemCore {
@@ -286,7 +286,7 @@ class CfgWeapons {
         descriptionShort = CSTRING(AdenosineIV_DescShort);
         ACE_isMedicalItem = 1;
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 0.2;
+            mass = 0.5;
         };
     };
     class kat_coag_sense: ACE_ItemCore {
