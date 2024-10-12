@@ -189,7 +189,6 @@ class ACE_Medical_Menu {
                 };
             };
         };
-    };
     class controls {
             class IVbutton: RscButton {
                 idc = IDC_IV_FLOW_SHOWBUTTON; // LOOK HERE
@@ -665,9 +664,9 @@ class ACE_Medical_Menu {
         class SyringeOpenButton: RscButton {
             idc = IDC_SYRINGE_OPEN;
             text = CSTRING(OpenSyringeMenu);
-            x = QUOTE(POS_X(39.6));
-            y = QUOTE(POS_Y(4.9));
-            w = QUOTE(POS_W(3));
+            x = QUOTE(POS_X(19.4));
+            y = QUOTE(POS_Y(0));
+            w = QUOTE(POS_W(4.4));
             h = QUOTE(POS_H(1));
             colorBackgroundDisabled[] = GUI_BCG_COLOR;
             colorBackground[] = GUI_BCG_COLOR;
@@ -818,5 +817,6 @@ class ACE_Medical_Menu {
                     };
                 };  
             };
+        };
     };
 };
