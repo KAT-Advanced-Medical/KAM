@@ -1,7 +1,10 @@
 class ACE_Medical_Treatment_Actions {
     class FieldDressing;
     class Morphine;
-    class CheckPulse;
+    class Diagnose;
+    class CheckPulse: Diagnose {
+        callbackSuccess = QFUNC(checkPulse);
+    };
     class CPR {
         displayNameProgress = "";
         treatmentTime = 0.01;
@@ -27,6 +30,7 @@ class ACE_Medical_Treatment_Actions {
     };
     class CheckBloodPressure: CheckPulse {
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        callbackSuccess = QFUNC(checkBloodPressure);
         animationPatient = "";
         animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
         animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};

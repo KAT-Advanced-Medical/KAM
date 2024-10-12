@@ -8,12 +8,6 @@ class CfgFunctions {
             class cprSuccess {
                 file = QPATHTOF(functions\fnc_cprSuccess.sqf);
             };
-            class CheckBloodPressure {
-                file = QPATHTOF(functions\fnc_checkBloodPressure.sqf);
-            };
-            class CheckPulse {
-                file = QPATHTOF(functions\fnc_checkPulse.sqf);
-            };
         };
     };
     class overwrite_ace_medical_status {
