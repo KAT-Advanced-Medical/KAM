@@ -69,29 +69,41 @@ switch (_usedItem) do {
         _IVrate set [_partIndex, 0.4];
         _patient setVariable [QGVAR(IV), _IVarray, true];
         _patient setVariable [QGVAR(IVrate), _IVrate, true];
-        private _lidocaineCount = [_patient, "Lidocaine", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _lidocaineCount51 = [_patient, "syringe_kat_lidocaine_5ml_1", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _lidocaineCount53 = [_patient, "syringe_kat_lidocaine_5ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _lidocaineCount101 = [_patient, "syringe_kat_lidocaine_10ml_1", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _lidocaineCount103 = [_patient, "syringe_kat_lidocaine_10ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _morphineCount = [_patient, "Morphine", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _nalbuphineCount = [_patient, "Nalbuphine", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _fentanylCount = [_patient, "Fentanyl", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _ketamineCount = [_patient, "Ketamine", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _nalbuphineCount51 = [_patient, "syringe_kat_nalbuphine_5ml_1", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _fentanylCount51 = [_patient, "syringe_kat_fentanyl_5ml_1", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _ketamineCount51 = [_patient, "syringe_kat_ketamine_5ml_1", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _nalbuphineCount53 = [_patient, "syringe_kat_nalbuphine_5ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _fentanylCount53 = [_patient, "syringe_kat_fentanyl_5ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _ketamineCount53= [_patient, "syringe_kat_ketamine_5ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _nalbuphineCount101 = [_patient, "syringe_kat_nalbuphine_10ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _fentanylCount101 = [_patient, "syringe_kat_fentanyl_10ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _ketamineCount101 = [_patient, "syringe_kat_ketamine_10ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _nalbuphineCount103 = [_patient, "syringe_kat_nalbuphine_10ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _fentanylCount103 = [_patient, "syringe_kat_fentanyl_10ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
-        private _ketamineCount103 = [_patient, "syringe_kat_ketamine_10ml_3", false] call ACEFUNC(medical_status,getMedicationCount);
-        if (_lidocaineCount <=  0.6 && _morphineCount <=  0.6 && _nalbuphineCount <=  0.6 && _fentanylCount <=  0.6 && _ketamineCount <=  0.6 && _lidocaineCount51 <=  0.6  && _nalbuphineCount51 <=  0.6 && _fentanylCount51 <=  0.6 && _ketamineCount51 <=  0.6 &&_lidocaineCount53 <=  0.6  && _nalbuphineCount53 <=  0.6 && _fentanylCount53 <=  0.6 && _ketamineCount53 <=  0.6 && _lidocaineCount101 <=  0.6  && _nalbuphineCount101 <=  0.6 && _fentanylCount101 <=  0.6 && _ketamineCount101 <=  0.6 && _lidocaineCount103 <=  0.6  && _nalbuphineCount103 <=  0.6 && _fentanylCount103 <=  0.6 && _ketamineCount103 <=  0.6) then {[_patient, 0.8] call ACEFUNC(medical_status,adjustPainLevel)};
-
+        private _medStack = _patient call ACEFUNC(medical_treatment,getAllMedication);
+        private _medsToCheck = ["fentanyl", "ketamine", "nalbuphine", "morphine", "morphineIV"];
+        private _fentanylEffectiveness = 0;
+        private _ketamineEffectiveness = 0;
+        private _nalbuphineEffectiveness = 0;
+        private _morphineEffectiveness = 0;
+        private _morphineIVEffectiveness = 0;
+        {
+            private _medName = toLower (_x select 0);
+            private _effectiveness = _x select 2;
+            if (_medName find "fentanyl" > -1) then {
+                _fentanylEffectiveness = _fentanylEffectiveness max _effectiveness;
+            };
+            if (_medName find "ketamine" > -1) then {
+                _ketamineEffectiveness = _ketamineEffectiveness max _effectiveness;
+            };
+            if (_medName find "nalbuphine" > -1) then {
+                _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+            };
+            if (_medName find "morphine" > -1) then {
+                _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+            };
+            if (_medName find "morphineIV" > -1) then {
+                _nalbuphineEffectiveness = _nalbuphineEffectiveness max _effectiveness;
+            };
+        } forEach _medStack;
+        if (
+            _fentanylEffectiveness <= 0.8 &&
+            _ketamineEffectiveness <= 0.8 &&
+            _nalbuphineEffectiveness <= 0.8 &&
+            _morphineEffectiveness <= 0.8 &&
+            _morphineIVEffectiveness <= 0.8 &&
+        ) then {
+            [_patient, [0.6, 0.7, 0.8] select (floor random 3)] call ACEFUNC(medical_status, adjustPainLevel);
+        };
         [_patient, "activity", LSTRING(iv_log), [[_medic] call ACEFUNC(common,getName), "FAST IO"]] call ACEFUNC(medical_treatment,addToLog);
         [_patient, "FAST IO"] call ACEFUNC(medical_treatment,addToTriageCard);};
     default {};
