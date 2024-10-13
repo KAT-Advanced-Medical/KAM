@@ -58,7 +58,7 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 	private _reversibleDamage = _unit getVariable [QGVAR(reversibleDamage),0];
 
 	//Finally, calculate total brain metabolic rate
-	private _CMR = 100 * (_rO2/80) * ((100-_necrosis)/100) * ((100-_reversibleDamage)/100);
+	private _CMR = 100 * ((100-_necrosis)/100) * ((100-_reversibleDamage)/100);
 
 	_unit setVariable [QGVAR(necrosis),_necrosis,true];
 	_unit setVariable [QGVAR(CMR),_CMR,true];
@@ -69,8 +69,10 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 		
 		private _newICP = _ICP - GVAR(ICPreduction);
 		
-		// Set "floors" for ICP, preventing ICP from returning to normal levels without pain suppression
-		if (GET_PAIN_SUPPRESS(_unit) < 0.6) then {
+		// Set "floors" for ICP, preventing ICP from returning to normal levels without saline
+		private _hasSaline = [_unit] call FUNC(findSaline);
+		private _hasMaxBlood = (GET_SIMPLE_BLOOD_VOLUME(_unit) >= 6); // We cannot put more than 6L of fluid into a patient, so saline cannot transfuse above this
+		if (!(_hasSaline || _hasMaxblood) ) then {
 			switch (true) do {
 				case (ICP >= 45): {
 					_newICP = 45 max _newICP;
@@ -78,7 +80,7 @@ if (!GVAR(enable) || _unit getVariable [QGVAR(activityPFH),false]) exitWith {
 				case (ICP >= 38): {
 					_newICP = 38 max _newICP;
 				};
-				default { //Prevent ICP from returning to normal without medication
+				default { //Prevent ICP from returning to normal without saline
 					_newICP = 25 max _newICP;
 				};
 			};

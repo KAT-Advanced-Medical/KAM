@@ -109,7 +109,7 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
-// Number of ticks required until tissue necrosis begins to occur
+// Number of ticks required until tissue necrosis begins to occur, ticks occuring every 15 seconds
 [
 	QGVAR(necrosisTicks),
     "SLIDER",
