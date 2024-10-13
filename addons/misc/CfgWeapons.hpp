@@ -105,4 +105,13 @@ class CfgWeapons
             mass = 50;
         };
     };
+    class kat_MEDPACK: kat_IFAK {
+        displayName = CSTRING(MEDPACK_Display);
+        descriptionShort = CSTRING(MEDPACK_DESC);
+        editorPreview = QPATHTOF(ui\MFAK.paa);
+        picture = QPATHTOF(ui\MFAK.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 25;
+        };
+    };
 };

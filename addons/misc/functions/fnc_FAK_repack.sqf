@@ -73,6 +73,11 @@ switch (_type) do {
         _itemList = missionNamespace getVariable [QGVAR(AFAKContents), []];
         _max = 63;
     };
+    case 2: { // AFAK
+        _FAKToAdd = "kat_MEDPACK";
+        _itemList = missionNamespace getVariable [QGVAR(MEDPACKContents), []];
+        _max = 255;
+    };
     default { // MFAK
         _FAKToAdd = "kat_MFAK";
         _itemList = missionNamespace getVariable [QGVAR(MFAKContents), []];

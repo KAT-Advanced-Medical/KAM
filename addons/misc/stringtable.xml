@@ -876,6 +876,9 @@
             <Portuguese>(KPSM) Kit de Primeiros Socorros Múltiplo</Portuguese>
             <Dutch>(MFAK) Meervoudige Eerste hulpkit</Dutch>
         </Key>
+        <Key ID="STR_KAT_Misc_SubCategory_MEDPACK">
+            <English>Medications Case</English>
+        </Key>
         <Key ID="STR_KAT_Misc_SubCategory_AFAK">
             <English>(AFAK) Advanced First Aid Kit</English>
             <German>(AFAK) Erweitertes Erste Hilfe Kit</German>
@@ -1029,6 +1032,30 @@
             <French>Objets et quantités de la section autres</French>
             <Dutch>Overige sectie items &amp; hoeveelheden</Dutch>
         </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKFirstSlot_Item">
+            <English>Syringe Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKSecondSlot_Item">
+            <English>IV/IO Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKThirdSlot_Item">
+            <English>Trauma Med Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKFourthSlot_Item">
+            <English>Cardiac Med Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKFifthSlot_Item">
+            <English>Surgery Med Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKSixthSlot_Item">
+            <English>Pain Med Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKSeventhSlot_Item">
+            <English>Fluid Section Items &amp; Quantity</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_SETTING_MEDPACKEighthSlot_Item">
+            <English>Miscellaneous Section Items &amp; Quantity</English>
+        </Key>
         <Key ID="STR_KAT_Misc_IFAK_Display">
             <English>Individual First Aid Kit</English>
             <Spanish>Kit individual de primeros auxilios</Spanish>
@@ -1095,6 +1122,20 @@
             <Portuguese>O KPSA pode ser desembalado para prover itens médicos úteis</Portuguese>
             <Dutch>de AFAK kan uitgepakt worden om nuttige producten te verschaffen</Dutch>
         </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Display">
+            <English>Medication Case</English>
+            <Spanish>Kit individual de primeros auxilios</Spanish>
+            <German>Individuelles Erste Hilfe Kit (IFAK)</German>
+            <Japanese>個人用応急処置キット (IFAK)</Japanese>
+            <French>Trousse individuelle du combattant</French>
+            <Finnish>Yksilöllinen ensiapulaukku</Finnish>
+            <Russian>Индивидуальная аптечка первой помощи</Russian>
+            <Portuguese>Kit de Primeiros Socorros Individual</Portuguese>
+            <Dutch>Individuele Eerste hulpskit</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_DESC">
+            <English>The Medication Case can be unpacked to provide useful Medications, Syringes, and IV/IO's</English>
+        </Key>
         <Key ID="STR_KAT_Misc_IFAK_Unpack">
             <English>IFAK</English>
             <German>IFAK</German>
@@ -1127,6 +1168,9 @@
             <Russian>AFAK</Russian>
             <Portuguese>KPSA</Portuguese>
             <Dutch>AFAK</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Unpack">
+            <English>Med Case</English>
         </Key>
         <Key ID="STR_KAT_Misc_FAK_DisplayItems">
             <English>View Packing List</English>
@@ -1402,6 +1446,78 @@
             <French>Remballer la section autres</French>
             <Portuguese>Compactar seção miscelânea</Portuguese>
             <Dutch>Herpak overige sectie</Dutch>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_1_Hint">
+            <English>Syringe Section:</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_2_Hint">
+            <English>IV/IO Section:</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_3_Hint">
+            <English>Trauma Med Section:</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_4_Hint">
+            <English>Cardiac Med Section:</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_5_Hint">
+            <English>Surgery Med Section:</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_6_Hint">
+            <English>Pain Med Section:</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_7_Hint">
+            <English>Fluid Section:</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_8_Hint">
+            <English>Miscellaneous Section:</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_1">
+            <English>Unpack Syringe Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_2">
+            <English>Unpack IV/IO Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_3">
+            <English>Unpack Trauma Med Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_4">
+            <English>Unpack Cardiac Med Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_5">
+            <English>Unpack Surgery Med Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_6">
+            <English>Unpack Pain Med Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_7">
+            <English>Unpack Fluid Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_8">
+            <English>Unpack Miscellaneous Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_1_Repack">
+            <English>Repack Syringe Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_2_Repack">
+            <English>Repack IV/IO Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_3_Repack">
+            <English>Repack Trauma Med Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_4_Repack">
+            <English>Repack Cardiac Med Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_5_Repack">
+            <English>Repack Surgery Med Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_6_Repack">
+            <English>Repack Pain Med Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_7_Repack">
+            <English>Repack Fluid Section</English>
+        </Key>
+        <Key ID="STR_KAT_Misc_MEDPACK_Slot_8_Repack">
+            <English>Repack Miscellaneous Section</English>
         </Key>
         <Key ID="STR_KAT_Misc_SETTING_FAK_ItemColor">
             <English>Hint Item Color</English>
